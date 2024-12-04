@@ -110,7 +110,9 @@ To review or configure the policy:
 1. Go to the **Backup Job** section in the VSPC dashboard.
 2. Click the value under **Successful Jobs**. A window will open showing the default policy name (e.g., “FCO – Windows …”).
 3. Select the **backup policy** you want to modify. A new window will display the policy components.
+
 Here are the components you can adjust:
+
 - **Operation mode**: Choose the type of host to back up.
 - **Backup mode**: Select specific data to back up (e.g., entire server, partition).
 - **Destination**: Define the backup storage location (default is a 2TB S3 bucket).
