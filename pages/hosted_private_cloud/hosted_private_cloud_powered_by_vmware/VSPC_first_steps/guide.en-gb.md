@@ -21,6 +21,7 @@ It will walk you through the first steps to get started with VSPC, including:
 > This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using, or setting up a service on a server.
 >
 ## Requirements
+
 - Administrative permissions for the [OVHcloud Control Panel](https://www.ovhcloud.com/control-panel) to manage resources.
 - A server compatible with the Veeam Backup Agents, running a supported [operating system](https://helpcenter.veeam.com).
 - A firewall configured to allow communication between the VSPC and your managed servers.
@@ -28,9 +29,12 @@ It will walk you through the first steps to get started with VSPC, including:
 ## Instructions
 
 ### Step 1: Accessing the VSPC portal
+
 1. Visit the VSPC portal link provided by OVHcloud (e.g., `https://...`).
+
 2. Log in using the administrative credentials assigned to your Hosted Private Cloud infrastructure.
    - If credentials are missing, contact OVHcloud support or your account manager.
+   
 3.Key elements of the dashboard include:
 
 - **Active alarms**: Displays and allows customization of alarms to monitor key operations.
@@ -49,8 +53,11 @@ It will walk you through the first steps to get started with VSPC, including:
 ---
 
 ### Step 2: Downloading the Management Agent
+
 1. Navigate to the **Discovered Computers** section in the VSPC.
+
 2. Click `Download Management Agent`, then select `Create Download Link`.
+
 3. Options available:
    - Copy the download link.
    - Download the agent directly.
@@ -58,6 +65,7 @@ It will walk you through the first steps to get started with VSPC, including:
 > **Warning**: > Make sure your firewall rules allow access to the VSPC for the agent download to succeed.
 
 ### Troubleshooting tips
+
 - **Firewall blockage**: If the agent fails to download, verify that TCP ports 443 and 6183 are open for outbound communication.
 - **Browser compatibility**: Ensure you're using a supported browser (e.g., Chrome, Edge). Older browsers may block or restrict downloads.
 - **Expired download Link**: If you shared the link and it has expired, generate a new one from the **Discovered Computers** section.
@@ -66,11 +74,16 @@ It will walk you through the first steps to get started with VSPC, including:
 ---
 
 ### Step 3: Installing the Management Agent
+
 1. Open the generated link on the target server to download the management agent.
+
 2. Run the downloaded file on the target server.
+
 3. Follow the installation prompts to complete the setup.
    - For Linux systems, use the `.rpm` or `.deb` installer depending on the distribution.
+   
 4. Once installed, the server will automatically connect to the VSPC.
+
 5. Verify that the server appears in the **Discovered Computers** list with an installation progress bar.
 
 > **[!Note]**  
