@@ -3,6 +3,11 @@ title: Getting started with VSCP
 excerpt: Discover VSCP, a cloud-enabled platform provided by Veeam that helps you manage backups and data protection.
 updated: 2024-12-09
 ---
+> [!primary]
+>
+> VSCP on OVHcloud is currently in alpha phase. This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
+>
+
 ## Objective
 
 The **Veeam Service Provider Console (VSPC)** is a cloud-enabled platform for centralized management and monitoring of data protection operations and services. With VSPC, you can monitor backups, create custom backup policies, and make sure your servers are always protected, all from one central dashboard.
