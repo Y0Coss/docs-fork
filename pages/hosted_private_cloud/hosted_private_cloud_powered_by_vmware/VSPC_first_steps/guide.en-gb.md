@@ -34,7 +34,7 @@ It will walk you through the first steps to get started with VSPC, including:
 2. Log in using the administrative credentials assigned to your Hosted Private Cloud infrastructure.
    - If credentials are missing, contact OVHcloud support or your account manager.
 
-3.Key elements of the dashboard include:
+3. Key elements of the dashboard include:
 
 - **Active alarms**: Displays and allows customization of alarms to monitor key operations.
 - **Protected workloads**: Shows the total number of workloads safeguarded in your backup and cloud infrastructures.
