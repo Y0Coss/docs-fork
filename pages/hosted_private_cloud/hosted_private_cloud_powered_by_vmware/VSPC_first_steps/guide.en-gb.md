@@ -1,7 +1,7 @@
 ---
 title: Getting started with VSCP
 excerpt: Discover VSCP, a cloud-enabled platform provided by Veeam that helps you manage backups and data protection.
-updated: 2024-11-21
+updated: 2024-12-09
 ---
 ## Objective
 
@@ -28,9 +28,12 @@ It will walk you through the first steps to get started with VSPC, including:
 ## Instructions
 
 ### Step 1: Accessing the VSPC portal
+
 1. Visit the VSPC portal link provided by OVHcloud (e.g., `https://...`).
+
 2. Log in using the administrative credentials assigned to your Hosted Private Cloud infrastructure.
    - If credentials are missing, contact OVHcloud support or your account manager.
+
 3.Key elements of the dashboard include:
 
 - **Active alarms**: Displays and allows customization of alarms to monitor key operations.
@@ -42,22 +45,30 @@ It will walk you through the first steps to get started with VSPC, including:
 - **Host discovery rules**: Allows you to define rules for automatically discovering hosts.
 - **Managed computers**: Displays all computers connected and managed within the VSPC.
 - **Reports**: Offers access to detailed reports on backup job completion and performance.
----
 
-*(Placeholder for screenshots of the VSPC dashboard)*
+![VSPC Dashboard](images/VSPC-console.png){.thumbnail}
 
 ---
 
 ### Step 2: Downloading the Management Agent
 1. Navigate to the **Discovered Computers** section in the VSPC.
+
+![discovered computers panel](images/download-agent-step01.png){.thumbnail}
+
 2. Click `Download Management Agent`, then select `Create Download Link`.
+
+![create download link](images/download-agent-step02.png){.thumbnail}
+
 3. Options available:
    - Copy the download link.
    - Download the agent directly.
 
+   ![copy download link](images/download-agent-step03.png){.thumbnail}
+
 > **Warning**: > Make sure your firewall rules allow access to the VSPC for the agent download to succeed.
 
 ### Troubleshooting tips
+
 - **Firewall blockage**: If the agent fails to download, verify that TCP ports 443 and 6183 are open for outbound communication.
 - **Browser compatibility**: Ensure you're using a supported browser (e.g., Chrome, Edge). Older browsers may block or restrict downloads.
 - **Expired download Link**: If you shared the link and it has expired, generate a new one from the **Discovered Computers** section.
@@ -66,6 +77,7 @@ It will walk you through the first steps to get started with VSPC, including:
 ---
 
 ### Step 3: Installing the Management Agent
+
 1. Open the generated link on the target server to download the management agent.
 2. Run the downloaded file on the target server.
 3. Follow the installation prompts to complete the setup.
@@ -73,15 +85,15 @@ It will walk you through the first steps to get started with VSPC, including:
 4. Once installed, the server will automatically connect to the VSPC.
 5. Verify that the server appears in the **Discovered Computers** list with an installation progress bar.
 
+![installing management agent progress bar](images/installing-agent-progress-bar.png){.thumbnail}
+
 > **[!Note]**  
 > Some OVHcloud distributions may encounter issues (e.g., UUID errors) during installation. Contact OVHcloud support if the agent fails to install or does not appear in the dashboard.
-
-
-*(Placeholder for screenshots of the installation process and “Discovered Computers” section with progress bar)*
 
 ---
 
 ### Step 4: Verifying the Agent installation
+
 - Confirm the agent status in the **Discovered Computers** section.
 - Check for successful connection and registration with the VSPC.
 
@@ -90,13 +102,21 @@ It will walk you through the first steps to get started with VSPC, including:
 ---
 
 ### Step 5: Changing backup policies
+
 OVHcloud provides a **default backup policy** that includes a 2TB S3 bucket. Currently, users can modify this default policy but cannot create custom policies or add personal S3 buckets.
 
 To review or configure the policy:
 
 1. Go to the **Backup Job** section in the VSPC dashboard.
+
+![backup job section](images/backup-policy-step01.png){.thumbnail}
+
 2. Click the value under **Successful Jobs**. A window will open showing the default policy name (e.g., “FCO – Windows …”).
+
+![succesful job section](images/backup-policy-step02.png){.thumbnail}
+
 3. Select the **backup policy** you want to modify. A new window will display the policy components.
+
 Here are the components you can adjust:
 - **Operation mode**: Choose the type of host to back up.
 - **Backup mode**: Select specific data to back up (e.g., entire server, partition).
@@ -110,6 +130,8 @@ Here are the components you can adjust:
 - **Schedule**: Backups run daily at 10 PM, with up to three retries for failed jobs.
 
 Before finalizing, a summary screen will display all settings for review.
+
+![summary screen backup policy](images/backup-policy-step03.png){.thumbnail}
 
 > **Warning**: Verify available storage space before starting backups or restorations. Insufficient space can result in failures.
 
@@ -135,13 +157,19 @@ Before finalizing, a summary screen will display all settings for review.
 ---
 
 ### Step 6: Assigning policies to servers
+
 1. Navigate to **Managed Computers** and select **Backup Agents**.
+
+![policy assignment panel](images/assigning-policy-step01.png){.thumbnail}
+
 2. Choose the server from the list.
 3. Click `Assign`, select the desired policy, and confirm.
+
+![confirm policy assignement panel](images/assigning-policy-step02.png){.thumbnail}
+
 4. View the summary of assigned policies by clicking `Show`.
 
-*(Placeholder for screenshots of the policy assignment process)*
-
+![summary of policy assignement](images/assigning-policy-step03.png){.thumbnail}
 ---
 
 ### Step 7: Managing backup jobs
@@ -162,8 +190,26 @@ Before finalizing, a summary screen will display all settings for review.
 ---
 
 ### Step 9: Restoring data
-1. Use the VSPC interface to browse backups and select files for restoration.
-2. Modify or erase files as needed during the restoration process.
+
+1. **Access the restore list:**
+   - Log in to the VSPC interface and navigate to the **Restore List** section.
+   - Browse through available backups and select the desired restore point.
+
+2. **Choose restore options:**
+   - Select the file, folder, or system you want to restore.
+   - Specify the type of restore:
+     - **Overwrite**: Replace existing files on the target system.
+     - **Download**: Retrieve the data locally for manual application.
+
+3. **Initiate the restore:**
+   - Confirm the restore settings and start the process.
+   - Monitor the progress and ensure the task completes successfully.
+
+4. **Review audit logs:**
+   - After restoration, go to the **Audit** tab to review details of the restore process.
+   - Check for any errors or warnings and verify the success of the restoration.
+
+**Note:** Make sure that the target environment has sufficient space and no conflicts exist with the restore destination.
 
 *(Placeholder for screenshots of the restoration interface)*
 
@@ -171,5 +217,4 @@ Before finalizing, a summary screen will display all settings for review.
 
 ## Go Further
 - Join our [community of users](https://community.ovhcloud.com) to connect with other VSPC users.
-
 
