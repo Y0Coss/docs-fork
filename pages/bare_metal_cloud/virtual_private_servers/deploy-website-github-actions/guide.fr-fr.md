@@ -325,7 +325,7 @@ git commit -m "Ajout d'un test depuis le VPS"
 git push origin main
 ```
 
-4. Vérifiez l'exécution du workflow sur GitHub
+4\. Vérifiez l'exécution du workflow sur GitHub
 
 Rendez-vous dans l'onglet `Actions` de votre dépôt GitHub et vérifiez que le workflow a été déclenché automatiquement après le `git push`. Si le workflow réussit, les modifications seront synchronisées dans le dossier de votre site web (`/var/www/html`).
 
