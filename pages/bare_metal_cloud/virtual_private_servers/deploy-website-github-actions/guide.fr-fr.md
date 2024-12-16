@@ -173,7 +173,7 @@ sudo git remote add origin git@github.com:<github_user>/<repository_name>.git
 
 Remplacez `<github_user>` par votre nom d'utilisateur GitHub et `<repository_name>` par le nom de votre dépôt GitHub.
 
-4. Ajoutez les fichiers et effectuez un premier commit :
+4\. Ajoutez les fichiers et effectuez un premier commit :
 
 ```bash
 git add .
