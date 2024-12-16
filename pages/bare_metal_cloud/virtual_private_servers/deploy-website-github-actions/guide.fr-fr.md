@@ -286,7 +286,7 @@ Si cette commande réussit, relancez ensuite le workflow sur GitHub.
 Lorsqu'un `git push` est effectué sur la branche `main` (ou toute autre branche spécifiée dans votre fichier `deploy.yml`), le workflow exécute les étapes définies dans le fichier `deploy.yml` :
 
 - Clonage du dépôt GitHub dans l'environnement GitHub Actions.
-- Configurer la clé SSH et établir une connexion avec votre VPS.
+- Configuration de la clé SSH pour établir une connexion avec votre VPS.
 - Synchroniser les fichiers depuis le dépôt GitHub vers le répertoire `/var/www/html` de votre VPS via `rsync`.
 
 ##### Tester le workflow
