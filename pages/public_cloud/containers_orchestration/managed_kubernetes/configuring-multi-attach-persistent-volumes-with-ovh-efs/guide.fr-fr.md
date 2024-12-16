@@ -28,7 +28,7 @@ updated: 2024-12-16
 
 ## Objective
 
-OVHcloud Managed Kubernetes natively integrates Block Storage as persistent volumes. This technology may however not be suited to some legacy or non cloud-native applications, often requiring to share this persistent data accross different pods on multiple worker nodes (ReadWriteMany or RWX). If you would need to do this for some of your workloads, one solution is to use EFS volumes. [OVHcloud Enterprise File Storage](/links/storage/enterprise-file-storage) is a managed solution that lets you easily configure an EFS server and multiple EFS volumes. In this tutorial we are going to see how to configure your OVHcloud Managed Kubernetes cluster to use [OVHcloud Enterprise File Storage](/links/storage/enterprise-file-storage) as an NFS provider for [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+OVHcloud Managed Kubernetes currently offers Block Storage for persistent volumes by default, but that may not be suited for applications that require a shared file system between multiple nodes. This tutorial shows how to configure a shared [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes) (AccessMode `ReadWriteMany` or `RWX`) using [OVHcloud Enterprise File Storage](/links/storage/enterprise-file-storage) as a storage backend.
 
 ## Requirements
 
