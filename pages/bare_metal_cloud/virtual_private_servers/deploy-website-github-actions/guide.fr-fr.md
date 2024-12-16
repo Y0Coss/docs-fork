@@ -6,7 +6,7 @@ updated: 2024-12-16
 
 ## Objectif
 
-Automatiser le déploiement de votre site web sur un VPS simplifie considérablement la gestion de vos mises à jour. Avec GitHub Actions, vous pouvez configurer un pipeline de déploiement automatique, évitant ainsi les déploiements manuels. Cette méthode garantit un déploiement rapide et fiable, tout en réduisant les risques d'erreurs humaines. Que vous soyez développeur débutant ou expérimenté, ce guide vous permettra de mettre en place une solution professionnelle adaptée à vos besoins.
+Automatiser le déploiement de votre site web sur un VPS simplifie considérablement la gestion de vos mises à jour. Avec GitHub Actions, vous pouvez configurer un pipeline de déploiement automatique, évitant ainsi les déploiements manuels. Cette méthode garantit un déploiement rapide et fiable, tout en réduisant les risques d'erreurs humaines. Que vous soyez développeur débutant ou expérimenté, ce tutoriel vous permettra de mettre en place une solution professionnelle adaptée à vos besoins.
 
 **Découvrez comment automatiser le déploiement de vos applications web avec GitHub Actions sur un VPS OVHcloud.**
 
