@@ -188,7 +188,7 @@ Créez et configurez un workflow pour synchroniser automatiquement le code de vo
 
 #### Créer le fichier de workflow GitHub Actions
 
-1. Créez un répertoire pour les workflows
+1\. Créez un répertoire pour les workflows
 
 Sur votre VPS, créez le répertoire `.github/workflows` dans le dossier contenant votre projet Git (c'est-à-dire le répertoire contenant le code de votre site web) :
 
