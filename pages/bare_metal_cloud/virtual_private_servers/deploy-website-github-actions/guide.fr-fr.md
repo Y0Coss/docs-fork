@@ -242,7 +242,7 @@ Remplacez les éléments suivants :
 - `<user>` : par l'utilisateur SSH configuré sur votre VPS.
 - `DEPLOY_KEY` : par le nom du secret dans les paramètres de votre dépôt GitHub.
 
-4. Ajoutez le fichier de workflow au dépôt GitHub
+4\. Ajoutez le fichier de workflow au dépôt GitHub
 
 Une fois le fichier de workflow configuré, ajoutez-le à votre dépôt Git et poussez-le vers GitHub :
 
