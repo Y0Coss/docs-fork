@@ -260,7 +260,7 @@ Rendez-vous dans l'onglet `Actions` de votre dépôt GitHub et vérifiez que vot
 
 Si une erreur survient, cliquez sur le workflow échoué pour consulter les logs. Assurez-vous que votre clé privée est correctement ajoutée comme secret dans votre dépôt GitHub et que votre clé publique est bien ajoutée dans le fichier `.ssh/authorized_keys`.
 
-##### Permissions insuffisantes
+##### **Permissions insuffisantes**
 
 Lors du premier déploiement, des erreurs peuvent survenir concernant les permissions (`Permission denied (13)`, `rsync: failed to set times`, etc.)
 
