@@ -99,7 +99,7 @@ Suivez les étapes de la section « Ajout d'une nouvelle clé SSH à votre compt
 
 #### Configurer l'accès SSH à GitHub sur le VPS
 
-Pour garantir que GitHub utilise la clé privée générée pour établir une connexion SSH sécurisée, configurez le fichier `~/.ssh/config`. Cette étape simplifie les commandes ultérieures en évitant d'avoir à spécifier manuellement la clé privée à chaque interaction avec GitHub.
+Pour garantir que GitHub utilise la clé privée générée pour établir une connexion SSH sécurisée, configurez le fichier `~/.ssh/config`. Cette étape facilite les commandes ultérieures en évitant d'avoir à spécifier manuellement la clé privée à chaque interaction avec GitHub.
 
 Sur votre VPS, créez ou modifiez le fichier `~/.ssh/config` :
 
