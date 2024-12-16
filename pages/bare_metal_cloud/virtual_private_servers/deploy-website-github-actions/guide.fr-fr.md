@@ -264,7 +264,7 @@ Si une erreur survient, cliquez sur le workflow échoué pour consulter les logs
 
 Lors du premier déploiement, des erreurs peuvent survenir concernant les permissions (`Permission denied (13)`, `rsync: failed to set times`, etc.)
 
-1. Vérifiez que l'utilisateur a les permissions nécessaires
+1\. Vérifiez que l'utilisateur a les permissions nécessaires
 
 Assurez-vous que l'utilisateur SSH configuré sur votre VPS a les droits d'écriture sur tout le répertoire Git (`/var/www/html`) et ses sous-répertoires :
 
