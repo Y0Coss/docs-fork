@@ -20,7 +20,7 @@ Automatiser le déploiement de votre site web sur un VPS simplifie considérable
 
 > [!warning]
 >
-> Si vous n'êtes pas familier avec l'utilisation d'un VPS, consultez notre guide « [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) ».
+> Si besoin, consultez notre guide « [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 
