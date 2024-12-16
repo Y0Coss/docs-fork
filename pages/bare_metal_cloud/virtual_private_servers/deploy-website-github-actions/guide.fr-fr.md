@@ -151,7 +151,7 @@ Pour créer un dépôt GitHub, suivez les étapes de la page « Création d'un d
 
 #### Initialiser le dépôt sur le VPS
 
-1. Connectez-vous à votre VPS via SSH :
+1\. Connectez-vous à votre VPS via SSH :
 
 ```bash
 ssh <user>@<VPS_IP>
