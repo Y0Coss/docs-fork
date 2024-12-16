@@ -205,7 +205,7 @@ Créez un fichier `deploy.yml` dans le répertoire `.github/workflows` :
 nano .github/workflows/deploy.yml
 ```
 
-3. Configurez le fichier `deploy.yml`.
+3\. Configurez le fichier `deploy.yml`.
 
 Pour configurer le pipeline de déploiement, ajoutez le contenu suivant au fichier `deploy.yml` :
 
