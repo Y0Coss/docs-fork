@@ -157,7 +157,7 @@ Pour créer un dépôt GitHub, suivez les étapes de la page « Création d'un d
 ssh <user>@<VPS_IP>
 ```
 
-2. Installez Git :
+2\. Installez Git :
 
 ```bash
 sudo apt update && sudo apt install git -y
