@@ -63,21 +63,21 @@ Vous obtenez deux fichiers :
 
 Pour permettre à GitHub Actions de se connecter à votre VPS via SSH et d'y déployer le code de votre site web, ajoutez la clé publique générée à la liste des clés autorisées sur le VPS.
 
-1. Créer le répertoire `.ssh` :
+1\. Créer le répertoire `.ssh` :
 
 ```bash
 mkdir -p /home/<user>/.ssh
 chmod 700 /home/<user>/.ssh
 ```
 
-2. Ajouter la clé publique au fichier `authorized_keys` :
+2\. Ajouter la clé publique au fichier `authorized_keys` :
 
 ```bash
 cat /home/<user>/.ssh/deploy_key.pub >> /home/<user>/.ssh/authorized_keys
 chmod 600 /home/<user>/.ssh/authorized_keys
 ```
 
-3. Tester la connexion SSH
+3\. Tester la connexion SSH
 
 Testez la connexion SSH avec la clé privée pour confirmer que l'accès est fonctionnel :
 
