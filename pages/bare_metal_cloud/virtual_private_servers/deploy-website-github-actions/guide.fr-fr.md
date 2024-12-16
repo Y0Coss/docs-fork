@@ -12,7 +12,7 @@ Automatiser le déploiement de votre site web sur un VPS simplifie considérable
 
 ## Prérequis
 
-- Un [VPS](https://www.ovhcloud.com/fr/vps/) fonctionnel dans votre compte OVHcloud
+- Un [VPS](/links/bare-metal/vps) fonctionnel dans votre compte OVHcloud
 - Un compte GitHub actif
 - Un dépôt contenant le code de votre site web (facultatif)
 - Un VPS configuré avec les services nécessaires (ex. Apache/Nginx, PHP, SGBD, etc.)
