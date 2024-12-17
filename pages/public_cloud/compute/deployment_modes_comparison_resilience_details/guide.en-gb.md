@@ -1,5 +1,5 @@
 ---
-title: "Comparison and resilience of S3 Deployment Modes - Understanding 3-AZ / 1-AZ / Local Zones"
+title: "Comparison and resilience of Deployment Modes - Understanding 3-AZ / 1-AZ / Local Zones"
 excerpt: "Explore OVHcloud's deployment modes"
 updated: 2024-12-18
 ---
@@ -93,7 +93,7 @@ In a 1-AZ Region, scaling options are somewhat limited due to the single availab
 > An organization utilizes the 1-AZ Region mode for its internal management application and backup services. This setup is ideal for applications that do not require high availability 24/7, but still need redundancy to protect against hardware failures.
 
 Architecture:
-- **Single Availability Zone (AZ):** Hosted in one availability zone with multiple data centers, ensuring basic fault tolerance within the zone.
+- **Single Availability Zone (AZ):** Made up of several interconnected data centres, it guarantees resilience in the face of localised breakdowns, while at the same time providing a model suited to moderate application requirements.
 - **Internal replication:** Data is replicated internally to protect against disk or server failures within the zone.
 - **Backup Integration:** The application uses S3 storage for regular backups, ensuring data can be restored if needed.
 - **Compute Instances:** Basic application tasks are handled by compute instances in the same AZ, with auto-scaling for resource management.
