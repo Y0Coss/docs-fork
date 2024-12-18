@@ -59,6 +59,8 @@ To configure OVHcloud Cloud Disk Array, you need to use the [OVHcloud API](https
 
 ![Add user permission on Cloud Disk Array](images/add-user-permissions.png){.thumbnail}
 
+### Step 2 - Allow Kubernetes Nodes' IPs and/or Public Cloud Gateway IP to the Cloud Disk Array service
+
 #### Your cluster is installed with Public Network or a private network without using an OVHcloud Internet Gateway or a custom one as your default route
 
 Once the partition is created, we need to allow our Kubernetes nodes to access our newly created partition.
@@ -314,12 +316,6 @@ And exit the Nginx container:
 exit
 ```
 
-Let’s try to access our new web page:
-
-```bash
-kubectl proxy
-```
-
 Generate the URL to open in your broswer:
 
 ```bash
@@ -337,8 +333,13 @@ URL2=$(echo "http://localhost:8001/api/v1/namespaces/default/pods/http:$SECOND_P
 echo $URL2
 ```
 
-And open the URLs given by the commands above to see if the data is shared with the second pod.
+Let’s try to access our new web page:
 
+```bash
+kubectl proxy
+```
+
+And open both URLs given by the commands above to see if the data is shared with all the pods connected to the Ceph volume.
 
 As you can see the data is correctly shared between the two Nginx pods running on two different Kubernetes nodes.
 Congratulations, you have successfully set up a multi-attach persistent volume with OVHcloud Cloud Disk Array!
