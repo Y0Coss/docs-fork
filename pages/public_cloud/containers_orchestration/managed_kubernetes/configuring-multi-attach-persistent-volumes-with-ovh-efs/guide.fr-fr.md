@@ -1,6 +1,6 @@
 ---
-title: Configuring multi-attach persistent volumes with OVHcloud EFS
-excerpt: 'Find out how to configure a multi-attach persistent volume using OVHcloud EFS'
+title: Configuring multi-attach persistent volumes with Enterprise File Storage
+excerpt: 'Find out how to configure a multi-attach persistent volume using our Enterprise File Storage solution'
 updated: 2024-12-16
 ---
 
@@ -34,7 +34,7 @@ OVHcloud Managed Kubernetes currently offers Block Storage for persistent volume
 
 This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](/links/public-cloud/kubernetes) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation.
 
-It also assumes you have an OVHcloud Enterprise File Storage already available. If you don't, you can [order one in the OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/netapp/new).
+It also assumes you have an OVHcloud Enterprise File Storage already available. If you don't, you can [order one in the OVHcloud Control Panel](/links/manager).
 
 You also need to have [Helm](https://docs.helm.sh/) installed on your workstation, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
@@ -44,15 +44,24 @@ You also need to have [Helm](https://docs.helm.sh/) installed on your workstatio
 
 Your Enterprise File Storage can expose multiple partitions, and supports a variety of protocols. Each partition is accessible only from a specific range of IPs. We will create one exposing EFS and make it accessible from your Kubernetes worker nodes.
 
-Access the UI for OVHcloud Enterprise File Storage by clicking the *Storage and backups* then *Enterprise File Storage* menu in the [Bare Metal Cloud section of the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated)
+Access the UI for OVHcloud Enterprise File Storage by clicking the `Storage and backups`{.action} then `Enterprise File Storage`{.action} menu in the [Bare Metal Cloud section of the OVHcloud Control Panel](/links/manager)
 
-Click on your EFS, then on the `Volumes`{.action} tab, then on the `Create a volume`{.action} button and create the new EFS volume with the following content:
+Click your Enterprise File Storage service, then click the `Volumes`{.action} tab. Click the `Create a volume`{.action} button and create the new Enterprise File Storage volume with the following content:
 
 ![Create an EFS partition](images/create-efs-volume.png){.thumbnail}
 
+Here are the parameters you may use to create your volume : 
+
+| Name                | Description                | Required      |
+| ------------------- | -------------------------- | ------------- |
+| Volume name         | Name of the volume         | False         |
+| Volume description  | Description of the volume  | False         |
+| Protocol            | Protocol used to connect   | True          |
+| Volume size         | Size of the volume         | True          |
+
 The volume size needs to be adapted with your needs. For this guide, we define a volume size to 100GiB.
 
-Once your volume created, click on its ID, then on `Access Control List`{.action}.
+Once your volume is created, clic its ID, then on `Access Control List`{.action}.
 This will let you add your Nodes' Public IPs and/or your Public Cloud Gateway Public IP into the volume's ACLs.
 
 #### Your cluster is installed with Public Network or a private network without using an OVHcloud Internet Gateway or a custom one as your default route
@@ -80,16 +89,17 @@ You can get your OVHcloud Internet Gateway's Public IP by navigating through the
 
 `Public Cloud`{.action} > Select your tenant > `Network / Gateway`{.action} > `Public IP`{.action}
 
-You can also get your OVHcloud Internet Gateway's Public IP by using our APIs:
+You can also get your OVHcloud Internet Gateway's Public IP via the following API:
 
 > [!api]
 >
 > @api {v1} /cloud GET  /cloud/project/{serviceName}/region/{regionName}/gateway/{id}
 >
 
-You can find more details about how to use OVHcloud APIs with this guide: [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps)
+> [!success]
+> If you are not familiar with the OVHcloud API, read our [First Steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps) guide.
 
-If you want to use your Kubernetes cluster to know your Gateway Public's IP, you can run these commands:
+If you want to use your Kubernetes cluster to know your Gateway Public's IP, you can run this command:
 
 ```bash
 kubectl run get-gateway-ip --image=ubuntu:latest -i --tty --rm 
@@ -119,7 +129,7 @@ You should now have something similar to this:
 
 ### Step 2 - Configuring Kubernetes to use our newly created EFS volume
 
-Your Kubernetes cluster needs some additionnal piece of software to make use of the EFS volume. We will install those and then create a first volume, shared accross multiple pods.
+Your Kubernetes cluster needs some additional piece of software to make use of the Enterprise File Storage volume. We will install those and then create a first volume, shared across multiple pods.
 
 To do so, you can install the [csi-driver-nfs](https://github.com/kubernetes-csi/csi-driver-nfs):
 
@@ -189,7 +199,7 @@ mountOptions:
 
 > [!primary]
 >
-> The `EFS_IP` is the private IP of your EFS which starts by '10.x' and the `EFS_PATH` is the path to access your volume which starts by 'share_xxx'
+> The `EFS_IP` is the private IP of your Enterprise File Storage which starts by '10.x' and the `EFS_PATH` is the path to access your volume which starts by 'share_xxx'
 >
 > The `tcp` parameter instructs the NFS mount to use the TCP protocol.
 >
@@ -334,7 +344,7 @@ nfs-nginx-9z7wk   1/1     Running   0          11s
 nfs-nginx-sfthh   1/1     Running   0          11s
 ```
 
-Let’s enter inside the first Nginx pod and container to check if the EFS Volume is properly mounted and create a file on the NFS persistent volume:
+Let’s enter inside the first Nginx pod and container to check if the Enterprise File Storage Volume is properly mounted and create a file on the NFS persistent volume:
 
 ```bash
 $ FIRST_POD=$(kubectl get pod -l name=nginx --no-headers=true -o custom-columns=:metadata.name | head -1)
