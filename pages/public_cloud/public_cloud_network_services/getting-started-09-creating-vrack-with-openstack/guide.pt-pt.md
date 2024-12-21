@@ -17,7 +17,7 @@ O [vRack](/links/network/vrack) é uma rede privada que lhe permite configurar o
 - um [utilizador OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (opcional)
 - Conhecimentos básicos de rede
 
-Antes de começar, não se esqueça de ler estes guias:
+Antes de começar, certifique-se de que lê estes guias para configurar corretamente o seu ambiente OpenStack:
 
 - [Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - [Carregar as variáveis de ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)

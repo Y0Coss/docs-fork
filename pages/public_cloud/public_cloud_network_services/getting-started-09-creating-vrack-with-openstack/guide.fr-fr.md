@@ -18,7 +18,7 @@ Le [vRack](/links/network/vrack) est un réseau privé qui vous permet de config
 - Connaissances réseaux élémentaires
 - Consulter le guide [Configurer le vRack sur le Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) (pour comprendre les différentes méthodes de gestion du vRack avec le Public Cloud)
 
-Avant de commencer, n'oubliez pas de lire ces guides :
+Avant de commencer, assurez-vous de lire ces guides pour configurer correctement votre environnement OpenStack :
 
 - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - [Charger les variables d’environnement OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)

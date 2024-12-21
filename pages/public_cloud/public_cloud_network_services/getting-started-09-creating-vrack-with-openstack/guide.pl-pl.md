@@ -17,7 +17,7 @@ Usługa [vRack](/links/network/vrack) to prywatna sieć, która umożliwia klien
 - [użytkownika OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (opcjonalnie)
 - podstawowa wiedza w zakresie sieci komputerowych
 
-Zanim zaczniesz, pamiętaj o przeczytaniu tych przewodników:
+Zanim zaczniesz, zapoznaj się z tymi przewodnikami, aby poprawnie skonfigurować środowisko OpenStack:
 
 - [Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - [Zmienne środowiskowe OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
@@ -422,3 +422,13 @@ Przykład:
 ```bash
 nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-2345-678910abcdef
 ```
+
+## Sprawdź również
+
+[Konfiguracja vRack dla Public Cloud przy użyciu interfejsu APIv6 OVHcloud](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN)
+
+[Serwery dedykowane - Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
+
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+Dołącz do [grona naszych użytkowników](/links/community).

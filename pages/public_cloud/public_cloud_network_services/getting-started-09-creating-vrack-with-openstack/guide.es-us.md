@@ -17,7 +17,7 @@ El [vRack](/links/network/vrack) OVHcloud es una solución de red privada que pe
 - Haber [creado un usuario de OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (opcional).
 - Conocimientos básicos de redes.
 
-Antes de empezar, no olvide leer estas guías:
+Antes de empezar, asegúrese de leer estas guías para configurar correctamente su entorno OpenStack:
 
 - [Preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - [Cargar las variables de entorno necesarias para OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
