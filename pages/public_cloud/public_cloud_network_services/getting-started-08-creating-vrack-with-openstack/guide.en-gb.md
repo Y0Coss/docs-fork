@@ -1,12 +1,12 @@
 ---
 title: 'Configuring vRack for Public Cloud using OpenStack CLI'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances with the OpenStack CLI'
-updated: 2024-12-20
+updated: 2024-12-23
 ---
 
 ## Objective
 
-OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/) to your private network to create an infrastructure of physical and virtual resources.
+The OVHcloud [vRack](/links/network/vrack) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add [Public Cloud instances](/links/public-cloud/compute) to your private network to create an infrastructure of physical and virtual resources.
 
 ## Requirements
 
@@ -23,11 +23,26 @@ Before you begin, make sure you consult these guides:
 
 ## Instructions
 
+### Content overview
+
+- [Step 1: Activating and managing a vRack](#activating-vrack)
+    - [In the OVHcloud Control Panel](#control-panel)
+    - [With the OVHcloud APIv6](#ovhcloud-api)
+- [Step 2: Creating a private network in the vRack](#private-network)
+- [Step 3: Integrating an instance into vRack](#instance-vrack)
+    - [In case of a new instance](#new-instance)
+    - [In case of an existing instance](#existing-instance)
+- [Removing a private interface](#remove-interface)
+
+<a name="activating-vrack"></a>
+
 ### Step 1: Activating and managing a vRack
 
 > [!warning]
 > vRack is managed at the OVHcloud infrastructure level, meaning you can only administrate it in the OVHcloud Control Panel and the OVHcloud APIv6.
 >
+
+<a name="control-panel"></a>
 
 #### In the OVHcloud Control Panel
 
@@ -49,9 +64,13 @@ From the list of eligible services, select the project you want to add to the vR
 
 ![add project to vrack](images/addprojectvrack.png){.thumbnail}
 
+<a name="ovhcloud-api"></a>
+
 #### With the OVHcloud APIv6
 
 To activate and manage a vRack using the OVHcloud APIv6, please refer to [this section](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#step-1-activating-and-managing-a-vrack) of the corresponding guide.
+
+<a name="private-network"></a>
 
 ### Step 2: Creating a private network in the vRack
 
@@ -72,6 +91,8 @@ openstack network create --provider-network-type vrack --provider-segment 42 OS_
 openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.0.0.0/16
 ```
 
+<a name="instance-vrack"></a>
+
 ### Step 3: Integrating an instance into vRack
 
 To intergrate an instance into the vRack, you need to link it to a private network.
@@ -81,7 +102,9 @@ There are two possible scenarios:
 - The instance to be integrated does not exist yet.
 - An existing instance needs to be added to the vRack.
 
-**In case of a new instance**
+<a name="new-instance"></a>
+
+#### In case of a new instance
 
 The following steps are necessary to create an instance directly in the vRack.
 
@@ -247,7 +270,9 @@ nova list
 +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
 ```
 
-**In case of an existing instance**
+<a name="existing-instance"></a>
+
+#### In case of an existing instance
 
 The following steps are necessary to integrate an existing instance into the vRack.
 
@@ -350,7 +375,9 @@ openstack server show <ID-instance>
 [...]
 ```
 
-**Removing a private interface**
+<a name="remove-network"></a>
+
+### Removing a private interface
 
 > [!warning]
 > Deleting an interface is permanent.
