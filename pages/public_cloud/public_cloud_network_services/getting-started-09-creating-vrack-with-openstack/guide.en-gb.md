@@ -8,14 +8,16 @@ updated: 2024-12-23
 
 The OVHcloud [vRack](/links/network/vrack) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add [Public Cloud instances](/links/public-cloud/compute) to your private network to create an infrastructure of physical and virtual resources.
 
+**This guide provides some basic information on creating and configuring the vRack on Public Cloud using OpenStack CLI.**
+
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
 - An [OpenStack user account](/pages/public_cloud/compute/create_and_delete_a_user) (Optional)
 - Basic networking knowledge
 - Consulting the guide [Configuring the vRack on Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) (to understand the different methods to manage the vRack with the Public Cloud)
 
-Before you begin, make sure you consult these guides:
+Before you begin, don't forget to read these guides:
 
 - [Preparing an environment for using the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - [Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
@@ -32,7 +34,7 @@ Before you begin, make sure you consult these guides:
 - [Step 3: Integrating an instance into vRack](#instance-vrack)
     - [In case of a new instance](#new-instance)
     - [In case of an existing instance](#existing-instance)
-- [Removing a private interface](#remove-interface)
+- [Removing a private interface](#detach-interface)
 
 <a name="activating-vrack"></a>
 
@@ -375,7 +377,7 @@ openstack server show <ID-instance>
 [...]
 ```
 
-<a name="remove-network"></a>
+<a name="detach-interface"></a>
 
 ### Removing a private interface
 
