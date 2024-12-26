@@ -125,7 +125,7 @@ You can further customise your OpenSearch by using advanced parameters. See the 
 
 #### Backups
 
-*Essential* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 2 days for daily backups.
+*Essential* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 3 days for daily backups.
 
 *Business* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 14 days for daily backups.
 
