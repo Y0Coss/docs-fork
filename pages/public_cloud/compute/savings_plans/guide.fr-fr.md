@@ -64,7 +64,7 @@ Voici quelques scénarios pour mieux comprendre ce fonctionnement :
 Les clients n’ont pas à associer manuellement leurs instances aux Savings Plans. Nous prenons en charge cette gestion de manière automatique, en prenant en compte toutes les instances, qu'elles soient existantes ou futures, pour le calcul de la consommation du Savings Plan.
 
 Par exemple : 
-- Si un client dispose de 10 instances de type B3-8 et souscrit à un Savings Plan pour 10 instances B3-8, celles-ci seront automatiquement couvertes par la facturation du Savings Plan. 
+- Si un client dispose de 10 instances de type B3-8 et souscrit à un Savings Plan pour 10 instances B3-8, celles-ci seront automatiquement couvertes par la facturation du Savings Plan.
 - Si le client dispose de 15 instances de type B3-8 et souscrit à un Savings Plan pour 10 instances B3-8, les 10 premières seront automatiquement couvertes par la facturation du Savings Plan et les 5 autres seront facturées à l’heure sans remise.
 
 ### Créer un modèle d’économie sur mesure
@@ -73,7 +73,7 @@ Pour optimiser les coûts tout en s’adaptant aux besoins variés des clients, 
 
 /// details | **Exemple réel :**
 
-- Un client OVHcloud utilise deux types de workloads :
+- Un client utilise deux types de workloads :
   - Un environnement de production stable avec 20 VMs B3-16, utilisées 24h/24 et 7j/7 toute l’année.
   - Un environnement de développement variable, avec une moyenne de 10 VMs B3-8, utilisées principalement sur 8 mois de l’année.
 - Après analyse de ses besoins, le client opte pour la combinaison suivante :
@@ -93,7 +93,7 @@ Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Sav
 <!-- Image avec focus sur les filtres -->
 
 - **Service :** Vous permet de filtrer les données en fonction du service spécifique auquel les Savings Plans sont associés.
-- **Type d'instance :** Permet de choisir entre différents types d'instances (par exemple, instances classiques ou "Managed Rancher Services").
+- **Type d'instance :** Permet de choisir entre différents types d'instances ("instances" ou "Managed Rancher Services").
 - **Modèle :** Choix du modèle spécifique de ressources pour affiner le suivi des Savings Plans.
 - **Période :** Permet de sélectionner une période précise pour observer l’utilisation des Savings Plans et la couverture associée.
 
@@ -124,8 +124,8 @@ Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Sav
   - Si "Instances" est sélectionné, l'axe Y affichera le nombre d'instance(s) utilisées.
   - Si "Managed Rancher Services" est sélectionné, l'axe Y affichera le nombre de vCPU(s) utilisés.
 - **Légendes des couleurs du graphique :**
-  - **Vert :** représente le nombre de ressources couvertes par un Savings Plan.
-  - **Rouge :** représente le nombre de ressources non couvertes par un Savings Plan et facturées à l’heure.
+  - **Vert :** Représente le nombre de ressources couvertes par un Savings Plan.
+  - **Rouge :** Représente le nombre de ressources non couvertes par un Savings Plan et facturées à l’heure.
 
 ///
 
