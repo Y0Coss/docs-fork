@@ -38,7 +38,7 @@ Then, click the `Object Storage`{.action} button in the left-hand side bar, in t
 
 ![S3 compatible bucket creation](images/s3-bucket-object-storage.png)
 
-This should take you back to the page shown above, where you can see all the buckets you have already created on your Public Cloud project. By going to the `My Containers`{.action} section, where we are by default, you can create a new bucket by clicking the `Create an object container`{.action} button, just above the bucket list.
+This should take you back to the page shown above, where you can see all the buckets you have already created on your Public Cloud project. By going to the `My Containers`{.action} section, where you are by default, you can create a new bucket by clicking the `Create an object container`{.action} button, just above the bucket list.
 
 **If you haven't created a bucket yet**, the interface will be slightly different, but will also prompt you to `Create an object container`{.action}.
 
@@ -115,16 +115,16 @@ For more information about editing user rights, you can check the [dedicated doc
 
 ### Retrieve user credentials
 
-Before continuing, we need to ensure that we have the following information so that we can authenticate via the CLI and use our bucket:
+Before continuing, you need to ensure that you have the following information so that you can authenticate via the CLI and use your bucket:
 
 - **Username**
 - **Password**
 - **S3 compatible access key**
 - **S3 compatible secret key**
 
-As we saw in the [previous step](#edit-your-s3-compatible-user-roles), all your Public Cloud project users are displayed in the `Users & Roles` menu in the `Project Management` category. You will find there your existing **usernames**. **The user we are interested in here is the one you have linked to your bucket, or any of them in the case of Local Zone deployment**.
+As we saw in the [previous step](#edit-your-s3-compatible-user-roles), all your Public Cloud project users are displayed in the `Users & Roles` menu in the `Project Management` category. You will find there your existing **usernames**. **The username we are interested in is the one to which you gave permissions in the [previous step](#edit-your-s3-compatible-user-roles)**.
 
-If you have lost the password associated with this user, you can **regenerate it** by clicking the `...`{.action}, then on `Generate a password`{.action}, which will revoke the old one.
+If you have lost the password associated with this username, you can **regenerate it** by clicking the `...`{.action}, then on `Generate a password`{.action}, which will revoke the old one.
 
 ![user credentials](images/s3-user-retrieve-credentials.png)
 
@@ -144,7 +144,7 @@ By following these steps, you can grant the necessary permissions to your user, 
 
 ### Add a datastore via the `ovhai` CLI
 
-Now that our bucket has been created, and the associated user has the necessary permissions, we can move on to the `ovhai` CLI. If you have not installed it yet, please refer to the [ovhai CLI installation guide](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
+Now that your bucket has been created, and the associated user has the necessary permissions, you can move on to the `ovhai` CLI. If you have not installed it yet, please refer to the [ovhai CLI installation guide](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
 The first step is to authenticate with the user that you have granted access to your bucket. To do this, use the following command:
 
@@ -180,7 +180,7 @@ WAW   swift      ovhcloud ~
 > Here you can see that there are **no S3 compatible data stores** in the list yet. That is why you will add your own, to then access the buckets of a given region, and for a specific access key and secrey key combination!
 >
 
-To add this datastore, we will use the `ovhai datastore add s3` command pattern. We can use the `--help` flag to know more about adding **S3 compatible datastores**:
+To add this datastore, you will use the `ovhai datastore add s3` command pattern. You can use the `--help` flag to know more about adding **S3 compatible datastores**:
 
 ```console
 ovhai datastore add s3 --help
@@ -220,7 +220,7 @@ You will need to replace:
 - `<my-access-key>` by the [access key](#retrieve-user-credentials) of the associated user
 - `my-secret-key` by the [secret key](#retrieve-user-credentials) of the associated user
 
-Here is an example to add a datastore named `1azgra` that will handle 1-AZ buckets created in Gravelines (`gra`) region:
+Here is an example to add a datastore named `1azgra` that will handle 1-AZ buckets created in Gravelines (`gra`) region (since they share the same `endpoint_url`):
 
 ```console
 ovhai datastore add s3 1azgra https://s3.gra.io.cloud.ovh.net/ gra <my-access-key> <my-secret-key> --store-credentials-locally
@@ -254,9 +254,11 @@ DATE                     NAME
 2024-12-25T09:00:00.000Z s3-gra-1az
 ```
 
-We can see that the bucket we created using the Control Panel (UI) has well been found.
+You can see that the bucket `s3-gra-1az` you created using the Control Panel (UI) has well been found.
 
 ### Create new buckets linked to this datastore using CLI (Optional)
+
+*This step is optional and for information only.*
 
 Now that your datastore is configured, you can simply create new buckets for the region and user associated with your datastore using the following command, rather than using the OVHcloud Control Panel (UI):
 
@@ -285,7 +287,7 @@ DATE                     NAME
 
 ### Upload files to your bucket
 
-Before connecting our bucket to the AI solutions, we are going to upload a few objects to it (images, codes, models, ...) so that we can then retrieve these files from the AI Solutions. You can do this using the Control Panel (UI) or the `ovhai` CLI:
+Before connecting your bucket to the AI solutions, you are going to upload a few objects to it (images, codes, models, ...) so that you can then retrieve these files from the AI Solutions. You can do this using the Control Panel (UI) or the `ovhai` CLI:
 
 > [!tabs]
 > **Using the Control Panel (UI)**
@@ -312,7 +314,7 @@ Before connecting our bucket to the AI solutions, we are going to upload a few o
 >> ovhai bucket object upload <bucket-name>@<datastore-alias> <file_path_to_upload>
 >> ```
 >>
->> For example, we can use the following command to upload a file named `file.py` to a bucket named `s3-gra-1az`, connected to the `1azgra` datastore. We will prefix the filename with /scripts, resulting in the file path `/scripts/file.py`:
+>> For example, you can use the following command to upload a file named `file.py` to a bucket named `s3-gra-1az`, connected to the `1azgra` datastore. You will prefix the filename with /scripts, resulting in the file path `/scripts/file.py`:
 >>
 >> ```console
 >> ovhai bucket object upload s3-gra-1az@1azgra file.py --add-prefix /scripts/
