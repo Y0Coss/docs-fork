@@ -14,6 +14,10 @@ This articles discusses essential best practices for managing MongoDB post-deplo
 
 - **OVHcloud Built-in Monitoring Tools:**
   - [Metrics tab](/pages/public_cloud/public_cloud_databases/mongodb_15_monitoring): Provides comprehensive monitoring dashboards.
+
+- **OVHcloud MongoDB Prometheus Endpoint:**
+  - [Prometheus metrics](/pages/public_cloud/public_cloud_databases/databases_17_metrics_via_prometheus): Fetch service metrics with Prometheus.
+
 - **Third-Party Tools:**
   - [Prometheus](https://prometheus.io/): Integrates with MongoDB Exporter for metrics collection.
   - [Grafana](https://grafana.com/): Visualizes metrics collected by Prometheus.
