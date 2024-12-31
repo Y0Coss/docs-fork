@@ -33,7 +33,7 @@ Install SimRunner and configure it to simulate the load based on your current da
 
 ### Step 0: Set up an OVHcloud MongoDB Cluster
 
-- [Set up the OVHcloud MongoDB cluster](https://help.ovhcloud.com/csm/en-public-cloud-databases-getting-started?id=kb_article_view&sysparm_article=KB0048745). Make sure to select a plan with similar hardware specifications compared to the other databases with which you would like to benchmark.
+- [Set up the OVHcloud MongoDB cluster](/pages/public_cloud/public_cloud_databases/mongodb_13_getting_started). Make sure to select a plan with similar hardware specifications compared to the other databases with which you would like to benchmark.
 
 ### Step 1: Determine The Primary Node of MongoDB Cluster
 
