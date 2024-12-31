@@ -339,6 +339,16 @@ Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer
   This annotation is automatically added and it contains the Floating IP address of the load balancer service.
   When using `loadbalancer.openstack.org/hostname` annotation it is the only place to see the real address of the load balancer.
 
+- `loadbalancer.openstack.org/lb-method`
+
+  This annotation configures the load balancing algorithm to use to distribute new connections.
+  Default algorithm: `ROUND_ROBIN`
+  Others algorithms available: `LEAST_CONNECTIONS`, `SOURCE_IP`
+
+> [!warning]
+> This annotation is only available for the following MKS versions: `1.31.1-3+`, `1.30.5-1+`, `1.29.9-1+`, `1.28.14-1+`, `1.27.16-1+`, `1.26.15-10+`
+>
+
 ### Annotations not supported
 
 - `loadbalancer.openstack.org/availability-zone`
@@ -421,7 +431,7 @@ annotations:
 
 ```yaml
 annotations:
-  loadbalancer.ovhcloud.com/class: "octavia" //not required for clusters running kubernetes versions >= 1.31, you can just remove the annotation.
+  loadbalancer.ovhcloud.com/class: "octavia" // not required for clusters running kubernetes versions >= 1.31, you can just remove the annotation.
 ```
 
 ##### Step 2 - Apply the change
@@ -450,7 +460,7 @@ metadata:
   name: octavia-keepip-with-existing-ip
   annotations:
     loadbalancer.ovhcloud.com/class: "octavia" //not required for clusters running kubernetes versions >= 1.31
-    #loadbalancer.openstack.org/keep-floatingip: "true" # Useless, since the FIP was provided, the FIP will not be managed by the MKS cluster
+    # loadbalancer.openstack.org/keep-floatingip: "true" # Useless, since the FIP was provided, the FIP will not be managed by the MKS cluster
 spec:
   loadBalancerIP: 1.2.3.4
   type: LoadBalancer
@@ -478,6 +488,7 @@ metadata:
   name: octavia-with-fixed-vip
   annotations:
     loadbalancer.ovhcloud.com/class: "octavia"    //not required for clusters running kubernetes versions >= 1.31
+    service.beta.kubernetes.io/openstack-internal-load-balancer: "true" // most of the time, your LB is private in this case (but it's not mandatory)
     loadbalancer.openstack.org/port-id: "<openstack-port-uuid>"
 spec:
   type: LoadBalancer
