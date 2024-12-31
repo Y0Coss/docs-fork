@@ -724,6 +724,7 @@
             + [User guides](public-cloud-databases-mongodb-guides)
                 + [MongoDB - Capabilities and Limitations](public_cloud/public_cloud_databases/mongodb_01_concept_capabilities)
                 + [MongoDB - Developer Best Practices](public_cloud/public_cloud_databases/mongodb_26_developer_best_practices)
+                + [MongoDB - Developer Tools](public_cloud/public_cloud_databases/mongodb_27_developer_tools)
                 + [MongoDB - Operational Best Practices](public_cloud/public_cloud_databases/mongodb_21_operational_best_practices)
                 + [MongoDB - Monitoring a MongoDB cluster](public_cloud/public_cloud_databases/mongodb_15_monitoring)
                 + [MongoDB - Connect with MongoDB Compass](public_cloud/public_cloud_databases/mongodb_07_connect_compass)
