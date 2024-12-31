@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Capabilities and Limitations
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2024-07-09
+updated: 2024-12-31
 ---
 
 ## Objective
@@ -33,47 +33,65 @@ Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_clo
 
 ### MongoDB Drivers
 
-You can use any one of the [MongoDB-recommended drivers](https://docs.mongodb.com/drivers/){.external} to access your cluster.
+[MongoDB drivers](https://www.mongodb.com/docs/drivers/){.external} provide the interface for applications to interact with MongoDB databases. They offer:
+
+- **Native Language Support**: Drivers are available for various programming languages, including JavaScript (Node.js), Python, Java, C#, PHP, Ruby, Go, and more.
+- **Asynchronous Operations**: Many drivers support non-blocking, asynchronous operations to improve performance.
+- **Comprehensive Documentation**: Detailed guides and examples to help developers implement database operations.
+- **Compatibility**: Drivers are designed to work seamlessly with MongoDB features, ensuring reliable and efficient data manipulation.
+
+These drivers ensure that applications can efficiently and securely communicate with MongoDB databases across different programming environments.
 
 ### Plans
 
 Six plans are available:
 
-- *Essential*
 - *Discovery*
-- *Business*
 - *Production*
-- *Enterprise*
 - *Advanced*
 
 Here is an overview of the various plans' capabilities:
 
 | Plan         | Number of nodes | MongoDB License | BI Connector  | Compass   |
 | ------------ | --------------- | --------------- | ------------  | --------- |
-| *Essential*  | 1               | Community       | Not available | Available |
 | *Discovery*  | 3               | Community       | Not available | Available |
-| *Business*   | 3 to 8          | Community       | Not available | Available |
 | *Production* | 3               | Community       | Not available | Available |
-| *Enterprise* | 3 to 8          | Enterprise      | Available     | Available |
 | *Advanced*   | 3 to 7          | Enterprise      | Available     | Available |
 
 Your choice of plan affects the number of nodes your cluster can run as well as the MongoDB license type.
 
-> [!primary]
-> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
-
 #### Nodes
 
-- *Essential*: The cluster supports at most one node.
 - *Discovery*: The cluster contains 3 nodes.
-- *Business*, *Production*, *Enterprise* and *Advanced*: The cluster can support 3 to 8 nodes including optionally an analytics node.
+- *Production* and *Advanced*: The cluster can support 3 to 8 nodes including optionally an analytics node.
 
 #### License type
 
-- *Essential*, *Discovery*, *Business* and *Production* plans use the MongoDB Community license.
-- *Enterprise* and *Advanced* plans upgrade your cluster so that it uses the MongoDB Enterprise license, giving you the capability to use the [MongoDB BI Connector](https://www.mongodb.com/products/bi-connector){.external} as well as [MongoDB Compass](https://www.mongodb.com/products/compass){.external}.
+- *Discovery*, and *Production* plans use the MongoDB Community license.
+- *Advanced* plan upgrade your cluster so that it uses the MongoDB Enterprise license.
 
 License cost is included inside the service plans. You cannot bring your own licenses.
+
+**MongoDB Community vs MongoDB Enterprise:**
+
+| Feature                                        | MongoDB Community                             | MongoDB Enterprise                                |
+|------------------------------------------------|-----------------------------------------------|--------------------------------------------------|
+| **License**                                    | Open Source (SSPL)                            | Commercial (with additional features)             |
+| **Deployment Options**                         | Self-managed                                  | Self-managed, MongoDB Atlas, Enterprise Advanced  |
+| **Security**                                   | Basic security features                       | Advanced security (LDAP, Kerberos, auditing)      |
+| **Data Encryption**                            | Encryption at rest and in transit             | FIPS 140-2 encryption, Key Management Encryption  |
+| **Backup and Recovery**                        | Manual backups                                | Automated backups, point-in-time recovery         |
+| **Monitoring**                                 | Basic monitoring                              | Advanced monitoring (MongoDB Ops Manager, Cloud Manager) |
+| **Operational Tools**                          | Basic tools                                   | Advanced tools (Ops Manager, Cloud Manager)       |
+| **Performance Optimization**                   | Basic performance tools                       | Advanced performance tools and auto-tuning        |
+| **Scalability**                                | Sharding and replication                      | Advanced scalability features, multi-region clusters |
+| **Support**                                    | Community support                             | 24/7 enterprise-grade support                     |
+| **Advanced Analytics and Visualization**       | Basic tools                                   | MongoDB Charts, BI Connector                      |
+| **Time Series**                                | Supported                                     | Enhanced features and optimizations               |
+| **Mobile Sync**                                | Basic sync                                    | Advanced mobile sync with MongoDB Realm           |
+| **Search**                                     | Basic text search                             | Advanced full-text search with MongoDB Atlas Search |
+| **Data Lake**                                  | Basic integration                             | Advanced data lake capabilities with MongoDB Atlas Data Lake |
+| **Consulting and Training**                    | Limited                                       | Extensive consulting and training services        |
 
 ### Hardware resources
 
@@ -108,9 +126,9 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 *Discovery* plan clusters are not backed up.
 
-*Business* and *Production* plan clusters are automatically backed up daily. Backup retention is 7 days.
+*Production* plan clusters are automatically backed up daily. Backup retention is 7 days.
 
-*Enterprise* and *Advanced* plan clusters are automatically backed up daily, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
+*Advanced* plan clusters are automatically backed up daily, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 
