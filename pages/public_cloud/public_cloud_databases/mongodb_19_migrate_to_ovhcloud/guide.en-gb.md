@@ -57,16 +57,16 @@ The [mongosync](https://www.mongodb.com/docs/cluster-to-cluster-sync/current/ref
 ### Select OVHcloud Plan
 
 - Based on the metrics collected (CPU, RAM, Disk IOPS, Disk Space, etc.), choose an OVHcloud plan that meets or exceeds the current specifications of your MongoDB instance.
-- Consider future growth and scalability needs. You might want to consider how to [size a MongoDB cluster](https://github.com/ralphsawaya/ovh/blob/main/MongoDoc/mongodb_02_Best_practise_to_implement%20_your_first_mongoDB_instance/guide.en-gb.md#mongodb-cluster-sizing).
+- Consider future growth and scalability needs. You might want to consider how to [size a MongoDB cluster](/pages/public_cloud/public_cloud_databases/mongodb_18_cluster_sizing).
 
 ## 2. Setup OVHcloud Cluster
 
-- **Create Cluster**: [Set up the new OVH managed MongoDB cluster](https://help.ovhcloud.com/csm/en-public-cloud-databases-getting-started?id=kb_article_view&sysparm_article=KB0048745).
+- **Create Cluster**: [Set up the new OVH managed MongoDB cluster](/pages/public_cloud/public_cloud_databases/mongodb_13_getting_started).
 - **Configuration**: Configure the OVHcloud cluster settings to match your current MongoDB cluster's configuration as closely as possible.
 
 ## 3. Data Migration Tools
 
-Use one of the tools mentioned in the [previous section](https://github.com/ralphsawaya/ovh/blob/main/MongoDoc/mongodb_03_Move%20to%20OVHcloud%20mongoDB%20managed%20from%20an%20existing%20mongoDB%20instance/guide.en-gb.md#migration-tools).
+Use one of the tools mentioned in the previous section.
 
 ## 4. Migration Execution
 
@@ -82,7 +82,7 @@ Use one of the tools mentioned in the [previous section](https://github.com/ralp
 
 ### Cut Off Process
 
-- **Continuous Synchronization**: If using `mongosync`  mentioned in the [previous section](https://github.com/ralphsawaya/ovh/blob/main/MongoDoc/mongodb_03_Move%20to%20OVHcloud%20mongoDB%20managed%20from%20an%20existing%20mongoDB%20instance/guide.en-gb.md#migration-tools), which offer continuous synchronization, monitor the synchronization logs.
+- **Continuous Synchronization**: If using `mongosync` mentioned in the previous section, which offer continuous synchronization, monitor the synchronization logs.
 - **Identify Synchronization Lag**: Wait until the logs indicate that the target cluster is only a few seconds behind (e.g., 2 seconds) the source cluster.
 - **Stop Writes to Source Cluster**: At this point, stop all write operations to the source cluster to ensure no data loss.
 - **Update Application Configuration**: Change the application configuration to point to the new OVHcloud cluster.
