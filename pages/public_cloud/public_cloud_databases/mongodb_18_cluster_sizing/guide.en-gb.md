@@ -203,7 +203,7 @@ Not available for now.
 
 ## Connecting to MongoDB Database with MongoDB Compass
 
-To connect to your MongoDB database hosted on OVH using MongoDB Compass, follow these steps:
+To connect to your MongoDB database hosted on OVHcloud using MongoDB Compass, follow these steps:
 
 1. **Install MongoDB Compass**: If you haven't already, [download and install MongoDB Compass](https://www.mongodb.com/try/download/compass)
 2. [**Add a Database User**](https://help.ovhcloud.com/csm/en-public-cloud-databases-mongodb-managing-service?id=kb_article_view&sysparm_article=KB0049061): In your OVHcloud account, navigate to your MongoDB cluster under section **General Information > Login Information > Manage users** and add a new [database user with the appropriate permissions](https://www.mongodb.com/docs/manual/tutorial/manage-users-and-roles/).
@@ -327,7 +327,7 @@ MongoDB [Change Streams](https://www.mongodb.com/docs/manual/changeStreams/) pro
 
 ### Monitoring
 
-- **Implement Comprehensive Monitoring**: Utilize MongoDB’s monitoring tools, such as [database commands](https://www.mongodb.com/docs/manual/administration/monitoring/#mongodb-reporting-tools), [OVH Metrics tab](https://help.ovhcloud.com/csm/en-ie-public-cloud-databases-mongodb-monitoring?id=kb_article_view&sysparm_article=KB0061661), or third-party monitoring solutions, to continuously monitor database performance, resource utilization, and operational metrics.
+- **Implement Comprehensive Monitoring**: Utilize MongoDB’s monitoring tools, such as [database commands](https://www.mongodb.com/docs/manual/administration/monitoring/#mongodb-reporting-tools), [OVHcloud Metrics tab](https://help.ovhcloud.com/csm/en-ie-public-cloud-databases-mongodb-monitoring?id=kb_article_view&sysparm_article=KB0061661), or third-party monitoring solutions, to continuously monitor database performance, resource utilization, and operational metrics.
 
 - **Set Up Alerts**: Configure alerts for key performance indicators such as high CPU usage, memory consumption, disk I/O, and slow queries. This enables proactive management and quick resolution of potential issues.
 
