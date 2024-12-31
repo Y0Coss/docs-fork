@@ -133,6 +133,7 @@ public-cloud-databases: Public Cloud Databases
 public-cloud-databases-general-information: General information
 public-cloud-databases-general-guides: General guides
 public-cloud-databases-mongodb: MongoDB
+public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
 public-cloud-databases-mongodb-guides: MongoDB - User guides
 public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
 public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
