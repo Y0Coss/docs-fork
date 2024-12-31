@@ -207,7 +207,7 @@ You can refer to the [Connect with MongoDB Compass](/pages/public_cloud/public_c
 
 ## Go further
 
-[MongoDB - Developer Best Practices](/pages/public_cloud/public_cloud_databases/mongodb_27_developer_best_practices)
+[MongoDB - Developer Best Practices](/pages/public_cloud/public_cloud_databases/mongodb_26_developer_best_practices)
 
 ## We want your feedback!
 
