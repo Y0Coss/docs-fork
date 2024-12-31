@@ -13,6 +13,12 @@ This documentation is to provide a comprehensive approach to MongoDB database mi
 
 This guide covers the essential tools and processes required for a successful migration.
 
+## Foreword
+
+Migrating to MongoDB can be a complex process, but professional services are available to ensure a seamless transition with training or technical assistance. Our experts can assist with every step of the migration, from assessing your current database architecture to designing an optimized schema for MongoDB. They provide guidance on data extraction, transformation, and loading, ensuring data integrity and minimal downtime. Additionally, professional services offer customized solutions, performance tuning, and training to empower your team with the skills needed to manage MongoDB effectively. Leveraging their expertise can save time, reduce risk, and maximize the benefits of migrating to MongoDB.
+
+Contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services.
+
 ## Migration Tools
 
 ### Tools With Expected Downtime
@@ -43,7 +49,7 @@ The [mongosync](https://www.mongodb.com/docs/cluster-to-cluster-sync/current/ref
 
 [MongoDB Kafka Connector](https://www.mongodb.com/docs/kafka-connector/current/) allows you to integrate MongoDB with Apache Kafka, enabling real-time data synchronization and minimizing downtime during migrations by streaming data changes directly to MongoDB.
 
-# Migration Strategy
+## Migration Strategy
 
 ![alt text](./images/diagram_migration_strategy.png)
 
