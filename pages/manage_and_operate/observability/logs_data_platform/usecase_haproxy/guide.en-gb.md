@@ -6,9 +6,9 @@ updated: 2020-07-27
 
 ## Objective
 
-[HAProxy](http://www.haproxy.org/){.external} is the de-facto standard load balancer for your TCP and HTTP based applications. This French software provides high availability, load balancing, and proxying with high performance, unprecedented reliability and a very fair price (it's completely free and open-source). It is used by the world most visited web sites and is also heavily used internally at OVHcloud and in some of our products.
+[HAProxy](http://www.haproxy.org/){.external} is the de-facto standard load balancer for your TCP and HTTP based applications. This French software provides high availability, load balancing, and proxying with high performance, unprecedented reliability and a very fair price (it's completely free and open-source). It is used by the world's most visited web sites and is also heavily used internally at OVHcloud and in some of our products.
 
-HAProxy has a lot of features and because it is located between your infrastructure and your clients, it can give you a lot of information about either of them. Logs Data Platform helps you to exploit this data and can answer to a lot of your questions:
+HAProxy has a lot of features and because it is located between your infrastructure and your clients, it can give you a lot of information about either of them. Logs Data Platform helps you to exploit this data and can answer a lot of your questions:
 
 - What is the most visited webpage?
 - What is the slowest API Call?
@@ -32,11 +32,11 @@ For this tutorial, you should have read the following ones to fully understand w
 
 ### HAProxy&#58;
 
-HAProxy is a powerful software with many configuration options available. Fortunately the [configuration documentation](http://www.haproxy.org/download/1.9/doc/configuration.txt){.external} is very complete and cover everything you need to know for this tutorial. This tutorial is not a HAProxy tutorial so it will not cover how to install, configure and deploy HAProxy but you will find material on the matter [on the offical website](http://www.haproxy.org/#docs){.external}. Depending on your backend you have the choice between several formats for your logs:
+HAProxy is a powerful software with many configuration options available. Fortunately the [configuration documentation](http://www.haproxy.org/download/1.9/doc/configuration.txt){.external} is very complete and covers everything you need to know for this tutorial. This tutorial is not a HAProxy tutorial so it will not cover how to install, configure and deploy HAProxy but you will find material on the matter [on the official website](http://www.haproxy.org/#docs){.external}. Depending on your backend you have the choice between several formats for your logs:
 
 - **Default format**: Despite giving some information about the client and the destination, this format is not really verbose and cannot really be used for any deep analysis.
 - **Tcp Log format**: This format gives you much more information for troubleshooting your tcp connections and is the one you should use when you have no idea what type of application is started behind your backend.
-- **Http Log Format**: As the name suggests, this format is the most suitable option to analyze the  protocol. Of course it only makes sense when your HAProxy is acting as a HTTP proxy. It gives even more information than the tcp log like the HTTP status code for example.
+- **Http Log Format**: As the name suggests, this format is the most suitable option to analyze the  protocol. Of course it only makes sense when your HAProxy is acting as an HTTP proxy. It gives even more information than the tcp log like the HTTP status code for example.
 - **Custom Log Format**: This one allows you to fully customize the log format by using flags. You fully control what information you log.
 
 Here is an example of a log line with the HTTP log format :
@@ -156,7 +156,7 @@ This configuration should be familiar, we set the port, the ssl parameter and th
  }
 ```
 
-The filter is divided in 3+1 parts. The first 3 parts are grok filters that try to parse the different format. If failing (with a **_grokparsefailure** tag), it try another log format. HTTP, TCP and the error log format are the one tried. The last part is a date filter. This filter is used to translate the dates to the correct [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){.external} format we use for date parsing. This filter is only executed when one of the previous filter was successful.
+The filter is divided in 3+1 parts. The first 3 parts are grok filters that try to parse the different format. If failing (with a **_grokparsefailure** tag), try another log format. HTTP, TCP and the error log format are the one tried. The last part is a date filter. This filter is used to translate the dates to the correct [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601){.external} format we use for date parsing. This filter is only executed when one of the previous filter was successful.
 
 ```ruby
  ### HA PROXY ###
@@ -231,17 +231,17 @@ You can use the high performance [LTSV format](http://ltsv.org){.external} with 
 
 #### HAProxy log format configuration
 
-The flags used to define your log format are described in the [HAProxy documentation](http://www.haproxy.org/download/1.8/doc/configuration.txt){.external} (section 8.2.4 in the version 1.8 of HAProxy). Here is an exemple of a log format that is fully compatible with our field naming convention. In place of your previous log option, use the following entry:
+The flags used to define your log format are described in the [HAProxy documentation](http://www.haproxy.org/download/1.8/doc/configuration.txt){.external} (section 8.2.4 in the version 1.8 of HAProxy). Here is an example of a log format that is fully compatible with our field naming convention. In place of your previous log option, use the following entry:
 
 ```text
 log-format client_ip:%ci\tclient_port_int:%cp\tdate_time:%t\tfrontend_name:%ft\tbackend_name:%b\tserver_name:%s\ttime_request_int:%Tq\ttime_queue_int:%Tw\ttime_backend_connect_int:%Tc\ttime_backend_response_int:%Tr\ttime_duration_int:%Tt\thttp_status_code_int:%ST\tbytes_read_int:%B\tcaptured_request_cookie:%CC\tcaptured_response_cookie:%CS\ttermination_state:%tsc\tactconn_int:%ac\tfeconn_int:%fc\tbeconn_int:%bc\tsrvconn_int:%sc\tretries_int:%rc\tsrv_queue_int:%sq\tbackend_queue_int:%bq\tcaptured_request_headers:%hr\tcaptured_response_headers:%hs\thttp_request:%r\tmessage:%ci:%cp\ [%t]\ %ft\ %b/%s\ %Tq/%Tw/%Tc/%Tr/%Tt\ %ST\ %B\ %CC\ \ %CS\ %tsc\ %ac/%fc/%bc/%sc/%rc\ %sq/%bq\ %hr\ %hs\ %{+Q}r
 ```
 
-This format not only define which values are logged but also the final name of the fields that will be used in Logs Data Platform.
+This format not only defines which values are logged but also the final name of the fields that will be used in Logs Data Platform.
 
 #### Rsyslog template configuration
 
-Rsyslog configuration will be enhanced by using a LTSV template instead of the default configuration. If you have configured your own Flowgger collector on Logs Data Platform, use its certificate and hostname. If you want to use the global LTSV input of your cluster, head to the **Home page** to copy your cluster certificate and get your LTSV endpoint port. You should choose the **LTSV line** port for this use case. One of the downside of using the global input is that you will have to provide the token of your stream in a X-OVH-TOKEN field. Navigate to the **Stream page** on the OVHcloud Manager to retrieve your token.
+Rsyslog configuration will be enhanced by using an LTSV template instead of the default configuration. If you have configured your own Flowgger collector on Logs Data Platform, use its certificate and hostname. If you want to use the global LTSV input of your cluster, head to the **Home page** to copy your cluster certificate and get your LTSV endpoint port. You should choose the **LTSV line** port for this use case. One of the downside of using the global input is that you will have to provide the token of your stream in a X-OVH-TOKEN field. Navigate to the **Stream page** on the OVHcloud Manager to retrieve your token.
 
 Here is the rsyslog configuration:
 
@@ -335,6 +335,7 @@ In this configuration you have to replace the token by your X-OVH-TOKEN value of
 ```shell-session
 $ sudo systemctl enable filebeat
 $ sudo systemctl start filebeat
+```
 
 ### Dashboard and alerts
 
