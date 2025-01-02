@@ -277,7 +277,7 @@ Mounting arguments: -t nfs -o nfsvers=3,tcp 10.201.xx.xx:/share_xxx /tmp/pvc-7f8
 Output: mount.nfs: mounting 10.201.xx.xx:/share_xxx failed, reason given by server: No such file or directory
 ```
 
-or like : 
+or similar to:
 
 ```console
   Warning  ProvisioningFailed    1s (x3 over 4s)  nfs2.csi.k8s.io_nodepool-cc5ad1db-f645-465c-85-node-6f9649_95fd7b5e-94aa-4c90-9ffa-9765beadfbe6  failed to provision volume with StorageClass "nfs-csi": rpc error: code = Internal desc = failed to mount nfs server: rpc error: code = Internal desc = mount failed: exit status 32
@@ -287,7 +287,7 @@ Output: mount.nfs: access denied by server while mounting 10.201.xx.xx:/share_xx
 
 ```
 
-It mostly means that something went wrong with the Enterprise File Storage ACLs. Check the authorized IPs which can access to the wanted partition on the ACLs list.
+It may indicate an issue with the Enterprise File Storage ACLs configuration. Check the authorized IPs which can access to the wanted partition on the ACLs list.
 
 > [!warning]
 > If the number of __PersistentVolumes__ to schedule simultaneously is too important, some slowness can be encountered and volume creation can be delayed.
