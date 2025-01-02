@@ -44,13 +44,7 @@ These drivers ensure that applications can efficiently and securely communicate 
 
 ### Plans
 
-Six plans are available:
-
-- *Discovery*
-- *Production*
-- *Advanced*
-
-Here is an overview of the various plans' capabilities:
+Here is an overview of the capabilities of the three plans available:
 
 | Plan         | Number of nodes | MongoDB License | BI Connector  | Compass   |
 | ------------ | --------------- | --------------- | ------------  | --------- |
@@ -71,27 +65,6 @@ Your choice of plan affects the number of nodes your cluster can run as well as 
 - *Advanced* plan upgrade your cluster so that it uses the MongoDB Enterprise license.
 
 License cost is included inside the service plans. You cannot bring your own licenses.
-
-**MongoDB Community vs MongoDB Enterprise:**
-
-| Feature                                        | MongoDB Community                             | MongoDB Enterprise                                |
-|------------------------------------------------|-----------------------------------------------|--------------------------------------------------|
-| **License**                                    | Open Source (SSPL)                            | Commercial (with additional features)             |
-| **Deployment Options**                         | Self-managed                                  | Self-managed, MongoDB Atlas, Enterprise Advanced  |
-| **Security**                                   | Basic security features                       | Advanced security (LDAP, Kerberos, auditing)      |
-| **Data Encryption**                            | Encryption at rest and in transit             | FIPS 140-2 encryption, Key Management Encryption  |
-| **Backup and Recovery**                        | Manual backups                                | Automated backups, point-in-time recovery         |
-| **Monitoring**                                 | Basic monitoring                              | Advanced monitoring (MongoDB Ops Manager, Cloud Manager) |
-| **Operational Tools**                          | Basic tools                                   | Advanced tools (Ops Manager, Cloud Manager)       |
-| **Performance Optimization**                   | Basic performance tools                       | Advanced performance tools and auto-tuning        |
-| **Scalability**                                | Sharding and replication                      | Advanced scalability features, multi-region clusters |
-| **Support**                                    | Community support                             | 24/7 enterprise-grade support                     |
-| **Advanced Analytics and Visualization**       | Basic tools                                   | MongoDB Charts, BI Connector                      |
-| **Time Series**                                | Supported                                     | Enhanced features and optimizations               |
-| **Mobile Sync**                                | Basic sync                                    | Advanced mobile sync with MongoDB Realm           |
-| **Search**                                     | Basic text search                             | Advanced full-text search with MongoDB Atlas Search |
-| **Data Lake**                                  | Basic integration                             | Advanced data lake capabilities with MongoDB Atlas Data Lake |
-| **Consulting and Training**                    | Limited                                       | Extensive consulting and training services        |
 
 ### Hardware resources
 
