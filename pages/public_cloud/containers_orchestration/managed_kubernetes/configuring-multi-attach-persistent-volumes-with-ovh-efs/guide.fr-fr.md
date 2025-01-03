@@ -40,7 +40,7 @@ You also need to have [Helm](https://docs.helm.sh/) installed on your workstatio
 
 ## Instructions
 
-### Step 1 - Creating a partition and granting your Managed Kubernetes Service access to it
+### Step 1 - Creating a volume and granting your Managed Kubernetes Service access to it
 
 Your Enterprise File Storage service can expose multiple volumes, and supports a variety of protocols. Each volume is accessible only from a specific range of IPs. We will create a new EFS volume and make it accessible from your Kubernetes worker nodes.
 
