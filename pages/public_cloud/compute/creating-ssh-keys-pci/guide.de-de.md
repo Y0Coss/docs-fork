@@ -43,7 +43,7 @@ Diese Methode ist in der Regel der beste Kompromiss zwischen Sicherheit und Komf
 
 ### Erstellung von Schlüsselpaaren für OpenSSH-Verbindungen
 
-In den folgenden Anweisungen wird erläutert, wie Sie Schlüsselpaare für Remote-Verbindungen mit **OpenSSH** über die Befehlszeile erstellen und verwalten. Die meisten aktuellen Betriebssysteme enthalten diese Funktion, ohne dass zusätzliche Software installiert werden muss.
+In den folgenden Anweisungen wird erläutert, wie Sie Schlüsselpaare für Remote-Verbindungen mit **OpenSSH** über die **Befehlszeile** erstellen und verwalten. Die meisten aktuellen Betriebssysteme enthalten diese Funktion, ohne dass zusätzliche Software installiert werden muss.
 
 Wenn Sie eine grafische Benutzeroberfläche bevorzugen, können Sie für jede Art von Betriebssystem zahlreiche Anwendungen finden, mit denen Sie sich über das OpenSSH-Protokoll mit Remote-Hosts verbinden können.
 

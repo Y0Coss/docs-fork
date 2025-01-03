@@ -43,7 +43,7 @@ Questo metodo rappresenta in genere il miglior compromesso tra sicurezza e prati
 
 ### Creazione di coppie di chiavi per le connessioni OpenSSH
 
-Nelle istruzioni seguenti viene descritto come creare e gestire coppie di chiavi per connessioni remote con **OpenSSH** dalla riga di comando. La maggior parte dei sistemi operativi esistenti include questa funzionalità senza la necessità di installare software aggiuntivo.
+Nelle istruzioni seguenti viene descritto come creare e gestire coppie di chiavi per connessioni remote con **OpenSSH** dalla **riga di comando**. La maggior parte dei sistemi operativi esistenti include questa funzionalità senza la necessità di installare software aggiuntivo.
 
 Se si preferisce un'interfaccia utente grafica, è possibile trovare numerose applicazioni software per ogni tipo di sistema operativo che consentono di connettersi a host remoti tramite il protocollo OpenSSH.
 

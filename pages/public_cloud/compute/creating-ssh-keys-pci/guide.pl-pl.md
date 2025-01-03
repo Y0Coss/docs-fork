@@ -43,7 +43,7 @@ Jest to zazwyczaj najlepszy kompromis między bezpieczeństwem i wygodą instanc
 
 ### Tworzenie par kluczy dla połączeń OpenSSH
 
-Poniższe instrukcje wyjaśniają, jak tworzyć pary kluczy do zdalnych połączeń za pomocą **OpenSSH** z wiersza poleceń i zarządzać nimi. Większość obecnych systemów operacyjnych zawiera tę funkcję bez konieczności instalowania dodatkowego oprogramowania.
+Poniższe instrukcje wyjaśniają, jak tworzyć pary kluczy do zdalnych połączeń za pomocą **OpenSSH** z wiersza poleceń i **zarządzać nimi**. Większość obecnych systemów operacyjnych zawiera tę funkcję bez konieczności instalowania dodatkowego oprogramowania.
 
 Jeśli preferujesz graficzny interfejs użytkownika, dla każdego typu systemu operacyjnego możesz znaleźć wiele aplikacji, które umożliwiają łączenie się ze zdalnymi hostami za pomocą protokołu OpenSSH.
 

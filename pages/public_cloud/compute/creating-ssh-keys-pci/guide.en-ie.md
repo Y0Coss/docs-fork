@@ -43,7 +43,7 @@ This method is usually the best compromise between security and convenience and 
 
 ### Creating key pairs for OpenSSH connections
 
-The following instructions will explain how to create and manage key pairs for remote connections with **OpenSSH** from the command line. Most current operating systems include this feature without needing to install additional software.
+The following instructions will explain how to create and manage key pairs for remote connections with **OpenSSH** from the **command line**. Most current operating systems include this feature without needing to install additional software.
 
 If you prefer a graphical user interface, you can find many software applications for every type of OS that enable you to connect to remote hosts via the OpenSSH protocol.
 
