@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Capabilities and Limitations
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2024-12-31
+updated: 2025-01-06
 ---
 
 ## Objective
@@ -62,7 +62,7 @@ Your choice of plan affects the number of nodes your cluster can run as well as 
 #### License type
 
 - *Discovery*, and *Production* plans use the MongoDB Community license.
-- *Advanced* plan upgrade your cluster so that it uses the MongoDB Enterprise license.
+- *Advanced* plan upgrades your cluster so that it uses the MongoDB Enterprise license.
 
 License cost is included inside the service plans. You cannot bring your own licenses.
 
@@ -150,6 +150,8 @@ Furthermore, user creation from the MongoDB Shell is **not** supported: You need
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project. 
+
+Join our [community of users](/links/community).
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

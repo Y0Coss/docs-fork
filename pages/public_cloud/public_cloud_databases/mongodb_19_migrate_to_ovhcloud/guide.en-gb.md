@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Migrate From MongoDB to OVHcloud managed MongoDB
 excerpt: Best practices to move from an existing MongoDB instance to an OVHcloud managed MongoDB
-updated: 2024-06-27
+updated: 2025-01-06
 ---
 
 ## Objective
@@ -17,7 +17,7 @@ This guide covers the essential tools and processes required for a successful mi
 
 Migrating to MongoDB can be a complex process, but professional services are available to ensure a seamless transition with training or technical assistance. Our experts can assist with every step of the migration, from assessing your current database architecture to designing an optimized schema for MongoDB. They provide guidance on data extraction, transformation, and loading, ensuring data integrity and minimal downtime. Additionally, professional services offer customized solutions, performance tuning, and training to empower your team with the skills needed to manage MongoDB effectively. Leveraging their expertise can save time, reduce risk, and maximize the benefits of migrating to MongoDB.
 
-Contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services.
+Contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services.
 
 ## Migration Tools
 
@@ -29,13 +29,13 @@ These tools are used during migration processes where some expected downtime.
 
 [mongodump](https://www.mongodb.com/docs/database-tools/mongodump/) is a utility for creating a binary export of the contents of a MongoDB database. It is particularly useful for backing up databases and migrating data between MongoDB instances.
 
-Use the [`--dumpDbUsersAndRoles`](https://www.mongodb.com/docs/database-tools/mongodump/#std-option-mongodump.--dumpDbUsersAndRoles) option to include user and role definitions in the database's dump directory when performing mongodump on a specific database. This option applies only when you specify a database in the --db option
+Use the [--dumpDbUsersAndRoles](https://www.mongodb.com/docs/database-tools/mongodump/#std-option-mongodump.--dumpDbUsersAndRoles) option to include user and role definitions in the database's dump directory when performing mongodump on a specific database. This option applies only when you specify a database in the --db option
 
 #### 2. mongorestore
 
 [mongorestore](https://www.mongodb.com/docs/database-tools/mongorestore/) complements mongodump by allowing you to restore a binary dump created by mongodump. This tool is essential for restoring data to a MongoDB instance.
 
-Use the [`restoreDbUsersAndRoles`](https://www.mongodb.com/docs/database-tools/mongorestore/#std-option-mongorestore.--restoreDbUsersAndRoles) option to Restore user and role definitions for the given database. Restoring the admin database by specifying `--db admin` to mongorestore already restores all users and roles.
+Use the [restoreDbUsersAndRole`](https://www.mongodb.com/docs/database-tools/mongorestore/#std-option-mongorestore.--restoreDbUsersAndRoles) option to Restore user and role definitions for the given database. Restoring the admin database by specifying `--db admin` to mongorestore already restores all users and roles.
 
 ### Tools With Minimal Downtime
 
@@ -43,7 +43,7 @@ These tools are designed to minimize downtime during the migration process.
 
 #### 1. mongosync
 
-The [mongosync](https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/mongosync/) binary is the primary process used in Cluster-to-Cluster Sync. provides you with continuous, uni-directional data synchronization of MongoDB clusters in the same or different environments. Check the mongosync [limitations](https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/limitations/) before starting the migration.
+The [mongosync](https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/mongosync/) binary is the primary process used in Cluster-to-Cluster Sync. It provides you with continuous, uni-directional data synchronization of MongoDB clusters in the same or different environments. Check the mongosync [limitations](https://www.mongodb.com/docs/cluster-to-cluster-sync/current/reference/limitations/) before starting the migration.
 
 #### 2. MongoDB Kafka Connector
 
@@ -51,7 +51,7 @@ The [mongosync](https://www.mongodb.com/docs/cluster-to-cluster-sync/current/ref
 
 ## Migration Strategy
 
-![alt text](./images/diagram_migration_strategy.png)
+![migration strategy diagram](images/diagram_migration_strategy.png){.thumbnail}
 
 ## 1. Preparation
 
@@ -67,7 +67,7 @@ The [mongosync](https://www.mongodb.com/docs/cluster-to-cluster-sync/current/ref
 
 ## 2. Setup OVHcloud Cluster
 
-- **Create Cluster**: [Set up the new OVH managed MongoDB cluster](/pages/public_cloud/public_cloud_databases/mongodb_13_getting_started).
+- **Create Cluster**: [Set up the new OVHcloud managed MongoDB cluster](/pages/public_cloud/public_cloud_databases/mongodb_13_getting_started).
 - **Configuration**: Configure the OVHcloud cluster settings to match your current MongoDB cluster's configuration as closely as possible.
 
 ## 3. Data Migration Tools
@@ -88,7 +88,7 @@ Use one of the tools mentioned in the previous section.
 
 ### Cut Off Process
 
-- **Continuous Synchronization**: If using `mongosync` mentioned in the previous section, which offer continuous synchronization, monitor the synchronization logs.
+- **Continuous Synchronization**: If using `mongosync` mentioned in the previous section, which offers continuous synchronization, monitor the synchronization logs.
 - **Identify Synchronization Lag**: Wait until the logs indicate that the target cluster is only a few seconds behind (e.g., 2 seconds) the source cluster.
 - **Stop Writes to Source Cluster**: At this point, stop all write operations to the source cluster to ensure no data loss.
 - **Update Application Configuration**: Change the application configuration to point to the new OVHcloud cluster.
@@ -103,6 +103,7 @@ Use one of the tools mentioned in the previous section.
 - Check for any discrepancies or missing data.
 
 ### Monitor Performance
+
 - Continuously monitor the new OVHcloud cluster to ensure it meets performance expectations.
 - Adjust configurations as needed based on performance metrics.
 
@@ -110,6 +111,8 @@ Use one of the tools mentioned in the previous section.
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](/links/community).
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Developer Tools
 excerpt: Tooling for developers using MongoDB
-updated: 2024-12-31
+updated: 2025-01-06
 ---
 
 ## Objective
@@ -14,7 +14,7 @@ The following page will cover MongoDB tooling to help you develop your applicati
 
 [MongoDB Developer Tools](https://www.mongodb.com/products/tools) provide the easiest way for you to connect and work with your MongoDB data from an interface that you are most comfortable and familiar with.
 
-- [VS Code Extension](https://www.mongodb.com/products/tools/vs-code): Integrates MongoDB with Visual Studio Code, allowing developers to browse, modify, and interact with MongoDB databases directly within the VS Code environment.
+- [Visual Studio Code Extension](https://www.mongodb.com/products/tools/vs-code): Integrates MongoDB with Visual Studio Code, allowing developers to browse, modify, and interact with MongoDB databases directly within the VS Code environment.
 - [MongoDB Compass](https://www.mongodb.com/products/tools/compass): A graphical user interface (GUI) for MongoDB, providing a visual exploration of your data, performance insights, and query building tools.
 - [MongoDB Shell](https://www.mongodb.com/docs/mongodb-shell/): An interactive JavaScript interface for MongoDB, enabling command-line access to MongoDB instance operations, queries, and administrative functions.
 
@@ -60,7 +60,7 @@ While Compass and Studio 3T both offer graphical interfaces for MongoDB, Studio 
 
 #### Hatchet
 
-[Hatchet](https://github.com/simagix/hatchet) is a powerful and sophisticated logs analyzer and viewer specifically designed for MongoDB JSON logs. It provides advanced features for logs processing, aggregation and storage of the processed data. You need to [setup logs forwarding with OVH cloud](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-logs-to-customers?id=kb_article_view&sysparm_article=KB0062093) in order to collect logs and analyze them with Hatchet.
+[Hatchet](https://github.com/simagix/hatchet) is a powerful and sophisticated logs analyzer and viewer specifically designed for MongoDB JSON logs. It provides advanced features for logs processing, aggregation and storage of the processed data. You need to [setup logs forwarding with OVHcloud](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer/) in order to collect logs and analyze them with Hatchet.
 
 #### mtools
 
@@ -69,6 +69,7 @@ While Compass and Studio 3T both offer graphical interfaces for MongoDB, Studio 
 #### SimRunner
 
 [SimRunner](https://github.com/schambon/SimRunner) is a tool that binds:
+
 - a powerful data generator for MongoDB.
 - a declarative and highly scalable workload generator.
 
@@ -82,6 +83,8 @@ While Compass and Studio 3T both offer graphical interfaces for MongoDB, Studio 
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](/links/community).
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

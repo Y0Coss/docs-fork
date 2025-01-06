@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Connect with MongoDB Compass
 excerpt: Connect to your Public Cloud Databases for MongoDB using MongoDB Compass
-updated: 2023-03-02
+updated: 2025-01-06
 ---
 
 ## Objective
@@ -46,7 +46,8 @@ Now you are now interact with your Public Cloud Databases for MongoDB:
 ![Connected](images/connected.png){.thumbnail}
 
 ### Insert and Query Data
-you can use the [mongoshell](https://www.mongodb.com/docs/mongodb-shell/), integrated in Compass, to create your first database and collection. Below is a script that creates the database **company** and collection **customer** and inserts 100 random documents.
+
+You can use the [mongoshell](https://www.mongodb.com/docs/mongodb-shell/), integrated in Compass, to create your first database and collection. Below is a script that creates the database **company** and collection **customer** and inserts 100 random documents.
 
 #### Load Data into MongoDB
 
@@ -83,11 +84,11 @@ bulk.execute();
 
 print("100 random documents inserted into the 'customer' collection.");
 ```
-![alt text](./images/compassShell.png)
+![Compass Shell](images/compassShell.png){.thumbnail}
 
 #### Query Data with the Aggregation Framework
 
-The below MongoDB aggregation pipeline uses the [MongoDB Aggregation Framework](https://www.mongodb.com/docs/manual/aggregation/) to group customers by age and count each occurence. You can use the mongoshell to execute:
+The MongoDB aggregation pipeline below uses the [MongoDB Aggregation Framework](https://www.mongodb.com/docs/manual/aggregation/) to group customers by age and count each occurence. You can use the mongoshell to execute:
 
 ```javascript
 db.customer.aggregate([
@@ -105,7 +106,7 @@ db.customer.aggregate([
 
 You can also use the UI with Compass to execute the aggregation pipeline.
 
-![alt text](./images/compassAggregation.png)
+![Compass Aggregation](images/compassAggregation.png){.thumbnail}
 
 ## Go further
 
@@ -117,7 +118,7 @@ Explore the [documentation](https://docs.mongodb.com/compass/current/) to view a
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb) to find how to connect to your database with several languages.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
 
 ## We want your feedback!
 

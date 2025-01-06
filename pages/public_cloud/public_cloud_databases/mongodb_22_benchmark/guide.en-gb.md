@@ -1,12 +1,12 @@
 ---
 title: MongoDB - Benchmark MongoDB Instances
 excerpt: Benchmark MongoDB Instances
-updated: 2024-06-27
+updated: 2025-01-06
 ---
 
 # Objective
 
-This guide aims to provide a detailed, step-by-step approach to benchmarking and sizing your OVHcloud MongoDB cluster based on specific loads. It covers estimating resource requirements, configuring the cluster, and using tools like YCSB and SimRunner for performance testing. By following this guide, you will be able to measure throughput, latency, and make informed decisions about the appropriate OVHcloud plan to meet your application's needs, ensuring optimal performance and scalability.
+This guide aims at providing a detailed, step-by-step approach to benchmarking and sizing your OVHcloud MongoDB cluster based on specific loads. It covers estimating resource requirements, configuring the cluster, and using tools like YCSB and SimRunner for performance testing. By following this guide, you will be able to measure throughput, latency, and make informed decisions about the appropriate OVHcloud plan to meet your application's needs, ensuring optimal performance and scalability.
 
 ## Setting Up Benchmarking Tools
 
@@ -28,24 +28,25 @@ Install SimRunner and configure it to simulate the load based on your current da
 
 ## Benchmark Process with YCSB and SimRunner
 
-> [!WARNING]  
+> [!warning]
 > With YCSB version 0.17.0, make sure you have Python 2 installed, as YCSB will encounter errors if Python 3 is used.
 
-### Step 0: Set up an OVHcloud MongoDB Cluster
+### Step 1: Set up an OVHcloud MongoDB Cluster
 
 - [Set up the OVHcloud MongoDB cluster](/pages/public_cloud/public_cloud_databases/mongodb_13_getting_started). Make sure to select a plan with similar hardware specifications compared to the other databases with which you would like to benchmark.
 
-### Step 1: Determine The Primary Node of MongoDB Cluster
+### Step 2: Determine The Primary Node of MongoDB Cluster
 
 1. Connect to the MongoDB cluster with the mongoshell, and then issue the command `rs.status()`.
-2. Find the element with `members.stateStr: 'PRIMARY'` .
-3. Take note of the value of the `members.name` field for that element. eg. `name: 'node2-0b70a1b78fff6c0e-admin.database.cloud.ovh.net:27017'`. You will use it in STEP 3 to load and run YCSB.
+2. Find the element with `members.stateStr: 'PRIMARY'`.
+3. Take note of the value of the `members.name` field for that element. eg. `name: 'node2-0b70a1b78fff6c0e-admin.database.cloud.ovh.net:27017'`. You will use it in STEP 4 to load and run YCSB.
 
-### Step 2: Configure The YCSB Workload
+### Step 3: Configure The YCSB Workload
 
-YCSB provide pre-configured workloads under the `ycsb-0.17.0 > workloads` folder. You can setup your own workload based on the behavior of your application. 
->[!NOTE]
->See [YCSB Core Properties ](https://github.com/brianfrankcooper/YCSB/wiki/Core-Properties) for the list of available workload properties.
+YCSB provides pre-configured workloads under the `ycsb-0.17.0 > workloads` folder. You can set up your own workload based on the behavior of your application.
+
+>[!primary]
+> See [YCSB Core Properties](https://github.com/brianfrankcooper/YCSB/wiki/Core-Properties) for the list of available workload properties.
 
 Here is an example of a workload:
 
@@ -80,36 +81,41 @@ insertproportion=0
 requestdistribution=zipfian
 ```
 
-### Step 3: Load Data into MongoDB with YCSB - Example Loading the Provided `workloada`
+### Step 4: Load Data into MongoDB with YCSB - Example Loading the Provided `workloada`
 
->[!NOTE]
->For more details on how to run a workload, see [YCSB Run a Workload](https://github.com/brianfrankcooper/YCSB/wiki/Running-a-Workload).
+>[!primary]
+> For more details on how to run a workload, see [YCSB Run a Workload](https://github.com/brianfrankcooper/YCSB/wiki/Running-a-Workload).
 
 While located in the `ycsb-0.17.0` directory, execute the following command with the provided `workloada` to load data into MongoDB.
+
 ```javascript
 ./bin/ycsb load mongodb -p mongodb.url="mongodb://myuser:mypassword@node2-0b70a1b78fff6c0e.database.cloud.ovh.net:27017/admin?replicaSet=replicaset&ssl=true" -s -P workloads/workloada
 ```
-![alt text](./images/YCSBLoad.png)
+
+![YCSB Load](images/YCSBLoad.png)
 
 Verify that the database `ycsb` and collection `usertable` got created and loaded with data.
 
-### Step 4: Run The YCSB Workload - Example Running the Provided `workloada`
+### Step 5: Run The YCSB Workload - Example Running the Provided `workloada`
 
 While located in the `YCSB > ycsb-0.17.0` directory, execute the following command with the provided `workloada` to run the workload.
+
 ```javascript
 ./bin/ycsb run mongodb -p mongodb.url="mongodb://myuser:mypassword@node2-0b70a1b78fff6c0e.database.cloud.ovh.net:27017/admin?replicaSet=replicaset&ssl=true" -s -P workloads/workloada
 ```
-![alt text](./images/YCSBrun.png)
 
-### Step 5: Analyze and Benchmark the YCSB Output Metrics
+![YCSB run](images/YCSBrun.png)
 
-Take note of the run command output in Step 4, and benchmark it with other databases.
+### Step 6: Analyze and Benchmark the YCSB Output Metrics
+
+Take note of the run command output in Step 5, and benchmark it with other databases.
 
 ## Performance Testing With SimRunner
 
 ### Step 1: Select OVHcloud Plan
 
 Now that you have selected MongoDB as your database, it is time to setup the appropriate cluster.
+
 - Based on the metrics collected (CPU, RAM, Disk IOPS, Disk Space, etc.), choose an OVHcloud plan that meets the requirements of your application.
 - Consider future growth and scalability needs. You might want to consider how to [size a MongoDB cluster](/pages/public_cloud/public_cloud_databases/mongodb_18_cluster_sizing).
 
@@ -177,11 +183,11 @@ Now that you have selected MongoDB as your database, it is time to setup the app
 }
 ```
 
-![alt text](./images/simRunnerRun.png)
+![SimRunner run](images/simRunnerRun.png)
 
 - The report output, `mongoReporter`,  of the execution was set to be stored on the locally running MongoDB: `"connectionString": "mongodb://localhost:27017"`
-  
-![alt text](./images/simRunnerOutput.png)
+
+![SimRunner output](images/simRunnerOutput.png)
 
 ## Step 4: Validation
 
@@ -192,6 +198,8 @@ Now that you have selected MongoDB as your database, it is time to setup the app
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](/links/community).
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

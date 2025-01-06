@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Cluster Sizing
 excerpt: I Currently Do Not Have MongoDB And I want Initial Sizing
-updated: 2024-06-27
+updated: 2025-01-06
 ---
 
 ## Objective
@@ -10,7 +10,8 @@ To get you started with MongoDB on OVHcloud, the following page will show you ho
 
 ## MongoDB Cluster Sizing
 
-In order to properly size a MongoDB cluster, there are four key elements to keep in account:
+In order to properly size a MongoDB cluster, there are four key elements to take into account:
+
 1. **RAM** - The most important part for a MongoDB cluster.
 2. **CPU** - Important for many parts of MongoDB workloads.
 3. **Storage & IOPS** - Minimize access to disk, but ensure the storage layer is fast and has low latency.
@@ -18,22 +19,25 @@ In order to properly size a MongoDB cluster, there are four key elements to keep
 
 Sizing a MongoDB cluster is closely linked to designing a MongoDB schema. Evaluating the schema model and understanding the data access patterns are essential. To effectively size a cluster, two preliminary operations must be performed:
 
-1. **To Qualify**:
-   - Define domain objects
-   - Define your queries
-   - Know your indexes
-   - Determine your access pattern
-   - Choose a shard key when dealing with sharding
+1\. **To Qualify**:
 
-2. **To Quantify**:
-   - Estimate the number of documents after 1 month, 6 months, and a year
-   - Identify the most frequently read data (e.g., last month's worth of data)
+- Define domain objects
+- Define your queries
+- Know your indexes
+- Determine your access pattern
+- Choose a shard key when dealing with sharding
+
+2\. **To Quantify**:
+
+- Estimate the number of documents after 1 month, 6 months, and a year
+- Identify the most frequently read data (e.g., last month's worth of data)
 
 ### Determine RAM Size
 
 #### Determine Total Index Size
 
 To determine the quantity of RAM a cluster should be provisioned with, it's necessary to determine the total index size and the working set size. Use a custom function in the MongoDB shell (`mongosh`) or `db.collection.totalIndexSize()` for this purpose.
+
 ```javascript
   indexSize = function () {
     var total = 0,
@@ -82,15 +86,15 @@ To determine the quantity of RAM a cluster should be provisioned with, it's nece
 
 **Example**
 
-A string type field of an average of 12 bytes, if we index a collection with 100k documents on a date field the formula will be, if we decide to not count in the compression factor as the value will be highly dynamic:
+A string type field of an average of 12 bytes, if we index a collection with 100k documents on a date field, the formula will be (if we decide to not count in the compression factor as the value will be highly dynamic):
 
 `(2*(100000*12))/1024/1024 = 2.40MB`
 
-with a heuristic compression factor:
+With a heuristic compression factor:
 
 `(2*(100000*(12*0.95)))/1024/1024 = 2.28MB`
 
-For compound indexes, it's the same formula, just sum up all average field sizes. But, we stop here as other types of indexes are way more difficult to determine dimensions.
+For compound indexes, it's the same formula, just sum up all average field sizes. But we stop here as other types of indexes are way more difficult to determine dimensions.
 
 #### Note on Types of Indexes
 
@@ -99,6 +103,7 @@ For compound indexes, it's the same formula, just sum up all average field sizes
 - Creating a dummy database with similar data helps in estimation.
 
 #### Determine the Working Set Size
+
 The working set is the most frequently used data that MongoDB tends to retain in memory. Calculating this value is challenging and can be based on assumptions and statistics. Reserve space in the WiredTiger cache to allow MongoDB to work with frequently accessed data in memory.
 
 **Formula**
@@ -121,7 +126,7 @@ For 30 days of frequently used data over a year, with 30% of queries on frequent
 
 #### Determine the RAM quantity
 
-The MongoDB's storage engine, WiredTiger, manages its own cache, where indexes and most recently read documents reside, among a number of other elements. Cache size is, by default, around 50% of the host machine total RAM. It is possible to customize the cache size for on-premise deployment; however, it is not advisable to do so.
+The MongoDB's storage engine, WiredTiger, manages its own cache, where indexes and most recently read documents reside, among a number of other elements. Cache size is, by default, around 50% of the host machine total RAM. It is possible to customize the cache size for on-premise deployment. However, it is not advisable to do so.
 
 If we provision with a 32GB RAM per node, then we can assume WiredTiger will have around 16GB for its own cache. WiredTiger has a target threshold to keep the cache 80% full. After this limit, it will start to evict blocks. Therefore, only ~40% of the memory available on the host system will be used for cached documents and, most importantly, for indexes. 
 
@@ -149,7 +154,7 @@ Example: If I have 10 million documents in my test data set and the total storag
 
 ### Determine CPU
 
-Unfortunately, CPU is a bit more difficult to estimate because it depends strongly on the use case and the number of cores the CPUs themselves have.
+Unfortunately, CPU is a bit more difficult to estimate because it depends strongly on the use case and the number of cores the CPUs have themselves.
 
 However, following the ratio of 1 CPU for every 4GB of RAM for MongoDB clusters usually provides the best performance for the vast majority of applicable use cases. If the application using the MongoDB database does not use much CPU (no aggregation pipeline framework, indexes perfectly covering the majority of the queries), then it is possible to cut the ratio from 1/4 to 1/8. For instance, a workload that performs more writes than reads can easily perform normally with lower CPU usage. The CPU aspect ratio is strictly connected to the WiredTiger storage engine and the quantity of cache it manages. To process the cache properly, the ratio has to be respected.
 
@@ -213,6 +218,8 @@ You can refer to the [Connect with MongoDB Compass](/pages/public_cloud/public_c
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](/links/community).
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

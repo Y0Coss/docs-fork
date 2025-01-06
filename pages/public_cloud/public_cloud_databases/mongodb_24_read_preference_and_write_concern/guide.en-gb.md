@@ -1,10 +1,10 @@
 ---
 title: MongoDB - MongoDB readPreference and writeConcern
 excerpt: MongoDB readPreference and writeConcern
-updated: 2024-06-27
+updated: 2025-01-06
 ---
 
-> [!WARNING]
+> [!warning]
 > MongoDB parameters such as readPreference and writeConcern have performance implications.
 
 ## Introduction
@@ -44,6 +44,7 @@ mongodb://username:password@host:port/dbname?readPreference=secondary
 You can also set the read preference programmatically for specific operation.
 
 Example in Python (PyMongo):
+
 ```python
 document = db.collection.find_one({"key": "value"}, read_preference=ReadPreference.NEAREST)
 ```
@@ -55,10 +56,10 @@ document = db.collection.find_one({"key": "value"}, read_preference=ReadPreferen
 Here are the key options for WriteConcern:
 
 1. **w**: Specifies the number of replica set members that must acknowledge the write.
-   - `0`: No acknowledgment.
-   - `1`: Acknowledgment from the primary only.
-   - `majority`: Acknowledgment from the majority of the replica set members.
-   - A number greater than 1: Acknowledgment from the specified number of members.
+      - `0`: No acknowledgment.
+      - `1`: Acknowledgment from the primary only.
+      - `majority`: Acknowledgment from the majority of the replica set members.
+      - A number greater than 1: Acknowledgment from the specified number of members.
 2. **wtimeout**: Specifies a time limit (in milliseconds) for the write concern acknowledgment.
 3. **j**: If true, waits for the write operation to be committed to the journal.
 
@@ -71,6 +72,7 @@ Example:
 ```javascript
 mongodb://username:password@host:port/dbname?w=majority&wtimeoutMS=5000&journal=true
 ```
+
 ### Configuration for Specific Operation
 
 You can set write concern for specific operations rather than globally.
@@ -84,6 +86,8 @@ result = db.collection.with_options(write_concern=WriteConcern("majority")).inse
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](/links/community).
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

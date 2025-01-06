@@ -1,7 +1,7 @@
 ---
 title: MongoDB - BI Connector
 excerpt: Connect Microsoft Power BI, Tableau Desktop, Microsoft Excel
-updated: 2024-06-27
+updated: 2025-01-06
 ---
 
 ## Introduction
@@ -10,7 +10,7 @@ Business Intelligence (BI) tools like Tableau and Power BI are popular products 
 
 The MongoDB BI Connector acts as a bridge between MongoDB and BI tools, allowing you to visualize and analyze your MongoDB data without complex data transformations. This guide will cover the installation of the BI Connector, configuration, and connection of your BI tool to OVHcloud cluster.
 
-![alt text](./images/BIConnector.png)
+![BI connector](images/BIConnector.png)
 
 ## Quick Start Guide
 
@@ -26,34 +26,37 @@ Refer to the MongoDB documentation for [installing the BI connector](https://www
 
 Refer to the MongoDB documentation for [launching the BI Connector](https://www.mongodb.com/docs/bi-connector/current/launch/#launch-bi-connector)
 
-below is an example for starting the connector with the OVHcloud cluster via the command line:
+Below is an example for starting the connector with the OVHcloud cluster via the command line:
 
 ```javascript
 mongosqld --mongo-uri "mongodb://node2-0b70a1b78fff6c0e.database.cloud.ovh.net:27017,node1-0b70a1b78fff6c0e.database.cloud.ovh.net:27017,node3-0b70a1b78fff6c0e.database.cloud.ovh.net:27017/" --auth -u myuser -p mypassword --mongo-ssl
 ```
-> [!IMPORTANT]
+
+> [!warning]
 > Ensure that the IP address of the machine running mongosqld is authorized in your OVHcloud MongoDB cluster.
 
 Refer to the MongoDB documentation on launching the BI Connector via the [command line](https://www.mongodb.com/docs/bi-connector/current/launch/#start-mongosqld-from-the-command-line) or [system service](https://www.mongodb.com/docs/bi-connector/current/launch/#install-mongosqld-as-a-system-service).
 
 Refer to MongoDB documentation for addtional information on [starting the mongosqld](https://www.mongodb.com/docs/bi-connector/current/reference/mongosqld/).
 
-![alt text](./images/mongosqldCmd.png)
+![BI connector - Mongo SQL cmd](images/mongosqldCmd.png)
 
 ### Step 3: Connect BI Tools - Example with Tableau
 
 Refer to the MongoDB documentation for [connecting the BI tool](https://www.mongodb.com/docs/bi-connector/current/client-applications/).
 
-![alt text](./images/ODBC-OVHcloud.PNG)
+![BI connector - ODBC OVHcloud](images/ODBC-OVHcloud.PNG)
 
-![alt text](./images/tableauSQL.PNG)
+![BI connector - Tableau SQL](images/tableauSQL.PNG)
 
-![alt text](./images/tableauOVHcloud.PNG)
+![BI connector - Tableau OVHcloud](images/tableauOVHcloud.PNG)
 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](/links/community).
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

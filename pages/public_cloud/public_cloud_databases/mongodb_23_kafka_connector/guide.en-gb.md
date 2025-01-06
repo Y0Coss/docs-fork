@@ -1,14 +1,14 @@
 ---
 title: MongoDB - Kafka Connector
 excerpt: Setup MongoDB Kafka Connector with OVHcloud
-updated: 2024-06-27
+updated: 2025-01-06
 ---
 
 ## Introduction
 
 The [MongoDB Kafka Connector](https://www.mongodb.com/docs/kafka-connector/current/#mongodb-kafka-connector) is an integration tool that bridges MongoDB with Apache Kafka, enabling real-time data synchronization and streaming between the two platforms. This connector facilitates the seamless transfer of data, allowing MongoDB to be used both as a source and a sink within a Kafka ecosystem. By leveraging this connector, developers can build robust data pipelines, ensuring efficient and reliable data flow across their applications.
 
-![alt text](./images/kafkaConnector.png)
+![Kafka Connector](images/kafkaConnector.png)
 
 ## Quick Start Guide
 
@@ -29,25 +29,25 @@ Follow [tutorials](https://www.mongodb.com/docs/kafka-connector/current/tutorial
 
 Under `Data Streaming` create `KafkaConnect` and `Kafka` services.
 
-![alt text](./images/dataStreamingKafka.png)
+![Kafka Data Streaming](images/dataStreamingKafka.png)
 
 #### Step 2: Integrate the `Kafka` service to `KafkaConnect`
 
 Select the `Kafka Connect` service and under `Service Integration`, click the `+ Add an Integration` button and select `KafkaConnect` as integration type, an then add the `Kafka` service.
 
-![alt text](./images/KafkaConnectServiceIntegration.png)
+![Kafka Connect Service Integration](images/KafkaConnectServiceIntegration.png)
 
 #### Step 3: Add the Connector 
 
 Under `Connectors` tab in `KafkaConnect`, click the `+ Add a Connector` and then select either `MongoDB Kafka Sink Connector` or `MongoDB Kafka Source Connector`.
 
-![alt text](./images/KafkaConnectConnector.png)
+![Kafka Connect Connector](images/KafkaConnectConnector.png)
 
 #### Step 4: Configure the Connector
 
 You can refer to [Sink Connector Configuration Properties](https://www.mongodb.com/docs/kafka-connector/current/sink-connector/configuration-properties/) and [Source Connector Configuration Properties](https://www.mongodb.com/docs/kafka-connector/current/source-connector/configuration-properties/#source-connector-configuration-properties) to complete the setup.
 
-![alt text](./images/ConnectorProperties.png)
+![Connector Properties](images/ConnectorProperties.png)
 
 ## Monitoring
 
@@ -68,6 +68,8 @@ Learn how to resolve issues you may encounter while running the MongoDB Kafka Co
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our [community of users](/links/community).
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
