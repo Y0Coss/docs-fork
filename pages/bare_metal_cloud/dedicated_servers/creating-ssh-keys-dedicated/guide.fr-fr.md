@@ -1,7 +1,7 @@
 ---
 title: "Comment créer et utiliser des clés d'authentification pour les connexions SSH aux serveurs OVHcloud"
-excerpt: "Découvrez comment créer des paires de clés pour OpenSSH sur votre appareil local et les utiliser pour établir des connexions sécurisées à votre serveur dédié ou VPS"
-updated: 2024-01-06
+excerpt: "Découvrez comment créer des paires de clés pour OpenSSH sur votre appareil local et comment les utiliser pour établir des connexions sécurisées à votre serveur dédié ou votre VPS"
+updated: 2025-01-06
 ---
 
 <style>
@@ -20,18 +20,18 @@ details[open]>summary::before {
 
 ## Objectif
 
-Le protocole SSH permet un canal de communication sécurisé sur les réseaux publics dans une architecture client-serveur. Des paires de clés peuvent être utilisées pour authentifier ces connexions SSH entre deux hôtes approuvés, par exemple un ordinateur de bureau et un serveur distant.
+Le protocole SSH permet d'établir un canal de communication sécurisé sur les réseaux publics dans une architecture client-serveur. Des paires de clés peuvent être utilisées pour authentifier ces connexions SSH entre deux hôtes approuvés, par exemple un ordinateur de bureau et un serveur distant.
 
 Un jeu de clés se compose d'une clé publique qui peut être partagée et d'une clé privée qui reste secrète. Placée sur un serveur, la clé publique permet à tout client disposant de la clé privée correspondante de s'y connecter sans avoir à entrer de mot de passe.
 
-Cette méthode est généralement le meilleur compromis entre la sécurité et la commodité.
+Cette méthode de communication est généralement le meilleur compromis entre la sécurité et la commodité.
 
-**Ce guide explique comment créer et gérer des paires de clés d'authentification sur votre appareil local et les utiliser pour se connecter à des serveurs distants.**
+**Découvrez comment créer et gérer des paires de clés d'authentification sur votre appareil local et les utiliser pour se connecter à des serveurs distants.**
 
 ## Prérequis
 
-- Un [serveur dédié](/links/bare-metal/bare-metal) ou un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
-- Une application cliente de connexion à distance compatible avec le protocole OpenSSH
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) ou d'un [VPS](/links/bare-metal/vps) sur votre compte OVHcloud
+- Disposer d'une application/client de connexion à distance compatible avec le protocole OpenSSH
 
 > [!primary]
 > Ce guide ne s'applique pas aux connexions aux systèmes d'exploitation **Windows Server** standard, car ils s'appuient par défaut sur le `Remote Desktop Protocol` (RDP).
@@ -49,11 +49,11 @@ N’oubliez pas de consulter nos guides « Premiers pas » :
 - pour un [serveur dédié de la gamme **Eco**](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server-eco) ;
 - pour un [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
-### Création de paires de clés pour les connexions OpenSSH
+### Créer une ou plusieurs paires de clés pour les connexions OpenSSH
 
-Les instructions suivantes expliquent comment créer et gérer des paires de clés pour les connexions à distance avec **OpenSSH** à partir de la **ligne de commande**. La plupart des systèmes d'exploitation actuels incluent cette fonctionnalité sans avoir besoin d'installer un logiciel supplémentaire.
+Les instructions suivantes expliquent comment créer et gérer des paires de clés pour les connexions à distance avec **OpenSSH** en **ligne de commande**. La plupart des systèmes d'exploitation actuels incluent cette fonctionnalité sans avoir besoin d'installer un logiciel supplémentaire.
 
-Si vous préférez une interface utilisateur graphique, vous pouvez trouver de nombreuses applications logicielles pour chaque type de système d'exploitation qui vous permettent de vous connecter à des hôtes distants via le protocole OpenSSH.
+Si vous préférez une interface utilisateur graphique, il existe de nombreuses applications logicielles pour chaque type de système d'exploitation qui vous permettent de vous connecter à des hôtes distants via le protocole OpenSSH.
 
 Par exemple, [PuTTY](https://putty.org/) est un logiciel client SSH open source doté de nombreuses fonctionnalités utiles. Découvrez comment l’utiliser pour les connexions aux serveurs OVHcloud dans notre tutoriel détaillé :
 
@@ -61,7 +61,7 @@ Par exemple, [PuTTY](https://putty.org/) est un logiciel client SSH open source 
 
 > [!primary]
 >
-> Si vous recevez des messages d'erreur lors d'une tentative de connexion, vérifiez que vous utilisez les paramètres et les informations de connexion corrects et que votre système et les applications installées sont correctement mis à jour. Si vous recevez un message d’avertissement du type `REMOTE HOST IDENTIFICATION HAS CHANGED`, consultez notre [guide d’introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+> Si vous recevez des messages d'erreur lors d'une tentative de connexion, vérifiez que les paramètres et les informations de connexion utilisés sont corrects ainsi que votre système et les applications installées sont correctement mis à jour. Si vous recevez un message d’avertissement du type `REMOTE HOST IDENTIFICATION HAS CHANGED`, consultez notre [guide d’introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 >
 
 #### Configuration des paires de clés depuis une distribution GNU/Linux ou macOS
@@ -76,7 +76,7 @@ Vérifiez que vous avez un dossier nommé `.ssh` dans votre répertoire `$HOME`.
 mkdir ~/.ssh
 ```
 
-Utilisez la commande `ssh-keygen` pour créer une paire de clés. L'option `-t` vous permet de spécifier la méthode de cryptage.
+Utilisez la commande `ssh-keygen` pour créer une paire de clés. L'option `-t` permet de spécifier la méthode de cryptage.
 
 > [!primary]
 >
@@ -101,7 +101,7 @@ Enter file in which to save the key (/home/user/.ssh/id_rsa):
 
 Si vous confirmez avec `Entrée`{.action} sans entrer de nom, le nom de fichier standard sera utilisé (`id_rsa` dans cet exemple).
 
-Si vous prévoyez d'utiliser plusieurs paires de clés à l'avenir, entrez un nom de fichier individuel pour identifier la clé. Vous trouverez plus d'informations à ce sujet ci-dessous dans la section **Gestion de plusieurs clés d'authentification sur votre périphérique local**.
+Si vous prévoyez d'utiliser plusieurs paires de clés à l'avenir, entrez un nom de fichier individuel pour identifier la clé. Vous trouverez plus d'informations à ce sujet ci-dessous dans la section **Gérer plusieurs clés d'authentification sur votre périphérique local**.
 
 Les exemples de sorties ci-dessous continueront à utiliser les noms de fichiers `id_rsa` et `id_rsa.pub` à des fins d'illustration.
 
@@ -109,7 +109,7 @@ Vous pouvez protéger votre clé SSH avec une phrase secrète à l'invite suivan
 
 > [!warning]
 >
-> Lors de l'utilisation de clés d'authentification, l'accès à distance à votre serveur est aussi sécurisé que le périphérique client stockant la clé privée. Il est donc crucial de protéger votre appareil et les fichiers clés qu’il contient contre tout accès non autorisé.
+> Lors de l'utilisation de clés d'authentification, l'accès à distance à votre serveur est aussi sécurisé que le périphérique client stockant la clé privée. Il est donc primordial de protéger votre appareil et les fichiers clés qu’il contient contre tout accès non autorisé.
 >
 > Pour plus de commodité et de sécurité, stockez les phrases secrètes dans un gestionnaire de mots de passe sur votre appareil, comme la solution open source **KeePass**.
 >
@@ -159,11 +159,11 @@ Copiez cette chaîne de clé pour [l'ajouter à un nouveau serveur](#getstarted)
 > `pbcopy < ~/.ssh/id_rsa.pub`
 >
 
-#### Gestion de plusieurs clés d'authentification sur votre périphérique local
+#### Gérer plusieurs clés d'authentification sur votre périphérique local
 
 Vous pouvez utiliser plusieurs paires de clés SSH pour vous connecter à différents hôtes distants ou périphériques de réseau local.
 
-Comme tous les fichiers clés doivent être placés dans le dossier `.ssh` du répertoire `home` de votre utilisateur, les noms de fichiers doivent être différents. Lorsque vous créez une nouvelle paire de clés et qu'un nom de fichier vous est demandé, entrez un nom de votre choix, par exemple le nom de votre serveur.
+Comme tous les fichiers clés doivent être placés dans le dossier `.ssh` du répertoire `home` de votre utilisateur, les noms des fichiers doivent être différents. Lorsque vous créez une nouvelle paire de clés et qu'un nom de fichier vous est demandé, entrez le nom de votre choix, par exemple le nom de votre serveur.
 
 Exemple de sortie :
 
@@ -243,7 +243,7 @@ Host vps
     IdentityFile ~/.ssh/myVPS_rsa
 ```
 
-Vous pourrez ensuite vous connecter à ce second host en renseignant :
+Connectez-vous ensuite à ce second host en renseignant :
 
 ```bash
 ssh vps
@@ -254,7 +254,7 @@ Pour plus d'informations sur le fichier `config`, consultez la [page `man` corre
 ///
 
 
-#### How to configure key paires from a Windows device
+#### Comment configurer des paires de clés sur un appareil Windows
 
 /// details | Dépliez cette section
 
@@ -291,7 +291,7 @@ Enter file in which to save the key (C:\Users\Username/.ssh/id_rsa):
 
 Si vous confirmez avec la touche `Entrée`{.action} sans saisir de nom, le nom de fichier standard sera utilisé (`id_rsa` dans cet exemple).
 
-Si vous prévoyez d'utiliser plusieurs paires de clés à l'avenir, entrez un nom de fichier individuel pour identifier la clé. Vous trouverez plus d'informations à ce sujet ci-dessous dans la section **Gestion de plusieurs clés d'authentification sur votre périphérique local**.
+Si vous prévoyez d'utiliser plusieurs paires de clés à l'avenir, entrez un nom de fichier individuel pour identifier la clé. Vous trouverez plus d'informations à ce sujet ci-dessous dans la section **Gérer plusieurs clés d'authentification sur votre périphérique local**.
 
 Les exemples de sorties ci-dessous continueront à utiliser les noms de fichiers `id_rsa` et `id_rsa.pub` à des fins d'illustration.
 
@@ -299,7 +299,7 @@ Vous pouvez protéger votre clé SSH avec une phrase secrète à l'invite suivan
 
 > [!warning]
 >
-> Lors de l'utilisation de clés d'authentification, l'accès à distance à votre serveur est aussi sécurisé que le périphérique client stockant la clé privée. Il est donc crucial de protéger votre appareil et les fichiers clés qu’il contient contre tout accès non autorisé.
+> Lors de l'utilisation de clés d'authentification, l'accès à distance à votre serveur est aussi sécurisé que le périphérique client stockant la clé privée. Il est donc primordial de protéger votre appareil et les fichiers clés qu’il contient contre tout accès non autorisé.
 >
 > Pour plus de commodité et de sécurité, stockez les phrases secrètes dans un gestionnaire de mots de passe sur votre poste de travail, comme la solution open source **KeePass**.
 >
@@ -346,10 +346,10 @@ Copiez cette chaîne de clé pour [l'ajouter à un nouveau serveur](#getstarted)
 >
 > **Utilisation du Presse-papiers**
 >
-> Lorsque vous travaillez à partir d'une ligne de commande **Windows**, vous pouvez utiliser un clic droit pour **coller** le contenu du Presse-papiers dans la fenêtre de ligne de commande. Pour **copier** une chaîne à partir de la fenêtre de ligne de commande, mettez-la en surbrillance, puis appuyez sur `Entrée`{.action}. Vous pouvez également retrouver ces fonctions via un clic droit sur la barre de menu de la fenêtre de ligne de commande.
+> Lorsque vous travaillez à partir d'une ligne de commande **Windows**, utilisez le clic droit pour **coller** le contenu du Presse-papiers dans la fenêtre de ligne de commande. Pour **copier** une chaîne à partir de la fenêtre de ligne de commande, mettez-la en surbrillance, puis appuyez sur `Entrée`{.action}. Vous pouvez également retrouver ces fonctions via un clic droit sur la barre de menu de la fenêtre de ligne de commande.
 >
 
-#### Gestion de plusieurs clés d’authentification sur votre périphérique local
+#### Gérer plusieurs clés d’authentification sur votre périphérique local
 
 Vous pouvez utiliser plusieurs paires de clés SSH pour vous connecter à différents hôtes distants ou périphériques de réseau local.
 
@@ -410,8 +410,7 @@ Host dedicated_server
 
 Veillez à utiliser l'adresse IP et le nom de fichier de clé corrects. La première ligne, commençant par `Host`, définit le nom de cette connexion (`dedicated_server` dans cet exemple).
 
-
-Vous pouvez ensuite vous connecter au serveur en remplaçant l'adresse IP du serveur par le nom d'alias identifiant cette connexion (`Host`) :
+Connectez-vous ensuite au serveur en remplaçant l'adresse IP du serveur par le nom d'alias identifiant cette connexion (`Host`) :
 
 ```bash
 ssh username@connection_name
@@ -456,7 +455,7 @@ Ajoutez ensuite la nouvelle chaîne de clé publique au serveur dans le fichier 
 
 #### Suppression des clés publiques de votre serveur
 
-Ouvrez le fichier `authorized_keys` sur votre serveur comme décrit ci-dessus et supprimez la chaîne de clé qui correspond au compte d'utilisateur dont l'accès est révoqué.
+Ouvrez le fichier `authorized_keys` sur votre serveur comme décrit ci-dessus, puis supprimez la chaîne de clé qui correspond au compte d'utilisateur dont l'accès est révoqué.
 
 <a name="gofurther"></a>
 
