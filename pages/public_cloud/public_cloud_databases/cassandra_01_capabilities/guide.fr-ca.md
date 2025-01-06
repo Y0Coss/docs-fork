@@ -1,7 +1,7 @@
 ---
 title: Cassandra - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-updated: 2024-05-27
+updated: 2025-01-06
 ---
 
 ## Objective
@@ -27,7 +27,9 @@ Entire database instances have to be in the same region. Multi-AZ is currently n
 
 ### Cassandra versions
 
-The Public Cloud Databases offer supports Cassandra version 4.
+The Public Cloud Databases offer supports the following Cassandra versions:
+- Cassandra 4.0 (soon depreciated)
+- Cassandra 4.1
 
 Cassandra recommends always installing and using the latest stable version.
 
