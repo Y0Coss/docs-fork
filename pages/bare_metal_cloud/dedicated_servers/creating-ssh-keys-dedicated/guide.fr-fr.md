@@ -1,7 +1,7 @@
 ---
 title: "Comment créer et utiliser des clés d'authentification pour les connexions SSH aux serveurs OVHcloud"
 excerpt: "Découvrez comment créer des paires de clés pour OpenSSH sur votre appareil local et les utiliser pour établir des connexions sécurisées à votre serveur dédié ou VPS"
-updated: 2024-06-26
+updated: 2024-01-06
 ---
 
 <style>
