@@ -740,7 +740,7 @@
                 + [MongoDB - BI Connector](public_cloud/public_cloud_databases/mongodb_25_bi_connector)
                 + [MongoDB - Configure an Analytics node](public_cloud/public_cloud_databases/mongodb_08_analytics)
                 + [MongoDB - Kafka Connector](public_cloud/public_cloud_databases/mongodb_23_kafka_connector)
-                + [MongoDB - Read Preference and Write Concern](public_cloud/public_cloud_databases/mongodb_24_read_preference_and_write_concern/)
+                + [MongoDB - Read Preference and Write Concern](public_cloud/public_cloud_databases/mongodb_24_read_preference_and_write_concern)
             + [Tutorials](public-cloud-databases-mongodb-tutorials)
                 + [MongoDB - Tutorial - How to build and connect a Node.js Application to MongoDB](public_cloud/public_cloud_databases/mongodb_tuto_01_connect_nodejs_to_managed_mongodb)
                 + [MongoDB - Tutorial - How to deploy a database with Terraform](public_cloud/public_cloud_databases/mongodb_14_deploy_with_terraform)
