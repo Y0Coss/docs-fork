@@ -361,7 +361,7 @@ Your public key has been saved in KeyFileName_rsa.pub.
 When connecting to the corresponding instance, specify the name of the private key file in addition to the connecting user and server details:
 
 ```bash
-ssh -i C:\Users\Username\.ssh/KeyFileName" user@IP_ADDRESS
+ssh -i C:\Users\Username\.ssh/KeyFileName user@IP_ADDRESS
 ```
 
 Example:
