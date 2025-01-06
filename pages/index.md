@@ -560,7 +560,6 @@
         + [General information](public-cloud-compute-general-information)
             + [FAQ](public_cloud/compute/faq_pci)
             + [Public Cloud Glossary](public_cloud/compute/introduction_about_instances)
-            + [Public Cloud & VPS - Image changelog](public_cloud/compute/image_changelog)
             + [Public Cloud & VPS - Image and OS life cycle and end of life/support announcements](public_cloud/compute/image-life-cycle)
             + [Public Cloud API Rate Limits](public_cloud/compute/api_rate_limits)
             + [Public Cloud Instances - Shared Responsibility](public_cloud/compute/responsibility-model-instances)

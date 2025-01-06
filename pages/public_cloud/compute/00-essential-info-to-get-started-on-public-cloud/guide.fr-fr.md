@@ -1,7 +1,7 @@
 ---
 title: "L'essentiel pour commencer avec Public Cloud"
 excerpt: "Découvrez des notions de base utiles pour commencer dans l'environnement Public Cloud"
-updated: 2024-04-19
+updated: 2025-01-06
 ---
 
 ## Objectif
@@ -122,7 +122,6 @@ Voici quelques ressources générales qui vous aideront dans votre démarrage su
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Les questions les plus fréquentes au sujet de Public Cloud.|
 |[Lexique](/pages/public_cloud/compute/introduction_about_instances)|Les concepts et définitions dont vous aurez besoin pour avancer.|
 |[Disponibilité des services par localisation](https://www.ovhcloud.com/fr/public-cloud/regions-availability/)|Les tableaux de disponibilité des services à travers les différentes localisations.|
-|[Changelog des images](/pages/public_cloud/compute/image_changelog)|Les changements apportés aux images système disponibles publiquement.|
 
 Dans la pratique, voici également quelques guides qui vous aideront au démarrage :
 

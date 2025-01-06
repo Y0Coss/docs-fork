@@ -1,7 +1,7 @@
 ---
 title: All you need to know to get started with Public Cloud
 excerpt: Find out some basic tips to get started in the Public Cloud environment
-updated: 2024-04-19
+updated: 2025-01-06
 ---
 
 ## Objective
@@ -122,7 +122,6 @@ Here are some general resources that will help you get started with the Public C
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Frequently asked questions about Public Cloud.|
 |[Glossary](/pages/public_cloud/compute/introduction_about_instances)|The concepts and definitions you will need to move forward.|
 |[Availability of services by location](https://www.ovhcloud.com/fr/public-cloud/regions-availability/)|Service availability tables across different locations.|
-|[Image Changelog](/pages/public_cloud/compute/image_changelog)|Changes to publicly available system images.|
 
 Here are some guides to help you with the first steps:
 

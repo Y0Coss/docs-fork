@@ -1,7 +1,7 @@
 ---
 title: Die wichtigsten Informationen zum Start mit Public Cloud
 excerpt: "Entdecken Sie nützliche Grundkenntnisse, um mit der Public Cloud Umgebung zu starten"
-updated: 2024-04-24
+updated: 2025-01-06
 ---
 
 > [!primary]
@@ -127,7 +127,6 @@ Nachfolgend finden Sie grundlegende Wissensressourcen, die Ihnen bei Ihrem Start
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Die häufigsten Fragen zur Public Cloud.|
 |[Glossar](/pages/public_cloud/compute/introduction_about_instances)|Die Konzepte und Definitionen zur fortgeschrittenen Nutzung.|
 |[Verfügbarkeit der Dienste nach Standort](https://www.ovhcloud.com/de/public-cloud/regions-availability/)|Verfügbarkeitstabellen der Dienste an den verschiedenen Standorten.|
-|[Changelog](/pages/public_cloud/compute/image_changelog)|Änderungslogs von öffentlich verfügbaren System-Images.|
 
 Verwenden Sie folgende Anleitungen, um Informationen zum praktischen Vorgehen zu erhalten:
 
