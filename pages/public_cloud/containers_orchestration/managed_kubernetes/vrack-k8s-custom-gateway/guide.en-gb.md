@@ -34,8 +34,8 @@ At the end of this tutorial you should have the following flow:
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account.
 - The [OpenStack API CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) installed.
-- Be familiar with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
-- Be familiar with [terraform](/pages/public_cloud/compute/how_to_use_terraform) if you wish to use it.
+- Being familiar with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
+- Being familiar with [Terraform](/pages/public_cloud/compute/how_to_use_terraform) if you wish to use it.
 - The JSON parser tool [jq](https://stedolan.github.io/jq/){.external} installed.
 
 ## Initialization
@@ -404,9 +404,9 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 > Terraform
 >> > [!primary]
 >> > 
->> > You can create your networks and subnets using Terraform by following [this guide](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway)
+>> > You can create your networks and subnets using Terraform by following [this guide](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
->> You need to create a file, let's name it ‘kubernetes-cluster-test.tf with this content:
+>> You need to create a file, let's name it `kubernetes-cluster-test.tf` with this content:
 >>
 >> ```python
 >> # Create your Kubernetes cluster

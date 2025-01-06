@@ -34,8 +34,8 @@ At the end of this tutorial you should have the following flow:
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account.
 - The [OpenStack API CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) installed.
-- Be familiar with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
-- Be familiar with [terraform](/pages/public_cloud/compute/how_to_use_terraform) if you wish to use it.
+- Being familiar with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
+- Being familiar with [Terraform](/pages/public_cloud/compute/how_to_use_terraform) if you wish to use it.
 - The JSON parser tool [jq](https://stedolan.github.io/jq/){.external} installed.
 
 ## Initialization
@@ -396,7 +396,7 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> > 
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/kube
 > OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+>> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >> 
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 >> 
@@ -404,9 +404,9 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 > Terraform
 >> > [!primary]
 >> > 
->> > You can create your networks and subnets using Terraform by following [this guide](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway)
+>> > You can create your networks and subnets using Terraform by following [this guide](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
->> You need to create a file, let's name it ‘kubernetes-cluster-test.tf with this content:
+>> You need to create a file, let's name it `kubernetes-cluster-test.tf` with this content:
 >>
 >> ```python
 >> # Create your Kubernetes cluster
@@ -444,7 +444,7 @@ Now wait until your OVHcloud Managed Kubernetes cluster is READY.
 
 For that, you can check its status in the OVHcloud Control Panel:
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 
@@ -591,6 +591,6 @@ To delete an Openstack router, you must first remove the linked ports.
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our [community of users](/links/community).
+- Join our [community of users](https://community.ovh.com/en/).
