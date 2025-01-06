@@ -1,7 +1,7 @@
 ---
 title: 'Fonctionnement des Savings Plans'
 excerpt: 'Savings Plans : Tout ce que vous devez savoir pour optimiser vos coûts'
-updated: 2024-26-12
+updated: 2025-01-06
 ---
 
 <style>
@@ -28,8 +28,10 @@ Le guide détaillera également l'utilisation du tableau de bord associé aux Sa
 
 > [!warning]
 >
-> Seules les instances Gen3 sont éligibles pour les Savings Plans. Assurez-vous que votre instance appartient à cette génération pour bénéficier de cette offre.
-> 
+> Veuillez noter que la modification des Savings Plans n'est pas disponible pour le moment. En cas de demande ou de besoin spécifique, veuillez contacter notre équipe commerciale.
+>
+> Par ailleurs, n'oubliez pas que seules les **instances Gen3** sont éligibles pour les Savings Plans. Assurez-vous que votre instance appartient à cette génération pour bénéficier de cette offre.
+>
 
 ### Qu'est ce qu'un Savings Plan ?
 

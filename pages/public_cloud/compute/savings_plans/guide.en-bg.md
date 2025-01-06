@@ -1,7 +1,7 @@
 ---
 title: 'How Savings Plans work ?'
 excerpt: 'Savings Plans: Everything you need to know to optimise your costs'
-updated: 2024-26-12
+updated: 2025-01-06
 ---
 
 <style>
@@ -28,8 +28,10 @@ The guide will also detail the use of the Savings Plans dashboard, which will al
 
 > [!warning]
 >
-> Only Gen3 instances are eligible for Savings Plans. Make sure your instance belongs to this generation to benefit from this offer.
-> 
+> Please note that Savings Plans are not currently available. If you have a specific request or requirement, please contact our sales team.
+>
+> Please note that only Gen3 **instances** are eligible for Savings Plans. Make sure that your instance belongs to this generation to benefit from this offer.
+>
 
 ### What is a Savings Plan ?
 
