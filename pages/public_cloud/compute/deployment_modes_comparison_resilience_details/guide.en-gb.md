@@ -227,6 +227,7 @@ Architecture:
 | Characteristics        | 1-AZ Region                         | 3-AZ Region                     | Local Zones                              |
 |------------------------|-------------------------------------|---------------------------------|------------------------------------------|
 | **Deployment Structure**   | Single availability zone            | Three independent availability zones | Single availability zone                |
+| **Service available**      | All or most Public Cloud services   | All or most Public Cloud services   | Most Compute and storage services        |
 | **Redundancy**             | 2N+1 internal (resources in a single AZ)                      | Cross-zone redundancy (resources replicated between zones)          | Limited internal replication (replication of some resources in a single zone)               |
 | **Data Availability**      | Limited during data center outages, protected against server/disk failures | Maintained across zones, resilient to zone outages | Limited during data center outages, protected against server/disk failures |
 | **Latency**                | Low for close end-users                            | Low for close end-users and ultra low between availability zones   | Low for close end-users |
