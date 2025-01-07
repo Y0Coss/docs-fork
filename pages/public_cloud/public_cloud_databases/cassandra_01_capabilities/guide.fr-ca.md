@@ -27,7 +27,10 @@ Entire database instances have to be in the same region. Multi-AZ is currently n
 
 ### Cassandra versions
 
-The Public Cloud Databases offer supports Cassandra version 4.
+The Public Cloud Databases offer supports the following Cassandra versions:
+
+- Cassandra 4.0 (soon depreciated)
+- Cassandra 4.1
 
 Cassandra recommends always installing and using the latest stable version.
 
