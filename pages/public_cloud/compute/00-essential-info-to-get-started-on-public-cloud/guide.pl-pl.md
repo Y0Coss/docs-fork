@@ -123,7 +123,6 @@ Oto kilka zasobów ogólnych, które pomogą Ci w uruchomieniu usługi Public Cl
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Najczęstsze pytania dotyczące usługi Public Cloud.|
 |[Słowniczek](/pages/public_cloud/compute/introduction_about_instances)|Koncepcje i definicje, które będą potrzebne, aby iść naprzód.|
 |[Dostępność usług według lokalizacji](https://www.ovhcloud.com/pl/public-cloud/regions-availability/)|Tabele dostępności usług w różnych lokalizacjach.|
-|[Zmiany obrazu](/pages/public_cloud/compute/image_changelog)|Zmiany wprowadzone do obrazów systemowych dostępnych publicznie.|
 
 W praktyce znajdziesz tutaj również przewodniki, które pomogą Ci zacząć:
 

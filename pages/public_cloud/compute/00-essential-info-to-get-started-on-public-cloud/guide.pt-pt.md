@@ -124,7 +124,6 @@ Veja aqui alguns recursos gerais que o ajudarão no arranque do Public Cloud:
 |[FAQ](/pages/public_cloud/compute/faq_pci)|As questões mais frequentes sobre o Public Cloud.|
 |[Léxico](/pages/public_cloud/compute/introduction_about_instances)|Os conceitos e definições de que necessitará para avançar.|
 |[Disponibilidade dos serviços por localização](https://www.ovhcloud.com/pt/public-cloud/regions-availability/)|Os quadros de disponibilidade dos serviços através das diferentes localizações.|
-|[Muelog das imagens](/pages/public_cloud/compute/image_changelog)|Alterações nas imagens de sistema disponíveis publicamente.|
 
 Na prática, pode consultar os seguintes manuais:
 
