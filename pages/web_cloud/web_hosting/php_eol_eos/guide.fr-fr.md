@@ -18,96 +18,97 @@ Les informations contenues dans ce guide concernent les versions de PHP utilisé
 
 <table>
   <tr>
-    <th style="color: white; background-color: black;">Version</th>
-    <th style="color: white; background-color: black;">Principales dates de la communauté PHP</th>
-    <th style="color: white; background-color: black;">Version active chez OVHCloud</th>
-    <th style="color: white; background-color: black;">Date de fin de vie OVH</th>
+    <th>Version</th>
+    <th>Principales dates de la communauté PHP</th>
+    <th>Version active chez OVHCloud</th>
+    <th>Date de fin de vie OVH</th>
   </tr>
   <tr>
-    <td style="background-color: lightcoral; color: white;">PHP 4.4</td>
-    <td style="background-color: lightcoral; color: white;">Fin support actif : 07/08/2008<br>Fin support de sécurité : 07/08/2008<br>Fin de vie : 07/08/2008</td>
-    <td style="background-color: lightcoral; color: white;">Inactive</td>
-    <td style="background-color: lightcoral; color: white;">Non définie</td>
+    <td><span style="color: red;">PHP 4.4</span></td>
+    <td>Fin support actif : 07/08/2008<br>Fin support de sécurité : 07/08/2008<br>Fin de vie : 07/08/2008</td>
+    <td><span style="color: red;">Inactive</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 5.4</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 14/09/2014<br>Fin support de sécurité : 03/09/2015<br>Fin de vie : 03/09/2015</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 5.4</span></td>
+    <td>Fin support actif : 14/09/2014<br>Fin support de sécurité : 03/09/2015<br>Fin de vie : 03/09/2015</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 5.5</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 10/07/2015<br>Fin support de sécurité : 21/07/2016<br>Fin de vie : 21/07/2016</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 5.5</span></td>
+    <td>Fin support actif : 10/07/2015<br>Fin support de sécurité : 21/07/2016<br>Fin de vie : 21/07/2016</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 5.6</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 19/01/2017<br>Fin support de sécurité : 31/12/2018<br>Fin de vie : 31/12/2018</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 5.6</span></td>
+    <td>Fin support actif : 19/01/2017<br>Fin support de sécurité : 31/12/2018<br>Fin de vie : 31/12/2018</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 7.0</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 03/12/2017<br>Fin support de sécurité : 10/01/2019<br>Fin de vie : 10/01/2019</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 7.0</span></td>
+    <td>Fin support actif : 03/12/2017<br>Fin support de sécurité : 10/01/2019<br>Fin de vie : 10/01/2019</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 7.1</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 01/12/2018<br>Fin support de sécurité : 01/12/2019<br>Fin de vie : 01/12/2019</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 7.1</span></td>
+    <td>Fin support actif : 01/12/2018<br>Fin support de sécurité : 01/12/2019<br>Fin de vie : 01/12/2019</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 7.2</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 30/11/2019<br>Fin support de sécurité : 30/11/2020<br>Fin de vie : 30/11/2020</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 7.2</span></td>
+    <td>Fin support actif : 30/11/2019<br>Fin support de sécurité : 30/11/2020<br>Fin de vie : 30/11/2020</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 7.3</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 06/12/2020<br>Fin support de sécurité : 06/12/2021<br>Fin de vie : 06/12/2021</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 7.3</span></td>
+    <td>Fin support actif : 06/12/2020<br>Fin support de sécurité : 06/12/2021<br>Fin de vie : 06/12/2021</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 7.4</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 28/11/2021<br>Fin support de sécurité : 28/11/2022<br>Fin de vie : 28/11/2022</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 7.4</span></td>
+    <td>Fin support actif : 28/11/2021<br>Fin support de sécurité : 28/11/2022<br>Fin de vie : 28/11/2022</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 8.0</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 26/11/2022<br>Fin support de sécurité : 26/11/2023<br>Fin de vie : 26/11/2023</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 8.0</span></td>
+    <td>Fin support actif : 26/11/2022<br>Fin support de sécurité : 26/11/2023<br>Fin de vie : 26/11/2023</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 8.1</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 25/11/2023<br>Fin support de sécurité : 25/11/2024<br>Fin de vie : 25/11/2024</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 8.1</span></td>
+    <td>Fin support actif : 25/11/2023<br>Fin support de sécurité : 25/11/2024<br>Fin de vie : 25/11/2024</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 8.2</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 08/12/2024<br>Fin support de sécurité : 08/12/2025<br>Fin de vie : 08/12/2025</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 8.2</span></td>
+    <td>Fin support actif : 08/12/2024<br>Fin support de sécurité : 08/12/2025<br>Fin de vie : 08/12/2025</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 8.3</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 23/11/2025<br>Fin support de sécurité : 23/11/2026<br>Fin de vie : 23/11/2026</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 8.3</span></td>
+    <td>Fin support actif : 23/11/2025<br>Fin support de sécurité : 23/11/2026<br>Fin de vie : 23/11/2026</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: red;">À définir</span></td>
   </tr>
   <tr>
-    <td style="background-color: lightgreen; color: white;">PHP 8.4</td>
-    <td style="background-color: lightgreen; color: white;">Fin support actif : 28/11/2026<br>Fin support de sécurité : 28/11/2027<br>Fin de vie : 28/11/2027</td>
-    <td style="background-color: lightgreen; color: white;">Active</td>
-    <td style="background-color: lightgreen; color: white;">Non définie</td>
+    <td><span style="color: green;">PHP 8.4</span></td>
+    <td>Fin support actif : 28/11/2026<br>Fin support de sécurité : 28/11/2027<br>Fin de vie : 30/06/2028</td>
+    <td><span style="color: green;">Active</span></td>
+    <td><span style="color: green;">30/06/2028</span></td>
   </tr>
 </table>
+
 
 - 🟥 : version disponible et proposée.
 - 🟩 : version disponible mais plus proposée.
