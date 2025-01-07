@@ -59,7 +59,18 @@ Voici quelques scénarios pour mieux comprendre ce fonctionnement :
 
 ### Fonctionnement des Savings Plans pour Rancher
 
-...
+Les Savings Plans pour Rancher reposent sur l’engagement d’une quantité de vCPU pour une durée donnée, offrant ainsi une facturation avantageuse pour les clusters Kubernetes gérés. Contrairement aux Savings Plans classiques basés sur des instances, ce modèle offre plus de flexibilité en s'appliquant à une capacité partagée.
+
+Points clés :
+
+- **Engagement sur les vCPU :** Le client réserve un nombre de vCPU (ex. 32 vCPU sur 1 an), utilisables dans un ou plusieurs clusters Kubernetes, sans restriction de région.
+- **Couverture des vCPU simultanés :** Le Savings Plan s’applique uniquement aux vCPU actifs simultanément. Les vCPU supplémentaires au-delà de l'engagement sont facturés au tarif standard.
+
+> [!warning]
+>
+> Pour que les vCPU inclus dans votre Savings Plan soient consommés, il est impératif d'attribuer une instance à vos noeuds Kubernetes. Sans instance configurée, les ressources couvertes par le Savings Plan resteront inutilisées, et vous continuerez à payer pour ces ressources non consommées. Assurez-vous de bien dimensionner vos instances pour qu'elles correspondent à vos besoins en vCPU et RAM.
+
+<!-- une note/warning à écrire pour la partie paiement ??? concernant le paiement, qui est chargé à 20vcpu minimum mais ou l'on peut quand même ne s'engageait que pour 1 ?  je pense avoir compris que l'on peut payer 1 seul vcpu mais qu'il sera au meme taux unité qeue si l'on prend 20 ? -->
 
 ### Gestion automatisée de l’infrastructure avec les Savings Plans
 
