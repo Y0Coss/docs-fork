@@ -1,7 +1,7 @@
 ---
 title: "Migrating your website and associated services to OVHcloud"
 excerpt: "Find out how to migrate your website, domain name, database and emails to OVHcloud without any service interruptions"
-updated: 2024-06-24
+updated: 2025-01-08
 ---
 
 ## Objective

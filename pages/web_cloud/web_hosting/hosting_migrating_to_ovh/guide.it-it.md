@@ -1,7 +1,7 @@
 ---
 title: "Migrare un sito Web e i servizi associati a OVHcloud"
 excerpt: "Scopri come migrare il tuo sito Web, il tuo dominio, il tuo database e le tue email in OVHcloud senza interruzione di servizi"
-updated: 2024-06-24
+updated: 2025-01-08
 ---
 
 ## Obiettivo

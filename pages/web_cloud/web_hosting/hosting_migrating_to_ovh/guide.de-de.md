@@ -1,7 +1,7 @@
 ---
 title: "Migration Ihrer Website und zugehörigen Dienste zu OVHcloud"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website, Ihren Domainnamen, Ihre Datenbank und E-Mails ohne Dienstunterbrechung zu OVHcloud migrieren"
-updated: 2024-06-24
+updated: 2025-01-08
 ---
 
 ## Ziel
