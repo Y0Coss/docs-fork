@@ -110,7 +110,7 @@
             + [Kimsufi and So you Start customers - Get to know the OVHcloud Control Panel](bare_metal_cloud/dedicated_servers/getting-familiar-with-ovhcloud-control-panel)
             + [How to secure a dedicated server](bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
             + [How to get started with SSH connections](bare_metal_cloud/dedicated_servers/ssh_introduction)
-            + [How to create and use SSH keys](bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+            + [How to create and use authentication keys for SSH connections to OVHcloud servers](bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
             + [How to store public authentication keys in the OVHcloud Control Panel](bare_metal_cloud/dedicated_servers/import-keys-control-panel)
             + [How to use the IPMI console with a dedicated server](bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers)
             + [Migrate data from one dedicated server to another](bare_metal_cloud/dedicated_servers/migrate_a_server_to_another)
