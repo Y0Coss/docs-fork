@@ -1,7 +1,7 @@
 ---
 title: "Comment migrer un site web d'un VPS vers un serveur dédié ou une instance Public Cloud"
 excerpt: "Découvrez comment migrer votre site web d'un VPS vers un serveur dédié ou une instance Public Cloud"
-updated: 2024-12-20
+updated: 2025-01-09
 ---
 
 ## Objectif
@@ -373,7 +373,7 @@ Une fois la migration terminée, testez votre site web pour vous assurer qu'il f
 
 Après avoir migré votre site web sur votre serveur dédié ou instance Public Cloud, il est crucial de sécuriser votre serveur afin de protéger vos données et garantir le bon fonctionnement de vos services.
 
-Pour une liste complète des bonnes pratiques de sécurité, consultez nos guides « [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server){.external} » et « [Bonnes pratiques pour sécuriser et structurer les projets Public Cloud OVHcloud](/pages/public_cloud/compute/securing_and_structuring_projects){.external} ».
+Pour une liste complète des bonnes pratiques de sécurité, consultez nos guides « [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server) » et « [Bonnes pratiques pour sécuriser et structurer les projets Public Cloud OVHcloud](/pages/public_cloud/compute/securing_and_structuring_projects) ».
 
 ## Aller plus loin <a name="go-further"></a>
 
