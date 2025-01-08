@@ -76,7 +76,7 @@ Es gibt mehrere Möglichkeiten, Public Cloud Ressourcen zu verwalten. Ob als Ein
 
 - Um die Produkte zu entdecken, unterstützt Sie das Kundencenter bei der Erstellung von Ressourcen, indem Sie die Performance, den Standort, die gewünschte Personalisierung und andere Einstellungen wie die Abrechnung auswählen.
 
-- Um Deployments zu automatisieren und Ihre Architekturen zu industrialisieren, können Sie auch gängige Tools verwenden, indem Sie sich direkt über Standard-APIs wie der S3-API, den OpenStack-APIs oder sogar Kubernetes verbinden.
+- Um Deployments zu automatisieren und Ihre Architekturen zu industrialisieren, können Sie auch gängige Tools verwenden, indem Sie sich direkt über Standard-APIs wie der Amazon S3-API, den OpenStack-APIs oder sogar Kubernetes verbinden.
 
 ### In der praktischen Anwendung
 
@@ -115,7 +115,7 @@ Es kann sein, dass Sie sich mit einer Begrenzung der Kontingente für Public Clo
 Sie können mehrere Benutzer verwalten, die an Ihrem Projekt beteiligt sind.
 <br>Sie haben dann zwei Möglichkeiten:
 
-- Wenn Sie die OpenStack- oder S3-APIs oder das Horizon-Interface verwenden möchten, müssen dafür [Benutzer erstellt werden](/pages/public_cloud/compute/create_and_delete_a_user). Die Benutzer können gegebenenfalls eingeschränkte Rechte haben, um die Verwaltungsbereiche abzusichern.
+- Wenn Sie die OpenStack- oder Amazon S3-APIs oder das Horizon-Interface verwenden möchten, müssen dafür [Benutzer erstellt werden](/pages/public_cloud/compute/create_and_delete_a_user). Die Benutzer können gegebenenfalls eingeschränkte Rechte haben, um die Verwaltungsbereiche abzusichern.
 - Wenn der Zugriff nicht die APIs oder Horizon beinhalten muss, können Sie dem Projekt auch [einen weiteren OVHcloud Kunden-Account hinzufügen](/pages/public_cloud/compute/delegate_projects).
 
 ## Weiterführende Informationen <a name="gofurther"></a>

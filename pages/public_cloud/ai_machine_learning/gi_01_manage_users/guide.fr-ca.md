@@ -1,14 +1,8 @@
 ---
 title: Utilisateurs - Gérer les utilisateurs AI et leurs rôles (EN)
 excerpt: Comprendre le concept des utilisateurs des AI Solutions
-updated: 2024-12-13
+updated: 2024-12-17
 ---
-
-<style>
-.img-center {
-  text-align: center !important;
-}
-</style>
 
 ## Objective
 
@@ -31,30 +25,31 @@ To grant access to **OVHcloud AI Solutions** to the users of your Public Cloud P
 
 In addition to the AI Training role, we strongly recommend adding the **ObjectStore Operator** role to your AI users. This role provides read/write access to the **OVHcloud Object Storage**, which is a persistent storage solution to store your [data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) that is incorporated into our AI Solutions. This way, you can access your data within the **AI Solutions**.
 
-To apply these roles, log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Public Cloud`{.action} section, in the horizontal menu at the top of the website. Select the Public Cloud project you want to use. Then click on the `Project Management`{.action} category in the left-hand vertical menu to access the `Users & Roles`{.action} section.
+To apply these roles, log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Public Cloud`{.action} section, in the horizontal menu at the top of the website. Select the Public Cloud project you want to use. Then, click on the `Project Management`{.action} category in the left-hand vertical menu to access the `Users & Roles`{.action} section:
 
-![image](images/03_users_menu.png){.thumbnail .img-center}
+![image](images/03_users_menu.png){.thumbnail}
 
 On this page, you can either **create a new user** for your Public Cloud project or **edit the roles of an existing user**.
 
 **1\. Create a new user**
 
-Click on `+ Add user`{.action}, specify a name as the user's description, and **assign the required roles** to use the AI Solutions with the Object Storage (**AI Training Operator** or **AI Training Reader**, depending on the level of access you want to grant, and the **ObjectStore Operator**).
+Click on `+ Add user`{.action}, specify a name as the user's description, and **assign the required roles** to use the AI Solutions with the Object Storage (**AI Training Operator** or **AI Training Reader**, depending on the level of access you want to grant, and the **ObjectStore Operator**):
 
-![image](images/04_users_roles.png){.thumbnail .img-center}
+![image](images/04_users_roles.png){.thumbnail}
 
-This will generate a password that will allow you to authenticate to your AI Notebooks, Jobs and Apps, as well as via the `ovhai` CLI.
-
-If you ever lose this password, you can regenerate it at any time by clicking the `...`{.action} button next to your user, and then on `Generate a password`{.action}.
-
-**2\. Edit an existing user roles**
-
-To edit an existing user, simply click the `...`{.action} button next to the user, and select `Edit roles` to modify its existing roles.
+This will generate a password that will allow you to authenticate to your existing AI Notebooks, AI Training jobs, AI Deploy apps and to the `ovhai` CLI to launch new ones.
 
 > [!primary]
 >
+> - If you ever lose the password of a user, you can regenerate it at any time by clicking the `...`{.action} button next to your user, and then on `Generate a password`{.action}.
 > - Access to **AI Solutions** can be revoked anytime by deleting the user or removing its **AI Training Operator / Reader** role.
-> - To be able to use the OVHcloud Object Storage, make sure that the user has the **Objectstore Operator** role.
+>
+
+**2\. Edit an existing user roles**
+
+To edit an existing user, simply click the `...`{.action} button next to the user, and select `Edit roles` to modify its existing roles:
+
+![image](images/05_edit_user_roles.png){.thumbnail}
 
 ## Going further
 

@@ -72,7 +72,7 @@ There are several ways to manage Public Cloud resources. Whether you are an adva
 
 - To discover the products, the OVHcloud Control Panel helps you create resources by leading you to choose the performance of the product, its location, the customisation you want, or other parameters such as its billing method.
 
-- To automate deployments and industrialise your architectures, you can also use market tools by logging directly in to standard APIs like the S3 API, OpenStack APIs or even Kubernetes.
+- To automate deployments and industrialise your architectures, you can also use market tools by logging directly in to standard APIs like the Amazon S3 API, OpenStack APIs or even Kubernetes.
 
 ### Starting: handling
 
@@ -110,7 +110,7 @@ You may have to deal with the quota issue.
 You may need to manage several users who will be involved in your project.
 <br>You then have two options:
 
-- If you would like to use the OpenStack or S3 APIs, or the Horizon interface, you will need to [create users](/pages/public_cloud/compute/create_and_delete_a_user) to do this. Users may have limited permissions to secure the action perimeters.
+- If you would like to use the OpenStack or Amazon S3 APIs, or the Horizon interface, you will need to [create users](/pages/public_cloud/compute/create_and_delete_a_user) to do this. Users may have limited permissions to secure the action perimeters.
 - If you do not need access to the APIs or Horizon, you can [link another OVHcloud](/pages/public_cloud/compute/delegate_projects) customer account as an add-on to your project.
 
 ## Go further <a name="gofurther"></a>

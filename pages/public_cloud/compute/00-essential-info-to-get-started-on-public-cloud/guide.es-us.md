@@ -76,7 +76,7 @@ Existen diversas formas de gestionar los recursos de Public Cloud. Tanto si desc
 
 - Para descubrir los productos, el área de cliente le ayuda a crear sus recursos eligiendo el rendimiento del producto, su localización, la personalización que desea, así como otros parámetros, como el modo de facturación.
 
-- Para automatizar los despliegues e industrializar sus arquitecturas, también puede utilizar las herramientas del mercado conectándose directamente a las API estándar como la API S3, las API de OpenStack o incluso Kubernetes.
+- Para automatizar los despliegues e industrializar sus arquitecturas, también puede utilizar las herramientas del mercado conectándose directamente a las API estándar como la API Amazon S3, las API de OpenStack o incluso Kubernetes.
 
 ### Inicio: toma de contacto
 
@@ -115,7 +115,7 @@ Es posible que tenga que ocuparse de los límites.
 Es posible que necesite gestionar varios usuarios que intervengan en su proyecto.
 <br>Podrá elegir entre dos opciones:
 
-- Si quiere utilizar las API de OpenStack o S3, o la interfaz Horizon, deberá [crear usuarios](/pages/public_cloud/compute/create_and_delete_a_user) para ello. Los usuarios pueden tener derechos limitados para proteger los perímetros de acción.
+- Si quiere utilizar las API de OpenStack o Amazon S3, o la interfaz Horizon, deberá [crear usuarios](/pages/public_cloud/compute/create_and_delete_a_user) para ello. Los usuarios pueden tener derechos limitados para proteger los perímetros de acción.
 - Si no necesita acceder a las API o a Horizon, puede [asociar otra cuenta de cliente de OVHcloud](/pages/public_cloud/compute/delegate_projects) a su proyecto.
 
 ## Más información <a name="gofurther"></a>
