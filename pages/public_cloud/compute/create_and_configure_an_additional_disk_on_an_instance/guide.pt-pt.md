@@ -1,7 +1,7 @@
 ---
 title: 'Criar e configurar um disco suplementar numa instância'
 excerpt: 'Saiba como associar um novo volume à sua instância Public Cloud'
-updated: 2025-01-07
+updated: 2024-12-24
 ---
 
 <style>
@@ -33,7 +33,7 @@ Tal pode ser útil nos seguintes casos:
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
-- Dispor de uma instância [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external} na sua conta OVHcloud.
+- Dispor de uma instância [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na sua conta OVHcloud.
 - Ter acesso de administrador (sudo) à sua instância através de SSH.
 - Preparar o ambiente se deseja utilizar [Terraform](/pages/public_cloud/compute/how_to_use_terraform).
 
@@ -489,7 +489,7 @@ Eis como **desmontar o volume** do sistema operativo antes de o desmontar da ins
 >>
 >> Registe e saia do editor.
 >>
-> Em Windows
+> **Em Windows**
 >>
 >> Crie uma ligação RDP (Remote Desktop) com a sua instância Windows.
 >>

@@ -1,7 +1,7 @@
 ---
 title: 'Crea e configura un disco aggiuntivo sulla tua istanza'
 excerpt: 'Come associare un nuovo volume alla tua istanza Public Cloud'
-updated: 2025-01-07
+updated: 2024-12-24
 ---
 
 <style>
@@ -33,7 +33,7 @@ Ciò può essere utile nei seguenti casi:
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Disporre di un'istanza [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external} nel proprio account OVHcloud
+- Disporre di un'istanza [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) nel proprio account OVHcloud
 - Avere un accesso amministratore (sudo) alla tua istanza via SSH
 - Prepara l'ambiente per utilizzare [Terraform](/pages/public_cloud/compute/how_to_use_terraform)
 
@@ -47,7 +47,7 @@ Ciò può essere utile nei seguenti casi:
 ### Associa un nuovo volume
 
 > [!tabs]
-> **Via l'espace client OVHcloud**
+> **Dallo Spazio Cliente OVHcloud**
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto. Poi apri `Block Storage`{.action} nel menu a sinistra.
 >>
 >> In questa sezione clicca sul pulsante `Crea un volume`{.action}.
@@ -577,6 +577,7 @@ Infine, scollegheremo il volume dell’istanza:
 >> ```
 >>
 >> L'output dovrebbe essere simile al seguente:
+>>
 >> ```console
 >> $ terraform apply
 >> openstack_compute_volume_attach_v2.va_1: Refreshing state... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]

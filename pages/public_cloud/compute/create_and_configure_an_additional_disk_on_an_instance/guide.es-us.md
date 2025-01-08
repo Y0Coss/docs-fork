@@ -1,7 +1,7 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
 excerpt: 'Cómo asociar un nuevo volumen a una instancia de Public Cloud'
-updated: 2025-01-07
+updated: 2024-12-24
 ---
 
 <style>
@@ -33,7 +33,7 @@ Esto puede ser útil en los siguientes casos:
 ## Requisitos
 
 - Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
-- Disponer de una instancia de [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external} en su cuenta de OVHcloud.
+- Disponer de una instancia de [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) en su cuenta de OVHcloud.
 - Tener acceso de administrador (sudo) a su instancia a través de SSH.
 - Preparar el entorno si desea utilizar [Terraform](/pages/public_cloud/compute/how_to_use_terraform).
 
@@ -63,7 +63,7 @@ Esto puede ser útil en los siguientes casos:
 >>
 >> ![configure disk](images/avolume03.png){.thumbnail}
 >>
-A la derecha del volumen, haga clic en el botón `...`{.action} y seleccione `Asociar a la instancia`{.action}.
+>> A la derecha del volumen, haga clic en el botón `...`{.action} y seleccione `Asociar a la instancia`{.action}.
 >>
 >> ![attach disk 01](images/avolume04.png){.thumbnail}
 >>
@@ -547,6 +547,7 @@ Por último, vamos a desvincular el volumen de la instancia:
 >> ```
 >>
 >> El resultado debería ser similar al siguiente:
+>>
 >> ```console
 >> $ terraform plan
 >> openstack_compute_volume_attach_v2.va_1: Refreshing state... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
