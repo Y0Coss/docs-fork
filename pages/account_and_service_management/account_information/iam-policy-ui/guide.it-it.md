@@ -1,7 +1,7 @@
 ---
 title: Come utilizzare le politiche IAM dallo Spazio Cliente
 excerpt: Come assegnare diritti di accesso specifici agli utenti da un account OVHcloud
-updated: 2025-01-07
+updated: 2025-01-08
 ---
 
 ## Obiettivo
@@ -45,17 +45,23 @@ Accedi al menu IAM tramite l'accesso dedicato nel tuo Spazio Cliente.
 
 ![Accesso al menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
-Visualizzi una lista di tutte le politiche in corso create sul tuo account.
+Se si accede per la prima volta a questo menu, viene visualizzata la pagina seguente:
 
-![Accesso al menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+![Accesso al menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
-Ogni politica è visualizzata con il suo nome, il numero di identità ad essa associate e il numero di azioni che contiene.
+Clicca direttamente su [Crea una policy](#create-policy) o su [Crea utenti](#create-users) in base all’azione che vuoi effettuare.
 
 > [!primary]
 >
 > Cliccare sul pulsante "Modalità avanzata" permette di visualizzare l'elenco di tutte le politiche OVHcloud. Queste politiche vengono create automaticamente da OVHcloud per convertire la delega preesistente delle `NIC Tech` (contatto tecnico) e `NIC Admin` (contatto amministratore) sulla nuova funzionalità IAM. 
 >
 > I clienti non sono autorizzati a modificare o eliminare queste politiche.
+
+Se hai già creato policy o utenti, il menu visualizza l'elenco di tutte le policy in corso create sul tuo account OVHcloud.
+
+![Accesso al menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Ogni politica è visualizzata con il suo nome, il numero di identità ad essa associate e il numero di azioni che contiene.
 
 ### Gestione delle politiche
 
