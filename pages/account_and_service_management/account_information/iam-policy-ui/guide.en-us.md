@@ -45,17 +45,23 @@ You can access the IAM menu via the dedicated entry in your Control Panel.
 
 ![Access to the IAM menu](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
-The menu will give you the list of all the current policies created on your account.
+If you are accessing this menu for the first time, the following page appears:
 
-![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
+![Accès au menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
-Each policy is displayed with its name, the number of identities linked to it, and the number of actions it contains.
+Click [Create a policy](#create-policy) or [Create users](#create-users) directly depending on the action you want to perform.
 
 > [!primary]
 >
 > Clicking the "Advanced mode" button shows the list of all the OVHcloud Managed policies. These policies are automatically created by OVHcloud to convert the preexisting `NIC Tech` and `NIC Admin` delegation on the new IAM feature. 
 >
 > Customers are not allowed to edit or delete these policies.
+
+If you have already created policies or users, the menu displays a list of all the current policies created on your OVHcloud account.
+
+![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Each policy is displayed with its name, the number of identities linked to it, and the number of actions it contains.
 
 ### Managing policies
 
