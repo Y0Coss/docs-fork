@@ -1,39 +1,39 @@
 ---
-title: Data Analytics - Lifecycle policy
-excerpt: Lifecycle policy for Data Analytics engines
+title: Analytics - Lifecycle policy
+excerpt: Lifecycle policy for Analytics engines
 updated: 2025-01-07
 ---
 
 ## Objective
 
-OVHcloud Data Analytics allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance.
-Each service is powered by third-party databases management systems (DBMS), maintained by third-party companies or communities such as Apache Kafka, M3DB.
+OVHcloud Analytics enables you to focus on building and deploying analytics-driven cloud applications while OVHcloud handles the underlying infrastructure and maintenance.
+Each service leverages powerful third-party analytics engines, maintained by third-party companies or communities such as Apache Kafka, Grafana, and OpenSearch.
 
-**This guide explains the OVHcloud policy for major DBMS versions provided in Data Analytics.**
+**This guide explains the OVHcloud policy for major versions of analytics engines provided within its Analytics services.**
 
 ## Lifecycle policy
 
-This policy is being provided to help customers understand the lifecycle of OVHcloud Data Analytics, in order to anticipate and prepare transitions to newer versions.
+This policy is being provided to help customers understand the lifecycle of OVHcloud Analytics, in order to anticipate and prepare transitions to newer versions.
 
-**End Of Life (EOL)** refers to the deadline after which affected Data Analytics services are deprecated and will no longer be supported nor maintained.
+**End Of Life (EOL)** refers to the deadline after which affected Analytics services are deprecated and will no longer be supported nor maintained.
 
-OVHcloud aims to follow the EOL schedule set by the original authors and maintainers of the DBMS software, aka upstream projects. Once the upstream project retires a specific version, they no longer receive security updates or critical bug fixes.
+OVHcloud aims to follow the EOL schedule set by the original authors and maintainers of the analytics engines, also known as upstream projects. Once the upstream project retires a specific version, it no longer receives security updates or critical bug fixes.
 
-Continued use of outdated services means that they no longer offer our customers the level of protection their business needs. Therefore, by following upstream project's EOL schedule, we ensure that OVHcloud services are always running on supported versions of the DBMS software.
+Continued use of outdated services means they no longer offer our customers the level of protection their business needs. Therefore, by following the upstream project's EOL schedule, we ensure that OVHcloud services are always running on supported versions of the analytics engines.
 
 ### Service coverage
 
 This lifecycle policy is applicable to :
 
-- All Data Analytics services except Data Processing;
+- All Analytics services except Data Processing;
 - Including all the service plans (Essential, Business, Enterprise, Production, Advanced);
-- And all proposed DBMS, such as Kafka, M3 ...
+- And all proposed analytics engine, such as Kafka, Grafana, ...
 - Whatever state; if they are **up and running** or in a **sleeping state** (powered off, waiting for payment).
 
 ### Providing new major versions
 
-Once a new DBMS major version is considered stable to use, OVHcloud will do its best to provide it to our customers as soon as we can.
-Since many factors can come into play, we cannot provide an exact timeline or engagement.
+Once a new major version of an analytics engine is considered stable, OVHcloud will do its best to make it available as soon as possible.
+Since many factors can come into play, we cannot provide an exact timeline or commitment.
 
 ### Prior EOL
 
@@ -52,24 +52,24 @@ Once the EOL date is reached :
 
 ### Potential impacts
 
-New DBMS versions can introduce minor changes but also breaking changes, leading to malfunctions in your code thus applications. One feature might not work properly, or your whole website or application can become broken and unavailable. **Impacts cannot be known by OVHcloud** and customers are responsible for their own code.
-We recommend to browse official DBMS documentation to check the newly introduced features and/or deprecated ones.
+New versions of analytics engines can introduce minor changes but also breaking changes, potentially causing malfunctions in your code and applications. A specific feature might not work properly, or your entire website or application could become non-functional and unavailable. These **impacts cannot be predicted by OVHcloud**, and customers are responsible for their own code.
+We recommend consulting the official documentation of the analytics engine to review newly introduced features and/or deprecated ones.
 
 ## Recommendations for upgrades
 
 We highly recommend to perform the version upgrade well before EOL so that you can test compatibility for any breaking changes, plan for unforeseen issues, and migrate to the newer version at your own schedule.
 
-Data Analytics offer database forking (a copy) as an efficient tool to verify the version upgrade so that you can safely test compatibility without committing your production services to a one-way upgrade.
+Analytics services offer a forking feature (a copy) as an efficient tool to verify the version upgrade. This allows you to safely test compatibility without committing your production services to a one-way upgrade.
 
-To perform a fork, navigate to the "Overview" page of your service, and scroll down until you see a "New database fork" button. This will allow you to make a separate new database service that is cloned from the current one's backups.
+To perform a fork, navigate to the "Overview" page of your service, and scroll down until you see a "New service fork" button. This will create a separate service instance cloned from the current service's backups.
 
 ## EOL Announcements for major versions
 
 ### Kafka
 
-Data Analytics for Kafka *major.minor* version will reach EOL approximately one year after it's made available on Data Analytics.
+Analytics for Kafka *major.minor* version will reach EOL approximately one year after it's made available on Analytics.
 
-| **Kafka Version** | **OVHcloud EOL** | **Availability on Data Analytics** |
+| **Kafka Version** | **OVHcloud EOL** | **Availability on Analytics** |
 |-------------------|------------------|-------------------------------------------|
 | 3.4.x             | 2024-05-13       | 2023-05-09                                |
 | 3.5.x             | 2024-07-31       | 2023-07-31                                |
