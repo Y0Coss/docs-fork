@@ -259,7 +259,7 @@ And apply this to create the persistent volume claim:
 kubectl apply -f cephfs-persistent-volume-claim.yaml
 ```
 
-Let’s now create two Nginx pods using the persistent volume claim as their webroot folder on two different kubernetes nodes. In this example the kubernetes nodes are called `kubernetes-node-1` and `kubernetes-node-2`, please modify this accordingly. Let’s create a `cephfs-nginx-pods.yaml` file:
+Let's now create a DaemonSet, which will create pods on all available nodes in order to use our CephFS volume simultaneously on multiple nodes. Let’s create a `cephfs-nginx-pods.yaml` file:
 
 ```yaml
 apiVersion: apps/v1
