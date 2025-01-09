@@ -10,7 +10,7 @@ With our analytics services, we take care of the infrastructure and administrati
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
-## Analytics services:
+## Analytics services
 
 We currently offer data analytics engines:
 
