@@ -46,9 +46,9 @@ Chacune de ces options repose sur les principes fondamentaux de résilience, de 
 
 #### Infrastructure et redondance
 
-Une région 1-AZ consiste en **une zone de disponibilité unique composée de plusieurs centres de données dans une même région géographique**. Elle utilise une architecture de redondance 2N+1, conçue pour garantir la résilience contre les défaillances matérielles locales, telles que les pannes de disques ou de serveurs. Cependant, cette configuration reste vulnérable aux pannes affectant l'ensemble du centre de données.
+Une région 1-AZ consiste en **une zone de disponibilité unique composée de un ou plusieurs centres de données dans une même région géographique**. Elle utilise une architecture de redondance 2N+1, conçue pour garantir la résilience contre les défaillances matérielles locales, telles que les pannes de disques ou de serveurs. Cependant, cette configuration reste vulnérable aux pannes affectant l'ensemble du centre de données.
 
-Les services et les données sont protégés contre les incidents localisés grâce à une redondance interne efficace, mais une panne majeure ou totale d'un centre de données pourrait compromettre la disponibilité des services.
+Les services et les données sont protégés contre les incidents localisés grâce à une redondance interne efficace, mais une panne majeure ou totale d'un centre de données pourrait compromettre la disponibilité des services. Notez que chaque centre de données OVHcloud dispose d'une alimentation électrique et d'un réseau redondants pour éviter ces pannes.
 
 #### Caractéristiques
 
@@ -157,7 +157,7 @@ Architecture:
 - **Trois zones de disponibilité (AZs) :** Chaque zone est géographiquement isolée pour éviter tout impact d'un sinistre local.
 - **Réplication des données :** Réplication synchrone des données entre les trois zones pour garantir leur disponibilité continue.
 - **Instances réparties :** Les instances applicatives sont déployées dans chaque zone, assurant la redondance et la haute disponibilité.
-- **Équilibreurs de charge :** Les équilibreurs gèrent le trafic utilisateur en répartissant les requêtes entre les zones, même en cas de panne.
+- **Load balancers :** Les Load balancers gèrent le trafic utilisateur en répartissant les requêtes entre les zones, même en cas de panne.
 - **Sauvegardes régionales :** Les sauvegardes sont externalisées dans une solution S3 régionale pour protéger contre une perte totale des données.
 
 ///
@@ -166,21 +166,21 @@ Architecture:
 
 #### Infrastructure et conception
 
-Les Local Zones rapprochent les services OVHcloud des utilisateurs finaux en réduisant la latence et en permettant le traitement des données localement. Elles sont conçues pour offrir des performances optimales pour les applications nécessitant une faible latence et une proximité avec les utilisateurs, tout en répondant aux exigences de conformité locale.
+Les zones locales rapprochent les services OVHcloud de certains utilisateurs finaux en réduisant la latence et en permettant le traitement des données localement. Elles sont conçues pour offrir des performances optimales pour les applications nécessitant une faible latence et une proximité avec les utilisateurs, tout en répondant aux exigences de conformité locale.
 
-Chaque Local Zone est une extension d'une région principale et fonctionne comme une seule zone de disponibilité, ce qui la rend idéale pour les scénarios où la latence est une priorité, mais où une redondance multi-AZ n'est pas essentielle.
+Chaque zone locale fonctionne comme une zone de disponibilité unique avec un ensemble limité de services., ce qui la rend idéale pour les scénarios où la latence est une priorité, mais où une redondance multi-AZ n'est pas essentielle.
 
 #### Caractéristiques
 
-- **Réduction de la latence :** Les Local Zones garantissent des temps de réponse rapides, idéaux pour les applications en temps réel comme les jeux en ligne ou les vidéoconférences.
+- **Réduction de la latence :** Les zones locales garantissent des temps de réponse rapides aux utilisateurs qui en sont proches, ce qui est idéal pour les applications en temps réel telles que les jeux en ligne ou les vidéoconférences.
 - **Conformité locale :** Les données peuvent être traitées et stockées dans des emplacements spécifiques, facilitant ainsi le respect des exigences de localisation et de réglementation.
-- **Extension régionale :** Les Local Zones agissent comme une extension des régions principales pour compléter les charges de travail critiques localement, tout en bénéficiant des services de la région mère.
+- **Extension régionale :** Les zones locales peuvent être utilisées comme une extension des régions 1-AZ ou 3-AZ pour exécuter les charges de travail critiques localement, tout en bénéficiant des services supplémentaires disponibles dans les régions.
 
 #### Limites
 
 - **Absence de redondance inter-zones :** Contrairement aux régions multi-AZ, les Local Zones ne proposent pas de redondance entre plusieurs zones, ce qui limite la continuité des services en cas de panne.
 - **Limitation à une seule zone :** Les Local Zones opèrent dans une seule zone de disponibilité, ce qui les rend vulnérables aux défaillances locales.
-- **Dépendance à la région principale :** En cas de panne affectant la région principale, les Local Zones peuvent également être impactées pour certains services critiques.
+- **Ensemble limité de services:** Les zones locales n'offrent qu'un ensemble limité de services Public Cloud (Compute et Storage).
 
 #### Spécifications de redondances - Local Zones
 
@@ -202,7 +202,6 @@ Dans les zones locales, la mise à l'échelle est conçue pour répondre aux exi
 - **Options de scalabilité horizontale et verticale :** Les Local Zones prennent en charge la mise à l'échelle des instances, mais restent limitées par la capacité locale et l'absence de zones supplémentaires pour équilibrer la charge.
 - **Latence ultra-faible :** La mise à l'échelle est centrée sur le maintien d'une latence minimale, idéale pour les charges de travail temps réel.
 - **Planification nécessaire :** En raison de la limitation à une seule zone, une planification rigoureuse est indispensable pour éviter la saturation des ressources disponibles et garantir des performances stables.
-- **Dépendance régionale :** Pour des besoins de mise à l'échelle plus complexes ou redondants, les Local Zones peuvent dépendre des ressources de la région principale. Cela peut introduire une latence supplémentaire si des ressources externes sont nécessaires.
 
 #### Exemple d'architecture
 
@@ -219,7 +218,7 @@ Architecture:
 - **Réplication interne :** Les données critiques sont répliquées localement dans la zone pour garantir la résilience face aux pannes matérielles.
 - **Traitement localisé :** Les serveurs d'applications et de traitement sont déployés dans les Local Zones pour offrir des performances optimales.
 - **Données réglementées :** Stocké dans les zones locales pour respecter les lois sur la localisation des données, ce qui réduit les coûts de la bande passante.
-- **Équilibreurs de charge :** Trafic redirigé vers d'autres Local Zones (si disponibles) ou régions principales pour assurer une continuité de service minimale en cas de panne locale.
+- **Load balancers :** Le trafic est redirigé vers d'autres zones locales (si elles sont disponibles) ou régions afin d'assurer une continuité de service minimale en cas de défaillance locale.
 
 ///
 
@@ -228,11 +227,12 @@ Architecture:
 | Caractéristiques        | Région 1-AZ                         | Région 3-AZ                     | Local Zones                              |
 |------------------------|-------------------------------------|---------------------------------|------------------------------------------|
 | **Structure de déploiement**   | Zone de disponibilité unique            | Trois zones indépendantes | Zone de disponibilité unique               |
+| **service disponible** | Tous ou la plupart des services Public Cloud | Tous ou la plupart des services Public Cloud | La plupart des services Compute et Storage
 | **Redondance**             | 2N+1 interne (ressources dans une seule AZ)                    | Redondance inter-zones (ressources répliquées entre les zones)            | Triple réplication locale (réplication des ressources dans une seule zone)              |
 | **Disponibilité des données**      | Limité pendant les pannes du centre de données, protégé contre les pannes de serveur/disque | Maintenue dans toutes les zones, résiliente aux pannes de zone | Limité pendant les pannes du centre de données, protégé contre les pannes de serveur/disque |
 | **Latence**                | Faible pour les utilisateurs finaux proches                            | Faible pour les utilisateurs finaux proches et très faible entre les zones de disponibilité   | Faible pour les utilisateurs finaux proches |
 | **Cas d'utilisation**        | Développement, environnements de transition, applications sensibles aux coûts, services non critiques | Applications à haute disponibilité, services commerciaux essentiels, reprise après sinistre et charges de travail critiques | Applications en temps réel, informatique de pointe, jeux, flux vidéo, services conformes à la réglementation |
-| **Coût**                   | Optimisé                               | Plus élevé en raison de la redondance accrue | Dépend des zones locales spécifiques et de la performance requise en matière de latence. |
+| **Coût**                   | Optimisé                               | Plus élevé en raison de la redondance accrue | Dépend des zones locales spécifiques |
 
 ## Go Further
 
