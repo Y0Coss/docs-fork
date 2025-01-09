@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2024-11-25
+updated: 2024-12-19
 ---
 
 ## Objectif
@@ -73,7 +73,7 @@ Il est possible de créer ce certificat depuis le menu dédié de la console d'a
 
 ![Créer un certificat](images/create_certificat_01.png){.thumbnail}
 
-La première partie du formulaire vous permet de préciser sa durée de validité ainsi que de fournir ou non votre propre clé privée via une Certificate Signing Request (CSR).
+La première partie du formulaire vous permet de préciser sa durée de validité ainsi que de fournir ou non votre Certificate Signing Request (CSR) dans le cas où vous posséderiez votre propre clé privée.
 
 - Sans fournir de clé privée :
 
@@ -194,7 +194,7 @@ Celui-ci sera utilisé pour toute interaction avec le KMS, que ce soit pour cré
 
 Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui)
 
-Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre propre clé privée via une Certificate Signing Request (CSR).
+Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre Certificate Signing Request (CSR) dans le cas où vous posséderiez votre propre clé privée.
 
 ##### Sans founir de clé privée
 
