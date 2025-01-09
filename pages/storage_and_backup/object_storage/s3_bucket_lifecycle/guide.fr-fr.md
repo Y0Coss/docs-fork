@@ -23,6 +23,8 @@ details[open]>summary::before {
 **Découvrez comment optimiser vos coûts de stockage avec les règles lifecycle d'OVHcloud.**
 
 > [!warning]
+>
+> Actuellement, la feature est en béta.
 > 
 > La mise en place de la fonctionnalité se fera en 2 phases :
 >
