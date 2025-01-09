@@ -1,6 +1,6 @@
 ---
 title: "How to migrate a website from a VPS to a Dedicated Server or a Public Cloud instance"
-excerpt: "Find out how to migrate your website from a VPS to a dedicated server or Public Cloud instance"
+excerpt: "Find out how to migrate your website from a VPS to a Dedicated Server or a Public Cloud instance"
 updated: 2025-01-09
 ---
 
