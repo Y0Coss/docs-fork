@@ -194,29 +194,64 @@ Before finalizing, a summary screen will display all settings for review.
 
 ---
 
-### Step 9: Restoring data
 
-1. **Access the restore list:**
-   - Log in to the VSPC interface and navigate to the **Restore List** section.
-   - Browse through available backups and select the desired restore point.
+### Step 9: Restoring Data
 
-2. **Choose restore options:**
-   - Select the file, folder, or system you want to restore.
-   - Specify the type of restore:
-     - **Overwrite**: Replace existing files on the target system.
-     - **Download**: Retrieve the data locally for manual application.
+Restoring data from VSPC lets you recover lost or corrupted files, folders, or entire systems. Follow these steps to perform a restoration.
 
-3. **Initiate the restore:**
-   - Confirm the restore settings and start the process.
-   - Monitor the progress and ensure the task completes successfully.
+#### **1. Access the Restore List**
+1. Log in to the VSPC interface and navigate to the **Protected Data** section.
+2. Select the backup job containing the data you want to restore.
+3. Click **File-Level Restore** to begin. 
 
-4. **Review audit logs:**
-   - After restoration, go to the **Audit** tab to review details of the restore process.
-   - Check for any errors or warnings and verify the success of the restoration.
+     ![Select Restore Point](images/restoration_1.png){.thumbnail}
 
-**Note:** Make sure that the target environment has sufficient space and no conflicts exist with the restore destination.
+#### **2. Select the Restore Point**
 
-*(Placeholder for screenshots of the restoration interface)*
+1. Navigate to the **Restore List**.  
+You will land on the following screen:
+     ![Select Restore Point](images/restoration_2.png){.thumbnail}
+
+2. Click on **Select Restore Point** to display the calendar.
+3. The calendar will appear, showing all available restore points.
+
+ ![Calendar](images/restoration_3.png){.thumbnail}
+ 
+4. Choose the desired date on the calendar and click **Select**.
+5. A list of files, folders, or system components from the selected restore point will load.
+
+ ![List](images/restoration_5.png){.thumbnail}
+
+> **Note**: Ensure the target environment has sufficient storage and no conflicts with the restore destination.
+
+#### **3. Choose Restore Options**
+1. Expand the list to locate specific files or folders, select the file you want to restore and click on “add to the restore list”.   
+
+ ![List expanded](images/restoration_6.png){.thumbnail}
+ 
+ Above the screen, you can see the amount of file added: 
+ 
+  ![Restore files added](images/restoration_7.png){.thumbnail}
+
+2. Add the selected items to the **Restore List**:
+   - **Overwrite**: Replace the original files on the target system.
+   - **Keep**: Save restored files in the same directory, prefixed with `RESTORED-`.
+   - **Download**: Retrieve the restored files locally for manual application. 
+ 
+  ![Restore files added](images/restoration_8.png){.thumbnail}
+
+#### **4. Initiate Restoration**
+1. Review the **Restore List** to ensure accuracy.  
+2. Confirm the settings and click **Restore** to start the process.
+3. Monitor progress in real time via the VSPC dashboard.
+
+#### **5. Verify Restoration**
+1. After completion, navigate to the **Audit Logs** tab for detailed records of the restore process.
+2. Check for errors or warnings and validate that the restored data is functional.
+
+> **[!Warning]**  
+> Data integrity is your responsibility. Always verify restored files, particularly for critical systems, to avoid issues post-restoration.
+
 
 ---
 
