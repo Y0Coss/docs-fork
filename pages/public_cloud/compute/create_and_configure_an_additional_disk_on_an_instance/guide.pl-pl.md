@@ -33,7 +33,7 @@ Może to być przydatne w następujących przypadkach:
 ## Wymagania początkowe
 
 - Dostęp do [Panelu client OVHcloud](/links/manager)
-- Posiadanie instancji [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external} na koncie OVHcloud
+- Posiadanie instancji [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na koncie OVHcloud
 - Dostęp administratora (sudo) do Twojej instancji przez SSH
 - Przygotuj środowisko, jeśli chcesz korzystać z [Terraform](/pages/public_cloud/compute/how_to_use_terraform)
 

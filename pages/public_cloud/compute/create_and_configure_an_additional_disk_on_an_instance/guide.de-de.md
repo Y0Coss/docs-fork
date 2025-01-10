@@ -25,7 +25,7 @@ Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen 
 - Sie möchten Ihre Speicherkapazität erhöhen, ohne das Instanzmodell zu verändern.
 - Sie benötigen hochverfügbaren und leistungsfähigen Speicherplatz.
 - Sie möchten sowohl Ihren Storage als auch Ihre Daten zu einer anderen Instanz verschieben.
-- Sie die Umgebung für die Verwendung von [Terraform](/pages/public_cloud/compute/how_to_use_terraform) vorbereiten möchten, müssen Sie die Umgebung vorbereiten.
+- Sie bereiten eine Umgebung für die Verwendung von [Terraform](/pages/public_cloud/compute/how_to_use_terraform) vor.
 
 **Diese Anleitung erklärt, wie Sie eine zusätzliche Disk erstellen und auf Ihrer Instanz konfigurieren.**
 
@@ -97,7 +97,7 @@ Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen 
 >> Anschließend binden wir es an die Zielinstanz.
 >>
 >> > [!warning]
->> > Die Instanz und das Volume müssen sich im selben Bereich befinden.
+>> > Die Instanz und das Volume müssen sich in derselben Region befinden.
 >> >
 >>
 >> Fügen Sie unter den vorhergehenden Zeilen die folgenden Zeilen hinzu:
@@ -458,7 +458,7 @@ Wenn Sie ein Volume von Ihrer Instanz trennen möchten, ist die beste Vorgehensw
 > Es kann eine Fehlermeldung angezeigt werden, wenn auf der zusätzlichen Disk Software oder Prozesse ausgeführt werden. In diesem Fall wird empfohlen, zunächst alle Prozesse zu beenden.
 >
 
-Hier erfahren Sie, wie Sie **das Volume** vom Betriebssystem trennen, bevor Sie es von der Instanz:
+Wählen Sie das verwendete OS aus, um **das Volume** zu entfernen:
 
 > [!tabs]
 > **Unter Linux** <a name="linux"></a>
@@ -540,7 +540,7 @@ Zum Schluss trennen wir das Volume von der Instanz:
 >> 
 > **Via Terraform**
 >>
->> Löschen Sie zunächst die zuvor erstellten Zeilen aus Ihrer Terraform-Datei:
+>> Löschen Sie zunächst die entsprechenden Zeilen aus Ihrer Terraform-Datei:
 >> 
 >> ```python
 >> # Volume mit Instanz verbinden
@@ -581,7 +581,7 @@ Zum Schluss trennen wir das Volume von der Instanz:
 >> Plan: 0 to add, 0 to change, 1 to destroy.
 >> ```
 >>
->> Nehmen Sie die Änderungen vor, indem Sie folgenden Befehl eingeben:
+>> Führen Sie die Änderungen durch, indem Sie folgenden Befehl eingeben:
 >> 
 >> ```console
 >> $ terraform apply
