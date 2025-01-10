@@ -1,7 +1,7 @@
 ---
 title: 'Configurare il Public Cloud vRack con OpenStack CLI'
 excerpt: 'Come attivare e gestire una vRack Public Cloud con OpenStack CLI'
-updated: 2025-01-06
+updated: 2025-01-13
 ---
 
 ## Obiettivo
@@ -18,8 +18,8 @@ La [vRack](/links/network/vrack) è una rete privata che permette di configurare
 
 Prima di iniziare, ricorda di leggere queste guide:
 
-- [Preparare l’ambiente per utilizzare l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Impostare le variabili d'ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Preparare l’ambiente per utilizzare l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- [Impostare le variabili d'ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
 
 ## Procedura
 
@@ -422,9 +422,9 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Per saperne di più
 
-[Configurazione della vRack Public Cloud da APIv6 OVHcloud](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN)
+[Configurazione della vRack Public Cloud da APIv6 OVHcloud](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN).
 
-[Server dedicati - Creare due o più VLAN nella vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
+[Server dedicati - Creare due o più VLAN nella vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

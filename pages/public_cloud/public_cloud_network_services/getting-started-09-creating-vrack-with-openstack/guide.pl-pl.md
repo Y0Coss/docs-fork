@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja usługi vRack Public Cloud przy użyciu OpenStack CLI'
 excerpt: 'Dowiedz się, jak aktywować Public Cloud vRack i zarządzać nim przy użyciu OpenStack CLI'
-updated: 2025-01-06
+updated: 2025-01-13
 ---
 
 ## Wprowadzenie
@@ -19,14 +19,14 @@ Usługa [vRack](/links/network/vrack) to prywatna sieć, która umożliwia klien
 
 Zanim zaczniesz, zapoznaj się z tymi przewodnikami, aby poprawnie skonfigurować środowisko OpenStack:
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Zmienne środowiskowe OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- [Zmienne środowiskowe OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
 
 ## W praktyce
 
 ### Prezentacja zawartości
 
-- [ Etap 1: Aktywacja i zarządzanie usługą vRack](#activating-vrack)
+- [Etap 1: Aktywacja i zarządzanie usługą vRack](#activating-vrack)
     - [W Panelu klienta OVHcloud](#control-panel)
     - [Za pomocą APIv6 OVHcloud](#ovhcloud-api)
 - [Etap 2: Tworzenie sieci prywatnej w ramach usługi vRack](#private-network)
@@ -425,9 +425,9 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Sprawdź również
 
-[Konfiguracja vRack dla Public Cloud przy użyciu interfejsu APIv6 OVHcloud](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN)
+[Konfiguracja vRack dla Public Cloud przy użyciu interfejsu APIv6 OVHcloud](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN).
 
-[Serwery dedykowane - Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
+[Serwery dedykowane - Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 

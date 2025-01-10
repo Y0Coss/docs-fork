@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration des Public Cloud vRack mit OpenStack CLI'
 excerpt: 'Erfahren Sie, wie Sie ein Public Cloud vRack mithilfe der OpenStack CLI aktivieren und verwalten.'
-updated: 2025-01-06
+updated: 2025-01-13
 ---
 
 ## Ziel
@@ -270,7 +270,7 @@ nova list
 
 #### Im Fall einer bereits vorhandenen Instanz
 
-*Abruf der notwendigen Informationen**
+**Abruf der notwendigen Informationen**
 
 Identifizierung Ihrer Instanzen:
 
@@ -422,9 +422,9 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Weiterführende Informationen
 
-[Konfiguration von vRack für Public Cloud mit OVHcloud APIv6](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN)
+[Konfiguration von vRack für Public Cloud mit OVHcloud APIv6](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN).
 
-[Dedicated Server - Mehrere VLANs im vRack erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
+[Dedicated Server - Mehrere VLANs im vRack erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 

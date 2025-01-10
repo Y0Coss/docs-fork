@@ -1,7 +1,7 @@
 ---
 title: 'Configuração do vRack Public Cloud com a ajuda da OpenStack CLI'
 excerpt: 'Saiba como ativar e gerir um serviço vRack Public Cloud com a ajuda do OpenStack CLI'
-updated: 2025-01-06
+updated: 2025-01-13
 ---
 
 ## Objetivo
@@ -14,13 +14,13 @@ O [vRack](/links/network/vrack) é uma rede privada que lhe permite configurar o
 
 - Dispor de um [projeto Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
-- um [utilizador OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (opcional)
+- Um [utilizador OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (opcional)
 - Conhecimentos básicos de rede
 
 Antes de começar, certifique-se de que lê estes guias para configurar corretamente o seu ambiente OpenStack:
 
-- [Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Carregar as variáveis de ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- [Carregar as variáveis de ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
 
 ## Instruções
 
@@ -425,9 +425,9 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Quer saber mais?
 
-[Configuração do vRack Public Cloud a partir das APIv6 OVHcloud](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN)
+[Configuração do vRack Public Cloud a partir das APIv6 OVHcloud](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN).
 
-[Servidores dedicados - Criar várias VLAN no vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
+[Servidores dedicados - Criar várias VLAN no vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 

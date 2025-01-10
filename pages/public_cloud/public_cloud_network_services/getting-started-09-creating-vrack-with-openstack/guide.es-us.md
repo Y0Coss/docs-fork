@@ -1,7 +1,7 @@
 ---
 title: 'Configuración del vRack Public Cloud con OpenStack CLI'
 excerpt: 'Cómo activar y gestionar un vRack Public Cloud utilizando OpenStack CLI'
-updated: 2025-01-06
+updated: 2025-01-13
 ---
 
 ## Objetivo
@@ -19,8 +19,8 @@ El [vRack](/links/network/vrack) OVHcloud es una solución de red privada que pe
 
 Antes de empezar, asegúrese de leer estas guías para configurar correctamente su entorno OpenStack:
 
-- [Preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Cargar las variables de entorno necesarias para OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- [Cargar las variables de entorno necesarias para OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
 
 
 ## Procedimiento
@@ -158,7 +158,6 @@ Con los elementos recuperados anteriormente, es posible crear una instancia incl
 ```bash
 nova boot --key-name SSHKEY --flavor [ID-flavor] --image [ID-Image] --nic net-id=[ID-Network 1] --nic net-id=[ID-Network 2] [instance name]
 ```
-
 
 Ejemplo:
 
@@ -428,9 +427,9 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Más información
 
-[Configuración del vRack Public Cloud desde las APIv6 de OVHcloud](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN)
+[Configuración del vRack Public Cloud desde las APIv6 de OVHcloud](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api) (EN).
 
-[Servidores dedicados - Crear varias VLAN en el vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
+[Servidores dedicados - Crear varias VLAN en el vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
