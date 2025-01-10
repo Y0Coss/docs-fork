@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
 excerpt: Learn how to optimise your storage costs with OVHcloud lifecycle rules
-updated: 2024-12-10
+updated: 2025-01-10
 ---
 
 <style>
@@ -28,8 +28,8 @@ details[open]>summary::before {
 > 
 > The release of the feature will be done in 2 phases:
 >
-> - phase 1: release of expiration only
-> - phase 2: support for transitions
+> - Phase 1: release of expiration only
+> - Phase 2: support for transitions
 
 ## Introduction
 
@@ -66,7 +66,7 @@ Lifecycle rules are processed asynchronously and on a best-effort basis. Most ru
 
 Typically, the lifecycle feature is designed to help you optimize your storage costs. For instance, if two expiration rules overlap i.e they target the same set of objects but with different expiration dates, the rule with the shorter duration is applied, ensuring that data is not retained beyond the anticipated timeframe: OVHcloud Object Storage always tries to chose the path that is the most cost-effective for you.
 
-Generally speaking, when you have multiple rules in an bucket lifecycle configuration that apply to the same set of objects:
+Generally speaking, when you have multiple rules in a bucket lifecycle configuration that apply to the same set of objects:
 
 - Permanent deletion takes precedence over transition.
 - Transition takes precedence over creation of delete markers.
@@ -374,7 +374,7 @@ The minimum duration for transition rules is **30 days** i.e your lifecycle conf
 
 ### Expiration vs transitions
 
-As already mentioned before, when you have multiple rules in an bucket lifecycle configuration that apply to the same set of objects:
+As already mentioned before, when you have multiple rules in a bucket lifecycle configuration that apply to the same set of objects:
 
 - Permanent deletion takes precedence over transition
 - Transition takes precedence over creation of delete markers
