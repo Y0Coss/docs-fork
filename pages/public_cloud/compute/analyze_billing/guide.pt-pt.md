@@ -162,7 +162,7 @@ As snapshots de volumes adicionais são faturadas da mesma forma que os próprio
 
 #### Snapshots e imagens de instância
 
-As snapshots de instâncias como as imagens (excluindo o catálogo de imagens fornecido pela OVHcloud) são faturadas a um preço fixo por GB/mês, independentemente da instância original ou do tipo de imagem. Aceda à [página de preços](/links/public-cloud/prices/) para saber mais.
+As snapshots de instâncias como as imagens (excluindo o catálogo de imagens fornecido pela OVHcloud) são faturadas a um preço fixo por GB/mês, independentemente da instância original ou do tipo de imagem. Aceda à [página de preços](/links/public-cloud/prices) para saber mais.
 
 #### Object Storage
 
