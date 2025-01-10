@@ -1054,7 +1054,7 @@
     + [Analytics](products/public-cloud-data-analytics)
         + [General information](products/public-cloud-data-analytics-general-information)
             + [Analytics - Security overview](public_cloud/public_cloud_databases/information_01_security_overview)
-            + [Analytics - Capabilities and Limitations](public_cloud/public-cloud-data-analytics/information_05_capabilities)
+            + [Analytics - Capabilities and Limitations](public_cloud/data_analytics/analytics/information_05_capabilities)
         + [Data Processing](products/public-cloud-data-analytics-data-processing)
             + [Concepts](public-cloud-data-analytics-data-processing-concepts)
                 + [Data Processing Overview](public_cloud/data_analytics/data_processing/00_CONCEPTS_Overview)
