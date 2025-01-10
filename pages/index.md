@@ -566,7 +566,7 @@
             + [Public Cloud Instances - Shared Responsibility](public_cloud/compute/responsibility-model-instances)
             + [Public Cloud FAQ - Change of monthly billing method](public_cloud/compute/faq_change_of_monthly_billing_method)
             + [Local Zone Compute - Features, Capabilities and Limitations](public_cloud/compute/local-zones-capabilities-limitations)
-            + [Comparison and resilience of Deployment Modes - Understanding 3-AZ / 1-AZ / Local Zones](public_cloud/compute/deployment_modes_comparison_resilience_details/)
+            + [Comparison and resilience of Deployment Modes - Understanding 3-AZ / 1-AZ / Local Zones](public_cloud/compute/deployment_modes_comparison_resilience_details)
         + [Project management](public-cloud-compute-project-management)
             + [Securing and Structuring your public cloud projects](public_cloud/compute/securing_and_structuring_projects)
             + [How to increase Public Cloud quotas](public_cloud/compute/increasing_public_cloud_quota)
