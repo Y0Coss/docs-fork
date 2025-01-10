@@ -1,7 +1,7 @@
 ---
 title: "Synchroniser un calendrier CalDAV Zimbra dans une application"
 excerpt: "Découvrez comment ajouter un calendrier Zimbra sur une application via le protocole CalDAV"
-updated: 2025-01-10
+updated: 2025-01-13
 ---
 
 <style>
@@ -73,14 +73,14 @@ Si vous utilisez une application compatible avec le protocole CalDAV, voici les 
 >
 > [Mozilla Thunderbird](https://www.thunderbird.net/) est disponible sur Windows, macOS et Linux. Les étapes d'installation suivantes ont été réalisées depuis macOS mais elles s'appliquent de la même façon sur Windows et Linux.
 
-Ouvrez Thunderbird et cliquez sur l'icône `Agenda` dans la colonne à gauche.
+Ouvrez Thunderbird et cliquez sur l'icône « Agenda » dans la colonne à gauche.
 
 Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 
 > [!tabs]
 > **Etape 1**
 >>
->> - Cliquez sur `Nouveau calendrier`{.action} en bas de la colonne du calendrier ou faites un clic droit sur un calendrier existant et sélectionnez C dans le menu déroulant qui s'affiche.
+>> - Cliquez sur `Nouveau calendrier`{.action} en bas de la colonne du calendrier ou faites un clic droit sur un calendrier existant et sélectionnez `Nouveau calendrier`{.action} dans le menu déroulant qui s'affiche.
 >> - Sélectionnez `Sur le réseau`, puis cliquez sur `Suivant`{.action}.
 >>
 >> ![zimbra_app](images/zimbra-calendar-thunderbird01.png){.thumbnail .w-600 .h-600}
@@ -94,7 +94,7 @@ Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 >> - **Cette adresse ne demande pas d’identifiant de connexion** : laissez cette case décochée, il vous sera demandé de saisir le mot de passe associé à l'adresse e-mail renseignée plus haut.
 >> - **Prise en charge du mode hors connexion** : vous pouvez laisser cette option cochée.
 >>
->> Cliquez sur `Rechercher des agendas` pour initier la synchronisation du calendrier. Saisissez le mot de passe de l'adresse e-mail associée au nom d'utilisateur dans la fenêtre qui apparait et validez votre saisie.
+>> Cliquez sur `Rechercher des agendas`{.action} pour initier la synchronisation du calendrier. Saisissez le mot de passe de l'adresse e-mail associée au nom d'utilisateur dans la fenêtre qui apparait et validez votre saisie.
 >>
 >> ![zimbra_app](images/zimbra-calendar-thunderbird02.png){.thumbnail .w-600 .h-600}
 >>
@@ -116,19 +116,19 @@ Pour ajouter un calendrier CalDAV sur l'application Apple `Calendrier` de votre 
 > [!tabs]
 > **Etape 1**
 >>
->> Dirigez-vous dans les `Réglages` de votre iPhone ou iPad. Retrouvez la section `Calendrier` en faisant défiler le menu ou en saisissant « calendrier » dans la barre de recherche des réglages.
+>> Dirigez-vous dans les `Réglages`{.action} de votre iPhone ou iPad. Retrouvez la section `Calendrier`{.action} en faisant défiler le menu ou en saisissant « calendrier » dans la barre de recherche des réglages.
 >>
 >> ![zimbra_app](images/zimbra-calendar-ios01.png){.thumbnail .w-600 .h-600}
 >>
 > **Etape 2**
 >>
->> Dirigez vous dans `Comptes Calendrier` puis sélectionnez `Ajouter un compte`.
+>> Dirigez vous dans `Comptes Calendrier`{.action} puis sélectionnez `Ajouter un compte`{.action}.
 >>
 >> ![zimbra_app](images/zimbra-calendar-ios02.png){.thumbnail .w-600 .h-600}
 >>
 > **Etape 3**
 >>
->> Choisissez `Autre`, puis sélectionnez `Ajoutez un compte CalDAV` dans la section « CALENDRIER ».
+>> Choisissez `Autre`{.action}, puis sélectionnez `Ajoutez un compte CalDAV`{.action} dans la section « CALENDRIER ».
 >>
 >> ![zimbra_app](images/zimbra-calendar-ios03.png){.thumbnail .w-600 .h-600}
 >>
@@ -141,7 +141,7 @@ Pour ajouter un calendrier CalDAV sur l'application Apple `Calendrier` de votre 
 >> - **Mot de passe** : saisissez le mot de passe de l'adresse e-mail.
 >> - **Description** : ajoutez une description au calendrier.
 >>
->> Validez avec le bouton `Suivant`.
+>> Validez avec le bouton `Suivant`{.action}.
 >>
 >> Choisissez les applications `Calendrier` et `Rappel` qui utiliseront les informations du calendrier Zimbra.
 >>
@@ -155,7 +155,7 @@ Pour ajouter un calendrier CalDAV sur l'application Apple `Calendrier` de votre 
 > [!tabs]
 > **Etape 1**
 >>
->> Cliquez sur `Calendrier` dans la barre de menu supérieure, puis sur `Ajouter un compte`. Sélectionnez `Ajoutez un compte CalDAV`, puis cliquez sur `Continuer`{.action}.
+>> Cliquez sur `Calendrier`{.action} dans la barre de menu supérieure, puis sur `Ajouter un compte`{.action}. Sélectionnez `Ajoutez un compte CalDAV`, puis cliquez sur `Continuer`{.action}.
 >>
 >> ![zimbra_app](images/zimbra-calendar-macos01.png){.thumbnail .w-600 .h-600}
 >>
