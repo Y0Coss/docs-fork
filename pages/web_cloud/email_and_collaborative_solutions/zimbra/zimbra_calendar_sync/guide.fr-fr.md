@@ -25,7 +25,7 @@ updated: 2025-01-10
 
 ## Objectif
 
-Les comptes e-mail Zimbra peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Zimbra inclut la fonctionnalité de calendrier partagé, ils peuvent être synchronisés depuis un logiciel compatible avec le protocole CalDAV.
+Les comptes e-mail Zimbra peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. Zimbra inclut la fonctionnalité de calendrier partagé qui peut donc être synchronisé depuis un logiciel compatible avec le protocole CalDAV.
 
 **Découvrez comment ajouter un calendrier Zimbra sur une application via le protocole CalDAV.**
 
@@ -39,7 +39,7 @@ Les comptes e-mail Zimbra peuvent être configurés sur différents logiciels de
 
 ### Qu'est-ce que le protocole CalDAV ?
 
-CalDAV est un protocole de partage de calendrier et de tâche en ligne. Les adresses e-mail Zimbra disposent de calendriers utilisant le protocole CalDAV.
+CalDAV est un protocole de partage de calendrier et de tâches en ligne. Les adresses e-mail Zimbra disposent de calendriers utilisant le protocole CalDAV.
 
 La configuration de calendrier CalDAV est similaire à celle d'une adresse e-mail et nécessite une application prenant en charge ce protocole.
 
@@ -48,7 +48,7 @@ La configuration de calendrier CalDAV est similaire à celle d'une adresse e-mai
 Nous avons sélectionné des applications stables et compatibles avec le protocole CalDAV.
 
 - **Pour Windows** : Suivez le chapitre [Ajouter un calendrier sur Thunderbird](#thunderbird)
-- **Pour un macOS** : Suivez le chapitre [Ajouter un calendrier sur macOS](#apple-macos) ou [Ajouter un calendrier sur Thunderbird](#thunderbird)
+- **Pour macOS** : Suivez le chapitre [Ajouter un calendrier sur macOS](#apple-macos) ou [Ajouter un calendrier sur Thunderbird](#thunderbird)
 - **Pour Linux** : Suivez le chapitre [Ajouter un calendrier sur Thunderbird](#thunderbird)
 - **Pour iPhone et iPad** : Suivez le chapitre [Ajouter un calendrier sur iOS et ipadOS](#apple-ios)
 - **Pour Android** : Nous vous invitons à suivre le guide [Zimbra - Configurer son compte e-mail sur l'application mobile Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/mail_app_zimbra_for_android_ios).
@@ -57,21 +57,21 @@ Nous avons sélectionné des applications stables et compatibles avec le protoco
 >
 > Les appareils Android ne proposent actuellement pas de prise en charge native du protocole CalDAV. Nous n'avons également pas trouvé d'application tierce stable en mesure de synchroniser les calendriers Zimbra de nos offres.
 >
-> Seule l'application Zimbra, basée sur son Webmail, est en mesure de consulter les calendriers partagés sur un appareil Android
+> Seule l'application Zimbra, basée sur son Webmail, est en mesure de consulter les calendriers partagés sur un appareil Android.
 
 #### Paramètres généraux pour un calendrier CalDAV Zimbra  <a name="general-settings"></a>
 
-Si vous utilisez une application compatible avec le protocole CalDAV, voici les paramètres généraux à connaitre pour paramétrer un calendrier CalDAV Zimbra
+Si vous utilisez une application compatible avec le protocole CalDAV, voici les paramètres généraux à connaitre pour paramétrer un calendrier CalDAV Zimbra :
 
-- **Serveur / Adresse / URL** : saisissez la valeur `zimbra1.mail.ovh.net`. Pour certains logiciel il est nécessaire d'ajouter le protocole « https » dans l'adresse, saisissez alors la valeur `https://zimbra1.mail.ovh.net`.
-- **Nom d'utilisateur** : Saisissez l'adresse e-mail complète associée au calendrier.
+- **Serveur / Adresse / URL** : saisissez la valeur `zimbra1.mail.ovh.net`. Pour certains logiciels il est nécessaire d'ajouter le protocole « https » dans l'adresse, saisissez alors la valeur `https://zimbra1.mail.ovh.net`.
+- **Nom d'utilisateur** : saisissez l'adresse e-mail complète associée au calendrier.
 - **Mot de passe** : saisissez le mot de passe de l'adresse e-mail associée au calendrier.
 
 #### Ajouter un calendrier sur Thunderbird <a name="thunderbird"></a>
 
 > [!primary]
 >
-> [Mozilla Thunderbird](https://www.thunderbird.net/) est disponible sur Windows, MacOS et Linux. Les étapes d'installations suivantes ont été réalisées depuis MacOS mais elles s'appliquent de la même façon sur Windows et Linux.
+> [Mozilla Thunderbird](https://www.thunderbird.net/) est disponible sur Windows, macOS et Linux. Les étapes d'installation suivantes ont été réalisées depuis macOS mais elles s'appliquent de la même façon sur Windows et Linux.
 
 Ouvrez Thunderbird et cliquez sur l'icône `Agenda` dans la colonne à gauche.
 
@@ -80,19 +80,19 @@ Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 > [!tabs]
 > **Etape 1**
 >>
->> - Cliquez sur `Nouveau calendrier`{.action} en bas de la colonne du calendrier ou cliquez droit sur un calendrier existant et sélectionnez C dans le menu déroulant qui s'affiche.
->> - Sélectionnez `Sur le réseau`, puis cliquez sur `Suivant`{.action}
+>> - Cliquez sur `Nouveau calendrier`{.action} en bas de la colonne du calendrier ou faites un clic droit sur un calendrier existant et sélectionnez C dans le menu déroulant qui s'affiche.
+>> - Sélectionnez `Sur le réseau`, puis cliquez sur `Suivant`{.action}.
 >>
 >> ![zimbra_app](images/zimbra-calendar-thunderbird01.png){.thumbnail .w-600 .h-600}
 >>
 > **Etape 2**
 >>
->> Saisissez les informations de connexion au calendrier:
+>> Saisissez les informations de connexion au calendrier :
 >>
->> - **Nom d'utilisateur** : Saisissez l'adresse e-mail complète associée au calendrier.
+>> - **Nom d'utilisateur** : saisissez l'adresse e-mail complète associée au calendrier.
 >> - **Adresse** : saisissez la valeur `zimbra1.mail.ovh.net`.
->> - **Cette adresse ne demande pas d’identifiant de connexion** : Laissez cette casse décochée, il vous sera demandé de saisir le mot de passe associé à l'adresse e-mail renseignée plus haut
->> - **Prise en charge du mode hors connexion** : vous pouvez laisser cette option cochée
+>> - **Cette adresse ne demande pas d’identifiant de connexion** : laissez cette case décochée, il vous sera demandé de saisir le mot de passe associé à l'adresse e-mail renseignée plus haut.
+>> - **Prise en charge du mode hors connexion** : vous pouvez laisser cette option cochée.
 >>
 >> Cliquez sur `Rechercher des agendas` pour initier la synchronisation du calendrier. Saisissez le mot de passe de l'adresse e-mail associée au nom d'utilisateur dans la fenêtre qui apparait et validez votre saisie.
 >>
@@ -100,7 +100,7 @@ Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 >>
 > **Etape 3**
 >>
->> La fenêtre ci-dessous apparait avec les éléments CalDAV présents sur un compte e-mail Zimbra, cochez les éléments que vous souhaitez faire apparaitre dans le calendrier Thunderbird et cliquez sur `Se connecter`{.action} pour terminer la configuration.
+>> La fenêtre ci-dessous apparait avec les éléments CalDAV présents sur un compte e-mail Zimbra. Cochez les éléments que vous souhaitez faire apparaitre dans le calendrier Thunderbird et cliquez sur `Se connecter`{.action} pour terminer la configuration.
 >>
 >> ![zimbra_app](images/zimbra-calendar-thunderbird03.png){.thumbnail .w-600 .h-600}
 >>
@@ -116,19 +116,19 @@ Pour ajouter un calendrier CalDAV sur l'application Apple `Calendrier` de votre 
 > [!tabs]
 > **Etape 1**
 >>
->> Dirigez-vous dans les `Réglages` de votre iPhone ou iPad retrouvez la section `Calendrier` en faisant défiler le menu ou en saisissant « calendrier » dans la barre de recherche des réglages.
+>> Dirigez-vous dans les `Réglages` de votre iPhone ou iPad. Retrouvez la section `Calendrier` en faisant défiler le menu ou en saisissant « calendrier » dans la barre de recherche des réglages.
 >>
 >> ![zimbra_app](images/zimbra-calendar-ios01.png){.thumbnail .w-600 .h-600}
 >>
 > **Etape 2**
 >>
->> Dirirgez vous dans `Comptes Calendrier` puis sélectionnez `Ajouter un compte`
+>> Dirigez vous dans `Comptes Calendrier` puis sélectionnez `Ajouter un compte`.
 >>
 >> ![zimbra_app](images/zimbra-calendar-ios02.png){.thumbnail .w-600 .h-600}
 >>
 > **Etape 3**
 >>
->> Choisissez `Autre`, puis sélectionnez `Ajoutez un compte CalDAV` dans la section « CALENDRIER »
+>> Choisissez `Autre`, puis sélectionnez `Ajoutez un compte CalDAV` dans la section « CALENDRIER ».
 >>
 >> ![zimbra_app](images/zimbra-calendar-ios03.png){.thumbnail .w-600 .h-600}
 >>
@@ -137,9 +137,9 @@ Pour ajouter un calendrier CalDAV sur l'application Apple `Calendrier` de votre 
 >> Saisissez les informations de connexion au calendrier :
 >>
 >> - **Serveur** : saisissez la valeur `zimbra1.mail.ovh.net`.
->> - **Nom d'utilisateur** : Saisissez l'adresse e-mail complète associée au calendrier.
+>> - **Nom d'utilisateur** : saisissez l'adresse e-mail complète associée au calendrier.
 >> - **Mot de passe** : saisissez le mot de passe de l'adresse e-mail.
->> - **Description** : ajoutez une descriptio au calendrier.
+>> - **Description** : ajoutez une description au calendrier.
 >>
 >> Validez avec le bouton `Suivant`.
 >>
@@ -161,14 +161,14 @@ Pour ajouter un calendrier CalDAV sur l'application Apple `Calendrier` de votre 
 >>
 > **Etape 2**
 >>
->> Depuis la fenêtre de configuration complétez les informations suivantes :
+>> Depuis la fenêtre de configuration, complétez les informations suivantes :
 >>
 >> - **Type de compte** : choisissez `Manuel` dans le menu déroulant.
->> - **Nom d'utilisateur** : Saisissez l'adresse e-mail complète associée au calendrier.
+>> - **Nom d'utilisateur** : saisissez l'adresse e-mail complète associée au calendrier.
 >> - **Mot de passe** : saisissez le mot de passe de l'adresse e-mail.
 >> - **Adresse du serveur** : saisissez la valeur `zimbra1.mail.ovh.net`.
 >>
->> Pour finaliser, cliquez sur `Se connecter`{.action}
+>> Pour finaliser, cliquez sur `Se connecter`{.action}.
 >>
 >> ![zimbra_app](images/zimbra-calendar-macos02.png){.thumbnail .w-600 .h-600}
 >>
