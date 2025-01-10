@@ -1,7 +1,7 @@
 ---
 title: "Comparison and resilience of Deployment Modes - Understanding 3-AZ / 1-AZ / Local Zones"
 excerpt: "Explore OVHcloud's deployment modes"
-updated: 2024-12-18
+updated: 2025-01-10
 ---
 
 <style>
@@ -63,7 +63,7 @@ Services and data are protected against localised incidents thanks to effective 
 
 > [!success]
 >
->  To improve resilience for critical applications in a 1-AZ Region, consider using asynchronous replication for added protection. This can help reinforce both application and data resiliency. Another option to mitigate this risk is using a [**3-AZ deployment mode**](#3azregion).
+> To improve resilience for critical applications in a 1-AZ Region, consider using asynchronous replication for added protection. This can help reinforce both application and data resiliency. Another option to mitigate this risk is using a [**3-AZ deployment mode**](#3azregion).
 
 #### Redundancy Specifications for 1-AZ
 
@@ -97,6 +97,7 @@ In a 1-AZ Region, scaling options are somewhat limited due to the single availab
 > An organization utilizes the 1-AZ Region mode for its internal management application and backup services. This setup is ideal for applications that do not require high availability 24/7, but still need redundancy to protect against hardware failures.
 
 Architecture:
+
 - **Single Availability Zone (AZ):** Made up of several interconnected data centres, it guarantees resilience in the face of localised breakdowns, while at the same time providing a model suited to moderate application requirements.
 - **Internal replication:** Data is replicated internally to protect against disk or server failures within the zone.
 - **Backup integration:** The application uses object storage for regular backups, ensuring that data can be restored if necessary.
@@ -126,7 +127,7 @@ Architecture:
 
 | Specification         | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
-| **Type of redundancy**      | 3N avec réplication inter-zones.                                    |
+| **Type of redundancy**      | 3N with inter-zone replication.                                    |
 | **Fault tolerance** | Guarantees resilience against the loss of an entire zone, with automatic failover.                      |
 | **Data protection** | Data replicated synchronously between zones to guarantee continuous availability. |
 | **Limits** | Does not protect against complete regional failure; requires multi-regional architecture for maximum resilience. |
@@ -154,6 +155,7 @@ In a 3-AZ Region, scaling is more flexible, offering the ability to scale horizo
 > An e-commerce platform that demands high availability and performance. This deployment mode ensures service continuity even in the event of a failure in one entire availability zone.
 
 Architecture:
+
 - **Three availability zones (AZs):** Each zone is geographically isolated to avoid the impact of a local disaster.
 - **Data replication:** Synchronous replication of data between the three zones to guarantee continuous availability.
 - **Distributed instances:** Application instances are deployed in each zone, ensuring redundancy and high availability.
@@ -214,6 +216,7 @@ In Local Zones, scaling is designed to meet the demands of low-latency applicati
 > A real-time online gaming platform or a video streaming service that requires ultra-low latency and high performance for users within a specific geographic region.
 
 Architecture:
+
 - **Local Zones:** located near the user base, significantly reducing latency and improving overall performance.
 - **Internal replication:** Critical data is replicated locally within the zone to ensure resilience in the event of hardware failure.
 - **Localized processing:** Application and processing servers are deployed in Local Zones to deliver optimal performance.
