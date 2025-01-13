@@ -106,7 +106,7 @@ You’ll find the cluster connection information in your Control Panel; you can 
 
 ## Go further
 
-[MongoDB capabilities](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities)
+[OpenSearch capabilities](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities)
 
 [Starting with OpenSearch analytics service](/pages/public_cloud/public_cloud_databases/opensearch_02_getting_Started)
 
