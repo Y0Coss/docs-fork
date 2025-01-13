@@ -1,7 +1,7 @@
 ---
 title: Getting started with VSCP
 excerpt: Discover VSCP, a cloud-enabled platform provided by Veeam that helps you manage backups and data protection.
-updated: 2024-12-09
+updated: 2024-01-13
 ---
 > [!primary]
 >
@@ -102,8 +102,6 @@ It will walk you through the first steps to get started with VSPC, including:
 - Confirm the agent status in the **Discovered Computers** section.
 - Check for successful connection and registration with the VSPC.
 
-*(Placeholder for confirmation screenshots or verification steps)*
-
 ---
 
 ### Step 5: Changing backup policies
@@ -150,14 +148,10 @@ Before finalizing, a summary screen will display all settings for review.
 2. Modify the backup policy by selecting `Partition Backup`.
 3. Choose the `C:` partition and exclude others.
 
-*(Placeholder for screenshots of the partition selection screen for Windows)*
-
 #### **Linux example: Directory-level backup**
 - Target critical directories like `/var/www`, excluding `/tmp`.
 1. Navigate to **Backup Jobs** and select the Linux server.
 2. Assign or modify a policy to include `/var/www` and exclude `/tmp`.
-
-*(Placeholder for screenshots of the directory selection screen for Linux)*
 
 ---
 
@@ -193,7 +187,6 @@ Before finalizing, a summary screen will display all settings for review.
 2. Review logs to troubleshoot any issues during backup or restoration.
 
 ---
-
 
 ### Step 9: Restoring Data
 
@@ -251,7 +244,6 @@ You will land on the following screen:
 
 > **[!Warning]**  
 > Data integrity is your responsibility. Always verify restored files, particularly for critical systems, to avoid issues post-restoration.
-
 
 ---
 
