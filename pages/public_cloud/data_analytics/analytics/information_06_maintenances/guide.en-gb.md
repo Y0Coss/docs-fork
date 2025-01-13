@@ -1,7 +1,7 @@
 ---
 title: Analytics - Maintenance operations
 excerpt: Find out how your cluster is maintained
-updated: 2025-01-09
+updated: 2025-01-13
 ---
 
 ## Objective
@@ -44,7 +44,7 @@ You can get a list of maintenances for a service through the dedicated API endpo
 
 ## How can I control the scheduling?
 
-You can change the maintenance time for your service to a time that suits you better. For example, if your application is less busy at night, you can target that timeframe. Be aware that this only affects future maintenance operation scheduling, it won't reschedule already existing operations.
+You can change the maintenance schedule for your service to a slot that suits you better. For example, if your application is less busy at night, you can target that timeframe. Be aware that this only affects future maintenance operation scheduling, it won't reschedule already existing operations.
 
 ![Choose Maintenance](images/maintenancesql2.png){.thumbnail}
 
@@ -61,6 +61,8 @@ This might be a good idea if e.g. you want to prepare for a busy period and thus
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our analytics service!
+
+Join our [community of users](/links/community).
