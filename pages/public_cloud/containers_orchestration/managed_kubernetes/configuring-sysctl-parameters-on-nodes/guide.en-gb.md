@@ -1,7 +1,7 @@
 ---
-title: Adapt your Inotify parameters for your deployments
-excerpt: 'Adapt your Inotify parameters for your deployments which needs to have specific Inotify parameters'
-updated: 2025-01-09
+title: Adapt your Inotify parameters for your Managed Kubernetes Service deployments
+excerpt: 'Adapt your Inotify parameters for your deployments which need specific Inotify parameters'
+updated: 2025-01-13
 ---
 
 ## Objective
@@ -17,14 +17,14 @@ This guide will cover the modification of the Sysctl parameters which takes in c
 - Access to the [OVHcloud Control Panel](/links/manager)
 - An OVHcloud Managed Kubernetes cluster
 - Access to your OVHcloud Managed Kubernetes cluster through the Kubeconfig file
-- You must have the [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed
+- You must have the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed
 - Your Kubeconfig is exported into your terminal following this guide : [Configuring Kubectl](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster)
 
 ## Instructions
 
 ### Step 1: Create a privileged DaemonSet and define the value to modify
 
-Create a YAML named ```sysctl-tuner-daemonset.yaml``` with the content below:
+Create a YAML named `sysctl-tuner-daemonset.yaml` with the content below:
 
 ```yaml
 apiVersion: apps/v1
@@ -55,9 +55,9 @@ spec:
                 - operator: "Exists" # Allow running on all nodes, including tainted ones
 ```
 
-And define the value of the sysctl key ```fs.inotify.max_user_watches``` based on your applications' needs.
+Define the value of the sysctl key `fs.inotify.max_user_watches` based on your applications' needs.
 
-The DaemonSet will set the sysctl parameter "fs.inotify.max_user_watches" with the value you provided in the DaemonSet configuration on all nodes deployed into your Kubernetes Cluster.
+The DaemonSet will set the sysctl parameter `fs.inotify.max_user_watches` with the value you provided in the DaemonSet configuration on all nodes deployed into your Kubernetes Cluster.
 
 > [!primary]
 >
@@ -79,7 +79,7 @@ $ kubectl exec -it <pod> -- cat /proc/sys/fs/inotify/max_user_watches
 
 The output should be the same as the value you defined in the DaemonSet YAML defined above.
 
-Congratulations ! You've successfully modified the maximum Inotify "max_user_watches" value on Managed Kubernetes Service.
+Congratulations ! You've successfully modified the maximum Inotify "max_user_watches" value on your Managed Kubernetes Service.
 
 ## Go further
 
