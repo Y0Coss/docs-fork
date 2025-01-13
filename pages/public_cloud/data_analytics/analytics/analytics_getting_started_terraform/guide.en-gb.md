@@ -6,15 +6,15 @@ updated: 2025-01-13
 
 ## Objective
 
-Public Cloud managed analytics services allow you to focus on building and deploying cloud applications while OVHcloud takes care of the analytics infrastructure and maintenance.
+Public Cloud Managed Analytics services allow you to focus on building and deploying cloud applications while OVHcloud takes care of the analytics infrastructure and maintenance.
 
-**This guide explains how to order an OpenSearch instance of a Analytics service using Terraform.**
+**This guide explains how to order an OpenSearch instance of an Analytics service using Terraform.**
 
 ## Requirements
 
 - [Terraform >= 0.17.1](https://www.terraform.io/) installed
-- Access to the [OVHcloud API](https://api.ovh.com/) (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud API](/links/api) (create your credentials by consulting [this guide](/pages/manage_and_operate/api/first-steps))
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
 ## Instructions
 
@@ -144,8 +144,8 @@ variable "access" {
 
 Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API. Other endpoints exist, depending on your needs:
 
-* `ovh-eu` for OVHcloud Europe API
-* `ovh-ca` for OVHcloud North-America API
+- `ovh-eu` for OVHcloud Europe API
+- `ovh-ca` for OVHcloud North-America API
 
 Then, create a `secrets.tfvars` file containing the required variables values:
 
@@ -225,7 +225,7 @@ The plan is OK for us, so let's [apply](https://www.terraform.io/cli/commands/ap
 $ terraform apply -var-file=secrets.tfvars -auto-approve
 ```
 
-Finally export the user credentials and the URI
+Finally export the user credentials and the URI:
 
 ```bash
 export PASSWORD=$(terraform output -raw user_password)
@@ -237,7 +237,7 @@ And that's it, the OpenSearch cluster is created.
 
 ## How to deploy with other engines
 
-In this guide, we explained how to deploy a OpenSearch service but you can find example for other analytics engine here and tweak them according to your needs :
+In this guide, we explained how to deploy an OpenSearch service but you can find example for other analytics engine here and tweak them according to your needs :
 
 > [!tabs]
 > Kafka
@@ -251,8 +251,8 @@ In this guide, we explained how to deploy a OpenSearch service but you can find 
 
 [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)
 
-Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Analytics services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
