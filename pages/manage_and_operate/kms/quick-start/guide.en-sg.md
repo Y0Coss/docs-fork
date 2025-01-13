@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-11-25
+updated: 2024-12-19
 ---
 
 ## Objective
@@ -73,7 +73,7 @@ It's possible to create this certificate from the dedicated entry on the adminis
 
 ![Create a certificate](images/create_certificat_01.png){.thumbnail}
 
-The first part of the form allow you to precise its validity duration and providing or not your own private key through a Certificate Signing Request (CSR).
+The first part of the form allows you to precise its validity duration and providing or not your Certificate Signing Request (CSR) in case you have your own private key
 
 - Without providing a private key:
 
@@ -193,7 +193,7 @@ This will be used for any interaction with the KMS, either to create encryption 
 
 Each certificate contains an [OVHcloud identity](/pages/manage_and_operate/iam/identities-management) used to calculate access rights via the [OVHcloud IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
 
-You can generate this certificate by letting OVHcloud generate the private key, or by providing your own private security via a Certificate Signing Request (CSR).
+You can generate this certificate by letting OVHcloud generate the private key, or by providing your Certificate Signing Request (CSR) in case you have your own private key.
 
 ##### Without providing a private key
 
