@@ -1,7 +1,7 @@
 ---
 title: Analytics - Lifecycle policy
 excerpt: Lifecycle policy for Analytics engines
-updated: 2025-01-07
+updated: 2025-01-13
 ---
 
 ## Objective
@@ -23,29 +23,29 @@ Continued use of outdated services means they no longer offer our customers the 
 
 ### Service coverage
 
-This lifecycle policy is applicable to :
+This lifecycle policy is applicable to:
 
-- All Analytics services except Data Processing;
-- Including all the service plans (Essential, Business, Enterprise, Production, Advanced);
-- And all proposed analytics engine, such as Kafka, Grafana, ...
-- Whatever state; if they are **up and running** or in a **sleeping state** (powered off, waiting for payment).
+- All Analytics services except Data Processing.
+    - Including all the service plans (Essential, Business, Enterprise, Production, Advanced).
+    - And all proposed analytics engine, such as Kafka, Grafana, ...
+    - Whatever the state is, if they are **up and running** or in a **sleeping state** (powered off, waiting for payment).
 
 ### Providing new major versions
 
 Once a new major version of an analytics engine is considered stable, OVHcloud will do its best to make it available as soon as possible.
 Since many factors can come into play, we cannot provide an exact timeline or commitment.
 
-### Prior EOL
+### Prior the EOL
 
-When OVHcloud defines the EOL date for a service major version :
+When OVHcloud defines the EOL date for a service major version:
 
-- Customers will receive an EOL email announcement via their main contact point (NIC-admin);
-- The OVHcloud Control Panel will also show an EOL notification for affected services;
+- Customers will receive an EOL email announcement via their main contact point (Administrative contact).
+- The OVHcloud Control Panel will also show an EOL notification for affected services.
 - Email reminders may also be sent to customers.
 
-### Upon EOL
+### Upon the EOL
 
-Once the EOL date is reached :
+Once the EOL date is reached:
 
 - Affected **running services** will be **automatically upgraded to the latest available version**. For example, if the latest version is Kafka 3, then upon Kafka 1.6 EOL, it will be upgraded to the latest Kafka 3 instead of Kafka 2.
 - Affected **sleeping state** (powered-off, ...) services **will no longer be accessible and their backups will be deleted**.
@@ -57,7 +57,7 @@ We recommend consulting the official documentation of the analytics engine to re
 
 ## Recommendations for upgrades
 
-We highly recommend to perform the version upgrade well before EOL so that you can test compatibility for any breaking changes, plan for unforeseen issues, and migrate to the newer version at your own schedule.
+We highly recommend performing the version upgrade well before the EOL so that you can test compatibility for any breaking changes, plan for unforeseen issues, and migrate to the newer version at your own schedule.
 
 Analytics services offer a forking feature (a copy) as an efficient tool to verify the version upgrade. This allows you to safely test compatibility without committing your production services to a one-way upgrade.
 
@@ -67,7 +67,7 @@ To perform a fork, navigate to the "Overview" page of your service, and scroll d
 
 ### Kafka
 
-Analytics for Kafka *major.minor* version will reach EOL approximately one year after it's made available on Analytics.
+Analytics for Kafka *major.minor* version will reach its EOL approximately one year after it's made available on Analytics.
 
 | **Kafka Version** | **OVHcloud EOL** | **Availability on Analytics** |
 |-------------------|------------------|-------------------------------------------|
@@ -80,6 +80,6 @@ Analytics for Kafka *major.minor* version will reach EOL approximately one year 
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
