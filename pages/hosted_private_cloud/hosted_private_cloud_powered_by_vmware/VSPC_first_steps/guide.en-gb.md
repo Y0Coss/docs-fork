@@ -1,11 +1,11 @@
 ---
-title: Getting started with VSCP
-excerpt: Discover VSCP, a cloud-enabled platform provided by Veeam that helps you manage backups and data protection.
+title: Getting started with VSPC
+excerpt: Discover VSPC, a cloud-enabled platform provided by Veeam that helps you manage backups and data protection.
 updated: 2024-01-13
 ---
 > [!primary]
 >
-> VSCP on OVHcloud is currently in alpha phase. This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
+>VSPC on OVHcloud is currently in alpha phase. This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
 >
 
 ## Objective
