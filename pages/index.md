@@ -1059,6 +1059,7 @@
             + [Analytics - Maintenance operations](public_cloud/data_analytics/analytics/information_06_maintenances)
         + [General guides](products/public-cloud-data-analytics-general-guides)
             + [Analytics - Getting started](public_cloud/data_analytics/analytics/analytics_getting_started)
+            + [Analytics - Getting started with APIs](public_cloud/data_analytics/analytics/analytics_getting_started_api)
         + [Data Processing](products/public-cloud-data-analytics-data-processing)
             + [Concepts](public-cloud-data-analytics-data-processing-concepts)
                 + [Data Processing Overview](public_cloud/data_analytics/data_processing/00_CONCEPTS_Overview)
