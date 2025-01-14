@@ -235,13 +235,11 @@ export URI=$(terraform output -raw cluster_uri)
 
 And that's it, the OpenSearch cluster is created.
 
-## How to deploy with other engines
+## How to deploy with other engine
 
-In this guide, we explained how to deploy an OpenSearch service but you can find example for other analytics engine here and tweak them according to your needs :
+In this guide, we explained how to deploy an OpenSearch service but you can find example for Kafka service here and tweak them according to your needs :
 
-> [!tabs]
-> Kafka
->> [https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka/terraform/hello-world)
+[https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka/terraform/hello-world](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka/terraform/hello-world)
 
 ## Go further
 
