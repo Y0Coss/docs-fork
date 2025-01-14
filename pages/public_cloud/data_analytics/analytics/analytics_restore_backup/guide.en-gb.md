@@ -6,20 +6,20 @@ updated: 2025-01-14
 
 ## Objective
 
-Analytics service allows you to focus on building and deploying cloud applications while OVHcloud takes care of the analytics infrastructure and maintenance.
+The Analytics service allows you to focus on building and deploying cloud applications while OVHcloud takes care of the Analytics infrastructure and maintenance.
 
-**This guide explains how to restore a backup of an analytics service solution in the OVHcloud Control Panel.**
+**This guide explains how to restore a backup of an Analytics service solution in the OVHcloud Control Panel.**
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [Analytics service](https://www.ovhcloud.com/en-gb/public-cloud/cloud-analytics/) up and running
+- An [Analytics service](/links/public-cloud/analytics) up and running
 
 ## Instructions
 
-### Step 1: Select the analytics service you want to restore data from
+### Step 1: Select the Analytics service you want to restore data from
 
 First, you need to go to the overview page of the service you want to restore the backup from.
 
@@ -41,7 +41,7 @@ Click on the `...`{.action} button corresponding to the chosen backup. Then clic
 
 ### Step 4: Configure the target service
 
-As seen before, when restoring a backup, you create a new separate analytics service on which the backup data will be imported. You are able to configure this new service as you wish.
+As seen before, when restoring a backup, you create a new separate Analytics service on which the backup data will be imported. You are able to configure this new service as you wish.
 
 #### Immutable options
 
@@ -69,7 +69,7 @@ The most common option is to restore from a backup.
 
 ##### **Specific date and latest**
 
-If your service supports point in time recovery (see [Automated Backup guide](/pages/public_cloud/data_analytics/analytics/information_07_automated_backups) for more details), you will also be offered the option to restore from a specific date and time.
+If your service supports point in time recovery (see the [Automated Backup guide](/pages/public_cloud/data_analytics/analytics/information_07_automated_backups) for more details), you will also be offered the option to restore from a specific date and time.
 
 ![Restore point from a specific date](images/restore-point-selection-date.png){.thumbnail}
 
@@ -119,6 +119,12 @@ This new service is now completely independent from the one you forked the backu
 
 ![Forked service](images/forked-service.png){.thumbnail}
 
-## Go further
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our analytics service!
 
 Join our [community of users](/links/community).
