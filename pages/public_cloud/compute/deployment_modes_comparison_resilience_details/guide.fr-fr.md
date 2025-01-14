@@ -1,5 +1,5 @@
 ---
-title: "Comparaison et résilience des modes de déploiement - Comprendre les zones 3-AZ / 1-AZ / Local Zones"
+title: "Comparaison et résilience des modes de déploiement - Comprendre les régions 3-AZ / 1-AZ / Local Zones"
 excerpt: "Découvrez les modes de déploiement d'OVHcloud"
 updated: 2025-01-10
 ---
@@ -69,14 +69,10 @@ Les services et les données sont protégés contre les incidents localisés gr�
 
 | Spécification         | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
-| **Type de redondance**   | Architecture 2N+1* répartie sur plusieurs centres de données interconnectés.                                       |
+| **Type de redondance**   | Redondance au niveau de l'infrastructure (alimentation, réseau et refroidissement) et réplication locale des données à l'intérieur de la zone pour assurer la résilience.                                       |
 | **Tolérance aux pannes**   | Protège contre les pannes de disques et de serveurs, mais pas contre une panne totale d'un centre de données.           |
 | **Protection des données** | Données répliquées à l'intérieur de l'AZ pour garantir la résilience locale.                                    |
 | **Limites** | Pas de protection inter-régions ou inter-Zones ; dépend d'une seule AZ.                                    |
-
-**Architecture 2N+1 :**
-
-Cette architecture double les ressources nécessaires (2N) et ajoute une unité supplémentaire (+1) pour garantir la continuité du service en cas de panne locale (serveur, disque). Les ressources sont réparties entre plusieurs datacenters dans la même AZ, assurant une faible latence et une résilience locale. Toutefois, elle ne protège pas contre une panne globale de l'AZ.
 
 #### Mise à l'échelle
 
@@ -127,12 +123,12 @@ La Région 3-AZ consiste en **trois zones de disponibilité indépendantes**, ch
 
 | Spécification         | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
-| **Type de redondance**      | 3N avec réplication inter-zones*.                                    |
+| **Type de redondance**      | 3N avec réplication inter-zone* et réplication des données inter-zone pour la résilience                                  |
 | **Tolérance aux pannes** | Garantit la résilience contre la perte d'une zone entière, avec basculement automatique.                      |
 | **Protection des données** | Données répliquées de manière synchrone entre les zones pour garantir leur disponibilité continue. |
 | **Limites** | Ne protège pas contre une panne complète de la région ; nécessite une architecture multirégionale pour une résilience maximale. |
 
-**3N avec réplication inter-zones** :
+***3N avec réplication inter-zones** :
 
 Dans cette architecture, les ressources sont triplées (3N) et réparties entre trois zones de disponibilité (AZ) distinctes. Les données sont répliquées de manière synchrone entre les zones, garantissant une résilience totale contre la perte d'une zone entière grâce au basculement automatique. Cependant, cette architecture ne protège pas contre une panne régionale complète.
 
@@ -188,14 +184,10 @@ Chaque Local Zone fonctionne comme une zone de disponibilité unique avec un ens
 
 | Avantage        | Description                                           |
 |------------------|-------------------------------------------------------|
-| **Type de redondance**      | Triple réplication locale* au sein de la zone pour garantir la résilience face aux défaillances matérielles.             |
+| **Type de redondance**      | Redondance au niveau de l'infrastructure (alimentation, réseau et refroidissement) et réplication locale des données à l'intérieur de la zone pour assurer la résilience.            |
 | **Tolérance aux pannes**  |  Garantit la continuité des opérations en cas de panne de disque ou de serveur au sein de la zone, mais ne protège pas contre une panne totale de la zone de disponibilité. |
 | **Protection des données**| Données répliquées dans la zone pour garantir leur disponibilité locale. |
 | **Limites**| Pas de protection contre les pannes globales ou régionales, dépend d’une seule Local Zone. |
-
-**Triple réplication locale :**
-
-Les données sont répliquées trois fois dans la même Local Zone, offrant une résilience contre les pannes matérielles (disque ou serveur). Cependant, cette architecture ne protège pas contre une panne complète de la zone et reste dépendante d'une seule Local Zone.
 
 #### Mise à l'échelle
 
@@ -231,7 +223,7 @@ Architecture:
 |------------------------|-------------------------------------|---------------------------------|------------------------------------------|
 | **Structure de déploiement**   | Zone de disponibilité unique            | Trois zones indépendantes | Zone de disponibilité unique               |
 | **service disponible** | Tous ou la plupart des services Public Cloud | Tous ou la plupart des services Public Cloud | La plupart des services Compute et Storage
-| **Redondance**             | 2N+1 interne (ressources dans une seule AZ)                    | Redondance inter-zones (ressources répliquées entre les zones)            | Triple réplication locale (réplication des ressources dans une seule zone)              |
+| **Redondance**             | Redondance sur l'infrastructure et réplication locale des données | Redondance inter-zones (ressources répliquées entre zones) et réplication inter-zones des données | Redondance sur l'infrastructure et réplication locale des données |
 | **Disponibilité des données**      | Limitée pendant les pannes du centre de données, protégée contre les pannes de serveur/disque | Maintenue dans toutes les zones, résiliente aux pannes de zone | Limitée pendant les pannes du centre de données, protégée contre les pannes de serveur/disque |
 | **Latence**                | Faible pour les utilisateurs finaux proches                            | Faible pour les utilisateurs finaux proches et très faible entre les zones de disponibilité   | Faible pour les utilisateurs finaux proches |
 | **Cas d'utilisation**        | Développement, environnements de transition, applications sensibles aux coûts, services non critiques | Applications à haute disponibilité, services commerciaux essentiels, reprise après sinistre et charges de travail critiques | Applications en temps réel, informatique de pointe, jeux, flux vidéo, services conformes à la réglementation |

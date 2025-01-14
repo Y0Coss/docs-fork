@@ -69,14 +69,10 @@ Services and data are protected against localised incidents thanks to effective 
 
 | Specification         | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
-| **Redundancy Type**   | 2N+1 architecture distributed across several interconnected data centres.                                        |
+| **Redundancy Type**   | Redundancy on the infrastructure side (power, network, and cooling), with local data replication within the zone for resilience.                                        |
 | **Fault Tolerance**   | Protects against disk and server failures, but not against total data centre failure.           |
 | **Data protection** | Data replicated within the AZ to guarantee local resilience.                                    |
 | **Limits** | No inter-regional or inter-zone protection; dependent on a single AZ.                                    |
-
-**2N+1 architecture:**
-
-This architecture doubles the resources required (2N) and adds an extra unit (+1) to guarantee continuity of service in the event of a local failure (server, disk). Resources are distributed between several datacentres in the same AZ, ensuring low latency and local resilience. However, it does not protect against a global failure of the AZ.
 
 #### Scaling
 
@@ -127,12 +123,12 @@ Architecture:
 
 | Specification         | Description                                                               |
 |-------------------|---------------------------------------------------------------------------|
-| **Type of redundancy**      | 3N with inter-zone replication.                                    |
+| **Type of redundancy**      | 3N with inter-zone replication* and inter-zone data replication for resilience                 |
 | **Fault tolerance** | Guarantees resilience against the loss of an entire zone, with automatic failover.                      |
 | **Data protection** | Data replicated synchronously between zones to guarantee continuous availability. |
 | **Limits** | Does not protect against complete regional failure; requires multi-regional architecture for maximum resilience. |
 
-**3N with inter-zone replication :**
+***3N with inter-zone replication :**
 
 In this architecture, resources are tripled (3N) and distributed between three distinct availability zones (AZ). Data is replicated synchronously between zones, guaranteeing total resilience against the loss of an entire zone thanks to automatic failover. However, this architecture does not protect against a complete regional failure.
 
@@ -188,14 +184,10 @@ Each Local Zone operates as a single availability zone with a limited set of ser
 
 | Advantage        | Description                                           |
 |------------------|-------------------------------------------------------|
-| **Type of redundancy**      | Triple local replication within the zone to guarantee resilience in the event of hardware failure.             |
+| **Type of redundancy**      | Redundancy on the infrastructure side (power, network, and cooling), with local data replication within the zone for resilience.             |
 | **Fault tolerance**  | Guarantees continuity of operations in the event of a disk or server failure within the zone, but does not protect against a total failure of the availability zone. |
 | **Data protection**| Data replicated in the zone to guarantee local availability. |
 | **Limits**| No protection against global or regional failures, dependent on a single Local Zone. |
-
-**Triple local replication:**
-
-Data is replicated three times in the same Local Zone, offering resilience against hardware failure (disk or server). However, this architecture does not protect against a complete zone failure and remains dependent on a single Local Zone.
 
 #### Scaling
 
@@ -231,7 +223,7 @@ Architecture:
 |------------------------|-------------------------------------|---------------------------------|------------------------------------------|
 | **Deployment Structure**   | Single availability zone            | Three independent availability zones | Single availability zone                |
 | **Service available**      | All or most Public Cloud services   | All or most Public Cloud services   | Most Compute and storage services        |
-| **Redundancy**             | 2N+1 internal (resources in a single AZ)                      | Cross-zone redundancy (resources replicated between zones)          | Local triple replication (replication of some resources in a single zone)               |
+| **Redundancy**             | Redundancy on the infrastructure and local data replication | Cross-zone redundancy (resources replicated between zones) and inter-zone data replication for resilience | Redundancy on the infrastructure and local data replication               |
 | **Data Availability**      | Limited during data center outages, protected against server/disk failures | Maintained across zones, resilient to zone outages | Limited during data center outages, protected against server/disk failures |
 | **Latency**                | Low for close end-users                            | Low for close end-users and ultra low between availability zones   | Low for close end-users |
 | **Ideal Use Cases**        | Development, staging environments, cost-sensitive applications, non-critical services | High-availability applications, critical business services, disaster recovery, and mission-critical workloads | Real-time applications, edge computing, gaming, video streaming, regulatory-compliant services |
