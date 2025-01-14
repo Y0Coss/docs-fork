@@ -47,7 +47,7 @@ Voici quelques scénarios pour mieux comprendre ce fonctionnement :
 > 
 > Point sur le terme **ressources simultanées**.
 >
-> Un Savings Plan couvre un certain nombre de ressources actives simultanément. Par exemple, pour un Plan d'économies de 1 ressource, si un client démarre une ressource à 10h05 et l'efface à 10h10, puis crée une autre ressource à 10h17 et l'efface à 10h30, même s'il a démarré et effacé deux ressources, seules les ressources qui ont été allumées en même temps sont comptabilisées. Dans ce cas, une seule ressource est active en même temps, de sorte que le plan d'épargne couvre les deux ressources sans facturation supplémentaire. Il en va de même si les ressources sont utilisées à différents moments du mois (par exemple, du 1er au 10, puis du 15 au 30), pour autant qu'elles ne soient pas actives en même temps.
+> Un Savings Plan couvre un certain nombre de ressources actives simultanément. Par exemple, pour un Svings Plan de 1 ressource, si un client démarre une ressource à 10h05 et l'efface à 10h10, puis crée une autre ressource à 10h17 et l'efface à 10h30, même s'il a démarré et effacé deux ressources, seules les ressources qui ont été allumées en même temps sont comptabilisées. Dans ce cas, une seule ressource est active en même temps, de sorte que le Savings plan couvre les deux ressources sans facturation supplémentaire. Il en va de même si les ressources sont utilisées à différents moments du mois (par exemple, du 1er au 10, puis du 15 au 30), pour autant qu'elles ne soient pas actives en même temps.
 >
 
 ### Eligible / compatible services
@@ -201,7 +201,7 @@ Sur votre facture, vous ne verrez que le montant total correspondant au Savings 
 
 - **b. Facturation de vos vCPUs supplémentaires**
 Les vCPUs supplémentaires, c'est-à-dire ceux qui ne sont pas couverts par votre Savings Plan, sont facturés sur une base horaire, comme pour la facturation standard.
-Par exemple, si vous utilisez 10 vCPUs pendant 10 heures au cours du mois, vous serez facturé à l'heure. Cela donne une facture pour 100 heures (10 vCPUs x 10 heures), facturées au taux horaire standard, en plus de la ligne du Plan d'épargne.
+Par exemple, si vous utilisez 10 vCPUs pendant 10 heures au cours du mois, vous serez facturé à l'heure. Cela donne une facture pour 100 heures (10 vCPUs x 10 heures), facturées au taux horaire standard, en plus de la ligne du Savings Plan.
 
 > [!info]
 >
