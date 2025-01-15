@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-12-19
+updated: 2025-01-15
 ---
 
 ## Objective
@@ -261,9 +261,14 @@ The API then returns the certificate creation status:
 
 Copy the value of the **privateKeyPEM** field to a **domain.key** file
 
-> [!warning]
+> [!alert]
 >
 > The private key will no longer be accessible at a later stage. If you lose it, you will need to regenerate a certificate.
+>
+
+> [!warning]
+>
+> The **privateKeyPEM** field needs to be edited so that all instances of `\n` are replaced by carriage returns.
 >
 
 Then copy the certificate ID and access its details via the API:
@@ -294,6 +299,11 @@ The API returns the certificate in PEM:
 
 Copy the value of the **certificatePEM** field to a **client.cert** file.
 
+> [!warning]
+>
+> The **certificatePEM** field needs to be edited so that all instances of `\n` are replaced by carriage returns.
+>
+
 ##### With a CSR
 
 If you have your own private key, it is possible to use it by providing a CSR.
@@ -312,6 +322,11 @@ The following information is required:
 - **description**: certificate description (optional)
 - **validity**: certificate validity duration in days - 365 days by default (optional)
 - **csr**: the content of the CSR
+
+> [!warning]
+>
+> The CSR needs to be in JSON format. The CSR file will need to be edited so that there are no carriage returns; rather, `\n` will have to be inserted where the line breaks were previously (see the example below). You can also use third-party tools available online to adjust content into the correct JSON format.
+>
 
 **Example of certificate creation:**
 
