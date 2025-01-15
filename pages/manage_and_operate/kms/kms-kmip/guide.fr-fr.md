@@ -32,8 +32,8 @@ A titre d'exemple, les produits suivants ont été validés à l'utilisation ave
 - [Nutanix](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v6_8:wc-security-data-encryption-setup-t.html)
 - [VMware](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-security/GUID-9035D542-B76B-4244-966D-2A8D92ABF54C.html)
 - [MongoDB](https://www.mongodb.com/docs/manual/core/csfle/tutorials/kmip/kmip-automatic/)
-- [Barbican](https://docs.openstack.org/barbican/latest/install/barbican-backend.html#kmip-plugin) - pour un usage *on-prem*
-- [NetApp](https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-concept.html) - pour un usage *on-prem*
+- [Barbican](https://docs.openstack.org/barbican/latest/install/barbican-backend.html#kmip-plugin) - pour un usage *On-Premise*
+- [NetApp](https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-concept.html) - pour un usage *On-Premise*
 
 ### Utilisation directe
 
