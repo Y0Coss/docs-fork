@@ -1,7 +1,7 @@
 ---
 title: Tarification et gestion des NSX Edges OVHcloud
 excerpt: Guide sur les options de tarification, configurations et personnalisation des NSX Edges pour VMware sur OVHcloud.
-updated: 2025-01-13
+updated: 2025-01-15
 ---
 # Informations concernant le mode de tarification et les configurations des NSX Edges
 
