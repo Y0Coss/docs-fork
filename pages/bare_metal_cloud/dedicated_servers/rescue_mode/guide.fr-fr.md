@@ -1,6 +1,6 @@
 ---
 title: "Activer et utiliser le mode rescue"
-excerpt: "Découvrez comment utiliser le système de secours client OVHcloud pour dépanner votre serveur dédié"
+excerpt: "Découvrez comment utiliser le mode customer rescue OVHcloud pour dépanner votre serveur dédié"
 updated: 2025-01-16
 ---
 
@@ -29,7 +29,7 @@ Le mode rescue est généralement adapté aux tâches suivantes :
 ## Prérequis
 
 - Posséder un [serveur dédié](/links/bare-metal/bare-metal).
-- Accès à l’[espace client OVHcloud](/links/manager).
+- Être connecté à l’[espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -41,7 +41,7 @@ Cliquez sur le nom de votre serveur pour ouvrir l'onglet `Informations général
 
 ### Activation du mode rescue
 
-Dans la case **Informations générales**, cliquez sur le bouton `...`{.action} à côté de `Démarrer`. Cliquez sur `Modifier`{.action} dans le menu contextuel.
+Dans la case **Informations générales**, cliquez sur le bouton `...`{.action} à côté de `Boot`. Cliquez sur `Modifier`{.action} dans le menu contextuel.
 
 ![Modifier le mode de démarrage](images/rescue-mode-001.png){.thumbnail}
 
@@ -49,31 +49,31 @@ Dans la case **Informations générales**, cliquez sur le bouton `...`{.action} 
 
 #### 1 : Options du mode rescue
 
-Sur la page **Modifier le netboot**, sélectionnez `Démarrer en mode rescue`{.action}.
+Sur la page **Modifier le netboot**, sélectionnez `Booter en mode rescue`{.action}.
 
 ![Modifier le mode de démarrage](images/rescue-mode-002.png){.thumbnail}
 
 Les options disponibles pour le mode rescue dépendent du type de serveur et du **système d'exploitation** installé.
 
-- Système de secours client (toujours disponible)
-- Système Rescue pour Windows (disponible pour les serveurs Windows)
+- Customer rescue system (toujours disponible)
+- Windows customer rescue system (disponible pour les serveurs Windows)
 - [iPXE](https://ipxe.org) / ipxe-shell (outil open source externe, toujours disponible)
-- [Système de secours Windows hérité](#windows_legacy) (système WinPE déconseillé, uniquement pertinent si votre serveur ne répond pas aux exigences du système de secours actuel pour Windows)
+- [Legacy Windows rescue system](#windows_legacy) (système WinPE déconseillé, uniquement pertinent si votre serveur ne répond pas aux exigences du mode rescue actuel pour Windows)
 
 > [!primary]
 >
-> Les instructions ci-dessous ne concernent que le **système de secours client** qui est l’option la plus couramment utilisée.
+> Les instructions ci-dessous ne concernent que le **customer rescue system** qui est l’option la plus couramment utilisée.
 >
-> Reportez-vous à notre [guide dédié pour une explication détaillée sur l’utilisation du **système rescue pour Windows**](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+> Reportez-vous à notre [guide dédié pour une explication détaillée sur l’utilisation du **mode rescue pour Windows**](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
 
 Sélectionnez `Customer rescue system`{.action} dans le menu déroulant.
 
 #### 2 : Options d'authentification
 
-Le choix suivant détermine la méthode d'authentification pour la connexion SSH au système en mode rescue. Il s’agit principalement d’une question de commodité puisque chaque session en mode rescue est censée être transitoire et sera supprimée une fois que vous aurez redémarré le serveur à partir de son disque.
+Le choix suivant détermine la méthode d'authentification pour la connexion SSH au système en mode rescue. Il s’agit principalement d’une question de commodité puisque chaque session en mode rescue est censée être transitoire et sera supprimée une fois que vous aurez redémarré le serveur depuis son disque.
 
-- **Authentification par mot de passe** : Les identifiants vous seront communiqués par e-mail.
-- **Authentification par clé** : Vous pouvez utiliser une clé publique d'authentification de votre choix (formats compatibles: `RSA`, `ECDSA`, `ED25519`).
+- **Authentification par mot de passe** : les identifiants vous seront communiqués par e-mail.
+- **Authentification par clé** : vous pouvez utiliser une clé publique d'authentification de votre choix (formats compatibles: `RSA`, `ECDSA`, `ED25519`).
 
 Cliquez sur l'onglet correspondant à votre moyen de connexion :
 
@@ -85,11 +85,11 @@ Cliquez sur l'onglet correspondant à votre moyen de connexion :
 >>
 >>![Auth method](images/rescue-mode-003.png){.thumbnail width="400"}
 >>
->> L'e-mail de notification du mode rescue, ainsi que ses identifiants, seront envoyés à l'adresse e-mail de contact de votre compte OVHcloud. Pour utiliser une autre adresse e-mail, renseignez-la dans le champ `Envoyer de nouvelles identifiants à l'adresse e-mail suivante`.
+>> L'e-mail de notification du mode rescue, ainsi que ses identifiants, seront envoyés à l'adresse e-mail de contact de votre compte OVHcloud. Pour utiliser une autre adresse e-mail, renseignez-la dans le champ `Recevoir les identifiants du mode sur l'adresse e-mail :`.
 >>
 >> Cliquez sur `Suivant`{.action}.
 >>
-> Authentification par clé
+> Authentification par clé SSH
 >>
 >> Cliquez sur `Authentification par clé SSH`{.action}.
 >>
@@ -97,7 +97,7 @@ Cliquez sur l'onglet correspondant à votre moyen de connexion :
 >>
 >> Vous avez deux possibilités :
 >>
->> - Sélectionnez une touche dans le menu déroulant. Vous devez déjà avoir au moins une [clé publique stockée dans votre espace client OVHcloud](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel).
+>> - Sélectionnez une clé dans le menu déroulant. Il est nécessaire d'avoir déjà au moins une [clé publique stockée dans votre espace client OVHcloud](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel).
 >> - Copiez manuellement la chaîne de clé publique et collez-la dans le champ `Votre clé SSH publique`.
 >>
 >> Pour en savoir plus sur ce sujet, consultez nos guides :
@@ -106,7 +106,7 @@ Cliquez sur l'onglet correspondant à votre moyen de connexion :
 >> - [Comment créer et utiliser des clés pour l'authentification SSH avec PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 >>
 >> > [!success]
->> > Vous pouvez ajouter une clé publique par défaut pour le système de secours client à un serveur via l'API OVHcloud. Pour plus d'informations, consultez la [section guide ci-dessous](#rescuessh).
+>> > Vous pouvez ajouter une clé publique par défaut pour le mode rescue d'un serveur via l'API OVHcloud. Pour plus d'informations, consultez la [section guide ci-dessous](#rescuessh).
 >>
 >> Cliquez sur `Suivant`{.action}.
 >>
@@ -117,15 +117,15 @@ Dans l'étape **Résumé**, cliquez sur `Valider`{.action}.
 
 ![Summary](images/rescue-mode-005.png){.thumbnail}
 
-Vous devriez maintenant avoir une notification concernant le paramètre `Netboot` dans l'onglet « Informations générales »{.action}.
+Vous devriez maintenant avoir une notification concernant le paramètre `Netboot` dans l'onglet `Informations générales`{.action}.
 
 ![Netboot](images/rescue-mode-006.png){.thumbnail}
 
-La dernière étape consiste à redémarrer le serveur. Cliquez sur le bouton `...`{.action} à côté de « État » dans la zone **État du service**, puis cliquez sur `Redémarrer`{.action}. Cliquez sur `Valider`{.action} dans la fenêtre contextuelle.
+La dernière étape consiste à redémarrer le serveur. Cliquez sur le bouton `...`{.action} à côté de « Statut » dans la zone **État des services**, puis cliquez sur `Redémarrer`{.action}. Cliquez sur `Valider`{.action} dans la fenêtre contextuelle.
 
 ![Reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/rebooting-your-server.png){.thumbnail}
 
-Ce « redémarrage dur » prendra quelques minutes à se terminer. Vous pouvez vérifier l'état actuel dans l'onglet `Tâches`{.action}.
+Ce *hard reboot* prendra quelques minutes à se terminer. Vous pouvez vérifier l'état actuel dans l'onglet `Tâches`{.action}.
 
 > [!primary]
 >
@@ -141,7 +141,7 @@ Cet e-mail est également disponible dans votre [espace client OVHcloud](/links/
 > Votre client SSH bloquera normalement la connexion au début en raison d'une incompatibilité de l'empreinte ECDSA. Ceci est normal car le mode rescue utilise son propre serveur SSH temporaire. Pour résoudre cela, vous devez éditer le fichier `known_hosts` de votre dossier local `.ssh`.  
 > Deux possibilités s'offrent à vous :
 >
-> - **Supprimer l'empreinte du fichier.** Votre client SSH ajoutera alors une nouvelle entrée d'empreinte pour le serveur lorsque vous n'utiliserez plus le mode rescue. Pour une explication détaillée, reportez-vous à la section « Login et fingerprint » dans notre [guide d'introduction SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+> - **Supprimer l'empreinte du fichier.** Votre client SSH ajoutera alors une nouvelle entrée d'empreinte pour le serveur lorsque vous n'utiliserez plus le mode rescue. Pour une explication détaillée, reportez-vous à la section « Login et fingerprint » dans notre [guide d'introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 >
 > - **Désactiver temporairement l'empreinte.** Ouvrez le fichier `known_hosts` avec un éditeur de texte et identifiez la chaîne d'empreinte de votre serveur par son adresse IP. Ajoutez le caractère `#` au début de la ligne. Par conséquent, cette ligne est désormais un « commentaire » et sera ignorée par les applications qui lisent le fichier. N'oubliez pas d'annuler ce changement avant de repasser le `Netboot` en mode « normal ».
 >
@@ -170,10 +170,10 @@ Cliquez sur l'onglet correspondant à la méthode de connexion sélectionnée :
 >> root@rescue-customer-eu (ns9356771.ip-203-0-113.eu) ~ #
 >> ```
 >>
->> Retrouvez plus d'informations sur les connexions SSH dans notre [guide d'introduction SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).    
+>> Retrouvez plus d'informations sur les connexions SSH dans notre [guide d'introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 >> Vous pouvez également utiliser n'importe quel outil de connexion SSH, tel que [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 >>
-> Authentification par clé
+> Authentification par clé SSH
 >>
 >> Ouvrez l'application de ligne de commande sur votre périphérique local et entrez la commande suivante :
 >>
@@ -265,7 +265,7 @@ mount /dev/md3 /mnt/
 >
 > Si vous avez besoin d’une assistance professionnelle pour l’administration de votre serveur, consultez la section [Aller plus loin](#gofurther) de ce guide.
 
-Pour obtenir des informations plus techniques sur les disques et les partitions du serveur, entrez :
+Pour obtenir des informations plus techniques sur les disques et les partitions du serveur, utilisez la commande :
 
 ```bash
 fdisk -l
@@ -279,7 +279,7 @@ umount /mnt
 
 #### VMware - Monter un datastore
 
-/// details | Déplier cette section
+/// details | Dépliez cette section
 
 Vous pouvez monter un datastore VMware de la même manière que décrite dans l'étape précédente.
 
@@ -336,7 +336,7 @@ Certaines opérations sur le système de fichiers (telles que la configuration d
 chroot /mnt/
 ```
 
-Vous devriez maintenant pouvoir appliquer toutes les modifications nécessaires à votre système, par exemple pour [regain server access](#gofurther).
+Vous devriez maintenant pouvoir appliquer toutes les modifications nécessaires à votre système, par exemple pour [retrouver l'accès au serveur](#gofurther).
 
 ### Sortie du mode rescue
 
@@ -356,13 +356,13 @@ Vous pouvez maintenant redémarrer le serveur à partir du shell du mode rescue 
 reboot
 ```
 
-Vous pouvez également utiliser la fonction `Restart`{.action} dans votre espace client.
+Vous pouvez également utiliser la fonction `Redémarrer`{.action} dans votre espace client.
 
 <a name="rescuessh"></a>
 
 ### Comment ajouter une clé d'authentification par défaut pour le mode rescue
 
-/// details | Déplier cette section
+/// details | Dépliez cette section
 
 Pour accélérer le processus, vous pouvez ajouter une clé publique par défaut pour l'accès SSH en mode rescue à votre serveur. Ceci est possible uniquement via l’[API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
@@ -399,7 +399,7 @@ Le champ `Votre clé SSH publique :` sera maintenant rempli automatiquement avec
 
 ### Legacy Windows rescue system (mode rescue WinPE)
 
-/// details | Déplier cette section
+/// details | Dépliez cette section
 
 Une fois votre serveur redémarré, vous recevrez un e-mail avec vos identifiants d'accès en mode rescue. Cet e-mail est également disponible dans votre [espace client OVHcloud](/links/manager) dès son envoi : cliquez sur le nom associé à votre identifiant client dans la barre de menu en haut à droite, puis sélectionnez `E-mails de service`{.action}.
 
@@ -419,7 +419,7 @@ Les outils suivants sont déjà installés dans ce mode :
 |SilverSHielD|Un serveur SSH2 et SFTP.|
 |System Recovery|Un outil Windows de restauration et de dépannage du système.|
 |TestDisk|Une puissante application de récupération de données. Elle vous permet de récupérer et de modifier des partitions corrompues, de trouver des partitions perdues, de réparer un secteur de démarrage et même de reconstruire un MBR défectueux.|
-|FileZilla|Un client FTP open source. Il prend en charge les protocoles SSH et SSL, et dispose d'une interface glisser-déposer claire et intuitive. Il peut être utilisé pour transférer vos données vers un serveur FTP, comme la sauvegarde FTP fournie avec la plupart des modèles de serveurs OVHcloud.|
+|FileZilla|Un client FTP open source. Il prend en charge les protocoles SSH et SSL et dispose d'une interface glisser-déposer claire et intuitive. Il peut être utilisé pour transférer vos données vers un serveur FTP, comme la sauvegarde FTP fournie avec la plupart des modèles de serveurs OVHcloud.|
 |7-ZIP|Un utilitaire de compression et d'archivage de fichiers qui lit les formats suivants : ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR et Z. Il vous permet également de créer vos propres archives dans les formats suivants : BZIP2, GZIP, TAR, WIM, XZ, Z et ZIP.|
 
 ///
@@ -432,7 +432,7 @@ Les outils suivants sont déjà installés dans ce mode :
 
 [Comment récupérer l'accès au serveur si votre mot de passe utilisateur est perdu](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
-[Comment remplacer vos clés d'authentification pour l'accès SSH si une clé est perdue](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
+[Comment remplacer vos clés d'authentification pour l'accès SSH en cas de perte de clé](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 
 [Configuration et reconstruction du RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
