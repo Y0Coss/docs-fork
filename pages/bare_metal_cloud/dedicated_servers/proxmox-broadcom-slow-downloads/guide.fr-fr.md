@@ -72,7 +72,7 @@ La ligne `bus-info` correspond à l'adresse PCI (`02:00.0` indiqué par `lspci`)
 
 ### Étape 3 - Désactivation du paramètre `generic-receive-offload`
 
-Vous pouvez maintenant vérifier l'état du `generic-receive-offload` avec la commande suivante :
+Vous pouvez maintenant vérifier l'état du paramètre `generic-receive-offload` avec la commande suivante :
 
 ```sh
 ethtool --show-offload enp2s0f0np0 | grep generic-receive-offload:
