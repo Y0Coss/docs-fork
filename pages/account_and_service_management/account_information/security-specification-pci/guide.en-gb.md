@@ -15,10 +15,10 @@ In addition to [the responsibility model for Public Cloud Instance](/pages/publi
 - ISO/IEC 27017
 - ISO/IEC 27018
 - HDS
-- SOC 1 type 1
-- SOC 2 type 1
-- CSA type 1
-- C5 type 1
+- SOC 1 type II
+- SOC 2 type II
+- CSA type II
+- C5 type II
 
 ### 2. Best pratices to be deployed on the service
 
