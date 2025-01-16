@@ -33,10 +33,6 @@ The SLA varies between 99.999% and 99.5% and differs between offers and ranges. 
 
 ### 4. Backups
 
-
-
-#### 4.2 Customer data backups
-
 You  must implement additional back-up device based on customer tools or options offered by OVH such as Second server, IP Fail Over, etc.
 
 | **Option** | **Granularity** | **RPO** | **RTO** | **Documentation** |
