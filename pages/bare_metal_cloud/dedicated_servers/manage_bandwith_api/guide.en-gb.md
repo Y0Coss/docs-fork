@@ -1,5 +1,5 @@
 ---
-title: 'Upgrade and Downgrade Bandwidth via the OVHcloud API'
+title: 'Upgrade and downgrade Bandwidth via the OVHcloud API'
 excerpt: 'Find out how to upgrade and downgrade the bandwidth on a Dedicated Server via the OVHcloud API'
 updated: 2025-01-15
 ---
@@ -10,7 +10,7 @@ Each of our dedicated servers includes a minimum public bandwidth of 500Mbps. In
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal)
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps)
 
 ## Instructions
@@ -40,6 +40,11 @@ Enter the variables:
 - serviceName: the name of your dedicated server, for example `ns1234567.ip-203.0.113.eu`
 
 ![bandwidth](images/bandwidth_02.png){.thumbnail}
+
+The `RESPONSE` field should display information similar to the following:
+
+![bandwidth](images/bandwidth_02_1.png){.thumbnail}
+
 
 ### Review your order
 
