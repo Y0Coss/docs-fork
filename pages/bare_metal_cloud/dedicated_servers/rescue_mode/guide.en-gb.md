@@ -73,7 +73,7 @@ Select `Customer rescue system`{.action} in the drop-down menu.
 The next choice determines the method of authentication for the SSH connection to the rescue mode system. This is mainly a matter of convenience since each rescue mode session is meant to be transitory and will be discarded once you reboot the server from its disk.
 
 - **Password authentication**: You will be sent login credentials via email.
-- **Key authentication**: You can use a public authentication key of your choice (compatible formats: `RSA`, `ECDSA`, or `ED25519`).
+- **Key authentication**: You can use a public authentication key of your choice (compatible formats: `RSA`, `ECDSA`, `ED25519`).
 
 Click on the relevant tab for your connection method:
 
@@ -261,7 +261,7 @@ mount /dev/md3 /mnt/
 ```
 
 > [!warning]
-> The examples above are merely meant to illustrate the necessary steps for a basic server configuration. The information in the output table depends on your server's hardware and its partition scheme. For more information, consult the documentation of your operating system.
+> The examples above are merely illustrating the necessary steps based on a typical server configuration. The information in the output table depends on your server's hardware and its partition scheme. For more information, consult the documentation of your operating system.
 > 
 > If you require professional assistance with server administration, consider the details in the [Go further](#gofurther) section of this guide.
 
@@ -348,6 +348,8 @@ exit
 
 In your [OVHcloud Control Panel](/links/manager), [change the boot mode](#netboot) back to `Boot from the hard disk`{.action} and confirm.
 
+![Netboot Disk](images/rescue-mode-007.png){.thumbnail}
+
 You can now restart the server from the rescue mode shell:
 
 ```bash
@@ -385,7 +387,7 @@ Replace `string` with your full public key string.
 
 The result should look as shown in the following example:
 
-![rescue key example](images/rescuekey.png){.thumbnail}
+![rescue key example](images/rescue-mode-008.png){.thumbnail}
 
 When you have entered your values correctly, click the button `TRY`{.action}.
 
@@ -403,7 +405,7 @@ Once your server has rebooted, you will receive an email with your rescue mode a
 
 To use the Windows PE rescue mode GUI, you will need to download and install a VNC console or use the [IPMI module](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers) (not available on all server models).
 
-![Winrescue Windows](images/rescue-mode-07.png){.thumbnail}
+![Winrescue Windows](images/rescue-mode-009.png){.thumbnail}
 
 The following tools are already installed in this mode:
 
