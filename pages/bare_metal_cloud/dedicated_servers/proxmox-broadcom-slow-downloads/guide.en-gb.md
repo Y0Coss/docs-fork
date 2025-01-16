@@ -126,7 +126,7 @@ iface vmbr0 inet6 static
 ```
 
 > [!primary]
-> The `$IFACE` placeholder will be replaced by the interface name on execution. You do not need to change it with the actual interface name.
+> The `$IFACE` placeholder will be replaced by the interface name on execution. You do not need to replace it with the actual interface name.
 >
 > Setting the `generic-receive-offload` parameter on the `vmbr0` bridge has no effect, the change must be applied to the physical interfaces.
 
