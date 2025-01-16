@@ -5,6 +5,15 @@ updated: 2024-07-05
 ---
 
 <style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-600 {
+  max-height:600px !important;
+}
+</style>
+
+<style>
  pre {
      font-size: 14px !important;
  }
@@ -90,7 +99,7 @@ O princípio de uma **função de picadura** é gerar uma **assinatura** (també
 
 No diagrama seguinte, pode constatar que a saída (Output) será sempre composta por 32 caracteres, utilizando um algoritmo de picadagem MD5 (**M**essage **D**igest **5**), enquanto o texto de entrada (Input) pode variar em tamanho. A menor variação no caráter do dado de entrada altera completamente a trituração à saída, o que torna a assinatura à saída imprevisível e infalsificável. No exemplo abaixo, o valor de entrada (Input) passou para o algoritmo de trituração MD5 e apresenta à saída (Output) o seu valor de trituração.
 
-![hash](/pages/assets/schemas/emails/dns-dkim-hash01.png){.thumbnail}
+![hash](/pages/assets/schemas/emails/dns-dkim-hash01.png){.thumbnail .w-400 .h-600}
 
 A função de triagem é útil quando deseja verificar a integridade de uma mensagem. Com efeito, dois dados que podem ser de aparência muito próximas apresentam um valor de picadura completamente diferente com um comprimento de caracteres igual à saída, qualquer que seja o comprimento de entrada.
 
@@ -104,11 +113,11 @@ Existem duas utilizações da encriptação assimétrica:
 
 - **O dado de entrada é encriptado com a chave pública e decifrado por quem possui a chave privada**. Por exemplo, deseja que um terceiro lhe transmita dados de forma segura. Transmite a sua chave pública sem se preocupar que alguém a recupere, este terceiro encriptará os seus dados com a sua chave pública. Os números só poderão ser decifrados pelo proprietário da chave privada.
 
-![hash](/pages/assets/schemas/emails/dns-dkim-crypto01.png){.thumbnail}
+![hash](/pages/assets/schemas/emails/dns-dkim-crypto01.png){.thumbnail .w-400 .h-600}
 
 - **O dado de entrada é encriptado pelo proprietário da chave privada e decifrado pela chave pública**. Esta utilização aplica-se para autenticar uma troca de dados. Por exemplo, os seus destinatários pretendem assegurar-se de que é o autor da mensagem que lhes transmite. Nesse caso, irá encriptar a sua mensagem com a sua chave privada. Esta mensagem só poderá ser decifrada através da chave pública que transmitir a todos, o que garante aos seus destinatários a autenticidade da sua mensagem. De facto, uma mensagem decifrada pela chave pública só pode provir do proprietário da chave privada.
 
-![hash](/pages/assets/schemas/emails/dns-dkim-crypto02.png){.thumbnail}
+![hash](/pages/assets/schemas/emails/dns-dkim-crypto02.png){.thumbnail .w-400 .h-600}
 
 #### Como é que a picadura e a encriptação assimétrica são utilizadas para o DKIM? <a name="encrypt-and-hash"></a>
 
@@ -137,11 +146,11 @@ O valor do seletor é aqui `s=ovhex123456-seletor1`.
 
 Quando envia um e-mail a partir de **contact@mydomain.ovh**, é adicionada uma assinatura encriptada com a ajuda de uma chave privada (private key) no cabeçalho do e-mail.
 
-![email](/pages/assets/schemas/emails/dns-dkim-send.gif){.thumbnail}
+![email](/pages/assets/schemas/emails/dns-dkim-send.gif){.thumbnail .w-400 .h-600}
 
 O destinatário **recipient@otherdomain.ovh** poderá decifrar esta assinatura com a chave pública (Public key) visível na zona DNS de **mydomain.ovh**. A assinatura é criada a partir do conteúdo do e-mail enviado. Isto significa que, se o e-mail for modificado durante o trânsito, a assinatura não corresponderá ao conteúdo, provocando assim o fracasso da verificação DKIM no servidor destinatário.
 
-![email](/pages/assets/schemas/emails/dns-dkim-receive.gif){.thumbnail}
+![email](/pages/assets/schemas/emails/dns-dkim-receive.gif){.thumbnail .w-400 .h-600}
 
 ### Configurar o DKIM automaticamente para um serviço de e-mail Exchange ou E-mail Pro da OVHcloud <a name="auto-dkim"></a>
 
@@ -162,7 +171,7 @@ Clique no separador seguinte da sua oferta.
 >>
 >> À direita do domínio em causa, pode verificar que a etiqueta `DKIM` é cinzenta.
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
 > **E-mail Pro**
 >>
@@ -170,15 +179,15 @@ Clique no separador seguinte da sua oferta.
 >>
 >> À direita do domínio em causa, pode verificar que a etiqueta `DKIM` é cinzenta.
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 
 Para ativar o DKIM, basta clicar na etiqueta `DKIM` cinzento e, a seguir, em `Validar`{.action} a partir da janela de ativação apresentada.
 
-![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail}
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
 A ativação automática do DKIM dura entre 30 minutos e 24 horas, no máximo. Para verificar se o seu DKIM está funcional, basta voltar ao separador `Domínios associados`{.action} da sua plataforma de e-mail e certificar-se de que a etiqueta `DKIM` ficou verde.
 
-![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail}
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 
 Se a etiqueta `DKIM` for vermelha após 24 horas, consulte a secção "[Porque é que o DKIM não está funcional e aparece a vermelho na Área de Cliente?](#reddkim)" deste guia.
 
@@ -193,17 +202,17 @@ Clique no separador abaixo correspondente à sua oferta.
 >>
 >> Na [Área de Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Finalmente, clique no nome do serviço Exchange em questão. Por predefinição, o nome da plataforma corresponde à sua referência ou esta será visível sob o nome que lhe atribuiu (ver imagem abaixo).
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/dns-dkim-platform-exchange.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/dns-dkim-platform-exchange.png){.thumbnail .w-400 .h-600}
 >>
 > **E-mail Pro**
 >>
 >> Na Área de [Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `E-mails Pro`{.action} e, a seguir, no nome do serviço E-mail Pro em causa. Por predefinição, o nome da plataforma corresponde à sua referência ou esta será visível sob o nome que lhe atribuiu (ver imagem abaixo).
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/email-pro/general-information/dns-dkim-platform-emailpro.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/email-pro/general-information/dns-dkim-platform-emailpro.png){.thumbnail .w-400 .h-600}
 
 Certifique-se também de que o domínio que pretende utilizar para os seus e-mails está ativo na rubrica `Domínios associados`{.action}.
 
-![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dns-dkim-domain.png){.thumbnail}
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dns-dkim-domain.png){.thumbnail .w-400 .h-600}
 
 #### Configuração completa do DKIM <a name="firststep"></a>
 
@@ -218,15 +227,15 @@ Clique no separador da sua oferta:
 > [!tabs]
 > **E-mails (MX Plan)**
 >>
->> ![email](/pages/assets/screens/api/get-email-domain-domain-dkim.png){.thumbnail}
+>> ![email](/pages/assets/screens/api/get-email-domain-domain-dkim.png){.thumbnail .w-400 .h-600}
 >>
 > **Exchange**
 >>
->> ![email](/pages/assets/screens/api/get-email-exchange-organizationname-service-exchangeservice-domain-domainname-dkim.png){.thumbnail}
+>> ![email](/pages/assets/screens/api/get-email-exchange-organizationname-service-exchangeservice-domain-domainname-dkim.png){.thumbnail .w-400 .h-600}
 >>
 > **E-mail Pro**
 >>
->> ![email](/pages/assets/screens/api/get-email-pro-service-domain-domainname-dkim.png){.thumbnail}
+>> ![email](/pages/assets/screens/api/get-email-pro-service-domain-domainname-dkim.png){.thumbnail .w-400 .h-600}
 >>
 
 ##### **Para E-mails (MX Plan)** <a name="confemail"></a>
@@ -243,7 +252,7 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >>
 >> - `domain` : introduza o nome de domínio associado ao seu serviço E-mail no qual deseja ativar o DKIM.
 >>
->> Clique em `TRY`{.action} para iniciar a ativação.<br>
+>> Clique em `EXECUTE`{.action} para iniciar a ativação.<br>
 >>
 >> *Exemplo de resultado:*
 >>
@@ -271,7 +280,7 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >>
 >> - `domain`: introduza o nome de domínio associado ao seu serviço E-mail.<br>
 >> <br>
->> Clique em `TRY`{.action} para visualizar o resultado.<br>
+>> Clique em `EXECUTE`{.action} para visualizar o resultado.<br>
 >>
 >> *Exemplo de resultado:*
 >>
@@ -315,7 +324,7 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >>
 >> - `domain` : introduza o nome de domínio associado ao seu serviço E-mail.
 >>
->> Clique em `TRY`{.action} para visualizar o resultado.
+>> Clique em `EXECUTE`{.action} para visualizar o resultado.
 >>
 >> *Exemplo de resultado:*
 >>
@@ -350,7 +359,7 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >> - `ovhmo3456789-seletor1._domainkey.mydomain.ovh` corresponde ao subdomínio do registo CNAME. Apenas se guarda `ovhmo3456789-selector1._domainkey` porque o `.mydomain.ovh` já está pré-preenchido. <br>
 >> - `ovhmo3456789-seletor1._domainkey.123403.aj.dkim.mail.ovh.net.` corresponde ao destino do registo. Deve conservar-se o ponto no final para apontar o valor.<br>
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api022.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api022.png){.thumbnail .w-400 .h-600}
 >>
 >> Depois de inserir os valores, clique em `Seguinte`{.action} e em `Validar`{.action}.
 >>
@@ -378,7 +387,7 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >>
 >> - `domain` : introduza o nome de domínio associado ao seu serviço de e-mail no qual deseja ativar o DKIM.
 >>
->> Clique em `TRY`{.action} para iniciar a ativação.<br>
+>> Clique em `EXECUTE`{.action} para iniciar a ativação.<br>
 >>
 >> *Exemplo de resultado:*
 >>
@@ -427,9 +436,9 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> >
 >> <br>
 >>
->> - `organizationName` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
->> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
 >> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange na qual deseja ativar o DKIM. <br>
+>> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
+>> - `organizationName` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
 >>
 >> *Exemplo de resultado:*
 >>
@@ -448,12 +457,22 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim
 >> >
 >>
->> - `organizationName` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".
->> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".
 >> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange na qual deseja ativar o DKIM.
->> - `selectorName` : introduza o nome de um seletor que registou na etapa anterior (exemplo: "ovhex123456-selector1"). <br>
+>> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".
+>> - `organizationName` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".
+>> - `"selectorName"` : no separador **EXAMPLE** da secção **REQUEST BODY**, introduza o nome de um seletor de alimentação que registou no passo anterior (exemplo: "ovhex123456-seletor1").
 >>
->> Clique em `Execute`{.action} para lançar a criação do seletor.<br>
+>> *Exemplo de introdução:*
+>>
+>> ```console
+>> {
+>>    "autoEnableDKIM": false,
+>>    "configureDkim": false,
+>>    "selectorName": "ovhex123456-selector1"
+>> }
+>> ```
+>>
+>> Clique em `EXECUTE`{.action} para lançar a criação do seletor.<br>
 >> 
 >> > [!primary]
 >> >
@@ -483,10 +502,10 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
+>> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange na qual deseja configurar o DKIM.
+>> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".
 >> - `organizationName` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".
 >> - `selectorName` : introduza o nome do seletor que criou na etapa anterior.
->> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".
->> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange na qual deseja configurar o DKIM.
 >>
 >> *Exemplo de resultado:*
 >>
@@ -517,7 +536,7 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> - `customerRecord: "ovhex123456-selector1._domainkey.mydomain.ovh"` corresponde ao subdomínio do registro CNAME. Apenas mantemos `ovhex123456-selector1._domainkey` porque o `.mydomain.ovh` já está pré-preenchido. <br>
 >> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corresponde ao destino do registo. Adicionamos um ponto no final para pontuar o valor. Este endereço é `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api02.png){.thumbnail} <br>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api02.png){.thumbnail .w-400 .h-600} <br>
 >> 
 >> Depois de inserir os valores, clique em `Seguinte`{.action} e `Validar`{.action}.
 >>
@@ -545,10 +564,10 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
+>> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange na qual deseja ativar o DKIM.
+>> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".
 >> - `organizationName` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".
 >> - `selectorName` : introduza o nome do seletor que criou.
->> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".
->> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange na qual deseja ativar o DKIM.
 >>
 >> *Exemplo de resultado:*
 >>
@@ -578,7 +597,6 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> > [!api]
 >> >
 >> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim
->> >
 >> <br>
 >>
 >> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1". <br>
@@ -605,11 +623,21 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >>
->> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1". <br>
 >> - `domainName` : introduza o nome de domínio associado à sua plataforma E-mail Pro na qual deseja ativar o DKIM.
->> - `selectorName` : introduza o nome de um seletor que identificou na etapa anterior. (exemplo: "ovhemp123456-selector1") <br>
+>> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1". <br>
+>> - `"selectorName"` : No separador **EXAMPLE** da secção **REQUEST BODY**, introduza o nome de um seletor de cores que anotou na etapa anterior. (por exemplo: "ovhemp123456-seletor1").
 >>
->> Clique em `Execute`{.action} para lançar a criação do seletor.<br>
+>> *Exemplo de introdução:*
+>>
+>> ```console
+>> {
+>>    "autoEnableDKIM": false,
+>>    "configureDkim": false,
+>>    "selectorName": "ovhemp123456-selector1"
+>> }
+>> ```
+>>
+>> Clique em `EXECUTE`{.action} para lançar a criação do seletor.<br>
 >>
 >> > [!primary]
 >> >
@@ -639,8 +667,8 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> >
 >>
 >> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1".
->> - `selectorName` : introduza o nome do seletor que criou na etapa anterior.
 >> - `domainName` : introduza o domínio associado à sua plataforma E-mail Proe na qual deseja configurar o DKIM.
+>> - `selectorName` : introduza o nome do seletor que criou na etapa anterior.
 >>
 >> *Exemplo de resultado:*
 >>
@@ -671,7 +699,7 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> - `customerRecord: "ovhemp123456-selector1._domainkey.mydomain.ovh"` corresponde ao subdomínio do registro CNAME. Apenas mantemos `ovhemp123456-selector1._domainkey` porque o `.mydomain.ovh` já está pré-preenchido. <br>
 >> - `targetRecord: "ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corresponde ao destino do registo. Adicionamos um ponto no final para pontuar o valor. Este endereço é `ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api02.png){.thumbnail} <br>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-api02.png){.thumbnail .w-400 .h-600} <br>
 >>
 >> Depois de inserir os valores, clique em `Seguinte`{.action} e `Validar`{.action}.<br>
 >>
@@ -700,8 +728,8 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> >
 >>
 >> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1".
->> - `selectorName` : introduza o nome do seletor que criou.
 >> - `domainName` : introduza o nome de domínio associado à sua plataforma E-mail Pro na qual deseja ativar o DKIM.
+>> - `selectorName` : introduza o nome do seletor que criou.
 >>
 >> *Exemplo de resultado:*
 >>
@@ -754,10 +782,10 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >> > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
+>> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange na qual o DKIM deve estar presente. <br>
+>> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
 >> - `organizationName` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
 >> - `selectorName` : introduza o nome do seletor que criou. <br>
->> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
->> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange na qual o DKIM deve estar presente. <br>
 >>
 >> Verifique o valor `status:` no resultado:
 >>
@@ -784,8 +812,8 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >> >
 >>
 >> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1". <br>
->> - `selectorName` : introduza o nome do selecionador que criou. <br>
 >> - `domainName` : introduza o domínio associado à sua plataforma E-mail Pro na qual o DKIM deve estar presente. <br>
+>> - `selectorName` : introduza o nome do selecionador que criou. <br>
 >>
 >> Verifique o valor `status:` no resultado:
 >>
@@ -821,10 +849,10 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
+>> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange na qual deseja ativar o DKIM.<br>
+>> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".<br>
 >> - `organizationName` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".<br>
 >> - `selectorName` : introduza o nome de um selecionador existente.<br>
->> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1".<br>
->> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange na qual deseja ativar o DKIM.<br>
 >>
 > **E-mail Pro**
 >> Para ativar o DKIM num seletor, utilize a seguinte chamada API:
@@ -834,9 +862,9 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >> > @api {v1} /email/pro POST /email/pro/{service}/domain/{Name}/dkim/{selectorName}/enable
 >> >
 >>
->> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1". <br>
->> - `selectorName` : introduza o nome do selecionador que criou.<br>
 >> - `domainName` : introduza o domínio associado à sua plataforma E-mail Pro na qual o DKIM deve estar presente.<br>
+>> - `selectorName` : introduza o nome do selecionador que criou.<br>
+>> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1". <br>
 >>
 
 > [!primary]
@@ -883,10 +911,10 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/disable
 >> >
 >>
+>> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange. <br>
+>> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
 >> - `organizationName` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
 >> - `selectorName` : introduza o nome do seletor que deseja desativar. <br>
->> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
->> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange. <br>
 >>
 >> Se deseja eliminar o seletor DKIM e o seu par de chaves, utilize a seguinte chamada API:
 >>
@@ -895,10 +923,10 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >> > @api {v1} /email/exchange DELETE /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
+>> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange. <br>
+>> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
 >> - `organizationName` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou ">>private-zz11111-1". <br>
 >> - `selectorName` : introduza o nome do seletor que deseja eliminar. <br>
->> - `exchangeService` : introduza o nome da sua plataforma Exchange na forma "hosted-zz111111-1" ou "private-zz11111-1". <br>
->> - `domainName` : introduza o nome de domínio associado à sua plataforma Exchange. <br>
 >>
 > **E-mail Pro**
 >> Se deseja desativar o DKIM sem eliminar o seletor e o seu par de chaves, utilize a seguinte chamada API:
@@ -908,9 +936,9 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/disable
 >> >
 >>
->> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1". <br>
->> - `selectorName` : introduza o nome do seletor que deseja desativar. <br>
 >> - `domainName` : introduza o domínio associado à sua plataforma E-mail Pro. <br>
+>> - `selectorName` : introduza o nome do seletor que deseja desativar. <br>
+>> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1". <br>
 >>
 >> Se deseja eliminar o seletor DKIM e o seu par de chaves, utilize a seguinte chamada API:
 >>
@@ -919,9 +947,9 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >> > @api {v1} /email/pro DELETE /email/pro/{service}/domain/{Name}/dkim/{selectorName}
 >> >
 >>
->> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1". <br>
->> - `selectorName` : introduza o nome do seletor que deseja eliminar. <br>
 >> - `domainName` : introduza o domínio associado à sua plataforma E-mail Pro. <br>
+>> - `selectorName` : introduza o nome do seletor que deseja eliminar. <br>
+>> - `service` : introduza o nome da sua plataforma E-mail Pro sob a forma "emailpro-zz111111-1". <br>
 >>
 
 ### Configurar o DKIM para uma oferta de e-mail fora da sua conta OVHcloud <a name="external-dkim"></a>
@@ -940,7 +968,7 @@ Clique no separador `Zona DNS`{.action} e em `Adicionar uma entrada`{.action}. E
 
 Este registo é designado DKIM na interface, mas na verdade é um registo TXT de saída. O registo DKIM tem por objetivo facilitar a leitura dos diferentes elementos de configuração do DKIM, apresentando-os sob a forma de casas independentes.
 
-![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-add.png){.thumbnail}
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dkim-add.png){.thumbnail .w-400 .h-600}
 
 - **Subdomínio** : introduza o nome do seletor DKIM e adicione `._domainkey` em sufixo, o seu nome de domínio será adicionado automaticamente no final do processo.
 
@@ -1046,22 +1074,22 @@ Clique no separador seguinte da sua oferta.
 >> >
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >>
+>> - `domainName`: introduza o nome de domínio associado à sua plataforma Exchange. <br>
+>> - `exchangeService` : introduza o nome da sua plataforma Exchange que se apresenta sob a forma "hosted-zz111111-1" ou "private-zz111111-1". <br>
 >> - `organizationName` : introduza o nome da sua plataforma Exchange que se apresenta sob a forma "hosted-zz111111-1" ou "private-zz111111-1". <br>
 >> - `seletorName` : introduza o nome do seletor no qual pretende migrar. <br>
->> - `exchangeService` : introduza o nome da sua plataforma Exchange que se apresenta sob a forma "hosted-zz111111-1" ou "private-zz111111-1". <br>
->> - `domainName`: introduza o nome de domínio associado à sua plataforma Exchange. <br>
 >>
 > **E-mail Pro**
 >> Para migrar para o segundo seletor, utilize a seguinte chamada API:
 >>
 >> > [!api]
->> > 
+>> >
 >> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
->> > 
+>> >
 >>
+>> - `domainName` : introduza o nome de domínio associado à sua plataforma E-mail Pro na qual o DKIM deve estar presente.<br>
 >> - `service`: introduza o nome da sua plataforma E-mail Pro que se apresenta sob a forma "emailpro-zz111111-1". <br>
 >> - `seletorName` : introduza o nome do seletor no qual pretende migrar. <br>
->> - `domainName` : introduza o nome de domínio associado à sua plataforma E-mail Pro na qual o DKIM deve estar presente.<br>
 >>
 
 Depois de passar para o novo seletor, mantenha o antigo durante 7 dias antes de o eliminar e de criar um novo.
@@ -1081,13 +1109,14 @@ Clique no separador abaixo correspondente à sua oferta para verificar o estado 
 >>
 >> A partir da sua [Área de Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `Microsoft`{.action} e depois em `Exchange`{.action}. Por fim, clique no nome do serviço Exchange em questão.<br><br> Na rubrica `Domínios associados`{.action}, verifique a cor do ícone `DKIM` à direita do domínio em questão (ver a imagem abaixo).
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/red-dkim.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/red-dkim.png){.thumbnail .w-400 .h-600}
 >>
 > **E-mail Pro**
 >>
 >> A partir da sua [Área de Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `E-mails Pro`{.action} e, a seguir, no nome do serviço E-mail Pro em causa.<br><br> Na rubrica `Domínios associados`{.action}, verifique a cor do ícone `DKIM` à direita do domínio em causa (ver imagem abaixo).
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/red-dkim.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/red-dkim.png){.thumbnail .w-400 .h-600}
+>>
 
 Eis os 4 estados que têm por resultado o ícone DKIM a vermelho na sua Área de Cliente. Clique no separador correspondente ao seu código de erro:
 
@@ -1113,7 +1142,7 @@ Eis os 4 estados que têm por resultado o ícone DKIM a vermelho na sua Área de
 >> O valor do registo CNAME necessário para a configuração do DKIM não foi introduzido corretamente. Deve configurar corretamente a zona DNS do nome de domínio associado.
 >> Para configurar a zona DNS, recupere os valores do registo CNAME que se apresenta :
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-503.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-503.png){.thumbnail .w-400 .h-600}
 >>
 >> Usando o exemplo da captura acima, o domínio é "**mydomain.ovh**" e é necessário configurar o seletor "**2**". Aqui, é preciso adicionar um registo CNAME que tem por subdomínio o valor `ovhex1234567-selector2.domainkey.mydomain.ovh` e como alvo `ovhex1234567-selector2.domainkey.7890.dkim.mail.ovh.net`.<br><br>
 >> Depois de configurar a sua zona DNS, aguarde o tempo da propagação DNS (24h no máximo)
@@ -1124,7 +1153,7 @@ Eis os 4 estados que têm por resultado o ícone DKIM a vermelho na sua Área de
 >> Falta o valor do registo CNAME necessário para a configuração do DKIM. Deve configurar a zona DNS do nome de domínio associado.
 >> Para configurar a zona DNS, recupere os valores do registo CNAME que se apresenta :
 >>
->> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-503.png){.thumbnail}
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-503.png){.thumbnail .w-400 .h-600}
 >>
 >> Usando o exemplo da captura acima, o domínio é "**mydomain.ovh**" e é necessário configurar o seletor "**2**". Aqui, é preciso adicionar um registo CNAME que tem por subdomínio o valor `ovhex1234567-seletor2.domainkey.mydomain.ovh` e como alvo `ovhex1234567-selector2.domainkey.890123.dkim.mail.ovh.net`.<br><br>
 >> Depois de configurar a sua zona DNS, aguarde o tempo da propagação DNS (24h no máximo)
