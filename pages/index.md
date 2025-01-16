@@ -159,6 +159,7 @@
             + [Installing an OVHcloud SSH key](bare_metal_cloud/dedicated_servers/ovh_ssh_key)
             + [Finding the serial number of a hard disk](bare_metal_cloud/dedicated_servers/how_to_find_hdd_serial)
             + [Finalize a maintenance action performed on your dedicated server](bare_metal_cloud/dedicated_servers/intervention-support)
+            + [Network - Fixing slow downloads problems inside containers and VMs running on Proxmox VE servers with Broadcom BCM57502 NICs](bare_metal_cloud/dedicated_servers/proxmox-broadcom-slow-downloads)
         + [Tutorials](bare-metal-cloud-dedicated-servers-tutorials)
             + [How to use PuTTY for SSH connections and authentication](web_cloud/web_hosting/ssh_using_putty_on_windows)
             + [Backing up data and databases on a Storage Server](bare_metal_cloud/dedicated_servers/save_datas_database_on_storage_ds)
