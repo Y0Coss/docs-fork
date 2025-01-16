@@ -72,7 +72,7 @@ The `bus-info` line matches the PCI address (`02:00.0` shown by `lspci`).
 
 ### Step 3 - Disabling the `generic-receive-offload` parameter
 
-You can now check the status of the `generic-receive-offload` with the following command:
+You can now check the status of the `generic-receive-offload` parameter with the following command:
 
 ```sh
 ethtool --show-offload enp2s0f0np0 | grep generic-receive-offload:
