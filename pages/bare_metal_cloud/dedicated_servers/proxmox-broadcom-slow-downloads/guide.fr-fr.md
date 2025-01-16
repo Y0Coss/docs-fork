@@ -10,7 +10,7 @@ updated: 2025-01-16
 
 ## Prérequis
 
-Le problème est connu pour se produire sur les serveurs bare metal des gammes ADVANCE exécutant Proxmox VE (Virtual Environment).
+Le problème peut se produire sur les serveurs bare metal des gammes ADVANCE exécutant Proxmox VE (Virtual Environment).
 Seuls les serveurs équipés d'un contrôleur d'interface réseau Broadcom BCM57502 sont concernés.
 
 ## En pratique
