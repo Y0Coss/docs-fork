@@ -21,13 +21,13 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 
 ### Using the OVHcloud Control Panel
 
-To upgrade the service plan of your cluster, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigation bar, select your engine instance.
+To upgrade the service plan of your cluster, log in to the [OVHcloud Control Panel](/links/manager) and open your Public Cloud project. Click `Data Analysis`{.action} or `Data Streaming`{.action} in the left navigation bar, then select your engine instance.
 
-![Cluster overview](images/cluster_overview.png)
+![Cluster overview](images/cluster_overview.png){.thumbnail}
 
 Click `Change solution`{.action} and adjust the Plan of your cluster.
 
-![Change solution](images/plan_change_view.png)
+![Change solution](images/plan_change_view.png){.thumbnail}
 
 ### Using the OVHcloud API
 
@@ -56,4 +56,6 @@ We would love to help answer questions and appreciate any feedback you may have.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our analytics service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our analytics service!
+
+Join our [community of users](/links/community).
