@@ -96,7 +96,7 @@ Click on the relevant tab for your connection method:
 >>
 >> You have two options:
 >>
->> - Select a key from the drop-down menu. You need to have at least one [public key stored in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel).
+>> - Select a key from the drop-down menu. You need to have at least one [public key stored in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel) already.
 >> - Manually copy the public key string and paste it into the field `Your Public SSH key`.
 >>
 >> To find out more about this topic, consult our guides:
@@ -137,12 +137,12 @@ This email is also available in your [OVHcloud Control Panel](/links/manager) as
 
 > [!primary]
 > 
-> Your SSH client will normally block the connection at first due to a mismatch of the ECDSA fingerprint. This is normal because the rescue mode uses its own temporary SSH server. To resolve this, you need to edit the `known_hosts` file of your local `.ssh` folder.  
+> Your SSH client will normally block the connection at first due to a mismatch of the ECDSA fingerprint. This is normal because the rescue mode uses its own temporary SSH server. To resolve this, you need to edit the file `known_hosts` of your local `.ssh` folder.  
 > You have two options:
 > 
 > - **Delete the fingerprint from the file.** Your SSH client will then add a new fingerprint entry for the server when you are no longer using rescue mode. For a detailed explanation, refer to the section "Login and fingerprint" in our [SSH introduction guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 > 
-> - **Temporarily disable the fingerprint.** Open the file with a text editor and identify the fingerprint string of your server by its IP address. Add the character `#` at the start of the line. As a result, this line is now a "comment" and will be ignored by applications reading the file. Remember to revert this change before switching the `Netboot` back to the "normal" mode.
+> - **Temporarily disable the fingerprint.** Open the file `known_hosts` with a text editor and identify the fingerprint string of your server by its IP address. Add the character `#` at the start of the line. As a result, this line is now a "comment" and will be ignored by applications reading the file. Remember to revert this change before switching the `Netboot` back to the "normal" mode.
 >
 
 Click on the relevant tab for your selected connection method:
@@ -244,7 +244,7 @@ nvme0n1     259:1    0 894.3G  0 disk
 Then mount the pertinent partition accordingly:
 
 ```bash
-mount /dev/PARTITION_NAME /MOUNTPOINT/
+mount /dev/PARTITION_NAME /MOUNT_POINT/
 ```
 
 The partition to mount should be easily identifiable by the **SIZE** indicated in the table (`sda2` in the first example, `nvme1n1p3` in the second). However, in a softRAID configuration (a default `raid1` in the examples), you will need to use the identifier of the RAID volume (`mdX`).  
@@ -254,24 +254,24 @@ Using the folder name `mnt` as mount point, for the first example the `mount` co
 mount /dev/md127 /mnt/
 ```
 
-For the second example the `mount` command would be as follows:
+Command to enter for the second example:
 
 ```bash
 mount /dev/md3 /mnt/
 ```
 
 > [!warning]
-> The examples above are merely meant to illustrate a typical server configuration. The information in the output table depends on your server's hardware and its partition scheme.
+> The examples above are merely meant to illustrate the necessary steps for a basic server configuration. The information in the output table depends on your server's hardware and its partition scheme. For more information, consult the documentation of your operating system.
 > 
-> If you require professional assistance, you can find more information in the [Go further](#gofurther) section of this guide.
+> If you require professional assistance with server administration, consider the details in the [Go further](#gofurther) section of this guide.
 
-To see more details about the server's disks and partitions, enter:
+To see more technical information about the server's disks and partitions, enter:
 
 ```bash
 fdisk -l
 ```
 
-Some tasks require that disks or partitions are detached. To do this, use the unmount command:
+Some tasks may require that disks or partitions are detached. To do this, use the unmount command:
 
 ```bash
 umount /mnt
@@ -324,7 +324,7 @@ vmfs6-fuse /dev/sdbX /mnt/datastore/
 
 ///
 
-Once the mounting operation is done, you can access your files and carry out troubleshooting tasks inside the folder you have used as mount point. Example:
+Once the mounting operation is done, you can access your files and carry out troubleshooting tasks inside the folder you have defined as mount point. Example:
 
 ```bash
 cd /mnt
@@ -389,7 +389,7 @@ The result should look as shown in the following example:
 
 When you have entered your values correctly, click the button `TRY`{.action}.
 
-The field `Your Public SSH key:` will now be filled automatically with this key string when changing the `Netboot` mode.
+The field `Your Public SSH key:` will now be filled automatically with this key string when [changing the `Netboot` mode](#netboot).
 
 ///
 
