@@ -6,7 +6,7 @@ updated: 2025-01-17
 
 ## Objectif
 
-Avec le réseau privé, les serveurs dédiés compatibles bénéficient d'une bande passante minimale garantie de 1 Gbps. En cas d'activité accrue, cette bande passante peut être augmentée sur les serveurs comptabile.
+Avec le réseau privé, les serveurs dédiés compatibles bénéficient d'une bande passante minimale garantie de 1 Gbps. En cas d'activité accrue, cette bande passante peut être augmentée sur les serveurs compatibles.
 
 **Dans ce guide, nous vous expliquons comment augmenter ou diminuer facilement la bande passante privée d’un serveur dédié.**
 

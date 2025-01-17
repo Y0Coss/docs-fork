@@ -6,7 +6,7 @@ updated: 2025-01-17
 
 ## Objective
 
-With the private network, compatible dedicated servers benefit from a guaranteed minimum bandwidth of 1 Gbps. In the event of increased activity, this bandwidth can be increased on comptabile servers.
+With the private network, compatible dedicated servers benefit from a guaranteed minimum bandwidth of 1 Gbps. In the event of increased activity, this bandwidth can be increased on compatible servers.
 
 **In this guide, we explain how you can easily increase or decrease the private bandwidth of a dedicated server.**
 
