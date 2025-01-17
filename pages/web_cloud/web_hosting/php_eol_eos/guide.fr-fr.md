@@ -1,6 +1,6 @@
 ---
 title: "Annonces de fin de vie/vente/support des versions de PHP"
-excerpt: "Découvrez les dates de fin de vente/support PHP"
+excerpt: "Découvrez les principales dates de fin de vie, fin de support et fin de vente des versions de PHP pour les offres d'hébergement web OVHcloud"
 updated: 2025-01-16
 ---
 
