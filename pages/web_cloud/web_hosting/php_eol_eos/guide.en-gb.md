@@ -1,6 +1,6 @@
 ---
 title: "PHP - End-of-Sale & End-Of-Life announcements"
-excerpt: "Find out when your PHP support/sales will end"
+excerpt: "Find out the main end-of-life, end-of-support and end-of-sales dates for PHP versions for OVHcloud Web Hosting plans"
 updated: 2025-01-17
 ---
 
