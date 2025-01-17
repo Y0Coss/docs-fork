@@ -1,14 +1,14 @@
 ---
-title: "Annonces de fin de vie/vente/support des versions de PHP"
-excerpt: "Découvrez les principales dates de fin de vie, fin de support et fin de vente des versions de PHP pour les offres d'hébergement web OVHcloud"
-updated: 2025-01-16
+title: "End of Life/Sales/Support announcements for PHP Versions"
+excerpt: "Find out the main end-of-life, end-of-support and end-of-sales dates for PHP versions for OVHcloud web hosting plans"
+updated: 2025-01-17
 ---
 
 ## Objectif
 
 Les informations contenues dans ce guide concernent les versions de PHP utilisées dans le cadre des services de Web Hosting, accessibles via le réseau de Web Hosting. Ce document détaille les dates de fin de vente, de fin de vie et de fin de support pour ces versions, vous aidant à planifier efficacement vos transitions et mises à niveau.
 
-**Découvrez les principales dates de fin de vie, fin de support et fin de vente.**
+**Découvrez les principales dates de fin de vie, fin de support et fin de vente des versions PHP.**
 
 ## Prérequis
 
@@ -18,7 +18,7 @@ Les informations contenues dans ce guide concernent les versions de PHP utilisé
 
 | **Version** | **Principales dates de la communauté PHP**                         | **Version disponible chez OVHcloud** | **Date de fin de vie chez OVHcloud**                  |
 |-------------|----------------------------------------------------------------------|----------------------------------|---------------------------------------------|
-| PHP 8.4     | Fin support actif : 31/12/2026<br>Fin support de sécurité : 31/12/2028<br>Fin de vie : 30/06/2029             | Disponible                        | 30/06/2029                              |
+| PHP 8.4     | Fin support actif : 31/12/2026<br>Fin support de sécurité : 31/12/2028<br>Fin de vie : 31/12/2028             | Disponible                        | 30/06/2029                              |
 | PHP 8.3     | Fin support actif : 31/12/2025<br>Fin support de sécurité : 31/12/2027<br>Fin de vie : 31/12/2027             | Disponible                        | Date de fin de vie à déterminer         |
 | PHP 8.2     | Fin support actif : <span style="color:red;">31/12/2024</span><br>Fin support de sécurité : 31/12/2026<br>Fin de vie : 31/12/2026         | Disponible                        | Date de fin de vie à déterminer         |
 | PHP 8.1     | Fin support actif : <span style="color:red;">25/11/2023</span><br>Fin support de sécurité : <span style="color:red;">31/12/2025</span><br>Fin de vie : <span style="color:red;">31/12/2025 | Disponible                        | <span style="color:red;">Migration recommandée</span>                  |
