@@ -6,7 +6,7 @@ updated: 2025-01-17
 
 ## Objective
 
-The information contained in this guide concerns the PHP versions used as part of the Web Hosting services, accessible via the Web Hosting network. This document details the end of sales, end of life, and end of support dates for these releases, helping you to effectively plan your transitions and upgrades.
+The information contained in this guide concerns the PHP versions used as part of the Web Hosting services, accessible via the Web Hosting network. This document details the end of sale, end of life, and end of support dates for these releases, helping you to effectively plan your transitions and upgrades.
 
 **Find out about the main PHP versions' end of life, end of support and end of sales dates.**
 
