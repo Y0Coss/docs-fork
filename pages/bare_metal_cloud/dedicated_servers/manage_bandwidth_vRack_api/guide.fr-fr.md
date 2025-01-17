@@ -1,5 +1,5 @@
 ---
-title: 'Augmenter et diminuer de la bande passante privée (vRack) via l'API OVHcloud
+title: 'Augmenter et diminuer de la bande passante privée (vRack) via l'API OVHcloud'
 excerpt: 'Découvrez comment augmenter ou diminuer la bande passante privée d'un serveur dédié via l'API OVHcloud'
 updated: 2025-01-17
 ---
