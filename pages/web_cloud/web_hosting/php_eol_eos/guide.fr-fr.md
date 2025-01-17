@@ -1,5 +1,5 @@
 ---
-title: "Annonces de fin de vente/support PHP"
+title: "Annonces de fin de vie/vente/support des versions de PHP"
 excerpt: "Découvrez les dates de fin de vente/support PHP"
 updated: 2025-01-16
 ---
