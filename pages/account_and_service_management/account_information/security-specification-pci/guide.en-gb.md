@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Instance security specification
 excerpt: Public Cloud Instance security overview
-updated: 2024-05-01
+updated: 2025-01-17
 ---
 
 ## Objective

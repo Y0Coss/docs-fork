@@ -1,12 +1,13 @@
 ---
-title : Spécification de sécurité du service Block Storage
-excerpt : Présentation de la sécurité du stockage par bloc (aka Block Storage)
-mise à jour : 16/01/2025
+title: Spécifications de sécurité du service Block Storage
+excerpt: Présentation de la sécurité du stockage par bloc (Block Storage)
+updated: 2025-01-17
 ---
 
 ## Objectif
 
-En complément au [modèle de responsabilité du service Block Storage entre le client et OVHcloud](/pages/block_storage/responsabilitémodel-block-storage), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux. 
+En complément du [modèle de responsabilité du service Block Storage entre le client et OVHcloud](/pages/storage_and_backup/block_storage/responsibility-model-block-storage/), cette page a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux. 
+
 ### 1. Certifications
 
 - ISO/IEC 27001
@@ -21,8 +22,7 @@ En complément au [modèle de responsabilité du service Block Storage entre le 
 
 ### 2. Recommandations une fois le service livré
 
-Une fois que vous avez inscrit au service Public Cloud Instances, vous pouvez ajouter vos volumes Block Storage. Vous pouvez gérer les droits des utilisateurs via la section Utilisateurs et rôles dans l'espace client en suivant ce [guide](/pages/public_cloud/compute/create_and_delete_a_user).
-
+Une fois que vous disposez d'une instance Public Cloud, vous pouvez ajouter vos volumes Block Storage. Vous pouvez gérer les droits des utilisateurs via la section `Users & Roles`{.action} de [l'espace client OVHcloud](/links/manager) en suivant ce [guide](/pages/public_cloud/compute/create_and_delete_a_user).
 
 ### 3. Niveaux de service (SLA)
 
@@ -30,18 +30,17 @@ Les SLA varient entre 99,999% et 99,5% et diffèrent en fonction des offres et d
 
 ### 4. Sauvegardes
 
-Vous devez mettre en place un dispositif de sauvegarde supplémentaire basé sur vos propres outils ou à travers les options proposées par OVHcloud, comme le Second serveur, IP Fail Over, etc.
+Vous devez mettre en place un dispositif de sauvegarde supplémentaire basé sur vos propres outils ou à travers les options proposées par OVHcloud, comme un second serveur, une adresse Additional IP, etc.
 
 | **Option** | **Granularité** | **RPO** | **RTO** | **Documentation** |
 | --- | --- | --- | --- | --- |
 | Volume backup | Le volume | Dépend de la date de la dernière sauvegarde et du temps de résolution de l'incident | Dépend de la taille du volume| [Création d'une sauvegarde d'un volume](/pages/public_cloud/compute/volume-backup)|
 
-
 ### 5. Logs
 
 | **Source** | **Contenu** | **Documentation** |
 | --- | --- | --- |
-| Espace Client | Logs sur toutes les interactions réalisées via des appels API, lancés par les contacts administrateur, technique ou de facturation, sur les services auxquels ils ont accès. |- <https://api.ovh.com/console/#/me> (voir `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br>- [List of API calls done on services you have access to](https://api.ovh.com/console/#/me/api/logs/services~GET)<br>- [Get your audit logs](https://api.ovh.com/console/console/#/audit/#~me) |
+| Espace client | Logs sur toutes les interactions réalisées via des appels API, lancés par les contacts administrateur, technique ou de facturation, sur les services auxquels ils ont accès. |- <https://eu.api.ovh.com/console/#/me> (voir `/me/api/logs`)<br>- [Liste des appels API lancés avec votre compte](https://eu.api.ovh.com/console/#/me/api/logs/self~GET)<br>- [iste des appels API lancés sur des services auxquels vous avez accès](https://eu.api.ovh.com/console/#/me/api/logs/services~GET)<br>- [Obtenir vos logs d'audit](https://eu.api.ovh.com/console/console/#/audit/#~me) |
 
 ### 6. API
 
@@ -54,9 +53,9 @@ Vous devez mettre en place un dispositif de sauvegarde supplémentaire basé sur
 #### 7.1 Control Plane
 
 Depuis votre espace client, vous pouvez gérer votre service en utilisant [trois contacts différents](/pages/account_and_service_management/account_information/manage_contacts).<br>
-Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un NIC interne. 
+Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un ID interne. 
 
-Pour renforcer l'accès au compte client, nous vous recommandons d'activer [l'authentification à double facteurs](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) ou [l'authentification en SSO (Single Sign-On)](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs).
+Pour renforcer l'accès au compte client, nous vous recommandons d'activer [la double authentification (2FA)](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) ou [l'authentification en SSO (Single Sign-On)](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs).
 
 
 #### 7.2 Data Plane
@@ -65,11 +64,10 @@ Une fois que vous avez obtenu vos informations d'identification, vous êtes auto
 
 ### 8. Fonctionnalités et options disponibles lors de la livraison du service
 
-
 #### 8.1 Option HDS
 
 L’option HDS peut être activée sur le service.<br>
-La souscription au [niveau de support Business](https://www.ovhcloud.com/en/support-levels/business/)est obligatoire, afin de respecter les exigences nécessaires.
+La souscription au [niveau de support Business](/links/support-business) est obligatoire, afin de respecter les exigences nécessaires.
 
 ### 9. Réversibilité
 
@@ -77,4 +75,4 @@ Pour assurer la réversibilité du service, vous pouvez suivre la [politique de 
 
 #### 9.1 Effacement des données client
 
-Une fois votre projet Public Cloud détruit dans l’espace client OVHcloud, toutes les ressources allouées sont libérées.
+Une fois votre projet Public Cloud supprimé dans l’espace client OVHcloud, toutes les ressources allouées sont libérées.
