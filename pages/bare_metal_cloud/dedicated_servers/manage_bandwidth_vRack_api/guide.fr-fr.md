@@ -1,16 +1,20 @@
 ---
-title: 'Augmenter et diminuer la bande passante via l'API OVHcloud'
-excerpt: 'Découvrez comment augmenter ou diminuer la bande passante d'un serveur dédié via l'API OVHcloud'
+title: 'Augmenter et diminuer de la bande passante privée (vRack) via l'API OVHcloud
+excerpt: 'Découvrez comment augmenter ou diminuer la bande passante privée d'un serveur dédié via l'API OVHcloud'
 updated: 2025-01-17
 ---
 
 ## Objectif
 
-Chacun de nos serveurs dédiés dispose d’une bande passante publique minimale de 500 Mbit/s. Dans ce guide, nous vous expliquons comment augmenter ou diminuer facilement la bande passante d’un serveur dédié.
+Avec le réseau privé, les serveurs dédiés compatibles bénéficient d'une bande passante minimale garantie de 1 Gbps. En cas d'activité accrue, cette bande passante peut être augmentée sur les serveurs comptabile.
+
+**Dans ce guide, nous vous expliquons comment augmenter ou diminuer facilement la bande passante privée d’un serveur dédié.**
+
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
+- Un service [vRack](/links/network/vrack) activé dans votre compte
+- Un [serveur dédié](/links/bare-metal/bare-metal) compatible avec le vRack
 - Accès à l’[API OVHcloud](/pages/manage_and_operation/api/first-steps)
 
 ## Instructions
@@ -21,7 +25,7 @@ Utilisez l'appel API suivant pour répertorier tous les services disponibles pou
 
 > [!api]
 >
-> @api {v1} /order GET /order/upgrade/bare metalPublicBandwidth
+> @api {v1} /order GET /order/upgrade/bare metalPrivateBandwidth
 >
 
 ![bandwidth](images/bandwidth_01.png){.thumbnail}
@@ -32,18 +36,18 @@ Lister les offres disponibles et retrouver le **planCode** de votre choix avec l
 
 > [!api]
 >
-> @api {v1} /order GET /order/upgrade/bare metalPublicBandwidth/{serviceName}
+> @api {v1} /order GET /order/upgrade/bare metalPrivateBandwidth/{serviceName}
 >
 
 Renseignez les variables :
 
 - serviceName : nom de votre serveur dédié, par exemple `ns1234567.ip-203.0.113.eu`
 
-![bandwidth](images/bandwidth_02.png){.thumbnail}
+![bandwidth](images/private_bandwidth_01.png){.thumbnail}
 
 Le champ `RESPONSE` doit afficher des informations similaires à celles qui suivent :
 
-![bandwidth](images/bandwidth_02_1.png){.thumbnail}
+![bandwidth](images/private_bandwidth_02.png){.thumbnail}
 
 ### Vérifier votre commande
 
@@ -51,7 +55,7 @@ Utilisez l'appel API suivant pour obtenir un aperçu de votre commande, incluant
 
 > [!api]
 >
-> @api {v1} /order GET /order/upgrade/bare metalPublicBandwidth/{serviceName}/{planCode}
+> @api {v1} /order GET /order/upgrade/bare metalPrivateBandwidth/{serviceName}/{planCode}
 >
 
 Renseignez les variables :
@@ -60,11 +64,11 @@ Renseignez les variables :
 - serviceName : nom de votre serveur dédié
 - quantity : 1
 
-![bandwidth](images/bandwidth_03.png){.thumbnail}
+![bandwidth](images/private_bandwidth_03.png){.thumbnail}
 
 Le champ `RESPONSE` doit afficher des informations similaires à celles qui suivent :
 
-![bandwidth](images/bandwidth_03_1.png){.thumbnail}
+![bandwidth](images/private_bandwidth_04.png){.thumbnail}
 
 ### Soumettre votre commande
 
@@ -72,10 +76,10 @@ Pour envoyer officiellement la commande, utilisez l'appel API suivant :
 
 > [!api]
 >
-> @api {v1} /order POST /order/upgrade/bare metalPublicBandwidth/{serviceName}/{planCode}
+> @api {v1} /order POST /order/upgrade/bare metalPrivateBandwidth/{serviceName}/{planCode}
 >
 
-![bandwidth](images/bandwidth_04.png){.thumbnail}
+![bandwidth](images/private_bandwidth_05.png){.thumbnail}
 
 La commande sera traitée une fois que vous aurez cliqué sur `Execute`{.action}. Veuillez noter que si votre bande passante est augmentée après le 1er du mois, un prorata vous sera facturé.
 

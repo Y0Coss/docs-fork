@@ -1,16 +1,20 @@
 ---
-title: 'Upgrade and downgrade Bandwidth via the OVHcloud API'
-excerpt: 'Find out how to upgrade and downgrade the bandwidth on a Dedicated Server via the OVHcloud API'
+title: 'Upgrade and downgrade private bandwidth (vRack) via the OVHcloud API'
+excerpt: 'Find out how to upgrade and downgrade the private bandwidth on a Dedicated Server via the OVHcloud API'
 updated: 2025-01-17
 ---
 
 ## Objective
 
-Each of our dedicated servers includes a minimum public bandwidth of 500Mbps. In this guide, we explain how you can easily increase or decrease the bandwidth of a dedicated server.
+With the private network, compatible dedicated servers benefit from a guaranteed minimum bandwidth of 1 Gbps. In the event of increased activity, this bandwidth can be increased on comptabile servers.
+
+**In this guide, we explain how you can easily increase or decrease the private bandwidth of a dedicated server.**
+
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- A [vRack](/links/network/vrack) service activated in your account
+- A [Dedicated Server](/links/bare-metal/bare-metal) compatible with the vRack
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps)
 
 ## Instructions
@@ -21,7 +25,7 @@ Use the following API call to list all the available services for upgrade (or do
 
 > [!api]
 >
-> @api {v1} /order GET /order/upgrade/baremetalPublicBandwidth
+> @api {v1} /order GET /order/upgrade/baremetalPrivateBandwidth
 >
 
 ![bandwidth](images/bandwidth_01.png){.thumbnail}
@@ -32,18 +36,18 @@ List available offers and find the **planCode** of your choice with the API call
 
 > [!api]
 >
-> @api {v1} /order GET /order/upgrade/baremetalPublicBandwidth/{serviceName}
+> @api {v1} /order GET /order/upgrade/baremetalPrivateBandwidth/{serviceName}
 >
 
 Enter the variables:
 
 - serviceName: the name of your dedicated server, for example `ns1234567.ip-203.0.113.eu`
 
-![bandwidth](images/bandwidth_02.png){.thumbnail}
+![bandwidth](images/private_bandwidth_01.png){.thumbnail}
 
 The `RESPONSE` field should display information similar to the following:
 
-![bandwidth](images/bandwidth_02_1.png){.thumbnail}
+![bandwidth](images/private_bandwidth_02.png){.thumbnail}
 
 
 ### Review your order
@@ -52,7 +56,7 @@ Use the following API call for a preview of your order, including pricing:
 
 > [!api]
 >
-> @api {v1} /order GET /order/upgrade/baremetalPublicBandwidth/{serviceName}/{planCode}
+> @api {v1} /order GET /order/upgrade/baremetalPrivateBandwidth/{serviceName}/{planCode}
 >
 
 Enter the variables:
@@ -61,11 +65,11 @@ Enter the variables:
 - serviceName: the name of your dedicated server
 - quantity: 1
 
-![bandwidth](images/bandwidth_03.png){.thumbnail}
+![bandwidth](images/private_bandwidth_03.png){.thumbnail}
 
 The `RESPONSE` field should display information similar to the following:
 
-![bandwidth](images/bandwidth_03_1.png){.thumbnail}
+![bandwidth](images/private_bandwidth_04.png){.thumbnail}
 
 ### Submit your order
 
@@ -73,10 +77,10 @@ To officially submit the order, use the following API call:
 
 > [!api]
 >
-> @api {v1} /order POST /order/upgrade/baremetalPublicBandwidth/{serviceName}/{planCode}
+> @api {v1} /order POST /order/upgrade/baremetalPrivateBandwidth/{serviceName}/{planCode}
 >
 
-![bandwidth](images/bandwidth_04.png){.thumbnail}
+![bandwidth](images/private_bandwidth_05.png){.thumbnail}
 
 The order will be processed once you have clicked `Execute`{.action}. Please note that if your bandwidth is upgraded after the first of the month, you will be charged a prorated amount.
 
