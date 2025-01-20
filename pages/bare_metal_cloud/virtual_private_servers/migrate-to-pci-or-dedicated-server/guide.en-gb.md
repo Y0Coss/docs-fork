@@ -93,7 +93,7 @@ To create and configure a Public Cloud instance, follow the steps in our guide o
 
 #### Step 2.2 - Install and configure the dedicated server <a name="step2.2"></a>
 
-To prepare your dedicated server, please read our guide on "[Getting started with a dedicated server](bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)".
+To prepare your dedicated server, please read our guide on "[Getting started with a dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server)".
 
 This guide will help you in:
 
