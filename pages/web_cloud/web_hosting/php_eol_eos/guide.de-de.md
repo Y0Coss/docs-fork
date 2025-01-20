@@ -1,22 +1,22 @@
 ---
-title: "PHP - End-of-Sale & End-Of-Life announcements"
-excerpt: "Find out the main end-of-life, end-of-support and end-of-sales dates for PHP versions for OVHcloud Web Hosting plans"
+title: End-of-Life-Ankündigungen/Verkauf/Unterstützung für PHP-Versionen
+excerpt: Entdecken Sie die wichtigsten End-of-Life-, End-of-Support- und End-of-Sales-Daten der PHP Versionen für die OVHcloud Webhosting Angebote
 updated: 2025-01-17
 ---
 
-## Objective
+## Ziel
 
-The information contained in this guide concerns the PHP versions used as part of the Web Hosting services, accessible via the Web Hosting network. This document details the end of sale, end of life, and end of support dates for these releases, helping you to effectively plan your transitions and upgrades.
+Die in dieser Anleitung enthaltenen Informationen beziehen sich auf die im Rahmen der Webhosting-Dienste verwendeten PHP-Versionen, auf die über das Webhosting-Netzwerk zugegriffen werden kann. Dieses Dokument enthält Details zum End-of-Sale-Datum (*End of Sale* oder EoS), End-of-Life-Datum (*End of Life* oder EoL) sowie zum End-of-Support-Datum für diese Versionen und hilft Ihnen bei der effektiven Planung von Übergängen und Upgrades.
 
-**Find out about the main PHP versions' end of life, end of support and end of sale dates.**
+**Hier finden Sie die wichtigsten End-of-Life-, End-of-Support- und End-of-Sales-Termine für PHP-Versionen.**
 
-## Requirements
+## Voraussetzungen
 
-- An [OVHcloud Web Hosting plan](/links/web/hosting).
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) Angebot.
 
-## Instructions
+## In der praktischen Anwendung
 
-| **Version** | **Main PHP community dates**                                   | **Available version from OVHcloud** | **OVHcloud end of life date**          |
+| **Version** | **Wichtigste Daten der PHP Community**                         | **Bei OVHcloud verfügbare Version** | **End of Life bei OVHcloud**                  |
 |-------------|----------------------------------------------------------------|-------------------------------------|----------------------------------------|
 | PHP 8.4     | End of active support: 2026-12-31<br>End of security support: 2028-12-31<br>End of life: 2028-12-31 | Available                           | 2029-06-30                             |
 | PHP 8.3     | End of active support: 2025-12-31<br>End of security support: 2027-12-31<br>End of life: 2027-12-31 | Available                           | End of life date to be determined      |
@@ -33,8 +33,9 @@ The information contained in this guide concerns the PHP versions used as part o
 | PHP 5.4     | End of active support: <span style="color:red;">2014-09-14</span><br>End of security support: <span style="color:red;">2015-09-03</span><br>End of life: <span style="color:red;">2015-09-03</span> | Available                           | <span style="color:red;">Recommended migration</span> |
 | PHP 4.4     | End of active support: <span style="color:red;">2008-08-07</span><br>End of security support: <span style="color:red;">2008-08-07</span><br>End of life: <span style="color:red;">2008-08-07</span> | Not available                      | <span style="color:red;">Recommended migration</span> |
 
-## Go further
 
-If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](/links/support).
+## Weiterführende Informationen <a name="go-further"></a>
 
-Join our [community of users](/links/community).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+
+Treten Sie unserer [User Community](/links/community) bei.
