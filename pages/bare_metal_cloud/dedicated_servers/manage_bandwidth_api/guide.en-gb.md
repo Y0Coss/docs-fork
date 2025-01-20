@@ -1,12 +1,18 @@
 ---
 title: 'Upgrade and downgrade Bandwidth via the OVHcloud API'
 excerpt: 'Find out how to upgrade and downgrade the bandwidth on a Dedicated Server via the OVHcloud API'
-updated: 2025-01-17
+updated: 2025-01-20
 ---
 
 ## Objective
 
-Each of our dedicated servers includes a minimum public bandwidth of 500Mbps. In this guide, we explain how you can easily increase or decrease the bandwidth of a dedicated server.
+Each of our dedicated servers includes a minimum public bandwidth of 500Mbps. If you have specific download or mass distribution requirements, such as software updates, you can upgrade the bandwidth. And if you need less bandwidth, you can also downgrade to a lower bandwidth.
+
+**In this guide, we explain how you can easily upgrade or downgrade the bandwidth of a dedicated server.**
+
+> [!warning]
+> Please note that this option is available on most dedicated servers, but not all. Although our servers come with a minimum public bandwidth of 500Mbps, the public bandwidth upgrade option is not available on all dedicated server ranges.
+>
 
 ## Requirements
 
@@ -78,7 +84,7 @@ To officially submit the order, use the following API call:
 
 ![bandwidth](images/bandwidth_04.png){.thumbnail}
 
-The order will be processed once you have clicked `Execute`{.action}. Please note that if your bandwidth is upgraded after the first of the month, you will be charged a prorated amount.
+The order will be processed once you have clicked `Execute`{.action}. The amount displayed corresponds to your option’s first billing month, calculated on a pro rata basis for the current month.
 
 ## Go further
 
