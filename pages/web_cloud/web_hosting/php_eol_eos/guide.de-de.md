@@ -1,22 +1,22 @@
 ---
-title: End-of-Life-Ankündigungen/Verkauf/Unterstützung für PHP-Versionen
-excerpt: Entdecken Sie die wichtigsten End-of-Life-, End-of-Support- und End-of-Sales-Daten der PHP Versionen für die OVHcloud Webhosting Angebote
+title: Ankündigungen zu Lebensdauer (EOL), Verfügbarkeit (EOS) und Support für PHP-Versionen
+excerpt: Erfahren Sie hier die wichtigsten End-of-Life-, End-of-Support- und End-of-Sales-Daten der PHP Versionen für OVHcloud Webhostings
 updated: 2025-01-20
 ---
 
 ## Ziel
 
-Die in dieser Anleitung enthaltenen Informationen beziehen sich auf die im Rahmen der Webhosting-Dienste verwendeten PHP-Versionen, auf die über das Webhosting-Netzwerk zugegriffen werden kann. Dieses Dokument enthält Details zum End-of-Sale-Datum (*End of Sale* oder EoS), End-of-Life-Datum (*End of Life* oder EoL) sowie zum End-of-Support-Datum für diese Versionen und hilft Ihnen bei der effektiven Planung von Übergängen und Upgrades.
+Die in dieser Anleitung enthaltenen Informationen beziehen sich auf die im Rahmen der Webhosting-Dienste verwendeten PHP-Versionen, auf die über das Webhosting-Netzwerk zugegriffen werden kann. Dieses Dokument enthält Details zum End-of-Sale-Datum (EOS), End-of-Life-Datum (EOL) sowie zum End-of-Support-Datum für diese Versionen und hilft Ihnen bei der effektiven Planung von Übergängen und Upgrades.
 
 **Hier finden Sie die wichtigsten End-of-Life-, End-of-Support- und End-of-Sales-Termine für PHP-Versionen.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) Angebot.
+- Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 
 ## In der praktischen Anwendung
 
-| **Version** | **Wichtigste Daten der PHP Community**                         | **Bei OVHcloud verfügbare Version** | **End of Life bei OVHcloud**                  |
+| **Version** | **Wichtigste Daten der PHP Community**                         | **Bei OVHcloud verfügbare Version** | **End-of-Life bei OVHcloud**                  |
 |-------------|----------------------------------------------------------------|-------------------------------------|----------------------------------------|
 | PHP 8.4     | End of active support: 2026-12-31<br>End of security support: 2028-12-31<br>End of life: 2028-12-31 | Available                           | 2029-06-30                             |
 | PHP 8.3     | End of active support: 2025-12-31<br>End of security support: 2027-12-31<br>End of life: 2027-12-31 | Available                           | End of life date to be determined      |
