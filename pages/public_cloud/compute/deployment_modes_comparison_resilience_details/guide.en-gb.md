@@ -52,6 +52,10 @@ Services and data are protected against localised incidents thanks to effective 
 
 ![1az_region_schema](images/1az_region_schema.png){.thumbnail}
 
+> [!info]
+>
+> In a 1AZ region, your instances or other resources can be distributed across several data centres within the same availability zone. This architecture allows you to benefit from local redundancy, while remaining in the same availability zone.
+
 #### Characteristics
 
 - **Erasure Coding:** Implements mechanisms such as replication or erasure coding (depending on the service) to ensure continuity in case of hardware failures. Data is distributed across multiple servers and storage units within the availability zone to mitigate the impact of localized issues.
@@ -111,7 +115,9 @@ Architecture:
 >
 > Deploying instances in a 3AZ configuration requires manual intervention to configure each instance. Ensure that each instance is correctly configured in the respective availability zones to guarantee optimal distribution and redundancy.
 
-3-AZ Regions consist of **three independent availability zones**, each with isolated power, cooling, and network systems, providing true fault isolation. This setup ensures service availability even in the event of an entire availability zone failure. The architecture enables the replication of data and services across zones, ensuring that if one zone goes down, the others can continue to serve traffic and maintain application performance.
+Region 3-AZ consists of **three independent** and distinct availability zones, designed according to strict separation standards. Each zone has isolated power, cooling and network systems, guaranteeing true fault isolation. These zones are geographically distributed at an optimised distance (30 km) to prevent any impact of a regional disaster on several zones simultaneously.
+
+This configuration ensures high availability of services, even in the event of the complete failure of an availability zone. Thanks to this separation, the architecture enables efficient replication of data and services between zones, while maintaining low latency to guarantee optimum application performance. So if one zone fails, the others continue to process traffic and maintain performance.
 
 ![3az_region_schema](images/3az_region_schema.png){.thumbnail}
 

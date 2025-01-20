@@ -52,6 +52,10 @@ Les services et les données sont protégés contre les incidents localisés gr�
 
 ![1az_region_schema](images/1az_region_schema.png){.thumbnail}
 
+> [!info]
+>
+> Dans une région 1AZ, vos instances ou autres ressources peuvent être réparties sur plusieurs centres de données au sein de la même zone de disponibilité. Cette architecture permet de bénéficier d’une redondance locale, tout en restant dans une seule et même zone de disponibilité.
+
 #### Caractéristiques
 
 - **Erasure Coding :** met en œuvre des mécanismes tels que la réplication ou l'*erasure coding* (en fonction du service) pour assurer la continuité en cas de défaillance matérielle. Les données sont réparties sur plusieurs serveurs et unités de stockage au sein de la zone de disponibilité afin d'atténuer l'impact de problèmes localisés.
@@ -103,7 +107,7 @@ Architecture:
 
 ///
 
-### Région 3-
+### Région 3-AZ
 
 #### Infrastructure et redondance
 
@@ -111,7 +115,9 @@ Architecture:
 >
 > Le déploiement d'instances dans une configuration 3AZ nécessite une intervention manuelle pour la configuration de chaque instance. Assurez-vous de configurer correctement chaque instance dans les zones de disponibilité respectives pour garantir une répartition et une redondance optimales.
 
-La Région 3-AZ consiste en **trois zones de disponibilité indépendantes**, chacune avec des systèmes d'alimentation, de refroidissement et de réseau isolés, ce qui permet une véritable isolation des pannes. Cette configuration garantit la disponibilité des services même en cas de défaillance de l'ensemble de la zone de disponibilité. L'architecture permet la réplication des données et des services entre les zones, ce qui garantit que si une zone tombe en panne, les autres peuvent continuer à desservir le trafic et à maintenir la performance de l'application.
+La Région 3-AZ consiste en **trois zones de disponibilité indépendantes** et distinctes, conçues selon des normes strictes de séparation. Chaque zone dispose de systèmes d'alimentation, de refroidissement et de réseau isolés, garantissant une véritable isolation des pannes. Ces zones sont géographiquement réparties à une distance optimisée ( 30 km ) pour prévenir tout impact d’un sinistre régional sur plusieurs zones simultanément.
+
+Cette configuration assure une haute disponibilité des services, même en cas de défaillance complète d’une zone de disponibilité. Grâce à cette séparation, l’architecture permet une réplication efficace des données et des services entre les zones, tout en maintenant une faible latence pour garantir une performance optimale des applications. Ainsi, si une zone tombe en panne, les autres continuent à traiter le trafic et à maintenir les performances.
 
 ![3az_region_schema](images/3az_region_schema.png){.thumbnail}
 
