@@ -1,7 +1,7 @@
 ---
 title: "PHP - End-of-Sale & End-Of-Life announcements"
 excerpt: "Find out the main end-of-life, end-of-support and end-of-sales dates for PHP versions for OVHcloud Web Hosting plans"
-updated: 2025-01-17
+updated: 2025-01-20
 ---
 
 ## Objective
@@ -31,6 +31,8 @@ The information contained in this guide concerns the PHP versions used as part o
 | PHP 5.6     | End of active support: <span style="color:red;">2017-01-19</span><br>End of security support: <span style="color:red;">2018-12-31</span><br>End of life: <span style="color:red;">2018-12-31</span> | Available                           | <span style="color:red;">Recommended migration</span> |
 | PHP 5.5     | End of active support: <span style="color:red;">2015-07-10</span><br>End of security support: <span style="color:red;">2016-07-21</span><br>End of life: <span style="color:red;">2016-07-21</span> | Available                           | <span style="color:red;">Recommended migration</span> |
 | PHP 5.4     | End of active support: <span style="color:red;">2014-09-14</span><br>End of security support: <span style="color:red;">2015-09-03</span><br>End of life: <span style="color:red;">2015-09-03</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 5.3     | End of active support: <span style="color:red;">2011-06-30</span><br>End of security support: <span style="color:red;">2014-08-14</span><br>End of life: <span style="color:red;">2014-08-14</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 5.2     | End of active support: <span style="color:red;">2008-11-02</span><br>End of security support: <span style="color:red;">2011-01-06</span><br>End of life: <span style="color:red;">2011-01-06</span> | Available                           | <span style="color:red;">Recommended migration</span> |
 | PHP 4.4     | End of active support: <span style="color:red;">2008-08-07</span><br>End of security support: <span style="color:red;">2008-08-07</span><br>End of life: <span style="color:red;">2008-08-07</span> | Not available                      | <span style="color:red;">Recommended migration</span> |
 
 ## Go further
