@@ -40,19 +40,19 @@ Vous devez mettre en place un dispositif de sauvegarde supplémentaire basé sur
 
 | **Source** | **Contenu** | **Documentation** |
 | --- | --- | --- |
-| Espace client | Logs sur toutes les interactions réalisées via des appels API, lancés par les contacts administrateur, technique ou de facturation, sur les services auxquels ils ont accès. |- <https://eu.api.ovh.com/console/#/me> (voir `/me/api/logs`)<br>- [Liste des appels API lancés avec votre compte](https://eu.api.ovh.com/console/#/me/api/logs/self~GET)<br>- [iste des appels API lancés sur des services auxquels vous avez accès](https://eu.api.ovh.com/console/#/me/api/logs/services~GET)<br>- [Obtenir vos logs d'audit](https://eu.api.ovh.com/console/console/#/audit/#~me) |
+| Espace client | Logs sur toutes les interactions réalisées via des appels API, lancés par les contacts administrateur, technique ou de facturation, sur les services auxquels ils ont accès. |- <https://eu.api.ovh.com/console/#/me> (voir `/me/api/logs`)<br>- [Liste des appels API lancés avec votre compte](https://eu.api.ovh.com/console/#/me/api/logs/self~GET)<br>- [Liste des appels API lancés sur des services auxquels vous avez accès](https://eu.api.ovh.com/console/#/me/api/logs/services~GET)<br>- [Obtenir vos logs d'audit](https://eu.api.ovh.com/console/console/#/audit/#~me) |
 
 ### 6. API
 
 | **Nom** | **Capacité** | **Liens** |
 | --- | --- | --- |
-| Espace client et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de gestion du service | [Gestion des volumes dans l’API OpenStack](/pages/public_cloud/compute/starting_with_manage_volumes_openstack_api)|
+| Espace client et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de gestion du service | [Gestion des volumes dans l’API OpenStack](/pages/public_cloud/compute/starting_with_managing_volumes_openstack_api)|
 
 ### 7. Comptes - Utilisateur
 
 #### 7.1 Control Plane
 
-Depuis votre espace client, vous pouvez gérer votre service en utilisant [trois contacts différents](/pages/account_and_service_management/account_information/manage_contacts).<br>
+Depuis votre espace client, vous pouvez gérer votre service en utilisant [trois contacts différents](/pages/account_and_service_management/account_information/managing_contacts).<br>
 Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un ID interne. 
 
 Pour renforcer l'accès au compte client, nous vous recommandons d'activer [la double authentification (2FA)](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) ou [l'authentification en SSO (Single Sign-On)](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs).
@@ -71,7 +71,7 @@ La souscription au [niveau de support Business](/links/support-business) est obl
 
 ### 9. Réversibilité
 
-Pour assurer la réversibilité du service, vous pouvez suivre la [politique de réversibilité spécifique](/pages/account_and_service_management/reversibilite/03-public-cloud-reversibilite-policy) pour importer et exporter vos données en toute autonomie.
+Pour assurer la réversibilité du service, vous pouvez suivre la [politique de réversibilité spécifique](/pages/account_and_service_management/reversibility/03-public-cloud-reversibility-policy) pour importer et exporter vos données en toute autonomie.
 
 #### 9.1 Effacement des données client
 
