@@ -1,7 +1,7 @@
 ---
 title: "Activer et utiliser le mode rescue"
 excerpt: "Découvrez comment utiliser le mode customer rescue OVHcloud pour dépanner votre serveur dédié"
-updated: 2025-01-16
+updated: 2025-01-20
 ---
 
 ## Objectif
@@ -401,7 +401,8 @@ Le champ `Votre clé SSH publique :` sera maintenant rempli automatiquement avec
 
 /// details | Dépliez cette section
 
-Une fois votre serveur redémarré, vous recevrez un e-mail avec vos identifiants d'accès en mode rescue. Cet e-mail est également disponible dans votre [espace client OVHcloud](/links/manager) dès son envoi : cliquez sur le nom associé à votre identifiant client dans la barre de menu en haut à droite, puis sélectionnez `E-mails de service`{.action}.
+Une fois l'e-mail reçu vous informant de l'activation du mode rescue, vous pouvez vous connecter au système du mode rescue et accéder à votre serveur.  
+Cet e-mail est également disponible dans votre [espace client OVHcloud](/links/manager) dès son envoi. Cliquez sur le nom associé à votre identifiant client dans la barre de menu en haut à droite, puis sélectionnez `E-mails de service`{.action}.
 
 Pour utiliser l’interface graphique du mode rescue de Windows PE, vous devez télécharger et installer une console VNC ou utiliser le [module IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers) (non disponible sur tous les modèles de serveurs).
 
