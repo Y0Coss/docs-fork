@@ -1,7 +1,7 @@
 ---
 title: 'Upgrade and downgrade private bandwidth (vRack) via the OVHcloud API'
 excerpt: 'Find out how to upgrade and downgrade the private bandwidth on a Dedicated Server via the OVHcloud API'
-updated: 2025-01-17
+updated: 2025-01-20
 ---
 
 ## Objective
@@ -16,6 +16,10 @@ With the private network, compatible dedicated servers benefit from a guaranteed
 - A [vRack](/links/network/vrack) service activated in your account
 - A [Dedicated Server](/links/bare-metal/bare-metal) compatible with the vRack
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps)
+
+> [!warning]
+> Please note that this option is not available on dedicated servers located in the APAC region, which come with an unmetered 25Gbit/s private bandwidth.
+> 
 
 ## Instructions
 
@@ -82,7 +86,7 @@ To officially submit the order, use the following API call:
 
 ![bandwidth](images/private_bandwidth_05.png){.thumbnail}
 
-The order will be processed once you have clicked `Execute`{.action}. Please note that if your bandwidth is upgraded after the first of the month, you will be charged a prorated amount.
+The order will be processed once you have clicked `Execute`{.action}. The amount displayed corresponds to your option’s first billing month, calculated on a pro rata basis for the current month.
 
 ## Go further
 
