@@ -13,7 +13,7 @@ Votre site web se développe, et les ressources d'un VPS peuvent rapidement deve
 ## Prérequis
 
 - Disposer d'un accès administrateur au [VPS](/links/bare-metal/vps) source (via SSH).
-- Un [serveur dédié](/links/bare-metal/bare-metal) ou une instance [Public Cloud](/links/public-cloud/public-cloud/) dans votre compte OVHcloud.
+- Un [serveur dédié](/links/bare-metal/bare-metal) ou une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - Accès administrateur au serveur de destination (via SSH).
 - Une connaissance des bases de la gestion de serveur (Apache/Nginx, bases de données, etc.).
 
