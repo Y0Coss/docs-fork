@@ -1,17 +1,23 @@
 ---
 title: Augmenter et diminuer la bande passante via l'API OVHcloud
 excerpt: Découvrez comment augmenter ou diminuer la bande passante d'un serveur dédié via l'API OVHcloud
-updated: 2025-01-17
+updated: 2025-01-20
 ---
 
 ## Objectif
 
-Chacun de nos serveurs dédiés dispose d’une bande passante publique minimale de 500 Mbit/s. Dans ce guide, nous vous expliquons comment augmenter ou diminuer facilement la bande passante d’un serveur dédié.
+Chacun de nos serveurs dédiés comprend une bande passante publique minimale de 500 Mbps. Si vous avez des besoins spécifiques en matière de téléchargement ou de distribution de masse, comme les mises à jour de logiciels, vous pouvez augmenter la bande passante. Et si vous avez besoin de moins de bande passante, vous pouvez également passer à une bande passante inférieure.
+
+**Dans ce guide, nous expliquons comment vous pouvez facilement augmenter ou diminuer la bande passante d'un serveur dédié.**
 
 ## Prérequis
 
 - Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
 - Accès à l’[API OVHcloud](/pages/manage_and_operation/api/first-steps)
+
+> [!warning]
+> Veuillez noter que cette option est disponible sur la plupart des serveurs dédiés, mais pas sur tous. Bien que nos serveurs soient livrés avec une bande passante publique minimale de 500Mbps, l'option de mise à niveau de la bande passante publique n'est pas disponible sur toutes les gammes de serveurs dédiés.
+>
 
 ## Instructions
 
@@ -77,7 +83,7 @@ Pour envoyer officiellement la commande, utilisez l'appel API suivant :
 
 ![bandwidth](images/bandwidth_04.png){.thumbnail}
 
-La commande sera traitée une fois que vous aurez cliqué sur `Execute`{.action}. Veuillez noter que si votre bande passante est augmentée après le 1er du mois, un prorata vous sera facturé.
+La commande sera traitée une fois que vous aurez cliqué sur `Execute`{.action}. Le montant affiché correspond au premier mois de facturation de votre option, calculé au prorata temporis du mois en cours.
 
 ## Aller plus loin
 
