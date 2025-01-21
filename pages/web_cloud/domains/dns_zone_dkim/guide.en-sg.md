@@ -68,6 +68,7 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
     - [Why do we need to configure DNS servers?](#dns-and-dkim)
     - [Example of an email sent using DKIM](#example)
     - [What is a DKIM selector?](#selector)
+- [Configuring DKIM automatically for an OVHcloud Exchange or Email Pro solution](#auto-dkim)
 - [Configuring DKIM automatically for an OVHcloud email solution](#auto-dkim)
 - [Configuring DKIM manually for an OVHcloud Email or OVHcloud solution](#internal-dkim)
     - [Full DKIM configuration](#firststep)
@@ -145,6 +146,39 @@ When you send an email from **contact@mydomain.ovh**, a signature encrypted with
 The recipient **recipient@otherdomain.ovh** can decrypt this signature with the public key visible in the DNS zone of **mydomain.ovh**. The signature is created from the content of the email sent. This means that if the email is modified during transit, the signature will not match with the content and this will cause the DKIM check on the destination server to fail.
 
 ![email](/pages/assets/schemas/emails/dns-dkim-receive.gif){.thumbnail .w-400 .h-600}
+
+### Configuring DKIM automatically for an OVHcloud Exchange or Email Pro solution <a name="auto-dkim"></a>
+
+The automatic configuration of DKIM is accessible for an email solution MX Plan (included with a [Web Cloud hosting plan](/links/web/hosting)).
+
+By default, the DKIM is not activated when you add a domain name to your platform. You will need to launch the automatic configuration process via the OVHcloud Control Panel.
+
+In your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Emails`{.action} , then click on the domain name concerned. Finally, go to the `General information`{.action} tab.
+
+In the **General informations** box, you can see that the `DKIM` box is red with the **Diagnostic**.
+
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
+
+To activate the DKIM, simply click on the red `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
+
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
+
+> [!primary]
+>
+> **Emails (MX Plan)**
+>
+> If your domain name is not managed in the same OVHcloud Control Panel as your email platform, or registered outside of OVHcloud, you will see the window below:
+>
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>
+> This prompts you to enter two CNAME values in the domain name’s DNS zone, which enables you to link this domain name to the DKIM selectors of your email service. You will need to enter these values and ensure that they are propagated before clicking `Enable`{.action}.
+>
+
+The automatic activation of the DKIM takes between 30 minutes and 24 hours. To check that your DKIM is functional, simply go back to the `General information`{.action} or the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
+
+![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
+
+After 24 hours, if your `DKIM` box is red, please refer to the section [“Why does DKIM not work and appear in red in the OVHcloud Control Panel?”](#reddkim) of this guide.
 
 ### Configuring DKIM manually for an OVHcloud Email solution <a name="internal-dkim"></a>
 
@@ -374,10 +408,10 @@ If you want to disable the DKIM without removing the selectors and their key pai
 
 - `domain` : enter the domain name attached to your email service on which the DKIM must be present. <br>
 
- *Example result:*
+*Example result:*
 
- ```console
- {
+```console
+{
   "domain": "guidesteam.ovh",
   "id": 174219594,
   "function": "domain/disableDKIM",

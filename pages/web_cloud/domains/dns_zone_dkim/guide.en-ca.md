@@ -152,23 +152,46 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 
 ### Configuring DKIM automatically for an OVHcloud Exchange solution <a name="auto-dkim"></a>
 
-The automatic configuration of DKIM is accessible for the email [Exchange](/links/web/emails) solutions.
+The automatic configuration of DKIM is accessible for an email solution MX Plan (included with a [Web Cloud hosting plan](/links/web/hosting)) and the email solutions [Exchange](/links/web/emails).
 
 By default, the DKIM is not activated when you add a domain name to your platform. You will need to launch the automatic configuration process via the OVHcloud Control Panel.
 
 Click on the tab below corresponding to your solution.
 
-From your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Click on the name of the Exchange service concerned. Finally, go to the `Associated domains`{.action} tab.
+> [!tabs]
+> **E-mails (MX Plan)**
+>>
+>> In your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Emails`{.action} , then click on the domain name concerned. Finally, go to the `General information`{.action} tab.
+>>
+>> In the **General informations** box, you can see that the `DKIM` box is red with the **Diagnostic**.
+>>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
+>>
+> **Exchange**
+>>
+>> From your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Click on the name of the Exchange service concerned. Finally, go to the `Associated domains`{.action} tab.
+>>
+>> To the right of the domain name concerned, you can see that the `DKIM` box is red.
+>>
+>>![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
+>>
 
-To the right of the domain name concerned, you can see that the `DKIM` box is gray.
-
-![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
-
-To activate the DKIM, simply click on the gray `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
+To activate the DKIM, simply click on the red `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
-The automatic activation of the DKIM takes between 30 minutes and 24 hours. To check that your DKIM is functional, simply go back to the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
+> [!primary]
+>
+> **Emails (MX Plan)**
+>
+> If your domain name is not managed in the same OVHcloud Control Panel as your email platform, or registered outside of OVHcloud, you will see the window below:
+>
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>
+> This prompts you to enter two CNAME values in the domain name’s DNS zone, which enables you to link this domain name to the DKIM selectors of your email service. You will need to enter these values and ensure that they are propagated before clicking `Enable`{.action}.
+>
+
+The automatic activation of the DKIM takes between 30 minutes and 24 hours. To check that your DKIM is functional, simply go back to the `General information`{.action} or the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 

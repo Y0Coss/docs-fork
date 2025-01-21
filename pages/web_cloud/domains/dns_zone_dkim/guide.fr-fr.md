@@ -47,7 +47,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 - Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir souscrit à une des offres e-mail :
-    - E-mails (MX Plan) OVHcloud. Celle-ci est disponible via une [offre d’hébergement Web Cloud](/links/web/hosting)), un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou une offre MX Plan commandée séparément.
+    - E-mails (MX Plan) OVHcloud (disponible via une [offre d’hébergement Web Cloud](/links/web/hosting)), un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou une offre MX Plan commandée séparément.
     - [Exchange](/links/web/emails-hosted-exchange) ou [Private Exchange](/links/web/emails-hosted-exchange).
     - [E-mail Pro](/links/web/email-pro).
     - Une offre e-mail hors OVHcloud disposant du DKIM.
@@ -154,10 +154,6 @@ Le destinataire **recipient@otherdomain.ovh** pourra déchiffrer cette signature
 
 ### Configurer le DKIM automatiquement pour une offre e-mail Exchange ou E-mail Pro OVHcloud <a name="auto-dkim"></a>
 
-> [!primary]
->
-> Si vous disposez d'une offre e-mail (MX Plan) incluse avec un [hébergement Web Cloud](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandée séparément, passez à l'étape « [Configurer le DKIM manuellement pour une offre e-mail OVHcloud](#internal-dkim) ».
-
 La configuration automatique du DKIM est accessible pour les offres e-mail MX Plan (incluse avec un [hébergement Web Cloud](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandée séparément), [Exchange](/links/web/emails) et [E-mail Pro](/links/web/email-pro).
 
 Par défaut le DKIM n'est pas activé lorsque vous ajoutez un nom de domaine à votre plateforme. Vous devez donc lancer le processus de configuration automatique via l'espace client.
@@ -169,7 +165,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >>
 >> Depuis votre [espace client OVHcloud](/links/manager), dans l'onglet `Web Cloud`{.action}, cliquez sur `E-mails`{.action} puis sur le nom de domaine concerné. Enfin, allez dans l'onglet `Informations générales`{.action}.
 >>
->> Dans le cadre **Informations générales**, vous pouvez observer que la pastille `DKIM`est rouge sous la mention **Diagnostique**.
+>> Dans le cadre **Informations générales**, vous pouvez observer que la pastille `DKIM` est rouge sous la mention **Diagnostique**.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
@@ -195,13 +191,13 @@ Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM
 
 > [!primary]
 >
-> **E-mails » (MX Plan)**
+> **E-mails (MX Plan)**
 >
 > Dans le cas où votre nom de domaine n'est pas géré dans le même espace client OVHcloud que votre plateforme e-mail ou enregistré hors OVHcloud, vous obtenez la fenêtre ci-dessous :
 >
 > ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
 >
-> Celle-ci vous invite à saisir deux valeurs CNAME dans la zone DNS du nom de domaine, ce qui permet de lier ce nom de domaine aux sélecteurs DKIM de votre service e-mail. Il est nécessaire de saisir ces valeurs et de vous assurer qu'elle soit propagée avant de cliquer sur `Activer`{.action}.
+> Celle-ci vous invite à saisir deux valeurs CNAME dans la zone DNS du nom de domaine, ce qui permet de lier ce nom de domaine aux sélecteurs DKIM de votre service e-mail. Il est nécessaire de saisir ces valeurs et de vous assurer qu'elles soit propagées avant de cliquer sur `Activer`{.action}.
 >
 
 L'activation automatique du DKIM dure entre 30 minutes et 24 heures maximum. Pour vérifier que votre DKIM est fonctionnel, il vous suffit de retourner dans l'onglet `Informations générales`{.action} ou `Domaines associés`{.action} de votre plateforme e-mail et de vous assurer que la pastille `DKIM` est devenue verte.

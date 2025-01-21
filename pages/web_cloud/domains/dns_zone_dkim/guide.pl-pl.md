@@ -154,22 +154,26 @@ Odbiorca **recipient@otherdomain.ovh** będzie mógł odszyfrować ten podpis kl
 
 ### Automatyczna konfiguracja DKIM dla usługi e-mail Exchange lub E-mail Pro OVHcloud <a name="auto-dkim"></a>
 
-> [!primary]
->
-> Jeśli posiadasz ofertę "E-maile" (MX Plan) zawartą w ofercie [Hosting Web Cloud](/links/web/hosting), [bezpłatny hosting 100M](/links/web/domains-free-hosting) lub zamówioną oddzielnie, przejdź do etapu "[Skonfiguruj DKIM ręcznie dla oferty e-mail OVHcloud](#internal-dkim)".
-
-Automatyczna konfiguracja DKIM jest dostępna dla ofert e-mail [Exchange](/links/web/emails-hosted-exchange) i [E-mail Pro](/links/web/email-pro).
+Automatyczna konfiguracja DKIM jest dostępna dla ofert e-mail MX Plan (zawartych w ofercie [hosting Web Cloud](/links/web/hosting), [darmowy hosting 100M](/links/web/domains-free-hosting) lub zamówionych oddzielnie), [Exchange](/links/web/emails) i [E-mail Pro](/links/web/email-pro).
 
 Domyślnie DKIM nie jest aktywowany podczas dodawania domeny do platformy. Dlatego rozpocznij proces automatycznej konfiguracji w Panelu klienta.
 
 Kliknij na zakładkę odnoszącą się do Twojej oferty.
 
 > [!tabs]
+> **E-maile (MX Plan)**
+>>
+>> W [Panelu klienta OVHcloud](/links/manager) w zakładce `Web Cloud`{.action} kliknij `E-maile`{.action}, a następnie nazwę wybranej domeny. Następnie przejdź do zakładki `Informacje ogólne`{.action}.
+>>
+>> W polu **Informacje ogólne** można zauważyć, że przycisk `DKIM`jest czerwony pod napisem **Diagnostyka**.
+>>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
+>>
 > **Exchange**
 >>
 >> W [Panelu klienta OVHcloud](/links/manager) w zakładce `Web Cloud`{.action} kliknij na `Microsoft`{.action}, a następnie na `Exchange`{.action}. Kliknij wybraną nazwę usługi Exchange. Na koniec przejdź do zakładki `Przypisane domeny`{.action}.
 >>
->> Po prawej stronie wybranej domeny, możesz zauważyć, że przycisk `DKIM` jest szary.
+>> Po prawej stronie wybranej domeny, możesz zauważyć, że przycisk `DKIM` jest czerwony.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
@@ -177,15 +181,26 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 >>
 >> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/pl/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij `E-mails Pro`{.action}, a następnie nazwę danej usługi E-mail Pro. Na koniec przejdź do zakładki `Przypisane domeny`{.action}.
 >>
->> Po prawej stronie wybranej domeny, możesz zauważyć, że przycisk `DKIM` jest szary.
+>> Po prawej stronie wybranej domeny, możesz zauważyć, że przycisk `DKIM` jest czerwony.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 
-Aby aktywować DKIM, wystarczy kliknąć szary przycisk `DKIM`, a następnie `Zatwierdź`{.action} w oknie aktywacyjnym, które się pojawi.
+Aby aktywować DKIM, wystarczy kliknąć czerwony przycisk `DKIM`, a następnie `Zatwierdź`{.action} w oknie aktywacyjnym, które się pojawi.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
-Automatyczna aktywacja DKIM trwa od 30 minut do maksymalnie 24 godzin. Aby sprawdzić, czy DKIM działa, wróć do zakładki `Powiązane domeny`{.action} Twojej platformy e-mail i upewnij się, że przycisk `DKIM` zmienił kolor na zielony.
+> [!primary]
+>
+> **E-maile (MX Plan)**
+>
+> Jeśli Twoja nazwa domeny nie jest zarządzana w tym samym Panelu klienta OVHcloud co Twoja platforma e-mail lub zarejestrowana poza OVHcloud, wyświetli się poniższe okno:
+>
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>
+> W polu wpisz dwie wartości CNAME w strefie DNS domeny, co pozwoli na powiązanie domeny z selektorami DKIM w Twojej usłudze e-mail. Należy wprowadzić te wartości i upewnić się, że są propagowane przed kliknięciem przycisku `Aktywuj`{.action}.
+>
+
+Automatyczna aktywacja DKIM trwa od 30 minut do maksymalnie 24 godzin. Aby sprawdzić, czy DKIM działa, wróć do zakładki `Informacje ogólne`{.action} lub `Powiązane domeny`{.action} Twojej platformy e-mail i upewnij się, że przycisk `DKIM` zmienił kolor na zielony.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 

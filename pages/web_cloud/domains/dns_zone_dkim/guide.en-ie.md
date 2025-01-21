@@ -154,22 +154,26 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 
 ### Configuring DKIM automatically for an OVHcloud Exchange or Email Pro solution <a name="auto-dkim"></a>
 
-> [!primary]
->
-> If you have an email solution (MX Plan) that is included with a [Web Cloud hosting plan](/links/web/hosting), a [100M free hosting plan](/links/web/domains-free-hosting), or ordered separately, go to the [Configure the DKIM manually for an OVHcloud email solution](#internal-dkim) step.
-
-The automatic configuration of DKIM is accessible for the email solutions [Exchange](/links/web/emails) and [Email Pro](/links/web/email-pro).
+The automatic configuration of DKIM is accessible for an email solution MX Plan (included with a [Web Cloud hosting plan](/links/web/hosting), a [100M free hosting plan](/links/web/domains-free-hosting), or ordered separately), the email solutions [Exchange](/links/web/emails) and [Email Pro](/links/web/email-pro).
 
 By default, the DKIM is not activated when you add a domain name to your platform. You will need to launch the automatic configuration process via the OVHcloud Control Panel.
 
 Click on the tab below corresponding to your solution.
 
 > [!tabs]
+> **E-mails (MX Plan)**
+>>
+>> In your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Emails`{.action} , then click on the domain name concerned. Finally, go to the `General information`{.action} tab.
+>>
+>> In the **General informations** box, you can see that the `DKIM` box is red with the **Diagnostic**.
+>>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
+>>
 > **Exchange**
 >>
 >> From your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Click on the name of the Exchange service concerned. Finally, go to the `Associated domains`{.action} tab.
 >>
->> To the right of the domain name concerned, you can see that the `DKIM` box is gray.
+>> To the right of the domain name concerned, you can see that the `DKIM` box is red.
 >>
 >>![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
@@ -177,15 +181,26 @@ Click on the tab below corresponding to your solution.
 >>
 >> From your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Email Pro`{.action}, then on the name of the Email Pro service concerned. Finally, go to the `Associated domains`{.action} tab.
 >>
->> To the right of the domain name concerned, you can see that the `DKIM` box is gray.
+>> To the right of the domain name concerned, you can see that the `DKIM` box is red.
 >>
 >>![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 
-To activate the DKIM, simply click on the gray `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
+To activate the DKIM, simply click on the red `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
-The automatic activation of the DKIM takes between 30 minutes and 24 hours. To check that your DKIM is functional, simply go back to the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
+> [!primary]
+>
+> **Emails (MX Plan)**
+>
+> If your domain name is not managed in the same OVHcloud Control Panel as your email platform, or registered outside of OVHcloud, you will see the window below:
+>
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>
+> This prompts you to enter two CNAME values in the domain name’s DNS zone, which enables you to link this domain name to the DKIM selectors of your email service. You will need to enter these values and ensure that they are propagated before clicking `Enable`{.action}.
+>
+
+The automatic activation of the DKIM takes between 30 minutes and 24 hours. To check that your DKIM is functional, simply go back to the `General information`{.action} or the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 
@@ -637,6 +652,10 @@ Follow the **5 steps** below by clicking on each tab.
 >> }
 >> ```
 >>
+>> > [!primary]
+>> >
+>> > We recommend that you do this twice for each of the selectors listed above. The second selector will allow you to change the key pair when necessary. . Please refer to our use case [“How to change your DKIM key pair”](#2selectors) when you want to switch to the second selector.
+>>
 >> Click on `EXECUTE`{.action} to start creating the selector.<br>
 >>
 >> *Example of result:*
@@ -935,7 +954,6 @@ Select the email solution concerned in the following tabs:
 >> - `domainName`: Enter the domain name attached to your Email Pro service. <br>
 >> - `selectorName`: Enter the name of the selector you want to disable. <br>
 >> - `service`: Enter the name of your Email Pro service, in the format "emailpro-zz1111111-1". <br>
-
 >>
 >> If you want to delete the DKIM selector and its key pair, use the following API call:
 >>
@@ -1047,7 +1065,6 @@ Here is what you will find in the header of the received email:
 Return-Path: &lt;test-dkim@mydomain.ovh&gt;
 </code></pre>
 
-
 To retrieve the header of an email, please read our guide on [Retrieving email headers](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
 ### Use cases <a name="usecases"></a>
@@ -1124,6 +1141,7 @@ Here are the 4 states that result in a red DKIM icon in your Control Panel. Clic
 >> “**Only one DKIM selector has been initialized**”<br><br>
 >> Only a DKIM selector is present in your configuration. To allow us to switch to a new key when necessary, we are asked to configure the 2 selectors provided by the service.<br><br>
 >> To fix this error:
+>>
 >> - Check the status of the DKIM selectors to determine which one needs to be configured. Use the section “[The different states of DKIM](#dkim-status)” of this guide.
 >> - Once you have identified the selector you want to configure, follow the steps in the section “[Full DKIM configuration](#firststep)” of this guide, depending on your solution (Exchange or Email Pro), and apply it only to the selector concerned.
 >> Wait a maximum of 24 hours after configuring the selector.

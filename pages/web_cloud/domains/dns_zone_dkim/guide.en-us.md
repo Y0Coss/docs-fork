@@ -152,23 +152,46 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 
 ### Configuring DKIM automatically for an OVHcloud Exchange solution <a name="auto-dkim"></a>
 
-The automatic configuration of DKIM is accessible for the email [Exchange](/links/web/emails) solutions.
+The automatic configuration of DKIM is accessible for an email solution MX Plan (included with a [Web Cloud hosting plan](/links/web/hosting)) and the email solutions [Exchange](/links/web/emails).
 
 By default, the DKIM is not activated when you add a domain name to your platform. You will need to launch the automatic configuration process via the OVHcloud Control Panel.
 
 Click on the tab below corresponding to your solution.
 
-From your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Click on the name of the Exchange service concerned. Finally, go to the `Associated domains`{.action} tab.
+> [!tabs]
+> **E-mails (MX Plan)**
+>>
+>> In your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Emails`{.action} , then click on the domain name concerned. Finally, go to the `General information`{.action} tab.
+>>
+>> In the **General informations** box, you can see that the `DKIM` box is red with the **Diagnostic**.
+>>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
+>>
+> **Exchange**
+>>
+>> From your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Click on the name of the Exchange service concerned. Finally, go to the `Associated domains`{.action} tab.
+>>
+>> To the right of the domain name concerned, you can see that the `DKIM` box is red.
+>>
+>>![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
+>>
 
-To the right of the domain name concerned, you can see that the `DKIM` box is gray.
-
-![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
-
-To activate the DKIM, simply click on the gray `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
+To activate the DKIM, simply click on the red `DKIM` box, then `Confirm`{.action} in the activation window that pops up.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
-The automatic activation of the DKIM takes between 30 minutes and 24 hours. To check that your DKIM is functional, simply go back to the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
+> [!primary]
+>
+> **Emails (MX Plan)**
+>
+> If your domain name is not managed in the same OVHcloud Control Panel as your email platform, or registered outside of OVHcloud, you will see the window below:
+>
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>
+> This prompts you to enter two CNAME values in the domain name’s DNS zone, which enables you to link this domain name to the DKIM selectors of your email service. You will need to enter these values and ensure that they are propagated before clicking `Enable`{.action}.
+>
+
+The automatic activation of the DKIM takes between 30 minutes and 24 hours. To check that your DKIM is functional, simply go back to the `General information`{.action} or the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 
@@ -405,9 +428,9 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 >> <br>
 >>
->> - `domainName`: Enter the domain name attached to your Exchange service on which you want to enable DKIM. <br>
->> - `exchangeService`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
->> - `organisationName`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
+>> - `organisationName`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
+>> - `exchangeService`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
+>> - `domainName`: Enter the domain name attached to your Exchange platform on which you want to enable DKIM. <br>
 >>
 >> *Example result:* 
 >> ``` console
@@ -425,22 +448,12 @@ Follow the **5 steps** below by clicking on each tab.
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim
 >> 
 >>
->> - `domainName`: Enter the domain name attached to your Exchange service on which you want to enable DKIM.
->> - `exchangeService`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1".
->> - `organisationName`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1".
->> - `"selectorName"`: in the **EXAMPLE** tab of the **REQUEST BODY** section, enter the name of a selector that you noted in the previous step (example: "ovhex123456- selector1").
+>> - `organisationName`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1".
+>> - `exchangeService`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1".
+>> - `domainName`: Enter the domain name attached to your Exchange platform on which you want to enable DKIM.
+>> - `selectorName`: Enter the name of a selector you picked up in the previous step (example: "ovhex123456-selector1"). <br>
 >>
->> *Example of entry:*
->>
->> ```console
->> {
->>    "autoEnableDKIM": false,
->>    "configureDkim": false,
->>    "selectorName": "ovhex123456-selector1"
->> }
->> ```
->>
->> Click `EXECUTE`{.action} to start creating the selector.<br>
+>> Click `Execute`{.action} to start creating the selector.<br>
 >>
 >> > [!primary]
 >> >
@@ -469,10 +482,10 @@ Follow the **5 steps** below by clicking on each tab.
 >> > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
->> - `domainName`: Enter the domain name attached to your Exchange service on which you want to configure DKIM.
->> - `exchangeService`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1".
->> - `organisationName`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1".
+>> - `organisationName`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1".
 >> - `selectorName`: Enter the name of the selector you created in the previous step.
+>> - `exchangeService`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1".
+>> - `domainName`: Enter the domain name attached to your Exchange platform on which you want to configure DKIM.
 >>
 >> *Example of result:*
 >> ``` console
@@ -529,13 +542,12 @@ Follow the **5 steps** below by clicking on each tab.
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
->> - `domainName`: Enter the domain name attached to your Exchange service on which you want to enable DKIM.
->> - `exchangeService`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1".
->> - `organisationName`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1".
+>> - `organisationName`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1".
 >> - `selectorName`: Enter the name of the selector you created.
+>> - `exchangeService`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1".
+>> - `domainName`: Enter the domain name attached to your Exchange platform on which you want to enable DKIM.
 >>
 >> *Example of result:*
->>
 >> ``` console
 >> id: 108716876
 >> todoDate: "2023-05-05T11:30:11+02:00"
@@ -585,10 +597,10 @@ Select the email solution concerned in the following tabs:
 >> > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
->> - `domainName`: Enter the domain name attached to your Exchange service that the DKIM must be present on. <br>
->> - `exchangeService`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
->> - `organisationName`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
+>> - `organisationName`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
 >> - `selectorName`: Enter the name of the selector you created. <br>
+>> - `exchangeService`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
+>> - `domainName`: Enter the domain name attached to your Exchange platform that the DKIM must be present on. <br>
 >>
 >> Then look at the value `status:` in the result:
 >>
@@ -669,10 +681,10 @@ Select the email solution concerned in the following tabs:
 >> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/disable
 >> >
 >>
->> - `domainName`: Enter the domain name attached to your Exchange service. <br>
->> - `exchangeService`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
->> - `organisationName`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
+>> - `organisationName`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
 >> - `selectorName`: Enter the name of the selector you want to disable. <br>
+>> - `exchangeService`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
+>> - `domainName`: Enter the domain name attached to your Exchange platform. <br>
 >>
 >> If you want to delete the DKIM selector and its key pair, use the following API call:
 >>
@@ -681,10 +693,10 @@ Select the email solution concerned in the following tabs:
 >> > @api {v1} /email/exchange DELETE /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
->> - `domainName`: Enter the domain name attached to your Exchange service. <br>
->> - `exchangeService`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
->> - `organisationName`: Type the name of your Exchange service in the form "hosted-zz1111111-1" or ">> private-zz1111111-1". <br>
+>> - `organisationName`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz1111111-1". <br>
 >> - `selectorName`: Enter the name of the selector you want to delete. <br>
+>> - `exchangeService`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
+>> - `domainName`: Enter the domain name attached to your Exchange platform. <br>
 >>
 
 ### Configuring DKIM for an email solution outside of your OVHcloud account <a name="external-dkim"></a>
@@ -805,10 +817,10 @@ To switch to the second selector, use the following API call:
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 
-- `domainName`: Enter the domain name attached to your Exchange service. <br>
+- `organizationName`: Enter the name of your Exchange platform, which is in the form of "hosted-zz111111-1" or "private-zz11111-1". <br>
 - `selectorName`: Enter the name of the selector you want to switch to. <br>
-- `organizationName`: Enter the name of your Exchange service, which is in the form of "hosted-zz111111-1" or "private-zz11111-1". <br>
-- `exchangeService`: Enter the name of your Exchange service, which is in the form of "hosted-zz111111-1" or "private-zz11111-1". <br>
+- `exchangeService`: Enter the name of your Exchange platform, which is in the form of "hosted-zz111111-1" or "private-zz11111-1". <br>
+- `domainName`: Enter the domain name attached to your Exchange platform. <br>
 
 After switching to the new selector, keep the old one for 7 days before deleting it and creating a new one.
 

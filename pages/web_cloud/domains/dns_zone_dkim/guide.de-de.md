@@ -46,7 +46,6 @@ Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Si
 
 - Sie haben über das [OVHcloud Kundencenter](/links/manager) Zugriff auf die Konfiguration des betreffenden Domainnamens oder entsprechenden Verwaltungszugriff bei Ihrem DNS-Anbieter, wenn der Domainname nicht über OVHcloud registriert ist.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie nutzen OVHcloud [Exchange](/links/web/emails), OVHcloud [E-Mail Pro](/links/web/email-pro) oder ein externes E-Mail-Angebot mit DKIM.
 - Sie verfügen über einen der folgenden E-Mail-Dienste:
     - OVHcloud MX Plan E-Mail. Dieses ist mit den Angeboten [Webhosting](/links/web/hosting), [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder als separat bestellter Dienst verfügbar.
     - [Hosted Exchange](/links/web/emails-hosted-exchange) oder [Private Exchange](/links/web/emails-hosted-exchange).
@@ -155,24 +154,26 @@ Der Empfänger **recipient@otherdomain.ovh** kann diese Signatur mit dem in der 
 
 ### DKIM automatisch für OVHcloud Exchange oder E-Mail Pro konfigurieren <a name="auto-dkim"></a>
 
-> [!primary]
->
-> Wenn Sie OVHcloud MX Plan E-Mail verwenden, das in den Angeboten [Webhosting](/links/web/hosting), [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) enthalten ist oder als separat bestellter Dienst verfügbar.
-
-"E-Mail"-Angebot (MX Plan) haben, das in einem [Web Cloud Hosting](/links/web/hosting), einem [Free 100M Hosting](/links/web/domains-free-hosting)  oder separat bestellt wurde, gehen Sie weiter zu Schritt "[DKIM manuell einrichten für ein OVHcloud E-Mail-Angebot](#internal-dkim)".
-
-Die automatische Konfiguration des DKIM ist für die E-Mail-Angebote [Exchange](/links/web/emails) und [E-Mail Pro](/links/web/email-pro) verfügbar.
+Die automatische DKIM-Konfiguration ist verfügbar für MX Plan E-Mail-Angebote (inklusive bei [Cloud Webhosting](/links/web/hosting), [Gratis-Hosting 100M](/links/web/domains-free-hosting) oder separat bestellten), [Exchange](/links/web/emails) und [E-Mail Pro](/links/web/email-pro).
 
 Standardmäßig ist DKIM nicht aktiviert, wenn Sie Ihrem Dienst einen Domainnamen hinzufügen. Starten Sie die automatische Konfiguration über das Kundencenter.
 
 Wählen Sie Ihr E-Mail-Angebot in den folgenden Tabs aus:
 
 > [!tabs]
+> **E-Mails (MX Plan)**
+>>
+>> Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) im Tab `Web Cloud`{.action} auf `E-Mails`{.action} und dann auf die betreffende Domain. Gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}.
+>>
+>> Im Rahmen **Allgemeine Informationen** können Sie sehen, dass das `DKIM` Pad rot unter dem **Diagnose** steht.
+>>
+>> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
+>>
 > **Exchange**
 >>
 >> Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Tab `Web Cloud`{.action} auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Klicken Sie auf den Namen des betreffenden Exchange Dienstes. Gehen Sie dann auf den Tab `Assoziierte Domains`{.action}.
 >>
->> Rechts neben dem betreffenden Domainnamen sehen Sie, dass `DKIM` in grau angezeigt wird.
+>> Rechts neben dem betreffenden Domainnamen sehen Sie, dass `DKIM` in rot angezeigt wird.
 >>
 >>![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
@@ -180,15 +181,26 @@ Wählen Sie Ihr E-Mail-Angebot in den folgenden Tabs aus:
 >>
 >> Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Tab `Web Cloud`{.action} auf `E-Mail Pro`{.action} und dann auf den Namen des betreffenden E-Mail Pro Dienstes. Gehen Sie dann auf den Tab `Assoziierte Domains`{.action}.
 >>c
->> Rechts neben dem betreffenden Domainnamen sehen Sie, dass `DKIM` in grau angezeigt wird.
+>> Rechts neben dem betreffenden Domainnamen sehen Sie, dass `DKIM` in rot angezeigt wird.
 >>
 >>![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 
-Um den DKIM zu aktivieren, klicken Sie einfach auf den grauen Eintrag `DKIM` und dann im Aktivierungsfenster auf `Bestätigen`{.action}.
+Um den DKIM zu aktivieren, klicken Sie einfach auf den rot Eintrag `DKIM` und dann im Aktivierungsfenster auf `Bestätigen`{.action}.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
-Die automatische Aktivierung des DKIM dauert zwischen 30 Minuten und 24 Stunden. Um zu überprüfen, dass Ihr DKIM funktioniert, gehen Sie in den Tab `Assoziierte Domains`{.action} Ihres E-Mail-Dienstes und stellen Sie sicher, dass die Anzeige von `DKIM` grün geworden ist.
+> [!primary]
+>
+> **E-Mails (MX Plan)**
+>
+> Wenn Ihre Domain nicht im gleichen OVHcloud Kundencenter wie Ihre E-Mail-Plattform verwaltet oder außerhalb von OVHcloud registriert ist, sehen Sie das folgende Fenster:
+>
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>
+> Sie werden dann aufgefordert, zwei CNAME-Werte in die DNS-Zone der Domain einzugeben, um die Domain mit den DKIM-Selektoren Ihres E-Mail-Dienstes zu verknüpfen. Sie müssen diese Werte eingeben und sicherstellen, dass sie weitergegeben werden, bevor Sie auf `Aktivieren`{.action} klicken.
+>
+
+Die automatische Aktivierung des DKIM dauert zwischen 30 Minuten und 24 Stunden. Um zu überprüfen, dass Ihr DKIM funktioniert, gehen Sie in den Tab `Allgemeine Informationen`{.action} oder `Assoziierte Domains`{.action} Ihres E-Mail-Dienstes und stellen Sie sicher, dass die Anzeige von `DKIM` grün geworden ist.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 

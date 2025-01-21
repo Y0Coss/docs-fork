@@ -95,7 +95,7 @@ Per capire bene perché il DKIM permette di rendere sicuri gli scambi di email, 
 
 #### La macinazione <a name="hash"></a>
 
-Il principio della **funzione trituratrice** è quello di generare una **firma** (detta anche impronta) a partire da un dato d'ingresso. Il suo interesse è quello di creare all'uscita una serie di caratteri fissi, qualunque sia la quantità di dati in entrata. 
+Il principio della **funzione trituratrice** è quello di generare una **firma** (detta anche impronta) a partire da un dato d'ingresso. Il suo interesse è quello di creare all'uscita una serie di caratteri fissi, qualunque sia la quantità di dati in entrata.
 
 Nel seguente diagramma, potete constatare che l'uscita (Output) sarà sempre composta da 32 caratteri utilizzando un algoritmo di hash MD5 (**M**essage **D**igest **5**), mentre il testo di entrata (Input) può variare in base alla dimensione. La minima variazione di carattere nel dato d'ingresso cambia completamente la macinatura in uscita, rendendo la firma in uscita imprevedibile e non falsificabile. Nell'esempio che segue, il valore di input (Input) è passato nell'algoritmo di macinazione MD5 e presenta in output (Output) il suo valore di macinazione.
 
@@ -154,22 +154,26 @@ Il destinatario **recipient@otherdomain.ovh** potrà decifrare questa firma con 
 
 ### Configurare il DKIM automaticamente per un servizio di posta Exchange o Email Pro OVHcloud <a name="auto-dkim"></a>
 
-> [!primary]
->
-> Se disponi di un’offerta "Email" (MX Plan) inclusa con un [hosting Web Cloud](/links/web/hosting), un [hosting gratuito 100M](/links/web/domains-free-hosting) o ordinata separatamente, passa allo step "[Configura il DKIM manualmente per un’offerta email OVHcloud](#internal-dkim)".
-
-La configurazione automatica di DKIM è accessibile per le offerte di posta elettronica [Exchange](/links/web/emails) e [Email Pro](/links/web/email-pro).
+La configurazione automatica di DKIM è accessibile per le offerte di posta elettronica "Email" (MX Plan) OVHcloud (disponibile tramite una [offerta di hosting Web Cloud](/links/web/hosting), un [hosting gratuito 100M](/links/web/domains-free-hosting)), [Exchange](/links/web/emails) e [Email Pro](/links/web/email-pro).
 
 Di default, il DKIM non è attivo quando aggiungi un dominio alla tua piattaforma. È quindi necessario avviare il processo di configurazione automatica dallo Spazio Cliente.
 
 Clicca sulla scheda qui sotto corrispondente alla tua offerta.
 
 > [!tabs]
+> **Email (MX Plan)**
+>>
+>> Dal tuo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Email`{.action} e poi sul dominio interessato. Infine, clicca sulla scheda `Informazioni generali`{.action}.
+>>
+>> Nel riquadro **Informazioni generali**, si può osservare che la casellina `DKIM`è rossa sotto la dicitura **Diagnostica**.
+>>
+>>![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
+>>
 > **Exchange**
 >>
 >> Dal tuo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Microsoft`{.action}, poi su `Exchange`{.action}. Clicca sul nome del servizio Exchange interessato. Infine, clicca sulla scheda `Domini associati`{.action}.
 >>
->> A destra del dominio in questione, la casellina `DKIM` è grigia.
+>> A destra del dominio in questione, la casellina `DKIM` è rosso.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
@@ -177,15 +181,26 @@ Clicca sulla scheda qui sotto corrispondente alla tua offerta.
 >>
 >> Dal tuo [Spazio Cliente OVHcloud](/links/manager), nella scheda `Web Cloud`{.action}, clicca su `Email Pro`{.action}, poi sul nome del servizio Email Pro interessato. Infine, clicca sulla scheda `Domini associati`{.action}.
 >>
->> A destra del dominio in questione, la casellina `DKIM` è grigia.
+>> A destra del dominio in questione, la casellina `DKIM` è rosso.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto01.png){.thumbnail .w-400 .h-600}
 
-Per attivare il DKIM, clicca sulla casellina `DKIM` grigia e poi su `Conferma`{.action} dalla finestra di attivazione che appare.
+Per attivare il DKIM, clicca sulla casellina `DKIM` rosso e poi su `Conferma`{.action} dalla finestra di attivazione che appare.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto02.png){.thumbnail .w-400 .h-600}
 
-L'attivazione automatica del DKIM dura tra 30 minuti e 24 ore al massimo. Per verificare che la tua DKIM sia funzionante, è sufficiente tornare alla scheda `Domini associati`{.action} della tua piattaforma e assicurarti che la casellina `DKIM` sia diventata verde.
+> [!primary]
+>
+> **Email (MX Plan)**
+>
+> Se il dominio non è associato allo Spazio Cliente OVHcloud o registrato al di fuori di OVHcloud, visualizzi questa finestra:
+>
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
+>
+> Questa operazione richiede l’inserimento di due valori CNAME nella zona DNS del dominio. In questo modo, è possibile associare il dominio ai selettori DKIM del servizio di posta. Prima di cliccare su `Attiva`{.action} è necessario inserire questi valori e assicurarti che vengano propagati.
+>
+
+L'attivazione automatica del DKIM dura tra 30 minuti e 24 ore al massimo. Per verificare che la tua DKIM sia funzionante, è sufficiente tornare alla scheda `Informazioni generali`{.action} o `Domini associati`{.action} della tua piattaforma e assicurarti che la casellina `DKIM` sia diventata verde.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 
