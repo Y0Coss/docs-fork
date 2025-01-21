@@ -1,5 +1,5 @@
 ---
-title: "Automatiser le déploiement de votre site web sur votre VPS OVHcloud via GitHub Actions"
+title: "Automatiser le déploiement de votre site web sur votre VPS via GitHub Actions"
 excerpt: 'Découvrez comment déployer et automatiser le code de votre site web via GitHub Actions sur un VPS OVHcloud'
 updated: 2025-01-21
 ---
@@ -27,7 +27,7 @@ Automatiser le déploiement de votre site web sur un VPS simplifie considérable
 > [!primary]
 > Afin d'être sûr de remplir les prérequis, consultez les guides « [Installer un environnement de développement web sur un VPS ou un serveur dédié](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps) » et « [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) ».
 
-## Sommaire
+**Les étapes principales du guide seront les suivantes :**
 
 - [Configurer l'accès SSH pour GitHub Actions](#configure-ssh)
 - [Ajouter la clé privée à GitHub](#add-private-key-github)
@@ -38,7 +38,7 @@ Automatiser le déploiement de votre site web sur un VPS simplifie considérable
 
 ### Configurer l'accès SSH pour GitHub Actions <a name="configure-ssh"></a>
 
-Si votre site web existe déjà, identifiez le chemin du répertoire où il est hébergé. Par exemple, sur un VPS OVHcloud, il peut s'agir de `/var/www/html`. Conservez ce chemin pour l'utiliser lors de la configuration du pipeline GitHub Actions.
+Si votre site web existe déjà, identifiez le chemin du répertoire où il est hébergé. Par exemple, sur un VPS OVHcloud, il peut s'agir de `/var/www/html`. Conservez ce chemin en mémoire, afin de l'utiliser lors de la configuration du pipeline GitHub Actions.
 
 Pour permettre à GitHub Actions de déployer automatiquement votre site web, configurez un accès SSH sécurisé à votre VPS.
 
@@ -149,7 +149,7 @@ Pour permettre à GitHub Actions de se connecter automatiquement à votre VPS, a
 
 Pour créer un dépôt GitHub, suivez les étapes de la page « Création d'un dépôt » de la [documentation officielle de GitHub](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-new-repository){.external}.
 
-#### Initialiser le dépôt sur le VPS
+#### Initialiser le dépôt Git sur le VPS
 
 1\. Connectez-vous à votre VPS via SSH :
 
@@ -316,7 +316,7 @@ git remote set-url origin git@github.com:<github_user>/github-actions.git
 
 3\. Effectuez une modification dans le dépôt de test
 
-Ajoutez un nouveau fichier ou modifiez un fichier existant dans le répertoire de test et faites un git push sur votre dépôt GitHub :
+Ajoutez un nouveau fichier ou modifiez un fichier existant dans le répertoire de test et faites un `git push` sur votre dépôt GitHub :
 
 ```bash
 echo "Test depuis l'utilisateur numéro 2 du VPS" >> testfile.txt

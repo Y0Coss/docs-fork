@@ -1,12 +1,12 @@
 ---
-title: "Automating the deployment of your website on your OVHcloud VPS via GitHub Actions"
+title: "Automating the deployment of your website on your VPS via GitHub Actions"
 excerpt: 'Find out how to deploy and automate your website’s code via GitHub Actions on an OVHcloud VPS'
 updated: 2025-01-21
 ---
 
 ## Objective
 
-Automating the deployment of your website on a VPS greatly simplifies the management of your updates. With GitHub Actions, you can configure an automatic deployment pipeline, avoiding manual deployments. This method ensures fast and reliable deployment, while reducing the risk of human error. Whether you are a beginner or an experienced developer, this tutorial will help you set up a professional solution adapted to your needs.
+Automating the deployment of your website on a VPS greatly simplifies the management of your updates. With GitHub Actions, you can configure an automatic deployment pipeline, avoiding manual deployments. This method ensures fast and reliable deployments, while reducing the risk of human errors. Whether you are a beginner or an experienced developer, this tutorial will help you set up a professional solution adapted to your needs.
 
 **Find out how to automate the deployment of your web applications with GitHub Actions on an OVHcloud VPS.**
 
@@ -25,20 +25,20 @@ Automating the deployment of your website on a VPS greatly simplifies the manage
 ## Instructions
 
 > [!primary]
-> To ensure that you meet the requirements, please read the guides “[Installing a web development environment on a VPS or a dedicated server](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps)” and “[Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)”.
+> To ensure that you meet the requirements, please read the guides [Installing a web development environment on a VPS or a dedicated server](/pages/bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps) and [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
-## Contents
+**The main steps of the guide will be the following:**
 
 - [Configure SSH access for GitHub Actions](#configure-ssh)
-- [Add private key to GitHub](#add-private-key-github)
-- [Initialize GitHub repository (optional)](#init-github-repo)
+- [Add the private key to GitHub](#add-private-key-github)
+- [Initialize the GitHub repository (optional)](#init-github-repo)
 - [Configure GitHub Actions for Automatic Deployment](#configure-github-actions)
 - [Check and test the GitHub Actions workflow](#verify-workflow-github)
 - [Conclusion](#conclusion)
 
 ### Configure SSH access for GitHub Actions <a name="configure-ssh"></a>
 
-If your website already exists, identify the path to the directory where it is hosted. For example, on an OVHcloud VPS, it can be `/var/www/html`. Keep this path to use when configuring the Actions GitHub pipeline.
+If your website already exists, identify the path to the directory where it is hosted. For example, on an OVHcloud VPS, it can be `/var/www/html`. Keep this path in memory, so that you can use it when configuring the GitHub Actions pipeline.
 
 To allow GitHub Actions to automatically deploy your website, configure secure SSH access to your VPS.
 
@@ -52,7 +52,7 @@ ssh-keygen -t rsa -b 4096 -C "github-actions" -f /home/<user>/.ssh/deploy_key
 
 Replace `<user>` with the user configured to connect to your VPS.
 
-Press `Enter` when a passphrase is requested (leaving the passphrase empty makes it easier to automate deployment with GitHub Actions. However, this requires securing the private key by limiting it to this use and storing it securely).
+Press `Enter` when a passphrase is requested (leaving the passphrase empty makes it easier to automate deployments with GitHub Actions. However, this requires securing the private key by limiting it to this use and storing it securely).
 
 You get two files:
 
@@ -63,14 +63,14 @@ You get two files:
 
 To allow GitHub Actions to connect to your VPS via SSH and deploy your website’s code to it, add the generated public key to the list of authorized keys on the VPS.
 
-1\. Create `.ssh` directory:
+1\. Create the `.ssh` directory:
 
 ```bash
 mkdir -p /home/<user>/.ssh
 chmod 700 /home/<user>/.ssh
 ```
 
-2\. Add public key to `authorized_keys` file:
+2\. Add the public key to the `authorized_keys` file:
 
 ```bash
 cat /home/<user>/.ssh/deploy_key.pub >> /home/<user>/.ssh/authorized_keys
@@ -95,7 +95,7 @@ Once you have configured the public key on your VPS, add it to your GitHub accou
 cat /home/<user>/.ssh/deploy_key.pub
 ```
 
-Follow the steps in the “Adding a new SSH key to your account” section of [GitHub official documentation](https://docs.github.com/gb/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) to add your public key to your GitHub account.
+Follow the steps from the "Adding a new SSH key to your account" section of the [GitHub official documentation](https://docs.github.com/gb/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) to add your public key to your GitHub account.
 
 #### Configure SSH access to GitHub on the VPS
 
@@ -130,7 +130,7 @@ You should see a message like this:
 Hi <user-github>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-### Add private key to GitHub <a name="add-private-key-github"></a>
+### Add the private key to GitHub <a name="add-private-key-github"></a>
 
 Copy the content of the generated private key to your VPS with:
 
@@ -138,7 +138,7 @@ Copy the content of the generated private key to your VPS with:
 cat /home/<user>/.ssh/deploy_key
 ```
 
-To allow GitHub Actions to automatically connect to your VPS, add the private key in a secret repository on GitHub. This will allow GitHub to deploy your website via SSH. Follow the steps in the “Creating secrets for a repository” section of the [GitHub official documentation](https://docs.github.com/gb/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository).
+To allow GitHub Actions to automatically connect to your VPS, add the private key in a secret repository on GitHub. This will allow GitHub to deploy your website via SSH. Follow the steps from the "Creating secrets for a repository" section of the [GitHub official documentation](https://docs.github.com/gb/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository).
 
 ### Initialize GitHub repository (optional) <a name="init-github-repo"></a>
 
@@ -147,9 +147,9 @@ To allow GitHub Actions to automatically connect to your VPS, add the private ke
 
 #### Create a GitHub repository
 
-To create a GitHub repository, follow the steps on the Create a repository page in the [GitHub official documentation](https://docs.github.com/gb/en/repositories/creating-and-managing-repositories/creating-a-new-repository){.external}.
+To create a GitHub repository, follow the steps from the "Create a repository" page of the [GitHub official documentation](https://docs.github.com/gb/en/repositories/creating-and-managing-repositories/creating-a-new-repository){.external}.
 
-#### Initialize upload on the VPS
+#### Initialize the Git repository on the VPS
 
 1\. Log in to your VPS via SSH:
 
@@ -205,7 +205,7 @@ Create a `deploy.yml` file in the `.github/workflows` directory:
 nano .github/workflows/deploy.yml
 ```
 
-3\. Configure the `deploy.yml` file.
+3\. Configure the `deploy.yml` file
 
 To configure the deployment pipeline, add the following content to the `deploy.yml` file:
 
@@ -283,13 +283,13 @@ rsync -avz --no-times --exclude='.git*' -e "ssh -i ./deploy_key -o StrictHostKey
 
 If this command succeeds, then restart the workflow on GitHub.
 
-#### Workflow triggered with `git push`
+#### Trigger the Workflow with `git push`
 
 When a `git push` is performed on the `main` branch (or any other branch specified in your `deploy.yml` file), the workflow executes the steps defined in the `deploy.yml` file:
 
 - Cloning the GitHub repository in the GitHub Actions environment.
 - Configuring the SSH key to connect to your VPS.
-- Synchronize files from the GitHub repository to the directory `/var/www/html' on your VPS via `rsync'.
+- Synchronize files from the GitHub repository to the directory `/var/www/html` on your VPS via `rsync`.
 
 ##### **Test the workflow**
 
@@ -316,7 +316,7 @@ git remote set-url origin git@github.com:<github_user>/github-actions.git
 
 3\. Make a change in the test repository
 
-Add a new file or modify an existing file in the test directory and push a git to your GitHub repository:
+Add a new file or modify an existing file in the test directory and perform a `git push` to your GitHub repository:
 
 ```bash
 echo "Test from VPS user number 2" >> testfile.txt
@@ -325,7 +325,7 @@ git commit -m "Add a test from the VPS"
 git push origin main
 ```
 
-4\. Check workflow execution on GitHub
+4\. Check the workflow execution on GitHub
 
 Go to the `Actions` tab of your GitHub repository and check that the workflow was triggered automatically after the `git push`. If the workflow is successful, the changes will be synchronized in your website’s folder (`/var/www/html`).
 
@@ -346,7 +346,7 @@ By following this guide, you have set up an automatic deployment pipeline from y
 
 [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-[Secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+[Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
 For specialized services (SEO, development, etc.), contact the [OVHcloud partners](/links/partner).
 
