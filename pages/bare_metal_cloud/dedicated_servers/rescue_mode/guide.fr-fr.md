@@ -24,7 +24,7 @@ Le mode rescue est généralement adapté aux tâches suivantes :
 > Si vous avez des services en production sur votre serveur, le mode rescue les interrompt tant que la machine n’a pas été redémarrée en mode normal.
 > 
 
-**Ce guide vous explique comment redémarrer un serveur en mode rescue et monter des partitions.**
+**Ce guide vous explique comment redémarrer un serveur en mode rescue et comment l'utiliser.**
 
 ## Prérequis
 
