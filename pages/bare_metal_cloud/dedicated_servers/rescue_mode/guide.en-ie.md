@@ -4,6 +4,20 @@ excerpt: "Find out how to use the OVHcloud customer rescue system to troubleshoo
 updated: 2025-01-20
 ---
 
+<style>
+details>summary {
+	color:rgb(33, 153, 232) !important;
+	cursor: pointer;
+}
+details>summary::before {
+	content:'\25B6';
+	padding-right:1ch;
+}
+details[open]>summary::before {
+	content:'\25BC';
+}
+</style>
+
 ## Objective
 
 Rescue mode is a tool provided by OVHcloud that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues on your server.
@@ -82,7 +96,7 @@ Click on the relevant tab for your connection method:
 >>
 >> Click `Password authentication`{.action}.
 >>
->>![Auth method](images/rescue-mode-003.png){.thumbnail width="400"}
+>>![Auth method](images/rescue-mode-003.png){.thumbnail width="700"}
 >>
 >> The rescue mode notification email including its login details will be sent to the contact email address of your OVHcloud account. To use a different email address, enter it in the field `Send new login details to the following email address`.
 >>
@@ -92,7 +106,7 @@ Click on the relevant tab for your connection method:
 >>
 >> Click `Authentication via SSH key`{.action}.
 >>
->>![Auth method](images/rescue-mode-004.png){.thumbnail width="400"}
+>>![Auth method](images/rescue-mode-004.png){.thumbnail width="700"}
 >>
 >> You have two options:
 >>

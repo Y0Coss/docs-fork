@@ -4,6 +4,20 @@ excerpt: "Erfahren Sie hier, wie Sie das <i>Customer Rescue System</i> zur Fehle
 updated: 2025-01-20
 ---
 
+<style>
+details>summary {
+	color:rgb(33, 153, 232) !important;
+	cursor: pointer;
+}
+details>summary::before {
+	content:'\25B6';
+	padding-right:1ch;
+}
+details[open]>summary::before {
+	content:'\25BC';
+}
+</style>
+
 ## Ziel
 
 Der Rescue-Modus ist ein von OVHcloud zur Verfügung gestelltes Tool für Ihren dedizierten Server, das dazu dient, den Server mithilfe eines temporären Betriebssystems zu booten. Damit haben Sie Zugriff auf den Server und können Probleme diagnostizieren und beheben.
@@ -82,7 +96,7 @@ Klicken Sie auf den Tab für Ihre Verbindungsmethode:
 >>
 >> Klicken Sie auf `Authentifizierung per Kennwort`{.action}.
 >>
->>![Auth method](images/rescue-mode-003.png){.thumbnail width="400"}
+>>![Auth method](images/rescue-mode-003.png){.thumbnail width="700"}
 >>
 >> Die Benachrichtigung zur Aktivierung des Rescue-Modus und die zugehörigen Login-Daten werden an die Kontakt-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts gesendet. Um eine abweichende E-Mail-Adresse zu verwenden, geben Sie diese in das Feld `Zugangsdaten an folgende E-Mail-Adresse versenden` ein.
 >>
@@ -92,7 +106,7 @@ Klicken Sie auf den Tab für Ihre Verbindungsmethode:
 >>
 >> Klicken Sie auf `Authentifizierung per SSH-Schlüssel`{.action}.
 >>
->>![Auth method](images/rescue-mode-004.png){.thumbnail width="400"}
+>>![Auth method](images/rescue-mode-004.png){.thumbnail width="700"}
 >>
 >> Sie haben zwei Optionen:
 >>
@@ -434,7 +448,7 @@ Folgende Anwendungen sind bereits in diesem Modus installiert:
 
 [Ersetzen Ihrer Authentifizierungsschlüssel für den SSH-Zugriff bei Schlüsselverlust](/pages/bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
 
-[Konfiguration und Neuerstellung des Software-RAID](/pages/bare_metal_cloud/dedicated_servers/soft_raid)
+[Konfiguration und Neuerstellung des Software-RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
 [Diagnostizieren von Hardware-Problemen](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 

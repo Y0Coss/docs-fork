@@ -4,6 +4,20 @@ excerpt: "Dowiedz się, jak używać trybu customer rescue OVHcloud do rozwiązy
 updated: 2025-01-20
 ---
 
+<style>
+details>summary {
+	color:rgb(33, 153, 232) !important;
+	cursor: pointer;
+}
+details>summary::before {
+	content:'\25B6';
+	padding-right:1ch;
+}
+details[open]>summary::before {
+	content:'\25BC';
+}
+</style>
+
 ## Wprowadzenie
 
 Tryb Rescue jest dostarczanym przez OVHcloud narzędziem, które pozwala na uruchomienie tymczasowego systemu operacyjnego w celu zdiagnozowania i rozwiązania problemów z serwerem.
@@ -82,7 +96,7 @@ Kliknij zakładkę odnoszącą się do Twojego sposobu połączenia:
 >>
 >> Kliknij `Uwierzytelnianie hasłem`{.action}.
 >>
->>![Auth method](images/rescue-mode-003.png){.thumbnail width="400"}
+>>![Auth method](images/rescue-mode-003.png){.thumbnail width="700"}
 >>
 >> Powiadomienie e-mail dotyczące trybu Rescue oraz dane identyfikacyjne zostaną wysłane na adres e-mail do kontaktu przypisany do Twojego konta OVHcloud. Aby użyć innego adresu e-mail, wpisz go w polu `Wyślij dane do logowania do trybu Rescue na adres e-mail:`.
 >>
@@ -92,7 +106,7 @@ Kliknij zakładkę odnoszącą się do Twojego sposobu połączenia:
 >>
 >> Kliknij `Uwierzytelnianie za pomocą klucza SSH`{.action}.
 >>
->>![Auth method](images/rescue-mode-004.png){.thumbnail width="400"}
+>>![Auth method](images/rescue-mode-004.png){.thumbnail width="700"}
 >>
 >> Masz dwie możliwości:
 >>
@@ -114,7 +128,7 @@ Kliknij zakładkę odnoszącą się do Twojego sposobu połączenia:
 
 W kroku **Podsumowanie** kliknij `Zatwierdź`{.action}.
 
-![Summary](obrazy/tryb-rescue-005.png){.thumbnail}
+![Summary](images/rescue-mode-005.png){.thumbnail}
 
 Powinieneś mieć teraz powiadomienie dotyczące parametru `Netboot` w zakładce `Informacje ogólne`{.action}.
 
@@ -387,7 +401,7 @@ Zastąp `string` pełnym ciągiem klucza publicznego.
 
 Wynik powinien wyglądać jak poniżej:
 
-![rescue key example](obrazy/rescue-mode-008.png){.thumbnail}
+![rescue key example](images/rescue-mode-008.png){.thumbnail}
 
 Po wpisaniu prawidłowych wartości kliknij przycisk `TRY`{.action}.
 
@@ -406,7 +420,7 @@ E-mail ten będzie również dostępny w Twoim [Panelu klienta OVHcloud](/links/
 
 Aby korzystać z graficznego interfejsu trybu ratunkowego Windows PE, należy pobrać i zainstalować konsolę VNC lub skorzystać z [modułu IPMI](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers) (niedostępnego dla wszystkich modeli serwerów).
 
-![Winrescue Windows](obrazy/rescue-mode-009.png){.thumbnail}
+![Winrescue Windows](images/rescue-mode-009.png){.thumbnail}
 
 Następujące narzędzia są już zainstalowane w tym trybie:
 

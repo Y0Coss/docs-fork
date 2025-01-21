@@ -4,6 +4,20 @@ excerpt: "Scopri come utilizzare la modalità customer rescue OVHcloud per risol
 updated: 2025-01-20
 ---
 
+<style>
+details>summary {
+	color:rgb(33, 153, 232) !important;
+	cursor: pointer;
+}
+details>summary::before {
+	content:'\25B6';
+	padding-right:1ch;
+}
+details[open]>summary::before {
+	content:'\25BC';
+}
+</style>
+
 ## Obiettivo
 
 La modalità Rescue è una funzione che permette di avviare il tuo servizio su un sistema operativo temporaneo, per diagnosticare e risolvere problemi.
@@ -82,7 +96,7 @@ Clicca sulla scheda corrispondente al tuo metodo di connessione:
 >>
 >> Clicca su `Autenticazione tramite password`{.action}.
 >>
->>![Auth method](images/rescue-mode-003.png){.thumbnail width="400"}
+>>![Auth method](images/rescue-mode-003.png){.thumbnail width="700"}
 >>
 >> L’email di notifica della modalità Rescue e le relative credenziali verranno inviate all’indirizzo e-mail di contatto del tuo account OVHcloud. Per utilizzare un altro indirizzo email, inseriscilo nel campo `Ricevi le credenziali della modalità selezionata all'indirizzo email:`.
 >>
@@ -92,7 +106,7 @@ Clicca sulla scheda corrispondente al tuo metodo di connessione:
 >>
 >> Clicca su `Autenticazione tramite chiave SSH`{.action}.
 >>
->>![Auth method](images/rescue-mode-004.png){.thumbnail width="400"}
+>>![Auth method](images/rescue-mode-004.png){.thumbnail width="700"}
 >>
 >> Avete due possibilità:
 >>
@@ -437,7 +451,7 @@ Questi strumenti sono già installati in questa modalità:
 
 [Configurazione e ricostruzione del RAID software](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
-[Come diagnosticare i problemi hardware dei server](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnostic)
+[Come diagnosticare i problemi hardware dei server](/pages/bare_metal_cloud/dedicated_servers/hardware-diagnose)
 
 [Come utilizzare la console IPMI con un server dedicato](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers)
 
