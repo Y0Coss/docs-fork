@@ -4,6 +4,20 @@ excerpt: "Découvrez comment utiliser le mode customer rescue OVHcloud pour dép
 updated: 2025-01-20
 ---
 
+<style>
+details>summary {
+	color:rgb(33, 153, 232) !important;
+	cursor: pointer;
+}
+details>summary::before {
+	content:'\25B6';
+	padding-right:1ch;
+}
+details[open]>summary::before {
+	content:'\25BC';
+}
+</style>
+
 ## Objectif
 
 Le mode Rescue est un outil fourni par OVHcloud qui vous permet de démarrer sur un système d'exploitation temporaire dans le but de diagnostiquer et de résoudre les problèmes sur votre serveur.
@@ -83,7 +97,7 @@ Cliquez sur l'onglet correspondant à votre moyen de connexion :
 >>
 >> Cliquez sur `Authentification par mot de passe`{.action}.
 >>
->>![Auth method](images/rescue-mode-003.png){.thumbnail width="400"}
+>>![Auth method](images/rescue-mode-003.png){.thumbnail width="700"}
 >>
 >> L'e-mail de notification du mode rescue, ainsi que ses identifiants, seront envoyés à l'adresse e-mail de contact de votre compte OVHcloud. Pour utiliser une autre adresse e-mail, renseignez-la dans le champ `Recevoir les identifiants du mode sur l'adresse e-mail :`.
 >>
@@ -93,7 +107,7 @@ Cliquez sur l'onglet correspondant à votre moyen de connexion :
 >>
 >> Cliquez sur `Authentification par clé SSH`{.action}.
 >>
->>![Auth method](images/rescue-mode-004.png){.thumbnail width="400"}
+>>![Auth method](images/rescue-mode-004.png){.thumbnail width="700"}
 >>
 >> Vous avez deux possibilités :
 >>
