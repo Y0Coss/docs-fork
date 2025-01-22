@@ -235,7 +235,7 @@ export URI=$(terraform output -raw cluster_uri)
 
 And that's it, the OpenSearch cluster is created.
 
-## How to deploy with other engine
+## How to deploy with Another engine
 
 In this guide, we explained how to deploy an OpenSearch service but you can find example for Kafka service here and tweak them according to your needs :
 
