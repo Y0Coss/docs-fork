@@ -1,5 +1,5 @@
 ---
-title: Comment créer un savings plan
+title: Comment gérer un savings plan
 excerpt: Découvrez comment créer un savings plan avec différents outils
 updated: 2025-01-22
 ---
@@ -24,9 +24,9 @@ Ce guide a pour objectif de fournir une méthode claire et détaillée pour la c
 
 Connectez-vous à votre [espace client OVHcloud] (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et passez à la section `Public Cloud`{.action}. Après avoir sélectionné votre projet Public Cloud, cliquez sur `Savings Plans`{.action} dans la barre de navigation de gauche sous **Project Management**.
 
-### Créer un savings plan
+### Créer un avings plan
 
-Vous pouvez créer votre savings plan pour le type de ressource voulue en suivant ces étapes :
+Vous pouvez créer votre avings plan pour le type de ressource voulue en suivant ces étapes :
 
 > [!tabs]
 > Via Espace client OVHcloud
@@ -46,15 +46,15 @@ Vous pouvez créer votre savings plan pour le type de ressource voulue en suivan
 >>
 >> ![Savings Plan terms/conditions and create](images/savings_plan_terms_and_creation.png){.thumbnail}
 >>
-> Via API
+<!-- > Via API
 >> Pour créer un Savings plan, utilisez la route suivante :
 >> > [!api]
 >> >
->> > @api {v1} /services 
+>> > @api {v1} /services  -->
 > Via Terraform
 >> Pour créer un Savings plan, vous aurez besoin de 5 éléments minimum :
 >> 
->> * L'ID de votre projet public cloud.
+>> * L'ID de votre projet Public Cloud.
 >> * La flavor concerné par votre Savings Plan
 >> * La durée de votre Savings Plan ( au format standard ISO 8601 )
 >> * Le nombre de ressources concernées.
@@ -80,7 +80,7 @@ Vous pouvez créer votre savings plan pour le type de ressource voulue en suivan
 >> terraform apply
 >> ```
 >>
->> The output should look like this:
+>> Le résultat devrait ressembler à ceci :
 >> 
 >> ```console
 >> $ terraform apply
