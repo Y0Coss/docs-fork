@@ -46,11 +46,11 @@ Renseignez les variables :
 
 - serviceName : nom de votre serveur dédié, par exemple `ns1234567.ip-203.0.113.eu`
 
-![bandwidth](images/private_bandwidth_01.png){.thumbnail}
+![bandwidth](images/private-bandwidth-1.png){.thumbnail}
 
 Le champ `RESPONSE` doit afficher des informations similaires à celles qui suivent :
 
-![bandwidth](images/private_bandwidth_02.png){.thumbnail}
+![bandwidth](images/private-bandwidth-2.png){.thumbnail}
 
 ### Vérifier votre commande
 
@@ -67,11 +67,11 @@ Renseignez les variables :
 - serviceName : nom de votre serveur dédié
 - quantity : 1
 
-![bandwidth](images/private_bandwidth_03.png){.thumbnail}
+![bandwidth](images/private-bandwidth-3.png){.thumbnail}
 
 Le champ `RESPONSE` doit afficher des informations similaires à celles qui suivent :
 
-![bandwidth](images/private_bandwidth_04.png){.thumbnail}
+![bandwidth](images/private-bandwidth-4.png){.thumbnail}
 
 ### Soumettre votre commande
 
@@ -82,7 +82,7 @@ Pour soumettre officiellement votre commande, utilisez l'appel API suivant :
 > @api {v1} /order POST /order/upgrade/bare metalPrivateBandwidth/{serviceName}/{planCode}
 >
 
-![bandwidth](images/private_bandwidth_05.png){.thumbnail}
+![bandwidth](images/private-bandwidth-5.png){.thumbnail}
 
 La commande sera traitée une fois que vous aurez cliqué sur `Execute`{.action}. Le montant affiché correspond au premier mois de facturation de votre option, calculé au prorata temporis du mois en cours.
 

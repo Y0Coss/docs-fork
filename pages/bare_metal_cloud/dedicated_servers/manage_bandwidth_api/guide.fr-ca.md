@@ -81,7 +81,7 @@ Pour soumettre officiellement votre commande, utilisez l'appel API suivant :
 > @api {v1} /order POST /order/upgrade/bare metalPublicBandwidth/{serviceName}/{planCode}
 >
 
-![bandwidth](images/bandwidth_04.png){.thumbnail}
+![bandwidth](images/bandwidth_4.png){.thumbnail}
 
 La commande sera traitée une fois que vous aurez cliqué sur `Execute`{.action}. Le montant affiché correspond au premier mois de facturation de votre option, calculé au prorata temporis du mois en cours.
 

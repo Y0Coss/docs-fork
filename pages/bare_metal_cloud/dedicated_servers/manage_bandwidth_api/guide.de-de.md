@@ -81,7 +81,7 @@ To officially submit the order, use the following API call:
 > @api {v1} /order POST /order/upgrade/baremetalPublicBandwidth/{serviceName}/{planCode}
 >
 
-![bandwidth](images/bandwidth_04.png){.thumbnail}
+![bandwidth](images/bandwidth_4.png){.thumbnail}
 
 The order will be processed once you have clicked `Execute`{.action}. The amount displayed corresponds to your option’s first billing month, calculated on a pro rata basis for the current month.
 
