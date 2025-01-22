@@ -114,11 +114,17 @@ Grâce à cette combinaison, le client réalise des économies substantielles en
 
 ## Analyser vos Savings Plans grâce au dashboard
 
+> [!info]
+>
+> Cette section sera disponible en même temps que la fonctionnalité Dashboard sur votre espace client OVHcloud.
+>
+
+<!-- 
 Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Savings Plans, en fournissant des informations essentielles sur leur utilisation, leur couverture et les économies réalisées. Vous pouvez consulter des données spécifiques selon la période, le service, le type d'instance ou d'autres critères pertinents.
 
 /// details | **a. Filtres de sélection**
 
-<!-- Image avec focus sur les filtres -->
+ Image avec focus sur les filtres
 
 - **Service :** Vous permet de filtrer les données en fonction du service spécifique auquel les Savings Plans sont associés.
 - **Type d'instance :** Permet de choisir entre différents types d'instances ("instances" ou "Managed Rancher Services").
@@ -134,7 +140,7 @@ Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Sav
 > Les données des KPIs dans le dashboard des Savings Plans sont ajustées en fonction des filtres appliqués. Cela permet de personnaliser l'affichage des indicateurs pour se concentrer sur des périodes spécifiques, des services particuliers, ou des types d'instances choisis.
 >
 
-<!-- Image avec focus sur les KPIs -->
+ Image avec focus sur les KPIs
 
 - **Nombre de Savings Plans actifs :** Affiche le nombre total de Savings Plans actifs.
 - **% d'usage des Savings Plans :** Indique le pourcentage d’utilisation des Savings Plans par rapport à la capacité totale disponible.
@@ -146,7 +152,7 @@ Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Sav
 
 /// details | **c. Graphiques**
 
-<!-- Image avec focus sur le graphique -->
+ Image avec focus sur le graphique
 
 - **Légende axe Y du graphique :**
   - Si "Instances" est sélectionné, l'axe Y affichera le nombre d'instance(s) utilisées.
@@ -159,7 +165,7 @@ Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Sav
 
 /// details | **d. Tableau de suivi de consommation**
 
-<!-- Image avec focus sur la parti de suivi de consommation -->
+ Image avec focus sur la parti de suivi de consommation
 
 - **Créer un Savings Plan :** Un bouton permettant de créer un nouveau Savings Plan.
 - **Télécharger (Exporter en CSV) :** Un bouton pour exporter les données du **tableau de suivi de consommation** au format CSV, afin de les analyser en détail ou les conserver pour vos archives.
@@ -171,7 +177,7 @@ Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Sav
 
 ///
 
-Grâce à ce tableau de bord, vous pouvez suivre en temps réel l'utilisation et l'efficacité de vos Savings Plans, ajuster votre stratégie en fonction des données observées et optimiser ainsi vos coûts pour une gestion plus performante de vos ressources OVHcloud.
+Grâce à ce tableau de bord, vous pouvez suivre en temps réel l'utilisation et l'efficacité de vos Savings Plans, ajuster votre stratégie en fonction des données observées et optimiser ainsi vos coûts pour une gestion plus performante de vos ressources OVHcloud. -->
 
 ## Comprendre la facturation
 

@@ -114,11 +114,16 @@ Thanks to this combination, the customer achieves substantial savings by optimis
 
 ## Use the dashboard to analyse your Savings Plans
 
-The Savings Plans dashboard allows you to track and analyse your Savings Plans, providing essential information about their usage, coverage and savings. You can view specific data by period, service, instance type or other relevant criteria.
+> [!info]
+>
+> This section will be available at the same time as the Dashboard functionality on your OVHcloud customer space.
+>
+
+<!-- The Savings Plans dashboard allows you to track and analyse your Savings Plans, providing essential information about their usage, coverage and savings. You can view specific data by period, service, instance type or other relevant criteria.
 
 /// details | **a. Selection filters**
 
-<!-- Image avec focus sur les filtres -->
+ Image avec focus sur les filtres
 
 - **Service:** Allows you to filter the data according to the specific service with which Savings Plans are associated.
 - **Instance type:** Allows you to choose between different types of instances ("instances" or "Managed Rancher Services").
@@ -134,7 +139,7 @@ The Savings Plans dashboard allows you to track and analyse your Savings Plans, 
 > The KPI data in the Savings Plans dashboard is adjusted according to the filters applied. This makes it possible to customise the display of indicators to focus on specific periods, particular services or selected instance types.
 >
 
-<!-- Image avec focus sur les KPIs -->
+ Image avec focus sur les KPIs
 
 - **Number of active Savings Plans:** Displays the total number of active Savings Plans.
 - **% use of Savings Plans:** Indicates the percentage of Savings Plans used in relation to the total capacity available.
@@ -146,7 +151,7 @@ The Savings Plans dashboard allows you to track and analyse your Savings Plans, 
 
 /// details | **c. Graphics**
 
-<!-- Image avec focus sur le graphique -->
+ Image avec focus sur le graphique
 
 - **Y-axis legend on graph:**
   - If ‘Instances’ is selected, the Y axis will display the number of instance(s) used.
@@ -159,7 +164,7 @@ The Savings Plans dashboard allows you to track and analyse your Savings Plans, 
 
 /// details | **d. Consumption monitoring table**
 
-<!-- Image avec focus sur la parti de suivi de consommation -->
+ Image avec focus sur la parti de suivi de consommation
 
 - **Create a Savings Plan:** A button to create a new Savings Plan.
 - **Download (Export as CSV):** A button for exporting data from the **Consumption monitoring table** in CSV format, so that you can analyse it in detail or save it for your archives.
@@ -171,7 +176,7 @@ The Savings Plans dashboard allows you to track and analyse your Savings Plans, 
 
 ///
 
-Thanks to this dashboard, you can monitor the use and efficiency of your Savings Plans in real time, adjust your strategy according to the data observed and optimise your costs for more effective management of your OVHcloud resources.
+Thanks to this dashboard, you can monitor the use and efficiency of your Savings Plans in real time, adjust your strategy according to the data observed and optimise your costs for more effective management of your OVHcloud resources. -->
 
 ## Understanding billing
 
