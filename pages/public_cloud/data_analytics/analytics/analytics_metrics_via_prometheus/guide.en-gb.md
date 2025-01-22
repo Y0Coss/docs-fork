@@ -6,7 +6,7 @@ updated: 2025-01-20
 
 ## Objective
 
-Analytics service allow you to export service metrics using Prometheus.
+Analytics services allow you to export service metrics using Prometheus.
 
 **This guide explains how to setup a Prometheus exporter for your Analytics service so that a Prometheus server can collect metrics.**
 
@@ -20,7 +20,7 @@ Analytics service allow you to export service metrics using Prometheus.
 
 ### Enable the Prometheus exporter for your service
 
-You can enable a Prometheus exporter for your service using the API endpoint:
+You can enable a Prometheus exporter for your service using this API endpoint:
 
 > [!api]
 >
@@ -83,4 +83,6 @@ We would love to help answer questions and appreciate any feedback you may have.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our Analytics service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our Analytics service!
+
+Join our [community of users](/links/community).
