@@ -184,29 +184,43 @@ To better understand your billing once you subscribe to a Savings Plan, here is 
 
 /// details | Billing for Savings Plan instances
 
-<!-- Image facture avec deux lignes  -->
-
 - **a. Billing for your Savings Plans**
 When you subscribe to an Savings Plan, you agree to pay a fixed amount for a certain number of instances over a specified period. However, the instances covered by this plan are not itemised individually on your bill.
 On your invoice, you will only see the total amount corresponding to the Savings Plan, and not the specific instances it covers. This simplifies invoicing by showing only one line grouping together all the instances covered by your commitment, without the need to detail each instance.
+
+![Billing instances Savings Plan](images/billings_savings_plan_instances_svp.png){.thumbnail}
+
+> [!info]
+>
+> A pro rata will be applied if your Savings Plan starts during the month.
+>
 
 - **b. Billing for your additional instances**
 Additional instances, i.e. those not covered by your Savings Plan, are billed on an hourly basis, as with standard billing.
 For example, if you use 10 Gen3 instances for 10 hours during the month, you will be billed on a per-hour basis. This gives an invoice for 100 hours (10 instances x 10 hours), billed at the standard hourly rate, in addition to the Savings Plan line.
 
+![Billing instances per hour](images/billings_savings_plan_instances_hours.png){.thumbnail}
+
 ///
 
 /// details | Billing for Savings Plan Rancher
-
-<!-- Image facture avec deux lignes  -->
 
 - **a. Billing for your Savings Plans**
 When you subscribe to an Savings Plan, you agree to pay a fixed amount for a certain number of vCPUs over a specified period. However, the vCPUs covered by this plan are not itemised individually on your bill.
 On your invoice, you will only see the total amount corresponding to the Savings Plan. You won't have details of the different Rancher with the number of vCPUs that cover them belonging to the savings plan.
 
+![Billing Rancher Savings Plan](images/billings_savings_plan_rancher_svp.png){.thumbnail}
+
+> [!info]
+>
+> A pro rata will be applied if your Savings Plan starts during the month.
+>
+
 - **b. Billing for your additional vCPUs**
 Additional vCPUs, i.e. those not covered by your Savings Plan, are billed on an hourly basis, as with standard billing.
 For example, if you use 10 vCPUs for 10 hours during the month, you will be billed on a per-hour basis. This gives an invoice for 100 hours (10 vCPUs x 10 hours), billed at the standard hourly rate, in addition to the Savings Plan line.
+
+![Billing rancher per hour](images/billings_savings_plan_rancher_hours.png){.thumbnail}
 
 > [!info]
 >

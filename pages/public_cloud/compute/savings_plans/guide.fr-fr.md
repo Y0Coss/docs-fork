@@ -184,29 +184,43 @@ Pour mieux comprendre votre facturation une fois que vous souscrivez à un Savin
 
 /// details | Facturation de Savings Plan pour les instances
 
-<!-- Image facture avec deux lignes  -->
-
 - **a. Facturation de vos Savings Plans**
 Lorsque vous souscrivez à un Savings Plan, vous vous engagez à payer un montant fixe pour un certain nombre d'instances sur une période déterminée. Cependant, les instances couvertes par ce plan ne sont pas détaillées individuellement sur votre facture.
 Sur votre facture, vous ne verrez que le montant total correspondant au Savings Plan, et non les instances spécifiques qu'il couvre. Cela permet de simplifier la facturation en ne montrant qu'une ligne regroupant l'ensemble des instances couvertes par votre engagement, sans besoin de détailler chaque instance.
+
+![Facturation d'un Savings Plan pour des instances](images/billings_savings_plan_instances_svp.png){.thumbnail}
+
+> [!info]
+>
+> Un prorata sera appliqué si votre Savings Plan débute en cours de mois.
+>
 
 - **b. Facturation de vos instances supplémentaires**
 Les instances supplémentaires, c'est-à-dire celles qui ne sont pas couvertes par votre Savings Plan, sont facturées à l'heure, comme pour une facturation classique.
 Par exemple, si vous utilisez 10 instances Gen3 pendant 10 heures au cours du mois, la facturation s’effectuera sur la base de l’heure consommée. Cela donne une facture de 100 heures (10 instances x 10 heures), facturées au tarif horaire standard, en plus de la ligne du Savings Plan.
 
+![Facturation pour des instances à l'heure](images/billings_savings_plan_instances_hours.png){.thumbnail}
+
 ///
 
 /// details | Facturation de Savings Plan pour Rancher
-
-<!-- Image facture avec deux lignes -->
 
 - **a. Facturation de vos Savings Plans**
 Lorsque vous souscrivez à un Savings Plan, vous vous engagez à payer un montant fixe pour un certain nombre de vCPUs sur une période déterminée. Cependant, les vCPUs couverts par ce plan ne sont pas détaillés individuellement sur votre facture.
 Sur votre facture, vous ne verrez que le montant total correspondant au Savings Plans. Vous n'aurez pas le détail des différents Rancher avec le nombre de vCPUs qui les couvrent appartenant au Savings Plan.
 
+![Facturation d'un Savings Plan pour des VCPu](images/billings_savings_plan_rancher_svp.png){.thumbnail}
+
+> [!info]
+>
+> Un prorata sera appliqué si votre Savings Plan débute en cours de mois.
+>
+
 - **b. Facturation de vos vCPUs supplémentaires**
 Les vCPUs supplémentaires, c'est-à-dire ceux qui ne sont pas couverts par votre Savings Plan, sont facturés sur une base horaire, comme pour la facturation standard.
 Par exemple, si vous utilisez 10 vCPUs pendant 10 heures au cours du mois, vous serez facturé à l'heure. Cela donne une facture pour 100 heures (10 vCPUs x 10 heures), facturées au taux horaire standard, en plus de la ligne du Savings Plan.
+
+![Facturation pour des VCPu à l'heure.](images/billings_savings_plan_rancher_hours.png){.thumbnail}
 
 > [!info]
 >
