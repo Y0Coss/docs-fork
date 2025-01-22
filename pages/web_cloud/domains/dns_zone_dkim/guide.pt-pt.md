@@ -1,7 +1,7 @@
 ---
 title: "Melhorar a segurança dos e-mails através do registo DKIM"
 excerpt: "Saiba como configurar um registo DKIM no seu domínio e na sua plataforma de e-mail OVHcloud"
-updated: 2024-07-05
+updated: 2025-01-22
 ---
 
 <style>
@@ -165,7 +165,7 @@ Clique no separador seguinte da sua oferta.
 >>
 >> A partir do seu [Área de Cliente OVHcloud](/links/manager), no separador `Web Cloud`{.action}, clique em `E-mails`{.action} e, a seguir, no domínio em causa. Por fim, aceda ao separador `Informações gerais`{.action}.
 >>
->> No quadro **Informações gerais**, pode verificar que a etiqueta `DKIM`é vermelha sob a menção **Diagnóstico**.
+>> No quadro **Informações gerais**, pode verificar que a etiqueta `DKIM` é vermelha sob a menção **Diagnóstico**.
 >>
 >> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto01.png){.thumbnail .w-400 .h-600}
 >>
@@ -197,10 +197,10 @@ Para ativar o DKIM, basta clicar na etiqueta `DKIM` vermelho e, a seguir, em `Va
 >
 > ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/dkim-auto02.png){.thumbnail .w-400 .h-600}
 >
-> Aqui, será solicitado que introduza dois valores CNAME na zona DNS do domínio, o que permite associar este domínio aos seletores DKIM do seu serviço de e-mail. Deve introduzir estes valores e certificar-se de que estes são propagados antes de clicar em "Ativar" {.action}.
+> Aqui, será solicitado que introduza dois valores CNAME na zona DNS do domínio, o que permite associar este domínio aos seletores DKIM do seu serviço de e-mail. Deve introduzir estes valores e certificar-se de que estes são propagados antes de clicar em `Ativar`{.action}.
 >
 
-A ativação automática do DKIM dura entre 30 minutos e 24 horas, no máximo. Para verificar se o seu DKIM está funcional, basta voltar ao separador `Informações gerais`{.action} ou`Domínios associados`{.action} da sua plataforma de e-mail e certificar-se de que a etiqueta `DKIM` ficou verde.
+A ativação automática do DKIM dura entre 30 minutos e 24 horas, no máximo. Para verificar se o seu DKIM está funcional, basta voltar ao separador `Informações gerais`{.action} ou `Domínios associados`{.action} da sua plataforma de e-mail e certificar-se de que a etiqueta `DKIM` ficou verde.
 
 ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/associated-domains/dkim-auto03.png){.thumbnail .w-400 .h-600}
 

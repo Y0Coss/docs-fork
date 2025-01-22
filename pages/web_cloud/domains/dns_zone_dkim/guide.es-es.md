@@ -1,7 +1,7 @@
 ---
 title: Mejorar la seguridad del correo electrónico mediante un registro DKIM
 excerpt: Cómo configurar un registro DKIM en un dominio y una plataforma de correo electrónico de OVHcloud
-updated: 2024-07-05
+updated: 2025-01-22
 ---
 
 <style>
@@ -163,7 +163,7 @@ Haga clic en la pestaña que corresponde a su producto.
 > [!tabs]
 > **Correo electrónico (MX Plan)**
 >>
->> Desde su [área de cliente de OVHcloud](/links/manager), en la pestaña `Web Cloud`{.action}, haga clic en `E-mails`{.action} y seleccione el dominio correspondiente. Por último, acceda a la pestaña `Información general`{.action}.
+>> Desde su [área de cliente de OVHcloud](/links/manager), en la pestaña `Web Cloud`{.action}, haga clic en `Dirrecciones de correo`{.action} y seleccione el dominio correspondiente. Por último, acceda a la pestaña `Información general`{.action}.
 >>
 >> En el cuadro **Información general**, puede observar que la etiqueta `DKIM`es roja con el texto **Diagnóstico**.
 >>
