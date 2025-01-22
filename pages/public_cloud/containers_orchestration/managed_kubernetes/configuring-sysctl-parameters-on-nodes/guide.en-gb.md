@@ -9,8 +9,7 @@ updated: 2025-01-13
 The OVHcloud Managed Kubernetes service gives you access to Kubernetes clusters, without the hassle of installing or operating them.
 But for some specific usecases, you may have to customize nodes parameters.
 
-This guide will cover the modification of the Sysctl parameters which takes in charge the Inotify part and allows you to open more files simultaneously.
-
+This guide will cover the customization of the sysctl parameters which define user limits on the number of inotify resources and inotify file watches.
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
@@ -30,29 +29,29 @@ Create a YAML named `sysctl-tuner-daemonset.yaml` with the content below:
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-    name: sysctl-tuner
+  name: sysctl-tuner
 spec:
-    selector:
-        matchLabels:
-            name: sysctl-tuner
-    template:
-        metadata:
-            labels:
-                name: sysctl-tuner
-        spec:
-            containers:
-                - name: sysctl
-                  image: busybox
-                  securityContext:
-                      privileged: true
-                  command:
-                      - sh
-                      - -c
-                      - "sysctl -w fs.inotify.max_user_watches=<value>" # Define the value you need
-            hostNetwork: true
-            hostPID: true
-            tolerations:
-                - operator: "Exists" # Allow running on all nodes, including tainted ones
+  selector:
+    matchLabels:
+      name: sysctl-tuner
+  template:
+    metadata:
+      labels:
+        name: sysctl-tuner
+      spec:
+        containers:
+          - name: sysctl
+            image: busybox
+            securityContext:
+              privileged: true
+            command:
+              - sh
+              - -c
+              - "sysctl -w fs.inotify.max_user_watches=<value>" # Define the value you need
+        hostNetwork: true
+        hostPID: true
+        tolerations:
+          - operator: "Exists" # Allow running on all nodes, including tainted ones
 ```
 
 Define the value of the sysctl key `fs.inotify.max_user_watches` based on your applications' needs.
@@ -67,11 +66,11 @@ The DaemonSet will set the sysctl parameter `fs.inotify.max_user_watches` with t
 > $ kubectl run busybox --image=busybox:latest --rm=true -it --privileged=true -- sysctl -a
 > ```
 > 
-> This command will create a privileged busybox pod, will print all "sysctl" variables then delete the pod.
+> This command will create a privileged busybox pod that prints all available sysctl values and deletes the pod.
 
 ## Step 2: Test if the changes were applied correctly
 
-In order to check if the Inotify value has been changed properly, you can escalate a shell into a pod : 
+In order to check if the inotify value has been changed properly, you can execute a shell into a pod:
 
 ```bash 
 $ kubectl exec -it <pod> -- cat /proc/sys/fs/inotify/max_user_watches
@@ -79,7 +78,7 @@ $ kubectl exec -it <pod> -- cat /proc/sys/fs/inotify/max_user_watches
 
 The output should be the same as the value you defined in the DaemonSet YAML defined above.
 
-Congratulations ! You've successfully modified the maximum Inotify "max_user_watches" value on your Managed Kubernetes Service.
+Congratulations! You've successfully modified the maximum inotify "max_user_watches" value on your Managed Kubernetes Service.
 
 ## Go further
 
