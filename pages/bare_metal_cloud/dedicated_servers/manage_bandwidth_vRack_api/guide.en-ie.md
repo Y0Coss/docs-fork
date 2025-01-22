@@ -46,11 +46,11 @@ Enter the variables:
 
 - serviceName: the name of your dedicated server, for example `ns1234567.ip-203.0.113.eu`
 
-![bandwidth](images/private_bandwidth_01.png){.thumbnail}
+![bandwidth](images/private-bandwidth-1.png){.thumbnail}
 
 The `RESPONSE` field should display information similar to the following:
 
-![bandwidth](images/private_bandwidth_02.png){.thumbnail}
+![bandwidth](images/private-bandwidth-2.png){.thumbnail}
 
 ### Review your order
 
@@ -67,11 +67,11 @@ Enter the variables:
 - serviceName: the name of your dedicated server
 - quantity: 1
 
-![bandwidth](images/private_bandwidth_03.png){.thumbnail}
+![bandwidth](images/private-bandwidth-3.png){.thumbnail}
 
 The `RESPONSE` field should display information similar to the following:
 
-![bandwidth](images/private_bandwidth_04.png){.thumbnail}
+![bandwidth](images/private-bandwidth-4.png){.thumbnail}
 
 ### Submit your order
 
@@ -82,7 +82,7 @@ To officially submit the order, use the following API call:
 > @api {v1} /order POST /order/upgrade/baremetalPrivateBandwidth/{serviceName}/{planCode}
 >
 
-![bandwidth](images/private_bandwidth_05.png){.thumbnail}
+![bandwidth](images/private-bandwidth-5.png){.thumbnail}
 
 The order will be processed once you have clicked `Execute`{.action}. The amount displayed corresponds to your option’s first billing month, calculated on a pro rata basis for the current month.
 
