@@ -1,7 +1,7 @@
 ---
 title: 'Comment installer un certificat SSL sur un VPS OVHcloud'
 excerpt: 'Découvrez comment installer un certificat SSL sur un VPS OVHcloud'
-updated: 2025-01-15
+updated: 2025-01-24
 ---
 
 ## Objectif
@@ -21,7 +21,7 @@ La sécurisation de votre site web est essentielle pour protéger les données s
 
 - Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/)
 - Disposer d'un accès administrateur (sudo) via SSH à votre VPS
-- Disposer d'un site web fonctionnel accéssible en http
+- Disposer d'un site web fonctionnel accessible en http
 
 ## En pratique
 
@@ -107,7 +107,7 @@ Selon votre serveur web, utilisez les lignes de commandes correspondantes :
 >> sudo certbot --apache -d your_domain
 >> ```
 
-Certbot configurera automatiquement le certificat SSL et la redirection HTTPS. Vérifiez que votre site web est accéssible en `https`.
+Certbot configurera automatiquement le certificat SSL et la redirection HTTPS. Vérifiez que votre site web est accessible en `https`.
 
 #### Utilisation en mode autonome
 
@@ -132,7 +132,7 @@ Une fois le certificat généré, les fichiers sont disponibles dans `/etc/letse
 ### Étape 4 - Configurez votre serveur web <a name="step4"></a>
 
 > [!primary]
-> Si vous avez utilisé la solution automatique (avec les plugins Certbot) précédemment ([Étape 3](#step3)), et que votre site web est accéssible en `https`, passez à l'[étape 5](step5).
+> Si vous avez utilisé la solution automatique (avec les plugins Certbot) précédemment ([Étape 3](#step3)), et que votre site web est accessible en `https`, passez à l'[étape 5](step5).
 
 #### Exemple pour Nginx
 
@@ -176,7 +176,7 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
-Vérifiez que votre site web est accéssible en `https`.
+Vérifiez que votre site web est accessible en `https`.
 
 #### Exemple pour Apache
 
@@ -236,7 +236,7 @@ sudo apachectl configtest
 sudo systemctl restart apache2
 ```
 
-Vérifiez que votre site web est accéssible en `https`.
+Vérifiez que votre site web est accessible en `https`.
 
 ### Étape 5 - Activez le renouvellement automatique <a name="step5"></a>
 
@@ -253,16 +253,6 @@ Certbot configure automatiquement une tâche `cron` ou un timer systemd pour gé
 ```bash
 sudo systemctl list-timers | grep certbot
 ```
-
-### SSL Gateway OVHcloud <a name="ssl-gateway"></a>
-
-La SSL Gateway d'OVHcloud automatise la gestion des certificats SSL, y compris leur configuration et leur renouvellement. Elle offre également une protection Anti-DDoS pour garantir la disponibilité et la sécurité des sites web.
-
-1. Accédez à la page [SSL Gateway OVHcloud](https://www.ovhcloud.com/fr/security/ssl-gateway/).
-2. Choisissez l'offre qui correspond à vos besoins et cliquez sur **Commander maintenant**.
-3. Associez votre domaine à la SSL Gateway via l'interface OVHcloud.
-4. Modifiez vos enregistrements DNS pour pointer vers l'adresse IP de la SSL Gateway.
-5. Testez votre site web pour vérifier qu'il est bien accéssible en HTTPS.
 
 ## Aller plus loin <a name="go-further"></a>
 
