@@ -56,7 +56,7 @@ Notre solution Enterprise File Storage est conforme à plusieurs normes de point
 
 ### Peut-on accéder à Enterprise File Storage depuis un réseau privé de type vRack ?
 
-Pas pour le moment, mais cette fonctionnalité sera bientôt disponible (vRack endpoint).
+Oui.
 
 ## Accès *On-premises*
 
