@@ -1,7 +1,7 @@
 ---
 title: Configuring an IP block in a vRack on a Public cloud instance
 excerpt: This guide will show you how to configure a block of public IP addresses linked to a vRack on a Public cloud instance.
-updated: 2024-12-09
+updated: 2025-01-23
 ---
 
 ## Objective
@@ -29,7 +29,7 @@ Before you start, please note that there are several steps to follow for this co
 >
 > You can also remove the project from its allocated vRack and attach it to another vRack if you wish.
 
-For older projects, once you have ordered your [vRack](/links/network/vrack), go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action} in the left tab, then on `vRack private network`{.action}. Select your vRack from the list.
+For older projects, go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action} in the left tab, then on `vRack private network`{.action}. Select your vRack from the list.
 
 From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
 
@@ -63,7 +63,7 @@ Click on `Add Private Network`{.action}.
 
 The following page allows you to customise multiple settings.
 
-In step 1, select the region in which you want the private network to be located (this should be the same as the location of the instance).
+In step 1, select the region in which you want the private network to be located (this region must be the same as that of the instance).
 
 ![select region](images/vrack2024-01.png){.thumbnail}
 
@@ -78,7 +78,7 @@ This step offers several configuration options. For the purpose of this guide, w
 > [!tabs]
 > **Private Network Name**
 >>
->> Enter a name for your private network.<br>
+>> Enter a name for your private network.
 >>
 > **Layer 2 network options**
 >>
@@ -91,12 +91,12 @@ This step offers several configuration options. For the purpose of this guide, w
 
 Once done, click on `Create`{.action}.
 
-### Add the Public IP block CIDR in the private network subnet
+### Create a subnet
 
-For the configuration, you need to add the public CIDR of your block in the subnet of the private network previously created.
+For the configuration, you need to create a subnet in the previously created private network and add the CIDR of the public IP block to it.
 
 > [!warning]
-> This action can only be performed from the Horizon interface or the Openstack client API. For now, we are only document the steps via the Horizon Interface.
+> This action can only be performed from the Horizon interface or the Openstack client API. For now, we are only going to document the steps via the Horizon Interface.
 >
 
 #### From the Horizon interface
@@ -121,21 +121,21 @@ In the pop-up window, fill in the fields:
 **Network address***: Enter the complete CIDR of your Public IP block (in this example: 203.0.113.0/29).<br>
 **Gateway IP**: The penultimate IP of the IP block (in this example 203.0.113.6).
 
-Click on `Next`, then on `Create`.
+Click on `Next` and uncheck the box `Enable DHCP`{.action}. Click on `Create`{.action}
 
 Once the subnet has been created, your private network will appear as follows:
 
 ![New private network display](images/display_subnet.png){.thumbnail}
 
-### Attach the network interface to the Instance
+### Attach a network interface to the Instance
 
 This action should only be done via Horizon.
 
-Additionally, you must attach the network to an existing Instance.
+If you have not yet created an instance, you must create it first, then attach the network later. Do not select the private network when creating the instance.
 
-If you have not yet created an instance, you must create it first, then attach the network later. Do not select the private network during the instance creation.
+We recommend you to consult the following guides if you are creating an Instance for the first time: [How to create a Public Cloud instance and connect to it](/pages/public_cloud/compute/public-cloud-first-steps/) or [Creating an Instance via the Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon/).
 
-We recommend you to consult the following guides:[How to create a Public Cloud instance and connect to it](/pages/public_cloud/compute/public-cloud-first-steps/) or [Creating an Instance via the Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon/).
+If you already have an instance, you can proceed to the next step.
 
 #### From the Horizon Interface
 
@@ -146,7 +146,6 @@ Once you are connected, make sure you choose the proper work zone.
 Next, select `Compute`{.action} and then `Instances`{.action} from the menu.
 
 ![compute and instance](images/compute_instances.png){.thumbnail}
-
 
 Select `Attach Interface`{.action} in the drop list for the corresponding instance.
 
@@ -160,12 +159,13 @@ In the pop-up menu, select the appropriate options:
 **Fixed IP Address**: Specify the Public IP address you wish to use from the block (if you don't, the system will automatically assign a private IP).
 
 > [!warning]
+> 
 > For each public IP you want to use, you need to follow the same procedure and enter a different usable public IP each time.
 >
 
-**Configure a usable IP address**
+### Configure a usable IP address
 
-For vRack purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below:
+For vRack purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable IP address is the second address in the block, as shown below:
 
 ```sh
 203.0.113.0   Reserved: Network address
@@ -175,7 +175,7 @@ For vRack purposes, the first, penultimate, and last addresses in any given IP b
 203.0.113.4
 203.0.113.5   Last usable IP
 203.0.113.6   Reserved: Network gateway
-203.0.113.7   Reserved: Network broadcast 
+203.0.113.7   Reserved: Network broadcast
 ```
 
 To configure the first usable IP address, we need to edit the network configuration file, as shown below. In this example, we need to use a subnet mask of **255.255.255.248**.
@@ -185,9 +185,37 @@ To configure the first usable IP address, we need to edit the network configurat
 The subnet mask we've used in our example is appropriate for our IP block. Your subnet mask may differ depending on the size of your block. When you purchase your IP block, you'll receive an email that will tell you which subnet mask to use.
 >
 
-```sh
-/etc/network/interfaces
+#### Linux
 
+**Configuration based on ENI**
+
+The configuration below is based on Debian 11.
+
+To identify your vRack interface, connect to your instance via SSH and run the following command:
+
+```bash
+ip a
+```
+
+Next, access the network configuration file and configure the IP. In our example, our network configuration file is called `50-cloud-init` and it is located in the following directory: `/etc/network/interfaces.d`:
+
+```bash
+sudo nano /etc/network/interfaces.d/50-cloud-init
+```
+
+Add the following lines to your configuration file, replacing NETWORK_INTERFACE, PUBLIC_IP_ADDRESS, NETMASK_IP and BROADCAST_IP with your own values.
+
+```console
+auto NETWORK_INTERFACE
+iface NETWORK_INTERFACE inet static
+address PUBLIC_IP_ADDRESS
+netmask NETMASK_IP
+broadcast BROADCAST_IP
+```
+
+Example
+
+```sh
 auto eth1
 iface eth1 inet static
 address 203.0.113.3
@@ -202,13 +230,13 @@ First, we need to download and install iproute2, which is a package that will en
 Establish an SSH connection to your instance and run the following command from the command line. This will download and install iproute2.
 
 ```sh
-# apt-get install iproute2
+sudo apt-get install iproute2
 ```
 
 Next, we need to create a new IP route for the vRack. We'll be adding a new traffic rule by amending the file, as shown below:
 
 ```sh
-/etc/iproute2/rt_tables
+sudo nano /etc/iproute2/rt_tables
 
 #
 # reserved values
@@ -229,7 +257,7 @@ Next, we need to create a new IP route for the vRack. We'll be adding a new traf
 Finally, we need to amend the network configuration file to account for the new traffic rule and route the vRack traffic through the network gateway address of **203.0.113.6**.
 
 ```sh
-/etc/network/interfaces
+sudo nano /etc/network/interfaces.d/50-cloud-init
 
 auto eth1
 iface eth1 inet static
