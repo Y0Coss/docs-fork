@@ -876,6 +876,7 @@
                 + [Taint, cordon and drain specific Nodes and Nodes Pools](public_cloud/containers_orchestration/managed_kubernetes/taint-drain-node-pools)
                 + [Using Codefresh with OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/using-codefresh)
                 + [Deploying Apache Pulsar on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/installing-pulsar-with-streamnative)
+                + [Adapt your Inotify parameters for your deployments](public_cloud/containers_orchestration/managed_kubernetes/configuring-sysctl-parameters-on-nodes)
             + [Network](public-cloud-containers-orchestration-managed-kubernetes-k8s-network)
                 + [Using vRack Private Network](public_cloud/containers_orchestration/managed_kubernetes/using-vrack)
                 + [Using vRack - Communicating between different private networks](public_cloud/containers_orchestration/managed_kubernetes/using-vrack-between-private-networks)
