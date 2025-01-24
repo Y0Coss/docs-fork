@@ -32,7 +32,6 @@ La sécurisation de votre site web est essentielle pour protéger les données s
 - [Étape 3 - Obtenez un certificat SSL avec Let's Encrypt](#step3)
 - [Étape 4 - Configurez votre serveur web](#step4)
 - [Étape 5 - Activez le renouvellement automatique](#step5)
-- [SSL Gateway OVHcloud](#ssl-gateway)
 
 ### Étape 1 - Connectez-vous à votre VPS OVHcloud <a name="step1"></a>
 
