@@ -30,7 +30,7 @@ Zum Schutz von Diensten, die über öffentliche IP-Adressen zugänglich sind, bi
 > Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 
 > [!warning]
-> Das Edge Firewall Network unterstützt das QUIC-Protokoll nicht.
+> Die Edge Network Firewall unterstützt das QUIC-Protokoll nicht.
 
 ## In der praktischen Anwendung
 
