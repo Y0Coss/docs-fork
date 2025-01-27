@@ -1,20 +1,20 @@
 ---
-title: "Detaching my Web Cloud Databases solution from a web hosting plan"
+title: "How to detach the Web Cloud Databases solution from a web hosting plan"
 excerpt: "Find out how to unlink your Web Cloud Databases solution from a web hosting plan"
 updated: 2025-01-24
 ---
 
 ## Objective
 
-[Web Cloud Databases](/links/web/databases) solutions can be activated free of charge from our [Performance web hosting plans](/links/web/hosting). In this case, they are associated with the web hosting plan from which they have been activated. As you use your services, you may find that you need to unlink your Web Cloud Databases solution from the Performance Web Hosting plan it is linked to.
+[Web Cloud Databases](/links/web/databases) can be activated free of charge from our [Performance web hosting plans](/links/web/hosting). In this case, they are associated with the web hosting plan from which they have been activated. As you use your services, you may find that you need to unlink your Web Cloud Databases solution from the Performance web hosting plan it is linked to.
 
-**Find out how to unlink your Web Cloud Databases solution from a web hosting plan.**
+**This guide explains how to unlink your Web Cloud Databases solution from a web hosting plan.**
 
 ## Requirements
 
-- A [Web Cloud Databases instance](/links/web/databases) associated with a [Performance Web Hosting](/links/web/hosting) solution.
-- Access to the [OVHcloud Control Panel](/links/manager).
-- At a minimum, you must be a contact of the [Administrator](/pages/account_and_service_management/account_information/managing_contacts) services that you would like to act on.
+- You have a [Web Cloud Databases instance](/links/web/databases) associated with a [Performance web hosting plan](/links/web/hosting).
+- You have access to the [OVHcloud Control Panel](/links/manager).
+- You are the [Administrator](/pages/account_and_service_management/account_information/managing_contacts) contact of the OVHcloud services concerned.
 
 ## Instructions
 
@@ -29,13 +29,13 @@ Click on the tabs below to view each of the **4** steps in succession.
 >>
 > **Step 2**
 >>
->> Click the `Hosting plans`{.action} dropdown menu, then select the Web Hosting plan concerned.
+>> Click the `Hosting plans`{.action} dropdown menu, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>
 > **Step 3**
 >>
->> In the **Configuration** box, you will see the **Web Cloud Databases** comment. Click the `...`{.action} button on the right, then `Detach`{.action}.
+>> In the **Configuration** box, Click the `...`{.action} button next to **Web Cloud Databases**, then `Detach`{.action}.
 >>
 >> ![Detach Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 >>
