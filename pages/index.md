@@ -930,7 +930,7 @@
                 + [Exposed APIs, Kubernetes configuration and Feature gates](public_cloud/containers_orchestration/managed_kubernetes/exposed-apis)
                 + [Known limits](public_cloud/containers_orchestration/managed_kubernetes/known-limits)
                 + [Managed Kubernetes objects (services, deployments, pods...)](public_cloud/containers_orchestration/managed_kubernetes/managed-kubernetes-objects)
-                + [Recommended external resources](public_cloud/containers_orchestration/managed_kubernetes/recommended-external-resources)
+                + [Recommended external resources for Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/recommended-external-resources)
                 + [Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources](public_cloud/containers_orchestration/managed_kubernetes/software-versions-reserved-resources)
             + [Operators](public-cloud-containers-orchestration-managed-kubernetes-k8s-operators)
                 + [Deploying a Kubernetes Operator based on Helm on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/installing-helm-operator)
