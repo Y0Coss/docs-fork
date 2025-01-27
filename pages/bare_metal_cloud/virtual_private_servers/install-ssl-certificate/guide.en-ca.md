@@ -238,7 +238,7 @@ sudo a2enmod headers
 </VirtualHost>
 ```
 
-4\. Test and restart Apache:
+3\. Test and restart Apache:
 
 ```bash
 sudo apachectl configtest
