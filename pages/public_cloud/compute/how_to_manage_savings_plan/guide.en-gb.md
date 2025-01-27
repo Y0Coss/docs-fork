@@ -74,12 +74,96 @@ You can create your Savings Plan for the type of resource you want by following 
 >> ```console
 >> terraform apply
 >> ```
+
+### Modifying a Savings plan
+
+> [!tabs]
+> Via OVHcloud Control Panel
+>> > [!info]
+>> >
+>> > The options that can be modified via the OVHcloud Customer Area are limited to the **name** and the **activation/deactivation** of the automatic renewal of the Savings Plan.
 >>
->> The output should look like this:
->> 
->> ```console
->> $ terraform apply
->> 
+>> ![Savings Plan update menu](images/savings_plan_update_menu.png){.thumbnail}
+>>
+>> If you wish to change the name, click the `Change name`{.action} button, change the name and then click `Confirm`{.action}.
+>>
+>> ![Savings Plan update name](images/savings_plan_update_name.png){.thumbnail}
+>>
+>> If you wish to activate/deactivate the automatic renewal of your Savings Plan, click on the `Activate/Disable automatic renewal`{.action} button and then on the `Activate`{.action} / `Disable`{.action} button as appropriate.
+>>
+>> ![Savings Plan update renewal](images/savings_plan_update_renewal.png){.thumbnail}
+>>
+> Via API
+>> First find the id of your service in the list of your services, which can be obtained via the API:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /services GET /services
+>> >
+>> > You must enter the id of your Public Cloud project as a parameter in the **resourceName** field.
+>>
+>> You will obtain a list containing the id of your services as follows:
+>>
+>> ![Savings Plan services list](images/savings_plan_list_service.png){.thumbnail}
+>>
+>> You can use this route to check whether the service corresponds to the Public Cloud project concerned:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /services GET /services/{serviceId}
+>> >
+>> > With **serviceId** corresponds to the id retrieved in the previous route.
+>>
+>> You will obtain a list containing the id of your services as follows:
+>>
+>> ![Savings Plan services list](images/savings_plan_list_service.png){.thumbnail}
+>>
+>> Then look for the service concerned in the list and copy the **id**.
+>>
+>> You can find the id of your Savings Plan in the list of your Savings Plans obtained via the API:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /services GET /services/{serviceId}/savingsPlans/subscribed
+>> >
+>> > With **serviceId** corresponding to the id retrieved previously.
+>>
+>> You get a list of Savings Plan as follows:
+>>
+>> ![Savings Plan list](images/savings_plan_list_svp.png){.thumbnail}
+>>
+>> Then look for the Savings Plan concerned in the list and copy the **id** field.
+>>
+>> To change the name of a Savings Plan, use the following route:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /services PUT /services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}
+>> >
+>> > With **savingsPlanId** corresponding to the id of your previously copied Savings Plan.
+>>
+>> To **activate/disable** the automatic renewal of the Savings Plan, use the following route:
+>>
+>> > [!api]
+>> >
+>> >  @api {v1} /services POST /services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}/changePeriodEndAction
+>>
+>> To increase the number of resources subscribed by your Savings Plan, use this route:
+>>
+>> > [!info]
+>> >
+>> > The number of resources can only be increased.
+>>
+>> > [!api] 
+>> >
+>> > @api {v1} /services POST /services/{serviceId}/savingsPlans/subscribed/{savingsPlanId}/changeSize
+>>
+> Via Terraform
+>> Modify your resource in the Terraform file *savings_plan.tf* created earlier.
+>>
+>> > [!info]
+>> >
+>> > Note that only the **service_name**, **size** and **auto_renewal** fields can be modified.
 
 ## Go further
 
