@@ -1,27 +1,26 @@
 ---
-title: 'So installieren Sie ein SSL-Zertifikat auf einem VPS'
-excerpt: 'Diese Anleitung erklärt, wie Sie so installieren Sie ein SSL-Zertifikat auf einem OVHcloud VPS'
+title: Tutorial - Installieren eines SSL-Zertifikats auf einem VPS
+excerpt: Erfahren Sie hier, wie Sie ein SSL-Zertifikat auf einem OVHcloud VPS installieren
 updated: 2025-01-24
 ---
 
 ## Ziel
 
-Die Sicherheit Ihrer Website ist unerlässlich, um die sensiblen Daten Ihrer Benutzer zu schützen und ihr Vertrauen zu stärken. Mit einem SSL Zertifikat (**S**ecure **S**ockets **L**ayer) können Sie die Kommunikation zwischen Ihren Besuchern und Ihrer Website verschlüsseln und gleichzeitig deren Glaubwürdigkeit erhöhen. Diese Anleitung dokumentiert die Verwendung von **Let's Encrypt**, einem kostenlosen und automatisierten Dienst.
+Die Sicherheit Ihrer Website ist unerlässlich, um die sensiblen Daten Ihrer Benutzer zu schützen und ihr Vertrauen zu stärken. Mit einem SSL-Zertifikat (**S**ecure **S**ockets **L**ayer) können Sie die Kommunikation zwischen Ihren Besuchern und Ihrer Website verschlüsseln und gleichzeitig die Vertrauenswürdigkeit erhöhen. Diese Anleitung dokumentiert die Verwendung von **Let's Encrypt**, einem kostenlosen und automatisierten Dienst.
 
-**Diese Anleitung erklärt, wie Sie so installieren Sie ein SSL-Zertifikat auf einem OVHcloud VPS.**
+**Diese Anleitung erklärt, wie Sie ein SSL-Zertifikat auf einem OVHcloud VPS installieren.**
 
 > [!warning]
->
-> OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit in Ihrer Verantwortung, sicherzustellen, dass diese ordnungsgemäß funktionieren.
->
-> Wir stellen Ihnen dieses Tutorial zur Verfügung, um Sie bestmöglich bei gängigen Aufgaben zu begleiten. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über ein Angebot [VPS](/links/bare-metal/vps)
-- Sie haben Administrator-Zugang (sudo) via SSH zu Ihrem VPS
-- Sie verfügen über eine funktionsfähige Webseite, die über `HTTP` erreichbar ist
+- Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem Kunden-Account.
+- Sie haben Administrator-Zugang (sudo) via SSH zu Ihrem VPS.
+- Sie verfügen über eine funktionsfähige Webseite, die über `HTTP` erreichbar ist.
 
 ## In der praktischen Anwendung
 
@@ -80,7 +79,7 @@ Hierbei muss die installierte Version von Certbot angezeigt werden.
 
 > [!primary]
 >
-> Wenn Sie Ihren Webserver (Nginx oder Apache) installiert haben, empfehlen wir Ihnen, die Certbot-Plugins zu verwenden, um die SSL-Konfiguration zu automatisieren und die Weiterleitungen `HTTPS` zu aktivieren. Diese Plugins vereinfachen die Installation durch die direkte Verwaltung der Konfigurationsdateien des Webservers.
+> Wenn Sie Ihren Webserver (Nginx oder Apache) installiert haben, empfehlen wir Ihnen, die Certbot-Plugins zu verwenden, um die SSL-Konfiguration zu automatisieren und Weiterleitungen zu `HTTPS` zu aktivieren. Diese Plugins vereinfachen die Installation durch die direkte Verwaltung der Konfigurationsdateien des Webservers.
 
 #### Automatische Verwendung mit den Plugins Certbot Nginx oder Apache (empfohlen)
 
@@ -115,11 +114,11 @@ Verwenden Sie je nach Webserver die entsprechenden Befehlszeilen:
 >> sudo certbot --apache -d your_domain
 >> ```
 
-Certbot konfiguriert automatisch das SSL-Zertifikat und die Weiterleitung `HTTPS`. Stellen Sie sicher, dass Ihre Website über `HTTPS` erreichbar ist.
+Certbot konfiguriert automatisch das SSL-Zertifikat und die Weiterleitung zu `HTTPS`. Stellen Sie sicher, dass Ihre Website über `HTTPS` erreichbar ist.
 
 #### Eigenständige Verwendung
 
-Wenn Sie den Server lieber manuell konfigurieren möchten, verwenden Sie Certbot im Standalone-Modus. Dieser Modus verwendet einen temporären Server, der in Certbot integriert ist, um Ihren Domainnamen zu validieren und ein SSL Zertifikat zu generieren.
+Wenn Sie den Server manuell konfigurieren möchten, verwenden Sie Certbot im Standalone-Modus. Dieser Modus verwendet einen temporären Server, der in Certbot integriert ist, um Ihren Domainnamen zu validieren und ein SSL-Zertifikat zu generieren.
 
 Verwenden Sie den folgenden Befehl, um ein Zertifikat anzufordern:
 
@@ -130,17 +129,17 @@ sudo certbot certonly --standalone -d your_domain
 Ersetzen Sie `your_domain` durch Ihre Domain.
 
 > [!warning]
-> Diese Methode beendet vorübergehend alle Dienste, die Port 80 verwenden (z. B. einen anderen Webserver).
+> Diese Methode beendet vorübergehend alle Dienste, die Port 80 verwenden (z.B. einen anderen Webserver).
 
-Sobald das Zertifikat erstellt wurde sind die Dateien in `/etc/letsencrypt/live/your_domain/` verfügbar:
+Sobald das Zertifikat erstellt wurde, sind die Dateien in `/etc/letsencrypt/live/your_domain/` verfügbar:
 
-- `fullchain.pem`: das vollständige Zertifikat.
-- `privkey.pem`: der private Schlüssel.
+- `fullchain.pem`: Das vollständige Zertifikat
+- `privkey.pem`: Der private Schlüssel
 
 ### Schritt 4 - Konfigurieren Sie Ihren Webserver <a name="step4"></a>
 
 > [!primary]
-> Wenn Sie die automatische Lösung (mit den Certbot-Plugins) bereits verwendet haben ([Schritt 3](#step3)) und Ihre Website über `HTTPS` erreichbar ist, fahren Sie direkt mit dem [Schritt 5](step5) fort.
+> Wenn Sie die automatische Lösung (mit den Certbot-Plugins) bereits verwendet haben ([Schritt 3](#step3)) und Ihre Website über `HTTPS` erreichbar ist, fahren Sie direkt mit [Schritt 5](step5) fort.
 
 #### Beispiel für Nginx
 
@@ -186,7 +185,7 @@ sudo systemctl reload nginx
 
 Stellen Sie sicher, dass Ihre Website über `HTTPS` erreichbar ist.
 
-#### Apache-Beispiel
+#### Beispiel für Apache
 
 1\. SSL-Module und Header aktivieren:
 
@@ -248,7 +247,7 @@ Stellen Sie sicher, dass Ihre Website über `HTTPS` erreichbar ist.
 
 ### Schritt 5 - Aktivieren Sie die automatische Verlängerung <a name="step5"></a>
 
-Let's Encrypt-Zertifikate sind 90 Tage lang gültig. Konfigurieren Sie die automatische Verlängerung mit Certbot:
+Let's Encrypt-Zertifikate sind 90 Tage lang gültig. Konfigurieren Sie die automatische Verlängerung mit Certbot.
 
 Testen Sie die automatische Verlängerung:
 
@@ -256,7 +255,8 @@ Testen Sie die automatische Verlängerung:
 sudo certbot renew --dry-run
 ```
 
-Certbot konfiguriert automatisch eine `cron`-Aufgabe oder einen Systemzeitgeber, um die Verlängerung zu verwalten. Status überprüfen mit:
+Certbot konfiguriert automatisch einen `cron` Task oder einen `systemd` Timer, um die Verlängerung zu verwalten.  
+Überprüfen des Status:
 
 ```bash
 sudo systemctl list-timers | grep certbot
