@@ -69,7 +69,7 @@ mkdir -p /home/<user>/.ssh
 chmod 700 /home/<user>/.ssh
 ```
 
-2\. Ajouter la clé publique au fichier `authorized_keys` :
+2\. Ajoutez la clé publique au fichier `authorized_keys` :
 
 ```bash
 cat /home/<user>/.ssh/deploy_key.pub >> /home/<user>/.ssh/authorized_keys
