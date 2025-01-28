@@ -62,7 +62,7 @@ Consultez la [documentation officielle de GitLab](https://docs.gitlab.com/ee/use
 
 Pour permettre à GitLab CI/CD de se connecter à votre VPS via SSH et d'y déployer le code de votre site web, ajoutez la clé publique générée à la liste des clés autorisées sur le VPS.
 
-1\. Créer le répertoire `.ssh` :
+1\. Créez le répertoire `.ssh` :
 
 ```bash
 mkdir -p /home/<user>/.ssh
