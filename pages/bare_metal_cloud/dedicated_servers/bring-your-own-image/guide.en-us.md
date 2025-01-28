@@ -186,6 +186,7 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 ¹ Can either be a `#cloud-config` or a script. It must be in one-line, and have `\n` for line-return<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
 ³ Examples of Efi bootloader path: 
+
 | Operating System | efiBootloaderPath | 
 |-|-|
 | Debian | `\\efi\\debian\\grubx64.efi` |

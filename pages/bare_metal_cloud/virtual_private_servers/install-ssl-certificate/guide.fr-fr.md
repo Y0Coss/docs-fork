@@ -140,7 +140,7 @@ Une fois le certificat généré, les fichiers sont disponibles dans `/etc/letse
 ### Étape 4 - Configurez votre serveur web <a name="step4"></a>
 
 > [!primary]
-> Si vous avez utilisé la solution automatique (avec les plugins Certbot) précédemment ([Étape 3](#step3)) et que votre site web est accessible en `HTTPS`, passez directement à l'[étape 5](step5).
+> Si vous avez utilisé la solution automatique (avec les plugins Certbot) précédemment ([Étape 3](#step3)) et que votre site web est accessible en `HTTPS`, passez directement à l'[étape 5](#step5).
 
 #### Exemple pour Nginx
 
