@@ -78,7 +78,6 @@ chmod 600 /home/<user>/.ssh/authorized_keys
 
 3\. Testez la connexion SSH avec la clé privée pour confirmer que l'accès est fonctionnel :
 
-
 ```bash
 ssh -i /home/<user>/.ssh/deploy_key <user>@<VPS_IP>
 ```
@@ -186,7 +185,7 @@ git push origin main
 
 #### Vérifier l'exécution du premier pipeline
 
-Rendez-vous dans l'onglet `Build/Pipelines` du menu latéral de GitLab pour vérifier que votre premier pipeline s'est bien exécuté.
+Rendez-vous dans l'onglet `Build > Pipelines` du menu latéral de GitLab pour vérifier que votre premier pipeline s'est bien exécuté.
 
 Si une erreur survient, cliquez sur le pipeline échoué pour consulter les logs.
 
