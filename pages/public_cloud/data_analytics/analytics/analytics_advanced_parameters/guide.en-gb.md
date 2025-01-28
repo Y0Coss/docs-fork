@@ -12,7 +12,7 @@ Analytics engines are managed services, which means that they are not fully conf
 >
 > Advanced configuration is available for the following Analytics engines :
 >
-> - Dashboards
+> - Managed Dashboards (Grafana)
 > - Kafka
 > - Kafka Connect
 > - Opensearch

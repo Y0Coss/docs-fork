@@ -16,10 +16,6 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 We back up our managed analytics services every 1 hour (incremental snapshots), 12 hours, or 24 hours (full backups) — depending on the product — with the ability to restore from the latest point in time, based on the retention period of the chosen customer plan.
 
-- PITR:
-
-Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the retention period of the chosen customer plan for PostgreSQL and MySQL. For MongoDB Enterprise the point in time must be within the last 24 hours.
-
 Whether you encounter an issue or simply want to view your data from a previous date, you can restore your data to any point in time within the retention period of the chosen customer plan.
 
 ## Engine Specifications
@@ -72,7 +68,6 @@ Backup settings must respect the following rules:
 
 ## Lexicon
 
-- PITR: Point In Time Recovery
 - RPO: Recovery Point Objective
 - Off-Site: on a different region
 - On-Site: within the same region

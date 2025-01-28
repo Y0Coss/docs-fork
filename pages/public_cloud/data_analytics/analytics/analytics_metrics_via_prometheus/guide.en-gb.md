@@ -63,7 +63,6 @@ scrape_configs:
   static_configs:
     - targets: 
         - opensearch-02d6a757-ovh-dev.database.cloud.ovh.net:9273
-        - replica-opensearch-02d6a757-ovh-dev.database.cloud.ovh.net:9273
 ```
 
 ## Limitations
