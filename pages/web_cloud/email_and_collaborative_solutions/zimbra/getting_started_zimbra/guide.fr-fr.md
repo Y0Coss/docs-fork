@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec l'offre Zimbra"
 excerpt: "Découvrez comment débuter avec votre offre Zimbra depuis votre espace client OVHcloud"
-updated: 2025-01-27
+updated: 2025-01-28
 ---
 
 <style>
@@ -97,6 +97,10 @@ Le tableau des noms de domaine vous donne deux informations :
 ![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-400}
 
 #### Ajouter un nom de domaine
+
+> [!warning]
+>
+> Il est nécessaire de [créer une organisation](#organisations) pour pouvoir ajouter un nom de domaine à votre service Zimbra.
 
 Pour ajouter un nom de domaine à votre service Zimbra, cliquez sur l'onglet `Domaine`{.action} puis cliquez sur `Ajouter un domaine`{.action}.
 
