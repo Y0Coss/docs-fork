@@ -76,7 +76,7 @@ cat /home/<user>/.ssh/deploy_key.pub >> /home/<user>/.ssh/authorized_keys
 chmod 600 /home/<user>/.ssh/authorized_keys
 ```
 
-3\. Tester la connexion SSH
+3\. Testez la connexion SSH avec la clé privée pour confirmer que l'accès est fonctionnel :
 
 Testez la connexion SSH avec la clé privée pour confirmer que l'accès est fonctionnel :
 
