@@ -58,11 +58,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 > **Etape 3**
 >>
->> Dans le cadre **Informations générales**, vous trouverez la mention **IPv6**. Copiez l'adresse IP et passez à l'étape suivante.
+>> Dans le cadre **Informations générales**, vous trouverez la mention **IPv6**.
 >>
 >> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 >>
->> Copiez l'entrée et passez à l'étape suivante.
+>> Copiez l'adresse IP et passez à l'étape suivante.
 
 ### 3 - Configurer la zone DNS active de votre nom de domaine
 
@@ -75,7 +75,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 
 Afin que votre navigateur internet trouve l'adresse IPv6 avec votre nom de domaine, vous devrez modifier la zone DNS active de votre domaine. 
 
-Si la zone DNS active de votre nom de domaine est présente che OVHcloud, utilisez nos guides « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) », puis « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_records) » pour créer une entrée DNS de type **AAAA**.
+Si la zone DNS active de votre nom de domaine est présente che OVHcloud, utilisez nos guides « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) », puis « [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) » pour créer une entrée DNS de type **AAAA**.
 
 Sinon, contactez votre fournisseur DNS en lui précisant l'adresse IPv6 précédemment récupérée.
 
