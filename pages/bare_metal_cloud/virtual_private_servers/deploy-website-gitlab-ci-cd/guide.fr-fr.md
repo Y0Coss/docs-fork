@@ -123,7 +123,7 @@ Testez la connexion SSH avec GitLab :
 ssh -T git@gitlab.com
 ```
 
-Vous devriez voir un message tel que celui-ci :
+Le message suivant doit apparaître :
 
 ```console
 Welcome to GitLab, <username>!
