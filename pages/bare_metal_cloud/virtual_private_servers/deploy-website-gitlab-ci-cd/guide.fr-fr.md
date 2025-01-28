@@ -83,7 +83,7 @@ chmod 600 /home/<user>/.ssh/authorized_keys
 ssh -i /home/<user>/.ssh/deploy_key <user>@<VPS_IP>
 ```
 
-Remplacez `<user>` par l'utilisateur configuré pour se connecter à votre VPS et `<VPS_IP>` par l'IP de votre VPS.
+Remplacez `<user>` par l'utilisateur configuré pour se connecter à votre VPS et `<VPS_IP>` par l'adresse IP de votre VPS.
 
 #### Ajouter la clé publique à GitLab
 
