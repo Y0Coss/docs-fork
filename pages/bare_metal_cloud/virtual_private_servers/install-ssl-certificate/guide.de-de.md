@@ -139,7 +139,7 @@ Sobald das Zertifikat erstellt wurde, sind die Dateien in `/etc/letsencrypt/live
 ### Schritt 4 - Konfigurieren Sie Ihren Webserver <a name="step4"></a>
 
 > [!primary]
-> Wenn Sie die automatische Lösung (mit den Certbot-Plugins) bereits verwendet haben ([Schritt 3](#step3)) und Ihre Website über `HTTPS` erreichbar ist, fahren Sie direkt mit [Schritt 5](step5) fort.
+> Wenn Sie die automatische Lösung (mit den Certbot-Plugins) bereits verwendet haben ([Schritt 3](#step3)) und Ihre Website über `HTTPS` erreichbar ist, fahren Sie direkt mit [Schritt 5](#step5) fort.
 
 #### Beispiel für Nginx
 

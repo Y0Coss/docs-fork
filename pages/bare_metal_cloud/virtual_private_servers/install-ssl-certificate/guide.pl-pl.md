@@ -140,7 +140,7 @@ Po wygenerowaniu certyfikatu pliki będą dostępne w `/etc/letsencrypt/live/you
 ### Etap 4 - Skonfiguruj serwer www <a name="step4"></a>
 
 > [!primary]
-> Jeśli korzystałeś wcześniej z automatycznego rozwiązania (z wtyczkami Certbot) ([Etap 3](#step3)), a Twoja strona WWW jest dostępna poprzez `HTTPS`, przejdź bezpośrednio do [etap 5](step5).
+> Jeśli korzystałeś wcześniej z automatycznego rozwiązania (z wtyczkami Certbot) ([Etap 3](#step3)), a Twoja strona WWW jest dostępna poprzez `HTTPS`, przejdź bezpośrednio do [etap 5](#step5).
 
 #### Przykład dla Nginx
 

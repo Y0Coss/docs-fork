@@ -140,7 +140,7 @@ Una volta generato il certificato, i file sono disponibili in `/etc/letsencrypt/
 ### Step 4 - Configura il tuo server Web <a name="step4"></a>
 
 > [!primary]
-> Se in precedenza hai utilizzato la soluzione automatica (con i plugin Certbot) ([Step 3](#step3)) e il tuo sito Web è accessibile in `HTTPS`, passa direttamente allo [Step 5](step5).
+> Se in precedenza hai utilizzato la soluzione automatica (con i plugin Certbot) ([Step 3](#step3)) e il tuo sito Web è accessibile in `HTTPS`, passa direttamente allo [Step 5](#step5).
 
 #### Esempio per Nginx
 
