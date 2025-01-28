@@ -58,7 +58,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 > **Etape 3**
 >>
->> Dans le cadre **Informations générales** vous trouverez la mention **IPv6**. Copiez l'entrée et passez à l'étape suivante.
+>> Dans le cadre **Informations générales**, vous trouverez la mention **IPv6**. Copiez l'adresse IP et passez à l'étape suivante.
 >>
 >> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 >>
