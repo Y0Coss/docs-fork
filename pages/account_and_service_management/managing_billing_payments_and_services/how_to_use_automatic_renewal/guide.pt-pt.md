@@ -157,7 +157,7 @@ A página **Gestão das minhas ofertas e serviços** contém uma tabela de gest�
 >> > [!success]
 >> >
 >> > Uma vez na interface de pagamento online, se o serviço que deseja renovar dispõe de opções associadas e se também as deseja renovar, **não marque** o(s) botão(s) branco(s) seguido(s) da menção `Não renovar` associado(s) a cada uma das opções apresentadas.
->> > Se selecionar este(s) botão(ões) branco(s), deverá solicitar a renovação do seu serviço principal **SEM** as suas eventuais opções relacionadas.
+>> > Se selecionar estes botões brancos, irá solicitar a renovação do seu serviço principal **SEM** as suas eventuais opções associadas.
 >> >
 >> > Depois de fazer as suas escolhas, prossiga a encomenda clicando em `Validar`{.action}.
 >> >
