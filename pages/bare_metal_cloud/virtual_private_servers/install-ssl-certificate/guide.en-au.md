@@ -14,7 +14,7 @@ Securing your website is essential to protect your users' sensitive data and imp
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> We offer this tutorial to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) and/or the service's publisher if you encounter any difficulties. We will not be able to assist you. More information in the [Go further](#gofurther) section of this tutorial.
+> We offer this tutorial to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) and/or the service's publisher if you encounter any difficulties. We will not be able to assist you. More information in the [Go further](#go-further) section of this tutorial.
 >
 
 ## Requirements
@@ -238,7 +238,7 @@ sudo a2enmod headers
 </VirtualHost>
 ```
 
-4\. Test and restart Apache:
+3\. Test and restart Apache:
 
 ```bash
 sudo apachectl configtest
