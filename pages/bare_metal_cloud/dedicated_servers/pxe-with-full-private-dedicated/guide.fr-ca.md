@@ -1,7 +1,7 @@
 ---
 title: "Gestion du reboot de vos serveurs avec la fonctionnalité OVHcloud Link Aggregation"
 excerpt: "Découvrez comment réaliser les redémarrages de vos serveurs OVHcloud fonctionnant à travers votre agrégation privée active"
-updated: 2024-10-02
+updated: 2025-01-28
 ---
 
 ## Objectif
