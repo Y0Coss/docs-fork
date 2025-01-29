@@ -62,7 +62,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 >> ![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 >>
->> Copiez l'adresse IP et passez à l'étape suivante.
+>> Copiez l'adresse IP, puis poursuivez la lecture du guide.
 
 ### 3 - Configurer la zone DNS active de votre nom de domaine
 
