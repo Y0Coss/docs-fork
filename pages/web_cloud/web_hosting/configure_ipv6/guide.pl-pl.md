@@ -1,7 +1,7 @@
 ---
 title: "Skonfiguruj adres IPv6 dla swojej strony www"
 excerpt: "Dowiedz się, jak sprawdzić, czy Twoja strona WWW jest kompatybilna z adresem IPv6"
-updated: 2024-03-12
+updated: 2025-01-28
 ---
 
 ## Wprowadzenie
