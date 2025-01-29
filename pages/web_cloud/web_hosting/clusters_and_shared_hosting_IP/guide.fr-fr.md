@@ -44,7 +44,7 @@ Pour connaître le cluster d'hébergement web sur lequel se trouve votre service
 >>
 > **Etape 3**
 >>
->> Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. 
+>> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
 >>
 >> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
 >> 
