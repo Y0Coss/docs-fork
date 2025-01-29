@@ -20,19 +20,20 @@ details[open]>summary::before {
 
 ## Objectif
 
-Le mode Rescue est un outil fourni par OVHcloud permettant de démarrer sur un système d'exploitation temporaire. Il a pour but de diagnostiquer et de résoudre les problèmes sur votre serveur.  
-La fonctionnalité du mode rescue en général est décrite dans notre guide « [Comment activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) ».
+Le mode rescue est un outil fourni par OVHcloud permettant de démarrer sur un système d'exploitation temporaire. Il a pour but de diagnostiquer et de résoudre les problèmes sur votre serveur.
 
-L'option **Système de secours client Windows** n'est disponible que pour les serveurs dédiés sur lesquels est installé un système d'exploitation **Windows Server**. Les conditions suivantes s'appliquent :
+Le fonctionnement général du mode rescue est décrit dans notre guide « [Comment activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) ».
 
-- Le système rescue pour Windows (`rescue-customer-windows`) fonctionne dans une machine virtuelle (VM) lancée à partir du système rescue du client (`rescue-customer`, basé sur Debian GNU/Linux).
+L'option **Système de secours client Windows** (`rescue-customer-windows`) n'est disponible que pour les serveurs dédiés sur lesquels est installé un système d'exploitation **Windows Server**. Les conditions suivantes s'appliquent :
+
+- Le système rescue pour Windows (`rescue-customer-windows`) fonctionne dans une machine virtuelle (VM) lancée à partir du système rescue client (`rescue-customer`, basé sur Debian GNU/Linux).
 - Les disques du serveur sont attachés à la VM avec *passthrough*, il est donc possible d'y accéder.
 - Les autres composants du serveur seront inaccessibles (CPU, RAM, carte réseau, carte RAID).
 - Le réseau est monté avec *passthrough* mais sans accès direct à la carte réseau. La VM porte l'adresse IP et l'adresse MAC du serveur *bare metal*.
 
 > [!warning]
 >
-> Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas encore de sauvegardes récentes.
+> Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas encore de sauvegarde récente.
 >
 > Si vous avez des services en production sur votre serveur, le mode rescue les interrompt tant que la machine n’a pas été redémarrée en mode normal.
 > 
@@ -89,7 +90,7 @@ Ce *hard reboot* prendra quelques minutes à se terminer. Vous pouvez vérifier 
 
 ### Accéder à votre serveur en mode rescue
 
-Une fois que vous avez reçu l'e-mail vous informant que le mode rescue est activé, vous pouvez vous connecter au système en mode rescue de Windows et accéder à votre serveur.  
+Une fois que vous avez reçu l'e-mail vous informant que le mode rescue est activé, vous pouvez vous connecter au système via le mode rescue de Windows et accéder à votre serveur. 
 Cet e-mail est également disponible dans votre [espace client OVHcloud](/links/manager) dès son envoi. Cliquez sur le nom associé à votre identifiant client dans la barre de menu en haut à droite, puis sélectionnez `E-mails de service`{.action}.
 
 Pour établir une session à distance sur le système en mode rescue de Windows, vous aurez besoin des informations d'identification suivantes :
@@ -106,7 +107,7 @@ Vous pouvez utiliser les méthodes de connexion suivantes pour accéder à votre
 
 #### RDP
 
-/// details | Déplier cette section
+/// details | Dépliez cette section
 
 Pour vous connecter, utilisez le client `Remote Desktop Connection` de Windows ou toute application compatible.
 
@@ -116,7 +117,7 @@ Pour vous connecter, utilisez le client `Remote Desktop Connection` de Windows o
 
 #### KVM
 
-/// details | Déplier cette section
+/// details | Dépliez cette section
 
 Depuis l'écran de connexion KVM, vous pouvez sélectionner une autre langue de clavier.
 
@@ -130,13 +131,13 @@ Vous pouvez modifier les options d'accessibilité et activer le clavier virtuel 
 
 ![KVM keyboard screen](images/rescue-kvm-login-keyboard.png){.thumbnail width="800"}
 
-Retrouvez plus d'informations dans notre guide : [How to use the IPMI console with a dedicated server](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers)
+Retrouvez plus d'informations dans notre guide : [Comment utiliser la console IPMI avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers)
 
 ///
 
 #### SSH
 
-/// details | Déplier cette section
+/// details | Dépliez cette section
 
 Ouvrez l'application de ligne de commande sur votre périphérique local et entrez la commande suivante :
 
@@ -166,7 +167,7 @@ Vous pouvez également utiliser n'importe quel outil de connexion SSH, tel que [
 
 Une fois connecté au système de secours client Windows, vous devez importer (*mount*) les disques du serveur Windows avant de pouvoir accéder au système de fichiers.
 
-/// details | Déplier cette section
+/// details | Dépliez cette section
 
 > [!warning]
 > Les exemples d'instructions et de captures d'écran suivants illustrent le processus de montage basé sur un serveur avec deux disques en miroir (RAID1). Les détails affichés par l'outil Gestion des disques dépendent de la configuration disque de votre serveur.  
@@ -232,14 +233,14 @@ Dans votre [espace client OVHcloud](/links/manager), [changez le mode de démarr
 
 Utilisez ensuite la fonction `Restart`{.action} dans votre espace client OVHcloud.
 
-## Aller plus loin
+## Aller plus loin <a name="gofurther"></a>
 
 [Comment activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 [Comment changer le mot de passe administrateur sur un serveur dédié Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).
