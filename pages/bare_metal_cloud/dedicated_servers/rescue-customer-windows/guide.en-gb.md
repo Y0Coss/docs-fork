@@ -21,7 +21,7 @@ details[open]>summary::before {
 ## Objective
 
 Rescue mode is a tool provided by OVHcloud that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues on your server.  
-The rescue mode functions in general are described on our guide page: 
+The functionality of rescue mode in general is described on our guide page: 
 
 [How to activate and use rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
@@ -39,7 +39,7 @@ The option **Windows customer rescue system** is only available for dedicated se
 > If you have any services still online, rescue mode will interrupt them as the machine is being rebooted into the auxiliary rescue environment.
 >
 
-**This guide explains how to reboot a server into the Windows customer rescue system.**
+**This guide explains how to boot a server into the Windows customer rescue system.**
  
 ## Requirements
 
@@ -65,7 +65,7 @@ On the page **Change the netboot**, select `Boot in rescue mode`{.action}.
 
 Select `Windows customer rescue system`{.action} in the drop-down menu.
 
-![Modify boot mode](images/manager-rescue-windows-menu.png){.thumbnail}
+![Modify boot mode](images/manager-rescue-windows-menu.png){.thumbnail width="800"}
 
 The rescue mode notification email including its login details will be sent to the contact email address of your OVHcloud account. To use a different email address, enter it in the field `Send new login details to the following email address`.
 
@@ -81,7 +81,7 @@ You should now have a notification regarding the `Netboot` setting in the `Gener
 
 The final step is to restart the server. Click the button `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action}. Click `Confirm`{.action} in the popup window.
 
-![Rebooting](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/rebooting-your-server.png){.thumbnail}
+![Reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/rebooting-your-server.png){.thumbnail}
 
 This "hard reboot" will take a few minutes to complete. You can check the current status in the tab named `Tasks`{.action}.
 
@@ -122,15 +122,15 @@ To connect, use the `Remote Desktop Connection` client of Windows or any compati
 
 From the KVM login screen, you can select a different keyboard language.
 
-![KVM Login Screen](images/rescue-kvm-login-screen.png){.thumbnail}
+![KVM Login Screen](images/rescue-kvm-login-screen.png){.thumbnail width="800"}
 
-![KVM Language Screen](images/rescue-kvm-login-language.png){.thumbnail}
+![KVM Language Screen](images/rescue-kvm-login-language.png){.thumbnail width="800"}
 
 You can change the accessibility options and enable the virtual keyboard:
 
-![KVM accessibility Screen](images/rescue-kvm-login-accessibility.png){.thumbnail}
+![KVM accessibility Screen](images/rescue-kvm-login-accessibility.png){.thumbnail width="800"}
 
-![KVM keyboard screen](images/rescue-kvm-login-keyboard.png){.thumbnail}
+![KVM keyboard screen](images/rescue-kvm-login-keyboard.png){.thumbnail width="800"}
 
 You can find further information in our guide: [How to use the IPMI console with a dedicated server](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers)
 
@@ -171,7 +171,8 @@ Once logged in to the Windows customer rescue system, you need to import (mount)
 /// details | Unfold this section
 
 > [!warning]
-> The following exemplary instructions and screenshots will illustrate the mounting process based on a server with two mirrored disks (RAID1). The details displayed by the Disk Management tool depend on your server's disk configuration. For additional information, consult the [official Microsoft documentation](https://learn.microsoft.com/en-us/windows-server/storage/disk-management/overview-of-disk-management).
+> The following exemplary instructions and screenshots will illustrate the mounting process based on a server with two mirrored disks (RAID1). The details displayed by the Disk Management tool depend on your server's disk configuration.  
+> For additional information, consult the [official Microsoft documentation](https://learn.microsoft.com/en-us/windows-server/storage/disk-management/overview-of-disk-management).
 > 
 > If you require professional assistance with server administration, consider the details in the [Go further](#gofurther) section of this guide.
 
@@ -179,21 +180,21 @@ Once logged in to the Windows customer rescue system, you need to import (mount)
 |:--|
 | Right-click on the `Start Menu`{.action} button and open `Disk Management`{.action}. |
 
-| ![Windows disk management](images/rescue-disk-mgmt2.png){.thumbnail} |
+| ![Windows disk management](images/rescue-disk-mgmt2.png){.thumbnail width="700"} |
 |:--|
 | `Disk 0` contains the rescue system (volume `C:`). The disks of your Windows server will be displayed as `Offline`. |
 
 | ![Windows disk management](images/rescue-disk-mgmt3.png){.thumbnail} |
 |:--|
-| Right-click on each disk and select `Online` from the context menu. |
+| Right-click on each disk and select `Online`{.action} from the context menu. |
 
 | ![Windows disk management](images/rescue-disk-mgmt4.png){.thumbnail} |
 |:--|
-| The server disks are now [recognized by the rescue system as `Foreign`](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/troubleshoot-disk-management#a-dynamic-disks-status-is-foreign), a status that in this case indicates that the attached disks belong to a different operating system. |
+| The server disks are now [recognized by the rescue system as `Foreign`](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/troubleshoot-disk-management#a-dynamic-disks-status-is-foreign), a status indicating in this case that the attached disks belong to a different operating system. |
 
 | ![Windows disk management](images/rescue-disk-mgmt5.png){.thumbnail} |
 |:--|
-| Right-click on a disk and select `Import Foreign Disks...` from the context menu. |
+| Right-click on a disk and select `Import Foreign Disks...`{.action} from the context menu. |
 
 | ![Windows disk management](images/rescue-disk-mgmt6.png){.thumbnail} |
 |:--|
@@ -217,25 +218,30 @@ Once logged in to the Windows customer rescue system, you need to import (mount)
 
 > [!primary]
 >
-> Below is a list of recommended software for certain use cases.  
-> This software is not installed by default on the *rescue* image and are available from the respective website of their developers.
+> Additional software is not preinstalled on the rescue mode system. Below is a list of recommended tools, available from the respective website of their developers.
 
 | Software | Description |
 | --- | --- |
 | CrystalDiskInfo | Disk diagnostics tool |
-| 7Zip | Archive management tool |
+| 7-Zip | Archive management tool |
 | FileZilla | FTP client |
 
 ### Exiting rescue mode
 
 In the [OVHcloud Control Panel](/links/manager), [change the boot mode](#netboot) back to `Boot from the hard disk`{.action} and confirm.
 
-![Netboot Disk](images/rescue-mode-007.png){.thumbnail}
+![Netboot Disk](images/rescue-mode-007.png){.thumbnail width="800"}
 
 Then use the `Restart`{.action} function in your OVHcloud Control Panel.
 
 ## Go further
 
 [How to activate and use rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
+[How to change the admin password on a Windows dedicated server](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)
+
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).
