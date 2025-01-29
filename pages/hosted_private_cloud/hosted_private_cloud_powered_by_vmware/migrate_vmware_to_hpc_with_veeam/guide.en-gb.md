@@ -66,10 +66,10 @@ Before getting started, you’ll need:
 Deploying a Veeam proxy server is essential for optimizing data transfer during replication. 
 
 Here’s how to set it up:
-  1. Open the Veeam Console and go to the **Backup Infrastructure**{.action} section.
-  2. In the inventory pane, click **Managed Servers**{.action}.
-  3. Add your on-prem proxy server (Windows or Linux) by selecting **Add Server**{.action} and following the wizard.
-  4. Once added, configure the server as a proxy by navigating to **Backup Proxies**{.action} and clicking **Add Proxy**{.action}.
+  1. Open the Veeam Console and go to the `Backup Infrastructure`{.action} section.
+  2. In the inventory pane, click `Managed Servers`{.action}.
+  3. Add your on-prem proxy server (Windows or Linux) by selecting `Add Server`{.action} and following the wizard.
+  4. Once added, configure the server as a proxy by navigating to `Backup Proxies`{.action} and clicking `Add Proxy`{.action}.
   5. Assign the necessary resources and settings (transport mode, maximum concurrent tasks, etc.).
 
 After configuring, verify the proxy server’s connectivity with the Veeam B&R server in your Hosted Private Cloud. 
@@ -80,9 +80,9 @@ For a detailed walkthrough, check the [proxy setup guide](https://helpcenter.vee
 
 To create a replication job in Veeam Backup & Replication:
 
-  1. Open the Veeam Console and navigate to the **Home** view.
-  2. In the inventory pane, click on **Replication Jobs**{.action}.
-  3. Select **Create Replication Job**{.action} from the menu.
+  1. Open the Veeam Console and navigate to the `Home`{.action} view.
+  2. In the inventory pane, click on `Replication Jobs`{.action}.
+  3. Select `Create Replication Job`{.action} from the menu.
   4. Follow the wizard to:
      - Add the VMs you want to replicate.
      - Choose the target destination (your OVHcloud HPC).
@@ -96,28 +96,28 @@ For detailed steps, check the [replication job setup guide](https://helpcenter.v
 ### 11. Start and test replication jobs
 
 Once your replication jobs are set up, start them from the Veeam Console:
-  1. Open the **Home** view and navigate to **Replication Jobs**{.action}.
-  2. Select the job you created and click **Start**{.action} to begin replication.
+  1. Open the `Home`{.action} view and navigate to `Replication Jobs`{.action}.
+  2. Select the job you created and click `Start`{.action} to begin replication.
   3. Monitor the progress to ensure there are no errors.
 
-To test replication, use the **Failover Now** feature:
-  1. Open the **Replicas**{.action} section in the Veeam Console.
-  2. Right-click the replicated VM and select **Failover Now**{.action}.
+To test replication, use the `Failover Now`{.action} feature:
+  1. Open the `Replicas`{.action} section in the Veeam Console.
+  2. Right-click the replicated VM and select `Failover Now`{.action}.
   3. Confirm the action to activate the replica without impacting the source VM.
 
 After testing, undo the failover:
-  1. Go back to the same replicated VM in the **Replicas** section.
-  2. Right-click and select **Undo Failover**{.action} to revert to the original state and resume replication.
+  1. Go back to the same replicated VM in the `Replicas`{.action} section.
+  2. Right-click and select `Undo Failover`{.action} to revert to the original state and resume replication.
 
 Testing ensures that your replicas are functional and ready for production use without affecting your on-prem environment. 
 
 For more details, refer to the [Failover process](https://helpcenter.veeam.com/docs/backup/vsphere/failover.html?ver=120) and [Undo failover process](https://helpcenter.veeam.com/docs/backup/vsphere/undo_failover.html?ver=120).
 ### 12. Migrate workloads
 
-Use the **Planned Failover** process to migrate your workloads without losing data or disrupting services:
-  1. Open the Veeam Console and go to the **Home** view.
-  2. Navigate to the **Replicas** section and locate the VM replica you want to migrate.
-  3. Right-click the replica and select **Planned Failover**{.action}.
+Use the `Planned Failover`{.action} process to migrate your workloads without losing data or disrupting services:
+  1. Open the Veeam Console and go to the `Home`{.action}  view.
+  2. Navigate to the `Replicas`{.action}  section and locate the VM replica you want to migrate.
+  3. Right-click the replica and select `Planned Failover`{.action}.
   4. Confirm the action. Veeam will:
      - Synchronize any final changes from the source VM to the replica.
      - Power off the source VM automatically.
@@ -135,9 +135,9 @@ For more details, refer to the [Planned Failover guide](https://helpcenter.veeam
 
 ### 14. Confirm permanent failover
 
-- To make the replica VM your new production VM, open the Veeam Console and navigate to the **Home** view.
-- Click on **Replicas**{.action} in the inventory pane and find the replica VM you want to finalize.
-- Right-click the VM and select **Permanent Failover**{.action} from the menu.
+- To make the replica VM your new production VM, open the Veeam Console and navigate to the `Home`{.action} view.
+- Click on `Replicas`{.action} in the inventory pane and find the replica VM you want to finalize.
+- Right-click the VM and select `Permanent Failover`{.action} from the menu.
 - Confirm the action when prompted.
 
 Once done, Veeam will remove the original VM from replication jobs and adjust the settings so the replica VM becomes the primary one. 
@@ -148,9 +148,9 @@ For more details, check the [Permanent Failover guide](https://helpcenter.veeam.
 - Move VMs to the desired storage (e.g., vSAN or NFS datastores) using [Storage vMotion](https://help.ovhcloud.com/csm/fr-vmware-storage-vmotion?id=kb_article_view&sysparm_article=KB0046287).
 - Create backups for your workloads with OVHcloud S3 storage as described [here](https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-veeam?id=kb_article_view&sysparm_article=KB0047499).
 
-## Go Further
+## Go further
 
 For more details and advanced options:
 - Check [OVHcloud Hosted Private Cloud documentation](https://www.ovhcloud.com/en/private-cloud/).
 - Review [Veeam documentation](https://helpcenter.veeam.com/docs/backup/vsphere/index.html?ver=120).
-- Contact OVHcloud support if you need additional help.
+- Contact OVHcloud support if you need additional help
