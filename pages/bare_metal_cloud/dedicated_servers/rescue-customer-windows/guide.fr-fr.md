@@ -20,16 +20,14 @@ details[open]>summary::before {
 
 ## Objectif
 
-Le mode Rescue est un outil fourni par OVHcloud qui vous permet de démarrer sur un système d'exploitation temporaire dans le but de diagnostiquer et de résoudre les problèmes sur votre serveur.  
-La fonctionnalité du mode rescue en général est décrite sur notre page de guide :
-
-[Comment activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+Le mode Rescue est un outil fourni par OVHcloud permettant de démarrer sur un système d'exploitation temporaire. Il a pour but de diagnostiquer et de résoudre les problèmes sur votre serveur.  
+La fonctionnalité du mode rescue en général est décrite dans notre guide « [Comment activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) ».
 
 L'option **Système de secours client Windows** n'est disponible que pour les serveurs dédiés sur lesquels est installé un système d'exploitation **Windows Server**. Les conditions suivantes s'appliquent :
 
 - Le système rescue pour Windows (`rescue-customer-windows`) fonctionne dans une machine virtuelle (VM) lancée à partir du système rescue du client (`rescue-customer`, basé sur Debian GNU/Linux).
 - Les disques du serveur sont attachés à la VM avec *passthrough*, il est donc possible d'y accéder.
-- Les autres composants du serveur ne seront pas accessibles (CPU, RAM, carte réseau, carte RAID).
+- Les autres composants du serveur seront inaccessibles (CPU, RAM, carte réseau, carte RAID).
 - Le réseau est monté avec *passthrough* mais sans accès direct à la carte réseau. La VM porte l'adresse IP et l'adresse MAC du serveur *bare metal*.
 
 > [!warning]
@@ -39,7 +37,7 @@ L'option **Système de secours client Windows** n'est disponible que pour les se
 > Si vous avez des services en production sur votre serveur, le mode rescue les interrompt tant que la machine n’a pas été redémarrée en mode normal.
 > 
 
-**Ce guide explique comment démarrer un serveur dans le système de secours client Windows.**
+**Découvrez comment démarrer un serveur dans le système de secours client Windows.**
 
 ## Prérequis
 
@@ -51,7 +49,7 @@ L'option **Système de secours client Windows** n'est disponible que pour les se
 
 ### Activation du mode rescue pour Windows
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), ouvrez la section `Bare Metal Cloud`{.action} puis `Serveurs dédiés`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), ouvrez la section `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}.
 
 Cliquez sur le nom de votre serveur pour ouvrir l'onglet `Informations générales`{.action}.
 
@@ -159,7 +157,7 @@ Administrator@ns9356771.ip-203-0-113.eu's password:
 administrator@WINRESCUEOVH C:\Users\Administrator>
 ```
 
-Retrouvez plus d'informations sur les connexions SSH dans notre [guide d'introduction SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).  
+Retrouvez plus d'informations sur les connexions SSH dans notre [guide d'introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).  
 Vous pouvez également utiliser n'importe quel outil de connexion SSH, tel que [PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 
 ///
@@ -241,7 +239,7 @@ Utilisez ensuite la fonction `Restart`{.action} dans votre espace client OVHclou
 [Comment changer le mot de passe administrateur sur un serveur dédié Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
-
+ 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
-
+ 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
