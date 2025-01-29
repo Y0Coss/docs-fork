@@ -1,6 +1,6 @@
 ---
-title: "OVHcloud 3-AZ Region - Présentation de l'offre"
-excerpt: 'Découvrez le service OVHcloud 3-AZ, qui offre une haute disponibilité et une redondance inégalées entre trois datacenters'
+title: "BareMetal 3-AZ Region - Présentation de l'offre"
+excerpt: 'Découvrez le service BareMetal 3-AZ, qui offre une haute disponibilité et une redondance inégalées entre trois datacenters'
 updated: 2024-05-30
 ---
 
