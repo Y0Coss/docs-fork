@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Liste des adresses IP par cluster"
 excerpt: "Découvrez l'ensemble des adresses IP disponibles avec nos hébergements web"
-updated: 2025-02-29
+updated: 2025-01-29
 ---
 
 ## Objectif
