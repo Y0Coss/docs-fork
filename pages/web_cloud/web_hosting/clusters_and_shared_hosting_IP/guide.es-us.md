@@ -1,7 +1,7 @@
 ---
 title: "Direcciones IP de los clusters y alojamientos web"
 excerpt: "Descubra todas las direcciones IP disponibles con nuestros alojamientos web"
-updated: 2024-02-28
+updated: 2025-01-29
 ---
 
 ## Objetivo
