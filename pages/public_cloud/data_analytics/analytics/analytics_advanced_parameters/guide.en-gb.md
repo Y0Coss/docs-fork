@@ -15,7 +15,7 @@ Analytics engines are managed services, which means that they are not fully conf
 > - Managed Dashboards (Grafana)
 > - Kafka
 > - Kafka Connect
-> - Opensearch
+> - OpenSearch
 
 
 ## Requirements
@@ -153,7 +153,7 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/capabilities/advancedConfiguration
 >> >
-> Opensearch
+> OpenSearch
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch/{clusterId}/capabilities/advancedConfiguration
@@ -181,7 +181,7 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
 >> >
-> Opensearch
+> OpenSearch
 >> > [!api]
 >> >
 >> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/opensearch/{clusterId}/advancedConfiguration
