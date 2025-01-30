@@ -6,7 +6,11 @@ updated: 2025-01-29
 
 ## Ziel 
 
-Es kann notwendig werden, Zugriffseinstellungen für Dienste manuell anzupassen. Hierfür benötigen Sie dann die korrekte IP-Adresse, die zur spezifischen Konfiguration Ihres Webhostings gehört. Das ist etwa der Fall beim Konfigurieren von DNS-Zonen, ACLs oder OVHcloud Zusatzleistungen wie CDN, Länder-IPs oder SSL-Zertifikate.
+In dieser Anleitung finden Sie alle IP-Adressen der OVHcloud Webhostings. So können Sie zum Beispiel anhand folgender Angaben feststellen, welche IP-Adresse in Ihren DNS-Zonen angegeben werden muss:
+
+- Ihr Cluster/Ihr Hosting
+- Ihre Optionen (CDN, kostenpflichtiges SSL, kostenloses SSL...)
+- Gesuchtes Land...
 
 **Diese Anleitung verzeichnet alle verfügbaren IP-Adressen für OVHcloud Webhostings, sortiert nach Clustern.**
 
