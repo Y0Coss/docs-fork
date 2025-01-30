@@ -142,7 +142,7 @@ Seleccione la pestaña correspondiente a su elección:
 >> ![zimbra](images/zimbra_domain_add_external02.png){.thumbnail .w-400 .h400}
 >>
 >> > [!warning]
->>
+>> >
 >> > Después de 48 horas, si el CNAME no está visible en la zona DNS, la operación se cancela. Será necesario volver a intentar la operación.
 
 ### Cuentas de correo <a name="email"></a>

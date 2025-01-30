@@ -100,7 +100,7 @@ Tabela domen podaje dwie informacje:
 
 > [!warning]
 >
-> Należy [utworzyć organizację] (#organisations), aby móc dodać domenę do usługi Zimbra.
+> Należy [utworzyć organizację](#organisations), aby móc dodać domenę do usługi Zimbra.
 
 Aby dodać domenę do Twojej usługi Zimbra, kliknij w zakładkę `Domena`{.action}, następnie kliknij `Dodaj domenę`{.action}.
 

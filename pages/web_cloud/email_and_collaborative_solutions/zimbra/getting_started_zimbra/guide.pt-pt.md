@@ -15,7 +15,7 @@ updated: 2025-01-29
 
 > [!warning]
 >
-> **Importante*
+> **Importante**
 >
 > A oferta Zimbra é um produto em fase beta.
 >
