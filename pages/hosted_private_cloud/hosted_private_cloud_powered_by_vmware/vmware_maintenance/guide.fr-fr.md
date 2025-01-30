@@ -15,8 +15,8 @@ updated: 2025-01-30
 
 ## Prérequis
 
-- Être connecté à [l'espace client OVHcloud](/links/manager)
-- Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+- Être connecté à [l'espace client OVHcloud](/links/manager) ou à la [console API console pour vos services](/links/api).
+- Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](/links/hosted-private-cloud/vmware).
 
 ## En pratique
 
@@ -174,12 +174,13 @@ Pour avoir le détail de chaque robot, exécutez l'appel API suivant :
 
 | Objectif | Raison | Instructions préventives | Impact | Durée approximative | Fréquence |
 |----------|--------|--------------------------|--------|---------------|-----------|
-| Mettre à jour ou migrer les machines virtuelles Zerto (Zerto Virtual Manager, VRA) vers la dernière version proposée par OVHcloud. | Gestion du cycle de vie de Zerto par OVHcloud. | Un **rapport de contrôle d’intégrité** peut être envoyé si des problèmes sont détectés avant la maintenance. Ces problèmes devront être résolus avant de procéder. | - **Mises à jour (Upgrades)** : Impact minimal, indisponibilité temporaire de la réplication et du basculement.<br>- **Migrations** : Arrêt complet du service, nécessitant une réinstallation sur une nouvelle plateforme. | **Upgrades** : ~1h par instance.<br>**Migrations** : Jusqu’à 12h par instance. | Basé sur le cycle de vie de l’éditeur |
+| Mettre à jour ou migrer les machines virtuelles Zerto (Zerto Virtual Manager, VRA) vers la dernière version proposée par OVHcloud. | Gestion du cycle de vie de Zerto par OVHcloud. | Un **rapport de contrôle d’intégrité** peut être envoyé si des problèmes sont détectés avant la maintenance. Ces problèmes devront être résolus avant de procéder. | - **Mises à jour (Upgrades)** : Impact minimal, indisponibilité temporaire de la réplication et du failover.<br>- **Migrations** : Arrêt complet du service, nécessitant une réinstallation sur une nouvelle plateforme. | **Upgrades** : ~1h par instance.<br>**Migrations** : Jusqu’à 12h par instance. | Basé sur le cycle de vie de l’éditeur |
 
 > [!primary]  
-> **Différence entre les mises à jour et les migrations :**  
-> - **Mises à jour (Upgrades)** : Consistent à mettre à jour les composants existants de Zerto (par exemple, de Zerto 9.5 à 9.7) avec une interruption minimale du service (~1 heure).  
-> - **Migrations** : Impliquent une transition vers une nouvelle plateforme (par exemple, de Zerto basé sur Windows à Zerto appliance en version 10u6), entraînant jusqu’à 12 heures d’arrêt complet.
+> **Différence entre les mises à jour et les migrations :**
+>
+> - Les **mises à jour (Upgrades)** consistent à mettre à jour les composants existants de Zerto (par exemple, de Zerto 9.5 à 9.7) avec une interruption minimale du service (~1 heure).  
+> - Les **migrations** impliquent une transition vers une nouvelle plateforme (par exemple, de Zerto basé sur Windows à Zerto appliance en version 10u6), entraînant jusqu’à 12 heures d’arrêt complet.
 
 ### Glossaire
 

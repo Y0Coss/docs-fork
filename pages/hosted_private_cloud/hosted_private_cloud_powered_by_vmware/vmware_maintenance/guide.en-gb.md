@@ -14,9 +14,8 @@ updated: 2025-01-30
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
-- You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) infrastructure.
-- You have access to the [OVHcloud Control Panel](/links/manager) or the [API console for your services](https://eu.api.ovh.com/).
+- You are the administrative or technical contact for the [VMware on OVHcloud solution](/links/hosted-private-cloud/vmware) infrastructure.
+- You have access to the [OVHcloud Control Panel](/links/manager) or the [API console for your services](/links/api).
 
 ## Instructions
 
@@ -178,6 +177,7 @@ To get the details of each robot, run the following API call:
 
 > [!primary] 
 > **Difference between upgrades and migrations:**
+>
 > - **Upgrades** involve updating existing Zerto components (e.g., Zerto 9.5 to 9.7) with minimal service disruption (~1 hour).
 > - **Migrations** involve transitioning to a new platform (e.g., from Windows-based Zerto to appliance-based Zerto 10u6), resulting in up to 12 hours of complete downtime.
 
