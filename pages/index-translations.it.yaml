@@ -174,6 +174,15 @@ public-cloud-compute-instance-management-horizon: Gestione via Horizon
 public-cloud-compute-instance-management-openstack: Gestione via API OpenStack
 public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutorials
+public-cloud-cross-functional: Public Cloud informazioni generali
+public-cloud-cross-functional-getting-started: Per iniziare
+public-cloud-cross-functional-general-information: Informazioni generali
+public-cloud-cross-functional-project-management: Gestione dei progetti Public Cloud
+public-cloud-cross-functional-tutorials: Tutorials
+public-cloud-cross-functional-services-management-informations: Informazioni sulla gestione dei servizi
+public-cloud-cross-functional-horizon: Gestione via Horizon
+public-cloud-cross-functional-openstack: Gestione via OpenStack
+public-cloud-cross-functional-infrastructure: Infrastruttura
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
