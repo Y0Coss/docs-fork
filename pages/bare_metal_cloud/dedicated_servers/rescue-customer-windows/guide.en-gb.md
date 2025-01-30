@@ -206,7 +206,7 @@ Once logged in to the Windows customer rescue system, you need to import (mount)
 
 | ![Windows disk management](images/rescue-disk-mgmt8.png){.thumbnail} |
 |:--|
-| In this example, the two disks of the server are mirrored, therefore the status `Resynching` will be displayed. This is the normal process; the resynchronisation will continue once the server is rebooted on its installed OS. |
+| In this example, the two disks of the server are mirrored, therefore the status `Resynching` will be displayed. This is the normal process; the resynchronisation will continue once the server is rebooted into its installed OS. |
 
 | ![Windows disk management](images/rescue-disk-mgmt9.png){.thumbnail} |
 |:--|
@@ -233,6 +233,8 @@ In the [OVHcloud Control Panel](/links/manager), [change the boot mode](#netboot
 ![Netboot Disk](images/rescue-mode-007.png){.thumbnail width="800"}
 
 Then use the `Restart`{.action} function in your OVHcloud Control Panel.
+
+<a name="gofurther"></a>
 
 ## Go further
 

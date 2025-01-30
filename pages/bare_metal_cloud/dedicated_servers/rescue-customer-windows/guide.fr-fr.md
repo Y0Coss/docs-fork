@@ -233,7 +233,9 @@ Dans votre [espace client OVHcloud](/links/manager), [changez le mode de démarr
 
 Utilisez ensuite la fonction `Restart`{.action} dans votre espace client OVHcloud.
 
-## Aller plus loin <a name="gofurther"></a>
+<a name="gofurther"></a>
+
+## Aller plus loin
 
 [Comment activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
