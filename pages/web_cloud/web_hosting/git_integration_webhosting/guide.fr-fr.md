@@ -75,7 +75,7 @@ Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme :
 - `https://github.com/<username>/<repository_name.git>` pour un dépôt public.
 - `git@github.com:<username>/<repository_name.git>` pour un dépôt privé. 
  
- Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
+ Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 
