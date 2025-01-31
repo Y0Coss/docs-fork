@@ -177,39 +177,39 @@ Once logged in to the Windows customer rescue system, you need to import (mount)
 > If you require professional assistance with server administration, consider the details in the [Go further](#gofurther) section of this guide.
 
 | ![Windows disk management](images/rescue-disk-mgmt1.png){.thumbnail} |
-|:--|
+|---|
 | Right-click on the `Start Menu`{.action} button and open `Disk Management`{.action}. |
 
 | ![Windows disk management](images/rescue-disk-mgmt2.png){.thumbnail width="700"} |
-|:--|
+|---|
 | `Disk 0` contains the rescue system (volume `C:`). The disks of your Windows server will be displayed as `Offline`. |
 
 | ![Windows disk management](images/rescue-disk-mgmt3.png){.thumbnail} |
-|:--|
+|---|
 | Right-click on each disk and select `Online`{.action} from the context menu. |
 
 | ![Windows disk management](images/rescue-disk-mgmt4.png){.thumbnail} |
-|:--|
+|---|
 | The server disks are now [recognized by the rescue system as `Foreign`](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/troubleshoot-disk-management#a-dynamic-disks-status-is-foreign), a status indicating in this case that the attached disks belong to a different operating system. |
 
 | ![Windows disk management](images/rescue-disk-mgmt5.png){.thumbnail} |
-|:--|
+|---|
 | Right-click on a disk and select `Import Foreign Disks...`{.action} from the context menu. |
 
 | ![Windows disk management](images/rescue-disk-mgmt6.png){.thumbnail} |
-|:--|
+|---|
 | If applicable, select the disks to import. Click `OK`{.action}. |
 
 | ![Windows disk management](images/rescue-disk-mgmt7.png){.thumbnail} |
-|:--|
+|---|
 | Click `OK`{.action}. |
 
 | ![Windows disk management](images/rescue-disk-mgmt8.png){.thumbnail} |
-|:--|
+|---|
 | In this example, the two disks of the server are mirrored, therefore the status `Resynching` will be displayed. This is the normal process; the resynchronisation will continue once the server is rebooted into its installed OS. |
 
 | ![Windows disk management](images/rescue-disk-mgmt9.png){.thumbnail} |
-|:--|
+|---|
 | To access your files, right-click on the Windows partition of your `Disk 1` and select `Open`{.action} from the context menu. |
 
 ///

@@ -176,39 +176,39 @@ Une fois connecté au système de secours client Windows, vous devez importer (*
 > Si vous avez besoin d’une assistance professionnelle pour l’administration de votre serveur, consultez la section [Aller plus loin](#gofurther) de ce guide.
 
 | ![Gestion des disques Windows](images/rescue-disk-mgmt1.png){.thumbnail} |
-|:--|
+|---|
 | Faites un clic droit sur le bouton `Start Menu`{.action} et ouvrez `Disk Management`{.action}. |
 
 | ![Gestion des disques Windows](images/rescue-disk-mgmt2.png){.thumbnail width="700"} |
-|:--|
+|---|
 | `Disk 0` contient le système rescue (volume `C:`). Les disques de votre serveur Windows seront affichés comme `Offline`. |
 
 | ![Gestion des disques Windows](images/rescue-disk-mgmt3.png){.thumbnail} |
-|:--|
+|---|
 | Faites un clic droit sur chaque disque et sélectionnez `Online`{.action} dans le menu contextuel. |
 
 | ![Gestion des disques Windows](images/rescue-disk-mgmt4.png){.thumbnail} |
-|:--|
+|---|
 | Les disques du serveur sont maintenant [reconnus par le système rescue comme `Foreign`](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/troubleshoot-disk-management#a-dynamic-disks-status-is-foreign), un état indiquant dans ce cas que les disques attachés appartiennent à un système d'exploitation différent. |
 
 | ![Gestion des disques Windows](images/rescue-disk-mgmt5.png){.thumbnail} |
-|:--|
+|---|
 | Faites un clic droit sur un disque et sélectionnez `Import Foreign Disks...`{.action} dans le menu contextuel. |
 
 | ![Gestion des disques Windows](images/rescue-disk-mgmt6.png){.thumbnail} |
-|:--|
+|---|
 | Le cas échéant, sélectionnez les disques à importer. Cliquez sur `OK`{.action}. |
 
 | ![Gestion des disques Windows](images/rescue-disk-mgmt7.png){.thumbnail} |
-|:--|
+|---|
 | Cliquez sur `OK`{.action}. |
 
 | ![Gestion des disques Windows](images/rescue-disk-mgmt8.png){.thumbnail} |
-|:--|
+|---|
 | Dans cet exemple, les deux disques du serveur sont mis en miroir, donc l'état `Resynching` sera affiché. Il s'agit du processus normal ; la resynchronisation se poursuivra une fois que le serveur aura redémarré sur son système d'exploitation installé. |
 
 | ![Gestion des disques Windows](images/rescue-disk-mgmt9.png){.thumbnail} |
-|:--|
+|---|
 | Pour accéder à vos fichiers, faites un clic droit sur la partition Windows de votre `Disk 1` et sélectionnez `Open`{.action} dans le menu contextuel. |
 
 ///
