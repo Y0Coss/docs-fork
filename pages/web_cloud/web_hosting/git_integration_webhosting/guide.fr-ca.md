@@ -1,7 +1,7 @@
 ---
 title: "Configurer et utiliser Git avec son hébergement web OVHcloud"
 excerpt: "Découvrez comment configurer et utiliser Git avec votre hébergement web dans votre espace client OVHcloud"
-updated: 2025-01-30
+updated: 2025-01-31
 ---
 
 ## Objectif

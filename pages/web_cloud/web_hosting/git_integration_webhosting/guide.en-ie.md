@@ -1,7 +1,7 @@
 ---
 title: "Configuring and using Git with an OVHcloud web hosting plan"
 excerpt: "Find out how to configure and use Git with your web hosting plan in the OVHcloud Control Panel"
-updated: 2025-01-30
+updated: 2025-01-31
 ---
 
 ## Objective
@@ -111,7 +111,7 @@ Copy and save the SSH key to your GitHub account. This way, you can establish a 
 
 The form for adding a new SSH key will open:
 
-- **Title** : add a description for your SSH key. For example, you can name this key “OVHcloud”.
+- **Title** : add a description for your SSH key. For example, you can name this key "OVHcloud".
 - **Type of key**: leave the default value `authentication key`
 - **Key**: Paste your SSH key.
 
