@@ -55,7 +55,7 @@ Das Git-Zuordnungsformular wird angezeigt. Mehrere Elemente müssen konfiguriert
 
 #### GitHub-Repository definieren
 
-Geben Sie die Adresse Ihres GitHub Repositorys ein. Wenn Sie noch kein GitHub-Repository für Ihr Projekt haben, erstellen Sie eines.
+Geben Sie die Adresse Ihres GitHub-Repositorys ein. Wenn Sie noch kein GitHub-Repository für Ihr Projekt haben, erstellen Sie eines.
 
 So erstellen Sie ein neues Repository:
 
@@ -103,7 +103,7 @@ Kehren Sie zum Git-Zuordnungsformular in Ihrem OVHcloud Kundencenter zurück und
 >
 > **Warum wird der SSH-Schlüssel nur für ein privates Repository benötigt?**
 >
-> Wenn Ihr GitHub-Repository öffentlich ist, können die Dateien ohne Authentifizierung abgerufen werden, was bedeutet, dass Git den Code klonen und aktualisieren kann, ohne einen SSH-Schlüssel benötigen zu müssen. Wenn Ihr Repository jedoch privat ist, verlangt GitHub eine Authentifizierung, um darauf zuzugreifen. Der SSH-Schlüssel stellt dann diese sichere Verbindung her und gewährleistet, dass nur autorisierte Benutzer mit dem Repository interagieren können.
+> Wenn Ihr GitHub-Repository öffentlich ist, können die Dateien ohne Authentifizierung abgerufen werden, was bedeutet, dass Git den Code klonen und aktualisieren kann, ohne einen SSH-Schlüssel zu benötigen. Wenn Ihr Repository jedoch privat ist, verlangt GitHub eine Authentifizierung, um darauf zuzugreifen. Der SSH-Schlüssel stellt dann diese sichere Verbindung her und gewährleistet, dass nur autorisierte Benutzer mit dem Repository interagieren können.
 
 Kopieren Sie den SSH-Schlüssel und speichern Sie ihn in Ihrem GitHub-Konto. So können Sie eine sichere Verbindung herstellen, ohne dass für jede Git-Operation ein Kennwort eingegeben werden muss.
 
@@ -114,7 +114,7 @@ Kopieren Sie den SSH-Schlüssel und speichern Sie ihn in Ihrem GitHub-Konto. So 
 
 Das Formular zum Hinzufügen eines neuen SSH-Schlüssels wird angezeigt:
 
-- **Title**: Geben Sie eine Beschreibung für Ihren SSH-Schlüssel ein. Sie können diesen Schlüssel zum Beispiel „OVHcloud“ nennen.
+- **Title**: Geben Sie eine Beschreibung für Ihren SSH-Schlüssel ein. Sie können diesen Schlüssel zum Beispiel "OVHcloud" nennen.
 - **Type of key**: Übernehmen Sie den Standardwert `authentication key`{.action}
 - **Key**: Fügen Sie Ihren SSH-Schlüssel ein.
 
