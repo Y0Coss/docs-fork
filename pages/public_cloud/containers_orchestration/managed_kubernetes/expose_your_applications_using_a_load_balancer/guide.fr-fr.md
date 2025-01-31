@@ -7,7 +7,7 @@ updated: 2025-01-03
 > [!warning]
 >
 > Usage of the [Public Cloud Load Balancer](/links/public-cloud/load-balancer) with Managed Kubernetes Service (MKS) is now in General Availability.
-> However this LoadBalancer (based on Octavia project) is not the default one yet for clusters running Kubernetes versions <1.31. For those clusters, you must use the annotation `loadbalancer.ovhcloud.com/class: octavia` to deploy an Octavia LoadBalancer from your MKS cluster.
+> However this LoadBalancer (based on Octavia project) is not the default one yet for clusters running Kubernetes versions <1.31. For those clusters, you must use the annotation `loadbalancer.ovhcloud.com/class: octavia` to deploy an Octavia LoadBalancer from your MKS cluster. See also [How to migrate from LoadBalancer for MKS (IOLB) to Public Cloud LoadBalancer (Octavia)](/pages/public_cloud/containers_orchestration/managed_kubernetes/migrate-loadbalancer-iolb-to-octavia)
 >
 
 ## Objective
@@ -414,36 +414,6 @@ When exposing services like nginx-ingress-controller, it's a common requirement 
 > [!warning]
 >
 > Only ProxyProtocol version 1 is supported at the moment by the MKS's integration.
->
-
-#### Migrate from Loadbalancer for Kubernetes to Public Cloud Load Balancer
-
-In order to migrate from an existing [Loadbalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) to a [Public Cloud Load Balancer](/links/public-cloud/load-balancer) you will have to modify an existing Service and change its LoadBalancer class.
-
-Your existing LoadBalancer Service using [Loadbalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) should have the following annotation:
-
-```yaml
-annotations:
-  loadbalancer.ovhcloud.com/class: "iolb"
-```
-
-##### Step 1 - Edit your Service to change the LoadBalancer class to 'octavia'
-
-```yaml
-annotations:
-  loadbalancer.ovhcloud.com/class: "octavia" // not required for clusters running kubernetes versions >= 1.31, you can just remove the annotation.
-```
-
-##### Step 2 - Apply the change
-
-```yaml
-kubectl apply -f your-service-manifest.yaml
-```
-
-> [!warning]
->
-> As [Loadbalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) and [Public Cloud Load Balancer](/links/public-cloud/load-balancer) do not use the same solution for Public IP allocation, **it is not possible to keep the existing public IP** of your Loadbalancer for Kubernetes.
-> Changing the LoadBalancer class of your Service will lead to the creation of a new Loadbalancer and the allocation of a new Public IP (Floating IP).
 >
 
 ### Use an existing Floating IP in the tenant
