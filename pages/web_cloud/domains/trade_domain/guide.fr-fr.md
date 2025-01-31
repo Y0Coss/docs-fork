@@ -109,7 +109,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> - un e-mail envoyé au titulaire actuel;
 >> - un e-mail envoyé au futur titulaire.
 >>
->> Si l'adresse e-mail n'est pas modifiée dans le cadre du changement de titulaire, l'adresse e-mail de référence recevra les deux e-mails, mais chacun d'entre eux doivent être confirmés.
+>> Si l'adresse e-mail n'est pas modifiée dans le cadre du changement de titulaire, l'adresse e-mail de référence recevra les deux e-mails, mais chacun de ces deux e-mails doit faire l'objet d'une confirmation.
 >>
 >> Une fois que les deux destinataires ont confirmé la demande par e-mail, le changement de titulaire du nom de domaine prendra effet.
 >>
