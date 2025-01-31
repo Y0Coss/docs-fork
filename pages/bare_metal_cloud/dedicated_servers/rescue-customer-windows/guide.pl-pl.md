@@ -72,7 +72,7 @@ Kliknij przycisk `Dalej`{.action}.
 
 W kroku **Podsumowanie** kliknij `Zatwierdź`{.action}.
 
-![Summary]((images/winresc_summ.png){.thumbnail}
+![Summary](images/winresc_summ.png){.thumbnail}
 
 Powinieneś mieć teraz powiadomienie dotyczące parametru `Netboot` w zakładce `Informacje ogólne`{.action}.
 
