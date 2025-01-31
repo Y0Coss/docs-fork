@@ -102,7 +102,7 @@ Retournez sur le formulaire d'association de Git de votre espace client OVHcloud
 >
 > Lorsque votre dépôt GitHub est public, les fichiers peuvent être récupérés sans authentification, ce qui signifie que Git peut cloner et mettre à jour le code sans avoir besoin d'une clé SSH. En revanche, si votre dépôt est privé, GitHub exige une authentification pour y accéder. La clé SSH permet alors d’établir cette connexion sécurisée et de garantir que seuls les utilisateurs autorisés puissent interagir avec le dépôt.
 
-Copiez et enregistrez la clé SSH sur votre compte GitHub. Cela permet d'établir une connexion sécurisée sans nécessiter de saisie de mot de passe à chaque opération Git que vous serez amenés à effectuer.
+Copiez et enregistrez la clé SSH sur votre compte GitHub. Cela permet d'établir une connexion sécurisée sans nécessiter de saisie de mot de passe à chaque opération Git que vous serez amené à effectuer.
 
 - Connectez-vous à votre compte GitHub.
 - Cliquez sur votre image de profil en haut à droite, puis sur `Settings`{.action}.
