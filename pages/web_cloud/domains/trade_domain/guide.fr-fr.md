@@ -74,7 +74,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 > **Etape 4**
 >>
->> Sur la nouvelle page, rendez-vous dans le cadre **Titulaire**, puis cliquez sur le bouton `Modifier`{.action}
+>> Sur la nouvelle page, rendez-vous dans le cadre **Titulaire**, puis cliquez sur le bouton `Modifier`{.action}.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
