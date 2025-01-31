@@ -96,7 +96,7 @@ Retournez sur le formulaire d'association de Git de votre espace client OVHcloud
 >
 > La génération d'une clé SSH est une étape cruciale, car elle établit une connexion sécurisée et chiffrée entre le répertoire de votre site web et le dépôt GitHub. Cette clé assure que les transferts de données et les modifications de code se font de manière sûre et authentifiée, prévenant les accès non autorisés et garantissant l'intégrité du code.
 
-> [!info]
+> [!primary]
 >
 > **Pourquoi la clé SSH est-elle nécessaire uniquement pour un dépôt privé ?**
 >
