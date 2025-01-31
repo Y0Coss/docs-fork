@@ -120,7 +120,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 > 
 > - Si la modification est refusée par l'une des deux parties, la demande est annulée.
 >
-> - Si l'adresse e-mail de l'actuel titulaire est obsolète ou inaccessible, vous pouvez, **dans ce cas précis**, contacter directement le support en créant un ticket d'assistance depuis votre [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+> - Si l'adresse e-mail du titulaire actuel est obsolète ou inaccessible, vous pouvez, **dans ce cas précis**, contacter directement le support en créant un ticket d'assistance depuis votre [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
 > - Si le titulaire du nom de domaine a été modifié, le nom de domaine ne pourra pas être [transféré vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) pendant une période de 60 jours.
 
