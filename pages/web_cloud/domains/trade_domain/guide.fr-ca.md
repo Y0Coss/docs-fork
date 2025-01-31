@@ -60,7 +60,7 @@ Dans l'onglet `Informations générales`{.action}, accédez à la section **Abon
 >
 > Toute modification apportée au prénom, au nom, à l’organisation, au statut légal et à l’adresse e-mail du titulaire est considérée comme un changement de titulaire.
 > 
-> Si vous modifiez uniquement les détails de titulaire autres que ceux mentionnés ci-dessus, passez à la section [Mise à jour des informations de titulaire](#updateownerinformation) ci-dessous.
+> Si vous modifiez uniquement les détails de titulaire autres que ceux mentionnés ci-dessus, passez à la section [Mise à jour des informations du titulaire](#updateownerinformation) ci-dessous.
 > 
 
 Un nouvel onglet de votre navigateur s'ouvre avec tous les domaines éligibles au changement de titulaire. Sélectionnez un nom de domaine dans la liste en cochant la case située à gauche. Cette étape peut également être utilisée pour lancer une opération groupée : il est possible d'initier un changement de titulaire pour plusieurs noms de domaine à la fois, par exemple pour changer le titulaire de tous les domaines *.ovh*. Une fois vos choix effectués, cliquez sur `Continuer`{.action}.
