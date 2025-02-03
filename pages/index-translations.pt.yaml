@@ -293,44 +293,6 @@ web-cloud-hosting-website-optimisation: Otimização site
 web-cloud-hosting-api: API
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Primeiros passos
-web-cloud-web-paas-powered-by-platformsh: Web PaaS powered by Platform.sh
-web-cloud-web-paas-powered-by-platformsh-administration: Administrar
-web-cloud-web-paas-powered-by-platformsh-administration-management-console: Consola de gestão
-web-cloud-web-paas-powered-by-platformsh-best-practices: Melhores práticas
-web-cloud-web-paas-powered-by-platformsh-development: Desenvolvimento
-web-cloud-web-paas-powered-by-platformsh-development-command-line-interface-cli: Interface da linha de comandos (CLI)
-web-cloud-web-paas-powered-by-platformsh-development-setting-up-a-local-development-environment: Implementação de um ambiente de desenvolvimento local
-web-cloud-web-paas-powered-by-platformsh-domains: Domínios
-web-cloud-web-paas-powered-by-platformsh-domains-custom-domains: Domínios personalizados
-web-cloud-web-paas-powered-by-platformsh-frameworks: Frameworks
-web-cloud-web-paas-powered-by-platformsh-frameworks-drupal-7: Drupal 7
-web-cloud-web-paas-powered-by-platformsh-frameworks-hibernate: Hibernate
-web-cloud-web-paas-powered-by-platformsh-frameworks-jakarta-eeeclipse-microprofile: Jakarta EE/Eclipse MicroProfile
-web-cloud-web-paas-powered-by-platformsh-frameworks-spring: Spring
-web-cloud-web-paas-powered-by-platformsh-getting-started: Primeiros passos
-web-cloud-web-paas-powered-by-platformsh-integrations: Integrações
-web-cloud-web-paas-powered-by-platformsh-integrations-activity-scripts: Scripts de atividade
-web-cloud-web-paas-powered-by-platformsh-integrations-external-integrations: Integração externa
-web-cloud-web-paas-powered-by-platformsh-integrations-notifications: Notificações
-web-cloud-web-paas-powered-by-platformsh-integrations-profiling: Criação de Perfis
-web-cloud-web-paas-powered-by-platformsh-integrations-source-integrations: Integrações de fontes
-web-cloud-web-paas-powered-by-platformsh-languages: Idiomas
-web-cloud-web-paas-powered-by-platformsh-languages-cnet-core: C#/.NET Core
-web-cloud-web-paas-powered-by-platformsh-languages-elixir: Elixir
-web-cloud-web-paas-powered-by-platformsh-languages-go: Go
-web-cloud-web-paas-powered-by-platformsh-languages-java: Java
-web-cloud-web-paas-powered-by-platformsh-languages-lisp: Lisp
-web-cloud-web-paas-powered-by-platformsh-languages-nodejs: Node.js
-web-cloud-web-paas-powered-by-platformsh-languages-php: PHP
-web-cloud-web-paas-powered-by-platformsh-languages-python: Python
-web-cloud-web-paas-powered-by-platformsh-languages-ruby: Ruby
-web-cloud-web-paas-powered-by-platformsh-overview: Descrição
-web-cloud-web-paas-powered-by-platformsh-security: Segurança
-web-cloud-web-paas-powered-by-platformsh-setting-up: Início
-web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-routes: Configuração das rotas
-web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-services: Configurar os serviços
-web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-your-application: Configurar a aplicação
-web-cloud-web-paas-powered-by-platformsh-tutorials: Tutoriais
 storage-object-storage: Object Storage
 storage-object-storage-general-information: General information
 storage-object-storage-general-guides-to-start: General guides to start
