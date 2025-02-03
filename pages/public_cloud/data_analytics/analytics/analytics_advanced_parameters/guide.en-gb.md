@@ -1,7 +1,7 @@
 ---
 title: Analytics - How to configure your advanced parameters
 excerpt: Advanced configuration for Analytics engines
-updated: 2025-01-13
+updated: 2025-02-03
 ---
 
 ## Objective

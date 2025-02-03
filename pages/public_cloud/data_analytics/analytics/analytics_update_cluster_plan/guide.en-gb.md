@@ -1,7 +1,7 @@
 ---
 title: Analytics - How to update your service plan
 excerpt: Find out how to upgrade the service plan of your cluster
-updated: 2025-01-15
+updated: 2025-02-03
 ---
 
 ## Objective

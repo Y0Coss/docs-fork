@@ -1,7 +1,7 @@
 ---
 title: Analytics - How to resize your service storage
 excerpt: Find out how to adjust the storage space of your cluster
-updated: 2025-01-15
+updated: 2025-02-03
 ---
 
 ## Objective

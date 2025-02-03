@@ -1,7 +1,7 @@
 ---
 title: Analytics - How to restore a backup
 excerpt: Find out how to restore a backup
-updated: 2025-01-14
+updated: 2025-02-03
 ---
 
 ## Objective

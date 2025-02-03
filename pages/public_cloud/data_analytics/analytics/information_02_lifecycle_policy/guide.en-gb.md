@@ -1,7 +1,7 @@
 ---
 title: Analytics - Lifecycle policy
 excerpt: Lifecycle policy for Analytics engines
-updated: 2025-01-13
+updated: 2025-02-03
 ---
 
 ## Objective

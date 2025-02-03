@@ -1,7 +1,7 @@
 ---
 title: Analytics - How to set up your Kubernetes database operator
 excerpt: Find out how to install and use the Kubernetes database operator
-updated: 2025-01-20
+updated: 2025-02-03
 ---
 
 ## Objective

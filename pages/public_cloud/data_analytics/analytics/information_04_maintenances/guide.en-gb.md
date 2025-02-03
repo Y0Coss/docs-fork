@@ -1,7 +1,7 @@
 ---
 title: Analytics - Maintenance operations
 excerpt: Find out how your cluster is maintained
-updated: 2025-01-13
+updated: 2025-02-03
 ---
 
 ## Objective
