@@ -16,7 +16,7 @@ This guide aims to provide a clear and detailed method for creating and updating
 
 - Access to the [OVHcloud API](https://api.ovh.com/) (create your identifiers by consulting [this guide](/pages/manage_and_operate/api/first-steps))
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account.
-- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or to the [OVHcloud API](https://api.ovh.com/)   
+- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or to the [OVHcloud API](https://api.ovh.com/)
 - Be familiar with [Terraform] (/pages/public_cloud/compute/how_to_use_terraform) if you wish to use it.
 - Be familiar with the principles of a [savings plan](...)
 
@@ -61,7 +61,7 @@ You can create your Savings Plan for the type of resource you want by following 
 >> # creation of a Savings Plan
 >> resource "ovh_savings_plan" "savings_plan_b3_8" {
 >>   service_name = "<public cloud project ID>"
->>   flavor = "B3-8"
+>>   flavor = "b3-8" # instance type or rancher/rancher_standard or rancher_ovhcloud_edition
 >>   period = "P1M" #  P mandatory, number for duration and M for ‘month’, Y for ‘year’ ...
 >>   size = 10
 >>   display_name = "Savings_plan_simple_b3_8"

@@ -46,11 +46,6 @@ Vous pouvez créer votre avings plan pour le type de ressource voulue en suivant
 >>
 >> ![Savings Plan terms/conditions and create](images/savings_plan_terms_and_creation.png){.thumbnail}
 >>
-<!-- > Via API
->> Pour créer un Savings plan, utilisez la route suivante :
->> > [!api]
->> >
->> > @api {v1} /services  -->
 > Via Terraform
 >> Pour créer un Savings plan, vous aurez besoin de 5 éléments minimum :
 >> 
@@ -66,7 +61,7 @@ Vous pouvez créer votre avings plan pour le type de ressource voulue en suivant
 >> # creation of a Savings Plan
 >> resource "ovh_savings_plan" "savings_plan_b3_8" {
 >>   service_name = "<public cloud project ID>"
->>   flavor = "B3-8"
+>>   flavor = "b3-8" # type de l'instance ou rancher/rancher_standard ou rancher_ovhcloud_edition
 >>   period = "P1M" # P obligatoire, chiffre pour la durée et M pour "mois", Y pour "year" ..
 >>   size = 10
 >>   display_name = "Savings_plan_simple_b3_8"
