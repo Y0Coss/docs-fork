@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - How to configure your advanced parameters
 excerpt: Advanced configuration for Public Cloud Databases engines
-updated: 2025-01-14
+updated: 2025-02-03
 ---
 
 ## Objective
@@ -20,9 +20,9 @@ Public cloud database engines are managed services, which means that they are no
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account   
-- A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)   
-- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or to the [OVHcloud API](https://api.ovh.com/)   
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
 
 ## Instructions
 
@@ -45,7 +45,7 @@ Public cloud database engines are managed services, which means that they are no
 
 ### Using the OVHcloud Control Panel
 
-To change the advanced configuration, you first need to log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, select your engine instance then the `Advanced configuration`{.action} tab.
+To change the advanced configuration, you first need to log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, select your engine instance then the `Advanced configuration`{.action} tab.
 
 Select the key of the advanced setting you want to define, then set its value.
 
@@ -216,6 +216,6 @@ You can check the changes in different ways such as:
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

@@ -12,8 +12,8 @@ No matter the database technology, when no more physical disk space is available
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [Public Cloud database service](https://www.ovhcloud.com/en-gb/public-cloud/databases/) up and running
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud database service](/links/public-cloud/databases) up and running
 
 ## Instructions
 
@@ -21,7 +21,7 @@ No matter the database technology, when no more physical disk space is available
 
 #### Disk space usage metrics
 
-As part of using your Public Cloud Databases service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or using the [API](/pages/manage_and_operate/api/first-steps). You can also make use of [cross-service integrations](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) to gather, observe and alert based on services metrics.
+As part of using your Public Cloud Databases service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](/links/manager) or using the [API](/pages/manage_and_operate/api/first-steps). You can also make use of [cross-service integrations](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) to gather, observe and alert based on services metrics.
 
 #### Mail notifications
 
@@ -75,6 +75,6 @@ This will give you a 15 minutes time window to write again to your database. At 
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
