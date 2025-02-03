@@ -35,7 +35,7 @@ OVHcloud follows the official life cycle of each distribution. All source of inf
 >
 > This section aims to rapidly give you the high-level view of Operating systems versions and support by OVHcloud.
 >
-> Please note before that :
+> Please note before that:
 > 
 > - OVHcloud Linux releases can have a couple of weeks of delay compared to distribution releases.
 > - OVHcloud Windows releases can have a couple of months of delay compared to Microsoft releases.
