@@ -558,7 +558,7 @@
             + [SAP logs on OVHcloud Logs Data Platform - Analyze and work with your logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_analyze_and_work_with_your_logs)
             + [SAP logs on OVHcloud Logs Data Platform - Index of SAP logs](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_index_of_sap_logs)
 + Public Cloud
-    + [Public Cloud general informations](products/public-cloud-cross-functional)
+    + [Public Cloud - general information](products/public-cloud-cross-functional)
         + [Getting started](public-cloud-cross-functional-getting-started)
             + [All you need to know to get started with Public Cloud](public_cloud/compute/00-essential-info-to-get-started-on-public-cloud)
             + [How to use the Public Cloud interface](public_cloud/compute/03-public-cloud-interface-walk-me)
@@ -576,7 +576,7 @@
             + [Healthcare (HDS) compliance activation](public_cloud/compute/activate-hds-certification)
         + [Tutorials](public-cloud-cross-functional-tutorials)
             + [How to use Terraform](public_cloud/compute/how_to_use_terraform)
-        + [Services management informations](public-cloud-cross-functional-services-management-informations)
+        + [Services management](public-cloud-cross-functional-services-management)
             + [Managing from Horizon](public-cloud-cross-functional-horizon)
                 + [Introducing Horizon](public_cloud/compute/introducing_horizon)
                 + [Access and security settings in Horizon](public_cloud/compute/access_and_security_in_horizon)
