@@ -47,8 +47,6 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 > - les mises à jour d'état du nom de domaine. Pour vérifier cela, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action}, puis sur  `Opérations en cours`{.action}.
 >
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), dans la section `Web Cloud`{.action}. Cliquez sur `Noms de Domaine`{.action} , sélectionnez le nom de domaine générique (gTLD) dont vous souhaitez modifier le titulaire.
-
 ### Lancer la procédure de changement de titulaire ou modifier les informations qui lui sont associées
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7** étapes.
@@ -80,10 +78,6 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 > **Etape 5**
 >>
->> Sur la nouvelle page, rendez-vous dans le cadre **Titulaire**, puis cliquez sur le bouton `Modifier`{.action}.
->>
->> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
->>
 >> > [!warning]
 >> >
 >> > Toute modification apportée au prénom, au nom, à l’organisation, au statut légal ou à l’adresse e-mail du titulaire est considérée comme un **changement de titulaire**.
@@ -91,6 +85,8 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >> > Si vous modifiez **uniquement** des coordonnées du titulaire autres que celles mentionnées ci-dessus, faites vos modifications directement, puis cliquez sur `Valider`{.action}. Dans ce cas précis, il ne sera pas nécessaire de lancer une demande de changement de titulaire. Pour cette opération, vous n'avez pas besoin de confirmer les modifications par e-mail.
 >> >
 >> > Le cas échéant et pour initier la demande de changement de titulaire, cliquez sur le lien situé en bas de page et intitulé `Cliquez ici pour continuer`{.action}.
+>>
+>> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
 > **Etape 6**
 >>
