@@ -25,9 +25,7 @@ OVHcloud follows the official life cycle of each distribution. All source of inf
 | Almalinux                     | [Life Cycle](https://wiki.almalinux.org/release-notes/)                                   |
 | Rocky Linux                   | [Life Cycle](https://wiki.rockylinux.org/rocky/version/)                                  |
 | CloudLinux                    | [Life Cycle](https://docs.cloudlinux.com/introduction/#cloudlinux-os-life-cycle)          |
-| Windows Server 2016           | [Life Cycle](https://learn.microsoft.com/en-us/microsoft-365-apps/end-of-support/windows-server-support)     |
-| Windows Server 2019           | [Life Cycle](https://learn.microsoft.com/en-us/microsoft-365-apps/end-of-support/windows-server-support)     |
-| Windows Server 2022           | [Life Cycle](https://learn.microsoft.com/en-us/microsoft-365-apps/end-of-support/windows-server-support)     |
+| Windows Server                | [Life Cycle](https://learn.microsoft.com/en-us/microsoft-365-apps/end-of-support/windows-server-support) |
 
 ## End of Support/End of Life Announcements
 
@@ -39,7 +37,8 @@ OVHcloud follows the official life cycle of each distribution. All source of inf
 > 
 > - OVHcloud Linux releases can have a couple of weeks of delay compared to distribution releases.
 > - OVHcloud Windows releases can have a couple of months of delay compared to Microsoft releases.
-> - OVHcloud VPS preinstalled OS follow exactly the same OS lifecycle as mainstream OS.
+> - OVHcloud VPS preinstalled images containing an OVHcloud and a presinstalled software stack (example Wordpress) follow the same lifecycle as the OS they are based on.
+> - After its initial release, OVHcloud provided images for a given release version remain available until the end-of-life defined by the editor/community (or the end of support if no specific end-of-life is defined. After that, it cannot be installed/reinstalled anymore. We strongly advise customers to upgrade existing machines with an OS version supported by the editor/community, and refer to the specific Terms and conditions of their OS regarding upgrades when they apply.”
 > - For more information, you can connect to roadmap [GitHub](https://github.com/orgs/ovh/projects/16/views/1).
 >
 
@@ -47,24 +46,24 @@ OVHcloud follows the official life cycle of each distribution. All source of inf
 
 | Version | Code name | Distribution Release date | End of Standard Support | End of life date |
 | ------- | ------- | ------- | ------- | ------- |
-| [9](https://wiki.almalinux.org/release-notes/9.5.html) | Teal Serval | 2024-11-18 | 2027-05-31 | |
-| [8](https://wiki.almalinux.org/release-notes/8.10.html) | Cerulean Leopard | 2024-05-28 | 2024-05-01 | |
+| [9](https://wiki.almalinux.org/release-notes/9.5.html) | Teal Serval | November 2024 | May 2027 | |
+| [8](https://wiki.almalinux.org/release-notes/8.10.html) | Cerulean Leopard | May 2024 | May 2024 | |
 
 #### CentOS
 
 | Version | Distribution Release date | End of Standard Support | End of life |
 | ------- | ------- | ------- | ------- |
-| 8 | 2019-09-24 | 2021-12-31 | 2021-12-31 |
-| 7 | 2014-07-07 | 2020-08-06 | 2024-06-30 |
+| 8 | September 2019 | December 2021 | December 2021 |
+| 7 | July 2014 | August 2020 | June 2024 |
 
 #### CloudLinux
 
 | Version | Distribution Release date | End of Standard Support | End of life date |
 | ------- | ------- | ------- | ------- |
-| CloudLinux OS 9 | 2023-01-17 | 2027-05-31 | 2032-05-31 |
-| CloudLinux OS 8 | 2020-03-17 | 2024-05-31 | 2029-05-31 |
-| CloudLinux OS 7 | 2015-04-01 | 2024-06-30 | 2024-06-30 |
-| CloudLinux OS 6 | 2011-02-01 | 2024-06-30 | 2024-06-30 |
+| CloudLinux OS 9 | January 2023 | May 2027 | May 2032 |
+| CloudLinux OS 8 | March 2020 | May 2024 | May 2029 |
+| CloudLinux OS 7 | April 2015 | June 2024 | June 2024 |
+| CloudLinux OS 6 | February 2011 | June 2024 | June 2024 |
 
 #### Debian
 
@@ -72,29 +71,29 @@ OVHcloud follows the official life cycle of each distribution. All source of inf
 | ------- | ------- | ------- | ------- | ------- |
 | 14 | [Forky](https://wiki.debian.org/DebianForky) | | | |
 | 13 | [Trixie](https://wiki.debian.org/DebianTrixie) | | | |
-| 12 | [Bookworm](https://wiki.debian.org/DebianBookworm) | [2023-06-10](https://www.debian.org/News/2023/20230610) | 2026-06-10 | 2028-30-10 |
-| 11 | [Bullseye](https://wiki.debian.org/DebianBullseye) | [2021-08-14](https://www.debian.org/News/2021/20210814) | | 2026-08-31 |
-| 10 | [Buster](https://wiki.debian.org/DebianBuster) | [2019-07-06](https://www.debian.org/News/2019/20190706) | | 2024-06-30 |
+| 12 | [Bookworm](https://wiki.debian.org/DebianBookworm) | [2023-06-10](https://www.debian.org/News/2023/20230610) | June 2026 | October 2028 |
+| 11 | [Bullseye](https://wiki.debian.org/DebianBullseye) | [2021-08-14](https://www.debian.org/News/2021/20210814) | | August 2026 |
+| 10 | [Buster](https://wiki.debian.org/DebianBuster) | [2019-07-06](https://www.debian.org/News/2019/20190706) | | June 2024 |
 
 #### Fedora Linux
 
 | Version | Distribution Release date | End of Standard Support | End of life date |
 | ------- | ------- | ------- | ------- |
 | Fedora Linux 43 | October 2025 | Until EoL | December 2026 |
-| Fedora Linux 42 | April 2025 | Until EoL | 2026-06-13 |
-| Fedora Linux 41 | October 2024 | Until EoL | 2025-11619 |
+| Fedora Linux 42 | April 2025 | Until EoL | June 2026 |
+| Fedora Linux 41 | October 2024 | Until EoL | November 2025 |
 | Fedora Linux 40 | April 2024 | Until EoL | May 2025 |
-| Fedora Linux 39 | November 2023 | Until EoL | 2024-11-26 |
-| Fedora Linux 38 | April 2023 | Until EoL | 2024-05-21 |
+| Fedora Linux 39 | November 2023 | Until EoL | November 2024 |
+| Fedora Linux 38 | April 2023 | Until EoL | May 2024 |
 
 #### Microsoft Windows Server
 
 | Version | "Provider" Release date | End of Standard Support | End of life date |
 | ------- | ------- | ------- | ------- |
-| Windows Server 2025 | 2024-11-01 | 2029-10-09 | 2034-10-10 |
-| Windows Server 2022 | 2021-08-18 | 2026-10-13 | 2031-10-14 |
-| Windows Server 2019 | 2018-11-13 | 2024-01-09 | 2029-01-09 |
-| Windows Server 2016 | 2016-10-15 | 2022-01-11 | 2027-01-11 |
+| Windows Server 2025 | November 2024 | October 2029 | October 2034 |
+| Windows Server 2022 | August 2021 | October 2026 | October 2031 |
+| Windows Server 2019 | November 2018 | January 2024 | January 2029 |
+| Windows Server 2016 | October 2016 | January 2022 | January 2027 |
 
 #### Ubuntu
 
@@ -111,8 +110,8 @@ OVHcloud follows the official life cycle of each distribution. All source of inf
 
 | Version | Code name | Distribution Release date | End of Standard Support | End of life date |
 | ------- | ------- | ------- | ------- | ------- |
-| Rocky Linux 9 | Blue Onyx | 2022-07-14 | 2027-05-31 | 2032-05-31 |
-| Rocky Linux 8 | Green Obsidian | 2021-05-01 | 2024-05-31 | 2029-05-31 |
+| Rocky Linux 9 | Blue Onyx | July 2022 | May 2027 | May 2032 |
+| Rocky Linux 8 | Green Obsidian | May 2021 | May 2024 | May 2029 |
 
 ## Go further
 
