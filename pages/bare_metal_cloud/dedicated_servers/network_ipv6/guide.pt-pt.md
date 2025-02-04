@@ -128,9 +128,9 @@ iface eth0 inet6 static
 
 # control-alias eth0
 iface eth0 inet6 static
-    address 2607:5300:adce:f2cd::/xx
+    address 2607:5300:xxxx:xxxx::/xx
     dns-nameservers 2001:41d0:3:163::1
-    gateway 2607:5300:adce:f2ff:ff:ff:ff:ff:ff
+    gateway 2607:5300:xxxx:xxff:ff:ff:ff:ff
 ```
 
 **Debian 10**
@@ -140,8 +140,8 @@ iface eth0 inet6 static
     address YOUR_IPv6 
     netmask 64
 
-post-up /sbin/ip -f inet6 route add IPv6_GATEWAY dev eth0 
-post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY 
+post-up /sbin/ip -f inet6 route add IPv6_GATEWAY dev eth0
+post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY
 pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
