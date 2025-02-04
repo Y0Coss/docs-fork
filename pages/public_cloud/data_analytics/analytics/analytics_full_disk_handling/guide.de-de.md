@@ -21,7 +21,7 @@ No matter the Analytics technology, when no more physical disk space is availabl
 
 #### Disk space usage metrics
 
-As part of using your Analytics service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](/links/manager) or using the [API](/pages/manage_and_operate/api/first-steps). You can also make use of [cross-service integrations](/pages/public_cloud/data_analytics/analytics/analytics_cross_service_integration) to gather, observe and alert based on services metrics.
+As part of using your Analytics service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](/links/manager) or using the [API](/pages/manage_and_operate/api/first-steps). You can also make use of [cross-service integrations](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) to gather, observe and alert based on services metrics.
 
 #### Mail notifications
 
