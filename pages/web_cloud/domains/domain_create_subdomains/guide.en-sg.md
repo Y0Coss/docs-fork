@@ -83,7 +83,7 @@ Subdomains (sometimes called **prefixes**) meet the need to segment a domain nam
 
 In other words, subdomains make it easy to structure all of the web services (DNS servers, website, intranet, email, etc.) associated with the same domain name.
 
-As detailed above in the “[Objective](#goal)” section, subdomains correspond to the third level (*Third Level Domain*) of a domain name. The most well-known subdomain of the internet is **W**orld **W**ide **W**eb (**www**). Indeed, many websites still use this subdomain on the Internet.
+As mentioned above, sub-domains are the third level (*Third Level Domain*) of a domain name. The most well-known subdomain of the internet is **W**orld **W**ide **W**eb (**www**). Indeed, many websites still use this subdomain on the Internet.
 
 For example, *www.ovhcloud.com* is a subdomain of the *ovhcloud.com* domain.
 
