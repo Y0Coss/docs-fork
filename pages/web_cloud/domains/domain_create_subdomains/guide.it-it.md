@@ -1,8 +1,22 @@
 ---
 title: "Come creare un sottodominio?"
 excerpt: "Questa guida ti mostra la definizione di un sottodominio e come crearlo in OVHcloud"
-updated: 2024-03-05
+updated: 2025-02-05
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo <a name="goal"></a>
 
