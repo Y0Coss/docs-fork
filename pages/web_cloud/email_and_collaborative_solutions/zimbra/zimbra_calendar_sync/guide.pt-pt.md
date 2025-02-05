@@ -175,7 +175,7 @@ Para adicionar um calendário CalDAV no aplicativo Apple `Calendar` do seu Mac, 
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Primeiros passos com a oferta Zimbra](/pages/web_cloud/email_and_colaborative_solutions/zimbra/getting_started_zimbra)
+[Primeiros passos com a oferta Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
 [Configurar o endereço de correio eletrónico do Zimbra num software de correio eletrónico](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
 

@@ -25,7 +25,7 @@ To adjust the flavor of your cluster, log in to the [OVHcloud Control Panel](/li
 
 Click `Change node template`{.action} and adjust the flavor of your cluster.
 
-![Change node template](images/flavor_change_view.png){.thumbnail}
+![Change node template](images/flavor_change.png){.thumbnail}
 
 ## How to downgrade your flavor
 
@@ -40,7 +40,7 @@ This option is currently available via the OVHcloud [API](/links/api).
 
 In order to be able to downgrade your flavor, you must have a threshold of 20% between your current disk space used (base storage + additional storage) and the maximum storage space allowed for the flavor.
 
-![Change node template](images/flavor_change_view.png){.thumbnail}
+![Change node template](images/flavor_change.png){.thumbnail}
 
 For instance, if you have an OpenSearch cluster with db1-15 as flavor and less than 384 GB (80% of 480GB) of disk space used, you can decrease the flavor to db1-7 on that endpoint:
 

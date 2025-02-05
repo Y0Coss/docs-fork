@@ -140,7 +140,7 @@ Una vez generado el certificado, los archivos están disponibles en `/etc/letsen
 ### Etapa 4 - Configure su servidor web <a name="step4"></a>
 
 > [!primary]
-> Si ha utilizado la solución automática (con los plugins Certbot) anteriormente ([Etapa 3](#step3)) y su sitio web está accesible en `HTTPS`, vaya directamente al [Etapa 5](Step5).
+> Si ha utilizado la solución automática (con los plugins Certbot) anteriormente ([Etapa 3](#step3)) y su sitio web está accesible en `HTTPS`, vaya directamente al [Etapa 5](#step5).
 
 #### Ejemplo para Nginx
 
