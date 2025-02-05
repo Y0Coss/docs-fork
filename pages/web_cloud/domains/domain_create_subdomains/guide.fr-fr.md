@@ -1,7 +1,7 @@
 ---
 title: "Comment créer un sous-domaine ?"
 excerpt: "Découvrez la définition d'un sous-domaine et comment en créer chez OVHcloud"
-updated: 2025-02-04
+updated: 2025-02-05
 ---
 
 <style>
@@ -20,11 +20,11 @@ details[open]>summary::before {
 
 ## Objectif
 
-Internet est composé de serveurs et d'appareils qui interagissent entre eux via un réseau global. Lorsque ces serveurs et ces appareils sont connectés au réseau Internet, une **adresse IP publique** (équivalent à une adresse postale) leur est attribuée. Cette adresse IP permet de joindre à distance un serveur ou un appareil. Ainsi, un utilisateur est en mesure de consulter un site web en saisissant cette adresse IP grâce à son navigateur Internet installé sur son ordinateur.
+Au cours de l'utilisation de votre nom de domaine, vous serez amenés à créer et configurer des **sous-domaines**. Les sous-domaines correspondent au troisième niveau (*Third Level Domain*) d'un nom de domaine. Le sous-domaine le plus connu des internautes est, à ce jour, le sous-domaine **W**orld **W**ide **W**eb (**www**). En effet, beaucoup de sites web utilisent encore ce sous-domaine pour être consulté sur Internet.
 
-Les **noms de domaine** ont été instaurés pour faciliter l'accès à un site web pour les utilisateurs du réseau Internet. En effet, il est plus aisé de retenir un nom composé d'une chaîne de caractères choisis (par exemple : ovhcloud.com), plutôt qu'une suite de chiffres qui compose une adresse IP (par exemple : 54.39.46.56).
+Par exemple, *www.ovhcloud.com* est un sous-domaine du nom de domaine *ovhcloud.com*.
 
-Au cours de l'utilisation de votre nom de domaine, vous serez amenés à utiliser ou configurer des **sous-domaines** à partir de ce dernier.
+Vous pouvez créer une infinité de sous-domaines à partir d'un seul nom de domaine.
 
 **Découvrez les sous-domaines et comment en créer chez OVHcloud.**
 
@@ -40,8 +40,7 @@ Au cours de l'utilisation de votre nom de domaine, vous serez amenés à utilise
 **Sommaire**
 
 - [Introduction](#introduction)
-- [Définition d'un sous-domaine](#definition)
-- [Créer un sous-domaine](#subdomain-creation)
+- [Comment créer un sous-domaine](#subdomain-creation)
     - [1 - Identifier l'endroit où se trouve la zone DNS active de votre nom de domaine](#identification)
     - [2 - Créer les enregistrements DNS pour vos sous-domaines](#dns-records-creation)
 - [Associer, autoriser et configurer votre sous-domaine avec un service OVHcloud](#link-subdomain)
@@ -51,7 +50,11 @@ Au cours de l'utilisation de votre nom de domaine, vous serez amenés à utilise
 
 ### Introduction <a name="introduction"></a>
 
-/// details | Cliquez ici pour afficher le contenu de cette section
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
+
+**Cliquez sur les deux questions ci-dessous pour afficher les explications.**
+
+/// details | Quelle est la composition d'un nom de domaine ?
 
 Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes généralement séparés par un point `.` (à l'exception de certaines **extensions** du premier niveau comme *.co.uk*, *.gouv.fr* ou encore *.notaires.fr*):
 
@@ -67,11 +70,8 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 
 ///
 
-![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
 
-### Définition d'un sous-domaine <a name="definition"></a>
-
-/// details | Cliquez ici pour afficher le contenu de cette section
+/// details | Qu'est-ce qu'un sous-domaine ?
 
 Un [nom de domaine](/links/web/domains) peut être associé à plusieurs types de services (e-mail, site web, etc.). Toutefois, un nom de domaine ne peut être associé qu'à un seul site web à la fois.
 
@@ -81,11 +81,9 @@ Les sous-domaines (parfois appelés **préfixes**) répondent au besoin de segme
 
 En d'autres termes, les sous-domaines permettent de structurer facilement l'ensemble des services web (serveurs DNS, site web, intranet, e-mail, etc.) associés à un même nom de domaine.
 
-Comme précisé plus haut dans la partie « [Introduction](#introduction) », les sous-domaines correspondent au troisième niveau (*Third Level Domain*) d'un nom de domaine. Le sous-domaine le plus connu des internautes est, à ce jour, le sous-domaine **W**orld **W**ide **W**eb (**www**). En effet, beaucoup de sites web utilisent encore ce sous-domaine pour être consulté sur Internet.
+Comme précisé plus haut, les sous-domaines correspondent au troisième niveau (*Third Level Domain*) d'un nom de domaine. Le sous-domaine le plus connu des internautes est, à ce jour, le sous-domaine **W**orld **W**ide **W**eb (**www**). 
 
-Ainsi, *www.ovhcloud.com* est un sous-domaine du nom de domaine *ovhcloud.com*.
-
-Vous pouvez créer une infinité de sous-domaines à partir d'un seul nom de domaine.
+Pour rappel et à valeur d'exemple, *www.ovhcloud.com* est un sous-domaine du nom de domaine *ovhcloud.com*.
 
 Si, par exemple, vous disposez du nom de domaine *example.com*, vous pouvez créer les sous-domaines suivants :
 
@@ -103,7 +101,7 @@ Au delà du troisième niveau de domaine, on considère qu'il s'agit là égalem
 
 ///
 
-### Créer un sous-domaine <a name="subdomain-creation"></a>
+### Comment créer un sous-domaine ? <a name="subdomain-creation"></a>
 
 Les [noms de domaine](/links/web/domains) ont tous besoin d'une **zone DNS** pour fonctionner. La zone DNS se compose d’informations techniques, appelées « enregistrements DNS ». Elle est, en quelque sorte, comme un centre d'aiguillage.
 
