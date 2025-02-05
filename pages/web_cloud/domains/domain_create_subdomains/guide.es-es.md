@@ -18,7 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## Objetivo <a name="goal"></a>
+## Objetivo
 
 Internet se compone de servidores y dispositivos que interactúan entre sí a través de una red global. Cuando estos servidores y sus dispositivos están conectados a la red Internet, se les asigna una **dirección IP pública** (equivalente a una dirección postal). Esta *dirección IP* permite conectar a distancia un servidor o un dispositivo, de modo que un usuario puede consultar un sitio web introduciendo esta dirección IP gracias a su navegador de internet instalado en su ordenador.
 

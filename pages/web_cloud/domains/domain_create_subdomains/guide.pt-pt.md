@@ -18,7 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## Objetivo <a name="goal"></a>
+## Objetivo
 
 A Internet é composta por servidores e dispositivos que interagem entre si através de uma rede global. Quando estes servidores e os seus dispositivos estão ligados à rede Internet, é-lhes atribuído um **endereço IP público** (equivalente a um endereço postal). Este endereço IP permite ligar remotamente um servidor ou dispositivo, permitindo assim que um utilizador veja um website introduzindo esse endereço IP através do browser instalado no computador do utilizador.
 

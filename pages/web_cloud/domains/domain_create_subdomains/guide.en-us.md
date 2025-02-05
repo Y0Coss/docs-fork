@@ -18,7 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## Objective <a name="goal"></a>
+## Objective
 
 The internet is made up of servers and devices that interact with each other via a global network. When these *servers* and their devices are connected to the internet, they are assigned a **public IP address** (equivalent to a postal address). With this IP address, you can connect to a server or device remotely. As a result, a user can access a website by entering this IP address using the web browser installed on their computer.
 

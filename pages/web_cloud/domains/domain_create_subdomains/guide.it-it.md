@@ -18,7 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## Obiettivo <a name="goal"></a>
+## Obiettivo
 
 Internet è composto da server e da dispositivi che interagiscono tra loro attraverso una rete globale. Quando questi server e i relativi dispositivi sono connessi alla rete Internet, viene loro assegnato un **indirizzo IP pubblico** (equivalente a un indirizzo postale). Questo *indirizzo IP* permette di raggiungere in remoto un server o un dispositivo. In questo modo, un utente è in grado di consultare un sito Web digitando questo indirizzo IP grazie al browser Internet installato sul suo computer.
 

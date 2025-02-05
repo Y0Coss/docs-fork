@@ -18,7 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## Wprowadzenie <a name="goal"></a>
+## Wprowadzenie
 
 Internet składa się z serwerów i urządzeń, które współdziałają ze sobą w sieci globalnej. Jeśli te serwery i ich urządzenia są połączone z siecią internetową, przydzielany jest im **publiczny adres IP** (równoważny adresowi pocztowemu). Ten adres IP umożliwia zdalne połączenie z serwerem lub urządzeniem, dzięki czemu użytkownik może wejść na stronę WWW, wprowadzając ten adres IP za pomocą przeglądarki internetowej zainstalowanej na jego komputerze.
 
