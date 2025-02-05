@@ -40,7 +40,7 @@ Vous pouvez créer une infinité de sous-domaines à partir d'un seul nom de dom
 **Sommaire**
 
 - [Introduction](#introduction)
-- [Comment créer un sous-domaine](#subdomain-creation)
+- [Comment créer un sous-domaine ?](#subdomain-creation)
     - [1 - Identifier l'endroit où se trouve la zone DNS active de votre nom de domaine](#identification)
     - [2 - Créer les enregistrements DNS pour vos sous-domaines](#dns-records-creation)
 - [Associer, autoriser et configurer votre sous-domaine avec un service OVHcloud](#link-subdomain)
