@@ -78,7 +78,7 @@ Vous pouvez ensuite décider si vous souhaitez ou non **chiffrer vos données** 
 Enfin, nommez votre bucket :
 > [!primary]
 >
-> Les noms des buckets sont globaux. Il n'est pas possible de donner le même nom à deux buckets différents dans les régions OVHcloud.
+> Les noms des buckets sont globaux. Il n'est pas possible de donner le même nom à deux buckets différents à travers toutes les régions OVHcloud.
 >
 
 ![Container name](images/object_storage-bucke_creation_step7.png)
