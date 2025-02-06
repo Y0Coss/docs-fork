@@ -38,27 +38,27 @@ OVHcloud suit le cycle de vie officiel de chaque distribution. Toutes les source
 > - Les versions Linux d'OVHcloud peuvent avoir quelques semaines de retard par rapport aux versions de distribution.
 > - Les versions Windows d'OVHcloud peuvent avoir quelques mois de retard par rapport aux versions de Microsoft.
 > - Les images préinstallées des VPS OVHcloud contenant un OVHcloud et une pile de logiciels préinstallés (par exemple Wordpress) suivent le même cycle de vie que le système d'exploitation sur lequel elles sont basées.
-> - Après sa sortie initiale, les images fournies par OVHcloud pour une version donnée restent disponibles jusqu'à la fin de vie définie par l'éditeur/la communauté (ou la fin du support si aucune fin de vie spécifique n'est définie. Après cela, elles ne peuvent plus être installées/réinstallées. Nous conseillons vivement aux clients de mettre à jour les machines existantes avec une version du système d'exploitation supportée par l'éditeur/la communauté, et de se référer aux termes et conditions spécifiques de leur système d'exploitation concernant les mises à jour lorsqu'elles s'appliquent. »
+> - Après sa sortie initiale, les images fournies par OVHcloud pour une version donnée restent disponibles jusqu'à la fin de vie définie par l'éditeur/la communauté ou la fin du support si aucune fin de vie spécifique n'est définie. Après cela, elles ne peuvent plus être installées/réinstallées. Nous conseillons vivement aux clients de mettre à jour les machines existantes avec une version du système d'exploitation supportée par l'éditeur/la communauté, et de se référer aux termes et conditions spécifiques de leur système d'exploitation concernant les mises à jour lorsqu'elles s'appliquent. »
 > - Pour plus d'informations, vous pouvez vous connecter à la feuille de route [GitHub](https://github.com/orgs/ovh/projects/16/views/1).
 >
 
 #### AlmaLinuxOS
 
-| Version | Nom de code | Date de sortie de la distribution | Fin de support standard | Fin de vie |
+| Version | Nom de code | Sortie de la distribution | Fin de support standard | Fin de vie |
 | ------- | ------- | ------- | ------- | ------- |
 | [9](https://wiki.almalinux.org/release-notes/9.5.html) | Teal Serval | Novembre 2024 | Mai 2027 | Mai 2032 |
 | [8](https://wiki.almalinux.org/release-notes/8.10.html) | Cerulean Leopard | Mai 2024 | Mai 2024 | Mars 2029 |
 
 #### CentOS
 
-| Version | Date de sortie de la distribution | Fin de support standard | Fin de vie |
+| Version | Sortie de la distribution | Fin de support standard | Fin de vie |
 | ------- | ------- | ------- | ------- |
 | 8 | Septembre 2019 | Décembre 2021 | Décembre 2021 |
 | 7 | Juillet 2014 | Août 2020 | Juin 2024 |
 
 #### CloudLinux
 
-| Version | Date de sortie de la distribution | Fin de support standard | Fin de vie |
+| Version | Sortie de la distribution | Fin de support standard | Fin de vie |
 | ------- | ------- | ------- | ------- |
 | CloudLinux OS 9 | Janvier 2023 | Mai 2027 | Mai 2032 |
 | CloudLinux OS 8 | Mars 2020 | Mai 2024 | Mai 2029 |
@@ -67,28 +67,29 @@ OVHcloud suit le cycle de vie officiel de chaque distribution. Toutes les source
 
 #### Debian
 
-| Version | Nom de code | Date de sortie de la distribution | Fin de support standard | Fin de vie |
+| Version | Nom de code | Sortie de la distribution | Fin de support standard | Fin de vie |
 | ------- | ------- | ------- | ------- | ------- |
 | 14 | [Forky](https://wiki.debian.org/DebianForky) | | | |
 | 13 | [Trixie](https://wiki.debian.org/DebianTrixie) | | | |
 | 12 | [Bookworm](https://wiki.debian.org/DebianBookworm) | Juin 2023 | Juin 2026 | Juin 2028 |
-| 11 | [Bullseye](https://wiki.debian.org/DebianBullseye) | Août 2021 | | Août 2026 |
-| 10 | [Buster](https://wiki.debian.org/DebianBuster) | Juillet 2019 | | Juin 2024 |
+| 11 | [Bullseye](https://wiki.debian.org/DebianBullseye) | Août 2021 | Août 2024 | Août 2026 |
+| 10 | [Buster](https://wiki.debian.org/DebianBuster) | Juillet 2019 | Septembre 2022 | Juin 2024 |
 
 #### Fedora Linux
 
-| Version | Date de sortie de la distribution | Fin de support standard | Fin de vie |
+| Version | Sortie de la distribution | Fin de support standard | Fin de vie |
 | ------- | ------- | ------- | ------- |
-| Fedora Linux 43 | Octobre 2025 | Until EoL | Décembre 2026 |
-| Fedora Linux 42 | Avril 2025 | Until EoL | Juin 2026 |
-| Fedora Linux 41 | Octobre 2024 | Until EoL | Novembre 2025 |
-| Fedora Linux 40 | Avril 2024 | Until EoL | Mai 2025 |
-| Fedora Linux 39 | Novembre 2023 | Until EoL | Novembre 2024 |
-| Fedora Linux 38 | Avril 2023 | Until EoL | Mai 2024 |
+| Fedora Linux 44 | Avril 2026 | Mai 2027 | Mai 2027 |
+| Fedora Linux 43 | Octobre 2025 | Décembre 2026 | Décembre 2026 |
+| Fedora Linux 42 | Avril 2025 | Juin 2026 | Juin 2026 |
+| Fedora Linux 41 | Octobre 2024 | Novembre 2025 | Novembre 2025 |
+| Fedora Linux 40 | Avril 2024 | Mai 2025 | Mai 2025 |
+| Fedora Linux 39 | Novembre 2023 | Novembre 2024 | Novembre 2024 |
+| Fedora Linux 38 | Avril 2023 | Mai 2024 | Mai 2024 |
 
 #### Microsoft Windows Server
 
-| Version | Date de sortie "Provider" | Fin de support standard | Fin de vie |
+| Version | Sortie de la license | Fin de support standard | Fin de vie |
 | ------- | ------- | ------- | ------- |
 | Windows Server 2025 | Novembre 2024 | Octobre 2029 | Octobre 2034 |
 | Windows Server 2022 | Août 2021 | Octobre 2026 | Octobre 2031 |
@@ -97,7 +98,7 @@ OVHcloud suit le cycle de vie officiel de chaque distribution. Toutes les source
 
 #### Ubuntu
 
-| Version | Nom de code | Date de sortie de la distribution | Fin de support standard | Fin de vie |
+| Version | Nom de code | Sortie de la distribution | Fin de support standard | Fin de vie |
 | ------- | ------- | ------- | ------- | ------- |
 | Ubuntu 25.04 | [Plucky Puffin](https://wiki.ubuntu.com/PluckyPuffin) | [Release Notes](https://discourse.ubuntu.com/t/plucky-puffin-release-schedule/36461) | Janvier 2026 | Janvier 2026 |
 | Ubuntu 24.10 | [Oracular Oriole](https://wiki.ubuntu.com/OracularOriole) | Octobre 2024 | Juillet 2025 | Juillet 2025 |
@@ -109,7 +110,7 @@ OVHcloud suit le cycle de vie officiel de chaque distribution. Toutes les source
 
 #### Rocky Linux
 
-| Version | Nom de code | Date de sortie de la distribution | Fin de support standard | Fin de vie |
+| Version | Nom de code | Sortie de la distribution | Fin de support standard | Fin de vie |
 | ------- | ------- | ------- | ------- | ------- |
 | Rocky Linux 9 | Blue Onyx | Juillet 2022 | Mai 2027 | Mai 2032 |
 | Rocky Linux 8 | Green Obsidian | Mai 2021 | Mai 2024 | Mai 2029 |
