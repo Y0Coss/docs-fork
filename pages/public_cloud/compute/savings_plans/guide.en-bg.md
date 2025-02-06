@@ -28,7 +28,7 @@ The guide will also detail the use of the Savings Plans dashboard, which will al
 
 ### What is a Savings Plan ?
 
-A Savings Plan is an offer whereby a customer, in exchange for coverage for a certain number of simultaneous resources, commits to pay a fixed amount for a specified period. This commitment model enables customers to benefit from reduced rates for covered instances, compared with hourly billing.
+Savings plans offer savings over and above demand rates in exchange for a commitment to use a specified quantity of resources over a given period of time: 1M/6M/12M/24M/36M
 
 ### How a Savings Plan works in general ?
 
@@ -40,7 +40,7 @@ A Savings Plan is an offer whereby a customer, in exchange for coverage for a ce
 Here are a few scenarios to help you understand how this works:
 
 - **Case "1:1" :** Let's imagine that a customer has 10 B3-8 instances on OVHcloud and subscribes to a Savings Plan that covers precisely 10 B3-8 instances for a period of 1 year. In this case, the customer will only pay the amount of their Savings Plan, and this amount will fully cover the costs associated with their 10 B3-8 instances for the duration of the commitment. There are no additional charges at the end of each month, as the instances are covered by the plan.
-- **Case "1,5:1" :** Now let's suppose that another customer uses 15 B3-8 instances, but subscribes to a Savings Plan covering only 10 B3-8 instances. In this case, the customer benefits from the advantageous Savings Plan tariff for the first 10 instances. However, the other 5 instances, which are not covered by the Savings Plan, will be billed at the standard hourly rate. If these 5 instances are used throughout the month, the customer will be billed for the remaining 5 instances, in addition to his commitment for the 10 instances covered by the Savings Plan.
+- **Case "1,5:1" :** Now let's suppose that another customer uses 15 B3-8 instances, but subscribes to a Savings Plan covering only 10 B3-8 instances. In this case, the customer benefits from the advantageous Savings Plan tariff for the first 10 instances. However, the other 5 instances, which are not covered by the Savings Plan, will be billed at the standard hourly rate. 
 - **Case "0,8 :1" :** Lastly, a customer has subscribed to a Savings Plan for 10 B3-8 type instances, but only uses 8 instances simultaneously during the month. Even if this customer does not use all the instances covered by his plan, he will not pay any additional charges. The Savings Plan will always cover the 8 simultaneous instances used, and the customer will benefit from the advantageous pricing of the 10 instances at no extra cost. This situation remains financially advantageous, even if the customer does not use all 10 instances of the Savings Plan.
 
 > [!warning]
@@ -50,22 +50,9 @@ Here are a few scenarios to help you understand how this works:
 > A Savings Plan covers a number of simultaneously active resources. For example, for a Savings Plan of 1 resource, if a customer starts an resource at 10.05am and deletes it at 10.10am, then creates another resource at 10.17am and deletes it at 10.30am, even though he has started and deleted two resources, only the resources that were switched on at the same time are counted. In this case, only one resource is active at the same time, so the Savings Plan covers both resources without additional billing. This also applies if the resources are used at different times during the month (for example, from the 1st to the 10th and then from the 15th to the 30th), as long as they are not active at the same time. 
 >
 
-### Eligible / compatible services
-
-This table summarises the eligibility of OVHcloud services:
-
-| Service                  | Eligible    |
-| ------------------------ | ----------- |
-| Compute instances        | Yes         |
-| Managed Rancher          | Yes         |
-| Storage                  | No          |
-| Public Cloud Databases   | No          |
-
 ### How Savins Plans work for instances ?
 
 Savings Plans for instances are based on the commitment of a quantity of instances for a given duration, offering advantageous invoicing for these.
-
-The essential point to remember is that only simultaneously active instances are taken into account in the coverage of the savings plan. Instances that are not active at the same time have no impact on the plan, as long as the number of active instances at any given time remains within the limit of your plan's coverage.
 
 > [!warning]
 >
@@ -87,6 +74,24 @@ By subscribing to a Rancher Savings Plan, you commit to using a certain amount o
 > In order for the vCPUs included in your Savings Plan to be consumed, you must assign an instance to your Kubernetes nodes. Without a configured instance, the resources covered by the Savings Plan will remain unused, and you will continue to pay for these unused resources. Make sure you size your instances to match your vCPU and RAM requirements.
 >
 
+### Eligible / compatible services
+
+This table summarises the eligibility of OVHcloud services:
+
+| Service                      | Eligible    |
+| ---------------------------- | ----------- |
+| Compute instances            | Yes         |
+| Managed Rancher              | Yes         |
+| Container ( through Compute) | Yes         |
+| Storage                      | No          |
+| Public Cloud Databases       | No          |
+| Network                      | No          |
+| AI                           | No          |
+
+> [!warning]
+>
+> The Local Zones and US regions are not eligible to Savings Plan.
+> 
 ### Automated infrastructure management with Savings Plans
 
 Customers do not have to manually associate their instances with Savings Plans. We manage this automatically, taking into account all existing and future instances when calculating Savings Plan consumption.
