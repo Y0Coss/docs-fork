@@ -89,7 +89,7 @@ OVHcloud follows the official life cycle of each distribution. All source of inf
 
 #### Microsoft Windows Server
 
-| Version | "Provider" Release | End of Standard Support | End of life |
+| Version | License release | End of Standard Support | End of life |
 | ------- | ------- | ------- | ------- |
 | Windows Server 2025 | November 2024 | October 2029 | October 2034 |
 | Windows Server 2022 | August 2021 | October 2026 | October 2031 |
