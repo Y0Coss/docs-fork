@@ -28,7 +28,7 @@ The guide will also detail the use of the Savings Plans dashboard, which will al
 
 ### What is a Savings Plan ?
 
-Savings plans offer savings over and above demand rates in exchange for a commitment to use a specified quantity of resources over a given period of time: 1M/6M/12M/24M/36M
+Savings Plans are a flexible pricing model that offers lower rates than pay-as-you-go pricing, in exchange for a commitment to use the service for a given period (1, 6, 12, 24 or 36 months).
 
 ### How a Savings Plan works in general ?
 
@@ -81,11 +81,11 @@ This table summarises the eligibility of OVHcloud services:
 | Service                      | Eligible    |
 | ---------------------------- | ----------- |
 | Compute instances            | Yes         |
+| Container (via Compute)      | Yes         |
 | Managed Rancher              | Yes         |
-| Container ( through Compute) | Yes         |
+| Network                      | No          |
 | Storage                      | No          |
 | Public Cloud Databases       | No          |
-| Network                      | No          |
 | AI                           | No          |
 
 > [!warning]
@@ -102,7 +102,7 @@ For example:
 
 ### Creating a tailor-made business model
 
-To optimise costs while adapting to the varied needs of customers, it is possible to combine several Savings Plans with different characteristics, such as size, flavour or length of commitment. This approach makes it possible to align coverage with specific uses, while maximising savings.
+To optimise costs while adapting to the varied needs of customers, it is possible to combine several Savings Plans with different characteristics, such as size, type/model of resources or length of commitment. This approach makes it possible to align coverage with specific uses, while maximising savings.
 
 /// details | **Real-life example :**
 

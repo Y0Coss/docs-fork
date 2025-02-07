@@ -28,7 +28,7 @@ Le guide détaillera également l'utilisation du tableau de bord associé aux Sa
 
 ### Qu'est ce qu'un Savings Plan ?
 
-Les Savings Plan offrent des économies supérieures aux taux de demande en échange d'un engagement à utiliser une quantité déterminée de ressources sur une période donnée : 1M/6M/12M/24M/36M
+Les Savings Plans sont un modèle de tarification flexible qui offre des tarifs inférieurs à la tarification à la demande, en échange d'un engagement d'utilisation sur une durée donnée (1, 6, 12, 24 ou 36 mois).
 
 ### Fonctionnement général d’un Savings Plan
 
@@ -69,7 +69,7 @@ En souscrivant à un Savings PLan pour Rancher, vous vous engagez à utiliser un
 
 > [!info]
 >
-> The Savings Plans for Rancher only apply to vCPUs. Other resources, such as storage, instances, and other services, are not covered by this Savings Plan and will still be billed separately. Be sure to account for these additional costs when planning your Rancher resources.
+> Les plans d'économies pour Rancher ne s'appliquent qu'aux vCPU. Les autres ressources, telles que le stockage, les instances et les autres services, ne sont pas couvertes par ce plan d'économies et seront toujours facturées séparément. Veillez à prendre en compte ces coûts supplémentaires lors de la planification de vos ressources Rancher.
 >
 > Pour que les vCPU inclus dans votre Savings Plan soient consommés, il est impératif d'attribuer une instance à vos noeuds Kubernetes. Sans instance configurée, les ressources couvertes par le Savings Plan resteront inutilisées, et vous continuerez à payer pour ces ressources non consommées. Assurez-vous de bien dimensionner vos instances pour qu'elles correspondent à vos besoins en vCPU et RAM.
 >
@@ -81,11 +81,11 @@ Ce tableau résume l'éligibilité des services OVHcloud :
 | Service                      | Eligible    |
 | ---------------------------- | ----------- |
 | Compute instances            | Yes         |
+| Container (via Compute)      | Yes         |
 | Managed Rancher              | Yes         |
-| Container ( through Compute) | Yes         |
+| Network                      | No          |
 | Storage                      | No          |
 | Public Cloud Databases       | No          |
-| Network                      | No          |
 | AI                           | No          |
 
 > [!warning]
@@ -102,7 +102,7 @@ Par exemple :
 
 ### Créer un modèle d’économie sur mesure
 
-Pour optimiser les coûts tout en s’adaptant aux besoins variés des clients, il est possible de cumuler plusieurs Savings Plans ayant des caractéristiques différentes, comme la taille, la flavor, ou la durée d’engagement. Cette approche permet d’aligner la couverture avec des usages spécifiques, tout en maximisant les économies.
+Pour optimiser les coûts tout en s’adaptant aux besoins variés des clients, il est possible de cumuler plusieurs Savings Plans ayant des caractéristiques différentes, comme la taille, le type/modèle de ressources, ou la durée d’engagement. Cette approche permet d’aligner la couverture avec des usages spécifiques, tout en maximisant les économies.
 
 /// details | **Exemple réel :**
 
