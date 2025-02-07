@@ -90,8 +90,6 @@ Wie bereits erwähnt, entsprechen Subdomains der dritten Ebene (*Third Level Dom
 
 So ist *www.ovhcloud.com* eine Subdomain des Domainnamens *ovhcloud.com*.
 
-Sie können aus einem einzigen Domainnamen eine unbegrenzte Anzahl an Subdomains erstellen.
-
 Wenn Sie beispielsweise über die Domain *example.com* verfügen, können Sie folgende Subdomains erstellen:
 
 - *dns1.example.com* und *dns2.example.com* zur Anpassung Ihrer DNS-Server mithilfe von [GLUE Records](/pages/web_cloud/domains/glue_registry).

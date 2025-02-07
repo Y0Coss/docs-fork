@@ -89,8 +89,6 @@ Jak wspomniano powyżej, subdomeny odpowiadają trzeciemu poziomowi (*Third Leve
 
 *www.ovhcloud.com* jest subdomeną domeny *ovhcloud.com*.
 
-Możesz utworzyć nieskończoną liczbę subdomen na podstawie jednej domeny.
-
 Jeśli na przykład dysponujesz domeną *example.com*, możesz utworzyć następujące subdomeny:
 
 - *dns1.example.com* i *dns2.example.com* do personalizacji serwerów DNS za pomocą [GLUE records](/pages/web_cloud/domains/glue_registry);

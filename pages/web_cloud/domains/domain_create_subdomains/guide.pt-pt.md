@@ -89,8 +89,6 @@ Como já indicado, os subdomínios correspondem ao terceiro nível (*Third Level
 
 Assim, *www.ovhcloud.com* é um subdomínio do nome de domínio *ovhcloud.com*.
 
-Pode criar infinitos subdomínios a partir de um único domínio.
-
 Se, por exemplo, tiver o nome de domínio *example.com*, pode criar os seguintes subdomínios:
 
 - *dns1.example.com* e *dns2.example.com* para personalizar os seus servidores DNS através dos [GLUE records](/pages/web_cloud/domains/glue_registry);

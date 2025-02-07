@@ -87,8 +87,6 @@ As mentioned above, sub-domains are the third level (*Third Level Domain*) of a 
 
 For example, *www.ovhcloud.com* is a subdomain of the *ovhcloud.com* domain.
 
-You can create an infinite number of subdomains from a single domain name.
-
 For example, if you have the domain name *example.com*, you can create the following subdomains:
 
 - *dns1.example.com* and *dns2.example.com* to customize your DNS servers using [GLUE records](/pages/web_cloud/domains/glue_registry)
