@@ -235,7 +235,7 @@
             + [How to store public authentication keys in the OVHcloud Control Panel](bare_metal_cloud/dedicated_servers/import-keys-control-panel)
             + [Repartitioning a VPS after an upgrade](bare_metal_cloud/virtual_private_servers/upsize_vps_partition)
             + [First steps with pre-installed applications](bare_metal_cloud/virtual_private_servers/apps_first_steps)
-            + [Using the KVM for a VPS](bare_metal_cloud/virtual_private_servers/using_kvm_for_vps)
+            + [How to use the KVM console to access a VPS](bare_metal_cloud/virtual_private_servers/using_kvm_for_vps)
             + [Configuring the firewall on Linux with iptables](bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
             + [Configuring the firewall on Windows](bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
             + [Public Cloud & VPS - Image and OS life cycle and end of life/support announcements](public_cloud/compute/image-life-cycle)
