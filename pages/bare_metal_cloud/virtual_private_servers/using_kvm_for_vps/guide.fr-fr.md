@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-La console KVM pour VPS disponible dans votre espace client OVHcloud vous permet d'ouvrir une connexion à votre VPS dans votre navigateur web, indépendamment d'un logiciel de connexion supplémentaire. Dans ce contexte, KVM signifie « clavier, vidéo et souris », en référence à la méthode d’entrée/sortie émulée de la connexion à distance.
+La console KVM pour VPS disponible dans votre espace client OVHcloud vous permet d'ouvrir une connexion à votre VPS dans votre navigateur web, indépendamment d'un logiciel de connexion supplémentaire. Dans ce contexte, KVM signifie « *keyboard, video, and mouse* », en référence à la méthode d’entrée/sortie émulée de la connexion à distance.
 
 > [!primary]
 >
