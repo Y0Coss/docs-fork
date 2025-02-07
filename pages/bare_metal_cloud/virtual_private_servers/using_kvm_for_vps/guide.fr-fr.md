@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-La console KVM pour VPS disponible dans votre espace client OVHcloud vous permet d'ouvrir une connexion à votre VPS dans votre navigateur web, indépendamment d'un logiciel de connexion supplémentaire. Dans ce contexte, KVM signifie « *keyboard, video, and mouse* », en référence à la méthode d’entrée/sortie émulée de la connexion à distance.
+La console KVM pour VPS, disponible dans votre espace client OVHcloud, vous permet d'ouvrir une connexion à votre VPS dans votre navigateur web, indépendamment d'un logiciel de connexion supplémentaire. Dans ce contexte, KVM signifie « *keyboard, video, and mouse* », en référence à la méthode d’entrée/sortie émulée de la connexion à distance.
 
 > [!primary]
 >
@@ -30,24 +30,24 @@ La console KVM pour VPS disponible dans votre espace client OVHcloud vous permet
 
 ## Prérequis
 
-- Un [Virtual Private Server](/links/bare-metal/vps) dans votre compte OVHcloud
+- Un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
 - Accès à l’[espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-### How to open the KVM console via OVHcloud Control Panel
+### Comment ouvrir la console KVM via l'espace client OVHcloud
 
-Connectez-vous au [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous `Serveurs privés virtuels`{.action}.
+Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous `Serveurs privés virtuels`{.action}.
 
 Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté du nom de votre VPS dans la section **Votre VPS**.
 
 ![Open KVM](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/vps/open-kvm.png){.thumbnail}
 
-### How to open the KVM console via l’API OVHcloud
+### Comment ouvrir la console KVM via l’API OVHcloud
 
-/// details | Déplier cette section
+/// details | Dépliez cette section
 
-Si vous n'êtes pas familier avec l'API, consultez notre guide sur les [fondamentaux de l'utilisation de l'API OVHcloud](/pages/manage_and_operation/api/first-steps).
+Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
 Pour récupérer l'URL d'accès KVM, ouvrez ce point de terminaison :
 
@@ -114,11 +114,10 @@ sudo systemctl restart keyboard-setup
 > Cette modification ne persistera pas si le serveur est redémarré.
 >
 
-
 ## Aller plus loin
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, consultez nos différentes [offres de support](/links/support).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
