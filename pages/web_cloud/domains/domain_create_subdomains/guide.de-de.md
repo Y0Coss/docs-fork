@@ -20,33 +20,33 @@ details[open]>summary::before {
 
 ## Ziel
 
-Bei der Verwendung Ihres Domainnamens erstellen und konfigurieren Sie **Subdomains**. Subdomains entsprechen der dritten Ebene (*Third Level Domain*) einer Domain. Die bekannteste Subdomain für Internetnutzer ist die Subdomain **W**orld **W**ide **W**eb (**www**). Viele Webseiten nutzen diese Subdomain noch immer, um im Internet darauf zuzugreifen.
+Bei der Verwendung Ihres Domainnamens erstellen und konfigurieren Sie **Subdomains**. Subdomains entsprechen der dritten Ebene (*Third Level Domain*) eines Domainnamens. Die bekannteste Subdomain für Internetnutzer ist die Subdomain **W**orld **W**ide **W**eb (**www**). Viele Webseiten nutzen weiterhin diese Subdomain um im Internet verfügbar zu sein.
 
 Zum Beispiel ist *www.ovhcloud.com* eine Subdomain des Domainnamens *ovhcloud.com*.
 
-Sie können aus einem einzigen Domainnamen eine unbegrenzte Anzahl an Subdomains erstellen.
+Sie können für einen Domainnamen eine unbegrenzte Anzahl an Subdomains erstellen.
   
-**Diese Anleitung erklärt, Sie mehr über Subdomains und wie Sie Subdomains bei OVHcloud erstellen.**
+**Diese Anleitung erklärt Besonderheiten von Subdomains und wie Sie Subdomains bei OVHcloud erstellen.**
 
 ## Voraussetzungen
 
-- Sie besitzen mindestens eine [Domain](/links/web/domains).
-- Sie verfügen über eine aktive DNS-Zone für Ihre Domain. Bei Bedarf lesen Sie unsere Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“.
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
-- Über ausreichende Rechte für alle betroffenen Dienste verfügen. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
+- Sie verwalten mindestens einen [Domainnamen](/links/web/domains).
+- Sie verfügen über eine aktive DNS-Zone für Ihren Domainnamen. Bei Bedarf lesen Sie unsere Anleitung [OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie verfügen über ausreichende Rechte zur Verwaltung aller betroffenen Dienste. Weitere Informationen finden Sie in unserer Anleitung zur [Verwaltung der Kontakte Ihrer Dienste](/pages/account_and_service_management/account_information/managing_contacts).
   
 ## In der praktischen Anwendung
 
-**Inhaltsverzeichnis**
+**Inhaltsübersicht**
 
 - [Einleitung](#introduction)
 - [Wie erstelle ich eine Subdomain?](#subdomain-creation)
-    - [1 - Identifizieren Sie die aktive DNS-Zone Ihrer Domain](#identification)
+    - [1 - Identifizieren der aktiven DNS-Zone Ihrer Domain](#identification)
     - [2 - DNS-Einträge für Ihre Subdomains erstellen](#dns-records-creation)
 - [Ihre Subdomain mit einem OVHcloud Dienst verbinden, autorisieren und konfigurieren](#link-subdomain)
     - [Fall 1: Eine Website auf meinem OVHcloud Webhosting mit einer Subdomain anzeigen](#link-subdomain-case-1)
-    - [Fall 2 - Exchange E-Mail-Adressen mit einer Subdomain erstellen](#link-subdomain-case-2)
-    - [Fall 3 - E-Mail Pro Adressen mit einer Subdomain erstellen](#link-subdomain-case-3)
+    - [Fall 2: Exchange E-Mail-Adressen mit einer Subdomain erstellen](#link-subdomain-case-2)
+    - [Fall 3: E-Mail Pro Adressen mit einer Subdomain erstellen](#link-subdomain-case-3)
 
 ### Einleitung <a name="introduction"></a>
 
@@ -54,7 +54,7 @@ Sie können aus einem einzigen Domainnamen eine unbegrenzte Anzahl an Subdomains
 
 **Klicken Sie auf die beiden unten stehenden Fragen, um die Erläuterungen anzuzeigen.**
 
-/// details | Wie lautet die Zusammensetzung eines Domainnamens?
+/// details | Wie entsteht die Zusammensetzung eines Domainnamens?
 
 ![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Ein **Domainname** besteht aus Leveln. Diese Level sind in der Regel durch ein `
 
 /// details | Was ist eine Subdomain?
 
-Ein [Domainname](/links/web/domains) kann mehreren Arten von Diensten zugeordnet werden (E-Mail, Website etc.).
+Ein [Domainname](/links/web/domains) kann mehreren Arten von Diensten zugeordnet werden (E-Mail, Website, etc.).
 
 Ein Domainname kann jedoch immer nur einer Website zugewiesen werden.
 
@@ -84,7 +84,7 @@ Einige Benutzer oder Organisationen müssen jedoch ihre Websites oder E-Mail-Die
 
 Die Subdomains (u.U. auch **Präfixe** genannt) erfüllen die Notwendigkeit, einen Domainnamen zu segmentieren. Sie bieten dem Inhaber die Möglichkeit, die mit seinem Domainnamen verbundenen Webdienste in verschiedene Unterkategorien zu unterteilen, ohne einen neuen Domainnamen abonnieren zu müssen.
 
-Mit anderen Worten: Subdomains ermöglichen es, alle Webdienste (DNS-Server, Website, Intranet, E-Mail etc.), die mit einem einzigen Domainnamen verbunden sind, einfach zu strukturieren.
+Mit anderen Worten: Subdomains ermöglichen es, alle Webdienste (DNS-Server, Website, Intranet, E-Mail, etc.), die mit einem einzigen Domainnamen verbunden sind, einfach zu strukturieren.
 
 Wie bereits erwähnt, entsprechen Subdomains der dritten Ebene (*Third Level Domain*) eines Domainnamens. Die bekannteste Subdomain für Internetnutzer ist die Subdomain **W**orld **W**ide **W**eb (**www**). Viele Webseiten nutzen diese Subdomain noch immer, um im Internet darauf zuzugreifen.
 
@@ -108,13 +108,13 @@ Wenn Sie beispielsweise über die Domain *example.com* verfügen, können Sie fo
 
 ### Wie erstelle ich eine Subdomain? <a name="subdomain-creation"></a>
 
-Alle [Domainnamen](/links/web/domains) benötigen eine **DNS-Zone**. Die DNS-Zone ist die Konfigurationsdatei eines Domainnamens, die sich aus "DNS-Einträge" zusammensetzt. Das sind Datensätze, die dem Domainnamen verschiedene Dienste und Funktionen zuordnen.
+Alle [Domainnamen](/links/web/domains) benötigen eine **DNS-Zone**. Die DNS-Zone ist die Konfigurationsdatei eines Domainnamens, die sich aus "DNS-Einträgen" zusammensetzt. Das sind Datensätze, die dem Domainnamen verschiedene Dienste und Funktionen zuordnen.
 
 Weitere Informationen zu den DNS-Zonen finden Sie in unserer Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“ und „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
 
 **Alle Subdomains werden in der aktiven DNS-Zone der Domain konfiguriert. Dazu werden DNS-Einträge hinzugefügt.**
 
-#### 1 - Identifizieren Sie die aktive DNS-Zone Ihrer Domain <a name="identification"></a>
+#### 1 - Identifizieren der aktiven DNS-Zone Ihrer Domain <a name="identification"></a>
 
 Es gibt zwei mögliche Szenarien:
 
@@ -185,7 +185,7 @@ Weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem We
 > Um eine Domain oder Subdomain hinzuzufügen, muss möglicherweise ein token zur Validierung der Domain eingerichtet werden. Bei einer Subdomain wird das gleiche token nicht berücksichtigt und muss nicht für die Subdomain, sondern für den Domainnamen hinzugefügt werden. Fügen Sie in diesem Fall zusätzlich das token als DNS-Eintrag vom Typ TXT für den Domainnamen in der aktiven DNS-Zone Ihrer Domain hinzu.
 >
 
-#### Fall 2 - Exchange E-Mail-Adressen mit einer Subdomain erstellen <a name="link-subdomain-case-2"></a>
+#### Fall 2: Exchange E-Mail-Adressen mit einer Subdomain erstellen <a name="link-subdomain-case-2"></a>
 
 Um die Erstellung personalisierter Exchange E-Mail-Adressen mit einer Subdomain zu ermöglichen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie in der linken Spalte auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend die Exchange Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
 
@@ -197,7 +197,7 @@ Weitere Informationen zur Konfiguration einer Exchange-Plattform finden Sie in d
 - [Einen Domainnamen auf einer E-Mail-Plattform hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 - [CNAME-Eintrag hinzufügen, um Ihre Domain für Ihr E-Mail-Angebot zu validieren](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
-#### Fall 3 - E-Mail Pro Adressen mit einer Subdomain erstellen <a name="link-subdomain-case-3"></a>
+#### Fall 3: E-Mail Pro Adressen mit einer Subdomain erstellen <a name="link-subdomain-case-3"></a>
 
 Um die Erstellung personalisierter E-Mail Pro Adressen mit einer Subdomain zu ermöglichen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `E-Mail für Profis`{.action} und wählen Sie dann die E-Mail Pro Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
 
