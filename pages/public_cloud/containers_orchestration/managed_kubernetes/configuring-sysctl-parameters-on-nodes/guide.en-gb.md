@@ -69,9 +69,6 @@ spec:
           hostPath:
             path: /
             type: Directory
-
-
-
 ```
 
 Define the value of the sysctl key `fs.inotify.max_user_watches` and `fs.inotify.max_user_instances` based on your applications' needs.
