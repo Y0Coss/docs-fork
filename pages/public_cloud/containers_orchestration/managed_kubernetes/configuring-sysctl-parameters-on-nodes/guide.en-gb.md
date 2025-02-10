@@ -54,7 +54,7 @@ spec:
           command:
             - sh
             - -c
-            - "cd /host && sysctl -w fs.inotify.max_user_watches=<value> && sysctl -w fs.inotify.max_user_instances=<value>"
+            - "cd /host && sysctl -w fs.inotify.max_user_watches=40000 && sysctl -w fs.inotify.max_user_instances=40000"
           securityContext:
             privileged: true
             runAsUser: 0
@@ -69,6 +69,8 @@ spec:
           hostPath:
             path: /
             type: Directory
+
+
 
 ```
 
