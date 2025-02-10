@@ -45,31 +45,33 @@ Pour activer la redirection, utilisez les API suivantes :
 
 |**Méthode**|**Type de journal**|**Chemin**|**Description**|
 | :-: | :-: | :-: | :-: |
-POST|Journaux d'audit|/me/logs/audit/forward|Transfère les journaux d'audit des comptes|
+POST|Journaux d'audit|/me/logs/audit/log/subscription|Transfère les journaux d'audit des comptes|
 POST|Journaux d'activité|/me/api/log/subscription|Journaux de l'API de transfert et des comptes du Panneau de configuration|
-POST|Accéder aux journaux de stratégie|/iam/logs/forward|Transfère les journaux IAM du compte vers un flux de journaux dédié|
+POST|Accéder aux journaux de stratégie|/iam/log/subscription|Transfère les journaux IAM du compte vers un flux de journaux dédié|
 
 Par exemple, pour les journaux d'audit :
 
 ```json
-POST /me/logs/audit/forward
+POST /me/logs/audit/log/subscription
 {
-    "streamId": "ab51887e-0b98-4752-a514-f2513523a5cd"
+    "streamId": "ab51887e-0b98-4752-a514-f2513523a5cd",
+    "kind": "default"
 }
 ```
 
-L'API nécessite un `streamId`, qui correspond au flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés. Vous obtiendrez en réponse un `operationId` afin de pouvoir l'utiliser pour récupérer le `subscriptionId`. Ceci à des fins de gestion ultérieure à l'aide du point de terminaison de l'[opération de lecture de Logs Data Platform](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
+L'API nécessite:
+
+- un `streamId`, qui correspond au flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés
+- un `kind`, qui correspond à la catégorie de journaux que vous souhaitez transferez dans ce flux de données
+
+Vous obtiendrez en réponse un `operationId` afin de pouvoir l'utiliser pour récupérer le `subscriptionId`. Ceci à des fins de gestion ultérieure à l'aide du point de terminaison de l'[opération de lecture de Logs Data Platform](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
 
 > [!primary]
 > Vous pouvez retrouver votre `streamId` dans la partie `Logs Data Platform`{.action} de l'espace client OVHcloud :
 >
-> - Rendez-vous sur la page `Flux de données`{.action} de votre compte Logs Data Platform. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite du flux de donnés cible puis cliquez sur `Modifier`{.action}.
->   
-> ![Find stream ID](images/retrieve_streamId_1.png){.thumbnail}
-> 
-> - Copiez la page `streamId` de votre compte Logs Data Platform.
->   
-> ![Find stream ID](images/retrieve_streamId_2.png){.thumbnail}
+> - Rendez-vous sur la page `Flux de données`{.action} de votre compte Logs Data Platform. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite du flux de donnés cible puis cliquez sur `Copier l'identifiant du flux`{.action}.
+>
+> ![Find stream ID](images/copy_stream_id.png){.thumbnail}
 
 Vous pouvez également récupérer vos flux à l'aide de l'API Logs Data Platform :
 
@@ -78,6 +80,16 @@ Vous pouvez également récupérer vos flux à l'aide de l'API Logs Data Platfor
 > @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream
 > @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
 >
+
+> [!primary]
+> Vous pouvez retrouvez les différents `kind` possible en utilisant les APIs suivantes:
+>
+> |**Method**|**Log type**|**Path**|
+> | :-: | :-: | :-: |
+> GET|Audit logs|/me/logs/audit/log/kind|
+> GET|Activity logs|/me/api/log/kind|
+> GET|Access policy logs|/iam/log/kind|
+
 
 ### Accès aux logs des comptes OVHcloud
 

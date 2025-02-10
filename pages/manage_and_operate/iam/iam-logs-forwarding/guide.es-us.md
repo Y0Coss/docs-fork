@@ -45,31 +45,33 @@ To enable forwarding, you can use the following APIs:
 
 |**Method**|**Log type**|**Path**|**Description**|
 | :-: | :-: | :-: | :-: |
-POST|Audit logs|/me/logs/audit/forward|Forward account audit logs|
+POST|Audit logs|/me/logs/audit/log/subscription|Forward account audit logs|
 POST|Activity logs|/me/api/log/subscription|Forward API and Control Panel account logs|
-POST|Access policy logs|/iam/logs/forward|Forward account IAM logs to a dedicated logs stream|
+POST|Access policy logs|/iam/log/subscription|Forward account IAM logs to a dedicated logs stream|
 
 For instance, for audit logs:
 
 ```json
-POST /me/logs/audit/forward
+POST /me/logs/audit/log/subscription
 {
-    "streamId": "ab51887e-0b98-4752-a514-f2513523a5cd"
+    "streamId": "ab51887e-0b98-4752-a514-f2513523a5cd",
+    "kind": "default"
 }
 ```
 
-The API requires a `streamId`, which is the target data stream of your LDP account where your OVHcloud account logs will be forwarded to. You will get in response an `operationId`, so you can use it to retrieve the `subscriptionId` for further management purposes using the [Logs Data Platform read operation endpoint](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
+The API requires:
+
+- a `streamId`, which is the target data stream of your LDP account where your OVHcloud account logs will be forwarded to
+- a `kind`, which is the category of logs you want to forward into this data stream
+
+You will get in response an `operationId`, so you can use it to retrieve the `subscriptionId` for further management purposes using the [Logs Data Platform read operation endpoint](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
 
 > [!primary]
 > You can find your `streamId` in the `Logs Data Platform`{.action} section of the OVHcloud Control Panel:
 >
-> - Go to the `Data streams`{.action} page of your Logs Data Platform account. In the table, click the `...`{.action} button to the right of the target data stream, then click `Edit`{.action}.
+> - Go to the `Data streams`{.action} page of your Logs Data Platform account. In the table, click the `...`{.action} button to the right of the target data stream, then click `Copy streamID`{.action}.
 >
-> ![Find stream ID](images/retrieve_streamId_1.png){.thumbnail}
->
-> - Copy the `streamId` from your Logs Data Platform account.
->
-> ![Find stream ID](images/retrieve_streamId_2.png){.thumbnail}
+> ![Find stream ID](images/copy_stream_id.png){.thumbnail}
 
 Alternatively, you can retrieve your streams using the Logs Data Platform API:
 
@@ -77,7 +79,15 @@ Alternatively, you can retrieve your streams using the Logs Data Platform API:
 >
 > @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream
 > @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
+
+> [!primary]
+> You can find the available `kind` using the following APIs:
 >
+> |**Method**|**Log type**|**Path**|
+> | :-: | :-: | :-: |
+> GET|Audit logs|/me/logs/audit/log/kind|
+> GET|Activity logs|/me/api/log/kind|
+> GET|Access policy logs|/iam/log/kind|
 
 ### Access to OVHcloud account logs
 
