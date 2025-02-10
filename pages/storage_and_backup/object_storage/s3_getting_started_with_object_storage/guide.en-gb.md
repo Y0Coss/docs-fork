@@ -146,8 +146,9 @@ aws s3 cp s3://<bucket_name> s3://<bucket_name_2> --recursive
 **Synchronizing buckets**
 
 ```bash
-aws s3 sync . s3://<bucket_name>
-aws s3 sync s3://<bucket_name> s3://<bucket_name_2>
+aws s3 sync . s3://<bucket_name> # Synchronizing local directory to the S3 bucket
+aws s3 sync s3://<bucket_name> . # Synchronizing S3 bucket to the local directory
+aws s3 sync s3://<bucket_name> s3://<bucket_name_2> # Synchronizing a S3 bucket to another one
 ```
 
 **Deleting objects and buckets**
