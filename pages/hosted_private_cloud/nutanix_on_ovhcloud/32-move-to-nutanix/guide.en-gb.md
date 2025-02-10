@@ -4,7 +4,7 @@ excerpt: "Install, configure and use the Move migration tool"
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Advanced usage
-updated: 2022-04-05
+updated: 2025-02-10
 ---
 
 ## Objective
@@ -16,9 +16,11 @@ Nutanix provides a tool called **Nutanix Move** that allows migrations from othe
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
-> This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+> This guide is designed to assist you as much as possible with common tasks. However, we recommend reaching out to the [OVHcloud Professional Services](https://www.ovhcloud.com/professional-services/) team or a [specialized provider](https://partner.ovhcloud.com/directory/) if you encounter difficulties or have any doubts about managing, using, or setting up a service on a server.
 >
 > Some options, such as the use of compression or deduplication, require specific licences provided by Nutanix through OVHcloud. Please contact OVHcloud Sales for more information.
+>
+> Finally, if the procedure involves a VMware service on OVHcloud, the intervention of [OVHcloud Professional Services](https://www.ovhcloud.com/professional-services/) is mandatory.
 
 ## Requirements
 

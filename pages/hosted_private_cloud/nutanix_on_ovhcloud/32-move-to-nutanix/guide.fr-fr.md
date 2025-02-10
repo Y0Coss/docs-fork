@@ -4,7 +4,7 @@ excerpt: "Installer, configurer et utiliser l'outil de migration Move"
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Advanced usage
-updated: 2022-04-05
+updated: 2025-02-10
 ---
 
 ## Objectif
@@ -19,6 +19,8 @@ Nutanix fournit un outil qui se nomme **Nutanix Move** et qui permet de faire de
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr/professional-services/) ou à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 > Certaines options comme l'utilisation de la compression ou de la déduplication nécessitent des licences particulières fournies par Nutanix au travers d'OVHcloud, nous vous invitons à vous renseigner auprès du service commercial OVHcloud pour plus d'informations.
+>
+> Enfin, si la procédure implique un service VMware on OVHcloud, l'intervention de l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr/professional-services/) est obligatoire.
 
 ## Prérequis
 
