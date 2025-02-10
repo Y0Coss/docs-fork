@@ -1,14 +1,14 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-updated: 2025-02-07
+updated: 2025-02-10
 ---
 
 ## Objectif
 
-La fonctionnalité [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/fr/network/byoip/) vous permet d'utiliser les plages d'adresses IP que vous possédez déjà en tant qu'adresses Additional IP, directement sur le réseau et les produits OVHcloud.
+La fonctionnalité [Bring Your Own IP (BYOIP)](/links/network/byoip) vous permet d'utiliser les plages d'adresses IP que vous possédez déjà en tant qu'adresses Additional IP, directement sur le réseau et les produits OVHcloud.
 
-Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taille /24 et se comporteront comme une adresse [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/) OVHcloud.
+Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taille /24 et se comporteront comme une adresse [Additional IP](/links/bare-metal/ip) OVHcloud.
 
 ## Prérequis
 
@@ -29,7 +29,7 @@ Vous devez posséder (voir ci-dessous) un bloc IPv4 public auprès de l'un des R
 
 - [ARIN](https://www.arin.net/)
 - [RIPE](https://www.ripe.net/)
-- [APNIC](https://www.apnic.net/) (Veuillez noter que les NIRs ne sont pas pris en charge pour le moment : https://confluence.ovhcloud.tools/display/2IIP/APNIC+support#APNICsupport-AboutNIR)
+- [APNIC](https://www.apnic.net/) (Veuillez noter que les NIRs ne sont pas pris en charge pour le moment)
 
 Il est désormais possible d'utiliser des blocs IP ARIN ou RIPE sur n'importe quel campus OVHcloud. Cette flexibilité améliorée permet une gestion plus efficace et une allocation optimisée des adresses IP pour répondre aux besoins spécifiques de votre entreprise.
 

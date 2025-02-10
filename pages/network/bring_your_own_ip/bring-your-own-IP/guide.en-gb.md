@@ -1,14 +1,14 @@
 ---
 title: How to use the Bring Your Own IP feature
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2025-02-07
+updated: 2025-02-10
 ---
 
 ## Objective
 
-The [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/en-gb/network/byoip/) feature allows you to use IP addresses ranges that you already own, as Additional IPs directly on the OVHcloud network and products.
+The [Bring Your Own IP (BYOIP)](/links/network/byoip) feature allows you to use IP addresses ranges that you already own, as Additional IPs directly on the OVHcloud network and products.
 
-These IP addresses will be imported in the form of a /24 IP block size and will behave like a regular OVHcloud [Additional IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/) block product.
+These IP addresses will be imported in the form of a /24 IP block size and will behave like a regular OVHcloud [Additional IP](/links/bare-metal/ip) block product.
 
 ## Requirements
 
@@ -29,7 +29,7 @@ You need to own (see below) a public IPv4 block with one of the following RIRs:
 
 - [ARIN](https://www.arin.net/)
 - [RIPE](https://www.ripe.net/)
-- [APNIC](https://www.apnic.net/) (Please note that NIRs are not supported at the moment : https://confluence.ovhcloud.tools/display/2IIP/APNIC+support#APNICsupport-AboutNIR)
+- [APNIC](https://www.apnic.net/) (Please note that NIRs are not supported at the moment)
 
 It is now possible to use ARIN or RIPE IP blocks on any OVHcloud campus. This enhanced flexibility enables more efficient management and optimized allocation of IP addresses to meet your company's specific needs.
 
@@ -263,4 +263,4 @@ Yes, but once the BYOIP service has been delivered, you must immediately cancel 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
