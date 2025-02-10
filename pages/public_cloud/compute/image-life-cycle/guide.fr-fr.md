@@ -1,35 +1,35 @@
 ---
 title: "Public Cloud & VPS - Cycle de vie et annonces de fin de vie/support des images et distributions"
 excerpt: "Découvrez le cycle de vie et les annonces de fin de vie et de support des distributions et logiciels pour votre VPS ou votre instance Public Cloud"
-updated: 2025-02-06
+updated: 2025-02-10
 ---
 
 ## Objectif
 
 Cette documentation présente la feuille de route de fin de vie, les mises à jour et les prochaines versions des images/OS d'OVHcloud. OVHcloud suit le cycle de vie officiel de chaque distribution. Cela signifie que lorsqu'une distribution atteint sa fin de vie, c'est aussi la fin de vie de l'image OVHcloud correspondante pour les services VPS et Public Cloud à la même date.
 
-Ce guide vous fournira des informations sur la feuille de route de fin de vie des images OVHcloud, ainsi que sur les annonces de fin de vie et de support pour les distributions et les logiciels disponibles avec les instances OVHcloud VPS et Public Cloud. Restez au courant des changements critiques qui pourraient affecter la sécurité et la performance de vos services.
+Ce guide vous fournira des informations sur la feuille de route de fin de vie des images OVHcloud, ainsi que sur les annonces de fin de vie et de support pour les distributions et les logiciels disponibles avec les instances Public Cloud et VPS OVHcloud. Restez au courant des changements critiques qui pourraient affecter la sécurité et la performance de vos services.
 
-OVHcloud suit le cycle de vie officiel de chaque distribution. Toutes les sources d'information sont listées ci-dessous.
+OVHcloud suit le cycle de vie officiel de chaque distribution. Toutes les sources d'informations sont listées ci-dessous.
 
-**Découvrez le cycle de vie et les annonces de fin de vie/fin de support des distributions et des logiciels pour votre instance VPS ou Public Cloud.**
+**Découvrez le cycle de vie et les annonces de fin de vie/fin de support des distributions et des logiciels pour votre instance Public Cloud ou votre VPS.**
 
 ## Cycle de vie des distributions
 
 | Distribution                  | URL                                                                                       |
 | ----------------------------- | ----------------------------------------------------------------------------------------- |
-| Debian                        | [Life Cycle](https://wiki.debian.org/DebianReleases)                                      |
-| Ubuntu                        | [Life Cycle](https://wiki.ubuntu.com/Releases)                                            |
-| Centos                        | [Life Cycle](https://endoflife.date/centos)                                       |
-| Fedora                        | [Life Cycle](https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle)                    |
-| Almalinux                     | [Life Cycle](https://wiki.almalinux.org/release-notes/)                                   |
-| Rocky Linux                   | [Life Cycle](https://wiki.rockylinux.org/rocky/version/)                                  |
-| CloudLinux                    | [Life Cycle](https://docs.cloudlinux.com/introduction/#cloudlinux-os-life-cycle)          |
-| Windows Server                | [Life Cycle](https://learn.microsoft.com/en-us/microsoft-365-apps/end-of-support/windows-server-support)     |
+| Debian                        | [Cycle de vie](https://wiki.debian.org/DebianReleases)                                      |
+| Ubuntu                        | [Cycle de vie](https://wiki.ubuntu.com/Releases)                                            |
+| CentOS                        | [Cycle de vie](https://endoflife.date/centos)                                       |
+| Fedora                        | [Cycle de vie](https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle)                    |
+| Almalinux                     | [Cycle de vie](https://wiki.almalinux.org/release-notes/)                                   |
+| Rocky Linux                   | [Cycle de vie](https://wiki.rockylinux.org/rocky/version/)                                  |
+| CloudLinux                    | [Cycle de vie](https://docs.cloudlinux.com/introduction/#cloudlinux-os-life-cycle)          |
+| Windows Server                | [Cycle de vie](https://learn.microsoft.com/en-us/microsoft-365-apps/end-of-support/windows-server-support)     |
 
 ## Annonces de fin de support / fin de vie
 
-> [!info]
+> [!primary]
 >
 > Cette section a pour but de vous donner rapidement une vue d'ensemble des versions des systèmes d'exploitation et de leur support par OVHcloud.
 >
@@ -37,9 +37,9 @@ OVHcloud suit le cycle de vie officiel de chaque distribution. Toutes les source
 > 
 > - Les versions Linux d'OVHcloud peuvent avoir quelques semaines de retard par rapport aux versions de distribution.
 > - Les versions Windows d'OVHcloud peuvent avoir quelques mois de retard par rapport aux versions de Microsoft.
-> - Les images préinstallées des VPS OVHcloud contenant un OVHcloud et une pile de logiciels préinstallés (par exemple Wordpress) suivent le même cycle de vie que le système d'exploitation sur lequel elles sont basées.
-> - Après sa sortie initiale, les images fournies par OVHcloud pour une version donnée restent disponibles jusqu'à la fin de vie définie par l'éditeur/la communauté ou la fin du support si aucune fin de vie spécifique n'est définie. Après cela, elles ne peuvent plus être installées/réinstallées. Nous conseillons vivement aux clients de mettre à jour les machines existantes avec une version du système d'exploitation supportée par l'éditeur/la communauté, et de se référer aux termes et conditions spécifiques de leur système d'exploitation concernant les mises à jour lorsqu'elles s'appliquent. »
-> - Pour plus d'informations, vous pouvez vous connecter à la feuille de route [GitHub](https://github.com/orgs/ovh/projects/16/views/1).
+> - Les images préinstallées des VPS OVHcloud contenant un OS OVHcloud et une pile de logiciels préinstallés (par exemple : WordPress) suivent le même cycle de vie que le système d'exploitation sur lequel elles sont basées.
+> - Après leurs sorties initiales, les images fournies par OVHcloud pour une version donnée restent disponibles jusqu'à la fin de vie définie par l'éditeur/la communauté ou la fin du support si aucune fin de vie spécifique n'est définie. Après cela, elles ne peuvent plus être installées/réinstallées. Nous conseillons vivement aux clients de mettre à jour les machines existantes avec une version du système d'exploitation supportée par l'éditeur/la communauté, et de se référer aux termes et conditions spécifiques de leur système d'exploitation concernant les mises à jour lorsqu'elles s'appliquent.
+> - Pour plus d'informations, vous pouvez consulter la feuille de route sur [GitHub](https://github.com/orgs/ovh/projects/16/views/1).
 >
 
 #### AlmaLinuxOS
