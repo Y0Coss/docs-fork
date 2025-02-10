@@ -139,14 +139,19 @@ Virtual hosted-style and path-style access are supported in all regions, but we 
 
 List buckets (containers):
 
+> [!primary]
+>
+> If you have more than one profile, add `--profile <profile>` to the command line.
+>
+
 ```bash
-user@host:~$ aws --profile default s3 ls
+user@host:~$ aws s3 ls
 ```
 
 Create a new bucket:
 
 ```bash
-user@host:~$ aws --profile default s3 mb s3://bucket
+user@host:~$ aws s3 mb s3://bucket
 ```
 
 > [!primary]
@@ -167,13 +172,13 @@ user@host:~$ aws --profile default s3 mb s3://bucket
 Upload a local file to Swift:
 
 ```bash
-user@host:~$ aws --profile default s3 cp file.txt s3://bucket/file.txt
+user@host:~$ aws s3 cp file.txt s3://bucket/file.txt
 ```
 
 Download an object from Swift:
 
 ```bash
-user@host:~$ aws --profile default s3 cp s3://bucket/file.txt file.txt
+user@host:~$ aws s3 cp s3://bucket/file.txt file.txt
 ```
 
 Delete a Swift object:
