@@ -1,6 +1,6 @@
 ---
-title: 'Fonctionnement des Savings Plans'
-excerpt: 'Savings Plans : Tout ce que vous devez savoir pour optimiser vos coûts'
+title: 'Comment fonctionnent les Savings Plans ?'
+excerpt: 'Savings Plans - Tout ce que vous devez savoir pour optimiser vos coûts'
 updated: 2025-01-06
 ---
 
@@ -124,7 +124,6 @@ Grâce à cette combinaison, le client réalise des économies substantielles en
 > Cette section sera disponible en même temps que la fonctionnalité Dashboard sur votre espace client OVHcloud.
 >
 
-<!-- 
 Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Savings Plans, en fournissant des informations essentielles sur leur utilisation, leur couverture et les économies réalisées. Vous pouvez consulter des données spécifiques selon la période, le service, le type d'instance ou d'autres critères pertinents.
 
 /// details | **a. Filtres de sélection**

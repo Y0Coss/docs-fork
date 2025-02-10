@@ -1,6 +1,6 @@
 ---
-title: 'How Savings Plans work ?'
-excerpt: 'Savings Plans: Everything you need to know to optimise your costs'
+title: 'How do Savings Plans work?'
+excerpt: 'Savings Plans - Everything you need to know to optimise your costs'
 updated: 2025-01-06
 ---
 
@@ -124,7 +124,7 @@ Thanks to this combination, the customer achieves substantial savings by optimis
 > This section will be available at the same time as the Dashboard functionality on your OVHcloud customer space.
 >
 
-<!-- The Savings Plans dashboard allows you to track and analyse your Savings Plans, providing essential information about their usage, coverage and savings. You can view specific data by period, service, instance type or other relevant criteria.
+The Savings Plans dashboard allows you to track and analyse your Savings Plans, providing essential information about their usage, coverage and savings. You can view specific data by period, service, instance type or other relevant criteria.
 
 /// details | **a. Selection filters**
 
