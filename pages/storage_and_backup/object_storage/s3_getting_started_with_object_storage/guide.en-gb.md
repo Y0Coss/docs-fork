@@ -57,7 +57,7 @@ aws_secret_access_key = <secret_key>
 
 user@host:~$ cat ~/.aws/config
 
-[profile default]
+[default]
 region = <region_in_lowercase>
 endpoint_url = <url_endpoint>
 s3 =
@@ -143,10 +143,10 @@ aws s3 cp s3://<bucket_name> . --recursive
 aws s3 cp s3://<bucket_name> s3://<bucket_name_2> --recursive
 ```
 
-**Synchronising buckets**
+**Synchronizing buckets**
 
 ```bash
-aws s3 sync. s3://<bucket_name>
+aws s3 sync . s3://<bucket_name>
 aws s3 sync s3://<bucket_name> s3://<bucket_name_2>
 ```
 
