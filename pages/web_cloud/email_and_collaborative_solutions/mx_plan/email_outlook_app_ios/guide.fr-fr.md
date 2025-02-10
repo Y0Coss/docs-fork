@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configurer son compte e-mail sur Outlook pour iOS"
 excerpt: "Découvrez comment configurer votre adresse e-mail MX Plan sur l'application mobile Outlook pour iOS"
-updated: 2025-02-07
+updated: 2025-02-10
 ---
 
 <style>
@@ -15,7 +15,7 @@ updated: 2025-02-07
 
 ## Objectif
 
-Les comptes MX Plan peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Outlook de Microsoft sur iOS est disponible gratuitement depuis le App Store de Apple.
+Les comptes MX Plan peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Outlook de Microsoft sur iOS est disponible gratuitement depuis l'App Store de Apple.
 
 **Découvrez comment configurer votre adresse e-mail MX Plan sur l'application mobile Outlook pour iOS**
 
@@ -61,7 +61,7 @@ Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 >>
 >> Vous avez deux possibilités:
 >>
->> - Si vous avez la mention « **IMAP** » en haut de la page, passez à l'étape 3
+>> - Si vous avez la mention « **IMAP** » en haut de la page, passez à l'étape 3.
 >> - Si la fenêtre de paramètre du compte affiche « **Exchange** » en haut, appuyez sur le bouton `?` dans le coin supérieur droit de l'écran **(1)**, puis choisissez `Changer de fournisseur de compte`{.action} **(2)**. Sélectionnez alors `IMAP`**(3)** et passez à l'étape 3.
 >>
 >> ![outlook ios](images/outlook-app-ios-add-step02.png){.thumbnail .w-400 .h-600}
@@ -71,10 +71,10 @@ Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 >> Dans la fenêtre suivante, cochez `Paramètres avancés`{.action} et  complétez les informations suivantes :
 >>
 >> - **Adresse e-mail**
->> - **Nom complet** : Saisissez votre adresse e-mail complète
+>> - **Nom complet** : saisissez votre adresse e-mail complète
 >> - **Description**
 >> - **Serveur de courrier entrant IMAP** :<br>- **Nom d'hôte IMAP** : pour l'**EUROPE**, saisissez `imap.mail.ovh.net` ou `ssl0.ovh.net`. Pour l'**AMERIQUE/ASIE**, saisissez `imap.mail.ovh.ca`<br>- **Port IMAP** : 993<br>- **Nom d'utilisateur IMAP** : votre adresse e-mail complète<br>- **Mot de passe IMAP** : celui de votre adresse e-mail<br>- **Sécurité du port** : SSL
->> - **Serveur de courrier entrant SMTP** :<br>- **Nom d'hôte SMTP** : pour l'**EUROPE**, saisissez `smtp.mail.ovh.net` ou `ssl0.ovh.net` . Pour l'**AMERIQUE/ASIE**, saisissez `smtp.mail.ovh.ca`<br>- **Port SMTP** : 465<br>- **Nom d'utilisateur SMTP** : votre adresse e-mail complète<br>- **Mot de passe SMTP** : celui de votre adresse e-mail<br>- **Sécurité du port** : SSL
+>> - **Serveur de courrier entrant SMTP** :<br>- **Nom d'hôte SMTP** : pour l'**EUROPE**, saisissez `smtp.mail.ovh.net` ou `ssl0.ovh.net`. Pour l'**AMERIQUE/ASIE**, saisissez `smtp.mail.ovh.ca`<br>- **Port SMTP** : 465<br>- **Nom d'utilisateur SMTP** : votre adresse e-mail complète<br>- **Mot de passe SMTP** : celui de votre adresse e-mail<br>- **Sécurité du port** : SSL
 >>
 >> Pour finaliser la configuration, appuyez sur `Connexion`{.action}
 >>
@@ -103,8 +103,7 @@ OVHcloud propose aussi une application web permettant d'accéder à votre adress
 4. Sélectionnez le compte concerné.
 5. Appuyez sur `Modifier les informations de connexion`{.action}.
 
-![outlook ios](images/outlook-app-ios-modify-account-01.png
-){.thumbnail .w-400 .h-600}
+![outlook ios](images/outlook-app-ios-modify-account-01.png){.thumbnail .w-400 .h-600}
 
 Retrouvez les paramètres à **l'étape 3** du chapitre [Ajouter le compte](#add-account).
 
@@ -166,7 +165,7 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 >
 > **Changer sa configuration**
 >
-> Si votre adresse e-mail est configurée en **IMAP** et que vous souhaitez changer cette configuration en **POP**, vous devez supprimer le compte  puis le recréer en **POP**. Consultez le chapitre « [Modifier les paramètres existants](#modify-settings) » de ce guide.
+> Si votre adresse e-mail est configurée en **IMAP** et que vous souhaitez changer cette configuration en **POP**, vous devez supprimer le compte puis le recréer en **POP**. Consultez le chapitre « [Modifier les paramètres existants](#modify-settings) » de ce guide.
 
 ## Aller plus loin
 
