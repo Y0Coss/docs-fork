@@ -1,7 +1,7 @@
 ---
 title: Configuring an IP block in a vRack on a Public cloud instance
 excerpt: This guide will show you how to configure a block of public IP addresses linked to a vRack on a Public cloud instance.
-updated: 2025-01-23
+updated: 2025-02-11
 ---
 
 ## Objective
@@ -29,7 +29,7 @@ Before you start, please note that there are several steps to follow for this co
 >
 > You can also remove the project from its allocated vRack and attach it to another vRack if you wish.
 
-For older projects, go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action} in the left tab, then on `vRack private network`{.action}. Select your vRack from the list.
+For older projects, go to the `Bare Metal Cloud`{.action} menu and click on `Network`{.action} in the left tab. Click on `vRack private network`{.action} and select your vRack from the list.
 
 From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
 
@@ -96,7 +96,7 @@ Once done, click on `Create`{.action}.
 For the configuration, you need to create a subnet in the previously created private network and add the CIDR of the public IP block to it.
 
 > [!warning]
-> This action can only be performed from the Horizon interface or the Openstack client API. For now, we are only going to document the steps via the Horizon Interface.
+> This action can only be performed from the Horizon interface or the Openstack client API.
 >
 
 #### From the Horizon interface
@@ -129,7 +129,7 @@ Once the subnet has been created, your private network will appear as follows:
 
 ### Attach a network interface to the Instance
 
-This action should only be done via Horizon.
+This action should only be done via Horizon or the Openstack CLI.
 
 If you have not yet created an instance, you must create it first, then attach the network later. Do not select the private network when creating the instance.
 
@@ -159,7 +159,8 @@ In the pop-up menu, select the appropriate options:
 **Fixed IP Address**: Specify the Public IP address you wish to use from the block (if you don't, the system will automatically assign a private IP).
 
 > [!warning]
-> 
+> It is not possible to add multiple IPs at once via the Horizon interface.
+>
 > For each public IP you want to use, you need to follow the same procedure and enter a different usable public IP each time.
 >
 
@@ -178,54 +179,15 @@ For vRack purposes, the first, penultimate, and last addresses in any given IP b
 203.0.113.7   Reserved: Network broadcast
 ```
 
-To configure the first usable IP address, we need to edit the network configuration file, as shown below. In this example, we need to use a subnet mask of **255.255.255.248**.
+To configure the first usable IP address, we need to edit the network configuration file. In this example, we need to use a subnet mask of **255.255.255.248**.
 
 > [!primary]
+> The subnet mask we've used in our example is appropriate for our IP block. Your subnet mask may differ depending on the size of your block. When you purchase your IP block, you'll receive an email that will tell you which subnet mask to use.
 >
-The subnet mask we've used in our example is appropriate for our IP block. Your subnet mask may differ depending on the size of your block. When you purchase your IP block, you'll receive an email that will tell you which subnet mask to use.
->
-
-#### Linux
-
-**Configuration based on ENI**
-
-The configuration below is based on Debian 11.
-
-To identify your vRack interface, connect to your instance via SSH and run the following command:
-
-```bash
-ip a
-```
-
-Next, access the network configuration file and configure the IP. In our example, our network configuration file is called `50-cloud-init` and it is located in the following directory: `/etc/network/interfaces.d`:
-
-```bash
-sudo nano /etc/network/interfaces.d/50-cloud-init
-```
-
-Add the following lines to your configuration file, replacing NETWORK_INTERFACE, PUBLIC_IP_ADDRESS, NETMASK_IP and BROADCAST_IP with your own values.
-
-```console
-auto NETWORK_INTERFACE
-iface NETWORK_INTERFACE inet static
-address PUBLIC_IP_ADDRESS
-netmask NETMASK_IP
-broadcast BROADCAST_IP
-```
-
-Example
-
-```sh
-auto eth1
-iface eth1 inet static
-address 203.0.113.3
-netmask 255.255.255.248
-broadcast 203.0.113.7
-```
 
 ### Create a new IP routing table
 
-First, we need to download and install iproute2, which is a package that will enable us to manually configure IP routing on the server.
+First, we need to download and install iproute2, which is a package that will enable us to manually configure IP routing on the server. In most cases, this package will already be available on your server. If that is the case, move to the next step.
 
 Establish an SSH connection to your instance and run the following command from the command line. This will download and install iproute2.
 
@@ -252,25 +214,220 @@ sudo nano /etc/iproute2/rt_tables
 1 vrack
 ```
 
-### Amend the network configuration file
+### Configuration steps by OS
 
-Finally, we need to amend the network configuration file to account for the new traffic rule and route the vRack traffic through the network gateway address of **203.0.113.6**.
+Click the tab that corresponds to your distribution
 
-```sh
-sudo nano /etc/network/interfaces.d/50-cloud-init
-
-auto eth1
-iface eth1 inet static
-address 203.0.113.3
-netmask 255.255.255.248
-broadcast 203.0.113.7
-post-up ip route add 203.0.113.0/29 dev eth1 table vrack
-post-up ip route add default via 203.0.113.6 dev eth1 table vrack
-post-up ip rule add from 203.0.113.0/29 table vrack
-post-up ip rule add to 203.0.113.0/29 table vrack
-```
-
-Now reboot your server to apply the changes.
+> [!tabs]
+> **Debian (excluding Debian 12)**
+>>
+>> The configuration below is based on Debian 11.
+>>
+>> To identify your vRack interface, connect to your instance via SSH and run the following command:
+>>
+>> ```bash
+>> ip a
+>> ```
+>> 
+>> Using a text editor of your choice, open the network configuration file located in `/etc/network/interfaces.d` for editing. Here the file is called `50-cloud-init`.
+>>
+>> ```bash
+>> sudo nano /etc/network/interfaces.d/50-cloud-init
+>> ```
+>> 
+>> Add the following lines to your configuration file, replacing NETWORK_INTERFACE, IP_ADDRESS, NETMASK_IP and BROADCAST_IP with your own values.
+>>
+>> ```bash
+>> auto NETWORK_INTERFACE
+>> iface NETWORK_INTERFACE inet static
+>>     address IP_ADDRESS
+>>     netmask NETMASK_IP
+>>     broadcast BROADCAST_IP
+>> ```
+>>
+>> We have determined that the gateway IP of our IP block is **203.0.113.6**. To route the vRack traffic through the network gateway address of 203.0.113.6, add the following lines to the network configuration file, replace NETWORK_INTERFACE, IP_BLOCK/PREFIX and GATEWAY_IP with your own values.
+>> 
+>> ```console
+>> post-up ip route add IP_BLOCK/PREFIX dev NETWORK_INTERFACE table vrack
+>> post-up ip route add default via GATEWAY_IP dev NETWORK_INTERFACE table vrack
+>> post-up ip rule add from IP_BLOCK/PREFIX table vrack
+>> post-up ip rule add to IP_BLOCK/PREFIX table vrack
+>> ```
+>>
+>> **Configuration Example**
+>>
+>> ```bash
+>> auto eth1
+>> iface eth1 inet static
+>>     address 203.0.113.1
+>>     netmask 255.255.255.248
+>>     broadcast 203.0.113.7
+>>     post-up ip route add 203.0.113.0/29 dev NETWORK_INTERFACE table vrack
+>>     post-up ip route add default via 203.0.113.6 dev NETWORK_INTERFACE table vrack
+>>     post-up ip rule add from 203.0.113.0/29 table vrack
+>>     post-up ip rule add to 203.0.113.0/29 table vrack
+>> ```
+>>
+>> Restart your network interface with the following command:
+>>
+>> ```bash
+>> sudo /etc/init.d/networking restart
+>> ```
+>> 
+> **Ubuntu & Debian 12**
+>>
+>> The configuration below is based on Ubuntu 24.04.
+>>
+>> To identify your vRack interface, connect to your instance via SSH and run the following command:
+>>
+>> ```bash
+>> ip a
+>> ```
+>> 
+>> Using a text editor of your choice, open the network configuration file located in `/etc/netplan` for editing. Here the file is called `50-cloud-init.yaml`.
+>>
+>> ```bash
+>> sudo nano /etc/netplan/50-cloud-init.yaml
+>> ```
+>> 
+>> Add the IP configuration after the first one, replacing NETWORK_INTERFACE, IP_ADDRESS/PREFIX, NETWORK_IP/PREFIX and GATEWAY_IP with your own values.
+>>
+>> ```bash
+>> NETWORK_INTERFACE:
+>> dhcp4: no
+>> addresses:
+>> - IP_ADDRESS/PREFIX
+>> routes:
+>> - to: NETWORK_IP/PREFIX
+>>   via: GATEWAY_IP
+>> ```
+>> 
+>> **Configuration Example**
+>>
+>> ```bash
+>>   ens7:
+>>     dhcp4: false
+>>     addresses:
+>>     - 203.0.113.3/29
+>>     routes:
+>>     - to: 203.0.113.0/29
+>>       via: 203.0.113.6
+>> ```
+>> 
+>> Apply the configuration with the following command:
+>>
+>> ```bash
+>> sudo netplan apply
+>> ```
+>> 
+> **CentOS**
+>>
+>> The configuration below is based on CentOS 7.
+>>
+>> To identify your vRack interface, connect to your instance via SSH and run the following command:
+>>
+>> ```bash
+>> ip a
+>> ```
+>>
+>> Using a text editor of your choice, create a network configuration file in the folder `/etc/sysconfig/network-scripts` for editing.
+>> In our example, our vrack interface is called `eth1`, we create the following configuration file (replace **eth1** with your own values**):
+>>
+>> ```bash
+>> sudo touch /etc/sysconfig/network-scripts/ifcfg-eth1
+>> ```
+>> 
+>> Add the following lines to your configuration file, replacing NETWORK_INTERFACE, IP_ADDRESS, NETMASK_IP and BROADCAST_IP with your own values.
+>>
+>> ```bash
+>> DEVICE=NETWORK_INTERFACE
+>> ONBOOT=yes
+>> BOOTPROTO=static
+>> IPADDR=IP_ADDRESS
+>> NETMASK=NETMASK_IP
+>> BROADCAST=BROADCAST_IP
+>> ```
+>> 
+>> **Configuration Example**
+>>
+>> ```bash
+>> DEVICE=eth1
+>> ONBOOT=yes
+>> BOOTPROTO=static
+>> IPADDR=203.0.113.3
+>> NETMASK=255.255.255.248
+>> BROADCAST=203.0.113.7
+>> ```
+>>
+>> Restart your network interface with the following command:
+>>
+>> ```bash
+>> sudo systemctl restart network
+>> ```
+>>
+> **Fedora**
+>>
+>> The configuration below is based on Fedora 40.
+>>
+>> Take note of the name and device of your network interface by running the following command:
+>>
+>> ```bash
+>> sudo nmcli con show
+>> ```
+>>
+>> **Example**
+>>
+>> ```bash
+>> $ sudo nmcli con show
+>> NAME             UUID                                  TYPE      DEVICE
+>> cloud-init eth0  1dsdytd7-d123-55gt-84r6-c639tyhfla7c  ethernet  eth0
+>> cloud-init eth1  3sdfsd35-7064-5b6e-89pd-bfdsl934ngs8  ethernet  eth1
+>> ```
+>>
+>> Using a text editor of your choice, create a network configuration file in the folder `/etc/NetworkManager/system-connections` for editing. In our example, our file is called `cloud-init-eth1.nmconnection` since the device for the private interface retrieved above is `eth1`.
+>>
+>> ```bash
+>> sudo touch /etc/NetworkManager/system-connections/cloud-init-eth1.nmconnection
+>> ```
+>>
+>> You can then edit this file using the `nmcli` handler, replacing `INTERFACE_NAME`, `IP_ADDRESS/PREFIX` and `GATEWAY_IP` with your own values. Please note the `INTERFACE_NAME` here is the NAME of your private interface (cloud-init eth1) and not the DEVICE (eth1). This information can be gotten from running the command `nmcli con show`.
+>>
+>> Add the IP address:
+>>
+>> ```bash
+>> sudo nmcli connection modify INTERFACE_NAME IPv4.address IP_ADDRESS/PREFIX
+>> ```
+>> 
+>> Add the Gateway:
+>>
+>> ```bash
+>> sudo nmcli connection modify INTERFACE_NAME IPv4.gateway GATEWAY_IP
+>> ```
+>>
+>> Add a DNS server:
+>>
+>> ```bash
+>> sudo nmcli connection modify INTERFACE_NAME IPv4.dns 213.186.33.99
+>> ```
+>>
+>> Change the configuration to manual:
+>>
+>> ```bash
+>> sudo nmcli connection modify INTERFACE_NAME IPv4.method manual
+>> ```
+>>
+>> Make the configuration persistent:
+>>
+>> ```bash
+>> sudo nmcli con mod INTERFACE_NAME connection.autoconnect true
+>> ```
+>>
+>> Reboot your network with the following command:
+>>
+>> ```bash
+>> sudo systemctl restart NetworkManager
+>> ```
+>> 
 
 ## Go further
 
