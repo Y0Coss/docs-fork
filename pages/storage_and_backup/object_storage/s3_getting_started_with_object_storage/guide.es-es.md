@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Introducción al Object Storage (EN)
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2024-06-21
+updated: 2025-02-11
 ---
 
 ## Objective

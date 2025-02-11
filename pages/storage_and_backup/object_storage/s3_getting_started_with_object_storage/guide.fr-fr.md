@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2024-06-21
+updated: 2025-02-11
 ---
 
 ## Objectif
@@ -29,13 +29,13 @@ Entrez la commande suivante selon la méthode choisie :
 >> user@host:~$ pip install awscli
 >> ```
 >>
-> **SE basé sur Debian**
+> **OS basé sur Debian**
 >>
 >> ```bash
 >> user@host:~$ sudo apt install awscli
 >> ```
 >>
-> **SE basé sur RHEL**
+> **OS basé sur RHEL**
 >>
 >> ```bash 
 >> user@host:~$ sudo yum install awscli
