@@ -63,7 +63,7 @@ Pour utiliser l'option de géolocalisation par IP, cliquez sur les onglets ci-de
 >>
 >> Choisissez l'adresse IP du pays pour lequel vous souhaitez géolocaliser votre site, parmi les 12 pays proposés : *République Tchèque, Finlande, France, Allemagne, Irlande, Italie, Littuanie, Pays-bas, Pologne, Portugal, Espagne, Royaumes-Uni*.
 >>
->> Cliquez sur `Suivant`{.action} puis sur `Valider`{.action} depuis la fenêtre récapitulative.
+>> Cliquez sur `Suivant`{.action} puis sur `Valider`{.action} dans la fenêtre récapitulative.
 
 > [!primary]
 >
