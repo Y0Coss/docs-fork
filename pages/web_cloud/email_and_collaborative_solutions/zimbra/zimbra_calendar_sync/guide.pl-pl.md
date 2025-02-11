@@ -13,16 +13,6 @@ updated: 2025-01-13
 }
 </style>
 
-> [!warning]
->
-> **Ważne**
->
-> Oferta Zimbra jest w fazie beta.
->
-> Jest on dostępny tylko dla tych osób, które wypełniły [formularz rejestracji w fazie beta](https://labs.ovhcloud.com/en/zimbra-beta/).
->
-> Niektóre funkcje lub ograniczenia przedstawione w tym przewodniku mogą ulec zmianie po wprowadzeniu produktu na rynek.
-
 ## Wprowadzenie
 
 Konta e-mail Zimbra mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji. Zimbra zawiera funkcję współdzielonego kalendarza, dzięki czemu można go synchronizować za pomocą oprogramowania zgodnego z protokołem CalDAV.

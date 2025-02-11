@@ -13,16 +13,6 @@ updated: 2025-01-13
 }
 </style>
 
-> [!warning]
->
-> **Importante**
->
-> El producto Zimbra es un producto en fase beta.
->
-> Solo está disponible para las personas que hayan completado el [formulario de inscripción en la beta](https://labs.ovhcloud.com/en/zimbra-beta/).
->
-> Algunas de las funciones o limitaciones descritas en esta guía pueden cambiar cuando el producto salga al mercado.
-
 ## Objetivo
 
 Es posible configurar las cuentas de correo electrónico de Zimbra en el cliente de correo que usted utilice. para que pueda utilizar su dirección de correo desde cualquier dispositivo. Zimbra incluye la funcionalidad de calendario compartido, que se puede sincronizar desde un software compatible con el protocolo CalDAV.

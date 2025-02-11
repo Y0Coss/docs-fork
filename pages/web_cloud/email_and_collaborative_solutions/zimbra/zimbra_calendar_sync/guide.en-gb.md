@@ -13,16 +13,6 @@ updated: 2025-01-13
 }
 </style>
 
-> [!warning]
->
-> **Important**
->
-> The Zimbra solution is a beta-phase product.
->
-> It is only available to those who have completed the [beta registration form](https://labs.ovhcloud.com/en/zimbra-beta/).
->
-> Some of the features or limitations described in this guide may change as the product is released.
-
 ## Objective
 
 Zimbra email accounts can be configured on different email clients that are compatible. This allows you to use your email address from the device of your choice. Zimbra includes the shared calendar feature, so it can be synchronized using CalDAV-compatible software.

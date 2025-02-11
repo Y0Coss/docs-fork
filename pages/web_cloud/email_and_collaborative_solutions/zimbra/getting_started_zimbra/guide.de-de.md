@@ -13,16 +13,6 @@ updated: 2025-01-30
 }
 </style>
 
-> [!warning]
->
-> **Wichtig**
->
-> Das Zimbra Angebot befindet sich in der Beta-Phase.
->
-> Es ist derzeit für Anwender verfügbar, die das [Beta-Anmeldeformular ausgefüllt haben](https://labs.ovhcloud.com/en/zimbra-beta/).
->
-> Einige der in dieser Anleitung aufgeführten Funktionen oder Einschränkungen können sich nach der Markteinführung des Produkts ändern.
-
 ## Ziel
 
 Mit dem Zimbra Dienst bietet Ihnen OVHcloud eine kollaborative Open Source Messaging Plattform mit allen für eine professionelle Nutzung notwendigen Funktionen. In dieser Anleitung erfahren Sie, wie Sie mit der Konfiguration Ihrer Zimbra E-Mail-Accounts beginnen.

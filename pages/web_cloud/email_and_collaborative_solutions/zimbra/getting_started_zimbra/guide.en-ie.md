@@ -13,16 +13,6 @@ updated: 2025-01-30
 }
 </style>
 
-> [!warning]
->
-> **Important**
->
-> The Zimbra solution is a beta-phase product.
->
-> It is only available to those who have completed the [beta registration form](https://labs.ovhcloud.com/en/zimbra-beta/).
->
-> Some of the features or limitations described in this guide may change as the product is released.
-
 ## Objective
 
 With the Zimbra solution, OVHcloud offers an open-source collaborative messaging platform, with all the features you need for professional use. In this guide, you will find the information you need to get started configuring your Zimbra email accounts.

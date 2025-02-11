@@ -13,16 +13,6 @@ updated: 2025-01-30
 }
 </style>
 
-> [!warning]
->
-> **Importante**
->
-> A oferta Zimbra é um produto em fase beta.
->
-> Só está disponível para as pessoas que tenham completado o [formulário de inscrição na fase beta](https://labs.ovhcloud.com/en/zimbra-beta/).
->
-> Algumas das funcionalidades e limitações deste guia podem mudar à medida que o produto é colocado no mercado.
-
 ## Objetivo
 
 Com a oferta Zimbra, a OVHcloud propõe-lhe uma plataforma de mensagens colaborativa open source que oferece todas as funcionalidades necessárias a uma utilização profissional. Neste guia, encontrará os elementos que permitem começar na configuração das suas contas de e-mail Zimbra.

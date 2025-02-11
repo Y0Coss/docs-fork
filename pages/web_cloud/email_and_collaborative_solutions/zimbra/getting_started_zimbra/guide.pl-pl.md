@@ -13,16 +13,6 @@ updated: 2025-01-30
 }
 </style>
 
-> [!warning]
->
-> **Ważne**
->
-> Oferta Zimbra jest w fazie beta.
->
-> Jest on dostępny tylko dla tych osób, które wypełniły [formularz rejestracji w fazie beta](https://labs.ovhcloud.com/en/zimbra-beta/).
->
-> Niektóre funkcje lub ograniczenia przedstawione w tym przewodniku mogą ulec zmianie po wprowadzeniu produktu na rynek.
-
 ## Wprowadzenie
 
 Z ofertą Zimbra OVHcloud oferuje platformę open source do przesyłania wiadomości e-mail z wszystkimi niezbędnymi funkcjami do profesjonalnego użytku. W tym przewodniku znajdziesz pierwsze kroki z konfiguracją Twoich kont e-mail Zimbra.

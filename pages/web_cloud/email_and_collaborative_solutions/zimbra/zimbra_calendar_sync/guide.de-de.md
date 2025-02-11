@@ -13,16 +13,6 @@ updated: 2025-01-13
 }
 </style>
 
-> [!warning]
->
-> **Wichtig**
->
-> Das Zimbra Angebot befindet sich in der Beta-Phase.
->
-> Es ist derzeit für Anwender verfügbar, die das [Beta-Anmeldeformular ausgefüllt haben](https://labs.ovhcloud.com/en/zimbra-beta/).
->
-> Einige der in dieser Anleitung aufgeführten Funktionen oder Einschränkungen können sich nach der Markteinführung des Produkts ändern.
-
 ## Ziel
 
 Zimbra E-Mail-Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihre E-Mail-Adresse von dem Gerät Ihrer Wahl aus verwenden. Zimbra enthält eine Funktion für geteilte Kalender, die über eine Software synchronisiert werden kann, die mit dem CalDAV-Protokoll kompatibel ist.

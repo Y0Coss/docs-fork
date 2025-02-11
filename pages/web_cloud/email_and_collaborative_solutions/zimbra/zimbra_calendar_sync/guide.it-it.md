@@ -13,16 +13,6 @@ updated: 2025-01-13
 }
 </style>
 
-> [!warning]
->
-> **Importante**
->
-> L'offerta Zimbra è un prodotto in fase beta.
->
-> È disponibile solo per coloro che hanno compilato il [modulo di iscrizione alla beta](https://labs.ovhcloud.com/en/zimbra-beta/).
->
-> Alcune delle funzionalità e dei limiti illustrati in questa guida potrebbero cambiare quando il prodotto viene immesso sul mercato.
-
 ## Obiettivo
 
 Gli account email Zimbra possono essere configurati su client di posta compatibili. per permetterti di utilizzare il tuo indirizzo email dal dispositivo che preferisci. Zimbra include la funzionalità di calendario condiviso, che può quindi essere sincronizzata da un software compatibile con CalDAV.

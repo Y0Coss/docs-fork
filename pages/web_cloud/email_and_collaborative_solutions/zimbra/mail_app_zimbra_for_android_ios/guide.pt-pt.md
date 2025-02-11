@@ -13,16 +13,6 @@ updated: 2024-11-15
 }
 </style>
 
-> [!warning]
->
-> **Importante**
->
-> A oferta Zimbra é um produto em fase beta.
->
-> Só está disponível para as pessoas que tenham completado o [formulário de inscrição na fase beta](https://labs.ovhcloud.com/en/zimbra-beta/).
->
-> Algumas das funcionalidades e limitações deste guia podem mudar à medida que o produto é colocado no mercado.
-
 ## Objetivo
 
 As contas de e-mail do Zimbra podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe utilizar o seu endereço de e-mail a partir do dispositivo que preferir. A aplicação Zimbra está disponível gratuitamente em Android e iOS
