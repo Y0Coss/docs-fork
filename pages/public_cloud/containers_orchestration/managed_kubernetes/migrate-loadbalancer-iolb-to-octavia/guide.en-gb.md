@@ -1,14 +1,28 @@
 ---
 title: How to migrate from LoadBalancer for MKS (IOLB) to Public Cloud LoadBalancer (Octavia)
 excerpt: "How do I migrate from a LoadBalancer for MKS (IOLB) to a LoadBalancer for the Public Cloud (Octavia)"
-updated: 2025-01-17
+updated: 2025-02-13
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
-The purpose of this guide is to help OVHcloud Managed Kubernetes Service (MKS) to migrate from an existing [Loadbalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) to a [Public Cloud Load Balancer](/links/public-cloud/load-balancer).
+The purpose of this guide is to help OVHcloud Managed Kubernetes Service (MKS) users to migrate from an existing [Loadbalancer for Managed Kubernetes](/links/public-cloud/load-balancer-kubernetes) to a [Public Cloud Load Balancer](/links/public-cloud/load-balancer).
 
-[Loadbalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) is the default Load Balancer for MKS clusters using Kubernetes versions >1.30.
+[Public Cloud Load Balancer](/links/public-cloud/load-balancer) is the default Load Balancer for MKS clusters using Kubernetes versions >1.30.
 
 [Loadbalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) is deprecated for MKS clusters using Kubernetes versions >1.31.
 
@@ -20,33 +34,31 @@ It explains the steps required to make this transition safely, minimising servic
 
 ## Comparison
 
-When selecting a load balancing solution, it's important to compare the features and limitations of each option. Below is a comparison between Load Balancer for Kubernetes and Public Cloud Load Balancer, highlighting their key differences and capabilities.
+Below is a comparison between Load Balancer for Kubernetes and Public Cloud Load Balancer, highlighting their key differences and capabilities. Public Cloud Load Balancer introduce several size/flavor, you can find the detailed specifications on the [Public Cloud Loadbalancer webpage.](https://www.ovhcloud.com/en/public-cloud/load-balancer/)
 
-|                                     | Load Balancer for Kubernetes | Public Cloud Load Balancer |
-| ----------------------------------- | ---------------------------- | -------------------------- |
-| Maximum number of connections       | 10 000                       | up to 20 000               |
-| Maximum number of HTTP  requests    | 2000                         | Up to 80 000               |
-| Bandwith                            | 200 Mbit/s                   | up to 4 Gbit/s (up/down)   |
-| Supported protocol                  | TCP                          | TCP/UCP                    |
-| Supported load balancing layers     | L4                           | L4/L7                      |
-| Capacity to export metrics and logs | No                           | Yes                        |
-| Private to private scenario         | No                           | Yes                        |
-| Floating IP                         | No                           | Yes                        |
+|                                     | Load Balancer for Managed Kubernetes | Public Cloud Load Balancer |
+| ----------------------------------- | ------------------------------------ | -------------------------- |
+| Maximum number of connections       | 10 000                               | up to 20 000               |
+| Maximum number of HTTP  requests    | 2000                                 | Up to 80 000               |
+| Bandwith                            | 200 Mbit/s                           | up to 4 Gbit/s (up/down)   |
+| Supported protocol                  | TCP                                  | TCP/UCP                    |
+| Supported load balancing layers     | L4                                   | L4/L7                      |
+| Capacity to export metrics and logs | No                                   | Yes                        |
+| Private to private scenario         | No                                   | Yes                        |
+| Floating IP                         | No                                   | Yes                        |
 
 ## Migration of your LoadBalancer
 
 > [!warning]
 >  
-> Starting from MKS cluster using Kubernetes version **1.32**, any cluster upgrade attempt will be blocked if an service [Loadbalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) (IOLB) is still present in the cluster.
+> Starting from MKS cluster using Kubernetes version **1.32**, any cluster upgrade attempt will be blocked if a service of type Loadbalancer relying on [Loadbalancer for Managed Kubernetes](/links/public-cloud/load-balancer-kubernetes) (IOLB) is still present in the cluster.
 >  
 > Action required**: Before upgrading, you must **migrate your services to the Public Cloud LoadBalancer (Octavia)** by following the steps described in this guide.  
 >  
 > If you attempt to upgrade without first migrating, an error will be returned, preventing the upgrade.
 >
-> The old LoadBalancer and IP will be deleted, making services unreachable. Perform the DNS switch immediately with the new IP.
-> You can reserve a public IP (floating IP) in advance and specify it during service/load balancer creation.
 
-In order to migrate from an existing [LoadBalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) to a [Public Cloud LoadBalancer](/links/public-cloud/load-balancer) you will have to modify an existing Service and change its LoadBalancer class.
+There is two way to move from the [Load Balancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) to a [Public Cloud LoadBalancer](/links/public-cloud/load-balancer), you can either **Migrate** or **Replace**.
 
 Your existing LoadBalancer Service using [LoadBalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) should have the following annotation:
 
@@ -55,18 +67,113 @@ annotations:
   loadbalancer.ovhcloud.com/class: "iolb"
 ```
 
-##### Step 1 - Edit your Service to change the LoadBalancer class to 'octavia'
+/// details | **Migrate**
+
+Migrate from an existing [LoadBalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) to a [Public Cloud LoadBalancer](/links/public-cloud/load-balancer) involves creating a new Load Balancer service using Public Cloud Load Balancer with the same labelSelector to expose your application. For a short period of time, your application will be accessible using both Load Balancers.
+
+At this time you can perform a DNS switch and then delete the old Loadbalancer.
+
+To migrate grom an existing [LoadBalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) to a [Public Cloud LoadBalancer](/links/public-cloud/load-balancer), follow this steps:
+
+### Step 1 - Create a new Load Balancer service
+
+You need to create a new LoadBalancer service using the Public Cloud LoadBalancer while keeping the existing one active:
+
+- Ensure that the new service has the same labelSelector as the old one so that it exposes the same application.
+- You can set the annotation `loadbalancer.ovhcloud.com/class: "octavia"` for cluster <1.31 or remove it completely for cluster >= 1.31 as Octavia will be the one used by default.
+
+**labelSelector**:
+
+```yaml
+spec:
+  selector:
+    app: my-app
+```
+
+**annotations**:
+
+```yaml
+annotations:
+  loadbalancer.ovhcloud.com/class: "octavia" // if your cluster <1.31
+```
+
+Apply the new service with:
+
+```yaml
+kubectl apply -f your-service-manifest.yaml
+```
+
+This will create a new Public Cloud LoadBalancer with a new public IP
+
+### Step 2 - Test Application access
+
+Once the new LoadBalancer is created, get the public IPs of both services:
+
+```yaml
+kubectl get svc -o wide
+```
+
+You should see two LoadBalancer services pointing to the same application with different public IPs.
+
+Test accessibility via both IPs:
+
+```yaml
+curl http://<OLD_LOADBALANCER_IP>
+curl http://<NEW_LOADBALANCER_IP>
+```
+
+Both should return a successful response from your application.
+
+### Step 3 - Perform a DNS switch
+
+To perform a DNS switch, refer to [this part.](#perform-a-dns-switch)
+
+### Step 4 - Remove the old Load Balancer service
+
+Once you confirm that traffic is flowing through the new LoadBalancer and the old one is no longer needed, remove the old LoadBalancer service by deleting it:
+
+```yaml
+kubectl delete svc old-loadbalancer-service
+```
+
+///
+
+/// details | **Replace**
+
+Replace an existing [LoadBalancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) to a [Public Cloud LoadBalancer](/links/public-cloud/load-balancer) involves to modify the existing service and change the loadbalancer class from 'iolb' to 'octavia'. This will lead to Kubernetes reconciling the loadbalancer class by deleting the old one and create a new loadbalancer.
+
+At this time you can perform a DNS switch using the new public IP.
+
+> [!warning]
+>
+> Please note that during the deletion and creation process, your service will not be accessible.
+>
+> You can reduce this impact by lowering your DNS TTL duration, please refer to [this dedicated section](#perform-a-dns-switch).
+
+
+### Step 1 - Edit your Service to change the LoadBalancer class to 'octavia'
 
 ```yaml
 annotations:
   loadbalancer.ovhcloud.com/class: "octavia" // not required for clusters running kubernetes versions >= 1.31, you can just remove the annotation.
 ```
 
-##### Step 2 - Apply the change
+### Step 2 - Apply the change
+
+> [!warning]
+>
+> The old LoadBalancer and IP will be deleted **permanently**, making services unreachable. Perform the DNS switch immediately with the new IP.
+>
 
 ```yaml
 kubectl apply -f your-service-manifest.yaml
 ```
+
+### Step 3 - Perform a DNS switch
+
+To perform a DNS switch, refer to [this part.](#perform-a-dns-switch)
+
+///
 
 ## Perform a DNS switch
 
