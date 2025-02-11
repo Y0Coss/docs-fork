@@ -82,30 +82,56 @@ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN"
 
 ### Configurer le client AWS
 
+Vous pouvez soit utiliser la méthode CLI, soit créer manuellement les fichiers de configuration AWS.
 Installez le client AWS et configurez-le comme suit :
 
-```bash
-user@host:~$ pip install awscli
-[...]
-user@host:~$ cat ~/.aws/credentials
+> [!tabs]
+> **Paquet Python**
+>>
+>> ```bash
+>> user@host:~$ pip install awscli
+>> ```
+>>
+> **SE basé sur Debian**
+>>
+>> ```bash
+>> user@host:~$ sudo apt install awscli
+>> ```
+>>
+> **SE basé sur RHEL**
+>>
+>> ```bash 
+>> user@host:~$ sudo yum install awscli
+>> ```
+>>
 
-[default]
-aws_access_key_id = <access_key>
-aws_secret_access_key = <secret_key>
-
-user@host:~$ cat ~/.aws/config
-
-[plugins]
-endpoint = awscli_plugin_endpoint
-
-[profile default]
-region = <region>
-s3 =
-  endpoint_url = https://s3.<region>.cloud.ovh.net
-  signature_version = s3v4
-s3api =
-  endpoint_url = https://s3.<region>.cloud.ovh.net
-```
+> [!tabs]
+> Méthode CLI
+>>
+>> ```bash
+>> user@host:~$ aws configure
+>> ```
+>> Ensuite, suivez les étapes et saisissez vos informations d'identification AWS générées par les commandes ci-dessus.
+>>
+> Méthode manuelle
+>>
+>> ```bash
+>> user@host:~$ cat ~/.aws/credentials
+>> [default]
+>> aws_access_key_id = <access_key>
+>> aws_secret_access_key = <secret_key>
+>> user@host:~$ cat ~/.aws/config
+>> [plugins]
+>> endpoint = awscli_plugin_endpoint
+>> [default]
+>> region = <region>
+>> s3 =
+>>   endpoint_url = https://s3.<region>.cloud.ovh.net
+>>   signature_version = s3v4
+>> s3api =
+>>  endpoint_url = https://s3.<region>.cloud.ovh.net
+>> ```
+>>
 
 L'accès de type `hébergé virtuel` et l'accès de type `chemin d'accès` sont pris en charge dans toutes les régions, mais nous vous recommandons d'utiliser le style `hébergé virtuel` car l'accès de type `chemin d'accès` sera déprécié après le 30 septembre 2020.
 
@@ -113,14 +139,19 @@ L'accès de type `hébergé virtuel` et l'accès de type `chemin d'accès` sont 
 
 Utilisez la commande suivante pour obtenir la liste des Buckets (conteneurs) :
 
+> [!primary]
+>
+> Si vous avez créé plusieurs profils, ajoutez `--profile <profile>` à la ligne de commande.
+>
+
 ```bash
-user@host:~$ aws --profile default s3 ls
+user@host:~$ aws s3 ls
 ```
 
 Utilisez la commande suivante pour créer un nouveau bucket :
 
 ```bash
-user@host:~$ aws --profile default s3 mb s3://bucket
+user@host:~$ aws s3 mb s3://bucket
 ```
 
 > [!primary]
@@ -141,25 +172,25 @@ user@host:~$ aws --profile default s3 mb s3://bucket
 Utilisez la commande suivante pour téléverser un fichier local sur Swift :
 
 ```bash
-user@host:~$ aws --profile default s3 cp file.txt s3://bucket/file.txt
+user@host:~$ aws s3 cp file.txt s3://bucket/file.txt
 ```
 
 Utilisez la commande suivante pour télécharger un objet à partir de Swift :
 
 ```bash
-user@host:~$ aws --profile default s3 cp s3://bucket/file.txt file.txt
+user@host:~$ aws s3 cp s3://bucket/file.txt file.txt
 ```
 
 Utilisez la commande suivante pour supprimer un objet Swift :
 
 ```bash
-user@host:~$ aws --profile default s3 rm s3://bucket/file.txt
+user@host:~$ aws s3 rm s3://bucket/file.txt
 ```
 
 Utilisez la commande suivante pour supprimer un bucket:
 
 ```bash
-user@host:~$ aws --profile default s3 rb s3://bucket
+user@host:~$ aws s3 rb s3://bucket
 ```
 
 ## Aller plus loin
