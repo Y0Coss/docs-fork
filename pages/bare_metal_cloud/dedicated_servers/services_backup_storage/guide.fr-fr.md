@@ -357,7 +357,7 @@ mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password=
 >
 > `mount.cifs` est un wrapper qui résout les noms d'hôte et ajoute le paramètre `ip=` aux paramètres de montage transmis au noyau.
 >
-> Sans `mount.cifs`, les tentatives de montage par hostname entraîneront l'erreur suivante :
+> Sans `mount.cifs`, les tentatives de montage par nom d'hôte entraîneront l'erreur suivante :
 >
 > ```text
 > mount: /mnt/FolderMount: mount(2) system call failed: No route to host.
