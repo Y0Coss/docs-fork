@@ -1,7 +1,7 @@
 ---
 title: "Object Storage Swift - Premiers pas avec l'API Swift S3"
 excerpt: "Découvrez comment utiliser l'API Swift S3"
-updated: 2024-06-21
+updated: 2025-02-11
 ---
 
 ## Objectif
@@ -92,13 +92,13 @@ Installez le client AWS et configurez-le comme suit :
 >> user@host:~$ pip install awscli
 >> ```
 >>
-> **SE basé sur Debian**
+> **OS basé sur Debian**
 >>
 >> ```bash
 >> user@host:~$ sudo apt install awscli
 >> ```
 >>
-> **SE basé sur RHEL**
+> **OS basé sur RHEL**
 >>
 >> ```bash 
 >> user@host:~$ sudo yum install awscli
@@ -111,7 +111,8 @@ Installez le client AWS et configurez-le comme suit :
 >> ```bash
 >> user@host:~$ aws configure
 >> ```
->> Ensuite, suivez les étapes et saisissez vos informations d'identification AWS générées par les commandes ci-dessus.
+>>
+>> Suivez alors les étapes et saisissez vos informations d'identification AWS générées par les commandes ci-dessus.
 >>
 > Méthode manuelle
 >>
