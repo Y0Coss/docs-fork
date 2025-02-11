@@ -1,7 +1,7 @@
 ---
 title: Generating OVHcloud account logs with Logs Data Platform (EN)
 excerpt: Find out how to forward OVHcloud customer account logs to Logs Data Platform
-updated: 2024-09-26
+updated: 2025-02-11
 ---
 
 ## Objective
@@ -17,7 +17,7 @@ To discover Logs Data Platform before continuing with this guide, please refer t
 
 ## Glossary
 
-**Logs Data Platform**: Fully managed and secured log management platform proposed by OVHcloud. Find more information on the [Logs Data Platform service page](https://www.ovhcloud.com/es-es/logs-data-platform/).
+**Logs Data Platform**: Fully managed and secured log management platform proposed by OVHcloud. Find more information on the [Logs Data Platform service page](/links/manage-operate/ldp).
 
 **Data stream**: A logical partition of logs that you create in an LDP account that you will use when ingesting, visualising or querying your logs. Multiple sources can be stored in the same data stream, and it is the unit for defining a logs pipeline (retention policy, archiving, live streaming, etc.), access rights and alert policies.
 
@@ -39,15 +39,35 @@ OVHcloud account propose 3 levels of logs:
 
 You can enable the forwarding of the OVHcloud account logs via API. You will have to target a stream of one of your LDP accounts. The logs will be forwarded to that stream. Enabling the forwarding will create a subscription for this stream ID.
 
-Note that enabling the forwarding is free of charge, but you will be charged for the usage of your Logs Data Platform service as per the standard price plan. For LDP pricing refer to the [Logs Data Platform product page](https://www.ovhcloud.com/es-es/logs-data-platform/).
+Note that enabling the forwarding is free of charge, but you will be charged for the usage of your Logs Data Platform service as per the standard price plan. For LDP pricing refer to the [Logs Data Platform product page](/links/manage-operate/ldp).
 
 To enable forwarding, you can use the following APIs:
 
-|**Method**|**Log type**|**Path**|**Description**|
-| :-: | :-: | :-: | :-: |
-POST|Audit logs|/me/logs/audit/log/subscription|Forward account audit logs|
-POST|Activity logs|/me/api/log/subscription|Forward API and Control Panel account logs|
-POST|Access policy logs|/iam/log/subscription|Forward account IAM logs to a dedicated logs stream|
+> [!tabs]
+> Audit logs
+>>
+>> **Description:** Forward account audit logs
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me POST /me/logs/audit/log/subscription
+>> >
+> Activity logs
+>>
+>> **Description:** Forward API and Control Panel account logs
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me POST /me/api/log/subscription
+>> >
+> Access policy logs
+>>
+>> **Description:** Forward account IAM logs to a dedicated logs stream
+>>
+>> > [!api]
+>> >
+>> > @api {v2} /iam POST /iam/log/subscription
+>> >
 
 For instance, for audit logs:
 
@@ -61,10 +81,15 @@ POST /me/logs/audit/log/subscription
 
 The API requires:
 
-- a `streamId`, which is the target data stream of your LDP account where your OVHcloud account logs will be forwarded to
-- a `kind`, which is the category of logs you want to forward into this data stream
+- A `streamId`, which is the target data stream of your LDP account where your OVHcloud account logs will be forwarded to.
+- A `kind`, which is the category of logs you want to forward into this data stream.
 
-You will get in response an `operationId`, so you can use it to retrieve the `subscriptionId` for further management purposes using the [Logs Data Platform read operation endpoint](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
+You will get in response an `operationId`, which you can use to retrieve the `subscriptionId` for further management purposes using the following Logs Data Platform read operation endpoint:
+
+> [!api]
+>
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/operation
+>
 
 > [!primary]
 > You can find your `streamId` in the `Logs Data Platform`{.action} section of the OVHcloud Control Panel:
@@ -77,17 +102,35 @@ Alternatively, you can retrieve your streams using the Logs Data Platform API:
 
 > [!api]
 >
-> @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream
-> @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}
+
 
 > [!primary]
 > You can find the available `kind` using the following APIs:
 >
-> |**Method**|**Log type**|**Path**|
-> | :-: | :-: | :-: |
-> GET|Audit logs|/me/logs/audit/log/kind|
-> GET|Activity logs|/me/api/log/kind|
-> GET|Access policy logs|/iam/log/kind|
+> **Audit logs:**
+>
+> > [!api]
+> >
+> > @api {v1} /me GET /me/logs/audit/log/kind
+> >
+>
+> **Activity logs:**
+>
+> > [!api]
+> >
+> > @api {v1} /me GET /me/api/log/kind
+> >
+>
+> **Access policy logs:**
+>
+> > [!api]
+> >
+> > @api {v2} /iam GET /iam/log/kind
+> >
+>
+
 
 ### Access to OVHcloud account logs
 
@@ -208,23 +251,23 @@ The three following Logs Data Platform API routes respectively allow you to:
 
 > [!api]
 >
-> @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription
 >
 
 - Retrieve the information (such as the *resource type*, in this case **account-api**, **account-iam** and **account-audit**, and *resource name* – the name of the OVHcloud account) of the service associated with the subscription based on its `subscriptionId`.
 
 > [!api]
 >
-> @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription/{subscriptionId}
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription/{subscriptionId}
 >
 
 - Delete a subscription based on its `subscriptionId`.
 
 > [!api]
 >
-> @api {DELETE} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription/{subscriptionId}
+> @api {v1} /dbaas/logs DELETE /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription/{subscriptionId}
 >
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
