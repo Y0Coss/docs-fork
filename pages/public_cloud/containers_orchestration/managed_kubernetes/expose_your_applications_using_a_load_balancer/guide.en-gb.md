@@ -1,7 +1,7 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2025-01-03
+updated: 2025-01-30
 ---
 
 > [!warning]
@@ -414,7 +414,6 @@ When exposing services like nginx-ingress-controller, it's a common requirement 
 > [!warning]
 >
 > Only ProxyProtocol version 1 is supported at the moment by the MKS's integration.
->
 
 ### Use an existing Floating IP in the tenant
 
