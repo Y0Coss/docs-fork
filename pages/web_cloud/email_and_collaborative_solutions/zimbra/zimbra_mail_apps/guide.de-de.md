@@ -1,7 +1,7 @@
 ---
 title: Zimbra-E-Mail-Adresse auf einem E-Mail-Client konfigurieren
 excerpt: Erfahren Sie hier, wie Sie Ihren E-Mail-Client konfigurieren, um die E-Mails Ihres Zimbra-Kontos zu verwalten
-updated: 2024-10-10
+updated: 2025-02-12
 ---
 
 <style>

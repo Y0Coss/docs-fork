@@ -1,7 +1,7 @@
 ---
 title: "Primeros pasos con el producto Zimbra"
 excerpt: "Cómo empezar a utilizar la solución Zimbra desde el área de cliente de OVHcloud"
-updated: 2025-01-30
+updated: 2025-02-12
 ---
 
 <style>

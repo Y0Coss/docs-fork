@@ -1,7 +1,7 @@
 ---
 title: "Configurar um endereço de e-mail Zimbra num software de mensagens"
 excerpt: "Descubra como configurar o seu software de e-mail para consultar os e-mails da sua conta Zimbra"
-updated: 2024-10-10
+updated: 2025-02-12
 ---
 
 <style>

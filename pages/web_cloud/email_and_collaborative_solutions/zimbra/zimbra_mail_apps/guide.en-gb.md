@@ -1,7 +1,7 @@
 ---
 title: "How to configure a Zimbra email address on an email client"
 excerpt: "Find out how to configure your email software to view emails from your Zimbra account"
-updated: 2024-10-10
+updated: 2025-02-12
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: "Sincronizzare un calendario CalDAV Zimbra in un'applicazione"
 excerpt: "Questa guida ti mostra come aggiungere un calendario Zimbra a un'applicazione tramite il protocollo CalDAV"
-updated: 2025-01-13
+updated: 2025-02-12
 ---
 
 <style>
