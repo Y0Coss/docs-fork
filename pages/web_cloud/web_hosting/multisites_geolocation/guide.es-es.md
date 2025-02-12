@@ -67,7 +67,7 @@ Para utilizar la opción de geolocalización por IP, haga clic en las fichas sig
 
 > [!primary]
 >
-> Una vez que haya realizado los pasos anteriores y si la zona DNS activa de su dominio está íntegramente gestionada en su [área de cliente de OVHcloud] (/links/manager), la entrada de tipo A en la zona DNS de su dominio se cambiará automáticamente. Puede comprobar que la dirección IP se ha actualizado correctamente con nuestra guía sobre [la edición de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+> Una vez que haya realizado los pasos anteriores y si la zona DNS activa de su dominio está íntegramente gestionada en su [área de cliente de OVHcloud](/links/manager), la entrada de tipo A en la zona DNS de su dominio se cambiará automáticamente. Puede comprobar que la dirección IP se ha actualizado correctamente con nuestra guía sobre [la edición de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 >
 Si no, deberá editar el dominio manualmente al proveedor que gestione la zona DNS activa. Consulte [aquí](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) la documentación que recoge todas las direcciones IP de nuestra infraestructura de hosting de OVHcloud.
 >
