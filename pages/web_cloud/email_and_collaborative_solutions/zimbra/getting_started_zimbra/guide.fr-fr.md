@@ -116,6 +116,7 @@ Sélectionnez l'onglet correspondant à votre choix :
 >> - **Configuration personnalisée** : si vous avez déjà configuré une offre e-mail sur votre nom de domaine, vous pouvez choisir les éléments qui vous intéressent.
 >>    - *Configurer l'enregistrement MX automatiquement* : il permet de saisir automatiquement les serveurs de réception OVHcloud (s'applique à toutes les offres e-mail OVHcloud).
 >>    - *Configurer l'enregistrement SPF automatiquement* : il permet de saisir automatiquement l'enregistrement autorisant les serveurs e-mail d'envoi OVHcloud à transmettre vos e-mails. Cet enregistrement est valable pour l'ensemble des offres e-mail OVHcloud.
+>>    - *Configurer l'enregistrement DKIM automatiquement* : il permet de saisir automatiquement les enregistrement permetant d'authentifier vos envois d'e-mails.
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-400 .h400}
 >>
@@ -136,6 +137,23 @@ Sélectionnez l'onglet correspondant à votre choix :
 >> > [!warning]
 >> >
 >> > Après 48 heures, si le CNAME n'est pas visible dans la zone DNS, l'opération est annulée. Il sera alors nécessaire de recommencer l'opération.
+
+#### Modifier un nom de domaine
+
+Vous pouvez modifier votre nom de domaine pour changer son organisation ou vérifier les enregistrements DNS associés à celui-ci.
+
+Depuis l'onglet `Domaine`{.action} de votre service Zimbra, cliquez sur « &#8285; » à droite du nom de domaine concerner pour afficher les options
+
+![zimbra](images/zimbra_domain_modify01.png){.thumbnail .w-400 .h400}
+
+- Cliquez sur `Configurer`{.action} pour modifier l'organisation associée à votre nom de domaine.
+
+- Cliquez sur `Diagnostics`{.action} pour afficher l'interface de diagnostique des enregistrement DNS du nom de domaine. Il est nécessaire s'assurer qu'aucune alerte n'est associée a chacun des enregistrements DNS mentionnés ci-dessous. Suivez les instructions détaillées dans chaque onglet pour corriger les erreurs:
+    - **MX** : Les enregistrements MX son indispensables pour la réception de vos e-mail
+    - **SPF** : L'enregistrement SPF est une sécurité exigé par la majorité des serveurs e-mail destinataire pour légitimer les serveurs d'envoi e-mail d'OVHcloud.
+     - **DKIM** : le mécanisme DKIM permet de mettre en place un système de signature pour chaque e-mail envoyés qui peut être vérifiée par le destinataire à l'aide de la clé publique.
+
+![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-400 .h400}
 
 ### Comptes e-mail <a name="emails"></a>
 
