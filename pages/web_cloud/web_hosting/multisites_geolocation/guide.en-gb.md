@@ -41,7 +41,7 @@ Choose the IP address of the country for which you want to geolocate your site, 
 
 Click `Next`{.action} and then click `Confirm`{.action} from the summary window.
 
->[!primary]
+> [!primary]
 >
 > If your domain name’s active DNS zone is managed in your [OVHcloud Control Panel](/links/manager), the A record in your domain name’s DNS zone will automatically change. You can check that the IP address has been updated using our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 >

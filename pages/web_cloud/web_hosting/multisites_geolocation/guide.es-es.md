@@ -41,13 +41,13 @@ Seleccione la dirección IP del país para el que quiere geolocalizar su sitio w
 
 Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action} en la ventana de resumen.
 
->[!primary]
+> [!primary]
 >
 > Si la zona DNS activa de su dominio está íntegramente gestionada en su [área de cliente de OVHcloud](/links/manager), el registro de tipo A en la zona DNS de su nombre de dominio se cambiará automáticamente. Puede comprobar que la dirección IP se ha actualizado correctamente con nuestra guía sobre [la edición de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 >
 Si no, deberá editar el dominio manualmente al proveedor que gestione la zona DNS activa. Consulte [aquí](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) la documentación que recoge todas las direcciones IP de nuestra infraestructura de hosting de OVHcloud.
 >
-> En todos los casos, será necesario un plazo de propagación de **4 a 24 horas** después de la modificación para que esta sea plenamente efectiva y visible en Internet.
+> En ambos casos, será necesario un plazo de propagación de **4 a 24 horas** después de la modificación para que esta sea plenamente efectiva y visible en Internet.
 >
 
 ## Más información

@@ -41,13 +41,13 @@ Wybierz adres IP kraju, dla którego chcesz zlokalizować swoją stronę WWW, sp
 
 Kliknij przycisk `Dalej`{.action}, a następnie kliknij `Zatwierdź`{.action} w oknie podsumowującym.
 
->[!primary]
+> [!primary]
 >
 > Jeśli aktywna strefa DNS Twojej domeny jest w pełni zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager), wpis A w strefie DNS Twojej domeny zostanie automatycznie zmieniony. Możesz sprawdzić, czy adres IP został zaktualizowany w naszym przewodniku dotyczącym [edycji strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 >
 > W przeciwnym razie przeprowadź ręcznie zmianę u dostawcy zarządzającego aktywną strefą DNS Twojej domeny. Zapoznaj się z dokumentacją [tutaj](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) zawierającą listę adresów IP naszej infrastruktury hostingu współdzielonego OVHcloud.
 >
-> W każdym przypadku, aby modyfikacja stała się w pełni skuteczna i widoczna w Internecie, konieczny będzie okres propagacji od **4 do 24 godzin**.
+> W obu przypadkach konieczne będzie zapewnienie czasu propagacji od **4 do 24 godzin** po modyfikacji, aby zmiana była w pełni skuteczna i widoczna w Internecie.
 >
 
 ## Sprawdź również
