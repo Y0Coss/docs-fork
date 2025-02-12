@@ -308,7 +308,7 @@ Click the tab that corresponds to your distribution
 >>   ens7:
 >>     dhcp4: false
 >>     addresses:
->>     - 203.0.113.3/29
+>>     - 203.0.113.1/29
 >>     routes:
 >>     - to: 203.0.113.0/29
 >>       via: 203.0.113.6
@@ -320,7 +320,7 @@ Click the tab that corresponds to your distribution
 >> sudo netplan apply
 >> ```
 >> 
-> **CentOS**
+> **CentOS, AlmaLinux & RockyLinux**
 >>
 >> The configuration below is based on CentOS 7.
 >>
@@ -354,7 +354,7 @@ Click the tab that corresponds to your distribution
 >> DEVICE=eth1
 >> ONBOOT=yes
 >> BOOTPROTO=static
->> IPADDR=203.0.113.3
+>> IPADDR=203.0.113.1
 >> NETMASK=255.255.255.248
 >> BROADCAST=203.0.113.7
 >> ```
@@ -379,23 +379,27 @@ Click the tab that corresponds to your distribution
 >>
 >> ```bash
 >> $ sudo nmcli con show
->> NAME             UUID                                  TYPE      DEVICE
->> cloud-init eth0  1dsdytd7-d123-55gt-84r6-c639tyhfla7c  ethernet  eth0
->> cloud-init eth1  3sdfsd35-7064-5b6e-89pd-bfdsl934ngs8  ethernet  eth1
+>> NAME                UUID                                  TYPE      DEVICE
+>> cloud-init eth0     1dsdytd7-d123-55gt-84r6-c639tyhfla7c  ethernet  eth0
+>> Wired connection 1  3sdfsd35-7064-5b6e-89pd-bfdsl934ngs8  ethernet  eth1
 >> ```
 >>
->> Using a text editor of your choice, create a network configuration file in the folder `/etc/NetworkManager/system-connections` for editing. In our example, our file is called `cloud-init-eth1.nmconnection` since the device for the private interface retrieved above is `eth1`.
+>> Using the `nmcli` handler, set up your configuration, replacing `INTERFACE_NAME`, `IP_ADDRESS/PREFIX` and `GATEWAY_IP` with your own values.
 >>
->> ```bash
->> sudo touch /etc/NetworkManager/system-connections/cloud-init-eth1.nmconnection
->> ```
->>
->> You can then edit this file using the `nmcli` handler, replacing `INTERFACE_NAME`, `IP_ADDRESS/PREFIX` and `GATEWAY_IP` with your own values. Please note the `INTERFACE_NAME` here is the NAME of your private interface (cloud-init eth1) and not the DEVICE (eth1). This information can be gotten from running the command `nmcli con show`.
+>> > [!warning]
+>> > Please note `INTERFACE_NAME` here is the NAME of your private interface (Wired connection 1) and not the DEVICE (eth1). This information can be retrieved by running the command `nmcli con show`.
+>> >
 >>
 >> Add the IP address:
 >>
 >> ```bash
 >> sudo nmcli connection modify INTERFACE_NAME IPv4.address IP_ADDRESS/PREFIX
+>> ```
+>>
+>> **Example**
+>>
+>> ```bash
+>> sudo nmcli connection modify 'Wired connection 1' IPv4.address 203.0.113.1/29
 >> ```
 >> 
 >> Add the Gateway:
@@ -404,16 +408,34 @@ Click the tab that corresponds to your distribution
 >> sudo nmcli connection modify INTERFACE_NAME IPv4.gateway GATEWAY_IP
 >> ```
 >>
+>> **Example**
+>>
+>> ```bash
+>> sudo nmcli connection modify 'Wired connection 1' IPv4.gateway 203.0.113.6
+>> ```
+>> 
 >> Add a DNS server:
 >>
 >> ```bash
 >> sudo nmcli connection modify INTERFACE_NAME IPv4.dns 213.186.33.99
 >> ```
 >>
+>> **Example**
+>>
+>> ```bash
+>> sudo nmcli connection modify 'Wired connection 1' IPv4.dns 213.186.33.99
+>> ```
+>> 
 >> Change the configuration to manual:
 >>
 >> ```bash
 >> sudo nmcli connection modify INTERFACE_NAME IPv4.method manual
+>> ```
+>> 
+>> **Example**
+>>
+>> ```bash
+>> sudo nmcli connection modify 'Wired connection 1' IPv4.method manual
 >> ```
 >>
 >> Make the configuration persistent:
@@ -422,6 +444,12 @@ Click the tab that corresponds to your distribution
 >> sudo nmcli con mod INTERFACE_NAME connection.autoconnect true
 >> ```
 >>
+>> **Example**
+>>
+>> ```bash
+>> sudo nmcli con mod 'Wired connection 1' connection.autoconnect true
+>> ```
+>> 
 >> Reboot your network with the following command:
 >>
 >> ```bash
