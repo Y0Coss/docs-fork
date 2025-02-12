@@ -47,7 +47,7 @@ Klicken Sie auf `Weiter`{.action} und im nächsten Fenster auf `Bestätigen`{.ac
 >
 > Ist das nicht der Fall, müssen Sie die Änderung manuell beim Anbieter vornehmen, der die aktive DNS Zone Ihres Domainnamens verwaltet. [Hier](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) finden Sie die Dokumentation, in der alle IP-Adressen der OVHcloud Shared Hosting Infrastruktur aufgeführt sind.
 >
-> In jedem Fall ist eine Propagationszeit von **4 bis 24 Stunden** nach der Änderung erforderlich, damit die Änderung im Internet voll wirksam und sichtbar ist.
+> In beiden Fällen ist eine Propagationszeit von **4 bis 24 Stunden** nach der Änderung erforderlich, damit die Änderung im Internet voll wirksam und sichtbar ist.
 >
 
 ## Weiterführende Informationen

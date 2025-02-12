@@ -47,7 +47,7 @@ Click `Next`{.action} and then click `Confirm`{.action} from the summary window.
 >
 > Otherwise, you will need to make the change manually with the provider that manages your domain name’s active DNS zone. Find [here](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) the documentation that lists all the IP addresses in our OVHcloud shared hosting infrastructure.
 >
-> In any case, you will need to wait between **4 and 24 hours** for the changes to propagate fully, and be visible on the internet.
+> In both cases, you will need to wait between **4 and 24 hours** for the changes to propagate fully, and be visible on the internet.
 >
 
 ## Go further
