@@ -1,7 +1,7 @@
 ---
-title: "Geolokalisierung Ihrer Website in einem bestimmten Land"
-excerpt: "Diese Anleitung erklärt, wie Sie Ihre Website mithilfe unserer geolokalisierten IP-Adressen geolokalisieren"
-updated: 2022-12-22
+title: "Wie kann ich eine Website in einem bestimmten Land geolokalisieren?"
+excerpt: "So lokalisieren Sie Ihre Website mithilfe der geolokalisierten IP-Adressen, die für die Shared Hosting Angebote von OVHcloud verfügbar sind"
+updated: 2025-02-11
 ---
 
 ## Ziel

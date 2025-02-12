@@ -1,7 +1,7 @@
 ---
 title: "Geolocalizzare il vostro sito web in un paese specifico"
 excerpt: "Questa guida ti mostra come geolocalizzare il tuo sito Web utilizzando i nostri indirizzi IP geolocalizzati"
-updated: 2022-12-22
+updated: 2025-02-11
 ---
 
 ## Obiettivo

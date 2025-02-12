@@ -1,7 +1,7 @@
 ---
 title: "Geolokalizacja strony WWW w danym kraju"
 excerpt: "Dowiedz się, jak geolokalizować Twoją stronę WWW za pomocą geolokalizowanych adresów IP"
-updated: 2022-12-22
+updated: 2025-02-11
 ---
 
 ## Wprowadzenie
