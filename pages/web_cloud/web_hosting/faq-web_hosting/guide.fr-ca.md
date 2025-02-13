@@ -92,6 +92,9 @@ Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offr
 
 **Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
 
+///
+
+
 ## Diagnostic
 
 > [!warning]
