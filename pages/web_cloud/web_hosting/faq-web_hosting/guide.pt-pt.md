@@ -4,6 +4,20 @@ excerpt: "Encontre aqui as questões mais comuns sobre os alojamentos web da OVH
 updated: 2024-06-27
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Gestão da sua oferta
 
 ### Como configurar o meu alojamento?
