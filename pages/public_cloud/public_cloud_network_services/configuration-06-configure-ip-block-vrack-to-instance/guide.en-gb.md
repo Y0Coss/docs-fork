@@ -214,7 +214,22 @@ sudo nano /etc/iproute2/rt_tables
 1 vrack
 ```
 
-### Configuration steps by OS
+#### Non-persistent application
+
+> [!warning]
+>
+> This configuration will be lost after a restart of your Instance (non-persistent configuration).
+>
+
+Connect to your server via SSH and enter the following commands. Replace NETWORK_INTERFACE, IP_ADDRESS/PREFIX and GATEWAY_IP with your own values.
+
+```bash
+ip addr add IP_ADDRESS/PREFIX dev NETWORK_INTERFACE
+ip route add IP_ADDRESS/PREFIX dev NETWORK_INTERFACE
+ip route add default via GATEWAY_IP dev NETWORK_INTERFACE
+```
+
+#### Persistent application by OS
 
 Click the tab that corresponds to your distribution
 
@@ -262,8 +277,8 @@ Click the tab that corresponds to your distribution
 >>     address 203.0.113.1
 >>     netmask 255.255.255.248
 >>     broadcast 203.0.113.7
->>     post-up ip route add 203.0.113.0/29 dev NETWORK_INTERFACE table vrack
->>     post-up ip route add default via 203.0.113.6 dev NETWORK_INTERFACE table vrack
+>>     post-up ip route add 203.0.113.0/29 dev eth1 table vrack
+>>     post-up ip route add default via 203.0.113.6 dev eth1 table vrack
 >>     post-up ip rule add from 203.0.113.0/29 table vrack
 >>     post-up ip rule add to 203.0.113.0/29 table vrack
 >> ```
@@ -290,11 +305,11 @@ Click the tab that corresponds to your distribution
 >> sudo nano /etc/netplan/50-cloud-init.yaml
 >> ```
 >> 
->> Add the IP configuration after the first one, replacing NETWORK_INTERFACE, IP_ADDRESS/PREFIX, NETWORK_IP/PREFIX and GATEWAY_IP with your own values.
+>> Add the IP configuration after the first one, replacing NETWORK_INTERFACE, IP_ADDRESS/PREFIX90 and GATEWAY_IP with your own values.
 >>
 >> ```bash
 >> NETWORK_INTERFACE:
->> dhcp4: no
+>> dhcp4: false
 >> addresses:
 >> - IP_ADDRESS/PREFIX
 >> routes:
@@ -342,7 +357,7 @@ Click the tab that corresponds to your distribution
 >> ```bash
 >> DEVICE=NETWORK_INTERFACE
 >> ONBOOT=yes
->> BOOTPROTO=static
+>> BOOTPROTO=none # For CentOS use "static"
 >> IPADDR=IP_ADDRESS
 >> NETMASK=NETMASK_IP
 >> BROADCAST=BROADCAST_IP
@@ -387,7 +402,7 @@ Click the tab that corresponds to your distribution
 >> Using the `nmcli` handler, set up your configuration, replacing `INTERFACE_NAME`, `IP_ADDRESS/PREFIX` and `GATEWAY_IP` with your own values.
 >>
 >> > [!warning]
->> > Please note `INTERFACE_NAME` here is the NAME of your private interface (Wired connection 1) and not the DEVICE (eth1). This information can be retrieved by running the command `nmcli con show`.
+>> > Please note that `INTERFACE_NAME` here is the **NAME** of your private interface (Wired connection 1) and not the **DEVICE** (eth1). This information can be retrieved by running the command `nmcli con show`.
 >> >
 >>
 >> Add the IP address:
