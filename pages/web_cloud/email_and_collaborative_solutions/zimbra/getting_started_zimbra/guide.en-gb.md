@@ -134,11 +134,11 @@ Select the tab that corresponds to your choice:
 >>
 >> > [!warning]
 >>>
->> > After 48 hours, if the CNAME record is not visible in the DNS zone, the operation is canceled. You will then need to retry the operation.
+>> > If the CNAME record is not visible in the DNS zone after 48 hours, the operation is cancelled. You will then need to retry the operation.
 
 #### Modify a domain name
 
-You can change your domain name to change its organization, or check its associated DNS records.
+You can modify your domain name to change its organization or to check its associated DNS records.
 
 In the `Domain`{.action} tab of your Zimbra service, click on the "&#8285;" icon to the right of the domain name concerned to display the options.
 
@@ -146,9 +146,9 @@ In the `Domain`{.action} tab of your Zimbra service, click on the "&#8285;" icon
 
 - Click `Configure`{.action} to modify the organization associated with your domain name.
 - Click `Diagnostics`{.action} to display the diagnostic interface for the domain name DNS records. You will need to ensure that no alerts are displayed for each of the DNS records listed in the tabs. Follow the instructions detailed in each tab with an alert to configure the DNS records:
-    - **MX** : essential for receiving your emails.
-    - **SPF**: security required by the majority of recipient email servers to legitimize OVHcloud email sending servers with your domain name.
-    - **DKIM** : sets up a signature system for each email sent by your Zimbra service. The signature is verified by the recipient using the public key visible in your DNS zone.
+    - **MX**: Essential for receiving your emails.
+    - **SPF**: Security record that is required by the majority of recipient email servers to legitimize OVHcloud email sending servers with your domain name.
+    - **DKIM**: Provides a signature system for each email sent by your Zimbra service. The signature is verified by the recipient using the public key visible in your DNS zone.
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-400 .h400}
 
