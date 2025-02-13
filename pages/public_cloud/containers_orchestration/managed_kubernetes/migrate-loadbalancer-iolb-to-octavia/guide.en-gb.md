@@ -39,8 +39,8 @@ Below is a comparison between Load Balancer for Kubernetes and Public Cloud Load
 |                                     | Load Balancer for Managed Kubernetes | Public Cloud Load Balancer |
 | ----------------------------------- | ------------------------------------ | -------------------------- |
 | Maximum number of connections       | 10 000                               | up to 20 000               |
-| Maximum number of HTTP requests    | 2000                                 | Up to 80 000               |
-| Bandwidth                            | 200 Mbit/s                           | up to 4 Gbit/s (up/down)   |
+| Maximum number of HTTP requests     | 2000                                 | Up to 80 000               |
+| Bandwidth                           | 200 Mbit/s                           | up to 4 Gbit/s (up/down)   |
 | Supported protocol                  | TCP                                  | TCP/UCP                    |
 | Supported load balancing layers     | L4                                   | L4/L7                      |
 | Capacity to export metrics and logs | No                                   | Yes                        |
@@ -63,7 +63,7 @@ You can find full details on the official documentations pages :
 - [Public Cloud Loadbalancer annotations](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-expose-applications-using-load-balancer?id=kb_article_view&sysparm_article=KB0062874#supported-annotations-features)
 
 | Load Balancer for Managed Kubernetes                                          | Public Cloud Load Balancer |
-| --------------------------------------------------------------------- | -------------------------- |
+| ----------------------------------------------------------------------------- | -------------------------- |
 | `service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol` <br> Supported values: <br>- v1 <br>- v2 <br>- v2-ssl <br>- v2-ssl-cn   | `loadbalancer.openstack.org/proxy-protocol` <br>Supported values: <br>- v1, true: enable the ProxyProtocol version 1 <br>- v2: enable the ProxyProtocol version 2  <br><br><br>       |
 | `service.beta.kubernetes.io/ovh-loadbalancer-allowed-sources` <br> --> DEPRECATED**                                      | No annotation.  <br>IP restriction is defined using `.spec.loadBalancerSourceRanges`  |
 | `service.beta.kubernetes.io/ovh-loadbalancer-balance` <br> Supported values: <br>- first <br>- leastconn <br>- roundrobin <br>- source | `loadbalancer.openstack.org/lb-method` <br> Supported values: <br>- ROUND_ROBIN <br>- LEAST_CONNECTIONS <br>- SOURCE_IP    <br>                                                |
@@ -234,7 +234,7 @@ Once the TTL reduction has been propagated:
 
 - Replace the old IP with the one of the new Load Balancer in your DNS record.
 - Thanks to the short TTL value, users will quickly see the update.
-- Check that the change is effective using the same `dig` command used previously. You should see the new IP address  displayed in the command output.
+- Check that the change is effective using the same `dig` command used previously. You should see the new IP address displayed in the command output.
 
 ### Restore TTL after migration
 
