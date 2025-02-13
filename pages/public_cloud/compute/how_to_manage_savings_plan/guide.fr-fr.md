@@ -134,11 +134,11 @@ Vous pouvez créer votre Savings Plan pour le type de ressource voulue en suivan
 >> >
 >> Le **serviceId** correspond à l'id récupéré via l'appel API précédent.
 >>
->> Vous obtenez une liste contenant le details de votre service comme suit, vérifiez que ce soit bien le bon projet grace au champ `vars.value`:
+>> Vous obtenez une liste contenant les détails de votre service comme ci-dessous. Vérifiez qu'il s'agit bien du bon projet grâce au champ `vars.value` :
 >>
 >> ![Savings Plan details service list](images/savings_plan_list_service_details.png){.thumbnail .h-600}
 >>
->> Vous pouvez retrouver l'id de votre Savings Plan dans la liste de vos Savings Plans qui s'obtient via l'appel suivant :
+>> Vous pouvez retrouver l'ID de votre Savings Plan dans la liste de vos Savings Plans qui s'obtient via l'appel suivant :
 >>
 >> > [!api]
 >> >
