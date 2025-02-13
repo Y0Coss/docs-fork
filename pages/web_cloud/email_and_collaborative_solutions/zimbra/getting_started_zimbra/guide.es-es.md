@@ -140,7 +140,7 @@ Seleccione la pestaña correspondiente a su elección:
 
 Puede cambiar el nombre de dominio para cambiar su organización o comprobar los registros DNS asociados.
 
-En la pestaña Dominio`{.action} del servicio Zimbra, haga clic en el icono "&#8285;" situado al final de la línea correspondiente al dominio para ver las opciones.
+En la pestaña `Dominio`{.action} del servicio Zimbra, haga clic en el icono "&#8285;" situado al final de la línea correspondiente al dominio para ver las opciones.
 
 ![zimbra](images/zimbra_domain_modify01.png){.thumbnail .w-400 .h400}
 

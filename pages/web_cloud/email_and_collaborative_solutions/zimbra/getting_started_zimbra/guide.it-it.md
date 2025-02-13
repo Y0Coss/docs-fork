@@ -35,11 +35,11 @@ Per accedere al servizio Zimbra, accedi allo [Spazio Cliente OVHcloud](/links/ma
 
 ### Configura il servizio Zimbra
 
-Prima di iniziare a configurare i tuoi account email Zimbra, ti consigliamo di prendere visione dei tre elementi che strutturano gerarchicamente il tuo servizio :
+Prima di iniziare a configurare i tuoi account email Zimbra, ti consigliamo di prendere visione dei tre elementi che strutturano gerarchicamente il tuo servizio:
 
-- [**Organizzazione**](#organizations) : permette di raggruppare i domini per associarli. 
-- [**Dominio**](#domains) : è indispensabile per creare un account email. È necessario gestirne almeno uno dallo Spazio Cliente OVHcloud e aggiungerlo al servizio Zimbra.
-- [**Account email**](#emails) : utilizzando i domini aggiunti al servizio Zimbra, è possibile creare un indirizzo email.
+- [**Organizzazione**](#organizations): permette di raggruppare i domini per associarli. 
+- [**Dominio**](#domains): è indispensabile per creare un account email. È necessario gestirne almeno uno dallo Spazio Cliente OVHcloud e aggiungerlo al servizio Zimbra.
+- [**Account email**](#emails): utilizzando i domini aggiunti al servizio Zimbra, è possibile creare un indirizzo email.
 
 > [!primary]
 >
@@ -79,10 +79,10 @@ Per rimuovere il filtro, fare semplicemente clic sulla croce del filtro.
 
 In questa scheda vengono mostrati tutti i domini aggiunti al servizio Zimbra. Per poterli aggiungere, è necessario gestirli dallo Spazio Cliente OVHcloud.
 
-Nella tabella dei domini trovi due informazioni :
+Nella tabella dei domini trovi due informazioni:
 
-- **Organizzazione** : questa data viene determinata al momento dell'aggiunta del dominio. Il label verrà visualizzato automaticamente in questa colonna.
-- **Numero di account** : qui trovi tutti gli account creati con il nome di dominio corrispondente.
+- **Organizzazione**: questa data viene determinata al momento dell'aggiunta del dominio. Il label verrà visualizzato automaticamente in questa colonna.
+- **Numero di account**: qui trovi tutti gli account creati con il nome di dominio corrispondente.
 
 ![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-400}
 
@@ -111,9 +111,9 @@ Seleziona la scheda che preferisci:
 >> Per configurare la zona DNS, seleziona una delle due opzioni seguenti:
 >>
 >> - **Configurazione consigliata**: la zona DNS verrà configurata automaticamente. Questa opzione è perfetta se non hai configurato un’offerta email sul tuo dominio.
->> - **Configurazione personalizzata** : se hai già configurato un'offerta email sul tuo dominio, puoi scegliere gli elementi che ti interessano.
+>> - **Configurazione personalizzata**: se hai già configurato un'offerta email sul tuo dominio, puoi scegliere gli elementi che ti interessano.
 >>    - *Configurare la registrazione MX automaticamente*: permette di inserire automaticamente i server di posta in arrivo di OVHcloud (si applica a tutte le soluzioni di posta elettronica OVHcloud).
->>    - *Configurare il record SPF automaticamente* : questa opzione permette di inserire automaticamente il record che autorizza i server di posta elettronica di invio OVHcloud a trasmettere le email. Questo record è valido per tutte le soluzioni di posta elettronica OVHcloud.
+>>    - *Configurare il record SPF automaticamente*: questa opzione permette di inserire automaticamente il record che autorizza i server di posta elettronica di invio OVHcloud a trasmettere le email. Questo record è valido per tutte le soluzioni di posta elettronica OVHcloud.
 >>    - *Configura il record DKIM automaticamente*: permette di inserire automaticamente i record necessari ad autenticare l’invio delle email.
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-400 .h400}
@@ -154,11 +154,11 @@ Dalla scheda `Dominio`{.action} del servizio Zimbra, clicca sull’icona "&#8285
 
 ### Account email <a name="emails"></a>
 
-Per gestire gli indirizzi email del servizio Zimbra accedi alla scheda `Account email`{.action}. Visualizzi una lista degli account email associati al tuo servizio e 3 informazioni per ognuno di essi :
+Per gestire gli indirizzi email del servizio Zimbra accedi alla scheda `Account email`{.action}. Visualizzi una lista degli account email associati al tuo servizio e 3 informazioni per ognuno di essi:
 
-- **Organizzazione** : se il dominio del tuo account email è associato a un'organizzazione, visualizzi automaticamente il suo label in questa colonna.
-- **Offerta** : dato che il servizio Zimbra può ospitare diverse offerte Zimbra, è possibile trovare il servizio associato al tuo account email in questa colonna.
-- **Dimensione** : questa colonna mostra la capacità totale del tuo account email e lo spazio occupato attualmente.
+- **Organizzazione**: se il dominio del tuo account email è associato a un'organizzazione, visualizzi automaticamente il suo label in questa colonna.
+- **Offerta**: dato che il servizio Zimbra può ospitare diverse offerte Zimbra, è possibile trovare il servizio associato al tuo account email in questa colonna.
+- **Dimensione**: questa colonna mostra la capacità totale del tuo account email e lo spazio occupato attualmente.
 
 Nella parte superiore della pagina è inoltre disponibile un link alla [Webmail](/links/web/email) con cui è possibile accedere al contenuto del proprio account email direttamente dal browser Internet.
 
@@ -170,25 +170,25 @@ Per creare un account email sul tuo servizio Zimbra, clicca sulla scheda `Accoun
 
 Inserisci le informazioni richieste.
 
-- **Account email** : inserisci il *nome dell’account* che vuoi assegnare al tuo indirizzo email (ad esempio nome.cognome) e *seleziona un dominio* nel menu a tendina.
+- **Account email**: inserisci il *nome dell’account* che vuoi assegnare al tuo indirizzo email (ad esempio nome.cognome) e *seleziona un dominio* nel menu a tendina.
 
 > [!warning]
 >
-> La scelta del nome dell’indirizzo email deve rispettare queste condizioni :
+> La scelta del nome dell’indirizzo email deve rispettare queste condizioni:
 >
 > - Minimo 2 caratteri
 > - Massimo 32 caratteri
 > - Nessun carattere accentato
-> - Nessun carattere speciale eccetto i seguenti : `.`, `+`, `-` e `_`
+> - Nessun carattere speciale eccetto i seguenti: `.`, `+`, `-` e `_`
 
-- **Nome** : inserisci un nome.
-- **Cognome** : inserisci un nome.
-- **Nome da visualizzare** : inserisci il nome che comparirà come mittente dei messaggi inviati da questo indirizzo.
-- **Password** : definisci una password complessa composta da (almeno) 9 caratteri, una maiuscola, una minuscola e una cifra. Per motivi di sicurezza, non utilizzare due volte la stessa password. Sceglierne uno che non contenga informazioni personali (ad esempio, non inserire cognome, nome e data di nascita). Cambialo regolarmente.
+- **Nome**: inserisci un nome.
+- **Cognome**: inserisci un nome.
+- **Nome da visualizzare**: inserisci il nome che comparirà come mittente dei messaggi inviati da questo indirizzo.
+- **Password**: definisci una password complessa composta da (almeno) 9 caratteri, una maiuscola, una minuscola e una cifra. Per motivi di sicurezza, non utilizzare due volte la stessa password. Sceglierne uno che non contenga informazioni personali (ad esempio, non inserire cognome, nome e data di nascita). Cambialo regolarmente.
 
 > [!warning]
 >
-> La scelta della password deve rispettare queste condizioni :
+> La scelta della password deve rispettare queste condizioni:
 >
 > - Minimo 10 caratteri
 > - Massimo 64 caratteri

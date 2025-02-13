@@ -116,7 +116,7 @@ Sélectionnez l'onglet correspondant à votre choix :
 >> - **Configuration personnalisée** : si vous avez déjà configuré une offre e-mail sur votre nom de domaine, vous pouvez choisir les éléments qui vous intéressent.
 >>    - *Configurer l'enregistrement MX automatiquement* : il permet de saisir automatiquement les serveurs de réception OVHcloud (s'applique à toutes les offres e-mail OVHcloud).
 >>    - *Configurer l'enregistrement SPF automatiquement* : il permet de saisir automatiquement l'enregistrement autorisant les serveurs e-mail d'envoi OVHcloud à transmettre vos e-mails. Cet enregistrement est valable pour l'ensemble des offres e-mail OVHcloud.
->>    - *Configurer l'enregistrement DKIM automatiquement* : il permet de saisir automatiquement les enregistrements nécessaires pour  d'authentifier vos envois d'e-mails.
+>>    - *Configurer l'enregistrement DKIM automatiquement* : il permet de saisir automatiquement les enregistrements nécessaires pour authentifier vos envois d'e-mails.
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-400 .h400}
 >>
@@ -149,7 +149,7 @@ Depuis l'onglet `Domaine`{.action} de votre service Zimbra, cliquez sur l'icône
 - Cliquez sur `Configurer`{.action} pour modifier l'organisation associée à votre nom de domaine.
 - Cliquez sur `Diagnostics`{.action} pour afficher l'interface de diagnostic des enregistrement DNS du nom de domaine. Il est nécessaire de s'assurer qu'aucune alerte n'est affichée pour chacun des enregistrements DNS mentionnés dans les onglets. Suivez les instructions détaillées dans chaque onglet mentionnant une alerte pour configurer les enregistrements DNS :
     - **MX** : indispensable pour la réception de vos e-mails.
-    - **SPF** : sécurité exigée par la majorité des serveurs e-mail destinataire pour légitimer les serveurs d'envoi e-mail d'OVHcloud avec votre nom de domaine.
+    - **SPF** : sécurité exigée par la majorité des serveurs e-mail destinataires pour légitimer les serveurs d'envoi e-mail d'OVHcloud avec votre nom de domaine.
     - **DKIM** : permet de mettre en place un système de signature pour chaque e-mail envoyé par votre service Zimbra. La signature est vérifiée par le destinataire à l'aide de la clé publique visible dans votre zone DNS.
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-400 .h400}

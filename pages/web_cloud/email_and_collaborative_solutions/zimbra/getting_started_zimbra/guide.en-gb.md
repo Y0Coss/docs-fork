@@ -114,7 +114,7 @@ Select the tab that corresponds to your choice:
 >> - **Custom configuration**: If you have already configured an email solution on your domain name, you can choose the elements that interest you.
 >>    - *Configure the MX record automatically*: This allows you to enter the OVHcloud incoming servers automatically (applies to all OVHcloud email solutions).
 >>    - *Configure the SPF record automatically*: This allows you to enter the record automatically, authorizing the OVHcloud sending email servers to send your emails. This registration is valid for all OVHcloud email solutions.
->>    - *Configure the DKIM record automatically* : it allows you to automatically enter the records required to authenticate your email sending.
+>>    - *Configure the DKIM record automatically*: it allows you to automatically enter the records required to authenticate your email sending.
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-400 .h400}
 >>
