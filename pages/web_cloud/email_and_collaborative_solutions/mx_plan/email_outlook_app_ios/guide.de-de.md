@@ -23,7 +23,7 @@ MX Plan Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerich
 >
 > OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit in Ihrer Verantwortung, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei gängigen Aufgaben bestmöglich zu begleiten. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Partner](https://marketplace.ovhcloud.com/c/support-collaboration) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt „Weiterführende Informationen“ dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei gängigen Aufgaben bestmöglich zu begleiten. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Partner](https://marketplace.ovhcloud.com/c/support-collaboration) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt "Weiterführende Informationen" dieser Anleitung.
 
 ## Voraussetzungen
 
@@ -31,7 +31,7 @@ MX Plan Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerich
 - Sie haben die Outlook-App auf Ihrem mobilen Gerät [iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
-## In der Praxis
+## In der praktischen Anwendung
 
 ## In der praktischen Anwendung <a name="add-account"></a>
 
@@ -83,7 +83,7 @@ Folgen Sie den Installationsschritten, indem Sie unten auf die Registerkarten kl
 
 > [!warning]
 >
-> Wenn Sie nach dem Befolgen der obigen Konfigurationsschritte einen Fehler beim Senden oder Empfangen feststellen, lesen Sie den Abschnitt „[Vorhandene Einstellungen ändern](#modify-settings)“.
+> Wenn Sie nach dem Befolgen der obigen Konfigurationsschritte einen Fehler beim Senden oder Empfangen feststellen, lesen Sie den Abschnitt "[Vorhandene Einstellungen ändern](#modify-settings)".
 
 ### E-Mail-Adresse verwenden
 
@@ -95,10 +95,10 @@ OVHcloud bietet auch eine Web-App, mit der Sie über einen Webbrowser auf Ihre E
 - [E-Mail-Adresse über RoundCube Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 - [Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
-### Vorhandene Einstellungen ändern <a name=„modify-settings“></a>
+### Vorhandene Einstellungen ändern <a name="modify-settings"></a>
 
-1. Tippen Sie auf den Kreis mit den Initialen des angezeigten E-Mail-Accounts oder das Haussymbol „&#8962;“ oben links auf Ihrem Bildschirm.
-2. Drücken Sie das Zahnrad „&#9881;“ unten links auf Ihrem Bildschirm.
+1. Tippen Sie auf den Kreis mit den Initialen des angezeigten E-Mail-Accounts oder das Haussymbol "&#8962;" oben links auf Ihrem Bildschirm.
+2. Drücken Sie das Zahnrad "&#9881;" unten links auf Ihrem Bildschirm.
 3. Tippen Sie anschließend im Menü **Einstellungen** auf `Konten`{.action}.
 4. Wählen Sie das entsprechende Konto aus.
 5. Tippen Sie auf `Anmeldeinformationen bearbeiten`{.action}.
@@ -107,17 +107,17 @@ OVHcloud bietet auch eine Web-App, mit der Sie über einen Webbrowser auf Ihre E
 
 Die Einstellungen finden Sie in **Schritt 3** im Kapitel [Account hinzufügen](#add-account).
 
-### E-Mail-Account löschen <a name=„delete“></a>
+### E-Mail-Account löschen <a name="delete"></a>
 
-1. Tippen Sie auf den Kreis mit den Initialen des angezeigten E-Mail-Accounts oder das Haussymbol „&#8962;“ oben links auf Ihrem Bildschirm.
-2. Drücken Sie das Zahnrad „&#9881;“ unten links auf Ihrem Bildschirm.
+1. Tippen Sie auf den Kreis mit den Initialen des angezeigten E-Mail-Accounts oder das Haussymbol "&#8962;" oben links auf Ihrem Bildschirm.
+2. Drücken Sie das Zahnrad "&#9881;" unten links auf Ihrem Bildschirm.
 3. Tippen Sie anschließend im Menü **Einstellungen** auf `Konten`{.action}.
 4. Wählen Sie das entsprechende Konto aus.
 5. Drücken Sie `Account löschen`{.action}.
 
 ![Outlook iOS](images/outlook-app-ios-modify-delete-01.png){.thumbnail .w-400 .h-600}
 
-### POP-, IMAP- und SMTP-Einstellungen zurückrufen <a name=„popimap-settings“></a>
+### POP-, IMAP- und SMTP-Einstellungen zurückrufen <a name="popimap-settings"></a>
 
 #### IMAP- und POP-Empfangseinstellungen
 
@@ -165,12 +165,12 @@ Wenn Sie zum Senden von E-Mails die **SMTP**-Einstellungen in den Kontoeinstellu
 >
 > **Konfiguration ändern**
 >
-> Wenn Ihre E-Mail-Adresse mit **IMAP** konfiguriert ist und Sie diese Konfiguration in **POP** ändern möchten, müssen Sie den Account löschen und ihn anschließend mit **POP** neu erstellen. Lesen Sie das Kapitel „[Vorhandene Einstellungen ändern](#modify-settings)“ in dieser Anleitung.
+> Wenn Ihre E-Mail-Adresse mit **IMAP** konfiguriert ist und Sie diese Konfiguration in **POP** ändern möchten, müssen Sie den Account löschen und ihn anschließend mit **POP** neu erstellen. Lesen Sie das Kapitel "[Vorhandene Einstellungen ändern](#modify-settings)" in dieser Anleitung.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
-Für spezielle Dienstleistungen (Referenzierung, Entwicklung etc.) wenden Sie sich bitte an die [OVHcloud Partner](/links/partner).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Verwendung und Konfiguration Ihrer OVHcloud Lösungen benötigen, empfehlen wir Ihnen unsere verschiedenen [Support-Angebote](/links/support).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer [User Community](/links/community).
+Treten Sie unserer [User Community](/links/community) bei.

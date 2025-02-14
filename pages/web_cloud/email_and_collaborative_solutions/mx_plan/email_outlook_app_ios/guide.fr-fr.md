@@ -62,7 +62,7 @@ Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 >> Vous avez deux possibilités:
 >>
 >> - Si vous avez la mention « **IMAP** » en haut de la page, passez à l'étape 3.
->> - Si la fenêtre de paramètre du compte affiche « **Exchange** » en haut, appuyez sur le bouton `?` dans le coin supérieur droit de l'écran **(1)**, puis choisissez `Changer de fournisseur de compte`{.action} **(2)**. Sélectionnez alors `IMAP`**(3)** et passez à l'étape 3.
+>> - Si la fenêtre de paramètre du compte affiche « **Exchange** » en haut, appuyez sur le bouton `?` dans le coin supérieur droit de l'écran **(1)**, puis choisissez `Changer de fournisseur de compte`{.action} **(2)**. Sélectionnez alors `IMAP` **(3)** et passez à l'étape 3.
 >>
 >> ![outlook ios](images/outlook-app-ios-add-step02.png){.thumbnail .w-400 .h-600}
 >>
@@ -89,7 +89,7 @@ Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible via ce lien : [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation et en fonction du webmail associé à votre offre, aidez-vous de nos guides : 
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible via ce lien : [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation et en fonction du webmail associé à votre offre, aidez-vous de nos guides :
 
 - [Consulter son compte depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 - [Utiliser son adresse e-mail depuis le webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
@@ -98,7 +98,7 @@ OVHcloud propose aussi une application web permettant d'accéder à votre adress
 ### Modifier les paramètres existants <a name="modify-settings"></a>
 
 1. Appuyez sur le cercle contenant les initiales du compte e-mail consulté ou l'icône de maison « &#8962; » dans la partie supérieure gauche de votre écran.
-2. Appuyez sur l'engrenage «  &#9881; » dans la partie inférieure gauche de votre écran.
+2. Appuyez sur l'engrenage « &#9881; » dans la partie inférieure gauche de votre écran.
 3. Appuyez ensuite sur `Comptes`{.action} dans le menu **Réglages**.
 4. Sélectionnez le compte concerné.
 5. Appuyez sur `Modifier les informations de connexion`{.action}.

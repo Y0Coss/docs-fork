@@ -1,15 +1,15 @@
---- 
+---
 title: "MX Plan - Configurare un account email su Outlook per iOS"
-excerpt: "Scopri come configurare il tuo indirizzo email MX Plan sull’applicazione mobile Outlook per iOS"
+excerpt: "Questa guida ti mostra come configurare il tuo indirizzo email MX Plan sull’applicazione mobile Outlook per iOS"
 updated: 2025-02-10
---- 
+---
 
 <style>
 .w-400 {
-max-width:400px !important;
+  max-width:400px !important;
 }
 .h-600 {
-max-height:600px !important;
+  max-height:600px !important;
 }
 </style>
 
@@ -27,11 +27,11 @@ Gli account MX Plan possono essere configurati su client di posta compatibili. p
 
 ## Prerequisiti
 
-- Disporre di un indirizzo email MX Plan (compreso in una soluzione MX Plan o in una soluzione di [hosting Web OVHcloud](/links/web/hosting).
+- Disporre di un indirizzo email MX Plan (compreso in una soluzione MX Plan o in una soluzione di [hosting Web OVHcloud](/links/web/hosting)).
 - Avere l’applicazione Outlook sul proprio dispositivo mobile [iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
 - Disporre delle credenziali associate all’indirizzo email da configurare.
 
-## In pratica
+## Procedura
 
 ### Aggiungi l'account <a name="add-account"></a>
 
@@ -40,11 +40,11 @@ Gli account MX Plan possono essere configurati su client di posta compatibili. p
 ![outlook-ios](images/outlook-app-ios-add01.png){.thumbnail .w-400 .h-600}
 
 - **Se è già stato impostato un account**:
-1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona di casa " &#8962;" in alto a sinistra dello schermo.
-2. Premere l'ingranaggio &#9881; nella parte inferiore sinistra dello schermo.
-3. Clicca su `Account`{.action} nel menu **Impostazioni**.
-4. Clicca su `Aggiungi un account`{.action}.
-5. Clicca su `Account di posta`{.action}.
+    1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona di casa " &#8962;" in alto a sinistra dello schermo.
+    2. Premere l'ingranaggio &#9881; nella parte inferiore sinistra dello schermo.
+    3. Clicca su `Account`{.action} nel menu **Impostazioni**.
+    4. Clicca su `Aggiungi un account`{.action}.
+    5. Clicca su `Account di posta`{.action}.
 
 ![outlook-ios](images/outlook-app-ios-add02.png){.thumbnail .w-400 .h-600}
 
@@ -55,16 +55,16 @@ Segui i passaggi di installazione cliccando sulle schede qui sotto:
 >>
 >> Inserisci il tuo indirizzo email e clicca su `Aggiungi un account`{.action}.
 >>
->>![outlook-ios](images/outlook-app-ios-add-step01.png){.thumbnail .w-400 .h-600}
+>> ![outlook-ios](images/outlook-app-ios-add-step01.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 2**
 >>
 >> Avete due possibilità:
 >>
 >> - Se nella parte superiore della pagina è presente la voce "**IMAP**", andare al passaggio 3.
->> - Se nella finestra Parametro account è visualizzato "**Exchange**" in alto, clicca sul pulsante `?` nell’angolo in alto a destra dello schermo **(1)**, poi seleziona `Cambia provider account`{.action} **(2)**. Seleziona `IMAP`**(3)** e passa allo Step 3.
+>> - Se nella finestra Parametro account è visualizzato "**Exchange**" in alto, clicca sul pulsante `?` nell’angolo in alto a destra dello schermo **(1)**, poi seleziona `Cambia provider account`{.action} **(2)**. Seleziona `IMAP` **(3)** e passa allo Step 3.
 >>
->>![outlook-ios](images/outlook-app-ios-add-step02.png){.thumbnail .w-400 .h-600}
+>> ![outlook-ios](images/outlook-app-ios-add-step02.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 3**
 >>
@@ -78,7 +78,7 @@ Segui i passaggi di installazione cliccando sulle schede qui sotto:
 >>
 >> Per completare la configurazione, clicca su `Connessione`{.action}.
 >>
->>![outlook-ios](images/outlook-app-ios-add-step03-imap-eu.png){.thumbnail .w-400 .h-600}
+>> ![outlook-ios](images/outlook-app-ios-add-step03-imap-eu.png){.thumbnail .w-400 .h-600}
 >>
 
 > [!warning]
@@ -97,8 +97,8 @@ OVHcloud propone anche un’applicazione Web che permette di accedere al tuo ind
 
 ### Modifica le impostazioni esistenti <a name="modify-settings"></a>
 
-1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona di casa " &#8962;" in alto a sinistra dello schermo.
-2. Premere l'ingranaggio &#9881; nella parte inferiore sinistra dello schermo.
+1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona di casa "&#8962;" in alto a sinistra dello schermo.
+2. Premere l'ingranaggio "&#9881;" nella parte inferiore sinistra dello schermo.
 3. Clicca su `Account`{.action} nel menu **Impostazioni**.
 4. Selezionare l'account.
 5. Clicca su `Modifica le informazioni di connessione`{.action}.
@@ -109,8 +109,8 @@ I parametri sono disponibili al passaggio 3** del capitolo [Aggiungi account](#a
 
 ### Eliminare un account email <a name="delete"></a>
 
-1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona di casa " &#8962;" in alto a sinistra dello schermo.
-2. Premere l'ingranaggio &#9881; nella parte inferiore sinistra dello schermo.
+1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona di casa "&#8962;" in alto a sinistra dello schermo.
+2. Premere l'ingranaggio "&#9881;" nella parte inferiore sinistra dello schermo.
 3. Clicca su `Account`{.action} nel menu **Impostazioni**.
 4. Selezionare l'account.
 5. Clicca su `Elimina l’account`{.action}.

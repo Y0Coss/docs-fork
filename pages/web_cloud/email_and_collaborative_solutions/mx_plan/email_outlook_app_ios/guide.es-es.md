@@ -1,6 +1,6 @@
 ---
-title: "MX Plan - Configurer son compte e-mail sur Outlook pour iOS"
-excerpt: "Découvrez comment configurer votre adresse e-mail MX Plan sur l'application mobile Outlook pour iOS"
+Título: "MX Plan - Configurar una cuenta de correo en Outlook para iOS"
+excerpt: "Descubra cómo configurar una cuenta MX Plan en la aplicación móvil Outlook para iOS"
 updated: 2025-02-10
 ---
 
@@ -13,164 +13,164 @@ updated: 2025-02-10
 }
 </style>
 
-## Objectif
+## Objetivo
 
-Les comptes MX Plan peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Outlook de Microsoft sur iOS est disponible gratuitement depuis l'App Store de Apple.
+Es posible configurar las cuentas MX Plan en el cliente de correo que usted utilice, siempre que sea compatible. para que pueda utilizar su dirección de correo desde cualquier dispositivo. La aplicación Outlook de Microsoft en iOS está disponible gratuitamente desde la App Store de Apple.
 
-**Découvrez comment configurer votre adresse e-mail MX Plan sur l'application mobile Outlook pour iOS**
+**Descubra cómo configurar una cuenta MX Plan en la aplicación móvil Outlook para iOS**
 
 > [!warning]
 >
-> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
 
-## Prérequis
+## Requisitos
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](/links/web/hosting)).
-- Disposer de l'application Outlook sur votre appareil mobile [iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
-- Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+- Disponer de una dirección de correo electrónico MX Plan (incluida en la solución MX Plan o en un [plan de hosting de OVHcloud](/links/web/hosting)).
+- Tener la aplicación Outlook en su dispositivo móvil [iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
+- Disponer del nombre de usuario y la contraseña de la dirección de correo electrónico que quiera configurar.
 
-## En pratique
+## Procedimiento
 
-### Ajouter le compte <a name="add-account"></a>
+### Añadir la cuenta <a name="add-account"></a>
 
-- **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche, appuyez sur `Ajouter un compte`{.action}.
+- **Cuando inicie la aplicación por primera vez**, aparecerá un asistente de configuración y pulse `Añadir cuenta`{.action}.
 
 ![outlook ios](images/outlook-app-ios-add01.png){.thumbnail .w-400 .h-600}
 
-- **Si un compte a déjà été paramétré** :
-    1. Appuyez sur le cercle contenant les initiales du compte e-mail consulté ou l'icône de maison « &#8962; » dans la partie supérieure gauche de votre écran.
-    2. Appuyez sur l'engrenage «  &#9881; » dans la partie inférieure gauche de votre écran.
-    3. Appuyez ensuite sur `Comptes`{.action} dans le menu **Réglages**.
-    4. Appuyez sur `Ajouter un compte`{.action}.
-    5. Appuyez sur `Compte de courrier`{.action}.
+- **Si ya tiene una cuenta configurada**:
+    1. Pulse el círculo que contiene las iniciales de la cuenta de correo consultada o el icono de la casa « &#8962;» en la parte superior izquierda de la pantalla.
+    2. Pulse el engranaje « &#9881;» en la parte inferior izquierda de la pantalla.
+    3. A continuación, pulse `Cuentas`{.action} en el menú **Ajustes**.
+    4. Pulsa `Añadir cuenta`{.action}.
+    5. Pulsa `Cuenta de correo`{.action}.
 
 ![outlook ios](images/outlook-app-ios-add02.png){.thumbnail .w-400 .h-600}
 
-Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
+Siga los pasos de instalación haciendo clic en las fichas siguientes:
 
 > [!tabs]
-> **Etape 1**
+> **Paso 1**
 >>
->> Saisissez votre adresse e-mail et appuyez sur `Ajouter un compte`{.action}.
+>> Introduzca su dirección de correo electrónico y pulse `Añadir una cuenta`{.action}.
 >>
 >> ![outlook ios](images/outlook-app-ios-add-step01.png){.thumbnail .w-400 .h-600}
 >>
-> **Etape 2**
+> **Paso 2**
 >>
->> Vous avez deux possibilités:
+>> Tiene dos posibilidades:
 >>
->> - Si vous avez la mention « **IMAP** » en haut de la page, passez à l'étape 3.
->> - Si la fenêtre de paramètre du compte affiche « **Exchange** » en haut, appuyez sur le bouton `?` dans le coin supérieur droit de l'écran **(1)**, puis choisissez `Changer de fournisseur de compte`{.action} **(2)**. Sélectionnez alors `IMAP`**(3)** et passez à l'étape 3.
+>> - Si aparece «**IMAP**» en la parte superior de la página, vaya al paso 3.
+>> - Si la ventana de configuración de la cuenta muestra «**Exchange**» en la parte superior, pulse el botón `?` en la esquina superior derecha de la pantalla **(1)** y elija `Cambiar proveedor de cuenta`{.action} **(2)**. A continuación, seleccione `IMAP` **(3)** y continúe con el paso 3.
 >>
 >> ![outlook ios](images/outlook-app-ios-add-step02.png){.thumbnail .w-400 .h-600}
 >>
-> **Etape 3**
+> **Paso 3**
 >>
->> Dans la fenêtre suivante, cochez `Paramètres avancés`{.action} et  complétez les informations suivantes :
+>> En la siguiente ventana, marque `Parámetros avanzados`{.action} e introduzca la siguiente información:
 >>
->> - **Adresse e-mail**
->> - **Nom complet** : saisissez votre adresse e-mail complète
->> - **Description**
->> - **Serveur de courrier entrant IMAP** :<br>- **Nom d'hôte IMAP** : pour l'**EUROPE**, saisissez `imap.mail.ovh.net` ou `ssl0.ovh.net`. Pour l'**AMERIQUE/ASIE**, saisissez `imap.mail.ovh.ca`<br>- **Port IMAP** : 993<br>- **Nom d'utilisateur IMAP** : votre adresse e-mail complète<br>- **Mot de passe IMAP** : celui de votre adresse e-mail<br>- **Sécurité du port** : SSL
->> - **Serveur de courrier entrant SMTP** :<br>- **Nom d'hôte SMTP** : pour l'**EUROPE**, saisissez `smtp.mail.ovh.net` ou `ssl0.ovh.net`. Pour l'**AMERIQUE/ASIE**, saisissez `smtp.mail.ovh.ca`<br>- **Port SMTP** : 465<br>- **Nom d'utilisateur SMTP** : votre adresse e-mail complète<br>- **Mot de passe SMTP** : celui de votre adresse e-mail<br>- **Sécurité du port** : SSL
+>> - **Dirección de correo electrónico**
+>> - **Nombre completo**: Introduzca su dirección de correo electrónico completa
+>> - **Descripción**
+>> - **Servidor de correo electrónico de entrada IMAP**:<br>- **Nombre de host IMAP**: Para **EUROPA**, introduzca `imap.mail.ovh.net` o `ssl0.ovh.net`. Para **AMÉRICA/ASIA**, introduzca `imap.mail.ovh.ca`<br>- **Puerto IMAP**: 993<br>- **Nombre de usuario IMAP**: su dirección de correo electrónico completa<br>- **Contraseña IMAP**: la de su dirección de correo electrónico<br>- **Seguridad del puerto**: SSL
+>> - **Servidor de correo electrónico entrante SMTP**:<br>- **Nombre de host SMTP**: Para **EUROPA**, introduzca `smtp.mail.ovh.net` o `ssl0.ovh.net`. Para **AMÉRICA/ASIA**, introduzca `smtp.mail.ovh.ca`<br>- **Puerto SMTP**: 465<br>- **Nombre de usuario SMTP**: su dirección de correo electrónico completa<br>- **Contraseña SMTP**: la de su dirección de correo electrónico<br>- **Seguridad del puerto**: SSL
 >>
->> Pour finaliser la configuration, appuyez sur `Connexion`{.action}.
+>> Para finalizar la configuración, pulse `Conectar`{.action}.
 >>
 >> ![outlook ios](images/outlook-app-ios-add-step03-imap-eu.png){.thumbnail .w-400 .h-600}
 >>
 
 > [!warning]
 >
-> Si, après avoir suivi les étapes de configuration ci-dessus, vous rencontrez un défaut d'envoi ou de réception, consultez la rubrique « [Modifier les paramètres existants](#modify-settings) ».
+> Si, tras haber seguido los pasos de configuración anteriores, detecta un fallo de envío o recepción, consulte el apartado «[Modificar los parámetros existentes](#modify-settings)».
 
-### Utiliser l'adresse e-mail
+### Utilizar la dirección de correo electrónico
 
-Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
+Una vez que haya configurado la dirección de correo electrónico, ¡ya puede empezar a utilizarla! Ya puede enviar y recibir mensajes.
 
-OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible via ce lien : [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation et en fonction du webmail associé à votre offre, aidez-vous de nos guides : 
+OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador. Puede consultarla en el siguiente enlace: [Webmail](/links/web/email). Puede conectarse con las claves de su dirección de correo electrónico. Si tiene cualquier duda relativa a su uso y en función del webmail asociado a su producto, consulte nuestras guías:
 
-- [Consulter son compte depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
-- [Utiliser son adresse e-mail depuis le webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
-- [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
+- [Consultar su cuenta desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+- [Utilizar una dirección de correo electrónico desde el webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
+- [Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
-### Modifier les paramètres existants <a name="modify-settings"></a>
+### Cambiar la configuración existente <a name="modify-settings"></a>
 
-1. Appuyez sur le cercle contenant les initiales du compte e-mail consulté ou l'icône de maison « &#8962; » dans la partie supérieure gauche de votre écran.
-2. Appuyez sur l'engrenage «  &#9881; » dans la partie inférieure gauche de votre écran.
-3. Appuyez ensuite sur `Comptes`{.action} dans le menu **Réglages**.
-4. Sélectionnez le compte concerné.
-5. Appuyez sur `Modifier les informations de connexion`{.action}.
+1. Pulse el círculo que contiene las iniciales de la cuenta de correo consultada o el icono de la casa « &#8962;» en la parte superior izquierda de la pantalla.
+2. Pulse el engranaje « &#9881;» en la parte inferior izquierda de la pantalla.
+3. A continuación, pulse `Cuentas`{.action} en el menú **Ajustes**.
+4. Seleccione la cuenta.
+5. Pulse `Editar la información de conexión`{.action}.
 
 ![outlook ios](images/outlook-app-ios-modify-account-01.png){.thumbnail .w-400 .h-600}
 
-Retrouvez les paramètres à **l'étape 3** du chapitre [Ajouter le compte](#add-account).
+Consulte los parámetros en **el paso 3** del capítulo [Añadir la cuenta](#add-account).
 
-### Supprimer un compte e-mail <a name="delete"></a>
+### Eliminar una cuenta de correo <a name="delete"></a>
 
-1. Appuyez sur le cercle contenant les initiales du compte e-mail consulté ou l'icône de maison « &#8962; » dans la partie supérieure gauche de votre écran.
-2. Appuyez sur l'engrenage «  &#9881; » dans la partie inférieure gauche de votre écran.
-3. Appuyez ensuite sur `Comptes`{.action} dans le menu **Réglages**.
-4. Sélectionnez le compte concerné.
-5. Appuyez sur `Suppression du compte`{.action}.
+1. Pulse el círculo que contiene las iniciales de la cuenta de correo consultada o el icono de la casa « &#8962;» en la parte superior izquierda de la pantalla.
+2. Pulse el engranaje « &#9881;» en la parte inferior izquierda de la pantalla.
+3. A continuación, pulse `Cuentas`{.action} en el menú **Ajustes**.
+4. Seleccione la cuenta.
+5. Pulsa `Eliminar la cuenta`{.action}.
 
 ![outlook ios](images/outlook-app-ios-modify-delete-01.png){.thumbnail .w-400 .h-600}
 
-### Rappel des paramètres POP, IMAP et SMTP <a name="popimap-settings"></a>
+### Aviso de los parámetros POP, IMAP y SMTP <a name="popimap-settings"></a>
 
-#### Paramètres de réception IMAP et POP
+#### Parámetros de recepción IMAP y POP
 
-Pour la réception des e-mails, lors du choix du type de compte, nous vous conseillons une utilisation en **IMAP**. Vous pouvez cependant sélectionner **POP**.
+Para la recepción de mensajes de correo, al elegir el tipo de cuenta, le recomendamos que utilice **IMAP**. Sin embargo, puede seleccionar **POP**.
 
 > [!warning]
 >
-> Il est nécessaire de bien relever la valeur correspondante à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**)
+> Es necesario indicar el valor correspondiente a su localización (**EUROPA** o **AMÉRICA / ASIA-PACÍFICO**)
 
-Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
+Siga los pasos de instalación haciendo clic en las fichas siguientes:
 
 > [!tabs]
-> **Configuration IMAP**
+> **Configuración IMAP**
 >>
->> - **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**
->> - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail
->> - **Serveur EUROPE (entrant)** : imap.mail.ovh.net **ou** ssl0.ovh.net
->> - **Serveur AMERIQUE/ASIE-PACIFIQUE (entrant)** : imap.mail.ovh.ca
->> - **Port** : 993
->> - **Type de sécurité** : SSL/TLS
+>> - **Nombre de usuario**: Introduzca la dirección de correo electrónico **completa**
+>> - **Contraseña**: Introduzca la contraseña de la dirección de correo
+>> - **Servidor EUROPA (entrante)**: imap.mail.ovh.net **o** ssl0.ovh.net
+>> - **Servidor AMERICA/ASIA-PACÍFICO (entrante)**: imap.mail.ovh.ca
+>> - **Puerto**: 993
+>> - **Tipo de seguridad**: SSL/TLS
 >>
-> **Configuration POP**
+> **Configuración POP**
 >>
->> - **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**
->> - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail
->> - **Serveur EUROPE (entrant)** : pop.mail.ovh.net **ou** ssl0.ovh.net
->> - **Serveur AMERIQUE/ASIE-PACIFIQUE (entrant)** : pop.mail.ovh.ca
->> - **Port** : 995
->> - **Type de sécurité** : SSL/TLS
+>> - **Nombre de usuario**: Introduzca la dirección de correo electrónico **completa**
+>> - **Contraseña**: Introduzca la contraseña de la dirección de correo
+>> - **Servidor EUROPA (entrante)**: pop.mail.ovh.net **o** ssl0.ovh.net
+>> - **Servidor AMERICA/ASIA-PACÍFICO (entrante)**: pop.mail.ovh.ca
+>> - **Puerto**: 995
+>> - **Tipo de seguridad**: SSL/TLS
 
-#### Paramètres d'envoi SMTP
+#### Parámetros de envío SMTP
 
-Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres **SMTP** dans les préférences du compte, retrouvez ci-dessous les paramètres à utiliser :
+Para el envío de mensajes de correo electrónico, si debe introducir manualmente los parámetros **SMTP** en las preferencias de la cuenta, consulte a continuación los parámetros que debe utilizar:
 
-**Configuration SMTP**
+**Configuración SMTP**
 
-- **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**
-- **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail
-- **Serveur EUROPE (entrant)** : pop.mail.ovh.net **ou** ssl0.ovh.net
-- **Serveur AMERIQUE/ASIE-PACIFIQUE (entrant)** : pop.mail.ovh.ca
-- **Port** : 465
-- **Type de sécurité** : SSL/TLS
+- **Nombre de usuario**: Introduzca la dirección de correo electrónico **completa**
+- **Contraseña**: Introduzca la contraseña de la dirección de correo
+- **Servidor EUROPA (entrante)**: pop.mail.ovh.net **o** ssl0.ovh.net
+- **Servidor AMERICANO/ASIA-PACÍFICO (entrante)**: pop.mail.ovh.ca
+- **Puerto**: 465
+- **Tipo de seguridad**: SSL/TLS
 
 > [!primary]
 >
-> **Changer sa configuration**
+> **Cambiar la configuración**
 >
-> Si votre adresse e-mail est configurée en **IMAP** et que vous souhaitez changer cette configuration en **POP**, vous devez supprimer le compte puis le recréer en **POP**. Consultez le chapitre « [Modifier les paramètres existants](#modify-settings) » de ce guide.
+> Si su dirección de correo electrónico está configurada en **IMAP** y desea cambiar esta configuración a **POP**, debe eliminar la cuenta y volver a crearla en **POP**. Consulte el capítulo «[Modificar la configuración existente](#modify-settings)» de esta guía.
 
-## Aller plus loin
-
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
-
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
-
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+## Más información <a name="go-further"></a>
+ 
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+ 
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+ 
+Interactúe con nuestra [comunidad de usuarios](/links/community).

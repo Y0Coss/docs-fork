@@ -1,15 +1,15 @@
---- 
+---
 title: "MX Plan - Configurar a sua conta de e-mail no Outlook para iOS"
 excerpt: "Saiba como configurar o seu endereço de e-mail MX Plan na aplicação móvel Outlook para iOS"
 updated: 2025-02-10
---- 
+---
 
 <style>
 .w-400 {
-max-width:400px!important;
+  max-width:400px !important;
 }
 .h-600 {
-max-height:600px!important;
+  max-height:600px !important;
 }
 </style>
 
@@ -23,7 +23,7 @@ As contas MX Plan podem ser configuradas em diferentes softwares de e-mail compa
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção « Ir mais longe » deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte a secção "Ir mais longe" deste guia.
 
 ## Requisitos
 
@@ -35,16 +35,16 @@ As contas MX Plan podem ser configuradas em diferentes softwares de e-mail compa
 
 ### Adicionar a conta <a name="add-account"></a>
 
-- **Ao iniciar pela primeira vez a aplicação** : será apresentado um assistente de configuração, prima 'Adicionar uma conta`{.action}'.
+- **Ao iniciar pela primeira vez a aplicação** : será apresentado um assistente de configuração, prima `Adicionar uma conta`{.action}.
 
 ![outlook ios](images/outlook-app-ios-add01.png){.thumbnail .w-400 .h-600}
 
 - **Se uma conta já tiver sido parametrizada**:
-    1. Pressione o círculo contendo as iniciais da conta de e-mail visualizada ou o ícone de casa « &#8962; » na parte superior esquerda da sua tela.
-    2. Pressione a engrenagem « &#9881; » na parte inferior esquerda da sua tela.
-    3. De seguida, clique em "Contas" {.action} no menu **Definições**.
-    4. Prima 'Adicionar uma conta' {.action}.
-    5. Toque em "Conta de e-mail" {.action}.
+    1. Pressione o círculo contendo as iniciais da conta de e-mail visualizada ou o ícone de casa "&#8962;" na parte superior esquerda da sua tela.
+    2. Pressione a engrenagem "&#9881;" na parte inferior esquerda da sua tela.
+    3. De seguida, clique em `Contas`{.action} no menu **Definições**.
+    4. Prima `Adicionar uma conta`{.action}.
+    5. Toque em `Conta de e-mail`{.action}.
 
 ![outlook ios](images/outlook-app-ios-add02.png){.thumbnail .w-400 .h-600}
 
@@ -55,16 +55,16 @@ Siga as etapas de instalação, clicando nos separadores abaixo:
 >>
 >> Introduza o seu endereço de e-mail e clique em `Adicionar uma conta`{.action}.
 >>
->>![outlook ios](images/outlook-app-ios-add-step01.png){.thumbnail .w-400 .h-600}
+>> ![outlook ios](images/outlook-app-ios-add-step01.png){.thumbnail .w-400 .h-600}
 >>
 > **Etapa 2**
 >>
 >> Tem duas possibilidades:
 >>
->> - Se estiver « **IMAP** » no topo da página, prossiga para a etapa 3.
->> - Se a janela de configuração da conta apresentar « **Exchange** » na parte superior, prima o botão `?` no canto superior direito do ecrã **(1)** e, em seguida, selecione `Alterar fornecedor de conta`{.action} **(2)*. De seguida, selecione `IMAP`**(3)** e passe para a etapa 3.
+>> - Se estiver "**IMAP**" no topo da página, prossiga para a etapa 3.
+>> - Se a janela de configuração da conta apresentar "**Exchange**" na parte superior, prima o botão `?` no canto superior direito do ecrã **(1)** e, em seguida, selecione `Alterar fornecedor de conta`{.action} **(2)**. De seguida, selecione `IMAP` **(3)** e passe para a etapa 3.
 >>
->>![outlook ios](images/outlook-app-ios-add-step02.png){.thumbnail .w-400 .h-600}
+>> ![outlook ios](images/outlook-app-ios-add-step02.png){.thumbnail .w-400 .h-600}
 >>
 > **Etapa 3**
 >>
@@ -73,17 +73,17 @@ Siga as etapas de instalação, clicando nos separadores abaixo:
 >> - **Endereço de correio eletrónico**
 >> - **Nome completo** : introduza o seu endereço de e-mail completo
 >> - **Description**
->> - **Servidor de receção de correio IMAP**:<br>- **Nome do host IMAP**: para a **EUROPE**, introduza `imap.mail.ovh.net` ou `ssl0.ovh.net`. Para a**AMÉRICA/ÁSIA**, introduza `imap.mail.ovh.ca`<br>- **Port IMAP**: 993<br>- **Nome de utilizador IMAP** : o seu endereço de correio eletrónico completo<br>- **Palavra-passe IMAP** : o do seu endereço de correio eletrónico<br>- **Segurança da porta**: SSL
->> - **Servidor de receção de correio eletrónico SMTP**:<br>- **Nome do sistema anfitrião SMTP**: para a**EUROPE**, introduza `smtp.mail.ovh.net` ou `ssl0.ovh.net`. Para a**AMÉRICA/ÁSIA**, introduza `smtp.mail.ovh.ca`<br>- **Porta SMTP**: 465<br>- **Nome de utilizador SMTP**: O seu endereço de correio eletrónico <br>- **Palavra-passe SMTP** : o do seu endereço de correio eletrónico<br>- **Segurança da porta**: SSL
+>> - **Servidor de receção de correio IMAP**:<br>- **Nome do host IMAP**: para a **EUROPE**, introduza `imap.mail.ovh.net` ou `ssl0.ovh.net`. Para a **AMÉRICA/ÁSIA**, introduza `imap.mail.ovh.ca`<br>- **Port IMAP**: 993<br>- **Nome de utilizador IMAP** : o seu endereço de correio eletrónico completo<br>- **Palavra-passe IMAP** : o do seu endereço de correio eletrónico<br>- **Segurança da porta**: SSL
+>> - **Servidor de receção de correio eletrónico SMTP**:<br>- **Nome do sistema anfitrião SMTP**: para a **EUROPE**, introduza `smtp.mail.ovh.net` ou `ssl0.ovh.net`. Para a **AMÉRICA/ÁSIA**, introduza `smtp.mail.ovh.ca`<br>- **Porta SMTP**: 465<br>- **Nome de utilizador SMTP**: O seu endereço de correio eletrónico <br>- **Palavra-passe SMTP** : o do seu endereço de correio eletrónico<br>- **Segurança da porta**: SSL
 >>
 >> Para finalizar a configuração, prima `Connection`{.action}.
 >>
->>![outlook ios](images/outlook-app-ios-add-step03-imap-eu.png){.thumbnail .w-400 .h-600}
+>> ![outlook ios](images/outlook-app-ios-add-step03-imap-eu.png){.thumbnail .w-400 .h-600}
 >>
 
 > [!warning]
 >
-> Se, seguindo os passos de configuração acima, encontrar um problema de envio ou receção, vá para « [Editar definições existentes](#modify-settings)».
+> Se, seguindo os passos de configuração acima, encontrar um problema de envio ou receção, vá para "[Editar definições existentes](#modify-settings)».
 
 ### Utilizar o endereço de e-mail
 
@@ -97,11 +97,11 @@ A OVHcloud também disponibiliza uma aplicação web que pode usar para aceder a
 
 ### Alterar os parâmetros existentes <a name="modify-settings"></a>
 
-1. Pressione o círculo contendo as iniciais da conta de e-mail visualizada ou o ícone de casa « &#8962; » na parte superior esquerda da sua tela.
-2. Pressione a engrenagem « &#9881; » na parte inferior esquerda da sua tela.
-3. De seguida, clique em "Contas" {.action} no menu **Definições**.
+1. Pressione o círculo contendo as iniciais da conta de e-mail visualizada ou o ícone de casa "&#8962;" na parte superior esquerda da sua tela.
+2. Pressione a engrenagem "&#9881;" na parte inferior esquerda da sua tela.
+3. De seguida, clique em `Contas`{.action} no menu **Definições**.
 4. Selecione a conta correspondente.
-5. Toque em "Alterar as informações de ligação" {.action}.
+5. Toque em `Alterar as informações de ligação`{.action}.
 
 ![outlook ios](images/outlook-app-ios-modify-account-01.png){.thumbnail .w-400 .h-600}
 
@@ -109,11 +109,11 @@ Consulte as definições para **no passo 3** no capítulo [Adicionar conta](#add
 
 ### Eliminar uma conta de e-mail <a name="delete"></a>
 
-1. Pressione o círculo contendo as iniciais da conta de e-mail visualizada ou o ícone de casa « &#8962; » na parte superior esquerda da sua tela.
-2. Pressione a engrenagem « &#9881; » na parte inferior esquerda da sua tela.
-3. De seguida, clique em "Contas" {.action} no menu **Definições**.
+1. Pressione o círculo contendo as iniciais da conta de e-mail visualizada ou o ícone de casa "&#8962;" na parte superior esquerda da sua tela.
+2. Pressione a engrenagem "&#9881;" na parte inferior esquerda da sua tela.
+3. De seguida, clique em `Contas`{.action} no menu **Definições**.
 4. Selecione a conta correspondente.
-5. Prima a tecla "Eliminação da conta" {.action}.
+5. Prima a tecla `Eliminação da conta`{.action}.
 
 ![outlook ios](images/outlook-app-ios-modify-delete-01.png){.thumbnail .w-400 .h-600}
 
@@ -165,7 +165,7 @@ Se necessita de inserir manualmente as definições **SMTP** nas preferências d
 >
 > **Alterar a configuração**
 >
-> Se o seu endereço de e-mail estiver configurado em **IMAP** e pretender alterar esta configuração para **POP**, deve eliminar a conta e recriá-la em **POP**. Consulte o capítulo « [Editar definições existentes](#modify-settings) » deste manual.
+> Se o seu endereço de e-mail estiver configurado em **IMAP** e pretender alterar esta configuração para **POP**, deve eliminar a conta e recriá-la em **POP**. Consulte o capítulo "[Editar definições existentes](#modify-settings)" deste manual.
 
 ## Vá mais longe
 
