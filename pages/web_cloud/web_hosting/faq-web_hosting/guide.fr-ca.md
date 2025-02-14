@@ -130,7 +130,7 @@ Si vous avez choisi [d'installer votre site manuellement](/pages/web_cloud/web_h
 
 Deux scénarii sont possibles. Soit votre site a été créé avec cette adresse web, soit celle-ci est apparue suite à une modification.
 
-#### Scénario 1 : votre site a été créé avec une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net »
+- **Scénario 1** : votre site a été créé avec une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net »
 
 > [!warning]
 >
@@ -147,7 +147,7 @@ Puis supprimez sa base de données depuis l'onglet du même nom situé à droite
  
 Enfin, relancez son installation sur le nom de domaine souhaité, en utilisant la fonctionnalité [Module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-#### Scénario 2 : votre site s'affiche avec une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net » suite à une modification
+- **Scénario 2** : votre site s'affiche avec une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net » suite à une modification
 
 Si votre site s'affiche avec cette URL suite à une manipulation, restaurez-le à son état antérieur.
 

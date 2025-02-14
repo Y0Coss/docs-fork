@@ -149,7 +149,7 @@ Wenn Sie sich [für die manuelle Installation Ihrer Website entschieden](/pages/
 
 Zwei Szenarien sind möglich. Entweder wurde Ihre Website mit dieser Adresse erstellt oder der Zustand ist nach einer Änderung aufgetreten.
 
-#### Szenario 1: Ihre Website wurde mit einer Adresse vom Typ “xxxxx.cluster0xx.hosting.ovh.net“ erstellt
+- **Szenario 1:** Ihre Website wurde mit einer Adresse vom Typ “xxxxx.cluster0xx.hosting.ovh.net“ erstellt
 
 > [!warning]
 >
@@ -166,7 +166,7 @@ Löschen Sie dann die Datenbank im Tab desselben Namens ebenfalls im Bereich `Ho
  
 Starten Sie schließlich die Installation auf der gewünschten Domain unter Verwendung der [1-Klick-Modul-Funktion](/pages/web_cloud/web_hosting/cms_manage_1_click_module) neu.
 
-#### Szenario 2: Ihre Website wird nach einer Änderung mit einer Webadresse vom Typ “xxxxx.cluster0xx.hosting.ovh.net“ angezeigt
+- **Szenario 2:** Ihre Website wird nach einer Änderung mit einer Webadresse vom Typ “xxxxx.cluster0xx.hosting.ovh.net“ angezeigt
 
 Sollte Ihre Website nach einem Eingriff mit dieser URL angezeigt werden, setzen Sie sie in ihren vorherigen Zustand zurück.
 

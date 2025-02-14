@@ -149,7 +149,7 @@ If you have chosen [to install your website manually](/pages/web_cloud/web_hosti
 
 There are two scenarios. Either your website was created with this web address or it appeared following a modification.
 
-#### Scenario 1: Your website has been created with a xxxxx.cluster0xx.hosting.ovh.net URL
+- **Scenario 1:** Your website has been created with a xxxxx.cluster0xx.hosting.ovh.net URL
 
 > [!warning]
 >
@@ -166,7 +166,7 @@ Then delete its database from the database tab on the right-hand side of your sc
  
 Finally, retry the installation on the domain name you want, using the [1-click module](/pages/web_cloud/web_hosting/cms_manage_1_click_module) feature.
 
-#### Scenario 2: Your website is displayed with a xxxxx.cluster0xx.hosting.ovh.net web address because it was modified
+- **Scenario 2:** Your website is displayed with a xxxxx.cluster0xx.hosting.ovh.net web address because it was modified
 
 If your website appears with this URL following a change, restore it to its previous state.
 

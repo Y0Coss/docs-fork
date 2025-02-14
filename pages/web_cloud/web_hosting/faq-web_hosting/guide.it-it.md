@@ -149,7 +149,7 @@ Se hai scelto di [installare manualmente](/pages/web_cloud/web_hosting/cms_manua
 
 Sono possibili due scenari. Il tuo sito è stato creato con questo indirizzo Web o è stato creato in seguito a una modifica.
 
-#### Scenario 1: il tuo sito è stato creato con un indirizzo web del tipo "xxxxx.cluster0xx.hosting.ovh.net"
+- **Scenario 1:** il tuo sito è stato creato con un indirizzo web del tipo "xxxxx.cluster0xx.hosting.ovh.net"
 
 > [!warning]
 >
@@ -166,7 +166,7 @@ Rimuovi il database dalla scheda con lo stesso nome a destra del tuo schermo, se
  
 Riavvia l'installazione sul dominio che vuoi, utilizzando la funzionalità [Modulo in 1 click](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-#### Scenario 2: il tuo sito appare con un indirizzo web del tipo "xxxxx.cluster0xx.hosting.ovh.net" in seguito a una modifica
+- **Scenario 2:** il tuo sito appare con un indirizzo web del tipo "xxxxx.cluster0xx.hosting.ovh.net" in seguito a una modifica
 
 Se il tuo sito viene visualizzato con questo URL a seguito di un'operazione, ripristinalo allo stato precedente.
 
