@@ -1,13 +1,13 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2025-01-30
+updated: 2025-02-14
 ---
 
 > [!warning]
 >
 > Usage of the [Public Cloud Load Balancer](/links/public-cloud/load-balancer) with Managed Kubernetes Service (MKS) is now in General Availability.
-> However this LoadBalancer (based on Octavia project) is not the default one yet for clusters running Kubernetes versions <1.31. For those clusters, you must use the annotation `loadbalancer.ovhcloud.com/class: octavia` to deploy an Octavia LoadBalancer from your MKS cluster. See also [How to migrate from LoadBalancer for MKS (IOLB) to Public Cloud LoadBalancer (Octavia)](/pages/public_cloud/containers_orchestration/managed_kubernetes/migrate-loadbalancer-iolb-to-octavia)
+> However this LoadBalancer (based on Octavia project) is not the default one yet for clusters running Kubernetes versions <1.31. For those clusters, you must use the annotation `loadbalancer.ovhcloud.com/class: octavia` to deploy an Octavia LoadBalancer from your MKS cluster. See also [How to migrate from Load Balancer for MKS (IOLB) to Public Cloud Load Balancer (Octavia)](/pages/public_cloud/containers_orchestration/managed_kubernetes/migrate-loadbalancer-iolb-to-octavia).
 >
 
 ## Objective

@@ -887,7 +887,7 @@
                 + [Secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/securing-nginx-ingress-cert-manager)
                 + [Installing Istio on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/installing-istio)
                 + [Traffic management with Istio on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/traffic-management-with-istio)
-                + [How to migrate from LoadBalancer for MKS (IOLB) to Public Cloud LoadBalancer (Octavia)](public_cloud/containers_orchestration/managed_kubernetes/migrate-loadbalancer-iolb-to-octavia)
+                + [How to migrate from Load Balancer for MKS (IOLB) to Public Cloud Load Balancer (Octavia)](public_cloud/containers_orchestration/managed_kubernetes/migrate-loadbalancer-iolb-to-octavia)
             + [Storage](public-cloud-containers-orchestration-managed-kubernetes-k8s-storage)
                 + [Setting-up a Persistent Volume on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume)
                 + [Resizing Persistent Volumes](public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes)
