@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configuring an email address on the Gmail online interface'
 excerpt: 'Find out how to configure an MX Plan email address on the Gmail online interface'
-updated: 2025-02-14
+updated: 2025-02-17
 ---
 
 ## Objective

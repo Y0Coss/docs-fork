@@ -1,14 +1,14 @@
 ---
-title: 'MX Plan - Configuring an email address on the Gmail online interface'
-excerpt: 'Find out how to configure an MX Plan email address on the Gmail online interface'
-updated: 2025-02-14
+title: 'Configuring an email address on the Gmail online interface'
+excerpt: 'Find out how to configure an email address on the Gmail online interface'
+updated: 2025-02-17
 ---
 
 ## Objective
 
-You can configure MX Plan email addresses on email clients and online interfaces, if they are compatible. This allows you to use your email address through your preferred device or online interface.
+You can configure email addresses on email clients and online interfaces, if they are compatible. This allows you to use your email address through your preferred device or online interface.
 
-**Find out how to configure an MX Plan email address on the Gmail online interface.**
+**Find out how to configure an email address on the Gmail online interface.**
 
 > [!warning]
 >
@@ -19,7 +19,7 @@ You can configure MX Plan email addresses on email clients and online interfaces
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution and [OVHcloud Web Hosting plans](/links/web/hosting))
+- an email address (included in the [OVHcloud Web Hosting plans](/links/web/hosting))
 - credentials for the OVHcloud email address you want to configure
 - credentials for the Gmail account (Personal or Professional) you want to configure the OVHcloud email address on
 
@@ -52,7 +52,7 @@ Now enter the settings for the POP server (incoming server) of your OVHcloud ema
 |---|---|
 |Username|Enter your **full** email address.|
 |Password|Enter the password for your email address.|
-|POP server|Enter the server “ssl0.ovh.net”.|
+|POP server|Enter the server “pop.mail.ovh.ca”.|
 |Port|Select port 995.|
 
 Regarding the options you can select:
@@ -79,7 +79,7 @@ Now enter the settings for the SMTP server (outgoing server) of your OVHcloud em
 
 |Information|Description|
 |---|---|
-|SMTP server|Enter the server “ssl0.ovh.net”.|
+|SMTP server|Enter the server “smtp.mail.ovh.ca”.|
 |Port|Select port 587.|
 |Username|Enter your **full** email address.|
 |Password|Enter the password for your email address.|

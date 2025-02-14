@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Konfiguracja konta e-mail w interfejsie online programu pocztowego Gmail'
 excerpt: 'Dowiedz się, jak skonfigurować konto e-mail MX Plan w interfejsie online programu pocztowego Gmail'
-updated: 2025-02-14
+updated: 2025-02-17
 ---
 
 ## Wprowadzenie

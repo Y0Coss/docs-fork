@@ -1,14 +1,14 @@
 ---
-title: "MX Plan - Configurer son adresse e-mail sur l'interface en ligne de Gmail"
-excerpt: "Apprenez à configurer une adresse e-mail MX Plan sur l'interface en ligne de Gmail"
-updated: 2025-02-14
+title: "Configurer son adresse e-mail sur l'interface en ligne de Gmail"
+excerpt: "Apprenez à configurer une adresse e-mail sur l'interface en ligne de Gmail"
+updated: 2025-02-17
 ---
 
 ## Objectif
 
-Les adresses e-mail de l'offre MX Plan peuvent être configurées sur différents logiciels de messagerie et interfaces en ligne compatibles. Cela vous permet d'envoyer et de recevoir vos messages depuis l'appareil ou l'interface en ligne de votre choix.
+Les adresses e-mail peuvent être configurées sur différents logiciels de messagerie et interfaces en ligne compatibles. Cela vous permet d'envoyer et de recevoir vos messages depuis l'appareil ou l'interface en ligne de votre choix.
 
-**Apprenez à configurer une adresse e-mail MX Plan sur l'interface en ligne de Gmail.**
+**Apprenez à configurer une adresse e-mail sur l'interface en ligne de Gmail.**
 
 > [!warning]
 >
@@ -19,7 +19,7 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur différent
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](/links/web/hosting)).
+- Disposer d’une adresse e-mail(comprise dans l’offre d’[hébergement web OVHcloud](/links/web/hosting)).
 - Disposer des identifiants relatifs à l'adresse e-mail OVHcloud que vous souhaitez paramétrer.
 - Disposer des identifiants du compte Gmail (Personnel ou Professionnel) sur lequel vous souhaitez paramétrer l'adresse OVHcloud.
 
@@ -52,7 +52,7 @@ Indiquez maintenant les paramètres du serveur POP (serveur entrant) de votre ad
 |---|---|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**.|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
-|Serveur POP|Renseignez le serveur « ssl0.ovh.net ».|
+|Serveur POP|Renseignez le serveur « pop.mail.ovh.ca ».|
 |Port|Sélectionnez le port « 995 ».|
 
 Concernant les choix que vous pouvez cocher :
@@ -79,7 +79,7 @@ Indiquez maintenant les paramètres du serveur SMTP (serveur sortant) de votre a
 
 |Information|Description|
 |---|---|
-|Serveur SMTP|Renseignez le serveur « ssl0.ovh.net ».|
+|Serveur SMTP|Renseignez le serveur « smtp.mail.ovh.ca ».|
 |Port|Sélectionnez le port « 587 ».|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**.|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|

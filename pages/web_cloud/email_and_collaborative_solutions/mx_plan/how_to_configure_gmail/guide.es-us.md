@@ -1,14 +1,14 @@
 ---
-title: 'MX Plan - Configurar una dirección de correo electrónico en la interfaz web de Gmail'
-excerpt: 'Cómo configurar una cuenta MX Plan en la interfaz web de Gmail'
-updated: 2025-02-14
+title: 'Configurar una dirección de correo electrónico en la interfaz web de Gmail'
+excerpt: 'Cómo configurar una cuenta en la interfaz web de Gmail'
+updated: 2025-02-17
 ---
 
 ## Objetivo
 
-Es posible configurar sus cuentas MX Plan en el cliente de correo que usted utilice, siempre que sea compatible, para enviar y recibir mensajes desde su dispositivo sin necesidad de una nueva aplicación o interfaz web.
+Es posible configurar sus cuentas en el cliente de correo que usted utilice, siempre que sea compatible, para enviar y recibir mensajes desde su dispositivo sin necesidad de una nueva aplicación o interfaz web.
 
-**Esta guía explica cómo configurar una dirección de correo MX Plan en la interfaz web de Gmail.**
+**Esta guía explica cómo configurar una dirección de correo en la interfaz web de Gmail.**
 
 > [!warning]
 >
@@ -19,7 +19,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 ## Requisitos
 
-- Tener una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](/links/web/hosting)).
+- Tener una cuenta de correo  (incluida en un [plan de hosting de OVHcloud](/links/web/hosting)).
 - Disponer del nombre de usuario y la contraseña de la dirección de correo de OVHcloud que quiera configurar.
 - Disponer de las claves de la cuenta Gmail (Personal o Profesional) en la que quiera configurar la dirección de correo de OVHcloud.
 
@@ -52,7 +52,7 @@ Introduzca a continuación la configuración del servidor POP (servidor de entra
 |---|---|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**.|
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor POP|Introduzca el servidor **ssl0.ovh.net**.|
+|Servidor POP|Introduzca el servidor **pop.mail.ovh.ca**.|
 |Puerto|Seleccione el puerto **995**.|
 
 Estas son las opciones que puede elegir:
@@ -79,7 +79,7 @@ Introduzca a continuación la configuración del servidor SMTP (servidor de sali
 
 |Campo|Descripción|
 |---|---|
-|Servidor SMTP|Introduzca el servidor **ssl0.ovh.net**.|
+|Servidor SMTP|Introduzca el servidor **smtp.mail.ovh.ca**.|
 |Puerto|Seleccione el puerto **587**.|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**.|
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|

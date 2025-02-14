@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configurare un account di posta su Gmail'
 excerpt: 'Come configurare un account MX Plan dall’interfaccia Web di Gmail'
-updated: 2025-02-14
+updated: 2025-02-17
 ---
 
 ## Obiettivo
