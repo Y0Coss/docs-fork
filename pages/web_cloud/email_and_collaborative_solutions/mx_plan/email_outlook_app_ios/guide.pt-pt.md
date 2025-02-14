@@ -31,7 +31,7 @@ As contas MX Plan podem ser configuradas em diferentes softwares de e-mail compa
 - Ter a aplicação Outlook no seu dispositivo móvel [iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
 - Dispor das credenciais relativas ao endereço de e-mail que pretende configurar.
 
-## Na Prática
+## Instruções
 
 ### Adicionar a conta <a name="add-account"></a>
 
@@ -167,10 +167,10 @@ Se necessita de inserir manualmente as definições **SMTP** nas preferências d
 >
 > Se o seu endereço de e-mail estiver configurado em **IMAP** e pretender alterar esta configuração para **POP**, deve eliminar a conta e recriá-la em **POP**. Consulte o capítulo "[Editar definições existentes](#modify-settings)" deste manual.
 
-## Vá mais longe
+## Quer saber mais? <a name="go-further"></a>
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se deseja beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/suporte).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa [comunidade de utilizadores](/links/community).
+Fale com nossa [comunidade de utilizadores](/links/community).
