@@ -88,6 +88,12 @@ annotations:
   loadbalancer.ovhcloud.com/class: "iolb"
 ```
 
+> [!alert]
+> Each of the two methods described below ([migration](#migration) or [replacement](#replacement)) requires a DNS switch for which a DNS propagation of 24 to 48 hours is required **before** performing the migration.
+>
+> Therefore, please **read the entire guide** (and especially the "How to perform a DNS switch" section) before you proceed with the steps below.
+>
+
 ### **Migration**
 
 Migrating from an existing [Load Balancer for Kubernetes](/links/public-cloud/load-balancer-kubernetes) to a [Public Cloud Load Balancer](/links/public-cloud/load-balancer) involves creating a new Load Balancer service using Public Cloud Load Balancer with the same label selector to expose your application. For a short period of time, your application will be accessible using both Load Balancers.
