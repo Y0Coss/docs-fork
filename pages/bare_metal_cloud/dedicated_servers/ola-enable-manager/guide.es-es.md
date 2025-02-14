@@ -40,13 +40,13 @@ Compruebe que las dos interfaces, o grupos de interfaces, estén bien selecciona
 
 La operación puede tardar unos minutos. Cuando haya terminado, el paso siguiente será configurar las interfaces de su sistema operativo con un vínculo NIC o un equipo NIC. Para saber cómo proceder, puede consultar las siguientes guías diseñadas para los sistemas operativos más populares:
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9 a través de ifupdown](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 [Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
 
 [Configurar un NIC para el servicio OVHcloud Link Aggregation en SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
 
-[How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
+[How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 
 ### Restaurar OLA a los valores predeterminados
 
@@ -58,12 +58,12 @@ La operación puede tardar unos minutos.
 
 ## Más información
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9 a través de ifupdown](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 [Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
 
 [Configurar un NIC para el servicio OVHcloud Link Aggregation en SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
 
-[How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
+[How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
