@@ -149,7 +149,7 @@ Se escolheu instalar o seu site [de forma manual](/pages/web_cloud/web_hosting/c
 
 São possíveis dois cenários. Ou o seu site foi criado com este endereço web ou este surgiu após uma modificação.
 
-#### Cenário 1: o seu site foi criado com um endereço web do tipo "xxxx.cluster0xx.hosting.ovh.net"
+- **Cenário 1:** o seu site foi criado com um endereço web do tipo "xxxx.cluster0xx.hosting.ovh.net"
 
 > [!warning]
 >
@@ -166,7 +166,7 @@ De seguida, elimine a base de dados a partir do separador do mesmo nome situado 
  
 Reinicie a sua instalação no domínio pretendido, utilizando a funcionalidade [Módulo 1 clique](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-#### Cenário 2: o seu site apresenta-se com um endereço web do tipo "xxxx.cluster0xx.hosting.ovh.net" na sequência de uma modificação
+- **Cenário 2:** o seu site apresenta-se com um endereço web do tipo "xxxx.cluster0xx.hosting.ovh.net" na sequência de uma modificação
 
 Se o website aparecer com este URL após uma manipulação, volte-o para o estado anterior.
 

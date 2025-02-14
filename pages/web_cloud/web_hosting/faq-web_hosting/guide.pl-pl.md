@@ -149,7 +149,7 @@ Jeśli wybrałeś ręczną [instalację Twojej strony WWW](/pages/web_cloud/web_
 
 Możliwe są dwa scenariusze. Twoja strona WWW została utworzona z tego adresu lub pojawiła się po zmianie.
 
-#### Scenariusz 1: twoja strona została stworzona z adresem www typu "xxxxx.cluster0xx.hosting.ovh.net"
+- **Scenariusz 1:** twoja strona została stworzona z adresem www typu "xxxxx.cluster0xx.hosting.ovh.net"
 
 > [!warning]
 >
@@ -166,7 +166,7 @@ Następnie usuń bazę danych w zakładce z tej samej nazwy po prawej stronie ek
  
 Następnie uruchom ponownie instalację dla wybranej domeny, korzystając z funkcji [Module za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-#### Scenariusz 2: twoja strona wyświetla się z adresem www typu "xxxxx.cluster0xx.hosting.ovh.net" po zmianie
+- **Scenariusz 2:** twoja strona wyświetla się z adresem www typu "xxxxx.cluster0xx.hosting.ovh.net" po zmianie
 
 Jeśli Twoja strona WWW wyświetla się z tym adresem URL po operacji, przywróć ją do poprzedniego stanu.
 

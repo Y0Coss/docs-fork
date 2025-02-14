@@ -149,7 +149,7 @@ Si ha elegido [Web hosting: Instalar un CMS manualmente](/pages/web_cloud/web_ho
 
 Dos escenarios son posibles. O bien el sitio web se ha creado con esta dirección, o bien esta ha aparecido como consecuencia de un cambio.
 
-#### Situación 1: su sitio web ha sido creado con una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net".
+- **Situación 1:** su sitio web ha sido creado con una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net".
 
 > [!warning]
 >
@@ -166,7 +166,7 @@ A continuación, elimine la base de datos desde la pestaña con el mismo nombre 
  
 Por último, reinicie la instalación en el dominio deseado, utilizando la funcionalidad [Módulo en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
-#### Situación 2: su sitio web aparece con una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net" después de una modificación
+- **Situación 2:** su sitio web aparece con una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net" después de una modificación
 
 Si el sitio web aparece con esta URL debido a una manipulación, vuelva a su estado anterior.
 
