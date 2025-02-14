@@ -46,6 +46,8 @@ Zakończenie operacji może potrwać kilka minut. Kolejny krok to powiązanie in
 
 [Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
+[How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
+
 ### Przywróć OLA do wartości domyślnych
 
 Aby przywrócić OLA do wartości domyślnych, kliknij przycisk `...`{.action} po prawej stronie "Tryb" w ramce **OLA: OVHcloud Link Aggregation**. Następnie kliknij `Dekonfiguruj agregację prywatną`{.action}. Kliknij `Potwierdź`{.action} w menu kontekstowym.
@@ -61,5 +63,7 @@ Operacja może zająć kilka minut.
 [Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19)
 
 [Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
+
+[How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -43,6 +43,7 @@ This may take a few minutes. Once it is complete, the next step is to configure 
 - [How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 - [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
 - [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
+- [How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
 ### Restoring OLA to default values
 
@@ -59,5 +60,7 @@ This may take a few minutes.
 [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19)
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
+
+[How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
 Join our [community of users](/links/community).

@@ -46,6 +46,8 @@ L'opération peut prendre quelques minutes. Une fois celle-ci terminée, l'étap
 
 [Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
 
+[Comment configurer l'agrégation de liens avec LACP dans Debian 12 ou Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
+
 ### Restaurer OLA aux valeurs par défaut
 
 Pour restaurer OLA aux valeurs par défaut, cliquez sur le bouton `...`{.action} à droite de « Mode » dans le cadre **OLA: OVHcloud Link Aggregation**. Cliquez alors sur `Déconfigurer l'agrégation privée`{.action}. Cliquez sur `Confirmer`{.action} dans le menu contextuel.
@@ -61,5 +63,7 @@ L'opération peut prendre quelques minutes.
 [Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
 
 [Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
+
+[Comment configurer l'agrégation de liens avec LACP dans Debian 12 ou Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

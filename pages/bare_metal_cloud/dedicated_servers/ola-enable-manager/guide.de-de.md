@@ -46,6 +46,8 @@ Es kann einige Minuten dauern, bis der Vorgang abgeschlossen ist. Anschließend 
 
 [Konfigurieren der OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
+[How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
+
 ### OLA auf die Standardwerte zurücksetzen
 
 Um OLA auf die Standardwerte wiederherzustellen, klicken Sie auf `...`{.action} rechts neben "Modus" in **OLA: OVHcloud Link Aggregation**. Klicken Sie auf `Private Aggregation dekonfigurieren`{.action}. Klicken Sie im Kontextmenü auf `Bestätigen`{.action}.
@@ -61,5 +63,7 @@ Die Operation kann einige Minuten in Anspruch nehmen.
 [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19)
 
 [Konfigurieren der OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
+
+[How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan)
 
 Treten Sie unserer [User Community](/links/community) bei.
