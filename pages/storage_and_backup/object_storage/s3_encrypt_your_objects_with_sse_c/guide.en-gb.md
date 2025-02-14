@@ -245,8 +245,8 @@ aws s3api put-bucket-encryption --bucket your-bucket --server-side-encryption-co
 This will configure the bucket to use SSE-OMK encryption with keys managed by Object Storage (AES256) for all new objects. 
 
 > [!primary]
-> Existing objects will not be affected. If you also want to encrypt them, you will need to copy or upload them again after changing this configuration.
-> 
+> Existing objects will not be affected. If you also wish to encrypt them, you will need to copy or upload them again after changing this configuration.
+>
 
 ##### Viewing bucket encryption configuration
 
