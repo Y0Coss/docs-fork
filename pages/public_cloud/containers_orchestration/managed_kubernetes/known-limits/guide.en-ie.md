@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2025-01-30
+updated: 2025-02-17
 ---
 
 <style>
@@ -54,13 +54,13 @@ We advise you to save your data in Persistent Volumes (PV), not to save data dir
 Creating a Kubernetes service of type LoadBalancer in a Managed Kubernetes cluster triggers the creation of a Public Cloud Load Balancer based on OpenStack Octavia.
 If the LoadBalancer has been created through a K8s service, the lifespan of the external Load Balancer (and thus the associated IP address if not explicity specified to keep it) is linked to the lifespan of this Kubernetes resource.
 
-To get more information about the deployment of a LoadBalancer deployment in a MKS cluster, checkout our documentation to [expose services through a LoadBalancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
+To get more information about the deployment of a LoadBalancer deployment in a MKS cluster, consult our documentation to [expose services through a LoadBalancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
 
 ## OpenStack & Quota
 
 Our Managed Kubernetes service is based on OpenStack, and your nodes, persistent volumes and load balancers are built on it, using OVHcloud Public Cloud. As such, you can see them in the `Compute` > `Instances` section of your [OVHcloud Public Cloud Control Panel](/links/manager). Though it doesn't mean that you can deal directly with these nodes and persistent volumes the same way you can do it for other Public Cloud instances.
 
-Also, MKS Cluster's quota relies on your project's quota. Checkout [this documentation](/pages/public_cloud/compute/increasing_public_cloud_quota) to increase your quota.
+Also, MKS Cluster's quota relies on your project's quota. Consult [this documentation](/pages/public_cloud/compute/increasing_public_cloud_quota) to increase your quota.
 
 The *managed* part of OVHcloud Managed Kubernetes Service means that we have configured those nodes and volumes to be part of our Managed Kubernetes.  
 Please refrain from manipulating them from the *OVHcloud Public Cloud Control Panel* (modifying ports left opened, renaming, resizing volumes...), as you could break them.
