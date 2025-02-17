@@ -66,7 +66,7 @@ Siga los pasos de instalación haciendo clic en las fichas siguientes:
 >>
 >> ![outlook ios](images/outlook-app-ios-add-step02.png){.thumbnail .w-400 .h-600}
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> En la siguiente ventana, marque `Parámetros avanzados`{.action} e introduzca la siguiente información:
 >>
