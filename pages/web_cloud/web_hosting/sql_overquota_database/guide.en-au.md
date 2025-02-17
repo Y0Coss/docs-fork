@@ -218,7 +218,7 @@ Click on the tabs below to view each of the **5** steps in succession.
 >>
 > **Step 2**
 >>
->> Click the `Hosting plans`{.action} dropdown menu, then select the Web Hosting plan concerned.
+>> Click the `Hosting plans`{.action} menu, then select the Web Hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>
@@ -226,19 +226,19 @@ Click on the tabs below to view each of the **5** steps in succession.
 >>
 >> On the page that pops up, click on the `Databases`{.action} tab.
 >>
->> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
 >>
 > **Step 4**
 >>
 >> On the new page, a table will appear containing the databases you have created. To the right of the database concerned, click the `...`{.action} button, then `Recalculate the quota`{.action}.
 >>
->> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
 > **Step 5**
 >>
 >> In the window that pops up, click the `Confirm`{.action} button directly.
 >>
->> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
 >>
 >> Once launched, the operation may take several minutes. When it ends, the "READ ONLY" status of your database disappears.
 >> Your database is now fully operational again.
@@ -257,7 +257,7 @@ Click on the tabs below to view each of the **3** steps in turn.
 >>
 > **Step 2**
 >>
->> Click the `Web Cloud Databases`{.action} dropdown menu, then choose the Web Cloud Databases solution concerned.
+>> Click the `Web Cloud Databases`{.action} menu, then choose the Web Cloud Databases solution concerned.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/wcdb-server-selection.png){.thumbnail}
 >>
@@ -265,7 +265,7 @@ Click on the tabs below to view each of the **3** steps in turn.
 >>
 >> In the **General information** box, you will see **Used space**. Click the `...`{.action} button on the right, then `Refresh your database quota`{.action}.
 >>
->> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
+>> ![Refresh your database quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
 >>
 >> Once launched, the operation may take several minutes. When it ends, the "READ ONLY" status of your database disappears.
 >> Your database is now fully operational again.

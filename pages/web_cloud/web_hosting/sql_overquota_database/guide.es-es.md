@@ -218,7 +218,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 > **Etapa 2**
 >>
->> Haga clic en el menú desplegable `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>
@@ -226,19 +226,19 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 >>
 >> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
 >>
->> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
 >> En la nueva página, aparecerá una tabla con las bases de datos creadas. A la derecha de la base de datos correspondiente, haga clic en el botón `...`{.action} y, seguidamente, en `Recalcular el espacio utilizado `{.action}.
 >>
->> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
 > **Etapa 5**
 >>
 >> En la nueva ventana, haga clic directamente en el botón `Aceptar`{.action}.
 >>
->> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
 >>
 >> Una vez iniciada, la operación puede tardar varios minutos. Al finalizar, el estado "READ ONLY" de la base de datos desaparece.
 >> La base de datos vuelve a estar totalmente operativa.
@@ -257,7 +257,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
 >>
 > **Etapa 2**
 >>
->> Haga clic en el menú desplegable `Web Cloud Databases`{.action} y seleccione la solución Web Cloud Databases correspondiente.
+>> Haga clic en el menú `Web Cloud Databases`{.action} y seleccione la solución Web Cloud Databases correspondiente.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/wcdb-server-selection.png){.thumbnail}
 >>
@@ -265,7 +265,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
 >>
 >> En la sección **Información general**, acceda al apartado **Espacio utilizado**. Haga clic en el botón `...`{.action} a la derecha y, seguidamente, en `Actualizar el límite de su base de datos`{.action}.
 >>
->> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
+>> ![Refresh your database quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
 >>
 >> Una vez iniciada, la operación puede tardar varios minutos. Al finalizar, el estado "READ ONLY" de la base de datos desaparece.
 >> La base de datos vuelve a estar totalmente operativa.

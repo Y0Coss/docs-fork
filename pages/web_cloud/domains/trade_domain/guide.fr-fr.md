@@ -1,7 +1,7 @@
 ---
 title: "Nom de domaine - Comment changer le titulaire ?"
 excerpt: "Découvrez comment changer le titulaire d'un nom de domaine ou mettre à jour les informations qui lui sont associées"
-updated: 2025-02-05
+updated: 2025-02-17
 ---
 
 ## Objectif
@@ -60,7 +60,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **7*
 >>
 > **Etape 2**
 >>
->> Cliquez sur le menu déroulant `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+>> Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

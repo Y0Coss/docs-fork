@@ -1,7 +1,7 @@
 ---
 title: "Configura un indirizzo IPv6 per il tuo sito Web"
 excerpt: "Questa guida ti mostra come rendere il tuo sito Web compatibile con un indirizzo IPv6"
-updated: 2025-01-28
+updated: 2025-02-17
 ---
 
 ## Obiettivo
@@ -52,7 +52,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 > **Step 2**
 >>
->> Clicca sul menu a tendina `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

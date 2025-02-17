@@ -1,7 +1,7 @@
 ---
 title: "Domainnamen - Inhaber eines Domainnamens ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens ändern oder die zugehörigen Informationen aktualisieren"
-updated: 2025-02-05
+updated: 2025-02-17
 ---
 
 ## Ziel
@@ -59,7 +59,7 @@ Klicken Sie jeweils auf die Tabs, um die **7** Schritte anzuzeigen.
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Dropdown-Menü `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
+>> Klicken Sie auf das Menü `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
 >>
 >>![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

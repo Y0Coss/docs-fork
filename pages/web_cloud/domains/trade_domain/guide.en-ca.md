@@ -1,7 +1,7 @@
 ---
 title: "Domain name - How do I change the owner?"
 excerpt: "Find out how to change a domain name owner, or update the information associated with it"
-updated: 2025-02-05
+updated: 2025-02-17
 ---
 
 ## Objective
@@ -58,7 +58,7 @@ Click on the tabs below to view each of the **7** steps in succession.
 >>
 > **Step 2**
 >>
->> Click the `Domain names`{.action} dropdown menu, then choose the domain name concerned.
+>> Click the `Domain names`{.action} menu, then choose the domain name concerned.
 >>
 >>![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

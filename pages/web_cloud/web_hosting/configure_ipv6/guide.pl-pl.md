@@ -1,7 +1,7 @@
 ---
 title: "Skonfiguruj adres IPv6 dla swojej strony www"
 excerpt: "Dowiedz się, jak sprawdzić, czy Twoja strona WWW jest kompatybilna z adresem IPv6"
-updated: 2025-01-28
+updated: 2025-02-17
 ---
 
 ## Wprowadzenie
@@ -52,7 +52,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 > **Etap 2**
 >>
->> Kliknij menu rozwijane `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

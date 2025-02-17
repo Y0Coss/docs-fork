@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Lista adresów IP według klastra"
 excerpt: "Poznaj wszystkie dostępne adresy IP dostępne na naszych hostingach"
-updated: 2025-01-29
+updated: 2025-02-17
 ---
 
 ## Wprowadzenie 
@@ -38,7 +38,7 @@ Aby poznać klaster hostingu WWW, w którym znajduje się Twoja usługa, kliknij
 >>
 > **Etap 2**
 >>
->> Kliknij menu rozwijane `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

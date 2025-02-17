@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Liste des adresses IP par cluster"
 excerpt: "Découvrez l'ensemble des adresses IP disponibles avec nos hébergements web"
-updated: 2025-01-29
+updated: 2025-02-17
 ---
 
 ## Objectif
@@ -38,7 +38,7 @@ Pour connaître le cluster d'hébergement web sur lequel se trouve votre service
 >>
 > **Etape 2**
 >>
->> Cliquez sur le menu déroulant `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

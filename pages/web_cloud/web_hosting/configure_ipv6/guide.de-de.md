@@ -1,7 +1,7 @@
 ---
 title: "IPv6 für Ihre Website konfigurieren"
 excerpt: "Diese Anleitung erklärt, wie Sie Ihre Website über eine IPv6-Adresse verfügbar machen"
-updated: 2025-01-28
+updated: 2025-02-17
 ---
 
 ## Ziel
@@ -50,7 +50,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Dropdown-Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

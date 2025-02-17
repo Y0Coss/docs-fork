@@ -1,7 +1,7 @@
 ---
 title: "Comment renouveler mon nom de domaine OVHcloud"
 excerpt: "Découvrez pourquoi et comment renouveler vos noms de domaine OVHcloud"
-updated: 2024-11-12
+updated: 2025-02-17
 ---
 
 ## Objectif 

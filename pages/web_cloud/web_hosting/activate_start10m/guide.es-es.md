@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Activar el Alojamiento gratuito 100M"
 excerpt: "Descubra cómo activar su Alojamiento gratuito 100M"
-updated: 2024-12-06
+updated: 2025-02-17
 ---
 
 ## Objetivo
@@ -40,7 +40,7 @@ Para activar su alojamiento gratuito 100M, haga clic en las pestañas de abajo p
 >>
 > **Etapa 2**
 >>
->> Haga clic en el menú desplegable `Dominios`{.action} y seleccione el dominio correspondiente.
+>> Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

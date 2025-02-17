@@ -1,7 +1,7 @@
 ---
 title: "Como geolocalizar um website num país específico?"
 excerpt: "Saiba como localizar o seu website graças aos endereços IP geolocalizados disponíveis nas ofertas de alojamento partilhado OVHcloud"
-updated: 2025-02-11
+updated: 2025-02-17
 ---
 
 ## Objetivo
@@ -37,7 +37,7 @@ Para utilizar a opção de geolocalização por IP, clique nas janelas abaixo pa
 >>
 > **Etapa 2**
 >>
->> Clique no menu pendente `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - List of IP addresses by cluster"
 excerpt: "Find out the appropriate IP addresses to use with your OVHcloud Web Hosting plan"
-updated: 2025-01-29
+updated: 2025-02-17
 ---
 
 ## Objective
@@ -37,7 +37,7 @@ To find out on which web hosting cluster your service is located, click on the t
 >>
 > **Step 2**
 >>
->> Click the `Hosting plans`{.action} dropdown menu, then select the web hosting plan concerned.
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

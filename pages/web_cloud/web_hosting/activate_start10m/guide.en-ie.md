@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Activating the 100M free hosting plan"
 excerpt: "Find out how to activate your 100M free hosting plan"
-updated: 2024-12-06
+updated: 2025-02-17
 ---
 
 ## Objective
@@ -40,7 +40,7 @@ To activate your free 100M hosting plan, click on the tabs below to view each of
 >>
 > **Step 2**
 >>
->> Click the `Domain names`{.action} dropdown menu, then choose the domain name concerned.
+>> Click the `Domain names`{.action} menu, then choose the domain name concerned.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Attivare l'hosting gratuito 100M"
 excerpt: "Questa guida ti mostra come attivare il piano di Hosting gratuito 100M"
-updated: 2024-12-06
+updated: 2025-02-17
 ---
 
 ## Obiettivo
@@ -40,7 +40,7 @@ Per attivare l’hosting gratuito 100M, clicca sulle schede qui sotto per visual
 >>
 > **Step 2**
 >>
->> Clicca sul menu a tendina `Domini`{.action} e seleziona il dominio interessato.
+>> Clicca sul menu `Domini`{.action} e seleziona il dominio interessato.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

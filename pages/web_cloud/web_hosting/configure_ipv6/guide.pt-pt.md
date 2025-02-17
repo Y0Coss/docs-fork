@@ -1,7 +1,7 @@
 ---
 title: "Configure um endereço IPv6 para o seu website"
 excerpt: "Saiba como tornar o seu website compatível com um endereço IPv6"
-updated: 2025-01-28
+updated: 2025-02-17
 ---
 
 ## Objetivo
@@ -52,7 +52,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 >>
 > **Etapa 2**
 >>
->> Clique no menu pendente `Alojamentos`{.action} e escolha o alojamento web em causa.
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

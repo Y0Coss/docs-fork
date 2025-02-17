@@ -1,7 +1,7 @@
 ---
 title: "Dominio - Come cambiare il titolare?"
 excerpt: "Questa guida ti mostra come modificare il proprietario di un dominio e aggiornare le informazioni associate a quest’ultimo"
-updated: 2025-02-05
+updated: 2025-02-17
 ---
 
 ## Obiettivo
@@ -60,7 +60,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **7** pa
 >>
 > **Step 2**
 >>
->> Clicca sul menu a tendina `Domini`{.action} e seleziona il dominio interessato.
+>> Clicca sul menu `Domini`{.action} e seleziona il dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

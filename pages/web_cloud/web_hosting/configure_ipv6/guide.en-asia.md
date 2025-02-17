@@ -1,7 +1,7 @@
 ---
 title: "Configuring IPv6 for your website"
 excerpt: "Find out how to make your website available via an IPv6 address"
-updated: 2025-01-28
+updated: 2025-02-17
 ---
 
 ## Objective
@@ -52,7 +52,7 @@ Click on the tabs below to view each of the **3** steps in succession.
 >>
 > **Step 2**
 >>
->> Click the `Hosting plans`{.action} dropdown menu, then select the web hosting plan concerned.
+>> Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Liste der IP-Adressen pro Cluster"
 excerpt: "Erfahren Sie hier, welche IP-Adresse für Ihr OVHcloud Webhosting zu verwenden ist"
-updated: 2025-01-29
+updated: 2025-02-17
 ---
 
 ## Ziel 
@@ -37,7 +37,7 @@ Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, klicken Sie 
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Dropdown-Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

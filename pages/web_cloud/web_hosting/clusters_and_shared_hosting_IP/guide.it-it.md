@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Lista degli indirizzi IP per cluster"
 excerpt: "Questa guida ti mostra comme tutti gli indirizzi IP disponibili con i nostri hosting Web"
-updated: 2025-01-29
+updated: 2025-02-17
 ---
 
 ## Obiettivo
@@ -38,7 +38,7 @@ Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, clicca 
 >>
 > **Step 2**
 >>
->> Clicca sul menu a tendina `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

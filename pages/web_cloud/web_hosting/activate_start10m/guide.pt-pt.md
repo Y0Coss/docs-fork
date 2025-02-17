@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar o alojamento gratuito 100M"
 excerpt: "Saiba como ativar o alojamento gratuito 100M"
-updated: 2024-12-06
+updated: 2025-02-17
 ---
 
 ## Objetivo
@@ -40,7 +40,7 @@ Para ativar o alojamento gratuito 100M, clique nos separadores abaixo para visua
 >>
 > **Etapa 2**
 >>
->> Clique no menu pendente `Nomes de domínios`{.action} e escolha o domínio em causa.
+>> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

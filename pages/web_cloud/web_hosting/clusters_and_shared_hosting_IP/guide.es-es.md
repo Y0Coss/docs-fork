@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Lista de direcciones IP por cluster"
 excerpt: "Descubra todas las direcciones IP disponibles con nuestros alojamientos web"
-updated: 2025-01-29
+updated: 2025-02-17
 ---
 
 ## Objetivo
@@ -38,7 +38,7 @@ Para conocer el cluster de alojamiento web en el que se encuentra su servicio, a
 >>
 > **Etapa 2**
 >>
->> Haga clic en el menú desplegable `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

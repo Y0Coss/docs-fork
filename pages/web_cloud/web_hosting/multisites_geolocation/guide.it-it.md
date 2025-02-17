@@ -1,7 +1,7 @@
 ---
 title: "Come geolocalizzare un sito Web in un paese specifico?"
 excerpt: "Questa guida ti mostra come individuare un sito Web grazie agli indirizzi IP geolocalizzati disponibili sulle offerte di hosting condiviso OVHcloud"
-updated: 2025-02-11
+updated: 2025-02-17
 ---
 
 ## Obiettivo
@@ -37,7 +37,7 @@ Per utilizzare l'opzione di geolocalizzazione via IP, clicca sulle schede qui so
 >>
 > **Step 2**
 >>
->> Clicca sul menu a tendina `Hosting`{.action} e seleziona l’hosting Web interessato.
+>> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>

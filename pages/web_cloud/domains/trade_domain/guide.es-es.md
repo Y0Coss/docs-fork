@@ -1,7 +1,7 @@
 ---
 title: "Dominio - ¿Cómo cambiar el titular?"
 excerpt: "Descubra cómo cambiar el titular de un dominio o actualizar la información asociada al mismo"
-updated: 2025-02-05
+updated: 2025-02-17
 ---
 
 ## Objetivo
@@ -60,7 +60,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **7** etapas.
 >>
 > **Etapa 2**
 >>
->> Haga clic en el menú desplegable `Dominios`{.action} y seleccione el dominio correspondiente.
+>> Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

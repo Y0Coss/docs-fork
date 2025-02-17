@@ -217,7 +217,7 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Dropdown-Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>
@@ -225,19 +225,19 @@ Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Klicken Sie auf den Tab `Datenbanken`{.action}.
 >>
->> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
 >>
 > **Schritt 4**
 >>
 >> Auf der neuen Seite wird eine Tabelle mit den erstellten Datenbanken angezeigt. Rechts neben der betreffenden Datenbank klicken Sie auf den Button `...`{.action} und dann auf `Quota neu berechnen`{.action}.
 >>
->> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 >>
 > **Schritt 5**
 >>
 >> Klicken Sie im angezeigten Fenster direkt auf den Button `Bestätigen`{.action}.
 >>
->> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
 >>
 >> Der Vorgang kann einige Minuten dauern, nachdem er gestartet wurde. Wenn die Installation abgeschlossen ist, verschwindet der Status "READ ONLY" Ihrer Datenbank.  
 >> Ihre Datenbank ist nun wieder voll funktionsfähig.
@@ -256,7 +256,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Dropdown-Menü `Web Cloud Databases`{.action} und wählen Sie die betreffende Web Cloud Databases Lösung aus.
+>> Klicken Sie auf das Menü `Web Cloud Databases`{.action} und wählen Sie die betreffende Web Cloud Databases Lösung aus.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/wcdb-server-selection.png){.thumbnail}
 >>
@@ -264,7 +264,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> Im Bereich **Allgemeine Informationen** finden Sie den Abschnitt **Speichernutzung**. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Quota Ihrer Datenbank aktualisieren`{.action}.
 >>
->> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
+>> ![Refresh your database quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
 >>
 >> Der Vorgang kann einige Minuten dauern, nachdem er gestartet wurde. Wenn die Installation abgeschlossen ist, verschwindet der Status "READ ONLY" Ihrer Datenbank.  
 >> Ihre Datenbank ist nun wieder voll funktionsfähig.

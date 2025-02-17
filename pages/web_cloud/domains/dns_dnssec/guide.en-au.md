@@ -1,7 +1,7 @@
 ---
 title: "Securing your domain name with DNSSEC"
 excerpt: "Find out how to protect your domain name from Cache Poisoning by enabling DNSSEC"
-updated: 2024-10-29
+updated: 2025-02-17
 ---
 
 ## Objective 

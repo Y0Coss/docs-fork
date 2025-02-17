@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Kostenloses Hosting 100M aktivieren"
 excerpt: "Diese Anleitung erklärt, wie Sie Ihr kostenloses Hosting 100M aktivieren"
-updated: 2024-12-06
+updated: 2025-02-17
 ---
 
 ## Ziel 
@@ -40,7 +40,7 @@ Um Ihr Kostenloses Hosting 100M zu aktivieren, klicken Sie auf die folgenden Tab
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Dropdown-Menü `Domainnamen`{.action} und wählen Sie die betreffende Domain aus.
+>> Klicken Sie auf das Menü `Domainnamen`{.action} und wählen Sie die betreffende Domain aus.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

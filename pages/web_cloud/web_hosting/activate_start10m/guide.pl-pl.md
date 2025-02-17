@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Włączanie darmowy hosting 100M"
 excerpt: "Dowiedz się, jak włączyć darmowy hosting 100M"
-updated: 2024-12-06
+updated: 2025-02-17
 ---
 
 ## Wprowadzenie 
@@ -40,7 +40,7 @@ Aby włączyć darmowy hosting 100M, kliknij na poniższe zakładki, aby wyświe
 >>
 > **Etap 2**
 >>
->> Kliknij menu rozwijane `Domeny`{.action}, następnie wybierz odpowiednią domenę.
+>> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
 >>
 >> ![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
