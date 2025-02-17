@@ -13,7 +13,7 @@ updated: 2025-02-10
 }
 </style>
 
-## Cel
+## Wprowadzenie
 
 Konta MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji. Aplikacja Outlook firmy Microsoft na urządzeniach z systemem iOS jest dostępna bezpłatnie w App Store firmy Apple.
 
