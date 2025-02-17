@@ -165,7 +165,7 @@ Para el envío de mensajes de correo electrónico, si debe introducir manualment
 >
 > **Cambiar la configuración**
 >
-> Si su dirección de correo electrónico está configurada en **IMAP** y desea cambiar esta configuración a **POP**, debe eliminar la cuenta y volver a crearla en **POP**. Consulte el capítulo «[Modificar la configuración existente](#modify-settings)» de esta guía.
+> Si su dirección de correo electrónico está configurada en **IMAP** y desea cambiar esta configuración a **POP**, debe eliminar la cuenta y volver a crearla en **POP**. Consulte el capítulo "[Modificar la configuración existente](#modify-settings)" de esta guía.
 
 ## Más información <a name="go-further"></a>
  
