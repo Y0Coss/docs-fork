@@ -45,7 +45,7 @@ Clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Visualizza
 
 ![Email Pro](images/configuration-gmail-web-step1.png){.thumbnail}
 
-Seleziona la scheda `Account e importazione`{.action}.Nella sezione `Controlla la posta da altri account`, clicca su `Aggiungi un account email`{.action}.
+Seleziona la scheda `Account e importazione`{.action}. Nella sezione `Controlla la posta da altri account`, clicca su `Aggiungi un account email`{.action}.
 
 ![Email Pro](images/configuration-gmail-web-step1-2.png){.thumbnail}
 

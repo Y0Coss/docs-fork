@@ -45,7 +45,7 @@ Une fois connecté à l'interface, cliquez sur l'icône en forme de roue dentée
 
 ![emailpro](images/configuration-gmail-web-step1.png){.thumbnail}
 
-Sur la page qui s'affiche, cliquez sur l'onglet `Comptes et importation`{.action}.À côté de `Consulter d'autres comptes de messagerie`, cliquez sur `Ajouter un compte de messagerie`{.action}.
+Sur la page qui s'affiche, cliquez sur l'onglet `Comptes et importation`{.action}. À côté de `Consulter d'autres comptes de messagerie`, cliquez sur `Ajouter un compte de messagerie`{.action}.
 
 ![emailpro](images/configuration-gmail-web-step1-2.png){.thumbnail}
 
