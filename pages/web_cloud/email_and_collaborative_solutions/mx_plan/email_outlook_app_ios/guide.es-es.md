@@ -98,7 +98,7 @@ OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de
 ### Cambiar la configuración existente <a name="modify-settings"></a>
 
 1. Pulse el círculo que contiene las iniciales de la cuenta de correo consultada o el icono de la casa "&#8962;" en la parte superior izquierda de la pantalla.
-2. Pulse el engranaje « &#9881;» en la parte inferior izquierda de la pantalla.
+2. Pulse el engranaje "&#9881;" en la parte inferior izquierda de la pantalla.
 3. A continuación, pulse `Cuentas`{.action} en el menú **Ajustes**.
 4. Seleccione la cuenta.
 5. Pulse `Editar la información de conexión`{.action}.
