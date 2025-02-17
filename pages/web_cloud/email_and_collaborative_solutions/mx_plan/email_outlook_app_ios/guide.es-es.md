@@ -83,7 +83,7 @@ Siga los pasos de instalación haciendo clic en las fichas siguientes:
 
 > [!warning]
 >
-> Si, tras haber seguido los pasos de configuración anteriores, detecta un fallo de envío o recepción, consulte el apartado «[Modificar los parámetros existentes](#modify-settings)».
+> Si, tras haber seguido los pasos de configuración anteriores, detecta un fallo de envío o recepción, consulte el apartado "[Modificar los parámetros existentes](#modify-settings)".
 
 ### Utilizar la dirección de correo electrónico
 
