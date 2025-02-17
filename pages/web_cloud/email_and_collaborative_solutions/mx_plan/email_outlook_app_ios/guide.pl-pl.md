@@ -74,7 +74,7 @@ Postępuj zgodnie z kolejnymi instrukcjami, klikając poniższe zakładki:
 >> - **Pełna nazwa** : wprowadź pełny adres e-mail
 >> - **Opis**
 >> - **Serwer poczty przychodzącej IMAP** :<br>- **Nazwa hosta IMAP** : w przypadku firmy**EUROPE** należy wpisać `imap.mail.ovh.net` lub `ssl0.ovh.net`. W przypadku adresu **AMERYKA/Azja** wpisz `imap.mail.ovh.ca`<br>- **Port IMAP** : 993<br>- **Nazwa użytkownika IMAP**: Twój pełny adres e-mail<br>- **Hasło IMAP**: Twój adres e-mail<br>- **Bezpieczeństwo portu** : SSL
->> - **Serwer poczty przychodzącej SMTP** :<br>- **Nazwa hosta SMTP** : w przypadku Europy*** należy wpisać `smtp.mail.ovh.net` lub `ssl0.ovh.net`. W przypadku adresu**AMERYKA/AZJA** wpisz `smtp.mail.ovh.ca`<br>- **Port SMTP** : 465<br>- **Nazwa użytkownika SMTP**: Twój pełny adres e-mail<br>- **Hasło SMTP**: Twój adres e-mail<br>- **Bezpieczeństwo portu** : SSL
+>> - **Serwer poczty przychodzącej SMTP** :<br>- **Nazwa hosta SMTP** : w przypadku **Europy** należy wpisać `smtp.mail.ovh.net` lub `ssl0.ovh.net`. W przypadku adresu**AMERYKA/AZJA** wpisz `smtp.mail.ovh.ca`<br>- **Port SMTP** : 465<br>- **Nazwa użytkownika SMTP**: Twój pełny adres e-mail<br>- **Hasło SMTP**: Twój adres e-mail<br>- **Bezpieczeństwo portu** : SSL
 >>
 >> Aby dokończyć konfigurację, naciśnij przycisk `Połącz`{.action}.
 >>
