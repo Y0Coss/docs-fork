@@ -40,7 +40,7 @@ Gli account MX Plan possono essere configurati su client di posta compatibili. p
 ![outlook-ios](images/outlook-app-ios-add01.png){.thumbnail .w-400 .h-600}
 
 - **Se è già stato impostato un account**:
-    1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona di casa " &#8962;" in alto a sinistra dello schermo.
+    1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona di casa "&#8962;" in alto a sinistra dello schermo.
     2. Premere l'ingranaggio &#9881; nella parte inferiore sinistra dello schermo.
     3. Clicca su `Account`{.action} nel menu **Impostazioni**.
     4. Clicca su `Aggiungi un account`{.action}.
