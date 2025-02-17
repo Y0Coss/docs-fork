@@ -37,7 +37,7 @@ To use the IP geolocation option, click on the tabs below to view each of the **
 >>
 > **Step 2**
 >>
->> Click the `Hosting plans`{.action} dropdown menu, then select the Web Hosting plan concerned.
+>> Click the `Hosting plans`{.action} dropdown menu, then select the web hosting plan concerned.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>
