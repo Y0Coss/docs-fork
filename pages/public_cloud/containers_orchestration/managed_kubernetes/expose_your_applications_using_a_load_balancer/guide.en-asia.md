@@ -1,7 +1,7 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2025-02-14
+updated: 2025-02-17
 ---
 
 > [!warning]
@@ -64,7 +64,7 @@ If you have an existing/already deployed cluster and if:
 ## Limitations
 
 - Layer 7 Policy & Rules and TLS Termination (`TERMINATED_HTTPS` listener) are not available yet. For such use cases you can rely on [Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)
-- UDP proxy protocol is not supported
+- Proxy Protocol is only supported for TCP services.
 
 ## Billing
 
