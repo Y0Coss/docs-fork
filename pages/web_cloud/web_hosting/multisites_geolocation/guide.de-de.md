@@ -6,7 +6,7 @@ updated: 2025-02-11
 
 ## Ziel
 
-Suchmaschinen (Google, Bing, Yahoo, etc.) setzen Roboter ein, um Websiten zu indexieren und Rankings zu erstellen. Bei den Suchergebnissen werden Seiten, die in dem Land von dem aus die Suche erfolgt, geolokalisiert sind, bevorzugt.
+Suchmaschinen (Google, Bing, Yahoo, etc.) setzen Robots ein, um Websiten zu indexieren und Rankings zu erstellen. Bei den Suchergebnissen werden Seiten, die in dem Land von dem aus die Suche erfolgt, geolokalisiert sind, bevorzugt.
 
 **Beispiel**: Wenn Sie über eine Suchmaschine suchen und sich in England befinden, werden in England geolokalisierte Websites in den Suchergebnissen priorisiert angezeigt.
 
@@ -37,7 +37,7 @@ Um die IP-Geolokalisierungsoption zu aktivieren, klicken Sie auf die folgenden R
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Dropdown-Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>> Klicken Sie auf das Drop-down-Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 >>
@@ -53,7 +53,7 @@ Um die IP-Geolokalisierungsoption zu aktivieren, klicken Sie auf die folgenden R
 >>
 >> ![hosting multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
 >>
->> Klicken Sie auf den Button `...`{.action} rechts neben Ihrem Domainnamen in der Tabelle. Klicken Sie abschließend auf `Domain bearbeiten`{.action}.
+>> Klicken Sie auf den Button `...`{.action} rechts neben Ihrem Domainnamen in der Tabelle. Klicken Sie auf `Domain bearbeiten`{.action}.
 >>
 > **Schritt 5**
 >>
@@ -67,9 +67,9 @@ Um die IP-Geolokalisierungsoption zu aktivieren, klicken Sie auf die folgenden R
 
 > [!primary]
 >
-> Wenn die aktive DNS-Zone Ihrer Domain vollständig in Ihrem [OVHcloud Kundencenter](/links/manager) verwaltet wird, ändert sich der A Eintrag in der DNS-Zone Ihrer Domain automatisch. Um zu überprüfen, ob die IP-Adresse korrekt aktualisiert wurde, lesen Sie unsere Anleitung zur [Bearbeitung der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
+> Wenn die aktive DNS-Zone Ihrer Domain vollständig in Ihrem [OVHcloud Kundencenter](/links/manager) verwaltet wird, ändert sich der A-Eintrag in der DNS-Zone Ihrer Domain automatisch. Um zu überprüfen, ob die IP-Adresse korrekt aktualisiert wurde, lesen Sie unsere Anleitung zur [Bearbeitung der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
 >
-> Ist das nicht der Fall, müssen Sie die Änderung manuell beim Anbieter vornehmen, der die aktive DNS Zone Ihres Domainnamens verwaltet. [Hier](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) finden Sie die Dokumentation, in der alle IP-Adressen der OVHcloud Shared Hosting Infrastruktur aufgeführt sind.
+> Ist das nicht der Fall, müssen Sie die Änderung manuell beim Anbieter vornehmen, der die aktive DNS-Zone Ihres Domainnamens verwaltet. [Hier](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) finden Sie die Dokumentation, in der alle IP-Adressen der OVHcloud Shared Hosting Infrastruktur aufgeführt sind.
 >
 > In beiden Fällen ist eine Propagationszeit von **4 bis 24 Stunden** nach der Änderung erforderlich, damit die Änderung im Internet voll wirksam und sichtbar ist.
 >
