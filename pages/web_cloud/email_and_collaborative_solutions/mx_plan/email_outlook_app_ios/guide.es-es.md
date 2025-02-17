@@ -40,7 +40,7 @@ Es posible configurar las cuentas MX Plan en el cliente de correo que usted util
 ![outlook ios](images/outlook-app-ios-add01.png){.thumbnail .w-400 .h-600}
 
 - **Si ya tiene una cuenta configurada**:
-    1. Pulse el círculo que contiene las iniciales de la cuenta de correo consultada o el icono de la casa « &#8962;» en la parte superior izquierda de la pantalla.
+    1. Pulse el círculo que contiene las iniciales de la cuenta de correo consultada o el icono de la casa "&#8962;" en la parte superior izquierda de la pantalla.
     2. Pulse el engranaje « &#9881;» en la parte inferior izquierda de la pantalla.
     3. A continuación, pulse `Cuentas`{.action} en el menú **Ajustes**.
     4. Pulsa `Añadir cuenta`{.action}.
