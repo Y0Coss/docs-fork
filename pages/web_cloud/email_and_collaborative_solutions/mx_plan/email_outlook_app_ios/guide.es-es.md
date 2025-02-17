@@ -51,7 +51,7 @@ Es posible configurar las cuentas MX Plan en el cliente de correo que usted util
 Siga los pasos de instalación haciendo clic en las fichas siguientes:
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Introduzca su dirección de correo electrónico y pulse `Añadir una cuenta`{.action}.
 >>
