@@ -17,8 +17,9 @@ The Public Cloud Databases offer is available in the following regions:
 - `BHS` (Beauharnois, Canada)
 - `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
-- `UK` (London, United Kingdom)
 - `SBG` (Strasbourg, France)
+- `SGP` (Singapore, Singapore)
+- `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
 ### MongoDB versions
@@ -90,6 +91,7 @@ Here are some considerations to take into account when using private network:
 - **DHCP must be enabled** in your private network in order to launch MongoDB clusters in the said private network.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
+- You can only create private network services if you are the original owner of the network. You can not create private network services on a shared network.
 
 ##### Authorised IPs
 

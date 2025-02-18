@@ -50,6 +50,7 @@ Public Cloud Databases provide a default configuration for remote backups based 
 | BHS (Beauharnois, Canada)   | SBG (Strasbourg, France)         |
 | DE (Frankfurt, Germany)     | GRA (Gravelines, France)         |
 | SBG (Strasbourg, France)    | GRA (Gravelines, France)         |
+| SGP (Singapore, Singapore)  | BHS (Beauharnois, Canada)        |
 | UK (London, United Kingdom) | GRA (Gravelines, France)         |
 | WAW (Warsaw, Poland)        | GRA (Gravelines, France)         |
 
