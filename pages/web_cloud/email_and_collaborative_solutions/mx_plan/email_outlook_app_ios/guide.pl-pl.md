@@ -37,7 +37,7 @@ Konta MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów poc
 
 - **Podczas pierwszego uruchomienia aplikacji** : wyświetli się asystent konfiguracji, po czym kliknij `Dodaj konto`{.action}.
 
-![Outlook iOS](obrazy/outlook-app-ios-add01.png){.thumbnail .w-400 .h-600}
+![Outlook iOS](images/outlook-app-ios-add01.png){.thumbnail .w-400 .h-600}
 
 - **Jeśli konto zostało już skonfigurowane**:
     1. Stuknij okrąg zawierający inicjały przeglądanego konta e-mail lub ikonę domu "&#8962;" w lewym górnym rogu ekranu.
@@ -46,7 +46,7 @@ Konta MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów poc
     4. Kliknij `Dodaj konto`{.action}.
     5. Naciśnij `Konto pocztowe`{.action}.
 
-![Outlook iOS](obrazy/outlook-app-ios-add02.png){.thumbnail .w-400 .h-600}
+![Outlook iOS](images/outlook-app-ios-add02.png){.thumbnail .w-400 .h-600}
 
 Postępuj zgodnie z kolejnymi instrukcjami, klikając poniższe zakładki:
 
@@ -92,7 +92,7 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku! Możesz teraz wysyła
 OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Jest ona dostępna pod tym linkiem: [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. Jeśli masz pytania dotyczące korzystania z tej usługi, skorzystaj z naszych przewodników:
 
 - [Sprawdź konto w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
-- [Korzystanie z konta e-mail przy użyciu interfejsu Webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_rundcube)
+- [Korzystanie z konta e-mail przy użyciu interfejsu Webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 - [Skorzystaj z poczty Zimbra Webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ### Zmień istniejące ustawienia <a name="modify-settings"></a>
