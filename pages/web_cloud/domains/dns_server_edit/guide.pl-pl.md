@@ -1,7 +1,7 @@
 ---
 title: "Zmiana serwerów DNS domeny OVHcloud"
 excerpt: "Dowiedz się, jak modyfikować serwery DNS Twojej domeny zarejestrowanej w OVHcloud"
-updated: 2024-09-16
+updated: 2025-02-18
 ---
 
 ## Wprowadzenie
@@ -45,21 +45,34 @@ Należy jednak wziąć pod uwagę następujące kwestie:
 
 ### Etap 1 - Dostęp do zarządzania serwerami DNS OVHcloud <a name="access-dns-servers"></a>
 
-W tym celu wykonaj następujące czynności:
+W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu rozwijane `Domeny`{.action}.
-4. Wybierz odpowiednią domenę.
-5. Na stronie, która się wyświetli kliknij zakładkę `Serwery DNS`{.action}.
-
-Tabela, która się wyświetla zawiera listę serwerów DNS zdefiniowanych aktualnie przez OVHcloud dla Twojej domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli.
-
-> [!primary]
->
-> Gdy korzystasz z serwerów DNS OVHcloud, numery zawarte w nazwach serwerów nie mają żadnego związku z używanymi przez Ciebie usługami. Tylko opcja [DNS anycast](/links/web/domains-options) używa określonych serwerów DNS (`ns200.anycast.me` i `dns200.anycast.me`). Są one automatycznie przypisywane do Twojego konta klienta.
-
-![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
+>>
+>> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Wybierz zakładkę `Serwery DNS`{.action} po wybraniu domeny.
+>>
+> **Etap 4**
+>>
+>> Tabela, która się wyświetla zawiera listę serwerów DNS zdefiniowanych aktualnie przez OVHcloud dla Twojej domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli.
+>>
+>> > [!primary]
+>> >
+>> > Gdy korzystasz z serwerów DNS OVHcloud, numery zawarte w nazwach serwerów nie mają żadnego związku z używanymi przez Ciebie usługami. Tylko opcja [DNS anycast](/links/web/domains-options) używa określonych serwerów DNS (`ns200.anycast.me` i `dns200.anycast.me`). Są one automatycznie przypisywane do Twojego konta klienta.
+>>
+>> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/tab.png){.thumbnail}
 
 ### Etap 2 - Modyfikacja serwerów DNS <a name="modify-dns-servers"></a>
 
