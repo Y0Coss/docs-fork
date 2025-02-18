@@ -1,7 +1,7 @@
 ---
-title: "Post-migration guide: managed VMware vSphere to managed VCD"
+title: "Setting up your network after vSphere to VCD migration"
 excerpt: "Learn how to configure your network after migrating from VMware vSphere to VMware Cloud Director."
-updated: 2025-02-17
+updated: 2025-02-18
 ---
 
 ## Objective
@@ -19,27 +19,23 @@ These modifications are essential to ensure the proper functioning of your virtu
 
 ### Step 1: Update virtual machine network settings  
 
-After migration, you need to update the network configurations of your `virtual machines (VMs)` by selecting **one** of the following options:  
+After migration, you need to update the network configurations of your `virtual machines (VMs)`.
 
-- **Option 1: Set the network configuration to `DHCP`** *(Recommended)*  
-   - Go to the network settings of each `VM`.  
-   - Change the IP assignment mode to `DHCP`{.action}.  
+To set the network configuration to `DHCP`:
+
+1. Go to the network settings of each `VM`.
+
+2. Change the IP assignment mode to `DHCP`{.action}.
 
    ![DHCP setting](images/01-VCD-post-migration.png){.thumbnail}
 
-   - Make sure the `"Guest customization settings"`{.action} are set to `Disabled` before modifying the NIC settings.  
+3. Make sure the `"Guest customization settings"`{.action} are set to `Disabled` before modifying the NIC settings.
 
    ![Disabled setting](images/02-VCD-post-migration.png){.thumbnail}
 
-- **Option 2: Update `Gateway CIDR` for each network**  
-   - Update the `Gateway CIDR` to match the actual subnet used in each network.  
-   - This step is required to maintain connectivity and avoid configuration conflicts.  
-
-   ![Gateway CIDR](images/03-VCD-post-migration.png){.thumbnail}
-
 ### Step 2: Handling the IP addressing bug in `VCD`  
 
-During migration, `VLANs` are pre-created with **placeholder `Gateway CIDRs`**, as the actual VM subnets are unknown beforehand.  
+ Networks are pre-created with placeholder Gateway CIDRs, as the actual VM subnets are unknown beforehand.
 
 This can lead to IP assignment issues if not addressed post-migration.  
 
@@ -60,14 +56,13 @@ This can lead to IP assignment issues if not addressed post-migration.
    - There is no automatic method to retrieve these details.  
 
 3. **Create a new `segment`**  
-   - Customers can create a new `network segment` with the correct subnet.  
+   - Customers can create a new `network` with the correct subnet.  
    - This solution works only if the customer has **a single** public IP range.  
 
 ## Go further  
 
-If you need assistance, please reach out to:  
+If you need training or technical assistance to implement our solutions, please contact your Technical Account Manager or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-- **Your `Account Manager` or assigned `Technical Account Manager`**  
-- **Our `OVHcloud Professional Services` team**: [https://www.ovhcloud.com/en/professional-services/](https://www.ovhcloud.com/en/professional-services/)  
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](https://discord.gg/ovhcloud) channel.
 
 Join our [community of users](/links/community).

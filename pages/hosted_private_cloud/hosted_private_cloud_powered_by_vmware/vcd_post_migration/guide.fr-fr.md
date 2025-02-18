@@ -1,7 +1,7 @@
 ---
-title: "Guide post-migration : VMware vSphere vers VCD."
+title: "Configuration réseau après migration de vSphere vers VCD"
 excerpt: "Apprenez à configurer votre réseau après la migration de VMware vSphere vers VMware Cloud Director."
-updated: 2025-02-17
+updated: 2025-02-18
 ---
 
 ## Objectif  
@@ -19,23 +19,19 @@ Ces ajustements sont essentiels pour assurer le bon fonctionnement de vos `machi
 
 ### Étape 1 : Mettre à jour la configuration réseau des machines virtuelles  
 
-Après la migration, vous devez ajuster la configuration réseau de vos `machines virtuelles (VMs)` en sélectionnant **une seule** des options suivantes :  
+Après la migration, vous devez ajuster la configuration réseau de vos `machines virtuelles (VMs)`.
 
-- **Option 1 : Passer la configuration réseau en `DHCP`** *(Recommandé)*  
-   - Accédez aux paramètres réseau de chaque `VM`.  
-   - Modifiez le mode d’attribution des IP et sélectionnez `DHCP`{.action}.  
+Pour passer la configuration réseau en `DHCP` *(Recommandé)* :
+
+1. Accédez aux paramètres réseau de chaque `VM`.
+
+2. Modifiez le mode d’attribution des IP et sélectionnez `DHCP`{.action}.
 
    ![Paramètre DHCP](images/01-VCD-post-migration.png){.thumbnail}
 
-   - Assurez-vous que `"Guest customization settings"`{.action} est défini sur `Disabled` avant de modifier les paramètres de l’interface réseau (NIC).  
+3. Assurez-vous que `"Guest customization settings"`{.action} est défini sur `Disabled` avant de modifier les paramètres de l’interface réseau (NIC).
 
    ![Paramètre Désactivé](images/02-VCD-post-migration.png){.thumbnail}
-
-- **Option 2 : Mettre à jour le `Gateway CIDR` pour chaque réseau**  
-   - Mettez à jour le `Gateway CIDR` pour qu’il corresponde au sous-réseau réellement utilisé sur chaque réseau.  
-   - Cette étape est essentielle pour assurer la connectivité et éviter les conflits de configuration.  
-
-   ![CIDR de la passerelle](images/03-VCD-post-migration.png){.thumbnail}
 
 ### Étape 2 : Gérer le problème d’adressage IP dans `VCD`  
 
@@ -65,9 +61,8 @@ Cela peut entraîner des erreurs d’attribution d’IP si les paramètres ne so
 
 ## Aller plus loin  
 
-Si vous avez des questions ou besoin d’assistance, plusieurs options sont à votre disposition :  
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](/links/professional-services).
 
-- **Votre `Account Manager` ou `Technical Account Manager` assigné**  
-- **Notre équipe `OVHcloud Professional Services`** : [https://www.ovhcloud.com/fr/professional-services/](https://www.ovhcloud.com/fr/professional-services/)  
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud) dédié.
 
-Échangez avec notre [communauté d’utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).
