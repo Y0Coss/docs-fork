@@ -17,23 +17,26 @@ max-height:600px !important;
 
 MX Plan accounts can be configured on various compatible email clients. This allows you to use your email address from the device of your choice. The Microsoft Outlook app on iOS is available for free from the Apple App Store.
 
-**Find out how to configure your MX Plan email address on the Outlook mobile app for iOS**
+**Find out how to configure your MX Plan email address on the Outlook mobile app for iOS.**
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
->
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialized partner](https://marketplace.ovhcloud.com/c/support-collaboration) and/or the service publisher if you experience any difficulties. We will not be able to assist you. You can find more information in the “Go further” section of this guide.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+> 
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialized partner](https://marketplace.ovhcloud.com/c/support-collaboration) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> 
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution, or in an [OVHcloud Web Hosting] solution (/links/web/hosting)).
-- You must have the Outlook application installed on your mobile device [iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
-- You must have the login details for the email address you would like to configure.
+- You have an MX Plan email account (included in the MX Plan solution or in an [OVHcloud web hosting plan](/links/web/hosting)).
+- You have the Outlook application installed on your [iOS device](https://apps.apple.com/app/microsoft-outlook/id951937596).
+- You have the login details for the email account you would like to configure.
 
-## In practice
+## Instructions
 
-### Add the <a name="add-account"></a> account
+<a name="add-account"></a>
+
+### Add the account
 
 - **When you start the application for the first time**: A configuration wizard will appear. Tap `Add account`{.action}.
 
@@ -41,8 +44,8 @@ MX Plan accounts can be configured on various compatible email clients. This all
 
 - **If an account has already been set up**:
     1. Tap the circle containing the initials of the email account you are viewing, or the home icon "&#8962;" at the top left of your screen.
-    2. Press the gear ‘&#9881;’ in the lower left of your screen.
-    3. Then press `Accounts`{.action} in the **Settings** menu.
+    2. Press the gear "&#9881;" in the lower left of your screen.
+    3. Press `Accounts`{.action} in the **Settings** menu.
     4. Press `Add Account`{.action}.
     5. Press `Email account`{.action}.
 
@@ -61,20 +64,20 @@ Follow the installation steps by clicking on the tabs below:
 >>
 >> You have two options:
 >>
->> - If you have “**IMAP**” at the top of the page, go to step 3.
->> - If the account parameter window displays “**Exchange**” at the top, press the `?” button in the top right corner of the **(1)** screen, then choose `Change account provider`{.action} **(2)**. Then select `IMAP`**(3)** and proceed to step 3.
+>> - If you have **IMAP** at the top of the page, go to step 3.
+>> - If the account parameter window displays **Exchange** at the top, press the `?` button in the top right corner of the screen **(1)**, then choose `Change account provider`{.action} **(2)**. Then select `IMAP`**(3)** and proceed to step 3.
 >>
 >>![outlook ios](images/outlook-app-ios-add-step02.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 3**
 >>
->> In the next window, tick `Advanced settings`{.action} and enter the following information:
+>> In the next window, select `Advanced settings`{.action} and enter the following information:
 >>
 >> - **Email address**
->> - **Full name** : enter your full email address
+>> - **Full name**: Enter your full email address.
 >> - **Description**
->> - **IMAP Incoming Mail Server**:<br>- **IMAP Hostname**: For the**EUROPE**, type `imap.mail.ovh.net` or `ssl0.ovh.net`. For**AMERICA/ASIA**, type `imap.mail.ovh.ca`<br>- **IMAP Port**: 993<br>- **IMAP Username**: Your full email address<br>- **IMAP Password**: Your email address<br>- **Port Security**: SSL
->> - **SMTP Incoming Mail Server**:<br>- **SMTP Hostname**: For the**EUROPE**, type `smtp.mail.ovh.net` or `ssl0.ovh.net`. For**AMERICA/ASIA**, type `smtp.mail.ovh.ca`<br>- **SMTP Port**: 465<br>- **SMTP Username**: Your full email address<br>- **SMTP Password**: Your email address<br>- **Port Security**: SSL
+>> - **IMAP Incoming Mail Server**:<br>- **IMAP Hostname**: For **EUROPE**, type `imap.mail.ovh.net` or `ssl0.ovh.net`. For **AMERICA/ASIA**, type `imap.mail.ovh.ca`<br>- **IMAP Port**: 993<br>- **IMAP Username**: Your full email address<br>- **IMAP Password**: Your email address<br>- **Port Security**: SSL
+>> - **SMTP Incoming Mail Server**:<br>- **SMTP Hostname**: For **EUROPE**, type `smtp.mail.ovh.net` or `ssl0.ovh.net`. For **AMERICA/ASIA**, type `smtp.mail.ovh.ca`<br>- **SMTP Port**: 465<br>- **SMTP Username**: Your full email address<br>- **SMTP Password**: Your email address<br>- **Port Security**: SSL
 >>
 >> To finalize the configuration, press `Login`{.action}.
 >>
@@ -85,64 +88,64 @@ Follow the installation steps by clicking on the tabs below:
 >
 > If, after following the configuration steps above, you encounter a sending or receiving error, please refer to the topic “[Modify existing settings](#modify-settings)”.
 
-### Use the email address
+### Use the email account
 
-Once you have configured your email address, you can start using it! You can now send and receive messages.
+Once you have configured your email account, you can start using it! You can now send and receive messages.
 
-OVHcloud also offers a web application that can be used to access your email address from a web browser. You can access it here: [Webmail](/links/web/email). You can log in using your email credentials. If you have any questions on how to use it, and which webmail solution is associated with your solution, please refer to our guides:
+OVHcloud also offers a web application you can use to access your email account from your browser. You can log in with your email credentials here: [Webmail](/links/web/email). If you have any questions on how to use the webmail associated with your solution, please refer to our guides:
 
 - [View your account via the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
-- [Use your email address from the Roundcube webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
-- [Use Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
+- [Use your email account from the Roundcube webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
+- [Use Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
 ### Modify existing settings <a name="modify-settings"></a>
 
 1. Tap the circle containing the initials of the email account you are viewing, or the home icon "&#8962;" at the top left of your screen.
-2. Press the gear ‘&#9881;’ in the lower left of your screen.
-3. Then press `Accounts`{.action} in the **Settings** menu.
+2. Press the gear "&#9881;" in the lower left of your screen.
+3. Press `Accounts`{.action} in the **Settings** menu.
 4. Select the account.
 5. Press `Modify login information`{.action}.
 
 ![outlook ios](images/outlook-app-ios-modify-account-01.png){.thumbnail .w-400 .h-600}
 
-Find the settings in **Step 3** of the [Add account](#add-account) chapter.
+Find the settings in **Step 3** of the [Add account](#add-account) section.
 
 ### Delete an email account <a name="delete"></a>
 
 1. Tap the circle containing the initials of the email account you are viewing, or the home icon "&#8962;" at the top left of your screen.
-2. Press the gear ‘&#9881;’ in the lower left of your screen.
+2. Press the gear "&#9881;" in the lower left of your screen.
 3. Then press `Accounts`{.action} in the **Settings** menu.
 4. Select the account.
 5. Press `Delete Account`{.action}.
 
 ![outlook ios](images/outlook-app-ios-modify-delete-01.png){.thumbnail .w-400 .h-600}
 
-### Reminder of POP, IMAP and SMTP settings <a name="popimap-settings"></a>
+### POP, IMAP and SMTP settings <a name="popimap-settings"></a>
 
-### IMAP and POP Receive Settings
+#### IMAP and POP Receive Settings
 
-When you choose your account type, we recommend using **IMAP** to receive emails. However, you can select **POP**.
+When you choose your account type, we recommend using **IMAP** to receive emails. However, you can select **POP** as well.
 
 > [!warning]
 >
-> Please note down the value that corresponds to your location (**EUROPE** or **AMERICA/ASIA-PACIFIC**)
+> Please only enter the values corresponding to your location (**EUROPE** or **AMERICA/ASIA-PACIFIC**).
 
 Follow the installation steps by clicking on the tabs below:
 
 > [!tabs]
 > **IMAP configuration**
 >>
->> - **Username**: Enter the full **email address**
->> - **Password**: Enter the password for the email address
->> - **EUROPE Server (incoming)**: imap.mail.ovh.net **ou** ssl0.ovh.net
+>> - **Username**: Enter the **full** email address
+>> - **Password**: Enter the password for the email account
+>> - **EUROPE Server (incoming)**: imap.mail.ovh.net **or** ssl0.ovh.net
 >> - **AMERICA/ASIA-PACIFIC server (incoming)**: imap.mail.ovh.ca
 >> - **Port**: 993
 >> - **Security type**: SSL/TLS
 >>
 > **POP configuration**
 >>
->> - **Username**: Enter the full **email address**
->> - **Password**: Enter the password for the email address
+>> - **Username**: Enter the **full** email address
+>> - **Password**: Enter the password for the email account
 >> - **EUROPE server (incoming)**: pop.mail.ovh.net **or** ssl0.ovh.net
 >> - **AMERICA/ASIA-PACIFIC server (incoming)**: pop.mail.ovh.ca
 >> - **Port**: 995
@@ -150,13 +153,13 @@ Follow the installation steps by clicking on the tabs below:
 
 #### SMTP Send Settings
 
-For sending emails, if you have to enter the **SMTP** settings manually in your account preferences, you will find the settings below:
+For sending emails, if you have to enter the **SMTP** settings manually in your account preferences, enter the following values:
 
 **SMTP configuration**
 
 - **Username**: Enter the **full** email address
-- **Password**: Enter the password for the email address
-- **EUROPE server (incoming)**: pop.mail.ovh.net **ou** ssl0.ovh.net
+- **Password**: Enter the password for the email account
+- **EUROPE server (incoming)**: pop.mail.ovh.net **or** ssl0.ovh.net
 - **AMERICA/ASIA-PACIFIC server (incoming)**: pop.mail.ovh.ca
 - **Port**: 465
 - **Security type**: SSL/TLS
@@ -165,12 +168,14 @@ For sending emails, if you have to enter the **SMTP** settings manually in your 
 >
 > **Change your configuration**
 >
-> If your email address is configured in **IMAP** and you want to change this configuration to **POP**, you will need to delete the account, then recreate it in **POP**. Refer to the “[Modify existing settings](#modify-settings)” chapter of this guide.
+> If your email account is configured in **IMAP** and you want to change this configuration to **POP**, you will need to delete the account, then recreate it in **POP**. Refer to the section [Modify existing settings](#modify-settings) of this guide.
+
+<a name="go-further"></a>
 
 ## Go further
 
-For specialized services (SEO, development, etc.), contact the [OVHcloud partners](/links/partner).
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](/links/support).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).
