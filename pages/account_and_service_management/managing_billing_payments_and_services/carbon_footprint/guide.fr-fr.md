@@ -12,8 +12,8 @@ Dans le cadre de vos activités profesionnelles ou par intérêt sur le sujet, v
 
 ## Prérequis
 
-- Disposer d'au moins un [Serveur Dédié](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage) ou d'un [Serveur Dédié Eco](/links/bare-metal/eco) (Rise, Kimsufi, So You Start) élligible au calcul de l'empreinte carbone.
-- Être contact « Facturation » du (des) service(s) pour le(s)quel(s) vous souhaitez obtenir l'empreinte carbone. Pour plus d'informations, consultez [notre guide sur la gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts).
+- Disposer d'au moins un [Serveur Dédié](/links/bare-metal/bare-metal) (Advance, Game, Scale, High Grade, Storage) ou un [Serveur Dédié Eco](/links/bare-metal/eco) (Rise, Kimsufi, So You Start) éligible au calcul de l'empreinte carbone.
+- Être contact « Facturation » des services pour lesquels vous souhaitez obtenir l'empreinte carbone. Pour plus d'informations, consultez [notre guide sur la gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## En pratique
 
@@ -28,9 +28,9 @@ Pour cela, effectuez les actions suivantes :
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}
 
-Vous pourrez récupérer chaque mois l'empreinte carbone du mois précédent pour vos services élligibles.
+Vous pourrez récupérer chaque mois l'empreinte carbone du mois précédent pour vos services éligibles.
 
-Si vous avez besoin de l'empreinte carbone pour un mois antérieur au mois précédant le mois en cours, vous devrez obligatoirement passer par nos API pour le récupérer.
+Si vous avez besoin de l'empreinte carbone pour un mois antérieur au mois précédent le mois en cours, vous devrez obligatoirement passer par nos API pour le récupérer.
 
 ### Récupérer un bilan mensuel antérieur au mois précédent via nos API
 
@@ -79,7 +79,7 @@ Pour cela, remplacez la date du jour qui apparaît dans l'encadré de l'API par 
 
 Une fois la date choisie et correctement saisie, cliquez sur le bouton bleu `EXECUTE`{.action} situé en bas à droite de la section préalablement remplie.
 
-Si tout a été effectué correctement, un `taskID` apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page en dessous du bouton `EXECUTE`{.action}.
+Si tout a été effectué correctement, un `taskID` apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page, en dessous du bouton `EXECUTE`{.action}.
 
 ![API](/pages/assets/screens/api/post-me-carboncalculator-task-response.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Par exemple, si votre identifiant client OVHcloud est le `aa00000-ovh` et que la
 }
 ```
 
-Copiez uniquement la valeur obtenue de votre côté et équivalente à la valeur de notre exemple `aa00000-ovh_202501` (sans copiez les deux `"` situés aux extrémités).
+Copiez uniquement la valeur obtenue de votre côté et équivalente à la valeur de notre exemple `aa00000-ovh_202501` (sans copier les deux `"` situés aux extrémités).
 
 #### Etape 3 - Récupérer le fichier contenant le bilan carbone de vos services au format PDF
 
@@ -100,24 +100,24 @@ Grâce à la valeur du `taskID` précédemment récupérée, vous pourrez récup
 Pour cela, restez sur notre site [API OVHcloud](/links/api) et effectuez les actions suivantes :
 
 - Dans la partie gauche de la page, positionnez-vous sur le formulaire situé à droite du formulaire `v1`{.action}, puis sélectionnez/saisissez le choix `/me`{.action}.
-- Parmi la liste d'API qui apparaît en dessous, recherchez et cliquez sur l'API suivante : **GET /me/carbonCalculator/task/{taskID}**. Vous pouvez aussi cliquer directement sur l' appel API ci-dessous pour y accéder :
+- Parmi la liste d'appels API qui apparaît en dessous, recherchez et cliquez sur l'appel API suivant : **GET /me/carbonCalculator/task/{taskID}**. Vous pouvez aussi cliquer directement sur l'appel API ci-dessous pour y accéder :
 
 > [!api]
 >
 > @api {v1} /me GET /me/carbonCalculator/task/{taskID}
 >
 
-- Sur la partie droite de la page s'affiche alors l'API avec un formulaire à remplir.
+- Sur la partie droite de la page s'affiche alors l'appel API avec un formulaire à remplir.
 
 Remplissez le formulaire de la partie `PATH PARAMETERS` ainsi :
 
-- `taskID` : Copiez ici la valeur du taskID récupérée précédemment lors de l'étape 2.
+- `taskID` : copiez ici la valeur du taskID récupérée lors de l'étape 2.
 
 ![API](/pages/assets/screens/api/get-me-carboncalculator-task-taskid.png){.thumbnail}
 
 Une fois la valeur de votre `taskID` correctement saisie, cliquez sur le bouton bleu `EXECUTE`{.action}.
 
-Le résultat suivant apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page en dessous du bouton `EXECUTE`{.action} :
+Le résultat suivant apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page, en dessous du bouton `EXECUTE`{.action} :
 
 ![API](/pages/assets/screens/api/get-me-carboncalculator-task-taskid-response.png){.thumbnail}
 
@@ -135,7 +135,7 @@ Votre navigateur Internet va automatiquement télécharger le fichier, puis l'af
 
 > [!primary]
 >
-> En fonction de la configuration de votre navigateur, le téléchargement et l'affichage du fichier peut se retrouver bloqué. S'il tel est le cas, vérifiez la configuraiton de votre navigateur, puis rechargez la page.
+> En fonction de la configuration de votre navigateur, le téléchargement et l'affichage du fichier peut se retrouver bloqué. Si tel est le cas, vérifiez la configuraiton de votre navigateur, puis rechargez la page.
 
 Une fois le fichier ouvert, vous y trouverez notamment les éléments suivants :
 
