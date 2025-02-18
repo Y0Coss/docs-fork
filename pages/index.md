@@ -117,6 +117,7 @@
             + [Migrate data from one dedicated server to another](bare_metal_cloud/dedicated_servers/migrate_a_server_to_another)
             + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)
             + [Bare Metal 3-AZ Region - Service presentation](bare_metal_cloud/dedicated_servers/3az-presentation)
+            + [How to obtain the carbon footprint of your OVHcloud services](account_and_service_management/managing_billing_payments_and_services/carbon_footprint)
         + [Security](bare-metal-cloud-dedicated-servers-security)
             + [Dedicated Servers service Security Specifications](account_and_service_management/account_information/security-specifications-dedicated-servers)
             + [Configuring the firewall on Linux with iptables](bare_metal_cloud/dedicated_servers/firewall-Linux-iptable)
