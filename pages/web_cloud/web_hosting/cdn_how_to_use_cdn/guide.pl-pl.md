@@ -1,7 +1,7 @@
 ---
 title: "Przewodnik dotyczący usługi CDN na hostingu www"
 excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
-updated: 2024-10-07
+updated: 2025-02-20
 ---
 
 ## Wprowadzenie 
@@ -247,20 +247,40 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 
 ### Wyświetl statystyki usługi CDN
 
-Aby uzyskać dostęp do statystyk usługi CDN, wykonaj następujące czynności:
+Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **6** etapy.
 
-1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu rozwijane `Hosting`{.action}.
-4. Wybierz odpowiedni hosting.
-5. Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
-6. W sekcji `Statystyki odwiedzin na stronie` kliknij przycisk `Wyświetl statystyki`{.action}.
-7. Zostaniesz przekierowany do narzędzia **OVHcloud Web Statistics**. W tym narzędziu kliknij na formularz `Wybór domeny`{.action} znajdujący się na górze strony, następnie wybierz nazwę domeny, dla której aktywny jest CDN.
-8. W prawej kolumnie kliknij zakładkę `Cache`{.action}.
-
-Teraz wyświetlasz statystyki usługi CDN dla swojej domeny.
-
-Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem "[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)".
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+>>
+> **Etap 4**
+>>
+>> W sekcji `Statystyki odwiedzin na stronie` kliknij przycisk `Wyświetl statystyki`{.action}.
+>>
+> **Etap 5**
+>>
+>> Zostaniesz przekierowany do narzędzia **OVHcloud Web Statistics**. W tym narzędziu kliknij na formularz `Wybór domeny`{.action} znajdujący się na górze strony, następnie wybierz nazwę domeny, dla której aktywny jest CDN.
+>>
+> **Etap 6**
+>>
+>> W prawej kolumnie kliknij zakładkę `Cache`{.action}.
+>>
+>> Teraz wyświetlasz statystyki usługi CDN dla swojej domeny.
+>>
+>> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem "[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)".
 
 ### Jak przenieść pliki do pamięci cache w usłudze GeoCache?
 
