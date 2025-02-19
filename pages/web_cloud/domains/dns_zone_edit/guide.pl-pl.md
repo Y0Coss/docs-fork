@@ -73,10 +73,9 @@ Aby uzyskać dostęp do interfejsu zarządzania strefą DNS OVHcloud, kliknij po
 >>
 > **Etap 4**
 >>
-
-W tabeli, która się wyświetla dla każdego wiersza wyświetlony zostanie rekord DNS powiązany z Twoją domeną w OVHCloud. Możesz sortować ich zawartość według typu rekordu lub nazwy domeny.
-
-![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
+>> W tabeli, która się wyświetla dla każdego wiersza wyświetlony zostanie rekord DNS powiązany z Twoją domeną w OVHCloud. Możesz sortować ich zawartość według typu rekordu lub nazwy domeny.
+>>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
 
 ### Edycja strefy DNS OVHcloud dla Twojej domeny
 

@@ -303,8 +303,8 @@ Um Ihre DNS-Zone zurückzusetzen, klicken Sie jeweils auf die Tabs, um die **6**
 >> - `Benutzerdefiniert`: Legen Sie die URL und die Priorität des E-Mail-Servers ([MX-Eintrag](/pages/web_cloud/domains/dns_zone_records#mail-records)) fest, auf den verwiesen werden soll.<br><br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 
-
 ///
+
 
 ### Propagationszeit
 
