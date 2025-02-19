@@ -4,6 +4,20 @@ excerpt: 'Saiba como editar uma zona DNS da OVHcloud através da Área de Client
 updated: 2025-02-18
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objetivo
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,7 +136,9 @@ A partir de agora, o manual apenas irá abordar a configuração realizada atrav
 > Tenha consigo as informações que pretende alterar na zona DNS da OVHcloud. Se efetuar esta modificação a pedido de um fornecedor de serviço, este deve comunicar-lhe a lista dos elementos a modificar.
 >
 
-##### **Adicionar um novo registo DNS**
+**Clique nos quatro títulos abaixo para ver as explicações.**
+
+/// details | Adicionar um novo registo DNS
 
 Para adicionar um novo registo DNS, clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 
@@ -157,7 +173,10 @@ Para adicionar um novo registo DNS, clique nas guias abaixo para exibir sucessiv
 >> >
 >> > Deverá ter como alvo `mydomain.ovh.` e não `mydomain.ovh` sem o **.** no final.
 
-##### **Alterar um registo DNS existente**
+///
+
+
+/// details | Alterar um registo DNS existente
 
 Para alterar um registo DNS, clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 
@@ -186,7 +205,10 @@ Para alterar um registo DNS, clique nas guias abaixo para exibir sucessivamente 
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 
-##### **Eliminar um registo DNS existente**
+///
+
+
+/// details | Eliminar um registo DNS existente
 
 Para eliminar um registo DNS, clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 
@@ -217,7 +239,10 @@ Para eliminar um registo DNS, clique nas guias abaixo para exibir sucessivamente
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 
-##### **Reiniciar a zona DNS**
+///
+
+
+/// details | Reiniciar a zona DNS
 
 Reiniciar a zona DNS permite voltar a uma configuração mínima, com as entradas da OVHcloud predefinidas ou as dos seus serviços. Também pode apontar o domínio para serviços de alojamento web e de correio eletrónico personalizados
 
@@ -277,6 +302,9 @@ Para reiniciar a zona DNS, clique nas guias abaixo para exibir sucessivamente ca
 >> - `Servidor de e-mail OVHcloud`: defina-se quando dispõe de um serviço de e-mail partilhado.<br>
 >> - `Personalizado`: defina o URL e a prioridade do servidor de e-mail ([registo MX](/pages/web_cloud/domains/dns_zone_records#mail-records)) que pretende apontar.<br><br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
+
+///
+
 
 ### Tempo de propagação
 

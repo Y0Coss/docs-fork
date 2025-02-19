@@ -4,6 +4,20 @@ excerpt: 'Descubra cómo editar una zona DNS desde el área de cliente de OVHclo
 updated: 2025-02-18
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objetivo
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,7 +136,9 @@ Esta guía solo hace referencia a la configuración a través de nuestros asiste
 > Compruebe que dispone de toda la información que desea modificar en la zona DNS de OVHcloud. Si el cambio se realiza a petición de un proveedor de servicios, este último deberá proporcionarle la lista de elementos que debe modificar.
 >
 
-##### **Añadir un nuevo registro DNS**
+**Haga clic en los cuatro títulos siguientes para ver las explicaciones.**
+
+/// details | Añadir un nuevo registro DNS
 
 Para agregar un nuevo registro DNS, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 
@@ -157,7 +173,10 @@ Para agregar un nuevo registro DNS, haga clic en las fichas siguientes para ver 
 >> >
 >> > Debe tener como objetivo `mydomain.ovh.` y no `mydomain.ovh` sin el **.** al final.
 
-##### **Modificar un registro DNS existente**
+///
+
+
+/// details | Modificar un registro DNS existente
 
 Para editar un registro DNS, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 
@@ -186,7 +205,10 @@ Para editar un registro DNS, haga clic en las fichas siguientes para ver cada un
 >>
 >> ![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 
-##### **Eliminar un registro DNS**
+///
+
+
+/// details | Eliminar un registro DNS
 
 Para eliminar un registro DNS, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 
@@ -217,7 +239,10 @@ Para eliminar un registro DNS, haga clic en las fichas siguientes para ver cada 
 >>
 >> ![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 
-##### **Restaurar la zona DNS**
+///
+
+
+/// details | Restaurar la zona DNS
 
 Restaurar la zona DNS permite retornar a una configuración mínima, con las entradas de OVHcloud por defecto o las de sus servicios. También puede apuntar su dominio hacia servicios de alojamiento web y de correo personalizados .
 
@@ -278,6 +303,9 @@ Para restaurar la zona DNS, haga clic en las fichas siguientes para ver cada uno
 >> - `Personalizado`: defina la URL y la prioridad del servidor de correo electrónico ([registro MX](/pages/web_cloud/domains/dns_zone_records#mail-records)) que quiera apuntar.<br><br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 >>
+
+///
+
 
 ### El tiempo de propagación
 

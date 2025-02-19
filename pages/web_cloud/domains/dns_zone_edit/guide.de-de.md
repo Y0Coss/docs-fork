@@ -4,6 +4,20 @@ excerpt: 'Erfahren Sie hier, wie Sie eine DNS-Zone über Ihr Kundencenter bearbe
 updated: 2025-02-18
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Ziel
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,7 +136,9 @@ Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschr
 > Halten Sie die Informationen bereit, die Sie in Ihrer OVHcloud DNS-Zone ändern möchten. Wenn Sie diese Änderung auf Anfrage eines Diensteanbieters vornehmen, muss dieser Ihnen die Liste der zu ändernden Elemente übermitteln.
 >
 
-##### **Neuen DNS-Eintrag hinzufügen**
+**Klicken Sie auf die vier Überschriften unten, um Erläuterungen anzuzeigen.**
+
+/// details | Neuen DNS-Eintrag hinzufügen
 
 Um einen neuen DNS-Eintrag hinzuzufügen, klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 
@@ -157,7 +173,10 @@ Um einen neuen DNS-Eintrag hinzuzufügen, klicken Sie jeweils auf die Tabs, um d
 >> >
 >> > Sie müssen dann als Ziel `mydomain.ovh.` haben, anstatt `mydomain.ovh` ohne **.** am Ende.
 
-##### **Existierenden DNS-Eintrag bearbeiten**
+///
+
+
+/// details | Existierenden DNS-Eintrag bearbeiten
 
 Um einen DNS-Eintrag zu bearbeiten, klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 
@@ -186,7 +205,10 @@ Um einen DNS-Eintrag zu bearbeiten, klicken Sie jeweils auf die Tabs, um die **4
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 
-##### **DNS-Eintrag löschen**
+///
+
+
+/// details | DNS-Eintrag löschen
 
 Um einen DNS-Eintrag zu löschen, klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 
@@ -217,7 +239,10 @@ Um einen DNS-Eintrag zu löschen, klicken Sie jeweils auf die Tabs, um die **4**
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 
-##### **DNS-Zone zurücksetzen**
+///
+
+
+/// details | DNS-Zone zurücksetzen
 
 Durch das Zurücksetzen Ihrer DNS-Zone können Sie zu einer minimalen Konfiguration zurückkehren. Dabei werden die Standardeinträge von OVHcloud oder Ihrer Dienste verwendet. Sie können Ihren Domainnamen auch eigene E-Mail- und Webhosting-Dienste zuordnen.
 
@@ -278,13 +303,16 @@ Um Ihre DNS-Zone zurückzusetzen, klicken Sie jeweils auf die Tabs, um die **6**
 >> - `Benutzerdefiniert`: Legen Sie die URL und die Priorität des E-Mail-Servers ([MX-Eintrag](/pages/web_cloud/domains/dns_zone_records#mail-records)) fest, auf den verwiesen werden soll.<br><br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 
+
+///
+
 ### Propagationszeit
 
 Nach der Änderung der DNS-Zone Ihrer Domain ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.
 
 Wenn Sie die Verzögerung für die nächste Bearbeitung Ihrer OVHcloud DNS-Zone verkürzen möchten, können Sie diese bis zu einem gewissen Grad beeinflussen, indem Sie die TTL (*Time To Live*) anpassen, die für alle Einträge in der DNS-Zone gilt.
 
-Dazu, klicken Sie jeweils auf die Tabs, um die **6** Schritte anzuzeigen.
+Dazu, klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**

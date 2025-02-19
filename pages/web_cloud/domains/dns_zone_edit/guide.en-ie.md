@@ -4,6 +4,20 @@ excerpt: 'Find out how to edit an OVHcloud DNS zone via the OVHcloud Control Pan
 updated: 2025-02-18
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objective
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,7 +136,9 @@ From this point onwards, this guide will only cover configuration using our conf
 > In order to modify your OVHcloud DNS zone successfully, make sure to gather all the required information first. If you are making this change at the request of a service provider, the service provider must provide you with a list of the items to change.
 >
 
-##### **Add a new DNS record**
+**Click on the four headings below to see the explanations.**
+
+/// details | Add a new DNS record
 
 To add a new DNS record, click on the tabs below to view each of the **4** steps in succession.
 
@@ -157,7 +173,10 @@ To add a new DNS record, click on the tabs below to view each of the **4** steps
 >> >
 >> > You must then have as target `mydomain.ovh.` and not `mydomain.ovh` without the **.** at the end.
 
-##### **Modify an existing DNS record**
+///
+
+
+/// details | Modify an existing DNS record
 
 To modify a DNS record, click on the tabs below to view each of the **4** steps in succession.
 
@@ -186,7 +205,10 @@ To modify a DNS record, click on the tabs below to view each of the **4** steps 
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 
-##### **Delete a DNS record**
+///
+
+
+/// details | Delete a DNS record
 
 To delete a DNS record, click on the tabs below to view each of the **4** steps in succession.
 
@@ -216,7 +238,10 @@ To delete a DNS record, click on the tabs below to view each of the **4** steps 
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 
-##### **Reset the DNS zone**
+///
+
+
+/// details | Reset the DNS zone
 
 By resetting your DNS zone, you can revert back to a minimal configuration, with OVHcloud default records, or your services’ records. You can also point your domain name to custom web hosting and email services.
 
@@ -276,6 +301,9 @@ To reset your DNS zone, click on the tabs below to view each of the **6** steps 
 >> - `OVHcloud email server`: To be defined if you have a shared email solution.<br>
 >> - `Custom`: Enter the URL and priority of the email server ([MX record](/pages/web_cloud/domains/dns_zone_records#mail-records)) you want to point to.<br><br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
+
+///
+
 
 ### Propagation time
 

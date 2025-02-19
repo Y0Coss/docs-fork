@@ -4,6 +4,20 @@ excerpt: "Découvrez comment éditer une zone DNS OVHcloud via votre espace clie
 updated: 2025-02-18
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objectif
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,7 +136,9 @@ Pour modifier en mode textuel une zone DNS OVHcloud, cliquez sur les onglets ci-
 > Munissez-vous des informations à modifier dans votre zone DNS OVHcloud. Si vous effectuez cette modification à la demande d'un fournisseur de service, ce dernier doit vous communiquer la liste des éléments à modifier.
 >
 
-##### **Ajouter un nouvel enregistrement DNS**
+**Cliquez sur les quatre titres ci-dessous pour afficher les explications.**
+
+/// details | Ajouter un nouvel enregistrement DNS
 
 Pour ajouter un nouvel enregistrement DNS, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -157,7 +173,10 @@ Pour ajouter un nouvel enregistrement DNS, cliquez sur les onglets ci-dessous po
 >> >
 >> > Vous devez alors avoir comme cible `mydomain.ovh.` et non pas `mydomain.ovh` sans le **.** à la fin.
 
-##### **Modifier un enregistrement DNS existant**
+///
+
+
+/// details | Modifier un enregistrement DNS existant
 
 Pour modifier un enregistrement DNS, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -186,7 +205,10 @@ Pour modifier un enregistrement DNS, cliquez sur les onglets ci-dessous pour aff
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record.png){.thumbnail}
 
-##### **Supprimer un enregistrement DNS**
+///
+
+
+/// details | Supprimer un enregistrement DNS
 
 Pour supprimer un enregistrement DNS, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -217,7 +239,10 @@ Pour supprimer un enregistrement DNS, cliquez sur les onglets ci-dessous pour af
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record.png){.thumbnail}
 
-##### **Réinitialiser la zone DNS**
+///
+
+
+/// details | Réinitialiser la zone DNS
 
 Réinitialiser votre zone DNS permet de revenir à une configuration minimale, avec les entrées OVHcloud par défaut ou celles de vos services. Vous pouvez également pointer votre nom de domaine vers des services d'hébergement Web et e-mail personnalisés.
 
@@ -277,6 +302,9 @@ Pour réinitialiser votre zone DNS, cliquez sur les onglets ci-dessous pour affi
 >> - `Serveur E-mail OVHcloud` : à définir lorsque que vous possédez une offre e-mail mutualisée.<br>
 >> - `Personnalisé` : définissez l'URL et la priorité du serveur e-mail ([enregistrement MX](/pages/web_cloud/domains/dns_zone_records#mail-records)) que vous souhaitez pointer.<br><br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
+
+///
+
 
 ### Le temps de propagation
 
