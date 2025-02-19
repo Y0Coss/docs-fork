@@ -1,12 +1,14 @@
 ---
-title: 'Assigner une étiquette à un serveur Bare Metal'
+title: 'Assigner un tag à un serveur Bare Metal'
 excerpt: 'Créez et modifiez des tags pour chaque serveur depuis l'espace client'
 updated: 2025-02-07
 ---
 
 ## Objectif
 
-Créez des étiquettes à assigner à vos services, afin de les organiser, et leur appliquer des stratégies avec la granularité souhaitée.
+Les tags sont des étiquettes que vous pouvez attribuer à vos ressources, et qui vous permettent de les organiser et les gérer plus efficacement. Chaque tag est constitué de deux parties: la clé, qui représente un attribut ou une catégorie, et la valeur, qui est l'information associée à cette clé.
+
+Vous pouvez, par exemple, catégoriser vos ressources par site, service, ou encore niveau de sécurité. Une telle utilisation des tags peut faciliter la recherche, l'organisation de vos ressources, la gestion des coûts associés, ou l'application de stratégies avec la granularité souhaitée, notamment.
 
 **Ce guide détaille comment attribuer et supprimer des tags pour des serveurs individuels, depuis l'espace client OVHcloud.**
 

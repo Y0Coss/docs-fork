@@ -6,7 +6,9 @@ updated: 2025-02-05
 
 ## Objective
 
-Create tags to assign to your services, in order to organize them, and apply policies to them with the desired granularity.
+Tags are labels that you can assign to your resources, which allow you to organize and manage them more efficiently. Each tag consists of two parts: the key, which represents an attribute or category, and the value, which is the information associated with that key.
+
+For example, you can categorize your resources by site, service, or even security level. Such use of tags can facilitate searching, organizing your resources, managing associated costs, or applying strategies with the desired granularity, notably.
 
 **This guide details how to assign and remove tags for individual servers, from the OVHcloud Control Panel.**
 
