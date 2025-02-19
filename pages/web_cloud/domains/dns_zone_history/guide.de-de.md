@@ -33,7 +33,7 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -45,11 +45,11 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 > **Schritt 3**
 >>
->> Wählen Sie den Tab `DNS-Zone`{.action} aus, nachdem Sie sich in der betreffenden Domain befinden.
+>> Wählen Sie den Tab `DNS-Zone`{.action} aus.
 >>
 > **Schritt 4**
 >>
->> Die angezeigte Tabelle stellt die DNS-Zone Ihrer Domain dar. Dort finden Sie die Liste der darin enthaltenen DNS-Einträge. Rechts in der Tabelle finden Sie mehrere Schaltflächen, mit denen Sie Aktionen in Ihrer DNS-Zone durchführen können. 
+>> Die Tabelle stellt die DNS-Zone Ihrer Domain dar. Dort finden Sie die Liste der darin enthaltenen DNS-Einträge. Rechts in der Tabelle finden Sie mehrere Schaltflächen, mit denen Sie Aktionen in Ihrer DNS-Zone durchführen können. 
 >>
 >> ![DNS history tool](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
 >>
@@ -57,10 +57,10 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 > **Schritt 5**
 >>
->> Auf der neu geöffneten Seite wird eine Tabelle mit dem Versionsverlauf Ihrer DNS-Zone angezeigt. Er wird absteigend von der jüngsten Version sortiert. Am Anfang der Tabelle befindet sich die aktuelle Version Ihrer DNS-Zone. Auf dieser Seite können Sie folgende Aktionen ausführen:
+>> Auf der neuen Seite wird eine Tabelle mit dem Versionsverlauf Ihrer DNS-Zone angezeigt. Er wird absteigend von der jüngsten Version sortiert. Am Anfang der Tabelle befindet sich die aktuelle Version Ihrer DNS-Zone. Auf dieser Seite können Sie folgende Aktionen ausführen:
 >>
->> - [DNS Zone anzeigen](#view)
->> - [DNS Zone herunterladen](#download)
+>> - [DNS-Zone anzeigen](#view)
+>> - [DNS-Zone herunterladen](#download)
 >> - [DNS-Zone wiederherstellen](#restore)
 >> - [Zwei DNS Zonen vergleichen](#compare)
 
