@@ -59,7 +59,7 @@ Um sich über phpMyAdmin mit der Datenbank zu verbinden, klicken Sie auf die Tab
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -97,7 +97,7 @@ Um sich über phpMyAdmin mit der Datenbank zu verbinden, klicken Sie auf die Tab
 >
 > Von hier an wirken sich Ihre Aktionen auf den Inhalt Ihrer Datenbank aus. Die Änderungen, die Sie an **phpMyAdmin** vornehmen, können irreversible Folgen haben, wenn sie nicht korrekt durchgeführt werden.
 >
-> Achten Sie auf jeden Befehl, den Sie in der Datenbank ausführen. Sollten Sie Probleme haben, empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren. OVHcloud kann Ihnen bezüglich Datenbankinhalten nicht weiterhelfen.
+> Achten Sie auf jeden Befehl, den Sie in der Datenbank ausführen. Im Zweifelsfall empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren. OVHcloud kann Ihnen bezüglich Datenbankinhalten nicht weiterhelfen.
 >
 
 Sobald die Verbindung hergestellt wurde, wird die folgende Seite angezeigt:
