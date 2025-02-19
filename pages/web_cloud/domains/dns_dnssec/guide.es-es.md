@@ -33,7 +33,7 @@ Si desea más información sobre estos temas, no dude en consultar nuestras guí
 
 ## Procedimiento
 
-Para comprobar si su dominio utiliza la configuración DNS de OVHcloud, haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
+Para comprobar si su dominio utiliza la configuración DNS de OVHcloud, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -67,7 +67,7 @@ Existen tres posibilidades para activar el servicio **DNSSEC**.
 
 ### Caso 1 - Su dominio está registrado con OVHcloud y utiliza los servidores DNS de OVHcloud
 
-Para activar (o desactivar) la solución **DNSSEC** para su dominio, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Para activar (o desactivar) la solución **DNSSEC** para su dominio, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -100,7 +100,7 @@ Para activar (o desactivar) la solución **DNSSEC** para su dominio, haga clic e
 
 En ese caso, póngase en contacto con el proveedor que gestione la configuración DNS de su dominio y pídale que active el servicio DNSSEC "Key Tag", "Flag", "Algoritmo", "Clave pública (codificada en base 64)".
 
-Una vez recuperados estos 4 parámetros, haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Una vez recuperados estos 4 parámetros, haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**

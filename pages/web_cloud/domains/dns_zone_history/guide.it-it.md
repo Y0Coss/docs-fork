@@ -28,7 +28,7 @@ Da questo momento, la gestione dei DNS è semplificata grazie alla cronologia de
 
 ## Procedura
 
-Per accedere a questa funzionalità, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
+Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
 > [!tabs]
 > **Step 1**

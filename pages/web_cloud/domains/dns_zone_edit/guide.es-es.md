@@ -1,7 +1,7 @@
 ---
 title: 'Editar una zona DNS de OVHcloud'
 excerpt: 'Descubra cómo editar una zona DNS desde el área de cliente de OVHcloud'
-updated: 2025-02-18
+updated: 2025-02-19
 ---
 
 <style>
@@ -52,7 +52,7 @@ Para más información, consulte nuestras guías "[Todo sobre los servidores DNS
 >
 > A diferencia del nombre de dominio, para una zona DNS no existe el concepto de propietario, sino de gestión de contactos para una zona DNS de OVHcloud. Si desea cambiar la gestión de su zona DNS a otra cuenta de OVHcloud, siga nuestra guía [Gestionar contactos de servicio](/pages/account_and_service_management/account_information/managing_contacts).
 
-Para acceder a la gestión de una zona DNS de OVHcloud, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Para acceder a la gestión de una zona DNS de OVHcloud, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -100,7 +100,7 @@ Para ello, puede editar manualmente la zona en modo de texto o utilizar nuestros
 > Solo para usuarios expertos. También debe prestar especial atención a la sintaxis al realizar los cambios.
 > 
 
-Para modificar una zona DNS de OVHcloud en modo de texto, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Para modificar una zona DNS de OVHcloud en modo de texto, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -140,7 +140,7 @@ Esta guía solo hace referencia a la configuración a través de nuestros asiste
 
 /// details | Añadir un nuevo registro DNS
 
-Para agregar un nuevo registro DNS, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Para agregar un nuevo registro DNS, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -178,7 +178,7 @@ Para agregar un nuevo registro DNS, haga clic en las fichas siguientes para ver 
 
 /// details | Modificar un registro DNS existente
 
-Para editar un registro DNS, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Para editar un registro DNS, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -210,7 +210,7 @@ Para editar un registro DNS, haga clic en las fichas siguientes para ver cada un
 
 /// details | Eliminar un registro DNS
 
-Para eliminar un registro DNS, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Para eliminar un registro DNS, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -251,7 +251,7 @@ Restaurar la zona DNS permite retornar a una configuración mínima, con las ent
 > Antes de reiniciar la zona DNS, asegúrese de que el dominio no está asociado a servicios que esté utilizando, como un sitio web o direcciones de correo electrónico.
 >
 
-Para restaurar la zona DNS, haga clic en las fichas siguientes para ver cada uno de los **6** etapas.
+Para restaurar la zona DNS, haga clic en las fichas siguientes para ver cada una de las **6** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -310,7 +310,7 @@ Para restaurar la zona DNS, haga clic en las fichas siguientes para ver cada uno
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos.
 
-Si quiere reducir este plazo en las próximas ediciones de la zona DNS de OVHcloud, puede hacerlo, hasta cierto punto, ajustando el TTL (*Time To Live*) aplicable a todos los registros de la zona DNS. Para ello, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Si quiere reducir este plazo en las próximas ediciones de la zona DNS de OVHcloud, puede hacerlo, hasta cierto punto, ajustando el TTL (*Time To Live*) aplicable a todos los registros de la zona DNS. Para ello, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**

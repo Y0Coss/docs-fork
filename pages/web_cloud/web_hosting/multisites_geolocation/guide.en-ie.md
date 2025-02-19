@@ -26,12 +26,12 @@ The geolocation option on your hosting can be useful for SEO if your website is 
 
 For websites hosted on the OVHcloud shared hosting infrastructure which are mainly accessed by international visitors, we offer a geolocation by IP address option. It allows for a better search ranking in the country where the IP address you have selected is located.
 
-To use the IP geolocation option, click on the tabs below to view each of the **5** steps in succession.
+To use the IP geolocation option, click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>

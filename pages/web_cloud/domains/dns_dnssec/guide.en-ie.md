@@ -32,12 +32,12 @@ You can also refer to our guides on [OVHcloud DNS servers](/pages/web_cloud/doma
 
 ## Instructions
 
-To check if your domain name uses the OVHcloud DNS configuration, click on the tabs below to view each of the **3** steps in succession.
+To check if your domain name uses the OVHcloud DNS configuration, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -66,12 +66,12 @@ You can enable **DNSSEC** in three scenarios detailed below.
 
 ### Case 1 - Your domain name is registered with OVHcloud and uses OVHcloud DNS servers
 
-To enable (or disable) the **DNSSEC** solution for your domain name, click on the tabs below to view each of the **4** steps in succession.
+To enable (or disable) the **DNSSEC** solution for your domain name, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -99,12 +99,12 @@ To enable (or disable) the **DNSSEC** solution for your domain name, click on th
 
 In this situation, contact the service provider managing your domain name’s DNS configuration to ask them for the DNSSEC activation settings ("Key Tag" / "Flag" / "Algorithm" / "Public key (encoded in base64)").
 
-Once you have retrieved these 4 parameters, click on the tabs below to view each of the **5** steps in succession.
+Once you have retrieved these 4 parameters, click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>

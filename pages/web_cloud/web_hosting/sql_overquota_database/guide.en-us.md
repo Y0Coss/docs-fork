@@ -55,12 +55,12 @@ The first step is to identify the large table or tables in your database.
 
 Retrieve your database access data directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
 
-To connect to the database via phpMyAdmin, click on the tabs below to view each of the **5** steps in succession.
+To connect to the database via phpMyAdmin, click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -230,12 +230,12 @@ However, you can force them through your services to speed up the process. To do
 
 #### Recalculate the quota for a database included with your web hosting plan
 
-Click on the tabs below to view each of the **5** steps in succession.
+Click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -274,7 +274,7 @@ Click on the tabs below to view each of the **3** steps in turn.
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>

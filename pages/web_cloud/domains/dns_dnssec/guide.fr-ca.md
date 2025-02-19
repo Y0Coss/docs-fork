@@ -92,7 +92,7 @@ Pour activer (ou désactiver) la solution **DNSSEC** pour votre nom de domaine, 
 >>
 > **Etape 4**
 >>
->> Grâce au bouton d'activation situé en dessus de la mention `Déléguation sécurisée - DNSSEC`{.action}, vous pouvez activer ou désactiver le **DNSSEC** sur votre nom de domaine. En réalisant cette action, une nouvelle fenêtre apparaît depuis laquelle vous pouvez valider la modification.
+>> Grâce au bouton d'activation situé en dessus de la mention `Délégation sécurisée - DNSSEC`{.action}, vous pouvez activer ou désactiver le **DNSSEC** sur votre nom de domaine. En réalisant cette action, une nouvelle fenêtre apparaît depuis laquelle vous pouvez valider la modification.
 >>
 >> ![Enable DNSSEC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
 

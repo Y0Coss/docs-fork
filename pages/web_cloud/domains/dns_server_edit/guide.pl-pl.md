@@ -1,7 +1,7 @@
 ---
 title: "Zmiana serwerów DNS domeny OVHcloud"
 excerpt: "Dowiedz się, jak modyfikować serwery DNS Twojej domeny zarejestrowanej w OVHcloud"
-updated: 2025-02-18
+updated: 2025-02-19
 ---
 
 ## Wprowadzenie
@@ -39,7 +39,7 @@ Kiedy zmieniasz serwery DNS Twojej domeny, zmieniasz jej konfigurację DNS. Nowa
 
 Należy jednak wziąć pod uwagę następujące kwestie:
 
-- W przypadku zmiany serwera DNS (na przykład zewnętrznego DNS poprzez DNS OVHCloud) zawartość poprzedniej konfiguracji / strefy DNS nie jest automatycznie kopiowana do nowej. Upewnij się, że nowa strefa DNS zawiera wszystkie rekordy DNS wymagane do prawidłowego działania usług powiązanych z Twoją domeną (np. strona WWW i konta e-mail).
+- W przypadku zmiany serwera DNS (na przykład zewnętrznego DNS poprzez DNS OVHcloud) zawartość poprzedniej konfiguracji / strefy DNS nie jest automatycznie kopiowana do nowej. Upewnij się, że nowa strefa DNS zawiera wszystkie rekordy DNS wymagane do prawidłowego działania usług powiązanych z Twoją domeną (np. strona WWW i konta e-mail).
 - Jeśli nie chcesz modyfikować serwerów DNS, ale jeden lub więcej rekordów aktualnej konfiguracji / strefy DNS, zapoznaj się z naszym przewodnikiem: "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
 - Niektóre organizacje lub operatorzy zarządzający rozszerzeniami domen mają określone wymagania dotyczące serwerów DNS (liczba serwerów nazw, wartość rekordów, etc.). W razie wątpliwości sprawdź wymagania u operatora domeny.
 

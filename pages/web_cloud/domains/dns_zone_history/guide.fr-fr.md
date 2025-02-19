@@ -28,7 +28,7 @@ Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zo
 
 ## En pratique
 
-Pour accéder à cette fonctionnalité, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
 > **Etape 1**

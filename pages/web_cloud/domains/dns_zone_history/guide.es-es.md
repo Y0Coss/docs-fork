@@ -28,7 +28,7 @@ A partir de ahora, la gestión de los DNS se simplifica gracias al historial de 
 
 ## Procedimiento
 
-Para acceder a esta funcionalidad, haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**

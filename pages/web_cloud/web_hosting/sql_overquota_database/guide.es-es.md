@@ -55,7 +55,7 @@ En primer lugar, es necesario identificar las tablas de gran tamaño de la base 
 
 Recupere la información de acceso a su base de datos directamente en el archivo de configuración de su sitio web. Realice esta acción utilizando el **paso 1** de nuestra guía sobre [el cambio de la contraseña de una base de datos](/pages/web_cloud/web_hosting/sql_change_password).
 
-Para conectarse a la base de datos mediante phpMyAdmin, haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**

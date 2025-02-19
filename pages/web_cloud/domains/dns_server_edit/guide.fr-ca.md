@@ -1,7 +1,7 @@
 ---
 title: "Modifier les serveurs DNS d'un nom de domaine OVHcloud"
 excerpt: "Découvrez comment modifier les serveurs DNS de votre nom de domaine enregistré chez OVHcloud"
-updated: 2025-02-18
+updated: 2025-02-19
 ---
 
 ## Objectif
@@ -39,13 +39,13 @@ Lorsque vous modifiez les serveurs DNS de votre nom de domaine, vous changez sa 
 
 Toutefois, il est essentiel de prendre en compte les points suivants :
 
-- Lors d'un changement de serveur DNS (par exemple, un DNS externe par un DNS OVHCloud), le contenu de l'ancienne configuration / zone DNS n'est pas automatiquement répliqué dans la nouvelle. Assurez-vous que votre nouvelle zone DNS contient tous les enregistrements DNS requis pour que les services associés à votre nom de domaine fonctionnent correctement (par exemple, votre site web et vos adresses de messagerie).
+- Lors d'un changement de serveur DNS (par exemple, un DNS externe par un DNS OVHcloud), le contenu de l'ancienne configuration / zone DNS n'est pas automatiquement répliqué dans la nouvelle. Assurez-vous que votre nouvelle zone DNS contient tous les enregistrements DNS requis pour que les services associés à votre nom de domaine fonctionnent correctement (par exemple, votre site web et vos adresses de messagerie).
 - Si vous ne souhaitez pas modifier les serveurs DNS mais un ou plusieurs enregistrements de votre configuration / zone DNS actuelle, consultez notre guide : « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 - Certaines organisations, les registres, qui gèrent les extensions de noms de domaine, ont des exigences particulières concernant les serveurs DNS (quantité de serveurs de noms, valeur des enregistrements, etc.). En cas de doute, vérifiez auprès du registre responsable du domaine.
 
 ### 1 - Accéder à la gestion des serveurs DNS OVHcloud <a name="access-dns-servers"></a>
 
-Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Pour cela, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Etape 1**

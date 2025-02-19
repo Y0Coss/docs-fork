@@ -1,7 +1,7 @@
 ---
 title: "How to modify the DNS servers of an OVHcloud domain name"
 excerpt: "Find out how to modify the DNS servers for your domain name registered at OVHcloud"
-updated: 2025-02-18
+updated: 2025-02-19
 ---
 
 ## Objective
@@ -45,12 +45,12 @@ However, it is essential to consider the following points:
 
 ### 1 - Access OVHcloud DNS server management <a name="access-dns-servers"></a>
 
-To do this, click on the tabs below to view each of the **4** steps in succession.
+To do this, click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>

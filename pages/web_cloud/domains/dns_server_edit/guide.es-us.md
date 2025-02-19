@@ -1,7 +1,7 @@
 ---
 title: "Modificar los servidores DNS de un dominio de OVHcloud"
 excerpt: "Descubra cómo modificar los servidores DNS de un dominio registrado en OVHcloud"
-updated: 2025-02-18
+updated: 2025-02-19
 ---
 
 ## Objetivo
@@ -45,7 +45,7 @@ Sin embargo, es importante tener en cuenta lo siguiente:
 
 ### 1 - Acceder a la gestión de los servidores DNS de OVHcloud <a name="access-dns-servers"></a>
 
-Para ello, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Para ello, haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
