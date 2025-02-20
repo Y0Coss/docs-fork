@@ -45,7 +45,7 @@ You can also deploy an operating system to and from a volume. The Public Cloud i
 >>
 >> Click `Create Volume`{.action}.
 >>
->> ![public-cloud](images/create-a-volume-2.png){.thumbnail}
+>> ![public-cloud](images/create-a-volume-2.png){.thumbnail width="800"}
 >> 
 >> In the dialog box that opens, enter or select the following values:
 >>
@@ -63,11 +63,11 @@ You can also deploy an operating system to and from a volume. The Public Cloud i
 >>
 >> The volume will be in a `creating` state then a `downloading` state before being available.
 >>
->> ![public-cloud](images/create-a-volume-8.png){.thumbnail}
+>> ![public-cloud](images/create-a-volume-8.png){.thumbnail width="800"}
 >>
 >> As you can see on the image below or if you click the volume name, it is set as bootable.
 >>
->> ![public-cloud](images/create-a-volume-9.png){.thumbnail}
+>> ![public-cloud](images/create-a-volume-9.png){.thumbnail width="800"}
 >>
 > **OpenStack client**
 >> You can create a bootable volume from an existing image, volume, or snapshot. This procedure shows you how to create a volume from an image and use the volume to boot an instance.
@@ -129,7 +129,7 @@ You can also deploy an operating system to and from a volume. The Public Cloud i
 >>
 >> Click `Launch Instance`{.action}.
 >>
->> ![public-cloud](images/create-an-instance-with-a-bootable-volume-1.png){.thumbnail}
+>> ![public-cloud](images/create-an-instance-with-a-bootable-volume-1.png){.thumbnail width="800"}
 >>
 >> In the Launch Instance dialog box, in the Source tab, choose "Volume" in the `Select Boot Source` field.
 >>
@@ -145,7 +145,7 @@ You can also deploy an operating system to and from a volume. The Public Cloud i
 >>
 >> The instance will eventually have the volume attached.
 >>
->> ![public-cloud](images/create-an-instance-with-a-bootable-volume-9.png){.thumbnail}
+>> ![public-cloud](images/create-an-instance-with-a-bootable-volume-9.png){.thumbnail width="800"}
 >>
 > **OpenStack client**
 >> Create an instance, specifying the bootable volume **volume_ubuntu** as the boot device.
