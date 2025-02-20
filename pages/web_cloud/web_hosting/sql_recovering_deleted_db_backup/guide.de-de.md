@@ -37,7 +37,7 @@ Die OVHcloud API wird Entwicklern zur Verfügung gestellt, um alle verfügbaren 
 So rufen Sie den Namen Ihres Webhostings ab:
 
 1. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein.
-2. Klicken Sie oben im Kundencenter auf `Web Cloud`{.action}.
+2. Klicken Sie auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
 5. Oben links auf der angezeigten Seite finden Sie den Namen Ihres Webhostings rechts unter `Hosting-Pakete /`{.action}.

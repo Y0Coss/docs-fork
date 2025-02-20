@@ -137,7 +137,7 @@ A tale scopo, eseguire **nell'ordine** le operazioni seguenti:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
 2. Preattribuire il certificato SSL Let's Encrypt ai nuovi domini/sottodomini come specificato nella [prima parte](#ssl-multisite) di questa guida.
-3. Nella riga in alto dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
+3. Clicca sulla scheda `Web Cloud`{.action}.
 4. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 5. Seleziona il tuo hosting Web.
 6. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
