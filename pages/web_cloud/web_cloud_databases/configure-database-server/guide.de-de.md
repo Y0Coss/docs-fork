@@ -66,7 +66,7 @@ Für ein OVHcloud Webhosting können Sie einfach `Den OVHcloud Webhostings den Z
 > 
 > Wenn Ihr Web Cloud Databases Dienst an ein **Performance** Webhosting gebunden ist, müssen Sie ihn zuerst von Ihrem **Performance** Hosting trennen, um den Dienst hochzustufen.
 >
-> Um ein Angebot Web Cloud Databases von einem Webhosting zu trennen **Performance**, lesen Sie unsere Anleitung "[Web Cloud Databases von einem Webhosting abtrennen](/pages/web_cloud/web_cloud_databases/detach-from-web-hosting)".
+> Um einen Web Cloud Databases Dienst vom Webhosting **Performance** abzutrennen, lesen Sie unsere Anleitung "[Web Cloud Databases von einem Webhosting abtrennen](/pages/web_cloud/web_cloud_databases/detach-from-web-hosting)".
 >
 > **Diese Aktion ist unwiderruflich. Der Web Cloud Databases Dienst wird anschließend unabhängig von Ihrem Performance Webhosting abgerechnet.**
 >
