@@ -1,12 +1,12 @@
 ---
-title: Configuring a public IP block in a vRack on a Public cloud instance
-excerpt: Find out how to link a block of public IP addresses to the vRack for configuration on a Public Cloud Instance.
-updated: 2025-02-20
+title: Configuring a public IP block in a vRack on a Public Cloud instance
+excerpt: Find out how to link a block of public IP addresses to the vRack for configuration on a Public Cloud Instance
+updated: 2025-02-21
 ---
 
 ## Objective
 
-As well as private IP addressing, the [vRack](/links/network/vrack){.external} also allows you to route public IP traffic through your server's [vRack](/links/network/vrack){.external} port using a public IP address block.
+As well as private IP addressing, the [vRack](/links/network/vrack) also allows you to route public IP traffic through your server's [vRack](/links/network/vrack) port using a public IP address block.
 
 **This guide will show you how to configure a block of public IP addresses for use with the vRack on a Public cloud instance.**
 
@@ -15,26 +15,25 @@ As well as private IP addressing, the [vRack](/links/network/vrack){.external} a
 - A public block of IP addresses in your account, with a minimum of four addresses
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - A [vRack](/links/network/vrack) service activated in your account
-- Access to the OVHcloud [Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instructions
 
-Before you start, please note that there are several steps to follow for this configuration. Some of the configuration will be done via the OVHcloud control panel and some via the Horizon interface.
+Before you start, please note that there are several steps to follow for this configuration. Some of the configuration will be done via the OVHcloud Control Panel and some via the Horizon interface.
 
 ### Add the Public Cloud project to the vRack
 
 > [!primary]
-> This does not apply to newly created projects, which are automatically delivered with a vRack. To view the vRack once the project has been created, go the `Bare Metal Cloud`{.action} menu and click on `Network`{.action} in the left tab. Click on `vRack private network`{.action} to view the vRack(s).
+> This does not apply to newly created projects, which are automatically delivered with a vRack. To view the vRack once the project has been created, log in to the [OVHcloud Control Panel](/links/manager), go the `Bare Metal Cloud`{.action} menu and click on `Network`{.action}. Click on `vRack private network`{.action} to view the vRack(s).
 >
 > You can also remove the project from its allocated vRack and attach it to another vRack if you wish.
 
-For older projects, go to the `Bare Metal Cloud`{.action} menu and click on `Network`{.action} in the left tab. Click on `vRack private network`{.action} and select your vRack from the list.
+For older projects, go to the `Bare Metal Cloud`{.action} menu and click on `Network`{.action}. Click on `vRack private network`{.action} and select your vRack from the list.
 
 From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
 
 ![add project to vrack](images/addprojectvrack.png){.thumbnail}
-
 
 ### Add the IP block to the vRack
 
@@ -53,9 +52,9 @@ Select your vRack from the list to display the list of eligible services. Click 
 
 ### Create a Private Network
 
-Once your project has been added to the vRack, the next step is to create a Private Network. This private network will be attached to the Public cloud instance.
+Once your project has been added to the vRack, the next step is to create a Private Network. This private network will be attached to the Public Cloud instance.
 
-In the Public cloud tab, click on `Private Network`{.action} in the left-hand menu under **Network**.
+In the `Public Cloud`{.action} tab, click on `Private Network`{.action} in the left-hand menu under **Network**.
 
 Click on `Add Private Network`{.action}.
 
@@ -67,7 +66,7 @@ In step 1, select the region in which you want the private network to be located
 
 ![select region](images/vrack2024-01.png){.thumbnail}
 
-Next select a VLAN ID, for this configuration, you must tag your private network with VLAN ID 0.
+Next select a VLAN ID. For this configuration, you must tag your private network with VLAN ID 0.
 
 This can be configured in step 2.
 
@@ -96,7 +95,7 @@ Once done, click on `Create`{.action}.
 For the configuration, you need to create a subnet in the previously created private network and add the CIDR of the public IP block to it.
 
 > [!warning]
-> This action can only be performed from the Horizon interface or the Openstack client API.
+> This action can only be performed from the Horizon interface or the OpenStack client API.
 >
 
 #### From the Horizon interface
@@ -117,27 +116,27 @@ In the pop-up window, fill in the fields:
 
 ![Create Subnet](images/create_subnet_1.png){.thumbnail}
 
-**Subnet Name**: Enter a name of your choice.<br>
-**Network address***: Enter the complete CIDR of your Public IP block (in this example: 203.0.113.0/29).<br>
-**Gateway IP**: The penultimate IP of the IP block (in this example 203.0.113.6).
+- **Subnet Name**: Enter a name of your choice.<br>
+- **Network address***: Enter the complete CIDR of your Public IP block (in this example: 203.0.113.0/29).<br>
+- **Gateway IP**: The penultimate IP of the IP block (in this example 203.0.113.6).
 
-Click on `Next` and uncheck the box `Enable DHCP`{.action}. Click on `Create`{.action}
+Click on `Next` and uncheck the box `Enable DHCP`{.action}. Click on `Create`{.action}.
 
 Once the subnet has been created, your private network will appear as follows:
 
 ![New private network display](images/display_subnet.png){.thumbnail}
 
-### Attach a network interface to the Instance
+### Attach a network interface to the instance
 
-This action should only be done via Horizon or the Openstack CLI.
+This action should only be done via Horizon or the OpenStack CLI.
 
 If you have not yet created an instance, you must create it first, then attach the network later. Do not select the private network when creating the instance.
 
-We recommend you to consult the following guides if you are creating an Instance for the first time: [How to create a Public Cloud instance and connect to it](/pages/public_cloud/compute/public-cloud-first-steps/) or [Creating an Instance via the Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon/).
+We recommend you to consult the following guides if you are creating an instance for the first time: [How to create a Public Cloud instance and connect to it](/pages/public_cloud/compute/public-cloud-first-steps/) or [Creating an Instance via the Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon/).
 
 If you already have an instance, you can proceed to the next step.
 
-#### From the Horizon Interface
+#### From the Horizon interface
 
 Once you are connected, make sure you choose the proper work zone.
 
@@ -155,8 +154,8 @@ In the pop-up menu, select the appropriate options:
 
 ![attach network](images/attach_public_IP.png){.thumbnail}
 
-**Network**: Select the private network created<br>
-**Fixed IP Address**: Specify a public IP address from your block (if you don't, the system will automatically assign a private IP).
+- **Network**: Select the private network created<br>
+- **Fixed IP Address**: Specify a public IP address from your block (if you don't, the system will automatically assign a private IP).
 
 > [!warning]
 > It is not possible to add multiple IPs at once via the Horizon interface.
@@ -218,7 +217,7 @@ sudo nano /etc/iproute2/rt_tables
 
 > [!warning]
 >
-> This configuration will be lost after a restart of your Instance (non-persistent configuration).
+> This configuration will be lost after a restart of your instance (non-persistent configuration).
 >
 
 Connect to your server via SSH and enter the following commands. Replace `NETWORK_INTERFACE`, `IP_ADDRESS/PREFIX` and `GATEWAY_IP` with your own values.
@@ -231,7 +230,7 @@ ip route add default via GATEWAY_IP dev NETWORK_INTERFACE
 
 #### Persistent application by OS
 
-Click the tab that corresponds to your distribution
+Click the tab that corresponds to your distribution:
 
 > [!tabs]
 > **Debian (excluding Debian 12)**
@@ -260,7 +259,7 @@ Click the tab that corresponds to your distribution
 >>     broadcast BROADCAST_IP
 >> ```
 >>
->> We have determined that the gateway IP of our IP block is **203.0.113.6**. To route the vRack traffic through this gateway IP address IP, add the following lines to the network configuration file, replace `NETWORK_INTERFACE`, `IP_BLOCK/PREFIX` and `GATEWAY_IP` with your own values.
+>> We have determined that the gateway IP of our IP block is **203.0.113.6**. To route the vRack traffic through this gateway IP address, add the following lines to the network configuration file, replacing `NETWORK_INTERFACE`, `IP_BLOCK/PREFIX` and `GATEWAY_IP` with your own values:
 >> 
 >> ```console
 >> post-up ip route add IP_BLOCK/PREFIX dev NETWORK_INTERFACE table vrack
@@ -269,7 +268,7 @@ Click the tab that corresponds to your distribution
 >> post-up ip rule add to IP_BLOCK/PREFIX table vrack
 >> ```
 >>
->> **Configuration Example**
+>> **Configuration example:**
 >>
 >> ```bash
 >> auto eth1
@@ -317,7 +316,7 @@ Click the tab that corresponds to your distribution
 >>   via: GATEWAY_IP
 >> ```
 >> 
->> **Configuration Example**
+>> **Configuration example:**
 >>
 >> ```bash
 >>   ens7:
@@ -346,7 +345,7 @@ Click the tab that corresponds to your distribution
 >> ```
 >>
 >> Using a text editor of your choice, create a network configuration file in the folder `/etc/sysconfig/network-scripts` for editing.
->> In our example, our vrack interface is called `eth1`, we create the following configuration file (replace **eth1** with your own values**):
+>> In our example, our vRack interface is called `eth1`, we create the following configuration file (replace **eth1** with your own values**):
 >>
 >> ```bash
 >> sudo touch /etc/sysconfig/network-scripts/ifcfg-eth1
@@ -363,7 +362,7 @@ Click the tab that corresponds to your distribution
 >> BROADCAST=BROADCAST_IP
 >> ```
 >> 
->> **Configuration Example**
+>> **Configuration example:**
 >>
 >> ```bash
 >> DEVICE=eth1
@@ -390,7 +389,7 @@ Click the tab that corresponds to your distribution
 >> sudo nmcli con show
 >> ```
 >>
->> **Example**
+>> **Example:**
 >>
 >> ```bash
 >> $ sudo nmcli con show
@@ -411,7 +410,7 @@ Click the tab that corresponds to your distribution
 >> sudo nmcli connection modify INTERFACE_NAME IPv4.address IP_ADDRESS/PREFIX
 >> ```
 >>
->> **Example**
+>> **Example:**
 >>
 >> ```bash
 >> sudo nmcli connection modify 'Wired connection 1' IPv4.address 203.0.113.1/29
@@ -423,7 +422,7 @@ Click the tab that corresponds to your distribution
 >> sudo nmcli connection modify INTERFACE_NAME IPv4.gateway GATEWAY_IP
 >> ```
 >>
->> **Example**
+>> **Example:**
 >>
 >> ```bash
 >> sudo nmcli connection modify 'Wired connection 1' IPv4.gateway 203.0.113.6
@@ -435,7 +434,7 @@ Click the tab that corresponds to your distribution
 >> sudo nmcli connection modify INTERFACE_NAME IPv4.dns 213.186.33.99
 >> ```
 >>
->> **Example**
+>> **Example:**
 >>
 >> ```bash
 >> sudo nmcli connection modify 'Wired connection 1' IPv4.dns 213.186.33.99
@@ -447,7 +446,7 @@ Click the tab that corresponds to your distribution
 >> sudo nmcli connection modify INTERFACE_NAME IPv4.method manual
 >> ```
 >> 
->> **Example**
+>> **Example:**
 >>
 >> ```bash
 >> sudo nmcli connection modify 'Wired connection 1' IPv4.method manual
@@ -459,7 +458,7 @@ Click the tab that corresponds to your distribution
 >> sudo nmcli con mod INTERFACE_NAME connection.autoconnect true
 >> ```
 >>
->> **Example**
+>> **Example:**
 >>
 >> ```bash
 >> sudo nmcli con mod 'Wired connection 1' connection.autoconnect true
