@@ -60,7 +60,7 @@ Unser Enterprise File Storage entspricht führenden Branchenstandards, darunter 
 
 ### Kann über ein privates vRack Netzwerk auf Enterprise File Storage zugegriffen werden?
 
-Ja.
+Ja (vRack endpoint).
 
 ## Zugang "on-premise"
 
