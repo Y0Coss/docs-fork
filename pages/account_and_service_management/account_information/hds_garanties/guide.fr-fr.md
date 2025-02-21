@@ -16,6 +16,28 @@ updated: 2024-05-16
 
 La présentation des garanties HDS est disponible sur [cette page, section 11](/pages/account_and_service_management/account_information/security-specifications-dedicated-servers). 
 
+
+## 2 - Dedicated Server 3AZ
+
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé ;<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
+| Global Switch SAS (SIREN : 424 224 897) | Sous-traitant | Oui | Non |  1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br> 2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé; | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen(2) | Oui. Pays : Etats-Unis d'Amérique, Chine(3) <sup>1</sup> |
+| Digital Realty (SIREN : 519 287 833 | Sous-traitant | Oui | Non |  1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br> 2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé; | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen(2) | Oui. Pays : Etats-Unis d'Amérique (4) <sup>1</sup> |
+| Data4 Service SAS (SIREN : 493 254 643) | Sous-traitant | Oui | Non |  1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br> 2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé; | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen(2) | Non <sup>1</sup> |
+
+<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
+<sup>2</sup> : Le sous-traitant fournis des infrastructures physiques passives utilisées pour la fourniture du service. En conséquence il n'y a pas d'accès à distance possible sur ces infrastructures.
+<sup>3</sup> : Global Switch SAS :
+| **Critère de l'exigence 19.6 de SecNumcloud non respectées** | **Mesures de réduction du risque déployées** |
+| --- | --- |
+| 19.6.b relatif au capital social et aux droits de vote <br> 19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Global Switch) | -Prestation limitée à la fourniture d'un site d'hébergement physique avec les utilités nécessaires à l'installation d'un datacenter (énergie, refroidissement, câblages divers y compris réseau) <br> -Les données manipulées dans les murs du sous-traitant sont chiffrées à l'état de l'art préalablement à leur envoi sur le site fourni par le sous-traitant.<br> -Les clés de chiffrement utilisées sont stockées sur des infrastructures appartenant à OVHcloud sans aucun droit d'accès à la société sous-traitante.  |
+
+<sup>4</sup> : Digital Realty :
+| **Critère de l'exigence 19.6 de SecNumcloud non respectées** | **Mesures de réduction du risque déployées** |
+| --- | --- |
+| 19.6.b relatif au capital social et aux droits de vote <br> 19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Global Switch) | -Prestation limitée à la fourniture d'un site d'hébergement physique avec les utilités nécessaires à l'installation d'un datacenter (énergie, refroidissement, câblages divers y compris réseau) <br> -Les données manipulées dans les murs du sous-traitant sont chiffrées à l'état de l'art préalablement à leur envoi sur le site fourni par le sous-traitant.<br> -Les clés de chiffrement utilisées sont stockées sur des infrastructures appartenant à OVHcloud sans aucun droit d'accès à la société sous-traitante.  |
+
 ## 2 - File Storage
 
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
