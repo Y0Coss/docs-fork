@@ -167,7 +167,7 @@
             + [How to prevent your emails from being marked as spam](bare_metal_cloud/dedicated_servers/mail_sending_optimization)
             + [How to set up a web server (LAMP) on Debian or Ubuntu](bare_metal_cloud/dedicated_servers/installing_lamp_debian9_ubuntu18)
             + [Copying data from one dedicated server to another using rsync](bare_metal_cloud/dedicated_servers/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync)
-            + [Retrieving and uploading data on a dedicated server via SFTP](bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
+            + [How to use SFTP to transfer files](bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp)
             + [How to retrieve databases in rescue mode](bare_metal_cloud/dedicated_servers/restore-bdd-rescue)
             + [Activating Windows Machines using Hyper-V on an OVHcloud licensed Windows Server](bare_metal_cloud/dedicated_servers/activate_windows_vm_hyperv)
             + [Installing CUDA on a dedicated GPU server](bare_metal_cloud/dedicated_servers/cuda_installation_on_gpu)
