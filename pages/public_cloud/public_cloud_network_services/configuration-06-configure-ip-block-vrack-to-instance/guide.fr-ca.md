@@ -136,7 +136,7 @@ Dans la fenêtre qui s'affiche, complétez les champs :
 
 Cliquez sur `Next`{.action} et décochez la case `Enable DHCP`{.action}. 
 
-- **DNS Name Servers**: Facultatif. Nous vous recommandons d'ajouter un serveur DNS principalement pour la résolution de domaines.
+- **DNS Name Servers** : Facultatif. Nous vous recommandons d'ajouter un serveur DNS principalement pour la résolution de domaines.
 
 Cliquez sur `Create`{.action}.
 
