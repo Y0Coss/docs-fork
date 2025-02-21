@@ -76,7 +76,7 @@ Aby zmodyfikować użytkownika FTP, wykonaj następujące czynności:
 3. W lewej kolumnie kliknij menu `Hosting`{.action}.
 4. Wybierz odpowiedni hosting.
 5. Na stronie, która się wyświetli kliknij zakładkę `FTP-SSH`{.action}.
-6. W tabeli u dołu strony i w prawej części wiersza odpowiadającego danemu użytkownikowi FTP kliknij przycisk`...`{.action}, a następnie kliknij `Zmień`{.action}.
+6. W tabeli u dołu strony i w prawej części wiersza odpowiadającego danemu użytkownikowi FTP kliknij przycisk `...`{.action}, a następnie kliknij `Zmień`{.action}.
 
 ![FTP-SSH edit user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-user1.png){.thumbnail}
 

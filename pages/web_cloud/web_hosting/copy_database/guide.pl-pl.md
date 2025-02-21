@@ -92,7 +92,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **3** etapy.
 
 ### Kopiuj zawartość bazy danych
 
-W zakładce `Bazy danych`{.action} i bez względu na ofertę, kliknij przycisk`...`{.action} po prawej stronie wiersza odpowiadającego bazie danych, której zawartość chcesz skopiować, a następnie wybierz `Kopiuj bazę danych`{.action}.
+W zakładce `Bazy danych`{.action} i bez względu na ofertę, kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego bazie danych, której zawartość chcesz skopiować, a następnie wybierz `Kopiuj bazę danych`{.action}.
 
 ![CTA_copier_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
 

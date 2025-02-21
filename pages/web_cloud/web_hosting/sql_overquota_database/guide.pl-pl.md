@@ -84,7 +84,7 @@ Aby połączyć się z bazą danych za pomocą narzędzia phpMyAdmin, kliknij po
 >>
 >> Zapisz `Nazwa użytkownika` i `Adres serwera` **bazy danych, której baza danych jest przepełniona**. Informacje te są widoczne w tabeli zawierającej listę Twoich baz danych. 
 >>
->> Po prawej stronie wybranej bazy danych kliknij przycisk`...`{.action}, a następnie `Dostęp do phpMyAdmin`{.action}.
+>> Po prawej stronie wybranej bazy danych kliknij przycisk `...`{.action}, a następnie `Dostęp do phpMyAdmin`{.action}.
 >>
 > **Etap 5**
 >>
