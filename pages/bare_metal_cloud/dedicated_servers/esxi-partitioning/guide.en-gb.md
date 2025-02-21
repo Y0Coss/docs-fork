@@ -1,7 +1,7 @@
 ---
 title: Dedicated Servers - ESXi Partitioning
 excerpt: Use the OVHcloud Control Panel or the OVHcloud API to customise ESXi system partitions
-updated: 2024-09-13
+updated: 2025-02-25
 ---
 
 > [!warning]

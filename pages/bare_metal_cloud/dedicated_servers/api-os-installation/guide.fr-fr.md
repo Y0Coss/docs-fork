@@ -1,7 +1,7 @@
 ---
 title: "API OVHcloud et installation d'un OS"
 excerpt: "Découvrez comment l'API OVHcloud vous permet d'installer ou de réinstaller un OS sur votre serveur"
-updated: 2024-10-16
+updated: 2025-02-25
 ---
 
 ## Objectif
