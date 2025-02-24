@@ -335,7 +335,7 @@ Cette offre ne comprend pas l'intégration à l'espace de confiance de la Messag
 
 
 
-## XX - Cold Storage (en cours)
+## 26 - Cold Storage 
 
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -352,10 +352,12 @@ Cette offre ne comprend pas l'intégration à l'espace de confiance de la Messag
 | **Critère de l'exigence 19.6 de SecNumcloud non respectées** | **Mesures de réduction du risque déployées** |
 | --- | --- |
 | 19.6.b relatif au capital social et aux droits de vote <br> 19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe IBM) | -Prestation limitée à la télémaintenance du matériel acheté à la société sous-traitance en vue du fonctionnement optimal du service. <br> -Les données manipulées par le matériel soumis à la télémaintenance sont chiffrées à l'état de l'art préalablement à leur traitement sur le matériel télémaintenu. <br> -Les clés de chiffrement utilisées sont stockées sur des infrastructures appartenant à OVHcloud sans aucun droit d'accès à la société sous-traitante.  |
+
 <sup>5</sup> : DXC Technology France :
 | **Critère de l'exigence 19.6 de SecNumcloud non respectées** | **Mesures de réduction du risque déployées** |
 | --- | --- |
 | 19.6.b relatif au capital social et aux droits de vote <br> 19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe DXC) | -Prestation limitée à la fourniture d'un site d'hébergement physique avec les utilités nécessaires à l'installation d'un datacenter (énergie, refroidissement, câblages divers y compris réseau) <br> -Les données manipulées dans les murs du sous-traitant sont chiffrées à l'état de l'art préalablement à leur envoi sur le site fourni par le sous-traitant.<br> -Les clés de chiffrement utilisées sont stockées hors site sur des infrastructures appartenant à OVHcloud sans aucun droit d'accès à la société sous-traitante.  |
+
 <sup>6</sup> : EXA Infrastructure France SAS :
 | **Critère de l'exigence 19.6 de SecNumcloud non respectées** | **Mesures de réduction du risque déployées** |
 | --- | --- |
