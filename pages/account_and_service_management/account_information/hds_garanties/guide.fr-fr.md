@@ -274,7 +274,7 @@ Cette offre ne comprend pas l'intégration à l'espace de confiance de la Messag
 | Data4 Service SAS (SIREN : 493 254 643) | Sous-traitant | Oui | Non |  1. La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br> 2. La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé; | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen<sup>2</sup> | Non <sup>1</sup> |
 
 <sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
-<sup>2</sup> : Le sous-traitant fournis des infrastructures physiques passives utilisées pour la fourniture du service. En conséquence il n'y a pas d'accès à distance possible sur ces infrastructures.<br>
+<sup>2</sup> : Le sous-traitant fournit des infrastructures physiques passives utilisées pour la fourniture du service. En conséquence il n'y a pas d'accès à distance possible sur ces infrastructures.<br>
 <sup>3</sup> : Global Switch SAS :
 | **Critère de l'exigence 19.6 de SecNumcloud non respectées** | **Mesures de réduction du risque déployées** |
 | --- | --- |
@@ -296,7 +296,7 @@ Cette offre ne comprend pas l'intégration à l'espace de confiance de la Messag
 
 <sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
 <sup>2</sup> : Exemption des sociétés IBM, DXC Technology France, EXA Infrastructure France SAS, Terralpha au titre du contrôle exercé par OVHcloud sur la prestation de ses sous-traitants, vérifié lors des audits de certification.<br>
-<sup>3</sup> :  Le sous-traitant fournis des infrastructures physiques passives utilisées pour la fourniture du service. En conséquence il n'y a pas d'accès à distance possible sur ces infrastructures. <br>
+<sup>3</sup> :  Le sous-traitant fournit des infrastructures physiques passives utilisées pour la fourniture du service. En conséquence il n'y a pas d'accès à distance possible sur ces infrastructures. <br>
 <sup>4</sup> : IBM :
 | **Critère de l'exigence 19.6 de SecNumcloud non respectées** | **Mesures de réduction du risque déployées** |
 | --- | --- |
