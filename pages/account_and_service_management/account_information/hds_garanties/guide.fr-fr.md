@@ -130,13 +130,122 @@ La présentation des garanties HDS est disponible sur [cette page, section 11](/
 <sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
 
 
+## 14 - Managed Search Engine Software Platform
+
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
+| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
+
+<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
+<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
+<sup>3</sup> : Voir le tableau ci-dessous.
+
+| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
+| --- | --- |
+| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
+
+
+
+## 15 - Managed Timeseries
+
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
+| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
+
+<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
+<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
+<sup>3</sup> : Voir le tableau ci-dessous.
+
+| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
+| --- | --- |
+| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
+
+
+## 16 - Managed In-Memory Database
+
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
+| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
+
+<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
+<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
+<sup>3</sup> : Voir le tableau ci-dessous.
+
+| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
+| --- | --- |
+| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
+
+
+## 17 - Managed Document Database
+
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
+
+<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
+
+
+## 18 - Managed Relational Database
+
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
+| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
+
+<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
+<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
+<sup>3</sup> : Voir le tableau ci-dessous.
+
+| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
+| --- | --- |
+| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
+
+
+## 19 - Managed Column-Oriented Database
+
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
+| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
+
+<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
+<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
+<sup>3</sup> : Voir le tableau ci-dessous.
+
+
+
+## 20 - Managed Message Broker
+
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
+| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
+
+<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
+<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
+<sup>3</sup> : Voir le tableau ci-dessous.
+
+
+## 21 - Managed Data Visualization
+
+| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
+| --- | --- | --- | --- | --- | --- |--- |
+| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
+| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
+
+<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
+<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
+<sup>3</sup> : Voir le tableau ci-dessous.
 
 
 
 
 
 
-## 6 - Object Storage
+## XX - Object Storage
 
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -146,7 +255,7 @@ La présentation des garanties HDS est disponible sur [cette page, section 11](/
 
 
 
-## 7 - Object Storage 3AZ
+## XX - Object Storage 3AZ
 
 --->>NB : encore incomplet le tab, les activités puis les autres tab en bas des sous-traitants!!!
 
@@ -175,7 +284,7 @@ La présentation des garanties HDS est disponible sur [cette page, section 11](/
 
 
 
-## 8 - Cold Storage (en cours)
+## XX - Cold Storage (en cours)
 
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
 | --- | --- | --- | --- | --- | --- |--- |
@@ -203,84 +312,14 @@ La présentation des garanties HDS est disponible sur [cette page, section 11](/
 
 
 
-## 12 - Search Engine Software Platform
 
-| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
-| --- | --- | --- | --- | --- | --- |--- |
-| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
-| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
 
-<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
-<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
-<sup>3</sup> : Voir le tableau ci-dessous.
 
-| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
-| --- | --- |
-| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
 
-## 13 - Timeseries
 
-| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
-| --- | --- | --- | --- | --- | --- |--- |
-| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
-| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
 
-<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
-<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
-<sup>3</sup> : Voir le tableau ci-dessous.
 
-| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
-| --- | --- |
-| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
 
-## 14 - In-Memory Database
-
-| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
-| --- | --- | --- | --- | --- | --- |--- |
-| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
-| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
-
-<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
-<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
-<sup>3</sup> : Voir le tableau ci-dessous.
-
-| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
-| --- | --- |
-| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
-
-## 15 - Document Database
-
-| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
-| --- | --- | --- | --- | --- | --- |--- |
-| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé.<br>4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
-
-<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.
-
-## 16 - Relational Database
-
-| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
-| --- | --- | --- | --- | --- | --- |--- |
-| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
-| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
-
-<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
-<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
-<sup>3</sup> : Voir le tableau ci-dessous.
-
-| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
-| --- | --- |
-| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
-
-## 17 - Message Broker
-
-| **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
-| --- | --- | --- | --- | --- | --- |--- |
-| OVHcloud | Hébergeur | Oui | Non | 1° La mise à disposition et le maintien en condition opérationnelle des sites physiques permettant d'héberger l'infrastructure matérielle du système d'information utilisé pour le traitement des données de santé.<br>2° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure matérielle du système d'information utilisé pour le traitement de données de santé.<br>3° La mise à disposition et le maintien en condition opérationnelle de l'infrastructure virtuelle du système d'information utilisé pour le traitement des données de santé. | Non, aucun accès aux données depuis un pays tiers à l’Espace Économique Européen | Non<sup>1</sup> |
-| Aiven OY | Sous-traitant | Exempté<sup>2</sup> | Non | 4° La mise à disposition et le maintien en condition opérationnelle de la plateforme d'hébergement d'applications du système d'information.<br>5° L'administration et l'exploitation du système d'information contenant les données de santé.<br>6° La sauvegarde des données de santé.| Oui. Pays concernés couverts par une décision d’adéquation au sens de l’article 45 du RGPD : Canada, Royaume-Uni. | Oui<sup>3</sup> : Voir le tableau ci-dessous. Canada, Royaume-Uni. |
-
-<sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
-<sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
-<sup>3</sup> : Voir le tableau ci-dessous.
 
 | **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
 | --- | --- |
