@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Backups with Veeam Data Platform"
 excerpt: "Find out how to perform backups and restoration with Veeam (Plug-in) Data Platform / Protection for managed VCD on OVHcloud"
-updated: 2024-10-15
+updated: 2025-02-24
 ---
 
 <style>
