@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funktionen, Kapazitäten und Einschränkungen
 excerpt: Informieren Sie sich über die aktuellen Funktionen, Kapazitäten und Einschränkungen von Local Zones Instanzen
-updated: 2025-02-24
+updated: 2025-02-25
 ---
 
 ## Ziel

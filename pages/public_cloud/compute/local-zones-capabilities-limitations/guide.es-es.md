@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funcionalidades, capacidades y límites
 excerpt: Descubra las funcionalidades, capacidades y límites actuales de las instancias de Local Zone
-updated: 2025-02-24
+updated: 2025-02-25
 ---
 
 ## Objetivo
