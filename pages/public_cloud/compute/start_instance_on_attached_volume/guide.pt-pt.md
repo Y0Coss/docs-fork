@@ -79,7 +79,7 @@ Também pode implementar um sistema operativo de e para um volume. A instância 
 >>
 >> > [!primary]
 >> >
->> Anote a ID ou o nome da imagem que deseja utilizar.
+>> > Anote a ID ou o nome da imagem que deseja utilizar.
 >>
 >> Crie um volume inicializável de 10GB de alta velocidade chamado **volume_ubuntu** a partir de uma imagem Ubuntu 24.04:
 >>
@@ -155,7 +155,7 @@ Também pode implementar um sistema operativo de e para um volume. A instância 
 >> openstack server create --volume volume_ubuntu --flavor d2-2 --key-name publickey --nic net-id=Ext-Net InstanceTest
 >> ```
 >>
->> Listar os volumes para garantir que o estado foi alterado para in-use e que o volume relata corretamente o apego:
+>> Listar os volumes para garantir que o estado foi alterado para *in-use* e que o volume relata corretamente o apego:
 >>
 >> ```console
 >> $ openstack volume list

@@ -155,7 +155,7 @@ Możesz również wdrożyć system operacyjny z wolumenu i na wolumin. W ten spo
 >> openstack server create --volume volume_ubuntu --flavor d2-2 --key-name publickey --nic net-id=Ext-Net InstanceTest
 >> ```
 >>
->> Wyświetl woluminy, aby upewnić się, że stan zmienił się na in-use i że wolumin prawidłowo raportuje przyłączenie:
+>> Wyświetl woluminy, aby upewnić się, że stan zmienił się na *in-use* i że wolumin prawidłowo raportuje przyłączenie:
 >>
 >> ```console
 >> $ openstack volume list

@@ -154,7 +154,7 @@ Le istanze Public Cloud vengono consegnate con un disco di origine copiato a par
 >> openstack server create --volume volume_ubuntu --flavor d2-2 --key-name publickey --nic net-id=Ext-Net InstanceTest
 >> ```
 >>
->> Elenca volumi per verificare che lo stato sia cambiato in in-use e che il volume riferisca correttamente l'associazione:
+>> Elenca volumi per verificare che lo stato sia cambiato in *in-use* e che il volume riferisca correttamente l'associazione:
 >>
 >> ```console
 >> $ openstack volume list
