@@ -12,7 +12,7 @@ updated: 2024-05-16
 > Ils permettent aux clients d'OVHcloud d'alimenter leur propre démarche de conformité par rapport au référentiel HDS version 2024. OVHcloud a réalisé et publié ces tableaux en s'efforçant d'appliquer au mieux les différentes exigences du référentiel. Les versions vérifiées par les auditeurs ont été mises en ligne avant février 2024.
 >
 
-## 1 - Dedicated Server
+## XX - Dedicated Server
 
 La présentation des garanties HDS est disponible sur [cette page, section 11](/pages/account_and_service_management/account_information/security-specifications-dedicated-servers). 
 
