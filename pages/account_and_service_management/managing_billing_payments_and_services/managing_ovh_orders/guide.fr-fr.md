@@ -12,7 +12,7 @@ Lorsque vous effectuez une commande, vous pouvez la suivre et interagir avec ell
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si besoin, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](/links/manager) : cliquez sur votre nom en haut à droite puis sur `Gestion des services`{.action} dans le menu contextuel et sur l'onglet `Contrats`{.action}.
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](/links/manager) (Cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Mes offres & services`{.action}. Enfin, cliquez sur l'onglet `Contrats`{.action}).
 >
 
 ## Prérequis
@@ -39,7 +39,7 @@ Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace cl
 
 ### Accéder aux bons de commandes dans l'espace client OVHcloud
 
-Pour accéder au panneau de gestion des commandes, connectez-vous à votre [espace client OVHcloud](/links/manager) puis, dans l'onglet `Tableau de bord`{.action}, cliquez sur `Voir mes commandes`{.action}.
+Pour accéder au panneau de gestion des commandes, connectez-vous à votre [espace client OVHcloud](/links/manager). Sur la page qui s'affiche, cliquez sur `Voir mes commandes`{.action}.
 
 ![Espace client](images/huborders.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Vous pouvez également afficher le bon de commande au format HTML en cliquant su
 
 Après génération de votre bon de commande, vous pouvez suivre votre commande depuis votre [espace client OVHcloud](/links/manager) :
 
-* Cliquez sur votre `Tableau de bord`{.action}, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande.
+* Connectez-vous à votre [espace client OVHcloud](/links/manager). Sur la page qui s'affiche, cliquez sur `Voir mes commandes`{.action}, puis sur le bouton `...`{.action} devant votre commande.
 * Sélectionnez `Suivi de commande`{.action}. Le suivi de commande peut également être affiché en cliquant sur l'état d'une commande dans la colonne `État`.
 
 ![Suivi de commande](images/order05b.png){.thumbnail}
@@ -100,7 +100,7 @@ Vous trouverez toutes les modalités d'application du droit de rétractation dan
 
 Si les critères d'éligibilité au droit de rétractation sont remplis, il peut être mis en application directement depuis [l'espace client OVHcloud](/links/manager) :
 
-* Cliquez sur votre `Tableau de bord`{.action}, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande.
+* Connectez-vous à votre [espace client OVHcloud](/links/manager). Sur la page qui s'affiche, cliquez sur `Voir mes commandes`{.action}, puis sur le bouton `...`{.action} devant votre commande.
 * Sélectionnez `Annuler la commande`{.action}.
 
 ![Annulation d'une commande](images/cancelorder1.png){.thumbnail}
