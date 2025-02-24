@@ -210,6 +210,10 @@ updated: 2025-02-24
 <sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
 <sup>3</sup> : Voir le tableau ci-dessous.
 
+| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
+| --- | --- |
+| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
+
 ## 20 - Managed Message Broker
 
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
@@ -221,6 +225,10 @@ updated: 2025-02-24
 <sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
 <sup>3</sup> : Voir le tableau ci-dessous.
 
+| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
+| --- | --- |
+| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
+
 ## 21 - Managed Data Visualization
 
 | **Raison sociale de l'acteur** | **Rôle dans le cadre de la prestation d'hébergement** | **Certfié HDS** | **Qualifié SecNumCloud 3.2** | **Activités d'hébergement sur lesquelles l'acteur intervient** | **Exigence n°29 du référentiel HDS** | **Exigence n°30 du référentiel HDS** |
@@ -231,6 +239,10 @@ updated: 2025-02-24
 <sup>1</sup> : OVHcloud respecte l'ensemble des exigences du chapitre 19.6 du référentiel SecNumCloud relatif à la protection vis-à-vis du droit extra-européen.<br>
 <sup>2</sup> : Exemption de Aiven au titre du contrôle exercé par OVHcloud sur la prestation de son sous-traitant Aiven OY, vérifié lors des audits de certification.<br>
 <sup>3</sup> : Voir le tableau ci-dessous.
+
+| **Critères du 19.6 de SecNumCloud non respectés** | **Mesures de réduction du risque déployées** |
+| --- | --- |
+| 19.6.b relatif au capital social et aux droits de vote <br>19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Aiven) | - Durée de conservation des données liées aux opérations relatives à OVHcloud limitée contractuellement. <br>- Négociation d'un DPA sur la base de l'article 28 du RGPD, avec l'ajout d'une clause interdisant le transfert de données venant d'OVHcloud en-dehors de l'Union Européenne sans accord écrit d'OVHcloud. Un accord a été donné pour les entités d'Aiven au Canada et au Royaume Uni. Dans tous les cas, une demande explicite sera faite au client avant de permettre techniquement l'accès aux données. <br>- L'accès technique des personnels d'Aiven est réalisé au travers de Bastions opérés par OVHcloud et dont les traces d'accès sont audités par OVHcloud. |
 
 ## 22 - Managed OCI artifact Registry
 
@@ -282,6 +294,7 @@ Cette offre ne comprend pas l'intégration à l'espace de confiance de la Messag
 | **Critère de l'exigence 19.6 de SecNumcloud non respectées** | **Mesures de réduction du risque déployées** |
 | --- | --- |
 | 19.6.b relatif au capital social et aux droits de vote <br> 19.6.c relatif au recours à des sociétés tierces (sociétés appartenant au groupe Global Switch) | - Prestation limitée à la fourniture d'un site d'hébergement physique avec les utilités nécessaires à l'installation d'un datacenter (énergie, refroidissement, câblages divers y compris réseau) <br> - Les données manipulées dans les murs du sous-traitant sont chiffrées à l'état de l'art préalablement à leur envoi sur le site fourni par le sous-traitant.<br> - Les clés de chiffrement utilisées sont stockées sur des infrastructures appartenant à OVHcloud sans aucun droit d'accès à la société sous-traitante.  |
+
 <sup>4</sup> : Digital Realty (voir le tableau ci-dessous) :
 
 | **Critère de l'exigence 19.6 de SecNumcloud non respectées** | **Mesures de réduction du risque déployées** |
