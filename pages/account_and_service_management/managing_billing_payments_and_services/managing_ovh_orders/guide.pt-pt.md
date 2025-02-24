@@ -6,13 +6,13 @@ updated: 2024-11-08
 
 ## Objetivo
 
-Quando efetuar uma encomenda, pode segui-la e interagir com ela a partir da [Área de Cliente OVHcloud](/links/manager.
+Quando efetuar uma encomenda, pode segui-la e interagir com ela a partir da [Área de Cliente OVHcloud](/links/manager).
 
 **Saiba como gerir as suas encomendas a partir da Área de Cliente OVHcloud.**
 
 > [!primary]
 >
-> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso seja necessário, consulte os contratos da OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager: clique no seu nome no canto superior direito e, a seguir, em `Gestão dos serviços`{.action} no menu contextual e no separador `Contratos`{.action}.
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso seja necessário, consulte os contratos da OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager): clique no seu nome no canto superior direito e, a seguir, em `Gestão dos serviços`{.action} no menu contextual e no separador `Contratos`{.action}.
 >
 
 ## Requisitos
