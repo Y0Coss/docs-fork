@@ -304,6 +304,14 @@ Sélectionnez votre interface et validez :
 
 ![Horizon attach interface](images/horizon4.png){.thumbnail}
 
+> [!primary]
+> Votre instance OVHcloud disposera donc d'une nouvelle interface réseau en plus de l'interface publique (Ext-net).
+><br>Vous pourrez voir, dans le résumé de l'instance, l'adresse IP privée attribuée automatiquement à votre interface.
+><br>À votre charge de l'utiliser en configurant votre interface via le DHCP ou en utilisant vos propres IP au travers d'une configuration en IP statique.
+>
+
+**Détacher une interface réseau**
+
 > [!warning]
 > Détacher une interface réseau entraîne sa suppression immédiate.
 >
@@ -311,16 +319,7 @@ Sélectionnez votre interface et validez :
 ><br>Cette action n'est à effectuer que si vous souhaitez isoler votre serveur dans le vRack (réseau privée) ou dans le cas contraire la sortir d'un ou plusieurs VLAN.
 >
 
-**Détacher une interface réseau**
-
-> [!warning]
-> La suppression d'une interface est définitive.
->
-> Dans le cas où vous supprimeriez l'interface « Ext-Net » (IP publique), cette adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
-><br>Cette action n'est à effectuer que si vous souhaitez isoler votre serveur dans le vRack (interface « Ext-Net ») ou la sortir d'un VLAN.
->
-
-Pour supprimer une interface, dans la colonne « Actions », cliquez sur la flèche permettant d'accéder aux actions possible sur l'instance. Cliquez alors sur `Detach Interface`{.action} :
+Pour détacher une interface réseau privée, dans la colonne « Actions », cliquez sur la flèche permettant d'accéder aux actions possible sur l'instance. Cliquez alors sur `Detach Interface`{.action} :
 
 ![Horizon detach interface](images/horizon5.png){.thumbnail}
 

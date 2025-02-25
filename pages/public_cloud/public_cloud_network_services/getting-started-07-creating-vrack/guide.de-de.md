@@ -308,16 +308,16 @@ Wählen Sie Ihr Interface aus und bestätigen Sie.
 ><br>Das Interface muss über DHCP konfiguriert oder IP-Adressen über eine statische IP-Konfiguration zugewiesen werden.
 >
 
-**Löschung eines privaten Interfaces**
+**Eine Netzwerkschnittstelle lösen**
 
 > [!warning]
-> Das Löschen eines Interfaces ist endgültig.
+> Wenn Sie eine Netzwerkschnittstelle trennen, wird diese sofort gelöscht.
 >
->Wenn Sie das Interface "Ext-Net" (öffentliche IP) löschen, wird diese Adresse freigegeben und wieder in Betrieb genommen. Sie kann also nicht erneut zugeordnet werden.
-><br>Diese Aktion ist nur durchzuführen, wenn Sie Ihren Server im vRack ("Ext-Net" Interface) isolieren oder aus einem VLAN entfernen möchten.
+> Es ist jedoch wichtig zu beachten, dass, wenn Sie das "Ext-Net" Interface (öffentliche IP) abtrennen, diese Adresse freigegeben und in Umlauf gebracht wird. Sie könnten es sich also nicht selbst zuweisen.
+><br>Diese Aktion ist nur dann notwendig, wenn Sie Ihren Server im vRack (privates Netzwerk) isolieren oder ihn aus einem oder mehreren VLANs herausnehmen möchten.
 >
 
-Um ein Interface zu löschen, klicken Sie in der Spalte "Action" auf den Pfeil, um auf die Aktionen zuzugreifen, die auf der Instanz möglich sind. Klicken Sie dann auf `Detach Interface`{.action}:
+Um ein Interface zu löschen, klicken Sie in der Spalte "Actions" auf den Pfeil, um auf die Aktionen zuzugreifen, die auf der Instanz möglich sind. Klicken Sie dann auf `Detach Interface`{.action}:
 
 ![Horizon detach interface](images/horizon5.png){.thumbnail}
 

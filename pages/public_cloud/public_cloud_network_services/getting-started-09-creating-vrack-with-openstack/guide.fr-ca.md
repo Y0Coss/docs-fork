@@ -384,7 +384,7 @@ openstack server show <ID-instance>
 ><br>Cette action n'est à effectuer que si vous souhaitez isoler votre serveur dans le vRack (réseau privée) ou dans le cas contraire la sortir d'un ou plusieurs VLAN.
 >
 
-Pour détacher une interface réseau, vous aurez besoin, dans un premier temps, d'identifier le port Neutron qui aura été créé.
+Pour détacher une interface réseau privée, vous aurez besoin, dans un premier temps, d'identifier le port Neutron qui aura été créé.
 
 Pour cela, vous pourrez utiliser les commandes suivantes :
 
