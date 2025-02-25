@@ -1,6 +1,6 @@
 ---
 title: "How to obtain the carbon footprint of your OVHcloud services"
-excerpt: "Find out how to recover the monthly carbon footprint of your Bare Metal services using our carbon calculator"
+excerpt: "Find out how to retrieve the monthly carbon footprint of your OVHcloud services using our carbon calculator"
 updated: 2025-02-26
 ---
 
@@ -8,7 +8,7 @@ updated: 2025-02-26
 
 As part of your professional activities or out of interest on the subject, you may need to calculate the carbon footprint of your services.
 
-**Find out how to retrieve the monthly carbon footprint of your Bare Metal services.**
+**Find out how to retrieve the monthly carbon footprint of your OVHcloud services.**
 
 ## Requirements
 - Being the billing contact for the service(s) you would like to create a carbon footprint for. For more information, see [our guide to managing contacts](/pages/account_and_service_management/account_information/managing_contacts).

@@ -1,6 +1,6 @@
 ---
 title: "Comment obtenir l'empreinte carbone de vos services OVHcloud"
-excerpt: "Découvrez comment récupérer l'empreinte carbone mensuelle des services Bare Metal grâce à notre calculatrice carbone"
+excerpt: "Découvrez comment récupérer l'empreinte carbone mensuelle des services OVHcloud grâce à notre calculatrice carbone"
 updated: 2025-02-26
 ---
 
@@ -8,7 +8,7 @@ updated: 2025-02-26
 
 Dans le cadre de vos activités profesionnelles ou par intérêt sur le sujet, vous pouvez être amené à devoir calculer l'empreinte carbone de vos services.
 
-**Découvrez comment récupérer mensuellement l'empreinte carbone de vos services Bare Metal.**
+**Découvrez comment récupérer mensuellement l'empreinte carbone de vos services OVHcloud.**
 
 ## Prérequis
 
