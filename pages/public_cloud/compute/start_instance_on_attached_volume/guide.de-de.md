@@ -6,7 +6,7 @@ updated: 2025-02-20
 
 ## Ziel
 
-Die Public Cloud Instanzen werden mit einer Disk geliefert, die von einem System-Image kopiert wurde (Debian 12, Windows Server, etc.). Es können auch zusätzliche Volumes verwendet werden, also persistente Disks, auf denen Daten gespeichert werden können.
+Public Cloud Instanzen werden mit einer Disk geliefert, die von einem System-Image kopiert wurde (Debian 12, Windows Server, etc.). Es können auch zusätzliche Volumes verwendet werden, also persistente Disks, auf denen Daten gespeichert werden können.
 
 Sie können auch ein Betriebssystem von einem Volume aus oder auf einem Volume bereitstellen. Die Public Cloud Instanz startet dann von diesem Volume statt der ursprünglichen Disk.
 
@@ -37,11 +37,11 @@ Sie können auch ein Betriebssystem von einem Volume aus oder auf einem Volume b
 
 > [!tabs]
 > **Horizon**
->> Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/).
+>> Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) ein.
 >>
 >> Wählen Sie oben links die korrekte Region aus.
 >>
->> Öffnen Sie im Tab Projekt `Volumes`{.action} und klicken Sie auf die Kategorie `Volumes`{.action}.
+>> Öffnen Sie im Tab Project `Volumes`{.action} und klicken Sie auf die Kategorie `Volumes`{.action}.
 >>
 >> Klicken Sie auf `Create Volume`{.action}.
 >>
@@ -54,7 +54,7 @@ Sie können auch ein Betriebssystem von einem Volume aus oder auf einem Volume b
 >> | Volume Name | Geben Sie einen Namen für das Volume ein. |
 >> | Description | Optional, eine kurze Beschreibung des Volumes. |
 >> | Volume Source | Wählen Sie die Option `Image`.<br><br> ![public-cloud](images/create-a-volume-3.png){.thumbnail} |
->> | Use image as a source | Sie können das Bild aus der Liste auswählen.<br><br> ![public-cloud](images/create-a-volume-4.png){.thumbnail} |
+>> | Use image as a source | Sie können das Image aus der Liste auswählen.<br><br> ![public-cloud](images/create-a-volume-4.png){.thumbnail} |
 >> | Type | Abhängig vom Typ des zu verwendenden Volumes. |
 >> | Size (GB) | Volumegröße in Gigabyte (GB). |
 >> | Availability Zone | nova <br><br> ![public-cloud](images/create-a-volume-5.png){.thumbnail} |
