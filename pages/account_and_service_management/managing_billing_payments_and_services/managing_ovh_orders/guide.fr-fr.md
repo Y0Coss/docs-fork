@@ -12,7 +12,7 @@ Lorsque vous effectuez une commande, vous pouvez la suivre et interagir avec ell
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](/links/manager) (Cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Mes offres & services`{.action}. Enfin, cliquez sur l'onglet `Contrats`{.action}).
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. En cas de doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](/links/manager) (cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Mes offres & services`{.action}. Enfin, cliquez sur l'onglet `Contrats`{.action}).
 >
 
 ## Prérequis
