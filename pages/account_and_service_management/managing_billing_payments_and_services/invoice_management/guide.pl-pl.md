@@ -12,7 +12,7 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, na którym możesz przegląd
 
 > [!primary]
 >
-> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania w zależności od Twojej sytuacji, w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta OVHcloud](/links/manager) (Kliknij w prawym górnym rogu ekranu Twoje imię i nazwisko, a następnie w menu kontekstowym kliknij `Zarządzanie usługami`{.action}, a następnie w zakładce `Regulaminy`{.action}).
+> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania w zależności od Twojej sytuacji, w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. W razie wątpliwości sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta OVHcloud](/links/manager) (kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w menu kontekstowym kliknij pozycję `Moje rozwiązania i usługi`{.action}. Następnie kliknij zakładkę `Regulaminy`{.action}).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

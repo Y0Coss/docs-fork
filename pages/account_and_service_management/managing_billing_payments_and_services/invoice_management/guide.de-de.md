@@ -12,7 +12,7 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie Ihre Rechnunge
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [OVHcloud Kundencenter](/links/manager) einsehen können (Klicken Sie oben rechts neben Ihrem Bildschirm auf Ihren Namen, dann im Kontextmenü auf `Dienstverwaltung`{.action} und dann auf den Tab `Verträge`{.action}).
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifelsfall beachten Sie bitte die in Ihrem [OVHcloud Kundencenter](/links/manager) verfügbaren OVHcloud Verträge (klicken Sie rechts oben auf Ihren Namen und dann im Kontextmenü auf `Meine Angebote und Dienste`{.action}. Klicken Sie abschließend auf den Tab `Verträge`{.action}).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

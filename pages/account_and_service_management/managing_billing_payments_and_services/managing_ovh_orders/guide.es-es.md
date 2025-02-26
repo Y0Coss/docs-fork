@@ -1,7 +1,7 @@
 ---
 title: Gestionar los pedidos en OVHcloud
 excerpt: Cómo gestionar los pedidos en OVHcloud
-updated: 2022-05-06
+updated: 2025-03-04
 ---
 
 ## Objetivo
@@ -12,7 +12,7 @@ Al realizar un pedido, puede realizar un seguimiento e interactuar con él desde
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. Si lo necesita, consulte los contratos de OVHcloud disponibles en el [área de cliente de OVHcloud](/links/manager): haga clic en su nombre en la esquina superior derecha y, seguidamente, en `Gestión de servicios`{.action} en el menú contextual y en la pestaña `Contratos`{.action}.
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicios en cuestión, es posible que algunas secciones de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en su [área de cliente de OVHcloud](/links/manager) (haga clic en su nombre en la esquina superior derecha de la pantalla y, en el menú contextual, seleccione en `Mis soluciones y servicios`{.action}. Por último, haga clic en la pestaña `Contratos`{.action}).
 >
 
 ## Requisitos
@@ -39,7 +39,7 @@ En cualquier momento puede consultar la orden de pedido desde el [área de clien
 
 ### Acceder a los pedidos desde el área de cliente de OVHcloud.
 
-Para acceder al panel de gestión de pedidos, conéctese al [área de cliente de OVHcloud](/links/manager) y, en la pestaña `Panel de control`{.action}, haga clic en `Ver mis pedidos`{.action}.
+Para acceder al panel de gestión de pedidos, conéctese al [área de cliente de OVHcloud](/links/manager). A continuación, haga clic en `Ver mis pedidos`{.action}.
 
 ![Área de cliente](images/huborders.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Si desea ver el pedido en formato HTML, haga clic en `...`{.action} a la derecha
 
 Una vez generada la orden de pedido, puede realizar el seguimiento de su pedido desde el [área de cliente de OVHcloud](/links/manager):
 
-* Haga clic en su `Panel de control`{.action}, luego en `Ver mis pedidos`{.action} y, por último, en `...`{.action} delante del pedido;
+* Conéctese a su [área de cliente de OVHcloud](/links/manager). A continuación, haga clic en `Ver mis pedidos`{.action} y seleccione el botón `...`{.action} delante del pedido.
 * Seleccione `Seguimiento del pedido`{.action}. El seguimiento del pedido también puede mostrarse haciendo clic en el estado de un pedido en la columna `Estado`.
 
 ![Seguimiento de los pedidos](images/order05b.png){.thumbnail}
@@ -100,7 +100,7 @@ Encontrará todas las modalidades de la aplicación de dicho derecho en los sigu
 
 Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](/links/manager):
 
-* Haga clic en su `Panel de control`{.action}, luego en `Ver mis pedidos`{.action} y, por último, en `...`{.action} delante del pedido.
+* Conéctese a su [área de cliente de OVHcloud](/links/manager). A continuación, haga clic en `Ver mis pedidos`{.action} y seleccione el botón `...`{.action} delante del pedido.
 * Seleccione `Cancelar el pedido`{.action}.
 
 ![Cancelación de un pedido](images/cancelorder1.png){.thumbnail}

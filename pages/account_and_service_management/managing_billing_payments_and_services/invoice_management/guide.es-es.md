@@ -12,7 +12,7 @@ OVHcloud pone a su disposición un espacio que le permitirá consultar, administ
 
 > [!primary]
 >
-> En función de su lugar de residencia y de la legislación vigente, así como del producto o productos en cuestión, es posible que algunas partes de esta guía varíen o no se apliquen en función de su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en el [área de cliente de OVHcloud](/links/manager) (haga clic en su nombre en la esquina superior derecha de la pantalla y seleccione `Gestión de servicios`{.action} en el menú contextual y abra la pestaña `Contratos`{.action}).
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicios en cuestión, es posible que algunas secciones de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en su [área de cliente de OVHcloud](/links/manager) (haga clic en su nombre en la esquina superior derecha de la pantalla y, en el menú contextual, seleccione en `Mis soluciones y servicios`{.action}. Por último, haga clic en la pestaña `Contratos`{.action}).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

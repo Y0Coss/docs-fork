@@ -1,7 +1,7 @@
 ---
 title: Managing OVHcloud orders
 excerpt: Find out how to manage your OVHcloud orders
-updated: 2022-05-06
+updated: 2025-03-04
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ When you place an order, you can track and interact with it from your [OVHcloud 
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you need to, please refer to your OVHcloud contracts, which are available in the [OVHcloud Control Panel](/links/manager): Click on your name in the top right-hand corner, then `Manage services`{.action} in the context menu and on the `Contracts`{.action} tab.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to the OVHcloud contracts available in your [OVHcloud Control Panel](/links/manager) (click on your name in the top right-hand corner of the screen, then `My solutionss & services`{.action} . Finally, click on the `Contracts`{.action}) tab.
 >
 
 ## Requirements
@@ -39,7 +39,7 @@ You can view your purchase order at any time in the [OVHcloud Control Panel](/li
 
 ### Access purchase orders via the OVHcloud Control Panel
 
-To access the Order Management Panel, log in to the [OVHcloud Control Panel](/links/manager), then, in the `Dashboard`{.action} tab, click `View my orders`{.action}.
+To access the Control Panel, log in to your [OVHcloud Control Panel](/links/manager). On the page that pops up, click `View my orders`{.action}.
 
 ![Control Panel](images/huborders.png){.thumbnail}
 
@@ -71,7 +71,7 @@ You can also view the purchase order in HTML format by clicking on `...`{.action
 
 After generating your purchase order, you can track your order from your [OVHcloud Control Panel](/links/manager):
 
-- Click on your `Dashboard`{.action}, then on `View my orders`{.action} and finally on `...`{.action} next to your order.
+- Log in to the [OVHcloud Control Panel](/links/manager). On the page that pops up, click `View my orders`{.action}, then click the `...`{.action} button in front of your order.
 - Select `Order tracking`{.action}. Order tracking can also be displayed by clicking the status of an order in the `Status` column.
 
 ![Order tracking](images/order05b.png){.thumbnail}
@@ -100,7 +100,7 @@ The terms and conditions for the right of withdrawal can be found in the remaind
 
 If the eligibility criteria for the right of withdrawal are met, it can be applied directly from the [OVHcloud Control Panel](/links/manager):
 
-- Click on your `Dashboard`{.action}, then on `View my orders`{.action} and finally on `...`{.action} next to your order.
+- Log in to the [OVHcloud Control Panel](/links/manager). On the page that pops up, click `View my orders`{.action}, then click the `...`{.action} button in front of your order.
 - Select `Cancel the order`{.action}.
 
 ![Cancelling an order](images/cancelorder1.png){.thumbnail}

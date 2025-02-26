@@ -1,7 +1,7 @@
 ---
 title: Gestire gli ordini OVHcloud
 excerpt: Come monitorare i tuoi ordini dallo Spazio Cliente OVHcloud
-updated: 2022-05-06
+updated: 2025-03-04
 ---
 
 ## Obiettivo
@@ -12,7 +12,7 @@ Lo [Spazio Cliente OVHcloud](/links/manager) permette di eseguire un ordine e in
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di necessità, consulta i contratti OVHcloud disponibili nello [Spazio Cliente](/links/manager): clicca sul tuo nome in alto a destra e poi su `Gestione dei servizi`{.action} nel menu contestuale e sulla scheda `Contratti`{.action}.
+> In base al tuo luogo di residenza e alla legislazione in vigore, e al prodotto o ai prodotti in questione, è possibile che alcune sezioni di questa guida possano variare e/o non essere applicate in base alla tua situazione. In caso di dubbi, consulta i contratti OVHcloud disponibili nello [Spazio Cliente OVHcloud](/links/manager) (clicca in alto a destra sullo schermo, sul tuo nome e poi su `Le mie offerte e servizi`{.action}. Infine clicca sulla scheda `Contratti`{.action}).
 >
 
 ## Prerequisiti
@@ -39,7 +39,7 @@ Il buono d'ordine viene creato al momento dell'ordine. Elenca i prodotti ordinat
 
 ### Visualizza i tuoi ordini nello Spazio Cliente OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e, nella scheda `Dashboard`{.action}, clicca su `Visualizza i tuoi ordini`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Nella nuova pagina, clicca su `Visualizza i tuoi ordini`{.action}.
 
 ![Spazio Cliente](images/huborders.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Per visualizzare il buono d’ordine in formato HTML, clicca sui tre puntini `..
 
 Una volta generato il buono d'ordine, è possibile eseguire l'ordine direttamente dallo [Spazio Cliente OVHcloud](/links/manager):
 
-* Clicca sulla tua `dashboard`{.action}, poi su `Visualizza i tuoi ordini`{.action} e infine su `...`{.action} davanti al tuo ordine.
+* Accedi allo [Spazio Cliente OVHcloud](/links/manager). Nella nuova pagina, clicca su `Visualizza i tuoi ordini`{.action} e poi sul pulsante `...`{.action} davanti al tuo ordine.
 * Seleziona `Stato dell'ordini`{.action}. Il controllo dell'ordine può essere visualizzato anche cliccando sullo stato dell'ordine nella colonna `Stato`.
 
 ![Gestione degli ordini](images/order05b.png){.thumbnail}
@@ -100,7 +100,7 @@ Troverai tutte le modalità di applicazione del diritto di recesso nel prosieguo
 
 Se i criteri di idoneità al diritto di recesso sono soddisfatti, il diritto di recesso può essere esercitato direttamente dallo [Spazio Cliente OVHcloud](/links/manager):
 
-* Clicca sulla tua `Dashboard`{.action}, poi su `Visualizza i tuoi ordini`{.action} e infine su `...`{.action} davanti al tuo ordine.
+* Accedi allo [Spazio Cliente OVHcloud](/links/manager). Nella nuova pagina, clicca su `Visualizza i tuoi ordini`{.action} e poi sul pulsante `...`{.action} davanti al tuo ordine.
 * Seleziona `Annulla l’ordine`{.action}.
 
 ![Annullamento di un ordine](images/cancelorder1.png){.thumbnail}

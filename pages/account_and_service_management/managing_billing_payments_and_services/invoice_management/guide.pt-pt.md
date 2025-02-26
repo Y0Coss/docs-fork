@@ -12,7 +12,7 @@ A OVHcloud disponibiliza-lhe um espaço que lhe permite consultar, gerir e pagar
 
 > [!primary]
 >
-> Em função do seu local de residência e da sua legislação em vigor, bem como do(s) produto(s) em causa, é possível que algumas partes deste guia variem e/ou não se apliquem consoante a sua situação. Caso tenha alguma dúvida, consulte os contratos da OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager) (clique no canto superior direito do ecrã no seu nome e, no menu contextual, na `Gestão dos serviços`{.action} e, a seguir, no separador `Contratos`{.action}).
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Em caso de dúvida, consulte os seus contratos OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager) (clique no canto superior direito do ecrã sobre o seu nome e, no menu contextual, em `As minhas ofertas e serviços`{.action}. Por fim, clique no separador `Contratos`{.action}).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

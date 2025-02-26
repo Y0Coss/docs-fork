@@ -1,7 +1,7 @@
 ---
 title: Gerir as encomendas da OVHcloud
 excerpt: Saiba como gerir as suas encomendas da OVHcloud
-updated: 2024-11-08
+updated: 2025-03-04
 ---
 
 ## Objetivo
@@ -12,7 +12,7 @@ Quando efetuar uma encomenda, pode segui-la e interagir com ela a partir da [Ár
 
 > [!primary]
 >
-> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso seja necessário, consulte os contratos da OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager): clique no seu nome no canto superior direito e, a seguir, em `Gestão dos serviços`{.action} no menu contextual e no separador `Contratos`{.action}.
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Em caso de dúvida, consulte os seus contratos OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager) (clique no canto superior direito do ecrã sobre o seu nome e, no menu contextual, em `As minhas ofertas e serviços`{.action}. Por fim, clique no separador `Contratos`{.action}).
 >
 
 ## Requisitos
@@ -39,7 +39,7 @@ Pode consultar a sua nota de encomenda a qualquer momento a partir da [Área de 
 
 ### Aceder às notas de encomenda na Área de Cliente OVHcloud
 
-Para aceder ao painel de gestão dos comandos, aceda à sua [Área de Cliente OVHcloud](/links/manager) e, no separador `Painel de controlo`{.action}, clique em `Ver as minhas encomendas`{.action}.
+Para aceder ao painel de gestão das encomendas, aceda à sua [Área de Cliente OVHcloud](/links/manager). Na página que se abrir, clique em `Ver as minhas encomendas`{.action}.
 
 ![Área de Cliente](images/huborders.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Poderá igualmente visualizar a nota de encomenda em formato HTML, clicando em `
 
 Depois de gerar a sua nota de encomenda, pode seguir a sua encomenda a partir da [Área de Cliente OVHcloud](/links/manager):
 
-* Clique no seu `Painel de controlo`{.action}, depois em `Ver as minhas encomendas`{.action} e, por fim, em `...`{.action} antes da sua encomenda.
+* Aceda à [Área de Cliente OVHcloud](/links/manager). Na página que se abrir, clique em `Ver as minhas encomendas`{.action} e, em seguida, clique no botão `...`{.action} junto da sua encomenda.
 * Selecione `Seguir encomenda`{.action}. O acompanhamento da encomenda pode igualmente ser apresentado clicando no estado de uma encomenda na coluna `Estado`.
 
 ![Acompanhamento de encomendas](images/order05b.png){.thumbnail}
@@ -98,7 +98,7 @@ O artigo 12.4 das [Condições Gerais de Serviço](https://www.ovhcloud.com/pt/t
 
 Se os critérios de elegibilidade para o direito de arrependimento estiverem preenchidos, pode ser implementado diretamente a partir da [Área de Cliente OVHcloud](/links/manager):
 
-* Clique no seu `Painel de controlo`{.action}, depois em `Ver as minhas encomendas`{.action} e, por fim, em `...`{.action} antes da sua encomenda.
+* Aceda à [Área de Cliente OVHcloud](/links/manager). Na página que se abrir, clique em `Ver as minhas encomendas`{.action} e, em seguida, clique no botão `...`{.action} junto da sua encomenda.
 * Selecione `Anular a encomenda`{.action}.
 
 ![Anular uma encomenda](images/cancelorder1.png){.thumbnail}

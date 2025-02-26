@@ -12,7 +12,7 @@ OVHcloud provides a space for you to view, manage and pay your various bills.
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some parts of this guide may vary from the information provided in the guide, and some may not apply to your situation. If you have any doubts, please refer to your OVHcloud contracts, which you can access from the [OVHcloud Control Panel](/links/manager). (Click on your name in the top right-hand corner of the screen, then in the context menu, click on `Service management`{.action}, then on the `Contracts`{.action} tab.)
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to the OVHcloud contracts available in your [OVHcloud Control Panel](/links/manager) (click on your name in the top right-hand corner of the screen, then `My solutionss & services`{.action} . Finally, click on the `Contracts`{.action}) tab.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

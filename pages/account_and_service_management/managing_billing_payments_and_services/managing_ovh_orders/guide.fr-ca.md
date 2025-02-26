@@ -1,7 +1,7 @@
 ---
 title: Gérer mes commandes OVHcloud
 excerpt: Découvrez comment gérer vos commandes chez OVHcloud
-updated: 2022-05-06
+updated: 2025-03-04
 ---
 
 ## Objectif
