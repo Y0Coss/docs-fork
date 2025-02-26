@@ -76,11 +76,11 @@ Here is a simple architecture that allows you to perform load balancing of your 
 
 To achieve this setup, you need to install a BGP daemon, like FRR, on each hosts.
 
-### Configuring a BGP Daemon (FRR) <span style="color:red">TODO</span>
+### Configuring a BGP Daemon (FRR)
 
 To establish a BGP session using FRR, follow these steps :
 
-### Step 1: Install FRR
+#### Step 1: Install FRR
 
 On a Debian-based system, install BIRD with:
 
@@ -88,7 +88,7 @@ On a Debian-based system, install BIRD with:
 sudo apt update && sudo apt install frr frr-pythontools
 ```
 
-### Step 2: Configure FRR
+#### Step 2: Configure FRR
 
 Edit the FRR configuration file, typically located at /etc/frr/frr.conf:
 
@@ -103,7 +103,7 @@ router bgp YOUR_ASN
 !
 ```
 
-### Step 3: Restart FRR
+#### Step 3: Restart FRR
 
 After editing the configuration, restart FRR to apply changes:
 
@@ -111,7 +111,7 @@ After editing the configuration, restart FRR to apply changes:
 sudo systemctl restart frr
 ```
 
-### Step 4: Verify BGP Session
+#### Step 4: Verify BGP Session
 
 Check the status of your BGP session with:
 
@@ -119,7 +119,7 @@ Check the status of your BGP session with:
 TBD show protocols all
 ```
 
-### Step 5: Verify Ingress and Egress Connectivity
+#### Step 5: Verify Ingress and Egress Connectivity
 
 To ensure your BGP session is functioning correctly, test both inbound and outbound traffic:
 
@@ -144,18 +144,23 @@ vtysh -c 'show ip route bgp'
 
 Confirm that outbound traffic is following the correct BGP paths.
 
-### Step 6: Verify connectivity with OVHcloud team
+#### Step 6: Verify connectivity with OVHcloud team
 
 When your setup is done and after conducting basic tests, you should notify us via email at this address: <bgp_alpha@ovh.net>.
 
 We'll make sure the BGP connectivity and IP announcements are OK from our side.
 
-## Route Servers (RS) suggested configuration
+### FRR configuration
 
-The Route Servers are deployed and managed by customer. Customer deploys RS on dedicated Hosts.
+***All of the following parameters are present in the /etc/frr/frr.conf configuration file.***
+<span style="color:red">TODO</span>
+
+## Use Case: Advanced BGP configuration using Route Servers (RS)
+
+The Route Servers are deployed and managed by the customer. They must deploy RS on dedicated Hosts.
 RS peer with Load Balancing Edges (LBEdges) and Hosts and establish two sessions per peer (one for IPv4 and one for IPv6) :
 
-![BGPaaS RS Peering](images/shadow_bgpaas_rs-peering.png){.thumbnail}
+![BGPaaS RS Peering](images/bgpaas_rs-peering.png){.thumbnail}
 
 ### Parameters
 
@@ -164,19 +169,94 @@ RS peer with Load Balancing Edges (LBEdges) and Hosts and establish two sessions
 | **OVHcloud_ASN** | Private ASN used on OVHcloud Edges |
 | **CUSTOMER_ASN** | Private ASN given by OVHcloud. |
 | **CUSTOMER_PREFIX_V4 <br> CUSTOMER_PREFIX_V6** | Public prefixes allocated for IPv4 and IPv6 usages |
-| **RS_IPV4 <br> RS_IPV6** | Customer RS IP addresses in private/ula range used for BGP peering and connectivity inside the vRack. |
-| **EDGE_IPV4 <br> EDGE_IPV6** | OVHcloud Edges IP addresses in private/ula range used for BGP peering and connectivity inside the customer vRack. |
-| **HOST_IPV4 <br> HOST_IPV6** | Other Customer Hosts IP addresses in private/ula range used as BGP Next Hop and peer inside the vRack |
+| **RS_IPV4 <br> RS_IPV6** | Customer RS IP addresses in private/ULA range used for BGP peering and connectivity inside the vRack. |
+| **EDGE_IPV4 <br> EDGE_IPV6** | OVHcloud Edges IP addresses in private/ULA range used for BGP peering and connectivity inside the customer vRack. |
+| **HOST_IPV4 <br> HOST_IPV6** | Other Customer Hosts IP addresses in private/ULA range used as BGP Next Hop and peer inside the vRack |
 
-### Suggested configuration
-***Here is a suggested configuration in case the FRR package is used.***
+### Configuring a BGP Daemon (FRR) <span style="color:red">TODO</span>
 
-### Prefix list and Route Map Configuration
+To establish a BGP session using FRR, follow these steps :
+
+#### Step 1: Install FRR
+
+On a Debian-based system, install BIRD with:
+
+```bash
+sudo apt update && sudo apt install frr frr-pythontools
+```
+
+#### Step 2: Configure FRR
+
+Edit the FRR configuration file, typically located at /etc/frr/frr.conf:
+
+```bash
+router bgp YOUR_ASN
+ bgp router-id YOUR_ROUTER_IP
+ neighbor YOUR_PEER_IP remote-as PEER_ASN
+ neighbor YOUR_PEER_IP ebgp-multihop 5
+ address-family ipv4 unicast
+  redistribute connected
+ exit-address-family
+!
+```
+
+#### Step 3: Restart FRR
+
+After editing the configuration, restart FRR to apply changes:
+
+```bash
+sudo systemctl restart frr
+```
+
+#### Step 4: Verify BGP Session
+
+Check the status of your BGP session with:
+
+```bash
+TBD show protocols all
+```
+
+#### Step 5: Verify Ingress and Egress Connectivity
+
+To ensure your BGP session is functioning correctly, test both inbound and outbound traffic:
+
+**Check Ingress Traffic (Incoming)**
+Use a remote server to ping or traceroute to your advertised IP prefix:
+
+```bash
+ping YOUR_ADVERTISED_IP
+traceroute YOUR_ADVERTISED_IP
+```
+
+Verify that traffic reaches your network via the expected BGP paths.
+
+**Check Egress Traffic (Outgoing)**
+
+From your server, check the routing table and ensure your BGP routes are in use:
+
+```bash
+ip route show
+vtysh -c 'show ip route bgp'
+```
+
+Confirm that outbound traffic is following the correct BGP paths.
+
+#### Step 6: Verify connectivity with OVHcloud team
+
+When your setup is done and after conducting basic tests, you should notify us via email at this address: <bgp_alpha@ovh.net>.
+
+We'll make sure the BGP connectivity and IP announcements are OK from our side.
+
+### FRR configuration for RS usage
+
+***All of the following parameters are present in the /etc/frr/frr.conf configuration file.***
+
+#### Prefix list and Route Map Configuration
 
 ***This configuration below is a suggested setup to prevent any unexpected announcement between BGP peers.***
 
-RS accepts default routes from LBEdges and all routes from Hosts if they match the defined prefix length (cf. OVHcloud rules for IPv4 and IPv6 prefix length).
-RS advertise Hosts routes to LBEdges and Default routes to Hosts.
+Route Servers accept default routes from LBEdges and all routes from Hosts if they match the defined prefix length (cf. OVHcloud rules for IPv4 and IPv6 prefix length).
+Route Servers advertise Hosts routes to LBEdges and Default routes to Hosts.
 
 Related prefix lists and route maps to filter routes :
 
@@ -226,7 +306,7 @@ route-map RM_HOST_V6_OUT permit 10
  match ipv6 address prefix-list PL_DEFAULT_ROUTE_V6
 ```
 
-### BFD Configuration
+#### BFD Configuration
 
 ***This configuration below is a suggested setup to improve BGP convergence time between RS and edges over vRack.***
 
@@ -245,9 +325,9 @@ bfd
   no shutdown
  ```
 
-### BGP Configuration
+#### BGP Configuration
 
-#### Global configuration
+##### Global configuration
 
 ```bash
 router bgp <CUSTOMER_ASN>
@@ -255,7 +335,7 @@ router bgp <CUSTOMER_ASN>
  no bgp default ipv4-unicast
 ```
 
-#### BGP peering with OVHcloud Edges
+##### BGP peering with OVHcloud Edges
 
 ```bash
 router bgp <CUSTOMER_ASN>
@@ -282,7 +362,7 @@ router bgp <CUSTOMER_ASN>
   neighbor PG_EDGE_V6 route-map RM_EDGE_V6_OUT out
 ```
 
-#### BGP peering with Hosts
+##### BGP peering with Hosts
 
 ```bash
 router bgp <CUSTOMER_ASN>

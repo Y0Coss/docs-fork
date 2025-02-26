@@ -75,11 +75,11 @@ Voici une architecture simple qui vous permet d'effectuer un load balancing de v
 
 Pour réaliser cette installation, vous devez installer un daemon BGP, comme FRR, sur chaque hôte.
 
-### Configuration d'un daemon BGP (FRR) <span style="color:red">TODO</span>
+### Configuration d'un daemon BGP (FRR)
 
 Pour établir une session BGP à l'aide de FRR, procédez comme suit :
 
-### Étape 1: Installer FRR
+#### Étape 1: Installer FRR
 
 Sur un système basé sur Debian, installez BIRD avec la commande suivante:
 
@@ -87,7 +87,7 @@ Sur un système basé sur Debian, installez BIRD avec la commande suivante:
 sudo apt update && sudo apt install frr frr-pythontools
 ```
 
-### Étape 2: Configurer FRR
+#### Étape 2: Configurer FRR
 
 Modifiez le fichier de configuration FRR, le plus souvent localisé à l'emplacement /etc/frr/frr.conf:
 
@@ -102,7 +102,7 @@ router bgp YOUR_ASN
 !
 ```
 
-### Étape 3: Redémarrer FRR
+#### Étape 3: Redémarrer FRR
 
 Après avoir modifié la configuration, redémarrez FRR pour appliquer les modifications:
 
@@ -110,7 +110,7 @@ Après avoir modifié la configuration, redémarrez FRR pour appliquer les modif
 sudo systemctl restart frr
 ```
 
-### Étape 4: Vérifier l'état de la session BGP
+#### Étape 4: Vérifier l'état de la session BGP
 
 Vérifiez l'état de votre session BGP avec la commande suivante:
 
@@ -118,7 +118,7 @@ Vérifiez l'état de votre session BGP avec la commande suivante:
 TBD show protocols all
 ```
 
-### Étape 5: Vérifier la connectivité entrante et sortante
+#### Étape 5: Vérifier la connectivité entrante et sortante
 
 Pour vous assurer que votre session BGP fonctionne correctement, testez le trafic entrant et sortant :
 
@@ -144,11 +144,247 @@ vtysh -c 'show ip route bgp'
 
 Confirmez que le trafic sortant suit les chemins d'accès BGP corrects.
 
-### Étape 6: Vérifier la connectivité auprès de l'équipe OVHcloud
+#### Étape 6: Vérifier la connectivité auprès de l'équipe OVHcloud
 
 Une fois votre installation terminée et après avoir effectué des tests de base, vous devez nous en informer par e-mail à l'adresse <bgp_alpha@ovh.net>.
 
 Nous nous assurerons que la connectivité BGP et les annonces IP sont correctes de notre côté.
+
+### Configuration de FRR
+
+***Tous les paramètres décrits ci-dessous sont présents dans le fichier de configuration /etc/frr/frr.conf.***
+<span style="color:red">TODO</span>
+
+## Cas d'utilisation: Configuration BGP avancée utilisant des Route Servers (RS)
+
+Les Route Servers sont déployés et gérés par le client. Ceux-ci doivent déployer leurs RS sur des hôtes dédiés.
+Les RS s'appairent avec les Load Balancing Edges (LBEdges) et les Hôtes, et édablissent deux sessions par pair (une pour l'IPv4, l'autre pour l'IPv6):
+
+![BGPaaS RS Peering](images/bgpaas_rs-peering.png){.thumbnail}
+
+### Paramètres
+
+| Paramètre | Description |
+| :--- | :--- |
+| **OVHcloud_ASN** | ASN privé utilisé par les Edges OVHcloud |
+| **CUSTOMER_ASN** | ASN privé fourni par OVHcloud. |
+| **CUSTOMER_PREFIX_V4 <br> CUSTOMER_PREFIX_V6** | Préfixes publics alloués à l'ustilisation d'IPv4 et IPv6 |
+| **RS_IPV4 <br> RS_IPV6** | Adresses IP RS du client dans la plage privée/ULA, utilisées pour l'appairage BGP et la connectivité à l'intérieur du vRack. |
+| **EDGE_IPV4 <br> EDGE_IPV6** | Adresses IP des Edges OVHcloud dans la plage privée/ULA, utilisées pour l'appairage BGP et la connectivité à l'intérieur du vRack client. |
+| **HOST_IPV4 <br> HOST_IPV6** | Autres adresses IP des hôtes client dans la plage privée/ULA, utilisées comme Next Hop BGP et comme pairs à l'intérieur du vRack |
+
+### Configuration d'un daemon BGP (FRR) <span style="color:red">TODO</span>
+
+Pour établir une session BGP à l'aide de FRR, procédez comme suit :
+
+#### Étape 1: Installer FRR
+
+Sur un système basé sur Debian, installez BIRD avec la commande suivante:
+
+```bash
+sudo apt update && sudo apt install frr frr-pythontools
+```
+
+#### Étape 2: Configurer FRR
+
+Modifiez le fichier de configuration FRR, le plus souvent localisé à l'emplacement /etc/frr/frr.conf:
+
+```bash
+router bgp YOUR_ASN
+ bgp router-id YOUR_ROUTER_IP
+ neighbor YOUR_PEER_IP remote-as PEER_ASN
+ neighbor YOUR_PEER_IP ebgp-multihop 5
+ address-family ipv4 unicast
+  redistribute connected
+ exit-address-family
+!
+```
+
+#### Étape 3: Redémarrer FRR
+
+Après avoir modifié la configuration, redémarrez FRR pour appliquer les modifications:
+
+```bash
+sudo systemctl restart frr
+```
+
+#### Étape 4: Vérifier l'état de la session BGP
+
+Vérifiez l'état de votre session BGP avec la commande suivante:
+
+```bash
+TBD show protocols all
+```
+
+#### Étape 5: Vérifier la connectivité entrante et sortante
+
+Pour vous assurer que votre session BGP fonctionne correctement, testez le trafic entrant et sortant :
+
+**Vérifier le trafic entrant (entrant)**
+
+Utilisez un serveur distant pour effectuer un ping ou traceroute vers votre préfixe IP publié :
+
+```bash
+ping YOUR_ADVERTISED_IP
+traceroute YOUR_ADVERTISED_IP
+```
+
+Vérifiez que le trafic atteint votre réseau via les chemins d'accès BGP attendus.
+
+**Vérifier le trafic sortant (sortant)**
+
+Depuis votre serveur, vérifiez la table de routage et assurez-vous que vos routes BGP sont bien utilisées :
+
+```bash
+ip route show
+vtysh -c 'show ip route bgp'
+```
+
+Confirmez que le trafic sortant suit les chemins d'accès BGP corrects.
+
+#### Étape 6: Vérifier la connectivité auprès de l'équipe OVHcloud
+
+Une fois votre installation terminée et après avoir effectué des tests de base, vous devez nous en informer par e-mail à l'adresse <bgp_alpha@ovh.net>.
+
+Nous nous assurerons que la connectivité BGP et les annonces IP sont correctes de notre côté.
+
+### Configuration de FRR pour l'utilisation de RS
+
+***Tous les paramètres décrits ci-dessous sont présents dans le fichier de configuration /etc/frr/frr.conf.***
+
+#### Configuration des listes de préfixes et route-maps
+
+***Cette configuration ci-dessous est une suggestion d'installation pour éviter toute annonce inattendue entre les homologues BGP.***
+
+Les Route Servers acceptent les routes par défaut des LBEdges et toutes les routes des Hôtes si elles correspondent à la longueur de préfixe définie (cf. les règles OVHcloud pour la longueur de préfixe IPv4 et IPv6).
+Les Route Servers publient les routes des hôtes vers les LBEdges et les routes par défaut vers les hôtes.
+
+Listes de préfixes et route-maps connexes pour filtrer les routes :
+
+```bash
+ip prefix-list PL_DEFAULT_ROUTE_V4 seq 10 permit 0.0.0.0/0
+ 
+ip prefix-list PL_CUSTOMER_PREFIX_V4 seq 10 permit <CUSTOMER_PREFIX_V4> ge <length>
+<other sequences may be added depending of the customer setup>
+ 
+ipv6 prefix-list PL_DEFAULT_ROUTE_V6 seq 10 permit ::/0
+ 
+ipv6 prefix-list PL_CUSTOMER_PREFIX_V6 seq 10 permit <CUSTOMER_PREFIX_V6> eq <length>
+<other sequences may be added depending of the customer setup>
+ 
+ 
+route-map RM_EDGE_V4_OUT deny 10
+ match ip address prefix-list PL_DEFAULT_ROUTE_V4
+route-map RM_EDGE_V4_OUT permit 20
+  match ip address prefix-list PL_CUSTOMER_PREFIX_V4
+ 
+route-map RM_EDGE_V4_IN permit 10
+ match ip address prefix-list PL_DEFAULT_ROUTE_V4
+ 
+route-map RM_HOST_V4_IN deny 10
+  match ip address prefix-list PL_DEFAULT_ROUTE_V4
+route-map RM_HOST_V4_IN permit 20
+  match ip address prefix-list PL_CUSTOMER_PREFIX_V4
+  
+route-map RM_HOST_V4_OUT permit 10
+match ip address prefix-list PL_DEFAULT_ROUTE_V4
+ 
+ 
+route-map RM_EDGE_V6_OUT deny 10
+ match ipv6 address prefix-list PL_DEFAULT_ROUTE_V6
+route-map RM_EDGE_V6_OUT permit 20
+  match ipv6 address prefix-list PL_CUSTOMER_PREFIX_V6
+ 
+route-map RM_EDGE_V6_IN permit 10
+ match ipv6 address prefix-list PL_DEFAULT_ROUTE_V6
+ 
+route-map RM_HOST_V6_IN deny 10
+  match ipv6 address prefix-list PL_DEFAULT_ROUTE_V6
+route-map RM_HOST_V6_IN permit 20
+  match ipv6 address prefix-list PL_CUSTOMER_PREFIX_V6
+ 
+route-map RM_HOST_V6_OUT permit 10
+ match ipv6 address prefix-list PL_DEFAULT_ROUTE_V6
+```
+
+#### Configuration BFD
+
+***Cette configuration ci-dessous est une suggestion d'installation pour améliorer le temps de convergence BGP entre les RS et les Edges sur vRack.***
+
+```bash
+bfd
+ profile edge
+  detect-multiplier 8
+  receive-interval 500
+  transmit-interval 500
+ 
+ peer <EDGE_IPV4>
+  profile edge
+  no shutdown
+ peer <EDGE_IPV6>
+  profile edge_slow
+  no shutdown
+ ```
+
+#### Configuration BGP
+
+##### Configuration globale
+
+```bash
+router bgp <CUSTOMER_ASN>
+ bgp router-id <RS_IPV4>
+ no bgp default ipv4-unicast
+```
+
+##### Appairage BGP avec les Edges OVHcloud
+
+```bash
+router bgp <CUSTOMER_ASN>
+ neighbor PG_EDGE_V4 peer-group
+ neighbor PG_EDGE_V4 remote-as <OVHcloud_ASN>
+ neighbor PG_EDGE_V4 bfd
+ neighbor PG_EDGE_V6 peer-group
+ neighbor PG_EDGE_V6 remote-as <OVHcloud_ASN>
+ neighbor PG_EDGE_V6 bfd
+ neighbor <EDGE_IPV4> peer-group PG_EDGE_V4
+ neighbor <EDGE_IPV6> peer-group PG_EDGE_V6
+  
+ address-family ipv4 unicast
+  neighbor PG_EDGE_V4 activate
+  neighbor PG_EDGE_V4 addpath-tx-all-paths 
+  neighbor PG_EDGE_V4 attribute-unchanged next-hop
+  neighbor PG_EDGE_V4 route-map RM_EDGE_V4_IN in
+  neighbor PG_EDGE_V4 route-map RM_EDGE_V4_OUT out
+ address-family ipv6 unicast
+  neighbor PG_EDGE_V6 activate
+  neighbor PG_EDGE_V4 addpath-tx-all-paths 
+  neighbor PG_EDGE_V6 attribute-unchanged next-hop
+  neighbor PG_EDGE_V6 route-map RM_EDGE_V6_IN in
+  neighbor PG_EDGE_V6 route-map RM_EDGE_V6_OUT out
+```
+
+##### Appairage BGP avec les Hôtes
+
+```bash
+router bgp <CUSTOMER_ASN>
+ neighbor PG_HOST_V4 peer-group
+ neighbor PG_HOST_V4 remote-as <CUSTOMER_ASN>
+ neighbor PG_HOST_V6 peer-group
+ neighbor PG_HOST_V6 remote-as <CUSTOMER_ASN>
+ neighbor <HOST_IPV4> peer-group PG_HOST_V4
+ neighbor <HOST_IPV6> peer-group PG_HOST_V6
+ 
+ address-family ipv4 unicast
+  neighbor PG_HOST_V4 activate
+  neighbor PG_HOST_V4 addpath-tx-all-paths
+  neighbor PG_HOST_V4 route-map RM_HOST_V4_IN in
+  neighbor PG_HOST_V4 route-map RM_HOST_V4_OUT out
+ address-family ipv6 unicast
+  neighbor PG_HOST_V6 activate
+  neighbor PG_HOST_V6 addpath-tx-all-paths 
+  neighbor PG_HOST_V6 route-map RM_HOST_V6_IN in
+  neighbor PG_HOST_V6 route-map RM_HOST_V6_OUT out
+```
 
 ## Limitations
 
