@@ -26,8 +26,8 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
 
 Je nach Aktivierungsdatum Ihres Dienstes und je nachdem, ob Ihr Dienst vor Kurzem migriert wurde, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Dienstversion.
 
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
-1. Klicken Sie auf den Tab `Web Cloud`{.action} .
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
+1. Öffnen Sie den Bereich `Web Cloud`{.action}.
 1. Klicken Sie auf `E-Mails`{.action}.
 1. Wählen Sie die betreffende Domain aus.
 
