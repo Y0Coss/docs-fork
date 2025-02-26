@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Aktywacja darmowego certyfikatu SSL Let's Encrypt"
 excerpt: "Dowiedz się, jak aktywować lub odnowić bezpłatny certyfikat SSL Let's Encrypt na Twoim hostingu"
-updated: 2024-10-22
+updated: 2025-02-20
 ---
 
 ## Wprowadzenie
@@ -41,8 +41,8 @@ Dlatego przed zainstalowaniem certyfikatu SSL Let's Encrypt przygotuj wszystkie 
 W tym celu wykonaj następujące czynności:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu rozwijane `Hosting`{.action}.
+2. Kliknij zakładkę `Web Cloud`{.action}.
+3. W lewej kolumnie kliknij menu `Hosting`{.action}.
 4. Wybierz odpowiedni hosting.
 5. Na stronie, która się wyświetli kliknij zakładkę `MultiSite`{.action}.
 
@@ -54,8 +54,8 @@ W tej kolumnie mogą pojawić się trzy statusy:
 
 |Stan|Opis|
 |---|---| 
-|Aktywny|Certyfikat SSL został już włączony dla tej pozycji w opcji MultiSite. Jeśli tak jest, [sprawdź, czy certyfikat SSL jest certyfikatem SSL Let's Encrypt] (#check-ssl). Jeśli tak, sprawdź najpierw [szczególny przypadek] (#regenerate-ssl) znajdujący się poniżej w tym przewodniku. W przeciwnym razie zapoznaj się z przewodnikiem "[Hosting WWW - Zarządzanie certyfikatem SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting)", jeśli chcesz usunąć aktualny certyfikat SSL (bezpłatny lub płatny), a następnie zastąpić go certyfikatem SSL Let's Encrypt.|
-|Do wygenerowania|Włączono certyfikat SSL dla tego wpisu w opcji MultiSite, ale nie jest on jeszcze aktywny. W tym celu [odnów certyfikat SSL Let's Encrypt] (#regenerate-ssl), aby zawierał nowe domeny/subdomeny zadeklarowane w opcji MultiSite, dla których status `Do wygenerowania` jest obecny.|
+|Aktywny|Certyfikat SSL został już włączony dla tej pozycji w opcji MultiSite. Jeśli tak jest, [sprawdź, czy certyfikat SSL jest certyfikatem SSL Let's Encrypt](#check-ssl). Jeśli tak, sprawdź najpierw [szczególny przypadek](#regenerate-ssl) znajdujący się poniżej w tym przewodniku. W przeciwnym razie zapoznaj się z przewodnikiem "[Hosting WWW - Zarządzanie certyfikatem SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting)", jeśli chcesz usunąć aktualny certyfikat SSL (bezpłatny lub płatny), a następnie zastąpić go certyfikatem SSL Let's Encrypt.|
+|Do wygenerowania|Włączono certyfikat SSL dla tego wpisu w opcji MultiSite, ale nie jest on jeszcze aktywny. W tym celu [odnów certyfikat SSL Let's Encrypt](#regenerate-ssl), aby zawierał nowe domeny/subdomeny zadeklarowane w opcji MultiSite, dla których status `Do wygenerowania` jest obecny.|
 |Wyłączony|Certyfikat SSL nie jest włączony dla tego wpisu w opcji MultiSite. Aby go aktywować, wykonaj poniższe kroki.|
 
 > [!primary]
@@ -77,7 +77,7 @@ Po zatwierdzeniu zmiany, status w kolumnie SSL dla danego wpisu MultiSite zmieni
 
 ### 2. Aktywacja certyfikatu SSL Let's Encrypt <a name="enable-ssl"></a>
 
-Przed rozpoczęciem konfiguracji upewnij się, że operacja [poprzedni etap] (#ssl-multisite) została zakończona pomyślnie. W karcie `MultiSite`{.action} Twojego hostingu WWW przynajmniej jedna domena/subdomena musi posiadać opcję SSL ze statusem `Aktywny` lub `Do wygenerowania` aby zainstalować certyfikat SSL Let's Encrypt.
+Przed rozpoczęciem konfiguracji upewnij się, że operacja [poprzedni etap](#ssl-multisite) została zakończona pomyślnie. W karcie `MultiSite`{.action} Twojego hostingu WWW przynajmniej jedna domena/subdomena musi posiadać opcję SSL ze statusem `Aktywny` lub `Do wygenerowania` aby zainstalować certyfikat SSL Let's Encrypt.
 
 > [!warning]
 >
@@ -95,8 +95,8 @@ Przed rozpoczęciem konfiguracji upewnij się, że operacja [poprzedni etap] (#s
 Aby aktywować certyfikat Let's Encrypt SSL, wykonaj następujące czynności:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu rozwijane `Hosting`{.action}.
+2. Kliknij zakładkę `Web Cloud`{.action}.
+3. W lewej kolumnie kliknij menu `Hosting`{.action}.
 4. Wybierz odpowiedni hosting.
 5. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action}.
 6. Przejdź do ramki zatytułowanej `Konfiguracja`.
@@ -115,8 +115,8 @@ Wdrożenie certyfikatu SSL Let's Encrypt może potrwać kilka godzin.
 Aby sprawdzić, czy instalacja została zakończona, wykonaj następujące czynności:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu rozwijane `Hosting`{.action}.
+2. Kliknij zakładkę `Web Cloud`{.action}.
+3. W lewej kolumnie kliknij menu `Hosting`{.action}.
 4. Wybierz odpowiedni hosting.
 5. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action}.
 6. Przejdź do ramki zatytułowanej `Konfiguracja`.
@@ -137,8 +137,8 @@ W tym celu wykonaj **w kolejności** następujące operacje:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 2. Przypisz wstępnie certyfikat SSL Let's Encrypt do swoich nowych domen/subdomen zgodnie z [część pierwsza](#ssl-multisite) niniejszego przewodnika.
-3. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
-4. W lewej kolumnie kliknij menu rozwijane `Hosting`{.action}.
+3. Kliknij zakładkę `Web Cloud`{.action}.
+4. W lewej kolumnie kliknij menu `Hosting`{.action}.
 5. Wybierz odpowiedni hosting.
 6. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action}.
 7. Przejdź do ramki zatytułowanej `Konfiguracja`.

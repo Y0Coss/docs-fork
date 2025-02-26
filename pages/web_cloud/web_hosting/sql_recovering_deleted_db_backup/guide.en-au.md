@@ -1,7 +1,7 @@
 ---
 title: "How to recover a deleted database backup"
 excerpt: "Find out how to retrieve a database backup once it has been deleted from your OVHcloud Control Panel"
-updated: 2024-07-25
+updated: 2025-02-20
 ---
 
 ## Objective
@@ -38,8 +38,8 @@ The OVHcloud API is made available to developers or integrators to associate fea
 To retrieve the name of your web hosting plan, perform the following steps:
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
-2. On the line at the top of the Control Panel, click on the `Web Cloud`{.action} tab.
-3. In the left-hand column, click on the `Hosting plans`{.action} dropdown menu.
+2. Click on the `Web Cloud`{.action} tab.
+3. In the left-hand column, click on the `Hosting plans`{.action} menu.
 4. Select the web hosting plan concerned.
 5. In the top left-hand corner of the page that opens, you will find the name of your web hosting plan on the right-hand side, with the words `Hosting plans /`{.action}.
 
@@ -82,9 +82,9 @@ To do this, fill in the forms as detailed below:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump.png){.thumbnail}
 
-Once you have filled in the forms, click on the blue `TRY`{.action} button in the bottom right-hand corner of the two sections that have been filled in.
+Once you have filled in the forms, click on the blue `EXECUTE`{.action} button in the bottom right-hand corner of the two sections that have been filled in.
 
-If everything has been entered correctly and backups are available for the deleted database, a list of backup ID numbers will appear in the `RESPONSE`{.action} window below the `TRY`{.action} button.
+If everything has been entered correctly and backups are available for the deleted database, a list of backup ID numbers will appear in the `RESPONSE`{.action} window below the `EXECUTE`{.action} button.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-response.png){.thumbnail}
 
@@ -117,9 +117,9 @@ Fill in the various forms in the `PATH PARAMETERS` section as follows:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
 
-Once you have filled in the forms, click on the blue `TRY`{.action} button in the bottom right-hand corner of the section that has been filled in.
+Once you have filled in the forms, click on the blue `EXECUTE`{.action} button in the bottom right-hand corner of the section that has been filled in.
 
-If everything has been entered correctly, the following result will appear in the `RESPONSE`{.action} window below the `TRY`{.action} button:
+If everything has been entered correctly, the following result will appear in the `RESPONSE`{.action} window below the `EXECUTE`{.action} button:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-response.png){.thumbnail}
 

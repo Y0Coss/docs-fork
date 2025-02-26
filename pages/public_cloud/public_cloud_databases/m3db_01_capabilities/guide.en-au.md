@@ -1,7 +1,7 @@
 ---
 title: M3db - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for M3db
-updated: 2024-05-27
+updated: 2025-02-19
 ---
 
 ## Objective
@@ -20,6 +20,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
+- `SGP` (Singapore, Singapore)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -85,7 +86,8 @@ Here are some considerations to take into account when using private network:
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
-- OpenStack subnets routes announcement will not be applied to your services. 
+- OpenStack subnets routes announcement will not be applied to your services.
+- You can only create private network services if you are the original owner of the network. You can not create private network services on a shared network.
 
 ##### Authorised IPs
 
@@ -103,7 +105,7 @@ See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/dat
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3db logs in Opensearch and metrics in Grafana. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information. For more details on logs forwarding, see the [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) guide.
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3db logs in Opensearch and metrics in Dashboards service. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information. For more details on logs forwarding, see the [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) guide.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

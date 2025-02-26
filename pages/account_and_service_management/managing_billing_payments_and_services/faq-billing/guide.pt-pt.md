@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre faturação e pagamento
 excerpt: Encontre as questões mais frequentes sobre faturação e pagamento
-updated: 2023-06-05
+updated: 2024-12-23
 ---
 
 ## Objetivo
@@ -31,13 +31,13 @@ Se não renovar o serviço antes dessa data, este será simplesmente suspenso e 
 
 #### Conselhos e dicas
 
-Consulte o estado dos seus serviços e administre a sua renovação na rubrica `Os meus serviços`{.action}, na Área de Cliente.
+Consulte o estado dos seus serviços e administre a sua renovação na rubrica `As minhas ofertas e serviços`{.action}, na Área de Cliente.
 Faça login e renove manualmente os seus serviços na página <https://eu.ovh.com/pt/cgi-bin/order/renew.cgi>
 Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Como ativar a renovação automática?
 
-Aceda à secção `Produtos e serviços`{.action} que pode ser acedida diretamente através do painel de controlo da Área de Cliente OVHcloud. A seguir, identifique o serviço em causa, clique nos três pontos e selecione a opção `Ativar pagamento`{.action}.
+Aceda à secção `As minhas ofertas e serviços`{.action} que pode ser acedida diretamente através do painel de controlo da Área de Cliente OVHcloud. A seguir, identifique o serviço em causa, clique nos três pontos e selecione a opção `Ativar pagamento`{.action}.
 
 #### Truques e dicas
 
@@ -46,7 +46,7 @@ Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renova�
 
 ### Como desativar a renovação automática?
 
-No painel de controlo da sua Área de Cliente OVHcloud, clique no atalho `Produtos e serviços`{.action} na coluna à direita. A seguir, identifique o serviço em causa, clique nos três pontos e selecione a opção `Configurar a renovação`{.action}. Pode escolher o modo manual. Este modo só está disponível para determinados serviços, tais como os nomes de domínio, alojamentos web, VPS e servidores dedicados.
+No painel de controlo da sua Área de Cliente OVHcloud, clique no atalho `As minhas ofertas e serviços`{.action} na coluna à direita. A seguir, identifique o serviço em causa, clique nos três pontos e selecione a opção `Configurar a renovação`{.action}. Pode escolher o modo manual. Este modo só está disponível para determinados serviços, tais como os nomes de domínio, alojamentos web, VPS e servidores dedicados.
 
 Para rescindir um serviço, consulte a página [Como rescindir um serviço?](#cancelservice)
 
@@ -67,7 +67,7 @@ Em caso de pedido de débito direto SEPA, receberá no prazo de 24 a 48 horas, n
 
 Depois de receber a autorização por parte dos nossos serviços, poderá utilizar este novo método de pagamento.
 
-![FAQ billing](images/faq-billing01.gif){.thumbnail}
+![FAQ billing](/pages/assets/screens/control_panel/product-selection/right-column/faq-billing01.gif){.thumbnail}
 
 #### Truques e dicas
 
@@ -93,13 +93,13 @@ Se a sua conta pré-paga da OVHcloud dispuser de crédito, esta será sempre uti
 
 ### Qual é a data do próximo pagamento?
 
-Consulte todas as datas de renovação na secção `Produtos e serviços`{.action}, que pode ser acedida diretamente através do painel de controlo da Área de Cliente OVHcloud.
+Consulte todas as datas de renovação na secção `As minhas ofertas e serviços`{.action}, que pode ser acedida diretamente através do painel de controlo da Área de Cliente OVHcloud.
 
 As soluções que beneficiam de renovação automática são renovadas no primeiro dia do mês. No entanto, a frequência pode variar em função dos serviços subscritos.
 
 #### Truques e dicas
 
-Pode alterar a frequência de renovação dos serviços subscritos a partir do painel de controlo, clicando nas iniciais do seu nome e clicando em `Serviços`{.action}, na Área de Cliente.
+Pode alterar a frequência de renovação dos serviços subscritos a partir do painel de controlo, clicando nas iniciais do seu nome e clicando em `As minhas ofertas e serviços`{.action}, na Área de Cliente.
 Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Que método de pagamento é utilizado para pagar o serviço?
@@ -145,7 +145,7 @@ Os pagamentos que realizou no nosso site, bem como todos os débitos diretos, es
 
 ### Como rescindir um serviço? <a name="cancelservice"></a>
 
-Para soluções como domínios, alojamentos web, servidores dedicados e VPS, aceda à secção `Produtos e serviços`{.action} no painel de controlo da sua Área de Cliente OVHcloud. A seguir, identifique o serviço em causa, clique nos três pontos e selecione `Rescindir na data de expiração`{.action}. Se já tiver efetuado um pedido, surgirá a opção `Anular cancelamento do serviço`{.action}.
+Para soluções como domínios, alojamentos web, servidores dedicados e VPS, aceda à secção `As minhas ofertas e serviços`{.action} no painel de controlo da sua Área de Cliente OVHcloud. A seguir, identifique o serviço em causa, clique nos três pontos e selecione `Rescindir o meu serviço`{.action}. Se já tiver efetuado um pedido, surgirá a opção `Anular a rescisão do serviço`{.action}.
 
 A rescisão ficará efetiva quando o período de validade ou de compromisso do serviço tiver chegado ao fim. Pode realizar este pedido ou anulá-lo até 24 horas antes da data de expiração.
 

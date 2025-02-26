@@ -1,7 +1,7 @@
 ---
 title: "Recuperar la copia de seguridad de una base de datos eliminada"
 excerpt: "Descubra cómo encontrar la copia de seguridad de una base de datos eliminada desde el área de cliente de OVHcloud"
-updated: 2024-07-25
+updated: 2025-02-20
 ---
 
 ## Objetivo
@@ -38,8 +38,8 @@ Las API de OVHcloud permiten a los desarrolladores o integradores asociar, por e
 Para obtener el nombre del alojamiento web, lleve a cabo los siguientes pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
-3. En la columna izquierda, haga clic en el menú desplegable `Alojamientos`{.action}.
+2. Haga clic en la pestaña `Web Cloud`{.action}.
+3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. En la parte superior izquierda de la página que aparece, consulte el nombre de su alojamiento web, a la derecha de la mención `Alojamientos /`{.action}.
 
@@ -82,9 +82,9 @@ Para ello, complete los diferentes formularios como se detalla a continuación:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump.png){.thumbnail}
 
-Una vez que haya completado todos los formularios, haga clic en el botón azul `Try`{.action} situado en la parte inferior derecha de las dos secciones que haya completado.
+Una vez que haya completado todos los formularios, haga clic en el botón azul `EXECUTE`{.action} situado en la parte inferior derecha de las dos secciones que haya completado.
 
-Si todo se ha rellenado correctamente y hay copias de seguridad disponibles para la base de datos eliminada, aparecerá una lista de números de identificador de copia de seguridad en la ventana `RESPONSE`{.action} al acceder a la página situada debajo del botón `Try`{.action}.
+Si todo se ha rellenado correctamente y hay copias de seguridad disponibles para la base de datos eliminada, aparecerá una lista de números de identificador de copia de seguridad en la ventana `RESPONSE`{.action} al acceder a la página situada debajo del botón `EXECUTE`{.action}.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-response.png){.thumbnail}
 
@@ -117,9 +117,9 @@ Rellene los distintos formularios de la sección "PATH PARAMETERS" del siguiente
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
 
-Una vez que haya completado todos los formularios, haga clic en el botón azul `Try`{.action} situado en la parte inferior derecha de la sección que haya completado.
+Una vez que haya completado todos los formularios, haga clic en el botón azul `EXECUTE`{.action} situado en la parte inferior derecha de la sección que haya completado.
 
-Si todo se ha introducido correctamente, el siguiente resultado aparecerá en la ventana `RESPONSE`{.action} cuando se desplace a la página debajo del botón `Try`{.action}:
+Si todo se ha introducido correctamente, el siguiente resultado aparecerá en la ventana `RESPONSE`{.action} cuando se desplace a la página debajo del botón `EXECUTE`{.action}:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-response.png){.thumbnail}
 

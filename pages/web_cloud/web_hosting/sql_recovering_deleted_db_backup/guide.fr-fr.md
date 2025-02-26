@@ -1,7 +1,7 @@
 ---
 title: "Récupérer la sauvegarde d'une base de données supprimée"
 excerpt: "Découvrez comment retrouver la sauvegarde d'une base de données lorsque celle-ci a été supprimée depuis votre espace client OVHcloud"
-updated: 2024-07-25
+updated: 2025-02-20
 ---
 
 ## Objectif
@@ -38,8 +38,8 @@ Les API OVHcloud sont mises à disposition pour permettre aux développeurs ou a
 Pour récupérer le nom de votre hébergement web, effectuez les actions suivantes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
-3. Dans la colonne de gauche, cliquez sur le menu déroulant `Hébergements`{.action}.
+2. Cliquez sur l'onglet `Web Cloud`{.action}.
+3. Dans la colonne de gauche, cliquez sur le menu `Hébergements`{.action}.
 4. Sélectionnez l'hébergement web concerné.
 5. En haut à gauche de la page qui s'affiche, retrouvez le nom de votre hébergement web à droite de la mention `Hébergements /`{.action}.
 
@@ -82,9 +82,9 @@ Pour cela, remplissez les différents formulaires comme détaillé ci-dessous :
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump.png){.thumbnail}
 
-Une fois les différents formulaires remplis, cliquez sur le bouton bleu `Try`{.action} situé en bas à droite des deux sections préalablement remplies.
+Une fois les différents formulaires remplis, cliquez sur le bouton bleu `EXECUTE`{.action} situé en bas à droite des deux sections préalablement remplies.
 
-Si tout a été renseigné correctement et que des sauvegardes sont disponibles pour la base de données supprimée, une liste de numéros d'identifiants de sauvegarde apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page en dessous du bouton `Try`{.action}.
+Si tout a été renseigné correctement et que des sauvegardes sont disponibles pour la base de données supprimée, une liste de numéros d'identifiants de sauvegarde apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page en dessous du bouton `EXECUTE`{.action}.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-response.png){.thumbnail}
 
@@ -117,9 +117,9 @@ Remplissez les différents formulaires de la partie `PATH PARAMETERS` ainsi :
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
 
-Une fois les différents formulaires remplis, cliquez sur le bouton bleu `Try`{.action} situé en bas à droite de la section préalablement remplie.
+Une fois les différents formulaires remplis, cliquez sur le bouton bleu `EXECUTE`{.action} situé en bas à droite de la section préalablement remplie.
 
-Si tout a été renseigné correctement, le résultat suivant apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page en dessous du bouton `Try`{.action} :
+Si tout a été renseigné correctement, le résultat suivant apparaît dans la fenêtre `RESPONSE`{.action} lorsque vous descendez sur la page en dessous du bouton `EXECUTE`{.action} :
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-response.png){.thumbnail}
 

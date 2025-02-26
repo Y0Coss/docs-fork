@@ -1,7 +1,7 @@
 ---
 title: "Recuperare il backup di un database eliminato"
 excerpt: "Scopri come recuperare il backup di un database eliminato dal tuo Spazio Cliente OVHcloud"
-updated: 2024-07-25
+updated: 2025-02-20
 ---
 
 ## Obiettivo
@@ -38,8 +38,8 @@ Le API OVHcloud sono messe a disposizione per permettere agli sviluppatori o agl
 Per recuperare il nome dell’hosting Web, esegui queste operazioni:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
-3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
+2. Clicca sulla scheda `Web Cloud`{.action}.
+3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. In alto a sinistra della pagina, trovi il nome del tuo hosting Web a destra della voce `Hosting /`{.action}.
 
@@ -82,9 +82,9 @@ Per farlo, compila i diversi moduli come dettagliato di seguito:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump.png){.thumbnail}
 
-Una volta completati i moduli, clicca sul pulsante blu `Try`{.action} in basso a destra delle due sezioni precedentemente compilate.
+Una volta completati i moduli, clicca sul pulsante blu `EXECUTE`{.action} in basso a destra delle due sezioni precedentemente compilate.
 
-Se tutto è stato inserito correttamente e alcuni backup sono disponibili per il database eliminato, nella finestra `RESPONSE`{.action} viene visualizzato un elenco di numeri di identificativi di backup quando si scende alla pagina sotto il pulsante `Try`{.action}.
+Se tutto è stato inserito correttamente e alcuni backup sono disponibili per il database eliminato, nella finestra `RESPONSE`{.action} viene visualizzato un elenco di numeri di identificativi di backup quando si scende alla pagina sotto il pulsante `EXECUTE`{.action}.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-response.png){.thumbnail}
 
@@ -117,9 +117,9 @@ Compila i moduli disponibili nella sezione `PATH PARAMETERS` nel modo seguente:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
 
-Una volta completati i moduli, clicca sul pulsante blu `Try`{.action} in basso a destra nella sezione precedentemente compilata.
+Una volta completati i moduli, clicca sul pulsante blu `EXECUTE`{.action} in basso a destra nella sezione precedentemente compilata.
 
-Se tutto è stato inserito correttamente, il seguente risultato appare nella finestra `RESPONSE`{.action} quando si scende alla pagina sotto il pulsante `Try`{.action}:
+Se tutto è stato inserito correttamente, il seguente risultato appare nella finestra `RESPONSE`{.action} quando si scende alla pagina sotto il pulsante `EXECUTE`{.action}:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-response.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: "Backup einer gelöschten Datenbank wiederherstellen"
 excerpt: "Erfahren Sie hier, wie Sie das Backup einer im OVHcloud Kundencenter gelöschten Datenbank wiederherstellen können"
-updated: 2024-07-25
+updated: 2025-02-20
 ---
 
 ## Ziel
@@ -37,10 +37,10 @@ Die OVHcloud API wird Entwicklern zur Verfügung gestellt, um alle verfügbaren 
 So rufen Sie den Namen Ihres Webhostings ab:
 
 1. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein.
-2. Klicken Sie oben im Kundencenter auf `Web Cloud`{.action}.
-3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Hosting-Pakete`{.action}.
+2. Klicken Sie auf den Tab `Web Cloud`{.action}.
+3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
-5. Oben links auf der angezeigten Seite finden Sie den Namen Ihres Webhostings rechts unter `Hosting-Pakete`{.action}.
+5. Oben links auf der angezeigten Seite finden Sie den Namen Ihres Webhostings rechts unter `Hosting-Pakete /`{.action}.
 
 ![API](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-webhosting-name.png){.thumbnail}
 
@@ -81,9 +81,9 @@ Füllen Sie hierzu die verschiedenen Felder wie folgt aus:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump.png){.thumbnail}
 
-Wenn Sie die Felder ausgefüllt haben, klicken Sie unten rechts auf die blaue Schaltfläche `TRY`{.action}.
+Wenn Sie die Felder ausgefüllt haben, klicken Sie unten rechts auf die blaue Schaltfläche `EXECUTE`{.action}.
 
-Wenn alles korrekt angegeben wurde und Backups für die gelöschte Datenbank verfügbar sind, erscheint eine Liste der Backup-IDs im Fenster `RESPONSE`{.action} unter der Schaltfläche `TRY`{.action}.
+Wenn alles korrekt angegeben wurde und Backups für die gelöschte Datenbank verfügbar sind, erscheint eine Liste der Backup-IDs im Fenster `RESPONSE`{.action} unter der Schaltfläche `EXECUTE`{.action}.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-response.png){.thumbnail}
 
@@ -116,9 +116,9 @@ Füllen Sie die Felder im Teil `PATH PARAMETERS` wie folgt aus:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
 
-Wenn Sie die Felder ausgefüllt haben, klicken Sie unten rechts auf die blaue Schaltfläche `TRY`{.action}.
+Wenn Sie die Felder ausgefüllt haben, klicken Sie unten rechts auf die blaue Schaltfläche `EXECUTE`{.action}.
 
-Wenn alles korrekt angegeben wurde, erscheint das folgende Ergebnis im Fenster `RESPONSE`{.action} unterhalb der Schaltfläche `TRY`{.action}:
+Wenn alles korrekt angegeben wurde, erscheint das folgende Ergebnis im Fenster `RESPONSE`{.action} unterhalb der Schaltfläche `EXECUTE`{.action}:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-response.png){.thumbnail}
 

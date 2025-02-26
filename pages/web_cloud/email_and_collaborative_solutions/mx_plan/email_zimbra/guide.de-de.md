@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Webmail verwenden"
 excerpt: "Erfahren Sie hier, wie Sie das Zimbra Webmail-Interface mit OVHcloud MX Plan E-Mail-Accounts verwenden"
-updated: 2024-08-26
+updated: 2025-02-12
 ---
 
 > [!primary]
@@ -14,19 +14,9 @@ updated: 2024-08-26
 }
 </style>
 
-> [!primary]
->
-> **Wichtig**
->
-> Zimbra Webmail für MX Plan ist noch nicht allgemein verfügbar.
->
-> Deshalb wird es vorläufig nur bei Migrationen im Zusammenhang mit der Weiterentwicklung unseres MX Plan Dienstes aktiviert. Diese Migration erfolgt automatisch. Unsere Teams senden Ihnen eine E-Mail zu, wenn Sie von der Migration betroffen sind.
->
-> Weitere Informationen finden Sie in unseren [OVHcloud Zimbra FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra).
-
 ## Ziel
 
-Mit dem MX Plan Angebot von OVHcloud können Sie E-Mails über einen E-Mail-Client (Thunderbird, Outlook, Mac Mail) oder per Webmail im Webbrowser Ihres Geräts versenden und empfangen.<br>
+Mit dem MX Plan Angebot von OVHcloud können Sie E-Mails über einen E-Mail-Client (Thunderbird, Outlook, Mac Mail) oder per Webmail im Webbrowser Ihres Geräts versenden und empfangen.  
 OVHcloud bietet den Webmail-Dienst Zimbra an, um auf MX Plan E-Mail-Accounts zuzugreifen. Auf dieser Seite werden die für die Verwendung dieses Webmailers erforderlichen Funktionen erläutert.
 
 **Diese Anleitung erklärt, wie Sie Zimbra Webmail für Ihre OVHcloud MX Plan E-Mail-Accounts verwenden.**

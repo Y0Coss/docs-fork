@@ -34,7 +34,7 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 
 Le sezioni seguenti contengono le configurazioni delle distribuzioni che attualmente offriamo e delle distribuzioni/sistemi operativi più comunemente utilizzati. Il primo passo è sempre quello di connettersi al server utilizzando SSH o una sessione di connessione GUI (RDP per un server Windows).
 
-Sui server dedicati, il primo IPv6 viene dichiarato come 2607:5300:xxxx:xxxx::/64. Ad esempio, se abbiamo assegnato al vostro server l'intervallo IPv6: `2607:5300:abcd:efgh::/64`, il primo IPv6 sul vostro server è: `2607:5300:abcd:efgh::/64`.
+Sui server dedicati, il primo IPv6 viene dichiarato come 2607:5300:xxxx:xxxx::/64. Ad esempio, se abbiamo assegnato al vostro server l'intervallo IPv6: `2607:5300:abcd:efgh::/64`, il primo IPv6 sul vostro server è: `2607:5300:abcd:efgh::`.
 
 Di default, il primo IPv6 è configurato sulla maggior parte delle distribuzioni Linux recenti che offriamo all'installazione, quindi il gateway è già incluso nel file di configurazione. Nella maggior parte dei casi, non sarà necessario aggiungerlo manualmente.
 
@@ -112,7 +112,7 @@ ssh user@serverIP
 
 #### Step 2: Crea un backup
 
-Il file di configurazione di rete del server si trova in `/etc/network/interfaces.d`. Prima di continuare, creare un backup del file utilizzando uno dei comandi seguenti:
+Il file di configurazione di rete del server si trova in `/etc/network/interfaces.d`. Prima di continuare, creare un backup del file con il seguente comando:
 
 ```sh
 sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
@@ -603,7 +603,7 @@ Avete configurato il vostro IPv6 ma non funziona nulla?
 
 Esiste una semplice procedura per determinare se il difetto è nella configurazione o nella rete OVHcloud.
 
-Innanzitutto, [metti il tuo server in modalità di salvataggio] (/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+Innanzitutto, [metti il tuo server in modalità di salvataggio](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 Quindi utilizzare i seguenti comandi per configurare il proprio IPv6 in modo non persistente, sostituendo "YOUR_IPV6", "IPV6_PREFIX" e "IPV6_GATEWAY" con le proprie informazioni:
 

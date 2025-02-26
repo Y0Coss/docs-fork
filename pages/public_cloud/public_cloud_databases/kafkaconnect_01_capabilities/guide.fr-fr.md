@@ -1,7 +1,7 @@
 ---
 title: Kafka Connect - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka Connect
-updated: 2024-05-27
+updated: 2025-02-19
 ---
 
 ## Objective
@@ -20,6 +20,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
+- `SGP` (Singapore, Singapore)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -73,7 +74,8 @@ Here are some considerations to take into account when using private network:
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
-- OpenStack subnets routes announcement will not be applied to your services. 
+- OpenStack subnets routes announcement will not be applied to your services.
+- You can only create private network services if you are the original owner of the network. You can not create private network services on a shared network.
 
 ##### Authorised IPs
 
@@ -85,7 +87,7 @@ You can further customise your Kafka Connect by using advanced parameters. See t
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Kafka Connect logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Kafka Connect logs in Opensearch and metrics in Dashboards service (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

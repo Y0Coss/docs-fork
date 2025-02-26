@@ -1,7 +1,7 @@
 ---
 title: Comment résilier mes services OVHcloud
 excerpt: Découvrez comment interrompre vos abonnements OVHcloud depuis l'espace client
-updated: 2024-01-19
+updated: 2024-12-23
 ---
 
 ## Objectif
@@ -47,13 +47,13 @@ Des **cas particuliers** existent néanmoins et sont détaillés [plus bas](#spe
 
 ### Comment résilier votre abonnement ? <a name="terminate"></a>
 
-Pour résilier l'abonnement à votre service, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
+Pour résilier l'abonnement à votre service, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Mes offres & services`{.action}.
 
-![produits et services](images/products-services-fr.png){.thumbnail}
+![produits et services](/pages/assets/screens/control_panel/product-selection/right-column/products-services-fr.png){.thumbnail}
 
-Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
+Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier mon service`{.action}.
 
-![résilier](images/cancel-fr.png){.thumbnail}
+![résilier](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-fr.png){.thumbnail}
 
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
@@ -64,9 +64,9 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 > N'hésitez donc pas à nous en dire plus sur votre expérience personnelle avec OVHcloud via le formulaire proposé lors de la résiliation. Nous vous remercions par avance de votre contribution à l'amélioration de nos produits.
 >
 
-La résiliation de votre service aura lieu à la **date d'effet** indiquée dans le tableau « Mes services ». Si vous ne voyez pas le statut « Résiliation demandée » apparaître, rafraîchissez la page.
+La résiliation de votre service aura lieu à la **date d'effet** indiquée dans le tableau « Gestion de mes offres et services ». Si vous ne voyez pas le statut « Résiliation programmée » apparaître, rafraîchissez la page.
 
-![demande de résiliation](images/cancellation-request-fr.png){.thumbnail}
+![demande de résiliation](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request-fr.png){.thumbnail}
 
 ### Cas particuliers <a name="specific-cases"></a>
 
@@ -152,22 +152,22 @@ Vous pouvez également [consulter votre consommation actuelle](/pages/public_clo
 > Vous pouvez annuler une demande de résiliation jusqu'à 24 heures avant la date de fin d'abonnement.
 >
 
-Pour annuler une demande de résiliation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
+Pour annuler une demande de résiliation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Mes offres & services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service faisant l'objet d'une demande de résiliation puis sur `Annuler la résiliation du service`{.action} 
 
-![cancel_termination](images/cancel_termination-fr.png){.thumbnail}
+![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination-fr.png){.thumbnail}
 
 Enfin, cliquez sur `Confirmer l'annulation`{.action}.
 
-L'annulation de la résiliation est à effet immédiat. Rafraîchissez la page « Mes services » si vous voyez toujours le statut « Résiliation demandée ».
+L'annulation de la résiliation est à effet immédiat. Rafraîchissez la page « Gestion de mes offres et services » si vous voyez toujours le statut « Résiliation programmée ».
 
 ## FAQ
 
 > [!faq]
 >
 > Je ne parviens pas à résilier un service. Que faire ?
->> Si vous ne parvenez pas à résilier un service (le bouton `Résilier`{.action} n'est pas proposé), celui-ci peut faire partie des cas particuliers détaillés [plus haut dans ce guide](#specific-cases).
+>> Si vous ne parvenez pas à résilier un service (le bouton `Résilier mon service`{.action} n'est pas proposé), celui-ci peut faire partie des cas particuliers détaillés [plus haut dans ce guide](#specific-cases).
 >> Vérifiez également que les conditions suivantes sont bien remplies :
 >>
 >> - Vous devez être le « contact administrateur » du service. Pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition).
@@ -180,7 +180,7 @@ L'annulation de la résiliation est à effet immédiat. Rafraîchissez la page �
 > Comment supprimer mon compte OVHcloud ?
 >> La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
 >>
->> 1. Vous n'avez plus de services visibles dans la section « [Mes Services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
+>> 1. Vous n'avez plus de services visibles dans la section « [Mes offres & services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
 >> 2. Vous n'avez pas de factures en attente de paiement. Dans le cas contraire, vous devez procéder à leur règlement en cliquant sur le bouton `Régler immédiatement`{.action} dans les actions de masses de la page « [Mes factures](https://www.ovh.com/manager/#/dedicated/billing/history) ».
 >> 3. Vous n'avez pas de commande en cours. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
 >> 4. Votre compte prépayé n'est pas positif. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).

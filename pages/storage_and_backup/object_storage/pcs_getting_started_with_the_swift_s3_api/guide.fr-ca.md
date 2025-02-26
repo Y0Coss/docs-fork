@@ -1,7 +1,7 @@
 ---
 title: "Object Storage Swift - Premiers pas avec l'API Swift S3"
 excerpt: "Découvrez comment utiliser l'API Swift S3"
-updated: 2024-06-21
+updated: 2025-02-11
 ---
 
 ## Objectif
@@ -82,30 +82,57 @@ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN"
 
 ### Configurer le client AWS
 
+Vous pouvez soit utiliser la méthode CLI, soit créer manuellement les fichiers de configuration AWS.
 Installez le client AWS et configurez-le comme suit :
 
-```bash
-user@host:~$ pip install awscli
-[...]
-user@host:~$ cat ~/.aws/credentials
+> [!tabs]
+> **Paquet Python**
+>>
+>> ```bash
+>> user@host:~$ pip install awscli
+>> ```
+>>
+> **OS basé sur Debian**
+>>
+>> ```bash
+>> user@host:~$ sudo apt install awscli
+>> ```
+>>
+> **OS basé sur RHEL**
+>>
+>> ```bash 
+>> user@host:~$ sudo yum install awscli
+>> ```
+>>
 
-[default]
-aws_access_key_id = <access_key>
-aws_secret_access_key = <secret_key>
-
-user@host:~$ cat ~/.aws/config
-
-[plugins]
-endpoint = awscli_plugin_endpoint
-
-[profile default]
-region = <region>
-s3 =
-  endpoint_url = https://s3.<region>.cloud.ovh.net
-  signature_version = s3v4
-s3api =
-  endpoint_url = https://s3.<region>.cloud.ovh.net
-```
+> [!tabs]
+> Méthode CLI
+>>
+>> ```bash
+>> user@host:~$ aws configure
+>> ```
+>>
+>> Suivez alors les étapes et saisissez vos informations d'identification AWS générées par les commandes ci-dessus.
+>>
+> Méthode manuelle
+>>
+>> ```bash
+>> user@host:~$ cat ~/.aws/credentials
+>> [default]
+>> aws_access_key_id = <access_key>
+>> aws_secret_access_key = <secret_key>
+>> user@host:~$ cat ~/.aws/config
+>> [plugins]
+>> endpoint = awscli_plugin_endpoint
+>> [default]
+>> region = <region>
+>> s3 =
+>>   endpoint_url = https://s3.<region>.cloud.ovh.net
+>>   signature_version = s3v4
+>> s3api =
+>>  endpoint_url = https://s3.<region>.cloud.ovh.net
+>> ```
+>>
 
 L'accès de type `hébergé virtuel` et l'accès de type `chemin d'accès` sont pris en charge dans toutes les régions, mais nous vous recommandons d'utiliser le style `hébergé virtuel` car l'accès de type `chemin d'accès` sera déprécié après le 30 septembre 2020.
 
@@ -113,41 +140,58 @@ L'accès de type `hébergé virtuel` et l'accès de type `chemin d'accès` sont 
 
 Utilisez la commande suivante pour obtenir la liste des Buckets (conteneurs) :
 
+> [!primary]
+>
+> Si vous avez créé plusieurs profils, ajoutez `--profile <profile>` à la ligne de commande.
+>
+
 ```bash
-user@host:~$ aws --profile default s3 ls
+user@host:~$ aws s3 ls
 ```
 
 Utilisez la commande suivante pour créer un nouveau bucket :
 
 ```bash
-user@host:~$ aws --profile default s3 mb s3://bucket
+user@host:~$ aws s3 mb s3://bucket
 ```
 
-S3 ne prend plus en charge la création de noms de bukcet contenant des lettres majuscules ou des traits de soulignement.
-Les buckets S3 ne peuvent être créés que sur la stratégie PCS (Stockage d'objets).
+> [!primary]
+>
+> Les buckets S3 ne peuvent être créés que sur la stratégie PCS (Stockage d'objets).
+>
+
+> [!primary]
+>
+> Le nom du conteneur doit respecter les règles suivantes
+>  
+> - Le nom du conteneur peut comporter entre 3 et 63 caractères, et ne peut contenir que des caractères minuscules, des chiffres, des points et des tirets.  
+> - Chaque nom du conteneur doit commencer par une lettre minuscule ou un chiffre.  
+> - Le nom du conteneur ne peut pas contenir de traits de soulignement, se terminer par un tiret, avoir des points consécutifs ou utiliser des tirets adjacents à des points.  
+> - Le nom du conteneur ne peut pas être formaté comme une adresse IP (198.51.100.24).  
+>
 
 Utilisez la commande suivante pour téléverser un fichier local sur Swift :
 
 ```bash
-user@host:~$ aws --profile default s3 cp file.txt s3://bucket/file.txt
+user@host:~$ aws s3 cp file.txt s3://bucket/file.txt
 ```
 
 Utilisez la commande suivante pour télécharger un objet à partir de Swift :
 
 ```bash
-user@host:~$ aws --profile default s3 cp s3://bucket/file.txt file.txt
+user@host:~$ aws s3 cp s3://bucket/file.txt file.txt
 ```
 
 Utilisez la commande suivante pour supprimer un objet Swift :
 
 ```bash
-user@host:~$ aws --profile default s3 rm s3://bucket/file.txt
+user@host:~$ aws s3 rm s3://bucket/file.txt
 ```
 
 Utilisez la commande suivante pour supprimer un bucket:
 
 ```bash
-user@host:~$ aws --profile default s3 rb s3://bucket
+user@host:~$ aws s3 rb s3://bucket
 ```
 
 ## Aller plus loin

@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer l'agrégation de liens avec LACP dans Debian 12 ou Ubuntu 24.04"
 excerpt: "Activez l'agrégation de liens dans votre serveur Debian 12 ou Ubuntu 24.04 (Netplan) pour augmenter la disponibilité de votre serveur et augmenter l'efficacité de vos connexions réseau"
-updated: 2024-10-17
+updated: 2025-02-14
 ---
 
 <style>
@@ -41,6 +41,9 @@ Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans l
 Cliquez sur l'onglet `Interfaces réseau`{.action} et prenez note des adresses MAC de chaque interface (publique/privée) qui s'affichent en bas du menu.
 
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
+
+> [!primary]
+> Veuillez noter que l'adresse MAC de l'interface publique **principale** est celle dont la valeur est la plus faible. Dans l'image exemple ci-dessus, il s'agit de l'adresse `a1:b2:c3:d4:e5:c6`.
 
 Maintenant que vous savez quelles adresses MAC sont associées à chaque type (public/privé) d'interface, vous devez récupérer les noms des interfaces.
 
@@ -133,8 +136,6 @@ network:
                 - ens22f1np1
             parameters:
                 mode: 802.3ad
-                mii-monitor-interval: 100
-                down-delay: 200
                 lacp-rate: fast
                 transmit-hash-policy: layer3+4
         # Facultatif: configuration d'un agrégat privé
@@ -147,8 +148,6 @@ network:
                 - ens33f1np1
             parameters:
                 mode: 802.3ad
-                mii-monitor-interval: 100
-                down-delay: 200
                 lacp-rate: fast
                 transmit-hash-policy: layer3+4
 ```
@@ -193,8 +192,6 @@ network:
                 - ens22f1np1
             parameters:
                 mode: 802.3ad
-                mii-monitor-interval: 100
-                down-delay: 200
                 lacp-rate: fast
                 transmit-hash-policy: layer3+4
         # Facultatif: configuration d'un agrégat privé
@@ -207,8 +204,6 @@ network:
                 - ens33f1np1
             parameters:
                 mode: 802.3ad
-                mii-monitor-interval: 100
-                down-delay: 200
                 lacp-rate: fast
                 transmit-hash-policy: layer3+4
 ```
