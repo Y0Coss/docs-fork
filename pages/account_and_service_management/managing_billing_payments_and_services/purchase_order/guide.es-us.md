@@ -1,7 +1,7 @@
 ---
 title: 'Concepto de número de pedido o Purchase Order (PO)'
 excerpt: 'Entender el concepto de número de pedido o orden de purchase y aplicarlo en el marco del pago de las facturas de OVHcloud'
-updated: 2022-07-22
+updated: 2025-03-04
 ---
 
 ## Objetivo
@@ -49,7 +49,7 @@ Por lo tanto, para OVHcloud, el documento debe contener al menos la siguiente in
 
 ### Cómo introducir un número de Purchase Order (PO) en el área de cliente de OVHcloud
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y, en la pestaña `Panel de control`{.action}, haga clic en `Ver mis pedidos`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager) y, en la nueva página, haga clic en `Ver mis pedidos`{.action}.
 
 ![Área de cliente](images/internalreference00.png){.thumbnail}
 

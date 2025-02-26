@@ -1,7 +1,7 @@
 ---
 title: 'Purchase Order (PO)'
 excerpt: 'Understanding the notion of a Purchase Order number, and applying it when paying OVHcloud bills'
-updated: 2022-07-22
+updated: 2025-03-04
 ---
 
 ## Objective
@@ -48,7 +48,7 @@ For OVHcloud, the document must contain at least the following information:
 
 ### How to enter a Purchase Order (PO) reference in your OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager), then in the `Dashboard`{.action} tab, click `View my orders`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), then, directly on the page that pops up, click `View my orders`{.action}.
 
 ![Control Panel](images/internalreference00.png){.thumbnail}
 
