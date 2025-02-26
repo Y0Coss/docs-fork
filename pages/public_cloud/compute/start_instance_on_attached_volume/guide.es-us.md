@@ -133,7 +133,9 @@ También puede implementar un sistema operativo desde y hacia un volumen. La ins
 >> 
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-1.png){.thumbnail width="800"}
 >> 
->> En el cuadro de diálogo `Launch Instance`, en la pestaña Origen, seleccione "Volume" en el campo `Select Boot Source`.
+>> En el cuadro de diálogo `Launch Instance`, complete la información solicitada. Para más información, consulte la guía [Crear una instancia desde Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
+>>
+>> En la pestaña Source, seleccione "Volume" en el campo `Select Boot Source`.
 >> 
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-3.png){.thumbnail}
 >> 

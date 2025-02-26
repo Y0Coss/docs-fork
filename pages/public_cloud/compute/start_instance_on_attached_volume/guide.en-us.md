@@ -132,7 +132,9 @@ You can also deploy an operating system to and from a volume. The Public Cloud i
 >>
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-1.png){.thumbnail width="800"}
 >>
->> In the Launch Instance dialog box, in the Source tab, choose "Volume" in the `Select Boot Source` field.
+>> In the `Launch Instance` dialog box, enter the information requested. Refer to the guide [Create an instance from the Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon) for more details.
+>>
+>> In the Source tab, choose "Volume" in the `Select Boot Source` field.
 >>
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-3.png){.thumbnail}
 >>

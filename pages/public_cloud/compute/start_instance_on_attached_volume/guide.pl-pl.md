@@ -133,7 +133,9 @@ Możesz również wdrożyć system operacyjny z wolumenu i na wolumin. W ten spo
 >>
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-1.png){.thumbnail width="800"}
 >>
->> W oknie dialogowym `Launch Instance` na karcie Źródło wybierz "Volume" w polu `Select Boot Source`.
+>> W oknie dialogowym `Launch Instance` uzupełnij wymagane informacje. Więcej szczegółów znajdziesz w przewodniku [Tworzenie instancji w interfejsie Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
+>>
+>> W zakładce `Source` wybierz "Volume" w polu `Select Boot Source`.
 >>
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-3.png){.thumbnail}
 >>

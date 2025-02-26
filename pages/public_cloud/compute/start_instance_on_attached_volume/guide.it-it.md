@@ -132,7 +132,9 @@ Le istanze Public Cloud vengono consegnate con un disco di origine copiato a par
 >>
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-1.png){.thumbnail width="800"}
 >>
->> Nella finestra di dialogo `Launch Instance`, nella scheda Sorgente, selezionare "Volume" nel campo `Select Boot Source`.
+>> Nella finestra di dialogo `Launch Instance`, inserisci le informazioni richieste. Per maggiori dettagli, consulta la guida [Creare un’istanza dall’interfaccia Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
+>>
+>> Nella scheda Source, selezionare "Volume" nel campo `Select Boot Source`.
 >>
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-3.png){.thumbnail}
 >>
