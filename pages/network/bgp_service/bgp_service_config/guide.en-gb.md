@@ -150,6 +150,161 @@ When your setup is done and after conducting basic tests, you should notify us v
 
 We'll make sure the BGP connectivity and IP announcements are OK from our side.
 
+## Route Servers (RS) suggested configuration
+
+The Route Servers are deployed and managed by customer. Customer deploys RS on dedicated Hosts.
+RS peer with Load Balancing Edges (LBEdges) and Hosts and establish two sessions per peer (one for IPv4 and one for IPv6) :
+
+![BGPaaS RS Peering](images/shadow_bgpaas_rs-peering.png){.thumbnail}
+
+### Parameters
+
+| Parameter | Description |
+| :--- | :--- |
+| **OVHcloud_ASN** | Private ASN used on OVHcloud Edges |
+| **CUSTOMER_ASN** | Private ASN given by OVHcloud. |
+| **CUSTOMER_PREFIX_V4 <br> CUSTOMER_PREFIX_V6** | Public prefixes allocated for IPv4 and IPv6 usages |
+| **RS_IPV4 <br> RS_IPV6** | Customer RS IP addresses in private/ula range used for BGP peering and connectivity inside the vRack. |
+| **EDGE_IPV4 <br> EDGE_IPV6** | OVHcloud Edges IP addresses in private/ula range used for BGP peering and connectivity inside the customer vRack. |
+| **HOST_IPV4 <br> HOST_IPV6** | Other Customer Hosts IP addresses in private/ula range used as BGP Next Hop and peer inside the vRack |
+
+### Suggested configuration
+***Here is a suggested configuration in case the FRR package is used.***
+
+### Prefix list and Route Map Configuration
+
+***This configuration below is a suggested setup to prevent any unexpected announcement between BGP peers.***
+
+RS accepts default routes from LBEdges and all routes from Hosts if they match the defined prefix length (cf. OVHcloud rules for IPv4 and IPv6 prefix length).
+RS advertise Hosts routes to LBEdges and Default routes to Hosts.
+
+Related prefix lists and route maps to filter routes :
+
+```bash
+ip prefix-list PL_DEFAULT_ROUTE_V4 seq 10 permit 0.0.0.0/0
+ 
+ip prefix-list PL_CUSTOMER_PREFIX_V4 seq 10 permit <CUSTOMER_PREFIX_V4> ge <length>
+<other sequences may be added depending of the customer setup>
+ 
+ipv6 prefix-list PL_DEFAULT_ROUTE_V6 seq 10 permit ::/0
+ 
+ipv6 prefix-list PL_CUSTOMER_PREFIX_V6 seq 10 permit <CUSTOMER_PREFIX_V6> eq <length>
+<other sequences may be added depending of the customer setup>
+ 
+ 
+route-map RM_EDGE_V4_OUT deny 10
+ match ip address prefix-list PL_DEFAULT_ROUTE_V4
+route-map RM_EDGE_V4_OUT permit 20
+  match ip address prefix-list PL_CUSTOMER_PREFIX_V4
+ 
+route-map RM_EDGE_V4_IN permit 10
+ match ip address prefix-list PL_DEFAULT_ROUTE_V4
+ 
+route-map RM_HOST_V4_IN deny 10
+  match ip address prefix-list PL_DEFAULT_ROUTE_V4
+route-map RM_HOST_V4_IN permit 20
+  match ip address prefix-list PL_CUSTOMER_PREFIX_V4
+  
+route-map RM_HOST_V4_OUT permit 10
+match ip address prefix-list PL_DEFAULT_ROUTE_V4
+ 
+ 
+route-map RM_EDGE_V6_OUT deny 10
+ match ipv6 address prefix-list PL_DEFAULT_ROUTE_V6
+route-map RM_EDGE_V6_OUT permit 20
+  match ipv6 address prefix-list PL_CUSTOMER_PREFIX_V6
+ 
+route-map RM_EDGE_V6_IN permit 10
+ match ipv6 address prefix-list PL_DEFAULT_ROUTE_V6
+ 
+route-map RM_HOST_V6_IN deny 10
+  match ipv6 address prefix-list PL_DEFAULT_ROUTE_V6
+route-map RM_HOST_V6_IN permit 20
+  match ipv6 address prefix-list PL_CUSTOMER_PREFIX_V6
+ 
+route-map RM_HOST_V6_OUT permit 10
+ match ipv6 address prefix-list PL_DEFAULT_ROUTE_V6
+```
+
+### BFD Configuration
+
+***This configuration below is a suggested setup to improve BGP convergence time between RS and edges over vRack.***
+
+```bash
+bfd
+ profile edge
+  detect-multiplier 8
+  receive-interval 500
+  transmit-interval 500
+ 
+ peer <EDGE_IPV4>
+  profile edge
+  no shutdown
+ peer <EDGE_IPV6>
+  profile edge_slow
+  no shutdown
+ ```
+
+### BGP Configuration
+
+#### Global configuration
+
+```bash
+router bgp <CUSTOMER_ASN>
+ bgp router-id <RS_IPV4>
+ no bgp default ipv4-unicast
+```
+
+#### BGP peering with OVHcloud Edges
+
+```bash
+router bgp <CUSTOMER_ASN>
+ neighbor PG_EDGE_V4 peer-group
+ neighbor PG_EDGE_V4 remote-as <OVHcloud_ASN>
+ neighbor PG_EDGE_V4 bfd
+ neighbor PG_EDGE_V6 peer-group
+ neighbor PG_EDGE_V6 remote-as <OVHcloud_ASN>
+ neighbor PG_EDGE_V6 bfd
+ neighbor <EDGE_IPV4> peer-group PG_EDGE_V4
+ neighbor <EDGE_IPV6> peer-group PG_EDGE_V6
+  
+ address-family ipv4 unicast
+  neighbor PG_EDGE_V4 activate
+  neighbor PG_EDGE_V4 addpath-tx-all-paths 
+  neighbor PG_EDGE_V4 attribute-unchanged next-hop
+  neighbor PG_EDGE_V4 route-map RM_EDGE_V4_IN in
+  neighbor PG_EDGE_V4 route-map RM_EDGE_V4_OUT out
+ address-family ipv6 unicast
+  neighbor PG_EDGE_V6 activate
+  neighbor PG_EDGE_V4 addpath-tx-all-paths 
+  neighbor PG_EDGE_V6 attribute-unchanged next-hop
+  neighbor PG_EDGE_V6 route-map RM_EDGE_V6_IN in
+  neighbor PG_EDGE_V6 route-map RM_EDGE_V6_OUT out
+```
+
+#### BGP peering with Hosts
+
+```bash
+router bgp <CUSTOMER_ASN>
+ neighbor PG_HOST_V4 peer-group
+ neighbor PG_HOST_V4 remote-as <CUSTOMER_ASN>
+ neighbor PG_HOST_V6 peer-group
+ neighbor PG_HOST_V6 remote-as <CUSTOMER_ASN>
+ neighbor <HOST_IPV4> peer-group PG_HOST_V4
+ neighbor <HOST_IPV6> peer-group PG_HOST_V6
+ 
+ address-family ipv4 unicast
+  neighbor PG_HOST_V4 activate
+  neighbor PG_HOST_V4 addpath-tx-all-paths
+  neighbor PG_HOST_V4 route-map RM_HOST_V4_IN in
+  neighbor PG_HOST_V4 route-map RM_HOST_V4_OUT out
+ address-family ipv6 unicast
+  neighbor PG_HOST_V6 activate
+  neighbor PG_HOST_V6 addpath-tx-all-paths 
+  neighbor PG_HOST_V6 route-map RM_HOST_V6_IN in
+  neighbor PG_HOST_V6 route-map RM_HOST_V6_OUT out
+```
+
 ## Limitations
 
 The number of peers on OVHcloud side is limited to 4. If you need more than 4 peers, you will need to install a route reflector on your infrastructure in order to redistribute routes to your hosts.
