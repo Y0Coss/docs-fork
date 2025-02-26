@@ -1,7 +1,7 @@
 --- 
 title: 'Jak uruchomić instancję w chmurze publicznej na wolumenie startowym'
 excerpt: 'Dowiedz się, jak uruchomić instancję na woluminie startowym'
-updated: 2025-02-20
+updated: 2025-02-26
 --- 
 
 ## Wprowadzenie
@@ -149,7 +149,8 @@ Możesz również wdrożyć system operacyjny z wolumenu i na wolumin. W ten spo
 >>
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-9.png){.thumbnail width="800"}
 >>
-> Utwórz instancję, określając wolumin bootowalny **volume_ubuntu** jako urządzenie startowe.
+> **Klient OpenStack**
+>> Utwórz instancję, określając wolumin bootowalny **volume_ubuntu** jako urządzenie startowe.
 >>
 >> ```console
 >> openstack server create --volume volume_ubuntu --flavor d2-2 --key-name publickey --nic net-id=Ext-Net InstanceTest

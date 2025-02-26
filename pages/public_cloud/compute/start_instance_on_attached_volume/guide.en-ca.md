@@ -1,7 +1,7 @@
 ---
 title: 'How to start a Public Cloud instance on a bootable volume'
 excerpt: 'Find out how to start an instance on a bootable volume'
-updated: 2025-02-20
+updated: 2025-02-26
 ---
 
 ## Objective

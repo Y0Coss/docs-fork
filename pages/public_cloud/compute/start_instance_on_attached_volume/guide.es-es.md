@@ -1,7 +1,7 @@
 ---
 title: 'Cómo iniciar una instancia de cloud público en un volumen de arranque'
 excerpt: 'Cómo iniciar una instancia en un volumen de arranque'
-updated: 2025-02-20
+updated: 2025-02-26
 ---
 
 ## Objetivo
@@ -26,12 +26,10 @@ También puede implementar un sistema operativo desde y hacia un volumen. La ins
 > En cuanto a la versión actual de OpenStack, con un volumen de arranque, el modo rescue-pro no está disponible en una instancia con copia de seguridad en volumen.
 >
 
-
 ## Requisitos
 
 - [Acceso a Horizon](/pages/public_cloud/compute/loading_presentation_horizon)
 - [Cargar variables de entorno OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
-
 
 ## Instrucciones
 
@@ -151,7 +149,8 @@ También puede implementar un sistema operativo desde y hacia un volumen. La ins
 >> 
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-9.png){.thumbnail width="800"}
 >> 
-> Cree una instancia, especificando el volumen de arranque **volume_ubuntu** como dispositivo de arranque.
+> **Cliente OpenStack**
+>> Cree una instancia, especificando el volumen de arranque **volume_ubuntu** como dispositivo de arranque.
 >> 
 >> ```console
 >> openstack server create --volume volume_ubuntu --flavor d2-2 --key-name publickey --nic net-id=Ext-Net InstanceTest

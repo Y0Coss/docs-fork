@@ -1,7 +1,7 @@
 --- 
 title: 'Como iniciar uma instância Public Cloud num volume de arranque'
 excerpt: 'Saiba como iniciar uma instância num volume de arranque'
-updated: 2025-02-20
+updated: 2025-02-26
 --- 
 
 ## Objetivo
@@ -30,7 +30,6 @@ Também pode implementar um sistema operativo de e para um volume. A instância 
 
 - [Acesso à interface Horizon](/pages/public_cloud/compute/loading_presentation_horizon)
 - [Carregar as variáveis de ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
-
 
 ## Instruções
 
@@ -70,7 +69,7 @@ Também pode implementar um sistema operativo de e para um volume. A instância 
 >>
 >> ![public-cloud](images/create-a-volume-9.png){.thumbnail width="800"}
 >>
-> **Client OpenStack**
+> **Cliente OpenStack**
 >> É possível criar um volume de inicialização a partir de uma imagem, volume ou instantâneo existente. Este procedimento explica-lhe como criar um volume a partir de uma imagem e utilizar o volume para iniciar uma instância.
 >>
 >> ```console
@@ -149,7 +148,8 @@ Também pode implementar um sistema operativo de e para um volume. A instância 
 >>
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-9.png){.thumbnail width="800"}
 >>
-> Crie uma instância, especificando o volume de arranque **volume_ubuntu** como o dispositivo de arranque.
+> **Cliente OpenStack**
+>> Crie uma instância, especificando o volume de arranque **volume_ubuntu** como o dispositivo de arranque.
 >>
 >> ```console
 >> openstack server create --volume volume_ubuntu --flavor d2-2 --key-name publickey --nic net-id=Ext-Net InstanceTest

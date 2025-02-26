@@ -1,7 +1,7 @@
 ---
 title: 'Comment démarrer une instance de Cloud public sur un volume amorçable'
 excerpt: 'Découvrez comment démarrer une instance sur un volume amorçable'
-updated: 2025-02-20
+updated: 2025-02-26
 ---
 
 ## Objectif
@@ -149,7 +149,8 @@ Vous pouvez également déployer un système d'exploitation depuis et vers un vo
 >>
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-9.png){.thumbnail width="800"}
 >>
-> Créez une instance, en spécifiant le volume amorçable **volume_ubuntu** comme périphérique d'amorçage.
+> **Client OpenStack**
+>> Créez une instance, en spécifiant le volume amorçable **volume_ubuntu** comme périphérique d'amorçage.
 >>
 >> ```console
 >> openstack server create --volume volume_ubuntu --flavor d2-2 --key-name publickey --nic net-id=Ext-Net InstanceTest

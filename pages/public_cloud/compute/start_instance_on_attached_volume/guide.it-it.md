@@ -1,7 +1,7 @@
 ---
-title: 'Come avviare un'istanza Public Cloud su un volume avviabile'
-excerpt: 'Come avviare un'istanza su un volume avviabile'
-updated: 2025-02-20
+title: "Come avviare un'istanza Public Cloud su un volume avviabile"
+excerpt: "Come avviare un'istanza su un volume avviabile"
+updated: 2025-02-26
 ---
 
 ## Obiettivo
@@ -148,7 +148,8 @@ Le istanze Public Cloud vengono consegnate con un disco di origine copiato a par
 >>
 >> ![public-cloud](images/create-an-instance-with-a-bootable-volume-9.png){.thumbnail width="800"}
 >>
-> Create un'istanza, specificando il volume avviabile **volume_ubuntu** come dispositivo di avvio.
+> **Client OpenStack**
+>> Create un'istanza, specificando il volume avviabile **volume_ubuntu** come dispositivo di avvio.
 >>
 >> ```console
 >> openstack server create --volume volume_ubuntu --flavor d2-2 --key-name publickey --nic net-id=Ext-Net InstanceTest

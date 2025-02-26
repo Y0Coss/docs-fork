@@ -1,7 +1,7 @@
 ---
 title: Starten einer Public Cloud Instanz von einem bootfähigen Volume
 excerpt: Erfahren Sie hier, wie Sie eine Instanz von einem bootfähigen Volume starten
-updated: 2025-02-20
+updated: 2025-02-26
 ---
 
 ## Ziel
