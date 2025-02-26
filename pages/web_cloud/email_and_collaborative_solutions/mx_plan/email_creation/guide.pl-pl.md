@@ -30,7 +30,12 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
 
 W zależności od daty aktywacji usługi lub jeśli usługa została niedawno przeniesiona, możliwe, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, zidentyfikuj tą opcję.
 
-W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), część `Web Cloud`{.action}. Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+1. Kliknij zakładkę `Web Cloud`{.action}.
+1. Kliknij `E-maile`{.action}.
+1. Wybierz odpowiednią domenę.
+
+Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|

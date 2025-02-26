@@ -30,7 +30,12 @@ Una soluzione email MX Plan è stata appena creata per usufruire di indirizzi em
 
 In base alla data di attivazione o in caso di recente migrazione del servizio, la versione disponibile sarà differente. Prima di procedere, è necessario identificarla.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
+1. Clicca sulla scheda `Web Cloud`{.action} .
+1. Clicca su `Email`{.action}.
+1. Seleziona il dominio.
+
+Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|

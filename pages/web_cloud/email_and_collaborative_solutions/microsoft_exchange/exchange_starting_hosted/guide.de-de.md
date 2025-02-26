@@ -4,10 +4,6 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihren Hosted Exchange Dienst konfigurieren'
 updated: 2024-09-03
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 <style>
 .w-640 {
   max-width:640px !important;
@@ -31,9 +27,13 @@ Mit Hosted Exchange verfügen Sie über professionelle E-Mail-Accounts mit erwei
 
 ### Zugang zur Verwaltung Ihrer Dienstleistung
 
-Wenn Ihr Hosted Exchange eingerichtet und verfügbar ist, können Sie es über Ihr [OVHcloud Kundencenter](/links/manager) verwalten.
+Wenn Ihr Hosted Exchange eingerichtet und verfügbar ist :
 
-Gehen Sie hierzu in Ihrem Kundencenter auf `Microsoft`{.action} und anschließend auf `Exchange`{.action}. Klicken Sie dann auf den Namen des entsprechenden Hosted Exchange Dienstes.
+1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
+1. Klicken Sie auf den Tab `Web Cloud`{.action}.
+1. Klicken Sie auf den Bereich `MICROSOFT`{.action}.
+1. Klicken Sie auf `Exchange`{.action}.
+1. Wählen Sie die betreffende Plattform aus.
 
 > [!primary]
 >
@@ -56,7 +56,7 @@ Wählen Sie einen Ihrer Domainnamen aus der Liste aus oder setzen Sie einen Hake
 
 #### Werden Sie ausschließlich OVH Exchange mit dieser Domain verwenden?
 
-Die Frage "**Werden Sie ausschließlich das OVH Exchange Angebot für diese Domain verwenden?**" bestimmt den Konfigurationstyp Ihrer Domain. 
+Die Frage "**Werden Sie ausschließlich das OVH Exchange Angebot für diese Domain verwenden?**" bestimmt den Konfigurationstyp Ihrer Domain.
 
 - Wenn Sie ein Exchange Angebot allein oder zusammen mit anderen **E-Mail-Angeboten von OVHcloud** verwenden, kann die Konfiguration automatisch oder manuell erfolgen, indem Sie ausschließlich die E-Mail-Server von OVHcloud verwenden.
 - Wenn Sie Ihr Exchange Angebot zusätzlich zu einem E-Mail-Dienst **außerhalb des OVHcloud E-Mail Angebots** verwenden, werden Sie aufgefordert, die URL des Empfangsservers Ihres externen E-Mail-Dienstes unter der Rubrik `Relay-Server (SMTP)` anzugeben.
