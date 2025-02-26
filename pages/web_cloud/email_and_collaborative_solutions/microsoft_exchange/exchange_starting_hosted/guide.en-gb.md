@@ -27,13 +27,13 @@ With the Hosted Exchange service, you can get professional email accounts to use
 
 ### Access your service management
 
-Once your Hosted Exchange service has been created and is available :
+Once your Hosted Exchange service has been created and is available:
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
-1. Click on the `Web Cloud`{.action} tab.
+1. Open the `Web Cloud`{.action} section.
 1. Click `Microsoft`{.action}.
 1. Click `Exchange`{.action}.
-1. Select the platform concerned.
+1. Select the service concerned.
 
 > [!primary]
 >
