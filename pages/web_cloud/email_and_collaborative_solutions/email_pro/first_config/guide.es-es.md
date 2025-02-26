@@ -23,8 +23,8 @@ La solución E-mail Pro le permite disfrutar de direcciones de correo electróni
 
 Una vez creado y activado el servicio E-mail Pro :
 
-1. Conéctese a su [área de cliente de OVHcloud] (/links/manager).
-1. Haga clic en la pestaña `Web Cloud` {.action}.
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+1. Haga clic en la pestaña `Web Cloud`{.action}.
 1. Haga clic en `Emails Pro`{.action}.
 1. Seleccione la plataforma correspondiente.
 

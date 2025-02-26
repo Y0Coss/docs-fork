@@ -27,7 +27,7 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 En función de cuándo haya activado su MX Plan o de si el servicio ha sido migrado recientemente, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone.
 
 1. Conéctese a su [área de cliente de OVHcloud] (/links/manager).
-1. Haga clic en la pestaña `Web Cloud`{.action} .
+1. Haga clic en la pestaña `Web Cloud`{.action}.
 1. Haga clic en `Correo electrónico`{.action}.
 1. Seleccione el dominio.
 

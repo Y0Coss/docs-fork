@@ -33,7 +33,7 @@ Una volta che il tuo Hosted Exchange è pronto per l’utilizzo :
 1. Clicca sulla scheda `Web Cloud`{.action}.
 1. Clicca su `Microsoft`{.action}.
 1. Clicca su `Exchange`{.action}.
-1. Seleziona la piattaforma.
+1. Seleziona la piattaforma interessata.
 
 > [!primary]
 >
