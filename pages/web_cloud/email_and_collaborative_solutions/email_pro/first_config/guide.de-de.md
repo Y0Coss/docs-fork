@@ -21,12 +21,12 @@ Sie haben gerade eine E-Mail Pro Lösung erworben. Nun können Sie zu einem gün
 
 ### Schritt 1: Zugang zur Verwaltung Ihres Dienstes
 
-Wenn der E-Mail Pro Dienst eingerichtet und verfügbar ist :
+Wenn der E-Mail Pro Dienst eingerichtet und verfügbar ist:
 
-1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
-1. Klicken Sie auf den Tab `Web Cloud`{.action}.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
+1. Öffnen Sie den Bereich `Web Cloud`{.action}.
 1. Klicken Sie auf `E-Mails Pro`{.action}.
-1. Wählen Sie die betreffende Plattform aus.
+1. Wählen Sie den gewünschten Dienst aus.
 
 > [!primary]
 >
