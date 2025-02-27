@@ -110,7 +110,7 @@ Se sul conto prepagato OVHcloud è disponibile del credito, verrà utilizzato di
 
 ### Come recuperare le fatture?
 
-Accedi allo Spazio Cliente e, nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Fatture`{.action}.
+Accedi allo Spazio Cliente e, nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Le mie fatture`{.action}.
 
 #### Consigli e suggerimenti
 
@@ -126,7 +126,7 @@ Se invece i servizi risultano in rinnovo automatico ma non è stato salvato alcu
 
 #### Consigli e suggerimenti
 
-Se hai a disposizione l’identificativo OVHcloud e la password associata, puoi saldare la fattura direttamente dallo Spazio Cliente: nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Fatture`{.action} e, nella nuova pagina, seleziona `Azioni`{.action} > `Salda subito l'importo dovuto`{.action}.
+Se hai a disposizione l’identificativo OVHcloud e la password associata, puoi saldare la fattura direttamente dallo Spazio Cliente: nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Le mie fatture`{.action} e, nella nuova pagina, seleziona `Azioni`{.action} > `Salda subito l'importo dovuto`{.action}.
 Per maggiori informazioni su come eseguire questa operazione, consulta la guida [Gestire le fatture OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#salda-limporto-dovuto).
 
 ### Come verificare lo stato dei pagamenti?
@@ -135,7 +135,7 @@ L’interfaccia principale dello Spazio Cliente mostra i pagamenti in attesa. É
 
 #### Consigli e suggerimenti
 
-Nella sezione `Metodi di pagamento`{.action} dello Spazio Cliente è possibile salvare un metodo di pagamento predefinito. In questo modo il saldo delle fatture avverrà automaticamente.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I miei metodi di pagamento`{.action}. Potrete allora registrare il vostro metodo di pagamento. In questo modo le fatture vengono saldate automaticamente.
 
 ### A cosa corrispondono i pagamenti effettuati?
 

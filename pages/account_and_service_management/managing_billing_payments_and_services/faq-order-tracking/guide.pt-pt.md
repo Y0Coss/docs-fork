@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre o seguimento da encomenda OVHcloud
 excerpt: Encontre as questões mais frequentes sobre o seguimento da encomenda OVHcloud
-updated: 2022-11-10
+updated: 2025-03-04
 ---
 
 ## Objetivo
@@ -14,21 +14,19 @@ Só pode efetuar o pagamento depois de identificar a sua encomenda através da s
 
 #### Truques e dicas
 
-Saiu da página da encomenda? Pode visualizá-la e pagá-la a partir da [Área de Cliente](/links/manager), na rubrica `Encomendas`{.action}.
+Saiu da página da encomenda? Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome em cima à direita e, a seguir, clique em `Encomendas`{.action}. Poderá depois visualizar a sua encomenda e pagá-la.
 
 ### Como consultar o estado do pagamento?
 
-Aceda à sua [Área de Cliente](/links/manager) e, na parte direita do painel de controlo, clique no atalho `Faturas`{.action}. Se existir uma fatura com pagamento pendente, ser-lhe-á sugerido que regularize a situação diretamente a partir do painel de controlo.
+Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `As minhas faturas`{.action}. Se uma fatura está a aguardar pagamento, diretamente no seu painel de controlo, ser-lhe-á proposta a possibilidade de pagar o seu saldo.
 
 #### Truques e dicas
 
-Pode registar o seu método de pagamento na secção `Métodos de pagamento`{.action}. Assim, as suas faturas serão automaticamente regularizadas.
+Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome em cima à direita e, a seguir, clique em `Os meus métodos de pagamento`{.action}. Poderá então registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
 
 ### Como acompanhar o estado da encomenda?
 
-Aceda à sua [Área de Cliente](/links/manager) e, uma vez no painel de controlo, terá visibilidade sobre o estado das suas últimas encomendas na parte central da página. Se pretender aceder ao conjunto das suas encomendas, clique em `Ver as minhas encomendas`{.action}.
-
-![estado da encomenda](images/order_final-min.gif){.thumbnail}
+Aceda à [Área de Cliente OVHcloud](/links/manager) e clique em `Ver as minhas encomendas`{.action}.
 
 ### Truques e dicas
 
@@ -62,7 +60,7 @@ Uma fatura com pagamento pendente também pode causar este atraso. Se for o seu 
 
 #### Truques e dicas:
 
-Pode registar o seu método de pagamento na secção `Métodos de pagamento`{.action}. Assim, as suas faturas serão automaticamente regularizadas.
+Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome em cima à direita e, a seguir, clique em `Os meus métodos de pagamento`{.action}. Poderá então registar o seu método de pagamento. Desta forma, as suas faturas serão automaticamente regularizadas.
 
 ## Quer saber mais?
 

@@ -139,6 +139,8 @@ Należności oczekujące na płatność wyświetlają się na dashboardzie w Pa
 
 Możesz zapisać Twój sposób płatności w sekcji `Sposoby płatności`{.action}. Umożliwi Ci to opłacanie faktur w sposób automatyczny.
 
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje sposoby płatności`{.action}. i dodaj sposób płatności. Umożliwi Ci to opłacanie faktur w sposób automatyczny.
+
 ### Jakim usługom i fakturom odpowiadają moje płatności?
 
 Płatności, których dokonujesz na naszej stronie, jak również automatyczne przelewy są zapisywane w historii operacji w Twoim Panelu klienta. W sekcji `Informacje o płatnościach`{.action} odnajdziesz daty, faktury oraz odpowiadające im kwoty.

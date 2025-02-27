@@ -113,7 +113,7 @@ If your pre-paid OVHcloud account contains credit, it will always be used by def
 
 ### Where do I find my bills?
 
-Go to the `Invoices`{.action} section, accessible via the dashboard in the OVHcloud Control Panel.
+Go to the `My bills`{.action} section, accessible via the dashboard in the OVHcloud Control Panel.
 
 #### Tips and tricks
 
@@ -138,7 +138,7 @@ Pending payments are listed in the dashboard of the OVHcloud Control Panel. You 
 
 #### Tips and tricks
 
-You can save your payment method in the `Payment methods`{.action} section. This way, your invoices will be paid for automatically.
+Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then click `My payment methods`{.action}. You can then save your payment method there. This way, your bills will be automatically settled.
 
 ### What do my payments correspond to?
 
@@ -174,7 +174,7 @@ The accounts ledger is only issued by the requesting party’s accounts departme
 
 However, OVHcloud offers you access to all of your invoices in an Excel file (.csv).
 
-To download the file, go to the `Invoices`{.action} section, accessible via the dashboard in the OVHcloud Control Panel. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
+To download the file, go to the `My bills`{.action} section, accessible via the dashboard in the OVHcloud Control Panel. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
 
 ## Go further
   

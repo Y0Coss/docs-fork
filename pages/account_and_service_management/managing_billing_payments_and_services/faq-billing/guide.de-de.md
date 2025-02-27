@@ -113,7 +113,7 @@ Wenn Ihr OVHcloud Prepaid Account ein Guthaben aufweist, wird er standardmäßig
 
 ### Wo kann ich meine Rechnungen einsehen?
 
-Gehen Sie in den Bereich `Rechnungen`{.action}, direkt zugänglich auf dem Dashboard Ihres OVHcloud Kundencenters.
+Gehen Sie in den Bereich `Meine Rechnungen`{.action}, direkt zugänglich auf dem Dashboard Ihres OVHcloud Kundencenters.
 
 #### Tipps und Tricks
 
@@ -138,7 +138,7 @@ Das Dashboard Ihres OVHcloud Kundencenters zeigt die ausstehenden Rechnungen an.
 
 #### Tipps und Tricks
 
-Sie können Ihr gewünschtes Zahlungsmittel im Bereich `Zahlungsmittel`{.action} hinterlegen. Ihre Rechnungen werden dann automatisch beglichen.
+Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager)ein, klicken Sie auf Ihren Namen oben rechts und dann auf `Meine Zahlungsarten`{.action}. Dort können Sie dann Ihre Zahlungsart eintragen. So werden Ihre Rechnungen automatisch beglichen.
 
 ### Wie kann ich meine Zahlungen nachverfolgen?
 
@@ -174,7 +174,7 @@ Das gesamte Rechnungsbuch wird ausschließlich von der Buchhaltung des Antragste
 
 OVHcloud stellt Ihnen dennoch eine Exceldatei (.csv) zur Verfügung, in der Ihnen alle Ihre Rechnungen aufgelistet werden.
 
-Diese Datei können Sie im Bereich `Rechnungen`{.action} des Dashboards Ihres OVHcloud Kundencenters herunterladen. Klicken Sie auf `Aktionen`{.action} und wählen Sie dann `als CSV exportieren`{.action} aus.
+Diese Datei können Sie im Bereich `Meine Rechnungen`{.action} des Dashboards Ihres OVHcloud Kundencenters herunterladen. Klicken Sie auf `Aktionen`{.action} und wählen Sie dann `als CSV exportieren`{.action} aus.
 
 ## Weiterführende Informationen
  

@@ -113,7 +113,7 @@ Si su cuenta de prepago de OVHcloud tiene saldo, siempre se utilizará de forma 
 
 ### ¿Dónde consultar las facturas?
 
-Acceda a la sección `Facturas`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud.
+Acceda a la sección `Mis facturas`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud.
 
 #### Ideas y consejos
 
@@ -138,7 +138,7 @@ Puede consultar los estados del pago de los servicios directamente en el panel d
 
 #### Ideas y consejos
 
-Puede configurar su forma de pago en la sección `Formas de pago`{.action}. Así sus facturas se abonarán de forma automática.
+Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Mis formas de pago`{.action}. A continuación, puede registrar su forma de pago. De este modo, sus facturas se abonarán automáticamente.
 
 ### ¿A qué corresponde un pago concreto?
 
@@ -174,7 +174,7 @@ Para consultar el libro mayor, acuda a su propio departamento de contabilidad.
 
 No obstante, OVHcloud pone a su disposición todas sus facturas a través de un archivo de Excel en formato CSV.
 
-Para descargarlo, acceda a la sección `Facturas`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud. Será redirigido a la página `Facturación`{.action}. Una vez allí, haga clic en el botón `Acciones`{.action} y seleccione `Exportar en CSV`{.action}.
+Para descargarlo, acceda a la sección `Mis facturas`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud. Será redirigido a la página `Facturación`{.action}. Una vez allí, haga clic en el botón `Acciones`{.action} y seleccione `Exportar en CSV`{.action}.
 
 ## Más información
   

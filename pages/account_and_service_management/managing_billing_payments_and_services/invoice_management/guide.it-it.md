@@ -123,7 +123,7 @@ Se hai ricevuto una fattura che non consideri legittima e vuoi richiederne il ri
 
 ### Controlla i tuoi pagamenti
 
-Visualizza lo storico dei pagamenti effettuati nelle `Fatture`{.action} e `Controllo di pagamenti`{.action}. In questo modo è possibile collegare ciascuna fattura al pagamento associato.
+Visualizza lo storico dei pagamenti effettuati nelle `Le mie fatture`{.action} e `Controllo di pagamenti`{.action}. In questo modo è possibile collegare ciascuna fattura al pagamento associato.
 
 ![Verifica dei pagamenti](images/payment_tracking.png){.thumbnail}
 
