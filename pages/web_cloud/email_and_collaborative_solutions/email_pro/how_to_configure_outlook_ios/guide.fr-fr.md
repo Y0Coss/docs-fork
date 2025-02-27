@@ -1,6 +1,6 @@
 ---
-title: "E-mail Pro - Configurer son compte e-mail sur Outlook pour iOS"
-excerpt: "Découvrez comment configurer votre adresse E-mail Pro sur l'application mobile Outlook pour iOS"
+title: "Email Pro - Configurare un account email su Outlook per iOS"
+excerpt: "Scopri come configurare il tuo indirizzo Email Pro sull’applicazione mobile Outlook per iOS"
 updated: 2025-02-13
 ---
 
@@ -23,7 +23,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
 
 ## Prérequis
 
@@ -40,7 +40,6 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 > Dans nos exemples, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 >
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
->
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche, appuyez sur `Ajouter un compte`{.action}.
 
@@ -48,7 +47,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 - **Si un compte a déjà été paramétré** :
     1. Appuyez sur le cercle contenant les initiales du compte e-mail consulté ou l'icône de maison « &#8962; » dans la partie supérieure gauche de votre écran.
-    2. Appuyez sur l'engrenage «  &#9881; » dans la partie inférieure gauche de votre écran.
+    2. Appuyez sur l'engrenage « &#9881; » dans la partie inférieure gauche de votre écran.
     3. Appuyez ensuite sur `Comptes`{.action} dans le menu **Réglages**.
     4. Appuyez sur `Ajouter un compte`{.action}.
     5. Appuyez sur `Compte de courrier`{.action}.
@@ -69,7 +68,7 @@ Suivez les étapes d'installation en cliquant sur les onglets ci-dessous :
 >> Vous avez deux possibilités:
 >>
 >> - Si vous avez la mention « **IMAP** » en haut de la page, passez à l'étape 3.
->> - Si la fenêtre de paramètre du compte affiche « **Exchange** » en haut, appuyez sur le bouton `?` dans le coin supérieur droit de l'écran **(1)**, puis choisissez `Changer de fournisseur de compte`{.action} **(2)**. Sélectionnez alors `IMAP`**(3)** et passez à l'étape 3.
+>> - Si la fenêtre de paramètre du compte affiche « **Exchange** » en haut, appuyez sur le bouton `?` dans le coin supérieur droit de l'écran **(1)**, puis choisissez `Changer de fournisseur de compte`{.action} **(2)**. Sélectionnez alors `IMAP` **(3)** et passez à l'étape 3.
 >>
 >> ![outlook iOS](images/outlook-app-ios-add-step02.png){.thumbnail .w-400 .h-600}
 >>
@@ -157,7 +156,7 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 - **Port** : 587
 - **Type de sécurité** : SSL/TLS
 
-## Aller plus loin
+## Aller plus loin <a name="gofurther"></a>
 
 > [!primary]
 >
