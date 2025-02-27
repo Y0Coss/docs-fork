@@ -1,11 +1,11 @@
 ---
 title: Premiers pas avec VSPC
-excerpt: Découvrez VSPC, une plateforme cloud fournie par Veeam qui vous aide à gérer les sauvegardes et la protection des données.
-updated: 2025-02-26
+excerpt: Découvrez Veeam Service Provider Console (VSPC), une plateforme cloud fournie par Veeam qui vous aide à gérer les sauvegardes et la protection des données
+updated: 2025-02-27
 ---
 
 > [!primary]
-> VSPC sur OVHcloud est actuellement en phase alpha. Ce guide est susceptible d’évoluer et d’être mis à jour en fonction des avancées de nos équipes en charge de ce produit.
+> La solution VSPC pour OVHcloud est actuellement en phase alpha. Ce guide est susceptible d’évoluer et d’être mis à jour en fonction des avancées de nos équipes en charge de ce produit.
 
 ## Objectif
 
@@ -13,7 +13,7 @@ La **Veeam Service Provider Console (VSPC)** est une plateforme cloud qui permet
 
 Avec VSPC, vous pouvez surveiller les sauvegardes, créer des politiques de sauvegarde personnalisées et vous assurer que vos serveurs sont toujours protégés, le tout depuis un tableau de bord unique.
 
-**Ce guide est une introduction à VSPC.**  
+**Ce guide est une introduction à VSPC.**
 
 Il vous accompagnera dans vos premiers pas avec VSPC, notamment pour :
 
@@ -28,7 +28,7 @@ Il vous accompagnera dans vos premiers pas avec VSPC, notamment pour :
 
 ## Prérequis
 
-- Des droits administratifs sur le [Manager OVHcloud](https://www.ovhcloud.com/control-panel) pour gérer les ressources.
+- Des droits administratifs sur [l'espace cliet OVHcloud](/links/manager) pour gérer les ressources.
 - Un serveur compatible avec les Veeam Backup Agents, exécutant un [système d’exploitation pris en charge](https://helpcenter.veeam.com).
 - Un pare-feu configuré pour autoriser la communication entre VSPC et vos serveurs gérés.
 
@@ -36,12 +36,11 @@ Il vous accompagnera dans vos premiers pas avec VSPC, notamment pour :
 
 ### Étape 1 : Accéder au portail VSPC
 
-1. Rendez-vous sur le lien du portail VSPC fourni par OVHcloud (ex. `https://...`).
+Rendez-vous sur le lien du portail VSPC fourni par OVHcloud et connectez-vous avec les identifiants administratifs attribués à votre infrastructure Hosted Private Cloud. 
 
-2. Connectez-vous avec les identifiants administratifs attribués à votre infrastructure Hosted Private Cloud.
-    - Si vous ne disposez pas des identifiants, contactez le support OVHcloud ou votre gestionnaire de compte.
+Si vous ne disposez pas des identifiants, contactez l'équipe en charge du produit sur [Discord](https://discord.gg/ovhcloud) ou votre technical account manager.
 
-3. Les principaux éléments du tableau de bord incluent :
+Les principaux éléments du tableau de bord incluent :
 
 - **Alarmes actives** : Affichage et personnalisation des alertes pour surveiller les opérations clés.
 - **Charges de travail protégées** : Nombre total de charges de travail sécurisées dans vos infrastructures de sauvegarde et cloud.
@@ -57,17 +56,18 @@ Il vous accompagnera dans vos premiers pas avec VSPC, notamment pour :
 
 ### Étape 2 : Télécharger l’agent de gestion
 
-1. Accédez à la section **Ordinateurs découverts** dans VSPC.
+Accédez à la section **Ordinateurs découverts** dans VSPC.
 
 ![Panneau des ordinateurs découverts](images/download-agent-step01.png){.thumbnail}
 
-2. Cliquez sur `Télécharger l’agent de gestion`, puis sélectionnez `Créer un lien de téléchargement`.
+Cliquez sur `Télécharger l’agent de gestion`, puis sélectionnez `Créer un lien de téléchargement`.
 
 ![Créer un lien de téléchargement](images/download-agent-step02.png){.thumbnail}
 
-3. Options disponibles :
-    - Copier le lien de téléchargement.
-    - Télécharger directement l’agent.
+Options disponibles :
+
+- Copier le lien de téléchargement.
+- Télécharger directement l’agent.
 
 ![Copier le lien de téléchargement](images/download-agent-step03.png){.thumbnail}
 
@@ -84,16 +84,16 @@ Il vous accompagnera dans vos premiers pas avec VSPC, notamment pour :
 ### Étape 3 : Installer l’agent de gestion
 
 1. Ouvrez le lien généré sur le serveur cible pour télécharger l’agent de gestion.
-2. Exécutez le fichier téléchargé sur le serveur cible.
-3. Suivez les étapes d’installation.
+1. Exécutez le fichier téléchargé sur le serveur cible.
+1. Suivez les étapes d’installation.
     - Pour les systèmes Linux, utilisez l’installateur `.rpm` ou `.deb` selon la distribution.
-4. Une fois installé, le serveur se connecte automatiquement à VSPC.
-5. Vérifiez que le serveur apparaît dans la liste **Ordinateurs découverts** avec une barre de progression indiquant l’installation.
+1. Une fois installé, le serveur se connecte automatiquement à VSPC.
+1. Vérifiez que le serveur apparaît dans la liste **Ordinateurs découverts** avec une barre de progression indiquant l’installation.
 
 ![installing management agent progress bar](images/installing-agent-progress-bar.png){.thumbnail}
 
 > [!primary]
-> Certaines distributions OVHcloud peuvent rencontrer des problèmes lors de l’installation (ex. erreurs UUID). Contactez le support OVHcloud si l’agent ne parvient pas à s’installer ou n’apparaît pas dans le tableau de bord.
+> Certaines distributions OVHcloud peuvent rencontrer des problèmes lors de l’installation (ex. erreurs UUID). Contactez l'équipe en charge du produit sur [Discord](https://discord.gg/ovhcloud) si l’agent ne parvient pas à s’installer ou n’apparaît pas dans le tableau de bord.
 
 ### Étape 4 : Vérifier l’installation de l’agent
 
@@ -102,33 +102,34 @@ Il vous accompagnera dans vos premiers pas avec VSPC, notamment pour :
 
 ### Étape 5 : Modification des politiques de sauvegarde
 
-OVHcloud propose une **politique de sauvegarde par défaut** incluant un espace de stockage S3 de 2 To. Actuellement, les utilisateurs peuvent modifier cette politique par défaut, mais ne peuvent pas en créer de nouvelles ni ajouter leurs propres buckets S3.
+OVHcloud propose une **politique de sauvegarde par défaut** incluant un espace de stockage Object Storage compatible S3<sup>1</sup> de 2 To. Actuellement, les utilisateurs peuvent modifier cette politique par défaut, mais ne peuvent pas en créer de nouvelles ni ajouter leurs propres buckets S3.
 
 Pour consulter ou configurer la politique :
 
-1. Accédez à la section `Backup Job`{.action} dans le tableau de bord VSPC.
+1\. Accédez à la section `Backup Job`{.action} dans le tableau de bord VSPC.
 
-2. Cliquez sur la valeur sous `Successful Jobs`{.action}. Une fenêtre s'ouvrira affichant le nom de la politique par défaut (ex. "FCO – Windows …").
+2\. Cliquez sur la valeur sous `Successful Jobs`{.action}. Une fenêtre s'ouvrira affichant le nom de la politique par défaut (ex. `FCO – Windows …`).
 
 ![Section des tâches de sauvegarde](images/backup-policy-step01.png){.thumbnail}
 
-3. Sélectionnez la **politique de sauvegarde** que vous souhaitez modifier. Une nouvelle fenêtre affichera les composants de la politique.
+3\. Sélectionnez la **politique de sauvegarde** que vous souhaitez modifier. Une nouvelle fenêtre affichera les composants de la politique.
 
 ![Section des tâches réussies](images/backup-policy-step02.png){.thumbnail}
 
 Voici les composants que vous pouvez ajuster :
+
 - **Mode d’exploitation** : Définissez le type d’hôte à sauvegarder.
 - **Mode de sauvegarde** : Sélectionnez les données spécifiques à sauvegarder (ex. serveur entier, partition spécifique).
-- **Destination** : Définissez l’emplacement de stockage des sauvegardes (par défaut, un bucket S3 de 2 To).
+- **Destination** : Définissez l’emplacement de stockage des sauvegardes (par défaut, un bucket Object Storage compatible S3 de 2 To).
 - **Identifiants du dépôt** : Configurez l’authentification pour le dépôt de sauvegarde.
 - **Politique de rétention** : Déterminez la durée de conservation des sauvegardes (par défaut, 7 jours).
 - **Cache de sauvegarde** : Désactivé par défaut.
 - **Mode de traitement des invités** :
-    - **Traitement des applications** : Garantit la cohérence des applications compatibles VSS en gérant les journaux d’application pour la reprise après sinistre.
+    - **Traitement des applications** : Garantit la cohérence des applications compatibles VSS en gérant les logs d’application pour la reprise après sinistre.
     - **Indexation système** : Permet la navigation fichier par fichier et la restauration sélective.
 - **Planification** : Les sauvegardes s’exécutent quotidiennement à 22h, avec jusqu’à trois tentatives de reprise en cas d’échec.
 
-Avant de finaliser, un écran récapitulatif affichera tous les paramètres pour vérification.
+Avant de finaliser la configuration, un écran récapitulatif affichera tous les paramètres pour vérification.
 
 ![Écran récapitulatif de la politique de sauvegarde](images/backup-policy-step03.png){.thumbnail}
 
@@ -137,38 +138,44 @@ Avant de finaliser, un écran récapitulatif affichera tous les paramètres pour
 
 ### Scénarios de personnalisation des politiques
 
-#### **Exemple Windows : Sauvegarde d’une partition spécifique**
-- Configurez la politique pour ne sauvegarder que le lecteur `C:`.
+#### **Exemple Windows - Sauvegarde d’une partition spécifique**
+
+Configurez la politique pour ne sauvegarder que le lecteur `C:` :
+
 1. Accédez à `Successful Jobs`{.action} et sélectionnez le serveur.
 2. Modifiez la politique de sauvegarde en choisissant `Sauvegarde de partition`.
 3. Sélectionnez la partition `C:` et excluez les autres.
 
-#### **Exemple Linux : Sauvegarde de répertoires spécifiques**
-- Ciblez des répertoires critiques comme `/var/www`, en excluant `/tmp`.
+#### **Exemple Linux - Sauvegarde de répertoires spécifiques**
+
+Ciblez des répertoires critiques comme `/var/www`, en excluant `/tmp` :
+
 1. Accédez à `Successful Jobs`{.action} et sélectionnez le serveur Linux.
 2. Attribuez ou modifiez une politique pour inclure `/var/www` et exclure `/tmp`.
 
 ### Étape 6 : Attribution des politiques aux serveurs
 
-1. Accédez à `Managed Computers`{.action} et sélectionnez`Backup Agents`{.action}.
+1\. Accédez à `Managed Computers`{.action} et sélectionnez`Backup Agents`{.action}.
 
 ![Panneau d’attribution des politiques](images/assigning-policy-step01.png){.thumbnail}
 
-2. Choisissez le serveur dans la liste.
-3. Cliquez sur `Assign`{.action}, sélectionnez la politique souhaitée et confirmez.
+2\. Choisissez le serveur dans la liste.
+3\. Cliquez sur `Assign`{.action}, sélectionnez la politique souhaitée et confirmez.
 
 ![Panneau de confirmation d’attribution de la politique](images/assigning-policy-step02.png){.thumbnail}
 
-4. Consultez le résumé des politiques assignées en cliquant sur `Show`{.action}.
+4\. Consultez le résumé des politiques assignées en cliquant sur `Show`{.action}.
 
 ![Résumé de l’attribution des politiques](images/assigning-policy-step03.png){.thumbnail}
 
 ### Étape 7 : Gestion des tâches de sauvegarde
 
 #### **Sauvegardes planifiées**
+
 - Les sauvegardes s’exécutent automatiquement selon la planification définie.
 
 #### **Sauvegardes à la demande**
+
 1. Dans la section `Backup Job`{.action}, sélectionnez le serveur.
 2. Cliquez sur `Start`{.action} pour lancer immédiatement une sauvegarde.
 
@@ -182,27 +189,28 @@ Avant de finaliser, un écran récapitulatif affichera tous les paramètres pour
 La restauration de données depuis VSPC vous permet de récupérer des fichiers, dossiers ou systèmes entiers perdus ou corrompus. Suivez ces étapes pour effectuer une restauration.
 
 #### **1. Accéder à la liste des restaurations**
+
 1. Connectez-vous à l’interface VSPC et accédez à la section `Protected Data`{.action}.
-2. Sélectionnez la `Backup Job`{.action} contenant les données à restaurer.
-3. Cliquez sur  `File-Level Restore`{.action} pour commencer.
+2. Sélectionnez le `Backup Job`{.action} contenant les données à restaurer.
+3. Cliquez sur `File-Level Restore`{.action} pour commencer.
 
 ![Sélection du point de restauration](images/restoration_1.png){.thumbnail}
 
 #### **2. Sélectionner le point de restauration**
 
-1. Accédez à la section `Restore List`{.action}.
+1\. Accédez à la section `Restore List`{.action}.
 
 Vous verrez l’écran suivant :
 
 ![Sélection du point de restauration](images/restoration_2.png){.thumbnail}
 
-2. Cliquez sur `Select Restore Point`{.action} pour afficher le calendrier.
-3. Le calendrier apparaîtra, affichant tous les points de restauration disponibles.
+2\. Cliquez sur `Select Restore Point`{.action} pour afficher le calendrier.
+3\. Le calendrier apparaîtra, affichant tous les points de restauration disponibles.
 
 ![Calendrier](images/restoration_3.png){.thumbnail}
 
-4. Sélectionnez la date souhaitée dans le calendrier et cliquez sur `Select`{.action}.
-5. Une liste des fichiers, dossiers ou composants système du point de restauration sélectionné s’affichera.
+4\. Sélectionnez la date souhaitée dans le calendrier et cliquez sur `Select`{.action}.
+5\. Une liste des fichiers, dossiers ou composants système du point de restauration sélectionné s’affichera.
 
 ![Liste](images/restoration_5.png){.thumbnail}
 
@@ -210,27 +218,31 @@ Vous verrez l’écran suivant :
 > Assurez-vous que l’environnement cible dispose d’un espace de stockage suffisant et qu’il n’y a pas de conflits avec la destination de restauration.
 
 #### **3. Choisir les options de restauration**
-1. Développez la liste pour localiser les fichiers ou dossiers spécifiques, sélectionnez le fichier à restaurer et cliquez sur `Add to the restore list`{.action}.
+
+1\. Développez la liste pour localiser les fichiers ou dossiers spécifiques, sélectionnez le fichier à restaurer et cliquez sur `Add to the restore list`{.action}.
 
 ![Liste développée](images/restoration_6.png){.thumbnail}
 
-En haut de l’écran, vous pouvez voir le nombre de fichiers ajoutés :  
+En haut de l’écran, vous pouvez voir le nombre de fichiers ajoutés :
 
 ![Fichiers ajoutés à la restauration](images/restoration_7.png){.thumbnail}
 
-2. Ajoutez les éléments sélectionnés à la **Liste de restauration** :
-    - **Écraser** : Remplace les fichiers originaux sur le système cible.
-    - **Conserver** : Sauvegarde les fichiers restaurés dans le même répertoire, préfixés par `RESTORED-`.
-    - **Télécharger** : Récupère les fichiers restaurés localement pour une application manuelle.
+2\. Ajoutez les éléments sélectionnés à la **Liste de restauration** :
+
+- **Écraser** : Remplace les fichiers originaux sur le système cible.
+- **Conserver** : Sauvegarde les fichiers restaurés dans le même répertoire, préfixés par `RESTORED-`.
+- **Télécharger** : Récupère les fichiers restaurés localement pour une application manuelle.
 
 ![Options de restauration](images/restoration_8.png){.thumbnail}
 
 #### **4. Lancer la restauration**
+
 1. Vérifiez la **Liste de restauration** pour vous assurer de l’exactitude des fichiers sélectionnés.
 2. Confirmez les paramètres et cliquez sur `Restore`{.action} pour démarrer le processus.
 3. Suivez la progression en temps réel via le tableau de bord VSPC.
 
 #### **5. Vérifier la restauration**
+
 1. Une fois la restauration terminée, accédez à l’onglet `Audit Logs`{.action} pour consulter les enregistrements détaillés du processus.
 2. Vérifiez l’absence d’erreurs ou d’avertissements et assurez-vous que les données restaurées sont fonctionnelles.
 
@@ -244,3 +256,5 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 Posez vos questions, donnez votre avis et échangez directement avec l’équipe en charge des services Hosted Private Cloud sur notre canal [Discord](https://discord.gg/ovhcloud).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

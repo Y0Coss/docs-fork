@@ -36,9 +36,11 @@ It will walk you through the first steps to get started with VSPC, including:
 
 ### Step 1: Accessing the VSPC portal
 
-1. Visit the VSPC portal link provided by OVHcloud.
-2. Log in using the administrative credentials assigned to your Hosted Private Cloud infrastructure. If credentials are missing, contact our product teams on [Discord](https://discord.gg/ovhcloud) or your account manager.
-3. Key elements of the dashboard include:
+Visit the VSPC portal link provided by OVHcloud and log in using the administrative credentials assigned to your Hosted Private Cloud infrastructure. 
+
+If credentials are missing, contact our product teams on [Discord](https://discord.gg/ovhcloud) or your account manager.
+
+Key elements of the dashboard include:
 
 - **Active alarms**: Displays and allows customization of alarms to monitor key operations.
 - **Protected workloads**: Shows the total number of workloads safeguarded in your backup and cloud infrastructures.
@@ -54,17 +56,18 @@ It will walk you through the first steps to get started with VSPC, including:
 
 ### Step 2: Downloading the Management Agent
 
-1\. Navigate to the `Discovered Computers`{.action} section in the VSPC.
+Navigate to the `Discovered Computers`{.action} section in the VSPC.
 
 ![discovered computers panel](images/download-agent-step01.png){.thumbnail}
 
-2\. Click `Download Management Agent`{.action}, then select `Create Download Link`{.action}.
+Click `Download Management Agent`{.action}, then select `Create Download Link`{.action}.
 
 ![create download link](images/download-agent-step02.png){.thumbnail}
 
-- Options available:
-    - Copy the download link.
-    - Download the agent directly.
+Available options :
+
+- Copy the download link.
+- Download the agent directly.
 
 ![copy download link](images/download-agent-step03.png){.thumbnail}
 
@@ -105,7 +108,7 @@ To review or configure the policy:
 
 1\. Go to the `Backup Job`{.action} section in the VSPC dashboard.
 
-2\. Click the value under `Successful Jobs`{.action} . A window will open showing the default policy name (e.g., “FCO – Windows …”).
+2\. Click the value under `Successful Jobs`{.action} . A window will open showing the default policy name (e.g., `FCO – Windows …`).
 
 ![backup job section](images/backup-policy-step01.png){.thumbnail}
 
@@ -135,17 +138,17 @@ Before finalizing, a summary screen will display all settings for review.
 
 ### Policy customization scenarios
 
-#### **Windows example: Partition-level backup**
+#### **Windows example - Partition-level backup**
 
-- Configure the policy to back up only the `C:` drive.
+Configure the policy to back up only the `C:` drive:
 
 1. Navigate to `Backup Job`{.action} and select the server.
 2. Modify the backup policy by selecting `Partition Backup`.
 3. Choose the `C:` partition and exclude others.
 
-#### **Linux example: Directory-level backup**
+#### **Linux example - Directory-level backup**
 
-- Target critical directories like `/var/www`, excluding `/tmp`.
+Target critical directories like `/var/www`, excluding `/tmp`:
 
 1. Navigate to `Backup Job`{.action} and select the Linux server.
 2. Assign or modify a policy to include `/var/www` and exclude `/tmp`.
