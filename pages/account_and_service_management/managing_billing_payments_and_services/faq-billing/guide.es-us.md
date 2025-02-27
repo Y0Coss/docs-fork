@@ -1,7 +1,7 @@
 ---
 title: Preguntas frecuentes sobre la facturación y el pago
 excerpt: Encuentre las preguntas más frecuentes sobre la facturación y el pago
-updated: 2024-12-23
+updated: 2025-03-04
 ---
 
 ## Objetivo
@@ -10,7 +10,7 @@ Aquí encontrará las preguntas más frecuentes sobre la facturación y el pago 
 
 ### ¿Cuáles son mis datos de facturación?
 
-Para consultar la lista de contactos de sus servicios, acceda a la sección `Gestión de contactos`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud.
+Puede consultar la lista de contactos de sus servicios directamente desde el [área de cliente de OVHcloud](/links/manager). Haga clic en su nombre en la esquina superior derecha y luego en `Mis contactos`{.action}.
 
 #### Ideas y consejos
 
@@ -18,7 +18,7 @@ Si desea más información sobre la gestión de los contactos, consulte nuestra 
 
 ### ¿Cómo modificar los datos de facturación?
 
-Los datos de facturación son los que haya indicado en su cuenta de cliente. Si desea actualizarlos para sus próximas facturas, solo tiene que editarlos en la sección `Mi cuenta`{.action} del área de cliente de OVHcloud.
+Los datos de facturación son los que haya indicado en su cuenta de cliente. Para sus próximas facturas, solo tiene que actualizar esta información. Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione  en `Acceder a mi cuenta`{.action}.
 
 Por motivos legales, no es posible modificar una factura ya emitida. No obstante, si su solicitud se debe a un error nuestro, contacte con nosotros mediante un tíquet de soporte.
 

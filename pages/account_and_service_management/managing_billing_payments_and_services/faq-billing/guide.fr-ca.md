@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la facturation et le paiement
 excerpt: Retrouvez les questions les plus fréquemment posées sur la facturation et le paiement
-updated: 2024-12-23
+updated: 2025-03-04
 ---
 
 ## Objectif
@@ -70,7 +70,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur vo
 
 ### Comment mettre à jour mon moyen de paiement ?
 
-Connectez-vous à votre espace client OVHcloud, puis directement sur le tableau de bord, cliquez sur la rubrique `Moyens de paiement`{.action}. Vous pourrez y ajouter ou supprimer un moyen de paiement (Carte bancaire, Paypal ou prélèvement SEPA).
+Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes moyens de paiement`{.action}. Vous pourrez y ajouter ou supprimer un moyen de paiement (Carte bancaire, Paypal ou prélèvement SEPA).
 
 En cas de demande de prélèvement SEPA, vous recevrez dans les 24 à 48h sur l’adresse e-mail de votre compte OVHcloud, un e-mail comportant un lien de signature électronique de votre mandat de prélèvement. Attention, le propriétaire du compte bancaire doit être identique au propriétaire du compte OVHcloud.
 

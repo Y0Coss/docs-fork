@@ -1,7 +1,7 @@
 ---
 title: FAQ fatturazione e pagamento
 excerpt: Scopri le domande più frequenti su fatturazione e pagamento
-updated: 2024-12-23
+updated: 2025-03-04
 ---
 
 ## Obiettivo
@@ -10,7 +10,7 @@ Per maggiori informazioni, consulta le domande relative alla fatturazione e al p
 
 ### Come conoscere l’account di fatturazione?
 
-La lista dei contatti associati ai servizi sono indicati nella sezione `I tuoi contatti`{.action} dello Spazio Cliente.
+La lista dei contatti dei tuoi servizi è disponibile direttamente dal tuo [Spazio Cliente OVHcloud](/links/manager). Clicca sul tuo nome in alto a destra e poi su `I miei contatti`{.action}.
 
 #### Consigli e suggerimenti
 

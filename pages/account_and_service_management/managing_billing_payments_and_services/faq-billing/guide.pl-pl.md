@@ -1,7 +1,7 @@
 ---
 title: FAQ dotyczący płatności i fakturowania
 excerpt: Znajdziesz najczęściej zadawane pytania dotyczące płatności i fakturowania
-updated: 2024-12-23
+updated: 2025-03-04
 ---
 
 ## Wprowadzenie
@@ -10,7 +10,7 @@ Znajdziesz tutaj najczęściej zadawane pytania dotyczące fakturowania i płatn
 
 ### Kto jest kontaktem księgowym przypisanym do usługi?
 
-Listę kontaktów przypisanych do poszczególnych usług znajdziesz w sekcji `Moje kontakty`{.action} dostępnej na dashboardzie w Panelu klienta.
+Lista kontaktów dla Twoich usług jest dostępna bezpośrednio w [Panelu klienta OVHcloud](/links/manager). Kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje kontakty`{.action}.
 
 #### Wskazówki i porady
 

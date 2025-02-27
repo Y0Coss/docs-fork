@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre faturação e pagamento
 excerpt: Encontre as questões mais frequentes sobre faturação e pagamento
-updated: 2024-12-23
+updated: 2025-03-04
 ---
 
 ## Objetivo
@@ -10,7 +10,7 @@ Veja aqui as questões mais frequentes sobre faturação e pagamento para os seu
 
 ### Qual é a minha conta de faturação?
 
-A lista dos contactos dos seus serviços está disponível na secção `Contactos`{.action}, que pode ser acedida diretamente através do painel de controlo da Área de Cliente OVHcloud.
+A lista dos contactos dos seus serviços está disponível diretamente a partir do seu [Área de Cliente OVHcloud](/links/manager). Clique no seu nome no canto superior direito e, a seguir, em `Contactos`{.action}.
 
 #### Truques e dicas
 
