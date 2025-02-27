@@ -1,7 +1,7 @@
 ---
 title: Configurer un VPN via une Gateway Edge
 excerpt: Utilisez le service VPN de la NSX-v Edge Gateway pour interconnecter des sites distants
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

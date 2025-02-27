@@ -1,7 +1,7 @@
 ---
 title: Configurer les groupes d’objets NSX-v
 excerpt: Regrouper plusieurs objets en un seul pour éclaircir vos interfaces
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

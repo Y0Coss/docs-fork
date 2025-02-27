@@ -1,7 +1,7 @@
 ---
 title: "Configure a Standalone Edge for L2 to L2VPN"
 excerpt: "Deploy an NSX Standalone Edge server to extend the L2 to L2VPN range to an NSX infrastructure"
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

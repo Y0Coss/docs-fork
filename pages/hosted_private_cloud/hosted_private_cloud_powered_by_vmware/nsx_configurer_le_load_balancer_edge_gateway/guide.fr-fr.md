@@ -1,7 +1,7 @@
 ---
 title: Configurer le Load Balancer NSX-v Edge
 excerpt: Utiliser le service d'équilibrage de charge du NSX-v Edge
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

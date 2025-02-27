@@ -1,6 +1,6 @@
 ---
 title: "Comment éditer la fonction HA d'une NSX-v Edge"
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

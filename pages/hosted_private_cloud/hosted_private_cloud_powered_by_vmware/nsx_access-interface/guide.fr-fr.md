@@ -1,7 +1,7 @@
 ---
 title: Accéder à l’interface de gestion NSX-v
 excerpt: Découvrez l'interface de NSX-v
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

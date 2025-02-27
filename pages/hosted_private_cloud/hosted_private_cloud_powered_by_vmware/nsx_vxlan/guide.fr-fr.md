@@ -1,7 +1,7 @@
 ---
 title: Comment créer un VxLAN
 excerpt: Découvrez comment créer des VxLANs sur votre NSX Edge Gateway
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

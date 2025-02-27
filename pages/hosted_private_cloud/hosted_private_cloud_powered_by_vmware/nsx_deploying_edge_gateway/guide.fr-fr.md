@@ -1,7 +1,7 @@
 ---
 title: Comment déployer une NSX-v Edge Gateway
 excerpt: "Découvrez comment déployer une edge gateway NSX via l'interface vSphere"
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

@@ -1,7 +1,7 @@
 ---
 title: NSX-v Edge NAT configuration
 excerpt: Using NAT rules to redirect traffic
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

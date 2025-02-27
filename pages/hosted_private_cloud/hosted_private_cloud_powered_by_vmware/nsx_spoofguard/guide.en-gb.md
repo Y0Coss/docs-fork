@@ -1,7 +1,7 @@
 ---
 title: Avoid IP spoofing with the SpoofGuard service
 excerpt: Set up policies to detect IP spoofing
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

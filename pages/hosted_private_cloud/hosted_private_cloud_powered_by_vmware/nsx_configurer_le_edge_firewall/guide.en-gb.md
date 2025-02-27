@@ -1,7 +1,7 @@
 ---
 title: NSX-v Edge Firewall Configuration
 excerpt: creating firewall rules  
-updated: 2024-02-24
+updated: 2025-02-24
 ---
 
 > [!alert]

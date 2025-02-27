@@ -1,7 +1,7 @@
 ---
 title: 'Understanding the “Controller VM deleted” error message'
 excerpt: 'Find out what the “Controller VM deleted” error message means'
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

@@ -1,7 +1,7 @@
 ---
 title: Comprendre l'erreur "VM du contrôleur supprimée"
 excerpt: Découvrez ce que signifie l'erreur "VM du contrôleur supprimée"
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

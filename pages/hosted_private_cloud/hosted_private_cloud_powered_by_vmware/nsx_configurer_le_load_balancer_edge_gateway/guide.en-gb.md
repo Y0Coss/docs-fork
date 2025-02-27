@@ -1,7 +1,7 @@
 ---
 title: NSX-v Edge Load Balancer Configuration
 excerpt: Simple steps to use the NSX-v Edge load balancing service
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

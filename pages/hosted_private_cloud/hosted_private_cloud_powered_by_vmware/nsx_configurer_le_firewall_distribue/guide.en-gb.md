@@ -1,6 +1,6 @@
 ---
 title: NSX-v Distributed Firewall Configuration
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

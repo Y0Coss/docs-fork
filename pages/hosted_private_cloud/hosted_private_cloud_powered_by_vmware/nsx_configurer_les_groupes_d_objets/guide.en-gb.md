@@ -1,7 +1,7 @@
 ---
 title: How to set up NSX-v groups
 excerpt: Create groups to simplify rules management
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

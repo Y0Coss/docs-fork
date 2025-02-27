@@ -1,7 +1,7 @@
 ---
 title: Configurer le DHCP sur une Edge NSX-v
 excerpt: "Découvrez comment attribuer des IPs à vos machines virtuelles à l'aide du service DHCP"
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

@@ -1,7 +1,7 @@
 ---
 title: Eviter l'usurpation d'IP avec le service SpoofGuard
 excerpt: Paramétrez des politiques pour éviter l'usurpation d'IP
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

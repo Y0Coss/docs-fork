@@ -1,7 +1,7 @@
 ---
 title: NSX-v Edge Gateway VPN Configuration 
 excerpt: Use the NSX-v Edge VPN service to connect to remote sites
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

@@ -1,7 +1,7 @@
 ---
 title: Accessing the NSX-v interface
 excerpt: Find out how to use the NSX-v interface
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]

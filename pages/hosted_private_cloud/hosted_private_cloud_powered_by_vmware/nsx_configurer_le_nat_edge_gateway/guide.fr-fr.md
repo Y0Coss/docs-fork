@@ -1,7 +1,7 @@
 ---
 title: Configurer le NAT NSX-v Edge
 excerpt: Redirigez votre trafic à l'aide des règles NAT
-updated: 2025-02-24
+updated: 2025-02-27
 ---
 
 > [!alert]
