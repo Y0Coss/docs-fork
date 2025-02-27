@@ -1,7 +1,7 @@
 ---
 title: BGP Service Configuration
 excerpt: By leveraging BGP, you gain full control over your routing policies and network resilience. Follow this guide to set up and optimize your BGP session seamlessly.
-updated: 2025-02-21
+updated: 2025-02-27
 ---
 
 ## Introduction
