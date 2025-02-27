@@ -45,17 +45,17 @@ Attention, le vRack ne doit contenir que des serveurs dans une zone de disponibi
 
 Vous devez nous fournir les paramètres suivants afin que nous puissions configurer le service BGP côté OVHcloud :
 
-| Paramètre	| Value (exemple) | Netmask | Description | Commentaire |
+| Paramètre	| Value (exemple) | Description | Commentaire |
 | :--- | :--- | :--- | :--- |
 | Localisation	| RBX | Emplacement de livraison du service | |
 | ID vRack | 937 | ID vRack sur lequel les sessions BGP vont s'exécuter | |
 | BYOIP | Y | Bloc d’IP provenant du client ?	| |
 | Bloc IP | 17.13.2.0 | Le bloc d'IP à annoncer | Netmask: /24 <br> Taille de plage autorisée : <br>&bull; IP OVHcloud (/24 à /30) <br>&bull; plage importée BYOIP (/19 à /24) <br>&bull; IPv6 (/56) |
-| Sous-réseau privé | 10.0.0.0 | Sous-réseau réservé pour les IP des pairs BGP <br> 4 dernières adresses seront utilisées par OVHcloud pour les pairs BGP côté OVHcloud | Netmask: /28 |
-| Peering IP 1 | 10.0.0.1 | L'IP du client doit être explicitement spécifiée par le client (pour le monitoring côté OVH) | |
-| Peering IP 2 | 10.0.0.2 | L'IP du client doit être explicitement spécifiée par le client (pour le monitoring côté OVH) | |
-| Peering IP 3 | 10.0.0.3 | L'IP du client doit être explicitement spécifiée par le client (pour le monitoring côté OVH) | |
-| Peering IP 4 | 10.0.0.4 | L'IP du client doit être explicitement spécifiée par le client (pour le monitoring côté OVH) | |
+| Sous-réseau privé | 10.0.0.0 | Sous-réseau réservé aux les IP des pairs BGP <br> les 4 dernières adresses seront utilisées par OVHcloud pour les pairs BGP côté OVHcloud | Netmask: /28 |
+| Peering IP 1 | 10.0.0.1 | L'IP du client doit être spécifiée par le client (pour le monitoring côté OVH) | |
+| Peering IP 2 | 10.0.0.2 | L'IP du client doit être spécifiée par le client (pour le monitoring côté OVH) | |
+| Peering IP 3 | 10.0.0.3 | L'IP du client doit être spécifiée par le client (pour le monitoring côté OVH) | |
+| Peering IP 4 | 10.0.0.4 | L'IP du client doit être spécifiée par le client (pour le monitoring côté OVH) | |
 
 ### Étape 5 : livraison du service BGP
 
@@ -74,6 +74,17 @@ Voici une architecture simple qui vous permet d'effectuer un load balancing de v
 ![Architecture BGP LB](images/BGP_LB_archi_2025.png){.thumbnail}
 
 Pour réaliser cette installation, vous devez installer un daemon BGP, comme FRR, sur chaque hôte.
+
+### Paramètres
+
+| Paramètre | Description |
+| :--- | :--- |
+| **OVHcloud_ASN** | ASN privé utilisé par les Edges OVHcloud |
+| **CUSTOMER_ASN** | ASN privé fourni par OVHcloud. |
+| **CUSTOMER_PREFIX_V4 <br> CUSTOMER_PREFIX_V6** | Préfixes publics alloués à l'ustilisation d'IPv4 et IPv6 |
+| **RS_IPV4 <br> RS_IPV6** | Adresses IP RS du client dans la plage privée/ULA, utilisées pour l'appairage BGP et la connectivité à l'intérieur du vRack. |
+| **EDGE_IPV4 <br> EDGE_IPV6** | Adresses IP des Edges OVHcloud dans la plage privée/ULA, utilisées pour l'appairage BGP et la connectivité à l'intérieur du vRack client. |
+| **HOST_IPV4 <br> HOST_IPV6** | Autres adresses IP des hôtes client dans la plage privée/ULA, utilisées comme Next Hop BGP et comme pairs à l'intérieur du vRack |
 
 ### Configuration d'un daemon BGP (FRR)
 
