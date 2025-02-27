@@ -371,13 +371,13 @@ openstack server show <ID-instance>
 
 <a name="detach-interface"></a>
 
-### Eine Netzwerkschnittstelle lösen
+### Eine Netzwerkschnittstelle entfernen
 
 > [!warning]
 > Wenn Sie eine Netzwerkschnittstelle trennen, wird diese sofort gelöscht.
 >
-> Es ist jedoch wichtig zu beachten, dass, wenn Sie das "Ext-Net" Interface (öffentliche IP) abtrennen, diese Adresse freigegeben und in Umlauf gebracht wird. Sie könnten es sich also nicht selbst zuweisen.
-><br>Diese Aktion ist nur dann notwendig, wenn Sie Ihren Server im vRack (privates Netzwerk) isolieren oder ihn aus einem oder mehreren VLANs herausnehmen möchten.
+> Es ist jedoch wichtig zu beachten, dass durch das Entfernen des "Ext-Net" Interface dessen öffentliche IP-Adresse freigegeben und wieder verfügbar wird. Sie können die Adresse nicht gezielt zuweisen.  
+> Diese Aktion ist nur dann notwendig, wenn Sie Ihren Server im vRack (privates Netzwerk) isolieren oder ihn aus einem oder mehreren VLANs herausnehmen möchten.
 >
 
 Um ein Interface zu trennen, müssen Sie zunächst den Neutron-Port identifizieren, der erstellt wurde.
