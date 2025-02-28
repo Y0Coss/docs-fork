@@ -1,7 +1,7 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-updated: 2025-02-27
+updated: 2025-02-28
 ---
 
 ## Objectif
@@ -67,12 +67,11 @@ Nous pouvons refuser l’utilisation d’adresses IP ou de numéros AS ayant une
 
 ### Choix de la région <a name="choosearegion"></a>
 
-Une région peut être vu comme une liste de centre de données où une IP peut être utilisée.
+Une région peut être vue comme une liste de datacentres où une IP peut être utilisée.
 
-Vous devrez choisir une région où votre IP sera utilisée. Une fois la livraison effectuée, vous pourrez déplacer n’importe quel bloc de taille /24, obtenu à partir de la plage importée, vers n’importe quel service OVHcloud dans la même région que celui choisi au moment de la commande.
+Vous devrez choisir une région où votre IP sera utilisée. Une fois la livraison effectuée, vous pourrez déplacer n’importe quel bloc de taille /24, obtenu à partir de la plage importée, vers n’importe quel service OVHcloud dans la même région que celle choisie au moment de la commande.
 
-Pour choisir une région, veuillez vous référer à la liste des régions disponibles accessible sur [cette page](https://www.ovhcloud.com/en/network/byoip/).
-
+Pour choisir une région, veuillez vous référer à la liste des régions disponibles accessible sur [cette page](/links/network/byoip).
 
 ### Prouver que vous êtes propriétaire de la plage d'adresses IP <a name="proveownershipontheiprange"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own IP feature
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2025-02-27
+updated: 2025-02-28
 ---
 
 ## Objective
@@ -37,12 +37,12 @@ It is now possible to use ARIN, RIPE or APNIC IP blocks on any OVHcloud region. 
 
 Unlike the previous policy, where an ARIN block could only be used with OVHcloud services located in Canada or the USA, and a RIPE block could only be used with OVHcloud services located in Europe, this restriction has been lifted.
 
-To be considered as a valid owned block, imported blocks must be one of the following types :
+To be considered as a valid owned block, imported blocks must be one of the following types:
 
 | ARIN (object *Network type*) | RIPE (object *status*) | APNIC (object *status*) |
 | :--- | :--- | :--- |
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |  &bull; Allocated-Portable <br>&bull; Allocated-Non-Portable <br>&bull; Assigned-Portable <br>&bull; Assigned-Non-Portable  |
-| **For more information :** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **For more information :** <br>[Description of the INETNUM Object](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |  **For more information :** <br>&bull; [INETNUM Quick Guide](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [Recording network assignments](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
+| **For more information:** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **For more information:** <br>[Description of the INETNUM Object](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |  **For more information:** <br>&bull; [INETNUM Quick Guide](https://www.apnic.net/manage-ip/using-whois/guide/inetnum/) <br>&bull; [Recording network assignments](https://www.apnic.net/manage-ip/using-whois/updating-whois/network-assignments/) |
 
 
 ### Your IP range must have a supported size <a name="supportedsize"></a>
@@ -72,8 +72,7 @@ A region can be viewed as a list of datacenters where an IP can be used.
 
 You will need to choose one region where your IP will be used. Once the delivery is done, you will be able to move any /24 size block obtained from the imported range to any OVHcloud services in the same region as the one chosen at order time.
 
-To choose a region, please refer to the list of available regions accessible on [this page](https://www.ovhcloud.com/en/network/byoip/).
-
+To choose a region, please refer to the list of available regions accessible on [this page](/links/network/byoip).
 
 ### You must prove ownership of the IP range <a name="proveownershipip"></a>
 
@@ -99,7 +98,7 @@ The token needs to appears in the description field (see above) of the whois obj
 
 On the RIR where the IP range is registered, you will need to create a **route object** for it (matching exactly the IP range), with the OVHcloud **AS number** ("AS16276") or your own AS number in the **origin** field of the route object.
 
-For more information on route objects, please refer to your RIR’s documentation page :
+For more information on route objects, please refer to your RIR’s documentation page:
 
 - RIPE - [Managing Route Objects](https://www.ripe.net/manage-ips-and-asns/db/support/managing-route-objects-in-the-irr)
 - ARIN - [Submitting Routing Information](https://www.arin.net/resources/manage/irr/#submitting-routing-information)
@@ -132,7 +131,7 @@ Any imported IP block can be further split into smaller blocks and/or individual
 > [!warning] 
 > To be able to slice/merge an existing IP block, it must be unused (i.e. in the parking area) and there must not be any pending task associated with it (e.g. no pending move operation).
 
-To slice a block, use the following API call :
+To slice a block, use the following API call:
 
 > [!api]
 >
@@ -141,8 +140,8 @@ To slice a block, use the following API call :
 
 Use the following parameters:
 
-- ip : the IP block you want to slice, in CIDR notation.
-- slicingSize : the resulting size of the sliced blocks, expressed as a network prefix size, in bits. For example if you want to slice a /24 block into 2 smaller blocks of size /25, you should enter the value "25".
+- ip: the IP block you want to slice, in CIDR notation.
+- slicingSize: the resulting size of the sliced blocks, expressed as a network prefix size, in bits. For example if you want to slice a /24 block into 2 smaller blocks of size /25, you should enter the value "25".
 
 > [!primary]
 > This API call is asynchronous, the newly created blocks are made available shortly after the call. They will be usable as any other Additional IP block or individual address.
@@ -156,9 +155,9 @@ You can preview the resulting blocks that would be created for each block size, 
 
 Use the following parameters:
 
-- ip : the IP block you want to slice, in CIDR notation.
+- ip: the IP block you want to slice, in CIDR notation.
 
-To merge back a block into a parent block, use this API call :
+To merge back a block into a parent block, use this API call:
 
 > [!api]
 >
@@ -167,8 +166,8 @@ To merge back a block into a parent block, use this API call :
 
 Use the following parameters:
 
-- ip : the IP block you want to slice, in CIDR notation.
-- aggregationIp : the resulting block, in CIDR notation.
+- ip: the IP block you want to slice, in CIDR notation.
+- aggregationIp: the resulting block, in CIDR notation.
 
 The resulting block will be an aggregate of all its children blocks.
 
@@ -184,7 +183,7 @@ You can preview all the possible configurations of aggregated blocks for a given
 
 Use the following parameters:
 
-- ip : the IP block you want to merge into a parent block, in CIDR notation.
+- ip: the IP block you want to merge into a parent block, in CIDR notation.
 
 This call returns a list of possible aggregated blocks and, for each one of them, gives the list of children blocks to be merged back.
 
@@ -195,7 +194,7 @@ This call returns a list of possible aggregated blocks and, for each one of them
 - Slice/Aggregate API tasks cannot be followed up by the asynchronous task number returned by API, as associated IP objects will be destroyed in the slice/aggregate process.
 - The listing of IP addresses and blocks returned by API is ordered by network prefix size. We are working to provide a solution to list IPs by numerical order.
 - Once sliced, smaller blocks are not movable outside the region chosen during the order of the product.
-- Moving a /24 block across french regions won't work if :
+- Moving a /24 block across french regions won't work if:
     - It has been reaggregated from a previous slicing.
     - The /24 block was imported from a bigger block (/23 to /19).
 
