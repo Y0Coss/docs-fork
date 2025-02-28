@@ -78,7 +78,7 @@ Available options :
 
 - **Firewall blockage**: If the agent fails to download, verify that TCP ports 443 and 6183 are open for outbound communication.
 - **Browser compatibility**: Ensure you're using a supported browser (e.g., Chrome, Edge). Older browsers may block or restrict downloads.
-- **Expired download Link**: If you shared the link and it has expired, generate a new one from the `Discovered Computers`{.action} section.
+- **Expired download link**: If you shared the link and it has expired, generate a new one from the `Discovered Computers`{.action} section.
 - **Proxy issues**: If your network uses a proxy server, verify that it allows traffic to and from the VSPC.
 
 ### Step 3: Installing the Management Agent
@@ -108,7 +108,7 @@ To review or configure the policy:
 
 1\. Go to the `Backup Job`{.action} section in the VSPC dashboard.
 
-2\. Click the value under `Successful Jobs`{.action} . A window will open showing the default policy name (e.g., `FCO – Windows …`).
+2\. Click the value under `Successful Jobs`{.action}. A window will open showing the default policy name (e.g., `FCO – Windows …`).
 
 ![backup job section](images/backup-policy-step01.png){.thumbnail}
 
