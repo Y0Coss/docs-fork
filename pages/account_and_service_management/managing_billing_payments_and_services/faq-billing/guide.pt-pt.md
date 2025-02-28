@@ -18,7 +18,7 @@ Se pretender saber mais sobre a gestão dos contactos, consulte este manual porm
 
 ### Como alterar as minhas informações de faturação?
 
-As suas informações de faturação são as mesmas do seu perfil de cliente. Portanto, para faturas futuras, basta atualizar estas informações na rubrica `A minha conta`{.action}, na Área de Cliente OVHcloud.
+As suas informações de faturação são as do seu identificador de cliente. Para as próximas faturas, só precisa de atualizar estas informações. Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Aceder à minha conta`{.action}.
 
 Por razões legais, não é possível modificar uma fatura já emitida. Contudo, se pretender assinalar um erro dos nossos serviços, convidamo-lo a contactar-nos **criando um ticket**.
 
@@ -31,13 +31,13 @@ Se não renovar o serviço antes dessa data, este será simplesmente suspenso e 
 
 #### Conselhos e dicas
 
-Consulte o estado dos seus serviços e administre a sua renovação na rubrica `As minhas ofertas e serviços`{.action}, na Área de Cliente.
+Para consultar o estado dos seus serviços, aceda a [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `As minhas ofertas e serviços`{.action}.
 Faça login e renove manualmente os seus serviços na página <https://eu.ovh.com/pt/cgi-bin/order/renew.cgi>
 Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Como ativar a renovação automática?
 
-Aceda à secção `As minhas ofertas e serviços`{.action} que pode ser acedida diretamente através do painel de controlo da Área de Cliente OVHcloud. A seguir, identifique o serviço em causa, clique nos três pontos e selecione a opção `Ativar pagamento`{.action}.
+Aceda a [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `As minhas ofertas e serviços`{.action}. A seguir, identifique o serviço em causa, clique nos três pontos e selecione a opção `Ativar pagamento`{.action}.
 
 #### Truques e dicas
 
@@ -46,7 +46,7 @@ Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renova�
 
 ### Como desativar a renovação automática?
 
-No painel de controlo da sua Área de Cliente OVHcloud, clique no atalho `As minhas ofertas e serviços`{.action} na coluna à direita. A seguir, identifique o serviço em causa, clique nos três pontos e selecione a opção `Configurar a renovação`{.action}. Pode escolher o modo manual. Este modo só está disponível para determinados serviços, tais como os nomes de domínio, alojamentos web, VPS e servidores dedicados.
+Aceda a [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `As minhas ofertas e serviços`{.action}. A seguir, identifique o serviço em causa, clique nos três pontos e selecione a opção `Configurar a renovação`{.action}. Pode escolher o modo manual. Este modo só está disponível para determinados serviços, tais como os nomes de domínio, alojamentos web, VPS e servidores dedicados.
 
 Para rescindir um serviço, consulte a página [Como rescindir um serviço?](#cancelservice)
 
@@ -57,11 +57,11 @@ Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renova�
 
 ### Como adicionar um método de pagamento?
 
-Aceda à sua Área de Cliente OVHcloud e, no painel de controlo, clique na secção `Os meus métodos de pagamento`{.action} > `Adicionar um método de pagamento`{.action}.
+Aceda a [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Os meus métodos de pagamento`{.action} > `Adicionar um método de pagamento`{.action}.
 
 ### Como atualizar um método de pagamento?
 
-Aceda à sua Área de Cliente OVHcloud e, no painel de controlo, clique na secção `Os meus métodos de pagamento`{.action}. Poderá adicionar ou eliminar um método de pagamento (cartão de pagamento, PayPal ou débito direto SEPA).
+Aceda a [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Os meus métodos de pagamento`{.action}. Poderá adicionar ou eliminar um método de pagamento (cartão de pagamento, PayPal ou débito direto SEPA).
 
 Em caso de pedido de débito direto SEPA, receberá no prazo de 24 a 48 horas, no endereço de e-mail da sua conta OVHcloud, um e-mail com uma ligação para assinar com assinatura eletrónica a sua ordem de débito direto. Tenha em conta que o proprietário da conta bancária deve ser idêntico ao proprietário da conta OVHcloud.
 
@@ -75,7 +75,7 @@ Deve ter configurado, pelo menos, um método de pagamento na Área de Cliente, p
 
 ### Como eliminar um método de pagamento?
 
-Aceda à sua Área de Cliente OVHcloud e, no painel de controlo, aceda à secção `Os meus métodos de pagamento`{.action}. Identifique o método de pagamento a eliminar e clique no ícone do caixote de lixo.
+Aceda a [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Os meus métodos de pagamento`{.action}. Identifique o método de pagamento a eliminar e clique no ícone do caixote de lixo.
 
 #### Truques e dicas
 
@@ -99,7 +99,7 @@ As soluções que beneficiam de renovação automática são renovadas no primei
 
 #### Truques e dicas
 
-Pode alterar a frequência de renovação dos serviços subscritos a partir do painel de controlo, clicando nas iniciais do seu nome e clicando em `As minhas ofertas e serviços`{.action}, na Área de Cliente.
+Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome em cima à direita e, a seguir, em `As minhas ofertas e serviços`{.action}. Poderá alterar a frequência de renovação das suas soluções.
 Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Que método de pagamento é utilizado para pagar o serviço?
@@ -112,7 +112,7 @@ Se a sua conta pré-paga da OVHcloud dispuser de crédito, esta será sempre uti
 
 ### Como encontrar as minhas faturas?
 
-Aceda à secção `As minhas faturas`{.action} que pode ser acedida diretamente através do painel de controlo da Área de Cliente OVHcloud.
+Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, em seguida, clique em `As minhas faturas`{.action}.
 
 #### Truques e dicas
 
@@ -173,7 +173,7 @@ O livro razão é fornecido exclusivamente pelo serviço de contabilidade do req
 
 No entanto, a OVHcloud dá-lhe acesso ao conjunto das suas faturas através de um ficheiro Excel (.csv).
 
-Para o descarregar, aceda à secção `As minhas faturas`{.action} que pode ser acedida diretamente através do painel de controlo da Área de Cliente OVHcloud. A seguir, clique no botão `Ações`{.action} e selecione a opção `{.action}Exportar em CSV`{.action}.
+Para o descarregar, aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, em seguida, clique em `As minhas faturas`{.action}. A seguir, clique no botão `Ações`{.action} e selecione a opção `{.action}Exportar em CSV`{.action}.
 
 ## Quer saber mais?
  

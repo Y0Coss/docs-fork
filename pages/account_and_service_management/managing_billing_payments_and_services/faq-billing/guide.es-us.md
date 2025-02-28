@@ -32,13 +32,13 @@ Si no renueva el servicio antes de la fecha de expiración, este se suspenderá 
 
 #### Ideas y consejos
 
-Consulte el estado de sus servicios y administre su renovación en la sección `Mis soluciones y servicios`{.action} del área de cliente.
+Para consultar el estado de sus servicios, conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
 Para renovar sus servicios manualmente, acceda a la página <https://www.ovh.es/cgi-bin/order/renew.cgi>.
 Para más información, consulte nuestra guía [Gestionar la renovación de los servicios](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### ¿Cómo activar la renovación automática?
 
-Acceda a la sección `Mis soluciones y servicios`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud. Será redirigido a la página `Gestión de mis soluciones y servicios`{.action}. Una vez allí, localice el servicio en el que quiera activar la renovación automática, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Activar el pago automático`{.action}. 
+Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}. Será redirigido a la página `Gestión de mis soluciones y servicios`{.action}. Una vez allí, localice el servicio en el que quiera activar la renovación automática, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Activar el pago automático`{.action}. 
 
 #### Ideas y consejos
 
@@ -47,7 +47,7 @@ Si desea más información, consulte nuestra guía [Gestionar la renovación de 
 
 ### ¿Cómo desactivar la renovación automática?
 
-Acceda a la sección `Mis soluciones y servicios`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud. Será redirigido a la página `Gestión de mis soluciones y servicios`{.action}. Una vez allí, localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Configurar la renovación`{.action}. Podrá elegir el modo manual, aunque está opción solo está disponible para algunos servicios, como dominios, planes de hosting, VPS y servidores dedicados.
+Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}. Será redirigido a la página `Gestión de mis soluciones y servicios`{.action}. Una vez allí, localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Configurar la renovación`{.action}. Podrá elegir el modo manual, aunque está opción solo está disponible para algunos servicios, como dominios, planes de hosting, VPS y servidores dedicados.
 
 Para dar de baja un servicio, consulte la página [¿Cómo dar de baja un servicio?](#cancelservice)
 
@@ -58,11 +58,11 @@ Si desea más información, consulte nuestra guía [Gestionar la renovación de 
 
 ### ¿Cómo añadir una forma de pago?
 
-Acceda a la sección «Forma de pago» que aparece en la columna derecha del panel de control de su área de cliente. Será redirigido a la página `Formas de pago`{.action}, desde donde podrá añadir una nueva forma de pago haciendo clic en `Añadir una forma de pago`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis formas de pago`{.action}, desde donde podrá añadir una nueva forma de pago haciendo clic en `Añadir una forma de pago`{.action}.
 
 ### ¿Cómo actualizar la forma de pago?
 
-Acceda a la sección «Forma de pago» disponible en la columna derecha del panel de control de su área de cliente de OVHcloud. Puede añadir o eliminar una forma de pago (tarjeta bancaria, PayPal o adeudo SEPA).
+Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis formas de pago`{.action}. Puede añadir o eliminar una forma de pago (tarjeta bancaria, PayPal o adeudo SEPA).
 
 En caso de solicitar un adeudo SEPA, recibirá un mensaje de correo electrónico en la dirección de correo electrónico de su cuenta de OVHcloud en las 24-48 horas posteriores, con un enlace de firma electrónica de su mandato de adeudo. Atención: El propietario de la cuenta bancaria debe ser idéntico al propietario de la cuenta de OVHcloud.
 
@@ -76,7 +76,7 @@ Es obligatorio tener al menos una forma de pago configurada en el área de clien
 
 ### ¿Cómo eliminar una forma de pago?
 
-Acceda a la sección «Forma de pago» disponible en la columna derecha del panel de control de su área de cliente de OVHcloud. Será redirigido a la página `Formas de pago`{.action} . Una vez allí, localice la forma de pago que quiera eliminar y haga clic en el botón con forma de papelera.
+Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis formas de pago`{.action}. Una vez allí, localice la forma de pago que quiera eliminar y haga clic en el botón con forma de papelera.
 
 #### Ideas y consejos
 
@@ -100,7 +100,7 @@ Las soluciones que tengan activada la renovación automática se renovarán el p
 
 #### Ideas y consejos
 
-Puede cambiar la frecuencia de renovación de un servicio desde la sección `Mis soluciones y servicios`{.action} del área de cliente.
+Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}{.action}. Desde ahí podrá modificar la frecuencia con la que renueva sus soluciones. 
 Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### ¿Qué forma de pago se utiliza para abonar los servicios?
@@ -113,7 +113,7 @@ Si su cuenta de prepago de OVHcloud tiene saldo, siempre se utilizará de forma 
 
 ### ¿Dónde consultar las facturas?
 
-Acceda a la sección `Mis facturas`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud.
+Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Mis facturas`{.action}.
 
 #### Ideas y consejos
 
@@ -174,7 +174,7 @@ Para consultar el libro mayor, acuda a su propio departamento de contabilidad.
 
 No obstante, OVHcloud pone a su disposición todas sus facturas a través de un archivo de Excel en formato CSV.
 
-Para descargarlo, acceda a la sección `Mis facturas`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud. Será redirigido a la página `Facturación`{.action}. Una vez allí, haga clic en el botón `Acciones`{.action} y seleccione `Exportar en CSV`{.action}.
+Para descargarlo, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Mis facturas`{.action}. Será redirigido a la página `Facturación`{.action}. Una vez allí, haga clic en el botón `Acciones`{.action} y seleccione `Exportar en CSV`{.action}.
 
 ## Más información
   
