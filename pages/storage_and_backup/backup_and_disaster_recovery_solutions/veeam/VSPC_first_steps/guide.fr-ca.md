@@ -28,7 +28,7 @@ Il vous accompagnera dans vos premiers pas avec VSPC, notamment pour :
 
 ## Prérequis
 
-- Des droits administratifs sur [l'espace cliet OVHcloud](/links/manager) pour gérer les ressources.
+- Des droits administratifs sur [l'espace client OVHcloud](/links/manager) pour gérer les ressources.
 - Un serveur compatible avec les Veeam Backup Agents, exécutant un [système d’exploitation pris en charge](https://helpcenter.veeam.com).
 - Un pare-feu configuré pour autoriser la communication entre VSPC et vos serveurs gérés.
 
@@ -155,7 +155,7 @@ Ciblez des répertoires critiques comme `/var/www`, en excluant `/tmp` :
 
 ### Étape 6 : Attribution des politiques aux serveurs
 
-1\. Accédez à `Managed Computers`{.action} et sélectionnez`Backup Agents`{.action}.
+1\. Accédez à `Managed Computers`{.action} et sélectionnez `Backup Agents`{.action}.
 
 ![Panneau d’attribution des politiques](images/assigning-policy-step01.png){.thumbnail}
 
