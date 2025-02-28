@@ -116,7 +116,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę
 
 #### Wskazówki i porady
 
-Jeżeli faktura nie widnieje w Panelu klienta, możliwe, że Twoje dane nie pokrywają się z danymi kontaktu księgowego dla powiązanej z fakturą usługi. Aby sprawdzić kontakt księgowy i ewentualnie zmodyfikować jego dane, przejdź do sekcji `Moje konto`{.action}, a następnie wybierz `Moje kontakty`{.action}.
+Jeżeli faktura nie widnieje w Panelu klienta, możliwe, że Twoje dane nie pokrywają się z danymi kontaktu księgowego dla powiązanej z fakturą usługi. Aby sprawdzić kontakt księgowy i ewentualnie zmodyfikować jego dane, zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie wybierz `Moje kontakty`{.action}.
 
 ### Jak uregulować moje saldo?
 
@@ -147,7 +147,7 @@ Płatności, których dokonujesz na naszej stronie, jak również automatyczne p
 
 ### W jaki sposób zrezygnować z usługi? <a name="cancelservice"></a>
 
-W przypadku rozwiązań takich jak domeny, hosting, serwery dedykowane i VPS, przejdź do sekcji `Moje rozwiązania i usługi`{.action} w Panelu klienta OVHcloud. Po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Rezygnuję z usługi`{.action}. Jeśli dyspozycja została już zrealizowana, pojawi się komunikat: `Anuluj rezygnację z usługi`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}. Po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Rezygnuję z usługi`{.action}. Jeśli dyspozycja została już zrealizowana, pojawi się komunikat: `Anuluj rezygnację z usługi`{.action}.
 
 Rezygnacja z usługi będzie skuteczna, gdy skończy się okres ważności usługi lub umowy. Możesz złożyć dyspozycję lub ją anulować do 24 godzin przed datą wygaśnięcia.
 

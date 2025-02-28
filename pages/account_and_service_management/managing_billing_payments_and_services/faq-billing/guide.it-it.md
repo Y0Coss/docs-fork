@@ -96,7 +96,7 @@ Per saperne di più, consulta questa guida dettagliata: [Gestire il rinnovo dei 
 
 #### Consigli e suggerimenti
 
-La frequenza di rinnovo delle soluzioni può essere modificata dalla sezione `I tuoi servizi`{.action} dello Spazio Cliente.
+La frequenza di rinnovo delle soluzioni può essere modificata dalla sezione `Le mie offerte e servizi`{.action} dello Spazio Cliente.
 Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Quale metodo di pagamento viene utilizzato per il pagamento della fattura?
@@ -113,7 +113,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in al
 
 #### Consigli e suggerimenti
 
-Se la fattura che stai cercando non compare in questa sezione, è possibile che il tuo utente non risulti come contatto di fatturazione del servizio interessato. Per verificare ed eventualmente modificare i contatti impostati accedi allo Spazio Cliente, clicca sul tuo nome utente in alto a destra e seleziona `I tuoi contatti`{.action}.
+Se la fattura che stai cercando non compare in questa sezione, è possibile che il tuo utente non risulti come contatto di fatturazione del servizio interessato. Per conoscerlo ed eventualmente modificarlo, accedi al tuo [Spazio Cliente OVHcloud](/link/mangiare), clicca sul tuo nome in alto a destra e poi su `I miei contatti`{.action}.
 
 ### Come saldare gli importi dovuti?
 
@@ -142,7 +142,7 @@ I pagamenti eseguiti tramite il nostro sito Web e i prelievi automatici sono ele
 
 ### Come disattivare un servizio? <a name="cancelservice"></a>
 
-Per soluzioni come domini, hosting Web, server dedicati e VPS, accedi alla sezione `Le mie offerte e servizi`{.action} disponibile nell’interfaccia dello Spazio Cliente OVHcloud. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Disattivare il servizio`{.action}. Se hai già effettuato la richiesta in precedenza è possibile annullarla cliccando su `Annulla la disattivazione del servizio`{.action}.
+Per soluzioni come domini, hosting Web, server dedicati e VPS, accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Disattivare il servizio`{.action}. Se hai già effettuato la richiesta in precedenza è possibile annullarla cliccando su `Annulla la disattivazione del servizio`{.action}.
 
 L’operazione diventerà effettiva al termine del periodo di validità o dell’impegno contrattuale relativo al servizio. È possibile effettuare o annullare una richiesta fino a 24 ore prima della scadenza.
 

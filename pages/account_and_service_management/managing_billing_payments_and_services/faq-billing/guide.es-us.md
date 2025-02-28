@@ -94,7 +94,7 @@ Si su cuenta de prepago de OVHcloud tiene saldo, siempre se utilizará de forma 
 
 ### ¿Cuál es la fecha del próximo pago?
 
-Para consultar todas las fechas de renovación, acceda a la sección `Mis soluciones y servicios`{.action} disponible en la columna derecha del panel de control de su área de cliente de OVHcloud.
+Para consultar todas las fechas de renovación, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}{.action}.
 
 Las soluciones que tengan activada la renovación automática se renovarán el primer día del mes. La frecuencia puede variar según el servicio.
 
@@ -117,7 +117,7 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su 
 
 #### Ideas y consejos
 
-Si una factura no aparece en su área de cliente, es posible que usted no sea el contacto de facturación del servicio. Para saber cuál es el contacto de facturación y, en su caso, modificarlo, vaya a la sección `Gestión de contactos`{.action} y, a continuación, haga clic en `Mis contactos`{.action}.
+Si una factura no aparece en su área de cliente, es posible que usted no sea el contacto de facturación del servicio. Para conocerlo y, en su caso, modificarlo, conéctese a su [área de cliente de OVHcloud](/links/manger), haga clic en su nombre en la esquina superior derecha y seleccione `Mis contactos`{.action}.
 
 ### ¿Cómo abonar las facturas pendientes de pago?
 
@@ -146,7 +146,7 @@ Tanto los pagos realizados a través de nuestro sitio web como las renovaciones 
 
 ### ¿Cómo dar de baja un servicio? <a name="cancelservice"></a>
 
-Para dar de baja un dominio, un alojamiento web, un servidor dedicado o un VPS, acceda a la sección «Mis soluciones y servicios» disponible en la columna derecha del panel de control de su área de cliente de OVHcloud. Será redirigido a la página `Gestión de mis soluciones y servicios`{.action}. Una vez allí, localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Dar de baja en la fecha de expiración`{.action}. Si ya ha realizado una solicitud de baja para ese servicio, podrá cancelar la baja desde el mismo lugar.
+Para dar de baja un dominio, un alojamiento web, un servidor dedicado o un VPS, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}{.action}. Será redirigido a la página `Gestión de mis soluciones y servicios`{.action}. Una vez allí, localice el servicio que quiera dar de baja, haga clic en el botón `···`{.action} situado al final de la fila y seleccione `Dar de baja en la fecha de expiración`{.action}. Si ya ha realizado una solicitud de baja para ese servicio, podrá cancelar la baja desde el mismo lugar.
 
 La baja será efectiva una vez finalizado el período de validez o de compromiso del servicio. Puede realizar la solicitud o cancelarla hasta 24 horas antes de la fecha de expiración.
 

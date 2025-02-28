@@ -116,7 +116,7 @@ Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no 
 
 #### Truques e dicas
 
-Se não encontrar uma determinada fatura na sua Área de Cliente, é possível que não seja o contacto de faturação do serviço em causa. Para verificar essa informação e eventualmente alterá-la, clique nas iniciais do seu nome e aceda à secção `A minha conta`{.action} > `Adicionar contacto`{.action}.
+Se não encontrar uma determinada fatura na sua Área de Cliente, é possível que não seja o contacto de faturação do serviço em causa. Para o conhecer e eventualmente alterá-lo, aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Contactos`{.action}.
 
 ### Como pagar montantes em dívida?
 
@@ -145,7 +145,7 @@ Os pagamentos que realizou no nosso site, bem como todos os débitos diretos, es
 
 ### Como rescindir um serviço? <a name="cancelservice"></a>
 
-Para soluções como domínios, alojamentos web, servidores dedicados e VPS, aceda à secção `As minhas ofertas e serviços`{.action} no painel de controlo da sua Área de Cliente OVHcloud. A seguir, identifique o serviço em causa, clique nos três pontos e selecione `Rescindir o meu serviço`{.action}. Se já tiver efetuado um pedido, surgirá a opção `Anular a rescisão do serviço`{.action}.
+Para soluções como domínios, alojamentos web, servidores dedicados e VPS, aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome em cima à direita e, a seguir, em `As minhas ofertas e serviços`{.action}. A seguir, identifique o serviço em causa, clique nos três pontos e selecione `Rescindir o meu serviço`{.action}. Se já tiver efetuado um pedido, surgirá a opção `Anular a rescisão do serviço`{.action}.
 
 A rescisão ficará efetiva quando o período de validade ou de compromisso do serviço tiver chegado ao fim. Pode realizar este pedido ou anulá-lo até 24 horas antes da data de expiração.
 
