@@ -41,7 +41,7 @@ Below is a comparison between Load Balancer for Kubernetes and Public Cloud Load
 | Maximum number of connections       | 10 000                               | up to 20 000               |
 | Maximum number of HTTP requests     | 2000                                 | Up to 80 000               |
 | Bandwidth                           | 200 Mbit/s                           | up to 4 Gbit/s (up/down)   |
-| Supported protocol                  | TCP                                  | TCP/UCP                    |
+| Supported protocol                  | TCP                                  | TCP/UDP/SCTP               |
 | Supported load balancing layers     | L4                                   | L4/L7                      |
 | Capacity to export metrics and logs | No                                   | Yes                        |
 | Private to private scenario         | No                                   | Yes                        |
