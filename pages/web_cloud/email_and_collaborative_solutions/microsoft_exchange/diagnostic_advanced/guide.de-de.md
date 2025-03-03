@@ -25,7 +25,11 @@ Da es eine Vielzahl von Gründen für mögliche Fehler bei Exchange-Accounts gib
 
 ### Diagnose durchführen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](/links/manager) und gehen Sie in den Bereich `Web Cloud`{.action}. Öffnen Sie `Microsoft`{.action} und dann `Exchange`{.action}, und wählen Sie Ihre Dienstleistung aus.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
+1. Öffnen Sie den Bereich `Web Cloud`{.action}.
+1. Klicken Sie auf `Microsoft`{.action}.
+1. Klicken Sie auf `Exchange`{.action}.
+1. Wählen Sie den gewünschten Dienst aus.
 
 ![Exchange-Diagnose](images/img_4450.png){.thumbnail}
 

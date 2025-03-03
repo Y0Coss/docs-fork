@@ -23,7 +23,10 @@ Oferta E-mail Pro umożliwia elastyczne zarządzanie płatnościami. Niniejszy p
 
 ### Zamówienie dodatkowych kont
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `E-mail Pro`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią platformę E-mail Pro.
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+1. Kliknij zakładkę `Web Cloud`{.action}.
+1. Kliknij `E-maile Pro`{.action}.
+1. Wybierz odpowiednią platformę.
 
 Przejdź do karty `Konta e-mail`{.action}, a następnie kliknij przycisk `Zamówienie kont`{.action} w prawym górnym rogu.
 

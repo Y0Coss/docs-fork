@@ -23,7 +23,10 @@ Die Dienstleistung E-Mail Pro verfügt über eine flexible Verwaltung für die A
 
 ### Zusätzliche Konten bestellen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mail Pro`{.action} und wählen Sie dann den entsprechende E-Mail Pro Dienst aus.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
+1. Öffnen Sie den Bereich `Web Cloud`{.action}.
+1. Klicken Sie auf `E-Mails Pro`{.action}.
+1. Wählen Sie den gewünschten Dienst aus.
 
 Gehen Sie in den Tab `E-Mail-Accounts`{.action} und klicken Sie auf oben rechts `Accounts bestellen`{.action}.
 
