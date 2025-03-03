@@ -1,11 +1,11 @@
 ---
 title: 'Installer et configurer Softcall (Bêta)'
 excerpt: 'Découvrez comment installer et configurer Softcall afin de profiter de la solution Softphone'
-updated: 2025-02-25
+updated: 2025-03-04
 ---
 
 > [!primary]
-> L'application [Softcall](https://labs.ovhcloud.com/en/softphone-beta/) sera **prochainement disponible** en phase bêta.
+> L'application [Softcall](https://labs.ovhcloud.com/en/softphone-beta/) est disponible en phase bêta.
 >
 > Ce guide peut donc être incomplet et sera mis à jour lors de la bêta. Notre équipe reste disponible pour répondre à vos questions sur la mailing-list [voip@ml.ovh.net](mailto:voip@ml.ovh.net). Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services VoIP.
 >
