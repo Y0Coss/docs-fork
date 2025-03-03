@@ -34,8 +34,8 @@ details[open]>summary::before {
 > If you are unsure how to log in to your organization's web portal, first refer to the guide: [How to log in to VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 >
 
-- A web browser (with preferably a Chromium-based one, and translation enabled in English)
-- A VMware Cloud Director account with required user rights (make sure your user account has the necessary permissions.).
+- A web browser (with preferably a Chromium-based one, and translation enabled in English).
+- A VMware Cloud Director account with required user rights (make sure your user account has the necessary permissions).
 - You need to have followed the guide: "[VMware Cloud Director - Basic VCD concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)".
 
 ## Instructions
@@ -54,7 +54,7 @@ To ensure a flexible and secure network infrastructure in a versatile cloud envi
 - **Datacentre group networks**
 - **vApp networks**
 
-Most of these networks require additional infrastructure elements, such as **"Edge Gateways"** and **Network Pools"**.
+Most of these networks require additional infrastructure elements, such as "**Edge Gateways**" and "**Network Pools**".
 
 The VCD control panel has a network banner with 6 sections: 
 

@@ -34,7 +34,7 @@ details[open]>summary::before {
 > Si vous ne savez pas comment vous connecter au portail web de votre organisation, consultez d'abord le guide « [Comment se connecter à VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) ».
 >
 
-- Un navigateur Web (de préférence avec un navigateur basé sur Chromium et la traduction activée en français).
+- Un navigateur Web (de préférence un navigateur basé sur Chromium et avec la traduction activée en français).
 - Avoir un compte VMware Cloud Director avec des droits utilisateur (vérifiez que votre compte utilisateur dispose des droits suffisants).
 - Avoir suivi le guide « [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) ».
 
