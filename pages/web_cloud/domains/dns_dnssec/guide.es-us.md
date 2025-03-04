@@ -1,7 +1,7 @@
 ---
 title: "Proteger su dominio con DNSSEC"
 excerpt: "Descubra cómo proteger un dominio del cache poisoning activando DNSSEC"
-updated: 2025-02-17
+updated: 2025-03-04
 ---
 
 ## Objetivo 
@@ -34,6 +34,13 @@ Si desea más información sobre estos temas, no dude en consultar nuestras guí
 ## Procedimiento
 
 Para comprobar si su dominio utiliza la configuración DNS de OVHcloud, haga clic en las fichas siguientes para ver cada una de las **3** etapas.
+
+> [!warning]
+>
+> **Estos tres pasos solo son válidos si el dominio está registrado en OVHcloud.** En caso contrario, deberá comprobarlo en el agente registrador del dominio.
+>
+> Si los nombres de los servidores DNS acaban en *ovh.net* (excepto el servidor *snds2.ovh.net*), *ovh.ca* o *anycast.me*, el dominio utiliza los servidores DNS de OVHcloud.
+>
 
 > [!tabs]
 > **Etapa 1**

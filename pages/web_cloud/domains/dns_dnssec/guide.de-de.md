@@ -1,7 +1,7 @@
 ---
 title: "Domainnamen mit DNSSEC absichern"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Domainnamen durch die Aktivierung von DNSSEC vor Cache Poisoning schützen können"
-updated: 2025-02-17
+updated: 2025-03-04
 ---
 
 ## Ziel 
@@ -34,6 +34,13 @@ Lesen Sie dazu auch unsere Anleitungen zu [OVHcloud DNS-Servern](/pages/web_clou
 ## In der praktischen Anwendung
 
 Um zu überprüfen, ob Ihre Domain die OVHcloud DNS-Konfiguration verwendet, klicken Sie jeweils auf die Tabs, um die **3** Schritte anzuzeigen.
+
+> [!warning]
+>
+> **Diese 3 Schritte gelten nur, wenn Ihre Domain bei OVHcloud registriert ist.** Andernfalls müssen Sie die Überprüfung bei Ihrem Registrar Ihrer Domain durchführen.
+>
+> Enden die Namen der DNS-Server auf *ovh.net* (mit Ausnahme des Servers *snds2.ovh.net*), *ovh.ca* oder *anycast.me*, verwendet Ihre Domain die OVHcloud DNS-Server.
+>
 
 > [!tabs]
 > **Schritt 1**
