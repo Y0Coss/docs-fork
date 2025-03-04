@@ -1,7 +1,7 @@
 ---
 title: "Augmenter la taille d’un disque supplémentaire"
 excerpt: "Découvrez comment augmenter la taille d'un volume supplémentaire et agrandir sa partition principale"
-updated: 2022-03-29
+updated: 2024-03-05
 ---
 
 <style>
