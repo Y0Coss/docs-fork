@@ -1,19 +1,20 @@
 ---
 title: "Setting up your network after vSphere to VCD migration"
-excerpt: "Learn how to configure your network after migrating from VMware vSphere to VMware Cloud Director."
-updated: 2025-03-03
+excerpt: "Learn how to configure your network after migrating from VMware vSphere to VMware Cloud Director"
+updated: 2025-03-04
 ---
 
 ## Objective
 
-This guide explains the necessary steps to configure your environment after migrating from your managed `VMware vSphere` on OVHcloud services to a managed `VMware Cloud Director` on OVHcloud solution
+This guide explains the necessary steps to configure your environment after migrating from your managed **VMware vSphere on OVHcloud** services to a managed **VMware Cloud Director on OVHcloud** solution.
 
 These modifications are essential to ensure the proper functioning of your virtual machines and networks.
 
 ## Requirements
 
-- Access to `VMware Cloud Director`on OVHcloud solution.
-- You must have access to the [OVHcloud Control Panel](/links/manager) and be technical administrator of the managed [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware) infrastructure.
+- A [VMware Cloud Director](/links/hosted-private-cloud/vmware-vcd) on OVHcloud solution.
+- Being the technical administrator of the managed [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware) infrastructure.
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -21,39 +22,41 @@ These modifications are essential to ensure the proper functioning of your virtu
 
 After migration, you need to update the network configurations of your `virtual machines (VMs)`.
 
-To set the network configuration to `DHCP`:
+To set the network configuration to DHCP (**recommended**):
 
-1. Go to the network settings of each `VM`.
+1\. Go to the network settings of each VM.
+2\. Change the IP assignment mode to `DHCP`{.action}.
 
-2. Change the IP assignment mode to `DHCP`{.action}.
+![DHCP setting](images/01-VCD-post-migration.png){.thumbnail}
 
-    ![DHCP setting](images/01-VCD-post-migration.png){.thumbnail}
+3\. Make sure the `Guest customization settings`{.action} are set to `Disabled` before modifying the NIC settings.
 
-3. Make sure the `"Guest customization settings"`{.action} are set to `Disabled` before modifying the NIC settings.
+![Disabled setting](images/02-VCD-post-migration.png){.thumbnail}
 
-    ![Disabled setting](images/02-VCD-post-migration.png){.thumbnail}
+### Step 2: Handling the IP addressing bug in VCD
 
-### Step 2: Handling the IP addressing bug in `VCD`
-
- Networks are pre-created with placeholder Gateway CIDRs, as the actual VM subnets are unknown beforehand.
+Networks are pre-created with placeholder Gateway CIDRs, as the actual VM subnets are unknown beforehand.
 
 This can lead to IP assignment issues if not addressed post-migration.
 
 #### **Identified issue**
-- If a static IP is manually assigned to a `VM` and does not match the pre-configured `Gateway CIDR`, the assignment will fail.
-- You will not be able to create or update a `VM` with manual IP assignment outside the predefined `Gateway CIDR`.
+
+- If a static IP is manually assigned to a VM and does not match the pre-configured `Gateway CIDR`, the assignment will fail.
+- You will not be able to create or update a VM with manual IP assignment outside the predefined `Gateway CIDR`.
 
 #### **Solutions**
 
-1. **Use `DHCP` mode** *(Recommended)*
-    - Setting all IP modes to `DHCP` works seamlessly, even if the OS is configured with a static IP.
-    - This approach is valid for both **`isolated networks`** and **`VM Networks`**.
+1\. **Use DHCP mode (recommended)**
 
-    ![DHCP mode](images/03-VCD-post-migration.png){.thumbnail}
+- Setting all IP modes to `DHCP` works seamlessly, even if the OS is configured with a static IP.
+- This approach is valid for both isolated networks and `VM Networks`*.
 
-2. **Create a new `network`**
-    - Customers can create a new `network` with the correct subnet.
-    - This solution works only if the customer has **a single** public IP range.
+![DHCP mode](images/03-VCD-post-migration.png){.thumbnail}
+
+2\. **Create a new network**
+
+- Customers can create a new `network` with the correct subnet.
+- This solution works only if the customer has **a single** public IP range.
 
 ## Go further
 
