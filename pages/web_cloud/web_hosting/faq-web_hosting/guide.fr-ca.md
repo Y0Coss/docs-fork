@@ -173,7 +173,7 @@ Cette anomalie indique une configuration erronée au niveau des [serveurs DNS](/
 
 Le cas le plus courant est le suivant : vous avez commandé séparément votre nom de domaine et votre hébergement, ils ne sont donc pas reliés entre eux via leur zone DNS.
 
-Rendez-vous dans la partie `Domaines`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/ca/fr/&ovhSubsidiary=qc). Cliquez sur le nom de domaine concerné puis sur l'onglet `Serveurs DNS`{.action}.
+Rendez-vous dans la partie `Noms de domaine`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/ca/fr/&ovhSubsidiary=qc). Cliquez sur le nom de domaine concerné puis sur l'onglet `Serveurs DNS`{.action}.
 
 Notez ensuite les serveurs DNS indiqués puis rendez-vous dans l'onglet `Zone DNS`{.action}.
 
