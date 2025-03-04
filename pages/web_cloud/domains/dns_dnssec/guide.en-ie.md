@@ -1,7 +1,7 @@
 ---
 title: "Securing your domain name with DNSSEC"
 excerpt: "Find out how to protect your domain name from Cache Poisoning by enabling DNSSEC"
-updated: 2025-02-17
+updated: 2025-03-04
 ---
 
 ## Objective 
@@ -33,6 +33,13 @@ You can also refer to our guides on [OVHcloud DNS servers](/pages/web_cloud/doma
 ## Instructions
 
 To check if your domain name uses the OVHcloud DNS configuration, click on the tabs below to view each of the **3** steps.
+
+> [!warning]
+>
+> **These 3 steps are only valid if your domain name is registered with OVHcloud.** Otherwise, you will need to check with your domain name registrar.
+>
+> If the DNS server names end with *ovh.net* (with the exception of the *snds2.ovh.net* server), *ovh.ca* or *anycast.me*, your domain name will use OVHcloud DNS servers.
+>
 
 > [!tabs]
 > **Step 1**

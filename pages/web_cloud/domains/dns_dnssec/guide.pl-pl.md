@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczenie domeny za pomocą DNSSEC"
 excerpt: "Dowiedz się, jak zabezpieczyć domenę przed atakiem DNSSEC"
-updated: 2025-02-17
+updated: 2025-03-04
 ---
 
 ## Wprowadzenie 
@@ -34,6 +34,13 @@ Zapoznaj się również z naszymi przewodnikami dotyczącymi [serwerów DNS OVHc
 ## W praktyce
 
 Aby sprawdzić, czy Twoja domena używa konfiguracji DNS OVHcloud, kliknij poniższe zakładki, aby wyświetlić kolejne kroki **3**.
+
+> [!warning]
+>
+> **Te 3 etapy są ważne tylko wtedy, gdy Twoja domena jest zarejestrowana w OVHcloud.** W przeciwnym razie musisz dokonać weryfikacji u operatora.
+>
+> Jeśli nazwy serwerów DNS kończą się na *ovh.net* (z wyjątkiem serwera *snds2.ovh.net*), *ovh.ca* lub *anycast.me*, Twoja domena używa serwerów DNS OVHcloud.
+>
 
 > [!tabs]
 > **Etap 1**
