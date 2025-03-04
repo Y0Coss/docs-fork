@@ -37,7 +37,7 @@ Um zu überprüfen, ob Ihre Domain die OVHcloud DNS-Konfiguration verwendet, kli
 
 > [!warning]
 >
-> **Diese 3 Schritte gelten nur, wenn Ihre Domain bei OVHcloud registriert ist.** Andernfalls müssen Sie die Überprüfung bei Ihrem Registrar Ihrer Domain durchführen.
+> **Diese 3 Schritte gelten nur, wenn Ihr Domainname bei OVHcloud registriert ist.** Andernfalls müssen Sie die Überprüfung beim Registrar Ihres Domainnamens durchführen.
 >
 > Enden die Namen der DNS-Server auf *ovh.net* (mit Ausnahme des Servers *snds2.ovh.net*), *ovh.ca* oder *anycast.me*, verwendet Ihre Domain die OVHcloud DNS-Server.
 >
