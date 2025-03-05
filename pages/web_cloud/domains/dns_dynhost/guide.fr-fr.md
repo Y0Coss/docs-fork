@@ -63,7 +63,7 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 >
 > Pour savoir si vous utilisez ou non les serveurs DNS d'OVHcloud, ceux-ci ont l'une des 2 formes suivantes : 
 >
-> - `nsXX.ovh.net` et `dnsXX.ovh.net` ou, `nsXXX.ovh.net` et `dnsXXX.ovh.net` (où chaque `X` représente un chiffre compris entre **0** et **9**)
+> - `nsXX.ovh.net` et `dnsXX.ovh.net` **ou** `nsXXX.ovh.net` et `dnsXXX.ovh.net` (où chaque `X` désigne un chiffre compris entre **0** et **9**)
 > - `ns200.anycast.me` et `dns200.anycast.me` (si vous avez souscrit à l'option [DNS anycast](/links/web/domains-options))
 > 
 > Si besoin, consultez notre guide relatif aux [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) pour plus d'informations.
