@@ -100,7 +100,7 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >> |Informations|Description|
 >> |---|---|
 >> |Suffixe de l'identifiant|Définissez un suffixe pour l'identifiant DynHost que vous êtes en train de créer.|
->> |Sous-domaine|Spécifiez le sous-domaine concerné par la création de l'enregistrement DNS dynamique. Si vous souhaitez gérer l'ensemble des sous-domaines avec un seul identifiant, précisez juste `*` dans le formulaire de saisie|
+>> |Sous-domaine|Spécifiez le sous-domaine concerné par la création de l'enregistrement DNS dynamique. Si vous souhaitez gérer l'ensemble des sous-domaines avec un seul identifiant, précisez juste `*` dans le formulaire de saisie.|
 >> |Mot de passe|Définissez le mot de passe associé à l'identifiant DynHost puis confirmez-le.|
 >>
 >> > [!success]
