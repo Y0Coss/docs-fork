@@ -27,7 +27,7 @@ Kliknij prawym przyciskiem myszy wybrany klaster, a następnie wybierz opcję `N
 
 Podczas tworzenia maszyny wirtualnej masz wiele możliwości:
 
-- Utworzenie maszyny wirtualnej z pliku ISO obecnego w centrum danych. Plik ten należy zaimportować zgodnie z [przewodnikiem łączenia się przez SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion)
+- Utworzenie maszyny wirtualnej z pliku ISO obecnego w centrum danych. Możesz [załadować ISO do datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload)
 - Możesz także wdrożyć maszynę wirtualną na podstawie posiadanego szablonu lub też za pomocą [szablonu OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)
 - Inną opcją jest sklonowanie już istniejącej maszyny wirtualnej (uważając jednak na ryzyko konfliktu adresów IP).
 - Możesz sklonować maszynę wirtualną jako szablon, by móc szybciej wdrażać maszyny wirtualne w przyszłości.

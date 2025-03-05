@@ -19,7 +19,7 @@ updated: 2024-12-31
 
 > [!primary]
 > 
-> Ce guide remplace la méthode SFTP, devenue obsolète : [Se connecter en SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion).
+> Ce guide remplace la méthode SFTP, devenue obsolète.
 >
 
 ### Étape 1 - Téléverser avec le client HTML

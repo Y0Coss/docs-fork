@@ -25,7 +25,7 @@ A new VM can be deployed from the vSphere client. Right-click on your data centr
 
 You have multiple possibilities regarding the creation of a new VM:
 
-- It is possible to create it and select an ISO from your datastore in the process. You can upload ISO files by connecting [via SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion).
+- It is possible to create it and select an ISO from your datastore in the process. You can [upload an ISO in a datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
 - You can deploy a VM from your own template, an external template or an [OVHcloud template](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 - You can clone an existing VM (be careful to avoid IP address conflicts).
 - You can clone a VM into a template, so that you can deploy your next virtual machine more quickly.
