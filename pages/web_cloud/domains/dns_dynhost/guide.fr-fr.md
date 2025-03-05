@@ -157,7 +157,7 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, cliquez sur les on
 >>
 > **Etape 5**
 >>
->> Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau présent sur la page actuelle.
+>> Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau.
 >>
 >> ![Create a DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 >>
