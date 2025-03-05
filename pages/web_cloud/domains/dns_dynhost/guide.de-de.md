@@ -65,8 +65,8 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 >
 > Um festzustellen, ob Sie die DNS-Server von OVHcloud verwenden oder nicht, haben diese eine der folgenden 2 Formen:
 >
-> `nsXX.ovh.net` und `dnsXX.ovh.net` **oder** `nsXXX.ovh.net` und `dnsXXX.ovh.net` (wobei jedes `X` eine Ziffer zwischen **0** und **9** sein kann)
-> `ns200.anycast.me` und `dns200.anycast.me` (wenn die Option [DNS Anycast](/links/web/domains-options) aktiviert ist)
+> - `nsXX.ovh.net` und `dnsXX.ovh.net` **oder** `nsXXX.ovh.net` und `dnsXXX.ovh.net` (wobei jedes `X` eine Ziffer zwischen **0** und **9** sein kann)
+> - `ns200.anycast.me` und `dns200.anycast.me` (wenn die Option [DNS Anycast](/links/web/domains-options) aktiviert ist)
 > 
 > Mehr Informationen finden Sie in unserer [Dokumentation zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information).
 
@@ -170,7 +170,6 @@ Wenn Sie bereit sind, den DynHost-Eintrag zu erstellen, klicken Sie auf die Regi
 >> > [!warning]
 >> >
 >> > Für die Einrichtung eines dynamischen DNS-Eintrags (DynHost) ist die Verwendung einer *wildcard* (nur das Zeichen `*`) im Formular `Subdomain`{.action} nicht verfügbar.
->> >
 >>
 >> ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 >>
@@ -236,7 +235,7 @@ Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Klicken Sie auf die
 >>
 >> Überprüfen Sie die in der Spalte `Ziel`{.action} angezeigte IP-Adresse.
 >>
->> ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
+>> ![DynHost target](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 >>
 
 > [!warning]

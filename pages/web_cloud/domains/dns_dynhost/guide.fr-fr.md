@@ -158,7 +158,6 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, cliquez sur les on
 >>
 >> ![DynHost tab empty](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab-empty.png){.thumbnail}
 >>
->>
 > **Etape 5**
 >>
 >> Dans la fenêtre qui s'affiche, complétez les informations demandées :
@@ -236,7 +235,7 @@ Vous pouvez vérifier si l'adresse IP de destination a bien été mise à jour. 
 >>
 >> Vérifiez l'adresse IP qui apparaît dans la colonne `Cible`{.action}.
 >>
->> ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
+>> ![DynHost target](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 >>
 
 > [!warning]
