@@ -330,7 +330,6 @@
         + [Getting started](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started)
             + [Introduction to the Hosted Private Cloud Control Panel](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud)
             + [Logging in to the vSphere interface](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion)
-            + [Logging in via SFTP](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion)
             + [How to connect an ISO image to a VM](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_connect_an_iso_image_to_a_vm)
             + [How to disconnect an ISO image from a VM](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_disconnect_an_iso_image_from_vm)
             + [Configure an IP address on a virtual machine](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/configure_ip_on_vm)

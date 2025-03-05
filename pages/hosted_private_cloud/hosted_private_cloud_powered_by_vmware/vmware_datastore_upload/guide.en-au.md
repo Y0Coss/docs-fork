@@ -19,7 +19,7 @@ updated: 2024-12-31
 
 > [!primary]
 >
-> This guide replaces the SFTP method, which is now deprecated: [Logging in via SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion).
+> This guide replaces the SFTP method, which is now deprecated.
 >
 
 ### Step 1 - Upload with HTML client
