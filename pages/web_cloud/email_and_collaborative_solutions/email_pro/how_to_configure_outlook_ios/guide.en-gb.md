@@ -1,6 +1,6 @@
 ---
 title: "Email Pro - Configuring your email account in Outlook for iOS"
-excerpt: "Find out how to configure your Email Pro address on the Outlook for iOS mobile application"
+excerpt: "Find out how to configure your Email Pro account on the Outlook mobile application for iOS"
 updated: 2025-02-13
 ---
 
@@ -15,7 +15,7 @@ max-height:600px !important;
 
 ## Objective
 
-You can configure Email Pro accounts on email clients, if they are compatible. This allows you to use your email address from the device of your choice. The Microsoft Outlook app on iOS is available for free from the Apple App Store.
+Email Pro accounts can be configured on various compatible email clients. This allows you to use your email address from the device of your choice. The Microsoft Outlook app on iOS is available for free from the Apple App Store. The Microsoft Outlook app on iOS is available for free from the Apple App Store.
 
 **Find out how to configure your Email Pro address on the Outlook mobile application for iOS**
 
@@ -26,9 +26,9 @@ You can configure Email Pro accounts on email clients, if they are compatible. T
 
 ## Requirements
 
-- an [Email Pro address](/links/web/email-pro).
-- You must have the Outlook application installed on your mobile device [iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
-- You must have the login details for the email address you would like to configure.
+- You have an [Email Pro](/links/web/email-pro) solution.
+- You have the Outlook application installed on your [iOS device](https://apps.apple.com/app/microsoft-outlook/id951937596).
+- You have the login details for the email account you would like to configure.
 
 ## Instructions
 
@@ -36,9 +36,9 @@ You can configure Email Pro accounts on email clients, if they are compatible. T
 
 > [!warning]
 >
-> In our examples, we use the server comment: pro**?**.mail.ovh.net. You will need to replace the "?" with the number designating the server of your Email Pro service.
->
-> Find this number in your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, then `Email Pro`{.action}. The server name is visible in the **Connection** box in the `General information`{.action} tab.
+> In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number designating the appropriate server for your Email Pro service.
+> 
+> You can find this information in the [OVHcloud Control Panel](/links/manager): In the `Web Cloud`{.action} section, select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 - **When you start the application for the first time**: A configuration wizard will appear. Tap `Add account`{.action}.
@@ -77,10 +77,10 @@ Follow the installation steps by clicking on the tabs below:
 >> In the next window, tick `Advanced settings`{.action} and enter the following information:
 >>
 >> - **Email address**
->> - **Full name** : enter your full email address
+>> - **Full name**: Enter your full email address.
 >> - **Description**
->> - **IMAP Incoming Mail Server**:<br>- **IMAP Hostname**: Type `pro**?**.mail.ovh.net` (replace "**?**" with your server number)<br>- **IMAP Port**: 993<br>- **IMAP Username**: Your full email address<br>- **IMAP Password**: Your email address password<br>- **Port Security**: SSL
->> - **SMTP Incoming Mail Server**:<br>- **SMTP Hostname**: Type `pro**?**.mail.ovh.net` (replace "**?**" with your server number)<br>- **SMTP Port**: 587<br>- **SMTP Username**: Your full email address<br>- **SMTP password**: Your email address password<br>- **Port security**: STARTTLS command failures
+>> - **IMAP Incoming Mail Server**:<br>- **IMAP Hostname**: Type `pro**?**.mail.ovh.net` (replace "**?**" with your server number)<br>- **IMAP Port**: 993<br>- **IMAP Username**: Your full email address<br>- **IMAP Password**: Your email account password<br>- **Port Security**: SSL
+>> - **SMTP Incoming Mail Server**:<br>- **SMTP Hostname**: Type `pro**?**.mail.ovh.net` (replace "**?**" with your server number)<br>- **SMTP Port**: 587<br>- **SMTP Username**: Your full email address<br>- **SMTP password**: Your email account password<br>- **Port security**: STARTTLS
 >>
 >> To finalize the configuration, press `Login`{.action}.
 >>
@@ -91,17 +91,17 @@ Follow the installation steps by clicking on the tabs below:
 >
 > If, after following the configuration steps above, you encounter a sending or receiving error, please refer to the topic "[Modify existing settings](#modify-settings)".
 
-### Use the email address
+### Use the email account
 
-Once you have configured your email address, you can start using it! You can now send and receive messages.
+Once you have configured your email account, you can start using it! You can now send and receive messages.
 
-OVHcloud also offers a web application that can be used to access your email address from a web browser. You can access it here: [Webmail](/links/web/email). You can log in using your email credentials. If you have any questions on how to use it, please refer to our guide [View your account via the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud also offers a web application you can use to access your email account from your browser. You can log in with your email credentials here: [Webmail](/links/web/email). If you have any questions on how to use it, please refer to our guide: [How to use your account via the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Modify existing settings <a name="modify-settings"></a>
 
 1. Tap the circle containing the initials of the email account you are viewing, or the home icon "&#8962;" at the top left of your screen.
 2. Press the gear "&#9881;" in the lower left of your screen.
-3. Then press `Accounts`{.action} in the **Settings** menu.
+3. Press `Accounts`{.action} in the **Settings** menu.
 4. Select the account.
 5. Press `Modify login information`{.action}.
 
@@ -119,11 +119,11 @@ Find the settings in **Step 3** of the [Add account](#add-account) chapter.
 
 ![outlook iOS](images/outlook-app-ios-modify-delete-01.png){.thumbnail .w-400 .h-600}
 
-### Reminder of POP, IMAP and SMTP settings <a name="popimap-settings"></a>
+### POP, IMAP and SMTP settings <a name="popimap-settings"></a>
 
-### IMAP and POP Receive Settings
+#### IMAP and POP Receive Settings
 
-When you choose your account type, we recommend using **IMAP** to receive emails. However, you can select **POP**.
+When you choose your account type, we recommend using **IMAP** to receive emails. However, you can select **POP** as well.
 
 Click on the tab corresponding to your receive protocol:
 
@@ -131,7 +131,7 @@ Click on the tab corresponding to your receive protocol:
 > **IMAP configuration**
 >>
 >> - **Username**: Enter the full **email address**
->> - **Password**: Enter the password for the email address
+>> - **Password**: Enter the password for the email account
 >> - **Server (incoming)**: pro**?**.mail.ovh.net
 >> - **Port**: 993
 >> - **Security type**: SSL/TLS
@@ -139,19 +139,19 @@ Click on the tab corresponding to your receive protocol:
 > **POP configuration**
 >>
 >> - **Username**: Enter the full **email address**
->> - **Password**: Enter the password for the email address
+>> - **Password**: Enter the password for the email account
 >> - **Server (incoming)**: pro**?**.mail.ovh.net
 >> - **Port**: 995
 >> - **Security type**: SSL/TLS
 
 #### SMTP Send Settings
 
-For sending emails, if you have to enter the **SMTP** settings manually in your account preferences, you will find the settings below:
+For sending emails, if you have to enter the **SMTP** settings manually in your account preferences, enter the following values:
 
 **SMTP configuration**
 
 - **Username**: Enter the **full** email address
-- **Password**: Enter the password for the email address
+- **Password**: Enter the password for the email account
 - **Server (incoming)**: pro**?**.mail.ovh.net
 - **Port**: 587
 - **Security type**: SSL/TLS
@@ -160,9 +160,9 @@ For sending emails, if you have to enter the **SMTP** settings manually in your 
 
 > [!primary]
 >
-> For more information about setting up an email address from the Outlook app on iOS, see [the Microsoft Help Center](https://support.microsoft.com/office/set-up-the-outlook-app-for-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
+> For more information about setting up an email account from the Outlook app on iOS, see [the Microsoft Help Center](https://support.microsoft.com/office/set-up-the-outlook-app-for-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
