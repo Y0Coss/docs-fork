@@ -32,9 +32,9 @@ Por exemplo, o **DynHost** pode ser utilizado se *autoidentificar* (nas instala�
 - Utilizar a configuração da OVHcloud (os servidores DNS) para o domínio em questão.
 - O registo DynHost que está prestes a criar não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A" ou "AAAA".
 
-Se o domínio não usar os servidores DNS da OVHcloud, contacte o fornecedor responsável pela configuração DNS para saber como proceder.
+**Se o domínio não usar os servidores DNS da OVHcloud**, contacte o fornecedor responsável pela configuração DNS para saber como proceder.
 
-Se o domínio estiver registado na OVHcloud, pode verificar se este último utiliza a nossa configuração. Para isso, clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
+**Se o domínio estiver registado na OVHcloud**, pode verificar se este último utiliza a nossa configuração. Para isso, clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -65,7 +65,7 @@ Se o domínio estiver registado na OVHcloud, pode verificar se este último util
 >
 > Para saber se utiliza ou não os servidores DNS da OVHcloud, estes têm uma das 2 formas seguintes:
 >
-> - `nsXX.ovh.net` e `dnsXX.ovh.net` ou, `nsXXX.ovh.net` e `dnsXXX.ovh.net` (em que cada `X` representa um algarismo compreendido entre **0** e **9**)
+> - `nsXX.ovh.net` e `dnsXX.ovh.net` **ou** `nsXXX.ovh.net` e `dnsXXX.ovh.net` (em que cada `X` representa um algarismo compreendido entre **0** e **9**)
 > - `ns200.anycast.me` e `dns200.anycast.me` (se subscreveu à opção [DNS anycast](/links/web/domains-options))
 > 
 > Para mais informações, consulte o nosso guia sobre [servidores DNS](/pages/web_cloud/domains/dns_server_general_information).
