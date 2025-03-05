@@ -34,7 +34,7 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 
 **Si votre nom de domaine n'utilise pas les serveurs DNS fournis par OVHcloud**, rapprochez-vous du prestataire/fournisseur gérant sa configuration DNS afin de connaître la procédure à suivre.
 
-**Si votre nom de domaine est enregistré chez OVHcloud**, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
+**Si votre nom de domaine est enregistré chez OVHcloud**, vous pouvez vérifier si celui-ci utilise notre configuration. Pour cela, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Etape 1**
