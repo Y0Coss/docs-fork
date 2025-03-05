@@ -32,7 +32,7 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 - Utiliser les serveurs DNS proposés par OVHcloud pour le nom de domaine concerné.
 - L'enregistrement DynHost que vous vous apprêtez à créer ne doit pas déjà exister dans la zone DNS OVHcloud de votre nom de domaine en tant qu'enregistrement « A » ou « AAAA ».
 
-**Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud**, rapprochez-vous du prestataire/fournisseur gérant sa configuration DNS afin de connaître la procédure à suivre à son niveau.
+**Si votre nom de domaine n'utilise pas les serveurs DNS fournis par OVHcloud**, rapprochez-vous du prestataire/fournisseur gérant sa configuration DNS afin de connaître la procédure à suivre.
 
 **Si votre nom de domaine est enregistré chez OVHcloud**, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
 
