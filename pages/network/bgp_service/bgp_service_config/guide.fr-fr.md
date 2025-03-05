@@ -1,7 +1,7 @@
 ---
 title : Configuration du service BGP
 excerpt : En tutilisant le service Bgp, vous bénéficiez d'un contrôle total sur vos politiques de routage et la résilience du réseau. Suivez ce guide pour configurer et optimiser vos sessions BGP.
-updated : 2025-02-27
+updated : 2025-03-25
 ---
 
 # Introduction

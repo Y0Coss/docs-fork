@@ -1,7 +1,7 @@
 ---
 title: BGP Service Configuration
 excerpt: By using BGP Service, you gain full control over your routing policies and network resilience. Follow this guide to set up and optimize your BGP sessions.
-updated: 2025-02-27
+updated: 2025-03-05
 ---
 
 # Introduction
@@ -41,7 +41,9 @@ You need to have created a vRack, which is the private network where the peering
 
 The vRack must contain the servers that will participate in the BGP peering.
 
-Important : the vRack must contain only servers in one given AZ of a region. As during the alpha period, the BGP service is only available on 1-AZ regions, this simply means that the vRack must contain only servers in one given region.
+>
+>Important : the vRack must contain only servers in one given AZ of a region. As during the alpha period, the BGP service is only available on 1-AZ regions, this simply means that the vRack must contain only servers in one given region.
+>
 
 ## Step 4: Provide configuration parameters of your BGP Service
 
