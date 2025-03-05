@@ -1,7 +1,7 @@
 ---
 title: "Paramétrer un DNS dynamique (DynHost/DynDNS) pour votre nom de domaine"
 excerpt: "Découvrez comment paramétrer un enregistrement DNS dynamique pour votre nom de domaine OVHcloud"
-updated: 2025-03-04
+updated: 2025-03-05
 ---
 
 ## Objectif
@@ -53,6 +53,8 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 >>
 >> Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
 >>
+>> ![DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers.png){.thumbnail}
+>>
 > **Etape 4**
 >>
 >> Le tableau qui s'affiche contient les serveurs DNS actuellement définis pour votre nom de domaine. Plusieurs serveurs DNS peuvent être répertoriés, chacun possédant sa propre ligne dans le tableau.
@@ -72,7 +74,7 @@ Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans l
 
 ### 1 - Créer un utilisateur DynHost <a name="step1"></a>
 
-Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **5** étapes.
+Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **6** étapes.
 
 > [!tabs]
 > **Etape 1**
@@ -91,11 +93,17 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 >> Sélectionnez l'onglet `DynHost`{.action} une fois positionné sur le domaine concerné.
 >>
->> ![DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
+>> ![DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost.png){.thumbnail}
 >>
 > **Etape 4**
 >>
->> Cliquez sur le bouton `Gérer les accès`{.action}, puis sur `Créer un identifiant`{.action}. Dans la fenêtre qui s'affiche, complétez les informations demandées :
+>> Cliquez sur le bouton `Gérer les accès`{.action}, puis sur `Créer un identifiant`{.action}. 
+>>
+>> ![DynHost tab empty](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab-empty.png){.thumbnail}
+>>
+> **Etape 5**
+>> 
+>> Dans la fenêtre qui s'affiche, complétez les informations demandées :
 >>
 >> |Informations|Description|
 >> |---|---|
@@ -108,11 +116,13 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >> > Pour mettre en place un DynHost directement pour votre nom de domaine, saisissez uniquement `*` dans le formulaire de saisie intitulé `Sous-domaine`{.action}.
 >> >
 >>
-> **Etape 5**
+>> ![Create a DynHost username](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost-username.png){.thumbnail}
+>>
+> **Etape 6**
 >>
 >> Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'identifiant apparaît alors dans le tableau présent sur la page actuelle.
 >>
->> ![Create a DynHost username](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost-username.png){.thumbnail}
+>> ![DynHost tab](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 >>
 
 Répétez cette étape autant de fois que nécessaire si vous avez besoin de créer plusieurs identifiants DynHost.
@@ -140,11 +150,18 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, cliquez sur les on
 >>
 >> Sélectionnez l'onglet `DynHost`{.action} une fois positionné sur le domaine concerné.
 >>
->> ![DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
+>> ![DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost.png){.thumbnail}
 >>
 > **Etape 4**
 >>
->> Cliquez sur le bouton `Ajouter un DynHost`{.action}, puis complétez les informations demandées :
+>> Cliquez sur le bouton `Ajouter un DynHost`{.action}.
+>>
+>> ![DynHost tab empty](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab-empty.png){.thumbnail}
+>>
+>>
+> **Etape 5**
+>>
+>> Dans la fenêtre qui s'affiche, complétez les informations demandées :
 >>
 >> |Informations|Description|
 >> |---|---|
@@ -155,12 +172,9 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, cliquez sur les on
 >> >
 >> > Pour la mise en place d'un enregistrement DNS dynamique (DynHost), l'utilisation d'un *wildcard* (en placant uniquement le caractère `*`) dans le formulaire `Sous-domaine`{.action} est indisponible.
 >>
-> **Etape 5**
->>
->> Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau.
->>
 >> ![Create a DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 >>
+>> Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau.
 
 Répétez cette étape autant de fois que nécessaire si vous avez besoin d'enregistrements DynHost supplémentaires.
 
@@ -216,7 +230,7 @@ Vous pouvez vérifier si l'adresse IP de destination a bien été mise à jour. 
 >>
 >> Sélectionnez l'onglet `DynHost`{.action} une fois positionné sur le domaine concerné.
 >>
->> ![DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
+>> ![DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost.png){.thumbnail}
 >>
 > **Etape 4**
 >>
