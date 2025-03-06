@@ -27,14 +27,14 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 ## Voraussetzungen
 
-- Sie besitzen eine Domainname.
-- Sie verfügen über eine OVHcloud DNS-Zone für die betreffende Domainname.
+- Sie verfügen über einen Domainnamen.
+- Sie haben eine DNS-Zone bei OVHcloud für den Domainnamen.
 - Der Domainname verwendet OVHcloud DNS-Server als zuständige Namensserver.
 - Der DynHost-Eintrag, den Sie erstellen möchten, darf noch nicht als A- oder AAAA-Eintrag in der DNS-Zone Ihres Domainnamens bei OVHcloud vorhanden sein.
 
-**Wenn Ihre Domainname nicht die von OVHcloud bereitgestellten DNS-Server verwendet**, kontaktieren Sie den Anbieter, der die DNS-Konfiguration Ihrer Domainname verwaltet, um sich über das weitere Vorgehen zu informieren.
+**Wenn Ihr Domainname nicht die DNS-Server von OVHcloud verwendet**, kontaktieren Sie den Anbieter, der die DNS-Konfiguration Ihrer Domainname verwaltet, um sich über das weitere Vorgehen zu informieren.
 
-**Wenn Ihre Domainname bei OVHcloud registriert ist**, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Klicken Sie hierzu auf die Registerkarten unten, um die einzelnen **4** Schritte anzuzeigen.
+**Wenn Ihr Domainname bei OVHcloud registriert ist**, können Sie überprüfen, ob er unsere Konfiguration verwendet. Klicken Sie hierzu auf die Registerkarten unten, um die einzelnen **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -63,10 +63,10 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 > [!success]
 >
-> Um festzustellen, ob Sie die DNS-Server von OVHcloud verwenden oder nicht, haben diese eine der folgenden 2 Formen:
+> Um festzustellen, ob Sie die DNS-Server von OVHcloud verwenden oder nicht, prüfen Sie das Namensformat:
 >
-> - `nsXX.ovh.net` und `dnsXX.ovh.net` **oder** `nsXXX.ovh.net` und `dnsXXX.ovh.net` (wobei jedes `X` eine Ziffer zwischen **0** und **9** sein kann)
-> - `ns200.anycast.me` und `dns200.anycast.me` (wenn die Option [DNS Anycast](/links/web/domains-options) aktiviert ist)
+> - `nsXX.ovh.net` und `dnsXX.ovh.net` **oder** `nsXXX.ovh.net` und `dnsXXX.ovh.net` (wobei jedes `X` eine Ziffer zwischen **0** und **9** sein kann).
+> - `ns200.anycast.me` und `dns200.anycast.me` (wenn die Option [DNS Anycast](/links/web/domains-options) aktiviert ist).
 > 
 > Mehr Informationen finden Sie in unserer [Dokumentation zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information).
 
@@ -74,7 +74,7 @@ So kann **DynHost** beispielsweise verwendet werden, um einen selbst gehosteten 
 
 ### 1 - DynHost-Benutzer erstellen <a name="step1"></a>
 
-licken Sie jeweils auf die Tabs, um die **6** Schritte anzuzeigen.
+Klicken Sie jeweils auf die Tabs, um die **6** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -131,7 +131,7 @@ Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Kennungen anlegen möch
 
 Im zweiten Schritt erstellen Sie den DNS-Eintrag, der dynamisch aktualisiert werden soll. Zur Erinnerung: Dieser darf nicht als A- oder AAAA-Eintrag in der OVHcloud DNS-Zone des Domainnamens vorhanden sein. Um den Eintrag zu überprüfen und wenn nötig zu löschen, können Sie die Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“ verwenden.
 
-Wenn Sie bereit sind, den DynHost-Eintrag zu erstellen, klicken Sie auf die Registerkarten unten, um nacheinander die einzelnen **5** Schritte anzuzeigen.
+Wenn Sie bereit sind, den DynHost-Eintrag zu erstellen, klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -210,7 +210,7 @@ https://dns.eu.ovhapis.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
 |$HOSTNAME|Subdomain, die von der Aktualisierung betroffen ist|
 |$IP|Die neue IPv4- oder IPv6-Zieladresse.|
 
-Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Klicken Sie auf die Registerkarten unten, um nacheinander die einzelnen **4** Schritte anzuzeigen.
+Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
