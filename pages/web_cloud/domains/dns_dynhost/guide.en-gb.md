@@ -27,12 +27,12 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 
 ## Requirements
 
-- Have a domain name.
-- Have an OVHcloud DNS zone for the domain name concerned.
+- You have a domain name.
+- You have a DNS zone at OVHcloud for the domain name concerned.
 - The domain name has OVHcloud DNS servers configured as its nameservers.
 - The DynHost record you are about to create must not already exist as an "A" or "AAAA" record in your domain name’s OVHcloud DNS zone.
 
-**If your domain name does'nt use the DNS servers provided by OVHcloud**, please contact the service provider managing its DNS configuration to find out how to proceed.
+**If your domain name does not use OVHcloud DNS servers**, please contact the service provider managing its DNS configuration to find out how to proceed.
 
 **If your domain name is registered with OVHcloud**, you can check if it is using our configuration. To do this, click on the tabs below to view each of the **4** steps.
 
@@ -74,7 +74,7 @@ For example, the **DynHost** can be used for a self-hosted game server (located 
 
 ### 1 - Create a DynHost username <a name="step1"></a>
 
-lick on the tabs below to view each of the **6** steps.
+Click on the tabs below to view each of the **6** steps.
 
 > [!tabs]
 > **Step 1**
@@ -245,8 +245,8 @@ You can check if the destination IP address has been updated. To do this, click 
 
 ## Go further <a name="go-further"></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our [community of users](/links/community). 
+Join our [community of users](/links/community).
