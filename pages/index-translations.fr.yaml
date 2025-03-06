@@ -318,6 +318,7 @@ storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 network-byoip: Bring your own IP (BYOIP)
 network-additional-ip: Additional IP
+network-bgp: BGP Service
 network-security: Réseau et Sécurité
 network-ovhcloud-connect: OVHcloud Connect
 network-ovhcloud-connect-concepts: Concepts
