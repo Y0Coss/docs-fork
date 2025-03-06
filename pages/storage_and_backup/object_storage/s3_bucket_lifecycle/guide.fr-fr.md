@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion intelligente du stockage avec des règles lifecycle
 excerpt: "Découvrez comment optimiser vos coûts de stockage avec les règles lifecycle d'OVHcloud"
-updated: 2025-02-24
+updated: 2025-03-13
 ---
 
 <style>
@@ -90,7 +90,7 @@ Dans un bucket versionné, chaque objet a une version courante et zéro ou plusi
 /// details | Voici la structure de base d'une configuration JSON pour un lifecycle contenant des règles d'expiration
 
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -197,7 +197,7 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 
 Étant donné que le bucket n'est pas versionné, la configuration suivante supprimera définitivement tous les objets du bucket au bout de 30 jours :
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -218,7 +218,7 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 
 La configuration suivante demandera à OVHcloud Object Storage d'annuler tous les téléchargements incomplets identifiés par le préfixe « /mpus » et de supprimer les parties déjà téléchargées dans les 7 jours suivant leur lancement :
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -246,7 +246,7 @@ Dans la configuration suivante, il y a 2 règles de lifecycle :
 
 Le même ensemble d'objets est éligible aux deux règles de lifecycle. Dans ce cas, la première règle s'appliquera après 30 jours et la seconde sera alors ignorée car les objets auront déjà été supprimés.
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -284,7 +284,7 @@ Dans la configuration suivante, il y a 2 règles de lifecycle :
 
 Si un objet porte les deux tags, c'est-à-dire si un objet est tagué « âge » avec la valeur « old » et « type » avec la valeur « logs », la première règle s'appliquera après 30 jours et la deuxième règle sera alors ignorée parce que l'objet aura déjà été retiré.
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -325,7 +325,7 @@ Dans un bucket versionné, la configuration suivante effectue ces actions :
 - Après 45 jours, tous les objets portant le préfixe « old/ » expirent automatiquement en créant des marqueurs de suppression pour chacune des versions courantes de l'objet : la version courante devient non courante et le marqueur de suppression devient la version courante.
 - Toutes les versions non courantes datant de plus de 15 jours des objets sélectionnés sont alors supprimées, à l'exception des 3 versions non courantes les plus récentes. S'il y a moins de 3 versions non courantes, l'action NoncurrentVersionExpiration ne sera pas appliquée.
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -385,7 +385,7 @@ Comme nous l'avons déjà mentionné, lorsque vous avez plusieurs règles dans u
 
 /// details | Voici la structure de base d'une configuration d'un lifecycle JSON contenant des règles de transition :
 
-```JSON
+```json
 {
   "Rules": [
     {   
@@ -428,7 +428,7 @@ Comme nous l'avons déjà mentionné, lorsque vous avez plusieurs règles dans u
 
 La configuration suivante fait passer tous les objets ayant le préfixe « old » du niveau de stockage Haute performance au niveau de stockage Standard (EXPRESS_ONEZONE à STANDARD) 30 jours après leur création.
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -470,7 +470,7 @@ Si la date actuelle est 2024-10-23 :
 - v5 sera transférée 30 jours après le 2024-10-23
 - v1 sera transférée puisqu'elle est une version non courante depuis déjà 5 jours 
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -505,7 +505,7 @@ La configuration du lifecycle suivante s'applique à tous les objets dont le pr�
 
 Dans ce scénario, les objets seront stockés dans le niveau haute performance pendant 30 jours, puis 60 jours dans le niveau standard avant d'être définitivement supprimés.
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -545,7 +545,7 @@ La configuration suivante du lifecycle est téléchargée dans un bucket non ver
 
 Dans ce scénario, deux règles imposent à OVHcloud Object Storage d'effectuer simultanément deux actions différentes sur le même ensemble d'objets. La suppression permanente étant prioritaire sur la transition, les objets sont supprimés au bout de 90 jours et il n'y a plus d'intérêt à changer de classe de stockage.
 
-```JSON
+```json
 {
   "Rules": [
     {

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
 excerpt: Learn how to optimise your storage costs with OVHcloud lifecycle rules
-updated: 2025-02-24
+updated: 2025-03-13
 ---
 
 <style>
@@ -90,7 +90,7 @@ In a versioning-enabled bucket, each object has one current version and zero or 
 /// details | The following is the basic structure of a lifecycle configuration JSON containing expiration rules
 
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -197,7 +197,7 @@ x-amz-expiration: expiry-date="Fri, 21 Dec 2024 00:00:00 GMT", rule-id="12345678
 
 Since the bucket is non-versioned, the following configuration will permanently delete all objects in the bucket after 30 days:
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -218,7 +218,7 @@ Since the bucket is non-versioned, the following configuration will permanently 
 
 The following configuration will direct OVHcloud Object Storage to abort all incomplete multipart uploads identified by the prefix "/mpus" and delete the parts already uploaded within 7 days after their initiation:
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -246,7 +246,7 @@ In the following configuration, there are 2 lifecycle rules:
 
 The same set of objects are eligible to both lifecycle rule. In this case, the first rule will apply after 30 days and the second rule will then be ignored because the objects will have already been removed.
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -284,7 +284,7 @@ In the following configuration, there are 2 lifecycle rules:
 
 If an object has both tags i.e if an object is tagged "age" with value "old" and "type" with value "logs", the first rule will apply after 30 days and the second rule will then be ignored because the object will have already been removed.
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -307,7 +307,8 @@ If an object has both tags i.e if an object is tagged "age" with value "old" and
         "Tag": {
            "Key": "type",
            "Value": "logs"
-        }       },
+        }
+      },
       "Expiration": {
         "Days": 65
       }
@@ -325,7 +326,7 @@ In a versioned bucket, the following configuration does the following actions:
 - after 45 days, it automatically expires all the objects with prefix "old/" by creating delete markers for each of the current object versions: the current version becomes noncurrent, and the delete marker becomes the current version.
 - all 15+ days old noncurrent versions of the selected objects are then deleted except for the 3 most recent noncurrent versions. If there are less than 3 noncurrent versions, the NoncurrentVersionExpiration action will not be applied.
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -384,7 +385,7 @@ As already mentioned before, when you have multiple rules in a bucket lifecycle 
 
 /// details | The following is the basic structure of a lifecycle configuration JSON containing transition rules:
 
-```JSON
+```json
 {
   "Rules": [
     {   
@@ -427,7 +428,7 @@ As already mentioned before, when you have multiple rules in a bucket lifecycle 
 
 The following configuration will transition all objects with prefix "old" from the High Performance storage tier to the Standard storage tier (EXPRESS_ONEZONE to STANDARD) 30 days after their creation.
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -469,7 +470,7 @@ If the current date is 2024-10-23:
 - v5 will be transitioned 30 days after 2024-10-23
 - v1 will be transitioned since it has been a noncurrent version for 5 days already
 
-```JSON
+```json
 {
   "Rules": [
     {
@@ -504,17 +505,19 @@ The following lifecycle configuration applies to all objects with prefix "old" a
 
 In this scenario, the objects will be stored in the High Performance tier for 30 days and then 60 days in the Standard tier before being finally deleted.
 
-```JSON
+```json
 {
   "Rules": [
     {
       "ID": "123456",
       "Status": "Enabled",
       "Filter": {
-        "Prefix": "old/",
-        "Tag": {
-          "Key": "type",
-          "Value": "logs"
+        "And":{
+            "Prefix": "old/",
+            "Tag": {
+              "Key": "type",
+              "Value": "logs"
+            }
         }
       },
       "Expiration": {
@@ -542,17 +545,19 @@ The following lifecycle configuration is uploaded to a non-versioned bucket. It 
 
 In this scenario, there are two rules that direct OVHcloud Object Storage to perform two different actions on the same set of objects at the same time. Since permanent deletion takes precedence over transition, the objects are removed after 90 days and there is no further point in changing the storage class.
 
-```JSON
+```json
 {
   "Rules": [
     {
       "ID": "123456",
       "Status": "Enabled",
       "Filter": {
-        "Prefix": "old/",
-        "Tag": {
-          "Key": "type",
-          "Value": "logs"
+        "And":{
+            "Prefix": "old/",
+            "Tag": {
+              "Key": "type",
+              "Value": "logs"
+            }
         }
       },
       "Expiration": {
@@ -563,10 +568,12 @@ In this scenario, there are two rules that direct OVHcloud Object Storage to per
       "ID": "456789",
       "Status": "Enabled",
       "Filter": {
-        "Prefix": "old/",
-        "Tag": {
-          "Key": "type",
-          "Value": "logs"
+        "And":{
+            "Prefix": "old/",
+            "Tag": {
+              "Key": "type",
+              "Value": "logs"
+            }
         }
       },
       "Transitions": [
