@@ -40,12 +40,10 @@ Le Softphone est une solution qui transforme votre ordinateur, smartphone ou tab
 
 #### Activer la ligne SIP pour Softcall
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et effectuez les actions suivantes :
-
-- Dirigez-vous dans l'onglet `Télécom`{.action}.
-- Cliquez sur `Téléphonie`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-- Sélectionnez la ligne SIP concernée.
-- Après avoir sélectionné l'onglet `Softphone`{.action}, cliquez sur l'interrupteur pour utiliser la ligne SIP sur l’ensemble de vos applications Softcall.
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
+1. Cliquez sur `Téléphonie`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
+1. Cliquez sur la ligne SIP concernée.
+1. Après avoir sélectionné l'onglet `Softphone`{.action}, cliquez sur l'interrupteur pour utiliser la ligne SIP sur l’ensemble de vos applications Softcall.
 
 ![Install Softcall](images/toggle_activation_sip.png){.thumbnail}
 
@@ -57,7 +55,7 @@ Cliquez sur `Liens de téléchargements`{.action}.
 
 Vous disposez de trois options pour télécharger l'application Softcall :
 
-- Option 1 : via un store d'applications (App Store, Google Play, Microsoft Store).
+- Option 1 : via un store d'applications (Apple App Store, Google Play Store, Microsoft Store).
 - Option 2 : via le QR code.
 - Option 3 : via le lien de téléchargement.
 
@@ -71,7 +69,7 @@ Dans la section `Configurer la ligne`{.action}, cliquez sur `Obtenir un code de 
 
 ![Install Softcall](images/get_configuration_code_button.png){.thumbnail}
 
-Dans la fenêtre qui s'ouvre, cliquez sur le bouton `Générer un code de configuration`{.action}. Si vous souhaitez recevoir également le code de configuration par mail (optionnel), entrez votre adresse e-mail dans le champ concerné.
+Dans la fenêtre qui s'ouvre, cliquez sur le bouton `Générer un code de configuration`{.action}. Si vous souhaitez recevoir également le code de configuration par e-mail (facultatif), entrez votre adresse e-mail dans le champ concerné.
 
 ![Install Softcall](images/configuration_code_popup.png){.thumbnail}
 
@@ -335,13 +333,13 @@ Pour effectuer un transfert d'appel accompagné, suivez ces étapes :
 
 ### Personnaliser Softcall
 
-Dans votre [espace client OVHcloud](/links/manager), effectuez les actions suivantes :
-
-- Rendez-vous dans l'onglet `Télécom`{.action}.
-- Cliquez sur `Téléphonie`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-- Sélectionnez la ligne SIP utilisée par votre application Softcall puis sélectionnez l'onglet `Softphone`{.action}.
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
+1. Cliquez sur `Téléphonie`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
+1. Cliquez sur la ligne SIP utilisée par votre application Softcall puis sélectionnez l'onglet `Softphone`{.action}.
 
 #### Appliquer un thème
+
+Vous pouvez définir un thème de couleur à appliquer à votre interface Softcall.
 
 Dirigez-vous sur la section `Appliquer un thème`{.action}.
 
@@ -349,9 +347,12 @@ Sélectionnez la couleur de votre choix puis cliquez sur le bouton `Appliquer un
 
 #### Ajouter un logo
 
-Dirigez-vous sur la section `Ajouter un logo`{.action}.
+> [!primary]
+> La modification du logo depuis l'espace client ne concerne pas l'icône de l'application Softcall sur votre appareil, mais uniquement le logo visible dans les paramètres de l'application, dans la section `À propos`.
 
-Cliquez sur le bouton `Drag and drop a file or select a file`{.action}. La photo que vous venez de charger s'affiche en-dessous de la mention `Attached file(s)`{.action} (`OVHcloud_logo.png` dans l'exemple ci-dessous).
+Dirigez-vous dans la section `Ajouter un logo`{.action}.
+
+Cliquez sur le bouton `Drag and drop a file or select a file`{.action}. La photo que vous venez de charger s'affiche en-dessous de la mention `Attached file(s)`(`OVHcloud_logo.png` dans l'exemple ci-dessous).
 
 ![Install Softcalls](images/add_logo_manager.png){.thumbnail}
 
@@ -360,12 +361,9 @@ Cliquez sur le bouton `Drag and drop a file or select a file`{.action}. La photo
 >
 > - Format `png`, `jpeg` ou `jpg`.
 > - Poids inférieur à 1 MB.
-> - Dimensions maximales 512 x 512 pixels.
+> - Dimensions maximales : 512 x 512 pixels.
 
 Cliquez sur le bouton `Appliquer un logo`{.action}. Redémarrez votre application Softcall pour activer le changement de thème.
-
-> [!Primary]
-> La modification du logo depuis l'espace client ne concerne pas l'icône de l'application Softcall sur votre appareil, mais uniquement le logo visible dans les paramètres de l'application, section `À propos`.
 
 ## Aller plus loin
 
