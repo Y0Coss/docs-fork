@@ -307,7 +307,8 @@ If an object has both tags i.e if an object is tagged "age" with value "old" and
         "Tag": {
            "Key": "type",
            "Value": "logs"
-        }       },
+        }
+      },
       "Expiration": {
         "Days": 65
       }
@@ -511,10 +512,12 @@ In this scenario, the objects will be stored in the High Performance tier for 30
       "ID": "123456",
       "Status": "Enabled",
       "Filter": {
-        "Prefix": "old/",
-        "Tag": {
-          "Key": "type",
-          "Value": "logs"
+        "And":{
+            "Prefix": "old/",
+            "Tag": {
+              "Key": "type",
+              "Value": "logs"
+            }
         }
       },
       "Expiration": {
@@ -549,10 +552,12 @@ In this scenario, there are two rules that direct OVHcloud Object Storage to per
       "ID": "123456",
       "Status": "Enabled",
       "Filter": {
-        "Prefix": "old/",
-        "Tag": {
-          "Key": "type",
-          "Value": "logs"
+        "And":{
+            "Prefix": "old/",
+            "Tag": {
+              "Key": "type",
+              "Value": "logs"
+            }
         }
       },
       "Expiration": {
@@ -563,10 +568,12 @@ In this scenario, there are two rules that direct OVHcloud Object Storage to per
       "ID": "456789",
       "Status": "Enabled",
       "Filter": {
-        "Prefix": "old/",
-        "Tag": {
-          "Key": "type",
-          "Value": "logs"
+        "And":{
+            "Prefix": "old/",
+            "Tag": {
+              "Key": "type",
+              "Value": "logs"
+            }
         }
       },
       "Transitions": [
