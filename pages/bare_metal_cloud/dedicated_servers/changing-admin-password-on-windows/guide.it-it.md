@@ -4,10 +4,6 @@ excerpt: 'Come impostare una nuova password amministratore su un server Windows'
 updated: 2024-06-26
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 Durante l’installazione o la reinstallazione di una distribuzione Windows, viene fornita una password per accedere come amministratore. Ti consigliamo vivamente di modificarlo, come spiegato nella nostra guida Mettere in [sicurezza un server dedicato](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server){.external}. Se hai perso la password admin, è necessario reimpostarla in modalità Rescue.

@@ -4,10 +4,6 @@ excerpt: 'Dowiedz się, jak zmienić hasło administratora na serwerze dedykowan
 updated: 2024-06-26
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
-
 ## Wprowadzenie
 
 Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz hasło administratora. Rekomendujemy jego zmianę zgodnie z instrukcją zawartą w przewodniku o bezpieczeństwie [serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server). Jeśli utraciłeś hasło administratora, zresetuj je w trybie Rescue.
