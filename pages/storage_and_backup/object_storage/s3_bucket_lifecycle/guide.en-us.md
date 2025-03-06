@@ -23,12 +23,10 @@ details[open]>summary::before {
 **Learn how to optimise your storage costs with OVHcloud lifecycle rules.**
 
 > [!warning]
->
-> The feature is currently in beta.
 > 
 > The release of the feature will be done in 2 phases:
 >
-> - Phase 1: release of expiration only
+> - Phase 1: support for expiration only
 > - Phase 2: support for transitions
 
 ## Introduction
@@ -58,7 +56,7 @@ When an object reaches the end of its lifetime based on its lifecycle configurat
 - **versioned**: a delete marker is created and becomes the current version. You can also choose how many old versions you want to keep. If the current object version is the only object version and it is also a delete marker, that delete marker will be removed.
 - **versioning-suspended**: we currently do not allow for the suspension of versioning if you have a lifecycle configuration in effect and vice-versa. We currently do not allow for the upload of a lifecycle configuration if versioning is suspended on the bucket.
 
-## Expiration
+## Expiration (available)
 
 Lifecycle rules are processed asynchronously and on a best-effort basis. Most rules are applied within 24 hours, but for very large buckets or when processing many objects, it might take longer. During this delay, you continue to be billed for the object's current storage tier, even if the rule (e.g., expiration or transition) has already been triggered but not yet completed. For example, if an object is set to be deleted on day 30 but is only processed on day 32, you may be billed for an additional two days.
 
@@ -349,7 +347,7 @@ In a versioned bucket, the following configuration does the following actions:
 
 ///
 
-## Transition
+## Transition (coming soon)
 
 ### Supported transitions
 
