@@ -1,7 +1,7 @@
 ---
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
-updated: 2025-02-27
+updated: 2025-03-07
 ---
 
 ## Objective
@@ -106,16 +106,17 @@ endpoint_url = https://s3.<s3_region>.io.cloud.ovh.net/
 
 > [!primary]
 >
-> Replace ```s3_region``` by the Public Cloud Region with no digits (e.g.: gra, sbg, bhs)
+> Replace `s3_region` by the Public Cloud Region with no digits (e.g.: gra, sbg, bhs)
 
-You can test your settings by running this command : 
+You can test your settings by running this command:
+
 ```bash 
 aws --profile default s3 ls
 ```
 
 > [!primary]
 >
-> If your .aws/config only contains one profile, the argument ```--profile default``` is optional
+> If your .aws/config only contains one profile, the argument `--profile default` is optional.
 
 #### Create an Object Storage bucket for Velero
 
@@ -140,7 +141,7 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 > [!primary]
 >
 > Starting with version 1.14 the plugin-for-csi is integrated in Velero. You can simply remove it from the install example if you install version 1.14 or newer. For upgrading an older version follow the upgrade notes: [Upgrade-to-1.14](https://velero.io/docs/v1.14/upgrade-to-1.14/).
-> Please refer to those links to check Velero's plugins comptability : [velero-plugin-for-aws](https://github.com/vmware-tanzu/velero-plugin-for-aws?tab=readme-ov-file#compatibility) and [velero-plugin-for-csi](https://github.com/vmware-tanzu/velero-plugin-for-csi?tab=readme-ov-file#compatibility)
+> Please refer to those links to check Velero's plugins comptability: [velero-plugin-for-aws](https://github.com/vmware-tanzu/velero-plugin-for-aws?tab=readme-ov-file#compatibility) and [velero-plugin-for-csi](https://github.com/vmware-tanzu/velero-plugin-for-csi?tab=readme-ov-file#compatibility).
 
 Example for 1.13 and older:
 
@@ -167,9 +168,10 @@ velero install \
   --backup-location-config region=<s3_region>,s3ForcePathStyle="true",s3Url=https://s3.<s3_region>.io.cloud.ovh.net,checksumAlgorithm="" \
   --snapshot-location-config region=<s3_region>,enableSharedConfig=true
 ```
+
 > [!primary]
 >
-> Replace ```s3_region``` by the Public Cloud Region with no digits (e.g.: gra, sbg, bhs)
+> Replace `s3_region` by the Public Cloud Region with no digits (e.g.: gra, sbg, bhs).
 
 This command should return an output similar to this (we are taking GRA S3 Region as an example): 
 
