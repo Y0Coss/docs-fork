@@ -606,7 +606,7 @@ $ cat lifecycle.json
       "Status": "Enabled",
       "Filter": { },
       "Expiration": {
-        "Days": 20,
+        "Days": 20
       },
       "NoncurrentVersionExpiration": {
         "NoncurrentDays": 10
@@ -617,13 +617,13 @@ $ cat lifecycle.json
       "Status": "Enabled",
       "Filter": { },
       "Expiration": {
-        "ExpiredObjectDeleteMarker": true,
+        "ExpiredObjectDeleteMarker": true
       }
     },
     {
       "ID": "963852",
       "Status": "Enabled",
-      "Filter": { }
+      "Filter": { },
       "AbortIncompleteMultipartUpload": {
         "DaysAfterInitiation": 10
       }
