@@ -1,7 +1,7 @@
 ---
 title: 'Modifier le mot de passe de votre compte'
 excerpt: 'Apprenez à définir, modifier et gérer le mot de passe de votre espace client OVHcloud'
-updated: 2020-09-30
+updated: 2025-03-10
 ---
 
 ## Objectif
@@ -72,11 +72,8 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 #### Depuis votre espace client OVHcloud
 
-- Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre nom en haut à droite dans votre espace client, puis sur vos initiales.
-
-![manage-ovh-password](images/newhub2.png){.thumbnail}
-
-- Cliquez ensuite sur `Sécurité`{.action} puis sur `Modifier`{.action} à droite de « Mot de passe ».
+- Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
+- Cliquez sur l'onglet `Sécurité`{.action}, puis sur le bouton `Modifier`{.action} situé à droite de la mention **Mot de passe**.
 
 ![manage-ovh-password](images/manage-password02.png){.thumbnail}
 
