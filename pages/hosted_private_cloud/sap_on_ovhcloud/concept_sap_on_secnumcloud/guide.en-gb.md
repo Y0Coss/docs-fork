@@ -1,7 +1,7 @@
 ---
 title: "SAP infrastructure with SecNumCloud-qualified SAP HANA on Private Cloud"
 excerpt: "This concept page demonstrates an architecture using SAP HANA-certified hosts with our SecNumCloud-qualified VMware on OVHcloud infrastructure"
-updated: 2025-03-07
+updated: 2025-03-10
 ---
 
 ## Objective
