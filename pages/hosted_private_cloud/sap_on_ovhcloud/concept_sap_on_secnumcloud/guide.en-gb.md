@@ -3,17 +3,17 @@ title: "SAP infrastructure with SecNumCloud-qualified SAP HANA on Private Cloud"
 excerpt: "This concept page demonstrates an architecture using SAP HANA-certified hosts with our SecNumCloud-qualified VMware on OVHcloud infrastructure"
 updated: 2025-03-07
 ---
- 
+
 ## Objective
 
-The following concept enables you to build an architecture with SAP HANA databases up to 1.5 TB, and take advantage of all VMware features on OVHcloud (including OVF/OVA templates, NSX, DRS, Fault Tolerance, or else vSphere High Availability) for your SAP infrastructure in a single OVHcloud location or across multiple OVHcloud locations in a SecNumCloud context.
+The following concept enables you to build an architecture with SAP HANA databases up to 1.5 TB, and take advantage of all VMware on OVHcloud features (including OVF/OVA templates, NSX, DRS, Fault Tolerance, and even vSphere High Availability) for your SAP infrastructure in a single OVHcloud location or across multiple OVHcloud locations in a SecNumCloud context.
 
 ![schema](images/concept-sap-vmware-secnumcloud.png){.thumbnail}
-  
+
 | Objective | Description |
 | --------- | ----------- |
 | Objective #1 | Building an SAP infrastructure based on existing SecNumCloud-qualified SAP HANA on Private Cloud infrastructure. |
-| Objective #2 | Need an infrastructure with high security requirements. |
+| Objective #2 | An infrastructure with high security requirements. |
 | Objective #3 | An Infrastructure Recovery Point Objective (RPO) of 60 minutes. |
 | Objective #4 (optional) | An SAP infrastructure available in a second region which can be activated in the event of a major issue impacting the primary region. This second region offers an Infrastructure Recovery Point Objective (RPO) near to zero for your SAP HANA databases. |
 
@@ -26,38 +26,38 @@ The following concept enables you to build an architecture with SAP HANA databas
 >
 > Keep equipments up-to-date with the latest patches and updates.
 >
-> Also [ANSSI<sup>1</sup> recommends](https://cyber.gouv.fr/publications/recommandations-relatives-ladministration-securisee-des-si) hosting production environments on a separate and dedicated infrastructure, and to keep them isolated from non-production environments such as development and test environments.
+> Also the [ANSSI<sup>1</sup> recommends](https://cyber.gouv.fr/publications/recommandations-relatives-ladministration-securisee-des-si) hosting production environments on a separate and dedicated infrastructure, and keeping them isolated from non-production environments such as development and test environments.
 >
 
 <sup>1</sup> **A**gence **N**ationale de la **S**écurité des **S**ystèmes d'**I**nformation
-  
+
 ## Concept elements
 
 <a name="network-connectivity"></a>
 
 ### 1 - Network connectivity
 
-To ensure optimal communication quality between your local site and your SAP infrastructure hosted on OVHcloud, we recommend using OVHcloud Connect. This solution offers a secure and high-performance connection between your offices and OVHcloud. For more information, please refer to the [OVHcloud Connect](https://www.ovhcloud.com/en-gb/network/ovhcloud-connect/) product page.
+To ensure optimal communication quality between your local site and your SAP infrastructure hosted on OVHcloud, we recommend using OVHcloud Connect. This solution offers a secure and high-performance connection between your offices and OVHcloud. For more information, please refer to the [OVHcloud Connect](/links/network/ovhcloud-connect) product page.
 
-In addition, a VPN Secure Private Network (VPN-SPN) can be deployed to ensure secure external communication using the IPsec protocol with highest performance between your local site and your SecNumCloud-qualified VMware on OVHcloud infrastructure. For more details about this architecture, refer to our [documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-overview) on this topic.
+In addition, a VPN Secure Private Network (VPN-SPN) can be deployed to ensure secure external communication using the IPsec protocol with the highest performance between your local site and your SecNumCloud-qualified VMware on OVHcloud infrastructure. For more details about this architecture, refer to our [documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-overview) on this topic.
 
 Under no circumstances should your SAP environment be accessible from the internet without passing through several filtered gateways and a demilitarised zone (DMZ).
 
-For SAProuter, used primarily to connect your SAP environment to SAP support, it is preferable to do its installation on a dedicated virtual machine that is not used for any other purpose, in a DMZ. The SAPROUTTAB should be configured with great vigilance.
+For SAProuter, used primarily to connect your SAP environment to SAP support, it is preferable to do its installation on a dedicated virtual machine that is not used for any other purposes, in a DMZ. The SAPROUTTAB should be configured with great vigilance.
 However, ANSSI strongly recommends not opening the SecNumCloud environment to external support that is not PAMS-qualified. In this scenario, it is best to implement so-called “four-eye” work sessions to have visual control of the actions performed by an internal administrator.
 
-It is recommended that you install the SAP Web Dispatcher, which is used primarily to publish HTTP(s) services for your SAP environment, on a dedicated virtual machine that is not used for any other purpose, within a DMZ. For security reasons, we recommend only enabling HTTPS protocol. The access control lists (ACLs), the authentication manager and the HTTP rewrite manager must be configured with great care. Similarly, consider implementing a Web Application Firewall (WAF) to protect your SAP Web Dispatcher from common web attacks, such as SQL injection and cross-site scripting (XSS).
+It is recommended that you install the SAP Web Dispatcher, which is used primarily to publish HTTP(s) services for your SAP environment, on a dedicated virtual machine that is not used for any other purposed, within a DMZ. For security reasons, we recommend only enabling the HTTPS protocol. The access control lists (ACLs), the authentication manager and the HTTP rewrite manager must be configured with great care. Similarly, consider implementing a Web Application Firewall (WAF) to protect your SAP Web Dispatcher from common web attacks, such as SQL injection and cross-site scripting (XSS).
 
 Regarding connections, it is a good practice to document them exhaustively, to open only the necessary connections and to outsource the associated logs in order to guarantee access to these logs.
 
 Please note that all communications with an SAP service in SaaS mode, such as SAP Business Technology Platform (SAP BTP) or SAP Analytics Cloud (SAC), are considered to be outside the SecNumCloud-qualified scope.
 
-[ANSSI recommends](https://cyber.gouv.fr/publications/recommandations-relatives-ladministration-securisee-des-si) that the same ESXi host be used for services within the same trusted zone. It does not recommend running a service located in your DMZ and a service located in your trusted zone, such as your SAP HANA databases on the same ESXi host.
+The [ANSSI recommends](https://cyber.gouv.fr/publications/recommandations-relatives-ladministration-securisee-des-si) that the same ESXi host should be used for services within the same trusted zone. It does not recommend running a service located in your DMZ and a service located in your trusted zone, such as your SAP HANA databases on the same ESXi host.
 
 It is important to regularly review and test your security measures to ensure they are effective and up-to-date. Perform regularly:
 
 - vulnerability assessments;
-- Intrusion tests;
+- intrusion tests;
 - audits on your network configuration and system.
 
 ### 2 - SAP HANA database
@@ -79,9 +79,9 @@ Starting with SAP HANA Platform 2.0 SPS 07, data and log encryption settings and
 
 Administrators can authenticate to the SAP HANA database using various methods, including password, SAML, X.509 certificate, and Kerberos. We recommend using a strong authentication mechanism to prevent unauthorized access to the database. It is also essential to regularly review and update roles and privileges to ensure proper access control. Enabling audit logs is also essential to detect and respond to suspicious behavior. Outsource audit logs, as described in [SAP Note 2624117](https://me.sap.com/notes/0002624117).
 
-It is recommended that access to the SAP HANA database be restricted and monitored for administration through controlled and monitored entry points to improve security.
+It is recommended to restrict and monitor access to the SAP HANA database for administration through controlled and monitored entry points to improve security.
 
-For more information about SAP HANA security, see [SAP documentation](https://www.sap.com/documents/2016/06/3ea239ad-757c-0010-82c7-eda71af511fa.html).
+For more information about SAP HANA security, see the [SAP documentation](https://www.sap.com/documents/2016/06/3ea239ad-757c-0010-82c7-eda71af511fa.html).
 
 ### 3 - SAP Application Servers
 
@@ -97,7 +97,7 @@ Authentication to the SAP system can be performed using various methods, such as
 
 ### 4 - Backup infrastructure
 
-To ensure the security and compliance of your SAP infrastructure, you can deploy a second SAP HANA on Private Cloud infrastructure SecNumCloud-qualified in a separate OVHcloud region. This second region will be dedicated to hosting NFS servers for storing backups of your SAP infrastructure. These backups can be managed by a Veeam Backup and Replication server.
+To ensure the security and compliance of your SAP infrastructure, you can deploy a second SAP HANA on a SecNumCloud-qualified Private Cloud infrastructure in a separate OVHcloud region. This second region will be dedicated to hosting NFS servers for storing backups of your SAP infrastructure. These backups can be managed by a Veeam Backup and Replication server.
 
 With Veeam Backup and Replication, you can easily create and manage backups and snapshots of your virtual machines. This ensures low recovery time (RTO) in the event of any issues with your SecNumCloud-qualified SAP HANA on Private Cloud infrastructure.
 
@@ -109,13 +109,13 @@ We recommend implementing regular backups and testing the restore process to ens
 
 You can use the second region to store backups of other critical systems.
 
-Finally, when implementing your backup infrastructure, be sure to follow best practices for backup configuration and management, such as encrypting backup data (both at rest and in transit), testing your restore process, and regularly reviewing and updating your backup strategy to ensure it remains effective and up-to-date against the latest threats and vulnerabilities.
+Finally, when implementing your backup infrastructure, make sure to follow best practices for backup configuration and management, such as encrypting backup data (both at rest and in transit), testing your restore process, and regularly reviewing and updating your backup strategy to ensure it remains effective and up-to-date against the latest threats and vulnerabilities.
 
 ### 5 - SAP Support connection
 
 In line with our previous chapter on [network connectivity](#network-connectivity), it is best to deploy the SAProuter in a demilitarized zone (DMZ) and configure the SAPROUTTAB with great rigor. The SAP Secure Network Communications (SNC) protocol can be used to encrypt SAP connections.
 
-It is a good practice to document and limit connections to those deemed exclusively necessary. Connection logs are essential for monitoring and detecting suspicious activity; outsourcing them allows for readability and archiving, even if the SAProuter service deletion is required. For more information on best practices, see [SAP Note 1895350](https://me.sap.com/notes/1895350/E).
+It is a good practice to document and limit connections to those deemed exclusively necessary. Connection logs are essential for monitoring and detecting suspicious activity. Outsourcing them allows for readability and archiving, even if the SAProuter service deletion is required. For more information on best practices, see [SAP Note 1895350](https://me.sap.com/notes/1895350/E).
 
 It is recommended that you place the SAProuter behind security features such as firewalls and intrusion detection systems (IDS). These devices can filter, scan, and monitor connections to the security-enhancing SAProuter.
 
@@ -127,7 +127,7 @@ To ensure high availability and mitigate the risk of total service loss, you may
 
 #### 6.1 - Network connectivity
 
-For constant security and connectivity of your infrastructure, we recommend using OVHcloud Connect in the secondary OVHcloud region, similar to the primary region, as well as a Secure Private Network VPN (VPN-SPN) between your on-premises site and your SecNumCloud-qualified SAP HANA on Private Cloud infrastructure. This VPN-SPN connection must be attached to the same vRack and extended to your two SAP HANA on Private Cloud infrastructure qualified SecNumCloud using the InterDC feature. This way, a secure, wide-area network is created, enabling seamless communication between all the components of your infrastructure.
+For constant security and connectivity of your infrastructure, we recommend using OVHcloud Connect in the secondary OVHcloud region, similar to the primary region, as well as a Secure Private Network VPN (VPN-SPN) between your on-premises site and your SecNumCloud-qualified SAP HANA on Private Cloud infrastructure. This VPN-SPN connection must be attached to the same vRack and extended to your two SAP HANA on a SecNumCloud-qualifed Private Cloud infrastructure, using the InterDC feature. This way, a secure, wide-area network is created, enabling seamless communication between all the components of your infrastructure.
 
 #### 6.2 - SAP HANA database
 
@@ -151,9 +151,9 @@ Refer to the [User Guide for VMware vSphere](https://helpcenter.veeam.com/docs/b
 
 #### 6.4 - Backup infrastructure
 
-The concept remains similar to a single-region configuration that includes a SAP HANA on Private Cloud infrastructure SecNumCloud-qualified, but with a major distinction: the ability to restore and resume SAP services on the second region without experiencing downtime due to infrastructure delivery.
+The concept remains similar to a single-region configuration that includes a SAP HANA on a SecNumCloud-qualified Private Cloud infrastructure, but with a major distinction: the ability to restore and resume SAP services on the second region without experiencing downtime due to infrastructure delivery.
 
-This second region, with a SAP HANA on Private Cloud infrastructure qualified as SecNumCloud, allows you to restore backups and snapshots of your SAP application servers, perform a disaster recovery operation on your secondary SAP HANA databases, and finally reboot your SAP systems within a controlled timeframe.
+This second region, with a SAP HANA on a SecNumCloud-qualified Private Cloud infrastructure, allows you to restore backups and snapshots of your SAP application servers, perform a disaster recovery operation on your secondary SAP HANA databases, and finally reboot your SAP systems within a controlled timeframe.
 
 The difference between single-region and two-region configurations is faster recovery capabilities and timelines. With a two-region configuration, you not only reduce recovery time, but also reduce the risk of downtime due to infrastructure delivery constraints. This design enables faster recovery, continuous operation, and greater resilience.
 
@@ -170,5 +170,5 @@ Configuring the secondary SAProuter requires the same care and vigilance as the 
 ## Go further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
-  
+
 Join our [community of users](/links/community).
