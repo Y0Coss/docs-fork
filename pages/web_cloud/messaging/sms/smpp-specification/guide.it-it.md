@@ -1,7 +1,7 @@
 ---
 title: SMPP Technical Specifications (EN)
 excerpt: 'Discover the technical specifications of the OVHcloud SMPP solution'
-updated: 2024-02-27
+updated: 2025-03-05
 ---
 
 ## Objective
@@ -258,6 +258,7 @@ Our service will attempt to send the `deliver_sm` to ESME for up to 7 days.
 |52  | Missing Template (e.g. US destination requires approved templates) |
 |53  | Blacklisted (a STOP response sent by the recipient to block the sender) |
 |54  | Forbidden destination |
+|55  | Sender Temporarily Ratelimited (maximum sms sent exceeded during a short period) |
 |100 | Invalid Destination Numbering Plan |
 |101 | Invalid Content |
 |102 | Invalid GSM7 Coding (e.g. error with packed/unpacked GSM7) |

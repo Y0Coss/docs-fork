@@ -32,7 +32,7 @@ Le Softphone est une solution qui transforme votre ordinateur, smartphone ou tab
 - Si votre connexion est derrière un pare-feu, vous devez y autoriser les adresses IP suivantes : `57.128.38.204/32`, `57.128.38.156/32` et `5.196.180.0/27`.
 
 > [!primary]
-> Si Softcall est désactivé et que vous souhaitez réutiliser votre téléphone OVHcloud, vous devez procéder à un dépannage Plug & Phone (pour plus de détails, consultez notre guide « [Dépanner son téléphone OVHcloud](web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel)). Pour les autres types d'appareils, il est nécessaire de réinitialiser le mot de passe SIP et de le renseigner à nouveau dans les paramètres de l'appareil.
+> Si Softcall est désactivé et que vous souhaitez réutiliser votre téléphone OVHcloud, vous devez procéder à un dépannage Plug & Phone (pour plus de détails, consultez notre guide [Dépanner son téléphone OVHcloud](/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel)). Pour les autres types d'appareils, il est nécessaire de réinitialiser le mot de passe SIP et de le renseigner à nouveau dans les paramètres de l'appareil.
 
 ## En pratique
 
@@ -251,6 +251,18 @@ Pour effectuer un transfert d'appel accompagné, suivez ces étapes :
 
 ///
 
+/// details | Rapporter un incident à nos équipes
+
+Si vous rencontrez un problème avec l'application Softcall (bug, erreur, etc.), nous vous recommandons d'envoyer un rapport d'erreurs à nos équipes en suivant ces étapes :
+
+1. En bas à gauche de l'interface de Softcall, cliquez sur l'icône des paramètres (représentée par une roue crantée), puis sur `Préférences`{.action}.
+1. Sur l'écran qui s'affiche, rendez-vous dans l'onglet `Avancés`{.action}.
+1. Cliquez sur le bouton `Envoyer les traces`{.action}.
+1. Le client de messagerie de votre poste de travail s'ouvre automatiquement avec le destinataire et le lien du rapport de bug pré-remplis.
+1. Envoyez l'e-mail pour transmettre ce rapport à notre équipe en charge du produit Softcall.
+
+///
+
 #### Application mobile (Android et IOS)
 
 /// details | Appeler la messagerie vocale
@@ -331,6 +343,26 @@ Pour effectuer un transfert d'appel accompagné, suivez ces étapes :
 
 ///
 
+/// details | Rapporter un incident à nos équipes
+
+Si vous rencontrez un problème dans l'application Softcall (bug, erreur, etc.),nous vous recommandons d'envoyer un rapport d'erreurs à nos équipes en suivant ces étapes :
+
+1\. Composez le numéro `#1234#`.
+2\. Dans le menu qui s'affiche, cliquez sur `Activer les traces`{.action}.
+
+![Install Softcall](images/mobile_enable_debugging.jpg){.thumbnail}
+
+3\. Reproduisez les actions qui provoquent l'anomalie.
+4\. Composez à nouveau le numéro `#1234#`.
+5\. Dans le menu qui s'affiche, cliquez sur `Envoyer les traces`{.action}.
+
+![Install Softcall](images/mobile_submit_logs.jpg){.thumbnail}
+
+6\. Sur l'écran qui s'affiche, choisissez votre client de messagerie. Le destinataire et le lien du rapport de bug sont pré-remplis dans l'e-mail.
+7\. Envoyez l'e-mail pour transmettre ce rapport à notre équipe en charge du produit Softcall.
+
+///
+
 ### Personnaliser Softcall
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
@@ -352,7 +384,7 @@ Sélectionnez la couleur de votre choix puis cliquez sur le bouton `Appliquer un
 
 Dirigez-vous dans la section `Ajouter un logo`{.action}.
 
-Cliquez sur le bouton `Drag and drop a file or select a file`{.action}. La photo que vous venez de charger s'affiche en-dessous de la mention `Attached file(s)`(`OVHcloud_logo.png` dans l'exemple ci-dessous).
+Cliquez sur le bouton `Drag and drop a file or select a file`{.action}. La photo que vous venez de charger s'affiche en-dessous de la mention `Attached file(s)` (`OVHcloud_logo.png` dans l'exemple ci-dessous).
 
 ![Install Softcalls](images/add_logo_manager.png){.thumbnail}
 

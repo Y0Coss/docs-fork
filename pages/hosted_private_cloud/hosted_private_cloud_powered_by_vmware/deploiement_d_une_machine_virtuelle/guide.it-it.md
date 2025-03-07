@@ -27,7 +27,7 @@ Per effettuare l’operazione clicca con il tasto destro sul cluster in question
 
 Per creare una macchina virtuale è possibile scegliere tra diverse opzioni:
 
-- da un file ISO, disponibile nel datastore (per importarlo, consulta la [guida di connessione in SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion))
+- da un file ISO, disponibile nel datastore (per importarlo, consulta [questa guida](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload))
 - da un template personale o [fornito da OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)
 - clonare una VM già esistente, prestando particolare attenzione agli eventuali conflitti di indirizzi IP
 - clonare una VM in un template per un’implementazione più rapida delle future macchine virtuali
