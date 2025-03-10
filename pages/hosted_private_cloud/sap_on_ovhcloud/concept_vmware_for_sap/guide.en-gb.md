@@ -41,13 +41,15 @@ If you want to reduce the RTO and RPO in a single OVHcloud location, you have th
 
 ### 3 - SAP Application Servers
 
-The Fault Tolerance feature provided by VMware guarantees the availability of your SAP Application Servers in case of ESXi host failures. Your virtual machines are automatically activated on another member of your VMware cluster. We advise to enable it on your virtual machines which host the SAP Central Services (SCS), if you do not manage an SAP cluster for this service in another way. The Fault Tolerance could also be enabled on your SAP Application Servers which host a critical service. To discover how to enable this feature, please refer to [our guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_fault_tolerance).
+The Fault Tolerance feature<sup>1</sup> provided by VMware guarantees the availability of your SAP Application Servers in case of ESXi host failures. Your virtual machines are automatically activated on another member of your VMware cluster. We advise to enable it on your virtual machines which host the SAP Central Services (SCS), if you do not manage an SAP cluster for this service in another way. The Fault Tolerance could also be enabled on your SAP Application Servers which host a critical service. To discover how to enable this feature, please refer to [our guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_fault_tolerance).
 
 However, to be able to enable the Fault Tolerance, the virtual machine cannot exceed 8 vCPUs and 128 GB of memory.
 
 For SAP Application Servers which do not host a critical service, the vSphere HA feature is recommended.
 
 Last, the vSphere Distributed Resource Scheduler can also be activated with VM/Host rules to avoid running all SAP Application Servers on the same ESXi host. To know more about this feature, please refer to [our guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new).
+
+<sup>1</sup> The Fault Tolerance feature is currently incompatible if your virtual machine uses a port group created and managed by NSX. [Article 317806](https://knowledge.broadcom.com/external/article?articleNumber=317806)
 
 ### 4 - Backup infrastructure
 

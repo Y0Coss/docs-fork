@@ -41,13 +41,15 @@ Si vous souhaitez réduire le temps maximal admissible de coupure de service et 
 
 ### 3 - Serveurs d'application SAP
 
-La fonctionnalité Fault Tolerance fournit par VMware garantit la disponibilité de vos serveurs d'application SAP en cas d'incident sur un host ESXi. Vos machines virtuelles sont automatiquement activées sur un autre membre de votre cluster VMware. Nous conseillons d'activer cette fonctionnalité sur vos machines virtuelles qui hébergent les services centraux SAP (SCS) et si vous ne gérez pas un cluster SAP pour ce service par un autre moyen. La fonctionnalité Fault Tolerance peut également être activée pour vos serveurs d'application SAP qui hébergent des services critiques. Découvrez comment activer cette fonctionnalité dans [notre guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_fault_tolerance).
+La fonctionnalité Fault Tolerance<sup>1</sup> fournit par VMware garantit la disponibilité de vos serveurs d'application SAP en cas d'incident sur un host ESXi. Vos machines virtuelles sont automatiquement activées sur un autre membre de votre cluster VMware. Nous conseillons d'activer cette fonctionnalité sur vos machines virtuelles qui hébergent les services centraux SAP (SCS) et si vous ne gérez pas un cluster SAP pour ce service par un autre moyen. La fonctionnalité Fault Tolerance peut également être activée pour vos serveurs d'application SAP qui hébergent des services critiques. Découvrez comment activer cette fonctionnalité dans [notre guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_fault_tolerance).
 
 Cependant, pour activer cette fonctionnalité, la machine virtuelle ne peut excéder les 8 vCPUs et les 128 GB de mémoire.
 
 Pour les serveurs d'application SAP qui n'hébergent pas de service critique, la fonctionnalité vSphere HA est recommandée.
 
 Enfin, la fonctionnalité vSphere Distributed Resource Scheduler peut également être activée avec une règle VM/Host dans le but d'éviter d'héberger l'ensemble des serveurs d'application SAP sur un même host ESXi. Pour en savoir plus sur cette fonctionnalité, veuillez vous référer à [notre guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new).
+
+<sup>1</sup> La fonctionnalité Fault Tolerance est actuellement incompatible si votre machine virtuelle utilise un groupe de port créé et géré par NSX. [Article 317806](https://knowledge.broadcom.com/external/article?articleNumber=317806)
 
 ### 4 - Infrastructure de sauvegarde
 

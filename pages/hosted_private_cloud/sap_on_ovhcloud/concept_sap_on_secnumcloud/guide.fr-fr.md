@@ -1,5 +1,5 @@
 ---
-title: "Infrastructure SAP avec SAP HANA on Private Cloud qualifiée SecNumCloud"
+title: "Infrastructure SAP avec SAP HANA on Private Cloud qualifié SecNumCloud"
 excerpt: "Ce concept vous présente une architecture utilisant des hosts certifiés SAP HANA avec notre infrastructure VMware on OVHcloud qualifiée SecNumCloud"
 updated: 2025-03-10
 ---
@@ -87,13 +87,15 @@ Pour plus d'informations sur la sécurité SAP HANA, consultez la [documentation
 
 La fonctionnalité Fault Tolerance fournie par VMware garantit la haute disponibilité de vos serveurs d'application SAP, en les basculant automatiquement vers un hôte ESXi différent en cas de panne. Il peut être intéressant d'activer Fault Tolerance sur les machines virtuelles qui hébergent SAP Central Services (SCS), à condition de ne pas avoir mis en place une autre solution de cluster SAP pour ce service. Fault Tolerance peut également être activé sur les serveurs d'application SAP qui hébergent des services critiques. Pour obtenir des instructions sur l'activation de cette fonctionnalité, consultez [notre documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_fault_tolerance).
 
-Pour activer Fault Tolerance, la machine virtuelle ne peut pas avoir plus de 8 vCPU et 128 Go de mémoire. Pour les serveurs d'application SAP qui n'hébergent pas de services critiques, nous recommandons la fonctionnalité vSphere High Availability (HA).
+Pour activer Fault Tolerance<sup>2</sup>, la machine virtuelle ne peut pas avoir plus de 8 vCPU et 128 Go de mémoire. Pour les serveurs d'application SAP qui n'hébergent pas de services critiques, nous recommandons la fonctionnalité vSphere High Availability (HA).
 
 La fonctionnalité vSphere Distributed Resource Scheduler (DRS) peut également être activée avec des règles VM/Host pour éviter d'exécuter tous les serveurs d'application SAP sur le même hôte ESXi. Cette fonctionnalité permet d'équilibrer la charge sur les hôtes ESXi du cluster. Retrouvez plus de détails sur cette fonctionnalité dans notre documentation [VMware DRS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new).
 
 Les échanges externes et internes avec votre environnement SAP peuvent être chiffrés à l'aide du protocole SAP Secure Network Communications (SNC) pour les communications RFC de type 3 et du protocole HTTPS pour les communications RFC de type H/G. Consultez la documentation SAP [Securing Remote Function Call (RFC)](https://support.sap.com/content/dam/support/en_us/library/ssp/security-whitepapers/securing_remote-function-calls.pdf) pour connaître les meilleures pratiques et obtenir des instructions. En complément, nous vous recommandons vivement d'activer le chiffrement de vos machines virtuelles SAP Application Server au niveau de l'hyperviseur. Pour savoir comment activer le chiffrement de machines virtuelles sur vSphere, référez-vous à notre [documentation dédiée](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt).
 
 L'authentification au système SAP peut être effectuée à l'aide de diverses méthodes : mot de passe, l'authentification unique (SSO) avec Kerberos, LDAP ou SAML. Pour une sécurité optimale, utilisez un mécanisme d'authentification fort pour empêcher tout accès non autorisé au système SAP. Nous vous conseillons de réviser et de mettre à jour régulièrement les rôles et les privilèges pour assurer un contrôle d'accès approprié. L'activation des logs d'audit et leur externalisation peut être envisagé pour détecter et répondre aux comportements suspects. Vous pouvez vous reporter au [SAP Help Portal](https://help.sap.com/docs/ABAP_PLATFORM_NEW/025d1fb2f02c42c097f04f45df09106a/f64babd8c8a0489caf61c48d8bdc9478.html) pour obtenir plus d'informations sur la configuration et la gestion des logs d'audit dans votre environnement SAP.
+
+<sup>2</sup> La fonctionnalité Fault Tolerance est actuellement incompatible si votre machine virtuelle utilise un groupe de port créé et géré par NSX. [Article 317806](https://knowledge.broadcom.com/external/article?articleNumber=317806)
 
 ### 4 - Infrastructure de sauvegarde
 
