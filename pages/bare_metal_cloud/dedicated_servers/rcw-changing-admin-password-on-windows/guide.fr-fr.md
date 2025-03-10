@@ -15,10 +15,10 @@ Ce guide vous explique comment réinitialiser le mot de passe `Administrator` gr
 
 > [!warning]
 >
-> Ce guide n’est pas applicable au **ancien système de secours Windows (mode rescue WinPE)** (voir le [guide du mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) pour plus de détails).
+> Ce guide n’est pas applicable à l'**ancien système Windows rescue (mode rescue WinPE)** (voir le [guide du mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) pour plus de détails).
 >
-> Si votre version de Windows Server n'est pas prise en charge, vous ne pourrez peut-être pas activer le système rescue actuel pour Windows. Dans ce cas, veuillez consulter notre page de guide sur [comment réinitialiser le mot de passe de l'administrateur Windows avec le système de secours Windows hérité](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows) à la place.  
-> Une méthode alternative pour réinitialiser le mot de passe Administrateur à l’aide du système de secours client OVHcloud basé sur Debian est également expliquée dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows).
+> Si votre version de Windows Server n'est pas prise en charge, vous ne pourrez peut-être pas activer le système rescue actuel pour Windows. Dans ce cas, veuillez consulter notre guide expliquant [comment réinitialiser le mot de passe administrateur Windows avec le système Windows rescue *legacy*](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows).
+> Vous y trouverez également une méthode alternative pour réinitialiser le mot de passe administrateur à l’aide du système rescue customer OVHcloud basé sur Debian.
 
 ## En pratique
 
