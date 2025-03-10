@@ -1,7 +1,7 @@
 ---
 title: "SAP HANA on Bare Metal and SAP Application Servers on VMware on OVHcloud"
 excerpt: "This concept page demonstrates a hybrid architecture using a HGR-SAP dedicated server and VMware on OVHcloud"
-updated: 2023-09-28
+updated: 2025-03-10
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ The following concept allows you to build an architecture with a SAP HANA databa
 
 ### 1 - Network connectivity
 
-To guarantee the quality of communication between your local site and your SAP infrastructure hosted at OVHcloud, we recommend using OVHcloud Connect. This solution provides you with a secure and high-performance link between your offices and OVHcloud. To get more information, please refer to the [OVHcloud Connect documentation](https://www.ovhcloud.com/es/network/ovhcloud-connect/).
+To guarantee the quality of communication between your local site and your SAP infrastructure hosted at OVHcloud, we recommend using OVHcloud Connect. This solution provides you with a secure and high-performance link between your offices and OVHcloud. To get more information, please refer to the [OVHcloud Connect documentation](https://www.ovhcloud.com/en-gb/network/ovhcloud-connect/).
 
 Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed with NSX. To learn how to configure an NSX Gateway VPN with OVHcloud, please refer to [our documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge).
 
@@ -29,7 +29,7 @@ Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed wit
 
 The SAP HANA database is hosted on a dedicated server of the SAP HANA on Bare Metal server range (references HGR-SAP-1/2/3). To know how to deploy a SAP HANA database on an OVHcloud dedicated server, please refer to [our documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_sles_sap_hana_dedicated_server).
 
-Deploying a SAP HANA database on a dedicated server offers a [cost-effective infrastructure](https://www.ovhcloud.com/es/bare-metal/uc-sap-hana/) that meets compliance and regulatory requirements.
+Deploying a SAP HANA database on a dedicated server offers a [cost-effective infrastructure](https://www.ovhcloud.com/en-gb/bare-metal/uc-sap-hana/) that meets compliance and regulatory requirements.
 
 In order to reduce the RPO and the RTO in a single OVHcloud location, you can add another SAP HANA database on a second dedicated server and configure SAP HANA System Replication between these databases. To discover all supported replication modes by SAP HAHA, please refer to the SAP official documentation available on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). In this context, you could use a replication SYNC mode.
 
@@ -39,12 +39,14 @@ This architecture prevents outages caused by hardware incidents on your SAP HANA
 
 The SAP Application Servers infrastructure is hosted on VMware on OVHcloud. We advise to take into consideration the [SAP Note 2161991](https://launchpad.support.sap.com/#/notes/2161991), especially chapter 2 and 3, and the [SAP Note 2015392](https://launchpad.support.sap.com/#/notes/2015392), to set a compliant configuration between SAP and virtual machines.
 
-The Fault Tolerance feature provided by VMware guarantees the availability of your SAP Application Servers in case of ESXi host failures. Your virtual machine is automatically activated on another member of your VMware cluster. We advise enabling it on your virtual machines which host the SAP Central Services (SCS), if you do not manage an SAP cluster for this service in another way. The Fault Tolerance could also be enabled on your SAP Application Servers which host a critical service.<br>
+The Fault Tolerance feature<sup>1</sup> provided by VMware guarantees the availability of your SAP Application Servers in case of ESXi host failures. Your virtual machine is automatically activated on another member of your VMware cluster. We advise enabling it on your virtual machines which host the SAP Central Services (SCS), if you do not manage an SAP cluster for this service in another way. The Fault Tolerance could also be enabled on your SAP Application Servers which host a critical service.  
 However, to be able to enable the Fault Tolerance, the virtual machine cannot exceed 8 vCPU and 128 GB of memory.
 
 For SAP Application Servers which do not host a critical service, we recommend ensuring that the vSphere HA feature is enabled in your VMware cluster. It monitors the health of each ESXi host in the cluster, and automatically restarts the virtual machines hosted on the impacted ESXi host.
 
 The vSphere Distributed Resource Scheduler can also be activated with VM/Host rules to avoid running all SAP Application Servers on the same ESXi host.
+
+<sup>1</sup> The Fault Tolerance feature is currently incompatible if your virtual machine uses a port group created and managed by NSX ([Article 317806](https://knowledge.broadcom.com/external/article?articleNumber=317806)).
 
 ### 4 - Backup infrastructure
 
@@ -77,7 +79,7 @@ To learn how to install a Veeam Enterprise Plus server in your VMware on OVHclou
 
 Some data needs to be stored and backed up with long retention for legal and/or technical reasons, ideally in a dedicated storage space with limited access once the data has been written. OVHcloud offers a Cold Archive solution for this application, featuring the highest security for your data by design.
 
-For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/es/public-cloud/cold-archive/).
+For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/en-gb/public-cloud/cold-archive/).
 
 ### 6 - SAP Support connection
 

@@ -1,7 +1,7 @@
 ---
 title: "SAP infrastructure with VMware on OVHcloud solution"
 excerpt: "This concept page demonstrates an architecture using the VMware on OVHcloud SAP HANA pack solution"
-updated: 2023-09-05
+updated: 2025-03-10
 ---
 
 ## Objective
@@ -49,7 +49,7 @@ For SAP Application Servers which do not host a critical service, the vSphere HA
 
 Last, the vSphere Distributed Resource Scheduler can also be activated with VM/Host rules to avoid running all SAP Application Servers on the same ESXi host. To know more about this feature, please refer to [our guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new).
 
-<sup>1</sup> The Fault Tolerance feature is currently incompatible if your virtual machine uses a port group created and managed by NSX. [Article 317806](https://knowledge.broadcom.com/external/article?articleNumber=317806)
+<sup>1</sup> The Fault Tolerance feature is currently incompatible if your virtual machine uses a port group created and managed by NSX ([Article 317806](https://knowledge.broadcom.com/external/article?articleNumber=317806)).
 
 ### 4 - Backup infrastructure
 

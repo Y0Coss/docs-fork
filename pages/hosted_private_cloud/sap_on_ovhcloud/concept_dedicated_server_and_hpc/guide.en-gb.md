@@ -1,7 +1,7 @@
 ---
 title: "SAP HANA on Bare Metal and SAP Application Servers on VMware on OVHcloud"
 excerpt: "This concept page demonstrates a hybrid architecture using a HGR-SAP dedicated server and VMware on OVHcloud"
-updated: 2023-09-28
+updated: 2025-03-10
 ---
 
 ## Objective
@@ -46,7 +46,7 @@ For SAP Application Servers which do not host a critical service, we recommend e
 
 The vSphere Distributed Resource Scheduler can also be activated with VM/Host rules to avoid running all SAP Application Servers on the same ESXi host.
 
-<sup>1</sup> The Fault Tolerance feature is currently incompatible if your virtual machine uses a port group created and managed by NSX. [Article 317806](https://knowledge.broadcom.com/external/article?articleNumber=317806)
+<sup>1</sup> The Fault Tolerance feature is currently incompatible if your virtual machine uses a port group created and managed by NSX ([Article 317806](https://knowledge.broadcom.com/external/article?articleNumber=317806)).
 
 ### 4 - Backup infrastructure
 
