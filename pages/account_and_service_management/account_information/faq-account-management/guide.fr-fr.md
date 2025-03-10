@@ -17,16 +17,16 @@ La création d'un compte est gratuite. Cet espace facilite l'accès à vos infor
 
 ### Où trouver mon identifiant OVHcloud ?
 
-Votre identifiant client, parfois également appelé « NIC-handle », est présent en haut à droite de votre dernière facture. Il ressemble à ceci : « xx99999-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans tous les e-mails envoyés par OVHcloud (e-mail de confirmation de création du compte, e-mails de confirmation ou de renouvellement de commande, etc.).
+Votre identifiant client, parfois également appelé « NIC-handle », est présent en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans tous les e-mails envoyés par OVHcloud (e-mail de confirmation de création du compte, e-mails de confirmation ou de renouvellement de commande, etc.).
 
 Si vous n’avez toujours pas retrouvé votre identifiant, vous avez la possibilité de cliquer sur le lien « Identifiant ou mot de passe oubliés » présent sur la page de [connexion au compte OVHcloud](/links/manager) et renseignez l’adresse e-mail associée à votre compte.
 
 > [!success]
->À tout moment, lorsque vous êtes connecté à votre espace client, vous pouvez retrouver votre identifiant en haut à droite, en cliquant sur votre nom.
+> À tout moment, lorsque vous êtes connecté à votre espace client, vous pouvez retrouver votre identifiant en haut à droite, en cliquant sur votre nom.
 
 ### Que faire si je ne parviens pas à me connecter à mon compte client ?
 
-Vous avez oublié votre mot de passe ? Vous n'avez plus accès à votre adresse e-mail ? Vous avez configuré une double authentication mais votre téléphone est cassé/perdu/volé ?
+Vous avez oublié votre mot de passe ? Vous n'avez plus accès à votre adresse e-mail ? Vous avez configuré une double authentification mais votre téléphone est cassé/perdu/volé ?
 Pour tous ces cas de figure, consultez [cette documentation](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure) qui vous permettra de connaître les démarches appropriées.
 
 ### Comment modifier mes informations personnelles ?
@@ -86,7 +86,7 @@ Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adre
 
 Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi).
 
-Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « xx99999-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
+Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
 
 ### Comment changer les contacts ?
 

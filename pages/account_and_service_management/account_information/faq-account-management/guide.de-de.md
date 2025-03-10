@@ -1,7 +1,7 @@
 ---
 title: FAQ zur Verwaltung des OVHcloud Accounts
 excerpt: Hier finden Sie die häufigsten Fragen zur Verwaltung des OVHcloud Accounts 
-updated: 2024-07-04
+updated: 2025-03-10
 ---
 
 ## Ziel
@@ -10,7 +10,7 @@ Hier finden Sie die häufigsten Fragen zur Verwaltung Ihres OVHcloud Accounts.
 
 ### Wie kann ich einen OVHcloud Account erstellen?
 
-Die Erstellung eines Accounts ist kostenfrei. Über Ihren Account können Sie Ihre Daten einsehen und Ihre Dienstleistungen einfach verwalten. Kicken Sie für die Erstellung eines Account einfach auf diesen [Link](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Die Erstellung eines Accounts ist kostenfrei. Über Ihren Account können Sie Ihre Daten einsehen und Ihre Dienstleistungen einfach verwalten. Kicken Sie für die Erstellung eines Account einfach auf diesen [Link](/links/manager).
 Denken Sie bei der Erstellung des Accounts bitte gleich daran, Ihre persönlichen Informationen mit einer Zwei-Faktor-Authentifizierung zu schützen. Diese aktivieren Sie im Bereich „Mein Account“ unter „Sicherheit“ (siehe auch die folgende Frage „Wie kann ich meinen Account schützen?“).
 
 #### Tipps und Tricks
@@ -19,9 +19,9 @@ Sie konnten Ihren Standort nicht finden? Ändern Sie die Sprache der Seite, inde
 
 ### Wo finde ich meine OVHcloud Kundenkennung?
 
-Ihre Kundenkennung steht auf Ihrer letzten Rechnung oben rechts. Sie sieht so aus: „ab00001-ovh“. Die ersten Buchstaben sind meist die Initialen der Person, die den Account erstellt hat. Diese Kundenkennung finden Sie auch in allen E-Mails von OVHcloud, zum Beispiel in Bestätigungs-E-Mails bei der Erstellung eines Accounts, Verlängerungen und neuen Bestellungen.
+Ihre Kundenkennung steht auf Ihrer letzten Rechnung oben rechts. Sie sieht so aus: „aa00000-ovh“. Die ersten Buchstaben sind meist die Initialen der Person, die den Account erstellt hat. Diese Kundenkennung finden Sie auch in allen E-Mails von OVHcloud, zum Beispiel in Bestätigungs-E-Mails bei der Erstellung eines Accounts, Verlängerungen und neuen Bestellungen.
 
-Haben Sie Ihre Kundenkennung nicht gefunden? Dann können Sie auf den Link „Kennung oder Passwort vergessen“ auf der [Login-Seite](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) des OVHcloud-Accounts klicken. Geben Sie dann die E-Mail-Adresse an, die mit Ihrem Account verbunden ist.
+Haben Sie Ihre Kundenkennung nicht gefunden? Dann können Sie auf den Link „Kennung oder Passwort vergessen“ auf der [Login-Seite](/links/manager) des OVHcloud-Accounts klicken. Geben Sie dann die E-Mail-Adresse an, die mit Ihrem Account verbunden ist.
 
 #### Gut zu wissen:
 
@@ -34,9 +34,9 @@ In diesem Fall empfehlen wir [Ihnen diese Hilfestellung](/pages/account_and_serv
 
 ### Wie kann ich meine persönlichen Angaben ändern?
 
-Um Ihre persönlichen Angaben anzuzeigen oder zu ändern, loggen Sie sich mit Ihrer Kundenkennung und Ihrem Passwort im Kundencenter ein. Ihre persönlichen Angaben können Sie einsehen, indem Sie auf Ihre Initialen klicken. Diese sind oben rechts auf dem Dashboard in Ihrem Kundencenter. Gehen Sie danach in den Bereich „Mein Profil“ auf dieser Seite.
+Um Ihre persönlichen Angaben anzuzeigen oder zu ändern, indem Sie rechts oben in Ihrem [OVHcloud Kundencenter](/links/manager) auf Ihren Namen und dann auf `Zu meinem Account`{.action} klicken.
 
-![infos](images/infos-modif_final_comp-min.gif){.thumbnail}
+Im Bereich `Mein Profil`{.action} rechts auf Ihrem Bildschirm (klicken Sie erneut auf Ihren Namen, um das rechte Menü zu schließen) klicken Sie auf `Mein Profil bearbeiten`{.action}.
 
 #### Tipps und Tricks
 
@@ -64,7 +64,7 @@ Gehen Sie auf die Login-Seite für das Kundencenter und wählen Sie „Login ode
 #### Tipps und Tricks
 
 Sollten Sie keinen Zugriff mehr auf Ihre Kontakt-E-Mail-Adresse haben, bitten wir Sie darum, diese auf diesem Wege [herauszufinden](https://www.ovh.de/support/vorgaenge/).
-Sollten Sie Ihre Kundenkennung vergessen haben, finden Sie diese rechts oben auf Ihrer letzten Rechnung. Sie setzt sich wie folgt zusammen: „ab00001-ovh“ (die ersten Buchstaben entsprechen meist den Initialen der Person, die den Account erstellt hat). Die Kundenkennung finden Sie ebenfalls in der Bestätigungs-E-Mail zur Erstellung Ihres Accounts sowie in den Bestätigungs-E-Mails zu neuen Bestellungen oder Verlängerungen.
+Sollten Sie Ihre Kundenkennung vergessen haben, finden Sie diese rechts oben auf Ihrer letzten Rechnung. Sie setzt sich wie folgt zusammen: „aa00000-ovh“ (die ersten Buchstaben entsprechen meist den Initialen der Person, die den Account erstellt hat). Die Kundenkennung finden Sie ebenfalls in der Bestätigungs-E-Mail zur Erstellung Ihres Accounts sowie in den Bestätigungs-E-Mails zu neuen Bestellungen oder Verlängerungen.
 
 ### Wie kann ich meine hinterlegten Kontakte ändern?
 

@@ -1,7 +1,7 @@
 ---
 title: FAQ dotyczący zarządzania kontem OVHcloud
 excerpt: Najczęściej zadawane pytania dotyczące zarządzania kontem OVHcloud
-updated: 2024-07-04
+updated: 2025-03-10
 ---
 
 ## Wprowadzenie
@@ -19,7 +19,7 @@ Nie możesz odnaleźć Twojego kraju? Zmień język strony klikając na odpowied
 
 ### Gdzie mogę znaleźć swój identyfikator OVHcloud?
 
-Swój identyfikator klienta, zwany także NIC-handle, znajdziesz w prawym górnym rogu na ostatniej fakturze. Zbudowany jest w następujący sposób: "ab00001-ovh" (pierwsze litery to zazwyczaj inicjały osoby, która założyła konto). Identyfikator jest również podawany we wszystkich wiadomościach e-mail wysyłanych przez OVHcloud (e-mail z potwierdzeniem utworzenia konta, e-mail z potwierdzeniem lub odnowieniem zamówienia itp.)
+Swój identyfikator klienta, zwany także NIC-handle, znajdziesz w prawym górnym rogu na ostatniej fakturze. Zbudowany jest w następujący sposób: "aa00000-ovh" (pierwsze litery to zazwyczaj inicjały osoby, która założyła konto). Identyfikator jest również podawany we wszystkich wiadomościach e-mail wysyłanych przez OVHcloud (e-mail z potwierdzeniem utworzenia konta, e-mail z potwierdzeniem lub odnowieniem zamówienia itp.)
 
 Jeśli nie dysponujesz loginem, kliknij link „Nie pamiętam loginu lub hasła” na stronie [logowania do konta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wpisz adres e-mail przypisany do Twojego konta.
 
@@ -35,8 +35,6 @@ W takiej sytuacji zachęcamy do zapoznania się z poniższą [dokumentacją](/pa
 ### Jak zmienić dane osobowe?
 
 Aby wyświetlić lub zmienić dane, zaloguj się do Panelu klienta za pomocą identyfikatora oraz hasła dostępu. Aby uzyskać dostęp do danych osobowych, kliknij Twoje inicjały na górze po prawej stronie dashboardu. Następnie przejdź do sekcji „Mój profil”.
-
-![infos](images/infos-modif_final_comp-min.gif){.thumbnail}
 
 #### Wskazówki i porady
 
@@ -64,7 +62,7 @@ Udaj się do strony logowania w Twoim Panelu klienta i wybierz „Nie pamiętam 
 #### Wskazówki i porady
 
 Jeśli nie masz dostępu do adresu e-mail do kontaktu, prosimy o wypełnienie tej [procedury](https://www.ovh.pl/pomoc/procedury/).
-Jeśli nie pamiętasz Twojego identyfikatora klienta, odnajdziesz go w prawym górnym rogu Twojej ostatniej faktury. Identyfikator składa się z następujących znaków: „ab00001-ovh” (przy czym pierwsze litery są zazwyczaj inicjałami osoby, która założyła konto). Identyfikator znajduje się również w e-mailu potwierdzającym założenie konta oraz w e-mailach potwierdzających złożenie zamówienia lub jego odnowienie.
+Jeśli nie pamiętasz Twojego identyfikatora klienta, odnajdziesz go w prawym górnym rogu Twojej ostatniej faktury. Identyfikator składa się z następujących znaków: „aa00000-ovh” (przy czym pierwsze litery są zazwyczaj inicjałami osoby, która założyła konto). Identyfikator znajduje się również w e-mailu potwierdzającym założenie konta oraz w e-mailach potwierdzających złożenie zamówienia lub jego odnowienie.
 
 ### Jak zmienić dane kontaktowe?
 

@@ -1,7 +1,7 @@
 ---
 title: OVHcloud account management FAQ
 excerpt: Find the most frequently asked questions about managing your OVHcloud account
-updated: 2024-07-04
+updated: 2025-03-10
 ---
 
 ## Objective
@@ -20,7 +20,7 @@ You can’t find your country? Change the website language by clicking on the fl
 
 ### Where can I find my OVHcloud username?
 
-Your username or customer ID — also called a NIC handle — is located in the top right-hand corner of your last invoice. It looks like this: “ab00001-ovh” (the first letters are normally the initials of the person who created the account). This username is also included in all emails sent by OVHcloud (account creation confirmation email, order confirmations, renewal emails, etc.).
+Your username or customer ID — also called a NIC handle — is located in the top right-hand corner of your last invoice. It looks like this: “aa00000-ovh” (the first letters are normally the initials of the person who created the account). This username is also included in all emails sent by OVHcloud (account creation confirmation email, order confirmations, renewal emails, etc.).
 
 If you have not yet found your username, you can click on the “Forgotten your username or password?” link on the login page for your [OVHcloud account](/links/manager), and enter the email address associated with your account.
 
@@ -37,8 +37,6 @@ If this happens to you, please follow [this guide](/products/account-and-service
 
 To view or change your personal details, log in to the OVHcloud Control Panel with your login credentials. You can access your personal information by clicking directly on the initials for your first name and surname, in the top right-hand corner of your dashboard in the OVHcloud Control Panel. Next, go to the “My profile” section of this page.
 
-![infos](images/infos-modif_final_comp-min.gif){.thumbnail}
-
 #### Tips and tricks
 
 Want to change the email address for your OVHcloud account? A confirmation request will first be sent to the email address you currently have listed in the OVHcloud Control Panel. If you can no longer access this email address, you will need to wait 24 hours. After this period, the change will automatically be made.
@@ -54,7 +52,7 @@ For "07123456789", please enter "+44 7123456789". The "+44" is automatically add
 #### Tips and tricks
 
 If you can no longer access the contact email address, please follow this [procedure](https://www.ovh.com.au/support/procedures/).
-If you have forgotten your username, you can find it in the top right-hand corner of your last invoice. It is sometimes referred to as a NIC handle, and resembles the following: “ab00001-ovh”. (the first letters are normally the initials of the person who created the account). This username is also provided in the confirmation email when you create your account, as well as in emails confirming or renewing an order.
+If you have forgotten your username, you can find it in the top right-hand corner of your last invoice. It is sometimes referred to as a NIC handle, and resembles the following: “aa00000-ovh”. (the first letters are normally the initials of the person who created the account). This username is also provided in the confirmation email when you create your account, as well as in emails confirming or renewing an order.
 
 ### How do I change contacts?
 

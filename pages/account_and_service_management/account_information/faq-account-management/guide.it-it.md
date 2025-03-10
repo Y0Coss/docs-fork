@@ -1,7 +1,7 @@
 ---
 title: "FAQ sulla gestione dell'account OVHcloud"
 excerpt: "Trovi le domande più frequenti sulla gestione dell'account OVHcloud"
-updated: 2024-07-04
+updated: 2025-03-10
 ---
 
 ## Obiettivo
@@ -19,7 +19,7 @@ Se non riesci a trovare la versione del sito OVHcloud del tuo Paese, clicca sull
 
 ### Come recuperare l’identificativo OVHcloud?
 
-Il tuo identificativo cliente, chiamato anche NIC-handle, si trova in alto a destra dell'ultima fattura e ha un formato di questo tipo: ab00001-ovh (le prime lettere corrispondono in genere con le iniziali dell’utente che ha creato l’account). L’identificativo cliente è indicato anche in tutte le email inviate da OVHcloud (email di conferma di creazione dell’account, di rinnovo dell’ordine, ecc.).
+Il tuo identificativo cliente, chiamato anche NIC-handle, si trova in alto a destra dell'ultima fattura e ha un formato di questo tipo: aa00000-ovh (le prime lettere corrispondono in genere con le iniziali dell’utente che ha creato l’account). L’identificativo cliente è indicato anche in tutte le email inviate da OVHcloud (email di conferma di creazione dell’account, di rinnovo dell’ordine, ecc.).
 
 Se non riesci a trovare l’identificativo, clicca su "Non ricordi identificativo o password?" nella pagina di connessione allo [Spazio Cliente di OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e inserisci l'indirizzo email associato all’account.
 
@@ -35,8 +35,6 @@ In questa evenienza, consigliamo di consultare [questa documentazione](/pages/ac
 ### Come modificare le informazioni personali di un account OVHcloud?
 
 Per visualizzare o modificare i dati associati a un account OVHcloud è necessario accedere al proprio profilo nello Spazio Cliente cliccando sulle iniziali del proprio nome che compaiono nella parte destra della dashboard iniziale. Nella nuova pagina, i dati sono riportati nel riquadro "Il tuo profilo": per modificarli, clicca sui tre puntini e seleziona "Modifica il tuo profilo".
-
-![infos](images/infos-modif_final_comp-min.gif){.thumbnail}
 
 #### Consigli e suggerimenti
 
@@ -64,7 +62,7 @@ Accedi alla pagina di login dello Spazio Cliente e clicca su “Non ricordi iden
 #### Consigli e suggerimenti
 
 Se non riesci più ad accedere all’indirizzo email di contatto, ti suggeriamo di seguire questa [procedura](https://www.ovh.it/cgi-bin/it/procedure/procedureChangeEmail.cgi).
-Se hai dimenticato il tuo identificativo cliente, è possibile recuperarlo da qualsiasi fattura: viene indicato in alto a destra e ha un formato di questo tipo: ab00001-ovh (le prime lettere corrispondono in genere con le iniziali dell’utente che ha creato l’account). L’identificativo cliente è indicato anche nell’email di conferma di creazione dell’account o di rinnovo dell’ordine.
+Se hai dimenticato il tuo identificativo cliente, è possibile recuperarlo da qualsiasi fattura: viene indicato in alto a destra e ha un formato di questo tipo: aa00000-ovh (le prime lettere corrispondono in genere con le iniziali dell’utente che ha creato l’account). L’identificativo cliente è indicato anche nell’email di conferma di creazione dell’account o di rinnovo dell’ordine.
 
 ### Come modificare i contatti di un account OVHcloud?
 

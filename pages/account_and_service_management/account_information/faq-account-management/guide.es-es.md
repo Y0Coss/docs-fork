@@ -1,7 +1,7 @@
 ---
 title: Preguntas frecuentes sobre la gestión de la cuenta de OVHcloud
 excerpt: Consulte las preguntas más frecuentes sobre la gestión de la cuenta de OVHcloud
-updated: 2024-07-04
+updated: 2025-03-10
 ---
 
 ## Objetivo
@@ -22,7 +22,7 @@ Si desea más información sobre la cuenta de cliente de OVHcloud, consulte nues
 
 ### ¿Dónde encontrar mi identificador de cliente de OVHcloud?
 
-Su identificador de cliente, también llamado ID de cliente o «NIC-handle», aparece en la esquina superior derecha de su última factura. Tiene el siguiente formato: «ab00001-ovh» (donde las primeras letras suelen corresponder a las iniciales de la persona que ha creado la cuenta). También puede consultar su identificador de cliente en todos los mensajes de correo electrónico enviados por OVHcloud (emails de confirmación de creación de su cuenta, emails de confirmación de un pedido o de renovación, etc.).
+Su identificador de cliente, también llamado ID de cliente o «NIC-handle», aparece en la esquina superior derecha de su última factura. Tiene el siguiente formato: «aa00000-ovh» (donde las primeras letras suelen corresponder a las iniciales de la persona que ha creado la cuenta). También puede consultar su identificador de cliente en todos los mensajes de correo electrónico enviados por OVHcloud (emails de confirmación de creación de su cuenta, emails de confirmación de un pedido o de renovación, etc.).
 
 Si todavía no ha encontrado su identificador, haga clic en el enlace «¿No recuerda su ID de cliente o contraseña?» que aparece en la página de [conexión al área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) e introduzca la dirección de correo electrónico asociada a su cuenta.
 
@@ -39,8 +39,6 @@ Si no puede identificarse o conectarse a su área de cliente, consulte [la sigui
 ### ¿Cómo modificar mis datos personales?
 
 Para consultar o modificar sus datos, conéctese al área de cliente con su ID de cliente y contraseña. Podrá acceder a sus datos haciendo clic en las iniciales de su nombre y apellidos, en la esquina superior derecha del panel de control de su área de cliente. Será redirigido a la sección «Mi cuenta», donde podrá consultar y editar sus datos personales en el apartado «Mi perfil».
-
-![infos](images/infos-modif_final_comp-min.gif){.thumbnail}
 
 #### Ideas y consejos
 
@@ -69,7 +67,7 @@ En la página de conexión al área de cliente, haga clic en «¿No recuerda su 
 
 Si ya no tiene acceso a la dirección de correo electrónico de contacto, siga este [procedimiento](https://www.ovh.es/soporte/procedimientos/).
 
-Si ha olvidado su ID de cliente, puede consultarlo en la esquina superior derecha de su última factura. Tiene el siguiente formato: «ab00001-ovh» (donde las primeras letras suelen corresponder a las iniciales de la persona que ha creado la cuenta). También encontrará su ID de cliente en el email de confirmación de creación de la cuenta, así como en los emails de confirmación de pedido o de renovación.
+Si ha olvidado su ID de cliente, puede consultarlo en la esquina superior derecha de su última factura. Tiene el siguiente formato: «aa00000-ovh» (donde las primeras letras suelen corresponder a las iniciales de la persona que ha creado la cuenta). También encontrará su ID de cliente en el email de confirmación de creación de la cuenta, así como en los emails de confirmación de pedido o de renovación.
 
 ### ¿Cómo cambiar los contactos?
 
