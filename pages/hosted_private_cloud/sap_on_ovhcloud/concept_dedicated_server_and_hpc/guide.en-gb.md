@@ -21,7 +21,7 @@ The following concept allows you to build an architecture with a SAP HANA databa
 
 ### 1 - Network connectivity
 
-To guarantee the quality of communication between your local site and your SAP infrastructure hosted at OVHcloud, we recommend using OVHcloud Connect. This solution provides you with a secure and high-performance link between your offices and OVHcloud. To get more information, please refer to the [OVHcloud Connect documentation](https://www.ovhcloud.com/en-gb/network/ovhcloud-connect/).
+To guarantee the quality of communication between your local site and your SAP infrastructure hosted at OVHcloud, we recommend using OVHcloud Connect. This solution provides you with a secure and high-performance link between your offices and OVHcloud. To get more information, please refer to the [OVHcloud Connect documentation](/links/network/ovhcloud-connect).
 
 Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed with NSX. To learn how to configure an NSX Gateway VPN with OVHcloud, please refer to [our documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge).
 
@@ -111,9 +111,9 @@ To configure a SAP HANA replication, please refer to the official SAP documentat
 
 It is also possible to add another SAP HANA database in the primary OVHcloud location on a second dedicated server and thus minimise the RPO and RTO in the event of a hardware incident in the primary OVHcloud location.
 
-An n-tier replication is structured as follows: 
+An n-tier replication is structured as follows:
 
-SAP HANA1<sub>(OVHcloud location 1)</sub> -> SAP HANA2<sub>(OVHcloud location 1)</sub> -> SAP HANA3<sub>(OVHcloud location 2)</sub>. 
+SAP HANA1<sub>(OVHcloud location 1)</sub> -> SAP HANA2<sub>(OVHcloud location 1)</sub> -> SAP HANA3<sub>(OVHcloud location 2)</sub>.
 
 To learn how to configure this replication, please refer to the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/ca6f4c62c45b4c85a109c7faf62881fc.html?locale=en-US).
 

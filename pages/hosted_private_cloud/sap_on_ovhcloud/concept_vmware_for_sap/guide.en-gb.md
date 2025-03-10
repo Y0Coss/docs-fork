@@ -21,7 +21,7 @@ The following concept allows you to build an architecture with an SAP HANA datab
 
 ### 1 - Network connectivity
 
-To guarantee the quality of communication between your local site and your SAP infrastructure hosted at OVHcloud, we recommend using OVHcloud Connect. This solution offers you a secure and high-performance link between your offices and OVHcloud. To get more information, please refer to the [OVHcloud Connect documentation](https://www.ovhcloud.com/en-gb/network/ovhcloud-connect/).
+To guarantee the quality of communication between your local site and your SAP infrastructure hosted at OVHcloud, we recommend using OVHcloud Connect. This solution offers you a secure and high-performance link between your offices and OVHcloud. To get more information, please refer to the [OVHcloud Connect documentation](/links/network/ovhcloud-connect).
 
 Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed with NSX if you use a OVHcloud Managed VMware vSphere®, Software-Defined Datacenter SAP HANA pack. To learn how to configure an NSX Gateway VPN with OVHcloud, please refer to [our documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec). If you use a OVHcloud Managed VMware vSphere®, Hyperconverged Storage SAP HANA pack, you must deploy a virtual machine to manage this point-to-point VPN.
 
