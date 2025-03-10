@@ -29,7 +29,7 @@ Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed wit
 
 The SAP HANA database is hosted on a dedicated server of the SAP HANA on Bare Metal server range (references HGR-SAP-1/2/3). To know how to deploy a SAP HANA database on an OVHcloud dedicated server, please refer to [our documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_sles_sap_hana_dedicated_server).
 
-Deploying a SAP HANA database on a dedicated server offers a [cost-effective infrastructure](https://www.ovhcloud.com/en-gb/bare-metal/uc-sap-hana/) that meets compliance and regulatory requirements.
+Deploying a SAP HANA database on a dedicated server offers a [cost-effective infrastructure](/links/hosted-private-cloud/sap-hana) that meets compliance and regulatory requirements.
 
 In order to reduce the RPO and the RTO in a single OVHcloud location, you can add another SAP HANA database on a second dedicated server and configure SAP HANA System Replication between these databases. To discover all supported replication modes by SAP HAHA, please refer to the SAP official documentation available on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). In this context, you could use a replication SYNC mode.
 
@@ -79,7 +79,7 @@ To learn how to install a Veeam Enterprise Plus server in your VMware on OVHclou
 
 Some data needs to be stored and backed up with long retention for legal and/or technical reasons, ideally in a dedicated storage space with limited access once the data has been written. OVHcloud offers a Cold Archive solution for this application, featuring the highest security for your data by design.
 
-For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/en-gb/public-cloud/cold-archive/).
+For more information, please refer to the [OVHcloud documentation](/links/public-cloud/cold-archive).
 
 ### 6 - SAP Support connection
 
@@ -111,9 +111,9 @@ To configure a SAP HANA replication, please refer to the official SAP documentat
 
 It is also possible to add another SAP HANA database in the primary OVHcloud location on a second dedicated server and thus minimise the RPO and RTO in the event of a hardware incident in the primary OVHcloud location.
 
-An n-tier replication is structured as follows: 
+An n-tier replication is structured as follows:
 
-SAP HANA1<sub>(OVHcloud location 1)</sub> -> SAP HANA2<sub>(OVHcloud location 1)</sub> -> SAP HANA3<sub>(OVHcloud location 2)</sub>. 
+SAP HANA1<sub>(OVHcloud location 1)</sub> -> SAP HANA2<sub>(OVHcloud location 1)</sub> -> SAP HANA3<sub>(OVHcloud location 2)</sub>.
 
 To learn how to configure this replication, please refer to the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/ca6f4c62c45b4c85a109c7faf62881fc.html?locale=en-US).
 
@@ -149,4 +149,4 @@ To guarantee the connection continuity with the SAP Support, we recommend config
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

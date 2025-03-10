@@ -29,7 +29,7 @@ Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut �
 
 La base de données SAP HANA est hébergée sur un serveur dédié de la gamme SAP HANA on Bare Metal (références HGR-SAP-1/2/3). Pour découvrir comment déployer une base de données SAP HANA sur un serveur dédié OVHcloud, nous vous conseillons [notre documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_sles_sap_hana_dedicated_server).
 
-Déployer une base de données SAP HANA sur un serveur dédié offre une [infrastructure aux coûts maîtrisés](https://www.ovhcloud.com/fr/bare-metal/uc-sap-hana/) conforme aux exigences SAP TDI (Tailored Datacenter Integration).
+Déployer une base de données SAP HANA sur un serveur dédié offre une [infrastructure aux coûts maîtrisés](/links/hosted-private-cloud/sap-hana) conforme aux exigences SAP TDI (Tailored Datacenter Integration).
 
 Dans le but de réduire la perte de données maximale admissible et le temps d'indisponibilité de votre infrastructure SAP sur une unique localisation OVHcloud, vous avez la possibilité d'ajouter une autre base de données SAP HANA sur un second serveur dédié et de configurer une réplication SAP HANA. Pour découvrir les différentes réplications supportées par SAP HANA, veuillez vous référer à la documentation officielle SAP disponible sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). Dans ce contexte, vous pourriez utiliser une réplication en mode SYNC.
 
@@ -79,7 +79,7 @@ Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans v
 
 Certaines données nécessitent d'être stockées et sauvegardées avec une rétention longue pour des raisons légales et/ou techniques, idéalement dans un espace de stockage dédié avec des accès limités une fois que la donnée a été écrite. OVHcloud propose une solution nommée Cold Archive pour ce type de besoin, solution ayant un haut niveau de sécurité pour vos données.
 
-Plus d'information sur [OVHcloud](https://www.ovhcloud.com/fr/public-cloud/cold-archive/).
+Plus d'information sur [OVHcloud](/links/public-cloud/cold-archive/).
 
 ### 6 - Connexion du support SAP
 

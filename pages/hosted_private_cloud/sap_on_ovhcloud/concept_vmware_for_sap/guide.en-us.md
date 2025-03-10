@@ -82,7 +82,7 @@ For help with the installation process of a Veeam Backup and Replication server 
 
 Some data needs to be stored and backed up with long retention for legal and/or technical reasons, ideally in a dedicated storage space with limited access once the data has been written. OVHcloud offers a Cold Archive solution for this application, featuring the highest security for your data by design.
 
-For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/en-gb/public-cloud/cold-archive/).
+For more information, please refer to the [OVHcloud documentation](/links/public-cloud/cold-archive).
 
 ### 6 - SAP Support connection
 
@@ -145,4 +145,4 @@ To guarantee the connection continuity with the SAP Support, we recommend config
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
