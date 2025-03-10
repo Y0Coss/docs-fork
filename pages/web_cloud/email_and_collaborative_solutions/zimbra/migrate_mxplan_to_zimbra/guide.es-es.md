@@ -12,7 +12,7 @@ En el marco de la transición progresiva de las cuentas MX Plan a Zimbra, es pos
 
 ## Requisitos
 
-- Disponer de una dirección de correo electrónico MX Plan (a través de un MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting).
+- Disponer de una dirección de correo electrónico MX Plan (a través de un MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)).
 - Disponer de una cuenta de correo electrónico de Zimbra OVHcloud.
 - **No haber configurado una redirección en la dirección de correo electrónico MX Plan que quiera migrar**.
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
@@ -45,11 +45,11 @@ En el ejemplo siguiente migramos la dirección `contact@mydomain.ovh`. Para ello
 
 En primer lugar, cree una dirección de correo electrónico con un nombre temporal. Por ejemplo, puede crear la dirección `contact2@mydomain.ovh`{.action} si necesita migrar la dirección `contact@mydomain.ovh`{.action}.
 
-Para crear una dirección de correo electrónico de Zimbra, consulte la sección «Crear una cuenta de correo electrónico» de nuestra guía [Primeros pasos con el servicio Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+Para crear una dirección de correo electrónico de Zimbra, consulte la sección "Crear una cuenta de correo electrónico" de nuestra guía [Primeros pasos con el servicio Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 ### 1.2 - Migración del correo electrónico con OVH Mail Migrator <a name="step12"></a>
 
-Utilice la herramienta de migración [**O**OVH **M**ail **M**migrator](https://omm.ovh.net/) (**OMM**) para transferir el contenido de la cuenta MX Plan original a la nueva cuenta de destino Zimbra, siguiendo el ejemplo anterior.
+Utilice la herramienta de migración [**O**VH **M**ail **M**migrator](https://omm.ovh.net/) (**OMM**) para transferir el contenido de la cuenta MX Plan original a la nueva cuenta de destino Zimbra, siguiendo el ejemplo anterior.
 
 #### Paso 1: Acceder a OVH Mail Migrator
 
@@ -97,7 +97,7 @@ Se abrirá una página en la que podrá consultar el progreso de la migración. 
 - `Eliminar los elementos migrados`{.action}: permite eliminar los elementos ya migrados a la cuenta de destino. Es posible borrar elementos de un punto de sincronización específico.
 - `Sincronizar`{.action}: permite recuperar nuevos elementos no migrados durante una sincronización anterior entre la cuenta de origen y la de destino. Esta acción migra los elementos que faltan en la cuenta de destino con respecto a la cuenta de origen.
 
-Para realizar una migración por archivo o múltiple, consulte las secciones «Migración por archivo» y «Realizar y seguir una migración múltiple (modo proyecto)» de nuestra guía «[Migrar cuentas de correo electrónico mediante OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)».
+Para realizar una migración por archivo o múltiple, consulte las secciones "Migración por archivo" y "Realizar y seguir una migración múltiple (modo proyecto)" de nuestra guía "[Migrar cuentas de correo electrónico mediante OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)".
 
 > [!primary]
 >
@@ -109,11 +109,11 @@ Para realizar una migración por archivo o múltiple, consulte las secciones «M
 >
 > Antes de eliminar su cuenta MX Plan, **realice una copia de seguridad de sus mensajes de correo** para evitar cualquier pérdida de datos.
 
-Utilice las opciones de exportación de su cliente de correo. En nuestra guía «[Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) » encontrará los detalles sobre la exportación manual de una dirección de correo electrónico desde un cliente de correo.
+Utilice las opciones de exportación de su cliente de correo. En nuestra guía "[Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) " encontrará los detalles sobre la exportación manual de una dirección de correo electrónico desde un cliente de correo.
 
 ### 2.1 - Eliminación de la antigua dirección de correo MX Plan <a name="step21"></a>
 
-Para eliminar la dirección de correo electrónico MX Plan (p. ej.: `contact@mydomain.ovh`), siga nuestra guía «[Eliminar una cuenta de correo electrónico](/pages/web_cloud/email_and_colaborative_solutions/common_email_features/email_reset_account) ».
+Para eliminar la dirección de correo electrónico MX Plan (p. ej.: `contact@mydomain.ovh`), siga nuestra guía "[Eliminar una cuenta de correo electrónico](/pages/web_cloud/email_and_colaborative_solutions/common_email_features/email_reset_account) ".
 
 > [!warning]
 >

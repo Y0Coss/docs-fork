@@ -45,7 +45,7 @@ No exemplo abaixo, migramos o endereço `contact@mydomain.ovh`. Para isso, vamos
 
 Crie um endereço de e-mail com um nome provisório. Pode criar, por exemplo, o endereço `contact2@mydomain.ovh`{.action} se tiver de migrar o endereço `contact@mydomain.ovh`{.action}.
 
-Para criar um endereço de e-mail Zimbra, consulte a secção « Criar uma conta de e-mail » do nosso guia [Primeiros passos com a oferta Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
+Para criar um endereço de e-mail Zimbra, consulte a secção " Criar uma conta de e-mail " do nosso guia [Primeiros passos com a oferta Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra).
 
 ### 1.2 - Migração dos e-mails com o OVH Mail Migrator <a name="step12"></a>
 
@@ -55,7 +55,7 @@ Utilize a ferramenta de migração [**O**VH **M**ail **M**igrator](https://omm.o
 
 Aceda a [OVH Mail Migrator](https://omm.ovh.net/){.external}.
 
-Na página <https://omm.ovh.net/>, no separador "Migração" {.action}, clique em "Nova migração" {.action}.
+Na página <https://omm.ovh.net/>, no separador `Migração`{.action}, clique em `Nova migração`{.action}.
 
 ![omm](images/omm-migration-create01.png){.thumbnail}
 
@@ -97,7 +97,7 @@ A nova página que vai aparecer permite-lhe acompanhar o progresso da sua migra�
 - `Eliminar os elementos migrados`{.action} : permite eliminar os elementos já migrados para a conta de destino. Você pode apagar itens de um ponto de sincronização específico.
 - `Sincronizar`{.action} : permite recuperar novos elementos não migrados numa anterior sincronização entre a conta de origem e a conta de destino. Essa ação é considerada uma migração dos itens em falta da conta de destino em comparação com a conta de origem.
 
-Para realizar uma migração por ficheiro ou múltiplo, consulte as secções « Migração por ficheiro » e « Realizar e seguir uma migração múltipla (modo projeto) » do nosso guia « [Migrar contas de e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) ».
+Para realizar uma migração por ficheiro ou múltiplo, consulte as secções " Migração por ficheiro " e " Realizar e seguir uma migração múltipla (modo projeto) " do nosso guia " [Migrar contas de e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) ".
 
 > [!primary]
 >
@@ -109,11 +109,11 @@ Para realizar uma migração por ficheiro ou múltiplo, consulte as secções «
 >
 > Antes de eliminar a conta MX Plan, **efetue uma cópia de segurança do correio eletrónico** para evitar a perda de dados.
 
-Utilize as opções de exportação do seu cliente de correio eletrónico. Pode encontrar, no nosso guia « [Migrar manualmente o seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) », os detalhes da exportação manual de um endereço de e-mail a partir de um cliente de e-mail.
+Utilize as opções de exportação do seu cliente de correio eletrónico. Pode encontrar, no nosso guia " [Migrar manualmente o seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ", os detalhes da exportação manual de um endereço de e-mail a partir de um cliente de e-mail.
 
 ### 2.1 - Eliminação do antigo endereço de e-mail MX Plan <a name="step21"></a>
 
-Para eliminar o endereço de e-mail MX Plan (exemplo: `contact@mydomain.ovh`), siga o nosso guia « [Eliminar uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/email_reset_account)».
+Para eliminar o endereço de e-mail MX Plan (exemplo: `contact@mydomain.ovh`), siga o nosso guia " [Eliminar uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/email_reset_account)".
 
 > [!warning]
 >

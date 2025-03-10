@@ -49,7 +49,7 @@ Um eine Zimbra E-Mail-Adresse zu erstellen, lesen Sie den Abschnitt "Einen E-Mai
 
 ### 1.2 - E-Mail-Migration mit dem OVH Mail Migrator <a name="step12"></a>
 
-Verwenden Sie das Migrationstool [**O**OVH **M**ail **M**igrator](https://omm.ovh.net/) (**OMM**), um den Inhalt des ursprünglichen MX Plan Accounts auf den neuen Zimbra-Zielaccount zu übertragen.
+Verwenden Sie das Migrationstool [**O**VH **M**ail **M**igrator](https://omm.ovh.net/) (**OMM**), um den Inhalt des ursprünglichen MX Plan Accounts auf den neuen Zimbra-Zielaccount zu übertragen.
 
 #### Schritt 1: Auf den OVH Mail Migrator zugreifen
 

@@ -4,7 +4,7 @@ excerpt: 'Dowiedz się, jak przenieść adres e-mail MX Plan na konto Zimbra OVH
 updated: 2025-03-05
 ---
 
-## Cel
+## Wprowadzenie
 
 W ramach stopniowego przechodzenia z kont MX Plan do Zimbra, można przewidzieć tę migrację i samodzielnie przeprowadzić transfer kont e-mail przed wdrożeniem przez OVHcloud zautomatyzowanego narzędzia. Niniejszy przewodnik wyjaśnia, jak wykonać migrację ręczną.
 
@@ -48,7 +48,7 @@ Aby utworzyć konto e-mail Zimbra, zapoznaj się z sekcją "Tworzenie konta e-ma
 
 ### 1.2 - Migracja e-maili za pomocą OVH Mail Migrator <a name="step12"></a>
 
-Użyj narzędzia do migracji [**O**OVH **M**ail **M**igrator](https://omm.ovh.net/) (**OMM**), aby przenieść zawartość oryginalnego konta MX Plan na nowe konto docelowe Zimbra, posługując się przykładem podanym na powyższym schemacie.
+Użyj narzędzia do migracji [**O**VH **M**ail **M**igrator](https://omm.ovh.net/) (**OMM**), aby przenieść zawartość oryginalnego konta MX Plan na nowe konto docelowe Zimbra, posługując się przykładem podanym na powyższym schemacie.
 
 ### Etap 1: Dostęp do OVH Mail Migrator
 
