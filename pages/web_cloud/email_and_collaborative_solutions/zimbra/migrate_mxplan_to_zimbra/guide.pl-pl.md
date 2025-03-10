@@ -15,7 +15,7 @@ W ramach stopniowego przechodzenia z kont MX Plan do Zimbra, można przewidzieć
 - Posiadanie konta e-mail MX Plan (za pośrednictwem oferty MX Plan lub zawartego w usłudze hostingu [OVHcloud](/links/web/hosting)).
 - Posiadanie konta e-mail Zimbra OVHcloud.
 - **Brak ustawień przekierowania na adres e-mail MX Plan, który chcesz przenieść**.
-- Dostęp do [panelu klienta OVHcloud] (/links/manager).
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -34,7 +34,7 @@ Migracja konta e-mail MX Plan na konto e-mail Zimbra odbywa się w 2-etapowym pr
 
 W poniższym przykładzie przenosimy adres `contact@modomain.ovh`. W tym celu utworzymy konto Zimbra pod nazwą `contact2@mydomain.ovh`.
 
-![Zimbra](images/Zimbra_Migration_MXPLAN.png){.thumbnail}
+![Zimbra](images/zimbra_migration_mxplan.png){.thumbnail}
 
 ### 1.1 - Tworzenie konta e-mail Zimbra <a name="step11"></a>
 
@@ -108,7 +108,7 @@ Aby przeprowadzić migrację z użyciem pliku lub wielu plików, zapoznaj się z
 >
 > Przed usunięciem konta MX Plan **utwórz kopię zapasową e-maili**, aby uniknąć utraty danych.
 
-Użyj opcji eksportu klienta poczty. Z naszego przewodnika "[Ręczna migracja Twojego konta e-mail] (/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)" dowiesz się, jak wykonać ręczny eksport konta e-mail z poziomu klienta poczty.
+Użyj opcji eksportu klienta poczty. Z naszego przewodnika "[Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)" dowiesz się, jak wykonać ręczny eksport konta e-mail z poziomu klienta poczty.
 
 ### 2.1 - Usuwanie starego adresu e-mail MX Plan <a name="step21"></a>
 
@@ -130,12 +130,12 @@ Twoje konto e-mail zostało całkowicie przeniesione do Zimbra Starter. Teraz mo
 
 [Pierwsze kroki z ofertą Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
-[Konfiguracja konta e-mail Zimbra w programie pocztowym] (/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
+[Konfiguracja konta e-mail Zimbra w programie pocztowym](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
 
-[FAQ dotyczący rozwiązania Zimbra OVHcloud] (/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra)
+[FAQ dotyczący rozwiązania Zimbra OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
- 
+
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
- 
+
 Dołącz do [grona naszych użytkowników](/links/community).
