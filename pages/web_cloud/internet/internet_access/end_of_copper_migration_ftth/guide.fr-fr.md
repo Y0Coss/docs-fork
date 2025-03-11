@@ -35,7 +35,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) et accédez à 
 
 La page qui s'affiche indique la date de fermeture du cuivre pour chacun de vos accès à Internet et si la migration vers la fibre est possible.
 
-![informations fermeture cuivre](images/infos-fermeture-cuivre.png){.thumbnail}
+![informations fermeture cuivre](images/info-fermeture-cuivre.png){.thumbnail}
 
 Vous pouvez dès lors choisir de migrer vers la fibre OVHcloud (voir ci-dessous) ou de [résilier votre offre d'accès à Internet OVHcloud](#cancel).
 
