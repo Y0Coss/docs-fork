@@ -28,7 +28,7 @@ Pour cela, utilisez l'appel API suivant :
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/vrops/outgoingFlow
 >
 
-Complétez les champs de l'appel API. Si les résultats ne sont pas escomptés, n'hésitez pas à vérifier vos informations d'ouverturs de port du serveur.
+Complétez les champs de l'appel API. Si les résultats ne sont pas escomptés, n'hésitez pas à vérifier vos informations d'ouvertures de port du serveur.
 
 | Paramètre | Description |
 | :-: | :-: |
