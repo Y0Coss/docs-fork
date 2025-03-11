@@ -80,14 +80,14 @@ En la página <https://omm.ovh.net/>, en la pestaña `Migration`{.action}, haga 
 
 #### Paso 3: Iniciar la migración
 
-Compruebe que toda la información es correcta y haga clic en `Iniciar la migración`{.action}. En la página que aparece, se explica cómo realizar el seguimiento de la migración. Guarde `el ID de migración` mostrado y espere a que termine el proceso. El tiempo de espera varía según el número de elementos que se van a migrar.
+Compruebe que toda la información es correcta y haga clic en `Iniciar la migración`{.action}. En la página que aparece, se explica cómo realizar el seguimiento de la migración. Guarde el `ID de migración` mostrado y espere a que termine el proceso. El tiempo de espera varía según el número de elementos que se van a migrar.
 
 #### Paso 4: Seguir la migración
 
 Existen dos formas de realizar el seguimiento de una migración:
 
 - Desde el mensaje de correo electrónico que le notifica el progreso de la migración.
-- Desde la página <https://omm.ovh.net/>. En la pestaña `Migración`{.action}, haga clic en `Seguir / Sincronizar`{.action}. Introduzca el ID de migración`{.action} y la cuenta de origen`{.action}.
+- Desde la página <https://omm.ovh.net/>. En la pestaña `Migración`{.action}, haga clic en `Seguir / Sincronizar`{.action}. Introduzca el `ID de migración`{.action} y la cuenta de origen`{.action}.
 
 ![omm](images/omm-migration-track.png){.thumbnail}
 

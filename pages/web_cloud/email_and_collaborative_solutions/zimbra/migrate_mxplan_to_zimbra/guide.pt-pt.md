@@ -80,7 +80,7 @@ Na página <https://omm.ovh.net/>, no separador `Migração`{.action}, clique em
 
 #### Etapa 3: Iniciar a migração
 
-Verifique que todas as informações estão corretas e clique em `Iniciar a migração`{.action}. A nova página apresenta os detalhes do estado da migração. Guarde `o ID de migração` apresentado e aguarde até que o processo seja concluído. O tempo de espera varia consoante o número de itens que pretende migrar.
+Verifique que todas as informações estão corretas e clique em `Iniciar a migração`{.action}. A nova página apresenta os detalhes do estado da migração. Guarde o `ID de migração` apresentado e aguarde até que o processo seja concluído. O tempo de espera varia consoante o número de itens que pretende migrar.
 
 #### Etapa 4: Seguir a migração
 

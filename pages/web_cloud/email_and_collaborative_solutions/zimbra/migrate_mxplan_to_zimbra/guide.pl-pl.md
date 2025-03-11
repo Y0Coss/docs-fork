@@ -86,7 +86,7 @@ Sprawdź, czy wszystkie informacje są poprawne, następnie kliknij `Rozpocznij 
 Aby śledzić migrację pojedynczych kont, możesz skorzystać z jednej z dwóch dostępnych metod:
 
 - Z poziomu wiadomości e-mail informującej o postępie migracji.
-- Ze strony <https://omm.ovh.net/>. W zakładce `Migration`{.action} kliknij `Śledź / Synchronizuj`{.action}. Wpisz Identyfikator migracji {.action} oraz `Konto źródłowe`{.action}.
+- Ze strony <https://omm.ovh.net/>. W zakładce `Migration`{.action} kliknij `Śledź / Synchronizuj`{.action}. Wpisz `Identyfikator migracji`{.action} oraz `Konto źródłowe`{.action}.
 
 ![omm](obrazy/omm-migracja-track.png){.thumbnail}
 
