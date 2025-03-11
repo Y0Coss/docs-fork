@@ -642,6 +642,39 @@ $ aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-co
 
 ### Using the OVHcloud Control Panel (coming soon)
 
+
+## FAQ
+
+### Why are my objects not expired yet although I set up lifecycle rules?
+Lifecycle rules are processed asynchronously and on a best-effort basis. Most rules are applied within 24 hours, but for very large buckets or when processing many objects, it might take longer. During this delay, you continue to be billed for the object's current storage tier, even if the rule (e.g., expiration or transition) has already been triggered but not yet completed.
+
+### Why is the object count of my versioning-enabled bucket still increasing although I set up lifecycle rules?
+When a delete object operation i.e expiration is performed on an object in a versioning-enabled bucket, it does not delete the object permanently but it creates a delete marker on the object. This delete marker becomes the latest and current version of the object with a new version ID thus increasing the object count of the bucket.
+
+Extra lifecycle configuration is needed to remove objects permanently, including incomplete multipart uploads, expired delete markers, and earlier versions of the objects.
+
+### How can I empty y S3 bucket using Lifecycle rules?
+To empty a S3 bucket, you will need to consider the following:
+- expire current versions of objects
+- remove previous versions of objects
+- remove expired delete markers
+- remove incomplete multipart uploads
+
+### How can I monitor actions taken by my lifecycle rules?
+You can use the [Server Access Logging](pages/storage_and_backup/object_storage/s3_server_access_logging) feature to monitor actions taken by your lifecycle rules on your S3 bucket. Server Access Logging provides detailed records for the requests that are made to a bucket including expiration operations, transitions of objects to another storage tier, ...etc.
+
+### How can I recover objects deleted by my lifecycle rules?
+Versioning is the only way to recover objects that have been expired by lifecycle rules. It must be activated on your bucket before you set up your lifecycle rules.
+Howaver, objects that are permanently deleted by lifecycle rules cannot be recovered.
+
+### How can I exclude prefixes from my lifecycle rules?
+Prefix exclusion is not supported.
+
+### I have set up replication rules between 2 S3 buckets: why are objects deleted in my source bucket by my lifecycle rules not deleted in the destination bucket?
+Delete operations resulting from application of lifecycle rules are not replicated. See the documentation for [Asynchronous Replication](pages/storage_and_backup/object_storage/s3_asynchronous_replication) for further details on what is replicated and what is not.
+
+
+
 ## Go further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
