@@ -1,7 +1,7 @@
 ---
 title: "Configurer une alerte vROps via le protocole SMTP"
 excerpt: "Découvrez comment créer une alerte sortante SMTP dans vROps"
-updated: 2025-03-13
+updated: 2025-03-11
 ---
 
 ## Objectif
