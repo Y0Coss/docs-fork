@@ -1,7 +1,7 @@
 ---
 title: 'Criar e gerir utilizadores locais numa conta OVHcloud'
 excerpt: 'Saiba como adicionar utilizadores locais a partir da sua conta OVHcloud'
-updated: 2024-06-25
+updated: 2025-03-10
 ---
 
 ## Objetivo
@@ -32,13 +32,9 @@ Os utilizadores locais são um dos tipos de identidades que podem ser implementa
 
 #### Adicionar um utilizador
 
-Clique no nome da sua conta no canto superior direito e, a seguir, no seu nome na barra lateral.
+Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Aceder à minha conta`{.action}.
 
-![Para aceder ao menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Pode aceder ao menu IAM através da entrada dedicada na sua Área de Cliente.
-
-![Para aceder ao menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
+Na caixa **Atalhos**, clique no separador `Gerir os meus utilizadores`{.action}.
 
 De seguida, clique no separador `Identidades`{.action} para aceder à gestão dos utilizadores locais.
 

@@ -1,7 +1,7 @@
 ---
 title: "Lokale Benutzer auf einem OVHcloud Kunden-Account erstellen und verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Benutzer über Ihren OVHcloud Kunden-Account verwalten"
-updated: 2024-06-25
+updated: 2025-03-10
 ---
 
 ## Ziel
@@ -32,13 +32,9 @@ Lokale Benutzer sind einer der Identitätstypen, die in Ihrem OVHcloud Kunden-Ac
 
 #### Benutzer hinzufügen
 
-Klicken Sie oben rechts auf den Namen Ihres Accounts und dann erneut in der Seitenleiste auf Ihren Namen.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
 
-![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Sie können das IAM-Menü über den dedizierten Eintrag in Ihrem Kundencenter aufrufen.
-
-![IAM-Menüzugriff](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
+Klicken Sie in der Randleiste **Shortcuts** auf den Tab `Meine Benutzer verwalten`{.action}.
 
 Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der lokalen Benutzer zuzugreifen.
 
