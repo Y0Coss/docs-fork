@@ -1,7 +1,7 @@
 ---
-title: Configuring an IPv6 block in a vRack (EN)
-excerpt: This guide will show you how to configure a block of public IPv6 addresses for use with the vRack
-updated: 2024-07-18
+title: Configurer un bloc IPv6 dans un vRack
+excerpt: Ce guide vous montrera comment configurer un bloc d'adresses IPv6 publiques à utiliser dans un vRack
+updated: 2024-03-12
 ---
 
 <style>
@@ -18,129 +18,122 @@ details[open]>summary::before {
 }
 </style>
 
-> [!warning]
-> Usage of this feature is currently in Beta phase.
-> This guide may be incomplete and will be extended during this Beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Network services.
+## Objectif
 
-## Objective
+Le réseau vRack est un réseau privé mondial qui relie différents produits OVHcloud et permet la création de solutions réseau sophistiquées. En plus de faciliter les connexions privées, il prend également en charge le routage des adresses IP publiques.
 
-The vRack network serves as a global private network bridging various OVHcloud products, enabling the creation of sophisticated network solutions. Beyond facilitating private connections, it also supports routing public IP addresses.
-
-**This guide focuses on Additional IPv6 address block configuration within a vRack network.**
+**Ce guide se concentre sur la configuration des blocs d’adresses Additional IPv6 au sein d’un réseau vRack.**
 
 
 ## Introduction
 
-IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limitations and introducing features for the modern internet. Its rollout is a direct response to the need for more extensive, secure, and sophisticated internet architectures. Here are the key benefits of integrating IPv6 with vRack:
+L’IPv6 révolutionne la mise en réseau au sein du vRack d’OVHcloud, en offrant une solution aux limites de l’IPv4, ainsi que des fonctionnalités adaptées à l’Internet moderne. Son déploiement est une réponse directe au besoin d'architectures Internet plus étendues, plus sécurisées et plus sophistiquées. Voici les principaux avantages de l’intégration d’IPv6 au vRack :
 
-- **Flexibility for Advanced Networking**: IPv6 significantly increases the address space, providing the flexibility needed to scale infrastructure, manage failover scenarios and support larger solutions. This ensures that networks can grow and adapt without the space constraints of IPv4.
+- **Flexibilité pour les réseaux avancés** : l’IPv6 augmente considérablement l’espace d’adressage, offrant la flexibilité nécessaire pour faire évoluer l’infrastructure, gérer les scénarios de basculement et prendre en charge des solutions plus importantes. Cela permet aux réseaux de se développer et de s’adapter sans les contraintes d'addressage de l’IPv4.
 
-- **Hierarchical Routing and Segmentation**: IPv6 enables efficient hierarchical routing and logical infrastructure segmentation. This improves network manageability and security, ideal for reselling VMs with dedicated subnets or organising infrastructure into distinct segments.
+- **Routage hiérarchique et segmentation** : IPv6 permet un routage hiérarchique efficace et une segmentation de l’infrastructure logique. Cela améliore la gestion et la sécurité du réseau, idéal pour la revente de machines virtuelles avec des sous-réseaux dédiés, ou encore la segmentation de l'infrastructure réseau.
 
-- **Low latency**: Native, end-to-end IPv6 connectivity can be an enabler for latency-sensitive services like media streaming, as many recent provider networks are built IPv6-native. In such networks, using IPv4 services brings additional latency (and costs).
+- **Faible latence** : La connectivité IPv6 native de bout en bout peut faciliter la mise en place de services sensibles à la latence, comme le streaming multimédia, car de nombreux réseaux de fournisseurs récents sont construits en IPv6 native. Dans de tels réseaux, l’utilisation de services IPv4 crée une latence (et des coûts) supplémentaires.
 
-By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficient, and scalable network environment, ready to meet the demands of modern internet usage.
+En tirant parti de l’IPv6 au sein du vRack, les utilisateurs d’OVHcloud peuvent profiter d’un environnement réseau plus sécurisé, efficace et évolutif, prêt à répondre aux exigences des utilisations modernes d’Internet.
 
+## Prérequis
 
-## Requirements
-
-- A [vRack](https://www.ovhcloud.com/fr/network/vrack/){.external} service activated in your account
-- A [vRack compatible server](https://www.ovhcloud.com/fr/network/vrack/){.external} attached to your vRack network
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Un service [vRack](https://www.ovhcloud.com/fr/network/vrack/){.external} actif sur votre compte
+- Un [serveur compatible vRack](https://www.ovhcloud.com/fr/network/vrack/){.external} connecté à votre réseau vRack
+- Un accès à [l'espace client OVHcloud](/links/manager)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+> Cette fonctionnalité peut être limitée ou indisponible sur les serveurs de [la gamme **Eco**](https://eco.ovhcloud.com/fr/about/).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
+> Merci de visiter notre [comparatif des serveurs Eco](https://eco.ovhcloud.com/fr/compare/) pour obtenir plus d'informations.
 
 ## Instructions
 
-### Obtaining a new Additional IPv6 block
+### Obtention d’un nouveau bloc Additional IPv6
 
-While requesting a new Additional IPv6 block, it's important to note that the allocation is regional. This means the IPv6 block you receive will be tied to a specific region, defining where public traffic enters your vRack network (thus, where the gateway is located). 
+Lors de la demande d'un nouveau bloc Additional IPv6, il est important de noter que l'allocation de celui-ci est régionale. Cela signifie que le bloc IPv6 que vous recevez sera lié à une région spécifique, définissant où le trafic public entre dans votre réseau vRack (à savoir, l'emplacement de la passerelle).
 
-/// details | Request a new Additional IPv6 block
+/// details | Demander un nouveau bloc Additional IPv6
 
-You can order your new additional IPv6 block [here](https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip).
+Vous pouvez commander votre nouveau bloc IPv6 supplémentaire [ici](https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip).
 
-![configuration page](images/500.png){.thumbnail}
+![page de configuration](images/500.png){.thumbnail}
 
-Next you need to follow the step-by-step instructions.
+Ensuite, suivez les instructions étape par étape.
 
-Your new Additional IPv6 will then be available on your vRack configuration page.
+Votre Additional IPv6 sera alors disponible sur la page de configuration de votre vRack.
 
 ///
 
-### Configuring IPv6 in a vRack (basic mode)
+### Configurer l’IPv6 dans un vRack (mode simple)
 
-In this section we will present basic IPv6 setup for your vRack connected hosts.
+Dans cette section, nous présenterons la configuration IPv6 de base de vos hôtes connectés au vRack.
 
-![Configuring IPv6 in a vRack](images/20240418-03.png){.thumbnail}
+![Configurer une IPv6 dans un vRack](images/20240418-03.png){.thumbnail}
 
-The example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belong to the first /64 subnet from a given public /56 Additional IPv6 block. Both leverage the vRack interface for public IPv6 connectivity.
+L'exemple ci-dessus montre deux hôtes avec leurs interfaces côté vRack configurées avec des adresses publiques IPv6. Un hôte possède une configuration manuelle, tandis qu’un autre dispose d'une adresse IP attribuée automatiquement en SLAAC. Toutes les adresses IP appartiennent au premier sous-réseau /64 d'un bloc /56 Additional IPv6 public donné. Les deux utilisent l'interface vRack pour la connectivité IPv6 publique.
 
-/// details | Via the OVHcloud Control Panel
+/// details | Via l'espace client OVHcloud
 
-Go to `Network`{.action} and click the `vRack private network`{.action} section. Then select the vRack you want to manage:
+Allez dans `Network`{.action} et cliquez sur la section `vRack private network`{.action}. Sélectionnez ensuite le vRack que vous souhaitez gérer :
 
 ![vrack management](images/700.png){.thumbnail}
 
-On the left side, the possible options (eligible services to be configured) are listed.
+Sur la gauche, les options possibles (services éligibles à configurer) sont listées.
 
-On the right you see what is already configured with your vRack.
+Sur la droite, vous pouvez voir ce qui est déjà configuré avec votre vRack.
 
-Select your new Additional IPv6 and add it to your vRack.
+Sélectionnez votre nouvelle Additional IPv6 et ajoutez-la à votre vRack.
 
 ![vrack selection](images/701.png){.thumbnail}
 
-You now have your new Additional IPv6 added to your vRack.
+Vous avez maintenant votre nouvelle Additional IPv6 ajoutée à votre vRack.
 
-### Static IP configuration
+### Configuration IP statique
 
-Once the Additional IPv6 /56 block is attributed to a vRack network, there is still the first /64 subnet that is bridged with it.
+Une fois que le bloc Additional IPv6 /56 est attribué à un réseau vRack, le premier sous-réseau /64 reste ponté avec lui.
 
-This means you can easily use such IPs on your hosts with static IP configuration on vRack interfaces (see the next section for a host-side configuration example).
+Cela signifie que vous pouvez facilement utiliser de telles IP sur vos hôtes avec une configuration IP statique sur les interfaces vRack (voir la section suivante pour un exemple de configuration côté hôte).
 
-### Automatic IP configuration (SLAAC)
+### Configuration IP automatique (SLAAC)
 
-To simplify IP addressing inside your network, you may want to use SLAAC. It can be enabled per-bridged-subnet only and can be enabled for the first /64 of your block (this one is always bridged) at any time using this slider button:
+Pour simplifier l'adressage IP à l'intérieur de votre réseau, vous pouvez utiliser SLAAC. Il peut être activé uniquement par sous-réseau ponté, et peut aussi être activé pour le premier sous-réseau /64 de votre bloc (celui-ci est toujours ponté) à tout moment à l'aide de ce bouton curseur :
 
 ![enabling SLAAC](images/702.png){.thumbnail}
 
-Don't forget to configure SLAAC on your host machine.
+N'oubliez pas de configurer SLAAC sur votre machine hôte.
 
 ///
 
 
-/// details | Via the APIv6 (alternative way)
+/// details | Via l'APIv6 (méthode alternative)
 
-### Attributing an Additional IPv6 to a vRack
+Lorsque vous demandez une IPv6 supplémentaire, celle-ci est automatiquement assignée à votre vRack.
 
-When you request an additional IPv6, it is automatically assigned to your vRack.
-
-If you removed this new Additional IPv6 from your vRack, you can assign it again using this POST method:
+Si vous avez supprimé cette nouvelle Additional IPv6 de votre vRack, vous pouvez la réattribuer en utilisant cette méthode POST :
 
 > [!api]
 >
 > @api {v1} /vrack POST /vrack/{serviceName}/ipv6
 >
 
-As in the example below:
+Comme dans l'exemple ci-dessous:
 
 ![api post add block](images/post-ipv6.png){.thumbnail}
 
-Use the following call to verify the IPv6 has been assigned:
+Utilisez l'appel suivant pour vérifier que l'IPv6 a été attribuée :
 
 > [!api]
 >
 > @api {v1} /vrack GET /vrack/{serviceName}/ipv6/{ipv6}
 >
 
-As in the example below:
+Comme dans l'exemple ci-dessous:
 
 ![GET ipv6 call](images/20240418-04.png){.thumbnail}
 
-Now, we see our block configured with a vRack. The next step is to configure the host or VMs.
+Maintenant, nous voyons notre bloc configuré avec un vRack. L’étape suivante consiste à configurer le ou les hôtes virtuels.
 
 ### Static IP configuration
 
