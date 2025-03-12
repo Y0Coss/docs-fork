@@ -84,7 +84,7 @@ Using a text editor of your choice, open the network configuration file located 
 editor /etc/netplan/50-cloud-init
 ```
 
-Add the IP configuration to the existing one after the line `ethernets`:
+Since we are configuring the private IP in the same configuration file as the main one, the configuration below is added to the existing one after the line `ethernets`:
 
 ```yaml
     ethernets:

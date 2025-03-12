@@ -70,29 +70,37 @@ Once connected to your server via SSH, you can list your network interfaces with
 ip a
 ```
 
-In the line that begins with ```link ether```, you can verify that this interface matches the **Private** interface listed in your [OVHcloud Control Panel](/links/manager). Use this interface name to replace `NETWORK_INTERFACE` in the configurations below (example: `eno2`).
+In the line that begins with ```link ether```, you can verify that this interface matches the **Private** interface listed in your [OVHcloud Control Panel](/links/manager). Use this interface name to replace `NETWORK_INTERFACE` in the configurations below (example: `eth1`).
 
 ```console
 link ether f0:00:00:ef:0e:f0
 ```
+
+For example purposes, we will use the IP address range of `192.168.0.0/16` (**Subnet mask**: `255.255.0.0`).
+
 
 ##### **Debian 12**
 
 Using a text editor of your choice, open the network configuration file located in `/etc/netplan/` for editing. Here the file is called `50-cloud-init.yaml`.
 
 ```bash
-editor /etc/netplan/50-cloud-init
+editor /etc/netplan/50-cloud-init.yaml
 ```
 
-Add the IP configuration to the existing one after the line `ethernets`:
+Add the following lines to the existing configuration after the line `version: 2`. Replace `NETWORK_INTERFACE`and `IP_ADDRESS/PREFIX` with your own valueS.
 
 ```yaml
     ethernets:
         NETWORK_INTERFACE:
-            dhcp4: no
+            dhcp4: false
             addresses:
-              - 192.168.0.1/16
+              - IP_ADDRESS/PREFIX
 ```
+
+**Example**
+
+![netplan config](images/netplan_configuration.png){.thumbnail}
+
 
 > [!warning]
 >
@@ -104,7 +112,7 @@ Save your changes to the config file and exit the editor.
 Apply the configuration:
 
 ```bash
-netplan apply
+sudo netplan apply
 ```
 
 Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
@@ -117,14 +125,18 @@ Using a text editor of your choice, open the network configuration file located 
 editor /etc/network/interfaces.d/50-cloud-init
 ```
 
-Add the following lines:
+Add the following lines to the existing configuration, replace `NETWORK_INTERFACE`, `IP_ADDRESS` and `NETMASK` with your own values:
 
 ```console
 auto NETWORK_INTERFACE
 iface NETWORK_INTERFACE inet static
-address 192.168.0.1
-netmask 255.255.0.0
+    address IP_ADDRESS
+    netmask NETMASK
 ```
+
+**Example**
+
+![debian config](images/debian_configuration.png){.thumbnail}
 
 Save your changes to the config file and exit the editor.
 
@@ -144,15 +156,19 @@ Using a text editor of your choice, open the network configuration file located 
 editor /etc/netplan/50-cloud-init.yaml
 ```
 
-Add the IP configuration to the existing one after the line `ethernets`:
+Add the following lines to the existing configuration after the line `version: 2`. Replace `NETWORK_INTERFACE`and `IP_ADDRESS/PREFIX` with your own valueS.
 
 ```yaml
     ethernets:
         NETWORK_INTERFACE:
-            dhcp4: no
+            dhcp4: false
             addresses:
-              - 192.168.0.1/16
+              - IP_ADDRESS/PREFIX
 ```
+
+**Configuration example**
+
+![netplan config](images/netplan_configuration.png){.thumbnail}
 
 > [!warning]
 >
@@ -171,7 +187,7 @@ Repeat this process for your other server(s) and assign an unused IP address fro
 
 ##### **CentOS**
 
-Using a text editor of your choice, open the file `/etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE`.
+Once you have identified your private network interface, use a text editor of your choice to create the following network configuration file. Replace `NETWORK_INTERFACE` with your own value.
 
 ```bash
 editor /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
@@ -188,6 +204,9 @@ ONBOOT=yes
 TYPE=Ethernet
 ```
 
+**Example**
+
+
 Save your changes to the config file and exit the editor.
 
 Restart the networking service to apply the changes:
@@ -203,6 +222,44 @@ systemctl restart NetworkManager.service
 ```
 
 Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
+
+##### Fedora
+
+First verify that your private network interface is connected, in this example, our private interface is called `eno2`:
+
+```bash 
+$ nmcli device status
+
+DEVICE           TYPE      STATE                   CONNECTION
+eno1             ethernet  connected               cloud-init eno1
+lo               loopback  connected (externally)  lo
+eno2             ethernet  connected               --
+enp0s20f0u8u3c2  ethernet  disconnected            --
+```
+
+If your the STATE of your device is `disconnected`, run the following command to connect the interface. Replace `NETWORK_INTERFACE` with your own value:
+
+```bash
+nmcli device connect NETWORK_INTERFACE
+```
+
+Using a text editor of your choice, open the network configuration file located in `/etc/NetworkManager/system-connections` for editing. Here the file is called `eno2.nmconnection`.
+
+```bash
+editor /etc/NetworkManager/system-connections/eno2.nmconnection
+```
+
+Add the following lines to the existing configuration file. Do not modify any line in this file, simply add the ones that are missing.
+
+```console
+[ipv4]
+method=auto
+may-fail=false
+address1=IP_ADDRESS/PREFIX
+```
+
+
+Do not modify the existing lines in the configuration file, add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` wih your own values:
 
 #### Windows configuration 
 
