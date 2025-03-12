@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion intelligente du stockage avec des règles lifecycle
 excerpt: "Découvrez comment optimiser vos coûts de stockage avec les règles lifecycle d'OVHcloud"
-updated: 2025-03-13
+updated: 2025-03-17
 ---
 
 <style>
@@ -646,33 +646,40 @@ $ aws s3api put-bucket-lifecycle-configuration --bucket my-bucket --lifecycle-co
 ## FAQ
 
 ### Pourquoi mes objets n'ont-ils pas encore expiré alors que j'ai mis en place des règles de cycle de vie ?
+
 Les règles de cycle de vie sont traitées de manière asynchrone et dans la mesure du possible. La plupart des règles sont appliquées dans les 24 heures, mais cela peut prendre plus de temps dans le cas d'un très grand nombre d'objets. Pendant ce délai, vous continuez à être facturé pour la classe de stockage actuelle de l'objet, même si la règle (par exemple, l'expiration ou la transition) a déjà été déclenchée mais n'est pas encore terminée.
 
 ### Pourquoi le nombre d'objets de mon bucket versionné continue-t-il d'augmenter alors que j'ai mis en place des règles de cycle de vie ?
-Lorsqu'une opération de suppression d'objet, c'est-à-dire d'expiration, est effectuée sur un objet dans bucket versionné, elle ne supprime pas l'objet de manière permanente mais crée un marqueur de suppression sur l'objet. Ce marqueur de suppression devient la version la plus récente de l'objet avec un nouvel identifiant de version, ce qui augmente le nombre d'objets dans le bucket.
 
-Une configuration supplémentaire est nécessaire pour supprimer définitivement les objets, incluant les multipart uploads incomplets, les marqueurs de suppression expirés et les versions antérieures des objets.
+Lorsqu'une opération de suppression (**expiration**) d'un objet est effectuée dans un bucket versionné, l'objet n'est pas directement supprimé. Un marqueur de suppression est créé sur l'objet. Ce marqueur de suppression devient la version la plus récente de l'objet avec un nouvel identifiant de version, ce qui augmente le nombre d'objets dans le bucket.
+
+Une configuration supplémentaire est nécessaire pour supprimer définitivement les objets, y compris les téléchargements en plusieurs parties *(multipart uploads)* incomplets, les marqueurs de suppression expirés et les versions antérieures des objets.
 
 ### Comment vider mon bucket S3 à l'aide des règles de cycle de vie ?
+
 Pour vider un bucket S3, vous devez prendre en compte les éléments suivants :
+
 - expirer les versions actuelles des objets
 - supprimer les versions précédentes des objets
 - supprimer les marqueurs de suppression expirés
 - supprimer les multipart uploads incomplets
 
 ### Comment puis-je contrôler les actions entreprises par mes règles de cycle de vie ?
-Vous pouvez utiliser la feature [Server Access Logging](pages/storage_and_backup/object_storage/s3_server_access_logging) pour surveiller les actions prises par vos règles de cycle de vie sur votre bucket S3. La journalisation des accès serveur fournit des logs détaillées des requêtes effectuées sur un bucket, y compris les opérations d'expiration, les transitions d'objets vers une autre classe de stockage, ...etc.
+
+Vous pouvez utiliser la fonctionnalité [Server Access Logging](/pages/storage_and_backup/object_storage/s3_server_access_logging) pour surveiller les actions effectuées par vos règles de cycle de vie sur votre bucket S3. La journalisation des accès serveur fournit des journaux détaillés des requêtes effectuées sur un bucket, y compris les opérations d'expiration, les transitions d'objets vers une autre classe de stockage, etc.
 
 ### Comment puis-je récupérer des objets supprimés par mes règles de cycle de vie ?
+
 Le versioning est le seul moyen de récupérer des objets qui ont été expirés. Il doit être activé sur votre bucket avant que vous ne configuriez vos règles de cycle de vie.
 Cependant, les objets qui sont définitivement supprimés par les règles de cycle de vie ne peuvent pas être récupérés.
 
 ### Comment exclure des préfixes de mes règles de cycle de vie ?
+
 L'exclusion de préfixes n'est pas prise en charge.
 
 ### J'ai mis en place des règles de réplication entre 2 buckets S3 : pourquoi les objets supprimés dans mon bucket source par mes règles de cycle de vie ne sont-ils pas supprimés dans le bucket de destination ?
-Les opérations de suppression résultant de l'application des règles de cycle de vie ne sont pas répliquées. Voir la documentation sur la [Réplication Asynchrone](pages/storage_and_backup/object_storage/s3_asynchronous_replication) pour plus de détails sur ce qui est répliqué et ce qui ne l'est pas.
 
+Les opérations de suppression résultant de l'application des règles de cycle de vie ne sont pas répliquées. Voir la documentation sur la [réplication asynchrone](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) pour plus de détails sur ce qui est répliqué et ce qui ne l'est pas.
 
 ## Aller plus loin
 
