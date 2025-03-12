@@ -76,15 +76,11 @@ You can find all the details to enable it in our guide on [Securing your OVHclou
 
 ### Changing your personal details
 
-You can change your account information via the Control Panel. To do this, click on your name in the top right-hand corner of the [OVHcloud Control Panel](/links/manager), then click on your initials.
+You can change your account information via the Control Panel. To do this, click on your name in the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then `Access my account`{.action}.
 
-![NIC handle](images/newhub2.png){.thumbnail}
+In the `My profile` box, click on `Edit my profile`{.action}.
 
-Next, click `...`{.action} in the “My profile” section, then `Edit my profile`{.action}.
-
-![NIC handle](images/nichandle06.png){.thumbnail}
-
-Edit your details, then click `Confirm`{.action} .
+Edit your details, then click `Confirm`{.action}.
 
 > [!warning]
 >

@@ -76,7 +76,7 @@ Weitere Informationen zur Aktivierung finden Sie in unserer Anleitung "[Den OVHc
 
 #### Meine persönlichen Angaben ändern
 
-Sie können die Daten Ihres Kunden-Accounts über Ihr [OVHcloud Kundencenter](/links/manager) ändern. Indem Sie rechts oben in Ihrem [OVHcloud Kundencenter](/links/manager) auf Ihren Namen und dann auf `Zu meinem Account`{.action} klicken.
+Sie können die Daten Ihres Kunden-Accounts über Ihr [OVHcloud Kundencenter](/links/manager) ändern. Loggen Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
 
 Im Bereich `Mein Profil`{.action} rechts auf Ihrem Bildschirm (klicken Sie erneut auf Ihren Namen, um das rechte Menü zu schließen) klicken Sie auf `Mein Profil bearbeiten`{.action}.
 
