@@ -185,7 +185,7 @@ netplan apply
 
 Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 
-##### **CentOS**
+##### **CentOS, AlmaLinux and RockyLinux**
 
 Once you have identified your private network interface, use a text editor of your choice to create the following network configuration file. Replace `NETWORK_INTERFACE` with your own value.
 
@@ -215,7 +215,7 @@ Restart the networking service to apply the changes:
 systemctl restart networking
 ```
 
-On **CentOS 8** use this command:
+On **CentOS 8, AlmaLinux and RockyLinux** use this command:
 
 ```bash
 systemctl restart NetworkManager.service
@@ -225,7 +225,7 @@ Repeat this process for your other server(s) and assign an unused IP address fro
 
 ##### Fedora
 
-First verify that your private network interface is connected, in this example, our private interface is called `eno2`:
+First verify that your private network interface is connected, in this example, our private network interface is called `eno2`:
 
 ```bash 
 $ nmcli device status
@@ -237,29 +237,57 @@ eno2             ethernet  connected               --
 enp0s20f0u8u3c2  ethernet  disconnected            --
 ```
 
-If your the STATE of your device is `disconnected`, run the following command to connect the interface. Replace `NETWORK_INTERFACE` with your own value:
+If your the `STATE` of your device is `disconnected`, run the following command to connect the interface. Replace `NETWORK_INTERFACE` with your own value:
 
 ```bash
 nmcli device connect NETWORK_INTERFACE
 ```
 
-Using a text editor of your choice, open the network configuration file located in `/etc/NetworkManager/system-connections` for editing. Here the file is called `eno2.nmconnection`.
+Once this is done, a new configuration file will be created in the folder `/etc/NetworkManager/system-connections`.
+
+You can then edit this file using the `nmcli` handler, replacing `IP_ADDRESS`, `PREFIX` and `INTERFACE_NAME` and  with your own values.
+
+Add your IP using the following command:
 
 ```bash
-editor /etc/NetworkManager/system-connections/eno2.nmconnection
+nmcli connection modify INTERFACE_NAME IPv4.address IP_ADDRESS/PREFIX
 ```
 
-Add the following lines to the existing configuration file. Do not modify any line in this file, simply add the ones that are missing.
+**example**
 
-```console
-[ipv4]
-method=auto
-may-fail=false
-address1=IP_ADDRESS/PREFIX
+```bash
+nmcli connection modify eno2 IPv4.address 192.168.0.1/16
 ```
 
+Change the configuration to manual:
 
-Do not modify the existing lines in the configuration file, add your Additional IP to the file as follows, replacing `ADDITIONAL_IP/32` wih your own values:
+```bash
+sudo nmcli connection modify INTERFACE_NAME IPv4.method manual
+```
+
+**example**
+
+```bash
+sudo nmcli connection modify eno2 IPv4.method manual
+```
+
+Make the configuration persistent:
+
+```bash
+sudo nmcli con mod INTERFACE_NAME connection.autoconnect true
+```
+
+**example**
+
+```bash
+sudo nmcli con mod eno2 connection.autoconnect true
+```
+
+Reboot your network with the following command:
+
+```bash
+sudo nmcli device down interface_name;nmcli device up interface_name
+```
 
 #### Windows configuration 
 
