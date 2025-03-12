@@ -1,7 +1,7 @@
 ---
 title: "Zugriff auf Ihr OVHcloud Kundencenter nach IP beschränken"
 excerpt: "Erfahren Sie hier, wie Sie Ihren OVHcloud Kunden-Account absichern, indem Sie Zugriffsberechtigungen für IP-Adressen einrichten"
-updated: 2022-12-12
+updated: 2025-03-10
 ---
 
 ## Ziel
@@ -51,9 +51,7 @@ Wenn Sie zusätzlich ein 4G/5G-Netzwerk verwenden, vergessen Sie nicht, auch die
 
 ### Schritt 2: Einschränkung des Zugangs nach IP einrichten
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und. Klicken Sie auf Ihren `Namen und Vornamen` oben rechts **und dann** auf Ihre `Initialen` in der blauen Spalte.
-
-![Access from Manager](images/ip1.png){.thumbnail}
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
 
 Klicken Sie anschließend auf den Tab `Sicherheit`{.action}, um auf folgende Seite zu gelangen:
 

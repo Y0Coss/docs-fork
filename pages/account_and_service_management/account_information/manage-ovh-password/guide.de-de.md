@@ -69,7 +69,7 @@ Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, 
 
 #### Von Ihrem OVHcloud Kundencenter aus
 
-- Loggen Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
+- Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
 
 - Klicken Sie danach auf `Sicherheit`{.action}, dann auf `Bearbeiten`{.action} rechts von “Passwort”.
 
