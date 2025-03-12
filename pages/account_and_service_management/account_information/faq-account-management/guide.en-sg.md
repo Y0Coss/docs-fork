@@ -10,9 +10,10 @@ Here are the most frequently asked questions about managing your OVHcloud accoun
 
 ### How do I create an OVHcloud account?
 
-Creating an account is free and simple. Your account is designed to give you easy access to your information, and help you manage your services. To create an account, [click here](/links/manager).
+You are free to create an account. This space facilitates access to your information and allows you to manage your services. Read our guide [Creating an OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 
-You can also secure access to your personal information by enabling two-factor authentication. You can do this by going to "My account", then "Security". For further information on how to keep your account secure, read the "How do I secure my account?" section below.
+> [!success]
+> Once you have created an account, remember to secure it by configuring two-factor authentication. You can find more information in our guide [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 #### Tips and tricks
 
@@ -35,11 +36,14 @@ If this happens to you, please follow [this guide](/products/account-and-service
 
 ### How do I change my personal information?
 
-To view or change your personal details, log in to the OVHcloud Control Panel with your login credentials. You can access your personal information by clicking directly on the initials for your first name and surname, in the top right-hand corner of your dashboard in the OVHcloud Control Panel. Next, go to the “My profile” section of this page.
+To view or change your personal details, click on your name in the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then `Access my account`{.action}.
 
-#### Tips and tricks
+In the `My profile` box, click on `Edit my profile`{.action}.
 
-Want to change the email address for your OVHcloud account? A confirmation request will first be sent to the email address you currently have listed in the OVHcloud Control Panel. If you can no longer access this email address, you will need to wait 24 hours. After this period, the change will automatically be made.
+> [!success]
+> **Want to change the email address for your OVHcloud account?** 
+>
+> A confirmation request will first be sent to the email address you currently have listed in the OVHcloud Control Panel. If you can no longer access this email address, you will need to wait 24 hours. After this period, the change will automatically be made.
 
 ### How do I add my telephone number correctly on my account?
 
@@ -56,7 +60,7 @@ If you have forgotten your username, you can find it in the top right-hand corne
 
 ### How do I change contacts?
 
-You can delegate the administrative, technical and billing management of your services to other OVHcloud customer accounts from the OVHcloud Control Panel. To do this, go to the “Contact management” section, accessible from the banner on the right.
+You can delegate the administrative, technical and billing management of your services to other OVHcloud customer accounts from the OVHcloud Control Panel. To do this, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My contacts`{.action}.
 
 The service delegation must be validated via email both by the service administrator and the new contact.
 
@@ -70,11 +74,10 @@ A full contact management guide is available here: [/pages/account_and_service_m
 
 ### How do I set and change a billing contact?
 
-Log in to the OVHcloud Control Panel with your login credentials. Go to the dashboard and click on the “Contact management” shortcut, in the banner on the right.
+Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My contacts`{.action}.
 
-#### Tips and tricks
-
-For further information about contact management, please read this detailed guide: [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+> [!success]
+> For further information about contact management, please read this detailed guide: [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
 ### How do I secure my account?
 
@@ -84,13 +87,15 @@ You can choose from several solutions to secure your account, such as:
 - regular renewal of this password
 - two-factor authentication
 
-For two-factor authentication by sending a code via SMS or through IP restriction (authorisation or refusal of access to certain addresses), you can add security rules from your Control Panel. These options are all available in the “Security” section, after clicking on your initials in the top right-hand corner of the OVHcloud Control Panel Dashboard.
+For two-factor authentication by sending a code via SMS or through IP restriction (authorisation or refusal of access to certain addresses), you can add security rules from your Control Panel. To access to these options, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}. Click on `Security`{.action} to display them. 
 
 And for more info, watch the [video](https://www.youtube.com/watch?v=odO58c4gJfc&list=PL0DynEzr_sE5MnOfJOpVJN-EhfMDWoqGS&index=24).
 
 ### How do I enable two-factor authentication/2FA on my OVHcloud account?
 
-After you have created your OVHcloud customer account, we recommend securing your personal data by enabling two-factor authentication. To do this, please go to the “My account” section, then “Security”. To enable 2FA, you can use several authentication options:
+After you have created your OVHcloud customer account, we recommend securing your personal data by enabling two-factor authentication. To do this, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}.
+
+Next, click `Security`{.action}. To enable 2FA, you can use several authentication options:
 
 - By SMS, via a security code
 - From a mobile application compatible with Android, iPhone and Windows mobile
@@ -100,7 +105,10 @@ For further information, please refer to our [guide](/pages/account_and_service_
 
 ### How do I disable two-factor authentication/2FA on my OVHcloud account?
 
-If you would like to disable the two-factor authentication method you have set up, please log in to the OVHcloud Control Panel, go to the “My account” section, then “Security”.
+If you would like to disable the two-factor authentication method you have set up, please log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}.
+
+Next, click `Security`{.action}.
+
 You can then disable the various security devices one by one. 
 However, if you no longer have access to the OVHcloud Control Panel because you have lost your two-factor authentication device, please contact OVHcloud support so that an advisor can manually disable the device. They will request supporting documents from you in order to proceed with this.
 
@@ -150,7 +158,7 @@ A member of our team will reply as soon as possible.
 
 ### I replied to the OVHcloud Abuse team, but my service is still blocked. What should I do?
 
-From the OVHcloud Control Panel, you can open a support ticket to OVHcloud Customer Service for further information on how to process your Abuse ticket. To make your request easier to process, please ensure that you include the reference to this Abuse ticket in your support request.
+From the OVHcloud Control Panel, you can open a support ticket to [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) for further information on how to process your Abuse ticket. To make your request easier to process, please ensure that you include the reference to this Abuse ticket in your support request.
 
 ### How do I delete my OVHcloud account?
 

@@ -65,7 +65,7 @@ Sollten Sie Ihre Kundenkennung vergessen haben, finden Sie diese rechts oben auf
 
 ### Wie kann ich meine hinterlegten Kontakte ändern?
 
-Ihn Ihrem Kundencenter können Sie die administrative und technische Verwaltung sowie die Abrechnung Ihrer Dienste auf weitere OVHcloud Kunden-Accounts übertragen. Gehen Sie hierzu in den Bereich „Verwaltung der Kontakte". Sie gelangen über das Banner auf der rechten Seite dort hin.
+Ihn Ihrem Kundencenter können Sie die administrative und technische Verwaltung sowie die Abrechnung Ihrer Dienste auf weitere OVHcloud Kunden-Accounts übertragen. Loggen Sie sich mit Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Meine Kontakte`{.action}.
 
 Die Übertragung für den jeweiligen Dienst muss sowohl vom Administrator des Dienstes als auch vom neuen Kontakt per E-Mail bestätigt werden.
 
@@ -102,8 +102,9 @@ Für mehr Informationen sehen Sie das [Video](https://www.youtube.com/watch?v=od
 
 Nachdem Sie Ihr Kundenkonto bei OVHcloud erstellt haben, empfehlen wir Ihnen
 Ihre persönlichen Daten zu sichern. Aktivieren Sie dazu die Zwei-Faktor-
-Authentifizierung. Gehen Sie dazu in die
-Rubrik „Mein Account“ und dort in „Sicherheit“.
+Authentifizierung. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie oben rechts auf Ihren Namen und dann auf `Zu meinem Account`{.action}.
+
+Klicken Sie danach auf `Sicherheit`{.action}.
 Sie haben mehrere Möglichkeiten, um sich zu authentifizieren und die 2FA zu aktivieren:
 
 - Per SMS mit einem Sicherheitscode
