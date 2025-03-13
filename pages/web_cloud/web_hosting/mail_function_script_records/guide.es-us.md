@@ -1,12 +1,8 @@
 ---
 title: "Gestionar los mensajes de correo automatizados"
 excerpt: "Descubra cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVHcloud"
-updated: 2024-08-20
+updated: 2024-12-16
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
@@ -59,9 +55,10 @@ La página muestra varios datos que le permiten visualizar la actividad del env�
 
 A la derecha, varios botones permiten gestionar el envío de mensajes de correo automatizados desde el alojamiento web. En función del estado del servicio, algunas opciones pueden no estar disponibles.
 
+- **Eliminar los mesajes**: borra los emails que haya en la cola de espera y desbloquea el envío de emails. Por motivos de confidencialidad, OVHcloud no puede acceder a los mensajes de correo electrónico que se encuentren en la cola. Solo podrá visualizar estos mensajes de correo electrónico si han sido previamente registrados en la base de datos de su sitio web antes de ser enviados.
+- **Mensajes en error** : permite el acceso a los logs de los últimos mensajes de correo electrónico que se hayan encontrado en error de envío. Encontrará las direcciones de correo electrónico afectadas con el error asociado. Atención: Este historial no se restablecerá aunque decida `Eliminar los mesajes`{.action} o `Desbloquear el envío`{.action}.
 - **Bloquear el envío** : bloquea la distribución de los envíos de mensajes de correo automatizados de su alojamiento web. Los emails generados por sus scripts después del bloqueo no se enviarán, sino que se conservarán en una cola de espera durante un máximo de 72 horas.
 - **Desbloquear el envío**: desbloquea el envío de los emails automatizados de su alojamiento web. Los mensajes de correo presentes en la cola de espera también se reenviarán.
-- **Purgar el correo**: borra los emails que haya en la cola de espera y desbloquea el envío de emails.
 
 Para realizar la acción deseada, haga clic en el botón correspondiente y seleccione `Aceptar`{.action}. En algunos casos, la acción deseada puede tardar varias decenas de minutos en ser plenamente efectiva.
 
@@ -99,6 +96,20 @@ Si recibe el mensaje correctamente *The email has been sent successfully!* en la
 - **Compruebe el tamaño total de su email**: El mensaje de correo electrónico enviado no debe superar el tamaño total de **10 MB** (encapsulación y cabecera incluidos). El contenido del mensaje de correo electrónico no deberá exceder de **7/8 MB**.
 
 ### Gestionar los estados "Inactivo", "Bounce" y "SPAM"
+
+En esta sección encontrará los detalles de cada estado que ha bloqueado la función de correo.
+
+> [!warning]
+>
+> Antes de detallar cada uno de estos estados, es necesario entender los puntos que pueden degradar la reputación de su dominio o impedir la recepción de sus mensajes de correo.
+>
+> Compruebe lo siguiente:
+>
+> - La configuración de [el registro SPF](/pages/web_cloud/domains/dns_zone_spf) en la zona DNS del dominio.
+> - La configuración de [el registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc) en la zona DNS del dominio, **solo si el servidor de destino lo requiere**.
+> - Compruebe la reputación de la dirección IP que origina el envío ([la de su alojamiento web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip) en su caso), utilizando una herramienta como [MXtoolbox](https://mxtoolbox.com/) o [Spamhaus](https://check.spamhaus.org/).
+> - El mensaje de correo electrónico no contiene elementos que puedan ser interpretados como spam. Para más información, consulte la sección "[Caso 3: Envío de correos electrónicos legítimos considerados spam](#elements-list-spam)" de esta guía.
+> - En caso de que OVHcloud no haya bloqueado el correo electrónico y el destinatario no lo haya recibido o rechazado, póngase en contacto con el destinatario para comprobar si el mensaje se ha bloqueado en el servidor de recepción.
 
 #### El estado "Inactivo"
 
@@ -161,7 +172,7 @@ A continuación, haga clic en `Purgar los mensajes de correo`{.action}. Esto bor
 
 En este caso, es obligatorio realizar una purga para eliminar los spam pendientes de envío.
 
-- **Caso n°3: Envío de correos legítimos considerados spam** :
+- **Caso n°3: Envío de correos legítimos considerados spam** : <a name="elements-list-spam"></a>
 
 Si el origen de los mensajes de correo electrónico ha provocado el bloqueo, a continuación ofrecemos algunos ejemplos de uso recomendable **para evitar** cuando envíe un mensaje de correo electrónico (de forma que no se considere demasiado "fácil" como spam):
 
@@ -198,17 +209,6 @@ Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()
 > 
 > Los emails enviados con un script que utilicen una configuración SMTP no podrán ser gestionados y seguidos desde su [área de cliente OVHcloud](/links/manager).
 > 
-
-Para ello, puede utilizar el siguiente script sustituyendo únicamente los valores `Host`, `Username` y `Password` por sus propios parámetros SMTP:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@address.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
 
 > [!primary]
 >

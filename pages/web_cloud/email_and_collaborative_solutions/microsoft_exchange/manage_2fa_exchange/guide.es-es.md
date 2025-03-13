@@ -12,8 +12,8 @@ Si desea optimizar la seguridad de su cuenta Exchange, puede activar la doble au
 
 ## Requisitos
 
-- Tener un plan [Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener un plan [Exchange de OVHcloud](/links/web/emails).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Haber instalado una aplicación OTP en un teléfono inteligente o en una tableta con sistema operativo Android o iOS.
 
 > [!primary]
@@ -29,13 +29,18 @@ Si desea optimizar la seguridad de su cuenta Exchange, puede activar la doble au
 
 ### Primera configuración:
 
-#### Paso 1: activar la doble autenticación en la plataforma 
+#### Paso 1: activar la doble autenticación en la plataforma
 
 Al momento de realizar la primera configuración, es necesario activar la doble autenticación en la plataforma antes de activarla en una cuenta.
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. Por último, seleccione el servicio Exchange correspondiente.
-
-Acceda a la pestaña `Seguridad`{.action} de la plataforma. Debajo de la opción «Doble autenticación», haga clic en `Activar`{.action}». Para terminar, desplácese hasta el final de la página y haga clic en `Guardar los cambios`{.action}.
+1. Conéctese al [área de cliente de OVHcloud](/links/manager).
+1. Haga clic en la pestaña `Web Cloud`{.action}.
+1. Haga clic en el tema `Microsoft`{.action}.
+1. Haga clic en `Exchange`{.action}.
+1. Seleccione la plataforma correspondiente.
+1. Acceda a la pestaña `Seguridad`{.action} de la plataforma.
+1. Debajo de la opción "Doble autenticación", haga clic en `Activar`{.action}.
+1. Para terminar, desplácese hasta el final de la página y haga clic en `Guardar los cambios`{.action}.
 
 ![2fa-exchange](images/2fa-exchange.gif){.thumbnail}
 
@@ -47,7 +52,7 @@ Desde su plataforma Exchange, acceda a la pestaña `Cuentas de correo`{.action}.
 
 ![2fa-exchange](images/2fa-exchange-01.png){.thumbnail}
 
-Para asociar su cuenta a su aplicación OTP, inicie sesión en su [correo electrónico basado en la web](https://www.ovh.com/fr/mail/).
+Para asociar su cuenta a su aplicación OTP, inicie sesión en su [correo electrónico basado en la web](/links/web/email).
 
 Al conectarse por primera vez, aparece un código QR. Utilice la aplicación OTP para escanearlo e introduzca el código que la aplicación generó para conectarse.
 
@@ -59,20 +64,23 @@ Las próximas veces que se conecte, solo se le solicitará el código que gener�
 
 La doble autenticación de su cuenta puede desactivarse de tres maneras diferentes.
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. Por último, seleccione el servicio Exchange correspondiente.
-
-En la pestaña `Cuentas de correo`{.action} de su plataforma Exchange, haga clic en `...`{.action} a la derecha de la cuenta en la que ya haya activado la doble autenticación.
+1. Conéctese al [área de cliente de OVHcloud](/links/manager).
+1. Haga clic en la pestaña `Web Cloud`{.action}.
+1. Haga clic en el tema `Microsoft`{.action}.
+1. Haga clic en `Exchange`{.action}.
+1. Seleccione la plataforma correspondiente.
+1. En la pestaña `Cuentas de correo`{.action} de su plataforma Exchange, haga clic en `...`{.action} a la derecha de la cuenta en la que ya haya activado la doble autenticación.
 
 ![2fa-exchange](images/2fa-exchange-04.png){.thumbnail}
 
 Seleccione la opción que corresponde a sus necesidades según la siguiente tabla:
 
-| N.°                 	| Función    | Descripción                                                                                                        	
-|----------------------------------	|------------------|------------------|
+| N.°| Función| Descripción
+|----------------------------------|------------------|------------------|
 | 1. | «Desactivar la doble autenticación» | Permite eliminar la doble autenticación durante un periodo de tiempo determinado en horas. Una vez superado el plazo, la doble autenticación se reactivará. <br> *Ejemplo: un usuario ha olvidado su teléfono inteligente y no puede autenticarse con la aplicación OTP.*   |
 | 2. | «Restablecer la doble autenticación» | Permite restablecer el código QR solicitado al conectarse por primera vez al correo electrónico basado en la web.<br> *Ejemplo: un usuario ha cambiado de teléfono inteligente y debe volver a configurar su aplicación OTP.* |
 | 3. | «Eliminar la doble autenticación» | Elimina por completo la doble autenticación de la cuenta. | 
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

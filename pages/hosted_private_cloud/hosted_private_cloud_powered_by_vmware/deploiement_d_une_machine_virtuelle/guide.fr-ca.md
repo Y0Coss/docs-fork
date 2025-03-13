@@ -27,7 +27,7 @@ Faites un clic-droit sur le cluster de votre choix et cliquez sur `Nouvelle mach
 
 Vous avez plusieurs possibilité lors de la création d’une machine virtuelle :
 
-- La création depuis un ISO, qui sera dans votre datastore et que vous aurez pu importer en suivant [le guide de connexion en SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion)
+- La création depuis un ISO, qui sera dans votre datastore et que vous aurez pu importer en suivant [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload)
 - Vous pouvez également déployer une machine virtuelle depuis un template que vous pouvez avoir ou un [template OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)
 - Vous pouvez cloner une machine virtuelle déjà existante (attention toutefois au risque de conflit d’adresses IP).
 - Vous pouvez cloner une machine virtuelle en template, en vue d’un déploiement plus rapide de vos prochaines machines virtuelles.
@@ -105,4 +105,4 @@ La console s'ouvrira dans un nouvel onglet et, après avoir suivi l'installation
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

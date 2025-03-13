@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Network concepts and best practices"
 excerpt: "Discover the powerful networking capabilities of VMware Cloud Director on OVHcloud with this comprehensive guide (key concepts and features)"
-updated: 2024-08-23
+updated: 2025-03-03
 ---
 
 <style>
@@ -19,8 +19,8 @@ details[open]>summary::before {
 </style>
 
 > [!primary]
-> 
-> VCD on OVHcloud is currently in Alpha phase. This guide may be incomplete.
+>
+> VCD on OVHcloud is currently in Alpha phase. This guide can evolve and be updated in the future as our teams continue to develop this product.
 >
 
 ## Objective
@@ -34,8 +34,8 @@ details[open]>summary::before {
 > If you are unsure how to log in to your organization's web portal, first refer to the guide: [How to log in to VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 >
 
-- A web browser (with a preference of chromium based one, and translation enabled in English)
-- A VMware Cloud Director account with required user rights (check that your user account has sufficient rights).
+- A web browser (with preferably a Chromium-based one, and translation enabled in English).
+- A VMware Cloud Director account with required user rights (make sure your user account has the necessary permissions).
 - You need to have followed the guide: "[VMware Cloud Director - Basic VCD concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)".
 
 ## Instructions
@@ -45,23 +45,23 @@ details[open]>summary::before {
 In this introductory guide, we will explore:
 
 - The different networking concepts within VMware Cloud Director on OVHcloud.
-- The notions of optimizing network space such as IP space, Edge gateways, datacentre groups for example.
+- Concepts related to optimizing network space, such as IP space, Edge Gateways, and Datacentre Groups.
 
 To ensure a flexible and secure network infrastructure in a versatile cloud environment, VMware Cloud Director uses a layered networking architecture that includes four categories of networks:
 
-- **External networks**.
-- **Organizational vDC networks**.
-- **Datacentre group networks**.
-- **vApp networks**.
+- **External networks**
+- **Organizational vDC networks**
+- **Datacentre group networks**
+- **vApp networks**
 
-Most of these networks require additional infrastructure elements such as **"Edge Gateways"** and **Network Pools"**.
+Most of these networks require additional infrastructure elements, such as "**Edge Gateways**" and "**Network Pools**".
 
 The VCD control panel has a network banner with 6 sections: 
 
 - `Network`
 - `Edge Gateways`
 - `Provider Gateways`
-- `IP Spaces`.
+- `IP Spaces`
 - `Data Center Groups`
 - `Security Tags`
 
@@ -82,11 +82,11 @@ Here are the main network features offered with the VCD on OVHcloud solutions.
 
 | Features                        	| Standard 	| Advanced 	| Premium 	| Comments                                                                                                                                                                                           	                        |
 |---------------------------------	|----------	|----------	|---------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Routing & Switching IPv4        	| ✅        	| ✅        	| ✅       	| - Network segments. distributed & non distributed routing. <br> - Routed Network with or without NAT/BGP/DHCP/DNS/Static routes. <br> - Cross vDC networking on the same site. <br> - **Not supported:** OSPF, VRF Lite. 	 |
+| Routing & Switching IPv4        	|         	| ✅        	| ✅       	| - Network segments. distributed & non distributed routing. <br> - Routed Network with or without NAT/BGP/DHCP/DNS/Static routes. <br> - Cross vDC networking on the same site. <br> - **Not supported:** OSPF, VRF Lite. 	 |
 | Public IPv4 Range               	| ✅        	| ✅        	| ✅       	| 	                                                                                                                                                                                                                           |
 | Private Network - vRack support 	| ✅        	| ✅        	| ✅       	| - in Roadmap                                                                                                                                                                                                  	             |
 | Routing & Switching IPv6        	|          	|          	|         	| - in Roadmap                                                                                                                                                                                         	                      |
-| VPN                             	|          	| ✅        	| ✅       	| - L2VPN, VPN IPsec Policy Based Not Supported: SSL VPN, Routed based IPsec VPN.                                                                                                                      	                     |
+| VPN                             	|          	| ✅        	| ✅       	| - L2VPN, VPN IPsec Policy Based Not Supported: SSL VPN, route-based IPsec VPN.                                                                                                                      	                     |
 | Load Balancing                  	|          	|          	|         	| - Not supported with native VCD network capabilities                                                                                                                                                 	                      |
 | Advanced Load Balancing         	|          	|          	|         	| - in Roadmap                                                                                                                                                                                         	                      |                                                                                          	|
 
@@ -113,18 +113,32 @@ Here we see that only the advanced networking and security features within VCD o
 | Design Recommendation                                                                                                 | Design Justification                                               | Design Involvement                                        |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------|
 | Create one or more Edge Gateways (Level 1 Gateways) per organization vDC.                                             | Enables networking services for the organization's vDC.            | None.                                                     |
-| Create datacenter groups, if there is a need to have Org vDC networks spanning multiple Org vDC's in an organization. | Simplifies Org vDC cross-functional connectivity.                  | Requires creation of datacenter groups in the VCD tenant. |
+| Create datacenter groups, if there is a need to have Org vDC networks spanning multiple Org vDCs in an organization. | Simplifies Org vDC cross-functional connectivity.                  | Requires creation of datacenter groups in the VCD tenant. |
 | Use the IP Spaces feature instead of traditional IP block addressing.                                                 | Note: The delivery of all Spaces IP features spans several phases. | None.                                                     |
 
 **The network within VCD (concept)**
 
 The types of network supported within an organization’s vDC:
 
-| Datacentre network  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Direct              | - An organization’s vDC network that has a direct connection to one of the external networks that are provisioned by the system administrator and rely on vSphere resources.  <br><br>  - Direct networks are supported for organization VDCs that rely on NSX. Direct networks are accessible by multiple organization VDCs.   Virtual machines belonging to different organization VDCs can connect to this network and see the traffic.    <br><br> - A direct network provides direct Layer 2 connectivity to virtual machines outside of the organization VDC.  <br><br> - Virtual machines outside of this organization VDC can connect directly to the virtual machines inside the organization VDC.  <br><br>  Note: Only OVHcloud can add a direct organization VDC network. |
-| Isolated (Internal) | - Isolated networks can only be accessed by the same organization vDC.  <br><br> - Only virtual machines located in this organization vDC can connect to the internal organization VDC network and see the traffic for it. <br><br> - Isolated networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere.  The isolated organization VDC network provides an organization VDC with an isolated private network to which multiple virtual machines and vApp can connect.  <br><br> This network does not provide connectivity to virtual machines outside of the organization VDC. Machines outside the organization VDC cannot connect to machines inside the organization VDC.                                                                  |
-| Routing             | - Routed networks can only be accessed by the same organization vDC.  <br><br> - Only virtual machines inside this organization vDC can connect to this network.   <br><br> - This network also provides controlled access to an external network. As a system administrator or organization administrator, you can configure Network Address Translation (NAT), Firewall, and VPN settings to make certain virtual machines accessible from the external network. <br><br> Routed networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere.                                                                                                                                                                                                    |
+> [!tabs]
+> Direct
+>>
+>> - An organization’s vDC network that has a direct connection to one of the external networks that are provisioned by the system administrator and rely on vSphere resources.
+>> - Direct networks are supported for organization VDCs that rely on NSX. Direct networks are accessible by multiple organization VDCs. Virtual machines belonging to different organization VDCs can connect to this network and see the traffic.
+>> - A direct network provides direct Layer 2 connectivity to virtual machines outside of the organization VDC.
+>> - Virtual machines outside of this organization VDC can connect directly to the virtual machines inside the organization VDC.
+>> - **Note**: Only OVHcloud can add a direct organization VDC network.
+> Isolated (internal)
+>>
+>> - Isolated networks can only be accessed by the same organization vDC.
+>> - Only virtual machines located in this organization vDC can connect to the internal organization VDC network and see the traffic for it.
+>> - Isolated networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere. The isolated organization VDC network provides an organization VDC with an isolated private network to which multiple virtual machines and vApp can connect. This network does not provide connectivity to virtual machines outside of the organization VDC. Machines outside the organization VDC cannot connect to machines inside the organization VDC.
+> Routed
+>>
+>> - Routed networks can only be accessed by the same organization vDC. Only virtual machines inside this organization vDC can connect to this network.
+>> - This network also provides controlled access to an external network. As a system administrator or organization administrator, you can configure Network Address Translation (NAT), Firewall, and VPN settings to make certain virtual machines accessible from the external network.
+>> - Routed networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere.
+>>
 
 Organizational virtual datacentre (vDC) networks enable **vApps**/VMs to communicate with each other or with networks external to the organization.
 
@@ -144,12 +158,12 @@ Network pools must be set up before organization vDC networks and vApp networks.
 > 
 > You can use a new way to manage your IP space in VMware Cloud Director on OVHcloud with the new IP space management subsystem.
 > 
-> An Edge gateways can only connect to provider gateways that use IP spaces.
+> An Edge Gateway can only connect to provider gateways that use IP spaces.
 > 
 
-An IP space consists of a set of non-overlapping IP address ranges and small CIDR. blocks that are reserved and used when consuming the IP space lifecycle. An IP space can be IPv4 or IPv6, but not both.
+An IP space consists of a set of non-overlapping IP address ranges and small CIDR blocks that are reserved and used when consuming the IP space lifecycle. An IP space can be IPv4 or IPv6, but not both.
 
-Since version (10.4.1), IP spaces have been part of the new features. and are recommended for your network space needs.
+Since version 10.4.1, IP spaces have been part of the new features and are recommended for your network space needs.
 
 There are two types of IP spaces that you can use as the Organization Administrator user:
 
@@ -184,7 +198,7 @@ If you no longer use an IP prefix that has been allocated to your IP space, you 
 
 **Network topologies (concept)**
 
-You can view the network topology from the VCD control panel by clicking on: `Networking | IP Spaces | IP space's name | Configuration | Network Topology`{action}
+You can view the network topology from the VCD control panel by clicking on: `Networking | IP Spaces | IP space's name | Configuration | Network Topology`{.action}
 
 Network topologies are used to configure IP spaces to enable north-south traffic.
 
@@ -214,7 +228,7 @@ You can also synchronize them. This synchronization action will check all associ
 
 ![VCD Network Datacenter Groups Network Import](images/vcd_network_datacenter-groups_network_import.png){.thumbnail}
 
-**Edge gateways (required)**
+**Edge Gateway (required)**
 
 VCD Edge Gateway allows an organization vDC network to route connectivity to internal networks, network address translation (NAT), firewall, IPsec tunnel mounting,
 
@@ -247,7 +261,7 @@ vApp networks allow virtual machines to communicate with each other or, by conne
 
 ///
 
-### Step 4 - Limitations
+### Step 3 - Limitations
 
 /// details | What are the known network limitations?
 
@@ -293,10 +307,10 @@ You can now follow the steps in the following guide: [“Guide 2 - VMware Cloud 
 
 **Useful network concept**
 
-To strengthen your network knowledge within the OVHcloud universe, visit our website page: <https://www.ovhcloud.com/en-au/network/>.
+To strengthen your network knowledge within the OVHcloud universe, please visit [our dedicated page](/links/network/network).
 
-If you require training or technical assistance in implementing our solutions, please contact your sales representative or click on [this link](/links/professional-services) for a quote and request a custom analysis of your project from our Professional Services team experts.
+If you require training or technical support to implement our solutions, please contact your sales representative or click [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
-Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated Discord channel: <https://discord.gg/ovhcloud>. 
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated channel [Discord](https://discord.gg/ovhcloud).
 
-To join and exchange with our [community of users](/links/community).
+Join our [community of users](/links/community).

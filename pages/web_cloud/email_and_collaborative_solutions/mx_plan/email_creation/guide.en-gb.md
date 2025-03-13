@@ -26,7 +26,12 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 
 Depending on the date your service was activated and whether it was recently migrated, you are using either the legacy version or the new version of the MX Plan solution. Before you proceed with this guide, you need to check which version you are using. 
 
-To do this, log in to the [OVHcloud Control Panel](/links/manager), and open the `Web Cloud`{.action} section. Click on `Emails`{.action}, then choose the name of the MX Plan service concerned. Continue with the next steps, depending on which version you own.
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Open the `Web Cloud`{.action} section.
+1. Click `Emails`{.action}.
+1. Select the domain concerned.
+
+Continue with the next steps, depending on which version you own.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
@@ -75,7 +80,7 @@ To view your emails using an email client, please refer to the section ["View an
 
 #### Delete an email account
 
-With a new MXplan service, deleting an account is referred to as *resetting an account*.
+With a new MX Plan service, deleting an account is referred to as *resetting an account*.
 
 > [!warning]
 >
@@ -205,4 +210,4 @@ If you just need the information required to configure your email address, the s
 
 ## Go further
   
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

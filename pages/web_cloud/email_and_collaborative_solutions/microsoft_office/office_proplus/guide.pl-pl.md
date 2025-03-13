@@ -4,9 +4,6 @@ excerpt: Dowiedz się, jak zainstalować i korzystać z Microsoft 365 apps na zd
 updated: 2021-09-06
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -46,7 +43,7 @@ Instalacja oferty Microsoft 365 Apps for entreprise na współdzielonym komputer
 > Jeśli zainstalowałeś już Twoją licencję Office 365 Proplus, konieczne jest jej **odinstalowanie**.
 >
 
-- Po odinstalowaniu Twojej licencji [kliknij tutaj](https://www.microsoft.com/en-us/download/details.aspx?id=49117){.external}, aby pobrać narzędzie wdrażające Microsoft 365.
+- Po odinstalowaniu Twojej licencji [kliknij tutaj](https://www.microsoft.com/en-us/download/details.aspx?id=49117), aby pobrać narzędzie wdrażające Microsoft 365.
 
 - **Uruchom** narzędzie do wdrażania na Twojej maszynie.
 
@@ -104,4 +101,4 @@ Upewnijcie się, że jej wartość wynosi `1`. Jeśli ten klucz nie istnieje, mo
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,7 +1,7 @@
 ---
-title: "Activating email addresses included in your Web Hosting plan"
+title: "Web Hosting - Activating email addresses included"
 excerpt: "Find out how to activate the email addresses included in your Web Hosting plan"
-updated: 2024-07-17
+updated: 2024-12-12
 ---
 
 ## Objective
@@ -9,6 +9,8 @@ updated: 2024-07-17
 If you have ordered a Web Hosting plan without directly linking it to a domain name, the email solution included with your Web Hosting plan must be enabled manually. You can link it to the domain name of your choice.
 
 **Find out how to activate the email addresses included in your Web Hosting plan.**
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oqWovkSP85A?si=1rnqBvhVLdhr2rI5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Requirements
 
@@ -78,7 +80,15 @@ In the `Configuration` box, click the `...`{.action} button to the right of the 
 
 > [!warning]
 >
-> To confirm the deletion of the email solution linked to your Web Hosting plan, you will receive a confirmation link via email. You must click this link to start the delete operation.
+> To confirm the deletion of the email solution linked to your web hosting plan, you will be sent a validation link via email. You must click this link for the delete operation to be launched.
+
+#### Special case - Deletion of the email solution linked to your web hosting plan (in order to link it to another domain name)
+
+For security reasons, it may take several days to permanently delete an email solution after you click on the deletion validation link.
+
+If you would like to delete the email solution linked to your web hosting plan in order to link it to another domain name — and **only** in this specific case — you will need to confirm in writing your request to delete the solution as soon as possible. To do this, contact support by creating a support ticket from your [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help). The support ticket must **obligatorily** be created from the customer account (and the corresponding NIC handle) that administers the service to be deleted.
+
+Once the request has been processed, you can then link the email solution linked to your web hosting plan to another domain name.
 
 ## Go further
 

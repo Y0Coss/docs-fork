@@ -1,14 +1,10 @@
 ---
 title: 'Web Cloud Databases - primeira utilização'
 excerpt: 'Saiba como começar a usar e a gerir o serviço Web Cloud Databases'
-updated: 2024-03-18
+updated: 2025-02-20
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
-## Sumário
+## Objetivo
 
 A solução Web Cloud Databases permite beneficiar de uma instância de bases de dados, cujos recursos são dedicados e garantidos que lhe oferecem performance e flexibilidade.
 A sua solução Web Cloud Databases está associada de forma padrão à rede de alojamentos web da OVHcloud. É possível associá-la a qualquer outra rede, através de uma lista de endereços IP autorizados.
@@ -24,13 +20,30 @@ A sua solução Web Cloud Databases está associada de forma padrão à rede de 
 
 ### Ativação do seu servidor Web Cloud Databases incluído com o seu plano de alojamento web
 
-Se a sua oferta de alojamento inclui a opção Web Cloud Databases, aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda.
+Se a sua oferta de alojamento inclui a opção Web Cloud Databases, clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 
-No separador `Informações gerais`, no quadro `Configuração`, clique no botão `...`{.action} à direita da **Web Cloud Databases**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
-
-![Informações gerais](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
-
-Para concluir, siga as instruções seguintes para determinar o tipo e a versão do seu servidor Web Cloud Databases. De seguida, poderá aceder através da coluna da esquerda na `Web Cloud Databases`{.action}.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> No separador `Informações gerais`, no quadro `Configuração`, clique no botão `...`{.action} à direita da **Web Cloud Databases**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
+>>
+>> ![Informações gerais](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/web-cloud-databases-enable.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Para concluir, siga as instruções seguintes para determinar o tipo e a versão do seu servidor Web Cloud Databases. De seguida, poderá aceder através da coluna da esquerda na `Web Cloud Databases`{.action}.
 
 ### Consultar informações gerais da instância Web Cloud Databases
 

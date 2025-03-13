@@ -1,8 +1,9 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2024-01-05
+updated: 2025-01-24
 ---
+
 ## Objective
 
 To protect customer services exposed on public IP addresses, OVHcloud offers a stateless firewall that is configured and integrated into the **Anti-DDoS infrastructure**: the Edge Network Firewall. It allows to limit service exposure to DDoS attacks, by dropping specified network flows coming from outside of the OVHcloud network.
@@ -11,7 +12,7 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 
 > [!primary]
 >
-> You can find more information on our Anti-DDoS solution on our website: <https://www.ovhcloud.com/en-sg/security/anti-ddos/>.
+> You can find more information on our Anti-DDoS solution on [our website](/links/security/antiddos).
 > 
 
 | ![global-schema](images/global_schema.png) | 
@@ -28,6 +29,9 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 >
 > Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
 
+> [!warning]
+> The Edge Network Firewall does not support QUIC protocol.
+
 ## Instructions
 
 The Edge Network Firewall reduces exposure to network DDoS attacks by allowing users to copy some of the server's firewall rules to the edge of the OVHcloud network. This blocks incoming attacks as close to their source as possible, reducing the risk of saturating server resources or rack connections in the event of major attacks.
@@ -36,10 +40,15 @@ The Edge Network Firewall reduces exposure to network DDoS attacks by allowing u
 
 > [!primary]
 >
+> To date, this feature is only available for IPv4 addresses.
+>
+
+> [!primary]
+>
 > The Edge Network Firewall protects a specific IP associated with a server (or service). Therefore, if you have a server with multiple IP addresses, you must configure each IP separately.
 > 
 
-In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} section, next click on the `Network`{.action} menu and open `Public IP Adresses`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
+In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} section, next click on the `Network`{.action} menu and open `IP`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
 
 ![filter service](images/selectservice_cut.png){.thumbnail}
 

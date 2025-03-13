@@ -17,7 +17,7 @@ Oprócz Panelu klienta OVHcloud możesz również zarządzać projektami Public 
 ## Wymagania początkowe
 
 - Utworzenie instancji Public Cloud w [Panelu klienta OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) lub w [interfejsie Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
-- [Utworzenie klucza SSH](/pages/public_cloud/compute/public-cloud-first-steps#krok-1-utworzenie-kluczy-ssh).
+- [Utworzenie klucza SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ## W praktyce
 
@@ -65,7 +65,7 @@ W interfejsie zarządzania instancją wybierz odpowiednią opcję z rozwijanej l
 ![public-cloud](images/list2022.png){.thumbnail}
 
 - Attach Interface: ta opcja pozwala na dodanie jednego lub kilku prywatnych interfejsów do Twojej instancji za pośrednictwem sieci VLAN. Więcej informacji znajdziesz w [tej części](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#dodawanie-prywatnego-interfejsu) odpowiedniego przewodnika.
-- Detach Interface: ta opcja pozwala na usunięcie interfejsu związanego z instancją. Więcej informacji znajdziesz w [tej części](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#usuwanie-prywatnego-interfejsu) odpowiedniego przewodnika.
+- Detach Interface: ta opcja służy do odłączenia interfejsu związanego z instancją. Więcej informacji znajdziesz w [tej części](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#usuwanie-prywatnego-interfejsu) odpowiedniego przewodnika.
 - Edit Instance: ta opcja pozwala na zmianę nazwy instancji i [grup zabezpieczeń](/pages/public_cloud/compute/setup_security_group).
 
 > [!warning]
@@ -87,50 +87,7 @@ Dzięki usłudze Public Cloud możesz zwiększyć zasoby Twojej instancji - wyst
 > Instancje typu *flex* umożliwiają zmianę rozmiaru na wyższe lub niższe modele dzięki unikalnemu rozmiarowi dysku.
 > 
 
-Wybierz `Resize Instance`{.action} z rozwijanego menu po prawej stronie odpowiedniej instancji.
-
-![Resize instance](images/resizeinstance2022.png){.thumbnail}
-
-* Wybór szablonu (*Flavor Choice*): ta sekcja wskazuje aktualny szablon (*old flavor*) i pozwala wybrać nowy szablon (*new flavor*) dla zasobu instancji.
-
-![public-cloud](images/flavorchoice.png){.thumbnail}
-
-* Szczegóły skrajni (*Flavor Details*). W tej sekcji wyświetlają się zasoby przypisane do wybranego szablonu. 
-* Limity Projektu (*Project Limits*). Tutaj możecie zobaczyć wykorzystane zasoby w porównaniu z całkowitymi zasobami przeznaczonymi na dany projekt.
-
-> [!warning]
-> Pamiętaj, że możesz tylko zmienić rozmiar instancji z jednego modelu Linux na inny model Linux i z jednego modelu Windows na inny model Windows.
->
-
-* Opcje zaawansowane (*Advanced Options*). Sekcja ta pozwala na zarządzanie partycjonowaniem dysku (*Disk Partion*) i grupy serwerów (*Server Group*).
-
-![public-cloud](images/resize_advanced.png){.thumbnail}
-
-Po zakończeniu konfiguracji kliknij `Resize`{.action}.
-
-**Zmiana rozmiaru dysku w systemie Windows**
-
-Uwaga: podczas zmiany rozmiaru instancji Windows rozmiar partycji nie jest automatycznie aktualizowany. Należy więc rozszerzyć ją, używając **menedżera dysku**:
-
-Kliknij prawym przyciskiem myszy w menu `Start`{.action} i uruchom menedżer dysku klikając `Zarządzanie dyskami`{.action}.
-
-![public-cloud](images/2980.png){.thumbnail}
-
-Kliknij prawym przyciskiem myszy na partycję główną, a następnie kliknij `Rozszerz wolumin`{.action}.
-
-![public-cloud](images/2981a.png){.thumbnail}
-
-Kliknij `Dalej`{.action}, aby uzyskać dostęp do `Kreator rozszerzenia woliminów`. Wybierz zasoby dysku do rozszerzenia i kliknij `Dalej`{.action}. 
-
-![public-cloud](images/2978a.png){.thumbnail}
-
-Następnie kliknij `Zakończ`{.action}, aby zatwierdzić wybór.
-
-![public-cloud](images/wizard2021.png){.thumbnail}
-
-Nowy rozmiar dysku zostanie wyświetlony w managerze dysku.
-
-![public-cloud](images/2979.png){.thumbnail}
+Szczegółowe instrukcje można znaleźć w następującym przewodniku: [Skaluj instancję w interfejsie Horizon](/pages/public_cloud/compute/resize_of_an_instance).
 
 ### Przebudowa instancji
 
@@ -159,7 +116,7 @@ W przypadku utraty dostępu do instancji, wynikającej z nieprawidłowej konfigu
 > [!primary]
 >
 > Dostęp do instancji jest możliwy przez konsolę VNC. Przed skonfigurowaniem hasła dla użytkownika root należy jednak najpierw skonfigurować.
-> Więcej informacji znajdziesz [w tym przewodniku](/pages/public_cloud/compute/become_root_and_change_password).
+> Więcej informacji znajdziesz [w tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
 > Konsola VNC może być również pierwszym podejściem w przypadku awarii, w celu postawienia diagnozy w wyniku analizy fazy uruchomienia instancji.
 > 
 
@@ -201,6 +158,7 @@ Jeśli nie potrzebujesz już jednej z Twoich instancji, możesz w każdej chwili
 > Dane przechowywane na instancji zostaną usunięte.
 > Możesz również utworzyć kopię zapasową tej instancji, jeśli chcesz zachować dane i ponownie uruchomić tą samą instancję w późniejszym czasie.
 > 
+> Usunięcie instancji nie powoduje automatycznego usunięcia wszystkich powiązanych z nią opcji (storage, snapshot, backup, itp...). Upewnij się, że wszystkie inne opcje powiązane z instancją również zostały usunięte, dzięki czemu przestaniesz być fakturowany.
 
 Na rozwijanej liście odnoszącej się do instancji wybierz `Delete Instance`{.action}. 
 

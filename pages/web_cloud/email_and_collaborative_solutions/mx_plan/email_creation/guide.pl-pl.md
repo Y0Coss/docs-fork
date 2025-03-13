@@ -4,9 +4,6 @@ excerpt: 'Dowiedz się, jak utworzyć konto e-mail w ramach pakietu MX Plan'
 updated: 2024-06-13
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -16,7 +13,7 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
 
 ## Wymagania początkowe
 
-- Wykupienie usługi MX Plan Jest on dostępny w ramach: [pakietów hostingowych](/links/web/hosting), [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) zawartego w ofercie domeny (uprzednio aktywowanej) lub oferty MX Plan zamówionej oddzielnie.
+- Wykupienie usługi MX Plan Jest on dostępny w ramach: [pakietów hostingowych](/links/web/hosting), [Darmowy hosting 100M](/links/web/domains-free-hosting) zawartego w ofercie domeny (uprzednio aktywowanej) lub oferty MX Plan zamówionej oddzielnie.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 > [!primary]
@@ -30,7 +27,12 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
 
 W zależności od daty aktywacji usługi lub jeśli usługa została niedawno przeniesiona, możliwe, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, zidentyfikuj tą opcję.
 
-W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), część `Web Cloud`{.action}. Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+1. Kliknij zakładkę `Web Cloud`{.action}.
+1. Kliknij `E-maile`{.action}.
+1. Wybierz odpowiednią domenę.
+
+Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
@@ -79,7 +81,7 @@ Aby sprawdzić wiadomości e-mail za pomocą programu pocztowego, zapoznaj się 
 
 #### Usuń konto e-mail
 
-Od nowej wersji MXplan mówimy o *resecie konta*, kiedy musisz go usunąć.
+Od nowej wersji MX Plan mówimy o *resecie konta*, kiedy musisz go usunąć.
 
 > [!warning]
 >
@@ -210,4 +212,4 @@ Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

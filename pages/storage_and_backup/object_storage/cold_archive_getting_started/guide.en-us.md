@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Getting started with Cold Archive
 excerpt: This guide shows you how to manage your data with Cold Archive
-updated: 2024-06-21
+updated: 2024-11-29
 ---
 
 ## Objective
@@ -42,7 +42,7 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 
 > [!primary]
 >
-> - `Id` is a string used to identify the S3 Intelligent-Tiering configuration. Its value is arbitrary and up to you. It will be necessary for further PUT, GET and DELETE operations on the intelligent-tiering configuration.
+> - `Id` is a string used to identify the S3 **\*** Intelligent-Tiering configuration. Its value is arbitrary and up to you. It will be necessary for further PUT, GET and DELETE operations on the intelligent-tiering configuration.
 >
 > - `Status` and `Days` are mandatory but not used.
 >
@@ -162,6 +162,14 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net delete-ovh-archive <b
 
 After this request, the objects of the bucket are not deleted yet as the deletion is done asynchronously.<br>
 The operation will delete everything (on tapes and all objects if restored) and the bucket status will be in a "Deleting" status.<br>
+
+> [!primary]
+>
+> Although data deletion is done asynchronously, billing is stopped as soon as you submit the request!<br>
+> Deletion is done on a best effort basis and there is no committed duration.<br>
+> In the "Deleting" status, the bucket is locked and cannot be accessed.<br>
+>
+
 Once the deletion is completed:
 
 - The bucket status will be "Flushed".
@@ -215,6 +223,8 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api get-bucket-tagg
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

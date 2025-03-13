@@ -1,7 +1,7 @@
 ---
-title: "Activating email addresses included in your Web Hosting plan"
+title: "Web Hosting - Activating email addresses included"
 excerpt: "Find out how to activate the email addresses included in your Web Hosting plan"
-updated: 2024-07-17
+updated: 2024-12-12
 ---
 
 ## Objective
@@ -9,6 +9,8 @@ updated: 2024-07-17
 If you have ordered a Web Hosting plan without directly linking it to a domain name, the email solution included with your Web Hosting plan must be enabled manually. You can link it to the domain name of your choice.
 
 **Find out how to activate the email addresses included in your Web Hosting plan.**
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oqWovkSP85A?si=1rnqBvhVLdhr2rI5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Requirements
 
@@ -18,9 +20,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 > [!warning]
 >
-> If you want to enable the "email address(es) included with your web hosting plan" option for an external domain name (not registered with OVHcloud) **which you must be the administrator of**, you must create (at least) a DNS zone at OVHcloud for your external domain name. Refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create), if required. This will allow your domain name to appear in the list of available domain names when you enable the option.
->
-> Furthermore, if your domain name is already registered with OVHcloud, or if a DNS zone already exists for it in another [OVHcloud account](/links/manager) than your own, please read our documentation “[Managing your service contacts](/pages/account_and_service_management/account_information/managing_contacts)” to find out how to manage it.
+> If your domain name is already registered with OVHcloud, or if a DNS zone already exists for it in another [OVHcloud account](/links/manager) than your own, please read our documentation “[Managing your service contacts](/pages/account_and_service_management/account_information/managing_contacts)” to find out how to manage it.
 >
 > Finally, if your domain name is already linked to the "email address(es) included with your web hosting plan" option on another web hosting plan, you cannot link it to your own web hosting plan directly. Use this guide to check with the current web hosting manager.
 >
@@ -73,7 +73,15 @@ In the `Configuration` box, click the `...`{.action} button to the right of the 
 
 > [!warning]
 >
-> To confirm the deletion of the email solution linked to your Web Hosting plan, you will receive a confirmation link via email. You must click this link to start the delete operation.
+> To confirm the deletion of the email solution linked to your web hosting plan, you will be sent a validation link via email. You must click this link for the delete operation to be launched.
+
+#### Special case - Deletion of the email solution linked to your web hosting plan (in order to link it to another domain name)
+
+For security reasons, it may take several days to permanently delete an email solution after you click on the deletion validation link.
+
+If you would like to delete the email solution linked to your web hosting plan in order to link it to another domain name — and **only** in this specific case — you will need to confirm in writing your request to delete the solution as soon as possible. To do this, contact support by creating a support ticket from your [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help). The support ticket must **obligatorily** be created from the customer account (and the corresponding NIC handle) that administers the service to be deleted.
+
+Once the request has been processed, you can then link the email solution linked to your web hosting plan to another domain name.
 
 ## Go further
 

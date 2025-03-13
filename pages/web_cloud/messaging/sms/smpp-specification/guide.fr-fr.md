@@ -1,7 +1,7 @@
 ---
 title: Spécifications techniques du SMPP
 excerpt: 'Découvrez les spécifications techniques du SMPP'
-updated: 2024-02-27
+updated: 2025-03-05
 ---
 
 ## Objectif
@@ -258,6 +258,7 @@ Notre service essaie d'envoyer les `deliver_sm` au ESME pendant 7 jours maximum.
 |52  | Missing Template (e.g. US destination requires approved templates) |
 |53  | Blacklisted (a STOP response sent by the recipient to block the sender) |
 |54  | Forbidden destination |
+|55  | Sender Temporarily Ratelimited (maximum sms sent exceeded during a short period) |
 |100 | Invalid Destination Numbering Plan |
 |101 | Invalid Content |
 |102 | Invalid GSM7 Coding (e.g. error with packed/unpacked GSM7) |

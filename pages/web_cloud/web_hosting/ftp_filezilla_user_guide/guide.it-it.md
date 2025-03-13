@@ -4,11 +4,6 @@ excerpt: "Consulta qui una guida all'utilizzo del software Filezilla sul tuo hos
 updated: 2022-09-13
 ---
 
-> [!primary]
->
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 FileZilla è un software disponibile gratuitamente su diversi sistemi operativi (Windows, macOS, ecc...).
@@ -56,7 +51,7 @@ Dalla barra di connessione rapida, completa le informazioni seguendo la tabella:
 |Password|Password associata all'utente.|
 |Porta|In genere viene completato automaticamente dal software. Altrimenti, inserisci:<br><br>- la porta "21" per una connessione FTP;<br>- la porta "22" per una connessione SFTP (se attiva). Per maggiori informazioni sul protocollo SFTP, consulta [la sezione dedicata di questo tutorial](#sftp).|
 
-Se non ne sei in possesso, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione "Web Cloud" e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. A questo punto visualizzi le informazioni relative al tuo spazio di storage:
+Se non ne sei in possesso, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Web Cloud`{.action} e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. A questo punto visualizzi le informazioni relative al tuo spazio di storage:
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
@@ -84,7 +79,7 @@ Lo **SFTP** (per **S**ecure **F**ile **T**ransfer **P**rotocol) è un protocollo
 
 Per prima cosa verifica che l'SFTP sia attivo per il tuo **Login FTP**.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione "Web Cloud" e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Web Cloud`{.action} e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}.
 
 Verifica che il **protocollo SFTP** sia attivo nella tabella in basso.
 

@@ -1,7 +1,7 @@
 ---
 title: How to create a Public Cloud instance and connect to it
 excerpt: Find out how to configure Public Cloud instances in the OVHcloud Control Panel and the first steps with your instances
-updated: 2024-08-21
+updated: 2024-10-07
 ---
 
 <style>
@@ -25,12 +25,18 @@ You can then go further with your Public Cloud project according to your needs.
 
 **This guide explains how to get started with a Public Cloud instance.**
 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/s-_nstgu8oc?si=KWVlSCO3oAPMhSZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
+> [!success]
+> Take advantage of reduced prices by committing to a period of 1 to 36 months on your Public Cloud resources. More information on our [Savings Plans](/links/public-cloud/savings-plan) page.
+
 ## Instructions
+
 
 > [!primary]
 >
@@ -86,12 +92,12 @@ The [SSH protocol](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) e
 
 You have 2 options to create and manage your SSH keys:
 
-- Command line interface of your OS (basic **Open SSH** client)
-- Additional software (compatible with the **Open SSH** protocol) with a command line or graphical interface
+- Command line interface of your OS (basic **OpenSSH** client)
+- Additional software (compatible with the **OpenSSH** protocol) with a command line or graphical interface
 
-Most contemporary desktop operating systems natively include the **Open SSH** client which can be accessed through the system's command line application (`cmd`, `Powershell`, `Terminal`, etc.). If you are not familiar with using SSH keys as an authentication method, you can use the instructions in [this guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key) to get started and create your key pair.
+Most contemporary desktop operating systems natively include the **OpenSSH** client which can be accessed through the system's command line application (`cmd`, `Powershell`, `Terminal`, etc.). If you are not familiar with using SSH keys as an authentication method, you can use the instructions in [this guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) to get started and create your key pair.
 
-If you use an alternative software, refer to its user documentation. Instructions for the open-source solution `PuTTY` are available in [this guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+If you use an alternative software, refer to its user documentation. A usage example for the open-source solution `PuTTY` is available in our guide: [How to use PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 
 
 <a name="import-ssh"></a>
@@ -376,7 +382,7 @@ Once you have finished your instance configuration, click on the button `Create 
 
 ### Step 5: Connect to the instance
 
-The instructions in this part concern remote connections by means of the **Open SSH** and **RDP** protocols through a public network (internet).
+The instructions in this part concern remote connections by means of the **OpenSSH** and **RDP** protocols through a public network (internet).
 
 Note that we provide alternative ways of access (mainly used for troubleshoooting) which are only available via your OVHcloud Control Panel:
 
@@ -421,7 +427,7 @@ If your [SSH key pair is set up correctly](#create-ssh), you can now connect to 
 
 > [!primary]
 >
-> If you receive error messages regarding your **SSH keys**, verify that your local device has a properly configured private SSH key using the information in [this guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).</br>
+> If you receive error messages regarding your **SSH keys**, verify that your local device has a properly configured private SSH key using the information in [this guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
 > If you still encounter issues, you can replace the key pair with the help of [this guide](/pages/public_cloud/compute/replacing_lost_ssh_key). 
 >
 > If you have created an instance without an SSH key, via the [OVHcloud API](/pages/manage_and_operate/api/first-steps) or the [OpenStack Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon), you can only add an SSH key to your instance via [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) by following the instructions set out in [this guide](/pages/public_cloud/compute/replacing_lost_ssh_key).
@@ -439,9 +445,9 @@ Example:
 ssh ubuntu@203.0.113.101
 ```
 
-[Depending on your setup](#create-ssh), you will have to enter a passphrase that protects your private key or specify the path to your key file. Consult our [SSH keys guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys) for detailed information on this topic.
+[Depending on your setup](#create-ssh), you will have to enter a passphrase that protects your private key or specify the path to your key file. Consult our [SSH keys guide](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) for detailed information on this topic.
 
-If you use an alternative SSH client software, refer to its user documentation. A usage example for the open-source solution `PuTTY` is available in [this guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+If you use an alternative SSH client software, refer to its user documentation. A usage example for the open-source solution `PuTTY` is available in our guide: [How to use PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 
 Continue with [Step 6 below](#manage-access).
 

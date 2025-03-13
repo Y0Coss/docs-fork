@@ -4,10 +4,6 @@ excerpt: 'Cómo cambiar la contraseña de administrador en un servidor dedicado 
 updated: 2024-06-26
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
-
 ## Objetivo
 
 Al instalar o reinstalar un sistema operativo Windows, recibirá una contraseña para acceder como administrador. Le recomendamos encarecidamente que cambie esta contraseña, tal y como se explica en la guía [Proteger un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server). Si ha perdido la contraseña de administrador, deberá restaurarla en modo de rescate.

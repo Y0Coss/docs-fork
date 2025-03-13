@@ -4,10 +4,6 @@ excerpt: 'Cómo crear y configurar un filtro en una dirección de correo electr�
 updated: 2024-03-26
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
-
 ## Objetivo
 
 Un filtro de correo permite aplicar diferentes tratamientos a los mensajes que reciba, según los criterios que usted decida.
@@ -21,8 +17,8 @@ Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 
 ## Requisitos
 
-- Disponer de una solución de correo MX Plan (disponible a través de: un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external}, el [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} incluido con un dominio o la solución MX Plan contratada por separado.
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Disponer de una solución de correo MX Plan (disponible a través de: un [plan de hosting](/links/web/hosting), el [Alojamiento gratuito 100M](/links/web/domains-free-hosting) incluido con un dominio o la solución MX Plan contratada por separado.
+- Tener acceso al [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -36,11 +32,11 @@ Versión histórica de la solución MX Plan|Nueva versión de la solución MX Pl
 
 ## En la práctica <a name="oldmxplan"></a>
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`.
-
-Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
-
-En la pestaña `Correo electrónico`{.action} de su servicio MXplan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+1. Haga clic en la pestaña `Web Cloud`{.action}.
+1. Haga clic en `Correo electrónico`{.action}.
+1. Seleccione el dominio.
+1. En la pestaña `Correo electrónico`{.action} de su servicio MX Plan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
 
 ![correo electrónico](images/img_3239.png){.thumbnail}
 
@@ -149,4 +145,4 @@ Si el asunto del mensaje contiene la palabra "money" **y el** remitente del mens
 
 [Reglas de la bandeja de entrada desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

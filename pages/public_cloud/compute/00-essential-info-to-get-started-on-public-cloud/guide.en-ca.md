@@ -18,7 +18,7 @@ If you are already familiar with these concepts, you can continue discovering th
 
 - [Open an OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - [Create your first Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)
-- [Familiarise yourself with the Public Cloud interface](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)
+- [How to use the Public Cloud interface](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)
 - [Create your first instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - [Manage quotas](/pages/public_cloud/compute/increasing_public_cloud_quota)
 
@@ -72,7 +72,7 @@ There are several ways to manage Public Cloud resources. Whether you are an adva
 
 - To discover the products, the OVHcloud Control Panel helps you create resources by leading you to choose the performance of the product, its location, the customisation you want, or other parameters such as its billing method.
 
-- To automate deployments and industrialise your architectures, you can also use market tools by logging directly in to standard APIs like the S3 API, OpenStack APIs or even Kubernetes.
+- To automate deployments and industrialise your architectures, you can also use market tools by logging directly in to standard APIs like the Amazon S3 API, OpenStack APIs or even Kubernetes.
 
 ### Starting: handling
 
@@ -110,7 +110,7 @@ You may have to deal with the quota issue.
 You may need to manage several users who will be involved in your project.
 <br>You then have two options:
 
-- If you would like to use the OpenStack or S3 APIs, or the Horizon interface, you will need to [create users](/pages/public_cloud/compute/create_and_delete_a_user) to do this. Users may have limited permissions to secure the action perimeters.
+- If you would like to use the OpenStack or Amazon S3 APIs, or the Horizon interface, you will need to [create users](/pages/public_cloud/compute/create_and_delete_a_user) to do this. Users may have limited permissions to secure the action perimeters.
 - If you do not need access to the APIs or Horizon, you can [link another OVHcloud](/pages/public_cloud/compute/delegate_projects) customer account as an add-on to your project.
 
 ## Go further <a name="gofurther"></a>
@@ -122,14 +122,13 @@ Here are some general resources that will help you get started with the Public C
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Frequently asked questions about Public Cloud.|
 |[Glossary](/pages/public_cloud/compute/introduction_about_instances)|The concepts and definitions you will need to move forward.|
 |[Availability of services by location](https://www.ovhcloud.com/fr/public-cloud/regions-availability/)|Service availability tables across different locations.|
-|[Image Changelog](/pages/public_cloud/compute/image_changelog)|Changes to publicly available system images.|
 
 Here are some guides to help you with the first steps:
 
 |Documentation|Details|
 |---|---|
 |[Create your first instance](/pages/public_cloud/compute/public-cloud-first-steps)|First practical guide to starting a cloud server from the OVHcloud Control Panel.|
-|[Using an SSH key](/pages/public_cloud/compute/public-cloud-first-steps#step-2-storing-public-keys-in-the-ovhcloud-control-panel_1)| To log in to a Linux instance, you will need to log in via an SSH connection. This guide details the procedure.|
+|[Using an SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci)| To log in to a Linux instance, you will need to log in via an SSH connection. This guide details the procedure.|
 |[Private Network Configuration](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)|At OVHcloud, private networks are powered by vRack technology. This guide will help you get started.|
 |[Attach an additional disk to an instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)|This guide will help you add additional storage to your first instance.|
 |[Accessing the Horizon interface](/pages/public_cloud/compute/introducing_horizon)|The Horizon interface of OpenStack allows some advanced actions, here is how to connect to it.|

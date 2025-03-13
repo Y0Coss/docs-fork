@@ -1,7 +1,7 @@
 ---
-title: "MX Plan - Utiliser le webmail Zimbra"
+title: "Utiliser le webmail Zimbra"
 excerpt: "Découvrez l'interface du webmail Zimbra pour vos adresses e-mail MX Plan OVHcloud"
-updated: 2024-08-26
+updated: 2025-02-12
 ---
 
 <style>
@@ -9,16 +9,6 @@ updated: 2024-08-26
   max-width:400px !important;
 }
 </style>
-
-> [!primary]
->
-> **Important**
->
-> Le webmail Zimbra pour MX Plan est un produit en cours de déploiement.
->
-> Actuellement, il est uniquement disponible dans le cadre de migrations liées à l'évolution de notre offre MX Plan. Cette migration est automatique, un e-mail vous sera envoyé par nos équipes lorsque vous serez concerné par la migration.
->
-> Pour plus d'informations, consultez notre [FAQ sur la solution Zimbra OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra).
 
 ## Objectif
 
@@ -29,7 +19,7 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud **MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/), ou commandée séparément comme solution autonome.
+- Disposer d'une solution e-mail OVHcloud **MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting), incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting), ou commandée séparément comme solution autonome.
 - Disposer des informations de connexion à l’adresse e-mail MX Plan que vous souhaitez consulter. Pour plus d'informations, consultez notre guide « [Premiers pas avec l'offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) ».
 
 ## En pratique
@@ -62,7 +52,7 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
 
 ### Se connecter au webmail Zimbra <a name="login"></a>
 
-Rendez-vous sur la page <https://www.ovh.com/fr/mail/>. Saisissez votre adresse e-mail et le mot de passe puis cliquez sur `Connexion`{.action}.
+Rendez-vous sur la page [Webmail](/links/web/email). Saisissez votre adresse e-mail et le mot de passe puis cliquez sur `Connexion`{.action}.
 
 ![Zimbra - connexion](images/ovhcloud-login-webmail.png){.thumbnail}
 
@@ -598,4 +588,4 @@ Par défaut, l'option `Activer la réponse automatique pendant ces dates (inclus
 
 [Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

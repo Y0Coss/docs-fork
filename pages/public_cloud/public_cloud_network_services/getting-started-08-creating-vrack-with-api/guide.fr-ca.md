@@ -482,13 +482,13 @@ Une fois l'appel effectué, si toutes les informations sont correctement renseig
 ><br>À votre charge de l'utiliser en configurant votre interface via le DHCP ou en utilisant vos propres IP au travers d'une configuration en IP statique.
 >
 
-##### **Suppression d'une interface de votre instance**
+##### **Détacher une interface de votre instance**
 
 > [!warning]
-> La suppression d'une interface est définitive.
+> Détacher une interface réseau entraîne sa suppression immédiate.
 >
->Dans le cas où vous supprimeriez l'interface « Ext-Net » (IP publique), ceyye adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
-><br>Cette action n'est à effectuer que si vous souhaitez isoler votre serveur dans le vRack (interface « Ext-Net ») ou la sortir d'un vLan.
+> Cependant, il est important de noter que si vous detacher l'interface « Ext-Net » (IP publique), cette adresse serait relâchée et remise en circulation. Vous ne pourriez donc pas vous la réattribuer.
+><br>Cette action n'est à effectuer que si vous souhaitez isoler votre serveur dans le vRack (réseau privée) ou dans le cas contraire la sortir d'un ou plusieurs VLAN.
 >
 
 Une fois l'ensemble des informations nécessaires récupéré, vous pouvez utiliser l'appel suivant pour supprimer une interface :
@@ -514,4 +514,4 @@ Vous devrez renseigner a minima les champs suivants :
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

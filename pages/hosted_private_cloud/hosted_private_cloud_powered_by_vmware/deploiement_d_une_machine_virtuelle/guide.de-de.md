@@ -27,7 +27,7 @@ Klicken Sie mit der rechten Maustaste auf den Cluster Ihrer Wahl und dann auf `N
 
 Sie haben mehrere Optionen, um eine virtuelle Maschine zu erstellen:
 
-- per ISO-Datei, verfügbar in Ihrem Datastore (um die Datei zu importieren, befolgen Sie die [Anleitung zur Verbindung via SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion)
+- per ISO-Datei, verfügbar in Ihrem Datastore. Sie können [ein ISO in einen Datastore hochladen](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
 - über ein eigenes oder ein [von OVHcloud bereitgestelltes](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template) Template
 - durch Klonen einer bereits vorhandenen virtuellen Maschine (achten Sie darauf, mögliche Konflikte in der IP-Adressierung zu vermeiden)
 - durch Klonen einer virtuellen Maschine als Template, für ein schnelleres Deployment der nächsten virtuellen Maschinen

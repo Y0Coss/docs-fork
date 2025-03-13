@@ -1,12 +1,8 @@
 ---
 title: Buenas prácticas para la gestión de sus servicios y de su cuenta de OVHcloud
 excerpt: Aquí encontrará los elementos imprescindibles para la correcta gestión de sus facturas, pedidos, formas de pago y cuenta de cliente.
-updated: 2022-05-02
+updated: 2024-12-23
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 ## Objetivo
 
@@ -52,7 +48,7 @@ Asegúrese de que su dirección de correo electrónico esté siempre **actualiza
 También puede acceder a los mensajes de correo enviados por OVHcloud desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).<br>
 Haga clic en su nombre en la esquina superior derecha de su pantalla y, seguidamente, en el menú de la derecha, haga clic en `Emails de servicio`{.action}.
 
-![service_emails](images/service_emails.png){.thumbnail}
+![service_emails](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
 
 ### Active la renovación automática
 
@@ -83,10 +79,10 @@ Le informaremos de las etapas de la entrega y sabrá si es necesario realizar al
 
 Si quiere dejar de utilizar uno de sus servicios, puede darlo de baja, pasar la renovación a modo manual o eliminarlo inmediatamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
-Haga clic en su nombre en la esquina superior derecha de su pantalla y, seguidamente, en `Productos y servicios`{.action}. En el lado derecho de su pantalla, haga clic en el botón `...`{.action} correspondiente al servicio en el que quiera realizar la acción y seleccione uno de los siguientes botones:
+Haga clic en su nombre en la esquina superior derecha de su pantalla y, seguidamente, en `Mis soluciones y servicios`{.action}. En el lado derecho de su pantalla, haga clic en el botón `...`{.action} correspondiente al servicio en el que quiera realizar la acción y seleccione uno de los siguientes botones:
 
 - `Configurar la renovación`{.action}: en la siguiente pantalla, podrá pasar el `Modo de renovación` del servicio a `Manual`. Haga clic en `Siguiente`{.action} y `Confirmar`{.action}. Antes de la fecha de expiración del servicio, recibirá varias notificaciones por correo electrónico. Si no renueva el servicio, se eliminará **definitivamente**.
-- `Dar de baja`{.action}: en la siguiente pantalla, indique los motivos de la solicitud de baja y haga clic en `Aceptar`{.action}. La operación se eliminará **definitivamente** en la fecha de expiración del servicio.
+- `Dar de baja mi servicio`{.action}: en la siguiente pantalla, indique los motivos de la solicitud de baja y haga clic en `Aceptar`{.action}. La operación se eliminará **definitivamente** en la fecha de expiración del servicio.
 - `Eliminar inmediatamente`{.action}: en la siguiente pantalla, haga clic en `Aceptar`{.action}. Recibirá un mensaje de correo electrónico de confirmación. Tras la validación, su servicio se eliminará **de forma inmediata y definitiva**.
 
 Para más información sobre la baja de sus servicios, consulte la guía [Cómo dar de baja sus servicios de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
@@ -102,4 +98,4 @@ A continuación, abra un [solicitud de asistencia](https://ca.ovh.com/manager/#/
 
 [Gestionar las facturas de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

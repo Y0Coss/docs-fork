@@ -1,12 +1,8 @@
 ---
 title: 'Activación y configuración del Edge Network Firewall'
 excerpt: 'Descubra cómo configurar el Edge Network Firewall para sus servicios'
-updated: 2024-01-05
+updated: 2025-01-24
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
@@ -18,7 +14,7 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 > [!primary]
 >
-> Para más información sobre la solución anti-DDoS de OVHcloud, consulte la página <https://www.ovhcloud.com/es-es/security/anti-ddos/>.
+> Puede encontrar más información sobre nuestra solución anti-DDoS en [nuestro sitio web](/links/security/antiddos).
 > 
 
 | ![global-schema](images/global_schema.png) |
@@ -35,11 +31,18 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 >
 > Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
 
+> [!warning]
+> Edge Firewall Network no admite el protocolo QUIC.
+
 ## Procedimiento
 
 El Edge Network Firewall reduce la exposición a los ataques DDoS de red, ya que permite a los usuarios copiar algunas de las reglas del firewall del servidor en el perímetro de la red de OVHcloud. Esto bloquea los ataques entrantes lo más cerca posible de su origen, reduciendo el riesgo de saturación de los recursos del servidor o de las conexiones al rack en caso de ataques importantes.
 
 ### Activar el Edge Network Firewall
+
+> [!primary]
+>
+> Hasta la fecha, esta función sólo está disponible para direcciones IPv4.
 
 > [!primary]
 >

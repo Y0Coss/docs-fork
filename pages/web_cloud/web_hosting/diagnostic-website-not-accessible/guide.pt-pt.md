@@ -4,10 +4,6 @@ excerpt: "Diagnóstico das causas da inacessibilidade do seu site"
 updated: 2022-08-02
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 Vários feedbacks de erro podem aparecer no seu navegador em caso de inacessibilidade do seu site. Os exemplos abaixo indicam uma configuração errada dos seus [servidores DNS](/pages/web_cloud/domains/dns_server_edit), a sua [zona DNS](/pages/web_cloud/domains/dns_zone_edit) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais?](#go-further)):
@@ -46,9 +42,9 @@ Vários feedbacks de erro podem aparecer no seu navegador em caso de inacessibil
 > Assim, recomendamos vivamente que ative a [renovação automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#instrucoes) em todas as subscrições da OVHcloud.
 >
 
-Para verificar a validade da assinatura relativa ao seu domínio, clique no seu nome (no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager)) no menu contextual e, a seguir, em `Produtos e serviços`{.action}.
+Para verificar a validade da assinatura relativa ao seu domínio, clique no seu nome (no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager)) no menu contextual e, a seguir, em `As minhas ofertas e serviços`{.action}.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-product-and-services.png){.thumbnail}|
+![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-my-solutions-and-services.png){.thumbnail}|
 
 Renove o domínio se necessário através do botão `...`{.action} à direita do ecrã e `Renovar o serviço`{.action}.
 

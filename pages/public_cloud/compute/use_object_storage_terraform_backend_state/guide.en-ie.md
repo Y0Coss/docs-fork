@@ -1,7 +1,7 @@
 ---
 title: 'Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state'
 excerpt: 'Find out how to use an OVHcloud High Performance (S3) Object Storage as a Terraform Backend to store your Terraform state'
-updated: 2023-12-06
+updated: 2024-10-29
 ---
 
 ## Objective
@@ -78,7 +78,8 @@ $ aws s3 ls
 Create a `backend.tf` file with the following content:
 
 Before Terraform version 1.6.0:
-```yaml
+
+```hcl
 terraform {
     backend "s3" {
       bucket = "terraform-state-hp"
@@ -89,12 +90,19 @@ terraform {
       skip_credentials_validation = true
       skip_region_validation      = true
       skip_s3_checksum            = true
+
+      # The following fields should be added if your Object Storage user credentials are not
+      # already configured in files ~/.aws/credentials, ~/.aws/config or in
+      # environment variables.
+      access_key                  = "s3 user access key"
+      secret_key                  = "s3 user secret key"
     }
 }
 ```
 
 After Terraform version 1.6.0:
-```yaml
+
+```hcl
 terraform {
     backend "s3" {
       bucket = "terraform-state-hp"
@@ -108,11 +116,17 @@ terraform {
       skip_region_validation      = true
       skip_requesting_account_id  = true
       skip_s3_checksum            = true
+
+      # The following fields should be added if your Object Storage user credentials are not
+      # already configured in files ~/.aws/credentials, ~/.aws/config or in
+      # environment variables.
+      access_key                  = "s3 user access key"
+      secret_key                  = "s3 user secret key"
     }
 }
 ```
 
-In this file you define a [S3 Terraform backend](https://www.terraform.io/language/settings/backends/s3) in the `gra` region. Do not hesitate to change this parameter if you created an Object Storage container in another region.
+In this file you define an [Object Storage Terraform backend](https://www.terraform.io/language/settings/backends/s3) in the `gra` region. Do not hesitate to change this parameter if you created an Object Storage container in another region.
 
 ### Terraform Init
 

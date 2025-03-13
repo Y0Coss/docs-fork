@@ -27,10 +27,6 @@ updated: 2021-11-19
  }
 </style>
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 Un intestazione email ha il compito di tracciare il percorso seguito da questa email sulla rete, dal mittente al destinatario.<br>
@@ -45,7 +41,7 @@ Per recuperare un file `.eml`, consulta la sezione [Webmail](#webmail).
 
 ## Prerequisiti
 
-- Disporre di un indirizzo email su una delle nostre [soluzioni OVHcloud](https://www.ovhcloud.com/it/emails/) o esterna
+- Disporre di un indirizzo email su una delle nostre [soluzioni OVHcloud](/links/web/emails) o esterna
 - Avere accesso all'indirizzo email tramite la Webmail o un client di posta
 
 ## Procedura
@@ -57,11 +53,11 @@ Di seguito è riportato un elenco non esaustivo degli elementi che possono esser
 
 - Il campo `Received` è presente nell'intestazione ad ogni passaggio dell'email su un server di invio (SMTP). In genere è possibile trovare l'hostname del server con l'indirizzo IP e la data. I record `Received` sono classificati dal passaggio più recente al passaggio più antico su un server:
 <pre class="bgwhite"><code>
-Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
+Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
 	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-  *L'email è stata inviata dal server mxplan7.mail.ovh.net al server mo3005.mail-out.ovh.net il 30 giugno 2021 alle 13:12:40 (fuso orario UTC)*
+  *L'email è stata inviata dal server MX Plan7.mail.ovh.net al server mo3005.mail-out.ovh.net il 30 giugno 2021 alle 13:12:40 (fuso orario UTC)*
 
 - Il campo `Return-Path` corrisponde all'indirizzo di ritorno quando l'invio del messaggio non è andato a buon fine. l'indirizzo di ritorno è generalmente quello che ha effettuato l'invio. 
 <pre class="bgwhite"><code>
@@ -164,7 +160,7 @@ Seleziona l'email di cui vuoi visualizzare l'intestazione. Clicca **sulla frecci
 
 Guarda anche il video tutorial:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Recupera il file.eml**
 
@@ -192,4 +188,4 @@ Per visualizzare l'intestazione nell'interfaccia Web &#60;Outlook.com&#62;, cons
 
 [FAQ E-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

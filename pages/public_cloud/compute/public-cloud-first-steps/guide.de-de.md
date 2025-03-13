@@ -1,7 +1,7 @@
 ---
 title: "Eine Public Cloud Instanz erstellen und darauf zugreifen"
 excerpt: "Erfahren Sie hier, wie Sie Public Cloud Instanzen in Ihrem OVHcloud Kundencenter konfigurieren, sowie die ersten Schritte mit Instanzen"
-updated: 2024-08-21
+updated: 2024-10-07
 ---
 
 <style>
@@ -29,10 +29,15 @@ Danach können Sie Ihr Public Cloud Projekt weiter spezialisieren, je nach Ihren
 
 **Diese Anleitung erklärt die ersten Schritte mit einer Public Cloud Instanz.**
 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/s-_nstgu8oc?si=KWVlSCO3oAPMhSZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+> [!success]
+> Profitieren Sie von reduzierten Preisen, indem Sie sich für einen Zeitraum von 1 bis 36 Monaten für Ihre Public Cloud-Ressourcen verpflichten. Weitere Informationen finden Sie auf unserer Seite zu [Savings Plans](/links/public-cloud/savings-plan).
 
 ## In der praktischen Anwendung
 
@@ -89,12 +94,12 @@ Das [SSH Protokoll](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) 
 
 Sie haben 2 Optionen, um Ihre SSH-Schlüssel zu erstellen und zu verwalten:
 
-- Das Kommandozeileninterface Ihres Betriebssystems (einfacher **Open SSH** Client).
-- Zusätzliche Software (kompatibel mit **Open SSH**) mit Befehlszeilen- oder grafischer Oberfläche.
+- Das Kommandozeileninterface Ihres Betriebssystems (einfacher **OpenSSH** Client).
+- Zusätzliche Software (kompatibel mit **OpenSSH**) mit Befehlszeilen- oder grafischer Oberfläche.
 
-Die meisten zeitgemäßen Desktop-Betriebssysteme enthalten nativ einen **Open SSH** Client, auf den über die Befehlszeilenanwendung des Systems zugegriffen werden kann (`cmd`, `Powershell`, `Terminal`, etc.). Wenn Sie nicht mit der Verwendung von SSH-Schlüsseln als Authentifizierungsmethode vertraut sind, können Sie die Anweisungen in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key) verwenden, um Ihr Schlüsselpaar zu erstellen.
+Die meisten zeitgemäßen Desktop-Betriebssysteme enthalten nativ einen **OpenSSH** Client, auf den über die Befehlszeilenanwendung des Systems zugegriffen werden kann (`cmd`, `Powershell`, `Terminal`, etc.). Wenn Sie nicht mit der Verwendung von SSH-Schlüsseln als Authentifizierungsmethode vertraut sind, können Sie die Anweisungen in [dieser Anleitung](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) verwenden, um Ihr Schlüsselpaar zu erstellen.
 
-Wenn Sie eine andere Software verwenden, folgen Sie der zugehörigen Benutzerdokumentation. Anweisungen für die Open-Source-Lösung `PuTTY` finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Wenn Sie eine andere Software verwenden, folgen Sie der zugehörigen Benutzerdokumentation. Anweisungen für die Open-Source-Lösung `PuTTY` finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 
 <a name="import-ssh"></a>
 
@@ -377,7 +382,7 @@ Wenn die Konfiguration Ihrer Instanz abgeschlossen ist, klicken Sie auf den Butt
 
 ### Schritt 5: Verbindung mit der Instanz herstellen
 
-Die Anweisungen in diesem Abschnitt beziehen sich auf Remoteverbindungen mittels **Open SSH** und **RDP** über ein öffentliches Netzwerk (Internet).
+Die Anweisungen in diesem Abschnitt beziehen sich auf Remoteverbindungen mittels **OpenSSH** und **RDP** über ein öffentliches Netzwerk (Internet).
 
 Beachten Sie, dass wir alternative Zugriffsmöglichkeiten (hauptsächlich zur Fehlerbehebung) anbieten, die nur über Ihr OVHcloud Kundencenter verfügbar sind:
 
@@ -422,7 +427,7 @@ Wenn Ihr [SSH-Schlüsselpaar korrekt konfiguriert](#create-ssh) ist, können Sie
 
 > [!primary]
 >
-> Wenn Sie Fehlermeldungen bezüglich Ihrer **SSH-Schlüssel** erhalten, überprüfen Sie mithilfe der Informationen in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key), ob Ihr lokales Gerät über einen korrekt konfigurierten privaten SSH-Schlüssel verfügt.  
+> Wenn Sie Fehlermeldungen bezüglich Ihrer **SSH-Schlüssel** erhalten, überprüfen Sie mithilfe der Informationen in [dieser Anleitung](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key), ob Ihr lokales Gerät über einen korrekt konfigurierten privaten SSH-Schlüssel verfügt.  
 > Wenn Sie weiterhin auf Fehler stoßen, können Sie das Schlüsselpaar mithilfe [dieser Anleitung](/pages/public_cloud/compute/replacing_lost_ssh_key) ersetzen.
 >
 > Wenn Sie eine Instanz ohne SSH-Schlüssel über die [OVHcloud API](/pages/manage_and_operate/api/first-steps) oder das [OpenStack Horizon Interface](/pages/public_cloud/compute/create_instance_in_horizon) erstellt haben, können Sie Ihrer Instanz nur über den [Rescue-Modus](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) einen SSH-Schlüssel hinzufügen, indem Sie den Anweisungen in [dieser Anleitung](/pages/public_cloud/compute/replacing_lost_ssh_key) folgen.
@@ -440,9 +445,9 @@ Beispiel:
 ssh ubuntu@203.0.113.101
 ```
 
-[Abhängig von Ihrer Konfiguration](#create-ssh) müssen Sie eine Passphrase eingeben, die Ihren privaten Schlüssel schützt, oder den Pfad zu Ihrer Schlüsseldatei angeben. Weitere Informationen finden Sie in unserer [Anleitung zu SSH-Schlüsseln](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys).
+[Abhängig von Ihrer Konfiguration](#create-ssh) müssen Sie eine Passphrase eingeben, die Ihren privaten Schlüssel schützt, oder den Pfad zu Ihrer Schlüsseldatei angeben. Weitere Informationen finden Sie in unserer [Anleitung zu SSH-Schlüsseln](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys).
 
-Wenn Sie eine andere SSH-Client-Software verwenden, folgen Sie deren Benutzerdokumentation. Ein Beispiel für die Verwendung der Open-Source-Lösung `PuTTY` finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Wenn Sie eine andere SSH-Client-Software verwenden, folgen Sie deren Benutzerdokumentation. Ein Beispiel für die Verwendung der Open-Source-Lösung `PuTTY` finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 
 Fahren Sie mit [Schritt 6](#manage-access) dieser Anleitung fort.
 

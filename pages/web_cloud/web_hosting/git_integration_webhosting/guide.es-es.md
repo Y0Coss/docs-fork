@@ -1,12 +1,8 @@
 ---
 title: "Configurar y utilizar Git con un alojamiento web de OVHcloud"
 excerpt: "Descubra cómo configurar y utilizar Git con un alojamiento web en el área de cliente de OVHcloud"
-updated: 2024-08-22
+updated: 2025-01-31
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 ## Objetivo
 
@@ -19,6 +15,10 @@ En el panorama digital actual, las sociedades son cada vez más dinámicas e inn
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager), en la sección Web Cloud.
 - Tener una cuenta [GitHub](https://github.com/){.external} y estar conectado a ella.
+
+> [!primary]
+>
+> A fecha de hoy, solo la plataforma GitHub es compatible con los servicios de alojamiento web de OVHcloud.
 
 ## Procedimiento
 
@@ -49,33 +49,12 @@ Aparecerá el formulario de asociación de Git. Es necesario configurar varios e
 - Llave SSH
 - Depósito de GitHub
 - Rama del repositorio de GitHub
+- Llave SSH (para un repositorio privado GitHub)
 - Webhook (opcional)
-
-#### Asociar una llave SSH a GitHub <a name="linkSSHKey"></a>
-
-> [!primary]
->
-> La generación de una llave SSH es un paso fundamental, ya que establece una conexión segura y cifrada entre el directorio de su sitio web y el repositorio de GitHub. Esta clave garantiza que las transferencias de datos y los cambios de código se realizan de forma segura y autenticada, evitando el acceso no autorizado y garantizando la integridad del código.
->
-
-Copie y guarde la llave SSH en su cuenta de GitHub. Esto permite establecer una conexión segura sin necesidad de introducir una contraseña en cada operación Git que deba realizar.
-
-- Inicie sesión en su cuenta de GitHub.
-- Haga clic en su imagen de perfil en la esquina superior derecha y luego en `Settings`{.action}.
-- En la nueva página, haga clic en `SSH and GPG keys`{.action} en la columna izquierda.
-- Seleccione `New SSH key`{.action} o `Add SSH key`{.action}.
-
-Aparecerá el formulario para añadir una nueva llave SSH:
-
-- **Title** : añada una descripción para su llave SSH. Por ejemplo, puede denominar esta llave "OVHcloud".
-- **Type of key**: deje el valor por defecto `authentication key`{.action}
-- **Key** : pegue su llave SSH.
-
-Para validar la información, haga clic en `Add SSH key`{.action}. Si se le solicita, confirme el acceso a su cuenta en GitHub.
 
 #### Establecer el repositorio de GitHub
 
-Vuelva al formulario de asociación de Git en el área de cliente de OVHcloud. Debe introducir la dirección de su repositorio de GitHub. Si aún no tiene un repositorio de GitHub para su proyecto, cree uno.
+Introduzca la dirección de su repositorio de GitHub. Si aún no tiene un repositorio de GitHub para su proyecto, cree uno.
 
 Para crear un nuevo repositorio:
 
@@ -92,7 +71,12 @@ Introduzca un nombre para el depósito e introduzca la información solicitada.
 
 Haga clic en `Create Repository`{.action}.
 
-Copie la dirección de su repositorio de GitHub. Debe tener el formato `https://github.com/<username>/<repository_name.git>`. Vuelva al formulario de asociación de Git y pegue la dirección de su repositorio de GitHub en el campo `Repositorio`{.action}. Si el formato de la dirección no es correcto, aparecerá el siguiente mensaje de error:
+Copie la dirección de su repositorio de GitHub. Debe tener el siguiente formato:
+
+- `https://github.com/<username>/<repository_name.git>` para un depósito público.
+- `git@github.com:<username>/<repository_name.git>` para un depósito privado.
+
+Vuelva al formulario de asociación de Git y pegue la dirección de su repositorio de GitHub en el campo `Repositorio`. Si el formato de la dirección no es correcto, aparecerá el siguiente mensaje de error:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-repository-name.png){.thumbnail}
 
@@ -106,6 +90,34 @@ Ahora defina la rama de su repositorio de GitHub. La rama predeterminada es `mai
 - Indique el nombre de la nueva rama y confirme haciendo clic en `Create new branch`{.action}.
 
 Vuelva al formulario de asociación de Git en el área de cliente de OVHcloud e introduzca el nombre de la nueva rama que acaba de crear.
+
+#### Asociar una llave SSH a GitHub (solo para los repositorios privados de GitHub) <a name="linkSSHKey"></a>
+
+> [!primary]
+>
+> La generación de una llave SSH es un paso fundamental, ya que establece una conexión segura y cifrada entre el directorio de su sitio web y el repositorio de GitHub. Esta clave garantiza que las transferencias de datos y los cambios de código se realizan de forma segura y autenticada, evitando el acceso no autorizado y garantizando la integridad del código.
+>
+
+> [!primary]
+>
+> **¿Por qué es necesaria la llave SSH únicamente para un depósito privado?**
+>
+> Cuando su repositorio de GitHub es público, los archivos pueden recuperarse sin autenticación, lo que significa que Git puede clonar y actualizar el código sin necesidad de una llave SSH. Por el contrario, si su depósito es privado, GitHub requiere autenticación para acceder. La llave SSH permite establecer esta conexión segura y garantizar que solo los usuarios autorizados puedan interactuar con el repositorio.
+
+Copie y guarde la llave SSH en su cuenta de GitHub. Esto permite establecer una conexión segura sin necesidad de introducir una contraseña en cada operación Git que deba realizar.
+
+- Inicie sesión en su cuenta de GitHub.
+- Haga clic en su imagen de perfil en la esquina superior derecha y luego en `Settings`{.action}.
+- En la nueva página, haga clic en `SSH and GPG keys`{.action} en la columna izquierda.
+- Seleccione `New SSH key`{.action} o `Add SSH key`{.action}.
+
+Aparecerá el formulario para añadir una nueva llave SSH:
+
+- **Title** : añada una descripción para su llave SSH. Por ejemplo, puede denominar esta llave "OVHcloud".
+- **Type of key**: deje el valor por defecto `authentication key`{.action}
+- **Key** : pegue su llave SSH.
+
+Para validar la información, haga clic en `Add SSH key`{.action}. Si se le solicita, confirme el acceso a su cuenta en GitHub.
 
 #### Configurar el despliegue automático
 
@@ -132,7 +144,7 @@ Una vez validado el formulario de asociación de Git, se abrirá la pestaña Mul
 
 Un banner verde le indica que Git se está activando. Siga la activación de Git haciendo clic en el enlace `Tareas en curso`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ongoing-task-git-activation.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/ongoing-task-git-activation.png){.thumbnail}
 
 El estado `En proceso`{.action} indica que la asociación de Git está en curso. El proceso puede tardar varios minutos. Una vez completada la tarea, aparecerá el estado `Activado`{.action}.
 

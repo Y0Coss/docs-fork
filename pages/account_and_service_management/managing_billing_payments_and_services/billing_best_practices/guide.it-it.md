@@ -1,12 +1,8 @@
 ---
 title: Best practice per la gestione dei tuoi servizi e del tuo account OVHcloud
 excerpt: Trovi qui gli elementi indispensabili per una corretta gestione delle tue fatture, ordini, modalità di pagamento e account cliente
-updated: 2022-05-02
+updated: 2024-12-23
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -52,7 +48,7 @@ Assicurati che il tuo indirizzo email sia sempre **aggiornato, sicuro e accessib
 Le email inviate da OVHcloud sono accessibili anche dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).<br>
 Clicca sul tuo nome in alto a destra e poi su `Email di servizio`{.action} nel menu di destra.
 
-![service_emails](images/service_emails.png){.thumbnail}
+![service_emails](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
 
 ### Attiva il rinnovo automatico
 
@@ -79,14 +75,14 @@ Accedi alla scheda `Dashboard`{.action} del menu superiore dello schermo e clicc
 
 Riceverai gli step della consegna e saprai se hai bisogno di aiuto per effettuare l'operazione.
 
-### Disattivazione dei servizi
+### Disattivare il serviziozione dei servizi
 
 Per disattivare uno dei tuoi servizi, attivarlo manualmente o eliminarlo immediatamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Clicca sul tuo nome in alto a destra e poi su `Prodotti e servizi`{.action}. Sul lato destro dello schermo, clicca sui tre puntini in corrispondenza del servizio che intendi utilizzare e seleziona uno dei pulsanti seguenti:
+Clicca sul tuo nome in alto a destra e poi su `Le mie offerte e servizi`{.action}. Sul lato destro dello schermo, clicca sui tre puntini in corrispondenza del servizio che intendi utilizzare e seleziona uno dei pulsanti seguenti:
 
 - `Configura il rinnovo`{.action}: sullo schermo successivo, potrai passare il `Tipo di rinnovo` del tuo servizio a `Manuale`. Clicca su `Continua`{.action} e `Conferma`{.action}. Prima della data di scadenza del tuo servizio, riceverai diverse notifiche via email. Se non rinnovi il tuo servizio, verrà eliminato **definitivamente**.
-- `Disattiva`{.action}: sulla schermata successiva, indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}. Alla data di scadenza del tuo servizio, verrà eliminato **definitivamente**.
+- `Disattivare il servizio`{.action}: sulla schermata successiva, indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}. Alla data di scadenza del tuo servizio, verrà eliminato **definitivamente**.
 - `Elimina subito`{.action}: nella schermata successiva clicca su `Conferma`{.action}. Riceverai un'email di conferma Dopo la conferma, il tuo servizio verrà eliminato **immediatamente e definitivamente**.
 
 Per maggiori informazioni sulla disattivazione dei tuoi servizi, consulta la guida [Come disattivare i tuoi servizi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
@@ -102,4 +98,4 @@ In seguito, utilizza [questo form](https://www.ovh.it/protezione-dati-personali/
 
 [Gestire le fatture OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

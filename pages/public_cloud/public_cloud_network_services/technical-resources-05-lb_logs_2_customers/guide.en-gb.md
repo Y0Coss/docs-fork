@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding
 excerpt: Find out how to forward your logs from a Public Cloud Load Balancer to Logs Data Platform
-updated: 2024-05-17
+updated: 2024-09-25
 ---
  
 ## Objective
@@ -19,6 +19,7 @@ If you would like to find out more about Logs Data Platform before reading this 
 ## Requirements
 
 - A Logs Data Platform (LDP) account with at least one active *Stream* configured. This guide will walk you through all the necessary steps: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+    - If you are not familiar with all the LDP *Stream* configuration possibilities, simply create a new one with the default options (indexing & websocket enabled, long-term storage disabled) for the purpose of this guide.
 - An up-and-running [Public Cloud Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
 - Both the LDP account and the Public Cloud Load Balancer account must belong to the same OVHcloud account.
 
@@ -75,7 +76,7 @@ This feature is not yet available in the Control Panel.
 
 ### Enabling Audit Log Forwarding using APIs
 
-You will have to define the targeted *Stream* of one of your LDP account on which you want your logs to be forwarded to. The enablement of the forwarding will create a subscription for this stream id.
+You will have to define the targeted *Stream* of one of your LDP accounts to which you want your logs forwarded. The enablement of the forwarding will create a subscription for this stream id.
 
 You can retrieve the API specifications in the [OVH API Portal](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
 

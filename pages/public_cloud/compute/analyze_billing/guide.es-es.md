@@ -1,12 +1,8 @@
 ---
-title: 'Información sobre el tipo de facturación cloud'
+title: 'Información sobre el tipo de facturación Public Cloud'
 excerpt: 'Cómo interpretar la facturación de las soluciones Public Cloud'
-updated: 2024-04-24
+updated: 2025-01-07
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Introducción
 
@@ -20,9 +16,12 @@ Este mecanismo es similar al de algunos operadores telefónicos que facturan a f
 
 ## Requisitos
 
-* Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
-* Una [instancia Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external}.
-* Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}.
+* Tener un proyecto de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
+* Una [instancia Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
+* Tener acceso al [área de cliente de OVHcloud](/links/manager).
+
+> [!success]
+> Benefíciese de precios reducidos comprometiéndose por un periodo de 1 a 36 meses en sus recursos de Nube Pública. Más información en nuestra página [Savings Plans](/links/public-cloud/savings-plan).
 
 ## Principio general
 
@@ -37,10 +36,6 @@ Específicamente para instancias de máquinas virtuales, el contador de facturac
 Cada proyecto cloud tiene asignada su propia factura, emitida el primer día del mes siguiente, en la que se incluyen todos los recursos facturados durante el mes en curso.
 
 ### Caso práctico
-
-> [!warning]
-> Tenga en cuenta que una instancia por horas se factura por horas, independientemente del momento en el que se cree la instancia. Si desea disfrutar de 60 minutos de uso por una hora de facturación, debe iniciar su instancia con la marca de la hora, por ejemplo a las 13:00 o a las 14:00.
->
 
 El siguiente ejemplo explica el funcionamiento de la facturación cloud:
 
@@ -103,7 +98,7 @@ La opción `Alerta de consumo bajo demanda`{.action} permite crear una alerta ba
 
 ### Instancias
 
-Es posible consultar el precio de las instancias cloud (o servidores cloud) en el área de cliente de OVHcloud, antes de iniciarlas. También puede consultar el precio directamente en el [sitio web de OVHcloud](https://www.ovhcloud.com/es-es/public-cloud/prices/){.external}.
+Es posible consultar el precio de las instancias cloud (o servidores cloud) en el área de cliente de OVHcloud, antes de iniciarlas. También puede consultar el precio directamente en el [sitio web de OVHcloud](/links/public-cloud/prices).
 
 > [!primary]
 >
@@ -151,7 +146,7 @@ El cálculo será el siguiente: (precio mensual del GB / 720) x número de horas
 
 El número de GB por hora corresponde a la cantidad máxima de GB almacenada durante una hora. Por ejemplo, si usted tiene almacenados 15 GB a las 16:20, 17 GB a las 16:40 y 14 GB a las 16:50, OVHcloud facturará 17 GB para el período que va de las 16:00 a las 17:00.
 
-Puede consultar el precio del almacenamiento en el [sitio web de OVHcloud](https://www.ovhcloud.com/es-es/public-cloud/storage/){.external}.
+Puede consultar el precio del almacenamiento en el [sitio web de OVHcloud](/links/public-cloud/storage).
 
 ### Volúmenes adicionales
 
@@ -167,7 +162,7 @@ El snapshot de los volúmenes adicionales se factura del mismo modo que los vol�
 
 ### Snapshots e imágenes de instancias
 
-Los snapshots de instancias como las imágenes (fuera del catálogo de imágenes de OVHcloud) se facturan con un precio fijo por GB/mes, independientemente de la instancia de origen o el tipo de imagen. Puede consultar el precio de las instancias en el [sitio web de OVHcloud](https://www.ovhcloud.com/es-es/public-cloud/prices/){.external}.
+Los snapshots de instancias como las imágenes (fuera del catálogo de imágenes de OVHcloud) se facturan con un precio fijo por GB/mes, independientemente de la instancia de origen o el tipo de imagen. Puede consultar el precio de las instancias en el [sitio web de OVHcloud](/links/public-cloud/prices).
 
 ### Object Storage
 
@@ -204,4 +199,4 @@ El almacenamiento de archivos tiene en cuenta tres elementos:
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

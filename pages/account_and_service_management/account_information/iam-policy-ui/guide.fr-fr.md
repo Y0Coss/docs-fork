@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les politiques IAM depuis votre espace client
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs depuis un compte OVHcloud"
-updated: 2024-07-04
+updated: 2025-01-08
 ---
 
 ## Objectif
@@ -25,7 +25,7 @@ Par exemple, nous pouvons créer une politique pour donner à un utilisateur nom
 
 ![politiques IAM](images/iam_policies.png){.thumbnail}
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ynPqXBZpUpY?si=XDh2pZjMZ7Hv31cY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/ynPqXBZpUpY?si=XDh2pZjMZ7Hv31cY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Prérequis
 
@@ -43,13 +43,13 @@ Cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre 
 
 Vous pouvez accéder au menu IAM via l’entrée dédiée dans votre espace client.
 
-![Accès au menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
+![Accès au menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
-Le menu affiche la liste de toutes les politiques en cours créées sur votre compte.
+Si vous accédez à ce menu pour la première fois, la page suivante apparaît :
 
-![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+![Accès au menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
-Chaque politique est affichée avec son nom, le nombre d'identités qui lui sont liées et le nombre d'actions qu'elle contient.
+Cliquez directement sur [Créer une politique](#create-policy) ou sur [Créer des utilisateurs](#create-users) en fonction de l'action que vous souhaitez réaliser.
 
 > [!primary]
 >
@@ -57,7 +57,15 @@ Chaque politique est affichée avec son nom, le nombre d'identités qui lui sont
 >
 > Les clients ne sont pas autorisés à modifier ou supprimer ces politiques.
 
+Si vous avez déjà créé des politiques ou des utilisateurs, le menu affiche la liste de toutes les politiques en cours créées sur votre compte OVHcloud.
+
+![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Chaque politique est affichée avec son nom, le nombre d'identités qui lui sont liées et le nombre d'actions qu'elle contient.
+
 ### Gestion des politiques
+
+<a name="create-policy"></a>
 
 #### Créer une politique
 
@@ -139,6 +147,8 @@ Pour supprimer une politique existante, cliquez sur le bouton `...`{.action} à 
 
 Une fenêtre contextuelle vous demandera de confirmer la suppression.
 
+<a name="create-users"></a>
+
 ### Gestion des identités
 
 Les identités disponibles pour les politiques sont gérées via l'onglet `Identités`{.action}.
@@ -175,4 +185,4 @@ Une fenêtre contextuelle vous demandera de confirmer la suppression.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -33,7 +33,7 @@ Ce guide vous permettra de :
 - [Connaître les démarches si votre téléphone/tablette/clé est perdu(e) / volé(e) / endommagé(e)](#lost-device)
 - [Savoir comment désactiver complètement la double authentification](#desactivation)
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
@@ -239,7 +239,7 @@ L'interface suivante vous permet de téléverser et d'envoyer à nos équipes le
 > - **Formats acceptés** : jpg, jpeg, pdf, png. La taille maximale du fichier pour chaque document est de 10 Mo.
 > - En cas de documents non valides, cette procédure sera annulée et vous devrez en effectuer une nouvelle.
 
-Dans un délai de 72 heures, sous réserve que vos documents soient sont corrects et lisibles, vous recevrez la confirmation de la désactivation de la double authentification par e-mail.
+Dans un délai de 72 heures, sous réserve que vos documents sont corrects et lisibles, vous recevrez la confirmation de la désactivation de la double authentification par e-mail.
 
 /// details | Liste des justificatifs
 
@@ -270,8 +270,8 @@ Après vérification de vos documents, un conseiller pourra désactiver manuelle
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

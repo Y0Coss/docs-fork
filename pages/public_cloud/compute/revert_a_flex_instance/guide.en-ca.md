@@ -12,7 +12,7 @@ A flex instance is a single size disk (50GB) instance which offers a faster proc
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance) with the flex option
+- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#configuration) with the flex option
 - [Access to the Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instructions
@@ -55,7 +55,7 @@ Use this section to manage the **Disk Partition** and **Server Group**.
 
 To proceed, click on the `Resize`{.action} button.
 
-Once the process is completed, your instance will be reverted to a classic model with a larger storage space.
+Once the process is complete, your instance will be reverted to the selected model. In our case, our instance was reverted to a classic model with more storage space.
 
 ![New flavor applied](images/newflavor.png){.thumbnail}
 

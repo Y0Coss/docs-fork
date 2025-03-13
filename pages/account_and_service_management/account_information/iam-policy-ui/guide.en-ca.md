@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2024-07-04
+updated: 2025-01-08
 ---
 
 ## Objective
@@ -25,6 +25,8 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 
 ![IAM Policies](images/iam_policies.png){.thumbnail}
 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/g6qvskdFwy8?si=51mbyM6affEFknxv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Requirements
 
 - You have an [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
@@ -41,13 +43,13 @@ Click your account name in the top-right corner, then on your name again in the 
 
 You can access the IAM menu via the dedicated entry in your Control Panel.
 
-![Access to the IAM menu](images/access_to_the_IAM_menu_02.png){.thumbnail}
+![Access to the IAM menu](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
-The menu will give you the list of all the current policies created on your account.
+If you are accessing this menu for the first time, the following page appears:
 
-![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
+![Access to the IAM menu](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
-Each policy is displayed with its name, the number of identities linked to it, and the number of actions it contains.
+Click [Create a policy](#create-policy) or [Create users](#create-users) directly depending on the action you want to perform.
 
 > [!primary]
 >
@@ -55,7 +57,15 @@ Each policy is displayed with its name, the number of identities linked to it, a
 >
 > Customers are not allowed to edit or delete these policies.
 
+If you have already created policies or users, the menu displays a list of all the current policies created on your OVHcloud account.
+
+![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Each policy is displayed with its name, the number of identities linked to it, and the number of actions it contains.
+
 ### Managing policies
+
+<a name="create-policy"></a>
 
 #### Creating a policy
 
@@ -136,6 +146,8 @@ To delete an existing policy, click the `...`{.action} button to the right of th
 
 A popup window will ask you to confirm the deletion.
 
+<a name="create-users"></a>
+
 ### Managing identities
 
 The identities available for policies are managed via the `Identities`{.action} tab.
@@ -172,4 +184,4 @@ A popup window will ask you to confirm the deletion.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

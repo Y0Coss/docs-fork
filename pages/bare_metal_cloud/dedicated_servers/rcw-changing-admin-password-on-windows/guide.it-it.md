@@ -1,13 +1,8 @@
 ---
 title: "Come reimpostare la password amministratore con Rescue-Customer-Windows"
 excerpt: "Come reimpostare la password amministratore con Rescue-Customer-Windows"
-updated: 2024-06-26
+updated: 2025-03-06
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 
 ## Obiettivo
 
@@ -15,15 +10,16 @@ Questa guida ti mostra come ripristinare la password `Administrator` con **Windo
 
 ## Prerequisiti
 
-- Microsoft Windows deve essere installato sul tuo [server dedicato](/links/bare-metal/bare-metal)
-- Disporre di almeno 16 GB di RAM sul proprio server
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Microsoft Windows Server 2016 o versione successiva installata sul tuo [server dedicato](/links/bare-metal/bare-metal)
+- Accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
-> Questa guida non è compatibile con la modalità `WinPE Rescue`.
-> Consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows) se utilizzi la modalità `WinPe Rescue`.
+> Questa guida non si applica al **sistema Windows Rescue *legacy* (modalità Rescue WinPE)** (per maggiori informazioni, consulta la [guida alla modalità Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)).
 >
+> Se la versione di Windows Server in uso non è supportata, potrebbe non essere possibile attivare il sistema Rescue corrente per Windows. In questo caso, consulta la nostra guida che spiega [come reimpostare la password amministratore di Windows con il sistema Windows rescue *legacy*](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows).  
+> Troverai anche un metodo alternativo per reimpostare la password amministratore con il sistema Rescue Customer di OVHcloud basato su Debian.
+
 
 ## Procedura
 
@@ -88,8 +84,10 @@ Il disco locale è ormai accessibile e il disco Windows corrisponde al volume "(
 
 ![disk_import_sync](images/disk_import_sync.png){.thumbnail}
 
-__Note__: In questo esempio, lo stato del volume è "Resynching" perché il server è stato bruscamente riavviato in modalità Rescue. È uno stato normale che non è causato dal rescue stesso.
-Questa operazione non avrà alcun impatto sui dati del volume e la risincronizzazione continuerà anche dopo il riavvio del server sul sistema installato.
+> [!primary]
+>
+> In questo esempio, lo stato del volume è "Resynching" perché il server è stato bruscamente riavviato in modalità Rescue. È uno stato normale che non è causato dal rescue stesso.  
+> Questa operazione non avrà alcun impatto sui dati del volume e la risincronizzazione continuerà anche dopo il riavvio del server sul sistema installato.
 
 > [!warning]
 >
@@ -127,7 +125,15 @@ Seleziona l’account utente "admin" e clicca su `Change password`{.action}.
 
 ![ntpwedit2](images/ntpwedit_2.png){.thumbnail}
 
-Nella nuova finestra, lascia i campi vuoti e clicca su `OK`{.action}. Clicca su `Salva le modifiche`{.action} e poi su `Esci`{.action}.
+Nella nuova finestra, inserisci la nuova password in entrambi i campi e clicca su `OK`{.action}.
+
+> [!warning]
+>
+> La nuova password verrà accettata senza verificarne la complessità.
+>
+> Tieni presente che questa password permetterà di connettersi a distanza sul server, una volta riavviato sul suo sistema operativo.
+
+Clicca su `Save changes`{.action} e poi su `Exit`{.action}.
 
 Riavviare il server nel normale sistema operativo.
 
@@ -138,38 +144,6 @@ Inizia sostituendo il netboot con `Avviare da hard disk`{.action} nello Spazio C
 Riavvia il server dallo Spazio Cliente. Clicca sul pulsante `...`{.action} vicino alla sezione "Stato dei servizi" e seleziona `Riavvia`{.action}.
 
 ![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
-
-### Step 4 - Definisci una nuova password (IPMI) <a name="step4"></a>
-
-Dallo [Spazio Cliente OVHcloud](/links/manager), clicca sulla scheda `IPMI`{.action} per accedere al KVM.
-
-![adminpw3](images/adminpw3.png){.thumbnail}
-
-#### Per una versione recente di Windows
-
-Una volta connesso al server, clicca sull’icona del menu `Start`{.action} in basso a sinistra.
-
-Inizia a digitare `opzioni di connessione` e clicca su `Opzioni di connessione`{.action} quando appare nel menu.
-
-![adminpw7](images/adminpw7.png){.thumbnail}
-
-Nella sezione "Password", clicca sul pulsante `Aggiungi`{.action} per impostare la nuova password.
-
-![adminpw8](images/adminpw8.png){.thumbnail}
-
-#### Per una versione precedente di Windows
-
-Una volta stabilita la sessione KVM, è necessario aprire una finestra della riga di comando (cmd).
-
-Definisci la password dell'utente corrente ("Administrator"):
-
-```bash
-net user Administrator *
-```
-
-![adminpw9](images/adminpw9.png){.thumbnail}
-
-È consigliabile utilizzare la tastiera virtuale quando si immettono le password nell'interfaccia.
 
 ## Per saperne di più
 

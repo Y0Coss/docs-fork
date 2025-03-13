@@ -4,10 +4,6 @@ excerpt: "Responder en caso de que aparezca un mensaje de error relacionado con 
 updated: 2021-07-08
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
-
 ## Objetivo <a name="objective"></a>
 
 En caso de que su sitio web no sea accesible, puede aparecer varios mensajes de error. Los siguientes ejemplos indican que su alojamiento web no contiene [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (si su sitio web no muestra una de las anomalías descritas en esta guía, consulte la sección [« Más información »](#go-further)): 
@@ -96,7 +92,7 @@ Si ha contratado uno de los **certificados SSL de pago** de nuestro partner [SEC
 >
 > Para consultar todos los mensajes enviados por nuestros servicios, haga clic en el botón superior derecha de su [área de cliente de OVHcloud](/links/manager) y seleccione `Emails de servicio`{.action}.
 >
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
 >
 
 ## Más información <a name="go-further"></a>

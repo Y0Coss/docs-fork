@@ -13,13 +13,13 @@ La mise en place d'un serveur web et des logiciels associés permet à votre ser
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal), un [VPS](https://www.ovhcloud.com/fr/vps/) ou une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud (hors systèmes Windows)
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Un accès administratif à votre service via SSH
 
 > [!warning]
 > Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Il vous faudra peut-être adapter les consignes à votre situation.
 >
-> Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de vous rapprocher de [notre communauté](https://community.ovh.com/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place de services sur un serveur.
+> Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de vous rapprocher de [notre communauté](/links/community) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place de services sur un serveur.
 >
 
 ## En pratique
@@ -100,7 +100,7 @@ Entrez `n`{.action} à l'invite suivante :
 Change the root password? [Y/n]
 ```
 
-Les invites suivantes concernant les mesures de sécurité, confirmez-les toutes avec `y`{.action} jusqu'à la fin du script.
+Les invites suivantes concernent les mesures de sécurité, confirmez-les toutes avec `y`{.action} jusqu'à la fin du script.
 
 ```console
 Reloading the privilege tables will ensure that all changes made so far
@@ -274,4 +274,4 @@ Certbot renouvelle automatiquement les certificats. Aucune autre étape n'est n�
 
 [Documentation NGINX](https://nginx.org/en/docs/) (alternative Apache)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

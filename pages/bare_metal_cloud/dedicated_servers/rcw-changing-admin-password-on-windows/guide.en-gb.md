@@ -1,7 +1,7 @@
 ---
 title: "How to reset the Windows Administrator password with the Windows customer rescue system"
 excerpt: "Find out how to use the OVHcloud Windows rescue mode to reset the password of the Administrator account on a Windows dedicated server"
-updated: 2024-06-26
+updated: 2025-03-06
 ---
 
 ## Objective
@@ -10,15 +10,15 @@ This guide will help you to reset your `Administrator` account password with the
 
 ## Requirements
 
-- Microsoft Windows installed on your [dedicated server](/links/bare-metal/bare-metal)
-- At least 16 GB of RAM installed on the server
+- Microsoft Windows Server 2016 or greater installed on your [dedicated server](/links/bare-metal/bare-metal)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >
-> This guide is not applicable to the legacy `WinPE Rescue` mode.
+> This guide is not applicable to the **legacy Windows rescue system (WinPE rescue mode)** (see the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) for details).
 >
-> Follow [this guide](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows) instead when using the `WinPE Rescue` mode in the OVHcloud Control Panel.
+> If your Windows Server version is out of support, you might not be able to activate the current rescue system for Windows. In this case, please refer to our guide page on [how to reset the Windows Administrator password with the legacy Windows rescue system](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows) instead.  
+> The same guide explains an alternative method for resetting the Administrator password using the OVHcloud customer rescue system based on Debian.
 
 ## Instructions
 
@@ -26,7 +26,7 @@ This guide will help you to reset your `Administrator` account password with the
 
 The system has to be started into the **Windows customer rescue system** before the admin password can be changed.
 
-For detailed instructions, please refer to the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
+For detailed instructions, please refer to the [Windows rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
 
 ### Step 2 - Clear the current password <a name="step2"></a>
 
@@ -84,9 +84,8 @@ You can see that the local disk is now accessible and that the Windows disk is d
 ![disk_import_sync](images/disk_import_sync.png){.thumbnail}
 
 > [!primary]
-> In this example, the volume status is "Resynching" because the server was hard-rebooted into rescue mode. This is an expected status and it is not caused by the rescue mode itself.
-> 
-> This will not affect data on the volume and resynchronisation will continue once the server is rebooted on its installed OS.
+> In this example, the volume status is "Resynching" because the server was hard-rebooted into rescue mode. This is an expected status and it is not caused by the rescue mode itself.  
+> This will not affect data on the volume and resynchronisation will continue once the server is rebooted into its installed OS.
 
 > [!warning]
 >
@@ -121,7 +120,15 @@ Select the user account "admin" and click on `Change password`{.action}.
 
 ![ntpwedit2](images/ntpwedit_2.png){.thumbnail}
 
-In the popup window, leave the fields empty and click `OK`{.action}. Finish by clicking `Save changes`{.action} and `Exit`{.action}.
+In the popup window, enter your new password in both fields and click `OK`{.action}.
+
+> [!warning]
+>
+> The new password will be accepted regardless of any password complexity.
+>
+> Keep in mind that this password will allow remote connection to the server once rebooted on its operating system.
+
+Finish by clicking `Save changes`{.action} and `Exit`{.action}.
 
 After this, the server needs to be rebooted on the normal operating system.
 
@@ -134,36 +141,6 @@ Then restart the server from the Control Panel.
 Click the `...`{.action} button near "Status" in the "Service Status" section and click `Restart`{.action}.
 
 ![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
-
-### Step 4 - Set a new password (IPMI) <a name="step4"></a>
-
-In your OVHcloud Control Panel, navigate to the IPMI tab to open a KVM session.
-
-![adminpw3](images/adminpw3.png){.thumbnail}
-
-#### For a newer version of Windows
-
-Once you have accessed your server through IPMI, click the start menu icon at the bottom left. Start typing `Sign-in options` and click the `Sign-in options`{.action} button once it pops up.
-
-![adminpw7](images/adminpw7.png){.thumbnail}
-
-Next, click the `Add`{.action} button under "Password" to set your new password.
-
-![adminpw8](images/adminpw8.png){.thumbnail}
-
-#### For an older version of Windows
-
-A command line window (cmd) should open when the KVM session is established.
-
-Set the password for the current user (`Administrator`):
-
-```bash
-net user Administrator *
-```
-
-![adminpw9](images/adminpw9.png){.thumbnail}
-
-We advise you to use the virtual keyboard when typing passwords in this interface to avoid mistakes.
 
 ## Go further
 

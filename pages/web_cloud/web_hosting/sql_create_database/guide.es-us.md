@@ -1,12 +1,8 @@
 ---
 title: "Crear una base de datos en un alojamiento web"
 excerpt: "Descubra cómo crear una base de datos en un alojamiento web de OVHcloud"
-updated: 2024-05-17
+updated: 2024-09-05
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 ## Objetivo
 
@@ -24,7 +20,7 @@ Una base de datos (BD) se utiliza para almacenar elementos dinámicos (datos de 
 
 ### Etapa 1 - Acceder a la pestaña de gestión de las bases de datos de un alojamiento web
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección "Web Cloud" de la página {.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea crear una base de datos y abra la pestaña `Bases de datos`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea crear una base de datos y abra la pestaña `Bases de datos`{.action}.
 
 La tabla de esta sección contiene todas las bases de datos creadas con su alojamiento web.
 
@@ -57,8 +53,13 @@ En la nueva ventana, seleccione la siguiente información:
 |Información|Descripción|  
 |---|---|
 |**Seleccione el tipo de base de datos**|Elija el tamaño de la base de datos. Este tamaño se refiere al espacio de almacenamiento de datos de la base de datos.|
-|**Seleccione el motor de la base de datos que quiere añadir**|Elija el motor que desea que utilice la base de datos. Las bases de datos incluidas en su [plan de hosting de OVHcloud](/links/web/hosting) solo están disponibles con el motor MySQL.|
+|**Seleccione el motor de la base de datos que quiere añadir**|Elija el motor que desea que utilice la base de datos. Actualmente, las bases de datos incluidas en su [plan de hosting de OVHcloud](/links/web/hosting) solo están disponibles con el motor MySQL.|
 |**Seleccione la versión de la base de datos que quiere añadir**|Elija la versión que utiliza el motor de la base de datos. Asegúrese de que su sitio web es compatible con la versión que ha elegido.|
+
+> [!primary]
+>
+> La actualización de la versión del motor de una base de datos ya creada no está disponible en este momento.
+>
 
 A continuación, haga clic en `Siguiente`{.action}.
 
@@ -158,7 +159,7 @@ Si lo necesita, consulte el [Etapa 3](#step3) de esta guía para obtener la info
 
 Para cada base de datos de alojamiento web, se crean snapshots automáticamente cada día (hasta un máximo de 32). Puede restaurar rápidamente una versión anterior de una base de datos desde el área de cliente de OVHcloud.
 
-Para comprobar los snapshots disponibles, así como la fecha y hora de su creación, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección "Web Cloud" de la página {.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera consultar los snapshots disponibles para su base de datos. A continuación, abra la pestaña `Bases de datos`{.action}. En la tabla que aparece, haga clic en el símbolo situado junto al círculo verde. También puede descargar cada copia de seguridad de una base de datos desde ese mismo lugar. Para más información, consulte nuestra guía "[Recuperar la copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export)".
+Para comprobar los snapshots disponibles, así como la fecha y hora de su creación, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera consultar los snapshots disponibles para su base de datos. A continuación, abra la pestaña `Bases de datos`{.action}. En la tabla que aparece, haga clic en el símbolo situado junto al círculo verde. También puede descargar cada copia de seguridad de una base de datos desde ese mismo lugar. Para más información, consulte nuestra guía "[Recuperar la copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export)".
 
 #### Entender los problemas comunes
 

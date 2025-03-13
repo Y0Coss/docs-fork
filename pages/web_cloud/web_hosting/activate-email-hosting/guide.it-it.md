@@ -1,18 +1,16 @@
 ---
-title: "Attivare gli indirizzi email inclusi in un hosting Web"
+title: "Hosting Web - Attiva gli indirizzi email inclusi"
 excerpt: "Questa guida ti mostra come attivare gli account di posta inclusi nella tua soluzione di hosting Web"
-updated: 2024-07-17
+updated: 2024-12-12
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
 Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’attivazione manuale dell’offerta email inclusa nel servizio, per poterla collegare al dominio scelto.
 
 **Questa guida ti mostra come attivare gli account di posta elettronica inclusi in un piano di hosting Web.**
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oqWovkSP85A?si=1rnqBvhVLdhr2rI5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Prerequisiti
 
@@ -77,7 +75,15 @@ Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrisponde
 
 > [!warning]
 >
-> Per confermare l'eliminazione dell'offerta email associata al tuo hosting, riceverai un link di conferma via email. Clicca su questo link per avviare l'operazione di eliminazione.
+> Per confermare l’eliminazione del servizio di posta associato all’hosting Web, riceverai un link di conferma via email. Per avviare l'operazione di eliminazione, è necessario fare clic sul collegamento.
+
+#### Caso particolare - Elimina il servizio di posta associato all’hosting Web (per associarlo a un altro dominio)
+
+Per motivi di sicurezza, l'eliminazione definitiva di un servizio di posta può richiedere alcuni giorni dopo aver cliccato sul link di conferma dell'eliminazione.
+
+Per eliminare il servizio di posta associato all’hosting Web e associarlo a un altro dominio, e **solo** nel caso specifico, è necessario confermare per iscritto la richiesta di accelerazione dell’eliminazione del servizio. Per farlo, contatta il supporto creando un ticket di assistenza dal tuo [centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Il ticket di assistenza deve **obbligatoriamente** essere creato dall'account cliente (e dall'identificativo cliente corrispondente) che amministra il servizio da eliminare.
+
+Una volta elaborata la richiesta, è possibile associare il servizio di posta associato all’hosting Web con un altro dominio.
 
 ## Per saperne di più
 

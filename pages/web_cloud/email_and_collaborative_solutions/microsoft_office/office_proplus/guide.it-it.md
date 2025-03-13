@@ -4,10 +4,6 @@ excerpt: Come installare e utilizzare Microsoft 365 aps su un desktop remoto (RD
 updated: 2021-09-06
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 Vuoi utilizzare la suite software presente nel pack Microsoft 365 aps su una macchina remota o condivisa. Per effettuare l'installazione è necessario seguire la procedura descritta in questa guida.
@@ -46,7 +42,7 @@ L'installazione di un'offerta Microsoft 365 Apps for entreprise su un computer c
 > Se hai già installato la tua licenza Office 365 Proplus, è necessario **disinstallarla**.
 >
 
-- Una volta disinstallata la licenza, [clicca qui](https://www.microsoft.com/en-us/download/details.aspx?id=49117){.external} per scaricare il tool Microsoft 365.
+- Una volta disinstallata la licenza, [clicca qui](https://www.microsoft.com/en-us/download/details.aspx?id=49117) per scaricare il tool Microsoft 365.
 
 - **Esegui** il tool di distribuzione sulla tua macchina.
 
@@ -103,4 +99,4 @@ Assicurati che il suo valore sia a `1`. Se questa chiave non esiste, puoi crearl
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

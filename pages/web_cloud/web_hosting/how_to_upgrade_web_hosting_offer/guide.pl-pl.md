@@ -1,12 +1,8 @@
 ---
-title: "Hosting: jak zmienić ofertę?"
+title: "Hosting WWW - Jak zmienić ofertę"
 excerpt: "Dowiedz się, jak zmienić formułę abonamentu na hosting OVHcloud"
-updated: 2023-09-19
+updated: 2024-10-30
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -19,6 +15,8 @@ updated: 2023-09-19
 - dodatkowe funkcje, takie jak [listy mailingowe](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (od [oferta Pro](/links/web/hosting-professional-offer)) lub [usługa Web Cloud Databases](/links/web/databases){.external} (zawarte w [ofertach Performance](https://www.ovhcloud.com/pl/web/hosting/performance-hosting/performance-offer/).
 
 **Dowiedz się, jak zmienić ofertę hostingową OVHcloud bez przerwy w działaniu usługi.**
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/vRO7DXx9UsI?si=JOL6gOaCQQ2spsID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Wymagania początkowe
 
@@ -42,7 +40,7 @@ updated: 2023-09-19
 
 Aby zmienić abonament, przejdź do [Panelu klienta OVHcloud](/links/manager) w części `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action} i wybierz odpowiedni hosting.
 
-W polu `Abonament` kliknij przycisk`...`{.action} po prawej stronie `Usługa`, a następnie `Zmień ofertę`{.action}.
+W polu `Abonament` kliknij przycisk `...`{.action} po prawej stronie `Usługa`, a następnie `Zmień ofertę`{.action}.
 
 ![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 
@@ -64,7 +62,7 @@ Sprawdź, czy nowa oferta zawiera wystarczającą liczbę [baz danych](/links/we
 
 W przeciwnym razie usuń nieużywane bazy danych i w razie potrzeby zmniejsz ilość danych w nich zawartych. Ilość ta nie może przekroczyć maksymalnego rozmiaru baz danych w nowej ofercie. Jeśli potrzebujesz wsparcia w zakresie wymaganych działań, skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Po usunięciu danych z Twoich baz, ponownie oblicz wykorzystany limit. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli przejdź do zakładki `Bazy danych`{.action}, następnie kliknij przycisk`...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie `Przelicz rozmiar bazy`{.action}.
+Po usunięciu danych z Twoich baz, ponownie oblicz wykorzystany limit. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli przejdź do zakładki `Bazy danych`{.action}, następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie `Przelicz rozmiar bazy`{.action}.
 
 ![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 
@@ -85,7 +83,7 @@ Dzięki temu będziesz mógł zamówić ofertę Web Cloud Databases niezależną
 Jeśli nie chcesz przechowywać tych danych, możesz usunąć Twoją usługę Web Cloud Databases przed przejściem na ofertę *Pro*: 
 
 1. Wykonaj kopię zapasową danych, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Usuń serwer Web Cloud Databases za pomocą [Panelu klienta OVHcloud](/links/manager). W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę w prawym górnym rogu, a następnie ikonę `Produkty i usługi`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie wiersza oferty Web Cloud Databases/Private SQL . `Usuń mój hosting Private SQL`{.action}.
+2. Usuń serwer Web Cloud Databases za pomocą [Panelu klienta OVHcloud](/links/manager). W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę w prawym górnym rogu, a następnie `Moje rozwiązania i usługi`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie wiersza oferty Web Cloud Databases/Private SQL . `Usuń mój hosting Private SQL`{.action}.
 
 #### 3 - Przestrzeń dyskowa FTP
 
@@ -118,7 +116,7 @@ W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź 
 
 >[!primary]
 >
-> Jeśli przycisk `...`{.action} jest niedostępny w Twojej ofercie e-mail, możesz odłączyć ofertę e-mail od hostingu. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) w części `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie `Informacje ogólne`{.action}, która się wyświetla i w ramce `Konfiguracja`{.action}, kliknij przycisk`...`{.action} z prawej strony wzmianki `Adresy e-mail`{.action}, a następnie `Odłącz opcję e-mail`{.action}.
+> Jeśli przycisk `...`{.action} jest niedostępny w Twojej ofercie e-mail, możesz odłączyć ofertę e-mail od hostingu. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) w części `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie `Informacje ogólne`{.action}, która się wyświetla i w ramce `Konfiguracja`{.action}, kliknij przycisk `...`{.action} z prawej strony wzmianki `Adresy e-mail`{.action}, a następnie `Odłącz opcję e-mail`{.action}.
 >
 
 #### 6 - Użytkownicy FTP
@@ -158,7 +156,7 @@ Jeśli opcja **Boost** odpowiada Twoim potrzebom, poniżej znajdziesz instrukcje
 > [!tabs]
 > **Włącz opcję Boost**
 >>
->> Aby aktywować opcję Boost, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. W ramce `Informacje ogólne` na stronie, która się wyświetli kliknij przycisk`...`{.action} po prawej stronie `Boost`, a następnie `Skorzystaj z opcji Boost`{.action}.<br><br>
+>> Aby aktywować opcję Boost, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. W ramce `Informacje ogólne` na stronie, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie `Boost`, a następnie `Skorzystaj z opcji Boost`{.action}.<br><br>
 >> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
 >>
 > **Wyłącz opcję Boost**
@@ -169,17 +167,30 @@ Jeśli opcja **Boost** odpowiada Twoim potrzebom, poniżej znajdziesz instrukcje
 
 ### Płatności w przypadku zmiany oferty <a name="billing"></a>
 
-Jeśli zmienisz początkową ofertę na wyższą, do kolejnej daty odnowienia początkowej subskrypcji zostanie zastosowana zasada pro rata temporis*.
+**Przypadek 1**: Jeśli zmienisz początkową ofertę na wyższą, do kolejnej daty odnowienia początkowej subskrypcji zostanie zastosowana zasada pro rata temporis*.
 Obliczenie to stanowi różnicę w cenie między Twoją ofertą początkową a nową ofertą.
 
 > **Przykład:**<br>
 >
-> Zamówiłeś abonament [Perso](/links/web/hosting-personal-offer) od 1 stycznia 2022.
+> Zamówiłeś abonament [Perso](/links/web/hosting-personal-offer) od 1 stycznia 2024.
 >
-> 31 października 2022 zmienisz abonament z tej oferty **Perso** na ofertę [Pro](/links/web/hosting-professional-offer).<br>
+> 31 października 2024 zmienisz abonament z tej oferty **Perso** na ofertę [Pro](/links/web/hosting-professional-offer).<br>
 >
-> W związku z tym kwota za pozostały okres abonamentu **Perso** (2 miesiące, od 1 listopada 2022 do 1 stycznia 2023) jest automatycznie odliczana od kosztu nowego abonamentu **Pro**, do 1 stycznia 2023. Zapłacisz tylko za różnicę.
-> Od dnia 1 stycznia 2023 r. abonament **Pro** będzie fakturowany zgodnie z obowiązującym cennikiem.
+> W związku z tym kwota za pozostały okres abonamentu **Perso** (2 miesiące, od 1 listopada 2024 do 1 stycznia 2025) jest automatycznie odliczana od kosztu nowego abonamentu **Pro**, do 1 stycznia 2025. Zapłacisz tylko za różnicę.
+> Od dnia 1 stycznia 2025 r. abonament **Pro** będzie fakturowany zgodnie z obowiązującym cennikiem.
+
+Postępuj zgodnie z [tymi instrukcjami](#modify), aby zmienić ofertę.
+
+**Przypadek 2**: Zmiana oferty początkowej na niższą spowoduje definitywną utratę pozostałego czasu abonamentowego dla oferty początkowej. Za pozostały czas nie zostanie zwrócony żaden zwrot, nawet jeśli pozostało kilka miesięcy abonamentu. Oznacza to, że będziesz musiał zapłacić całą subskrypcję niższej oferty.
+
+> **Przykład:**<br>
+>
+> Zamówiłeś abonament [Pro](/links/web/hosting-professional-offer) od 1 stycznia 2024.
+>
+> Od 31 października 2024 przechodzisz z tej oferty **Pro** na abonament z ofertą [Perso](/links/web/hosting-personal-offer).<br>
+>
+> W związku z tym kwota za pozostały okres abonamentu **Pro** (2 miesiące, od 1 listopada 2024 do 1 stycznia 2025) zostaje utracona.
+> Od 1 listopada 2024 abonament **Perso** będzie fakturowany zgodnie ze standardowym cennikiem (nawet jeśli płatność za pozostałe 2 miesiące w ramach oferty **Pro**).
 
 Postępuj zgodnie z [tymi instrukcjami](#modify), aby zmienić ofertę.
 

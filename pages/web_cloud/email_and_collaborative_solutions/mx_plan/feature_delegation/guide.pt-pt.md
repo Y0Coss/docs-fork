@@ -4,10 +4,6 @@ excerpt: 'Saiba como delegar a gestão das contas de e-mail da sua oferta MX Pla
 updated: 2021-10-08
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo <a name="objective"></a>
 
 A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir ele próprio diferentes funcionalidades (a alteração da palavra-passe nomeadamente). Estas funcionalidades dependem do tipo de delegação estabelecida:
@@ -20,8 +16,8 @@ A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir 
 
 ## Requisitos
 
-- Dispor de uma oferta MX Plan Está disponível através de: uma [oferta de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/), um [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou uma oferta MX Plan encomendada separadamente.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}.
+- Dispor de uma oferta MX Plan Está disponível através de: uma [oferta de alojamento Web Cloud](/links/web/hosting), um [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou uma oferta MX Plan encomendada separadamente.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 
 > [!warning]
 >
@@ -37,14 +33,14 @@ A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir 
 
 > [!primary]
 >
->A criação de uma delegação numa conta de e-mail indica-o no [espaço de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) em causa. No entanto, nesta situação, apenas serão possíveis as alterações indicadas na secção [Objetivo](#objective) deste guia.
+> A criação de uma delegação numa conta de e-mail indica-o no [espaço de cliente](/links/manager) em causa. No entanto, nesta situação, apenas serão possíveis as alterações indicadas na secção [Objetivo](#objective) deste guia.
 >
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`.
-
-Clique em `E-mails`{.action} e selecione o serviço MX Plan correspondente.
-
-Para apresentar a lista das contas de e-mail da sua oferta MXplan, clique no separador `Emails`{.action}.
+1. Aceda à [Área de Cliente OVHcloud](/links/manager).
+1. Clique no separador `Web Cloud`{.action}.
+1. Clique em `E-mails`{.action}.
+1. Selecione o domínio em questão.
+1. Para apresentar a lista das contas de e-mail da sua oferta MX Plan, clique no separador `Emails`{.action}.
 
 ![delegação](images/mxplan-delegation-01.png){.thumbnail}
 
@@ -60,7 +56,7 @@ Surge uma nova janela. Clique no botão `+`{.action} à direita da linha `Adicio
 
 ![delegação](images/mxplan-delegation-03.png){.thumbnail}
 
-Pode delegar a gestão do seu serviço MXplan em vários identificadores OVHcloud.
+Pode delegar a gestão do seu serviço MX Plan em vários identificadores OVHcloud.
 
 ### Delegar uma ou várias contas de e-mail tem um identificador
 
@@ -80,4 +76,4 @@ Introduza o identificador OVHcloud que beneficiará desta delegação e valide a
 
 [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

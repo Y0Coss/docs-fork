@@ -76,7 +76,7 @@ Es gibt mehrere Möglichkeiten, Public Cloud Ressourcen zu verwalten. Ob als Ein
 
 - Um die Produkte zu entdecken, unterstützt Sie das Kundencenter bei der Erstellung von Ressourcen, indem Sie die Performance, den Standort, die gewünschte Personalisierung und andere Einstellungen wie die Abrechnung auswählen.
 
-- Um Deployments zu automatisieren und Ihre Architekturen zu industrialisieren, können Sie auch gängige Tools verwenden, indem Sie sich direkt über Standard-APIs wie der S3-API, den OpenStack-APIs oder sogar Kubernetes verbinden.
+- Um Deployments zu automatisieren und Ihre Architekturen zu industrialisieren, können Sie auch gängige Tools verwenden, indem Sie sich direkt über Standard-APIs wie der Amazon S3-API, den OpenStack-APIs oder sogar Kubernetes verbinden.
 
 ### In der praktischen Anwendung
 
@@ -115,7 +115,7 @@ Es kann sein, dass Sie sich mit einer Begrenzung der Kontingente für Public Clo
 Sie können mehrere Benutzer verwalten, die an Ihrem Projekt beteiligt sind.
 <br>Sie haben dann zwei Möglichkeiten:
 
-- Wenn Sie die OpenStack- oder S3-APIs oder das Horizon-Interface verwenden möchten, müssen dafür [Benutzer erstellt werden](/pages/public_cloud/compute/create_and_delete_a_user). Die Benutzer können gegebenenfalls eingeschränkte Rechte haben, um die Verwaltungsbereiche abzusichern.
+- Wenn Sie die OpenStack- oder Amazon S3-APIs oder das Horizon-Interface verwenden möchten, müssen dafür [Benutzer erstellt werden](/pages/public_cloud/compute/create_and_delete_a_user). Die Benutzer können gegebenenfalls eingeschränkte Rechte haben, um die Verwaltungsbereiche abzusichern.
 - Wenn der Zugriff nicht die APIs oder Horizon beinhalten muss, können Sie dem Projekt auch [einen weiteren OVHcloud Kunden-Account hinzufügen](/pages/public_cloud/compute/delegate_projects).
 
 ## Weiterführende Informationen <a name="gofurther"></a>
@@ -127,14 +127,13 @@ Nachfolgend finden Sie grundlegende Wissensressourcen, die Ihnen bei Ihrem Start
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Die häufigsten Fragen zur Public Cloud.|
 |[Glossar](/pages/public_cloud/compute/introduction_about_instances)|Die Konzepte und Definitionen zur fortgeschrittenen Nutzung.|
 |[Verfügbarkeit der Dienste nach Standort](https://www.ovhcloud.com/de/public-cloud/regions-availability/)|Verfügbarkeitstabellen der Dienste an den verschiedenen Standorten.|
-|[Changelog](/pages/public_cloud/compute/image_changelog)|Änderungslogs von öffentlich verfügbaren System-Images.|
 
 Verwenden Sie folgende Anleitungen, um Informationen zum praktischen Vorgehen zu erhalten:
 
 |Dokumentation|Beschreibung|
 |---|---|
 |[Erste Instanz erstellen](/pages/public_cloud/compute/public-cloud-first-steps)|Praktische Anleitung zum Starten eines Cloud-Servers über das OVHcloud Kundencenter.|
-|[Verwendung von SSH-Schlüsseln](/pages/public_cloud/compute/public-cloud-first-steps#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern_1)| Um sich mit einer Linux-Instanz zu verbinden, benötigen Sie eine SSH-Verbindung. In dieser Anleitung erfahren Sie, wie diese verwendet wird.|
+|[Verwendung von SSH-Schlüsseln](/pages/public_cloud/compute/creating-ssh-keys-pci)| Um sich mit einer Linux-Instanz zu verbinden, benötigen Sie eine SSH-Verbindung. In dieser Anleitung erfahren Sie, wie diese verwendet wird.|
 |[Konfiguration des privaten Netzwerks](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)|Bei OVHcloud werden private Netzwerke mit der vRack Technologie eingesetzt. Diese Anleitung begleitet Sie bei der Umsetzung.|
 |[Eine zusätzliche Disk mit einer Instanz verbinden](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)|In dieser Anleitung erfahren Sie, wie Sie zusätzlichen Storage zu Ihrer Instanz hinzufügen.|
 |[Auf das Horizon-Interface zugreifen](/pages/public_cloud/compute/introducing_horizon)|Das OpenStack Horizon Interface erlaubt einige erweiterte Einstellungen. Der Zugriff wird hier erklärt.|

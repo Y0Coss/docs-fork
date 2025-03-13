@@ -1,7 +1,7 @@
 ---
 title: "SAP HANA on Bare Metal et serveurs d'application SAP sur VMware on OVHcloud"
 excerpt: "Cette page vous présente une architecture hybride utilisant un serveur dédié HGR-SAP et la solution VMware on OVHcloud"
-updated: 2023-09-28
+updated: 2025-03-10
 ---
 
 ## Objectif
@@ -21,7 +21,7 @@ Ce concept vous permet de construire une architecture basée sur une base de don
 
 ### 1 - Connectivité réseau
 
-Afin de garantir la qualité de la liaison entre vos locaux et votre infrastructure SAP hébergée sur OVHcloud, nous recommandons d'utiliser OVHcloud Connect. Cette solution vous fournit un lien sécurisé et performant entre vos locaux et OVHcloud. Pour obtenir plus d'informations, veuillez vous référer à la [documentation OVHcloud Connect](https://www.ovhcloud.com/fr/network/ovhcloud-connect/).
+Afin de garantir la qualité de la liaison entre vos locaux et votre infrastructure SAP hébergée sur OVHcloud, nous recommandons d'utiliser OVHcloud Connect. Cette solution vous fournit un lien sécurisé et performant entre vos locaux et OVHcloud. Pour obtenir plus d'informations, veuillez vous référer à la [documentation OVHcloud Connect](/links/network/ovhcloud-connect).
 
 Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut également être déployé avec NSX. Pour connaître les étapes de configuration d'une passerelle VPN NSX avec OVHcloud, veuillez vous référer à [notre documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge).
 
@@ -29,7 +29,7 @@ Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut �
 
 La base de données SAP HANA est hébergée sur un serveur dédié de la gamme SAP HANA on Bare Metal (références HGR-SAP-1/2/3). Pour découvrir comment déployer une base de données SAP HANA sur un serveur dédié OVHcloud, nous vous conseillons [notre documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_sles_sap_hana_dedicated_server).
 
-Déployer une base de données SAP HANA sur un serveur dédié offre une [infrastructure aux coûts maîtrisés](https://www.ovhcloud.com/fr/bare-metal/uc-sap-hana/) conforme aux exigences SAP TDI (Tailored Datacenter Integration).
+Déployer une base de données SAP HANA sur un serveur dédié offre une [infrastructure aux coûts maîtrisés](/links/hosted-private-cloud/sap-hana) conforme aux exigences SAP TDI (Tailored Datacenter Integration).
 
 Dans le but de réduire la perte de données maximale admissible et le temps d'indisponibilité de votre infrastructure SAP sur une unique localisation OVHcloud, vous avez la possibilité d'ajouter une autre base de données SAP HANA sur un second serveur dédié et de configurer une réplication SAP HANA. Pour découvrir les différentes réplications supportées par SAP HANA, veuillez vous référer à la documentation officielle SAP disponible sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). Dans ce contexte, vous pourriez utiliser une réplication en mode SYNC.
 
@@ -39,35 +39,37 @@ Cette architecture vous prémunit d'une coupure de service causée par un incide
 
 Les serveurs d'application SAP sont hébergés sur la solution VMware on OVHcloud. Nous conseillons de prendre connaissance de la [SAP Note 2161991](https://launchpad.support.sap.com/#/notes/2161991), particulièrement les chapitres 2 et 3, ainsi que la [SAP Note 2015392](https://launchpad.support.sap.com/#/notes/2015392) pour appliquer une configuration de vos machines virtuelles conforme.
 
-La fonctionnalité Fault Tolerance fournie par VMware garantie la disponibilité de vos serveurs d'application SAP en cas de défauts sur l'hôte ESXi. Votre machine virtuelle est automatiquement activée sur un autre membre du cluster VMware. Nous conseillons de l'activer pour vos machines virtuelles qui hébergent les SAP Central Services (SCS), si vous ne gérez pas un cluster SAP pour ce service d'une autre manière. Le Fault Tolerance peut également être activé sur vos serveurs d'application SAP hébergeant un service critique.
+La fonctionnalité Fault Tolerance<sup>1</sup> fournie par VMware garantie la disponibilité de vos serveurs d'application SAP en cas de défauts sur l'hôte ESXi. Votre machine virtuelle est automatiquement activée sur un autre membre du cluster VMware. Nous conseillons de l'activer pour vos machines virtuelles qui hébergent les SAP Central Services (SCS), si vous ne gérez pas un cluster SAP pour ce service d'une autre manière. Le Fault Tolerance peut également être activé sur vos serveurs d'application SAP hébergeant un service critique.
 Cependant, pour être en capacité d'activer le Fault Tolerance, la machine virtuelle ne peut excéder 8 vCPU et 128 GB de mémoire.
 
 Pour les serveurs d'application SAP n'hébergeant pas de service critique, nous recommandons de vérifier que la fonctionnalité vSphere HA est activée sur votre cluster VMware. Cette fonctionnalité surveille l'état de santé de chaque hôte ESXi dans le cluster et redémarre automatiquement les machines virtuelles qui étaient hébergées sur l'hôte ESXi affecté.
 
 La fonctionnalité vSphere Distributed Resource Scheduler peut également être activée et liée à une règle VM/Host pour éviter d'héberger l'ensemble des serveurs d'application SAP sur le même hôte ESXi.
 
+<sup>1</sup> La fonctionnalité Fault Tolerance est actuellement incompatible si votre machine virtuelle utilise un groupe de ports créé et géré par NSX ([Article 317806](https://knowledge.broadcom.com/external/article?articleNumber=317806)).
+
 ### 4 - Infrastructure de sauvegarde
 
-Nous recommandons d'utiliser un bucket S3 Object Storage sur une localisation OVHcloud différente de celle où votre infrastructure est hébergée, pour vous protéger d'un incident majeur sur la localisation OVHcloud principale.
+Nous recommandons d'utiliser un bucket Object Storage sur une localisation OVHcloud différente de celle où votre infrastructure est hébergée, pour vous protéger d'un incident majeur sur la localisation OVHcloud principale.
 
 #### 4.1 - Base de données SAP HANA
 
-OVHcloud fournit OVHcloud Backint Agent for SAP HANA pour sauvegarder votre base de données SAP sur un bucket Object Storage S3 sur OVHcloud.
+OVHcloud fournit OVHcloud Backint Agent for SAP HANA pour sauvegarder votre base de données SAP sur un bucket Object Storage sur OVHcloud.
 
-Cet agent backint vous permet de tirer parti des avantages d'un Object Storage S3, comme la politique de rétention ou encore la politique des objets immuables. Pour en savoir plus sur OVHcloud Backint Agent for SAP HANA, nous conseillons de prendre connaissance de ces guides :
+Cet agent backint vous permet de tirer parti des avantages d'un Object Storage, comme la politique de rétention ou encore la politique des objets immuables. Pour en savoir plus sur OVHcloud Backint Agent for SAP HANA, nous conseillons de prendre connaissance de ces guides :
 
 - [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
-- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
+- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
 
 Pour garantir la restauration de la configuration de SAP HANA (fichiers INI), nous suggérons d'appliquer la valeur « true » pour le paramètre `include_configuration_backup`. Ce paramètre active la sauvegarde de tous les paramètres stockés dans les fichiers INI durant la sauvegarde des données de la base de données SAP HANA.
 
 #### 4.2 - Système de fichiers
 
-Afin de protéger vos systèmes de fichiers sur lesquels se trouvent des fichiers SAP importants, une solution économique peut être déployée avec l'exécution quotidienne d'un script copiant le contenu de ces systèmes de fichiers sensibles vers un bucket Object Storage S3 OVHcloud.
+Afin de protéger vos systèmes de fichiers sur lesquels se trouvent des fichiers SAP importants, une solution économique peut être déployée avec l'exécution quotidienne d'un script copiant le contenu de ces systèmes de fichiers sensibles vers un bucket Object Storage OVHcloud.
 
 Avec cette solution, seul le contenu de ces systèmes de fichiers sensibles est protégé. En cas de perte totale de la machine virtuelle, une construction complète de la machine virtuelle devra être effectuée avant d'effectuer la restauration du contenu.
 
-Une autre solution pour accélérer la restauration d'une machine virtuelle est de déployer ou d'utiliser un serveur Veeam Enterprise Plus existant dans votre solution VMware on OVHcloud liée à un Object Storage S3 OVHcloud.
+Une autre solution pour accélérer la restauration d'une machine virtuelle est de déployer ou d'utiliser un serveur Veeam Enterprise Plus existant dans votre solution VMware on OVHcloud liée à un Object Storage OVHcloud.
 
 Veeam Enterprise Plus vous permet de sauvegarder et de restaurer des snapshots de vos machines virtuelles. Cela vous assure une restauration rapide en cas d'incident sur votre solution VMware on OVHcloud.
 
@@ -77,7 +79,7 @@ Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans v
 
 Certaines données nécessitent d'être stockées et sauvegardées avec une rétention longue pour des raisons légales et/ou techniques, idéalement dans un espace de stockage dédié avec des accès limités une fois que la donnée a été écrite. OVHcloud propose une solution nommée Cold Archive pour ce type de besoin, solution ayant un haut niveau de sécurité pour vos données.
 
-Plus d'information sur [OVHcloud](https://www.ovhcloud.com/fr/public-cloud/cold-archive/).
+Plus d'information sur [OVHcloud](/links/public-cloud/cold-archive).
 
 ### 6 - Connexion du support SAP
 
@@ -111,7 +113,7 @@ Il est également possible d'ajouter une autre base de données SAP HANA sur la 
 
 Une réplication n-tier est structurée de la manière suivante :
 
-SAP HANA1<sub>(OVHcloud localisation 1)</sub> -> SAP HANA2<sub>(OVHcloud localisation 1)</sub> -> SAP HANA3<sub>(OVHcloud localisation 2)</sub>. 
+SAP HANA1<sub>(OVHcloud localisation 1)</sub> -> SAP HANA2<sub>(OVHcloud localisation 1)</sub> -> SAP HANA3<sub>(OVHcloud localisation 2)</sub>.
 
 Pour connaître les étapes de configuration de la réplication, veuillez vous référer à la documentation sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/ca6f4c62c45b4c85a109c7faf62881fc.html?locale=en-US).
 
@@ -127,7 +129,7 @@ Pour découvrir les étapes d'activation de cette fonctionnalité, veuillez vous
 
 #### 7.4 - Infrastructure de sauvegarde
 
-Comme mentionné précédemment, nous recommandons d'utiliser un bucket Object Storage S3 sur une localisation OVHcloud différente de celle où votre infrastructure SAP est en production, afin d'éviter un incident majeur sur votre localisation OVHcloud principale. Une sauvegarde croisée est plus prudente pour vos données d'entreprise.
+Comme mentionné précédemment, nous recommandons d'utiliser un bucket Object Storage sur une localisation OVHcloud différente de celle où votre infrastructure SAP est en production, afin d'éviter un incident majeur sur votre localisation OVHcloud principale. Une sauvegarde croisée est plus prudente pour vos données d'entreprise.
 
 #### 7.5 - Connexion du support SAP
 
@@ -143,8 +145,8 @@ Pour garantir la continuité de la connexion avec le support SAP, nous recommand
 - [Installer un SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
 - [Déployer un SAProuter avec NSX](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_vmware_saprouter)
 - [Installer et utiliser OVHcloud Backint Agent for SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
-- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
+- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

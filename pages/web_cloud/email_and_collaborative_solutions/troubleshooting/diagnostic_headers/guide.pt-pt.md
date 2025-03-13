@@ -27,10 +27,6 @@ updated: 2021-11-19
  }
 </style>
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 Um cabeçalho de e-mail tem como função traçar o caminho percorrido por este e-mail na rede, do remetente ao destinatário.<br>
@@ -45,7 +41,7 @@ Para recuperar um ficheiro `.eml`, consulte a secção [Webmail](#webmail).
 
 ## Requisitos
 
-- Dispor de um endereço de e-mail numa das nossas [soluções de e-mail OVHcloud](https://www.ovhcloud.com/pt/emails/) ou numa solução externa.
+- Dispor de um endereço de e-mail numa das nossas [soluções de e-mail OVHcloud](/links/web/emails) ou numa solução externa.
 - Ter acesso ao endereço de e-mail através do seu webmail ou de um software de correio eletrónico.
 
 ## Instruções
@@ -57,11 +53,11 @@ Apresentamos a seguir uma lista não exaustiva dos elementos que podem compor um
 
 - O campo `Received` está presente no cabeçalho a cada passagem do e-mail num servidor de envio (SMTP). Geralmente, o nome do host do servidor é encontrado com o seu endereço IP e a data. Os campos `Received` são classificados da passagem mais recente à passagem mais antiga num servidor:
 <pre class="bgwhite"><code>
-Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
+Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
 	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-  *Aqui, o e-mail foi enviado do servidor mxplan7.mail.ovh.net para o servidor mo3005.mail-out.ovh.net a 30 de junho de 2021 às 13h12:40 (Fuseau Horaire UTC)*
+  *Aqui, o e-mail foi enviado do servidor MX Plan7.mail.ovh.net para o servidor mo3005.mail-out.ovh.net a 30 de junho de 2021 às 13h12:40 (Fuseau Horaire UTC)*
 
 - O campo `Return-Path` corresponde ao endereço de retorno quando o envio da mensagem falhou. o endereço de retorno é geralmente aquele que realizou o envio.
 <pre class="bgwhite"><code>
@@ -167,7 +163,7 @@ Selecione o e-mail cujo cabeçalho deseja apresentar. Clique **na seta** à dire
 
 Consulte também o nosso tutorial em vídeo:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Obter o ficheiro .eml**
 
@@ -195,4 +191,4 @@ Para apresentar o cabeçalho na interface webmail &#60;Outlook.com&#62;, consult
 
 [FAQ E-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

@@ -1,12 +1,8 @@
 ---
 title: "Web hosting - Consultar las estadísticas y logs de un sitio web"
 excerpt: "Descubra cómo consultar las estadísticas y los logs de un sitio web en un plan de hosting"
-updated: 2024-02-27
+updated: 2025-02-20
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
-> 
 
 ## Objetivo
 
@@ -24,8 +20,8 @@ El acceso a los logs y a las estadísticas de su sitio web está incluido en su 
 Para acceder a los diferentes datos estadísticos y logs de su alojamiento web, lleve a cabo las siguientes acciones: 
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
-3. En la columna izquierda, haga clic en el menú desplegable `Alojamientos`{.action}.
+2. Haga clic en la pestaña `Web Cloud`{.action}.
+3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
 
@@ -112,8 +108,8 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 También puede consultar el enlace de acceso a las estadísticas / logs directamente desde su área de cliente:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
-3. En la columna izquierda, haga clic en el menú desplegable `Alojamientos`{.action}.
+2. Haga clic en la pestaña `Web Cloud`{.action}.
+3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
 6. Acceda a la sección `Estadísticas de visitas`{.action}.

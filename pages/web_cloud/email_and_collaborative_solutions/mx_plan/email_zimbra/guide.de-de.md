@@ -1,12 +1,8 @@
 ---
-title: "MX Plan - Zimbra Webmail verwenden"
+title: "Zimbra Webmail verwenden"
 excerpt: "Erfahren Sie hier, wie Sie das Zimbra Webmail-Interface mit OVHcloud MX Plan E-Mail-Accounts verwenden"
-updated: 2024-08-26
+updated: 2025-02-12
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 <style>
 .w-400 {
@@ -14,26 +10,16 @@ updated: 2024-08-26
 }
 </style>
 
-> [!primary]
->
-> **Wichtig**
->
-> Zimbra Webmail für MX Plan ist noch nicht allgemein verfügbar.
->
-> Deshalb wird es vorläufig nur bei Migrationen im Zusammenhang mit der Weiterentwicklung unseres MX Plan Dienstes aktiviert. Diese Migration erfolgt automatisch. Unsere Teams senden Ihnen eine E-Mail zu, wenn Sie von der Migration betroffen sind.
->
-> Weitere Informationen finden Sie in unseren [OVHcloud Zimbra FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra).
-
 ## Ziel
 
-Mit dem MX Plan Angebot von OVHcloud können Sie E-Mails über einen E-Mail-Client (Thunderbird, Outlook, Mac Mail) oder per Webmail im Webbrowser Ihres Geräts versenden und empfangen.<br>
+Mit dem MX Plan Angebot von OVHcloud können Sie E-Mails über einen E-Mail-Client (Thunderbird, Outlook, Mac Mail) oder per Webmail im Webbrowser Ihres Geräts versenden und empfangen.  
 OVHcloud bietet den Webmail-Dienst Zimbra an, um auf MX Plan E-Mail-Accounts zuzugreifen. Auf dieser Seite werden die für die Verwendung dieses Webmailers erforderlichen Funktionen erläutert.
 
 **Diese Anleitung erklärt, wie Sie Zimbra Webmail für Ihre OVHcloud MX Plan E-Mail-Accounts verwenden.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein **MX Plan** Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder enthalten in [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+- Sie verfügen über ein **MX Plan** Angebot, entweder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten, separat bestellt, oder enthalten in [Kostenloses Hosting 100M](/links/web/domains-free-hosting).
 - Sie verfügen über die Logindaten des MX Plan E-Mail-Accounts, den Sie verwenden möchten. Weitere Informationen finden Sie in unserer Anleitung "[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
 
 ## In der praktischen Anwendung
@@ -66,7 +52,7 @@ OVHcloud bietet den Webmail-Dienst Zimbra an, um auf MX Plan E-Mail-Accounts zuz
 
 ### In Zimbra Webmail einloggen <a name="login"></a>
 
-Gehen Sie auf die Seite <https://www.ovh.com/fr/mail/>. Geben Sie Ihre E-Mail-Adresse und das Passwort ein und klicken Sie dann auf `Anmelden`{.action}.
+Gehen Sie auf die Seite [Webmail](/links/web/email). Geben Sie Ihre E-Mail-Adresse und das Passwort ein und klicken Sie dann auf `Anmelden`{.action}.
 
 ![Zimbra - Anmeldung](images/ovhcloud-login-webmail.png){.thumbnail}
 
@@ -603,4 +589,4 @@ Um auf die Konfiguration des Auto-Responders zuzugreifen, klicken Sie auf das Za
 
 [E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Treten Sie unserer [User Community](/links/community) bei.

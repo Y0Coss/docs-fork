@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Getting started with Object Storage
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2024-06-21
+updated: 2025-02-11
 ---
 
 ## Objective
@@ -11,8 +11,8 @@ This guide is designed to familiarise you with the management of your containers
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- An [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) already created
+- Access to the [OVHcloud Control Panel](/links/manager)
+- An [Object Storage user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) already created
 
 ## Instructions
 
@@ -20,11 +20,27 @@ This guide is designed to familiarise you with the management of your containers
 
 #### Installation
 
-Enter the following command:
+Enter the following command depending on the method chosen:
 
-```bash
-user@host:~$ pip3 install awscli
-```
+> [!tabs]
+> **Python package**
+>>
+>> ```bash
+>> user@host:~$ pip install awscli
+>> ```
+>>
+> **Debian-based OS**
+>>
+>> ```bash
+>> user@host:~$ sudo apt install awscli
+>> ```
+>>
+> **RHEL-based OS**
+>>
+>> ```bash 
+>> user@host:~$ sudo yum install awscli
+>> ```
+>>
 
 > [!primary]
 >
@@ -33,7 +49,7 @@ user@host:~$ pip3 install awscli
 
 #### Collect Credentials
 
-- You will need your user's Access key* and *Secret key*. You can access this information in the ‘S3 users’ tab in your Control Panel.
+- You will need your user's Access key* and *Secret key*. You can access this information in the ‘Object Storage users’ tab in your Control Panel.
 - You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
 
 #### Configuration
@@ -57,7 +73,7 @@ aws_secret_access_key = <secret_key>
 
 user@host:~$ cat ~/.aws/config
 
-[profile default]
+[default]
 region = <region_in_lowercase>
 endpoint_url = <url_endpoint>
 s3 =
@@ -146,8 +162,9 @@ aws s3 cp s3://<bucket_name> s3://<bucket_name_2> --recursive
 **Synchronising buckets**
 
 ```bash
-aws s3 sync. s3://<bucket_name>
-aws s3 sync s3://<bucket_name> s3://<bucket_name_2>
+aws s3 sync . s3://<bucket_name> # Synchronising local directory to the S3 bucket
+aws s3 sync s3://<bucket_name> . # Synchronising S3 bucket to the local directory
+aws s3 sync s3://<bucket_name> s3://<bucket_name_2> # Synchronising an S3 bucket to another one
 ```
 
 **Deleting objects and buckets**
@@ -247,6 +264,6 @@ aws s3api s3api delete-object-tagging --bucket <bucket_name> --key test1
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

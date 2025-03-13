@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - FAQ
 excerpt: 'FAQ sur la solution Entreprise File Storage'
-updated: 2022-03-21
+updated: 2025-02-21
 ---
 
 ## Objectif
@@ -24,7 +24,7 @@ Cette solution permet également de répondre à des cas pratiques plus complexe
 
 ### Peut-on gérer Enterprise File Storage depuis l’espace client ?
 
-Oui, ce service est directement accessible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la rubrique `Bare Metal Cloud`{.action} puis `Storage et Backup`{.action}.
+Oui, ce service est directement accessible depuis votre [espace client OVHcloud](/links/manager), dans la rubrique `Bare Metal Cloud`{.action} puis `Storage et Backup`{.action}.
 
 ## Disponibilité
 
@@ -56,7 +56,7 @@ Notre solution Enterprise File Storage est conforme à plusieurs normes de point
 
 ### Peut-on accéder à Enterprise File Storage depuis un réseau privé de type vRack ?
 
-Pas pour le moment, mais cette fonctionnalité sera bientôt disponible (vRack endpoint).
+Oui (vRack endpoint).
 
 ## Accès *On-premises*
 
@@ -70,7 +70,7 @@ Nous vous invitons à joindre notre service commercial ou notre support techniqu
 
 ### Quelles sont les capacités de stockage disponibles ?
 
-La taille minimum d’un service est de 1TiB et la taille maximum est de 58TiB. La granularité est de 1TiB.
+La taille minimum d’un service est de 1TB et la taille maximum est de 58TB. La granularité est de 1TB.
 
 ### Combien de services Enterprise File Storage puis-je créer depuis mon compte client ?
 
@@ -78,13 +78,13 @@ Il n’y a pas de limite de nombre de services par compte client.
 
 ### Quel est le nombre de volumes maximum par service ?
 
-Il est possible de créer jusqu’à 10 volumes maximum par service. La taille minimum est de 100GiB et la taille maximum est de 29TiB.
+Il est possible de créer jusqu’à 10 volumes maximum par service. La taille minimum est de 100GB et la taille maximum est de 29TB.
 
 ### Quel niveau de performance est disponible avec Enterprise File Storage ?
 
-Enteprise File Storage est fourni avec un débit garanti de 64Mo/s par TiB et de 4000 IOPS par TiB.
+Enteprise File Storage est fourni avec un débit garanti de 64Mo/s par TB et de 4000 IOPS par TB.
 
-Par exemple, lors de la livraison d'un pool de 10 TiB, vous bénéficiez d'une bande passante de 640Mo/s et de 40000 IOPS.
+Par exemple, lors de la livraison d'un pool de 10 TB, vous bénéficiez d'une bande passante de 640Mo/s et de 40000 IOPS.
 
 ## Snapshots et sauvegardes
 
@@ -96,9 +96,9 @@ Les snapshots sont disponibles dans un répertoire prévu à cet effet (.snapsho
 
 Les utilisateurs sont responsables de la gestion de leurs sauvegardes (outil et règles). Cependant, pour des raisons de sécurité et de résilience de l'infrastructure, OVHcloud opère une sauvegarde quotidienne du service dans un serveur distant. En cas de panne ou d'attaque, OVHcloud peut restaurer les données du jour précédent. Cette action s'effectue sur demande et est un service optionnel facturé.
 
-### Les snapshots sont-ils compris dans la capacité d'un service ?
+### Les snapshots sont-ils compris dans la capacité d’un service ?
 
-Un minimum de 5% de l’espace de stockage est attribué aux snapshots. Par exemple, sur un service de 5TiB, 250GiB sont réservés pour les snapshots.
+Un minimum de 5% de l’espace de stockage est attribué aux snapshots. Par exemple, sur un service de 5TB, 250GB sont réservés pour les snapshots.
 
 ### Quel est le nombre maximum de snapshots par service ?
 
@@ -128,10 +128,10 @@ Il n’existe pas encore de métriques intégrées pour suivre l’utilisation d
 
 ### Quel type de tarification est lié au service ?
 
-Enterprise File Storage est un service facturé mensuellement au volume (de 1 à 58 To par paliers de 1 To). Il est également possible, optionnellement, de s'engager sur une durée d'utilisation du service (12, 24 ou 36 mois).
+Enterprise File Storage est un service facturé mensuellement au volume (de 1 à 58 TB par paliers de 1 TB). Il est également possible, optionnellement, de s'engager sur une durée d'utilisation du service (12, 24 ou 36 mois).
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

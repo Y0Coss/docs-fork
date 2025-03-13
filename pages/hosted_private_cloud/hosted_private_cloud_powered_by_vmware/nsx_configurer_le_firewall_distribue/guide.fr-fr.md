@@ -1,7 +1,11 @@
 ---
 title: Configurer le firewall distribué NSX-v
-updated: 2021-12-01
+updated: 2025-02-27
 ---
+
+> [!alert]
+> **Fin de prise en charge**
+>  NSX-v n'est plus pris en charge dans l'environnement OVHcloud
 
 ## Objectif
 
@@ -194,4 +198,4 @@ La création/modification de règles/sections n'est pas enregistrée tant que vo
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

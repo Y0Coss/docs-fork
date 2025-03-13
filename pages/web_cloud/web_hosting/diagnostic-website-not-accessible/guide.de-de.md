@@ -4,10 +4,6 @@ excerpt: Diagnose der Ursachen für die Unverfügbarkeit Ihrer Website
 updated: 2022-08-02
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel 
 
 Wenn Ihre Website nicht erreichbar ist, können in Ihrem Browser mehrere Fehlermeldungen angezeigt werden. Die folgenden Beispiele zeigen eine fehlerhafte Konfiguration Ihrer [DNS-Server](/pages/web_cloud/domains/dns_server_edit), Ihrer [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) oder einer gesperrten Domäne (wenn auf Ihrer Website eine der hier beschriebenen Fehlermeldungen nicht angezeigt wird, finden Sie weitere Informationen im Abschnitt [Weiterführende Informationen](#go-further):
@@ -44,9 +40,9 @@ Wenn Ihre Website nicht erreichbar ist, können in Ihrem Browser mehrere Fehlerm
 > Daher empfehlen wir Ihnen dringend, die [automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#in-der-praktischen-anwendung) für alle Ihre OVHcloud Abonnements zu aktivieren.
 >
 
-Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](/links/manager) auf Ihren Namen, um das Kontextmenü anzuzeigen, und dann auf `Produkte und Dienstleistungen`{.action}.
+Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](/links/manager) auf Ihren Namen, um das Kontextmenü anzuzeigen, und dann auf `Meine Angebote und Dienste`{.action}.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-product-and-services.png){.thumbnail}
+![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-my-solutions-and-services.png){.thumbnail}
 
 Wenn nötig verlängern Sie Ihre Domain mit Klick auf den Button `...`{.action} rechts und dann auf `Dienst verlängern`{.action}.
 

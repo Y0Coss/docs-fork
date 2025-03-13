@@ -1,7 +1,7 @@
 ---
 title: "Activating the application firewall"
 excerpt: "Find out how to activate the application firewall on a Web Hosting plan"
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 ## Objective
@@ -17,6 +17,11 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 - SQL or XSS type injections
 
 **This guide explains how to enable your application firewall for enhanced protection in your OVHcloud Control Panel.**
+
+> [!primary]
+>
+> Since your web hosting plan is hosted on a shared infrastructure, modifying your firewall configuration settings is unavailable.
+>
 
 ## Requirements
 
@@ -50,7 +55,7 @@ Click on `Next`{.action} and then on `Confirm`{.action} to modify the Multisite 
 
 ### Checking the status of the activation task
 
-![manageongoing](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
+![manageongoing](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Tasks to update your Multisite configuration will be listed in the `Ongoing jobs`{.action} tab (initial status is `Planned`). The firewall will be active once its update task no longer appears in the list.
 

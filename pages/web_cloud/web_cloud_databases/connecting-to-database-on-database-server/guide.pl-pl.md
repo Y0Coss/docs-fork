@@ -1,12 +1,8 @@
 ---
-title: "Logowanie do bazy danych Twojego serwera baz danych"
-excerpt: "Dowiedz się, jak się zalogować do bazy danych"
+title: "Web Cloud Databases - Logowanie do bazy danych"
+excerpt: "Dowiedz się, jak się zalogować do bazy danych dostępnej w rozwiązaniu Web Cloud Databases"
 updated: 2023-10-31
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -182,6 +178,8 @@ Jesteś teraz zalogowany do bazy danych:
 ![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ## Sprawdź również
+
+[Hosting WWW - Moja baza danych jest zapełniona, co robić?](/pages/web_cloud/web_hosting/sql_overquota_database).
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

@@ -1,12 +1,8 @@
 ---
 title: "Konfiguration von IP-Aliasing"
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen"
-updated: 2024-03-25
+updated: 2024-11-05
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 > [!primary]
 >
@@ -55,7 +51,7 @@ Beachten Sie die folgende Terminologie, die in Codebeispielen und Anweisungen de
 
 In unseren Beispielen verwenden wir den Texteditor `nano`. Bei einigen Betriebssystemen muss es vor der Verwendung installiert werden. Ist das der Fall, werden Sie dazu aufgefordert. Sie können natürlich auch einen beliebigen Texteditor verwenden.
 
-### Debian 10/11
+### Debian 11
 
 Standardmäßig befindet sich die Konfigurationsdatei unter `/etc/network/interfaces.d/`. Es wird empfohlen, zunächst eine Sicherungskopie der entsprechenden Konfigurationsdatei zu erstellen.
 
@@ -170,7 +166,7 @@ Im letzten Schritt starten Sie das Interface neu:
 sudo /etc/init.d/networking restart
 ```
 
-### Fedora 38 und spätere Versionen
+### Fedora 39 und spätere Versionen
 
 Fedora verwendet nunmehr Schlüsseldateien (*keyfiles*).
 Fedora speicherte zuvor im Verzeichnis `/etc/sysconfig/network-scripts/` Netzwerkprofile im Format ifcfg.<br>
@@ -281,7 +277,6 @@ Bearbeiten Sie anschließend die Datei mit folgendem Inhalt und ersetzen Sie `IN
 ```yaml
 network:
    version: 2
-   renderer: networkd
    ethernets:
        INTERFACE_NAME:
            dhcp4: true
@@ -294,7 +289,6 @@ Wenn Sie zwei Additional IPs konfigurieren müssen, sollte die Konfigurationsdat
 ```yaml
 network:
    version: 2
-   renderer: networkd
    ethernets:
        INTERFACE_NAME:
            dhcp4: true
@@ -313,7 +307,6 @@ network:
 ```yaml
 network:
    version: 2
-   renderer: networkd
    ethernets:
        eth0:
            dhcp4: true
@@ -339,7 +332,7 @@ sudo netplan apply
 > Bei Verwendung des Befehls `netplan try` kann eine Warnmeldung wie `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Das bedeutet nur, dass die Datei keine einschränkenden Berechtigungen hat. Dies hat keine Auswirkungen auf die Konfiguration Ihrer Additional IP. Weitere Informationen zu Dateiberechtigungen finden Sie in der [offiziellen Dokumentation von Ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 >
 
-### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 Die Hauptkonfigurationsdatei befindet sich unter `/etc/sysconfig/network-scripts/`. In unserem Beispiel heißt es `ifcfg-eth0`. Überprüfen Sie Ihren Dateinamen in diesem Ordner, bevor Sie Änderungen vornehmen.
 
@@ -385,13 +378,7 @@ BROADCAST=203.0.113.1
 
 #### Schritt 3: Interface neu starten
 
-Im letzten Schritt starten Sie Ihr Interface neu:
-
-```sh
-ifup eth0:0
-```
-
-#### Für AlmaLinux und Rocky Linux
+Als letzten Schritt starten Sie Ihr Interface neu:
 
 ```sh
 sudo systemctl restart NetworkManager

@@ -12,7 +12,7 @@ Bei der Installation oder Neuinstallation eines Windows-Betriebssystems wird Ihn
 
 > [!warning]
 >
-> Diese Anleitung gilt nicht für den die Verwendung des Rescue-Modus `Windows Customer Rescue System`.
+> Diese Anleitung gilt nicht für die Verwendung des Rescue-Modus `Windows Customer Rescue System`.
 >
 > Verwenden Sie stattdessen [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows), wenn Sie die Option `Windows Customer Rescue System (Windows2022-based)` im OVHcloud Kundencenter auswählen.
 >

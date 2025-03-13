@@ -1,7 +1,7 @@
 ---
 title: "Utiliser OVHcloud Object Storage comme Backend Terraform pour stocker votre état (state) Terraform"
 excerpt: "Découvrez comment utiliser l’Object Storage d’OVHcloud comme Backend Terraform pour stocker votre état (state) Terraform"
-updated: 2023-12-06
+updated: 2024-10-29
 ---
 
 ## Objectif
@@ -16,7 +16,7 @@ Dans ce tutoriel, vous allez :
 
 ## Prérequis
 
-- Être connecté votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr)
+- Être connecté votre [espace client OVHcloud](/links/manager)
 - Une instance [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
 - Installation de la CLI [Terraform](https://www.terraform.io/downloads){.external}
 
@@ -45,7 +45,7 @@ Mais l’usage courant, en environnement de production, est de le stocker à dis
 
 ![Terraform state schema](images/schema.png){.thumbnail}
 
-Par exemple, vous pouvez stocker votre état Terraform sur un conteneur Object Storage High Performance (S3) d’OVHcloud.
+Par exemple, vous pouvez stocker votre état Terraform sur un conteneur Object Storage High Performance d’OVHcloud.
 
 Pour ce faire, vous devez configurer un `backend` dans vos fichiers de configuration Terraform HCL.
 
@@ -78,7 +78,8 @@ $ aws s3 ls
 Créez un fichier `backend.tf` avec le contenu suivant :
 
 Avant Terraform version 1.6.0:
-```yaml
+
+```hcl
 terraform {
     backend "s3" {
       bucket = "terraform-state-hp"
@@ -89,12 +90,19 @@ terraform {
       skip_credentials_validation = true
       skip_region_validation      = true
       skip_s3_checksum            = true
+
+      # The following fields should be added if your Object Storage user credentials are not
+      # already configured in files ~/.aws/credentials, ~/.aws/config or in
+      # environment variables.
+      access_key                  = "s3 user access key"
+      secret_key                  = "s3 user secret key"
     }
 }
 ```
 
 Après Terraform version 1.6.0:
-```yaml
+
+```hcl
 terraform {
     backend "s3" {
       bucket = "terraform-state-hp"
@@ -108,11 +116,17 @@ terraform {
       skip_region_validation      = true
       skip_requesting_account_id  = true
       skip_s3_checksum            = true
+
+      # The following fields should be added if your Object Storage user credentials are not
+      # already configured in files ~/.aws/credentials, ~/.aws/config or in
+      # environment variables.
+      access_key                  = "s3 user access key"
+      secret_key                  = "s3 user secret key"
     }
 }
 ```
 
-Dans ce fichier, vous définissez un backend [Swift Terraform](https://www.terraform.io/language/settings/backends/s3) dans la région `gra`. N'hésitez pas à modifier ce paramètre si vous avez créé un conteneur Object Storage dans une autre région.
+Dans ce fichier, vous définissez un backend [Object Storage Terraform](https://www.terraform.io/language/settings/backends/s3) dans la région `gra`. N'hésitez pas à modifier ce paramètre si vous avez créé un conteneur Object Storage dans une autre région.
 
 ### Terraform Init
 

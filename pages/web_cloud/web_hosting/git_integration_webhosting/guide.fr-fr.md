@@ -1,7 +1,7 @@
 ---
 title: "Configurer et utiliser Git avec son hébergement web OVHcloud"
 excerpt: "Découvrez comment configurer et utiliser Git avec votre hébergement web dans votre espace client OVHcloud"
-updated: 2024-08-22
+updated: 2025-01-31
 ---
 
 ## Objectif
@@ -15,6 +15,10 @@ Dans le paysage numérique actuel, les sociétés sont de plus en plus dynamique
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie Web Cloud.
 - Posséder un compte [GitHub](https://github.com/){.external} et y être connecté.
+
+> [!primary]
+>
+> A date, seule la plateforme GitHub est supportée dans le cadre de l'utilisation avec les services d'hébergement Web OVHcloud.
 
 ## En pratique
 
@@ -42,36 +46,14 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) et effectuez le
 
 Le formulaire d'association de Git s'affiche. Plusieurs éléments doivent être configurés :
 
-- Clé SSH
 - Dépôt GitHub
 - Branche du dépôt GitHub
+- Clé SSH (pour un dépôt GitHub privé)
 - Webhook (optionnel)
-
-#### Associer une clé SSH à GitHub <a name="linkSSHKey"></a>
-
-> [!primary]
->
-> La génération d'une clé SSH est une étape cruciale, car elle établit une connexion sécurisée et chiffrée entre le répertoire de votre site web et le dépôt GitHub. Cette clé assure que les transferts de données et les modifications de code se font de manière sûre et authentifiée, prévenant les accès non autorisés et garantissant l'intégrité du code.
->
-
-Copiez et enregistrez la clé SSH sur votre compte GitHub. Cela permet d'établir une connexion sécurisée sans nécessiter de saisie de mot de passe à chaque opération Git que vous serez amenés à effectuer.
-
-- Connectez-vous à votre compte GitHub.
-- Cliquez sur votre image de profil en haut à droite, puis sur `Settings`{.action}.
-- Sur la nouvelle page, cliquez sur `SSH and GPG keys`{.action} dans la colonne de gauche.
-- Sélectionnez `New SSH key`{.action} ou `Add SSH key`{.action}.
-
-Le formulaire d'ajout d'une nouvelle clé SSH s'affiche :
-
-- **Title** : ajoutez une description pour votre clé SSH. Par exemple, vous pouvez nommer cette clé « OVHcloud ». 
-- **Type of key** : laissez la valeur par défaut `authentication key`{.action}
-- **Key** : collez votre clé SSH.
-
-Pour valider les informations, cliquez sur `Add SSH key`{.action}. Si vous y êtes invité, confirmez l'accès à votre compte dans GitHub.
 
 #### Définir le dépôt GitHub
 
-Retournez sur le formulaire d'association de Git de votre espace client OVHcloud. Vous devez renseigner l'adresse de votre dépôt GitHub. Si vous n'avez pas encore de dépôt GitHub pour votre projet, créez-en un.
+Renseignez l'adresse de votre dépôt GitHub. Si vous n'avez pas encore de dépôt GitHub pour votre projet, créez-en un.
 
 Pour créer un nouveau dépôt :
 
@@ -88,7 +70,12 @@ Définissez un nom pour votre dépôt et remplissez les informations demandées.
 
 Enfin, cliquez sur `Create Repository`{.action}.
 
-Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name.git>`{.action}. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
+Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme :
+
+- `https://github.com/<username>/<repository_name.git>` pour un dépôt public.
+- `git@github.com:<username>/<repository_name.git>` pour un dépôt privé. 
+ 
+ Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 
@@ -103,6 +90,33 @@ Définissez maintenant la branche de votre dépôt GitHub. La branche par défau
 
 Retournez sur le formulaire d'association de Git de votre espace client OVHcloud et indiquez le nom de la nouvelle branche que vous venez de créer.
 
+#### Associer une clé SSH à GitHub (uniquement pour les dépôts GitHub privés) <a name="linkSSHKey"></a>
+
+> [!primary]
+>
+> La génération d'une clé SSH est une étape cruciale, car elle établit une connexion sécurisée et chiffrée entre le répertoire de votre site web et le dépôt GitHub. Cette clé assure que les transferts de données et les modifications de code se font de manière sûre et authentifiée, prévenant les accès non autorisés et garantissant l'intégrité du code.
+
+> [!primary]
+>
+> **Pourquoi la clé SSH est-elle nécessaire uniquement pour un dépôt privé ?**
+>
+> Lorsque votre dépôt GitHub est public, les fichiers peuvent être récupérés sans authentification, ce qui signifie que Git peut cloner et mettre à jour le code sans avoir besoin d'une clé SSH. En revanche, si votre dépôt est privé, GitHub exige une authentification pour y accéder. La clé SSH permet alors d’établir cette connexion sécurisée et de garantir que seuls les utilisateurs autorisés puissent interagir avec le dépôt.
+
+Copiez et enregistrez la clé SSH sur votre compte GitHub. Cela permet d'établir une connexion sécurisée sans nécessiter de saisie de mot de passe à chaque opération Git que vous serez amené à effectuer.
+
+- Connectez-vous à votre compte GitHub.
+- Cliquez sur votre image de profil en haut à droite, puis sur `Settings`{.action}.
+- Sur la nouvelle page, cliquez sur `SSH and GPG keys`{.action} dans la colonne de gauche.
+- Sélectionnez `New SSH key`{.action} ou `Add SSH key`{.action}.
+
+Le formulaire d'ajout d'une nouvelle clé SSH s'affiche :
+
+- **Title** : ajoutez une description pour votre clé SSH. Par exemple, vous pouvez nommer cette clé « OVHcloud ». 
+- **Type of key** : laissez la valeur par défaut `authentication key`
+- **Key** : collez votre clé SSH.
+
+Pour valider les informations, cliquez sur `Add SSH key`{.action}. Si vous y êtes invité, confirmez l'accès à votre compte dans GitHub.
+
 #### Configurer le déploiement automatique
 
 En bas du formulaire d'association de Git, une section `Configuration du déploiement automatique`{.action} s'affiche, accompagnée de l'URL de webhook. Configurer un webhook permet à votre dépôt GitHub de notifier automatiquement votre hébergement web OVHcloud des événements qui se produisent sur le dépôt GitHub (nouveau déploiement, changement dans le code, etc.). Cette fonctionnalité est particulièrement utile si vous travaillez en groupe sur le même projet et que vous souhaitez rester à jour de toutes les modifications du dépôt GitHub. Pour en savoir plus, découvrez comment [configurer un webhook sur GitHub](#configureWebhook).
@@ -112,7 +126,7 @@ En bas du formulaire d'association de Git, une section `Configuration du déploi
 Avant de valider le formulaire d'association de Git, assurez-vous que :
 
 - Votre clé SSH a bien été enregistrée dans votre compte GitHub.
-- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name.git>`{.action}.
+- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name.git>`.
 - Le nom de la branche du dépôt GitHub est correct.
 - Votre répertoire d'installation est vide.
 
@@ -128,7 +142,7 @@ Après avoir validé le formulaire s'association de Git, vous êtes redirigé su
 
 Une bannière verte vous indique que Git est en cours d'activation. Suivez l'activation de Git en cliquant sur le lien `Tâche en cours`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ongoing-task-git-activation.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/ongoing-task-git-activation.png){.thumbnail}
 
 Le statut `En cours`{.action} indique que l'association de Git est en cours. Le processus peut prendre plusieurs minutes. Lorsque la tâche est achevée, le statut `Activé`{.action} s'affiche.
 

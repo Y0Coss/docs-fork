@@ -4,10 +4,6 @@ excerpt: Saiba como validar o seu domínio na sua plataforma de e-mail adicionan
 updated: 2023-08-29
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 Quando adiciona um domínio à sua plataforma de e-mail, poderá ser-lhe solicitada a configuração de um registo CNAME na zona DNS. Esta tem como objetivo assegurar que o nome de domínio afetado é legítimo para ser utilizado na plataforma de e-mail.
@@ -20,8 +16,8 @@ Quando adiciona um domínio à sua plataforma de e-mail, poderá ser-lhe solicit
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}.
-- Dispor de uma solução [Exchange](https://www.ovhcloud.com/pt/emails/) ou [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
+- Dispor de uma solução [Exchange](/links/web/emails) ou [Email Pro](/links/web/email-pro).
 - Ter adicionado um domínio à sua plataforma de e-mail. Se necessário, pode consultar o guia " [Adicionar um domínio a uma plataforma de e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ".
 - Poder [configurar a zona DNS](/pages/web_cloud/domains/dns_zone_edit) do domínio em causa a partir da Área de Cliente OVHcloud ou da interface de gestão onde está registado.
 
@@ -31,9 +27,9 @@ Quando adiciona um domínio à sua plataforma de e-mail, poderá ser-lhe solicit
 
 O registo CNAME é utilizado aqui como alias, e aponta para um destino que por sua vez envia para um endereço IP. Por isso, não se trata, por natureza, de um registo associado a um serviço de e-mail.
 
-No âmbito das nossas ofertas [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) e [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/), este registo CNAME é utilizado como código de validação (token) que será visível na zona DNS do nome de domínio a validar. O objetivo é verificar se o utilizador da plataforma de e-mail é o gestor do nome de domínio que adiciona.
+No âmbito das nossas ofertas [**Hosted Exchange**](/links/web/emails-hosted-exchange) e [**Email Pro**](/links/web/email-pro), este registo CNAME é utilizado como código de validação (token) que será visível na zona DNS do nome de domínio a validar. O objetivo é verificar se o utilizador da plataforma de e-mail é o gestor do nome de domínio que adiciona.
 
-No diagrama abaixo, a plataforma de e-mail ([Exchange](https://www.ovhcloud.com/pt/emails/) ou [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/)) é representada pelo quadro verde.<br>
+No diagrama abaixo, a plataforma de e-mail ([Exchange](/links/web/emails) ou [Email Pro](/links/web/email-pro)) é representada pelo quadro verde.<br>
 Para formar os endereços de e-mail adicione contas (aqui representadas por " **contacto** ", " **john.smith** " e " **mary.johnson** ").<br>
 O domínio **mydomain.ovh** foi adicionado à plataforma de e-mail (consulte o guia " [Adicionar um domínio a uma plataforma de e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ").<br>
 Um código de validação é gerado pela plataforma (sob a forma " **abcd1-check** " no nosso exemplo).<br>
@@ -114,4 +110,4 @@ Para verificar se a configuração do registo CNAME foi lida corretamente pela s
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

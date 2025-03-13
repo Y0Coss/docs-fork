@@ -8,7 +8,7 @@ updated: 2023-08-21
 
 Sur un serveur disposant d'une configuration RAID matériel, la matrice RAID est gérée par un composant physique appelé contrôleur RAID.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
@@ -421,7 +421,7 @@ Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fo
 
 [Configurer votre MegaRAID en RAID 0](/pages/bare_metal_cloud/dedicated_servers/megaraid_config)
 
-[API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Gestion du RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 

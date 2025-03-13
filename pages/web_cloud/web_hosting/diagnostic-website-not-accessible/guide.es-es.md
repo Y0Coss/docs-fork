@@ -4,10 +4,6 @@ excerpt: "Diagnóstico de las causas de la inaccesibilidad de su sitio web"
 updated: 2022-08-02
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
-
 ## Objetivo
 
 En caso de que su sitio web no sea accesible, pueden aparecer varios errores en su navegador. Los siguientes ejemplos indican una configuración incorrecta de sus [servidores DNS](/pages/web_cloud/domains/dns_server_edit), su [zona DNS](/pages/web_cloud/domains/dns_zone_edit) o un dominio suspendido (si su sitio web no muestra ninguno de los mensajes de error descritos aquí, consulte [Más información](#go-further)):
@@ -46,9 +42,9 @@ En caso de que su sitio web no sea accesible, pueden aparecer varios errores en 
 > Por lo tanto, le recomendamos que active la [renovación automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#procedimiento) en todas sus suscripciones de OVHcloud.
 >
 
-Para comprobar la validez de la suscripción relativa a su nombre de dominio, haga clic en su nombre en la esquina superior derecha del [área de cliente de OVHcloud](/links/manager) y seleccione `Productos y servicios`{.action}.
+Para comprobar la validez de la suscripción relativa a su nombre de dominio, haga clic en su nombre en la esquina superior derecha del [área de cliente de OVHcloud](/links/manager) y seleccione `Mis soluciones y servicios`{.action}.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-product-and-services.png){.thumbnail}|
+![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-my-solutions-and-services.png){.thumbnail}|
 
 Renueve su dominio si es necesario a través del botón `...`{.action} a la derecha de la pantalla y luego `Renovar el servicio`{.action}.
 

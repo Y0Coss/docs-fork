@@ -4,9 +4,6 @@ excerpt: 'Cómo gestionar la facturación de un servicio Email Pro'
 updated: 2022-02-23
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
@@ -16,14 +13,17 @@ La solución Email Pro dispone de una gestión flexible relativa a la facturaci�
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Disponer de una [cuenta Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Disponer de una [cuenta Email Pro](/links/web/email-pro).
 
 ## Procedimiento
 
 ### Contratar cuentas adicionales
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Email Pro`{.action} y seleccione la plataforma Email Pro correspondiente.
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+1. Haga clic en la pestaña `Web Cloud`{.action}.
+1. Haga clic en `Emails Pro`{.action}.
+1. Seleccione la plataforma correspondiente.
 
 Acceda a la pestaña `Cuentas de correo`{.action} y haga clic en el botón `Contratar cuentas`{.action} en la parte superior derecha.
 
@@ -53,7 +53,7 @@ Haga clic en `Siguiente`{.action} para consultar el resumen de los cambios solic
 
 ### Eliminar cuentas
 
-Para eliminar una cuenta de su plataforma Email Pro, primero debe darla de baja sustituyendo la configuración de su renovación por **Ninguno**. Para ello, consulte el paso ["Modificar la frecuencia de sus cuentas"](#periodicity){.external}.
+Para eliminar una cuenta de su plataforma Email Pro, primero debe darla de baja sustituyendo la configuración de su renovación por **Ninguno**. Para ello, consulte el paso ["Modificar la frecuencia de sus cuentas"](#periodicity).
 
 Una vez dada de baja la cuenta, se suspenderá en su fecha de expiración. Si quiere eliminar la dirección de correo electrónico alojada por la cuenta antes de su fecha de expiración, reiníciela.
 
@@ -73,4 +73,4 @@ En la ventana de gestión de su plataforma Email Pro, haga clic en el botón `Ac
 
 ## Más información
   
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

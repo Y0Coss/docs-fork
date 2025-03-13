@@ -4,10 +4,6 @@ excerpt: Erfahren Sie hier, wie Sie ein freigegebenes Postfach zu Ihrem Exchange
 updated: 2023-09-15
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Ein **freigegebenes Postfach** ist eine Mailbox, die zwischen mehreren Exchange Accounts geteilt wird und ausschließlich über diese erreichbar ist. Ein freigegebenes Postfach hat kein Passwort, daher muss der Zugriff an ein oder mehrere Exchange-Konten desselben Dienstes delegiert werden.
@@ -17,14 +13,18 @@ Ein **freigegebenes Postfach** ist eine Mailbox, die zwischen mehreren Exchange 
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [OVHcloud Exchange](/links/web/emails-hosted-exchange) Dienst eingerichtet.
 
 ## In der praktischen Anwendung
 
 ### Freigegebenes Postfach hinzufügen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
+1. Öffnen Sie den Bereich `Web Cloud`{.action}.
+1. Klicken Sie auf `Microsoft`{.action}.
+1. Klicken Sie auf `Exchange`{.action}.
+1. Wählen Sie den gewünschten Dienst aus.
 
 Wählen Sie den Tab `Freigegebene Postfächer`{.action} aus und klicken Sie auf `Freigegebenes Postfach hinzufügen`{.action}.
 
@@ -84,7 +84,7 @@ In unserem Beispiel erlauben wir den Accounts **guide-exchange@** und **test@** 
 
 ### Nutzung des freigegebenen Postfachs über OWA (Webmail)
 
-Loggen Sie sich [im Webmail](https://www.ovh.de/mail/) mit einem Account ein, der Zugriff auf das freigegebene Postfach hat.
+Loggen Sie sich [im Webmail](/links/web/email) mit einem Account ein, der Zugriff auf das freigegebene Postfach hat.
 <br>In unserem Beispiel verbinden wir uns über den Account **guide-exchange@**.
 
 Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf Ihre E-Mail-Adresse in der linken Menüspalte. Wählen Sie aus dem Kontextmenü `Freigegebenen Ordner hinzufügen`{.action}. 
@@ -115,4 +115,4 @@ Im Outlook-Client finden Sie Ihr freigegebenes Postfach in der linken Spalte, ge
 
 [Automatische Signaturen erstellen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

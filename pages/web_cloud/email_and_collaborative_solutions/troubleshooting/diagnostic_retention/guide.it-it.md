@@ -4,10 +4,6 @@ excerpt: Come ripristinare gli elementi eliminati dal tuo account email tramite 
 updated: 2022-02-08
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
->
-
  
 ## Obiettivo
 
@@ -18,9 +14,9 @@ Hai eliminato per errore uno o più elementi (email, contatti, appuntamento con 
 ## Prerequisiti
  
 - Disporre di una soluzione email OVHcloud
-    - **MX Plan** ([solo nuova versione](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)) proposto tra le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/), incluso in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/)
-    - o [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/)
-    - o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/)
+    - **MX Plan** ([solo nuova versione](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)) proposto tra le nostre [offerte di hosting Web](/links/web/hosting), incluso in un [Hosting gratuito 100M](/links/web/domains-free-hosting)
+    - o [**Hosted Exchange**](/links/web/emails-hosted-exchange)
+    - o [**Email Pro**](/links/web/email-pro)
 - Conoscere le credenziali di accesso dell'indirizzo email
 
 ## Procedura
@@ -43,9 +39,9 @@ Il recupero degli elementi eliminati può essere effettuato dalla Webmail (OWA) 
 
 ### Come ripristinare gli elementi eliminati?
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accedi alla Webmail (OWA) al tuo indirizzo email: <https://www.ovhcloud.com/it/mail/>.
+Accedi alla Webmail (OWA) al tuo indirizzo email: [Webmail](/links/web/email).
 
 > [!primary]
 >
@@ -70,4 +66,4 @@ Cliccando su `Recupera`{.action}.
 
 ## Per saperne di più
  
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

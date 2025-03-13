@@ -35,7 +35,12 @@ Vous devez disposer des trois informations suivantes afin de pouvoir enregistrer
 
 #### Login et domain
 
-Afin de retrouver votre **login** et votre **domain**, connectez-vous à votre [espace client OVHcloud](/links/manager-telecom). Dans la partie `Télécom`{.action}, cliquez sur `Téléphonie`{.action} puis sur votre groupe de téléphonie et enfin sur votre ligne SIP. Dans l'onglet `Gestion`, cliquez sur `Informations générales`{.action}.
+Afin de retrouver votre **login** et votre **domain**, suivez les étapes ci-dessous :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
+1. Cliquez sur `Téléphonie`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
+1. Cliquez sur la ligne SIP concernée.
+1. Dans l'onglet `Gestion`{.action}, cliquez sur `Informations générales`{.action}.
 
 ![ligne sip - Login et Domain](images/login-domain1.png){.thumbnail}
 
@@ -178,4 +183,4 @@ Une fois votre configuration terminée, vous pouvez consulter notre guide dédi�
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: 'Activer et configurer le Edge Network Firewall'
 excerpt: 'Découvrez comment configurer le Edge Network Firewall pour vos services'
-updated: 2024-01-05
+updated: 2025-01-24
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Pour protéger les services des clients exposés sur les adresses IP publiques, 
 
 > [!primary]
 >
-> Pour plus d'informations sur notre solution Anti-DDoS, cliquez ici : <https://www.ovhcloud.com/fr/security/anti-ddos/>.
+> Pour plus d'informations sur notre solution Anti-DDoS, [cliquez ici](/links/security/antiddos).
 > 
 
 | ![global-schema](images/global_schema.png) | 
@@ -29,11 +29,18 @@ Pour protéger les services des clients exposés sur les adresses IP publiques, 
 >
 > Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
 
+> [!warning]
+> Le Edge Firewall Network ne prend pas en charge le protocole QUIC.
+
 ## En pratique
 
 Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en permettant aux utilisateurs de répliquer certaines règles de pare-feu du serveur à la périphérie du réseau OVHcloud. Cela bloque les attaques entrantes au plus près de leur source, réduisant ainsi le risque de surcharge des ressources du serveur en cas d'attaque importante.
 
 ### Activer le Edge Network Firewall
+
+> [!primary]
+>
+> À date, cette fonctionnalité n'est disponible que pour les adresses IPv4.
 
 > [!primary]
 >
@@ -194,4 +201,4 @@ Après avoir lu ce tutoriel, vous devriez pouvoir configurer le Edge Network Fir
 
 - [Protéger un serveur GAME avec le pare-feu applicatif](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -4,10 +4,6 @@ excerpt: Erfahren Sie hier, wie Sie Microsoft 365 Apps auf einem Remote- (RDS) o
 updated: 2021-09-06
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Sie haben die Möglichkeit, die im Paket "Microsoft 365 Apps" enthaltene Software-Suite auf einem Remote-Desktop oder gemeinsam genutzten Gerät zu verwenden. Hiernei ist das in dieser Anleitung beschriebene Installationsverfahren anzuwenden.
@@ -32,7 +28,7 @@ Diese Anleitung basiert auf den Informationen in der Microsoft-Dokumentation "[B
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 > 
 
 ### Methode 1: Manuelle Konfiguration
@@ -46,7 +42,7 @@ Die Installation von "Microsoft 365 Apps for enterprise" auf einem geteilten Com
 > Wenn Sie bereits die Lizenz Office 365 Proplus installiert haben, müssen Sie diese erst **entfernen**.
 >
 
-- Nach dem Entfernen [klicken Sie hier](https://www.microsoft.com/en-gb/download/details.aspx?id=49117){.external}, um das Microsoft 365 Deployment-Tool herunterzuladen.
+- Nach dem Entfernen [klicken Sie hier](https://www.microsoft.com/en-gb/download/details.aspx?id=49117), um das Microsoft 365 Deployment-Tool herunterzuladen.
 
 - **Starten** Sie das Deployment-Tool.
 
@@ -103,4 +99,4 @@ Stellen Sie sicher, dass er den Wert `1` hat. Wenn dieser Schlüssel nicht exist
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

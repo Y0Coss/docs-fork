@@ -1,12 +1,8 @@
 ---
 title: "Alojamento web - Consultar as estatísticas e logs de um website"
 excerpt: "Saiba como consultar as estatísticas e os logs do seu website graças à sua oferta de alojamento web"
-updated: 2024-02-27
+updated: 2025-02-20
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -24,8 +20,8 @@ O acesso aos logs e às estatísticas do seu website está incluído na sua ofer
 Para aceder aos diferentes dados estatísticos e logs do seu alojamento web, efetue as seguintes ações: 
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-2. Na linha situada no topo da Área de Cliente, clique no separador `Web Cloud`{.action}.
-3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
+2. Clique no separador `Web Cloud`{.action}.
+3. Na coluna da esquerda, clique no menu `Alojamentos`{.action}.
 4. Selecione o alojamento web em causa.
 5. Na página que vai aparecer, clique no separador `Estatísticas e logs`{.action}.
 
@@ -112,8 +108,8 @@ https://logs.cluster000.hosting.ovh.net/domain.tld/
 Pode igualmente recuperar o link de acesso às estatísticas/logs diretamente a partir da sua Área de Cliente:
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-2. Na linha situada no topo da Área de Cliente, clique no separador "Web Cloud" {.action}.
-3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
+2. Clique no separador `Web Cloud`{.action}.
+3. Na coluna da esquerda, clique no menu `Alojamentos`{.action}.
 4. Selecione o alojamento web em causa.
 5. Na página que vai aparecer, clique no separador `Estatísticas e logs`{.action}.
 6. Aceda à secção `Estatísticas das visitas`{.action}.

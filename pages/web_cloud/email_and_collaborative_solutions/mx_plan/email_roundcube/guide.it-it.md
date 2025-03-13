@@ -3,10 +3,6 @@ title: 'Webmail: guida all’utilizzo di Roundcube'
 updated: 2024-03-26
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un software di terze parti o tramite una webmail. OVHcloud fornisce un servizio di posta online chiamato Roundcube che permette l'accesso a un account email tramite un browser.
@@ -15,7 +11,7 @@ Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un softwar
 
 ## Prerequisiti
 
-- Disporre di una soluzione email OVHcloud **MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma
+- Disporre di una soluzione email OVHcloud **MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](/links/web/hosting), inclusa in un [Hosting gratuito 100M](/links/web/domains-free-hosting) o ordinata separatamente come soluzione autonoma
 - Disporre delle informazioni di connessione all'indirizzo email MX Plan che vuoi consultare Per maggiori informazioni, consulta la nostra guida Iniziare a [utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ## Procedura
@@ -55,7 +51,7 @@ Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un softwar
 
 ### Accedi alla Webmail Roundcube <a name="roundcube-connexion"></a>
 
-Accedi alla pagina <https://www.ovh.com/it/mail/>. Inserisci un indirizzo email e la password e clicca su `Connessione`{.action}. 
+Accedi alla pagina [Webmail](/links/web/email). Inserisci un indirizzo email e la password e clicca su `Connessione`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 
@@ -346,11 +342,11 @@ Per aggiungere una risposta, clicca sul pulsante `+`{.action} in fondo alla colo
 
 ### Aggiungi una risposta automatica <a name="automatic-respond"></a>
 
-Aggiungi una risposta automatica al tuo indirizzo email quando sei assente o non sei disponibile. Questa funzione non può essere attivata dalla Webmail ma dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), nell’interfaccia di gestione degli indirizzi email. Consulta la nostra guida "[Creare una risposta automatica per il proprio indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+Aggiungi una risposta automatica al tuo indirizzo email quando sei assente o non sei disponibile. Questa funzione non può essere attivata dalla Webmail ma dallo [Spazio Cliente OVHcloud](/links/manager), nell’interfaccia di gestione degli indirizzi email. Consulta la nostra guida "[Creare una risposta automatica per il proprio indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
 
 ### Modificare la password del tuo indirizzo email <a name="password"></a>
 
-Per modificare la password di un indirizzo email è necessario accedere allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), nell’interfaccia di gestione degli indirizzi email. Consulta la nostra guida "[Modificare la password di un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+Per modificare la password di un indirizzo email è necessario accedere allo [Spazio Cliente OVHcloud](/links/manager), nell’interfaccia di gestione degli indirizzi email. Consulta la nostra guida "[Modificare la password di un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
 ### Redazione di un'email <a name="email-writing"></a>
 
@@ -396,7 +392,7 @@ Quando si tenta di accedere alla Webmail Roundcube, viene visualizzato il seguen
 
 ```console
 IMPOSSIBILE VERIFICARE LA RICHIESTA
-Per la tua protezione, l'accesso a questa risorsa è protetto dagli attacchi CSFR.
+Per la tua protezione, l'accesso a questa risorsa è protetto dagli attacchi CSRF.
 Se vedi questo, probabilmente non ti sei disconnesso prima di uscire dall'applicazione Web.
 Per continuare, è necessaria l'interazione umana.
 ```
@@ -415,4 +411,4 @@ Come indicato nel messaggio, l’account email è considerato già connesso. Si 
 
 [Utilizza i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

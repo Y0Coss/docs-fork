@@ -4,10 +4,6 @@ excerpt: Erfahren Sie hier, wie Sie eine Microsoft 365 Lizenz bestellen und in I
 updated: 2024-03-27
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Die OVHcloud Angebote für **Microsoft 365 Apps for Business** und **Microsoft 365 Apps for Enterprise** bieten mehrere Vorteile. Die Abrechnung erfolgt monatlich und Sie können eine Lizenz für 5 PCs/Macs, 5 Tablets und 5 Smartphones verwenden.
@@ -29,7 +25,7 @@ Die Lizenzen gelten für folgende Software:
 
 ### Lizenz bestellen
 
-Gehen Sie zur Angebotsseite [OVHcloud Microsoft 365](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/){.external} und klicken Sie auf den Button `Bestellen`{.action}.
+Gehen Sie zur Angebotsseite [OVHcloud Microsoft 365](/links/web/ms365) und klicken Sie auf den Button `Bestellen`{.action}.
 
 Vom [OVHcloud Kundencenter](/links/manager) aus wählen Sie oben `Web Cloud`{.action} aus und klicken Sie auf `Bestellen`{.action} und dann `O365`{.action}.
 
@@ -108,4 +104,4 @@ Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Best�
 
 [Remote Desktop mit Microsoft 365 Apps verwenden](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

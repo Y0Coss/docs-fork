@@ -50,7 +50,7 @@ If the suspicious activity detected by the antispam system was not initiated by 
 > [!tabs]
 > **Exchange**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action}, then `Exchange`{.action} and select the Exchange service concerned.
+>> Log in to the [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action}, then `Exchange`{.action} and select the Exchange service concerned.
 >>
 >> Go to the `Email accounts`{.action} section of your platform. If the "Status" column for your email account displays "Blocked", click `...`{.action} to the right of the account concerned, then `Unblock`{.action}. Email accounts are not unblocked automatically. You will need to contact the support team by answering the 3 questions in the support ticket.<br>
 >>
@@ -111,4 +111,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

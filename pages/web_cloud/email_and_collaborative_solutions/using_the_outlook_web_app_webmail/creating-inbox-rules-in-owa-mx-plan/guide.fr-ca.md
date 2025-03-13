@@ -10,11 +10,11 @@ Avec l’option « Règles de gestion de la boîte de réception », vous pouvez
 
 **Découvrez comment créer des filtres et des redirections e-mails depuis Outlook Web App (OWA).**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
-- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) ou [**Hosted Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)
+- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](/links/web/hosting) ou [**Hosted Exchange**](/links/web/emails-hosted-exchange)
 - les paramètres de connexion de l’adresse e-mail que vous souhaitez configurer
 
 ## Instructions
@@ -52,10 +52,9 @@ Si vous avez créé plusieurs règles, il est possible que plusieurs d’entre e
 Puisqu’il existe une multitude de conditions et d’actions au choix, il nous est impossible de toutes les aborder dans ce guide. Nous vous proposons ci-dessous deux exemples qui sont d’une importance capitale pour l’utilisation d’un compte de messagerie OVHcloud. 
 
 > [!warning]
->OVHcloud vous offre un certain nombre de services dont la configuration et la gestion relèvent de votre responsabilité. Il vous incombe par conséquent de veiller à ce que ces services fonctionnent correctement.
+> OVHcloud vous offre un certain nombre de services dont la configuration et la gestion relèvent de votre responsabilité. Il vous incombe par conséquent de veiller à ce que ces services fonctionnent correctement.
 >
->Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Toutefois, il est recommandé de contacter un fournisseur de services spécialisé et/ou l’éditeur du logiciel exploité par le service en cas de difficultés. Nous ne serons personnellement pas en mesure de vous fournir une assistance à ce propos. Plus d’informations dans la section « Aller plus loin » de ce guide.
->
+> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Toutefois, il est recommandé de contacter un fournisseur de services spécialisé et/ou l’éditeur du logiciel exploité par le service en cas de difficultés. Nous ne serons personnellement pas en mesure de vous fournir une assistance à ce propos. Plus d’informations dans la section « Aller plus loin » de ce guide.
 
 #### Exemple 1 : Rediriger des e-mails vers une autre adresse
 
@@ -110,4 +109,4 @@ Veuillez noter que les faux-positifs ne peuvent pas être identifiés directemen
 
 [Utilisation de Outlook Web App avec un compte de messagerie](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

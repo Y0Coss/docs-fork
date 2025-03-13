@@ -1,18 +1,18 @@
 ---
 title: 'Using the Outlook Web App with an email account'
 excerpt: 'Find out how to manage an email address using OWA webmail'
-updated: 2024-03-26
+updated: 2024-09-03
 ---
 
 ## Objective
 
-With OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](https://www.ovh.co.uk/mail) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Hosted Exchange.
+With OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](/links/web/email) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Hosted Exchange.
 
 **This guide explains how to use your email address with OWA and exemplifies the most important features of this interface.**
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/), included in a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/) or ordered separately as a standalone solution; [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/))
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](/links/web/hosting), included in a [100M free hosting](/links/web/domains-free-hosting) or ordered separately as a standalone solution; [**Hosted Exchange**](/links/web/emails-hosted-exchange) or [**Email Pro**](/links/web/email-pro))
 - login credentials for the email address you want to configure
 
 ## Instructions
@@ -25,7 +25,7 @@ This guide will give you a better understanding of the usual email account tasks
 
 ### 1. Accessing OWA webmail
 
-To log in to OWA webmail with your email address, go to the general [webmail login page](https://www.ovh.co.uk/mail). Enter your full email address and password, then click the `Login`{.action} button.
+To log in to OWA webmail with your email address, go to the general [webmail login page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
@@ -37,6 +37,12 @@ To log in to OWA webmail with your email address, go to the general [webmail log
 
 If this is your first time logging in to OWA webmail with this email address, you will be prompted to set the interface language and time zone. Click `Save`{.action} to continue.
 
+> [!primary]
+>
+> Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
+>
+> **Example**: For Western Europe, it is the UTC +1 tranche (Brussels, Copenhagen, Madrid, Paris).
+
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
 From now on, your inbox view will appear by default after login.
@@ -47,9 +53,9 @@ From now on, your inbox view will appear by default after login.
 
 There are several sections to the OWA interface. Please refer to the table and the image below to familiarise yourself with it.
 
-|Parts|Description|  
-|---|---|  
-|Top section (1)|Contains two tab bars: the first one allows access to general settings (such as the [options section](./#accessing-the-options-section)), and the second one can be used to perform specific actions with your address (such as sending or replying to emails).|  
+|Parts|Description|
+|---|---|
+|Top section (1)|Contains two tab bars: the first one allows access to general settings (such as the [options section](./#accessing-the-options-section)), and the second one can be used to perform specific actions with your address (such as sending or replying to emails).|
 |Left-hand side (2)|Displays the list of folders for your email address. These appear as a tree-view that you can expand or hide.|
 |Central segment (3)|Displays the list of messages (read and unread) from the folder selected in the left-hand menu. This section can also display search results.|
 |Right-hand side (4)|Displays the reading pane when an email has been selected.|
@@ -105,19 +111,19 @@ To create a new folder, right-click on the name of your email address in the fol
 
 #### Creating inbox rules
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 To manage rules, click on the gear icon at the top, then click on `Options`{.action}.
 
 ![useowa](images/use-owa-step12.png){.thumbnail}
 
-On the new page that appears, click on `Inbox and sweep rules`{.action} in the left-hand menu. In the "Options" tree-view, you can find this item under "Mail", then "Automatic processing". From here, you can create, edit, delete and move rules in the list. 
+On the new page that appears, click on `Inbox and sweep rules`{.action} in the left-hand menu. In the "Options" tree-view, you can find this item under "Mail", then "Automatic processing". From here, you can create, edit, delete and move rules in the list.
 
-To add a new rule, click the `+`{.action} button. 
+To add a new rule, click the `+`{.action} button.
 
 ![useowa](images/use-owa-step13.png){.thumbnail}
 
-Fill in the requested information depending on the action you want the rule to carry out. Afterwards, click `OK`{.action}. 
+Fill in the requested information depending on the action you want the rule to carry out. Afterwards, click `OK`{.action}.
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
@@ -125,7 +131,7 @@ For more detailed instructions about creating inbox rules, please refer to our g
 
 #### Block a sender
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Click on the gear icon at the top right-hand corner, then click `Options`{.action}. In the left-hand column, follow the "Mail" tree under "Accounts", then "Block or authorise".
 
@@ -151,7 +157,7 @@ On the new page, you can add a new contact, create a contact list, and remove ex
 
 ### Changing the password
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can change your account password when you are logged in to OWA. To do this, click the gear icon at the top, then click `Options`{.action}.
 
@@ -166,7 +172,6 @@ In the new window that pops up, enter your current password. Then enter a new pa
 > [!primary]
 >
 > Remember to also enter your new password on any device i.e. email client used to access this account. In case of any issues with your password, contact your service administrator.
->
 
 ![useowa](images/use-owa-step19.png){.thumbnail}
 
@@ -228,4 +233,4 @@ However, disabling these cookies may affect the stability of your webmail.
 
 [Creating contact groups](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

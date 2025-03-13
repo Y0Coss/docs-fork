@@ -28,7 +28,7 @@ En raison d'une activité accrue, ou simplement de nouveaux besoins, votre insta
 
 ## Prérequis
 
-- Avoir [créé une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) dans votre compte OVHcloud
+- Avoir [créé une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) dans votre compte OVHcloud
 - [Accéder à l'interface Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## En pratique
@@ -76,7 +76,7 @@ Attention, lors d'un redimensionnement pour une Instance Windows, la taille de l
 
 ![public-cloud](images/2981a.png){.thumbnail}
 
-- Cliquez sur `Suivant`{.action} pour accéder à « l'Assitant Extension du volume ». Choisissez les ressources du disque à étendre et cliquez sur `Suivant`{.action}. 
+- Cliquez sur `Suivant`{.action} pour accéder à « l'Assistant Extension du volume ». Choisissez les ressources du disque à étendre et cliquez sur `Suivant`{.action}. 
 
 ![public-cloud](images/2978a.png){.thumbnail}
 
@@ -90,4 +90,4 @@ Cliquez ensuite sur `Terminer`{.action} pour valider votre choix.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre [communauté d'utilisateurs](/links/community).

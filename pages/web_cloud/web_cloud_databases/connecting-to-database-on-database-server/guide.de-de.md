@@ -1,12 +1,8 @@
 ---
-title: "Mit der Datenbank Ihres Datenbankservers verbinden"
-excerpt: "Erfahren Sie hier, wie Sie sich mit Ihrer Datenbank verbinden können"
+title: "Web Cloud Databases - Verbindung mit einer Datenbank herstellen"
+excerpt: "Erfahren Sie hier, wie Sie sich mit einer Datenbank auf Ihrer Web Cloud Databases Lösung verbinden"
 updated: 2023-10-31
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -182,6 +178,8 @@ Sie sind nun mit Ihrer Datenbank verbunden.
 ![config](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ## Weiterführende Informationen
+
+[Webhosting - Meine Datenbank ist voll, was kann ich tun?](/pages/web_cloud/web_hosting/sql_overquota_database).
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  

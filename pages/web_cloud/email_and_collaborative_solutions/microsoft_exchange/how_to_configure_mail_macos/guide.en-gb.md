@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configuring your email account on macOS Mail
 excerpt: Find out how to configure your Exchange account on macOS Mail
-updated: 2024-04-16
+updated: 2024-10-09
 ---
 
 <style>
@@ -31,7 +31,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 - An [Exchange email account](/links/web/emails-hosted-exchange)
 - **Mail** installed on your Mac
 -  The required credentials for the email account you would like to configure
- 
+
 ## Instructions
 
 ### How to add your account <a name="addaccount"></a>
@@ -49,34 +49,39 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 > [!tabs]
 > **Step 1**
+>>
 >> Select `Exchange`{.action}<br><br>
->>![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
+>> ![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 2**
+>>
 >> Enter the **Name** of your email account and your **Email address**, then click `Log in`{.action}. <br><br>
->>![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
+>> ![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 3**
+>>
 >> In the next window, click `Manual configuration`{.action}: <br><br>- Define the **Name** that will be displayed in the navigation interface. <br>- Leave your **Email address**.<br>- Leave your **Password** already entered. <br><br>To finalise the configuration, click `Log in`{.action}. <br><br><br>
 >>![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 4**
->>> Type: <br><br>- Email address: Leave your full email address.<br>- User name: Leave your full email address. <br>- Password: Leave your **Password**.<br> - Internal URL: **ex?.mail.ovh.net** (replace **?** with [your Exchange server number](#addaccount))<br>- External URL: **ex?.mail.ovh.net** (replace **?** with [your Exchange server number](#addaccount))<br><br>
+>>
+>> Type: <br><br>- Email address: Leave your full email address.<br>- User name: Leave your full email address. <br>- Password: Leave your **Password**.<br> - Internal URL: **ex?.mail.ovh.net** (replace **?** with [your Exchange server number](#addaccount))<br>- External URL: **ex?.mail.ovh.net** (replace **?** with [your Exchange server number](#addaccount))<br><br>
 >>
 >> > [!warning]
->>>
->>> It is normal that an error message of the type “**Unable to verify account name or password**” occurs when the window appears for the first time. However, if this message persists after validation, the information entered is incorrect.<br><br>
+>> >
+>> > It is normal that an error message of the type “**Unable to verify account name or password**” occurs when the window appears for the first time. However, if this message persists after validation, the information entered is incorrect.<br><br>
 >>
->>![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
+>> ![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 5**
+>>
 >> In addition to your emails, you can select other Exchange features that you want to manage from your Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Use your email account
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email account from your browser. You can access this application at <https://www.ovhcloud.com/en-gb/mail/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud also has a web application you can use to access your email account from your browser. You can access this application at [Webmail](/links/web/email). You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Retrieve a backup of your email account
 
@@ -93,10 +98,14 @@ If your email account is already set up and you need to access the account setti
 
 ## Go further
 
+> [!primary]
+>
+> For more information on configuring an email address from the Mail app on macOS, see [the Apple Help Center](https://support.apple.com/en-gb/guide/mail/mail35803/mac).
+
 [FAQ emails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 [Configure your Email Pro account on macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
 
 [Configure your MX Plan email account on macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

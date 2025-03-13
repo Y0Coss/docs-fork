@@ -4,10 +4,6 @@ excerpt: "Descubra como aceder ao espaço de armazenamento FTP do alojamento web
 updated: 2024-05-20
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 As ofertas de alojamento web da OVHcloud dão acesso a um espaço de armazenamento FTP que permite publicar ficheiros nos seus websites ou aplicações. O acesso a este espaço é possível através de um utilizador FTP ou SSH com as palavras-passe que lhes estão associadas.
@@ -85,7 +81,7 @@ A ligação ao espaço de armazenamento FTP pode ser efetuada de várias formas.
 
 - [1 Ligação via "FTP Explorer"](#ftpexplorer): permite aceder ao seu espaço de armazenamento FTP a partir do seu browser.
 
-- [2. Ligação através de um software FTP](#ftpsoftware): permite aceder ao seu espaço de armazenamento FTP através de um software (como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) ou [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac). 
+- [2. Ligação através de um software FTP](#ftpsoftware): permite aceder ao seu espaço de armazenamento FTP através de um software (como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) ou [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
 Deverá instalar previamente o software/cliente FTP escolhido no seu computador.
 
 - [3. Ligação via acesso SSH](#ssh): permite aceder ao seu espaço de armazenamento FTP através de um acesso SSH. Este tipo de acesso requer conhecimentos técnicos avançados, bem como uma oferta de [alojamento web da OVHcloud](/links/web/hosting){.external} **Pro* ou **Performance**.
@@ -104,7 +100,7 @@ Na nova página, insira o seu identificador FTP e a respetiva palavra-passe. Se 
 
 #### 2. Ligação através de um software FTP <a name="ftpsoftware"></a>
 
-Depois de instalar o software FTP à sua escolha no seu computador (como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) ou [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac), inicie-o. 
+Depois de instalar o software FTP à sua escolha no seu computador (como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) ou [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)), inicie-o. 
 
 Deverá encontrar campos específicos onde inserir as informações de ligação. 
 

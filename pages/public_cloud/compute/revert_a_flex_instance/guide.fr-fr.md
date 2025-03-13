@@ -1,7 +1,6 @@
 ---
 title: "Basculer d'une instance flex à une instance classique"
 excerpt: Apprenez à modifier une instance flex depuis l'interface OpenStack Horizon
-order : 10
 updated: 2024-07-17
 ---
 
@@ -13,7 +12,7 @@ Une instance *flex* est une instance à disque unique (50 Go) offrant un process
 
 ## Prérequis
 
-- Posséder une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) de type *flex*.
+- Posséder une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#configuration) de type *flex*.
 - [Créer un accès à l'interface Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## En pratique
@@ -56,7 +55,7 @@ Cette section permet de gérer le partitionnement du disque (*Disk Partition*) e
 
 Pour continuer, cliquez sur le bouton `Resize`{.action}.
 
-Une fois le processus terminé, votre instance sera basculée vers un modèle classique, avec plus d'espace de stockage.
+Une fois le processus terminé, votre instance sera basculée vers le modèle sélectionné. Dans notre cas, notre instance a été basculée vers un modèle classique avec plus d'espace de stockage.
 
 ![Nouvelle flavor appliquée](images/newflavor.png){.thumbnail}
 

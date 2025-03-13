@@ -12,14 +12,14 @@ Através da opção "Regras inbox", poderá criar um conjunto elaborado de regra
 
 ## Requisitos
 
-- uma solução de e-mail OVHcloud já configurada (**MX Plan**, disponível como parte dos nossos [planos Web Hosting](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma; [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou [**E-mail Pro**](https://www.ovhcloud.com/pt/emails/email-pro/))
+- uma solução de e-mail OVHcloud já configurada (**MX Plan**, disponível como parte dos nossos [planos Web Hosting](/links/web/hosting), incluída num [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou encomendada separadamente como solução autónoma; [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou [**E-mail Pro**](/links/web/email-pro))
 - credenciais de login para o endereço de e-mail que deseja configurar
 
 ## Instruções
 
 ### Passo 1: Navegar dentro da secção “Opções”
 
-Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Clique no símbolo da engrenagem na parte superior direita para abrir o menu e selecione `Opções`{.action}.
+Aceda à sua conta Exchange através do [webmail OVHcloud](/links/web/email). Clique no símbolo da engrenagem na parte superior direita para abrir o menu e selecione `Opções`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 
@@ -50,10 +50,9 @@ Se criou várias regras, é possível que mais do que uma se aplique a um e-mail
 Uma vez que existem várias condições e ações disponíveis, não é possível abranger todas neste guia. Abaixo encontram-se dois exemplos que o podem orientar na utilização de uma conta de e-mail OVHcloud. 
 
 > [!warning]
->A OVHcloud presta-lhe serviços cuja configuração e gestão é da sua inteira responsabilidade, cabendo-lhe a si assegurar o seu correto funcionamento. 
+> A OVHcloud presta-lhe serviços cuja configuração e gestão é da sua inteira responsabilidade, cabendo-lhe a si assegurar o seu correto funcionamento. 
 >
->Este guia foi concebido para o ajudar, tanto quanto possível, nas tarefas mais comuns. No entanto, caso tenha alguma dificuldade, recomendamos que contacte um fornecedor especializado e/ou o editor do software do serviço, uma vez que não poderemos assisti-lo pessoalmente. Para mais informações, consulte a secção “Vá mais longe” neste guia.
->
+> Este guia foi concebido para o ajudar, tanto quanto possível, nas tarefas mais comuns. No entanto, caso tenha alguma dificuldade, recomendamos que contacte um fornecedor especializado e/ou o editor do software do serviço, uma vez que não poderemos assisti-lo pessoalmente. Para mais informações, consulte a secção “Vá mais longe” neste guia.
 
 #### Exemplo 1: Redirecionar e-mails para outro endereço
 
@@ -99,4 +98,4 @@ Tenha em atenção que os falsos positivos de SPAM não podem ser declarados atr
 
 [Utilizar o Outlook Web App com uma conta de e-mail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

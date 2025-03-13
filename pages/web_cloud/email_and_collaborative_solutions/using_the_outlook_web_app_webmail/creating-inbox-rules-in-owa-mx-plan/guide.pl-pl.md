@@ -4,9 +4,6 @@ excerpt: 'Dowiedz się, jak utworzyć reguły przekierowania e-maili i filtry pr
 updated: 2020-03-11
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
-
 ## Wprowadzenie
 
 Przy użyciu opcji „Reguły skrzynki odbiorczej” można utworzyć złożone zestawy reguł do obsługi e-maili przychodzących. Ułatwia to utrzymanie porządku na koncie poczty elektronicznej dzięki automatycznemu sortowaniu wiadomości w folderach. Jest też możliwe zdefiniowanie ustawień przesyłania dalej e-maili (przekierowywania) i filtrowanie wiadomości będących spamem.
@@ -15,14 +12,14 @@ Przy użyciu opcji „Reguły skrzynki odbiorczej” można utworzyć złożone 
 
 ## Wymagania początkowe
 
-- skonfigurowane rozwiązanie poczty elektronicznej OVHcloud (**usługa MX Plan** dostępna w ramach [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/), zawarta w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówiona oddzielnie jako rozwiązanie autonomiczne; [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/))
+- skonfigurowane rozwiązanie poczty elektronicznej OVHcloud (**usługa MX Plan** dostępna w ramach [hostingu WWW](/links/web/hosting), zawarta w [Darmowy hosting 100M](/links/web/domains-free-hosting) lub zamówiona oddzielnie jako rozwiązanie autonomiczne; [**Hosted Exchange**](/links/web/emails-hosted-exchange) lub [**E-mail Pro**](/links/web/email-pro))
 - dane do logowania dla adresu e-mail, który chcesz skonfigurować
 
 ## W praktyce
 
 ### Krok 1: przejście do sekcji opcji
 
-Zaloguj się na Twoje konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/). Kliknij ikonę koła zębatego w prawym górnym rogu, aby rozwinąć menu „Opcje”, i wybierz pozycję `Opcje`{.action}.
+Zaloguj się na Twoje konto Exchange przy użyciu interfejsu [OVHcloud webmail](/links/web/email). Kliknij ikonę koła zębatego w prawym górnym rogu, aby rozwinąć menu „Opcje”, i wybierz pozycję `Opcje`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 
@@ -53,10 +50,9 @@ Jeśli utworzono kilka reguł, do e-maila przychodzącego prawdopodobnie może m
 Ponieważ jest dostępnych wiele warunków i działań, nie jesteśmy w stanie przedstawić wszystkich z nich w tym przewodniku. Poniżej znajdują się dwa przykłady zasadnicze z punktu widzenia korzystania z konta e-mail OVHcloud. 
 
 > [!warning]
->OVHcloud oferuje usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tym samym odpowiada za zapewnienie ich prawidłowego działania.
+> OVHcloud oferuje usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tym samym odpowiada za zapewnienie ich prawidłowego działania.
 >
->Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą konkretnych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja „Sprawdź również” tego przewodnika.
->
+> Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą konkretnych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja „Sprawdź również” tego przewodnika.
 
 #### Przykład 1: przekierowanie e-maili na inny adres
 
@@ -102,4 +98,4 @@ Ponieważ żadne mechanizmy ochrony antyspamowej nie są w stanie precyzyjnie ok
 
 [Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -4,10 +4,6 @@ excerpt: 'Saiba como gerir a faturação do serviço E-mail Pro.'
 updated: 2022-02-23
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 A oferta E-mail Pro dispõe de uma gestão flexível no que diz respeito à faturação das contas. Este guia explica como pode configurá-la.
@@ -16,14 +12,17 @@ A oferta E-mail Pro dispõe de uma gestão flexível no que diz respeito à fatu
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Ter uma [conta E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter uma [conta E-mail Pro](/links/web/email-pro).
 
 ## Instruções
 
 ### Encomendar contas suplementares
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e dirija-se à secção `Web Cloud`{.action}. Clique em `E-mail Pro`{.action} e selecione a plataforma E-mail Pro em causa.
+1. Aceda à [Área de Cliente OVHcloud](/links/manager).
+1. Clique no separador `Web Cloud`{.action}.
+1. Clique em `E-mails Pro`{.action}.
+1. Selecione a plataforma em causa.
 
 Aceda ao separador `Contas de e-mail`{.action} e clique no botão `Encomendar contas`{.action} no canto superior direito.
 
@@ -53,7 +52,7 @@ Clique em `Seguinte`{.action} para aceder ao resumo das alterações que foram p
 
 ### Eliminar contas
 
-Para eliminar uma conta da plataforma E-mail Pro, primeiro tem de a cancelar passando a configuração da renovação para **Nenhuma**. Para isso, consulte o passo ["Alterar a periodicidade das contas"](#periodicity){.external}.
+Para eliminar uma conta da plataforma E-mail Pro, primeiro tem de a cancelar passando a configuração da renovação para **Nenhuma**. Para isso, consulte o passo ["Alterar a periodicidade das contas"](#periodicity).
 
 Após o cancelamento, a conta será suspensa na data de expiração. Se deseja eliminar o endereço de e-mail alojado pela conta antes da data de expiração, tem de o restaurar.
 
@@ -73,4 +72,4 @@ Na janela de gestão da plataforma E-mail Pro, clique no botão `Ações`{.actio
 
 ## Quer saber mais?
  
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

@@ -1,18 +1,16 @@
 ---
-title: "Aktywacja kont e-mail zawartych w hostingu"
+title: "Hosting WWW - Włącz konta e-mail zawarte w ofercie"
 excerpt: "Dowiedz się, jak aktywować konta e-mail zawarte w hostingu"
-updated: 2024-07-17
+updated: 2024-12-12
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie 
 
 Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny, pakiet e-mail dołączony do hostingu aktywuj ręcznie. Powiąż pakiet z wybraną przez Ciebie nazwą domeny.
 
 **Dowiedz się, jak aktywować konta e-mail zawarte w hostingu.**
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oqWovkSP85A?si=1rnqBvhVLdhr2rI5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Wymagania początkowe
 
@@ -77,7 +75,15 @@ W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki
 
 > [!warning]
 >
-> W celu potwierdzenia usunięcia usługi e-mail powiązanej z Twoim hostingiem, otrzymasz e-mail z linkiem do potwierdzenia. Aby operacja usunięcia została zainicjowana, kliknij link.
+> W celu potwierdzenia usunięcia oferty e-mail powiązanej z Twoim hostingiem, otrzymasz e-mail z linkiem weryfikacyjnym. Aby rozpocząć operację usuwania, należy kliknąć to łącze.
+
+#### Przypadki szczególne - Usunięcie usługi e-mail powiązanej z Twoim hostingiem (w celu przypisania jej do innej domeny)
+
+Ze względów bezpieczeństwa definitywne usunięcie oferty e-mail może trwać kilka dni po kliknięciu na link potwierdzający usunięcie.
+
+Jeśli chcesz usunąć ofertę e-mail powiązaną z Twoim hostingiem, aby powiązać ją z inną domeną, i **tylko** w tym przypadku musisz potwierdzić na piśmie zlecenie przyspieszenia usunięcia oferty. W tym celu skontaktuj się z pomocą, tworząc zgłoszenie z poziomu [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Zgłoszenie musi **obowiązkowo** być utworzone z konta klienta (i odpowiedniego identyfikatora klienta), które administruje usługą, którą chcesz usunąć.
+
+Po przetworzeniu wniosku będziesz mógł powiązać ofertę e-mail powiązaną z Twoim hostingiem z inną nazwą domeny.
 
 ## Sprawdź również
 

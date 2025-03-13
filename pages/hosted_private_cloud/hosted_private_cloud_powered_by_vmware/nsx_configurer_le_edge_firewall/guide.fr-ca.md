@@ -1,8 +1,13 @@
 ---
 title: Configurer le NSX-v Edge Firewall
 excerpt: Créer des règles de pare-feu
-updated: 2021-11-25
+updated: 2025-02-27
 ---
+
+> [!alert]
+> **Fin de prise en charge :**
+>
+>  NSX-v n'est plus pris en charge dans l'environnement OVHcloud.
 
 ## Objectif
 
@@ -160,4 +165,4 @@ La création/modification de règles n'est pas enregistrée tant que vous ne cli
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

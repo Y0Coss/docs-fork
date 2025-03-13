@@ -35,8 +35,8 @@ Il mittente (sender) trasmette l’email alla mailing list. Il moderatore (moder
 
 ## Prerequisiti
 
-- Disponi di una soluzione MX Plan 100 o di un [hosting Web](https://www.ovhcloud.com/fr/web-hosting/){.external} adatto per le mailing list
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disponi di una soluzione MX Plan 100 o di un [hosting Web](/links/web/hosting) adatto per le mailing list
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -46,9 +46,13 @@ Il mittente (sender) trasmette l’email alla mailing list. Il moderatore (moder
 >
 > Una mailing list si comporta come un indirizzo email e non è possibile modificarne il nome. Se il nome di una mailing list non corrisponde più alle tue esigenze, è necessario crearne una nuova ed eliminare la vecchia.
 
-Per creare la tua mailing list, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona la scheda`Web Cloud`{.action} in alto.
+Per creare la tua mailing list:
 
-Una volta connesso, clicca su `Email`{.action} e poi sul dominio interessato. Vai alla scheda `Mailing list`{.action}del tuo servizio di posta elettronica.
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
+1. Clicca sulla scheda `Web Cloud`{.action}.
+1. Clicca su `Email`{.action}.
+1. Seleziona il dominio.
+1. Vai alla scheda `Mailing list`{.action}del tuo servizio di posta elettronica.
 
 ![Email](images/manage_mailing-lists_01.png){.thumbnail}
 
@@ -250,4 +254,4 @@ Qui di seguito trovi una lista dei file che contengono i testi delle risposte e 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

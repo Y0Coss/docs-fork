@@ -4,10 +4,6 @@ excerpt: Come creare e configurare un filtro sul tuo indirizzo email
 updated: 2024-03-26
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 Un filtro email permette di applicare diversi trattamenti ai messaggi ricevuti, in base ai criteri che preferisci.
@@ -21,12 +17,12 @@ Ad esempio: vuoi che tutte le email contenenti "[SPAM]" nell'oggetto siano elimi
 
 ## Prerequisiti
 
-- Disporre di una soluzione email MX Plan (disponibile tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, l'[Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} incluso con un dominio o l'offerta MX Plan ordinata separatamente).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di una soluzione email MX Plan (disponibile tramite: un'offerta di [hosting Web](/links/web/hosting), l'[Hosting gratuito 100M](/links/web/domains-free-hosting) incluso con un dominio o l'offerta MX Plan ordinata separatamente).
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
-> Questa guida ti mostra come utilizzare il servizio MXplan storico. Per la nuova offerta, i filtri vengono gestiti direttamente tramite la Webmail OWA (**O**utlook **W**eb **A**pp). Utilizza la tabella qui sotto per identificare la tua offerta.
+> Questa guida ti mostra come utilizzare il servizio MX Plan storico. Per la nuova offerta, i filtri vengono gestiti direttamente tramite la Webmail OWA (**O**utlook **W**eb **A**pp). Utilizza la tabella qui sotto per identificare la tua offerta.
 >
 
 Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
@@ -36,11 +32,11 @@ Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 
 ## In pratica <a name="oldmxplan"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`.
-
-E seleziona il tuo servizio nella sezione `Email`{.action}.
-
-Nella scheda `Email`{.action} del tuo servizio MXplan, visualizzi la lista dei tuoi indirizzi email. Una colonna `Filtri` è visibile nella tabella degli account email. Clicca sull'icona dell'imbuto.
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
+1. Clicca sulla scheda `Web Cloud`{.action}.
+1. Clicca su `Email`{.action}.
+1. Seleziona il dominio.
+1. Nella scheda `Email`{.action} del tuo servizio MX Plan, visualizzi la lista dei tuoi indirizzi email. Una colonna `Filtri` è visibile nella tabella degli account email. Clicca sull'icona dell'imbuto.
 
 ![email](images/img_3239.png){.thumbnail}
 
@@ -149,4 +145,4 @@ Se l'oggetto del messaggio contiene la parola "money" **e il** mittente del mess
 
 [Regole della casella della posta in arrivo dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

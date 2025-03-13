@@ -1,11 +1,7 @@
 ---
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
-updated: 2024-07-11
+updated: 2025-02-12
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -15,14 +11,16 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 |Wersja|Ogłoszenie o zakończeniu życia|Koniec sprzedaży|Zakończenie pomocy|
 |---|---|---|---|
 |MariaDB 10.5|2023-07-26|2024-12-23|2025-06-24|
-|MariaDB 10.6|Do określenia|Do określenia|Do określenia|
+|MariaDB 10.6|2025-02-12|2026-01-04|2026-07-06|
 |MariaDB 10.11|Do określenia|Do określenia|Do określenia|
+|MariaDB 11.4|Do określenia|Do określenia|Do określenia|
 |MySQL 8.0|Do określenia|Do określenia|Do określenia|
-|PostgreSQL 12|2023-03-08|2024-05-15|2024-11-14|
 |PostgreSQL 13|2023-11-14|2025-05-14|2025-11-13|
-|PostgreSQL 14|Do określenia|Do określenia|Do określenia|
+|PostgreSQL 14|2025-02-12|2026-05-13|2026-11-12|
 |PostgreSQL 15|Do określenia|Do określenia|Do określenia|
-|Redis 6.0|Do określenia|Do określenia|Do określenia|
+|PostgreSQL 16|Do określenia|Do określenia|Do określenia|
+|PostgreSQL 17|Do określenia|Do określenia|Do określenia|
+|Redis 6.0|2024-12-03|2025-03-03|2025-03-03|
 |Redis 7.0|Do określenia|Do określenia|Do określenia|
 
 ## Sprawdź również

@@ -1,12 +1,8 @@
 ---
 title: "Recuperar o backup de uma base de dados eliminada"
 excerpt: "Saiba como recuperar o backup de uma base de dados quando esta foi eliminada a partir da Área de Cliente OVHcloud"
-updated: 2024-07-25
+updated: 2025-02-20
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -42,8 +38,8 @@ As API da OVHcloud são disponibilizadas para permitir que os programadores ou o
 Para recuperar o nome do seu alojamento web, execute as seguintes ações:
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-2. Na linha situada no topo da Área de Cliente, clique no separador `Web Cloud`{.action}.
-3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
+2. Clique no separador `Web Cloud`{.action}.
+3. Na coluna da esquerda, clique no menu `Alojamentos`{.action}.
 4. Selecione o alojamento web em causa.
 5. No canto superior esquerdo da página que é apresentada, encontre o nome do seu alojamento web à direita da menção `Alojamentos /`{.action}.
 
@@ -74,21 +70,21 @@ Para isso, efetue as seguintes ações:
 Para isso, preencha os diferentes formulários tal como se especifica a seguir:
 
 - Para a secção intitulada `PATH PARAMETERS`:
-- `serviceName`: Introduza o nome do seu alojamento web anteriormente recuperado na etapa 1 deste guia.
+    - `serviceName`: Introduza o nome do seu alojamento web anteriormente recuperado na etapa 1 deste guia.
 
 - Para a secção intitulada `QUERY-STRING PARAMETERS`:
-- `creationDate.from`: Deixe o formulário vazio.
-- `creationDate.to`: Deixe o formulário vazio.
-- `databaseName`: Introduza o nome da base de dados eliminada acidentalmente. (exemplo: **deletedDatabase.mysql.db**).
-- `deletionDate.from`: Deixe o formulário vazio.
-- `deletionDate.to`: Deixe o formulário vazio.
-- `orphan`: Introduza o valor em minúsculas: `true`.
+    - `creationDate.from`: Deixe o formulário vazio.
+    - `creationDate.to`: Deixe o formulário vazio.
+    - `databaseName`: Introduza o nome da base de dados eliminada acidentalmente. (exemplo: **deletedDatabase.mysql.db**).
+    - `deletionDate.from`: Deixe o formulário vazio.
+    - `deletionDate.to`: Deixe o formulário vazio.
+    - `orphan`: Introduza o valor em minúsculas: `true`.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump.png){.thumbnail}
 
-Depois de preencher os diferentes formulários, clique no botão azul `Try`{.action} situado no canto inferior direito das duas secções previamente preenchidas.
+Depois de preencher os diferentes formulários, clique no botão azul `EXECUTE`{.action} situado no canto inferior direito das duas secções previamente preenchidas.
 
-Se tiver introduzido tudo corretamente e houver backups disponíveis para a base de dados eliminada, aparecerá uma lista de números de ID de backup na janela `RESPONSE`{.action} ao descer para a página abaixo do botão `Try`{.action}.
+Se tiver introduzido tudo corretamente e houver backups disponíveis para a base de dados eliminada, aparecerá uma lista de números de ID de backup na janela `RESPONSE`{.action} ao descer para a página abaixo do botão `EXECUTE`{.action}.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-response.png){.thumbnail}
 
@@ -121,9 +117,9 @@ Preencha os diferentes formulários da parte `PATH PARAMETERS` assim:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
 
-Depois de preencher os diferentes formulários, clique no botão azul `Try`{.action} situado no canto inferior direito da secção previamente preenchida.
+Depois de preencher os diferentes formulários, clique no botão azul `EXECUTE`{.action} situado no canto inferior direito da secção previamente preenchida.
 
-Se tudo tiver sido indicado corretamente, o seguinte resultado aparecerá na janela `RESPONSE`{.action} quando descer para a página abaixo do botão `Try`{.action} :
+Se tudo tiver sido indicado corretamente, o seguinte resultado aparecerá na janela `RESPONSE`{.action} quando descer para a página abaixo do botão `EXECUTE`{.action} :
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-response.png){.thumbnail}
 

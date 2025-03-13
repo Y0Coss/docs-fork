@@ -4,10 +4,6 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihr MX Plan Angebot verwenden'
 updated: 2023-11-15
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachrichten von einem Gerät Ihrer Wahl aus versenden und empfangen können.
@@ -16,14 +12,14 @@ Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachr
 
 ## Voraussetzungen
 
-- Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder enthalten in [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten, separat bestellt, oder enthalten in [Kostenloses Hosting 100M](/links/web/domains-free-hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
-Sobald der MX Plan erstellt und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten. Je nach Aktivierungsdatum oder falls Ihr Dienst [vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/), verfügen Sie entweder über den MX Plan *Legacy* oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion.
+Sobald der MX Plan erstellt und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](/links/manager) verwalten. Je nach Aktivierungsdatum oder falls Ihr Dienst vor Kurzem migriert wurde, verfügen Sie entweder über den MX Plan *Legacy* oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion.
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plans. Fahren Sie entsprechend Ihrer MX Plan Version fort.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plans. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
 |MX Plan Legacy|MX Plan neuere Version|
 |---|---|
@@ -64,7 +60,7 @@ Sobald Ihre E-Mail-Accounts angelegt wurden, können Sie diese verwenden. Hierf�
 
 ##### **1. Webmail (OWA) verwenden**
 
-Gehen Sie zum [Webmail-Login](https://www.ovh.de/mail/) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
+Gehen Sie zum [Webmail-Login](/links/web/email) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
 Beim ersten Login werden Sie aufgefordert, die Sprache sowie Ihre Zeitzone festzulegen. Daraufhin wird Ihr Posteingang angezeigt. Weitere Informationen zur Verwendung Ihrer E-Mail-Adresse finden Sie in unserer Anleitung zur [Verwendung Ihrer E-Mail-Adresse mit OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -117,7 +113,7 @@ Dazu können Sie Weiterleitungen erstellen. Sie können dies auf zwei Arten tun:
 
 - Ihre Weiterleitung über das Webmail-Interface mithilfe der Posteingangsregeln erstellen. Folgen Sie hierzu unserer Anleitung "[Posteingangsregeln in OWA erstellen](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#beispiel-1-e-mails-an-eine-andere-adresse-umleiten)".
 
-- Ihre Weiterleitung über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) anlegen. Mit dieser Methode können Sie zum Beispiel einen Alias erstellen, d.h. eine E-Mail-Adresse, die nicht existiert, auf eine bestehende E-Mail Adresse weiterleiten. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#neue-mx-plan-version)".
+- Ihre Weiterleitung über Ihr [OVHcloud Kundencenter](/links/manager) anlegen. Mit dieser Methode können Sie zum Beispiel einen Alias erstellen, d.h. eine E-Mail-Adresse, die nicht existiert, auf eine bestehende E-Mail Adresse weiterleiten. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#neue-mx-plan-version)".
 
 ##### **Auto-Antworten**
 
@@ -176,7 +172,7 @@ Sobald Ihre E-Mail-Adressen angelegt wurden, können Sie diese verwenden. Hierf�
 
 ##### **1. Webmail (RoundCube) verwenden**
 
-Gehen Sie zum [Webmail-Login](https://www.ovh.de/mail/) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
+Gehen Sie zum [Webmail-Login](/links/web/email) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
 Daraufhin wird Ihr Posteingang angezeigt. Weitere Informationen zur Verwendung Ihres E-Mail-Accounts finden Sie in unserer Anleitung zur [Verwendung von RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)“.
 
@@ -243,4 +239,4 @@ Hierzu können Sie eine Mailingliste erstellen, mithilfe unserer Anleitung "[Mai
 
 Wenn Ihre Bedürfnisse sich ändern und Sie zusätzliche Funktionen benötigen, können Sie auch [eine MX Plan E-Mail-Adresse auf einen E-Mail Pro oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

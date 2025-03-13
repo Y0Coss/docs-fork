@@ -1,38 +1,43 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)'
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
-updated: 2020-02-25
+updated: 2024-09-03
 ---
 
 ## Objectif
 
-Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web App (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](https://www.ovh.com/ca/fr/mail/).
+Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web App (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](/links/web/email).
 
 **Découvrez comment effectuer des actions courantes avec votre adresse électronique depuis l'interface OWA.**
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) ou commandée séparément comme solution autonome telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)
+- Disposer d'une solution e-mail OVHcloud, proposée parmi nos [offres d’hébergement web](/links/web/hosting) ou commandée séparément comme solution autonome telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange)
 - Connaître les identifiants de connexion de l’adresse e-mail que vous souhaitez configurer
 
 ## En pratique
 
-Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur les paramètres non abordés dans ce guide. 
+Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur les paramètres non abordés dans ce guide.
 
 Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver quelques guides supplémentaires dans la section [Aller plus loin](./#aller-plus-loin_1) en bas de ce guide.
 
 > [!primary]
 >
 > Après les deux premières étapes, il n'est pas nécessaire de suivre les instructions dans l'ordre donné.
->
 
 ### Étape 1 : Se connecter à OWA
 
-Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexion au webmail](https://www.ovh.com/ca/fr/mail/). Saisissez entièrement votre adresse e-mail et votre mot de passe. Ensuite, cliquez sur `Connexion`{.action}.
+Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexion au webmail](/links/web/email). Saisissez entièrement votre adresse e-mail et votre mot de passe. Ensuite, cliquez sur `Connexion`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
 Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-mail, vous serez invité à définir la langue de l'interface ainsi que le fuseau horaire. Ensuite, cliquez sur `Enregistrer`{.action} pour continuer.
+
+> [!primary]
+>
+> Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), et non par ordre alphabétique des villes.
+>
+> **Exemple** : Pour l'Europe de l'Ouest, il s'agit de UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
@@ -44,9 +49,9 @@ Dorénavant, votre boîte de réception apparaîtra par défaut dès que vous se
 
 L'interface OWA comporte plusieurs sections. Veuillez vous référer au tableau et à l'image ci-dessous pour vous familiariser avec celle-ci.
 
-|Parties|Description|  
-|---|---|  
-|Section supérieure (1)|Elle dispose de deux barres d'onglets : la première permet d'accéder aux paramètres généraux (tels que la [rubrique Options](./#acceder-a-la-section-options)). La seconde barre peut être utilisée pour des actions spécifiques avec votre adresse (telles que l'envoi ou la réponse aux e-mails).|  
+|Parties|Description|
+|---|---|
+|Section supérieure (1)|Elle dispose de deux barres d'onglets : la première permet d'accéder aux paramètres généraux (tels que la [rubrique Options](./#acceder-a-la-section-options)). La seconde barre peut être utilisée pour des actions spécifiques avec votre adresse (telles que l'envoi ou la réponse aux e-mails).|
 |Côté gauche (2)|Affiche la liste des dossiers pour votre adresse e-mail. Ces dossiers se présentent sous la forme d'une arborescence que vous pouvez développer ou masquer.|
 |Segment central (3)|Affiche la liste des messages (lus et non lus) du dossier sélectionné dans le menu de gauche. Cette section peut également afficher les résultats de recherche.|
 |Côté droit (4)|Affiche le volet de lecture lorsqu'un e-mail a été sélectionné.|
@@ -89,7 +94,7 @@ OWA propose plusieurs façons d'organiser votre messagerie. Vous pouvez :
 
 #### Créer un dossier
 
-Pour créer un nouveau dossier, faites un clic droit sur le nom de votre adresse e-mail dans l'arborescence des dossiers, puis choisissez `Créer un nouveau dossier`{.action}. Vous pouvez créer un sous-dossier dans des dossiers existants de la même manière en cliquant sur `Créer un nouveau sous-dossier`{.action}. 
+Pour créer un nouveau dossier, faites un clic droit sur le nom de votre adresse e-mail dans l'arborescence des dossiers, puis choisissez `Créer un nouveau dossier`{.action}. Vous pouvez créer un sous-dossier dans des dossiers existants de la même manière en cliquant sur `Créer un nouveau sous-dossier`{.action}.
 
 ![useowa](images/use-owa-step10.png){.thumbnail}
 
@@ -102,19 +107,19 @@ Pour simultanément **déplacer plusieurs e-mails**, sélectionnez les tous grâ
 
 #### Créer des règles de gestion de la messagerie
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Pour créer et gérer des règles, cliquez d’abord sur l'icône d'engrenage en haut, puis sur `Options`{.action}.
 
 ![useowa](images/use-owa-step12.png){.thumbnail}
 
-Dans la nouvelle page qui s’ouvre, cliquez sur `Règles de boîte de réception et de rangement`{.action} qui se trouve dans le menu de gauche. Dans l’arborescence « Options », vous pouvez trouver cette fonctionnalité dans « Courrier », sous « Traitement automatique ». Ici, vous pouvez créer, modifier et déplacer des règles de la liste. 
+Dans la nouvelle page qui s’ouvre, cliquez sur `Règles de boîte de réception et de rangement`{.action} qui se trouve dans le menu de gauche. Dans l’arborescence « Options », vous pouvez trouver cette fonctionnalité dans « Courrier », sous « Traitement automatique ». Ici, vous pouvez créer, modifier et déplacer des règles de la liste.
 
-Pour ajouter une nouvelle règle, cliquez sur le bouton `+`{.action}  
+Pour ajouter une nouvelle règle, cliquez sur le bouton `+`{.action}.
 
 ![useowa](images/use-owa-step13.png){.thumbnail}
 
-Renseignez les informations demandées en fonction de la tâche que vous voudrez effectuer avec cette règle. Cliquez ensuite sur `OK`{.action}. 
+Renseignez les informations demandées en fonction de la tâche que vous voudrez effectuer avec cette règle. Cliquez ensuite sur `OK`{.action}.
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
@@ -122,11 +127,11 @@ Pour des instructions plus détaillées sur la création des règles de gestion 
 
 #### Bloquer un expéditeur
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Cliquez sur l'icône de l'engrenage en haut à droite, puis cliquez sur `Options`{.action}. Toujours dans la colonne de gauche, parcourez l'arborescence "Courrier" sous "Comptes", puis "Bloquer ou autoriser".
 
-Dans la section « **Expéditeurs bloqués** », tapez une adresse e-mail ou un nom de domaine à bloquer, puis cliquez sur le bouton `+`{.action} pour l'ajouter dans la liste. 
+Dans la section « **Expéditeurs bloqués** », tapez une adresse e-mail ou un nom de domaine à bloquer, puis cliquez sur le bouton `+`{.action} pour l'ajouter dans la liste.
 
 ![useowa](images/owa_exchange_block.png){.thumbnail}
 
@@ -148,7 +153,7 @@ Pour **créer une liste de contacts**, cliquez sur la flèche vers le bas à cô
 
 ### Modifier le mot de passe
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Vous pouvez modifier le mot de passe de votre compte lorsque vous êtes connecté à OWA. Pour ce faire, cliquez sur l'icône d'engrenage en haut, puis cliquez sur `Options`{.action}.
 
@@ -223,4 +228,4 @@ La désactivation de ces cookies peut néanmoins affecter la stabilité de votre
 
 [Partager des calendriers via l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

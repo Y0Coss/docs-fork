@@ -1,12 +1,8 @@
 ---
 title: "Przewodnik dotyczący usługi CDN na hostingu www"
 excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
-updated: 2024-03-12
+updated: 2025-02-20
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie 
 
@@ -37,7 +33,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ####  Jeśli opcja CDN nie jest zamówiona lub włączona na Twoim hostingu
 
-Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
+Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja GeoCache jest już zawarta w Twoim hostingu.
 
 > [!primary]
 > 
@@ -49,7 +45,7 @@ Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana 
 
 #### Jeśli opcja CDN jest już włączona na Twoim hostingu
 
-Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
+Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
 
 Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -251,9 +247,40 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 
 ### Wyświetl statystyki usługi CDN
 
-W zakładce `MultiSite`{.action} Twojego hostingu, w tabeli możesz wyświetlić statystyki usługi CDN, wskazując liczbę zapytań na minutę zmierzonych w tym CDN.
+Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **6** etapy.
 
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/statistics.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+>>
+> **Etap 4**
+>>
+>> W sekcji `Statystyki odwiedzin na stronie` kliknij przycisk `Wyświetl statystyki`{.action}.
+>>
+> **Etap 5**
+>>
+>> Zostaniesz przekierowany do narzędzia **OVHcloud Web Statistics**. W tym narzędziu kliknij na formularz `Wybór domeny`{.action} znajdujący się na górze strony, następnie wybierz nazwę domeny, dla której aktywny jest CDN.
+>>
+> **Etap 6**
+>>
+>> W prawej kolumnie kliknij zakładkę `Cache`{.action}.
+>>
+>> Teraz wyświetlasz statystyki usługi CDN dla swojej domeny.
+>>
+>> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem "[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)".
 
 ### Jak przenieść pliki do pamięci cache w usłudze GeoCache?
 
@@ -299,7 +326,7 @@ Operacja ta pozwala wyłączyć CDN dla jednej lub kilku pozycji podpiętych w o
 > Modyfikacja wpisu w aktywnej strefie DNS domeny wiąże się z opóźnieniem propagacji wynoszącym **4** do **24** godzin, zanim wejdzie on w życie. W tym czasie może pojawić się losowo strona z kodem **520**. Zjawisko to jest związane z faktem, że niektóre części sieci DNS nadal przekierowują zapytania na adres IP usługi CDN powiązanej z Twoim hostingiem.
 >
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action} po prawej stronie pozycji MultiSite, a następnie `Zmień`{.action}.
+Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action} po prawej stronie pozycji MultiSite, a następnie `Zmień`{.action}.
 
 Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -309,7 +336,7 @@ Usuń zaznaczenie opcji "Aktywuj GeoCache", kliknij przycisk `Dalej`{.action}, a
 
 Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Rezygnacja z GeoCache`{.action}.
+Przejdź do Panelu [klienta OVHcloud](/links/manager) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji GeoCache", a następnie `Rezygnacja z GeoCache`{.action}.
 
 ![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
 

@@ -16,7 +16,7 @@ Una instancia *flex* es una instancia de disco único (50 GB) que ofrece un proc
 
 ## Requisitos
 
-- Tener una [instancia de Public Cloud de OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia) de tipo *flex*.
+- Tener una [instancia de Public Cloud de OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#configuration) de tipo *flex*.
 - [Crear un acceso a Horizon](/pages/public_cloud/compute/introducing_horizon).
 
 ## Procedimiento
@@ -59,7 +59,7 @@ Esta sección permite gestionar la partición del disco (*Disk Partition*) y el 
 
 Para continuar, haga clic en el botón `Resize`{.action}.
 
-Una vez finalizado el proceso, su instancia se migrará a un modelo clásico, con más espacio de almacenamiento.
+Una vez completado el proceso, su instancia se cambiará al modelo seleccionado. En nuestro caso, nuestra instancia se cambió a un modelo clásico con más espacio de almacenamiento.
 
 ![Nuevo flavor aplicado](images/newflavor.png){.thumbnail}
 

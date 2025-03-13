@@ -1,12 +1,8 @@
 ---
 title: "Migrar un sitio web y los servicios asociados a OVHcloud"
 excerpt: "Descubra cómo migrar un sitio web, un dominio, una base de datos o un correo a OVHcloud sin interrupción del servicio"
-updated: 2024-06-24
+updated: 2025-01-08
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 ## Objetivo
 
@@ -198,7 +194,7 @@ Para ello, es necesario tener las claves de acceso de todas sus antiguas cuentas
 > Si sus direcciones de correo estuvieran configuradas en POP sin conservar copias de los mensajes en su antiguo servidor de correo, o si tuviera los emails registrados "localmente" en sus dispositivos, solo podrá realizar la **opción 2**.
 >
 
-**Opción 2**: realice una copia de seguridad del contenido de sus direcciones de correo mediante un cliente de correo (Outlook, Mail para Mac...), reconfigure su cliente de correo e importe la copia de seguridad en su nueva dirección de correo de OVHcloud.
+**Opción 2**: realice una copia de seguridad del contenido de sus direcciones de correo mediante un cliente de correo (Outlook, Mail para Mac...), reconfigure su cliente de correo e importe la copia de seguridad en su nueva dirección de correo de OVHcloud. Para más información, consulte nuestra guía "[Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Etapa 8: reconfigurar su cliente de correo <a name="step8"></a>
 

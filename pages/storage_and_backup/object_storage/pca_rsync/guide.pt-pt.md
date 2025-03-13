@@ -23,7 +23,7 @@ Os ficheiros binários pré-compilados estão disponíveis na maioria das distri
 
 ### ID OpenStack
 
-Para poder gerar o seu identificador e a sua palavra-passe OpenStack, utilize este [guia](/pages/public_cloud/compute/introducing_horizon).
+Para poder gerar o seu identificador e a sua palavra-passe OpenStack, utilize este [guia](/pages/public_cloud/compute/create_and_delete_a_user).
 
 ### TenantName
 
@@ -87,6 +87,6 @@ Além disso, apenas é permitido um subconjunto de opções no lado do cliente:
 
 [Página inicial do Rsync](https://linux.die.net/man/1/rsync)
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

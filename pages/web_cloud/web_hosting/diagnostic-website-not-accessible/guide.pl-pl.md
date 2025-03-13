@@ -4,10 +4,6 @@ excerpt: "Zdiagnozuj przyczyny niedostępności Twojej strony WWW"
 updated: 2022-08-02
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
-
 ## Wprowadzenie 
 
 W przypadku niedostępności Twojej strony WWW może pojawić się kilka zwrotów błędu. Poniższe przykłady ilustrują błędną konfigurację Twoich [serwerów DNS](/pages/web_cloud/domains/dns_server_edit), Twojej [strefy DNS](/pages/web_cloud/domains/dns_zone_edit) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla jednego z komunikatów o błędach opisanych tutaj, zobacz sekcję [Sprawdź również](#go-further)):
@@ -46,9 +42,9 @@ W przypadku niedostępności Twojej strony WWW może pojawić się kilka zwrotó
 > W związku z tym zalecamy [włączenie automatycznego](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#w-praktyce) odnowienia wszystkich Twoich subskrypcji OVHcloud.
 >
 
-Aby sprawdzić poprawność subskrypcji Twojej domeny, w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager) kliknij Twoją nazwę, aby wyświetlić menu PPM, następnie `Produkty i usługi`{.action}.
+Aby sprawdzić poprawność subskrypcji Twojej domeny, w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager) kliknij Twoją nazwę, aby wyświetlić menu PPM, następnie `Moje rozwiązania i usługi`{.action}.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-product-and-services.png){.thumbnail}|
+![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-my-solutions-and-services.png){.thumbnail}|
 
 Odnów Twoją domenę, jeśli to konieczne, za pomocą przycisku `...`{.action}. po prawej stronie ekranu, a następnie `Odnów usługę`{.action}.
 

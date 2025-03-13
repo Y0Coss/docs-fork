@@ -4,10 +4,6 @@ excerpt: Questa guida ti mostra come attivare una licenza Microsoft 365 e come g
 updated: 2024-03-27
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 OVHcloud **Microsoft 365 apps for business** o **Microsoft 365 apps for entreprise**. La fatturazione è mensile e puoi installare una licenza su 5 PC/Mac, 5 tablet e 5 smartphone.
@@ -29,7 +25,7 @@ Ecco l'elenco dei software inclusi nella suite:
 
 ### Ordina una licenza
 
-Accedi alla pagina commerciale [Microsoft 365 OVHcloud](https://www.ovh.com/fr/office-365-business){.external} e seleziona la sezione `Microsoft`{.action} della nostra sezione `Web Cloud`{.action}.
+Accedi alla pagina commerciale [Microsoft 365 OVHcloud](/links/web/ms365) e seleziona la sezione `Microsoft`{.action} della nostra sezione `Web Cloud`{.action}.
 
 È inoltre possibile ordinare una licenza dallo [Spazio Cliente OVHcloud](/links/manager). Seleziona `Web Cloud`{.action} nella barra superiore, clicca sul pulsante `Ordina`{.action} e seleziona `O365`{.action}.
 
@@ -108,4 +104,4 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 [Utilizza il desktop remoto con Microsoft 365 aps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

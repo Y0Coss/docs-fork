@@ -98,11 +98,11 @@ The subscription to the Business support level is mandatory, at least to maintai
 
 OVHcloud provides this service based on Apache Spark technology without any specific customization (Vanilla). You are able to use to use all modules and codes supported by the technology following your business needs.<br>
 
-Data storage technology is based on S3 or SWIFT technology and you are able to import and export your data at anytime using API calls.
+Data storage technology is based on S3 **\*** compatible Object Storage or SWIFT Object Storage technology and you are able to import and export your data at anytime using API calls.
 
 ### 9.1 Erasure of customer data
 
-Once the the job is executed, no data are retained on OVHcloud infrastructure and all allocated resources are destroyed.
+Once the job is executed, no data are retained on OVHcloud infrastructure and all allocated resources are destroyed.
 
 To destroy stored data and logs , you have to use API calls to destroy your Object Storage.
 
@@ -111,3 +111,5 @@ To destroy stored data and logs , you have to use API calls to destroy your Obje
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

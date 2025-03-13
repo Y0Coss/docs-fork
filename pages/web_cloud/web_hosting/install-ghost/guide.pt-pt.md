@@ -4,10 +4,6 @@ excerpt: "Saiba como instalar um blogue com a plataforma Ghost num alojamento Cl
 updated: 2022-05-04
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Introdução
 
 [Ghost](https://ghost.org/){.external} é um gestor de conteúdos open source destinado a blogueiros ou jornalistas que simplifica o processo de publicação na Internet. O programa está escrito em JavaScript e utiliza [Node.js](https://nodejs.org/){.external}, uma plataforma que permite criar websites e API em JavaScript do lado do servidor.
@@ -246,7 +242,7 @@ A instalação e a configuração de Ghost ficam assim concluídas. Só falta re
 
 ### 7 - Reiniciar o *daemon* Node.js
 
-Para reiniciar o *daemon* Node.js, aceda à sua [Área de Cliente OVHcloud](/links/manager){.external}. No separador `Multi-site`{.action}, clique no botão `...`{.action} no final da linha correspondente ao domínio.{.action} à direita, em `Reiniciar`{.action}.
+Para reiniciar o *daemon* Node.js, aceda à sua [Área de Cliente OVHcloud](/links/manager){.external}. No separador `Multi-site`{.action}, clique no botão `...`{.action} no final da linha correspondente ao domínio à direita, em `Reiniciar`{.action}.
 
 Depois de realizar esta operação, a aplicação ficará acessível através do nome de domínio escolhido na configuração do seu multisite.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Configuring the vRack on your dedicated servers'
 excerpt: 'Find out how to configure the vRack on two or more dedicated servers'
-updated: 2023-09-12
+updated: 2024-10-17
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 
 **This guide explains how to configure the vRack on two or more dedicated servers.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requirements
 
@@ -21,19 +21,19 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 - A private IP address range of your choice
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
+> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 
 ## Instructions
 
 ### Step 1: Ordering the vRack
 
-Once you are connected to your OVHcloud control panel, go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. Under this menu, click on `vRack`{.action}.
+Once you are connected to your OVHcloud Control Panel, go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. In this menu, click on `vRack`{.action}.
 
 ![Order vrack](images/orderingvrack.png){.thumbnail}
 
-You will be redirected to another page to validate the order, it will take a few minutes for the vRack to be setup in your account.
+You will be redirected to another page to validate the order, it will take a few minutes for the vRack to be set up in your account.
 
 ### Step 2: Adding your servers to the vRack
 
@@ -76,7 +76,40 @@ In the line that begins with ```link ether```, you can verify that this interfac
 link ether f0:00:00:ef:0e:f0
 ```
 
-##### **Debian**
+##### **Debian 12**
+
+Using a text editor of your choice, open the network configuration file located in `/etc/netplan/` for editing. Here the file is called `50-cloud-init.yaml`.
+
+```bash
+editor /etc/netplan/50-cloud-init
+```
+
+Add the IP configuration to the existing one after the line `ethernets`:
+
+```yaml
+    ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: no
+            addresses:
+              - 192.168.0.1/16
+```
+
+> [!warning]
+>
+> It is important to respect the alignment of each element in `yaml` files as represented in the example above. Do not use the tab key to create your spacing. Only the space key is needed. 
+>
+
+Save your changes to the config file and exit the editor.
+
+Apply the configuration:
+
+```bash
+netplan apply
+```
+
+Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
+
+##### **Debian 11**
 
 Using a text editor of your choice, open the network configuration file located in `/etc/network/interfaces.d` for editing. Here the file is called `50-cloud-init`.
 
@@ -211,6 +244,6 @@ Repeat this process for your other server(s) and assign an unused IP address fro
 
 ## Go further
 
-[Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
+[Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
 Join our [community of users](/links/community).

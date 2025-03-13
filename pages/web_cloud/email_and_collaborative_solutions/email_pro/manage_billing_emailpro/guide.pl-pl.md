@@ -4,9 +4,6 @@ excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi E-mail Pro'
 updated: 2022-02-23
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -16,14 +13,17 @@ Oferta E-mail Pro umożliwia elastyczne zarządzanie płatnościami. Niniejszy p
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Posiadanie [konta E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Posiadanie [konta E-mail Pro](/links/web/email-pro)
 
 ## W praktyce
 
 ### Zamówienie dodatkowych kont
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `E-mail Pro`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią platformę E-mail Pro.
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+1. Kliknij zakładkę `Web Cloud`{.action}.
+1. Kliknij `E-maile Pro`{.action}.
+1. Wybierz odpowiednią platformę.
 
 Przejdź do karty `Konta e-mail`{.action}, a następnie kliknij przycisk `Zamówienie kont`{.action} w prawym górnym rogu.
 
@@ -53,7 +53,7 @@ Kliknij `Dalej`{.action}, aby przejść do podsumowania żądanych zmian, a nast
 
 ### Usuwanie kont
 
-Aby usunąć konto z Twojej platformy E-mail Pro, należy najpierw zrezygnować z niego, przechodząc konfigurację jego odnawiania na **Brak**. W tym celu sprawdź etap ["Zmiana częstotliwości odnawiania kont"](#periodicity){.external}.
+Aby usunąć konto z Twojej platformy E-mail Pro, należy najpierw zrezygnować z niego, przechodząc konfigurację jego odnawiania na **Brak**. W tym celu sprawdź etap ["Zmiana częstotliwości odnawiania kont"](#periodicity).
 
 Po rezygnacji konto będzie zawieszone do daty wygaśnięcia. Jeśli chcesz usunąć adres e-mail obsługiwany na koncie przed jego datą wygaśnięcia, należy go zresetować.
 
@@ -73,4 +73,4 @@ W oknie zarządzania Twoją usługą E-mail Pro kliknij przycisk `Operacje`{.act
 
 ## Sprawdź również
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

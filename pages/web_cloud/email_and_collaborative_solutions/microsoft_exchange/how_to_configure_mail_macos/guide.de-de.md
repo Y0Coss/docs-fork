@@ -1,7 +1,7 @@
 ---
-title: Exchange - Konfiguration Ihres E-Mail Accounts in macOS Mail
+title: "Exchange - Konfiguration Ihrer E-Mail-Adresse in Mail für macOS"
 excerpt: Erfahren Sie hier, wie Sie Ihren Exchange Account in macOS Mail einrichten
-updated: 2024-04-16
+updated: 2024-10-09
 ---
 
 <style>
@@ -12,10 +12,6 @@ updated: 2024-04-16
   max-height:600px !important;
 }
 </style>
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -53,18 +49,22 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 
 > [!tabs]
 > **Schritt 1**
+>>
 >> Wählen Sie `Exchange`{.action}.<br><br>
 >> ![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
 >>
 > **Schritt 2**
+>>
 >> Geben Sie den **Namen** Ihres E-Mail-Accounts und Ihre **E-Mail-Adresse** ein und klicken Sie auf `Verbinden`{.action}. <br><br>
 >> ![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
 >>
 > **Schritt 3**
+>>
 >> Klicken Sie im folgenden Fenster auf `Manuelle Konfiguration`{.action}: <br><br>- Legen Sie den **Namen** fest, der im Browser-Interface angezeigt wird. <br>- Ihre **E-Mail-Adresse** beibehalten.<br>- Ihr **Passwort** beibehalten. <br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Verbinden`{.action}. <br><br>
 >>![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Schritt 4**
+>>
 >> Geben Sie ein: <br><br>- E-Mail-Adresse: Geben Sie Ihre vollständige E-Mail-Adresse ein.<br>- Benutzername: Geben Sie Ihre vollständige E-Mail-Adresse ein. <br>- Passwort: Geben Sie Ihr **Passwort** ein.<br> - Interne URL: **ex?.mail.ovh.net** (ersetzen Sie **?** durch [Ihre Exchange-Servernummer](#addaccount).)<br>- Externe URL: **ex?.mail.ovh.net** (ersetzen Sie **?** durch [Ihre Exchange-Servernummer](#addaccount).)<br><br>
 >>
 >> > [!warning]
@@ -74,13 +74,14 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 >> ![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
 >>
 > **Schritt 5**
+>>
 >> Zusätzlich zu Ihren E-Mails können Sie auch andere Exchange Funktionen auswählen, die Sie über Ihren Mac verwalten möchten. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### E-Mail-Account verwenden
 
 Nach der Konfiguration der E-Mail-Adresse können Sie diese verwenden! Sie können ab sofort Nachrichten senden und empfangen.
 
-OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
+OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über[Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
 
 Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitungen [Exchange-Account über das OWA-Interface aufrufen](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) und [E-Mail-Adresse über RoundCube Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube#ou-et-comment-à-au-webmail-roundcube).
 
@@ -99,10 +100,14 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Kontoeinstellun
 
 ## Weiterführende Informationen
 
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf macOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/guide/mail/mail35803/mac).
+
 [E-Mail FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 [Ihren E-Mail Pro Account auf macOS Mail einrichten](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
 
 [MX Plan E-Mail-Account auf macOS Mail einrichten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

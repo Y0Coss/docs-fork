@@ -1,12 +1,8 @@
 ---
 title: Best Practices für die Verwaltung Ihrer Dienstleistungen und Ihres OVHcloud Accounts
 excerpt: Erfahren Sie hier alles zur Verwaltung Ihrer Rechnungen, Bestellungen, Zahlungsmittel und Kunden-Accounts
-updated: 2022-05-02
+updated: 2024-12-23
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -52,7 +48,7 @@ Vergewissern Sie sich, dass Ihre E-Mail-Adresse stets **aktuell, gesichert und e
 Die von OVHcloud versendeten E-Mails sind auch über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einsehbar.<br>
 Klicken Sie oben rechts auf Ihren Bildschirm auf Ihren Namen und dann im rechten Menü auf `E-Mails von OVHcloud`{.action}.
 
-![service_emails](images/service_emails.png){.thumbnail}
+![service_emails](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
 
 ### Automatische Verlängerung aktivieren
 
@@ -83,10 +79,10 @@ Sie werden über die Schritte der Ausführung informiert und erfahren, ob auf Ih
 
 Wenn Sie einen Ihrer Dienste nicht mehr nutzen möchten, können Sie ihn kündigen, die Verlängerung auf den manuellen Modus umstellen oder ihn sofort aus Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) löschen.
 
-Klicken Sie zunächst auf Ihren Namen oben rechts neben Ihrem Bildschirm und dann auf `Produkte und Dienstleistungen`{.action}. Klicken Sie auf der rechten Seite auf den Button `...`{.action} der dem Dienst entspricht, den Sie bearbeiten möchten, und klicken Sie dann auf einen der folgenden Buttons:
+Klicken Sie zunächst auf Ihren Namen oben rechts neben Ihrem Bildschirm und dann auf `Meine Angebote und Dienste`{.action}. Klicken Sie auf der rechten Seite auf den Button `...`{.action} der dem Dienst entspricht, den Sie bearbeiten möchten, und klicken Sie dann auf einen der folgenden Buttons:
 
 - `Verlängerung konfigurieren`{.action}: Auf dem folgenden Bildschirm können Sie den `Verlängerungsart` Ihrer Dienstleistung auf `Manuell` umstellen. Klicken Sie anschließend auf `Weiter`{.action} und `Bestätigen`{.action}. Vor Ablauf Ihrer Dienstleistung erhalten Sie mehrere Benachrichtigungen per E-Mail. Wenn Sie Ihren Dienst nicht verlängern, wird er **endgültig** gelöscht.
-- `Kündigen`{.action}: Geben Sie im folgenden Fenster die Gründe für Ihre Kündigungsanfrage ein und klicken Sie dann auf `Bestätigen`{.action}. Am Ablaufdatum Ihrer Dienstleistung wird diese **endgültig** gelöscht.
+- `Meinen Dienst kündigen`{.action}: Geben Sie im folgenden Fenster die Gründe für Ihre Kündigungsanfrage ein und klicken Sie dann auf `Bestätigen`{.action}. Am Ablaufdatum Ihrer Dienstleistung wird diese **endgültig** gelöscht.
 - `Sofort löschen`{.action}: Klicken Sie dann auf `Bestätigen`{.action}. Sie erhalten eine Bestätigungsmail. Nach Ihrer Validierung wird Ihre Dienstleistung **sofort und endgültig** gelöscht.
 
 Weitere Informationen zur Kündigung Ihrer Dienstleistungen finden Sie in der Anleitung [OVHcloud Dienste kündigen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
@@ -102,4 +98,4 @@ Verwenden Sie dieses [Formular](https://www.ovh.de/schutz-personenbezogener-date
 
 [OVHcloud Rechnungen verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

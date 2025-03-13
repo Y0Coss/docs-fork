@@ -1,7 +1,7 @@
 ---
 title: Exchange - Konfiguracja konta e-mail w aplikacji Mail na macOS
 excerpt: Dowiedz się, jak skonfigurować konto Exchange w aplikacji Mail na macOS
-updated: 2024-04-16
+updated: 2024-10-09
 ---
 
 <style>
@@ -12,10 +12,6 @@ updated: 2024-04-16
   max-height:600px !important;
 }
 </style>
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -42,7 +38,7 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 
 > [!primary]
 >
-> W naszym przykładzie używamy nazwy serwera: ex*?*.mail.ovh.net. Należy zastąpić "?" cyfrą wskazującą serwer Twojej usługi Exchange.
+> W naszym przykładzie używamy nazwy serwera: ex**?**.mail.ovh.net. Należy zastąpić "?" cyfrą wskazującą serwer Twojej usługi Exchange.
 >
 > Znajdziesz tę cyfrę w [Panelu klienta OVHcloud](/links/manager), w rubryce `Web Cloud`{.action}, następnie `Microsoft`{.action}.
 > Kliknij na `Exchange`{.action}, a następnie na wybraną platformę Exchange. Nazwa serwera jest widoczna w ramce **Połączenie** w zakładce `Informacje ogólne`{.action}.
@@ -54,34 +50,39 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 
 > [!tabs]
 > **Etap 1**
+>>
 >> Wybierz `Exchange`{.action}<br><br>
 >> ![MailMac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 2**
+>>
 >> Wpisz **Nazwa** Twojego konta e-mail i **Adres e-mail**, a następnie kliknij `Zaloguj się {.action} <br><br>
 >> ![MailMac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 3**
+>>
 >> W kolejnym oknie kliknij `Konfiguracja ręczna`{.action} : <br><br>- Ustaw **Nazwa**, która będzie się wyświetlała w interfejsie nawigacji <br>- Pozostaw swój **adres e-mail**<br>- Pozostaw swoje **Hasło** wprowadzone <br><br>Aby dokończyć konfigurację, kliknij `Zaloguj się`{.action} <br><br>
 >> ![MailMac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 4**
->> Wpisz: <br><br>- Adres e-mail: pozostaw pełny adres e-mail<br>- Nazwa użytkownika: pozostaw pełny adres e-mail <br>- Hasło: zostaw swoje **hasło**<br> - Wewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?* na [numer serwera Exchange](#addaccount))<br>- Zewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?* na [numer serwera Exchange](#addaccount))<br><br>
+>>
+>> Wpisz: <br><br>- Adres e-mail: pozostaw pełny adres e-mail<br>- Nazwa użytkownika: pozostaw pełny adres e-mail <br>- Hasło: zostaw swoje **hasło**<br> - Wewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?** na [numer serwera Exchange](#addaccount))<br>- Zewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?** na [numer serwera Exchange](#addaccount))<br><br>
 >>
 >> > [!warning]
 >> >
-> > > Wiadomość jest wyświetlana na czerwono "**Nie można sprawdzić nazwy lub hasła konta**", gdy po raz pierwszy zostanie wyświetlone okno. Jeśli jednak ten komunikat będzie się powtarzać po zatwierdzeniu, wprowadzone informacje będą błędne.<br><br>
+>> > Wiadomość jest wyświetlana na czerwono "**Nie można sprawdzić nazwy lub hasła konta**", gdy po raz pierwszy zostanie wyświetlone okno. Jeśli jednak ten komunikat będzie się powtarzać po zatwierdzeniu, wprowadzone informacje będą błędne.<br><br>
 >>
 >> ![MailMac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 5**
+>>
 >> Oprócz e-maili możesz wybrać inne funkcje Exchange, którymi chcesz zarządzać z poziomu komputera Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Użyj konta e-mail
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem <https://www.ovhcloud.com/pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
@@ -98,10 +99,14 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 
 ## Sprawdź również
 
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail na urządzeniach z systemem macOS, skorzystaj z [Centrum pomocy Apple](https://support.apple.com/pl-pl/guide/mail/mail35803/mac).
+
 [FAQ e-maile](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 [Konfiguracja konta E-mail Pro w aplikacji Mail na urządzeniach z systemem macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
 
 [Konfiguracja konta e-mail MX Plan w aplikacji Mail na urządzeniach z systemem macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

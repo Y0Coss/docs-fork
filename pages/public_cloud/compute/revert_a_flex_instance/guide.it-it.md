@@ -16,7 +16,7 @@ Un'istanza *flex* è un'istanza a disco unico (50 GB) che offre un processo più
 
 ## Prerequisiti
 
-- Disporre di un'[istanza Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza) di tipo *flex*
+- Disporre di un'[istanza Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#configuration) di tipo *flex*
 - [Crea un accesso all'interfaccia Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## Procedura
@@ -59,7 +59,7 @@ Questa sezione permette di gestire il partizionamento del disco (*Disk Partition
 
 Per continuare, clicca sul pulsante `Resize`{.action}.
 
-Una volta terminato il processo, la nostra istanza sarà migrata verso un modello classico con più spazio di storage.
+Una volta completato il processo, l'istanza passerà al modello selezionato. Nel nostro caso, l'istanza è passata a un modello classico con più spazio di archiviazione.
 
 ![Nuova flavor applicata](images/newflavor.png){.thumbnail}
 

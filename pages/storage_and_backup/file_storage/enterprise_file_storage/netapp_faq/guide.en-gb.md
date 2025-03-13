@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - FAQ
 excerpt: 'Enterprise File Storage FAQ'
-updated: 2022-03-21
+updated: 2025-02-21
 ---
 
 ## Objective
@@ -24,7 +24,7 @@ This solution can also be used to address more complex, practical cases, such as
 
 ### Can Enterprise File Storage be managed from the OVHcloud Control Panel?
 
-Yes, you can access this service directly from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) by going to the `Bare Metal Cloud`{.action} section, then `Storage and Backup`{.action}.
+Yes, you can access this service directly from your [OVHcloud Control Panel](/links/manager) by going to the `Bare Metal Cloud`{.action} section, then `Storage and Backup`{.action}.
 
 ## Availability
 
@@ -56,7 +56,7 @@ Our Enterprise File Storage is compliant with several leading industry standards
 
 ### Can I access Enterprise File Storage from a vRack private network?
 
-Not for now, but this feature will be available soon (vRack endpoint).
+Yes (vRack endpoint).
 
 ## On-premises access
 
@@ -70,7 +70,7 @@ Please contact our sales or technical support team to design an infrastructure t
 
 ### What storage capacity options are available?
 
-The minimum size of a service is 1TiB, and the maximum size is 58TiB. The granularity is 1TiB.
+The minimum size of a service is 1TB, and the maximum size is 58TB. The granularity is 1TB.
 
 ### How many Enterprise File Storage services can I create from my customer account?
 
@@ -78,13 +78,13 @@ There is no limit to the number of services per customer account.
 
 ### What is the maximum number of volumes per service?
 
-You can create up to 10 volumes per service. The minimum size is 100GiB and the maximum size is 29TiB.
+You can create up to 10 volumes per service. The minimum size is 100GB and the maximum size is 29TB.
 
 ### What level of performance is available with Enterprise File Storage?
 
-Enterprise File Storage comes with a guaranteed throughput service level objective (SLO) of 64MB/s per TiB and 4000 IOPS per TiB.
+Enterprise File Storage comes with a guaranteed throughput service level objective (SLO) of 64MB/s per TB and 4000 IOPS per TB.
 
-For example, when a 10 TiB pool is delivered, you get 640 MB/s bandwidth and 40,000 IOPS.
+For example, when a 10 TB pool is delivered, you get 640 MB/s bandwidth and 40,000 IOPS.
 
 ## Snapshots and backups
 
@@ -98,7 +98,7 @@ Customers are responsible for managing their own backup solution and policy. How
 
 ### Are snapshots included in the capacity of a service?
 
-Snapshots are allocated a minimum of 5% of the storage space. For example, on a 5TiB service, 250GiB are reserved for snapshots.
+Snapshots are allocated a minimum of 5% of the storage space. For example, on a 5TB service, 250GB are reserved for snapshots.
 
 ### What is the maximum number of snapshots per service?
 
@@ -132,6 +132,6 @@ Enterprise File Storage is a service that is billed monthly by volume (from 1 TB
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

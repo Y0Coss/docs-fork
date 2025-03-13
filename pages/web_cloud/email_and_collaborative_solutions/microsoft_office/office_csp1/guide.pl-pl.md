@@ -4,9 +4,6 @@ excerpt: Dowiedz się, jak zamówić licencję Microsoft 365 i zarządzać nią 
 updated: 2024-03-27
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -23,13 +20,13 @@ Oto lista programów zawartych w pakiecie:
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
 ### Zamów licencję
 
-Przejdź do strony biznesowej [Microsoft 365 OVHcloud](https://www.ovh.pl/office-365-business){.external} i wybierz rubrykę `Microsoft`{.action} w sekcji `Web Cloud`{.action}.
+Przejdź do strony biznesowej [Microsoft 365 OVHcloud](/links/web/ms365) i wybierz rubrykę `Microsoft`{.action} w sekcji `Web Cloud`{.action}.
 
 Licencję możesz również zamówić w panelu [Panel klienta OVHcloud](/links/manager). Po zalogowaniu wybierz `Web Cloud`{.action} w górnym pasku, następnie kliknij przycisk `Zamów`{.action} i `O365`{.action}.
 
@@ -108,4 +105,4 @@ Podaj powody złożenia wniosku o rezygnację z usługi i kliknij przycisk `Zatw
 
 [Skorzystaj ze zdalnego pulpitu z Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

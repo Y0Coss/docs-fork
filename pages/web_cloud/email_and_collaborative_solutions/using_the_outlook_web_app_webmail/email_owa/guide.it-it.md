@@ -1,18 +1,18 @@
 ---
 title: 'Utilizzare un account di posta da "Outlook on the web"'
 excerpt: 'Come gestire il tuo indirizzo email dalla Webmail "Outlook on the web"'
-updated: 2024-03-26
+updated: 2024-09-03
 ---
 
 ## Obiettivo
 
-Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web App (OWA). La nostra pagina di accesso alla [Webmail](https://www.ovh.it/mail) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
+Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web App (OWA). La nostra pagina di accesso alla [Webmail](/links/web/email) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
 
 **Questa guida spiega come eseguire azioni di carattere generale con il tuo indirizzo email nell’interfaccia OWA.**
 
 ## Prerequisiti
 
-- Disporre di una soluzione di posta elettronica OVHcloud attiva (**MX Plan**, disponibile come parte dei nostri piani di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusi in un [hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) oppure ordinato separatamente con una soluzione indipendente; [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o ancora [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
+- Disporre di una soluzione di posta elettronica OVHcloud attiva (**MX Plan**, disponibile come parte dei nostri piani di [hosting Web](/links/web/hosting), inclusi in un [hosting gratuito 100M](/links/web/domains-free-hosting) oppure ordinato separatamente con una soluzione indipendente; [**Hosted Exchange**](/links/web/emails-hosted-exchange) o ancora [**Email Pro**](/links/web/email-pro))
 - Credenziali di accesso all’account di posta elettronica da configurare
 
 ## Procedura
@@ -22,11 +22,10 @@ Questa guida ti consentirà di comprendere meglio quello che è possibile ottene
 > [!primary]
 >
 > Dopo i primi due passaggi la procedura non deve essere seguita con un particolare ordine.
->
 
 ### 1. Accedere alla Webmail OWA
 
-Per accedere alla Webmail OWA con il tuo indirizzo email, vai alla pagina generale di login [della Webmail](https://www.ovh.it/mail). Digita il tuo indirizzo email e la tua password, quindi clicca sul pulsante `Login`{.action}.
+Per accedere alla Webmail OWA con il tuo indirizzo email, vai alla pagina generale di login [della Webmail](/links/web/email). Digita il tuo indirizzo email e la tua password, quindi clicca sul pulsante `Login`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
@@ -36,7 +35,13 @@ Per accedere alla Webmail OWA con il tuo indirizzo email, vai alla pagina genera
 >
 > Per familiarizzare con l'interfaccia **Roundcube**, consulta la nostra guida [Webmail: guida all’utilizzo di Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
-Se è la prima volta che accedi alla Webmail OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia e il fuso orario. Clicca su `Salva`{.action} per continuare.
+Se è la prima volta che ti connetti a OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia utente e definire il fuso orario. Clicca su `Salva`{.action} per continuare.
+
+> [!primary]
+>
+> I fusi orari sono elencati secondo [la norma UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) e non in ordine alfabetico di città.
+>
+> **Esempio** : Per l'Europa occidentale, si tratta di UTC +1 (Bruxelles, Copenaghen, Madrid, Parigi).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
@@ -48,9 +53,9 @@ Da questo momento, dopo il login apparirà per default la tua casella di posta i
 
 L’interfaccia della Webmail OWA ha diverse sezioni. Fai riferimento alla tabella e all’immagine di seguito per approfondirne la conoscenza.
 
-|Parti|Descrizione|  
-|---|---|  
-|Sezione superiore (1)|Presenta due barre delle schede: la prima consente di accedere alle impostazioni generali (come la [sezione delle opzioni](./#accedere-alla-sezione-delle-opzioni)), mentre la seconda può essere utilizzata per l’esecuzione di azioni specifiche utilizzando il tuo indirizzo (come inviare email o rispondervi).|  
+|Parti|Descrizione|
+|---|---|
+|Sezione superiore (1)|Presenta due barre delle schede: la prima consente di accedere alle impostazioni generali (come la [sezione delle opzioni](./#accedere-alla-sezione-delle-opzioni)), mentre la seconda può essere utilizzata per l’esecuzione di azioni specifiche utilizzando il tuo indirizzo (come inviare email o rispondervi).|
 |Lato sinistro (2)|Visualizza l’elenco di cartelle del tuo indirizzo email. Le cartelle appaiono con una visualizzazione ad albero che puoi espandere o ridurre.|
 |Segmento centrale (3)|Visualizza l’elenco dei messaggi (letti e non letti) della cartella selezionata dal menu a sinistra. Questa sezione può anche visualizzare i risultati di una ricerca.|
 |Lato destro (4)|Visualizza il riquadro di lettura della email selezionata.|
@@ -93,7 +98,7 @@ La Webmail OWA fornisce diverse modalità per organizzare la tua casella di post
 
 #### Creare una cartella
 
-Per creare una nuova cartella, clicca con il tasto destro sul nome del tuo indirizzo email nel menu delle cartelle e quindi scegli `Crea nuova cartella`{.action}. Allo stesso modo puoi creare una sottocartella nelle cartelle esistenti (`Crea nuova sottocartella`{.action}). 
+Per creare una nuova cartella, clicca con il tasto destro sul nome del tuo indirizzo email nel menu delle cartelle e quindi scegli `Crea nuova cartella`{.action}. Allo stesso modo puoi creare una sottocartella nelle cartelle esistenti (`Crea nuova sottocartella`{.action}).
 
 ![useowa](images/use-owa-step10.png){.thumbnail}
 
@@ -106,19 +111,19 @@ Per creare una nuova cartella, clicca con il tasto destro sul nome del tuo indir
 
 #### Creare regole di posta in arrivo
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Per gestire regole, clicca sull’icona con l’ingranaggio, in alto, quindi su `Opzioni`{.action}.
 
 ![useowa](images/use-owa-step12.png){.thumbnail}
 
-Sulla nuova pagina che appare, clicca su `Regole di posta in arrivo e di organizzazione`{.action} nel menù a sinistra. Nella visualizzazione ad albero delle "Opzioni", puoi trovare questa voce in "Posta", quindi "Elaborazione automatica". Da qui, puoi creare, modificare, cancellare e spostare regole nell’elenco. 
+Sulla nuova pagina che appare, clicca su `Regole di posta in arrivo e di organizzazione`{.action} nel menù a sinistra. Nella visualizzazione ad albero delle "Opzioni", puoi trovare questa voce in "Posta", quindi "Elaborazione automatica". Da qui, puoi creare, modificare, cancellare e spostare regole nell’elenco.
 
-Per aggiungere una nuova regola, clicca sul pulsante `+`{.action}. 
+Per aggiungere una nuova regola, clicca sul pulsante `+`{.action}.
 
 ![useowa](images/use-owa-step13.png){.thumbnail}
 
-Compila con le informazioni richieste a seconda dell’azione che desideri venga compiuta dalla regola. Quindi, clicca su `OK`{.action}. 
+Compila con le informazioni richieste a seconda dell’azione che desideri venga compiuta dalla regola. Quindi, clicca su `OK`{.action}.
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
@@ -126,7 +131,7 @@ Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fa
 
 #### Blocca un mittente
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Clicca sull'icona dell'ingranaggio in alto a destra e poi su `Opzioni`{.action}. Sempre nella colonna di sinistra, clicca su "Posta" sotto "Account" e poi "Blocca o autorizza".
 
@@ -152,7 +157,7 @@ Sulla nuova pagina, puoi aggiungere un nuovo contatto, creare un elenco di conta
 
 ### Modificare la password
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Puoi modificare la password del tuo account dopo aver effettuato l’accesso a OWA. Per farlo, clicca sull’icona con l’ingranaggio in alto, quindi clicca su `Opzioni`{.action}.
 
@@ -166,8 +171,7 @@ Nella nuova finestra popup che appare, digita la tua password attuale. Digita un
 
 > [!primary]
 >
-> Ricorda di digitare la tua nuova password in ogni dispositivo, cioè ogni client email utilizzato per accedere a questo account. In caso di problemi con la tua password, contatta l’amministratore del servizio
->
+> Ricorda di digitare la tua nuova password in ogni dispositivo, cioè ogni client email utilizzato per accedere a questo account. In caso di problemi con la tua password, contatta l’amministratore del servizio.
 
 ![useowa](images/use-owa-step19.png){.thumbnail}
 
@@ -229,4 +233,4 @@ La disattivazione di questi cookies può compromettere la stabilità della webma
 
 [Creare gruppi di contatti (mailing list)](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

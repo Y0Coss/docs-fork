@@ -1,7 +1,7 @@
 ---
 title: "Cómo crear una instancia de Public Cloud y conectarse a ella"
 excerpt: "Cómo configurar instancias de Public Cloud en el área de cliente de OVHcloud y cómo empezar a utilizar las instancias"
-updated: 2024-08-22
+updated: 2024-10-07
 ---
 
 <style>
@@ -29,10 +29,15 @@ A continuación, podrá ir un paso más allá con su proyecto de Public Cloud en
 
 **Esta guía explica los primeros pasos con una instancia de Public Cloud.**
 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/uulkyuwgOsk?si=h3d6-3ESXwv2YQwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Requisitos
 
 - Un [proyecto Public Cloud](/links/public-cloud/public-cloud)  en su cuenta de OVHcloud
 - Acceso al [área de cliente de OVHcloud](/links/manager)
+
+> [!success]
+> Benefíciese de precios reducidos comprometiéndose por un periodo de 1 a 36 meses en sus recursos de Nube Pública. Más información en nuestra página [Savings Plans](/links/public-cloud/savings-plan).
 
 ## Procedimiento
 
@@ -90,12 +95,12 @@ El [protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) p
 
 Dispone de dos opciones para crear y gestionar sus llaves SSH:
 
-- La interfaz de línea de comandos de su SO (simple cliente **Open SSH**).
-- Software adicional (compatible con el protocolo **Open SSH**) con línea de comandos o interfaz gráfica.
+- La interfaz de línea de comandos de su SO (simple cliente **OpenSSH**).
+- Software adicional (compatible con el protocolo **OpenSSH**) con línea de comandos o interfaz gráfica.
 
-La mayoría de los sistemas operativos de escritorio contemporáneos incluyen de forma nativa el cliente **Open SSH** accesible a través de la aplicación de línea de comandos del sistema (`cmd`, `Powershell`, `Terminal`, etc.). Si no está familiarizado con el uso de las claves SSH como método de autenticación, puede utilizar las instrucciones de [esta guía](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key) para crear su par de claves.
+La mayoría de los sistemas operativos de escritorio contemporáneos incluyen de forma nativa el cliente **OpenSSH** accesible a través de la aplicación de línea de comandos del sistema (`cmd`, `Powershell`, `Terminal`, etc.). Si no está familiarizado con el uso de las claves SSH como método de autenticación, puede utilizar las instrucciones de [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) para crear su par de claves.
 
-Si utiliza otro software, consulte su documentación de usuario. Las instrucciones para la solución open source `PuTTY` están disponibles en [esta guía](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Si utiliza otro software, consulte su documentación de usuario. Las instrucciones para la solución open source `PuTTY` están disponibles en [esta guía](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 
 <a name="import-ssh"></a>
 
@@ -380,7 +385,7 @@ Una vez que haya configurado su instancia, haga clic en el botón `Crear una ins
 
 ### Paso 5: Conectarse a la instancia
 
-Las instrucciones de este apartado se refieren a las conexiones remotas mediante los protocolos **Open SSH** y **RDP** a través de una red pública (internet).
+Las instrucciones de este apartado se refieren a las conexiones remotas mediante los protocolos **OpenSSH** y **RDP** a través de una red pública (internet).
 
 Tenga en cuenta que ofrecemos formas de acceso alternativas (principalmente utilizadas para la solución de problemas) que solo están disponibles a través de su área de cliente de OVHcloud:
 
@@ -425,7 +430,7 @@ Si su [par de llaves SSH está correctamente configurado](#create-ssh), puede co
 
 > [!primary]
 >
-> Si recibe mensajes de error relativos a sus **llaves SSH**, compruebe que su dispositivo local dispone de una llave SSH privada correctamente configurada utilizando la información de [esta guía](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).</br>
+> Si recibe mensajes de error relativos a sus **llaves SSH**, compruebe que su dispositivo local dispone de una llave SSH privada correctamente configurada utilizando la información de [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
 > Si sigue teniendo problemas, puede reemplazar el par de claves con [esta guía](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Si ha creado una instancia sin llave SSH, a través de la [API de OVHcloud](/pages/manage_and_operate/api/first-steps) o de la [interfaz OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta guía](/pages/public_cloud/compute/replacing_lost_ssh_key).
@@ -443,9 +448,9 @@ Ejemplo:
 ssh ubuntu@203.0.113.101
 ```
 
-[En función de su configuración](#create-ssh), tendrá que escribir una frase de contraseña que proteja su clave privada o especificar la ruta de acceso a su archivo de clave. Para más información, consulte nuestra [guía de claves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys).
+[En función de su configuración](#create-ssh), tendrá que escribir una frase de contraseña que proteja su clave privada o especificar la ruta de acceso a su archivo de clave. Para más información, consulte nuestra [guía de claves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys).
 
-Si utiliza otro cliente SSH, consulte la documentación del usuario de SSH. Puede consultar un ejemplo de uso de la solución open source `PuTTY` en [esta guía](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Si utiliza otro cliente SSH, consulte la documentación del usuario de SSH. Puede consultar un ejemplo de uso de la solución open source `PuTTY` en [esta guía](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows).
 
 Continúe en el [paso 6 a continuación](#manage-access).
 

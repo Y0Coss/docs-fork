@@ -1,7 +1,7 @@
 ---
 title: "Activation du pare-feu applicatif"
 excerpt: "Découvrez comment activer le pare-feu applicatif sur une offre d'hébergement Web"
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 ## Objectif
@@ -18,6 +18,11 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 - etc.
 
 **Ce guide vous explique comment activer le pare-feu applicatif depuis votre espace client OVHcloud, afin d'obtenir une protection améliorée.**
+
+> [!primary]
+>
+> Du fait que votre hébergement web est présent sur une infrastructure mutualisée, la modification des paramètres de configuration du pare-feu est indisponible.
+>
 
 ## Prérequis
 
@@ -51,7 +56,7 @@ Cliquez sur `Suivant`{.action}, puis sur `Confirmer`{.action} pour modifier les 
 
 ### Vérifier l'état de la tâche d'activation
 
-![gestion en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
+![gestion en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Les tâches de mise à jour de votre configuration multisite seront répertoriées dans l'onglet `Opérations en cours`{.action} (le statut initial est « Planifié »). Le pare-feu sera actif dès que sa tâche de mise à jour n'apparaîtra plus dans la liste.
 

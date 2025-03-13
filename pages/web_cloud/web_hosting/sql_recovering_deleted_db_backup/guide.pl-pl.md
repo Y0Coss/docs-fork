@@ -1,12 +1,8 @@
 ---
 title: "Odzyskiwanie kopii usuniętej bazy danych"
 excerpt: "Dowiedz się, jak odzyskać kopię zapasową bazy danych po jej usunięciu z Panelu klienta OVHcloud"
-updated: 2024-07-25
+updated: 2025-02-20
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji” na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -42,8 +38,8 @@ Udostępniamy API OVHcloud, dzięki któremu programiści lub integratorzy mogą
 Aby uzyskać nazwę hostingu, wykonaj następujące czynności:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
-3. W lewej kolumnie kliknij menu rozwijane `Hosting`{.action}.
+2. Kliknij zakładkę `Web Cloud`{.action}.
+3. W lewej kolumnie kliknij menu `Hosting`{.action}.
 4. Wybierz odpowiedni hosting.
 5. Na górze po lewej stronie, która się wyświetli, znajdź nazwę Twojego hostingu po prawej stronie pozycji `Hosting /`{.action}.
 
@@ -74,21 +70,21 @@ W tym celu wykonaj następujące czynności:
 W tym celu wypełnij poszczególne formularze, jak pokazano poniżej:
 
 - Dla sekcji zatytułowanej `PATH PARAMETERS`:
-- `serviceName`: Wpisz nazwę hostingu, który uzyskałeś podczas etapu 1 niniejszego przewodnika.
+    - `serviceName`: Wpisz nazwę hostingu, który uzyskałeś podczas etapu 1 niniejszego przewodnika.
 
 - Dla sekcji zatytułowanej `QUERY-STRING PARAMETERS`:
-- `creationDate.from`: Pozostaw formularz pusty.
-- `creationDate.to`: Pozostaw formularz pusty.
-- `databaseName`: Wpisz nazwę bazy danych, która została przypadkowo usunięta. (przykład: **deletedDatabase.mysql.db**).
-- `deletionDate.from`: Pozostaw formularz pusty.
-- `deletionDate.to`: Pozostaw formularz pusty.
-- `orphan`: Wpisz małymi literami wartość: `true`.
+    - `creationDate.from`: Pozostaw formularz pusty.
+    - `creationDate.to`: Pozostaw formularz pusty.
+    - `databaseName`: Wpisz nazwę bazy danych, która została przypadkowo usunięta. (przykład: **deletedDatabase.mysql.db**).
+    - `deletionDate.from`: Pozostaw formularz pusty.
+    - `deletionDate.to`: Pozostaw formularz pusty.
+    - `orphan`: Wpisz małymi literami wartość: `true`.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump.png){.thumbnail}
 
-Po wypełnieniu poszczególnych formularzy kliknij niebieski przycisk `Try`{.action} na dole po prawej stronie dwóch wcześniej wypełnionych sekcji.
+Po wypełnieniu poszczególnych formularzy kliknij niebieski przycisk `EXECUTE`{.action} na dole po prawej stronie dwóch wcześniej wypełnionych sekcji.
 
-Jeśli wszystko zostało poprawnie wypełnione i kopie zapasowe są dostępne dla usuniętej bazy danych, lista numerów zapasowych ID pojawia się w oknie `RESPONSE`{.action}, gdy przechodzisz na stronę znajdującą się pod przyciskiem `Try`{.action}.
+Jeśli wszystko zostało poprawnie wypełnione i kopie zapasowe są dostępne dla usuniętej bazy danych, lista numerów zapasowych ID pojawia się w oknie `RESPONSE`{.action}, gdy przechodzisz na stronę znajdującą się pod przyciskiem `EXECUTE`{.action}.
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-response.png){.thumbnail}
 
@@ -121,9 +117,9 @@ Wypełnij poszczególne formularze w części `PATH PARAMETERS` w następujący 
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id.png){.thumbnail}
 
-Po wypełnieniu poszczególnych formularzy kliknij niebieski przycisk `Try`{.action} na dole po prawej stronie poprzednio wypełnionej sekcji.
+Po wypełnieniu poszczególnych formularzy kliknij niebieski przycisk `EXECUTE`{.action} na dole po prawej stronie poprzednio wypełnionej sekcji.
 
-Jeśli wszystko zostało poprawnie wpisane, następujący wynik pojawia się w oknie `RESPONSE`{.action}, gdy opuszczasz stronę pod przyciskiem `Try`{.action}:
+Jeśli wszystko zostało poprawnie wpisane, następujący wynik pojawia się w oknie `RESPONSE`{.action}, gdy opuszczasz stronę pod przyciskiem `EXECUTE`{.action}:
 
 ![API](/pages/assets/screens/api/get-hosting-web-servicename-dump-id-response.png){.thumbnail}
 

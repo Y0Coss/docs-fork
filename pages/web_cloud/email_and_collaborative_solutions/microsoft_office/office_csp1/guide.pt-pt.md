@@ -4,10 +4,6 @@ excerpt: Saiba como subscrever uma licença Microsoft 365 e geri-la na sua Área
 updated: 2024-03-27
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 Existem várias vantagens em subscrever às ofertas OVHcloud **Microsoft 365 apps for business** ou **Microsoft 365 apps for entreprise**. A faturação é mensal e pode instalar uma licença em 5 PC/Mac, 5 tablets e 5 smartphones.
@@ -29,7 +25,7 @@ Eis a lista dos softwares incluídos:
 
 ### Encomendar uma licença
 
-Aceda à página comercial [Microsoft 365 OVHcloud](https://www.ovh.com/pt/office-365-business){.external} e selecione a rubrica `Microsoft`{.action} da nossa secção `Web Cloud`{.action}.
+Aceda à página comercial [Microsoft 365 OVHcloud](/links/web/ms365) e selecione a rubrica `Microsoft`{.action} da nossa secção `Web Cloud`{.action}.
 
 Pode igualmente encomendar uma licença a partir da [Área de Cliente OVHcloud](/links/manager). Depois de conectado, selecione `Web Cloud`{.action} na faixa superior e clique no botão `Encomendar`{.action} e em `O365`{.action}.
 
@@ -107,4 +103,4 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 [Utilizar o ambiente de trabalho remoto com Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

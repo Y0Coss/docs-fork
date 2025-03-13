@@ -114,7 +114,7 @@ Par exemple, pour l'ajout d'un enregistrement TXT dans votre zone DNS, vous obti
  	
 ![API](images/parameters.png){.thumbnail} 
  
-Une fois les paramètres définis, vous pouvez lancer l'API en cliquant sur `TRY`{.action}.
+Une fois les paramètres définis, vous pouvez lancer l'API en cliquant sur `EXECUTE`{.action}.
 
 L'onglet `Response` alors affiché vous donnera le rapport d'éxécution de l'API.
 
@@ -230,4 +230,4 @@ Il n'y a actuellement aucune option dans l'espace client pour lister et révoque
 
 [Comment gérer le compte d'un client OVHcloud via les API](/pages/manage_and_operate/api/api_right_delegation) (guide en anglais)
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Manage your server reboot with the OVHcloud Link Aggregation feature (EN)"
 excerpt: "Find out how to reboot your OVHcloud servers, working through your active private aggregation"
-updated: 2022-12-14
+updated: 2025-01-28
 ---
 
 ## Objective

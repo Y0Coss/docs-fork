@@ -4,11 +4,6 @@ excerpt: "Encontre aqui um tutorial para a utilização do software Filezilla no
 updated: 2022-09-13
 ---
 
-> [!primary]
->
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 O FileZilla é um software disponível gratuitamente em vários sistemas operativos (Windows, macOS, etc.).
@@ -56,7 +51,7 @@ A partir da barra de ligação rápida, complete as informações através da se
 |Palavra-passe|Password associada ao utilizador.|
 |Porta|Geralmente, é automaticamente complementado pelo software. Caso contrário, introduza:<br><br>- a porta 21 para uma ligação FTP;<br>- a porta 22 para uma ligação SFTP (no caso de esta estar ativada). Encontre mais informações sobre o SFTP na secção [dedicada deste tutorial](#sftp).|
 
-Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links/manager){.external} na secção "Web Cloud" e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento:
+Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links/manager){.external} na secção `Web Cloud`{.action} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento:
 
 ![alojamento](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
@@ -84,7 +79,7 @@ O **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) é um protocolo 
 
 Em primeiro lugar, verifique se o SFTP está ativado para o seu **Login FTP**.
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, na secção "Web Cloud", e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, na secção `Web Cloud`{.action}, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}.
 
 De seguida, verifique se o **SFTP** está ativo na tabela.
 

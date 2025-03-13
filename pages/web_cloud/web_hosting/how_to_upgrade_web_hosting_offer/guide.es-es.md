@@ -1,12 +1,8 @@
 ---
-title: "Web hosting: ¿Cómo mejorar su solución?"
+title: "Web hosting - Cómo mejorar su solución"
 excerpt: "Descubra cómo modificar la fórmula de suscripción de un plan de hosting de OVHcloud"
-updated: 2023-09-19
+updated: 2024-10-30
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 ## Objetivo
 
@@ -16,15 +12,17 @@ Su [área de cliente de OVHcloud](/links/manager) permite aumentar la capacidad 
 - más espacio de almacenamiento FTP;
 - bases de datos adicionales; 
 - direcciones de correo adicionales;
-- funcionalidades adicionales como las [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [la oferta Pro](/links/web/hosting-professional-offer) o el [servicio Web Cloud Databases](/links/web/databases){.external} (incluido en [los planes Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer)/).
+- funcionalidades adicionales como las [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [la oferta Pro](/links/web/hosting-professional-offer) o el [servicio Web Cloud Databases](/links/web/databases){.external} (incluido en [los planes Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer)).
 
 **Descubra cómo mejorar su plan de hosting de OVHcloud sin interrupciones del servicio.**
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/m0M83jQtcIo?si=XrLELE_VByjSKOnR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Requisitos
 
 - Tener un [plan de hosting](/links/web/hosting)
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager)
-- Ser, como mínimo, el contacto «[Administrador](/pages/account_and_service_management/account_information/managing_contacts)» de los servicios para los que quiera modificar la suscripción.
+- Ser, como mínimo, el contacto "[Administrador](/pages/account_and_service_management/account_information/managing_contacts)" de los servicios para los que quiera modificar la suscripción.
 
 ## Procedimiento
 
@@ -76,7 +74,7 @@ Después de eliminar los datos de sus bases de datos, vuelva a calcular la cuota
 #### 2 - Web Cloud Databases
 
 Si utiliza el servicio [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluido con su alojamiento web [Performance](/links/web/hosting-performance-offer) y desea cambiar su alojamiento web a un plan [Pro](/links/web/hosting-professional-offer), deberá disociar en primer lugar el servicio Web Cloud Databases de su alojamiento web.<br>
-Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección «Web Cloud» de la columna izquierda de la columna izquierda, en la columna izquierda, en la columna izquierda y en la columna izquierda de la página «Servidores dedicados» de OVHcloud > {.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, siga en la pestaña `Información general`{.action}. En la columna central `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de `Web Cloud Databases`{.action} y seleccione `Desvincular`{.action}.
+Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, siga en la pestaña `Información general`{.action}. En la columna central `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de `Web Cloud Databases`{.action} y seleccione `Desvincular`{.action}.
 
 ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 
@@ -85,13 +83,13 @@ Esta acción le permitirá contratar una solución Web Cloud Databases independi
 Si no desea conservar estos datos, puede eliminar su solución Web Cloud Databases antes de cambiar al plan *Pro*: 
 
 1. Haga una copia de seguridad de sus datos siguiendo las instrucciones de esta [guía](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Elimine su servidor Web Cloud Databases a través de su [área de cliente de OVHcloud](/links/manager). Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione el icono `Productos y servicios`{.action}. A continuación, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al servicio Web Cloud Databases/SQL Privado y seleccione `Eliminar mi alojamiento SQL Privado`{.action}.
+2. Elimine su servidor Web Cloud Databases a través de su [área de cliente de OVHcloud](/links/manager). Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}. A continuación, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al servicio Web Cloud Databases/SQL Privado y seleccione `Eliminar mi alojamiento SQL Privado`{.action}.
 
 #### 3 - Espacio de almacenamiento FTP
 
 Asegúrese de que el nuevo plan ofrece [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection) suficiente para que sea posible importar los archivos del alojamiento actual.
 
-Para comprobar el espacio de almacenamiento FTP utilizado en su alojamiento web, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección «Web Cloud» de la página {.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la página `Información general`{.action} que aparece, consulte la cuota en la sección `Espacio en disco`.
+Para comprobar el espacio de almacenamiento FTP utilizado en su alojamiento web, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la página `Información general`{.action} que aparece, consulte la cuota en la sección `Espacio en disco`.
 
 ![ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
@@ -169,21 +167,34 @@ Si la opción **Boost** es adecuada para usted, encontrará a continuación las 
 
 #### La facturación en caso de cambio de producto <a name="billing"></a>
 
-Al cambiar su plan inicial a uno superior, se aplicará un cálculo de la parte proporcional* hasta la siguiente fecha de renovación de la suscripción inicial.
+**Caso 1**: Al cambiar su plan inicial a uno superior, se aplicará un cálculo de la parte proporcional* hasta la siguiente fecha de renovación de la suscripción inicial.
 Este cálculo corresponde a la diferencia de precio entre su oferta inicial y su nueva oferta.
 
 > **Ejemplo:**<br>
 >
-> Ha contratado una suscripción [Personal](/links/web/hosting-personal-offer) el 1 de enero de 2022.
+> Ha contratado una suscripción [Personal](/links/web/hosting-personal-offer) el 1 de enero de 2024.
 >
-> El 31 de octubre de 2022, cambiará de esta oferta **Perso** a una suscripción en el plan [Pro](/links/web/hosting-professional-offer).<br>
+> El 31 de octubre de 2024, cambiará de esta oferta **Perso** a una suscripción en el plan [Pro](/links/web/hosting-professional-offer).<br>
 >
-> Por lo tanto, el importe correspondiente al período restante de la suscripción **Perso** (2 meses, del 1 de noviembre de 2022 al 1 de enero de 2023) se restará automáticamente del coste de la nueva suscripción **Pro**, hasta el 1 de enero de 2023. Solo pagará la diferencia.
-> A partir del 1 de enero de 2023, la suscripción **Pro** se facturará al precio vigente.
+> Por lo tanto, el importe correspondiente al período restante de la suscripción **Perso** (2 meses, del 1 de noviembre de 2024 al 1 de enero de 2025) se restará automáticamente del coste de la nueva suscripción **Pro**, hasta el 1 de enero de 2025. Solo pagará la diferencia.
+> A partir del 1 de enero de 2025, la suscripción **Pro** se facturará al precio vigente.
 
 Siga [estas instrucciones](#modify) para realizar el cambio de producto.
 
-## Ir más allá <a name="go-further"></a>
+**Caso 2**: Al cambiar su plan inicial a un plan inferior, el tiempo de suscripción restante para el plan inicial se pierde definitivamente. No se realizará ningún reembolso por el tiempo restante, incluso si usted tiene varios meses de suscripción. Por lo tanto, deberá pagar directamente la totalidad de la suscripción de la oferta inferior.
+
+> **Ejemplo:**<br>
+>
+> Ha contratado una suscripción de [Pro](/links/web/hosting-professional-offer) el 1 de enero de 2024.
+>
+> El 31 de octubre de 2024, cambiará de esta oferta **Pro** a una suscripción en el plan [Personal](/links/web/hosting-personal-offer).<br>
+>
+> En consecuencia, se pierde el importe correspondiente al período restante de la suscripción **Pro** (2 meses, del 1 de noviembre de 2024 al 1 de enero de 2025).
+> A partir del 1 de noviembre de 2024, la suscripción **Perso** se facturará directamente al precio vigente (aunque haya pagado los 2 meses restantes de la oferta **Pro**).
+
+Siga [estas instrucciones](#modify) para realizar el cambio de producto.
+
+## Más información <a name="go-further"></a>
 
 [Consultar las estadísticas y los logs de un sitio alojado en un alojamiento compartido](/pages/web_cloud/web_hosting/logs_and_statistics)
 

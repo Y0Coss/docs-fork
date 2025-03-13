@@ -1,12 +1,8 @@
 ---
 title: 'Konfiguracja serwera baz danych'
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-updated: 2024-03-20
+updated: 2025-02-20
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -70,9 +66,7 @@ W przypadku hostingu OVHcloud możesz po prostu zaznaczyć opcję `Zezwól hosti
 > 
 > Jeśli Twoja usługa Web Cloud Databases jest powiązana z usługą hostingu www **Performance**, musisz wcześniej odłączyć ofertę Web Cloud Databases od hostingu **Performance**, aby przejść na wyższą ofertę.
 >
-> Aby odłączyć ofertę Web Cloud Databases powiązaną z hostingiem www **Performance**, przejdź do [Panelu klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`{.action}, a następnie odpowiedni hosting w zakładce `Hosting`{.action}, która pojawi się w kolumnie z lewej strony. 
->
-> Na nowej stronie `Informacje ogólne`{.action}, która się wyświetla, znajduje się ramka zatytułowana `Konfiguracja`{.action} w centrum strony. Po prawej stronie pozycji `Web Cloud Databases`{.action} kliknij przycisk `...`{.action} a następnie na `Odłącz`{.action}. Wybierz najkrótszy okres odnowienia i postępuj zgodnie z instrukcjami aż do zatwierdzenia zamówienia.
+> Aby odłączyć usługę Web Cloud Databases od hostingu **Performance**, zapoznaj się z naszym przewodnikiem "[Odłączenie mojego rozwiązania Web Cloud Databases od hostingu WWW](/pages/web_cloud/web_cloud_databases/detach-from-web-hosting)".
 >
 > **Operacja ta jest nieodwracalna i usługa Web Cloud Databases będzie odpłatna niezależnie od hostingu Performance.**
 >

@@ -19,7 +19,7 @@ Le mode Rescue permet d'accéder à vos données en permanence, même si le syst
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Ce tutoriel a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de vous rapprocher de [notre communauté](https://community.ovh.com/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place de services sur un serveur.
+> Ce tutoriel a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de vous rapprocher de [notre communauté](/links/community) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place de services sur un serveur.
 >
 
 ## Instructions
@@ -80,7 +80,7 @@ Device     Boot Start     End Sectors  Size Id Type
 > Les sections de code suivantes sont fournies à titre d'illustration, en relation avec l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions avec votre configuration réelle et remplacer les valeurs dans les commandes par vos identifiants de disque et de volume.
 >
 
-Dans cet exemple, le disque principal (10 Go) est nommé "sdb". Nos données in `/` se trouvent donc sur la partition `/dev/sdb1`. (Alors que "sda" est en mode rescue et "sda1" la partition principale en mode rescue montée sur `/`.)
+Dans cet exemple, le disque principal (10 Go) est nommé "sdb". Nos données dans `/` se trouvent donc sur la partition `/dev/sdb1`. (Alors que "sda" est en mode rescue et "sda1" la partition principale en mode rescue montée sur `/`.)
 
 Nous montons la partition système dans le dossier `/mnt` puis nous vérifions son contenu :
 

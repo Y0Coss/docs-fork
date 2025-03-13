@@ -1,12 +1,8 @@
 ---
 title: "Ihre Webseiten mit CDN beschleunigen"
 excerpt: "Diese Anleitung erklärt, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern"
-updated: 2024-03-12
+updated: 2025-02-20
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel 
 
@@ -251,9 +247,40 @@ Klicken Sie nach der Konfiguration Ihrer Regeln und Optionen auf `Konfiguration 
 
 ### Die CDN-Statistiken anzeigen
 
-Im Tab `Multisite`{.action} Ihres Webhostings können Sie unter der Tabelle die Statistiken Ihres CDN einsehen, die die Anzahl der registrierten Anfragen pro Minute anzeigen.
+Klicken Sie jeweils auf die Tabs, um die **6** Schritte anzuzeigen.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/statistics.png){.thumbnail}
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
+>>
+> **Schritt 4**
+>>
+>> Klicken Sie im Bereich `Statistiken der Seitenaufrufe` auf die Schaltfläche `Die Statistiken anzeigen`{.action}.
+>>
+> **Schritt 5**
+>>
+>> Sie werden zum Tool **OVHcloud Web Statistics** weitergeleitet. Klicken Sie oben auf das Formular `Domainauswahl`{.action} und wählen Sie einen Domainnamen aus, für den das CDN aktiv ist.
+>>
+> **Schritt 6**
+>>
+>> Klicken Sie in der rechten Spalte auf den Tab `Cache`{.action}.
+>>
+>> Sie sehen nun die Statistiken des CDN für Ihre Domain.
+>>
+>> Weitere Informationen finden Sie in unserer Anleitung „[Webhosting - Statistiken und Logs einer Website einsehen](/pages/web_cloud/web_hosting/logs_and_statistics)“.
 
 ### Wie kann ich meine Dateien im CDN zwischenspeichern?
 

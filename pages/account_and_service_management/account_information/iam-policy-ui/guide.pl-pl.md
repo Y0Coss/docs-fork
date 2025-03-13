@@ -1,13 +1,8 @@
 ---
 title: Jak korzystać z polityki IAM w Panelu klienta
 excerpt: Dowiedz się, jak przypisać użytkownikom uprawnienia dostępu do konta OVHcloud
-updated: 2024-07-04
+updated: 2025-01-08
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
->
-
 
 ## Wprowadzenie
 
@@ -30,6 +25,8 @@ Na przykład, możemy stworzyć politykę pozwalającą użytkownikowi o nazwie 
 
 ![polityka IAM](images/iam_policies.png){.thumbnail}
 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/g6qvskdFwy8?si=51mbyM6affEFknxv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Wymagania początkowe
 
 - Posiadanie [konta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
@@ -46,13 +43,13 @@ Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie nazwę użytko
 
 Możesz uzyskać dostęp do menu IAM za pomocą wpisu w Panelu klienta.
 
-![Dostęp do menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
+![Dostęp do menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
-W menu wyświetla się listę wszystkich polityk utworzonych na Twoim koncie.
+Jeśli przejdziesz do tego menu po raz pierwszy, pojawi się następująca strona:
 
-![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+![Dostęp do menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
-Każda polityka jest wyświetlana wraz z jej nazwiskiem, liczbą powiązanych z nią tożsamości oraz liczbą działań, które zawiera.
+Kliknij bezpośrednio [Tworzenie polityki](#create-policy) lub [Tworzenie użytkowników](#create-users), w zależności od tego, co chcesz zrobić.
 
 > [!primary]
 >
@@ -60,7 +57,15 @@ Każda polityka jest wyświetlana wraz z jej nazwiskiem, liczbą powiązanych z 
 >
 > Klienci nie mogą modyfikować ani usuwać tych polityk.
 
+Jeśli masz już utworzone polityki lub użytkowników, w menu wyświetlana jest lista wszystkich otwartych zasad utworzonych na Twoim koncie OVHcloud.
+
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Każda polityka jest wyświetlana wraz z jej nazwiskiem, liczbą powiązanych z nią tożsamości oraz liczbą działań, które zawiera.
+
 ### Zarządzanie polityką
+
+<a name="create-policy"></a>
 
 #### Tworzenie polityki
 
@@ -142,6 +147,8 @@ Aby usunąć istniejącą politykę, kliknij przycisk `...`{.action} po prawej s
 
 W oknie podręcznym zostanie wyświetlona prośba o potwierdzenie usunięcia hosta.
 
+<a name="create-users"></a>
+
 ### Zarządzanie tożsamością
 
 Tożsamość dostępna dla polityk jest zarządzana w zakładce `Tożsamości`{.action}.
@@ -178,4 +185,4 @@ W oknie podręcznym zostanie wyświetlona prośba o potwierdzenie usunięcia hos
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

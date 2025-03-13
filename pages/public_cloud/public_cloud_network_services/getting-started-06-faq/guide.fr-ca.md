@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - FAQ
 excerpt: Foire aux questions sur les services réseau Public Cloud
-updated: 2024-08-30
+updated: 2024-09-03
 ---
 
 <style>
@@ -133,7 +133,8 @@ Non, le routage inter-régions n'est pas supporté.
 
 Tout dépend de l’usage :
 
-- Pour les cas d'utilisation sortante (outbound), nous proposons une IP publique incluse dans le prix de la Gateway. Cette IP est associée à la Gateway instanciée et ne peut pas être déplacée vers une autre. En d'autres termes, l'IP utilisée pour le trafic sortant n'est pas une Floating IP. Si cela crée des difficultés pour votre cas d'usage, veuillez voter en faveur de cet item de notre [roadmap](https://github.com/ovh/public-cloud-roadmap/issues/448).
+- Pour les cas d'utilisation sortante (outbound), nous proposons une IP publique incluse dans le prix de la Gateway. Cette IP est associée à la Gateway instanciée et **ne peut pas être déplacée vers une autre**. En d'autres termes, l'IP utilisée pour le trafic sortant n'est pas une Floating IP. Le seul cas de figure où cette adresse IP est conservée, c'est lors de la modification de la taille d'une Gateway (par exemple, de S à M).
+Si cela crée des difficultés pour votre cas d'usage, veuillez voter en faveur de cet item de notre [roadmap](https://github.com/ovh/public-cloud-roadmap/issues/448).
 - Pour les cas d'utilisation entrante (inbound) (pour exposer un service s'exécutant sur une instance privée vers Internet), vous devez disposer d'une Floating IP à connecter via Gateway à votre instance ou service réseau.
 
 ///
@@ -146,7 +147,7 @@ Vous pouvez créer un réseau privé dans une région sélectionnée et y attach
 
 /// details | L’IP publique de la Gateway est-elle protégée contre les attaques DDoS ?
 
-Oui, l’[infrastructure anti-DDoS d’OVHcloud](https://www.ovhcloud.com/fr-ca/security/anti-ddos/) est activée sur toutes ces adresses IP. Vous pouvez consulter ces informations dans la section `Bare Metal Cloud > Network > IP` de votre espace client.
+Oui, l’[infrastructure anti-DDoS d’OVHcloud](/links/security/antiddos) est activée sur toutes ces adresses IP. Vous pouvez consulter ces informations dans la section `Bare Metal Cloud > Network > IP` de votre espace client.
 
 ///
 
@@ -175,7 +176,7 @@ Le pool d'une Floating IP doit être « Ext-Net » et vous pouvez l'associer à 
 
 /// details | Les adresses Floating IP sont-elles protégées contre les attaques DDoS ?
 
-Oui, l’[infrastructure anti-DDoS d’OVHcloud](https://www.ovhcloud.com/fr-ca/security/anti-ddos/) est activée sur toutes les adresses Floating IP. Vous pouvez consulter ces informations dans la section `Bare Metal Cloud > Network > IP` de votre espace client.
+Oui, l’[infrastructure anti-DDoS d’OVHcloud](/links/security/antiddos) est activée sur toutes les adresses Floating IP. Vous pouvez consulter ces informations dans la section `Bare Metal Cloud > Network > IP` de votre espace client.
 
 ///
 
@@ -183,4 +184,4 @@ Oui, l’[infrastructure anti-DDoS d’OVHcloud](https://www.ovhcloud.com/fr-ca/
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

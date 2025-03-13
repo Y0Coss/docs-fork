@@ -1,8 +1,13 @@
 ---
 title: Eviter l'usurpation d'IP avec le service SpoofGuard
 excerpt: Paramétrez des politiques pour éviter l'usurpation d'IP
-updated: 2021-02-12
+updated: 2025-02-27
 ---
+
+> [!alert]
+> **Fin de prise en charge :**
+>
+>  NSX-v n'est plus pris en charge dans l'environnement OVHcloud.
 
 ## Objectif
 
@@ -58,4 +63,4 @@ En cas d'alerte et/ou d'actions en attente, vous pouvez cliquer sur le nombre da
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

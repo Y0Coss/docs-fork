@@ -12,14 +12,14 @@ With the "Inbox rules" option, you can create an elaborate set of rules to handl
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en/web-hosting/), or [**Hosted Exchange**](https://www.ovhcloud.com/en/emails/hosted-exchange/)
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](/links/web/hosting), or [**Hosted Exchange**](/links/web/emails-hosted-exchange)
 - login credentials for the email address you want to configure
 
 ## Instructions
 
 ### Step 1: Navigating to the options section
 
-Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.com/world/mail/). Click on the gear symbol on the top right to unfold the "Options" menu and select `Options`{.action}.
+Log in to your Exchange account via the [OVHcloud webmail](/links/web/email). Click on the gear symbol on the top right to unfold the "Options" menu and select `Options`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 
@@ -50,14 +50,13 @@ If you have created several rules, it is possible that more than one will apply 
 Since there are many conditions and actions available, we are unable to cover all of them in this guide. Below you can find two examples that are instrumental in using an OVHcloud email account. 
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
->
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
 
 #### Example 1: Redirecting emails to another address
 
-Create a new rule by clicking on the `+`{.action} icon. Give your rule a name and select below which emails it should apply to. For this example, we initially choose to include **all messages**. Next, select the appropriate action; here we will focus on illustrating a **redirection**. Please note the technical distinction: if you "forward" a mail, the final recipient will see your email address as a sender. "Redirecting" an email on the other hand will send it to your target address without changing the original sender address. 
+Create a new rule by clicking on the `+`{.action} icon. Give your rule a name and select below which emails it should apply to. For this example, we initially choose to include **all messages**. Next, select the appropriate action; here we will focus on illustrating a **redirection**. Please note the technical distinction: if you "forward" a mail, the final recipient will see your email address as a sender. "Redirecting" an email on the other hand will send it to your target address without changing the original sender address.
 
 ![inboxrules](images/exchange-rules-step4.png){.thumbnail}
 
@@ -99,4 +98,4 @@ Please note that spam false positives cannot be declared directly from OWA. If y
 
 [Using the Outlook Web App with an email account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -1,12 +1,8 @@
 ---
 title: "Hosting condiviso: attiva un firewall applicativo"
 excerpt: "Hosting condiviso: attiva un firewall applicativo"
-updated: 2021-04-26
+updated: 2024-09-05
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -22,6 +18,11 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 - e tanto altro ancora
 
 **Questa guida ti mostra come attivare il firewall applicativo dallo Spazio Cliente OVHcloud per ottenere una protezione ancora maggiore.**
+
+> [!primary]
+>
+> La modifica delle impostazioni di configurazione del firewall non è disponibile perché l’hosting Web è presente su un’infrastruttura condivisa.
+>
 
 ## Prerequisiti
 
@@ -55,7 +56,7 @@ Clicca su `Seguente`{.action} e poi su `Conferma`{.action} per modificare i para
 
 ### Verifica lo stato dell'operazione di attivazione
 
-![gestione in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
+![gestione in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Gli aggiornamenti della configurazione multisito saranno elencati nella scheda `Operazioni in corso`{.action} (lo stato iniziale è "Pianificato"). Il firewall sarà attivo non appena il suo aggiornamento non sarà più incluso nella lista.
 

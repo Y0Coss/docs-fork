@@ -4,10 +4,6 @@ excerpt: 'Erfahren Sie hier, wie Sie E-Mail-Weiterleitungen und Eingangsfilter i
 updated: 2020-03-11
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Unter der Option „Posteingangsregeln“ können Sie ein umfangreiches Regelwerk für die Verarbeitung eingehender E-Mails erstellen. Diese können Ihnen helfen, Ihr E-Mail-Konto zu organisieren, indem E-Mails automatisch in die passenden Ordner sortiert werden. Auf diese Weise können Sie auch Weiterleitungen definieren und Spam-Nachrichten herausfiltern.
@@ -16,14 +12,14 @@ Unter der Option „Posteingangsregeln“ können Sie ein umfangreiches Regelwer
 
 ## Voraussetzungen
 
-- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet ([**Exchange**](https://www.ovhcloud.com/de/emails/), [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan**, aus dem MX Plan Angebot oder enthalten in [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) und [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/)).
+- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet ([**Exchange**](/links/web/emails), [**E-Mail Pro**](/links/web/email-pro) oder **MX Plan**, aus dem MX Plan Angebot oder enthalten in [OVHcloud Webhostings](/links/web/hosting) und [Kostenloses Hosting 100M](/links/web/domains-free-hosting)).
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Navigation zum Bereich „Optionen“
 
-Melden Sie sich über [OVHcloud Webmail](https://www.ovh.de/mail) bei Ihrem E-Mail-Konto an. Klicken Sie auf das Zahnradsymbol oben rechts, um das Menü „Optionen“ zu öffnen und wählen Sie `Optionen`{.action}.
+Melden Sie sich über [OVHcloud Webmail](/links/web/email) bei Ihrem E-Mail-Konto an. Klicken Sie auf das Zahnradsymbol oben rechts, um das Menü „Optionen“ zu öffnen und wählen Sie `Optionen`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 
@@ -56,7 +52,7 @@ Da viele Bedingungen und Aktionen verfügbar sind, können nicht alle in dieser 
 > [!warning]
 >OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
->Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
+>Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
 >
 
 #### Beispiel 1: E-Mails an eine andere Adresse umleiten
@@ -75,8 +71,7 @@ Die neue Regel wird nun nebst einer Erläuterung ihrer Funktion aufgelistet und 
 
 > [!primary]
 >
-Diese Anweisungen sind nur dann umsetzbar, wenn Ihre Domain die OVHcloud MX-Einträge ordnungsgemäß verwendet. Es sind auch abweichende Konfigurationen der Dienste möglich, die dann nicht zwangsläufig unserem Spam-Schutz unterliegen.
->
+> Diese Anweisungen sind nur dann umsetzbar, wenn Ihre Domain die OVHcloud MX-Einträge ordnungsgemäß verwendet. Es sind auch abweichende Konfigurationen der Dienste möglich, die dann nicht zwangsläufig unserem Spam-Schutz unterliegen.
 
 Erstellen Sie eine neue Regel durch Klicken auf das `+`{.action}-Symbol.
 
@@ -103,4 +98,4 @@ Da kein automatisierter Spam-Schutz definitiv entscheiden kann, ob es sich bei e
 
 [Outlook Web App mit einem E-Mail-Konto verwenden](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

@@ -4,10 +4,6 @@ excerpt: "Dowiedz się, jak się zalogować do przestrzeni dyskowej FTP Twojego 
 updated: 2024-05-20
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłoś propozycję modyfikacji” na tej stronie.
->
-
 ## Wprowadzenie 
 
 Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej FTP umożliwiającej umieszczanie w Internecie plików z Twoich stron WWW lub aplikacji. Dostęp do przestrzeni dyskowej jest możliwy przez użytkownika FTP lub SSH z przypisanymi do niego hasłami.
@@ -41,7 +37,7 @@ Aby zalogować się do przestrzeni dyskowej FTP, pobierz następujące elementy:
 > **Jeśli dysponujesz już tymi elementami**, przejdź bezpośrednio do etapu 2  [niniejszego przewodnika](#ftp_storage_access).
 > 
 
-Jeśli nie posiadasz tych elementów, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję 'Hosting{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
+Jeśli nie posiadasz tych elementów, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
 
 Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
 

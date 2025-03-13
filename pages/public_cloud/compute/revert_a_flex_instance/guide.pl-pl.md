@@ -18,7 +18,7 @@ Dzięki stale zmieniającej się infrastrukturze możesz zwiększyć przestrzeń
 
 ## Wymagania
 
-- Posiadanie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) typu *flex*
+- Posiadanie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#configuration) typu *flex*
 - [Utworzenie dostępu do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## W praktyce
@@ -61,7 +61,7 @@ Sekcja ta pozwala na zarządzanie partycjonowaniem dysku (*Disk Partition*) i gr
 
 Aby kontynuować, kliknij przycisk `Resize`{.action}.
 
-Po zakończeniu procesu Twoja instancja zostanie przeniesiona na model klasyczny z większą przestrzenią dyskową.
+Po zakończeniu procesu instancja zostanie przełączona na wybrany model. W naszym przypadku nasza instancja została przełączona na klasyczny model z większą przestrzenią dyskową.
 
 ![Nowa aplikacja](images/newflavor.png){.thumbnail}
 

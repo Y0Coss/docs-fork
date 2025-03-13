@@ -1,7 +1,7 @@
 ---
 title: "Migrating your website and associated services to OVHcloud"
 excerpt: "Find out how to migrate your website, domain name, database and emails to OVHcloud without any service interruptions"
-updated: 2024-06-24
+updated: 2025-01-08
 ---
 
 ## Objective
@@ -195,7 +195,7 @@ Repeat for all of your email accounts.
 > If your email accounts were configured as POP without keeping copies of emails on your email server, or if you have emails saved locally on your devices, only **option 2** can be realised.
 >
 
-**Option 2**: Back up the content of your email accounts using an email client (Outlook, Mac Mail, etc.), reconfigure your email software, then import the backup into your new OVHcloud email accounts.
+**Option 2**: Back up the content of your email accounts using an email client (Outlook, Mac Mail, etc.), reconfigure your email software, then import the backup into your new OVHcloud email accounts. You can find more information in our guide “[Migrating your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)”.
 
 ### Step 8: Reconfigure your email software <a name="step8"></a>
 
@@ -209,7 +209,7 @@ Once you have migrated your email accounts to OVHcloud, reconfigure your email s
 
 - You can find all of our configuration guides in the `Exchange configuration on computer` and `Exchange configuration on smartphone` sections of [our Exchange documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-## Step 9: Replace your domain name’s active DNS servers with those of OVHcloud <a name="step9"></a>
+### Step 9: Replace your domain name’s active DNS servers with those of OVHcloud <a name="step9"></a>
 
 The DNS zone preconfigured in [step 2](#step2) has not yet been applied to your domain name. Currently, your domain name still uses your original provider’s DNS servers.
 

@@ -1,7 +1,12 @@
 ---
 title: "Comment éditer la fonction HA d'une NSX-v Edge"
-updated: 2022-09-14
+updated: 2025-02-27
 ---
+
+> [!alert]
+> **Fin de prise en charge :**
+>
+>  NSX-v n'est plus pris en charge dans l'environnement OVHcloud.
 
 ## Objectif
 
@@ -182,4 +187,4 @@ Une fois l'appel PUT exécuté, vous pouvez utiliser l'appel **GET** suivant :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

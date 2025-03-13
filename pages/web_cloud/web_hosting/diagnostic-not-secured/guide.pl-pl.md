@@ -4,10 +4,6 @@ excerpt: "Reagowanie w przypadku wiadomości z błędem związanej z bezpieczeń
 updated: 2021-07-08
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
-
 ## Wprowadzenie  <a name="objective"></a>
 
 W przypadku niedostępności Twojej strony może wystąpić kilka komunikatów o błędzie. Poniższe przykłady wskazują, że Twój hosting WWW nie zawiera [certyfikatu SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (jeśli Twoja strona nie wyświetla żadnego z anomalii opisanych w tym przewodniku, sprawdź sekcję « [Sprawdź również](#go-further) »):
@@ -96,7 +92,7 @@ Jeśli zamówiłeś jeden z płatnych **certyfikatów SSL** od naszego partnera 
 >
 > Aby odnaleźć wszystkie e-maile wysłane przez nasze usługi, kliknij w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager), następnie kliknij `E-maile od działu wsparcia`{.action}):
 >
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
 >
 
 ## Sprawdź również <a name="go-further"></a>

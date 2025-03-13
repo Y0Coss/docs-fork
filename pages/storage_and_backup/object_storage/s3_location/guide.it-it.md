@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoint e Object Storage geoavailability (EN)
-updated: 2024-08-09
+updated: 2024-11-25
 ---
 
 <style>
@@ -9,11 +9,11 @@ td:nth-of-type(2) {
 }
 </style>
 
-We have designed the S3 storage classes to be **compatible with the S3 API**, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region and not storage class.
+We have designed the Object Storage storage classes to be **compatible with S3 **\*** API**, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region and not storage class.
 
-## Object Storage S3
+## Object Storage
 
-OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address all buckets and all objects in both Standard and High Performance storage classes. All S3 API operations are supported with this unique endpoint.
+OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address all buckets and all objects in both Standard and High Performance storage classes. All operations are supported with this unique endpoint.
 
 ### List of available regions
 
@@ -24,70 +24,113 @@ OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s
         <th>Region<br><b><i>To be entered in lower case</i></b></th>
         <th>Protocol</th>
         <th>Signature version</th>
+        <th>Deployment mode</th>
+        <th>Storage tier supported</th>
     </tr>
     <tr>
-        <td rowspan=6>Europe</td>
+        <td rowspan=7><strong>Europe</strong></td>
         <td>Gravelines</td>
         <td>gra</td>
         <td>HTTPS</td>
         <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
     </tr>
     <tr>
         <td>Roubaix</td>
         <td>rbx</td>
         <td>HTTPS</td>
         <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
     </tr>
     <tr>
         <td>Strasbourg</td>
         <td>sbg</td>
         <td>HTTPS</td>
         <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
+    </tr>
+    <tr>
+        <td>Paris</td>
+        <td>eu-west-par</td>
+        <td>HTTPS</td>
+        <td>4</td>
+        <td>3-AZ region</td>
+        <td>Standard only</td>
     </tr>
     <tr>
         <td>Frankfurt</td>
         <td>de</td>
         <td>HTTPS</td>
         <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
     </tr>
     <tr>
         <td>London</td>
         <td>uk</td>
         <td>HTTPS</td>
         <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
     </tr>
     <tr>
         <td>Warsaw</td>
         <td>waw</td>
         <td>HTTPS</td>
         <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
     </tr>
     <tr>
-        <td rowspan=2>North America<br>(excluding USA)</td>
+        <td rowspan=2><strong>North America<br>(excluding USA)</strong></td>
         <td>Beauharnois</td>
         <td>bhs</td>
         <td>HTTPS</td>
         <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
     </tr>
     <tr>
         <td>Toronto</td>
         <td>ca-east-tor</td>
         <td>HTTPS</td>
         <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
     </tr>
     <tr>
-        <td>Asia-Pacific</td>
+        <td rowspan=3><strong>Asia-Pacific</strong></td>
         <td>Singapore</td>
         <td>sgp</td>
         <td>HTTPS</td>
         <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
+    </tr>
+    <tr>
+        <td>Sydney</td>
+        <td>ap-southeast-syd</td>
+        <td>HTTPS</td>
+        <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
+    </tr>
+    <tr>
+        <td>Mumbai</td>
+        <td>ap-south-mum</td>
+        <td>HTTPS</td>
+        <td>4</td>
+        <td>1-AZ region</td>
+        <td>Standard & High Performance</td>
     </tr>
 </table>
 
-
 The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh.net` that represents a virtual host style endpoint.
 
-### Mapping from AWS S3 Storage tiers to OVHcloud Storage tiers
+### Mapping from AWS S3 tiers to OVHcloud Storage tiers
 
 The mapping for **WRITE(PUT)** operations on the **io** endpoint is the following:
 
@@ -149,7 +192,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 </table>
 
 > [!warning]
-> Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all S3 features and API operations will be available.
+> Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all features and API operations will be available.
 
 ![Schema 1](images/io-mapping-v2.png)
 
@@ -159,7 +202,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 
 ### Endpoint retrocompatibility
 
-Although the **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service, the **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint will also be able to address all buckets and all objects in both Standard and High Performance storage classes and will support all S3 API operations including `listBucket`.
+Although the **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service, the **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint will also be able to address all buckets and all objects in both Standard and High Performance storage classes and will support all API operations including `listBucket`.
 
 The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the following:
 
@@ -232,4 +275,6 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

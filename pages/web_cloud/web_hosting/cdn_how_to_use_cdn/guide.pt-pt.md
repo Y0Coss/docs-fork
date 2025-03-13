@@ -1,13 +1,8 @@
 ---
 title: "Guia de utilização do acelerador CDN num alojamento web"
 excerpt: "Saiba como melhorar o seu website acelerando o seu carregamento no seu alojamento Web graças ao CDN"
-updated: 2024-03-12
+updated: 2025-02-20
 ---
-
-> [!primary]
->
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -251,9 +246,40 @@ Depois de configurar as regras e selecionar as opções, clique em `Aplicar conf
 
 ### Visualizar as estatísticas do CDN
 
-No separador `Multisite`{.action} do seu alojamento, abaixo da tabela, pode visualizar as estatísticas do seu CDN, indicando o número de pedidos por minuto medidos no mesmo.
+Para aceder às estatísticas do CDN, efetue as seguintes ações:
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/statistics.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Estatísticas e logs`{.action}.
+>>
+> **Etapa 4**
+>>
+>> Na parte `Estatísticas de visitas`, clique no botão `Ver as estatísticas`{.action}.
+>>
+> **Etapa 5**
+>>
+>> Será redirecionado para a ferramenta **OVHcloud Web Statistics**. Nesta ferramenta, clique no formulário intitulado `Seleção do domínio`{.action}, situado no topo da página, e escolha um domínio para o qual a CDN está ativa.
+>>
+> **Etapa 6**
+>>
+>> Na coluna da direita, clique no separador `Cache`{.action}.
+>>
+>> Visualize agora as estatísticas da CDN para o seu domínio.
+>>
+>> Se necessário, consulte o guia "[Alojamento web - Consultar as estatísticas e logs de um website](/pages/web_cloud/web_hosting/logs_and_statistics)" para mais informações.
 
 ### Como colocar em cache os meus ficheiros no CDN?
 

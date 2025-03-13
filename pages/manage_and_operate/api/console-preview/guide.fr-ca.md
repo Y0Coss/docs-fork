@@ -154,7 +154,7 @@ Une fenêtre de recherche avancée s'ouvre et permet de rechercher suivant les c
 
 ### Exécuter des requêtes
 
-Depuis la console, il est possible d'interagir directement avec l'API en utilisant le bouton `TRY`{.action}.
+Depuis la console, il est possible d'interagir directement avec l'API en utilisant le bouton `EXECUTE`{.action}.
 
 ![API](images/operation-try-call.png){.thumbnail}
 
@@ -173,4 +173,4 @@ Trois onglets sont disponibles dans cette vue :
 
 [Comment gérer le compte d'un client OVHcloud via les API](/pages/manage_and_operate/api/api_right_delegation) (guide en anglais)
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Échangez avec notre [communauté d'utilisateurs](/links/community).

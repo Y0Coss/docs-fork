@@ -1,8 +1,13 @@
 ---
 title: Configurer les groupes d’objets NSX-v
 excerpt: Regrouper plusieurs objets en un seul pour éclaircir vos interfaces
-updated: 2021-11-24
+updated: 2025-02-27
 ---
+
+> [!alert]
+> **Fin de prise en charge :**
+>
+>  NSX-v n'est plus pris en charge dans l'environnement OVHcloud.
 
 ## Objectif
 
@@ -209,4 +214,4 @@ Votre groupe de sécurité est à présent paramétré et fonctionnel.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

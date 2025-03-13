@@ -42,7 +42,7 @@ Pour plus d'informations sur la configuration des Floating IP, consultez la page
 
 ### Comment obtenir des adresses IP publiques dans votre espace client ?
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Public Cloud`{action}, allez dans la rubrique `Network` du menu de gauche et sélectionnez `Public IPs`{.action}. Gérez ici les Additional IP et les Floating IP selon vos besoins.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Public Cloud`{.action}, allez dans la rubrique `Network` du menu de gauche et sélectionnez `Public IPs`{.action}. Gérez ici les Additional IP et les Floating IP selon vos besoins.
 
 ![Concept IP](images/concip.png){.thumbnail}
 
@@ -56,4 +56,4 @@ En fonction de votre choix, vous pouvez faire votre sélection parmi les différ
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

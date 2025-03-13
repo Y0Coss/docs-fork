@@ -1,12 +1,8 @@
 ---
-title: 'Informações sobre o método de faturação cloud'
+title: 'Informações sobre o método de faturação Public Cloud'
 excerpt: 'Saiba mais sobre o método de faturação dos produtos Public Cloud'
-updated: 2024-04-24
+updated: 2025-01-07
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Introdução
 
@@ -20,9 +16,12 @@ Este sistema é semelhante ao de certas operadoras que faturam ao final do mês 
 
 ## Requisitos
 
-* um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) criado na sua conta OVHcloud
-* uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}
+* um projeto [Public Cloud](/links/public-cloud/public-cloud) criado na sua conta OVHcloud
+* uma [Instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+> [!success]
+> Tire partido de preços reduzidos comprometendo-se com um período de 1 a 36 meses nos seus recursos Public Cloud. Mais informações na nossa página [Savings Plans](/links/public-cloud/savings-plan).
 
 ## Princípio geral
 
@@ -37,10 +36,6 @@ Especificamente para as instâncias de máquinas virtuais, o contador de fatura�
 Todos os projetos cloud têm a sua própria faturação, que reúne todos os recursos faturados durante o mês. Esta fatura é gerada no primeiro dia do mês a seguir.
 
 ### Exemplo
-
-> [!warning]
-Tenha em conta que uma instância horária é faturada à hora, independentemente do momento em que a instância é criada. Se pretender usufruir de 60 minutos de utilização durante uma hora de faturação, deve iniciar a sua instância à marca da hora, por exemplo às 13h00 ou às 14h00.
->
 
 Este exemplo permitirá compreender melhor o funcionamento:
 
@@ -103,7 +98,7 @@ Se pretender receber um aviso quando a projeção de consumo ultrapassar um dete
 
 ### As instâncias
 
-Os preços das instâncias cloud (ou servidores cloud) são indicados na interface do cliente da OVHcloud antes de iniciar uma instância. Também podem ser consultados diretamente na [página de preços](https://www.ovhcloud.com/pt/public-cloud/prices/){.external}.
+Os preços das instâncias cloud (ou servidores cloud) são indicados na interface do cliente da OVHcloud antes de iniciar uma instância. Também podem ser consultados diretamente na [página de preços](/links/public-cloud/prices).
 
 > [!primary]
 >
@@ -151,7 +146,7 @@ O cálculo é: (preço do GB por mês / 720) x número de horas x o número de G
 
 O número de GB por hora corresponde à quantidade máxima de GB armazenados durante uma hora. Por exemplo: se um utilizador tiver 15 GB às 16h20, 17 GB às 16h40 e 14 GB às 16h50, a OVHcloud irá cobrar 17 GB para o período de 16h-17h.
 
-Os preços de armazenamento estão disponíveis diretamente no [site da OVHcloud](https://www.ovhcloud.com/pt/public-cloud/storage/){.external}.
+Os preços de armazenamento estão disponíveis diretamente no [site da OVHcloud](/links/public-cloud/storage).
 
 #### Volumes adicionais
 
@@ -167,7 +162,7 @@ As snapshots de volumes adicionais são faturadas da mesma forma que os próprio
 
 #### Snapshots e imagens de instância
 
-As snapshots de instâncias como as imagens (excluindo o catálogo de imagens fornecido pela OVHcloud) são faturadas a um preço fixo por GB/mês, independentemente da instância original ou do tipo de imagem. Aceda à [página de preços](https://www.ovhcloud.com/pt/public-cloud/prices/){.external} para saber mais.
+As snapshots de instâncias como as imagens (excluindo o catálogo de imagens fornecido pela OVHcloud) são faturadas a um preço fixo por GB/mês, independentemente da instância original ou do tipo de imagem. Aceda à [página de preços](/links/public-cloud/prices) para saber mais.
 
 #### Object Storage
 
@@ -204,4 +199,4 @@ São faturados três elementos para o armazenamento de arquivos:
 
 ## Quer saber mais?
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

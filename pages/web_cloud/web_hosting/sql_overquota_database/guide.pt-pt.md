@@ -1,12 +1,8 @@
 ---
-title: "Alojamento web: a minha base de dados está saturada, o que fazer?"
+title: "Alojamento web - A minha base de dados está saturada, o que fazer?"
 excerpt: "Saiba como agir quando a base de dados está sobrecarregada"
-updated: 2023-12-13
+updated: 2025-02-19
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -53,26 +49,50 @@ A primeira etapa consiste em identificar a ou as tabelas volumosas presentes na 
 > [phpMyAdmin](https://www.phpmyadmin.net/){.external} está disponível em todas as bases de dados partilhadas da OVHcloud.
 > Esta aplicação de gestão de base de dados facilita a realização das ações manuais que pode efetuar com a sua base de dados.
 >
+> Se a base de dados estiver presente numa solução [Web Cloud Databases](/links/web/databases), consulte o guia "[Web Cloud Databases - Ligar-se à base de dados](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)" e, em seguida, passe diretamente para a [etapa 1.2](#step1.2) deste guia.
 
 #### 1.1 - Aceder à base de dados via phpMyAdmin
 
 Recupere as informações de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Realize esta ação através da **etapa 1** do nosso guia sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
 
-Aceda à [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action} na barra de navegação no topo do ecrã. Clique em `Alojamentos`{.action} e escolha o alojamento web associado à sua base de dados partilhada da OVHcloud. Por fim, clique no separador `Bases de dados`{.action}.
+Para se conectar ao banco de dados via phpMyAdmin, clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 
-Na parte inferior do ecrã será apresentada uma tabela com a lista das bases de dados.
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Bases de dados`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Na parte inferior do ecrã será apresentada uma tabela com a lista das bases de dados.
+>>
+>> ![Go to phpMyAdmin](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+>>
+>> Tome nota do `Nome de utilizador` e do`Endereço do servidor` **da sua base de dados saturada**. Estas informações são visíveis na tabela que lista as suas bases de dados.
+>>
+>> À direita da base de dados em causa, clique no botão `...`{.action} e, a seguir, em `Aceder ao phpMyAdmin`{.action}.
+>>
+> **Etapa 5**
+>>
+>> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
+>>
+>> Introduza as informações de acesso à sua base de dados e depois clique em `Entrada`{.action}.
 
-![phpMyAdmin Access](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-
-Anote, **para a sua base de dados saturada**, o seu `Nome de utilizador` e o seu `Endereço do servidor` presentes na tabela que lista as suas bases de dados. 
-
-Ainda no separador `Bases de dados`{.action}", clique no botão `...`{.action} à direita da base de dados que está saturada e, a seguir, em `Aceder ao phpMyAdmin`{.action}".
-
-![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
-
-Introduza as informações de acesso à sua base de dados e depois clique em `Entrada`{.action}.
-
-#### 1.2 - Pesquisar as tabelas mais volumosas
+#### 1.2 - Pesquisar as tabelas mais volumosas <a name="step1.2"></a>
 
 > [!alert]
 >
@@ -199,6 +219,80 @@ DROP TABLE `table_1`
 ```
 
 > Neste exemplo, o comando suprime a tabela **table_1** e o conjunto das linhas que contém.
+
+### Etapa 4: Retirar a base de dados do estado "READ ONLY" (só de leitura)
+
+Os nossos robôs encarregados das verificações de quotas passam muito regularmente pelas nossas infraestruturas.
+Se, no momento da passagem pelos seus serviços, verificarem que a sua base de dados já não está em **overquota**, retirarão automaticamente o estado "READ ONLY" (leitura apenas).
+Depois de efetuar as operações necessárias na sua base de dados, só precisa de aguardar até que os nossos robôs cheguem aos seus serviços.
+
+No entanto, pode forçar a sua passagem pelos seus serviços para acelerar o processo. Para isso, deve pedir aos nossos robôs que recalculem o limite do seu serviço/base de dados.
+
+#### Recalcular o limite para uma base de dados incluída na sua oferta de alojamento web
+
+Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> Na página que se abrir, clique no separador `Bases de dados`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> Na nova página, é apresentada uma tabela com as bases de dados criadas. À direita da base de dados em causa, clique no botão `...`{.action} e, a seguir, em `Recalcular o limite`{.action}.
+>>
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> Na janela que se abrir, clique diretamente no botão `Validar`{.action}.
+>>
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Depois de iniciada, a operação pode demorar alguns minutos. Quando esta operação terminar, o estado "READ ONLY" da base de dados desaparece.
+>> A sua base de dados estará novamente plenamente operacional.
+>>
+
+#### Recalcular o limite para uma base de dados alojada numa solução Web Cloud Databases
+
+Clique nos separadores abaixo para visualizar cada um dos **3** passos.
+
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu suspenso `Web Cloud Databases`{.action} e escolha a solução Web Cloud Databases correspondente.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/wcdb-server-selection.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> No menu **Informações gerais**, encontrará **Espaço utilizado**. Clique no botão `...`{.action} à direita e, a seguir, em `Atualizar o limite da sua base de dados`{.action}.
+>>
+>> ![Refresh your database quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
+>>
+>> Depois de iniciada, a operação pode demorar alguns minutos. Quando esta operação terminar, o estado "READ ONLY" da base de dados desaparece.
+>> A sua base de dados estará novamente plenamente operacional.
+>>
 
 ## Quer saber mais? <a name="go-further"></a>
 

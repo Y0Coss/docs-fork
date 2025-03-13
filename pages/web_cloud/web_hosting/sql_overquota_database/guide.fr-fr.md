@@ -1,7 +1,7 @@
 ---
-title: "Hébergement web : ma base de données est saturée, que faire ?"
+title: "Hébergement web - Ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2023-12-13
+updated: 2025-02-19
 ---
 
 ## Objectif
@@ -49,26 +49,51 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 > [phpMyAdmin](https://www.phpmyadmin.net/){.external} est disponible sur l'ensemble des bases de données mutualisées OVHcloud.
 > Cette application de gestion de base de données facilite la réalisation des actions manuelles que vous pouvez effectuer avec votre base de données.
 >
+> Si votre base de données est présente sur une solution [Web Cloud Databases](/links/web/databases), consultez notre guide « [Web Cloud Databases - Se connecter à votre base de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) », puis passez directement à l'[étape 1.2](#step1.2) du présent guide.
+>
 
 #### 1.1 - Se connecter à la base de données via phpMyAdmin
 
 Récupérez les informations d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Hébergements`{.action} puis choisissez l’hébergement web associé à votre base de données mutualisée OVHcloud. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour vous connectez à la base de données via phpMyAdmin, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
-Un tableau listant vos bases de données s'affiche sur la partie basse de l'écran.
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Etape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> 
+> **Etape 4**
+>>
+>> Sur la nouvelle page, un tableau contenant vos bases de données créées apparaît.
+>>
+>> ![Go to phpMyAdmin](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
+>>
+>> Prenez note du `Nom d'utilisateur` et de l'`Adresse du serveur` **de votre base de données saturée**. Ces informations sont visibles dans le tableau listant vos bases de données. 
+>>
+>> A droite de la base de données concernée, cliquez sur le bouton `...`{.action}, puis sur `Accéder à phpMyAdmin`{.action}.
+>>
+> **Etape 5**
+>>
+>> ![phpMyAdmin Login interface](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
+>>
+>> Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
 
-![phpMyAdmin Access](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
-
-Notez, **pour votre base de données saturée**, son `Nom d'utilisateur` et son `Adresse du serveur` présents dans le tableau listant vos bases de données. 
-
-Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est saturée puis sur `Accéder à phpMyAdmin`{.action}.
-
-![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
-
-Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
-
-#### 1.2 - Rechercher les tables les plus volumineuses
+#### 1.2 - Rechercher les tables les plus volumineuses <a name="step1.2"></a>
 
 > [!alert]
 >
@@ -195,6 +220,80 @@ DROP TABLE `table_1`
 ```
 
 > Dans cet exemple, la commande supprime la table **table_1** et l'ensemble des lignes qu'elle contient.
+
+### Etape 4 : Sortir la base de donnée du statut « READ ONLY » (lecture seule)
+
+Nos robots en charge des vérifications des quotas passent très régulièrement sur nos infrastructures.
+S'ils constatent, lors de leur passage sur vos services, que votre base de données n'est plus en **overquota**, ils retirent automatiquement le statut « READ ONLY » (lecture seule).
+Dès lors que vous avez effectué les opérations nécessaires sur votre base de données, il vous suffit donc de patienter jusqu'à ce que nos robots passent sur vos services.
+
+Cependant, vous pouvez forcer leur passage sur vos services pour accélérer le processus. Pour cela, vous devez demander à nos robots de recalculer le quota de votre service/base de données.
+
+#### Recalculer le quota pour une base de données incluse avec votre offre d'hébergement web
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Etape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> 
+> **Etape 4**
+>>
+>> Sur la nouvelle page, un tableau contenant vos bases de données créées apparaît. A droite de la base de données concernée, cliquez sur le bouton `...`{.action}, puis sur `Recalculer le quota`{.action}. 
+>>
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>> 
+> **Etape 5**
+>>
+>> Dans la fenêtre qui s'affiche, cliquez directement sur le bouton `Valider`{.action}.
+>>
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Une fois lancée, l'opération peut prendre plusieurs minutes. Lorsqu'elle se termine, le statut « READ ONLY » de votre base de données disparaît.
+>> Votre base de données est alors de nouveau pleinement opérationnelle.
+>>
+
+#### Recalculer le quota pour une base de données hébergée sur une solution Web Cloud Databases
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etape 2**
+>>
+>> Cliquez sur le menu `Web Cloud Databases`{.action}, puis choisissez la solution Web Cloud Databases concernée.
+>>
+>> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/wcdb-server-selection.png){.thumbnail}
+>>
+> **Etape 3**
+>>
+>> Dans le cadre **Informations générales** vous trouverez la mention **Espace utilisé**. Cliquez sur le bouton `...`{.action} à droite puis sur `Rafraîchir le quota de votre base de données`{.action}.
+>>
+>> ![Refresh your database quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
+>>
+>> Une fois lancée, l'opération peut prendre plusieurs minutes. Lorsqu'elle se termine, le statut « READ ONLY » de votre base de données disparaît.
+>> Votre base de données est alors de nouveau pleinement opérationnelle.
+>>
 
 ## Aller plus loin <a name="go-further"></a>
 

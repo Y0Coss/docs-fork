@@ -31,7 +31,7 @@ Lors d'une attaque, une action de mitigation active sera indiquée par une icôn
 
 > [!primary]
 >
-> Découvrez comment la mitigation des attaques DDoS est réalisée chez OVHcloud [ici](https://www.ovhcloud.com/fr-ca/security/anti-ddos/ddos-attack-mitigation/).
+> Découvrez comment la mitigation des attaques DDoS est réalisée chez OVHcloud [ici](/links/security/mitigation).
 >
 
 > [!warning]
@@ -170,4 +170,4 @@ Dans tous les cas de figure où des ajustements de notre système Anti-DDoS sero
 
 - [Protéger un serveur GAME avec le pare-feu applicatif](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

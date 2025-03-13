@@ -11,7 +11,7 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 
 **Découvrez comment utiliser le logiciel Filezilla avec votre hébergement mutualisé.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wwPx8ORF1kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/wwPx8ORF1kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
 > [!warning]
 >
@@ -53,7 +53,7 @@ Depuis la barre de connexion rapide, complétez les informations en vous aidant 
 |Mot de passe|Mot de passe associé à l'utilisateur.|
 |Port|Il est généralement complété automatiquement par le logiciel. Sinon, renseignez :<br><br>- le port « 21 » pour une connexion FTP ;<br>- le port « 22 » pour une connexion SFTP (dans le cas où celui-ci est activé). Retrouvez plus d'informations sur le SFTP dans [la partie dédidée de ce tutoriel](#sftp).|
 
-Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} dans la partie « Web Cloud », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors :
+Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors :
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
@@ -81,7 +81,7 @@ Le **SFTP** (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocol
 
 Vérifiez tout d'abord que le SFTP est activé pour votre **Login FTP**.
 
-Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}, dans la partie « Web Cloud », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}, dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}.
 
 Vérifiez ensuite si le **SFTP** est actif dans le tableau en bas de page.
 

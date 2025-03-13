@@ -17,8 +17,8 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 
 ## Requirements
 
-- an MX Plan email solution or a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- an MX Plan email solution or a [Web Hosting plan](/links/web/hosting) 
+- access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >
@@ -32,11 +32,11 @@ MX Plan legacy version|MX Plan new version|
 
 ## Instructions <a name="oldmxplan"></a>
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action}.
-
-Select the domain name from the `Emails`{.action} section. Switch to the tab `Emails`{.action}.
-
-In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Open the `Web Cloud`{.action} section.
+1. Click `Emails`{.action}.
+1. Select the domain concerned.
+1. In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
 
 ![emails](images/img_3239.png){.thumbnail}
 
@@ -145,4 +145,4 @@ In the Control Panel, the filter configuration looks like this:
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

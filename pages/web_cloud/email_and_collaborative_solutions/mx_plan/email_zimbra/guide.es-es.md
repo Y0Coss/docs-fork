@@ -1,28 +1,14 @@
 ---
-title: "MX Plan - Utilizar el webmail Zimbra"
+title: "Utilizar el webmail Zimbra"
 excerpt: "Descubra la interfaz del webmail Zimbra para sus cuentas MX Plan OVHcloud"
-updated: 2024-08-26
+updated: 2025-02-12
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 <style>
 .w-400 {
   max-width:400px !important;
 }
 </style>
-
-> [!primary]
->
-> **Importante**
->
-> El webmail Zimbra para MX Plan es un producto en desarrollo.
->
-> Actualmente solo está disponible para migraciones relacionadas con la evolución de nuestra solución MX Plan. Esta migración es automática. Nuestros equipos le enviarán un mensaje de correo electrónico cuando la migración le afecte.
->
-> Para más información, consulte nuestras [FAQ sobre la solución Zimbra OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra).
 
 ## Objetivo
 
@@ -33,7 +19,7 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
 
 ## Requisitos
 
-- Disponer de una solución de correo electrónico **MX Plan** de OVHcloud, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada como solución independiente.
+- Disponer de una solución de correo electrónico **MX Plan** de OVHcloud, incluida en nuestros [planes de hosting](/links/web/hosting), incluida en un [alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratada como solución independiente.
 - Disponer de los datos de conexión a la dirección de correo electrónico MX Plan que quiera consultar. Para más información, consulte nuestra guía [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ## Procedimiento
@@ -66,7 +52,7 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
 
 ### Conectarse al webmail Zimbra <a name="login"></a>
 
-Acceda a la página <https://www.ovh.com/es-es/mail/>. Introduzca su dirección de correo electrónico y la contraseña y haga clic en `Conexión`{.action}.
+Acceda a la página [Webmail](/links/web/email). Introduzca su dirección de correo electrónico y la contraseña y haga clic en `Conexión`{.action}.
 
 ![Zimbra - connexion](images/ovhcloud-login-webmail.png){.thumbnail}
 
@@ -602,4 +588,4 @@ De forma predeterminada, la opción `Habilitar respuesta automática durante est
 
 [Utilizar las redirecciones de correo](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

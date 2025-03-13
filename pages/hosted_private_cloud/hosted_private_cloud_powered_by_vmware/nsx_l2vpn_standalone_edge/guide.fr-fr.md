@@ -1,8 +1,13 @@
 ---
 title: "Configurer un Standalone Edge pour L2 à L2VPN"
 excerpt: "Déployez un serveur NSX Standalone Edge pour étendre la gamme L2 à L2VPN vers une infrastructure NSX"
-updated: 2024-03-05
+updated: 2025-02-27
 ---
+
+> [!alert]
+> **Fin de prise en charge :**
+>
+>  NSX-v n'est plus pris en charge dans l'environnement OVHcloud.
 
 ## Objectif
 
@@ -158,4 +163,4 @@ La communication entre les VM s'effectue bien, notre configuration est fonctionn
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

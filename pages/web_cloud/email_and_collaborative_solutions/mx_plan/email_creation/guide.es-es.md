@@ -4,10 +4,6 @@ excerpt: 'Cómo crear una dirección de correo electrónico en la solución MX P
 updated: 2024-06-13
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
 ## Objetivo
 
 La solución MX Plan le permite disfrutar de direcciones de correo asociadas a un dominio.
@@ -28,9 +24,14 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 
 ## Procedimiento <a name="instructions"></a>
 
-En función de cuándo haya activado su MX Plan o de si el servicio ha sido migrado recientemente, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+En función de cuándo haya activado su MX Plan o de si el servicio ha sido migrado recientemente, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone.
 
-Para ello, conéctese al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+1. Haga clic en la pestaña `Web Cloud`{.action}.
+1. Haga clic en `Correo electrónico`{.action}.
+1. Seleccione el dominio.
+
+Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -69,7 +70,7 @@ Repita el procedimiento descrito en este apartado para crear las cuentas que des
 
 #### Consultar los mensajes de correo
 
-Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](/links/web/email) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
 La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
@@ -79,7 +80,7 @@ Para consultar su correo desde un cliente de correo, consulte la sección "[Cons
 
 #### Eliminar una cuenta de correo
 
-Desde la nueva versión MXplan, cuando debe eliminarla, se habla de *reinicialización de la cuenta*.
+Desde la nueva versión MX Plan, cuando debe eliminarla, se habla de *reinicialización de la cuenta*.
 
 > [!warning]
 >
@@ -139,7 +140,7 @@ Repita el procedimiento descrito en este apartado para crear las cuentas que des
 
 #### Consultar los mensajes de correo 
 
-Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](/links/web/email) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
 A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
@@ -229,4 +230,4 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 ## Más información
   
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

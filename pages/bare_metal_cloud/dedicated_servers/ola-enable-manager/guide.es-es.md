@@ -4,10 +4,6 @@ excerpt: 'Activar el servicio OVHcloud Link Aggregation en el área de cliente'
 updated: 2022-05-18
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
 ## Objetivo
 
 La tecnología OVHcloud Link Aggregation (OLA) está diseñada para aumentar la disponibilidad de su servidor y mejorar la eficiencia de sus conexiones de red. En solo unos clics, es posible añadir sus tarjetas de red y hacer que sus enlaces de red sean redundantes. De este modo, si un enlace se cae, el tráfico se redirige automáticamente hacia otro enlace disponible.<br>
@@ -17,7 +13,7 @@ La agregación se basa en la tecnología IEEE 802.3ad o Link Aggregation Control
 
 ## Requisitos
 
-- Tener un [servidor dedicado de OVHcloud.](/links/bare-metal/bare-metal).
+- Tener un [servidor dedicado OVHcloud](/links/bare-metal/bare-metal) de las gamas Advance, Scale o High Grade.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener un sistema operativo/hipervisor que soporta el protocolo de agregación 802.3ad (LACP).
 
@@ -44,11 +40,13 @@ Compruebe que las dos interfaces, o grupos de interfaces, estén bien selecciona
 
 La operación puede tardar unos minutos. Cuando haya terminado, el paso siguiente será configurar las interfaces de su sistema operativo con un vínculo NIC o un equipo NIC. Para saber cómo proceder, puede consultar las siguientes guías diseñadas para los sistemas operativos más populares:
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
-
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en CentOS 7](/pages/bare_metal_cloud/dedicated_servers/ola-enable-centos7).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9 a través de ifupdown](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 [Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
+
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
+
+[How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
 
 ### Restaurar OLA a los valores predeterminados
 
@@ -60,10 +58,12 @@ La operación puede tardar unos minutos.
 
 ## Más información
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
-
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en CentOS 7](/pages/bare_metal_cloud/dedicated_servers/ola-enable-centos7).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9 a través de ifupdown](/pages/bare_metal_cloud/dedicated_servers/ola-enable-debian9).
 
 [Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](/pages/bare_metal_cloud/dedicated_servers/ola-enable-w2k19).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15).
+
+[How to configure Your NIC for OVHcloud Link Aggregation in Debian 12 or Ubuntu 24.04 using Netplan](/pages/bare_metal_cloud/dedicated_servers/lacp-enable-netplan).
+
+Interactúe con nuestra [comunidad de usuarios](/links/community).

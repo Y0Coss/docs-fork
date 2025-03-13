@@ -17,7 +17,7 @@ Além da Área de Cliente OVHcloud, também pode gerir os seus projetos Public C
 ## Requisitos
 
 - Ter criado uma instância Public Cloud a partir da [Área de Cliente OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) ou através da [interface Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
-- [Ter criado uma chave SSH](/pages/public_cloud/compute/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh).
+- [Ter criado uma chave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ## Prática
 
@@ -65,7 +65,7 @@ Na interface de gestão da instância, selecione a opção desejada na lista pen
 ![public-cloud](images/list2022.png){.thumbnail}
 
 - Attach Interface: esta opção permite adicionar uma ou várias interfaces privadas à sua instância através da VLAN. Para mais informações, consulte [esta parte](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#adicao-de-uma-interface-privada) do guia correspondente.
-- Detach Interface: esta opção permite eliminar uma interface associada a uma instância. Para mais informações, consulte [esta parte](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#eliminacao-de-uma-interface-privada) do guia correspondente.
+- Detach Interface: esta opção é utilizada para separar uma interface associada a uma instância. Para mais informações, consulte [esta parte](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#eliminacao-de-uma-interface-privada) do guia correspondente.
 - Edit Instance: esta opção permite alterar o nome da instância e os [grupos de segurança](/pages/public_cloud/compute/setup_security_group).
 
 > [!warning]
@@ -87,50 +87,7 @@ Graças ao Public Cloud, pode aumentar os recursos de que a sua instância disp�
 > As instâncias do tipo *flex* permitem o redimensionamento para modelos superiores ou inferiores graças a um tamanho de disco único.
 > 
 
-Selecione a `Resize Instance`{.action} no menu pendente à direita da instância em questão.
-
-![Resize instance](images/resizeinstance2022.png){.thumbnail}
-
-* Escolha do template (*Flavor Choice*): esta secção indica o template atual (*old flavor*) e permite-lhe selecionar um novo template (*new flavor*) para o recurso da instância.
-
-![public-cloud](images/flavorchoice.png){.thumbnail}
-
-* Detalhes do template (*Flavor Details*). Nesta secção apresentam-se os recursos associados ao template escolhido. 
-* Limites de Projeto (*Project Limits*). Visite aqui os recursos ocupados em comparação com os recursos totais atribuídos ao projeto.
-
-> [!warning]
-> Tenha em conta que só pode redimensionar uma instância de um modelo Linux para outro modelo Linux e de um modelo Windows para outro modelo Windows.
->
-
-* Opções avançadas (*Advanced Options*). Esta secção permite gerir o particionamento do disco (*Disk Partition*) e o grupo de servidores (*Server Group*).
-
-![public-cloud](images/resize_advanced.png){.thumbnail}
-
-Concluída a configuração, clique em `Resize`{.action}.
-
-**Redimensionamento do disco sob Windows**
-
-Atenção, aquando de um redimensionamento para uma Instância Windows, o tamanho da partição não é automaticamente atualizado, será necessário ampliá-la ao utilizar o **gestor de disco**:
-
-Clique com o botão direito do rato no menu `Iniciar`{.action} e lance o gestor de disco ao clicar em `Gestão do disco`{.action}.
-
-![public-cloud](images/2980.png){.thumbnail}
-
-Clique com o botão direito do rato na partição principal e, a seguir, em `Estender o volume`{.action}.
-
-![public-cloud](images/2981a.png){.thumbnail}
-
-Clique em `Seguinte`{.action} para aceder à secção "Autenticação do volume". Escolha os recursos do disco a expandir e clique em `Seguinte`{.action}. 
-
-![public-cloud](images/2978a.png){.thumbnail}
-
-A seguir, clique em `Terminar`{.action} para validar a sua escolha.
-
-![public-cloud](images/wizard2021.png){.thumbnail}
-
-A nova dimensão do disco será então apresentada no gestor de disco.
-
-![public-cloud](images/2979.png){.thumbnail}
+Para obter instruções detalhadas, consulte o seguinte guia: [Redimensionar uma instância através do Horizon](/pages/public_cloud/compute/resize_of_an_instance).
 
 ### Reconstruir uma instância
 
@@ -159,7 +116,7 @@ Em caso de perda de acesso à sua instância, devido a uma configuração incorr
 > [!primary]
 >
 > Pode aceder diretamente à sua instância através da consola VNC. No entanto, deverá configurar previamente uma palavra-passe para o utilizador root.
-> Para mais informações, consulte [este guia](/pages/public_cloud/compute/become_root_and_change_password).
+> Para mais informações, consulte [este guia](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
 > A consola VNC pode também servir de primeira aproximação em caso de avaria, de forma a estabelecer um diagnóstico graças à análise da fase de arranque da sua instância.
 > 
 
@@ -201,6 +158,7 @@ Se já não precisa de uma das suas instâncias, pode eliminá-la a qualquer mom
 > Os dados presentes na instância serão eliminados.
 > Também pode criar um backup desta instância se deseja conservar os dados e relançar uma instância idêntica mais tarde.
 > 
+> A eliminação de uma instância não elimina automaticamente todas as opções que lhe estão associadas (armazenamento, snapshot, backup, etc...), certifique-se de que todas as outras opções associadas à instância são igualmente eliminadas para deixar de ser faturado.
 
 Na lista pendente correspondente à instância, selecione a `Delete Instance`{.action}. 
 

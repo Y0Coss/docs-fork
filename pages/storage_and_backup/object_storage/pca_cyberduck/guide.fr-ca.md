@@ -24,7 +24,7 @@ D'autres interfaces sont elles aussi disponibles, leur configuration est similai
 ## Prérequis
 
 - Télécharger et installer [Cyberduck](https://cyberduck.io/).
-- Disposer de vos identifiants utilisateur (*OS_USERNAME*) et de projet (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*), que vous pouvez obtenir en téléchargeant le fichier « OpenRC » dans le menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#etape-1-recuperer-les-variables) de votre [espace client Public Cloud OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Disposer de vos identifiants utilisateur (*OS_USERNAME*) et de projet (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*), que vous pouvez obtenir en téléchargeant le fichier « OpenRC » dans le menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#etape-1-recuperer-les-variables) de votre [espace client Public Cloud OVHcloud](/links/manager).
 - Disposer de votre mot de passe d'utilisateur OpenStack.
 
 Si vous ne connaissez plus votre mot de passe d'utilisateur OpenStack, vous pouvez le modifier en suivant [ce guide](/pages/public_cloud/compute/change_openstack_user_password_in_horizon).
@@ -64,4 +64,4 @@ Cliquez alors sur `Connecter`{.action}. Une fois connecté, vous aurez accès à
 
 [Débuter avec l'API Swift](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 
-Echangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

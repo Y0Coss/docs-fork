@@ -21,7 +21,10 @@ Rattacher plusieurs lignes au sein d'un seul groupe permet aussi la supervision 
 
 ## En pratique
 
-Afin d'accéder à la gestion des groupes de téléphonie, connectez-vous à votre [espace client OVHcloud](/links/manager-telecom). Dans la partie `Télécom`{.action}, cliquez sur `Téléphonie`{.action}.
+Afin d'accéder à la gestion des groupes de téléphonie, suivez ces étapes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
+1. Cliquez sur `Téléphonie`{.action}.
 
 Les différents groupes apparaissent alors. Cliquez sur un groupe pour afficher la liste des services qu'il contient.
 
@@ -127,4 +130,4 @@ L'annulation sera prise en compte immédiatement.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

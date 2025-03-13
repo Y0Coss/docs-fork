@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Instance security specification
 excerpt: Public Cloud Instance security overview
-updated: 2024-05-01
+updated: 2025-01-17
 ---
 
 ## Objective
@@ -15,25 +15,25 @@ In addition to [the responsibility model for Public Cloud Instance](/pages/publi
 - ISO/IEC 27017
 - ISO/IEC 27018
 - HDS
-- SOC 1 type 1
-- SOC 2 type 1
-- CSA type 1
-- C5 type 1
+- SOC 1 type II
+- SOC 2 type II
+- CSA type II
+- C5 type II
 
 ### 2. Best pratices to be deployed on the service
 
 #### 2.1 Recommendations once the service is delivered
 
-When you sign up for the service, we recommend that you use SSH keys to access your Instance (rather than a login/password) for a better authentication security level for your administrators and to change it regularly. For more information on how to manage your SSH keys, consult this [guide](/pages/public_cloud/compute/public-cloud-first-steps).
+When you sign up for the service, we recommend that you use SSH keys to access your Instance (rather than a login/password) for a better authentication security level for your administrators and to change it regularly. For more information on how to manage your SSH keys, consult this [guide](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
-You can use the user interface and the CLI to perform tasks. You must manage and secure your ‘root’ access  to perform certain administrative tasks, as described in this [guide](/pages/public_cloud/compute/become_root_and_change_password).
+You can use the user interface and the CLI to perform tasks. You must manage and secure your access to perform certain administrative tasks, as described in this [guide](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
 
 To filter connections, you must set up a firewall using IPtables. 
 
 #### 2.2 Vulnerability scans
 
-You are authorized to perform vulnerability scans on the service you have subscribed to. OVHcloud doesn't have to be previously informed.
-Security measures deployed by OVHcloud (especially network protection) aren't disabled, because such an audit's purpose is to demonstrate a clear vision of the security level of the customer's infrastructure.
+You are authorized to perform vulnerability scans on the service you have subscribed to. OVHcloud doesn't have to be previously informed.  
+Security measures deployed by OVHcloud (especially network protection) aren't disabled, because such an audit's purpose is to demonstrate a clear vision of the security level of the customer's infrastructure.  
 You are not authorized to use your service to scan other infrastructures.
 
 ### 3. Service Level Agreement (SLA)
@@ -109,11 +109,8 @@ You can consult these guides to setup your configurations:
 [Access and security settings in Horizon](/pages/public_cloud/compute/access_and_security_in_horizon).
 [Network guides](/products/public-cloud-network).
 
-#### 8.3 Data encryption at rest
 
-To encrypt your data at rest (volume level encyption), you can follow [this guide](https://docs.openstack.org/cinder/pike/configuration/block-storage/volume-encryption.html#create-an-encrypted-volume){.external} when you create a volume storage.
-
-#### 8.4 HDS option
+#### 8.3 HDS option
 
 The HDS option can be activated on the service.<br>
 The subscription to the [Business support level](https://www.ovhcloud.com/en/support-levels/business/)is mandatory, at least to maintain necessary requirements.
