@@ -21,7 +21,8 @@ W ramach stopniowego przechodzenia z kont MX Plan do Zimbra, można przewidzieć
 
 > [!warning]
 >
-> Jeśli Twoje konto e-mail zarządza poufnymi danymi lub jeśli napotkasz problemy podczas migracji, zalecamy poczekać na wdrożenie narzędzia do automatyzacji w Panelu klienta OVHcloud
+> Jeśli Twoje konto e-mail zarządza poufnymi danymi lub jeśli napotkasz problemy podczas migracji, zalecamy poczekać na wdrożenie narzędzia do automatyzacji w Panelu klienta OVHcloud.
+
 Migracja konta e-mail MX Plan na konto e-mail Zimbra odbywa się w 2-etapowym procesie. Aby uniknąć przerwy w otrzymywaniu wiadomości na oryginalny adres e-mail, należy zastosować się do następującego procesu:
 
 1. **Przeniesienie zawartości konta MX Plan na konto Zimbra**
@@ -34,7 +35,7 @@ Migracja konta e-mail MX Plan na konto e-mail Zimbra odbywa się w 2-etapowym pr
 
 W poniższym przykładzie przenosimy adres `contact@modomain.ovh`. W tym celu utworzymy konto Zimbra pod nazwą `contact2@mydomain.ovh`.
 
-![Zimbra](images/zimbra_migration_mxplan.png){.thumbnail}
+![zimbra](images/zimbra_migration_mxplan.png){.thumbnail}
 
 ### 1.1 - Tworzenie konta e-mail Zimbra <a name="step11"></a>
 
@@ -88,7 +89,7 @@ Aby śledzić migrację pojedynczych kont, możesz skorzystać z jednej z dwóch
 - Z poziomu wiadomości e-mail informującej o postępie migracji.
 - Ze strony <https://omm.ovh.net/>. W zakładce `Migration`{.action} kliknij `Śledź / Synchronizuj`{.action}. Wpisz `Identyfikator migracji`{.action} oraz `Konto źródłowe`{.action}.
 
-![omm](images/omm-migracja-track.png){.thumbnail}
+![omm](images/omm-migration-track.png){.thumbnail}
 
 Strona, która się wyświetla pozwala śledzić postępy migracji. Zobaczysz komunikat, który poinformuje Cię, że operacja się rozpoczęła, jest w toku lub że się zakończyła. W zależności od statusu, możliwych jest kilka różnych działań:
 
