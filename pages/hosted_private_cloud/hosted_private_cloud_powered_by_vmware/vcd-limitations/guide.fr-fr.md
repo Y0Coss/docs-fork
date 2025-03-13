@@ -12,10 +12,10 @@ updated: 2025-03-13
 
 Avant de commencer, consultez les guides suivants pour mieux comprendre VMware Cloud Director :
 
-- [VMware Cloud Director - Concepts fondamentaux](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts/guide.fr-fr.md)
-- [VMware Cloud Director - Concepts réseau](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts/guide.fr-fr.md)
-- [Création d'une VM sur VMware Cloud Director](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation/guide.fr-fr.md)
-- [Création de composants réseau via VCD](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation/guide.fr-fr.md)
+- [VMware Cloud Director - Concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
+- [VMware Cloud Director - Concepts réseau](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts)
+- [Création d'une VM sur VMware Cloud Director](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
+- [Création de composants réseau via VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
 
 ## En pratique
 
@@ -23,7 +23,7 @@ Avant de commencer, consultez les guides suivants pour mieux comprendre VMware C
 
 | Ressource | Standard | Advanced | Premium | Commentaires |
 |-----------|---------|----------|---------|--------------|
-| vCPU (par VM) | 32 | 32 | 32 | Nombre de vCPU disponibles par VM. |
+| vCPU (par VM) | 32 | 32 | 32 | Nombre de vCPUs disponibles par VM. |
 | RAM (par VM) | 128 Go | 128 Go | 128 Go | Quantité maximale de RAM par VM (min. 0,5 Go). |
 | Cartes réseau (par VM) | 5 | 10 | 10 | Nombre maximal d'adaptateurs réseau par VM. |
 | Edge Gateway (par organisation) | N/A | 42 | 42 | Nombre maximal d'Edge Gateways par organisation. |

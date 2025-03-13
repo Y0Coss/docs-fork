@@ -1,6 +1,6 @@
 ---
 title: "Technical capabilities and limitations of Public VCF aaS (aka Managed VCD)"
-excerpt: "Learn about the technical capabilities and limitations of Public VCF aaS (aka Managed VCD)."
+excerpt: "Learn about the technical capabilities and limitations of Public VCF aaS (aka Managed VCD)"
 updated: 2025-03-25
 ---
 
@@ -12,10 +12,10 @@ updated: 2025-03-25
 
 Before getting started, review the following guides to better understand VMware Cloud Director:
 
-- [VMware Cloud Director - Fundamental Concepts](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts/guide.en-ie.md)
-- [VMware Cloud Director - Network Concepts](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts/guide.en-ie.md)
-- [Creating a VM on VMware Cloud Director](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation/guide.en-gb.md)
-- [Creating network components via VCD](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation/guide.en-gb.md)
+- [VMware Cloud Director - Fundamental Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
+- [VMware Cloud Director - Network Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts)
+- [Creating a VM on VMware Cloud Director](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
+- [Creating network components via VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
 
 
 ## Instructions
