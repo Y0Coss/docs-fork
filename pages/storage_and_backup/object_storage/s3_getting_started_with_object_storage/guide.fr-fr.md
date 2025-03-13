@@ -78,6 +78,7 @@ Pour connaître la procédure d’installation de l’AWS CLI adaptée à votre 
 ```bash
 user@host:~$ aws --version
 ```
+
 > [!primary]
 >
 > Si vous avez besoin de plus d'informations sur l'installation de l'AWS CLI, consultez [la documentation AWS](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}.
@@ -85,8 +86,8 @@ user@host:~$ aws --version
 
 #### Collecter les informations d'identification
 
-- Vous aurez besoin de l'*Access key* et de la *Secret key* de votre utilisateur. Ces informations sont accessibles depuis l'onglet `Utilisateurs Object Storage` dans votre espace client.
-- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs` puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](/pages/storage_and_backup/object_storage/s3_location).
+- Vous aurez besoin de l'*Access key* et de la *Secret key* de votre utilisateur. Ces informations sont accessibles depuis l'onglet `Utilisateurs Object Storage`{.action} dans votre espace client OVHcloud.
+- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs`{.action} puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](/pages/storage_and_backup/object_storage/s3_location).
 
 #### Où trouver l'endpoint d'un bucket ?
 
@@ -449,9 +450,9 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >> aws s3 rm s3://<bucket_name>/<object_name>
 >> # Supprimer tous les objets dans un bucket
 >> aws s3 rm s3://<bucket_name> --recursive
->> # Supprimer une zone de stockage. Pour supprimer un bucket, celui-ci doit être vide.
+>> # Supprimer un bucket. Pour supprimer un bucket, celui-ci doit être vide.
 >> aws s3 rb s3://<bucket_name>
->> # Si le compartiment n'est pas supprimé, vous pouvez utiliser la même commande avec l'option --force.
+>> # Si le bucket n'est pas supprimé, vous pouvez utiliser la même commande avec l'option --force.
 >> # Cette commande supprime tous les objets du bucket, puis supprime le bucket.
 >> aws s3 rb s3://<bucket_name> --force
 >> ```
@@ -466,7 +467,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >> aws s3api delete-object --bucket <NAME> --key <KEY> --version-id <VERSION_ID>
 >> ```
 >>
->> Pour répertorier tous les objets et tous les ID de version, vous pouvez utiliser la commande suivante :
+>> Pour répertorier tous les objets et tous les IDs de versions, vous pouvez utiliser la commande suivante :
 >>
 >> ```bash
 >> aws s3api list-object-versions --bucket <NAME>

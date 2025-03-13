@@ -31,7 +31,7 @@ This guide is designed to familiarise you with the management of your containers
 > - for **Standard object storage - SWIFT API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pcs_create_container).
 > - for **Cloud Archive - SWIFT API** storage class, follow [this guide](/pages/storage_and_backup/object_storage/pca_create_container).
 >
-> For new projects we highly recommend using our S3<sup>*</sup>-compatible Object Storage which benefits from our latest innovation and new features.
+> For new projects, we highly recommend using our S3<sup>*</sup>-compatible Object Storage which benefits from our latest innovations and new features.
 > 
 
 ## Requirements
@@ -52,8 +52,8 @@ This guide is designed to familiarise you with the management of your containers
 >
 > Recently, Amazon Web Services (AWS) implemented a change that strengthens checksums when using the S3 API. These new integrity checks are currently being integrated into our platform. The following headers are not supported:
 >
-> - x-amz-content-sha256 with value STREAMING-UNSIGNED-PAYLOAD-TRAILER
-> - x-amz-sdk-checksum-algorithm with value CRC32
+> - `x-amz-content-sha256 with value STREAMING-UNSIGNED-PAYLOAD-TRAILER`
+> - `x-amz-sdk-checksum-algorithm with value CRC32`
 >
 > Until our Object Storage service is updated, we recommend that you use the maximum supported versions of the CLI, SDK and other AWS tools below:
 >
@@ -69,27 +69,28 @@ This guide is designed to familiarise you with the management of your containers
 >
 > Find out more [here](https://docs.aws.amazon.com/fr_fr/sdkref/latest/guide/feature-dataintegrity.html){.external}.
 >
-> Follow-up update at OVHcloud [here](https://public-cloud.status-ovhcloud.com/incidents/491vx956zx6b).
+> Follow OVHcloud related updates [here](https://public-cloud.status-ovhcloud.com/incidents/491vx956zx6b).
 > 
 
-To find out how to install the AWS CLI in your environment, we recommend you consult [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions){.external}.
+To find out how to install the AWS CLI in your environment, we recommend you to read [the official AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions){.external}.
 
 **Check installation**
 
 ```bash
 user@host:~$ aws --version
 ```
+
 > [!primary]
 >
-> If you need more information about AWS CLI installation, you should go [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}.
+> If you need more information about AWS CLI installation, read the [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){.external}.
 >
 
 #### Collect Credentials
 
-- You will need your user's Access key* and *Secret key*. You can access this information in the ‘Object Storage users’ tab in your Control Panel.
-- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
+- You will need your user's *Access key* and *Secret key*. You can access this information in the `Object Storage users`{.action} tab in your OVHcloud Control Panel.
+- You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers`{.action} tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
 
-#### Where to find the Endpoint URL of a bucket
+#### Where to find the Endpoint URL of a bucket?
 
 Click on the name of your bucket to view its details and content:
 
@@ -105,11 +106,11 @@ You can either use the interactive configuration to generate the configuration f
 > 
 > `aws configure`
 >
-> or
+> or:
 >
 > `aws configure --profile PROFILE_NAME`
 
-The configuration file format in the aws client is as follows:
+The configuration file format in the AWS client is as follows:
 
 ```bash
 user@host:~$ cat ~/.aws/credentials
@@ -195,7 +196,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> ///
 >>
-> Via OVHcloud Control Panel
+> Via the OVHcloud Control Panel
 >> Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
 >>
 >> ![My Dashboard containers](images/01-object-storage-bucket-listing.png){.thumbnail}
@@ -222,7 +223,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> ///
 >>
-> Via OVHcloud Control Panel
+> Via the OVHcloud Control Panel
 >> Click `Create Object Container`{.action} and select your storage class:
 >>
 >> ![Select your solution](images/object-storage-bucket-creation-step1.png){.thumbnail}
@@ -231,7 +232,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> > [!primary]
 >> >
->> > OVHcloud provides multiple deployment modes to meet different needs in terms of resilience, availability, and performance. Each mode is optimized for specific use cases and offers varying levels of redundancy and fault tolerance.
+>> > OVHcloud provides multiple deployment modes to meet different needs in terms of resilience, availability and performance. Each mode is optimized for specific use cases and offers varying levels of redundancy and fault tolerance.
 >> >
 >>
 >> ![Select a deployment mode](images/object-storage-bucket-creation-step2.png){.thumbnail}
@@ -249,7 +250,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> ![Link to user](images/object-storage-bucket-creation-step4_1.png){.thumbnail}
 >>
->> To do this, you can either link an existing Object Storage user:
+>> To do this, you can link an existing Object Storage user:
 >>
 >> ![Link to user](images/object-storage-bucket-creation-step4_2.png){.thumbnail}
 >>
@@ -286,16 +287,16 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 
 #### Uploading your files as objects in your bucket
 
-/// details | Difference between storage class of type **Standard** and **High Performance**
+/// details | Differences between storage class of type **Standard** and **High Performance**
 
-Standard Storage Class:
+**Standard Storage Class:**
 
 - Designed for general-purpose storage with a balance of cost and performance.
 - Suitable for workloads with moderate access frequency.
 - Provides durability and availability but may have slightly higher access latency.
 - Best for backups, archiving, and infrequently accessed data.
 
-High Performance Storage Class:
+**High Performance Storage Class:**
 
 - Optimized for low-latency and high-throughput workloads.
 - Ideal for frequent and intensive read/write operations.
@@ -315,7 +316,7 @@ High Performance Storage Class:
 >> aws s3 cp /datas/<object_name> s3://<bucket_name>
 >> ```
 >>
->> **Par défaut, les objets sont nommés d'après des fichiers, mais ils peuvent être renommés**
+>> **By default, objects are named after files, but they can be renamed.**
 >>
 >> ```bash
 >> aws s3 cp /data/<object_name> s3://<bucket_name>/other-filename
@@ -342,13 +343,13 @@ High Performance Storage Class:
 >>
 >> ///
 >>
->> **By default, objects are named after files, but can be renamed**
+>> **By default, objects are named after files, but can be renamed.**
 >>
 >> ```bash
 >> aws s3 cp /data/<object_name> s3://<bucket_name>/other-filename
 >> ```
 >>
-> Via OVHcloud Control Panel
+> Via the OVHcloud Control Panel
 >> Click on the `name of your container`{.action}:
 >>
 >> ![Go in bucket](images/go-in-bucket.png){.thumbnail}
@@ -357,7 +358,7 @@ High Performance Storage Class:
 >>
 >> ![Upload file](images/upload-file.png){.thumbnail}
 >>
->> You can add a prefix to your object name. ( the object name is the same as the file name ) Select the storage class between **Standard** and **High Performance**. Finally, select the file you are about to download and click on the `Import`{.action} button.
+>> You can add a prefix to your object name (the object name is the same as the file name). Select the storage class between **Standard** and **High Performance**. Finally, select the file you are about to download and click on the `Import`{.action} button.
 >>
 >> ![upload file window](images/upload-file-window.png){.thumbnail}
 
@@ -367,19 +368,19 @@ High Performance Storage Class:
 > Via AWS CLI
 >> /// details | **Via AWS s3**
 >>
->> **Downloading an object from a bucket**
+>> **Downloading an object from a bucket:**
 >>
 >> ```bash
 >> aws s3 cp s3://<bucket_name>/<object_name> .
 >> ```
 >>
->> **Uploading an object from one bucket to another bucket**
+>> **Uploading an object from one bucket to another bucket:**
 >>
 >> ```bash
 >> aws s3 cp s3://<bucket_name>/<object_name> s3://<bucket_name_2
 >> ```
 >>
->> **Downloading or uploading an entire bucket to the host/bucket**
+>> **Downloading or uploading an entire bucket to the host/bucket:**
 >>
 >> ```bash
 >> aws s3 cp s3://<bucket_name> . --recursive
@@ -390,13 +391,13 @@ High Performance Storage Class:
 >>
 >> /// details | **Via AWS s3api**
 >>
->> **Downloading an object from a bucket**
+>> **Downloading an object from a bucket:**
 >>
 >> ```bash
 >> aws s3api get-object --bucket <bucket_name> --key <object_name> <object_name>
 >> ```
 >>
->> **Uploading an object from one bucket to another bucket**
+>> **Uploading an object from one bucket to another bucket:**
 >>
 >> ```bash
 >> aws s3api copy-object --bucket <bucket_name_2> --copy-source <bucket_name>/<object_name> --key <object_name>
@@ -404,8 +405,8 @@ High Performance Storage Class:
 >>
 >> ///
 >>
-> Via OVHcloud Control Panel
->> Click on the `...`{.action} button on the object line and on `Download`{.action}.
+> Via the OVHcloud Control Panel
+>> Click on the `...`{.action} button on the object line, then click `Download`{.action}.
 >>
 >> ![Download file from bucket](images/download-file-from-bucket.png){.thumbnail}
 
@@ -427,18 +428,18 @@ High Performance Storage Class:
 >
 
 > [!tabs]
-> Via OVHcloud Control Panel
->> **Deleting bucket**
+> Via the OVHcloud Control Panel
+>> **Deleting a bucket:**
 >>
->> In the list of object storage containers, click on the `...`{.action} button on the containers line and on `Delete`{.action}.
+>> In the list of object storage containers, click on the `...`{.action} button on the containers line, then click `Delete`{.action}.
 >>
 >> ![Delete bucket](images/delete-bucket.png){.thumbnail}
 >>
 >> Click on `Confirm`{.action}.
 >>
->> **Deleting objects**
+>> **Deleting objects:**
 >>
->> Go to the relevant bucket and click on the `...`{.action} button on the object line and on `Delete`{.action}.
+>> Go to the relevant bucket and click on the `...`{.action} button on the object line, then click `Delete`{.action}.
 >>
 >> ![Delete file](images/delete-file.png){.thumbnail}
 >>
@@ -447,21 +448,21 @@ High Performance Storage Class:
 > Via AWS CLI
 >> /// details | **Via AWS s3**
 >>
->> **Deleting objects and buckets**
+>> **Deleting objects and buckets:**
 >>
 >> ```bash
 >> # Delete an object
 >> aws s3 rm s3://<bucket_name>/<object_name>
 >> # Removing all objects from a bucket
 >> aws s3 rm s3://<bucket_name> --recursive
->> # Delete a storage area. To delete a bucket, it must be empty.
+>> # Delete a bucket. To delete a bucket, it must be empty.
 >> aws s3 rb s3://<bucket_name>
->> # If the compartment is not removed, you can use the same command with the --force option.
+>> # If the bucket is not deleted, you can use the same command with the --force option.
 >> # This command deletes all objects from the bucket, then deletes the bucket.
 >> aws s3 rb s3://<bucket_name> --force
 >> ```
 >>
->> **Deleting objects and buckets with versioning enabled**
+>> **Deleting objects and buckets with versioning enabled:**
 >>
 >> If versioning is enabled, a simple delete operation on your objects will not permanently remove them.
 >>
@@ -471,7 +472,7 @@ High Performance Storage Class:
 >> aws s3api delete-object --bucket <NAME> --key <KEY> --version-id <VERSION_ID>
 >> ```
 >>
->> To list all objects and all version ID, you can use the following command:
+>> To list all objects and all version IDs, you can use the following command:
 >>
 >> ```bash
 >> aws s3api list-object-versions --bucket <NAME>
@@ -520,7 +521,7 @@ High Performance Storage Class:
 
 > [!tabs]
 > Via AWS CLI
->> **Setting tags on a bucket**
+>> **Setting tags on a bucket:**
 >>
 >> ```bash
 >> aws s3api put-bucket-tagging --bucket <bucket_name> --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
@@ -538,13 +539,13 @@ High Performance Storage Class:
 >> }
 >> ```
 >>
->> **Deleting tags on a bucket**
+>> **Deleting tags on a bucket:**
 >>
 >> ```bash
 >> aws s3api s3api delete-bucket-tagging --bucket <bucket_name>
 >> ```
 >>
->> **Setting tags on an object**
+>> **Setting tags on an object:**
 >>
 >> ```bash
 >> aws s3api put-object-tagging --bucket <bucket_name> --key <object_name> --tagging 'TagSet=[{Key=myKey,Value=myKeyValue}]'
@@ -562,7 +563,7 @@ High Performance Storage Class:
 >> }
 >> ```
 >>
->> **Deleting tags on an object**
+>> **Deleting tags on an object:**
 >>
 >> ```bash
 >> aws s3api s3api delete-object-tagging --bucket <bucket_name> --key <object_name>
