@@ -67,8 +67,6 @@ W przypadku dyspozycji przelewu SEPA, na adres e-mail przypisany do Twojego kont
 
 Po zarejestrowaniu dyspozycji w naszych systemach (i jeśli Twoja dyspozycja zostanie zaakceptowana), możesz zacząć korzystać z nowego sposobu płatności.
 
-![FAQ billing](/pages/assets/screens/control_panel/product-selection/right-column/faq-billing01.gif){.thumbnail}
-
 #### Wskazówki i porady
 
 Aby Twoje usługi były sprawnie i we właściwy sposób odnawiane, musisz mieć zarejestrowany przynajmniej jeden sposób płatności w Panelu klienta. Jeżeli żadne z Twoich rozwiązań nie jest aktualnie aktywne, prosimy o skontaktowanie się z nami poprzez wysłanie zgłoszenia z prośbą o pomoc.

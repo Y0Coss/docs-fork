@@ -68,8 +68,6 @@ Wenn Sie eine SEPA-Lastschrift beantragen, erhalten Sie innerhalb von 24 bis 48 
 
 Das neue Zahlungsmittel steht Ihnen zur Verfügung, sobald das Lastschriftmandat von unseren Mitarbeitern empfangen und bestätigt ist.
 
-![FAQ billing](/pages/assets/screens/control_panel/product-selection/right-column/faq-billing01.gif){.thumbnail}
-
 #### Tipps und Tricks
 
 Damit Ihre Dienste reibungslos verlängert werden können, sollte im Kundencenter mindestens ein Zahlungsmittel hinterlegt sein. Sollten Sie keine aktive Lösung haben, kontaktieren Sie uns bitte über ein Support-Ticket.

@@ -65,8 +65,6 @@ In caso di richiesta di addebito SEPA, entro 24-48 ore riceverai all'indirizzo d
 
 Se il mandato è approvato, una volta ricevuto da parte dei nostri servizi è possibile utilizzare questo nuovo metodo di pagamento.
 
-![FAQ billing](/pages/assets/screens/control_panel/product-selection/right-column/faq-billing01.gif){.thumbnail}
-
 #### Consigli e suggerimenti
 
 Per il corretto rinnovo dei servizi è necessario registrare almeno un metodo di pagamento nello Spazio Cliente. Se non disponi più di soluzioni attive, contattaci tramite un ticket di assistenza.

@@ -68,8 +68,6 @@ En caso de solicitar un adeudo SEPA, recibirá un mensaje de correo electrónico
 
 Una vez que nuestro equipo haya validado su mandato, ya podrá utilizar esta nueva forma de pago.
 
-![FAQ billing](/pages/assets/screens/control_panel/product-selection/right-column/faq-billing01.gif){.thumbnail}
-
 #### Ideas y consejos
 
 Es obligatorio tener al menos una forma de pago configurada en el área de cliente para que los servicios puedan renovarse correctamente. Si ya no dispone de ninguna solución activa, contacte con nosotros mediante un tíquet de soporte.

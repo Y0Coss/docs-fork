@@ -67,8 +67,6 @@ Em caso de pedido de débito direto SEPA, receberá no prazo de 24 a 48 horas, n
 
 Depois de receber a autorização por parte dos nossos serviços, poderá utilizar este novo método de pagamento.
 
-![FAQ billing](/pages/assets/screens/control_panel/product-selection/right-column/faq-billing01.gif){.thumbnail}
-
 #### Truques e dicas
 
 Deve ter configurado, pelo menos, um método de pagamento na Área de Cliente, para que todos os serviços possam ser renovados corretamente. Se já não dispõe de serviços ativos, convidamo-lo a contactar-nos criando um ticket.

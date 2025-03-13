@@ -76,8 +76,6 @@ En cas de demande de prélèvement SEPA, vous recevrez dans les 24 à 48h sur l�
 
 Une fois réceptionné par nos services, si votre mandat est approuvé, vous pourrez alors utiliser ce nouveau moyen de paiement.
 
-![FAQ billing](/pages/assets/screens/control_panel/product-selection/right-column/faq-billing01.gif){.thumbnail}
-
 #### Trucs et astuces
 
 Au moins un moyen de paiement doit être enregistré dans votre espace client, afin que vos services soient correctement renouvelés. Si vous n'avez plus aucune solution active, nous vous invitons à nous contacter en [créant un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
