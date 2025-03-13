@@ -2,6 +2,7 @@
 title: 'Modificare la password amministratore su un server dedicato Windows'
 excerpt: 'Come impostare una nuova password amministratore su un server Windows'
 updated: 2024-06-26
+flag: hidden
 ---
 
 ## Obiettivo

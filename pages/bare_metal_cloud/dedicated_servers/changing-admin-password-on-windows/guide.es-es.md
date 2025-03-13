@@ -2,6 +2,7 @@
 title: 'Cambiar la contraseña de administrador en un servidor dedicado Windows'
 excerpt: 'Cómo cambiar la contraseña de administrador en un servidor dedicado Windows'
 updated: 2024-06-26
+flag: hidden
 ---
 
 ## Objetivo
