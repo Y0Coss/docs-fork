@@ -44,7 +44,7 @@ Yes, we have [a guide that explains how to configure Continue to work with AI En
 
 A 401 error code typically indicates that the authorization token specified in the call is either expired or invalid. To resolve this issue, you will need to generate a new authorization token and include it in your request headers. Fore more information on the token creation process, follow the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 
-### I amm trying to use the AI Endpoints models, but I keep getting a 404 error code. What is going on?
+### I am trying to use the AI Endpoints models, but I keep getting a 404 error code. What is going on?
 
 A **404** error typically indicates that the model you're trying to access cannot be found. In the case of AI Endpoints, this could mean that the **query path** or the **model name** specified in the request is incorrect.
 
@@ -55,7 +55,7 @@ A 429 error code typically indicates that you have exceeded the rate limit for t
 - 4 requests per second per PCI project/model
 - 250 requests per minute per PCI Project/model
 
-If you exceed these rate limits, you will receive a 429 error code.
+If you exceed these rate limits, you will receive a 429 error code. In this case, you may consider optimizing your application's usage of the AI Endpoints or spreading out your requests over a longer period. Alternatively, please reach out to us to discuss increasing your limits if you require higher usage.
 
 ### I am experiencing slow response times when using some of the AI Endpoints models. What is causing this delay?
 
