@@ -2,6 +2,7 @@
 title: 'Zmiana hasła administratora na serwerze dedykowanym z systemem Windows'
 excerpt: 'Dowiedz się, jak zmienić hasło administratora na serwerze dedykowanym z systemem Windows'
 updated: 2024-06-26
+flag: hidden
 ---
 
 ## Wprowadzenie

@@ -2,6 +2,7 @@
 title: 'Alterar a palavra-passe administrador num servidor dedicado Windows'
 excerpt: 'Saiba como alterar a palavra-passe de um administrador num servidor dedicado Windows'
 updated: 2024-06-26
+flag: hidden
 ---
 
 ## Objetivo

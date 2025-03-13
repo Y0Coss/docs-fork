@@ -8,11 +8,11 @@ updated: 2025-03-05
 
 Im Rahmen des schrittweisen Übergangs der MX Plan Accounts zu Zimbra ist es möglich, diese Migration bereits im Voraus zu planen und die Übertragung der E-Mail Accounts selbst durchzuführen, bevor OVHcloud den Vorgang automatisiert. In dieser Anleitung erfahren Sie, wie Sie diese Migration manuell durchführen.
 
-**Diese Anleitung erklärt, wie Sie eine MX Plan E-Mail-Adresse auf einen Zimbra OVHcloud-Account.**
+**Diese Anleitung erklärt, wie Sie einen MX Plan E-Mail-Account auf einen OVHcloud Zimbra E-Mail-Account migrieren.**
 
 ## Voraussetzungen
 
-- Sie haben eine MX Plan E-Mail-Account (im MX Plan Angebot oder einem [OVHcloud Webhosting](/links/web/hosting) enthalten).
+- Sie haben einen MX Plan E-Mail-Account (im MX Plan Angebot oder einem [OVHcloud Webhosting](/links/web/hosting) enthalten).
 - Sie haben einen OVHcloud Zimbra E-Mail-Account.
 - **Sie haben keine Weiterleitung für die MX Plan E-Mail-Adresse eingerichtet, die Sie migrieren möchten**.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
@@ -35,7 +35,7 @@ Die Migration eines MX Plan E-Mail-Accounts auf einen Zimbra E-Mail-Account erfo
 
 Im folgenden Beispiel migrieren wir die Adresse `kontakt@mydomain.ovh`. Dazu erstellen wir den Zimbra Account unter dem Namen `contact2@mydomain.ovh`.
 
-![zimbra](images/zimbra_migration_mxplan.png){.thumbnail}
+![Zimbra](images/zimbra_migration_mxplan.png){.thumbnail}
 
 ### 1.1 - Erstellung eines Zimbra E-Mail-Accounts <a name="step11"></a>
 
