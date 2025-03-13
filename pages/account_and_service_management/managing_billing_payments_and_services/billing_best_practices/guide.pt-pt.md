@@ -71,8 +71,6 @@ Se decidir não ativar a renovação automática, receberá notificações por e
 Sabia que podia [Gerir as encomendas da OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) no seu [Área de Cliente OVHcloud](/links/manager)?<br>
 Basta clicar no logótipo da OVHcloud no canto superior esquerdo do seu ecrã e clicar em `Ver as minhas encomendas`{.action}.
 
-![viewmyorders](images/viewmyorders.png){.thumbnail}
-
 Será informado das etapas da entrega e saberá se são necessárias ações.
 
 ### Rescisão de serviços

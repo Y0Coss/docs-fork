@@ -71,8 +71,6 @@ Wenn Sie sich entscheiden, die automatische Verlängerung nicht zu aktivieren, e
 Wussten Sie, dass Sie [Ihre Bestellungen](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) in Ihrem [OVHcloud Kundencenter](/links/manager) nachverfolgen können?<br>
 Klicken Sie einfach auf das OVHcloud Logo oben links auf Ihrem Bildschirm und dann auf `Meine Bestellungen anzeigen`{.action}.
 
-![viewmyorders](images/viewmyorders.png){.thumbnail}
-
 Sie werden über die Schritte der Ausführung informiert und erfahren, ob auf Ihrer Seite Aktionen notwendig sind.
 
 ### Kündigung von Dienstleistungen

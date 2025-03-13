@@ -71,8 +71,6 @@ Si decide no activar la renovación automática, recibirá notificaciones por co
 ¿Sabía que podía [seguir sus pedidos](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) en su [área de cliente de OVHcloud](/links/manager)?<br>
 Solo tiene que hacer clic en el logotipo de OVHcloud en la esquina superior izquierda de su pantalla y luego en `Ver mis pedidos`{.action}.
 
-![viewmyorders](images/viewmyorders.png){.thumbnail}
-
 Le informaremos de las etapas de la entrega y sabrá si es necesario realizar alguna acción.
 
 ### Baja de servicios

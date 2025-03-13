@@ -71,8 +71,6 @@ Jeśli zdecydujesz się nie aktywować automatycznego odnowienia, otrzymasz e-ma
 Czy wiesz, że możesz [śledzić zamówienia](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) w [Panelu klienta OVHcloud](/links/manager)?<br>
 Kliknij logo OVHcloud w lewym górnym rogu ekranu, a następnie kliknij `Wyswietl moje zamówienia`{.action}.
 
-![starsi](images/viewmyorders.png){.thumbnail}
-
 Będziesz informowany o etapach dostawy i będziesz wiedzieć, czy konieczne są działania po Twojej stronie.
 
 ### Rezygnacja z usług

@@ -74,8 +74,6 @@ Si vous décidez de ne pas activer le renouvellement automatique, vous recevrez 
 Saviez-vous que vous pouviez [suivre vos commandes](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) dans votre [espace client OVHcloud](/links/manager) ?<br>
 Il vous suffit de cliquer sur le logo d'OVHcloud en haut à gauche de votre écran puis de cliquer sur `Voir mes commandes`{.action}.
 
-![viewmyorders](images/viewmyorders.png){.thumbnail}
-
 Vous serez informé des étapes de la livraison et vous saurez si des actions sont nécessaires de votre côté.
 
 ### Résiliation de services

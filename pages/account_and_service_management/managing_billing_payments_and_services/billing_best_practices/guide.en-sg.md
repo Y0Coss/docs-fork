@@ -71,8 +71,6 @@ If you decide not to activate the autorenewal on your services, you will receive
 Did you know that you can [track your orders](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) in your [OVHcloud Control Panel](/links/manager)? <br>
 Just click on the OVHcloud logo in the top left-hand corner of your screen, then click `View my orders`{.action}.
 
-![viewmyorders](images/viewmyorders.png){.thumbnail}
-
 You will find out the steps of delivery and you will know if actions are required from your side.
 
 ### Service termination

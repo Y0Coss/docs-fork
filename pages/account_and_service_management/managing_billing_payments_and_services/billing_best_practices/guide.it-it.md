@@ -71,8 +71,6 @@ Se decidi di non attivare il rinnovo automatico, riceverai una notifica via emai
 Sapevate di poter [seguire i vostri ordini](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) nel vostro [Spazio Cliente OVHcloud](/links/manager) ?<br>
 Ti basta cliccare sul logo di OVHcloud in alto a sinistra e poi su `Visualizza i tuoi ordini`{.action}.
 
-![viewmyorders](images/viewmyorders.png){.thumbnail}
-
 Riceverai gli step della consegna e saprai se hai bisogno di aiuto per effettuare l'operazione.
 
 ### Disattivare il serviziozione dei servizi
