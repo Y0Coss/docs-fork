@@ -22,7 +22,9 @@ Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager)ein:
 - **Exchange**: Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}.. 
 - **Email Pro**: Klicken Sie auf `Email Pro`{.action}.
 
-Klicken Sie dann auf den Namen des E-Mail Dienstes, in dem sich der Account befindet, für den Sie Rechte vergeben möchten. Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
+Klicken Sie dann auf den Namen des E-Mail Dienstes, in dem sich der Account befindet, für den Sie Rechte vergeben möchten. 
+
+Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
 
 ![Exchange Signaturen](images/exchange-footer-step1.png){.thumbnail}
 
@@ -35,7 +37,7 @@ Der Editor bietet eine Auswahl an Variablen, die mit den Daten des Benutzers in 
 ![Exchange Signaturen](images/exchange-footer-step3aag.gif){.thumbnail}
 
 Der Footer wird mithilfe von HTML-Tags erstellt, was einige Formatierungsoptionen bietet. Verwenden Sie die obere Toolbar, um die Signatur anzupassen. Sie können auch den HTML-Code überprüfen, indem Sie auf `Source`{.action} klicken.
- 
+
 ![Exchange Signaturen](images/exchange-footer-step4.png){.thumbnail}
 
 Setzen Sie einen Haken bei „Die Signatur ausschließlich für den externen Versand aktivieren“, um zu verhindern, dass der Footer zu E-Mails zwischen Benutzern derselben Domain hinzugefügt wird. Wenn die Signatur fertig erstellt ist, klicken Sie auf `Bestätigen`{.action}. Sie wird nun zu E-Mails hinzugefügt, die von Benutzer-Accounts dieser Domain versendet werden. Sie können Signaturen nach deren Erstellung über das OVHcloud Kundencenter bearbeiten oder löschen.
