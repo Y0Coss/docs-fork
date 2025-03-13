@@ -140,7 +140,7 @@ A sua queixa será tratada o mais rapidamente possível pelo Serviço Jurídico 
 
 ### A OVHcloud enviou-me um e-mail a comunicar um eventual comportamento abusivo da minha parte. O que devo fazer?
 
-Se nos foi comunicado (ou se as nossas equipas verificaram) um comportamento abusivo, receberá um e-mail proveniente de um endereço de e-mail no formato «ticket+"número-de-ticket"@abuse.ovh.net».
+Se nos foi comunicado (ou se as nossas equipas verificaram) um comportamento abusivo, receberá um e-mail proveniente de um endereço de e-mail no formato "ticket+"número-de-ticket"@abuse.ovh.net".
 
 Tendo em conta os elementos complementares que lhe serão indicados nesse e-mail, solicitamos-lhe que proceda a uma investigação a fim de remediar o comportamento abusivo e/ou de eliminar qualquer conteúdo ilícito.
 
