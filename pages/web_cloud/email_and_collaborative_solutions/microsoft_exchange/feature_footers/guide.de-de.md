@@ -17,12 +17,22 @@ updated: 2020-03-26
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager)ein:
-
-- **Exchange**: Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}.. 
-- **Email Pro**: Klicken Sie auf `Email Pro`{.action}.
-
-Klicken Sie dann auf den Namen des E-Mail Dienstes, in dem sich der Account befindet, für den Sie Rechte vergeben möchten. 
+> [!tabs]
+> **Exchange**
+>>
+>> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
+>> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
+>> 1. Klicken Sie auf `Microsoft`{.action}.
+>> 1. Klicken Sie auf `Exchange`{.action}.
+>> 1. Wählen Sie den gewünschten Dienst aus.
+>>
+> **Email Pro**
+>>
+>> 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
+>> 1. Öffnen Sie den Bereich `Web Cloud`{.action}.
+>> 1. Klicken Sie auf `E-Mails Pro`{.action}.
+>> 1. Wählen Sie den gewünschten Dienst aus.
+>>
 
 Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
 

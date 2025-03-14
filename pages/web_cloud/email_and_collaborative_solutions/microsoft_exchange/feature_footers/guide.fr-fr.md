@@ -17,12 +17,22 @@ Dans votre espace client OVHcloud, vous pouvez créer des signatures universelle
 
 ## En pratique
 
-Pour effectuer cette manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager):
-
-- **Exchange**: Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. 
-- **Email Pro**: Cliquez sur `Email Pro`{.action}.
-
-Cliquez ensuite sur le nom du service e-mail dans lequel se trouve le compte concerné par la création de la délégation.
+> [!tabs]
+> **Exchange**
+>>
+>> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+>> 1. Cliquez sur l'onglet `Web Cloud`{.action} .
+>> 1. Cliquez sur la rubrique `Microsoft`{.action}.
+>> 1. Cliquez sur `Exchange`{.action}.
+>> 1. Sélectionnez la plateforme concernée.
+>>
+> **Email Pro**
+>>
+>> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+>> 1. Cliquez sur l'onglet `Web Cloud`{.action}.
+>> 1. Cliquez sur `E-mails Pro`{.action}.
+>> 1. Sélectionnez la plateforme concernée.
+>>
 
 Cliquez sur l’onglet `Plus+`{.action} dans le menu horizontal et sélectionnez `Pieds de page`{.action}.
 
