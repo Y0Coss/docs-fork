@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Troubleshooting
 excerpt: Find out how to resolve issues when using AI Endpoints
-updated: 2025-03-13
+updated: 2025-03-14
 ---
 
 > [!primary]
