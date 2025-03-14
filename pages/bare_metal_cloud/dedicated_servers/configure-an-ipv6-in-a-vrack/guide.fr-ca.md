@@ -55,7 +55,7 @@ Lors de la demande d'un nouveau bloc Additional IPv6, il est important de noter 
 
 /// details | Demander un nouveau bloc Additional IPv6
 
-Vous pouvez commander votre nouveau bloc IPv6 supplémentaire [ici](https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip).
+Vous pouvez commander votre nouveau bloc IPv6 supplémentaire [ici](https://ca.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip).
 
 ![page de configuration](images/500.png){.thumbnail}
 
