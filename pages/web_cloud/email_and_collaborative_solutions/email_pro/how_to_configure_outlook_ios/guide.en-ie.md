@@ -79,8 +79,8 @@ Follow the installation steps by clicking on the tabs below:
 >> - **Email address**
 >> - **Full name**: Enter your full email address.
 >> - **Description**
->> - **IMAP Incoming Mail Server**:<br>- **IMAP Hostname**: Type `pro**?**.mail.ovh.net` (replace "**?**" with your server number)<br>- **IMAP Port**: 993<br>- **IMAP Username**: Your full email address<br>- **IMAP Password**: Your email account password<br>- **Port Security**: SSL
->> - **SMTP Incoming Mail Server**:<br>- **SMTP Hostname**: Type `pro**?**.mail.ovh.net` (replace "**?**" with your server number)<br>- **SMTP Port**: 587<br>- **SMTP Username**: Your full email address<br>- **SMTP password**: Your email account password<br>- **Port security**: STARTTLS
+>> - **IMAP Incoming Mail Server**:<br>- **IMAP Hostname**: Type pro**?**.mail.ovh.net (replace "?" with your server number)<br>- **IMAP Port**: 993<br>- **IMAP Username**: Your full email address<br>- **IMAP Password**: Your email account password<br>- **Port Security**: SSL
+>> - **SMTP Incoming Mail Server**:<br>- **SMTP Hostname**: Type pro**?**.mail.ovh.net (replace "?" with your server number)<br>- **SMTP Port**: 587<br>- **SMTP Username**: Your full email address<br>- **SMTP password**: Your email account password<br>- **Port security**: STARTTLS
 >>
 >> To finalize the configuration, press `Login`{.action}.
 >>

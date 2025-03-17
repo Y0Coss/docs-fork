@@ -116,7 +116,7 @@ Para la recepción de mensajes de correo, al elegir el tipo de cuenta, le recome
 |---|---|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
 |Contraseña|Introduzca la contraseña de la dirección de correo|
-|Servidor|pro*?**.mail.ovh.net (sustituya "**?**" por el número de su servidor)|
+|Servidor|pro*?**.mail.ovh.net (sustituya "?" por el número de su servidor)|
 |Puerto|995|
 |Tipo de seguridad|SSL/TLS|
 
@@ -126,7 +126,7 @@ Para la recepción de mensajes de correo, al elegir el tipo de cuenta, le recome
 |---|---|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
 |Contraseña|Introduzca la contraseña de la dirección de correo|
-|Servidor|pro*?**.mail.ovh.net (sustituya "**?**" por el número de su servidor)|
+|Servidor|pro*?**.mail.ovh.net (sustituya "?" por el número de su servidor)|
 |Puerto|993|
 |Tipo de seguridad|SSL/TLS|
 
@@ -138,7 +138,7 @@ Para el envío de mensajes de correo electrónico, si debe introducir manualment
 |---|---|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
 |Contraseña|Introduzca la contraseña de la dirección de correo|
-|Servidor|pro*?**.mail.ovh.net (sustituya "**?**" por el número de su servidor)|
+|Servidor|pro*?**.mail.ovh.net (sustituya "?" por el número de su servidor)|
 |Puerto|587|
 |Tipo de seguridad|STARTTLS|
 
