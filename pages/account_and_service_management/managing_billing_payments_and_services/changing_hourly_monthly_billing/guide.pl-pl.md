@@ -23,7 +23,7 @@ Podczas tworzenia instancji Public Cloud można wybrać typ rozliczenia za godzi
 
 ## Wymagania początkowe
 
-- utworzona [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}
+- utworzona [instancja Public Cloud](/links/public-cloud/public-cloud)
 - zalogowanie do [Panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce
