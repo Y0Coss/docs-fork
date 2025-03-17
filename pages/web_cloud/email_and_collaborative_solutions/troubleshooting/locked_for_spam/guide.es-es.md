@@ -58,7 +58,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >> 1. Haga clic en `Exchange`{.action}.
 >> 1. Seleccione la plataforma correspondiente.
 >>
->> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» de la dirección de correo electrónico correspondiente indica «bloqueado», haga clic en `...`{.action} a la derecha de la cuenta y, seguidamente, en `Desbloquear`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
+>> Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma. Si la columna «Estado» de la dirección de correo electrónico correspondiente indica «bloqueado», haga clic en `...`{.action} a la derecha de la cuenta y, seguidamente, en `Desbloquear`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
 >> Continúe con el [paso 3](#step3) de la guía.
 >>
 >> ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
@@ -70,7 +70,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >> 1. Haga clic en `Emails Pro`{.action}.
 >> 1. Seleccione la plataforma correspondiente.
 >>
->> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» a la derecha de la dirección de correo electrónico correspondiente indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tique`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
+>> Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma. Si la columna «Estado» a la derecha de la dirección de correo electrónico correspondiente indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tique`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
 >> Pasar al [paso 3](#step3) de la guía.
 >>
 >> ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
@@ -82,7 +82,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >> 1. Haga clic en `Emails Pro`{.action}.
 >> 1. Seleccione la plataforma correspondiente.
 >>
->> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» —a la derecha de la dirección de correo electrónico correspondiente— indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tiquet`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
+>> Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma. Si la columna «Estado» —a la derecha de la dirección de correo electrónico correspondiente— indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tiquet`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
 >> Continúe con el [paso 3](#step3) de la guía.
 >>
 >> ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
