@@ -13,7 +13,7 @@ Questo significa che il credito Cloud viene addebitato per primo e che il debito
 
 ## Prerequisiti
 
-- Un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
+- Un progetto [Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
