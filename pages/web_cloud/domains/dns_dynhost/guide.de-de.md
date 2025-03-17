@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration von dynamischen DNS-Aktualisierungen (DynHost/DynDNS) für Ihren Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihren Domainnamen einrichten"
-updated: 2025-03-07
+updated: 2025-03-17
 ---
 
 ## Ziel
@@ -85,7 +85,7 @@ Klicken Sie jeweils auf die Tabs, um die **6** Schritte anzuzeigen.
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Menü `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
+>> Klicken Sie auf das Menü `DNS-zone`{.action} und wählen Sie den Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -142,7 +142,7 @@ Wenn Sie bereit sind, den DynHost-Eintrag zu erstellen, klicken Sie jeweils auf 
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Menü `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
+>> Klicken Sie auf das Menü `DNS-zone`{.action} und wählen Sie den Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -221,7 +221,7 @@ Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Klicken Sie jeweils
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Menü `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
+>> Klicken Sie auf das Menü `DNS-zone`{.action} und wählen Sie den Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
