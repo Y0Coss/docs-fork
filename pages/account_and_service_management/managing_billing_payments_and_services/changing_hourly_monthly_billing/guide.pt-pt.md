@@ -23,7 +23,7 @@ Ao criar uma instância Public Cloud, é possível escolher entre uma faturaçã
 
 ## Requisitos
 
-- Ter criado uma [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}.
+- Ter criado uma [instância Public Cloud](/links/public-cloud/public-cloud).
 - Aceder à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
