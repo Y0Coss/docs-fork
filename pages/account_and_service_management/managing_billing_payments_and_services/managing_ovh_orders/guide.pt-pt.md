@@ -12,12 +12,12 @@ Quando efetuar uma encomenda, pode segui-la e interagir com ela a partir da [Ár
 
 > [!primary]
 >
-> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Em caso de dúvida, consulte os seus contratos OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager) (clique no canto superior direito do ecrã sobre o seu nome e, no menu contextual, em `As minhas ofertas e serviços`{.action}. Por fim, clique no separador `Contratos`{.action}).
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis a sua situação. Em caso de dúvida, consulte os seus contratos OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager) (clique no canto superior direito do ecrã sobre o seu nome e, no menu contextual, em `As minhas ofertas e serviços`{.action}. Por fim, clique no separador `Contratos`{.action}).
 >
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter acesso a [Área de Cliente OVHcloud](/links/manager).
 - Ter realizado, pelo menos, uma encomenda na OVHcloud.
 
 ## Instruções
@@ -39,7 +39,7 @@ Pode consultar a sua nota de encomenda a qualquer momento a partir da [Área de 
 
 ### Aceder às notas de encomenda na Área de Cliente OVHcloud
 
-Para aceder ao painel de gestão das encomendas, aceda à sua [Área de Cliente OVHcloud](/links/manager). Na página que se abrir, clique em `Ver as minhas encomendas`{.action}.
+Para aceder ao painel de gestão das encomendas, aceda a sua [Área de Cliente OVHcloud](/links/manager). Na página que se abrir, clique em `Ver as minhas encomendas`{.action}.
 
 ![Área de Cliente](images/huborders.png){.thumbnail}
 

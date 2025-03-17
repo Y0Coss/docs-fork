@@ -10,7 +10,7 @@ A Área de Cliente OVHcloud permite-lhe guardar e gerir vários métodos de paga
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter acesso a [Área de Cliente OVHcloud](/links/manager).
 - Dispor de um método de pagamento válido.
 
 ## Instruções <a name="payment_methods"></a>
@@ -60,7 +60,7 @@ Nenhum montante será debitado e o seu cartão de crédito será ativado ao fim 
 
 ![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
 
-Clique no botão `PayPal`{.action}. Será então aberta uma janela de contexto para se ligar à sua conta PayPal® e registar esta como método de pagamento autorizado junto da OVHcloud.
+Clique no botão `PayPal`{.action}. Será então aberta uma janela de contexto para se ligar a sua conta PayPal® e registar esta como método de pagamento autorizado junto da OVHcloud.
 
 A sua conta PayPal® será ativada dentro de alguns minutos.
 
@@ -120,7 +120,7 @@ A *conta pré-paga* está presente na sua [Área de Cliente OVHcloud](/links/man
 
 Ao creditar regularmente a sua conta, certificar-se-á de que a [renovação automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#a-renovacao-automatica) dos seus serviços nunca será interrompida por falta de pagamento.
 
-Para isso, aceda à secção `Métodos de pagamento` na Área de Cliente:
+Para isso, aceda a secção `Métodos de pagamento` na Área de Cliente:
 
 - clique no canto superior direito e, em seguida, em `Os meus métodos de pagamento`{.action}, no menu da direita;
 - selecione o separador `Conta pré-paga`{.action}.
@@ -153,7 +153,7 @@ Na nova janela, indique o montante a creditar, clique em `Seguinte`{.action} e d
 
 ![order-prepaid-account](images/order-prepaid-account.png){.thumbnail}
 
-Na nota de encomenda que aparece, selecione o método de pagamento à sua escolha e efetue o pagamento da sua encomenda.
+Na nota de encomenda que aparece, selecione o método de pagamento a sua escolha e efetue o pagamento da sua encomenda.
 
 ## Quer saber mais?
 

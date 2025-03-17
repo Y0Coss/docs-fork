@@ -39,7 +39,7 @@ Możesz w każdym momencie odnaleźć Twoje zamówienie w [Panelu klienta OVHclo
 
 ### Dostęp do zamówień w Panelu klienta OVHcloud
 
-Aby uzyskać dostęp do panelu zarządzania zamówieniami, zaloguj się do [panelu klienta OVHcloud](/links/manager). Na stronie, która się wyświetli kliknij `Wyświetl moje zamówienia`{.action}.
+Aby uzyskać dostęp do panelu zarządzania zamówieniami, zaloguj się do [Panelu klienta OVHcloud](/links/manager). Na stronie, która się wyświetli kliknij `Wyświetl moje zamówienia`{.action}.
 
 ![Panel klienta](images/huborders.png){.thumbnail}
 
@@ -98,7 +98,7 @@ Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu
 > Nie dotyczy on również niektórych usług (w szczególności [domen](https://www.ovhcloud.com/pl/domains/) i [certyfikatów SSL Sectigo](https://www.ovhcloud.com/pl/web-hosting/options/ssl/)). W momencie składania zamówienia na te produkty zostaniesz poproszony o wyraźne zrzeczenie się prawa do odstąpienia od umowy zgodnie z artykułem L.221-28 Kodeksu konsumenckiego.
 >
 
-Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio w [Panelu klienta](/links/manager):
+Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio w [Panelu klienta OVHcloud](/links/manager):
 
 * Zaloguj się do [Panelu klienta OVHcloud](/links/manager). Na stronie, która się wyświetli kliknij `Wyświetl moje zamówienia`{.action}, następnie przycisk `...`{.action} przed Twoim zamówieniem.
 * Wybierz opcję `Anuluj zamówienie`{.action}.

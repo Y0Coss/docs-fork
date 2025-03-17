@@ -14,15 +14,15 @@ Isto significa que este crédito cloud é debitado em primeiro lugar e que qualq
 ## Requisitos
 
 - Um projeto [Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+- Ter acesso a [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. Abra `Credit and Vouchers`{.action} no menu à esquerda.
+Aceda à [Área de Cliente OVHcloud](/links/manager), aceda a secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. Abra `Credit and Vouchers`{.action} no menu à esquerda.
 
 > [!warning]
 >
-Note que os créditos acrescentados a esta secção não podem ser transferidos nem reembolsados. Não têm qualquer valor monetário e qualquer crédito não utilizado nos 13 meses seguintes à sua compra é perdido.
+Note que os créditos acrescentados a esta secção não podem ser transferidos nem reembolsados. Não têm qualquer valor monetário e qualquer crédito não utilizado nos 13 meses seguintes a sua compra é perdido.
 >
 
 ### Adicionar crédito

@@ -13,7 +13,7 @@ Este guia contém os elementos indispensáveis a uma boa gestão da sua conta e 
 ## Requisitos
 
 - Dispor de um ou vários serviços ativos da OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter acesso a [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -23,7 +23,7 @@ Este guia contém os elementos indispensáveis a uma boa gestão da sua conta e 
 
 - [Crie uma palavra-passe forte](/pages/account_and_service_management/account_information/manage-ovh-password#gerar-uma-boa-palavra-passe) que assegurará a confidencialidade da sua conta.
 
-- [Ative a dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) para evitar qualquer acesso fraudulento à sua Área de Cliente.
+- [Ative a dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) para evitar qualquer acesso fraudulento a sua Área de Cliente.
 
 Para que as medidas de segurança sejam eficazes, certifique-se de que os seus endereços de e-mail (principal e de SOS) e o seu número de telemóvel estão **atualizados e acessíveis**.
 
@@ -42,7 +42,7 @@ Certifique-se de que o seu endereço de e-mail está sempre **atualizado, seguro
 
 > [!warning]
 >
-> Adicione um **e-mail de SOS** às suas informações pessoais para o proteger de qualquer perda de acesso à sua conta de cliente OVHcloud.
+> Adicione um **e-mail de SOS** às suas informações pessoais para o proteger de qualquer perda de acesso a sua conta de cliente OVHcloud.
 >
 
 Os e-mails enviados pela OVHcloud também estão acessíveis a partir da [Área de Cliente OVHcloud](/links/manager).<br>

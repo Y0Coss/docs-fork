@@ -122,7 +122,7 @@ Tworząc regularnie konto, będziesz mógł sprawdzić, czy [automatyczne odnawi
 
 W tym celu przejdź do sekcji `Sposoby płatności` w Panelu klienta:
 
-- kliknij Twoje imię w prawym górnym rogu, a następnie `Moje sposoby płatności`{.action} w menu po prawej stronie;
+- kliknij Twoje imię w prawym górnym rogu, a następnie `Moje sposoby płatności`{.action} w menu po prawej stronie.
 - wybierz kartę `Moje konto prezdplacone`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}

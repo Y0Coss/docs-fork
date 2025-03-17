@@ -36,7 +36,7 @@ Avant de procéder à la résiliation d'un service, vous devez donc être **cert
 ## Prérequis
 
 - Etre le « contact administrateur » du service à résilier (pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition))
-- Avoir accès à votre [espace client OVHcloud](/links/manager) ;
+- Avoir accès à votre [espace client OVHcloud](/links/manager)
 - Posséder des services OVHcloud actifs (non suspendus pour un défaut de paiement)
 
 ## En pratique

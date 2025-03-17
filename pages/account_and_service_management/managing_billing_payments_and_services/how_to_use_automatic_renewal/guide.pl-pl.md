@@ -26,10 +26,10 @@ Z tego przewodnika dowiesz się:
 
 ## Wymagania początkowe
 
-- Dostęp do Panelu [klienta OVHcloud](/links/manager);
-- Posiadanie aktywnych usług OVHcloud;
-- Posiadanie [kontaktu księgowego](/pages/account_and_service_management/account_information/managing_contacts#definicja) za usługi OVHcloud.
-- Posiadanie ważnego sposobu płatności na koncie OVHcloud. Zapoznaj się z przewodnikiem "[Zarządzanie sposobami płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)".
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+- Posiadanie aktywnych usług OVHcloud
+- Posiadanie [kontaktu księgowego](/pages/account_and_service_management/account_information/managing_contacts#definicja) za usługi OVHcloud
+- Posiadanie ważnego sposobu płatności na koncie OVHcloud. Zapoznaj się z przewodnikiem "[Zarządzanie sposobami płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)"
 
 <a name="auto-vs-manual"></a>
 
