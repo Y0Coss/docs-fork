@@ -14,7 +14,7 @@ Esto significa que este crédito cloud se cargará en primer lugar y que, a cont
 ## Requisitos
 
 - Un proyecto de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
-- Accesar a su [Panel de configuración de OVHcloud](/links/manager)
+- Accesar a su [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
