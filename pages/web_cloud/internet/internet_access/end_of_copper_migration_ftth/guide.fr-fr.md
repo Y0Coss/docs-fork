@@ -85,7 +85,7 @@ Les nouveaux services liés à votre nouvelle offre Fibre Pro seront accessibles
 
 L'absence de la colonne `Fibre Pro` dans le tableau `Changement d'offre` **ne signifie pas obligatoirement** que vous n'êtes pas éligible à la migration vers la fibre OVHcloud.
 
-Commencez par [vérifier votre éligibilité à la fibre](https://order.isp.ovh.net/){.external}, en recherchant :
+Commencez par [vérifier votre éligibilité à la fibre](https://order.isp.ovh.net/){.external}, en effectuant une recherche :
 
 - Par adresse postale.
 - Par référence du PTO (Point de Terminaison Optique).
@@ -94,23 +94,41 @@ Commencez par [vérifier votre éligibilité à la fibre](https://order.isp.ovh.
 > [!warning]
 > La recherche par numéro de téléphone est inutile dans ce cas de figure.
 
-**Pour des raisons techniques, il se peut que le résultat de votre éligibilité ne soit pas fiable.**<br>
-Afin de confirmer avec certitude votre éligibilité à la fibre, vérifiez directement celle-ci sur le [site officiel de l'ARCEP](https://cartefibre.arcep.fr/){.external}.
+**Pour des raisons techniques, il se peut que le résultat de votre éligibilité ne soit pas fiable.**
 
-Une fois sur le site de l'ARCEP :
+Afin de confirmer avec certitude votre éligibilité à la fibre ainsi que l'exactitude des informations techniques de votre adresse, cliquez successivement sur les 3 onglets ci-dessous : 
 
-1. Recherchez votre adresse dans la barre de recherche.
-2. Accédez à l'onglet **Déploiement fibre**.
-3. Identifiez votre bâtiment. Si la pastille est de couleur verte, vous êtes éligible à la fibre (voir légende en bas à droite de la carte).
-4. Cliquez sur votre bâtiment. Parmi les informations qui s'affichent, notez l'**Identifiant immeuble IPE** associé à votre adresse (ex : `HT-BAT-012AB`).
-5. Déménagez votre accès vers l'adresse indiquée sur le site de l'ARCEP, en suivant notre guide [Comment déménager mon accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_demenager_mon_acces_xdsl) et choisissez l'offre Fibre Pro. Une fois votre adresse postale renseignée, l'**Identifiant immeuble IPE** correspondant est alors affiché. Vérifiez qu'il est identique à l'identifiant préalablement noté sur le site de l'ARCEP.
-6. En cas de doute ou si l'identifiant ne correspond pas, contactez le support OVHcloud via un [ticket](https://help.ovhcloud.com/csm?id=csm_get_help) en précisant :
-    - La référence de votre accès xDSL.
-    - L'**Identifiant immeuble IPE** de votre adresse.
+> [!tabs]
+> Étape 1
+>> Accédez au [site officiel de l'ARCEP](https://cartefibre.arcep.fr/){.external} et cliquez sur l'onglet `Déploiements fibre`{.action} en haut à droite afin d'afficher la carte des déploiements de la fibre en France.
+>>
+>> ![ARCEP - Déploiements fibre](images/arcep01.png){.thumbnail}
+>>
+> Étape 2
+>>
+>> Identifiez votre bâtiment en recherchant votre adresse. Utilisez soit la carte (zommez dans celle-ci), soit le champ de recherche en haut à gauche.<br>
+>> Cliquez ensuite sur le point vert correspondant à votre bâtiment afin d'afficher ses informations.
+>> Parmi les informations qui s'affichent, notez l'**Identifiant immeuble IPE** associé à votre adresse (exemple : `HT-BAT-012AB`)
+>>
+>> ![ARCEP - Déploiements fibre](images/arcep02.png){.thumbnail}
+>>
+> Étape 3
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager) et accédez à l'onglet `Télécom`{.action}.
+>>
+>> Effectuez une demande de déménagement de votre accès en  suivant notre guide « [Comment déménager mon accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_demenager_mon_acces_xdsl) » et choisissez l'offre Fibre Pro.
+>> 
+>> Une fois votre adresse postale renseignée, l'**Identifiant immeuble IPE** correspondant est alors affiché. Vérifiez qu'il est identique à l'identifiant préalablement noté sur le site de l'ARCEP.
+>>
+>> ![espace client OVHcloud - Déménagement](images/espace-client-demenagement.png){.thumbnail}
+>> 
+>> Si l'identifiant ne correspond pas ou si vous avez un doute, contactez le support OVHcloud via un [ticket](https://help.ovhcloud.com/csm?id=csm_get_help) en précisant :
+>>
+>> - La référence de votre accès xDSL.
+>> - L'**Identifiant immeuble IPE** de votre adresse.
+>>
+>> Les équipes du support OVHcloud vous aideront alors à finaliser votre migration vers la fibre.
 
-L'équipe OVHcloud vous aidera à finaliser votre migration vers la fibre.
-
-### Résilier votre accès xDSL OVHcloud <a name="cancel"></a>
+### Si vous ne souhaitez pas migrer vers la fibre <a name="cancel"></a>
 
 Si vous ne souhaitez pas migrer vers une offre fibre OVHcloud, votre ligne xDSL sera automatiquement résiliée lors de la fermeture du cuivre.
 
