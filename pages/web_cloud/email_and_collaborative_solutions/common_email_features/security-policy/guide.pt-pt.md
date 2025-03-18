@@ -63,7 +63,7 @@ Para o fazer, preencha as informações abaixo:
 - **Exigência de complexidade**: Permite aplicar regras relativamente à complexidade das palavras-passe:<br> - não incluir toda ou parte do nome da conta de utilizador;<br> - ter pelo menos 6 caracteres;<br> - incluir caracteres em maiúsculas, minúsculas, especiais (! ou $, por exemplo), bem como números.
 - **Impedir a alteração da palavra-passe**: Permite aplicar um período de validade mínimo às palavras-passe das contas de e-mail. Ou seja, os utilizadores deverão aguardar um determinado número de dias antes de poder alterar a sua palavra-passe.
 - **Período de validade da palavra-passe**: Permite aplicar um período de validade máximo às palavras-passe das contas de e-mail. Ou seja, os utilizadores serão obrigados a alterar a palavra-passe depois de atingir esse limite.
-- ***Manter o histórico da palavra-passe (exclusivamente Exchange)**: Este campo aparece apenas se um período de validade máximo tiver sido definido. Especificar o período de validade, em dias, das palavras-passe anteriores que poderão ser utilizadas novamente.
+- **Manter o histórico da palavra-passe (exclusivamente Exchange)**: Este campo aparece apenas se um período de validade máximo tiver sido definido. Especificar o período de validade, em dias, das palavras-passe anteriores que poderão ser utilizadas novamente.
 - **Dimensão mínima da palavra-passe**: Permite aplicar um tamanho mínimo para as palavras-passe que um utilizador pretende alterar.
 
 Depois de preencher estas informações, valide estas alterações clicando em `Seguinte`{.action} e, a seguir, em `Validar`{.action}, relativamente às ofertas «E-mails» e «E-mail Pro». Clique em `Registar as modificações`{.action}, relativamente à oferta Exchange.

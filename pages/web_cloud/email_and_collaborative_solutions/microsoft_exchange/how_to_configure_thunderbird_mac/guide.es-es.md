@@ -28,7 +28,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 > [!warning]
 >
-> En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
+> En nuestro ejemplo, utilizamos el nombre del servidor: ex?.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
 > Encontrará esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 
@@ -49,8 +49,8 @@ En una configuración en **POP**, los valores son los siguientes:
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrante|ex**?***.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|995|
-|Saliente|ex**?***.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|STARTTLS|587|
+|Entrante|ex?.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|995|
+|Saliente|ex?.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|STARTTLS|587|
 
 ### Utilizar la dirección de correo
 
@@ -66,7 +66,7 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 
 > [!warning]
 >
-> En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
+> En nuestro ejemplo, utilizamos el nombre del servidor: ex?.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
 > Encontrará esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 

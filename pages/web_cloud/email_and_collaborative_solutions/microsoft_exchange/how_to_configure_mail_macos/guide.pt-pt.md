@@ -38,7 +38,7 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 
 > [!primary]
 >
-> Neste exemplo, utilizamos a menção servidor: ex**?**.mail.ovh.net. Deverá substituir o «? » pelo algarismo que designa o servidor do seu serviço Exchange.
+> Neste exemplo, utilizamos a menção servidor: ex?.mail.ovh.net. Deverá substituir o «? » pelo algarismo que designa o servidor do seu serviço Exchange.
 >
 > Encontre este algarismo na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e `Microsoft {.action}.
 > Clique em `Exchange`{.action} e, de seguida, na plataforma Exchange desejada. O nome do servidor está visível na tabela **Ligação** do separador ‘Informações gerais`{.action}.
@@ -66,7 +66,7 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 >>
 > **Etapa 4**
 >>
->> Introduza: <br><br>- Endereço de e-mail: Deixe o seu endereço de e-mail completo<br>- Nome de utilizador: deixe o seu endereço de e-mail completo <br>- Palavra-passe: deixe o seu **palavra-passe**<br> - URL interno: **ex?.mail.ovh.net** (substitua o **?** por [número do seu servidor Exchange](#addaccount))<br>- URL externo: **ex?.mail.ovh.net*** (substitua o **?** por [número do seu servidor Exchange](#addaccount))<br>
+>> Introduza: <br><br>- Endereço de e-mail: Deixe o seu endereço de e-mail completo<br>- Nome de utilizador: deixe o seu endereço de e-mail completo <br>- Palavra-passe: deixe o seu **palavra-passe**<br> - URL interno: **ex?.mail.ovh.net** (substitua o **?** por [número do seu servidor Exchange](#addaccount))<br>- URL externo: **ex?.mail.ovh.net** (substitua o **?** por [número do seu servidor Exchange](#addaccount))<br>
 >>
 >> > [!warning]
 >> >

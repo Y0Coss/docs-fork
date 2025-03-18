@@ -83,11 +83,11 @@ Segui i passaggi successivi di configurazione scorrendo le schede seguenti:
 >>![emailpro](images/emailpro-android-04.png){.thumbnail .h-600}
 >>
 > **Step 5**
->> Inserisci le "**Impostazioni server in entrata**"<br><br>- **Nome utente**: Indirizzo email completo<br>- **Password**: La password dell’indirizzo email<br>- **Server**: inserisci **pro*?*.mail.ovh.net*** (sostituisci bene "?" con il numero del server). <br><br>
+>> Inserisci le "**Impostazioni server in entrata**"<br><br>- **Nome utente**: Indirizzo email completo<br>- **Password**: La password dell’indirizzo email<br>- **Server**: inserisci **pro?.mail.ovh.net** (sostituisci bene "?" con il numero del server). <br><br>
 >>![emailpro](images/emailpro-android-05.png){.thumbnail .h-600}
 >>
 > **Step 6**
->> Inserisci le "**Impostazioni server in uscita**"<br><br>- **Nome utente**: Indirizzo email completo<br>- **Password**: La password dell’indirizzo email<br>- **Server SMTP**: inserisci **pro*?*.mail.ovh.net** (sostituisci bene "?" con il numero del server). <br><br>
+>> Inserisci le "**Impostazioni server in uscita**"<br><br>- **Nome utente**: Indirizzo email completo<br>- **Password**: La password dell’indirizzo email<br>- **Server SMTP**: inserisci **pro?.mail.ovh.net** (sostituisci bene "?" con il numero del server). <br><br>
 >>![emailpro](images/emailpro-android-06.png){.thumbnail .h-600}
 >>
 > **Step 7**

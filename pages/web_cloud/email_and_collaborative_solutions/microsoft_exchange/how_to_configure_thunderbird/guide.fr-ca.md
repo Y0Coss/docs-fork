@@ -27,7 +27,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 > [!warning]
 >
-> Dans notre exemple, nous utilisons la mention serveur : ex**?**.mail.ovh.ca. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
+> Dans notre exemple, nous utilisons la mention serveur : ex?.mail.ovh.ca. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
 > 
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `Microsoft`{.action}/`Exchange`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 
@@ -48,8 +48,8 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 
 |Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
 |---|---|---|---|
-|Entrant|ex**?**.mail.ovh.ca (la mention **«?»** est à remplacer par le numéro de votre serveur)|SSL/TLS|995|
-|Sortant|ex**?**.mail.ovh.ca (la mention **«?»** est à remplacer par le numéro de votre serveur)|STARTTLS|587|
+|Entrant|ex?.mail.ovh.ca (la mention **«?»** est à remplacer par le numéro de votre serveur)|SSL/TLS|995|
+|Sortant|ex?.mail.ovh.ca (la mention **«?»** est à remplacer par le numéro de votre serveur)|STARTTLS|587|
 
 ### Utiliser l'adresse e-mail
 
@@ -65,7 +65,7 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 
 > [!warning]
 >
-> Dans notre exemple, nous utilisons la mention serveur : ex**?**.mail.ovh.ca. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
+> Dans notre exemple, nous utilisons la mention serveur : ex?.mail.ovh.ca. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
 > 
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `Microsoft`{.action}/`Exchange`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 

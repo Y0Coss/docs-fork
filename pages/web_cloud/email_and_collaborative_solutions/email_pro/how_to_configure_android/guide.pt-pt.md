@@ -125,7 +125,7 @@ Para a receção dos e-mails, ao escolher o tipo de conta, recomendamos uma util
 |---|---|
 |Nome de utilizador|Introduza o endereço de e-mail **completo**|
 |Palavra-passe|Introduza a palavra-passe do endereço de e-mail|
-|Servidor|pro***?*.mail.ovh.net (substitua bem «?» pelo número do seu servidor)|
+|Servidor|pro?.mail.ovh.net (substitua bem «?» pelo número do seu servidor)|
 |Porta|993|
 |Tipo de segurança|SSL/TLS|
 
@@ -137,7 +137,7 @@ Se necessitar de inserir manualmente as definições **SMTP** nas preferências 
 |---|---|
 |Nome de utilizador|Introduza o endereço de e-mail **completo**|
 |Palavra-passe|Introduza a palavra-passe do endereço de e-mail|
-|Servidor|pro***?*.mail.ovh.net (substitua bem «?» pelo número do seu servidor)|
+|Servidor|pro?.mail.ovh.net (substitua bem «?» pelo número do seu servidor)|
 |Porta|587|
 |Tipo de segurança|STARTTLS|
 

@@ -27,7 +27,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 
 > [!warning]
 >
-> Nel nostro esempio, usiamo il nome del server: ex**?**.mail.ovh.net. Dovrai sostituire il "? " dalla cifra che indica il server del tuo servizio Exchange.
+> Nel nostro esempio, usiamo il nome del server: ex?.mail.ovh.net. Dovrai sostituire il "? " dalla cifra che indica il server del tuo servizio Exchange.
 > 
 > Questa cifra è disponibile nello [Spazio Cliente OVHcloud](/links/manager), nella sezione `Web Cloud`{.action} e poi nella sezione `Microsoft`{.action}/`Exchange`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 > 
@@ -48,8 +48,8 @@ Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
 
 |Tipo di server|Nome del server|Metodo di cifratura|Porta|
 |---|---|---|---|
-|In entrata|ex**?**.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del tuo server)|SSL/TLS|995|
-|In uscita|ex**?**.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del tuo server)|STARTTLS|857|
+|In entrata|ex?.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del tuo server)|SSL/TLS|995|
+|In uscita|ex?.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del tuo server)|STARTTLS|857|
 
 ### Utilizza l'indirizzo email
 
@@ -65,7 +65,7 @@ Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei
 
 > [!warning]
 >
-> Nel nostro esempio, usiamo il nome del server: ex**?**.mail.ovh.net. Dovrai sostituire il "? " dalla cifra che indica il server del tuo servizio Exchange.
+> Nel nostro esempio, usiamo il nome del server: ex?.mail.ovh.net. Dovrai sostituire il "? " dalla cifra che indica il server del tuo servizio Exchange.
 > 
 > Questa cifra è disponibile nello [Spazio Cliente OVHcloud](/links/manager), nella sezione `Web Cloud`{.action} e poi nella sezione `Microsoft`{.action}/`Exchange`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 > 
