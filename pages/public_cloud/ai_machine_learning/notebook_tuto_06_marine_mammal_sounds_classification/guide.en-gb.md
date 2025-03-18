@@ -6,7 +6,7 @@ updated: 2023-05-11
 
 ## Objective
 
-The purpose of this tutorial is to show how it is possible to train a model in oder to classify sounds. To do this, we take as an example a dataset of **marine mammals sounds**.
+The purpose of this tutorial is to show how it is possible to train a model in order to classify sounds. To do this, we take as an example a dataset of **marine mammals sounds**.
 
 ![image](images/marine-mammals-categories.png){.thumbnail}
 
@@ -32,7 +32,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/a
 > You can also use the OVHcloud AI CLI to upload files and folders (and be more stable than through your browser).
 >
 
-If you want to run it with the CLI, just follow this [this guide](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks). You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow [this guide](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
 ovhai bucket object upload <container>@<region> <paths>
