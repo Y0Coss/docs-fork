@@ -2297,27 +2297,6 @@ Ce groupe de permissions reprend les droits anciennement porté par le rôle nic
         "action": "publicCloudProject:apiovh:database/kafkaMirrorMaker/replication/get"
     },
     {
-        "action": "publicCloudProject:apiovh:database/m3aggregator/capabilities/integration/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/m3aggregator/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/m3aggregator/integration/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/m3aggregator/logs/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/m3aggregator/maintenance/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/m3aggregator/metric/get"
-    },
-    {
-        "action": "publicCloudProject:apiovh:database/m3aggregator/node/get"
-    },
-    {
         "action": "publicCloudProject:apiovh:database/mongodb/backup/get"
     },
     {
