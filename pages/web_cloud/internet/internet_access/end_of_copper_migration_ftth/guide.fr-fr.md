@@ -1,12 +1,12 @@
 ---
-title: 'Fin du cuivre - Comment migrer mon offre xDSL vers la fibre'
+title: 'Fin du cuivre - Comment migrer mon offre xDSL vers la Fibre ?'
 excerpt: 'Découvrez comment migrer votre connexion xDSL vers la fibre optique en raison de la fermeture progressive du réseau cuivre'
-updated: 2025-03-12
+updated: 2025-03-18
 ---
 
 ## Objectif
 
-Le réseau téléphonique cuivre, utilisé depuis des décennies pour fournir des services de téléphonie et des connexions à Internet via des offres xDSL (ADSL/VDSL), est progressivement remplacé par des technologies plus modernes et performantes, notamment la fibre optique.<br>
+Le réseau téléphonique cuivre, utilisé depuis des décennies pour fournir des services de téléphonie et des connexions à Internet via des offres xDSL (ADSL/VDSL/SDSL), est progressivement remplacé par des technologies plus modernes et performantes, notamment la fibre optique.<br>
 Cette transition offre aux utilisateurs une connectivité plus rapide et plus fiable. D'ici 2030, le réseau cuivre sera entièrement démantelé, rendant nécessaire la migration vers la fibre optique.<br>
 Vous retrouverez dans ce guide les étapes clés pour assurer une transition en douceur vers la fibre optique, en tenant compte des spécificités de votre situation et des offres disponibles chez OVHcloud.
 
@@ -37,11 +37,11 @@ La page qui s'affiche indique la date de fermeture du cuivre pour chacun de vos 
 
 ![informations fermeture cuivre](images/info-fermeture-cuivre.png){.thumbnail}
 
-Vous pouvez dès lors choisir de migrer vers la fibre OVHcloud (voir ci-dessous) ou de [résilier votre offre d'accès à Internet OVHcloud](#cancel).
+Vous pouvez dès lors choisir de migrer vers la [Fibre Pro OVHcloud](https://www.ovhcloud.com/fr/internet/fibre/) (voir ci-dessous) ou de [résilier votre offre d'accès à Internet OVHcloud](#cancel).
 
 ### Souscrire une offre fibre OVHcloud
 
-#### Cas 1 : Migration proposée directement dans l'espace client
+#### Cas n°1 : La migration est proposée directement dans l'espace client
 
 Cliquez sur le bouton `Migrer vers la fibre`{.action}.
 
@@ -58,11 +58,11 @@ Sélectionnez les informations requises.
 
 ![changement offre fibre](images/changement-offre-fibre.png){.thumbnail}
 
-Renseignez les informations relatives à votre habitation, répondez à la question concernant votre boîtier fibre PTO et cliquez sur `Confirmer la sélection`{.action}.
+Renseignez les informations relatives à votre habitation, répondez à la question concernant votre boîtier fibre PTO (Point de Terminaison Optique) et cliquez sur `Confirmer la sélection`{.action}.
 
 ![conservation des services](images/services2023.png){.thumbnail}
 
-Cochez les cases correspondantes aux services à conserver puis cliquez sur `Confirmer la sélection des services`{.action}.
+Cochez les cases correspondant aux services à conserver puis cliquez sur `Confirmer la sélection des services`{.action}.
 
 À l'étape suivante, sélectionnez les informations du rendez-vous et cliquez sur `Confirmer la sélection`{.action}.
 
@@ -81,19 +81,21 @@ Suivant votre offre actuelle, un remplacement du modem peut s'avérer nécessair
 
 Les nouveaux services liés à votre nouvelle offre Fibre Pro seront accessibles une fois le changement effectif.
 
-#### Cas 2 : Aucune migration proposée
+#### Cas n°2 : Aucune migration n'est proposée
 
 L'absence de la colonne `Fibre Pro` dans le tableau `Changement d'offre` **ne signifie pas obligatoirement** que vous n'êtes pas éligible à la migration vers la fibre OVHcloud.
 
-[Vérifiez votre éligibilité fibre ici](https://order.isp.ovh.net/?referer=ENDXDSL#/){.external}, en recherchant par :
+Commencez par [vérifier votre éligibilité à la fibre](https://order.isp.ovh.net/){.external}, en recherchant :
 
-- Adresse postale.
-- Numéro de téléphone.
-- Référence OTP.
-- Référence bâtiment.
+- Par adresse postale.
+- Par référence du PTO (Point de Terminaison Optique).
+- Par référence d'immeuble.
+
+> [!warning]
+> La recherche par numéro de téléphone est inutile dans ce cas de figure.
 
 **Pour des raisons techniques, il se peut que le résultat de votre éligibilité ne soit pas fiable.**<br>
-Afin de confirmer avec certitude votre éligibilité à la fibre, vérifiez directement sur le [site officiel de l'ARCEP](https://cartefibre.arcep.fr/){.external}.
+Afin de confirmer avec certitude votre éligibilité à la fibre, vérifiez directement celle-ci sur le [site officiel de l'ARCEP](https://cartefibre.arcep.fr/){.external}.
 
 Une fois sur le site de l'ARCEP :
 
@@ -101,8 +103,8 @@ Une fois sur le site de l'ARCEP :
 2. Accédez à l'onglet **Déploiement fibre**.
 3. Identifiez votre bâtiment. Si la pastille est de couleur verte, vous êtes éligible à la fibre (voir légende en bas à droite de la carte).
 4. Cliquez sur votre bâtiment. Parmi les informations qui s'affichent, notez l'**Identifiant immeuble IPE** associé à votre adresse (ex : `HT-BAT-012AB`).
-5. Déménagez votre accès vers l'adresse indiquée sur le site de l'ARCEP, en suivant notre guide [Comment déménager mon accès xDSL/FTTH](/pages/web_cloud/internet/internet_access/comment_demenager_mon_acces_xdsl) et choisissez l'offre Fibre Pro. Une fois votre adresse postale renseignée, l'**Identifiant immeuble IPE** correspondant est alors affiché. Vérifiez qu'il est identique à l'identifiant préalablement noté sur le site de l'ARCEP.
-6. En cas de doute ou si l'identifiant ne correspond pas, contactez le support OVHcloud via un [ticket](/links/support) en précisant :
+5. Déménagez votre accès vers l'adresse indiquée sur le site de l'ARCEP, en suivant notre guide [Comment déménager mon accès xDSL/Fibre](/pages/web_cloud/internet/internet_access/comment_demenager_mon_acces_xdsl) et choisissez l'offre Fibre Pro. Une fois votre adresse postale renseignée, l'**Identifiant immeuble IPE** correspondant est alors affiché. Vérifiez qu'il est identique à l'identifiant préalablement noté sur le site de l'ARCEP.
+6. En cas de doute ou si l'identifiant ne correspond pas, contactez le support OVHcloud via un [ticket](https://help.ovhcloud.com/csm?id=csm_get_help) en précisant :
     - La référence de votre accès xDSL.
     - L'**Identifiant immeuble IPE** de votre adresse.
 
