@@ -9,7 +9,7 @@ updated: 2025-03-18
 Vous pouvez faire évoluer votre offre xDSL/Fibre afin de pouvoir accéder à de nouvelles fonctionnalités et services.
 
 > [!success]
-> Vous souhaitez migrer vers la Fibre ? Consultez notre guide [Fin du cuivre - Comment migrer mon offre xDSL vers la Fibre ?](/pages/web_cloud/internet/internet_access/end_of_copper_migration_ftth).
+> Vous souhaitez migrer vers la Fibre ? Consultez notre guide « [Fin du cuivre - Comment migrer mon offre xDSL vers la Fibre ?](/pages/web_cloud/internet/internet_access/end_of_copper_migration_ftth) ».
 
 ## Prérequis
 
@@ -59,7 +59,7 @@ Selon l'offre choisie, sélectionnez les informations requises.
 
 > [!success]
 > La Fibre ne vous est pas proposée ? Il peut s'agir d'une divergence d'adresses dans les bases de données.<br>
-> Vérifiez votre situation en consultant notre guide [Fin du cuivre - Comment migrer mon offre xDSL vers la Fibre ?](/pages/web_cloud/internet/internet_access/end_of_copper_migration_ftth).
+> Vérifiez votre situation en consultant notre guide « [Fin du cuivre - Comment migrer mon offre xDSL vers la Fibre ?](/pages/web_cloud/internet/internet_access/end_of_copper_migration_ftth) ».
 
 > [!tabs]
 > xDSL Pro
