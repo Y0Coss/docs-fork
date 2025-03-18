@@ -12,11 +12,11 @@ Le module Cloud-init permet de configurer votre [instance Public Cloud](https://
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
-> Ce guide est à destination d'instances basées sur des distributions Linux **uniquement**.
+> Ce guide est destiné aux instances basées sur des distributions Linux **uniquement**.
 >
 
 ## Prérequis
@@ -30,7 +30,7 @@ Le module Cloud-init permet de configurer votre [instance Public Cloud](https://
 
 > [!primary]
 >
-> Pour ce guide nous utiliserons l'éditeur de fichier **vi** car il est présent par défault sur les distributions Linux. Vous pouvez bien sûr utiliser l'éditeur de votre choix.
+> Pour ce guide nous utiliserons l'éditeur de fichier **vi** car il est présent par défaut sur les distributions Linux. Vous pouvez bien sûr utiliser l'éditeur de votre choix.
 >
 > Utilisation basique de vi :
 >
@@ -39,11 +39,13 @@ Le module Cloud-init permet de configurer votre [instance Public Cloud](https://
 > - Taper **:wq** puis **Entrée** pour enregistrer et quitter.
 > - Taper **:q!** puis **Entrée** pour quitter sans enregistrer.
 
+Pour désactiver cloud-init, vous devez commencer par modifier le fichier de configuration :
+
 ```sh
 sudo vi /etc/cloud/cloud.cfg
 ```
 
-Il suffit enfin d'ajouter ou de modifier les deux lignes suivantes :
+Il vous suffit d'ajouter les deux lignes suivantes ou de les modifier si elles existent déjà :
 
 ```sh
 preserve_hostname: true
@@ -52,7 +54,7 @@ manage_etc_hosts: false
 
 ### Modifier le hostname
 
-La première étape consiste à modifier le nom d’hôte. Dans cet exemple, nous allons changer le nom d’hôte en **webserver**. Vous pouvez bien sûr le modifier selon vos préférences :
+La première étape consiste à modifier le nom d’hôte (*hostname*). Dans cet exemple, nous allons changer le nom d’hôte en **webserver**. Vous pouvez bien sûr le modifier selon vos préférences :
 
 ```sh
 sudo vi /etc/hostname
