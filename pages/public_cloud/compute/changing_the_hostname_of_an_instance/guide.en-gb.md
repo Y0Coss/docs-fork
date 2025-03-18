@@ -1,7 +1,7 @@
 ---
 title: 'Changing the hostname of a Public Cloud instance'
 excerpt: 'Find out how to change the hostname of a Public Cloud instance'
-updated: 2018-09-18
+updated: 2025-03-19
 ---
 
 ## Objective
@@ -16,6 +16,8 @@ With the cloud-init module, you can configure your [Public Cloud instance](https
 >
 > We have provided you with this guide in order to help you with common tasks. However, we advise contacting a specialist provider if you experience any difficulties or doubts about administration, usage or server security. You can find more information in the "Go further" section in this guide.
 >
+> This guide is for instances based on Linux distributions **only**.
+>
 
 ## Requirements
 
@@ -26,10 +28,21 @@ With the cloud-init module, you can configure your [Public Cloud instance](https
 
 ### Disable the cloud-init module.
 
+> [!primary]
+>
+> For this guide we will use the file editor **vi** because it is present by default on Linux distributions. You can of course use the editor of your choice.
+>
+> Basic use of vi:
+>
+> - Press **i** to enter text insertion mode.
+> - Press **Esc** (Esc) to exit insertion mode.
+> - Type **:wq** then **Enter** to save and exit.
+> - Type **:q!** then **Enter** to exit without saving.
+
 To disable cloud-init, you will need to start by modifying the configuration file:
 
 ```sh
-sudo vim /etc/cloud/cloud.cfg
+sudo vi /etc/cloud/cloud.cfg
 ```
 
 Simply add the following two lines, or modify them if they already exist:
@@ -41,18 +54,27 @@ manage_etc_hosts: false
 
 ### Modify the hostname.
 
-The first step involves modifying the hostname:
+The first step involves modifying the hostname. In this example, we will change the hostname to **webserver**. You can of course edit as it suits your preference:
 
 ```sh
-sudo vim /etc/hostname
+sudo vi /etc/hostname
+```
+
+Add or replace content by:
+
+```sh
 webserver
 ```
 
 Next, you will need to modify the `/etc/hosts` file:
 
 ```sh
-sudo vim /etc/hosts
+sudo vi /etc/hosts
+```
 
+Add or replace content by:
+
+```sh
 127.0.1.1 webserver.localdomain webserver
 127.0.0.1 localhost
 ```

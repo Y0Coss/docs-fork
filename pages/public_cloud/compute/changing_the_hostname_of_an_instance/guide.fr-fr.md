@@ -1,7 +1,7 @@
 ---
 title: 'Modifier le hostname d’une instance Public Cloud'
 excerpt: "Découvrez comment modifier le hostname d'une instance Public Cloud"
-updated: 2018-09-18
+updated: 2025-03-19
 ---
 
 ## Objectif
@@ -16,6 +16,8 @@ Le module Cloud-init permet de configurer votre [instance Public Cloud](https://
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
+> Ce guide est à destination d'instances basées sur des distributions Linux **uniquement**.
+>
 
 ## Prérequis
 
@@ -26,10 +28,19 @@ Le module Cloud-init permet de configurer votre [instance Public Cloud](https://
 
 ### Désactiver le module cloud-init
 
-Afin de désactiver cloud-init, il faut dans un premier temps modifier le fichier de configuration :
+> [!primary]
+>
+> Pour ce guide nous utiliserons l'éditeur de fichier **vi** car il est présent par défault sur les distributions Linux. Vous pouvez bien sûr utiliser l'éditeur de votre choix.
+>
+> Utilisation basique de vi :
+>
+> - Appuyer sur **i** pour passer en mode insertion de texte.
+> - Appuyer sur **Échap** (Esc) pour quitter le mode insertion.
+> - Taper **:wq** puis **Entrée** pour enregistrer et quitter.
+> - Taper **:q!** puis **Entrée** pour quitter sans enregistrer.
 
 ```sh
-sudo vim /etc/cloud/cloud.cfg
+sudo vi /etc/cloud/cloud.cfg
 ```
 
 Il suffit enfin d'ajouter ou de modifier les deux lignes suivantes :
@@ -41,18 +52,27 @@ manage_etc_hosts: false
 
 ### Modifier le hostname
 
-La première étape consiste à modifier le hostname :
+La première étape consiste à modifier le nom d’hôte. Dans cet exemple, nous allons changer le nom d’hôte en **webserver**. Vous pouvez bien sûr le modifier selon vos préférences :
 
 ```sh
-sudo vim /etc/hostname
+sudo vi /etc/hostname
+```
+
+Ajoutez ou remplacez le contenu par :
+
+```sh
 webserver
 ```
 
 Ensuite il reste à modifier le fichier `/etc/hosts` :
 
 ```sh
-sudo vim /etc/hosts
+sudo vi /etc/hosts
+```
 
+Ajoutez ou remplacez le contenu par :
+
+```sh
 127.0.1.1 webserver.localdomain webserver
 127.0.0.1 localhost
 ```
