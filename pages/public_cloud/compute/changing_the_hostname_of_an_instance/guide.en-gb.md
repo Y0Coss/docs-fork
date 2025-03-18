@@ -6,7 +6,7 @@ updated: 2025-03-19
 
 ## Objective
 
-With the cloud-init module, you can configure your [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external} when you create it, and each time you reboot it. If you wish to reconfigure your hostname in order to fix an error creating your instance, or reconfigure your email server, you will need to disable the cloud-init module. This will configure the hostname so that it is not re-established.
+With the cloud-init module, you can configure your [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external} when you create it, and each time you reboot it. Consequently, if you wish to reconfigure your hostname, because of an error when creating your instance or to reconfigure your email server, you will need to disable the Cloud-init module. This will configure the hostname so that it is not re-established.
 
 **This guide will show you how to reconfigure cloud-init so that you can modify your instance’s hostname.**
 
@@ -52,7 +52,7 @@ preserve_hostname: true
 manage_etc_hosts: false
 ```
 
-### Modify the hostname.
+### Modify the hostname
 
 The first step involves modifying the hostname. In this example, we will change the hostname to **webserver**. You can of course edit as it suits your preference:
 
@@ -85,7 +85,7 @@ You will then need to reboot the instance:
 sudo reboot
 ```
 
-After you reboot it, the hostname modifications will be properly applied:
+After the reboot, the hostname modifications will be properly applied:
 
 ```sh
 sudo cat /etc/hosts
