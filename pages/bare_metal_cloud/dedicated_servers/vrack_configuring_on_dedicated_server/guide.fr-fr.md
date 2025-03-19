@@ -310,7 +310,7 @@ sudo nmcli con mod CONNECTION_NAME connection.autoconnect true
 sudo nmcli con mod private-interface connection.autoconnect true
 ```
 
-Redémarrez votre réseau avec la commande suivante :
+- Redémarrez votre réseau avec la commande suivante :
 
 ```bash
 sudo systemctl restart NetworkManager
