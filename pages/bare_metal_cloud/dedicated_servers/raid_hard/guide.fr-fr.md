@@ -246,6 +246,11 @@ La valeur la plus importante à vérifier est l'état de la batterie, s'assurer 
 
 ### Utiliser le contrôleur RAID LSI
 
+> [!warning]
+>
+> Ce contrôleur RAID est déprécié est n'est plus disponible pour les nouveaux serveurs. Il est remplacé progressivement par un contrôleur MegaRAID.
+>
+
 #### Étape 1 : récupérer les informations RAID
 
 Avant tout, vérifiez que vous êtes en possession d'un contrôleur RAID de type LSI en tapant la commande suivante :
@@ -412,7 +417,10 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 ### Contrôleur Raid 3Ware
 
-Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fortement de contacter le support OVHcloud pour planifier une intervention visant à remplacer ce contrôleur RAID par un contrôleur LSI, puisque les contrôleurs RAID 3ware s’avèrent plutôt instables. Ce type d’intervention nécessite une réinstallation de votre serveur. Veillez alors à bien sauvegarder vos données au préalable.
+> [!alert]
+>
+> Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fortement de contacter le support OVHcloud pour planifier une intervention visant à remplacer ce contrôleur RAID par un contrôleur MegaRAID, puisque les contrôleurs RAID 3ware s’avèrent plutôt instables. Ce type d’intervention nécessite une réinstallation de votre serveur. Veillez alors à bien sauvegarder vos données au préalable.
+>
 
 ## Aller plus loin
 

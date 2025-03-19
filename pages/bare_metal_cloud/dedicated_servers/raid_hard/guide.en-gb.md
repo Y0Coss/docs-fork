@@ -242,6 +242,11 @@ the most important value to check is if `Battery State` is **Optimal**. If there
 
 ### Using the LSI RAID controller
 
+> [!warning]
+>
+> This RAID controller card is deprecated and no longer available for new servers. It is gradually replaced by MegaRaid controllers.
+>
+
 #### Step 1: Retrieve RAID information
 
 Prior to verifying the RAID state, ensure that an LSI RAID controller card is installed with the following command:
@@ -412,7 +417,7 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 > [!alert]
 >
-> This RAID controller card is deprecated. We highly recommend that you contact OVHcloud Support to schedule an intervention to replace the RAID controller with an LSI, as 3ware RAID controllers are proven to be rather unstable. This type of intervention requires a reinstallation of your server. Be sure to backup your data first.
+> This RAID controller card is deprecated. We highly recommend that you contact OVHcloud Support to schedule an intervention to replace the RAID controller with a MegaRaid controller, as 3ware RAID controllers are proven to be rather unstable. This type of intervention requires a reinstallation of your server. Be sure to backup your data first.
 >
 
 ## Go further
