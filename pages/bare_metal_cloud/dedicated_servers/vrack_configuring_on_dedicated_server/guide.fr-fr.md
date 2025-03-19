@@ -304,7 +304,7 @@ sudo nmcli connection modify private-interface IPv4.method manual
 sudo nmcli con mod CONNECTION_NAME connection.autoconnect true
 ```
 
-**exemple**
+**Exemple :**
 
 ```bash
 sudo nmcli con mod private-interface connection.autoconnect true
