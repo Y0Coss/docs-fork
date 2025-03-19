@@ -112,7 +112,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 >> > Les informations sur le [site officiel de l'ARCEP](https://cartefibre.arcep.fr/){.external} ne sont pas actualisées en temps réel. Leur date de dernière mise à jour est indiquée en haut à droite du site. Il est donc possible que, à date, le statut réel de votre éligibilité fibre ne corresponde pas aux données indiquées sur ce site.
 >>
 > Étape 2
->> **Vérifiez les informations sur l'outil d'éligibilité à la Fibre OVHcloud :**
+>> **Vérifiez les informations sur l'outil d'éligibilité OVHcloud :**
 >>
 >> Rendez-vous sur [notre outil d'éligibilité](https://order.isp.ovh.net/){.external}.
 >>
