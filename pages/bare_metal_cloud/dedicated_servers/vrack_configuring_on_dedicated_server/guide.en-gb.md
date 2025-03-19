@@ -99,7 +99,7 @@ Add the following lines to the existing configuration after the line `version: 2
               - IP_ADDRESS/PREFIX
 ```
 
-**Example**
+**Example:**
 
 ![netplan config](images/netplan_configuration.png){.thumbnail}
 
