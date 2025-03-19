@@ -28,10 +28,21 @@ Mit dem *cloud-init* Modul können Sie Ihre [Public Cloud Instanz](https://www.o
 
 ### *cloud-init* Modul deaktivieren
 
+> [!primary]
+>
+> Für diese Anleitung verwenden wir den Dateieditor **vi**, da er standardmäßig auf Linux-Distributionen vorhanden ist. Sie können natürlich auch einen Editor Ihrer Wahl verwenden.
+>
+> Grundlegende Verwendung von vi :
+>
+> - Drücken Sie **i**, um in den Texteinfügemodus zu wechseln.
+> - Drücken Sie **Esc** (Esc), um den Einfügemodus zu verlassen.
+> - Geben Sie **:wq** und dann **Enter** ein, um zu speichern und zu beenden.
+> - Geben Sie **:q!** und dann **Enter** ein, um ohne zu speichern zu beenden.
+
 Um das *cloud-init* Modul zu deaktivieren, muss zunächst die Konfigurationsdatei bearbeitet werden.
 
 ```sh
-sudo vim /etc/cloud/cloud.cfg
+sudo vi /etc/cloud/cloud.cfg
 ```
 
 Fügen Sie einfach die folgenden beiden Zeilen hinzu oder bearbeiten Sie die vorhandenen:
@@ -43,18 +54,27 @@ manage_etc_hosts: false
 
 ### Hostname ändern
 
-Bearbeiten Sie zunächst den Hostnamen:
+Der erste Schritt besteht darin, den Hostnamen (*hostname*) zu ändern. In diesem Beispiel ändern wir den Hostnamen in **webserver**. Sie können ihn natürlich nach Ihren Vorlieben ändern:
 
 ```sh
-sudo vim /etc/hostname
+sudo vi /etc/hostname
+```
+
+Fügen Sie den Inhalt hinzu oder ersetzen Sie ihn durch:
+
+```sh
 webserver
 ```
 
-Bearbeiten Sie dann die Datei `/etc/hosts`:
+Anschließend muss noch die Datei `/etc/hosts` geändert werden:
 
 ```sh
-sudo vim /etc/hosts
+sudo vi /etc/hosts
+```
 
+Fügen Sie den Inhalt hinzu oder ersetzen Sie ihn durch:
+
+```sh
 127.0.1.1 webserver.localdomain webserver
 127.0.0.1 localhost
 ```

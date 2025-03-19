@@ -22,7 +22,7 @@ Le module Cloud-init permet de configurer votre [instance Public Cloud](https://
 ## Prérequis
 
 - Avoir créé une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
-- Être connecté en SSH (sudo) à l'instance.
+- Être [connecté en SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) (sudo) à l'instance.
 
 ## En pratique
 
