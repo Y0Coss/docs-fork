@@ -253,7 +253,7 @@ lo               loopback  connected (externally)  lo
 eno2             ethernet  disconnected            --
 ```
 
-If the `STATE` of the `DEVICE` appears as `disconnected`, it must be connected in before configuring the IP. 
+If the `STATE` of the `DEVICE` appears as `disconnected`, it must be connected before configuring the IP. 
 
 When adding an **ethernet** connection, we have to create a configuration profile which we then assigned to a device.
 
