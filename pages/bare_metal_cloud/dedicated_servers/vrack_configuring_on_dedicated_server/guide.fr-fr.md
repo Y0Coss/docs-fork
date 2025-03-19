@@ -132,7 +132,7 @@ iface NETWORK_INTERFACE inet static
     netmask NETMASK
 ```
 
-**Exemple**
+**Exemple :**
 
 ![debian config](images/debian_configuration.png){.thumbnail}
 
