@@ -1,7 +1,7 @@
 ---
 title: Gestion du RAID matériel
 excerpt: Apprenez à vérifier l'état de votre RAID matériel et de vos disques durs
-updated: 2025-03-20
+updated: 2025-03-19
 ---
 
 ## Objectif
@@ -419,7 +419,7 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 > [!alert]
 >
-> Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fortement de contacter le support OVHcloud pour planifier une intervention visant à remplacer ce contrôleur RAID par un contrôleur MegaRAID, puisque les contrôleurs RAID 3ware s’avèrent plutôt instables. Ce type d’intervention nécessite une réinstallation de votre serveur. Veillez alors à bien sauvegarder vos données au préalable.
+> Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fortement de [contacter le support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour planifier une intervention visant à remplacer ce contrôleur RAID par un contrôleur MegaRAID, puisque les contrôleurs RAID 3ware s’avèrent plutôt instables. Ce type d’intervention nécessite une réinstallation de votre serveur. Veillez alors à bien sauvegarder vos données au préalable.
 >
 
 ## Aller plus loin

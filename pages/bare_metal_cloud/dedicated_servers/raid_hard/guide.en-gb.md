@@ -1,7 +1,7 @@
 ---
 title: Managing hardware RAID
 excerpt: Find out how to verify the state of your hardware RAID and the health of your hard drives
-updated: 2025-03-20
+updated: 2025-03-19
 ---
 
 ## Objective
@@ -348,7 +348,7 @@ cat /proc/scsi/scsi | grep Vendor
   Vendor: ATA      Model: HGST HUS724020AL Rev: AA70
 ```
 
-Each line represents a sg device, which is mapped according to the order of the device shown here:
+Each line represents an sg device, which is mapped according to the order of the device shown here:
 
 ```console
 Vendor: LSI      Model: Logical Volume   Rev: 3000 => /dev/sg0
@@ -416,7 +416,7 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 > [!alert]
 >
-> This RAID controller card is deprecated. We highly recommend that you contact OVHcloud Support to schedule an intervention to replace the RAID controller with a MegaRaid controller, as 3ware RAID controllers are proven to be rather unstable. This type of intervention requires a reinstallation of your server. Be sure to backup your data first.
+> This RAID controller card is deprecated. We highly recommend that you contact [OVHcloud Support teams](https://help.ovhcloud.com/csm?id=csm_get_help) to schedule an intervention to replace the RAID controller with a MegaRaid controller, as 3ware RAID controllers are proven to be rather unstable. This type of intervention requires a reinstallation of your server. Be sure to backup your data first.
 >
 
 ## Go further
