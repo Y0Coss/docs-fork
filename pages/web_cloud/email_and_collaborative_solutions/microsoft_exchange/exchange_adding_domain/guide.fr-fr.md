@@ -73,16 +73,16 @@ Une fois votre choix fait, cliquez sur le bouton `Suivant`{.action}.
 La fenêtre affiche désormais des informations concernant la configuration des modes.
 
 - **Si vous avez sélectionné dans la liste un nom de domaine géré par OVHcloud** : vous avez le choix entre deux modes.
-    - **Configuration recommandée** : votre zone DNS sera configurée automatiquement. Convient si vous n'avez pas de configuration spécifique dans votre zone DNS pour les enregistrement MX, SPF, DKIM et SRV.
+    - **Configuration recommandée** : votre zone DNS sera configurée automatiquement. Convient si vous n'avez pas de configuration spécifique dans votre zone DNS pour les enregistrements MX, SPF, DKIM et SRV.
     - **Configuration personnalisée** : Convient si vous avez déjà configuré une offre e-mail sur votre nom de domaine, vous pouvez choisir les éléments qui vous intéressent.
         - *Configurer l'enregistrement MX automatiquement* : il permet de saisir automatiquement les serveurs de réception OVHcloud (s'applique à toutes les offres e-mail OVHcloud).
         - *Configurer l'enregistrement SPF automatiquement* : il permet de saisir automatiquement l'enregistrement autorisant les serveurs e-mail d'envoi OVHcloud à transmettre vos e-mails. Cet enregistrement est valable pour l'ensemble des offres e-mail OVHcloud.
         - *Configurer l'enregistrement DKIM automatiquement* : il permet de saisir automatiquement les enregistrements nécessaires pour authentifier vos envois d'e-mails.
-        - *Configurer l'enregistrement SRV automatiquement* : il permet au logiciel de messagerie, de configurer automatiquement les comptes Exchange sur votre nom de domaine.
+        - *Configurer l'enregistrement SRV automatiquement* : il permet au logiciel de messagerie de configurer automatiquement les comptes Exchange sur votre nom de domaine.
 
 ![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-400}
 
-- **Si vous avez renseigné un nom de domaine non géré par votre compte OVHcloud** : Cela signifie que le nom de domaine, plus particulièrement sa zone DNS, n'est pas géré depuis votre espace client OVHcloud. Il peut être aussi enregistrée dans un autre bureau d'enregistrement. Il sera alors nécessaire de procéder à la configuration directement dans son interface de gestion, quel que soit le choix suivant effectué.
+- **Si vous avez renseigné un nom de domaine non géré par votre compte OVHcloud** : Cela signifie que le nom de domaine, plus particulièrement sa zone DNS, n'est pas géré depuis votre espace client OVHcloud. Il peut être aussi enregistré dans un autre bureau d'enregistrement. Il sera alors nécessaire de procéder à la configuration directement dans son interface de gestion, quel que soit le choix suivant effectué.
     - **Configuration recommandée** : Convient si vous utilisez uniquement les offres e-mail OVHcloud.<br><br>
     - **Configuration personnalisée** : Si souhaitez utiliser un service e-mail privé ou externe à OVHcloud, en complément de cette plateforme e-mail, renseigner le nom d'hôte du serveur e-mail dans le cadre `URL du serveur email cible`.
 
@@ -113,7 +113,7 @@ Pour vérifier que la configuration d'un nom de domaine est correcte, reposition
 
 ### Modifier le mode d'un domaine associés
 
-Il est possible de modifier le mode d'un domaines associé sur votre plateforme. Avant, il est nécessaire de comprendre la différence de fonctionnement entre les modes autoritatif et Non-autoritatif
+Il est possible de modifier le mode d'un domaine associé sur votre plateforme. Avant, il est nécessaire de comprendre la différence de fonctionnement entre les modes autoritatif et Non-autoritatif
 
 > [!primary]
 >
@@ -175,7 +175,7 @@ Si des comptes e-mail sont attachés au nom de domaine que vous souhaitez détac
 1. Cliquez sur `Réinitialiser ce compte`{.action} ou `Réinitialiser`{.action}.
     ![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-400}
 
-Une fois la réattribution des comptes à un autre nom de domaine effectuée, ou leur réinitialisation, il est maintenant possible de procéder à la suppression du nom de domaine.
+Une fois la réattribution des comptes à un autre nom de domaine effectué, ou leur réinitialisation, il est maintenant possible de procéder à la suppression du nom de domaine.
 
 Depuis l'onglet `Domaine associés`{.action} de votre plateforme, cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Supprimer ce domaine`{.action}.
 
