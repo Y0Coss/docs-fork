@@ -1,7 +1,7 @@
 ---
 title: "Capacités techniques et limites de Public VCF aaS (alias Managed VCD)"
 excerpt: "Découvrez les capacités techniques et les limites de Public VCF aaS (alias Managed VCD)"
-updated: 2025-03-18
+updated: 2025-03-19
 ---
 
 ## Objectif
