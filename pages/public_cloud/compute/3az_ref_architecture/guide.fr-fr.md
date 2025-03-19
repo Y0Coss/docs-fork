@@ -28,7 +28,7 @@ Dans un environnement cloud, la disponibilité et la résilience des services so
 
 Le tableau ci-dessous liste les services proposés, leur périmètre (zonal ou régional), et les bonnes pratiques de configuration pour assurer une résilience optimale. Enfin, il détaille le comportement attendu en cas de défaillance de l'AZ, afin d'aider les clients à anticiper les risques et à mettre en place des architectures adaptées.
 
-| Service | Zonal/Local | Régional | Architecture/Bonnes pratiques de configuration | en cas de panne de l'AZ                                                              |
+| Service | Zonal/Local | Régional | Architecture/Bonnes pratiques de configuration | En cas de panne de l'AZ                                                              |
 | ------- | ----------- | -------- | ---------------------------------------------- | ------------------------------------------------------------------------------------ |
 | Instances | X | | Les instances étant des services zonaux, elles ne sont déployées que dans une seule zone de disponibilité. Pour assurer la résilience, les clients doivent répartir manuellement leurs instances sur plusieurs zones de disponibilités. La mise en place d'un Load Balancer régional peut être une solution, selon votre architecture et vos services. Par exemple, une base de données en cluster actif/passif répartie sur deux AZ peut basculer automatiquement d'une instance à l'autre sans Load Balancer. | En cas de défaillance d'une AZ, avec des mécanismes de résilience, la continuité de service est assuré par vos instances dans les autres AZ. |
 | Private Network | | X | | Les agents DHCP/DNS fonctionnent dans deux AZ. En cas de défaillance d'une AZ, ils seront automatiquement réactivés dans l'AZ où ils ne sont pas déjà en cours d'exécution. |
@@ -67,7 +67,7 @@ Cette section présente des architectures de référence pour un déploiement mu
 
 /// details | **Déploiement en 2-AZ avec Storage régional**
 
-![2-az with regional storage](images/2az-with-regional-storage.png){.thumbnail}
+![2-az with regional Block storage](images/2az-with-regional-storage.png){.thumbnail}
 
 Ce schéma illustre une application déployée sur deux zones de disponibilité (AZ) en s’appuyant sur un service Block Storage régional pour assurer la résilience.
 
