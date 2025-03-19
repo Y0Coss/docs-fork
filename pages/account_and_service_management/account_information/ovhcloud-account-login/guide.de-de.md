@@ -31,7 +31,7 @@ Die nachfolgenden Anweisungen bieten Lösungswege für häufige Verbindungsfehle
 
 #### Ich kenne meine Kundenkennung nicht, wie finde ich sie?
 
-Die OVHcloud Kundenkennung in der Form **xx11111-ovh** wird immer benötigt, wenn Sie sich einloggen oder sich mit dem technischen Support von OVHcloud in Verbindung setzen. Sie haben mehrere Möglichkeiten, um diese einzusehen.
+Die OVHcloud Kundenkennung in der Form **aa00000-ovh** wird immer benötigt, wenn Sie sich einloggen oder sich mit dem technischen Support von OVHcloud in Verbindung setzen. Sie haben mehrere Möglichkeiten, um diese einzusehen.
 
 ##### **In von OVHcloud versendeten E-Mails**
 

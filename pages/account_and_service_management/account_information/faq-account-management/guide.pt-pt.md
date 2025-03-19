@@ -165,7 +165,7 @@ Um membro da nossa equipa irá responder-lhe o mais rapidamente possível.
 
 ### Respondi ao e-mail de Abuse da OVHcloud, mas o meu serviço continua bloqueado. O que posso fazer?
 
-A partir da [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help), pode abrir um pedido de assistência junto do Serviço de Clientes da OVHcloud, de modo a obter informações complementares sobre o tratamento do seu ticket Abuse. Para facilitar o tratamento do seu pedido, queira mencionar no pedido de assistência a referência do ticket Abuse.
+A partir da [Centro de ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help), pode abrir um pedido de assistência junto do Serviço de Clientes da OVHcloud, de modo a obter informações complementares sobre o tratamento do seu ticket Abuse. Para facilitar o tratamento do seu pedido, queira mencionar no pedido de assistência a referência do ticket Abuse.
 
 ### Como eliminar a minha conta OVHcloud?
 

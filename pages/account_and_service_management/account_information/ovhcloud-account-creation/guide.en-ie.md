@@ -19,7 +19,7 @@ You can create an account before or during the order process for your first OVHc
 
 ### How do I create my OVHcloud account?
 
-To create an OVHcloud account, simply go to [this page](/links/manager){.external} and fill in the online form.
+To create an OVHcloud account, simply go to [this page](/links/manager) and fill in the online form.
 
 ![account creation form](images/account-creation.png){.thumbnail}
 

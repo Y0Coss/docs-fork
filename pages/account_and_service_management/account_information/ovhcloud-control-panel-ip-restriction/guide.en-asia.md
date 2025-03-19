@@ -9,7 +9,7 @@ updated: 2025-03-10
 
 OVHcloud provides you with options to enhance the security of your OVHcloud Control Panel and your services.
 
-You can restrict access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) to certain IP addresses.
+You can restrict access to your [OVHcloud Control Panel](/links/manager) to certain IP addresses.
 By setting this option and securing your account with [two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), you can optimally secure your OVHcloud Control Panel against intrusion attempts.
 
 **This guide explains how to secure your OVHcloud account by limiting the IP addresses authorised to access it.**
@@ -79,7 +79,7 @@ There are two sections for setting IP restrictions:
 >
 > In the `Default rule`{.action} section, **never** validate the default rule in `Denied`{.action} status **without first authorising** at least one of your public IP addresses in the `Configured IPs` section.
 >
-> Otherwise, you will block **all public IPs (including yours)** without any exceptions. Any login requests to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) will be denied, and you will need to carry out an administrative procedure to unblock your access.
+> Otherwise, you will block **all public IPs (including yours)** without any exceptions. Any login requests to your [OVHcloud Control Panel](/links/manager) will be denied, and you will need to carry out an administrative procedure to unblock your access.
 >
 > Be extremely vigilant on this point.
 >

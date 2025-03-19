@@ -21,7 +21,7 @@ La gestion de vos services s'effectue principalement via l'espace client OVHclou
 
 ### Se connecter à l'espace client OVHcloud
 
-Rendez-vous sur [la page d'authentification OVHcloud](/links/manager){.external}, renseignez votre identifiant client (ou votre adresse e-mail principale) et votre mot de passe.
+Rendez-vous sur [la page d'authentification OVHcloud](/links/manager), renseignez votre identifiant client (ou votre adresse e-mail principale) et votre mot de passe.
 
 ![identifiant client](images/log-in-fr.png){.thumbnail}
 
@@ -33,7 +33,7 @@ La suite de ce guide vous donne des méthodes pour résoudre les cas fréquents 
 
 #### Je ne connais pas mon identifiant client, comment le retrouver ?
 
-L'identifiant client OVHcloud, qui se présente sous la forme **xx11111-ovh**, vous sera invariablement demandé lorsque vous vous connecterez à votre compte ou que vous contacterez l'assistance technique d'OVHcloud. Vous pouvez le retrouver de différentes manières.
+L'identifiant client OVHcloud, qui se présente sous la forme **aa00000-ovh**, vous sera invariablement demandé lorsque vous vous connecterez à votre compte ou que vous contacterez l'assistance technique d'OVHcloud. Vous pouvez le retrouver de différentes manières.
 
 ##### **Dans les e-mails envoyés par OVHcloud**
 

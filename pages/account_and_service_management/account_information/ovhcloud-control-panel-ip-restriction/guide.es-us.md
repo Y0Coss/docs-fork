@@ -51,7 +51,7 @@ Si utiliza una red 4G/5G como complemento, no olvide recuperar también la direc
 
 ### Etapa 2: Aplicar una restricción de acceso por IP
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Acceder a mi cuenta`{.action}..
+Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la parte superior derecha y seleccione `Acceder a mi cuenta`{.action}.
 
 A continuación, haga clic en la pestaña `Seguridad`{.action} para acceder a la siguiente página:
 

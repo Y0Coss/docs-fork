@@ -19,7 +19,7 @@ La création d'un compte peut s'effectuer avant ou pendant la commande de votre 
 
 ### Comment créer mon compte OVHcloud ?
 
-Pour créer un compte OVHcloud, il suffit de vous rendre sur [cette page](/links/manager){.external} et de compléter le formulaire en ligne.
+Pour créer un compte OVHcloud, il suffit de vous rendre sur [cette page](/links/manager) et de compléter le formulaire en ligne.
 
 ![formulaire création compte](images/account-creation.png){.thumbnail}
 

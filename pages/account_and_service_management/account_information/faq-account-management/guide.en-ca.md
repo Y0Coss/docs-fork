@@ -10,7 +10,7 @@ Here are the most frequently asked questions about managing your OVHcloud accoun
 
 ### How do I create an OVHcloud account?
 
-You are free to create an account. This space facilitates access to your information and allows you to manage your services. Read our guide [Creating an OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+Creating an account is free and simple. Your account is designed to give you easy access to your information, and help you manage your services. Click [here](/pages/account_and_service_management/account_information/ovhcloud-account-creation) to create an account.
 
 > [!success]
 > Once you have created an account, remember to secure it by configuring two-factor authentication. You can find more information in our guide [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
@@ -87,7 +87,7 @@ You can choose from several solutions to secure your account, such as:
 - regular renewal of this password
 - two-factor authentication
 
-For two-factor authentication by sending a code via SMS or through IP restriction (authorisation or refusal of access to certain addresses), you can add security rules from your Control Panel. To access to these options, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}. Click on `Security`{.action} to display them. 
+For two-factor authentication by sending a code via SMS or through IP restriction (authorisation or refusal of access to certain addresses), you can add security rules from your Control Panel. To access to these options, log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `Access my account`{.action}. Click on `Security`{.action} to display them.
 
 And for more info, watch the [video](https://www.youtube.com/watch?v=odO58c4gJfc&list=PL0DynEzr_sE5MnOfJOpVJN-EhfMDWoqGS&index=24).
 
@@ -171,7 +171,7 @@ Closing your OVHcloud customer account and deleting your personal data is only p
 
 If the above conditions are met, you can request to delete your OVHcloud account and the related data by following these steps:
 
-1. Log in to the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
+1. Log in to the [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help).
 2. Click the `Create ticket`{.action} button.
 3. Select the reason `Manage your OVHcloud customer account`{.action}.
 4. Specify `I want to close my OVHcloud account`{.action} and follow the steps described.
