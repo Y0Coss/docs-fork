@@ -185,7 +185,7 @@ Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'ent
 
 ##### **CentOS, AlmaLinux et RockyLinux**
 
-Une fois que vous avez identifié votre interface de réseau privé, utilisez un éditeur de texte de votre choix pour créer le fichier de configuration réseau suivant. Remplacez `NETWORK_INTERFACE` par votre propre valeur.
+Une fois que vous avez identifié votre interface de réseau privé, utilisez l'éditeur de texte de votre choix pour créer le fichier de configuration réseau suivant. Remplacez `NETWORK_INTERFACE` par votre propre valeur.
 
 ```bash
 sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
