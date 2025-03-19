@@ -253,7 +253,7 @@ nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAM
 nmcli connection add type ethernet con-name private-interface ifname eno2
 ```
 
-Vérifiez que l'interface a été correctement connectée :
+- Vérifiez que l'interface a été correctement connectée :
 
 ```bash
 $ nmcli device status
