@@ -96,7 +96,7 @@ Ajoutez les lignes suivantes à la configuration existante après la ligne `vers
               - IP_ADDRESS/PREFIX
 ```
 
-**Exemple**
+**Exemple :**
 
 ![netplan config](images/netplan_configuration.png){.thumbnail}
 
