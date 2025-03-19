@@ -202,7 +202,7 @@ ONBOOT=yes
 TYPE=Ethernet
 ```
 
-**Exemple**
+**Exemple :**
 
 ![centos config](images/centos_alma_configuration.png){.thumbnail}
 
