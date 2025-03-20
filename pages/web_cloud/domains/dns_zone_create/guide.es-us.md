@@ -1,7 +1,7 @@
 ---
 title: 'Crear una zona DNS de OVHcloud para un dominio'
 excerpt: 'Descubra cómo crear una zona DNS en OVHcloud para su dominio desde el área de cliente'
-updated: 2024-06-26
+updated: 2025-03-17
 ---
 
 ## Objetivo
@@ -42,7 +42,7 @@ Existen diversos motivos por los que podría necesitar crear una zona DNS para s
 
 ### Etapa 1: crear la zona DNS desde el área de cliente de OVHcloud
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y acceda al apartado `Web cloud`{.action}. En la columna izquierda, haga clic en `Contratar`{.action} y, seguidamente, en el recuadro `Zona DNS`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y acceda al apartado `Web cloud`{.action}. En la columna de la izquierda, haga clic en `Zonas DNS`{.action} y seleccione el botón `Contratar`{.action} situado en la parte superior derecha de la tabla.
 
 Introduzca el dominio en la nueva página, por ejemplo: *domain.tld*) para el que desea crear una zona DNS de OVHcloud. Espere a que la herramienta realice las comprobaciones necesarias sobre el dominio.
 
@@ -69,7 +69,7 @@ Para editar esta zona DNS, consulte nuestra guía [Editar una zona DNS en OVHclo
 
 > [!primary]
 >
-> Si acaba de crear la zona DNS y el dominio no aparece aún en la lista de sus servicios (en la sección `Web cloud`{.action} del área de cliente de OVHcloud y, seguidamente, en la sección `Dominios`{.action}), espere entre 15 y 20 minutos y vuelva a cargar la página.
+> Si acaba de crear la zona DNS y el dominio no aparece aún en la lista de sus servicios (en la sección `Web cloud`{.action} del área de cliente de OVHcloud y, seguidamente, en la sección `Zonas DNS`{.action}), espere entre 15 y 20 minutos y vuelva a cargar la página.
 >
 
 ### Etapa 3: cambiar los servidores DNS del dominio
