@@ -2,7 +2,7 @@
 title: 'Transferring a .pl domain name to OVHcloud'
 hidden: true
 excerpt: 'Find out how to transfer a .pl domain name to OVHcloud'
-updated: 2024-06-28
+updated: 2025-03-17
 ---
 
 ## Objective
@@ -105,7 +105,7 @@ You can also complete your order with a [web hosting plan](/links/web/hosting){.
 
 ![domain](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
-Once the order has been confirmed, you will receive a free purchase order. The transfer process will only start once you have confirmed this free purchase order. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](/links/manager){.external}. To track the progress, click `Domain`{.action} names , then`Ongoing`{.action} operations.
+Once the order has been confirmed, you will receive a free purchase order. The transfer process will only start once you have confirmed this free purchase order. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](/links/manager){.external}. To track the progress, log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.. Click on `Ongoing operations`{.action}.
 
 ### Step 4: Transfer confirmation
 
@@ -131,7 +131,7 @@ Once you have modified your email address, order a [new transfer request](#step3
 
 ### Step 5: manage a domain name with OVHcloud
 
-Once the transfer procedure is complete, you can manage your domain name from the [OVHcloud Control Panel](/links/manager){.external}. To do this, select `Web Cloud`{.action}, click `Domain`{.action} names, then click on the domain name concerned.
+Once the transfer procedure is complete, you can manage your domain name from the [OVHcloud Control Panel](/links/manager){.external}. To do this, select `Web Cloud`{.action}, click `Domain names`{.action}, then click on the domain name concerned.
 
 ## Go further
 

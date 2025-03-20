@@ -1,7 +1,7 @@
 ---
 title: 'Transfer domeny .pl do OVHcloud'
 excerpt: "Dowiedz się, jak wykonać transfer domeny .pl do OVHcloud"
-updated: 2024-06-28
+updated: 2025-03-17
 ---
 
 ## Wprowadzenie
@@ -105,7 +105,7 @@ Możesz również zakończyć zamówienie [hostingiem www](/links/web/hosting){.
 
 ![domena](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
-Po zatwierdzeniu zamówienia otrzymasz bezpłatne zamówienie. Transfer rozpocznie się po zatwierdzeniu tego darmowego zamówienia. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](/links/manager){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action}, następnie `Operacje w toku`{.action}.
+Po zatwierdzeniu zamówienia otrzymasz bezpłatne zamówienie. Transfer rozpocznie się po zatwierdzeniu tego darmowego zamówienia. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](/links/manager){.external}. Aby śledzić postęp procesu, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Operacje w toku`{.action}.
 
 ### Etap 4: Zatwierdzenie transferu
 

@@ -1,7 +1,7 @@
 ---
 title: 'Transferir un dominio a OVHcloud'
 excerpt: 'Descubra cómo realizar la transferencia de un dominio a OVHcloud'
-updated: 2024-06-28
+updated: 2025-03-17
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/d-sBduMODQg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -123,7 +123,7 @@ También puede completar el pedido con un [alojamiento web](/links/web/hosting){
 
 #### Seguimiento de la transferencia tras el pedido
 
-Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](/links/manager){.external}. Para consultar el progreso, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
+Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](/links/manager){.external}. Para consultar el progreso, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Operaciones en curso`{.action}.
 
 > [!primary]
 >
@@ -141,7 +141,7 @@ Una vez validados el pedido y el código de transferencia, el actual agente regi
 
 Si el actual agente registrador rechaza la solicitud, contacte con él para conocer el motivo por el que la rechazó.
 
-El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcloud](/links/manager){.external}. Seleccione `Web Cloud`{.action} y acceda a la sección `Dominios`{.action} y haga clic en `Operaciones en curso`{.action}.
+El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcloud](/links/manager){.external}. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Operaciones en curso`{.action}.
 
 > [!primary]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Domena - Jak zmienić właściciela?"
 excerpt: "Dowiedz się, jak zmienić właściciela domeny lub zaktualizować informacje na jej temat"
-updated: 2025-02-05
+updated: 2025-03-17
 ---
 
 ## Wprowadzenie
@@ -44,7 +44,7 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 >
 > - strona internetowa rejestru **TLD**;
 > - Lista [TLD dostępnych na OVHcloud](/links/web/domains-tld);
-> - aktualizacje statusu domeny. Aby to sprawdzić, zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, a następnie `Operacje w toku`{.action}.
+> - aktualizacje statusu domeny. Aby to sprawdzić, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Operacje w toku`{.action}.
 >
 
 ### Rozpocznij procedurę zmiany właściciela lub zmień powiązane z nim informacje

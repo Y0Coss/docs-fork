@@ -1,7 +1,7 @@
 ---
 title: "Nome de domínio - Como alterar o titular?"
 excerpt: "Saiba como alterar o titular de um domínio ou atualizar as informações associadas ao mesmo"
-updated: 2025-02-05
+updated: 2025-03-17
 ---
 
 ## Objetivo
@@ -44,7 +44,7 @@ Para além da [gestão dos contactos](/pages/account_and_service_management/acco
 >
 > - o sítio Web do registo **TLD** correspondente;
 > - a [lista dos TLD disponíveis na OVHcloud](/links/web/domains-tld);
-> - atualizações do estado do domínio. Para verificar isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e, a seguir, em `Operações em curso`{.action}.
+> - atualizações do estado do domínio. Para verificar isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Operações em curso`{.action}.
 >
 
 ### Iniciar o procedimento de alteração de titular ou alterar as informações associadas

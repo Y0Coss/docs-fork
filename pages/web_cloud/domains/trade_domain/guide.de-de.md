@@ -1,7 +1,7 @@
 ---
 title: "Domainnamen - Inhaber eines Domainnamens ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens ändern oder die zugehörigen Informationen aktualisieren"
-updated: 2025-02-05
+updated: 2025-03-17
 ---
 
 ## Ziel
@@ -43,7 +43,7 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 >
 > - Die Webseite der zuständigen **TLD**-Registry.
 > - Die [Beschreibungen der bei OVHcloud verfügbaren **TLD**s](/links/web/domains-tld).
-> - Statusaktualisierungen des Domainnamens. Loggen Sie sich hierzu im [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und dann auf `Laufende Vorgänge`{.action}.
+> - Statusaktualisierungen des Domainnamens. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Laufende Operationen`{.action}.
 >
 
 ### Initiieren des Inhaberwechsels oder Ändern der Inhaberinformationen

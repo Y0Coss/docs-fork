@@ -1,7 +1,7 @@
 ---
 title: 'Transferring a domain name to OVHcloud'
 excerpt: 'Find out how to transfer a generic domain name to OVHcloud'
-updated: 2024-06-28
+updated: 2025-03-17
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,7 +122,7 @@ Domains can also be ordered in addition to a [Web Hosting plan](/links/web/hosti
 
 #### Tracking a transfer after the order
 
-Once the order has been confirmed, you will receive a purchase order. The transfer process will not start until payment has been received. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](/links/manager){.external}. To track the progress, open `Domain names`{.action}, then click on `Ongoing operations`{.action}.
+Once the order has been confirmed, you will receive a purchase order. The transfer process will not start until payment has been received. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](/links/manager){.external}. To track the progress, log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.. Click on `Ongoing operations`{.action}.
 
 > [!primary]
 >
@@ -140,7 +140,7 @@ Once the order and transfer code have been confirmed, the domain name registrar 
 
 If a refusal is issued by the current registrar, contact them to find out why they refused it.
 
-The transfer process can be restarted from the [OVHcloud Control Panel](/links/manager){.external}. Select `Web Cloud`{.action} and go to the `Domain names`{.action}, then click on `Ongoing operations`{.action}.
+The transfer process can be restarted from the [OVHcloud Control Panel](/links/manager){.external}. Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.. Click on `Ongoing operations`{.action}.
 
 > [!primary]
 >
