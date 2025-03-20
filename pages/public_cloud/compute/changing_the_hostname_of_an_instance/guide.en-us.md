@@ -1,7 +1,7 @@
 ---
 title: 'Changing the hostname of a Public Cloud instance'
 excerpt: 'Find out how to change the hostname of a Public Cloud instance'
-updated: 2025-03-19
+updated: 2025-03-20
 ---
 
 ## Objective

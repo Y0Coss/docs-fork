@@ -1,7 +1,7 @@
 ---
 title: 'Modificar o hostname de uma instância Public Cloud'
 excerpt: 'Saiba como modificar o hostname de uma instância Public Cloud'
-updated: 2025-03-19
+updated: 2025-03-20
 ---
 
 > [!primary]

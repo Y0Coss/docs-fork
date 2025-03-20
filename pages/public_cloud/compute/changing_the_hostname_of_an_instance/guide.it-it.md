@@ -1,7 +1,7 @@
 ---
 title: 'Modificare l’hostname di un’istanza Public Cloud'
 excerpt: "Modifica l'hostname della tua istanza"
-updated: 2025-03-19
+updated: 2025-03-20
 ---
 
 > [!primary]

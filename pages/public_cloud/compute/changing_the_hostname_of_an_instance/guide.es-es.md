@@ -1,7 +1,7 @@
 ---
 title: 'Cambiar el hostname de una instancia de Public Cloud'
 excerpt: 'Esta guía explica cómo reconfigurar cloud-init para poder cambiar el hostname de una instancia'
-updated: 2025-03-19
+updated: 2025-03-20
 ---
 
 ## Objetivo
