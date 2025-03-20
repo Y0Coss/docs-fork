@@ -1,7 +1,7 @@
 ---
 title: "Reencaminhar um domínio gerido pela OVHcloud"
 excerpt: "Descubra os diferentes tipos de reencaminhamento e como criar um reencaminhamento para um domínio gerido pela OVHcloud"
-updated: 2024-03-08
+updated: 2025-03-17
 ---
 
 ## Objetivo
@@ -42,7 +42,7 @@ Estas ações podem ser realizadas de várias formas:
 
 ### Reencaminhar um domínio a partir da Área de Cliente
 
-Ligue-se à [Área de Cliente OVHcloud](/links/manager){.external}, aceda à secção `Web Cloud`{.action}, selecione o domínio a reencaminhar na secção `Noms de domínio`{.action} e clique no separador `Redirecção`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique no menu `Zonas DNS`{.action} e escolha o domínio em causa. Clique no separador `Redirecção`{.action}.
 
 A tabela apresenta os reencaminhamentos ativos para o seu domínio. Pode gerir os seus reencaminhamentos existentes utilizando o botão `...`{.action} à direita de cada linha.
 
