@@ -1,6 +1,6 @@
 ---
 title: 'Hostname einer Public Cloud Instanz ändern'
-excerpt: 'So ändern Sie den Hostnamen einer Public Cloud Instanz'
+excerpt: 'Erfahren Sie hier, wie Sie den Hostnamen einer Public Cloud Instanz bearbeiten'
 updated: 2025-03-19
 ---
 
@@ -16,7 +16,7 @@ Mit dem *cloud-init* Modul können Sie Ihre [Public Cloud Instanz](https://www.o
 >
 > Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
 >
-> Diese Anleitung richtet sich an Instanzen, die auf Linux-Distributionen basieren **nur**.
+> Diese Anleitung betrifft **nur** Instanzen, die auf Linux-Distributionen basieren.
 >
 
 ## Voraussetzungen
@@ -32,12 +32,12 @@ Mit dem *cloud-init* Modul können Sie Ihre [Public Cloud Instanz](https://www.o
 >
 > Für diese Anleitung verwenden wir den Dateieditor **vi**, da er standardmäßig auf Linux-Distributionen vorhanden ist. Sie können natürlich auch einen Editor Ihrer Wahl verwenden.
 >
-> Grundlegende Verwendung von vi :
+> Grundlegende Verwendung von vi:
 >
-> - Drücken Sie **i**, um in den Texteinfügemodus zu wechseln.
-> - Drücken Sie **Esc** (Esc), um den Einfügemodus zu verlassen.
-> - Geben Sie **:wq** und dann **Enter** ein, um zu speichern und zu beenden.
-> - Geben Sie **:q!** und dann **Enter** ein, um ohne zu speichern zu beenden.
+> - Drücken Sie **i**, um in den Editiermodus zu wechseln.
+> - Drücken Sie **Esc**, um den Editiermodus zu verlassen.
+> - Geben Sie **:wq** gefolgt von **Enter** ein, um zu speichern und zu beenden.
+> - Geben Sie **:q!** gefolgt von **Enter** ein, um ohne zu speichern zu beenden.
 
 Um das *cloud-init* Modul zu deaktivieren, muss zunächst die Konfigurationsdatei bearbeitet werden.
 
@@ -54,13 +54,13 @@ manage_etc_hosts: false
 
 ### Hostname ändern
 
-Der erste Schritt besteht darin, den Hostnamen (*hostname*) zu ändern. In diesem Beispiel ändern wir den Hostnamen in **webserver**. Sie können ihn natürlich nach Ihren Vorlieben ändern:
+Der erste Schritt besteht darin, den Hostnamen (*hostname*) zu ändern. In diesem Beispiel ändern wir den Hostnamen zu **webserver**. Sie können natürlich einen beliebigen Namen eingeben:
 
 ```sh
 sudo vi /etc/hostname
 ```
 
-Fügen Sie den Inhalt hinzu oder ersetzen Sie ihn durch:
+Fügen Sie die Zeile hinzu oder ersetzen Sie sie:
 
 ```sh
 webserver
@@ -72,7 +72,7 @@ Anschließend muss noch die Datei `/etc/hosts` geändert werden:
 sudo vi /etc/hosts
 ```
 
-Fügen Sie den Inhalt hinzu oder ersetzen Sie ihn durch:
+Fügen Sie die Zeile hinzu oder ersetzen Sie sie:
 
 ```sh
 127.0.1.1 webserver.localdomain webserver
@@ -96,4 +96,4 @@ sudo cat /etc/hosts
 
 ## Weiterführende Informationen 
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.
