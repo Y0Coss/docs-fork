@@ -35,17 +35,17 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 
 In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzliche Disk erstellt haben, wie [in unserer Anleitung beschrieben](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
 
-## Überwachen der datenträgerverwendung vor der größenänderung
+### Überwachen der Datenträgerverwendung vor der Größenänderung
 
-> [!Warning]
+> [!warning]
 >
-> Wir empfehlen, dass Sie immer 20 % freien Speicherplatz auf Ihren Storage-Volumes behalten. Dies gewährleistet eine optimale Leistung und vermeidet das Risiko von Systemschäden oder -ausfällen, wenn das Volume seine maximale Kapazität erreicht.
+> Wir empfehlen, dass Sie mindestens 20% freien Speicherplatz auf Ihren Storage-Volumes beibehalten. Dies sorgt für eine optimale Leistung und vermeidet das Risiko von Systemschäden oder -ausfällen, wenn das Volume seine maximale Kapazität erreicht.
 >
 
-Um sicherzustellen, dass Sie die Größe Ihrer Festplatte zum richtigen Zeitpunkt ändern, ist es wichtig, die Festplattennutzung regelmäßig zu überwachen. Im Folgenden finden Sie kurze Lernprogramme für Windows und Linux, mit denen Sie den Speicherplatz nachverfolgen und im Voraus planen können, wann ein Upgrade erforderlich ist.
+Um sicherzustellen, dass Sie die Größe Ihrer Disk rechtzeitig ändern, ist es wichtig, die Datenträgernutzung regelmäßig zu prüfen. Im Folgenden finden Sie entsprechende Kommandozeilentools für Windows und Linux, mit denen Sie den Speicherplatz anzeigen und im Voraus planen können, wann ein Upgrade erforderlich ist.
 
 > [!tab]
-> Unter Windows
+> Windows
 >> /// details | **Verwenden der Eingabeaufforderung**
 >>
 >> Eingabeaufforderung öffnen (Win + R → cmd → Enter).
@@ -56,7 +56,7 @@ Um sicherzustellen, dass Sie die Größe Ihrer Festplatte zum richtigen Zeitpunk
 >> wmic logicaldisk get name, size, freespace
 >> ```
 >>
->> Hier werden der freie Speicherplatz und die Gesamtgröße der einzelnen Festplatten angezeigt.
+>> Hier werden der freie Speicherplatz und die Gesamtgröße der einzelnen Datenträger angezeigt.
 >>
 >> ///
 >>
@@ -74,8 +74,8 @@ Um sicherzustellen, dass Sie die Größe Ihrer Festplatte zum richtigen Zeitpunk
 >>
 >> ///
 >>
-> Unter Linux
->> /// details | **Verwenden des Befehls 'df'**
+> Linux
+>> /// details | **Verwenden des Befehls "df"**
 >>
 >> Um die allgemeine Datenträgerauslastung zu überprüfen, führen Sie Folgendes aus:
 >>
@@ -83,13 +83,13 @@ Um sicherzustellen, dass Sie die Größe Ihrer Festplatte zum richtigen Zeitpunk
 >> df -h
 >> ```
 >>
->> Dadurch wird die Festplattenverwendung in einem lesbaren Format angezeigt.
+>> Dadurch wird die Speicherplatzverwendung in einem expliziten Format angezeigt.
 >>
 >> ///
 >>
->> /// details | **Verwenden des Befehls 'lsblk'**
+>> /// details | **Verwenden des Befehls "lsblk"**
 >>
->> So zeigen Sie Festplattenpartitionen und ihre Größe an:
+>> So zeigen Sie Disk-Partitionen und ihre Größe an:
 >>
 >> ```bash
 >> lsblk
