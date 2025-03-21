@@ -400,7 +400,7 @@ Aby kontynuować, konieczna jest interakcja z człowiekiem.
 Skontaktuj się z administratorem serwera.
 ```
 
-Come indicato nel messaggio, l’account email è considerato già connesso. Parliamo di "sessione". Ciò significa che il tuo account email è già in uso dal server di posta e che la sessione precedente deve essere chiusa. Verifica che il tuo account email non sia già aperto su roundcube. Cancella anche i dati in cache sul tuo browser.
+Jak wskazano w wiadomości, Twoje konto e-mail jest uważane za już zalogowane. Mówimy tu o "sesji". Oznacza to, że Twoje konto e-mail jest już używane dla serwera e-mail i należy zamknąć poprzednią sesję. Upewnij się, że Twoje konto e-mail nie jest jeszcze otwarte w interfejsie Roundcube. Pamięć podręczną należy również czyścić w przeglądarce internetowej.
 
 ## Sprawdź również
 
