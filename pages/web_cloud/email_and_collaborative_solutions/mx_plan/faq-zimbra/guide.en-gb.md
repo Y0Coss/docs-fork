@@ -5,6 +5,17 @@ updated: 2024-11-15
 ---
 
 <style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
 .w-600 {
   max-width:600px !important;
 }
