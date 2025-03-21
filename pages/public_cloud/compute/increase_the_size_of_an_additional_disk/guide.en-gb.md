@@ -1,7 +1,7 @@
 ---
 title: Increasing the size of an additional disk
 excerpt: 'Find out how to increase the size of an additional volume and enlarge its main partition'
-updated: 2024-03-05
+updated: 2025-03-21
 ---
 
 <style>
@@ -35,7 +35,7 @@ If you have reached the maximum capacity on your additional disk, you can add mo
 
 The following steps presume that you have configured an additional disk according to [our guide](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
 
-## Monitoring Disk Usage Before Resizing
+## Monitoring disk usage before resizing
 
 > [!warning]
 >
@@ -87,7 +87,7 @@ To ensure that you resize your disk at the right moment, it is essential to moni
 >>
 >> ///
 >>
->> /// details | **Using 'lsblk ' command**
+>> /// details | **Using 'lsblk' command**
 >>
 >> To view disk partitions and their sizes:
 >>
@@ -232,6 +232,6 @@ The resized volume now includes the additional disk space.
 ## Go further
 
 [Creating and configuring an additional disk on an instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
-[Change your block storage volume type](/pages/public_cloud/compute/switch_volume_type)
+[Change your Block Storage volume type](/pages/public_cloud/compute/switch_volume_type)
 
 Join our [community of users](/links/community).

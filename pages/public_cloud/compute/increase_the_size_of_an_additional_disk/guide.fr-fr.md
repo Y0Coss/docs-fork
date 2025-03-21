@@ -1,7 +1,7 @@
 ---
 title: "Augmenter la taille d’un disque supplémentaire"
 excerpt: "Découvrez comment augmenter la taille d'un volume supplémentaire et agrandir sa partition principale"
-updated: 2024-03-05
+updated: 2025-03-21
 ---
 
 <style>
@@ -46,11 +46,11 @@ Pour vous assurer de redimensionner votre disque au bon moment, il est essentiel
 
 > [!tabs]
 > Pour Windows
->> /// details | **Utilision du Command Prompt**
+>> /// details | **Utilisation de l'invite de commandes**
 >>
->> Ouvrir le Command Prompt (Win + R → cmd → Enter).
+>> Ouvrez l'invite de commandes (Windows + R → cmd → Enter).
 >>
->> Exécutez la commande suivante:
+>> Exécutez la commande suivante :
 >>
 >> ```bash
 >> wmic logicaldisk get name, size, freespace
@@ -64,7 +64,7 @@ Pour vous assurer de redimensionner votre disque au bon moment, il est essentiel
 >>
 >> Ouvrir le PowerShell en tant qu'Administrateur.
 >>
->> Exécutez la commande suivante:
+>> Exécutez la commande suivante :
 >>
 >> ```bash
 >> Get-PSDrive | Where-Object {$_.Free -ne $null} | Select-Object Name, Used, Free
@@ -74,7 +74,7 @@ Pour vous assurer de redimensionner votre disque au bon moment, il est essentiel
 >>
 >> ///
 >>
-> On Linux
+> Pour Linux
 >> /// details | **Utilisation de la commande 'df'**
 >>
 >> Pour vérifier l'utilisation globale du disque, exécutez la commande

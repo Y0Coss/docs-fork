@@ -1,12 +1,22 @@
 ---
 title: 'Die Größe einer zusätzlichen Disk erweitern'
 excerpt: 'Erfahren Sie hier, wie Sie die Kapazität eines zusätzlichen Volumes vergrößern und die Hauptpartition anpassen'
-updated: 2022-03-29
+updated: 2025-03-21
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Ziel
 
@@ -24,6 +34,68 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 ## In der praktischen Anwendung
 
 In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzliche Disk erstellt haben, wie [in unserer Anleitung beschrieben](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance).
+
+## Überwachen der datenträgerverwendung vor der größenänderung
+
+> [!Warning]
+>
+> Wir empfehlen, dass Sie immer 20 % freien Speicherplatz auf Ihren Storage-Volumes behalten. Dies gewährleistet eine optimale Leistung und vermeidet das Risiko von Systemschäden oder -ausfällen, wenn das Volume seine maximale Kapazität erreicht.
+>
+
+Um sicherzustellen, dass Sie die Größe Ihrer Festplatte zum richtigen Zeitpunkt ändern, ist es wichtig, die Festplattennutzung regelmäßig zu überwachen. Im Folgenden finden Sie kurze Lernprogramme für Windows und Linux, mit denen Sie den Speicherplatz nachverfolgen und im Voraus planen können, wann ein Upgrade erforderlich ist.
+
+> [!tab]
+> Unter Windows
+>> /// details | **Verwenden der Eingabeaufforderung**
+>>
+>> Eingabeaufforderung öffnen (Win + R → cmd → Enter).
+>>
+>> Führen Sie den folgenden Befehl aus:
+>>
+>> „bash
+>> WMIC LogicalDisk: Abrufname, Größe, freier Speicherplatz
+>> „
+>>
+>> Hier werden der freie Speicherplatz und die Gesamtgröße der einzelnen Festplatten angezeigt.
+>>
+>> ///
+>>
+>> /// details | **Verwenden von PowerShell**
+>>
+>> Öffnen Sie PowerShell als Administrator.
+>>
+>> Führen Sie den folgenden Befehl aus:
+>>
+>> „bash
+>> Get-PSDrive | Where-Object {$_.Free -ne $null} | Objektname auswählen, verwendet, frei
+>> „
+>>
+>> Hier wird der belegte und verfügbare Speicherplatz angezeigt.
+>>
+>> ///
+>>
+> Unter Linux
+>> /// details | **Verwenden des Befehls 'df'**
+>>
+>> Um die allgemeine Datenträgerauslastung zu überprüfen, führen Sie Folgendes aus:
+>>
+>> „bash
+>> df -h
+>> „
+>>
+>> Dadurch wird die Festplattenverwendung in einem lesbaren Format angezeigt.
+>>
+>> ///
+>>
+>> /// details | **Verwenden des Befehls 'lsblk'**
+>>
+>> So zeigen Sie Festplattenpartitionen und ihre Größe an:
+>>
+>> „bash
+>> lsblk
+>> „
+>>
+>> ///
 
 ### Größe der Disk ändern
 
@@ -162,5 +234,6 @@ Das skalierte Volume beinhaltet nun den zusätzlichen Speicherplatz.
 ## Weiterführende Informationen
 
 [Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
+[Typ des Block Storage-Volumes ändern](/pages/public_cloud/compute/switch_volume_type)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
