@@ -1,7 +1,7 @@
 ---
 title: Créer et configurer un disque supplementaire sur une instance
 excerpt: Découvrez comment attacher un nouveau volume à votre instance Public Cloud
-updated: 2025-03-04
+updated: 2025-03-21
 ---
 
 <style>
@@ -61,7 +61,7 @@ Le volume Classic est une solution de stockage fiable et économique, idéale po
 
 Le volume High-Speed est conçu pour des applications nécessitant un accès plus rapide aux données. Avec une performance pouvant atteindre 3000 IOPS, il convient parfaitement aux cas d’usage suivants :
 
-- Bases de données transactionnelles (MySQL, PostgreSQL, etc..)
+- Bases de données transactionnelles (MySQL, PostgreSQL, etc.)
 - Environnements de virtualisation et de conteneurs
 - Applications nécessitant une latence réduite et un débit élevé
 
@@ -69,7 +69,7 @@ Le volume High-Speed est conçu pour des applications nécessitant un accès plu
 
 /// details | **High-Speed Gen2 – 30 IOPS/GB et jusqu’à 20 000 IOPS**
 
-La génération 2 des volumes High-Speed est optimisée pour les workloads les plus exigeants. Avec une performance de 30 IOPS/GB, pouvant atteindre 20 000 IOPS, ce type de volume est recommandé pour :
+La génération 2 des volumes High-Speed est optimisée pour les workloads les plus exigeants. Avec une performance de 30 IOPS/GB, pouvant atteindre 20 000 IOPS, ce type de volume est recommandé pour les usages suivants :
 
 - Big Data et analyses en temps réel
 - Intelligence artificielle et Machine Learning
@@ -77,7 +77,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 
 ///
 
-![volume_types](images/volume-types.png){.thumbnail}
+![volumes_types](images/volume-types.png){.thumbnail}
 
 ### Attacher un nouveau volume
 
@@ -93,7 +93,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> > [!warning]
 >> >
->> > Remarque : Votre volume doit être créé dans la même région que l'instance à laquelle vous souhaitez l'attacher. Si vous le créez dans une autre région, vous pouvez le supprimer et le recréer dans la bonne région, ou vous pouvez migrer la région en suivant [ce guide.](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another)
+>> > Remarque : Votre volume doit être créé dans la même région que l'instance à laquelle vous souhaitez l'attacher. Si vous le créez dans une autre région, vous pouvez le supprimer et le recréer dans la bonne région, ou vous pouvez migrer la région en suivant [ce guide](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
 >> >
 >>
 >> ![create disk](images/avolume02.png){.thumbnail}
