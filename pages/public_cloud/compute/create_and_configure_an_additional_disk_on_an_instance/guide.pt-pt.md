@@ -78,7 +78,7 @@ A geração 2 dos volumes High-Speed é otimizada para as cargas de trabalho mai
 
 ///
 
-![tipos_de_volumes](images/volume-type.png){.thumbnail}
+![tipos_de_volumes](images/volume-types.png){.thumbnail}
 
 ### Associar um novo volume
 
