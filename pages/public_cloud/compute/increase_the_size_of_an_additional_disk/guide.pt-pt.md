@@ -53,7 +53,7 @@ Para garantir que redimensione o disco no momento certo, é essencial monitoriza
 >> Execute o seguinte comando:
 >>
 >> ```bash
->> wmic logicaldisk obter nome, tamanho, espaço livre
+>> wmic logicaldisk get name, size, freespace
 >> ```
 >>
 >> Isso exibirá o espaço livre e o tamanho total de cada disco.
@@ -67,7 +67,7 @@ Para garantir que redimensione o disco no momento certo, é essencial monitoriza
 >> Execute o seguinte comando:
 >>
 >> ```bash
->> Get-PSDrive | Where-Object {$_.Free -ne $null} | Nome Do Select-Object, Utilizado, Livre
+>> Get-PSDrive | Where-Object {$_.Free -ne $null} | Select-Object Name, Used, Free
 >> ```
 >>
 >> Isso mostrará o espaço de disco utilizado e disponível.

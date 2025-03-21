@@ -67,7 +67,7 @@ Aby mieć pewność, że rozmiar dysku zostanie zwiększony we właściwym momen
 >> Uruchom następujące polecenie:
 >>
 >> ```bash
->> Get-PSDrive | Gdzie-Obiekt {$_.Free -ne $null} | Wybierz Nazwę Obiektu, Używany, Bezpłatny
+>> Get-PSDrive | Where-Object {$_.Free -ne $null} | Select-Object Name, Used, Free
 >> ```
 >>
 >> Zostanie wyświetlona wykorzystana i dostępna przestrzeń dyskowa.

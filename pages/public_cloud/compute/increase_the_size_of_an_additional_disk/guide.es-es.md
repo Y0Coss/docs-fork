@@ -53,7 +53,7 @@ Para asegurarse de que cambia el tamaño del disco en el momento adecuado, es es
 >> Ejecute el siguiente comando:
 >>
 >> ```bash
->> wmic logicaldisk get nombre, tamaño, espacio libre
+>> wmic logicaldisk get name, size, freespace
 >> ```
 >>
 >> Esto mostrará el espacio libre y el tamaño total de cada disco.

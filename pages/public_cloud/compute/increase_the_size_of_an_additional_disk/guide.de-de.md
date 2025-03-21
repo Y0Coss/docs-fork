@@ -52,9 +52,9 @@ Um sicherzustellen, dass Sie die Größe Ihrer Festplatte zum richtigen Zeitpunk
 >>
 >> Führen Sie den folgenden Befehl aus:
 >>
->> „bash
->> WMIC LogicalDisk: Abrufname, Größe, freier Speicherplatz
->> „
+>> ```bash
+>> wmic logicaldisk get name, size, freespace
+>> ```
 >>
 >> Hier werden der freie Speicherplatz und die Gesamtgröße der einzelnen Festplatten angezeigt.
 >>
@@ -66,9 +66,9 @@ Um sicherzustellen, dass Sie die Größe Ihrer Festplatte zum richtigen Zeitpunk
 >>
 >> Führen Sie den folgenden Befehl aus:
 >>
->> „bash
->> Get-PSDrive | Where-Object {$_.Free -ne $null} | Objektname auswählen, verwendet, frei
->> „
+>> ```bash
+>> Get-PSDrive | Where-Object {$_.Free -ne $null} | Select-Object Name, Used, Free
+>> ```
 >>
 >> Hier wird der belegte und verfügbare Speicherplatz angezeigt.
 >>
@@ -79,9 +79,9 @@ Um sicherzustellen, dass Sie die Größe Ihrer Festplatte zum richtigen Zeitpunk
 >>
 >> Um die allgemeine Datenträgerauslastung zu überprüfen, führen Sie Folgendes aus:
 >>
->> „bash
+>> ```bash
 >> df -h
->> „
+>> ```
 >>
 >> Dadurch wird die Festplattenverwendung in einem lesbaren Format angezeigt.
 >>
@@ -91,9 +91,9 @@ Um sicherzustellen, dass Sie die Größe Ihrer Festplatte zum richtigen Zeitpunk
 >>
 >> So zeigen Sie Festplattenpartitionen und ihre Größe an:
 >>
->> „bash
+>> ```bash
 >> lsblk
->> „
+>> ```
 >>
 >> ///
 
