@@ -272,9 +272,10 @@ Non c'è nulla da fare in questa situazione. Anche se il tuo dominio compare con
 
 > [!alert]
 >
-> Non è consigliabile utilizzare un indirizzo e-mail con un nome di dominio IDN (internationalized Domain Name) da un client di posta elettronica (Outlook, Mail per macOS, etc.), poiché ciò può comportare incompatibilità. Infatti, alcuni client di posta elettronica non interpretano i nomi di dominio con caratteri accentati, il che blocca la trasmissione di queste e-mail. Il mittente della e-mail riceve quindi un messaggio che indica che l'indirizzo inserito non esiste.
+> Non è consigliabile utilizzare un indirizzo email con un dominio IDN (Internationalized Domain Name) da un client di posta (Outlook, Mail di macOS, ecc...). Poiché alcuni client di posta non interpretano i domini con caratteri accentati, l'invio delle email è bloccato. Il mittente dell’email riceverà automaticamente un messaggio per informarti che il tuo indirizzo email non esiste.
 >
-> **Si consiglia di riservare, in aggiunta al tuo nome di dominio con accenti, lo stesso nome di dominio senza questi accenti, al fine di evitare qualsiasi incompatibilità a livello di scambi di e-mail.**
+> **Si raccomanda di prenotare, in aggiunta al dominio con caratteri accentati, lo stesso dominio senza questi accenti, per evitare qualsiasi incompatibilità a livello di scambi di email.**
+>
 
 ///
 
