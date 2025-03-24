@@ -58,7 +58,7 @@ Sie können aber einen privaten IP-Bereich Ihrer Wahl und jede beliebige Adresse
 
 #### Identifikation des vRack Interface <a name="vrack-interface"></a>
 
-Die Namen der Netzwerkinterfaces Ihrer Server sind nicht immer die gleichen.
+Die Namen der Netzwerkinterfaces Ihrer Server sind nicht immer gleich.
 
 Der sicherste Weg, das richtige Interface für das vRack zu bestimmen, ist das Prüfen des Server-Tabs `Netzwerkinterfaces`{.action} im [OVHcloud Kundencenter](/links/manager). Notieren Sie sich aus der Tabelle am Seitenende die **MAC-Adresse** des Interfaces vom Typ **Privat**, die in dieser Ansicht auch als "Name" angezeigt wird.
 
@@ -123,7 +123,7 @@ Bearbeiten Sie mit einem beliebigen Texteditor die Netzwerkkonfigurationsdatei i
 editor /etc/network/interfaces.d/50-cloud-init
 ```
 
-Fügen Sie der vorhandenen Konfiguration die folgenden Zeilen hinzu, ersetzen Sie `NETWORK_INTERFACE`, `IP_ADDRESS` und `NETMASK` durch eigene Werte:
+Fügen Sie der vorhandenen Konfiguration die folgenden Zeilen hinzu. Ersetzen Sie `NETWORK_INTERFACE`, `IP_ADDRESS` und `NETMASK` durch eigene Werte:
 
 ```console
 auto NETWORK_INTERFACE
@@ -224,7 +224,7 @@ Wiederholen Sie diesen Vorgang für Ihre anderen Server und weisen Sie jedem Ser
 
 ##### Fedora
 
-Sobald Sie den Namen Ihrer privaten Schnittstelle identifiziert haben (wie [hier](#vrack-interface) erklärt), führen Sie folgenden Befehl aus, um sicherzustellen, dass es korrekt verbunden ist. In unserem Beispiel heißt unser Interface `eno2`:
+Sobald Sie den Namen Ihrer privaten Schnittstelle identifiziert haben (wie [hier](#vrack-interface) erklärt), führen Sie folgenden Befehl aus, um sicherzustellen, dass sie korrekt verbunden ist. In unserem Beispiel heißt das Interface `eno2`:
 
 ```bash 
 $ nmcli device status
@@ -235,13 +235,13 @@ lo               loopback  connected (externally)  lo
 eno2             ethernet  disconnected            --
 ```
 
-Wenn der `STATE` des `DEVICE` als `disconnected` erscheint, muss dieser vor der Konfiguration der IP verbunden werden.
+Wenn der Zustand von `DEVICE` in der Zeile `STATE` als `disconnected` erscheint, muss das Interface vor der Konfiguration der IP erst verbunden werden.
 
-Beim Hinzufügen einer **ethernet**-Verbindung müssen wir ein Konfigurationsprofil erstellen, das wir dann einem Gerät zuweisen.
+Beim Hinzufügen einer **ethernet**-Verbindung müssen wir ein Konfigurationsprofil erstellen, das wir dann einem Interface zuweisen.
 
 Führen Sie den folgenden Befehl aus und ersetzen Sie `INTERFACE_NAME` und `CONNECTION_NAME` durch eigene Werte.
 
-In unserem Beispiel haben wir unserem Konfigurationsprofil den Namen `private-interface` gegeben.
+In unserem Beispiel haben wir dem Konfigurationsprofil den Namen `private-interface` gegeben.
 
 ```bash
 nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
@@ -253,7 +253,7 @@ nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAM
 nmcli connection add type ethernet con-name private-interface ifname eno2
 ```
 
-- Stellen Sie sicher, dass die Schnittstelle ordnungsgemäß verbunden wurde:
+- Stellen Sie sicher, dass das Interface ordnungsgemäß verbunden wurde:
 
 ```bash
 $ nmcli device status
@@ -272,7 +272,7 @@ Danach wird im Ordner `/etc/NetworkManager/system-connections` eine neue Konfigu
 cloud-init-eno1.nmconnection  private-interface.nmconnection
 ```
 
-Sie können diese Datei dann mit dem Handler `nmcli` bearbeiten und `IP_ADDRESS`, `PREFIX` und `CONNECTION_NAME` durch eigene Werte ersetzen.
+Sie können diese Datei dann mit `nmcli` bearbeiten und `IP_ADDRESS`, `PREFIX` und `CONNECTION_NAME` durch eigene Werte ersetzen.
 
 - Fügen Sie Ihre IP hinzu:
 
@@ -310,7 +310,7 @@ sudo nmcli con mod CONNECTION_NAME connection.autoconnect true
 sudo nmcli con mod private-interface connection.autoconnect true
 ```
 
-- Starten Sie Ihr Netzwerk mit folgendem Befehl neu:
+- Starten Sie den Netzwerkdienst mit folgendem Befehl neu:
 
 ```bash
 sudo systemctl restart NetworkManager
