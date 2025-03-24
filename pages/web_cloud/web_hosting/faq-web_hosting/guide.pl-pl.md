@@ -270,9 +270,11 @@ Możesz również skontaktować się z [naszymi partnerami](/links/partner), aby
 
 Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli Twoja domena wyświetla się w [ratingu międzynarodowym (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name){.external} w Panelu klienta, będzie działać i wyświetlać się w sposób całkowicie normalny gdzie indziej. Adres Twojej strony WWW zostanie wyświetlony w żądanym przez Ciebie formacie. Twoje konta e-mail będą się wyświetlały w wybranym przez Ciebie formacie.
 
-> [!warning]
+> [!alert]
 >
-> Korzystanie z konta e-mail z domeną IDN w programie pocztowym (Outlook, Mail macOS, etc.) nie jest zalecane i może powodować niezgodności.
+> Odradzamy używanie adresu e-mail z nazwą domeny IDN (internationalized Domain Name) w programie pocztowym (Outlook, Mail na macOS, itp.), ponieważ może to prowadzić do niezgodności. Istnieją klienci poczty, którzy nie tłumaczą nazw domen z akcentami, co blokuje ich transmisję. Nadawca e-maila otrzyma wówczas wiadomość informującą, że wprowadzony adres nie istnieje.
+>
+> **Zalecana jest rezerwacja tej samej domeny bez tych akcentów jako uzupełnienie nazwy domeny.** W celu uniknięcia niezgodności podczas wymiany e-maili.
 >
 
 ///

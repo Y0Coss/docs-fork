@@ -270,9 +270,11 @@ Kontaktieren Sie einen [unserer Partner](/links/partner), um den Code Ihrer Webs
 
 Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in Ihrem Kundencenter mit [internationaler Notation (IDN)](https://de.wikipedia.org/wiki/Internationalisierter_Domainname){.external} angezeigt wird, funktioniert sie und wird andernorts vollkommen normal angezeigt. Die Webadresse Ihrer Website wird wie von Ihnen gewünscht angezeigt. Ihre E-Mail-Adressen werden auch bei Ihren Kontakten wie gewünscht angezeigt.
 
-> [!warning]
+> [!alert]
 >
-> Die Verwendung einer E-Mail-Adresse mit einer IDN Domain in einem E-Mail-Programm (Outlook, macOS Mail...) wird nicht empfohlen und kann zu Inkompatibilitäten führen.
+> Es wird nicht empfohlen, eine E-Mail-Adresse mit einem IDN-Domainnamen (internationalized domain name) in einem E-Mail-Client (Outlook, macOS Mail etc.) zu verwenden, da dies zu Inkompatibilitäten führen kann. Es gibt E-Mail-Clients, die Domainnamen mit Akzenten nicht übersetzen, was die Übertragung dieser E-Mails verhindert. Der Absender der E-Mail erhält dann eine Nachricht, dass die eingegebene Adresse nicht existiert.
+>
+> **Es wird empfohlen, zusätzlich zu Ihrer Domain mit Akzent den gleichen Domainnamen ohne diese Akzente zu reservieren, um Inkompatibilitäten beim E-Mail-Verkehr zu vermeiden.**
 >
 
 ///

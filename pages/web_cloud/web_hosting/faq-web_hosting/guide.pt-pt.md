@@ -270,9 +270,11 @@ Por fim, pode contactar um dos nossos parceiros (/links/partner), para que este 
 
 Não tem nada a fazer nesta situação. Mesmo que o seu domínio seja apresentado em [notação internacionalizada (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name){.external} na sua Área de Cliente, funcionará e apresentará-se de forma perfeitamente normal noutro local. O endereço Web do seu site será apresentado conforme solicitado. Os seus endereços de e-mail aparecerão também conforme o seu desejo.
 
-> [!warning]
+> [!alert]
 >
-> A utilização de um endereço de e-mail com um domínio IDN num software de correio eletrónico (Outlook, Mail de macOS, etc.) não é recomendada e pode provocar incompatibilidades.
+> É desaconselhado utilizar um endereço de e-mail com um nome de domínio IDN (internacionalized Domain Name) num cliente de e-mail (Outlook, Mail de macOS, etc.), pois pode causar incompatibilidades. De facto, existem clientes de e-mail que não traduzem os nomes de domínio com acentos, o que bloqueia a transmissão destes e-mails. O remetente do e-mail receberá uma mensagem indicando que o endereço introduzido não existe.
+>
+> **Recomenda-se a reserva do mesmo domínio sem estes acentos, em complemento do seu nome de domínio com acento, para evitar incompatibilidades na troca de e-mails.**
 >
 
 ///

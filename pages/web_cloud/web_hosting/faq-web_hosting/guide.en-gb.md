@@ -270,9 +270,11 @@ You can also contact one of our [partners](/links/partner) to check your website
 
 You have no action to take in this situation. Even if your domain appears in [internationalised notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name){.external} in your Control Panel, it will work and display in a completely normal way elsewhere. Your website's web address will be displayed as you requested. Your email addresses will also appear as you wish to your contacts.
 
-> [!warning]
+> [!alert]
 >
-> Using an email address with an IDN domain in an email client (Outlook, macOS Mail, etc.) is not recommended and may cause incompatibilities.
+> It is not recommended to use an email address with an internationalized domain name (IDN) in an email client (Outlook, macOS Mail, etc.), as this can lead to incompatibilities. Some email clients do not translate domain names with accents, which blocks the transmission of emails. The sender of the email then receives a message indicating that the address entered does not exist.
+>
+> **It is recommended that you reserve the same domain name in addition to your domain name with an accent, to avoid any incompatibility in email exchanges.**
 >
 
 ///

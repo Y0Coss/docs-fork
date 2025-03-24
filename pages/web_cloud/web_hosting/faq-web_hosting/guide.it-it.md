@@ -270,9 +270,11 @@ contatta uno dei [nostri partner](/links/partner) per verificare il codice infor
 
 Non c'è nulla da fare in questa situazione. Anche se il tuo dominio compare con [rating internazionale (IDN)](https://it.wikipedia.org/wiki/Nome_di_dominio_internazionalizzato){.external} nello Spazio Cliente, funzionerà e verrà visualizzato in modo del tutto normale. L'indirizzo Web del tuo sito verrà visualizzato come richiesto. I tuoi indirizzi email saranno visualizzati come desideri presso i tuoi interlocutori.
 
-> [!warning]
+> [!alert]
 >
-> L'utilizzo di un indirizzo email con un dominio IDN in un client di posta (Outlook, Mail di macOS, ecc...) non è consigliato e può causare incompatibilità.
+> L’utilizzo di un indirizzo email con un dominio IDN (internationalized Domain Name) in un client di posta (Outlook, Mail di macOS, ecc...) non è consigliato, in quanto potrebbe causare incompatibilità. Alcuni client di posta non traducono i domini con accenti e non è quindi possibile inviare email. In questo caso, il mittente dell’email riceverà un messaggio che indica che l’indirizzo inserito non esiste.
+>
+> **Si raccomanda di prenotare in aggiunta al dominio con accento, lo stesso dominio senza questi accenti, per evitare qualsiasi incompatibilità a livello di scambi di email.**
 >
 
 ///

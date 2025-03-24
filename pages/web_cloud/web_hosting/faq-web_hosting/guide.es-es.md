@@ -270,9 +270,11 @@ Por último, puede contactar con uno de nuestros partners (/links/partner) para 
 
 No tiene que hacer nada al respecto. Aunque su dominio se muestre en [notación internacionalizada (IDN)](https://es.wikipedia.org/wiki/Nombre_de_dominio_internacionalizado){.external} en su área de cliente, funcionará y se mostrará de forma totalmente normal en otro lugar. La dirección web del sitio web se mostrará tal y como usted lo haya solicitado. Sus direcciones de correo también se mostrarán como desee con sus interlocutores.
 
-> [!warning]
+> [!alert]
 >
-> No es recomendable utilizar una dirección de correo electrónico con un dominio IDN en un cliente de correo (Outlook, Mail de macOS, etc.), ya que puede causar incompatibilidad.
+> No es recomendable utilizar una dirección de correo electrónico con un nombre de dominio internacionalizado (IDN) en un cliente de correo (Outlook, Mail de macOS, etc.), ya que podría provocar incompatibilidades. ya que hay clientes de correo que no traducen los dominios con acentos, lo que bloquea la transmisión de estos mensajes de correo. El remitente del mensaje de correo electrónico recibirá un mensaje indicándole que la dirección introducida no existe.
+>
+> **Se recomienda reservar con acento el mismo dominio sin estos acentos para evitar cualquier incompatibilidad en el intercambio de correo.**
 >
 
 ///
