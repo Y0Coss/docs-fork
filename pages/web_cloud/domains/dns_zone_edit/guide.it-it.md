@@ -30,8 +30,8 @@ Per maggiori spiegazioni, consulta le nostre guide "[Scopri tutto sui server DNS
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links/manager){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](/links/manager)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Utilizza la configurazione OVHcloud (server DNS) per il dominio in questione. 
 
 > [!warning]

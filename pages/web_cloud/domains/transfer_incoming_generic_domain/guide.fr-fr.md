@@ -123,7 +123,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](/links
 
 #### Suivi du transfert après la commande
 
-Une fois la commande validée, vous recevrez un bon de commande. Le processus de transfert ne démarrera qu'après réception du paiement. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via l'[espace client OVHcloud](/links/manager){.external}. Pour suivre la progression, connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez ensuite sur `Opérations en cours`{.action}.
+Lorsque la commande est validée, vous recevez un bon de commande. Le processus de transfert ne démarre qu'après réception du paiement. Dès que cette opération est effectuée, vous pouvez suivre la progression du transfert sur votre [espace client OVHcloud](/links/manager). Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action} puis cliquez sur `Opérations en cours`{.action}.
 
 > [!primary]
 >
@@ -141,7 +141,7 @@ Une fois la commande et le code de transfert validés, le bureau d'enregistremen
 
 Si un refus est émis par le bureau d'enregistrement actuel, contactez le pour savoir pourquoi il l'a refusée.
 
-Le processus de transfert peut être redémarré à partir de l'[espace client OVHcloud](/links/manager){.external}. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez ensuite sur `Opérations en cours`{.action}.
+Le processus de transfert peut être redémarré à partir de l'[espace client OVHcloud](/links/manager). Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action} puis cliquez sur `Opérations en cours`{.action}.
 
 > [!primary]
 >
@@ -155,7 +155,7 @@ Le processus de transfert peut être redémarré à partir de l'[espace client O
 
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
 
-Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](/links/manager){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
+Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](/links/manager). Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
 
 > [!warning]
 >

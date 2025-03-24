@@ -42,9 +42,9 @@ Oprócz [zarządzania kontaktami](/pages/account_and_service_management/account_
 >
 > W przypadku wątpliwości zalecamy sprawdzenie następujących zasobów:
 >
-> - strona internetowa rejestru **TLD**;
+> - Strona internetowa rejestru **TLD**;
 > - Lista [TLD dostępnych na OVHcloud](/links/web/domains-tld);
-> - aktualizacje statusu domeny. Aby to sprawdzić, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Operacje w toku`{.action}.
+> - Aktualizacje statusu domeny. Aby to sprawdzić, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Operacje w toku`{.action}.
 >
 
 ### Rozpocznij procedurę zmiany właściciela lub zmień powiązane z nim informacje

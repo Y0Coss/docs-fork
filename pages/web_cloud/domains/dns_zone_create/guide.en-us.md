@@ -42,7 +42,7 @@ For a number of reasons, you may need to create a DNS zone for your domain name 
 
 ### Step 1: Create the DNS zone via the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on `DNS zones`{.action} , then on the `Order`{.action} button in the top right-hand corner of the table that appears.
+Log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click on `DNS zones`{.action} , then on the `Order`{.action} button in the top right-hand corner of the table that appears.
 
 On the page that appears, enter the domain name (*domain.tld*), for which you would like to create an OVHcloud DNS zone. You will need to wait a few moments for the tool to carry out its checks on the domain name.
 
@@ -76,7 +76,7 @@ To edit this DNS zone, please read our guide on [Editing a DNS zone at OVHcloud]
 
 Once the OVHcloud DNS zone is ready to be used, it needs to be activated by declaring the corresponding DNS servers. To do this, first retrieve the names of the OVHcloud **DNS servers** on which your domain name’s DNS zone was created.
 
-Log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the relevant DNS zone. It is named after your domain name and has a globe-shaped logo labelled *DNS* on its left.
+Log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the relevant DNS zone. It is named after your domain name and has a globe-shaped logo labelled *DNS* on its left.
 
 > [!primary]
 > At this point, if you only see the globe-shaped logo (without the label *DNS*), the domain name is already managed in your OVHcloud Control Panel. 

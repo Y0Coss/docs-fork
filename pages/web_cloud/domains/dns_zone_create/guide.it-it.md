@@ -22,7 +22,7 @@ Per diversi motivi, potresti aver bisogno di creare una zona DNS per il tuo domi
 
 - Disporre di un dominio
 - Il dominio in questione non deve disporre già di una zona DNS (attiva o meno) in OVHcloud o essere oggetto di un'operazione o di un ordine in corso in OVHcloud.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -42,7 +42,7 @@ Per diversi motivi, potresti aver bisogno di creare una zona DNS per il tuo domi
 
 ### Step 1: creare la zona DNS dallo Spazio Cliente OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca su `Web cloud`{.action}. Clicca su `Zone DNS`{.action} nella colonna di sinistra e poi sul pulsante `Ordina`{.action} in alto a destra.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web cloud`{.action}. Clicca su `Zone DNS`{.action} nella colonna di sinistra e poi sul pulsante `Ordina`{.action} in alto a destra.
 
 Nella nuova pagina, inserisci il dominio (ad esempio: *dominio.tld*) per il quale vuoi creare una zona DNS OVHcloud. Attendi qualche istante per verificare il dominio da parte del tool.
 
@@ -78,7 +78,7 @@ Una volta che la zona DNS OVHcloud è pronta per l'utilizzo, associala al tuo do
 
 È quindi necessario recuperare prima i **server DNS** di OVHcloud sui quali è stata creata la zona DNS di OVHcloud per il tuo dominio.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca su `Web cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona la zona DNS interessata. 
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona la zona DNS interessata. 
 
 A sinistra è presente un logo a forma di globo, contrassegnato con il termine *DNS*. 
 

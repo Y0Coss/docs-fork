@@ -13,7 +13,7 @@ Przekierowanie domeny polega na przekierowaniu jej na nową docelową stronę. I
 ## Wymagania początkowe
 
 - Posiadanie [domeny](/links/web/domains)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Połączenie z hostingiem (przekierowanie za pomocą pliku [.htaccess](#htaccess_rewrite))
 
 ## W praktyce

@@ -42,7 +42,7 @@ The languages currently available are:
 - Python
 - Ruby
 
-To access the runtime software applications for your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan, log in to the [OVHcloud Control Panel](/links/manager){.external}, click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
+To access the runtime software applications for your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan, log in to the [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
 
 When you set up your hosting plan, a runtime software application will be created automatically. It is included as the `Default choice` in the table that appears. To modify a runtime software that has already been set, click on the three dots next to it, then `Modify`{.action}. 
 
@@ -146,8 +146,8 @@ There are several OVHcloud DNS records. We will focus on two particular records,
 
 |DNS record|Associated service|Where to find it|
 |---|---|---|
-|A|For the website|In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Hosting`{.action} section for the hosting plan concerned. Copy the IP address that appears next to "IPv4" in the `General information`{.action} tab.|
-|MX|For emails|In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Emails`{.action} section for the domain name concerned. Copy the information that appears next to “MX records” in the `General information`{.action} tab.|
+|A|For the website|In the [OVHcloud Control Panel](/links/manager), go to the `Hosting`{.action} section for the hosting plan concerned. Copy the IP address that appears next to "IPv4" in the `General information`{.action} tab.|
+|MX|For emails|In the [OVHcloud Control Panel](/links/manager), go to the `Emails`{.action} section for the domain name concerned. Copy the information that appears next to “MX records” in the `General information`{.action} tab.|
 
 #### 2. Check and/or modify the DNS records.
 
@@ -157,7 +157,7 @@ Now that you are more familiar with the OVHcloud DNS records for your [Cloud Web
 >
 > - If your domain name does not use the OVHcloud DNS configuration, you will need to make changes using the interface given by the service provider managing your domain name.
 > 
-> - If your domain name is registered with OVHcloud, you can check if the domain name is using our DNS configuration. To do this, go to the [Control Panel](/links/manager){.external}, select the domain name concerned, and go to the `DNS servers`{.action} tab.
+> - If your domain name is registered with OVHcloud, you can check if the domain name is using our DNS configuration. To do this, go to the [Control Panel](/links/manager), select the domain name concerned, and go to the `DNS servers`{.action} tab.
 >
 
 Please read the instructions below to see where you should make the changes:

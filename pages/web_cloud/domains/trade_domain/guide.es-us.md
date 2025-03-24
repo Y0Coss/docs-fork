@@ -42,9 +42,9 @@ Además de [gestionar los contactos](/pages/account_and_service_management/accou
 >
 Si tiene alguna duda, le recomendamos que consulte los siguientes recursos:
 >
-> - el sitio web del registro **TLD** correspondiente;
-> - la [lista de TLD disponibles en OVHcloud](/links/web/domains-tld);
-> - actualizaciones de estado del dominio. Para comprobarlo, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Operaciones en curso`{.action}.
+> - El sitio web del registro **TLD** correspondiente;
+> - La [lista de TLD disponibles en OVHcloud](/links/web/domains-tld);
+> - Actualizaciones de estado del dominio. Para comprobarlo, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Operaciones en curso`{.action}.
 >
 
 ### Iniciar el procedimiento de cambio de titular o modificar la información asociada

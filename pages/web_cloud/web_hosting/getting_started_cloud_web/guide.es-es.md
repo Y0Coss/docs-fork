@@ -42,7 +42,7 @@ Los lenguajes disponibles actualmente son:
 - Python
 - Ruby
 
-Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
+Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
 
 Al instalar el alojamiento, se crea automáticamente un motor, que aparece en la tabla como **Opción por defecto**. Para cambiar de motor, haga clic en el botón `...`{.action} situado al final de la línea correspondiente y seleccione `Editar`{.action}. 
 
@@ -144,8 +144,8 @@ Existen varios registros DNS específicos de OVHcloud. A continuación explicamo
 
 |Registro DNS|Servicio asociado|Dónde consultarlo|
 |---|---|---|
-|A|El sitio web|En el [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el hosting Cloud Web. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece en el apartado **IPv4**.|
-|MX|El correo electrónico |En el [área de cliente de OVHcloud](/links/manager){.external}, haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece en el apartado **Registros MX**.|
+|A|El sitio web|En el [área de cliente de OVHcloud](/links/manager), haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el hosting Cloud Web. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece en el apartado **IPv4**.|
+|MX|El correo electrónico |En el [área de cliente de OVHcloud](/links/manager), haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece en el apartado **Registros MX**.|
 
 #### 6.2. Comprobar y/o modificar los registros DNS
 
@@ -155,7 +155,7 @@ Una vez que conozca los registros DNS específicos de su hosting Cloud Web y su 
 >
 > - Si el dominio no utiliza la configuración DNS de OVHcloud, deberá realizar los cambios necesarios desde el panel que le ofrezca el proveedor que gestione dicha configuración.
 > 
-> - Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración DNS. Para ello, en el [área de cliente de OVHcloud](/links/manager){.external}, seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
+> - Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración DNS. Para ello, en el [área de cliente de OVHcloud](/links/manager), seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
 >
 
 A continuación se indica dónde realizar las operaciones correspondientes:

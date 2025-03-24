@@ -122,7 +122,7 @@ Sie können Ihre Bestellung auch mit einem [Webhosting](/links/web/hosting){.ext
 
 #### Weiterverfolgung des Transfers nach der Bestellung
 
-Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Transferprozess wird erst nach Erhalt der Zahlung gestartet. Ab dann können Sie den Fortschritt des Transfers über das [OVHcloud Kundencenter](/links/manager) nachverfolgen: Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Laufende Operationen`{.action}.
+Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Transferprozess wird erst nach Erhalt der Zahlung gestartet. Ab dann können Sie den Fortschritt des Transfers über das [OVHcloud Kundencenter](/links/manager) nachverfolgen. Sobald Sie sich angemeldet haben, gehen Sie zum Abschnitt `Web Cloud`{.action} und klicken Sie dann auf `Laufende Operationen`{.action}.
 
 > [!primary]
 >
@@ -140,7 +140,7 @@ Sobald die Bestellung und der Transfer-Code bestätigt sind, wird der aktuelle R
 
 Wird eine Ablehnung vom aktuellen Registrar ausgesprochen, kontaktieren Sie den Registrar, um die Gründe dafür zu erfahren.
 
-Der Transferprozess kann über das [OVHcloud Kundencenter](/links/manager) neu gestartet werden. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Laufende Operationen`{.action}.
+Der Transferprozess kann über das [OVHcloud Kundencenter](/links/manager) neu gestartet werden. Sobald Sie sich angemeldet haben, gehen Sie zum Abschnitt `Web Cloud`{.action} und klicken Sie dann auf `Laufende Operationen`{.action}.
 
 > [!primary]
 >

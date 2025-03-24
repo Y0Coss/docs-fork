@@ -22,7 +22,7 @@ Pour diverses raisons, vous pouvez être amené à créer une zone DNS pour votr
 
 - Disposer d’un nom de domaine.
 - Le nom de domaine concerné ne doit pas déjà disposer d'une zone DNS (active ou non) chez OVHcloud ou faire l'objet d'une opération ou d'une commande en cours chez OVHcloud.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -78,7 +78,7 @@ Une fois que la zone DNS chez OVHcloud est prête à être utilisée, reliez-la 
 
 Vous devrez donc récupérer au préalable les **serveurs DNS** d'OVHcloud sur lesquels la zone DNS OVHcloud a été créée pour votre nom de domaine.
 
-Pour effectuer cela, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} puis rendez-vous dans la partie `Web cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez la zone DNS concernée. 
+Pour effectuer cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez la zone DNS concernée. 
 
 Elle porte le nom de votre nom de domaine et un logo en forme de globe étiqueté avec le terme *DNS* est présent à sa gauche. 
 

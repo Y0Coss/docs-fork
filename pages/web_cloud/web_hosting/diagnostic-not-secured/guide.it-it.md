@@ -52,7 +52,7 @@ Nella scheda `Informazioni generali`{.action}, inserisci l'indirizzo IPV4 e/o IP
 
 A questo punto è necessario verificare che l'indirizzo IP indicato nella [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) corrisponda a quello del tuo [hosting Web Cloud](/links/web/hosting).
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato..
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
 
 Annota la destinazione d'ingresso di tipo `A` per il tuo dominio:
 

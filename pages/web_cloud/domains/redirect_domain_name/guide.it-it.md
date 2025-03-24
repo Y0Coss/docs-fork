@@ -13,7 +13,7 @@ Il reindirizzamento di un dominio consiste nel reindirizzarlo verso una nuova de
 ## Prerequisiti
 
 - Disporre di [un dominio](/links/web/domains)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Essere connesso al tuo hosting Web (per un reindirizzamento tramite un file [.htaccess](#htaccess_rewrite)
 
 ## Procedura

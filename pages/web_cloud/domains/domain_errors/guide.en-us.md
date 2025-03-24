@@ -17,7 +17,7 @@ Creating a domain name, transfering it, or changing its owner are technical oper
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.. Click on `Ongoing operations`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Click on `Ongoing operations`{.action}.
 
 The table on this page displays all currrent domain name operations in your Control Panel.
 

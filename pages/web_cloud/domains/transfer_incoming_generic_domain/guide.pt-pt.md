@@ -123,7 +123,8 @@ Também pode concluir a sua encomenda com um [alojamento web](/links/web/hosting
 
 #### Seguimento da transferência após a encomenda
 
-Depois de validar a encomenda, receberá uma nota de encomenda. O processo de transferência só terá início após a receção do pagamento. Depois de realizar esta operação, pode seguir o progresso da transferência através da [Área de Cliente OVHcloud](/links/manager){.external}. Para seguir o progresso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Operações em curso`{.action}.
+Depois de validar a encomenda, receberá uma nota de encomenda. O processo de transferência só terá início após a receção do pagamento. Depois de realizar esta operação, pode seguir o progresso da transferência através da [Área de Cliente OVHcloud](/links/manager). Depois de fazer login,
+aceda à secção `Web Cloud`{.action} e clique em `Operações em curso`{.action}.
 
 > [!primary]
 >
@@ -141,7 +142,8 @@ Depois de validar a encomenda e o código de transferência, o agente registador
 
 Se o agente registador atual recusar o pedido, contacte o agente registador para saber por que razão o recusou.
 
-O processo de transferência pode ser reiniciado na [Área de Cliente OVHcloud](/links/manager){.external}. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Operações em curso`{.action}.
+O processo de transferência pode ser reiniciado na [Área de Cliente OVHcloud](/links/manager). Depois de fazer login,
+aceda à secção `Web Cloud`{.action} e clique em `Operações em curso`{.action}.
 
 > [!primary]
 >
@@ -155,7 +157,7 @@ O processo de transferência pode ser reiniciado na [Área de Cliente OVHcloud](
 
 ### Etapa 5: gerir o seu domínio com a OVHcloud
 
-Uma vez terminado o processo de transferência, pode gerir o seu domínio a partir da [Área de Cliente OVHcloud](/links/manager){.external}. Para isso, selecione a `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} e, a seguir, clique no domínio em causa.
+Uma vez terminado o processo de transferência, pode gerir o seu domínio a partir da [Área de Cliente OVHcloud](/links/manager). Para isso, selecione a `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} e, a seguir, clique no domínio em causa.
 
 > [!warning]
 >

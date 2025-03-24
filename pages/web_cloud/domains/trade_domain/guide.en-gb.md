@@ -43,7 +43,7 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 >
 > - The website of the respective **TLD** registry
 > - The [list of **TLD**s available at OVHcloud](/links/web/domains-tld)
-> - The domain name status updates. To check this, log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.. Click on `Ongoing operations`{.action}.
+> - The domain name status updates. To check this, log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section. Click on `Ongoing operations`{.action}.
 
 ### Initiating the owner change procedure or editing the owner information
 

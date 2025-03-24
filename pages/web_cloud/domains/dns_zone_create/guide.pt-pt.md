@@ -22,7 +22,7 @@ Por várias razões, poderá ter de criar uma zona DNS para o seu domínio na OV
 
 - Dispor de um nome de domínio.
 - O domínio em questão não deve dispor de uma zona DNS (ativa ou não) na OVHcloud ou estar a ser objeto de uma operação ou de um comando em curso na OVHcloud.
-- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter acesso ao seu [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -42,7 +42,7 @@ Por várias razões, poderá ter de criar uma zona DNS para o seu domínio na OV
 
 ### Etapa 1: criar a zona DNS através da Área de Cliente OVHcloud
 
-Ligue-se ao seu [Área de Cliente OVHcloud](/links/manager){.external} e vá à secção `Web cloud`{.action}. Na coluna da esquerda, clique em `Zonas DNS`{.action} e, a seguir, no botão `Encomendar`{.action}, no canto superior direito da tabela que é apresentada.
+Ligue-se ao seu [Área de Cliente OVHcloud](/links/manager) e vá à secção `Web cloud`{.action}. Na coluna da esquerda, clique em `Zonas DNS`{.action} e, a seguir, no botão `Encomendar`{.action}, no canto superior direito da tabela que é apresentada.
 
 Na nova página, introduza o domínio (exemplo: *domínio.tld*) para o qual deseja criar uma zona DNS OVHcloud. Aguarde alguns instantes até que a ferramenta efetue as verificações relativas ao nome de domínio.
 
@@ -78,7 +78,7 @@ Quando a zona DNS da OVHcloud estiver pronta para ser utilizada, associe-a ao se
 
 Assim, deverá recuperar previamente os **servidores DNS** da OVHcloud nos quais a zona DNS da OVHcloud foi criada para o seu domínio.
 
-Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e selecione a zona DNS em causa. 
+Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e selecione a zona DNS em causa. 
 
 Ela tem o nome do seu domínio e um logótipo em forma de globo etiquetado com o termo *DNS* está presente à esquerda. 
 

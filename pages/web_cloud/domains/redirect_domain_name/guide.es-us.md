@@ -13,7 +13,7 @@ La redirección de un dominio consiste en redirigir el dominio hacia un nuevo de
 ## Requisitos
 
 - Disponer de un [dominio](/links/web/domains)
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Estar conectado al alojamiento web (para una redirección a través de un archivo [.htaccess](#htaccess_rewrite)).
 
 ## Procedimiento

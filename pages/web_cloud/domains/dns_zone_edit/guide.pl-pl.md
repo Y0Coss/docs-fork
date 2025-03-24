@@ -30,8 +30,8 @@ Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami "[Wszystk
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](/links/manager){.external}.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](/links/manager).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Używanie konfiguracji OVHcloud (serwerów DNS OVHcloud) dla danej domeny.
 
 > [!warning]

@@ -123,7 +123,7 @@ Możesz również zakończyć zamówienie [hostingiem www](/links/web/hosting){.
 
 #### Informacje o transferze po zamówieniu
 
-Po zatwierdzeniu zamówienia otrzymasz zamówienie. Transfer rozpocznie się po otrzymaniu płatności. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](/links/manager){.external}. Aby śledzić postęp procesu, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Operacje w toku`{.action}.
+Po zatwierdzeniu zamówienia otrzymasz zamówienie. Transfer rozpocznie się po otrzymaniu płatności. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](/links/manager). Po zalogowaniu przejdź do sekcji `Web Cloud`{.action}, a następnie kliknij na `Operacje w toku`{.action}.
 
 > [!primary]
 >
@@ -141,7 +141,7 @@ Po zatwierdzeniu zamówienia i kodu transferu aktualny operator (którym nie jes
 
 Jeśli odmowa została wydana przez aktualny operator rejestracji, skontaktuj się z nim, aby dowiedzieć się, dlaczego odmówił rejestracji.
 
-Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](/links/manager){.external}. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Operacje w toku`{.action}.
+Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](/links/manager). Po zalogowaniu przejdź do sekcji `Web Cloud`{.action}, a następnie kliknij na `Operacje w toku`{.action}.
 
 > [!primary]
 >
@@ -155,7 +155,7 @@ Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](
 
 ### Etap 5: zarządzaj domeną za pomocą OVHcloud
 
-Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta OVHcloud](/links/manager){.external}. W tym celu wybierz `Web Cloud`{.action}, kliknij `Domeny`{.action}, po czym kliknij wybraną nazwę domeny.
+Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta OVHcloud](/links/manager). W tym celu wybierz `Web Cloud`{.action}, kliknij `Domeny`{.action}, po czym kliknij wybraną nazwę domeny.
 
 > [!warning]
 >
