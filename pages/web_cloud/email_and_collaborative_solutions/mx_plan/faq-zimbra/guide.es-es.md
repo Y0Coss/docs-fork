@@ -30,7 +30,7 @@ Esta página responde a las preguntas relativas a la solución Zimbra de OVHclou
 
 ### Preguntas generales sobre los productos Zimbra de OVHcloud
 
-/// details | Zimbra, ¿qué es? 
+/// details | Zimbra, ¿qué es?
 
 Zimbra es una popular solución colaborativa de código abierto. Zimbra ofrece numerosas funcionalidades en el catálogo de OVHcloud.
 
@@ -58,6 +58,8 @@ Ya está disponible una guía del usuario de Zimbra en [esta dirección](/pages/
 /// details | ¿Cómo puedo configurar mi dirección de correo electrónico en un cliente de correo?
 
 Consulte nuestra página "[Configurar una dirección de correo electrónico de Zimbra en un cliente de correo](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)".
+
+///
 
 ### Preguntas sobre la migración MX Plan hacia la solución Zimbra
 

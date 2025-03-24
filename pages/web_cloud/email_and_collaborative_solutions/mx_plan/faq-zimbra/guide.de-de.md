@@ -59,6 +59,8 @@ Eine Anleitung zur Verwendung von Zimbra finden Sie bereits unter [dieser Adress
 
 Besuchen Sie unsere Seite „[Zimbra-E-Mail-Adresse auf einem E-Mail-Client konfigurieren](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)“.
 
+///
+
 ### Fragen zur Migration von MX Plan auf Zimbra
 
 Im Rahmen der Weiterentwicklung des MX Plan Angebots wird eine Migration von der derzeitigen Lösung mit Outlook Web App (OWA) auf die Zimbra Lösung und deren Webmail geplant.
