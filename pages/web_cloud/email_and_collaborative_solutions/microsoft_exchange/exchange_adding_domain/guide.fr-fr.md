@@ -85,7 +85,7 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 
 - **Si vous avez renseigné un nom de domaine non géré par votre compte OVHcloud** : cela signifie que le nom de domaine, plus particulièrement sa zone DNS, n'est pas géré depuis votre espace client OVHcloud. Il peut être aussi enregistré dans un autre bureau d'enregistrement. Il sera alors nécessaire de procéder à la configuration directement dans son interface de gestion, quel que soit le choix suivant effectué.
     - **Configuration recommandée** : convient si vous utilisez uniquement les offres e-mail OVHcloud.<br><br>
-    - **Configuration personnalisée** : si souhaitez utiliser un service e-mail privé ou externe à OVHcloud en complément de cette plateforme e-mail, renseignez le nom d'hôte du serveur e-mail dans le cadre `URL du serveur email cible`.
+    - **Configuration personnalisée** : si vous souhaitez utiliser un service e-mail privé ou externe à OVHcloud en complément de cette plateforme e-mail, renseignez le nom d'hôte du serveur e-mail dans le cadre `URL du serveur email cible`.
 
 ![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-400}
 
