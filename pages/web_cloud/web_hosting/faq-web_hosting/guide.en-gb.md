@@ -272,7 +272,7 @@ You have no action to take in this situation. Even if your domain appears in [in
 
 > [!alert]
 >
-> We do not recommend using an email address with an Internationalized Domain Name (IDN) domain name from an email client (Outlook, macOS Mail, etc.). Some email clients do not interpret domain names with accented characters, which blocks the transmission of emails. A sender sending you an email will receive an automatic message stating that your email address does not exist.
+> We do not recommend using an email address with an Internationalized Domain Name (IDN) from an email client (Outlook, macOS Mail, etc.). Some email clients do not interpret domain names with accented characters, which blocks the transmission of emails. A sender sending you an email will receive an automatic message stating that your email address does not exist.
 >
 > **It is recommended that you reserve the same domain name without accents, in addition to your domain name with accented characters, to avoid any incompatibility in email exchanges.**
 >
