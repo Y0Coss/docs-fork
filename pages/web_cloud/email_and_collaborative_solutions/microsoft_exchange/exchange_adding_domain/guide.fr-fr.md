@@ -179,7 +179,7 @@ Si des comptes e-mail sont attachés au nom de domaine que vous souhaitez détac
 1. Cliquez sur `Réinitialiser ce compte`{.action} ou `Réinitialiser`{.action}.
     ![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-400}
 
-Une fois la réattribution des comptes à un autre nom de domaine effectué, ou suite à leur réinitialisation, il est maintenant possible de procéder à la suppression du nom de domaine.
+Une fois la réattribution des comptes à un autre nom de domaine effectuée, ou suite à leur réinitialisation, il est possible de procéder à la suppression du nom de domaine.
 
 Depuis l'onglet `Domaine associés`{.action} de votre plateforme, cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Supprimer ce domaine`{.action}.
 
