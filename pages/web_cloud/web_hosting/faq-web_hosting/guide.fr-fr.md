@@ -270,9 +270,11 @@ Vous pouvez enfin contacter l'un de [nos partenaires](/links/partner), afin qu'i
 
 Vous n'avez aucune action à mener dans cette situation. Même si votre domaine s'affiche en [notation internationalisée (IDN)](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalis%C3%A9){.external} dans votre espace client, il fonctionnera et s'affichera de façon tout à fait normale ailleurs. L'adresse Web de votre site s'affichera telle que vous l'avez demandée. Vos adresses e-mail s'afficheront également telles que vous le souhaitez chez vos correspondants.
 
-> [!warning]
+> [!alert]
 >
-> L'utilisation d'une adresse e-mail avec un domaine IDN dans un logiciel de messagerie (Outlook, Mail de macOS, etc.) n'est pas recommandée et peut provoquer des incompatibilités.
+> L'utilisation d'une adresse e-mail avec un domaine IDN dans un logiciel de messagerie (Outlook, Mail de macOS, etc.) n'est pas recommandée et peut provoquer des incompatibilités. En effet ils existent des clients de messagerie e-mail qui ne traduisent pas les noms de domaine avec accents, ce qui bloque la transmission de ces e-mails. L'émetteur de l'e-mail reçoit un message indiquant que l'adresse saisie n'existe pas.
+>
+> Il est recommandé de réserver, en complément de votre nom de domaine avec accent, le même nom de domaine sans les accents pour éviter toutes incompatibilités au niveau des échanges d'e-mails.
 >
 
 ///
