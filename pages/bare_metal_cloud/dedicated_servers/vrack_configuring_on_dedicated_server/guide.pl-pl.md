@@ -4,10 +4,6 @@ excerpt: 'Dowiedz się, jak połączyć kilka serwerów w ramach rozwiązania vR
 updated: 2025-03-24
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
-
 ## Wprowadzenie
 
 vRack (wirtualna szafa) OVHcloud pozwala na wirtualne zebranie kilku serwerów (bez względu na ich liczbę i ich fizyczną lokalizację w naszych centrach danych) i na ich podłączenie do wirtualnego switcha w ramach tej samej prywatnej sieci. Dzięki temu Twoje serwery mogą komunikować się między sobą w ramach prywatnej i zabezpieczonej sieci VLAN.

@@ -4,10 +4,6 @@ excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
 updated: 2025-03-24
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
-
 ## Objetivo
 
 El vRack (rack virtual) de OVHcloud permite agrupar virtualmente varios servidores (independientemente de su número y su ubicación física en nuestros datacenters) y conectarlos a un switch virtual dentro de una misma red privada. De este modo, sus servidores pueden comunicarse entre sí de forma privada y segura, dentro de una VLAN dedicada.
