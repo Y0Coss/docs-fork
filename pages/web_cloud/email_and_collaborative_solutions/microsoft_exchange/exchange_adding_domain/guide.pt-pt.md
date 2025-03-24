@@ -1,8 +1,17 @@
 ---
 title: Adicionar um domínio a uma plataforma de e-mail
 excerpt: Saiba como adicionar um domínio à sua plataforma Exchange ou E-mail Pro
-updated: 2023-06-14
+updated: 2025-03-21
 ---
+
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-400 {
+  max-height:400px !important;
+}
+</style>
 
 ## Objetivo
 

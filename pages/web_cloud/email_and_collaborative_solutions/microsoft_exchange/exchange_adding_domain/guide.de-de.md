@@ -1,8 +1,17 @@
 ---
 title: "Domainnamen zu Ihrem Exchange Dienst hinzufügen"
 excerpt: "Erfahren Sie hier, wie Sie einen Domainnamen zu Ihrer Exchange Lösung hinzufügen"
-updated: 2023-06-14
+updated: 2025-03-21
 ---
+
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-400 {
+  max-height:400px !important;
+}
+</style>
 
 ## Ziel
 

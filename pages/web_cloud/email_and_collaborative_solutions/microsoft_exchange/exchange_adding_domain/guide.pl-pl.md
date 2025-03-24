@@ -1,9 +1,17 @@
 ---
 title: Dodaj domenę do platformy e-mail
 excerpt: Dowiedz się, jak dodać domenę do platformy Exchange lub E-mail Pro
-updated: 2023-06-14
+updated: 2025-03-21
 ---
 
+<style>
+.w-400 {
+  max-width:400px !important;
+}
+.h-400 {
+  max-height:400px !important;
+}
+</style>
 
 ## Wprowadzenie
 
