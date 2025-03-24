@@ -59,6 +59,8 @@ Przewodnik dotyczący korzystania z usługi Zimbra jest już dostępny pod adres
 
 Odwiedź naszą stronę "[Konfiguracja konta e-mail Zimbra w programie pocztowym](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)".
 
+///
+
 ### Pytania dotyczące migracji MX Plan na rozwiązanie Zimbra
 
 W ramach rozwoju oferty MX Plan zaplanowana jest migracja z aktualnego rozwiązania korzystającego z Webmail Outlook Web Access (OWA) na rozwiązanie Zimbra i jego interfejs webmail.

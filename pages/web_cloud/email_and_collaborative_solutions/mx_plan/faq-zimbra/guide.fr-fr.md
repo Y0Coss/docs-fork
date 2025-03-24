@@ -59,6 +59,8 @@ Un guide d'utilisation de Zimbra est disponible à [cette adresse](/pages/web_cl
 
 Consultez notre page « [Configurer son adresse e-mail Zimbra sur un logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps) ».
 
+///
+
 ### Questions sur la Migration MX Plan vers la solution Zimbra
 
 Dans le cadre de l'évolution de l'offre MX Plan, une migration est planifiée depuis la solution actuelle utilisant le webmail Outlook Web Acces (OWA) vers la solution Zimbra et son webmail.
