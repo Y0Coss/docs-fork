@@ -221,7 +221,7 @@ Sie können überprüfen, ob die Ziel-IP aktualisiert wurde. Klicken Sie jeweils
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Menü `DNS-zone`{.action} und wählen Sie den Domainnamen aus.
+>> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
