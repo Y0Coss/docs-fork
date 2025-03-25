@@ -274,7 +274,7 @@ Não tem nada a fazer nesta situação. Mesmo que o seu domínio seja apresentad
 >
 > É desaconselhado utilizar um endereço de e-mail com um nome de domínio IDN (Internationalized Domain Name) a partir de um cliente de e-mail (Outlook, Mail de macOS, etc.). Alguns clientes de correio eletrónico não interpretam nomes de domínio com caracteres acentuados, o que bloqueia a transmissão de correio eletrónico. Um remetente que lhe envie um e-mail receberá uma mensagem automática indicando que o seu endereço de e-mail não existe.
 >
-> **Recomenda-se a reserva do mesmo domínio sem estes acentos, em complemento do seu nome de domínio com caracteres acentuados, a fim de evitar incompatibilidades na troca de e-mails.**
+> **Recomenda-se a reserva do mesmo domínio sem acentos, em complemento do seu nome de domínio com caracteres acentuados, a fim de evitar incompatibilidades na troca de e-mails.**
 >
 
 ///
