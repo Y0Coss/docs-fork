@@ -1,11 +1,7 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2025-02-26
+updated: 2025-03-25
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## FAQ VPS
 
@@ -23,19 +19,19 @@ Il VPS rappresenta un’evoluzione logica alle soluzioni di hosting Web. Garanti
 
 ### Cosa scegliere tra un VPS e un hosting Web Plesk?
 
-Gli hosting Web Plesk mettono a disposizione uno spazio con Plesk preinstallato. Scegliendo questa soluzione l’utente è in grado di gestire i siti Internet ma non è amministratore del servizio. Questa soluzione può quindi essere utilizzata solo per eseguire operazioni di gestione.
+Gli hosting Web Plesk mettono a disposizione uno spazio con Plesk preinstallato. Scegliendo questa soluzione l’utente è in grado di gestire i siti Internet ma non è amministratore del servizio. Questa soluzione può quindi essere utilizzata solo per eseguire operazioni di gestione.  
 Scegliendo un VPS, sarai l'amministratore del tuo server e OVHcloud non avrà accesso al suo contenuto. e l’utente è libero di utilizzarla in base alle proprie esigenze.
 
 ### Quali sono i vantaggi di un VPS rispetto a un server dedicato?
 
-I VPS offrono il vantaggio di liberare l’utente da pensieri legati alla gestione hardware (ad esempio monitoraggio dello stato di dischi, RAM e CPU) e sono adatti alla maggior parte degli utilizzi Web, per progetti di dimensioni contenute.
+I VPS offrono il vantaggio di liberare l’utente da pensieri legati alla gestione hardware (ad esempio monitoraggio dello stato di dischi, RAM e CPU) e sono adatti alla maggior parte degli utilizzi Web, per progetti di dimensioni contenute.  
 I server dedicati sono consigliati per gestire in autonomia l’aspetto hardware, costruire architetture elaborate, creare infrastrutture con rete privata (vRack) integrata, implementare soluzioni complesse diverse dai servizi Web.
 
 In generale, si può affermare che gli utenti con un’attività Web in crescita si evolvono verso server dedicati o soluzioni Public Cloud: questi servizi offrono infrastrutture più complesse e flessibili, adeguate a una forte crescita.
 
 ### Quali sono le differenze tra le soluzioni VPS e Public Cloud?
 
-Il VPS è una soluzione adatta ad ambienti di preproduzione e produzione che richiedono prestazioni costanti. 
+Il VPS è una soluzione adatta ad ambienti di preproduzione e produzione che richiedono prestazioni costanti.  
 Il Public Cloud di OVHcloud propone invece un'infrastruttura multiserver con macchine high availability e con rete privata vRack disponibile.
 
 ### Come scegliere il proprio VPS OVHcloud?
@@ -58,13 +54,13 @@ Per effettuare questa operazione, scegli tra le nostre soluzioni VPS:
 
 ### Chi può utilizzare un VPS?
 
-L’utilizzo di un VPS richiede competenze di base in amministrazione di server. Queste nozioni sono essenziali per gestire il sistema operativo (Linux o Windows) installato sulla macchina e configurare le applicazioni. Come fare per utilizzare un VPS senza possedere le competenze necessarie? È possibile contattare uno dei nostri partner. 
+L’utilizzo di un VPS richiede competenze di base in amministrazione di server. Queste nozioni sono essenziali per gestire il sistema operativo (Linux o Windows) installato sulla macchina e configurare le applicazioni. Come fare per utilizzare un VPS senza possedere le competenze necessarie? È possibile contattare uno dei nostri [partner](/links/partner). 
 
-Per usufruire di risorse garantite anche senza conoscenze specifiche nell'amministrazione di server, ti consigliamo di optare per i nostri [hosting Web Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/).
+Per usufruire di risorse garantite anche senza conoscenze specifiche nell'amministrazione di server, ti consigliamo di optare per i nostri [hosting Web Performance](/links/hosting-performance-offer).
 
 ### Come connettermi al tuo VPS?
 
-La connessione al tuo VPS dovrà avvenire in SSH grazie all'indirizzo IP, nome utente e password forniti via email al ricevimento dell'ordine.
+La connessione al tuo VPS dovrà avvenire in SSH grazie all'indirizzo IP, nome utente e password forniti via email al ricevimento dell'ordine.  
 Da una postazione Windows ti consigliamo di connetterti con il software Putty. La connessione potrà essere effettuata direttamente sul terminale da una postazione Linux.
 
 Per maggiori informazioni, consulta la guida Iniziare [a utilizzare un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
@@ -80,7 +76,7 @@ scegliendo tra le opzioni di backup manuale (Snapshot) o automatico.
 
 ### Come proteggere un VPS?
 
-Il VPS è fornito di default come "nudo", senza alcuna configurazione di sicurezza. E' la prima cosa che devi fare al ricevimento
+Il VPS è fornito di default come "nudo", senza alcuna configurazione di sicurezza. E' la prima cosa che devi fare al ricevimento.  
 Per effettuare questa operazione, consulta la guida ["Mettere in sicurezza un VPS"](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ### Qual è la banda passante assegnata al tuo VPS? È garantita?
@@ -95,7 +91,7 @@ Su tutte le gamme VPS, OVHcloud propone uno SLA del 99,9%.
 
 L'accesso al backup FTP può essere limitato al servizio associato tramite lo Spazio Cliente OVHcloud.
 
-Per poter aggiungere altri indirizzi IP di diversi servizi, utilizza l'API OVHcloud.
+Per poter aggiungere altri indirizzi IP di diversi servizi, utilizza l'API OVHcloud. 
 per recuperare i backup da un servizio di un'altra localizzazione.
 
 > [!warning]
@@ -126,8 +122,8 @@ Per verificare che il tuo indirizzo IP sia autorizzato, utilizza questa chiamata
 > @api {v1} /vps GET /vps/{serviceName}/backupftp/access
 >
 
-![get api](images/get-api.png){.thumbnail}
-
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+
+Contatta la nostra [Community di utenti](/links/community).

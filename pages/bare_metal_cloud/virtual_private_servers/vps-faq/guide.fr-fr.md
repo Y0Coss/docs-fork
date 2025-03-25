@@ -1,6 +1,6 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2025-02-26
+updated: 2025-03-25
 ---
 
 ## FAQ VPS
@@ -31,7 +31,7 @@ En règle générale, les utilisatrices et utilisateurs dont l’activité web s
 
 ### Quelles sont les différences entre les solutions VPS et Public Cloud ?
 
-Le VPS est une solution adaptée aux environnements de préproduction et production, qui ne nécessitent pas des performances constantes.
+Le VPS est une solution adaptée aux environnements de préproduction et production, qui ne nécessitent pas des performances constantes.  
 Le Public Cloud d'OVHcloud propose, lui, une infrastructure multiserveur avec une haute disponibilité des machines. Un réseau privé, le vRack, est également disponible avec cette solution.
 
 ### Comment choisir mon VPS OVHcloud ?
@@ -56,12 +56,12 @@ Cela vous permettra de faire le bon choix parmi nos solutions VPS :
 
 Gérer un VPS nécessite des connaissances de base en administration de serveurs. Ces notions sont essentielles pour gérer le système d’exploitation (Linux ou Windows) installé sur la machine et paramétrer les applications. Vous pensez avoir besoin d’un VPS, mais estimez ne pas posséder les compétences requises ? Nous vous invitons à vous rapprocher de l’un de nos [partenaires](https://marketplace.ovhcloud.com/). 
 
-Si vous souhaitez bénéficier de ressources garanties sans connaissances en administration de serveurs, nous vous conseillons nos [hébergements web Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml).
+Si vous souhaitez bénéficier de ressources garanties sans connaissances en administration de serveurs, nous vous conseillons nos [hébergements web Performance](/links/hosting-performance-offer).
 
 ### Comment me connecter à mon VPS ?
 
-La connexion à votre VPS devra se faire en SSH grâce à l’adresse IP, le nom d’utilisateur et le mot de passe fournis par e-mail à la réception de la commande.
-Depuis un poste sous Windows il sera conseillé de vous connecter grâce au logiciel Putty. La connexion pourra se faire directement sur le terminal depuis un poste Linux.
+Vous pouvez vous connecter à distance à votre VPS grâce aux identifiants fournis par e-mail après la livraison du service.  
+La méthode de connexion dépend des systèmes d'exploitation utilisés.
 
 Tous les détails vous sont présentés dans le guide [« Débuter avec un VPS »](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
@@ -71,7 +71,7 @@ Oui. Un VPS peut être partitionné et organisé en fonction de vos besoins. Vou
 
 ### Mon VPS est-il sauvegardé ?
 
-OVHcloud n'effectue pas de sauvegarde des données hébergées sur votre VPS. Il vous appartient donc de les réaliser par vos propres moyens.  
+OVHcloud ne fournit pas de sauvegarde des données hébergées sur votre VPS. Vous devrez appliquer votre propre stratégie de sauvegarde.  
 À cette fin, vous pouvez utiliser les options suivantes : la sauvegarde manuelle (Snapshot) ou la sauvegarde automatisée.
 
 ### Comment sécuriser mon VPS ?
@@ -91,39 +91,37 @@ Sur l’ensemble des gammes VPS, OVHcloud propose un SLA de 99,9%.
 
 L'accès à votre backupFTP peut être restreint au service auquel il est lié via votre espace client OVHcloud.
 
-Afin de pouvoir ajouter d'autres adresses IP de services différents, vous pouvez utiliser l'API OVHcloud.
-Cela vous permettra alors de récupérer vos backups depuis un service d'une autre localisation.
+Afin d'ajouter d'autres adresses IP à partir desquelles accéder, vous pouvez utiliser l'API OVHcloud.  
+Cela vous permettra de récupérer vos données de sauvegarde depuis un service différent via différents protocoles (FTP, NFS, CIFS).
 
 > [!warning]
 > Seules les adresses IP OVHcloud peuvent être autorisées.
 >
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'appel suivant :
+Connectez-vous à la [console API OVHcloud](/links/api) avec les identifiants de votre compte client et utilisez l'appel suivant :
 
 > [!api]
 >
 > @api {v1} /vps POST /vps/{serviceName}/backupftp/access
 >
 
-Renseignez les champs ainsi :
+Modifiez les paramètres comme suit :
 
-- `serviceName ` : le nom de votre VPS
-- `cifs ` : cochez si nécessaire
-- `ftp` : cochez si nécessaire
-- `ipBlock` : renseignez l'IP qui aura accès sous la forme `1.2.3.4/32`
-- `nfs` : cochez si nécessaire
+- `serviceName` : renseignez le nom interne de votre VPS (`vps-x11x11xyy.vps.ovh.net`).
+- `cifs` : défini sur `true` le cas échéant.
+- `ftp` : défini sur `true` le cas échéant.
+- `ipBlock` : renseignez l'adresse IP qui y aura accès, sous la forme `203.0.113.100/32`.
+- `nfs` : défini sur `true` le cas échéant.
 
-![post api](images/post-api.png){.thumbnail}
-
-Afin de vérifier que votre adresse IP est bien autorisée, utilisez l'appel suivant :
+Cliquez sur le bouton `EXECUTE`{.action}.
 
 > [!api]
 >
 > @api {v1} /vps GET /vps/{serviceName}/backupftp/access
 >
 
-![get api](images/get-api.png){.thumbnail}
-
 ## Aller plus loin
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

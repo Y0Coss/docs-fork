@@ -1,11 +1,7 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2025-02-26
+updated: 2025-03-25
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## FAQ VPS
 
@@ -23,19 +19,19 @@ Neste sentido, recomendamos que preste especial atenção no momento de escolher
 
 ### Qual a melhor opção: VPS ou alojamento Web Plesk?
 
-Num alojamento web Plesk, é-lhe disponibilizado um espaço com Plesk pré-instalado. Pode alojar os seus websites, mas não é o administrador do serviço. Este só poderá servir para a gestão.
+Num alojamento web Plesk, é-lhe disponibilizado um espaço com Plesk pré-instalado. Pode alojar os seus websites, mas não é o administrador do serviço. Este só poderá servir para a gestão.  
 Ao escolher um VPS, é o administrador do seu servidor e a OVHcloud não tem acesso ao seu conteúdo. Assim, é livre de o utilizar em função das suas necessidades.
 
 ### Quais são as vantagens de um VPS relativamente a um servidor dedicado?
 
-Os VPS têm a vantagem de o libertar da gestão de hardware, como o acompanhamento do estado dos discos rígidos, da memória viva (RAM) e da CPU. Esta solução é adaptada à maior parte das utilizações web, em projetos de dimensão controlada.
-Um servidor dedicado é a solução ideal para os utilizadores que pretendem gerir eles próprios a parte de hardware, construir arquiteturas mais elaboradas, criar uma infraestrutura que inclua uma rede privada (vRack) ou ainda implementar soluções complexas diferentes dos serviços web.
+Os VPS têm a vantagem de o libertar da gestão de hardware, como o acompanhamento do estado dos discos rígidos, da memória viva (RAM) e da CPU. Esta solução é adaptada à maior parte das utilizações web, em projetos de dimensão controlada.  
+Um servidor dedicado é a solução ideal para os utilizadores que pretendem gerir eles próprios a paret de hardware, construir arquiteturas mais elaboradas, criar uma infraestrutura que inclua uma rede privada (vRack) ou ainda implementar soluções complexas diferentes dos serviços web.
 
 Em geral, quando a atividade web dos clientes cresce, estes só evoluem para soluções de servidores dedicados e Public Cloud, já que oferecem infraestruturas mais complexas e flexíveis, capazes de se adaptar a um forte crescimento.
 
 ### Quais são as diferenças entre VPS e Public Cloud?
 
-O VPS é uma solução adaptada aos ambientes de pré-produção e produção, que não requerem desempenhos constantes.
+O VPS é uma solução adaptada aos ambientes de pré-produção e produção, que não requerem desempenhos constantes.  
 O Public Cloud da OVHcloud oferece uma infraestrutura multiservidor com uma alta disponibilidade das máquinas. Além disso, o vRack (uma rede privada) também está disponível com esta solução.
 
 ### Como escolher o meu VPS OVHcloud?
@@ -58,13 +54,13 @@ Isto permitir-lhe-á escolher entre as nossas soluções VPS:
 
 ### Quem pode usar um VPS?
 
-Gerir um VPS requer conhecimentos básicos de administração de servidores. Estas noções são essenciais para gerir o sistema operativo (Linux ou Windows) instalado na máquina e configurar as aplicações. Acha que precisa de um VPS, mas considera não possuir as competências necessárias? Convidamo-lo a contactar um dos nossos parceiros. 
+Gerir um VPS requer conhecimentos básicos de administração de servidores. Estas noções são essenciais para gerir o sistema operativo (Linux ou Windows) instalado na máquina e configurar as aplicações. Acha que precisa de um VPS, mas considera não possuir as competências necessárias? Convidamo-lo a contactar um dos nossos [parceiros](/links/partner).
 
-Se deseja usufruir de recursos garantidos sem conhecimentos em administração de servidores, aconselhamos os nossos [alojamentos web Performance](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-performance.xml).
+Se deseja usufruir de recursos garantidos sem conhecimentos em administração de servidores, aconselhamos os nossos [alojamentos web Performance](/links/hosting-performance-offer).
 
 ### Como aceder ao meu VPS?
 
-A ligação ao VPS deverá ser feita em SSH graças ao endereço IP, ao nome de utilizador e à palavra-passe fornecidos por e-mail aquando da receção do comando.
+A ligação ao VPS deverá ser feita em SSH graças ao endereço IP, ao nome de utilizador e à palavra-passe fornecidos por e-mail aquando da receção do comando.  
 A partir de um computador com Windows, será aconselhado que se ligue graças ao software Putty. A ligação poderá ser feita diretamente no terminal a partir de um computador Linux.
 
 Para mais informações, consulte o manual ["VPS - primeira utilização"](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
@@ -75,12 +71,12 @@ Sim. Um VPS pode ser particionado e organizado em função das suas necessidades
 
 ### São realizados backups do meu VPS?
 
-A OVHcloud não realizar backups dos dados alojados no VPS. Assim, cabe-lhe a si realizá-los.
+A OVHcloud não realizar backups dos dados alojados no VPS. Assim, cabe-lhe a si realizá-los.  
 Para isso, pode utilizar as seguintes opções: o backup manual (Snapshot) ou o backup automatizado.
 
 ### Como proteger o meu VPS?
 
-Por predefinição, o VPS é fornecido "nu", não existindo nenhuma configuração de segurança neste último. Portanto, esta é a primeira coisa que têm de fazer quando recebem
+Por predefinição, o VPS é fornecido "nu", não existindo nenhuma configuração de segurança neste último. Portanto, esta é a primeira coisa que têm de fazer quando recebem.  
 Para isso, não hesite em consultar o guia ["Proteger um VPS"](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ### Qual é a largura de banda atribuída ao meu VPS? Ela está garantida?
@@ -126,8 +122,9 @@ Para verificar se o seu endereço IP está corretamente autorizado, utilize a se
 > @api {v1} /vps GET /vps/{serviceName}/backupftp/access
 >
 
-![get api](images/get-api.png){.thumbnail}
 
-## Saiba mais
+## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+
+Fale com nossa [comunidade de utilizadores](/links/community).

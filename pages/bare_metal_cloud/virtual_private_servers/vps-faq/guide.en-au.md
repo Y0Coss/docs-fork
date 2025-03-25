@@ -72,7 +72,7 @@ Yes. A VPS can be partitioned, and organised to suit your requirements. This mea
 ### Is my VPS backed up?
 
 OVHcloud does not provide backups of the data hosted on your VPS. You will need to apply your own backup strategy.  
-To create backups, you can use the following options: manual backup (snapshots), or automated backup.
+To create backups, you can use the following options: manual snapshots and automated backups.
 
 ### How do I secure my VPS?
 
@@ -125,5 +125,7 @@ To verify that your IP address is authorized, use the following call:
 >
 
 ## Go further
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).
