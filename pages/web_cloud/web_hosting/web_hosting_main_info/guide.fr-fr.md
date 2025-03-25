@@ -16,7 +16,7 @@ Les informations contenues dans ce guide concernent les versions de **PHP**, **P
 
 ## En pratique
 
-### Tableaux des versions disponibles
+### Tableau des versions disponibles
 
 | Langage | Versions |
 |---------|----------|
