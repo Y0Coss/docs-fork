@@ -19,12 +19,12 @@ Nous attirons cependant votre attention sur la nécessité de bien sélectionner
 
 ### Que choisir entre un VPS et un hébergement web Plesk ?
 
-Sur un hébergement web Plesk, un espace avec Plesk préinstallé est mis à votre disposition. Vous pouvez gérer vos sites internet mais n’êtes pas administrateur du service. Celui-ci ne pourra servir qu’à la gestion.
+Sur un hébergement web Plesk, un espace avec Plesk préinstallé est mis à votre disposition. Vous pouvez gérer vos sites internet mais n’êtes pas administrateur du service. Celui-ci ne pourra servir qu’à la gestion.  
 En choisissant un VPS, vous êtes l’administrateur de votre serveur et OVHcloud n’a pas accès à son contenu. Vous êtes ainsi libre de l’utiliser selon vos besoins.
 
 ### Quels sont les avantages d'un VPS par rapport à un serveur dédié ?
 
-Les VPS ont pour avantage de vous libérer de la gestion hardware, comme le suivi de l’état des disques durs, de la mémoire vive (RAM) et du CPU. Ils sont adaptés à la plupart des usages web, pour des projets dont la taille est maîtrisée.
+Les VPS ont pour avantage de vous libérer de la gestion hardware, comme le suivi de l’état des disques durs, de la mémoire vive (RAM) et du CPU. Ils sont adaptés à la plupart des usages web, pour des projets dont la taille est maîtrisée.  
 L’utilisation d’un serveur dédié est, elle, conseillée si vous souhaitez gérer vous-même la partie matérielle, bâtir des architectures plus élaborées, créer une infrastructure incluant un réseau privé (vRack) ou encore déployer des solutions complexes autres que des services web.
 
 En règle générale, les utilisatrices et utilisateurs dont l’activité web se développe évoluent vers des serveurs dédiés ou des solutions Public Cloud. Ces services proposent des infrastructures plus complexes et flexibles, adaptées à une croissance forte.
@@ -71,7 +71,7 @@ Oui. Un VPS peut être partitionné et organisé en fonction de vos besoins. Vou
 
 ### Mon VPS est-il sauvegardé ?
 
-OVHcloud n'effectue pas de sauvegarde des données hébergées sur votre VPS. Il vous appartient donc de les réaliser par vos propres moyens.
+OVHcloud n'effectue pas de sauvegarde des données hébergées sur votre VPS. Il vous appartient donc de les réaliser par vos propres moyens.  
 À cette fin, vous pouvez utiliser les options suivantes : la sauvegarde manuelle (Snapshot) ou la sauvegarde automatisée.
 
 ### Comment sécuriser mon VPS ?
