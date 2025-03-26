@@ -75,7 +75,7 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 - **Si vous avez sélectionné dans la liste un nom de domaine géré par OVHcloud** : vous avez le choix entre deux modes.
     - **Configuration recommandée** : votre zone DNS sera configurée automatiquement. Convient si vous n'avez pas de configuration spécifique dans votre zone DNS pour les enregistrements MX, SPF, DKIM et SRV.
     - **Configuration personnalisée** : convient si vous avez déjà configuré une offre e-mail sur votre nom de domaine. Vous pouvez choisir les éléments qui vous intéressent.
-        - Si souhaitez utiliser un service e-mail privé ou externe à OVHcloud en complément de cette plateforme e-mail, renseignez le nom d'hôte du serveur e-mail dans le cadre `URL du serveur email cible`.
+        - Si vous souhaitez utiliser un service e-mail privé ou externe à OVHcloud en complément de cette plateforme e-mail, renseignez le nom d'hôte du serveur e-mail dans le cadre `URL du serveur email cible`.
         - *Configurer l'enregistrement MX automatiquement* : permet une saisie automatique des serveurs de réception OVHcloud (s'applique à toutes les offres e-mail OVHcloud).
         - *Configurer l'enregistrement SPF automatiquement* : permet une saisie automatique de l'enregistrement SPF afin d'autoriser les serveurs d'envoi d'e-mails OVHcloud à transmettre vos e-mails. Cet enregistrement est valable pour l'ensemble des offres e-mail OVHcloud.
         - *Configurer l'enregistrement DKIM automatiquement* : permet une saisie automatique des enregistrements nécessaires pour authentifier vos envois d'e-mails.
