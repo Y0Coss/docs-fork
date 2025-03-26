@@ -166,18 +166,22 @@ Si des comptes e-mail sont attachés au nom de domaine que vous souhaitez détac
 **Attacher les comptes à un autre nom de domaine** :
 
 1. Rendez-vous dans l'onglet `Comptes e-mail`{.action}.
-1. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}.
-1. Cliquez sur `Modifier`{.action}.
-    ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
-1. Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
-    ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
+2. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}.
+3. Cliquez sur `Modifier`{.action}.
+   
+![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
+   
+4. Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
+   
+![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
 
 **Supprimer les comptes de votre plateforme** :
 
 1. Rendez-vous dans l'onglet `Comptes e-mail`{.action}.
 1. À droite du compte à supprimer, cliquez sur le bouton `...`{.action}.
 1. Cliquez sur `Réinitialiser ce compte`{.action} ou `Réinitialiser`{.action}.
-    ![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-400}
+   
+![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-400}
 
 Une fois la réattribution des comptes à un autre nom de domaine effectuée, ou suite à leur réinitialisation, il est possible de procéder à la suppression du nom de domaine.
 
