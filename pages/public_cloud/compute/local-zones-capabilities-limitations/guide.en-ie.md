@@ -29,7 +29,7 @@ Find more information on our [dedicated Local Zone Compute page](/links/public-c
 | Instance Backups | Yes |
 | Automatic Backups | Yes |
 | Volume Snapshots | Yes |
-| Volume Backups | No |
+| Volume Backups | Yes |
 | Object Storage | Yes |
 | Windows Images | No |
 
