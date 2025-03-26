@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - FAQ"
 excerpt: "Retrouvez les principales questions posées sur les hébergements web OVHcloud"
-updated: 2025-03-25
+updated: 2025-03-26
 ---
 
 <style>
@@ -51,7 +51,7 @@ Un e-mail vous sera envoyé sur votre adresse e-mail de contact avec une procéd
 
 > [!success]
 >
-> Si besoin, consultez en complément notre guide « [Modifier le mot de passe de votre compte OVHcloud](/pages/account_and_service_management/account_information/manage-ovh-password) ».
+> Si besoin, consultez en complément notre guide détaillé « [Modifier le mot de passe de votre compte OVHcloud](/pages/account_and_service_management/account_information/manage-ovh-password) ».
 
 ///
 
@@ -68,12 +68,16 @@ A cet endroit, vous pourrez gérer le mot de passe FTP de votre hébergement web
 
 > [!success]
 >
-> Si besoin, consultez en complément notre guide « [Hébergement Web - Modifier le mot de passe d'un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) »
+> Si besoin, consultez en complément notre guide détaillé « [Hébergement Web - Modifier le mot de passe d'un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) »
 
 ///
 
 
 /// details | Comment gérer le(s) mot(s) de passe de ma (mes) base(s) de données associée(s) à mon hébergement web ?
+
+> [!warning]
+>
+> Si vous changez le mot de passe d'une base de données utilisée par l'un de vos sites web, mettez-le à jour également dans le fichier de configuration du site web concerné. En effet, sans cette mise à jour, votre site web sera déconnecté de sa base de données et dysfonctionnera.
 
 Pour cela, réalisez les étapes suivantes :
 
@@ -88,7 +92,7 @@ A cet endroit, vous pourrez gérer le(s) mot(s) de passe de votre (vos) base(s) 
 
 > [!success]
 >
-> Si besoin, consultez en complément notre guide « [Hébergement Web - Modifier le mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password) »
+> Si besoin, consultez en complément notre guide détaillé « [Hébergement Web - Modifier le mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password) »
 
 ///
 
@@ -97,22 +101,26 @@ A cet endroit, vous pourrez gérer le(s) mot(s) de passe de votre (vos) base(s) 
 Pour cela, réalisez les étapes suivantes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `E-mails`{.action} (ou `MX Plan`{.action}), puis choisissez le nom de domaine concerné.
+2. Cliquez sur le menu `E-mails`{.action} (ou sur le menu `MX Plan`{.action}), puis choisissez le nom de domaine concerné.
 3. Sur la page qui s'affiche, cliquez sur l'onglet `Emails`{.action}.
-4. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite de l'adresse e-mail conernée, puis cliquez sur `Changer le mot de passe`{.action}.
+4. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite de l'adresse e-mail concernée, puis cliquez sur `Changer le mot de passe`{.action}.
 
 A cet endroit, vous pourrez modifier le mot de passe de votre adresse e-mail (en respectant la politique des mots de passe présents dans la fenêtre de saisie).
 
 > [!success]
 >
-> Si besoin, consultez en complément notre guide « [Modifier le mot de passe d'une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password) »
+> Si besoin, consultez en complément notre guide détaillé « [Modifier le mot de passe d'une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password) »
+>
+> Si vous utilisez un logiciel de messagerie (Outlook, Mail de Mac, Thunderbird, etc.), mettez à jour le mot de passe pour votre adresse e-mail. Ceci lorsque le logiciel de messagerie vous le demandera lors de son ouverture ou de sa synchronisation.
+>
+> Si vous avez d'autres questions sur la solution e-mail *MX Plan*, consultez notre [FAQ - MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 ///
 
 
 /// details | Comment mettre mon site web en ligne ? 
 
-Pour mettre en ligne votre site web, vous devez disposer des éléments suivants :
+Pour mettre en ligne votre site web, vous devez disposer au préalable des éléments suivants :
 
 - Un [nom de domaine](/links/web/domains) qui correspondra à l'adresse Web depuis laquelle votre site web sera accessible via un navigateur internet (exemple : *domain.tld*).
 - Un [hébergement web](/links/web/hosting) sur lequel installer votre site web.
@@ -126,18 +134,18 @@ Les principales étapes à suivre sont le suivantes :
 
 > [!success]
 >
-> Pour plus de détails sur la mise en ligne d'un site web sur un hébergement web, consultez en complément notre guide « [Hébergement web - Mettre en ligne un site web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ».
+> Pour plus de détails sur la mise en ligne d'un site web sur un hébergement web, consultez en complément notre guide détaillé « [Hébergement web - Mettre en ligne un site web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ».
 >
-> Si vous choisissez d'installer un CMS (WordPress, Joomla!, PrestaShop, Drupal) avec notre solution « Modules en 1 clic », consultez en complément notre guide « [Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
+> Si vous choisissez d'installer un CMS (WordPress, Joomla!, PrestaShop, Drupal) avec notre solution « Modules en 1 clic », consultez en complément notre guide détaillé « [Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
 >
-> Si votre site web existe déjà ailleurs et si vous souhaitez le rappatrier chez OVHcloud, consultez en complément notre guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
+> Si votre site web existe déjà ailleurs et si vous souhaitez le rappatrier chez OVHcloud, consultez en complément notre guide détaillé « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
 >
 > Pour vous aider à configurer votre hébergement web, n'hésitez pas à consulter notre page regroupant l'ensemble des [guides relatifs à nos solutions d'hébergement web](/products/web-cloud-hosting)
 
 ///
 
 
-/// details | Comment transférer sans interruption de service mon site web, ma base de données, mon nom de domaine et mes e-mails sur les serveurs OVHcloud ? 
+/// details | Comment transférer sans interruption de service mon site web, ma base de données, mon nom de domaine et mes e-mails chez OVHcloud ? 
 
 Les principales étapes à suivre sont le suivantes : 
 
@@ -154,7 +162,7 @@ Les principales étapes à suivre sont le suivantes :
 
 > [!success]
 >
-> Si besoin, consultez en complément notre guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » pour obtenir l'ensemble des étapes à suivre.
+> Si besoin, consultez en complément notre guide « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) » pour obtenir le détail des étapes à suivre.
 
 ///
 
@@ -171,7 +179,7 @@ A cet endroit, vous pourrez gérer les noms de domaine/sous-domaines déclarés 
 
 > [!success]
 >
-> Si besoin, consultez en complément notre guide « [Partager son hébergement web entre plusieurs sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+> Si besoin, consultez en complément notre guide détaillé « [Partager son hébergement web entre plusieurs sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
 ///
 
@@ -193,7 +201,7 @@ Une fois votre choix fait, réalisez les étapes suivantes :
 
 > [!success]
 >
-> Si besoin, consultez en complément notre guide « [Faire évoluer son offre d’hébergement web »](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) ».
+> Si besoin, consultez en complément notre guide détaillé « [Faire évoluer son offre d’hébergement web »](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) ».
 
 ///
 
@@ -212,7 +220,7 @@ Pour cela, réalisez les étapes suivantes :
 ///
 
 
-/// details | Lors d'une résiliation d'un hébergement web « Performance », comment conserver l'offre Web Cloud Databases liée ?
+/// details | Lors d'une résiliation d'un hébergement web « Performance », comment conserver l'offre « Web Cloud Databases » liée ?
 
 Les hébergements web **Performance** comprennent une offre Web Cloud Databases activable gratuitement.
 Lorsque vous résiliez ou supprimez votre hébergement web **Performance**, l'offre Web Cloud Databases éventuellement attachée est également résiliée. Pour conserver votre solution Web Cloud Databases, vous devrez la détacher **avant** la résiliation de l'hébergement.
@@ -229,7 +237,7 @@ Pour cela, réalisez les étapes suivantes :
 ///
 
 
-/// details | Comment augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement web « Performance » ?
+/// details | Comment augmenter la RAM d'une offre « Web Cloud Databases » liée à un hébergement web « Performance » ?
 
 Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement web **Performance**, vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre supérieure.
 
@@ -242,7 +250,7 @@ Pour cela, réalisez les étapes suivantes :
 
 **Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
 
-Pour ensuite augmenter la RAM de votre solution Web Cloud Databases, effectuez les étapes suivantes :
+Pour ensuite augmenter la RAM de votre solution « Web Cloud Databases », effectuez les étapes suivantes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 2. Cliquez sur le menu `Web Cloud Databases`{.action}, puis choisissez la solution Web Cloud Databases concernée.
