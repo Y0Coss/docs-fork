@@ -1,7 +1,7 @@
 ---
 title: 'Adding a domain name to your Exchange service'
 excerpt: 'Find out how to add a domain name to your Exchange service'
-updated: 2025-03-21
+updated: 2025-03-27
 ---
 
 <style>
@@ -21,10 +21,10 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Requirements
 
-- An [Exchange](/links/web/emails) or [Email Pro](/links/web/email-pro) solution
-- One or more domain names
-- Administrative access to your domain name’s configuration (in order to [modify the DNS zone](/pages/web_cloud/domains/dns_zone_edit))
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An [Exchange](/links/web/emails) or [Email Pro](/links/web/email-pro) solution.
+- One or more domain names.
+- Administrative access to your domain name’s configuration (in order to [modify the DNS zone](/pages/web_cloud/domains/dns_zone_edit)).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -49,113 +49,145 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ### Add a domain name
 
-To add a domain name, click on the `Associated domains`{.action} tab. The table displays the domain names currently associated with your service. To add a new domain name to it, click `Add a domain`{.action}.
+1. Click on the `Associated domains`{.action} tab of your Exchange or Email Pro platform.
+1. The table that pops up will show you the domain names currently associated with your service.
+1. Click the `Add a domain`{.action} button.
+
+![Add Domain](images/add_domain_exchange_step1.png){.thumbnail .w-400}
 
 > [!warning]
 >
-> All of the addresses created on your email service can view all of the addresses for this service in the directory, including those that have different domain names. To stop different domain names from being displayed this way, you will need to order a new [Exchange or Email Pro solution](/links/web/emails) for the domain name(s) concerned.
+> By default, all email accounts on a platform are interconnected. All of the addresses created on your email service will be able to view all of the service’s addresses in the directory, including those with a different domain name. To unlink the display of domains, you need to order another [Exchange or Email Pro platform](/links/web/emails) for the domain name(s) concerned.
 >
 
-![Add Domain](images/add_domain_exchange_step1.png){.thumbnail}
+In the window for adding a domain:
 
-In the window for adding a domain, select between these options:
+- **Select a domain from the list** : In the list, you will find the domain names that you fully manage (or at least manage the DNS zone) in your OVHcloud Control Panel.
 
-- **Choose a domain from the list**: Only domain names that use the OVHcloud configuration and are manageable from your customer account will appear.
+- **Enter a domain name that is not managed by your OVHcloud account** : You will need to be able to modify the domain name’s configuration, and more precisely its DNS zone, so that the service can be configured.
 
-- **Enter a domain name that is not managed by your OVHcloud account**: You will need to modify the domain name’s configuration (its DNS zone) for the service to function properly. In this case, a CNAME DNS record must be added.
+Once you have made your choice, click the `Next`{.action} button.
 
-Once you have selected an option, click on the `Next`{.action} button.
+![Add Domain](images/add_domain_exchange_step2.png){.thumbnail .w-400}
 
-![Add Domain](images/add_domain_exchange_step2.png){.thumbnail}
+The window now displays information about configuring modes.
 
-The window will then show information on configuring modes.
+- **If you have selected an OVHcloud domain name** from the list: you can choose between two modes.
+    - **Recommended configuration**: your DNS zone will be configured automatically. Contains if you do not have a specific configuration in your DNS zone for MX, SPF, DKIM and SRV records.
+    - **Custom configuration**: This is appropriate if you have already configured an email solution on your domain name. You can choose the elements that interest you.
+        - If you would like to use a private email service or one external to OVHcloud in addition to this email platform, enter the host name of the email server in the `URL of the target email server` box.
+        - *Configure MX record automatically*: allows automatic entry of OVHcloud receiving servers (applies to all OVHcloud email solutions).
+        - *Configure the SPF record automatically*: allows automatic entry of the SPF record in order to authorize OVHcloud email sending servers to transmit your emails. This registration is valid for all OVHcloud email solutions.
+        - *Configure DKIM record automatically*: allows automatic entry of the records required to authenticate your email sending.
+        - *Configure SRV record automatically*: Enables the email software to automatically configure Exchange accounts on your domain name.
 
-- **If you have entered a non-OVHcloud domain name**: Non-authoritative mode will be configured by default.
+![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-400}
 
-- **If you have selected an OVHcloud domain name from the list**: You will have to choose between two modes.
-    - **Authoritative**: Choose this if you only use your Exchange solution with your domain name. This mode does not allow the use of another email solution with your service.
-    - **Non-authoritative**: Choose this if you use your Exchange solution domain name with another email solution. You must enter details of your other email solution’s server.
->
-> - When an email is transmitted to your email platform (*Server A*) in **authoritative** mode, this means that all the email addresses of your domain name are only hosted on this platform. <br> <br> For example, if we send an email to the address *mary.johnson@mydomain.ovh*, the *Server A* returns a failure message to the sender, because this address does not exist on *Server A*.
-> - When an email is transmitted to your email platform (*Server A*) in **non-authoritative** mode, this means that the email addresses of your domain name are distributed between your main email service (*Server A*) and another email service (*Serverg B*). <br> <br> For example, if we send an email to the address *mary.johnson@mydomain.ovh*, *Server A* will forward the email to *Server B* which can deliver it.
->
->![Add Domain](images/add_domain_exchange_authoritative.png){.thumbnail}
->
+- **If you have entered a domain name that is not managed by your OVHcloud account**: this means that the domain name, and more specifically its DNS zone, is not managed from the OVHcloud Control Panel. It can also be registered at another registrar. It will then be necessary to proceed with the configuration directly in its management interface, whatever the following choice made.
+    - **Recommended configuration** : This is suitable if you only use OVHcloud email solutions.<br><br>
+    - **Custom configuration**: If you would like to use a private email service or one external to OVHcloud in addition to this email platform, enter the host name of the email server in the `URL of the target email server` box.
 
-> [!warning]
->
-> If you get the message "**authoritative domain detected**" when adding your domain name to your e-mail platform, this means that this domain name is declared in **authoritative** mode on a another email platform. You will have to switch it to **non-authoritative** mode on both platforms so that they can coexist.
+![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-400}
 
-Click on the `Next`{.action} button to continue adding the domain.
+At the end of the configuration process, please check the information displayed, then click the `Confirm`{.action} button to confirm the domain addition.
 
-![Add Domain](images/add_domain_exchange_step3.png){.thumbnail}
+### Configure the domain name (DNS zone)
 
-**If you have selected an OVHcloud domain name in the list**, it will be automatically configured. To do this, tick the boxes and click on the `Next`{.action} button to continue adding the domain.
+Once you have added the domain name as an associated domain, check that its configuration is correct using the table that pops up. A green box indicates that the domain name is correctly configured.<br>
 
-**If you have entered a non-OVHcloud domain name**, it will need to be configured in the next step.
+If the box is red:
 
-![emailpro](images/add_domain_exchange_step4.png){.thumbnail}
+- **if you chose automatic configuration when you added your domain** : it may take a few moments for the display in the OVHcloud Control Panel to refresh.
 
-At the end of the configuration process, the assistant will ask you to check the information entered. Click on the `Confirm`{.action} button to confirm that you wish to add the domain. Repeat this step as many times as required, if you need to add more domain names.
+- **if you have entered a domain name that is not managed by your OVHcloud account**:
+    - Click on the red box `MX`, `SRV`, `SPF` and `DKIM` to see the changes you need to make. If this domain name does not use OVHcloud’s configuration (its DNS servers), you will need to carry out the modifications from your domain name’s management interface.
+    - As part of a red `CNAME` box, please refer to our guide explaining how to [create a CNAME record when adding an associated domain](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
-### Configure the domain name (DNS)
-
-Once the domain name has been added as an associated domain, make sure that its configuration is correct by using the table displayed. A green box will show that the domain name is correctly configured. If the box is red, additional steps might be required: 
-
-- **If you chose automatic configuration when adding the domain**: Wait a few minutes until the changes are applied in the OVHcloud Control Panel.
-
-- **If you have entered a non-OVHcloud domain name**: Click the red box to view the changes you need to make. If this domain name does not use the OVHcloud configuration (its DNS servers), you must carry out the modifications in the interface you use to manage your domain name’s configuration. If you need to modify the CNAME record, you can find out more by referring to [this documentation](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
+![emailpro](images/add_domain_exchange_step4.png){.thumbnail .w-400}
 
 > [!primary]
 >
-> Changes made to a domain name’s configuration can take between 4 and a maximum of 24 hours to propagate fully.
+> Modifying a domain name’s configuration can take between 4 and 24 hours to propagate fully.
 >
 
-To check that your domain name is correctly configured, go back to the `Associated domains`{.action} tab for your service. If the box has turned green, your domain name is correctly configured. If not, then the configuration changes you have made may not have propagated fully.
+To check that a domain name is correctly configured, go to the `Associated domains`{.action} table on your service. If the box is now green, the domain name is correctly configured. Otherwise, the propagation may not be complete yet.
 
-![emailpro](images/add_domain_exchange_step5.png){.thumbnail}
+![emailpro](images/add_domain_exchange_step5.png){.thumbnail .w-400}
 
-### Configure and use accounts
+### Modify the mode of an associated domain
 
-Now that you have added the domain names to your service, you can configure your email accounts to include them. You can do this from the `Email accounts`{.action} tab. If required, you can order additional accounts using the `Action`{.action}/`Order accounts`{.action} or `Add an account`{.action} button.
+You can change the mode of an associated domain on your platform. First, it is necessary to understand the difference in operation between authoritative and non-authoritative modes.
 
-As a reminder, all of the addresses created on your service can view all of the addresses for this service in the directory, including those that have different domain names.
+> [!primary]
+>
+> **Authoritative / non-authoritative**
+>
+> - Choosing the **authoritative** mode on your email platform (*Server A*) involves hosting all of your domain name’s email addresses on this platform.<br>For example, if you send an email to the address “*mary.johnson@mydomain.ovh*”, the “*Server A*” will return a failure message to the sender because this address does not exist on the “*Server A*”.<br><br>
+>
+> - The **non-authoritative** mode on your email platform (*Server A*) allows distribution of your domain name’s email addresses between your primary email platform (*Server A*) and another email service (*Server B*).<br>For example, if you send an email to the address “*mary.johnson@mydomain.ovh*”, *Server A* will send the email to “*Server B*” so that it can deliver it.<br>
+>
+> ![Authoritative](images/add_domain_exchange_authoritative.png){.thumbnail .w-400}
 
-Once you have finished configuring your accounts, you can now start using them. To do this, OVHcloud offers **webmail**, accessible via [Webmail](/links/web/email). I If you are using a third-party client with your email accounts, ensure that the software is compatible with the service. 
+1. Click on the `Associated domains`{.action} tab.
+1. Click the `...`{.action}' button on the line for the domain name concerned.
+1. Click `Configuration`{.action}.
+1. Select the mode you want.
 
-If you need help with configuring your email account on an email client or a device (e.g. a smartphone or tablet) or have questions about email service features, please refer to our documentation which you can access from the [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) and [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) pages.
-
-You can purchase Outlook licences in the [OVHcloud Control Panel](/links/manager), and Office 365 licences on the following page: [Microsoft 365](/links/web/ms365).
-
-We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
-
-### Delete a domain name from a platform
-
-If you would like to remove a domain name from your Exchange or Email Pro service, you will need to check that it is not linked to email accounts, aliases, resources, shared accounts (only on Exchange), groups, external contacts, or footers that are still configured. In this case, you will need to **link these accounts to another domain name** on your platform, or **delete** them.
+![Add Domain Exchange](images/add_domain_exchange_mode.png){.thumbnail .w-400}
 
 > [!warning]
 >
-> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email accounts manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) which explains how to export account data from your Control Panel or email software.
+> If you get the message "**authoritative domain detected**" when adding your domain name to your email platform, this means that this domain name is declared in **authoritative** mode on another email platform. You will need to switch it to **non-authoritative** mode on both platforms in order for them to coexist.
 
-Go to the `Associated domains`{.action} tab for your platform. In the `Accounts` column of the table, you will see the number of accounts associated with the domain names in your list.
+### Configure and use accounts
 
-![emailpro](images/add_domain_exchange_step6.png){.thumbnail}
+Now that you have added the domain names to your service, you can configure your email accounts with them. You can do this in the `Email accounts`{.action} tab. If required, you can order additional accounts using the `Action`{.action}/`Order accounts`{.action} or `Add account`{.action}.
 
-If email accounts are using the domain name you want to detach, you have 2 options:
+As a reminder, all of the addresses created on your service will be able to view all of the addresses for that service in the directory, including those with a different domain name.
 
-- **Attach the accounts to another domain** name: Go to the `Email accounts`{.action} tab. To the right of the accounts you want to modify, click the `...`{.action} button, then `Modify`{.action}.
-    ![emailpro](images/add_domain_exchange_step8.png){.thumbnail}
-    In the modification window, you can modify the domain name attached to the account via the dropdown menu.
-    ![emailpro](images/add_domain_exchange_step9.png){.thumbnail}
+Once the accounts are fully configured, you can start using them. To do this, OVHcloud offers the **webmail**, accessible [here](/links/web/email). To optimize the use of your email address on a software application, ensure that it is compatible with the service.
 
-- **Delete the accounts on your platform**: go to the `Email accounts`{.action} tab. To the right of the account you want to delete, click the `...`{.action} button, then `Reset this account`{.action} or `Reset`{.action}
-    ![emailpro](images/add_domain_exchange_step7.png){.thumbnail}
+If you would like to configure your email address on an email client or device such as a smartphone or tablet, or if you would like assistance with the features of your email service, please refer to our documentation, which is accessible from the [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) and [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) pages.
 
-Once the accounts have been reassigned to another domain name or their reset has been completed, it is possible to delete the domain name. 
+You can purchase Outlook licenses in the [OVHcloud Control Panel](/links/manager) and Office 365 licenses on the [Microsoft 365](/links/web/ms365) page. We recommend using one of these solutions if you would like to use Outlook email software, or more software from the Office suite, depending on your needs.
 
-In the `Associated domains`{.action} tab for your platform, click on the `...`{.action} button to the right of the domain name concerned, then on `Delete this domain`{.action}.
+### Delete a domain name from a platform
 
-![emailpro](images/add_domain_exchange_step10.png){.thumbnail}
+If you would like to remove a domain name from your Exchange or Email Pro service, you will need to ensure that it is not linked to any email accounts, aliases, resources, shared accounts (only on Exchange), groups, external contacts or footers that are still configured. In this case, you will need to **attach these accounts to another domain name** on your platform, or **delete them**.
+
+> [!warning]
+>
+> Before deleting email accounts, make sure they are not being used. You may need to back up these accounts. If necessary, please refer to our guide on [Migrating your email address manually](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), which will describe how you can export account data via the OVHcloud Control Panel or email client.
+
+Go to the `Associated domains`{.action} tab of your platform. In the table, the `Accounts` column shows the number of accounts associated with the domain names in your list.
+
+If you have email accounts attached to the domain name you want to detach, you have two options:
+
+**Attach accounts to another domain name**:
+
+1.\ Go to the `Email accounts`{.action} tab.<br>
+2.\ To the right of the accounts you want to modify, click the `...`{.action}.<br> button
+3.\ Click `Modify`{.action}.
+
+![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
+
+4.\ From the Edit window, you can modify the domain name attached to the account via the dropdown menu.
+
+![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
+
+**Delete accounts from your platform**:
+
+1. Go to the `Email accounts`{.action} tab.
+1. To the right of the account you want to delete, click the `...`{.action}' button.
+1. Click `Reset this account`{.action} or `Reset`{.action}.
+
+![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-400}
+
+Once the accounts have been reassigned to another domain name, or after their reset, the domain name can be deleted.
+
+In the `Associated domains`{.action} tab of your platform, click the `...`{.action} button to the right of the domain name concerned, then `Delete this domain`{.action}.
+
+![emailpro](images/add_domain_exchange_step10.png){.thumbnail .w-400}
 
 ## Go further
 

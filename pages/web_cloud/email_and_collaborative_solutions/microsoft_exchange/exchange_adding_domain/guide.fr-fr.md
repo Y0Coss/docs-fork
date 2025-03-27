@@ -1,7 +1,7 @@
 ---
 title: Ajouter et gérer un nom de domaine sur une plateforme e-mail
 excerpt: Découvrez comment ajouter un nom de domaine à votre plateforme Exchange ou E-mail Pro
-updated: 2025-03-21
+updated: 2025-03-27
 ---
 
 <style>
@@ -62,7 +62,7 @@ Ajouter un nom de domaine sur un service Exchange ou E-mail Pro est indispensabl
 
 Sur la fenêtre d'ajout de domaine :
 
-- **sélectionner un domaine dans la liste** : vous retrouverez dans la liste les noms de domaine dont vous avez la gestion complète (ou à minima celle de la zone DNS) dans votre espace client OVHcloud.
+- **sélectionner un domaine dans la liste** : vous retrouverez dans la liste les noms de domaine dont vous avez la gestion complète (ou a minima celle de la zone DNS) dans votre espace client OVHcloud.
 
 - **saisir un nom de domaine non géré par votre compte OVHcloud** : vous devrez être en mesure de modifier la configuration du nom de domaine, plus précisément sa zone DNS, afin que le service puisse être configuré.
 
@@ -137,7 +137,7 @@ Il est possible de modifier le mode d'un domaine associé sur votre plateforme. 
 
 > [!warning]
 >
-> Si vous obtenez le message "**authoritative domain detected**" lors de l'ajout de votre nom de domaine sur votre plateforme e-mail, cela signifie que ce nom de domaine est déclaré en mode **autoritatif** sur une autre plateforme e-mail. Vous devrez le passer en mode **non-autoritatif** sur les deux plateformes pour qu'elles puissent cohabiter.
+> Si vous obtenez le message «**authoritative domain detected**» lors de l'ajout de votre nom de domaine sur votre plateforme e-mail, cela signifie que ce nom de domaine est déclaré en mode **autoritatif** sur une autre plateforme e-mail. Vous devrez le passer en mode **non-autoritatif** sur les deux plateformes pour qu'elles puissent cohabiter.
 
 ### Configurer et utiliser les comptes
 
@@ -165,14 +165,14 @@ Si des comptes e-mail sont attachés au nom de domaine que vous souhaitez détac
 
 **Attacher les comptes à un autre nom de domaine** :
 
-1. Rendez-vous dans l'onglet `Comptes e-mail`{.action}.
-2. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}.
-3. Cliquez sur `Modifier`{.action}.
-   
+1.\ Rendez-vous dans l'onglet `Comptes e-mail`{.action}.<br>
+2.\ À droite des comptes à modifier, cliquez sur le bouton `...`{.action}.<br>
+3.\ Cliquez sur `Modifier`{.action}.
+
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
-   
-4. Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
-   
+
+4.\ Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
+
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
 
 **Supprimer les comptes de votre plateforme** :
@@ -180,7 +180,7 @@ Si des comptes e-mail sont attachés au nom de domaine que vous souhaitez détac
 1. Rendez-vous dans l'onglet `Comptes e-mail`{.action}.
 1. À droite du compte à supprimer, cliquez sur le bouton `...`{.action}.
 1. Cliquez sur `Réinitialiser ce compte`{.action} ou `Réinitialiser`{.action}.
-   
+
 ![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-400}
 
 Une fois la réattribution des comptes à un autre nom de domaine effectuée, ou suite à leur réinitialisation, il est possible de procéder à la suppression du nom de domaine.
