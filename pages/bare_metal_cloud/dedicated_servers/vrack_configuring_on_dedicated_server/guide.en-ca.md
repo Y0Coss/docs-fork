@@ -240,7 +240,7 @@ sudo systemctl restart NetworkManager.service
 
 Repeat this process for your other server(s) and assign an unused IP address from your private range. Once you have done this, your servers will be able to communicate with each other on the private network.
 
-##### Fedora
+##### **Fedora**
 
 Once you have identified the name of your private interface (as explained [here](#vrack-interface)), verify that is it connected. In our example, our interface is called `eno2`:
 

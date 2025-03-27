@@ -222,7 +222,7 @@ sudo systemctl restart NetworkManager.service
 
 Powtórz tę procedurę dla innych serwerów i przypisz każdemu z nich nieużywany adres IP z Twojego zakresu prywatnego. Twoje serwery będą mogły komunikować się między sobą w sieci prywatnej.
 
-##### Fedora
+##### **Fedora**
 
 Po określeniu nazwy interfejsu prywatnego (zgodnie z wyjaśnieniami [tutaj](#vrack-interface)), wprowadź następujące polecenie, aby upewnić się, że interfejs jest poprawnie podłączony. W naszym przykładzie nasz interfejs nosi nazwę `eno2`:
 
