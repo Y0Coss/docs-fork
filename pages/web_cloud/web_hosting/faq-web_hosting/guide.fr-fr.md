@@ -350,7 +350,7 @@ Dès lors où les suppressions sont terminées, réalisez une nouvelle installat
 
 Votre site web (« [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ») s'affiche avec l'adresse web par défaut de votre hébergement web de type « xxxxx.clusterXXX.hosting.ovh.net » suite à une modification de votre « [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
 
-Si votre site s'affiche avec cette URL suite à une manipulation, la solution la plus rapide sera de le restaurer dans un état antérieur où il fonctionnait correctement.
+Si votre site web s'affiche avec cette URL suite à une manipulation, la solution la plus rapide sera de le restaurer dans un état antérieur où il fonctionnait correctement.
 
 > [!alert]
 >
@@ -467,9 +467,16 @@ Si les restaurations ne vous permettent pas de rétablir l'accès à votre site 
 
 ![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
-Si vous avez activé [l'option CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) de votre hébergement, désactivez le mode *Maintenance* sur votre site WordPress ou PrestaShop.
+Si vous avez activé [l'option CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) de votre hébergement web, désactivez le mode *Maintenance* sur votre site WordPress ou PrestaShop.
 
-Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](/links/partner) sur le site des [partenaires OVHcloud](/links/partner).
+Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
+
+> [!success]
+>
+> Si besoin, consultez en complément les guides détaillés suivants :
+>
+> - « [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) ».
+> - « [Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic) ».
 
 ///
 
@@ -477,9 +484,22 @@ Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, conta
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-Ce message indique que le type de requête HTTP que vous tentez de faire sur votre site est interdit pour un temps limité. Dans cette situation, [examinez les logs](/pages/web_cloud/web_hosting/logs_and_statistics) de votre site afin de déterminer quelles requêtes ont provoqué ce blocage.
+Ce message indique que le type de requête HTTP que vous tentez de faire sur votre site web est interdit pour un temps limité. Ceci généralement pour des raisons de sécurité.
 
-Pour vous aider à corriger ces anomalies, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
+Dans cette situation, plusieurs actions sont requises :
+
+- [Examinez les logs](/pages/web_cloud/web_hosting/logs_and_statistics) de votre site web, afin de déterminer quelles requêtes ont provoqué ce blocage.
+- Vérifiez que vos appareils (ordinateurs, smartphones, etc.) ne sont pas infectés par un logiciel espion ou malveillant à l'aide d'un logiciel anti-virus ou anti-spyware.
+- Vérifiez le code source de votre site web (espace de stockage FTP et base(s) de données). 
+
+Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
+
+> [!success]
+>
+> Si besoin, consultez en complément les guides détaillés suivants :
+>
+> - « [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics) ».
+> - « [Cas d'usage - Conseils suite au piratage de votre site Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked) ».
 
 ///
 
@@ -487,11 +507,22 @@ Pour vous aider à corriger ces anomalies, contactez votre Webmaster ou l'un de 
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-Ce message indique que l'adresse IP que vous utilisez pour vous connecter à votre site est bloquée pour un temps limité. 
+Ce message indique que l'adresse IP que vous utilisez pour vous connecter à votre site web est bloquée pour un temps limité. Ceci généralement pour des raisons de sécurité.
 
-Dans cette situation, [examinez les logs](/pages/web_cloud/web_hosting/logs_and_statistics) de votre site, afin de déterminer quelles requêtes ont provoqué ce blocage.<br>
-Vérifiez également que votre poste informatique n'est pas infecté par un virus.<br>
-Vous pouvez enfin contacter l'un de [nos partenaires](/links/partner), afin qu'il vérifie le code informatique de votre site.
+Dans cette situation, plusieurs actions sont requises :
+
+- [Examinez les logs](/pages/web_cloud/web_hosting/logs_and_statistics) de votre site web, afin de déterminer quelles requêtes ont provoqué ce blocage.
+- Vérifiez que vos appareils (ordinateurs, smartphones, etc.) ne sont pas infectés par un logiciel espion ou malveillant à l'aide d'un logiciel anti-virus ou anti-spyware.
+- Vérifiez le code source de votre site web (espace de stockage FTP et base(s) de données). 
+
+Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
+
+> [!success]
+>
+> Si besoin, consultez en complément les guides détaillés suivants :
+>
+> - « [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics) ».
+> - « [Cas d'usage - Conseils suite au piratage de votre site Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked) ».
 
 ///
 
