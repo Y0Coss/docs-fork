@@ -99,7 +99,7 @@ Auf diese Weise können Sie Ihre Backup-Daten von einem anderen Dienst über ver
 > Nur IP-Adressen von OVHcloud können autorisiert werden.
 >
 
-Loggen Sie sich mit den Zugangsdaten Ihres Kunden-Accounts in der [OVHcloud API Console](/links/api) ein und verwenden Sie den folgenden Anruf:
+Loggen Sie sich mit den Zugangsdaten Ihres Kunden-Accounts in der [OVHcloud API-Konsole](/links/api) ein und verwenden Sie den folgenden Aufruf:
 
 > [!api]
 >

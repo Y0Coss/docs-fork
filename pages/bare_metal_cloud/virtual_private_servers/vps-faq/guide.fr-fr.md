@@ -19,19 +19,19 @@ Nous attirons cependant votre attention sur la nécessité de bien sélectionner
 
 ### Que choisir entre un VPS et un hébergement web Plesk ?
 
-Sur un hébergement web Plesk, un espace avec Plesk préinstallé est mis à votre disposition. Vous pouvez gérer vos sites internet mais n’êtes pas administrateur du service. Celui-ci ne pourra servir qu’à la gestion.
+Sur un hébergement web Plesk, un espace avec Plesk préinstallé est mis à votre disposition. Vous pouvez gérer vos sites internet mais n’êtes pas administrateur du service. Celui-ci ne pourra servir qu’à la gestion.  
 En choisissant un VPS, vous êtes l’administrateur de votre serveur et OVHcloud n’a pas accès à son contenu. Vous êtes ainsi libre de l’utiliser selon vos besoins.
 
 ### Quels sont les avantages d'un VPS par rapport à un serveur dédié ?
 
-Les VPS ont pour avantage de vous libérer de la gestion hardware, comme le suivi de l’état des disques durs, de la mémoire vive (RAM) et du CPU. Ils sont adaptés à la plupart des usages web, pour des projets dont la taille est maîtrisée.
+Les VPS ont pour avantage de vous libérer de la gestion hardware, comme le suivi de l’état des disques durs, de la mémoire vive (RAM) et du CPU. Ils sont adaptés à la plupart des usages web, pour des projets dont la taille est maîtrisée.  
 L’utilisation d’un serveur dédié est quant à elle conseillée si vous souhaitez gérer vous-même la partie matérielle, bâtir des architectures plus élaborées, créer une infrastructure incluant un réseau privé (vRack) ou encore déployer des solutions complexes autres que des services web.
 
 En règle générale, les utilisateurs dont l’activité web se développe évoluent vers des serveurs dédiés ou des solutions Public Cloud. Ces services proposent des infrastructures plus complexes et flexibles, adaptées à une croissance forte.
 
 ### Quelles sont les différences entre les solutions VPS et Public Cloud ?
 
-Le VPS est une solution adaptée aux environnements de préproduction et production qui ne nécessitent pas de performances constantes.
+Le VPS est une solution adaptée aux environnements de préproduction et production qui ne nécessitent pas de performances constantes.  
 Le Public Cloud d'OVHcloud propose quant à lui une infrastructure multiserveur avec une haute disponibilité des machines. Un réseau privé, le vRack, est également disponible avec cette solution.
 
 ### Comment choisir mon VPS OVHcloud ?
@@ -60,7 +60,7 @@ Si vous souhaitez bénéficier de ressources garanties sans connaissances en adm
 
 ### Comment me connecter à mon VPS ?
 
-Vous pouvez vous connecter à distance à votre VPS grâce aux identifiants fournis par e-mail après la livraison du service.
+Vous pouvez vous connecter à distance à votre VPS grâce aux identifiants fournis par e-mail après la livraison du service.  
 La méthode de connexion dépend des systèmes d'exploitation utilisés.
 
 Tous les détails vous sont présentés dans le guide « [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) ».
@@ -71,12 +71,12 @@ Oui. Un VPS peut être partitionné et organisé en fonction de vos besoins. Vou
 
 ### Mon VPS est-il sauvegardé ?
 
-OVHcloud ne fournit pas de sauvegarde des données hébergées sur votre VPS. Vous devrez appliquer votre propre stratégie de sauvegarde.
+OVHcloud ne fournit pas de sauvegarde des données hébergées sur votre VPS. Vous devrez appliquer votre propre stratégie de sauvegarde.  
 À cette fin, vous pouvez utiliser les options suivantes : la sauvegarde manuelle (Snapshot) ou la sauvegarde automatisée.
 
 ### Comment sécuriser mon VPS ?
 
-Par défaut le VPS est fourni « nu », aucune configuration de sécurité n’est présente sur ce dernier. C’est donc la première action que vous devez entreprendre dès la livraison de votre VPS.
+Par défaut le VPS est fourni « nu », aucune configuration de sécurité n’est présente sur ce dernier. C’est donc la première action que vous devez entreprendre dès la livraison de votre VPS.  
 Pour ce faire, n’hésitez pas à consulter le guide « [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) ».
 
 ### Quelle est la bande passante allouée à mon VPS ? Est-elle garantie ?
@@ -91,7 +91,7 @@ OVHcloud propose un SLA de 99,9% sur l’ensemble des gammes VPS.
 
 L'accès à votre Backup Storage (backup FTP) peut être restreint au service auquel il est lié via votre espace client OVHcloud.
 
-Afin d'autoriser des adresses IP supplémentaires depuis lesquelles vous souhaitez accéder à votre Backup Storage, vous pouvez utiliser l'API OVHcloud.
+Afin d'autoriser des adresses IP supplémentaires depuis lesquelles vous souhaitez accéder à votre Backup Storage, vous pouvez utiliser l'API OVHcloud.  
 Cela vous permettra de récupérer vos sauvegardes de données depuis un service différent via différents protocoles (FTP, NFS, CIFS).
 
 > [!warning]
@@ -114,6 +114,8 @@ Modifiez les paramètres comme suit :
 - `nfs` : définissez ce paramètre sur `true` si vous utilisez ce protocole.
 
 Cliquez sur le bouton `EXECUTE`{.action}.
+
+Afin de vérifier que votre adresse IP est bien autorisée, utilisez l'appel suivant :
 
 > [!api]
 >

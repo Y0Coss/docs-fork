@@ -60,8 +60,8 @@ Si desea disfrutar de recursos garantizados sin tener conocimientos de administr
 
 ## ¿Cómo conectarme a mi VPS?
 
-Para conectarse a su VPS, deberá utilizar la dirección IP, el nombre de usuario y la contraseña que le indicaremos por correo electrónico al recibir el pedido.  
-En Windows, le recomendamos que se conecte mediante el programa Putty. Puede conectarse directamente al terminal desde un equipo Linux.
+Puede conectarse a distancia a su VPS con las claves que le facilitemos por correo electrónico tras la entrega del servicio.
+El método de conexión depende de los sistemas operativos utilizados.
 
 En la guía ["Primeros pasos con un VPS"](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) encontrará todos los detalles.
 
@@ -71,7 +71,7 @@ Sí. Un VPS puede particionarse y organizarse en función de sus necesidades. De
 
 ### ¿Se guarda un VPS?
 
-OVHcloud no realiza copias de seguridad de los datos alojados en su VPS. Por lo tanto, usted deberá crearlas por su cuenta.  
+OVHcloud no ofrece copias de seguridad de los datos alojados en su VPS. Deberá aplicar su propia estrategia de copia de seguridad.  
 Para ello, puede utilizar las siguientes opciones: la copia de seguridad manual (Snapshot) o la copia de seguridad automatizada.
 
 ## ¿Cómo proteger mi VPS?
@@ -91,29 +91,29 @@ En todas las gamas de VPS, OVHcloud ofrece un SLA del 99,9%.
 
 El acceso al backup FTP puede restringirse al servicio al que esté asociado desde el área de cliente de OVHcloud.
 
-Para poder añadir más direcciones IP de distintos servicios, puede utilizar la API de OVHcloud.
-para así poder recuperar los backups desde un servicio de otra localización.
+Para autorizar direcciones IP adicionales desde las que quiere acceder a su Backup Storage, puede utilizar la API de OVHcloud.  
+Esto le permitirá recuperar sus copias de seguridad de datos desde un servicio diferente a través de diferentes protocolos (FTP, NFS, CIFS).
 
 > [!warning]
 > Solo es posible autorizar las direcciones IP de OVHcloud.
 >
 
-Conéctese a [https://api.ovh.com/](https://api.ovh.com/) y utilice la siguiente llamada:
+Conéctese a la [consola API de OVHcloud](/links/api) con las claves de su cuenta de cliente y utilice la siguiente llamada:
 
 > [!api]
 >
 > @api {v1} /vps POST /vps/{serviceName}/backupftp/access
 >
 
-Introduzca los campos de la siguiente forma:
+Cambie la configuración de la siguiente manera:
 
-- `serviceName `: el nombre de su VPS
-- `cifs `: marque si es necesario
-- `ftp`: marque si es necesario
-- `ipBlock`: introduzca la IP con el formato `1.2.3.4/32`
-- `nfs`: marque si es necesario
+- `serviceName`: introduzca el nombre interno de su VPS (`vps-x11x11xyy.vps.ovh.net`).
+- `cifs`: establezca este parámetro en `true` si utiliza este protocolo.
+- `ftp`: establezca este parámetro en `true` si utiliza este protocolo.
+- `ipBlock`: introduzca la dirección IP que tendrá acceso, con el formato `203.0.113.100/32`.
+- `nfs`: establezca este parámetro en `true` si utiliza este protocolo.
 
-![post api](images/post-api.png){.thumbnail}
+Pulse el botón `EXECUTE`{.action}.
 
 Para comprobar que su dirección IP está autorizada, utilice la siguiente llamada:
 
