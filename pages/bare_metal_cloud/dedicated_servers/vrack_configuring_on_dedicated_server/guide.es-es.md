@@ -222,7 +222,7 @@ sudo systemctl restart NetworkManager.service
 
 Repita este procedimiento para los demás servidores y asígnele a cada uno de ellos una dirección IP no utilizada desde su rango privado. A continuación, los servidores podrán comunicarse entre sí en la red privada.
 
-##### Fedora
+##### **Fedora**
 
 Una vez que haya identificado el nombre de su interfaz privada (como se explica [aquí](#vrack-interface)), ejecute el siguiente comando para comprobar que esté conectada. En nuestro ejemplo, nuestra interfaz se denomina `eno2`:
 
