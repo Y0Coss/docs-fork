@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - FAQ"
 excerpt: "Retrouvez les principales questions posées sur les hébergements web OVHcloud"
-updated: 2025-03-26
+updated: 2025-03-27
 ---
 
 <style>
@@ -37,7 +37,6 @@ A cet endroit, vous pourrez gérer vos certificats SSL, la version PHP appliqué
 
 ///
 
-
 /// details | J'ai oublié le mot de passe ou l'identifiant client OVHcloud où se trouve mon hébergement web, que faire ?
 
 En cas d'oubli de votre identifiant client OVHcloud ou du mot de passe associé à cet identifiant, réalise les étapes suivantes :
@@ -55,7 +54,6 @@ Un e-mail vous sera envoyé sur votre adresse e-mail de contact avec une procéd
 
 ///
 
-
 /// details | Comment gérer le mot de passe de l'espace de stockage FTP de son hébergement web ?
 
 Pour cela, réalisez les étapes suivantes :
@@ -72,7 +70,6 @@ A cet endroit, vous pourrez gérer le mot de passe FTP de votre hébergement web
 
 ///
 
-
 /// details | Comment gérer le(s) mot(s) de passe de ma (mes) base(s) de données associée(s) à mon hébergement web ?
 
 > [!warning]
@@ -86,9 +83,6 @@ Pour cela, réalisez les étapes suivantes :
 3. Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}.
 
 A cet endroit, vous pourrez gérer le(s) mot(s) de passe de votre (vos) base(s) de données associé(s) à votre hébergement web.
-
-
-- Pour modifier le mot de passe de votre adresse e-mail MX Plan, suivez les instructions de [ce guide](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password).
 
 > [!success]
 >
@@ -113,10 +107,9 @@ A cet endroit, vous pourrez modifier le mot de passe de votre adresse e-mail (en
 >
 > Si vous utilisez un logiciel de messagerie (Outlook, Mail de Mac, Thunderbird, etc.), mettez à jour le mot de passe pour votre adresse e-mail. Ceci lorsque le logiciel de messagerie vous le demandera lors de son ouverture ou de sa synchronisation.
 >
-> Si vous avez d'autres questions sur la solution e-mail *MX Plan*, consultez notre [FAQ - MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+> Si vous avez d'autres questions sur la solution e-mail *MX Plan*, consultez notre [FAQ - E-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 ///
-
 
 /// details | Comment mettre mon site web en ligne ? 
 
@@ -144,7 +137,6 @@ Les principales étapes à suivre sont le suivantes :
 
 ///
 
-
 /// details | Comment transférer sans interruption de service mon site web, ma base de données, mon nom de domaine et mes e-mails chez OVHcloud ? 
 
 Les principales étapes à suivre sont le suivantes : 
@@ -166,7 +158,6 @@ Les principales étapes à suivre sont le suivantes :
 
 ///
 
-
 /// details | Comment héberger plusieurs sites web sur un même hébergement web ?
 
 Pour cela (et si votre [hébergement web](/links/web/hosting) est compatible), réalisez les étapes suivantes :
@@ -182,7 +173,6 @@ A cet endroit, vous pourrez gérer les noms de domaine/sous-domaines déclarés 
 > Si besoin, consultez en complément notre guide détaillé « [Partager son hébergement web entre plusieurs sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
 ///
-
 
 /// details | Comment changer de formule d'hébergement web ?
 
@@ -205,7 +195,6 @@ Une fois votre choix fait, réalisez les étapes suivantes :
 
 ///
 
-
 /// details | Comment conserver l'offre e-mail liée à mon hébergement web lors d'une résiliation ?
 
 Lorsque vous résiliez ou supprimez votre hébergement web, l'offre e-mail qui est attachée est également résiliée. Pour conserver vos adresses e-mails, il vous faudra détacher l'offre e-mail **avant** la résiliation de l'hébergement web concerné.
@@ -218,7 +207,6 @@ Pour cela, réalisez les étapes suivantes :
 4. Suivez les instructions pour commander une offre e-mail indépendante qui vous permettra de conserver vos adresses e-mails déjà créées.
 
 ///
-
 
 /// details | Lors d'une résiliation d'un hébergement web « Performance », comment conserver l'offre « Web Cloud Databases » liée ?
 
@@ -235,7 +223,6 @@ Pour cela, réalisez les étapes suivantes :
 **Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
 
 ///
-
 
 /// details | Comment augmenter la RAM d'une offre « Web Cloud Databases » liée à un hébergement web « Performance » ?
 
@@ -263,87 +250,161 @@ Pour ensuite augmenter la RAM de votre solution « Web Cloud Databases », effec
 
 ///
 
-
 ## Diagnostic
 
 > [!warning]
 >
-> Si vous rencontrez une anomalie non-répertoriée dans cette FAQ, consultez la rubrique « *Dépanner* » présente sur notre page regroupant l'ensemble des [guides relatifs à nos solutions d'hébergement web](/products/web-cloud-hosting).
+> Si vous rencontrez un dysfonctionnement non-répertorié dans cette FAQ, consultez la rubrique « *Dépanner* » présente sur notre page regroupant l'ensemble des [guides relatifs à nos solutions d'hébergement web](/products/web-cloud-hosting).
 
 /// details | Que faire si mon site web dysfonctionne ? 
 
-Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site web. Pour en identifier la cause, commencez par vérifier qu'aucun de vos abonnements n'a besoin d'être **renouvelé** en vous connectant à votre [espace client OVHcloud](/links/manager).
+Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site web. 
+Pour en identifier la cause, commencez par vérifier qu'aucun de vos abonnements n'a besoin d'être **renouvelé**.
+
+Pour cela, réalisez les étapes suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Sur la page qui s'affiche, cliquez sur votre nom dans le coin supérieur droit, puis choisissez `Mes offres & services`{.action}.
+
+> [!success]
+>
+> Si besoin, consultez en complément notre guide détaillé « [Comment renouveler mes services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) ».
 
 Consultez ensuite les [évènements en cours sur notre infrastructure](https://www.status-ovhcloud.com/). Si tous vos services sont actifs et ne sont affectés par aucun incident ou maintenance, nous vous invitons à réaliser un diagnostic plus approfondi.
 
+> [!success]
+>
+> Si besoin, consultez la rubrique « *Dépanner* » présente sur notre page regroupant l'ensemble des [guides relatifs à nos solutions d'hébergement web](/products/web-cloud-hosting).
+
 ///
 
-
-/// details | Que faire si, après la mise en ligne de mon site, la page « Site en construction » d'OVHcloud reste affichée ?
+/// details | Que faire si la page « Site en construction » d'OVHcloud reste affichée une fois mon site web mis en ligne ?
 
 ![site-en-construction](/pages/assets/screens/other/browsers/errors/site-en-construction.png){.thumbnail}
 
-À l'installation de votre hébergement, OVHcloud met en place cette page d'attente sous la forme d'un fichier **index.html** contenu dans le dossier `www` de votre serveur FTP.
+À l'installation de votre hébergement web, OVHcloud met en place cette page d'attente sous la forme d'un fichier **index.html** contenu dans le dossier `www` présent dans l'espace de stockage FTP de votre hébergement web.
 
-Ce fichier est automatiquement désactivé lors de la création de votre [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+Deux cas de figure sont possibles :
 
-Si vous avez choisi [d'installer votre site manuellement](/pages/web_cloud/web_hosting/cms_manual_installation), [connectez-vous à votre espace FTP](/pages/web_cloud/web_hosting/ftp_connection) afin de le renommer en **index.html.old**.
+- Si vous avez installé un « [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) »: ce fichier est automatiquement supprimé par nos robots d'installation.
+- Si vous avez installé votre site web manuellement: suivez alors les étapes ci-dessous:
+    - [Connectez-vous à l'espace de stockage FTP de votre hébergement web](/pages/web_cloud/web_hosting/ftp_connection).
+    - Une fois connecté à l'espace de stockage FTP, descendez dans le répertoire `www`.
+    - Renommer le fichier **index.html** par **index.html.old**. Cela désactivera la page au bout de quelques minutes.
+
+> [!success]
+>
+> Si besoin, consultez en complément les guides détaillés suivants :
+>
+> - « [Hébergement Web - Se connecter à l'espace FTP](/pages/web_cloud/web_hosting/ftp_connection) ».
+> - « [Hébergement Web - Modifier le mot de passe d'un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) ».
+> - « [Tutoriel - Utiliser FileZilla avec votre hébergement web](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) ».
+> - « [Tutoriel - Utiliser Cyberduck avec votre hébergement web](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac) ».
 
 ///
 
-
-/// details | Que faire si mon site s'affiche sur une adresse web de type « xxxxx.clusterXXX.hosting.ovh.net » ?
+/// details | Que faire si mon site web s'affiche avec une adresse web de type « xxxxx.clusterXXX.hosting.ovh.net » suite à sa création ?
 
 ![url-cluster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
-Deux scénarii sont possibles. Soit votre site a été créé avec cette adresse web, soit celle-ci est apparue suite à une modification.
-
-- **Scénario 1 :** votre site a été créé avec une adresse web de type « xxxxx.clusterXXX.hosting.ovh.net »
+Votre site web a été créé avec un « [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » en utilisant, lors de son installation, l'adresse web par défaut de votre hébergement web « xxxxx.clusterXXX.hosting.ovh.net ».
 
 > [!warning]
 >
-> La suppression d'une base de données, comme celle d'un module en 1 clic, est définitive. Elle entraîne également la **suppression des sauvegardes** des données concernées. Avant de supprimer votre site sur l'hébergement OVHcloud, **assurez-vous d'être capable de le recréer à l'identique**. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
+> La suppression d'une base de données, tout comme celle d'un « [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) », est définitive. Elle entraîne également la **suppression des sauvegardes** des données concernées. Avant de supprimer votre site web sur l'hébergement web, **assurez-vous d'être capable de le recréer à l'identique**. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
 >
+> Si besoin, consultez en complément les guides détaillés suivants :
+>
+> - « [Hébergement Web - Restaurer l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup) ».
+> - « [Hébergement Web - Exporter le contenu d'une base de données](/pages/web_cloud/web_hosting/sql_database_export) ».
 
-Dans le premier cas, après avoir réalisé toutes les sauvegardes nécessaires, supprimez votre module depuis la partie `Hébergements` de votre espace client OVHcloud :
+Par conséquent et **seulement** après avoir réalisé toutes les sauvegardes nécessaires, supprimez votre « [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » en réalisant les actions suivantes :
 
-![delete-a-module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module.png){.thumbnail}
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+3. Sur la page qui s'affiche, cliquez sur l'onglet `Modules en 1 clic`{.action}.
+4. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite dans la ligne du « module en 1 clic » concerné, puis sur `Supprimer le module`{.action}.
 
-Puis supprimez sa base de données depuis l'onglet du même nom situé à droite de votre écran, toujours dans la partie `Hébergements` :
+La suppression du « module en 1 clic » peut prendre **plusieurs minutes**.
 
-![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
+Supprimez ensuite la base de données qui lui était associée en réalisant les actions suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+3. Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}.
+4. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite dans la ligne de la base de données concernée, puis sur `Supprimer la base de données`{.action}.
+
+La suppression de la base de données associée peut prendre **plusieurs minutes**.
  
-Enfin, relancez son installation sur le nom de domaine souhaité, en utilisant la fonctionnalité [Module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
+Dès lors où les suppressions sont terminées, réalisez une nouvelle installation de votre « module en 1 clic » en veillant à bien sélectionner le nom de domaine souhaité.
 
-- **Scénario 2 :** votre site s'affiche avec une adresse web de type « xxxxx.clusterXXX.hosting.ovh.net » suite à une modification
-
-Si votre site s'affiche avec cette URL suite à une manipulation, restaurez-le à son état antérieur.
-
-> [!alert]
+> [!success]
 >
-> La restauration de votre hébergement OVHcloud entraînera celle de **l'ensemble des sites** qu'il contient.
->
-> Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur FTP ou celles de la base de données avant la restauration.
->
-
-Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_save_and_backup) ».
-
-Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client) ».
+> Si besoin, consultez en complément notre guide détaillé « [Hébergement Web - Installer un module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) »
 
 ///
 
+/// details | Que faire si mon site web s'affiche avec une adresse web de type « xxxxx.clusterXXX.hosting.ovh.net » suite à une modification ?
 
-/// details | Que faire si mon site redirige vers le webmail-login-interface OVHcloud ?
+![url-cluster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
+
+Votre site web (« [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ») s'affiche avec l'adresse web par défaut de votre hébergement web de type « xxxxx.clusterXXX.hosting.ovh.net » suite à une modification de votre « [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
+
+Si votre site s'affiche avec cette URL suite à une manipulation, la solution la plus rapide sera de le restaurer dans un état antérieur où il fonctionnait correctement.
+
+> [!alert]
+>
+> La restauration d'un hébergement web entraîne la restauration de **l'ensemble des sites web** qu'il contient.
+>
+> Lors d'une restauration, le contenu de votre espace de stockage FTP, ou celui de votre base de données, est remplacé de manière irréversible par une sauvegarde. Les données présentes **avant le lancement de la restauration** sur l'espace de stockage FTP ou sur la base de données à restaurer seront écrasées et perdues définitivement. Si nécessaire, veillez à récupérer une sauvegarde de ce contenu au préalable. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
+>
+> Si besoin, consultez en complément les guides détaillés suivants :
+>
+> - « [Hébergement Web - Restaurer l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup) ».
+> - « [Hébergement Web - Exporter le contenu d'une base de données](/pages/web_cloud/web_hosting/sql_database_export) ».
+
+Pour restaurer le code source de votre site web, réalisez les étapes suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+3. Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}.
+4. Sur la nouvelle page qui apparaît cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
+5. Dans la fenêtre qui s'affiche, choisissez la date de la sauvegarde à restaurer, puis poursuivez jusqu'au lancement de la restauration.
+
+La restauration de l'espace de stockage FTP peut prendre **plusieurs minutes**.
+
+Pour restaurer une sauvegarde de votre base de données, réalisez les étapes suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+3. Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}.
+4. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite dans la ligne de la base de données concernée, puis sur `Restaurer une sauvegarde`{.action}.
+5. Sur la nouvelle page qui s'affiche, choisissez la sauvegarde à restaurer (**idéalement celle correspondant à la date choisie pour la restauration du code source de votre site web juste avant**).
+6. Une fois la sauvegarde choisie, cliquez sur le bouton `...`{.action} situé à droite de la sauvegarde à restaurer, puis sur `Restaurer la sauvegarde`{.action}.
+
+La restauration de la sauvegarde d'une base de données peut prendre **plusieurs minutes**.
+
+> Si besoin, consultez en complément les guides détaillés suivants :
+>
+> - « [Hébergement Web - Restaurer l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup) ».
+> - « [Restaurer une sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database) ».
+
+///
+
+/// details | Que faire si mon site web redirige vers l'interface de connexion au Webmail OVHcloud ?
 
 ![webmail-login-interface](/pages/assets/screens/website/webmail/webmail-login-interface.png){.thumbnail}
 
-Cette anomalie indique une configuration erronée au niveau des [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) ou de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) associés à votre nom de domaine.
+Cette situation indique une configuration erronée au niveau des [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) ou de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) associés à votre nom de domaine.
 
-Le cas le plus courant est le suivant : vous avez commandé séparément votre nom de domaine et votre hébergement, ils ne sont donc pas reliés entre eux via leur zone DNS.
+Le cas le plus courant est le suivant : vous avez commandé séparément votre nom de domaine et votre hébergement web, ils ne sont donc pas automatiquement reliés entre eux via la zone DNS de votre nom de domaine.
 
-Rendez-vous dans la partie `Noms de domaine`{.action} de votre [espace client OVHcloud](/links/manager). Cliquez sur le nom de domaine concerné puis sur l'onglet `Serveurs DNS`{.action}.
+Pour corriger cela, réaliser les étapes suivantes :
 
-Notez ensuite les serveurs DNS indiqués puis rendez-vous dans l'onglet `Zone DNS`{.action}.
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+3. Sur la page qui s'affiche, cliquez sur l'onglet `Serveurs DNS`{.action}.
+4. Notez ensuite les noms des serveurs DNS indiqués, puis rendez-vous dans l'onglet `Zone DNS`{.action} (à droite de l'onglet `Serveurs DNS`{.action}).
 
 Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone DNS`{.action} avec les `Serveurs DNS` indiqués dans l'onglet du même nom :
 
@@ -355,30 +416,54 @@ Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone D
 
 ///
 
-
-/// details | Que faire si mon site affiche une erreur « La page ne se redirige pas correctement » ?
+/// details | Que faire si mon site web affiche une erreur « La page ne se redirige pas correctement » ?
 
 ![the-page-isnt-redirecting-properly](/pages/assets/screens/other/browsers/errors/the-page-isnt-redirecting-properly.png){.thumbnail}
 
+Dans ce cas de figure, la solution la plus rapide sera de le restaurer dans un état antérieur où il fonctionnait correctement.
+
 > [!alert]
 >
-> La restauration de votre hébergement OVHcloud entraînera celle de l'ensemble des sites qu'il contient.
+> La restauration d'un hébergement web entraîne la restauration de **l'ensemble des sites web** qu'il contient.
 >
-> Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur FTP ou celles de la base de données juste avant la restauration.
+> Lors d'une restauration, le contenu de votre espace de stockage FTP, ou celui de votre base de données, est remplacé de manière irréversible par une sauvegarde. Les données présentes **avant le lancement de la restauration** sur l'espace de stockage FTP ou sur la base de données à restaurer seront écrasées et perdues définitivement. Si nécessaire, veillez à récupérer une sauvegarde de ce contenu au préalable. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
 >
+> Si besoin, consultez en complément les guides détaillés suivants :
+>
+> - « [Hébergement Web - Restaurer l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup) ».
+> - « [Hébergement Web - Exporter le contenu d'une base de données](/pages/web_cloud/web_hosting/sql_database_export) ».
 
-Restaurez votre site à son état précédent :
+Pour restaurer le code source de votre site web, réalisez les étapes suivantes :
 
-- Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_save_and_backup) ».
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+3. Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}.
+4. Sur la nouvelle page qui apparaît cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
+5. Dans la fenêtre qui s'affiche, choisissez la date de la sauvegarde à restaurer, puis poursuivez jusqu'au lancement de la restauration.
 
-- Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client) ».
+La restauration de l'espace de stockage FTP peut prendre **plusieurs minutes**.
 
-Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](/links/partner) sur le site des [partenaires OVHcloud](/links/partner).
+Pour restaurer une sauvegarde de votre base de données, réalisez les étapes suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+3. Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}.
+4. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} situé à droite dans la ligne de la base de données concernée, puis sur `Restaurer une sauvegarde`{.action}.
+5. Sur la nouvelle page qui s'affiche, choisissez la sauvegarde à restaurer (**idéalement celle correspondant à la date choisie pour la restauration du code source de votre site web juste avant**).
+6. Une fois la sauvegarde choisie, cliquez sur le bouton `...`{.action} situé à droite de la sauvegarde à restaurer, puis sur `Restaurer la sauvegarde`{.action}.
+
+La restauration de la sauvegarde d'une base de données peut prendre **plusieurs minutes**.
+
+> Si besoin, consultez en complément les guides détaillés suivants :
+>
+> - « [Hébergement Web - Restaurer l'espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_save_and_backup) ».
+> - « [Restaurer une sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database) ».
+
+Si les restaurations ne vous permettent pas de rétablir l'accès à votre site web, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
 
 ///
 
-
-/// details | Que faire si mon site affiche une erreur « 503 error Backend fetch failed (Varnish cache) » ?
+/// details | Que faire si mon site web affiche une erreur « 503 error Backend fetch failed (Varnish cache) » ?
 
 ![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
@@ -388,8 +473,7 @@ Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, conta
 
 ///
 
-
-/// details | Que faire si mon site affiche une erreur « Your request has been blocked » ?
+/// details | Que faire si mon site web affiche une erreur « Your request has been blocked » ?
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
@@ -399,8 +483,7 @@ Pour vous aider à corriger ces anomalies, contactez votre Webmaster ou l'un de 
 
 ///
 
-
-/// details | Que faire si mon site affiche une erreur « Your IP has been banned » ?
+/// details | Que faire si mon site web affiche une erreur « Your IP has been banned » ?
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
@@ -412,8 +495,7 @@ Vous pouvez enfin contacter l'un de [nos partenaires](/links/partner), afin qu'i
 
 ///
 
-
-/// details | J'ai commandé un domaine comportant des accents et il s'affiche écrit de façon étrange dans mon espace client. Que dois-je faire ?
+/// details | J'ai commandé un nom de domaine comportant des accents et il s'affiche écrit de façon étrange dans mon espace client. Que dois-je faire ?
 
 ![idn-notation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
@@ -428,10 +510,11 @@ Vous n'avez aucune action à mener dans cette situation. Même si votre domaine 
 
 ///
 
-
 ## Aller plus loin <a name="go-further"></a>
 
 [FAQ - E-mails mutualisés MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
