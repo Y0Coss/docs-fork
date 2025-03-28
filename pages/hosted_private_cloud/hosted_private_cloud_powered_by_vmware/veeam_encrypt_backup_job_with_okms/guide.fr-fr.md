@@ -1,7 +1,7 @@
 ---
 title: "Chiffrement des tâches de sauvegarde avec Veeam et OKMS"
-excerpt: "Découvrez comment configurer des tâches de sauvegarde chiffrées en utilisant Veeam et le service KMS d’OVHcloud (OKMS) pour renforcer la protection des données."
-updated: 2025-03-28
+excerpt: "Découvrez comment configurer des tâches de sauvegarde chiffrées en utilisant Veeam et le service KMS d’OVHcloud (OKMS) pour renforcer la protection des données"
+updated: 2025-03-31
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Ce guide explique comment configurer des tâches de sauvegarde chiffrées en uti
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager).
+- Être connecté à l'[espace client OVHcloud](/links/manager) et à [l'API OVHcloud](/links/api).
 - Disposer d'une offre [VMware on OVHcloud](/links/hosted-private-cloud/vmware).
 - Avoir lu les guides :
     - [Intégration d'un KMS pour VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt).
@@ -20,37 +20,44 @@ Ce guide explique comment configurer des tâches de sauvegarde chiffrées en uti
 
 ### Étape 1 : Création du certificat dans le service OKMS
 
-Vous pouvez créer le certificat depuis l'[espace client OVHcloud](/links/manager) :
+#### 1.1 Créez une clé privée via l'API OVHcloud
 
-1.\ Cliquez sur `Hosted Private Cloud`{.action} puis `Identity, Security & Operations`{.action} et enfin `Key Management Service`{.action}. Sélectionnez votre KMS.
+> [!primary]
+> Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
-![Console Dashboard](images/console_1.png){.thumbnail}
-
-2.\ Sélectionnez votre KMS.
-
-![KMS List](images/console_2.png){.thumbnail}
-
-3.\ Ensuite, cliquez sur le bouton `Generate an access certificate`{.action} et générez la clé privée en utilisant l’API suivante (sans CSR) :
+Générez la clé privée en utilisant l’appel API suivant (sans CSR) :
 
 > [!api]
 >
 > @api {v1} /okms POST / /okms/resource/{okmsId}/credential
 
-![Generate an access certificate](images/veeam_okms_1.png){.thumbnail}
-
-4.\ Récupérez le certificat en effectuant une requête GET :
+Récupérez ensuite la clé via l'appel GET suivant :
 
 > [!api]
 >
 > @api {v1} /okms GET /okms/resource/{okmsId}/credential
 
-Remplissez les champs requis dans la fenêtre **Generate an access certificate** et sélectionnez l’option `I don’t have a private key`{.action}.
+#### 1.2 Créer le certificat dans l'espace client OVHcloud
+
+Connectez-vous à l'[espace client OVHcloud](/links/manager) puis cliquez sur `Hosted Private Cloud`{.action}.
+
+Cliquez ensuite sur `Identité, Securité & Opérations`{.action} et enfin sur `Key Management Service`{.action}.
+
+![Console Dashboard](images/console_1.png){.thumbnail}
+
+Sélectionnez votre KMS puis cliquez sur l'onglet `Certificats d'accès`{.action}
+
+Cliquez ensuite sur le bouton `Créer un certificat d'accès`{.action}.
+
+![Generate an access certificate](images/veeam_okms_1.png){.thumbnail}
+
+Remplissez les champs requis et sélectionnez l’option `Je n'ai pas de clé privée`{.action}.
 
 ![Generate Access Certificate - No Private Key](images/veeam_okms_2.png){.thumbnail}
 
-5.\ Téléchargez la clé privée.
+Téléchargez la clé privée.
 
-6.\ Téléchargez le certificat.
+Téléchargez le certificat.
 
 ![Download Certificate](images/veeam_okms_3.png){.thumbnail}
 
@@ -72,15 +79,15 @@ openssl pkcs12 -export -out cert.pfx -inkey privatekey.pem -in certificate.pem
 
 ### Étape 4 : Enregistrement du KMS dans Veeam
 
-1.\ Ouvrez Veeam Backup & Replication et allez dans `Credentials & Passwords`{.action} puis cliquez sur `Key Management Servers`{.action}.
+1\. Ouvrez Veeam Backup & Replication et allez dans `Credentials & Passwords`{.action} puis cliquez sur `Key Management Servers`{.action}.
 
 ![Veeam Key Management Servers](images/veeam_okms_5.png){.thumbnail}
 
-2.\ Cliquez sur `Add`{.action} pour ajouter un nouveau serveur KMS.
+2\. Cliquez sur `Add`{.action} pour ajouter un nouveau serveur KMS.
 
 ![Add KMS Server](images/veeam_okms_6.png){.thumbnail}
 
-3.\ Entrez l'adresse du serveur.
+3\. Entrez l'adresse du serveur.
 
 Par exemple, pour un KMS créé dans la région **eu-west-rbx** : <https://eu-west-rbx.okms.ovh.net>.\
 
@@ -98,15 +105,16 @@ openssl s_client -connect eu-west-rbx.okms.ovh.net:443 2>/dev/null </dev/null | 
 
 ### Étape 6 : Configuration du chiffrement des tâches de sauvegarde
 
-1.\ Enregistrez le serveur KMS dans votre console Veeam Backup & Replication.
-2.\ Sélectionnez la tâche de sauvegarde souhaitée et configurez le chiffrement en utilisant le KMS enregistré.
+1\. Enregistrez le serveur KMS dans votre console Veeam Backup & Replication.
+2\. Sélectionnez la tâche de sauvegarde souhaitée et configurez le chiffrement en utilisant le KMS enregistré.
 
 ![Configure Backup Encryption](images/veeam_okms_8.png){.thumbnail}
-3.\ Une fois la sauvegarde terminée, vous verrez une icône de cadenas à côté du nom de la sauvegarde indiquant qu'elle est chiffrée.
+
+3\. Une fois la sauvegarde terminée, vous verrez une icône de cadenas à côté du nom de la sauvegarde indiquant qu'elle est chiffrée.
 
 ![Encrypted Backup](images/veeam_okms_9.png){.thumbnail}
 
-4.\ Si vous rencontrez l'erreur **Unsupported attribute: OPERATION_POLICY_NAME**, suivez les instructions fournies dans la documentation pour résoudre le problème.
+4\. Si vous rencontrez l'erreur **Unsupported attribute: OPERATION_POLICY_NAME**, suivez les instructions fournies dans la documentation pour résoudre le problème.
 
 ![Operation Policy Name Error](images/veeam_okms_10.png){.thumbnail}
 
