@@ -19,19 +19,19 @@ Before submitting a Pull Request, please ensure you have:
 - 👷‍♀️ Created a small PR, if applicable.
 - ✅ Tested every step you're documenting.
 - 📝 Used descriptive commit messages.
-- 📐 Resized images which width exceeds 1400px
-- 📝 Edited or blurred any sensitive/private information from your text and images (IPs, user IDs, private URLs, etc.)
+- 📐 Resized images which width exceeds 1400px.
+- 📝 Edited or blurred any sensitive/private information from your text and images (IPs, user IDs, private URLs, etc.).
 -->
 
 ## What type of Pull Request is this?
 
-<!-- Check [X] all applicable: -->
-- [ ] New guide(s) <!-- You need to create a meta.yaml file and edit the index: https://github.com/ovh/docs/blob/develop/pages/index.md -->
-- [ ] Update of existing guide(s)
-- [ ] Fix
-- [ ] Optimization
-- [ ] Index categories update
-- [ ] Deletion of guide(s) <!-- redirections may be needed, contact the OVHcloud Guides Team -->
+<!-- Delete the lines which don't apply: -->
+- New guide(s) <!-- You need to create a meta.yaml file and edit the index: https://github.com/ovh/docs/blob/develop/pages/index.md -->
+- Update of existing guide(s)
+- Fix
+- Optimization
+- Index categories update
+- Deletion of guide(s) <!-- redirections may be needed, contact the OVHcloud Guides Team -->
 
 ## Description
 
@@ -39,8 +39,9 @@ Before submitting a Pull Request, please ensure you have:
 
 ## Mandatory information
 
-<!-- Check the following when applicable: -->
-- [ ] This Pull Request can be merged as soon as possible.
-- [ ] This Pull Request shouldn't be merged before (indicate a date): YYYY-MM-DD
+<!-- Delete the lines which doesn't apply: -->
+- This Pull Request can be merged as soon as possible.
+- This Pull Request shouldn't be merged before: YYYY-MM-DD <!-- replace it with a real date -->
 
-- [ ] This Pull Request content should be replicated for the US OVHcloud documentation <!-- https://support.us.ovhcloud.com/hc/en-us) -->
+<!-- If you know about the following, please mention it. If you don't know, delete the line.-->
+- This Pull Request content should be replicated for the US OVHcloud documentation : YES/NO <!-- https://support.us.ovhcloud.com/hc/en-us -->
