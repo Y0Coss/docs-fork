@@ -23,7 +23,7 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 - Posiadanie rozwiązania [Exchange](/links/web/emails) lub [Email Pro](/links/web/email-pro).
 - Zarejestrowana domena lub kilka domen.
-- Możliwość modyfikacji konfiguracji Twojej domeny ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit)).
+- Możliwość modyfikacji konfiguracji twojej domeny ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit)).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
@@ -49,22 +49,22 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 ### Dodaj domenę
 
-1. Kliknij w zakładkę `Przypisane domeny`{.action} w Twojej platformie Exchange lub E-mail Pro.
-1. W tabeli, która się wyświetla znajdziesz nazwy domen aktualnie przypisanych do Twojej usługi.
+1. Kliknij w zakładkę `Przypisane domeny`{.action} w twojej platformie Exchange lub E-mail Pro.
+1. W tabeli, która się wyświetla znajdziesz nazwy domen aktualnie przypisanych do twojej usługi.
 1. Kliknij przycisk `Dodaj domenę`{.action}.
 
 ![Add Domain](images/add_domain_exchange_step1.png){.thumbnail .w-400}
 
 > [!warning]
 >
-> Domyślnie wszystkie konta e-mail platformy są ze sobą powiązane. Wszystkie konta e-mail utworzone w ramach Twojej usługi e-mail będą mogły wyświetlać w katalogu wszystkie adresy tej usługi, również te, które mają różne nazwy domen. Aby wyłączyć ten sposób wyświetlania kont w domenach, należy zamówić inną usługę [Exchange lub Email Pro](/links/web/emaile) dla danej domeny lub domen.
+> Domyślnie wszystkie konta e-mail platformy są ze sobą powiązane. Wszystkie konta e-mail utworzone w ramach twojej usługi e-mail będą mogły wyświetlać w katalogu wszystkie adresy tej usługi, również te, które mają różne nazwy domen. Aby wyłączyć ten sposób wyświetlania kont w domenach, należy zamówić inną usługę [Exchange lub Email Pro](/links/web/emails) dla danej domeny lub domen.
 >
 
 W oknie dodawania domeny:
 
-- **wybierz domenę z listy** : na liście znajdziesz domeny, którymi w pełni zarządzasz (lub przynajmniej strefę DNS) w Panelu klienta OVHcloud.
+- **wybierz domenę z listy**: na liście znajdziesz domeny, którymi w pełni zarządzasz (lub przynajmniej strefę DNS) w Panelu klienta OVHcloud.
 
-- **wpisanie domeny, która nie jest zarządzana na Twoim koncie OVHcloud** : aby skonfigurować usługę, musisz mieć możliwość modyfikacji konfiguracji domeny, a w szczególności jej strefy DNS.
+- **wpisanie domeny, która nie jest zarządzana na twoim koncie OVHcloud**: aby skonfigurować usługę, musisz mieć możliwość modyfikacji konfiguracji domeny, a w szczególności jej strefy DNS.
 
 Po dokonaniu wyboru, kliknij przycisk `Dalej`{.action}.
 
@@ -72,20 +72,20 @@ Po dokonaniu wyboru, kliknij przycisk `Dalej`{.action}.
 
 Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
 
-- **Jeśli wybrałeś z listy nazwę domeny obsługiwaną przez OVHcloud** : możesz wybrać jeden z dwóch dostępnych trybów.
-    - **Zalecana konfiguracja** : Twoja strefa DNS zostanie skonfigurowana automatycznie. Odpowiedni, jeśli nie posiadasz w strefie DNS określonej konfiguracji dla rekordów MX, SPF, DKIM i SRV.
-    - **Konfiguracja spersonalizowana** : odpowiednia, jeśli dla Twojej domeny skonfigurowałeś już usługę e-mail. Możesz wybrać elementy, które Cię interesują.
+- **Jeśli wybrałeś z listy nazwę domeny obsługiwaną przez OVHcloud**: możesz wybrać jeden z dwóch dostępnych trybów.
+    - **Zalecana konfiguracja**: twoja strefa DNS zostanie skonfigurowana automatycznie. Odpowiedni, jeśli nie posiadasz w strefie DNS określonej konfiguracji dla rekordów MX, SPF, DKIM i SRV.
+    - **Konfiguracja spersonalizowana**: odpowiednia, jeśli dla twojej domeny skonfigurowałeś już usługę e-mail. Możesz wybrać elementy, które Cię interesują.
         - Jeśli chcesz korzystać z prywatnej lub zewnętrznej usługi e-mail OVHcloud jako uzupełnienie platformy e-mail, wpisz nazwę hosta serwera e-mail w polu `URL docelowego serwera e-mail`.
-        - *Automatyczna konfiguracja rekordu MX* : umożliwia automatyczne wprowadzanie serwerów poczty przychodzącej OVHcloud (dotyczy wszystkich ofert e-mail OVHcloud).
-        - *Konfiguracja rekordu SPF automatycznie* : pozwala na automatyczne wprowadzanie rekordu SPF, aby serwery poczty elektronicznej OVHcloud mogły wysyłać wiadomości e-mail. Wpis ten dotyczy wszystkich ofert e-mail OVHcloud.
-        - *Automatyczna konfiguracja DKIM* : umożliwia automatyczne wprowadzanie rekordów niezbędnych do uwierzytelniania wysyłanych wiadomości e-mail.
-        - *Konfiguracja SRV automatycznie* : umożliwia programowi pocztowemu automatyczną konfigurację kont Exchange dla Twojej domeny.
+        - *Automatyczna konfiguracja rekordu MX*: umożliwia automatyczne wprowadzanie serwerów poczty przychodzącej OVHcloud (dotyczy wszystkich ofert e-mail OVHcloud).
+        - *Konfiguracja rekordu SPF automatycznie*: pozwala na automatyczne wprowadzanie rekordu SPF, aby serwery poczty elektronicznej OVHcloud mogły wysyłać wiadomości e-mail. Wpis ten dotyczy wszystkich ofert e-mail OVHcloud.
+        - *Automatyczna konfiguracja DKIM*: umożliwia automatyczne wprowadzanie rekordów niezbędnych do uwierzytelniania wysyłanych wiadomości e-mail.
+        - *Konfiguracja SRV automatycznie*: umożliwia programowi pocztowemu automatyczną konfigurację kont Exchange dla twojej domeny.
 
 ![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-400}
 
-- **Jeśli podałeś nazwę domeny nieobsługiwanej przez Twoje konto OVHcloud** : oznacza to, że domena, a w szczególności jej strefa DNS, nie jest zarządzana z poziomu Twojego panelu klienta OVHcloud. Domena może być zarejestrowana u innego operatora. Konieczne będzie przeprowadzenie konfiguracji bezpośrednio w panelu klienta, bez względu na dokonany wybór.
+- **Jeśli podałeś nazwę domeny nieobsługiwanej przez twoje konto OVHcloud**: oznacza to, że domena, a w szczególności jej strefa DNS, nie jest zarządzana z poziomu twojego panelu klienta OVHcloud. Domena może być zarejestrowana u innego operatora. Konieczne będzie przeprowadzenie konfiguracji bezpośrednio w panelu klienta, bez względu na dokonany wybór.
     - **Zalecana konfiguracja**: odpowiednia, jeśli korzystasz tylko z kont e-mail OVHcloud.<br><br>
-    - **Konfiguracja spersonalizowana** : jeśli chcesz korzystać z prywatnej lub zewnętrznej usługi e-mail OVHcloud jako uzupełnienie platformy e-mail, w polu `URL docelowego serwera e-mail` wpisz nazwę hosta.
+    - **Konfiguracja spersonalizowana**: jeśli chcesz korzystać z prywatnej lub zewnętrznej usługi e-mail OVHcloud jako uzupełnienie platformy e-mail, w polu `URL docelowego serwera e-mail` wpisz nazwę hosta.
 
 ![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-400}
 
@@ -97,10 +97,10 @@ Po dodaniu przypisanej domeny upewnij się, że konfiguracja jest poprawna, korz
 
 W przypadku gdy przycisk jest czerwony:
 
-- **jeśli podczas dodawania domeny wybrałeś automatyczną konfigurację** : wprowadzone ustawienia mogą wyświetlić się w Panelu klienta OVHcloud po kilku minutach.
+- **jeśli podczas dodawania domeny wybrałeś automatyczną konfigurację**: wprowadzone ustawienia mogą wyświetlić się w Panelu klienta OVHcloud po kilku minutach.
 
-- **jeśli podałeś nazwę domeny nieobsługiwanej przez Twoje konto OVHcloud**:
-    - Kliknij czerwony przycisk `MX`, `SRV`, `SPF` i `DKIM`, aby wyświetlić listę modyfikacji do wprowadzenia. Jeśli ta nazwa domeny nie używa konfiguracji OVHcloud (serwerów DNS OVHcloud), musisz wprowadzić zmiany za pomocą interfejsu zarządzania Twoją domeną.
+- **jeśli podałeś nazwę domeny nieobsługiwanej przez twoje konto OVHcloud**:
+    - Kliknij czerwony przycisk `MX`, `SRV`, `SPF` i `DKIM`, aby wyświetlić listę modyfikacji do wprowadzenia. Jeśli ta nazwa domeny nie używa konfiguracji OVHcloud (serwerów DNS OVHcloud), musisz wprowadzić zmiany za pomocą interfejsu zarządzania twoją domeną.
     - W związku z czerwonym przyciskiem `CNAME` zapoznaj się z naszym przewodnikiem, jak [utworzyć pole CNAME po dodaniu przypisanej domeny](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
 ![emailpro](images/add_domain_exchange_step4.png){.thumbnail .w-400}
@@ -110,21 +110,21 @@ W przypadku gdy przycisk jest czerwony:
 > Efekty modyfikacji domeny staną się widoczne po upływie 4-24 godzin ze względu na niezbędny czas propagacji.
 >
 
-Aby sprawdzić, czy konfiguracja nazwy domeny jest prawidłowa, otwórz tabelę `Domeny przypisane`{.action} do Twojej usługi. Jeśli przycisk jest zielony, nazwa domeny została poprawnie skonfigurowana. Jeśli nie jest zielony, może to oznaczać, że nie zakończyła się jeszcze propagacja.
+Aby sprawdzić, czy konfiguracja nazwy domeny jest prawidłowa, otwórz tabelę `Domeny przypisane`{.action} do twojej usługi. Jeśli przycisk jest zielony, nazwa domeny została poprawnie skonfigurowana. Jeśli nie jest zielony, może to oznaczać, że nie zakończyła się jeszcze propagacja.
 
 ![emailpro](images/add_domain_exchange_step5.png){.thumbnail .w-400}
 
 ### Zmień tryb przypisanej domeny
 
-Możesz zmienić tryb domeny przypisanej do Twojej platformy. Najpierw należy zrozumieć różnicę w działaniu między trybami autorytatywnymi i nieautorytatywnymi.
+Możesz zmienić tryb domeny przypisanej do twojej platformy. Najpierw należy zrozumieć różnicę w działaniu między trybami autorytatywnymi i nieautorytatywnymi.
 
 > [!primary]
 >
 > **Autorytatywny / nieautorytatywny**
 >
-> - Wybór trybu **autorytatywnego** na Twojej platformie e-mail (*Server A*) wiąże się z koniecznością hostowania wszystkich adresów e-mail Twojej domeny na tej platformie.<br>Na przykład jeśli zostanie wysłana wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", adres "*Server A*" zwróci nadawcy komunikat o niepowodzeniu, ponieważ taki adres nie istnieje na serwerze "*Server A*".<br>
+> - Wybór trybu **autorytatywnego** na twojej platformie e-mail (*Server A*) wiąże się z koniecznością hostowania wszystkich adresów e-mail twojej domeny na tej platformie.<br>Na przykład jeśli zostanie wysłana wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", adres "*Server A*" zwróci nadawcy komunikat o niepowodzeniu, ponieważ taki adres nie istnieje na serwerze "*Server A*".<br>
 >
-> - Tryb **nieautorytatywny** na Twojej platformie e-mail (*Server A*) pozwala na rozdzielenie adresów e-mail Twojej domeny między Twoją główną platformę e-mail (*Server A*) i inną usługę e-mail (*Server B*).<br>Na przykład jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", *Serwer A* prześle e-mail do "*Server B*", aby ten mógł ją dostarczyć.<br>
+> - Tryb **nieautorytatywny** na twojej platformie e-mail (*Server A*) pozwala na rozdzielenie adresów e-mail twojej domeny między twoją główną platformę e-mail (*Server A*) i inną usługę e-mail (*Server B*).<br>Na przykład jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", "*Serwer A*" prześle e-mail do "*Server B*", aby ten mógł ją dostarczyć.<br>
 >
 > ![Autorytatywny](images/add_domain_exchange_authoritative.png){.thumbnail .w-400}
 
@@ -143,23 +143,23 @@ Możesz zmienić tryb domeny przypisanej do Twojej platformy. Najpierw należy z
 
 Po dodaniu żądanych domen do usługi możesz skonfigurować konta e-mail. Operację tę możesz przeprowadzić, klikając zakładkę `Konta e-mail`{.action}. W razie potrzeby możesz zamówić dodatkowe konta, korzystając z przycisku `Action`{.action}/`Zamów konta`{.action} lub `Dodaj konto`{.action}.
 
-Wszystkie konta e-mail utworzone w ramach Twojej usługi będą mogły wyświetlać w katalogu wszystkie adresy e-mail powiązane z tą usługą, również te, które mają różne nazwy domen.
+Wszystkie konta e-mail utworzone w ramach twojej usługi będą mogły wyświetlać w katalogu wszystkie adresy e-mail powiązane z tą usługą, również te, które mają różne nazwy domen.
 
-Po skonfigurowaniu wszystkich kont możesz zacząć ich używać. W tym celu OVHcloud oddaje do Twojej dyspozycji **webmail**, dostępny [tutaj](/links/web/email). Abyś mógł korzystać z adresu w sposób optymalny, upewnij się, czy jest on kompatybilny z Twoim programem pocztowym.
+Po skonfigurowaniu wszystkich kont możesz zacząć ich używać. W tym celu OVHcloud oddaje do twojej dyspozycji **webmail**, dostępny [tutaj](/links/web/email). Abyś mógł korzystać z adresu w sposób optymalny, upewnij się, czy jest on kompatybilny z twoim programem pocztowym.
 
-Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym lub jeśli chcesz uzyskać pomoc w zakresie funkcji Twojej usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) i [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
+Jeśli chcesz skonfigurować twoje konto e-mail na smartfonie, tablecie lub programie pocztowym lub jeśli chcesz uzyskać pomoc w zakresie funkcji twojej usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](/links/web/emails) i [E-mail Pro](/links/web/email-pro).
 
 Licencje Outlook możesz wykupić w [Panelu klienta OVHcloud](/links/manager), a licencje Office 365 — na stronie [Microsoft 365](/links/web/ms365). Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
 
 ## Usunięcie domeny z platformy
 
-Jeśli chcesz usunąć domenę powiązaną z Twoją usługą Exchange lub E-mail Pro, upewnij się, że nie jest ona powiązana z kontami e-mail, aliasami, zasobami, kontami współdzielonymi (tylko w przypadku usługi Exchange), grupami, kontaktami zewnętrznymi ani ustawionymi stopkami. W takim przypadku konieczne będzie **powiązanie tych kont z inną nazwą domeny* na Twojej platformie lub **usunięcie**.
+Jeśli chcesz usunąć domenę powiązaną z twoją usługą Exchange lub E-mail Pro, upewnij się, że nie jest ona powiązana z kontami e-mail, aliasami, zasobami, kontami współdzielonymi (tylko w przypadku usługi Exchange), grupami, kontaktami zewnętrznymi ani ustawionymi stopkami. W takim przypadku konieczne będzie **powiązanie tych kont z inną nazwą domeny* na twojej platformie lub **usunięcie**.
 
 > [!warning]
 >
-> Przed usunięciem kont e-mail upewnij się, że nie są one używane. Może być wymagana kopia zapasowa tych kont. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem [Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), który opisuje, jak wyeksportować dane konta z Panelu klienta lub z programu pocztowego.
+> Przed usunięciem kont e-mail upewnij się, że nie są one używane. Może być wymagana kopia zapasowa tych kont. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem [Ręczna migracja twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), który opisuje, jak wyeksportować dane konta z Panelu klienta lub z programu pocztowego.
 
-Przejdź do zakładki `Domeny przypisane`{.action} na Twojej platformie. W tabeli kolumna `Konta` wyświetla liczbę kont przypisanych do domen z listy.
+Przejdź do zakładki `Domeny przypisane`{.action} na twojej platformie. W tabeli kolumna `Konta` wyświetla liczbę kont przypisanych do domen z listy.
 
 Jeśli do kont e-mail przypisana jest nazwa domeny, którą chcesz odłączyć, masz dwie możliwości:
 
@@ -185,7 +185,7 @@ Jeśli do kont e-mail przypisana jest nazwa domeny, którą chcesz odłączyć, 
 
 Po ponownym przypisaniu kont do innej domeny lub po ich zresetowaniu można przystąpić do usunięcia domeny.
 
-W zakładce `Przypisane domeny`{.action} Twojej platformy kliknij przycisk `...`{.action} po prawej stronie odpowiedniej domeny, a następnie `Usuń tę domenę`{.action}.
+W zakładce `Przypisane domeny`{.action} twojej platformy kliknij przycisk `...`{.action} po prawej stronie odpowiedniej domeny, a następnie `Usuń tę domenę`{.action}.
 
 ![emailpro](images/add_domain_exchange_step10.png){.thumbnail .w-400}
 

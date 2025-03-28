@@ -57,14 +57,14 @@ Aggiungere un dominio su Exchange è un’operazione fondamentale per utilizzare
 
 > [!warning]
 >
-> Di default, tutti gli account email di una piattaforma sono interconnessi. Tutti gli indirizzi creati sul servizio di posta elettronica saranno all’interno della stessa directory degli altri indirizzi email, inclusi quelli con un dominio diverso. Per dissociare la visualizzazione dei domini, è necessario ordinare un'altra [piattaforma Exchange o Email Pro](/links/web/email) per il o i domini in questione.
+> Di default, tutti gli account email di una piattaforma sono interconnessi. Tutti gli indirizzi creati sul servizio di posta elettronica saranno all’interno della stessa directory degli altri indirizzi email, inclusi quelli con un dominio diverso. Per dissociare la visualizzazione dei domini, è necessario ordinare un'altra piattaforma [Exchange o Email Pro](/links/web/email) per il o i domini in questione.
 >
 
 Nella finestra di aggiunta del dominio:
 
-- **Seleziona un dominio dalla lista** : i domini che gestisci completamente (o almeno la zona DNS) sono disponibili anche nello Spazio Cliente.
+- **Seleziona un dominio dalla lista**: i domini che gestisci completamente (o almeno la zona DNS) sono disponibili anche nello Spazio Cliente.
 
-- **inserisci un dominio non gestito dal tuo account OVHcloud** : per poter configurare il servizio, assicurati di poter modificare la configurazione del dominio, più precisamente la sua zona DNS.
+- **Inserisci un dominio non gestito dal tuo account OVHcloud**: per poter configurare il servizio, assicurati di poter modificare la configurazione del dominio, più precisamente la sua zona DNS.
 
 Una volta effettuata la scelta, clicca sul pulsante `Avanti`{.action}.
 
@@ -73,7 +73,7 @@ Una volta effettuata la scelta, clicca sul pulsante `Avanti`{.action}.
 Nella finestra vengono visualizzate le informazioni relative alla configurazione della modalità.
 
 - **Se il dominio inserito è gestito da OVHcloud**, è possibile scegliere tra due modalità.
-    - **Configurazione consigliata**: la zona DNS verrà configurata automaticamente. È la più indicata se nella zona DNS non sono presenti configurazioni specifiche per i record MX, SPF, DKIM e SRV.
+    - **Configurazione consigliata**: la zona DNS verrà configurata automaticamente. È indicata se nella zona DNS non sono presenti configurazioni specifiche per i record MX, SPF, DKIM e SRV.
     - **Configurazione personalizzata**: è adatta se hai già configurato un'offerta email sul tuo dominio. È possibile scegliere gli elementi desiderati.
         - Per utilizzare un servizio di posta privato o esterno a OVHcloud in aggiunta a questa piattaforma di posta, inserisci il nome host del server di posta nella sezione `URL del server di posta di destinazione`.
         - *Configurare la registrazione MX automaticamente*: permette una registrazione automatica dei server di posta in arrivo OVHcloud (si applica a tutte le soluzioni e-mail OVHcloud).
@@ -120,11 +120,11 @@ Per verificare la correttezza della configurazione di un dominio, accedi nuovame
 
 > [!primary]
 >
-> **Autoritativa/non autoritativa**
+> **Autoritativa / non autoritativa**
 >
-> - La scelta della modalità **autoritativa** sulla piattaforma di posta (*Server A*) comporta l’hosting di tutti gli indirizzi email del dominio su questa piattaforma.<br>Ad esempio, se si invia un’email all’indirizzo "*mary.johnson@mydomain.ovh*", il "*Server A*" restituirà un messaggio di errore al mittente perché questo indirizzo non esiste sul "*Server A*".<br><br><br>
+> - La scelta della modalità **autoritativa** sulla piattaforma di posta (*Server A*) comporta l’hosting di tutti gli indirizzi email del dominio su questa piattaforma.<br>Ad esempio, se si invia un’email all’indirizzo "*mary.johnson@mydomain.ovh*", il "*Server A*" restituirà un messaggio di errore al mittente perché questo indirizzo non esiste sul "*Server A*".<br><br>
 >
-> - La modalità **non autoritativa** sulla piattaforma di posta elettronica (*Server A*) consente di ripartire gli indirizzi email del dominio tra la piattaforma di posta principale (*Server A*) e un altro servizio di posta elettronica (*Server B*).<br>Ad esempio, se si invia un’email all’indirizzo "*mary.johnson@mydomain.ovh*", il *Server A* trasmetterà l’email al "*Server B*" perché quest’ultimo possa consegnarla.<br>
+> - La modalità **non autoritativa** sulla piattaforma di posta elettronica (*Server A*) consente di ripartire gli indirizzi email del dominio tra la piattaforma di posta principale (*Server A*) e un altro servizio di posta elettronica (*Server B*).<br>Ad esempio, se si invia un’email all’indirizzo "*mary.johnson@mydomain.ovh*", il "*Server A*" trasmetterà l’email al "*Server B*" perché quest’ultimo possa consegnarla.<br>
 >
 > ![Authoritative](images/add_domain_exchange_authoritative.png){.thumbnail .w-400}
 
@@ -147,7 +147,7 @@ Ti ricordiamo che tutti gli indirizzi creati sul tuo servizio saranno in grado d
 
 Una volta completata la configurazione degli account, è possibile iniziare a utilizzarli. OVHcloud mette a disposizione il servizio **webmail**, accessibile [qui](/links/web/email). Per un utilizzo ottimale del tuo indirizzo su un client, assicurati che sia compatibile con il servizio.
 
-Per configurare l’indirizzo email su un client di posta o un dispositivo come smartphone o tablet o se hai bisogno di assistenza sulle funzionalità del tuo servizio di posta, consulta le nostre guide relative alle funzionalità del servizio di posta elettronica [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) e [Email Pro](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+Per configurare l’indirizzo email su un client di posta o un dispositivo come smartphone o tablet o se hai bisogno di assistenza sulle funzionalità del tuo servizio di posta, consulta le nostre guide relative alle funzionalità del servizio di posta elettronica [Exchange](/links/web/emails) e [Email Pro](/links/web/emails).
 
 È possibile acquistare licenze Outlook nello [Spazio Cliente OVHcloud](/links/manager) e licenze Office 365 nella pagina [Microsoft 365](/links/web/ms365). Per utilizzare un client di posta Outlook o più programmi della suite Office, ti consigliamo una di queste soluzioni.
 

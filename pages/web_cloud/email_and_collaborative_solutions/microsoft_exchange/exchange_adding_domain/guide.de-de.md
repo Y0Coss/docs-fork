@@ -57,7 +57,7 @@ Um die in Ihrer Exchange Lösung enthaltenen Accounts nutzen zu können, benöti
 
 > [!warning]
 >
-> Standardmäßig sind alle E-Mail-Accounts einer Plattform miteinander verbunden. Alle in Ihrem E-Mail-Dienst erstellten Adressen können alle Adressen dieses Dienstes im Verzeichnis anzeigen, einschließlich der Adressen mit einer anderen Domain. Um die Anzeige der Domains zu entkoppeln, ist es notwendig, für die betreffende Domain(s) eine andere [Exchange oder Email Pro Plattform](/links/web/emails) zu bestellen.
+> Standardmäßig sind alle E-Mail-Accounts einer Plattform miteinander verbunden. Alle in Ihrem E-Mail-Dienst erstellten Adressen können alle Adressen dieses Dienstes im Verzeichnis anzeigen, einschließlich der Adressen mit einer anderen Domain. Um die Anzeige der Domains zu entkoppeln, ist es notwendig, für die betreffende Domain(s) eine andere plattform [Exchange oder Email Pro](/links/web/emails) zu bestellen.
 >
 
 Im Fenster zum Hinzufügen einer Domain :
@@ -147,7 +147,7 @@ Zur Erinnerung: Alle für Ihren Dienst erstellten Adressen können im Adressbuch
 
 Sobald die Accounts vollständig eingerichtet sind, können Sie mit deren Verwendung beginnen. Hierzu stellt Ihnen OVHcloud das **webmail** zur Verfügung, auf das Sie [hier](/links/web/email) zugreifen können . Damit Ihre Adresse optimal auf einem Softwareprodukt verwendet werden kann, überprüfen Sie, ob sie mit dem Dienst kompatibel ist.
 
-Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Peripheriegerät wie einem Smartphone oder Tablet einrichten möchten oder Hilfe bei den Funktionen Ihres E-Mail-Dienstes benötigen, lesen Sie unsere Dokumentation unter [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) und [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
+Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Peripheriegerät wie einem Smartphone oder Tablet einrichten möchten oder Hilfe bei den Funktionen Ihres E-Mail-Dienstes benötigen, lesen Sie unsere Dokumentation unter [Exchange](/links/web/emails) und [E-Mail Pro](/links/web/email-pro).
 
 Sie können Outlook-Lizenzen im [OVHcloud Kundencenter](/links/manager) und Office 365-Lizenzen auf der Seite [Microsoft 365](/links/web/ms365) erwerben. Wir empfehlen Ihnen eine dieser Lösungen, wenn Sie Outlook E-Mail-Software oder weitere Software der Office Suite nutzen möchten.
 

@@ -57,7 +57,7 @@ Ajouter un nom de domaine sur un service Exchange ou E-mail Pro est indispensabl
 
 > [!warning]
 >
-> Par défaut, l'ensemble des comptes e-mail d'une plateforme sont interconnectés. Toutes les adresses créées sur votre service e-mail seront en mesure de visualiser l'ensemble des adresses de ce service dans l'annuaire, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, il est nécessaire de commander une autre [plateforme Exchange ou Email Pro](/links/web/emails) pour le ou les noms de domaine concernés.
+> Par défaut, l'ensemble des comptes e-mail d'une plateforme sont interconnectés. Toutes les adresses créées sur votre service e-mail seront en mesure de visualiser l'ensemble des adresses de ce service dans l'annuaire, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, il est nécessaire de commander une autre plateforme [Exchange ou Email Pro](/links/web/emails) pour le ou les noms de domaine concernés.
 >
 
 Sur la fenêtre d'ajout de domaine :
@@ -124,7 +124,7 @@ Il est possible de modifier le mode d'un domaine associé sur votre plateforme. 
 >
 > - Le choix du mode **autoritatif** sur votre plateforme e-mail (*Server A*) implique l'hébergement de l'ensemble des adresses e-mail de votre nom de domaine sur cette plateforme.<br>Par exemple, si l'on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le « *Server A* » renvoie un message d'échec à l'expéditeur car cette adresse n'existe pas sur le  « *Server A* ».<br><br>
 >
-> - Le mode **non-autoritatif** sur votre plateforme e-mail (*Server A*) permet une répartition des adresses e-mail de votre nom de domaine entre votre plateforme e-mail principale (*Server A*) et un autre service e-mail (*Server B*).<br>Par exemple, si l'on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le *Server A* transmettra l'e-mail au « *Server B* » pour que ce dernier puisse le délivrer.<br>
+> - Le mode **non-autoritatif** sur votre plateforme e-mail (*Server A*) permet une répartition des adresses e-mail de votre nom de domaine entre votre plateforme e-mail principale (*Server A*) et un autre service e-mail (*Server B*).<br>Par exemple, si l'on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le « *Server A* » transmettra l'e-mail au « *Server B* » pour que ce dernier puisse le délivrer.<br>
 >
 > ![Authoritative](images/add_domain_exchange_authoritative.png){.thumbnail .w-400}
 
@@ -137,7 +137,7 @@ Il est possible de modifier le mode d'un domaine associé sur votre plateforme. 
 
 > [!warning]
 >
-> Si vous obtenez le message «**authoritative domain detected**» lors de l'ajout de votre nom de domaine sur votre plateforme e-mail, cela signifie que ce nom de domaine est déclaré en mode **autoritatif** sur une autre plateforme e-mail. Vous devrez le passer en mode **non-autoritatif** sur les deux plateformes pour qu'elles puissent cohabiter.
+> Si vous obtenez le message « **authoritative domain detected** » lors de l'ajout de votre nom de domaine sur votre plateforme e-mail, cela signifie que ce nom de domaine est déclaré en mode **autoritatif** sur une autre plateforme e-mail. Vous devrez le passer en mode **non-autoritatif** sur les deux plateformes pour qu'elles puissent cohabiter.
 
 ### Configurer et utiliser les comptes
 
@@ -147,7 +147,7 @@ Pour rappel, toutes les adresses créées sur votre service seront en mesure de 
 
 Une fois les comptes totalement configurés, vous pouvez commencer à les utiliser. Pour cela, OVHcloud met à votre disposition le **webmail**, accessible [ici](/links/web/email). Pour une utilisation optimale de votre adresse sur un logiciel, assurez-vous de sa compatibilité avec le service.
 
-Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, ou obtenir de l'aide concernant les fonctionnalités de votre service e-mail, consultez nos documentations accessibles depuis les pages [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) et [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
+Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, ou obtenir de l'aide concernant les fonctionnalités de votre service e-mail, consultez nos documentations accessibles depuis les pages [Exchange](/links/web/emails) et [E-mail Pro](/links/web/email-pro).
 
 Vous pouvez acquérir des licences Outlook dans l'[espace client OVHcloud](/links/manager) et des licences Office 365 sur la page [Microsoft 365](/links/web/ms365). Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 

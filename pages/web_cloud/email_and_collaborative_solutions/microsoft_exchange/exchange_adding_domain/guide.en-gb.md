@@ -57,14 +57,14 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 > [!warning]
 >
-> By default, all email accounts on a platform are interconnected. All of the addresses created on your email service will be able to view all of the service’s addresses in the directory, including those with a different domain name. To unlink the display of domains, you need to order another [Exchange or Email Pro platform](/links/web/emails) for the domain name(s) concerned.
+> By default, all email accounts on a platform are interconnected. All of the addresses created on your email service will be able to view all of the service’s addresses in the directory, including those with a different domain name. To unlink the display of domains, you need to order another [Exchange or Email Pro](/links/web/emails) platform for the domain name(s) concerned.
 >
 
 In the window for adding a domain:
 
-- **Select a domain from the list** : In the list, you will find the domain names that you fully manage (or at least manage the DNS zone) in your OVHcloud Control Panel.
+- **Select a domain from the list**: In the list, you will find the domain names that you fully manage (or at least manage the DNS zone) in your OVHcloud Control Panel.
 
-- **Enter a domain name that is not managed by your OVHcloud account** : You will need to be able to modify the domain name’s configuration, and more precisely its DNS zone, so that the service can be configured.
+- **Enter a domain name that is not managed by your OVHcloud account**: You will need to be able to modify the domain name’s configuration, and more precisely its DNS zone, so that the service can be configured.
 
 Once you have made your choice, click the `Next`{.action} button.
 
@@ -84,7 +84,7 @@ The window now displays information about configuring modes.
 ![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-400}
 
 - **If you have entered a domain name that is not managed by your OVHcloud account**: this means that the domain name, and more specifically its DNS zone, is not managed from the OVHcloud Control Panel. It can also be registered at another registrar. It will then be necessary to proceed with the configuration directly in its management interface, whatever the following choice made.
-    - **Recommended configuration** : This is suitable if you only use OVHcloud email solutions.<br><br>
+    - **Recommended configuration**: This is suitable if you only use OVHcloud email solutions.<br><br>
     - **Custom configuration**: If you would like to use a private email service or one external to OVHcloud in addition to this email platform, enter the host name of the email server in the `URL of the target email server` box.
 
 ![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-400}
@@ -97,7 +97,7 @@ Once you have added the domain name as an associated domain, check that its conf
 
 If the box is red:
 
-- **if you chose automatic configuration when you added your domain** : it may take a few moments for the display in the OVHcloud Control Panel to refresh.
+- **if you chose automatic configuration when you added your domain**: it may take a few moments for the display in the OVHcloud Control Panel to refresh.
 
 - **if you have entered a domain name that is not managed by your OVHcloud account**:
     - Click on the red box `MX`, `SRV`, `SPF` and `DKIM` to see the changes you need to make. If this domain name does not use OVHcloud’s configuration (its DNS servers), you will need to carry out the modifications from your domain name’s management interface.
@@ -124,7 +124,7 @@ You can change the mode of an associated domain on your platform. First, it is n
 >
 > - Choosing the **authoritative** mode on your email platform (*Server A*) involves hosting all of your domain name’s email addresses on this platform.<br>For example, if you send an email to the address “*mary.johnson@mydomain.ovh*”, the “*Server A*” will return a failure message to the sender because this address does not exist on the “*Server A*”.<br><br>
 >
-> - The **non-authoritative** mode on your email platform (*Server A*) allows distribution of your domain name’s email addresses between your primary email platform (*Server A*) and another email service (*Server B*).<br>For example, if you send an email to the address “*mary.johnson@mydomain.ovh*”, *Server A* will send the email to “*Server B*” so that it can deliver it.<br>
+> - The **non-authoritative** mode on your email platform (*Server A*) allows distribution of your domain name’s email addresses between your primary email platform (*Server A*) and another email service (*Server B*).<br>For example, if you send an email to the address “*mary.johnson@mydomain.ovh*”, "*Server A*" will send the email to “*Server B*” so that it can deliver it.<br>
 >
 > ![Authoritative](images/add_domain_exchange_authoritative.png){.thumbnail .w-400}
 
@@ -147,7 +147,7 @@ As a reminder, all of the addresses created on your service will be able to view
 
 Once the accounts are fully configured, you can start using them. To do this, OVHcloud offers the **webmail**, accessible [here](/links/web/email). To optimize the use of your email address on a software application, ensure that it is compatible with the service.
 
-If you would like to configure your email address on an email client or device such as a smartphone or tablet, or if you would like assistance with the features of your email service, please refer to our documentation, which is accessible from the [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) and [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) pages.
+If you would like to configure your email address on an email client or device such as a smartphone or tablet, or if you would like assistance with the features of your email service, please refer to our documentation, which is accessible from the [Exchange](/links/web/emails) and [Email Pro](/links/web/email-pro) pages.
 
 You can purchase Outlook licenses in the [OVHcloud Control Panel](/links/manager) and Office 365 licenses on the [Microsoft 365](/links/web/ms365) page. We recommend using one of these solutions if you would like to use Outlook email software, or more software from the Office suite, depending on your needs.
 
