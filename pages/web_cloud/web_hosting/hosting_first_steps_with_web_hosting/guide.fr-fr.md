@@ -91,15 +91,6 @@ Dans ce cas de figure, plusieurs solutions s'offrent à vous. Cliquez sur les on
 > **Cas n°1**
 >>
 >> **Mettre en ligne un site web développé localement**
->
->> Pour ce cas de figure, nous vous invitons à suivre directement notre guide « [Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ». Vous y retrouverez toutes les étapes à réaliser pour :
->>
->> - placer votre site web sur l'espace de stockage FTP de votre hébergement web ;
->> - créer une base de données associée à votre hébergement web ;
->> - placer votre base de données locale sur la base de données liée à votre hébergement web ;
->> - lier votre base de données au site web présent sur votre hébergement web.
->>
-> **Cas n°2**
 >>
 >> **Créer un site web en utilisant un « module en 1 clic » (CMS)**
 >>
@@ -111,6 +102,18 @@ Dans ce cas de figure, plusieurs solutions s'offrent à vous. Cliquez sur les on
 >> > [!primary]
 >> >
 >> > Si vous préférez installer manuellement votre CMS sans passer par l'option « Modules en 1 clic », consultez notre documentation intitulée « [Installer manuellement un CMS sur mon hébergement web](/pages/web_cloud/web_hosting/cms_manual_installation) ».
+>>
+> **Cas n°2**
+>>
+>> **Mettre en ligne un site web développé localement**
+>
+>> Pour ce cas de figure, nous vous invitons à suivre directement notre guide « [Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ». Vous y retrouverez toutes les étapes à réaliser pour :
+>>
+>> - placer votre site web sur l'espace de stockage FTP de votre hébergement web ;
+>> - créer une base de données associée à votre hébergement web ;
+>> - placer votre base de données locale sur la base de données liée à votre hébergement web ;
+>> - lier votre base de données au site web présent sur votre hébergement web.
+>>
 
 ///
 
