@@ -39,7 +39,7 @@ Before submitting a Pull Request, please ensure you have:
 
 ## Mandatory information
 
-<!-- Delete the lines which doesn't apply: -->
+<!-- Delete the line which doesn't apply: -->
 - This Pull Request can be merged as soon as possible.
 - This Pull Request shouldn't be merged before: YYYY-MM-DD <!-- replace it with a real date -->
 
