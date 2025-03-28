@@ -59,7 +59,7 @@ Les reversements de tous vos numéros surtaxés sont visibles dans le menu `Gér
 
 Vous pouvez y consulter l'historique des appels sur vos numéros ainsi que les reversements correspondants.
 
-Lorsque le cumul de vos reversements disponibles atteint la somme de 30 €, un virement bancaire est automatiquement effectué, **après un délai légale de 3 mois**, vers le compte bancaire spécifié sur cette page.
+Lorsque le cumul de vos reversements disponibles atteint la somme de 30 €, un virement bancaire est automatiquement effectué, **après un délai légal de 3 mois**, vers le compte bancaire spécifié sur cette page.
 
 > [!primary]
 > **Exemple :**
