@@ -112,8 +112,6 @@ No caso de a pastilha ser de cor vermelha:
 
 Para verificar se a configuração de um domínio está correta, aceda à tabela `Domínios associados`{.action} do seu serviço. A etiqueta verde indica que o domínio está configurado corretamente. Caso contrário, é possível que a propagação ainda não esteja concluída.
 
-![emailpro](images/add_domain_exchange_step5.png){.thumbnail .w-400}
-
 ### Modificar o modo de um domínio associado
 
 É possível modificar o modo de um domínio associado na sua plataforma. Em primeiro lugar, é necessário compreender a diferença de funcionamento entre os modos autoritário e não-autoritário.
@@ -132,8 +130,6 @@ Para verificar se a configuração de um domínio está correta, aceda à tabela
 1. Clique no botão `...`{.action} na linha do domínio em questão.
 1. Clique em `Configuração`{.action}.
 1. Selecione o modo de sua escolha.
-
-![Add Domain Exchange](images/add_domain_exchange_mode.png){.thumbnail .w-400}
 
 > [!warning]
 >

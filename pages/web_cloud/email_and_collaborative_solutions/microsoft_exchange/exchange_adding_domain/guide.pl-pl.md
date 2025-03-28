@@ -112,8 +112,6 @@ W przypadku gdy przycisk jest czerwony:
 
 Aby sprawdzić, czy konfiguracja nazwy domeny jest prawidłowa, otwórz tabelę `Domeny przypisane`{.action} do twojej usługi. Jeśli przycisk jest zielony, nazwa domeny została poprawnie skonfigurowana. Jeśli nie jest zielony, może to oznaczać, że nie zakończyła się jeszcze propagacja.
 
-![emailpro](images/add_domain_exchange_step5.png){.thumbnail .w-400}
-
 ### Zmień tryb przypisanej domeny
 
 Możesz zmienić tryb domeny przypisanej do twojej platformy. Najpierw należy zrozumieć różnicę w działaniu między trybami autorytatywnymi i nieautorytatywnymi.
@@ -132,8 +130,6 @@ Możesz zmienić tryb domeny przypisanej do twojej platformy. Najpierw należy z
 1. Kliknij przycisk `...`{.action} na wybrany wiersz nazwy domeny.
 1. Kliknij przycisk `Konfiguracja`{.action}.
 1. Wybierz tryb.
-
-![Add Domain Exchange](images/add_domain_exchange_mode.png){.thumbnail .w-400}
 
 > [!warning]
 >

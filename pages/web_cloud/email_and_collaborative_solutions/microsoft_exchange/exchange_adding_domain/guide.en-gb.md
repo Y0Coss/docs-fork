@@ -112,8 +112,6 @@ If the box is red:
 
 To check that a domain name is correctly configured, go to the `Associated domains`{.action} table on your service. If the box is now green, the domain name is correctly configured. Otherwise, the propagation may not be complete yet.
 
-![emailpro](images/add_domain_exchange_step5.png){.thumbnail .w-400}
-
 ### Modify the mode of an associated domain
 
 You can change the mode of an associated domain on your platform. First, it is necessary to understand the difference in operation between authoritative and non-authoritative modes.
@@ -132,8 +130,6 @@ You can change the mode of an associated domain on your platform. First, it is n
 1. Click the `...`{.action}' button on the line for the domain name concerned.
 1. Click `Configuration`{.action}.
 1. Select the mode you want.
-
-![Add Domain Exchange](images/add_domain_exchange_mode.png){.thumbnail .w-400}
 
 > [!warning]
 >

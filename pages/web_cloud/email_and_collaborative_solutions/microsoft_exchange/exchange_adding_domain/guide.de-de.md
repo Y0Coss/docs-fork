@@ -112,8 +112,6 @@ Wenn das Kästchen rot ist:
 
 Um zu überprüfen, dass die Konfiguration einer Domain korrekt ist, gehen Sie zurück in die Tabelle `Assoziierte Domains`{.action} Ihres Dienstes. Wenn das grüne Kästchen nun angezeigt wird, ist die Domain korrekt konfiguriert. Andernfalls ist die Propagierung möglicherweise noch nicht abgeschlossen.
 
-![emailpro](images/add_domain_exchange_step5.png){.thumbnail .w-400}
-
 ### den Modus einer assoziierten Domain ändern
 
 Sie können den Modus einer assoziierten Domain auf Ihrer Plattform ändern. Zuvor ist es notwendig, den Unterschied zwischen dem autoritativen und dem nicht-autoritativen Modus zu verstehen.
@@ -132,8 +130,6 @@ Sie können den Modus einer assoziierten Domain auf Ihrer Plattform ändern. Zuv
 1. Klicken Sie auf den Button `...`{.action} in der Zeile der betreffenden Domain.
 1. Klicken Sie auf `Konfiguration`{.action}.
 1. Wählen Sie den gewünschten Modus.
-
-![Add Domain Exchange](images/add_domain_exchange_mode.png){.thumbnail .w-400}
 
 > [!warning]
 >

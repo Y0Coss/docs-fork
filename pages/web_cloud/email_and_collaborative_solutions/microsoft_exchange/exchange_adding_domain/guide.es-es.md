@@ -112,8 +112,6 @@ Si la etiqueta es roja:
 
 Para comprobar que la configuración del dominio es correcta, vuelva a la tabla `Dominios asociados`{.action} del servicio. Si la etiqueta es ahora de color verde, el dominio está correctamente configurado. De lo contrario, es posible que la propagación aún no se haya finalizado.
 
-![emailpro](images/add_domain_exchange_step5.png){.thumbnail .w-400}
-
 ### Cambiar el modo de un dominio asociado
 
 Es posible modificar el modo de un dominio asociado en su plataforma. En primer lugar, es necesario entender la diferencia de funcionamiento entre los modos autoritario y no autoritario.
@@ -132,8 +130,6 @@ Es posible modificar el modo de un dominio asociado en su plataforma. En primer 
 1. Haga clic en el botón `...`{.action} en la línea del dominio correspondiente.
 1. Haga clic en `Configuración`{.action}.
 1. Seleccione el modo que desee.
-
-![Add Domain Exchange](images/add_domain_exchange_mode.png){.thumbnail .w-400}
 
 > [!warning]
 >

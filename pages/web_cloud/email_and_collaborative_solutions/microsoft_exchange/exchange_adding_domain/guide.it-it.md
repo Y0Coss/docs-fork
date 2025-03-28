@@ -112,8 +112,6 @@ Se la casellina è rossa:
 
 Per verificare la correttezza della configurazione di un dominio, accedi nuovamente alla tabella `Domini associati`{.action} del servizio. Se la casellina è diventata verde significa che il dominio è stato configurato correttamente. In caso contrario, è possibile che la propagazione delle modifiche non sia ancora terminata.
 
-![emailpro](images/add_domain_exchange_step5.png){.thumbnail .w-400}
-
 ### Modificare la modalità di un dominio associato
 
 È possibile modificare la modalità di un dominio associato sulla piattaforma. Come prerequisito è necessario comprendere la differenza di funzionamento tra la modalità autoritativa e la modalità non autoritativa.
@@ -132,8 +130,6 @@ Per verificare la correttezza della configurazione di un dominio, accedi nuovame
 1. Clicca sul pulsante `...`{.action} nella riga del dominio corrispondente.
 1. Clicca su `Configurazione`{.action}.
 1. Selezionare la modalità desiderata.
-
-![Add Domain Exchange](images/add_domain_exchange_mode.png){.thumbnail .w-400}
 
 > [!warning]
 >

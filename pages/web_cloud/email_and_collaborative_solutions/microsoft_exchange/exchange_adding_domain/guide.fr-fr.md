@@ -112,8 +112,6 @@ Dans le cas où la pastille est de couleur rouge :
 
 Pour vérifier que la configuration d'un nom de domaine est correcte, repositionnez-vous sur le tableau `Domaines associés`{.action} de votre service. Si la pastille est à présent verte, le nom de domaine est correctement configuré. Dans le cas contraire, il se peut que la propagation ne soit pas encore terminée.
 
-![emailpro](images/add_domain_exchange_step5.png){.thumbnail .w-400}
-
 ### Modifier le mode d'un domaine associé
 
 Il est possible de modifier le mode d'un domaine associé sur votre plateforme. Au préalable, il est nécessaire de comprendre la différence de fonctionnement entre les modes autoritatif et non-autoritatif.
@@ -132,8 +130,6 @@ Il est possible de modifier le mode d'un domaine associé sur votre plateforme. 
 1. Cliquez sur le bouton `...`{.action} sur la ligne du nom de domaine concerné.
 1. Cliquez sur `Configuration`{.action}.
 1. Sélectionnez le mode de votre choix.
-
-![Add Domain Exchange](images/add_domain_exchange_mode.png){.thumbnail .w-400}
 
 > [!warning]
 >
