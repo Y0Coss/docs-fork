@@ -1,6 +1,6 @@
 ---
 title: "Hébergement Web - Réaliser mon projet de site web"
-excerpt: "Découvrez comment mettre en ligne votre site web et créer des adresses e-mail avec votre solution d'hébergement web"
+excerpt: "Découvrez comment définir votre projet, publier votre site internet et créer des adresses e-mail avec votre solution d'hébergement web"
 updated: 2025-03-28
 ---
 
