@@ -1,7 +1,7 @@
 ---
 title: BGP Service configuration
 excerpt: By using BGP Service, you gain full control over your routing policies and network resilience. Follow this guide to set up and optimize your BGP sessions
-updated: 2025-03-28
+updated: 2025-03-31
 ---
 
 ## Objective
