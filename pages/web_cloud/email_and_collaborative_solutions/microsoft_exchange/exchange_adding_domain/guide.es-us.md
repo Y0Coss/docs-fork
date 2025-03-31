@@ -1,7 +1,7 @@
 ---
 title: 'Añadir un dominio a un servicio Exchange'
 excerpt: 'Cómo añadir un dominio a un servicio Exchange'
-updated: 2025-03-27
+updated: 2025-03-31
 ---
 
 <style>

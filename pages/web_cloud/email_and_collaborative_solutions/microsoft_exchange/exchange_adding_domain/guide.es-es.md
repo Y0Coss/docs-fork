@@ -1,7 +1,7 @@
 ---
 title: 'Añadir un dominio a un servicio Exchange'
 excerpt: 'Cómo añadir un dominio a un servicio Exchange'
-updated: 2025-03-27
+updated: 2025-03-31
 ---
 
 <style>
@@ -161,13 +161,13 @@ Si tiene cuentas de correo asociadas al dominio que desea desvincular, tiene dos
 
 **Asociar las cuentas a otro dominio**:
 
-1.\ Acceda a la pestaña `Cuentas de correo`{.action}.
-2.\ A la derecha de las cuentas que quiera modificar, haga clic en el botón `...`{.action}.
-3.\ Haga clic en `Editar`{.action}.
+1\. Acceda a la pestaña `Cuentas de correo`{.action}.
+2\. A la derecha de las cuentas que quiera modificar, haga clic en el botón `...`{.action}.
+3\. Haga clic en `Editar`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
 
-4.\ Desde la ventana de modificación, puede modificar el nombre de dominio asociado a la cuenta a través del menú desplegable.
+4\. Desde la ventana de modificación, puede modificar el nombre de dominio asociado a la cuenta a través del menú desplegable.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
 

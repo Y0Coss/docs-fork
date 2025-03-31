@@ -1,7 +1,7 @@
 ---
 title: "Einen Domainnamen auf einer E-Mail-Plattform hinzufügen und verwalten"
 excerpt: "So fügen Sie eine Domain zu Ihrer Exchange oder E-Mail Pro Plattform hinzu"
-updated: 2025-03-27
+updated: 2025-03-31
 ---
 
 <style>
@@ -161,13 +161,13 @@ Wenn mit dem Domainnamen, den Sie abtrennen möchten, E-Mail-Accounts verbunden 
 
 **Die Accounts mit einem anderen Domainnamen verbinden**:
 
-1.\ Gehen Sie in den Tab `E-Mail-Accounts`{.action}.<br>
-2.\ Klicken Sie rechts neben den zu ändernden Konten auf die Schaltfläche `...`{.action}.<br>
-3.\ Klicken Sie auf `Bearbeiten`{.action}.
+1\. Gehen Sie in den Tab `E-Mail-Accounts`{.action}.<br>
+2\. Klicken Sie rechts neben den zu ändernden Konten auf die Schaltfläche `...`{.action}.<br>
+3\. Klicken Sie auf `Bearbeiten`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
 
-4.\ Im Bearbeitungsfenster können Sie den mit dem Account verbundenen Domainnamen über das Dropdown-Menü ändern.
+4\. Im Bearbeitungsfenster können Sie den mit dem Account verbundenen Domainnamen über das Dropdown-Menü ändern.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Adding a domain name to your Exchange service'
 excerpt: 'Find out how to add a domain name to your Exchange service'
-updated: 2025-03-27
+updated: 2025-03-31
 ---
 
 <style>
@@ -161,13 +161,13 @@ If you have email accounts attached to the domain name you want to detach, you h
 
 **Attach accounts to another domain name**:
 
-1.\ Go to the `Email accounts`{.action} tab.<br>
-2.\ To the right of the accounts you want to modify, click the `...`{.action}.<br> button
-3.\ Click `Modify`{.action}.
+1\. Go to the `Email accounts`{.action} tab.<br>
+2\. To the right of the accounts you want to modify, click the `...`{.action}.<br> button
+3\. Click `Modify`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
 
-4.\ From the Edit window, you can modify the domain name attached to the account via the dropdown menu.
+4\. From the Edit window, you can modify the domain name attached to the account via the dropdown menu.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
 

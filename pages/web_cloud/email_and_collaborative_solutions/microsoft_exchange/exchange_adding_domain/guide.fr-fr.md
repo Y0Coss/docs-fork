@@ -1,7 +1,7 @@
 ---
 title: Ajouter et gérer un nom de domaine sur une plateforme e-mail
 excerpt: Découvrez comment ajouter un nom de domaine à votre plateforme Exchange ou E-mail Pro
-updated: 2025-03-27
+updated: 2025-03-31
 ---
 
 <style>
@@ -161,13 +161,13 @@ Si des comptes e-mail sont attachés au nom de domaine que vous souhaitez détac
 
 **Attacher les comptes à un autre nom de domaine** :
 
-1.\ Rendez-vous dans l'onglet `Comptes e-mail`{.action}.<br>
-2.\ À droite des comptes à modifier, cliquez sur le bouton `...`{.action}.<br>
-3.\ Cliquez sur `Modifier`{.action}.
+1\. Rendez-vous dans l'onglet `Comptes e-mail`{.action}.<br>
+2\. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}.<br>
+3\. Cliquez sur `Modifier`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
 
-4.\ Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
+4\. Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
 

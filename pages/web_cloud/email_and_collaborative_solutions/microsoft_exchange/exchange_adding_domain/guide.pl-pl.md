@@ -1,7 +1,7 @@
 ---
 title: Dodaj domenę do platformy e-mail
 excerpt: Dowiedz się, jak dodać domenę do platformy Exchange lub E-mail Pro
-updated: 2025-03-27
+updated: 2025-03-31
 ---
 
 <style>
@@ -161,13 +161,13 @@ Jeśli do kont e-mail przypisana jest nazwa domeny, którą chcesz odłączyć, 
 
 **Przypisz konta do innej domeny**:
 
-1.\ Przejdź do zakładki `Konta e-mail`{.action}.<br>
-2.\ Po prawej stronie listy kont, które chcesz zmienić, kliknij przycisk `...`{.action}.<br>
-3.\ Kliknij na `Zmień`{.action}.
+1\. Przejdź do zakładki `Konta e-mail`{.action}.<br>
+2\. Po prawej stronie listy kont, które chcesz zmienić, kliknij przycisk `...`{.action}.<br>
+3\. Kliknij na `Zmień`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
 
-4.\ W oknie edycji możesz zmienić nazwę domeny przypisanej do konta w rozwijanym menu.
+4\. W oknie edycji możesz zmienić nazwę domeny przypisanej do konta w rozwijanym menu.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
 

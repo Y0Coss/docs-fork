@@ -1,7 +1,7 @@
 ---
 title: 'Adding a domain name to your Exchange service'
 excerpt: 'Find out how to add a domain name to your Exchange service'
-updated: 2025-03-27
+updated: 2025-03-31
 ---
 
 <style>

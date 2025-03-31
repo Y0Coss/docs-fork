@@ -1,7 +1,7 @@
 ---
 title: 'Aggiungi un dominio su una piattaforma email'
 excerpt: Come aggiungere un dominio alla piattaforma Exchange o Email Pro
-updated: 2025-03-27
+updated: 2025-03-31
 ---
 
 <style>
@@ -161,13 +161,13 @@ Se alcuni account email sono associati al dominio che vuoi scollegare, hai 2 pos
 
 **Associa gli account a un altro dominio**:
 
-1.\ Accedi alla scheda `Account email`{.action}.<br>
-2.\ A destra degli account da modificare, clicca sul pulsante `...`{.action}.<br>
-3.\ Clicca su `Modifica`{.action}.
+1\. Accedi alla scheda `Account email`{.action}.<br>
+2\. A destra degli account da modificare, clicca sul pulsante `...`{.action}.<br>
+3\. Clicca su `Modifica`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
 
-4.\ Dalla finestra di modifica, è possibile modificare il nome di dominio associato all'account tramite il menu a tendina.
+4\. Dalla finestra di modifica, è possibile modificare il nome di dominio associato all'account tramite il menu a tendina.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
 

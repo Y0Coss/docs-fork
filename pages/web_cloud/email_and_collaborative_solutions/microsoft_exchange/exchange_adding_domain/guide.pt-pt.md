@@ -1,7 +1,7 @@
 ---
 title: Adicionar um domínio a uma plataforma de e-mail
 excerpt: Saiba como adicionar um domínio à sua plataforma Exchange ou E-mail Pro
-updated: 2025-03-27
+updated: 2025-03-31
 ---
 
 <style>
@@ -161,13 +161,13 @@ Se houver contas de e-mail associadas ao nome de domínio que pretende desassoci
 
 **Associar as contas a outro domínio**:
 
-1.\ Aceda ao separador `Contas de e-mail`{.action}.<br>
-2.\ À direita das contas a modificar, clique no botão `...`{.action}.<br>
-3.\ Clique em `Alterar`{.action}.
+1\. Aceda ao separador `Contas de e-mail`{.action}.<br>
+2\. À direita das contas a modificar, clique no botão `...`{.action}.<br>
+3\. Clique em `Alterar`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
 
-4.\ A partir da janela de edição, pode modificar o nome de domínio associado à conta através do menu pendente.
+4\. A partir da janela de edição, pode modificar o nome de domínio associado à conta através do menu pendente.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
 
