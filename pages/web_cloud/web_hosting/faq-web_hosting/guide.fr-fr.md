@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - FAQ"
 excerpt: "Retrouvez les principales questions posées sur les hébergements web OVHcloud"
-updated: 2025-03-28
+updated: 2025-04-01
 ---
 
 <style>
@@ -29,7 +29,7 @@ Suivez ces étapes :
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 
-Vous pourrez y gérer vos certificats SSL, la version PHP appliqué à votre hébergement web, l'option CDN, les éventuels multisites, les bases de données, etc.
+Vous pourrez y gérer vos certificats SSL, la version PHP appliquée à votre hébergement web, l'option CDN, les éventuels multisites, les bases de données, etc.
 
 > [!success]
 >
@@ -115,7 +115,7 @@ Vous pourrez y modifier le mot de passe de votre adresse e-mail (veillez à resp
 
 Pour mettre en ligne votre site web, vous devez d'abord disposer des éléments suivants :
 
-- Un [nom de domaine](/links/web/domains) qui correspondra à l'adresse Web depuis laquelle votre site web sera accessible via un navigateur internet (exemple : *domain.tld*).
+- Un [nom de domaine](/links/web/domains) qui correspondra à l'adresse Web depuis laquelle votre site web sera accessible via un navigateur internet (exemple : *domain.tld*). Ce nom de domaine doit égalament être associé à votre hébergement web pour afficher le site web.
 - Un [hébergement web](/links/web/hosting) sur lequel installer votre site web.
 
 Voici les principales étapes à suivre :
@@ -256,18 +256,7 @@ Suivez ces étapes :
 
 /// details | Comment augmenter la RAM d'une offre « Web Cloud Databases » liée à un hébergement web « Performance » ?
 
-Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement web **Performance**, vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre supérieure.
-
 Suivez ces étapes :
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
-2. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
-3. Sur la page qui s'affiche et dans l'encadré **Configuration**, cliquez sur le bouton `...`{.action} à droite de la mention `Web Cloud Databases`, puis sur `Délier`{.action}.
-4. Choisissez la durée du renouvellement la plus courte, puis poursuivez jusqu'à la validation de la commande.
-
-**Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
-
-Pour ensuite augmenter la RAM de votre solution « Web Cloud Databases », suivez ces étapes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 2. Cliquez sur le menu `Web Cloud Databases`{.action}, puis choisissez la solution Web Cloud Databases concernée.
@@ -557,6 +546,8 @@ Si les restaurations ne vous permettent pas de rétablir l'accès à votre site 
 Si vous avez activé [l'option CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) de votre hébergement web, désactivez le mode *Maintenance* sur votre site WordPress ou PrestaShop.
 
 Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
+
+En effet, cette erreur peut aussi apparaître en cas de requête HTTP qui abouti en *timeout* sur votre site web.
 
 > [!success]
 >
