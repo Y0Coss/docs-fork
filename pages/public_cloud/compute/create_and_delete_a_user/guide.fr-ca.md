@@ -8,8 +8,6 @@ updated: 2025-04-02
 
 L’accès à Horizon et aux API OpenStack s’effectue via des combinaisons identifiant/mot de passe appelées « *OpenStack users* ». Vous pouvez créer autant d'utilisateurs OpenStack que nécessaire et leur attribuer différents droits d'accès.
 
-Notre guide « [Créer un accès à Horizon](/pages/public_cloud/compute/introducing_horizon) » vous détaille comment générer un mot de passe d’accès.
-
 Depuis l'interface Horizon, vous pouvez définir un mot de passe pour chaque utilisateur. Attention, le changement de mot de passe d’un compte utilisateur entraîne la révocation immédiate du précédent mot de passe.
 
 **Ce guide vous explique comment gérer des utilisateurs OpenStack depuis votre espace client OVHcloud et via l'interface Horizon.**

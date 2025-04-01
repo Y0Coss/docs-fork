@@ -8,8 +8,6 @@ updated: 2025-04-02
 
 Dostęp do interfejsu Horizon i API OpenStack odbywa się za pośrednictwem kombinacji identyfikatora i hasła zwanych "*OpenStack users*". Możesz utworzyć tylu użytkowników OpenStack, ilu potrzebujesz i przyznać im różne prawa dostępu.
 
-Z naszego przewodnika "[Prezentacja Horizon](/pages/public_cloud/compute/introducing_horizon)" dowiesz się, jak wygenerować hasło dostępowe.
-
 W interfejsie Horizon możesz zdefiniować hasło dla każdego użytkownika. Uwaga, zmiana hasła do konta użytkownika skutkuje natychmiastowym odwołaniem poprzedniego hasła.
 
 **Niniejszy przewodnik wyjaśnia, jak zarządzać użytkownikami OpenStack w Panelu klienta OVHcloud i w interfejsie Horizon.**
