@@ -1,26 +1,25 @@
 ---
 title: Managing OpenStack users
-excerpt: Find out how to Managing OpenStack users in the OVHcloud Control Panel and in the Horizon interface.
-updated: 2025-03-31
+excerpt: Find out how to manage OpenStack users from the OVHcloud Control Panel and the Horizon interface
+updated: 2025-04-02
 ---
 
 ## Objective
 
 Access to Horizon and the OpenStack APIs is established via username/password pairs called "OpenStack users". You can create as many OpenStack users as needed and assign them various access permissions.
 
-In our guide to [Configuring user access to Horizon](/pages/public_cloud/compute/introducing_horizon){.external}, we explained how to generate an access password.
+In our [Configuring user access to Horizon](/pages/public_cloud/compute/introducing_horizon) guide, we explain how to generate an access password.
 
-Using the Horizon panel, you can also set passwords for each individual user. Please note that when you change a user password, the previous password will be immediately cancelled.
+Using the Horizon interface, you can also set passwords for each individual user. Please note that when you change a user password, the previous password will be immediately cancelled.
 
-**This guide explains how to manage OpenStack users in the OVHcloud Control Panel and in the Horizon interface.**
+**This guide explains how to manage OpenStack users from the OVHcloud Control Panel and the Horizon interface.**
 
 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/NC69nrb6QlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
-- You need to have created an OpenStack Horizon user account.
 
 ## Instructions
 
@@ -50,10 +49,9 @@ Be sure to save the password shown in the green message box to a password manage
 
 With the OpenStack user created, you can use its credentials to log into the [Horizon interface](/pages/public_cloud/compute/introducing_horizon) by clicking on the link `Horizon`{.action} in the left-hand menu.
 
-### Change an Openstack user password
+### Change an OpenStack user password
 
-
-You can create an OpenStack password once you have logged in to your [OpenStack Horizon](https://horizon.cloud.ovh.net){.external} interface:
+You can create an OpenStack password once you have logged in to your [OpenStack Horizon](https://horizon.cloud.ovh.net) interface:
 
 ![Horizon login](images/1_H_login_window.png){.thumbnail}
 
@@ -67,19 +65,19 @@ Enter your current password into the first field, then re-enter and confirm your
 >
 > When you change your password, please ensure that it meets the following criteria:
 >
-> - password must contain a minimum of eight characters
-> - password must contain a maximum of 30 characters
-> - password must contain at least one upper-case letter
-> - password must contain at least one lower-case letter
-> - password must contain at least one number
-> - password must only contain letters and numbers
+> - The password must contain a minimum of eight characters.
+> - The password must contain a maximum of 30 characters.
+> - The password must contain at least one upper-case letter.
+> - The password must contain at least one lower-case letter.
+> - The password must contain at least one number.
+> - The password must only contain letters and numbers.
 >
 
 To confirm your new password, click `Change`{.action}.
 
 ![Set password](images/3_H_set_new_passord.png){.thumbnail}
 
-Please note that when you change your user password, your old password will be immediately cancelled.
+Please note that when you change your user password, your previous password is immediately cancelled.
 
 ### Deleting an OpenStack user
 

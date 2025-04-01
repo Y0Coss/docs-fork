@@ -1,26 +1,25 @@
 ---
 title: Gestion des utilisateurs OpenStack
-excerpt: Découvrez comment gérer les utilisateurs OpenStack dans votre espace client OVHcloud et dans l'interface Horizon.
-updated: 2024-03-04
+excerpt: Découvrez comment gérer les utilisateurs OpenStack dans votre espace client OVHcloud et dans l'interface Horizon
+updated: 2025-04-02
 ---
 
 ## Objectif
 
 L’accès à Horizon et aux API OpenStack s’effectue via des combinaisons identifiant/mot de passe appelées « *OpenStack users* ». Vous pouvez créer autant d'utilisateurs OpenStack que nécessaire et leur attribuer différents droits d'accès.
 
-Dans le guide [créer un accès à Horizon](/pages/public_cloud/compute/introducing_horizon){.external}, il vous a été expliqué comment générer un mot de passe d’accès.
+Notre guide « [Créer un accès à Horizon](/pages/public_cloud/compute/introducing_horizon) » vous détaille comment générer un mot de passe d’accès.
 
-À l’aide du panneau Horizon, il est possible de définir un mot de passe pour chaque utilisateur. Attention, le changement de mot de passe d’un compte utilisateur entraîne l’annulation des identifiants actifs au moment du changement.
+Depuis l'interface Horizon, vous pouvez définir un mot de passe pour chaque utilisateur. Attention, le changement de mot de passe d’un compte utilisateur entraîne la révocation immédiate du précédent mot de passe.
 
-**Ce guide vous explique comment gérer des utilisateurs OpenStack depuis votre espace client OVHcloud et dans l'interface Horizon.**
+**Ce guide vous explique comment gérer des utilisateurs OpenStack depuis votre espace client OVHcloud et via l'interface Horizon.**
 
 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/NC69nrb6QlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
-- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Un projet [Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
-- Avoir créé un compte utilisateur OpenStack Horizon.
 
 ## En pratique
 
@@ -50,14 +49,14 @@ Veillez à enregistrer le mot de passe, uniquement affiché à ce moment précis
 
 Une fois l'utilisateur OpenStack créé, vous pourrez utiliser ses identifiants pour vous connecter à [l'interface Horizon](/pages/public_cloud/compute/introducing_horizon) en cliquant sur le lien `Horizon`{.action} dans le menu de gauche.
 
-### Changer le mot de passe d'un utilisateur Openstack
+### Changer le mot de passe d'un utilisateur OpenStack
 
-La création d’un mot de passe OpenStack est possible après vous être connecté à [OpenStack Horizon](https://horizon.cloud.ovh.net){.external} :
+La création d’un mot de passe OpenStack est possible après vous être connecté à l'interface [OpenStack Horizon](https://horizon.cloud.ovh.net) :
 
 ![Connexion à Horizon](images/1_H_login_window.png){.thumbnail}
 
 L’identifiant de l’utilisateur Horizon se trouve dans le coin supérieur droit de l'interface Horizon. Cliquez sur votre identifiant pour faire apparaître un menu avec les options disponibles.
-Sélectionnez `Paramètres`{.action}, puis sur la gauche, `Changer le mot de passe`{.action} :
+Sélectionnez `Paramètres`{.action} puis, sur la gauche, `Changer le mot de passe`{.action} :
 
 ![Changement de mot de passe](images/2_H_pass_change_option.png){.thumbnail}
 
@@ -65,8 +64,8 @@ Entrez votre mot de passe actuel dans le premier champ et votre nouveau mot de p
 
 > [!primary]
 >
-> Lors du changement de mot de passe, nous vous invitons vivement à prendre en compte ces quelques conseils :
- >
+> Lors du changement de mot de passe, vérifiez que les critères suivants sont pris en compte :
+>
 > - le mot de passe doit comporter au minimum 8 caractères ;
 > - le mot de passe doit comporter au maximum 30 caractères ;
 > - le mot de passe doit comporter au moins une lettre majuscule ;
@@ -79,7 +78,7 @@ Confirmez ensuite la création du nouveau mot de passe en cliquant sur `Changer`
 
 ![Paramétrage du mot de passe](images/3_H_set_new_passord.png){.thumbnail}
 
-Veuillez noter que le changement de mot de passe du compte d’utilisateur entraîne l’annulation immédiate des identifiants utilisés précédemment.
+Veuillez noter que le changement de mot de passe du compte d’utilisateur entraîne la révocation immédiate du précédent mot de passe.
 
 ### Suppression de l'utilisateur OpenStack
 
