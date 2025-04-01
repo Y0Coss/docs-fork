@@ -118,7 +118,6 @@ Vous pouvez choisir de créer vous-même intégralement votre site web ou d'util
 >> - lier votre base de données au site web présent sur votre hébergement web.
 >>
 
-
 /// details | Étape 3 - Créer vos adresses e-mail (facultatif)
 
 Votre offre d'[hébergement web](/links/web/hosting) inclut une ou plusieurs adresses e-mail, que vous pouvez choisir d'activer ou non.
