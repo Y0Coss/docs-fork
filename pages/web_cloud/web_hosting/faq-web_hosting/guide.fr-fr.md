@@ -547,7 +547,7 @@ Si vous avez activé [l'option CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_
 
 Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
 
-En effet, cette erreur peut aussi apparaître en cas de requête HTTP qui abouti en *timeout* sur votre site web.
+En effet, cette erreur peut aussi apparaître en cas de requête HTTP qui aboutit en *timeout* sur votre site web.
 
 > [!success]
 >
