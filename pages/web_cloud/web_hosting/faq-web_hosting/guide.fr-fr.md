@@ -90,7 +90,7 @@ Vous pourrez y modifier les mots de passe de vos bases de données associées à
 
 ///
 
-/// details | Comment modifier le mot de passe de mon adresse e-mail liée à mon hébergement web ?
+/// details | Comment modifier le mot de passe d'une adresse e-mail liée à mon hébergement web ?
 
 Suivez ces étapes :
 
