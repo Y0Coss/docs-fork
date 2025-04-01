@@ -175,6 +175,16 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 
 ///
 
+/// details | Utiliser le provider Terraform OVHcloud
+
+Avant de commencer, assurez-vous d’avoir installé et configuré le provider Terraform pour OVHcloud. Si ce n'est pas encore fait, consultez notre guide :
+
+- [Comment utiliser Terraform sur le Public Cloud OVHcloud](/pages/public_cloud/compute/how_to_use_terraform).
+
+De plus, vérifiez que vous utilisez une version du provider supérieure ou égale à 2.0 pour garantir la compatibilité avec les dernières fonctionnalités.
+
+///
+
 #### Lister vos buckets
 
 > [!tabs]
@@ -285,15 +295,6 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >> ![Result](images/01-object-storage-bucket-listing.png)
 >>
 > Via provider Terraform OVHcloud
->> 
->> > [!primary]
->> >
->> > Avant de commencer, il est recommandé de consulter ce guide :
->> >
->> > - [Comment utiliser Terraform sur le Public Cloud OVHcloud](/pages/public_cloud/compute/how_to_use_terraform)
->> >
->> > Vous devez également utiliser une version du provider Terraform OVHcloud supérieure ou égale à la version "2.0".
->> >
 >>
 >> Vous pouvez créer un fichier nommé 'object_storage_simple.tf' et écrire ce qui suit :
 >>
