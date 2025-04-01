@@ -9,6 +9,7 @@ updated: 2023-07-27
 Il peut arriver que vous deviez partager une image [Instance backup](/pages/public_cloud/compute/save_an_instance) ou une image [Volume backup](/pages/public_cloud/compute/volume-backup) entre  plusieurs projets Public Cloud.
 
 Avec OpenStack, vous pouvez partager une image entre plusieurs projets, même s'ils n'appartiennent pas au même compte.
+
 Cette fonctionnalité offre de nombreuses possibilités mais elle comporte également des risques. Il est donc important d'en comprendre les principes.
 
 Par exemple, si vous souhaitez partager une image d'un projet A avec un projet B (dans le même compte ou dans un compte différent), les règles suivantes s'appliquent :
@@ -18,6 +19,7 @@ Par exemple, si vous souhaitez partager une image d'un projet A avec un projet B
 - Si le Projet A supprime l'accès à l'image (suppression de l'ACL, suppression de l'image, suppression du projet pour factures impayées, etc.), les instances s'exécutant à partir de cette image sur le Projet B peuvent ne plus fonctionner en raison de problèmes de migration ou de reconstruction.
 
 Il est donc important de garder cela à l'esprit avant de s'engager dans cette configuration.
+
 Pour plus d'informations, veuillez consulter la [documentation officielle OpenStack](https://docs.openstack.org/image-guide/share-images.html){.external}.
 
 **Ce guide vous montrera comment partager des images entre un ou plusieurs projets, tout en préservant la configuration et l'état de l'image.**
