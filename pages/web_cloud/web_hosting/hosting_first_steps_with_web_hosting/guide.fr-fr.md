@@ -102,7 +102,7 @@ Vous pouvez choisir de créer vous-même intégralement votre site web ou d'util
 >> >
 >> > Si vous préférez installer manuellement votre CMS sans passer par l'option « Modules en 1 clic », consultez notre documentation intitulée « [Installer manuellement un CMS sur mon hébergement web](/pages/web_cloud/web_hosting/cms_manual_installation) ».
 >>
-> **Cas n°2**
+> **Publier un site web développé en local**
 >>
 >> **Mettre en ligne un site web développé localement**
 >
