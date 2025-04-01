@@ -99,7 +99,7 @@ Vous pouvez choisir de créer vous-même intégralement votre site web ou d'util
 >>
 >>
 >> OVHcloud vous met à disposition l'option « Modules en 1 clic ».
->> Une fois connecté à votre [espace client OVHcloud](/links/manager) et via votre hébergement web, cette option vous permet d'installer rapidement les CMS *WordPress*, *Joomla!*, *PrestaShop* et *Drupal*.
+>> Une fois connecté à votre [espace client OVHcloud](/links/manager) et via votre hébergement web, cette option vous permet d'installer rapidement les CMS WordPress, Joomla!, PrestaShop et Drupal.
 >>
 >> Pour utiliser cette option, consultez notre guide « [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
 >>
