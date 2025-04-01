@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Getting started with Object Storage
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2025-03-17
+updated: 2025-04-02
 ---
 
 <style>
@@ -284,6 +284,35 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >> Congratulations, your bucket is created:
 >>
 >> ![Result](images/01-object-storage-bucket-listing.png)
+>>
+> Via OVHcloud Terraform provider
+>> 
+>> > [!primary]
+>> >
+>> > Before proceeding, it is recommended that you consult this guide:
+>> >
+>> > - [How to use Terraform](/pages/public_cloud/compute/how_to_use_terraform)
+>> >
+>> > You must also use a version of the OVHcloud Terraform provider higher than or equal to version “2.0”.
+>> >
+>>
+>> You can create a file named 'object_storage_simple.tf' and write the following:
+>>
+>> ```python
+>> # Create an Object Storage bucket
+>> resource "ovh_cloud_project_storage" "my-bucket" {
+>> service_name = "my_service_name" # Replace with your OVHcloud project ID
+>> region_name = "GRA" # Replace with the desired region in uppercase.
+>> name = "object-storage-simple"
+>> }
+>> ```
+>>
+>> You can create your resource by entering the following command:
+>>
+>> ```bash
+>> terraform apply
+>> ```
+>>
 
 #### Uploading your files as objects in your bucket
 
@@ -428,23 +457,6 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >
 
 > [!tabs]
-> Via the OVHcloud Control Panel
->> **Deleting a bucket:**
->>
->> In the list of object storage containers, click on the `...`{.action} button on the containers line, then click `Delete`{.action}.
->>
->> ![Delete bucket](images/delete-bucket.png){.thumbnail}
->>
->> Click on `Confirm`{.action}.
->>
->> **Deleting objects:**
->>
->> Go to the relevant bucket and click on the `...`{.action} button on the object line, then click `Delete`{.action}.
->>
->> ![Delete file](images/delete-file.png){.thumbnail}
->>
->> Click on `Confirm`{.action}.
->>
 > Via AWS CLI
 >> /// details | **Via AWS s3**
 >>
@@ -516,6 +528,37 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >> > If your bucket has Object Lock enabled, you will not be able to permanently delete your objects. See our [documentation](/pages/storage_and_backup/object_storage/s3_managing_object_lock) to learn more about Object Lock.
 >> > If you use Object Lock in GOVERNANCE mode and have the permission to bypass GOVERNANCE mode, you will have to add the `--bypass-governance-retention` option to your delete commands.
 >> >
+>>
+> Via the OVHcloud Control Panel
+>> **Deleting a bucket:**
+>>
+>> In the list of object storage containers, click on the `...`{.action} button on the containers line, then click `Delete`{.action}.
+>>
+>> ![Delete bucket](images/delete-bucket.png){.thumbnail}
+>>
+>> Click on `Confirm`{.action}.
+>>
+>> **Deleting objects:**
+>>
+>> Go to the relevant bucket and click on the `...`{.action} button on the object line, then click `Delete`{.action}.
+>>
+>> ![Delete file](images/delete-file.png){.thumbnail}
+>>
+>> Click on `Confirm`{.action}.
+>>
+> Via OVHcloud Terraform provider
+>>
+>> You can delete your bucket and all the objects it contains by entering the following command:
+>>
+>> ```bash
+>> terraform destroy
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > This process may fail if the bucket contains locked objects. In this case, you will have to delete these objects manually before you can run the command again.
+>> >
+>>
 
 **Manage tags**
 

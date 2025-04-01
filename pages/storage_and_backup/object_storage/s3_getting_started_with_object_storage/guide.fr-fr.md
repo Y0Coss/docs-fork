@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2025-03-17
+updated: 2025-04-02
 ---
 
 <style>
@@ -283,6 +283,35 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >> Félicitations, votre bucket est créé :
 >>
 >> ![Result](images/01-object-storage-bucket-listing.png)
+>>
+> Via provider Terraform OVHcloud
+>> 
+>> > [!primary]
+>> >
+>> > Avant de commencer, il est recommandé de consulter ce guide :
+>> >
+>> > - [Comment utiliser Terraform sur le Public Cloud OVHcloud](/pages/public_cloud/compute/how_to_use_terraform)
+>> >
+>> > Vous devez également utiliser une version du provider Terraform OVHcloud supérieure ou égale à la version "2.0".
+>> >
+>>
+>> Vous pouvez créer un fichier nommé 'object_storage_simple.tf' et écrire ce qui suit :
+>>
+>> ```python
+>> # Créer un bucket Object Storage
+>> resource "ovh_cloud_project_storage" "my-bucket" {
+>>   service_name = "my_service_name" # Remplacer par votre OVHcloud project ID
+>>   region_name = "GRA" # Remplacer par la région voulue en majuscule.
+>>   name = "object-storage-simple"
+>> }
+>> ```
+>>
+>> Vous pouvez créer votre resource en entrant la commande suivante :
+>>
+>> ```bash
+>> terraform apply
+>> ```
+>>
 
 #### Télécharger vos fichiers en tant qu'objets dans votre bucket
 
@@ -422,23 +451,6 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >
 
 > [!tabs]
-> Via l'espace client OVHcloud
->> **Suppression d'un bucket**
->>
->> Dans la liste des conteneurs Object Storage, cliquez sur le bouton `...`{.action} sur la ligne des conteneurs, puis sur `Supprimer`{.action}.
->>
->> ![Delete bucket](images/delete-bucket.png){.thumbnail}
->>
->> Cliquez sur `Confirmer`{.action}.
->>
->> **Suppression d'objets**
->>
->> Allez dans le bucket concerné et cliquez sur le bouton `...`{.action} sur la ligne de l'objet, puis sur `Supprimer`{.action}.
->>
->> ![Delete file](images/delete-file.png){.thumbnail}
->>
->> Cliquez sur `Confirmer`{.action}.
->>
 > Via AWS CLI
 >>
 >> /// details | **Avec AWS s3**
@@ -511,6 +523,37 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >> > Si le verrouillage d'objet est activé dans votre bucket, vous ne pourrez pas supprimer définitivement vos objets. Consultez notre [documentation](/pages/storage_and_backup/object_storage/s3_managing_object_lock) pour en savoir plus sur le verrouillage d'objet.
 >> > Si vous utilisez le verrouillage d'objet en mode GOUVERNANCE et que vous avez la permission de contourner le mode GOUVERNANCE, vous devrez ajouter l'option `--bypass-governance-retention` à vos commandes de suppression.
 >> >
+>>
+> Via l'espace client OVHcloud
+>> **Suppression d'un bucket**
+>>
+>> Dans la liste des conteneurs Object Storage, cliquez sur le bouton `...`{.action} sur la ligne des conteneurs, puis sur `Supprimer`{.action}.
+>>
+>> ![Delete bucket](images/delete-bucket.png){.thumbnail}
+>>
+>> Cliquez sur `Confirmer`{.action}.
+>>
+>> **Suppression d'objets**
+>>
+>> Allez dans le bucket concerné et cliquez sur le bouton `...`{.action} sur la ligne de l'objet, puis sur `Supprimer`{.action}.
+>>
+>> ![Delete file](images/delete-file.png){.thumbnail}
+>>
+>> Cliquez sur `Confirmer`{.action}.
+>>
+> Via provider Terraform OVHcloud
+>>
+>> Vous pouvez supprimer votre bucket ainsi que tout les objets qu'il contient en entrant la commande suivante :
+>>
+>> ```bash
+>> terraform destroy
+>> ```
+>>
+>> > [!primary]
+>> >
+>> > Ce processus peut échouer si le seau contient des objets verrouillés. Dans ce cas, vous devrez supprimer ces objets manuellement avant de pouvoir relancer la commande.
+>> >
+>>
 
 **Gérer les tags**
 
