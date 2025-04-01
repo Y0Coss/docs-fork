@@ -168,7 +168,6 @@ Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre off
 > - **Pour la liaison entre votre nom de domaine et votre offre e-mail OVHcloud** : consultez uniquement le guide « [Configurer un enregistrement MX pour la gestion des emails](/pages/web_cloud/domains/dns_zone_mx) » pour récupérer les noms des serveurs e-mail OVHcloud à renseigner dans la zone DNS active de votre nom de domaine. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers les serveurs e-mail OVHcloud.
 >
 
-
 /// details | Étape 5 - Autres options disponibles avec les hébergements web
 
 En fonction de votre [offre d'hébergement web](/links/web/hosting), des options / offres / fonctionnalités supplémentaires sont disponibles gratuitement.
