@@ -27,9 +27,9 @@ Weitere Informationen finden Sie in der offiziellen [OpenStack Dokumentation](ht
 
 ## Voraussetzungen
 
-- Sie sind mit der Vorgehensweise zur [Vorbereitung der Umgebung für die Verwendung der OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) vertraut (empfohlen).
+- Sie sind mit der Vorgehensweise zur [Vorbereitung der Umgebung für die Verwendung der OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) vertraut (empfohlen).
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem Account erstellt.
-- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user).
+- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
 
 > [!primary]
 >
