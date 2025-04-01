@@ -79,7 +79,7 @@ En fonction de vos réponses, vérifiez que votre offre d'[hébergement web](/li
 Si ce n'est pas le cas, consultez notre guide « [Hébergement web: comment faire évoluer son offre ?](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) ».
 
 
-/// details | Étape 2 - Installer votre site web
+### Étape 2 - Installer votre site web <a name="website-installation"></a>
 
 Une fois votre projet défini avec précision, vous pouvez démarrer l'installation de votre site web.
 
