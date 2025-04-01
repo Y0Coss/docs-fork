@@ -216,7 +216,6 @@ Les tâches « CRON » permettent d'exécuter automatiquement des scripts héber
 
 Si votre offre d'[hébergement web](/links/web/hosting) dispose de cette option, consultez notre guide « [Créer des tâches automatisées (CRON) sur votre hébergement Web](/pages/web_cloud/web_hosting/cron_tasks) » pour plus de détails.
 
-
 ## Aller plus loin
 
 [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
