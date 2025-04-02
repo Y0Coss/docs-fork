@@ -5,8 +5,8 @@ updated: 2025-04-01
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 .h-400 {
   max-height:400px !important;
@@ -53,7 +53,7 @@ Adicionar um domínio a um serviço Exchange é indispensável para poder utiliz
 1. Aparecerá uma tabela com os domínios atualmente associados ao serviço.
 1. Clique no botão `Adicionar um domínio`{.action}.
 
-![Add Domain](images/add_domain_exchange_step1.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step1.png){.thumbnail .w-600}
 
 > [!warning]
 >
@@ -68,7 +68,7 @@ Na janela de adição de domínio:
 
 Depois de escolher, clique no botão `Seguinte`{.action}.
 
-![Add Domain](images/add_domain_exchange_step2.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step2.png){.thumbnail .w-600}
 
 A nova janela apresenta informações relativas à configuração dos modos.
 
@@ -81,13 +81,13 @@ A nova janela apresenta informações relativas à configuração dos modos.
         - *Configurar o registo DKIM automaticamente*: permite a introdução automática dos registos necessários para autenticar os seus envios de e-mails.
         - *Configurar o registo SRV automaticamente*: permite ao software de correio eletrónico configurar automaticamente as contas Exchange no seu domínio.
 
-![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-600}
 
 - **Se indicou um domínio não gerido pela sua conta OVHcloud**, isso significa que o domínio, em especial a sua zona DNS, não é gerido a partir da Área de Cliente OVHcloud. Também pode ser registado em outro agente de registo. Será então necessário proceder à configuração diretamente na sua interface de gestão, qualquer que seja a escolha que se faça a seguir.
     - **Configuração recomendada**: apenas para utilização com as ofertas de e-mail OVHcloud.<br><br>
     - **Configuração personalizada**: se pretender utilizar um serviço de e-mail privado ou externo à OVHcloud como complemento desta plataforma de e-mail, introduza o nome do host do servidor de e-mail no quadro `URL do servidor de e-mail de destino`.
 
-![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-600}
 
 No final do processo, verifique as informações apresentadas e clique no botão `Confirmar`{.action} para validar a adição do domínio.
 
@@ -103,7 +103,7 @@ No caso de a pastilha ser de cor vermelha:
     - Clique na etiqueta de cor vermelha `MX`, `SRV`, `SPF` e `DKIM` para ver as alterações que deve realizar. Se este domínio não utilizar a configuração da OVHcloud (ou seja, se não utilizar os seus servidores DNS), deverá realizar as modificações a partir da interface de gestão do seu domínio.
     - No âmbito de uma etiqueta `CNAME` vermelha, queira consultar o nosso guia explicando como [criar um registo CNAME ao adicionar um domínio associado](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
-![emailpro](images/add_domain_exchange_step4.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step4.png){.thumbnail .w-600}
 
 > [!primary]
 >
@@ -124,7 +124,7 @@ Para verificar se a configuração de um domínio está correta, aceda à tabela
 >
 > - O modo **não-autoritário** na sua plataforma de e-mail (*Server A*) permite a repartição dos endereços de e-mail do seu domínio entre a sua plataforma de e-mail principal (*Server A*) e outro serviço de e-mail (*Server B*).<br>Por exemplo, se enviar um e-mail para o endereço « *mary.johnson@mydomain.ovh* », o « *Server A* » transmitirá o e-mail ao « *Server B* » para que este último o possa entregar.<br>
 >
->![Authoritative](images/add_domain_exchange_authoritative.png){.thumbnail .w-400}
+>![Authoritative](images/add_domain_exchange_authoritative.png){.thumbnail .w-600}
 
 1. Clique no separador `Domínios associados`{.action}.
 1. Clique no botão `...`{.action} na linha do domínio em questão.
@@ -165,11 +165,11 @@ Se houver contas de e-mail associadas ao nome de domínio que pretende desassoci
 2\. À direita das contas a modificar, clique no botão `...`{.action}.<br>
 3\. Clique em `Alterar`{.action}.
 
-![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-600}
 
 4\. A partir da janela de edição, pode modificar o nome de domínio associado à conta através do menu pendente.
 
-![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-600}
 
 **Eliminar as contas da sua plataforma**:
 
@@ -177,13 +177,13 @@ Se houver contas de e-mail associadas ao nome de domínio que pretende desassoci
 1. À direita da conta a eliminar, clique no botão `...`{.action}.
 1. Clique em `Reiniciar esta conta`{.action} ou em `Reiniciar`{.action}.
 
-![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-600}
 
 Depois de efetuar a reatribuição das contas a outro domínio, ou após a reinicialização das contas, é possível proceder à eliminação do nome de domínio.
 
 No separador `Domínios associados`{.action} da sua plataforma, clique no botão `...`{.action} à direita do nome de domínio em causa e, a seguir, em `Eliminar este domínio`{.action}.
 
-![emailpro](images/add_domain_exchange_step10.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step10.png){.thumbnail .w-600}
 
 ## Quer saber mais?
 
