@@ -53,7 +53,17 @@ Then wait for the installation process to complete.
 
 ### Step 2: Finalize configuration and add a license
 
-Once installation is complete, follow the on-screen instructions to complete the configuration.
+Once the installation is complete, the command-line interface (CLI) will display the following information:
+
+- Two URLs are generated:
+
+  - One with the server’s IP address (HTTPS with a self-signed SSL certificate, which may trigger a security warning in most browsers).
+  - Another with a Plesk domain (HTTPS with a signed SSL certificate, which will not trigger any warnings).
+  - Both are secure, but it is recommended to use the second one.
+
+- A message states: "You can also log in as 'root' using your 'root' password.". However, by default, no root password is generated. If needed, customers can follow [this guide](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) to enable the root user and set a password.
+
+Once on the Plesk page, follow the on-screen instructions to complete the setup.
 
 ![plesk configuration](images/plesk-configuration.png){.thumbnail}
 
