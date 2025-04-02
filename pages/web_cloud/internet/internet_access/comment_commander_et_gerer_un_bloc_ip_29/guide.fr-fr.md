@@ -54,7 +54,7 @@ Collectez à présent les adresses IP qui serviront lors des étapes suivantes. 
 |Adresse de réseau (_network_)|Il s'agit de la première adresse de votre bloc IP /29. Elle apparaît dans votre espace client à côté de ce bloc et n'est pas associable à l'un de vos équipements.|1.1.1.0|
 |Adresses associables|Ce sont les cinq adresses IP que vous pouvez associer à vos équipements. Elles suivent l'adresse de réseau.|1.1.1.1<br>1.1.1.2<br>1.1.1.3<br>1.1.1.4<br>1.1.1.5|
 |Adresse de passerelle (_gateway_)|Il s'agit de l'avant-dernière adresse de votre bloc IP /29. Elle n'est pas associable à l'un de vos équipements.|1.1.1.6|
-|Adresse de diffusion (_broadcast_)|Elle représente la dernière adresse votre bloc IP /29. Celle-ci n'est pas associable à l'un de vos équipements.|1.1.1.7|
+|Adresse de diffusion (_broadcast_)|Elle représente la dernière adresse de votre bloc IP /29. Celle-ci n'est pas associable à l'un de vos équipements.|1.1.1.7|
 
 Vous devez à présent avoir récupéré l'adresse IP initiale (mentionnée à côté du bloc /32) et vos huit adresses du bloc /29.
 
@@ -62,7 +62,7 @@ Vous devez à présent avoir récupéré l'adresse IP initiale (mentionnée à c
 
 > [!primary]
 >
-> Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVHcloud (utilisateurs expert) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson){.external} ».
+> Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVHcloud (utilisateurs experts) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson){.external} ».
 >
 
 Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box OVHcloud, il est impératif de désactiver la prise en main à distance de celle-ci. Pour cela, toujours depuis votre [espace client OVHcloud](/links/manager) sur l’accès à Internet concerné, positionnez-vous sur l'onglet `Mon modem`{.action}.
@@ -91,7 +91,7 @@ La configuration d'un bloc IP sur une box Technicolor ou Thomson est possible de
 
 ##### 3.1.1 Via les API OVHcloud
 
-Cette méthode s'adresse aux utilisateurs expert uniquement. Nous ne serons pas en mesure de vous fournir une assistance.
+Cette méthode s'adresse aux utilisateurs experts uniquement. Nous ne serons pas en mesure de vous fournir une assistance.
 
 Rendez-vous sur le lien <https://api.ovh.com/console/> puis connectez-vous avec votre identifiant client OVHcloud. Dès lors, utilisez les deux API ci-dessous afin de configurer le bloc IP /29.
 
@@ -204,7 +204,7 @@ Cliquez à nouveau sur l'icône menu en haut à droite, puis sur `Security`{.act
 
 ![blocip](images/blocip-step9.png){.thumbnail}
 
-À présent, il est nécessaire de créer une règle afin d'autoriser les équipements connectés en local à accéder à Internet. Pour cela, retounez dans le menu `Network Settings`{.action}, puis sur `NAT`{.action}. Dans la nouvelle fenêtre, positionnez-vous sur l'onglet `Address Mapping`{.action} et cliquez sur le bouton `Add New Rule`{.action}.
+À présent, il est nécessaire de créer une règle afin d'autoriser les équipements connectés en local à accéder à Internet. Pour cela, retournez dans le menu `Network Settings`{.action}, puis sur `NAT`{.action}. Dans la nouvelle fenêtre, positionnez-vous sur l'onglet `Address Mapping`{.action} et cliquez sur le bouton `Add New Rule`{.action}.
 
 ![blocip](images/blocip-step11.png){.thumbnail}
 
@@ -223,7 +223,7 @@ Cliquez ensuite sur le bouton `OK`{.action}.
 
 ![blocip](images/blocip-step12.png){.thumbnail}
 
-Toujours dans le menu `Network Settings`{.action}, selectionnez le menu `Broadband`{.action}. Cliquez sur l'icône représentant une feuille et un crayon, à droite du nom de l'interface utilisée par votre modem. L'interface dépend de votre type de connexion :
+Toujours dans le menu `Network Settings`{.action}, sélectionnez le menu `Broadband`{.action}. Cliquez sur l'icône représentant une feuille et un crayon, à droite du nom de l'interface utilisée par votre modem. L'interface dépend de votre type de connexion :
 
 - **ADSL**: Pour une connexion de type ADSL
 - **VDSL**: Pour une connexion de type VDSL

@@ -24,7 +24,7 @@ La pénurie d'IPv4 avançant de plus en plus, l'utilisation d'une IPv6 en parall
 
 > [!success]
 >
-> Par défaut, nous activons une IPv6 sur chacun de nos accès internet livrés. Aucune manipulation n'est necéssaire si celle-ci est déjà activée.
+> Par défaut, nous activons une IPv6 sur chacun de nos accès internet livrés. Aucune manipulation n'est nécessaire si celle-ci est déjà activée.
 >
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
 1. Cliquez sur `Accès Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
@@ -77,7 +77,7 @@ Dans cette adresse on retrouve bien le préfixe IPv6 attribué par votre connexi
 
 > [!primary]
 >
-> Par défaut sur les configurations réseaux IPv6, la partie « adresse machine » est temporaire. Celle-ci change généralement toutes les 24h si votre configuration réseau est dite EUI-64. Dans le cas contraire, nous vous invitons à vérifier votre configuration machine IPv6 afin de vous assurer qu'elle dispose bien de toute les sécurités nécessaires.
+> Par défaut sur les configurations réseaux IPv6, la partie « adresse machine » est temporaire. Celle-ci change généralement toutes les 24h si votre configuration réseau est dite EUI-64. Dans le cas contraire, nous vous invitons à vérifier votre configuration machine IPv6 afin de vous assurer qu'elle dispose bien de toutes les sécurités nécessaires.
 >
 
 Vous êtes désormais connecté en IPv6 et pouvez naviguer sur des sites ou accéder à des ressources compatibles avec ce type d'adresse IP.

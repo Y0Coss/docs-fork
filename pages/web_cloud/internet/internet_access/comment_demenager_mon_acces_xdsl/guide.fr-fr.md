@@ -15,7 +15,7 @@ Déménager un accès xDSL/Fibre vous permet de recréer votre accès internet �
 
 - Disposer d'un abonnement xDSL(ADSL/VDSL) ou Fibre actif.
 - Disposer d'une offre xDSL ou Fibre récente (offres Pro, Connect, Express, Entreprise, Serenity).
-- La nouvelle adresse doit-être différente de l'ancienne.
+- La nouvelle adresse doit être différente de l'ancienne.
 - Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
 
 ![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
@@ -55,7 +55,7 @@ Suite à cette validation, un cadre vous indiquera l'adresse associée à ce num
 
 > [!primary]
 >
-> Dans de rare cas, une ligne peut apparaître active et inactive en même temps. Veillez à sélectionner la ligne correspondant bien à votre future adresse.
+> Dans de rares cas, une ligne peut apparaître active et inactive en même temps. Veillez à sélectionner la ligne correspondant bien à votre future adresse.
 >
 
 ![validation adresse demenagement](images/move03-edit.png){.thumbnail}
@@ -70,7 +70,7 @@ Cochez la case « Testez avec la nouvelle adresse » puis renseignez les champs 
 Dans le cas où une ou plusieurs lignes inactives existent à votre future adresse, un tableau s'affichera avec les numéros de lignes disponible à cette adresse.
 
 <br>À l'aide des initiales des personnes rattachées à ces lignes, sélectionnez la ligne qui correspond à votre futur logement en cliquant sur le bouton `C'est ma ligne`{.action}.
-<br>Si aucun des choix proposées ne correspond, cliquez sur le bouton `Je n'ai pas trouvé ma ligne`{.action}
+<br>Si aucun des choix proposés ne correspond, cliquez sur le bouton `Je n'ai pas trouvé ma ligne`{.action}
 
 ![choix de ligne](images/move05-edit.png){.thumbnail}
 
@@ -108,9 +108,9 @@ Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour passer à 
 
 ![Conservation numéros](images/move09-edit.png){.thumbnail}
 
-#### Prise de rendez-vous pour le création de l'accès à la nouvelle adresse
+#### Prise de rendez-vous pour la création de l'accès à la nouvelle adresse
 
-Cette étape n'apparait que si la création d'une nouvelle ligne est demandée à la nouvelle adresse ou lors de l'installation d'un abonnement Fibre. 
+Cette étape n'apparaît que si la création d'une nouvelle ligne est demandée à la nouvelle adresse ou lors de l'installation d'un abonnement Fibre. 
 <br>Cette création nécessite le déplacement d'un technicien sur place. 
 
 > [!warning]
@@ -133,9 +133,9 @@ Cochez alors les cases correspondantes et cliquez sur `Valider le déménagement
 
 ### Suite à la demande de déménagement
 
-Le déménagement de votre ligne cuivre à la nouvelle adresse se réalise en 7 à 10 jours en moyenne, sauf en cas de création de ligne ou cela dépend de la date de rendez-vous choisie.
+Le déménagement de votre ligne cuivre à la nouvelle adresse se réalise en 7 à 10 jours en moyenne, sauf en cas de création de ligne où cela dépend de la date de rendez-vous choisie.
 
-En cas de passage d'une offre cuivre (ADSL/VDSL) vers une offre Fibre (FTTH), un délai moyen de 10 à 30 jours est nécessaire à la réalisation de votre nouvel accès internet Fibre. Dans ce cas précis nous créons, en parallèle de votre *packadsl*, un nouveau *packadsl* temporaire afin de pouvoir réaliser la commande Fibre tout en continuant de garder votre accès cuivre fonctionnel et inchangé. Ce *packadsl* temporaire sera supprimé dès lors où l'accès Fibre sera livré. L'accès Fibre viendra remplacer votre accès cuivre dans votre *packadsl* originel.
+En cas de passage d'une offre cuivre (ADSL/VDSL) vers une offre Fibre (FTTH), un délai moyen de 10 à 30 jours est nécessaire à la réalisation de votre nouvel accès internet Fibre. Dans ce cas précis, nous créons en parallèle de votre *packadsl*, un nouveau *packadsl* temporaire afin de pouvoir réaliser la commande Fibre tout en continuant de garder votre accès cuivre fonctionnel et inchangé. Ce *packadsl* temporaire sera supprimé dès lors que l'accès Fibre sera livré. L'accès Fibre viendra remplacer votre accès cuivre dans votre *packadsl* originel.
 
 > [!warning]
 >
