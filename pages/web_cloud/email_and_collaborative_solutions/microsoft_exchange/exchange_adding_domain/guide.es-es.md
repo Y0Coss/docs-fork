@@ -81,7 +81,7 @@ La ventana muestra ahora la información relativa a la configuración de los mod
         - *Configurar el registro DKIM automáticamente*: Permite introducir automáticamente los registros necesarios para autentificar los envíos de correo.
         - *Configurar el registro SRV automáticamente*: Permite que el cliente de correo configure automáticamente las cuentas Exchange en el dominio.
 
-![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-600}
+![Add Domain](images/add_domain_exchange_step2-1b.png){.thumbnail .w-600}
 
 - **Si ha introducido un dominio no gestionado por su cuenta de OVHcloud**, significa que el dominio, y en particular su zona DNS, no está gestionado desde el área de cliente de OVHcloud. También puede estar registrado en otro agente registrador. Para ello, deberá realizar la configuración directamente en su interfaz de gestión, independientemente de la siguiente opción elegida.
     - **Configuración recomendada**: adecuada si solo utiliza las soluciones de correo electrónico de OVHcloud.<br><br>
@@ -161,13 +161,13 @@ Si tiene cuentas de correo asociadas al dominio que desea desvincular, tiene dos
 
 **Asociar las cuentas a otro dominio**:
 
-1\. Acceda a la pestaña `Cuentas de correo`{.action}.
-2\. A la derecha de las cuentas que quiera modificar, haga clic en el botón `...`{.action}.
-3\. Haga clic en `Editar`{.action}.
+1. Acceda a la pestaña `Cuentas de correo`{.action}.
+2. A la derecha de las cuentas que quiera modificar, haga clic en el botón `...`{.action}.
+3. Haga clic en `Editar`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-600}
 
-4\. Desde la ventana de modificación, puede modificar el nombre de dominio asociado a la cuenta a través del menú desplegable.
+4. Desde la ventana de modificación, puede modificar el nombre de dominio asociado a la cuenta a través del menú desplegable.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-600}
 

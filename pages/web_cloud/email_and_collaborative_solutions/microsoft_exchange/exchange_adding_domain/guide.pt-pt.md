@@ -81,7 +81,7 @@ A nova janela apresenta informações relativas à configuração dos modos.
         - *Configurar o registo DKIM automaticamente*: permite a introdução automática dos registos necessários para autenticar os seus envios de e-mails.
         - *Configurar o registo SRV automaticamente*: permite ao software de correio eletrónico configurar automaticamente as contas Exchange no seu domínio.
 
-![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-600}
+![Add Domain](images/add_domain_exchange_step2-1b.png){.thumbnail .w-600}
 
 - **Se indicou um domínio não gerido pela sua conta OVHcloud**, isso significa que o domínio, em especial a sua zona DNS, não é gerido a partir da Área de Cliente OVHcloud. Também pode ser registado em outro agente de registo. Será então necessário proceder à configuração diretamente na sua interface de gestão, qualquer que seja a escolha que se faça a seguir.
     - **Configuração recomendada**: apenas para utilização com as ofertas de e-mail OVHcloud.<br><br>
@@ -161,13 +161,13 @@ Se houver contas de e-mail associadas ao nome de domínio que pretende desassoci
 
 **Associar as contas a outro domínio**:
 
-1\. Aceda ao separador `Contas de e-mail`{.action}.<br>
-2\. À direita das contas a modificar, clique no botão `...`{.action}.<br>
-3\. Clique em `Alterar`{.action}.
+1. Aceda ao separador `Contas de e-mail`{.action}.<br>
+2. À direita das contas a modificar, clique no botão `...`{.action}.<br>
+3. Clique em `Alterar`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-600}
 
-4\. A partir da janela de edição, pode modificar o nome de domínio associado à conta através do menu pendente.
+4. A partir da janela de edição, pode modificar o nome de domínio associado à conta através do menu pendente.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-600}
 

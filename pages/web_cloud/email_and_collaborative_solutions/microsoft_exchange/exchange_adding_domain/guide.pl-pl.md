@@ -81,7 +81,7 @@ Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
         - *Automatyczna konfiguracja DKIM*: umożliwia automatyczne wprowadzanie rekordów niezbędnych do uwierzytelniania wysyłanych wiadomości e-mail.
         - *Konfiguracja SRV automatycznie*: umożliwia programowi pocztowemu automatyczną konfigurację kont Exchange dla twojej domeny.
 
-![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-600}
+![Add Domain](images/add_domain_exchange_step2-1b.png){.thumbnail .w-600}
 
 - **Jeśli podałeś nazwę domeny nieobsługiwanej przez twoje konto OVHcloud**: oznacza to, że domena, a w szczególności jej strefa DNS, nie jest zarządzana z poziomu twojego panelu klienta OVHcloud. Domena może być zarejestrowana u innego operatora. Konieczne będzie przeprowadzenie konfiguracji bezpośrednio w panelu klienta, bez względu na dokonany wybór.
     - **Zalecana konfiguracja**: odpowiednia, jeśli korzystasz tylko z kont e-mail OVHcloud.<br><br>
@@ -161,13 +161,13 @@ Jeśli do kont e-mail przypisana jest nazwa domeny, którą chcesz odłączyć, 
 
 **Przypisz konta do innej domeny**:
 
-1\. Przejdź do zakładki `Konta e-mail`{.action}.<br>
-2\. Po prawej stronie listy kont, które chcesz zmienić, kliknij przycisk `...`{.action}.<br>
-3\. Kliknij na `Zmień`{.action}.
+1. Przejdź do zakładki `Konta e-mail`{.action}.<br>
+2. Po prawej stronie listy kont, które chcesz zmienić, kliknij przycisk `...`{.action}.<br>
+3. Kliknij na `Zmień`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-600}
 
-4\. W oknie edycji możesz zmienić nazwę domeny przypisanej do konta w rozwijanym menu.
+4. W oknie edycji możesz zmienić nazwę domeny przypisanej do konta w rozwijanym menu.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-600}
 

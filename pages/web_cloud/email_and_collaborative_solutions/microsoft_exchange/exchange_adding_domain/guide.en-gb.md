@@ -81,7 +81,7 @@ The window now displays information about configuring modes.
         - *Configure DKIM record automatically*: allows automatic entry of the records required to authenticate your email sending.
         - *Configure SRV record automatically*: enables email software to automatically configure Exchange accounts on your domain name.
 
-![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-600}
+![Add Domain](images/add_domain_exchange_step2-1b.png){.thumbnail .w-600}
 
 - **If you have entered a domain name that is not managed by your OVHcloud account**: This means that the domain name, and more specifically its DNS zone, is not managed from the OVHcloud Control Panel. It can also be registered at another registrar. It will then be necessary to proceed with the configuration directly in its management interface, whatever the following choice made.
     - **Recommended configuration**: This is suitable if you only use OVHcloud email solutions.
@@ -161,13 +161,13 @@ If you have email accounts attached to the domain name you want to detach, you h
 
 **Attach accounts to another domain name**:
 
-1\. Go to the `Email accounts`{.action} tab.  
-2\. To the right of the accounts you want to modify, click the `...`{.action} button.  
-3\. Click `Modify`{.action}.  
+1. Go to the `Email accounts`{.action} tab.  
+2. To the right of the accounts you want to modify, click the `...`{.action} button.  
+3. Click `Modify`{.action}.  
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-600}
 
-4\. From the Edit window, you can modify the domain name attached to the account via the dropdown menu.
+4. From the Edit window, you can modify the domain name attached to the account via the dropdown menu.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-600}
 

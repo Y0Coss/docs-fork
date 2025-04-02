@@ -81,7 +81,7 @@ Das Fenster zeigt nun Informationen zur Konfiguration an.
         - *DKIM-Eintrag automatisch konfigurieren*: Ermöglicht die automatische Eingabe der für die Authentifizierung des Mail-Versands erforderlichen Einträge.
         - *SRV-Eintrag automatisch konfigurieren*: Ermöglicht es E-Mail-Clients, Exchange-Konten automatisch für Ihre Domain zu konfigurieren.
 
-![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-600}
+![Add Domain](images/add_domain_exchange_step2-1b.png){.thumbnail .w-600}
 
 - **Wenn Sie eine Domain angegeben haben, die nicht in Ihrem OVHcloud Account verwaltet wird**: Dies bedeutet, dass die Domain, insbesondere ihre DNS-Zone von einem anderen Kunden-Account oder extern verwaltet wird. In diesem Fall muss die Konfiguration unabhängig von der nächsten Auswahl im betreffenden Verwaltungsinterface vorgenommen werden.
     - **Empfohlene Konfiguration**: Geeignet, wenn Sie nur E-Mail-Dienste von OVHcloud verwenden.
@@ -161,13 +161,13 @@ Wenn mit dem Domainnamen, den Sie abtrennen möchten, E-Mail-Accounts verbunden 
 
 **Die Accounts mit einem anderen Domainnamen verbinden**:
 
-1\. Gehen Sie in den Tab `E-Mail-Accounts`{.action}.  
-2\. Klicken Sie rechts neben den zu ändernden Konten auf die Schaltfläche `...`{.action}.  
-3\. Klicken Sie auf `Bearbeiten`{.action}.
+1. Gehen Sie in den Tab `E-Mail-Accounts`{.action}.  
+2. Klicken Sie rechts neben den zu ändernden Konten auf die Schaltfläche `...`{.action}.  
+3. Klicken Sie auf `Bearbeiten`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-600}
 
-4\. Im Bearbeitungsfenster können Sie den mit dem Account verbundenen Domainnamen über das Dropdown-Menü ändern.
+4. Im Bearbeitungsfenster können Sie den mit dem Account verbundenen Domainnamen über das Dropdown-Menü ändern.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-600}
 
