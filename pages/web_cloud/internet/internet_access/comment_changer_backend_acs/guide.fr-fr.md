@@ -17,7 +17,7 @@ L'Auto Configuration Server (ACS) est une couche de traduction entre votre modem
 
 ## Prérequis
 
-- Disposer d’un [accès internet xDSL ou fibre OVHcloud](/links/telecom/offre-internet).
+- Disposer d’un [accès Internet xDSL ou fibre OVHcloud](/links/telecom/offre-internet).
 - Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Accès Internet`{.action}.
 - Cette fonctionnalité est disponible même si la configuration à distance est désactivée.
 
@@ -61,7 +61,7 @@ Cette méthode s'adresse aux utilisateurs experts uniquement. Nous ne serons pas
 
 > [!primary]
 >
-> Pour en savoir plus sur l'utilisation des API, consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps).
+> Pour en savoir plus sur l'utilisation des API, consultez le guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 >
 
 Rendez-vous sur le lien <https://api.ovh.com/console/> puis connectez-vous avec votre identifiant client OVHcloud. 
