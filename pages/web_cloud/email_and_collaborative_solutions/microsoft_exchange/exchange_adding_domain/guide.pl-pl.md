@@ -5,8 +5,8 @@ updated: 2025-04-01
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 .h-400 {
   max-height:400px !important;
@@ -53,7 +53,7 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 1. W tabeli, która się wyświetla znajdziesz nazwy domen aktualnie przypisanych do twojej usługi.
 1. Kliknij przycisk `Dodaj domenę`{.action}.
 
-![Add Domain](images/add_domain_exchange_step1.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step1.png){.thumbnail .w-600}
 
 > [!warning]
 >
@@ -68,7 +68,7 @@ W oknie dodawania domeny:
 
 Po dokonaniu wyboru, kliknij przycisk `Dalej`{.action}.
 
-![Add Domain](images/add_domain_exchange_step2.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step2.png){.thumbnail .w-600}
 
 Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
 
@@ -81,13 +81,13 @@ Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
         - *Automatyczna konfiguracja DKIM*: umożliwia automatyczne wprowadzanie rekordów niezbędnych do uwierzytelniania wysyłanych wiadomości e-mail.
         - *Konfiguracja SRV automatycznie*: umożliwia programowi pocztowemu automatyczną konfigurację kont Exchange dla twojej domeny.
 
-![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-600}
 
 - **Jeśli podałeś nazwę domeny nieobsługiwanej przez twoje konto OVHcloud**: oznacza to, że domena, a w szczególności jej strefa DNS, nie jest zarządzana z poziomu twojego panelu klienta OVHcloud. Domena może być zarejestrowana u innego operatora. Konieczne będzie przeprowadzenie konfiguracji bezpośrednio w panelu klienta, bez względu na dokonany wybór.
     - **Zalecana konfiguracja**: odpowiednia, jeśli korzystasz tylko z kont e-mail OVHcloud.<br><br>
     - **Konfiguracja spersonalizowana**: jeśli chcesz korzystać z prywatnej lub zewnętrznej usługi e-mail OVHcloud jako uzupełnienie platformy e-mail, w polu `URL docelowego serwera e-mail` wpisz nazwę hosta.
 
-![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-600}
 
 Przed zakończeniem konfiguracji sprawdź wyświetlające się informacje, następnie kliknij przycisk `Potwierdź`{.action}, aby zatwierdzić dodanie domeny.
 
@@ -103,7 +103,7 @@ W przypadku gdy przycisk jest czerwony:
     - Kliknij czerwony przycisk `MX`, `SRV`, `SPF` i `DKIM`, aby wyświetlić listę modyfikacji do wprowadzenia. Jeśli ta nazwa domeny nie używa konfiguracji OVHcloud (serwerów DNS OVHcloud), musisz wprowadzić zmiany za pomocą interfejsu zarządzania twoją domeną.
     - W związku z czerwonym przyciskiem `CNAME` zapoznaj się z naszym przewodnikiem, jak [utworzyć pole CNAME po dodaniu przypisanej domeny](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
-![emailpro](images/add_domain_exchange_step4.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step4.png){.thumbnail .w-600}
 
 > [!primary]
 >
@@ -124,7 +124,7 @@ Możesz zmienić tryb domeny przypisanej do twojej platformy. Najpierw należy z
 >
 > - Tryb **nieautorytatywny** na twojej platformie e-mail (*Server A*) pozwala na rozdzielenie adresów e-mail twojej domeny między twoją główną platformę e-mail (*Server A*) i inną usługę e-mail (*Server B*).<br>Na przykład jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", "*Serwer A*" prześle e-mail do "*Server B*", aby ten mógł ją dostarczyć.<br>
 >
-> ![Autorytatywny](images/add_domain_exchange_authoritative.png){.thumbnail .w-400}
+> ![Autorytatywny](images/add_domain_exchange_authoritative.png){.thumbnail .w-600}
 
 1. Kliknij zakładkę `Przypisane domeny`{.action}.
 1. Kliknij przycisk `...`{.action} na wybrany wiersz nazwy domeny.
@@ -165,11 +165,11 @@ Jeśli do kont e-mail przypisana jest nazwa domeny, którą chcesz odłączyć, 
 2\. Po prawej stronie listy kont, które chcesz zmienić, kliknij przycisk `...`{.action}.<br>
 3\. Kliknij na `Zmień`{.action}.
 
-![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-600}
 
 4\. W oknie edycji możesz zmienić nazwę domeny przypisanej do konta w rozwijanym menu.
 
-![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-600}
 
 **Usuń konta z platformy**:
 
@@ -177,13 +177,13 @@ Jeśli do kont e-mail przypisana jest nazwa domeny, którą chcesz odłączyć, 
 1. Po prawej stronie konta, które chcesz usunąć, kliknij przycisk`...`{.action}.
 1. Kliknij na `Zresetuj to konto`{.action} lub `Resetuj`{.action}.
 
-![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-600}
 
 Po ponownym przypisaniu kont do innej domeny lub po ich zresetowaniu można przystąpić do usunięcia domeny.
 
 W zakładce `Przypisane domeny`{.action} twojej platformy kliknij przycisk `...`{.action} po prawej stronie odpowiedniej domeny, a następnie `Usuń tę domenę`{.action}.
 
-![emailpro](images/add_domain_exchange_step10.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step10.png){.thumbnail .w-600}
 
 ## Sprawdź również
 

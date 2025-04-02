@@ -5,8 +5,8 @@ updated: 2025-04-01
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 .h-400 {
   max-height:400px !important;
@@ -53,7 +53,7 @@ To use the accounts included with an Exchange service, you will need to add a do
 1. The table will show you the domain names currently associated with your service.
 1. Click the `Add a domain`{.action} button.
 
-![Add Domain](images/add_domain_exchange_step1.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step1.png){.thumbnail .w-600}
 
 > [!warning]
 >
@@ -68,7 +68,7 @@ In the window for adding a domain:
 
 Once you have made your choice, click the `Next`{.action} button.
 
-![Add Domain](images/add_domain_exchange_step2.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step2.png){.thumbnail .w-600}
 
 The window now displays information about configuring modes.
 
@@ -81,13 +81,13 @@ The window now displays information about configuring modes.
         - *Configure DKIM record automatically*: allows automatic entry of the records required to authenticate your email sending.
         - *Configure SRV record automatically*: enables email software to automatically configure Exchange accounts on your domain name.
 
-![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-600}
 
 - **If you have entered a domain name that is not managed by your OVHcloud account**: This means that the domain name, and more specifically its DNS zone, is not managed from the OVHcloud Control Panel. It can also be registered at another registrar. It will then be necessary to proceed with the configuration directly in its management interface, whatever the following choice made.
     - **Recommended configuration**: This is suitable if you only use OVHcloud email solutions.
     - **Custom configuration**: If you would like to use a private email service or one external to OVHcloud in addition to this email service, enter the host name of the email server in the `URL of the target email server` box.
 
-![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-400}
+![Add Domain](images/add_domain_exchange_step2-2.png){.thumbnail .w-600}
 
 At the end of the configuration process, please check the information displayed, then click the `Confirm`{.action} button to confirm the domain addition.
 
@@ -103,7 +103,7 @@ If the box is red:
     - Click on the red box `MX`, `SRV`, `SPF` and `DKIM` to see the changes you need to make. If this domain name does not use the OVHcloud configuration (its DNS servers), you will need to carry out the modifications from your domain name’s management interface.
     - In case of a red `CNAME` box, please refer to our guide explaining how to [create a CNAME record when adding an associated domain](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
-![emailpro](images/add_domain_exchange_step4.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step4.png){.thumbnail .w-600}
 
 > [!primary]
 >
@@ -124,7 +124,7 @@ You can change the mode of an associated domain on your service. First, it is ne
 >
 > - The **non-authoritative** mode on your email service (*Server A*) allows distribution of your domain name’s email addresses between your primary email service (*Server A*) and another email service (*Server B*).<br>For example, if you send an email to the address *mary.johnson@mydomain.ovh*, *Server A* will send the email to *Server B* so that it can deliver it.<br>
 >
-> ![Authoritative](images/add_domain_exchange_authoritative.png){.thumbnail .w-400}
+> ![Authoritative](images/add_domain_exchange_authoritative.png){.thumbnail .w-600}
 
 1. Click on the `Associated domains`{.action} tab.
 1. Click the `...`{.action}' button on the line for the domain name concerned.
@@ -165,11 +165,11 @@ If you have email accounts attached to the domain name you want to detach, you h
 2\. To the right of the accounts you want to modify, click the `...`{.action} button.  
 3\. Click `Modify`{.action}.  
 
-![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-600}
 
 4\. From the Edit window, you can modify the domain name attached to the account via the dropdown menu.
 
-![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-600}
 
 **Delete accounts from your service**:
 
@@ -177,13 +177,13 @@ If you have email accounts attached to the domain name you want to detach, you h
 1. To the right of the account you want to delete, click the `...`{.action}' button.
 1. Click `Reset this account`{.action} or `Reset`{.action}.
 
-![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step7.png){.thumbnail .w-600}
 
 Once the accounts have been reassigned to another domain name, or after their reset, the domain name can be deleted.
 
 In the `Associated domains`{.action} tab of your service, click the `...`{.action} button to the right of the domain name concerned, then `Delete this domain`{.action}.
 
-![emailpro](images/add_domain_exchange_step10.png){.thumbnail .w-400}
+![emailpro](images/add_domain_exchange_step10.png){.thumbnail .w-600}
 
 ## Go further
 
