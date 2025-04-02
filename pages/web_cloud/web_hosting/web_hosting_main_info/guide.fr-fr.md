@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - Versions disponibles des langages"
 excerpt: "Découvrez le détail des versions des langages (Apache, PHP, Python, Perl) pour les offres d'hébergement Web OVHcloud"
-updated: 2025-04-01
+updated: 2025-04-02
 flag: hidden
 ---
 
@@ -56,59 +56,64 @@ Les informations contenues dans ce guide concernent les versions de **PHP**, **P
 <thead>
 <tr>
 <th>PHP</th>
-<th>5.3</th>
-<th>5.4</th>
-<th>5.5</th>
-<th>5.6</th>
-<th>7.0</th>
-<th>7.1</th>
-<th>7.2</th>
-<th>7.3</th>
-<th>7.4</th>
-<th>8.0</th>
-<th>8.1</th>
-<th>8.2</th>
-<th>8.3</th>
 <th>8.4</th>
+<th>8.3</th>
+<th>8.2</th>
+<th>8.1</th>
+<th>8.0</th>
+<th>7.4</th>
+<th>7.3</th>
+<th>7.2</th>
+<th>7.1</th>
+<th>7.0</th>
+<th>5.6</th>
+<th>5.5</th>
+<th>5.4</th>
+<th>5.3</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Legacy</td>
-<td><a href="https://phpfpm53-legacy.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm54-legacy.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm55-legacy.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm56-legacy.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm70-legacy.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td>Stable64</td>
+<td><a href="https://phpfpm84.webhosting-infos.hosting.ovh.net/"><span style="background-color:#198754; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm83.webhosting-infos.hosting.ovh.net/"><span style="background-color:#198754; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm82.webhosting-infos.hosting.ovh.net/"><span style="background-color:#198754; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm81.webhosting-infos.hosting.ovh.net/"><span style="background-color:#ffc107; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm80.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm74.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm73-stable64.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 </tr>
 <tr>
 <td>Stable</td>
-<td><a href="https://phpfpm53.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm54.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm55.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm56.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm70.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm71.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm72.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td></td><td></td><td></td><td></td><td></td>
+<td></td>
 <td><a href="https://phpfpm73.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td></td><td></td><td></td><td></td><td></td><td></td>
+<td><a href="https://phpfpm72.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm71.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm70.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm56.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm55.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm54.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm53.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
 </tr>
 <tr>
-<td>Stable64</td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td><a href="https://phpfpm73-stable64.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm74.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm80.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm81.webhosting-infos.hosting.ovh.net/"><span style="background-color:#ffc107; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm82.webhosting-infos.hosting.ovh.net/"><span style="background-color:#198754; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm83.webhosting-infos.hosting.ovh.net/"><span style="background-color:#198754; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
-<td><a href="https://phpfpm84.webhosting-infos.hosting.ovh.net/"><span style="background-color:#198754; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td>Legacy</td>
+<td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td>
+<td><a href="https://phpfpm70-legacy.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm56-legacy.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm55-legacy.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm54-legacy.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
+<td><a href="https://phpfpm53-legacy.webhosting-infos.hosting.ovh.net/"><span style="background-color:#dc3545; color:#ffffff; padding:2px 6px; border-radius:6px;">✔</span></a></td>
 </tr>
 </tbody>
 </table>
 
-Pour plus de détails concernant les dates de fin de vie et support de PHP, consultez notre guide « [Annonces de fin de vie/support des versions de PHP](/pages/web_cloud/web_hosting/php_eol_eos) ».
+Pour plus de détails concernant les dates de fin de vie et support de PHP, ou encore les informations relatives aux environnements d'exécution, consultez nos guides :
+
+- « [Annonces de fin de vie/support des versions de PHP](/pages/web_cloud/web_hosting/php_eol_eos) ».
+- « [Hébergement web - Environnement, version PHP, « .ovhconfig »](/pages/web_cloud/web_hosting/configure_your_web_hosting) ».
 
 ## Aller plus loin
 
