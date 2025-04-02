@@ -133,7 +133,7 @@ Voici les principales étapes à suivre :
 >
 > Si votre site web existe déjà chez un autre fournisseur et si vous souhaitez le migrer chez OVHcloud, consultez notre guide détaillé « [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
 >
-> Pour vous aider à configurer votre hébergement web, vous pouvez vous aider de l'ensemble des [guides relatifs à nos solutions d'hébergement web](/products/web-cloud-hosting)
+> Pour vous aider à configurer votre hébergement web, vous pouvez vous aider de l'ensemble des [guides relatifs à nos solutions d'hébergement web](/products/web-cloud-hosting).
 
 ///
 
@@ -210,7 +210,7 @@ Pour commander la formule d'hébergement web la plus adaptée à vos besoins, co
 
 > [!primary]
 >
-> En fonction de votre formule d'hébergement web actuelle, certaines offres peuvent ne pas vous être proposées. Consultez notre guide « [Faire évoluer son offre d’hébergement web »](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) » pour plus d'informations sur le sujet.
+> En fonction de votre formule d'hébergement web actuelle, certaines offres peuvent ne pas vous être proposées. Consultez notre guide « [Faire évoluer son offre d’hébergement web](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer) » pour plus d'informations sur le sujet.
 
 Une fois votre choix fait, suivez ces étapes :
 
