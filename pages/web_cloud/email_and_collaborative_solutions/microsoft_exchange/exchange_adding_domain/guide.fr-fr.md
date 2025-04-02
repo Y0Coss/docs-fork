@@ -81,7 +81,7 @@ La fenêtre affiche désormais des informations concernant la configuration des 
         - *Configurer l'enregistrement DKIM automatiquement* : permet une saisie automatique des enregistrements nécessaires pour authentifier vos envois d'e-mails.
         - *Configurer l'enregistrement SRV automatiquement* : permet au logiciel de messagerie de configurer automatiquement les comptes Exchange sur votre nom de domaine.
 
-![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-600}
+![Add Domain](images/add_domain_exchange_step2-1b.png){.thumbnail .w-600}
 
 - **Si vous avez renseigné un nom de domaine non géré par votre compte OVHcloud** : cela signifie que le nom de domaine, plus particulièrement sa zone DNS, n'est pas géré depuis votre espace client OVHcloud. Il peut être aussi enregistré dans un autre bureau d'enregistrement. Il sera alors nécessaire de procéder à la configuration directement dans son interface de gestion, quel que soit le choix suivant effectué.
     - **Configuration recommandée** : convient si vous utilisez uniquement les offres e-mail OVHcloud.<br><br>
@@ -161,13 +161,13 @@ Si des comptes e-mail sont attachés au nom de domaine que vous souhaitez détac
 
 **Attacher les comptes à un autre nom de domaine** :
 
-1\. Rendez-vous dans l'onglet `Comptes e-mail`{.action}.<br>
-2\. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}.<br>
-3\. Cliquez sur `Modifier`{.action}.
+1. Rendez-vous dans l'onglet `Comptes e-mail`{.action}.<br>
+2. À droite des comptes à modifier, cliquez sur le bouton `...`{.action}.<br>
+3. Cliquez sur `Modifier`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-600}
 
-4\. Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
+4. Depuis la fenêtre de modification, vous pouvez modifier le nom de domaine attaché au compte via le menu déroulant.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-600}
 

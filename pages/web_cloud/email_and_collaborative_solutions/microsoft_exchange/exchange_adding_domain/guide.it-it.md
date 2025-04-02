@@ -81,7 +81,7 @@ Nella finestra vengono visualizzate le informazioni relative alla configurazione
         - *Configura il record DKIM automaticamente*: permette l'inserimento automatico dei record necessari ad autenticare l'invio delle email.
         - *Configura il record SRV automaticamente*: permette al client di posta di configurare automaticamente gli account Exchange sul tuo dominio.
 
-![Add Domain](images/add_domain_exchange_step2-1.png){.thumbnail .w-600}
+![Add Domain](images/add_domain_exchange_step2-1b.png){.thumbnail .w-600}
 
 - **Se il dominio inserito non è gestito dal tuo account OVHcloud**, significa che il dominio, in particolare la zona DNS, non è gestito dallo Spazio Cliente. Può anche essere registrato presso un altro Registrar. Sarà necessario procedere alla configurazione direttamente nella propria interfaccia di gestione, qualunque sia la scelta effettuata.
     - **Configurazione consigliata**: adatta solo per le soluzioni di posta elettronica OVHcloud.<br><br>
@@ -161,13 +161,13 @@ Se alcuni account email sono associati al dominio che vuoi scollegare, hai 2 pos
 
 **Associa gli account a un altro dominio**:
 
-1\. Accedi alla scheda `Account email`{.action}.<br>
-2\. A destra degli account da modificare, clicca sul pulsante `...`{.action}.<br>
-3\. Clicca su `Modifica`{.action}.
+1. Accedi alla scheda `Account email`{.action}.<br>
+2. A destra degli account da modificare, clicca sul pulsante `...`{.action}.<br>
+3. Clicca su `Modifica`{.action}.
 
 ![emailpro](images/add_domain_exchange_step8.png){.thumbnail .w-600}
 
-4\. Dalla finestra di modifica, è possibile modificare il nome di dominio associato all'account tramite il menu a tendina.
+4. Dalla finestra di modifica, è possibile modificare il nome di dominio associato all'account tramite il menu a tendina.
 
 ![emailpro](images/add_domain_exchange_step9.png){.thumbnail .w-600}
 
