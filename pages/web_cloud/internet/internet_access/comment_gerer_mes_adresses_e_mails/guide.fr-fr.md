@@ -12,7 +12,7 @@ Vous avez la possibilité de bénéficier d'adresses E-mail avec nos offres FTTH
 
 ## Prérequis
 
-- Disposer d'une [offre xDSL ou FTTH compatible](https://www.ovhtelecom.fr/adsl/){.external}.
+- Disposer d’un [accès Internet xDSL ou FTTH OVHcloud](https://www.ovhtelecom.fr/offre-internet/).
 - Avoir encore la possibilité de créer des adresses e-mail dans le cadre de votre offre.
 - Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
 
@@ -51,7 +51,7 @@ Cliquez sur `Valider`{.action} pour lancer la création de l'adresse e-mail. Ré
 >
 > - de ne pas noter sur un papier ni de vous envoyer vos mots de passe sur votre adresse e-mail, mais plutôt d'utiliser un logiciel du type « gestionnaire de mots de passe » ;
 >
-> - de ne pas enregistrer vos mots de passe dans votre navigateur internet, même si ce dernier vous le propose.
+> - de ne pas enregistrer vos mots de passe dans votre navigateur web, même si ce dernier vous le propose.
 >
 
 ### Étape 2 : utiliser votre adresse e-mail

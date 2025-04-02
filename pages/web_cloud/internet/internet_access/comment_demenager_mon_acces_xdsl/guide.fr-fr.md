@@ -6,7 +6,7 @@ updated: 2024-11-22
 
 ## Objectif
 
-Déménager un accès xDSL/Fibre vous permet de recréer votre accès internet à une adresse différente lors d'un changement de lieu de vie ou de lieu de travail, tout en conservant les services liés à votre offre.
+Déménager un accès xDSL/Fibre vous permet de recréer votre accès Internet à une adresse différente lors d'un changement de lieu de vie ou de lieu de travail, tout en conservant les services liés à votre offre.
 <br>Il s'agit d'un service gratuit accessible depuis votre espace client OVHcloud.
 
 **Découvrez comment demander correctement puis suivre le déménagement de votre offre xDSL/Fibre.**
@@ -135,7 +135,7 @@ Cochez alors les cases correspondantes et cliquez sur `Valider le déménagement
 
 Le déménagement de votre ligne cuivre à la nouvelle adresse se réalise en 7 à 10 jours en moyenne, sauf en cas de création de ligne où cela dépend de la date de rendez-vous choisie.
 
-En cas de passage d'une offre cuivre (ADSL/VDSL) vers une offre Fibre (FTTH), un délai moyen de 10 à 30 jours est nécessaire à la réalisation de votre nouvel accès internet Fibre. Dans ce cas précis, nous créons en parallèle de votre *packadsl*, un nouveau *packadsl* temporaire afin de pouvoir réaliser la commande Fibre tout en continuant de garder votre accès cuivre fonctionnel et inchangé. Ce *packadsl* temporaire sera supprimé dès lors que l'accès Fibre sera livré. L'accès Fibre viendra remplacer votre accès cuivre dans votre *packadsl* originel.
+En cas de passage d'une offre cuivre (ADSL/VDSL) vers une offre Fibre (FTTH), un délai moyen de 10 à 30 jours est nécessaire à la réalisation de votre nouvel accès Internet Fibre. Dans ce cas précis, nous créons en parallèle de votre *packadsl*, un nouveau *packadsl* temporaire afin de pouvoir réaliser la commande Fibre tout en continuant de garder votre accès cuivre fonctionnel et inchangé. Ce *packadsl* temporaire sera supprimé dès lors que l'accès Fibre sera livré. L'accès Fibre viendra remplacer votre accès cuivre dans votre *packadsl* originel.
 
 > [!warning]
 >

@@ -12,7 +12,7 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 
 ## Prérequis
 
-- Disposer d’un [accès internet xDSL ou Fibre OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external}. 
+- Disposer d’un [accès Internet xDSL ou FTTH OVHcloud](https://www.ovhtelecom.fr/offre-internet/).
 - Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Telecom`{.action}.
 - Avoir la possibilité de se connecter à l'interface de votre box OVHcloud.
 - Disposer d'une box OVHcloud compatible avec la configuration d'un bloc IP.
@@ -182,7 +182,7 @@ Le paramétrage maintenant effectué, poursuivez vers l'étape 4 « [Configurer 
 
 #### 3.2 Configuration sur une box Zyxel
 
-La configuration d'un bloc IP /29 sur une box Zyxel s'effectue dans l'interface de cette dernière, depuis un navigateur internet. Connectez-vous en accédant à l'adresse `192.168.1.1`.
+La configuration d'un bloc IP /29 sur une box Zyxel s'effectue dans l'interface de cette dernière, depuis un navigateur web. Connectez-vous en accédant à l'adresse `192.168.1.1`.
 
 > [!primary]
 >
@@ -225,9 +225,9 @@ Cliquez ensuite sur le bouton `OK`{.action}.
 
 Toujours dans le menu `Network Settings`{.action}, sélectionnez le menu `Broadband`{.action}. Cliquez sur l'icône représentant une feuille et un crayon, à droite du nom de l'interface utilisée par votre modem. L'interface dépend de votre type de connexion :
 
-- **ADSL**: Pour une connexion de type ADSL
-- **VDSL**: Pour une connexion de type VDSL
-- **ETHWAN**: Pour une connexion de type FTTH
+- **ADSL** : Pour une connexion de type ADSL
+- **VDSL** : Pour une connexion de type VDSL
+- **ETHWAN** : Pour une connexion de type FTTH
 
 ![blocip](images/blocip-step13.png){.thumbnail}
 

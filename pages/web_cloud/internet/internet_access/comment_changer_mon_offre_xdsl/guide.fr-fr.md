@@ -87,7 +87,7 @@ Comptez un délai d'une heure pour que le changement soit effectif, sauf pour le
 
 - en cas de remplacement du modem. Un délai de livraison de 24 à 48 heures est alors à prendre en compte suite à l'expédition du modem.
 - en cas de changement de collecte cuivre (un changement physique au niveau de la ligne qui implique une demande auprès de l'opérateur de collecte). Un délai moyen de 7 à 10 jours peut alors être constaté, ainsi qu'une coupure probable du service.
-- en cas de passage d'une offre cuivre (ADSL/VDSL) vers une offre Fibre (FTTH). Un délai moyen de 10 à 30 jours est nécessaire à la réalisation de votre nouvel accès internet Fibre. Dans ce cas précis nous créons, en parallèle de votre *packadsl*, un nouveau *packadsl* temporaire afin de pouvoir réaliser la commande Fibre tout en continuant de garder votre accès cuivre fonctionnel et inchangé. Ce *packadsl* temporaire sera supprimé dès lors que l'accès Fibre sera livré. L'accès Fibre viendra remplacer votre accès cuivre dans votre *packadsl* originel.
+- en cas de passage d'une offre cuivre (ADSL/VDSL) vers une offre Fibre (FTTH). Un délai moyen de 10 à 30 jours est nécessaire à la réalisation de votre nouvel accès Internet Fibre. Dans ce cas précis nous créons, en parallèle de votre *packadsl*, un nouveau *packadsl* temporaire afin de pouvoir réaliser la commande Fibre tout en continuant de garder votre accès cuivre fonctionnel et inchangé. Ce *packadsl* temporaire sera supprimé dès lors que l'accès Fibre sera livré. L'accès Fibre viendra remplacer votre accès cuivre dans votre *packadsl* originel.
 
 > [!warning]
 >

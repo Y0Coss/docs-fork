@@ -14,7 +14,7 @@ Par exemple, dans le cadre de l'utilisation d'un serveur e-mail, si l'e-mail est
 ## Prérequis
 
 - Un nom de domaine (ou sous-domaine) redirigeant vers l'adresse IP (IPv4 et/ou IPv6) de votre accès xDSL ou fibre.
-- Un accès xDSL ou fibre OVHcloud.
+- Disposer d’un [accès Internet xDSL ou FTTH OVHcloud](https://www.ovhtelecom.fr/offre-internet/).
 - Être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Telecom`{.action}.
 
 Il est également possible de configurer les Reverse DNS des blocs IPv4 fournis en option sur nos accès.
