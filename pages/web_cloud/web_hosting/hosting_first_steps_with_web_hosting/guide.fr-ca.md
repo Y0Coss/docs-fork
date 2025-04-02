@@ -119,7 +119,6 @@ Retrouvez ci-dessous quelques liens vers nos guides sur les principales options 
 - [Hébergement web - Environnement, version PHP, « .ovhconfig »](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 - [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics).
 - [Suivre et gérer les e-mails automatisés de son hébergement web](/pages/web_cloud/web_hosting/mail_function_script_records).
-- [Comment géolocaliser un site web dans un pays spécifique ?](/pages/web_cloud/web_hosting/multisites_geolocation).
 - [Activation du pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall).
 - [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting).
 - [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection).
