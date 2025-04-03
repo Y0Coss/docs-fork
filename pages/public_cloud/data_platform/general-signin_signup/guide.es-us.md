@@ -1,7 +1,7 @@
 ---
 title: Sign-up to OVHcloud Data Platform
 excerpt: Find out how to sign up and sign in to OVHcloud Data Platform
-updated: 2025-03-31
+updated: 2025-04-03
 ---
 
 ## Objective
