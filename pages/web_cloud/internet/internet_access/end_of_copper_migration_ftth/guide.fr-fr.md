@@ -95,7 +95,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 > Étape 1
 >> **Récupérez les informations techniques sur arcep.fr :**
 >>
->> Accédez au [site officiel de l'ARCEP](https://cartefibre.arcep.fr/){.external} et cliquez sur l'onglet `Déploiements fibre`{.action} en haut à droite afin d'afficher la carte des déploiements de la fibre en France.
+>> Accédez au [site officiel de l'ARCEP](https://cartefibre.arcep.fr/) et cliquez sur l'onglet `Déploiements fibre`{.action} en haut à droite afin d'afficher la carte des déploiements de la fibre en France.
 >>
 >> ![ARCEP - Déploiements fibre](images/arcep01.png){.thumbnail width="600"}
 >>
@@ -109,7 +109,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 >> ![ARCEP - Déploiements fibre](images/arcep03.png){.thumbnail width="600"}
 >>
 >> > [!warning]
->> > Les informations sur le [site officiel de l'ARCEP](https://cartefibre.arcep.fr/){.external} ne sont pas actualisées en temps réel. Leur date de dernière mise à jour est indiquée en haut à droite du site. Il est donc possible que, à date, le statut réel de votre éligibilité fibre ne corresponde pas aux données indiquées sur ce site.
+>> > Les informations sur le [site officiel de l'ARCEP](https://cartefibre.arcep.fr/) ne sont pas actualisées en temps réel. Leur date de dernière mise à jour est indiquée en haut à droite du site. Il est donc possible que, à date, le statut réel de votre éligibilité fibre ne corresponde pas aux données indiquées sur ce site.
 >>
 > Étape 2
 >> **Vérifiez les informations sur l'outil d'éligibilité OVHcloud :**
