@@ -10,6 +10,11 @@ As well as private IP addressing, the [vRack](/links/network/vrack){.external} a
 
 **This guide will show you how to configure a block of public IP addresses for use with the [vRack](/links/network/vrack){.external}.**
 
+> [!primary]
+>
+> vRack supports both IPv4 and IPv6 blocks. You can find the instructions on how to configure IPv6 blocks in this guide: [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838).
+>
+
 ## Requirements
 
 - A public block of IP addresses in your account, with a minimum of four addresses

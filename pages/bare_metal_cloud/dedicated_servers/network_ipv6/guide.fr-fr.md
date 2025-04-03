@@ -10,6 +10,11 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 
 **Ce guide vous explique comment configurer des adresses IPv6 sur votre serveur.**
 
+> [!primary]
+>
+>Sur les serveurs qui sont compatibles vRack, vous pouvez aussi configurer des adresses Additional IPv6 sur un vRack plutôt que sur l'interface publique de votre serveur. Vous pouvez trouver des instructions dans ce guide: [Configurer un bloc IPv6 dans un vRack](https://help.ovhcloud.com/csm/fr-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062825).
+>
+
 > [!warning]
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d’assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >

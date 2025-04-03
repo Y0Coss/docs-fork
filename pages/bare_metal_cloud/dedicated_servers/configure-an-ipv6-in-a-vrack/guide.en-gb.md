@@ -1,7 +1,7 @@
 ---
 title: Configuring an IPv6 block in a vRack
 excerpt: This guide will show you how to configure a block of public IPv6 addresses for use with the vRack
-updated: 2025-03-17
+updated: 2025-04-02
 ---
 
 <style>
@@ -23,6 +23,11 @@ details[open]>summary::before {
 The vRack network serves as a global private network bridging various OVHcloud products, enabling the creation of sophisticated network solutions. Beyond facilitating private connections, it also supports routing public IP addresses.
 
 **This guide focuses on Additional IPv6 address block configuration within a vRack network.**
+
+> [!primary]
+>
+> vRack supports both IPv4 and IPv6 blocks. You can find the instructions on how to configure IPv4 blocks in this guide: [Configuring an IP block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043342).
+>
 
 ## Introduction
 
@@ -73,6 +78,8 @@ In this section we will present basic IPv6 setup for your vRack connected hosts.
 ![Configuring IPv6 in a vRack](images/20240418-03.png){.thumbnail}
 
 The example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belong to the first /64 subnet from a given public /56 Additional IPv6 block. Both leverage the vRack interface for public IPv6 connectivity.
+
+Default gateway for the first /64 subnet (bridged one) is the first address from the /56 block. In this example it is 2001:41d0:abcd:ef00::1. This is distributed via SLAAC, but must be manually configured (as a default route) if SLAAC is disabled - see **Static IP configuration** below.
 
 /// details | Via the OVHcloud Control Panel
 
@@ -278,6 +285,8 @@ The traffic path is as follows: Inbound traffic to a given VM (with specified su
 Traffic coming back from such a VM should use the default route via the first part of the local link (black one, fd00::1), then (possibly default) route from a host to its gateway.
 
 For routed subnet definition any prefix size can be used between /57 and /64.
+
+Default gateway for the host is the first address from the /56 block, which is in this example: 2001:41d0:abcd:ef00::1. Default gateway used on the VMs then, are the configured host addresses (in this example fd00::1).
 
 #### Define routed subnet
 

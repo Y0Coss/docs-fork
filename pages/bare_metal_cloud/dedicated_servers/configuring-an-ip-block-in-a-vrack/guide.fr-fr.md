@@ -10,6 +10,11 @@ En plus de l'adressage IP privé, le [vRack](https://www.ovh.com/fr/solutions/vr
 
 **Ce guide vous explique comment configurer un bloc d'adresses IP publiques à utiliser avec le vRack.**
 
+> [!primary]
+>
+> Le vRack est compatible avec les blocs IPv4 et IPv6. Vous pouvez trouver des instructions vous indiquant comment configurer des blocs IPv6 dans ce guide: [Configurer un bloc IPv6 dans un vRack](https://help.ovhcloud.com/csm/fr-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062825).
+>
+
 ## Prérequis
 
 - Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.

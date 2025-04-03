@@ -1,7 +1,7 @@
 ---
 title: Configurer un bloc IPv6 dans un vRack
 excerpt: "Ce guide vous montrera comment configurer un bloc d'adresses IPv6 publiques à utiliser dans un vRack"
-updated: 2025-03-17
+updated: 2025-04-02
 ---
 
 <style>
@@ -23,6 +23,11 @@ details[open]>summary::before {
 Le réseau vRack est un réseau privé mondial qui relie différents produits OVHcloud et permet la création de solutions réseau sophistiquées. En plus de faciliter les connexions privées, il prend également en charge le routage des adresses IP publiques.
 
 **Ce guide se concentre sur la configuration des blocs d’adresses Additional IPv6 au sein d’un réseau vRack.**
+
+> [!primary]
+>
+> Le vRack est compatible avec les blocs IPv4 et IPv6. Vous pouvez trouver des instructions vous indiquant comment configurer des blocs IPv4 dans ce guide: [Configurer un bloc IP dans le vRack](https://help.ovhcloud.com/csm/fr-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043347).
+>
 
 ## Introduction
 
@@ -72,6 +77,8 @@ Dans cette section, nous présenterons la configuration IPv6 de base de vos hôt
 ![Configurer une IPv6 dans un vRack](images/20240418-03.png){.thumbnail}
 
 L'exemple ci-dessus montre deux hôtes avec leurs interfaces côté vRack configurées avec des adresses publiques IPv6. Un hôte possède une configuration manuelle, tandis qu’un autre dispose d'une adresse IP attribuée automatiquement en SLAAC. Toutes les adresses IP appartiennent au premier sous-réseau /64 d'un bloc /56 d'Additional IPv6 publiques donné. Les deux utilisent l'interface vRack pour la connectivité IPv6 publique.
+
+La passerelle par défaut pour le premier sous-réseau /64 (celui qui est bridgé) est la première adresse du bloc /56. Dans cet exemple, la passerelle est 2001:41d0:abcd:ef00::1. Celle-ci est distribuée via SLAAC, mais doit être configurée manuellement (en tant que route par défaut) si le SLAAC est désactivé - voir **Configuration IP statique** ci-dessous.
 
 /// details | Via l'espace client OVHcloud
 
@@ -276,6 +283,8 @@ Le chemin emprunté par le trafic est le suivant : le trafic entrant vers une VM
 Le trafic revenant d'une telle VM doit utiliser la route par défaut via la première partie du lien local (en noir sur le diagramme, fd00::1), puis la route (éventuellement par défaut) d'un hôte vers sa passerelle.
 
 Pour la définition de sous-réseau routé, toute taille de préfixe peut être utilisée entre /57 et /64.
+
+La passerelle par défaut de l'hôte est la première adresse du bloc /56, qui est dans cet exemple: 2001:41d0:abcd:ef00::1. Les passerelles par défaut utilisées par les VMs sont les adresses configurées de l'hôte (ici fd00::1).
 
 #### Définir un sous-réseau routé
 
