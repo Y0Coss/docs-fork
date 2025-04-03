@@ -1795,7 +1795,6 @@
     + [Backup and disaster recovery solutions](products/storage-backup-and-disaster-recovery-solution)
         + [Veeam](storage-backup-and-disaster-recovery-solution-veeam)
             + [Setting up Veeam Backup & Replication](storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
-            + [Veeam Cloud Connect](storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_cloud_connect)
             + [Veeam Cloud Connect - How to migrate data from Veeam Cloud Connect to Object Storage](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam-cloud-connect-migration)
             + [VMware Cloud Director - Veeam Backup Data Protection](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
             + [Preparing a Bare Metal Server backup with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-preparation)
