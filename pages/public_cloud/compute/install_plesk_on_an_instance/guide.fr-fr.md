@@ -1,7 +1,7 @@
 ---
-title: 'Installer Plesk sur une instance'
+title: 'Comment installer Plesk sur une instance Public Cloud'
 excerpt: 'Apprenez à mettre en place Plesk sur votre instance Public Cloud'
-updated: 2018-03-26
+updated: 2025-04-04
 ---
 
 ## Objectif
@@ -14,12 +14,12 @@ Plesk est une interface de gestion de serveurs simple à prendre en main. Vous a
 > 
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. N'hésitez pas à vous rendre sur notre [forum communautaire](/links/community) pour échanger avec d'autres utilisateurs.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. N'hésitez pas à vous rendre sur notre [forum communautaire](/links/community) pour échanger avec d'autres utilisateurs.
 >
 
 ## Prérequis
 
-- [Avoir créé une instance depuis l'espace client OVHcloud](/links/public-cloud/public-cloud).
+- [Avoir créé une instance depuis l'espace client OVHcloud](/pages/public_cloud/compute/create_a_public_cloud_project).
 - [Disposer d'un accès administrateur](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
 
 ## En pratique
@@ -56,11 +56,9 @@ Patientez ensuite le temps de l'installation.
 Une fois l’installation terminée, l’interface en ligne de commande (CLI) affichera les informations suivantes :
 
 - Deux URLs sont générées :
-
     - L’une avec l’adresse IP du serveur (en HTTPS avec un certificat SSL auto-signé, ce qui peut déclencher une alerte de sécurité dans certains navigateurs).
     - L’autre avec un domaine Plesk (en HTTPS avec un certificat SSL signé, sans alerte de sécurité).
     - Les deux sont sécurisées, mais il est recommandé d’utiliser la seconde.
-
 - Un message indique : "Vous pouvez également vous connecter en tant que ‘root’ avec votre mot de passe ‘root’.". Cependant, par défaut, aucun mot de passe root n’est généré. Si nécessaire, les clients peuvent suivre [ce guide](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) pour activer l’utilisateur root et définir un mot de passe.
 
 Une fois sur la page Plesk, suivez les instructions à l’écran pour finaliser l’installation.
@@ -74,7 +72,7 @@ Pour ajouter votre licence Plesk, munissez-vous de la clé qui vous a été tran
 > Nous ne commercialisons pas de licences Plesk pour nos offres Public Cloud. Vous pouvez cependant en obtenir une depuis le site de [Plesk](https://www.plesk.com/){.external}.
 > 
 
-Si vous souhaitez modifier votre licence, par exemple pour remplacer une clé de test ou pour changer d'offre ? Depuis l'interface Plesk, rendez-vous alors dans la partie `Tools & Settings`{.action}. Dans la section **Plesk**, sélectionnez ensuite `License information`{.action}.
+Vous souhaitez modifier votre licence, par exemple pour remplacer une clé de test ou pour changer d'offre ? Depuis l'interface Plesk, rendez-vous alors dans la partie `Tools & Settings`{.action}. Dans la section **Plesk**, sélectionnez ensuite `License information`{.action}.
 
 ## Aller plus loin
 
