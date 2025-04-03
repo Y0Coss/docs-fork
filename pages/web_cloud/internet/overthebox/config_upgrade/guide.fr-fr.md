@@ -132,9 +132,9 @@ Dans ce cas, les recommandations sont les suivantes :
 | v0.8_deprecated | v0.8.2 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3|
 | v0.9 | v0.9.6 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
 | v1.0 | v1.0.4 | 23.05.5 | 5.15.167 | v1 | v3lte, v3, v2b, v2c |
-| v1.1 | v1.1.0 | 24.10.0 | 6.6.73 | v1 | v3lte, v3, v2b, v2c |
+| v1.1 | v1.1.1 | 24.10.0 | 6.6.73 | v1 | v3lte, v3, v2b, v2c |
 | stable | v1.0.4 | 23.05.5 | 5.15.167 | v1 | v3lte, v3, v2b, v2c |
-| beta | v1.1.0 | 24.10.0 | 6.6.73 | v1 | v3lte, v3, v2b, v2c |
+| beta | v1.1.1 | 24.10.0 | 6.6.73 | v1 | v3lte, v3, v2b, v2c |
 
 ### Revenir sur une version antérieure
 
