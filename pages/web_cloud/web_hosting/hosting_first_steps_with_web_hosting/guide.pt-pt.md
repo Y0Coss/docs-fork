@@ -1,7 +1,7 @@
 ---
 title: "Como começar bem com o seu alojamento web"
 excerpt: "Saiba como publicar um novo site através das nossas opções de "Módulos 1 clique", como criar um novo endereço de e-mail personalizado com o seu nome de domínio, tudo graças à nossa solução de alojamento web"
-updated: 2025-04-02
+updated: 2025-04-03
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-Pretende criar um site para a sua empresa ou um blogue pessoal? Ou pode usar um e-commerce para vender os seus produtos online? Este guia de primeiros passos com o alojamento web da OVHcloud indicar-lhe-á as principais etapas para o configurar, incluindo a criação de endereços de e-mail profissionais associados ao seu domínio. Permite-lhe colocar online o seu projeto de forma fácil e rápida, a fim de comunicar com o seu público de forma eficaz.
+Pretende criar um site para a sua empresa ou um blogue pessoal? Precisa de uma loja online para vender os seus produtos? Este guia dedicado aos primeiros passos com o alojamento web OVHcloud indicar-lhe-á as etapas chave para o configurar. Além disso, também encontrará explicações para criar endereços de e-mail profissionais associados ao seu domínio. Permite-lhe colocar online o seu projeto de forma fácil e rápida, a fim de comunicar com o seu público de forma eficaz.
 
 **Saiba como colocar um novo site online de forma fácil e rápida através da solução "Módulo 1 clique". Este manual explica-lhe igualmente como criar um novo endereço de e-mail personalizado com o seu nome de domínio.**
 

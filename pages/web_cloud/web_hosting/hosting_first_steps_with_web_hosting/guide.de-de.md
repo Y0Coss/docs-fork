@@ -1,7 +1,7 @@
 ---
 title: "Wie Sie richtig mit Ihrem Webhosting starten"
 excerpt: "Erfahren Sie, wie Sie mit unseren Optionen für „1-Klick-Module“ eine neue Website online stellen, wie Sie eine neue personalisierte E-Mail-Adresse mit Ihrem Domainnamen erstellen, und all das mit unserer Webhosting-Lösung"
-updated: 2025-04-02
+updated: 2025-04-03
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Ziel
 
-Sie möchten eine Website für Ihr Unternehmen oder einen persönlichen Blog erstellen? Oder können Sie einen E-Commerce einrichten, um Ihre Produkte online zu verkaufen? In dieser Anleitung für die ersten Schritte mit dem OVHcloud Webhosting werden die wichtigsten Schritte für dessen Konfiguration beschrieben. Dazu gehört auch die Erstellung von professionellen E-Mail-Adressen, die mit Ihrer Domain verbunden sind. So können Sie Ihr Projekt einfach und schnell online stellen und effizient mit Ihrem Publikum kommunizieren.
+Sie möchten eine Website für Ihr Unternehmen oder einen persönlichen Blog erstellen? Sie benötigen einen Onlineshop, um Ihre Produkte online zu verkaufen? In dieser Anleitung für die ersten Schritte mit OVHcloud Webhosting werden die wichtigsten Schritte zur Konfiguration beschrieben. Hier finden Sie auch Anleitungen zum Erstellen von professionellen E-Mail-Adressen, die mit Ihrer Domain verbunden sind. So können Sie Ihr Projekt einfach und schnell online stellen und effizient mit Ihrem Publikum kommunizieren.
 
 **Hier erfahren Sie, wie Sie mit unserer 1-Klick-Modul-Lösung ganz einfach und schnell eine neue Website online stellen. In dieser Anleitung erfahren Sie auch, wie Sie eine neue personalisierte E-Mail-Adresse mit Ihrer Domain erstellen.**
 

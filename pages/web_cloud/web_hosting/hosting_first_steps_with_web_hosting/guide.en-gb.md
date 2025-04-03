@@ -1,7 +1,7 @@
 ---
 title: "How to get started with your web hosting plan"
 excerpt: "Find out how to put a new website online via our 1-click modules options, how to create a new custom email address with your domain name, all using our web hosting solution"
-updated: 2025-04-02
+updated: 2025-04-03
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-Want to create a website for your business or a personal blog? Or perhaps deploy an e-commerce platform to sell your products online? This guide to getting started with an OVHcloud Web Hosting plan will show you the key steps for setting it up, including creating professional email addresses associated with your domain name. It will enable you to put your project online quickly and easily, so that you can communicate effectively with your audience.
+Want to create a website for your business or a personal blog? Need an e-commerce store to sell your products online? This guide to getting started with an OVHcloud Web Hosting plan will show you the key steps for setting it up. You will also find instructions for creating professional email addresses associated with your domain name. It will enable you to put your project online quickly and easily, so that you can communicate effectively with your audience.
 
 **Find out how to put a new website online quickly and easily with our 1-click module solution. This guide also explains how to create a new, customized email address with your domain name.**
 
