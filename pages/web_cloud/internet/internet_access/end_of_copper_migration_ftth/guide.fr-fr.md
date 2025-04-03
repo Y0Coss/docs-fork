@@ -99,7 +99,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 >>
 >> ![ARCEP - Déploiements fibre](images/arcep01.png){.thumbnail width="600"}
 >>
->> Identifiez votre bâtiment en recherchant votre adresse. Utilisez soit la carte (zommez dans celle-ci), soit le champ de recherche en haut à gauche.<br>
+>> Identifiez votre bâtiment en recherchant votre adresse. Utilisez soit la carte (zoomez dans celle-ci), soit le champ de recherche en haut à gauche.<br>
 >> Cliquez ensuite sur le point vert correspondant à votre bâtiment afin d'afficher ses informations.
 >> Prenez note de :
 >>
@@ -114,7 +114,7 @@ Dans ce cas de figure, nous vous recommandons de suivre les étapes ci-dessous *
 > Étape 2
 >> **Vérifiez les informations sur l'outil d'éligibilité OVHcloud :**
 >>
->> Rendez-vous sur [notre outil d'éligibilité](https://order.isp.ovh.net/){.external}.
+>> Rendez-vous sur [notre outil d'éligibilité](https://order.isp.ovh.net/).
 >>
 >> Cliquez sur l'onglet `Par référence d'immeuble`{.action} et renseignez l'**Identifiant immeuble IPE** préalablement noté sur le site de l'ARCEP. Cliquez alors sur `Vérifier mon éligibilité`{.action}.
 >>
