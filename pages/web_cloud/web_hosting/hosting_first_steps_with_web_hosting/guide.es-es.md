@@ -1,7 +1,7 @@
 ---
-title: "Cómo empezar con buen pie con un alojamiento web"
-excerpt: "Descubra cómo publicar un nuevo sitio web a través de nuestras opciones de "Módulos en un clic" y cómo crear una nueva dirección de correo personalizada con su nombre de dominio gracias a nuestra solución de alojamiento web"
-updated: 2025-04-03
+title: "Cómo empezar correctamente con su alojamiento web"
+excerpt: 'Descubra cómo publicar un nuevo sitio web a través de nuestras opciones de "Módulos en un clic" y cómo crear una nueva dirección de correo personalizada con su nombre de dominio gracias a nuestra solución de alojamiento web'
+updated: 2025-04-04
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-¿Quiere crear un sitio web para su empresa o un blog personal? ¿Necesita una tienda online para vender sus productos? Esta guía explica los primeros pasos con el alojamiento web de OVHcloud y explica cómo configurarlo. También encontrará instrucciones para crear direcciones de correo electrónico profesionales asociadas a su dominio. Le permitirá publicar su proyecto en internet fácil y rápidamente para comunicarse con su audiencia de forma eficaz.
+¿Quiere crear un sitio web para su empresa o un blog personal? ¿Necesita una tienda online para vender sus productos? Esta guía explica los primeros pasos con el alojamiento web de OVHcloud y explica cómo configurarlo. También encontrará instrucciones para crear direcciones de correo electrónico profesionales asociadas a su dominio. Le permitirá publicar su proyecto en Internet fácil y rápidamente para comunicarse con su audiencia de forma eficaz.
 
 **Descubra cómo publicar fácil y rápidamente un nuevo sitio web a través de nuestra solución Módulo en un clic. Esta guía explica también cómo crear una nueva dirección de correo personalizada con un dominio.**
 
@@ -65,7 +65,7 @@ En sus alojamientos web, OVHcloud ofrece la instalación gratuita de los CMS Wor
 1. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
 2. Seleccione la pestaña `Módulos en 1 clic`{.action} una vez que haya seleccionado el alojamiento web correspondiente.
 3. En la nueva página, haga clic en el botón `Añadir un módulo`{.action}.
-4. En la nueva ventana, seleccione el CMS que quiera instalar. A continuación, seleccione el dominio en el que desea instalar el módulo seleccionando el dominio deseado **sin** los "www" situados delante (por ejemplo, `domain.tld` y no `www.domain.tld`) y haga clic directamente en `Instalar`{.action}.
+4. En la nueva ventana, seleccione el CMS que quiera instalar. A continuación, seleccione el dominio en el que desea instalar el módulo seleccionando el dominio deseado **sin los "www"** situados delante (por ejemplo, `domain.tld` y no `www.domain.tld`) y haga clic directamente en `Instalar`{.action}.
 
 /// details | Haga clic aquí para obtener más información.
 
@@ -112,7 +112,7 @@ Su alojamiento web no está limitado a la instalación de un módulo en un clic.
 
 ## Más información
 
-Incluimos a continuación algunos enlaces a nuestras guías sobre las principales opciones disponibles con nuestros planes de hosting:
+Consulte a continuación una selección de nuestras guías que detallan las principales funcionalidades ofrecidas con nuestros alojamientos web:
 
 - [Web hosting - Gestionar un certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 - [Acelerar un sitio web utilizando la CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).

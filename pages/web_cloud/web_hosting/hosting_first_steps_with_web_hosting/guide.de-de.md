@@ -65,7 +65,7 @@ Auf seinen Webhostings bietet OVHcloud die kostenlose Installation der CMS WordP
 1. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 2. Wählen Sie den Tab `1-Klick-Module`{.action}, nachdem Sie sich auf dem betreffenden Webhosting befinden.
 3. Klicken Sie auf der angezeigten Seite auf die Schaltfläche `Modul hinzufügen`{.action}.
-4. Wählen Sie im angezeigten Fenster das CMS aus, das Sie installieren möchten. Wählen Sie dann die Domain aus, auf der das Modul installiert werden soll, indem Sie den gewünschten Domainnamen auswählen **ohne** die vorangestellten „www“ (Beispiel: `domain.tld` und nicht `www.domain.tld`) und klicken Sie dann direkt auf `Installieren`{.action}.
+4. Wählen Sie im angezeigten Fenster das CMS aus, das Sie installieren möchten. Wählen Sie dann die Domain aus, auf der das Modul installiert werden soll, indem Sie den gewünschten Domainnamen auswählen **ohne die vorangestellten „www“** (Beispiel: `domain.tld` und nicht `www.domain.tld`) und klicken Sie dann direkt auf `Installieren`{.action}.
 
 /// details | Klicken Sie hier für weitere Informationen.
 
@@ -112,7 +112,7 @@ Ihr Webhosting ist nicht auf die Installation eines „1-Klick-Moduls“ beschr�
 
 ## Weiterführende Informationen
 
-Hier finden Sie einige Links zu unseren Anleitungen zu den wichtigsten Optionen, die bei unseren Webhostings verfügbar sind:
+Nachfolgend finden Sie eine Auswahl unserer Anleitungen, in denen die wichtigsten Funktionen unserer Webhostings beschrieben werden:
 
 - [Webhosting - SSL-Zertifikat verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 - [Meine Website mithilfe des CDN beschleunigen](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).

@@ -1,7 +1,7 @@
 ---
-title: "Come eseguire le prime operazioni su un hosting Web"
-excerpt: "Questa guida ti mostra come pubblicare un nuovo sito Internet con le nostre opzioni di "CMS in 1 click" e come creare un nuovo indirizzo email personalizzato con il tuo dominio, il tutto grazie alla nostra soluzione di hosting Web"
-updated: 2025-04-03
+title: "Come eseguire le prime operazioni sul tuo hosting Web"
+excerpt: 'Questa guida ti mostra come pubblicare un nuovo sito Internet con le nostre opzioni di "CMS in 1 click" e come creare un nuovo indirizzo email personalizzato con il tuo dominio, il tutto grazie alla nostra soluzione di hosting Web'
+updated: 2025-04-04
 ---
 
 <style>
@@ -65,7 +65,7 @@ Negli hosting Web, OVHcloud propone di installare gratuitamente i CMS WordPress,
 1. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 2. Seleziona la scheda `CMS in 1 click`{.action} una volta posizionato sull’hosting Web interessato.
 3. Clicca sul pulsante `Aggiungi un modulo`{.action}.
-4. Nella nuova finestra, seleziona il CMS da installare. In seguito seleziona il dominio su cui installare il modulo selezionando il nome a dominio **senza** i "www" davanti (esempio: `domain.tld` e non `www.domain.tld`), poi clicca direttamente su `Installa`{.action}.
+4. Nella nuova finestra, seleziona il CMS da installare. In seguito seleziona il dominio su cui installare il modulo selezionando il nome a dominio **senza i "www"** davanti (esempio: `domain.tld` e non `www.domain.tld`), poi clicca direttamente su `Installa`{.action}.
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -112,7 +112,7 @@ Il tuo hosting Web non è limitato all'installazione di un "modulo in 1 click". 
 
 ## Per saperne di più
 
-Di seguito trovi alcuni link alle nostre guide sulle principali opzioni disponibili con i nostri hosting Web:
+Consulta qui sotto una selezione delle nostre guide che descrivono le principali funzionalità offerte dai nostri hosting Web:
 
 - [Hosting Web - Gestire un certificato SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 - [Aumentare la velocità di un sito Web con la CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).

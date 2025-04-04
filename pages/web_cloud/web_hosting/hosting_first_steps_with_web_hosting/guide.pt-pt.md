@@ -1,7 +1,7 @@
 ---
 title: "Como começar bem com o seu alojamento web"
-excerpt: "Saiba como publicar um novo site através das nossas opções de "Módulos 1 clique", como criar um novo endereço de e-mail personalizado com o seu nome de domínio, tudo graças à nossa solução de alojamento web"
-updated: 2025-04-03
+excerpt: 'Saiba como publicar um novo site através das nossas opções de "Módulos 1 clique", como criar um novo endereço de e-mail personalizado com o seu nome de domínio, tudo graças à nossa solução de alojamento web'
+updated: 2025-04-04
 ---
 
 <style>
@@ -65,7 +65,7 @@ Nos seus alojamentos web, a OVHcloud propõe instalar gratuitamente os CMS WordP
 1. Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
 2. Selecione o separador `Módulos "1 clique"`{.action} quando posicionado no alojamento web em causa.
 3. Na página que se abrir, clique no botão `Adicionar um módulo`{.action}.
-4. Na nova janela, selecione o CMS que deseja instalar. De seguida, escolha o domínio no qual deseja instalar o módulo, selecionando o nome de domínio desejado **sem** os "www" à frente (por exemplo: `domain.tld` e não `www.domain.tld`), e clique diretamente em `Instalar`{.action}.
+4. Na nova janela, selecione o CMS que deseja instalar. De seguida, escolha o domínio no qual deseja instalar o módulo, selecionando o nome de domínio desejado **sem os "www"** à frente (por exemplo: `domain.tld` e não `www.domain.tld`), e clique diretamente em `Instalar`{.action}.
 
 /// details | Clique aqui para mais informações.
 
@@ -112,7 +112,7 @@ O seu alojamento web não está limitado à instalação de um "módulo 1 clique
 
 ## Quer saber mais?
 
-Encontre aqui alguns links para os nossos guias sobre as principais opções disponíveis com os nossos alojamentos web:
+Encontre aqui uma seleção dos nossos guias que detalham as principais funcionalidades propostas nos nossos alojamentos web:
 
 - [Alojamento web - Gerir um certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 - [Guia de utilização do acelerador CDN num alojamento web](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).

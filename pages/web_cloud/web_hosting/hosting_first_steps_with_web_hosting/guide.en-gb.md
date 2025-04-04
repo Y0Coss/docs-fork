@@ -65,7 +65,7 @@ On our web hosting plans, OVHcloud offers free WordPress, Joomla!, PrestaShop an
 1. Click on the `Hosting plans`{.action} menu, then choose the web hosting plan concerned.
 2. Select the `1-click modules`{.action} tab once you have clicked on the Web Hosting plan concerned.
 3. On the page that appears, click the `Add a module`{.action} button.
-4. In the window that opens, select the CMS you want to install. Then select the domain on which you want to install the module by selecting the domain name you want **without** and selecting the “www” in front of it (e.g. `domain.tld`, not `www.domain.tld`), then directly click `Install`{.action}.
+4. In the window that opens, select the CMS you want to install. Then select the domain on which you want to install the module by selecting the domain name you want **without selecting the “www”** in front of it (e.g. `domain.tld`, not `www.domain.tld`), then directly click `Install`{.action}.
 
 /// details | Click here for more information.
 
@@ -112,7 +112,7 @@ Your web hosting plan is not limited to installing a 1-click module. You can hos
 
 ## Go further
 
-Below are some links to our guides on the main options available with our web hosting plans:
+Below is a selection of our guides detailing the main features offered with our web hosting plans:
 
 - [Web Hosting - How to configure an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 - [Speeding up your website with CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).

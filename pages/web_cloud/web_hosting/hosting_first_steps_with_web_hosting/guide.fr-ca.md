@@ -1,7 +1,7 @@
 ---
 title: "Comment bien débuter avec votre hébergement web"
 excerpt: "Découvrez comment mettre en ligne un nouveau site Internet via nos options de « Modules en 1 clic », comment créer une nouvelle adresse e-mail personnalisée avec votre nom de domaine, le tout grâce à notre solution d'hébergement web"
-updated: 2025-04-03
+updated: 2025-04-04
 ---
 
 <style>
@@ -46,7 +46,7 @@ Vous souhaitez créer un site Internet pour votre entreprise ou un blog personne
 
 1. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 2. Sélectionnez l'onglet `Multisite`{.action} une fois positionné sur l'hébergement web concerné.
-3. Sur la page qui s'affiche, cliquez sur le bouton `Actions`{.action} situé au dessus du tableau listant les noms de domaine déjà déclarés sur l'hébergement web. Cliquez ensuite sur `Ajouter un domaine ou sous domaine`{.action}.
+3. Sur la page qui s'affiche, cliquez sur le bouton `Actions`{.action} situé au dessus du tableau listant les noms de domaine déjà déclarés sur l'hébergement web. Cliquez ensuite sur `Ajouter un domaine ou sous-domaine`{.action}.
 4. Dans la fenêtre qui s'ouvre, cochez et complétez les éléments demandés jusqu'à leur validation.
 
 /// details | Cliquez ici pour plus d'informations.
@@ -65,7 +65,7 @@ Sur ses hébergements web, OVHcloud propose d'installer gratuitement les CMS Wor
 1. Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 2. Sélectionnez l'onglet `Modules en 1 clic`{.action} une fois positionné sur l'hébergement web concerné.
 3. Sur la page qui s'affiche, cliquez sur le bouton `Ajouter un module`{.action}.
-4. Dans la fenêtre qui s'ouvre, sélectionnez le CMS que vous souhaitez installer. Choisissez ensuite le domaine sur lequel installer le module en sélectionnant le nom de domaine souhaité **sans** les « www » devant (exemple : `domain.tld` et non pas `www.domain.tld`), puis cliquez directement sur `Installer`{.action}.
+4. Dans la fenêtre qui s'ouvre, sélectionnez le CMS que vous souhaitez installer. Choisissez ensuite le domaine sur lequel installer le module en sélectionnant le nom de domaine souhaité **sans les « www »** devant (exemple : `domain.tld` et non pas `www.domain.tld`), puis cliquez directement sur `Installer`{.action}.
 
 /// details | Cliquez ici pour plus d'informations.
 
@@ -106,13 +106,13 @@ Consultez notre guide détaillé « [Créer une adresse e-mail](/pages/web_cloud
 
 ///
 
-### 5 - Options complémentaires dipsonibles avec votre hébergement web <a name="part-5"></a>
+### 5 - Options complémentaires disponibles avec votre hébergement web <a name="part-5"></a>
 
-Votre hébergement web n'est pas limité à l'installation d'un « module en 1 clic ». Vous pouvez héberger des sites web créés par vos soins ou par un développeur web (blog, CMS, boutique en ligne, etc.). Si vous souhaitez en apprendre davantage sur les possiblités de votre hébergement web, n'hésitez pas à consultez notre guide plus détaillé « [Comment créer un site web - Réaliser votre projet en 5 étapes](/pages/web_cloud/web_hosting/website-project) ».
+Votre hébergement web n'est pas limité à l'installation d'un « module en 1 clic ». Vous pouvez héberger des sites web créés par vos soins ou par un développeur web (blog, CMS, boutique en ligne, etc.). Si vous souhaitez en apprendre davantage sur les possibilités de votre hébergement web, n'hésitez pas à consulter notre guide plus détaillé « [Comment créer un site web - Réaliser votre projet en 5 étapes](/pages/web_cloud/web_hosting/website-project) ».
 
 ## Aller plus loin
 
-Retrouvez ci-dessous quelques liens vers nos guides sur les principales options disponibles avec nos hébergements web :
+Retrouvez ci-dessous une sélection de nos guides détaillant les principales fonctionnalités proposées avec nos hébergements web :
 
 - [Hébergement web - Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 - [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
@@ -122,7 +122,7 @@ Retrouvez ci-dessous quelques liens vers nos guides sur les principales options 
 - [Activation du pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall).
 - [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting).
 - [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection).
-- [Créer des tâches automatisées (CRON) sur votre hébergement Web](/pages/web_cloud/web_hosting/cron_tasks).
+- [Créer des tâches automatisées (CRON) sur votre hébergement web](/pages/web_cloud/web_hosting/cron_tasks).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
