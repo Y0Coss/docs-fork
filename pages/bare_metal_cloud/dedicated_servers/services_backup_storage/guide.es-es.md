@@ -84,31 +84,29 @@ para así poder recuperar los backups desde un servicio de otra localización.
 > Solo es posible autorizar las direcciones IP de OVHcloud.
 >
 
-Conéctese a [api.ovh.com](https://api.ovh.com/) y utilice la siguiente llamada:
+Accedi alla [console API OVHcloud](/links/api) con le credenziali del tuo account cliente e utilizza la chiamata seguente:
 
 > [!api]
 >
 > @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/features/backupFTP/access
 >
 
-Introduzca los campos de la siguiente forma:
+Modificare le impostazioni come indicato di seguito:
 
-- `serviceName` \: el nombre de su servidor dedicado
-- `cifs`\: marque si es necesario
-- `ftp`\: marque si es necesario
-- `ipBlock`\: introduzca la IP con el formato `1.2.3.4/32`
-- `nfs`\: marque si es necesario
+- `serviceName`: inserisci il nome interno del tuo server (`ns1111111.ip-203-0-113.eu`).
+- `cifs`: se utilizzate questo protocollo, impostate questo parametro su `true`.
+- `ftp`: se utilizzate questo protocollo, impostate questo parametro su `true`.
+- `ipBlock`: inserisci l’indirizzo IP che vi avrà accesso, nella forma `203.0.113.100/32`.
+- `nfs`: se utilizzate questo protocollo, impostate questo parametro su `true`.
 
-![apiacladdress](images/aclapi01.png){.thumbnail}
+Clicca sul pulsante `EXECUTE`{.action}.
 
-Para comprobar que su dirección IP está autorizada, utilice la siguiente llamada:
+Per verificare che il tuo indirizzo IP sia autorizzato, utilizza questa chiamata:
 
 > [!api]
 >
 > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/featuras/backupFTP/access
 >
-
-![apiacladdress](images/aclapi02.png){.thumbnail}
 
 ### Restaurar la contraseña
 
