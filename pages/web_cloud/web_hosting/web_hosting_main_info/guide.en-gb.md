@@ -111,7 +111,7 @@ The information contained in this guide concerns the versions of **PHP**, **Pyth
 
 For more details on PHP end-of-life and support dates, as well as information on runtime environments, please refer to our guides:
 
-- “[PHP - End-of-Support & End-Of-Life announcements](/pages/web_cloud/web_hosting/php_eol_eos)”.
+- [PHP - End-of-Support & End-Of-Life announcements](/pages/web_cloud/web_hosting/php_eol_eos).
 - “[Web Hosting - Environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)”.
 
 ## Go further
