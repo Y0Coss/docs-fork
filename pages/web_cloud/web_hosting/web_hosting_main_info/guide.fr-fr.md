@@ -1,8 +1,7 @@
 ---
 title: "Hébergement Web - Versions disponibles des langages"
 excerpt: "Découvrez le détail des versions des langages (Apache, PHP, Python, Perl) pour les offres d'hébergement Web OVHcloud"
-updated: 2025-04-03
-flag: hidden
+updated: 2025-04-04
 ---
 
 ## Objectif
