@@ -419,7 +419,7 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
 * **HostName**: nazwa Twojej usługi Backup Storage.
-* **ServiceName**: nazwa Twojego serwera (np: ns0000000.ip-123-123-123.net).
+* **ServiceName**: nazwa Twojego serwera (np: `ns1111111.ip-203-0-113.eu`).
 * **FolderMount**: katalog w którym chcesz zamontować zasób NFS.
 
 Po zamontowaniu zasobu możesz używać komend, takich jak **cp** i rsync, tak jak ma to miejsce w przypadku zwykłego katalogu.
@@ -437,7 +437,7 @@ net use z: \\HostName\ServiceName
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
 * **HostName**: nazwa Twojej usługi Backup Storage.
-* **ServiceName**: nazwa Twojego serwera (np: ns0000000.ip-123-123-123.net).
+* **ServiceName**: nazwa Twojego serwera (np: `ns1111111.ip-203-0-113.eu`).
 
 Może pojawić się następujący komunikat o błędzie:
 
@@ -477,7 +477,7 @@ mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password=
 Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi danymi.
 
 * **HostName**: nazwa Twojej usługi Backup Storage.
-* **ServiceName**: nazwa Twojego serwera (np: ns0000000.ip-123-123-123.net).
+* **ServiceName**: nazwa Twojego serwera (np: `ns1111111.ip-203-0-113.eu`).
 * **FolderMount**: katalog, w którym chcesz zamontować zasób (powinien już istnieć).
 
 ## Sprawdź również

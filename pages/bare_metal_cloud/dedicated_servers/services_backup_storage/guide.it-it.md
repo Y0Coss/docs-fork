@@ -311,7 +311,7 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
 * **HostName**: nome del Backup Storage
-* **ServiceName**: nome del server (ex:ns0000000.ip-123-123-123.net)
+* **ServiceName**: nome del server (ex:`ns1111111.ip-203-0-113.eu`)
 * **FolderMount**: cartella in cui vuoi eseguire il mount della share NFS
 
 Una volta effettuato il mount della share, è possibile utilizzare comandi come **cp** e **rsync** come in una normale directory.
@@ -329,7 +329,7 @@ net use z: \\HostName\ServiceName
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
 * **HostName**: nome del Backup Storage
-* **ServiceName**: nome del server (ex:ns0000000.ip-123-123-123.net)
+* **ServiceName**: nome del server (ex:`ns1111111.ip-203-0-113.eu`)
 
 È possibile che venga visualizzato il seguente messaggio di errore:
 
@@ -369,7 +369,7 @@ mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password=
 Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 
 * **HostName**: nome del Backup Storage
-* **ServiceName**: nome del server (ex:ns0000000.ip-123-123-123.net)
+* **ServiceName**: nome del server (ex:`ns1111111.ip-203-0-113.eu`)
 * **FolderMount**: la cartella in cui vuoi effettuare il mount della share (dovrebbe essere già esistente)
 
 ## Per saperne di più

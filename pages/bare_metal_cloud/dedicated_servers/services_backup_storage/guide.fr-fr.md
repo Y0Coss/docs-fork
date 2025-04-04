@@ -312,7 +312,7 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
 * **HostName** : le nom de votre Backup Storage.
-* **ServiceName** : le nom de votre serveur (exemple : « ns0000000.ip-123-123-123.net »).
+* **ServiceName** : le nom de votre serveur (exemple : « `ns1111111.ip-203-0-113.eu` »).
 * **FolderMount** : le répertoire où vous souhaitez monter le partage NFS.
 
 Une fois le partage monté, vous pouvez utiliser des commandes telles que **cp** et \`rsync\` comme vous le feriez avec un répertoire normal.
@@ -330,7 +330,7 @@ net use z: \\HostName\ServiceName
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
 * **HostName** : le nom de votre Backup Storage.
-* **ServiceName** : le nom de votre serveur (exemple : « ns0000000.ip-123-123-123.net »).
+* **ServiceName** : le nom de votre serveur (exemple : « `ns1111111.ip-203-0-113.eu` »).
 
 Le message d'erreur suivant peut s'afficher :  
 
@@ -370,7 +370,7 @@ mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password=
 L'exemple de code ci-dessus contient des variables que vous devrez remplacer par vos propres valeurs.
 
 * **HostName** : le nom de votre Backup Storage.
-* **ServiceName** : le nom de votre serveur (exemple : « ns0000000.ip-123-123-123.net »).
+* **ServiceName** : le nom de votre serveur (exemple : « `ns1111111.ip-203-0-113.eu` »).
 * **FolderMount** : le répertoire où vous souhaitez monter le partage (il doit déjà exister).
 
 ## Aller plus loin

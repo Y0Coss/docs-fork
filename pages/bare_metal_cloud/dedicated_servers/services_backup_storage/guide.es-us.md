@@ -310,7 +310,7 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
 * **HostName**: Nombre del Backup Storage
-* **ServiceName**: Nombre del servidor (p. ej., ns0000000.ip-123-123-123.net)
+* **ServiceName**: Nombre del servidor (p. ej., `ns1111111.ip-203-0-113.eu`)
 * **FolderMount**: Directorio en el que quiere montar la partición NFS
 
 Una vez montada la partición, puede utilizar comandos como `cp` y `rsync` como lo haría con un directorio normal.
@@ -328,7 +328,7 @@ net use z: \\HostName\ServiceName
 En el comando anterior, sustituya las siguientes variables por el valor correspondiente:
 
 * **HostName**: Nombre del Backup Storage
-* **ServiceName**: Nombre del servidor (p. ej., ns0000000.ip-123-123-123.net)
+* **ServiceName**: Nombre del servidor (p. ej., `ns1111111.ip-203-0-113.eu`)
 
 
 Puede aparecer el siguiente mensaje de error:
@@ -371,7 +371,7 @@ En el comando anterior, sustituya las siguientes variables por el valor correspo
 
 * **RootPassword**: Contraseña SSH del usuario root del servidor (no se mostrará al escribirla)
 * **HostName**: Nombre del Backup Storage
-* **ServiceName**: Nombre del servidor (p. ej., ns0000000.ip-123-123-123.net)
+* **ServiceName**: Nombre del servidor (p. ej., `ns1111111.ip-203-0-113.eu`)
 * **FolderMount**: Directorio en el que quiere montar la partición (es necesario que ya exista)
 
 ## Más información
