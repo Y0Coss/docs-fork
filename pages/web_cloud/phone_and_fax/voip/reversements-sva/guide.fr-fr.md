@@ -1,7 +1,7 @@
 ---
 title: "Gérer les reversements ou les coûts de vos numéros spéciaux"
 excerpt: "Découvrez comment gérer les reversements et les coûts de vos numéros spéciaux SVA depuis l'espace client OVHcloud"
-updated: 2025-03-28
+updated: 2025-04-04
 ---
 
 ## Objectif
@@ -59,15 +59,7 @@ Les reversements de tous vos numéros surtaxés sont visibles dans le menu `Gér
 
 Vous pouvez y consulter l'historique des appels sur vos numéros ainsi que les reversements correspondants.
 
-Lorsque le cumul de vos reversements disponibles atteint la somme de 30 €, un virement bancaire est automatiquement effectué, **après un délai légal de 3 mois**, vers le compte bancaire spécifié sur cette page.
-
-> [!primary]
-> **Exemple :**
->
-> - Vos appels entrants sur vos numéros surtaxés ont généré 25 € de reversements entre le 1er janvier et le 31 mars.
-> - Par la suite, vos appels ont généré 6 € de reversements entre le 1er avril et le 30 avril.
-> - Le seuil de 30 € est atteint le 30 avril.
-> - Un virement bancaire de 31 € (25 € + 6 €) vous sera automatiquement effectué à compter du 30 juillet.
+Lorsque le cumul de vos reversements disponibles atteint la somme de 30 €, un virement bancaire est automatiquement effectué, **après un délai minimum de 60 jours calendaires**, vers le compte bancaire spécifié sur cette page.
 
 Le cas échéant, cliquez sur `Modifier mes coordonnées bancaires`{.action} si celles-ci sont erronées.
 
