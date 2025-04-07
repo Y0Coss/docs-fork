@@ -24,7 +24,7 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> - ¿Quiere migrar un sitio web existente a otro proveedor de hosting? Consulte directamente nuestra guía dedicada: [Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+> - ¿Quiere migrar un sitio web existente en otro proveedor de hosting? Consulte directamente nuestra guía dedicada: [Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 > - ¿Desea solo una página de inicio sencilla para su actividad profesional? Consulte nuestra guía dedicada: [Web hosting - Activar el alojamiento gratuito 100M](/pages/web_cloud/web_hosting/activate_start10m).
 
 ## Requisitos

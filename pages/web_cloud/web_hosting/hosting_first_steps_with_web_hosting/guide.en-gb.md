@@ -24,16 +24,16 @@ Want to create a website for your business or a personal blog? Need an e-commerc
 
 > [!primary]
 >
-> - Want to migrate an existing website to another hosting provider? Read our dedicated guide directly: [Migrating your website and associated services to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+> - Want to migrate an existing website from another hosting provider? Read directly our dedicated guide: [Migrating your website and associated services to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 > - You only want a simple homepage for your professional activity? Read our dedicated guide: [Web Hosting - Activate free 100M hosting](/pages/web_cloud/web_hosting/activate_start10m).
 
 ## Requirements
 
-- A [OVHcloud Web Hosting](/links/web/hosting) plan with at least one database available (apart from the free 100M hosting offer)
-- An email confirming that your web hosting plan has been set up
-- A [domain name](/links/web/domains) and an associated DNS zone at OVHcloud
-- Access to the [OVHcloud Control Panel](/links/manager), in the section `Web Cloud`{.action}
-- Access to all these services (Web Hosting, Domain name, DNS zone) from a single OVHcloud account
+- A [OVHcloud Web Hosting](/links/web/hosting) plan with at least one database available (apart from the free 100M hosting offer).
+- An email confirming that your web hosting plan has been set up.
+- A [domain name](/links/web/domains) and an associated DNS zone at OVHcloud.
+- Access to the [OVHcloud Control Panel](/links/manager), in the section `Web Cloud`{.action}.
+- Access to all these services (Web Hosting, Domain name, DNS zone) from a single OVHcloud account.
 
 ## Instructions
 

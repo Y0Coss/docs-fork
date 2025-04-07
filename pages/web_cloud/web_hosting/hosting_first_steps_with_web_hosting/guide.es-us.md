@@ -24,7 +24,7 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> - ¿Quiere migrar un sitio web existente a otro proveedor de hosting? Consulte directamente nuestra guía dedicada: [Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+> - ¿Quiere migrar un sitio web existente en otro proveedor de hosting? Consulte directamente nuestra guía dedicada: [Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 ## Requisitos
 
