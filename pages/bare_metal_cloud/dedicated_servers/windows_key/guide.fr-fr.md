@@ -1,5 +1,5 @@
 ---
-title: 'Corriger la clé d’activation Windows Server'
+title: "Corriger la clé d’activation Windows Server"
 excerpt: "Découvrez comment modifier la clé d'activation de votre Windows Server"
 updated: 2022-07-07
 ---
@@ -35,6 +35,7 @@ cscript.exe c:\windows\system32\slmgr.vbs -upk
 ### Ajouter la nouvelle clé
 
 Vous pouvez désormais ajouter la nouvelle clé. Pour cela, retournez à nouveau dans l'utilitaire `Exécuter`{.action} et renseignez la commande suivante :
+
 ```bash
 cscript.exe c:\windows\system32\slmgr.vbs -ipk CLEF KMS
 ```

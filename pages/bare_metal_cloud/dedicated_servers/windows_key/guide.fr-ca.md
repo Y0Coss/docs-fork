@@ -1,5 +1,5 @@
 ---
-title: 'Corriger la clé d’activation Windows Server'
+title: "Corriger la clé d’activation Windows Server"
 excerpt: "Découvrez comment modifier la clé d'activation de votre Windows Server"
 updated: 2022-07-07
 ---
@@ -61,6 +61,7 @@ cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net
 > 
 
 ### Activer le système
+
 Enfin, pour activer votre système Windows, il vous reste désormais à effectuer la commande ci-dessous :
 
 ```bash
