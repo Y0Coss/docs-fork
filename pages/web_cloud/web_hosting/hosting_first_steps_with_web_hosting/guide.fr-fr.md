@@ -25,7 +25,7 @@ Vous souhaitez créer un site Internet pour votre entreprise ou un blog personne
 > [!primary]
 >
 > - Vous souhaitez migrer un site web existant déjà chez un autre hébergeur ? Consultez directement notre guide dédié : [Migrer son site web et ses services associés vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
-> - Vous souhaitez uniquement une page d'accueil simple pour votre activité professionnelle ? Consultez notre guide dédié: [Hébergement web - Activer l’hébergement gratuit 100M](/pages/web_cloud/web_hosting/activate_start10m).
+> - Vous souhaitez uniquement une page d'accueil simple pour votre activité professionnelle ? Consultez notre guide dédié : [Hébergement web - Activer l’hébergement gratuit 100M](/pages/web_cloud/web_hosting/activate_start10m).
 
 ## Prérequis
 
