@@ -59,6 +59,8 @@ A user guide for Zimbra is now available at [this address](/pages/web_cloud/emai
 
 Visit our page “[Configuring your Zimbra email address in an email client](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)”.
 
+///
+
 ### Questions on MX Plan migration to Zimbra solution
 
 As part of the MX Plan solution upgrade, a migration is planned from the current webmail using Outlook Web App (OWA) to the Zimbra solution's webmail.
