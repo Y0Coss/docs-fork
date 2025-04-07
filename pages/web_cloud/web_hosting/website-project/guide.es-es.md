@@ -12,15 +12,15 @@ OVHcloud ofrece [varios planes de hosting](/links/web/hosting). Están diseñada
 - Crear rápidamente un sitio web (profesional o no), un blog, un **C**ontent **M**anagement **S**ystem (**CMS**) como *WordPress*, *Joomla!*, *PrestaShop* o *Drupal*, o una tienda online.
 - Personalizar una o varias direcciones de correo electrónico con el nombre de dominio que quiera utilizar para su sitio web.
 - Gestionar varios sitios web en un único plan de hosting.
-- Disponer de una o varias bases de datos ([incluidas con algunos de nuestros planes de hosting](/links/web/hosting).
-- etc.
+- Disponer de una o varias bases de datos (incluidas con algunos de nuestros [planes de hosting](/links/web/hosting)).
+- Etc.
 
 Estos planes le ahorran gestionar el mantenimiento, la actualización y la seguridad de una infraestructura de alojamiento web.<br>
 Le permiten ahorrar tiempo en la "administración del servidor" y concentrarse únicamente en:
 
-- el desarrollo, la actualización y la seguridad de un sitio web, blog, CMS o tienda online;
-- la seguridad y la optimización de una o varias bases de datos, si su solución dispone de ellas;
-- la configuración y la gestión de sus direcciones de correo electrónico incluidas con su plan de hosting.
+- El desarrollo, la actualización y la seguridad de un sitio web, blog, CMS o tienda online;
+- La seguridad y la optimización de una o varias bases de datos, si su solución dispone de ellas;
+- La configuración y la gestión de sus direcciones de correo electrónico incluidas con su plan de hosting.
 
 **Descubra cómo asociar un dominio, publicar un sitio web y crear una o varias direcciones de correo electrónico con un alojamiento web.**
 
@@ -81,10 +81,10 @@ En este caso, puede elegir entre varias soluciones.
 
 Para más información, consulte nuestra guía "[Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". En esta guía encontrará todos los pasos necesarios para:
 
-- situar su sitio web en el espacio de almacenamiento FTP de su alojamiento web;
-- crear una base de datos asociada a su alojamiento web;
-Colocar la base de datos local en la base de datos asociada a su alojamiento web;
-- vincular la base de datos al sitio web alojado en un alojamiento web.
+- Situar su sitio web en el espacio de almacenamiento FTP de su alojamiento web;
+- Crear una base de datos asociada a su alojamiento web;
+- Colocar la base de datos local en la base de datos asociada a su alojamiento web;
+- Vincular la base de datos al sitio web alojado en un alojamiento web.
 
 ##### Caso n°2 - Crear un sitio web utilizando un CMS
 
@@ -129,8 +129,8 @@ En efecto, la conexión entre su dominio y sus servicios (alojamiento web, servi
 
 Para comprobar y/o modificar la conexión entre su dominio y su alojamiento web, **consulte las siguientes guías en orden:**
 
-- [Direcciones IP de los clusters y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP): en ella encontrará todas las direcciones IP de nuestra infraestructura de alojamientos web. Esta guía explica cómo utilizar un dominio con una zona DNS activa que no esté gestionada en OVHcloud (o que esté gestionada en una cuenta de cliente de OVHcloud distinta de la suya).
-- [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite): esta guía explica cómo añadir varios dominios a un alojamiento web. También puede ayudarle a comprobar que la declaración de su dominio en la pestaña `Multisitio`{.action} de su alojamiento web es correcta. Si lo necesita, puede modificarla y, a continuación, hacer lo necesario en la zona DNS activa del dominio.
+- [Direcciones IP de los clusters y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP): En ella encontrará todas las direcciones IP de nuestra infraestructura de alojamientos web. Esta guía explica cómo utilizar un dominio con una zona DNS activa que no esté gestionada en OVHcloud (o que esté gestionada en una cuenta de cliente de OVHcloud distinta de la suya).
+- [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite): Esta guía explica cómo añadir varios dominios a un alojamiento web. También puede ayudarle a comprobar que la declaración de su dominio en la pestaña `Multisitio`{.action} de su alojamiento web es correcta. Si lo necesita, puede modificarla y, a continuación, hacer lo necesario en la zona DNS activa del dominio.
 - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit): Esta guía explica cómo editar una zona DNS que tenga presencia en OVHcloud. Este servicio le será útil en caso de que la zona DNS activa de su dominio esté presente en una cuenta de cliente de OVHcloud diferente a la suya. También puede utilizarlo para acceder a la zona DNS de OVHcloud de su dominio, con el fin de comprobar que la dirección IP (entrada(s) de tipo *A* y/o *AAAA*) declarada para su dominio en la zona DNS corresponde a la dirección IP de su alojamiento web.
 
 Para comprobar o modificar la conexión entre su dominio y su solución de correo de OVHcloud, consulte la guía "[Configurar un registro MX para la gestión del correo](/pages/web_cloud/domains/dns_zone_mx)", en la que encontrará los nombres de los servidores de correo de OVHcloud, así como el procedimiento a seguir para que su dominio apunte hacia esos mismos servidores.
@@ -139,9 +139,9 @@ Para comprobar o modificar la conexión entre su dominio y su solución de corre
 >
 > Si la zona DNS activa para su dominio no está gestionada en OVHcloud:
 > 
-> - **Para la conexión entre su nombre de dominio y su alojamiento web**, consulte únicamente las guías "[Direcciones IP de los clusters y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)" y "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)", antes citadas, para obtener la dirección IP de su alojamiento web y, a continuación, declare correctamente el dominio en su alojamiento web. A continuación, póngase en contacto con el organismo que gestiona la zona DNS activa de su dominio para que apunte hacia su alojamiento web.
+> - **Para la conexión entre su nombre de dominio y su alojamiento web**: Consulte únicamente las guías "[Direcciones IP de los clusters y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)" y "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)", antes citadas, para obtener la dirección IP de su alojamiento web y, a continuación, declare correctamente el dominio en su alojamiento web. A continuación, póngase en contacto con el organismo que gestiona la zona DNS activa de su dominio para que apunte hacia su alojamiento web.
 >
-> - **Para la conexión entre su nombre de dominio y su solución de correo electrónico de OVHcloud**, consulte únicamente la guía "[Configurar un registro MX para la gestión del correo](/pages/web_cloud/domains/dns_zone_mx)" para obtener los nombres de los servidores de correo de OVHcloud que deben introducirse en la zona DNS activa de su dominio. A continuación, póngase en contacto con el organismo que gestiona la zona DNS activa de su dominio para que este apunte hacia los servidores de correo de OVHcloud.
+> - **Para la conexión entre su nombre de dominio y su solución de correo electrónico de OVHcloud**: Consulte únicamente la guía "[Configurar un registro MX para la gestión del correo](/pages/web_cloud/domains/dns_zone_mx)" para obtener los nombres de los servidores de correo de OVHcloud que deben introducirse en la zona DNS activa de su dominio. A continuación, póngase en contacto con el organismo que gestiona la zona DNS activa de su dominio para que este apunte hacia los servidores de correo de OVHcloud.
 >
 
 ### Etapa 5 - Otras opciones disponibles con los alojamientos web <a name="other-options"></a>

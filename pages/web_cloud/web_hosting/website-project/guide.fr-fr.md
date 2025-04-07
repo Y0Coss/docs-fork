@@ -20,21 +20,21 @@ details[open]>summary::before {
 
 ## Objectif
 
-OVHcloud propose [plusieurs offres d'hébergement web](/links/web/hosting). Elles sont conçues pour différents cas d'usage :
+OVHcloud propose plusieurs offres d'[hébergement web](/links/web/hosting). Elles sont conçues pour différents cas d'usage :
 
 - Débuter sur le Web.
 - Créer rapidement un site web (professionnel ou non), un blog, un **C**ontent **M**anagement **S**ystem (**CMS**) tel que *WordPress*, *Joomla!*, *PrestaShop* ou *Drupal* ou encore une boutique en ligne.
 - Personnaliser une ou plusieurs adresses e-mail avec le nom de domaine que vous souhaitez utiliser pour votre site web.
 - Gérer plusieurs sites web sur une seule offre d'hébergement web.
-- Disposer d'une ou plusieurs bases de données ([incluses avec certaines de nos offres d'hébergement web](/links/web/hosting)).
-- etc.
+- Disposer d'une ou de plusieurs base(s) de données (incluses avec certaines de nos [offres d'hébergement web](/links/web/hosting)).
+- Etc.
 
 Ces offres vous épargnent de gérer la maintenance, la mise à jour et la sécurité d'une infrastructure d'hébergement web.<br>
 Elles vous permettent de gagner du temps sur « l'administration serveur » et de vous concentrer uniquement sur :
 
-- le développement, la mise à jour et la sécurité d'un site web, blog, CMS ou boutique en ligne ;
-- la sécurité et l'optimisation d'une ou plusieurs base(s) de données si votre offre en dispose ;
-- la configuration et la gestion de vos adresses e-mail incluses avec votre offre d'hébergement web.
+- Le développement, la mise à jour et la sécurité d'un site web, blog, CMS ou boutique en ligne;
+- La sécurité et l'optimisation d'une ou de plusieurs bases de données si votre offre en dispose;
+- La configuration et la gestion de vos adresses e-mail incluses avec votre offre d'hébergement web.
 
 **Découvrez comment mettre en ligne votre site web et créer des adresses e-mail avec votre solution d'hébergement web.**
 
@@ -67,11 +67,11 @@ Vous pouvez ainsi utiliser ce guide comme un « référentiel » d'actions possi
 
 ### Étape 1 - Délimiter votre projet <a name="project-delimitation"></a>
 
-Avant de commencer, il est essentiel d'identifier et de délimiter clairement vos besoins en vous posant les questions suivantes : 
+Avant de commencer, il est essentiel d'identifier et de délimiter clairement vos besoins en vous posant les questions suivantes :
 
 - Est-ce que je dois **créer** ou **migrer** (depuis un autre hébergeur) mon site web ?
 - Ai-je besoin d'une ou de plusieurs base(s) de données pour faire fonctionner mon site web ?
-- Ai-je besoin d'une ou de plusieurs adresses(s) e-mail personnalisée(s) avec mon nom de domaine ?
+- Ai-je besoin d'une ou de plusieurs adresse(s) e-mail personnalisée(s) avec mon nom de domaine ?
 
 En fonction de vos réponses, vérifiez que votre offre d'[hébergement web](/links/web/hosting) correspond bien à tous vos besoins avant de poursuivre.
 
@@ -115,10 +115,10 @@ Vous pouvez choisir de créer vous-même intégralement votre site web ou d'util
 >
 >> Pour ce cas de figure, nous vous invitons à suivre directement notre guide « [Mettre en ligne un site web sur son hébergement web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) ». Vous y retrouverez toutes les étapes à réaliser pour :
 >>
->> - placer votre site web sur l'espace de stockage FTP de votre hébergement web ;
->> - créer une base de données associée à votre hébergement web ;
->> - placer votre base de données locale sur la base de données liée à votre hébergement web ;
->> - lier votre base de données au site web présent sur votre hébergement web.
+>> - Placer votre site web sur l'espace de stockage FTP de votre hébergement web;
+>> - Créer une base de données associée à votre hébergement web;
+>> - Placer votre base de données locale sur la base de données liée à votre hébergement web;
+>> - Lier votre base de données au site web présent sur votre hébergement web.
 >>
 
 ///
@@ -162,19 +162,19 @@ En effet, la liaison entre votre nom de domaine et vos services (hébergement we
 
 Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre hébergement web, **consultez les guides suivants dans l'ordre :**
 
-- [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) : vous y trouverez l'ensemble des adresses IP de notre infrastructure d'hébergements web. Ce guide vous aidera particulièrement pour les noms de domaine dont la zone DNS active n'est pas gérée chez OVHcloud (ou gérée sur un autre compte client OVHcloud que le vôtre).
-- [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) : ce guide explique comment ajouter plusieurs noms de domaine à un hébergement web. Il peut aussi vous aider à vérifier que la déclaration de votre nom de domaine dans l'onglet `Multisite`{.action} de votre hébergement web est correcte. Le cas échéant, vous pourrez ainsi la modifier puis faire le nécessaire au niveau de la zone DNS active de votre nom de domaine.
-- [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) : ce guide vous explique comment éditer une zone DNS présente chez OVHcloud. Il vous servira dans le cas où la zone DNS active de votre nom de domaine est présente sur un autre compte client OVHcloud que le vôtre. Il peut aussi vous servir à accéder à la zone DNS OVHcloud de votre nom de domaine, afin de vérifier que l'adresse IP (entrée(s) de type *A* et/ou *AAAA*) déclarée pour votre nom de domaine dans la zone DNS correspond à l'adresse IP de votre hébergement web.
+- [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) : Vous y trouverez l'ensemble des adresses IP de notre infrastructure d'hébergements web. Ce guide vous aidera particulièrement pour les noms de domaine dont la zone DNS active n'est pas gérée chez OVHcloud (ou gérée sur un autre compte client OVHcloud que le vôtre).
+- [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) : Ce guide explique comment ajouter plusieurs noms de domaine à un hébergement web. Il peut aussi vous aider à vérifier que la déclaration de votre nom de domaine dans l'onglet `Multisite`{.action} de votre hébergement web est correcte. Le cas échéant, vous pourrez ainsi la modifier puis faire le nécessaire au niveau de la zone DNS active de votre nom de domaine.
+- [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) : Ce guide vous explique comment éditer une zone DNS présente chez OVHcloud. Il vous servira dans le cas où la zone DNS active de votre nom de domaine est présente sur un autre compte client OVHcloud que le vôtre. Il peut aussi vous servir à accéder à la zone DNS OVHcloud de votre nom de domaine, afin de vérifier que l'adresse IP (entrée(s) de type *A* et/ou *AAAA*) déclarée pour votre nom de domaine dans la zone DNS correspond à l'adresse IP de votre hébergement web.
 
-Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre offre e-mail OVHcloud, consultez le guide « [Configurer un enregistrement MX pour la gestion des emails](/pages/web_cloud/domains/dns_zone_mx) » : vous y trouverez les noms des serveurs e-mail OVHcloud mais aussi la procédure à suivre pour faire pointer votre nom de domaine vers ces mêmes serveurs.
+Pour vérifier et/ou modifier la liaison entre votre nom de domaine et votre offre e-mail OVHcloud, consultez le guide « [Configurer un enregistrement MX pour la gestion des emails](/pages/web_cloud/domains/dns_zone_mx) ». Vous y trouverez les noms des serveurs e-mail OVHcloud mais aussi la procédure à suivre pour faire pointer votre nom de domaine vers ces mêmes serveurs.
 
 > [!primary]
 >
 > Si la zone DNS active pour votre nom de domaine n'est pas gérée chez OVHcloud :
 > 
-> - **Pour la liaison entre votre nom de domaine et votre hébergement web** : consultez uniquement les guides « [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) » et « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » cités ci-dessus pour récupérer l'adresse IP de votre hébergement web, puis déclarez correctement votre nom de domaine sur votre hébergement web. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers votre hébergement web.
+> - **Pour la liaison entre votre nom de domaine et votre hébergement web** : Consultez uniquement les guides « [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) » et « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » cités ci-dessus pour récupérer l'adresse IP de votre hébergement web, puis déclarez correctement votre nom de domaine sur votre hébergement web. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers votre hébergement web.
 >
-> - **Pour la liaison entre votre nom de domaine et votre offre e-mail OVHcloud** : consultez uniquement le guide « [Configurer un enregistrement MX pour la gestion des emails](/pages/web_cloud/domains/dns_zone_mx) » pour récupérer les noms des serveurs e-mail OVHcloud à renseigner dans la zone DNS active de votre nom de domaine. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers les serveurs e-mail OVHcloud.
+> - **Pour la liaison entre votre nom de domaine et votre offre e-mail OVHcloud** : Consultez uniquement le guide « [Configurer un enregistrement MX pour la gestion des emails](/pages/web_cloud/domains/dns_zone_mx) » pour récupérer les noms des serveurs e-mail OVHcloud à renseigner dans la zone DNS active de votre nom de domaine. Contactez ensuite l'organisme qui gère la zone DNS active de votre nom de domaine pour faire pointer celui-ci vers les serveurs e-mail OVHcloud.
 >
 
 ### Étape 5 - Autres options disponibles avec les hébergements web <a name="other-options"></a>
@@ -195,7 +195,7 @@ Pour plus de détails sur les certificats SSL (gratuits ou payants) proposés su
 
 /// details | Les offres CDN
 
-Toutes nos offres CDN permettent de mettre en cache une partie de votre site web. Ainsi, les temps de chargement des pages qui constituent votre site web sont réduits, notamment pour les visiteurs géographiquement éloignés du data centre où votre hébergement web est .
+Toutes nos offres CDN permettent de mettre en cache une partie de votre site web. Ainsi, les temps de chargement des pages qui constituent votre site web sont réduits, notamment pour les visiteurs géographiquement éloignés du data centre où votre hébergement web est situé.
 
 Avec les hébergements web, OVHcloud propose 3 offres CDN :
 

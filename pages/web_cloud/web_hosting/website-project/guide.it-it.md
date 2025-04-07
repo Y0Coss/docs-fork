@@ -12,24 +12,24 @@ OVHcloud propone [diverse soluzioni di hosting Web](/links/web/hosting). Sono co
 - creare rapidamente un sito Web (professionale o meno), un blog, un **C**ontent **M**anagement **S**ystem (**CMS**) come *WordPress*, *Joomla!*, *PrestaShop* o *Drupal* o ancora un negozio online.
 - Personalizzare uno o più indirizzi email con il dominio che vuoi utilizzare per il tuo sito Web.
 - Gestire più siti Web su una sola offerta di hosting Web.
-- Disporre di uno o più database ([inclusi con alcune delle nostre soluzioni di hosting Web](/links/web/hosting)).
-- ecc.
+- Disporre di uno o più database (inclusi con alcune delle nostre [soluzioni di hosting Web](/links/web/hosting)).
+- Ecc.
 
 Queste offerte ti risparmiano la necessità di gestire la manutenzione, l'aggiornamento e la sicurezza di un'infrastruttura di hosting Web.<br>
 che permettono di risparmiare tempo sull’"amministrazione server" e di concentrarsi esclusivamente su:
 
-- lo sviluppo, l'aggiornamento e la sicurezza di un sito web, blog, CMS o negozio online;
-- la sicurezza e l'ottimizzazione di uno o più database, se disponibili;
-- la configurazione e la gestione degli indirizzi email inclusi nel piano di hosting Web.
+- Lo sviluppo, l'aggiornamento e la sicurezza di un sito web, blog, CMS o negozio online;
+- La sicurezza e l'ottimizzazione di uno o più database, se disponibili;
+- La configurazione e la gestione degli indirizzi email inclusi nel piano di hosting Web.
 
 **Questa guida ti mostra come collegare il dominio, pubblicare il sito Web e creare uno o più indirizzi email con l’hosting Web.**
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](/links/web/hosting) attivo
-- Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
-- Disporre di un [dominio](/links/web/domains)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un piano di [hosting Web](/links/web/hosting) attivo.
+- Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web.
+- Disporre di un [dominio](/links/web/domains).
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 
@@ -71,7 +71,7 @@ Sono possibili due scenari: **migrare** un sito Web esistente oppure **creare** 
 
 #### Migrare il tuo sito Web
 
-Per migrare un sito Web da un altro provider, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli step chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc...).
+Per migrare un sito Web da un altro provider, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli step chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc.).
 
 #### Crea il tuo nuovo sito Web
 
@@ -81,10 +81,10 @@ In questo caso, sono disponibili diverse soluzioni.
 
 In questo caso, è possibile consultare la guida "[Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". In questa interfaccia sono disponibili tutti gli step necessari per:
 
-- collocare il sito Web sullo spazio di storage FTP dell’hosting Web;
-- creare un database associato all’hosting Web;
-- posizionare il database locale sul database associato all’hosting Web;
-- associare il database al sito web presente sul tuo hosting web.
+- Collocare il sito Web sullo spazio di storage FTP dell’hosting Web;
+- Creare un database associato all’hosting Web;
+- Posizionare il database locale sul database associato all’hosting Web;
+- Associare il database al sito web presente sul tuo hosting web.
 
 ##### Caso n°2 - Creare un sito Web utilizzando un CMS
 
@@ -108,7 +108,7 @@ Una volta attivata l’opzione, consulta la nostra guida "[Creare un account ema
 
 > **Casi Speciali:**
 >
-> - In caso di migrazione di un sito Web e/o di indirizzi email associati al dominio del sito Web, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli step chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc...).
+> - In caso di migrazione di un sito Web e/o di indirizzi email associati al dominio del sito Web, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli step chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc.).
 >
 > - Se non hai associato un dominio al momento dell’ordine del tuo hosting Web e vuoi usufruire dell’opzione "indirizzo/i email incluso/i con il tuo hosting Web", è necessario effettuare l’operazione manualmente dallo [Spazio Cliente OVHcloud](/links/manager).
 
@@ -116,7 +116,7 @@ Una volta attivata l’opzione, consulta la nostra guida "[Creare un account ema
 
 In questa fase è necessario che il sito Web sia installato sull’hosting Web e che gli indirizzi email creati siano corretti. È possibile che questi elementi non siano ancora operativi finché la configurazione del dominio con i nuovi servizi non sarà completa.
 
-Infatti, il collegamento tra il dominio e i servizi (hosting Web, server di posta, ecc...) avviene essenzialmente tramite la zona DNS attiva del dominio e i record DNS in essa contenuti.
+Infatti, il collegamento tra il dominio e i servizi (hosting Web, server di posta, ecc.) avviene essenzialmente tramite la zona DNS attiva del dominio e i record DNS in essa contenuti.
 
 > [!primary]
 >
@@ -125,13 +125,13 @@ Infatti, il collegamento tra il dominio e i servizi (hosting Web, server di post
 
 > **Casi Speciali:**
 >
-> In caso di migrazione di un sito Web e/o di indirizzi email associati al dominio del sito Web, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli step chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc...).
+> In caso di migrazione di un sito Web e/o di indirizzi email associati al dominio del sito Web, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli step chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc.).
 
 Per verificare o modificare il collegamento tra il tuo dominio e il tuo hosting Web, **consulta le seguenti guide nell'ordine:**
 
-- [Lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) : in questa lista sono disponibili tutti gli indirizzi IP della nostra infrastruttura di hosting Web. Questa guida ti mostra la procedura da seguire per i domini la cui zona DNS attiva non è gestita in OVHcloud (o è gestita su un account cliente OVHcloud diverso dal tuo).
-- [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite): questa guida ti mostra come aggiungere più domini a un hosting Web. Può anche aiutarti a verificare che la dichiarazione del tuo dominio nella scheda `Multisito`{.action} del tuo hosting Web sia corretta. In questo modo è possibile apportare le modifiche necessarie alla zona DNS attiva del dominio.
-- [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit): questa guida ti mostra come modificare una zona DNS presente in OVHcloud. e sarà disponibile nel caso in cui la zona DNS attiva del dominio sia presente su un account cliente OVHcloud diverso dal proprio. Può anche servire ad accedere alla zona DNS OVHcloud del dominio, per verificare che l’indirizzo IP (record) di tipo *A* e/o *AAAA*) dichiarato per il dominio nella zona DNS corrisponda all’indirizzo IP dell’hosting Web.
+- [Lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP): In questa lista sono disponibili tutti gli indirizzi IP della nostra infrastruttura di hosting Web. Questa guida ti mostra la procedura da seguire per i domini la cui zona DNS attiva non è gestita in OVHcloud (o è gestita su un account cliente OVHcloud diverso dal tuo).
+- [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite): Questa guida ti mostra come aggiungere più domini a un hosting Web. Può anche aiutarti a verificare che la dichiarazione del tuo dominio nella scheda `Multisito`{.action} del tuo hosting Web sia corretta. In questo modo è possibile apportare le modifiche necessarie alla zona DNS attiva del dominio.
+- [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit): Questa guida ti mostra come modificare una zona DNS presente in OVHcloud. e sarà disponibile nel caso in cui la zona DNS attiva del dominio sia presente su un account cliente OVHcloud diverso dal proprio. Può anche servire ad accedere alla zona DNS OVHcloud del dominio, per verificare che l’indirizzo IP (record) di tipo *A* e/o *AAAA*) dichiarato per il dominio nella zona DNS corrisponda all’indirizzo IP dell’hosting Web.
 
 Per verificare e/o modificare il collegamento tra il dominio e il servizio di posta OVHcloud, consulta la guida "[Configurare un record MX per la gestione delle email](/pages/web_cloud/domains/dns_zone_mx)". In questa guida trovi i nomi dei server di posta OVHcloud e la procedura da seguire per far puntare il dominio verso questi server.
 
@@ -204,7 +204,7 @@ Se il tuo piano di [hosting Web](/links/web/hosting) dispone di questa opzione, 
 
 [Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

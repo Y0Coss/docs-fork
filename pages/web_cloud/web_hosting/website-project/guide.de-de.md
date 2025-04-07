@@ -13,7 +13,7 @@ OVHcloud bietet mehrere [Webhostings](/links/web/hosting) an. Sie sind für vers
 - Personalisieren von E-Mail-Adressen mit dem Domainnamen, den Sie für Ihre Website verwenden möchten.
 - Verwaltung mehrerer Websites auf einem einzigen Webhosting.
 - Verwaltung von Datenbanken ([bei einigen unserer Webhostings inklusive](/links/web/hosting)).
-- etc.
+- Etc.
 
 Diese Angebote ersparen Ihnen die Verwaltung der Wartung, der Updates und der Sicherheit einer Webhosting-Infrastruktur.  
 So sparen Sie Zeit bei der Administration und können sich etwa auf Folgendes konzentrieren:

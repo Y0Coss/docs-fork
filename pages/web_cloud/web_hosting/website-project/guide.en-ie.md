@@ -12,8 +12,8 @@ OVHcloud offers [several web hosting plans](/links/web/hosting). They are design
 - Quickly create a website (professional or not), a blog, a **C**ontent **M**anagement **S**ystem (**CMS**) such as *WordPress*, *Joomla!*, *PrestaShop* or *Drupal*, or an online store.
 - Customize one or more email addresses with the domain name you want to use for your website.
 - Manage multiple websites on a single web hosting plan.
-- Configure one or more databases ([included with some of our web hosting plans](/links/web/hosting)).
-- etc.
+- Configure one or more databases (included with some of our [web hosting plans](/links/web/hosting)).
+- Etc.
 
 These solutions spare you the hassle of maintaining, updating, and securing a web hosting infrastructure.<br>
 This saves you time on server administration and allows you to focus only on:
