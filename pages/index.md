@@ -492,6 +492,7 @@
             + [FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-faq)
             + [VPN-SPN Concept](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-vpn-spn)
             + [SPN Connector Concept](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-spn-connector)
+             + [Migrating VMware Workloads to OVHcloud SecNumCloud with Veeam Replication](hosted_private_cloud/migration/vmware_migration_veeam_secnumcloud)
     + [Nutanix on OVHcloud](products/hosted-private-cloud-nutanix-on-ovhcloud)
         + [Getting started](hosted-private-cloud-nutanix-on-ovhcloud-getting-started)
             + [Nutanix global high-level documentation](hosted_private_cloud/nutanix_on_ovhcloud/01-global-high-level-doc)
