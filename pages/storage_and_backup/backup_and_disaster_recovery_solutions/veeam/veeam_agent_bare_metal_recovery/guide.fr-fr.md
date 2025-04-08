@@ -49,23 +49,23 @@ Voici comment le créer :
 
 1. Ouvrez l’outil **Create Recovery Media** sur votre machine (il est inclus avec le Veeam Backup Agent).
 
-    ![Launch the Create Recovery Media tool](images/baremetal_recovery_01.png){.thumbnail}
+    ![Launch the Create Recovery Media tool](images/bare_metal_recovery_01.png){.thumbnail}
 
 2. Veeam vous demandera si vous souhaitez inclure des pilotes supplémentaires.
 
     > **Conseil :** Si vous utilisez du matériel spécifique (comme un contrôleur RAID ou une clé Wi-Fi), sélectionnez les pilotes nécessaires. Sinon, les options par défaut conviennent généralement.
 
-    ![Select drivers for boot image](images/baremetal_recovery_02.png){.thumbnail}
+    ![Select drivers for boot image](images/bare_metal_recovery_02.png){.thumbnail}
 
 3. Choisissez l’emplacement d’enregistrement de l’ISO et donnez-lui un nom.
 
-    ![Set ISO location and name](images/baremetal_recovery_03.png){.thumbnail}
+    ![Set ISO location and name](images/bare_metal_recovery_03.png){.thumbnail}
 
 4. Laissez l’outil terminer. Le fichier ISO sera généré.
 
-    ![Recovery ISO creation complete](images/baremetal_recovery_04.png){.thumbnail}
+    ![Recovery ISO creation complete](images/bare_metal_recovery_04.png){.thumbnail}
 
-    ![Recovery file](images/baremetal_recovery_05.png){.thumbnail}
+    ![Recovery file](images/bare_metal_recovery_05.png){.thumbnail}
 
 Vous pouvez maintenant utiliser cet ISO pour créer une clé USB bootable à l’aide d’un outil comme Rufus — ou, si vous restaurez une VM, montez l’ISO directement depuis la console de gestion de la machine virtuelle.
 
