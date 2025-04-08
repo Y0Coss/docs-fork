@@ -1,6 +1,6 @@
 ---
-title: 'Wie installiere ich Plesk auf einer Public Cloud-Instanz'
-excerpt: 'Erfahren Sie hier, wie Sie Plesk auf Ihrer Public Cloud Instanz einrichten'
+title: Plesk auf einer Public Cloud Instanz installieren
+excerpt: Erfahren Sie hier, wie Sie Plesk auf Ihrer Public Cloud Instanz einrichten
 updated: 2025-04-07
 ---
 
@@ -37,13 +37,13 @@ Plesk kann über eine SSH-Verbindung installiert werden. Laden Sie hierzu das Pl
 > ```
 >
 
-- **Nicht angepasste Plesk-Standardinstallation**
+- **Nicht angepasste Standardinstallation von Plesk**
 
 ```bash
 sudo sh <(curl https://autoinstall.plesk.com/one-click-installer || wget -O - https://autoinstall.plesk.com/one-click-installer)
 ```
 
-- **Angepasste Plesk-Installation**
+- **Angepasste Installation von Plesk**
 
 ```bash
 sudo sh <(curl https://autoinstall.plesk.com/plesk-installer || wget -O - https://autoinstall.plesk.com/plesk-installer)
@@ -53,30 +53,30 @@ Warten Sie, bis Plesk fertig installiert ist.
 
 ### Schritt 2: Die Konfiguration abschließen und eine Lizenz hinzufügen
 
-Nach Abschluss der Installation zeigt die Befehlszeilenschnittstelle (CLI) die folgenden Informationen an:
+Nach Abschluss der Installation zeigt die Befehlszeile (CLI) die nachfolgenden Informationen an.
 
-- Es werden zwei URLs generiert:
-    - Einer mit der IP-Adresse des Servers (in HTTPS mit einem selbstsignierten SSL-Zertifikat, das in einigen Browsern eine Sicherheitswarnung auslösen kann).
-    - Die andere mit einer Plesk Domain (per HTTPS mit einem signierten SSL Zertifikat ohne Sicherheitswarnung).
-    - Beides ist sicher, die zweite sollte jedoch verwendet werden.
+- Zwei generierte URLs:
+    - Eine enthält die IP-Adresse des Servers (in HTTPS mit einem selbstsignierten SSL-Zertifikat, das in einigen Browsern eine Sicherheitswarnung auslösen kann).
+    - Die andere enthält eine Plesk Domain (per HTTPS mit einem signierten SSL Zertifikat ohne Sicherheitswarnung).
+    - Beide sind sicher, die zweite sollte jedoch bevorzugt verwendet werden.
 - Eine Nachricht mit folgendem Inhalt: "Sie können sich auch als 'root' mit Ihrem 'root'-Passwort anmelden." Standardmäßig wird jedoch kein Root-Passwort generiert. Bei Bedarf können Kunden [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) befolgen, um den Root-Benutzer zu aktivieren und ein Passwort festzulegen.
 
-Befolgen Sie die Anweisungen auf dem Bildschirm, um die Installation abzuschließen.
+Befolgen Sie die Anweisungen der Bildschirmausgabe, um die Installation abzuschließen.
 
 ![plesk configuration](images/plesk-configuration.png){.thumbnail}
 
-Um Ihre Plesk Lizenz hinzuzufügen, halten Sie den Schlüssel bereit, den Sie von Ihrem Anbieter erhalten haben.
+Um Ihre Plesk Lizenz hinzuzufügen, benötigen Sie den Schlüssel, den Sie von Ihrem Anbieter erhalten haben.
 
 > [!primary]
 >
-> Wir vermarkten keine Plesk-Lizenzen für unsere Public-Cloud-Angebote. Sie können jedoch eine solche von der [Plesk](https://www.plesk.com/){.external}-Website beziehen.
+> Wir bieten keine Plesk Lizenzen für unsere Public Cloud an. Sie können jedoch eine Lizenz von der Website von [Plesk](https://www.plesk.com/) beziehen.
 > 
 
-Sie möchten Ihre Lizenz ändern, z. B. um einen Testschlüssel zu ersetzen oder um das Angebot zu wechseln? Dann gehen Sie von der Plesk-Schnittstelle aus in den Bereich `Tools & Settings`{.action}. Im Abschnitt **Plesk** wählen Sie dann `License information`{.action}.`{.action}.
+Sie möchten Ihre Lizenz ändern, etwa um einen Testschlüssel zu ersetzen oder um das Angebot zu wechseln? Öffnen Sie in der Plesk Benutzeroberfläche den Bereich `Tools & Settings`{.action}. Im Abschnitt **Plesk** wählen Sie dann `License information`{.action}.
 
 
 ## Weiterführende Informationen
 
-[Offizielle Plesk-Dokumentation](https://docs.plesk.com/de-DE/obsidian/){.external}.
+[Offizielle Plesk Dokumentation](https://docs.plesk.com/de-DE/obsidian/)
 
-Für den Austausch mit unserer [User Community](/links/community).
+Treten Sie unserer [User Community](/links/community) bei.
