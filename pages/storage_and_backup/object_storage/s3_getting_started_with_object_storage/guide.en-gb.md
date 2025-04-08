@@ -42,6 +42,11 @@ This guide is designed to familiarise you with the management of your containers
 
 ## Instructions
 
+> [!primary]
+>
+> If you wish to use the OVHcloud Terraform provider, you can follow [this guide](/pages/storage_and_backup/object_storage/s3_terraform).
+>
+
 ### Preparation
 
 /// details | To use the AWS CLI
@@ -176,16 +181,6 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 
 ///
 
-/// details | Using the OVHcloud Terraform provider
-
-Before you start, make sure you've installed and configured the OVHcloud Terraform provider. If you haven't already done so, see our guide :
-
-- [How to use Terraform on the OVHcloud Public Cloud](/pages/public_cloud/compute/how_to_use_terraform).
-
-In addition, make sure you're using a provider version greater than or equal to 2.0 to guarantee compatibility with the latest features.
-
-///
-
 #### Listing your buckets
 
 > [!tabs]
@@ -294,25 +289,6 @@ In addition, make sure you're using a provider version greater than or equal to 
 >> Congratulations, your bucket is created:
 >>
 >> ![Result](images/01-object-storage-bucket-listing.png)
->>
-> Via OVHcloud Terraform provider
->>
->> You can create a file named 'object_storage_simple.tf' and write the following:
->>
->> ```python
->> # Create an Object Storage bucket
->> resource "ovh_cloud_project_storage" "my-bucket" {
->> service_name = "my_service_name" # Replace with your OVHcloud project ID
->> region_name = "GRA" # Replace with the desired region in uppercase.
->> name = "object-storage-simple"
->> }
->> ```
->>
->> You can create your resource by entering the following command:
->>
->> ```bash
->> terraform apply
->> ```
 >>
 
 #### Uploading your files as objects in your bucket
@@ -546,19 +522,6 @@ In addition, make sure you're using a provider version greater than or equal to 
 >> ![Delete file](images/delete-file.png){.thumbnail}
 >>
 >> Click on `Confirm`{.action}.
->>
-> Via OVHcloud Terraform provider
->>
->> You can delete your bucket and all the objects it contains by entering the following command:
->>
->> ```bash
->> terraform destroy
->> ```
->>
->> > [!primary]
->> >
->> > This process may fail if the bucket contains locked objects. In this case, you will have to delete these objects manually before you can run the command again.
->> >
 >>
 
 **Manage tags**

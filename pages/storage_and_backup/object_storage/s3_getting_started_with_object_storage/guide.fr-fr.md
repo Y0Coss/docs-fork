@@ -42,6 +42,11 @@ Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs/
 
 ## En pratique
 
+> [!primary]
+>
+> Si vous souhaitez utiliser le provider Terraform OVHcloud, vous pouvez suivre [ce guide](/pages/storage_and_backup/object_storage/s3_terraform).
+>
+
 ### Préparation
 
 /// details | Pour utiliser l'AWS CLI
@@ -175,16 +180,6 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 
 ///
 
-/// details | Utiliser le provider Terraform OVHcloud
-
-Avant de commencer, assurez-vous d’avoir installé et configuré le provider Terraform pour OVHcloud. Si ce n'est pas encore fait, consultez notre guide :
-
-- [Comment utiliser Terraform sur le Public Cloud OVHcloud](/pages/public_cloud/compute/how_to_use_terraform).
-
-De plus, vérifiez que vous utilisez une version du provider supérieure ou égale à 2.0 pour garantir la compatibilité avec les dernières fonctionnalités.
-
-///
-
 #### Lister vos buckets
 
 > [!tabs]
@@ -293,25 +288,6 @@ De plus, vérifiez que vous utilisez une version du provider supérieure ou éga
 >> Félicitations, votre bucket est créé :
 >>
 >> ![Result](images/01-object-storage-bucket-listing.png)
->>
-> Via provider Terraform OVHcloud
->>
->> Vous pouvez créer un fichier nommé 'object_storage_simple.tf' et écrire ce qui suit :
->>
->> ```python
->> # Créer un bucket Object Storage
->> resource "ovh_cloud_project_storage" "my-bucket" {
->>   service_name = "my_service_name" # Remplacer par votre OVHcloud project ID
->>   region_name = "GRA" # Remplacer par la région voulue en majuscule.
->>   name = "object-storage-simple"
->> }
->> ```
->>
->> Vous pouvez créer votre resource en entrant la commande suivante :
->>
->> ```bash
->> terraform apply
->> ```
 >>
 
 #### Télécharger vos fichiers en tant qu'objets dans votre bucket
@@ -541,19 +517,6 @@ De plus, vérifiez que vous utilisez une version du provider supérieure ou éga
 >> ![Delete file](images/delete-file.png){.thumbnail}
 >>
 >> Cliquez sur `Confirmer`{.action}.
->>
-> Via provider Terraform OVHcloud
->>
->> Vous pouvez supprimer votre bucket ainsi que tout les objets qu'il contient en entrant la commande suivante :
->>
->> ```bash
->> terraform destroy
->> ```
->>
->> > [!primary]
->> >
->> > Ce processus peut échouer si le seau contient des objets verrouillés. Dans ce cas, vous devrez supprimer ces objets manuellement avant de pouvoir relancer la commande.
->> >
 >>
 
 **Gérer les tags**
