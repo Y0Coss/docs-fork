@@ -1801,6 +1801,7 @@
             + [Backing up a Bare Metal Linux Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux)
             + [Backing Up a Bare Metal Windows Server Using Veeam Agent for Windows](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent)
             + [Restoring a Bare Metal Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-restore)
+            + [Bare Metal Recovery with Veeam Agent (Cloud & On-Prem)](bare_metal_cloud/dedicated_servers/veeam-agent-bare-metal-recovery)
         + [HYCU for OVHcloud](storage-backup-and-disaster-recovery-solution-hycu)
             + [Configuring HYCU Backup](hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup)
         + [Agent Backup for IaaS](storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas)
