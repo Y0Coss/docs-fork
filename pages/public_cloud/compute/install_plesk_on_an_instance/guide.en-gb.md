@@ -63,7 +63,7 @@ Once the installation is complete, the command-line interface (CLI) will display
 
 Once on the Plesk page, follow the on-screen instructions to complete the setup.
 
-![plesk configuration](images/plesk-configuration.png){.thumbnail}
+![plesk configuration](images/plesk_configuration.png){.thumbnail}
 
 To add your Plesk licence, take the key that was sent to you by your service provider.
 

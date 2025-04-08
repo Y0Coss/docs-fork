@@ -63,7 +63,7 @@ Une fois l’installation terminée, l’interface en ligne de commande (CLI) af
 
 Une fois sur la page Plesk, suivez les instructions à l’écran pour finaliser l’installation.
 
-![plesk configuration](images/plesk-configuration.png){.thumbnail}
+![plesk configuration](images/plesk_configuration.png){.thumbnail}
 
 Pour ajouter votre licence Plesk, munissez-vous de la clé qui vous a été transmise par votre prestataire.
 
