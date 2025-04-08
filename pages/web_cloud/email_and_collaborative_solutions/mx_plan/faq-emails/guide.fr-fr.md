@@ -4,6 +4,23 @@ excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails'
 updated: 2025-04-07
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-500 {
+  max-width:500px !important;
+}
+</style>
+
 ## FAQ e-mail
 
 Sur cette page, vous trouverez les questions les plus fréquemment posées concernant l'utilisation de vos e-mails en fonction des offres e-mail OVHcloud.
@@ -15,7 +32,7 @@ OVHcloud propose actuellement 4 offres e-mail. Pour comprendre leurs spécificit
 > [!tabs]
 > **E-mails / MX Plan**
 >>
->> ![MX Plan](images/mxplan01_fr.png){.thumbnail .w-600}
+>> ![MX Plan](images/mxplan01_fr.png){.thumbnail .w-500}
 >>
 >> 1. L'offre e-mail la plus ancienne d'OVHcloud, qui comprend les fonctions essentielles d'un service e-mail avec 5 Go d'espace de stockage par compte e-mail.
 >> 2. Incluse avec les offres d'hébergement web et peut être commandée via l'[espace client OVHcloud](/links/manager).
@@ -23,17 +40,15 @@ OVHcloud propose actuellement 4 offres e-mail. Pour comprendre leurs spécificit
 >>
 > **Zimbra Mail**
 >>
->> ![Zimbra Mail](images/zimbra01_fr.png){.thumbnail .w-600}
+>> ![Zimbra Mail](images/zimbra01_fr.png){.thumbnail .w-500}
 >>
 >> 1. Offre e-mail la plus récente chez OVHcloud, elle propose un service e-mail flexible et évolutif sur trois niveaux d'offres et de fonctionnalités.
 >> 2. Vous pouvez commander un compte Zimbra via l'[espace client OVHcloud](/links/manager) ou directement sur [ovhcloud.com](/links/web/email).
 >> 3. Comme son nom l'indique, elle utilise l'interface **Zimbra**.
 >>
->> ![MX Plan](images/add_domain_exchange_step2.png){.thumbnail .w-600}
->>
 > **E-mails Pro**
 >>
->> ![Email Pro](images/emailpro01_fr.png){.thumbnail .w-600}
+>> ![Email Pro](images/emailpro01_fr.png){.thumbnail .w-500}
 >>
 >> 1. Offre e-mail basée sur la technologie Exchange, offrant des fonctionnalités essentielles avec un espace de stockage de 10 Go.
 >> 2. Vous pouvez commander un compte E-mail Pro via l'[espace client OVHcloud](/links/manager) ou directement sur [ovhcloud.com](/links/web/email).
@@ -41,7 +56,7 @@ OVHcloud propose actuellement 4 offres e-mail. Pour comprendre leurs spécificit
 >>
 > **Exchange**
 >>
->> ![Exchange](images/exchange01_fr.png){.thumbnail .w-600}
+>> ![Exchange](images/exchange01_fr.png){.thumbnail .w-500}
 >>
 >> 1. Offre e-mail complète disposant de fonctionnalités collaboratives avec 50 Go ou 300 Go d'espace de stockage.
 >> 2. Incluse avec les offres d'hébergement web et peut être commandée via l'[espace client OVHcloud](/links/manager).
@@ -63,7 +78,7 @@ Cette diversité de technologies implique une ergonomie de fonctionnement diffé
 
 Ci-dessous, vous trouverez un tableau récapitulatif des principales fonctionnalités e-mail, classées par technologie et emplacement de configuration :
 
-![MX plan](images/email_feature_table_fr.png){.thumbnail .w-600}
+![MX plan](images/email_feature_table_fr.png){.thumbnail .w-500}
 
 ///
 
@@ -78,7 +93,7 @@ La technologie e-mail utilisée pour votre offre MX Plan est caractérisée par 
 1. Depuis l'onglet `Informations Générales`{.action}, sélectionnez par défaut.
 1. Relevez la technologie utilisée sous la mention **Webmail**.
 
-![MX plan](images/technology-email.png){.thumbnail .w-600}
+![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 ///
 
