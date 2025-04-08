@@ -1,7 +1,7 @@
 ---
 title: 'Jak zainstalować Plesk na instancji Public Cloud'
 excerpt: 'Dowiedz się, jak wdrożyć Plesk na instancji Public Cloud'
-Updated: 2025-04-08
+updated: 2025-04-08
 --- 
 
 ## Wprowadzenie
@@ -63,7 +63,7 @@ Po zakończeniu instalacji, interfejs wiersza poleceń (CLI) wyświetli następu
 
 Po przejściu na stronę Plesk postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby dokończyć instalację.
 
-![Plesk configuration](images/plesk-configuration.png){.thumbnail}
+![Plesk configuration](images/plesk_configuration.png){.thumbnail}
 
 Aby dodać licencję Plesk, użyj klucza, który otrzymałeś od Twojego dostawcy.
 

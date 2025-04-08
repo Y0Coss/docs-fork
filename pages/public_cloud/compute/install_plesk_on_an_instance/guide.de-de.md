@@ -63,7 +63,7 @@ Nach Abschluss der Installation zeigt die Befehlszeile (CLI) die nachfolgenden I
 
 Befolgen Sie die Anweisungen der Bildschirmausgabe, um die Installation abzuschließen.
 
-![plesk configuration](images/plesk-configuration.png){.thumbnail}
+![plesk configuration](images/plesk_configuration.png){.thumbnail}
 
 Um Ihre Plesk Lizenz hinzuzufügen, benötigen Sie den Schlüssel, den Sie von Ihrem Anbieter erhalten haben.
 
