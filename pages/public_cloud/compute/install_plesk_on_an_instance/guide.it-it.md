@@ -1,7 +1,7 @@
 ---
 title: 'Come installare Plesk su un'istanza Public Cloud'
 excerpt: 'Come installare Plesk su un’istanza Public Cloud'
-updated: 2025-04-07
+updated: 2025-04-08
 ---
 
 ## Obiettivo
@@ -14,7 +14,7 @@ Plesk è un’interfaccia di gestione server di semplice utilizzo, disponibile a
 > 
 > OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
 >
-> > Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente ad amministrazione e sicurezza, ti consigliamo di contattare un [provider specializzato](/links/partner). Non esitate a collegarvi alla nostra [community forum](/links/community) per comunicare con altri utenti.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente ad amministrazione e sicurezza, ti consigliamo di contattare un [provider specializzato](/links/partner). Non esitate a collegarvi alla nostra [community forum](/links/community) per comunicare con altri utenti.
 >
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Como instalar o Plesk numa instância Public Cloud'
 excerpt: 'Saiba como instalar o Plesk na sua instância Public Cloud'
-updated: 2025-04-07
+updated: 2025-04-08
 ---
 
 ## Sumário
@@ -72,7 +72,7 @@ Para adicionar uma licença Plesk, tenha consigo a chave que lhe foi fornecida p
 > A OVHcloud não vende licenças Plesk para as soluções de Public Cloud. No entanto, poderá adquirir uma licença através do site [Plesk](https://www.plesk.com/){.external}.
 > 
 
-Pretende alterar a sua licença para substituir uma chave de teste ou para alterar a sua oferta, por exemplo? A partir da interface Plesk, aceda à secção "Tools & Settings" {.action}. Na secção **Plesk**, selecione a opção `License information`{.action}.
+Pretende alterar a sua licença para substituir uma chave de teste ou para alterar a sua oferta, por exemplo? A partir da interface Plesk, aceda à secção `Tools & Settings`{.action}. Na secção **Plesk**, selecione a opção `License information`{.action}.
 
 ## Quer saber mais?
 

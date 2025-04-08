@@ -1,7 +1,7 @@
 ---
 title: 'Jak zainstalować Plesk na instancji Public Cloud'
 excerpt: 'Dowiedz się, jak wdrożyć Plesk na instancji Public Cloud'
-Updated: 2025-04-07
+Updated: 2025-04-08
 --- 
 
 ## Wprowadzenie
@@ -14,7 +14,7 @@ Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowan
 > 
 > OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą] (/links/partner). Przyłącz się do [forum społeczności](/links/community) i rozmawiaj z innymi użytkownikami.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Przyłącz się do [forum społeczności](/links/community) i rozmawiaj z innymi użytkownikami.
 >
 
 ## Wymagania początkowe
@@ -69,7 +69,7 @@ Aby dodać licencję Plesk, użyj klucza, który otrzymałeś od Twojego dostawc
 
 > [!primary]
 >
-> Nie sprzedajemy licencji Plesk dla usługi Public Cloud. Możesz zamówić licencję bezpośrednio na stronie [Pleska](https://www.plesk.com/){.external}.
+> Nie sprzedajemy licencji Plesk dla usługi Public Cloud. Możesz zamówić licencję bezpośrednio na stronie [Plesk](https://www.plesk.com/){.external}.
 > 
 
 Jeśli chcesz zmienić licencję (wymiana klucza testowego, zmiana oferty), możesz to zrobić w interfejsie Plesk, przechodząc do części `Server Management` i wybierając `Tools & Settings`{.action}.  Następnie w części **Plesk** wybierz `License information`{.action}.
