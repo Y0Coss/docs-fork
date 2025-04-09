@@ -18,7 +18,7 @@ Le informazioni contenute in questa guida riguardano le versioni di **PHP**, **P
 
 <span style="background-color:#198754; color:white; padding:4px; border-radius:4px;">Active support</span> : supporto completo assicurato.
 <br><br>
-<span style="background-color:#ffc107; color:white; padding:4px; border-radius:4px;">Security fixes only</span> : corrections de sécurité uniquement.
+<span style="background-color:#ffc107; color:white; padding:4px; border-radius:4px;">Security fixes only</span> : solo correzioni di sicurezza.
 <br><br>
 <span style="background-color:#dc3545; color:white; padding:4px; border-radius:4px;">End of life</span> : version obsolète, non maintenue.
 
