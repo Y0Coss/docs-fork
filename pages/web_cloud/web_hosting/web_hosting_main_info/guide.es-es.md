@@ -20,7 +20,7 @@ Esta guía explica las versiones de **PHP**, **Python**, **Perl** y **Apache** u
 <br><br>
 <span style="background-color:#ffc107; color:white; padding:4px; border-radius:4px;">Security fixes only</span> : corrections de sécurité uniquement.
 <br><br>
-<span style="background-color:#dc3545; color:white; padding:4px; border-radius:4px;">End of life</span> : version obsolète, non maintenue.
+<span style="background-color:#dc3545; color:white; padding:4px; border-radius:4px;">End of life</span> : versión obsoleta, no mantenida.
 
 ### Tablas de versiones disponibles
 
