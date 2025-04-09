@@ -26,7 +26,7 @@ This documentation allows you to test and launch **3 AI Notebooks** allowing you
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Notebooks
 
 ## Instructions

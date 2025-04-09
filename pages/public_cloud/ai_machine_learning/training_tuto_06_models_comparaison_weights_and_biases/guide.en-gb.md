@@ -55,7 +55,7 @@ The basic principles for using Weights & Biases can be found [here](https://gith
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager);
-- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
+- An AI Training project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
 - A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Make sure you have a Docker Hub [account](https://hub.docker.com/);

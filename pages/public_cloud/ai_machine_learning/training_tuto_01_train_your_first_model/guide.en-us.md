@@ -12,7 +12,7 @@ AI Training allows you to train your models easily, with just a few clicks or co
 
 AI Training is compatible with leading applications and frameworks such as *Pytorch, Scikit-learn, TensorFlow, Transformers* and others!
 
-More information about AI Training can be found [here](https://www.ovhcloud.com/en-gb/public-cloud/ai-training/).
+More information about AI Training can be found [here](/links/public-cloud/public-cloudai-training/).
 
 ## Objective of this tutorial
 
@@ -36,7 +36,7 @@ This dataset is available on their [GitHub repository](https://github.com/zaland
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- An AI Training project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Training
 - A Python script that trains a model
 

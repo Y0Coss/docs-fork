@@ -18,7 +18,7 @@ This guide explains how to get started with OVHcloud AI Deploy, covering the dep
 ## Requirements
 
 - access to the [OVHcloud Control Panel](/links/manager)
-- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
 ## Instructions
 
@@ -48,7 +48,7 @@ Select where your AI Deploy app will be hosted, meaning the physical location.
 AI Deploy allows a user to deploy applications from two sources:
 
 - From an OVHcloud catalog with already built-in AI models and applications.
-- From your own Docker image, giving you the full flexibility to deploy what you want. This image can be stored on many types of registry ([OVHcloud Managed Private Registry](/links/managed-private-registry), [Docker Hub](https://hub.docker.com/), [GitHub packages](https://github.com/features/packages), ...) and the expected format is `<registry-address>/<image-identifier>:<tag-name>`.
+- From your own Docker image, giving you the full flexibility to deploy what you want. This image can be stored on many types of registry ([OVHcloud Managed Private Registry](/links/public-cloud/managed-private-registry), [Docker Hub](https://hub.docker.com/), [GitHub packages](https://github.com/features/packages), ...) and the expected format is `<registry-address>/<image-identifier>:<tag-name>`.
 
 In this tutorial, we will select an OVHcloud Docker image to deploy your first **AI Deploy app**.
 

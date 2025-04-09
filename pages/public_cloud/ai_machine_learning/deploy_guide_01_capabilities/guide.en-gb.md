@@ -111,7 +111,7 @@ If you choose `CPU`:
 
 - Memory and local storage resource is not customisable but scaled linearly with each additional CPU.
 
-The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
+The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](/links/public-cloud/public-cloudprices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
 
 ``` {.console}
 ovhai capabilities flavor list
@@ -126,7 +126,7 @@ For your information, the current limits are:
 
 Currently, we provide:
 
-- **NVIDIA V100S** ([pricing available here](https://www.ovhcloud.com/en-gb/public-cloud/prices/#ai-&-machine-learning)).
+- **NVIDIA V100S** ([pricing available here](/links/public-cloud/public-cloudprices/#ai-&-machine-learning)).
 
 ##### **Scaling**
 

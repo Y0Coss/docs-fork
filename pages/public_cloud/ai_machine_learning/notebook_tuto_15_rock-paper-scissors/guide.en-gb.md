@@ -15,7 +15,7 @@ It is based on the YOLOv8 open source [repository](https://github.com/ultralytic
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Notebooks
 - A [Public Roboflow](https://public.roboflow.com/) account to access and download the [Rock Paper Scissors Dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw)
 

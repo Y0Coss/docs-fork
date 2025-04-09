@@ -10,7 +10,7 @@ This guide covers the installation of the **ovhai** CLI. The CLI is the recommen
 
 ## Requirements
 
--   a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+-   a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 -   **AI Training activated** for your account, see [how to submit a job Step 2](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job)
 -   a user for AI Tools, see [how to create a user](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 

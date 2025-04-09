@@ -20,7 +20,7 @@ At the end of this tutorial, you will have learnt the principal methods to build
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A user for AI Notebooks
 
 ## Instructions

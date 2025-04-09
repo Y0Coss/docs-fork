@@ -44,7 +44,7 @@ ResNet has many variants that work on the same concept but have different number
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- An AI Notebooks project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) for AI Notebooks
 
 ## Instructions

@@ -24,7 +24,7 @@ In order to do this, we will use [FastAPI](https://streamlit.io/), a web framewo
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager);
-- An AI Deploy project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
+- An AI Deploy project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account;
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
