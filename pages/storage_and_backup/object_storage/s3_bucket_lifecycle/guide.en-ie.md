@@ -474,7 +474,7 @@ In this scenario, suppose you upload an object with multiple versions:
 If the current date is 2024-10-23:
 
 - v5 will be transitioned 30 days after 2024-10-23
-- v1 will be transitioned 30 days after its creation i.e 2024-10-18
+- v1 will be transitioned 30 days after its creation date (2024-10-18)
 
 ```json
 {
