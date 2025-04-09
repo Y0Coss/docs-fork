@@ -304,7 +304,6 @@
             + [Configure an IP address on a virtual machine](bare_metal_cloud/managed_bare_metal/configure_ip_on_vm)
             + [Keeping your vSphere web client secure](bare_metal_cloud/managed_bare_metal/vsphere_access_security_advices)
             + [Logging in to the vSphere interface](bare_metal_cloud/managed_bare_metal/vsphere-interface)
-            + [Logging in via SFTP](bare_metal_cloud/managed_bare_metal/sftp-connexion)
             + [Migrating an infrastructure to a new vDC](bare_metal_cloud/managed_bare_metal/service-migration-vdc)
             + [Migrating an infrastructure to a Managed Bare Metal solution](bare_metal_cloud/managed_bare_metal/service-migration)
         + [Managing virtual machines](bare-metal-cloud-managed-bare-metal-managing-virtual-machines)
