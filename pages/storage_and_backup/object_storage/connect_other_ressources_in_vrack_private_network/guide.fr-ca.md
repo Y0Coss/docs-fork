@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Comment connecter mon bucket Object Storage avec d'autres ressources dans un réseau privé vRack ?
+title: "Object Storage - Comment connecter mon bucket Object Storage avec d'autres ressources dans un réseau privé vRack ?"
 excerpt: Découvrez comment utiliser l'Object Storage avec des ressources dans un réseau privé.
 updated: 2025-04-10
 ---
