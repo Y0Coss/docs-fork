@@ -76,11 +76,11 @@ Sur la page <https://omm.ovh.net/>, dans l'onglet `Migration`{.action}, cliquez 
 
 **Options**
 
-sélectionnez les éléments que vous souhaitez migrer. Certains contenus peuvent être indisponibles selon le type de serveur choisi auparavant.
+Sélectionnez les éléments que vous souhaitez migrer. Certains contenus peuvent être indisponibles selon le type de serveur choisi auparavant.
 
 **Informations**
 
-renseignez une adresse e-mail afin d'être notifié sur l'avancement de la migration. Cochez la case en bas de la page pour accepter les termes et conditions d'OMM.
+Renseignez une adresse e-mail afin d'être notifié sur l'avancement de la migration. Cochez la case en bas de la page pour accepter les termes et conditions d'OMM.
 
 ![omm](images/omm-migration-create02.png){.thumbnail}
 
@@ -93,15 +93,15 @@ Vérifiez que toutes les informations sont correctes, puis cliquez sur `Start mi
 Deux méthodes vous permettent d'accéder au suivi d'une migration unique :
 
 - Depuis l'e-mail reçu qui vous notifie sur l'avancement de la migration.
-- Depuis la page <https://omm.ovh.net/>. Dans l'onglet `Migration`{.action}, cliquez sur `Track/Synchronize`{.action}. Renseignez l'identifiant de migration (`Migration ID`{.action}) ainsi que le compte d'origine (`Source account`{.action}) concerné.
+- Depuis la page <https://omm.ovh.net/> : dans l'onglet `Migration`{.action}, cliquez sur `Track/Synchronize`{.action}. Renseignez l'identifiant de migration (`Migration ID`{.action}) ainsi que le compte d'origine (`Source account`{.action}) concerné.
 
 ![omm](images/omm-migration-track.png){.thumbnail}
 
 La page qui s'affiche vous permet de suivre l'avancement de votre migration. Un message vous indique si le processus va débuter, est en cours ou est terminé. Selon cet état, plusieurs interactions sont possibles :
 
-- `Stop the process`{.action} : permet d'annuler la migration. Les éléments déjà migrés seront conservés sur le compte de destination.
-- `Delete migrated elements`{.action} : permet de supprimer des éléments déjà migrés vers le compte de destination. Vous pouvez effacer des éléments à partir d'un point de synchronisation précis.
-- `Synchronize`{.action} : permet de récupérer de nouveaux éléments non migrés lors d'une précédente synchronisation entre le compte source et le compte de destination. Nous considérons cette action comme une migration des éléments manquants sur le compte de destination par rapport au compte source.
+- `Stop the process`{.action} : Permet d'annuler la migration. Les éléments déjà migrés seront conservés sur le compte de destination.
+- `Delete migrated elements`{.action} : Permet de supprimer des éléments déjà migrés vers le compte de destination. Vous pouvez effacer des éléments à partir d'un point de synchronisation précis.
+- `Synchronize`{.action} : Permet de récupérer de nouveaux éléments non migrés lors d'une synchronisation précédente entre le compte source et le compte de destination. Cette action réalise une migration des éléments manquants sur le compte de destination par rapport au compte source.
 
 Pour réaliser une migration par fichier ou multiple, consultez les sections « Migration par fichier » et « Réaliser et suivre une migration multiple (mode projet) » de notre guide « [Migrer des comptes e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) ».
 
