@@ -13,7 +13,7 @@ updated: 2025-04-11
 
 ## Introduction
 
-Looking to build an AI-powered chatbot with Java? In this guide, you will learn how to create a chat bot using **[LangChain4j](https://github.com/langchain4j/langchain4j)**, **[Quarkus](https://github.com/quarkusio/quarkus)**, and **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**.
+Looking to build an AI-powered chatbot with Java? In this guide, you will learn how to create a chatbot using **[LangChain4j](https://github.com/langchain4j/langchain4j)**, **[Quarkus](https://github.com/quarkusio/quarkus)**, and **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**.
 
 ## Objective
 
@@ -173,7 +173,7 @@ You will also have to replace two other environements variables, related to the 
 - `OVH_AI_ENDPOINTS_MODEL_NAME`: Mistral-7B-Instruct-v0.3
 - `OVH_AI_ENDPOINTS_MODEL_URL`: https://mistral-7b-instruct-v0-3.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1
 
-### Build a REST API to Interact with the Chat Bot
+### Build a REST API to interact with the chatbot
 
 First, install the [Quarkus REST extension](https://quarkus.io/extensions/io.quarkus/quarkus-rest/):
 
@@ -211,7 +211,7 @@ public class AIEndpointsResource {
 
 ### Run and test
 
-Now it is time to test the AI chat bot API!
+Now it is time to test the AI chatbot API!
 
 To start your application and run your API, just use the [Quarkus dev mode](https://quarkus.io/guides/dev-mode-differences), by executing `quarkus dev`:
 
