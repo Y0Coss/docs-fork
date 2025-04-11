@@ -1,12 +1,26 @@
 ---
-title: "Web hosting - Cómo empezar en pocos pasos"
-excerpt: "Descubra los primeros pasos para asociar su dominio, publicar su sitio web y crear direcciones de correo con su alojamiento web"
-updated: 2024-02-13
+title: "Cómo crear un sitio web - Realizar un proyecto en 5 pasos"
+excerpt: "Esta guía explica cómo configurar un proyecto, publicar un sitio web y crear direcciones de correo electrónico con un plan de hosting"
+updated: 2025-04-07
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
-OVHcloud ofrece [varios planes de hosting](/links/web/hosting). Están diseñadas para diferentes casos de uso:
+OVHcloud ofrece varios [planes de hosting](/links/web/hosting). Están diseñadas para diferentes casos de uso:
 
 - Empezar en la web.
 - Crear rápidamente un sitio web (profesional o no), un blog, un **C**ontent **M**anagement **S**ystem (**CMS**) como *WordPress*, *Joomla!*, *PrestaShop* o *Drupal*, o una tienda online.
@@ -22,7 +36,7 @@ Le permiten ahorrar tiempo en la "administración del servidor" y concentrarse �
 - La seguridad y la optimización de una o varias bases de datos, si su solución dispone de ellas;
 - La configuración y la gestión de sus direcciones de correo electrónico incluidas con su plan de hosting.
 
-**Descubra cómo asociar un dominio, publicar un sitio web y crear una o varias direcciones de correo electrónico con un alojamiento web.**
+**Esta guía explica cómo publicar un sitio web en internet y crear direcciones de correo electrónico con una solución de alojamiento web.**
 
 ## Requisitos
 
@@ -69,34 +83,41 @@ Una vez que haya definido el proyecto con precisión, podrá instalar su sitio w
 
 Existen dos posibilidades: **migrar** un sitio web existente o **crear** un nuevo sitio web.
 
-#### Migrar un sitio web
+**Haga clic en cada una de las opciones siguientes para ver las explicaciones.**
+
+/// details | Migrar un sitio web
 
 Si necesita migrar un sitio web desde otro proveedor de hosting, consulte nuestra guía "[Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". En ella encontrará todos los pasos clave para migrar sin interrupción todos sus servicios (nombre de dominio, sitio web, dirección(s) de correo electrónico, etc.).
 
-#### Crear un nuevo sitio web
+///
 
-En este caso, puede elegir entre varias soluciones.
+/// details | Crear un nuevo sitio web
 
-##### Caso n°1 - Publicar un sitio web desarrollado localmente
+Puede crear usted mismo todo su sitio web o utilizar un [CMS (Content Management System)](/links/web/hosting-cms-comparison) como WordPress, PrestaShop, Joomla! o Drupal. Haga clic en las fichas siguientes según su elección:
 
-Para más información, consulte nuestra guía "[Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". En esta guía encontrará todos los pasos necesarios para:
-
-- Situar su sitio web en el espacio de almacenamiento FTP de su alojamiento web;
-- Crear una base de datos asociada a su alojamiento web;
-- Colocar la base de datos local en la base de datos asociada a su alojamiento web;
-- Vincular la base de datos al sitio web alojado en un alojamiento web.
-
-##### Caso n°2 - Crear un sitio web utilizando un CMS
-
-OVHcloud pone a su disposición la opción Módulos en un clic.<br>
+> [!tabs]
+> **Utilizar un CMS**
+>>
+>> OVHcloud pone a su disposición la opción Módulos en un clic.<br>
 Una vez conectado a su [área de cliente de OVHcloud](/links/manager) y a través de su alojamiento web, esta opción le permite instalar rápidamente los CMS *WordPress*, *Joomla!*, *PrestaShop* y *Drupal*.
+>>
+>> Para utilizar esta opción, consulte nuestra guía "[Instalar su sitio web con un 'módulo en 1 clic' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+>>
+>> > [!primary]
+>> >
+>> > Si prefiere instalar manualmente su CMS sin pasar por la opción Módulos en un clic, consulte nuestra guía "[Instalar manualmente un CMS en mi alojamiento](/pages/web_cloud/web_hosting/cms_manual_installation)".
+>>
+> **Publicar un sitio web desarrollado localmente**
+>>
+>> Para más información, consulte nuestra guía "[Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". En esta guía encontrará todos los pasos necesarios para:
+>>
+>> - Situar su sitio web en el espacio de almacenamiento FTP de su alojamiento web;
+>> - Crear una base de datos asociada a su alojamiento web;
+>> - Colocar la base de datos local en la base de datos asociada a su alojamiento web;
+>> - Vincular la base de datos al sitio web alojado en un alojamiento web.
+>>
 
-Para utilizar esta opción, consulte nuestra guía "[Instalar su sitio web con un 'módulo en 1 clic' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
-
-> [!primary]
->
-> Si prefiere instalar manualmente su CMS sin pasar por la opción Módulos en un clic, consulte nuestra guía "[Instalar manualmente un CMS en mi alojamiento](/pages/web_cloud/web_hosting/cms_manual_installation)".
->
+///
 
 ### Etapa 3 - Crear sus direcciones de correo electrónico (opcional) <a name="email-creation"></a>
 
@@ -106,11 +127,15 @@ En primer lugar, consulte nuestra guía "[Activar el servicio de correo incluido
 
 Una vez activada la opción, consulte nuestra guía "[Crear una dirección de correo electrónico en un MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)" para personalizar una o varias direcciones de correo con su nombre de dominio.
 
-> **Casos Particulares:**
->
+**Haga clic en el siguiente enlace para ver las explicaciones.**
+
+/// details | Casos Particulares:
+
 > - Si va a migrar un sitio web y/o se trata de direcciones de correo asociadas al dominio de su sitio web, consulte nuestra guía "[Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". En ella encontrará todos los pasos clave para migrar sin interrupción todos sus servicios (nombre de dominio, sitio web, dirección(s) de correo electrónico, etc.).
 >
 > - Si no ha asociado un dominio al contratar el alojamiento web y quiere disfrutar de la opción "dirección(s) de correo incluida(s) con el alojamiento web", deberá realizar la operación manualmente desde el [área de cliente de OVHcloud](/links/manager).
+
+///
 
 ### Etapa 4 - Comprobar y/o modificar la configuración de su dominio <a name="domain-configuration"></a>
 
@@ -123,14 +148,18 @@ En efecto, la conexión entre su dominio y sus servicios (alojamiento web, servi
 > Tenga en cuenta que un cambio en una zona DNS tarda entre 4 y 24 horas en propagarse y ser efectivo.
 >
 
-> **Casos Particulares:**
->
+**Haga clic en el siguiente enlace para ver las explicaciones.**
+
+/// details | Casos Particulares:
+
 > Si va a migrar un sitio web y/o direcciones de correo asociadas al dominio de su sitio web, consulte nuestra guía "[Migrar un sitio web y el correo a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". En ella encontrará todos los pasos clave para migrar sin interrupción todos sus servicios (nombre de dominio, sitio web, dirección(s) de correo electrónico, etc.).
+
+///
 
 Para comprobar y/o modificar la conexión entre su dominio y su alojamiento web, **consulte las siguientes guías en orden:**
 
 - [Direcciones IP de los clusters y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP): En ella encontrará todas las direcciones IP de nuestra infraestructura de alojamientos web. Esta guía explica cómo utilizar un dominio con una zona DNS activa que no esté gestionada en OVHcloud (o que esté gestionada en una cuenta de cliente de OVHcloud distinta de la suya).
-- [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite): eEta guía explica cómo añadir varios dominios a un alojamiento web. También puede ayudarle a comprobar que la declaración de su dominio en la pestaña `Multisitio`{.action} de su alojamiento web es correcta. Si lo necesita, puede modificarla y, a continuación, hacer lo necesario en la zona DNS activa del dominio.
+- [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite): Esta guía explica cómo añadir varios dominios a un alojamiento web. También puede ayudarle a comprobar que la declaración de su dominio en la pestaña `Multisitio`{.action} de su alojamiento web es correcta. Si lo necesita, puede modificarla y, a continuación, hacer lo necesario en la zona DNS activa del dominio.
 - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit): Esta guía explica cómo editar una zona DNS que tenga presencia en OVHcloud. Este servicio le será útil en caso de que la zona DNS activa de su dominio esté presente en una cuenta de cliente de OVHcloud diferente a la suya. También puede utilizarlo para acceder a la zona DNS de OVHcloud de su dominio, con el fin de comprobar que la dirección IP (entrada(s) de tipo *A* y/o *AAAA*) declarada para su dominio en la zona DNS corresponde a la dirección IP de su alojamiento web.
 
 Para comprobar o modificar la conexión entre su dominio y su solución de correo de OVHcloud, consulte la guía "[Configurar un registro MX para la gestión del correo](/pages/web_cloud/domains/dns_zone_mx)", en la que encontrará los nombres de los servidores de correo de OVHcloud, así como el procedimiento a seguir para que su dominio apunte hacia esos mismos servidores.
@@ -148,7 +177,9 @@ Para comprobar o modificar la conexión entre su dominio y su solución de corre
 
 En función de su [plan de hosting](/links/web/hosting), existen opciones / ofertas / funcionalidades adicionales gratuitas.
 
-#### Los certificados SSL
+**Haga clic en las opciones siguientes para ver las explicaciones.**
+
+/// details | Los certificados SSL
 
 Los certificados SSL permiten que su sitio web esté accesible utilizando el protocolo HTTPS. Este protocolo cifra los intercambios entre su alojamiento web y las personas que consultan su sitio web.
 
@@ -156,7 +187,9 @@ Independientemente del [alojamiento web](/links/web/hosting), puede activar grat
 
 Para más información sobre los certificados SSL (gratuitos o de pago) ofrecidos en los alojamientos web, consulte nuestra guía "[Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
 
-#### Los productos CDN
+///
+
+/// details | Los productos CDN
 
 Todos nuestros productos CDN permiten guardar en caché una parte de su sitio web. Así, los tiempos de carga de las páginas que constituyen su sitio web se reducen, especialmente para los visitantes geográficamente alejados del datacenter en el que está alojado su alojamiento web .
 
@@ -174,23 +207,31 @@ Para más información, consulte nuestra guía "[Acelerar un sitio web utilizand
 >
 > No es posible combinar varios productos CDN en un mismo alojamiento web.
 
-#### Los servidores de bases de datos Web Cloud Databases
+///
+
+/// details | Los servidores de bases de datos Web Cloud Databases
 
 Si tiene un alojamiento web **Performance**, puede activar gratuitamente un servidor de bases de datos [Web Cloud Databases](/links/web/databases).
 
 Para más información, consulte nuestra guía "[Primeros pasos con el servicio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
-#### Enviar mensajes de correo desde su sitio web
+///
+
+/// details | Enviar mensajes de correo desde su sitio web
 
 Todos nuestros [alojamientos web](/links/web/hosting) permiten enviar mensajes de correo electrónico gratuitamente desde su sitio web o un script específico.
 
 Para más información, consulte nuestra guía "[Gestionar los mensajes de correo automatizados](/pages/web_cloud/web_hosting/mail_function_script_records)".
 
-#### Las tareas programadas "CRON"
+///
+
+/// details | Las tareas programadas "CRON"
 
 Las tareas CRON permiten ejecutar automáticamente scripts alojados en el alojamiento web.
 
 Si su [plan de hosting](/links/web/hosting) dispone de esta opción, consulte nuestra guía "[Crear tareas automatizadas (CRON) en un alojamiento web](/pages/web_cloud/web_hosting/cron_tasks)" para más información.
+
+///
 
 ## Más información
 
