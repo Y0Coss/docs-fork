@@ -1,8 +1,22 @@
 ---
-title: "Hosting WWW - Jak rozpocząć korzystanie z usługi w kilku etapach"
-excerpt: "Poznaj pierwsze kroki, które pozwolą Ci połączyć Twoją domenę, zamieścić w Internecie stronę WWW i utworzyć konta e-mail na Twoim hostingu"
-updated: 2024-02-08
+title: "Jak stworzyć stronę WWW - 5 etapów realizacji projektu"
+excerpt: "Dowiedz się, jak zdefiniować projekt, opublikować stronę WWW i utworzyć konta e-mail w ramach hostingu"
+updated: 2025-04-07
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Wprowadzenie 
 
@@ -22,7 +36,7 @@ Pozwalają one zaoszczędzić czas potrzebny na "administrowanie serwerem" i sku
 - Bezpieczeństwo i optymalizacja jednej lub kilku baz danych (baz), jeśli oferta dysponuje;
 - Konfiguracja i zarządzanie adresami e-mail zawartymi w ofercie hostingu.
 
-**Dowiedz się, jak powiązać domenę, zamieścić w Internecie stronę WWW i utworzyć jeden lub więcej kont e-mail za pomocą hostingu.**
+**Dowiedz się, jak zamieścić stronę WWW w Internecie i utworzyć konta e-mail za pomocą hostingu.**
 
 ## Wymagania początkowe
 
@@ -69,34 +83,40 @@ Po zdefiniowaniu Twojego projektu możesz rozpocząć instalację strony WWW.
 
 Istnieją dwa możliwe scenariusze: **migruj** istniejącą stronę WWW lub **utwórz** nową stronę WWW.
 
-#### Migracja Twojej strony WWW
+**Kliknij na każdą z poniższych opcji, aby wyświetlić wyjaśnienia.**
+
+/// details | Migracja Twojej strony WWW
 
 Jeśli chcesz przenieść stronę WWW z innego dostawcy hostingu, zapoznaj się bezpośrednio z naszym przewodnikiem "[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". Znajdziesz tam wszystkie kluczowe etapy migracji bez przerwy w działaniu wszystkich Twoich usług (nazwa domeny, strona WWW, adres(y) e-mail, etc.).
 
-#### Załóż nową stronę www
+///
 
-W takim przypadku masz do wyboru kilka rozwiązań.
+/// details | Załóż nową stronę www
 
-##### Przypadek nr 1 - Umieszczenie w Internecie strony WWW zbudowanej lokalnie
+Możesz samodzielnie zbudować stronę WWW lub skorzystać z systemu [CMS (Content Management System)](/links/web/hosting-cms-comparison), takiego jak WordPress, PrestaShop, Joomla! czy Drupal. W zależności od dokonanego wyboru, kliknij poniższe zakładki:
 
-W takim przypadku zachęcamy do zapoznania się bezpośrednio z naszym przewodnikiem "[Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". Znajdziesz tam wszystkie etapy do wykonania:
-
-- Umieszczenie strony WWW na przestrzeni dyskowej FTP Twojego hostingu;
-- Stworzyć bazę danych powiązaną z Twoim hostingiem;
-- Umieszczenie lokalnej bazy danych w bazie danych powiązanej z Twoim hostingiem;
-- Powiązać bazę danych ze stroną WWW zainstalowaną na Twoim hostingu.
-
-##### Przypadek nr 2 - Stwórz stronę WWW za pomocą systemu CMS
-
-OVHcloud udostępnia opcję "Moduły za 1 kliknięciem".<br>
+> [!tabs]
+> Skorzystaj z oferty CMS
+>>
+>> OVHcloud udostępnia opcję "Moduły za 1 kliknięciem".<br>
 Po zalogowaniu się do [Panelu klienta OVHcloud](/links/manager) i za pomocą hostingu możesz szybko zainstalować systemy CMS *WordPress*, *Joomla!*, *PrestaShop* i *Drupal*.
-
+>>
 Aby skorzystać z tej opcji, zapoznaj się z naszym przewodnikiem "[Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+>>
+>> > [!primary]
+>> >
+>> > Jeśli wolisz ręcznie zainstalować CMS bez korzystania z opcji "Moduły za 1 kliknięciem", zapoznaj się z naszą dokumentacją "[Ręczna instalacja CMS na hostingu](/pages/web_cloud/web_hosting/cms_manual_installation)".
+>
+> **Umieszczenie w Internecie strony WWW zbudowanej lokalnie**
+>>
+>> W takim przypadku zachęcamy do zapoznania się bezpośrednio z naszym przewodnikiem "[Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". Znajdziesz tam wszystkie etapy do wykonania:
+>>
+>> - Umieszczenie strony WWW na przestrzeni dyskowej FTP Twojego hostingu;
+>> - Stworzyć bazę danych powiązaną z Twoim hostingiem;
+>> - Umieszczenie lokalnej bazy danych w bazie danych powiązanej z Twoim hostingiem;
+>> - Powiązać bazę danych ze stroną WWW zainstalowaną na Twoim hostingu.
 
-> [!primary]
->
-> Jeśli wolisz ręcznie zainstalować CMS bez korzystania z opcji "Moduły za 1 kliknięciem", zapoznaj się z naszą dokumentacją "[Ręczna instalacja CMS na hostingu](/pages/web_cloud/web_hosting/cms_manual_installation)".
->
+///
 
 ### Etap 3 - Tworzenie kont e-mail (opcjonalnie) <a name="email-creation"></a>
 
@@ -106,11 +126,15 @@ Najpierw zapoznaj się z naszym przewodnikiem "[Aktywacja kont e-mail zawartych 
 
 Po włączeniu tej opcji zapoznaj się z naszym przewodnikiem "[Tworzenie konta e-mail w ramach usługi MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)", aby spersonalizować jeden lub więcej adresów e-mail (e-mail) z Twoją domeną.
 
-> **Przypadki Szczegółowe:**
->
+**Kliknij poniższe łącze, aby wyświetlić wyjaśnienia.**
+
+/// details | Przypadki Szczegółowe:
+
 > - Jeśli przenosisz stronę WWW i/lub jeśli są to adresy e-mail powiązane z nazwą domeny Twojej strony WWW, zapoznaj się z naszym przewodnikiem "[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". Znajdziesz tam wszystkie kluczowe etapy migracji bez przerwy w działaniu wszystkich Twoich usług (nazwa domeny, strona WWW, adres(y) e-mail, etc.).
 >
 > - Jeśli nie przypisałeś domeny podczas zamawiania hostingu i chcesz skorzystać z opcji "adres(y) e-mail zawarty(e) w Twoim hostingu", przeprowadź tę operację ręcznie w [Panelu klienta OVHcloud](/links/manager).
+
+///
 
 ### Etap 4 - Sprawdź i/lub zmodyfikuj konfigurację Twojej domeny <a name="domain-configuration"></a>
 
@@ -123,9 +147,13 @@ Połączenie między Twoją domeną i usługami (hosting, serwer e-mail, etc.) j
 > W pełni aktywna zmiana strefy DNS wymaga czasu propagacji, który wynosi od 4 do 24 godzin.
 >
 
-> **Przypadki Szczegółowe:**
->
+**Kliknij poniższe łącze, aby wyświetlić wyjaśnienia.**
+
+/// details | Przypadki Szczegółowe:
+
 > Jeśli migrujesz stronę WWW i/lub konta e-mail powiązane z nazwą domeny Twojej strony WWW, zapoznaj się z naszym przewodnikiem "[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". Znajdziesz tam wszystkie kluczowe etapy migracji bez przerwy w działaniu wszystkich Twoich usług (nazwa domeny, strona WWW, adres(y) e-mail, etc.).
+
+///
 
 Aby sprawdzić i/lub zmienić połączenie między Twoją domeną i hostingiem, **zapoznaj się z następującymi przewodnikami w kolejności:**
 
@@ -148,7 +176,9 @@ Aby zweryfikować i/lub zmodyfikować powiązanie między Twoją domeną i usłu
 
 W zależności od [pakietu hostingowego](/links/web/hosting) dodatkowe opcje / oferty / funkcje są dostępne bezpłatnie.
 
-#### Certyfikaty SSL
+**Kliknij na poniższe opcje, aby wyświetlić wyjaśnienia.**
+
+/// details | Certyfikaty SSL
 
 Certyfikaty SSL umożliwiają dostęp do Twojej strony WWW przy użyciu protokołu HTTPS. Protokół ten szyfruje ruch między Twoim hostingiem a osobami odwiedzającymi Twoją stronę WWW.
 
@@ -156,7 +186,9 @@ Bez względu na [hosting web](/links/web/hosting) możesz aktywować bezpłatny 
 
 Więcej informacji o certyfikatach SSL (bezpłatnych lub płatnych) oferowanych na hostingu znajdziesz w przewodniku "[Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
 
-#### Oferty CDN
+///
+
+/// details | Oferty CDN
 
 Wszystkie nasze oferty CDN pozwalają na umieszczenie w pamięci cache części Twojej strony WWW. Skraca to czas ładowania się stron WWW, zwłaszcza w przypadku użytkowników geograficznie oddalonych od centrum danych, w którym znajduje się Twój hosting.
 
@@ -174,23 +206,31 @@ Więcej informacji na temat ofert CDN znajdziesz w przewodniku "[Przewodnik doty
 >
 > Nie można połączyć kilku usług CDN na tym samym hostingu.
 
-#### Serwery baz danych Web Cloud Databases
+///
+
+/// details | Serwery baz danych Web Cloud Databases
 
 Jeśli posiadasz hosting www **Performance**, możesz za darmo aktywować serwer bazy danych [Web Cloud Databases](/links/web/databases).
 
 Więcej szczegółów na temat korzystania z tej usługi znajdziesz w przewodniku "[Pierwsze kroki z usługą Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
-#### Wysyłanie wiadomości z Twojej strony WWW
+///
+
+/// details | Wysyłanie wiadomości z Twojej strony WWW
 
 Wszystkie nasze [hostingi](/links/web/hosting) umożliwiają wysyłanie e-maili z Twojej strony WWW lub konkretnego skryptu za darmo.
 
 Szczegółowe informacje na temat tej funkcji znajdziesz w przewodniku "[Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu](/pages/web_cloud/web_hosting/mail_function_script_records)".
 
-#### Zaplanowane zadania "CRON"
+///
+
+/// details | Zaplanowane zadania "CRON"
 
 Zadania "CRON" pozwalają na automatyczne wykonywanie skryptów zainstalowanych na Twoim hostingu.
 
 Jeśli w Twojej ofercie [hostingu web](/links/web/hosting) taka opcja jest dostępna, zapoznaj się z naszym przewodnikiem "[Tworzenie automatycznych zadań (CRON) na Twoim hostingu](/pages/web_cloud/web_hosting/cron_tasks)", aby uzyskać więcej szczegółów.
+
+///
 
 ## Sprawdź również
 
