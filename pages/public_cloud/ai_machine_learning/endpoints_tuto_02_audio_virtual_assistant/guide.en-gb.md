@@ -51,7 +51,7 @@ With TTS, your assistant will respond with natural-sounding speech, completing t
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- An access token for **OVHcloud AI Endpoints**. To create an API token, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started#getting-an-access-token) guide.
+- An access token for **OVHcloud AI Endpoints**. To create an API token, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 
 ## Instructions
 
@@ -66,7 +66,7 @@ LLM_AI_ENDPOINT=https://mixtral-8x7b-instruct-v01.endpoints.kepler.ai.cloud.ovh.
 OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 ```
 
-**Make sure to replace the token value (`OVH_AI_ENDPOINTS_ACCESS_TOKEN`) by yours.**
+**Make sure to replace the token value (`OVH_AI_ENDPOINTS_ACCESS_TOKEN`) by yours.** If you do not have one yet, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 
 Then, create a `requirements.txt` file with the following libraries:
 

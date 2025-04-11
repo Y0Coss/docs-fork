@@ -39,7 +39,7 @@ A serverless platform by OVHcloud providing easy access to a variety of world-re
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- An access token for **OVHcloud AI Endpoints**. To create an API token, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started#getting-an-access-token) guide.
+- An access token for **OVHcloud AI Endpoints**. To create an API token, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 - Quarkus CLI installed
 - Java Development Kit (JDK) version 17 or higher
 - Internet access to retrieve dependencies
@@ -166,7 +166,7 @@ quarkus.langchain4j.mistralai.chat-model.model-name=${OVH_AI_ENDPOINTS_MODEL_NAM
 quarkus.langchain4j.mistralai.chat-model.max-tokens=1024
 ```
 
-**Make sure to replace the token value (`OVH_AI_ENDPOINTS_ACCESS_TOKEN`) by yours.** If you do not have one yet, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started#getting-an-access-token) guide.
+**Make sure to replace the token value (`OVH_AI_ENDPOINTS_ACCESS_TOKEN`) by yours.** If you do not have one yet, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 
 You will also have to replace two other environements variables, related to the model you want to use. You can find these model-specific values in the `documentation` tab of each model. For example, if you want to add the `Mistral-7B-Instruct-v0.3` model, the expected environement variables will be:
 
