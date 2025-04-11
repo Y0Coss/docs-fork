@@ -1,5 +1,5 @@
 ---
-title: Object Storage - How to connect Object Storage buckets with other resources in a vRack Private Network
+title: Object Storage - How to connect Object Storage buckets with other resources in a vRack
 excerpt: Find out how to use Object Storage together with resources in a Private Network
 updated: 2025-04-10
 ---
