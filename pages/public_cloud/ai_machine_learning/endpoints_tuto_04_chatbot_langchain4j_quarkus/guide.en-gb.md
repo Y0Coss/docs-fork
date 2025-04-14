@@ -1,6 +1,6 @@
 ---
 title: AI Endpoints - Create your own AI chatbot using LangChain4j and Quarkus
-excerpt: 
+excerpt: Learn how to build an AI-powered chatbot using LangChain4j, Quarkus, and OVHcloud AI Endpoints.
 updated: 2025-04-11
 ---
 
