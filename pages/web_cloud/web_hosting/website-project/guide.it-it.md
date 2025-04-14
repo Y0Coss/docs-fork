@@ -1,5 +1,5 @@
 ---
-title: "Come creare un sito Web - Realizzare il tuo progetto in 5 step"
+title: "Come creare un sito Web - Realizzare il tuo progetto in 5 tappe"
 excerpt: "Questa guida ti mostra come definire il tuo progetto, pubblicare il tuo sito Internet e creare indirizzi email con la tua soluzione di hosting Web"
 updated: 2025-04-14
 ---
@@ -26,7 +26,7 @@ OVHcloud propone diverse soluzioni di [hosting Web](/links/web/hosting). Sono co
 - creare rapidamente un sito Web (professionale o meno), un blog, un **C**ontent **M**anagement **S**ystem (**CMS**) come *WordPress*, *Joomla!*, *PrestaShop* o *Drupal* o ancora un negozio online.
 - Personalizzare uno o più indirizzi email con il dominio che vuoi utilizzare per il tuo sito Web.
 - Gestire più siti Web su una sola offerta di hosting Web.
-- Disporre di uno o più database (inclusi con alcune delle nostre [soluzioni di hosting Web](/links/web/hosting)).
+- Disporre di uno o più database (inclusi con alcune delle nostre soluzioni di [hosting Web](/links/web/hosting)).
 - Ecc.
 
 Queste offerte ti risparmiano la necessità di gestire la manutenzione, l'aggiornamento e la sicurezza di un'infrastruttura di hosting Web.<br>
@@ -87,7 +87,7 @@ Sono possibili due scenari: **migrare** un sito Web esistente oppure **creare** 
 
 /// details | Migrare il tuo sito Web
 
-Per migrare un sito Web da un altro provider, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli step chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc.).
+Per migrare un sito Web da un altro provider, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli tappe chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc.).
 
 ///
 
@@ -109,7 +109,7 @@ Per migrare un sito Web da un altro provider, consulta la nostra guida "[Migrare
 >>
 > **Mettere online un sito sviluppato localmente**
 >>
->> In questo caso, è possibile consultare la guida "[Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". In questa interfaccia sono disponibili tutti gli step necessari per:
+>> In questo caso, è possibile consultare la guida "[Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)". In questa interfaccia sono disponibili tutti gli tappe necessari per:
 >>
 >> - Collocare il sito Web sullo spazio di storage FTP dell’hosting Web;
 >> - Creare un database associato all’hosting Web;
@@ -130,7 +130,7 @@ Una volta attivata l’opzione, consulta la nostra guida "[Creare un account ema
 
 /// details | Casi Speciali:
 
-> - In caso di migrazione di un sito Web e/o di indirizzi email associati al dominio del sito Web, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli step chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc.).
+> - In caso di migrazione di un sito Web e/o di indirizzi email associati al dominio del sito Web, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli tappe chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc.).
 >
 > - Se non hai associato un dominio al momento dell’ordine del tuo hosting Web e vuoi usufruire dell’opzione "indirizzo/i email incluso/i con il tuo hosting Web", è necessario effettuare l’operazione manualmente dallo [Spazio Cliente OVHcloud](/links/manager).
 
@@ -151,7 +151,7 @@ Infatti, il collegamento tra il dominio e i servizi (hosting Web, server di post
 
 /// details | Casi Speciali:
 
-> In caso di migrazione di un sito Web e/o di indirizzi email associati al dominio del sito Web, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli step chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc.).
+> In caso di migrazione di un sito Web e/o di indirizzi email associati al dominio del sito Web, consulta la nostra guida "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)". In questa interfaccia sono disponibili tutti gli tappe chiave per migrare senza interruzione tutti i servizi (domini, siti Web, indirizzi email, ecc.).
 
 ///
 
@@ -190,7 +190,7 @@ Per maggiori informazioni sui certificati SSL (gratuiti o a pagamento) proposti 
 
 /// details | Le offerte CDN
 
-Tutte le nostre offerte CDN permettono di mettere in cache una parte del tuo sito Web. In questo modo, i tempi di caricamento delle pagine che compongono il sito Web si riducono, in particolare per i visitatori geograficamente distanti dal datacenter in cui è localizzato l’hosting Web.
+Tutte le nostre offerte CDN permettono di mettere in cache una parte del tuo sito Web. In questo modo, il tempo di caricamento delle pagine che compongono il sito Web è ridotto, in particolare per i visitatori geograficamente distanti dal datacenter in cui è localizzato l’hosting Web.
 
 Con gli hosting Web, OVHcloud propone 3 offerte CDN:
 

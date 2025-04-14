@@ -20,13 +20,13 @@ details[open]>summary::before {
 
 ## Objetivo
 
-A OVHcloud oferece várias [ofertas de alojamento web](/links/web/hosting). Destinam-se a diferentes casos de uso:
+A OVHcloud oferece várias ofertas de [alojamento web](/links/web/hosting). Destinam-se a diferentes casos de uso:
 
 - Começar na Web.
 - Criar rapidamente um website (profissional ou não), um blog, um **C**ontent **M**anagement **S**ystem (**CMS**) tal como *WordPress*, *Joomla!*, *PrestaShop* ou *Drupal* ou ainda uma loja online.
 - Personalizar um ou vários endereços de e-mail com o nome de domínio que pretende utilizar para o seu website.
 - Gerir vários websites numa única oferta de alojamento web.
-- Dispor de uma ou várias bases de dados (incluídas com algumas das nossas [ofertas de alojamento web](/links/web/hosting)).
+- Dispor de uma ou várias bases de dados (incluídas com algumas das nossas ofertas de [alojamento web](/links/web/hosting)).
 - Etc.
 
 Estas ofertas dispensam a gestão da manutenção, atualização e segurança de uma infraestrutura de alojamento web.<br>
@@ -98,8 +98,8 @@ Pode optar por criar o seu próprio website na íntegra ou utilizar um [CMS (Con
 > [!tabs]
 > **Utilizar um CMS**
 >>
->> A OVHcloud oferece-lhe a opção "Módulos 1 clique".<br>
-Depois de aceder à [Área de Cliente OVHcloud](/links/manager) e o alojamento web alojado, poderá instalar rapidamente os CMS *WordPress*, *Joomla!*, *PrestaShop* e *Drupal*.
+>> A OVHcloud oferece-lhe a opção "Módulos 1 clique".
+>> Depois de aceder à [Área de Cliente OVHcloud](/links/manager) e o alojamento web alojado, poderá instalar rapidamente os CMS *WordPress*, *Joomla!*, *PrestaShop* e *Drupal*.
 >>
 >> Para utilizar esta opção, consulte o guia "[Instalar o seu website com um 'módulo 1 clique' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 >>
@@ -190,7 +190,7 @@ Para mais informações sobre os certificados SSL (gratuitos ou pagos) disponív
 
 /// details | As ofertas CDN
 
-Todas as nossas ofertas CDN permitem armazenar em cache uma parte do seu website. Assim, os tempos de carregamento das páginas que constituem o seu website são reduzidos, nomeadamente para os visitantes geograficamente afastados do datacenter onde o seu alojamento web está
+Todas as nossas ofertas CDN permitem armazenar em cache uma parte do seu website. Assim, o tempo de carregamento das páginas que constituem o seu website é reduzido, nomeadamente para os visitantes geograficamente afastados do datacenter onde o seu alojamento web está
 
 Com os alojamentos web, a OVHcloud propõe 3 ofertas CDN:
 
