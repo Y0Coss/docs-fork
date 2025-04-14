@@ -1,6 +1,6 @@
 ---
 title: Aussetzen oder Pausieren einer Instanz
-updated: 2024-11-12
+updated: 2024-04-14
 ---
 
 ## Ziel
@@ -22,6 +22,8 @@ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie mögliche
 ## In der praktischen Anwendung
 
 > [!alert]
+>
+> Diese Anleitung gilt nur für Instanzen mit **stündlicher Abrechnung**. Wenn Ihre Instanzen über eine **monatliche Abrechnung** verfügen, wird die klassische Abrechnung ungeachtet des Status der Dienstleistung fortgesetzt.
 >
 > Diese Manipulationen führen dazu, dass die Instanz weiterhin abgerechnet wird, solange sie nicht gelöscht wird.
 >
