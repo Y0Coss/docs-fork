@@ -84,7 +84,7 @@ link ether f0:00:00:ef:0e:f0
 >> Dans un éditeur de texte, ouvrez le fichier de configuration réseau situé dans `/etc/network/interfaces.d` pour le modifier. Ici, le fichier s'appelle `50-cloud-init`.
 >>
 >> ```bash
-sudo nano /etc/network/interfaces.d/50-cloud-init
+>> sudo nano /etc/network/interfaces.d/50-cloud-init
 >> ```
 >>
 >> Ajoutez les lignes suivantes à la configuration existante, remplacez `NETWORK_INTERFACE`, `IP_ADDRESS` et `NETMASK` par vos propres valeurs :
@@ -152,7 +152,7 @@ sudo nano /etc/network/interfaces.d/50-cloud-init
 >> Une fois que vous avez identifié votre interface de réseau privé, utilisez l'éditeur de texte de votre choix pour créer le fichier de configuration réseau suivant. Remplacez `NETWORK_INTERFACE` par votre propre valeur.
 >>
 >> ```bash
-sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
+>> sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
 >> ```
 >>
 >> Ajoutez ces lignes, en remplaçant `NETWORK_INTERFACE`, `IP_ADDRESS` et `NETMASK` par vos propres valeurs :
@@ -181,7 +181,7 @@ sudo touch /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
 >> Sous **CentOS 8, AlmaLinux et RockyLinux**, utilisez cette commande :
 >>
 >> ```bash
-sudo systemctl restart NetworkManager.service
+>> sudo systemctl restart NetworkManager.service
 >> ```
 >>
 >> Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
@@ -208,7 +208,7 @@ sudo systemctl restart NetworkManager.service
 >> Dans notre exemple, nous avons nommé notre profil de configuration `private-interface`.
 >>
 >> ```bash
-nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
+>> nmcli connection add type ethernet con-name CONNECTION_NAME ifname INTERFACE_NAME
 >> ```
 >>
 >> **Exemple :**

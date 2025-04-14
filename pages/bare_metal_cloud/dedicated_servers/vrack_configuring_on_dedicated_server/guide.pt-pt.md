@@ -228,7 +228,7 @@ link ether f0:00:00:ef:0e:f0
 >> ```bash
 >> [user@server ~]$ cd /etc/NetworkManager/system-connections
 >> [user@server system-connections]$ ls
-cloud-init-eno1.nmconnection  private-interface.nmconnection
+>> cloud-init-eno1.nmconnection  private-interface.nmconnection
 >> ```
 >>
 >> Pode editar este ficheiro utilizando o gestor `nmcli`, substituindo `IP_ADDRESS`, `PREFIX` e `CONNECTION_NAME` pelos seus próprios valores.
