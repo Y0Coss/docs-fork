@@ -30,15 +30,14 @@ Click `Edit`{.action} to modify the image.
 
 ![Edit button to modify the image](images/vlcm_01.png){.thumbnail}
 
-From the dropdown list, select the desired ESXi version. The first option usually corresponds to the latest version published by Broadcom.
-
-![Selecting a new ESXi version](images/vlcm_02.png){.thumbnail}
-
-> **OVHcloud recommends** always using the suggested version. Avoid downgrading to a previous version.
+From the dropdown list, select the desired ESXi version. The first option usually corresponds to the latest version published by Broadcom. 
 
 Click `Save`{.action} to confirm and save the selected image.
 
-![Confirmation with Save button](images/vlcm_03.png){.thumbnail}
+![Selecting a new ESXi version](images/vlcm_02.png){.thumbnail}
+
+> ![primary]
+> OVHcloud recommends always using the suggested version. Avoid downgrading to a previous version.
 
 Your image is now loaded.
 
@@ -46,7 +45,7 @@ Your image is now loaded.
 
 Click `Remediate All`{.action} to apply the image to all hosts in the cluster.
 
-![Launching with Remediate All](images/vlcm_04.png){.thumbnail}
+![Launching with Remediate All](images/vlcm_03.png){.thumbnail}
 
 This action triggers the maintenance mode for the affected hosts. Virtual machines will be automatically moved using **vMotion**.
 
@@ -57,9 +56,11 @@ This action triggers the maintenance mode for the affected hosts. Virtual machin
 
 Click `Start Remediation`{.action} to begin the process.
 
-![Final validation with Start Remediation](images/vlcm_05.png){.thumbnail}
+![Start Remediation](images/vlcm_04.png){.thumbnail}
 
 The update process is now running. It may take several minutes per host.
+
+![Final validation](images/vlcm_05.png){.thumbnail}
 
 ## Go further
 
