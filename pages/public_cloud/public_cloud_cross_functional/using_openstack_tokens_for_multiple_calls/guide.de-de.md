@@ -1,8 +1,12 @@
 ---
 title: "OpenStack-Tokens verwenden"
 excerpt: "Erfahren Sie hier, wie Sie OpenStack-Tokens für Ihre Aktionen erstellen und verwenden"
-updated: 2025-04-14
+updated: 2023-05-05
 ---
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
 
 ## Ziel
 
@@ -60,8 +64,7 @@ Windows-Benutzer können dieser Anleitung folgen, um die Umgebungsvariablen zu e
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
-Klicken Sie auf `Users & Roles`{.action} im Bereich `Project Management` und dann auf `...`{.action} rechts neben Ihrem OpenStack-Benutzer.
-
+Klicken Sie auf `Users & Roles`{.action} im Bereich `Project Management` und dann auf `...`{.action} rechts neben Ihrem OpenStack-Benutzer.<br>
 Laden Sie die OpenRC-Datei dieses Benutzers herunter und geben Sie die Region an, in der Sie Aktionen durchführen möchten.
 
 ![OpenRC Datei herunterladen](images/openrc.png){.thumbnail}
@@ -160,4 +163,4 @@ openstack --os-auth-type token token revoke $OS_TOKEN
 
 ## Weiterführende Informationen
 
-Treten Sie unserer [User Community](/links/community) bei.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

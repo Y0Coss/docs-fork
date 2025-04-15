@@ -1,7 +1,7 @@
 ---
-title: "How to use OpenStack tokens"
+title: "Using OpenStack Tokens"
 excerpt: "Find out how to create and use OpenStack tokens for your actions"
-updated: 2025-04-14
+updated: 2023-06-23
 ---
 
 ## Objective
@@ -33,7 +33,7 @@ This guide will show you how to create an OpenStack token, use it for the action
 
 ## Requirements 
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](/links/manager){.external} 
 - An [OpenStack CLI ready environment](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 
 > [!primary]
@@ -61,7 +61,7 @@ Windows users can follow this guide to export environment variables:
 
 ### Step 1: Download and source your OpenRC file
 
-Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Users & Roles`{.action} in the `Project Management` section, then click on the `...`{.action} button to the right of your OpenStack user.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Users & Roles`{.action} in the `Project Management` section, then click on the `...`{.action} button to the right of your OpenStack user.<br>
 
 Download this user's OpenRC file and specify the region where you want to perform actions.
 
