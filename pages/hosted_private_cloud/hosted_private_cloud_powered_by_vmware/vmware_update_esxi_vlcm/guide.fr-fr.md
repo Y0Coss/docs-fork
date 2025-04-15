@@ -1,7 +1,7 @@
 ---
 title: Mise à jour des hôtes avec vSphere Lifecycle Management (vLCM)
 excerpt: Apprenez à maintenir vos hôtes ESXi à jour via vSphere Lifecycle Management, en toute sécurité et en quelques clics.
-updated: 2025-04-14
+updated: 2025-04-15
 ---
 
 ## Objectif
@@ -22,11 +22,11 @@ Connectez-vous à votre interface vSphere, puis sélectionnez le **cluster d’h
 
 ### Étape 2 : Choisir une nouvelle image
 
-Accédez au menu `Updates > Hosts > Image` pour consulter l’image actuelle.
+Accédez au menu `Updates > Hosts > Image`{.action} pour consulter l’image actuelle.
 
 ![Affichage de l'image actuelle dans vLCM](images/vlcm_00.png){.thumbnail}
 
-Cliquez sur **Edit** pour modifier l’image.
+Cliquez sur `Edit`{.action} pour modifier l’image.
 
 ![Bouton Edit pour modifier l'image](images/vlcm_01.png){.thumbnail}
 
@@ -36,7 +36,7 @@ Dans la liste déroulante, sélectionnez la version ESXi souhaitée. La premièr
 
 > **OVHcloud recommande** de toujours utiliser la version préconisée. Évitez toute mise à jour vers une version antérieure.
 
-Cliquez sur **Save** pour valider et enregistrer l’image sélectionnée.
+Cliquez sur `Save`{.action} pour valider et enregistrer l’image sélectionnée.
 
 ![Confirmation avec bouton Save](images/vlcm_03.png){.thumbnail}
 
@@ -44,7 +44,7 @@ Votre image est maintenant chargée.
 
 ### Étape 3 : Lancer la mise à jour
 
-Cliquez sur **Remediate All** pour appliquer l’image à l’ensemble des hôtes du cluster.
+Cliquez sur `Remediate All`{.action} pour appliquer l’image à l’ensemble des hôtes du cluster.
 
 ![Lancement avec Remediate All](images/vlcm_04.png){.thumbnail}
 
@@ -55,7 +55,7 @@ Cette action déclenche la mise en maintenance des hôtes concernés. Les machin
 > - Aucune règle d’anti-affinité n’empêche le déplacement des machines virtuelles ;
 > - Aucun fichier `.iso` ou `.vmdk` n’est stocké localement sur les hôtes.
 
-Cliquez sur **Start Remediation** pour démarrer le processus.
+Cliquez sur `Start Remediation`{.action} pour démarrer le processus.
 
 ![Validation finale avec Start Remediation](images/vlcm_05.png){.thumbnail}
 
@@ -63,4 +63,8 @@ Le processus de mise à jour est lancé. Il peut durer plusieurs minutes par hô
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d’utilisateurs](/links/community).
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Posez vos questions, donnez votre avis et échangez directement avec l’équipe en charge des services Hosted Private Cloud sur notre canal [Discord](https://discord.gg/ovhcloud).
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
