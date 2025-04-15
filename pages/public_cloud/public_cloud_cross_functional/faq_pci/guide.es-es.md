@@ -155,6 +155,8 @@ También encontrará más información sobre [documentación de OpenStack](https
 
 ### Seguridad
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 /// details | ¿Cómo están protegidos mis servidores?
 
 OVHcloud protege toda su infraestructura gracias a su solución anti-DDoS exclusiva. Además, puede añadir los grupos de seguridad OpenStack: este equivalente de un cortafuegos se gestiona directamente a nivel de la infraestructura de OpenStack, antes de sus instancias.

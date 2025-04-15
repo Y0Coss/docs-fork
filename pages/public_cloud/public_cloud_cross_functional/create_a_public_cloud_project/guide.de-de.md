@@ -42,7 +42,7 @@ Sie haben ab sofort Zugriff auf das gesamte OVHcloud Public Cloud Ökosystem. En
 > [!primary]
 > **Discovery-Modus**
 >
-> Wenn es sich um Ihr erstes Public Cloud Projekt handelt und Sie keine Zahlungsart in Ihrem Account angegeben haben, ist Ihr Public Cloud Projekt auf den Discovery-Modus des OVHcloud Kundencenters beschränkt. Das bedeutet, dass Sie die Public Cloud Produkte durchsuchen und entdecken können, aber noch keine Ressourcen wie etwa Instanzen erstellen können.
+> Wenn es sich um Ihr erstes Public Cloud Projekt handelt und Sie keine Zahlungsart in Ihrem Account angegeben haben, ist Ihr Public Cloud Projekt auf den Discovery-Modus des OVHcloud Kundencenters beschränkt. Das bedeutet, dass Sie Zugang zur Public Cloud Oberfläche haben und die verfügbaren Dienste sehen können, aber noch keine Ressourcen wie etwa Instanzen erstellen können.
 >
 > Um das volle Potenzial der Public Cloud auszuschöpfen und Ihre ersten Ressourcen zu verwenden, klicken Sie auf der Startseite Ihres Projekts auf `Projekt aktivieren`{.action}.
 >

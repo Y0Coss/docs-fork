@@ -156,6 +156,8 @@ Ulteriori informazioni sono disponibili alla pagina [documentazione OpenStack](h
 
 ### Sicurezza
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 /// details | In che modo vengono protetti i server?
 
 OVHcloud protegge l'intera infrastruttura grazie alla sua soluzione anti-DDoS esclusiva. a cui è possibile aggiungere gruppi di sicurezza OpenStack: equiparabili a un firewall, sono gestiti direttamente a livello dell’infrastruttura OpenStack, a monte delle istanze.
