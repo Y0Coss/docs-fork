@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Create your own audio summarizer
 excerpt: Summarize hours of meetings ASR and LLM AI endpoints
-updated: 2025-04-10
+updated: 2025-04-15
 ---
 
 > [!primary]
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 
 *Note that Python 3.11 is used in this tutorial.*
 
-### Python scripts
+### Importing necessary libraries and variables
 
 Once this is done, you can create a Python file named `audio-summarizer-app.py`, where you will first import Python librairies as follow:
 
@@ -155,7 +155,7 @@ def asr_transcription(audio):
 
 - The audio file is preprocessed as follow: `.wav` format, `1` channel, `16000` frame rate
 - The transformed audio `processed_audio` is read
-- An API call is made to the ASR AI Endpoint named `nvr-asr-en-gb`
+- An API call is made to the ASR endpoint named `nvr-asr-en-gb`
 - The full response is stored in `resp` variable and returned by the function
 
 🎉 Now that you have this function, you are ready to transcribe audio files.
@@ -199,7 +199,7 @@ def chat_completion(new_message):
 
 ⚡️ You're almost there! The final step is to build your web app, making your solution easy to use with just a few lines of code.
 
-### Build Gradio app
+### Build the app with Gradio
 
 [Gradio](https://www.gradio.app/) is an open-source Python library that allows to quickly create user interfaces for Machine Learning models and demos.
 
