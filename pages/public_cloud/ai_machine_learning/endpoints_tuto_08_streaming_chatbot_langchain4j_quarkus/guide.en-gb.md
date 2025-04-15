@@ -1,6 +1,6 @@
 ---
 title: AI Endpoints - Streaming Chatbot with LangChain4j and Quarkus
-excerpt: Learn how to build a Java-based chatbot that streams responses from AI Endpoints for a real-time conversational experience
+excerpt: How to build a Java-based chatbot that streams responses from AI Endpoints for a real-time chat experience
 updated: 2025-04-15
 ---
 
