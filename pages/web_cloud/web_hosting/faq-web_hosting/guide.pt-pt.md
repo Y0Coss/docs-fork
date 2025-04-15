@@ -1,7 +1,7 @@
 ---
 title: "Alojamentos web - FAQ"
 excerpt: "Encontre as principais questões colocadas sobre os alojamentos web da OVHcloud"
-updated: 2025-04-10
+updated: 2025-04-15
 ---
 
 <style>
@@ -66,7 +66,7 @@ Poderá alterar a palavra-passe FTP do seu alojamento web.
 
 > [!success]
 >
-> Encontre todos os detalhes no nosso guia "[Alterar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)"
+> Encontre todos os detalhes no nosso guia "[Alterar a palavra-passe de um utilizador FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 ///
 
@@ -86,7 +86,7 @@ Poderá alterar as palavras-passe das bases de dados associadas ao seu alojament
 
 > [!success]
 >
-> Encontre todos os detalhes no nosso guia "[Alterar a palavra-passe da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_change_password)"
+> Encontre todos os detalhes no nosso guia "[Alterar a palavra-passe da base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_change_password)".
 
 ///
 
@@ -103,11 +103,11 @@ Poderá alterar a palavra-passe do endereço de e-mail (observe a política de p
 
 > [!success]
 >
-> Encontre todos os detalhes no nosso guia "[Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)"
+> Encontre todos os detalhes no nosso guia "[Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 >
 > Se estiver a utilizar um programa de mensagens (Outlook, Mail para macOS, Thunderbird, etc.), atualize a palavra-passe para o seu endereço de e-mail quando este lhe for solicitado pelo programa de mensagens, quer seja aberto ou sincronizado.
 >
-> Se tiver mais perguntas sobre a solução de e-mail *MX Plan*, consulte o nosso [FAQ - E-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+> Se tiver mais perguntas sobre a solução de e-mail *MX Plan*, consulte o nosso [FAQ - E-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 
 ///
 
@@ -129,7 +129,7 @@ Aqui estão os principais passos a seguir:
 >
 > Para mais informações sobre como publicar um site num alojamento web, consulte o guia detalhado "[Publicar um site num alojamento web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)".
 >
-> Se optar por instalar um CMS (WordPress, Joomla!, PrestaShop, Drupal) com a nossa solução "Módulos em 1 clique", consulte o guia detalhado "[Instalar o seu website com um Módulos "1 clique" (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
+> Se optar por instalar um CMS (WordPress, Joomla!, PrestaShop, Drupal) com a nossa solução "Módulos 1 clique", consulte o guia detalhado "[Instalar o seu website com um Módulos "1 clique" (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 >
 > Se o seu website já existe noutro fornecedor e se pretender migrá-lo para a OVHcloud, consulte o guia detalhado "[Migrar o seu website e os seus serviços associados para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 >
@@ -141,16 +141,16 @@ Aqui estão os principais passos a seguir:
 
 Aqui estão os principais passos a seguir:
 
-1. Encomendar o alojamento e os endereços de e-mail na OVHcloud
-2. Criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud
-3. Recuperar um backup completo do seu site web
-4. Importar o backup do seu website para a sua oferta de alojamento OVHcloud
-5. Recriar os mesmos endereços de e-mail na OVHcloud
-6. Declarar os servidores de e-mail OVHcloud na zona DNS ativa do seu domínio
-7. Transferir o conteúdo dos seus antigos endereços de e-mail para os novos endereços na OVHcloud
-8. Reconfigurar os seus softwares de e-mail
-9. Substituir os servidores DNS ativos do seu domínio pelos da OVHcloud
-10. Transferir um domínio para a OVHcloud
+1. Encomendar o alojamento e os endereços de e-mail na OVHcloud.
+2. Criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud.
+3. Recuperar um backup completo do seu site web.
+4. Importar o backup do seu website para a sua oferta de alojamento OVHcloud.
+5. Recriar os mesmos endereços de e-mail na OVHcloud.
+6. Declarar os servidores de e-mail OVHcloud na zona DNS ativa do seu domínio.
+7. Transferir o conteúdo dos seus antigos endereços de e-mail para os novos endereços na OVHcloud.
+8. Reconfigurar os seus softwares de e-mail.
+9. Substituir os servidores DNS ativos do seu domínio pelos da OVHcloud.
+10. Transferir um domínio para a OVHcloud.
 
 > [!success]
 >
@@ -160,7 +160,7 @@ Aqui estão os principais passos a seguir:
 
 /// details | Como alojar vários websites num mesmo alojamento web?
 
-Se o seu [alojamento web é compatível](/links/web/hosting), siga estes passos:
+Se o seu [alojamento web](/links/web/hosting) é compatível, siga estes passos:
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
 2. Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
@@ -178,17 +178,17 @@ Poderá gerir os nomes de domínio/subdomínios declarados em multi-site no seu 
 
 Para que o seu website esteja acessível com um URL em "HTTPS" (exemplo: `https://domain.tld`), são necessários dois pré-requisitos:
 
-- Deve dispor de um certificado SSL ativo para o seu nome de domínio (ou instalado no seu alojamento web)
+- Deve dispor de um certificado SSL ativo para o seu nome de domínio (ou instalado no seu alojamento web).
 - No código-fonte do seu website, este deve forçar a reescrita dos URLs em "HTTPS".
 
-A OVHcloud disponibiliza [vários certificados SSL](/links/web/hosting-options) nos alojamentos web.
+A OVHcloud disponibiliza vários [certificados SSL](/links/web/hosting-options) nos alojamentos web.
 
 Para ativar um certificado SSL no alojamento web do seu website, efetue os seguintes passos:
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
 2. Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
 3. Na página que se abrir, na caixa **Configuração**, clique no botão `...`{.action} à direita da menção **Certificado SSL** e, a seguir, em `Encomendar um certificado SSL`{.action}.
-4. [Escolha o certificado que deseja entre a lista dos certificados disponíveis](/pages/web_cloud/web_hosting/ssl_on_webhosting), depois continue até à finalização da nota de encomenda.
+4. Escolha o certificado que deseja entre a [lista dos certificados disponíveis](/pages/web_cloud/web_hosting/ssl_on_webhosting), depois continue até à finalização da nota de encomenda.
 
 > [!success]
 >
@@ -309,9 +309,9 @@ Existem dois casos possíveis:
 
 - Se instalou um [Módulos "1 clique"](/pages/web_cloud/web_hosting/cms_install_1_click_modules): este ficheiro é automaticamente eliminado pelos nossos robôs de instalação.
 - Se instalou o seu website manualmente, siga os passos abaixo:
-- [Ligue-se ao espaço de armazenamento FTP do seu alojamento web](/pages/web_cloud/web_hosting/ftp_connection).
-- Depois de aceder ao espaço de armazenamento FTP, aceda ao diretório `www`.
-- Renomear o ficheiro **index.html** em **index.html.old**. Esta operação irá desativar a página após alguns minutos.
+    - Ligue-se ao [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web.
+    - Depois de aceder ao espaço de armazenamento FTP, aceda ao diretório `www`.
+    - Renomear o ficheiro **index.html** em **index.html.old**. Esta operação irá desativar a página após alguns minutos.
 
 > [!success]
 >
@@ -348,7 +348,7 @@ Será necessário eliminar o módulo 1 clique e voltar a instalá-lo.
 3. Na página que se abrir, clique no separador `Módulos "1 clique"`{.action}.
 4. Na tabela que aparecer, clique no botão `...`{.action} à direita na linha do *Módulos "1 clique"* em causa e, a seguir, em `Eliminar o módulo`{.action}.
 
-A eliminação do *módulo 1 clique* pode demorar **vários minutos**.
+A eliminação do *módulo "1 clique"* pode demorar **vários minutos**.
 
 De seguida, elimine a base de dados associada, executando as seguintes ações:
 
@@ -444,7 +444,7 @@ Para corrigir isto, siga estes passos:
 >> 3. Na página que se abrir, clique no separador `Zona DNS`{.action}.
 >> 4. Na tabela que aparece (representando a zona DNS do seu domínio), identifique a entrada do tipo `A` cujo `Alvo` é o endereço IP `213.186.33.5`.
 >> 5. Clique no botão `...`{.action} à direita da linha e, a seguir, em `Modificar entrada`{.action}.
->> 6. Na janela que se abrir, substitua, no formulário `Alvo*`, o endereço IP `213.186.33.5` pelo endereço IP do alojamento web onde se encontra o seu website.
+>> 6. Na janela que se abrir, substitua, no compo `Alvo *`, o endereço IP `213.186.33.5` pelo endereço IP do alojamento web onde se encontra o seu website.
 >>
 >> > [!success]
 >> >
@@ -533,7 +533,7 @@ O restauro de uma base de dados pode demorar **vários minutos**.
 > Encontre todos os detalhes nos seguintes guias:
 >
 > - [Restaurar o espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
-> - ['Importar um backup para a base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
+> - [Importar um backup para a base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
 
 Se o restauro não permitir restabelecer o acesso ao seu website, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
 
@@ -543,7 +543,7 @@ Se o restauro não permitir restabelecer o acesso ao seu website, contacte o seu
 
 ![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
-Se ativou [a opção CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) do seu alojamento web, desative o modo *Manutenção* no seu site WordPress ou PrestaShop.
+Se ativou a [opção CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) do seu alojamento web, desative o modo *Manutenção* no seu site WordPress ou PrestaShop.
 
 Se não ativou esta opção nem utilizou o modo *Manutenção*, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
 
@@ -566,7 +566,7 @@ Esta mensagem indica que o tipo de pedidos HTTP que está a tentar efetuar no se
 
 Nesta situação, são necessárias várias ações:
 
-- [Examine os logs](/pages/web_cloud/web_hosting/logs_and_statistics) do seu website, a fim de determinar quais os pedidos que provocaram esse bloqueio.
+- Examine os [logs](/pages/web_cloud/web_hosting/logs_and_statistics) do seu website, a fim de determinar quais os pedidos que provocaram esse bloqueio.
 - Utilize um software antivírus ou antisspyware para se certificar de que os seus dispositivos (computadores, smartphones, etc.) não estão infetados por spyware ou malware.
 - Verifique o código-fonte do seu website (espaço de armazenamento FTP e base(s) de dados).
 
@@ -589,7 +589,7 @@ Esta mensagem indica que o endereço IP que utiliza para se ligar ao seu website
 
 Nesta situação, são necessárias várias ações:
 
-- [Examine os logs](/pages/web_cloud/web_hosting/logs_and_statistics) do seu website, a fim de determinar quais os pedidos que provocaram esse bloqueio.
+- Examine os [logs](/pages/web_cloud/web_hosting/logs_and_statistics) do seu website, a fim de determinar quais os pedidos que provocaram esse bloqueio.
 - Verifique se os dispositivos (computadores, smartphones, etc.) estão infetados por spyware ou malware, utilizando software antivírus ou antisspyware.
 - Verifique o código-fonte do seu website (espaço de armazenamento FTP e base(s) de dados).
 

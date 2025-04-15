@@ -1,7 +1,7 @@
 ---
 title: "FAQ Hosting web"
 excerpt: "Rivivi le principali domande sugli hosting Web OVHcloud"
-updated: 2025-04-10
+updated: 2025-04-15
 ---
 
 <style>
@@ -66,7 +66,7 @@ Sarà possibile modificare la password FTP dell’hosting Web.
 
 > [!success]
 >
-> Trovi tutti i dettagli nella nostra guida "[Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password)"
+> Trovi tutti i dettagli nella nostra guida "[Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 ///
 
@@ -86,7 +86,7 @@ In questa interfaccia è possibile modificare le password dei database associati
 
 > [!success]
 >
-> Trovi tutti i dettagli nella nostra guida "[Modificare la password del database di un hosting Web](/pages/web_cloud/web_hosting/sql_change_password)"
+> Trovi tutti i dettagli nella nostra guida "[Modificare la password del database di un hosting Web](/pages/web_cloud/web_hosting/sql_change_password)".
 
 ///
 
@@ -103,11 +103,11 @@ Sarà possibile modificare la password associata all’indirizzo di posta elettr
 
 > [!success]
 >
-> Trovi tutti i dettagli nella nostra guida "[Modificare la password di un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)"
+> Trovi tutti i dettagli nella nostra guida "[Modificare la password di un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 >
 > Se utilizzi un client di posta (Outlook, Mail di macOS, Thunderbird, ecc...), aggiorna la password del tuo indirizzo email quando il client di posta lo richiede, al momento dell'apertura o della sincronizzazione.
 >
-> Per maggiori informazioni sulla soluzione email *MX Plan*, consulta le nostre [FAQ - Email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+> Per maggiori informazioni sulla soluzione email *MX Plan*, consulta le nostre [FAQ - Email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 
 ///
 
@@ -141,16 +141,16 @@ Ecco i principali step da seguire:
 
 Ecco i principali step da seguire:
 
-1. Ordina l’hosting e gli indirizzi email in OVHcloud
-2. Creare e preconfigurare una zona DNS per un dominio in OVHcloud
-3. Ripristinare un backup completo del sito Web
-4. Importare il backup del sito Web sulla soluzione di hosting OVHcloud
-5. Ricreare gli indirizzi email in modo identico in OVHcloud
-6. Dichiarare i server di posta OVHcloud nella zona DNS attiva del dominio
-7. Trasferire il contenuto dei vecchi indirizzi email nei nuovi indirizzi in OVHcloud
-8. Riconfigurare il software di posta
-9. Sostituire i server DNS attivi del dominio con quelli di OVHcloud
-10. Trasferire un dominio in OVHcloud
+1. Ordina l’hosting e gli indirizzi email in OVHcloud.
+2. Creare e preconfigurare una zona DNS per un dominio in OVHcloud.
+3. Ripristinare un backup completo del sito Web.
+4. Importare il backup del sito Web sulla soluzione di hosting OVHcloud.
+5. Ricreare gli indirizzi email in modo identico in OVHcloud.
+6. Dichiarare i server di posta OVHcloud nella zona DNS attiva del dominio.
+7. Trasferire il contenuto dei vecchi indirizzi email nei nuovi indirizzi in OVHcloud.
+8. Riconfigurare il software di posta.
+9. Sostituire i server DNS attivi del dominio con quelli di OVHcloud.
+10. Trasferire un dominio in OVHcloud.
 
 > [!success]
 >
@@ -160,7 +160,7 @@ Ecco i principali step da seguire:
 
 /// details | Come ospitare più siti Web su uno stesso hosting Web?
 
-Se il tuo [hosting Web è compatibile](/links/web/hosting), segui questi step:
+Se il tuo [hosting Web](/links/web/hosting) è compatibile, segui questi step:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 2. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
@@ -178,17 +178,17 @@ Lì è possibile gestire i domini/sottodomini dichiarati in multisito sul propri
 
 Per rendere il sito Web accessibile con un URL in "HTTPS" (esempio: `https://domain.tld`), sono necessari due prerequisiti:
 
-- Per registrare un dominio è necessario disporre di un certificato SSL attivo (o installato sull’hosting Web)
+- Per registrare un dominio è necessario disporre di un certificato SSL attivo (o installato sull’hosting Web).
 - nel codice sorgente del tuo sito Web, è necessario forzare la riscrittura degli URL in "HTTPS".
 
-OVHcloud propone [diversi certificati SSL](/links/web/hosting-options) sugli hosting Web.
+OVHcloud propone diversi [certificati SSL](/links/web/hosting-options) sugli hosting Web.
 
 Per attivare un certificato SSL sul tuo hosting Web, segui questi step:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 2. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 3. Nella nuova pagina e nel riquadro **Configurazione**, clicca sul pulsante `...`{.action} a destra della dicitura **Certificato SSL** e poi su `Ordina un certificato SSL`{.action}.
-4. [Scegli il certificato che vuoi tra quelli disponibili](/pages/web_cloud/web_hosting/ssl_on_webhosting), poi prosegui fino al completamento dell’ordine.
+4. Selezionare il certificato desiderato dall'elenco dei [certificati disponibili](/pages/web_cloud/web_hosting/ssl_on_webhosting), poi prosegui fino al completamento dell’ordine.
 
 > [!success]
 >
@@ -307,11 +307,11 @@ Una volta installato l’hosting Web, OVHcloud crea questa pagina di attesa sott
 
 Sono possibili due scenari:
 
-- se hai installato un "[CMS in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)": questo file viene automaticamente eliminato dai nostri sistemi di installazione.
+- Se hai installato un "[CMS in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)": questo file viene automaticamente eliminato dai nostri sistemi di installazione.
 - Se il sito Web è stato installato manualmente, effettuare le seguenti operazioni:
-- [Accedi allo spazio di storage FTP del tuo hosting Web](/pages/web_cloud/web_hosting/ftp_connection).
-- Una volta effettuato l’accesso allo spazio di storage FTP, scorri la cartella `www`.
-- Rinominare il file **index.html** in **index.html.old**. La pagina verrà disattivata in pochi minuti.
+    - Accedi allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting Web.
+    - Una volta effettuato l’accesso allo spazio di storage FTP, scorri la cartella `www`.
+    - Rinominare il file **index.html** in **index.html.old**. La pagina verrà disattivata in pochi minuti.
 
 > [!success]
 >
@@ -444,7 +444,7 @@ Per risolvere il problema, eseguire la procedura seguente:
 >> 3. Clicca sulla scheda `Zona DNS`{.action}.
 >> 4. Nella tabella che appare (che rappresenta la zona DNS del dominio), identifica il record di tipo `A` la cui `Destinazione` è l’indirizzo IP `213.186.33.5`.
 >> 5. Clicca sul pulsante `...`{.action} a destra della riga e poi su `Modifica il record`{.action}.
->> 6. Nella nuova finestra, sostituisci l’indirizzo IP `213.186.33.5` nel form `Destinazione*` con l’indirizzo IP dell’hosting Web in cui si trova il sito Web.
+>> 6. Nella nuova finestra, sostituisci l’indirizzo IP `213.186.33.5` nel campo `Destinazione *` con l’indirizzo IP dell’hosting Web in cui si trova il sito Web.
 >>
 >> > [!success]
 >> >
@@ -566,7 +566,7 @@ Questo messaggio indica che il tipo di richiesta HTTP che si sta tentando di ese
 
 In questa situazione, sono necessarie diverse azioni:
 
-- [Analizza i log](/pages/web_cloud/web_hosting/logs_and_statistics) del tuo sito web, per determinare quali richieste hanno provocato questo blocco.
+- Analizza i [log](/pages/web_cloud/web_hosting/logs_and_statistics) del tuo sito web, per determinare quali richieste hanno provocato questo blocco.
 - Utilizzando un software anti-virus o anti-spyware, verificare che i tuoi dispositivi (computer, smartphone, ecc.) non siano infettati da spyware o malware.
 - verifica il codice sorgente del tuo sito Web (spazio di archiviazione FTP e database).
 
@@ -589,7 +589,7 @@ Questo messaggio indica che l'indirizzo IP utilizzato per connettersi al sito We
 
 In questa situazione, sono necessarie diverse azioni:
 
-- [Analizza i log](/pages/web_cloud/web_hosting/logs_and_statistics) del tuo sito web, per determinare quali richieste hanno provocato questo blocco.
+- Analizza i [log](/pages/web_cloud/web_hosting/logs_and_statistics) del tuo sito web, per determinare quali richieste hanno provocato questo blocco.
 - Utilizzando un software anti-virus o anti-spyware, verificare che i vostri dispositivi (computer, smartphone, ecc.) non siano infettati da spyware o malware.
 - verifica il codice sorgente del tuo sito Web (spazio di archiviazione FTP e database).
 

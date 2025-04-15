@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Principales preguntas sobre los planes de hosting de OVHcloud"
-updated: 2025-04-10
+updated: 2025-04-15
 ---
 
 <style>
@@ -66,7 +66,7 @@ Desde ahí podrá cambiar la contraseña FTP de su alojamiento web.
 
 > [!success]
 >
-> Para más información, consulte nuestra guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)"
+> Para más información, consulte nuestra guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 ///
 
@@ -86,7 +86,7 @@ Desde ahí podrá cambiar las contraseñas de las bases de datos asociadas a su 
 
 > [!success]
 >
-> Para más información, consulte nuestra guía "[Cambiar la contraseña de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_change_password)"
+> Para más información, consulte nuestra guía "[Cambiar la contraseña de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_change_password)".
 
 ///
 
@@ -103,11 +103,11 @@ Desde ahí podrá cambiar la contraseña de su dirección de correo (asegúrese 
 
 > [!success]
 >
-> Para más información, consulte nuestra guía "[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)"
+> Para más información, consulte nuestra guía "[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 >
 > Si utiliza un cliente de correo (Outlook, Mail de macOS, Thunderbird, etc.), actualice la contraseña de su cuenta de correo cuando el cliente de correo se lo pida, al abrirlo o sincronizarlo.
 >
-> Si tiene más preguntas sobre la solución MX Plan*, consulte nuestras [FAQ - Correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+> Si tiene más preguntas sobre la solución *MX Plan*, consulte nuestras [FAQ - Correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 
 ///
 
@@ -141,16 +141,16 @@ Estos son los pasos clave que debe seguir:
 
 Estos son los pasos clave que debe seguir:
 
-1. Contratar el alojamiento y las direcciones de correo electrónico en OVHcloud
-2. Crear y preconfigurar una zona DNS para su dominio en OVHcloud
-3. Obtener una copia de seguridad completa de su sitio web
-4. Importar la copia de seguridad de su sitio web en su plan de hosting de OVHcloud
-5. Volver a crear las mismas direcciones de correo electrónico en OVHcloud
-6. Declarar los servidores de correo de OVHcloud en la zona DNS activa del dominio
-7. Transferir el contenido de sus antiguas direcciones de correo electrónico a sus nuevas direcciones en OVHcloud
-8. Reconfigurar el software de correo electrónico
-9. Sustituir los servidores DNS activos de su dominio por los de OVHcloud
-10. Transferir un dominio a OVHcloud
+1. Contratar el alojamiento y las direcciones de correo electrónico en OVHcloud.
+2. Crear y preconfigurar una zona DNS para su dominio en OVHcloud.
+3. Obtener una copia de seguridad completa de su sitio web.
+4. Importar la copia de seguridad de su sitio web en su plan de hosting de OVHcloud.
+5. Volver a crear las mismas direcciones de correo electrónico en OVHcloud.
+6. Declarar los servidores de correo de OVHcloud en la zona DNS activa del dominio.
+7. Transferir el contenido de sus antiguas direcciones de correo electrónico a sus nuevas direcciones en OVHcloud.
+8. Reconfigurar el software de correo electrónico.
+9. Sustituir los servidores DNS activos de su dominio por los de OVHcloud.
+10. Transferir un dominio a OVHcloud.
 
 > [!success]
 >
@@ -160,7 +160,7 @@ Estos son los pasos clave que debe seguir:
 
 /// details | ¿Cómo alojar varios sitios web en un mismo alojamiento web?
 
-Si su [alojamiento web es compatible](/links/web/hosting), siga estos pasos:
+Si su [alojamiento web](/links/web/hosting) es compatible, siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
@@ -178,17 +178,17 @@ Desde ahí podrá gestionar los dominios o subdominios declarados en multisitio 
 
 Para que su sitio web esté accesible con una URL en HTTPS (por ejemplo, `https://domain.tld`), es necesario cumplir dos requisitos:
 
-- Debe disponer de un certificado SSL activo para su nombre de dominio (o instalado en su alojamiento web)
+- Debe disponer de un certificado SSL activo para su nombre de dominio (o instalado en su alojamiento web).
 - En el código fuente de su sitio web, este debe forzar la reescritura de las URL en HTTPS.
 
-OVHcloud ofrece [varios certificados SSL](/links/web/hosting-options) en los alojamientos web.
+OVHcloud ofrece varios [certificados SSL](/links/web/hosting-options) en los alojamientos web.
 
 Para activar un certificado SSL en un alojamiento web para su sitio web, siga estos pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
 3. En la página que se abre y en el recuadro **Configuración**, haga clic en el botón `...`{.action} de la derecha de la indicación **Certificado SSL** y seleccione `Contratar un certificado SSL`{.action}.
-4. [Seleccione el certificado que desee de la lista de certificados disponibles](/pages/web_cloud/web_hosting/ssl_on_webhosting) y continúe hasta finalizar la orden de pedido.
+4. Seleccione el certificado que desee de la [lista de certificados disponibles](/pages/web_cloud/web_hosting/ssl_on_webhosting) y continúe hasta finalizar la orden de pedido.
 
 > [!success]
 >
@@ -309,9 +309,9 @@ Existen dos situaciones posibles:
 
 - Si ha instalado un "[módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)", este archivo será automáticamente eliminado por nuestros robots de instalación.
 - Si ha instalado su sitio web manualmente, siga los pasos que se indican a continuación:
-- [Conéctese al espacio de almacenamiento FTP de su alojamiento web](/pages/web_cloud/web_hosting/ftp_connection).
-- Una vez conectado al espacio de almacenamiento FTP, acceda al directorio `www`.
-- Cambie el nombre del archivo **index.html** a **index.html.old**. Esto desactivará la página en unos minutos.
+    - Conéctese al [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web.
+    - Una vez conectado al espacio de almacenamiento FTP, acceda al directorio `www`.
+    - Cambie el nombre del archivo **index.html** a **index.html.old**. Esto desactivará la página en unos minutos.
 
 > [!success]
 >
@@ -330,7 +330,7 @@ Existen dos situaciones posibles:
 
 Su sitio web se ha creado con un [módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) utilizando, en el momento de su instalación, la dirección web por defecto de su alojamiento web "xxxxx.clusterXXX.hosting.ovh.net".
 
-Para ello, elimine el módulo en un clic y vuelva a instalarlo.
+En ese caso, deberá eliminar el módulo en un clic y volver a instalarlo.
 
 > [!warning]
 >
@@ -359,11 +359,11 @@ A continuación, elimine la base de datos asociada realizando las siguientes acc
 
 La eliminación de la base de datos asociada puede tardar **varios minutos**.
 
-Una vez que haya eliminado el módulo, vuelva a instalarlo en un clic* y asegúrese de seleccionar el dominio deseado.
+Una vez que hayan finalizado las eliminaciones, instale de nuevo el *módulo en un clic* y asegúrese de seleccionar el dominio deseado.
 
 > [!success]
 >
-> Para más información, consulte nuestra guía [Instalar su sitio web con un 'módulo en 1 clic' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+> Para más información, consulte nuestra guía "[Instalar su sitio web con un 'módulo en 1 clic' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
 ///
 
@@ -444,7 +444,7 @@ Para corregirlo, siga estos pasos:
 >> 3. A continuación, abra la pestaña `Zona DNS`{.action}.
 >> 4. En la tabla que aparece (que representa la zona DNS de su dominio), identifique la entrada de tipo `A` cuya " Destino " tiene como valor la dirección IP `213.186.33.5`.
 >> 5. Haga clic en el botón `...`{.action} situado a la derecha de la línea y seleccione `Modificar el registro`{.action}.
->> 6. En la nueva ventana, sustituya, en el formulario `Destino*, la dirección IP `213.186.33.5` por la dirección IP del alojamiento web en el que esté alojado su sitio web.
+>> 6. En la nueva ventana, sustituya, en el campo `Destino *`, la dirección IP `213.186.33.5` por la dirección IP del alojamiento web en el que esté alojado su sitio web.
 >>
 >> > [!success]
 >> >
@@ -543,7 +543,7 @@ Si las restauraciones no le permiten restablecer el acceso a su sitio web, póng
 
 ![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
-Si ha activado [la opción CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) en su alojamiento web, desactive el modo *Maintenance* en su sitio WordPress o PrestaShop.
+Si ha activado la [opción CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) en su alojamiento web, desactive el modo *Maintenance* en su sitio WordPress o PrestaShop.
 
 Si no ha activado esta opción ni ha utilizado el modo *Maintenance*, contacte con su Webmaster o con uno de nuestros [partners](/links/partner).
 
@@ -566,9 +566,9 @@ Este mensaje indica que el tipo de solicitud HTTP que intenta realizar en su sit
 
 En esta situación, es necesario realizar varias acciones:
 
-- [Examine los logs](/pages/web_cloud/web_hosting/logs_and_statistics) de su sitio web para determinar qué peticiones han provocado el bloqueo.
+- Examine los [logs](/pages/web_cloud/web_hosting/logs_and_statistics) de su sitio web para determinar qué peticiones han provocado el bloqueo.
 - Utilice un programa antivirus o antisoftware espía para comprobar que sus dispositivos (ordenadores, smartphones, etc.) no estén infectados con software espía o malintencionado.
-- Compruebe el código fuente de su sitio web (espacio de almacenamiento FTP y base(s) de datos.
+- Compruebe el código fuente de su sitio web (espacio de almacenamiento FTP y base(s) de datos).
 
 Si no está seguro de las operaciones que debe realizar, póngase en contacto con su Webmaster o con uno de nuestros [partners](/links/partner).
 
@@ -589,9 +589,9 @@ Este mensaje indica que la dirección IP que utiliza para conectarse a su sitio 
 
 En esta situación, es necesario realizar varias acciones:
 
-- [Examine los logs](/pages/web_cloud/web_hosting/logs_and_statistics) de su sitio web para determinar qué peticiones han provocado el bloqueo.
+- Examine los [logs](/pages/web_cloud/web_hosting/logs_and_statistics) de su sitio web para determinar qué peticiones han provocado el bloqueo.
 - Utilice un programa antivirus o antisoftware espía para comprobar que sus dispositivos (ordenadores, smartphones, etc.) no estén infectados con software espía o malintencionado.
-- Compruebe el código fuente de su sitio web (espacio de almacenamiento FTP y base(s) de datos.
+- Compruebe el código fuente de su sitio web (espacio de almacenamiento FTP y base(s) de datos).
 
 Si no está seguro de las operaciones que debe realizar, póngase en contacto con su Webmaster o con uno de nuestros [partners](/links/partner).
 

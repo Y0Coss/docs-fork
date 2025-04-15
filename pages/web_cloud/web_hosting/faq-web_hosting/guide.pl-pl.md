@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Poznaj najważniejsze pytania dotyczące hostingu WWW OVHcloud"
-updated: 2025-04-10
+updated: 2025-04-15
 ---
 
 <style>
@@ -29,7 +29,7 @@ Postępuj zgodnie z poniższymi instrukcjami:
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 
-Będziesz mógł zarządzać swoimi certyfikatami SSL, wersją PHP zastosowaną do Twojego hostingu, opcją CDN, opcjami MultiSite, bazami danych, etc.
+Będziesz mógł zarządzać swoimi certyfikatami SSL, wersją PHP zastosowaną do twojego hostingu, opcją CDN, opcjami MultiSite, bazami danych, etc.
 
 > [!success]
 >
@@ -39,11 +39,11 @@ Będziesz mógł zarządzać swoimi certyfikatami SSL, wersją PHP zastosowaną 
 
 /// details | Nie pamiętam hasła dostępowego do konta, na którym znajduje się mój hosting. Co mam zrobić?
 
-Jeśli nie pamiętasz Twojego identyfikatora klienta OVHcloud lub hasła powiązanego z tym identyfikatorem, wykonaj następujące kroki:
+Jeśli nie pamiętasz twojego identyfikatora klienta OVHcloud lub hasła powiązanego z tym identyfikatorem, wykonaj następujące kroki:
 
 1. Przejdź do [interfejsu logowania do Panelu klienta OVHcloud](/links/manager).
 2. Kliknij link `Nie pamiętasz nazwy użytkownika lub hasła?`{.action} znajdujący się pod okienkiem logowania.
-3. Podaj Twój identyfikator klienta OVHcloud (na przykład: **aa00000-ovh**) lub adres e-mail do kontaktu przypisany do Twojego identyfikatora klienta OVHcloud.
+3. Podaj Twój identyfikator klienta OVHcloud (na przykład: **aa00000-ovh**) lub adres e-mail do kontaktu przypisany do twojego identyfikatora klienta OVHcloud.
 4. Następnie kliknij przycisk `Wyślij`{.action}.
 
 Procedura resetu zostanie wysłana na adres e-mail do kontaktu.
@@ -62,11 +62,11 @@ Postępuj zgodnie z poniższymi instrukcjami:
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 3. Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
 
-Będziesz mógł zmienić hasło FTP do Twojego hostingu.
+Będziesz mógł zmienić hasło FTP do twojego hostingu.
 
 > [!success]
 >
-> Szczegółowe informacje na ten temat znajdziesz w przewodniku "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)"
+> Szczegółowe informacje na ten temat znajdziesz w przewodniku "[Zmiana hasła do konta FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 ///
 
@@ -74,7 +74,7 @@ Będziesz mógł zmienić hasło FTP do Twojego hostingu.
 
 > [!warning]
 >
-> Jeśli zmienisz hasło do bazy danych używanej przez jedną z Twoich stron WWW, zaktualizuj również hasło w pliku konfiguracyjnym Twojej strony WWW. Bez tej aktualizacji Twoja strona WWW zostanie odłączona od bazy danych i będzie działać nieprawidłowo.
+> Jeśli zmienisz hasło do bazy danych używanej przez jedną z twoich stron WWW, zaktualizuj również hasło w pliku konfiguracyjnym twojej strony WWW. Bez tej aktualizacji twoja strona WWW zostanie odłączona od bazy danych i będzie działać nieprawidłowo.
 
 Postępuj zgodnie z poniższymi instrukcjami:
 
@@ -82,11 +82,11 @@ Postępuj zgodnie z poniższymi instrukcjami:
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 3. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 
-Będziesz mógł zmienić hasła do baz danych powiązanych z Twoim hostingiem.
+Będziesz mógł zmienić hasła do baz danych powiązanych z twoim hostingiem.
 
 > [!success]
 >
-> Szczegółowe informacje znajdziesz w przewodniku "[Zmiana hasła do bazy danych na hostingu](/pages/web_cloud/web_hosting/sql_change_password)"
+> Szczegółowe informacje znajdziesz w przewodniku "[Zmiana hasła do bazy danych na hostingu](/pages/web_cloud/web_hosting/sql_change_password)".
 
 ///
 
@@ -99,29 +99,29 @@ Postępuj zgodnie z poniższymi instrukcjami:
 3. Na stronie, która się wyświetli kliknij zakładkę `E-maile`{.action}.
 4. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie danego adresu e-mail, po czym kliknij `Zmień hasło`{.action}.
 
-Będziesz mógł zmienić hasło przypisane do Twojego konta e-mail (pamiętaj, aby zachować zasady dotyczące haseł, które są wyświetlane w oknie wprowadzania).
+Będziesz mógł zmienić hasło przypisane do twojego konta e-mail (pamiętaj, aby zachować zasady dotyczące haseł, które są wyświetlane w oknie wprowadzania).
 
 > [!success]
 >
-> Szczegółowe informacje znajdziesz w przewodniku "[Zmiana hasła do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)"
+> Szczegółowe informacje znajdziesz w przewodniku "[Zmiana hasła do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 >
 > Jeśli używasz programu pocztowego (Outlook, Mail na macOS, Thunderbird itp.), zaktualizuj hasło do konta e-mail, kiedy program pocztowy poprosi Cię o to podczas otwierania lub synchronizacji programu.
 >
-> Jeśli masz dodatkowe pytania dotyczące rozwiązania e-mail *MX Plan*, sprawdź nasze [FAQ - E-maile](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+> Jeśli masz dodatkowe pytania dotyczące rozwiązania e-mail *MX Plan*, sprawdź nasze [FAQ - E-maile](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
 
 ///
 
 /// details | Jak zamieścić stronę WWW w Internecie?
 
-Aby zamieścić Twoją stronę WWW w Internecie, musisz najpierw mieć:
+Aby zamieścić twoją stronę WWW w Internecie, musisz najpierw mieć:
 
-- [Domena](/links/web/domains) to adres WWW, z którego Twoja strona będzie dostępna za pośrednictwem przeglądarki internetowej (przykład: *domain.tld*). Domena ta musi być również powiązana z Twoim hostingiem, aby wyświetlała się strona WWW.
-- [Hosting WWW](/links/web/hosting), na którym możesz zainstalować Twoją stronę WWW.
+- [Domena](/links/web/domains) to adres WWW, z którego twoja strona będzie dostępna za pośrednictwem przeglądarki internetowej (przykład: *domain.tld*). Domena ta musi być również powiązana z twoim hostingiem, aby wyświetlała się strona WWW.
+- [Hosting WWW](/links/web/hosting), na którym możesz zainstalować twoją stronę WWW.
 
 Oto najważniejsze kroki, które należy podjąć:
 
 1. Rozdziel swój projekt (strona WWW "pod klucz" (CMS) instalowana ręcznie lub za pomocą modułów 1 kliknięciem OVHcloud / strona internetowa stworzona przez Ciebie lub przez dostawcę / itp.).
-2. Umieść pliki strony WWW na przestrzeni dyskowej FTP Twojego hostingu.
+2. Umieść pliki strony WWW na przestrzeni dyskowej FTP twojego hostingu.
 3. Połącz stronę WWW z bazą danych (jeśli strona używa bazy).
 4. Wejdź na swoją stronę www.
 
@@ -131,7 +131,7 @@ Oto najważniejsze kroki, które należy podjąć:
 >
 > Jeśli zdecydujesz się zainstalować CMS (WordPress, Joomla!, PrestaShop, Drupal) z naszym rozwiązaniem "Moduły za 1 kliknięciem", zapoznaj się ze szczegółowym przewodnikiem "[Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 >
-> Jeśli Twoja strona WWW istnieje u innego dostawcy i chcesz ją przenieść do OVHcloud, zapoznaj się ze szczegółowym przewodnikiem "[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
+> Jeśli twoja strona WWW istnieje u innego dostawcy i chcesz ją przenieść do OVHcloud, zapoznaj się ze szczegółowym przewodnikiem "[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 >
 > Jeśli chcesz skonfigurować Twój hosting, zapoznaj się z [przewodnikami dotyczącymi naszych rozwiązań hostingowych](/products/web-cloud-hosting).
 
@@ -141,16 +141,16 @@ Oto najważniejsze kroki, które należy podjąć:
 
 Oto najważniejsze kroki, które należy podjąć:
 
-1. Zamów hosting i konta e-mail w OVHcloud
-2. Utworzenie i wstępna konfiguracja strefy DNS dla Twojej domeny w OVHcloud
-3. Pobierz pełną kopię zapasową Twojej strony WWW
-4. Import kopii zapasowej strony WWW na hosting OVHcloud
-5. Odtwórz Twoje konta e-mail w OVHcloud
-6. Zgłoś serwery e-mail OVHcloud w strefie DNS aktywnej dla Twojej domeny
-7. Przeniesienie zawartości starych adresów e-mail do nowych adresów OVHcloud
-8. Ponowna konfiguracja oprogramowania pocztowego
-9. Zastąpienie aktywnych serwerów DNS Twojej domeny serwerami OVHcloud
-10/ Przeniesienie domeny do OVHcloud
+1. Zamów hosting i konta e-mail w OVHcloud.
+2. Utworzenie i wstępna konfiguracja strefy DNS dla twojej domeny w OVHcloud.
+3. Pobierz pełną kopię zapasową twojej strony WWW.
+4. Import kopii zapasowej strony WWW na hosting OVHcloud.
+5. Odtwórz twoje konta e-mail w OVHcloud.
+6. Zgłoś serwery e-mail OVHcloud w strefie DNS aktywnej dla twojej domeny.
+7. Przeniesienie zawartości starych adresów e-mail do nowych adresów OVHcloud.
+8. Ponowna konfiguracja oprogramowania pocztowego.
+9. Zastąpienie aktywnych serwerów DNS twojej domeny serwerami OVHcloud.
+10. Przeniesienie domeny do OVHcloud.
 
 > [!success]
 >
@@ -160,13 +160,13 @@ Oto najważniejsze kroki, które należy podjąć:
 
 /// details | Jak zainstalować kilka stron WWW na tym samym hostingu?
 
-Jeśli Twój [hosting WWW jest kompatybilny](/links/web/hosting), wykonaj następujące kroki:
+Jeśli Twój [hosting WWW](/links/web/hosting) jest kompatybilny, wykonaj następujące kroki:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 3. Na stronie, która się wyświetli kliknij zakładkę `MultiSite`{.action}.
 
-Będziesz mógł zarządzać domenami/subdomenami zadeklarowanymi w opcji MultiSite na Twoim hostingu.
+Będziesz mógł zarządzać domenami/subdomenami zadeklarowanymi w opcji MultiSite na twoim hostingu.
 
 > [!success]
 >
@@ -176,19 +176,19 @@ Będziesz mógł zarządzać domenami/subdomenami zadeklarowanymi w opcji MultiS
 
 /// details | Jak wyświetlić stronę WWW z adresem URL oznaczonym jako "HTTPS"?
 
-Aby Twoja strona WWW była dostępna z adresem URL oznaczonym jako "HTTPS" (na przykład: `https://domain.tld`), należy spełnić dwa wymagania:
+Aby twoja strona WWW była dostępna z adresem URL oznaczonym jako "HTTPS" (na przykład: `https://domain.tld`), należy spełnić dwa wymagania:
 
-- Musisz posiadać aktywny certyfikat SSL dla swojej domeny (lub zainstalowany na Twoim hostingu)
-- W kodzie źródłowym Twojej strony WWW, musi ona wymusić zmianę adresów URL na "HTTPS".
+- Musisz posiadać aktywny certyfikat SSL dla swojej domeny (lub zainstalowany na twoim hostingu).
+- W kodzie źródłowym twojej strony WWW, musi ona wymusić zmianę adresów URL na "HTTPS".
 
-OVHcloud oferuje [kilka certyfikatów SSL](/links/web/hosting-options) na hostingu.
+OVHcloud oferuje kilka [certyfikatów SSL](/links/web/hosting-options) na hostingu.
 
-Aby aktywować certyfikat SSL na Twoim hostingu, wykonaj następujące kroki:
+Aby aktywować certyfikat SSL na twoim hostingu, wykonaj następujące kroki:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 3. Na stronie, która się wyświetli i w ramce **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie wzmianki **Certyfikat SSL**, a następnie kliknij przycisk `Zamów certyfikat SSL`{.action}.
-4. [Wybierz odpowiedni certyfikat z listy dostępnych certyfikatów](/pages/web_cloud/web_hosting/ssl_on_webhosting). Następnie kontynuuj aż do zakończenia operacji.
+4. Wybierz odpowiedni certyfikat z [listy dostępnych certyfikatów](/pages/web_cloud/web_hosting/ssl_on_webhosting). Następnie kontynuuj aż do zakończenia operacji.
 
 > [!success]
 >
@@ -200,13 +200,13 @@ Aby aktywować certyfikat SSL na Twoim hostingu, wykonaj następujące kroki:
 > - [Hosting WWW - Aktywacja certyfikatu SSL Sectigo EV](/pages/web_cloud/web_hosting/ssl_ev).
 > - [Hosting - Instalacja spersonalizowanego certyfikatu SSL](/pages/web_cloud/web_hosting/ssl_custom).
 
-Po zainstalowaniu i skonfigurowaniu po stronie OVHcloud wybranego certyfikatu SSL, sprawdź, czy kod źródłowy Twojej strony WWW poprawnie wpisuje adresy URL dostępu do Twojej strony WWW w "HTTPS". W przypadku trudności ze spełnieniem tego warunku, prosimy o kontakt z webmasterem lub jednym z naszych [partnerów](/links/partner).
+Po zainstalowaniu i skonfigurowaniu po stronie OVHcloud wybranego certyfikatu SSL, sprawdź, czy kod źródłowy twojej strony WWW poprawnie wpisuje adresy URL dostępu do twojej strony WWW w "HTTPS". W przypadku trudności ze spełnieniem tego warunku, prosimy o kontakt z webmasterem lub jednym z naszych [partnerów](/links/partner).
 
 ///
 
 /// details | Jak zmienić pakiet hostingowy?
 
-Aby zamówić usługę hostingu najlepiej dopasowaną do Twoich potrzeb, sprawdź nasze oferty na [tej stronie](/links/web/hosting).
+Aby zamówić usługę hostingu najlepiej dopasowaną do twoich potrzeb, sprawdź nasze oferty na [tej stronie](/links/web/hosting).
 
 > [!primary]
 >
@@ -277,13 +277,13 @@ Postępuj zgodnie z poniższymi instrukcjami:
 
 /// details | Co zrobić w przypadku awarii mojej strony www?
 
-U podstaw nieprawidłowego działania Twojej strony internetowej może znajdować się kilka przyczyn.<br>
-Aby ustalić źródło problemu, sprawdź, czy żadna z Twoich subskrypcji nie wymaga odnowienia **odnowienia**.
+U podstaw nieprawidłowego działania twojej strony internetowej może znajdować się kilka przyczyn.<br>
+Aby ustalić źródło problemu, sprawdź, czy żadna z twoich subskrypcji nie wymaga odnowienia **odnowienia**.
 
 Postępuj zgodnie z poniższymi instrukcjami:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
-2. Na stronie, która się wyświetli kliknij Twoją nazwę w prawym górnym rogu, następnie wybierz `Moje rozwiązania i usługi`{.action}.
+2. Na stronie, która się wyświetli kliknij twoją nazwę w prawym górnym rogu, następnie wybierz `Moje rozwiązania i usługi`{.action}.
 
 > [!success]
 >
@@ -291,7 +291,7 @@ Postępuj zgodnie z poniższymi instrukcjami:
 
 Następnie sprawdź [bieżące wydarzenia w naszej infrastrukturze](https://www.status-ovhcloud.com/).
 
-Jeśli wszystkie Twoje usługi są aktywne i nie mają wpływu na żaden incydent ani konserwację, przeprowadź bardziej szczegółową diagnostykę.
+Jeśli wszystkie twoje usługi są aktywne i nie mają wpływu na żaden incydent ani konserwację, przeprowadź bardziej szczegółową diagnostykę.
 
 > [!success]
 >
@@ -303,15 +303,15 @@ Jeśli wszystkie Twoje usługi są aktywne i nie mają wpływu na żaden incyden
 
 ![site-en-construction](/pages/assets/screens/other/browsers/errors/site-en-construction.png){.thumbnail}
 
-Podczas instalacji hostingu WWW OVHcloud uruchomi tę stronę tymczasową w formie pliku **index.html** zawartego w katalogu `www` dostępnym w przestrzeni dyskowej FTP Twojego hostingu.
+Podczas instalacji hostingu WWW OVHcloud uruchomi tę stronę tymczasową w formie pliku **index.html** zawartego w katalogu `www` dostępnym w przestrzeni dyskowej FTP twojego hostingu.
 
 Możliwe są dwa przypadki:
 
 - Jeśli zainstalowałeś "[Moduły CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules)": ten plik jest automatycznie usuwany przez nasze roboty instalacyjne.
 - Jeśli zainstalowałeś stronę WWW ręcznie, wykonaj następujące kroki:
-- [Zaloguj się do przestrzeni dyskowej FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection).
-- Po zalogowaniu się do przestrzeni dyskowej FTP przejdź do katalogu `www`.
-- Zmień nazwę pliku **index.html** na **index.html.old**. Operacja ta spowoduje wyłączenie strony po kilku minutach.
+    - Zaloguj się do [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection) twojego hostingu.
+    - Po zalogowaniu się do przestrzeni dyskowej FTP przejdź do katalogu `www`.
+    - Zmień nazwę pliku **index.html** na **index.html.old**. Operacja ta spowoduje wyłączenie strony po kilku minutach.
 
 > [!success]
 >
@@ -330,7 +330,7 @@ Możliwe są dwa przypadki:
 
 Twoja strona WWW została utworzona za pomocą [Moduły CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules), przy użyciu domyślnego adresu WWW hostingu "xxxxx.clusterXXX.hosting.ovh.net" podczas instalacji.
 
-Następnie należy usunąć Moduły CMS i zainstalować go ponownie.
+W tym przypadku konieczne jest usunięcie modułu za pomocą 1 kliknięcia i ponowna instalacja.
 
 > [!warning]
 >
@@ -373,7 +373,7 @@ Po zakończeniu usuwania przeprowadź nową instalację modułu *1 kliknięciem*
 
 Twoja strona wyświetla się z domyślnym adresem www hostingu typu "xxxxx.clusterXXX.hosting.ovh.net" po zmianie [Moduły CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Jeśli po operacji wyświetli się Twoja strona WWW z tym adresem URL, najszybszym rozwiązaniem będzie przywrócenie jej do wcześniejszego stanu, w którym działała poprawnie.
+Jeśli po operacji wyświetli się twoja strona WWW z tym adresem URL, najszybszym rozwiązaniem będzie przywrócenie jej do wcześniejszego stanu, w którym działała poprawnie.
 
 > [!alert]
 >
@@ -386,7 +386,7 @@ Jeśli po operacji wyświetli się Twoja strona WWW z tym adresem URL, najszybsz
 > - [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
 
-Aby przywrócić kod źródłowy Twojej strony WWW, wykonaj następujące kroki:
+Aby przywrócić kod źródłowy twojej strony WWW, wykonaj następujące kroki:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
@@ -402,7 +402,7 @@ Aby przywrócić kopię zapasową bazy danych, wykonaj następujące kroki:
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 3. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 4. W tabeli, która się wyświetli kliknij przycisk `...`{.action} znajdujący się po prawej stronie w linii odpowiedniej bazy danych, a następnie `Przywróć kopię zapasową`{.action}.
-5. Na nowej stronie, która się wyświetli, wybierz kopię zapasową, którą chcesz przywrócić (**najlepiej odpowiadającą dacie wybranej do przywrócenia kodu źródłowego Twojej strony WWW (patrz powyżej)**).
+5. Na nowej stronie, która się wyświetli, wybierz kopię zapasową, którą chcesz przywrócić (**najlepiej odpowiadającą dacie wybranej do przywrócenia kodu źródłowego twojej strony WWW (patrz powyżej)**).
 6. Po wybraniu kopii zapasowej kliknij przycisk `...`{.action} znajdujący się po prawej stronie kopii zapasowej, którą chcesz przywrócić, a następnie kliknij `Przywróć kopię zapasową`{.action}.
 
 Przywrócenie kopii zapasowej bazy danych może potrwać **kilka minut**.
@@ -420,9 +420,9 @@ Przywrócenie kopii zapasowej bazy danych może potrwać **kilka minut**.
 
 ![webmail-login-interface](/pages/assets/screens/website/webmail/webmail-login-interface.png){.thumbnail}
 
-Wskazuje to na błędną konfigurację [serwerów DNS](/pages/web_cloud/domains/dns_server_edit) lub [strefy DNS](/pages/web_cloud/domains/dns_zone_edit) przypisanych do Twojej domeny.
+Wskazuje to na błędną konfigurację [serwerów DNS](/pages/web_cloud/domains/dns_server_edit) lub [strefy DNS](/pages/web_cloud/domains/dns_zone_edit) przypisanych do twojej domeny.
 
-Najczęstszym przypadkiem jest to, że zamówiłeś osobno domenę i hosting www, więc nie są one automatycznie powiązane ze sobą za pośrednictwem strefy DNS Twojej domeny.
+Najczęstszym przypadkiem jest to, że zamówiłeś osobno domenę i hosting www, więc nie są one automatycznie powiązane ze sobą za pośrednictwem strefy DNS twojej domeny.
 
 Aby to naprawić, wykonaj następujące kroki:
 
@@ -437,14 +437,14 @@ Aby to naprawić, wykonaj następujące kroki:
 >>
 >> `Adres docelowy` (serwery DNS) wpisów typu `NS` zadeklarowanych w strefie DNS domeny **są identyczne** z tymi pobranymi w zakładce `Serwery DNS`{.action}.
 >>
->> W takim przypadku Twoja domena (lub jej subdomena w *www*) wskazuje na adres IP naszego serwera przekierowań (213.186.33.5).
+>> W takim przypadku twoja domena (lub jej subdomena w *www*) wskazuje na adres IP naszego serwera przekierowań (213.186.33.5).
 >>
 >> 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 >> 2. Kliknij menu `Domeny`{.action} (lub menu `Strefy DNS`{.action}, jeśli korzystasz z wersji beta Panelu klienta OVHcloud), następnie wybierz odpowiednią domenę.
 >> 3. Na stronie, która się wyświetli kliknij zakładkę `Strefa DNS`{.action}.
->> 4. W tabeli, która się pojawi (reprezentującej strefę DNS Twojej domeny), zidentyfikuj wpis typu `A`, którego `Adres docelowy` ma wartość adresu IP `213.186.33.5`.
+>> 4. W tabeli, która się pojawi (reprezentującej strefę DNS twojej domeny), zidentyfikuj wpis typu `A`, którego `Adres docelowy` ma wartość adresu IP `213.186.33.5`.
 >> 5. Kliknij przycisk `...`{.action} po prawej stronie linii, a następnie `Zmień rekord`{.action}.
->> 6. W wyświetlonym oknie zastąp w formularzu `Adres docelowy*` adres IP `213.186.33.5` adresem IP hostingu, na którym znajduje się Twoja strona WWW.
+>> 6. W wyświetlonym oknie zastąp w polu `Adres docelowy *` adres IP `213.186.33.5` adresem IP hostingu, na którym znajduje się twoja strona WWW.
 >>
 >> > [!success]
 >> >
@@ -463,10 +463,10 @@ Aby to naprawić, wykonaj następujące kroki:
 >>
 >> > [!primary]
 >> >
->> > Jeśli jeden z Twoich serwerów DNS zadeklarowanych w zakładce `Serwery DNS`{.action} ma następującą postać: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` lub `vpsXXXXXX.ovh.ca` (gdzie każde `X` oznacza cyfrę między **0** a **9**), sprawdź bezpośrednio w dniu **Przypadek nr 3**.
+>> > Jeśli jeden z twoich serwerów DNS zadeklarowanych w zakładce `Serwery DNS`{.action} ma następującą postać: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` lub `vpsXXXXXX.ovh.ca` (gdzie każde `X` oznacza cyfrę między **0** a **9**), sprawdź bezpośrednio w dniu **Przypadek nr 3**.
 >> > Są to nazwy serwerów DNS dostarczanych przez OVHcloud, które umożliwiają klientom instalowanie konfiguracji DNS bezpośrednio na ich własnych serwerach (serwery dedykowane, VPS, itp.).
 >>
->> W takim przypadku oznacza to, że Twoja domena nie używa odpowiednich serwerów DNS OVHcloud do stosowania konfiguracji strefy DNS zawartej w zakładce `Strefa DNS`{.action}.
+>> W takim przypadku oznacza to, że twoja domena nie używa odpowiednich serwerów DNS OVHcloud do stosowania konfiguracji strefy DNS zawartej w zakładce `Strefa DNS`{.action}.
 >>
 >> Aby to naprawić, wykonaj następujące kroki:
 >>
@@ -486,7 +486,7 @@ Aby to naprawić, wykonaj następujące kroki:
 >>
 >> `Adres docelowy` (serwery DNS) wpisów typu `NS` zadeklarowanych w strefie DNS domeny **nie są identyczne** z tymi, które odnaleziono w zakładce `Serwery DNS`{.action}. Ponadto nazwy serwerów DNS pobrane w zakładce `Serwery DNS`{.action} nie mają form opisanych w **Przypadek nr 2**, z wyjątkiem następujących form: `sdnsX.ovh.net`, `sdnsX.ovh.ca`, `vpsXXXXXX.ovh.net` lub `vpsXXXXXX.ovh.ca` (gdzie każde `X` oznacza cyfrę między **0** i **9**).
 >>
->> W takim przypadku oznacza to, że aktywna strefa DNS zastosowana do Twojej domeny nie jest zarządzana bezpośrednio przez OVHcloud. Skontaktuj się ze swoim webmasterem, dostawcą domeny, dostawcą DNS lub jednym z naszych [partnerów](/links/partner).
+>> W takim przypadku oznacza to, że aktywna strefa DNS zastosowana do twojej domeny nie jest zarządzana bezpośrednio przez OVHcloud. Skontaktuj się ze swoim webmasterem, dostawcą domeny, dostawcą DNS lub jednym z naszych [partnerów](/links/partner).
 
 ///
 
@@ -507,7 +507,7 @@ W takim przypadku najszybszym rozwiązaniem będzie przywrócenie go do wcześni
 > - [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 > - [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
 
-Aby przywrócić kod źródłowy Twojej strony WWW, wykonaj następujące kroki:
+Aby przywrócić kod źródłowy twojej strony WWW, wykonaj następujące kroki:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
@@ -523,7 +523,7 @@ Aby przywrócić kopię zapasową bazy danych, wykonaj następujące kroki:
 2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 3. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
 4. W tabeli, która się wyświetli kliknij przycisk `...`{.action} znajdujący się po prawej stronie w linii odpowiedniej bazy danych, a następnie `Przywróć kopię zapasową`{.action}.
-5. Na nowej stronie, która się wyświetli, wybierz kopię zapasową, którą chcesz przywrócić (**najlepiej odpowiadającą dacie wybranej do przywrócenia kodu źródłowego Twojej strony WWW (patrz powyżej)**).
+5. Na nowej stronie, która się wyświetli, wybierz kopię zapasową, którą chcesz przywrócić (**najlepiej odpowiadającą dacie wybranej do przywrócenia kodu źródłowego twojej strony WWW (patrz powyżej)**).
 6. Po wybraniu kopii zapasowej kliknij przycisk `...`{.action} znajdujący się po prawej stronie kopii zapasowej, którą chcesz przywrócić, a następnie kliknij `Przywróć kopię zapasową`{.action}.
 
 Przywrócenie kopii zapasowej bazy danych może potrwać **kilka minut**.
@@ -543,11 +543,11 @@ Jeśli przywracanie nie pozwala na przywrócenie dostępu do strony internetowej
 
 ![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
-Jeśli na Twoim hostingu aktywowałeś [opcję CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn), wyłącz tryb *Maintenance* na Twojej stronie WWW WordPress lub PrestaShop.
+Jeśli na twoim hostingu aktywowałeś [opcję CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn), wyłącz tryb *Maintenance* na twojej stronie WWW WordPress lub PrestaShop.
 
 Jeśli nie włączyłeś tej opcji ani nie korzystałeś z trybu *Maintenance*, skontaktuj się z webmasterem lub jednym z naszych [partnerów](/links/partner).
 
-Błąd ten może się pojawić również w przypadku żądania HTTP, które kończy się *timeout* na Twojej stronie WWW.
+Błąd ten może się pojawić również w przypadku żądania HTTP, które kończy się *timeout* na twojej stronie WWW.
 
 > [!success]
 >
@@ -562,13 +562,13 @@ Błąd ten może się pojawić również w przypadku żądania HTTP, które koń
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-Ten komunikat wskazuje, że typ zapytania HTTP, które próbujesz wykonać na Twojej stronie WWW, jest zabroniony przez ograniczony czas, zwykle ze względów bezpieczeństwa.
+Ten komunikat wskazuje, że typ zapytania HTTP, które próbujesz wykonać na twojej stronie WWW, jest zabroniony przez ograniczony czas, zwykle ze względów bezpieczeństwa.
 
 W tej sytuacji należy podjąć kilka działań:
 
-- [Sprawdź logi](/pages/web_cloud/web_hosting/logs_and_statistics) Twojej strony WWW, aby ustalić, które zapytania spowodowały tę blokadę.
-- Za pomocą oprogramowania antywirusowego lub antyspyware sprawdź, czy Twoje urządzenia (komputery, smartfony itp.) nie są zainfekowane oprogramowaniem szpiegującym lub złośliwym.
-- Sprawdź kod źródłowy Twojej strony WWW (przestrzeń FTP i baza(y) danych).
+- Sprawdź [logi](/pages/web_cloud/web_hosting/logs_and_statistics) twojej strony WWW, aby ustalić, które zapytania spowodowały tę blokadę.
+- Za pomocą oprogramowania antywirusowego lub antyspyware sprawdź, czy twoje urządzenia (komputery, smartfony itp.) nie są zainfekowane oprogramowaniem szpiegującym lub złośliwym.
+- Sprawdź kod źródłowy twojej strony WWW (przestrzeń FTP i baza(y) danych).
 
 Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z webmasterem lub jednym z naszych [partnerów](/links/partner).
 
@@ -585,13 +585,13 @@ Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z we
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-Komunikat ten oznacza, że adres IP, którego używasz do logowania się na Twojej stronie WWW, jest zablokowany na ograniczony czas, zazwyczaj ze względów bezpieczeństwa.
+Komunikat ten oznacza, że adres IP, którego używasz do logowania się na twojej stronie WWW, jest zablokowany na ograniczony czas, zazwyczaj ze względów bezpieczeństwa.
 
 W tej sytuacji należy podjąć kilka działań:
 
-- [Sprawdź logi](/pages/web_cloud/web_hosting/logs_and_statistics) Twojej strony WWW, aby ustalić, które zapytania spowodowały tę blokadę.
-- Za pomocą oprogramowania antywirusowego lub antyspyware sprawdź, czy Twoje urządzenia (komputery, smartfony itp.) nie są zainfekowane oprogramowaniem szpiegującym lub złośliwym.
-- Sprawdź kod źródłowy Twojej strony WWW (przestrzeń FTP i baza(y) danych).
+- Sprawdź [logi](/pages/web_cloud/web_hosting/logs_and_statistics) twojej strony WWW, aby ustalić, które zapytania spowodowały tę blokadę.
+- Za pomocą oprogramowania antywirusowego lub antyspyware sprawdź, czy twoje urządzenia (komputery, smartfony itp.) nie są zainfekowane oprogramowaniem szpiegującym lub złośliwym.
+- Sprawdź kod źródłowy twojej strony WWW (przestrzeń FTP i baza(y) danych).
 
 Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z webmasterem lub jednym z naszych [partnerów](/links/partner).
 
@@ -608,7 +608,7 @@ Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z we
 
 ![rating_idn](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
-Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli Twoja domena wyświetla się w [ratingu międzynarodowym (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name){.external} w Panelu klienta, będzie działać i wyświetlać się w sposób całkowicie normalny gdzie indziej. Adres Twojej strony WWW zostanie wyświetlony w żądanym przez Ciebie formacie. Twoje konta e-mail będą się wyświetlały w wybranym przez Ciebie formacie.
+Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli twoja domena wyświetla się w [ratingu międzynarodowym (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name){.external} w Panelu klienta, będzie działać i wyświetlać się w sposób całkowicie normalny gdzie indziej. Adres twojej strony WWW zostanie wyświetlony w żądanym przez Ciebie formacie. twoje konta e-mail będą się wyświetlały w wybranym przez Ciebie formacie.
 
 > [!alert]
 >
