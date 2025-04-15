@@ -592,7 +592,7 @@
             + [Managing from OpenStack](public-cloud-cross-functional-openstack)
                 + [Preparing an environment for using the OpenStack API](public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
                 + [Setting OpenStack environment variables](public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
-                + [Using OpenStack Tokens](public_cloud/public_cloud_cross_functional/using_openstack_tokens_for_multiple_calls)
+                + [How to use OpenStack tokens](public_cloud/public_cloud_cross_functional/how_to_use_openstack_tokens)
                 + [Managing tokens](public_cloud/public_cloud_cross_functional/managing_tokens)
                 + [Authenticate on Openstack API with service account](manage_and_operate/iam/authenticate-api-openstack-with-service-account)
                 + [Managing OpenStack users](public_cloud/public_cloud_cross_functional/create_and_delete_a_user)

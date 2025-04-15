@@ -1,7 +1,7 @@
 ---
 title: "Utilisation des tokens OpenStack"
 excerpt: "Découvrez comment créer et utiliser des jetons OpenStack pour vos actions"
-updated: 2023-05-04
+updated: 2025-04-14
 ---
 
 ## Objectif
@@ -159,4 +159,4 @@ openstack --os-auth-type token token revoke $OS_TOKEN
 
 ## Aller plus loin
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

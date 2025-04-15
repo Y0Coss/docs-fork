@@ -1,12 +1,8 @@
 ---
 title: Korzystanie z tokenów OpenStack
 excerpt: "Dowiedz się, jak tworzyć i wykorzystywać tokeny OpenStack do realizacji Twoich operacji"
-updated: 2023-05-05
+updated: 2025-04-14
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -163,4 +159,4 @@ openstack --os-auth-type token token revoke $OS_TOKEN
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).
