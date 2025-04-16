@@ -23,9 +23,9 @@ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie mögliche
 
 > [!alert]
 >
-> Diese Anleitung gilt nur für Instanzen mit **stündlicher Abrechnung**. Wenn Ihre Instanzen über eine **monatliche Abrechnung** verfügen, wird die klassische Abrechnung ungeachtet des Status der Dienstleistung fortgesetzt.
+> Diese Anleitung gilt nur für Instanzen mit **stündlicher Abrechnung**. Wenn Ihre Instanzen über eine **monatliche Abrechnung** verfügen, wird die Abrechnung ungeachtet des Status der Dienstleistung fortgesetzt.
 >
-> Diese Manipulationen führen dazu, dass die Instanz weiterhin abgerechnet wird, solange sie nicht gelöscht wird.
+> Instanzen werden weiterhin abgerechnet, solange sie nicht gelöscht werden.
 >
 
 In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optionen in der Übersicht. Klicken Sie auf die Option Ihrer Wahl, um zum entsprechenden Teil der Anleitung zu gelangen. Wir setzen die in der Horizon-Interface verwendete Terminologie in Klammern.
