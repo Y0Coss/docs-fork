@@ -5,7 +5,7 @@ updated: 2025-04-10
 
 ## Objectif
 
-Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour utiliser l'Object Storage - S3 API avec Terraform. Terraform est un outil open source permettant d'orchestrer la provision et la mise à disposition des ressources.
+Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour utiliser l'[Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) - S3 API avec Terraform. Terraform est un outil open source permettant d'orchestrer la provision et la mise à disposition des ressources.
 
 ## Prérequis
 
@@ -41,6 +41,8 @@ Dans la section Public Cloud, vous pouvez récupérer l'ID de votre nom de servi
 Vous utiliserez également ces informations dans les fichiers de définition des ressources Terraform.
 
 ## En pratique
+
+Si vous souhaitez accéder à la documentation du provider sur Object Storage, [cliquez-ici](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_storage.){.external}
 
 ### Configuration
 
@@ -82,6 +84,12 @@ resource "ovh_cloud_project_storage" "my-bucket" {
   service_name = "my_service_name" # Remplacer par votre OVHcloud project ID
   region_name = "GRA" # Remplacer par la région voulue en majuscule.
   name = "object-storage-simple"
+  versioning = {
+    status = "enabled"
+  }
+  encryption = {
+    sse_algorithm = "AES256"
+  }
 }
 ```
 
