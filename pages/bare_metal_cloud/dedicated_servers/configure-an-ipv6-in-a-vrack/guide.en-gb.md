@@ -29,6 +29,13 @@ The vRack network serves as a global private network bridging various OVHcloud p
 > vRack supports both IPv4 and IPv6 blocks. You can find the instructions on how to configure IPv4 blocks in this guide: [Configuring an IP block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043342).
 >
 
+> [!primary]
+>
+> This article is about Additional IP. If you need guidance on Primary IP configuration, we suggest the following articles:<br> 
+> IPv4: [Configuring IP aliasing on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-network-ipaliasing?id=kb_article_view&sysparm_article=KB0043756), [Configuring IP aliasing on a VPS](https://help.ovhcloud.com/csm/en-vps-network-ipaliasing?id=kb_article_view&sysparm_article=KB0047585)<br>
+> IPv6: [Configuring IPv6 on dedicated servers](https://help.ovhcloud.com/csm/en-gb-dedicated-servers-network-ipv6?id=kb_article_view&sysparm_article=KB0043764), [Configuring IPv6 on a VPS](https://help.ovhcloud.com/csm/en-vps-configuring-ipv6?id=kb_article_view&sysparm_article=KB0047575), [Configuring IPv6 on a Public Cloud instance](https://help.ovhcloud.com/csm/en-public-cloud-network-ipv6-configuration?id=kb_article_view&sysparm_article=KB0050182)
+>
+
 ## Introduction
 
 IPv6 revolutionizes networking within OVHcloud's vRack by addressing IPv4's limitations and introducing features for the modern internet. Its rollout is a direct response to the need for more extensive, secure, and sophisticated internet architectures. Here are the key benefits of integrating IPv6 with vRack:

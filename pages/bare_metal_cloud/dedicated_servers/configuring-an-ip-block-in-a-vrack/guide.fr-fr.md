@@ -15,6 +15,13 @@ En plus de l'adressage IP privé, le [vRack](https://www.ovh.com/fr/solutions/vr
 > Le vRack est compatible avec les blocs IPv4 et IPv6. Vous pouvez trouver des instructions vous indiquant comment configurer des blocs IPv6 dans ce guide: [Configurer un bloc IPv6 dans un vRack](https://help.ovhcloud.com/csm/fr-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062825).
 >
 
+> [!primary]
+>
+> Cet article parle d'Additional IP. Si vous avez besoin d'assistance sur la configuration de Primary IP, nous vous suggérons les articles suivants:<br> 
+> IPv4: [Configurer une adresse IP en alias sur un serveur dédié](https://help.ovhcloud.com/csm/fr-dedicated-servers-network-ipaliasing?id=kb_article_view&sysparm_article=KB0043761), [Configurer une adresse IP en alias sur un serveur VPS](https://help.ovhcloud.com/csm/fr-vps-network-ipaliasing?id=kb_article_view&sysparm_article=KB0047591)<br>
+> IPv6: [Configurer IPv6 sur un serveur dédié](https://help.ovhcloud.com/csm/fr-dedicated-servers-network-ipv6?id=kb_article_view&sysparm_article=KB0043775), [Configurer IPv6 sur un serveur VPS](https://help.ovhcloud.com/csm/fr-vps-configuring-ipv6?id=kb_article_view&sysparm_article=KB0047576), [Configurer IPv6 sur une instance Public Cloud](https://help.ovhcloud.com/csm/fr-public-cloud-network-ipv6-configuration?id=kb_article_view&sysparm_article=KB0050183)
+>
+
 ## Prérequis
 
 - Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.

@@ -12,7 +12,9 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 
 > [!primary]
 >
-> For servers that support vRack connectivity, you can also configure Additional IPv6 addresses in a vRack rather than on the public interface of your server. You can find the instructions in this guide: [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838).
+> This article is about Primary IP configuration. For servers that support vRack connectivity, you can also configure Additional IP addresses in a vRack rather than on the public interface of your server. You can find the instructions in these guides: <br>
+> IPv4: [Configuring an IP block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043342) <br>
+> IPv6: [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838).
 >
 
 > [!warning]
