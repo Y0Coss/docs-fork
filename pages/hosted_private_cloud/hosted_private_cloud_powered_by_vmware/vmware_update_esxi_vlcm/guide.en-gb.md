@@ -1,12 +1,18 @@
 ---
 title: Updating hosts using vSphere Lifecycle Management (vLCM)
 excerpt: Learn how to update your ESXi hosts via vSphere Lifecycle Management—quickly and securely.
-updated: 2025-04-15
+updated: 2025-04-16
 ---
 
 ## Objective
 
-Learn how to update your ESXi hosts using vSphere Lifecycle Management (vLCM), directly from the vSphere interface.
+This guide explains how to update your ESXi hosts using vSphere Lifecycle Management (vLCM), directly from the vSphere interface.
+
+vLCM helps you detect required updates and keep your hosts up to date quickly and securely by applying a complete image.
+
+Unlike VMware Update Manager, vLCM provides a full lifecycle approach by including software updates, drivers, firmware, and hardware components. 
+
+This gives you a centralised view of your hosts’ status and helps you make informed decisions to maintain performance and security.
 
 ## Requirements
 

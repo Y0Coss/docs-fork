@@ -1,12 +1,18 @@
 ---
 title: Mise à jour des hôtes avec vSphere Lifecycle Management (vLCM)
 excerpt: Apprenez à maintenir vos hôtes ESXi à jour via vSphere Lifecycle Management, en toute sécurité et en quelques clics.
-updated: 2025-04-15
+updated: 2025-04-16
 ---
 
 ## Objectif
 
-Découvrez comment mettre à jour vos hôtes ESXi avec vSphere Lifecycle Management (vLCM), directement depuis l’interface vSphere.
+Ce guide explique comment mettre à jour vos hôtes ESXi avec vSphere Lifecycle Management (vLCM), directement depuis l’interface vSphere.
+
+vLCM permet de détecter facilement les mises à jour nécessaires et de maintenir vos hôtes à jour rapidement et en toute sécurité, en appliquant une image complète.
+
+Contrairement à VMware Update Manager, vLCM adopte une approche globale du cycle de vie, en intégrant non seulement les mises à jour logicielles, mais aussi les pilotes, le firmware et les composants matériels. 
+
+Vous bénéficiez ainsi d’une vue centralisée de l’état de vos hôtes et pouvez prendre des décisions éclairées pour garantir leur performance et leur sécurité.
 
 ## Prérequis
 
