@@ -1,18 +1,14 @@
 ---
 title: Updating hosts using vSphere Lifecycle Management (vLCM)
-excerpt: Learn how to update your ESXi hosts via vSphere Lifecycle Management—quickly and securely.
+excerpt: Learn how to update your ESXi hosts via vSphere Lifecycle Management quickly and securely.
 updated: 2025-04-16
 ---
 
 ## Objective
 
-This guide explains how to update your ESXi hosts using vSphere Lifecycle Management (vLCM), directly from the vSphere interface.
+This guide explains how to update your ESXi hosts using vSphere Lifecycle Management (vLCM), directly from the vSphere interface. vLCM helps you detect required updates and keep your hosts up to date quickly and securely by applying a complete image.
 
-vLCM helps you detect required updates and keep your hosts up to date quickly and securely by applying a complete image.
-
-Unlike VMware Update Manager, vLCM provides a full lifecycle approach by including software updates, drivers, firmware, and hardware components. 
-
-This gives you a centralised view of your hosts’ status and helps you make informed decisions to maintain performance and security.
+Unlike VMware Update Manager, vLCM provides a full lifecycle approach by including software updates, drivers, firmware, and hardware components.  This gives you a centralised view of your hosts’ status and helps you make informed decisions to maintain performance and security.
 
 ## Requirements
 
@@ -55,10 +51,11 @@ Click `Remediate All`{.action} to apply the image to all hosts in the cluster.
 
 This action triggers the maintenance mode for the affected hosts. Virtual machines will be automatically moved using **vMotion**.
 
-> Before launching the update, make sure that:
-> - The **DRS** feature is enabled in automatic mode;
-> - No anti-affinity rules are preventing virtual machine relocation;
-> - No `.iso` or `.vmdk` files are stored locally on the hosts.
+Before launching the update, make sure that:
+
+- The **DRS** feature is enabled in automatic mode;
+- No anti-affinity rules are preventing virtual machine relocation;
+- No `.iso` or `.vmdk` files are stored locally on the hosts.
 
 Click `Start Remediation`{.action} to begin the process.
 
