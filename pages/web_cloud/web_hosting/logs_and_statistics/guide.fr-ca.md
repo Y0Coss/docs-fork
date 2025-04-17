@@ -54,7 +54,7 @@ Le champ `Period selection` en haut à droite vous permet de sélectionner une p
 
 ### Logs du site web <a name="website-logs"></a>
 
-> [primary]
+> [!primary]
 >
 > Nous ne serons pas en mesure de vous accompagner sur l'interprétation des logs de votre hébergement web car cela relève uniquement du développement web et non de l'hébergement web.
 >

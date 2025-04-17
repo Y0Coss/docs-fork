@@ -24,7 +24,7 @@ Log in to your vSphere interface, then select the **host cluster** you want to u
 
 ### Step 2: Select a new image
 
-Go to `Updates > Hosts > Image`{.action} to view the current image.
+Go to `Updates`{.action} > `Hosts`{.action} > `Image`{.action} to view the current image.
 
 ![Viewing the current image in vLCM](images/vlcm_00.png){.thumbnail}
 
@@ -38,7 +38,7 @@ Click `Save`{.action} to confirm and save the selected image.
 
 ![Selecting a new ESXi version](images/vlcm_02.png){.thumbnail}
 
-> ![primary]
+> [!primary]
 > OVHcloud recommends always using the suggested version. Avoid downgrading to a previous version.
 
 Your image is now loaded.
