@@ -397,7 +397,7 @@
             + [Taking a snapshot](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creer_un_snapshot)
             + [Creating an alert](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_an_alert)
             + [Checking a slow machine](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/check_a_slow_machine)
-            + [Updating ESXi hosts with vLCM](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware-update-esxi-vlcm)
+            + [Updating ESXi hosts with vLCM](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_esxi_vlcm)
             + [VMware Update Manager](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_update_manager)
             + [Extend Volume in vSphere and in OS](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/extend_disk)
             + [Testing a temporary host loss by enabling resilience mode](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_resilience_mode)
