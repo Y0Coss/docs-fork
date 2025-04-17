@@ -1,7 +1,7 @@
 ---
 title: "How to use the Public Cloud interface"
 excerpt: "Guided tour of the Public Cloud interface to explore the different sections"
-updated: 2025-02-11
+updated: 2025-04-17
 ---
 
 ## Objective
@@ -84,7 +84,7 @@ There are several management tools available in your Public Cloud project, they 
 
 ### Services management
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2mHcXQC6mTM?si=8_0aQCfBtmumGRbh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2mHcXQC6mTM?si=8_0aQCfBtmumGRbh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > [!primary]
 >

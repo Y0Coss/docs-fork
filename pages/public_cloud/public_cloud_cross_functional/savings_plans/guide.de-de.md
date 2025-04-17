@@ -1,7 +1,7 @@
 ---
 title: 'How do Savings Plans work?'
 excerpt: 'Savings Plans - Everything you need to know to optimise your costs'
-updated: 2025-02-13
+updated: 2025-04-17
 ---
 
 <style>
@@ -26,7 +26,7 @@ This guide will also detail the use of the Savings Plans dashboard, which will a
 
 ## How do Savings Plans work?
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Dd7P7CUN21M?si=OvK6Gec1BLFFB25O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Dd7P7CUN21M?si=OvK6Gec1BLFFB25O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### What is a Savings Plan?
 

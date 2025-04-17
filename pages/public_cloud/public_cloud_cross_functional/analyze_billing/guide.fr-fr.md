@@ -1,7 +1,7 @@
 ---
 title: 'Informations concernant le mode de facturation Public Cloud'
 excerpt: 'Comprenez le mode de facturation des produits Public Cloud'
-updated: 2025-01-07
+updated: 2025-04-17
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ Ce fonctionnement ressemble à celui de certains opérateurs téléphoniques qui
 
 **Ce document détaille les concepts de facturation de l'offre Public Cloud.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XJE2bOZ9MJo?si=mmVOwxo4jemMvf12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/XJE2bOZ9MJo?si=mmVOwxo4jemMvf12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Prérequis
 

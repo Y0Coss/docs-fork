@@ -1,7 +1,7 @@
 ---
 title: Comment gérer un Savings Plan
 excerpt: Découvrez comment créer un Savings Plan avec différents outils
-updated: 2025-02-13
+updated: 2025-04-17
 ---
 
 <style>
@@ -32,7 +32,7 @@ Ce guide a pour objectif de fournir une méthode claire et détaillée pour la c
 - Modifier un Savings Plan.
 - Automatiser la gestion des Savings Plans via l'API OVHcloud ou Terraform pour une plus grande efficacité et flexibilité.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mjllp_3rkOA?si=nsuEH33N4Q7xEHmS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mjllp_3rkOA?si=nsuEH33N4Q7xEHmS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Prérequis
 

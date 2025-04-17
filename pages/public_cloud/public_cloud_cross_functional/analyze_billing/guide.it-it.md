@@ -1,7 +1,7 @@
 ---
 title: 'Sistema di fatturazione dei servizi Public Cloud'
 excerpt: 'Come funziona il sistema di fatturazione dei servizi Public Cloud'
-updated: 2025-01-07
+updated: 2025-04-17
 ---
 
 ## Obiettivo
@@ -14,7 +14,7 @@ Questo sistema è molto simile a quello adottato da alcuni operatori telefonici,
 
 <b>Questa guida ti mostra il funzionamento del sistema di fatturazione applicato alle risorse Cloud di OVHcloud.</b>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/L2OyLFoa77Q?si=1zRR7qaGXZGD-mBS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/L2OyLFoa77Q?si=1zRR7qaGXZGD-mBS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Prerequisiti
 

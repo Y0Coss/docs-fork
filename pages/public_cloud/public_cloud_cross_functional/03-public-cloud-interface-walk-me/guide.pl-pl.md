@@ -1,7 +1,7 @@
 ---
 title: "Poznaj interfejs Public Cloud"
 excerpt: "Przewodnik po interfejsie Public Cloud do znajdowania poszczególnych sekcji"
-updated: 2025-02-06
+updated: 2025-04-17
 ---
 
 ## Wprowadzenie
@@ -84,7 +84,7 @@ W projekcie Public Cloud dostępnych jest kilka narzędzi do zarządzania. Są o
 
 ### Zarządzanie usługami
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2mHcXQC6mTM?si=8_0aQCfBtmumGRbh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2mHcXQC6mTM?si=8_0aQCfBtmumGRbh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > [!primary]
 >

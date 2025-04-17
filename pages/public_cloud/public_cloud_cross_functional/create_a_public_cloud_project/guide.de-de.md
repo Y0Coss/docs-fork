@@ -1,7 +1,7 @@
 ---
 title: "Erstellung Ihres ersten OVHcloud Public Cloud Projekts"
 excerpt: "Erfahren Sie hier, wie Sie Ihr erstes Public Cloud Projekt über das OVHcloud Kundencenter erstellen"
-updated: 2024-02-22
+updated: 2025-04-17
 ---
 
 > [!primary]
@@ -48,7 +48,7 @@ Sie haben ab sofort Zugriff auf das gesamte OVHcloud Public Cloud Ökosystem. En
 >
 >![Projekt aktivieren](images/activate-project.png){.thumbnail width="400"}
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7r_VCB7nmI?si=fcyToz1wK8Tw7skw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Weiterführende Informationen
 

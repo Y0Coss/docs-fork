@@ -1,7 +1,7 @@
 ---
 title: "Se familiariser avec l'interface Public Cloud"
 excerpt: "Visite guidée de l'interface Public Cloud"
-updated: 2025-02-06
+updated: 2025-04-17
 ---
 
 ## Objectif
@@ -84,7 +84,7 @@ Plusieurs outils de gestion sont disponibles dans votre projet Public Cloud, ils
 
 ### Gestion des services
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nJtrrGhqYrQ?si=xE0hEJxI8G2RSVio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/nJtrrGhqYrQ?si=xE0hEJxI8G2RSVio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > [!primary]
 >

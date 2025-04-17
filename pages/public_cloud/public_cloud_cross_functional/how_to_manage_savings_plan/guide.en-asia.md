@@ -1,7 +1,7 @@
 ---
 title: How to manage a Savings Plan
 excerpt: Learn how to manage a Savings Plan using different tools
-updated: 2025-02-13
+updated: 2025-04-17
 ---
 
 <style>
@@ -32,7 +32,7 @@ This guide aims at providing a clear and detailed method for creating and updati
 - Modify a Savings Plan.
 - Automate the management of Savings Plans via the API or Terraform for greater efficiency and flexibility.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Dd7P7CUN21M?si=OvK6Gec1BLFFB25O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Dd7P7CUN21M?si=OvK6Gec1BLFFB25O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Requirements
 
