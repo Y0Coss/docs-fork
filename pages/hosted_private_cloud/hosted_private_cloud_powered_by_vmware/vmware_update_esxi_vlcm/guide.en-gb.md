@@ -1,7 +1,7 @@
 ---
 title: Updating hosts using vSphere Lifecycle Management (vLCM)
 excerpt: Learn how to update your ESXi hosts via vSphere Lifecycle Management quickly and securely.
-updated: 2025-04-16
+updated: 2025-04-17
 ---
 
 ## Objective
@@ -52,9 +52,10 @@ Click `Remediate All`{.action} to apply the image to all hosts in the cluster.
 This action triggers the maintenance mode for the affected hosts. Virtual machines will be automatically moved using **vMotion**.
 
 Before launching the update, make sure that:
- - The **DRS** feature is enabled in automatic mode;
- - No anti-affinity rules are preventing virtual machine relocation;
- - No `.iso` or `.vmdk` files are stored locally on the hosts.
+
+- The **DRS** feature is enabled in automatic mode.
+- No anti-affinity rules are preventing virtual machine relocation.
+- No `.iso` or `.vmdk` files are stored locally on the hosts.
 
 Click `Start Remediation`{.action} to begin the process.
 
