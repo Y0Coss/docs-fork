@@ -10,11 +10,11 @@ This tutorial covers the process of **building your own job image** for specific
 
 ## Requirements
 
--   Access to the [OVHcloud Control Panel](/links/manager)
--   A **Public Cloud** project
--   A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
--   [Docker](https://www.docker.com/get-started) installed on your local computer or a virtual machine
--   Knowledge about building an image and a [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A **Public Cloud** project
+- A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
+- [Docker](https://www.docker.com/get-started) installed on your local computer or a virtual machine
+- Knowledge about building an image and a [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
 ## Quick overview
 
@@ -84,11 +84,11 @@ FROM python:3.10
 
 Here is a potential list of official base images (featuring cuda drivers) that you can use:
 
--   [pytorch/pytorch:latest](https://hub.docker.com/r/pytorch/pytorch)
--   [tensorflow/tensorflow:latest-gpu](https://hub.docker.com/r/tensorflow/tensorflow)
--   [huggingface/transformers-pytorch-gpu:latest](https://hub.docker.com/r/huggingface/transformers-pytorch-gpu/)
--   [mxnet/python](https://hub.docker.com/r/mxnet/python)
--   [nvidia/cuda](https://hub.docker.com/r/nvidia/cuda)
+- [pytorch/pytorch:latest](https://hub.docker.com/r/pytorch/pytorch)
+- [tensorflow/tensorflow:latest-gpu](https://hub.docker.com/r/tensorflow/tensorflow)
+- [huggingface/transformers-pytorch-gpu:latest](https://hub.docker.com/r/huggingface/transformers-pytorch-gpu/)
+- [mxnet/python](https://hub.docker.com/r/mxnet/python)
+- [nvidia/cuda](https://hub.docker.com/r/nvidia/cuda)
 
 For example, if we want to start from the base image `tensorflow/tensorflow:latest-gpu`, we would use:
 
@@ -130,7 +130,7 @@ ADD . /workspace
 
 > [!warning]
 >
->This command could allow you to load your dataset within your Docker image. However, this would increase its size considerably. A best practice is to put data outside, such as [Object Storage](/links/public-cloud/object-storage/) then link it to the AI Training job during its launch.
+>This command could allow you to load your dataset within your Docker image. However, this would increase its size considerably. A best practice is to put data outside, such as [Object Storage](/links/public-cloud/object-storage) then link it to the AI Training job during its launch.
 >
 
 ### Give the OVHcloud user access to the home directory
