@@ -1,7 +1,7 @@
 ---
 title: Mise à jour des hôtes avec vSphere Lifecycle Management (vLCM)
 excerpt: Apprenez à maintenir vos hôtes ESXi à jour via vSphere Lifecycle Management, en toute sécurité et en quelques clics.
-updated: 2025-04-16
+updated: 2025-04-17
 ---
 
 ## Objectif
@@ -56,9 +56,10 @@ Cliquez sur `Remediate All`{.action} pour appliquer l’image à l’ensemble de
 Cette action déclenche la mise en maintenance des hôtes concernés. Les machines virtuelles sont automatiquement déplacées via **vMotion**.
 
 Avant de lancer la mise à jour, assurez-vous que :
-  - La fonction **DRS** est activée en mode automatique ;
-  - Aucune règle d’anti-affinité n’empêche le déplacement des machines virtuelles ;
-  - Aucun fichier `.iso` ou `.vmdk` n’est stocké localement sur les hôtes.
+
+- La fonction **DRS** est activée en mode automatique.
+- Aucune règle d’anti-affinité n’empêche le déplacement des machines virtuelles.
+- Aucun fichier `.iso` ou `.vmdk` n’est stocké localement sur les hôtes.
 
 Cliquez sur `Start Remediation`{.action} pour démarrer le processus.
 
