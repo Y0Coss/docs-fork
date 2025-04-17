@@ -114,7 +114,6 @@ backup.private.ovhcloud.dev
 Nous vous recommandons d’utiliser la dernière sauvegarde réussie, sauf si vous avez une raison particulière de revenir à une version antérieure.
 
 ![Choose restore point](images/step2_07.png){.thumbnail}
-
 9\. Choisissez le `mode de restauration`{.action} adapté à votre situation (généralement **Entire computer**).
 
 ![Recovery mode](images/step2_08.png){.thumbnail}
