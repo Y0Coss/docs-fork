@@ -54,7 +54,7 @@ The `Period selection` field in the top right-hand corner allows you to select a
 
 ### Website logs <a name="website-logs"></a>
 
-> [primary]
+> [!primary]
 >
 > We will not be able to assist you in interpreting your web hosting plan’s logs, as this is strictly a web development issue not related to web hosting plans.
 >

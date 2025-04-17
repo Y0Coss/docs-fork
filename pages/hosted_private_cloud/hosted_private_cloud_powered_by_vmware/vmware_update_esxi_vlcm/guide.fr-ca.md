@@ -28,7 +28,7 @@ Connectez-vous à votre interface vSphere, puis sélectionnez le **cluster d’h
 
 ### Étape 2 : 
 
-Accédez au menu `Updates > Hosts > Image`{.action} pour consulter l’image actuelle.
+Accédez au menu `Updates`{.action} > `Hosts`{.action} > `Image`{.action} pour consulter l’image actuelle.
 
 ![Affichage de l'image actuelle dans vLCM](images/vlcm_00.png){.thumbnail}
 
@@ -42,7 +42,7 @@ Cliquez sur `Save`{.action} pour valider et enregistrer l’image sélectionnée
 
 ![Sélection d'une nouvelle version ESXi](images/vlcm_02.png){.thumbnail}
 
-> ![primary]
+> [!primary]
 > OVHcloud recommande de toujours utiliser la version préconisée. Évitez toute mise à jour vers une version antérieure.
 
 Votre image est maintenant chargée.

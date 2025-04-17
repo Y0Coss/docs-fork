@@ -54,7 +54,7 @@ Im Feld `Period selection` oben rechts können Sie einen bestimmten Zeitraum aus
 
 ### Logs der Website <a name="website-logs"></a>
 
-> [primary]
+> [!primary]
 >
 > Wir sind nicht in der Lage, bei der Interpretation der Logs Ihres Webhostings zu assistieren, da dies ausschließlich die Webentwicklung und nicht das Webhosting selbst betrifft.
 >

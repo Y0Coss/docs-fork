@@ -54,7 +54,7 @@ Pole `Period selection` w prawym górnym rogu umożliwia wybranie konkretnego ok
 
 ### Logi strony WWW <a name="website-logs"></a>
 
-> [primary]
+> [!primary]
 >
 > Nie będziemy w stanie udzielić Ci wsparcia w interpretacji logów Twojego hostingu, ponieważ jest to wyłącznie kwestia rozwoju www, a nie hostingu.
 >

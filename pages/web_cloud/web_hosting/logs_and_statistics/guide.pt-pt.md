@@ -54,7 +54,7 @@ O campo "Period selection", no canto superior direito, permite selecionar um per
 
 ### Logs do website <a name="website-logs"></a>
 
-> [primary]
+> [!primary]
 >
 > Não poderemos acompanhá-lo na interpretação dos logs do seu alojamento web, uma vez que se trata apenas de um desenvolvimento web e não de um alojamento web.
 >
