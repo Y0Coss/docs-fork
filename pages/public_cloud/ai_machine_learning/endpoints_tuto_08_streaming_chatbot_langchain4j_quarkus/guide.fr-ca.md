@@ -13,7 +13,7 @@ updated: 2025-04-18
 
 ## Introduction
 
-After exploring how to use [AI Endpoints with LangChain4j](/pages/public_cloud/ai_machine_learning/endpoints_tuto_06_chatbot_langchain_javascript), it's time to level up and build a chatbot that supports **real-time streaming responses**.
+After exploring how to use [AI Endpoints with LangChain4j](/pages/public_cloud/ai_machine_learning/endpoints_tuto_07_chatbot_langchain4j_quarkus), it's time to level up and build a chatbot that supports **real-time streaming responses**.
 
 In this tutorial, you'll learn how to use **[LangChain4j](https://github.com/langchain4j/langchain4j)** with **[Quarkus](https://github.com/quarkusio/quarkus)** to create a chatbot that streams LLM-generated responses using **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**.
 
