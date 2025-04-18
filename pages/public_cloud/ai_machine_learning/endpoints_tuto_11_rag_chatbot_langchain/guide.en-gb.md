@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Build a RAG Chatbot with LangChain
 excerpt: Learn how to build a RAG (Retrieval Augmented Generation) chatbot using Python, LangChain, and AI Endpoints
-updated: 2025-04-15
+updated: 2025-04-18
 ---
 
 > [!primary]
@@ -13,7 +13,7 @@ updated: 2025-04-15
 
 ## Introduction
 
-In this guide, we'll show you how to build a **Retrieval Augmented Generation (RAG)** chatbot that enhances answers by incorporating your **own custom documents** into the LLM’s context. 
+In this tutorial, we'll show you how to build a **Retrieval Augmented Generation (RAG)** chatbot that enhances answers by incorporating your **own custom documents** into the LLM’s context.
 
 To do this, we will use **[LangChain](https://github.com/langchain-ai/langchain)**, a powerful open-source framework that simplifies working with LLMs in both Python and JavaScript. Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
 
@@ -60,13 +60,13 @@ python-dotenv
 
 Then, launch the installation of these dependencies:
 
-```
+```console
 pip install -r requirements.txt
 ```
 
 ### Importing necessary libraries and variables
 
-Once this is done, you can create a Python file named `chat-bot-streaming-rag.py`, where you will first import Python librairies as follow:
+Once this is done, you can create a Python file named `chat-bot-streaming-rag.py`, where you will first import Python librairies as follows:
 
 ```python
 from dotenv import load_dotenv
@@ -159,7 +159,6 @@ Create a folder named rag-files and place your `.txt`, .`md`, or other text-base
 
 You can find example files in our [public-cloud-examples GitHub repository](https://github.com/ovh/public-cloud-examples/tree/main/ai/ai-endpoints/python-langchain-chatbot/rag-files).
 
-
 ### Run the RAG chatbot
 
 Run the following command:
@@ -175,6 +174,7 @@ Indeed, here is a comparison of not using RAG:
 ![chatbot-without-rag](images/without-rag.png){.thumbnail}
 
 and using RAG:
+
 ![chatbot-with-rag](images/with-rag.png){.thumbnail}
 
 ## Conclusion
