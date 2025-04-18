@@ -1,7 +1,7 @@
 ---
 title: 'VMware on OVHcloud maintenance operations (EN)' 
 excerpt: 'Find out more about the operations carried out to ensure the reliability and performance of your Hosted Private Cloud VMware on OVHcloud equipment' 
-updated: 2025-01-30
+updated: 2025-04-18
 ---
 
 > [!success]
@@ -138,6 +138,15 @@ To get the details of each robot, run the following API call:
 | Purpose | Reason | Preventive instructions | Impact | Estimated duration | Frequency |
 |---------|--------|-------------------------|--------|--------------------|-----------|
 | Checking, ordering and renewing SSL certificates on control plane virtual machines managed by OVHcloud. | Renewal of SSL certificates before the expiry date. | None | Control plane unavailable\* (management) during the maintenance timeout\*. | 01H00 | Quarterly (typical) |
+
+#### **redeployVmToLatestVersion**
+
+| Purpose | Reason | Preventive instructions | Impact | Estimated duration | Frequency |
+|---------|--------|--------------------------|--------|---------------------|-----------|
+| Major upgrade of the operating system on control plane virtual machines managed by OVHcloud | OVHcloud security patch lifecycle | None | Control plane unavailable\* (management) during the maintenance window | 02h00 | Based on the publisher lifecycle |
+
+> [!primary]
+> The estimated duration applies to most customers. For large infrastructures, the duration can be significantly longer. It depends on each case and should be evaluated individually.
 
 #### **maintenanceUpgradeHosts**
 
