@@ -1,6 +1,6 @@
 ---
 title: Move2Cloud - Migration de charges VMware vers OVHcloud SecNumCloud avec Veeam Replication
-excerpt: Découvrez comment migrer vos charges de travail VMware on-premises vers un environnement Hosted Private Cloud SecNumCloud d’OVHcloud à l’aide de Veeam Replication.
+excerpt: "Découvrez comment migrer vos charges de travail VMware on-premises vers un environnement Hosted Private Cloud SecNumCloud d’OVHcloud à l’aide de Veeam Replication."
 updated: 2025-04-18
 ---
 
