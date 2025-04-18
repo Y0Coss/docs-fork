@@ -1086,7 +1086,7 @@
                 + [AI Endpoints - Build a Python Chatbot with LangChain](public_cloud/ai_machine_learning/endpoints_tuto_05_chatbot_langchain_python)
                 + [AI Endpoints - Build a JavaScript Chatbot with LangChain](public_cloud/ai_machine_learning/endpoints_tuto_06_chatbot_langchain_javascript)
                 + [AI Endpoints - Create your own AI chatbot using LangChain4j and Quarkus](public_cloud/ai_machine_learning/endpoints_tuto_07_chatbot_langchain4j_quarkus)
-                + [AI Endpoints - Streaming Chatbot with LangChain4j and Quarkus](public_cloud/ai_machine_learning/endpoints_tuto_08_streaming_chatbot_langchain4j_quarkus)
+                + [AI Endpoints - Create a Streaming Chatbot with LangChain4j and Quarkus](public_cloud/ai_machine_learning/endpoints_tuto_08_streaming_chatbot_langchain4j_quarkus)
                 + [AI Endpoints - Enable conversational memory in your chatbot using LangChain](public_cloud/ai_machine_learning/endpoints_tuto_09_chatbot_memory_langchain)
                 + [AI Endpoints - Create a Memory Chatbot with LangChain4j](public_cloud/ai_machine_learning/endpoints_tuto_10_memory_chatbot_langchain4j)
                 + [AI Endpoints - Build a RAG Chatbot with LangChain](public_cloud/ai_machine_learning/endpoints_tuto_11_rag_chatbot_langchain)

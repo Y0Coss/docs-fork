@@ -1,6 +1,6 @@
 ---
-title: AI Endpoints - Create a Streaming Chatbot with LangChain4j and Quarkus
-excerpt: How to build a Java-based chatbot that streams responses from AI Endpoints for a real-time chat experience
+title: AI Endpoints - Create your own AI chatbot using LangChain4j and Quarkus
+excerpt: Learn how to build an AI-powered chatbot using LangChain4j, Quarkus, and OVHcloud AI Endpoints
 updated: 2025-04-18
 ---
 
@@ -13,21 +13,20 @@ updated: 2025-04-18
 
 ## Introduction
 
-After exploring how to use [AI Endpoints with LangChain4j](/pages/public_cloud/ai_machine_learning/endpoints_tuto_04_chatbot_langchain4j_quarkus), it's time to level up and build a chatbot that supports **real-time streaming responses**.
-
-In this tutorial, you'll learn how to use **[LangChain4j](https://github.com/langchain4j/langchain4j)** with **[Quarkus](https://github.com/quarkusio/quarkus)** to create a chatbot that streams LLM-generated responses using **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**.
+Looking to build an AI-powered chatbot with Java? In this tutorial, you will learn how to create a chatbot using **[LangChain4j](https://github.com/langchain4j/langchain4j)**, **[Quarkus](https://github.com/quarkusio/quarkus)**, and **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**.
 
 ## Objective
 
 This tutorial demonstrates how to:
 
-- Set up a Quarkus project with quarkus-langchain4j
-- Use OVHcloud AI Endpoints to access Mistral AI models
-- Stream responses from the LLM using a reactive REST API
+- Set up a Quarkus application using LangChain4j
+- Connect your chatbot to AI Endpoints
+- Customize prompts with annotations
+- Expose your chatbot as an API
+- Test your chatbot using a cURL request
 
 ## Definitions
 
-- **Streaming LLM Response**: Instead of waiting for a full response from the model, streaming allows the application to start processing output tokens as they’re generated. This creates a smoother, faster user experience—especially useful for chatbots.
 - **[LangChain4j](https://github.com/langchain4j/langchain4j)**: Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. It offers abstractions and annotations for building intelligent agents and chatbots. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
 - **[Quarkus](https://quarkus.io/)**: A Kubernetes-native Java framework designed to optimize Java applications for containers and the cloud. In this tutorial we will use the [quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j/) extension.
 - **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
@@ -45,8 +44,58 @@ This tutorial demonstrates how to:
 Generate your Quarkus project using the CLI with the LangChain4j Mistral AI extension:
 
 ```bash
-$ quarkus create app com.ovhcloud.examples.aiendpoints:quarkus-langchain4j-streaming \
-    --extension='quarkus-langchain4j-mistral-ai,rest'
+$ quarkus create app com.ovhcloud.examples.aiendpoints:quarkus-langchain4j \
+                   --extension='quarkus-langchain4j-mistral-ai'
+```
+
+Here is the tree structure after running the previous command:
+
+```console
+.
+├── .dockerignore
+├── .gitignore
+├── .mvn
+│   └── wrapper
+│       ├── .gitignore
+│       ├── MavenWrapperDownloader.java
+│       └── maven-wrapper.properties
+├── README.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── src
+    
+└── main
+        
+├── docker
+        
+│   ├── Dockerfile.jvm
+        
+│   ├── Dockerfile.legacy-jar
+        
+│   ├── Dockerfile.native
+        
+│   └── Dockerfile.native-micro
+        
+├── java
+        
+└── resources
+            
+└── application.properties
+```
+
+After running this command, check your pom.xml for the following dependency:
+
+```xml
+<!-- ... -->
+ 
+<dependency>
+  <groupId>io.quarkiverse.langchain4j</groupId>
+  <artifactId>quarkus-langchain4j-mistral-ai</artifactId>
+  <version>0.10.4</version>
+</dependency>
+ 
+<!-- ... -->
 ```
 
 ### AI service creation
@@ -65,20 +114,17 @@ public interface ChatBotService {
 Now add system and user prompts to your service:
 
 ```java
-package com.ovhcloud.examples.aiendpoints.services;
-
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
 import io.quarkiverse.langchain4j.RegisterAiService;
-import io.smallrye.mutiny.Multi;
-
+ 
 @RegisterAiService
 public interface ChatBotService {
   // Scope / context passed to the LLM
   @SystemMessage("You are a virtual, an AI assistant.")
   // Prompt (with detailed instructions and variable section) passed to the LLM
-  @UserMessage("Answer as best possible to the following question: {question}. The answer must be in a style of a virtual assistant and add some emojis.")
-  Multi<String> askAQuestion(String question);
+  @UserMessage("Answer as best possible to the following question: {question}. The answer must be in a style of a virtual assistant and add some emojis to make the answer more fun.")
+  String askAQuestion(String question);
 }
 ```
 
@@ -134,27 +180,25 @@ Looking for the newly published extensions in registry.quarkus.io
 Then create a REST endpoint:
 
 ```java
-package com.ovhcloud.examples.aiendpoints;
-
 import com.ovhcloud.examples.aiendpoints.services.ChatBotService;
-import io.smallrye.mutiny.Multi;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
-
-@Path("/ovhcloud-ai")
+ 
+// Endpoint root path
+@Path("ovhcloud-ai")    
 public class AIEndpointsResource {
-    // AI Service injection to use it later
-    @Inject
-    ChatBotService chatBotService;
-
-    // ask resource exposition with POST method
-    @Path("ask")
-    @POST
-    public Multi<String> ask(String question) {
-        // Call the Mistral AI chat model
-        return chatBotService.askAQuestion(question);
-    }
+  // AI Service injection to use it later
+  @Inject                                            
+  ChatBotService chatBotService;
+ 
+  // ask resource exposition with POST method
+  @Path("ask")                                       
+  @POST                                              
+  public String ask(String question) {
+    // Call the Mistral AI chat model
+    return  chatBotService.askAQuestion(question);   
+  }
 }
 ```
 
@@ -166,27 +210,44 @@ To start your application and run your API, just use the [Quarkus dev mode](http
 
 ```console
 $ quarkus dev
+ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \  
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/  
+2024-04-12 08:51:33,515 INFO  [io.quarkus] (Quarkus Main Thread) quarkus-langchain4j 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.9.3) started in 3.163s. Listening on: http://localhost:8080
+ 
+2024-04-12 08:51:33,517 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2024-04-12 08:51:33,518 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [awt, cdi, langchain4j, langchain4j-mistralai, poi, qute, rest, rest-client, rest-client-jackson, smallrye-context-propagation, vertx]
+ 
+--
+Tests paused
+Press [e] to edit command line args (currently ''), [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] for more options>
 ```
 
 Then, use cURL to interact with your API:
 
 ```bash
-curl http://localhost:8080/ovhcloud-ai/ask\?question\=%22Can%20you%20tell%20me%20what%20OVHcloud%20is%20and%20what%20kind%20of%20products%20it%20offers\?%22
+$ curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"question": "What is OVHcloud?"}' \
+  http://localhost:8080/ovhcloud-ai/ask
 ```
 
-![image](images/llm-streaming.gif){.thumbnail}
+For the previous prompt example, here is the result:
 
-You’ll see the response streamed directly from the AI model, token by token! 🧠⚡
+```console
+Answer: «OVHcloud is a global, integrated cloud hosting platform, offering Infrastructure as a Service (IaaS) and Platform as a Service (PaaS). »
+ 
+This answer describes OVHcloud as a global integrated cloud hosting platform offering IaaS and PaaS with optimal and secure services. Emojis were added to the response to make it more fun and engaging.
+```
 
 ## Conclusion
 
-In just a few steps, you have created your own **streaming AI chatbot** powered by [LangChain4j](https://github.com/langchain4j/langchain4j), [Quarkus](https://github.com/quarkusio/quarkus), and [OVHcloud AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
-
-This approach unlocks real-time user interactions, perfect for embedding in chat UIs or customer support tools.
+In just a few steps, you have created your own AI chatbot powered by [LangChain4j](https://github.com/langchain4j/langchain4j), [Quarkus](https://github.com/quarkusio/quarkus), and [OVHcloud AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
 
 ## Going further
 
-Feel free to take it further and build a web frontend for an even more interactive experience! 😄💬 You can then deploy this web app in the cloud, making your interface accessible to everyone. To do so, refer to the following articles and tutorials:
+If you want to go further and deploy your web app in the cloud, making your interface accessible to everyone, refer to the following articles and tutorials:
 
 - [AI Deploy – Tutorial – Build & use a custom Docker image](/pages/public_cloud/ai_machine_learning/deploy_tuto_12_build_custom_image)
 - [AI Deploy – Tutorial – Deploy a Gradio app for sketch recognition](/pages/public_cloud/ai_machine_learning/deploy_tuto_05_gradio_sketch_recognition)
