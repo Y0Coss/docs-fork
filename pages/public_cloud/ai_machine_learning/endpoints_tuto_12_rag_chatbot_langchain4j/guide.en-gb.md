@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Build a RAG Chatbot with LangChain4j
 excerpt: Learn how to build a RAG (Retrieval Augmented Generation) chatbot using Python, LangChain4j, and AI Endpoints
-updated: 2025-04-15
+updated: 2025-04-18
 ---
 
 > [!primary]
@@ -13,7 +13,7 @@ updated: 2025-04-15
 
 ## Introduction
 
-In this guide, we'll show you how to build a **Retrieval Augmented Generation (RAG)** chatbot that enhances answers by incorporating your **own custom documents** into the LLM’s context.
+In this tutorial, we'll show you how to build a **Retrieval Augmented Generation (RAG)** chatbot that enhances answers by incorporating your **own custom documents** into the LLM’s context.
 
 To do this, we will use **[LangChain4j](https://github.com/langchain4j/langchain4j)**, Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
 
@@ -84,7 +84,7 @@ python-dotenv
 
 Then, launch the installation of these dependencies:
 
-```
+```console
 pip install -r requirements.txt
 ```
 
