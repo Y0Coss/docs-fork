@@ -50,12 +50,14 @@ A **404** error typically indicates that the model you're trying to access canno
 
 ### I am trying to use the AI Endpoints models, but I keep getting a 429 error code. What does it mean?
 
-A 429 error code typically indicates that you have exceeded the rate limit for the AI Endpoints models. When authenticated, the following rate limits apply:
+A 429 error code typically indicates that you have exceeded the rate limit for the AI Endpoints models. When using AI Endpoints, the **following rate limits apply**: 
 
-- 4 requests per second per PCI project/model
-- 250 requests per minute per PCI Project/model
+- **Anonymous**: 2 requests per minute, per by IP and per model.
+- **Authenticated with an API access key**: 400 requests per minute, per PCI project and per model.
 
-If you exceed these rate limits, you will receive a 429 error code. In this case, you may consider optimizing your application's usage of the AI Endpoints or spreading out your requests over a longer period. Alternatively, please reach out to us to discuss increasing your limits if you require higher usage.
+If you exceed these rate limits, you will receive a 429 error code. In this case, you may consider optimizing your application's usage of the AI Endpoints or spreading out your requests over a longer period. 
+
+Alternatively, please **[reach out to us to discuss increasing your limits](https://help.ovhcloud.com/csm?id=csm_get_help )** if you require higher usage.
 
 ### I am experiencing slow response times when using some of the AI Endpoints models. What is causing this delay?
 
