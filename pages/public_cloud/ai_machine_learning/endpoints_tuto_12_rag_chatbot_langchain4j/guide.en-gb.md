@@ -177,7 +177,7 @@ Note that the chatbot will use the streaming mode, as explain in the [Memory Cha
 
 As you can see below, the LLM gives an answer, but not the expected one 😅.
 
-![chatbot-without-rag](images/without-rag.gif){.thumbnail}
+![chatbot-without-rag](images/without-rag.png){.thumbnail}
 
 This is not a surprise, since the model was trained before OVHcloud created AI Endpoints. The model does not this platform.
 
@@ -389,7 +389,7 @@ public class RAGStreamingChatbot {
 
 Thanks to your knowledge base, our new chatbot will answer with relevant information from your custom data source.
 
-![chatbot-with-rag](images/with-rag.gif){.thumbnail}
+![chatbot-with-rag](images/with-rag.png){.thumbnail}
 
 ## Conclusion
 
