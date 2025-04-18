@@ -1,7 +1,7 @@
 ---
 title: What to do if you get a "Your connection is not private" error?
 excerpt: How to react to a security error message on your website
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Objective <a name="objective"></a>
@@ -89,10 +89,7 @@ If you have **imported a SSL certificate** from another provider, contact the ap
 
 > [!primary]
 >
-> To check all the emails sent by OVHcloud teams, click on the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then on `Service emails`{.action}:
->
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
->
+> To check all the emails sent by OVHcloud teams, click on the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then on `My messages`{.action}.
 
 ## Go further <a name="go-further"></a>
 

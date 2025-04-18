@@ -1,7 +1,7 @@
 ---
 title: 'Transfer domeny .pl do OVHcloud'
 excerpt: "Dowiedz się, jak wykonać transfer domeny .pl do OVHcloud"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Wprowadzenie

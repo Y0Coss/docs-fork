@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja dynamicznego DNS (DynHost/DynDNS) dla Twojej domeny"
 excerpt: "Dowiedz się, jak skonfigurować dynamiczny rekord DNS dla Twojej domeny OVHcloud"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Wprowadzenie
@@ -87,7 +87,7 @@ W tym celu kliknij poniższe zakładki, aby wyświetlić kolejne **6** etapy.
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etap 3**
 >>
@@ -144,7 +144,7 @@ Gdy jesteś gotowy, aby utworzyć rekord DynHost, w tym celu kliknij poniższe z
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etap 3**
 >>
@@ -223,7 +223,7 @@ Możesz sprawdzić, czy docelowy adres IP został zaktualizowany. w tym celu kli
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etap 3**
 >>

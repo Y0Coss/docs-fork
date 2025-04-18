@@ -1,7 +1,7 @@
 ---
 title: Was tun bei dem Fehler "Dies ist keine sichere Verbindung"?
 excerpt: Erfahren Sie hier, wie Sie bei sicherheitsrelevanten Fehlermeldungen auf Ihrer Website vorgehen
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Ziel  <a name="objective"></a>
@@ -88,10 +88,7 @@ Wenn Sie über ein **importiertes SSL-Zertifikat** verfügen, kontaktieren Sie d
 
 >[!primary]
 >
-> Um alle von unseren Diensten versendeten E-Mails einzusehen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](/links/manager) und dann auf `E-Mails von OVHcloud`{.action}:
->
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
->
+> Um alle von unseren Diensten versendeten E-Mails einzusehen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](/links/manager) und dann auf `Meine Kommunikation`{.action}.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

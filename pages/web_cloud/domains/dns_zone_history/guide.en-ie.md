@@ -1,7 +1,7 @@
 ---
 title: "Managing the history of a DNS zone"
 excerpt: "Find out how to view, compare, download and restore your DNS zone backups"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Objective
@@ -41,7 +41,7 @@ To access this feature, click on the tabs below to view each of the **4** steps.
 >>
 >> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Step 3** 
 >>

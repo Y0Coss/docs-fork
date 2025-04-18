@@ -1,7 +1,7 @@
 ---
 title: "Domena - Jak zmienić właściciela?"
 excerpt: "Dowiedz się, jak zmienić właściciela domeny lub zaktualizować informacje na jej temat"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Wprowadzenie

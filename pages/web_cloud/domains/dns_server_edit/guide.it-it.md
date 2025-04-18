@@ -1,7 +1,7 @@
 ---
 title: "Modificare i server DNS di un dominio OVHcloud"
 excerpt: "Scopri come modificare i server DNS di un dominio registrato in OVHcloud"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Obiettivo

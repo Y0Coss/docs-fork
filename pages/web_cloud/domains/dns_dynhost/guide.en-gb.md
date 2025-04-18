@@ -1,7 +1,7 @@
 ---
 title: "Configure dynamic DNS (DynHost/DynDNS) for your domain name"
 excerpt: "Find out how to configure a dynamic DNS record for your OVHcloud domain name"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Objective
@@ -87,7 +87,7 @@ Click on the tabs below to view each of the **6** steps.
 >>
 >> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Step 3** 
 >>
@@ -144,7 +144,7 @@ Once you are ready to create the DynHost record, click on the tabs below to view
 >>
 >> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Step 3** 
 >>
@@ -223,7 +223,7 @@ You can check if the destination IP address has been updated. To do this, click 
 >>
 >> Click the `DNS zones`{.action} menu, then choose the domain name concerned.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Step 3** 
 >>

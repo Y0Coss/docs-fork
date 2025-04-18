@@ -1,7 +1,7 @@
 ---
 title: 'Transfer domeny do OVHcloud'
 excerpt: "Dowiedz się, jak wykonać transfer domeny do OVHcloud"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

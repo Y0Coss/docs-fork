@@ -1,7 +1,7 @@
 ---
 title: "Que faire en cas d'erreur « Votre connexion n'est pas privée » ?"
 excerpt: "Réagir en cas de message d'erreur lié à la sécurité de votre site"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Objectif <a name="objectif"></a>
@@ -90,10 +90,7 @@ Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire 
 
 > [!primary]
 >
-> Pour retrouver l'ensemble des e-mails envoyés par nos services, cliquez en haut à droite de votre [espace client OVHcloud](/links/manager), puis sur `E-mails de service`{.action}) :
->
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
->
+> Pour retrouver l'ensemble des e-mails envoyés par nos services, cliquez en haut à droite de votre [espace client OVHcloud](/links/manager), puis sur `Mes communications`{.action}.
 
 ## Aller plus loin <a name="go-further"></a>
 

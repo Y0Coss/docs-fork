@@ -1,7 +1,7 @@
 ---
 title: "Dominio - Come cambiare il titolare?"
 excerpt: "Questa guida ti mostra come modificare il proprietario di un dominio e aggiornare le informazioni associate a quest’ultimo"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Obiettivo

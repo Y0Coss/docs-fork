@@ -1,7 +1,7 @@
 ---
 title: "Como eliminar uma zona DNS OVHcloud?"
 excerpt: "Saiba como eliminar uma zona DNS para o seu domínio através da Área de Cliente OVHcloud"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Objetivo
@@ -66,7 +66,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 >>>
 >> Clique no menu `Zonas DNS`{.action} e escolha o domínio em causa.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 3**
 >> 

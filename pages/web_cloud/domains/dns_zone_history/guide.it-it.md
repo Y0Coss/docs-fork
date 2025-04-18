@@ -1,7 +1,7 @@
 ---
 title: "Gestire la cronologia di una zona DNS"
 excerpt: "Questa guide ti mostra come consultare, confrontare, scaricare e ripristinare i tuoi backup della zona DNS"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Obiettivo
@@ -41,7 +41,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 >> Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Step 3**
 >>

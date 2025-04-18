@@ -1,7 +1,7 @@
 ---
 title: 'Bearbeiten der OVHcloud DNS-Zone'
 excerpt: 'Erfahren Sie hier, wie Sie eine DNS-Zone über Ihr Kundencenter bearbeiten'
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 <style>
@@ -65,7 +65,7 @@ Um auf die Verwaltung der OVHcloud DNS-Zone zugreifen, klicken Sie jeweils auf d
 >>
 >> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Schritt 3**
 >>
@@ -109,7 +109,7 @@ Um auf die Verwaltung der OVHcloud DNS-Zonim Textmodus zugreifen, klicken Sie je
 >>
 >> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Schritt 3**
 >>
@@ -145,7 +145,7 @@ Um einen neuen DNS-Eintrag hinzuzufügen, klicken Sie jeweils auf die Tabs, um d
 >>
 >> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Schritt 3**
 >>
@@ -179,7 +179,7 @@ Um einen DNS-Eintrag zu bearbeiten, klicken Sie jeweils auf die Tabs, um die **3
 >>
 >> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Schritt 3**
 >>
@@ -207,7 +207,7 @@ Um einen DNS-Eintrag zu löschen, klicken Sie jeweils auf die Tabs, um die **3**
 >>
 >> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Schritt 3**
 >>
@@ -244,7 +244,7 @@ Um Ihre DNS-Zone zurückzusetzen, klicken Sie jeweils auf die Tabs, um die **5**
 >>
 >> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Schritt 3**
 >>
@@ -301,7 +301,7 @@ Klicken Sie jeweils auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 >> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Schritt 3**
 >>

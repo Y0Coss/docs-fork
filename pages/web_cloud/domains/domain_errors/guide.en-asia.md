@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting a domain name error
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: 'Editar una zona DNS de OVHcloud'
 excerpt: 'Descubra cómo editar una zona DNS desde el área de cliente de OVHcloud'
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 <style>
@@ -65,7 +65,7 @@ Para acceder a la gestión de una zona DNS de OVHcloud, haga clic en las fichas 
 >>
 >> Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
@@ -109,7 +109,7 @@ Para modificar una zona DNS de OVHcloud en modo de texto, haga clic en las ficha
 >>
 >> Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
@@ -145,7 +145,7 @@ Para agregar un nuevo registro DNS, haga clic en las fichas siguientes para ver 
 >>
 >> Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
@@ -179,7 +179,7 @@ Para editar un registro DNS, haga clic en las fichas siguientes para ver cada un
 >>
 >> Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
@@ -207,7 +207,7 @@ Para eliminar un registro DNS, haga clic en las fichas siguientes para ver cada 
 >>
 >> Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
@@ -244,7 +244,7 @@ Para restaurar la zona DNS, haga clic en las fichas siguientes para ver cada una
 >>
 >> Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 3**
 >>
@@ -299,7 +299,7 @@ Si quiere reducir este plazo en las próximas ediciones de la zona DNS de OVHclo
 >>
 >> Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etapa 3**
 >>

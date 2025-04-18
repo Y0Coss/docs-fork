@@ -1,7 +1,7 @@
 ---
 title: "Rediriger un nom de domaine géré par OVHcloud"
 excerpt: "Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Objectif

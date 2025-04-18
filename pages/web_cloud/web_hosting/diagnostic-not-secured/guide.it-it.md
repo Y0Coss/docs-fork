@@ -1,7 +1,7 @@
 ---
 title: "Cosa fare in caso di errore « La connessione non è privata »?"
 excerpt: "Reagire in caso di messaggio di errore relativo alla sicurezza del tuo sito"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Obiettivo <a name="objective"></a>
@@ -90,10 +90,7 @@ Se hai ordinato uno dei **certificati SSL a pagamento** del nostro partner [SECT
 
 >[!primary]
 >
-> Per visualizzare tutte le email inviate dai nostri servizi, clicca in alto a destra del tuo [Spazio Cliente OVHcloud](/links/manager) e poi su `Email di servizio`{.action}:
->
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
->
+> Per visualizzare tutte le email inviate dai nostri servizi, clicca in alto a destra del tuo [Spazio Cliente OVHcloud](/links/manager) e poi su `Le mie comunicazioni`{.action}.
 
 ## Per saperne di più <a name="go-further"></a>
 

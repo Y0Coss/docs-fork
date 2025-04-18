@@ -1,7 +1,7 @@
 ---
 title: "Co zrobić w przypadku błędu « Połączenie nie jest prywatne »?"
 excerpt: "Reagowanie w przypadku wiadomości z błędem związanej z bezpieczeństwem strony"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Wprowadzenie  <a name="objective"></a>
@@ -90,10 +90,7 @@ Jeśli zamówiłeś jeden z płatnych **certyfikatów SSL** od naszego partnera 
 
 > [!primary]
 >
-> Aby odnaleźć wszystkie e-maile wysłane przez nasze usługi, kliknij w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager), następnie kliknij `E-maile od działu wsparcia`{.action}):
->
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
->
+> Aby odnaleźć wszystkie e-maile wysłane przez nasze usługi, kliknij w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager), następnie kliknij `Połączenia`{.action}.
 
 ## Sprawdź również <a name="go-further"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "O que fazer em caso de erro « Sua conexão não é particular »?"
 excerpt: "Reagir em caso de mensagem de erro relacionado com a segurança do seu site"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Objetivo <a name="objective"></a>
@@ -91,10 +91,7 @@ Se encomendou um dos **certificados SSL pagos** do nosso parceiro [SECTIGO](http
 
 > [!primary]
 >
-> Para encontrar o conjunto dos e-mails enviados pelos nossos serviços, clique no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager), depois em `E-mails de serviço`{.action}:
->
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/service_emails.png){.thumbnail}
->
+> Para encontrar o conjunto dos e-mails enviados pelos nossos serviços, clique no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager), depois em `As minhas comunicações`{.action}.
 
 ## Quer saber mais? <a name="go-further"></a>
 

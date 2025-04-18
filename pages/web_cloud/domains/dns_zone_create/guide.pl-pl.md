@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie strefy DNS OVHcloud dla domeny'
 excerpt: 'Dowiedz się, jak utworzyć strefę DNS w OVHcloud dla Twojej domeny w Panelu klienta'
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Wprowadzenie

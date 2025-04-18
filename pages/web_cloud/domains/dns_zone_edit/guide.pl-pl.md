@@ -1,7 +1,7 @@
 ---
 title: 'Modyfikacja strefy DNS'
 excerpt: 'Dowiedz się, jak edytować strefę DNS w Panelu klienta'
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 <style>
@@ -65,7 +65,7 @@ Aby uzyskać dostęp do interfejsu zarządzania strefą DNS OVHcloud, kliknij po
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etap 3**
 >> 
@@ -109,7 +109,7 @@ Aby zmienić strefę DNS OVHcloud w trybie tekstowym, kliknij poniższe zakładk
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etap 3**
 >> 
@@ -145,7 +145,7 @@ Aby dodać nowy rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejn
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etap 3**
 >> 
@@ -179,7 +179,7 @@ Aby zmodyfikować rekord DNS, kliknij poniższe zakładki, aby wyświetlić kole
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etap 3**
 >> 
@@ -207,7 +207,7 @@ Aby usunąć rekord DNS, kliknij poniższe zakładki, aby wyświetlić kolejno p
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etap 3**
 >> 
@@ -244,7 +244,7 @@ Aby zresetować strefę DNS, kliknij poniższe zakładki, aby wyświetlić kolej
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etap 3**
 >> 
@@ -299,7 +299,7 @@ Jeśli chcesz skrócić czas propagacji w przypadku kolejnych modyfikacji strefy
 >>
 >> Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Etap 3**
 >> 

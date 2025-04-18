@@ -1,7 +1,7 @@
 ---
 title: "Reencaminhar um domínio gerido pela OVHcloud"
 excerpt: "Descubra os diferentes tipos de reencaminhamento e como criar um reencaminhamento para um domínio gerido pela OVHcloud"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Objetivo

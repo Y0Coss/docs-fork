@@ -1,7 +1,7 @@
 ---
 title: "Den Versionsverlauf einer DNS-Zone verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Backups der DNS-Zone mithilfe der History-Funktion einsehen, vergleichen, herunterladen und wiederherstellen können"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Ziel
@@ -41,7 +41,7 @@ Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 >>
 >> Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
+>> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
 > **Schritt 3**
 >>

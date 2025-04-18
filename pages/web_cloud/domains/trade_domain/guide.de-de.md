@@ -1,7 +1,7 @@
 ---
 title: "Domainnamen - Inhaber eines Domainnamens ändern"
 excerpt: "Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens ändern oder die zugehörigen Informationen aktualisieren"
-updated: 2025-03-17
+updated: 2025-04-22
 ---
 
 ## Ziel
