@@ -13,9 +13,9 @@ updated: 2025-04-15
 
 ## Introduction
 
-**[LangChain](https://github.com/langchain-ai/langchain)** is a powerful open-source framework that simplifies working with LLMs in both Python and JavaScript. Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**, it becomes easy to create advanced, production-ready assistants.
+In this guide, we'll show you how to build a **Retrieval Augmented Generation (RAG)** chatbot that enhances answers by incorporating your **own custom documents** into the LLM’s context. 
 
-In this guide, we'll show you how to build a **Retrieval Augmented Generation (RAG)** chatbot that enhances answers by incorporating your **own custom documents** into the LLM’s context.
+To do this, we will use **[LangChain](https://github.com/langchain-ai/langchain)**, a powerful open-source framework that simplifies working with LLMs in both Python and JavaScript. Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
 
 ## Definition
 
@@ -183,7 +183,7 @@ You've now created a Retrieval-Augmented Generation (RAG) chatbot using your own
 
 ## Going further
 
-If you want to go further and deploy your web app in the cloud, making your interface accessible to everyone, refer to the following articles and tutorials:
+If you want to go further and deploy your chatbot in the cloud, making your interface accessible to everyone, refer to the following articles and tutorials:
 
 - [AI Deploy – Tutorial – Build & use a custom Docker image](/pages/public_cloud/ai_machine_learning/deploy_tuto_12_build_custom_image)
 - [AI Deploy – Tutorial – Deploy a Gradio app for sketch recognition](/pages/public_cloud/ai_machine_learning/deploy_tuto_05_gradio_sketch_recognition)

@@ -1090,6 +1090,7 @@
                 + [AI Endpoints - Enable conversational memory in your chatbot using LangChain](public_cloud/ai_machine_learning/endpoints_tuto_09_chatbot_memory_langchain)
                 + [AI Endpoints - Create a Memory Chatbot with LangChain4j](public_cloud/ai_machine_learning/endpoints_tuto_10_memory_chatbot_langchain4j)
                 + [AI Endpoints - Build a RAG Chatbot with LangChain](public_cloud/ai_machine_learning/endpoints_tuto_11_rag_chatbot_langchain)
+                + [AI Endpoints - Build a RAG Chatbot with LangChain4j](public_cloud/ai_machine_learning/endpoints_tuto_12_rag_chatbot_langchain4j)
         + [AI Partners Ecosystem](products/public-cloud-ai-and-machine-learning-ai-ecosystem)
             + [AI Partners - Guides](public-cloud-ai-and-machine-learning-ai-ecosystem-guides)
                 + [AI Partners Ecosystem - Lettria - Models features, capabilities and billing](public_cloud/ai_machine_learning/ecosystem_01_lettria_billing_features_capabilities)
