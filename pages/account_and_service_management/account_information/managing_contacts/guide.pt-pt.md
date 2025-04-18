@@ -47,7 +47,7 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 
 Aceda à sua [Área de Cliente OVHcloud](/links/manager), clique no seu nome no canto superior direito e, a seguir, em `Contactos`{.action}.
 
-![Gestão de contactos](/pages/assets/screens/control_panel/product-selection/right-column/contact-management.png){.thumbnail}
+![Gestão de contactos](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
 Irá visualizar uma tabela. A tabela inclui a lista de serviços associados ao seu ID de cliente, e a lista dos contactos responsáveis pela gestão dos vários aspetos do serviço.
 

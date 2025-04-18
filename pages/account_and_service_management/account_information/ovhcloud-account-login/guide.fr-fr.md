@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l'espace client OVHcloud"
 excerpt: 'Découvrez comment vous authentifier sur votre compte OVHcloud'
-updated: 2024-02-27
+updated: 2025-04-22
 ---
 
 ## Objectif
@@ -52,7 +52,7 @@ Si vous ne retrouvez pas votre identifiant, sachez que vous pouvez vous connecte
 Une fois connecté, vous pourrez prendre note de votre identifiant qui est affiché dans votre espace client, en cliquant sur votre nom en haut à droite.
 <br>Il apparaît sous votre adresse e-mail principale.
 
-![identifiant client](images/customer-id-manager-fr.png){.thumbnail}
+![identifiant client](/pages/assets/screens/control_panel/product-selection/right-menu/id.png){.thumbnail}
 
 ### J'ai perdu mon mot de passe
 

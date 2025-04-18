@@ -48,7 +48,7 @@ L'identificativo cliente è un codice personale che viene inviato via email al m
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome in alto a destra e poi su `I miei contatti`{.action}.
 
-![Gestione dei contatti](/pages/assets/screens/control_panel/product-selection/right-column/contact-management.png){.thumbnail}
+![Gestione dei contatti](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
 Visualizzi una tabella con i diversi servizi per cui il tuo identificativo cliente è stato indicato come contatto.
 

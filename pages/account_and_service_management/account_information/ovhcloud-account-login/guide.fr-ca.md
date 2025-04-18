@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l'espace client OVHcloud"
 excerpt: 'Découvrez comment vous authentifier sur votre compte OVHcloud'
-updated: 2024-02-27
+updated: 2025-04-22
 ---
 
 ## Objectif

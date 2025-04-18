@@ -1,7 +1,7 @@
 ---
 title: Conectarse al área de cliente de OVHcloud
 excerpt: 'Cómo autenticarse en su cuenta de OVHcloud'
-updated: 2024-02-27
+updated: 2025-04-22
 ---
 
 ## Objetivo

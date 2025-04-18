@@ -48,7 +48,7 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
 
-![Contact management](/pages/assets/screens/control_panel/product-selection/right-column/contact-management.png){.thumbnail}
+![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
 Le tableau qui apparaît permet ainsi de visionner les différents services pour lesquels votre identifiant client est renseigné en tant que contact.
 

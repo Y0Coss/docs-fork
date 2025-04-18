@@ -48,7 +48,7 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij Twoją nazwę użytkownika w prawym górnym rogu, a następnie kliknij `Moje kontakty`{.action}.
 
-![Contact management](/pages/assets/screens/control_panel/product-selection/right-column/contact-management.png){.thumbnail}
+![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
 Pojawi się tabela, która umożliwia wyświetlenie różnych usług, dla których Twój identyfikator klienta jest podany jako kontakt.
 

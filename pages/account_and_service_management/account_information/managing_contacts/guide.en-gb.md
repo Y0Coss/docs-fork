@@ -46,7 +46,7 @@ The NIC handle is a personal username that you receive via email when you create
 
 Log in to the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then `My contacts`{.action}.
 
-![Contact management](/pages/assets/screens/control_panel/product-selection/right-column/contact-management.png){.thumbnail}
+![Contact management](/pages/assets/screens/control_panel/product-selection/right-menu/my-contacts.png){.thumbnail}
 
 The table that appears will show all of the services your NIC handle is registered with as a contact.
 
