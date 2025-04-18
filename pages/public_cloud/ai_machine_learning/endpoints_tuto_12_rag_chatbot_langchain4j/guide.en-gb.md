@@ -1,6 +1,6 @@
 ---
 title: AI Endpoints - Build a RAG Chatbot with LangChain4j
-excerpt: Learn how to build a RAG (Retrieval Augmented Generation) chatbot using Python, LangChain4j, and AI Endpoints
+excerpt: Learn how to build a RAG (Retrieval Augmented Generation) chatbot using Python, LangChain4j and AI Endpoints
 updated: 2025-04-18
 ---
 
@@ -59,9 +59,9 @@ export DATABASE_USER=your-pgvector-user
 export DATABASE_PASSWORD=your-pgvector-password
 ```
 
-However, this step is optional. indeed, if you are just testing or don’t have a PostgreSQL database available, LangChain4j also supports an in-memory embedding store. This makes it easy to get started without setting up any external infrastructure.
+However, this step is optional. Indeed, if you are just testing or don’t have a PostgreSQL database available, LangChain4j also supports an in-memory embedding store. This makes it easy to get started without setting up any external infrastructure.
 
-To use the in-memory store, you will just need to replace the embedding store configuration in the code we are going to write later: 
+To use the in-memory store, you will just need to replace the embedding store configuration in the code we are going to write later:
 
 ```java
 EmbeddingStore<TextSegment> embeddingStore = new InMemoryEmbeddingStore<>();
@@ -171,15 +171,15 @@ public class RAGStreamingChatbot {
 }
 ```
 
-Note that the chatbot will use the streaming mode, as explain in the [Memory Chatbot with LangChain4j](/pages/public_cloud/ai_machine_learning/endpoints_tuto_10_memory_chatbot_langchain4j) tutorial.
+Note that the chatbot will use the streaming mode, as explained in the [Memory Chatbot with LangChain4j](/pages/public_cloud/ai_machine_learning/endpoints_tuto_10_memory_chatbot_langchain4j) tutorial.
 
 ### Test the chatbot without knowledge base
 
-As you can see below, the LLM gives an answer, but not the expected one 😅.
+As you can see below, the LLM gives an answer, but not the expected one.
 
 ![chatbot-without-rag](images/without-rag.png){.thumbnail}
 
-This is not a surprise, since the model was trained before OVHcloud created AI Endpoints. The model does not this platform.
+This is not a surprise, since the model was trained before OVHcloud created AI Endpoints. The model does not know this platform.
 
 That is why we are going to create a knowledge base, to improve the LLM's answers.
 
@@ -193,7 +193,7 @@ You can find an example file in our [public-cloud-examples GitHub repository](ht
 
 To do this, we are going to create chunks from our document. A chunk is a part of the document that will be transformed in vector.
 
-It’s then used to perform a similarity search. This is a delicate phase, and in this example, the chunking is based on the number of characters. In a more complex use case, you will create chunk based on the meaning of the text.
+It’s then used to perform a similarity search. This is a delicate phase, and in this example, the chunking is based on the number of characters. In a more complex use case, you will create chunks based on the meaning of the text.
 
 ```java
 public class RAGStreamingChatbot {
@@ -217,7 +217,7 @@ public class RAGStreamingChatbot {
 
 Next, you transform the text in vectors and store them.
 
-If you do not have a PostgreSQL manage instance, you can use the in-memory store as mentioned earlier (only for test purpose).
+If you do not have a PostgreSQL managed instance, you can use the in-memory store as mentioned earlier (only for test purposes).
 
 ```java
 public class RAGStreamingChatbot {
@@ -393,7 +393,7 @@ Thanks to your knowledge base, our new chatbot will answer with relevant informa
 
 ## Conclusion
 
-You've now created a Retrieval-Augmented Generation (RAG) chatbot using your own documents and the OVHcloud AI Endpoints platform. LangChain’s integration with Chroma and embedding models makes RAG implementation straightforward—even production-ready.
+You've now created a Retrieval-Augmented Generation (RAG) chatbot using your own documents and the OVHcloud AI Endpoints platform. LangChain’s integration with Chroma and embedding models makes RAG implementation straightforward and even production-ready.
 
 ## Going further
 
