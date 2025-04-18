@@ -31,7 +31,7 @@ $ export OVH_CONSUMER_KEY=Your_token(or_CK)
 $ export TF_VAR_OVH_PUBLIC_CLOUD_PROJECT_ID=Your_public_cloud_project_id
 ```
 
-**If you do not have your AWS CLI** configured, you should set dummy values with the following. This is due to a limitation in Terraform dependency graph for providers initialization (see this long lasting terraform [issue)](https://github.com/hashicorp/terraform/issues/2430)):
+**If you do not have your AWS CLI** configured, you should set dummy values with the following. This is due to a limitation in Terraform dependency graph for providers initialization (see this long lasting terraform [issue)](https://github.com/hashicorp/terraform/issues/2430):
 
 ```bash
 $ export AWS_ACCESS_KEY_ID="no_need_to_define_an_access_key"  
@@ -67,7 +67,7 @@ $ terraform plan
 Now let's have a look at the content of the `main.tf` file:
 
 - The *variable* block defines the region and s3 endpoint that are used to create the bucket. You can update it according to your needs : check this [page](/pages/storage_and_backup/object_storage/s3_location) to know what region / endpoints are available.
-- The *Providers* block defines 2 providers : ovh and Hashicorp AWS one. The first one is necessary to create the user whose identity / credentials will be used for the latest.
+- The *Providers* block defines 2 providers: ovh and Hashicorp AWS one. The first one is necessary to create the user whose identity / credentials will be used for the latest.
 - The *User / Credential* block defines the user & credential that are visible in the Settings > Users & Roles tab. They are needed to configure the Hashicorp AWS provider.
 - The Bucket block defines the bucket itself.
 - The Output defines the access & secret key that may be useful for CLI usage.
@@ -90,7 +90,7 @@ $ terraform destroy
 
 > [!primary]
 >
-> - This script does not follow Terraform best practices to split the project in multiple files e.g. **`provider.tf`, `main.tf`, `variables.tf`, `outputs.tf`**, ... This has been done intentionnaly to avoid switching into multiples files for what is a really simple example.
+> - This script does not follow Terraform best practices to split the project in multiple files e.g. **`provider.tf`, `main.tf`, `variables.tf`, `outputs.tf`**, ... This has been done intentionally to avoid switching into multiple files for what is a really simple example.
 > - The secret that is created by this script is stored in the [local](https://developer.hashicorp.com/terraform/language/settings/backends/local) state back-end. If you use this back-end in production, make sure to consider the state file as a secret.
 
 ### Automating Object Storage policies with Terraform
@@ -131,7 +131,7 @@ $ terraform apply
 
 Now you can go in the Console and check the "Object Storage" tab. You will see the bucket and the file.
 
-You can also check the access right by using the AWS CLI with the 2 users that have the read / write & read-only access
+You can also check the access right by using the AWS CLI with the 2 users that have the read / write & read-only access.
 
 #### Destroy
 
