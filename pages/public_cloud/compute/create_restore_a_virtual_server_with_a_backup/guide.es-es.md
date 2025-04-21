@@ -1,7 +1,7 @@
 ---
 title: 'Crear o restaurar un servidor virtual a partir de un snapshot'
 excerpt: 'Crear o restaurar un servidor virtual a partir de un snapshot'
-updated: 2021-03-19
+updated: xxxx-xx-xx
 ---
 
 > [!primary]
@@ -27,7 +27,7 @@ Quizá necesite, en algún momento, restaurar su instancia utilizando un snapsho
 
 ### Crear una instancia a partir de un snapshot
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Public Cloud`{.action}. Seleccione el proyecto de Public Cloud correspondiente y haga clic en `Instance backup`{.action} en la sección `Storage`.
+Conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Public Cloud`{.action}. Seleccione el proyecto de Public Cloud correspondiente y haga clic en `Instance backup`{.action} en la sección `Compute`.
 
 ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 

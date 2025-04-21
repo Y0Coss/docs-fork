@@ -1,7 +1,7 @@
 ---
 title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
 excerpt: Erfahren Sie hier, wie Sie eine neue Disk erstellen und zu Ihrer Public Cloud Instanz hinzufügen
-updated: 2024-03-21
+updated: xxxx-xx-xx
 ---
 
 <style>
@@ -83,7 +83,7 @@ High-Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 
 > [!tabs]
 > **Über das OVHcloud Kundencenter**
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Öffnen Sie `Block Storage`{.action} im linken Menü.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Öffnen Sie `Block Storage`{.action} im linken Menü unter **Storage and Backup**.
 >>
 >> Klicken Sie in diesem Bereich auf den Button `Volume erstellen`{.action}.
 >>
@@ -532,7 +532,7 @@ Wählen Sie das verwendete OS aus, um **das Volume** zu entfernen:
 >>
 >> Speichern Sie die Änderungen und verlassen Sie den Editor.
 >>
->> Gehen Sie in den Bereich `Public Cloud`{.action} in Ihrem OVHcloud Kundencenter und klicken Sie auf `Block Storage`{.action} im linken Menü unter **Storage**.
+>> Gehen Sie in den Bereich `Public Cloud`{.action} in Ihrem OVHcloud Kundencenter und klicken Sie auf  im linken Menü unter **Storage and Backup**.
 >>
 >> Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
 >>
@@ -569,7 +569,7 @@ Zum Schluss trennen wir das Volume von der Instanz:
 
 > [!tabs]
 > **Über das OVHcloud Kundencenter**
->> Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im Menü links unter **Storage** auf `Block Storage`{.action}.
+>> Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im Menü links unter **Storage and Backup** auf `Block Storage`{.action}.
 >>
 >> Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
 >>

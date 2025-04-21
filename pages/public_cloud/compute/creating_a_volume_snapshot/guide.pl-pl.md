@@ -1,7 +1,7 @@
 ---
 title: Snapshot wolumenu instancji Public Cloud
 excerpt: Dowiedz się, jak utworzyć snapshot dodatkowego dysku Public Cloud
-updated: 2024-12-03
+updated: xxxx-xx-xx
 ---
 
 ## Wprowadzenie
@@ -27,7 +27,7 @@ Tworzenie snapshota dodatkowego wolumenu zwykle odpowiada dwóm celom:
 
 ## W praktyce
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Block Storage`{.action} na pasku nawigacji po lewej stronie w **Storage**.
+Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Block Storage`{.action} na pasku nawigacji po lewej stronie w **Storage i Backup**.
 
 ![Snapshoty wolumenów](images/volume_snapshot01.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Ponieważ snapshot wolumenu jest klonem całego dysku, będzie miał maksymalny 
 
 ![Snapshoty wolumenów](images/volume_snapshot03.png){.thumbnail}
 
-Otwórz sekcję `Volume Snapshot`{.action} na pasku nawigacyjnym po lewej stronie. Po utworzeniu snapshota zostanie on dodany do tej tabeli.
+Otwórz sekcję `Snapshoty wolumenów`{.action} na pasku nawigacyjnym po lewej stronie. Po utworzeniu snapshota zostanie on dodany do tej tabeli.
 
 Kliknij przycisk `...`{.action}, aby usunąć snapshot lub Utwórz wolumen z odpowiedniego snapshota. Więcej informacji znajdziesz w [tym przewodniku](/pages/public_cloud/compute/create-volume-from-snapshot).
 

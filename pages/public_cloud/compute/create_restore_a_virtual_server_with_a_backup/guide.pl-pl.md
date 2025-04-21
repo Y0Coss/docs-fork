@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie / przywracanie serwera wirtualnego na podstawie kopii zapasowej'
 excerpt: 'Dowiedz się, jak utworzyć lub przywrócić kopię zapasową instancji'
-updated: 2021-03-19
+updated: xxxx-xx-xx
 ---
 
 > [!primary]
@@ -27,7 +27,7 @@ Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w prz
 
 ### Tworzenie instancji na podstawie kopii zapasowej
 
-Zaloguj się do swojego [panelu klient  OVHcloud](/links/manager){.external} i kliknij opcję`Public Cloud`{.action}. Wybierz odpowiedni projekt Public Cloud i kliknij `Instance backup`{.action} w sekcji `Storage`.
+Zaloguj się do swojego [panelu klient  OVHcloud](/links/manager){.external} i kliknij opcję`Public Cloud`{.action}. Wybierz odpowiedni projekt Public Cloud i kliknij `Instance backup`{.action} w sekcji `Compute`.
 
 ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 

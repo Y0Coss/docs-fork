@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder une instance'
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud'
-updated: 2024-07-03
+updated: xxxx-xx-xx
 ---
 
 ## Objectif
@@ -23,7 +23,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 > Cette option est uniquement disponible via un **Cold Snapshot** pour les instances Metal. L'instance Metal passera en mode rescue et, une fois la sauvegarde effectuée, l'instance sera redémarrée en mode normal.
 >
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
+Connectez-vous à [l’espace client d’OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
 
 Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer un backup`{.action}.
 
@@ -33,11 +33,11 @@ Renseignez un nom pour la sauvegarde sur la page suivante. Prenez connaissance d
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, dans la section `Instance Backup`{.action} sous la rubrique `Storage`{.action} dans le menu de gauche, le statut `Backup en cours` sera affiché pendant le processus.
+Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, dans la section `Instance Backup`{.action} sous la rubrique `Compute`{.action} dans le menu de gauche, le statut `Backup en cours` sera affiché pendant le processus.
 
 ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
 
-Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Instance Backup`{.action} sous la rubrique `Storage`{.action} dans le menu de gauche.
+Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Instance Backup`{.action} sous la rubrique `Compute`{.action} dans le menu de gauche.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
@@ -78,11 +78,11 @@ Entrez un nom pour la planification de la sauvegarde automatique. Prenez connais
 
 ### Gestion des sauvegardes et des plannings
 
-Les planifications peuvent être créées et supprimées dans la section `Workflow Management`{.action} qui se trouve sous la rubrique `Storage`{.action} dans le menu de gauche.
+Les planifications peuvent être créées et supprimées dans la section `Workflow Management`{.action} qui se trouve sous la rubrique `Compute`{.action} dans le menu de gauche.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Les sauvegardes de vos instances sont gérées dans la section `Instance Backup`{.action} qui se trouve sous la rubrique `Storage`{.action} dans le menu de gauche.
+Les sauvegardes de vos instances sont gérées dans la section `Instance Backup`{.action} qui se trouve sous la rubrique `Compute`{.action} dans le menu de gauche.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
 
