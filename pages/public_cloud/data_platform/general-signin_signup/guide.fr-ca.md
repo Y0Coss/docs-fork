@@ -20,32 +20,41 @@ You have different options: sign up from the website or from the OVHcloud Contro
 ### Option 1: Sign-up from the OVHcloud Website Data Platform Product Page
 
 1. Go to the [Data Platform website](/links/public-cloud/data-platform).
+
     ![Data Platform website](images/signup-1.png){.thumbnail}
+
 2. Click the `Get started for free`{.action} button.
 3. If you are not logged in, you will be redirected to the OVHcloud account-creation/login-page.
+
     ![Login page](images/signup-2.png){.thumbnail}
 
 #### If you do not have any active Public Cloud project:
 
 1. Accept the Public Cloud service Terms and Conditions.
+
     ![Public Cloud terms and conditions](images/signup-3.png){.thumbnail}
 
 2. Wait for your project to be created.
+
     ![Wait](images/signup-4.png){.thumbnail}
 
 3. You will then be asked to add a payment method - **You will benefit from a €200 credit to try the service for free during 30 days**
+
     ![Payment method](images/signup-5.png){.thumbnail}
 
 4. You are then invited to your Data Platform organization.
+
     ![Data Platform landing page](images/signup-6.png){.thumbnail}
 
 
 #### If you have at least one active Public Cloud project:
 
 1. Select your Public Cloud project or create a new one.
+
     ![Pic Public Cloud project](images/signup-7.png){.thumbnail}
 
 2. You are then invited to your Data Platform organization
+
     ![Data Platform landing page](images/signup-6.png){.thumbnail}
 
 > [!primary]

@@ -16,7 +16,7 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - A [vRack](/links/network/vrack) service activated in your account
 - Access to the [OVHcloud Control Panel](/links/manager)
-- Access to the [Horizon interface](/pages/public_cloud/compute/introducing_horizon)
+- Access to the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ### Content overview
 
@@ -149,9 +149,11 @@ Once the subnet has been created, your private network will appear as follows:
 
 ### Attach a network interface to the instance
 
-This action should only be done via the Horizon interface.
-
-If you have not yet created an instance, you must create it first, then attach the network later. Do not select the private network when creating the instance.
+> [!warning]
+> This action should only be done via the Horizon interface.
+> 
+> If you have not yet created an instance, you must create it first, then attach the network later. Do not attach the private network during the creation of the instance.
+>
 
 We recommend you to consult the following guides if you are creating an instance for the first time: [How to create a Public Cloud instance and connect to it](/pages/public_cloud/compute/public-cloud-first-steps/) or [Creating an Instance via the Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon/).
 
@@ -219,22 +221,43 @@ sudo apt-get install iproute2
 
 Next, we need to create a new IP route for the vRack. We'll be adding a new traffic rule by amending the file, as shown below:
 
-```sh
-sudo nano /etc/iproute2/rt_tables # Für Fedora: sudo nano /usr/share/iproute2/rt_tables
-
-#
-# reserved values
-#
-255	local
-254	main
-253	default
-0	unspec
-#
-# local
-#
-#1	inr.ruhep
-1 vrack
-```
+> [!tabs]
+> **Linux**
+>>
+>> ```sh
+>> sudo nano /etc/iproute2/rt_tables
+>> #
+>> # reserved values
+>> #
+>> 255	local
+>> 254	main
+>> 253	default
+>> 0	unspec
+>> #
+>> # local
+>> #
+>> #1	inr.ruhep
+>> 1 vrack
+>> ```
+>>
+> **Fedora**
+>>
+>> ```sh
+>> sudo nano /usr/share/iproute2/rt_tables
+>> #
+>> # reserved values
+>> #
+>> 255	local
+>> 254	main
+>> 253	default
+>> 0	unspec
+>> #
+>> # local
+>> #
+>> #1	inr.ruhep
+>> 1 vrack
+>> ```
+>>
 
 <a name="nonpersistent"></a>
 

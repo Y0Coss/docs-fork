@@ -51,7 +51,7 @@ Depending on which OVHcloud [Web Hosting plan](/links/web/hosting) you have, the
 
 ![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
 
-> [primary]
+> [!primary]
 >
 > Your new password must respect the following **password policy**:
 >
