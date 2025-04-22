@@ -1,7 +1,7 @@
 ---
 title: Cómo dar de baja sus servicios de OVHcloud
 excerpt: Cómo interrumpir las suscripciones a OVHcloud desde el área de cliente
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Objetivo

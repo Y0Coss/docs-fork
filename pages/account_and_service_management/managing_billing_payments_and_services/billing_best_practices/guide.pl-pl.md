@@ -1,7 +1,7 @@
 ---
 title: Dobre praktyki zarządzania usługami i kontem OVHcloud
 excerpt: Znajdziesz tutaj elementy niezbędne do prawidłowego zarządzania fakturami, zamówieniami, sposobami płatności i kontem klienta.
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Wprowadzenie

@@ -1,7 +1,7 @@
 ---
 title: Gestionar las formas de pago
 excerpt: Cómo añadir y gestionar las formas de pago en el área de cliente de OVHcloud
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Objetivo

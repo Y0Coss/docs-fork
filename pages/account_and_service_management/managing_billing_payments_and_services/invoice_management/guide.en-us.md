@@ -1,7 +1,7 @@
 ---
 title: Managing OVHcloud bills
 excerpt: Find out how to manage your bills and the payments associated with them
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Objective

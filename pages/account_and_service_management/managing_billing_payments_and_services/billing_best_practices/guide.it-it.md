@@ -1,7 +1,7 @@
 ---
 title: Best practice per la gestione dei tuoi servizi e del tuo account OVHcloud
 excerpt: Trovi qui gli elementi indispensabili per una corretta gestione delle tue fatture, ordini, modalità di pagamento e account cliente
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Obiettivo

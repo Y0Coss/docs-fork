@@ -1,7 +1,7 @@
 ---
 title: Preguntas frecuentes sobre la facturación y el pago
 excerpt: Encuentre las preguntas más frecuentes sobre la facturación y el pago
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Objetivo

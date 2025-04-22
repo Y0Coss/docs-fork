@@ -1,7 +1,7 @@
 ---
 title: How to cancel my OVHcloud services
 excerpt: Find out how to cancel your OVHcloud subscriptions via the OVHcloud Control Panel
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Objective

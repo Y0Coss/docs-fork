@@ -1,7 +1,7 @@
 ---
 title: Gestire le fatture OVHcloud
 excerpt: Come amministrare fatture e pagamenti dallo Spazio Cliente
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Obiettivo

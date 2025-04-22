@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre faturação e pagamento
 excerpt: Encontre as questões mais frequentes sobre faturação e pagamento
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Objetivo

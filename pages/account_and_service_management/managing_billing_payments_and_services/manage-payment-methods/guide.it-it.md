@@ -1,7 +1,7 @@
 ---
 title: Gestire i metodi di pagamento
 excerpt: Come gestire i tuoi metodi di pagamento nello Spazio Cliente OVHcloud
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Obiettivo
