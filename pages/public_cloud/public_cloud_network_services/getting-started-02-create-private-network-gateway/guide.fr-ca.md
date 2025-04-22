@@ -42,7 +42,7 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](/l
 >>
 >> Sélectionnez tout d'abord une localisation pour votre Gateway. Il est préférable de créer une Public Gateway dans la région dans laquelle vous avez l'intention de déployer vos instances privées.
 >> 
->> ![sélection de la région](images/select_region.png){.thumbnail}
+>> ![sélection de la région](images/select_region_ca.png){.thumbnail}
 >>
 >> |Dimension|Bande passante|Tarif|
 >> |---|---|---|
