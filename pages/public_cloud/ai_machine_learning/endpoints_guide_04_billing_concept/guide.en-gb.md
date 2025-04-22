@@ -31,7 +31,12 @@ By following this model lifecycle process, OVHcloud ensures that customers are w
 
 ## Billing principles
 
-Here is the model billing overview for AI Endpoints:
+Here is the model billing overview for AI Endpoints.
+
+> [!primary]
+>
+> In appreciation of your continued support and as a welcome gesture to new customers, **endpoint consumption between Avril 28th and May 12th will not be invoiced**. After this grace period, the pricing will be implemented and clearly outlined in the table below, which details the categories, models, and their respective pricing information:
+>
 
 | Category        | Model            | Price ($)  | Price (€)  | Unit Price |
 | -------------- | --------------- | ------ | ------ | ---------- |
