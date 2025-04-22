@@ -55,6 +55,8 @@ Le volume Classic est une solution de stockage fiable et économique, idéale po
 - Stockage de bases de données de petite à moyenne taille
 - Sauvegarde et archivage de données
 
+Dans les régions 3AZ, les volumes Classic sont des services régionaux qui utilisent un codage d’effacement distribué entre plusieurs zones de disponibilité. Cela garantit la disponibilité des données sans impact ni interruption en cas de défaillance d’une zone, à condition que les exigences de l’architecture résiliente avec attachement multiple soient respectées (cf. nouvelle documentation à venir sur les volumes Classic en 3AZ – SK-2020).
+
 ///
 
 /// details | **High-Speed – Jusqu’à 3000 IOPS**

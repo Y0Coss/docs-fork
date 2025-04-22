@@ -55,6 +55,8 @@ The Classic volume is a reliable, cost-effective storage solution, ideal for wor
 - Storage of small to medium-sized databases
 - Data backup and archiving
 
+In 3AZ regions, Classic Volumes are regional services that use distributed erasure coding across multiple Availability Zones. This ensures data remains available without impact or downtime in the event of an AZ failure, provided the multi-attached resilient architecture conditions are met (cf: NEW DOC REGARDING CLASSIC VOLUMES IN 3AZ SK-2020).
+
 ///
 
 /// details | **High-Speed – Up to 3000 IOPS**
