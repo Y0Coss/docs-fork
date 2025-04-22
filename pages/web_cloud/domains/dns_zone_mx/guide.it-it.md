@@ -1,7 +1,7 @@
 ---
 title: "Configurare un record MX per la gestione delle email"
 excerpt: "Come configurare un record MX su un dominio in OVHcloud"
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Obiettivo

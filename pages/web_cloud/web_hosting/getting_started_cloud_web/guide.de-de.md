@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit Cloud Web Hosting"
 excerpt: "Diese Anleitung erklärt, wie Sie richtig mit Ihrem Cloud Web Hosting starten"
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Ziel

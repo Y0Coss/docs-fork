@@ -1,7 +1,7 @@
 ---
 title: 'Modyfikacja strefy DNS'
 excerpt: 'Dowiedz się, jak edytować strefę DNS w Panelu klienta'
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 <style>

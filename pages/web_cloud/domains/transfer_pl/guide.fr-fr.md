@@ -2,7 +2,7 @@
 title: 'Transférer son nom de domaine en .pl vers OVHcloud'
 hidden: true
 excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine en .pl vers OVHcloud"
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Objectif

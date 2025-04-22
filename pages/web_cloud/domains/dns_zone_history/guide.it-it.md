@@ -1,7 +1,7 @@
 ---
 title: "Gestire la cronologia di una zona DNS"
 excerpt: "Questa guide ti mostra come consultare, confrontare, scaricare e ripristinare i tuoi backup della zona DNS"
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Obiettivo

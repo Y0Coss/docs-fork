@@ -1,7 +1,7 @@
 ---
 title: "Configure an MX record for email management"
 excerpt: "Find out how to add a MX record to your OVHcloud domain name’s configuration"
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Objective

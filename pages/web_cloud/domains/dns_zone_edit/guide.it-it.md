@@ -1,7 +1,7 @@
 ---
 title: 'Modificare una zona DNS di OVHcloud'
 excerpt: 'Questa guida ti mostra come modificare una zona DNS OVHcloud dallo Spazio Cliente'
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 <style>

@@ -1,6 +1,6 @@
 ---
 title: Risolvere un errore su un dominio
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Obiettivo

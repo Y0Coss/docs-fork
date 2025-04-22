@@ -1,7 +1,7 @@
 ---
 title: What to do if you get a "Your connection is not private" error?
 excerpt: How to react to a security error message on your website
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Objective <a name="objective"></a>

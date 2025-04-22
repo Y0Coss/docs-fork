@@ -1,7 +1,7 @@
 ---
 title: "Co zrobić w przypadku błędu « Połączenie nie jest prywatne »?"
 excerpt: "Reagowanie w przypadku wiadomości z błędem związanej z bezpieczeństwem strony"
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Wprowadzenie  <a name="objective"></a>

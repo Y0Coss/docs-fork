@@ -1,7 +1,7 @@
 ---
 title: 'Editing an OVHcloud DNS zone'
 excerpt: 'Find out how to edit an OVHcloud DNS zone via the OVHcloud Control Panel'
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 <style>
