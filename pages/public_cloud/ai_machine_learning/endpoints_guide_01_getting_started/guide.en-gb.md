@@ -146,6 +146,17 @@ Alternatively, you can also revoke your API key using the `Revoke API key`{.acti
 
 Once done, you can confirm its deletion by trying to send a request using your revoked API key.
 
+### Model rate limit
+
+When using AI Endpoints, the **following rate limits apply**:
+
+- **Anonymous**: 2 requests per minute, per by IP and per model.
+- **Authenticated with an API access key**: 400 requests per minute, per PCI project and per model.
+
+If you exceed this limit, a **429 error code** will be returned.
+
+If you require higher usage, please **[get in touch with us](https://help.ovhcloud.com/csm?id=csm_get_help)** to discuss increasing your rate limits.
+
 ### Billing and usage
 
 For information on pricing and the models lifecycle of the platform, please refer to the [AI Endpoints - Billing and lifecycle](/pages/public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept) documentation.
