@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie kontaktami swoich usług
 excerpt: 'Dowiedz się, jak zarządzać kontaktami dla Twoich usług OVHcloud'
-updated: 2025-03-10
+updated: 2025-04-24
 ---
 
 ## Wprowadzenie

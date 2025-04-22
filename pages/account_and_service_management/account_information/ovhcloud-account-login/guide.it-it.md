@@ -1,7 +1,7 @@
 ---
 title: Accedi allo Spazio Cliente OVHcloud
 excerpt: Come autenticarsi al tuo account OVHcloud
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Obiettivo

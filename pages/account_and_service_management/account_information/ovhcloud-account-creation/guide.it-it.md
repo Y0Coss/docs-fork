@@ -1,7 +1,7 @@
 ---
 title: Creare un account OVHcloud
 excerpt: Come creare un account OVHcloud
-updated: 2025-03-10
+updated: 2025-04-24
 ---
 
 ## Obiettivo

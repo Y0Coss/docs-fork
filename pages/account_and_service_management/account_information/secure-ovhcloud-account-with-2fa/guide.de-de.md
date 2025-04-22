@@ -1,7 +1,7 @@
 ---
 title: 'Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern'
 excerpt: 'Erfahren Sie hier, wie Sie die Sicherheit Ihres Accounts bei OVHcloud steigern können, indem Sie die Zwei-Faktor-Authentifizierung (2FA) aktivieren'
-updated: 2025-03-10
+updated: 2025-04-24
 ---
 
 <style>

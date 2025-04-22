@@ -1,7 +1,7 @@
 ---
 title: 'Logging in to the OVHcloud Control Panel'
 excerpt: 'Find out how to log in to your OVHcloud account'
-updated: 2025-04-22
+updated: 2025-04-24
 ---
 
 ## Objective

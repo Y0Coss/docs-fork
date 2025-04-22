@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie konta OVHcloud'
 excerpt: 'Dowiedz się, jak założyć konto OVHcloud'
-updated: 2025-03-10
+updated: 2025-04-24
 ---
 
 ## Wprowadzenie

@@ -1,7 +1,7 @@
 ---
 title: FAQ dotyczący pomocy OVHcloud
 excerpt: Najczęściej zadawane pytania znajdziesz w pomocy OVHcloud
-updated: 2025-03-10
+updated: 2025-04-24
 ---
 
 ## Wprowadzenie

@@ -1,7 +1,7 @@
 ---
 title: OVHcloud account management FAQ
 excerpt: Find the most frequently asked questions about managing your OVHcloud account
-updated: 2025-03-10
+updated: 2025-04-24
 ---
 
 ## Objective
