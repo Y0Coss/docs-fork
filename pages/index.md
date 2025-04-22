@@ -1073,6 +1073,7 @@
                 + [AI Endpoints - Getting started](public_cloud/ai_machine_learning/endpoints_guide_01_getting_started)
                 + [AI Endpoints - Features, Capabilities and Limitations](public_cloud/ai_machine_learning/endpoints_guide_02_capabilities)
                 + [AI Endpoints - Troubleshooting](public_cloud/ai_machine_learning/endpoints_guide_03_troubleshooting)
+                + [AI Endpoints - Billing and lifecycle](public_cloud/ai_machine_learning/endpoints_guide_04_billing_concept)
             + [Tutorials](public-cloud-ai-and-machine-learning-ai-endpointstutorials)
                 + [AI Endpoints - Create your own audio summarizer](public_cloud/ai_machine_learning/endpoints_tuto_01_audio_summarizer)
                 + [AI Endpoints - Create your own voice assistant](public_cloud/ai_machine_learning/endpoints_tuto_02_voice_virtual_assistant)
