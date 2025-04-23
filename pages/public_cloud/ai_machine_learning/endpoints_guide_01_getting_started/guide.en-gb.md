@@ -104,7 +104,7 @@ This will take you to a dedicated page with several options for interacting with
 >>
 > **Tutorials**
 >>
->> There, you will find blog articles related to AI Endpoints that you may find helpful in learning how to use the model more effectively. Whether you're building a chatbot with Langchain and JavaScript or creating a video translator app, we provide step-by-step guidance to support your AI projects.
+>> There, you will find guides related to AI Endpoints that you may find helpful in learning how to use the model more effectively. Whether you're building a chatbot with Langchain and JavaScript or creating a video translator app, we provide step-by-step guidance to support your AI projects.
 >>
 >> ![AI Endpoints tutorials overview](images/tutorials_demo.png){.thumbnail}
 >>
