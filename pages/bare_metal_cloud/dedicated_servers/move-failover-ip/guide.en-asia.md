@@ -65,7 +65,7 @@ If you order an additional IP block on a server but choose a different location 
 > Only a single size block (/32) can be moved from a dedicated server to a VPS.
 >
 
-Log in to the [OVHcloud Control](/links/manager), go to the `Bare Metal Cloud`{.action} menu and click on `Network`{.action}. Next, click on `IP`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
 Click the `Additional IP`{.action} tab.
 

@@ -20,7 +20,7 @@ Configuring the reverse DNS resolution for a server is especially useful when se
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), switch to the `Bare Metal Cloud`{.action} section and open `Network`{.action}. Next, click on `IP`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
 The drop-down menus in the section **My public IP addresses and associated services** allow you to filter the table items for services and find your desired IP address quickly.
 

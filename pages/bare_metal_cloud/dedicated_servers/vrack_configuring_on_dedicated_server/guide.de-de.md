@@ -31,7 +31,7 @@ Das OVHcloud vRack (Virtual Rack) erlaubt es, mehrere Server (unabhängig von de
 
 Wenn Sie sich in Ihrem OVHcloud Kundencenter eingeloggt haben, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf den Button `Bestellen`{.action}. Klicken Sie unter diesem Menü auf `vRack`{.action}.
 
-![vRack bestellen](images/orderingvrack.png){.thumbnail}
+![vRack bestellen](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
 Sie werden auf eine andere Seite weitergeleitet, um die Bestellung zu validieren. Der Vorgang dauert einige Minuten.
 

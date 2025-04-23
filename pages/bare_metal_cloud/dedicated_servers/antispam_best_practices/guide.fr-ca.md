@@ -62,7 +62,7 @@ Une fois le problème résolu, vous pouvez débloquer votre adresse IP en effect
 
 #### Débloquer votre adresse IP depuis l'espace client
 
-Dans votre [espace client OVHcloud](/links/manager),rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `Network`{.action}. Cliquez ensuite sur `IP`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), ouvrez le menu `Network`{.action} dans la barre latérale de gauche et cliquez sur `Adresses IP Publiques`{.action}.
 
 Dans le cadre jaune dédié aux alertes, cliquez sur la flèche déroulante `Voir toutes mes alertes`{.action} pour afficher toutes les alertes sur votre ou vos adresses IP.
 

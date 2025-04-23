@@ -68,7 +68,7 @@ Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez 
 > Seul un bloc de taille unique (/32) pourra être déplacé depuis un serveur dédié vers un VPS.
 >
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur le menu `Bare Metal Cloud`{.action} puis ouvrez la section `Network`{.action}. Ensuite, cliquez sur `IP`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), ouvrez le menu `Network`{.action} dans la barre latérale de gauche et cliquez sur `Adresses IP Publiques`{.action}.
 
 Cliquez sur l'onglet `Additional IP`{.action}.
 

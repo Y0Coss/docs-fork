@@ -29,11 +29,11 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 
 ### Étape 1 : commander le vRack
 
-Une fois connecté à votre espace client OVHcloud, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur le bouton `Commander`{.action}. Sous ce menu, cliquez sur `vRack`{.action}.
+Connectez-vous à votre espace client OVHcloud et cliquez sur le bouton `Ajouter un service`{.action} (icône de panier d'achat) dans le menu de gauche. Utilisez le filtre en haut de la page ou faites défiler vers le bas pour trouver le service `vRack`{.action}.
 
-![Commander le vrack](images/orderingvrack.png){.thumbnail}
+![Commander vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
-Vous serez redirigé vers une autre page pour valider la commande, l’opération prendra quelques minutes.
+Cliquez sur la case `vRack`{.action} pour être redirigé vers la page de validation de la commande. La mise en place du vRack dans votre compte peut prendre quelques minutes.
 
 ### Étape 2 : ajouter vos serveurs au vRack
 

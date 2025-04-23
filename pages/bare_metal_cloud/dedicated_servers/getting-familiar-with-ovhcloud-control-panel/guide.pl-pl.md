@@ -33,8 +33,7 @@ Oferuje on również zestaw skrótów i przydatnych linków.
 ![dostęp do serwera](images/listserversOVHcloud.png){.thumbnail}
 
 W interfejsach Kimsufi i So you Start dashboard umożliwia sprawdzenie serwera/listy serwerów.<br>
-W Panelu klienta OVHcloud kliknij najpierw menu `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}, aby wyświetlić Twoje serwery.<br>
-Jeśli posiadasz kilka serwerów, przycisk `Wszystkie moje serwery`{.action} pozwala na ich wyświetlenie w prosty sposób.
+W Panelu klienta OVHcloud kliknij najpierw menu `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}, aby wyświetlić Twoje serwery.
 
 ### Interfejs Serwera
 

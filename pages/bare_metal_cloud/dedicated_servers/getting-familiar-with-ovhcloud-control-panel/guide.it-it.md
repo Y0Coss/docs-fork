@@ -33,8 +33,7 @@ Propone inoltre una serie di collegamenti e di scorciatoie utili.
 ![accesso server](images/listserversOVHcloud.png){.thumbnail}
 
 Nelle interfacce Kimsufi e So you Start, la dashboard ti permette di vedere il tuo server/elenco dei server.<br>
-Dallo Spazio Cliente OVHcloud, clicca prima sul menu `Bare Metal Cloud`{.action} e poi su `Server dedicati`{.action} per visualizzare i tuoi server.<br>
-Se possiedi più server, il pulsante `Tutti i tuoi server`{.action} ti permette di elencarli per un accesso facile.
+Dallo Spazio Cliente OVHcloud, clicca prima sul menu `Bare Metal Cloud`{.action} e poi su `Server dedicati`{.action} per visualizzare i tuoi server.
 
 ### Interfaccia Server
 

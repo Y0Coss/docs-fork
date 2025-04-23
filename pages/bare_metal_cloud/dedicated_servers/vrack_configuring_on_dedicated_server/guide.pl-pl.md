@@ -31,7 +31,7 @@ vRack (wirtualna szafa) OVHcloud pozwala na wirtualne zebranie kilku serwerów (
 
 Po zalogowaniu się do Panelu klienta OVHcloud przejdź do menu `Bare Metal Cloud`{.action} i kliknij przycisk `Zamów`{.action}. W tym menu kliknij `vRack`{.action}.
 
-![Zamów vrack](images/orderingvrack.png){.thumbnail}
+![Zamów vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
 Zostaniesz przekierowany na inną stronę, aby zatwierdzić zamówienie. Operacja zajmie kilka minut.
 

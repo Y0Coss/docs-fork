@@ -33,8 +33,7 @@ También ofrece una serie de atajos y enlaces útiles.
 ![list servers](images/listserversOVHcloud.png){.thumbnail}
 
 En las interfaces Kimsufi y So you Start, el panel de control le permite ver su servidor/lista de servidores.<br>
-En el área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `Servidores dedicados`{.action} para ver los servidores.<br>
-Si tiene varios servidores, el botón `Todos mis servidores`{.action} le permite mostrarlos para un acceso fácil.
+En el área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `Servidores dedicados`{.action} para ver los servidores.
 
 ### Interfaz del servidor
 

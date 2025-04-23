@@ -43,7 +43,7 @@ Lors d'une attaque, une action de mitigation active sera indiquée par une icôn
 
 ![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
-Dans votre espace client, accédez à l'onglet `Bare Metal Cloud`{.action}. Cliquez ensuite sur `Network`{.action} puis sur le menu `IP`{.action}. Assurez-vous que le « mode avancé » est activé pour voir l'état de l'infrastructure anti-DDoS et la configuration de ses composants.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), ouvrez le menu `Network`{.action} dans la barre latérale de gauche et cliquez sur `Adresses IP Publiques`{.action}. Assurez-vous que le « mode avancé » est activé pour voir l'état de l'infrastructure anti-DDoS et la configuration de ses composants.
 
 Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scrubbing (**Mitigation**), du Edge Network **Firewall** et du **GAME firewall**.
 
@@ -68,9 +68,9 @@ Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scr
 
 Dans l'espace client OVHcloud, l'accès au Network Security Dashboard peut se faire soit à partir de la page qui liste les IP (pour une IP particulière), soit en vous rendant directement dans le Network Security Dashboard dans le menu `Network`{.action}.
 
-Cliquez sur l'onglet `Bare Metal Cloud`{.action} puis sur `Network`{.action} et sélectionnez `Network Security Dashboard`{.action}.
+Allez dans `Network`{.action} dans la barre latérale de gauche et sélectionnez `Network Security Dashboard`{.action}.
 
-Vous pouvez également, à partir de la liste des adresses IP (cette option n'est disponible que lorsque le Centre de nettoyage est en action), accéder à l'onglet `Bare Metal Cloud`{.action} puis vous rendre dans `Network`{.action} et cliquer sur `Adresses IP publiques`{.action}. Cliquez sur le bouton `...`{.action} et accédez à `Network Security Dashboard`{.action}.
+Sinon, à partir de la liste des IP (cette option n'est disponible que lorsque le centre de nettoyage est en action) : ouvrez le menu `Réseau`{.action} dans la barre latérale de gauche et cliquez sur `Adresses IP Publiques`{.action}. Cliquez sur le bouton `...`{.action} et accédez à `Network Security Dashboard`{.action}.
 
 Dans l'onglet **Journal du Centre de nettoyage**, vous pouvez récupérer toutes les informations sur les attaques détectées dans le passé (ou en cours).
 

@@ -75,7 +75,9 @@ L'exemple ci-dessus montre deux hôtes avec leurs interfaces côté vRack config
 
 /// details | Via l'espace client OVHcloud
 
-Allez dans `Network`{.action} et cliquez sur la section `vRack private network`{.action}. Sélectionnez ensuite le vRack que vous souhaitez gérer :
+- Ouvrez `Network`{.action} dans la barre latérale de gauche.
+- Ouvrez le réseau privé `vRack`{.action}.
+- Sélectionnez le vRack concerné.
 
 ![vrack management](images/700.png){.thumbnail}
 

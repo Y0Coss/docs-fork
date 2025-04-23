@@ -31,7 +31,7 @@ El vRack (rack virtual) de OVHcloud permite agrupar virtualmente varios servidor
 
 Una vez que se haya conectado al área de cliente de OVHcloud, acceda al menú `Bare Metal Cloud`{.action} y haga clic en el botón `Contratar`{.action}. En este menú, haga clic en el botón ` vRack`{.action}.
 
-![Contratar el vrack](images/orderingvrack.png){.thumbnail}
+![Contratar el vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
 Será redirigido a otra página para validar el pedido. La operación tardará unos minutos.
 

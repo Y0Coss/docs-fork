@@ -28,7 +28,7 @@ Le [vRack](/links/network/vrack) OVHcloud est un réseau privé qui vous permet 
 ### Ajouter un projet Public Cloud au vRack
 
 > [!primary]
-> Ceci ne s'applique pas aux projets nouvellement créés qui sont automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, allez dans le menu `Bare Metal Cloud`{.action} et cliquez sur `Network`{.action} dans l'onglet de gauche. Cliquez sur `Réseau Privé vRack`{.action} pour visualiser le(s) vRack(s).
+> Ceci ne s'applique pas aux projets nouvellement créés qui sont automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, ouvrez le menu `Network`{.action} dans la barre latérale de gauche et cliquez sur `vRack private network`{.action}. Cliquez sur `Réseau Privé vRack`{.action} pour visualiser le(s) vRack(s).
 >
 > Vous pouvez également retirer le projet du vRack qui lui a été attribué et l'attacher à un autre vRack si vous le souhaitez, en particulier si vous aviez déjà un vRack existant avec votre/vos serveur(s) dédié(s).
 

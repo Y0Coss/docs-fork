@@ -47,7 +47,7 @@ Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en per
 > Le Edge Network Firewall protège une IP spécifique associée à un serveur (ou service). Par conséquent, si vous avez un serveur avec plusieurs adresses IP, vous devez configurer chaque IP séparément.
 > 
 
-Connectez-vous à[ l’espace client OVHcloud](/links/manager), accédez à la section `Bare Metal Cloud`{.action} puis au menu `Network`{.action} et ouvrez les `Adresses IP publiques`{.action}. Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** pour filtrer vos services par catégorie.
+Connectez-vous à [votre espace client OVHcloud](/links/manager), ouvrez le menu `Network`{.action} dans la barre latérale de gauche et cliquez sur `Adresses IP Publiques`{.action}. Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** pour filtrer vos services par catégorie.
 
 ![filtrer les service](images/selectservice_cut.png){.thumbnail}
 
@@ -165,9 +165,8 @@ Notre infrastructure anti-DDoS (VAC) dispose de deux modes de fonctionnement : *
 
 Pour l'activer, procédez comme suit :
 
-- Cliquez sur `Bare Metal Cloud`{.action}.
-- Sélectionnez le menu `Network`{.action} .
-- Rendez-vous dans la section `IP`{.action} .
+- Ouvrez `Network`{.action} dans la barre latérale de gauche.
+- Ouvrez `Adresses IP Publiques`{.action}.
 
 | ![menu-ipv4](images/mitigation_menu.png) | 
 |:--:| 
