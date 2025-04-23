@@ -39,7 +39,7 @@ Pour la configuration réseau des machines virtuelles pfSense, nous utiliserons 
 
 #### Assigner une adresse MAC virtuelle
 
-Dans votre [espace client OVHcloud](/links/manager), ouvrez le menu `Network`{.action} dans la barre latérale de gauche et cliquez sur `Adresses IP Publiques`{.action}.
+Dans votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}.
 
 Cliquez sur l'onglet `Additional IP`{.action}.
 
