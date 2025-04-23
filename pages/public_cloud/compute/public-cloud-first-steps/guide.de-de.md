@@ -1,7 +1,7 @@
 ---
 title: "Eine Public Cloud Instanz erstellen und darauf zugreifen"
 excerpt: "Erfahren Sie hier, wie Sie Public Cloud Instanzen in Ihrem OVHcloud Kundencenter konfigurieren, sowie die ersten Schritte mit Instanzen"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 <style>

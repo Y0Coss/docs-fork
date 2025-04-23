@@ -1,7 +1,7 @@
 ---
 title: "Attivare il Rescue mode su un’istanza Public Cloud"
 excerpt: "Come attivare e utilizzare il Rescue mode OVHcloud su un’istanza Public Cloud"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Obiettivo

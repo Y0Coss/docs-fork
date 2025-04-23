@@ -1,7 +1,7 @@
 ---
 title: "Configurar a reverse DNS de uma instância Public Cloud"
 excerpt: Saiba como implementar a resolução reverse DNS
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Zusätzliche Festplatten aus einem Backup erstellen
 excerpt: Erfahren Sie hier, wie Sie zusätzliche Festplatten aus einem Volume Snapshot erzeugen
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

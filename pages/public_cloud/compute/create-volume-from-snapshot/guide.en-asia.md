@@ -1,7 +1,7 @@
 ---
 title: Creating a volume from a backup
 excerpt: 'Find out how to create additional disks from a snapshot of an additional disk'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objective

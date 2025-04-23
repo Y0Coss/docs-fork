@@ -1,7 +1,7 @@
 ---
 title: Crear un volumen a partir de un snapshot
 excerpt: Cómo crear discos adicionales a partir de una copia de seguridad de un disco adicional
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

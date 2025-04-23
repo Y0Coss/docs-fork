@@ -1,7 +1,7 @@
 ---
 title: "Zwiększ rozmiar dodatkowego dysku"
 excerpt: "Dowiedz się, jak zwiększyć rozmiar dodatkowego wolumenu i powiększyć jego partycję główną"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 <style>

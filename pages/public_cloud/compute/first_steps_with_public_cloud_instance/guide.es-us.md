@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar las instancias de Public Cloud'
 excerpt: 'Cómo gestionar las instancias de Public Cloud desde el Panel de configuración de OVHcloud'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

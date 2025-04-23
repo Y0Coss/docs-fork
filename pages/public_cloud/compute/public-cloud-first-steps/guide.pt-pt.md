@@ -1,7 +1,7 @@
 ---
 title: "Como criar uma instância Public Cloud e conectar-se a ela"
 excerpt: "Descubra como configurar instâncias Public Cloud na sua Área de Cliente OVHcloud, assim como os primeiros passos com as suas instâncias"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 <style>

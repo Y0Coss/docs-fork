@@ -1,7 +1,7 @@
 ---
 title: 'Gérer vos instances Public Cloud'
 excerpt: 'Découvrez comment gérer vos instances Public Cloud dans l’espace client OVHcloud'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objectif

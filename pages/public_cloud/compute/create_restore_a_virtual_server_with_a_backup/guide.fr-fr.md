@@ -1,7 +1,7 @@
 ---
 title: 'Créer / restaurer un serveur virtuel a partir d’une sauvegarde'
 excerpt: 'Découvrez comment créer ou restaurer la sauvegarde d’une instance'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objectif
@@ -52,7 +52,7 @@ Pour plus d'informations sur la création d'une instance, consultez [ce guide](/
 
 ### Restaurer une instance à partir d’une sauvegarde
 
-onnectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Public Cloud`{.action}. Sélectionnez le projet Public Cloud concerné puis cliquez sur `Instances`{.action} sous la section **Compute**.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Public Cloud`{.action}. Sélectionnez le projet Public Cloud concerné puis cliquez sur `Instances`{.action} sous la section **Compute**.
 
 ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
 

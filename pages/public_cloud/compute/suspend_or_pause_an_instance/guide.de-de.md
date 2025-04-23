@@ -1,6 +1,6 @@
 ---
 title: Aussetzen oder Pausieren einer Instanz
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Ziel

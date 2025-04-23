@@ -1,7 +1,7 @@
 ---
 title: "Como ativar o modo rescue numa instância Public Cloud"
 excerpt: "Descubra como ativar e utilizar o modo rescue OVHcloud para a sua instância Public Cloud"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

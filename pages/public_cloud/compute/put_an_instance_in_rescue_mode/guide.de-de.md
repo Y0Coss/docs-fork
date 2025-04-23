@@ -1,7 +1,7 @@
 ---
 title: "Rescue-Modus auf einer Public Cloud Instanz aktivieren"
 excerpt: "Erfahren Sie hier, wie Sie den OVHcloud Rescue-Modus für Ihre Public Cloud Instanzen aktivieren und verwenden"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Ziel

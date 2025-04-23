@@ -1,7 +1,7 @@
 ---
 title: Crear un snapshot de un volumen
 excerpt: 'Cómo crear un snapshot de un disco adicional Public Cloud'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objetivo

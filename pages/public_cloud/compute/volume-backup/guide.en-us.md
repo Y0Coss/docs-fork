@@ -1,7 +1,7 @@
 ---
 title: Creating a volume backup
 excerpt: Discover how to back up your Block Storage volume in the OVHcloud Control Panel
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Configurar el registro DNS inverso de una instancia de Public Cloud"
 excerpt: Cómo activar la resolución inversa DNS
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

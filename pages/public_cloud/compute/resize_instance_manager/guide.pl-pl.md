@@ -1,7 +1,7 @@
 ---
 title: Skaluj instancję w Panelu klienta OVHcloud
 excerpt: 'Dowiedz się, jak zmienić rozmiar instancji w Panelu klienta OVHcloud'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

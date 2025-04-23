@@ -1,7 +1,7 @@
 ---
 title: How to configure reverse DNS for a Public Cloud instance
 excerpt: Find out how to set up the reverse DNS resolution of your OVHcloud Public Cloud instance
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objective

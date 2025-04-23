@@ -1,7 +1,7 @@
 ---
 title: "Volume Backup erstellen"
 excerpt: "Erfahren Sie hier, wie Sie über Ihr Kundencenter ein Backup Ihres Block Storage Volumes erstellen"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

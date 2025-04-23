@@ -1,6 +1,6 @@
 ---
 title: Shelve or pause an instance
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: Creating and configuring an additional disk on an instance
 excerpt: Find out how to attach a new volume to your Public Cloud instance
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 <style>

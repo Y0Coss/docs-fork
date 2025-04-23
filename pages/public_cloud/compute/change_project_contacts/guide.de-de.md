@@ -1,7 +1,7 @@
 ---
 title: "Kontakte eines Projekts ändern"
 excerpt: Erfahren Sie hier, wie Sie die Kontakte eines Public Cloud Projekts verwalten
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

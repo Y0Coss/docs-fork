@@ -1,7 +1,7 @@
 ---
 title: "Créer un volume à partir d'une sauvegarde"
 excerpt: "Découvrez comment créer des disques supplémentaires à partir d'une sauvegarde d'un disque supplémentaire"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objectif

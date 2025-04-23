@@ -1,7 +1,7 @@
 ---
 title: "Gestion de contacts d’un projet"
 excerpt: "Découvrez comment gérer les contacts d'un projet Public Cloud"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objectif

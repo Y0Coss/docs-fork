@@ -1,7 +1,7 @@
 ---
 title: Backing up an instance
 excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objective

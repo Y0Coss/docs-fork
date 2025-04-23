@@ -1,7 +1,7 @@
 ---
 title: "Jak aktywować tryb ratunkowy na instancji Public Cloud"
 excerpt: "Dowiedz się, jak aktywować i korzystać z trybu Rescue OVHcloud w Twojej instancji Public Cloud"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

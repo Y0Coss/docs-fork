@@ -1,7 +1,7 @@
 ---
 title: "Gestão de contactos de um projeto"
 excerpt: "Saiba como gerir os contactos de um projeto Public Cloud"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

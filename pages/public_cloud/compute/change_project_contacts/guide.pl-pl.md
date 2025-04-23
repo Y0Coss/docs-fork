@@ -1,7 +1,7 @@
 ---
 title: "Zmiana kontaktów projektu"
 excerpt: "Dowiedz się, jak zarządzać kontaktami projektu Public Cloud"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

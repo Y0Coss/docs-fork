@@ -1,7 +1,7 @@
 ---
 title: 'Gerir as suas instâncias Public Cloud'
 excerpt: 'Saiba como gerir as suas instâncias Public Cloud na Área de Cliente OVHcloud'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

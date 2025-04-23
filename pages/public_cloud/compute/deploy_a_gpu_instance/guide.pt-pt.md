@@ -1,7 +1,7 @@
 ---
 title: 'Criar uma instância GPU'
 excerpt: 'Saiba como criar uma instância GPU em Linux ou Windows'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Changing project contacts
 excerpt: Find out how to change the contacts of a Public Cloud project
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objective

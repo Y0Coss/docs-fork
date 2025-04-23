@@ -1,7 +1,7 @@
 ---
 title: Crear una copia de seguridad de un volumen
 excerpt: Cómo crear una copia de seguridad de su volumen Block Storage desde el área de cliente
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

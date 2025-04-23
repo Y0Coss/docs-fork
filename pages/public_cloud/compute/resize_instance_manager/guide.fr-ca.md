@@ -1,7 +1,7 @@
 ---
 title: "Redimensionner une instance via l'espace client OVHcloud"
 excerpt: "Découvrez comment redimensionner une instance depuis l'espace client OVHcloud"
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objectif

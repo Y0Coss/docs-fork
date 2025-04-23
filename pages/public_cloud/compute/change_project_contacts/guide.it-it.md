@@ -1,7 +1,7 @@
 ---
 title: Modificare i contatti di un progetto
 excerpt: Come gestire i contatti di un progetto Public Cloud
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Managing your Public Cloud instances
 excerpt: 'Find out how to manage your Public Cloud instances in the OVHcloud Control Panel'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 ## Objective

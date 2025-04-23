@@ -1,7 +1,7 @@
 ---
 title: 'Criar / Restaurar um servidor virtual a partir de um backup'
 excerpt: 'Criar / Restaurar um servidor virtual a partir de um backup'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

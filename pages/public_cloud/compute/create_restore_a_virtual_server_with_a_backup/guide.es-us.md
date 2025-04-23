@@ -1,7 +1,7 @@
 ---
 title: 'Crear o restaurar un servidor virtual a partir de un snapshot'
 excerpt: 'Crear o restaurar un servidor virtual a partir de un snapshot'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]

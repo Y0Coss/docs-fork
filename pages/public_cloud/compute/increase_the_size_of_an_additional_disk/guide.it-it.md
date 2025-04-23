@@ -1,7 +1,7 @@
 ---
 title: Aumenta la dimensione di un disco aggiuntivo
 excerpt: Come aumentare la dimensione di un volume aggiuntivo e aumentare la sua partizione principale
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 <style>

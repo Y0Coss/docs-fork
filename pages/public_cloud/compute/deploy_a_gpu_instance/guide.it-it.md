@@ -1,7 +1,7 @@
 ---
 title: 'Creare un’istanza GPU'
 excerpt: 'Scopri come creare un’istanza GPU con Linux o Windows'
-updated: xxxx-xx-xx
+updated: 2025-04-24
 ---
 
 > [!primary]
