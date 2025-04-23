@@ -86,7 +86,7 @@ Um im OVHcloud Kundencenter auf den Bereich **Lizenzen** zuzugreifen, klicken Si
 ### Support, Abrechnung und Accountverwaltung
 
 Im Kimsufi oder So you Start Kundencenter sind diese Optionen oben rechts unter den einzelnen Tabs verfügbar.<br>
-Im OVHcloud Kundencenter werden diese Optionen in einem gemeinsamen Kundencenter zusammengefasst. Klicken Sie oben rechts auf Ihren Namen und klicken Sie auf Ihre Initialen, um auf die Rubrik `Meinen Account verwalten zu können`.
+Im OVHcloud Kundencenter werden diese Optionen in einem gemeinsamen Kundencenter zusammengefasst. Klicken Sie oben rechts auf Ihren Account-Namen und danach auf `Zu meinem Account`{.action}.
 
 ![factu](images/accountOVHcloud.png){.thumbnail}
 

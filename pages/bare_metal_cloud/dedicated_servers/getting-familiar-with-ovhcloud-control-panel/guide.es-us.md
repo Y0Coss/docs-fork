@@ -84,7 +84,7 @@ Para acceder a la pestaña **Licencias** del área de cliente de OVHcloud, haga 
 ### Soporte, facturación y gestión de cuenta
 
 En el área de cliente Kimsufi o So you Start, estas opciones están disponibles en la parte superior derecha, bajo las pestañas individuales.<br>
-Estas opciones se agrupan en un área de cliente de OVHcloud. Haga clic en su nombre en la esquina superior derecha y seleccione sus iniciales para acceder a la sección `Gestionar mi cuenta`.
+Estas opciones se agrupan en un área de cliente de OVHcloud. Haga clic en el nombre de su cuenta en la esquina superior derecha y, a continuación, haga clic en `Acceder a mi cuenta`{.action}.
 
 ![factu](images/accountOVHcloud.png){.thumbnail}
 

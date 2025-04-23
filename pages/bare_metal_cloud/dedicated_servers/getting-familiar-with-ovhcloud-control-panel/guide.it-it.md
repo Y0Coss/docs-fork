@@ -86,7 +86,7 @@ Per accedere alla scheda **Licenze** nello Spazio Cliente OVHcloud, clicca sul m
 ### Supporto, fatturazione e gestione account
 
 Nello Spazio Cliente Kimsufi o So you Start, queste opzioni sono disponibili in alto a destra con le singole schede.<br>
-Nello Spazio Cliente OVHcloud, queste opzioni sono raggruppate in uno spazio comune. Clicca sul tuo nome in alto a destra e clicca sulle tue iniziali per accedere alla sezione `Gestisci il tuo account`.
+Nello Spazio Cliente OVHcloud, queste opzioni sono raggruppate in uno spazio comune. Clicca sul nome del tuo account in alto a destra, quindi clicca su `Accedi al mio account`{.action}.
 
 ![factu](images/accountOVHcloud.png){.thumbnail}
 

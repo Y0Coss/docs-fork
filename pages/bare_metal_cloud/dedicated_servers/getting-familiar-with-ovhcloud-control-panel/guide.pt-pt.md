@@ -86,7 +86,7 @@ Para aceder ao separador **Licenças** na Área de Cliente OVHcloud, clique no m
 ### Suporte, faturação e gestão de conta
 
 Na Área de Cliente Kimsufi ou So you Start, estas opções estão disponíveis no canto superior direito sob separadores individuais.<br>
-Na Área de Cliente OVHcloud, estas opções estão agrupadas num espaço comum. Clique no seu nome no canto superior direito e clique nas suas iniciais para aceder à secção `Gerir a minha conta`.
+Na Área de Cliente OVHcloud, estas opções estão agrupadas num espaço comum. Clique no nome da sua conta no canto superior direito e, de seguida, em `Aceder à minha conta`{.action}.
 
 ![factu](images/accountOVHcloud.png){.thumbnail}
 

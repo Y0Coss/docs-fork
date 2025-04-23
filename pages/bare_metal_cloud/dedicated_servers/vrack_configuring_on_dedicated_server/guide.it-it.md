@@ -29,11 +29,11 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 
 ### Step 1: ordina la vRack
 
-Accedi alla sezione `Bare Metal Cloud`{.action} nel tuo Spazio Cliente OVHcloud e clicca sul pulsante `Ordina`{.action}. Nel menu, clicca sull’opzione `vRack`{.action}.
+Accedi allo Spazio Cliente OVHcloud e clicca sul pulsante `Aggiungi un servizio`{.action} (icona del carrello) nel menu a sinistra. Utilizza il filtro in cima alla pagina o scorri verso il basso per trovare il servizio `vRack`{.action}.
 
-![Ordina la vRack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
+![Ordina vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
-Verrai reindirizzato verso un'altra pagina per confermare l'ordine. L'operazione richiederà alcuni minuti.
+Clicca sulla casella `vRack`{.action} per essere reindirizzato alla pagina in cui confermare l’ordine. L’installazione della vRack sul tuo account richiede alcuni minuti.
 
 ### Step 2: aggiungi i tuoi server alla vRack
 
