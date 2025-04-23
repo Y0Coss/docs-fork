@@ -139,9 +139,9 @@ In the `Floating IP`{.action} tab, click on the `...`{.action} next to the corre
 
 In the pop-up window, proceed with the deletion of the IP by clicking on `Confirm`{.action}.
 
-/// details | Unfold this section
-
 #### Via the OpenStack API
+
+/// details | Unfold this section
 
 > [!success]
 > Click on the tabs below to view each of the 9 steps in turn.

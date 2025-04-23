@@ -1,12 +1,12 @@
 ---
-title: Attaching a Floating IP to a Public Cloud instance
+title: Attaching a Floating IP to a Public Cloud instance (EN)
 excerpt: Find out how a Floating IP address functions and how to configure it
 updated: 2024-03-26
 ---
 
 ## Objective
 
-Floating IPs are public IP addresses for [Public Cloud](https://www.ovhcloud.com/asia/public-cloud/), used to expose a private instance or a private network service to the public network. You can read more about it on our dedicated [concepts page](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
+Floating IPs are public IP addresses for [Public Cloud](https://www.ovhcloud.com/it/public-cloud/), used to expose a private instance or a private network service to the public network. You can read more about it on our dedicated [concepts page](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
 
 **This guide explains how to attach Floating IP addresses to your instances.**
 
@@ -139,9 +139,9 @@ In the `Floating IP`{.action} tab, click on the `...`{.action} next to the corre
 
 In the pop-up window, proceed with the deletion of the IP by clicking on `Confirm`{.action}.
 
-/// details | Unfold this section
-
 #### Via the OpenStack API
+
+/// details | Unfold this section
 
 > [!success]
 > Click on the tabs below to view each of the 9 steps in turn.

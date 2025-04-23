@@ -133,10 +133,10 @@ Dans l'onglet `Floating IP`{.action}, cliquez sur le bouton `...`{.action} à c�
 
 Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération peut prendre quelques minutes.
 
-/// details | Dépliez cette section
 
 #### Depuis l'API OpenStack
 
+/// details | Dépliez cette section
 
 > [!success]
 > Cliquez sur les onglets ci-dessous pour afficher et suivre successivement chacune des 9 étapes.
