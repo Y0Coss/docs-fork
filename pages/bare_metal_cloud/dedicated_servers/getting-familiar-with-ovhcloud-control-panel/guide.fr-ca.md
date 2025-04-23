@@ -69,7 +69,7 @@ Pour plus d'informations sur la gestion de votre serveur dédié via l'espace cl
 
 ### Section IP
 
-Pour accéder à la partie IP de votre espace client, ouvrez `Network`{.action} dans le menu de gauche, puis `Adresses IP publiques`{.action}.
+Pour accéder à la partie IP de votre espace client, ouvrez `Network`{.action} dans le menu de gauche, puis `Adresses IP Publiques`{.action}.
 
 ![section ip](images/manageIP2023.png){.thumbnail}
 

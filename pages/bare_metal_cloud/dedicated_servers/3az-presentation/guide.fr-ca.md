@@ -24,7 +24,7 @@ OVHcloud est présent dans le monde entier, notamment en Europe, aux États-Unis
 
 Pour des performances optimales, une région doit être sélectionnée au plus près de ses utilisateurs. Pour une disponibilité mondiale, les services doivent être répartis sur plusieurs régions. La région 3-AZ est idéale pour les clients à la recherche de la plus haute résilience et doit être utilisée pour créer des conceptions d'applications multi-AZ.
 
-Dans le [espace client OVHcloud](/links/manager), vous pouvez voir vos clusters dans la liste des `Serveurs dédiés`{.action} du menu `Bare Metal Cloud`{.action} en passant à l'onglet `3-AZ clusters`{.action}.
+Dans le [espace client OVHcloud](/links/manager), vous pouvez voir vos clusters dans la liste des `Serveurs dédiés`{.action} du menu `Bare Metal Cloud`{.action} en passant à l'onglet `Clusters 3-AZ`{.action}.
 
 ![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
@@ -32,7 +32,7 @@ Cliquez sur le nom du cluster dans le tableau pour afficher les détails.
 
 ![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
-Cliquez sur l'onglet `Nœuds`{.action} pour ouvrir la liste des serveurs du cluster.
+Cliquez sur l'onglet `Noeuds`{.action} pour ouvrir la liste des serveurs du cluster.
 
 ![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
