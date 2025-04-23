@@ -60,10 +60,8 @@ This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenS
 >>
 > **Step 4**
 >>
->> The next step allows you to edit the default name of your gateway and attach a private network to it. You can use the drop down list to select an existing private network or click on `Add private network`{.action} to create a new one. 
+>> The next step allows you to edit the default name of your gateway and attach a private network to it. You can use the drop down list to select an existing private network. Be aware that only single-region private networks are supported by Gateway.
 >>
->> Be aware that only single-region private networks are supported by Gateway.
-
 >> ![dropdownlist](images/gatewayandprivatenetwork.png){.thumbnail}
 >>
 >> Otherwise, click on `Add a private network`{.action} to create a new one (in simplified dialog box with predefined values).

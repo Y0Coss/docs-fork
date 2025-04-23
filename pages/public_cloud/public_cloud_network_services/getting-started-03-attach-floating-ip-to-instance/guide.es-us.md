@@ -1,5 +1,5 @@
 ---
-title: Attaching a Floating IP to a Public Cloud instance
+title: Attaching a Floating IP to a Public Cloud instance (EN)
 excerpt: Find out how a Floating IP address functions and how to configure it
 updated: 2024-03-26
 ---
@@ -139,9 +139,9 @@ In the `Floating IP`{.action} tab, click on the `...`{.action} next to the corre
 
 In the pop-up window, proceed with the deletion of the IP by clicking on `Confirm`{.action}.
 
-/// details | Unfold this section
-
 #### Via the OpenStack API
+
+/// details | Unfold this section
 
 > [!success]
 > Click on the tabs below to view each of the 9 steps in turn.

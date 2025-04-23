@@ -60,7 +60,7 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](/l
 >>
 > **Etape 4**
 >>
->> La prochaine étape permet d'éditer le nom par défaut de votre Public Gateway et d'y associer un réseau privé. Vous pouvez utiliser la flèche déroulante pour sélectionner un réseau privé existant ou cliquez sur `Ajouter un réseau privé`{.action} pour en créer un nouveau. 
+>> La prochaine étape permet d'éditer le nom par défaut de votre Public Gateway et d'y associer un réseau privé. Vous pouvez utiliser la flèche déroulante pour sélectionner un réseau privé existant.
 >>
 >> Attention, seuls les réseaux privés à région unique sont pris en charge par Gateway.
 >>
