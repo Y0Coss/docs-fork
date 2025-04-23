@@ -10,7 +10,6 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 
 **This guide will show you how to get a status report of your OVHcloud Connect services via the OVHcloud Control Panel.**
 
-
 ## Requirements
 
 - an [OVHcloud Connect solution](https://www.ovhcloud.com/en-gb/network-security/ovhcloud-connect/) with a valid POP configuration
@@ -25,9 +24,11 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 
 ### Layer 2 mode
 
-- ***Ask for access to an OCC service which can use layer 2 mode, or simply the list of available diagnostics on this mode***
+- **MAC Address**: Fetches the list of MAC addresses of network devices and vRack
 
 ## Instructions
+
+### Layer 3 mode
 
 In your OVHcloud Control Panel, in the Network section, you can find the list of your OVHcloud Connect services. 
 
@@ -35,11 +36,11 @@ In your OVHcloud Control Panel, in the Network section, you can find the list of
 
 Open the service for which you want to get a diagnosis:
 
-![OCC Service](images/OCC_service.png){.thumbnail}
+![OCC Service](images/OCC_service_BGP.png){.thumbnail}
 
 At the bottom of the "POP Configuration" panel, you will find a segment named "Diagnostic POP", and an ellipsis **(...)** button. Click it, and then select "BGP Peering Test":
 
-![OCC Service Test Button](images/OCC_service_test_button.png){.thumbnail}
+![OCC Service Test Button](images/OCC_service_test_button_BGP.png){.thumbnail}
 
 A window will open. Select the type of diagnostics you wish to use, and click "launch diagnostic":
 
@@ -47,16 +48,45 @@ A window will open. Select the type of diagnostics you wish to use, and click "l
 
 You can now access the list of your diagnostics by opening the "Diagnostics" tab. 
 
-![OCC Diagnostics Tab](images/OCC_diag_tab.png){.thumbnail}
+![OCC Diagnostics Tab](images/OCC_diag_tab_BGP.png){.thumbnail}
 
 Each diagnostic is referred to using an ID and a timecode. 
 You can read the contents of the diagnostics by clicking on the ellipsis located to the right of each one listed. You can select either "See result" to have a window open with the contents of the desired diagnostic, or "Download result" to get a *.txt* file with the same contents.
 
-![OCC Diagnostic](images/OCC_diag.png){.thumbnail}
+![OCC Diagnostic view button](images/OCC_diag_view_button.png){.thumbnail}
+
+### Layer 2 mode
+
+In your OVHcloud Control Panel, in the Network section, you can find the list of your OVHcloud Connect services. 
+
+![OCC Control Panel](images/OCC_cpanel.png){.thumbnail}
+
+Open the service for which you want to get a diagnosis:
+
+![OCC Service](images/OCC_service_MAC.png){.thumbnail}
+
+At the bottom of the "POP Configuration" panel, you will find a segment named "Diagnostic POP", and an ellipsis **(...)** button. Click it, and then select "Get the list of my MAC addresses":
+
+![OCC Service Test Button](images/OCC_service_test_button_MAC.png){.thumbnail}
+
+You can now access the list of your diagnostics by opening the "Diagnostics" tab. 
+
+![OCC Diagnostics Tab](images/OCC_diag_tab_MAC.png){.thumbnail}
+
+Each diagnostic is referred to using an ID and a timecode. 
+You can read the contents of the diagnostics by clicking on the ellipsis located to the right of each one listed. You can select either "See result" to have a window open with the contents of the desired diagnostic, or "Download result" to get a *.txt* file with the same contents.
+
+![OCC Diagnostic view button](images/OCC_diag_view_button.png){.thumbnail}
 
 ## Limits
 
 - **Retention time of diagnostics**: You can only view diagnostics you have initiated **during the past seven days.** We recommend you download them and properly archive them, in case you need future access.
 
 - **Maximum number of diagnostics**: On a 24 hour period, you can initiate a maximum of 10 diagnostics per type of diagnostic, and per service. For example, if you have two OVHcloud Connect services configured on your OVHcloud Control Panel, both configured in Layer 3 mode, you can theoretically launch 10 of each diagnostic type per service, for a total of 60.
-<br> ***Maybe remove this*** This limit has been set in order to restrict the amount of resources used by the OVHcloud infrastructures, as the diagnostics are launched in real-time.  
+<br> This limit has been set in order to restrict the amount of resources used by the OVHcloud infrastructures, as the diagnostics are launched in real-time.  
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on <https://community.ovh.com/en/>.
