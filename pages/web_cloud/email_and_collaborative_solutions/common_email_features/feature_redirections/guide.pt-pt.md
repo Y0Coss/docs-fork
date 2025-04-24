@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar os alias e reencaminhamentos de e-mail'
 excerpt: 'Saiba como gerir os seus alias e reencaminhamentos de e-mail'
-updated: 2024-06-10
+updated: 2025-04-24
 ---
 
 <style>
@@ -83,7 +83,7 @@ Clique nos separadores seguintes para obter explicações ilustradas sobre o fun
 >
 >
 > 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-> 1. Aceda à secção`Web Cloud`{.action}.
+> 1. Aceda à secção `Web Cloud`{.action}.
 > 1. Clique em `MX Plan`{.action}.
 > 1. Selecione o domínio em questão.
 >
@@ -208,7 +208,7 @@ Clique no botão `...`{.action} à direita do alias em causa, no menu de gestão
 ### Criar um reencaminhamento ou um alias numa oferta MX Plan histórica ou num nome de domínio sem oferta de e-mail <a name="mxplanlegacy"></a>
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção`Web Cloud`{.action}.
+1. Aceda à secção `Web Cloud`{.action}.
 1. Clique em `MX Plan`{.action}.
 1. Selecione o domínio em questão.
 

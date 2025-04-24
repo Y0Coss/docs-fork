@@ -21,7 +21,7 @@ Na Área de Cliente OVHcloud, pode criar assinaturas universais (footers) para e
 > **Exchange**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
 >> 1. Selecione a plataforma em causa.
 >>

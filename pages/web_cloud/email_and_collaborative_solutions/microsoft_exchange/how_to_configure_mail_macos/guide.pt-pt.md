@@ -41,7 +41,7 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 > No nosso exemplo, utilizamos a menção servidor: ex?.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço Exchange.
 >
 > 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-> 1. Aceda à secção`Web Cloud`{.action}.
+> 1. Aceda à secção `Web Cloud`{.action}.
 > 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
 > 1. Selecione a plataforma em causa.
 > 1. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.

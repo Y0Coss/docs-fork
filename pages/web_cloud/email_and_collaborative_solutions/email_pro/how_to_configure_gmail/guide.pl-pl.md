@@ -40,7 +40,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 > 1. Przejdź do sekcji `Web Cloud`{.action}.
 > 1. Kliknij `Email Pro`{.action}.
 > 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+> 1. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
 >
 
 Przed rozpoczęciem operacji przejdź do interfejsu online programu Gmail, korzystając z Twojej przeglądarki internetowej. Wprowadź Twoje dane identyfikacyjne przypisane do konta Gmail, a następnie zaloguj się.

@@ -34,7 +34,7 @@ Se deseja aumentar a segurança da sua conta Exchange, pode ativar a dupla auten
 Ao efetuar a primeira configuração, é necessário ativar a dupla autenticação na plataforma antes de a ativar numa conta.
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção`Web Cloud`{.action}.
+1. Aceda à secção `Web Cloud`{.action}.
 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
 1. Selecione a plataforma em causa.
 1. Clique no separador `Segurança`{.action} da sua plataforma.
@@ -64,7 +64,7 @@ Nas ligações seguintes apenas lhe será solicitado o código gerado pela sua a
 A dupla autenticação da sua conta pode ser desativada de três formas.
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção`Web Cloud`{.action}.
+1. Aceda à secção `Web Cloud`{.action}.
 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
 1. Selecione a plataforma em causa.
 1. No separador `Contas de e-mail`{.action} da sua plataforma Exchange, clique em `...`{.action} à direita da conta na qual a dupla autenticação se encontra já ativa.

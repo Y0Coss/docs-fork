@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar los alias y redirecciones de correo'
 excerpt: 'Cómo gestionar los alias y redirecciones de correo'
-updated: 2024-06-10
+updated: 2025-04-24
 ---
 
 <style>
@@ -86,7 +86,7 @@ Haga clic en las fichas siguientes para obtener una explicación ilustrada del f
 > 1. Haga clic en `MX Plan`{.action}.
 > 1. Seleccione el dominio.
 >
->Siga leyendo esta guía en función de su versión:<br>
+> Siga leyendo esta guía en función de su versión:<br>
 >
 > |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 > |---|---|

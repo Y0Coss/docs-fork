@@ -48,7 +48,7 @@ O remetente (sender) transmite o e-mail à mailing list. O moderador (moderator)
 Para criar a sua mailing list:
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção`Web Cloud`{.action}.
+1. Aceda à secção `Web Cloud`{.action}.
 1. Clique em `MX Plan`{.action}.
 1. Selecione o domínio em questão.
 1. Vá ao separador `mailing lists`{.action} do seu serviço de e-mail.

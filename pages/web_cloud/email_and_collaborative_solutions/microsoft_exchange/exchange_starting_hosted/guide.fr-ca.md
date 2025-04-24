@@ -27,7 +27,7 @@ Le service Hosted Exchange permet de bénéficier d’adresses e-mail profession
 
 ### Accéder à la gestion de votre service
 
-Une fois votre service Hosted Exchange créé et disponible:
+Une fois votre service Hosted Exchange créé et disponible :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 1. Rendez-vous dans la partie `Web Cloud`{.action}.

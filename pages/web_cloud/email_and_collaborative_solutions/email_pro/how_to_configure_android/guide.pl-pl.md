@@ -47,7 +47,7 @@ Konta e-mail usługi E-mail Pro mogą być skonfigurowane w jednym z kompatybiln
 > 1. Przejdź do sekcji `Web Cloud`{.action}.
 > 1. Kliknij `Email Pro`{.action}.
 > 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+> 1. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
 >
 
 Na ekranie Twojego urządzenia wybierz aplikację `Gmail`{.action}.

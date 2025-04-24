@@ -23,7 +23,7 @@ Funkcja Exchange pozwala na tworzenie kont e-mail dedykowanych do zasobów Twoje
 1. Przejdź do sekcji `Web Cloud`{.action}.
 1. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
 1. Wybierz odpowiednią platformę.
-1. Kliknij kartę `Plus +`{.action}, a następnie `Zasoby`{.action}.
+1. Kliknij kartę `Więcej +`{.action}, a następnie `Zasoby`{.action}.
 
 ### Etap 1: tworzenie zasobów
 

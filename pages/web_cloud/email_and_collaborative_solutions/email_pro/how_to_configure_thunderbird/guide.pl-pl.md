@@ -32,7 +32,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 > 1. Przejdź do sekcji `Web Cloud`{.action}.
 > 1. Kliknij `Email Pro`{.action}.
 > 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+> 1. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
 >
 ### Dodaj konto
 
@@ -69,7 +69,7 @@ Jeśli musisz wykonać operację, która może spowodować utratę danych przypi
 >
 > W przewodniku używamy oznaczenia serwera: pro?.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 >
-> Odszukaj cyfrę w [Panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action} =>  `Email Pro`{.action}. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+> Odszukaj cyfrę w [Panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action} =>  `Email Pro`{.action}. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
 
 Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do parametrów konta, aby je zmienić:
 

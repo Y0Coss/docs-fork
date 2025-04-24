@@ -164,7 +164,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 > **E-maile (MX Plan)**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Clique em `MX Plan`{.action}.
 >> 1. Selecione o domínio em questão.
 >> 1. Następnie przejdź do zakładki `Informacje ogólne`{.action}.

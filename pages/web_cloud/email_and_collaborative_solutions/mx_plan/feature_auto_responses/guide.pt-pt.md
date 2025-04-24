@@ -24,7 +24,7 @@ Quando estiver em falta e não conseguir consultar o seu endereço de e-mail, po
 ### Criação de uma resposta automática
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção`Web Cloud`{.action}.
+1. Aceda à secção `Web Cloud`{.action}.
 1. Clique em `MX Plan`{.action}.
 1. Selecione o domínio em questão.
 1. Clique no separador `E-mails`{.action} na parte superior e, a seguir, em `Gestão das respostas automáticas`{.action}.

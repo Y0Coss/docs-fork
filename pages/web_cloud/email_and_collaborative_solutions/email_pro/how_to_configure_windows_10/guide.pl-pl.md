@@ -35,7 +35,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 > 1. Przejdź do sekcji `Web Cloud`{.action}.
 > 1. Kliknij `Email Pro`{.action}.
 > 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+> 1. Nazwa serwera jest widoczna w ramce **Logowanie** w zakładce `Informacje ogólne`{.action}.
 >
 
 Po uruchomieniu programu Poczta na Twoim urządzeniu możesz dodać konto, korzystając z jednej z dwóch dostępnych metod.

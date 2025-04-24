@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec le service Hosted Exchange
 excerpt: Débutez avec un service Hosted Exchange
-updated: 2024-08-29
+updated: 2025-04-24
 ---
 
 <style>

@@ -22,7 +22,7 @@ Questa funzione collaborativa di Exchange permette di creare indirizzi di posta 
 1. Accedi alla sezione `Web Cloud`{.action}.
 1. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
 1. Seleziona la piattaforma interessata.
-1. Seleziona il servizio Exchange interessato. Clicca sulla scheda `Plus +`{.action} e poi su `Risorse`{.action}.
+1. Seleziona il servizio Exchange interessato. Clicca sulla scheda `Altre opzioni +`{.action} e poi su `Risorse`{.action}.
 
 ### Step 1: creare una risorsa
 

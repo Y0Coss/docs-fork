@@ -164,7 +164,7 @@ Clique no separador seguinte da sua oferta.
 > **E-mails (MX Plan)**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Clique em `MX Plan`{.action}.
 >> 1. Selecione o domínio em questão.
 >> 1. Por fim, aceda ao separador `Informações gerais`{.action}.
@@ -176,7 +176,7 @@ Clique no separador seguinte da sua oferta.
 > **Exchange**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
 >> 1. Selecione a plataforma em causa.
 >> 1. Por fim, aceda ao separador `Domínios associados`{.action}.
@@ -188,7 +188,7 @@ Clique no separador seguinte da sua oferta.
 > **E-mail Pro**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Clique em `Email Pro`{.action}.
 >> 1. Selecione a plataforma em causa.
 >> 1. Por fim, aceda ao separador `Domínios associados`{.action}.
@@ -228,7 +228,7 @@ Clique no separador abaixo correspondente à sua oferta.
 > **Exchange**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
 >> 1. Selecione a plataforma em causa.
 >>
@@ -239,7 +239,7 @@ Clique no separador abaixo correspondente à sua oferta.
 > **E-mail Pro**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Clique em `Email Pro`{.action}.
 >> 1. Selecione a plataforma em causa.
 >>
@@ -1145,7 +1145,7 @@ Clique no separador abaixo correspondente à sua oferta para verificar o estado 
 > **Exchange**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
 >> 1. Selecione a plataforma em causa.
 >>
@@ -1156,7 +1156,7 @@ Clique no separador abaixo correspondente à sua oferta para verificar o estado 
 > **E-mail Pro**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Clique em `Email Pro`{.action}.
 >> 1. Selecione a plataforma em causa.
 >>

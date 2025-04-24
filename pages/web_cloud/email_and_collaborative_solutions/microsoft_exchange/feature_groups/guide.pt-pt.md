@@ -20,7 +20,7 @@ Os grupos Exchange permitem que vários participantes comuniquem ao enviarem ema
 ### Passo 1: Criar um novo grupo
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção`Web Cloud`{.action}.
+1. Aceda à secção `Web Cloud`{.action}.
 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
 1. Selecione a plataforma em causa.
 1. De seguida clique em `Grupos`{.action}, no menu horizontal.

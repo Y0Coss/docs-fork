@@ -37,7 +37,7 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MX Plan](#whichmxplan)" deste manual.
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Clique em `MX Plan`{.action}.
 >> 1. Selecione o domínio em questão.
 >> 1. Aceda ao separador `Contas de e-mail`{.action}.
@@ -50,7 +50,7 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MX Plan](#whichmxplan)" deste manual.
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Clique em `MX Plan`{.action}.
 >> 1. Selecione o domínio em questão.
 >> 1. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes.
@@ -61,7 +61,7 @@ Selecione o separador correspondente à sua oferta de e-mail:
 > **Email Pro**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Clique em `Email Pro`{.action}.
 >> 1. Selecione a plataforma em causa.
 >> 1. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes.
@@ -74,7 +74,7 @@ Selecione o separador correspondente à sua oferta de e-mail:
 > **Exchange**
 >>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
->> 1. Aceda à secção`Web Cloud`{.action}.
+>> 1. Aceda à secção `Web Cloud`{.action}.
 >> 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
 >> 1. Selecione a plataforma em causa.
 >> 1. Aceda ao separador `Contas de e-mail`{.action}.

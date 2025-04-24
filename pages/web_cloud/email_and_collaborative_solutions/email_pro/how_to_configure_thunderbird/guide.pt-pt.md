@@ -26,10 +26,10 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 
 > [!primary]
 >
-> Neste exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o «? » pelo número que identifica o servidor do seu serviço E-mail Pro.
+> Neste exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o « ? » pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
 > 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-> 1. Aceda à secção`Web Cloud`{.action}.
+> 1. Aceda à secção `Web Cloud`{.action}.
 > 1. Clique em `Email Pro`{.action}.
 > 1. Selecione a plataforma em causa.
 > 1. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.

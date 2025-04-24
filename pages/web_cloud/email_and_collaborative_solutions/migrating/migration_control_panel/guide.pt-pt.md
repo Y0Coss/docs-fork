@@ -41,7 +41,7 @@ Caso contrário, aceda à [Cliente OVHcloud](/links/manager) e encomende o servi
 Antes de iniciar a migração, terá de identificar a versão do MX Plan a partir da qual migra.
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção`Web Cloud`{.action}.
+1. Aceda à secção `Web Cloud`{.action}.
 1. Clique em `MX Plan`{.action}.
 1. Selecione o domínio em questão.
 

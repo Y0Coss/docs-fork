@@ -19,10 +19,10 @@ Esta função colaborativa do Exchange permite criar endereços de e-mail dedica
 ## Instruções
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção`Web Cloud`{.action}.
+1. Aceda à secção `Web Cloud`{.action}.
 1. Na rubrica `MICROSOFT`, clique em `Exchange`{.action}.
 1. Selecione a plataforma em causa.
-1. Clique no separador `Plus +`{.action} e, a seguir, em `Recursos`{.action}.
+1. Clique no separador `Mais +`{.action} e, a seguir, em `Recursos`{.action}.
 
 ### 1 - criar um recurso
 

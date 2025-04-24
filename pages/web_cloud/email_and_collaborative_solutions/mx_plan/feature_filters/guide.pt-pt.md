@@ -33,7 +33,7 @@ Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 ## Prática <a name="oldmxplan"></a>
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Aceda à secção`Web Cloud`{.action}.
+1. Aceda à secção `Web Cloud`{.action}.
 1. Clique em `MX Plan`{.action}.
 1. Selecione o domínio em questão.
 1. No separador `E-mails`{.action} do serviço MX Plan, encontrará a lista dos endereços de e-mail. Pode ver uma coluna de `filtros` na tabela de contas de e-mail. Clique no ícone de funil.
