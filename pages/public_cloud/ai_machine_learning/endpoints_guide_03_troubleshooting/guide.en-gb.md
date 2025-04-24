@@ -50,8 +50,8 @@ A **404** error typically indicates that the model you're trying to access canno
 
 A 429 error code typically indicates that you have exceeded the rate limit for the AI Endpoints models. When using AI Endpoints, the **following rate limits apply**: 
 
-- **Anonymous**: 2 requests per minute, per by IP and per model.
-- **Authenticated with an API access key**: 400 requests per minute, per PCI project and per model.
+- **Anonymous**: 2 requests per minute, per IP and per model.
+- **Authenticated with an API access key**: 400 requests per minute, per Public Cloud project and per model.
 
 If you exceed these rate limits, you will receive a 429 error code. In this case, you may consider optimizing your application's usage of the AI Endpoints or spreading out your requests over a longer period. 
 

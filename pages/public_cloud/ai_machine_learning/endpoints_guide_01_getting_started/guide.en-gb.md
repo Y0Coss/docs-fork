@@ -33,7 +33,7 @@ Getting an API key enables you to use the models available in our [catalog](http
 
 **1\. Access the AI Endpoints section**
 
-Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section at the top, select your desired Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Endpoints`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, select your desired Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Endpoints`{.action}.
 
 ![AI Endpoints section](images/api-access-key-creation-1.png){.thumbnail}
 
@@ -47,11 +47,11 @@ Once you have filled in the required information, click the `Create`{.action} bu
 
 *Note that this access key can be [revoked](#revoke-your-api-access-key) at any time.*
 
-**3\. Store created API access key**
+**3\. Store the created API access key**
 
 Once created, the key will be displayed in the API keys table. You will see your new access key in this table, with its information (name, description, expiry date). 
 
-Your key value will be displayed and you can copy it by clicking on the copy icon.
+Your key value will be displayed and you can copy it by clicking the copy icon.
 
 > [!primary]
 >
@@ -150,7 +150,7 @@ Once done, you can confirm its deletion by trying to send a request using your r
 
 When using AI Endpoints, the **following rate limits apply**:
 
-- **Anonymous**: 2 requests per minute, per by IP and per model.
+- **Anonymous**: 2 requests per minute, per IP and per model.
 - **Authenticated with an API access key**: 400 requests per minute, per PCI project and per model.
 
 If you exceed this limit, a **429 error code** will be returned.

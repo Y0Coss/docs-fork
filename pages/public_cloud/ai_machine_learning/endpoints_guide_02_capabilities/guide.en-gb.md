@@ -42,7 +42,7 @@ This page provides the technical features, capabilities and limitations of [AI E
 
 AI Endpoints is designed to be compatible with the OpenAI API, making it easy to integrate with existing applications and workflows. This compatibility means that you can take advantage of AI capabilities without having to make major changes to your existing technology stack, allowing you to get up and running quickly and easily.
 
-### Flexibile usage
+### Flexible usage
 
 AI Endpoints' APIs are language-agnostic. It enables developers to use any programming language or technology of their choice when working with our APIs, providing them with the freedom to build and integrate AI capabilities according to their requirements and preferences.
 
@@ -52,8 +52,8 @@ AI Endpoints' APIs are language-agnostic. It enables developers to use any progr
 
 When using AI Endpoints, the **following rate limits apply**:
 
-- **Anonymous**: 2 requests per minute, per by IP and per model.
-- **Authenticated with an API access key**: 400 requests per minute, per PCI project and per model.
+- **Anonymous**: 2 requests per minute, per IP and per model.
+- **Authenticated with an API access key**: 400 requests per minute, per Public Cloud project and per model.
 
 If you exceed this limit, a **429 error code** will be returned.
 
