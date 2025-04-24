@@ -1,7 +1,7 @@
 ---
 title: 'Configurar el vRack entre Public Cloud y un servidor dedicado'
 excerpt: 'Cómo configurar una red privada entre una instancia de Public Cloud y un servidor dedicado'
-updated: 2024-11-08
+updated: 2025-04-28
 ---
 
 ## Objetivo

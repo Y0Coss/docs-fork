@@ -1,7 +1,7 @@
 ---
 title: "Bare Metal 3-AZ Region - Vorstellung des Angebots"
 excerpt: "Entdecken Sie den Bare Metal 3-AZ Dienst, der eine unübertroffene Hochverfügbarkeit und Redundanz zwischen drei Rechenzentren bietet"
-updated: 2024-05-30
+updated: 2025-04-28
 ---
 
 ## Ziel

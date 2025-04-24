@@ -1,7 +1,7 @@
 ---
 title: "Kimsufi und So you Start Kunden - Einführung in das OVHcloud Kundencenter"
 excerpt: "Navigationshilfe für Ihr OVHcloud Kundencenter"
-updated: 2024-04-04
+updated: 2025-04-28
 ---
 
 > [!primary]

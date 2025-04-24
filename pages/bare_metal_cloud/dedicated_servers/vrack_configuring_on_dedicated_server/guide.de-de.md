@@ -1,7 +1,7 @@
 ---
 title: "vRack für Dedicated Server konfigurieren"
 excerpt: "Erfahren Sie hier, wie Sie ein vRack auf zwei oder mehr Servern einrichten"
-updated: 2025-03-24
+updated: 2025-04-28
 ---
 
 ## Ziel

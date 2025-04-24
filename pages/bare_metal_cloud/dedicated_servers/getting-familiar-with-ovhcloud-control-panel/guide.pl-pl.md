@@ -1,7 +1,7 @@
 ---
 title: "Klienci Kimsufi i So you Start - Zapoznaj się z Panelem klienta OVHcloud"
 excerpt: "Dowiedz się, jak zarządzać usługami w Panelu klienta OVHcloud"
-updated: 2024-04-04
+updated: 2025-04-28
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntiSpam - Migliori pratiche e sblocco di un indirizzo IP
 excerpt: Come sbloccare un indirizzo IP bloccato per SPAM
-updated: 2022-10-17
+updated: 2025-04-28
 ---
 
 > [!primary]

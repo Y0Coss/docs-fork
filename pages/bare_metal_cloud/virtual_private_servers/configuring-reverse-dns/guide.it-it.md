@@ -1,7 +1,7 @@
 ---
 title: "Come configurare il reverse DNS del tuo server (record PTR)"
 excerpt: Copri come impostare la risoluzione reverse DNS del tuo indirizzo IP dal tuo Spazio Cliente OVHcloud
-updated: 2024-11-05
+updated: 2025-04-28
 ---
 
 > [!primary]

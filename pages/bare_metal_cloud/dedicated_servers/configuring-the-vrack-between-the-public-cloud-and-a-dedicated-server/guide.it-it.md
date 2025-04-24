@@ -1,7 +1,7 @@
 ---
 title: 'Configurare la vRack tra un’istanza Public Cloud e un server dedicato'
 excerpt: 'Scopri come configurare una rete privata tra un’istanza Public Cloud e un server dedicato'
-updated: 2024-11-08
+updated: 2025-04-28
 ---
 
 ## Obiettivo

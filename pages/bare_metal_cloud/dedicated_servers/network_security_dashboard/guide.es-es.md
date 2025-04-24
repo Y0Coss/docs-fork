@@ -1,7 +1,7 @@
 ---
 title: "Monitorización de los ataques DDoS con el Network Security Dashboard"
 excerpt: "Aprenda a navegar por el panel de control de seguridad de red"
-updated: 2023-12-19
+updated: 2025-04-28
 ---
 
 > [!primary]

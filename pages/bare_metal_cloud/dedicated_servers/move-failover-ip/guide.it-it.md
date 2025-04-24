@@ -1,7 +1,7 @@
 ---
 title:  Trasferisci un Additional IP
 excerpt: Questa guida ti mostra come spostare un Additional IP dallo Spazio Cliente OVHcloud o via API OVHcloud
-updated: 2024-12-04
+updated: 2025-04-28
 ---
 
 > [!primary]

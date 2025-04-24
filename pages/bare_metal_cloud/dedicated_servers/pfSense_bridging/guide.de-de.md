@@ -1,7 +1,7 @@
 ---
 title: Tutorial - Configuring pfSense network bridge (EN)
 excerpt: This guide will show you how to do IP bridging on a pfSense virtual machine
-updated: 2022-12-20
+updated: 2025-04-28
 ---
 
 ## Objective

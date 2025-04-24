@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP
 excerpt: Découvrez nos bonnes pratiques antispam et comment débloquer une adresse IP bloquée pour SPAM
-updated: 2022-10-17
+updated: 2025-04-28
 ---
 
 ## Objectif

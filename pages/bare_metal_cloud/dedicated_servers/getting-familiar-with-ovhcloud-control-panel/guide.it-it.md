@@ -1,7 +1,7 @@
 ---
 title: Clienti Kimsufi e So you Start - familiarizzarsi con lo Spazio Cliente OVHcloud
 excerpt: Come navigare nello Spazio Cliente OVHcloud
-updated: 2024-04-04
+updated: 2025-04-28
 ---
 
 > [!primary]

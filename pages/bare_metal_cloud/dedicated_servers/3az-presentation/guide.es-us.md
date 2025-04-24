@@ -1,7 +1,7 @@
 ---
 title: "Bare Metal 3-AZ Region - Presentación del producto"
 excerpt: 'Descubra el servicio Bare Metal 3-AZ, que ofrece una alta disponibilidad y redundancia sin igual entre tres datacenters'
-updated: 2024-05-30
+updated: 2025-04-28
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: "Clientes Kimsufi y So you Start: familiarizarse con el área de cliente de OVHcloud"
 excerpt: Esta guía explica cómo navegar por el área de cliente de OVHcloud.
-updated: 2024-04-04
+updated: 2025-04-28
 ---
 
 > [!primary]

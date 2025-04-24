@@ -1,7 +1,7 @@
 ---
 title: OVHcloud AntiSpam - Best Practices und Entsperren einer IP-Adresse
 excerpt: Erfahren Sie hier unsere AntiSpam-Maßnahmen und wie Sie eine gesperrte IP-Adresse freigeben können
-updated: 2022-10-17
+updated: 2025-04-28
 ---
 
 > [!primary]
