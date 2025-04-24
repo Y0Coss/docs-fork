@@ -111,7 +111,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous
 
 - **Exchange** : dans `Microsoft`{.action} puis sur `Exchange`{.action} et sélectionnez la plateforme concernée. Cliquez sur l'onglet `Comptes e-mail`{.action}.
 
-- **Emails** (MXplan): dans `Emails`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
+- **MX Plan**: dans `MX Plan`{.action}, sélectionnez la plateforme concernée puis cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 Pour ajouter un alias à votre compte e-mail, suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
 
@@ -141,7 +141,10 @@ Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le men
 
 ### Créer une redirection ou un alias sur un nom de domaine sans offre e-mail <a name="mxplanlegacy"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`. Dirigez-vous dans la sections `Emails`{.action} :
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+1. Rendez-vous dans la partie `Web Cloud`{.action}.
+1. Cliquez sur `MX Plan`{.action}.
+1. Sélectionnez le domaine concerné.
 
 La méthode pour créer un alias ou une redirection est strictement la même. Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
 

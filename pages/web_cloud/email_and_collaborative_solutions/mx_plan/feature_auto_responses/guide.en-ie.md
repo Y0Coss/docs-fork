@@ -23,7 +23,11 @@ This OVHcloud feature allows you to set up an automatic email responder (auto-re
 
 ### Creating an auto-reply
 
-Log in to your [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action} at the top. Select `Emails`{.action}, then choose the domain name concerned. Open the tab `Emails`{.action}, then click on the button `Manage auto-replies`{.action} on the right.
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Open the `Web Cloud`{.action} section.
+1. Click `MX Plan`{.action}.
+1. Select the domain concerned.
+1. Open the tab `Emails`{.action}, then click on the button `Manage auto-replies`{.action} on the right.
 
 You will be redirected to the `Manage auto-replies` section where all of the email responders for this domain name are listed.
 

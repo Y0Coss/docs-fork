@@ -23,7 +23,11 @@ Lorsque vous êtes absent et que vous n'êtes pas en mesure de consulter votre a
 
 ### Création d'une réponse automatique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager). Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}. Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+1. Rendez-vous dans la partie `Web Cloud`{.action}.
+1. Cliquez sur `MX Plan`{.action}.
+1. Sélectionnez le domaine concerné.
+1. Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
 
 Vous serez redirigé vers la fenêtre `Gestion des répondeurs` affichant l'ensemble des réponses automatiques e-mail en place sur votre offre e-mail.
 
