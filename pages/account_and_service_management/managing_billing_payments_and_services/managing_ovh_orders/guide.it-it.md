@@ -1,7 +1,7 @@
 ---
 title: Gestire gli ordini OVHcloud
 excerpt: Come monitorare i tuoi ordini dallo Spazio Cliente OVHcloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Obiettivo

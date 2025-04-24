@@ -1,7 +1,7 @@
 ---
 title: Preguntas frecuentes sobre el seguimiento del pedido de OVHcloud
 excerpt: Encuentre las preguntas más frecuentes sobre el seguimiento de pedidos de OVHcloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objetivo

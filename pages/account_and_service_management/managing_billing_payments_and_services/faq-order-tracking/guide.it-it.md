@@ -1,7 +1,7 @@
 ---
 title: "FAQ sullo stato dell'ordine OVHcloud"
 excerpt: "Scopri le domande più frequenti sul monitoraggio degli ordini OVHcloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Obiettivo

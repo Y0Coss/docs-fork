@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie zamówieniami w OVHcloud
 excerpt: Dowiedz się, jak zarządzać zamówieniami na usługi w OVHcloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Wprowadzenie

@@ -1,7 +1,7 @@
 ---
 title: Best practices for managing your OVHcloud services and account
 excerpt: Find out about the best ways to manage your invoices, orders, payment methods and account
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objective

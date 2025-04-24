@@ -1,7 +1,7 @@
 ---
 title: FAQ sur le suivi de commande OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur le suivi de commande OVHcloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objectif

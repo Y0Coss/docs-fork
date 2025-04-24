@@ -1,7 +1,7 @@
 ---
 title: OVHcloud order tracking FAQ
 excerpt: Find the most frequently asked questions about OVHcloud order tracking
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objective

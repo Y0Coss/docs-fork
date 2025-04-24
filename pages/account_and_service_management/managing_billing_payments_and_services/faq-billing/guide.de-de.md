@@ -1,7 +1,7 @@
 ---
 title: FAQ für Abrechnung und Zahlung
 excerpt: Hier finden Sie die häufigsten Fragen zu Abrechnung und Zahlung
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Ziel

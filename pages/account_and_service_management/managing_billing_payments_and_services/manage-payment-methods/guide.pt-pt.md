@@ -1,7 +1,7 @@
 ---
 title: Gerir os meus métodos de pagamento
 excerpt: Aprenda a adicionar e gerir os seus métodos de pagamento dentro da Área de Cliente OVHcloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objetivo

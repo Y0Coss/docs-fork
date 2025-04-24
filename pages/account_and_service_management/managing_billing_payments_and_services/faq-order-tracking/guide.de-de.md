@@ -1,7 +1,7 @@
 ---
 title: FAQ zur Nachverfolgung der Bestellung von OVHcloud
 excerpt: Hier finden Sie die häufigsten Fragen zur Auftragsverfolgung von OVHcloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Ziel

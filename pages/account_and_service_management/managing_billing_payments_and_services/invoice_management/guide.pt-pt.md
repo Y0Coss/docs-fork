@@ -1,7 +1,7 @@
 ---
 title: Gerir as minhas faturas OVHcloud
 excerpt: Saiba como gerir as suas faturas e pagamentos na OVHcloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objetivo

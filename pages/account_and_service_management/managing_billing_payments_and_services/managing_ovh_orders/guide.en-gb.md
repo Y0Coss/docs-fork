@@ -1,7 +1,7 @@
 ---
 title: Managing OVHcloud orders
 excerpt: Find out how to manage your OVHcloud orders
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objective

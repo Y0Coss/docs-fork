@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie sposobami płatności
 excerpt: Dowiedz się, jak dodawać sposoby płatności do Panelu klienta OVHcloud i zarządzać nimi
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Wprowadzenie

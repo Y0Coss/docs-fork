@@ -1,7 +1,7 @@
 ---
 title: Meine Zahlungsarten verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Zahlungsarten in Ihrem OVHcloud Kundencenter hinzufügen und verwalten können
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Ziel

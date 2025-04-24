@@ -1,7 +1,7 @@
 ---
 title: Best Practices für die Verwaltung Ihrer Dienstleistungen und Ihres OVHcloud Accounts
 excerpt: Erfahren Sie hier alles zur Verwaltung Ihrer Rechnungen, Bestellungen, Zahlungsmittel und Kunden-Accounts
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Ziel

@@ -1,7 +1,7 @@
 ---
 title: Managing payment methods
 excerpt: 'Find out how to add and manage payment methods within the OVHcloud Control Panel'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objective
