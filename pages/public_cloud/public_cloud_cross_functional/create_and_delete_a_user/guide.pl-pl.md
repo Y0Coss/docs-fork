@@ -1,7 +1,7 @@
 ---
 title: "Zarządzanie użytkownikami OpenStack"
 excerpt: Dowiedz się, jak zarządzać użytkownikami OpenStack w Panelu klienta OVHcloud i interfejsie Horizon
-updated: 2025-04-02
+updated: 2025-04-24
 ---
 
 ## Wprowadzenie
@@ -23,7 +23,7 @@ W interfejsie Horizon możesz zdefiniować hasło dla każdego użytkownika. Uwa
 
 ### Tworzenie użytkownika OpenStack
 
-Zaloguj się do Panelu klienta OVHcloud i otwórz swój projekt `Public Cloud`{.action}. W menu po lewej stronie kliknij `Users & Roles`{.action} w rubryce "Project management". 
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. W menu po lewej stronie kliknij `Użytkownicy i role`{.action} w rubryce **Ustawienia**. 
 
 Kliknij przycisk `Utwórz użytkownika`{.action}.
 

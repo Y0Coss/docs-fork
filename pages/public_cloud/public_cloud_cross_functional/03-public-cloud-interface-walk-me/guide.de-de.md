@@ -1,7 +1,7 @@
 ---
 title: "Einführung in das Public Cloud Interface"
 excerpt: "Erfahren Sie hier, wie Sie das Public Cloud Interface verwenden"
-updated: 2025-04-17
+updated: 2025-04-23
 ---
 
 ## Ziel
@@ -19,19 +19,19 @@ Sie haben gerade Ihr Public Cloud Projekt erstellt und möchten mehr über das B
 
 Sobald Ihr erstes Public Cloud Projekt erstellt wurde, werden Sie zum primären Public Cloud Interface weitergeleitet.
 
-![Public Cloud Interface](images/main-interface.png){.thumbnail}
+![Public Cloud Interface](images/main-interface-2025.png){.thumbnail}
 
 ### Zugriff auf Ihre OVHcloud Account-Informationen
 
 Die Einstellungen Ihres OVHcloud Accounts bleiben jederzeit verfügbar, ebenso wie Benachrichtigungen oder die Spracheinstellung im Kundencenter.
 
-![Public Cloud Interface - Account Menü](images/account.png){.thumbnail}
+![Public Cloud Interface - Account Menü](images/account-2025.png){.thumbnail}
 
 ### Ihr Public Cloud Projekt
 
 Da es möglich ist, mehrere Projekte (je nach Ihren Quotas) zu verwenden, werden Projektname und -ID links angezeigt. Somit ist stets ersichtlich, welches Projekt bearbeitet wird.
 
-![Projektmenü](images/project-menu.png){.thumbnail}
+![Projektmenü](images/project-menu-2025.png){.thumbnail}
 
 Die Projekt-ID kann bei der Verwendung der CLI, manchen Support-Anfragen oder bei anderen Anfragen erforderlich sein. Sie können sie kopieren, indem Sie rechts auf das Icon klicken.
 
@@ -41,46 +41,48 @@ Sie können den Projektnamen im Tab `Einstellungen`{.action} bearbeiten. Geben S
 
 ### Das Public Cloud Hauptmenü
 
-![Public Cloud Interface - Hauptmenü](images/main-menu.png){.thumbnail}
+![Public Cloud Interface - Hauptmenü](images/main-menu-2025.png){.thumbnail}
 
 |Abschnitt|Beschreibung der Optionen|
 |---|---|
 |**Compute**|In diesem Bereich können Sie Instanzen erzeugen; diese Cloud Server sind *on demand* verfügbar.|
-|**Storage**|In diesem Abschnitt finden Sie verschiedene Storage- und Datenbanklösungen, die jeweils einem bestimmten Bedarf und einer bestimmten Nutzung entsprechen.|
+|**Storage und Backups**|In diesem Abschnitt finden Sie verschiedene Storage- und Datenbanklösungen, die jeweils einem bestimmten Bedarf und einer bestimmten Nutzung entsprechen.|
 |**Network**|In diesem Abschnitt können Sie Ihre Public Cloud Ressourcen untereinander oder mit anderen OVHcloud Diensten vernetzen.|
-|**Container and Orchestration**|Diese Rubrik bietet Ihnen verschiedene Tools zur Automatisierung Ihrer Architekturen und zur Erhöhung der Flexibilität.|
+|**Container & Orchestrierung**|Diese Rubrik bietet Ihnen verschiedene Tools zur Automatisierung Ihrer Architekturen und zur Erhöhung der Flexibilität.|
+|**Datenbanken und Analysen**|Diese Dienste unterstützen Sie bei der Lösung von Big Data und Data Analytics Problemen.|
 |**AI & Machine Learning**|In diesem Abschnitt finden Sie OVHcloud Tools für künstliche Intelligenz.|
-|**Data & Analytics**|Diese Dienste unterstützen Sie bei der Lösung von Big Data und Data Analytics Problemen.|
+
 
 ### Shortcuts
 
 Im Hauptsegment finden Sie Direktlinks zum schnellen Zugriff auf die Konfigurationsassistenten und relevante Anleitungen.
 
-![Public Cloud Interface - verkürztes Menü](images/shortcuts.png){.thumbnail}
+![Public Cloud Interface - verkürztes Menü](images/shortcuts-2025.png){.thumbnail}
 
 #### Assistent zur Erstellung von Ressourcen
 
 Für jede Ressource, die Sie im Kundencenter erstellen, wird Ihnen ein Konfigurationsassistent zur Verfügung gestellt, mit dem Sie die Ressource nach Ihren Bedürfnissen einrichten können.
 <br>Die Einrichtungsschritte umfassen meistens den Standort der Ressource, das Modell, einige individuelle Parameter und in manchen Fällen den Abrechnungsmodus auswählen.
 
-![Public Cloud Interface - Konfigurationsassistent](images/wizard.png){.thumbnail}
+![Public Cloud Interface - Konfigurationsassistent](images/wizard-2025.png){.thumbnail}
 
 ### Die Verwaltungswerkzeuge
 
 In Ihrem Public Cloud Projekt sind mehrere Management-Tools verfügbar, die sich im unteren Bereich der linken Menüleiste befinden.
 
-![Public Cloud Interface - Verwaltungswerkzeuge](images/management-tools.png){.thumbnail}
+![Public Cloud Interface - Verwaltungswerkzeuge](images/management-tools-2025.png){.thumbnail}
 
 |Menüeintrag|Beschreibung|
 |---|---|
 |**Horizon**|Dies ist die unveränderte [grafische Oberfläche](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon), die für Openstack verfügbar ist. Benutzer, die mit diesem Interface vertraut sind, können es wie gewohnt verwenden.|
-|**Users & Roles**|Ermöglicht die [Erstellung von Benutzern](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) und deren Berechtigungen. Diese Benutzer können direkt auf die APIs oder das Horizon-Interface zugreifen. Sie können zum Beispiel einen Benutzer für Ihre klassischen Wartungsarbeiten und einen Benutzer für Automatisierungswerkzeuge wie Terraform erstellen.|
-|**Quota & Regions**|Dieses Tool erlaubt es Ihnen, die Standorte und die Begrenzungen der für Ihr Projekt verfügbaren Ressourcen zu steuern.<br><br>**Quota**: Unser System setzt nach bestimmten Kriterien (Anzahl bereits bezahlter Rechnungen, Verwendung anderer OVHcloud Produkte) Quotas (Limitierungen) für die Neuerstellung von Ressourcen ein, um Probleme mit Zahlungsausfällen zu vermeiden. Im Normalfall erhöht das System Ihre Quotas automatisch, wenn bestimmte Kriterien erfüllt werden. Hier können Sie beantragen, [eine Quota manuell zu erhöhen](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota#manuelle-erhohung-der-ressourcenquote).<br><br>**Die Standorte**: Die Public Cloud ist an mehreren Standorten weltweit verfügbar. Darüber hinaus kann jeder Standort mehrere "Regionen" (OpenStack-spezifisches Konzept) umfassen. Für einen europäischen Kunden beispielsweise ist die APAC-Zone (Asien-Pazifik) standardmäßig deaktiviert. Bei Bedarf können Sie über dieses Menü neue Regionen aktivieren.|
-|**SSH Keys**|Ein Werkzeug, mit dem Sie Ihre [SSH-Schlüssel](/pages/public_cloud/compute/creating-ssh-keys-pci) zentral verwalten können.|
-|**Billing Control**|Public Cloud funktioniert nach dem Prinzip *pay as you go*, wobei die Rechnungen am Ende des Monats ausgestellt werden. In [diesem Menü](/pages/public_cloud/public_cloud_cross_functional/analyze_billing) können Sie Ihren aktuellen Verbrauch einsehen, eine Prognose für die nächste Rechnung einsehen und natürlich Ihre vorherigen Rechnungen einsehen.|
-|**Credit and Vouchers**|Dieses Menü erlaubt es Ihnen, den Verbrauch eines Coupons einzusehen, einen Coupon hinzuzufügen oder Guthaben direkt zu Ihrem Public Cloud Projekt [hinzuzufügen](/pages/account_and_service_management/managing_billing_payments_and_services/add_cloud_credit_to_project).|
-|**Contacts and Rights**|Neben der Möglichkeit, den technischen Kontakt oder den Rechnungskontakt Ihres Projekts zu ändern, können Sie weitere [Kontakte (OVHcloud Kunden-Account) hinzufügen](/pages/public_cloud/compute/change_project_contacts), um Ihr Projekt technisch zu verwalten. Sie können auch Benutzer mit Berechtigung *read-only* hinzufügen.|
-|**Project settings**|Dieses Tool erlaubt es Ihnen, die allgemeinen Einstellungen des Projekts wie den Namen, die Konfiguration als "Standardprojekt Ihres Accounts" sowie HDS-Kompatibilität zu konfigurieren oder Ihr [Public Cloud Projekt zu entfernen](/pages/public_cloud/public_cloud_cross_functional/delete_a_project).|
+|**User und Rollen**|Ermöglicht die [Erstellung von Benutzern](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) und deren Berechtigungen. Diese Benutzer können direkt auf die APIs oder das Horizon-Interface zugreifen. Sie können zum Beispiel einen Benutzer für Ihre klassischen Wartungsarbeiten und einen Benutzer für Automatisierungswerkzeuge wie Terraform erstellen.|
+|**Quota und Regionen**|Dieses Tool erlaubt es Ihnen, die Standorte und die Begrenzungen der für Ihr Projekt verfügbaren Ressourcen zu steuern.<br><br>**Quota**: Unser System setzt nach bestimmten Kriterien (Anzahl bereits bezahlter Rechnungen, Verwendung anderer OVHcloud Produkte) Quotas (Limitierungen) für die Neuerstellung von Ressourcen ein, um Probleme mit Zahlungsausfällen zu vermeiden. Im Normalfall erhöht das System Ihre Quotas automatisch, wenn bestimmte Kriterien erfüllt werden. Hier können Sie beantragen, [eine Quota manuell zu erhöhen](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota#manuelle-erhohung-der-ressourcenquote).<br><br>**Die Standorte**: Die Public Cloud ist an mehreren Standorten weltweit verfügbar. Darüber hinaus kann jeder Standort mehrere "Regionen" (OpenStack-spezifisches Konzept) umfassen. Für einen europäischen Kunden beispielsweise ist die APAC-Zone (Asien-Pazifik) standardmäßig deaktiviert. Bei Bedarf können Sie über dieses Menü neue Regionen aktivieren.|
+|**SSH-Schlüssel**|Ein Werkzeug, mit dem Sie Ihre [SSH-Schlüssel](/pages/public_cloud/compute/creating-ssh-keys-pci) zentral verwalten können.|
+|**Abrechnung**|Public Cloud funktioniert nach dem Prinzip *pay as you go*, wobei die Rechnungen am Ende des Monats ausgestellt werden. In [diesem Menü](/pages/public_cloud/public_cloud_cross_functional/analyze_billing) können Sie Ihren aktuellen Verbrauch einsehen, eine Prognose für die nächste Rechnung einsehen und natürlich Ihre vorherigen Rechnungen einsehen.|
+|**Guthaben & Gutscheine**|Dieses Menü erlaubt es Ihnen, den Verbrauch eines Coupons einzusehen, einen Coupon hinzuzufügen oder Guthaben direkt zu Ihrem Public Cloud Projekt [hinzuzufügen](/pages/account_and_service_management/managing_billing_payments_and_services/add_cloud_credit_to_project).|
+|**Savings Plan**| Dieses Preismodell bietet Rabatte auf bestimmte Ressourcen, wenn Sie sich für Vertragslaufzeiten von bis zu 36 Monaten entscheiden.|
+|**Kontakt & Rechte**|Neben der Möglichkeit, den technischen Kontakt oder den Rechnungskontakt Ihres Projekts zu ändern, können Sie weitere [Kontakte (OVHcloud Kunden-Account) hinzufügen](/pages/public_cloud/compute/change_project_contacts), um Ihr Projekt technisch zu verwalten. Sie können auch Benutzer mit Berechtigung *read-only* hinzufügen.|
+|**Projektparameter**|Dieses Tool erlaubt es Ihnen, die allgemeinen Einstellungen des Projekts wie den Namen, die Konfiguration als "Standardprojekt Ihres Accounts" sowie HDS-Kompatibilität zu konfigurieren oder Ihr [Public Cloud Projekt zu entfernen](/pages/public_cloud/public_cloud_cross_functional/delete_a_project).|
 
 ### Verwaltung von Dienstleistungen
 
