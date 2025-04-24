@@ -56,7 +56,7 @@ Isto permitir-lhe-á escolher entre as nossas soluções VPS:
 
 Gerir um VPS requer conhecimentos básicos de administração de servidores. Estas noções são essenciais para gerir o sistema operativo (Linux ou Windows) instalado na máquina e configurar as aplicações. Acha que precisa de um VPS, mas considera não possuir as competências necessárias? Convidamo-lo a contactar um dos nossos [parceiros](/links/partner).
 
-Se deseja usufruir de recursos garantidos sem conhecimentos em administração de servidores, aconselhamos os nossos [alojamentos web Performance](/links/hosting-performance-offer).
+Se deseja usufruir de recursos garantidos sem conhecimentos em administração de servidores, aconselhamos os nossos [alojamentos web Performance](/links/web/hosting-performance-offer).
 
 ### Como aceder ao meu VPS?
 
