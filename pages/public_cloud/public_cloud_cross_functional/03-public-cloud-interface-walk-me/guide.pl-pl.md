@@ -1,7 +1,7 @@
 ---
 title: "Poznaj interfejs Public Cloud"
 excerpt: "Przewodnik po interfejsie Public Cloud do znajdowania poszczególnych sekcji"
-updated: 2025-04-23
+updated: 2025-04-24
 ---
 
 ## Wprowadzenie

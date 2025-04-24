@@ -1,7 +1,7 @@
 ---
 title: "Einführung in das Public Cloud Interface"
 excerpt: "Erfahren Sie hier, wie Sie das Public Cloud Interface verwenden"
-updated: 2025-04-23
+updated: 2025-04-24
 ---
 
 ## Ziel

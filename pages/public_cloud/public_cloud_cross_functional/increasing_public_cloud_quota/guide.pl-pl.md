@@ -1,7 +1,7 @@
 ---
 title: 'Zwiększenie limitów Public Cloud'
 excerpt: 'Dowiedz się, jak zwiększyć limity Public Cloud'
-updated: 2025-04-23
+updated: 2025-04-24
 ---
 
 > [!primary]

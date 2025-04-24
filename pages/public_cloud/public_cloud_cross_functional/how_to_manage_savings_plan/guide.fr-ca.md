@@ -1,7 +1,7 @@
 ---
 title: Comment gérer un Savings Plan
 excerpt: Découvrez comment créer un Savings Plan avec différents outils
-updated: 2025-04-23
+updated: 2025-04-24
 ---
 
 <style>

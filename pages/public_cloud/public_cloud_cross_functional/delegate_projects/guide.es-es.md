@@ -1,7 +1,7 @@
 ---
 title: Delegar proyectos
 excerpt: Cómo transferir permisos de acceso a un proyecto de Public Cloud a otras cuentas de OVHcloud
-updated: 2025-04-23
+updated: 2025-04-24
 ---
 
 > [!primary]

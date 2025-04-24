@@ -1,7 +1,7 @@
 ---
 title: Delegar projetos
 excerpt: "Saiba como delegar direitos de acesso a um projeto Public Cloud noutras contas da OVHcloud"
-updated: 2025-04-23
+updated: 2025-04-24
 ---
 
 > [!primary]

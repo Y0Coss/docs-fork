@@ -1,7 +1,7 @@
 ---
 title: Delegating projects
 excerpt: Find out how to delegate access rights for a Public Cloud project to other OVHcloud accounts
-updated: 2025-04-23
+updated: 2025-04-24
 ---
 
  
