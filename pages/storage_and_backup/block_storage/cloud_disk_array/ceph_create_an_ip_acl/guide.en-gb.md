@@ -1,19 +1,32 @@
 ---
 title: IP ACL creation
 excerpt: This guide shows you how to create an IP ACL to allow access to your ceph cluster.
-updated: 2018-03-26
+updated: 2025-0E-26
 ---
 
-## Using web interface
+## Objective
+
+This guide shows you how to create an IP ACL to allow access to your ceph cluster., using the OVHcloud Control Panel or the OVHcloud API.
+
+## Requirements
+
+- A [Cloud Disk Array](/links/storage/cloud-disk-array) solution
+- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+
+## Instructions
+
+### Using web interface
 
 > [!primary]
 >
 > Using web interface is the easiest way to create an IP ACL.
 >
 
-First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster. On the bottom right, you will find the existing ACL. By default there is no ACL.
+First, log into your [OVHcloud Control Panel](/links/manager) and click on `Bare Metal Cloud`{.action}. In the section called `STORAGE AND BACKUPS`, then on the `Cloud Disk Array`{.action} service.
 
-![Ceph pools](images/create_an_ip_acl_1.png){.thumbnail}
+Here you'll find the existing ACL in `IP access control`{.action}, by default there is no ACL.
+
+![Ceph pools](images/ceph-add-ip-1.png){.thumbnail}
 
 Get your ip address.
 
@@ -26,13 +39,13 @@ admin@server:~$ ip -4 a
 
 Add your IP.
 
-![Ceph pools](images/create_an_ip_acl_2.png){.thumbnail}
+![Ceph pools](images/ceph-add-ip-2.png){.thumbnail}
 
 And create the IP ACL.
 
 After the pool creation, you are back to manager. You can see that cluster status has changed because the ACL is being created.
 
-## Using API
+### Using API
 
 > [!api]
 >
