@@ -1,7 +1,7 @@
 ---
 title: "Erstellung Ihres ersten OVHcloud Public Cloud Projekts"
 excerpt: "Erfahren Sie hier, wie Sie Ihr erstes Public Cloud Projekt über das OVHcloud Kundencenter erstellen"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

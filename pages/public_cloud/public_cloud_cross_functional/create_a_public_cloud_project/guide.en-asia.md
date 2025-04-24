@@ -1,7 +1,7 @@
 ---
 title: 'Creating your first OVHcloud Public Cloud project'
 excerpt: 'Find out how to create your first Public Cloud project via the OVHcloud Control Panel'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "How to use the Public Cloud interface"
 excerpt: "Guided tour of the Public Cloud interface to explore the different sections"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objective

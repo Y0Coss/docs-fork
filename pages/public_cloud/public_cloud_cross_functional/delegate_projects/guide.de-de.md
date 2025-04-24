@@ -1,7 +1,7 @@
 ---
 title: Projekte delegieren
 excerpt: Erfahren Sie hier, wie Sie Zugriffsrechte auf ein Public Cloud Projekt anderen Kunden-Accounts übertragen
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

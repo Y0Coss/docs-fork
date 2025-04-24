@@ -1,7 +1,7 @@
 ---
 title: 'Augmenter les quotas Public Cloud'
 excerpt: 'Découvrez comment demander l’augmentation de vos quotas Public Cloud'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: "Se familiariser avec l'interface Public Cloud"
 excerpt: "Visite guidée de l'interface Public Cloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objectif

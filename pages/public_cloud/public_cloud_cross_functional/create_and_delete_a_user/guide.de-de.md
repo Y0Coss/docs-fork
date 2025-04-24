@@ -1,7 +1,7 @@
 ---
 title: Verwalten von OpenStack-Benutzern
 excerpt: Erfahren Sie hier, wie Sie OpenStack-Benutzer über das OVHcloud Kundencenter und das Horizon-Interface verwalten
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Ziel

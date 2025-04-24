@@ -1,7 +1,7 @@
 ---
 title: "Déléguer des projets"
 excerpt: "Découvrez comment déléguer des droits d'accès à un projet Public Cloud à d'autres comptes OVHcloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objectif

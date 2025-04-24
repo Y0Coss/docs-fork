@@ -1,7 +1,7 @@
 ---
 title: "Gestión de usuarios OpenStack"
 excerpt: Cómo gestionar los usuarios de OpenStack desde el área de cliente de OVHcloud y en Horizon
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objetivo

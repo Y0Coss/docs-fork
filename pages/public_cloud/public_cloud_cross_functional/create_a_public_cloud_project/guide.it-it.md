@@ -1,7 +1,7 @@
 ---
 title: 'Creazione del tuo primo progetto Public Cloud OVHcloud'
 excerpt: 'Come creare il tuo primo progetto Public Cloud tramite lo Spazio Cliente OVHcloud'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]
