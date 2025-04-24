@@ -1,7 +1,7 @@
 ---
 title: "Wie lösche ich eine OVHcloud DNS-Zone?"
 excerpt: "Diese Anleitung erklärt, wie Sie eine DNS-Zone für Ihre Domain über Ihr OVHcloud Kundencenter"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Ziel

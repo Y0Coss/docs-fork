@@ -1,7 +1,7 @@
 ---
 title: "Gerir o histórico de uma zona DNS"
 excerpt: "Saiba como consultar, comparar, descarregar e restaurar os seus backups de zona DNS"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objetivo

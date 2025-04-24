@@ -1,7 +1,7 @@
 ---
 title: "Configurar un registro MX para la gestión del correo"
 excerpt: "Descubra cómo configurar un registro MX en un dominio en OVHcloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objetivo

@@ -1,6 +1,6 @@
 ---
 title: 'Résoudre une erreur sur un nom de domaine'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objectif

@@ -1,6 +1,6 @@
 ---
 title: 'Resolver um erro num domínio'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objetivo

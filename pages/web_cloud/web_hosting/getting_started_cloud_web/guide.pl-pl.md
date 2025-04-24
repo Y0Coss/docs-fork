@@ -1,7 +1,7 @@
 ---
 title: "Pierwsze kroki z hostingiem Cloud Web"
 excerpt: "Dowiedz się, jak rozpocząć korzystanie z hostingu Cloud Web"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Wprowadzenie

@@ -1,6 +1,6 @@
 ---
 title: "Fehler bei Domain-Operationen beheben"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Ziel
