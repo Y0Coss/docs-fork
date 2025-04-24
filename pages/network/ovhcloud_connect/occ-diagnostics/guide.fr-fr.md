@@ -1,62 +1,93 @@
 ---
-title: How to initiate a diagnostic for OVHcloud Connect from the OVHcloud Control Panel
-excerpt: Find out how to get a status report of your OVHcloud Connect services
-updated: 2025-04-10
+title : Comment lancer un diagnostic OVHcloud Connect depuis votre espace client
+excerpt: Découvrez comment obtenir un rapport de l'état de vos services OVHcloud Connect
+mise à jour : 10/04/2025
 ---
 
-## Objective
+## Objectif
 
-With OVHcloud Connect, you can link your company network to your private OVHcloud vRack network, without creating a VPN tunnel through the internet. This will give you a quicker, more stable connection with guaranteed bandwidth. 
+Avec OVHcloud Connect, vous pouvez relier votre réseau d'entreprise à votre réseau privé OVHcloud vRack, sans créer de tunnel VPN à travers Internet. Vous bénéficiez ainsi d’une connexion plus rapide et plus stable, avec une bande passante garantie.
 
-**This guide will show you how to get a status report of your OVHcloud Connect services via the OVHcloud Control Panel.**
+**Ce guide vous explique comment obtenir un rapport de l'état de vos services OVHcloud Connect depuis votre espace client.**
 
 
-## Requirements
+## Prérequis
 
-- an [OVHcloud Connect solution](https://www.ovhcloud.com/en-gb/network-security/ovhcloud-connect/) with a valid POP configuration
+- une [solution OVHcloud Connect](https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/) avec une configuration POP valide
 
-## List of available diagnostics
+## Liste des diagnostics disponibles
 
-### Layer 3 mode
+### Mode L3
 
-- **Default**: Fetches the BGP session states and all related information
-- **Routes**: Fetches the routing table learned by OVHcloud via BGP
-- **Advertised-Routes**: Fetches the routing table advertised by OVHcloud via BGP
+- **Par défaut** : Extrait les états de session BGP et toutes les informations associées
+- **Routes** : Récupère la table de routage apprise par OVHcloud via BGP
+- **Advertised-Routes** : Récupère la table de routage annoncée par OVHcloud via BGP
 
-### Layer 2 mode
+### Mode L2 
 
-- ***Ask for access to an OCC service which can use layer 2 mode, or simply the list of available diagnostics on this mode***
+- **Adresse MAC** : Extrait la liste des adresses MAC des périphériques réseau et du vRack
 
 ## Instructions
 
-In your OVHcloud Control Panel, in the Network section, you can find the list of your OVHcloud Connect services. 
+### Mode L3
+
+Dans votre espace client OVHcloud, dans la section Réseau, vous pouvez retrouver la liste de vos services OVHcloud Connect.
 
 ![OCC Control Panel](images/OCC_cpanel.png){.thumbnail}
 
-Open the service for which you want to get a diagnosis:
+Ouvrez le service pour lequel vous souhaitez obtenir un diagnostic :
 
-![OCC Service](images/OCC_service.png){.thumbnail}
+![Service OCC](images/OCC_service_BGP.png){.thumbnail}
 
-At the bottom of the "POP Configuration" panel, you will find a segment named "Diagnostic POP", and an ellipsis **(...)** button. Click it, and then select "BGP Peering Test":
+En bas du panneau « Configuration POP », vous trouverez un segment nommé « Diagnostic POP » et un bouton de sélection **(...)**. Cliquez dessus, puis sélectionnez « Test BGP Peering » :
 
-![OCC Service Test Button](images/OCC_service_test_button.png){.thumbnail}
+![Bouton de test du service OCC](images/OCC_service_test_button_BGP.png){.thumbnail}
 
-A window will open. Select the type of diagnostics you wish to use, and click "launch diagnostic":
+Une fenêtre s'ouvrira. Sélectionnez le type de diagnostic que vous souhaitez utiliser, puis cliquez sur « Lancer le diagnostic » :
 
 ![OCC Diagnostics Choice](images/OCC_diag_choice.png){.thumbnail}
 
-You can now access the list of your diagnostics by opening the "Diagnostics" tab. 
+Vous pouvez maintenant accéder à la liste de vos diagnostics en ouvrant l'onglet « Diagnostics ».
 
-![OCC Diagnostics Tab](images/OCC_diag_tab.png){.thumbnail}
+![OCC Diagnostics Tab](images/OCC_diag_tab_BGP.png){.thumbnail}
 
-Each diagnostic is referred to using an ID and a timecode. 
-You can read the contents of the diagnostics by clicking on the ellipsis located to the right of each one listed. You can select either "See result" to have a window open with the contents of the desired diagnostic, or "Download result" to get a *.txt* file with the same contents.
+Chaque diagnostic est référencé à l'aide d'un ID et d'un horodatage.
+Vous pouvez lire le contenu des diagnostics en cliquant sur le bouton de sélection **(...)** situé à droite de chacun d'entre eux. Vous pouvez sélectionner « Voir le résultat » pour ouvrir une fenêtre avec le contenu du diagnostic souhaité, ou « Télécharger le résultat » pour obtenir un fichier *.txt* avec le même contenu.
 
-![OCC Diagnostic](images/OCC_diag.png){.thumbnail}
+![OCC Diagnostic view button](images/OCC_diag_view_button.png){.thumbnail}
 
-## Limits
+### Mode L2
 
-- **Retention time of diagnostics**: You can only view diagnostics you have initiated **during the past seven days.** We recommend you download them and properly archive them, in case you need future access.
+Dans votre espace client OVHcloud, dans la section Réseau, vous pouvez retrouver la liste de vos services OVHcloud Connect.
 
-- **Maximum number of diagnostics**: On a 24 hour period, you can initiate a maximum of 10 diagnostics per type of diagnostic, and per service. For example, if you have two OVHcloud Connect services configured on your OVHcloud Control Panel, both configured in Layer 3 mode, you can theoretically launch 10 of each diagnostic type per service, for a total of 60.
-<br> ***Maybe remove this*** This limit has been set in order to restrict the amount of resources used by the OVHcloud infrastructures, as the diagnostics are launched in real-time.
+![OCC Control Panel](images/OCC_cpanel.png){.thumbnail}
+
+Ouvrez le service pour lequel vous souhaitez obtenir un diagnostic :
+
+![Service OCC](images/OCC_service_MAC.png){.thumbnail}
+
+En bas du panneau « Configuration POP », vous trouverez un segment nommé « POP Diagnostic » et un bouton de sélection **(...)**. Cliquez dessus, puis sélectionnez « Voir la liste de mes adresses MAC » :
+
+![OCC Service Test Button](images/OCC_service_test_button_MAC.png){.thumbnail}
+
+Vous pouvez maintenant accéder à la liste de vos diagnostics en ouvrant l'onglet « Diagnostics ».
+
+![OCC Diagnostics Tab](images/OCC_diag_tab_MAC.png){.thumbnail}
+
+Chaque diagnostic est référencé à l'aide d'un ID et d'un horodatage.
+Vous pouvez lire le contenu des diagnostics en cliquant sur le bouton de sélection **(...)** situé à droite de chacun d'entre eux. Vous pouvez sélectionner « Voir le résultat » pour ouvrir une fenêtre avec le contenu du diagnostic souhaité, ou « Télécharger le résultat » pour obtenir un fichier *.txt* avec le même contenu.
+
+![OCC Diagnostic view button](images/OCC_diag_view_button.png){.thumbnail}
+
+## Limites
+
+- **Durée de rétention des diagnostics** : vous ne pouvez visualiser que les diagnostics initiés **au cours des sept derniers jours.** Nous vous recommandons de les télécharger et de les archiver correctement, au cas où vous auriez besoin d'un accès ultérieur.
+
+- **Nombre maximum de diagnostics** : sur une période de 24 heures, vous pouvez lancer un maximum de 10 diagnostics par type de diagnostic et par service. Par exemple, si vous avez deux services OVHcloud Connect configurés sur votre espace client OVHcloud, tous deux configurés en mode Layer 3, vous pouvez théoriquement lancer 10 de chaque type de diagnostic par service, pour un total de 60.
+<br> Cette limite a été fixée afin de limiter la quantité de ressources utilisées par l’infrastructure OVHcloud, les diagnostics étant lancés en temps réel.
+
+## Aller plus loin
+
+Si vous avez besoin de formation ou d'assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demandez à nos experts Professional Services de vous aider sur votre cas d'utilisation spécifique de votre projet.
+
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

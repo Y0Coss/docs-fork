@@ -50,7 +50,7 @@ You can now access the list of your diagnostics by opening the "Diagnostics" tab
 
 ![OCC Diagnostics Tab](images/OCC_diag_tab_BGP.png){.thumbnail}
 
-Each diagnostic is referred to using an ID and a timecode. 
+Each diagnostic is referred to using an ID and a timestamp. 
 You can read the contents of the diagnostics by clicking on the ellipsis located to the right of each one listed. You can select either "See result" to have a window open with the contents of the desired diagnostic, or "Download result" to get a *.txt* file with the same contents.
 
 ![OCC Diagnostic view button](images/OCC_diag_view_button.png){.thumbnail}
@@ -73,7 +73,7 @@ You can now access the list of your diagnostics by opening the "Diagnostics" tab
 
 ![OCC Diagnostics Tab](images/OCC_diag_tab_MAC.png){.thumbnail}
 
-Each diagnostic is referred to using an ID and a timecode. 
+Each diagnostic is referred to using an ID and a timestamp. 
 You can read the contents of the diagnostics by clicking on the ellipsis located to the right of each one listed. You can select either "See result" to have a window open with the contents of the desired diagnostic, or "Download result" to get a *.txt* file with the same contents.
 
 ![OCC Diagnostic view button](images/OCC_diag_view_button.png){.thumbnail}
