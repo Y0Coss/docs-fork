@@ -6,7 +6,7 @@ updated: 2025-04-24
 
 > [!warning]
 >
-> Cette page est uniquement à des fins d'information générale et  OVHcloud ne garantit pas l'exhaustivité ni l'actualité des informations. Les contrats régissant ce produit (notamment les conditions générales et spécifiques d'utilisation, consultables dans le compte client) et les communications adressées par OVHcloud aux clients prévalent sur toute information affichée sur cette page.
+> Cette page est uniquement à des fins d'information générale et OVHcloud ne garantit pas l'exhaustivité ni l'actualité des informations. Les contrats régissant ce produit (notamment les conditions générales et spécifiques d'utilisation, consultables dans le compte client) et les communications adressées par OVHcloud aux clients prévalent sur toute information affichée sur cette page.
 >
 
 ## Objectif
@@ -15,7 +15,7 @@ updated: 2025-04-24
 
 Le service Hosted Private Cloud VMware on OVHcloud propose une infrastructure dédiée basée sur les technologies VMware SDDC ainsi que sur les technologies d'autres partenaires (Veeam, Zerto...).
 
-OVHcloud a une politique de cycle de vie du service afin de prendre en compte un certain nombres de facteurs, tels que :
+OVHcloud a une politique de cycle de vie du service afin de prendre en compte un certain nombre de facteurs, tels que :
 
 * le cycle de vie des composants logiciels intégrés, tel que déterminé par leurs éditeurs (VMware, Veeam, Zerto, etc.) ;
 * le cycle de vie des composants matériels ;
