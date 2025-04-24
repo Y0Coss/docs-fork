@@ -52,7 +52,7 @@ Encontrará igualmente hiperligações para os e-mails de serviço enviados pela
 - [Gerir os meus métodos de pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)
 - [Gerir as minhas encomendas OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders)
 - [Gerir as minhas faturas OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management)
-- [Gerir os contactos dos serviços](/pages/account_and_service_management/account_information/managing_contact)
+- [Gerir os contactos dos serviços](/pages/account_and_service_management/account_information/managing_contacts)
 
 ///
 

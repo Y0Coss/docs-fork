@@ -56,7 +56,7 @@ Esto le permitirá elegir entre nuestras soluciones de VPS:
 
 Para gestionar un VPS, es necesario tener conocimientos básicos de administración de servidores. Estos conocimientos son esenciales para gestionar el sistema operativo (Linux o Windows) instalado en la máquina y configurar las aplicaciones. ¿Cree que necesita un VPS, pero considera que no dispone de los conocimientos necesarios? Le invitamos a que se ponga en contacto con uno de nuestros [partners](/links/partner). 
 
-Si desea disfrutar de recursos garantizados sin tener conocimientos de administración de servidores, le recomendamos nuestros [planes de hosting Performance](/links/hosting-performance-offer).
+Si desea disfrutar de recursos garantizados sin tener conocimientos de administración de servidores, le recomendamos nuestros [planes de hosting Performance](/links/web/hosting-performance-offer).
 
 ## ¿Cómo conectarme a mi VPS?
 
