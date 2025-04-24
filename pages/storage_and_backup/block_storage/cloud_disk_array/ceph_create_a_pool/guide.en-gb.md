@@ -1,33 +1,42 @@
 ---
 title: Pool creation
 excerpt: This guide shows you how to create a pool using the web interface.
-updated: 2018-03-26
+updated: 2025-04-26
 ---
 
-## Using web interface
+## Objective
+
+This guide shows you how to create a pool using the web interface, using the OVHcloud Control Panel or the OVHcloud API.
+
+## Requirements
+
+- A [Cloud Disk Array](/links/storage/cloud-disk-array) solution
+- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+
+## Instructions
 
 > [!primary]
 >
 > Using web interface is the easiest way to create a pool.
 >
 
-First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster.
+### Using the OVHcloud Control Panel
 
-On the bottom right, you will find the existing pools. Pool rbd is created by default and can be use without issue.
+First, log into your [OVHcloud Control Panel](/links/manager) and click on `Bare Metal Cloud`{.action}. In the section called `STORAGE AND BACKUPS`, then on the `Cloud Disk Array`{.action} service.
 
-![Ceph pools](images/create_a_pool_1.png){.thumbnail}
+Here you'll find the existing pools in `Pools`{.action}.
+
+![Ceph pools](images/ceph-add-pool-1.png){.thumbnail}
 
 Enter a poolname, your pool needs at least three characters.
 
-![Ceph pool creation](images/create_a_pool_2.png){.thumbnail}
+![Ceph pool creation](images/ceph-add-pool-2.png){.thumbnail}
 
 After pool creation you are back to manager, you can see that cluster status has changed because the pool is being created.
 
-![Ceph pool creation](images/create_a_pool_3.png){.thumbnail}
+![Ceph pool creation is running](images/ceph-task-1.png){.thumbnail}
 
-![Ceph pool creation](images/create_a_pool_4.png){.thumbnail}
-
-## Using API
+### Using the API
 
 > [!api]
 >

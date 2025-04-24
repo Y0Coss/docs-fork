@@ -1,33 +1,42 @@
 ---
 title: Pool creation
-excerpt: Ce qui vous présente comment créer un pool en utilisant l'interface Web.
-updated: 2018-03-26
+excerpt: Ce qui vous présente comment créer un pool avec l'espace client OVHcloud et l'api.
+updated: 2025-04-26
 ---
 
-## Utiliser l'interface web
+## Objectif
+
+Ce guide vous montre comment créer un pool pour votre cluster ceph, en utilisant l'espace client OVHcloud ou l'API OVHcloud.
+
+## Prérequis
+
+- Une solution [Cloud Disk Array](/links/storage/cloud-disk-array)
+- Être connecté à l’[espace client OVHcloud](/links/manager) ou à l’[API OVHcloud](/links/api)
+
+## En pratique
 
 > [!primary]
 >
-> L'utilisation d'une interface web est le moyen le plus simple de créer un pool.
+> L'utilisation de l'espace client OVHcloud est le moyen le plus simple de créer un pool.
 >
+
+### Depuis l'espace client OVHcloud
 
 Tout d'abord, connectez-vous au [l’espace client](https://www.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph.
 
-Dans l'onglet "Pools" et ensuite en bas à droite, vous trouverez les pools existants
+Vous trouverez ici les pools existants dans `Pools`{.action}.
 
-![Ceph pools](images/create_a_pool_1.png){.thumbnail}
+![Ceph pools](images/ceph-add-pool-1.png){.thumbnail}
 
 Entrez un nom de pool, votre pool doit comporter au moins trois caractères.
 
-![Ceph pool creation](images/create_a_pool_2.png){.thumbnail}
+![Ceph pool creation](images/ceph-add-pool-2.png){.thumbnail}
 
 Après la création du pool, vous revenez au gestionnaire, vous pouvez voir que le statut du cluster a changé car le pool est en cours de création.
 
-![Ceph pool creation](images/create_a_pool_3.png){.thumbnail}
+![Ceph pool creation is running](images/ceph-task-1.png){.thumbnail}
 
-![Ceph pool creation](images/create_a_pool_4.png){.thumbnail}
-
-## Utiliser l'API
+## Depuis l'API OVHcloud
 
 > [!api]
 >
