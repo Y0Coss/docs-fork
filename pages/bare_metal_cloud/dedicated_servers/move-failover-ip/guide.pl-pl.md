@@ -59,7 +59,7 @@ Bloki adresów IP w regionie mogą być przenoszone między centrami danych w da
 > Tylko blok o jednym rozmiarze (/32) będzie można przenieść z serwera dedykowanego na VPS.
 >
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
 
 Kliknij na zakładkę `Additional IP`{.action}.
 

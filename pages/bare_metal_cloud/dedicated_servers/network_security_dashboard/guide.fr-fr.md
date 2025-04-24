@@ -66,11 +66,7 @@ Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scr
 
 ### Network Security Dashboard
 
-Dans l'espace client OVHcloud, l'accès au Network Security Dashboard peut se faire soit à partir de la page qui liste les IP (pour une IP particulière), soit en vous rendant directement dans le Network Security Dashboard dans le menu `Network`{.action}.
-
-Cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran et sélectionnez `Network Security Dashboard`{.action}.
-
-Sinon, à partir de la liste des IP (cette option n'est disponible que lorsque le centre de nettoyage est en action) : cliquez sur `Réseau`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}. Cliquez sur le bouton `...`{.action} et accédez à `Network Security Dashboard`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Network Security Dashboard`{.action}.
 
 Dans l'onglet **Journal du Centre de nettoyage**, vous pouvez récupérer toutes les informations sur les attaques détectées dans le passé (ou en cours).
 

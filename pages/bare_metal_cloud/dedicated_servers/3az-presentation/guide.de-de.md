@@ -28,7 +28,7 @@ Im [OVHcloud Kundencenter](/links/manager) können Sie Ihre Cluster in der Liste
 
 ![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
-Klicken Sie auf den Clusternamen in der Tabelle, um die Details anzuzeigen.
+Klicken Sie auf den Cluster-Namen in der Tabelle, um die Details anzuzeigen.
 
 ![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 

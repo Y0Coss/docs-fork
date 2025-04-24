@@ -66,11 +66,7 @@ The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the E
 
 ### Network Security Dashboard
 
-In the OVHcloud Control Panel, accessing the dashboard can be done either from the IP listing page (for a particular IP) or going directly to the Network Security Dashboard in the `Network`{.action} menu.
-
-Go to `Network`{.action} in the left-hand sidebar and select `Network Security Dashboard`{.action}.
-
-Alternatively, from the IP listing (this option is only available when the scrubbing centre is in action): Open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}. Click the `...`{.action} button and access `Network Security Dashboard`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Network Security Dashboard`{.action}. 
 
 In the **scrubbing centre log** tab, you can retrieve all the information about attacks that were detected in the past (or that are ongoing).
 

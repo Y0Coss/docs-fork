@@ -62,9 +62,8 @@ La infraestructura anti-DDoS, combinada con el cortafuegos de red perimetral, pr
 
 Para configurar las reglas de protección de juegos de su servidor Bare Metal Game, conéctese al área de cliente de OVHcloud y siga estos pasos:
 
-- Haga clic en la pestaña `Bare Metal Cloud`{.action}.
-- Acceda a `Network`{.action} en la columna izquierda.
-- Abra `IP`{.action}.
+- Haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla.
+- Haga clic en `Direcciones IP públicas`{.action}.
 
 Puede filtrar las direcciones IP utilizando el menú desplegable `Todos los servicios`{.action}. Introduzca el nombre o la categoría del servidor correspondiente:
 

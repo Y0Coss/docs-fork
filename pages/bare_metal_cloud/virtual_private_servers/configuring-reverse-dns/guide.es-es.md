@@ -24,7 +24,7 @@ Esta guía explica cómo configurar el registro DNS inverso de su dirección IP 
 
 ## Procedimiento
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}.
 
 Los menús desplegables de la sección **Mis direcciones IP públicas y servicios asociados** le permiten filtrar los elementos de la tabla para los servicios y encontrar rápidamente la dirección IP deseada.
 
