@@ -1,7 +1,7 @@
 ---
 title: "Pierwsze kroki z serwerem dedykowanym"
 excerpt: "Dowiedz się, jak zarządzać serwerem dedykowanym w Panelu klienta i jak rozpocząć konfigurację oraz zabezpieczenie serwera"
-updated: 2024-11-26
+updated: 2025-04-29
 ---
 
 ## Wprowadzenie
@@ -46,12 +46,6 @@ Serwer dedykowany to fizyczny serwer ("bare metal") zlokalizowany w jednym z nas
 Możesz w prosty sposób przeprowadzić reinstalację serwera lub wybrać inny obraz systemu operacyjnego do zainstalowania w [Panelu klienta](/links/manager). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko systemu operacyjnego, a następnie wybierz `Zainstaluj`{.action}.
 
 ![Przycisk Reinstalacja](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-01.png){.thumbnail}
-
-W oknie, które się pojawi wybierz jedną z opcji instalacji:
-
-- `Instalacja z szablonu OVHcloud`{.action}: możesz wybrać system operacyjny i spersonalizować konfigurację serwera.
-- `Zainstaluj jeden ze swoich szablonów`{.action}: aby móc zastosować spersonalizowany szablon, musisz wcześniej zarejestrować przynajmniej jedną konfigurację serwera. W tym celu należy zaznaczyć opcję "Zapisz tę instalację" w etapie 4 procesu instalacji.
-- `Instalacja na podstawie spersonalizowanego obrazu`{.action}: ta opcja pozwala na zainstalowanie zewnętrznego obrazu na serwerze. Więcej informacji na temat tej opcji znajdziesz w [przewodniku Bring Your Own Image](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image).
 
 > [!primary]
 >

@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image (BYOI)
 excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
-updated: 2025-02-25
+updated: 2025-04-29
 ---
 
 ## Objectif
@@ -57,10 +57,6 @@ Connectez-vous à l'[espace client OVHcloud](/links/manager) et rendez-vous dans
 Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} à côté de « Système (OS) » puis cliquez sur `Installer`{.action}.
 
 ![BringYourOwnImage Control Panel 01](images/byoi-controlpanel01.png){.thumbnail}
-
-Dans la fenêtre qui apparaît, sélectionnez `Installer à partir d'un template OVHcloud`{.action} et cliquez sur `Suivant`{.action}.
-
-![BringYourOwnImage Control Panel 02](images/byoi-controlpanel02.png){.thumbnail}
 
 A l'étape suivante, sélectionnez `Personnalisé` dans le menu puis `Bring Your Own Image - byoi` et cliquez sur `Suivant`{.action}.
 

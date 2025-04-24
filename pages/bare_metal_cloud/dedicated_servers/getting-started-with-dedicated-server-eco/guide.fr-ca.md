@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise"
 excerpt: "Découvrez comment gérer un serveur dédié dans votre espace client OVHcloud et comment démarrer avec la configuration et la sécurisation d'un serveur Kimsufi, So You Start ou Rise"
-updated: 2024-11-26
+updated: 2025-04-29
 ---
 
 ## Objectif
@@ -42,12 +42,6 @@ Un serveur dédié est un serveur physique (« bare metal ») situé dans l’un
 Vous pouvez facilement réinstaller votre serveur ou choisir une autre image d'OS à installer dans votre [espace client OVHcloud](/links/manager). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
 
 ![Bouton Réinstaller](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-01.png){.thumbnail}
-
-Dans la fenêtre qui apparaît, sélectionnez l'une des options d'installation :
-
-- `Installer à partir d'un template OVHcloud`{.action} : vous pouvez sélectionner le système d’exploitation et personnaliser la configuration de votre serveur.
-- `Installer un de vos gabarits`{.action} : pour pouvoir appliquer un gabarit personnalisé, vous devez avoir enregistré au préalable au moins une configuration de serveur. Pour cela, il est nécessaire de cocher l'option « Enregistrer cette installation » à l'étape 4 du processus d'installation.
-- `Installer à partir d'une image personnalisée`{.action} : cette option vous permet d'installer une image externe sur le serveur. Consultez le [guide sur la fonctionnalité Bring Your Own Image](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image) pour plus de détails sur cette option.
 
 > [!primary]
 >

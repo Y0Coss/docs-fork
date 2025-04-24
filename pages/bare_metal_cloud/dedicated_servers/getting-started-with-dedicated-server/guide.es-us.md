@@ -1,7 +1,7 @@
 ---
 title: "Primeros pasos con un servidor dedicado"
 excerpt: "Cómo gestionar un servidor dedicado en su área de cliente y cómo empezar con la configuración y la seguridad de un servidor"
-updated: 2024-11-26
+updated: 2025-04-29
 ---
 
 ## Objetivo
@@ -46,12 +46,6 @@ Un servidor dedicado es un servidor físico ("bare metal") situado en uno de nue
 Puede reinstalar fácilmente su servidor o elegir otra imagen de SO para instalar en su [área de cliente de OVHcloud](/links/manager). En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
 
 ![Reinstalar](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-01.png){.thumbnail}
-
-En la nueva ventana, seleccione una de las opciones de instalación:
-
-- `Instalar desde una plantilla de OVHcloud`{.action}: puede seleccionar el sistema operativo y personalizar la configuración de su servidor.
-- `Instalar una de sus plantillas`{.action}: para poder aplicar una plantilla personalizada, es necesario haber guardado previamente al menos una configuración de servidor. Para ello, marque la opción "Guardar esta instalación" en el paso 4 del proceso de instalación.
-- `Instalar desde una imagen personalizada`{.action}: esta opción le permite instalar una imagen externa en el servidor. Para más información sobre esta opción, consulte la [guía Bring Your Own Image](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image).
 
 > [!primary]
 >

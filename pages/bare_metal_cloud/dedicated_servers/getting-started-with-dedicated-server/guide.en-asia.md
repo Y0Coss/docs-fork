@@ -1,7 +1,7 @@
 ---
 title: "How to get started with a dedicated server"
 excerpt: "Find out how to manage a dedicated server in the OVHcloud Control Panel and how to start with configuring and securing a server"
-updated: 2024-11-26
+updated: 2025-04-29
 ---
 
 ## Objective
@@ -46,12 +46,6 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](/links/manager). In the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 ![Reinstall button](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-01.png){.thumbnail}
-
-In the popup window, select one of the installation options:
-
-- `Install from an OVHcloud template`{.action}: You can select the OS and customise the server configuration.
-- `Install one of your templates`{.action}: In order to apply a customised template, you need to have saved at least one server configuration. To do this, check the option `Save this installation` in step 4 of the installation process.
-- `Install from custom image`{.action}: This allows you to install an external image on the server. Please refer to the [BYOI guide](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image) to learn about the settings of this functionality.
 
 > [!primary]
 >
