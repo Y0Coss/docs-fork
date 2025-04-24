@@ -1,7 +1,7 @@
 ---
 title : Comment lancer un diagnostic OVHcloud Connect depuis votre espace client
 excerpt: Découvrez comment obtenir un rapport de l'état de vos services OVHcloud Connect
-mise à jour : 10/04/2025
+mise à jour : 2025-04-24
 ---
 
 ## Objectif
