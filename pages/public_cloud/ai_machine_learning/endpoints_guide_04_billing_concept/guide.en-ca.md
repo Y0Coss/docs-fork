@@ -15,7 +15,7 @@ updated: 2025-04-28
 
 ## Objective
 
-This documentation provides an overview of the billing and lifecycle management of various AI model categories offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). We will cover the cost structure for Large Language Models (LLM), Audio models, Image models, Embedding models, and more. Additionally, we will explain the lifecycle of our models, including decommissioning, redirection, on our website, ensuring that you have all the necessary information to manage your AI Endpoints effectively.
+This documentation provides an overview of the billing and lifecycle management of various AI model categories offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). We will cover the cost structure for Large Language Models (LLM), Audio models, Image models, Embedding models, and more. Additionally, we will explain the lifecycle of our models, including model decommissioning and redirecting, ensuring that you have all the necessary information to effectively manage your AI Endpoints.
 
 ## AI Endpoints model lifecycle
 
