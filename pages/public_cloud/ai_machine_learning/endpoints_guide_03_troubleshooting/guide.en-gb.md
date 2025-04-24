@@ -36,7 +36,7 @@ When making a request to the LLMs endpoints in AI Endpoints, you can customize s
 
 Yes, we have [a guide that explains how to configure Continue to work with AI Endpoints](/pages/public_cloud/ai_machine_learning/endpoints_tuto_03_code_assistant_continue). Continue is an IDE plugin that allows you to build your own code assistant by using a custom LLM endpoint. This guide will walk you through the steps to configure Continue to work with AI Endpoints, including how to specify the endpoint URL and how to authenticate your requests.
 
-## Errors codes and unexpected behaviours
+## Error codes and unexpected behaviours
 
 ### I'm trying to use the AI Endpoints models, but I keep getting a 401 error code. Why?
 
