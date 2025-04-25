@@ -1,7 +1,7 @@
 ---
 title: Adicionar um Additional IP
 excerpt: "Descubra como encomendar endereços Additional IP para as suas instâncias"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Configurer une Additional IP
 excerpt: Découvrez comment ajouter des adresses Additional IP à la configuration de votre instance
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

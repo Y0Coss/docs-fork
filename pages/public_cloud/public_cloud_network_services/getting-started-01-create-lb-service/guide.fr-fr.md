@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec le service Load Balancer pour Public Cloud
 excerpt: Découvrez comment débuter avec un Load Balancer Public Cloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: Importer une Additional IP
 excerpt: "Ce guide explique comment importer une Additional IP dans votre projet Public Cloud OVHcloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

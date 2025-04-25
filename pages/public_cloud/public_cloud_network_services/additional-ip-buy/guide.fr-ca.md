@@ -1,7 +1,7 @@
 ---
 title: Acheter une Additional IP
 excerpt: "Découvrez comment commander des adresses Additional IP pour vos instances"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Eine Additional IP erwerben
 excerpt: "Erfahren Sie hier, wie Sie für Ihre Instanzen Additional IP-Adressen bestellen können"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: Configurer un bloc IP dans un vRack sur une instance Public Cloud
 excerpt: Découvrez comment associer un bloc d’adresses IP publiques au vRack pour une configuration sur une Instance Public Cloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: "Jak konfigurować IPv6 w instancji Public Cloud"
 excerpt: "Dowiedz się, jak skonfigurować protokół IPv6 w instancji Public Cloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

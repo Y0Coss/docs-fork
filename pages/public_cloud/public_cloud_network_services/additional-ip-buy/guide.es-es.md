@@ -1,7 +1,7 @@
 ---
 title: Comprar una Additional IP
 excerpt: "Cómo contratar direcciones Additional IP para sus instancias"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

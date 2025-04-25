@@ -1,7 +1,7 @@
 ---
 title: Wykupienie adresu Additional IP
 excerpt: "Dowiedz się, jak zamawiać adresy Additional IP dla swoich instancji"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

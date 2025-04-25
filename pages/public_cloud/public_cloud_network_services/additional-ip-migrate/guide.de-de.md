@@ -1,7 +1,7 @@
 ---
 title: Additional IP migrieren
 excerpt: "Erfahren Sie hier, wie Sie eine Additional IP-Adresse zu einer anderen Instanz migrieren"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

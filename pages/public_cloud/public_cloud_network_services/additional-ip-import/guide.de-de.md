@@ -1,7 +1,7 @@
 ---
 title: Additional IP importieren
 excerpt: "Erfahren Sie hier, wie Sie eine Additional IP-Adresse in ein Public Cloud Projekt importieren"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

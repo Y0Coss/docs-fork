@@ -1,7 +1,7 @@
 ---
 title: "Configurare IPv6 su un’istanza Public Cloud"
 excerpt: "Come configurare il protocollo IPv6 su un'istanza Public Cloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

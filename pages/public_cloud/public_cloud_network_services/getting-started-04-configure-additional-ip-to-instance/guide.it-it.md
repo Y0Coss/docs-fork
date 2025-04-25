@@ -1,7 +1,7 @@
 ---
 title: Configura un Additional IP
 excerpt: Come aggiungere indirizzi Additional IP alla configurazione della tua istanza
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

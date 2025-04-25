@@ -1,7 +1,7 @@
 ---
 title: 'Configuración del vRack Public Cloud'
 excerpt: 'Cómo configurar el vRack para sus instancias Public Cloud'
-updated: 2025-04-25
+updated: 2025-04-28
 ---
 
 
