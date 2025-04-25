@@ -35,7 +35,7 @@ Here is the model billing overview for AI Endpoints.
 
 > [!primary]
 >
-> In appreciation of your continued support and as a welcome gesture to new customers, **endpoint consumption between Avril 28th and May 12th will not be invoiced**. After this grace period, the pricing will be implemented and clearly outlined in the table below, which details the categories, models, and their respective pricing information:
+> In appreciation of their continued support, our **Beta testers will have the possibility to keep using their existing API access keys and create new ones and won't be billed until 31th May**. After this date, the pricing will be implemented for them and clearly outlined in the table below, which details the categories, models, and their respective pricing information:
 >
 
 | Category        | Model            | Price ($)  | Price (€)  | Unit Price |
