@@ -1,7 +1,7 @@
 ---
 title: How to initiate a diagnostic for OVHcloud Connect from the OVHcloud Control Panel
 excerpt: Find out how to get a status report of your OVHcloud Connect services
-updated: 2025-04-25
+updated: 2025-04-28
 ---
 
 ## Objective
