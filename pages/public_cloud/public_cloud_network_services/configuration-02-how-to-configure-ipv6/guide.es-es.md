@@ -51,7 +51,7 @@ Antes de empezar, la recomendamos que eche un vistazo a la siguiente tabla, en l
 
 ### Obtener la información relativa a la red
 
-Conéctese al área de cliente de OVHcloud en la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. En la columna izquierda, seleccione el menú `Instancias`{.action} y haga clic en el botón `...`{.action} junto a la instancia correspondiente y haga clic en `Detalles de la instancia`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección de `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. En la columna izquierda, seleccione el menú `Instancias`{.action} y haga clic en el botón `...`{.action} junto a la instancia correspondiente y haga clic en `Detalles de la instancia`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
