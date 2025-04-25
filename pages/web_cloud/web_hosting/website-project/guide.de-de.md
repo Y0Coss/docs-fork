@@ -1,6 +1,6 @@
 ---
-title: "So erstellen Sie eine Website - Ihr Projekt in 5 Schritten umsetzen"
-excerpt: "Hier erfahren Sie, wie Sie Ihr Projekt definieren, Ihre Website veröffentlichen und E-Mail-Adressen mit Ihrer Webhosting-Lösung erstellen"
+title: "Erstellen Ihrer Website - So setzen Sie Ihr Projekt in 5 Schritten um"
+excerpt: "Erfahren Sie hier, wie Sie Ihr Projekt definieren, Ihre Website veröffentlichen und E-Mail-Adressen mit Ihrer Webhosting-Lösung erstellen"
 updated: 2025-04-14
 ---
 
@@ -83,7 +83,7 @@ Nachdem Sie das Projekt genau definiert haben, können Sie mit der Installation 
 
 Es gibt zwei Möglichkeiten: **Migrieren** einer vorhandenen Website oder **Erstellen** einer neuen Website.
 
-**Klicken Sie auf jede der unten stehenden Optionen, um Erläuterungen anzuzeigen.**
+**Klicken Sie die Optionen, um Erläuterungen anzuzeigen.**
 
 /// details | Website migrieren
 
@@ -107,7 +107,7 @@ Wenn Sie in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt sind, könn
 >> >
 >> > Wenn Sie Ihr CMS manuell installieren möchten, ohne die Option „1-Klick-Module“, lesen Sie unsere Dokumentation „[Manuelle Installation eines CMS auf einem Webhosting](/pages/web_cloud/web_hosting/cms_manual_installation)“.
 >>
-> **Lokal entwickelte Website veröffentlichen**
+> **Selbst entwickelte Website veröffentlichen**
 >>
 >> Folgen Sie in diesem Fall unserer Anleitung „[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)“.  Sie finden dort alle notwendigen Schritte:
 >>
