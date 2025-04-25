@@ -75,7 +75,7 @@ Non si tratta di un processo immediato e la quota di risorse viene aumentata nel
 
 Accedi allo [Spazio cliente OVHcloud](/links/manager), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud.
 
-Nella barra laterale sinistra, clicca su `Quota and Regions`{.action}. 
+Nella barra laterale sinistra, clicca su `Quota e Region`{.action}. 
 
 Clicca sul pulsante `?`{.action} per maggiori informazioni su questa funzionalità, poi clicca sull' `icona interruttore`{.action} per cambiare lo stato in "**Attivo**".
 

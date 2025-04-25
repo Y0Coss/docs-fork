@@ -43,7 +43,7 @@ This guide aims at providing a clear and detailed method for creating and updati
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Public Cloud`{.action} section. Once you have selected your Public Cloud project, click on `Savings Plans`{.action} in the left-hand navigation bar under **Settings**.
+Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Public Cloud`{.action} section. Once you have selected your Public Cloud project, click on `Savings Plans`{.action} in the left-hand navigation bar under **Ustawienia**.
 
 ### Create a Savings Plan
 

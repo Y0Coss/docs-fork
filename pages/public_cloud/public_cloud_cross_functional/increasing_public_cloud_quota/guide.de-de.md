@@ -75,7 +75,7 @@ Dies ist kein sofortiger Prozess; die Ressourcenquote wird im Laufe der Zeit erh
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wechseln Sie zum Bereich `Public Cloud`{.action}.
 
-Klicken Sie im linken Menü auf `Quota and Regions`{.action}.
+Klicken Sie im linken Menü auf `Quota und Regionen`{.action}.
 
 Sie können auf den Button `?`{.action} klicken, um weitere Informationen zu dieser Funktion anzuzeigen. Klicken Sie dann auf den `Schieberegler`{.action}, um den Status auf "**Aktiviert**" zu setzen.
 

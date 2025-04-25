@@ -75,7 +75,7 @@ Nie jest to proces natychmiastowy, a przydział zasobów jest zwiększany z czas
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz Twój projekt Public Cloud.
 
-Na lewym pasku bocznym kliknij pozycję `Quota and Regions`{.action}.
+Na lewym pasku bocznym kliknij pozycję `Limity i regiony`{.action}.
 
 Kliknij na `?`{.action} aby uzyskać więcej informacji na temat tej funkcji, kliknij `ikonę przełącznika`{.action}, aby przełączyć stan na "**Aktywny**".
 

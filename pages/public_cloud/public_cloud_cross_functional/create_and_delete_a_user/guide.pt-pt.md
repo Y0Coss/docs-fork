@@ -80,7 +80,7 @@ Atenção: a alteração da palavra-passe de uma conta de utilizador implica a a
 
 ### Eliminação do utilizador OpenStack
 
-A eliminação do utilizador OpenStack é efetuada a partir da [Área de Cliente OVHcloud](/links/manager). Clique em `Users & Roles`{.action} no menu à esquerda em "Project management". 
+A eliminação do utilizador OpenStack é efetuada a partir da [Área de Cliente OVHcloud](/links/manager). Clique em `Utilizadores & Funções`{.action} no menu à esquerda em **Parâmetros**. 
 
 ![public-cloud](images/delete.png){.thumbnail}
 

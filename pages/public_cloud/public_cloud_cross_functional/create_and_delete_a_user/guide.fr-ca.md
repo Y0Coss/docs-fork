@@ -80,7 +80,7 @@ Veuillez noter que le changement de mot de passe du compte d’utilisateur entra
 
 ### Suppression de l'utilisateur OpenStack
 
-La suppression de l'utilisateur OpenStack se fait depuis [l'espace client OVHcloud](/links/manager). Cliquez sur `Users & Roles`{.action} dans le menu de gauche sous « Project management ». 
+La suppression de l'utilisateur OpenStack se fait depuis [l'espace client OVHcloud](/links/manager). Cliquez sur `Utilisateurs & Rôles`{.action} dans le menu de gauche sous **Paramètres**. 
 
 ![public-cloud](images/delete.png){.thumbnail}
 

@@ -80,7 +80,7 @@ Pamiętaj, że zmiana hasła do konta użytkownika skutkuje natychmiastowym odwo
 
 ### Usuwanie użytkownika OpenStack
 
-Użytkownik OpenStack zostaje usunięty [Panelu client OVHcloud](/links/manager). W menu po lewej stronie kliknij `Users & Roles`{.action} w rubryce "Project management". 
+Użytkownik OpenStack zostaje usunięty [Panelu client OVHcloud](/links/manager). W menu po lewej stronie kliknij `Użytkownicy i role`{.action} w rubryce **Ustawienia**. 
 
 ![public-cloud](images/delete.png){.thumbnail}
 

@@ -80,7 +80,7 @@ Tenga en cuenta que, al cambiar la contraseña de una cuenta de usuario, se canc
 
 ### Eliminación del usuario OpenStack
 
-La eliminación del usuario de OpenStack se realiza desde el [Panel de configuración de OVHcloud](/links/manager). Haga clic en `Users & Roles`{.action} en el menú de la izquierda, en "Project management". 
+La eliminación del usuario de OpenStack se realiza desde el [Panel de configuración de OVHcloud](/links/manager). Haga clic en `Usuarios y roles`{.action} en el menú de la izquierda, en **Ajustes**. 
 
 ![public-cloud](images/delete.png){.thumbnail}
 

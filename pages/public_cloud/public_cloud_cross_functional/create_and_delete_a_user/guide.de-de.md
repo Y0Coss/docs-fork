@@ -80,7 +80,7 @@ Beachten Sie, dass beim Ändern des Benutzerkonto-Passworts die bisherigen Login
 
 ### Löschung eines OpenStack Benutzers
 
-Sie können OpenStack Benutzer im [OVHcloud Kundencenter](/links/manager) löschen. Klicken Sie auf `Users & Roles`{.action} im linken Menü unter "Project management". 
+Sie können OpenStack Benutzer im [OVHcloud Kundencenter](/links/manager) löschen. Klicken Sie auf `User und Rollen`{.action} im linken Menü unter **Einstellungen**. 
 
 ![public-cloud](images/delete.png){.thumbnail}
 

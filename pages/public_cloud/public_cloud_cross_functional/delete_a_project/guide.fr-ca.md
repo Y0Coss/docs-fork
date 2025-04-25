@@ -27,7 +27,7 @@ Lorsque vous supprimez un projet, les ressources qu'il contient sont définitive
 
 Connectez-vous à l’[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
-Cliquez sur `Paramètres du projet`{.action} dans la partie **Settings** tout en bas du menu latéral de gauche.
+Cliquez sur `Paramètres du projet`{.action} dans la partie **Paramètres** tout en bas du menu latéral de gauche.
 
 ![menu](images/delete-project-2025.png){.thumbnail}
 
