@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - FAQ"
 excerpt: "Retrouvez les principales questions posées sur les hébergements web OVHcloud"
-updated: 2025-04-15
+updated: 2025-04-25
 ---
 
 <style>
@@ -444,7 +444,7 @@ Pour corriger cela, suivez ces étapes :
 >> 3. Sur la page qui s'affiche, cliquez sur l'onglet `Zone DNS`{.action}.
 >> 4. Dans le tableau qui apparaît (représentant la zone DNS de votre nom de domaine), identifiez l'entrée de type `A` dont la `Cible` a pour valeur l'adresse IP `213.186.33.5`.
 >> 5. Cliquez sur le bouton `...`{.action} situé à droite de la ligne, puis sur `Modifier l'entrée`{.action}.
->> 6. Dans la fenêtre qui s'ouvre, remplacez, dans le champs `Cible *`, l'adresse IP `213.186.33.5` par l'adresse IP de l'hébergement web où se trouve votre site web.
+>> 6. Dans la fenêtre qui s'ouvre, remplacez, dans le champ `Cible *`, l'adresse IP `213.186.33.5` par l'adresse IP de l'hébergement web où se trouve votre site web.
 >>
 >> > [!success]
 >> >
