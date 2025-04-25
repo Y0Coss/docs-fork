@@ -162,6 +162,44 @@ Dans un bucket versionné, chaque objet a une version courante et zéro ou plusi
 
 ///
 
+### Comprendre le paramètre NoncurrentDays
+Le paramètre NoncurrentDays définit le nombre minimum de jours écoulés depuis qu'une version n'est plus la version courante. Ce paramètre ne doit pas être confondu avec l'âge de l'objet mais indique plutôt l'âge minimum d'une version non-courante.
+
+**Exemple 1:**
+
+Supposons que vous avez un objet A avec 10 versions:
+- A v10 (version courante, date de création: 2024-10-23)
+- A v9 (version non-courante, date de création: 2024-10-22)
+- A v8 (version non-courante, date de création: 2024-10-21)
+- A v7 (version non-courante, date de création: 2024-10-20)
+- A v6 (version non-courante, date de création: 2024-10-19)
+- A v5 (version non-courante, date de création: 2024-10-18)
+- A v4 (version non-courante, date de création: 2024-10-17)
+- A v3 (version non-courante, date de création: 2024-10-16)
+- A v2 (version non-courante, date de création: 2024-10-15)
+- A v1 (version non-courante, date de création: 2024-10-14)
+
+Si la date actuelle est 2024-10-23 et **NoncurrentDays**=5, la règle de lifecycle supprimera les versions non-courantes de plus de 5 jours càd v1, v2, v3 et v4 car:
+- v1 est non-courante depuis 2024-10-15 (quand v2 a été créée) càd son âge en tant que version non-courante est 8 jours
+- v2 est non-courante depuis 2024-10-16 (quand v3 a été créée) càd son âge en tant que version non-courante est 7 jours
+- v3 est non-courante depuis 2024-10-17 (quand v4 a été créée) càd son âge en tant que version non-courante est 6 jours
+- v4 est non-courante depuis 2024-10-18 (quand v5 a été créée) càd son âge en tant que version non-courante est 5 jours
+
+
+**Exemple 2:**
+
+Supposons que vous avez un objet B avec 5 versions:
+- B v5 (version courante, date de création: 2024-10-28)
+- B v4 (version non-courante, date de création: 2024-10-27)
+- B v3 (version non-courante, date de création: 2024-10-20)
+- B v2 (version non-courante, date de création: 2024-10-15)
+- B v1 (version non-courante, date de création: 2024-10-14)
+
+Si la date actuelle est 2024-10-29 et **NoncurrentDays**=5, la règle de lifecycle supprimera les versions non-courantes de plus de 5 days càd uniquement v1 and v2 car:
+- v1 est non-courante depuis 2024-10-15 (quand v2 a été créée) càd son âge en tant que version non-courante est 14 jours
+- v2 est non-courante depuis 2024-10-20 (quand v3 a été créée) càd son âge en tant que version non-courante est 9 jours
+
+
 ### Obtenir la date d'expiration programmée
 
 Si un objet est programmé pour être supprimé, un appel HEAD-OBJECT renvoie un en-tête de réponse http spécial x-amz-expiration qui contient un timestamp indiquant sa date d'expiration et un identifiant de la règle du lifecycle qui a été appliquée.
