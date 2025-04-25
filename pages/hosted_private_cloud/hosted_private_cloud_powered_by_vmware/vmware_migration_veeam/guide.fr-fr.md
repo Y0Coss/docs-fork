@@ -1,7 +1,7 @@
 ---
 title: "Move2Cloud - Migrer des workloads VMware vers OVHcloud Hosted Private Cloud avec Veeam Replication"
-excerpt: "Découvrez comment migrer vos workloads VMware on-premises vers un environnement OVHcloud Hosted Private Cloud à l’aide de Veeam Replication."
-updated: 2025-04-23
+excerpt: "Découvrez comment migrer vos workloads VMware on-premises vers un environnement OVHcloud Hosted Private Cloud à l’aide de Veeam Replication"
+updated: 2025-04-25
 ---
 
 ## Objectif
@@ -10,26 +10,25 @@ Ce guide explique comment migrer vos workloads VMware on-premises vers un **OVHc
 
 > [!primary]
 > **Ce guide s’applique aux environnements Hosted Private Cloud qui ne font PAS partie de SecNumCloud (SNC), PCI-DSS ou HDS.**
-> Si vous utilisez un environnement Hosted Private Cloud qualifié SNC, PCI-DSS ou HDS, certaines fonctionnalités décrites ici, comme OVHcloud IAM, peuvent ne pas être disponibles.
-> Pour les environnements SecNumCloud, veuillez consulter le guide dédié :
-> [Move2Cloud - Migrating VMware Workloads to SecNumCloud Hosted Private Cloud with Veeam Replication](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam_secnumcloud)
+> Si vous utilisez un environnement Hosted Private Cloud qualifié SNC, PCI-DSS ou HDS, certaines fonctionnalités décrites ici, comme OVHcloud IAM, peuvent être indisponibles.
+> Pour les environnements SecNumCloud, veuillez consulter le guide dédié : [Move2Cloud - Migrating VMware Workloads to SecNumCloud Hosted Private Cloud with Veeam Replication](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam_secnumcloud)
 
 ## Prérequis
 
 Avant de commencer, vous aurez besoin de :
 
 - Une liste complète des VM avec FQDN, adresses IP et dépendances.
-- Des ressources cibles correctement dimensionnées (ex. : hôtes, datastores, clusters vSAN).
+- Des ressources cibles correctement dimensionnées (ex : hôtes, datastores, clusters vSAN).
 - Une solution **Veeam Backup & Replication** valide via le [site de Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu).
 - Un accès à vCenter, ainsi que des services DNS, NTP et d’authentification préconfigurés dans votre HPC.
 
 ![Move2Cloud](images/Move2PCC_Veam.png){.thumbnail}
 
-## Instructions
+## En pratique
 
 ### Étape 1 : Concevoir votre plan de migration
 
-À la fin de cette étape, vous saurez exactement quelles charges de travail migrer, leurs dépendances, et la configuration réseau et de stockage cible.
+À la fin de cette étape, vous saurez exactement quelles charges de travail migrer, leurs dépendances, ainsi que la configuration réseau et de stockage cible.
 
 #### Étape 1.1 : Créer un inventaire des VM
 
@@ -39,7 +38,7 @@ Pour chaque VM, indiquez les éléments suivants :
 
 - **FQDN** (nom de domaine complet) et **adresse IP**
 - **Version du système d’exploitation** (à jour et supportée)
-- **Dépendances** (ex. : applications qui reposent sur des serveurs spécifiques)
+- **Dépendances** (ex : applications qui reposent sur des serveurs spécifiques)
 
 #### Étape 1.2 : Regrouper les VM en lots de migration
 
@@ -86,11 +85,11 @@ Pour les services exposés à Internet, prévoyez des IP publiques ou utilisez l
 
 Pour permettre l’accès à distance au vCenter dans votre HPC :
 
-1. Connectez-vous au [Control Panel OVHcloud](/links/manager)
+1. Connectez-vous à [l'espace client OVHcloud](/links/manager)
 2. Accédez à `Hosted Private Cloud`{.action} > Secure SSL Gateway
 3. Ajoutez les adresses IP autorisées
 
-Consultez aussi notre [guide de whitelist IP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter).
+Consultez aussi notre [guide de IP whitelisting](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter).
 
 ### Étape 4 : Configurer les rôles et permissions
 
@@ -134,7 +133,7 @@ Votre HPC nécessite des services fondamentaux :
 - **DNS :** Déployer un AD ou un autre serveur DNS local
 - **Authentification :** Mettre en place un service local pour limiter le trafic croisé
 
-### Étape 7 : Installer le serveur Veeam B&R
+### Étape 7 : Installer le serveur Veeam Backup & Replication
 
 Installez le serveur **Veeam Backup & Replication** dans le HPC.
 
@@ -150,9 +149,9 @@ Créez un tunnel IPsec avec NSX, Stormshield ou OpnSense :
 - [VPN Stormshield](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/IPSec_VPN/IPSEC_VPN.htm)
 - [VPN OpnSense](https://docs.opnsense.org/manual/how-tos/ipsec-s2s.html)
 
-#### Étape 8.2 : Utiliser OVHcloud Connect (optionnel)
+#### Étape 8.2 : Utiliser OVHcloud Connect (facultatif)
 
-Pour plus de bande passante et faible latence, abonnez-vous à [OVHcloud Connect](/links/network/ovhcloud-connect).
+Pour plus de bande passante et une plus faible latence, vous pouvez souscire à notre solution [OVHcloud Connect](/links/network/ovhcloud-connect).
 
 ### Étape 9 : Déployer le proxy Veeam
 
@@ -161,18 +160,17 @@ Déployez un proxy Veeam sur site :
 1. Ajoutez-le via la console Veeam > **Backup Infrastructure**
 2. Configurez les modes de transport et ressources
 
-Voir [ce guide proxy](https://helpcenter.veeam.com/docs/backup/vsphere/add_vmware_proxy.html?ver=120)
+Voir [ce guide d'installation d'un proxy](https://helpcenter.veeam.com/docs/backup/vsphere/add_vmware_proxy.html?ver=120)
 
 ### Étape 10 : Créer les jobs de réplication
 
-Depuis Veeam B&R :
+Depuis Veeam Backup & Replication :
 
 1. Ouvrez `Replication Jobs`{.action}
-2. Ajoutez les VM sources{.action} et configurez la cible HPC
-3. Réglez les options (compression, app-aware…)
+2. Ajoutez les `VM sources`{.action} et configurez la cible HPC
+3. Réglez les options (compression, app-aware …)
 
-Voir le [guide de création](
-https://helpcenter.veeam.com/docs/backup/vsphere/replica_job.html?ver=120)
+Voir le [guide de création](https://helpcenter.veeam.com/docs/backup/vsphere/replica_job.html?ver=120)
 
 ### Étape 11 : Lancer et tester la réplication
 
@@ -182,7 +180,7 @@ Voir [Failover](https://helpcenter.veeam.com/docs/backup/vsphere/failover.html?v
 
 ### Étape 12 : Finaliser la migration
 
-Lancez un `Planned Failover`{.action} le jour J pour synchroniser les données finales et activer les réplicas.
+Lancez un `Planned Failover`{.action} le jour J pour synchroniser les données finales et activer les replicas.
 
 Voir [Planned Failover](https://helpcenter.veeam.com/docs/backup/vsphere/planned_failover.html?ver=120)
 
@@ -203,12 +201,11 @@ Utilisez [Storage vMotion](/pages/hosted_private_cloud/hosted_private_cloud_powe
 ### Étape 16 : Déplacer les VM selon la performance
 
 1. **Analyser les besoins :**
-   - vSAN pour les workloads exigeants
-   - NFS pour les autres
-
+    - vSAN pour les workloads exigeants
+    - NFS pour les autres
 2. **Via Storage vMotion :**
-   - Ouvrir `vSphere Client`{.action}, clic droit > `Migrate`{.action}
-   - Choisir `Change storage only`{.action}, valider
+    - Ouvrir `vSphere Client`{.action}, clic droit > `Migrate`{.action}
+    - Choisir `Change storage only`{.action} et valider
 
 Voir [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_storage_vmotion)
 
@@ -220,7 +217,7 @@ Maintenant que vos machines virtuelles sont opérationnelles dans l’environnem
 
 #### 17.1 : Définir l’emplacement de stockage des sauvegardes
 
-- Utilisez **[Object Storage compatible S3 d’OVHcloud](/links/public-cloud/object-storage)** comme référentiel de sauvegarde pour bénéficier d’une solution évolutive et économique.
+- Utilisez **[Object Storage compatible S3* d’OVHcloud](/links/public-cloud/object-storage)** comme référentiel de sauvegarde pour bénéficier d’une solution évolutive et économique.
 
 #### 17.2 : Créer un job de sauvegarde dans Veeam
 
@@ -239,14 +236,14 @@ Mettre en place des sauvegardes régulières garantit la protection de vos workl
 
 Pour plus de détails, consultez le [guide de sauvegarde Veeam avec S3](/pages/storage_and_backup/object_storage/s3_veeam).
 
-> *S3 est une marque déposée d’Amazon Technologies, Inc. Le service OVHcloud n’est ni sponsorisé, ni approuvé, ni affilié à Amazon Technologies, Inc.
+* : S3 est une marque déposée d’Amazon Technologies, Inc. Le service OVHcloud n’est ni sponsorisé, ni approuvé, ni affilié à Amazon Technologies, Inc.
 
 ## Aller plus loin
 
 Vous pouvez consulter les ressources supplémentaires ci-dessous pour renforcer votre stratégie de sauvegarde, de réplication et de reprise après sinistre avec OVHcloud :
 
-- [Veeam Managed Backup](https://www.ovhcloud.com/en/hosted-private-cloud/vmware/veeam-managed-backup/) : Une solution de sauvegarde entièrement managée par OVHcloud.
-- [Zerto for VMware on OVHcloud](https://www.ovhcloud.com/en/hosted-private-cloud/vmware/zerto/) : Solution de reprise d’activité et de réplication interrégions.
+- [Veeam Managed Backup](/links/hosted-private-cloud/veeam-managed-backup) : Une solution de sauvegarde entièrement managée par OVHcloud.
+- [Zerto for VMware on OVHcloud](/links/hosted-private-cloud/vmware-zerto) : Solution de reprise d’activité et de réplication interrégions.
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](/links/professional-services).
 

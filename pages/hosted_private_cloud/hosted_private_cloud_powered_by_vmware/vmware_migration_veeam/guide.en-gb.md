@@ -1,7 +1,7 @@
 ---
 title: "Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Veeam Replication"
-excerpt: "Learn how to migrate your on-prem VMware workloads to an OVHcloud Hosted Private Cloud environment using Veeam Replication."
-updated: 2025-04-23
+excerpt: "Learn how to migrate your on-prem VMware workloads to an OVHcloud Hosted Private Cloud environment using Veeam Replication"
+updated: 2025-04-25
 ---
 
 ## Objective
@@ -97,7 +97,7 @@ You can find detailed instructions in our [IP whitelisting guide](/pages/hosted_
 
 Set up roles and permissions in your `Hosted Private Cloud`{.action} using `OVHcloud IAM`.
 
->[!warning]
+> [!warning]
 > **OVHcloud IAM is not available in SecNumCloud (SNC), PCI-DSS, or HDS environments.**
 > If you are using one of these qualified environments, you must configure roles and permissions directly in vSphere or use an external IAM solution such as Microsoft Active Directory or Okta.
 
@@ -133,7 +133,7 @@ Your Hosted Private Cloud requires basic infrastructure services for your migrat
 - **DNS:** Deploy DNS services, such as an Active Directory Domain Controller, to resolve domain names.
 - **Authentication:** Set up authentication services locally in HPC to minimize cross-environment traffic.
 
-### Step 7: Install Veeam B&R server
+### Step 7: Install the Veeam Backup & Replication server
 
 Install the **Veeam Backup & Replication (B&R)** server in your OVHcloud HPC environment. This server will handle the replication process.
 
@@ -209,7 +209,6 @@ This involves moving VMs and their virtual disk files (VMDKs) to the appropriate
 1. **Assess Performance Requirements:**
     - Identify which VMs require high-performance storage (e.g. vSAN for intensive workloads).
     - Use NFS datastores for less demanding applications.
-
 2. **Use Storage vMotion:**
     - Open the `vSphere Client`{.action} and navigate to the VM you wish to move.
     - Right-click the VM and select `Migrate`{.action}.
@@ -228,14 +227,12 @@ Now that your VMs are running in the OVHcloud Hosted Private Cloud, it’s essen
 
 1. **Define Backup Storage:**
     - Use OVHcloud **[S3*-compatible Object Storage](/links/public-cloud/object-storage)** as a backup repository for scalability and cost efficiency.
-
 2. **Create a Backup Job in Veeam:**
     - Open the **Veeam Console** and navigate to the `Home`{.action} tab.
-    - Click `Backup Job`{.action} > `Virtual Machine`{.action}and follow the wizard:
+    - Click `Backup Job`{.action} > `Virtual Machine`{.action} and follow the wizard:
     - Select the VMs to back up.
     - Choose the backup repository (e.g. OVHcloud Object Storage).
     - Configure retention policies, compression, and encryption settings.
-
 3. **Run and Test the Backup Job:**
     - Start the backup job and monitor its progress.
     - Perform a test restore to ensure the backups are reliable and can be used in a recovery scenario.
@@ -248,8 +245,8 @@ Setting up regular backups guarantees that your workloads are protected against 
 
 You can explore these additional resources to enhance your backup, replication, and disaster recovery strategy with OVHcloud:
 
-- [Veeam Managed Backup](https://www.ovhcloud.com/en/hosted-private-cloud/vmware/veeam-managed-backup/): A fully managed backup solution by OVHcloud.
-- [Zerto for VMware on OVHcloud](https://www.ovhcloud.com/en/hosted-private-cloud/vmware/zerto/): Disaster recovery and replication across regions.
+- [Veeam Managed Backup](/links/hosted-private-cloud/veeam-managed-backup): A fully managed backup solution by OVHcloud.
+- [Zerto for VMware on OVHcloud](/links/hosted-private-cloud/vmware-zerto): Disaster recovery and replication across regions.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
