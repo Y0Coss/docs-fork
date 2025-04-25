@@ -151,7 +151,9 @@ Créez un tunnel IPsec avec NSX, Stormshield ou OpnSense :
 
 #### Étape 8.2 : Utiliser OVHcloud Connect (facultatif)
 
-Pour plus de bande passante et une plus faible latence, vous pouvez souscire à notre solution [OVHcloud Connect](/links/network/ovhcloud-connect).
+Pour bénéficier de plus de bande passante et d’une latence maîtrisée, vous pouvez souscrire à [OVHcloud Connect](/links/network/ovhcloud-connect). Cette solution fournit un lien de type MPLS entre votre infrastructure On Prem et votre tenant OVHcloud.
+
+Avec [OVHcloud Connect](/links/network/ovhcloud-connect) vous choisissez le débit adapté à vos besoins, de 200 Mbps à plusieurs Gbps.
 
 ### Étape 9 : Déployer le proxy Veeam
 
@@ -198,45 +200,49 @@ Voir [Permanent Failover](https://helpcenter.veeam.com/docs/backup/vsphere/perma
 
 Utilisez [Storage vMotion](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_storage_vmotion) pour déplacer les VM, puis configurez les backups dans [OVHcloud Object Storage](/links/public-cloud/object-storage).
 
-### Étape 16 : Déplacer les VM selon la performance
+### Étape 16 : Déplacer les VM vers le stockage cible
 
-1. **Analyser les besoins :**
-    - vSAN pour les workloads exigeants
-    - NFS pour les autres
-2. **Via Storage vMotion :**
-    - Ouvrir `vSphere Client`{.action}, clic droit > `Migrate`{.action}
-    - Choisir `Change storage only`{.action} et valider
+Une fois vos VM migrées vers l’environnement HPC d’OVHcloud, il peut être nécessaire d’optimiser leur emplacement en fonction des besoins en performance.
 
-Voir [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_storage_vmotion)
+Cela implique de déplacer les VM et leurs fichiers disques virtuels (VMDK) vers le stockage approprié.
+
+1. **Évaluer les besoins en performance :**
+    - Identifier les VM nécessitant un stockage haute performance (par exemple, vSAN pour les charges de travail intensives).
+    - Utiliser des datastores NFS pour les applications moins exigeantes.
+
+2. **Utiliser Storage vMotion :**
+    - Ouvrir le `vSphere Client`{.action} et naviguer jusqu’à la VM que vous souhaitez déplacer.
+    - Faire un clic droit sur la VM et sélectionner `Migrate`{.action}.
+    - Choisir l’option `Change storage only`{.action} et sélectionner le datastore cible (vSAN ou NFS).
+    - Vérifier et confirmer les paramètres de migration, puis lancer le processus de migration.
+
+Cette étape garantit que vos VM sont stockées sur l’infrastructure la plus adaptée à leurs besoins en performance.
+
+Pour plus d’informations, consultez le [guide Storage vMotion](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_storage_vmotion).
 
 ### Étape 17 : Créer des jobs de sauvegarde pour sécuriser vos workloads
 
-Maintenant que vos machines virtuelles sont opérationnelles dans l’environnement OVHcloud Hosted Private Cloud, il est essentiel de mettre en place une stratégie de sauvegarde efficace pour protéger vos données.
+Maintenant que vos VM fonctionnent dans l’environnement Hosted Private Cloud d’OVHcloud, il est essentiel de mettre en place une stratégie de sauvegarde pour protéger vos données.
 
-**Veeam Backup & Replication** propose des options flexibles pour sécuriser vos workloads.
+**Veeam Backup & Replication** offre des options flexibles pour sécuriser vos workloads.
 
-#### 17.1 : Définir l’emplacement de stockage des sauvegardes
+1. **Définir l’emplacement de stockage pour la sauvegarde :**
+    - Utilisez l’**[Object Storage compatible S3*](/links/public-cloud/object-storage)** d’OVHcloud comme référentiel de sauvegarde, pour une solution évolutive et optimisée en termes de coûts.
 
-- Utilisez **[Object Storage compatible S3* d’OVHcloud](/links/public-cloud/object-storage)** comme référentiel de sauvegarde pour bénéficier d’une solution évolutive et économique.
-
-#### 17.2 : Créer un job de sauvegarde dans Veeam
-
-1. Ouvrez la **console Veeam** et allez dans l’onglet `Home`{.action}.
-2. Cliquez sur `Backup Job`{.action} > `Virtual Machine`{.action}, puis suivez l’assistant :
+2. **Créer un job de sauvegarde dans Veeam :**
+    - Ouvrez la **console Veeam** et accédez à l’onglet `Home`{.action}.
+    - Cliquez sur `Backup Job`{.action} > `Virtual Machine`{.action} et suivez l’assistant :
     - Sélectionnez les VM à sauvegarder.
-    - Choisissez le référentiel de sauvegarde (par exemple : OVHcloud Object Storage).
-    - Configurez les politiques de rétention, la compression et le chiffrement selon vos besoins.
+    - Choisissez le référentiel de sauvegarde (par exemple, OVHcloud Object Storage).
+    - Configurez les règles de rétention, la compression et le chiffrement selon vos besoins.
 
-#### 17.3 : Exécuter et tester le job de sauvegarde
+3. **Lancer et tester le job de sauvegarde :**
+    - Démarrez le job de sauvegarde et surveillez son exécution.
+    - Effectuez une restauration de test pour vérifier que les sauvegardes sont fiables et exploitables en cas de besoin.
 
-- Lancez le job de sauvegarde et surveillez sa progression.
-- Effectuez une restauration de test pour vous assurer que les sauvegardes sont fiables et peuvent être utilisées en cas de besoin.
+Mettre en place des sauvegardes régulières vous garantit la protection de vos workloads contre la perte ou la corruption de données. Pour plus de détails, consultez le [guide de sauvegarde Veeam avec S3](/pages/storage_and_backup/object_storage/s3_veeam).
 
-Mettre en place des sauvegardes régulières garantit la protection de vos workloads contre les pertes de données ou les corruptions.
-
-Pour plus de détails, consultez le [guide de sauvegarde Veeam avec S3](/pages/storage_and_backup/object_storage/s3_veeam).
-
-* : S3 est une marque déposée d’Amazon Technologies, Inc. Le service OVHcloud n’est ni sponsorisé, ni approuvé, ni affilié à Amazon Technologies, Inc.
+*: S3 est une marque déposée d’Amazon Technologies, Inc. Le service OVHcloud n’est ni sponsorisé, ni approuvé, ni affilié à Amazon Technologies, Inc.
 
 ## Aller plus loin
 

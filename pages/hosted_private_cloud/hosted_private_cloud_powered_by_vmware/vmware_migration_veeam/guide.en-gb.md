@@ -151,9 +151,9 @@ Set up an IPsec tunnel between your on-prem infrastructure and OVHcloud using NS
 
 #### Step 8.2: Use OVHcloud Connect (Optional)
 
-For low latency and high bandwidth, you can subscribe to **OVHcloud Connect**, which provides an MPLS-like link.
+For higher bandwidth and lower latency, you can subscribe to [OVHcloud Connect](/links/network/ovhcloud-connect), which provides an MPLS-like link between your on-prem infrastructure and your OVHcloud tenant.
 
-Learn more about [OVHcloud Connect](/links/network/ovhcloud-connect).
+With [OVHcloud Connect](/links/network/ovhcloud-connect), latency is controlled, and you can choose the bandwidth you need, from 200 Mbps up to several Gbps.
 
 ### Step 9: Deploy the Veeam proxy server
 
