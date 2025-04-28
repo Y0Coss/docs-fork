@@ -1,6 +1,6 @@
 ---
-title: "Création d'une ACL IP"
-excerpt: "Ce guide vous montre comment créer une ACL IP pour autoriser l'accès à votre cluster Ceph."
+title: "Cloud Disk Array - Création d'une ACL IP"
+excerpt: "Ce guide vous montre comment créer une ACL IP pour autoriser l'accès à votre cluster Ceph"
 updated: 2025-04-28
 ---
 
@@ -17,7 +17,7 @@ Ce guide vous montre comment créer une ACL IP pour autoriser l'accès à votre 
 
 > [!primary]
 >
-> L'utilisation de l'espace client OVHcloud est le moyen le plus simple de créer un ACL IP.
+> L'utilisation de l'espace client OVHcloud est le moyen le plus simple de créer une ACL IP.
 >
 
 ### Depuis l'espace client OVHcloud
@@ -28,7 +28,7 @@ Vous trouverez ici l'ACL existante dans `Contrôle d'accès IP`{.action}. Par d�
 
 ![Ceph pools](images/ceph-add-ip-1.png){.thumbnail}
 
-Obtenir votre adresse IP.
+Obtenez votre adresse IP :
 
 ```bash
 admin@server:~$ ip -4 a
@@ -37,21 +37,27 @@ admin@server:~$ ip -4 a
       valid_lft forever preferred_lft forever
 ```
 
-Ajouter votre IP.
+Ajoutez ensuite votre IP.
 
 ![Ceph pools](images/ceph-add-ip-2.png){.thumbnail}
 
-Et créer l'IP ACL.
+Enfin, créez l'ACL IP.
 
-Après la création de la pool d'adresses IP, vous êtes de retour au gestionnaire. Vous pouvez voir que le statut du pool a changé car l'ACL est en cours de création.
+Après la création du pool d'adresses IP, vous pouvez voir que le statut du pool a changé car l'ACL est en cours de création.
 
 ### Depuis l'API OVHcloud
+
+> [!success]
+> Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
+
+Utilisez l'appel API suivant :
 
 > [!api]
 >
 > @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/acl
 >
-serviceName est le fsid de votre cluster.
+
+`serviceName` est le fsid de votre cluster.
 
 Vous pouvez vérifier la création d'une ACL en consultant la liste des ACL.
 
@@ -59,6 +65,7 @@ Vous pouvez vérifier la création d'une ACL en consultant la liste des ACL.
 >
 > @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/acl
 >
+
 Example:
 
 ```bash
@@ -77,6 +84,7 @@ GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/acl
 
 Rendez-vous sur notre chaîne Discord dédiée : <https://discord.gg/ovhcloud>. Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
