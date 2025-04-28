@@ -37,14 +37,14 @@ Cette migration doit s’effectuer sans impact notable pour la plupart des appli
 > [!warning]
 > **Disponibilité réseau pendant la migration**
 >
-> Lors de la migration, vos machines virtuelles (VM) sont déplacées à chaud via vMotion.  
+> Lors de la migration, vos machines virtuelles (VM) sont déplacées à chaud via vMotion.
 > Selon la topologie de votre réseau, certaines VMs pourraient temporairement perdre leur connectivité :
 > 
->   - **Réseau public (VMNetwork)** : pas d’impact, le réseau public est étendu à la nouvelle infrastructure.  
->   - **Réseau privé sans communication entre VMs** : pas d’impact.  
->   - **Réseau privé avec communication entre VMs** : risque de coupure temporaire des communications entre les VMs pendant la phase de migration, car la technologie d’encapsulation passe de VLAN/VXLAN à Geneve.  
+> - **Réseau public (VMNetwork)** : pas d’impact, le réseau public est étendu à la nouvelle infrastructure.
+> - **Réseau privé sans communication entre VMs** : pas d’impact.
+> - **Réseau privé avec communication entre VMs** : risque de coupure temporaire des communications entre les VMs pendant la phase de migration, car la technologie d’encapsulation passe de VLAN/VXLAN à Geneve.
 > 
-> Nous vous recommandons de prendre les dispositions nécessaires et de surveiller votre environnement durant la migration. 
+> Nous vous recommandons de prendre les dispositions nécessaires et de surveiller votre environnement durant la migration.
 
 Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne seront pas appliqués à vos serveurs/hôtes existants. Nous couvrirons l'augmentation du prix de la licence jusqu'à ce que la migration soit terminée.
 

@@ -37,14 +37,12 @@ Your virtual machines will remain operational during the migration, with no down
 >
 > During the migration, your virtual machines (VMs) are moved using vMotion.
 > Depending on your network topology, some VMs may temporarily lose connectivity:
-> 
->   - **Public network (VMNetwork)**: no impact, as the public network is extended to the new infrastructure.
->   - **Private network without inter-VM communication**: no impact.
->   - **Private network with inter-VM communication**: possible brief downtime between VMs during the migration phase, as encapsulation technology changes from VLAN/VXLAN to Geneve.
+>
+> - **Public network (VMNetwork)**: no impact, as the public network is extended to the new infrastructure.
+> - **Private network without inter-VM communication**: no impact.
+> - **Private network with inter-VM communication**: possible brief downtime between VMs during the migration phase, as encapsulation technology changes from VLAN/VXLAN to Geneve.
 > 
 > We recommend that you plan accordingly and monitor your environment during the migration.
-
-This migration should be done with no noticeable impact for most applications, but we recommend that you monitor them closely throughout the process.
 
 This migration should be done with no noticeable impact for most applications, but we recommend that you monitor them closely throughout the process.
 
@@ -71,7 +69,7 @@ The planned schedule, which is compatible with these environments during the mig
 |:---------------------------------:|:----------------------------------:|:---------------------:|:----------:|:-----------:|:-------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |             `Wave 1`              |         **January 2025<br/>February 2025**          |      `Standard`       |     ❌      |      ❌      |          ❌          | - **Without** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)           |
 |             `Wave 2`              | **Mid-May 2025** |      `Standard`       |     ❌      |      ❌      |          ✅          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)              |
-|             `Wave 3`              |         **Mid-June 2025**          |      `Advanced`       |     ✅      |      ❌      |          ❌          | -  **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN) |
+|             `Wave 3`              |         **Mid-June 2025**          |      `Advanced`       |     ✅      |      ❌      |          ❌          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN) |
 |             `Wave 4`              |           **May 2025**           |       `Premium`       |     ✅      |      ✅      |          ✅          | - **With** Microsoft Windows license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **With** High performance storage (vSAN)       |
 
 During this process, your data will remain unchanged, except for vSAN Storage. Your IP addresses will also remain unchanged.
