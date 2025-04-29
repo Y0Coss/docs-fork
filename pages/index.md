@@ -922,6 +922,7 @@
                 + [Managed Kubernetes End-of-Sale, End-of-Service and End-of-Life policies](public_cloud/containers_orchestration/managed_kubernetes/eos-eol-policies)
                 + [Exposed APIs, Kubernetes configuration and Feature gates](public_cloud/containers_orchestration/managed_kubernetes/exposed-apis)
                 + [Known limits](public_cloud/containers_orchestration/managed_kubernetes/known-limits)
+                + [MKS Premium Plan Beta](public_cloud/containers_orchestration/managed_kubernetes/premium)
                 + [Managed Kubernetes objects (services, deployments, pods...)](public_cloud/containers_orchestration/managed_kubernetes/managed-kubernetes-objects)
                 + [Recommended external resources for Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/recommended-external-resources)
                 + [Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources](public_cloud/containers_orchestration/managed_kubernetes/software-versions-reserved-resources)
