@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Verfügbare Versionen"
 excerpt: "Erfahren Sie hier Details zum Versionsstatus (Apache, PHP, Python, Perl) für OVHcloud Webhosting-Lösungen"
-updated: 2025-04-08
+updated: 2025-04-29
 ---
 
 ## Ziel

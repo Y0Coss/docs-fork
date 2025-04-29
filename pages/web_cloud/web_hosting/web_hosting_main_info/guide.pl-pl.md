@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Dostępne wersje językowe"
 excerpt: "Sprawdź szczegóły wersji językowych (Apache, PHP, Python, Perl) dla ofert hostingu www OVHcloud"
-updated: 2025-04-08
+updated: 2025-04-29
 ---
 
 ## Wprowadzenie

@@ -1,7 +1,7 @@
 ---
 title: "Alojamento Web - Versões disponíveis das linguagens"
 excerpt: "Descubra os detalhes das versões de linguagens (Apache, PHP, Python, Perl) para as ofertas de alojamento Web da OVHcloud"
-updated: 2025-04-08
+updated: 2025-04-29
 ---
 
 ## Objetivo
@@ -131,7 +131,6 @@ As informações contidas neste guia dizem respeito às versões de **PHP**, **P
 | PHP 4.4     | Fim do suporte ativo: <span style="color:red;">07/08/2008</span><br>Fim do suporte de segurança: <span style="color:red;">07/08/2008</span><br>Fim de vida: <span style="color:red;">07/08/2008</span> | Não disponível                     | <span style="color:red;">Migração recomendada</span>                  |
 
 Para atualizar a versão PHP da sua aplicação web, consulte a secção "a versão de PHP" do nosso guia [Alojamento web - Ambiente, versão PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
-
 
 ## Quer saber mais?
 

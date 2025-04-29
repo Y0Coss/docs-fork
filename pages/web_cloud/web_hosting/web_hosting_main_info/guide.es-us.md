@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Versiones disponibles de los lenguajes"
 excerpt: "Descubra los detalles de las versiones de los lenguajes (Apache, PHP, Python, Perl) de los planes de hosting de OVHcloud"
-updated: 2025-04-08
+updated: 2025-04-29
 ---
 
 ## Objetivo
