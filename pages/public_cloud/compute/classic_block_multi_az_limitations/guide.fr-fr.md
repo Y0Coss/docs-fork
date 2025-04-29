@@ -25,9 +25,9 @@ Pour mieux comprendre l’architecture sous-jacente des déploiements multi-zone
 
 ## Usage
 
-La création et l'attachement d'un volume Classic Multi-Attach suivent le même processus que celui décrit dans la [documentation OVHcloud sur la création de volume](/pages/public_cloud/compute/starting_with_managing_volumes_openstack_api). La principale différence est que le type de volume est « classic-3AZ », et pas seulement « classic ».
+La création et l'attachement d'un volume Classic Multi-Attach suivent le même processus que celui décrit dans la [documentation OVHcloud sur la création de volume](/pages/public_cloud/compute/starting_with_managing_volumes_openstack_api). La principale différence est que le type de volume est « classic-multiattach », et pas seulement « classic ».
 
-Si le type de volume est omis lors de la création, OpenStack utilisera par défaut « classic-3AZ » (similaire à la façon dont « classic » est défini par défaut dans les régions ordinaires).
+Si le type de volume est omis lors de la création, OpenStack utilisera par défaut « classic-multiattach » (similaire à la façon dont « classic » est défini par défaut dans les régions ordinaires).
 
 Dans OVHcloud Manager, il suffit de sélectionner le volume classique disponible dans la région 3AZ.
 
