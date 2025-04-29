@@ -163,6 +163,7 @@ In a versioning-enabled bucket, each object has one current version and zero or 
 ///
 
 ### Understanding the NoncurrentDays parameter
+
 The NoncurrentDays parameter defines the minimum number of days since a version is no longer current. This paramater must not be confused with the age of the object but rather indicates the minimum age of a non-current version.
 
 **Example 1:**
