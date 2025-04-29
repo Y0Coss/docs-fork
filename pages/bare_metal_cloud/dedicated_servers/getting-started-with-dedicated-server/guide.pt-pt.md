@@ -54,11 +54,7 @@ Pode facilmente reinstalar o seu servidor ou escolher outra imagem de SO a insta
 > Pode gerir todas as licenças na secção `Bare Metal Cloud`{.action} sob `Licenças`{.action}. Nesta secção, também pode encomendar licenças ou adicionar licenças existentes através do botão `Ações`{.action}.
 >
 
-Clique em `Seguinte`{.action} para continuar.
-
-![Seleção de templates](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-02.png){.thumbnail}
-
-Depois de escolher `Instalar a partir de um template OVHcloud`{.action}, pode selecionar o sistema operativo nos menus pendentes.
+Clique em `Seguinte`{.action} para continuar. Em seguida, selecione o sistema operativo nos menus pendentes.
 
 ![Seleção operacional](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-03.png){.thumbnail}
 

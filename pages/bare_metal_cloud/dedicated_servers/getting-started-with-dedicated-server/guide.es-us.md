@@ -54,11 +54,7 @@ Puede reinstalar fácilmente su servidor o elegir otra imagen de SO para instala
 > Puede gestionar todas sus licencias en la sección `Bare Metal Cloud`{.action}, con `Licencias`{.action}. En esta sección también puede contratar licencias o añadir licencias existentes a través del botón `Acciones`{.action}.
 >
 
-Haga clic en `Siguiente`{.action} para continuar.
-
-![Selección de plantilla](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-02.png){.thumbnail}
-
-Una vez elegido `Instalar desde una plantilla de OVHcloud`{.action}, puede seleccionar el sistema operativo en los menús desplegables.
+Haga clic en `Siguiente`{.action} para continuar. A continuación, seleccione el sistema operativo en los menús desplegables.
 
 ![Selección operativa](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-03.png){.thumbnail}
 

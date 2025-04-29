@@ -54,11 +54,7 @@ Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](/
 > Sie können alle Ihre Lizenzen im Bereich `Bare Metal Cloud`{.action} unter `Lizenzen`{.action} verwalten. In diesem Abschnitt können Sie auch über den Button `Aktionen`{.action} Lizenzen bestellen oder bestehende Lizenzen hinzufügen.
 >
 
-Klicken Sie auf `Weiter`{.action}, um fortzufahren.
-
-![Template-Auswahl](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-02.png){.thumbnail}
-
-Nachdem Sie `Installation mit einem OVHcloud Template`{.action} ausgewählt haben, können Sie das gewünschte Betriebssystem in den Menüs auswählen.
+Klicken Sie auf `Weiter`{.action}, um fortzufahren. Wählen Sie dann das gewünschte Betriebssystem in den Menüs aus.
 
 ![Operationelle Auswahl](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-03.png){.thumbnail}
 

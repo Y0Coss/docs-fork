@@ -54,11 +54,7 @@ Możesz w prosty sposób przeprowadzić reinstalację serwera lub wybrać inny o
 > Wszystkie licencje możesz zarządzać w sekcji `Bare Metal Cloud`{.action} z `licencjami `{.action}. W tej sekcji możesz również zamawiać licencje lub dodawać istniejące licencje za pomocą przycisku `Operacje`{.action}.
 >
 
-Kliknij na `Dalej`{.action}, aby kontynuować.
-
-![Wybór szablonu](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-02.png){.thumbnail}
-
-Po wybraniu `Instalacji z szablonu OVHcloud`{.action}, możesz wybrać system operacyjny z menu rozwijanego.
+Kliknij na `Dalej`{.action}, aby kontynuować. Z menu rozwijanego wybierz system operacyjny.
 
 ![Wybór operacyjny](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-03.png){.thumbnail}
 

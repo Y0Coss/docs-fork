@@ -50,11 +50,7 @@ Reinstalla facilmente il tuo server o scegli un'altra immagine del sistema opera
 > Tutte le licenze sono disponibili nella sezione `Bare Metal Cloud`{.action} con `Licenze`{.action}. In questa sezione è possibile anche ordinare licenze o aggiungere licenze esistenti tramite il pulsante `Actions`{.action}.
 >
 
-Clicca su `Avanti`{.action} per continuare.
-
-![Seleziona template](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-02.png){.thumbnail}
-
-Dopo aver scelto di `Installare a partire da un template OVHcloud`{.action}, puoi selezionare il sistema operativo nei menu a tendina.
+Clicca su `Avanti`{.action} per continuare. Quindi seleziona il sistema operativo dai menu a discesa.
 
 ![Selezione operativa](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-03.png){.thumbnail}
 

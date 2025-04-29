@@ -50,11 +50,7 @@ Możesz w prosty sposób przeprowadzić reinstalację serwera lub wybrać inny o
 > Wszystkie licencje możesz zarządzać w sekcji `Bare Metal Cloud`{.action} z `licencjami `{.action}. W tej sekcji możesz również zamawiać licencje lub dodawać istniejące licencje za pomocą przycisku `Operacje`{.action}.
 >
 
-Kliknij na `Dalej`{.action}, aby kontynuować.
-
-![Wybór szablonu](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-02.png){.thumbnail}
-
-Po wybraniu `Instalacji z szablonu OVHcloud`{.action}, możesz wybrać system operacyjny z menu rozwijanego.
+Kliknij na `Dalej`{.action}, aby kontynuować. Z menu rozwijanego wybierz system operacyjny.
 
 ![Wybór operacyjny](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-03.png){.thumbnail}
 
@@ -66,7 +62,7 @@ W tym kroku skonfigurujesz typ macierzy RAID i partycjonowanie w ramach sprzęto
 
 Po zakończeniu wprowadzania korekt kliknij przycisk `Dalej`{.action}, aby przejść do strony z podsumowaniem.
 
-W dokumentacji tej znajdziesz pytania dodatkowe specyficzne dla wybranego systemu operacyjnego.          
+W dokumentacji tej znajdziesz pytania dodatkowe specyficzne dla wybranego systemu operacyjnego.
 
 ![server options](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/reinstalling-your-server-05.png){.thumbnail}
 
