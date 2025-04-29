@@ -129,7 +129,7 @@ The following comparison gives you an idea of the reduced number of API calls to
 
 ![API calls comparison](images/api-calls-comparison.png){.thumbnail}
 
-As you can see, everything becomes streamlined, eliminating the the need for heavy setups.
+As you can see, everything becomes streamlined, eliminating the need for heavy setup.
 
 ## Go further
 
