@@ -1,7 +1,7 @@
 ---
 title: Getting started with VSPC
 excerpt: Discover the Veeam Service Provider Console (VSPC), a cloud-enabled platform provided by Veeam that helps you manage backups and data protection
-updated: 2025-02-27
+updated: 2025-04-29
 ---
 
 > [!primary]
@@ -77,9 +77,34 @@ Available options :
 ### Troubleshooting tips
 
 - **Firewall blockage**: If the agent fails to download, verify that TCP ports 443 and 6183 are open for outbound communication.
+
 - **Browser compatibility**: Ensure you're using a supported browser (e.g., Chrome, Edge). Older browsers may block or restrict downloads.
+
 - **Expired download link**: If you shared the link and it has expired, generate a new one from the `Discovered Computers`{.action} section.
+
 - **Proxy issues**: If your network uses a proxy server, verify that it allows traffic to and from the VSPC.
+
+- **Warning "Backup job won't be able to wake your computer up from sleep"**:
+  If you see this warning in VSPC or your system, it means that the scheduled backup job will not be able to automatically wake the computer from sleep mode.
+
+![Backup Policy Warning](images/backup-warning.png){.thumbnail}
+
+Here’s how to fix this issue:
+
+1. **Enable wake options in the BIOS/UEFI**
+    Make sure features like "Wake on LAN" or "Wake on RTC" are enabled.
+
+2. **Adjust Windows power settings**
+    Open Power Options > Advanced Settings > Sleep, and allow devices to wake the computer.
+
+3. **Configure the backup task in Windows**
+    In the Task Scheduler, check the option `Wake the computer to run this task`{.action} under the `Conditions`{.action} tab.
+
+4. **Update drivers and BIOS**
+    Ensure your BIOS and hardware drivers are up to date to support wake functionality.
+
+> [!primary]
+> This warning does not prevent the backup from running if the computer is powered on at the scheduled time.
 
 ### Step 3: Installing the Management Agent
 
