@@ -188,7 +188,6 @@ Si la date actuelle est 2024-10-23 et **NoncurrentDays**=5, la règle de lifecyc
 - A v3 est non-courante depuis 2024-10-17 (quand A v4 a été créée) : son âge en tant que version non-courante est 6 jours.
 - A v4 est non-courante depuis 2024-10-18 (quand A v5 a été créée) : son âge en tant que version non-courante est 5 jours.
 
-
 **Exemple 2:**
 
 Supposons que vous avez un objet B avec 5 versions :

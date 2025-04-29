@@ -188,7 +188,6 @@ If current date is 2024-10-23 and **NoncurrentDays**=5, the lifecycle rule will 
 - A v3 is non-current since 2024-10-17 (when A v4 was created) i.e its age as a non-current version is 6 days.
 - A v4 is non-current since 2024-10-18 (when A v5 was created) i.e its age as a non-current version is 5 days.
 
-
 **Example 2:**
 
 Suppose you have an object B with 5 versions:
