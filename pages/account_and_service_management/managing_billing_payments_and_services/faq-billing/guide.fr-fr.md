@@ -116,7 +116,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur vo
 
 #### Trucs et astuces
 
-Si une facture n'apparaît pas dans votre espace client, il est possible que vous ne soyez pas le contact de facturation du service concerné. Pour le connaître et éventuellement le modifier, connectez-vous à votre [espace client OVHcloud](/links/manger), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
+Si une facture n'apparaît pas dans votre espace client, il est possible que vous ne soyez pas le contact de facturation du service concerné. Pour le connaître et éventuellement le modifier, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
 
 ### Comment payer ma facture ?
 

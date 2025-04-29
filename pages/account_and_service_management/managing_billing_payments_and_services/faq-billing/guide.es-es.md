@@ -115,7 +115,7 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su 
 
 #### Ideas y consejos
 
-Si una factura no aparece en su área de cliente, es posible que usted no sea el contacto de facturación del servicio. Para conocerlo y, en su caso, modificarlo, conéctese a su [área de cliente de OVHcloud](/links/manger), haga clic en su nombre en la esquina superior derecha y seleccione `Mis contactos`{.action}.
+Si una factura no aparece en su área de cliente, es posible que usted no sea el contacto de facturación del servicio. Para conocerlo y, en su caso, modificarlo, conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis contactos`{.action}.
 
 ### ¿Cómo abonar las facturas pendientes de pago?
 
