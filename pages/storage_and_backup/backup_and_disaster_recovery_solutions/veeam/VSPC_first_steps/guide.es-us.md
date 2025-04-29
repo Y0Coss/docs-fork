@@ -77,7 +77,7 @@ Available options :
 ### Troubleshooting tips
 
 - **Firewall blockage**: If the agent fails to download, verify that TCP ports 443 and 6183 are open for outbound communication.
-- **Browser compatibility**: Ensure you're using a supported browser (e.g., Chrome or Edge). Older browsers may block or restrict downloads.
+- **Browser compatibility**: Ensure you're using a supported browser (e.g. Chrome or Edge). Older browsers may block or restrict downloads.
 - **Expired download link**: If you shared the link and it has expired, generate a new one from the `Discovered Computers`{.action} section.
 - **Proxy issues**: If your network uses a proxy server, verify that it allows traffic to and from the VSPC.
 - **Warning "Backup job won't be able to wake your computer up from sleep"**: If you see this warning in VSPC or your system, it means that the scheduled backup job will not be able to automatically wake the computer from sleep mode.
