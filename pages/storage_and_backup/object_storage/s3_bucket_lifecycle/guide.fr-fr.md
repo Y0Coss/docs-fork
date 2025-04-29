@@ -204,7 +204,6 @@ Si la date actuelle est 2024-10-29 et **NoncurrentDays**=5, la règle de lifecyc
 - B v1 est non-courante depuis 2024-10-15 (quand B v2 a été créée) : son âge en tant que version non-courante est 14 jours.
 - B v2 est non-courante depuis 2024-10-20 (quand B v3 a été créée) : son âge en tant que version non-courante est 9 jours.
 
-
 ### Obtenir la date d'expiration programmée
 
 Si un objet est programmé pour être supprimé, un appel HEAD-OBJECT renvoie un en-tête de réponse http spécial x-amz-expiration qui contient un timestamp indiquant sa date d'expiration et un identifiant de la règle du lifecycle qui a été appliquée.

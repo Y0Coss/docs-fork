@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
 excerpt: Learn how to optimise your storage costs with OVHcloud lifecycle rules
-updated: 2025-04-03
+updated: 2025-04-29
 ---
 
 <style>
@@ -169,38 +169,40 @@ The NoncurrentDays parameter defines the minimum number of days since a version 
 **Example 1:**
 
 Suppose you have an object A with 10 versions:
-- A v10 (current version, creation date: 2024-10-23)
-- A v9 (noncurrent version, creation date: 2024-10-22)
-- A v8 (noncurrent version, creation date: 2024-10-21)
-- A v7 (noncurrent version, creation date: 2024-10-20)
-- A v6 (noncurrent version, creation date: 2024-10-19)
-- A v5 (noncurrent version, creation date: 2024-10-18)
-- A v4 (noncurrent version, creation date: 2024-10-17)
-- A v3 (noncurrent version, creation date: 2024-10-16)
-- A v2 (noncurrent version, creation date: 2024-10-15)
-- A v1 (noncurrent version, creation date: 2024-10-14)
+
+- A v10 (current version, creation date: 2024-10-23).
+- A v9 (noncurrent version, creation date: 2024-10-22).
+- A v8 (noncurrent version, creation date: 2024-10-21).
+- A v7 (noncurrent version, creation date: 2024-10-20).
+- A v6 (noncurrent version, creation date: 2024-10-19).
+- A v5 (noncurrent version, creation date: 2024-10-18).
+- A v4 (noncurrent version, creation date: 2024-10-17).
+- A v3 (noncurrent version, creation date: 2024-10-16).
+- A v2 (noncurrent version, creation date: 2024-10-15).
+- A v1 (noncurrent version, creation date: 2024-10-14).
 
 If current date is 2024-10-23 and **NoncurrentDays**=5, the lifecycle rule will delete the noncurrent versions older than 5 days i.e v1, v2, v3 and v4 because:
-- v1 is non-current since 2024-10-15 (when v2 was created) i.e its age as a non-current version is 8 days
-- v2 is non-current since 2024-10-16 (when v3 was created) i.e its age as a non-current version is 7 days
-- v3 is non-current since 2024-10-17 (when v4 was created) i.e its age as a non-current version is 6 days
-- v4 is non-current since 2024-10-18 (when v5 was created) i.e its age as a non-current version is 5 days
+
+- A v1 is non-current since 2024-10-15 (when A v2 was created) i.e its age as a non-current version is 8 days.
+- A v2 is non-current since 2024-10-16 (when A v3 was created) i.e its age as a non-current version is 7 days.
+- A v3 is non-current since 2024-10-17 (when A v4 was created) i.e its age as a non-current version is 6 days.
+- A v4 is non-current since 2024-10-18 (when A v5 was created) i.e its age as a non-current version is 5 days.
 
 
 **Example 2:**
 
 Suppose you have an object B with 5 versions:
-- B v5 (current version, creation date: 2024-10-28)
-- B v4 (noncurrent version, creation date: 2024-10-27)
-- B v3 (noncurrent version, creation date: 2024-10-20)
-- B v2 (noncurrent version, creation date: 2024-10-15)
-- B v1 (noncurrent version, creation date: 2024-10-14)
+
+- B v5 (current version, creation date: 2024-10-28).
+- B v4 (noncurrent version, creation date: 2024-10-27).
+- B v3 (noncurrent version, creation date: 2024-10-20).
+- B v2 (noncurrent version, creation date: 2024-10-15).
+- B v1 (noncurrent version, creation date: 2024-10-14).
 
 If current date is 2024-10-29 and **NoncurrentDays**=5, the lifecycle rule will delete the noncurrent versions older than 5 days i.e only v1 and v2 because:
-- v1 is non-current since 2024-10-15 (when v2 was created) i.e its age as a non-current version is 14 days
-- v2 is non-current since 2024-10-20 (when v3 was created) i.e its age as a non-current version is 9 days
 
-
+- B v1 is non-current since 2024-10-15 (when B v2 was created) i.e its age as a non-current version is 14 days.
+- B v2 is non-current since 2024-10-20 (when B v3 was created) i.e its age as a non-current version is 9 days.
 
 ### Get the scheduled expiration date
 

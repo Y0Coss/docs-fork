@@ -204,8 +204,6 @@ If current date is 2024-10-29 and **NoncurrentDays**=5, the lifecycle rule will 
 - B v1 is non-current since 2024-10-15 (when B v2 was created) i.e its age as a non-current version is 14 days.
 - B v2 is non-current since 2024-10-20 (when B v3 was created) i.e its age as a non-current version is 9 days.
 
-
-
 ### Get the scheduled expiration date
 
 If an object is scheduled to be deleted, a HEAD-OBJECT call will return a special http response header x-amz-expiration that contains a timestamp indicating its expiry date and an id of the lifecycle rule that has been applied.
