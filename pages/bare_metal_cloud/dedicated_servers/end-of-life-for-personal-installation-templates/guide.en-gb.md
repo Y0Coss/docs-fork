@@ -6,6 +6,13 @@ updated: 2025-04-29
 
 **This is an important documentation, please read it carefully as you might be impacted in the future if you request an OS installation on a new dedicated server or an OS reinstallation on a dedicated server you already have.**
 
+Although this page outlines the decommissioning of personal templates for dedicated server OS installation and its impacts, customers can rest assured that **there will be no loss of features**.
+In fact, after this decommissioning, customers will still be able to install operating systems with **the same level of customization as before**. Moreover, customers who use the API directly will benefit from **1 simplified API call**.
+
+## Objective
+
+This page provides key information about the decommissioning plan for personal templates used in dedicated server OS installations. Additionally, it offers helpful tips for customers using the OVHcloud, SoYouStart, or Kimsufi control panels. Furthermore, it highlights the benefits of the new API call compared to the deprecated API call.
+
 ## Context<a name="context"></a>
 
 OVHcloud is constantly evolving and must adapt its offers to the increasingly resilient and regulated cloud market. In order to meet those new challenges, **personal templates for dedicated servers OS installation** will be fully decommissioned on the **7th of October 2025**.

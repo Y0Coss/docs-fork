@@ -6,6 +6,13 @@ updated: 2025-04-29
 
 **Veuillez lire ce guide dans son intégralité avec une attention toute particulière, car vous pourriez potentiellement être impacté si vous effectuez une demande d'installation OS sur un nouveau serveur dédié ou une demande de réinstallation OS sur l'un de vos serveurs dédiés.**
 
+Bien que cette page décrit le décommissionnement des gabarits personnels pour l'installation OS des serveurs dédiés et ses impacts, les clients peuvent être rassurés qu'il n'y a **aucune perte de fonctionnalités**.
+En effet, après ce décommissionnement, les clients pourront toujours installer des OSes avec le **même niveau de personnalisation qu'auparavant**. De plus, les clients qui utilisent l'API directement bénéficieront d'**1 appel API plus simple**.
+
+## Objectifs
+
+Cette page fournit des informations clés sur le plan de décommissionnement des gabarits personnels pour l'installation OS des serveurs dédiés. Elle offre également des conseils utiles pour les clients utilisant l'espace client OVHcloud, SoYouStart ou Kimsufi. Enfin, elle présente les avantages de l'appel API nouveau par rapport à l'appel API obsolète.
+
 ## Contexte <a name="context"></a>
 
 OVHcloud se réinvente constamment pour adapter ses offres à une demande croissante de résilience. Afin d'atteindre cet objectif, **les gabarits personnels d'installation OS pour les serveurs dédiés** seront tous supprimés le **7 Octobre 2025**.
