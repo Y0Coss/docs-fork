@@ -132,6 +132,7 @@
             + [Find your patch for Meltdown and Spectre](bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os)
             + [Information about Meltdown and Spectre vulnerability fixes](bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes)
         + [Server management](bare-metal-cloud-dedicated-servers-managing-servers)
+            + [End of life for personal installation templates](bare_metal_cloud/dedicated_servers/end-of-life-for-personal-installation-templates)
             + [OVHcloud API & OS Installation](bare_metal_cloud/dedicated_servers/api-os-installation)
             + [Using backup storage on a dedicated server](bare_metal_cloud/dedicated_servers/services_backup_storage)
             + [How to configure user accounts and root access on a server](bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
