@@ -157,7 +157,7 @@ Pour que la personnalisation des serveurs DNS soit visible sur le réseau DNS (e
 Cette manipulation s'effectue depuis l’interface du prestataire gérant la configuration DNS de votre nom de domaine. Dès lors, deux possibilités existent :
 
 - **Votre nom de domaine n'utilise pas une zone DNS active chez OVHcloud** : rapprochez-vous du prestataire gérant cette dernière pour effectuer la modification.
-- **Votre nom de domaine utilise une zone DNS active chez OVHcloud** : connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Zones DNS`{.action} puis sélectionnez le nom de domaine pour lequel vous avez personnalisé les serveurs DNS. Positionnez-vous sur l'onglet `Zone DNS`{.action} puis cliquez sur `Modifier en mode textuel`{.action}. 
+- **Votre nom de domaine utilise une zone DNS active chez OVHcloud** : connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Zones DNS`{.action} puis sélectionnez le nom de domaine pour lequel vous avez personnalisé les serveurs DNS. Positionnez-vous sur l'onglet `Zone DNS`{.action} puis cliquez sur `Modifier en mode textuel`{.action}.
 
 Une fenêtre comprenant votre zone DNS en mode *textuel* apparaît :
 
