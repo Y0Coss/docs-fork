@@ -851,7 +851,7 @@
                 + [Customizing CoreDNS on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/customizing-coredns)
                 + [Resetting an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/resetting-a-cluster)
                 + [Upgrading Kubernetes version on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/upgrading-kubernetes-version)
-                + [MKS Premium Plan Beta](public_cloud/containers_orchestration/managed_kubernetes/premium)
+                + [MKS Premium Plan](public_cloud/containers_orchestration/managed_kubernetes/premium)
             + [Tutorials](public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials)
                 + [Deploying a Hello World application with the OVHcloud Control Panel](public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world)
                 + [Deploying a Hello World with the OVHcloud API](public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world-ovh-api)
