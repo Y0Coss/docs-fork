@@ -32,7 +32,7 @@ Vous souhaitez afficher votre site web avec votre nom de domaine ? Pour cela, vo
 
 /// details | Cliquez ici pour plus d'informations.
 
-Si vous éprouvez des difficultés, consultez nos guides détaillés :
+Consultez nos guides détaillés :
 
 - [Tout savoir sur les zones DNS](/pages/web_cloud/domains/dns_zone_general_information)
 - [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
