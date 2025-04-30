@@ -57,6 +57,12 @@ If you exceed these rate limits, you will receive a 429 error code. In this case
 
 Alternatively, please **[reach out to us to discuss increasing your limits](https://help.ovhcloud.com/csm?id=csm_get_help )** if you require higher usage.
 
+### When using AI Endpoints, I am facing "Resource tag 'discovery' is forbidden"
+
+This error occurs when you are trying to use AI Endpoints with an access key that was created from a Public Cloud project in **Discovery mode**, which doesn't have a payment method.
+
+To resolve this error, add a payment method to your Public Cloud project and try again.
+
 ### I am experiencing slow response times when using some of the AI Endpoints models. What is causing this delay?
 
 The delay you are experiencing could be due to the fact that the model you are using has been decommissioned. In most cases, we redirect decommissioned models to updated versions (for example, from llama 3.0 to llama 3.1) to ensure that they still answer requests. However, we add a 10-second delay before the model responds to signal to users that the model is no longer in active use.

@@ -24,6 +24,7 @@ It explains how to obtain an access key, access AI models, and interact with AI 
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A payment method defined on your Public Cloud project. **Access keys created from Public Cloud projects in Discovery mode (without a payment method) cannot use the service**.
 
 ## Instructions
 
