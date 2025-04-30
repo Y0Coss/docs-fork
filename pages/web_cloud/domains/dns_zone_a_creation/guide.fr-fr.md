@@ -18,6 +18,10 @@ Vous souhaitez afficher votre site web avec votre nom de domaine ? Pour cela, vo
 
 ## En pratique
 
+> [!warning]
+>
+> L'ajout, la modification ou la suppression d'enregistrements DNS dans une zone DNS active est une manipulation sensible. En cas de doute, contactez un [prestataire spécialisé](/links/partner).
+
 ### Ajouter un enregistrement DNS de type A pour un nom de domaine
 
 1. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
