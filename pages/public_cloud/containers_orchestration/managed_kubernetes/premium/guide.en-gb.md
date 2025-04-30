@@ -82,7 +82,7 @@ Changing the Security Policy after the cluster creation is not supported yet.
 ### Anti-affinity
 
 
-This feature allows worker nodes to be deployed on different hypervisors (physical servers), guaranteeing better fault tolerance. It is currently not supported on the MKS Premium Plan (EU-WEST-PAR).
+This feature allows worker nodes to be deployed on different hypervisors (physical servers) within the same availability zone, guaranteeing better fault tolerance. It is currently supported on the MKS Premium Plan (region EU-WEST-PAR).
 
 We recommend using multiple Availability Zones (AZs) instead by using node pool to spread worker nodes between AZ.
 
