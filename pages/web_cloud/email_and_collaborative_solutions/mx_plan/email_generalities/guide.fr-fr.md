@@ -226,7 +226,7 @@ Pour ce faire, cliquez sur l'onglet correspondant à votre technologie e-mail :
 >> - `Vers l'adresse` : Renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.<br>
 >> - `Choisissez un mode de copie` : Définissez si vous souhaitez conserver une copie de l'e-mail reçu sur l'adresse e-mail ciblée (`De l'adresse`) ou directement renvoyer vers l'adresse de redirection (`Vers l'adresse`) sans conserver de copie.
 >>
->> Pour comprendre l'utilisation des redirections et alias sur votre service MX Plan, vous pouvez consulter notre guide complet : « [Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections) ».
+>> Pour comprendre l'utilisation des redirections et alias sur votre service MX Plan, consultez notre guide complet : « [Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections) ».
 >>
 > **OWA et Zimbra**
 >>
