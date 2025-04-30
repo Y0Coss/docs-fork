@@ -10,6 +10,10 @@ Vous souhaitez afficher votre site web avec votre nom de domaine ? Pour cela, vo
 
 **Découvrez comment ajouter un enregistrement DNS de type A dans une zone DNS gérée chez OVHcloud pour votre nom de domaine.**
 
+> [!primary]
+>
+> Pour modifier ou supprimer un enregistrement DNS de type A d'une zone DNS OVHcloud, suivez [ce guide](/pages/web_cloud/domains/dns_zone_edit).
+
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains)
