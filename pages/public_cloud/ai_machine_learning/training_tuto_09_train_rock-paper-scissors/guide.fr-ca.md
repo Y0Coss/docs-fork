@@ -23,7 +23,7 @@ It is based on the YOLOv8 open source [repository](https://github.com/ultralytic
 - You have created a Public Cloud project.
 - The ovhai CLI interface is installed on your system (find more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)).
 - You have [Docker](https://www.docker.com/get-started) installed and configured to build images.
-- You have an OCI / Docker image registry available. You can use a public registry (such as [Docker Hub](https://hub.docker.com/) for example) or a private registry. Refer to the [Creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) documentation to create a private registry based on Harbor.
+- You have an OCI / Docker image registry available. You can use a public registry (such as [Docker Hub](https://hub.docker.com/) for example) or a private registry. Refer to the [Creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) documentation to create a private registry based on Harbor. To make your registry compatible with AI Solutions usage, follow the [Use & manage your registries](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry) guide.
 - You have knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
 ## Instructions
