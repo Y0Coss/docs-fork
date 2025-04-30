@@ -96,7 +96,7 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 > **Étape 3**
 >>
->> Une fois positionné sur le domaine concerné, sélectionnez l'onglet `GLUE`{.action}.
+>> Une fois positionné sur le domaine concerné, cliquez sur l'onglet `GLUE`{.action}.
 >>
 >> Un tableau affiche alors, s'ils existent, les enregistrements « GLUE » actuellement configurés chez OVHcloud pour votre nom de domaine. Pour ajouter un nouvel enregistrement « GLUE », cliquez sur le bouton `Ajouter`{.action}.
 >>
