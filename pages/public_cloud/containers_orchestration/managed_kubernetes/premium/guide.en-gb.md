@@ -130,6 +130,13 @@ If you want to use an use an existing subnet, if :
     - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway ([Creating a private network with Gateway](/links/public-cloud/gateway))
 - **The GatewayIP is already assigned to a non-OVHcloud Gateway (OpenStack Router)**.
     - Provide another compatible subnet: a subnet with an existing OVHcloud Gateway ([Creating a private network with Gateway](/links/public-cloud/gateway))
+    
+>[!primary]
+> Please remember to avoid the MKS Reserved IP ranges (cf above) for your networkd CIDR
+
+>[!primary]
+> Using the OVHcloud Control Panel, make sur to check the "Declare the first address of a CIDR given as the default gateway (DHCP option 3)" and "Assign a Gateway and connect to the private network" boxes at network creation
+> ![network-creation](images/network-creation.png){.thumbnail}
 
 ### Create a MKS Premium cluster
 The following methods are supported to create an MKS Premium cluster:
