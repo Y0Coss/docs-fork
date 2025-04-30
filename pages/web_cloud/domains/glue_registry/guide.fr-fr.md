@@ -219,7 +219,7 @@ Si nécessaire, reportez-vous aux instructions décrites dans notre documentatio
 > - domain.tld IN NS dns1.
 > - domain.tld IN NS dns2.
 >
-> Rassurez-vous, cela équivaut au même résultat et cette configuration fonctionnera parfaitement. Ce phénomène est généré par le fait qu'il s'agit du même nom de domaine de part et d'autre de l'enregistrement *NS*.
+> Rassurez-vous, cela équivaut au même résultat et cette configuration fonctionnera parfaitement. Ce phénomène s'explique par la présence du même nom de domaine de part et d'autre de l'enregistrement *NS*.
 >
 
 ### 5 - Modifier les serveurs DNS de votre nom de domaine
