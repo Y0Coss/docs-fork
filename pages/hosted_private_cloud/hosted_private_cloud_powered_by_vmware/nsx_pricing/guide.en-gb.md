@@ -51,47 +51,47 @@ You can adapt your infrastructure to meet your specific needs:
 ### Steps to customize NSX Edges
 
 - Log in to the [OVHcloud Control Panel](/links/manager).
-- Navigate to the `Network`{.action} section of the Datacenter dashboard, then access `NSX Edge Nodes`{.action}. 
+- From the Datacenters dashboard, access your Datacenter then click on the `NSX Edge Nodes`{.action} tab.
 
 1. **Order new NSX Edges**:
 
-Click on `Add an Edge`{.action}.
+    Click on `Add an Edge`{.action}.
 
-![Adding an NSX Edge from the NSX interface](images/add-an-nsx-edge.png)
+    ![Adding an NSX Edge from the NSX interface](images/add-an-nsx-edge.png)
 
-Then, select the desired size and click on `Order`{.action}.
+    Then, select the desired size and click on `Order`{.action}.
 
-![Ordering an NSX Edge from the Manager](images/order-an-edge.png)
+    ![Ordering an NSX Edge from the Manager](images/order-an-edge.png)
 
-> [!primary]
->
-> All Edges must be the same size: when adding a new Edge, it will automatically match the size of existing Edges.
+    > [!primary]
+    >
+    > All Edges must be the same size: when adding a new Edge, it will automatically match the size of existing Edges.
 
 2. **Modify the size of existing NSX Edges**:
 
-Click on `Resize`{.action}.
+    Click on `Resize`{.action}.
 
-![Selecting an Edge to resize](images/resize-an-edge-01.png)
+    ![Selecting an Edge to resize](images/resize-an-edge-01.png)
 
-Select the Edge you want to modify.
+    Select the Edge you want to modify.
 
-Choose a new size (Medium, Large, or XL) and apply the changes by clicking on `Confirm`{.action}.
+    Choose a new size (Medium, Large, or XL) and apply the changes by clicking on `Confirm`{.action}.
 
-![Choosing a new size for the Edge](images/resize-an-edge-02.png)
+    ![Choosing a new size for the Edge](images/resize-an-edge-02.png)
 
 3. **Remove unused NSX Edges**:
 
-Identify the Edge to be removed in the [OVHcloud Control Panel](/links/manager).
+    Identify the Edge to be removed in the [OVHcloud Control Panel](/links/manager).
 
-![List of available NSX Edges](images/list-nsx-edges.png)
+    ![List of available NSX Edges](images/list-nsx-edges.png)
 
-Click on `Delete`{.action} and confirm the action. 
+    Click on `Delete`{.action} and confirm the action. 
 
-![Deleting an NSX Edge](images/delete-nsx-edge.png)
+    ![Deleting an NSX Edge](images/delete-nsx-edge.png)
 
-> [!primary]
->
-> The Edge must be in resilience mode before deletion to ensure no ongoing traffic is affected.
+    > [!primary]
+    >
+    > The Edge must be in resilience mode before deletion to ensure no ongoing traffic is affected.
 
 ## Go further
 
