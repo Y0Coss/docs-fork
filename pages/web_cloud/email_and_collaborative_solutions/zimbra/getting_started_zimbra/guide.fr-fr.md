@@ -5,11 +5,8 @@ updated: 2025-02-13
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
-}
-.h-400 {
-  max-height:400px !important;
+.w-500 {
+  max-width:500px !important;
 }
 </style>
 
@@ -35,7 +32,7 @@ Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collabor
 1. Rendez-vous dans la partie `Web Cloud`{.action}.
 1. Cliquez sur `Zimbra Mail`{.action}.
 
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-400}
+![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configurer votre service Zimbra
 
@@ -51,19 +48,19 @@ Avant de débuter la configuration de vos comptes e-mail Zimbra, prenez connaiss
 
 Le schéma ci-dessous résume le lien hiérarchique entre les éléments précédemment cités.
 
-![zimbra](images/zimbra_organization.png){.thumbnail .w-400}
+![zimbra](images/zimbra_organization.png){.thumbnail .w-500}
 
 ### Organisations <a name="organizations"></a>
 
 Si vous ajoutez un grand nombre de noms de domaine sur votre service Zimbra, il peut être utile de les regrouper en les associant à une « organisation ». Depuis votre service Zimbra, cliquez sur `Organisation`{.action}.
 
-![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-400}
+![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-500}
 
 #### Créer une organisation
 
 Pour créer une organisation, cliquez sur `Ajouter une organisation`{.action}. Définissez le `Nom` de l'organisation et le `Label de l'organisation`, ce dernier étant une description courte de l'organisation vous permettant de vous repérer lorsque vous filtrez l'affichage des noms de domaine et comptes e-mail de votre service Zimbra.
 
-![zimbra](images/zimbra_organization_add.png){.thumbnail .w-400}
+![zimbra](images/zimbra_organization_add.png){.thumbnail .w-500}
 
 #### Filtrer par organisation
 
@@ -73,7 +70,7 @@ Vous pouvez constater que le filtre est appliqué lorsque le label s'affiche à 
 
 Pour retirer le filtre, cliquez simplement sur la croix du filtre.
 
-![zimbra](images/zimbra_organization_filter.png){.thumbnail .w-400}
+![zimbra](images/zimbra_organization_filter.png){.thumbnail .w-500}
 
 ### Domaines <a name="domains"></a>
 
@@ -88,7 +85,7 @@ Le tableau des noms de domaine vous donne deux informations :
 - **Organisation** : elle est déterminée lorsque vous ajoutez votre nom de domaine, vous retrouverez automatiquement son label dans cette colonne.
 - **Nombre de comptes** : Vous retrouvez ici tous les comptes qui ont été créés sous le nom de domaine concerné.
 
-![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-400}
+![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-500}
 
 #### Ajouter un nom de domaine
 
@@ -110,7 +107,7 @@ Sélectionnez l'onglet correspondant à votre choix :
 >>
 >> Sélectionnez dans la liste un nom de domaine géré depuis votre espace client OVHcloud.
 >>
->> ![zimbra](images/zimbra_domain_add_internal01.png){.thumbnail .w-400 .h400}
+>> ![zimbra](images/zimbra_domain_add_internal01.png){.thumbnail .w-500 .h400}
 >>
 >> Pour configurer votre zone DNS, sélectionnez l'une des deux options suivantes:
 >>
@@ -120,7 +117,7 @@ Sélectionnez l'onglet correspondant à votre choix :
 >>    - *Configurer l'enregistrement SPF automatiquement* : il permet de saisir automatiquement l'enregistrement autorisant les serveurs e-mail d'envoi OVHcloud à transmettre vos e-mails. Cet enregistrement est valable pour l'ensemble des offres e-mail OVHcloud.
 >>    - *Configurer l'enregistrement DKIM automatiquement* : il permet de saisir automatiquement les enregistrements nécessaires pour authentifier vos envois d'e-mails.
 >>
->> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-400 .h400}
+>> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-500 .h400}
 >>
 >> Cliquez sur `Confirmer`{.action} pour finaliser l'ajout de votre domaine et lancer le processus de configuration.
 >>
@@ -130,11 +127,11 @@ Sélectionnez l'onglet correspondant à votre choix :
 >>
 >> Cliquez ensuite sur `Confirmer`{.action}
 >>
->> ![zimbra](images/zimbra_domain_add_external01.png){.thumbnail .w-400 .h400}
+>> ![zimbra](images/zimbra_domain_add_external01.png){.thumbnail .w-500 .h400}
 >>
 >> La fenêtre ci-dessous s'affiche, il est nécessaire de renseigner cet enregistrement CNAME dans la zone DNS du nom de domaine pour qu'il soit validé sur votre plateforme Zimbra.
 >>
->> ![zimbra](images/zimbra_domain_add_external02.png){.thumbnail .w-400 .h400}
+>> ![zimbra](images/zimbra_domain_add_external02.png){.thumbnail .w-500 .h400}
 >>
 >> > [!warning]
 >> >
@@ -146,7 +143,7 @@ Vous pouvez modifier votre nom de domaine pour changer son organisation ou véri
 
 Depuis l'onglet `Domaine`{.action} de votre service Zimbra, cliquez sur l'icône « &#8285; » à droite du nom de domaine concerné pour afficher les options.
 
-![zimbra](images/zimbra_domain_modify01.png){.thumbnail .w-400 .h400}
+![zimbra](images/zimbra_domain_modify01.png){.thumbnail .w-500 .h400}
 
 - Cliquez sur `Configurer`{.action} pour modifier l'organisation associée à votre nom de domaine.
 - Cliquez sur `Diagnostics`{.action} pour afficher l'interface de diagnostic des enregistrement DNS du nom de domaine. Il est nécessaire de s'assurer qu'aucune alerte n'est affichée pour chacun des enregistrements DNS mentionnés dans les onglets. Suivez les instructions détaillées dans chaque onglet mentionnant une alerte pour configurer les enregistrements DNS :
@@ -154,7 +151,7 @@ Depuis l'onglet `Domaine`{.action} de votre service Zimbra, cliquez sur l'icône
     - **SPF** : sécurité exigée par la majorité des serveurs e-mail destinataires pour légitimer les serveurs d'envoi e-mail d'OVHcloud avec votre nom de domaine.
     - **DKIM** : permet de mettre en place un système de signature pour chaque e-mail envoyé par votre service Zimbra. La signature est vérifiée par le destinataire à l'aide de la clé publique visible dans votre zone DNS.
 
-![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-400 .h400}
+![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500 .h400}
 
 ### Comptes e-mail <a name="emails"></a>
 
@@ -166,7 +163,7 @@ La gestion des adresses e-mail de votre service Zimbra se fait depuis l'onglet `
 
 Vous retrouvez également en haut de cette page un lien vers le [Webmail](/links/web/email) pour pouvoir vous connecter directement au contenu de votre compte e-mail depuis votre navigateur internet.
 
-![zimbra](images/zimbra_emailaccounts_tab.png){.thumbnail .w-400}
+![zimbra](images/zimbra_emailaccounts_tab.png){.thumbnail .w-500}
 
 #### Créer un compte e-mail
 
@@ -202,7 +199,7 @@ Complétez les informations qui s'affichent.
 
 Cliquez sur `Confirmer`{.action} pour lancer la création du compte.
 
-![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-400}
+![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
 ### Consulter son compte e-mail <a name="mail-consult"></a>
 
@@ -210,6 +207,32 @@ Pour consulter votre compte e-mail :
 
 - Connectez-vous au [webmail](/links/web/email) depuis un navigateur internet et saisissez votre adresse e-mail et votre mot de passe. Pour plus de détails consultez, notre page « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
 - Configurez un logiciel de messagerie sur votre ordinateur, votre smartphone ou votre tablette. Consultez notre page « [Configurer son adresse e-mail Zimbra sur un logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps) ».
+
+### Redirection <a name="redirection"></a>
+
+Pour créer une redirection sur une adresse email Zimbra, connectez-vous au [webmail](/links/web/email).
+Via les règles de boîte de réception ou filtres. En effet ces règles que l'on applique lors de la réception d'un e-mail permettent de transférer ou rediriger un e-mail. Pour cela, consulter le chapitre « Filtres » de notre guide « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
+
+### Alias <a name="alias"></a>
+
+Un alias vous permet de communiquer une adresse e-mail sans communiquer votre réel adresse e-mail. Pour créer un alias sur une de vos adresses e-mail, suivez les étapes des onglets ci-dessous
+
+> [!tabs]
+> **Etape 1**
+>>
+>>
+>> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-500}
+>>
+> **Etape 2**
+>>
+>>
+>> ![zimbra](images/zimbra_alias02.png){.thumbnail .w-500}
+>>
+> **Etape 3**
+>>
+>>
+>> ![zimbra](images/zimbra_alias03.png){.thumbnail .w-500}
+>>
 
 ## Aller plus loin <a name="go-further"></a>
 
