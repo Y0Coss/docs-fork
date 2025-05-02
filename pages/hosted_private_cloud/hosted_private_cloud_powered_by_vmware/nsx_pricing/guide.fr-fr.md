@@ -1,7 +1,7 @@
 ---
 title: Tarification et gestion des NSX Edges OVHcloud
-excerpt: "Découvrez les options de tarification, configuration et personnalisation des NSX Edges pour VMware on OVHcloud"
-updated: 2025-01-16
+excerpt: Découvrez les options de tarification, configuration et personnalisation des NSX Edges pour VMware on OVHcloud
+updated: 2025-05-02
 ---
 
 ## Objectif
@@ -11,7 +11,7 @@ Cette documentation a pour but d'expliquer les options de configuration des NSX 
 ## Prérequis
 
 - Être connecté à [l'espace client OVHcloud](/links/manager) pour gérer vos NSX Edges.
-- **Utiliser VMware NSX 4.1.1** pour accéder aux options de personnalisation.
+- Utiliser **VMware NSX 4.1.1** pour accéder aux options de personnalisation.
 - Connaissances de base des concepts VMware et des fonctionnalités des NSX Edges.
 
 ## Principe général
@@ -20,7 +20,7 @@ Cette documentation a pour but d'expliquer les options de configuration des NSX 
 
 Lors de la création d’un environnement VMware, OVHcloud fournit automatiquement :
 
-- **2 NSX Edges Medium** :
+- **2 NSX Edges Medium**:
     - 4 vCPU.
     - 8 Go RAM.
 
@@ -50,21 +50,48 @@ Vous pouvez adapter votre infrastructure en fonction de vos besoins spécifiques
 
 ### Étapes pour personnaliser les NSX Edges
 
+- Connectez-vous à [l'espace client OVHcloud](/links/manager)
+- Naviguez vers la section `Network`{.action} du dashboard Datacenter, puis accédez à `NSX Edge Nodes`{.action}.
+
 1. **Commandez de nouveaux NSX Edges** :
-    - Connectez-vous à [l'espace client OVHcloud](/links/manager)
-    - Naviguez vers la section `Network`{.action} du dashboard Datacenter, puis accédez à `NSX Edges`{.action}.
-    - Cliquez sur `Ajouter un Edge`{.action} et sélectionnez la taille souhaitée. Toutes les Edges doivent être de la même taille : lorsqu’un Edge est ajouté, il sera automatiquement aligné sur la taille des autres Edges présents.
+    - Cliquez sur `Add an Edge`{.action}.
+
+    ![Adding an NSX Edge from the NSX interface](images/add-an-nsx-edge.png)
+
+    - Sélectionnez la taille souhaitée et cliquez sur `Order`{.action}. 
+
+> [!primary]
+> Toutes les Edges doivent être de la même taille : lorsqu’un Edge est ajouté, il sera automatiquement aligné sur la taille des autres Edges présents.
+
 2. **Modifiez la taille des NSX Edges existants** :
-    - Accédez à la liste des NSX Edges dans [l'espace client](/links/manager).
+
+    - Cliquez sur `Resize`{.action}.
+
+    ![Selecting an Edge to resize](images/resize-an-edge-01.png)
+
     - Sélectionnez l’Edge à modifier.
-    - Choisissez une nouvelle taille (Medium, Large ou XL) et appliquez les modifications.
+
+    - Choisissez une nouvelle taille (Medium, Large ou XL) et appliquez les modifications en cliquant sur  `Confirm`{.action}.
+
+    ![Choosing a new size for the Edge](images/resize-an-edge-02.png)
+
 3. **Supprimer des NSX Edges inutilisés** :
+
     - Identifiez l’Edge à supprimer dans [l'espace client](/links/manager).
-    - Cliquez sur `Supprimer`{.action} et confirmez l’action. **Note** : L’Edge doit être en mode résilience avant suppression pour garantir l’absence de trafic en cours.
+
+    ![List of available NSX Edges](images/list-nsx-edges.png)
+
+    - Cliquez sur `Delete`{.action} et confirmez l’action. 
+
+    ![Deleting an NSX Edge](images/delete-nsx-edge.png)
+
+> [!primary]
+> L’Edge doit être en mode résilience avant suppression pour garantir l’absence de trafic en cours.
 
 ## Aller plus loin
 
 - Pour des informations détaillées sur les fonctionnalités des NSX Edges, consultez la [documentation technique VMware NSX](https://www.vmware.com/products/nsx.html).
+
 - Les tarifs associés aux NSX Edges ne sont pas inclus dans cette documentation. Pour connaître les détails tarifaires ou obtenir une estimation, rendez-vous sur le [site OVHcloud](/links/hosted-private-cloud/vmware-prices) ou contactez le support via le [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
