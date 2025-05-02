@@ -51,7 +51,7 @@ You can adapt your infrastructure to meet your specific needs:
 ### Steps to customize NSX Edges
 
 - Log in to the [OVHcloud Control Panel](/links/manager).
-- From the Datacenters dashboard, access your Datacenter then click on the `NSX Edge Nodes`{.action} tab.
+- From the Datacenters dashboard, access your datacenter then click on the `NSX Edge Nodes`{.action} tab.
 
 1. **Order new NSX Edges**:
 

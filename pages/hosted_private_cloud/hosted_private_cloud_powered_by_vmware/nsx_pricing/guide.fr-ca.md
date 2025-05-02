@@ -51,7 +51,7 @@ Vous pouvez adapter votre infrastructure en fonction de vos besoins spécifiques
 ### Étapes pour personnaliser les NSX Edges
 
 - Connectez-vous à l'[espace client OVHcloud](/links/manager).
-- Depuis le tableau de bord Datacentres, accédez à votre Datacentre puis cliquez sur l'onglet `NSX Edge Nodes`{.action}.
+- Depuis le tableau de bord Datacentres, accédez à votre datacentre puis cliquez sur l'onglet `NSX Edge Nodes`{.action}.
 
 1. **Commander de nouveaux NSX Edges** :
 
