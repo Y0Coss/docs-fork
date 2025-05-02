@@ -91,7 +91,7 @@ This will take you to a dedicated page with several options for interacting with
 > [!tabs]
 > **Playground**
 >>
->> This option allows you to quickly try out the model by playing with it to see if it meets your needs. This is a great way to get a feel for the model without having to code.
+>> This option provides a user-friendly interface to test and explore the model's capabilities, giving you a chance to see how it works before making an API call. Please note that Large Language Models (LLMs) in the playground are **currently limited to 1024 output tokens** for testing purposes. This means that LLMs will not generate responses longer than 1024 tokens in the playground, allowing you to test and validate their behavior.
 >>
 >> ![AI Endpoints playground overview](images/playground_demo.png){.thumbnail}
 >>
