@@ -217,6 +217,7 @@ Vous souhaitez rediriger vos e-mails vers un autre destinataire, créer un alias
 
 Pour ce faire, cliquez sur l'onglet correspondant à votre technologie e-mail :
 
+> [!tabs]
 > **Roundcube**
 >>
 >> Pour ajouter une redirection ou un alias, cliquez sur l'onglet `Emails`{.action} de votre service MX Plan puis cliquez sur le bouton `Gestion des redirections`{.action} à droite.
