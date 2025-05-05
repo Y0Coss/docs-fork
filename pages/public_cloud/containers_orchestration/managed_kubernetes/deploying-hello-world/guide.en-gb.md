@@ -1,5 +1,5 @@
 ---
-title: Deploying a Hello World application with the OVHcloud Control Panel and the OVHcloud API
+title: Deploying a Hello World application
 excerpt: 'Find out how to deploy a Hello World application with the OVHcloud Control Panel and the OVHcloud API'
 updated: 2025-04-30
 ---
@@ -24,6 +24,7 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 
 ### Getting your cluster information
 
+> [!tabs]
 > Via the OVHcloud Control Panel
 >> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >>
@@ -117,6 +118,7 @@ Please refer to the [Configuring kubectl on an OVHcloud Managed Kubernetes clust
 
 ### Add a node pool
 
+> [!tabs]
 > Via the OVHcloud Control Panel
 >> In the `Node pools`{.action} tab of the administration UI, click the `Add a node pool`{.action} button.
 >>
@@ -196,6 +198,7 @@ Please refer to the [Configuring kubectl on an OVHcloud Managed Kubernetes clust
 
 ### Verify that your node pool is ready
 
+> [!tabs]
 > Via the OVHcloud Control Panel
 >> In the *Computer Nodes* tab, you can inspect the state of your Node pools. The node pool you have just created should now be in an *Installing* state. The node pool installation can take a minute, so feel free to take a short break, then try again until it's ready.
 >>
