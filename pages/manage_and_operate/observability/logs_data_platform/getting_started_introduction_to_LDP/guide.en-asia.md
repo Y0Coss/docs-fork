@@ -117,7 +117,6 @@ Archived storage is there to allow you to store your logs for a very long time i
 
 - **Compression algorithm**: you can choose which compression algorithm is used and thus under which format the archive will be made available to you.
 - **Retention**: you can choose how much time we keep the archives at your disposal: 1, 2, 5 or 10 years.
-- **Archival backend**: you can choose which archival backend we use to archive the logs. OVHcloud Object Storage is more expensive but allows you to download your archives when you want them, whereas OVHcloud Cloud Archive is the cheapest option but requires you to wait a few hours when you make a request to get an archive before being able to download it.
 - **Encryption**: you can choose whether or not to encrypt the archives, and with which key to encrypt it if relevant.
 
 ### Scalability and immutability
