@@ -1,7 +1,7 @@
 ---
 title: Caching/Valkey - Capacités et limites (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Caching/Valkey
-updated: 2025-02-19
+updated: 2025-05-05
 ---
 
 ## Objective

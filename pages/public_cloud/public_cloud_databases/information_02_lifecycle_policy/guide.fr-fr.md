@@ -1,7 +1,7 @@
 ---
 title: DBMS - Politique de cycle de vie (EN)
 excerpt: Lifecycle policy for Public Cloud Databases engines
-updated: 2021-09-15
+updated: 2025-05-05
 ---
 
 ## Objective
