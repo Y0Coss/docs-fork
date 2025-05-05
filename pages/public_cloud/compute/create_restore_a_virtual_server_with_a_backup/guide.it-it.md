@@ -1,7 +1,7 @@
 ---
 title: 'Crea/ripristina il tuo server virtuale da un backup'
 excerpt: 'Crea/ripristina il tuo server virtuale da un backup'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

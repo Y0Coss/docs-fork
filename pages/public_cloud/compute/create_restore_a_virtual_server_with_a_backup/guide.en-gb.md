@@ -1,7 +1,7 @@
 ---
 title: Using instance backups to create or restore an instance
 excerpt: Find out how to restore an instance or create a new one from a backup
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objective

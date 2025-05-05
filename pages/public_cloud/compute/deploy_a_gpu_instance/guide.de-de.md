@@ -1,7 +1,7 @@
 ---
 title: 'GPU Instanzen einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie unter Windows und Linux eine GPU Instanz einrichten'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

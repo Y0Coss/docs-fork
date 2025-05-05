@@ -1,7 +1,7 @@
 ---
 title: 'Desplegar una instancia GPU'
 excerpt: 'Cómo desplegar una instancia GPU en Linux o Windows'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

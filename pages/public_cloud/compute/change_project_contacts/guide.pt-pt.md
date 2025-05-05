@@ -1,7 +1,7 @@
 ---
 title: "Gestão de contactos de um projeto"
 excerpt: "Saiba como gerir os contactos de um projeto Public Cloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ A modificação destes contactos permite dissociar a gestão técnica da gestão
 
 ### Modificar os contactos
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. Clique em `Contactos e direitos`{.action} na secção **Parâmetros**.
+Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. Clique em `Contactos e direitos`{.action} no menu à esquerda, em **Parâmetros**.
 
 Esta página permite-lhe ver os contactos de administrador e faturação associados ao seu projeto.
 

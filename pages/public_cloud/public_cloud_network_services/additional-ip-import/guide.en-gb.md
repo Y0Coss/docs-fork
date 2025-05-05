@@ -33,7 +33,7 @@ Instead of buying more public IP addresses, you can import an Additional IP addr
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 In the left-hand menu, open `Public IPs`{.action} under **Network**.
 

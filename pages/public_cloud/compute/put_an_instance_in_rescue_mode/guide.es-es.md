@@ -1,7 +1,7 @@
 ---
 title: "Cómo activar el modo de rescate en una instancia Public Cloud"
 excerpt: "Cómo activar y utilizar el modo de rescate de OVHcloud para una instancia de Public Cloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

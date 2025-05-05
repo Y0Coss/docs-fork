@@ -29,7 +29,7 @@ These Additional IP addresses can only be migrated to instances in the same proj
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 In the left-hand menu, open `Public IPs`{.action} under **Network**.
 

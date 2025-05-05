@@ -1,7 +1,7 @@
 ---
 title: "Eine Public Cloud Instanz erstellen und darauf zugreifen"
 excerpt: "Erfahren Sie hier, wie Sie Public Cloud Instanzen in Ihrem OVHcloud Kundencenter konfigurieren, sowie die ersten Schritte mit Instanzen"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 <style>
@@ -118,7 +118,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in
 
 ![Control Panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Öffnen Sie `SSH-Schlüssel`{.action} im linken Menü unter **Settings**. Klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
+Öffnen Sie `SSH-Schlüssel`{.action} im linken Menü unter **Einstellungen**. Klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
 
@@ -192,9 +192,9 @@ Instanz-Modelle vom Typ `Metal`{.action} stellen dedizierte physische Ressourcen
 
 > [!primary]
 >
-> Die Verfügbarkeit Ihrer Public Cloud Ressourcen wird anfänglich aus Gründen der Kostenkontrolle und Sicherheit begrenzt. Sie können diese Quotas überprüfen, indem Sie in der linken Navigationsleiste unter **Settings** auf `Quota and Regions`{.action} klicken. Weitere Informationen finden Sie in der [dedizierten Dokumentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota).
+> Die Verfügbarkeit Ihrer Public Cloud Ressourcen wird anfänglich aus Gründen der Kostenkontrolle und Sicherheit begrenzt. Sie können diese Quotas überprüfen, indem Sie in der linken Navigationsleiste unter **Einstellungen** auf `Quota und Regionen`{.action} klicken. Weitere Informationen finden Sie in der [dedizierten Dokumentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota).
 >
-> Beachten Sie, dass Sie nach der Erstellung Ihrer Instanz ein **Upgrade** durchführen können, um mehr Ressourcen zur Verfügung zu stellen. Der Wechsel zu einem kleineren Modell ist mit einer regulären Variante jedoch nicht möglich. Weitere Informationen zu diesem Thema finden Sie im folgenden**Schritt 4.4**.
+> Beachten Sie, dass Sie nach der Erstellung Ihrer Instanz ein **Upgrade** durchführen können, um mehr Ressourcen zur Verfügung zu stellen. Der Wechsel zu einem kleineren Modell ist mit einer regulären Variante jedoch nicht möglich. Weitere Informationen zu diesem Thema finden Sie im folgenden **Schritt 4.4**.
 >
 
 #### Weitere Informationen

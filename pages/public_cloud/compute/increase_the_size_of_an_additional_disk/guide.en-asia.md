@@ -1,7 +1,7 @@
 ---
 title: Increasing the size of an additional disk
 excerpt: 'Find out how to increase the size of an additional volume and enlarge its main partition'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 <style>
@@ -99,7 +99,7 @@ To ensure that you resize your disk at the right moment, it is essential to moni
 
 ### Modifying the size of the disk
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Block Storage`{.action} in the left-hand menu under **Storage and Backup**
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Block Storage`{.action} in the left-hand menu under **Storage & backup**
 
 If the volume is attached to a **Windows instance**, click on `...`{.action} in the row of the volume and select `Detach from instance`{.action}.
 

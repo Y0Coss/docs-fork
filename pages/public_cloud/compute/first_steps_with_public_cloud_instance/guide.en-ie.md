@@ -1,7 +1,7 @@
 ---
 title: Managing your Public Cloud instances
 excerpt: 'Find out how to manage your Public Cloud instances in the OVHcloud Control Panel'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objective
@@ -56,7 +56,7 @@ The new page displays a modified version of the [instance creation options](/pag
 - **Renaming the instance**: You can give a name to the instance for easier identification.
 - **Changing the image**: You can choose a different operating system for the instance. (Note that reinstalling an instance will delete all data stored on it.)
 - **Changing the template**: You can switch to a different instance model. Please refer to [this guide](/pages/public_cloud/compute/public-cloud-first-steps#model) for more information about the options.
-- **Changing the billing type**: You can change the billing period of the instance from hourly to monthly. Please refer to [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) for detailed information).
+- **Changing the billing type**: You can change the billing period of the instance from hourly to monthly. Please refer to [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) for detailed information.
 
 #### Creating a backup of the instance
 

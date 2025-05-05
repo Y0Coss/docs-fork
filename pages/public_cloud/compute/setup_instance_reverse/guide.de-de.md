@@ -1,7 +1,7 @@
 ---
 title: Reverse DNS einer Public Cloud Instanz konfigurieren
 excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer Public Cloud Instanz bearbeiten
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Ziel

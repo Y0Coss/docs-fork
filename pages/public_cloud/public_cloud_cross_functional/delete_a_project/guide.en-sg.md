@@ -24,7 +24,7 @@ Please note that deleting a project is not the same as deactivating your Public 
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Open the `Project settings`{.action} under **Settings** in the left-hand menu.
 

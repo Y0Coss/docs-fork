@@ -1,7 +1,7 @@
 ---
 title: Änderung der Größe einer Instanz im Kundencenter
 excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in OVHcloud Kundencenter ändern
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

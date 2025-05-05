@@ -1,7 +1,7 @@
 ---
 title: "Criar uma cópia de segurança de um volume"
 excerpt: "Saiba como criar um backup do volume Block Storage a partir da Área de Cliente"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

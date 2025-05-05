@@ -23,7 +23,7 @@ Using the Horizon interface, you can also set passwords for each individual user
 
 ### Creating an OpenStack user
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Click on `Users & Roles`{.action} the left-hand menu under **Settings**.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Users & Roles`{.action} the left-hand menu under **Settings**.
 
 Click on the button `Create User`{.action}.
 

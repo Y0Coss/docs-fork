@@ -1,7 +1,7 @@
 ---
 title: "Come creare un’istanza Public Cloud e connettersi"
 excerpt: "Scopri come configurare le istanze Public Cloud nello Spazio Cliente OVHcloud e come iniziare a utilizzare le istanze"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 <style>
