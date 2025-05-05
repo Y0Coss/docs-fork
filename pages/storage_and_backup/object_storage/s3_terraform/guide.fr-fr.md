@@ -1,11 +1,11 @@
 ---
 title: Object Storage - Gérer un bucket Object Storage avec Terraform
-updated: 2025-04-10
+updated: 2025-05-05
 ---
 
 ## Objectif
 
-Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour utiliser l'[Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) - S3 API avec Terraform. Terraform est un outil open source permettant d'orchestrer la provision et la mise à disposition des ressources.
+Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour utiliser l'[Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) - S3* API avec Terraform. Terraform est un outil open source permettant d'orchestrer la provision et la mise à disposition des ressources.
 
 ## Prérequis
 
@@ -26,11 +26,11 @@ Pourquoi ?
 
 Parce que, dans les coulisses, le « OVH Terraform provider » fait des requêtes aux API d'OVHcloud.
 
-Afin de récupérer ces informations nécessaires, veuillez suivre le tutoriel [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
+Afin de récupérer ces informations nécessaires, veuillez suivre le tutoriel [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
-Lorsque vous avez généré avec succès vos tokens OVH, conservez-les. Vous devrez les définir dans les minutes à venir.
+Lorsque vous avez généré avec succès vos tokens OVHcloud, conservez-les. Vous devrez les utiliser dans les minutes à venir.
 
-La dernière information nécessaire est le `service_name` : c'est l'ID de votre projet de Cloud Public.
+La dernière information nécessaire est le `service_name` : c'est l'ID de votre projet Public Cloud.
 
 Comment l'obtenir ?
 
@@ -46,11 +46,11 @@ Si vous souhaitez accéder à la documentation du provider sur Object Storage, [
 
 ### Configuration
 
-Tout d'abord, créez un fichier `provider.tf` avec la version minimale, le point de terminaison européen ("ovh-eu") et les clés que vous avez obtenues dans ce guide.
+Tout d'abord, créez un fichier `provider.tf` avec la version minimale, le point de terminaison européen (`ovh-eu`) et les clés que vous avez obtenues dans ce guide.
 
-Terraform:
+Terraform :
 
-```
+```bash
 terraform {
   required_providers {
     ovh = {
@@ -93,7 +93,7 @@ resource "ovh_cloud_project_storage" "my-bucket" {
 }
 ```
 
-Vous pouvez créer votre resource en entrant la commande suivante :
+Vous pouvez créer votre ressource en entrant la commande suivante :
 
 ```bash
 terraform apply
@@ -109,7 +109,7 @@ terraform destroy
 
 > [!primary]
 >
-> Ce processus peut échouer si le seau contient des objets verrouillés. Dans ce cas, vous devrez supprimer ces objets manuellement avant de pouvoir relancer la commande.
+> Ce processus peut échouer si le bucket contient des objets verrouillés. Dans ce cas, vous devrez supprimer ces objets manuellement avant de pouvoir relancer la commande.
 >
 
 ## Aller plus loin

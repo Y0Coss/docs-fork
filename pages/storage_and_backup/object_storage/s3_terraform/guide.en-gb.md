@@ -1,11 +1,11 @@
 ---
 title: Object Storage - Manage an Object Storage bucket with Terraform
-updated: 2025-04-10
+updated: 2025-05-05
 ---
 
 ## Objective
 
-This tutorial will help you automate and orchestrate actions to use the [Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) - S3 API with Terraform. Terraform is an open source tool for orchestrating the provisioning and provisioning of resources.
+This tutorial will help you automate and orchestrate actions to use the [Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) - S3* API with Terraform. Terraform is an open source tool for orchestrating the provisioning of resources.
 
 ## Requirements
 
@@ -28,7 +28,7 @@ Because, behind the scenes, the OVH Terraform provider makes requests to the OVH
 
 To retrieve this necessary information, please follow the tutorial [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
 
-Once you've successfully generated your OVH tokens, keep them. You'll need to set them in the next few minutes.
+Once you've successfully generated your OVHcloud tokens, keep them. You'll need to set them in the next few minutes.
 
 The last piece of information you'll need is the `service_name`: this is the ID of your Public Cloud project.
 
@@ -50,7 +50,7 @@ First, create a `provider.tf` file with the minimum version, the European endpoi
 
 Terraform:
 
-```
+```bash
 terraform {
   required_providers {
     ovh = {
