@@ -1,7 +1,7 @@
 ---
 title: 'Uruchomienie instancji GPU'
 excerpt: 'Dowiedz się, jak uruchomić instancję GPU z systemem Linux lub Windows'
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

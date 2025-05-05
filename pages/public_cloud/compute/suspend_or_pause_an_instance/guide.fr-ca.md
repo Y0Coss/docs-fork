@@ -1,6 +1,6 @@
 ---
 title: Suspendre ou mettre en pause une instance
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objectif

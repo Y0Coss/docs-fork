@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z vouchera'
 excerpt: 'Dowiedz się, jak dodać zasilenie lub vouchery do Twojego projektu Public Cloud'
-updated: 2022-02-04
+updated: 2025-04-28
 ---
 
 ## Wprowadzenie
@@ -18,7 +18,7 @@ Oznacza to, że wszystkie zobowiązania z tytułu zasilenia konta cloud zostaną
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Otwórz `Credit and Vouchers`{.action} w menu po lewej stronie.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Otwórz `Zasilenia i vouchery`{.action} w menu po lewej stronie w sekcji **Ustawienia**.
 
 > [!warning]
 >

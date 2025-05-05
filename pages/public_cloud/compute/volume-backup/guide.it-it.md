@@ -1,7 +1,7 @@
 ---
 title: Creare un backup di un volume
 excerpt: Come creare un backup del tuo volume Block Storage dallo Spazio Cliente OVHcloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

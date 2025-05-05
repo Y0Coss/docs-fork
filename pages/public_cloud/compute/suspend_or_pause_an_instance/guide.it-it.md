@@ -1,6 +1,6 @@
 ---
 title: Sospendi o metti in pausa un’istanza
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Obiettivo

@@ -1,7 +1,7 @@
 ---
 title: How to create a Public Cloud instance and connect to it
 excerpt: Find out how to configure Public Cloud instances in the OVHcloud Control Panel and the first steps with your instances
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 <style>
@@ -192,7 +192,7 @@ Instance models of the type `Metal`{.action} provide dedicated physical resource
 
 > [!primary]
 >
-Your Public Cloud resources total will initially be limited for cost control and security reasons. You can verify these quotas by clicking `Quota and Regions`{.action} in the left-hand navigation bar under **Settings**. Please consult [the dedicated documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) for more information.
+Your Public Cloud resources total will initially be limited for cost control and security reasons. You can verify these quotas by clicking `Quota & Regions`{.action} in the left-hand navigation bar under **Settings**. Please consult [the dedicated documentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) for more information.
 >
 Note that you can **upgrade** your instance after creation to have more resources available. Switching to a smaller model however is not possible with a regular instance. You can find more information on this topic in **Step 4.4** below.
 >

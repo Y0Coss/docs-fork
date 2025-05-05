@@ -1,7 +1,7 @@
 ---
 title: Snapshot wolumenu instancji Public Cloud
 excerpt: Dowiedz się, jak utworzyć snapshot dodatkowego dysku Public Cloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Wprowadzenie

@@ -47,7 +47,7 @@ Here is a short glossary of the terms used in this tutorial:
 
 ### Retrieve your network information.
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu. 
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu. 
 
 Click on `...`{.action} next to the corresponding instance and click on `Instance details`{.action}.
 

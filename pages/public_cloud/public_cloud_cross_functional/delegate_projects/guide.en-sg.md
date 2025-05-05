@@ -19,7 +19,7 @@ To this end, you can delegate read-only or read/write permissions for your proje
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Click on `Contacts & Rights`{.action} in the left-hand menu under **Settings**.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Contacts & Rights`{.action} in the left-hand menu under **Settings**.
 
 On this page you can see the contacts associated with your project.
 

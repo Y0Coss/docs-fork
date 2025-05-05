@@ -1,7 +1,7 @@
 ---
 title: "Comment activer le mode rescue sur une instance Public Cloud"
 excerpt: "Découvrez comment activer et utiliser le mode rescue OVHcloud pour votre instance Public Cloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objectif

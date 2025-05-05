@@ -1,7 +1,7 @@
 ---
 title: Resize an instance via the OVHcloud Control Panel
 excerpt: "Find out how to resize an instance in the OVHcloud Manager"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objective

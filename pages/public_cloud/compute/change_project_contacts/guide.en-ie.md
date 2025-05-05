@@ -1,7 +1,7 @@
 ---
 title: Changing project contacts
 excerpt: Find out how to change the contacts of a Public Cloud project
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objective
@@ -19,7 +19,7 @@ Modifying these contacts enables you to separate the technical management of ser
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Contacts and Rights`{.action} in the **Settings** section.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Contacts & Rights`{.action} in the left-hand menu under **Settings**.
 
 On this page you can see the administrative and billing contacts associated with your project.
 

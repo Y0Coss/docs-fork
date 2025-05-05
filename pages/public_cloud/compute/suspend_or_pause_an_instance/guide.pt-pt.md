@@ -1,6 +1,6 @@
 ---
 title: Suspender ou colocar em pausa uma instância
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objetivo

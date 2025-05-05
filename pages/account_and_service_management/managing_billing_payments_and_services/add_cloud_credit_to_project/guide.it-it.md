@@ -1,7 +1,7 @@
 ---
 title: 'Aggiungi credito Cloud al tuo progetto'
 excerpt: 'Come aggiungere credito o voucher al tuo progetto Public Cloud'
-updated: 2022-02-04
+updated: 2025-04-28
 ---
 
 ## Obiettivo
@@ -18,7 +18,7 @@ Questo significa che il credito Cloud viene addebitato per primo e che il debito
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Apri `Credit and Vouchers`{.action} nel menu a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Apri `Crediti e voucher`{.action} nel menu a sinistra sotto **Impostazioni**.
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie wolumenu z kopii zapasowej
 excerpt: Dowiedz się, jak utworzyć dodatkowe dyski na podstawie kopii zapasowej dodatkowego dysku
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

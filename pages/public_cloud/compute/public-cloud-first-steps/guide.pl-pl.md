@@ -1,7 +1,7 @@
 ---
 title: "Jak utworzyć instancję Public Cloud i się z nią połączyć"
 excerpt: "Dowiedz się, jak skonfigurować instancje Public Cloud w Panelu klienta OVHcloud oraz poznaj pierwsze kroki z instancjami"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 <style>

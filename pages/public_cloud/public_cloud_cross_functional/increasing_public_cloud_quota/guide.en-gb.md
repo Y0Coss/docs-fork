@@ -33,7 +33,7 @@ You can increase your resources quota manually or automatically.
 
 This procedure allows you to manually request a quota increase and validate it with an upfront payment (Public Cloud credit).
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 In the left-hand sidebar, click on `Quota & Regions`{.action} under **Settings**.
 
@@ -75,7 +75,7 @@ This option allows you to request an automatic and gradual increase of your reso
 
 This is not an instant process and the resources quota are increased over the course of time.
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 In the left-hand sidebar, click on `Quota & Regions`{.action} under **Settings**.
 

@@ -1,7 +1,7 @@
 ---
 title: "Zwiększ rozmiar dodatkowego dysku"
 excerpt: "Dowiedz się, jak zwiększyć rozmiar dodatkowego wolumenu i powiększyć jego partycję główną"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 <style>

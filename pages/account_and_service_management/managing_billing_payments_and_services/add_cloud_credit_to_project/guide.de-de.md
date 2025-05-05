@@ -1,7 +1,7 @@
 ---
 title: 'Cloud Guthaben aufladen'
 excerpt: 'Erfahren Sie hier, wie Sie Ihrem Public Cloud Projekt Guthaben oder Gutscheine hinzufügen'
-updated: 2022-02-04
+updated: 2025-04-28
 ---
 
 ## Ziel
@@ -18,7 +18,7 @@ Das bedeutet, dass dieses Guthabenkonto zuerst belastet wird und dann noch verbl
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](/links/manager), gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Projekt aus. Öffnen Sie `Credit and Vouchers`{.action} im linken Menü.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](/links/manager), gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Projekt aus. Öffnen Sie `Guthaben & Gutscheine`{.action} im linken Menü unter **Einstellungen**.
 
 > [!warning]
 >

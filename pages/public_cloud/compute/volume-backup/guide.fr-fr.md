@@ -1,7 +1,7 @@
 ---
 title: "Créer une sauvegarde d'un volume"
 excerpt: Découvrez comment créer une sauvegarde de votre volume Block Storage depuis votre espace client
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Objectif

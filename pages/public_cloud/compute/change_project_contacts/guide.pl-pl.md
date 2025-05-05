@@ -1,7 +1,7 @@
 ---
 title: "Zmiana kontaktów projektu"
 excerpt: "Dowiedz się, jak zarządzać kontaktami projektu Public Cloud"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ Zmiana tych kontaktów pozwala na oddzielenie zarządzania technicznego i księg
 
 ### Zmień kontakty
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Kliknij `Kontakty i uprawnienia`{.action} w sekcji **Ustawienia**.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Kliknij `Kontakty i uprawnienia`{.action} w menu po lewej stronie w sekcji **Ustawienia**.
 
 Na tej stronie możesz sprawdzić kontakty administratora i księgowości przypisane do Twojego projektu.
 

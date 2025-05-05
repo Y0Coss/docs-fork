@@ -1,7 +1,7 @@
 ---
 title: Creare uno Snapshot di un volume
 excerpt: Come creare uno Snapshot di un disco aggiuntivo Public Cloud
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 ## Obiettivo

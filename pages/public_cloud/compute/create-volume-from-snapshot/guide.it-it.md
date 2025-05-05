@@ -1,7 +1,7 @@
 ---
 title: Creare un volume a partire da un backup
 excerpt: Come creare dischi aggiuntivi a partire da un backup di un disco supplementare
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 > [!primary]

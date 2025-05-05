@@ -1,7 +1,7 @@
 ---
 title: "Cómo crear una instancia de Public Cloud y conectarse a ella"
 excerpt: "Cómo configurar instancias de Public Cloud en el área de cliente de OVHcloud y cómo empezar a utilizar las instancias"
-updated: 2025-04-24
+updated: 2025-04-28
 ---
 
 <style>
@@ -193,7 +193,7 @@ Los modelos de instancia de tipo `Metal`{.action} proporcionan recursos físicos
 
 > [!primary]
 >
-> El total de recursos de Public Cloud se limitará inicialmente por motivos de control de costes y seguridad. Puede comprobar estas cuotas haciendo clic en `Quota and Regions`{.action} en la barra de navegación de la izquierda debajo de **Ajustes**. Consulte [la documentación dedicada](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) para obtener más información.
+> El total de recursos de Public Cloud se limitará inicialmente por motivos de control de costes y seguridad. Puede comprobar estas cuotas haciendo clic en `Cuotas y regiones`{.action} en la barra de navegación de la izquierda debajo de **Ajustes**. Consulte [la documentación dedicada](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) para obtener más información.
 >
 > Tenga en cuenta que puede **actualizar** su instancia una vez creada para tener más recursos disponibles. Sin embargo, no es posible cambiar a un modelo más pequeño con una instancia regular. Encontrará más información sobre este tema en el paso 4.4** a continuación.
 >
