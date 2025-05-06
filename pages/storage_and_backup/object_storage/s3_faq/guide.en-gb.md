@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "Frequently Asked Questions on the Object Storage solution"
-updated: 2024-02-05
+updated: 2025-05-27
 ---
 
 ## General questions
@@ -30,6 +30,7 @@ OVHcloud offers 3 S3 compatible storage classes:
 
 - **High Performance** for your latency and bandwidth intensive applications.
 - **Standard** for your high-volume storage for which you are looking for a better price/performance ratio, such as websites, image-sharing libraries or backups.
+- **Infrequent Access** for infrequently accessed data, also known as "cool" data storage, requiring fast data retrieval: long-term data storage, backups, disaster recovery.
 - **Cold Archive** for your archives.
 
 Find the description of the storage classes on [this page](/links/public-cloud/storage).
