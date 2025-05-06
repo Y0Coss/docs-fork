@@ -292,23 +292,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 
 #### Télécharger vos fichiers en tant qu'objets dans votre bucket
 
-/// details | Différences entre les types de stockage **Standard** et **High Performance**
-
-**Classe de stockage Standard :**
-
-- Conçue pour le stockage polyvalent avec un équilibre entre le coût et la performance.
-- Convient aux charges de travail avec une fréquence d'accès modérée.
-- Assure la durabilité et la disponibilité, mais peut avoir une latence d'accès légèrement plus élevée.
-- Idéal pour les sauvegardes, l'archivage et les données rarement consultées.
-
-**Classe de stockage High Performance :**
-
-- Optimisée pour les charges de travail à faible latence et à haut débit.
-- Idéal pour les opérations de lecture/écriture fréquentes et intensives.
-- Convient aux analyses de données, aux charges de travail AI/ML et aux applications en temps réel.
-- Coûte généralement plus cher que le stockage de type Standard, mais offre de meilleures performances.
-
-///
+Lors du téléchargement des objets dans un bucket Object Storage, les utilisateurs peuvent choisir la classe de stockage, ce qui leur permet de contrôler la disponibilité, la redondance et le coût associés. Pour vous aider à choisir la classe de stockage la plus adaptée à vos besoins, consultez la documentation [ici](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!tabs]
 > Via AWS CLI
