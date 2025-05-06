@@ -293,23 +293,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 
 #### Uploading your files as objects in your bucket
 
-/// details | Differences between storage class of type **Standard** and **High Performance**
-
-**Standard Storage Class:**
-
-- Designed for general-purpose storage with a balance of cost and performance.
-- Suitable for workloads with moderate access frequency.
-- Provides durability and availability but may have slightly higher access latency.
-- Best for backups, archiving, and infrequently accessed data.
-
-**High Performance Storage Class:**
-
-- Optimized for low-latency and high-throughput workloads.
-- Ideal for frequent and intensive read/write operations.
-- Suitable for data analytics, AI/ML workloads, and real-time applications.
-- Typically costs more than Standard storage but offers better performance.
-
-///
+As part of the object upload process to an Object Storage bucket, users can select the desired storage class for their objects, providing control over storage characteristics such as availability, redundancy, and cost. To help you in choosing the best class for your requirements, check the documentation [here](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!tabs]
 > Via AWS CLI
