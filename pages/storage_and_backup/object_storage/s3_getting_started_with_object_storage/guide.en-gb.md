@@ -348,7 +348,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> ![Upload file](images/upload-file.png){.thumbnail}
 >>
->> You can add a prefix to your object name (the object name is the same as the file name). Select the storage class between **Standard** and **High Performance**. Finally, select the file you are about to download and click on the `Import`{.action} button.
+>> You can add a prefix to your object name (the object name is the same as the file name). Select the storage class. Finally, select the file you are about to download and click on the `Import`{.action} button.
 >>
 >> ![upload file window](images/upload-files-window.png)
 
