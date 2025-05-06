@@ -1,23 +1,23 @@
 ---
 title: Deploying a Hello World application
 excerpt: 'Find out how to deploy a Hello World application with the OVHcloud Control Panel and the OVHcloud API'
-updated: 2025-04-30
+updated: 2025-05-06
 ---
 
 ## Objective
 
 Follow this quickstart guide to deploy a containerised *Hello World* application on your OVHcloud Managed Kubernetes Service cluster, using the OVHcloud Control Panel and the OVHcloud API.
 
-In this guide, we’ll walk you through deploying a Hello World application on your OVHcloud Managed Kubernetes Service. You can manage your cluster either via the [OVHcloud Cloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or the [OVHcloud API](https://api.ovh.com/).
+In this guide, we’ll walk you through deploying a Hello World application on your OVHcloud Managed Kubernetes Service. You can manage your cluster either via the [OVHcloud Control Panel](/links/manager) or the [OVHcloud API](/links/api).
 
 ## Requirements
 
-* You should have already created a cluster on the OVHcloud Managed Kubernetes service.
-* You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/){.external} for this tool on Kubernetes' official site.
+- You should have already created a cluster on the OVHcloud Managed Kubernetes service.
+- You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/){.external} for this tool on the Kubernetes official site.
 
 > [!warning]
 >
-> For API users, this guide assumes you are familiar with the [OVHcloud API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+> For API users, this guide assumes you are familiar with the [OVHcloud API](/links/api). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 >
 
 ## Instructions
@@ -26,7 +26,7 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >>
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 >>
@@ -38,13 +38,13 @@ In this guide, we’ll walk you through deploying a Hello World application on y
 >>
 >> In this administration UI, you have several tabs included:
 >>
->> - **Service:** a global view of your cluster, with important information like the status, API URL, and `kubectl` configuration file.
+>> - **Service:** A global view of your cluster, with important information like the status, API URL, and `kubectl` configuration file.
 >>
->> - **Node pools:** the node pools of your cluster, with options for adding, configuring or removing them.
+>> - **Node pools:** The node pools of your cluster, with options for adding, configuring or removing them.
 >>
->> - **APIServer access:** the possibility to configure the access to the API-server.
+>> - **APIServer access:** The possibility to configure the access to the API-server.
 >> 
->> - **Audit Logs:** logs of your Kubernetes cluster’s control-plane.
+>> - **Audit Logs:** Logs of your Kubernetes cluster’s control plane.
 >>
 > Via the OVHcloud API
 >> #### List your OVHcloud Managed Kubernetes clusters
@@ -305,8 +305,8 @@ For more details about this process, you can refer to the [deploying an applicat
 
 ## Go further
 
-As you can see in the [Kubernetes section](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/kube~GET) of the API Explorer, a lot of useful API endpoints exist to manage your Kubernetes clusters. Feel free to use the API endpoints depending on your use cases.
+As you can see in the Kubernetes section of the [API Explorer](/links/console), a lot of useful API endpoints exist to manage your Kubernetes clusters. Feel free to use the API endpoints depending on your use cases.
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-- Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
