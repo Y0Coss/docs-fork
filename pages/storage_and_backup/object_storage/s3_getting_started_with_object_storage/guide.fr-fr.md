@@ -341,7 +341,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >>
 >> ![Ajout de fichiers](images/upload-file.png){.thumbnail}
 >>
->> Vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez la classe de stockage entre **Standard** et **High Performance**. Enfin, sélectionnez le fichier que vous êtes sur le point de télécharger et cliquez sur le bouton `Importer`{.action}.
+>> Vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez la classe de stockage. Enfin, sélectionnez le fichier que vous êtes sur le point de télécharger et cliquez sur le bouton `Importer`{.action}.
 >>
 >> ![upload file window](images/upload-files-window.png)
 
