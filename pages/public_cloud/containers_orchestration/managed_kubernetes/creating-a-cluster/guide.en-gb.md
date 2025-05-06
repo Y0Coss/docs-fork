@@ -1,7 +1,7 @@
 ---
 title: Creating a cluster
 excerpt: 'Find out how to create a Kubernetes cluster managed by OVHcloud using the OVHcloud Control Panel, Terraform, Pulumi or CDK'
-updated: 2025-04-29
+updated: 2025-05-06
 ---
 
 <style>
@@ -20,7 +20,9 @@ details[open]>summary::before {
 
 ## Objective
 
-The OVHcloud Managed Kubernetes service lets you deploy production-ready clusters without the operational overhead of setting them up or maintaining them. You can create a cluster directly through the OVHcloud Control Panel, or automate the process using Infrastructure as Code (IaC) tools. OVHcloud offers a native Terraform provider, and for developers who prefer working in their own programming languages, tools like Pulumi provide even more flexibility. This guide walks you through the different ways to create a Kubernetes cluster, so you can choose the one that best fits your workflow.
+The OVHcloud Managed Kubernetes service lets you deploy production-ready clusters without the operational overhead of setting them up or maintaining them. You can create a cluster directly through the OVHcloud Control Panel, or automate the process using Infrastructure as Code (IaC) tools.
+
+OVHcloud offers a native Terraform provider, and for developers who prefer working in their own programming languages, tools like Pulumi provide even more flexibility. This guide walks you through the different ways to create a Kubernetes cluster, so you can choose the one that best fits your workflow.
 
 /// details | OVHcloud Control Panel
 
@@ -32,7 +34,7 @@ The OVHcloud Managed Kubernetes service lets you deploy production-ready cluster
 
 [Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014, written in Go. It aims to build, change and version control your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
 
-This tool has a powerful and very intuitive command line interface (CLI).
+This tool has a powerful and very intuitive command line interface (CLI).  
 If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat Sheet](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf){.external} exists.
 
 ///
@@ -55,7 +57,7 @@ Read the [official documentation of CDK for Terraform](https://developer.hashico
 
 ![Pulumi](images/pulumi.jpg){.thumbnail}
 
-[Pulumi](https://www.pulumi.com/) is an Infrastructure as code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang for example.
+[Pulumi](https://www.pulumi.com/) is an Infrastructure as code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang for example.  
 Users define the desired state in Pulumi programs and Pulumi create the desired resources.
 
 Pulumi offers an intuitive command line interface (CLI), to provision, update or delete your infrastructure. If you are familiar with Docker Compose CLI and Terraform CLI, you will adopt [Pulumi CLI](https://www.pulumi.com/docs/cli/) too.
@@ -93,7 +95,7 @@ Choose the minor version of Kubernetes.
 ![Choose the minor version of Kubernetes](images/creating-a-cluster3.png){.thumbnail}
 
 > [!primary]
-> We recommend to always use the last stable version. 
+> We recommend to always use the last stable version.  
 > Please read our [End of life / end of support](/pages/public_cloud/containers_orchestration/managed_kubernetes/eos-eol-policies) page to understand our version policy.
 >
 
@@ -137,7 +139,7 @@ Finally, click the `Send`{.action} button.
 
 The cluster creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
 
-> [!Warning]
+> [!warning]
 >
 > After a cluster is created, you can no longer change:
 >
@@ -164,8 +166,8 @@ All available resources and data sources have their definition and documentation
 
 In this guide, we will create two resources:
 
-* a [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represents an OVHcloud managed Kubernetes cluster
-* and a [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represents a Kubernetes Node Pool
+- A [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represents an OVHcloud managed Kubernetes cluster
+- A [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represents a Kubernetes Node Pool
 
 ![Kubernetes cluster and node pool](images/cluster-and-node-pool.png){.thumbnail}
 
@@ -173,9 +175,9 @@ In this guide, we will create two resources:
 
 The "OVH provider" needs to be configured with a set of credentials:
 
-* an `application_key`
-* an `application_secret`
-* a `consumer_key`
+- `application_key`
+- `application_secret`
+- `consumer_key`
 
 Why?
 
@@ -206,8 +208,8 @@ Just create files ending with `.tf` containing the description of the resources 
 
 In our case, we want to create:
 
-* an OVHcloud managed Kubernetes cluster
-* a nodepool
+- An OVHcloud managed Kubernetes cluster.
+- A nodepool.
 
 So, let's start!
 
@@ -217,7 +219,7 @@ First, create a `provider.tf` file with the minimum version, european endpoint (
 
 Terraform 0.13 and later:
 
-```
+```bash
 terraform {
   required_providers {
     ovh = {
@@ -236,7 +238,7 @@ provider "ovh" {
 
 Terraform 0.12 and earlier:
 
-```
+```bash
 # Configure the OVHcloud Provider
 provider "ovh" {
   endpoint           = "ovh-eu"
@@ -257,13 +259,13 @@ This later method (or a similar alternative) is recommended to avoid storing sec
 
 Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API, but other endpoints exist, depending on your needs:
 
-* `ovh-eu` for OVHcloud Europe API
-* `ovh-us` for OVHcloud US API
-* `ovh-ca` for OVHcloud North-America API
+- `ovh-eu` for OVHcloud Europe API
+- `ovh-us` for OVHcloud US API
+- `ovh-ca` for OVHcloud North-America API
 
 Then, create a `variables.tf` with service_name:
 
-```
+```bash
 variable service_name {
   type        = string
   default     = "<your_service_name>"
@@ -272,7 +274,7 @@ variable service_name {
 
 Define the resources you want to create in a new file called `ovh_kube_cluster.tf`:
 
-```
+```bash
 resource "ovh_cloud_project_kube" "my_kube_cluster" {
    service_name = "${var.service_name}"
    name         = "my_kube_cluster"
@@ -302,7 +304,7 @@ And we tell Terraform to create a Node Pool with 3 Nodes with B2-7 machine type.
 
 Finally, create a `output.tf` file with the following content:
 
-```
+```bash
 output "kubeconfig" {
   value = ovh_cloud_project_kube.my_kube_cluster.kubeconfig
   sensitive = true
@@ -315,7 +317,7 @@ For your information, outputs are useful to retrieve and display specific inform
 
 Your code organisation should be like this: 
 
-```
+```bash
 .
 ├── output.tf
 ├── ovh_kube_cluster.tf
@@ -363,13 +365,13 @@ It’s the first command to execute for a new configuration, or after doing a ch
 
 The `init` command will:
 
-* Download and install Terraform providers/plugins
-* Initialise backend (if defined)
-* Download and install modules (if defined)
+- Download and install Terraform providers/plugins.
+- Initialise backend (if defined).
+- Download and install modules (if defined).
 
 Now, we can generate our plan:
 
-```
+```bash
 $ terraform plan
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
@@ -432,7 +434,7 @@ Thanks to the `plan` command, we can check what Terraform wants to create, modif
 
 The plan is OK for us, so let's apply it:
 
-```
+```bash
 $ terraform apply
 
 An execution plan has been generated and is shown below.
@@ -532,7 +534,7 @@ Outputs:
 kubeconfig = <sensitive>
 ```
 
-Now, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
+Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`.  
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
@@ -553,9 +555,9 @@ Perfect!
 >
 > You need to have:
 >
-> - [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/){.external} installed
-> - [Cloud Development Kit for Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install){.external} installed
-> [Go](https://go.dev/doc/install) installed
+> - [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/){.external} installed.
+> - [Cloud Development Kit for Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/cdktf/cdktf-install){.external} installed.
+> - [Go](https://go.dev/doc/install) installed.
 > 
 
 ### OVHcloud Terraform provider
@@ -568,8 +570,8 @@ CDKTF will "translate" your code into an HCL configuration file and then call `t
 
 We will create two resources:
 
-* a [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represents an OVHcloud managed Kubernetes cluster.
-* a [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represents a Kubernetes Node Pool.
+- A [cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube){.external}, that represents an OVHcloud managed Kubernetes cluster
+- A [cloud_project_kube_nodepool](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube_nodepool){.external}, that represents a Kubernetes Node Pool
 
 ![Kubernetes cluster and node pool](images/cluster-and-node-pool.png){.thumbnail}
 
@@ -577,11 +579,11 @@ We will create two resources:
 
 The "OVH provider" needs to be configured with a set of credentials:
 
-* an `endpoint`
-* an `application_key`
-* an `application_secret`
-* a `consumer_key`
-* a `service_name`
+- `endpoint`
+- `application_key`
+- `application_secret`
+- `consumer_key`
+- `service_name`
 
 This is because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs.
 
@@ -628,8 +630,8 @@ export OVH_CLOUD_PROJECT_SERVICE="xxx"
 
 In this guide, we want to create, in Go:
 
-* an OVHcloud managed Kubernetes cluster
-* a node pool
+- An OVHcloud managed Kubernetes cluster.
+- A node pool.
 
 #### Project initialization
 
@@ -1000,7 +1002,7 @@ ovhcloud
   nodePoolID = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
 ```
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`.  
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
@@ -1019,15 +1021,15 @@ Our node pool is also created.
 >
 > You need to:
 >
-> - Installing [Pulumi CLI](https://www.pulumi.com/docs/install/){.external}
-> - An account in [Pulumi](https://www.pulumi.com/)
-> - A [Pulumi access token](https://app.pulumi.com/account/tokens)
-> - Installing [kubectl CLI](https://kubernetes.io/docs/tasks/tools/)
+> - Install [Pulumi CLI](https://www.pulumi.com/docs/install/){.external}.
+> - Have an account in [Pulumi](https://www.pulumi.com/).
+> - Have a [Pulumi access token](https://app.pulumi.com/account/tokens).
+> - Install [kubectl CLI](https://kubernetes.io/docs/tasks/tools/).
 >
 
 One advantage of Pulumi is that it allows you to build your infrastructures with the programming language of your choice. It supports a variety of programming languages.
 
-In this tutorial you will be able to deploy your Kubernetes cluster and its node pool in the Go/Golang programming language.
+In this tutorial you will be able to deploy your Kubernetes cluster and its node pool in the Go/Golang programming language.  
 For your information, our OVH Pulumi provider currently supports Go but also Python, Node.js/Typescript and C#/Dotnet.
 
 Examples:
@@ -1058,8 +1060,8 @@ All available Pulumi resources have their definition and [documentation](https:/
 
 In this guide, we will create two resources:
 
-- a [Kube resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kube/){.external} that represents an OVHcloud managed Kubernetes cluster
-- a [KubeNodePool resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kubenodepool/){.external} that represents a Kubernetes Node Pool
+- A [Kube resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kube/){.external} that represents an OVHcloud managed Kubernetes cluster
+- A [KubeNodePool resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kubenodepool/){.external} that represents a Kubernetes Node Pool
 
 ![Kubernetes cluster and node pool](images/cluster-and-node-pool.png){.thumbnail}
 
@@ -1225,15 +1227,15 @@ func main() {
 
 This Go program will create an OVHcloud Managed Kubernetes cluster:
 
-- named `my-desired-cluster`
-- in the `GRA5` region
-- in your Public Cloud project (depending on the `serviceName` you defined)
+- Named `my-desired-cluster`.
+- In the `GRA5` region.
+- In your Public Cloud project (depending on the `serviceName` you defined).
 
 And a Kubernetes Node Pool:
 
-- named `my-desired-pool`
-- with `b2-7` flavor/machine type
-- with 1 desired node, 2 node minimum and 3 node maximum
+- Named `my-desired-pool`.
+- With `b2-7` flavor/machine type.
+- With 1 desired node, 2 node minimum and 3 node maximum.
 
 Then, run the `go mod tidy` command to ask Go to download and install the necessary Go providers and dependencies.
 
@@ -1243,7 +1245,7 @@ go mod tidy
 
 #### Create your Kubernetes cluster through Pulumi
 
-Now you can deploy your cluster and the node pool. To do that, just execute the `pulumi up` comand.
+Now you can deploy your cluster and the node pool. To do that, just execute the `pulumi up` comand.  
 This will display the plan/the preview of the desireed state. You will be prompted to choose the stack (`dev` by default) and to confirm that you want to perform/apply the changes.
 
 ```bash
@@ -1288,7 +1290,7 @@ Resources:
 Duration: 6m37s
 ```
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`.  
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}
@@ -1309,7 +1311,7 @@ Our cluster is created, now we need to connect to it in order to check our nodes
 
 In order to do this, retrieve the kubeconfig file locally:
 
-```
+```bash
 $ terraform output -raw kubeconfig > /Users/<your-user>/.kube/my_kube_cluster.yml
 ```
 
@@ -1317,7 +1319,7 @@ You can define it in your `$KUBECONFIG` environment variable or you can use it d
 
 List our Node Pool:
 
-```
+```bash
 $ kubectl --kubeconfig=/Users/<your-user>/.kube/my_kube_cluster.yml get nodepool
 NAME      FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 my-pool   b2-7     false         false            false           3         3         3            3           3     3     1d
@@ -1423,7 +1425,7 @@ We do agree the error message is not user friendly, we will work on it. ;-)
 
 If you get this "gzip: invalid header" error message, the issue is that you name the flavor or the node pool name with an invalid character: "_" or ".".
 
-The API don't support these characters so that's the reason why you obtained this error message.
+The API don't support these characters so that's the reason why you obtained this error message.  
 In order to fix it, change the flavor name and/or the pool name to a correct one, for example:
 
 ```bash
@@ -1444,10 +1446,10 @@ By default, the Public Cloud projects as well as the resources total (RAM, CPU, 
 
 When you create a new Kubernetes Node Pool, if you run out of resources in your available quota, the Nodes might be in error.
 
-You may get the following error message: "not enough xxx quotas".
+You may get the following error message: "not enough xxx quotas".  
 xxx can be: RAM, CPU, VM, Disk or Port.
 
-If this is the case, the quotas must be increased.
+If this is the case, the quotas must be increased.  
 In order to check your quotas and increase them, please follow this tutorial:
 
 [Increasing Public Cloud quotas](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota){.external}.
@@ -1538,7 +1540,7 @@ Duration: 3m47s
 
 If you get this error message, the issue is that you named the flavor or the node pool with an invalid character: "_" or ".".
 
-The API don't support these characters so that's the reason why you obtained this error message.
+The API don't support these characters so that's the reason why you obtained this error message.  
 In order to fix this, change the flavor name and/or the pool name to a correct one, for example in Go:
 
 ```go
@@ -1559,13 +1561,13 @@ By default, the Public Cloud projects as well as the resources total (RAM, CPU, 
 
 When you create a new Kubernetes Node Pool, if you run out of resources in your available quota, the Nodes might be in error.
 
-You may get the following error message: "not enough xxx quotas".
+You may get the following error message: "not enough xxx quotas".  
 "xxx" can be RAM, CPU, VM, Disk or Port.
 
-If this is the case, the quotas must be increased.
+If this is the case, the quotas must be increased.  
 In order to check your quotas and increase them, please follow this tutorial:
 
-[Increasing Public Cloud quotas](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota).
+[Increasing Public Cloud quotas](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota)
 
 ///
 
@@ -1575,7 +1577,7 @@ In order to check your quotas and increase them, please follow this tutorial:
 
 If you want to easily destroy created resources, you can use `terraform destroy` command.
 
-```
+```bash
 $ terraform destroy
 ovh_cloud_project_kube.my_kube_cluster: Refreshing state... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3]
 ovh_cloud_project_kube_nodepool.node_pool: Refreshing state... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5]
@@ -1845,7 +1847,7 @@ Your Kubernetes cluster and associated resources (Nodes, Pods...) have been corr
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
 
-To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) and [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) .
+To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) and [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
