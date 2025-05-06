@@ -86,7 +86,7 @@ Depending on the Kubernetes version your cluster is using, if you want to use a 
 
 Here's a simple example of how to use the Public Cloud Load Balancer
 
-1\. Deploy a functional Managed Kubernetes (MKS) cluster using the [OVHcloud manager](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster), [Terraform](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster), [Pulumi](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) or [APIs](https://api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube).
+1\. Deploy a functional Managed Kubernetes (MKS) cluster using the [OVHcloud Control Panel](/links/manager), [Terraform, Pulumi](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) or the [OVHcloud API](https://api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#post-/cloud/project/-serviceName-/kube).
 
 2\. Retrieve the kubeconfig file needed to use kubectl tool (via the OVHcloud Control Panel, Terraform, Pulumi or API). You can use [this guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster).
 
