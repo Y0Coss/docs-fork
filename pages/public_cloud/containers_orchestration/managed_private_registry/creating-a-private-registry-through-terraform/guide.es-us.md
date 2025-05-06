@@ -1,6 +1,6 @@
 ---
 title: Creating a private registry (Harbor) through Terraform
-excerpt: 'Creates an OVHcloud Managed Private Registry (MPR) through Terraform'
+excerpt: 'Create an OVHcloud Managed Private Registry (MPR) through Terraform'
 kb: Public Cloud
 category_l1: Containers & Orchestration
 category_l2: Managed Private Registry
