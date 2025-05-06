@@ -1,7 +1,7 @@
 ---
 title: Pool creation
 excerpt: This guide shows you how to create a pool using the the OVHcloud Control Panel and the API.
-updated: 2025-04-26
+updated: 2025-05-07
 ---
 
 ## Objective

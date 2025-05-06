@@ -1,7 +1,7 @@
 ---
 title: Pool creation
 excerpt: Ce qui vous présente comment créer un pool avec l'espace client OVHcloud et l'api.
-updated: 2025-04-26
+updated: 2025-05-07
 ---
 
 ## Objectif
