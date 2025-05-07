@@ -1,5 +1,5 @@
 ---
-title: "Cloud Disk Array - Création d'une ACL IP"
+title: "Cloud Disk Array - Comment créer une ACL IP"
 excerpt: "Ce guide vous montre comment créer une ACL IP pour autoriser l'accès à votre cluster Ceph"
 updated: 2025-04-28
 ---
