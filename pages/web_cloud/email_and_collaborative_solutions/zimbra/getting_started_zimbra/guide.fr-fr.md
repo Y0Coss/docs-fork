@@ -227,8 +227,8 @@ Pour consulter votre compte e-mail :
 
 ### Redirections <a name="redirections"></a>
 
-Pour créer une redirection sur une adresse email Zimbra, connectez-vous au [webmail](/links/web/email).
-La création d'une redirection se fait via les règles de boîte de réception, appelée « filtres » dans le webmail. En effet, ces règles que l'on applique lors de la réception d'un e-mail permettent de transférer ou rediriger un e-mail.
+Pour créer une redirection sur une adresse e-mail Zimbra, connectez-vous au [webmail](/links/web/email).
+La création d'une redirection se fait par le biais de règles de boîte de réception, appelée « filtres » dans le webmail. En effet, ces règles que l'on applique lors de la réception d'un e-mail permettent de transférer ou rediriger un e-mail.
 
 Pour rediriger les e-mails de votre compte Zimbra vers une autre adresse e-mail, nous allons appliquer une règle de transfert. Suivez les onglets ci-dessous pour mettre en place votre redirection.
 
@@ -251,7 +251,7 @@ Pour rediriger les e-mails de votre compte Zimbra vers une autre adresse e-mail,
 >>
 > **Etape 3**
 >>
->> - Cliquez d'abord sur _Mode avancé_ en haut à droite pour mettre en place cette règle.
+>> - Cliquez d'abord sur <u>Mode avancé</u> en haut à droite pour mettre en place cette règle.
 >> - Donnez un nom à votre filtre dans la case `Nom du filtre`.
 >> - Laissez le menu déroulant sur `toutes` dans la phrase « Si un message entrant réunit ... de ces conditions ».
 >> - Dans le premier menu déroulant des règles, choisissez `À` (To), laissez `contient` (contains), puis saisissez l'adresse e-mail sur laquelle vous êtes connecté dans la case juste à droite.
@@ -266,7 +266,9 @@ Pour plus de détails sur l'utilisation du webmail Zimbra, consultez notre guide
 
 ### Alias <a name="alias"></a>
 
-Un alias vous permet de communiquer une adresse e-mail sans communiquer votre véritable adresse e-mail réelle. Pour créer un alias sur une de vos adresses e-mail, suivez les étapes des onglets ci-dessous.
+Créer un alias pour votre adresse e-mail vous permet de communiquer une adresse « masque » à vos contacts, sans avoir à communiquer votre adresse e-mail personnelle à l'expéditeur. 
+
+La création d'un alias se fait depuis l'[espace client OVHcloud](/links/manager), suivez les onglets ci-dessous:
 
 > [!tabs]
 > **Etape 1**
