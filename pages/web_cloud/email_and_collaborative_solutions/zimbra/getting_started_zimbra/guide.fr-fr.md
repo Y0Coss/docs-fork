@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec l'offre Zimbra"
 excerpt: "Découvrez comment débuter avec votre offre Zimbra depuis votre espace client OVHcloud"
-updated: 2025-05-06
+updated: 2025-05-07
 ---
 
 <style>
@@ -12,7 +12,7 @@ updated: 2025-05-06
 
 ## Objectif
 
-Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collaborative open source offrant toutes les fonctionnalités nécessaires à une utilisation professionnelle. Vous trouverez dans ce guide les éléments nécessaires pour configurer vos comptes e-mail Zimbra.
+Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collaborative open source offrant toutes les fonctionnalités nécessaires à une utilisation professionnelle. Vous trouverez dans ce guide tous les éléments vous permettant de configurer vos comptes e-mail Zimbra.
 
 **Découvrez comment débuter avec l'offre e-mail Zimbra**
 
@@ -228,13 +228,13 @@ Pour consulter votre compte e-mail :
 ### Redirections <a name="redirections"></a>
 
 Pour créer une redirection sur une adresse email Zimbra, connectez-vous au [webmail](/links/web/email).
-Via les règles de boîte de réception, appelée filtres depuis le webmail. En effet ces règles que l'on applique lors de la réception d'un e-mail permettent de transférer ou rediriger un e-mail.
+La création d'une redirection se fait via les règles de boîte de réception, appelée « filtres » dans le webmail. En effet, ces règles que l'on applique lors de la réception d'un e-mail permettent de transférer ou rediriger un e-mail.
 
-Pour rediriger les e-mails de votre compte zimbra vers une autre adresse e-mail, nous allons appliquer une règle de transfert. Suivez les onglets ci-dessous pour mettre en place votre redirection.
+Pour rediriger les e-mails de votre compte Zimbra vers une autre adresse e-mail, nous allons appliquer une règle de transfert. Suivez les onglets ci-dessous pour mettre en place votre redirection.
 
 > [!primary]
 >
-> Dans notre exemple ci-dessous, nous avons choisi de rediriger l'ensemble des e-mails entrant vers une autre adresse e-mail. pour comprendre l'exemple dans les captures d'écran, nous sommes connectés sur l'adresse **zimbra@mydomain.ovh** et nous souhaitons rediriger les e-mails de ce compte vers l'adresse **address@example.com**.
+> Dans notre exemple ci-dessous, nous avons choisi de rediriger l'ensemble des e-mails entrant vers une autre adresse e-mail. Pour comprendre l'exemple dans les captures d'écrans, nous sommes connectés sur l'adresse **zimbra@mydomain.ovh** et nous souhaitons rediriger les e-mails de ce compte vers l'adresse **address@example.com**.
 
 > [!tabs]
 > **Etape 1**
@@ -252,11 +252,11 @@ Pour rediriger les e-mails de votre compte zimbra vers une autre adresse e-mail,
 > **Etape 3**
 >>
 >> - Cliquez d'abord sur _Mode avancé_ en haut à droite pour mettre en place cette règle.
->> - Définissez un nom à votre filtre dans la case `Nom du filtre`.
+>> - Donnez un nom à votre filtre dans la case `Nom du filtre`.
 >> - Laissez le menu déroulant sur `toutes` dans la phrase « Si un message entrant réunit ... de ces conditions ».
->> - Dans le premier menu déroulant des règles, choisissez `À`(To), laissez `contient`(contains), puis saisissez l'adresse e-mail sur laquelle vous êtes connecté dans la case juste à droite.
->> - Sous la mention « Alors »(Then), sélectionnez `Transférer à`(Forward to) dans le menu déroulant, puis saisissez l'adresse e-mail de destination.
->> - Cliquez sur `+ Ajouter une action`{.action}(Add an action) plus bas, puis sélectionnez `Déplacer vers le dossier réception`(Keep in Inbox).
+>> - Dans le premier menu déroulant des règles, choisissez `À` (To), laissez `contient` (contains), puis saisissez l'adresse e-mail sur laquelle vous êtes connecté dans la case juste à droite.
+>> - Sous la mention « Alors » (Then), sélectionnez `Transférer à` (Forward to) dans le menu déroulant, puis saisissez l'adresse e-mail de destination.
+>> - Cliquez sur `+ Ajouter une action`{.action}(Add an action) plus bas, puis sélectionnez `Déplacer vers le dossier réception` (Keep in Inbox).
 >> - Cliquez sur `Enregistrer`{.action} depuis la fenêtre de votre filtre et également depuis celle des paramètres.
 >>
 >> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-500}
@@ -266,7 +266,7 @@ Pour plus de détails sur l'utilisation du webmail Zimbra, consultez notre guide
 
 ### Alias <a name="alias"></a>
 
-Un alias vous permet de communiquer une adresse e-mail sans communiquer votre réelle adresse e-mail. Pour créer un alias sur une de vos adresses e-mail, suivez les étapes des onglets ci-dessous.
+Un alias vous permet de communiquer une adresse e-mail sans communiquer votre véritable adresse e-mail réelle. Pour créer un alias sur une de vos adresses e-mail, suivez les étapes des onglets ci-dessous.
 
 > [!tabs]
 > **Etape 1**
@@ -298,17 +298,17 @@ Un alias vous permet de communiquer une adresse e-mail sans communiquer votre r�
 
 ### Réponses automatiques <a name="autoreply"></a>
 
-Lorsque vous devez vous absenter et que vous n'avez pas la possibilité de traiter vos e-mails, il est possible de mettre en place un message d'absence. Pour cela suivez les étapes suivantes:
+Lorsque vous devez vous absenter et que vous n'avez pas la possibilité de traiter vos e-mails, il est possible de mettre en place un message d'absence. Suivez les étapes ci-dessous :
 
 - Cliquez sur le bouton &#9881; en haut à droite de votre fenêtre de webmail, puis cliquez sur `Paramètres`{.action}.
 
 ![zimbra](images/zimbra_settings01.png){.thumbnail .w-500}
 
 - Cliquez sur la section `Absent du bureau` depuis la fenêtre des paramètres.
-- Cochez la case « Activer la réponse  automatique pendant ces dates (incluses).
-- Complété la date de début de l'absence devant la mention « Du ».
-- Décochez la case « Pas de date de fin » si vous souhaitez déterminer une date de fin d'absence et déterminez la date de fin.
-- Dans le cadre, tapez votre messager d'absence.
+- Cochez la case « Activer la réponse  automatique pendant ces dates (incluses) ».
+- Complétez la date de début de l'absence devant la mention « Du ».
+- Décochez la case « Pas de date de fin » si vous souhaitez déterminer une date de fin d'absence et déterminez-la.
+- Dans le cadre, renseignez votre message d'absence.
 - Cliquez sur `Enregistrer`{.action} pour finaliser la mise en place de votre message d'absence.
 
 ![zimbra](images/zimbra_autoreply01.png){.thumbnail .w-500}
