@@ -1,7 +1,7 @@
 ---
 title: 'Cargar las variables de entorno necesarias para OpenStack'
 excerpt: 'Cómo cargar sus variables de entorno para utilizar la API de OpenStack'
-updated: 2025-04-28
+updated: 2024-07-15
 ---
 
 > [!primary]

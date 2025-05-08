@@ -1,7 +1,7 @@
 ---
 title: "Impostare le variabili d'ambiente OpenStack"
 excerpt: 'Come impostare le variabili d’ambiente per utilizzare l’API  di Openstack'
-updated: 2025-04-28
+updated: 2024-07-15
 ---
 
 ## Obiettivo

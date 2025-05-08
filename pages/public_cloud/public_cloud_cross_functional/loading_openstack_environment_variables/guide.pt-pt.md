@@ -1,7 +1,7 @@
 ---
 title: 'Carregar as variáveis de ambiente OpenStack'
 excerpt: 'Aprenda a carregar as suas variáveis de ambiente para utilizar a API do OpenStack'
-updated: 2025-04-28
+updated: 2024-07-15
 ---
 
 > [!primary]
