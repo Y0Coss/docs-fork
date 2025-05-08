@@ -33,8 +33,6 @@ updated: 2025-04-28
 >
 > Możesz również usunąć przypisany projekt z sieci vRack i przypisać go do innej sieci vRack, jeśli chcesz, zwłaszcza jeśli posiadasz już istniejący vRack na swoim (swoich) serwerze(ach) dedykowanym(ych).
 
-W przypadku starszych projektów, po zamówieniu usługi [vRack](/links/network/vrack) przejdź do menu `Bare Metal Cloud`{.action}, kliknij `Network`{.action} w zakładce po lewej stronie, a następnie kliknij `Private Network vRack`{.action}. Wybierz vRack z listy.
-
 Na liście dostępnych usług zaznacz projekt, który chcesz dodać do szafy vRack, następnie kliknij przycisk `Dodaj`{.action}.
 
 ![Dodaj projekt do sieci vRack](images/addprojectvrack.png){.thumbnail}
