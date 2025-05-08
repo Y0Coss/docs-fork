@@ -176,7 +176,7 @@ Wenn `A/AAAA` in der Spalte `Diagnose` grün ist, bedeutet dies, dass der **A**-
 
 Wenn `A/AAAA` in der Spalte `Diagnose` gelb angezeigt wird, bedeutet dies, dass der **A**-Eintrag (IPv4) oder **AAAA**-Eintrag (IPv6) Ihres Domainnamens auf eine IP-Adresse verweist, jedoch nicht auf das Webhosting, von dem aus Sie die Daten der Spalte `Diagnose` abrufen.  
 Klicken Sie auf `A/AAAA` für weitere Informationen. Die folgende Meldung wird angezeigt:
--
+
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
 Um DNS-Fehler zu beheben und sicherzustellen, dass korrekt auf das gewünschte Webhosting verwiesen wird, folgen Sie den Schritten in unserer Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“.

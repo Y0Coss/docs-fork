@@ -37,7 +37,7 @@ Klicken Sie auf das Feld `vRack`{.action}, um zur Seite weitergeleitet zu werden
 
 ### Schritt 2: Ihre Server zum vRack hinzufügen
 
-Wenn das vRack in Ihrem Account aktiviert ist, gehen Sie in den Bereich `Bare Metal Cloud`{.action}, klicken Sie auf `Network`{.action} und öffnen Sie das Menü `vRack`{.action}.
+Wenn das vRack in Ihrem Account aktiviert ist, öffnen Sie das Menü `Network`{.action} in der linken Seitenleiste und klicken Sie auf `Privates Netzwerk vRack`{.action}.
 
 Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleistungen anzuzeigen. Klicken Sie erst auf jeden der Server, die Sie zum vRack hinzufügen möchten, dann auf den Button `Hinzufügen`{.action}.
 

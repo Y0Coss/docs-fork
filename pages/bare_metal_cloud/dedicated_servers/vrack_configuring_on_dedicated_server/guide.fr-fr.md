@@ -37,7 +37,7 @@ Cliquez sur la case `vRack`{.action} pour être redirigé vers la page de valida
 
 ### Étape 2 : ajouter vos serveurs au vRack
 
-Une fois le vRack activé dans votre compte, rendez-vous dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} et ouvrez le menu `vRack`{.action}.
+Une fois le vRack activé dans votre compte, cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran puis sur `Réseau Privé vRack`{.action}.
 
 Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur chacun des serveurs que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
