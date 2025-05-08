@@ -1,7 +1,7 @@
 ---
 title: 'Setting OpenStack environment variables'
 excerpt: 'Find out how to set your environment variables to use the OpenStack API'
-updated: 2024-07-15
+updated: 2025-04-28
 ---
 
 ## Objective
@@ -20,11 +20,11 @@ By setting OpenStack environment variables on your desktop, you can use the Open
 
 To retrieve your environment variables, you can download the OpenRC file from the OpenStack user account you have created.
 
-Log in to the [OVHcloud Control Panel](/links/manager) and switch to the `Public Cloud`{.action} section. Select your Public Cloud project at the top of the left-hand sidebar.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
 
-Click on `Users & Roles`{.action}, then click on the `...`{.action} to the right of your user, then select `Download OpenStack's RC file`{.action}.
+In the left-hand menu, click on `Users & Roles`{.action} under **Settings**. Next, click on the `...`{.action} to the right of your user, then select `Download OpenStack's RC file`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
+![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 An OpenRC file corresponds to a specific user and zone. You cannot manage multiple zones in the same file.
 

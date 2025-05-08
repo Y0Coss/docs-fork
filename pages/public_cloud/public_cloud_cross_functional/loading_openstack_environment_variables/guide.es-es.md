@@ -1,7 +1,7 @@
 ---
 title: 'Cargar las variables de entorno necesarias para OpenStack'
 excerpt: 'Cómo cargar sus variables de entorno para utilizar la API de OpenStack'
-updated: 2024-07-15
+updated: 2025-04-28
 ---
 
 > [!primary]
@@ -26,9 +26,9 @@ Para obtener sus variables de entorno, puede descargar el archivo OpenRC de su u
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione su proyecto de Public Cloud.
 
-En el apartado **Ajustes**, haga clic en `Usuarios y roles`{.action}, haga clic en `«...»`{.action} a la derecha de su usuario y seleccione `«Descargar el archivo RC de OpenStack»`{.action}.
+En el menú de la izquierda, haga clic en `Usuarios y roles`{.action} en **Ajustes**. A continuación, haga clic en `«...»`{.action} a la derecha de su usuario y seleccione `«Descargar el archivo RC de OpenStack»`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
+![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 Un archivo OpenRC corresponde tanto a un usuario como a una zona. No puede gestionar varias zonas en un mismo archivo.
 

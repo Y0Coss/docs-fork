@@ -41,7 +41,7 @@ You will then have access to the special conditions for hosting healthcare data.
 
 Review the information and check the box for accepting the contracts. Finally, click `Update`{.action} to finalize the HDS certification process for your project, in accordance with the contractual conditions.
 
-![activate HDS existing project](images/hds-current-project.png){.thumbnail}
+![activate HDS existing project](images/hds-current-project1.png){.thumbnail}
 
 ## Go further
 

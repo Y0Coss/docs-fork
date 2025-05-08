@@ -1,7 +1,7 @@
 ---
 title: 'Carregar as variáveis de ambiente OpenStack'
 excerpt: 'Aprenda a carregar as suas variáveis de ambiente para utilizar a API do OpenStack'
-updated: 2024-07-15
+updated: 2025-04-28
 ---
 
 > [!primary]
@@ -25,9 +25,9 @@ Carregar as variáveis de ambiente OpenStack no seu computador permitirá usar a
 Para recuperar as suas variáveis de ambiente, pode transferir o ficheiro OpenRC do seu utilizador OpenStack previamente criado.
 
 Ligue-se à sua [Área de Cliente OVHcloud](/links/manager){.external}, aceda à secção `Public Cloud`{.action} e selecione o seu projeto Public Cloud no canto superior esquerdo.
-<br> Na rubrica **Parâmetros**, clique em `Utilizadores & Funções`{.action}, clique nas `...`{.action} do lado direito do seu utilizador, e selecione `Transferir o ficheiro RC do OpenStack`{.action}.
+<br> No menu à esquerda, na rubrica **Parâmetros**, clique em `Utilizadores & Funções`{.action}. A seguir, clique nas `...`{.action} do lado direito do seu utilizador, e selecione `Transferir o ficheiro RC do OpenStack`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
+![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 Um ficheiro OpenRC corresponde a um utilizador e, também, a uma zona. Não pode gerir várias zonas num mesmo ficheiro.
 
