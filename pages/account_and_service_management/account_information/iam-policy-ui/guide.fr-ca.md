@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les politiques IAM depuis votre espace client
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs depuis un compte OVHcloud"
-updated: 2025-01-08
+updated: 2025-05-09
 ---
 
 ## Objectif
@@ -37,7 +37,7 @@ Par exemple, nous pouvons créer une politique pour donner à un utilisateur nom
 
 ### Accéder au menu IAM
 
-Cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre nom dans la barre latérale.
+Dans la navigation latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} then `Identity & Access Management`{.action}
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
