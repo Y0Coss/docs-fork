@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance'
 excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE'
-updated: 2024-11-19
+updated: 2025-05-09
 ---
 
 > [!primary]
@@ -10,6 +10,12 @@ updated: 2024-11-19
 >
 > Les générations de serveurs Advance plus anciennes ne reposent pas sur la même infrastructure réseau.
 >
+
+> [!warning]
+>
+> Depuis mai 2025, les adresses MAC virtuelles peuvent être utilisées sur les serveurs des gammes High Grade et Scale, et ce guide est désormais considéré comme hérité.
+>
+> Si vous souhaitez utiliser des adresses MAC virtuelles pour configurer le réseau sur Proxmox VE sur vos serveurs des gammes High Grade et Scale, vous pouvez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 ## Objectif
 

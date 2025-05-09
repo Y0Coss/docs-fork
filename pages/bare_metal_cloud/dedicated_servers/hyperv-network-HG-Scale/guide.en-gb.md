@@ -1,16 +1,22 @@
 ---
 title: 'Configuring the network on Windows Server with Hyper-V'
-excerpt: 'Find out how to configure the network on  Windows Server with Hyper-V'
-updated: 2024-08-07
+excerpt: 'Find out how to configure the network on Windows Server with Hyper-V'
+updated: 2025-05-09
 ---
 
 ## Objective
 
 **This guide explains how to configure the network in  Windows Server with Hyper-V.**
 
-### High Grade & SCALE ranges
+### High Grade & Scale ranges
 
-On the High Grade & SCALE ranges, it is not possible to operate Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
+On the High Grade & Scale ranges, it is not possible to operate Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
+
+> [!warning]
+>
+> As of May 2025, the above statement is no longer true. Virtual MACs can now be used on High Grade & Scale ranges, and this guide is now legacy.
+>
+> If you want to use virtual MACs to configure the network with Hyper-V on High Grade or Scale servers, you can refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 ### Advance range
 
