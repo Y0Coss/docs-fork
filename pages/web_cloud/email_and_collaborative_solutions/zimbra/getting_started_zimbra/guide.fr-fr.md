@@ -268,7 +268,7 @@ Pour plus de détails sur l'utilisation du webmail Zimbra, consultez notre guide
 
 Créer un alias pour votre adresse e-mail vous permet de communiquer une adresse « masque » à vos contacts, sans avoir à communiquer votre adresse e-mail personnelle à l'expéditeur. 
 
-La création d'un alias se fait depuis l'[espace client OVHcloud](/links/manager), suivez les onglets ci-dessous:
+La création d'un alias se fait depuis l'[espace client OVHcloud](/links/manager), Cliquez sur les étapes ci-dessous :
 
 > [!tabs]
 > **Etape 1**
@@ -307,7 +307,7 @@ Lorsque vous devez vous absenter et que vous n'avez pas la possibilité de trait
 ![zimbra](images/zimbra_settings01.png){.thumbnail .w-500}
 
 - Cliquez sur la section `Absent du bureau` depuis la fenêtre des paramètres.
-- Cochez la case « Activer la réponse  automatique pendant ces dates (incluses) ».
+- Cochez la case « Activer la réponse automatique pendant ces dates (incluses) ».
 - Complétez la date de début de l'absence devant la mention « Du ».
 - Décochez la case « Pas de date de fin » si vous souhaitez déterminer une date de fin d'absence et déterminez-la.
 - Dans le cadre, renseignez votre message d'absence.
