@@ -137,26 +137,28 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
 <table>
     <tr>
         <th>AWS</th>
-        <th>OVHcloud mapping before 2024-06-17</th>
-        <th>OVHcloud mapping from 2024-06-17</th>
+        <th>OVHcloud current mapping</th>
+        <th>OVHcloud mapping from 2025-06-17</th>
     </tr>
     <tr>
         <td>EXPRESS_ONEZONE</td> 
-        <td rowspan=9>Standard</td>
+        <td>High Performance</td>
         <td>High Performance</td>
     </tr>
     <tr>
         <td>STANDARD</td>
         <td rowspan=8>Standard</td>
+        <td rowspan=3>Standard</td>
+    </tr>
+    <tr>
+        <td>INTELLIGENT_TIERING</td>
     </tr>
     <tr>
         <td>default*</td>
     </tr>
     <tr>
-         <td>STANDARD_IA</td>     
-    </tr>
-    <tr>
-        <td>INTELLIGENT_TIERING</td>
+        <td>STANDARD_IA</td>
+        <td rowspan=5>Standard Infrequent Access**</td>
     </tr>
     <tr>
         <td>ONEZONE_IA</td>
@@ -179,7 +181,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 <table>
     <tr>
         <th>AWS</th>
-        <th>OVHcloud mapping from 2024-06-17</th>
+        <th>OVHcloud</th>
     </tr>
     <tr>
         <td>EXPRESS_ONEZONE</td> 
@@ -189,18 +191,23 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
         <td>STANDARD</td>
         <td>Standard</td>
     </tr>
+    <tr>
+        <td>STANDARD_IA</td>
+        <td>Standard Infrequent Access**</td>
+    </tr>
 </table>
+
+_** The Standard Infrequent Access tier will be available starting from 2025-06-17._
 
 > [!warning]
 > Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all features and API operations will be available.
 
-![Schema 1](images/io-mapping-v2.png)
 
-> [!warning]
-> - The storage class will no longer be defined at the bucket creation level, but at individual object upload level.
-> - The **perf** endpoint will be maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our object storage thus we strongly encourage you to migrate to the target **io** endpoint wherever possible.
 
 ### Endpoint retrocompatibility
+
+> [!warning]
+> - The **perf** endpoint will be maintained for backward compatibility purposes only, to allow tools that don't support AWS's recent Express_One_Zone storage class to continue operating on our object storage thus we strongly encourage you to migrate to the target **io** endpoint whenever possible.
 
 Although the **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service, the **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint will also be able to address all buckets and all objects in both Standard and High Performance storage classes and will support all API operations including `listBucket`.
 
@@ -209,12 +216,12 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
 <table>
     <tr>
         <th>AWS</th>
-        <th>OVHcloud mapping before 2024-06-17</th>
-        <th>OVHcloud mapping from 2024-06-17</th>
+        <th>OVHcloud current mapping</th>
+        <th>OVHcloud mapping from 2025-06-17</th>
     </tr>
     <tr>
         <td>EXPRESS_ONEZONE</td> 
-        <td rowspan=9>High Performance</td>
+        <td rowspan=3>High Performance</td>
         <td rowspan=3>High Performance</td>
     </tr>
     <tr>
@@ -226,6 +233,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     <tr>
          <td>STANDARD_IA</td>
         <td rowspan=6>Standard</td>
+        <td rowspan=3>Standard</td>
     </tr>
     <tr>
         <td>INTELLIGENT_TIERING</td>
@@ -235,6 +243,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
     <tr>
         <td>GLACIER_IR</td>
+        <td rowspan=3>Standard Infrequent Access</td>
     </tr>
     <tr>
         <td>GLACIER</td>
@@ -261,9 +270,12 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
         <td>STANDARD_IA</td>
         <td>Standard</td>
     </tr>
+    <tr>
+        <td>GLACIER_IR</td>
+        <td>Standard Infrequent Access</td>
+    </tr>
 </table>
 
-![Schema 2](images/perf-mapping-v2.png)
 
 ## Object Storage Swift
 
