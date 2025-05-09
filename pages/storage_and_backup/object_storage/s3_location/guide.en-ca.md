@@ -243,7 +243,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td rowspan=3>Standard Infrequent Access</td>
+        <td rowspan=3>Standard Infrequent Access**</td>
     </tr>
     <tr>
         <td>GLACIER</td>
@@ -260,7 +260,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
 <table>
     <tr>
         <th>AWS</th>
-        <th>OVHcloud mapping from 2024-06-10</th>
+        <th>OVHcloud</th>
     </tr>
     <tr>
         <td>STANDARD</td> 
@@ -272,10 +272,11 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td>Standard Infrequent Access</td>
+        <td>Standard Infrequent Access**</td>
     </tr>
 </table>
 
+_** The Standard Infrequent Access tier will be available starting from 2025-06-17._
 
 ## Object Storage Swift
 
