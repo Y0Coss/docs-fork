@@ -1,6 +1,6 @@
 ---
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
-updated: 2025-03-25
+updated: 2025-04-28
 ---
 
 ## Wprowadzenie
@@ -22,6 +22,7 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 |PostgreSQL 16|Do określenia|Do określenia|Do określenia|
 |PostgreSQL 17|Do określenia|Do określenia|Do określenia|
 |Redis 7.0|Do określenia|Do określenia|Do określenia|
+|Valkey 7.2|Do określenia|Do określenia|Do określenia|
 
 ## Sprawdź również
 
