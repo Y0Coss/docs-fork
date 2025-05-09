@@ -201,7 +201,7 @@ print("Welcome", client.get('/me')['firstname'])
 
 #### Lister et révoquer vos clés
 
-Il n'y a actuellement aucune option dans l'espace client pour lister et révoquer vos clés. Pour cela, il est possible d’utiliser le portail API :
+Pour lister et révoquer les clés, il est possible soit d'utiliser l'[espace client](https://www.ovh.com/manager/#/iam/api-keys) soit d'utiliser le portail API :
 
 - Listez les ID des clés avec l'appel suivant :
 
