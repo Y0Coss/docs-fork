@@ -80,7 +80,7 @@ Votre service Okta fait désormais confiance à OVHcloud en tant que prestataire
 
 Pour ajouter Okta en tant que fournisseur d'identité de confiance, vous devez fournir les métadonnées du fournisseur d'identité dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
-Cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre nom dans la barre latérale.
+On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 

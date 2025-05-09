@@ -121,7 +121,7 @@ Une fois le tableau de correspondances terminé, votre service AD FS fait désor
 
 L'ajout de votre AD FS en tant que fournisseur d'identité de confiance s'effectue dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) où vous pouvez fournir les métadonnées du fournisseur d'identité.
 
-Cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre nom dans la barre latérale.
+On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
