@@ -243,7 +243,7 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td rowspan=3>Standard Infrequent Access</td>
+        <td rowspan=3>Standard Infrequent Access**</td>
     </tr>
     <tr>
         <td>GLACIER</td>
@@ -259,7 +259,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 <table>
     <tr>
         <th>AWS</th>
-        <th>OVHcloud mapping à partir du 2025-06-17</th>
+        <th>OVHcloud</th>
     </tr>
     <tr>
         <td>STANDARD</td> 
@@ -271,9 +271,11 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td>Standard Infrequent Access</td>
+        <td>Standard Infrequent Access**</td>
     </tr>
 </table>
+
+_** Le niveau de stockage Standard Infrequent Access sera disponible à partir du 2025-06-17._
 
 ## Object Storage Swift
 
