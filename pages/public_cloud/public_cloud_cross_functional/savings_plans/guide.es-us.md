@@ -1,7 +1,7 @@
 ---
 title: 'How do Savings Plans work?'
 excerpt: 'Savings Plans - Everything you need to know to optimise your costs'
-updated: 2025-04-17
+updated: 2025-05-12
 ---
 
 <style>
@@ -123,20 +123,13 @@ Thanks to this combination, the customer achieves substantial savings by optimis
 
 ## Use the dashboard to analyse your Savings Plans
 
-> [!primary]
->
-> This section will be available at the same time as the Dashboard functionality in your OVHcloud Control Panel.
->
-
-<!--The Savings Plans dashboard allows you to track and analyse your Savings Plans, providing essential information about their usage, coverage and savings. You can view specific data by period, service, instance type or other relevant criteria.
+The Savings Plans dashboard allows you to track and analyse your Savings Plans, providing essential information about their usage and coverage. You can view specific data by period and service.
 
 /// details | **a. Selection filters**
 
- Image avec focus sur les filtres
+![Dashboard focus on filters](images/dashboard_filters.png){.thumbnail}
 
 - **Service:** Allows you to filter the data according to the specific service with which Savings Plans are associated.
-- **Instance type:** Allows you to choose between different types of instances ("instances" or "Managed Rancher Services").
-- **Model:** Choice of specific resource model to refine Savings Plans monitoring.
 - **Period:** Allows you to select a specific period to observe the use of Savings Plans and the associated coverage.
 
 ///
@@ -148,19 +141,17 @@ Thanks to this combination, the customer achieves substantial savings by optimis
 > The KPI data in the Savings Plans dashboard is adjusted according to the filters applied. This makes it possible to customise the display of indicators to focus on specific periods, particular services or selected instance types.
 >
 
- Image avec focus sur les KPIs
+![Dashboard focus on kpi](images/dashboard_kpi.png){.thumbnail}
 
-- **Number of active Savings Plans:** Displays the total number of active Savings Plans.
+- **Number of active Savings Plans:** Displays the total number of active Savings Plans on the last day of the given period for the selected resource.
 - **% use of Savings Plans:** Indicates the percentage of Savings Plans used in relation to the total capacity available.
 - **% of Savings Plan coverage:** Shows the proportion of resources covered by Savings Plans compared to total usage.
-- **Savings achieved:** Displays the total savings made through Savings Plans over the specified period.
-- **Excess amount:** Displays the amount of excess consumption that generates non-discounted charges.
 
 ///
 
 /// details | **c. Graphics**
 
- Image avec focus sur le graphique
+![Dashboard focus on graph](images/dashboard_graph.png){.thumbnail}
 
 - **Y-axis legend on graph:**
     - If ‘Instances’ is selected, the Y axis will display the number of instance(s) used.
@@ -173,7 +164,7 @@ Thanks to this combination, the customer achieves substantial savings by optimis
 
 /// details | **d. Consumption monitoring table**
 
- Image avec focus sur la parti de suivi de consommation
+![Dashboard focus on conso](images/dashboard_conso.png){.thumbnail}
 
 - **Create a Savings Plan:** A button to create a new Savings Plan.
 - **Download (Export as CSV):** A button for exporting data from the **Consumption monitoring table** in CSV format, so that you can analyse it in detail or save it for your archives.
@@ -185,7 +176,7 @@ Thanks to this combination, the customer achieves substantial savings by optimis
 
 ///
 
-Thanks to this dashboard, you can monitor the use and efficiency of your Savings Plans in real time, adjust your strategy according to the data observed and optimise your costs for more effective management of your OVHcloud resources. -->
+Thanks to this dashboard, you can monitor the use and efficiency of your Savings Plans in real time, adjust your strategy according to the data observed, and optimize your costs for more efficient management of your OVHcloud resources.
 
 ## Understanding billing
 

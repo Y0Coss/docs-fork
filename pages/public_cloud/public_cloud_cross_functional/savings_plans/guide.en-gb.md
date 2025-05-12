@@ -1,7 +1,7 @@
 ---
 title: 'How do Savings Plans work?'
 excerpt: 'Savings Plans - Everything you need to know to optimise your costs'
-updated: 2025-04-17
+updated: 2025-05-12
 ---
 
 <style>

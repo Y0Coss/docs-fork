@@ -1,7 +1,7 @@
 ---
 title: 'Comment fonctionnent les Savings Plans ?'
 excerpt: 'Savings Plans - Tout ce que vous devez savoir pour optimiser vos coûts'
-updated: 2025-04-17
+updated: 2025-05-12
 ---
 
 <style>
