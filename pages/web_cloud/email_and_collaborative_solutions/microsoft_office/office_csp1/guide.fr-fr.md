@@ -1,7 +1,7 @@
 ---
 title: Gérer un groupe de licences Microsoft 365 OVHcloud (CSP1)
 excerpt: Découvrez comment souscrire à une licence Microsoft 365 et comment la gérer dans votre espace client OVHcloud
-updated: 2025-05-09
+updated: 2025-05-12
 ---
 
 <style>
