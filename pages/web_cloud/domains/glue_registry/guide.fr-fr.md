@@ -1,7 +1,7 @@
 ---
 title: "Personnaliser les serveurs DNS d'un nom de domaine (Glue Records)"
 excerpt: 'Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
-updated: 2024-04-30
+updated: 2025-05-12
 ---
 
 ## Objectif
@@ -216,8 +216,8 @@ Si nécessaire, reportez-vous aux instructions décrites dans notre documentatio
 >
 > La zone DNS peut afficher les enregistrements comme suit :
 >
-> - domain.tld IN NS dns1.
-> - domain.tld IN NS dns2.
+> - domain.tld IN NS dns1
+> - domain.tld IN NS dns2
 >
 > Rassurez-vous, cela équivaut au même résultat et cette configuration fonctionnera parfaitement. Ce phénomène s'explique par la présence du même nom de domaine de part et d'autre de l'enregistrement *NS*.
 >
