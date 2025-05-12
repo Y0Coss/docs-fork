@@ -1,5 +1,5 @@
 ---
-title: "Add an A DNS record for a domain name"
+title: "Adding an A DNS record for a domain name"
 excerpt: "Find out how to add an A DNS record to an OVHcloud DNS zone for your domain name"
 updated: 2025-05-12
 ---
