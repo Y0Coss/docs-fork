@@ -37,7 +37,6 @@ Avant de commencer, consultez les guides suivants pour mieux comprendre VMware C
 > Par exemple, si vous avez une VM avec 1 Go de RAM et un disque de 10 Go, et que vous créez un snapshot incluant la mémoire, l’espace de stockage utilisé sera le suivant :
 > 10 Go (disque) + 1 Go (swap de la VM) + jusqu’à 10 Go (snapshot du disque) + 1 Go (snapshot de la mémoire) = **22 Go au total**.
 
-
 ### Limitations matérielles
 
 | Ressource | Standard | Advanced | Premium | Commentaires |
