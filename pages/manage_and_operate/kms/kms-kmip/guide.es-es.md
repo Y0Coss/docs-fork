@@ -1,7 +1,7 @@
 ---
 title: "How to connect a compatible product using KMIP protocol"
 excerpt: "How to communicate with the OVHcloud KMS using KMIP protocol"
-updated: 2025-05-09
+updated: 2025-05-12
 ---
 
 ## Objective
@@ -51,7 +51,7 @@ You can use as well our SDK for Go: <https://github.com/ovh/kmip-go>
 
 ### IAM Rights
 
-KMIP operations with IAM users needs specific autorisations as describe bellow
+KMIP operations with IAM users need specific authorisations as described below:
 
 | KMIP Operation | Description | Action |
 | -------------- | ----------- | ------ |
