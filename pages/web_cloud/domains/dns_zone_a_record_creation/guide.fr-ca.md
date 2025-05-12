@@ -1,8 +1,22 @@
 ---
 title: "Ajouter un enregistrement DNS de type A pour un nom de domaine"
 excerpt: "Découvrez comment ajouter un enregistrement DNS de type A dans une zone DNS gérée chez OVHcloud pour votre nom de domaine"
-updated: 2025-05-02
+updated: 2025-05-12
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
