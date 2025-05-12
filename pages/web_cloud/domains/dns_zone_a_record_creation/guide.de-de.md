@@ -86,8 +86,8 @@ Lesen Sie unsere detaillierten Anleitungen:
 [Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information).
 [Alle Informationen zu DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records).
 
-Für spezielle Dienstleistungen (Referenzierung, Entwicklung etc.) wenden Sie sich bitte an die [OVHcloud Partner](/links/partner).
-
-Wenn Sie Hilfe bei der Verwendung und Konfiguration Ihrer OVHcloud Lösungen benötigen, empfehlen wir Ihnen unsere verschiedenen [Support-Angebote](/links/support).
-
-Für den Austausch mit unserer [User Community](/links/community).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
+ 
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+ 
+Treten Sie unserer [User Community](/links/community) bei.
