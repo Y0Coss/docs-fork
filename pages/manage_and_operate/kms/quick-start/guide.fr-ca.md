@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2025-05-09
+updated: 2025-05-12
 ---
 
 ## Objectif
@@ -21,7 +21,7 @@ Il est possible de commander plusieurs KMS, que ce soit dans des régions diffé
 
 La facturation d'un KMS étant basée sur le nombre de clés y étant stockées, la commande d'un KMS ne génère pas de facturation en elle-même.
 
-Vous pouvez commander un KMS depuis [l'espace client OVHcloud](/links/manager) en vous rendant dans le menu `Identité, Sécurité & Opérations`{.action} et `Key Management Service`{.action} puis sur le bouton `Commander un KMS`{.action}.
+Vous pouvez commander un KMS depuis [l'espace client OVHcloud](/links/manager) en vous rendant dans le menu `Identité, Sécurité & Opérations`{.action} puis `Key Management Service`{.action}. Cliquez alors sur le bouton `Commander un KMS`{.action}.
 
 ![Accès au menu KMS](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
