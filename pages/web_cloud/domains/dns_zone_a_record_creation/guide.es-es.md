@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objetivo
 
-¿Quiere que su sitio web sea accesible a través de su nombre de dominio? Para ello, el dominio debe apuntar a la dirección IP del servicio en el que esté alojado el sitio web (alojamiento web, servidor dedicado, VPS, etc.). A continuación, deberá configurar la zona DNS activa del dominio con un registro DNS de tipo A.
+¿Desea que su sitio web sea accesible a través de su nombre de dominio? Para ello, el dominio debe apuntar a la dirección IP del servicio en el que esté alojado el sitio web (alojamiento web, servidor dedicado, VPS, etc.). A continuación, deberá configurar la zona DNS activa del dominio con un registro DNS de tipo A.
 
 **Descubra cómo añadir un registro DNS de tipo A a una zona DNS gestionada en OVHcloud para un dominio.**
 
@@ -44,7 +44,7 @@ details[open]>summary::before {
 
 1. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 2. En la nueva página, haga clic en el botón `Añadir un registro`{.action}.
-3. En la ventana que se abre, seleccione el campo de hora de tipo `A`{.action}.
+3. En la ventana que se abre, seleccione el tipo de registro `A`{.action}.
 4. Introduzca a continuación la dirección IP (por ejemplo, `203.0.113.0`) del servicio en el que esté situado su sitio web (alojamiento web, servidor dedicado, VPS, etc.) y haga clic en `Siguiente`{.action}.
 5. Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
 
@@ -64,7 +64,7 @@ Consulte nuestras guías detalladas:
 
 1. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 2. En la nueva página, haga clic en el botón `Añadir un registro`{.action}.
-3. En la ventana que se abre, seleccione el campo de hora de tipo `A`{.action}.
+3. En la ventana que se abre, seleccione el tipo de registro `A`{.action}.
 4. Introduzca a continuación el subdominio correspondiente (por ejemplo, `www` para el subdominio `www.domain.tld`) en el campo `Subdominio` y la dirección IP (por ejemplo, `203.0.113.0`) del servicio en el que esté situado el sitio web (alojamiento web, servidor dedicado, VPS, etc.) en el campo `Destino *`. Haga clic en `Siguiente`{.action}.
 5. Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
 

@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Obiettivo
 
-Vuoi che il tuo sito sia accessibile tramite il tuo dominio? Per fare ciò, il dominio deve puntare verso l’indirizzo IP del servizio su cui è situato il sito Web (hosting Web, server dedicato, VPS, ecc...). A questo punto, è necessario configurare la zona DNS attiva del dominio con un record DNS di tipo A.
+Vuoi che il tuo sito sia accessibile tramite il tuo dominio? Per fare ciò, il dominio deve puntare verso l’indirizzo IP del servizio su cui è situato il sito Web (hosting Web, server dedicato, VPS, ecc.). A questo punto, è necessario configurare la zona DNS attiva del dominio con un record DNS di tipo A.
 
 **Questa guida ti mostra come aggiungere un record DNS di tipo A a una zona DNS gestita in OVHcloud per il tuo dominio.**
 
@@ -42,11 +42,11 @@ Vuoi che il tuo sito sia accessibile tramite il tuo dominio? Per fare ciò, il d
 
 ### Aggiungere un record DNS di tipo A per un dominio
 
-1. Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
-2. Clicca sul pulsante `Aggiungi un record`{.action}.
+1. Fare clic sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
+2. Fare clic sul pulsante `Aggiungi un record`{.action}.
 3. Nella finestra che si apre, seleziona il campo di puntamento di tipo `A`{.action}.
-4. Inserisci l’indirizzo IP (ad esempio, `203.0.113.0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc...) nel campo `Destinazione *` e clicca su `Continua`{.action}.
-5. Verifica il riepilogo e clicca su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell'aggiunta sulla rete DNS sia pienamente effettiva.
+4. Inserisci l’indirizzo IP (ad esempio, `203.0.113.0`) del servizio su cui è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.) nel campo `Destinazione *` e fare clic su `Continua`{.action}.
+5. Verifica il riepilogo e fare clic su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell'aggiunta sulla rete DNS sia pienamente effettiva.
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -62,11 +62,11 @@ Consulta le nostre guide dettagliate:
 
 ### Aggiungere un record DNS di tipo A per il sottodominio di un dominio
 
-1. Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
-2. Clicca sul pulsante `Aggiungi un record`{.action}.
+1. Fare clic sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
+2. Fare clic sul pulsante `Aggiungi un record`{.action}.
 3. Nella finestra che si apre, seleziona il campo di puntamento di tipo `A`{.action}.
-4. Successivamente, inserisci nel campo `Sottodominio` il sottodominio interessato (ad esempio: `wwww` per il sottodominio `www.domain.tld`) e, nel campo `Destinazione *`, l’indirizzo IP (ad esempio: `203.0.113.0`) del servizio sul quale è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc...). Infine clicca su `Continua`{.action}.
-5. Verifica il riepilogo e clicca su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell'aggiunta sulla rete DNS sia pienamente effettiva.
+4. Successivamente, inserisci nel campo `Sottodominio` il sottodominio interessato (ad esempio: `www` per il sottodominio `www.domain.tld`) e, nel campo `Destinazione *`, l’indirizzo IP (ad esempio: `203.0.113.0`) del servizio sul quale è situato il tuo sito Web (hosting Web, server dedicato, VPS, ecc.). Infine fare clic su `Continua`{.action}.
+5. Verifica il riepilogo e fare clic su `Conferma`{.action}. Attendi fino a **24** ore affinché la propagazione dell'aggiunta sulla rete DNS sia pienamente effettiva.
 
 /// details | Per ulteriori informazioni, fare clic qui.
 
@@ -86,8 +86,8 @@ Consulta le nostre guide dettagliate:
 [Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
 [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records).
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (SEO, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
  
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre [offerte di supporto](/links/support).
  
 Contatta la nostra [Community di utenti](/links/community).

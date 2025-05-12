@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Wprowadzenie
 
-Czy chcesz, aby Twoja strona WWW była dostępna za pośrednictwem Twojej domeny? W tym celu Twoja domena musi wskazywać na adres IP usługi, w której znajduje się Twoja strona WWW (hosting, serwer dedykowany, VPS, etc.). Skonfiguruj wówczas aktywną strefę DNS Twojej domeny za pomocą rekordu DNS typu A.
+Czy chcesz, aby Twoja strona WWW była dostępna za pośrednictwem Twojej domeny? W tym celu Twoja domena musi wskazywać na adres IP usługi, w której znajduje się Twoja strona WWW (hosting, serwer dedykowany, VPS, itp.). Skonfiguruj wówczas aktywną strefę DNS Twojej domeny za pomocą rekordu DNS typu A.
 
 **Dowiedz się, jak dodać rekord DNS typu A w strefie DNS zarządzanej przez OVHcloud w przypadku Twojej domeny.**
 
@@ -40,13 +40,13 @@ Czy chcesz, aby Twoja strona WWW była dostępna za pośrednictwem Twojej domeny
 >
 > Dodawanie, modyfikowanie lub usuwanie rekordów DNS w aktywnej strefie DNS jest operacją wymagającą odpowiedniej wiedzy. W razie wątpliwości skontaktuj się z [wyspecjalizowanym dostawcą](/links/partner).
 
-### Dodaj rekord DNS typu A dla domeny
+### Dodawanie rekord DNS typu A dla domeny
 
 1. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 2. Na stronie, która się wyświetli kliknij przycisk `Dodaj rekord`{.action}.
-3. W wyświetlonym oknie wybierz pole wskazania typu `A`{.action}.
-4. Następnie wpisz w polu `Adres docelowy *` adres IP (na przykład: `203.0.113.0`) usługi, na której znajduje się Twoja strona WWW (hosting, serwer dedykowany, VPS, itp.), a następnie kliknij na `Dalej`{.action}.
-5. Sprawdź podsumowanie i kliknij na `Zatwierdź`{.action}. Odczekaj do **24** godzin, aby dodanie w sieci DNS stało się w pełni skuteczne.
+3. W wyświetlonym oknie wybierz typ rekordu `A`{.action}.
+4. Następnie wpisz w polu `Adres docelowy *` adres IP (na przykład: `203.0.113.0`) usługi, na której znajduje się Twoja strona WWW (hosting, serwer dedykowany, VPS, itp.), a następnie kliknij `Dalej`{.action}.
+5. Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -60,13 +60,13 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 
 ///
 
-### Dodaj rekord DNS typu A dla subdomeny domeny
+### Dodawanie rekord DNS typu A dla subdomeny domeny
 
 1. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 2. Na stronie, która się wyświetli kliknij przycisk `Dodaj rekord`{.action}.
-3. W wyświetlonym oknie wybierz pole wskazania typu `A`{.action}.
-4. Następnie w polu `Subdomena` wpisz odpowiednią subdomenę (na przykład: `www` dla subdomeny `www.domain.tld`), a w polu `Adres docelowy *` - adres IP (na przykład: `203.0.113.0`) usługi, na której znajduje się Twoja strona WWW (hosting, serwer dedykowany, VPS, etc.). Następnie kliknij przycisk `Dalej`{.action}.
-5. Sprawdź podsumowanie i kliknij na `Zatwierdź`{.action}. Odczekaj do **24** godzin, aby dodanie w sieci DNS stało się w pełni skuteczne.
+3. W wyświetlonym oknie wybierz pole typ rekordu `A`{.action}.
+4. Następnie w polu `Subdomena` wpisz odpowiednią subdomenę (na przykład: `www` dla subdomeny `www.domain.tld`), a w polu `Adres docelowy *` - adres IP (na przykład: `203.0.113.0`) usługi, na której znajduje się Twoja strona WWW (hosting, serwer dedykowany, VPS, itp.). Następnie kliknij przycisk `Dalej`{.action}.
+5. Sprawdź podsumowanie i kliknij `Zatwierdź`{.action}. Odczekaj maksymalnie **24** godziny, aby dodanie w sieci DNS stało się w pełni skuteczne.
 
 /// details | Kliknij tutaj, aby uzyskać więcej informacji.
 
@@ -86,7 +86,7 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 [Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information).
 [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records).
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
