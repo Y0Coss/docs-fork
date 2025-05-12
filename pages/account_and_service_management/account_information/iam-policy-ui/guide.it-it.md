@@ -1,7 +1,7 @@
 ---
 title: Come utilizzare le politiche IAM dallo Spazio Cliente
 excerpt: Come assegnare diritti di accesso specifici agli utenti da un account OVHcloud
-updated: 2025-01-08
+updated: 2025-05-12
 ---
 
 ## Obiettivo
@@ -37,13 +37,9 @@ Ad esempio, possiamo creare una politica per dare ad un utente di nome John, per
 
 ### Accedi al menu IAM
 
-Clicca sul nome del tuo account in alto a destra e poi di nuovo sul nome nella barra laterale.
+Nella barra laterale, clicca su `Identità, sicurezza e operazioni`{.action} e poi su `Identity & Access Management`{.action}.
 
 ![Accesso al menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Accedi al menu IAM tramite l'accesso dedicato nel tuo Spazio Cliente.
-
-![Accesso al menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
 Se si accede per la prima volta a questo menu, viene visualizzata la pagina seguente:
 

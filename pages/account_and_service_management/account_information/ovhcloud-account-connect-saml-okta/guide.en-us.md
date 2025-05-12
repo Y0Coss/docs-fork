@@ -1,7 +1,7 @@
 ---
 title: Enabling Okta SSO connections with your OVHcloud account
 excerpt: "Learn how to associate your Okta service with your OVHcloud account via SAML 2.0"
-updated: 2025-05-09
+updated: 2025-05-12
 ---
 
 ## Objective
@@ -80,13 +80,9 @@ Your Okta service now trusts OVHcloud as a service provider. The next step is to
 
 To add Okta as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}
+On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-You can access the IAM menu via the dedicated entry in your Control Panel.
-
-![Access to the IAM menu](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
 Then click on the `Identities`{.action} tab to access local users management.
 

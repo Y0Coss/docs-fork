@@ -1,7 +1,7 @@
 ---
 title: Enabling Google Workspace SSO connections with your OVHcloud account
 excerpt: "Learn how to associate your Google Workspace service with your OVHcloud account via SAML 2.0"
-updated: 2025-05-09
+updated: 2025-05-12
 ---
 
 ## Objective
@@ -81,13 +81,9 @@ Your Google Workspace service now trusts OVHcloud as a service provider. The nex
 
 To add Google workspace as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}
+On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-You can access the IAM menu via the dedicated entry in your Control Panel.
-
-![Access to the IAM menu](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
 Then click on the `Identities`{.action} tab to access local users management.
 

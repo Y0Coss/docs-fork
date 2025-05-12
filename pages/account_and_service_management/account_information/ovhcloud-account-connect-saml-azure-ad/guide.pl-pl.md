@@ -1,7 +1,7 @@
 ---
 title: Włącz połączenia Entra ID SSO z Twoim kontem OVHcloud
 excerpt: "Dowiedz się, jak powiązać identyfikator Entra ID (dawniej Azure Active Directory) z kontem OVHcloud przy użyciu protokołu SAML 2.0"
-updated: 2024-07-05
+updated: 2025-05-12
 ---
 
 ## Wprowadzenie
@@ -203,13 +203,9 @@ Aplikacja Entra ID zostaje dodana jako zatwierdzony dostawca danych w Panelu [kl
 
 #### Zaufanie OVHcloud
 
-Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie na pasku bocznym.
+Na pasku bocznym kliknij `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie `Zarządzanie tożsamością i dostępem (IAM)`{.action}.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Aby uzyskać dostęp do menu IAM, przejdź do Panelu klienta.
-
-![Dostęp do menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
 Następnie kliknij zakładkę `Tożsamości`{.action}, aby zarządzać użytkownikami lokalnymi.
 

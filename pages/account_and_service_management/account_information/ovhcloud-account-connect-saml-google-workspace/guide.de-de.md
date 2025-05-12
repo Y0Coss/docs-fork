@@ -1,7 +1,7 @@
 ---
 title: SSO-Verbindungen zu Ihrem OVHcloud Account über Google Workspace aktivieren
 excerpt: "Erfahren Sie hier, wie Sie Google Workspace über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
-updated: 2024-07-05
+updated: 2025-05-12
 ---
 
 ## Ziel
@@ -81,13 +81,9 @@ Ihr Google Workspace vertraut nun OVHcloud als Service Provider. Stellen Sie ans
 
 Das Hinzufügen Ihres Google Workspace als vertrauenswürdiger Identity Provider erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), in dem Sie die Metadaten des Identity Providers hinterlegen können.
 
-Klicken Sie oben rechts auf den Namen Ihres Accounts und dann erneut in der Seitenleiste auf Ihren Namen.
+Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action} und dann auf `Identity & Access Management`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Sie können das IAM-Menü über den dedizierten Eintrag in Ihrem Kundencenter aufrufen.
-
-![IAM-Menüzugriff](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
 Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der lokalen Benutzer zuzugreifen.
 

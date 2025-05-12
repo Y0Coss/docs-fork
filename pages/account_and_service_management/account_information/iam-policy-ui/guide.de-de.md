@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinie über Ihr Kundencenter
 excerpt: Erfahren Sie hier, wie Sie Benutzern im OVHcloud Kunden-Account spezifische Zugriffsrechte gewähren
-updated: 2025-01-08
+updated: 2025-05-12
 ---
 
 ## Ziel
@@ -37,17 +37,13 @@ Es kann beispielsweise eine Richtlinie erstellt werden, um einem Benutzer namens
 
 ### Menü für IAM aufrufen
 
-Klicken Sie oben rechts auf den Namen Ihres Accounts und dann erneut in der Seitenleiste auf Ihren Namen.
+Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action} und dann auf `Identity & Access Management`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Sie können das IAM-Menü über den dedizierten Eintrag in Ihrem Kundencenter aufrufen.
-
-![IAM-Menüzugriff](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
-
 Wenn Sie dieses Menü zum ersten Mal aufrufen, wird die folgende Seite angezeigt:
 
-![IAM-Menüzugriff]](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
+![IAM-Menüzugriff](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
 Klicken Sie je nach der gewünschten Aktion auf [Richtlinie erstellen](#create-policy) oder auf [Benutzer erstellen](#create-users).
 

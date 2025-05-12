@@ -1,7 +1,7 @@
 ---
 title: Attiva le connessioni Active Directory Federation Services (AD FS) SSO con il tuo account OVHcloud
 excerpt: "Scopri come associare il tuo servizio Active Directory Federation Services (AD FS) al tuo account OVHcloud tramite SAML 2.0"
-updated: 2024-06-25
+updated: 2025-05-12
 ---
 
 ## Obiettivo
@@ -121,13 +121,9 @@ Una volta terminata la tabella di corrispondenza, il servizio AD FS si fida di O
 
 L'aggiunta del tuo AD FS come affidabilità provider avviene [nello Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), dove è possibile fornire i metadati del provider.
 
-Clicca sul nome del tuo account in alto a destra e poi di nuovo sul tuo nome nella barra laterale.
+Nella barra laterale, clicca su `Identità, sicurezza e operazioni`{.action} e poi su `Identity & Access Management`{.action}.
 
 ![Accesso al menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Accedi al menu IAM tramite la voce dedicata dello Spazio Cliente.
-
-![Accesso al menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
 Clicca sulla scheda `Identità`{.action} per accedere alla gestione degli utenti locali.
 

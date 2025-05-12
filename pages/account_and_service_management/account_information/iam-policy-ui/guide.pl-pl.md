@@ -1,7 +1,7 @@
 ---
 title: Jak korzystać z polityki IAM w Panelu klienta
 excerpt: Dowiedz się, jak przypisać użytkownikom uprawnienia dostępu do konta OVHcloud
-updated: 2025-01-08
+updated: 2025-05-12
 ---
 
 ## Wprowadzenie
@@ -37,13 +37,9 @@ Na przykład, możemy stworzyć politykę pozwalającą użytkownikowi o nazwie 
 
 ### Dostęp do menu IAM
 
-Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie nazwę użytkownika na pasku bocznym.
+Na pasku bocznym kliknij `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie `Zarządzanie tożsamością i dostępem (IAM)`{.action}.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Możesz uzyskać dostęp do menu IAM za pomocą wpisu w Panelu klienta.
-
-![Dostęp do menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
 Jeśli przejdziesz do tego menu po raz pierwszy, pojawi się następująca strona:
 

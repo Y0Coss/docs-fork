@@ -1,7 +1,7 @@
 ---
 title: Włącz połączenia SSO Google Workspace z Twoim kontem OVHcloud
 excerpt: "Dowiedz się, jak powiązać Twoją usługę Google Workspace z Twoim kontem OVHcloud przez SAML 2.0"
-updated: 2024-07-05
+updated: 2025-05-12
 ---
 
 ## Wprowadzenie
@@ -79,15 +79,11 @@ Twoja usługa Google Workspace stała się dla OVHcloud zaufana jako dostawca us
 
 ### Budowa zaufania do konta OVHcloud i konfiguracja połączenia
 
-Dodanie Google workspace jako zaufanego dostawcy tożsamości odbywa się w [[Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w którym możesz dostarczyć metadane dostawcy tożsamości.
+Dodanie Google workspace jako zaufanego dostawcy tożsamości odbywa się w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w którym możesz dostarczyć metadane dostawcy tożsamości.
 
-Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie na pasku bocznym.
+Na pasku bocznym kliknij `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie `Zarządzanie tożsamością i dostępem (IAM)`{.action}.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Aby uzyskać dostęp do menu IAM, przejdź do Panelu klienta.
-
-![Dostęp do menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
 Następnie kliknij zakładkę `Tożsamości`{.action}, aby zarządzać użytkownikami lokalnymi.
 
