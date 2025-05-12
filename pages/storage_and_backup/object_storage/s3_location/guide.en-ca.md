@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints and Object Storage geoavailability
-updated: 2024-11-25
+updated: 2025-05-12
 ---
 
 <style>
@@ -9,7 +9,7 @@ td:nth-of-type(2) {
 }
 </style>
 
-We have designed the Object Storage storage classes to be **compatible with S3 **\*** API**, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region and not storage class.
+We have designed the Object Storage storage classes to be **compatible with S3<sup>1</sup>API**, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region and not storage class.
 
 ## Object Storage
 
@@ -154,11 +154,11 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
         <td>INTELLIGENT_TIERING</td>
     </tr>
     <tr>
-        <td>default*</td>
+        <td>default<sup>2</sup></td>
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td rowspan=5>Standard Infrequent Access**</td>
+        <td rowspan=5>Standard Infrequent Access<sup>3</sup></td>
     </tr>
     <tr>
         <td>ONEZONE_IA</td>
@@ -174,7 +174,8 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
     </tr>
 </table>
 
-_* The default storage class on the **io** endpoint will be Standard, i.e. if you don't specify a storage class, your object will be stored in our Standard tier._
+_<sup>2</sup>: The default storage class on the **io** endpoint will be Standard, i.e. if you don't specify a storage class, your object will be stored in our Standard tier._
+_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-17._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the following:
 
@@ -193,16 +194,14 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td>Standard Infrequent Access**</td>
+        <td>Standard Infrequent Access<sup>3</sup></td>
     </tr>
 </table>
 
-_** The Standard Infrequent Access tier will be available starting from 2025-06-17._
+_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-17._
 
 > [!warning]
 > Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all features and API operations will be available.
-
-
 
 ### Endpoint retrocompatibility
 
@@ -228,7 +227,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
         <td>STANDARD</td>
     </tr>
     <tr>
-        <td>default*</td>
+        <td>default<sup>4</sup></td>
     </tr>
     <tr>
          <td>STANDARD_IA</td>
@@ -243,7 +242,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td rowspan=3>Standard Infrequent Access**</td>
+        <td rowspan=3>Standard Infrequent Access<sup>3</sup></td>
     </tr>
     <tr>
         <td>GLACIER</td>
@@ -253,7 +252,8 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
 </table>
 
-_* The default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
+_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-17._
+_<sup>4</sup>: The default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is the following:
 
@@ -272,11 +272,11 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
     </tr>
     <tr>
         <td>GLACIER_IR</td>
-        <td>Standard Infrequent Access**</td>
+        <td>Standard Infrequent Access<sup>3</sup></td>
     </tr>
 </table>
 
-_** The Standard Infrequent Access tier will be available starting from 2025-06-17._
+_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-17._
 
 ## Object Storage Swift
 
@@ -290,4 +290,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our [community of users](/links/community).
 
-**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+_<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc._

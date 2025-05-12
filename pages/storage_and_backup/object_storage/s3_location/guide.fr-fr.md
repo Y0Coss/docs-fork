@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-11-25
+updated: 2025-05-12
 ---
 
 <style>
