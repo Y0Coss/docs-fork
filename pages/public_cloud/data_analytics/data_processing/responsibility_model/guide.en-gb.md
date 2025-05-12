@@ -4,6 +4,15 @@ excerpt: "Shared responsibilities between OVHcloud and the customer for the Data
 updated: 2024-06-03
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## Objective
 
 The RACI below details shared responsibilities between OVHcloud and the customer on the Data Processing service.

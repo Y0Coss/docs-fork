@@ -4,6 +4,15 @@ excerpt: Find out how to get your job's logs while the job is running or after i
 updated: 2021-07-14
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## Objective
 
 This guide will help you to check your job's logs while your job is running or after your job is finished. 

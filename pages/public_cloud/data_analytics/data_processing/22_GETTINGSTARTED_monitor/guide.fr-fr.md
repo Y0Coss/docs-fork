@@ -4,6 +4,15 @@ excerpt: Find out how to monitor your jobs using Grafana and the Apache Spark da
 updated: 2020-03-06
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## Objective
 
 This guide will tell you how you can monitor you jobs after submitting them. 

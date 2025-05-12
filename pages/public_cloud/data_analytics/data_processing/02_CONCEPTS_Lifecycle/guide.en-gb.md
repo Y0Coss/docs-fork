@@ -4,6 +4,15 @@ excerpt: Find out what are the current lifecycle policies of the OVHcloud Data P
 updated: 2023-09-18
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 The OVHcloud Data Processing service provides Apache Spark serverless jobs. New stable versions are provided by Apache on a regular basis.
 Earlier versions proposed by OVHcloud can reach their End-Of-Support (EOS) or End-Of-Life (EOL), mainly because of the life cycle of the underlying support from the Apache community. 
 

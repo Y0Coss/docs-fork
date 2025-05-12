@@ -4,6 +4,15 @@ excerpt: Find out what are the current capabilities and limitations of the OVHcl
 updated: 2024-12-13
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## Objective 
 
 This page provides the technical capabilities and limitations of the Public Cloud Data Processing platform.

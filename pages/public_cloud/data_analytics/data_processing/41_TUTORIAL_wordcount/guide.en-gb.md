@@ -4,6 +4,15 @@ excerpt: Couting occurences of words in a file is a basic example about how usin
 updated: 2021-01-20
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## Objective
 This guide  gives you a basic example about using Apache Spark and OVHcloud Data Processing.
 We will first read data from a CSV file, then count the frequence of each word in this particular file.

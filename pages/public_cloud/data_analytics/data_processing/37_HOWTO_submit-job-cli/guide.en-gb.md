@@ -4,6 +4,15 @@ excerpt: Find out how to run your Apache Spark job with the Data Processing plat
 updated: 2022-10-11
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## Objective
 This guide helps you to upload your application code to Object Storage and submit an Apache Spark job using the Data Processing CLI.
 

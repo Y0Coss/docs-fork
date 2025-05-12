@@ -4,6 +4,15 @@ excerpt: Introduction to Apache Spark
 updated: 2020-03-06
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## What is Apache Spark?
 
 [Apache Spark](http://spark.apache.org/) is an open-source distributed, general-purpose cluster-computing framework that is much faster than the previous cluster computing framework, Hadoop MapReduce, thanks to features like in-memory processing and lazy evaluation. 

@@ -4,6 +4,15 @@ excerpt: Introduction to OVHcloud Data Processing Platform
 updated: 2020-03-06
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## What is Data Processing?
 
 With Data Processing, you can run your processing job over the cloud, in a fast, easy and cost-efficient way. Everything is managed and secured by OVHcloud and you just need to define how much resources you would like. 

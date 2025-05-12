@@ -4,6 +4,15 @@ excerpt: Find out how to cancel a job running in the Data Processing platform th
 updated: 2020-03-06
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## Objective
 
 In this guide, we will see how to cancel a running job using the Data Processing page in the OVHcloud Manager.

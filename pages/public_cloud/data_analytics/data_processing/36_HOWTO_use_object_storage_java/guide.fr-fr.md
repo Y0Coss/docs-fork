@@ -4,6 +4,15 @@ excerpt: OpenStack Swift and its S3* compatible API is a common way to store the
 updated: 2021-01-20
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## Objective
 This guide gives you a basic example about using OpenStack Swift and its S3 API with OVHcloud Data Processing using Java.
 

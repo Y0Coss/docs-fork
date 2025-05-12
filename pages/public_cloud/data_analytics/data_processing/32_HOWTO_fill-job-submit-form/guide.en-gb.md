@@ -4,6 +4,15 @@ excerpt: Find out how to fill the job submit form from the Data Processing page 
 updated: 2020-03-06
 ---
 
+> [!warning]
+>
+>  Important Notice – End of Life (EOL)
+> 
+> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
+
 ## Objective
 
 This guide will help you to understand the different parameters that you can set when submitting a new job to the Data Processing platform
