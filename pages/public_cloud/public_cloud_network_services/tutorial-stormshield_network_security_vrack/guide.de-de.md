@@ -371,7 +371,7 @@ hasyn
 
 <a name="step4"></a>
 
-#### Anwendungsfall 3: IPsec-Tunnel (site-to-site)
+#### Anwendungsfall 3: IPsec-Tunnel (Site-to-Site)
 
 In diesem Beispiel ist der IPsec-Tunnel so konfiguriert, dass zwei verschiedene PCI-Regionen miteinander verbunden werden: SBG7 (VLAN200 Netzwerk) und GRA11 (VLAN201 Netzwerk), aber jeder dieser Standorte kann ein Remote-Standort wie ein Desktop oder ein Rechenzentrum sein.
 
@@ -456,7 +456,7 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 
 <a name="step5"></a>
 
-#### Anwendungsfall 4: SSL/TLS VPN (client-to-site)
+#### Anwendungsfall 4: SSL/TLS VPN (Client-to-Site)
 
 In diesem Beispiel stellt ein Remote OpenVPN Client eine Verbindung mit dem privaten Netzwerk innerhalb von VLAN200 her.
 
