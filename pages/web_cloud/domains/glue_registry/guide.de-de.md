@@ -6,7 +6,7 @@ updated: 2025-05-13
 
 ## Ziel
 
-**DNS-Server** hosten die DNS-Konfigurationen von Domainnamen: die *DNS-Zonen*. 
+**DNS-Server** hosten die DNS-Konfigurationen von Domainnamen: die *DNS-Zonen*.
 
 DNS-Zonen bestehen aus technischen Informationen: DNS-Einträgen. DNS-Einträge sind unter anderem für folgende Funktionen zuständig:
 
@@ -14,9 +14,13 @@ DNS-Zonen bestehen aus technischen Informationen: DNS-Einträgen. DNS-Einträge 
 - Die E-Mail-Server (DNS-Einträge vom Typ *MX*), die E-Mails erhalten sollen, die an Adressen mit diesem Domainnamen versendet wurden. Wenn Sie die MX-Einträge Ihres Domainnamens konfigurieren, können Sie E-Mails über Ihre personalisierten E-Mail-Adressen empfangen.
 - Informationen zur Sicherheit/Authentifizierung von Diensten (Webhosting, Webserver, E-Mail-Server, etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC*, etc.).
 
-Weitere Informationen zu diesen Themen finden Sie in unserer [Dokumentation zu den OVHcloud DNS-Servern](/pages/web_cloud/domains/dns_server_general_information) und der [Bearbeitung einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
+Weitere Informationen zu diesen Themen finden Sie in den folgenden Anleitungen:
 
-Je nach Ihren Bedürfnissen können Sie die DNS-Server Ihres OVHcloud Domainnamens mithilfe von *Glue Records* anpassen.
+- [Alle Informationen zu DNS-Servern](/pages/web_cloud/domains/dns_server_general_information).
+- [Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information).
+- [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
+
+Je nach Ihren Bedürfnissen können Sie die DNS-Server Ihres OVHcloud Domainnamens mithilfe von ***Glue Records*** anpassen.
 
 **Diese Anleitung erklärt, wie Sie die DNS-Server von OVHcloud Domainnamen individualisieren.**
 
@@ -33,7 +37,7 @@ Je nach Ihren Bedürfnissen können Sie die DNS-Server Ihres OVHcloud Domainname
 > Folgen Sie genau den nachstehenden Anweisungen oder wenden Sie sich im Zweifelsfall an einen [spezialisierten Dienstleister](/links/partner).
 >
 
-### Schritt 1: Abrufen der DNS-Server, die derzeit vom Domainnamen verwendet werden <a name="step1"></a>
+### 1 - Abrufen der DNS-Server, die derzeit vom Domainnamen verwendet werden <a name="step1"></a>
 
 Sie können die derzeit von Ihrem Domainnamen verwendeten DNS-Server mit dem DNS-Tool [Zonemaster](https://zonemaster.net/en/run-test){.external} abrufen.
 
@@ -54,7 +58,7 @@ Im oben abgebildeten Beispiel verwendet **domain.tld** derzeit die folgenden **D
 
 Weitere Informationen finden Sie in unserem Tutorial zum Tool [Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
 
-### Schritt 2: *Glue Records* hinzufügen <a name="step2"></a>
+### 2 - *Glue Records* hinzufügen <a name="step2"></a>
 
 > [!warning]
 >
@@ -73,7 +77,7 @@ Weitere Informationen finden Sie in unserem Tutorial zum Tool [Zonemaster](/page
 > Darüber hinaus muss *domain1.tld* bei OVHcloud registriert sein, um *Glue*-Einträge zu verwenden.
 >
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, den Sie anpassen möchten.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, den Sie anpassen möchten.
 
 Klicken Sie auf der neuen Seite auf den Tab `GLUE`{.action}.
 
@@ -100,14 +104,14 @@ Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action},
 
 In unserem Beispiel müssen Sie den Vorgang wiederholen, um die *Glue*-Einträge zu erstellen **dns2.domain.tld**. Dieser ersetzt später den DNS-Server **dnsX2.ovh.net**, der derzeit IPv4 *203.0.113.1* und IPv6 *2001:db8:1:1b00:203:0:113:1* zugewiesen ist.
 
-### Schritt 3: DNS-Einträge vom Typ A und AAAA für benutzerdefiniertes DNS erstellen <a name="step3"></a>
+### 3 - DNS-Einträge vom Typ A und AAAA für benutzerdefiniertes DNS erstellen <a name="step3"></a>
 
 Sie müssen die Einträge *A* und *AAAA* für die Hostnamen erstellen, die Sie im vorherigen Schritt definiert haben. Die Einträge *A* und *AAAA* müssen die Ziel-IP-Adressen enthalten, die dem zuvor erstellten Hostnamen entsprechen.
 
 Gehen Sie hierzu in das Interface des Anbieters, der die DNS-Konfiguration Ihres Domainnamens verwaltet. Es gibt zwei Möglichkeiten:
 
 - **Ihr Domainname verwendet keine aktive DNS-Zone bei OVHcloud**: Wenden Sie sich an den Anbieter, der die DNS-Zone verwaltet. Gehen Sie anschließend zum nächsten Schritt über.
-- **Ihr Domainname verwendet eine aktive DNS-Zone bei OVHcloud**: Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, mit dem Sie die *Glue*-Einträge im [Schritt 2](#step2) erstellt haben. Gehen Sie auf den Tab `DNS-Zone`{.action} und klicken Sie dann auf `Eintrag hinzufügen`{.action}. Wählen Sie den Eintragstyp *A* oder *AAAA* aus, je nachdem, welchen IP-Typ Sie hinzufügen möchten. Folgen Sie den Anweisungen, indem Sie die *Subdomain* und die *IPv4* (A) oder *IPv6* (AAAA) eingeben und bis zur Bestätigung fortfahren. Falls erforderlich, folgen Sie den Anweisungen in unserer Dokumentation "[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)".
+- **Ihr Domainname verwendet eine aktive DNS-Zone bei OVHcloud**: Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, mit dem Sie die *Glue*-Einträge im [Schritt 2](#step2) erstellt haben. Gehen Sie auf den Tab `DNS-Zone`{.action} und klicken Sie dann auf `Eintrag hinzufügen`{.action}. Wählen Sie den Eintragstyp *A* oder *AAAA* aus, je nachdem, welchen IP-Typ Sie hinzufügen möchten. Folgen Sie den Anweisungen, indem Sie die *Subdomain* und die *IPv4* (A) oder *IPv6* (AAAA) eingeben und bis zur Bestätigung fortfahren. Falls erforderlich, folgen Sie den Anweisungen in unserer Dokumentation "[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)".
 
 ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-2.png){.thumbnail}
 
@@ -125,11 +129,11 @@ Folgende Einträge werden also zur aktiven DNS-Zone des Domainnamens *domain.tld
  - DNS-Eintrag vom Typ *A* für die *Subdomain* **dns2.domain.tld** zur IP *203.0.113.1* (IPv4 des DNS-Servers **dnsX2.ovh.net**)
  - DNS-Eintrag vom Typ *AAAA* für die *Subdomain* **dns2.domain.tld** zur IP *2001:db8:1:1b00:203:0:113:1* (IPv6 des DNS-Servers **dnsX2.ovh.net**)
 
-### Schritt 4: DNS-Server Ihres Domainnamens ändern
+### 4 - DNS-Server Ihres Domainnamens ändern
 
 Sie müssen die DNS-Server Ihres Domainnamens ändern, indem Sie die alten DNS-Server mit den zuvor erstellten benutzerdefinierten DNS-Servern ersetzen.
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie *den Domainnamn aus, für die Sie die DNS-Server anpassen möchten*.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie *den Domainnamn aus, für die Sie die DNS-Server anpassen möchten*.
  
 Gehen Sie auf den Tab `DNS-Server`{.action} und klicken Sie dann auf `DNS-Server ändern`{.action}. Ersetzen Sie nun Ihre aktuellen DNS-Server durch die Server, die Sie als personalisierte DNS-Server verwenden möchten.
 
@@ -156,14 +160,14 @@ Beenden Sie die Schritte und folgen Sie bei Bedarf den Anweisungen in unserer [D
 
 In unserem Beispiel für die Anpassung der DNS-Server von *domain.tld* ersetzen wir den DNS-Server **dnsX1.ovh.net** mit **dns1.domain.tld** und den DNS-Server **dnsX2.ovh.net** mit **dns2.domain.tld** und warten dann ab, bis die DNS-Propagation abgeschlossen ist.
 
-### Schritt 5: DNS-Einträge in der aktiven DNS-Zone ersetzen
+### 5 - DNS-Einträge in der aktiven DNS-Zone ersetzen
 
 Damit die Personalisierung der DNS-Server im DNS-Netzwerk übernommen wird (Ausführen von *Whois*, *dig ns* oder Überprüfung mit einem DNS-Tool), müssen die Einträge vom Typ *NS* in der aktiven DNS-Zone Ihrer Domainname ersetzt werden.
 
 Gehen Sie hierzu in das Interface des Anbieters, der die Ihre DNS-Konfiguration verwaltet. Es zwei Möglichkeiten:
 
 - **Ihr Domainname verwendet keine aktive DNS-Zone bei OVHcloud**: Wenden Sie sich an den Anbieter, der die DNS-Zone verwaltet, um die Änderung vorzunehmen.
-- **Ihr Domainname verwendet eine aktive DNS-Zone bei OVHcloud**: Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, für den Sie die DNS-Server angepasst haben. Gehen Sie auf den Tab `DNS-Zone`{.action} und klicken Sie auf `Im Textmodus bearbeiten`{.action}. 
+- **Ihr Domainname verwendet eine aktive DNS-Zone bei OVHcloud**: Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, für den Sie die DNS-Server angepasst haben. Gehen Sie auf den Tab `DNS-Zone`{.action} und klicken Sie auf `Im Textmodus bearbeiten`{.action}. 
 
 Es erscheint ein Fenster mit Ihrer DNS Zone im Text-Modus:
 
@@ -177,7 +181,7 @@ Es erscheint ein Fenster mit Ihrer DNS Zone im Text-Modus:
 
 Ersetzen Sie in diesem Fenster **nur in den Einträgen vom Typ *NS*** die DNS-Servernamen durch Ihre eigenen benutzerdefinierten DNS-Servernamen **und erhöhen Sie dabei den ersten numerischen Wert der Zeile "SOA" um 1**. Wenn Sie Ihre Änderungen vorgenommen haben, klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
-Die Änderung wird nicht sofort im [OVHcloud Kundencenter](/links/manager){.external} sichtbar. Warten Sie etwa 20 Minuten und loggen Sie sich dann erneut in Ihrem OVHcloud Kundencenter ein, um zu sehen, ob Ihre Änderungen korrekt übernommen wurden.
+Die Änderung wird nicht sofort im [OVHcloud Kundencenter](/links/manager) sichtbar. Warten Sie etwa 20 Minuten und loggen Sie sich dann erneut in Ihrem OVHcloud Kundencenter ein, um zu sehen, ob Ihre Änderungen korrekt übernommen wurden.
 
 > [!primary]
 >
