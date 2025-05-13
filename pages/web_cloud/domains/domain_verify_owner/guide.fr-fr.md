@@ -12,9 +12,9 @@ Vous venez de recevoir un e-mail de la part d'OVHcloud vous précisant qu'une ac
 
 ## Prérequis
 
-- Disposr d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
+- Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Avoir reçu un l'e-mail de la part d'OVHcloud vous indiquant qu'une action est requise au sujet des coordonnées du titulaire de votre nom de domaine.
+- Avoir reçu un e-mail de la part d'OVHcloud vous indiquant qu'une action est requise au sujet des coordonnées du titulaire de votre nom de domaine.
 - Si vous souhaitez vous assurer qu'il ne s'agit pas d'un e-mail frauduleux, vérifiez les points suivants :
     - Votre identifiant client (exemple: `aa00000-ovh`) ainsi que votre nom de domaine (exemple: `domain.tld`) sont présents dans le sujet de l'e-mail.
     - L'URL du lien indiqué dans l'e-mail pour corriger la situation commence bien par : `https://www.ovh.com/manager/#/web/domain/operation/`
