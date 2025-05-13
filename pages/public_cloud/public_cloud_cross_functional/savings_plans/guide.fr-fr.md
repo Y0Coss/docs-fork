@@ -178,7 +178,6 @@ Si la période selectionnée est déjà terminée ( un mois précedent celui act
 ![Dashboard focus on conso](images/dashboard_conso.png){.thumbnail}
 
 - **Créer un Savings Plan :** Un bouton permettant de créer un nouveau Savings Plan.
-- **Télécharger (Exporter en CSV) :** Un bouton pour exporter les données du **tableau de suivi de consommation** au format CSV, afin de les analyser en détail ou les conserver pour vos archives.
 
 Chaque période dans le tableau correspond à un changement dans l'utilisation des ressources, tel que l'ajout ou la suppression d'une ressource ou d'un Savings Plan.
 

@@ -179,7 +179,6 @@ If the selected period has already ended (one month before the current one), two
 ![Dashboard focus on conso](images/dashboard_conso.png){.thumbnail}
 
 - **Create a Savings Plan:** A button to create a new Savings Plan.
-- **Download (Export as CSV):** A button for exporting data from the **Savings Plan Usage Detail** in CSV format, so that you can analyse it in detail or save it for your archives.
 
 Each period in the table corresponds to a change in resource usage, such as the addition or deletion of a resource or Savings Plan.
 
