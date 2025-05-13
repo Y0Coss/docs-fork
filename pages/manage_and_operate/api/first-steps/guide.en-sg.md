@@ -201,7 +201,9 @@ print("Welcome", client.get('/me')['firstname'])
 
 #### List and revoke your keys
 
-To list and revoke your keys, it's possible to either use the [Control Panel](https://www.ovh.com/manager/#/iam/api-keys) either use the API portal :
+To list and revoke your keys, it's possible to either use the Control Panel on the section `Identity, Security & Operations`{.action} then `API keys`{.action} either use the API portal :
+
+![API keys manager](images/api-keys-manager.png){.thumbnail}
 
 - List the keys IDs with the following call:
 
