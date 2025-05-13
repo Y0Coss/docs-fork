@@ -8,7 +8,7 @@ updated: 2021-05-14
 >
 >  Important Notice – End of Life (EOL)
 > 
-> OVHcloud Data Processing Platform will reach End of Life on June 30, 2025.
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
 > 
 > This service will no longer be available after this date.
 >
