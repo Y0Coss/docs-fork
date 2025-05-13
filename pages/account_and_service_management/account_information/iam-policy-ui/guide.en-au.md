@@ -37,7 +37,7 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 
 ### Accessing the IAM menu
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then `Policies`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Click [Create a policy](#create-policy) or [Create users](#create-users) directl
 >
 > Customers are not allowed to edit or delete these policies.
 
-If you have already created policies or users, the menu displays a list of all the current policies created on your OVHcloud account.
+If you have already created policies or users, the menu displays on the first tab `My policies` a list of all the current policies created on your OVHcloud account. The tab `OVHcloud policies` display the non-modifiable policies automaticaly created by OVHcloud
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -146,7 +146,7 @@ A popup window will ask you to confirm the deletion.
 
 ### Managing identities
 
-The identities available for policies are managed via the `Identities`{.action} tab.
+The identities available for policies are managed via the `Identities`{.action} section on `Identity, Security & Operations`{.action}.
 
 Details about user management are available in the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
@@ -156,7 +156,7 @@ Policies can target resource groups instead of resources. These resource groups 
 
 #### Creating a resource group
 
-To create a resource group, access the dedicated tab of the IAM menu:
+To create a resource group, access the dedicated tab of the `Policies`{.action} section:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 
