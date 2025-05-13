@@ -235,7 +235,7 @@ Per visualizzare e rimuovere le chiavi è possibile utilizzare il [portale API](
 >>
 >> Accedi al menu `Identità, Sicurezza & Operazioni`{.action} e poi `Chiavi API`{.action}.
 >>
->>![API keys manager](images/api-keys-manager.png){.thumbnail}
+>> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>
 
 ## Per saperne di più <a name="gofurther"></a>
