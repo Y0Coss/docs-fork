@@ -160,7 +160,7 @@ If the selected period has already ended (one month before the current one), two
 
 > [!warning]
 >
-> For an Savings Plan started during the month, days prior to its creation are displayed in red, indicating the absence of coverage.
+> For a Savings Plan started during the month, days prior to its creation are displayed in red, indicating the absence of coverage.
 > 
 
 ![Dashboard focus on graph](images/dashboard_graph.png){.thumbnail}
@@ -190,7 +190,7 @@ Each period in the table corresponds to a change in resource usage, such as the 
 
 ///
 
-Thanks to this dashboard, you can monitor the use and efficiency of your Savings Plans in real time, adjust your strategy according to the data observed, and optimize your costs for more efficient management of your OVHcloud resources.
+Thanks to this dashboard, you can monitor the use and efficiency of your Savings Plans in real time, adjust your strategy according to the data observed, and optimise your costs for more efficient management of your OVHcloud resources.
 
 ## Understanding billing
 

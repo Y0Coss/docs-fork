@@ -148,7 +148,7 @@ Le tableau de bord des Savings Plans vous permet de suivre et d'analyser vos Sav
 - **% d'usage des Savings Plans :** Moyenne d'utilisation de vos Savings Plans (sur la période sélectionnée pour la ressource sélectionnée). Par exemple, si vous utilisez 8 instances et que vos Savings Plans en couvrent 10, le taux d'utilisation sera de 80 %.
 - **% de couverture des Savings Plans :** Moyenne de couverture de vos Savings Plans (sur la période sélectionnée pour la ressource sélectionnée). Par exemple, si vous avez consommé 10 instances et que vos Savings Plans en couvrent 8, alors votre taux de couverture est de 80 %.
 
-Si la période selectionnée est déjà terminée ( un mois précedent celui actuel ), deux champs supplémentaires seront disponibles pour vous permettre de visualiser des données plus détaillées :
+Si la période selectionnée est déjà terminée (un mois précedent celui actuel), deux champs supplémentaires seront disponibles pour vous permettre de visualiser des données plus détaillées :
 
 - **Économies réalisées:** Économies totales (sur la période sélectionnée pour la ressource sélectionnée).
 - **Montant du hors-forfait:** Montant de la facture dépassant votre configuration de Savings Plan (sur la période sélectionnée pour la ressource sélectionnée).
