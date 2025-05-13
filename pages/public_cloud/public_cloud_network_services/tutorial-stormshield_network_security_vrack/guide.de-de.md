@@ -381,14 +381,14 @@ Wiederholen Sie alle Schritte in einer anderen Region mit VLAN 201 anstelle von 
 
 ##### **Ersten Standort konfigurieren**
 
-- [Host-Objekt hinzufügen](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external} für Remote-EVA-SNS und ein Netzwerkobjekt für das private VLAN201-Remotenetzwerk hinzufügen.
+- [Host-Objekt hinzufügen](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external} für Remote-EVA-SNS und ein Netzwerk-Objekt für das private VLAN201-Remote-Netzwerk hinzufügen.
 
 - [Standortübergreifenden Standorttunnel erstellen](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/IPSec_VPN/Encryption_policy-Tunnels_tab-Site_to_Site-Creating.htm){.external}.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Fügen Sie das private LAN und das private Remotenetzwerk hinzu:
+>> Fügen Sie das private LAN und das private Remote-Netzwerk hinzu:
 >>
 >>![SNS EVA vrack](images/ipsec-3.png){.thumbnail}
 >>
@@ -482,9 +482,9 @@ In einem Produktionsszenario muss dieses LDAP/AD *remote* und nicht lokal sein.
 
 ![SNS EVA vrack](images/ssl-vpn-4.png){.thumbnail}
 
-##### **VPN-Netzwerkobjekte konfigurieren**
+##### **VPN-Netzwerk-Oobjekte konfigurieren**
 
-Erstellen Sie zwei Netzwerkobjekte für den SSL VPN Client.
+Erstellen Sie zwei Netzwerk-Objekte für den SSL VPN Client.
 
 UDP Client-Netzwerk:
 
