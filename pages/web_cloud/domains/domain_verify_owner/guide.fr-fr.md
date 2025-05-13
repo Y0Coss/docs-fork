@@ -68,7 +68,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 
 > [!warning]
 >
-> Si, lors de la première partie de ce guide, les corrections ont nécessité l'initialisation d'un changement de titualire pour le nom de domaine. Finaliser d'abord le changement de titulaire **avant** de poursuivre les actions décrites dans le présent guide.
+> Si, lors de la première partie de ce guide, les corrections ont nécessité l'initialisation d'un changement de titulaire pour le nom de domaine. Finaliser d'abord le changement de titulaire **avant** de poursuivre les actions décrites dans le présent guide.
 >
 
 Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
