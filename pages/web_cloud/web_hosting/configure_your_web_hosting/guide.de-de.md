@@ -194,7 +194,7 @@ Im Tab `Allgemeine Informationen`{.action} klicken Sie bei `Globale PHP-Version`
 
 ![hostingConfiguration](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/modify-hosting-configuration.png){.thumbnail}
 
-> [!PRIMARY]
+> [!primary]
 >
 > Wenn die Schaltfläche `Konfiguration ändern`{.action} ausgegraut ist, wird möglicherweise eine Überprüfung der **PHP-Version** durchgeführt. Ist das der Fall, erscheint neben der Version ein blaues Symbol, das dies anzeigt. Warten Sie einige Minuten, bis der Button `Konfiguration ändern`{.action} wieder verfügbar ist.
 >

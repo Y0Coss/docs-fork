@@ -6,9 +6,9 @@ updated: 2024-05-12
 
 ## Ziel
 
-Da Unternehmen zunehmend auf Cloud-Lösungen angewiesen sind, hat die Absicherung von Cloud-Infrastrukturen oberste Priorität Schutz sensibler Daten und die Aufrechterhaltung der Netzwerkintegrität eine wichtige Aufgabe. Stormshield SNS EVA (Stormshield Elastic Virtual Appliance) ist eine umfassende Sicherheitslösung, die Cloud-Umgebungen vor einer Vielzahl von Bedrohungen schützt.
+Da Unternehmen zunehmend auf Cloud-Lösungen angewiesen sind, hat die Absicherung von Cloud-Infrastrukturen oberste Priorität beim Schutz sensibler Daten und der Aufrechterhaltung der Netzwerkintegrität. Stormshield SNS EVA (Elastic Virtual Appliance) ist eine umfassende Sicherheitslösung, die Cloud-Umgebungen vor einer Vielzahl von Bedrohungen schützt.
 
-In dieser Anleitung erhalten Sie Schritt-für-Schritt-Anweisungen zum Deployment und zur Konfiguration von SNS EVA auf der OVHcloud Public Cloud mit vRack und öffentlichem IP-Routing. Sie decken die wichtigsten Funktionen wie Netzwerkfirewalls, IPsec-VPNs und SSL/TLS-VPNs ab. Wenn Sie dieser Anleitung folgen, erhöhen Sie die Sicherheit Ihrer OVHcloud Public Cloud Infrastruktur und gewährleisten die Sicherheit Ihrer Operationen.
+In dieser Anleitung erhalten Sie Schritt-für-Schritt-Anweisungen zum Deployment und zur Konfiguration von SNS EVA auf der OVHcloud Public Cloud mit vRack und öffentlichem IP-Routing. Sie decken die wichtigsten Funktionen wie Netzwerk-Firewalls, IPsec-VPNs und SSL/TLS-VPNs ab. Indem Sie dieses Tutorial anwenden, erhöhen Sie die Sicherheit Ihrer OVHcloud Public Cloud Infrastruktur und gewährleisten die Sicherheit Ihrer Operationen.
 
 **In dieser Anleitung erfahren Sie, wie Sie Ihre OVHcloud Infrastruktur mit Stormshield Network Security in der Public Cloud absichern.**
 
@@ -21,10 +21,10 @@ In dieser Anleitung erhalten Sie Schritt-für-Schritt-Anweisungen zum Deployment
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
-- Sie sind in Ihrem [OVHcloud Kundencenter] eingeloggt (/links/manager).
-- Ein [OpenStack-Benutzer](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user) (optional).
 - Sie haben Grundkenntnisse in Networking.
-- Sie haben auf der [Stormshield-Website](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external} einen Stormshield-Website-Account erstellt.
+- Sie haben auf der [Stormshield-Website](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external} einen Stormshield-Account erstellt.
 - Sie haben vRack aktiviert und konfiguriert, um eine sichere Kommunikation zwischen den Komponenten der Infrastruktur zu ermöglichen.
 - Sie haben eine [Additional IP-Adresse](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
 - Sie haben eine Stormshield Elastic Virtual Appliance Lizenz (**B**ring **Y**our **O**wn **L**icence) von [Partnern oder Drittanbietern](https://www.stormshield.com/partner/partner-finder/){.external} erworben. Diese ist zur Installation und Konfiguration erforderlich.
@@ -586,6 +586,6 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 
 ## Weiterführende Informationen
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern..
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Treten Sie unserer [User Community](/links/community) bei.

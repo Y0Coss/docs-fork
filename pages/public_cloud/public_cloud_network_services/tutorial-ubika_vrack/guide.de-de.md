@@ -7,7 +7,7 @@ updated: 2024-05-12
 ## Ziel
 
 Da Unternehmen zunehmend auf Cloud-Lösungen umsteigen, ist die Sicherheit von Cloud-Anwendungen und APIs von entscheidender Bedeutung, um die Datenintegrität aufrechtzuerhalten und Angriffe zu verhindern.  
-**U**bika **W**AAP **G**ateway (UWG) bietet erweiterte Funktionen für Web-Applikations- und API-Schutz (WAAP), einschließlich leistungsstarker Tools wie Web Application Firewalls (WAF), API-Schutz, Bot-Verwaltung und DDoS-Schutz. Diese Tools helfen Ihnen, Ihre Cloud-Umgebung vor einer Vielzahl von Bedrohungen auf Anwendungsebene zu schützen.
+**U**bika **W**AAP **G**ateway (UWG) bietet erweiterte Funktionen für Web-Applikations- und API-Schutz (WAAP), einschließlich leistungsstarker Tools wie Web Application Firewalls (WAF), Bot-Verwaltung und DDoS-Schutz. Diese Tools helfen Ihnen, Ihre Cloud-Umgebung vor einer Vielzahl von Bedrohungen auf Anwendungsebene zu schützen.
 
 Diese Anleitung enthält detaillierte Anweisungen zur Inbetriebnahme und Konfiguration von Ubika WAAP Gateway in der OVHcloud Public Cloud. Sie erfahren, wie Sie private Netzwerke für die Verwaltung und den Workload konfigurieren, Ubika WAAP Gateway Instanzen einrichten, mithilfe von Additional IP, vRack und Routing für öffentliche IPs eine hohe Verfügbarkeit (HA) einrichten und eine sichere und zuverlässige Architektur für Ihre Cloud-Infrastruktur ermöglichen.
 
@@ -22,14 +22,14 @@ Diese Anleitung enthält detaillierte Anweisungen zur Inbetriebnahme und Konfigu
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
-- Sie sind in Ihrem [OVHcloud Kundencenter] eingeloggt (/links/manager).
-- Ein [OpenStack-Benutzer](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user) (optional).
 - Sie haben Grundkenntnisse in Networking.
 - Sie haben auf der [Ubika-Website](https://my.ubikasec.com/){.external} einen Ubika-Account erstellt.
 - Sie haben einen ausreichenden Block von Additional IP-Adressen verfügbar.
 - Sie haben vRack aktiviert und konfiguriert, um eine sichere Kommunikation zwischen den Komponenten der Infrastruktur zu ermöglichen.
 - Sie haben eine [Additional IP-Adresse](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
-- Sie haben eine Ubika WAAP Gateway Lizenz (**B**ring **Y**our **O**wn **L**licence), die über die [offizielle Website von Ubika](https://my.ubikasec.com/){.external} erworben wurde. Diese ist zur Installation und Konfiguration erforderlich.
+- Sie haben eine Ubika WAAP Gateway Lizenz (**B**ring **Y**our **O**wn **L**icence), die über die [offizielle Website von Ubika](https://my.ubikasec.com/){.external} erworben wurde. Diese ist zur Installation und Konfiguration erforderlich.
 
 ## In der praktischen Anwendung
 
@@ -63,12 +63,12 @@ Hier die Architektur, die wir implementieren werden:
 > [!primary]
 > In dieser Anleitung erfolgt die Installation und Konfiguration von UWG hauptsächlich über die Befehlszeile. Öffnen Sie ein Terminal, um die Anweisungen auszuführen.
 >
-> Beachten Sie, dass alle Abschnitte zu "High Availability" optional sind und die Verwendung des vRack Netzwerks mit Additional IP ebenfalls optional ist. Es wird veranschaulicht, wie das System mit zwei Instanzen im aktiven/passiven Modus für hohe Verfügbarkeit eingerichtet wird. In einer minimalen Version kann es auch mit einer einzigen Instanz arbeiten, wenn dies Ihren Bedürfnissen genügt.
+> Beachten Sie, dass alle Abschnitte zu "High Availability" optional sind und die Verwendung des vRack Netzwerks mit Additional IP ebenfalls optional ist. Es wird veranschaulicht, wie das System mit zwei Instanzen im im Aktiv/Passiv Modus für hohe Verfügbarkeit eingerichtet wird. In einer minimalen Version kann es auch mit einer einzigen Instanz arbeiten, wenn dies Ihren Bedürfnissen genügt.
 
 ### Konfigurieren des Ubika WAAP Gateway Verwaltungsnetzwerk
 
 > [!primary]
-> In diesem Szenario verwenden wir zwei virtuelle Maschinen, die für die Sicherheitsanwendung konfiguriert sind, um hohe Verfügbarkeit (HA) zu erreichen, sowie einen zusätzliche virtuelle Maschine für die Verwaltung und Verwaltung der Sicherheitsanwendung. Diese Konfiguration gewährleistet den Schutz vor Ausfällen und die kontinuierliche Verfügbarkeit des Dienstes. Weitere Beispiele und ausführliche Hilfe zu den Skalierungsoptionen finden Sie in der [Ubika-Dokumentation](https://www.ubikasec.com/resources/){.external}.
+> In diesem Szenario verwenden wir zwei virtuelle Maschinen, die für die Sicherheitsanwendung konfiguriert sind, um hohe Verfügbarkeit (HA) zu erreichen, sowie einen zusätzliche virtuelle Maschine für die Verwaltung der Sicherheitsanwendung. Diese Konfiguration gewährleistet den Schutz vor Ausfällen und die kontinuierliche Verfügbarkeit des Dienstes. Weitere Beispiele und ausführliche Hilfe zu den Skalierungsoptionen finden Sie in der [Ubika-Dokumentation](https://www.ubikasec.com/resources/){.external}.
 
 Erstellen Sie ein privates Netzwerk für die Verwaltung der Infrastruktur:
 
@@ -170,7 +170,7 @@ openstack server create --flavor r3-64 --image Ubika-WAAP-Gateway-6.11.10 --netw
 
 Erstellen Sie die verwalteten UWG Instanzen:
 
-Bevor Sie den folgenden OpenStack-Befehl ausführen, erstellen Sie zunächst eine `managed-1.json`-Datei und fügen Sie den folgenden Inhalt hinzu, wobei Sie die Einstellungen an Ihre Umgebung anpassen.
+Bevor Sie den folgenden OpenStack-Befehl ausführen, erstellen Sie zunächst eine Datei `managed-1.json` und fügen Sie den folgenden Inhalt hinzu, wobei Sie die Einstellungen an Ihre Umgebung anpassen.
 
 ```console
 {
@@ -371,7 +371,7 @@ Erstellen Sie einen Reverse Proxy (`Setup` -> `Reverse Proxy` -> `Add`) auf eine
 
 ![Ubika vrack](images/reverse-proxy.png){.thumbnail}
 
-Erstellen Sie einen DNS A-Eintrag für den Webserver, der auf die virtuelle IP-Adresse der Ubika-Bereitstellung zeigt:
+Erstellen Sie einen DNS A-Eintrag für den Webserver, der auf die virtuelle IP-Adresse von Ubika zeigt:
 
 ![Ubika vrack](images/dns-vrack.png){.thumbnail}
 
@@ -403,6 +403,6 @@ ubika-test-webserver-1
 
 ## Weiterführende Informationen
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern..
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Treten Sie unserer [User Community](/links/community) bei.
