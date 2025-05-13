@@ -203,13 +203,11 @@ L'ajout de votre application Entra ID en tant que fournisseur d'identité approu
 
 #### Établir la confiance OVHcloud
 
-Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identity & Access Management`{.action}.
+Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identitées`{.action}.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Cliquez ensuite sur l'onglet `Identités`{.action} pour accéder à la gestion des utilisateurs locaux.
-
-![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+Cliquez ensuite sur l'onglet `SSO`{.action}. et le bouton `Connexion SSO`{.action}.
 
 Cliquez alors sur le bouton `Connexion SSO`{.action}.
 
@@ -239,7 +237,7 @@ Pour résoudre cette situation, vérifiez l'attribut «Group» retourné par vot
 
 ![Entra ID Group étape 2](images/azure_ad_group_2.png){.thumbnail}
 
-Ajoutez-le en cliquant sur le bouton `Declarer un groupe`{.action}.
+Ajoutez-le dans la section `Identitées`{.action} et dans l'onglet `Groupes d'utilisateurs`{.action} en cliquant sur le bouton `Déclarer un groupe`{.action} et en remplissant les champs :
 
 ![Groupes de gestion des utilisateurs Ovhcloud étape 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 

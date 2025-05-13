@@ -81,13 +81,11 @@ Votre service Google Workspace fait désormais confiance à OVHcloud en tant que
 
 L'ajout de votre Google workspace en tant que fournisseur d'identité de confiance s'effectue dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) où vous pouvez fournir les métadonnées du fournisseur d'identité.
 
-Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identity & Access Management`{.action}.
+Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identitées`{.action}.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Cliquez ensuite sur l'onglet `Identités`{.action} pour accéder à la gestion des utilisateurs locaux.
-
-![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+Cliquez ensuite sur l'onglet `SSO`{.action}. et le bouton `Connexion SSO`{.action}.
 
 Cliquez sur le bouton `Connexion SSO`{.action}.
 
@@ -141,7 +139,7 @@ Vous devez ensuite attribuer des **rôles** à ces groupes d'utilisateurs chez O
 
 ![Configuration des groupes d'utilisateur](images/google_workspace_web_mobile_setup_groups.png){.thumbnail}
 
-Depuis votre espace client OVHcloud, ajoutez un groupe en cliquant sur le bouton `Déclarer un groupe`{.action} et en remplissant les champs :
+Depuis votre espace client OVHcloud, ajoutez un groupe dans la section `Identitées`{.action} et dans l'onglet `Groupes d'utilisateurs`{.action} en cliquant sur le bouton `Déclarer un groupe`{.action} et en remplissant les champs :
 
 - **Nom de groupe** : nom du groupe au sein de Google Workspace
 - **Privilège** : niveau de droit accordé à ce groupe

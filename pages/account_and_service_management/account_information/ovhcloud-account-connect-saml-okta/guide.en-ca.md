@@ -80,11 +80,11 @@ Your Okta service now trusts OVHcloud as a service provider. The next step is to
 
 To add Okta as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then `Identities`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Then click on the `Identities`{.action} tab to access local users management.
+Then click on the `SSO`{.action} tab and on the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Your Okta service is now considered a trusted identity provider. However, you st
 
 You must then assign **roles** to Okta user groups at OVHcloud. Otherwise, your OVHcloud account does not know what the user is allowed to do and, by default, no rights are assigned.
 
-From the OVHcloud Control Panel, add a group by clicking the `Declare a group`{.action} button and filling in the fields:
+From the OVHcloud control pannel add a group on the section `Identities`{.action} and on the tab `User groups`{.action} by clicking on the `Declare a group`{.action} button and filling in the fields:
 
 - **Group name**: Group name within Okta
 - **Role**: Level of rights granted to this group

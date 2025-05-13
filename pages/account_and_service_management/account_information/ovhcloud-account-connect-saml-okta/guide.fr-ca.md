@@ -80,13 +80,11 @@ Votre service Okta fait désormais confiance à OVHcloud en tant que prestataire
 
 Pour ajouter Okta en tant que fournisseur d'identité de confiance, vous devez fournir les métadonnées du fournisseur d'identité dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
-Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identity & Access Management`{.action}.
+Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action} puis sur `Identitées`{.action}.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Cliquez ensuite sur l'onglet `Identités`{.action} pour accéder à la gestion des utilisateurs locaux.
-
-![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+Cliquez ensuite sur l'onglet `SSO`{.action}. et le bouton `Connexion SSO`{.action}.
 
 ![Connexion SSO OVHcloud étape 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
@@ -118,7 +116,7 @@ Votre service Okta est désormais considéré comme un fournisseur d'identité d
 
 Vous devez à présent attribuer des **rôles** aux groupes d'utilisateurs Okta chez OVHcloud. Dans le cas contraire, votre compte OVHcloud ne sait pas ce que l'utilisateur est autorisé à faire et, par défaut, aucun droit n'est attribué.
 
-Depuis votre espace client, ajoutez un groupe en cliquant sur le bouton `Déclarer un groupe`{.action} et en remplissant les champs :
+Depuis votre espace client, ajoutez un groupe dans la section `Identitées`{.action} et dans l'onglet `Groupes d'utilisateurs`{.action} en cliquant sur le bouton `Déclarer un groupe`{.action} et en remplissant les champs :
 
 - **Group name** : Nom du groupe dans Okta
 - **Role**: Niveau de droits accordés à ce groupe

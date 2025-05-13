@@ -81,11 +81,11 @@ Your Google Workspace service now trusts OVHcloud as a service provider. The nex
 
 To add Google workspace as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then `Identities`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Then click on the `Identities`{.action} tab to access local users management.
+Then click on the `SSO`{.action} tab and on the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -141,7 +141,7 @@ You must then assign **roles** to these user groups at OVHcloud. Otherwise, your
 
 ![Configuring user groups](images/google_workspace_web_mobile_setup_groups.png){.thumbnail}
 
-From the OVHcloud Control Panel, add a group by clicking the `Declare a group`{.action} button and filling in the fields:
+From the OVHcloud control pannel add a group on the section `Identities`{.action} and on the tab `User groups`{.action} by clicking on the `Declare a group`{.action} button and filling in the fields:
 
 - **Group name**: Group name within Google Workspace
 - **Role**: Level of rights granted to this group

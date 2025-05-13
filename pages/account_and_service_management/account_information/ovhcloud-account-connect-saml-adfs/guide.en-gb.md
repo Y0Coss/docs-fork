@@ -121,11 +121,11 @@ With the mapping completed, your AD FS now trusts OVHcloud as a service provider
 
 Adding your AD FS as a trusted identity provider is done in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) where you can provide the identity provider metadata.
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then `Identities`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Then click on the `Identities`{.action} tab to access local users management.
+Then click on the `SSO`{.action} tab and on the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -186,7 +186,7 @@ You can also verify this in the SAML assertion:
 
 This means that you need to add the `manager@<my-domain>.com` group to your OVHcloud account, attaching a role to it. Otherwise, your OVHcloud account wouldn't know what is the user allowed to do.
 
-Add it by clicking on the `Declare a group`{.action} button and filling in the fields:
+Add it on the section `Identities`{.action} and on the tab `User groups`{.action} by clicking on the `Declare a group`{.action} button and filling in the fields:
 
 ![AD FS user management groups](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 

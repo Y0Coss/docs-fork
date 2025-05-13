@@ -203,11 +203,11 @@ Adding your Entra ID application as a trusted identity provider is done in the [
 
 #### Establish OVHcloud trust
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then `Identity & Access Management`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then `Identities`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Then click on the `Identities`{.action} tab to access local users management.
+Then click on the `SSO`{.action} tab and on the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -239,7 +239,7 @@ To resolve this, check the "Group" attribute that your Entra ID application retu
 
 ![Entra ID Group step 2](images/azure_ad_group_2.png){.thumbnail}
 
-Add it by clicking on the `Declare a group`{.action}.
+Add it on the section `Identities`{.action} and on the tab `User groups`{.action} by clicking on the `Declare a group`{.action} button and filling in the fields:
 
 ![Ovhcloud user management groups step 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
