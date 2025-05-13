@@ -26,31 +26,31 @@ Vous venez de recevoir un e-mail de la part d'OVHcloud vous précisant qu'une ac
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Sur la page qui s'affiche, vous trouverez, dans le cadre **Abonnement**, la mention **Contacts**. Cliquez sur le bouton `...`{.action} à droite puis sur `Gérer les contacts`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
 >>
-> **Etape 4**
+> **Étape 4**
 >>
 >> Sur la nouvelle page, rendez-vous dans le cadre **Titulaire**, puis cliquez sur le bouton `Modifier`{.action}.
 >>
 >> ![Manage contacts and owners](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-and-owners.png){.thumbnail}
 >>
-> **Etape 5**
+> **Étape 5**
 >>
 >> > [!warning]
 >> >
@@ -74,25 +74,25 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Opérations en cours`{.action}, puis retrouvez, dans la liste qui s'affiche, le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
 >> Cliquez sur le bouton en forme de `...`{.action} alignés verticalement, puis sur `Modifier l'opération`{.action}.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
 >>
-> **Etape 4**
+> **Étape 4**
 >>
 >> Dans la fenêtre qui s'ouvre, cochez le choix `Relancer l'opération`{.action}, puis sur `Confirmer`{.action}.
 >>
