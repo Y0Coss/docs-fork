@@ -201,7 +201,7 @@ print("Welcome", client.get('/me')['firstname'])
 
 #### Lister et révoquer vos clés
 
-Pour lister et révoquer les clés, il est possible soit d'utiliser l'Espace Client dans le menu `Identité, Sécurité & Opérations`{.action} puis `Clés API`{.action} soit d'utiliser le portail API :
+Pour lister et révoquer les clés, il est possible soit d'utiliser l'[Espace Client](/links/manager) dans le menu `Identité, Sécurité & Opérations`{.action} puis `Clés API`{.action} soit d'utiliser le portail API :
 
 ![API keys manager](images/api-keys-manager.png){.thumbnail}
 
