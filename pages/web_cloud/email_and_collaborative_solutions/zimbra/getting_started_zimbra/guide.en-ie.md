@@ -35,7 +35,7 @@ With the Zimbra solution, OVHcloud offers an open-source collaborative messaging
 1. Open the `Web Cloud`{.action} section.
 1. Click `Zimbra Mail`{.action}.
 
-![zimbra](images/zimbra_general_information.png){.thumbnail .w-400}
+![zimbra](images/zimbra_general_information.png){.thumbnail .w-500}
 
 ### Configure your Zimbra service
 
@@ -51,19 +51,19 @@ Before you start configuring your Zimbra email accounts, take note of the three 
 
 The diagram below summarizes the hierarchical link between the above-mentioned elements.
 
-![zimbra](images/zimbra_organization.png){.thumbnail .w-400}
+![zimbra](images/zimbra_organization.png){.thumbnail .w-500}
 
 ### Organizations <a name="organizations"></a>
 
 If you are adding a large number of domain names to your Zimbra service, it may be useful to group them together by associating them with an "Organization". From your Zimbra service, click `Organization`{.action}.
 
-![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-400}
+![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-500}
 
 #### Create an organization
 
 To create an organization, click `Add Organization`{.action}. Define the `Name` of the organization and the `Label of the organization`, the latter being a short description of the organization allowing you to find your way when you filter the display of domain names and email accounts of your Zimbra service.
 
-![zimbra](images/zimbra_organization_add.png){.thumbnail .w-400}
+![zimbra](images/zimbra_organization_add.png){.thumbnail .w-500}
 
 #### Filter by organization
 
@@ -73,7 +73,7 @@ You can see that the filter is applied when the label appears next to the name o
 
 To remove the filter, simply click on the cross of the filter.
 
-![zimbra](images/zimbra_organization_filter.png){.thumbnail .w-400}
+![zimbra](images/zimbra_organization_filter.png){.thumbnail .w-500}
 
 ### Domains <a name="domains"></a>
 
@@ -88,7 +88,7 @@ The domain name table gives you two pieces of information:
 - **Organization**: It is determined when you add your domain name. You will automatically find its label in this column.
 - **Number of accounts**: Here, you can find all of the accounts created under the domain name concerned.
 
-![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-400}
+![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-500}
 
 #### Add a domain name
 
@@ -110,7 +110,7 @@ Select the tab that corresponds to your choice:
 >>
 >> Select a managed domain name from the list in your OVHcloud Control Panel.
 >>
->> ![zimbra](images/zimbra_domain_add_internal01.png){.thumbnail .w-400 .h400}
+>> ![zimbra](images/zimbra_domain_add_internal01.png){.thumbnail .w-500}
 >>
 >> To configure your DNS zone, select one of the following two options:
 >>
@@ -120,7 +120,7 @@ Select the tab that corresponds to your choice:
 >>    - *Configure the SPF record automatically*: This allows you to enter the record automatically, authorizing the OVHcloud sending email servers to send your emails. This registration is valid for all OVHcloud email solutions.
 >>    - *Configure the DKIM record automatically*: it allows you to automatically enter the records required to authenticate your email sending.
 >>
->> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-400 .h400}
+>> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-500}
 >>
 >> Click `Confirm`{.action} to finish adding your domain and start the configuration process.
 >>
@@ -130,11 +130,11 @@ Select the tab that corresponds to your choice:
 >>
 >> Then click `Confirm`{.action}
 >>
->> ![zimbra](images/zimbra_domain_add_external01.png){.thumbnail .w-400 .h400}
+>> ![zimbra](images/zimbra_domain_add_external01.png){.thumbnail .w-500}
 >>
 >> The window below will open. You will need to enter this CNAME record in the domain name’s DNS zone, so that it can be validated on your Zimbra platform.
 >>
->> ![zimbra](images/zimbra_domain_add_external02.png){.thumbnail .w-400 .h400}
+>> ![zimbra](images/zimbra_domain_add_external02.png){.thumbnail .w-500}
 >>
 >> > [!warning]
 >>>
@@ -146,7 +146,7 @@ You can modify your domain name to change its organization or to check its assoc
 
 In the `Domain`{.action} tab of your Zimbra service, click on the "&#8285;" icon to the right of the domain name concerned to display the options.
 
-![zimbra](images/zimbra_domain_modify01.png){.thumbnail .w-400 .h400}
+![zimbra](images/zimbra_domain_modify01.png){.thumbnail .w-500}
 
 - Click `Configure`{.action} to modify the organization associated with your domain name.
 - Click `Diagnostics`{.action} to display the diagnostic interface for the domain name DNS records. You will need to ensure that no alerts are displayed for each of the DNS records listed in the tabs. Follow the instructions detailed in each tab with an alert to configure the DNS records:
@@ -154,7 +154,7 @@ In the `Domain`{.action} tab of your Zimbra service, click on the "&#8285;" icon
     - **SPF**: Security record that is required by the majority of recipient email servers to legitimize OVHcloud email sending servers with your domain name.
     - **DKIM**: Provides a signature system for each email sent by your Zimbra service. The signature is verified by the recipient using the public key visible in your DNS zone.
 
-![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-400 .h400}
+![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
 
 ### Email accounts <a name="emails"></a>
 
@@ -166,7 +166,7 @@ You can manage your Zimbra service email addresses from the `Email accounts`{.ac
 
 At the top of this page, you will also find a link to [Webmail](/links/web/email), so that you can log in directly to the content of your email account via your web browser.
 
-![zimbra](images/zimbra_emailaccounts_tab.png){.thumbnail .w-400}
+![zimbra](images/zimbra_emailaccounts_tab.png){.thumbnail .w-500}
 
 #### Create an email account
 
@@ -202,7 +202,7 @@ Fill in the information displayed.
 
 Click `Confirm`{.action} to start creating the account.
 
-![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-400}
+![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
 ### View your email account <a name="mail-consult"></a>
 
