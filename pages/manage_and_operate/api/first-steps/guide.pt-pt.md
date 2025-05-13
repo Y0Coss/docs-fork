@@ -235,7 +235,7 @@ Para listar e revogar as chaves, é possível utilizar o [portal API](/links/api
 >>
 >> Aceda ao menu `Identidade, Segurança & Operações`{.action} e, a seguir, `Chaves API`{.action}.
 >>
->>![API keys manager](images/api-keys-manager.png){.thumbnail}
+>> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>
 
 ## Saiba mais <a name="gofurther"></a>
