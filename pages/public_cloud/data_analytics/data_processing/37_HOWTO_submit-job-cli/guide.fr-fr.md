@@ -1,12 +1,12 @@
 ---
 title: How to submit a job on the Data Processing platform using the CLI
 excerpt: Find out how to run your Apache Spark job with the Data Processing platform using the CLI
-updated: 2022-10-11
+updated: 2025-05-13
 ---
 
 > [!warning]
 >
->  Important Notice – End of Life (EOL)
+> **Important Notice – End of Life (EOL)**
 > 
 > OVHcloud Data Processing will reach End of Life on June 30, 2025.
 > 

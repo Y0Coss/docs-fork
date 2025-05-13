@@ -1,12 +1,12 @@
 ---
 title: Apache Spark Overview
 excerpt: Introduction to Apache Spark 
-updated: 2020-03-06
+updated: 2025-05-13
 ---
 
 > [!warning]
 >
->  Important Notice – End of Life (EOL)
+> **Important Notice – End of Life (EOL)**
 > 
 > OVHcloud Data Processing will reach End of Life on June 30, 2025.
 > 

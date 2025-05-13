@@ -1,12 +1,12 @@
 ---
 title: Checking a job's logs 
 excerpt: Find out how to get your job's logs while the job is running or after it is finished 
-updated: 2021-07-14
+updated: 2025-05-13
 ---
 
 > [!warning]
 >
->  Important Notice – End of Life (EOL)
+> **Important Notice – End of Life (EOL)**
 > 
 > OVHcloud Data Processing will reach End of Life on June 30, 2025.
 > 

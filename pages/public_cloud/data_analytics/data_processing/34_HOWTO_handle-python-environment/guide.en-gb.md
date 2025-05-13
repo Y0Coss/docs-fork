@@ -1,12 +1,12 @@
 ---
 title: How to generate environment file for Python jobs
 excerpt: Find out how to create your Python environment and export it as an environment file.
-updated: 2020-05-04
+updated: 2025-05-13
 ---
 
 > [!warning]
 >
->  Important Notice – End of Life (EOL)
+> **Important Notice – End of Life (EOL)**
 > 
 > OVHcloud Data Processing will reach End of Life on June 30, 2025.
 > 

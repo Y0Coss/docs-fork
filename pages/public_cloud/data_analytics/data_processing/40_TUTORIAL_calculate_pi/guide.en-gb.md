@@ -1,12 +1,12 @@
 ---
 title: Python - Calculating π number with Apache Spark
 excerpt: Calculting π number is a basic example about how to use Apache Spark. Let’s find out how to do it !
-updated: 2021-01-20
+updated: 2025-05-13
 ---
 
 > [!warning]
 >
->  Important Notice – End of Life (EOL)
+> **Important Notice – End of Life (EOL)**
 > 
 > OVHcloud Data Processing will reach End of Life on June 30, 2025.
 > 

@@ -1,12 +1,12 @@
 ---
 title: Python - Analyzing most used words in lyrics with Apache Spark
 excerpt: Couting occurences of words in a file is a basic example about how using Apache Spark. Let's find out how !
-updated: 2021-01-20
+updated: 2025-05-13
 ---
 
 > [!warning]
 >
->  Important Notice – End of Life (EOL)
+> **Important Notice – End of Life (EOL)**
 > 
 > OVHcloud Data Processing will reach End of Life on June 30, 2025.
 > 

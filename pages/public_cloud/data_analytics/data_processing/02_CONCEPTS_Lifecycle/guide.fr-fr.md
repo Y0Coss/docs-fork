@@ -1,12 +1,12 @@
 ---
 title: Data Processing End-of-Support and End-of-Life policies
 excerpt: Find out what are the current lifecycle policy of the OVHcloud Data Processing Platform 
-updated: 2023-09-18
+updated: 2025-05-13
 ---
 
 > [!warning]
 >
->  Important Notice – End of Life (EOL)
+> **Important Notice – End of Life (EOL)**
 > 
 > OVHcloud Data Processing will reach End of Life on June 30, 2025.
 > 

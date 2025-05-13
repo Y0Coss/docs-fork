@@ -1,12 +1,12 @@
 ---
 title: Python - How to use Object Storage with Apache Spark on the Data Processing platform
 excerpt: OpenStack Swift and its S3* compatible API is a common way to store the data you want to use for your Apache Spark jobs. Let's find out how to do it in Python!
-updated: 2021-01-20
+updated: 2025-05-13
 ---
 
 > [!warning]
 >
->  Important Notice – End of Life (EOL)
+> **Important Notice – End of Life (EOL)**
 > 
 > OVHcloud Data Processing will reach End of Life on June 30, 2025.
 > 

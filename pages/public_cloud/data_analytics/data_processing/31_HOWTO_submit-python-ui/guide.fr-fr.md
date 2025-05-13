@@ -1,12 +1,12 @@
 ---
 title: How to submit a Python job on the Data Processing platform using the OVHcloud manager
 excerpt: Find out how to create a cluster and run your Apache Spark Python job with Data Processing platform using the OVHcloud manager
-updated: 2020-05-04
+updated: 2025-05-13
 ---
 
 > [!warning]
 >
->  Important Notice – End of Life (EOL)
+> **Important Notice – End of Life (EOL)**
 > 
 > OVHcloud Data Processing will reach End of Life on June 30, 2025.
 > 
