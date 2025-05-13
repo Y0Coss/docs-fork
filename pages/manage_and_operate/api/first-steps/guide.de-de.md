@@ -204,28 +204,38 @@ print("Welcome", client.get('/me')['firstname'])
 
 #### Schlüssel auflisten und widerrufen
 
-Es gibt derzeit keine Option im Kundencenter, mit der Sie Ihre Schlüssel auflisten und widerrufen können. Dazu kann das API-Portal verwendet werden:
+Um Schlüssel aufzulisten und zu widerrufen, können Sie das [API-Portal](/links/api) oder das [OVHcloud Kundencenter](/links/manager) verwenden:
 
-- Erhalten Sie die Schlüssel-IDs mit dem folgenden Aufruf:
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application
->
-
-- Erhalten Sie die Schlüsseldetails mit dem folgenden Aufruf:
-
-> [!api]
->
-> @api {v1} /me GET /me/api/application/{applicationId}
->
-
-- Widerrufen Sie einen Schlüssel mit dem folgenden Aufruf:
-
-> [!api]
->
-> @api {v1} /me DELETE /me/api/application/{applicationId}
->
+> [!tab]
+> API-Portal verwenden
+>>
+>> - Listet die Schlüssel-IDs mit dem folgenden Aufruf auf:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me GET /me/api/application
+>> >
+>>
+>> - Mit dem folgenden Anruf erhalten Sie wichtige Informationen:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me GET /me/api/application/{applicationId}
+>> >
+>>
+>> - Sperrt einen Schlüssel mit dem folgenden Aufruf:
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /me DELETE /me/api/application/{applicationId}
+>> >
+>>
+> Im OVHcloud Kundencenter
+>>
+>> Gehen Sie zum Menü `Identität, Sicherheit und Operationen`{.action} und danach zu `API-Schlüssel`{.action}.
+>>
+>> ![API keys manager](images/api-keys-manager.png){.thumbnail}
+>>
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
