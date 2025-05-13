@@ -244,7 +244,7 @@ Managed-2 UWG
 
 ![Ubika vrack](images/default-gateway-2.png){.thumbnail}
 
-Erstellen Sie eine hoch verfügbare Aktive/Passiv Konfiguration (`Setup` > `High Availability` > `Add`):
+Erstellen Sie eine hoch verfügbare Aktiv/Passiv Konfiguration (`Setup` > `High Availability` > `Add`):
 
 ![Ubika vrack](images/ha-1.png){.thumbnail}
 
