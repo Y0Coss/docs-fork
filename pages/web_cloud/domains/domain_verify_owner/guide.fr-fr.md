@@ -66,6 +66,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 
 ### 2 - Relancer l'opération de vérification des coordonnées/informations de contact du titulaire du nom de domaine
 
+> [!warning]
+>
+> Si, lors de la première partie de ce guide, les corrections ont nécessité l'initialisation d'un changement de titualire pour le nom de domaine. Finaliser d'abord le changement de titulaire **avant** de poursuivre les actions décrites dans le présent guide.
+>
+
 Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -92,6 +97,12 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >> Dans la fenêtre qui s'ouvre, cochez le choix `Relancer l'opération`{.action}, puis sur `Confirmer`{.action}.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
+
+Quelques minutes sont nécessaires pour finaliser l'opération. Actualisez la page `Opérations sur mes noms de domaine` où se trouvait l'opération de correction du contact pour votre nom de domaine.
+
+Si l'opération s'est terminée avec succès, la ligne relative à l'opération traitée n'apparaît plus. 
+
+Le cas échéant, cela signifie qu'une correction est toujours nécessaire au niveau des coordonnées du titulaire du nom de domaine. Dans ce cas, reprenez depuis le début le présent guide pour corriger la situation.
 
 ## Aller plus loin
 
