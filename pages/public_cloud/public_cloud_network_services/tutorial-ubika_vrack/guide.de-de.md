@@ -118,7 +118,7 @@ openstack router add subnet 2481bcaf-efa2-419a-ad92-d6d27737dfd1 ubika-workload
 
 UWG Image auf OpenStack hochladen:
 
-Gehen Sie in den Bereich `Download`{.action} auf der [offiziellen Website von Ubika](https://my.ubikasec.com/){.external}. Melden Sie sich bei Ihrem Ubika-Konto an und folgen Sie den Anweisungen zum Herunterladen des UWG OpenStack-Images.
+Gehen Sie in den Bereich `Download`{.action} auf der [offiziellen Website von Ubika](https://my.ubikasec.com/){.external}. Loggen Sie sich in Ihren Ubika-Account ein und folgen Sie den Anweisungen zum Herunterladen des UWG OpenStack Images.
 
 Gehen Sie in den Ordner, in den Sie Ihr UWG OpenStack Image hochgeladen haben, und importieren Sie das UWG OpenStack Image (für diese Anleitung verwenden wir das Image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`):
 
@@ -226,21 +226,21 @@ Zweite Instanz hinzufügen:
 
 Fügen Sie dem `eth1` Interface jeder verwalteten UWG Instanz ein virtuelles Interface hinzu und konfigurieren Sie es mit einer IP Ihres IP-Blocks anstelle der privaten IP (`Setup` > `Networking` > `IP Addresses`).
 
-Managed-1 UWG
+Managed-1 UWG:
 
 ![Ubika vrack](images/virtual-interface-1.png){.thumbnail}
 
-Managed-2 UWG
+Managed-2 UWG:
 
 ![Ubika vrack](images/virtual-interface-2.png){.thumbnail}
 
 Entfernen Sie das Standard-Gateway und fügen Sie das vRack Gateway für jedes verwaltete Ubika hinzu (`Setup` > `Networking` > `Routes`).
 
-Managed-1 UWG
+Managed-1 UWG:
 
 ![Ubika vrack](images/default-gateway-1.png){.thumbnail}
 
-Managed-2 UWG
+Managed-2 UWG:
 
 ![Ubika vrack](images/default-gateway-2.png){.thumbnail}
 
@@ -264,14 +264,14 @@ Konfiguration anwenden (Button oben rechts im Interface):
 
 ### Lizenzen konfigurieren
 
-Die Ubika WAAP Gateway Lizenzen sind über die [offizielle Website von Ubika](https://my.ubikasec.com/){.external} verfügbar. Abhängig von Ihren Bereitstellungsanforderungen können Sie zwischen einer einzelnen VM-Lizenz oder einer High Availability-Lizenz wählen, die eine Active Backup-Konfiguration mit zwei Data-Plane-Instanzen und einer oder mehreren Control-Plane-Instanzen unterstützt.  
+Die Ubika WAAP Gateway Lizenzen sind über die [offizielle Website von Ubika](https://my.ubikasec.com/){.external} verfügbar. Abhängig von Ihren Bereitstellungsanforderungen können Sie zwischen einer einzelnen VM Lizenz oder einer High Availability Lizenz wählen, die eine Active Backup Konfiguration mit zwei Data Plane Instanzen und einer oder mehreren Control Plane Instanzen unterstützt.  
 Die Lizenzen variieren auch abhängig vom TPS SSL (Transaktionen pro Sekunde), wobei mehrere SSL-Zertifikate oder Failover-Funktionen unterstützt werden.
 
 Es wird dringend empfohlen, die neuesten Generationen von Compute-Instanzen für Appliance-Bereitstellungen zu verwenden. Beispiel:
 
-- C3-8 für grundlegende Anforderungen und VMcloud Lizenzen.
-- C3-16, C3-32, C3-64 bzw. C3-128 für die Lizenzen Ubika Enterprise Edition 1500, 2450, 4450, 5450 und 6450.
-- C3-16 für die kleine MGMT-Konsole oder C3-128 für die große MGMT-Konsole (abhängig von den aktivierten Beobachtungsoptionen).
+- C3-8 für grundlegende Anforderungen und VMcloud Lizenzen
+- C3-16, C3-32, C3-64 bzw. C3-128 für die Lizenzen Ubika Enterprise Edition 1500, 2450, 4450, 5450 und 6450
+- C3-16 für die kleine MGMT-Konsole oder C3-128 für die große MGMT-Konsole (abhängig von den aktivierten Beobachtungsoptionen)
 
 Um die Lizenzen anzuwenden, müssen Sie UWG die folgenden Informationen bereitstellen:
 
