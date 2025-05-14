@@ -12,7 +12,7 @@ Das [vRack](/links/network/vrack) ist ein privates Netzwerk, mit dem Sie das Rou
 
 ## Voraussetzungen
 
-- Sie besitzen ein [vRack](/links/network/vrack).
+- Sie haben ein [vRack](/links/network/vrack) in Ihrem Kunden-Account.
 - Sie haben [einen IP-Adressblock im vRack eingerichtet](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
 - Sie verfügen über fortgeschrittene Netzwerkkenntnisse.
 
@@ -43,7 +43,7 @@ Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse aktuell in **Rou
 
 ### Schritt 2: IP-Block-Ankündigung ändern
 
-Gehen Sie auf den Link <https://api.ovh.com/console/> und loggen Sie sich mit Ihrer OVHcloud Kundenkennung ein. Verwenden Sie die nachstehenden API-Aufrufe, um die IP-Block-Ankündigung zu bearbeiten.
+Öffnen Sie die [API-Konsole](/links/console) und loggen Sie sich mit Ihrer OVHcloud Kundenkennung ein. Verwenden Sie die nachstehenden API-Aufrufe, um die IP-Block-Ankündigung zu bearbeiten.
 
 > [!api]
 >
@@ -62,8 +62,8 @@ Mit diesem API-Aufruf können Sie die IP-Block-Ankündigung ändern. Füllen Sie
 |Feld|Beschreibung|
 |---|---|
 |serviceName|Geben Sie den Namen des betreffenden vRack Dienstes ein. Zum Beispiel: `pn-12345`.|
-|"block":|Geben Sie den Namen des betreffenden IP-Blocks ein. Achten Sie darauf, nicht nur die im vorherigen Schritt getestete IP-Adresse, sondern den gesamten IP-Block anzugeben. Zum Beispiel: `192.0.2.0/24`.|
-|"region":|Wählen Sie die neue Ankündigungszone des IP-Blocks aus. Achten Sie darauf, nicht dieselbe Ankündigungszone anzugeben, die im vorherigen Schritt ermittelt wurde. Zum Beispiel: `bexxx.gra-d1-a75.fr.eu`.|
+|block|Geben Sie den Namen des betreffenden IP-Blocks ein. Achten Sie darauf, nicht nur die im vorherigen Schritt getestete IP-Adresse, sondern den gesamten IP-Block anzugeben. Zum Beispiel: `192.0.2.0/24`.|
+|region|Wählen Sie die neue Ankündigungszone des IP-Blocks aus. Achten Sie darauf, nicht dieselbe Ankündigungszone anzugeben, die im vorherigen Schritt ermittelt wurde. Zum Beispiel: `bexxx.gra-d1-a75.fr.eu`.|
 
 ![vrack zone](images/vrack_announcement_zone.png){.thumbnail}
 
