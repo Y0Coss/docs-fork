@@ -164,7 +164,7 @@ Remplacez les espaces réservés par les détails de votre service :
 
 > [!primary]
 >
-> Note : la quantité se réfère au nombre d'unités que vous souhaitez ajouter, et non au nombre total d'unités que vous souhaitez obtenir.
+> Note : La quantité fait référence au nombre d'unités que vous voulez au total, et non au nombre d'unités que vous voulez ajouter.
 >
 > Par exemple, si votre cluster dispose actuellement d'une capacité de stockage de 3 To et que vous souhaitez l'augmenter à 6 To, vous devez définir la quantité = 2 (et non 1).
 >

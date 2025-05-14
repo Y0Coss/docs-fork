@@ -165,7 +165,7 @@ Replace the placeholders with your service details:
 
 > [!primary]
 >
-> Note: quantity refers to how many units you want to add, not how many total units you want to end up with.
+> Note: quantity refers to how many units you want in total, not how many units you want to add.
 >
 > For example, if your cluster currently has 3 TB of storage and you want to increase it to 6 TB, you need to set quantity = 2 (not 1).
 >
