@@ -282,6 +282,47 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 >> Si besoin, consultez notre guide « [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics) » pour plus d'informations.
 
+### Visualiser les logs du CDN
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}. 
+>> 
+> **Etape 4**
+>>
+>> Dans la partie `Logs du site web`, cliquez sur le bouton `Voir les logs`{.action}.
+>>
+> **Etape 5**
+>>
+>> Sur la nouvelle page qui s'affiche, cliquez sur le bouton `CDN`{.action} présent dans le bandeau en haut de page.
+>>
+>> 
+>>
+> **Etape 6**
+>>
+>> Sur la nouvelle page qui apparaît, cliquez sur l'onglet `Cache`{.action}.
+>>
+>>
+>>
+>> Vous visualisez désormais les logs du CDN pour votre nom de domaine.
+>>
+>> Si besoin, consultez notre guide « [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics) » pour plus d'informations.
+
 ### Comment mettre en cache mes fichiers dans le CDN ?
 
 **En utilisant un CMS**
