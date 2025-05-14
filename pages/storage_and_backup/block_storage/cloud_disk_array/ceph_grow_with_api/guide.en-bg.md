@@ -154,7 +154,7 @@ Replace the placeholders with your service details:
 - planCode: Your current CDA plan code — either:
     - storage-2tb (legacy configuration with HDD + NVMe)
     - cda-3tb (new generation with full NVMe)
-- quantity: The number of additional units you want to provision (1–24). Each unit adds 2 TB of storage via 3 new OSDs. For example:
+- quantity: The number of additional units you want to provision (1–24). For example:
 
 | Quantity | Total added capacity   |
 | -------- | ---------------------- |
@@ -162,6 +162,15 @@ Replace the placeholders with your service details:
 | 2        | 4 TB (6 x 2TB disks)   |
 | ...      | ...                    |
 | 24       | 48 TB (72 x 2TB disks) |
+
+> [!primary]
+>
+> Note: quantity refers to how many units you want to add, not how many total units you want to end up with.
+>
+> For example, if your cluster currently has 3 TB of storage and you want to increase it to 6 TB, you need to set quantity = 2 (not 1).
+>
+> Similarly, if your cluster has 9 TB and you want to grow it to 12 TB, you need to set quantity = 4.
+>
 
 **Step 3: Retrieve the Payment Link**
 
