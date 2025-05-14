@@ -176,7 +176,7 @@ Zmiana nie będzie widoczna bezpośrednio w [Panelu klienta OVHcloud](/links/man
 > Czas propagacji wynosi od 4 do 24 godzin, aby zmiany w strefie DNS były brane pod uwagę w całej sieci DNS.
 >
 
-Aby lepiej zrozumieć ten ostatni etap, skorzystaj z nazwy domeny *domain.tld* i jej strefy DNS w trybie "tekstowym" widocznym na powyższym obrazie.
+Aby lepiej zrozumieć ten etap, skorzystaj z nazwy domeny *domain.tld* i jej strefy DNS w trybie "tekstowym" widocznym na powyższym obrazie.
 
 W sprawozdaniu tym znajdują się następujące elementy: 
 
@@ -184,7 +184,7 @@ W sprawozdaniu tym znajdują się następujące elementy:
 - istnieją dwa rekordy typu *NS* dla domeny *domain.tld*;
 - rekordy typu *NS* są nadal skierowane do obu serwerów DNS **dnsX1.ovh.net** i **dnsX2.ovh.net**.
 
-Aby dokończyć personalizację serwerów DNS dla domeny *domain.tld*, należy:
+Aby kontynuować personalizację serwerów DNS dla domeny *domain.tld*, musisz:
 
 - zwiększenie pierwszej wartości liczbowej linii *SOA* o "1": *202307170**1*** (należy zauważyć, że jeżeli pierwsza wartość liczbowa będzie następująca:*2023071704*, to zawsze będzie się zwiększać o "1" i wtedy uzyska się następujący wynik: *202307170**5*** );
 - wymienić cel **dnsX1.ovh.net.** na **dns1.domain.tld.** tylko dla linii rozpoczynającej się od **IN NS**;

@@ -175,7 +175,7 @@ Die Änderung wird nicht sofort im [OVHcloud Kundencenter](/links/manager) sicht
 > Es ist eine Propagationszeit von 4 bis 24 Stunden erforderlich, damit die Änderungen in der DNS-Zone im gesamten DNS-Netzwerk berücksichtigt werden.
 >
 
-Um diesen letzten Schritt besser zu verstehen, folgen Sie unserem Beispiel mit *domain.tld* und der DNS-Zone im "Text"-Modus, wie in der Abbildung oben angezeigt.
+Um diesen Schritt besser zu verstehen, folgen Sie unserem Beispiel mit *domain.tld* und der DNS-Zone im "Text"-Modus, wie in der Abbildung oben angezeigt.
 
 Beachten Sie die folgenden Werte:
 
@@ -183,7 +183,7 @@ Beachten Sie die folgenden Werte:
 - Es gibt zwei Einträge vom Typ *NS* für den Domainnamen *domain.tld*.
 - Die Einträge vom Typ *NS* sind weiterhin auf die beiden DNS-Server **dnsX1.ovh.net** und **dnsX2.ovh.net** ausgerichtet.
 
-Um die Personalisierung der DNS-Server für *domain.tld* abzuschließen, führen Sie die nachfolgenden Schritte aus:
+Um die Anpassung der DNS Server für die Domain *domain.tld* fortzusetzen, müssen Sie:
 
 - Erhöhen Sie den ersten numerischen Wert der Zeile *SOA* um 1: *202307170**1**. (Wenn der erste numerische Wert *2023071704* ist, erhalten Sie das folgende Ergebnis: *202307170**5***).
 - Ersetzen Sie das Ziel **dnsX1.ovh.net.** durch **dns1.domain.tld.** nur für die Zeile, die mit **IN NS** beginnt.

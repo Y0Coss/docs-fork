@@ -176,7 +176,7 @@ A alteração não será imediatamente visível na [Área de Cliente OVHcloud](/
 > É necessário um prazo de propagação de 4 a 24 horas para que as alterações efetuadas na zona DNS sejam tomadas em conta em toda a rede DNS.
 >
 
-Para compreender melhor esta última etapa, retomemos o nosso exemplo com o nome de domínio *domain.tld* e a sua zona DNS em modo « texto » visível na imagem acima.
+Para compreender melhor esta etapa, retomemos o nosso exemplo com o nome de domínio *domain.tld* e a sua zona DNS em modo « texto » visível na imagem acima.
 
 São observados os seguintes elementos: 
 
@@ -184,7 +184,7 @@ São observados os seguintes elementos:
 - existem dois registos do tipo *NS* para o nome de domínio *domain.tld*;
 - os registos do tipo *NS* ainda visam os dois servidores DNS **dnsX1.ovh.net** e **dnsX2.ovh.net*.
 
-Para finalizar a personalização dos servidores DNS para o nome de domínio *domain.tld*, é preciso :
+Para continuar a personalizar os servidores DNS para o nome de domínio *domain.tld*, deverá:
 
 - incrementar de « 1 » o primeiro valor numérico da linha *SOA* : *202307170**1*** (tenha em conta que se o primeiro valor numérico fosse o seguinte:*2023071704*, aumentaria sempre de « 1 » e obteria-se o seguinte resultado: *202307170**5*** );
 - substituir o alvo **dnsX1.ovh.net.** por **dns1.domain.tld.** apenas para a linha que começa por **IN NS**;

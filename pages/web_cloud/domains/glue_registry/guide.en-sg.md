@@ -175,7 +175,7 @@ The change will not be visible immediately in the [OVHcloud Control Panel](/link
 > You will need to wait between 4 and 24 hours for the changes in your DNS zone to propagate across the entire DNS network.
 >
 
-To get a better understanding of this last step, let’s take a look at our example: The domain name *domain.tld* and its DNS zone in "text” mode, visible in the image above.
+To get a better understanding of this step, let’s take a look at our example: The domain name *domain.tld* and its DNS zone in "text” mode, visible in the image above.
 
 The following elements are observed: 
 
@@ -183,7 +183,7 @@ The following elements are observed:
 - There are two *NS* records for the domain name *domain.tld*.
 - Records of type *NS* still target the two DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**.
 
-To finalise the customisation of the DNS servers for the domain name *domain.tld*, you will need to:
+To continue the customisation of the DNS servers for the domain name *domain.tld*, you will need to:
 
 - Increment the first numeric value of the *SOA* line by "1": *202307170**1***. (If the first numeric value was *2023071704*, you would get the following result: *202307170**5***).
 - Replace the target **dnsX1.ovh.net.** with **dns1.domain.tld.** only for the line that starts with **IN NS**.
