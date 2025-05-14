@@ -1,7 +1,7 @@
 ---
 title: Como utilizar as políticas IAM a partir do seu Espaço Cliente
 excerpt: Descubra como dar direitos de acesso específicos aos utilizadores a partir de uma conta OVHcloud
-updated: 2025-05-12
+updated: 2025-05-14
 ---
 
 ## Objetivo
@@ -37,7 +37,7 @@ Por exemplo, podemos criar uma política para dar a um utilizador chamado John, 
 
 ### Aceder ao menu IAM
 
-Na barra lateral, clique em `Identidade, Segurança e Operações` {.action} e, a seguir, em `Identity & Access Management`{.action}.
+Na barra lateral, clique em `Identidade, Segurança e Operações`{.action} e, a seguir, em `Políticas`{.action}.
 
 ![Acesso ao menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Clique diretamente em [Criar uma política](#create-policy) ou em [Criar utiliza
 >
 > Os clientes não podem alterar ou eliminar estas políticas.
 
-Se já tiver criado políticas ou utilizadores, o menu apresenta a lista de todas as políticas em curso criadas na sua conta OVHcloud.
+Se já tiver criado políticas ou utilizadores, estes serão apresentados no primeiro separador `As minhas políticas`{.action}. O separador `Políticas da OVHcloud`{.action} agrupa as políticas não alteráveis criadas automaticamente pela OVHcloud.
 
 ![Acesso ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -147,7 +147,7 @@ Uma janela contextual irá pedir-lhe que confirme a eliminação.
 
 ### Gestão das identidades
 
-As identidades disponíveis para as políticas são geridas através do separador `Identidades`{.action}.
+Para gerir as identidades disponíveis para as políticas, aceda ao menu `Identidade, Segurança e Operações`{.action} e, a seguir, à secção `Identidades`{.action}.
 
 Encontre os detalhes da gestão dos utilizadores na [documentação dedicada](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
@@ -157,7 +157,7 @@ As políticas podem visar grupos de recursos (em vez de visarem diretamente recu
 
 #### Criar um grupo de recursos
 
-Para criar um grupo de recursos, aceda ao separador dedicado do menu IAM:
+Para criar um grupo de recursos, aceda à secção `Políticas`{.action} e clique no separador `Grupos de recursos`{.action} :
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 

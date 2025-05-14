@@ -121,7 +121,7 @@ With the mapping completed, your AD FS now trusts OVHcloud as a service provider
 
 Adding your AD FS as a trusted identity provider is done in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) where you can provide the identity provider metadata.
 
-On the sidebar, click `Identity, Security & Operations`{.action} then `Identities`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then on `Identities`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 

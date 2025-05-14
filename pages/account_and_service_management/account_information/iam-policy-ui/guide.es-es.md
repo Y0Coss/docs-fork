@@ -1,7 +1,7 @@
 ---
 title: Cómo utilizar las políticas IAM desde el área de cliente
 excerpt: Cómo conceder permisos de acceso específicos a los usuarios desde una cuenta de OVHcloud
-updated: 2025-05-12
+updated: 2025-05-14
 ---
 
 ## Objetivo
@@ -37,7 +37,7 @@ Por ejemplo, podemos crear una política para dar a un usuario llamado John, par
 
 ### Acceder al menú IAM
 
-En la barra lateral, haga clic en `Identidad, seguridad y operaciones`{.action} y, a continuación, en `Identity & Access Management`{.action}.
+En la barra lateral, haga clic en `Identidad, Seguridad y Operaciones`{.action} y luego en `Políticas`{.action}.
 
 ![Acceso al menú IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Haga clic directamente en [Crear una política](#create-policy) o en [Crear usua
 >
 > Los clientes no pueden modificar ni eliminar estas directivas.
 
-Si ya ha creado políticas o usuarios, el menú mostrará la lista de todas las políticas en curso creadas en su cuenta de OVHcloud.
+Si ya ha creado políticas o usuarios, los encontrará en la primera pestaña `Mis políticas`{.action}. La pestaña `Políticas de OVHcloud`{.action} incluye las políticas no modificables creadas automáticamente por OVHcloud.
 
 ![Acceso al menú IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -147,7 +147,7 @@ Aparecerá una ventana emergente en la que deberá confirmar la eliminación.
 
 ### Gestión de identidades
 
-Las identidades disponibles para las políticas se gestionan a través de la pestaña `Identidades`{.action}.
+Para gestionar las identidades disponibles para las políticas, acceda al menú `Identidad, Seguridad y Operaciones`{.action} y, a continuación, a la sección `Identidades`{.action}.
 
 Para más información sobre la gestión de usuarios, consulte la [documentación dedicada](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
@@ -157,7 +157,7 @@ Las políticas pueden dirigirse a grupos de recursos (en lugar de dirigirse dire
 
 #### Crear un grupo de recursos
 
-Para crear un grupo de recursos, vaya a la ficha dedicada del menú IAM:
+Para crear un grupo de recursos, vaya a la sección `Políticas`{.action} y haga clic en la pestaña `Grupos de recursos`{.action}:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 

@@ -53,7 +53,7 @@ Cliquez directement sur [Créer une politique](#create-policy) ou sur [Créer de
 >
 > Les clients ne sont pas autorisés à modifier ou supprimer ces politiques.
 
-Si vous avez déjà créé des politiques ou des utilisateurs, vous les retrouverez dans le premier onglet `Mes politiques`. L'onglet `Politiques OVHcloud` regroupe les politiques non modifiables créées automatiquement par OVHcloud.
+Si vous avez déjà créé des politiques ou des utilisateurs, vous les retrouverez dans le premier onglet `Mes politiques`{.action}. L'onglet `Politiques OVHcloud`{.action} regroupe les politiques non modifiables créées automatiquement par OVHcloud.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 

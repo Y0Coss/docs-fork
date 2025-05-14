@@ -53,7 +53,7 @@ Click [Create a policy](#create-policy) or [Create users](#create-users) directl
 >
 > Customers are not allowed to edit or delete these policies.
 
-If you have already created policies or users, you will find them in the first tab `My policies`. The `OVHcloud Policies` tab groups non-editable policies created automatically by OVHcloud.
+If you have already created policies or users, you will find them in the first tab `My policies`{.action}. The `OVHcloud Policies`{.action} tab groups non-editable policies created automatically by OVHcloud.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 

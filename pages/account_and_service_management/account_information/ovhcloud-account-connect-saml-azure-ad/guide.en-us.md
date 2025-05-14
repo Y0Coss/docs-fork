@@ -203,7 +203,7 @@ Adding your Entra ID application as a trusted identity provider is done in the [
 
 #### Establish OVHcloud trust
 
-On the sidebar, click `Identity, Security & Operations`{.action} then `Identities`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then on `Identities`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 

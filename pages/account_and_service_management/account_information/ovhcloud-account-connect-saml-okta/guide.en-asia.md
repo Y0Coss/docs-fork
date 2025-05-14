@@ -80,7 +80,7 @@ Your Okta service now trusts OVHcloud as a service provider. The next step is to
 
 To add Okta as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
-On the sidebar, click `Identity, Security & Operations`{.action} then `Identities`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then on `Identities`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 

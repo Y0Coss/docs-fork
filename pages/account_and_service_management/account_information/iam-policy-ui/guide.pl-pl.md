@@ -1,7 +1,7 @@
 ---
 title: Jak korzystać z polityki IAM w Panelu klienta
 excerpt: Dowiedz się, jak przypisać użytkownikom uprawnienia dostępu do konta OVHcloud
-updated: 2025-05-12
+updated: 2025-05-14
 ---
 
 ## Wprowadzenie
@@ -37,7 +37,7 @@ Na przykład, możemy stworzyć politykę pozwalającą użytkownikowi o nazwie 
 
 ### Dostęp do menu IAM
 
-Na pasku bocznym kliknij `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie `Zarządzanie tożsamością i dostępem (IAM)`{.action}.
+Na pasku bocznym kliknij na `Tożsamość, bezpieczeństwo i operacje`{.action} i na `Polityki`{.action}.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Kliknij bezpośrednio [Tworzenie polityki](#create-policy) lub [Tworzenie użytk
 >
 > Klienci nie mogą modyfikować ani usuwać tych polityk.
 
-Jeśli masz już utworzone polityki lub użytkowników, w menu wyświetlana jest lista wszystkich otwartych zasad utworzonych na Twoim koncie OVHcloud.
+Jeśli masz już utworzone reguły lub użytkowników, znajdziesz je w pierwszej zakładce `Moje zasady`{.action}. W zakładce `Polityka OVHcloud`{.action} znajdują się nieedytowalne reguły tworzone automatycznie przez OVHcloud.
 
 ![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -147,7 +147,7 @@ W oknie podręcznym zostanie wyświetlona prośba o potwierdzenie usunięcia hos
 
 ### Zarządzanie tożsamością
 
-Tożsamość dostępna dla polityk jest zarządzana w zakładce `Tożsamości`{.action}.
+Aby zarządzać tożsamościami dostępnymi dla polityk, przejdź do menu `Tożsamość, bezpieczeństwo i operacje`{.action}, a następnie do sekcji `Tożsamości`{.action}.
 
 Szczegóły zarządzania użytkownikami znajdziesz w [dokumentacji dedykowanej](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
@@ -157,7 +157,7 @@ Polityka może być ukierunkowana na grupy zasobów (zamiast bezpośredniego uki
 
 #### Utwórz grupę zasobów
 
-Aby utworzyć grupę zasobów, przejdź do zakładki poświęconej menu IAM:
+Aby utworzyć grupę zasobów, przejdź do sekcji `Polityki`{.action} i kliknij zakładkę `Grupy zasobów`{.action}:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 
