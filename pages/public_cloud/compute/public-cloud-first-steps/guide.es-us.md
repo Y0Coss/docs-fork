@@ -119,7 +119,7 @@ Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la secci�
 
 ![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Abra `Claves SSH`{.action} en el menú de la izquierda debajo de **Ajustes**. Haga clic en el botón Añadir una llave SSH`{.action}.
+Abra `Claves SSH`{.action} en el menú de la izquierda debajo de **Ajustes**. Haga clic en el botón `Añadir una clave SSH`{.action}.
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
 
@@ -265,7 +265,7 @@ Haga clic en las fichas siguientes para ver su presentación:
 >> Para añadir una clave almacenada en el área de cliente de OVHcloud (consulte [Paso 2](#import-ssh)), selecciónela en la lista.<br><br>
 >>![key selection](images/24-instance-creation05.png){.thumbnail}<br>
 >>
-> **Introducir directamente una llav**
+> **Introducir directamente una llave**
 >>
 >> Para añadir una clave pública pegando la cadena de clave, haga clic en el botón `Añadir una clave`{.action}.<br><br>
 >>![key selection](images/24-instance-creation06.png){.thumbnail}<br>

@@ -488,7 +488,7 @@ A questo punto sarà necessario completare la configurazione iniziale del sistem
 
 <a name="login-windows"></a>
 
-###### 5.3.2: Connessione remota da Windows
+##### 5.3.2: Connessione remota da Windows
 
 Sul computer Windows locale, è possibile utilizzare l’applicazione client `Remote Desktop Connection` per connettersi all’istanza.
 
