@@ -274,7 +274,7 @@ In diesem Beispiel fungiert die virtuelle Firewall als sicheres Gateway für pri
 
 ![SNS EVA vrack](images/gateway-2.png){.thumbnail}
 
-- [Erstellen Sie eine NAT-Regel](https://documentation.stormshield.eu/SNS/v4/en/Content/SNS_for_Cloud_-_VMWare_NSX/NAT-Rules.htm){.external} ähnlich dieser:
+- [Erstellen Sie eine NAT-Regel](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Filtering_and_NAT/NAT_tab.htm){.external} ähnlich dieser:
 
 ![SNS EVA vrack](images/gateway-3.png){.thumbnail}
 
