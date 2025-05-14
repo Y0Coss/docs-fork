@@ -37,7 +37,7 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 
 ### Accessing the IAM menu
 
-On the sidebar, click on `Identity, Security & Operations`{.action} then `Policies`{.action}.
+On the sidebar, click `Identity, Security & Operations`{.action} then `Policies`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
