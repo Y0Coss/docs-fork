@@ -1,7 +1,7 @@
 ---
 title: "Utiliser OVHcloud Object Storage comme Backend Terraform pour stocker votre état (state) Terraform"
 excerpt: "Découvrez comment utiliser l’Object Storage d’OVHcloud comme Backend Terraform pour stocker votre état (state) Terraform"
-updated: 2024-10-29
+updated: 2025-05-14
 ---
 
 ## Objectif
@@ -17,14 +17,14 @@ Dans ce tutoriel, vous allez :
 ## Prérequis
 
 - Être connecté votre [espace client OVHcloud](/links/manager)
-- Une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Installation de la CLI [Terraform](https://www.terraform.io/downloads){.external}
 
 ## Avant de commencer
 
 > [!warning]
 >
-> Avertissement sur la compatibilité de la CLI et du SDK AWS
+> **Avertissement sur la compatibilité de la CLI et du SDK AWS** :
 >
 > Amazon Web Services (AWS) a récemment effectué une modification qui renforce les checksum lors d'opérations via l'API S3. Ces nouveaux contrôles d’intégrité sont en cours d'intégration sur notre plateforme. Aussi, les headers suivants ne sont pas supportés :
 >
