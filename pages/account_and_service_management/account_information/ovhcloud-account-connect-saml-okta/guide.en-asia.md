@@ -84,11 +84,11 @@ On the sidebar, click `Identity, Security & Operations`{.action} then `Identitie
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Then click on the `SSO`{.action} tab and on the `SSO connection`{.action} button.
+Then click the `SSO`{.action} tab and click the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
-Fill in the XML metadata of your Okta service. Enter `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` as the "User Attribute Name" and `Group` as the "Group Attribute Name". Click `Confirm`{.action}.
+Fill in the XML metadata of your Okta service. Enter `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` as the "User Attribute Name" and `Group` as the "Group Attribute Name". Click on `Confirm`{.action}.
 
 You can keep local users by ticking the `Keep active OVHcloud users` box.
 

@@ -125,7 +125,7 @@ On the sidebar, click `Identity, Security & Operations`{.action} then `Identitie
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Then click on the `SSO`{.action} tab and on the `SSO connection`{.action} button.
+Then click the `SSO`{.action} tab and click the `SSO connection`{.action} button.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 

@@ -37,7 +37,7 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 
 ### Accessing the IAM menu
 
-On the sidebar, click `Identity, Security & Operations`{.action} then `Policies`{.action}.
+On the sidebar, click on `Identity, Security & Operations`{.action} then on `Policies`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
@@ -156,7 +156,7 @@ Policies can target resource groups instead of resources. These resource groups 
 
 #### Creating a resource group
 
-To create a resource group, go to the `Policies`{.action} section, then click on the `Resource group`{.action} tab:
+To create a resource group, go to the `Policies`{.action} section, then click the `Resource group`{.action} tab:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 

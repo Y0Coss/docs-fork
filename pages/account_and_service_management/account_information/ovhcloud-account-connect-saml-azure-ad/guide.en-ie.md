@@ -207,7 +207,7 @@ On the sidebar, click `Identity, Security & Operations`{.action} then `Identitie
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Then click on the `SSO`{.action} tab and on the `SSO connection`{.action} button.
+Then click the `SSO`{.action} tab and click the `SSO connection`{.action} button.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -239,7 +239,7 @@ To add a group, go to the `Identities`{.action} section, then to the `User group
 
 ![Ovhcloud user management groups step 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
-Enter the group name and select the associated role, then click `Confirm`{.action}.
+Enter the group name and select the associated role, then click on `Confirm`{.action}.
 
 ![Ovhcloud user management groups step 2](images/ovhcloud_sso_menu_2.png){.thumbnail}
 
