@@ -1,7 +1,7 @@
 ---
 title: Configuring HYCU Backup
 excerpt: Installing HYCU Backup on a Nutanix cluster
-updated: 2025-05-12
+updated: 2025-05-14
 ---
 
 <style>
