@@ -1,7 +1,7 @@
 ---
 title: 'Modificare i blocchi IP annunciati nella vRack'
 excerpt: 'Come cambiare l’annuncio di un blocco IP nella rete privata vRack'
-updated: 2025-05-13
+updated: 2025-05-14
 ---
 
 ## Obiettivo
@@ -62,8 +62,8 @@ Questa chiamata API consente di modificare l'annuncio di un blocco IP. Completa 
 |Campo|Descrizione|
 |---|---|
 |serviceName|Inserisci il nome del servizio vRack corrispondente (ad esempio, `pn-12345`).|
-|"block":|Inserisci il nome del blocco IP corrispondente, facendo attenzione a non inserire l’indirizzo IP testato precedentemente ma l’intero blocco (ad esempio, `192.0.2.0/24`).|
-|"region":|Seleziona la nuova zona in cui annunciare il blocco IP, facendo attenzione a non inserire la zona recuperata precedentemente (ad esempio, `bexxx.gra-d1-a75.fr.eu`).|
+|block|Inserisci il nome del blocco IP corrispondente, facendo attenzione a non inserire l’indirizzo IP testato precedentemente ma l’intero blocco (ad esempio, `192.0.2.0/24`).|
+|region|Seleziona la nuova zona in cui annunciare il blocco IP, facendo attenzione a non inserire la zona recuperata precedentemente (ad esempio, `bexxx.gra-d1-a75.fr.eu`).|
 
 ![vrack zone](images/vrack_announcement_zone.png){.thumbnail}
 

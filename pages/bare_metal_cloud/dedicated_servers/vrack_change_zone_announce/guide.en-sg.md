@@ -1,7 +1,7 @@
 ---
 title: 'Change the announcement of an IP block in vRack'
 excerpt: 'Learn how to change the announcement of an IP block in vRack'
-updated: 2025-05-13
+updated: 2025-05-14
 ---
 
 ## Objective
@@ -62,8 +62,8 @@ This API call makes it possible to change the announcement of an IP block. Fill 
 |Field|Description|
 |---|---|
 |serviceName|Fill in the name of the concerned vRack service. For example: `pn-12345`.|
-|"block":|Fill in the name of the concerned IP block. Be sure to fill in the IP block, not the IP address that you tested in the previous step.  For example: `192.0.2.0/24`.|
-|"region"|Select the new announcement zone (region) of the IP block. Be sure this is not the same zone as retrieved in the previous step. For example: `bexxx.gra-d1-a75.fr.eu`|
+|block|Fill in the name of the concerned IP block. Be sure to fill in the IP block, not the IP address that you tested in the previous step.  For example: `192.0.2.0/24`.|
+|region|Select the new announcement zone (region) of the IP block. Be sure this is not the same zone as retrieved in the previous step. For example: `bexxx.gra-d1-a75.fr.eu`|
 
 
 ![vrack zone](images/vrack_announcement_zone.png){.thumbnail}

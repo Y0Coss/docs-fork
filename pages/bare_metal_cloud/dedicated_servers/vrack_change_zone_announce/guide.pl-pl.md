@@ -1,7 +1,7 @@
 ---
 title: 'Zmiana strefy rozgłaszania bloku IP w sieci vRack'
 excerpt: 'Dowiedz się, jak zmienić strefę rozgłaszania bloku IP w sieci vRack'
-updated: 2025-05-13
+updated: 2025-05-14
 ---
 
 ## Wprowadzenie
@@ -62,8 +62,8 @@ To zapytanie API umożliwia zmianę strefy rozgłaszania bloku IP. Wypełnij ter
 |Pole|Opis |
 |---|---|
 |serviceName|Wprowadź nazwę odpowiedniej usługi vRack. Przykład: `pn-12345`.|
-|"block":|Wprowadź nazwę odpowiedniego bloku IP. Pamiętaj, aby nie wpisywać adresu IP przetestowanego w poprzednim kroku, tylko odpowiedni blok IP. Przykład: `192.0.2.0/24`.|
-|"region":|Wybierz nową strefę rozgłaszania bloku IP. Pamiętaj, aby nie wpisywać strefy pobranej na poprzednim etapie. Przykład: `bexxx.gra-d1-a75.fr.eu`.|
+|block|Wprowadź nazwę odpowiedniego bloku IP. Pamiętaj, aby nie wpisywać adresu IP przetestowanego w poprzednim kroku, tylko odpowiedni blok IP. Przykład: `192.0.2.0/24`.|
+|region|Wybierz nową strefę rozgłaszania bloku IP. Pamiętaj, aby nie wpisywać strefy pobranej na poprzednim etapie. Przykład: `bexxx.gra-d1-a75.fr.eu`.|
 
 ![vrack zone](images/vrack_announcement_zone.png){.thumbnail}
 

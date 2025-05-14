@@ -1,7 +1,7 @@
 ---
 title: 'Modificar el anuncio de un bloque de IP en el vRack'
 excerpt: 'Cómo modificar el anuncio de un bloque de IP en el vRack'
-updated: 2025-05-13
+updated: 2025-05-14
 ---
 
 ## Objetivo
@@ -62,8 +62,8 @@ Esta llamada a la API permite modificar el anuncio de un bloque de IP. Complete 
 |Campo|Descripción|
 |---|---|
 |serviceName|Introduzca el nombre del servicio vRack correspondiente. Por ejemplo, `pn-12345`.|
-|"block":|Introduzca el nombre del bloque de IP correspondiente (no se trata de la dirección IP probada en el paso anterior, sino el bloque de IP, por ejemplo, `192.0.2.0/24`).|
-|"region":|Seleccione la nueva zona donde quiera anunciar el bloque de IP (no se trata de la zona obtenida en el paso anterior). Por ejemplo, `bexxx.gra-d1-a75.fr.eu`.|
+|block|Introduzca el nombre del bloque de IP correspondiente (no se trata de la dirección IP probada en el paso anterior, sino el bloque de IP, por ejemplo, `192.0.2.0/24`).|
+|region|Seleccione la nueva zona donde quiera anunciar el bloque de IP (no se trata de la zona obtenida en el paso anterior). Por ejemplo, `bexxx.gra-d1-a75.fr.eu`.|
 
 ![vrack zone](images/vrack_announcement_zone.png){.thumbnail}
 

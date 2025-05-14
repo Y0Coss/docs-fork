@@ -1,7 +1,7 @@
 ---
 title: 'IP-Block-Ankündigung im vRack ändern'
 excerpt: 'So ändern Sie die IP-Block-Ankündigung im vRack'
-updated: 2025-05-13
+updated: 2025-05-14
 ---
 
 ## Einleitung
@@ -43,7 +43,7 @@ Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse aktuell in **Rou
 
 ### Schritt 2: IP-Block-Ankündigung ändern
 
-Öffnen Sie die [API-Konsole](/links/console) und loggen Sie sich mit Ihrer OVHcloud Kundenkennung ein. Verwenden Sie die nachstehenden API-Aufrufe, um die IP-Block-Ankündigung zu bearbeiten.
+Öffnen Sie die [API-Konsole](/links/api) und loggen Sie sich mit Ihrer OVHcloud Kundenkennung ein. Verwenden Sie die nachstehenden API-Aufrufe, um die IP-Block-Ankündigung zu bearbeiten.
 
 > [!api]
 >
