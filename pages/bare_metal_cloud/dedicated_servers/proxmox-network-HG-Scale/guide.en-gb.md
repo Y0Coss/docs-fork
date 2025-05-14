@@ -15,7 +15,7 @@ updated: 2025-05-0915
 >
 > As of May 2025, virtual MACs can be used on High Grade & Scale ranges.
 >
-> If you want to use virtual MACs to configure the network on Proxmox VE on High Grade and Scale servers, you can refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
+> If you want to use virtual MACs to configure the network on Proxmox VE on High Grade and Scale servers, you can refer to [the network bridging guide](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 ## Objective
 
