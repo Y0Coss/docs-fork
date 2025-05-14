@@ -10,7 +10,7 @@ Da Unternehmen zunehmend auf Cloud-Lösungen angewiesen sind, hat die Absicherun
 
 In dieser Anleitung erhalten Sie Schritt-für-Schritt-Anweisungen zum Deployment und zur Konfiguration von SNS EVA auf der OVHcloud Public Cloud mit vRack und öffentlichem IP-Routing. Sie decken die wichtigsten Funktionen wie Netzwerk-Firewalls, IPsec-VPNs und SSL/TLS-VPNs ab. Indem Sie dieses Tutorial anwenden, erhöhen Sie die Sicherheit Ihrer OVHcloud Public Cloud Infrastruktur und gewährleisten die Sicherheit Ihrer Operationen.
 
-**In dieser Anleitung erfahren Sie, wie Sie Ihre OVHcloud Infrastruktur mit Stormshield Network Security in der Public Cloud absichern.**
+**Diese Anleitung erklärt, wie Sie Ihre OVHcloud Infrastruktur mit Stormshield Network Security in der Public Cloud absichern.**
 
 > [!warning]
 > In diesem Tutorial erläutern wir die Verwendung von OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Möglicherweise müssen Sie bestimmte Anweisungen an Ihre Umgebung oder individuelle Bedürfnisse anpassen.
