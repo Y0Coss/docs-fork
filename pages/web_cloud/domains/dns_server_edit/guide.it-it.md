@@ -64,7 +64,6 @@ Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare
 >>
 >> Seleziona la scheda `Server DNS`{.action} una volta posizionato sul dominio interessato.
 >>
->>
 > **Step 4**
 >>
 >> Visualizzi una tabella con tutti i server DNS configurati da OVHcloud per il tuo dominio. A ogni riga corrisponde un server DNS.
