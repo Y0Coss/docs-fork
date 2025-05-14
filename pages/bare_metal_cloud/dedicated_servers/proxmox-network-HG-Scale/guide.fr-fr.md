@@ -15,7 +15,7 @@ updated: 2025-05-15
 >
 > Depuis mai 2025, les adresses MAC virtuelles peuvent être utilisées sur les serveurs des gammes High Grade et Scale.
 >
-> Si vous souhaitez utiliser des adresses MAC virtuelles pour configurer le réseau sur Proxmox VE sur vos serveurs des gammes High Grade et Scale, vous pouvez vous référer à [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
+> Si vous souhaitez utiliser des adresses MAC virtuelles pour configurer le réseau sur Proxmox VE sur vos serveurs des gammes High Grade et Scale, vous pouvez vous référer au [guide sur la configuration des Additional IP en mode network bridge](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 ## Objectif
 
