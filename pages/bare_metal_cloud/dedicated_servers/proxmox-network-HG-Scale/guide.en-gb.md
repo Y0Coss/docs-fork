@@ -1,7 +1,7 @@
 ---
 title: 'Configuring the network on Proxmox VE on the High Grade, Scale & Advance ranges'
 excerpt: 'Find out how to configure the network on Proxmox VE'
-updated: 2025-05-09
+updated: 2025-05-0915
 ---
 
 > [!primary]
@@ -13,7 +13,7 @@ updated: 2025-05-09
 
 > [!warning]
 >
-> As of May 2025, virtual MACs can be used on High Grade & Scale ranges, and this guide is now legacy.
+> As of May 2025, virtual MACs can be used on High Grade & Scale ranges.
 >
 > If you want to use virtual MACs to configure the network on Proxmox VE on High Grade and Scale servers, you can refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 

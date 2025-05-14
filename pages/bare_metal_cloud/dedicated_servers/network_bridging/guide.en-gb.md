@@ -1,7 +1,7 @@
 ---
 title: 'Configuring a network bridge'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2025-05-09
+updated: 2025-05-15
 ---
 
 > [!primary]
@@ -26,7 +26,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > As of May 2025, this guide can be used for servers of the ranges [Scale](https://www.ovhcloud.com/en-gb/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/).
 >
-> Thus, the following guides are now considered legacy : [Configuring the network on Proxmox VE on the High Grade & Scale ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) and [Configuring the network on Windows Server with Hyper-V on the High Grade & Scale ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
+> Alternative methods are available to configure the network on your virtual machines hosted on servers from those ranges : [Configuring the network on Proxmox VE on the High Grade & Scale ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) and [Configuring the network on Windows Server with Hyper-V on the High Grade & Scale ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 >
 
 ## Instructions
