@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoint e Object Storage geoavailability (EN)
-updated: 2025-05-12
+updated: 2025-05-14
 ---
 
 <style>
@@ -138,7 +138,7 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
     <tr>
         <th>AWS</th>
         <th>OVHcloud current mapping</th>
-        <th>OVHcloud mapping from 2025-06-17</th>
+        <th>OVHcloud mapping from 2025-06-04</th>
     </tr>
     <tr>
         <td>EXPRESS_ONEZONE</td> 
@@ -175,7 +175,7 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
 </table>
 
 _<sup>2</sup>: The default storage class on the **io** endpoint will be Standard, i.e. if you don't specify a storage class, your object will be stored in our Standard tier._
-_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-17._
+_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-04._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the following:
 
@@ -198,7 +198,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
     </tr>
 </table>
 
-_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-17._
+_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-04._
 
 > [!warning]
 > Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all features and API operations will be available.
@@ -216,7 +216,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     <tr>
         <th>AWS</th>
         <th>OVHcloud current mapping</th>
-        <th>OVHcloud mapping from 2025-06-17</th>
+        <th>OVHcloud mapping from 2025-06-04</th>
     </tr>
     <tr>
         <td>EXPRESS_ONEZONE</td> 
@@ -252,7 +252,7 @@ The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the follow
     </tr>
 </table>
 
-_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-17._
+_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-04._
 _<sup>4</sup>: The default storage tier on the **perf** endpoint will be High Performance, i.e. if you don't specify a storage class, your object will be stored in our High Performance tier._
 
 The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is the following:
@@ -276,7 +276,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
     </tr>
 </table>
 
-_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-17._
+_<sup>3</sup>: The Standard Infrequent Access tier will be available starting from 2025-06-04._
 
 ## Object Storage Swift
 
