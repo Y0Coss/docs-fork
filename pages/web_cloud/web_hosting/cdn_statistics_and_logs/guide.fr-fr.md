@@ -90,7 +90,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >> Sur la nouvelle page qui apparaît :
 >>
 >> - Sélectionnez le nom de domaine/sous-domaine concerné via le menu déroulant `Sous-domaine`{.action}.
->> - Choisissez la date dans le formulaire `date`{.action} à laquelle vous souhaitez consulter les logs CDN.
+>> - Choisissez la date, dans le formulaire `Date`{.action}, pour laquelle vous souhaitez consulter les logs CDN.
 >> - Appuyez ensuite sur le bouton `Générer`{.action}.
 >>
 >> > [!primary]
