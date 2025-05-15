@@ -219,7 +219,7 @@ Klicken Sie auf `Bestätigen`{.action}, um die Erstellung des Accounts zu starte
 
 ![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-500}
 
-### E-Mail-Account einsehen <a name=„emails-consult“></a>
+### E-Mail-Account einsehen <a name="mail-consult"></a>
 
 Um Ihren E-Mail-Account einzusehen:
 
@@ -235,7 +235,7 @@ Um die E-Mails Ihres Zimbra-Accounts an eine andere E-Mail-Adresse weiterzuleite
 
 > [!primary]
 >
-> In unserem Beispiel unten haben wir ausgewählt, alle eingehenden E-Mails an eine andere E-Mail-Adresse weiterzuleiten. Um das Beispiel in den Screenshots zu verstehen, sind wir unter **zimbra@mydomain.ovh** angemeldet und möchten die E-Mails dieses Accounts an die Adresse **address@example.com** weiterleiten.
+> Im Beispiel unten sollen alle eingehenden E-Mails an eine andere E-Mail-Adresse weitergeleitet werden. Als Beispiel-Account wird **zimbra@mydomain.ovh** verwendet und alle eingehenden E-Mails an diese E-Mail-Adresse werden an die Adresse **address@example.com** geleitet.
 
 > [!tabs]
 > **Schritt 1**
@@ -255,10 +255,10 @@ Um die E-Mails Ihres Zimbra-Accounts an eine andere E-Mail-Adresse weiterzuleite
 >> - Klicken Sie oben rechts auf <u>Erweiterter Modus</u>, um diese Regel zu implementieren.
 >> - Geben Sie einen Namen für Ihren Filter in das Feld `Filtername` ein.
 >> - Lassen Sie das Dropdown-Menü auf `Alle` im Satz „Wenn eine eingehende Nachricht ... dieser Bedingungen entspricht“.
->> - Wählen Sie im ersten Pop-up-Menü der Regeln `Bis` (TB) aus, lassen Sie `enthält` (contains) und geben Sie die E-Mail-Adresse, mit der Sie verbunden sind, in das Feld rechts ein.
->> - Wählen Sie unter „Dann“ (Then) im Drop-down-Menü `Weiterleiten an` (Forward to) aus und geben Sie die Ziel-E-Mail-Adresse ein.
+>> - Wählen Sie im ersten Pop-up-Menü der Regeln `Bis` (TB) aus, lassen Sie `enthält` (contains) und geben Sie die Quell-Adresse in das Feld rechts ein.
+>> - Wählen Sie unter „Dann“ (Then) im Drop-down-Menü `Weiterleiten an` (Forward to) aus und geben Sie die Ziel-Adresse ein.
 >> - Klicken Sie unten auf `+ Aktion hinzufügen`{.action}(Add an action) und wählen Sie `In Empfangsordner verschieben` (Keep in Inbox).
->> - Klicken Sie auf `Speichern`{.action} aus dem Fenster Ihres Filters und auch aus dem Fenster der Einstellungen.
+>> - Klicken Sie auf `Speichern`{.action} im Fenster Ihres Filters und im Fenster der Einstellungen.
 >>
 >> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-500}
 >>
@@ -267,9 +267,9 @@ Weitere Informationen zur Verwendung von Zimbra Webmail finden Sie in unserer An
 
 ### Alias <a name="alias"></a>
 
-Wenn Sie einen Alias für Ihre E-Mail-Adresse erstellen, können Sie Ihren Kontakten eine Maskenadresse übermitteln, ohne dem Absender Ihre persönliche E-Mail-Adresse mitteilen zu müssen.
+Mit Alias-Adressen für Ihren E-Mail-Account können Sie Ihre Account-E-Mail-Adresse privat halten. Sie können die Alias-Adressen an Ihre Kontakte weitergeben und an diese Adressen gesendete E-Mails werden dann an Ihren E-Mail-Account weitergeleitet.
 
-Die Erstellung eines Alias erfolgt über das [OVHcloud Kundencenter](/links/manager), klicken Sie auf die folgenden Schritte:
+Die Erstellung eines Alias erfolgt über das [OVHcloud Kundencenter](/links/manager). Klicken Sie auf die Tabs um die Schritte anzuzeigen:
 
 > [!tabs]
 > **Schritt 1**
@@ -301,7 +301,7 @@ Die Erstellung eines Alias erfolgt über das [OVHcloud Kundencenter](/links/mana
 
 ### Automatische Antworten <a name="autoreply"></a>
 
-Wenn Sie abwesend sind und Ihre E-Mails nicht verarbeiten können, können Sie eine Abwesenheitsnachricht einrichten. Führen Sie die folgenden Schritte aus:
+Wenn Sie abwesend sind und Ihre E-Mails nicht bearbeiten können, können Sie eine Abwesenheitsnachricht einrichten. Führen Sie die folgenden Schritte aus:
 
 - Klicken Sie auf den Button &#9881; oben rechts in Ihrem Webmail-Fenster und dann auf `Einstellungen`{.action}.
 
@@ -310,7 +310,7 @@ Wenn Sie abwesend sind und Ihre E-Mails nicht verarbeiten können, können Sie e
 - Klicken Sie auf den Abschnitt `Abwesend im Büro` hinter dem Fenster der Parameter.
 - Aktivieren Sie das Kontrollkästchen „Automatische Antwort für diese Datumsangaben (inklusive) aktivieren“.
 - Geben Sie das Startdatum der Abwesenheit vor dem Vermerk „Von“ ein.
-- Deaktivieren Sie das Kontrollkästchen „Kein Enddatum“, wenn Sie ein Enddatum für die Abwesenheit festlegen möchten.
+- Deaktivieren Sie die Option „Kein Enddatum“, wenn Sie ein Enddatum für die Abwesenheit festlegen möchten.
 - Geben Sie in das Feld Ihre Abwesenheitsmeldung ein.
 - Klicken Sie auf `Speichern`{.action}, um die Abwesenheitsnotiz abzuschließen.
 
