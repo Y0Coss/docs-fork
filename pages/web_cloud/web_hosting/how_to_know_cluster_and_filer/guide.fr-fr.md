@@ -19,7 +19,7 @@ Au cours de l'utilisation de votre hébergement web, vous pouvez être amenés �
 
 ### Retrouver le numéro du cluster d'un hébergement web
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
 
 > [!tabs]
 > **Etape 1**
