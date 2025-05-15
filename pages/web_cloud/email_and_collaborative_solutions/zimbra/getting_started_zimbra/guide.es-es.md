@@ -254,7 +254,7 @@ Para redirigir los emails de su cuenta Zimbra hacia otra dirección de correo, v
 >> - En primer lugar, haga clic en <u>Modo avanzado</u> en la parte superior derecha para aplicar esta regla.
 >> - Asigne un nombre al filtro en el cuadro `Nombre del filtro`.
 >> - Deje el menú desplegable en `todas` en la frase « Si un mensaje entrante cumple ... estas condiciones ».
->> - En el primer menú desplegable de reglas, seleccione `A` (To), deje `contient` (contains) e introduzca la dirección de correo electrónico en la que ha iniciado sesión en el cuadro de la derecha.
+>> - En el primer menú desplegable de reglas, seleccione `A` (To), deje `contiene` (contains) e introduzca la dirección de correo electrónico en la que ha iniciado sesión en el cuadro de la derecha.
 >> - Bajo el epígrafe « Entonces » (Then), seleccione `Reenviar a `(Forward to) en el menú desplegable e introduzca la dirección de correo electrónico de destino.
 >> - Haga clic en `+ Añadir acción`{.action}(Add an action) más abajo y seleccione `Mover a recepción` (Keep in Inbox).
 >> - Haga clic en `Guardar`{.action} en la ventana de su filtro y también en la ventana de configuración.
@@ -268,7 +268,7 @@ Para más información sobre el uso del webmail Zimbra, consulte nuestra guía �
 
 Crear un alias para su dirección de correo electrónico le permite comunicar una dirección «máscara» a sus contactos, sin tener que comunicar su dirección de correo electrónico personal al remitente.
 
-Para crear un alias, conéctese al [área de cliente de OVHcloud](/links/manager). Haga clic en el botón ··· situado al final de la línea correspondiente al servicio:
+Puede crear un alias desde el [espacio de cliente OVHcloud](/links/manager), Haga clic en los pasos a continuación:
 
 > [!tabs]
 > **Paso 1**
