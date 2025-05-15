@@ -53,7 +53,7 @@ Klicken Sie je nach der gewünschten Aktion auf [Richtlinie erstellen](#create-p
 >
 > Kunden können diese Richtlinien nicht ändern oder löschen.
 
-Wenn Sie bereits Richtlinien oder Benutzer erstellt haben, finden Sie diese auf der ersten Registerkarte`Meine Richtlinien`{.action}. Der Tab `OVHcloud Richtlinien`{.action} enthält nicht bearbeitbare Policys, die automatisch von OVHcloud erstellt werden.
+Wenn Sie bereits Richtlinien oder Benutzer erstellt haben, finden Sie diese auf der ersten Registerkarte `Meine Richtlinien`{.action}. Der Tab `OVHcloud Richtlinien`{.action} enthält nicht bearbeitbare Policys, die automatisch von OVHcloud erstellt werden.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
