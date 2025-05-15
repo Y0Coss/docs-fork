@@ -32,7 +32,7 @@ Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficie
 - Posséder une offre MX Plan liée à une offre d’[hébergement web](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting), ou seule.
 - Être connecté à l'[espace client OVHcloud](/links/manager).
 
-## En pratique
+## En pratique <a name="instructions"></a>
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 1. Rendez-vous dans la partie `Web Cloud`{.action}.
@@ -46,20 +46,20 @@ Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficie
 >
 > En fonction de la date d’activation de votre offre MX Plan ou d’une migration récente, la technologie e-mail associée peut différer. Cette version est caractérisée par l'interface de son webmail. Pour l'identifier :
 >
-> - Depuis l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action} ou `Connexion`{.action}.
+> - Depuis l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action} ou `Webmail`{.action}.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 **Sommaire**
 
-  - [Créer une adresse e-mail](#create-email)
-  - [Utiliser vos adresses e-mail](#consult-emails)
+- [Créer une adresse e-mail](#create-email)
+- [Utiliser vos adresses e-mail](#consult-emails)
     - [Utiliser le Webmail](#consult-emails-webmail)
     - [Utiliser un client de messagerie](#consult-emails-client)
-      - [Paramètres de réception IMAP et POP](#imap-pop)
-      - [Paramètres d'envoi SMTP](#smtp)
-  - [Redirections et Alias](#redirection-alias)
-  - [Réponse automatique](#autoreply)
+        - [Paramètres de réception IMAP et POP](#imap-pop)
+        - [Paramètres d'envoi SMTP](#smtp)
+- [Redirections et Alias](#redirection-alias)
+- [Réponse automatique](#autoreply)
 
 ### Créer une adresse e-mail <a name="create-email"></a>
 
@@ -162,7 +162,7 @@ Retrouvez ci-dessous les liens des guides de configuration selon votre type d'ap
 >>
 >> - [Mail pour iPhone et iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios).
 >>
-> **Smartphone ou tablette Android**<br>
+> **Smartphone ou tablette Android**
 >>
 >> - [Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 >>
