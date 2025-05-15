@@ -38,8 +38,8 @@ Andere Betriebssysteme bieten wahrscheinlich auch ISO-Images, die bei der Erstel
 
 Stellen Sie sicher, dass folgende Elemente auf Ihren Images installiert sind, um sie als *cloud-ready* vorzubereiten:
 
-- *QEMU Guest Agent*\: Diese Operation ermöglicht es dem Host, mit der Instanz für Live-Snapshots direkt zu kommunizieren. Nicht alle Betriebssysteme sind mit diesem Paket kompatibel.
-- *cloud-init*\: So können Sie Ihre Instanz beim ersten Start booten, indem Sie SSH-Schlüssel hinzufügen und das Netzwerk konfigurieren. Die meisten Betriebssysteme sind mit dieser Funktion kompatibel.
+- *QEMU Guest Agent*: Diese Operation ermöglicht es dem Host, mit der Instanz für Live-Snapshots direkt zu kommunizieren. Nicht alle Betriebssysteme sind mit diesem Paket kompatibel.
+- *cloud-init*: So können Sie Ihre Instanz beim ersten Start booten, indem Sie SSH-Schlüssel hinzufügen und das Netzwerk konfigurieren. Die meisten Betriebssysteme sind mit dieser Funktion kompatibel.
 
 Wir empfehlen die Verwendung von Bildern im RAW- oder QCOW2-Format. Halten Sie die Größe des Images so klein wie möglich, um die monatlichen Abrechnungskosten zu minimieren und die Zeit bis zur Erstellung Ihrer Instanzen zu verkürzen.
 

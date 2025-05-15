@@ -291,7 +291,7 @@ Dieser Schritt umfasst mehrere Konfigurationsoptionen. Klicken Sie auf die Tabs,
 >>
 > **3: Name der Instanz**
 >>
->> Geben Sie einen Anzeigenamen für Ihre Instanz ein. Der Standardwert ist die kommerzielle Referenz des Instanz-Modells..<br>
+>> Geben Sie einen Anzeigenamen für Ihre Instanz ein. Der Standardwert ist die kommerzielle Referenz des Instanz-Modells.<br>
 >>
 > **4: Post-Installation-Skript**
 >>

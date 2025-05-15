@@ -218,8 +218,7 @@ Los modelos de instancia de tipo `Metal`{.action} proporcionan recursos físicos
 
 **Regiones**
 
-Una **región** se define como una ubicación en el mundo formada por uno o varios datacenters en los que están alojados los servicios de OVHcloud. Puede encontrar más información sobre las regiones, la distribución geográfica y la disponibilidad de los servicios en nuestra [página web dedicada]
-(/links/public-cloud/regions-pci) y nuestra [página web sobre las localizaciones de las infraestructuras de OVHcloud](/links/infrareg).
+Una **región** se define como una ubicación en el mundo formada por uno o varios datacenters en los que están alojados los servicios de OVHcloud. Puede encontrar más información sobre las regiones, la distribución geográfica y la disponibilidad de los servicios en nuestra [página web dedicada](/links/public-cloud/regions-pci) y nuestra [página web sobre las localizaciones de las infraestructuras de OVHcloud](/links/infrareg).
 
 **Local Zones**
 
@@ -411,7 +410,7 @@ Seleccione `Instancias`{.action} en la barra de navegación izquierda debajo de 
 
 Haga clic en el nombre de la instancia en este panel para abrir el `Dashboard`{.action}, donde puede encontrar toda la información relativa a la instancia. Para más información sobre las funciones disponibles en esta página, consulte nuestra guía sobre [la gestión de las instancias en el área de cliente](/pages/public_cloud/compute/first_steps_with_public_cloud_instance).
 
-Se creará automáticamente un **usuario con derechos elevados (*sudo*)* en la instancia**. El nombre de usuario refleja la imagen instalada, por ejemplo "ubuntu", "debian", "fedora", etc. Puede comprobarlo en el lado derecho del `Dashboard`{.action} en la sección **Redes**.
+Se creará automáticamente un **usuario con derechos elevados (*sudo*) en la instancia**. El nombre de usuario refleja la imagen instalada, por ejemplo "ubuntu", "debian", "fedora", etc. Puede comprobarlo en el lado derecho del `Dashboard`{.action} en la sección **Redes**.
 
 ![page instances](images/24-instance-connect02.png){.thumbnail}
 
