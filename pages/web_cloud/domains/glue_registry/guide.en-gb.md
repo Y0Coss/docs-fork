@@ -16,9 +16,9 @@ These *DNS zones* consist of technical information: *DNS records*. In standard u
 
 For more information on these topics, see the following guides:
 
-- [Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information).
-- [Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information).
-- [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+- [Everything you need to know about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+- [Everything you need to know about DNS zone](/pages/web_cloud/domains/dns_zone_general_information)
+- [How to edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
 Depending on your needs, you can customise your OVHcloud domain name’s DNS servers using **Glue Records**.
 
@@ -53,8 +53,8 @@ Retrieve the *DNS servers* information including **all** their associated IPv4 a
 
 In our example shown above, the **domain.tld** domain currently uses the following **DNS servers**:
 
-- **dnsX1.ovh.net** associated with IPv4 *203.0.113.0* and IPv6 *2001:db8:1:1b00:203:0:113:0*.
-- **dnsX2.ovh.net** associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*.
+- **dnsX1.ovh.net** associated with IPv4 *203.0.113.0* and IPv6 *2001:db8:1:1b00:203:0:113:0*
+- **dnsX2.ovh.net** associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*
 
 If you need more information, please read [our tutorial on the Zonemaster tool](/pages/web_cloud/domains/dns_zonemaster).
 
@@ -78,7 +78,7 @@ If you need more information, please read [our tutorial on the Zonemaster tool](
 > In addition, *domain1.tld* must be registered with OVHcloud to set up the glue records.
 >
 
-To do this, click on the tabs below to view each of the **4** steps.
+To do this, click on the tabs below to view the **4** steps.
 
 > [!tabs]
 > **Step 1**
@@ -93,7 +93,7 @@ To do this, click on the tabs below to view each of the **4** steps.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3** 
+> **Step 3**
 >>
 >> On the new page, click on the `GLUE`{.action} tab.
 >>
@@ -108,7 +108,7 @@ To do this, click on the tabs below to view each of the **4** steps.
 >> |Information|Details|
 >> |---|---|
 >> |Host Name|Customise the host name you want to use as a custom DNS server.|
->> |Target IP(s)|Specify the IP address(es) (IPv4 and/or IPv6) to which the host name should resolve. This is the IP address(es) of the DNS server currently used by your domain name. If there are multiple IP addresses, separate them with *commas*.|
+>> |Target IP(s)|Specify all IP addresses (IPv4 and/or IPv6) to which the host name should resolve. These are IP addresses of the DNS server currently used by your domain name. If there are multiple IP addresses, separate them with *commas*.|
 >>
 >> ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/glue/add-another-glue-record-step-1.png){.thumbnail}
 >>
@@ -142,10 +142,10 @@ If we go back to our previous example, the GLUE records that we want to add (fro
 
 As a result, the following records are added to the active DNS zone of the domain name *domain.tld*:
 
- - An *A* DNS record for the *subdomain* **dns1.domain.tld** to the IP *203.0.113.0* (DNS server IPv4 **dnsX1.ovh.net**).
- - A *AAAA* DNS record for the *subdomain* **dns1.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:0* (DNS server IPv6 **dnsX1.ovh.net**).
- - An *A* DNS record for the *subdomain* **dns2.domain.tld** to the IP *203.0.113.1* (DNS server IPv4 **dnsX2.ovh.net**).
- - A *AAAA* DNS record for the *subdomain* **dns2.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:1* (DNS server IPv6 **dnsX2.ovh.net**).
+ - An *A* DNS record for the *subdomain* **dns1.domain.tld** to the IP *203.0.113.0* (DNS server IPv4 **dnsX1.ovh.net**)
+ - An *AAAA* DNS record for the *subdomain* **dns1.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:0* (DNS server IPv6 **dnsX1.ovh.net**)
+ - An *A* DNS record for the *subdomain* **dns2.domain.tld** to the IP *203.0.113.1* (DNS server IPv4 **dnsX2.ovh.net**)
+ - An *AAAA* DNS record for the *subdomain* **dns2.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:1* (DNS server IPv6 **dnsX2.ovh.net**)
 
 ### 4 - Replace the NS records in your domain name’s active DNS zone
 
