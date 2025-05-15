@@ -1231,6 +1231,7 @@
             + [DNS zone](web-cloud-domains-dns-dns-zone)
                 + [Everything you need to know about DNS zone](web_cloud/domains/dns_zone_general_information)
                 + [Creating an OVHcloud DNS zone for a domain name](web_cloud/domains/dns_zone_create)
+                + [How to add a DNS A record for a domain name](/pages/web_cloud/domains/dns_zone_a_record_creation)
                 + [Editing an OVHcloud DNS zone](web_cloud/domains/dns_zone_edit)
                 + [How to view the history of your DNS records](web_cloud/domains/dns_zone_history)
                 + [How to delete a DNS zone ?](web_cloud/domains/dns_zone_deletion)
