@@ -6,7 +6,7 @@ updated: 2025-05-15
 
 ## Objectif
 
-Ce guide vous explique comment accéder et consulter les statistiques et les logs générés par l'[option CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) disponible avec votre offre d'[hébergement web](/links/web/hosting).
+Ce guide vous explique comment consulter les statistiques et les logs générés par l'[option CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) disponible avec votre offre d'[hébergement web](/links/web/hosting).
 
 **Découvrez comment consulter les statistiques et les logs CDN de votre site web grâce à votre offre d'hébergement web.**
 
