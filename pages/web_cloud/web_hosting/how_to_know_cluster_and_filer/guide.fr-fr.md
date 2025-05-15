@@ -50,7 +50,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 ### Retrouver le numéro du filer d'un hébergement web
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes :
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
 > **Etape 1**
