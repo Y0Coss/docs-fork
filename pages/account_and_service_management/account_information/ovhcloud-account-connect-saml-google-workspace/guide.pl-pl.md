@@ -139,8 +139,8 @@ Następnie przypisz **role** tym grupom użytkowników do OVHcloud. W przeciwnym
 
 Aby dodać grupę z poziomu [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Tożsamości`{.action} i w zakładce `Grupy użytkowników`{.action}. Następnie kliknij przycisk `Zadeklaruj grupę`{.action} i wypełnij pola:
 
-- **Nazwa grupy**: nazwa grupy w Google Workspace
-- **Uprawnienia**: poziom prawa przyznany tej grupie
+- **Nazwa grupy**: Nazwa grupy w Google Workspace
+- **Uprawnienia**: Poziom prawa przyznany tej grupie
 
 ![Grupy zarządzania użytkownikami Google Workspace](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 

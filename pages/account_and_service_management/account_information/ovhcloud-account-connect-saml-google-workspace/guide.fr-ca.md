@@ -139,8 +139,8 @@ Vous devez ensuite attribuer des **rôles** à ces groupes d'utilisateurs chez O
 
 Pour ajouter un groupe depuis votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Identités`{.action} puis dans l'onglet `Groupes d'utilisateurs`{.action}. Cliquez ensuite sur le bouton `Déclarer un groupe`{.action} et remplissez les champs :
 
-- **Nom de groupe** : nom du groupe au sein de Google Workspace
-- **Privilège** : niveau de droit accordé à ce groupe
+- **Nom de groupe** : Nom du groupe au sein de Google Workspace
+- **Privilège** : Niveau de droit accordé à ce groupe
 
 ![Groupes de gestion des utilisateurs Google Workspace](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 

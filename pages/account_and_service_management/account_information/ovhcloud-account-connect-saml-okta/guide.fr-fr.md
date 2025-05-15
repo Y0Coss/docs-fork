@@ -119,7 +119,7 @@ Vous devez à présent attribuer des **rôles** aux groupes d'utilisateurs Okta 
 Pour ajouter un groupe depuis votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Identités`{.action} puis dans l'onglet `Groupes d'utilisateurs`{.action}. Cliquez ensuite sur le bouton `Déclarer un groupe`{.action} et remplissez les champs :
 
 - **Group name** : Nom du groupe dans Okta
-- **Role**: Niveau de droits accordés à ce groupe
+- **Role** : Niveau de droits accordés à ce groupe
 
 ![Groupes de gestion des utilisateurs Okta](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 

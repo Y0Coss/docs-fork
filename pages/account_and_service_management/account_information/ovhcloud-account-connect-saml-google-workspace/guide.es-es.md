@@ -137,10 +137,10 @@ A continuación, asigne **funciones** a estos grupos de usuarios en OVHcloud. En
 
 ![Configuración de los grupos de usuarios](images/google_workspace_web_mobile_setup_groups.png){.thumbnail}
 
-Para añadir un grupo desde su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Identidades`{.action} y abra la pestaña `Grupos de usuarios`{.action}. A continuación, haga clic en el botón `Declarar un grupo`{.action} y complete los campos:
+Para añadir un grupo desde su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Identidades`{.action} y abra la pestaña `Grupos de usuarios`{.action}. A continuación, haga clic en el botón `Declarar un grupo`{.action} y complete los campos :
 
-- **Nombre de grupo**: nombre del grupo en Google Workspace
-- **Privilegio**: nivel de derecho concedido a este grupo
+- **Nombre de grupo** : Nombre del grupo en Google Workspace
+- **Privilegio** : Nivel de derecho concedido a este grupo
 
 ![Grupos de control de usuarios de Google Workspace](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 
