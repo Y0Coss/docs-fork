@@ -100,7 +100,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> ![OSL CDN Generated logs](/pages/assets/screens/other/web-tools/logs/osl-cdn-subdomain-date-selection.png){.thumbnail}
 >>
->> Dans le tableau qui s'affiche, cliquez sur le bouton `Télécharger`{.action}, située à droite dans la ligne du nom de domaine/sous-domaine concerné, pour récupérer les logs CDN.
+>> Dans le tableau qui s'affiche, cliquez sur le bouton `Télécharger`{.action}, situé à droite dans la ligne du nom de domaine/sous-domaine concerné, pour récupérer les logs CDN.
 >>
 >> Si besoin, consultez notre guide « [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics) » pour plus d'informations.
 
