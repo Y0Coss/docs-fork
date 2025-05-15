@@ -1789,6 +1789,7 @@
             + [Cluster status](storage_and_backup/block_storage/cloud_disk_array/ceph_check_cluster_status)
             + [Pool creation](storage_and_backup/block_storage/cloud_disk_array/ceph_create_a_pool)
             + [User creation](storage_and_backup/block_storage/cloud_disk_array/ceph_create_a_user)
+            + [How to upgrade a Cloud Disk Array (CDA) using the OVHcloud API](storage_and_backup/block_storage/cloud_disk_array/ceph_grow_with_api)
             + [IP ACL creation](storage_and_backup/block_storage/cloud_disk_array/ceph_create_an_ip_acl)
             + [FAQ](storage_and_backup/block_storage/cloud_disk_array/ceph_faq)
             + [Storage Benchmarking](storage_and_backup/block_storage/cloud_disk_array/ceph_io_benchmarking)
