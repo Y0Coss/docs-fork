@@ -56,7 +56,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 
 ### Visualiser les logs du CDN
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes :
 
 > [!tabs]
 > **Etape 1**
