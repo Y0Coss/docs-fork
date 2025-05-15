@@ -1,7 +1,7 @@
 ---
-title: 'Comment augmenter la capacité d’un Cloud Disk Array (CDA) via l’API OVHcloud'
-excerpt: "Découvrez comment étendre la capacité de stockage de votre Cloud Disk Array (CDA) OVHcloud à l’aide de l'API OVHcloud."
-updated: 2025-05-09
+title: "Comment augmenter la capacité d’un Cloud Disk Array (CDA) via l’API OVHcloud"
+excerpt: "Découvrez comment étendre la capacité de stockage de votre Cloud Disk Array (CDA) OVHcloud à l’aide de l'API OVHcloud"
+updated: 2025-05-15
 ---
 
 <style>
@@ -18,14 +18,22 @@ details[open]>summary::before {
 }
 </style>
 
-## Objectifs
+## Objectif
 
-Ce guide explique comment mettre à niveau votre cluster OVHcloud Cloud Disk Array (CDA) pour augmenter sa capacité de stockage. Il décrit le comportement technique d'une mise à niveau en direct, les appels d'API nécessaires et la manière de récupérer les informations de service requises. Cette opération est réalisée entièrement en ligne, sans interrompre l'accès en lecture/écriture à vos données, et n'est disponible que via l'API OVHcloud.
+Ce guide explique comment mettre à niveau votre cluster OVHcloud Cloud Disk Array (CDA) pour augmenter sa capacité de stockage. Il décrit le comportement technique d'une mise à niveau en direct, les appels API nécessaires et la manière de récupérer les informations de service requises. Cette opération est réalisée entièrement en ligne, sans interrompre l'accès en lecture/écriture à vos données, et n'est disponible que via l'API OVHcloud.
+
+> [!primary]
+>
+> Pour le moment, la mise à niveau d'un cluster Cloud Disk Array (CDA) n'est disponible que via l'API OVHcloud. Elle ne peut pas être effectuée via l'espace client OVHcloud.
+>
 
 ## Prérequis
 
 - Une solution [Cloud Disk Array](/links/storage/cloud-disk-array)
-- Être connecté à l’[espace client OVHcloud](/links/manager) ou à l’[API OVHcloud](/links/api)
+- Être connecté à l’[API OVHcloud](/links/api)
+
+> [!success]
+> Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
 ## En pratique
 
@@ -40,7 +48,7 @@ La mise à niveau d’un cluster Cloud Disk Array (CDA) s’effectue entièremen
 
 /// details | **Déroulement de la mise à niveau**
 
-Le processus de mise à niveau suit les étapes suivantes :
+Le processus de mise à niveau suit les étapes ci-dessous :
 
 - **Lancement de la commande de mise à niveau :** Le client initie la demande de mise à niveau via l’API OVHcloud, puis procède au paiement.
 - **Provisionnement de nouveaux nœuds de stockage :** De nouveaux nœuds Ceph OSD (Object Storage Daemon) sont automatiquement provisionnés et ajoutés au cluster. Ces nœuds sont déployés par groupes de trois, chacun dans une baie distincte afin de garantir la redondance et l’isolation des domaines de défaillance.
@@ -54,30 +62,32 @@ Le processus de mise à niveau suit les étapes suivantes :
 
 Avant de lancer une mise à niveau de CDA, vous aurez besoin de deux informations essentielles :
 
-- le nom de service de votre cluster CDA
+- Le nom de service de votre cluster CDA.
 - Le code de plan correspondant à votre configuration actuelle
 
 Suivez les étapes ci-dessous pour les récupérer à l'aide de l'API OVHcloud.
 
-/// details | **Étape 1. Obtenez le nom de votre service (passez à l'étape suivante si vous connaissez le nom de votre service)**.
+/// details | **Étape 1. Obtenez le nom de votre service (passez à l'étape suivante si vous le connaissez déjà)**.
 
-Sinon, vous pouvez le récupérer via l'espace client OVHcloud ou l'appel API suivant :
+Vous pouvez le récupérer via l'espace client OVHcloud ou l'appel API suivant :
 
 > [!tabs]
-> Via l'espace client OVHcloud
->> Tout d'abord, connectez-vous à votre [espace client OVHcloud](/links/manager) et allez dans la section `Bare Metal Cloud`{.action}. Cliquez sur l'en-tête `Platformes et services`{.action} puis sur le service `ceph-cluster`{.action}.
->>
->> Dans les « Détails », localisez le champ « ID » - cette valeur est le nom de votre service CDA.
->>
->> ![Ceph details](images/ceph_details.png){.thumbnail}
->>
 > Via l'API OVHcloud
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /dedicated/ceph GET /dedicated/ceph
 >> >
 >>
 >> Cette commande renvoie une liste de vos services CDA. Chaque service est identifié par un UUID, par exemple 48e5f77f-427b-4261-9799-7861033659fb
+>>
+> Via l'espace client OVHcloud
+>> Tout d'abord, connectez-vous à votre [espace client OVHcloud](/links/manager) et rendez-vous dans la section `Bare Metal Cloud`{.action}. Cliquez sur `Platformes et services`{.action} puis sur le service `ceph-cluster`{.action}.
+>>
+>> Dans les « Détails », localisez le champ « ID ». Cette valeur est le nom de votre service CDA.
+>>
+>> ![Ceph details](images/ceph_details.png){.thumbnail}
+>>
 
 ///
 
@@ -88,7 +98,7 @@ Votre plan CDA détermine le type et la taille de l'espace de stockage utilisé.
 - storage-2tb - ancienne configuration sur nvme+hdd (sur disques durs de 2TB)
 - cda-3tb - nouvelle configuration sur nvme (disques NVME de 3 To)
 
-1. Récupérer l'ID du service
+**Récupérer l'ID du service :**
 
 Utilisez le nom du service (UUID) de l'étape 1 pour obtenir l'ID de service correspondant :
 
@@ -97,15 +107,15 @@ Utilisez le nom du service (UUID) de l'étape 1 pour obtenir l'ID de service cor
 > @api {v1} /services?resourceName GET /services?resourceName={serviceName}
 >
 
-L'identifiant du service est un nombre - par exemple 1234567
+L'identifiant du service est un nombre, par exemple : 1234567
 
-2. Récupérer les détails du service
+**Récupérer les détails du service :**
 
 Interrogez maintenant les informations sur le service à l'aide de l'identifiant du service :
 
 > [!api]
 >
-> @api {v1} /services/{serviceId} GET /services/{serviceId} // Pour cet exemple, remplacer par 1234567
+> @api {v1} /services/{serviceId} GET /services/{serviceId} // Pour cet exemple, remplacez par 1234567
 >
 
 Recherchez le champ suivant dans la réponse :
@@ -124,12 +134,7 @@ La valeur sous billing.plan.code est le code de votre plan, dont vous aurez beso
 
 ### Comment effectuer la mise à niveau
 
-> [!primary]
->
-> Pour le moment, la mise à niveau d'un cluster Cloud Disk Array (CDA) n'est disponible que via l'API OVHcloud. Elle ne peut pas être effectuée via l'espace client OVHcloud.
->
-
-Le processus de mise à niveau est simple et ne nécessite qu'un seul appel à l'API.
+Le processus de mise à niveau est simple et ne nécessite qu'un seul appel API.
 
 **Étape 1 : Accéder à la console API**
  
@@ -164,7 +169,7 @@ Remplacez les espaces réservés par les détails de votre service :
 
 > [!primary]
 >
-> Note : La quantité fait référence au nombre d'unités que vous voulez au total, et non au nombre d'unités que vous voulez ajouter.
+> La quantité fait référence au nombre d'unités que vous voulez au total, et non au nombre d'unités que vous voulez ajouter.
 >
 > Par exemple, si votre cluster dispose actuellement d'une capacité de stockage de 3 To et que vous souhaitez l'augmenter à 6 To, vous devez définir la quantité = 2 (et non 1).
 >
@@ -189,7 +194,7 @@ Ouvrez l'URL fournie, terminez le processus de paiement et votre mise à niveau 
 
 ## Aller plus loin
 
-Rendez-vous sur notre chaîne Discord dédiée : <https://discord.gg/ovhcloud>. Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
+Rendez-vous sur notre chaîne Discord dédiée : <https://discord.gg/ovhcloud>. Posez des questions, ajoutez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

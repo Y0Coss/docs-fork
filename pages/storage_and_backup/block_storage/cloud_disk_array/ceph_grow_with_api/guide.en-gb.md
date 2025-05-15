@@ -1,7 +1,7 @@
 ---
 title: 'How to upgrade a Cloud Disk Array (CDA) using the OVHcloud API'
 excerpt: 'Learn how to increase the storage capacity of your OVHcloud Cloud Disk Array (CDA) using the OVHcloud API'
-updated: 2025-05-09
+updated: 2025-05-15
 ---
 
 <style>
@@ -69,7 +69,7 @@ Follow the steps below to retrieve them using the OVHcloud API.
 
 /// details | **Step 1. Get you service name (Skip this step if you already know your service name)**
 
-Otherwise, you can retrieve it via the OVHcloud Control Panel or the following API call:
+You can retrieve it via the OVHcloud Control Panel or the following API call:
 
 > [!tabs]
 > Via the OVHcloud API
