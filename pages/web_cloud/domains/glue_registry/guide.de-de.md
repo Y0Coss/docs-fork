@@ -212,8 +212,8 @@ Falls erforderlich, folgen Sie den Anweisungen in unserer Dokumentation "[OVHclo
 >
 > Die DNS-Zone kann die Einträge auch wie folgt zurückgeben:
 >
-> - domain.tld IN NS dns1
-> - domain.tld IN NS dns2
+> - domain.tld IN NS dns1.
+> - domain.tld IN NS dns2.
 >
 > Dieses Ergebnis entspricht derselben Konfiguration und ist funktional. Der Hintergrund ist, dass es sich um denselben Domainnamen auf beiden Seiten des *NS*-Eintrags handelt.
 >

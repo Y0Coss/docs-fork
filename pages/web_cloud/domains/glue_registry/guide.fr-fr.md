@@ -22,7 +22,7 @@ Pour plus d'informations sur ces sujets, consultez les guides suivants :
 - [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information).
 - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Selon vos besoins, il est possible de personnaliser le nom des serveurs DNS de votre nom de domaine OVHcloud à l'aide des « ***Glue Records*** ».
+Selon vos besoins, il est possible de personnaliser le nom des serveurs DNS de votre nom de domaine OVHcloud à l'aide des « **Glue Records** ».
 
 **Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud.**
 
@@ -58,7 +58,7 @@ Dans notre exemple illustré ci-dessus, le domaine **domain.tld** utilise actuel
 - **dnsX1.ovh.net** associé à l'IPv4 *203.0.113.0* et l'IPv6 *2001:db8:1:1b00:203:0:113:0*.
 - **dnsX2.ovh.net** associé à l'IPv4 *203.0.113.1* et l'IPv6 *2001:db8:1:1b00:203:0:113:1*.
 
-Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
 
 ### 2 - Ajouter les enregistrements « GLUE » <a name="step2"></a>
 
@@ -216,8 +216,8 @@ Si nécessaire, reportez-vous aux instructions décrites dans notre documentatio
 >
 > La zone DNS peut afficher les enregistrements comme suit :
 >
-> - domain.tld IN NS dns1
-> - domain.tld IN NS dns2
+> - domain.tld IN NS dns1.
+> - domain.tld IN NS dns2.
 >
 > Rassurez-vous, cela équivaut au même résultat et cette configuration fonctionnera parfaitement. Ce phénomène s'explique par la présence du même nom de domaine de part et d'autre de l'enregistrement *NS*.
 >

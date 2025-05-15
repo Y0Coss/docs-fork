@@ -56,7 +56,7 @@ W przedstawionym powyżej przykładzie domena **domain.tld** używa obecnie nast
 - **dnsX1.ovh.net** w połączeniu z IPv4 *203.0.113.0* i IPv6 *2001:db8:1:1b00:203:0:113:0*.
 - **dnsX2.ovh.net** w połączeniu z IPv4 *203.0.113.1* i IPv6 *2001:db8:1:1b00:203:0:113:1*.
 
-W razie potrzeby i aby uzyskać więcej informacji, zapoznaj się z naszym tutorialem dotyczącym narzędzia [Zonemaster](/pages/web_cloud/domains/dns_zonemaster)
+W razie potrzeby i aby uzyskać więcej informacji, zapoznaj się z naszym tutorialem dotyczącym narzędzia [Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
 
 ### 2 - Dodać rekordy "GLUE" <a name="step2"></a>
 
@@ -127,8 +127,8 @@ Utwórz rekordy *A* i *AAAA* dla hostów, które zdefiniowałeś na poprzednim e
 
 Operacja ta zostanie przeprowadzona w interfejsie dostawcy zarządzającego konfiguracją DNS Twojej domeny. W związku z tym dwie możliwości:
 
-- **Twoja domena nie używa aktywnej strefy DNS w OVHcloud**: skontaktuj się z dostawcą zarządzającym usługą. Po zakończeniu operacji przejdź do kolejnego etapu.
-- **Twoja domena używa aktywnej strefy DNS w OVHcloud**: zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Strefy DNS`{.action}, a następnie wybierz nazwę domeny, której użyłeś do utworzenia GLUE podczas [etapu 2](#step2). Przejdź do zakładki `Strefa DNS`{.action} i kliknij `Dodaj rekord`{.action}. Wybierz wpis typu *A* lub *AAAA* w zależności od typu IP, który chcesz dodać. Postępuj zgodnie z kolejnymi instrukcjami, wprowadzając *subdomenę* i adres *IPv4* (A) lub *IPv6* (AAAA) i kontynuuj aż do zatwierdzenia dodania subdomeny. Jeśli potrzebujesz pomocy, skorzystaj z instrukcji zawartych w przewodniku OVHcloud [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+- **Twoja domena nie używa aktywnej strefy DNS w OVHcloud**: Skontaktuj się z dostawcą zarządzającym usługą. Po zakończeniu operacji przejdź do kolejnego etapu.
+- **Twoja domena używa aktywnej strefy DNS w OVHcloud**: Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Strefy DNS`{.action}, a następnie wybierz nazwę domeny, której użyłeś do utworzenia GLUE podczas [etapu 2](#step2). Przejdź do zakładki `Strefa DNS`{.action} i kliknij `Dodaj rekord`{.action}. Wybierz wpis typu *A* lub *AAAA* w zależności od typu IP, który chcesz dodać. Postępuj zgodnie z kolejnymi instrukcjami, wprowadzając *subdomenę* i adres *IPv4* (A) lub *IPv6* (AAAA) i kontynuuj aż do zatwierdzenia dodania subdomeny. Jeśli potrzebujesz pomocy, skorzystaj z instrukcji zawartych w przewodniku OVHcloud "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-2.png){.thumbnail}
 
@@ -154,8 +154,8 @@ Aby personalizacja serwerów DNS była widoczna w sieci DNS (poprzez *Whois*, *d
 
 Operacja ta zostanie przeprowadzona w interfejsie dostawcy zarządzającego konfiguracją DNS Twojej domeny. Istnieją zatem dwie możliwości:
 
-- **Twoja domena nie używa aktywnej strefy DNS w OVHcloud**: skontaktuj się z dostawcą, który zarządza dostawcą usług hostingowych, aby wprowadzić zmiany.
-- **Twoja domena używa aktywnej strefy DNS w OVHcloud**: zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie z lewej strony kliknij `Strefy DNS`{.action}, następnie wybierz nazwę domeny, dla której personalizowałeś serwery DNS. Przejdź do zakładki `Strefa DNS`{.action}, następnie kliknij polecenie `Modyfikacja w trybie tekstowym`{.action}. 
+- **Twoja domena nie używa aktywnej strefy DNS w OVHcloud**: Skontaktuj się z dostawcą, który zarządza dostawcą usług hostingowych, aby wprowadzić zmiany.
+- **Twoja domena używa aktywnej strefy DNS w OVHcloud**: Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie z lewej strony kliknij `Strefy DNS`{.action}, następnie wybierz nazwę domeny, dla której personalizowałeś serwery DNS. Przejdź do zakładki `Strefa DNS`{.action}, następnie kliknij polecenie `Modyfikacja w trybie tekstowym`{.action}. 
 
 Pojawi się okno zawierające strefę DNS w trybie *tekstowym*:
 
@@ -180,15 +180,15 @@ Aby lepiej zrozumieć ten etap, skorzystaj z nazwy domeny *domain.tld* i jej str
 
 W sprawozdaniu tym znajdują się następujące elementy: 
 
-- pierwsza wartość numeryczna linii *SOA* jest następująca: *2023071700*;
-- istnieją dwa rekordy typu *NS* dla domeny *domain.tld*;
-- rekordy typu *NS* są nadal skierowane do obu serwerów DNS **dnsX1.ovh.net** i **dnsX2.ovh.net**.
+- Pierwsza wartość numeryczna linii *SOA* jest następująca: *2023071700*.
+- Istnieją dwa rekordy typu *NS* dla domeny *domain.tld*.
+- Rekordy typu *NS* są nadal skierowane do obu serwerów DNS **dnsX1.ovh.net** i **dnsX2.ovh.net**.
 
 Aby kontynuować personalizację serwerów DNS dla domeny *domain.tld*, musisz:
 
-- zwiększenie pierwszej wartości liczbowej linii *SOA* o "1": *202307170**1*** (należy zauważyć, że jeżeli pierwsza wartość liczbowa będzie następująca:*2023071704*, to zawsze będzie się zwiększać o "1" i wtedy uzyska się następujący wynik: *202307170**5*** );
-- wymienić cel **dnsX1.ovh.net.** na **dns1.domain.tld.** tylko dla linii rozpoczynającej się od **IN NS**;
-- wymienić cel **dnsX2.ovh.net.** na **dns2.domain.tld.** tylko dla linii rozpoczynającej się od **IN NS**.
+- Zwiększenie pierwszej wartości liczbowej linii *SOA* o "1": *202307170**1*** (należy zauważyć, że jeżeli pierwsza wartość liczbowa będzie następująca:*2023071704*, to zawsze będzie się zwiększać o "1" i wtedy uzyska się następujący wynik: *202307170**5*** ).
+- Wymienić cel **dnsX1.ovh.net.** na **dns1.domain.tld.** tylko dla linii rozpoczynającej się od **IN NS**.
+- Wymienić cel **dnsX2.ovh.net.** na **dns2.domain.tld.** tylko dla linii rozpoczynającej się od **IN NS**.
 
 Po wprowadzeniu zmian, wynik w naszym przykładzie będzie następujący:
 
@@ -201,7 +201,7 @@ $TTL 3600
 
 W przypadku naszej domeny *domain.tld*, serwery DNS, które będą się wyświetlały po uwzględnieniu modyfikacji i propagacji DNS, będą teraz **dns1.domain.tld.** i **dns2.domain.tld.**.
 
-Jeśli potrzebujesz pomocy, skorzystaj z instrukcji zawartych w przewodniku OVHcloud [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+Jeśli potrzebujesz pomocy, skorzystaj z instrukcji zawartych w przewodniku OVHcloud "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 > [!success]
 >
@@ -212,10 +212,10 @@ Jeśli potrzebujesz pomocy, skorzystaj z instrukcji zawartych w przewodniku OVHc
 > - domain.tld IN NS dns1.domain.tld.
 > - domain.tld IN NS dns2.domain.tld.
 >
-> strefa DNS może wyświetlać następujące rekordy:
+> Strefa DNS może wyświetlać następujące rekordy:
 >
-> - domain.tld IN NS dns1
-> - domain.tld IN NS dns2
+> - domain.tld IN NS dns1.
+> - domain.tld IN NS dns2.
 >
 > Upewnij się, że otrzymasz ten sam wynik i ta konfiguracja będzie działać prawidłowo. Zjawisko to jest generowane przez fakt, że jest to ta sama nazwa domeny po obu stronach rekordu *NS*.
 >
@@ -253,9 +253,9 @@ W przykładzie personalizacji serwerów DNS domeny *domain.tld* serwer DNS **dns
 
 ## prawdź również
 
-[Informacje ogólne na temat serwerów DNS OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Informacje ogólne na temat serwerów DNS OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
 
-[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
