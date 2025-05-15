@@ -1249,6 +1249,7 @@
     + [Web Hosting](products/web-cloud-hosting)
         + [General Information](web-cloud-hosting-general-information)
             + [IP address list for Web Hosting clusters](web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+            + [Web Hosting - How to find cluster and/or filer](web_cloud/web_hosting/how_to_know_cluster_and_filer)
             + [Technical specifications of Web Hostings](web_cloud/web_hosting/hosting_technical_specificities)
             + [Web Hosting - Available language versions](web_cloud/web_hosting/web_hosting_main_info)
         + [Getting started](web-cloud-hosting-getting-started)
