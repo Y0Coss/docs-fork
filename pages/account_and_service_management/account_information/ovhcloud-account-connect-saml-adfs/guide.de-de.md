@@ -125,7 +125,7 @@ Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.ac
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Klicken Sie dann auf die Registerkarte `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
+Klicken Sie dann auf den Tab `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -194,7 +194,7 @@ Anschließend können Sie überprüfen, ob die Gruppe zu Ihrem OVHcloud Account 
 
 Wenn Sie sich später mit dem Active Directory Benutzer "John Doe" verbinden, erkennt Ihr OVHcloud Account, dass der Benutzer die von seiner Gruppe definierte Rolle "REGULAR" hat.
 
-Achtung, wenn Sie die Berechtigung `Keine` rolle, müssen Sie dieser Gruppe Rechte über die [IAM-Richtlinien](/pages/account_and_service_management/account_information/iam-policy-ui) zuweisen.
+Achtung, wenn Sie die Berechtigung `Keine` wählen, müssen Sie dieser Gruppe Rechte über die [IAM-Richtlinien](/pages/account_and_service_management/account_information/iam-policy-ui) zuweisen.
 
 Anschließend können Sie sich von Ihrem Account ausloggen und sich mit Ihrem AD FS als Identity Provider neu verbinden.
 
