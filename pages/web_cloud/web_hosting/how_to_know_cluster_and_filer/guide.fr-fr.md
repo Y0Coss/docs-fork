@@ -42,7 +42,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> 
 > **Etape 4**
 >>
->> Sur la nouvelle page, récupérez le numéro de cluster de l'hébergement Web sur cette page sous la mention **Serveur FTP et SFTP** (3 chiffres compris entre `0` et `9`).
+>> Sur la nouvelle page, récupérez le numéro de cluster de l'hébergement Web sous la mention **Serveur FTP et SFTP** (3 chiffres compris entre `0` et `9`).
 >>
 >> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
 
