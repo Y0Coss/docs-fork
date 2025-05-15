@@ -1,7 +1,7 @@
 ---
 title: "Personalizacja serwerów DNS domeny (Glue Records)"
 excerpt: "Dowiedz się, jak personalizować serwery DNS Twojej domeny OVHcloud"
-updated: 2025-05-13
+updated: 2025-05-15
 ---
 
 ## Wprowadzenie
