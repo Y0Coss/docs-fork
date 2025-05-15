@@ -1345,6 +1345,7 @@
             + [How to migrate a website from a web hosting plan to a VPS](web_cloud/web_hosting/migrate_website_to_vps)
             + [Speeding up your website with CDN](web_cloud/web_hosting/cdn_how_to_use_cdn)
             + [Accessing a website’s logs and statistics on a Web Hosting](web_cloud/web_hosting/logs_and_statistics)
+            + [Accessing a CDN’s logs and statistics on a Web Hosting](web_cloud/web_hosting/cdn_statistics_and_logs)
             + [Geolocating your website](web_cloud/web_hosting/multisites_geolocation)
             + [Optimising your website’s performance](web_cloud/web_hosting/optimise_your_website_performance)
         + [Troubleshooting](web-cloud-hosting-troubleshooting)

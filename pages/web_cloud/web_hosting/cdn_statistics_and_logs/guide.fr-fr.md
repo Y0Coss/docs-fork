@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Consulter les statistiques et logs CDN"
 excerpt: "Découvrez comment consulter les statistiques et les logs CDN de votre site web grâce à votre offre d'hébergement web"
-updated: 2025-05-14
+updated: 2025-05-15
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ Ce guide vous explique comment accéder et consulter les statistiques et les log
 
 ### Visualiser les statistiques du CDN
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes
 
 > [!tabs]
 > **Etape 1**
@@ -37,16 +37,16 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 > **Etape 3**
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}. 
->> 
-> **Etape 4**
 >>
 >> Dans la partie `Statistiques de visites`, cliquez sur le bouton `Voir les statistiques`{.action}.
 >>
-> **Etape 5**
+>> ![Satistics and logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
+>>
+> **Etape 4**
 >>
 >> Vous êtes redirigé vers l'outil **OVHcloud Web Statistics**. Dans cet outil, cliquez sur le formulaire intitulé `Sélection du domaine`{.action} situé en haut de la page, puis choisissez un nom de domaine pour lequel le CDN est actif.
 >>
-> **Etape 6**
+> **Etape 5**
 >>
 >> Dans la colonne de droite, cliquez sur l'onglet `Cache`{.action}.
 >>
@@ -56,7 +56,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 
 ### Visualiser les logs du CDN
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes
 
 > [!tabs]
 > **Etape 1**
@@ -73,30 +73,34 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6*
 >>
 > **Etape 3**
 >>
->> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}. 
->> 
-> **Etape 4**
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}.
 >>
 >> Dans la partie `Logs du site web`, cliquez sur le bouton `Voir les logs`{.action}.
 >>
-> **Etape 5**
+>> ![View logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
+>> 
+> **Etape 4**
 >>
 >> Sur la nouvelle page qui s'affiche, cliquez sur le bouton `CDN`{.action} présent dans le bandeau en haut de page.
 >>
->> 
+>> ![OSL CDN](/pages/assets/screens/other/web-tools/logs/osl-cdn.png){.thumbnail}
 >>
-> **Etape 6**
+> **Etape 5**
 >>
->> Sur la nouvelle page qui apparaît, renseignez le nom de domaine concernée puis la date à laquelle vous souhaitez consulter les logs CDN.
+>> Sur la nouvelle page qui apparaît :
+>>
+>> - Sélectionnez le nom de domaine/sous-domaine concernée via le menu déroulant `Sous-domaine`{.action}.
+>> - Choisissez la date dans le formulaire `date`{.action} à laquelle vous souhaitez consulter les logs CDN.
+>> - Appuyez ensuite sur le bouton `Générer`{.action}.
 >>
 >> > [!primary]
 >> >
 >> > Les logs CDN sont indisponibles le jour même où ils sont générés, vous devrez donc patienter le lendemain pour les consulter.
 >> >
 >>
+>> ![OSL CDN Generated logs](/pages/assets/screens/other/web-tools/logs/osl-cdn-subdomain-date-selection.png){.thumbnail}
 >>
->>
->> Vous visualisez désormais les logs du CDN pour votre nom de domaine.
+>> Dans le tableau qui s'affiche, cliquez sur le bouton `Télécharger`{.action}, située à droite dans la ligne du nom de domaine/sous-domaine concerné, pour récupérer les logs CDN.
 >>
 >> Si besoin, consultez notre guide « [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics) » pour plus d'informations.
 
