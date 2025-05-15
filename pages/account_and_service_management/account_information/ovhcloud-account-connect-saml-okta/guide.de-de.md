@@ -84,7 +84,7 @@ Klicken Sie in der Seitenleiste auf `Identity, Security und Operations`{.action}
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Klicken Sie dann auf die Registerkarte `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
+Klicken Sie dann auf den Tab `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -129,7 +129,7 @@ Anschließend können Sie überprüfen, ob die Gruppe zu Ihrem OVHcloud Account 
 
 ![Okta Benutzer-Verwaltungsgruppen](images/ovhcloud_user_management_groups_3.png){.thumbnail}
 
-Wenn sich später ein Benutzer aus der Gruppe **Intern** Rolle, erkennt Ihr OVHcloud Account, dass der Benutzer die von seiner Gruppe definierte Rolle "UNPRIVILEGED" hat.
+Wenn sich später ein Benutzer aus der Gruppe **Intern** einloggt, erkennt Ihr OVHcloud Account, dass der Benutzer die von seiner Gruppe definierte Rolle "UNPRIVILEGED" hat.
 
 Achtung, wenn Sie die Berechtigung `Keine` erteilen, müssen Sie dieser Gruppe Rechte über die [IAM-Richtlinien](/pages/account_and_service_management/account_information/iam-policy-ui) zuweisen.
 
