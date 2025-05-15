@@ -65,7 +65,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Etape 3**
 >>
->> Dans l'encadré **Informations générales** de la page qui s'affiche, vous retrouvez le numéro du filer en dessous de la mention `Filer`{.action}
+>> Dans l'encadré **Informations générales** de la page qui s'affiche, vous retrouvez le numéro du filer en dessous de la mention `Filer`{.action}.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
 
