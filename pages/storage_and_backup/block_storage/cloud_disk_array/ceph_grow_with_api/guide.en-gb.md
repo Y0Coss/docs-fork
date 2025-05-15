@@ -1,6 +1,6 @@
 ---
 title: 'How to upgrade a Cloud Disk Array (CDA) using the OVHcloud API'
-excerpt: 'Learn how to increase the storage capacity of your OVHcloud Cloud Disk Array (CDA) using the OVHcloud API.'
+excerpt: 'Learn how to increase the storage capacity of your OVHcloud Cloud Disk Array (CDA) using the OVHcloud API'
 updated: 2025-05-09
 ---
 
@@ -18,14 +18,22 @@ details[open]>summary::before {
 }
 </style>
 
-## Objectives
+## Objective
 
-This guide explains how to upgrade your OVHcloud Cloud Disk Array (CDA) cluster to increase its storage capacity. It describes the technical behavior of a live upgrade, the necessary API calls, and how to retrieve required service information. This operation is performed entirely online, without interrupting read/write access to your data, and is only available via the OVHcloud API.
+This guide explains how to upgrade your OVHcloud Cloud Disk Array (CDA) cluster to increase its storage capacity. It describes the technical behaviour of a live upgrade, the necessary API calls, and how to retrieve required service information. This operation is performed entirely online, without interrupting read/write access to your data, and is available via the OVHcloud API.
+
+> [!primary]
+>
+> At the moment, upgrading a Cloud Disk Array (CDA) cluster is only available via the OVHcloud API. It cannot be done through the OVHcloud Control Panel.
+>
 
 ## Requirements
 
 - A [Cloud Disk Array](/links/storage/cloud-disk-array) solution
-- Access to the [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
+- Access to the [OVHcloud API](/links/api)
+
+> [!success]
+> If you are not familiar with the OVHcloud API, read our [First Steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps) guide.
 
 ## Instructions
 
@@ -45,8 +53,8 @@ The upgrade process follows these steps:
 - **Upgrade Order Initiation:** The customer initiates an upgrade request via the OVHcloud API and proceeds with payment.
 - **Provisioning of New Storage Nodes:**  New Ceph OSD (Object Storage Daemon) nodes are automatically provisioned and added to the cluster. These are deployed in groups of three, with each node placed in a separate rack to maintain redundancy and failure domain isolation.
 - **Cluster Acknowledgment:**  Once the new nodes are up and running, the system marks the upgrade operation as complete from the customer’s perspective. No further action is required from the user.
-- **Automatic Data Rebalancing:**  In the background, Ceph initiates a data rebalancing phase. Existing data is redistributed across the entire cluster—including the newly added nodes—while ensuring that the configured replication level (typically three replicas) is maintained throughout the process.
-- **Performance Stabilization:**  The rebalancing continues until the cluster reaches an even distribution of data, as determined by Ceph’s internal placement algorithms. Once completed, the cluster returns to optimal performance.
+- **Automatic Data Rebalancing:**  In the background, Ceph initiates a data rebalancing phase. Existing data is redistributed across the entire cluster, including the newly added nodes—while ensuring that the configured replication level (typically three replicas) is maintained throughout the process.
+- **Performance Stabilization:** The rebalancing continues until the cluster reaches an even distribution of data, as determined by Ceph’s internal placement algorithms. Once completed, the cluster returns to optimal performance.
 
 ///
 
@@ -59,37 +67,39 @@ Before initiating a CDA upgrade, you will need two key pieces of information:
 
 Follow the steps below to retrieve them using the OVHcloud API.
 
-/// details | **Step 1. Get you service name (Skip if you know your service name)**
+/// details | **Step 1. Get you service name (Skip this step if you already know your service name)**
 
 Otherwise, you can retrieve it via the OVHcloud Control Panel or the following API call:
 
 > [!tabs]
-> Via the OVHcloud Control Panel
->> First, log into your [OVHcloud Control Panel](/links/manager) and go to the `Bare Metal Cloud`{.action} section. Click the `Platforms and services`{.action} header then on the `ceph-cluster`{.action} service.
->>
->> In the `Details`, locate the `ID` field — this value is your CDA service name.
->>
->> ![Ceph details](images/ceph_details.png){.thumbnail}
->>
 > Via the OVHcloud API
+>> Use the following API call:
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /dedicated/ceph GET /dedicated/ceph
 >> >
 >>
->> This will return a list of your CDA services. Each service is identified by a UUID, for example 48e5f77f-427b-4261-9799-7861033659fb
+>> This will return a list of your CDA services. Each service is identified by a UUID, for example 48e5f77f-427b-4261-9799-7861033659fb.
+>>
+> Via the OVHcloud Control Panel
+>> First, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Bare Metal Cloud`{.action} section. Click the `Platforms and services`{.action} section then the `ceph-cluster`{.action} service.
+>>
+>> In the `Details`, locate the `ID` field. This value is your CDA service name.
+>>
+>> ![Ceph details](images/ceph_details.png){.thumbnail}
 >>
 
 ///
 
-/// details | **Step 2. Identify Your Plan Code (Skip if you know which plan you use)**
+/// details | **Step 2. Identify Your Plan Code (skip this step if you know which plan you use)**
 
 Your CDA plan determines the type and size of storage used. The two available plans are:
 
 - storage-2tb - old setup on nvme+hdd (on 2TB HDD disks)
 - cda-3tb - new setup on nvme (3TB NVME disks)
 
-1. Retrieve the Service ID
+**Retrieve the Service ID:**
 
 Use the service name (UUID) from Step 1 to get the corresponding service ID:
 
@@ -98,15 +108,15 @@ Use the service name (UUID) from Step 1 to get the corresponding service ID:
 > @api {v1} /services?resourceName GET /services?resourceName={serviceName}
 >
 
-Service ID is a number - e.g. 1234567
+The service ID is a number, e.g. 1234567
 
-2. Retrieve the Service Details
+**Retrieve the Service Details:**
 
 Now query the service information using the service ID:
 
 > [!api]
 >
-> @api {v1} /services/{serviceId} GET /services/{serviceId} // For this example, replace by 1234567
+> @api {v1} /services/{serviceId} GET /services/{serviceId} // For this example, replace with 1234567
 >
 
 Look for the following field in the response:
@@ -119,16 +129,11 @@ Look for the following field in the response:
 }
 ```
 
-The value under billing.plan.code is your plan code, which you’ll need to perform the upgrade.
+The value under billing.plan.code is your plan code, which you will need to perform the upgrade.
 
 ///
 
 ### How to Perform the Upgrade
-
-> [!primary]
->
-> At this time, upgrading a Cloud Disk Array (CDA) cluster is only available via the OVHcloud API. It cannot be done through the OVHcloud Control Panel.
->
 
 The upgrade process is straightforward and requires just one API call.
 
@@ -165,7 +170,7 @@ Replace the placeholders with your service details:
 
 > [!primary]
 >
-> Note: quantity refers to how many units you want in total, not how many units you want to add.
+> Quantity refers to how many units you want in total, not how many units you want to add.
 >
 > For example, if your cluster currently has 3 TB of storage and you want to increase it to 6 TB, you need to set quantity = 2 (not 1).
 >
@@ -183,7 +188,7 @@ If the API call is successful, the response will include a payment URL located i
   }
 }
 ```
-    
+
 **Step 4: Confirm the Order**
 
 Open the provided URL, complete the payment process, and your upgrade will begin automatically. The new storage nodes are typically added to your CDA cluster within a few minutes after payment is confirmed.
@@ -192,6 +197,6 @@ Open the provided URL, complete the payment process, and your upgrade will begin
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
