@@ -1,7 +1,7 @@
 ---
 title: 'Iniziare a utilizzare la soluzione MX Plan'
 excerpt: 'Come eseguire le prime operazioni sul servizio MX Plan'
-updated: 2025-04-28
+updated: 2025-04-30
 ---
 
 <style>
@@ -79,7 +79,7 @@ Per maggiori informazioni sulla creazione di un indirizzo email, clicca sulla sc
 >> - **Dimensione account**: determina la dimensione che vuoi attribuire all’account email.
 >> - **Nome**: Inserisci un nome.
 >> - **Nome**: Inserisci un nome.
->> - **Password**: [Definisci una password](/pages/account_and_service_management/account_information/manage-ovh-password#en-pratique) e confermala. Per motivi di sicurezza, vi consigliamo di non utilizzare due volte la stessa password, sceglierne una che non abbia alcun rapporto con le vostre informazioni personali (ad esempio, evitate di inserire il vostro cognome, nome e data di nascita) e di rinnovarla regolarmente.
+>> - **Password**: [Definisci una password](/pages/account_and_service_management/account_information/manage-ovh-password) e confermala. Per motivi di sicurezza, vi consigliamo di non utilizzare due volte la stessa password, sceglierne una che non abbia alcun rapporto con le vostre informazioni personali (ad esempio, evitate di inserire il vostro cognome, nome e data di nascita) e di rinnovarla regolarmente.
 >>
 >> Una volta completati i campi clicca su `Seguente`{.action} e verifica le informazioni mostrate nel riepilogo. Se sono corrette, clicca su `Conferma`{.action}. Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione.
 >>
@@ -97,7 +97,7 @@ Per maggiori informazioni sulla creazione di un indirizzo email, clicca sulla sc
 >> - **Cognome**: Inserisci un cognome.
 >> - **Nome**: Inserisci un nome.
 >> - **Nome da visualizzare**: indica il nome che comparirà come mittente delle email inviate da questo indirizzo.
->> - **Password**: [Definisci una password](/pages/account_and_service_management/account_information/manage-ovh-password#en-pratique) e confermala. Per motivi di sicurezza, vi consigliamo di non utilizzare due volte la stessa password, sceglierne una che non abbia alcun rapporto con le vostre informazioni personali (ad esempio, evitate di inserire il vostro cognome, nome e data di nascita) e di rinnovarla regolarmente.
+>> - **Password**: [Definisci una password](/pages/account_and_service_management/account_information/manage-ovh-password) e confermala. Per motivi di sicurezza, vi consigliamo di non utilizzare due volte la stessa password, sceglierne una che non abbia alcun rapporto con le vostre informazioni personali (ad esempio, evitate di inserire il vostro cognome, nome e data di nascita) e di rinnovarla regolarmente.
 >> - **Quota**: determina la dimensione che vuoi attribuire all’account email.
 >>
 >> Una volta completati i campi clicca su `Seguente`{.action} e verifica le informazioni mostrate nel riepilogo. Se sono corrette, clicca su `Conferma`{.action}. Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione.
@@ -227,7 +227,7 @@ Per effettuare questa operazione clicca sulla scheda corrispondente alla tua tec
 >> - `Verso l’indirizzo`: Inserisci qui l’indirizzo di destinazione del reindirizzamento. Può trattarsi di uno dei tuoi indirizzi email OVHcloud o di un indirizzo email esterno.<br>
 >> - `Scegli la modalità di copia`: scegli se conservare una copia dell’email ricevuta sull’indirizzo email di destinazione (`Dall’indirizzo`) o se reindirizzare direttamente all’indirizzo di reindirizzamento (`Verso l’indirizzo`) senza conservare una copia.
 >>
->> Per comprendere l’utilizzo dei reindirizzamenti e degli alias sul tuo servizio MX Plan, consulta la nostra guida completa: "[Utilizzare i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_reindirizzamenti)".
+>> Per comprendere l’utilizzo dei reindirizzamenti e degli alias sul tuo servizio MX Plan, consulta la nostra guida completa: "[Utilizzare i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)".
 >>
 > **OWA e Zimbra**
 >>
@@ -241,7 +241,7 @@ Per effettuare questa operazione clicca sulla scheda corrispondente alla tua tec
 >> - `Verso l’indirizzo`: Inserisci qui l’indirizzo di destinazione del reindirizzamento. Può trattarsi di uno dei tuoi indirizzi email OVHcloud o di un indirizzo email esterno.<br>
 >> - `Scegli la modalità di copia`: scegli se conservare una copia dell’email ricevuta sull’indirizzo email di destinazione (`Dall’indirizzo`) o se reindirizzare direttamente all’indirizzo di reindirizzamento (`Verso l’indirizzo`) senza conservare una copia.
 >>
->> Per comprendere l'utilizzo dei reindirizzamenti e degli alias sul tuo servizio MX Plan, consulta la nostra guida completa: "[Utilizzare i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_reindirizzamenti#versione-cronologia-della-offerta-mx-plan)".
+>> Per comprendere l'utilizzo dei reindirizzamenti e degli alias sul tuo servizio MX Plan, consulta la nostra guida completa: "[Utilizzare i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)".
 
 ### Risposta automatica <a name="autoreply"></a>
 
@@ -274,13 +274,11 @@ Seleziona la scheda corrispondente alla tecnologia email della tua soluzione MX 
 
 [Utilizzare la webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-[Utilizza i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_reindirizzamenti#versione-cronologia-della-offerta-mx-plan).
+[Utilizza i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
 
 [MX Plan - Crea risposta automatica su un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
 
-[Utilizza i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_reindirizzamenti).
-
-Se le tue esigenze cambiano e vuoi usufruire di funzionalità aggiuntive, puoi anche [migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+[Utilizza i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

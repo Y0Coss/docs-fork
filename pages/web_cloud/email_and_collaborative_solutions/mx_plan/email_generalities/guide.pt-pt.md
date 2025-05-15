@@ -1,7 +1,7 @@
 ---
 title: 'Introdução à oferta MX Plan'
 excerpt: 'Saiba como começar a usar a oferta MX Plan'
-updated: 2025-04-28
+updated: 2025-04-30
 ---
 
 <style>
@@ -79,7 +79,7 @@ Para saber como criar um endereço de e-mail, clique no separador correspondente
 >> - **Tamanho da conta** : Determine o tamanho que pretende atribuir à conta de e-mail.
 >> - **Nome Próprio** : Introduza um Nome.
 >> - **Nome** : Introduza um nome.
->> - **Palavra-passe**: [Defina uma palavra-passe](/pages/account_and_service_management/account_information/manage-ovh-password#en-practice) e confirme-a. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento) e renove-a regularmente.
+>> - **Palavra-passe**: [Defina uma palavra-passe](/pages/account_and_service_management/account_information/manage-ovh-password) e confirme-a. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento) e renove-a regularmente.
 >>
 >> Depois de preencher os campos, clique em `Seguinte`{.action} e verifique as informações apresentadas no resumo. Se as informações estiverem corretas, clique em `Validar`{.action}. Repita este passo sempre que necessário, de acordo com o número de contas disponíveis.
 >>
@@ -97,7 +97,7 @@ Para saber como criar um endereço de e-mail, clique no separador correspondente
 >> - **Nome Próprio** : Introduza um Nome.
 >> - **Nome** : Introduza um nome.
 >> - **Nome a visualizar** : Indique o nome que pretende apresentar como remetente quando enviar mensagens de correio eletrónico para este endereço.
->> - **Palavra-passe**: [Defina uma palavra-passe](/pages/account_and_service_management/account_information/manage-ovh-password#en-practice) e confirme-a. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento) e renove-a regularmente.
+>> - **Palavra-passe**: [Defina uma palavra-passe](/pages/account_and_service_management/account_information/manage-ovh-password) e confirme-a. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento) e renove-a regularmente.
 >> - **Quota** : Determine o tamanho que pretende atribuir à conta de e-mail.
 >>
 >> Depois de preencher os campos, clique em `Seguinte`{.action} e verifique as informações apresentadas no resumo. Se as informações estiverem corretas, clique em `Validar`{.action}. Repita este passo sempre que necessário, de acordo com o número de contas disponíveis.
@@ -227,7 +227,7 @@ Para isso, clique no separador correspondente à sua tecnologia de e-mail:
 >> - `Para o endereço`: Introduza aqui o endereço de destino do seu reencaminhamento. Pode ser um dos seus endereços de e-mail OVHcloud ou um endereço de e-mail externo.<br>
 >> - `Escolha um modo de cópia`: defina se deseja conservar uma cópia do e-mail recebido no endereço de e-mail visado (`Do endereço`) ou diretamente enviar para o endereço de reencaminhamento (`Para o endereço`) sem conservar uma cópia.
 >>
->> Para compreender a utilização dos reencaminhamentos e alias no serviço MX Plan, consulte o nosso guia completo: « [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_reencaminhamentos) ».
+>> Para compreender a utilização dos reencaminhamentos e alias no serviço MX Plan, consulte o nosso guia completo: « [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections) ».
 >>
 > **OWA e Zimbra**
 >>
@@ -241,7 +241,7 @@ Para isso, clique no separador correspondente à sua tecnologia de e-mail:
 >> - `Para o endereço`: Introduza aqui o endereço de destino do seu reencaminhamento. Pode ser um dos seus endereços de e-mail OVHcloud ou um endereço de e-mail externo.<br>
 >> - `Escolha um modo de cópia`: defina se deseja conservar uma cópia do e-mail recebido no endereço de e-mail visado (`Do endereço`) ou diretamente enviar para o endereço de reencaminhamento (`Para o endereço`) sem conservar uma cópia.
 >>
->> Para compreender a utilização dos reencaminhamentos e alias no seu serviço MX Plan, consulte o nosso guia completo: « [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#version-histoire-de-lofre-mx-plan) ».
+>> Para compreender a utilização dos reencaminhamentos e alias no seu serviço MX Plan, consulte o nosso guia completo: « [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections) ».
 
 ### Resposta automática <a name="autoreply"></a>
 
@@ -274,13 +274,11 @@ Selecione o separador correspondente à tecnologia de e-mail da oferta MX Plan:
 
 [Utilizar o webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_reencaminhamentos#version-histoire-de-lofre-mx-plan).
+[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
 
 [MX Plan - Criar uma resposta automática num endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
 
-[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_reencaminhamentos).
-
-Se as suas necessidades evoluírem e pretender usufruir de funcionalidades suplementares, pode igualmente [migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  

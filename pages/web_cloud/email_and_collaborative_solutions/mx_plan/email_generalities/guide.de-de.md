@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit MX Plan'
 excerpt: 'Erfahren Sie hier, wie Sie Ihr MX Plan Angebot verwenden'
-updated: 2025-04-28
+updated: 2025-04-30
 ---
 
 <style>
@@ -79,7 +79,7 @@ Um zu erfahren, wie Sie eine E-Mail-Adresse erstellen, klicken Sie auf den Tab f
 >> - **Account-Größe**: Legen Sie die Größe fest, die Sie dem E-Mail-Account zuweisen möchten.
 >> - **Vorname**: Geben Sie einen Vornamen ein.
 >> - **Name**: Geben Sie einen Namen ein.
->> - **Passwort**: [Passwort festlegen](/pages/account_and_service_management/account_information/manage-ovh-password#praktisch) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie zum Beispiel Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
+>> - **Passwort**: [Passwort festlegen](/pages/account_and_service_management/account_information/manage-ovh-password) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie zum Beispiel Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
 >>
 >> Nachdem Sie die Felder ausgefüllt haben, klicken Sie auf `Weiter`{.action} und überprüfen Sie die Informationen in der Übersicht. Sind diese korrekt, klicken Sie auf `Bestätigen`{.action}. Führen Sie diesen Schritt so oft wie nötig aus, abhängig von der Anzahl der verfügbaren Accounts.
 >>
@@ -97,7 +97,7 @@ Um zu erfahren, wie Sie eine E-Mail-Adresse erstellen, klicken Sie auf den Tab f
 >> - **Vorname**: Geben Sie einen Vornamen ein.
 >> - **Name**: Geben Sie einen Namen ein.
 >> - **Anzeigename**: Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse gesendet werden.
->> - **Passwort**: [Passwort festlegen](/pages/account_and_service_management/account_information/manage-ovh-password#praktisch) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie zum Beispiel Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
+>> - **Passwort**: [Passwort festlegen](/pages/account_and_service_management/account_information/manage-ovh-password) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie zum Beispiel Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
 >> - **Quota**: Legen Sie die Größe fest, die Sie dem E-Mail-Account zuweisen möchten.
 >>
 >> Nachdem Sie die Felder ausgefüllt haben, klicken Sie auf `Weiter`{.action} und überprüfen Sie die Informationen in der Übersicht. Sind diese korrekt, klicken Sie auf `Bestätigen`{.action}. Führen Sie diesen Schritt so oft wie nötig aus, abhängig von der Anzahl der verfügbaren Accounts.
@@ -227,7 +227,7 @@ Klicken Sie hierzu auf den Tab für Ihre E-Mail-Technologie:
 >> - `Zur Adresse` : Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dies kann eine Ihrer OVHcloud E-Mail-Adressen oder eine externe E-Mail-Adresse sein.<br>
 >> - `Wählen Sie einen Kopiermodus` : Legen Sie fest, ob Sie eine Kopie der empfangenen E-Mail an der Ziel-E-Mail-Adresse (`Von Adresse`) aufbewahren oder direkt an die Weiterleitungsadresse (`An Adresse`) ohne Kopie weiterleiten möchten.
 >>
->> Die Verwendung der Weiterleitungen und Alias für Ihren MX Plan Dienst können Sie unserer vollständigen Anleitung entnehmen: „[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirects)“.
+>> Die Verwendung der Weiterleitungen und Alias für Ihren MX Plan Dienst können Sie unserer vollständigen Anleitung entnehmen: „[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)“.
 >>
 > **OWA und Zimbra**
 >>
@@ -241,7 +241,7 @@ Klicken Sie hierzu auf den Tab für Ihre E-Mail-Technologie:
 >> - `Zur Adresse` : Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dies kann eine Ihrer OVHcloud E-Mail-Adressen oder eine externe E-Mail-Adresse sein.<br>
 >> - `Wählen Sie einen Kopiermodus` : Legen Sie fest, ob Sie eine Kopie der empfangenen E-Mail an der Ziel-E-Mail-Adresse (`Von Adresse`) aufbewahren oder direkt an die Weiterleitungsadresse (`An Adresse`) ohne Kopie weiterleiten möchten.
 >>
->> Weitere Informationen zur Verwendung von Weiterleitungen und Alias für Ihren MX Plan Dienst finden Sie in unserer vollständigen Anleitung: „[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirects#version-history-of-offer-mx-plan)“.
+>> Weitere Informationen zur Verwendung von Weiterleitungen und Alias für Ihren MX Plan Dienst finden Sie in unserer vollständigen Anleitung: „[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)“.
 
 ### Automatische Antwort <a name="autoreply"></a>
 
@@ -274,13 +274,11 @@ Wählen Sie den Tab für die E-Mail-Technologie Ihres MX Plan Angebots aus:
 
 [Outlook Web App (OWA) Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirects#version-history-of-offer-mx-plan).
+[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
 
 [MX Plan - Automatische Antwort an einer E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
 
-[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirects).
-
-Wenn Ihre Bedürfnisse sich ändern und Sie zusätzliche Funktionen benötigen, können Sie auch [eine MX Plan E-Mail-Adresse auf einen E-Mail Pro oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

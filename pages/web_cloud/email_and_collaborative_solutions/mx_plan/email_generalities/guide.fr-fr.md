@@ -79,7 +79,7 @@ Pour découvrir comment créer une adresse e-mail, cliquez sur l'onglet correspo
 >> - **Taille du compte** : Déterminez la taille que vous souhaitez attribuer au compte e-mail.
 >> - **Prénom** : Renseignez un prénom.
 >> - **Nom** : Renseignez un nom.
->> - **Mot de passe** : [Définissez un mot de passe](/pages/account_and_service_management/account_information/manage-ovh-password#en-pratique) et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple les mentions à vos nom, prénom et date de naissance) et de le renouveler régulièrement.
+>> - **Mot de passe** : [Définissez un mot de passe](/pages/account_and_service_management/account_information/manage-ovh-password) et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple les mentions à vos nom, prénom et date de naissance) et de le renouveler régulièrement.
 >>
 >> Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez les informations qui s'affichent dans le récapitulatif. Si celles-ci sont correctes, cliquez sur `Valider`{.action}. Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
 >>
@@ -97,7 +97,7 @@ Pour découvrir comment créer une adresse e-mail, cliquez sur l'onglet correspo
 >> - **Prénom** : Renseignez un prénom.
 >> - **Nom** : Renseignez un nom.
 >> - **Nom à afficher** : Indiquez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.
->> - **Mot de passe** : [Définissez un mot de passe](/pages/account_and_service_management/account_information/manage-ovh-password#en-pratique) et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple les mentions à vos nom, prénom et date de naissance) et de le renouveler régulièrement.
+>> - **Mot de passe** : [Définissez un mot de passe](/pages/account_and_service_management/account_information/manage-ovh-password) et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple les mentions à vos nom, prénom et date de naissance) et de le renouveler régulièrement.
 >> - **Quota** : Déterminez la taille que vous souhaitez attribuer au compte e-mail.
 >>
 >> Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez les informations qui s'affichent dans le récapitulatif. Si celles-ci sont correctes, cliquez sur `Valider`{.action}. Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
@@ -241,7 +241,7 @@ Pour ce faire, cliquez sur l'onglet correspondant à votre technologie e-mail :
 >> - `Vers l'adresse` : Renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.<br>
 >> - `Choisissez un mode de copie` : Définissez si vous souhaitez conserver une copie de l'e-mail reçu sur l'adresse e-mail ciblée (`De l'adresse`) ou directement renvoyer vers l'adresse de redirection (`Vers l'adresse`) sans conserver de copie.
 >>
->> Pour comprendre l'utilisation des redirections et alias sur votre service MX Plan, consultez notre guide complet : « [Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#version-historique-de-loffre-mx-plan) ».
+>> Pour comprendre l'utilisation des redirections et alias sur votre service MX Plan, consultez notre guide complet : « [Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections) ».
 
 ### Réponse automatique <a name="autoreply"></a>
 
@@ -274,7 +274,7 @@ Sélectionnez l'onglet correspondant à la technologie e-mail de votre offre MX 
 
 [Utiliser le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-[Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#version-historique-de-loffre-mx-plan).
+[Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
 
 [MX Plan - Créer une réponse automatique sur une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
 

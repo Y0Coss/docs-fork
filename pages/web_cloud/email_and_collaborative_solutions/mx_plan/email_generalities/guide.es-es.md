@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con la solución MX Plan'
 excerpt: 'Cómo empezar a utilizar la solución de correo electrónico MX Plan'
-updated: 2025-04-28
+updated: 2025-04-30
 ---
 
 <style>
@@ -35,7 +35,7 @@ Usted acaba de adquirir una solución MX Plan que permite disfrutar de direccion
 ## Procedimiento <a name="instructions"></a>
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action} de la columna.
+1. Acceda a la sección `Web Cloud`{.action}.
 1. Haga clic en `MX Plan`{.action}.
 1. Seleccione el dominio.
 1. **Prosiga con la tecnología de correo electrónico que utiliza su servicio MX Plan**.
@@ -68,7 +68,7 @@ Para más información sobre cómo crear una dirección de correo electrónico, 
 > [!tabs]
 > **Roundcube**
 >>
->> Para crear una dirección de correo electrónico, abra la pestaña `Emails `{.action}. Se abrirá una ventana en la que se mostrarán las cuentas creadas. Para añadir una nueva cuenta de correo, haga clic en el botón `Añadir una cuenta`{.action}.
+>> Para crear una dirección de correo electrónico, abra la pestaña `Emails`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas creadas. Para añadir una nueva cuenta de correo, haga clic en el botón `Añadir una cuenta`{.action}.
 >>
 >> ![email](images/mxplan-starter-new-step2.png){.thumbnail .w-500}
 >>
@@ -79,7 +79,7 @@ Para más información sobre cómo crear una dirección de correo electrónico, 
 >> - **Tamaño de la cuenta**: Indique el tamaño que quiere asignar a la cuenta de correo.
 >> - **Nombre**: Introduzca un nombre.
 >> - **Nombre**: Introduzca un nombre.
->> - **Contraseña**: [Establezca una contraseña](/pages/account_and_service_management/account_information/manage-ovh-password#en-pratique) y confírmela. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite, por ejemplo, mencionar su nombre, apellidos y fecha de nacimiento) y que la cambie periódicamente.
+>> - **Contraseña**: [Establezca una contraseña](/pages/account_and_service_management/account_information/manage-ovh-password) y confírmela. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite, por ejemplo, mencionar su nombre, apellidos y fecha de nacimiento) y que la cambie periódicamente.
 >>
 >> Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action} y compruebe que la información mostrada en el resumen es correcta. Si son correctos, haga clic en `Aceptar`{.action}. Realice esta acción tantas veces como sea necesario, en función del número de cuentas de que disponga.
 >>
@@ -97,7 +97,7 @@ Para más información sobre cómo crear una dirección de correo electrónico, 
 >> - **Nombre**: Introduzca un nombre.
 >> - **Apellidos**: Introduzca un apellidos.
 >> - **Nombre mostrado**: Especifique el nombre que se mostrará como remitente cuando se envíen mensajes de correo electrónico con esta dirección.
->> - **Contraseña**: [Establezca una contraseña](/pages/account_and_service_management/account_information/manage-ovh-password#en-pratique) y confírmela. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite, por ejemplo, mencionar su nombre, apellidos y fecha de nacimiento) y que la cambie periódicamente.
+>> - **Contraseña**: [Establezca una contraseña](/pages/account_and_service_management/account_information/manage-ovh-password) y confírmela. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite, por ejemplo, mencionar su nombre, apellidos y fecha de nacimiento) y que la cambie periódicamente.
 >> - **Capacidad**: Determine el tamaño que desea asignar a la cuenta de correo.
 >>
 >> Una vez que haya completado todos los campos, haga clic en `Siguiente`{.action} y compruebe que la información mostrada en el resumen es correcta. Si son correctos, haga clic en `Aceptar`{.action}. Realice esta acción tantas veces como sea necesario, en función del número de cuentas de que disponga.
@@ -241,7 +241,7 @@ Para ello, abra la pestaña correspondiente a su tecnología de correo:
 >> - `Hacia la dirección`: Introduzca aquí la dirección de destino de su redirección. Puede ser una de sus direcciones de correo electrónico de OVHcloud o una dirección de correo electrónico externa.<br>
 >> - `Elija un modo de copia`: Indique si desea conservar una copia del correo electrónico recibido en la dirección de correo electrónico de destino (`De la dirección`) o reenviar directamente a la dirección de redirección (`A la dirección`) sin conservar una copia.
 >>
->> Para entender el uso de las redirecciones y alias en su servicio MX Plan, consulte nuestra guía completa: «[Utilizar las redirecciones de correo](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#version-historique-de-loffre-mx-plan) ».
+>> Para entender el uso de las redirecciones y alias en su servicio MX Plan, consulte nuestra guía completa: «[Utilizar las redirecciones de correo](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections) ».
 
 ### Respuesta automática <a name="autoreply"></a>
 
@@ -274,13 +274,11 @@ Seleccione la pestaña correspondiente a la tecnología de correo de su solució
 
 [Utilizar el webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-[Utilizar las redirecciones de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#version-historique-de-loffre-mx-plan).
+[Utilizar las redirecciones de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
 
 [MX Plan - Crear una respuesta automática en una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
 
 [Utilizar las redirecciones de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
-
-Si sus necesidades evolucionan y quiere disfrutar de funcionalidades adicionales, también puede [migrar una dirección de correo MX Plan a una cuenta Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with the MX Plan solution'
 excerpt: 'Find out how to get started with an MX Plan solution'
-updated: 2025-04-28
+updated: 2025-04-30
 ---
 
 <style>
@@ -79,7 +79,7 @@ To find out how to create an email address, click on the tab corresponding to th
 >> - **Account size**: Determine the size you would like to assign to the email account.
 >> - **First name**: Enter a first name.
 >> - **Name**: Enter a name.
->> - **Password**: [Enter a password](/pages/account_and_service_management/account_information/manage-ovh-password#how-to) and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
+>> - **Password**: [Enter a password](/pages/account_and_service_management/account_information/manage-ovh-password) and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
 >>
 >> Once you have filled in the fields, click `Next`{.action} , then check the information that appears in the summary. If the information is correct, click `Confirm`{.action}. Repeat this step as necessary, depending on the number of accounts you have.
 >>
@@ -97,7 +97,7 @@ To find out how to create an email address, click on the tab corresponding to th
 >> - **First name**: Enter a first name.
 >> - **Name**: Enter a name.
 >> - **Display name**: Enter the name that will be displayed as a sender when emails are sent from this address.
->> - **Password**: [Enter a password](/pages/account_and_service_management/account_information/manage-ovh-password#how-to) and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
+>> - **Password**: [Enter a password](/pages/account_and_service_management/account_information/manage-ovh-password) and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
 >> - **Quota** : Determine the size you would like to assign to the email account.
 >>
 >> Once you have filled in the fields, click `Next`{.action} , then check the information that appears in the summary. If the information is correct, click `Confirm`{.action}. Repeat this step as necessary, depending on the number of accounts you have.
@@ -241,7 +241,7 @@ To do this, click on the tab corresponding to your email technology:
 >> - `To address`: Enter the address you would like to redirect to here. This can be one of your OVHcloud email addresses, or an external email address.<br>
 >> - `Choose a copy method`: Define whether you want to keep a copy of the email received at the targeted email address (`From address`) or directly redirect to the redirection address (`To address`) without saving a copy.
 >>
->> To understand how to use redirections and aliases on your MX Plan service, please read our full guide: “[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#version-history-of-mx-plan-package)”.
+>> To understand how to use redirections and aliases on your MX Plan service, please read our full guide: “[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)”.
 
 ### Automatic reply <a name="autoreply"></a>
 
@@ -274,13 +274,11 @@ Select the tab corresponding to the email technology of your MX Plan solution:
 
 [Use Outlook Web App (OWA) webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
-[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#mx-plan-history-version).
+[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
 
 [MX Plan - Create an automatic response on an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
 
 [Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
-
-If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
