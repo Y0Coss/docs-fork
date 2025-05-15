@@ -227,14 +227,14 @@ To view your email account:
 
 ### Redirections <a name="redirections"></a>
 
-To create a redirection on a Zimbra email address, log in to [webmail](/links/web/email).
+To create a redirection for a Zimbra email address, log in to [webmail](/links/web/email).  
 You can create a redirection using inbox rules, called filters in webmail. These rules, which are applied when an email is received, can be used to forward or redirect an email.
 
 To redirect emails from your Zimbra account to another email address, we will apply a transfer rule. Follow the tabs below to set up your redirection.
 
 > [!primary]
 >
-> In our example below, we have chosen to redirect all incoming emails to another email address. To understand the example in the screenshots, we are logged on to the address **zimbra@mydomain.ovh** and we would like to redirect emails from this account to the address **address@example.com**.
+> In our example below, we have chosen to redirect all incoming emails to another email address. To understand the example in the screenshots, we are logged on to the account **zimbra@mydomain.ovh** and we would like to redirect emails from this address to  **address@example.com**.
 
 > [!tabs]
 > **Step 1**
@@ -254,7 +254,7 @@ To redirect emails from your Zimbra account to another email address, we will ap
 >> - First click <u>Advanced Mode</u> in the top right-hand corner to set up this rule.
 >> - Enter a name for your filter in the `Filter name` box.
 >> - Leave the dropdown menu on `all` in the sentence “If an incoming message meets ... of these conditions”.
->> - In the first dropdown menu of the rules, choose `To`, leave `contains`, then enter the email address you are logged in to in the box to the right.
+>> - In the first dropdown menu of the rules, choose `To`, leave `contains`, then enter the source email address in the box to the right.
 >> - Under “Then”, select `Forward to` from the drop-down menu and enter the destination email address.
 >> - Click `+ Add an action`{.action} below, then select `Keep in Inbox`.
 >> - Click `Save`{.action} from your filter window and also from the settings window.
@@ -262,11 +262,11 @@ To redirect emails from your Zimbra account to another email address, we will ap
 >>![zimbra](images/zimbra_redirection03.png){.thumbnail .w-500}
 >>
 
-For more details on using Zimbra webmail, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+For more details on using Zimbra webmail, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ### Alias <a name="alias"></a>
 
-Creating an alias for your email address allows you to provide a “mask” address to your contacts, without having to provide your personal email address to the sender.
+Alias addresses for your email account allow you to keep your account's email address private. You can disclose alias addresses to your contacts and emails sent to these addresses will then be redirected to your email account.
 
 You can create an alias in the [OVHcloud Control Panel](/links/manager). Click on the steps below:
 
@@ -315,7 +315,7 @@ When you need to leave the office and cannot process your emails, you can set up
 
 ![zimbra](images/zimbra_autoreply01.png){.thumbnail .w-500}
 
-For more details on using Zimbra webmail, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+For more details, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ## Go further <a name="go-further"></a>
 
