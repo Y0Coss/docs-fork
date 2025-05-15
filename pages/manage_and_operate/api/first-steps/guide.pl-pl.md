@@ -235,7 +235,7 @@ Do wyświetlania i odwoływania kluczy możesz użyć [portalu API](/links/api) 
 >>
 >> Przejdź do menu `Tożsamość, bezpieczeństwo i operacje`{.action} a następnie `Klucze API`{.action}.
 >>
->> ![API keys manager](images/API-keys-manager.png){.thumbnail}
+>> ![API keys manager](images/api-keys-manager.png){.thumbnail}
 >>
 
 ## Sprawdź również <a name="gofurther"></a>
