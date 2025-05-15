@@ -40,7 +40,7 @@ Want your website to be accessible via your domain name? To do this, your domain
 >
 > Adding, modifying or deleting DNS records in an active DNS zone can cause service interruptions. If in doubt, contact a [specialist provider](/links/partner).
 
-### Add an DNS A record record for a domain name
+### Add an DNS A record for a domain name
 
 1. Click the `DNS zones`{.action} menu, then choose the domain name concerned.
 2. On the page that appears, click `Add an entry`{.action}.
@@ -60,7 +60,7 @@ See our detailed guides:
 
 ///
 
-### Add an DNS A record record for a domain name subdomain
+### Add an DNS A record for a domain name subdomain
 
 1. Click the `DNS zones`{.action} menu, then choose the domain name concerned.
 2. On the page that appears, click `Add an entry`{.action}.
