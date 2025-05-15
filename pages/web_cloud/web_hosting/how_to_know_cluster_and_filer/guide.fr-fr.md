@@ -6,6 +6,8 @@ updated: 2025-05-15
 
 ## Objectif
 
+Les hébergements web fonctionnent sur une infrastructure mutualisée appelée *cluster*. OVHcloud dispose de plusieurs clusters sur lesquels sont répartis plusieurs hébergements web.
+Chaque cluster, pour des raisons d'efficacité et de sécurité, est également divisé virtuellement en plusieurs segment appelés *filers*. Les filers contiennent eux-mêmes plusieurs hébergements web.
 Au cours de l'utilisation de votre hébergement web, vous pouvez être amenés à connaître le numéro du cluster et/ou du filer où se situe votre hébergement web.
 
 **Découvrez comment retrouver le numéro de cluster et/ou le numéro du filer où se trouve votre hébergement web.**
