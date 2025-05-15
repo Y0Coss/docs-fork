@@ -1,7 +1,7 @@
 ---
 title: Ativar as ligações Entra ID SSO com a sua conta OVHcloud
 excerpt: "Saiba como associar o seu Entra ID (anteriormente Azure Active Directory) à sua conta OVHcloud utilizando SAML 2.0"
-updated: 2025-05-14
+updated: 2025-05-15
 ---
 
 ## Objetivo
@@ -239,7 +239,7 @@ Para adicionar um grupo, aceda à secção `Identidades`{.action} e aceda ao sep
 
 ![Grupos de gestão de utilizadores Ovhcloud etapa 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
-Introduza o nome do grupo e selecione o função associado e clique no botão `Validar`{.action}.
+Introduza o nome do grupo e selecione o privilégio associado e clique no botão `Validar`{.action}.
 
 ![Grupos de gestão de utilizadores Ovhcloud etapa 2](images/ovhcloud_sso_menu_2.png){.thumbnail}
 
@@ -247,7 +247,7 @@ O grupo criado deve constar da lista.
 
 ![Grupos de gestão de utilizadores Ovhcloud etapa 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
 
-Atenção: se conceder o função `Nenhum`, será necessário atribuir permissões a este grupo através das [políticas IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
+Atenção: se conceder o privilégio `Nenhum`, será necessário atribuir permissões a este grupo através das [políticas IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 
 ### Ligação via SSO
 
