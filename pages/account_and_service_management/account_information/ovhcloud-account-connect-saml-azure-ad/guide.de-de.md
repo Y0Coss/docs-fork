@@ -207,7 +207,7 @@ Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.ac
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Klicken Sie dann auf die Registerkarte `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
+Klicken Sie auf den Tab `SSO`{.action} und anschließend auf die Schaltfläche `SSO-Verbindung`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -247,7 +247,7 @@ Die erstellte Gruppe sollte in der Liste erscheinen.
 
 ![OVHcloud User Management Gruppen Schritt 3](images/ovhcloud_sso_menu_3.png){.thumbnail}
 
-Achtung, wenn Sie die Berechtigung `Keine` Rolle, müssen Sie dieser Gruppe Rechte über die [IAM-Richtlinien](/pages/account_and_service_management/account_information/iam-policy-ui) zuweisen.
+Achtung, wenn Sie die Berechtigung `Keine` erteilen, müssen Sie dieser Gruppe Rechte über die [IAM-Richtlinien](/pages/account_and_service_management/account_information/iam-policy-ui) zuweisen.
 
 ### Verbindung via SSO
 
