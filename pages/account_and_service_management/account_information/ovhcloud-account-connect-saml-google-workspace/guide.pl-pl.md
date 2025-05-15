@@ -56,9 +56,9 @@ Kliknij `Continue`{.action}.
 
 W etapie "Atrybut mapping" dodaj następującą mapping:
 
-- **First Name**: Name
-- **Last Name**: Surname
-- **Primary email**: E-mail Address
+- **First Name**: Imię
+- **Last Name**: Nazwisko
+- **Primary email**: Adres e-mail
 
 Kliknij `Finish`{.action}.
 

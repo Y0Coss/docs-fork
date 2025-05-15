@@ -56,9 +56,9 @@ Klicken Sie auf `Weiter`{.action}.
 
 Fügen Sie im Schritt "Attribute mapping" folgendes Schema hinzu:
 
-- **First Name**: Name
-- **Last Name**: Surname
-- **Primary email**: E-mail Address
+- **First Name**: Vorname
+- **Last Name**: Nachname
+- **Primary email**: E-Mail-Adresse
 
 Klicken Sie auf `Finish`{.action}.
 

@@ -56,9 +56,9 @@ Haga clic en `Continue`{.action}.
 
 En el paso "Atribute mapping", añada el siguiente mapping:
 
-- **First Name**: Name
-- **Last Name**: Surname
-- **Primary email**: E-mail Address
+- **First Name** : Nombre
+- **Last Name** : Apellido
+- **Primary email** : Dirección de correo electrónico
 
 Haga clic en `Finish`{.action}.
 
