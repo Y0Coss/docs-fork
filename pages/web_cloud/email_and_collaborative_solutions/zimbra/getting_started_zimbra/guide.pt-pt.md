@@ -5,11 +5,8 @@ updated: 2025-02-13
 ---
 
 <style>
-.w-400 {
-  max-width:400px !important;
-}
-.h-400 {
-  max-height:400px !important;
+.w-500 {
+  max-width:500px !important;
 }
 </style>
 
@@ -248,21 +245,21 @@ Para reencaminhar os e-mails da sua conta Zimbra para outro endereço de e-mail,
 >>
 > **Etapa 2**
 >>
->> Clique na secção "Filtros" {.action} a partir da janela de parâmetros e, a seguir, clique no botão "Adicionar um filtro" {.action}.
+>> Clique na secção `Filtros`{.action} a partir da janela de parâmetros e, a seguir, clique no botão `Adicionar um filtro`{.action}.
 >>
->> ![zimbra](images/zimbra_reencaminhamento02.png){.thumbnail .w-500}
+>> ![zimbra](images/zimbra_redirection02.png){.thumbnail .w-500}
 >>
 > **Etapa 3**
 >>
 >> - Clique em <u>Modo avançado</u> no canto superior direito para implementar esta regra.
 >> - Dê um nome ao seu filtro na caixa `Nome do filtro`.
->> - Deixe o menu suspenso em `todos` na frase « Se uma mensagem de entrada reúne ... dessas condições ».
->> - No primeiro menu suspenso das regras, escolha `À` (To), deixe `content` (contains) e, em seguida, insira o endereço de e-mail no qual você está conectado na caixa à direita.
->> - Sob a menção « Então » (Then), selecione `Transferir para` (Forward to) no menu pendente e, em seguida, insira o endereço de e-mail de destino.
->> - Clique em `+ Adicionar uma ação`{.action}(Add an action) abaixo e selecione `Mover para a pasta receção` (Keep in Inbox).
->> - Clique em `Guardar`{.action} a partir da janela do seu filtro e também a partir da janela dos parâmetros.
+>> - Deixe o menu suspenso em `tudo` na frase « Se uma mensagem de entrada reúne ... dessas condições ».
+>> - No primeiro menu suspenso das regras, escolha `Para` (To), deixe `contém` (contains) e, em seguida, insira o endereço de e-mail no qual você está conectado na caixa à direita.
+>> - Sob a menção « Então » (Then), selecione `Para a frente` (Forward to) no menu pendente e, em seguida, insira o endereço de e-mail de destino.
+>> - Clique em `+ Adicionar uma ação`{.action} (Add an action) abaixo e selecione `Manter na caixa de entrada` (Keep in Inbox).
+>> - Clique em `Salvar`{.action} a partir da janela do seu filtro e também a partir da janela dos parâmetros.
 >>
->> ![zimbra](images/zimbra_reencaminhamento03.png){.thumbnail .w-500}
+>> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-500}
 >>
 
 Para mais informações sobre a utilização do webmail Zimbra, consulte o guia « [Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
@@ -276,7 +273,7 @@ A criação de um alias é feita a partir da [Área de Cliente OVHcloud](/links/
 > [!tabs]
 > **Etapa 1**
 >>
->> - Clique no separador "Contas de e-mail" {.action} do seu serviço Zimbra.
+>> - Clique no separador `Contas de e-mail`{.action} do seu serviço Zimbra.
 >> - Clique no botão &#8942; da conta de e-mail em questão.
 >> - Clique em `Modificar`{.action}.
 >>

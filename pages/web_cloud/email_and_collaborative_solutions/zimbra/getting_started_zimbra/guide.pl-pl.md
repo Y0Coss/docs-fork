@@ -30,16 +30,16 @@ Z ofertą Zimbra OVHcloud oferuje platformę open source do przesyłania wiadomo
 
 - [Dostęp do interfejsu zarządzania usługą](#zimbra-access)
 - [Skonfiguruj usługę Zimbra](#zimbra-conf)
-- [Organizacje](#Organizacje)
+- [Organizacje](#organizations)
     - [Utwórz organizację](#organizations-create)
     - [Filtruj po organizacji](#organizations-filters)
 - [Domeny](#domains)
     - [Dodaj domenę](#domains-add)
     - [Zmień domenę](#domains-modify)
-- [Konta e-mail](#emaile)
+- [Konta e-mail](#emails)
     - [Utwórz konto e-mail](#emails-create)
-- [Sprawdź konto e-mail](#emaile-consult)
-- [Przekierowania](#przekierowania)
+- [Sprawdź konto e-mail](#emails-consult)
+- [Przekierowania](#redirections)
 - [Alias](#alias)
 - [Odpowiedzi automatyczne](#autoreply)
 
@@ -253,11 +253,11 @@ Aby przekierować e-maile z Twojego konta Zimbra na inny adres e-mail, zastosuje
 > **Etap 3**
 >>
 >> - Kliknij najpierw <u>Tryb zaawansowany</u> w prawym górnym rogu, aby ustawić tę regułę.
->> - Nazwij filtr w polu `Nazwa filtra`.
->> - Pozostaw menu rozwijane na `wszystkie` w zdaniu "Jeśli wiadomość przychodząca spełnia ... te warunki".
->> - W pierwszym menu rozwijanym reguł wybierz `Do` (TB), pozostaw `zawiera` (kontenery), następnie wpisz adres e-mail, na który się zalogowałeś w polu po prawej stronie.
+>> - Nazwij filtr w polu `Dodaj filtr`.
+>> - Pozostaw menu rozwijane na `kazdy` w zdaniu "Jeśli wiadomość przychodząca spełnia ... te warunki".
+>> - W pierwszym menu rozwijanym reguł wybierz `Do` (To), pozostaw `zawiera` (kontenery), następnie wpisz adres e-mail, na który się zalogowałeś w polu po prawej stronie.
 >> - Pod napisem "Potem" (Then) wybierz z rozwijanego menu opcję `Prześlij do`(Forward to), a następnie wprowadź docelowy adres e-mail.
->> - Kliknij na `+ Dodaj akcję`{.action}(Add an action) poniżej, a następnie wybierz `Przenieś do folderu odbioru` (Keep in Inbox).
+>> - Kliknij na `+ Dodaj akcję`{.action} (Add an action) poniżej, a następnie wybierz `Przechowuj w skrzynce odbiorczej` (Keep in Inbox).
 >> - Kliknij przycisk `Zapisz`{.action} w oknie filtra oraz w oknie ustawień.
 >>
 >> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-500}
@@ -278,25 +278,25 @@ Alias można utworzyć w panelu klienta [OVHcloud](/links/manager). Kliknij poni
 >> - Kliknij przycisk &#8942; danego konta e-mail.
 >> - Kliknij na `Zmień`{.action}.
 >>
->> ![zimbra](obrazy/zimbra_alias01.png){.thumbnail .w-500}
+>> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-500}
 >>
 > **Etap 2**
 >>
 >> Pojawi się okno konfiguracyjne Twojego konta e-mail. Kliknij zakładkę `Alias`{.action} powyżej.
 >>
->> ![zimbra](obrazy/zimbra_alias02.png){.thumbnail .w-500}
+>> ![zimbra](images/zimbra_alias02.png){.thumbnail .w-500}
 >>
 > **Etap 3**
 >>
 >> W następnym oknie wyświetli się lista aliasów, które możesz przypisać do danego konta. Kliknij przycisk `Utwórz alias`{.action}.
 >>
->> ![zimbra](obrazy/zimbra_alias03.png){.thumbnail .w-500}
+>> ![zimbra](images/zimbra_alias03.png){.thumbnail .w-500}
 >>
 > **Etap 4**
 >>
 >> Określ adres aliasu i wybierz jedną z domen związanych z Twoją usługą Zimbra.
 >>
->> ![zimbra](obrazy/zimbra_alias04.png){.thumbnail .w-500}
+>> ![zimbra](images/zimbra_alias04.png){.thumbnail .w-500}
 >>
 
 ### Odpowiedzi automatyczne <a name="autoreply"></a>

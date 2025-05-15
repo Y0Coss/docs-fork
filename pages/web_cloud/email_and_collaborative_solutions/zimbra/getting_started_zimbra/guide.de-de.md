@@ -4,7 +4,6 @@ excerpt: "Erfahren Sie hier, wie Sie Ihr Zimbra Angebot über Ihr OVHcloud Kunde
 updated: 2025-05-07
 ---
 
-
 <style>
 .w-500 {
   max-width:500px !important;
@@ -255,9 +254,9 @@ Um die E-Mails Ihres Zimbra-Accounts an eine andere E-Mail-Adresse weiterzuleite
 >> - Klicken Sie oben rechts auf <u>Erweiterter Modus</u>, um diese Regel zu implementieren.
 >> - Geben Sie einen Namen für Ihren Filter in das Feld `Filtername` ein.
 >> - Lassen Sie das Dropdown-Menü auf `Alle` im Satz „Wenn eine eingehende Nachricht ... dieser Bedingungen entspricht“.
->> - Wählen Sie im ersten Pop-up-Menü der Regeln `Bis` (TB) aus, lassen Sie `enthält` (contains) und geben Sie die Quell-Adresse in das Feld rechts ein.
+>> - Wählen Sie im ersten Pop-up-Menü der Regeln `An` (To) aus, lassen Sie `enthält` (contains) und geben Sie die Quell-Adresse in das Feld rechts ein.
 >> - Wählen Sie unter „Dann“ (Then) im Drop-down-Menü `Weiterleiten an` (Forward to) aus und geben Sie die Ziel-Adresse ein.
->> - Klicken Sie unten auf `+ Aktion hinzufügen`{.action}(Add an action) und wählen Sie `In Empfangsordner verschieben` (Keep in Inbox).
+>> - Klicken Sie unten auf `+ Bedingung hinzufügen`{.action}(Add an action) und wählen Sie `Im Posteingang aufbewahren` (Keep in Inbox).
 >> - Klicken Sie auf `Speichern`{.action} im Fenster Ihres Filters und im Fenster der Einstellungen.
 >>
 >> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-500}
