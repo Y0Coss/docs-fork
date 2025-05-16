@@ -202,7 +202,7 @@
             + [Configuring the Edge Network Firewall](bare_metal_cloud/dedicated_servers/firewall_network)
             + [How to protect a Game server with the application firewall](bare_metal_cloud/dedicated_servers/firewall_game_ddos)
             + [Monitoring DDoS attacks with the Network Security Dashboard](bare_metal_cloud/dedicated_servers/network_security_dashboard)
-            + [Configuring a network bridge](bare_metal_cloud/dedicated_servers/network_bridging)
+            + [Configuring Additional IPs in bridge mode on your virtual machines](bare_metal_cloud/dedicated_servers/network_bridging)
             + [What are the IP addresses of the OVHcloud monitoring?](bare_metal_cloud/dedicated_servers/network_ip_monitoring)
             + [Configuring IP aliasing](bare_metal_cloud/dedicated_servers/network_ipaliasing)
             + [Configuring IPv6 on dedicated servers](bare_metal_cloud/dedicated_servers/network_ipv6)
