@@ -1,7 +1,7 @@
 ---
 title: "Primeros pasos con el producto Zimbra"
 excerpt: "Cómo empezar a utilizar la solución Zimbra desde el área de cliente de OVHcloud"
-updated: 2025-05-07
+updated: 2025-05-16
 ---
 
 <style>
@@ -69,7 +69,7 @@ El diagrama siguiente resume la relación jerárquica entre los elementos mencio
 
 ### Organizaciones <a name="organizations"></a>
 
-Si añade un gran número de dominios a su servicio Zimbra, puede ser útil reagruparlos asociándolos a una "organización". Desde su servicio Zimbra, haga clic en `Organización`{.action}.
+Si añade un gran número de dominios a su servicio Zimbra, puede ser útil reagruparlos asociándolos a una  «organización». Desde su servicio Zimbra, haga clic en `Organización`{.action}.
 
 ![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-500}
 
@@ -93,7 +93,7 @@ Para retirar el filtro, simplemente haga clic en la cruz del filtro.
 
 > [!warning]
 >
-> Para un funcionamiento óptimo cuando utilice el mismo nombre de dominio entre los productos OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) y Zimbra, es necesario configurar el dominio en "no autoritativo". Para más información sobre cómo configurar un dominio sin autorización en una plataforma Exchange o Email Pro, consulte nuestra guía [Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Para un funcionamiento óptimo cuando utilice el mismo nombre de dominio entre los productos OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) y Zimbra, es necesario configurar el dominio en «no autoritativo». Para más información sobre cómo configurar un dominio sin autorización en una plataforma Exchange o Email Pro, consulte nuestra guía [Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 En esta pestaña podrá consultar todos los dominios añadidos al servicio Zimbra. Es necesario gestionarlos desde el área de cliente de OVHcloud para poder añadirlos.
 
@@ -112,12 +112,12 @@ En la tabla de dominios encontrará dos datos :
 
 Para añadir un dominio a su servicio Zimbra, haga clic en la pestaña `Dominio`{.action} y luego en `Añadir un dominio`{.action}.
 
-Seleccione una organización en el menú desplegable y, a continuación, seleccione una de las dos opciones siguientes:
+Seleccione una organización en el menú desplegable y, a continuación, seleccione una de las dos opciones siguientes :
 
-- **Seleccionar un dominio de la lista** (dominio interno): en esta lista, puede encontrar los dominios que gestiona desde el área de cliente de OVHcloud.
-- **Introducir un dominio no gestionado por su cuenta de OVHcloud** (dominio externo): introduzca un dominio no gestionado en su área de cliente de OVHcloud o registrado en otro agente registrador y gestionado por usted.
+- **Seleccionar un dominio de la lista** (dominio interno) : en esta lista, puede encontrar los dominios que gestiona desde el área de cliente de OVHcloud.
+- **Introducir un dominio no gestionado por su cuenta de OVHcloud** (dominio externo) : introduzca un dominio no gestionado en su área de cliente de OVHcloud o registrado en otro agente registrador y gestionado por usted.
 
-Seleccione la pestaña correspondiente a su elección:
+Seleccione la pestaña correspondiente a su elección :
 
 > [!tabs]
 > **Dominio interno**
@@ -126,7 +126,7 @@ Seleccione la pestaña correspondiente a su elección:
 >>
 >> ![zimbra](images/zimbra_domain_add_internal01.png){.thumbnail .w-500}
 >>
->> Para configurar la zona DNS, seleccione una de las dos opciones siguientes:
+>> Para configurar la zona DNS, seleccione una de las dos opciones siguientes :
 >>
 >> - **Configuración recomendada** : su zona DNS se configurará automáticamente. Esta opción es adecuada si no ha configurado ninguna solución de correo en su dominio.
 >> - **Configuración personalizada** : Si ya ha configurado una solución de correo en su dominio, puede elegir los elementos que le interesen.
@@ -158,14 +158,14 @@ Seleccione la pestaña correspondiente a su elección:
 
 Puede cambiar el nombre de dominio para cambiar su organización o comprobar los registros DNS asociados.
 
-En la pestaña `Dominio`{.action} del servicio Zimbra, haga clic en el icono "&#8285;" situado al final de la línea correspondiente al dominio para ver las opciones.
+En la pestaña `Dominio`{.action} del servicio Zimbra, haga clic en el icono &#8285; situado al final de la línea correspondiente al dominio para ver las opciones.
 
 ![zimbra](images/zimbra_domain_modify01.png){.thumbnail .w-500}
 
 - Haga clic en `Configurar`{.action} para modificar la organización asociada a su dominio.
-- Haga clic en `Diagnósticos`{.action} para ver la interfaz de diagnóstico de los registros DNS del dominio. Es necesario asegurarse de que no se muestran alertas para cada uno de los registros DNS mencionados en las fichas. Siga las instrucciones detalladas en cada ficha de alertas para configurar los registros DNS:
-    - **MX**: indispensable para recibir mensajes de correo.
-    - **SPF**: Seguridad requerida por la mayoría de los servidores de correo de destino para legitimar los servidores de envío de correo de OVHcloud con su dominio.
+- Haga clic en `Diagnósticos`{.action} para ver la interfaz de diagnóstico de los registros DNS del dominio. Es necesario asegurarse de que no se muestran alertas para cada uno de los registros DNS mencionados en las fichas. Siga las instrucciones detalladas en cada ficha de alertas para configurar los registros DNS :
+    - **MX** : indispensable para recibir mensajes de correo.
+    - **SPF** : Seguridad requerida por la mayoría de los servidores de correo de destino para legitimar los servidores de envío de correo de OVHcloud con su dominio.
     - **DKIM** : Permite implementar un sistema de firma para cada mensaje de correo electrónico enviado por su servicio Zimbra. El destinatario comprueba la firma con la clave pública visible en la zona DNS.
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
@@ -220,10 +220,10 @@ Haga clic en `Confirmar`{.action} para crear la cuenta.
 
 ### Consultar su cuenta de correo <a name="mail-consult"></a>
 
-Para consultar su cuenta de correo:
+Para consultar su cuenta de correo :
 
-- Conéctese al [webmail](/links/web/email) desde un navegador de internet e introduzca su dirección de correo y contraseña. Para más información, consulte nuestra página "[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
-- Configure un programa de mensajería en su ordenador, smartphone o tablet. Consulte nuestra página "[Configurar una dirección de correo electrónico de Zimbra en un cliente de correo](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)".
+- Conéctese al [webmail](/links/web/email) desde un navegador de internet e introduzca su dirección de correo y contraseña. Para más información, consulte nuestra página «[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)».
+- Configure un programa de mensajería en su ordenador, smartphone o tablet. Consulte nuestra página «[Configurar una dirección de correo electrónico de Zimbra en un cliente de correo](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)».
 
 ### Redirecciones <a name="redirecciones"></a>
 
@@ -253,22 +253,22 @@ Para redirigir los emails de su cuenta Zimbra hacia otra dirección de correo, v
 >>
 >> - En primer lugar, haga clic en <u>Modo avanzado</u> en la parte superior derecha para aplicar esta regla.
 >> - Asigne un nombre al filtro en el cuadro `Nombre del filtro`.
->> - Deje el menú desplegable en `todas` en la frase « Si un mensaje entrante cumple ... estas condiciones ».
+>> - Deje el menú desplegable en `todas` en la frase «Si un mensaje entrante cumple ... estas condiciones».
 >> - En el primer menú desplegable de reglas, seleccione `A` (To), deje `contiene` (contains) e introduzca la dirección de correo electrónico en la que ha iniciado sesión en el cuadro de la derecha.
->> - Bajo el epígrafe « Entonces » (Then), seleccione `Reenviar a `(Forward to) en el menú desplegable e introduzca la dirección de correo electrónico de destino.
+>> - Bajo el epígrafe «Entonces» (Then), seleccione `Reenviar a `(Forward to) en el menú desplegable e introduzca la dirección de correo electrónico de destino.
 >> - Haga clic en `+ Añadir acción`{.action}(Add an action) más abajo y seleccione `Mover a recepción` (Keep in Inbox).
 >> - Haga clic en `Guardar`{.action} en la ventana de su filtro y también en la ventana de configuración.
 >>
 >> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-500}
 >>
 
-Para más información sobre el uso del webmail Zimbra, consulte nuestra guía «[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
+Para más información sobre el uso del webmail Zimbra, consulte nuestra guía «[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)».
 
 ### Alias <a name="alias"></a>
 
 Crear un alias para su dirección de correo electrónico le permite comunicar una dirección «máscara» a sus contactos, sin tener que comunicar su dirección de correo electrónico personal al remitente.
 
-Puede crear un alias desde el [espacio de cliente OVHcloud](/links/manager), Haga clic en los pasos a continuación:
+Puede crear un alias desde el [espacio de cliente OVHcloud](/links/manager), Haga clic en los pasos a continuación :
 
 > [!tabs]
 > **Paso 1**
@@ -300,7 +300,7 @@ Puede crear un alias desde el [espacio de cliente OVHcloud](/links/manager), Hag
 
 ### Respuestas automáticas <a name="autoreply"></a>
 
-Si tiene que ausentarse y no tiene la posibilidad de procesar sus mensajes de correo, es posible implementar un mensaje de ausencia. Siga los pasos que se indican a continuación:
+Si tiene que ausentarse y no tiene la posibilidad de procesar sus mensajes de correo, es posible implementar un mensaje de ausencia. Siga los pasos que se indican a continuación :
 
 - Haga clic en el botón &#9881; en la esquina superior derecha de su ventana de webmail y luego en `Parámetros`{.action}.
 
@@ -309,13 +309,13 @@ Si tiene que ausentarse y no tiene la posibilidad de procesar sus mensajes de co
 - Haga clic en la sección `Ausente del escritorio` de la ventana de parámetros.
 - Marque la casilla «Activar la respuesta automática durante estas fechas (incluidas)».
 - Complete la fecha de inicio de la ausencia con la indicación «De».
-- Desactive la casilla de verificación "Sin fecha de finalización" si desea determinar una fecha de finalización de ausencia y defínala.
+- Desactive la casilla de verificación «Sin fecha de finalización» si desea determinar una fecha de finalización de ausencia y defínala.
 - Introduzca su mensaje de ausencia.
 - Haga clic en `Guardar`{.action} para finalizar la puesta en marcha de su mensaje de ausencia.
 
 ![zimbra](images/zimbra_autoreply01.png){.thumbnail .w-500}
 
-Para más información sobre el uso del webmail Zimbra, consulte nuestra guía «[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) »
+Para más información sobre el uso del webmail Zimbra, consulte nuestra guía «[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)»
 
 ## Más información <a name="go-further"></a>
 
