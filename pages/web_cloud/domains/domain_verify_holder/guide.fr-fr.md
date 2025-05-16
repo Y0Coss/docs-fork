@@ -90,15 +90,17 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 >> Cliquez sur le bouton `⁝`{.action} situé à droite, puis sur `Modifier l'opération`{.action}.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
+>> ![Domain name operation](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
 >>
 > **Étape 4**
 >>
 >> Dans la fenêtre qui s'ouvre, cochez le choix `Relancer l'opération`{.action}, puis cliquez sur `Confirmer`{.action}.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
+>> ![Operation data on domain](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
 
 Quelques minutes sont nécessaires pour finaliser l'opération. Actualisez la page `Opérations sur mes noms de domaine` où se trouvait l'opération de correction du contact pour votre nom de domaine.
+
+![Domain name operation](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction.png){.thumbnail}
 
 Si l'opération s'est terminée avec succès, la ligne relative à l'opération traitée n'apparaît plus. 
 
