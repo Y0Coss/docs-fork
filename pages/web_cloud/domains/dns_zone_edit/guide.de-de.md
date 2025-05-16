@@ -69,7 +69,7 @@ Um auf die Verwaltung der OVHcloud DNS-Zone zugreifen, klicken Sie jeweils auf d
 >>
 > **Schritt 3**
 >>
->> Die Tabelle zeigt für jede Zeile einen DNS-Eintrag zu Ihrer Domain bei OVHCloud an. Sie können die Einträge nach dem Eintragstyp oder der zugehörigen Domain filtern.
+>> Die Tabelle zeigt für jede Zeile einen DNS-Eintrag zu Ihrer Domain bei OVHcloud an. Sie können die Einträge nach dem Eintragstyp oder der zugehörigen Domain filtern.
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
 

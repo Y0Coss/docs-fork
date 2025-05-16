@@ -106,7 +106,7 @@ Le cas échéant, cela signifie qu'une correction est toujours nécessaire au ni
 
 ## Aller plus loin
 
-[Nom de domaine - Comment changer le titulaire ?](/pages/web_cloud/domains/trade_domain).
+[Nom de domaine - Comment changer le titulaire](/pages/web_cloud/domains/trade_domain).
 
 [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
 
