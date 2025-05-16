@@ -451,7 +451,7 @@ This feature is only available for primary Object Storage in a 3-AZ region (to k
 
 When creating a new bucket/container in a **3-AZ region**, you will be asked if you want to activave or not the Offsite Replication option. If enabled, and becase it relies on the asynchronous replication feature, the versioining will be automatically enabled too.
 
-![OffsiteReplication](images/01-offsite-replication01.png){.thumbnail}
+![OffsiteReplication](images/01-offsite-replication01.PNG){.thumbnail}
 
 #### What are the differences between the asynchronous replication feature and the Offsite Replication feature available in 3-AZ regions?
 
