@@ -30,7 +30,7 @@ Weitere Informationen finden Sie in unseren Anleitungen „[Alle Informationen z
 
 ## Voraussetzungen
 
-- Sie haben über Ihr [OVHcloud Kundencenter](/links/manager) ausreichende Berechtigungen zur Verwaltung der betreffenden Domain.
+- Sie haben über Ihr OVHcloud Kundencenter ausreichende Berechtigungen zur Verwaltung der betreffenden Domain.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - OVHcloud DNS-Server sind in Verwendung für die betreffende Domain.
 
