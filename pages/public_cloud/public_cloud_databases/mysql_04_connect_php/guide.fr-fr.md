@@ -1,7 +1,7 @@
 ---
 title: MySQL - Connectez-vous avec PHP (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using the PHP programming language
-updated: 2025-05-15
+updated: 2025-05-16
 ---
 
 ## Objective
