@@ -1,5 +1,5 @@
 ---
-title: 'Mode bridge IP'
+title: 'Configurer des Additional IP en mode bridge sur vos machines virtuelles'
 excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Internet de vos machines virtuelles'
 updated: 2025-05-16
 ---

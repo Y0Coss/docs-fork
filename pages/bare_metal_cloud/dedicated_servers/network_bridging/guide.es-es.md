@@ -1,6 +1,6 @@
 ---
 title: Configurar direcciones Additional IP en modo bridge en sus máquinas virtuales
-excerpt: El modo bridge IP se utiliza para configurar las maquinas virtuales. Es necesario realizar diversas modificaciones en las MV para que la configuracion de red este operativa.
+excerpt: 'Cómo utilizar el modo bridge para configurar el acceso a Internet de las máquinas virtuales'
 updated: 2025-05-16
 ---
 
