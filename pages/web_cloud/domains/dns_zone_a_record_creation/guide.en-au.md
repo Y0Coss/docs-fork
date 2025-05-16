@@ -83,7 +83,8 @@ See our detailed guides:
 
 ## Go further
 
-[Everything you need to know about DNS zones](/pages/web_cloud/domains/dns_zone_general_information)
+[Everything you need to know about DNS zones](/pages/web_cloud/domains/dns_zone_general_information).
+
 [Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
