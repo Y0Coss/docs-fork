@@ -14,9 +14,9 @@ updated: 2025-05-16
 
 ### High Grade & Scale Reihen
 
-Vanaf mei 2025 kunnen virtuele MAC-adressen worden gebruikt om Additional IP's in *bridged*-modus te laten werken op servers uit de High Grade- en Scale-reeksen.
+Ab Mai 2025 können virtuelle MAC-Adressen verwendet werden, um Additional IPs im *bridged* Modus auf den Servern der Produktreihen High Grade und Scale zu betreiben.
 
-Als u virtuele MAC-adressen wilt gebruiken om het netwerk met Hyper-V te configureren op uw servers uit de High Grade- of Scale-reeksen, kunt u de instructies [deze handleiding](/pages/bare_metal_cloud/dedicated_servers/network_bridging) raadplegen.
+Wenn Sie virtuelle MAC-Adressen zur Konfiguration des Netzwerks mit Hyper-V auf Ihren Servern der High Grade oder Scale Reihen verwenden möchten, lesen Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 ### Advance Reihe
 
