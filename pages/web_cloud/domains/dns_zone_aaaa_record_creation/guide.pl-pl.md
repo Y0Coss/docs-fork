@@ -84,6 +84,7 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 ## Sprawdź również
 
 [Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information).
+
 [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records).
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
