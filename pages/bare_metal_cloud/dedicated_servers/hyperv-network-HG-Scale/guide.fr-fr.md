@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le réseau sur Windows Server avec Hyper-V'
 excerpt: 'Découvrez comment configurer le réseau sur Windows Server'
-updated: 2025-05-15
+updated: 2025-05-16
 ---
 
 ## Objectif

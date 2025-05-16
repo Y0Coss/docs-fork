@@ -1,7 +1,7 @@
 ---
 title: "Netzwerk auf Windows Server mit Hyper-V konfigurieren"
 excerpt: "Erfahren Sie hier, wie Sie das Netzwerk auf Windows Server mit Hyper-V konfigurieren"
-updated: 2024-08-07
+updated: 2025-05-16
 ---
 
 > [!primary]
@@ -12,9 +12,11 @@ updated: 2024-08-07
 
 **Diese Anleitung erklärt, wie Sie das Netzwerk mit Hyper-V auf Windows Server konfigurieren.**
 
-### High Grade & SCALE Reihen
+### High Grade & Scale Reihen
 
-Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
+Vanaf mei 2025 kunnen virtuele MAC-adressen worden gebruikt om Additional IP's in *bridged*-modus te laten werken op servers uit de High Grade- en Scale-reeksen.
+
+Als u virtuele MAC-adressen wilt gebruiken om het netwerk met Hyper-V te configureren op uw servers uit de High Grade- of Scale-reeksen, kunt u de instructies [deze handleiding](/pages/bare_metal_cloud/dedicated_servers/network_bridging) raadplegen.
 
 ### Advance Reihe
 
