@@ -32,7 +32,7 @@ Lokale Benutzer sind einer der Identitätstypen, die in Ihrem OVHcloud Kunden-Ac
 
 #### Benutzer hinzufügen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager). Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action}, dann auf `Identitäten`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action}, dann auf `Identitäten`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -58,7 +58,7 @@ Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken S
 | DEFAULT (Eingeschränkter Administrator) | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **ausschließlich** Benutzerverwaltung. |
 | ADMIN (Administrator) | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **einschließlich** Benutzerverwaltung. |
 
-Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen getrennt mit einem “/”.
+Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen, getrennt mit einem “/”.
 
 Beispiel: **1234-567-89/johnsmith**.
 
