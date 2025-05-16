@@ -12,11 +12,11 @@ updated: 2025-05-16
 
 **Diese Anleitung erklärt, wie Sie das Netzwerk mit Hyper-V auf Windows Server konfigurieren.**
 
-### High Grade & SCALE Reihen
+### High Grade & Scale Reihen
 
-Ab Mai 2025 können virtuelle MAC-Adressen verwendet werden, um Additional IPs im *bridged* Modus auf den Servern der Produktreihen High Grade und SCALE zu betreiben.
+Ab Mai 2025 können virtuelle MAC-Adressen verwendet werden, um Additional IPs im *bridged* Modus auf den Servern der Produktreihen High Grade und Scale zu betreiben.
 
-Wenn Sie virtuelle MAC-Adressen zur Konfiguration des Netzwerks mit Hyper-V auf Ihren Servern der Reihen High Grade oder SCALE verwenden möchten, folgen Sie [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
+Wenn Sie virtuelle MAC-Adressen zur Konfiguration des Netzwerks mit Hyper-V auf Ihren Servern der Reihen High Grade oder Scale verwenden möchten, folgen Sie [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 ### Advance Reihe
 
