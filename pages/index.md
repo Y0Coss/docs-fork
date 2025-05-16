@@ -1200,6 +1200,7 @@
                 + [How to renew OVHcloud domain names](web_cloud/domains/autorenew_domain_name)
             + [Changing a domain name owner (trade)](web-cloud-domains-domain-names-changing-a-domain-name-owner-trade)
                 + [Changing the owner of a domain name](web_cloud/domains/trade_domain)
+                + [How to edit a domain name holder’s contact details](/pages/web_cloud/domains/domain_verify_holder)
                 + [Changer le propriétaire d’un domaine avec une Demande d'Opération AFNIC (DOA)](web_cloud/domains/trade_doa)
             + [Troubleshooting](web-cloud-domains-domain-names-troubleshooting)
                 + [Troubleshooting a domain name error](web_cloud/domains/domain_errors)
