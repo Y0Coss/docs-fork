@@ -42,7 +42,7 @@ Adquiriu um serviço MX Plan, que lhe permite beneficiar de endereços de e-mail
 
 > [!primary]
 >
-> **Identificar a tecnologia de e-mail da oferta MX Plan**
+> **Identificar a tecnologia de e-mail da oferta MX Plan.**
 >
 > Em função da data de ativação da sua oferta MX Plan ou de uma migração recente, a tecnologia de e-mail associada pode diferir. Esta versão é caracterizada pela interface do seu webmail. Para identificá-lo:
 >
@@ -74,16 +74,14 @@ Para saber como criar um endereço de e-mail, clique no separador correspondente
 >>
 >> Na nova janela que aparecerá, preencha as informações necessárias:
 >>
->> - **Nome da conta** : Indique o seu novo endereço de e-mail (por exemplo, o seu nome.apelido). O domínio que compõe o endereço de e-mail já está pré-selecionado na lista.
+>> - **Nome da conta**: Indique o seu novo endereço de e-mail (por exemplo, o seu nome.apelido). O domínio que compõe o endereço de e-mail já está pré-selecionado na lista.
 >> - **Descrição da conta**: Informação sobre o endereço de e-mail, visível apenas no quadro do separador `E-mails`{.action} do seu serviço de e-mail.
->> - **Tamanho da conta** : Determine o tamanho que pretende atribuir à conta de e-mail.
->> - **Nome Próprio** : Introduza um Nome.
->> - **Nome** : Introduza um nome.
+>> - **Tamanho da conta**: Determine o tamanho que pretende atribuir à conta de e-mail.
 >> - **Palavra-passe**: [Defina uma palavra-passe](/pages/account_and_service_management/account_information/manage-ovh-password) e confirme-a. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento) e renove-a regularmente.
 >>
 >> Depois de preencher os campos, clique em `Seguinte`{.action} e verifique as informações apresentadas no resumo. Se as informações estiverem corretas, clique em `Validar`{.action}. Repita este passo sempre que necessário, de acordo com o número de contas disponíveis.
 >>
->> ![email](images/mxplan-starter-new-step3.png){.thumbnail .w-500}
+>> ![email](images/mxplan-creation-new-step3-roundcube.png){.thumbnail .w-500}
 >>
 > **Zimbra e OWA**
 >>
@@ -93,12 +91,12 @@ Para saber como criar um endereço de e-mail, clique no separador correspondente
 >>
 >> Na nova janela que aparecerá, preencha as informações necessárias:
 >>
->> - **Conta de e-mail** : Um nome temporário já se encontra pré-preenchido na caixa de texto: elimine-o e indique o seu novo endereço de e-mail (por exemplo, o seu nome.apelido). O domínio que compõe o endereço de e-mail já está pré-selecionado na lista.
->> - **Nome Próprio** : Introduza um Nome.
->> - **Nome** : Introduza um nome.
->> - **Nome a visualizar** : Indique o nome que pretende apresentar como remetente quando enviar mensagens de correio eletrónico para este endereço.
+>> - **Conta de e-mail**: Um nome temporário já se encontra pré-preenchido na caixa de texto: elimine-o e indique o seu novo endereço de e-mail (por exemplo, o seu nome.apelido). O domínio que compõe o endereço de e-mail já está pré-selecionado na lista.
+>> - **Nome Próprio**: Introduza um Nome.
+>> - **Nome**: Introduza um nome.
+>> - **Nome a visualizar**: Indique o nome que pretende apresentar como remetente quando enviar mensagens de correio eletrónico para este endereço.
 >> - **Palavra-passe**: [Defina uma palavra-passe](/pages/account_and_service_management/account_information/manage-ovh-password) e confirme-a. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento) e renove-a regularmente.
->> - **Quota** : Determine o tamanho que pretende atribuir à conta de e-mail.
+>> - **Quota**: Determine o tamanho que pretende atribuir à conta de e-mail.
 >>
 >> Depois de preencher os campos, clique em `Seguinte`{.action} e verifique as informações apresentadas no resumo. Se as informações estiverem corretas, clique em `Validar`{.action}. Repita este passo sempre que necessário, de acordo com o número de contas disponíveis.
 >>
@@ -182,20 +180,20 @@ Selecione o separador correspondente ao tipo de configuração:
 > [!tabs]
 > **Configuração IMAP**
 >>
->> - **Nome de utilizador** : Introduza o endereço de e-mail **completo**.
->> - **Palavra-passe** : Insira a palavra-passe do endereço de e-mail.
+>> - **Nome de utilizador**: Introduza o endereço de e-mail **completo**.
+>> - **Palavra-passe**: Insira a palavra-passe do endereço de e-mail.
 >> - **Servidor Europe (de entrada)**: imap.mail.ovh.net **ou** ssl0.ovh.net.
 >> - **Servidor AMÉRICA/ÁSIA-PACÍFICO (de entrada)**: imap.mail.ovh.ca.
->> - **Port** : 993.
+>> - **Port**: 993.
 >> - **Tipo de segurança**: SSL/TLS.
 >>
 > **Configuração POP**
 >>
->> - **Nome de utilizador** : Introduza o endereço de e-mail **completo**.
->> - **Palavra-passe** : Insira a palavra-passe do endereço de e-mail.
+>> - **Nome de utilizador**: Introduza o endereço de e-mail **completo**.
+>> - **Palavra-passe**: Insira a palavra-passe do endereço de e-mail.
 >> - **Servidor Europe (de entrada)**: pop.mail.ovh.net **ou** ssl0.ovh.net.
 >> - **Servidor AMÉRICA/ÁSIA-PACÍFICO (de entrada)**: pop.mail.ovh.ca.
->> - **Port** : 995.
+>> - **Port**: 995.
 >> - **Tipo de segurança**: SSL/TLS.
 
 ##### Configurações de envio SMTP <a name="smtp"></a>
@@ -204,11 +202,11 @@ Para o envio dos e-mails, encontre abaixo os parâmetros **SMTP** a utilizar:
 
 **Configuração SMTP**
 
-- **Nome de utilizador** : Insira o endereço de e-mail **completo**.
-- **Palavra-passe** : Insira a palavra-passe do e-mail.
+- **Nome de utilizador**: Insira o endereço de e-mail **completo**.
+- **Palavra-passe**: Insira a palavra-passe do e-mail.
 - **Servidor Europe (de saída)**: pop.mail.ovh.net **ou** ssl0.ovh.net.
 - **Servidor AMÉRICA/ÁSIA-PACÍFICO (de saída)**: pop.mail.ovh.ca.
-- **Port** : 465.
+- **Port**: 465.
 - **Tipo de segurança**: SSL/TLS.
 
 ### Reencaminhamentos e alias <a name="redirection-alias"></a>
@@ -235,7 +233,7 @@ Para isso, clique no separador correspondente à sua tecnologia de e-mail:
 >>
 >> 1. **Criar um reencaminhamento a partir do webmail**: Através de regras da caixa de entrada ou filtros. Estas regras, que se aplicam aquando da receção de um e-mail, permitem a transferência ou o reencaminhamento de um e-mail. Para isso, recomendamos que siga o nosso guia « [Regras da caixa de receção a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) » ou que consulte o capítulo « Filtros » do nosso guia « [Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
 >>
->> 2. **Criar o seu reencaminhamento e alias a partir da Área de Cliente OVHcloud** : Para adicionar um reencaminhamento ou um alias, clique no separador `Reencaminhamentos`{.action}. Aparecerá o quadro dos reencaminhamentos ativos. À direita, clique no botão `Adicionar um reencaminhamento`{.action}.
+>> 2. **Criar o seu reencaminhamento e alias a partir da Área de Cliente OVHcloud**: Para adicionar um reencaminhamento ou um alias, clique no separador `Reencaminhamentos`{.action}. Aparecerá o quadro dos reencaminhamentos ativos. À direita, clique no botão `Adicionar um reencaminhamento`{.action}.
 >>
 >> - `Do endereço`: Introduza aqui o endereço de e-mail que deseja reencaminhar.<br>
 >> - `Para o endereço`: Introduza aqui o endereço de destino do seu reencaminhamento. Pode ser um dos seus endereços de e-mail OVHcloud ou um endereço de e-mail externo.<br>
@@ -268,20 +266,20 @@ Selecione o separador correspondente à tecnologia de e-mail da oferta MX Plan:
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Utilizar o webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+[Utilizar o webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
-[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
+[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
-[Utilizar o webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+[Utilizar o webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
-[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
+[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-[MX Plan - Criar uma resposta automática num endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
+[MX Plan - Criar uma resposta automática num endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
 
-[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
+[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

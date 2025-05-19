@@ -42,11 +42,11 @@ Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficie
 
 > [!primary]
 >
-> **Identifier la technologie e-mail de votre offre MX Plan**
+> **Identifier la technologie e-mail de votre offre MX Plan.**
 >
 > En fonction de la date d’activation de votre offre MX Plan ou d’une migration récente, la technologie e-mail associée peut différer. Cette version est caractérisée par l'interface de son webmail. Pour l'identifier :
 >
-> - Depuis l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action} ou `Webmail`{.action}.
+> - Depuis l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action} sous `Webmail`{.action}.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
@@ -77,13 +77,11 @@ Pour découvrir comment créer une adresse e-mail, cliquez sur l'onglet correspo
 >> - **Nom du compte** : Indiquez votre nouvelle adresse e-mail (par exemple, votre prénom.nom). Le nom de domaine composant l'adresse e-mail est déjà présélectionné dans la liste.
 >> - **Description du compte** : Information sur l'adresse e-mail, visible uniquement dans le tableau de l'onglet `Emails`{.action} de votre service e-mail.
 >> - **Taille du compte** : Déterminez la taille que vous souhaitez attribuer au compte e-mail.
->> - **Prénom** : Renseignez un prénom.
->> - **Nom** : Renseignez un nom.
 >> - **Mot de passe** : [Définissez un mot de passe](/pages/account_and_service_management/account_information/manage-ovh-password) et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple les mentions à vos nom, prénom et date de naissance) et de le renouveler régulièrement.
 >>
 >> Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez les informations qui s'affichent dans le récapitulatif. Si celles-ci sont correctes, cliquez sur `Valider`{.action}. Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
 >>
->> ![email](images/mxplan-starter-new-step3.png){.thumbnail .w-500}
+>> ![email](images/mxplan-creation-new-step3-roundcube.png){.thumbnail .w-500}
 >>
 > **Zimbra et OWA**
 >>
@@ -268,17 +266,17 @@ Sélectionnez l'onglet correspondant à la technologie e-mail de votre offre MX 
 
 ## Aller plus loin
 
-[Utiliser le webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+[Utiliser le webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
-[Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
+[Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
-[Utiliser le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+[Utiliser le webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
-[Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
+[Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-[MX Plan - Créer une réponse automatique sur une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
+[MX Plan - Créer une réponse automatique sur une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
 
-[Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
+[Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

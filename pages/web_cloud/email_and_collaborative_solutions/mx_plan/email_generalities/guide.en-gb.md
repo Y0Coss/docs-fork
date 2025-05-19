@@ -42,7 +42,7 @@ If you have just purchased an MX Plan solution, this means you have email addres
 
 > [!primary]
 >
-> **Identify the email technology for your MX Plan solution**
+> **Identify the email technology for your MX Plan solution.**
 >
 > Depending on the activation date of your MX Plan solution, or on a recent migration, the email technology associated with it may differ. This version is characterized by its webmail interface. To identify it:
 >
@@ -77,13 +77,11 @@ To find out how to create an email address, click on the tab corresponding to th
 >> - **Account name**: Enter your new email address (e.g. first name.surname). The domain name that makes up the email address is already pre-selected in the list.
 >> - **Account description**: Information on the email address, visible only in the table in the `Emails`{.action} tab of your email service.
 >> - **Account size**: Determine the size you would like to assign to the email account.
->> - **First name**: Enter a first name.
->> - **Name**: Enter a name.
 >> - **Password**: [Enter a password](/pages/account_and_service_management/account_information/manage-ovh-password) and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
 >>
 >> Once you have filled in the fields, click `Next`{.action} , then check the information that appears in the summary. If the information is correct, click `Confirm`{.action}. Repeat this step as necessary, depending on the number of accounts you have.
 >>
->> ![email](images/mxplan-starter-new-step3.png){.thumbnail .w-500}
+>> ![email](images/mxplan-creation-new-step3-roundcube.png){.thumbnail .w-500}
 >>
 > **Zimbra and OWA**
 >>
@@ -93,12 +91,12 @@ To find out how to create an email address, click on the tab corresponding to th
 >>
 >> In the window that pops up, enter the following information:
 >>
->> - **Email account** : A temporary name is already pre-filled in the text box: delete it and enter your new email address (e.g. your first name.surname). The domain name that makes up the email address is already pre-selected in the list.
+>> - **Email account**: A temporary name is already pre-filled in the text box: delete it and enter your new email address (e.g. your first name.surname). The domain name that makes up the email address is already pre-selected in the list.
 >> - **First name**: Enter a first name.
 >> - **Name**: Enter a name.
 >> - **Display name**: Enter the name that will be displayed as a sender when emails are sent from this address.
 >> - **Password**: [Enter a password](/pages/account_and_service_management/account_information/manage-ovh-password) and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
->> - **Quota** : Determine the size you would like to assign to the email account.
+>> - **Quota**: Determine the size you would like to assign to the email account.
 >>
 >> Once you have filled in the fields, click `Next`{.action} , then check the information that appears in the summary. If the information is correct, click `Confirm`{.action}. Repeat this step as necessary, depending on the number of accounts you have.
 >>
@@ -182,7 +180,7 @@ Select the tab corresponding to your configuration type:
 > [!tabs]
 > **IMAP configuration**
 >>
->> - **Username** : Enter the **full** email address.
+>> - **Username**: Enter the **full** email address.
 >> - **Password**: Enter the password for the email address.
 >> - **EUROPE server (incoming)**: imap.mail.ovh.net **or** ssl0.ovh.net.
 >> - **AMERICA/ASIA-PACIFIC server (incoming)**: imap.mail.ovh.ca.
@@ -191,9 +189,9 @@ Select the tab corresponding to your configuration type:
 >>
 > **POP configuration**
 >>
->> - **Username** : Enter the **full** email address.
+>> - **Username**: Enter the **full** email address.
 >> - **Password**: Enter the password for the email address.
->> - **EUROPE server (incoming)** : pop.mail.ovh.net **or** ssl0.ovh.net.
+>> - **EUROPE server (incoming)**: pop.mail.ovh.net **or** ssl0.ovh.net.
 >> - **AMERICA/ASIA-PACIFIC server (incoming)**: pop.mail.ovh.ca.
 >> - **Port**: 995.
 >> - **Security type**: SSL/TLS.
@@ -233,9 +231,9 @@ To do this, click on the tab corresponding to your email technology:
 >>
 >> When you are using **OWA** or **Zimbra** technology, you can do this in two ways:
 >>
->> 1. **Create your redirection via webmail** : Via inbox rules or filters. These rules, which are applied when an email is received, allow an email to be forwarded or redirected. To do this, please follow our guide on [Inbox rules via the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) , or read the Filters chapter of our guide on [Using webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+>> 1. **Create your redirection via webmail**: Via inbox rules or filters. These rules, which are applied when an email is received, allow an email to be forwarded or redirected. To do this, please follow our guide on [Inbox rules via the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) , or read the Filters chapter of our guide on [Using webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
 >>
->> 2. **Create your redirection and alias via the OVHcloud Control Panel** : To add a redirection or alias, click on the `Redirections`{.action} tab. The table of redirections that are already active is displayed. On the right, click `Add a redirection`{.action}.
+>> 2. **Create your redirection and alias via the OVHcloud Control Panel**: To add a redirection or alias, click on the `Redirections`{.action} tab. The table of redirections that are already active is displayed. On the right, click `Add a redirection`{.action}.
 >>
 >> - `From address`: Enter the email address you would like to redirect.<br>
 >> - `To address`: Enter the address you would like to redirect to here. This can be one of your OVHcloud email addresses, or an external email address.<br>
@@ -268,17 +266,17 @@ Select the tab corresponding to the email technology of your MX Plan solution:
 
 ## Go further <a name="go-further"></a>
 
-[Use Roundcube webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+[Use Roundcube webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
-[Use Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
+[Use Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
-[Use Outlook Web App (OWA) webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+[Use Outlook Web App (OWA) webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
-[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
+[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-[MX Plan - Create an automatic response on an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
+[MX Plan - Create an automatic response on an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
 
-[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
+[Use email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

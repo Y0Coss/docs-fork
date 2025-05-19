@@ -42,7 +42,7 @@ Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachr
 
 > [!primary]
 >
-> **E-Mail-Technologie Ihres MX Plan Angebots identifizieren**
+> **E-Mail-Technologie Ihres MX Plan Angebots identifizieren.**
 >
 > Abhängig vom Aktivierungsdatum Ihres MX Plan Angebots oder einer kürzlich durchgeführten Migration kann die zugehörige E-Mail-Technologie variieren. Diese Version ist durch das Webmail-Interface gekennzeichnet. Um ihn zu identifizieren:
 >
@@ -77,13 +77,11 @@ Um zu erfahren, wie Sie eine E-Mail-Adresse erstellen, klicken Sie auf den Tab f
 >> - **Kontoname**: Geben Sie Ihre neue E-Mail-Adresse ein (z. B. Vorname.Name). Der Domainname der E-Mail-Adresse ist bereits in der Liste vorausgewählt.
 >> - **Account-Beschreibung**: Informationen zur E-Mail-Adresse, die nur in der Tabelle im Tab `E-Mails`{.action} Ihres E-Mail-Dienstes angezeigt werden.
 >> - **Account-Größe**: Legen Sie die Größe fest, die Sie dem E-Mail-Account zuweisen möchten.
->> - **Vorname**: Geben Sie einen Vornamen ein.
->> - **Name**: Geben Sie einen Namen ein.
 >> - **Passwort**: [Passwort festlegen](/pages/account_and_service_management/account_information/manage-ovh-password) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie zum Beispiel Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
 >>
 >> Nachdem Sie die Felder ausgefüllt haben, klicken Sie auf `Weiter`{.action} und überprüfen Sie die Informationen in der Übersicht. Sind diese korrekt, klicken Sie auf `Bestätigen`{.action}. Führen Sie diesen Schritt so oft wie nötig aus, abhängig von der Anzahl der verfügbaren Accounts.
 >>
->> ![email](images/mxplan-starter-new-step3.png){.thumbnail .w-500}
+>> ![email](images/mxplan-creation-new-step3-roundcube.png){.thumbnail .w-500}
 >>
 > **Zimbra und OWA**
 >>
@@ -223,9 +221,9 @@ Klicken Sie hierzu auf den Tab für Ihre E-Mail-Technologie:
 >> Um eine Weiterleitung oder einen Alias hinzuzufügen, klicken Sie auf den Tab `E-Mails`{.action} Ihres MX Plan Dienstes und dann rechts auf `Weiterleitungsverwaltung`{.action}.
 >> Die Tabelle der bereits aktiven Weiterleitungen wird angezeigt. Rechts klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}, um mit der Erstellung Ihrer Weiterleitung oder Ihres Alias zu beginnen.
 >>
->> - `Von Adresse` : Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.<br>
->> - `Zur Adresse` : Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dies kann eine Ihrer OVHcloud E-Mail-Adressen oder eine externe E-Mail-Adresse sein.<br>
->> - `Wählen Sie einen Kopiermodus` : Legen Sie fest, ob Sie eine Kopie der empfangenen E-Mail an der Ziel-E-Mail-Adresse (`Von Adresse`) aufbewahren oder direkt an die Weiterleitungsadresse (`An Adresse`) ohne Kopie weiterleiten möchten.
+>> - `Von Adresse`: Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.<br>
+>> - `Zur Adresse`: Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dies kann eine Ihrer OVHcloud E-Mail-Adressen oder eine externe E-Mail-Adresse sein.<br>
+>> - `Wählen Sie einen Kopiermodus`: Legen Sie fest, ob Sie eine Kopie der empfangenen E-Mail an der Ziel-E-Mail-Adresse (`Von Adresse`) aufbewahren oder direkt an die Weiterleitungsadresse (`An Adresse`) ohne Kopie weiterleiten möchten.
 >>
 >> Die Verwendung der Weiterleitungen und Alias für Ihren MX Plan Dienst können Sie unserer vollständigen Anleitung entnehmen: „[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)“.
 >>
@@ -237,9 +235,9 @@ Klicken Sie hierzu auf den Tab für Ihre E-Mail-Technologie:
 >>
 >>> 2. **Weiterleitung und Alias über Ihr OVHcloud Kundencenter erstellen**: Um eine Weiterleitung oder einen Alias hinzuzufügen, klicken Sie auf den Tab `Weiterleitungen`{.action}. Die Tabelle der bereits aktiven Weiterleitungen wird angezeigt. Rechts klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}.
 >>
->> - `Von Adresse` : Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.<br>
->> - `Zur Adresse` : Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dies kann eine Ihrer OVHcloud E-Mail-Adressen oder eine externe E-Mail-Adresse sein.<br>
->> - `Wählen Sie einen Kopiermodus` : Legen Sie fest, ob Sie eine Kopie der empfangenen E-Mail an der Ziel-E-Mail-Adresse (`Von Adresse`) aufbewahren oder direkt an die Weiterleitungsadresse (`An Adresse`) ohne Kopie weiterleiten möchten.
+>> - `Von Adresse`: Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.<br>
+>> - `Zur Adresse`: Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dies kann eine Ihrer OVHcloud E-Mail-Adressen oder eine externe E-Mail-Adresse sein.<br>
+>> - `Wählen Sie einen Kopiermodus`: Legen Sie fest, ob Sie eine Kopie der empfangenen E-Mail an der Ziel-E-Mail-Adresse (`Von Adresse`) aufbewahren oder direkt an die Weiterleitungsadresse (`An Adresse`) ohne Kopie weiterleiten möchten.
 >>
 >> Weitere Informationen zur Verwendung von Weiterleitungen und Alias für Ihren MX Plan Dienst finden Sie in unserer vollständigen Anleitung: „[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)“.
 
@@ -268,17 +266,17 @@ Wählen Sie den Tab für die E-Mail-Technologie Ihres MX Plan Angebots aus:
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Roundcube Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+[Roundcube Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
-[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
+[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
-[Outlook Web App (OWA) Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+[Outlook Web App (OWA) Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
-[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
+[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-[MX Plan - Automatische Antwort an einer E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
+[MX Plan - Automatische Antwort an einer E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
 
-[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections).
+[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
