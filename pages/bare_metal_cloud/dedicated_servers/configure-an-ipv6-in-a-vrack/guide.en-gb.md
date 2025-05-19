@@ -1,7 +1,7 @@
 ---
-title: Configuring an IPv6 block in a vRack
+title: Configuring an Additional IPv6 block in a vRack
 excerpt: This guide will show you how to configure a block of public IPv6 addresses for use with the vRack
-updated: 2025-04-02
+updated: 2025-05-19
 ---
 
 <style>
@@ -26,14 +26,14 @@ The vRack network serves as a global private network bridging various OVHcloud p
 
 > [!primary]
 >
-> vRack supports both IPv4 and IPv6 blocks. You can find the instructions on how to configure IPv4 blocks in this guide: [Configuring an IP block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043342).
+> vRack supports both IPv4 and IPv6 public routing with Additional IP address blocks. You can find the instructions on how to configure IPv4 blocks in this guide: [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack/).
 >
 
 > [!primary]
 >
-> This article is about Additional IP. If you need guidance on Primary IP configuration, we suggest the following articles:<br> 
-> IPv4: [Configuring IP aliasing on dedicated servers](https://help.ovhcloud.com/csm/en-dedicated-servers-network-ipaliasing?id=kb_article_view&sysparm_article=KB0043756), [Configuring IP aliasing on a VPS](https://help.ovhcloud.com/csm/en-vps-network-ipaliasing?id=kb_article_view&sysparm_article=KB0047585)<br>
-> IPv6: [Configuring IPv6 on dedicated servers](https://help.ovhcloud.com/csm/en-gb-dedicated-servers-network-ipv6?id=kb_article_view&sysparm_article=KB0043764), [Configuring IPv6 on a VPS](https://help.ovhcloud.com/csm/en-vps-configuring-ipv6?id=kb_article_view&sysparm_article=KB0047575), [Configuring IPv6 on a Public Cloud instance](https://help.ovhcloud.com/csm/en-public-cloud-network-ipv6-configuration?id=kb_article_view&sysparm_article=KB0050182)
+> This article is focusing on Additional IP configuration over a vRack network. If you search for guidance on configuration Additional IP together with primary IP (on public network interface), we suggest checking following articles:<br> 
+> IPv4: [Configuring IP aliasing on dedicated servers](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing/), [Configuring IP aliasing on a VPS](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing/)<br>
+> IPv6: [Configuring IPv6 on dedicated servers](/pages/bare_metal_cloud/dedicated_servers/network_ipv6/), [Configuring IPv6 on a VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6/), [Configuring IPv6 on a Public Cloud instance](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6/)
 >
 
 ## Introduction
@@ -86,7 +86,7 @@ In this section we will present basic IPv6 setup for your vRack connected hosts.
 
 The example above shows two hosts with their vRack-side interfaces configured with IPv6 public addresses. One host is configured manually, while the other has an IP address assigned automatically using SLAAC. All IP addresses belong to the first /64 subnet from a given public /56 Additional IPv6 block. Both leverage the vRack interface for public IPv6 connectivity.
 
-Default gateway for the first /64 subnet (bridged one) is the first address from the /56 block. In this example it is 2001:41d0:abcd:ef00::1. This is distributed via SLAAC, but must be manually configured (as a default route) if SLAAC is disabled - see **Static IP configuration** below.
+Default gateway for the first /64 subnet (bridged one) is the first address from the /56 block. In this example it is `2001:41d0:abcd:ef00::1`. This is distributed via SLAAC, but must be manually configured (as a default route) if SLAAC is disabled - see **Static IP configuration** below.
 
 /// details | Via the OVHcloud Control Panel
 
@@ -208,7 +208,7 @@ First, let's add an IP address on the vRack interface (in our example "eth1"):
 $ sudo ip address add 2001:41d0:abcd:ef00::2/64 dev eth1
 ```
 
-(Please note that the first IP address in a block, 2001:41d0:abcd:ef00::1/64 is gateway IP address and must not be used for host addressing).
+(Please note that the first IP address in a block, `2001:41d0:abcd:ef00::1/64` is gateway IP address and must not be used for host addressing).
 
 Optionally, if you want to use the vRack interface as the main one for IPv6 traffic, the default route can be configured the following way:
 
@@ -293,7 +293,7 @@ Traffic coming back from such a VM should use the default route via the first pa
 
 For routed subnet definition any prefix size can be used between /57 and /64.
 
-Default gateway for the host is the first address from the /56 block, which is in this example: 2001:41d0:abcd:ef00::1. Default gateway used on the VMs then, are the configured host addresses (in this example fd00::1).
+Default gateway for the host is the first address from the /56 block, which is in this example: `2001:41d0:abcd:ef00::1`. Default gateway used on the VMs then, are the configured host addresses (in this example fd00::1).
 
 #### Define routed subnet
 

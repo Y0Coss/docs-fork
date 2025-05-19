@@ -1,7 +1,7 @@
 ---
-title: Configurer un bloc IPv6 dans un vRack
+title: Configurer un bloc Additional IPv6 dans un vRack
 excerpt: "Ce guide vous montrera comment configurer un bloc d'adresses IPv6 publiques à utiliser dans un vRack"
-updated: 2025-04-02
+updated: 2025-05-19
 ---
 
 <style>
@@ -26,14 +26,14 @@ Le réseau vRack est un réseau privé mondial qui relie différents produits OV
 
 > [!primary]
 >
-> Le vRack est compatible avec les blocs IPv4 et IPv6. Vous pouvez trouver des instructions vous indiquant comment configurer des blocs IPv4 dans ce guide: [Configurer un bloc IP dans le vRack](https://help.ovhcloud.com/csm/fr-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043347).
+> Le vRack prend en charge le routage public IPv4 et IPv6 avec des blocs d’adresses Additional IP. Vous pouvez trouver des instructions vous indiquant comment configurer des blocs IPv4 dans ce guide: [Configurer un bloc IP dans le vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack/).
 >
 
 > [!primary]
 >
-> Cet article parle d'Additional IP. Si vous avez besoin d'assistance sur la configuration de Primary IP, nous vous suggérons les articles suivants:<br> 
-> IPv4: [Configurer une adresse IP en alias sur un serveur dédié](https://help.ovhcloud.com/csm/fr-dedicated-servers-network-ipaliasing?id=kb_article_view&sysparm_article=KB0043761), [Configurer une adresse IP en alias sur un serveur VPS](https://help.ovhcloud.com/csm/fr-vps-network-ipaliasing?id=kb_article_view&sysparm_article=KB0047591)<br>
-> IPv6: [Configurer IPv6 sur un serveur dédié](https://help.ovhcloud.com/csm/fr-dedicated-servers-network-ipv6?id=kb_article_view&sysparm_article=KB0043775), [Configurer IPv6 sur un serveur VPS](https://help.ovhcloud.com/csm/fr-vps-configuring-ipv6?id=kb_article_view&sysparm_article=KB0047576), [Configurer IPv6 sur une instance Public Cloud](https://help.ovhcloud.com/csm/fr-public-cloud-network-ipv6-configuration?id=kb_article_view&sysparm_article=KB0050183)
+> Cet article parle de la configuration d'Additional IP sur un réseau vRack. Si vous cherchez des conseils sur la configuration d'Additional IP avec une adresse IP principale (sur l'interface réseau publique), nous vous suggérons de consulter les articles suivants :<br> 
+> IPv4: [Configurer une adresse IP en alias sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing/), [Configurer une adresse IP en alias sur un serveur VPS](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing/)<br>
+> IPv6: [Configurer IPv6 sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/network_ipv6/), [Configurer IPv6 sur un serveur VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6/), [Configurer IPv6 sur une instance Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6/)
 >
 
 ## Introduction
@@ -85,7 +85,7 @@ Dans cette section, nous présenterons la configuration IPv6 de base de vos hôt
 
 L'exemple ci-dessus montre deux hôtes avec leurs interfaces côté vRack configurées avec des adresses publiques IPv6. Un hôte possède une configuration manuelle, tandis qu’un autre dispose d'une adresse IP attribuée automatiquement en SLAAC. Toutes les adresses IP appartiennent au premier sous-réseau /64 d'un bloc /56 d'Additional IPv6 publiques donné. Les deux utilisent l'interface vRack pour la connectivité IPv6 publique.
 
-La passerelle par défaut pour le premier sous-réseau /64 (celui qui est bridgé) est la première adresse du bloc /56. Dans cet exemple, la passerelle est 2001:41d0:abcd:ef00::1. Celle-ci est distribuée via SLAAC, mais doit être configurée manuellement (en tant que route par défaut) si le SLAAC est désactivé - voir **Configuration IP statique** ci-dessous.
+La passerelle par défaut pour le premier sous-réseau /64 (celui qui est bridgé) est la première adresse du bloc /56. Dans cet exemple, la passerelle est `2001:41d0:abcd:ef00::1`. Celle-ci est distribuée via SLAAC, mais doit être configurée manuellement (en tant que route par défaut) si le SLAAC est désactivé - voir **Configuration IP statique** ci-dessous.
 
 /// details | Via l'espace client OVHcloud
 
@@ -291,7 +291,7 @@ Le trafic revenant d'une telle VM doit utiliser la route par défaut via la prem
 
 Pour la définition de sous-réseau routé, toute taille de préfixe peut être utilisée entre /57 et /64.
 
-La passerelle par défaut de l'hôte est la première adresse du bloc /56, qui est dans cet exemple: 2001:41d0:abcd:ef00::1. Les passerelles par défaut utilisées par les VMs sont les adresses configurées de l'hôte (ici fd00::1).
+La passerelle par défaut de l'hôte est la première adresse du bloc /56, qui est dans cet exemple: `2001:41d0:abcd:ef00::1`. Les passerelles par défaut utilisées par les VMs sont les adresses configurées de l'hôte (ici fd00::1).
 
 #### Définir un sous-réseau routé
 

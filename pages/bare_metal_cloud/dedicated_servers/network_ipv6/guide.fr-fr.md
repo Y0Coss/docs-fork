@@ -1,7 +1,7 @@
 ---
-title: 'Configurer IPv6 sur un serveur dédié'
+title: 'Configurer une adresse IPv6 principale sur un serveur dédié'
 excerpt: 'Découvrez comment configurer des adresses IPv6 sur notre infrastructure.'
-updated: 2024-07-15
+updated: 2025-05-19
 ---
 
 ## Objectif
@@ -12,9 +12,9 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 
 > [!primary]
 >
-> Cet article parle de la configuration de Primary IP. Sur les serveurs qui sont compatibles vRack, vous pouvez aussi configurer des adresses Additional IP sur un vRack plutôt que sur l'interface publique de votre serveur. Vous pouvez trouver des instructions dans ces guides: <br>
-> IPv4: [Configurer un bloc IP dans un vRack](https://help.ovhcloud.com/csm/fr-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043347) <br>
-> IPv6: [Configurer un bloc IPv6 dans un vRack](https://help.ovhcloud.com/csm/fr-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062825).
+> Cet article parle de la configuration d'une adresse IP principale. Sur les serveurs qui sont compatibles vRack, vous pouvez aussi configurer des adresses Additional IP sur un vRack plutôt que sur l'interface publique de votre serveur. Vous pouvez trouver des instructions dans ces guides: <br>
+> IPv4: [Configurer un bloc IP dans un vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack/) <br>
+> IPv6: [Configurer un bloc IPv6 dans un vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack/).
 >
 
 > [!warning]
