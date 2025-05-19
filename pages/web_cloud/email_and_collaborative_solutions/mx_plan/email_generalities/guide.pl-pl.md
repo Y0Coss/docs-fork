@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą MX Plan'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi MX Plan'
-updated: 2025-04-30
+updated: 2025-05-19
 ---
 
 <style>
@@ -117,7 +117,7 @@ Wybierz kartę odpowiadającą technologii e-mail w Twojej usłudze MX Plan:
 > **Roundcube**
 >>
 >> Otrzymasz interfejs podobny do poniższego obrazka z napisem "Rouncube" w lewym górnym rogu.
->> Zapoznaj się z interfejsem Roundcube i jego wykorzystaniem w przewodniku "[Korzystanie z adresu e-mail przy użyciu interfejsu Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube) ".
+>> Zapoznaj się z interfejsem Roundcube i jego wykorzystaniem w przewodniku "[Korzystanie z adresu e-mail przy użyciu interfejsu Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)".
 >>
 >> ![email](images/mxplan-webmail-roundcube01.png){.thumbnail .w-500}
 >>
@@ -132,7 +132,7 @@ Wybierz kartę odpowiadającą technologii e-mail w Twojej usłudze MX Plan:
 >>
 >> Podczas pierwszego logowania do interfejsu webmail zostaniesz poproszony o ustawienie języka interfejsu oraz strefy czasowej, w której się znajdujesz. Wyświetli się wówczas Twoja skrzynka odbiorcza.
 >>
->> Zapoznaj się z przewodnikiem dotyczącym korzystania z konta e-mail przy użyciu Webmail OWA "[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) ".
+>> Zapoznaj się z przewodnikiem dotyczącym korzystania z konta e-mail przy użyciu Webmail OWA "[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
 >>
 >> ![email](images/mxplan-webmail-owa01.png){.thumbnail .w-500}
 >>
@@ -225,7 +225,7 @@ W tym celu kliknij kartę odpowiadającą Twojej technologii e-mail:
 >> - `Na adres`: Wpisz tutaj adres docelowy przekierowania. Może to być jeden z Twoich adresów e-mail OVHcloud lub adres zewnętrzny.<br>
 >> - `Wybierz tryb kopii`: Określ, czy chcesz zachować kopię wiadomości otrzymanej na docelowy adres e-mail (`Z adresu`), czy też przekierować ją bezpośrednio na adres przekierowania (`Na adres`) bez zachowywania kopii.
 >>
->> Zapoznaj się z przekierowaniami i aliasami usługi MX Plan z naszego przewodnika: "[Korzystanie z przekierowań e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections) ".
+>> Zapoznaj się z przekierowaniami i aliasami usługi MX Plan z naszego przewodnika: "[Korzystanie z przekierowań e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)".
 >>
 > **OWA i Zimbra**
 >>
@@ -261,7 +261,7 @@ Wybierz kartę odpowiadającą technologii e-mail w Twojej usłudze MX Plan:
 >>
 > **OWA**
 >>
->> Automatyczna odpowiedź jest uruchamiana po zalogowaniu się do konta e-mail za pomocą interfejsu Webmail. Aby uzyskać szczegółowe informacje, zapoznaj się z naszym przewodnikiem "[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) ", przejdź bezpośrednio do rozdziału "Dodaj automatyczną odpowiedź".
+>> Automatyczna odpowiedź jest uruchamiana po zalogowaniu się do konta e-mail za pomocą interfejsu Webmail. Aby uzyskać szczegółowe informacje, zapoznaj się z naszym przewodnikiem "[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)", przejdź bezpośrednio do rozdziału "Dodaj automatyczną odpowiedź".
 >>
 
 ## Sprawdź również <a name="go-further"></a>

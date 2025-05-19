@@ -1,7 +1,7 @@
 ---
 title: 'Introdução à oferta MX Plan'
 excerpt: 'Saiba como começar a usar a oferta MX Plan'
-updated: 2025-04-30
+updated: 2025-05-19
 ---
 
 <style>
@@ -109,22 +109,22 @@ Depois de criar os endereços de e-mail, pode começar a utilizá-los. Para isso
 
 #### Utilizar o Webmail <a name="consult-emails-webmail"></a>
 
-Aceda à página de « [Ligação ao webmail](/links/web/email) » e introduza o endereço de e-mail e a respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página de «[Ligação ao webmail](/links/web/email)» e introduza o endereço de e-mail e a respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 Selecione o separador correspondente à tecnologia de e-mail da oferta MX Plan:
 
 > [!tabs]
 > **Roundcube**
 >>
->> Você deve obter uma interface semelhante à imagem abaixo com a menção « Rouncube » no canto superior esquerdo.
->> Para descobrir a interface Roundcube e a sua utilização, consulte o guia « [Utilizar o seu endereço de e-mail a partir do webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube) ».
+>> Você deve obter uma interface semelhante à imagem abaixo com a menção «Rouncube» no canto superior esquerdo.
+>> Para descobrir a interface Roundcube e a sua utilização, consulte o guia «[Utilizar o seu endereço de e-mail a partir do webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)».
 >>
 >> ![email](images/mxplan-webmail-roundcube01.png){.thumbnail .w-500}
 >>
 > **Zimbra**
 >>
->> Como na imagem abaixo, aparece uma janela com a menção « Zimbra » no canto superior esquerdo.
->> Para saber como utilizar o seu endereço de e-mail a partir do webmail Zimbra, consulte o guia « [Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
+>> Como na imagem abaixo, aparece uma janela com a menção «Zimbra» no canto superior esquerdo.
+>> Para saber como utilizar o seu endereço de e-mail a partir do webmail Zimbra, consulte o guia «[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)».
 >>
 >> ![email](images/mxplan-webmail-zimbra01.png){.thumbnail .w-500}
 >>
@@ -132,7 +132,7 @@ Selecione o separador correspondente à tecnologia de e-mail da oferta MX Plan:
 >>
 >> Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada.
 >>
->> Para saber como utilizar o seu endereço de e-mail a partir do webmail OWA, consulte o nosso guia « [Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) ».
+>> Para saber como utilizar o seu endereço de e-mail a partir do webmail OWA, consulte o nosso guia «[Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)».
 >>
 >> ![email](images/mxplan-webmail-owa01.png){.thumbnail .w-500}
 >>
@@ -223,23 +223,23 @@ Para isso, clique no separador correspondente à sua tecnologia de e-mail:
 >>
 >> - `Do endereço`: Introduza aqui o endereço de e-mail que deseja reencaminhar.<br>
 >> - `Para o endereço`: Introduza aqui o endereço de destino do seu reencaminhamento. Pode ser um dos seus endereços de e-mail OVHcloud ou um endereço de e-mail externo.<br>
->> - `Escolha um modo de cópia`: defina se deseja conservar uma cópia do e-mail recebido no endereço de e-mail visado (`Do endereço`) ou diretamente enviar para o endereço de reencaminhamento (`Para o endereço`) sem conservar uma cópia.
+>> - `Escolha um modo de cópia`: Defina se deseja conservar uma cópia do e-mail recebido no endereço de e-mail visado (`Do endereço`) ou diretamente enviar para o endereço de reencaminhamento (`Para o endereço`) sem conservar uma cópia.
 >>
->> Para compreender a utilização dos reencaminhamentos e alias no serviço MX Plan, consulte o nosso guia completo: « [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections) ».
+>> Para compreender a utilização dos reencaminhamentos e alias no serviço MX Plan, consulte o nosso guia completo: «[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)».
 >>
 > **OWA e Zimbra**
 >>
 >> Quando se trata de uma tecnologia **OWA** ou **Zimbra**, pode fazê-lo de duas formas:
 >>
->> 1. **Criar um reencaminhamento a partir do webmail**: Através de regras da caixa de entrada ou filtros. Estas regras, que se aplicam aquando da receção de um e-mail, permitem a transferência ou o reencaminhamento de um e-mail. Para isso, recomendamos que siga o nosso guia « [Regras da caixa de receção a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) » ou que consulte o capítulo « Filtros » do nosso guia « [Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
+>> 1. **Criar um reencaminhamento a partir do webmail**: Através de regras da caixa de entrada ou filtros. Estas regras, que se aplicam aquando da receção de um e-mail, permitem a transferência ou o reencaminhamento de um e-mail. Para isso, recomendamos que siga o nosso guia «[Regras da caixa de receção a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)» ou que consulte o capítulo «Filtros » do nosso guia «[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)».
 >>
 >> 2. **Criar o seu reencaminhamento e alias a partir da Área de Cliente OVHcloud**: Para adicionar um reencaminhamento ou um alias, clique no separador `Reencaminhamentos`{.action}. Aparecerá o quadro dos reencaminhamentos ativos. À direita, clique no botão `Adicionar um reencaminhamento`{.action}.
 >>
 >> - `Do endereço`: Introduza aqui o endereço de e-mail que deseja reencaminhar.<br>
 >> - `Para o endereço`: Introduza aqui o endereço de destino do seu reencaminhamento. Pode ser um dos seus endereços de e-mail OVHcloud ou um endereço de e-mail externo.<br>
->> - `Escolha um modo de cópia`: defina se deseja conservar uma cópia do e-mail recebido no endereço de e-mail visado (`Do endereço`) ou diretamente enviar para o endereço de reencaminhamento (`Para o endereço`) sem conservar uma cópia.
+>> - `Escolha um modo de cópia`: Defina se deseja conservar uma cópia do e-mail recebido no endereço de e-mail visado (`Do endereço`) ou diretamente enviar para o endereço de reencaminhamento (`Para o endereço`) sem conservar uma cópia.
 >>
->> Para compreender a utilização dos reencaminhamentos e alias no seu serviço MX Plan, consulte o nosso guia completo: « [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections) ».
+>> Para compreender a utilização dos reencaminhamentos e alias no seu serviço MX Plan, consulte o nosso guia completo: «[Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)».
 
 ### Resposta automática <a name="autoreply"></a>
 
@@ -253,15 +253,15 @@ Selecione o separador correspondente à tecnologia de e-mail da oferta MX Plan:
 >> Para adicionar uma resposta automática a um dos seus endereços de e-mail, clique no separador `E-mails`{.action} do serviço MX Plan e, a seguir, clique no botão `Gestão das respostas automáticas`{.action} à direita.
 >> Aparecerá uma tabela com as respostas automáticas já ativas. À direita, clique no botão `Adicionar uma resposta automática`{.action} para lançar a criação do seu reencaminhamento ou alias.
 >>
->> Para obter mais informações sobre a implementação de uma resposta automática a partir do serviço MX Plan na sua Área de Cliente OVHcloud, consulte o guia « [MX Plan - Criar uma resposta automática num endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses) ».
+>> Para obter mais informações sobre a implementação de uma resposta automática a partir do serviço MX Plan na sua Área de Cliente OVHcloud, consulte o guia «[MX Plan - Criar uma resposta automática num endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)».
 >>
 > **Zimbra**
 >>
->> A implementação de uma resposta automática é realizada diretamente através da ligação ao endereço de e-mail a partir do Webmail. Para obter os detalhes, consulte o guia « [Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) », selecione « Respostas automáticas/Atendedor » no índice.
+>> A implementação de uma resposta automática é realizada diretamente através da ligação ao endereço de e-mail a partir do Webmail. Para obter os detalhes, consulte o guia «[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)», selecione «Respostas automáticas/Atendedor» no índice.
 >>
 > **OWA**
 >>
->> A implementação de uma resposta automática é realizada diretamente através da ligação ao endereço de e-mail a partir do Webmail. Para obter os detalhes, consulte o nosso guia « [Utilizar o seu endereço de e-mail a partir do webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) », vá diretamente ao capítulo « Adicionar a resposta automática ».
+>> A implementação de uma resposta automática é realizada diretamente através da ligação ao endereço de e-mail a partir do Webmail. Para obter os detalhes, consulte o nosso guia «[Utilizar o seu endereço de e-mail a partir do webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)», vá diretamente ao capítulo «Adicionar a resposta automática».
 >>
 
 ## Quer saber mais? <a name="go-further"></a>
@@ -278,7 +278,7 @@ Selecione o separador correspondente à tecnologia de e-mail da oferta MX Plan:
 
 [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
