@@ -1,7 +1,7 @@
 ---
 title: "Angaben zum Inhaber eines Domainnamens korrigieren"
 excerpt: "Erfahren Sie, wie Sie die Kontaktinformationen des Inhabers eines Domainnamens nach Erhalt einer Benachrichtigungs-E-Mail von OVHcloud korrigieren oder vervollständigen können"
-updated: 2025-05-16
+updated: 2025-05-19
 ---
 
 ## Ziel
@@ -40,9 +40,11 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 > **Schritt 3**
 >>
->> Im Bereich **Abo** finden Sie den Abschnitt **Kontakte**. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Die Kontakte verwalten`{.action}.
+>> Überprüfen Sie auf der angezeigten Seite zunächst, ob Ihr Domainname von dem Verfahren betroffen ist. Ein Banner (gelb oder rot) weist auf die durchzuführende Operation hin.
 >>
->> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
+>> Im Rahmen **Abo** finden Sie dann **Kontakte**. Klicken Sie rechts auf den Button `...`{.action} und dann auf `Kontakte verwalten`{.action}.
+>>
+>> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
 > **Schritt 4**
 >>

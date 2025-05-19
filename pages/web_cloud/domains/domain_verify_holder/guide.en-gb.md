@@ -1,7 +1,7 @@
 ---
 title: "Correct the contact details of a domain name holder"
 excerpt: "Find out how to correct or complete the contact information of a domain name holder after receiving an alert email from OVHcloud"
-updated: 2025-05-16
+updated: 2025-05-19
 ---
 
 ## Objective
@@ -40,9 +40,11 @@ Click on the tabs below to view each of the **5** steps.
 >>
 > **Step 3**
 >>
->> In the **Plan** box, you will see **Contacts**. Click `...`{.action} on the right-hand side, then `Manage contacts`{.action}.
+>> On the page that pops up, check that your domain name is covered by the procedure, as there is a banner (yellow or red) indicating the operation to be carried out.
 >>
->>![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
+>> You will then find the **Contacts** comment in the **Plan** box. Click the `...`{.action} button on the right, then `Manage contacts`{.action}.
+>>
+>> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
 > **Step 4**
 >>

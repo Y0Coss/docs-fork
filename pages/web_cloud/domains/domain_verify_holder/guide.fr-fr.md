@@ -1,7 +1,7 @@
 ---
 title: "Corriger les coordonnées du titulaire d'un nom de domaine"
 excerpt: "Découvrez comment corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud"
-updated: 2025-05-16
+updated: 2025-05-19
 ---
 
 ## Objectif
@@ -40,9 +40,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 3**
 >>
->> Sur la page qui s'affiche, vous trouverez dans le cadre **Abonnement** la mention **Contacts**. Cliquez sur le bouton `...`{.action} à droite puis sur `Gérer les contacts`{.action}.
+>> Sur la page qui s'affiche, vérifiez d'abord que votre nom de domaine est bien concerné par la procédure grâce à la présence d'un bandeau (jaune ou rouge) signalant l'opération à réaliser.
 >>
->> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
+>> Vous trouverez ensuite la mention **Contacts**  dans le cadre **Abonnement**. Cliquez sur le bouton `...`{.action} à droite puis sur `Gérer les contacts`{.action}.
+>>
+>> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
 > **Étape 4**
 >>
