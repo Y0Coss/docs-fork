@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - Consulter les statistiques et logs CDN"
 excerpt: "Découvrez comment consulter les statistiques et les logs CDN de votre site web grâce à votre offre d'hébergement web"
-updated: 2025-05-16
+updated: 2025-05-19
 ---
 
 ## Objectif
