@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "Frequently Asked Questions on the Object Storage solution"
-updated: 2025-05-27
+updated: 2025-06-04
 ---
 
 ## General questions
@@ -10,7 +10,7 @@ updated: 2025-05-27
 
 Object Storage is a family of storage solutions offering high-performance, scalable and secure storage spaces.
 
-Object storage solutions allow static files (videos, images, web files, etc.) to be stored in an unlimited space via a public access point called the "endpoint", so that they can be used from an application or made accessible on the web. These storage spaces are accessed through a standard S3 **\*** compatible API interface for the Object Storage classes and Swift for the SWIFT Object Storage classes.
+Object storage solutions allow static files (videos, images, web files, etc.) to be stored in an unlimited space via a public access point called the "endpoint", so that they can be used from an application or made accessible on the web. These storage spaces are accessed through a standard S3<sup>1</sup> compatible API interface for the Object Storage classes and Swift for the SWIFT Object Storage classes.
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/8xXbL3Ftgwk?si=OaRx5koocA-OyRXC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -236,10 +236,10 @@ The maximum bandwidth is 1 Gbps per connection.
 
 ### What is the Offsite Replication option in a 3-AZ deployment mode?
 
-With Object Storage in a 3-AZ region, we have introduced a new option called **Offsite Replication**, which automatically replicates your data to a remote site for greater resiliency with a one-click action in the OVHcloud Control Panel. This feature is only available for primary Object Storage in a 3-AZ region and is based on an OVHcloud auto-generated and managed replication rule configuration. Follow [this guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication), section "Offsite Replication option" to get more details about this feature. 
+With Object Storage in a 3-AZ region, we have introduced a new option called **Offsite Replication**, which automatically replicates your data to a remote site for greater resiliency with a one-click action in the OVHcloud Control Panel. This feature is only available for primary Object Storage in a 3-AZ region and is based on an OVHcloud auto-generated and managed replication rule configuration. Read the "Offsite Replication option" section from [this guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) to get more details about this feature.
 
 ## Go further
 
 Join our [community of users](/links/community).
 
-**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

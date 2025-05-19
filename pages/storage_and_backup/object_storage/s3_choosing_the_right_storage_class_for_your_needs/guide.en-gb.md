@@ -1,15 +1,15 @@
 ---
 title: Object Storage - Choosing the right storage class for your needs
-updated: 2025-05-27
+updated: 2025-06-04
 ---
 
 Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
 
 With object storage solutions, you can store static files (videos, images, web files...) in an unlimited space via a public access point, called an endpoint. You can use these files from an application, or you can make them accessible on the web. These storage spaces are accessible via an API interface.
 
-We offer two Object Storage solutions: our **latest generation S3-compatible Object Storage**, which is generally available, and our **established SWIFT Object Storage**, which remains a supported option for users. However, we recommend, using the S3-compatible Object Storage solution for newly designed applications as it benefits from latest features.
+We offer two Object Storage solutions: our **latest generation S3<sup>1</sup>-compatible Object Storage**, which is generally available, and our **established SWIFT Object Storage**, which remains a supported option for users. However, we recommend using the S3-compatible Object Storage solution for newly designed applications as it benefits from the latest features.
 
-## S3* compatible Object Storage tiers
+## S3 compatible Object Storage tiers
 
 Our **S3 compatible Object Storage classes** are tailored to meet specific requirements for your workloads including overall performance, availability and resiliency levels, access time and costs. 
 
@@ -71,4 +71,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our [community of users](/links/community).
 
-**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

@@ -1,15 +1,15 @@
 ---
 title: Object Storage - Choisir une classe de stockage adaptée à vos besoins
-updated: 2025-05-27
+updated: 2025-06-04
 ---
 
 Le stockage objet « Object Storage » est une famille d’offres de stockage proposant des espaces de stockage performants, scalables et sécurisés.
 
 Les offres de stockage objet permettent de déposer à travers un point d’accès public appelé « endpoint » des fichiers statiques (vidéos, images, fichiers web…) dans un espace illimité, pour les exploiter depuis une application ou pour les rendre accessibles sur le web. Ces espaces de stockage sont accessibles via une interface d’API .
 
-Nous proposons deux solutions de stockage d'objets : notre **dernière génération d'Object Storage - compatible S3***, qui est disponible globalement, et **la solution Object Storage SWIFT API *legacy***, qui reste une option prise en charge pour les utilisateurs. Cependant, nous recommandons d'utiliser la solution Object Storage - compatible S3 pour toute nouvelle conception d'application, car celle-ci bénéficie des dernières fonctionnalités et innovations.
+Nous proposons deux solutions de stockage d'objets : notre **dernière génération d'Object Storage - compatible S3<sup>1</sup>**, qui est disponible globalement, et **la solution Object Storage SWIFT API *legacy***, qui reste une option prise en charge pour les utilisateurs. Cependant, nous recommandons d'utiliser la solution Object Storage - compatible S3 pour toute nouvelle conception d'application, car celle-ci bénéficie des dernières fonctionnalités et innovations.
 
-## Les classes Object Storage compatible S3
+## Les classes Object Storage compatibles S3
 
 ### Object Storage - Standard
 
@@ -25,7 +25,7 @@ Cette offre est adaptée aux cas d'usage suivants : AI & Analytics, Datalake, H
 
 ### Object Storage - Infrequent Access ou *accès peu fréquent*
 
-La classe de stockage Infrequent Access est conçue pour les données qui sont rarement consultées, également appelées "données froides", mais nécessitant un accès rapide. Elle offre des performances similaires (TTFB en millisecondes, faible latence) et une disponibilité comparable à la classe Standard, à un coût inférieur par Gio-heure consommé mais avec un coût de récupération par Gio.
+La classe de stockage Infrequent Access est conçue pour les données qui sont rarement consultées, également appelées « données froides », mais nécessitant un accès rapide. Elle offre des performances similaires (TTFB en millisecondes, faible latence) et une disponibilité comparable à la classe Standard, à un coût inférieur par Gio-heure consommé mais avec un coût de récupération par Gio.
 
 Cette offre est adaptée aux cas d'usage suivants : stockage long durée, sauvegardes, reprise après sinistre.
 
@@ -35,10 +35,10 @@ Cette offre est adaptée aux cas d'usage suivants : stockage long durée, sauveg
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **High performance** | AI & Analytics, Datalake, High power Computing Multimedia / Content Platform | millisecondes | 1-AZ | régions 1-AZ : 99,9% | Aucune | Non | À l'objet, prise en charge de la gestion du cycle de vie |
 | **Standard** | media / content storage & delivery, datalake, website, backup, logs et métriques d'applications | millisecondes | 1-AZ et 3-AZ | régions 1-AZ : 99,9% - régions 3-AZ : 99,99% | Aucune | Non | À l'objet, prise en charge de la gestion du cycle de vie |
-| **Infrequent Access** | stockage long durée, sauvegardes, reprise après sinistre.e | millisecondes | 1-AZ et 3-AZ | régions 1-AZ : 99,9% - régions 3-AZ : 99,99% | 30 jours | Oui | À l'objet, prise en charge de la gestion du cycle de vie |
+| **Infrequent Access** | stockage longue durée, sauvegardes, reprise après sinistre | millisecondes | 1-AZ et 3-AZ | régions 1-AZ : 99,9% - régions 3-AZ : 99,99% | 30 jours | Oui | À l'objet, prise en charge de la gestion du cycle de vie |
 | **Cold Archive** *[en savoir plus](/pages/storage_and_backup/object_storage/cold_archive_overview)* | Stockage à très long terme, sauvegardes, reprise après sinistre | heures | 4 centres de données dédiés | 99,9% | 90 jours | Oui | Au bucket, pas de prise en charge de la gestion du cycle de vie pour le moment |
 
-Plus de détails concernant les régions OVHcloud [ici](/pages/storage_and_backup/object_storage/s3_location).
+Retrouvez plus de détails concernant les régions OVHcloud [ici](/pages/storage_and_backup/object_storage/s3_location).
 
 ## Object Storage - SWIFT API
 
@@ -69,4 +69,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

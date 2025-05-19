@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "FAQ sur la solution Object Storage"
-updated: 2025-02-05
+updated: 2025-06-04
 ---
 
 ## Questions générales
@@ -10,7 +10,7 @@ updated: 2025-02-05
 
 Le stockage objet «Object Storage» est une famille d’offres de stockage proposant des espaces de stockage performant, scalable et sécurisé.
 
-Les offres de stockage objet permettent de déposer, à travers un point d’accès public appelé « endpoint », des fichiers statiques (vidéos, images, fichiers web, etc...) dans un espace illimité, pour les exploiter depuis une application ou pour les rendre accessibles sur le web. Ces espaces de stockages sont accessibles via une interface d’API standard compatible S3 **\*** pour les classes de stockage Object Storage et Swift pour les classes de stockage Object Storage SWIFT.
+Les offres de stockage objet permettent de déposer, à travers un point d’accès public appelé « endpoint », des fichiers statiques (vidéos, images, fichiers web, etc...) dans un espace illimité, pour les exploiter depuis une application ou pour les rendre accessibles sur le web. Ces espaces de stockages sont accessibles via une interface d’API standard compatible S3<sup>1</sup> pour les classes de stockage Object Storage et Swift pour les classes de stockage Object Storage SWIFT.
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/8xXbL3Ftgwk?si=OaRx5koocA-OyRXC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -234,10 +234,10 @@ La bande passante maximale est de 1 Gbps par connexion.
 ### Qu'est-ce que l'option Offsite Replication disponible dans le mode de déploiement 3-AZ ?
 
 Lorsque vous utilisez Object Storage dans une région 3-AZ, nous vous proposons une nouvelle option appelée **Offsite Replication** (réplication hors site), qui réplique automatiquement vos données sur un site distant pour une plus grande résilience, et ce, en un seul clic depuis l'espace client OVHcloud. 
-Cette fonctionnalité n'est disponible que pour les régions 3-AZ et repose sur une configuration de réplication automatique et gérée par OVHcloud. Suivez [ce guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication), dans la section "Option Offsite Replciation" pour obtenir plus de détails sur cette fonctionnalité.
+Cette fonctionnalité n'est disponible que pour les régions 3-AZ et repose sur une configuration de réplication automatique et gérée par OVHcloud. Suivez la section « Option Offsite Replication » de [ce guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) pour obtenir plus de détails sur cette fonctionnalité.
 
 ## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
