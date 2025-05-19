@@ -86,7 +86,7 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 >> Cliquez sur le menu `Opérations en cours`{.action}, puis retrouvez le nom de domaine concerné dans la liste qui s'affiche.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
+>> ![Opérations en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
 > **Étape 3**
 >>

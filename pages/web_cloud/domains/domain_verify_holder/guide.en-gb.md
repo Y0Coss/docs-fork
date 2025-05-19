@@ -12,7 +12,7 @@ Have you just received an email from OVHcloud notifying you that an action is re
 
 ## Requirements
 
-- a [domain name](/links/web/domains) registered with OVHcloud.
+- A [domain name](/links/web/domains) registered with OVHcloud.
 - You must be logged in to your [OVHcloud Control Panel](/links/manager).
 - You need to have received an email from OVHcloud stating that action is required regarding your domain name holder contact details.
 - Check the following points to ensure that this is not a fraudulent email:
@@ -78,15 +78,15 @@ Click on the tabs below to view each of the **4** steps.
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
->>![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Step 2**
 >>
 >> Click on the `Ongoing operations`{.action} menu, then find the domain name concerned in the list that appears.
 >>
->>![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
+>> ![Ongoing operations](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
 > **Step 3**
 >>
