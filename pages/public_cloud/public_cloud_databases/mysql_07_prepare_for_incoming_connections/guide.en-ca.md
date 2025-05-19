@@ -1,7 +1,7 @@
 ---
 title: MySQL - Configure your MySQL instance to accept incoming connections
 excerpt: Find out how to configure your MySQL instance to accept incoming connections
-updated: 2025-05-15
+updated: 2025-05-19
 ---
 
 ## Objective
@@ -56,12 +56,12 @@ Enter a username then click `Create User`{.action}.
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorise the suitable IP addresses in order to successfully access your database.
 
-Fill in the IP address or CIDR block to whitelist and click on the `plus`{.action} button.
+Fill in the IP address or CIDR block to whitelist and click the `+`{.action} button.
 
 
 ![Add an IP](images/add_ip_1.png){.thumbnail}
 
-Validate the changes by clicking on the `Save changes`{.action} button.
+Validate the changes by clicking the `Save changes`{.action} button.
 
 ![Add an IP](images/add_ip_2.png){.thumbnail}
 
