@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit Zimbra"
 excerpt: "Erfahren Sie hier, wie Sie Ihr Zimbra Angebot über Ihr OVHcloud Kundencenter verwalten"
-updated: 2025-05-07
+updated: 2025-05-19
 ---
 
 <style>
@@ -194,10 +194,10 @@ Geben Sie die angezeigten Informationen ein.
 >
 > Die Wahl des Namens Ihrer E-Mail-Adresse muss folgende Bedingungen erfüllen:
 >
-> - Mindestens 2 Zeichen
-> - Maximal 32 Zeichen
-> - Keine Zeichen mit Akzent
-> - Keine Sonderzeichen außer `.`, `+`, `-` und `_`
+> - Mindestens 2 Zeichen.
+> - Maximal 32 Zeichen.
+> - Keine Zeichen mit Akzent.
+> - Keine Sonderzeichen außer `.`, `+`, `-` und `_`.
 
 - **Vorname**: Geben Sie einen Vornamen ein.
 - **Name**: Geben Sie einen Namen ein.
@@ -208,11 +208,11 @@ Geben Sie die angezeigten Informationen ein.
 >
 > Die Wahl des Passworts muss folgende Bedingungen erfüllen:
 >
-> - Mindestens 10 Zeichen
-> - Maximal 64 Zeichen
-> - Mindestens 1 Großbuchstabe
-> - Mindestens 1 Sonderzeichen
-> - Keine Zeichen mit Akzent
+> - Mindestens 10 Zeichen.
+> - Maximal 64 Zeichen.
+> - Mindestens 1 Großbuchstabe.
+> - Mindestens 1 Sonderzeichen.
+> - Keine Zeichen mit Akzent.
 
 Klicken Sie auf `Bestätigen`{.action}, um die Erstellung des Accounts zu starten.
 

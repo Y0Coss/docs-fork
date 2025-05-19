@@ -1,7 +1,7 @@
 ---
 title: "Pierwsze kroki z ofertą Zimbra"
 excerpt: "Dowiedz się, jak rozpocząć korzystanie z oferty Zimbra z poziomu Panelu klienta OVHcloud"
-updated: 2025-05-07
+updated: 2025-05-19
 ---
 
 <style>
@@ -45,7 +45,6 @@ Z ofertą Zimbra OVHcloud oferuje platformę open source do przesyłania wiadomo
 
 ### Dostęp do interfejsu zarządzania usługą <a name="zimbra-access"></a>
 
-
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 1. Przejdź do sekcji `Web Cloud`{.action}.
 1. Kliknij `Zimbra Mail`{.action}.
@@ -58,7 +57,7 @@ Zanim rozpoczniesz konfigurację kont e-mail Zimbra, zapoznaj się z trzema elem
 
 - [**Organisation**](#organizations): umożliwia pogrupowanie domen w grupy.
 - [**Nazwa domeny**](#domains): niezbędne do założenia konta e-mail. Należy zarządzać co najmniej jednym z nich w Panelu klienta OVHcloud i dodać go do usługi Zimbra.
-- [**Konta e-mail**](#emaile): korzystając z domen dodanych do Twojej usługi Zimbra, będziesz mógł utworzyć adres e-mail.
+- [**Konta e-mail**](#emails): korzystając z domen dodanych do Twojej usługi Zimbra, będziesz mógł utworzyć adres e-mail.
 
 > [!primary]
 >
@@ -195,10 +194,10 @@ Uzupełnij kolejne informacje, o które zostaniesz poproszony.
 >
 > Wybór nazwy konta e-mail musi spełniać następujące warunki:
 >
-> - Minimum 2 znaki
-> - Maksymalnie 32 znaki
-> - Brak znaków akcentowanych
-> - Brak znaków specjalnych, z wyjątkiem następujących znaków: `.`, `+`, `-` i `_`
+> - Minimum 2 znaki.
+> - Maksymalnie 32 znaki.
+> - Brak znaków akcentowanych.
+> - Brak znaków specjalnych, z wyjątkiem następujących znaków: `.`, `+`, `-` i `_`.
 
 - **Imię**: wpisz imię.
 - **Nazwa**: wprowadź nazwę.
@@ -209,11 +208,11 @@ Uzupełnij kolejne informacje, o które zostaniesz poproszony.
 >
 > Wybór hasła musi spełniać następujące warunki:
 >
-> - Minimum 10 znaków
-> - Maksymalnie 64 znaki
-> - Minimum 1 wielka litera
-> - Minimum 1 znak specjalny
-> - Brak znaków akcentowanych
+> - Minimum 10 znaków.
+> - Maksymalnie 64 znaki.
+> - Minimum 1 wielka litera.
+> - Minimum 1 znak specjalny.
+> - Brak znaków akcentowanych.
 
 Kliknij na `Potwierdź`{.action}, aby rozpocząć zakładanie konta.
 
@@ -263,7 +262,7 @@ Aby przekierować e-maile z Twojego konta Zimbra na inny adres e-mail, zastosuje
 >> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-500}
 >>
 
-Więcej informacji na temat korzystania z webmaila Zimbra znajdziesz w naszym przewodniku "[Korzystanie z webmaila Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ".
+Więcej informacji na temat korzystania z webmaila Zimbra znajdziesz w naszym przewodniku "[Korzystanie z webmaila Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
 ### Alias <a name="alias"></a>
 

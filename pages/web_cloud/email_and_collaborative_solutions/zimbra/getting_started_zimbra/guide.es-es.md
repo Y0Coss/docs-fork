@@ -1,7 +1,7 @@
 ---
 title: "Primeros pasos con el producto Zimbra"
 excerpt: "Cómo empezar a utilizar la solución Zimbra desde el área de cliente de OVHcloud"
-updated: 2025-05-16
+updated: 2025-05-19
 ---
 
 <style>
@@ -53,11 +53,11 @@ Con el servicio Zimbra, OVHcloud le ofrece una plataforma de mensajería en cola
 
 ### Configurar su servicio Zimbra <a name="zimbra-conf"></a>
 
-Antes de empezar a configurar las cuentas de correo de Zimbra, deberá analizar los tres elementos que estructuran jerárquicamente el servicio Zimbra :
+Antes de empezar a configurar las cuentas de correo de Zimbra, deberá analizar los tres elementos que estructuran jerárquicamente el servicio Zimbra:
 
-- [**Organización**](#organizations) : permite agrupar los nombres de dominio para asociarlos.
-- [**Nombre de dominio**](#domains) : es indispensable para crear una cuenta de correo. Debe gestionar al menos uno desde el área de cliente de OVHcloud y añadirlo a su servicio Zimbra.
-- [**Cuentas de correo electrónico**](#emails) : Utilizando los nombres de dominio añadidos a su servicio Zimbra, podrá crear una dirección de correo electrónico.
+- [**Organización**](#organizations): permite agrupar los nombres de dominio para asociarlos.
+- [**Nombre de dominio**](#domains): es indispensable para crear una cuenta de correo. Debe gestionar al menos uno desde el área de cliente de OVHcloud y añadirlo a su servicio Zimbra.
+- [**Cuentas de correo electrónico**](#emails): Utilizando los nombres de dominio añadidos a su servicio Zimbra, podrá crear una dirección de correo electrónico.
 
 > [!primary]
 >
@@ -97,10 +97,10 @@ Para retirar el filtro, simplemente haga clic en la cruz del filtro.
 
 En esta pestaña podrá consultar todos los dominios añadidos al servicio Zimbra. Es necesario gestionarlos desde el área de cliente de OVHcloud para poder añadirlos.
 
-En la tabla de dominios encontrará dos datos :
+En la tabla de dominios encontrará dos datos:
 
-- **Organización** : esta se determina al añadir el dominio. En esta columna encontrará automáticamente la etiqueta.
-- **Número de cuentas** : Aquí encontrará todas las cuentas creadas con el dominio correspondiente.
+- **Organización**: esta se determina al añadir el dominio. En esta columna encontrará automáticamente la etiqueta.
+- **Número de cuentas**: Aquí encontrará todas las cuentas creadas con el dominio correspondiente.
 
 ![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-500}
 
@@ -112,12 +112,12 @@ En la tabla de dominios encontrará dos datos :
 
 Para añadir un dominio a su servicio Zimbra, haga clic en la pestaña `Dominio`{.action} y luego en `Añadir un dominio`{.action}.
 
-Seleccione una organización en el menú desplegable y, a continuación, seleccione una de las dos opciones siguientes :
+Seleccione una organización en el menú desplegable y, a continuación, seleccione una de las dos opciones siguientes:
 
-- **Seleccionar un dominio de la lista** (dominio interno) : en esta lista, puede encontrar los dominios que gestiona desde el área de cliente de OVHcloud.
-- **Introducir un dominio no gestionado por su cuenta de OVHcloud** (dominio externo) : introduzca un dominio no gestionado en su área de cliente de OVHcloud o registrado en otro agente registrador y gestionado por usted.
+- **Seleccionar un dominio de la lista** (dominio interno): en esta lista, puede encontrar los dominios que gestiona desde el área de cliente de OVHcloud.
+- **Introducir un dominio no gestionado por su cuenta de OVHcloud** (dominio externo): introduzca un dominio no gestionado en su área de cliente de OVHcloud o registrado en otro agente registrador y gestionado por usted.
 
-Seleccione la pestaña correspondiente a su elección :
+Seleccione la pestaña correspondiente a su elección:
 
 > [!tabs]
 > **Dominio interno**
@@ -126,13 +126,13 @@ Seleccione la pestaña correspondiente a su elección :
 >>
 >> ![zimbra](images/zimbra_domain_add_internal01.png){.thumbnail .w-500}
 >>
->> Para configurar la zona DNS, seleccione una de las dos opciones siguientes :
+>> Para configurar la zona DNS, seleccione una de las dos opciones siguientes:
 >>
->> - **Configuración recomendada** : su zona DNS se configurará automáticamente. Esta opción es adecuada si no ha configurado ninguna solución de correo en su dominio.
->> - **Configuración personalizada** : Si ya ha configurado una solución de correo en su dominio, puede elegir los elementos que le interesen.
->>    - *Configurar el registro MX automáticamente* : Permite introducir automáticamente los servidores de recepción de OVHcloud (se aplica a todos los productos de correo de OVHcloud).
->>    - *Configurar el registro SPF automáticamente* : Permite introducir automáticamente el registro que autoriza a los servidores de correo de envío de OVHcloud a transmitir sus mensajes de correo. Este registro es válido para todas las soluciones de correo de OVHcloud.
->>    - *Configurar el registro DKIM automáticamente* : Permite introducir automáticamente los registros necesarios para autenticar los envíos de correo.
+>> - **Configuración recomendada**: su zona DNS se configurará automáticamente. Esta opción es adecuada si no ha configurado ninguna solución de correo en su dominio.
+>> - **Configuración personalizada**: Si ya ha configurado una solución de correo en su dominio, puede elegir los elementos que le interesen.
+>>    - *Configurar el registro MX automáticamente*: Permite introducir automáticamente los servidores de recepción de OVHcloud (se aplica a todos los productos de correo de OVHcloud).
+>>    - *Configurar el registro SPF automáticamente*: Permite introducir automáticamente el registro que autoriza a los servidores de correo de envío de OVHcloud a transmitir sus mensajes de correo. Este registro es válido para todas las soluciones de correo de OVHcloud.
+>>    - *Configurar el registro DKIM automáticamente*: Permite introducir automáticamente los registros necesarios para autenticar los envíos de correo.
 >>
 >> ![zimbra](images/zimbra_domain_add_internal02.png){.thumbnail .w-500}
 >>
@@ -163,20 +163,20 @@ En la pestaña `Dominio`{.action} del servicio Zimbra, haga clic en el icono &#8
 ![zimbra](images/zimbra_domain_modify01.png){.thumbnail .w-500}
 
 - Haga clic en `Configurar`{.action} para modificar la organización asociada a su dominio.
-- Haga clic en `Diagnósticos`{.action} para ver la interfaz de diagnóstico de los registros DNS del dominio. Es necesario asegurarse de que no se muestran alertas para cada uno de los registros DNS mencionados en las fichas. Siga las instrucciones detalladas en cada ficha de alertas para configurar los registros DNS :
-    - **MX** : indispensable para recibir mensajes de correo.
-    - **SPF** : Seguridad requerida por la mayoría de los servidores de correo de destino para legitimar los servidores de envío de correo de OVHcloud con su dominio.
-    - **DKIM** : Permite implementar un sistema de firma para cada mensaje de correo electrónico enviado por su servicio Zimbra. El destinatario comprueba la firma con la clave pública visible en la zona DNS.
+- Haga clic en `Diagnósticos`{.action} para ver la interfaz de diagnóstico de los registros DNS del dominio. Es necesario asegurarse de que no se muestran alertas para cada uno de los registros DNS mencionados en las fichas. Siga las instrucciones detalladas en cada ficha de alertas para configurar los registros DNS:
+    - **MX**: indispensable para recibir mensajes de correo.
+    - **SPF**: Seguridad requerida por la mayoría de los servidores de correo de destino para legitimar los servidores de envío de correo de OVHcloud con su dominio.
+    - **DKIM**: Permite implementar un sistema de firma para cada mensaje de correo electrónico enviado por su servicio Zimbra. El destinatario comprueba la firma con la clave pública visible en la zona DNS.
 
 ![zimbra](images/zimbra_domain_modify02.png){.thumbnail .w-500}
 
 ### Cuentas de correo <a name="email"></a>
 
-La gestión de las direcciones de correo de su servicio Zimbra se realiza desde la pestaña `Cuentas de correo`{.action}. La tabla muestra las cuentas de correo que tiene en el servicio, así como 3 datos para cada una de ellas :
+La gestión de las direcciones de correo de su servicio Zimbra se realiza desde la pestaña `Cuentas de correo`{.action}. La tabla muestra las cuentas de correo que tiene en el servicio, así como 3 datos para cada una de ellas:
 
-- **Organización** : si el nombre de dominio de su cuenta de correo está asociado a una organización, su etiqueta aparecerá automáticamente en esta columna.
-- **Oferta** : como su servicio Zimbra puede alojar varios productos Zimbra en su interior, encontrará la oferta asociada a su cuenta de correo en esta columna.
-- **Tamaño** : esta columna muestra la capacidad total de su cuenta de correo y el espacio que ocupa actualmente.
+- **Organización**: si el nombre de dominio de su cuenta de correo está asociado a una organización, su etiqueta aparecerá automáticamente en esta columna.
+- **Oferta**: como su servicio Zimbra puede alojar varios productos Zimbra en su interior, encontrará la oferta asociada a su cuenta de correo en esta columna.
+- **Tamaño**: esta columna muestra la capacidad total de su cuenta de correo y el espacio que ocupa actualmente.
 
 En la parte superior de esta página también encontrará un enlace al [Webmail](/links/web/email) para poder conectarse directamente al contenido de su cuenta de correo desde su navegador de internet.
 
@@ -188,31 +188,31 @@ Para crear una cuenta de correo en su servicio Zimbra, haga clic en la pestaña 
 
 Complete la información que se muestra.
 
-- **Cuenta de correo** : introduzca el *nombre de la cuenta* que llevará su dirección de correo (por ejemplo, su nombre.apellido) y *seleccione un nombre de dominio* en el menú desplegable.
+- **Cuenta de correo**: introduzca el *nombre de la cuenta* que llevará su dirección de correo (por ejemplo, su nombre.apellido) y *seleccione un nombre de dominio* en el menú desplegable.
 
 > [!warning]
 >
-> La elección del nombre de su dirección de correo electrónico debe respetar las siguientes condiciones :
+> La elección del nombre de su dirección de correo electrónico debe respetar las siguientes condiciones:
 >
-> - Mínimo 2 caracteres
-> - Máximo 32 caracteres
-> - Sin caracteres acentuados
-> - Sin caracteres especiales, excepto los siguientes : `.`, `+`, `-` y `_`
+> - Mínimo 2 caracteres.
+> - Máximo 32 caracteres.
+> - Sin caracteres acentuados.
+> - Sin caracteres especiales, excepto los siguientes: `.`, `+`, `-` y `_`.
 
-- **Nombre** : introduzca un nombre.
-- **Nombre** : introduzca un nombre.
-- **Nombre a mostrar**  : Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes desde esta dirección.
-- **Contraseña** : Establezca una contraseña segura que incluya (como mínimo) 9 caracteres, una mayúscula, una minúscula y una cifra. Por motivos de seguridad, no utilice la misma contraseña dos veces. Elija un nombre que no guarde relación con sus datos personales (por ejemplo, no incluya su nombre, apellidos ni fecha de nacimiento). Cámbielo regularmente.
+- **Nombre**: introduzca un nombre.
+- **Nombre**: introduzca un nombre.
+- **Nombre a mostrar**: Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes desde esta dirección.
+- **Contraseña**: Establezca una contraseña segura que incluya (como mínimo) 9 caracteres, una mayúscula, una minúscula y una cifra. Por motivos de seguridad, no utilice la misma contraseña dos veces. Elija un nombre que no guarde relación con sus datos personales (por ejemplo, no incluya su nombre, apellidos ni fecha de nacimiento). Cámbielo regularmente.
 
 > [!warning]
 >
-> La elección de la contraseña debe respetar las siguientes condiciones :
+> La elección de la contraseña debe respetar las siguientes condiciones:
 >
-> - mínimo 10 caracteres
-> - Máximo 64 caracteres
-> - Mínimo 1 mayúscula
-> - Mínimo 1 carácter especial
-> - Sin caracteres acentuados
+> - mínimo 10 caracteres.
+> - Máximo 64 caracteres.
+> - Mínimo 1 mayúscula.
+> - Mínimo 1 carácter especial.
+> - Sin caracteres acentuados.
 
 Haga clic en `Confirmar`{.action} para crear la cuenta.
 
@@ -220,7 +220,7 @@ Haga clic en `Confirmar`{.action} para crear la cuenta.
 
 ### Consultar su cuenta de correo <a name="mail-consult"></a>
 
-Para consultar su cuenta de correo :
+Para consultar su cuenta de correo:
 
 - Conéctese al [webmail](/links/web/email) desde un navegador de internet e introduzca su dirección de correo y contraseña. Para más información, consulte nuestra página «[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)».
 - Configure un programa de mensajería en su ordenador, smartphone o tablet. Consulte nuestra página «[Configurar una dirección de correo electrónico de Zimbra en un cliente de correo](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)».
@@ -268,7 +268,7 @@ Para más información sobre el uso del webmail Zimbra, consulte nuestra guía �
 
 Crear un alias para su dirección de correo electrónico le permite comunicar una dirección «máscara» a sus contactos, sin tener que comunicar su dirección de correo electrónico personal al remitente.
 
-Puede crear un alias desde el [espacio de cliente OVHcloud](/links/manager), Haga clic en los pasos a continuación :
+Puede crear un alias desde el [espacio de cliente OVHcloud](/links/manager), Haga clic en los pasos a continuación:
 
 > [!tabs]
 > **Paso 1**
@@ -300,7 +300,7 @@ Puede crear un alias desde el [espacio de cliente OVHcloud](/links/manager), Hag
 
 ### Respuestas automáticas <a name="autoreply"></a>
 
-Si tiene que ausentarse y no tiene la posibilidad de procesar sus mensajes de correo, es posible implementar un mensaje de ausencia. Siga los pasos que se indican a continuación :
+Si tiene que ausentarse y no tiene la posibilidad de procesar sus mensajes de correo, es posible implementar un mensaje de ausencia. Siga los pasos que se indican a continuación:
 
 - Haga clic en el botón &#9881; en la esquina superior derecha de su ventana de webmail y luego en `Parámetros`{.action}.
 

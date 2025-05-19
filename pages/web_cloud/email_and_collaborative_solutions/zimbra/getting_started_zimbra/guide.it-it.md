@@ -1,7 +1,7 @@
 ---
 title: "Per iniziare con l'offerta Zimbra"
 excerpt: "Scopri come iniziare a utilizzare la soluzione Zimbra dallo Spazio Cliente OVHcloud"
-updated: 2025-05-07
+updated: 2025-05-19
 ---
 
 <style>
@@ -194,10 +194,10 @@ Inserisci le informazioni richieste.
 >
 > La scelta del nome dell’indirizzo email deve rispettare queste condizioni:
 >
-> - Minimo 2 caratteri
-> - Massimo 32 caratteri
-> - Nessun carattere accentato
-> - Nessun carattere speciale eccetto i seguenti: `.`, `+`, `-` e `_`
+> - Minimo 2 caratteri.
+> - Massimo 32 caratteri.
+> - Nessun carattere accentato.
+> - Nessun carattere speciale eccetto i seguenti: `.`, `+`, `-` e `_`.
 
 - **Nome**: inserisci un nome.
 - **Cognome**: inserisci un nome.
@@ -208,11 +208,11 @@ Inserisci le informazioni richieste.
 >
 > La scelta della password deve rispettare queste condizioni:
 >
-> - Minimo 10 caratteri
-> - Massimo 64 caratteri
-> - Minimo 1 maiuscolo
-> - minimo 1 carattere speciale
-> - Nessun carattere accentato
+> - Minimo 10 caratteri.
+> - Massimo 64 caratteri.
+> - Minimo 1 maiuscolo.
+> - minimo 1 carattere speciale.
+> - Nessun carattere accentato.
 
 Clicca su `Conferma`{.action} per avviare la creazione dell’account.
 

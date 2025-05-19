@@ -1,7 +1,7 @@
 ---
 title: "Primeiros passos com a oferta Zimbra"
 excerpt: "Descubra como começar com a sua oferta Zimbra a partir da Área de Cliente OVHcloud"
-updated: 2025-05-07
+updated: 2025-05-19
 ---
 
 <style>
@@ -69,7 +69,7 @@ O diagrama abaixo resume a relação hierárquica entre os elementos acima citad
 
 ### Organizações <a name="organizations"></a>
 
-Se adicionar um grande número de nomes de domínio ao seu serviço Zimbra, poderá ser útil reagrupá-los associando-os a uma "organização". A partir do seu serviço Zimbra, clique em `Organization`{.action}.
+Se adicionar um grande número de nomes de domínio ao seu serviço Zimbra, poderá ser útil reagrupá-los associando-os a uma «organização». A partir do seu serviço Zimbra, clique em `Organization`{.action}.
 
 ![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-500}
 
@@ -99,8 +99,8 @@ Neste separador, encontrará todos os domínios adicionados ao seu serviço Zimb
 
 A tabela dos nomes de domínio dá-lhe duas informações:
 
-- **Organização** : ela é determinada quando adiciona o domínio, e verá automaticamente a respetiva etiqueta nesta coluna.
-- **Número de contas** : Aqui, encontrará todas as contas que foram criadas com o domínio em questão.
+- **Organização**: ela é determinada quando adiciona o domínio, e verá automaticamente a respetiva etiqueta nesta coluna.
+- **Número de contas**: Aqui, encontrará todas as contas que foram criadas com o domínio em questão.
 
 ![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-500}
 
@@ -114,8 +114,8 @@ Para adicionar um domínio ao serviço Zimbra, clique no separador `Domínio`{.a
 
 Selecione uma organização no menu suspenso e, em seguida, selecione uma das duas opções seguintes:
 
-- **Selecionar um domínio na lista** (domínio interno) : nesta lista, encontrará os domínios que pode gerir a partir da Área de Cliente OVHcloud.
-- **Introduzir um domínio não gerido pela sua conta OVHcloud** (domínio externo) : indique um domínio que não é gerido na Área de Cliente OVHcloud ou que se encontra registado noutro agente registador e cuja gestão é da sua responsabilidade.
+- **Selecionar um domínio na lista** (domínio interno): nesta lista, encontrará os domínios que pode gerir a partir da Área de Cliente OVHcloud.
+- **Introduzir um domínio não gerido pela sua conta OVHcloud** (domínio externo): indique um domínio que não é gerido na Área de Cliente OVHcloud ou que se encontra registado noutro agente registador e cuja gestão é da sua responsabilidade.
 
 Selecione o separador correspondente à sua escolha:
 
@@ -158,7 +158,7 @@ Selecione o separador correspondente à sua escolha:
 
 Pode alterar o seu nome de domínio para alterar a sua organização ou verificar os seus registos DNS associados.
 
-No separador `Domínio`{.action} do seu serviço Zimbra, clique no ícone "&#8285;" à direita do domínio em causa para ver as opções.
+No separador `Domínio`{.action} do seu serviço Zimbra, clique no ícone «&#8285;» à direita do domínio em causa para ver as opções.
 
 ![zimbra](images/zimbra_domain_modify01.png){.thumbnail .w-500}
 
@@ -174,9 +174,9 @@ No separador `Domínio`{.action} do seu serviço Zimbra, clique no ícone "&#828
 
 A gestão dos endereços de e-mail do seu serviço Zimbra faz-se a partir do separador `Contas de e-mail`{.action}. A tabela apresenta a lista das contas de e-mail presentes no seu serviço, assim como 3 informações para cada uma delas:
 
-- **Organização** : se o nome de domínio da sua conta de e-mail estiver associado a uma organização, encontrará automaticamente o seu label nesta coluna.
-- **Oferta** : uma vez que o seu serviço Zimbra pode alojar várias ofertas Zimbra no seu seio, encontrará nesta coluna a oferta associada à sua conta de e-mail.
-- **Tamanho** : Esta coluna mostra a capacidade total da conta de e-mail e a quantidade de espaço que ocupa atualmente.
+- **Organização**: se o nome de domínio da sua conta de e-mail estiver associado a uma organização, encontrará automaticamente o seu label nesta coluna.
+- **Oferta**: uma vez que o seu serviço Zimbra pode alojar várias ofertas Zimbra no seu seio, encontrará nesta coluna a oferta associada à sua conta de e-mail.
+- **Tamanho**: Esta coluna mostra a capacidade total da conta de e-mail e a quantidade de espaço que ocupa atualmente.
 
 No topo desta página encontrará também uma ligação para [Webmail](/links/web/email) para se poder ligar diretamente ao conteúdo da sua conta de e-mail a partir do seu browser.
 
@@ -188,31 +188,31 @@ Para criar uma conta de e-mail no seu serviço Zimbra, clique no separador `Cont
 
 Preencha as informações apresentadas.
 
-- **Conta de e-mail** : introduza o *nome da conta* no seu endereço de e-mail (por exemplo, nome.apelido) e *selecione um domínio* no menu pendente.
+- **Conta de e-mail**: introduza o *nome da conta* no seu endereço de e-mail (por exemplo, nome.apelido) e *selecione um domínio* no menu pendente.
 
 > [!warning]
 >
 > A escolha do nome do seu endereço de e-mail deve respeitar as seguintes condições:
 >
-> - Mínimo de 2 caracteres
-> - Máximo de 32 caracteres
-> - Nenhum caráter acentuado
-> - Sem caracteres especiais, com exceção dos seguintes caracteres: `.`, `+`, `-` e `_`
+> - Mínimo de 2 caracteres.
+> - Máximo de 32 caracteres.
+> - Nenhum caráter acentuado.
+> - Sem caracteres especiais, com exceção dos seguintes caracteres: `.`, `+`, `-` e `_`.
 
-- **Nome Próprio** : introduza um nome.
-- **Nome** : introduza um nome.
-- **Nome a apresentar** : indique o nome que pretende que figure como remetente quando envia e-mails a partir deste endereço.
-- **Palavra-passe** : defina uma palavra-passe forte composta por (no mínimo) 9 caracteres, uma maiúscula, uma minúscula e um algarismo. Por razões de segurança, não utilize duas vezes a mesma palavra-passe. Escolha um que não tenha qualquer relação com as suas informações pessoais (evite mencionar, por exemplo, o seu nome, sobrenome e data de nascimento). Altere-o regularmente.
+- **Nome Próprio**: introduza um nome.
+- **Nome**: introduza um nome.
+- **Nome a apresentar**: indique o nome que pretende que figure como remetente quando envia e-mails a partir deste endereço.
+- **Palavra-passe**: defina uma palavra-passe forte composta por (no mínimo) 9 caracteres, uma maiúscula, uma minúscula e um algarismo. Por razões de segurança, não utilize duas vezes a mesma palavra-passe. Escolha um que não tenha qualquer relação com as suas informações pessoais (evite mencionar, por exemplo, o seu nome, sobrenome e data de nascimento). Altere-o regularmente.
 
 > [!warning]
 >
 > A escolha da palavra-passe deve respeitar as seguintes condições:
 >
-> - Mínimo de 10 caracteres
-> - Máximo de 64 caracteres
-> - Mínimo de 1 maiúscula
-> - Mínimo 1 caráter especial
-> - Nenhum caráter acentuado
+> - Mínimo de 10 caracteres.
+> - Máximo de 64 caracteres.
+> - Mínimo de 1 maiúscula.
+> - Mínimo 1 caráter especial.
+> - Nenhum caráter acentuado.
 
 Clique em `Confirmar`{.action} para lançar a criação da conta.
 
@@ -222,13 +222,13 @@ Clique em `Confirmar`{.action} para lançar a criação da conta.
 
 Para consultar a sua conta de e-mail:
 
-- Aceda a [webmail](/links/web/email) a partir de um browser e introduza o seu endereço de e-mail e a sua palavra-passe. Para mais informações, consulte a nossa página "[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
-- Configure um programa de mensagens no seu computador, smartphone ou tablet. Consulte a nossa página "[Configurar o seu endereço de e-mail Zimbra num programa de correio eletrónico](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)".
+- Aceda a [webmail](/links/web/email) a partir de um browser e introduza o seu endereço de e-mail e a sua palavra-passe. Para mais informações, consulte a nossa página «[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)».
+- Configure um programa de mensagens no seu computador, smartphone ou tablet. Consulte a nossa página «[Configurar o seu endereço de e-mail Zimbra num programa de correio eletrónico](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)».
 
 ### Reencaminhamentos <a name="redirections"></a>
 
 Para criar um reencaminhamento num endereço de e-mail Zimbra, aceda a [webmail](/links/web/email).
-Para criar um reencaminhamento, são utilizadas regras da caixa de entrada, conhecidas « filtros » no webmail. Estas regras, que se aplicam quando recebemos um e-mail, permitem a reencaminhamento de um e-mail.
+Para criar um reencaminhamento, são utilizadas regras da caixa de entrada, conhecidas «filtros» no webmail. Estas regras, que se aplicam quando recebemos um e-mail, permitem a reencaminhamento de um e-mail.
 
 Para reencaminhar os e-mails da sua conta Zimbra para outro endereço de e-mail, vamos aplicar uma regra de transferência. Siga os separadores abaixo para configurar o reencaminhamento.
 
@@ -253,20 +253,20 @@ Para reencaminhar os e-mails da sua conta Zimbra para outro endereço de e-mail,
 >>
 >> - Clique em <u>Modo avançado</u> no canto superior direito para implementar esta regra.
 >> - Dê um nome ao seu filtro na caixa `Nome do filtro`.
->> - Deixe o menu suspenso em `tudo` na frase « Se uma mensagem de entrada reúne ... dessas condições ».
+>> - Deixe o menu suspenso em `tudo` na frase «Se uma mensagem de entrada reúne ... dessas condições».
 >> - No primeiro menu suspenso das regras, escolha `Para` (To), deixe `contém` (contains) e, em seguida, insira o endereço de e-mail no qual você está conectado na caixa à direita.
->> - Sob a menção « Então » (Then), selecione `Para a frente` (Forward to) no menu pendente e, em seguida, insira o endereço de e-mail de destino.
+>> - Sob a menção «Então» (Then), selecione `Para a frente` (Forward to) no menu pendente e, em seguida, insira o endereço de e-mail de destino.
 >> - Clique em `+ Adicionar uma ação`{.action} (Add an action) abaixo e selecione `Manter na caixa de entrada` (Keep in Inbox).
 >> - Clique em `Salvar`{.action} a partir da janela do seu filtro e também a partir da janela dos parâmetros.
 >>
 >> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-500}
 >>
 
-Para mais informações sobre a utilização do webmail Zimbra, consulte o guia « [Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
+Para mais informações sobre a utilização do webmail Zimbra, consulte o guia «[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)».
 
 ### alias <a name="alias"></a>
 
-Criar um alias para o seu endereço de e-mail permite-lhe comunicar um endereço « máscara » aos seus contactos, sem ter de comunicar o seu endereço de e-mail pessoal ao remetente.
+Criar um alias para o seu endereço de e-mail permite-lhe comunicar um endereço «máscara» aos seus contactos, sem ter de comunicar o seu endereço de e-mail pessoal ao remetente.
 
 A criação de um alias é feita a partir da [Área de Cliente OVHcloud](/links/manager). Clique nas etapas abaixo:
 
@@ -307,15 +307,15 @@ Quando tiver de se ausentar e não conseguir processar as suas mensagens de corr
 ![zimbra](images/zimbra_settings01.png){.thumbnail .w-500}
 
 - Clique na secção `Ausente da Área de Trabalho` na janela de configurações.
-- Selecione a caixa « Ativar resposta automática durante essas datas (incluídas) ».
-- No início da ausência, preencha a data « Do ».
-- Desmarque a caixa « Sem data de término » se quiser determinar uma data de término de ausência e escolha-a.
+- Selecione a caixa «Ativar resposta automática durante essas datas (incluídas)».
+- No início da ausência, preencha a data «Do».
+- Desmarque a caixa «Sem data de término» se quiser determinar uma data de término de ausência e escolha-a.
 - No quadro, indique a sua mensagem de ausência.
 - Clique em `Guardar`{.action} para finalizar a implementação da sua mensagem de ausência.
 
 ![zimbra](images/zimbra_autoreply01.png){.thumbnail .w-500}
 
-Para mais informações sobre a utilização do webmail Zimbra, consulte o guia « [Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)»
+Para mais informações sobre a utilização do webmail Zimbra, consulte o guia «[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)»
 
 ## Quer saber mais? <a name="go-further"></a>
 

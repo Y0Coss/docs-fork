@@ -1,7 +1,7 @@
 ---
 title: "Getting started with the Zimbra solution"
 excerpt: "Find out how to get started with your Zimbra solution via the OVHcloud Control Panel"
-updated: 2025-05-07
+updated: 2025-05-19
 ---
 
 <style>
@@ -194,10 +194,10 @@ Fill in the information displayed.
 >
 > The name of your email address must meet the following conditions:
 >
-> - Minimum 2 characters
-> - Maximum 32 characters
-> - No accents
-> - No special characters, except for the following characters: `.`, `+`, `-` and `_`
+> - Minimum 2 characters.
+> - Maximum 32 characters.
+> - No accents.
+> - No special characters, except for the following characters: `.`, `+`, `-` and `_`.
 
 - **First name**: Enter a first name.
 - **Name**: Enter a name.
@@ -208,11 +208,11 @@ Fill in the information displayed.
 >
 > The password must meet the following requirements:
 >
-> - Minimum 10 characters
-> - Maximum 64 characters
-> - Minimum 1 upper case
-> - Minimum 1 special character
-> - No accents
+> - Minimum 10 characters.
+> - Maximum 64 characters.
+> - Minimum 1 upper case.
+> - Minimum 1 special character.
+> - No accents.
 
 Click `Confirm`{.action} to start creating the account.
 
