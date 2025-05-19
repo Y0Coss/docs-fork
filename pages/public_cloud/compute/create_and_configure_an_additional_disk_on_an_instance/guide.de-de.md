@@ -1,7 +1,7 @@
 ---
 title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
 excerpt: Erfahren Sie hier, wie Sie eine neue Disk erstellen und zu Ihrer Public Cloud Instanz hinzufügen
-updated: 2024-03-21
+updated: 2025-04-28
 ---
 
 <style>
@@ -25,7 +25,7 @@ Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen 
 - Sie möchten Ihre Speicherkapazität erhöhen, ohne das Instanzmodell zu verändern.
 - Sie benötigen hochverfügbaren und leistungsfähigen Speicherplatz.
 - Sie möchten sowohl Ihren Storage als auch Ihre Daten zu einer anderen Instanz verschieben.
-- Sie bereiten eine Umgebung für die Verwendung von [Terraform](/pages/public_cloud/compute/how_to_use_terraform) vor.
+- Sie bereiten eine Umgebung für die Verwendung von [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform) vor.
 
 **Diese Anleitung erklärt, wie Sie eine zusätzliche Disk erstellen und auf Ihrer Instanz konfigurieren.**
 
@@ -34,7 +34,7 @@ Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps).
 - Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
-- Vorbereitung der Umgebung für die Verwendung mit [Terraform](/pages/public_cloud/compute/how_to_use_terraform).
+- Vorbereitung der Umgebung für die Verwendung mit [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
 
 > [!warning]
 >
@@ -83,7 +83,7 @@ High-Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 
 > [!tabs]
 > **Über das OVHcloud Kundencenter**
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Öffnen Sie `Block Storage`{.action} im linken Menü.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Öffnen Sie `Block Storage`{.action} im linken Menü unter **Storage und Backups**.
 >>
 >> Klicken Sie in diesem Bereich auf den Button `Volume erstellen`{.action}.
 >>
@@ -530,18 +530,6 @@ Wählen Sie das verwendete OS aus, um **das Volume** zu entfernen:
 >> sudo nano /etc/fstab
 >> ```
 >>
->> Speichern Sie die Änderungen und verlassen Sie den Editor.
->>
->> Gehen Sie in den Bereich `Public Cloud`{.action} in Ihrem OVHcloud Kundencenter und klicken Sie auf `Block Storage`{.action} im linken Menü unter **Storage**.
->>
->> Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
->>
->> ![detach disk](images/detachinstance.png){.thumbnail}
->>
->> Klicken Sie in neuen Fenster auf `Bestätigen`{.action}, um den Vorgang zu starten.
->>
->> ![Disk Detach](images/confirminstancedetach.png){.thumbnail}
->>
 > **Unter Windows** <a name="windows"></a>
 >>
 >> Stellen Sie eine Remotedesktop-Verbindung (RDP) mit Ihrer Windows-Instanz her.
@@ -569,7 +557,7 @@ Zum Schluss trennen wir das Volume von der Instanz:
 
 > [!tabs]
 > **Über das OVHcloud Kundencenter**
->> Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im Menü links unter **Storage** auf `Block Storage`{.action}.
+>> Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im Menü links unter **Storage und Backups** auf `Block Storage`{.action}.
 >>
 >> Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
 >>

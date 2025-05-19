@@ -1,7 +1,7 @@
 ---
 title: 'Comment activer le mode bridge sur un modem Zyxel'
 excerpt: "Découvrez comment activer le mode bridge sur un modem Zyxel afin d'utiliser votre propre routeur"
-updated: 2022-12-08
+updated: 2025-04-28
 ---
 
 ## Objectif
@@ -26,8 +26,8 @@ Le mode bridge est utile si vous souhaitez que votre modem ne se comporte plus c
 ### Étape 1 : Accéder à l'outil de configuration à distance
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Accès Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre à droite.
+1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
+1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
 1. Assurez-vous d'être positionné sur l'onglet `Mon modem`{.action}.
 
 Dans le cadre « Configuration à distance », vérifiez que la case à côté de `Configuration à distance activée` est bien décochée. Dès lors, deux possibilités :
@@ -88,6 +88,6 @@ Pour revenir en mode routeur suivez le guide « [Redémarrer ou réinitialiser u
 
 ## Aller plus loin
 
-Vous pouvez retrouver plus d'informations sur la configuration du modem dans le [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8825-T50K_V5.13_5.50-1.pdf){.external}
+Vous pouvez retrouver plus d'informations sur la configuration du modem dans le [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8825-T50K_V5.13_5.50-1.pdf).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,23 +1,23 @@
 ---
 title: 'Adding cloud credit'
 excerpt: 'Find out how to add credit or vouchers to your Public Cloud project'
-updated: 2022-02-04
+updated: 2025-04-28
 ---
 
 ## Objective
 
-With the *cloud credit* option you can allocate a specific amount to your Public Cloud project which will serve as the default payment method for the [billing of the project](/pages/public_cloud/compute/analyze_billing).<br> This means that cloud credit is debited first and any outstanding amount will be then be paid by other available payment methods. (Please consult the [Public Cloud billing guides](/products/account-and-service-management-managing-billing-payments-and-services) to learn more about this topic.)
+With the *cloud credit* option you can allocate a specific amount to your Public Cloud project which will serve as the default payment method for the [billing of the project](/pages/public_cloud/public_cloud_cross_functional/analyze_billing).<br> This means that cloud credit is debited first and any outstanding amount will be then be paid by other available payment methods. (Please consult the [Public Cloud billing guides](/products/account-and-service-management-managing-billing-payments-and-services) to learn more about this topic.)
 
 **This guide explains how to add credit on to your Public Cloud account using a voucher, or by generating a purchase order.**
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Open `Credit and Vouchers`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Open `Credit & Vouchers`{.action} in the left-hand menu under **Settings**.
 
 > [!warning]
 >

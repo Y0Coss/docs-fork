@@ -1,6 +1,6 @@
 ---
 title: Shelve or pause an instance
-updated: 2024-11-06
+updated: 2025-04-28
 ---
 
 ## Objective
@@ -16,14 +16,16 @@ As part of the configuration of a high-availability infrastructure, you may enco
 ## Requirements
 
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) on **hourly** billing
-- Access to the [OVHcloud Control Panel](/links/manager){.external} or [Horizon interface](/pages/public_cloud/compute/introducing_horizon)
-- Knowledge of [Openstack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) and [Openstack variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- Access to the [OVHcloud Control Panel](/links/manager){.external} or [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Knowledge of [Openstack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) and [Openstack variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 ## Instructions
 
 > [!alert]
 >
-> These manipulations still result in the instance being billed as long as the instance is not deleted.
+> This guide only applies to instances on **hourly billing**. If your instances are on **monthly billing**, standard billing will continue regardless of the status of the service.
+> 
+> Whether your instance is shelved, paused or suspended, you will still be billed for it. If you do not wish to be billed, you must delete the instance.
 >
 
 The table below allows you to differentiate the options available on your instances. Continue reading this guide by clicking on the option of your choice. We put the terminology used in the Horizon interface in brackets.
@@ -60,7 +62,7 @@ Once the process is completed, your instance will now appear as *Suspended*.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-To view the snapshot, click on `Instance Backup`{.action} underneath the `Storage` tab in the left side menu. A snapshot named *xxxxx-shelved* will now be visible:
+To view the snapshot, click on `Instance Backup`{.action} underneath the **Compute** tab in the left side menu. A snapshot named *xxxxx-shelved* will now be visible:
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -70,7 +72,7 @@ To proceed, you need to [log in to the Horizon interface](https://horizon.cloud.
 
 - To log in with OVHcloud Single Sign-On: use the `Horizon`{.action} link in the left-hand menu under "Management Interfaces" after opening your `Public Cloud`{.action} project in the [OVHcloud Control Panel](/links/manager).
 
-- To log in with a specific OpenStack user: open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](/pages/public_cloud/compute/create_and_delete_a_user) previously created, then click on `Connect`{.action}.
+- To log in with a specific OpenStack user: open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) previously created, then click on `Connect`{.action}.
 
 If you have deployed instances in different regions, make sure you are in the correct region. You can verify this on the top left corner in the Horizon interface.
 
@@ -92,8 +94,8 @@ To view the snapshot, in the `Compute`{.action} menu, click on `Images`{.action}
 
 Before proceeding, it is recommended that you consult these guides:
 
-- [Prepare the environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Set OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Set OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 Once your environment is ready, type the following at the command line:
 

@@ -1,7 +1,7 @@
 ---
 title: Configuring a public IP block in a vRack on a Public Cloud instance
 excerpt: Find out how to link a block of public IP addresses to the vRack for configuration on a Public Cloud Instance
-updated: 2025-03-12
+updated: 2025-04-28
 ---
 
 ## Objective
@@ -16,7 +16,7 @@ As well as private IP addressing, the [vRack](/links/network/vrack) also allows 
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - A [vRack](/links/network/vrack) service activated in your account
 - Access to the [OVHcloud Control Panel](/links/manager)
-- Access to the [Horizon interface](/pages/public_cloud/compute/introducing_horizon)
+- Access to the [Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ### Content overview
 
@@ -40,11 +40,11 @@ Before you start, please note that there are several steps to follow for this co
 ### Add the Public Cloud project to the vRack
 
 > [!primary]
-> This does not apply to newly created projects, which are automatically delivered with a vRack. To view the vRack once the project has been created, log in to the [OVHcloud Control Panel](/links/manager), go the `Bare Metal Cloud`{.action} menu and click on `Network`{.action}. Click on `vRack private network`{.action} to view the vRack(s).
+> This does not apply to newly created projects, which are automatically delivered with a vRack. To view the vRack once the project has been created, log in to the [OVHcloud Control Panel](/links/manager), go the `Network`{.action} section and click on `vRack private network`{.action} to view the vRack(s).
 >
 > You can also remove the project from its allocated vRack and attach it to another vRack if you wish.
 
-For older projects, go to the `Bare Metal Cloud`{.action} menu and click on `Network`{.action}. Click on `vRack private network`{.action} and select your vRack from the list.
+For older projects, go to the `Network`{.action} section and click on `vRack private network`{.action}. Next, select your vRack from the list.
 
 From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
 
@@ -61,7 +61,7 @@ From the list of eligible services, select the project you want to add to the vR
 > This setup allows you to configure IPs of the same block on multiple servers, provided that these servers are all in the same vRack as the IP block. The IP block must have at least 2 usable IPs or more for this to be possible.
 >
 
-In your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `vRack`{.action} menu.
+In your [OVHcloud Control Panel](/links/manager), go to the `Network`{.action} section and click on `vRack private network`{.action}.
 
 Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on `Add`{.action}.
 
@@ -73,7 +73,7 @@ Select your vRack from the list to display the list of eligible services. Click 
 
 Once your project has been added to the vRack, the next step is to create a Private Network. This private network will be attached to the Public Cloud instance.
 
-In the `Public Cloud`{.action} tab, click on `Private Network`{.action} in the left-hand menu under **Network**.
+In the `Public Cloud`{.action} section, click on `Private Network`{.action} in the left-hand menu under **Network**.
 
 Click on `Add Private Network`{.action}.
 
@@ -149,9 +149,11 @@ Once the subnet has been created, your private network will appear as follows:
 
 ### Attach a network interface to the instance
 
-This action should only be done via the Horizon interface.
-
-If you have not yet created an instance, you must create it first, then attach the network later. Do not select the private network when creating the instance.
+> [!warning]
+> This action should only be done via the Horizon interface.
+> 
+> If you have not yet created an instance, you must create it first, then attach the network later. Do not attach the private network during the creation of the instance.
+>
 
 We recommend you to consult the following guides if you are creating an instance for the first time: [How to create a Public Cloud instance and connect to it](/pages/public_cloud/compute/public-cloud-first-steps/) or [Creating an Instance via the Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon/).
 
@@ -219,22 +221,43 @@ sudo apt-get install iproute2
 
 Next, we need to create a new IP route for the vRack. We'll be adding a new traffic rule by amending the file, as shown below:
 
-```sh
-sudo nano /etc/iproute2/rt_tables # Per Fedora: sudo nano /usr/share/iproute2/rt_tables
-
-#
-# reserved values
-#
-255	local
-254	main
-253	default
-0	unspec
-#
-# local
-#
-#1	inr.ruhep
-1 vrack
-```
+> [!tabs]
+> **Linux**
+>>
+>> ```sh
+>> sudo nano /etc/iproute2/rt_tables
+>> #
+>> # reserved values
+>> #
+>> 255	local
+>> 254	main
+>> 253	default
+>> 0	unspec
+>> #
+>> # local
+>> #
+>> #1	inr.ruhep
+>> 1 vrack
+>> ```
+>>
+> **Fedora**
+>>
+>> ```sh
+>> sudo nano /usr/share/iproute2/rt_tables
+>> #
+>> # reserved values
+>> #
+>> 255	local
+>> 254	main
+>> 253	default
+>> 0	unspec
+>> #
+>> # local
+>> #
+>> #1	inr.ruhep
+>> 1 vrack
+>> ```
+>>
 
 <a name="nonpersistent"></a>
 

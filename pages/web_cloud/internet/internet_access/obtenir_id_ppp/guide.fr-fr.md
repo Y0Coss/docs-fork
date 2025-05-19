@@ -1,7 +1,7 @@
 ---
 title: 'Obtenir les identifiants PPPoE'
 excerpt: 'Découvrez comment récupérer les identifiants PPPoE de votre accès à Internet OVHcloud via les API'
-updated: 2023-08-08
+updated: 2025-04-28
 ---
 
 ## Objectif
@@ -14,10 +14,10 @@ Les identifiants *Point to Point Protocol over Ethernet* (PPPoE) sont composés 
 
 ## Prérequis
 
-- Disposer d'une [offre xDSL ou FTTH OVHcloud](https://www.ovhtelecom.fr/offre-internet/) active.
+- Disposer d'un [accès Internet xDSL ou FTTH OVHcloud](/links/telecom/offre-internet).
 - Disposer d'un équipement (routeur, firewall) compatible PPPoE.
 - Être connecté à l'[espace client OVHcloud](/links/manager).
-- Être connecté aux [API OVHcloud](https://api.ovh.com/){.external}.
+- Être connecté aux [API OVHcloud](https://api.ovh.com/).
 - Consulter le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
@@ -39,7 +39,7 @@ Dans un premier temps, il vous faut retrouver le *serviceName* de votre accès �
 Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, suivez ces étapes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Accès Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
+1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
 
 La référence interne est affichée dans le cadre `Accès Internet` à droite.
 

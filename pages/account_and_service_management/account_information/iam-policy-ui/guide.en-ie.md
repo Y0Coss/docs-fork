@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2025-01-08
+updated: 2025-05-15
 ---
 
 ## Objective
@@ -37,13 +37,9 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 
 ### Accessing the IAM menu
 
-Click your account name in the top-right corner, then on your name again in the sidebar.
+On the sidebar, click on `Identity, Security & Operations`{.action} then on `Policies`{.action}.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-You can access the IAM menu via the dedicated entry in your Control Panel.
-
-![Access to the IAM menu](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
 If you are accessing this menu for the first time, the following page appears:
 
@@ -57,7 +53,7 @@ Click [Create a policy](#create-policy) or [Create users](#create-users) directl
 >
 > Customers are not allowed to edit or delete these policies.
 
-If you have already created policies or users, the menu displays a list of all the current policies created on your OVHcloud account.
+If you have already created policies or users, you will find them in the first tab `My policies`{.action}. The `OVHcloud Policies`{.action} tab groups non-editable policies created automatically by OVHcloud.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -150,7 +146,7 @@ A popup window will ask you to confirm the deletion.
 
 ### Managing identities
 
-The identities available for policies are managed via the `Identities`{.action} tab.
+To manage the identities available for policies, go to the `Identity, Security & Operations`{.action} menu, then to the `Identities`{.action} section.
 
 Details about user management are available in the [dedicated documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
@@ -160,7 +156,7 @@ Policies can target resource groups instead of resources. These resource groups 
 
 #### Creating a resource group
 
-To create a resource group, access the dedicated tab of the IAM menu:
+To create a resource group, go to the `Policies`{.action} section, then click the `Resource group`{.action} tab:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 

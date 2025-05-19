@@ -1,7 +1,7 @@
 ---
 title: Creating and configuring an additional disk on an instance
 excerpt: Find out how to attach a new volume to your Public Cloud instance
-updated: 2025-03-21
+updated: 2025-04-28
 ---
 
 <style>
@@ -26,7 +26,7 @@ This can be useful in cases where:
 - You want to increase your storage capacity without changing the instance model.
 - You want to have a highly available, high-performance storage.
 - You want to move your storage as well as your data to another instance.
-- You want to prepare the environment if you want to use [Terraform](/pages/public_cloud/compute/how_to_use_terraform).
+- You want to prepare the environment if you want to use [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
 
 **This guide explains how to create an additional disk and configure it on your instance.**
 
@@ -84,7 +84,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then open `Block Storage`{.action} in the left-hand menu.
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
 >>
 >> In this section, click on the button `Create a volume`{.action}.
 >>
@@ -558,7 +558,7 @@ Finally, we will detach the volume from the instance:
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
->> Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
+>> Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
 >>
 >> Click the `...`{.action} button next to the corresponding volume and select `Detach from instance`{.action}.
 >>

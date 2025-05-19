@@ -1,6 +1,6 @@
 ---
 title: Sospendi o metti in pausa un’istanza
-updated: 2024-11-12
+updated: 2025-04-28
 ---
 
 ## Obiettivo
@@ -16,12 +16,14 @@ Durante la configurazione di un'infrastruttura ad alta disponibilità, potresti 
 ## Prerequisiti
 
 - un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) con la fatturazione **oraria**
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external} o all'[interfaccia Horizon](/pages/public_cloud/compute/introducing_horizon)
-- Conoscenza dell'[API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) e delle [variabili d’ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external} o all'[interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Conoscenza dell'[API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) e delle [variabili d’ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 ## Procedura
 
 > [!alert]
+>
+> Questa guida si applica solo alle istanze con **fatturazione oraria**. Se le tue istanze hanno una **fatturazione mensile**, la fatturazione classica continuerà a essere applicata indipendentemente dallo stato del servizio.
 >
 > Queste manipolazioni comportano sempre la fatturazione dell'istanza finché non viene **eliminata**.
 >
@@ -47,7 +49,7 @@ Questa opzione permette di liberare le risorse dedicate all'istanza Public Cloud
 
 #### Nello Spazio Cliente OVHcloud
 
-Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra. 
+Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Istanze`{.action} nella barra di navigazione a sinistra. 
 
 Clicca su `...`{.action} a destra dell'istanza da sospendere, poi clicca su `Sospesa`{.action}.
 
@@ -61,7 +63,7 @@ Una volta completata la procedura, l'istanza si presenta come *Sospesa*.
 
 ![sospeso](images/instance_suspended.png){.thumbnail}
 
-Lo snapshot sarà quindi disponibile nella sezione `Instance Backup`{.action} del menu `Storage` a sinistra dello spazio Public Cloud. Sarà quindi visibile uno snapshot denominato *xxxxx-shelved*:
+Lo snapshot sarà quindi disponibile nella sezione `Instance Backup`{.action} del menu **Compute** a sinistra dello spazio Public Cloud. Sarà quindi visibile uno snapshot denominato *xxxxx-shelved*:
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -71,7 +73,7 @@ Per utilizzare questo metodo, è necessario [connettersi all’interfaccia Horiz
 
 - Per accedere con l’autenticazione unica OVHcloud, clicca sul link `Horizon`{.action} nel menu di sinistra sotto "Management Interfaces" dopo aver aperto il progetto `Public Cloud`{.action} nello [Spazio Cliente OVHcloud](/links/manager).
 
-- Per accedere con un utente OpenStack specifico: apri la pagina di accesso a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e inserisci le [credenziali OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) precedentemente create, poi clicca su `Connect`{.action}.
+- Per accedere con un utente OpenStack specifico: apri la pagina di accesso a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e inserisci le [credenziali OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) precedentemente create, poi clicca su `Connect`{.action}.
 
 Se hai installato istanze in diverse regioni, assicurati di essere nella localizzazione giusta. Puoi verificarlo nell'angolo superiore sinistro dell'interfaccia Horizon.
 
@@ -93,8 +95,8 @@ Per visualizzare lo snapshot, nel menu `Compute`{.action}, clicca su `Images`{.a
 
 Prima di continuare, si raccomanda di consultare le seguenti guide:
 
-- [Preparare l’ambiente per utilizzare l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Impostare le variabili d’ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Preparare l’ambiente per utilizzare l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Impostare le variabili d’ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 Una volta che l'ambiente è pronto, esegui questo comando:
 
@@ -119,7 +121,7 @@ Questa opzione ti permette di riattivare l'istanza per poterla utilizzare. Ti ri
 
 #### Nello Spazio Cliente OVHcloud
 
-Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra.
+Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Istanze`{.action} nella barra di navigazione a sinistra.
 
 Clicca su `...`{.action} a destra dell'istanza e poi clicca su `Riattiva`{.action}.
 
@@ -155,7 +157,7 @@ Questa opzione ti permette di arrestare la tua istanza e salvare lo stato della 
 
 #### Nello Spazio Cliente OVHcloud
 
-Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra.
+Nello Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Istanze`{.action} nella barra di navigazione a sinistra.
 
 Clicca su `...`{.action} a destra dell'istanza da arrestare, poi clicca su `Arresta`{.action}.
 

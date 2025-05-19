@@ -1,6 +1,6 @@
 ---
 title: Aussetzen oder Pausieren einer Instanz
-updated: 2024-11-12
+updated: 2025-04-28
 ---
 
 ## Ziel
@@ -16,14 +16,16 @@ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie mögliche
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) mit **stündlicher** Abrechnung.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder das [Horizon Interface](/pages/public_cloud/compute/introducing_horizon).
-- Sie haben Kenntnisse der [OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) und der [OpenStack Variablen](/pages/public_cloud/compute/loading_openstack_environment_variables).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder das [Horizon Interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
+- Sie haben Kenntnisse der [OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) und der [OpenStack Variablen](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 
 ## In der praktischen Anwendung
 
 > [!alert]
 >
-> Diese Manipulationen führen dazu, dass die Instanz weiterhin abgerechnet wird, solange sie nicht gelöscht wird.
+> Diese Anleitung gilt nur für Instanzen mit **stündlicher Abrechnung**. Wenn Ihre Instanzen über eine **monatliche Abrechnung** verfügen, wird die Abrechnung ungeachtet des Status der Dienstleistung fortgesetzt.
+>
+> Instanzen werden weiterhin abgerechnet, solange sie nicht gelöscht werden.
 >
 
 In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optionen in der Übersicht. Klicken Sie auf die Option Ihrer Wahl, um zum entsprechenden Teil der Anleitung zu gelangen. Wir setzen die in der Horizon-Interface verwendete Terminologie in Klammern.
@@ -46,7 +48,7 @@ Diese Option erlaubt es Ihnen, die dedizierten Ressourcen Ihrer Public Cloud Ins
 
 #### Im OVHcloud Kundencenter
 
-Loggen Sie sich in Ihr OVHcloud Kundencenter ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihr OVHcloud Kundencenter ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Instanzen`{.action}.
 
 Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Aussetzen`{.action}.
 
@@ -60,7 +62,7 @@ Sobald der Vorgang abgeschlossen ist, erscheint die Instanz als *Ausgesetzt*.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-Um den Snapshot zu sehen, klicken Sie im linken Menü auf `Instance Backup`{.action} im Bereich `Storage`. Ein Snapshot mit dem Namen *xxxxx-shelved* wird dann angezeigt.
+Um den Snapshot zu sehen, klicken Sie im linken Menü auf `Instance Backup`{.action} im Bereich **Compute**. Ein Snapshot mit dem Namen *xxxxx-shelved* wird dann angezeigt.
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -70,7 +72,7 @@ Um diese Methode zu verwenden, müssen Sie sich [in das Horizon-interface einlog
 
 - Um sich über OVHcloud SSO zu verbinden: Verwenden Sie den Link `Horizon`{.action} im Menü links unter "Management Interfaces", nachdem Sie Ihr `Public Cloud`{.action} Projekt in Ihrem [OVHcloud Kundencenter](/links/manager) geöffnet haben.
 
-- Um sich mit einem bestimmten OpenStack-Benutzer anzumelden: Öffnen Sie die Login-Seite für [Horizon](https://horizon.cloud.ovh.net/auth/login/) und geben Sie die zuvor erstellten [OpenStack-Zugangsdaten](/pages/public_cloud/compute/create_and_delete_a_user) ein. Klicken Sie anschließend auf `Connect`{.action}.
+- Um sich mit einem bestimmten OpenStack-Benutzer anzumelden: Öffnen Sie die Login-Seite für [Horizon](https://horizon.cloud.ovh.net/auth/login/) und geben Sie die zuvor erstellten [OpenStack-Zugangsdaten](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) ein. Klicken Sie anschließend auf `Connect`{.action}.
 
 Wenn Sie Instanzen in verschiedenen Regionen eingerichtet haben, stellen Sie sicher, dass Sie sich in der korrekten Region befinden. Überprüfen Sie es in der oberen linken Ecke des Horizon-Interface.
 
@@ -92,8 +94,8 @@ Um den Snapshot anzuzeigen, klicken Sie im Menü `Compute`{.action} auf `Images`
 
 Bevor Sie fortfahren, empfehlen wir Ihnen folgende Anleitungen:
 
-- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Konfigurieren der OpenStack-Umgebungsvariablen](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Konfigurieren der OpenStack-Umgebungsvariablen](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 
@@ -118,7 +120,7 @@ Mit dieser Option können Sie Ihre Instanz aus dem ausgesetzten Zustand entferne
 
 #### Im OVHcloud Kundencenter
 
-Loggen Sie sich in Ihr OVHcloud Kundencenter ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihr OVHcloud Kundencenter ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instanzen`{.action}.
 
 Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Reaktivieren`{.action}.
 
@@ -154,7 +156,7 @@ Mit dieser Option können Sie Ihre Instanz anhalten und den Zustand der virtuell
 
 #### Im OVHcloud Kundencenter
 
-Loggen Sie sich in Ihr OVHcloud Kundencenter ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihr OVHcloud Kundencenter ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instanzen`{.action}.
 
 Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Anhalten`{.action}.
 

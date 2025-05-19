@@ -1,7 +1,7 @@
 ---
-title: 'Installer et configurer Softcall (Bêta)'
+title: 'Installer et configurer Softcall'
 excerpt: 'Découvrez comment installer et configurer Softcall afin de profiter de la solution Softphone'
-updated: 2025-03-21
+updated: 2025-04-28
 ---
 
 <style>
@@ -18,14 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!primary]
-> L'application [Softcall](https://labs.ovhcloud.com/en/softphone-beta/) est disponible en phase bêta.
->
-> Ce guide peut faire l'objet de mises à jour durant la phase bêta. Notre équipe reste disponible pour répondre à vos questions sur la mailing-list [voip@ml.ovh.net](mailto:voip@ml.ovh.net). Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services VoIP.
->
-> **[Inscrivez-vous à la bêta dès maintenant !](https://survey.ovh.com/index.php/361586?lang=fr)**
-> 
-
 ## Objectif
 
 Le Softphone est une solution qui transforme votre ordinateur, smartphone ou tablette en un téléphone virtuel, vous permettant d'utiliser votre ligne SIP (**S**ession **I**nitiation **P**rotocol) n'importe où et à tout moment. Grâce à notre application [Softcall](https://labs.ovhcloud.com/en/softphone-beta/), facilement téléchargeable sur les plateformes Android, iOS, macOS et Windows, vous pouvez accéder à toutes les fonctionnalités de votre ligne téléphonique professionnelle sans être attaché à un téléphone de bureau traditionnel. Que vous soyez en déplacement ou que vous travailliez à distance, Softcall garantit que votre ligne SIP reste aussi mobile et flexible que nécessaire.
@@ -36,9 +28,8 @@ Le Softphone est une solution qui transforme votre ordinateur, smartphone ou tab
 
 - Disposer d'une [ligne SIP OVHcloud](/links/telecom/telephonie-voip).
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
-- Rejoindre la [bêta Softcall](https://survey.ovh.com/index.php/361586?lang=fr).
 - Si votre ligne est rattachée à un téléphone fourni par OVHcloud, celui-ci ne pourra plus être utilisé dès lors que Softcall est activé.
-- Si votre connexion est derrière un pare-feu, vous devez y autoriser les adresses IP suivantes : `57.128.38.204/32` et `57.128.38.156/32`.
+- Si votre connexion est derrière un pare-feu, vous devez y autoriser la plage d'adresses IP suivante : `5.196.180.0/27`.
 
 > [!primary]
 > Si Softcall est désactivé et que vous souhaitez réutiliser votre téléphone OVHcloud, vous devez procéder à un dépannage Plug & Phone (pour plus de détails, consultez notre guide [Dépanner son téléphone OVHcloud](/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel)). Pour les autres types d'appareils, il est nécessaire de réinitialiser le mot de passe SIP et de le renseigner à nouveau dans les paramètres de l'appareil.
@@ -47,20 +38,46 @@ Le Softphone est une solution qui transforme votre ordinateur, smartphone ou tab
 
 ### Installer Softcall
 
+#### Activer la ligne SIP pour Softcall
+
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Téléphonie`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
-1. Cliquez sur la ligne SIP concernée.
-1. Après avoir sélectionné l'onglet `Softphone`{.action}, cliquez sur l'interrupteur pour générer un e-mail dans lequel se trouve le logiciel Softcall, disponible pour Windows, macOS, Android et iOS.
+1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
+1. Cliquez sur l'onglet `Services`{.action} puis sur la ligne SIP concernée.
+1. Après avoir sélectionné l'onglet `Softphone`{.action}, cliquez sur l'interrupteur pour utiliser la ligne SIP sur l’ensemble de vos applications Softcall.
 
-![Install Softcall](images/send_mail_manager.png){.thumbnail}
+![Install Softcall](images/toggle_activation_sip.png){.thumbnail}
 
-Ouvrez l'e-mail et suivez les instructions pour installer Softcall.
+#### Télécharger et installer Softcall
+
+Cliquez sur `Liens de téléchargements`{.action}.
+
+![Install Softcall](images/download_softcall_manager_button.png){.thumbnail}
+
+Vous disposez de trois options pour télécharger l'application Softcall :
+
+- Option 1 : via un store d'applications (Apple App Store, Google Play Store, Microsoft Store).
+- Option 2 : via le QR code.
+- Option 3 : via le lien de téléchargement.
+
+Une fois l'application Softcall téléchargée, installez-la sur votre appareil.
 
 ### Configurer Softcall
 
-Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous êtes dirigé vers l'écran `Assistant`{.action}.
+#### Obtenir le code de configuration
 
-#### Application mobile (Android et IOS)
+Dans la section `Configurer la ligne`{.action}, cliquez sur `Obtenir un code de configuration`{.action}.
+
+![Install Softcall](images/get_configuration_code_button.png){.thumbnail}
+
+Dans la fenêtre qui s'ouvre, cliquez sur le bouton `Générer un code de configuration`{.action}. Si vous souhaitez recevoir également le code de configuration par e-mail (facultatif), entrez votre adresse e-mail dans le champ concerné.
+
+![Install Softcall](images/configuration_code_popup.png){.thumbnail}
+
+Dans la nouvelle fenêtre, retrouvez le code de configuration et le QR code.
+
+#### Configurer l'application mobile (Android et IOS)
+
+Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous êtes dirigé vers l'écran `Assistant`{.action}.
 
 *Cliquez sur l'onglet correspondant à votre système d'exploitation mobile :*
 
@@ -74,13 +91,13 @@ Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous ête
 >> ![Install Softcall](images/assistant_ios_android.png){.thumbnail}
 >>
 
-Retrouvez le code et le QR CODE de configuration dans l'e-mail que vous avez reçu après avoir souscrit à l'offre Softcall.
-
-Dans l'écran `Assistant`{.action} de l'application Softcall, entrez le code de configuration ou appuyez sur le bouton QR CODE pour scanner le QR CODE. Cliquez sur `Télécharger et appliquer`{.action} pour valider.
+Dans l'écran `Assistant`{.action} de l'application Softcall, utilisez le code de configuration ou le QR code récupérés précédemment, puis cliquez sur `Télécharger et appliquer`{.action} pour valider.
 
 Votre compte Softcall est désormais configuré. Dans le menu principal de Softcall, retrouvez votre numéro de téléphone (au format international) tout en haut du menu.
 
-#### Application de bureau (Windows et MacOS)
+#### Configurer l'application de bureau (Windows et MacOS)
+
+Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous êtes dirigé vers l'écran `Assistant`{.action}.
 
 *Cliquez sur l'onglet correspondant à votre système d'exploitation :*
 
@@ -94,9 +111,7 @@ Votre compte Softcall est désormais configuré. Dans le menu principal de Softc
 >> ![Install Softcall](images/assistant_windows_macos.png){.thumbnail}
 >>
 
-Récupérez le code de configuration (ou « *token de provisioning* ») vous permettant de télécharger votre configuration Softcall. Retrouvez le code dans l'e-mail que vous avez reçu après avoir souscrit à l'offre Softcall.
-
-Dans l'écran `Assistant`{.action} de l'application Softcall, entrez le code de configuration puis cliquez sur `Télécharger`{.action}. Un message de confirmation s'affiche.
+Dans l'écran `Assistant`{.action} de l'application Softcall, utilisez le code de configuration récupéré précédemment, puis cliquez sur `Télécharger`{.action}. Un message de confirmation s'affiche.
 
 ![Install Softcall](images/confirm_dl_config_windows.png){.thumbnail}
 
@@ -104,7 +119,7 @@ Cliquez sur `Confirmer`{.action} pour redémarrer l'application Softcall afin de
 
 Votre compte Softcall est désormais configuré. Dans le menu principal de Softcall, retrouvez votre numéro de téléphone (au format international) tout en haut de l'interface.
 
-### Fonctionnalités de base
+### Fonctionnalités Softcall de base
 
 #### Passer un appel téléphonique
 
@@ -154,7 +169,7 @@ Effectuez les actions suivantes pour supprimer votre compte Softcall de votre ap
 - Cliquez sur `Supprimer le compte`{.action}.
 - Un message de confirmation s'affiche : cliquez sur `Supprimer`{.action} pour confirmer la suppression locale de votre compte Softcall.
 
-### Fonctionnalités avancées
+### Fonctionnalités Softcall avancées
 
 #### Application de bureau (Windows et macOS)
 
@@ -346,6 +361,40 @@ Sur l'écran qui s'affiche, choisissez votre client de messagerie. Le destinatai
 Envoyez l'e-mail pour transmettre ce rapport à notre équipe en charge du produit Softcall.
 
 ///
+
+### Personnaliser Softcall
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
+1. Cliquez sur `VoIP & Fax`{.action} puis sur le groupe de facturation contenant votre ligne SIP.
+1. Cliquez sur l'onglet `Services`{.action}, sélectionnez la ligne SIP utilisée par votre application Softcall puis cliquez sur l'onglet `Softphone`{.action}.
+
+#### Appliquer un thème
+
+Vous pouvez définir un thème de couleur à appliquer à votre interface Softcall.
+
+Dirigez-vous sur la section `Appliquer un thème`{.action}.
+
+Sélectionnez la couleur de votre choix puis cliquez sur le bouton `Appliquer un thème`{.action} pour valider. Redémarrez votre application Softcall pour activer le changement de thème.
+
+#### Ajouter un logo
+
+> [!primary]
+> La modification du logo depuis l'espace client ne concerne pas l'icône de l'application Softcall sur votre appareil, mais uniquement le logo visible dans les paramètres de l'application, dans la section `À propos`.
+
+Dirigez-vous dans la section `Ajouter un logo`{.action}.
+
+Cliquez sur le bouton `Drag and drop a file or select a file`{.action}. La photo que vous venez de charger s'affiche en-dessous de la mention `Attached file(s)` (`OVHcloud_logo.png` dans l'exemple ci-dessous).
+
+![Install Softcalls](images/add_logo_manager.png){.thumbnail}
+
+> [!warning]
+> Respectez les critères suivants pour la photo à charger :
+>
+> - Format `png`, `jpeg` ou `jpg`.
+> - Poids inférieur à 1 MB.
+> - Dimensions maximales : 512 x 512 pixels.
+
+Cliquez sur le bouton `Appliquer un logo`{.action}. Redémarrez votre application Softcall pour activer le changement de thème.
 
 ## Aller plus loin
 

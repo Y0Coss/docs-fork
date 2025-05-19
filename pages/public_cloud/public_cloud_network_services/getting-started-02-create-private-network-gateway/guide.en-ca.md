@@ -1,21 +1,21 @@
 ---
 title: Creating a private network with Gateway
 excerpt: Discover how to create a Private network with a Gateway
-updated: 2024-12-24
+updated: 2025-04-22
 ---
 
 ## Objective
 
 A [Gateway](/links/public-cloud/gateway) offers a secure outbound connection method from your private network instances or the ability to use Floating IPs with your instance or Load Balancer for service exposition.
 
-This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) or the [OVHcloud API](/links/api).
+This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) or the [OVHcloud API](/links/api).
 
 **Learn how to create a private network with a gateway.**
 
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud API](/links/api), the [OVHcloud Control Panel](/links/manager) or the OpenStack command line environment ([Tutorial](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api))
+- Access to the [OVHcloud API](/links/api), the [OVHcloud Control Panel](/links/manager) or the OpenStack command line environment ([Tutorial](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api))
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment (optional)
 
 ## Instructions
@@ -28,7 +28,7 @@ This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenS
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and open your Public Cloud project.
 >>
 >> Click on `Gateway`{.action} in the left-hand menu under **Network**.
 >>
@@ -40,21 +40,23 @@ This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenS
 >>
 > **Step 2**
 >>
->> First, select your gateway size.
->> 
->> ![gateway size selection](images/gatewaysize.png){.thumbnail}
+>> First, select a location. It is best to create a Public Gateway in the region where you intend to deploy your private instances.
+>>
+>> ![select location](images/select_region_ca.png){.thumbnail}
+>>
+> **Step 3**
+>>
+>> In the next step, select your gateway size.
+>>
+>> ![gateway size selection](images/select_size.png){.thumbnail}
 >>
 >> |Size|Bandwith|Cost|
 >> |---|---|---|
 >> |S|up to 200Mbps|2€/month, excluding tax|
 >> |M|up to 500Mbps|8€/month, excluding tax|
 >> |L|up to 2Gbps|35€/month, excluding tax|
->>
-> **Step 3**
->>
->> In the next step, select a location. It is best to create a Public Gateway in the region where you intend to deploy your private instances.
->>
->> ![select location](images/selectregion.png){.thumbnail}
+>> |XL|up to 4Gbps|121€/month, excluding tax|
+>> |2XL|up to 8Gbps|304€/month, excluding tax|
 >>
 > **Step 4**
 >>
@@ -97,7 +99,7 @@ This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenS
 
 Before proceeding, it is recommended that you consult this guide:
 
-- [How to use Terraform](/pages/public_cloud/compute/how_to_use_terraform)
+- [How to use Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform)
 
 Once your environment is ready, you can create a Terraform file called 'private_network_simple.tf' and write the following: 
 
@@ -140,8 +142,8 @@ terraform apply
 
 Before proceeding, it is recommended that you consult these guides:
 
-- [Preparing an environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Preparing an environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 > [!tabs]
 > **Step 1**

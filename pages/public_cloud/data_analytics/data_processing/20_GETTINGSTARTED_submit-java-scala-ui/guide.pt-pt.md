@@ -1,8 +1,17 @@
 ---
 title: Submitting a Java/Scala job to Data Processing platform using OVHcloud Control Panel
 excerpt: Find out how to create a cluster and run your Apache Spark Java/Scala job with Data Processing platform using the OVHcloud Control Panel
-updated: 2020-05-04
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 
@@ -17,8 +26,8 @@ To read an introduction about Data Processing service you can visit [Data Proces
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
-- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
-- An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](/pages/public_cloud/compute/introducing_horizon){.external} for details.)
+- A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
+- An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon){.external} for details.)
 - A jar file containing your Java or Scala code to be run in Apache Spark environment
 
 ## Instructions

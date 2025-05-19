@@ -1,7 +1,7 @@
 ---
 title: 'Crea e configura un disco aggiuntivo sulla tua istanza'
 excerpt: 'Come associare un nuovo volume alla tua istanza Public Cloud'
-updated: 2024-12-24
+updated: 2025-04-28
 ---
 
 <style>
@@ -26,7 +26,7 @@ Ciò può essere utile nei seguenti casi:
 - Per aumentare la capacità di storage senza modificare il modello di istanza
 - Per avere uno spazio di storage high availability e performante
 - Spostare lo storage e i dati verso un'altra istanza
-- Se si desidera preparare l'ambiente per l'utilizzo di [Terraform](/pages/public_cloud/compute/how_to_use_terraform), è necessario prepararlo.
+- Se si desidera preparare l'ambiente per l'utilizzo di [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), è necessario prepararlo.
 
 **Questa guida ti mostra come creare un disco aggiuntivo e configurarlo sulla tua istanza.**
 
@@ -35,7 +35,7 @@ Ciò può essere utile nei seguenti casi:
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di un'istanza [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) nel proprio account OVHcloud
 - Avere un accesso amministratore (sudo) alla tua istanza via SSH
-- Prepara l'ambiente per utilizzare [Terraform](/pages/public_cloud/compute/how_to_use_terraform)
+- Prepara l'ambiente per utilizzare [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform)
 
 > [!warning]
 >
@@ -84,7 +84,7 @@ La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigen
 
 > [!tabs]
 > **Dallo Spazio Cliente OVHcloud**
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto. Poi apri `Block Storage`{.action} nel menu a sinistra.
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto. Poi apri `Block Storage`{.action} nel menu a sinistra sotto **Storage e Backup**.
 >>
 >> In questa sezione clicca sul pulsante `Crea un volume`{.action}.
 >>
@@ -558,7 +558,7 @@ Infine, scollegheremo il volume dell’istanza:
 
 > [!tabs]
 > **Dallo Spazio Cliente OVHcloud**
->> Accedi alla sezione `Public Cloud`{.action} dello Spazio Cliente e clicca su `Block Storage`{.action} nel menu a sinistra **Storage**.
+>> Accedi alla sezione `Public Cloud`{.action} dello Spazio Cliente e clicca su `Block Storage`{.action} nel menu a sinistra sotto **Storage e Backup**.
 >>
 >> Clicca sui `...`{.action} in corrispondenza del volume corrispondente e seleziona `Scollega dall'istanza`{.action}.
 >>

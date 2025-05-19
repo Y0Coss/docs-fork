@@ -1,6 +1,6 @@
 ---
 title: 'Managing users and projects'
-excerpt: 'Find out how to manage users and projects in your OVHcloud Managed private registry (Harbor).'
+excerpt: 'Find out how to manage users and projects in your OVHcloud Managed Private Registry (MPR).'
 updated: 2022-04-13
 ---
 

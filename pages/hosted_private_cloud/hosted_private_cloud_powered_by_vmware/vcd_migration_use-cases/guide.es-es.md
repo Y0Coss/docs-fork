@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Migrate from VMware vSphere on OVHcloud"
 excerpt: "Find out how to prepare a migration from managed VMware vSphere on OVHcloud to a solution based on a managed VMware Cloud Director (VCD) on OVHcloud environnement"
-updated: 2025-01-16
+updated: 2025-05-06
 ---
 
 > [!primary]
@@ -32,6 +32,18 @@ This hot migration will minimize disruptions to your public or private networks.
 
 Your virtual machines will remain operational during the migration, with no downtime. However, there is a risk that some network packets will be lost during vMotion.
 
+> [!warning]
+> **Network availability during migration**
+>
+> During the migration, your virtual machines (VMs) are moved using vMotion.
+> Depending on your network topology, some VMs may temporarily lose connectivity:
+>
+> - **Public network (VMNetwork)**: no impact, as the public network is extended to the new infrastructure.
+> - **Private network without inter-VM communication**: no impact.
+> - **Private network with inter-VM communication**: possible brief downtime between VMs during the migration phase, as encapsulation technology changes from VLAN/VXLAN to Geneve.
+> 
+> We recommend that you plan accordingly and monitor your environment during the migration.
+
 This migration should be done with no noticeable impact for most applications, but we recommend that you monitor them closely throughout the process.
 
 As a reminder, if you decide to switch to the managed VCD on OVHcloud offer, the new prices will not be applied to your existing servers/hosts. We will cover the increase of licensing prices until the migration is complete.
@@ -53,11 +65,11 @@ Migrations will be carried out in 4 waves, from november 2024, depending on the 
 
 The planned schedule, which is compatible with these environments during the migration, is as follows:
 
-| **Waves**&nbsp;&nbsp;&nbsp;&nbsp; |             **Dates**              | **Target<br/>Offers** |  **NSX**   |  **vRack**  | **Microsoft<br/>(SPLA)** | **Summary of migration compatible environments**                                                                                                         |
+| **Waves**&nbsp;&nbsp;&nbsp;&nbsp; |             **From**              | **Target<br/>Offers** |  **NSX**   |  **vRack**  | **Microsoft<br/>(SPLA)** | **Summary of migration compatible environments**                                                                                                         |
 |:---------------------------------:|:----------------------------------:|:---------------------:|:----------:|:-----------:|:-------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |             `Wave 1`              |         **January 2025<br/>February 2025**          |      `Standard`       |     ❌      |      ❌      |          ❌          | - **Without** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)           |
-|             `Wave 2`              | **March 2025** |      `Standard`       |     ❌      |      ❌      |          ✅          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)              |
-|             `Wave 3`              |         **April 2025**          |      `Advanced`       |     ✅      |      ✅      |          ✅          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **Without** High performance storage (vSAN) |
+|             `Wave 2`              | **Mid-May 2025** |      `Standard`       |     ❌      |      ❌      |          ✅          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)              |
+|             `Wave 3`              |         **Mid-June 2025**          |      `Advanced`       |     ❌      |      ❌      |          ✅          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN) |
 |             `Wave 4`              |           **May 2025**           |       `Premium`       |     ✅      |      ✅      |          ✅          | - **With** Microsoft Windows license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **With** High performance storage (vSAN)       |
 
 During this process, your data will remain unchanged, except for vSAN Storage. Your IP addresses will also remain unchanged.
@@ -132,6 +144,28 @@ You can now reset the **Admin** password for a Managed VMware Cloud Director org
 > [!api]
 >
 > @api {v2} /vmwareCloudDirector POST /vmwareCloudDirector/organization/{organizationId}/password
+
+### Accessing datastores after migration
+
+After migrating your Managed vSphere service to your Managed VCD organization, you can still access your datastores via the legacy Managed vSphere interface.
+
+![Datastores dashboard](images/datastores_01.PNG){.thumbnail}
+
+This interface allows you to view and download the files still stored on your datastores.
+
+![Datastores dashboard](images/datastores_02.PNG){.thumbnail}
+
+For security reasons, only users who existed before the migration can log in.
+
+Passwords for these users may have been reset during the migration process. If needed, you can update them using the [dedicated OVHcloud API](https://eu.api.ovh.com/console/) with the following call:
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud/ POST /dedicatedCloud/{serviceName}/user/{userId}/changePassword
+>
+
+> [!warning]
+> Virtual machines cannot be recovered from this interface. To export your VMs, use your Managed VCD organization.
 
 ## Go further
 

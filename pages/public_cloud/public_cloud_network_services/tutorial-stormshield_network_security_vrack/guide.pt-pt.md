@@ -20,9 +20,9 @@ This guide provides step-by-step instructions for deploying and configuring SNS 
 
 ## Requirements
 
-- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
+- A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional)
+- An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 - A Stormshield account on the [Stormshield website](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}
 - Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
@@ -263,7 +263,7 @@ In this example, the virtual firewall will act as a secure gateway for private i
 
 ![SNS EVA vrack](images/gateway-2.png){.thumbnail}
 
-- [Create a NAT rule](https://documentation.stormshield.eu/SNS/v4/en/Content/SNS_for_Cloud_-_VMWare_NSX/NAT-Rules.htm){.external} similar to this one:
+- [Create a NAT rule](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Filtering_and_NAT/NAT_tab.htm){.external} similar to this one:
 
 ![SNS EVA vrack](images/gateway-3.png){.thumbnail}
 

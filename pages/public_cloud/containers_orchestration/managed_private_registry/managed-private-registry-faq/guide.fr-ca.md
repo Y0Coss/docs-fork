@@ -1,11 +1,11 @@
 ---
-title: 'FAQ Managed Private Registry (Harbor)'
+title: 'FAQ Managed Private Registry (MPR)'
 updated: 2025-03-13
 ---
 
 ## Objective
 
-Here are the most frequently asked questions about Managed Private Registry (Harbor).
+Here are the most frequently asked questions about Managed Private Registry (MPR).
 
 ### In which regions is the Private Registry solution available?
 

@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie wolumenem instancji Public Cloud'
 excerpt: 'Dowiedz się, jak przypisać nowy wolumen do instancji Public Cloud'
-updated: 2025-03-21
+updated: 2025-04-28
 ---
 
 <style>
@@ -26,7 +26,7 @@ Może to być przydatne w następujących przypadkach:
 - Jeśli chcesz zwiększyć przestrzeń dyskową bez konieczności zmiany szablonu instancji.
 - Jeśli chcesz dysponować przestrzenią dyskową o wysokiej dostępności i wysokiej wydajności.
 - Jeśli chcesz przenieść przestrzeń dyskową i dane do innej instancji.
-- Jeśli chcesz przygotować środowisko do korzystania z [Terraform](/pages/public_cloud/compute/how_to_use_terraform), musisz przygotować środowisko.
+- Jeśli chcesz przygotować środowisko do korzystania z [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), musisz przygotować środowisko.
 
 **Dowiedz się, jak utworzyć dodatkowy dysk i skonfigurować go na Twojej instancji.**
 
@@ -35,7 +35,7 @@ Może to być przydatne w następujących przypadkach:
 - Dostęp do [Panelu client OVHcloud](/links/manager)
 - Posiadanie instancji [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na koncie OVHcloud
 - Dostęp administratora (sudo) do Twojej instancji przez SSH
-- Przygotuj środowisko, jeśli chcesz korzystać z [Terraform](/pages/public_cloud/compute/how_to_use_terraform)
+- Przygotuj środowisko, jeśli chcesz korzystać z [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform)
 
 > [!warning]
 >
@@ -84,7 +84,7 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 
 > [!tabs]
 > **W Panelu klienta OVHcloud**
->> Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie.
+>> Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage i Backup**.
 >>
 >> W tej części kliknij przycisk `Utwórz wolumen`{.action}.
 >>
@@ -561,7 +561,7 @@ Na koniec odłączymy wolumin od instancji:
 
 > [!tabs]
 > **W Panelu klienta OVHcloud**
->> Przejdź do sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud i kliknij `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage**.
+>> Przejdź do sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud i kliknij `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage i Backup**.
 >>
 >> Kliknij przycisk `...`{.action} obok odpowiedniego wolumenu i wybierz `Odłącz od instancji`{.action}.
 >>

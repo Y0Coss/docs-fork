@@ -1,8 +1,17 @@
 ---
 title: Python - Calculating π number with Apache Spark
 excerpt: Calculting π number is a basic example about how to use Apache Spark. Let’s find out how to do it !
-updated: 2021-01-20
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 This guide  gives you a basic example about using Apache Spark and OVHcloud Data Processing.
@@ -17,7 +26,7 @@ This probabilty can be estimated by picking a high number of random points and t
 ## Requirements 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 - An OVHcloud account 
-- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/compute/create_a_public_cloud_project){.external} for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project){.external} for details.)
 - Data Processing activated (see [How to activate the Data Processing service](/pages/public_cloud/data_analytics/data_processing/30_HOWTO_activate_project){.external} for details.)
 
 ## 1. Naive method

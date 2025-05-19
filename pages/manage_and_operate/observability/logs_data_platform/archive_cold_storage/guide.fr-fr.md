@@ -1,7 +1,7 @@
 ---
 title: Archiving your logs - Cold-storage
 excerpt: This long-term storage feature keeps your logs safely and cost efficiently over several years.
-updated: 2024-08-05
+updated: 2025-05-06
 ---
 
 ## Objective
@@ -22,11 +22,8 @@ On this page you will find the long-term storage toggle. Once enabled, you will 
 
 - The compression algorithm. We currently support [GZIP](http://www.gzip.org/){.external}, [DEFLATE (AKA zip)](http://www.zlib.net/feldspar.html){.external}, [Zstandard](https://facebook.github.io/zstd/){.external} or [LZMA (used by 7-Zip)](http://www.7-zip.org/7z.html){.external}.
 - The retention duration of your archives (from one year to ten years).
-- The storage backend for your logs (on [OVHcloud Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/){.external} or [OVHcloud Public Archive](https://www.ovhcloud.com/fr/public-cloud/cloud-archive/){.external}).
 - The content of your archives: GELF, one special field [X-OVH-TO-FREEZE](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention), or both (you will get two separate archives in this case)
 - The activation of the notification for each new archive available.
-
-Note that OVHcloud Object Storage is more expensive than OVHcloud Public Archive but allows you to immediately download your archive whereas there is a delay (from 10 minutes to 4h) before being able to download your files on Public Archive. Depending on the urgency of your future logs retrieval, you will have to choose your backend accordingly.
 
 The content of your archive is flexible. By default, you get the full log content in GELF format. But you can choose to have an archive containing only the value of the custom LDP field X-OVH-TO-FREEZE. This field can, for example, be used to keep your logs in a human-readable or original format. You can also choose to have two archives simultaneously: the original GELF and the X-OVH-TO-FREEZE archives.
 
@@ -53,9 +50,7 @@ On a cold storage enabled stream (you can quickly see if they are with the archi
 
 ![Archive page](images/archive-1.png){.thumbnail}
 
-From this page you can launch the "unfreezing" process of your archive and make it available for download. This delay varies between 10 minutes to 4 hours depending on multiple factors like the size of the archive. There is no delay in the case you choose the **OVHcloud Object Storage** backend for your archives.
-
-Once available, its status changes and a new `Download`{.action} action appears.
+On each archive you can use the `Download`{.action} action to directly download the archive.
 
 #### Using the API
 

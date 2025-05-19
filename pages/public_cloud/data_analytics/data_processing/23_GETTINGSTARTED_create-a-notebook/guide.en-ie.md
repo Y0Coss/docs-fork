@@ -1,8 +1,17 @@
 ---
 title: Notebooks for Apache Spark - Getting started
 excerpt: Learn how to create Notebooks for Apache Spark
-updated: 2023-04-26
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 > [!primary]
 >
@@ -28,7 +37,7 @@ For the OVHcloud APIv6:
 
 - [OVHcloud API credentials](/pages/public_cloud/data_analytics/data_processing/38_HOWTO_use-with-ovh-api)
 - An OVHcloud account
-- An activated Public Cloud project in your OVHcloud account (see [How to create a project](/pages/public_cloud/compute/create_a_public_cloud_project) and [How to activate the Data Processing service](/pages/public_cloud/data_analytics/data_processing/30_HOWTO_activate_project) for details)
+- An activated Public Cloud project in your OVHcloud account (see [How to create a project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) and [How to activate the Data Processing service](/pages/public_cloud/data_analytics/data_processing/30_HOWTO_activate_project) for details)
 
 ## Definition
 

@@ -1,7 +1,7 @@
 ---
 title: 'Comment activer un lien de secours LTE'
 excerpt: 'Découvrez comment activer un lien de secours LTE'
-updated: 2021-02-05
+updated: 2025-04-28
 ---
 
 ## Objectif
@@ -42,8 +42,8 @@ Retournez sur l'onglet `Accueil` pour vérifier que vous êtes bien connecté. S
 
 Par défaut, le modem Zyxel est déjà configuré pour supporter les liens de secours LTE, il suffit donc uniquement de brancher votre clé Huawei E3372 sur le port USB du modem.
 
-Des configurations plus avancées sont disponibles via l'interface locale. Consultez le [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8825-T50K_V5.13_5.50-1.pdf){.external} (en anglais) pour plus de détails.
-En complément, une liste des clés LTE compatibles avec Zyxel est disponible [ici](http://files.isp.ovh.net/zyxel/LTE_dongle_supportList.pdf){.external}
+Des configurations plus avancées sont disponibles via l'interface locale. Consultez le [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8825-T50K_V5.13_5.50-1.pdf) (en anglais) pour plus de détails.
+En complément, une liste des clés LTE compatibles avec Zyxel est disponible [ici](http://files.isp.ovh.net/zyxel/LTE_dongle_supportList.pdf).
 
 #### Modem Technicolor TG799vac
 
@@ -61,8 +61,8 @@ Pour que le lien de secours LTE fonctionne, le modem doit être sur le firmware 
 Afin de mettre à jour le modem, suivez ces étapes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur `Télécom`{.action}.
-1. Cliquez sur `Accès Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
-1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre à droite.
+1. Cliquez sur `Offres Internet`{.action} puis sur le *Pack* contenant l'accès à Internet concerné.
+1. Cliquez sur votre accès à Internet FTTH ou xDSL dans le cadre `Accès Internet` à droite.
 1. Assurez-vous d'être positionné sur l'onglet `Mon Modem`{.action}.
 
 Dans le cadre « Configurations avancées », sélectionnez le firmware « 17.1.7960.01 » dans la liste déroulante de la section `Firmware`.

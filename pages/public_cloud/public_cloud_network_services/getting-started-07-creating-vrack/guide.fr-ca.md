@@ -1,7 +1,7 @@
 ---
 title: 'Configuration du vRack Public Cloud'
 excerpt: 'Découvrez comment configurer un vRack Public Cloud'
-updated: 2024-12-23
+updated: 2025-04-28
 ---
 
 ## Objectif
@@ -12,9 +12,9 @@ Le [vRack](/links/network/vrack) est un réseau privé qui vous permet de config
 
 ## Prérequis
 
-- Posséder un [projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project)
+- Posséder un [projet Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
-- Avoir [créé un utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (facultatif)
+- Avoir [créé un utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (facultatif)
 - Connaissances réseaux élémentaires
 
 ## Présentation des interfaces
@@ -39,7 +39,7 @@ Interface visuelle indépendante d'OVHcloud, [Horizon](https://horizon.cloud.ovh
 
 Cette interface complète et technique vous permet de gérer la quasi totalité des actions OpenStack. Ce sera une des interfaces nécessaires si vous souhaitez gérer plus de deux VLAN, ajouter des interfaces réseau privées à vos instances, gérer des images personnalisées, etc.
 
-Consultez le guide [Accéder à l'interface Horizon](/pages/public_cloud/compute/introducing_horizon) pour vous familiariser à Horizon.
+Consultez le guide [Accéder à l'interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) pour vous familiariser à Horizon.
 
 > [!primary]
 > Horizon fonctionnant par zone, pensez bien à choisir votre zone géographique de travail tout en haut à gauche de votre interface (GRA5, SBG3, BHS1, etc.)
@@ -72,8 +72,8 @@ Grâce à l’API OpenStack, vous pouvez aussi facilement automatiser cette gest
 
 Afin de vous familariser avec l'API OpenStack, consultez tout d'abord les guides suivants :
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Charger les variables d’environnement OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Charger les variables d’environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 Vous pourrez alors, suivant votre besoin, utiliser les API dédiées à OpenStack :
 
@@ -105,18 +105,18 @@ Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform
 #### Depuis l'espace client OVHcloud
 
 > [!primary]
-> Ceci ne s'applique pas aux projets nouvellement créés qui sont désormais automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur `Network`{.action} dans l’onglet de gauche. Cliquez sur `Réseau Privé vRack`{.action} pour voir le(s) vRack(s).
+> Ceci ne s'applique pas aux projets nouvellement créés qui sont désormais automatiquement livrés avec un vRack. Pour visualiser le vRack une fois le projet créé, rendez-vous dans le section `Network`{.action} dans l’onglet de gauche. Cliquez sur `Réseau Privé vRack`{.action} pour voir le(s) vRack(s).
 >
 
 Si vous avez un projet plus ancien et que vous n'avez pas de vRack, vous devez en commander un. Ce produit est gratuit et la mise à disposition ne prend que quelques minutes.
 
-Allez dans le menu `Bare Metal Cloud`{.action} et cliquez sur le bouton `Commander`{.action}. Sous ce menu, cliquez sur l'option `vRack`{.action}.
+Dans le menu situé à gauche de l'écran, cliquez sur le bouton `Ajouter un service`{.action} (icône de panier d'achat). Utilisez le filtre en haut de la page ou faites défiler vers le bas pour trouver le service `vRack`{.action}.
 
-![Commander le vrack](images/ordering_vrack_2024.png){.thumbnail}
+![Commander le vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
 Vous serez redirigé vers une autre page pour valider la commande, l'opération prendra quelques minutes.
 
-Une fois le service actif, vous le retrouverez dans votre espace client dans la section `Bare Metal Cloud`{.action} > `Network`{.action} > `Réseau Privé vRack`{.action}. Sous l’appellation « pn-xxxxxx ».
+Une fois le service actif, vous le retrouverez dans votre espace client dans la section `Network`{.action} > `Réseau Privé vRack`{.action}. Sous l’appellation « pn-xxxxxx ».
 
 Dans la liste des services éligibles, sélectionnez le projet que vous souhaitez ajouter au vRack et cliquez sur le bouton `Ajouter`{.action}.
 

@@ -90,7 +90,9 @@ Default gateway for the first /64 subnet (bridged one) is the first address from
 
 /// details | Via the OVHcloud Control Panel
 
-Go to `Network`{.action} and click the `vRack private network`{.action} section. Then select the vRack you want to manage:
+- Open `Network`{.action} in the left-hand sidebar.
+- Open `vRack private network`{.action}.
+- Select the vRack concerned.
 
 ![vRack management](images/700.png){.thumbnail}
 

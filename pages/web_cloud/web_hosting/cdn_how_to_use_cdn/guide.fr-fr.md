@@ -1,12 +1,12 @@
 ---
 title: "Accélérer mon site web en utilisant le CDN"
-excerpt: "Découvrez comment améliorer votre site web en accélérant son chargement sur votre hébergement Web grâce au CDN"
-updated: 2025-02-20
+excerpt: "Découvrez comment améliorer votre site web en accélérant son chargement sur votre hébergement web grâce au CDN"
+updated: 2025-05-19
 ---
 
 ## Objectif
 
-Si vous souhaitez améliorer l'expérience de vos utilisateurs en accélérant votre site web, la technique la plus efficace est d'activer un CDN (Content Delivery Network). Ce dernier permet de mettre en cache les fichiers statiques tels que les images, les css et les javascript, dans des serveurs plus proches de vos clients.
+Si vous souhaitez améliorer l'expérience de vos utilisateurs en accélérant le chargement de votre site web, la technique la plus efficace est d'activer un CDN (Content Delivery Network). Ce dernier permet de mettre en cache les fichiers statiques tels que les images, les fichiers CSS et JavaScript, dans des serveurs plus proches de vos clients.
 
 **Découvrez comment gérer l'option CDN de votre hébergement web.**
 
@@ -16,7 +16,7 @@ Si vous souhaitez améliorer l'expérience de vos utilisateurs en accélérant v
 
 Le CDN (Content Delivery Network) est littéralement un réseau dédié à la livraison de contenu. Il utilise plusieurs serveurs déployés autour du monde pour afficher votre site web. Plus ces serveurs sont proches de vos utilisateurs, plus votre site web est rapide pour eux.
 
-Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre site web. Généralement, il est conseillé d'y inclure les fichiers dits statiques : les images, les fichiers javascript et css qui permettent le bon fonctionnement de votre site mais qui ne sont que très rarement modifiés.
+Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre site web. Généralement, il est conseillé d'y inclure les fichiers dits « statiques » : les images, les fichiers JavaScript et CSS, qui permettent le bon fonctionnement de votre site mais qui ne sont que très rarement modifiés.
 
 ## Prérequis
 
@@ -31,19 +31,19 @@ Pour fonctionner, chaque serveur garde en mémoire cache une partie de votre sit
 > 
 > L'option CDN est déjà incluse dans les offres d'hébergement web Performance.
 
-####  Si l'option CDN n'est pas commandée ou activée sur votre hébergement Web
+####  Si l'option CDN n'est pas commandée ou activée sur votre hébergement web
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Commander un CDN`{.action} ou `Activer l'option`{.action} si l'option CDN est déjà incluse dans votre hébergement.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Commander un CDN`{.action}, ou sur `Activer l'option`{.action} si l'option CDN est déjà incluse dans votre hébergement.
 
 > [!primary]
 > 
-> Si vous possédez une option CDN antérieure au 19/11/2020, vous pouvez commander la nouvelle offre Shared CDN en cliquant sur `Mettre à jour le CDN vers la version supérieure`{.action}.
+> Si vous possédez une option CDN antérieure au 19/11/2020, vous pouvez commander la nouvelle offre **Shared CDN** en cliquant sur `Mettre à jour le CDN vers la version supérieure`{.action}.
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
 
-Vous serez redirigé vers la génération du bon de commande. Une fois la commande payée, votre service sera disponible en quelques minutes.
+Vous serez redirigé vers la génération du bon de commande. Une fois la commande payée, votre service est disponible en quelques minutes.
 
-#### Si l'option CDN est déjà activée sur votre hébergement Web
+#### Si l'option CDN est déjà activée sur votre hébergement web
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur la roue crantée à droite de l'entrée multisite puis cliquez sur `Modifier`{.action}.
 
@@ -55,7 +55,7 @@ Cochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur 
 > 
 > Dans le cas d'un nom de domaine externe à OVHcloud ajouté en multisite sur l'hébergement web, vous devez mentionner l'adresse IP du CDN de votre hébergement dans la zone DNS du nom de domaine.
 >
-> Consultez la [liste des adresses IP des clusters et hébergement web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) pour retrouver l'adresse IP spécifique du CDN de votre cluster.
+> Consultez la [liste des adresses IP par cluster d'hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) pour retrouver l'adresse IP spécifique du CDN de votre cluster.
  
 **Pourquoi ne puis-je pas bénéficier de l'IP géolocalisée avec l'option CDN ?** 
 
@@ -66,7 +66,7 @@ Concernant le SEO (référencement sur les moteurs de recherche), la vitesse d'a
 
 #### Vider le cache du Shared CDN
 
-Il est parfois utile de vider le cache du CDN, notamment lorsque vous modifiez vos fichiers statiques. Par exemple lors de la mise en production d'une nouvelle version de votre site. Il vous est possible de vider le cache pour chacune de vos entrées multisite.
+Il est parfois utile de vider le cache du CDN, notamment lorsque vous modifiez vos fichiers statiques. Par exemple, lors de la mise en production d'une nouvelle version de votre site. Il vous est possible de vider le cache pour chacune de vos entrées multisite.
 
 Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Purger le CDN`{.action}.
 
@@ -114,7 +114,7 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 Une fois vos choix réalisés, cliquez sur le bouton `Créer la règle`{.action}.
 
-Les règles apparaissent dans une liste. Vous pouvez modifier une règle en cliquant sur `...`{.action} à droite de celle-ci, puis sur `Modifier la règle`{.action}; ou la supprimer en cliquant sur `Supprimer la règle`{.action}.
+Les règles apparaissent dans une liste. Vous pouvez modifier une règle en cliquant sur `...`{.action} à droite de celle-ci puis sur `Modifier la règle`{.action}, ou la supprimer en cliquant sur `Supprimer la règle`{.action}.
 
 ![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-cache-rules.png){.thumbnail}
 
@@ -133,7 +133,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Cross-Origin Resource Sharing (CORS)** : Indiquez, dans la liste, les noms de domaine extérieurs qui seront autorisés à accéder aux ressources de votre site web dans le but de les partager. 
 
-	Une fois la fonction activée, cliquez sur `Editer la liste des ressources externes`{.action} pour ajouter les noms de domaine autorisés à partager vos ressources.
+	Une fois la fonction activée, cliquez sur `Éditer la liste des ressources externes`{.action} pour ajouter les noms de domaine autorisés à partager vos ressources.
 
 	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-cors.png){.thumbnail}
 
@@ -157,7 +157,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 > [!primary]
 > 
-> Lorsque que vous activez la fonction HSTS sur votre site, elle forcera le protocole HTTPS sur votre navigateur, jusqu'à la fin de la période dite "âge maximum", même après désactivation de la fonction dans votre espace client. Néanmoins, lorsque le cache est vidé sur le navigateur qui a déjà effectué une visite sur votre site, ce dernier appliquera le nouvel état de la fonction HSTS.
+> Lorsque vous activez la fonction HSTS sur votre site, elle forcera le protocole HTTPS sur votre navigateur jusqu'à la fin de la période dite "âge maximum", même après désactivation de la fonction dans votre espace client. Néanmoins, lorsque le cache est vidé sur le navigateur qui a déjà effectué une visite sur votre site, ce dernier appliquera le nouvel état de la fonction HSTS.
 
 - **Mixed content** : Forcez le chargement de l’intégralité du contenu de vos pages web de manière sécurisée, participant ainsi à une expérience utilisateur optimale. Toutes les ressources de votre site, internes comme externes, doivent être disponibles en HTTPS pour éviter une erreur de sécurité du navigateur.
 
@@ -207,11 +207,11 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Prewarm** : Forcez la mise en cache permanente de vos ressources primordiales. Le CDN anticipe et rafraîchit automatiquement le cache, sans attendre de requête de l'utilisateur. Cette fonction s'applique uniquement sur du contenu statique, ayant un TTL supérieur à 0, et la ressource ne doit pas excéder 1GB. Une jauge vous indique le niveau de consommation des ressources en *Prewarm*, en fonction de la liste de vos URLs. Le total des ressources appelées par ces URLs ne doit pas dépasser les 1GB.
 
-	Pour définir la liste des URLs qui doivent être en *Prewarm*, cliquez sur `Editer la liste des URLs`{.action}.
+	Pour définir la liste des URLs qui doivent être en *Prewarm*, cliquez sur `Éditer la liste des URLs`{.action}.
 
-	À l'aide des champs `Protocole`, `Nom de domaine` et `Chemin de la ressource`, tapez un des liens vers une ressource que vous souhaitez ajoutez à la fonction **Prewarm**, puis cliquez sur `Ajouter`{.action}.
+	À l'aide des champs `Protocole`, `Nom de domaine` et `Chemin de la ressource`, renseignez un des liens vers une ressource que vous souhaitez ajouter à la fonction **Prewarm**, puis cliquez sur `Ajouter`{.action}.
 
-	Une liste se forme dans le cadre inférieur, avec l'ensemble des liens que vous avez listés, vous pouvez supprimer celui de votre choix en le sélectionnant, puis en cliquant sur `Retirer`{.action}.
+	Une liste se forme dans le cadre inférieur, avec l'ensemble des liens que vous avez renseignés, vous pouvez supprimer celui de votre choix en le sélectionnant, puis en cliquant sur `Retirer`{.action}.
 
 	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-prewarm.png){.thumbnail}
 
@@ -245,42 +245,9 @@ Les règles apparaissent dans une liste. Vous pouvez modifier une règle en cliq
 
 Une fois vos règles configurées et vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
 
-### Visualiser les statistiques du CDN
+### Visualiser les statistiques et les logs du CDN
 
-Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **6** étapes
-
-> [!tabs]
-> **Etape 1**
->>
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
->>
->> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
->>
-> **Etape 2**
->>
->> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
->>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
->>
-> **Etape 3**
->>
->> Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}. 
->> 
-> **Etape 4**
->>
->> Dans la partie `Statistiques de visites`, cliquez sur le bouton `Voir les statistiques`{.action}.
->>
-> **Etape 5**
->>
->> Vous êtes redirigé vers l'outil **OVHcloud Web Statistics**. Dans cet outil, cliquez sur le formulaire intitulé `Sélection du domaine`{.action} situé en haut de la page, puis choisissez un nom de domaine pour lequel le CDN est actif.
->>
-> **Etape 6**
->>
->> Dans la colonne de droite, cliquez sur l'onglet `Cache`{.action}.
->>
->> Vous visualisez désormais les statistiques du CDN pour votre nom de domaine.
->>
->> Si besoin, consultez notre guide « [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics) » pour plus d'informations.
+Pour visualiser les statistiques et/ou les logs du CDN, consultez notre guide dédié : « [Hébergement Web - Consulter les statistiques et logs CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs) ».
 
 ### Comment mettre en cache mes fichiers dans le CDN ?
 
@@ -298,7 +265,7 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 3. Header set Cache-Control "max-age=604800, public"
 4. </FilesMatch>
 5. 
-6. # Cache des javascript et CSS durant 1 mois
+6. # Cache des JavaScript et CSS durant 1 mois
 7. <FilesMatch "\.(js|css)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
@@ -311,7 +278,7 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 
 ### Désactiver l'option CDN pour un site web
 
-Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées multisite, sans supprimer l'option CDN de votre hébergement Web.
+Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées multisite, sans supprimer l'option CDN de votre hébergement web.
 
 > [!warning]
 >
@@ -334,7 +301,7 @@ Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis s
 
 ### Supprimer l'option CDN sur votre hébergement
 
-Cette action a pour but de supprimer l'option CDN pour l'ensemble de votre hébergement Web.
+Cette action a pour but de supprimer l'option CDN pour l'ensemble de votre hébergement web.
 
 Rendez-vous dans votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de « Option CDN » puis sur `Résilier le CDN`{.action}.
 

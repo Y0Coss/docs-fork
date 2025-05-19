@@ -1,6 +1,6 @@
 ---
 title: Suspender o poner en pausa una instancia
-updated: 2024-11-12
+updated: 2025-04-28
 ---
 
 ## Objetivo
@@ -16,12 +16,14 @@ Como parte de la configuración de una infraestructura de alta disponibilidad, p
 ## Requisitos
 
 - Tener [una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) sobre la facturación por **horas**
-- Tener acceso al [área de cliente de OVHcloud](/links/manager) o al [interfaz de Horizon](/pages/public_cloud/compute/introducing_horizon)
-- Conocimiento de la [API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) y de las [variables OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- Tener acceso al [área de cliente de OVHcloud](/links/manager) o al [interfaz de Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Conocimiento de la [API de OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) y de las [variables OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 ## Procedimiento
 
 > [!alert]
+>
+> Esta guía solo se aplica a las instancias con **facturación por horas**. Si sus instancias tienen una **facturación mensual**, la facturación clásica seguirá aplicándose independientemente del estado del servicio.
 >
 > Estas operaciones no interrumpen la facturación de la instancia, que seguirá facturándose mientras no haya sido **terminada**.
 >
@@ -46,7 +48,7 @@ Esta opción le permitirá liberar los recursos dedicados a su instancia de Publ
 
 #### Desde al área de cliente de OVHcloud.
 
-Conéctese al área de cliente de OVHcloud, acceda a la sección Public Cloud y seleccione el proyecto correspondiente. Clic en `Instances`{.action} en el menú de la izquierda.
+Conéctese al área de cliente de OVHcloud, acceda a la sección Public Cloud y seleccione el proyecto correspondiente. Clic en `Instancias`{.action} en el menú de la izquierda.
 
 Haga clic en el botón `...`{.action} a la derecha de la instancia que desea suspender, y luego haga clic en `Suspender`{.action}.
 
@@ -60,7 +62,7 @@ Una vez finalizado el proceso, su instancia se mostrará como *Suspendida*.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-El snapshot estará entonces disponible en la sección `Instance Backup`{.action} del menú `Storage` a la izquierda del espacio Public Cloud. Aparecerá un snapshot llamado *xxxxx-shelved*:
+El snapshot estará entonces disponible en la sección `Instance Backup`{.action} del menú **Compute** a la izquierda del espacio Public Cloud. Aparecerá un snapshot llamado *xxxxx-shelved*:
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -70,7 +72,7 @@ Para utilizar este método, conéctese [a Horizon](https://horizon.cloud.ovh.net
 
 - Para conectarse con el inicio de sesión único de OVHcloud, utilice el enlace `Horizon`{.action} del menú de la izquierda, en «Management Interfaces», tras abrir su proyecto `Public Cloud`{.action} en su [área de cliente de OVHcloud](/links/manager).
 
-- Para conectarse con un usuario específico de OpenStack: abra la página de conexión a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e introduzca las [claves OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) previamente creadas y haga clic en `Connect`{.action}.
+- Para conectarse con un usuario específico de OpenStack: abra la página de conexión a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e introduzca las [claves OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) previamente creadas y haga clic en `Connect`{.action}.
 
 Si ha desplegado instancias en diferentes regiones, asegúrese de que se encuentre en la región adecuada. Puede comprobarlo en la esquina superior izquierda de Horizon.
 
@@ -92,8 +94,8 @@ Para ver la instantánea (snapshot), haga clic en `Images`{.action} en el menú 
 
 Antes de continuar, se recomienda consultar las siguientes guías:
 
-- [Preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Cargar las variables de entorno necesarias para OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Cargar las variables de entorno necesarias para OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 Una vez que el entorno esté listo, escriba lo siguiente en la línea de comandos:
 
@@ -118,7 +120,7 @@ Esta opción le permite reiniciar su instancia para poder seguir utilizándola. 
 
 #### Desde al área de cliente de OVHcloud.
 
-Conéctese al área de cliente de OVHcloud, acceda a la sección Public Cloud y seleccione el proyecto correspondiente. Clic en `Instances`{.action} en el menú de la izquierda.
+Conéctese al área de cliente de OVHcloud, acceda a la sección Public Cloud y seleccione el proyecto correspondiente. Clic en `Instancias`{.action} en el menú de la izquierda.
 
 Haga clic en el botón `...`{.action} a la derecha de la instancia, y luego haga clic en `Reactivar`{.action}.
 
@@ -154,7 +156,7 @@ Esta opción le permitirá detener su instancia y almacenar el estado de la máq
 
 #### Desde al área de cliente de OVHcloud.
 
-Conéctese al área de cliente de OVHcloud, acceda a la sección Public Cloud y seleccione el proyecto correspondiente. Clic en `Instances`{.action} en el menú de la izquierda.
+Conéctese al área de cliente de OVHcloud, acceda a la sección Public Cloud y seleccione el proyecto correspondiente. Clic en `Instancias`{.action} en el menú de la izquierda.
 
 Haga clic en el botón `...`{.action} a la derecha de la instancia, y luego haga clic en `Detener`{.action}.
 

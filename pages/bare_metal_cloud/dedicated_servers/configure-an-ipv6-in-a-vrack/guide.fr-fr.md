@@ -89,7 +89,9 @@ La passerelle par défaut pour le premier sous-réseau /64 (celui qui est bridg�
 
 /// details | Via l'espace client OVHcloud
 
-Allez dans `Network`{.action} et cliquez sur la section `vRack private network`{.action}. Sélectionnez ensuite le vRack que vous souhaitez gérer :
+- Cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran.
+- Cliquez sur `réseau Privé vRack`{.action}.
+- Sélectionnez le vRack concerné.
 
 ![vrack management](images/700.png){.thumbnail}
 

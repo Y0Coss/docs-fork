@@ -1,6 +1,6 @@
 ---
 title: Wstrzymanie lub uśpienie instancji
-updated: 2024-11-12
+updated: 2025-04-28
 ---
 
 ## Wprowadzenie
@@ -16,12 +16,14 @@ Częścią konfiguracji infrastruktury o wysokiej dostępności może być konie
 ## Wymagania początkowe
 
 - Utworzenie [instancji Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) w abonamencie **godzina**
-- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub [interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
-- Znajomość [API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) i [Zmienne OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub [interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+- Znajomość [API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) i [Zmienne OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 ## W praktyce
 
 > [!alert]
+>
+> Niniejszy przewodnik dotyczy tylko instancji z płatnością **godzinową**. Jeśli w Twoich instancjach stosowana jest opłata **miesięczna**, płatność będzie kontynuowana niezależnie od statusu usługi.
 >
 > Po wykonaniu tych działań instancja nadal jest odpłatna.
 >
@@ -46,7 +48,7 @@ Ta opcja pozwoli Ci zwolnić zasoby dedykowane Twojej instancji Public Cloud, al
 
 #### W Panelu klienta OVHcloud
 
-W Panelu klienta OVHcloud kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instances`{.action} w menu bocznym po lewej stronie.
+W Panelu klienta OVHcloud kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instancje`{.action} w menu bocznym po lewej stronie.
 
 Kliknij przycisk `...`{.action} po prawej stronie instancji, którą chcesz zawiesić, a następnie `Zawieś`{.action}.
 
@@ -60,7 +62,7 @@ Po ukończeniu procesu Twoja instancja będzie wyświetlana jako *Zawieszona*.
 
 ![suspended status](images/instance_suspended.png){.thumbnail}
 
-Migawka będzie wówczas dostępna w sekcji `Instance Backup`{.action} w menu `Storage` po lewej stronie przestrzeni Public Cloud. Migawka o nazwie *xxxxx-shelved* będzie wtedy widoczna:
+Migawka będzie wówczas dostępna w sekcji `Instance Backup`{.action} w menu **Compute** po lewej stronie przestrzeni Public Cloud. Migawka o nazwie *xxxxx-shelved* będzie wtedy widoczna:
 
 ![snapshot tab](images/shelved_backup.png){.thumbnail}
 
@@ -70,7 +72,7 @@ Aby skorzystać z tej metody, należy [zalogować się do interfejsu Horizon](ht
 
 - Aby zalogować się przy użyciu logowania jednokrotnego OVHcloud: użyj linku `Horizon`{.action} w menu po lewej stronie w sekcji "Interfejsy zarządzania" po otwarciu projektu `Public Cloud`{.action} w [Panelu klienta OVHcloud](/links/manager).
 
-- Aby zalogować się za pomocą określonego użytkownika OpenStack: otwórz stronę logowania w witrynie [Horizon](https://horizon.cloud.ovh.net/auth/login/) i wprowadź wcześniej utworzone dane [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user), a następnie kliknij przycisk `Connect`{.action}.
+- Aby zalogować się za pomocą określonego użytkownika OpenStack: otwórz stronę logowania w witrynie [Horizon](https://horizon.cloud.ovh.net/auth/login/) i wprowadź wcześniej utworzone dane [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user), a następnie kliknij przycisk `Connect`{.action}.
 
 Jeśli wdrożyłeś instancje w różnych regionach, upewnij się, że jesteś we właściwym regionie. Weryfikacji dokonujesz w lewym górnym rogu w interfejsie Horizon.
 
@@ -92,8 +94,8 @@ Aby wyświetlić migawkę, w menu `Compute`{.action} kliknij pozycję `Images`{.
 
 Przed kontynuowaniem zalecamy zapoznanie się z następującymi przewodnikami:
 
-- [Przygotowanie środowiska dla API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Ustawianie zmiennych środowiskowych OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Przygotowanie środowiska dla API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Ustawianie zmiennych środowiskowych OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 Kiedy Twoje środowisko jest gotowe, wpisz w wierszu poleceń:
 
@@ -118,7 +120,7 @@ Ta opcja pozwoli Ci na ponowne utworzenie instancji, abyś mógł z niej nadal k
 
 #### W Panelu klienta OVHcloud
 
-W Panelu klienta OVHcloud kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instances`{.action} w menu bocznym po lewej stronie.
+W Panelu klienta OVHcloud kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instancje`{.action} w menu bocznym po lewej stronie.
 
 Kliknij przycisk `...`{.action} po prawej stronie instancji, a następnie wybierz opcję `Przywróć`{.action}.
 
@@ -154,7 +156,7 @@ Ta opcja pozwoli na zamknięcie instancji i zapisanie stanu VM na dysku, a pami�
 
 #### W Panelu klienta OVHcloud
 
-W Panelu klienta OVHcloud kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instances`{.action} w menu bocznym po lewej stronie.
+W Panelu klienta OVHcloud kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instancje`{.action} w menu bocznym po lewej stronie.
 
 Kliknij przycisk `...`{.action} po prawej stronie instancji, którą chcesz zatrzymać, a następnie `Zatrzymaj`{.action}.
 

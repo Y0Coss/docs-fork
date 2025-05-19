@@ -78,7 +78,7 @@ Mit der Public Cloud können Sie die Ressourcen Ihrer Instanz mit nur wenigen Kl
 
 > [!warning]
 >
-> Bei klassischen Modellen ist nur die Umstellung auf ein größeres Modell möglich.
+> Bei klassischen Modellen ist nur die Umstellung auf ein größeres Modell möglich.  
 > Beachten Sie weiterhin, dass der Betrieb der Instanz während der Operation unterbrochen wird.
 > 
 
@@ -101,8 +101,8 @@ Wählen Sie `Rebuild Instance`{.action} in der Drop-down-Liste der Instanz aus.
 
 ![public-cloud](images/rebuildinstance.png){.thumbnail}
 
-Wählen Sie das Image für die Rekonstruktion aus.<br>
-Wählen Sie den Partitionstyp ("Automatisch" oder "Manuell") aus. Dies ist optional.<br>
+Wählen Sie das Image für die Rekonstruktion aus.  
+Wählen Sie den Partitionstyp ("Automatisch" oder "Manuell") aus. Dies ist optional.  
 Klicken Sie abschließend auf `Rebuild Instance`{.action}. Diese Operation kann einige Minuten dauern.
 
 ### Aussetzen oder Pausieren einer Instanz (Shelve or pause an instance)
@@ -115,8 +115,8 @@ Bei Verlust des Zugangs zu Ihrer Instanz aufgrund einer fehlerhaften Konfigurati
 
 > [!primary]
 >
-> Sie können direkt über die VNC-Konsole auf Ihre Instanz zugreifen. Sie müssen jedoch zuerst ein Passwort für den Root-Benutzer konfigurieren.
-> Weitere Informationen finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
+> Sie können direkt über die VNC-Konsole auf Ihre Instanz zugreifen. Sie müssen jedoch zuerst ein Passwort für den Root-Benutzer konfigurieren.  
+> Weitere Informationen finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).  
 > Die VNC-Konsole kann auch als erster Diagnose-Ansatz bei einer Fehlfunktion verwendet werden, indem die Bootphase Ihrer Instanz analysiert wird.
 > 
 
@@ -128,7 +128,7 @@ Die Konsole der Instanz wird angezeigt.
 
 > [!success]
 >
-> Wenn die Konsole nicht mehr auf die Tastatureingaben antwortet, klicken Sie auf die Statusleiste.
+> Wenn die Konsole nicht mehr auf die Tastatureingaben antwortet, klicken Sie auf die Statusleiste.  
 > Um den Vollbildschirmmodus zu verlassen, klicken Sie auf den Button "Zurück zum Browser".
 > 
 
@@ -155,7 +155,7 @@ Wenn Sie eine Ihrer Instanzen nicht mehr benötigen, können Sie diese jederzeit
 
 > [!alert]
 >
-> Die Daten auf der Instanz werden gelöscht.
+> Die Daten auf der Instanz werden gelöscht.  
 > Sie können auch ein Backup dieser Instanz erstellen, wenn Sie die Daten speichern und eine identische Instanz später neu starten möchten.
 > 
 > Wenn Sie eine Instanz löschen, werden nicht automatisch alle zugehörigen Optionen gelöscht (z.B. Storage, Snapshot, Backup). Stellen Sie sicher, dass alle Optionen, die mit der Instanz verbunden sind, ebenfalls gelöscht werden, um deren Abrechnung zu stoppen.
@@ -173,4 +173,4 @@ Klicken Sie anschließend auf `Confirm`{.action}, um den Vorgang zu starten.
 
 ##  Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.
