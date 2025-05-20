@@ -69,7 +69,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 >> In the **General information** box on the page that appears, retrieve the filer number with the comment `Filer`{.action}.
 >>
->> ![Numéro du filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
+>> ![Filer number](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
 
 ## Go further
 
