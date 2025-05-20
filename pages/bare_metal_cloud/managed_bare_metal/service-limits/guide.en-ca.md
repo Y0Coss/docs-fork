@@ -1,7 +1,7 @@
 ---
 title: Technical capabilities
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Managed Bare Metal'
-updated: 2020-10-27
+updated: 2025-05-20
 ---
 
 ## Objective

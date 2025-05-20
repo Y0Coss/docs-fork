@@ -1,7 +1,7 @@
 ---
 title: Capacidade técnica
 excerpt: 'Encontre as capacidades e limitações técnicas das soluções Managed Bare Metal fornecidas pela OVHcloud'
-updated: 2020-10-27
+updated: 2025-05-20
 ---
 
 ## Objective

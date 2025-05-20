@@ -1,7 +1,7 @@
 ---
 title: Możliwości techniczne
 excerpt: 'Poznaj możliwości i ograniczenia techniczne rozwiązań Managed Bare Metal dostarczanych przez OVHcloud'
-updated: 2020-10-27
+updated: 2025-05-20
 ---
 
 ## Objective
