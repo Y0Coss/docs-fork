@@ -42,7 +42,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> Compruebe que el procedimiento afecta a su dominio introduciendo un aviso (amarillo o rojo) que indique la operación que debe realizar.
 >>
->> Se abrirá una página en la que podrá ver el texto **Suscripción**, en el que se indica **Contactos**. Haga clic en el botón `...`{.action} a la derecha y luego en `Editar los contactos`{.action}.
+>> A continuación, se indica **Contactos** en el recuadro **Suscripción**. Haga clic en el botón `...`{.action} a la derecha y luego en `Editar los contactos`{.action}.
 >>
 >> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
