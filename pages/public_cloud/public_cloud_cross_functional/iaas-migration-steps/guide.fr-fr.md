@@ -1,5 +1,5 @@
 ---
-title: "Migration IaaS vers le Public Cloud : étapes et bonnes pratiques"
+title: "Migration IaaS vers le Public Cloud - étapes et bonnes pratiques"
 excerpt: "Apprenez à migrer votre infrastructure vers le Public Cloud OVHcloud en utilisant les services IaaS, l’automatisation Terraform, et une architecture réseau résiliente."
 updated: 2025-05-23
 ---
