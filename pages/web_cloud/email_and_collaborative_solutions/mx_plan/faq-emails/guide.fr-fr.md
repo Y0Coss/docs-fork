@@ -64,6 +64,7 @@ OVHcloud propose actuellement 4 offres e-mail. Pour comprendre leurs spécificit
 >>
 
 > [!success]
+>
 > Sauf précision, les questions abordées ci-dessous concernent l'ensemble des offres e-mail OVHcloud.
 
 /// details | Quelles sont les différences entre les technologies e-mail utilisées par les offres **MX Plan** ?
@@ -131,6 +132,7 @@ Ci-dessous vous retrouverez les principales raisons d'une absence de réception 
 1. **Incident ou maintenance** : Consulter notre page [Web Cloud status](https://web-cloud.status-ovhcloud.com/) pour vérifier si une opération n'est pas en cours sur votre service e-mail.
 
 > [!primary]
+>
 > **Trucs et Astuces** : Si la connexion à votre webmail est impossible, votre mot de passe est peut-être erroné. Vérifiez-le et, si nécessaire, nous vous invitons à le modifier depuis votre [espace client OVHcloud](/links/manager) et à renouveler votre connexion.
 
 ///
@@ -150,13 +152,13 @@ Ci-dessous vous retrouverez les principales raisons d'une absence de réception 
 
 Il permet aux serveurs qui reçoivent des e-mails de s’assurer que ces derniers ont bien été envoyés depuis un serveur de confiance. Ce protocole est devenu indispensable pour légitimer les échanges d'e-mails. En effet, sans enregistrement SPF sur le nom de domaine de votre service e-mail, vos e-mails risquent d'être considérés comme indésirables par vos destinataires.
 
-Pour savoir comment configurer un enregistrement SPF sur votre service e-mail, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement SPF](pages/web_cloud/domains/dns_zone_spf).
+Pour savoir comment configurer un enregistrement SPF sur votre service e-mail, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf).
 
 **DKIM (DomainKeys Identified Mail)**
 
 Il permet de signer les e-mails pour éviter l'usurpation d'identité. Cette signature fonctionne sur le principe du hachage combiné à une cryptographie asymétrique. Ce protocole est complémentaire au SPF. Le SPF intervient sur la légitimité du nom de domaine alors que le DKIM s'assure que chaque e-mail est signé par le bon service e-mail lors de l'envoi. Il devient également une référence en termes de sécurité e-mail. Certains services e-mail peuvent également considérer un e-mail comme indésirable s’il n'est pas protégé par une signature DKIM.
 
-Pour savoir comment configurer un enregistrement DKIM sur votre service e-mail, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement DKIM](pages/web_cloud/domains/dns_zone_dkim).
+Pour savoir comment configurer un enregistrement DKIM sur votre service e-mail, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim).
 
 ///
 
@@ -272,9 +274,9 @@ Pour des raisons de sécurité et de confidentialité, il n'est pas possible de 
 /// details | Comment limiter la réception de spams ?
 
 Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelées « Filtres » sur l'offre MX Plan). Ils auront pour but de supprimer ou de déplacer des e-mails dans le dossier « courriers indésirables » dès leur réception.
-Pour ce faire, connectez-vous à votre [espace client OVHcloud](/links/manager), puis dans la rubrique `E-mail`, sélectionnez le domaine concerné , l'onglet `E-mail`{.action} puis dans la colonne `Filtre`{.action}, cliquez sur le bouton d'action.
+Pour ce faire, connectez-vous à votre [espace client OVHcloud](/links/manager), puis dans la rubrique `MX Plan`, sélectionnez le domaine concerné , l'onglet `E-mail`{.action} puis dans la colonne `Filtre`, cliquez sur le bouton d'action.
 
-Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](/links/web/email). Vous pouvez consulter le guide suivant pour plus de détails : « [Règles de boîte de réception depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) ».
+Si la colonne `Filtre` n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](/links/web/email). Vous pouvez consulter le guide suivant pour plus de détails : « [Règles de boîte de réception depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan) ».
 
 **Trucs et Astuces** : Si vous définissez un filtre sur la réception de SPAMS, il est possible que des e-mails légitimes soient considérés comme étant des SPAMS. On appelle cela des « faux positifs ».Si cela vous arrive, nous vous invitons à ouvrir une demande d'assistance dans votre [espace client OVHcloud](/links/manager) afin de nous en faire part. Nous pourrons ainsi faire le nécessaire afin que ceux-ci ne soient plus considérés comme SPAMS par la suite.
 
