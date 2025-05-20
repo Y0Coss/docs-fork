@@ -38,13 +38,13 @@ Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachr
 1. Gehen Sie in den Bereich `Web Cloud`{.action}.
 1. Klicken Sie auf `MX Plan`{.action}.
 1. Wählen Sie die betreffende Domain aus.
-1. **Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort**.
+1. **Fahren Sie mit der von Ihrem MX Plan Dienst verwendeten E-Mail Technologie fort.**
 
 > [!primary]
 >
 > **E-Mail-Technologie Ihres MX Plan Angebots identifizieren.**
 >
-> Abhängig vom Aktivierungsdatum Ihres MX Plan Angebots oder einer kürzlich durchgeführten Migration kann die zugehörige E-Mail-Technologie variieren. Diese Version ist durch das Webmail-Interface gekennzeichnet. Um ihn zu identifizieren:
+> Abhängig vom Aktivierungsdatum Ihres MX Plan Angebots oder einer kürzlich durchgeführten Migration kann die zugehörige E-Mail-Technologie variieren. Diese Version ist durch das Webmail-Interface gekennzeichnet.
 >
 > - Gehen Sie in den Tab `Allgemeine Informationen`{.action} und wählen Sie die Technologie aus, die unter **Webmail** in der Randleiste `Abonnement`{.action} oder `Webmail`{.action} verwendet wird.
 >
@@ -66,7 +66,7 @@ Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachr
 Um zu erfahren, wie Sie eine E-Mail-Adresse erstellen, klicken Sie auf den Tab für die von Ihrem MX Plan Dienst verwendete E-Mail-Technologie:
 
 > [!tabs]
-> **RoundCube**
+> **Roundcube**
 >>
 >> Gehen Sie zum Erstellen einer E-Mail-Adresse auf den Tab `E-Mails`{.action}. Das angezeigte Fenster listet die bereits erstellten Konten auf. Um einen neuen E-Mail-Account hinzuzufügen, klicken Sie auf `Einen Account hinzufügen`{.action}.
 >>
@@ -74,7 +74,7 @@ Um zu erfahren, wie Sie eine E-Mail-Adresse erstellen, klicken Sie auf den Tab f
 >>
 >> Geben Sie im angezeigten Fenster die angeforderten Informationen ein:
 >>
->> - **Kontoname**: Geben Sie Ihre neue E-Mail-Adresse ein (z. B. Vorname.Name). Der Domainname der E-Mail-Adresse ist bereits in der Liste vorausgewählt.
+>> - **Kontoname**: Geben Sie Ihre neue E-Mail-Adresse ein (z.B. Vorname.Name). Der Domainname der E-Mail-Adresse ist bereits in der Liste vorausgewählt.
 >> - **Account-Beschreibung**: Informationen zur E-Mail-Adresse, die nur in der Tabelle im Tab `E-Mails`{.action} Ihres E-Mail-Dienstes angezeigt werden.
 >> - **Account-Größe**: Legen Sie die Größe fest, die Sie dem E-Mail-Account zuweisen möchten.
 >> - **Passwort**: [Passwort festlegen](/pages/account_and_service_management/account_information/manage-ovh-password) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie zum Beispiel Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
@@ -91,7 +91,7 @@ Um zu erfahren, wie Sie eine E-Mail-Adresse erstellen, klicken Sie auf den Tab f
 >>
 >> Geben Sie im angezeigten Fenster die angeforderten Informationen ein:
 >>
->> - **E-Mail-Account**: Ein temporärer Name ist bereits im Textfeld eingegeben: Löschen Sie ihn und geben Sie Ihre neue E-Mail-Adresse an (z.B. Ihren Vornamen.Name). Der Domainname der E-Mail-Adresse ist bereits in der Liste vorausgewählt.
+>> - **E-Mail-Account**: Ein temporärer Name ist bereits im Textfeld eingegeben: Löschen Sie ihn und geben Sie Ihre neue E-Mail-Adresse an (z.B. Vorname.Name). Der Domainname der E-Mail-Adresse ist bereits in der Liste vorausgewählt.
 >> - **Vorname**: Geben Sie einen Vornamen ein.
 >> - **Name**: Geben Sie einen Namen ein.
 >> - **Anzeigename**: Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse gesendet werden.
@@ -114,16 +114,16 @@ Gehen Sie auf die Seite „[Webmail Login](/links/web/email)“ und geben Sie di
 Wählen Sie den Tab für die E-Mail-Technologie Ihres MX Plan Angebots aus:
 
 > [!tabs]
-> **RoundCube**
+> **Roundcube**
 >>
->> Sie sollten ein Interface erhalten, das dem folgenden Bild ähnelt, mit dem Vermerk „Rouncube“ oben links.
+>> Sie sollten ein Interface erhalten, das dem folgenden Bild ähnelt, mit dem Vermerk "Roundcube" oben links.  
 >> Weitere Informationen zum Roundcube Interface und dessen Verwendung finden Sie in unserer Anleitung „[Roundcube Webmail-Adresse verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)“.
 >>
 >> ![email](images/mxplan-webmail-roundcube01.png){.thumbnail .w-500}
 >>
 > **Zimbra**
 >>
->> Wie in der Abbildung unten wird ein Fenster mit dem Zusatz „Zimbra“ oben links angezeigt.
+>> Wie in der Abbildung unten wird ein Fenster mit dem Zusatz „Zimbra“ oben links angezeigt.  
 >> Weitere Informationen zur Verwendung Ihrer E-Mail-Adresse mit Zimbra finden Sie in unserer Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
 >>
 >> ![email](images/mxplan-webmail-zimbra01.png){.thumbnail .w-500}
@@ -139,30 +139,30 @@ Wählen Sie den Tab für die E-Mail-Technologie Ihres MX Plan Angebots aus:
 
 ### Einen E-Mail-Client verwenden <a name="consult-emails-client"></a>
 
-Sie können Ihren E-Mail-Account auf einem E-Mail-Client wie Outlook, Thunderbird, Mac Mail usw. einrichten.
+Sie können Ihren E-Mail-Account auf einem E-Mail-Client wie Outlook, Thunderbird, Mac Mail, etc. einrichten.
 
 Je nach Gerätetyp finden Sie hier die Links zu den Konfigurationsanleitungen:
 
 > [!tabs]
 > **Windows-Computer**
 >>
->> - [Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).<br>
->> - [Thunderbird für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows).<br>
->> - [Mail for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10).
+>> - [Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+>> - [Thunderbird für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows)
+>> - [Mail for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 >>
 > **Apple Mac Computer**
 >>
->> - [Outlook für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac).<br>
->> - [Mail für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos).<br>
->> - [Thunderbird für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac).
+>> - [Outlook für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
+>> - [Mail für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
+>> - [Thunderbird für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac)
 >>
 > **iPhone oder iPad**
 >>
->> - [Mail für iPhone und iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios).
+>> - [Mail für iPhone und iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 >>
 > **Android Smartphone oder Tablet**
 >>
->> - [Google Mail für Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
+>> - [Google Mail für Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)
 >>
 
 Wenn Sie nur die notwendigen Informationen zur Konfiguration Ihrer E-Mail-Adresse benötigen, verwenden Sie die folgenden Einstellungen.
@@ -173,26 +173,26 @@ Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps d
 
 > [!warning]
 >
-> Es ist notwendig, den Ihrer Lokalisierung entsprechenden Wert zu notieren (**EUROPE** oder **AMERICA/ASIEN-PAZIFIK**).
+> Geben Sie nur die passenden Werte für Ihren Standort ein (**EUROPA** oder **AMERIKA/ASIEN-PAZIFIK**).
 
-Wählen Sie die Registerkarte für Ihren Konfigurationstyp aus:
+Wählen Sie den Tab für Ihren Konfigurationstyp aus:
 
 > [!tabs]
 > **IMAP-Konfiguration**
 >>
->> - **Benutzername**: Geben Sie die E-Mail-Adresse ein **vollständig**.
->> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
->> - **EUROPE Server (eingehend)**: imap.mail.ovh.net **oder** ssl0.ovh.net.
->> - **SERVER AMERIKA/ASIEN-PAZIFIK (eingehend)**: imap.mail.ovh.ca.
+>> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+>> - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
+>> - **Server eingehend EUROPA**: imap.mail.ovh.net **oder** ssl0.ovh.net.
+>> - **Server eingehend AMERIKA/ASIEN-PAZIFIK**: imap.mail.ovh.ca.
 >> - **Port**: 993.
 >> - **Sicherheitstyp**: SSL/TLS.
 >>
 > **POP-Konfiguration**
 >>
->> - **Benutzername**: Geben Sie die E-Mail-Adresse ein **vollständig**.
->> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
->> - **EUROPE Server (eingehend)**: pop.mail.ovh.net **oder** ssl0.ovh.net.
->> - **SERVER AMERIKA/ASIEN-PAZIFIK (eingehend)**: pop.mail.ovh.ca.
+>> - **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+>> - **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
+>> - **Server eingehend EUROPA**: pop.mail.ovh.net **oder** ssl0.ovh.net.
+>> - **Server eingehend AMERIKA/ASIEN-PAZIFIK**: pop.mail.ovh.ca.
 >> - **Port**: 995.
 >> - **Sicherheitstyp**: SSL/TLS.
 
@@ -202,10 +202,10 @@ Für den Versand von E-Mails verwenden Sie die folgenden **SMTP** Einstellungen:
 
 **SMTP-Konfiguration**
 
-- **Benutzername**: Geben Sie die E-Mail-Adresse ein **vollständig**.
-- **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
-- **EUROPE Server (ausgehend)**: pop.mail.ovh.net **oder** ssl0.ovh.net.
-- **AMERIKA/ASIEN-PAZIFIK Server (ausgehend)**: pop.mail.ovh.ca.
+- **Benutzername**: Geben Sie die **vollständige** E-Mail-Adresse ein.
+- **Passwort**: Geben Sie das Passwort des E-Mail-Accounts ein.
+- **Server ausgehend EUROPA**: pop.mail.ovh.net **oder** ssl0.ovh.net.
+- **Server ausgehend AMERIKA/ASIEN-PAZIFIK**: pop.mail.ovh.ca.
 - **Port**: 465.
 - **Sicherheitstyp**: SSL/TLS.
 
@@ -218,7 +218,7 @@ Klicken Sie hierzu auf den Tab für Ihre E-Mail-Technologie:
 > [!tabs]
 > **RoundCube**
 >>
->> Um eine Weiterleitung oder einen Alias hinzuzufügen, klicken Sie auf den Tab `E-Mails`{.action} Ihres MX Plan Dienstes und dann rechts auf `Weiterleitungsverwaltung`{.action}.
+>> Um eine Weiterleitung oder einen Alias hinzuzufügen, klicken Sie auf den Tab `E-Mails`{.action} Ihres MX Plan Dienstes und dann rechts auf `Weiterleitungsverwaltung`{.action}.  
 >> Die Tabelle der bereits aktiven Weiterleitungen wird angezeigt. Rechts klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}, um mit der Erstellung Ihrer Weiterleitung oder Ihres Alias zu beginnen.
 >>
 >> - `Von Adresse`: Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.<br>
@@ -231,7 +231,7 @@ Klicken Sie hierzu auf den Tab für Ihre E-Mail-Technologie:
 >>
 >> Wenn Sie sich auf einer **OWA** oder **Zimbra** Technologie befinden, gibt es zwei Möglichkeiten:
 >>
->> 1. **Weiterleitung über Webmail erstellen**: Über Posteingangsregeln oder Filter. Diese Regeln, die beim Empfang einer E-Mail angewendet werden, erlauben es, eine E-Mail weiterzuleiten oder weiterzuleiten. Folgen Sie hierzu unserer Anleitung „[Posteingangsregeln über das OWA-Interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)“ oder dem Kapitel „Filter“ unserer Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
+>> 1. **Weiterleitung über Webmail erstellen**: Über Posteingangsregeln oder Filter. Diese Regeln, die beim Empfang einer E-Mail angewendet werden, erlauben es, eine E-Mail weiterzuleiten oder weiterzuleiten. Folgen Sie hierzu unserer Anleitung „[Posteingangsregeln über das OWA-Interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)“ oder unter „Filter“ unserer Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
 >>
 >>> 2. **Weiterleitung und Alias über Ihr OVHcloud Kundencenter erstellen**: Um eine Weiterleitung oder einen Alias hinzuzufügen, klicken Sie auf den Tab `Weiterleitungen`{.action}. Die Tabelle der bereits aktiven Weiterleitungen wird angezeigt. Rechts klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}.
 >>
@@ -239,29 +239,29 @@ Klicken Sie hierzu auf den Tab für Ihre E-Mail-Technologie:
 >> - `Zur Adresse`: Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dies kann eine Ihrer OVHcloud E-Mail-Adressen oder eine externe E-Mail-Adresse sein.<br>
 >> - `Wählen Sie einen Kopiermodus`: Legen Sie fest, ob Sie eine Kopie der empfangenen E-Mail an der Ziel-E-Mail-Adresse (`Von Adresse`) aufbewahren oder direkt an die Weiterleitungsadresse (`An Adresse`) ohne Kopie weiterleiten möchten.
 >>
->> Weitere Informationen zur Verwendung von Weiterleitungen und Alias für Ihren MX Plan Dienst finden Sie in unserer vollständigen Anleitung: „[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)“.
+>> Weitere Informationen zur Verwendung von Weiterleitungen und Alias für Ihren MX Plan Dienst finden Sie in unserer Anleitung: „[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections)“.
 
 ### Automatische Antwort <a name="autoreply"></a>
 
-Wenn Sie abwesend sind, ist es wichtig, dass Sie eine automatische Antwort einrichten können, um anzuzeigen, dass Sie Ihre E-Mails nicht einsehen oder verarbeiten können.
+Sie können für Abwesenheiten eine automatische Antwort einrichten, um anzuzeigen, dass Sie Ihre E-Mails nicht einsehen oder verarbeiten können.
 
 Wählen Sie den Tab für die E-Mail-Technologie Ihres MX Plan Angebots aus:
 
 > [!tabs]
 > **RoundCube**
 >>
->> Um eine automatische Antwort auf eine Ihrer E-Mail-Adressen hinzuzufügen, klicken Sie in Ihrem MX Plan Dienst auf `E-Mails`{.action} und dann rechts auf `Verwaltung der automatischen Antworten`{.action}.
+>> Um eine automatische Antwort auf eine Ihrer E-Mail-Adressen hinzuzufügen, klicken Sie in Ihrem MX Plan Dienst auf `E-Mails`{.action} und dann rechts auf `Verwaltung der automatischen Antworten`{.action}.  
 >> Die Tabelle der bereits aktiven Auto-Antworten wird angezeigt. Rechts klicken Sie auf den Button `Eine Auto-Antwort hinzufügen`{.action}, um Ihre Weiterleitung oder Ihren Alias zu erstellen.
 >>
 >> Weitere Informationen zur Einrichtung einer automatischen Antwort von Ihrem MX Plan Dienst aus in Ihrem OVHcloud Kundencenter finden Sie in unserer Anleitung „[MX Plan - Eine automatische Antwort auf eine E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)“.
 >>
 > **Zimbra**
 >>
->> Die Einrichtung einer automatischen Antwort erfolgt direkt über die Verbindung mit der E-Mail-Adresse über das Webmail. Weitere Informationen finden Sie in unserer Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“. Wählen Sie im Inhaltsverzeichnis „Automatische Antworten/Anrufbeantworter“ aus.
+>> Die Einrichtung einer automatischen Antwort erfolgt direkt über die Verbindung mit der E-Mail-Adresse über das Webmail. Weitere Informationen finden Sie in unserer Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“ unter „Automatische Antworten“.
 >>
 > **OWA**
 >>
->> Die Einrichtung einer automatischen Antwort erfolgt direkt über die Verbindung mit der E-Mail-Adresse über das Webmail. Weitere Informationen finden Sie in unserer Anleitung „[E-Mail-Adresse über Outlook Web App (OWA) verwenden](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)“ im Kapitel „Automatische Antwort hinzufügen“.
+>> Die Einrichtung einer automatischen Antwort erfolgt direkt über die Verbindung mit der E-Mail-Adresse über das Webmail. Weitere Informationen finden Sie in unserer Anleitung „[E-Mail-Adresse über Outlook Web App (OWA) verwenden](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)“ unter „Automatische Antwort hinzufügen“.
 >>
 
 ## Weiterführende Informationen <a name="go-further"></a>
