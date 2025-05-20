@@ -194,4 +194,4 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

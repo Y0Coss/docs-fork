@@ -10,7 +10,7 @@ updated: 2024-01-11
 
 ## Objetivo
 
-Es posible que necesite mover volúmenes adicionales de una región de OpenStack a otra, bien porque haya una nueva región disponible, bien porque quiera migrar de [OVHcloud Labs](https://labs.ovh.com/){.external} al [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external}.
+Es posible que necesite mover volúmenes adicionales de una región de OpenStack a otra, bien porque haya una nueva región disponible, bien porque quiera migrar de [OVHcloud Labs](https://labs.ovh.com/){.external} al [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/).
 
 **Descubra cómo transferir una copia de seguridad de un volumen de una región de OpenStack a otra.**
 
@@ -195,4 +195,4 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

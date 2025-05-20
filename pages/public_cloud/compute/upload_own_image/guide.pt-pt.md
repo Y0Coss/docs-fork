@@ -38,8 +38,8 @@ Outros sistemas operativos também oferecem imagens ISO que são igualmente apli
 
 Certifique-se de que os seguintes elementos estão instalados nas suas imagens para que sejam integráveis no ambiente cloud:
 
-- *QEMU Guest Agent*\: esta operação permite beneficiar de uma melhor experiência de backup, pois permite ao host comunicar com a instância para os backups em direto. Nem todos os sistemas operativos são compatíveis com este pacote.
-- *cloud-init*\: isto permitir-lhe-á iniciar a sua instância no primeiro arranque, com a adição de chaves SSH e a configuração da rede. A maioria dos sistemas operativos são compatíveis com esta funcionalidade.
+- *QEMU Guest Agent*: esta operação permite beneficiar de uma melhor experiência de backup, pois permite ao host comunicar com a instância para os backups em direto. Nem todos os sistemas operativos são compatíveis com este pacote.
+- *cloud-init*: isto permitir-lhe-á iniciar a sua instância no primeiro arranque, com a adição de chaves SSH e a configuração da rede. A maioria dos sistemas operativos são compatíveis com esta funcionalidade.
 
 Recomendamos a utilização de imagens em formato RAW ou QCOW2. Otimize a dimensão da imagem para que seja a mais pequena possível, de forma a minimizar o custo de faturação mensal e reduzir o tempo de geração das suas instâncias.
 
@@ -53,7 +53,7 @@ Quando a sua imagem estiver pronta, siga os passos abaixo para lançar a importa
 
 1\. Faça o download do seu ficheiro openrc.sh para o seu utilizador OpenStack a partir da Área de Cliente OVHcloud (selecione a região para a qual deseja efetuar o download).
 
-![openrc](images/openrc_file.png){.thumbnail}
+![openrc](images/open_rc_download.png){.thumbnail}
 
 2\. Carregue o ficheiro openrc:
 
@@ -97,6 +97,6 @@ Quando a sua imagem estiver pronta para ser importada, siga os passos abaixo par
 
 ![horizon_4](images/horizon_4.png){.thumbnail}
 
-## Quer saber mais?
-
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+## Quer saber mais? <a name="go-further"></a>
+ 
+Fale com nossa [comunidade de utilizadores](/links/community).

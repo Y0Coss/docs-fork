@@ -4,10 +4,6 @@ excerpt: Erfahren Sie hier, wie Sie Ihr eigenes Image in der Public Cloud verwen
 updated: 2020-10-27
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 OVHcloud bietet Public Cloud Nutzern gebrauchsfertige Images, aber auch die Möglichkeit, ihre eigenen Images zu verwenden.
@@ -53,7 +49,7 @@ Wenn Ihr Image fertig ist, folgen Sie diesen Schritten, um den Import mit der Op
 
 1\. Laden Sie Ihre Datei "openrc.sh" für Ihren OpenStack-Benutzer aus Ihrem OVHcloud Kundencenter herunter (wählen Sie die Region aus, in der Sie den Upload durchführen möchten).
 
-![openrc](images/openrc_file.png){.thumbnail}
+![openrc](images/open_rc_download.png){.thumbnail}
 
 2\. Laden Sie die openrc Datei:
 
@@ -98,5 +94,5 @@ Sobald Ihr Image importbereit ist, folgen Sie den diesen Schritten, um es über 
 ![horizon_4](images/horizon_4.png){.thumbnail}
 
 ## Weiterführende Informationen
-
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+ 
+Treten Sie unserer [User Community](/links/community) bei.

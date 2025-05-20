@@ -34,7 +34,7 @@ D'autres systèmes d'exploitation proposent aussi des images ISO qui sont égale
 
 Assurez-vous que les éléments suivants sont installés sur vos images pour qu'elles soient intégrables à l’environnement cloud :
 
-- *QEMU Guest Agent*: cette opération permet de bénéficier d'une meilleure expérience de sauvegarde, car elle permet à l'hôte de communiquer avec l'instance pour les sauvegardes en direct. Tous les systèmes d'exploitation ne sont pas compatibles avec ce package.
+- *QEMU Guest Agent* : cette opération permet de bénéficier d'une meilleure expérience de sauvegarde, car elle permet à l'hôte de communiquer avec l'instance pour les sauvegardes en direct. Tous les systèmes d'exploitation ne sont pas compatibles avec ce package.
 - *cloud-init* : cela vous permettra de démarrer votre instance au premier démarrage, avec l'ajout de clés SSH et la configuration du réseau. La plupart des systèmes d'exploitation sont compatibles avec cette fonctionnalité.
 
 Nous recommandons d'utiliser des images au format RAW ou QCOW2. Optimisez la taille de l'image pour qu'elle soit la plus petite possible afin de minimiser le coût de facturation mensuel et réduire le délai de génération de vos instances.
@@ -45,11 +45,11 @@ Avec OpenStack il y a deux méthodes pour importer votre propre image. Vous pouv
 
 #### En ligne de commande OpenStack
 
-Une fois que votre image est prête, suivez les étapes ci-dessous pour lancer l'importation à l'aide de la CLI OpenStack ::
+Une fois que votre image est prête, suivez les étapes ci-dessous pour lancer l'importation à l'aide de la CLI OpenStack :
 
 1\. Téléchargez votre fichier openrc.sh pour votre utilisateur OpenStack à partir de votre espace client OVHcloud (sélectionnez la région vers laquelle vous souhaitez effectuer le téléchargement).
 
-![openrc](images/openrc_file.png){.thumbnail}
+![openrc](images/open_rc_download.png){.thumbnail}
 
 2\. Chargez le fichier openrc :
 

@@ -53,7 +53,7 @@ Una volta completata l'importazione, segui gli step qui sotto utilizzando la CLI
 
 1\. Scarica il tuo file openrc.sh per il tuo utente OpenStack dal tuo Spazio Cliente OVHcloud (seleziona la Region verso cui effettuare il download).
 
-![openrc](images/openrc_file.png){.thumbnail}
+![openrc](images/open_rc_download.png){.thumbnail}
 
 2\. Carica il file openrc:
 
@@ -97,6 +97,6 @@ Una volta che l'immagine è pronta, segui gli step qui sotto per importarla dall
 
 ![horizon_4](images/horizon_4.png){.thumbnail}
 
-## Per saperne di più
-
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+## Per saperne di più <a name="go-further"></a>
+ 
+Contatta la nostra [Community di utenti](/links/community).

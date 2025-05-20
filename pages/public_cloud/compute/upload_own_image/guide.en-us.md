@@ -51,7 +51,7 @@ Once your image is ready to upload, you can use the following steps to upload it
 
 Click on `Users & Roles`{.action} in the left-hand menu under **Settings**. Next, click the `...`{.action} next to the corresponding openstack user, then click on `Download OpenStack's RC file`{.action} (select the region you want to upload to).
 
-![openrc](images/openrc_file.png){.thumbnail}
+![openrc](images/open_rc_download.png){.thumbnail}
 
 2\. Source the openrc file:
 
