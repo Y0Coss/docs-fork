@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Consultar as estatísticas e logs de um website"
 excerpt: "Saiba como consultar as estatísticas e os logs do seu website graças à sua oferta de alojamento web"
-updated: 2025-02-20
+updated: 2025-05-21
 ---
 
 ## Objetivo
@@ -74,6 +74,10 @@ Tem à sua disposição diferentes tipos de logs:
 - **Logs out** : contém o histórico dos diferentes pedidos externos (ligações de saída TCP) realizados a partir do seu alojamento web em infraestruturas remotas.
 - **Logs SSH** : estes logs indicam as diferentes ligações/comandos realizados com o protocolo SSH.
 - **Logs CRON** : encontre aqui os resultados da execução das suas tarefas planificadas [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) no seu alojamento web.
+
+> [!success]
+>
+> Para consultar as estatísticas e/ou os logs do CDN, consulte o nosso guia dedicado: "[Alojamento Web - Consultar as estatísticas e logs CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)".
 
 ### Estatísticas da infraestrutura <a name="infra-stats"></a>
 
