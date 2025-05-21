@@ -295,7 +295,7 @@ Traffic coming back from such a VM should use the default route via the first pa
 
 For routed subnet definition any prefix size can be used between /57 and /64.
 
-Default gateway for the host is the first address from the /56 block, which is in this example: `2001:41d0:abcd:ef00::1`. Default gateway used on the VMs then, are the configured host addresses (in this example fd00::1).
+The default gateway for the host is the first address from the /56 block, which is in this example: `2001:41d0:abcd:ef00::1`. The default gateway used by the VMs is the address of their host via the local link, which is `fd00::1` in this example.
 
 #### Define routed subnet
 
