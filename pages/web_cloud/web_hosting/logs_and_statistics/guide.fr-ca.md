@@ -75,6 +75,10 @@ Différents type de logs sont à votre disposition :
 - **Logs SSH** : ces logs indiquent les différentes connexions / commandes réalisées avec le protocole SSH.
 - **Logs CRON** : retrouvez ici les résultats de l'exécution de vos tâches planifiées [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) sur votre hébergement web.
 
+> [!success]
+>
+> Pour visualiser les statistiques et/ou les logs du CDN, consultez notre guide dédié : « [Hébergement web - Consulter les statistiques et logs CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs) ».
+
 ### Statistiques de l'infrastructure <a name="infra-stats"></a>
 
 Retrouvez dans cette section l'activité de l'infrastructure de votre hébergement web, afin de visualiser la consommation des ressources mises à votre disposition.
