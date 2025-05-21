@@ -8,7 +8,7 @@ updated: 2025-05-20
 
 Have you just received an email from OVHcloud notifying you that an action is required for your domain name? Does the same email inform you that the contact details (contact information) relating to your domain name holder must be corrected or completed?
 
-**Find out how to correct or complete the contact information of a domain name holder after receiving an alert email from OVHcloud**
+**Find out how to correct or complete the contact information of a domain name holder after receiving an alert email from OVHcloud.**
 
 ## Requirements
 
@@ -108,9 +108,9 @@ If applicable, this means that a correction is always necessary in the domain na
 
 ## Go further
 
-[Domain name - How do I change the owner](/pages/web_cloud/domains/trade_domain).
+[Domain name - How do I change the owner](/pages/web_cloud/domains/trade_domain)
 
-[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)
  
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  

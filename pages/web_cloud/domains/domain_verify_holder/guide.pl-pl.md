@@ -1,14 +1,14 @@
 ---
 title: "Popraw dane właściciela domeny"
 excerpt: "Dowiedz się, jak poprawić lub uzupełnić dane kontaktowe właściciela domeny po otrzymaniu e-maila z alertem od OVHcloud"
-updated: 2025-05-20
+updated: 2025-05-21
 ---
 
 ## Wprowadzenie
 
 Właśnie otrzymałeś od OVHcloud e-maila z informacją, że Twoja domena wymaga podjęcia działań? E-mail ten zawiera również informację, że dane kontaktowe (dane kontaktowe) właściciela domeny muszą zostać poprawione lub uzupełnione?
 
-**Dowiedz się, jak poprawić lub uzupełnić dane kontaktowe właściciela domeny po otrzymaniu od OVHcloud e-maila z alertem**
+**Dowiedz się, jak poprawić lub uzupełnić dane kontaktowe właściciela domeny po otrzymaniu od OVHcloud e-maila z alertem.**
 
 ## Wymagania początkowe
 
@@ -16,8 +16,8 @@ Właśnie otrzymałeś od OVHcloud e-maila z informacją, że Twoja domena wymag
 - Dostęp do [panelu klienta OVHcloud](/links/manager).
 - Otrzymałeś od OVHcloud e-mail z informacją, że należy podjąć działania w odniesieniu do danych właściciela Twojej domeny.
 - Aby upewnić się, że to nie jest fałszywa wiadomość e-mail, należy sprawdzić następujące elementy:
-- Temat e-maila zawiera Twój identyfikator klienta (na przykład: `aa00000-ovh`) oraz Twoją domenę (na przykład: `domain.tld`).
-- Adres URL podany w e-mailu zaczyna się od: `https://www.ovh.com/manager/#/web/domain/operation/`.
+    - Temat e-maila zawiera Twój identyfikator klienta (na przykład: `aa00000-ovh`) oraz Twoją domenę (na przykład: `domain.tld`).
+    - Adres URL podany w e-mailu zaczyna się od: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## W praktyce
 

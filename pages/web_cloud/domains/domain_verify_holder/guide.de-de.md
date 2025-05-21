@@ -8,7 +8,7 @@ updated: 2025-05-20
 
 Sie haben gerade eine E-Mail von OVHcloud erhalten, in der angegeben wird, dass für Ihren Domainnamen etwas getan werden muss? Ist in der E-Mail angegeben, dass die Angaben zum Inhaber Ihrer Domain korrigiert oder ergänzt werden müssen?
 
-**So korrigieren oder vervollständigen Sie die Kontaktinformationen des Inhabers einer Domain nach Erhalt einer Benachrichtigungs-E-Mail von OVHcloud**
+**So korrigieren oder vervollständigen Sie die Kontaktinformationen des Inhabers einer Domain nach Erhalt einer Benachrichtigungs-E-Mail von OVHcloud.**
 
 ## Voraussetzungen
 
@@ -108,9 +108,9 @@ In diesem Fall bedeutet dies, dass die Kontaktdaten des Inhabers des Domainnamen
 
 ## Weiterführende Informationen
 
-[Domainnamen - Inhaber eines Domainnamens ändern](/pages/web_cloud/domains/trade_domain).
+[Domainnamen - Inhaber eines Domainnamens ändern](/pages/web_cloud/domains/trade_domain)
 
-[Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts).
+[Die Kontakte Ihrer Dienste verwalten](/pages/account_and_service_management/account_information/managing_contacts)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  

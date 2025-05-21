@@ -1,14 +1,14 @@
 ---
 title: "Corregir los datos del titular de un dominio"
 excerpt: "Descubra cómo corregir o completar los datos de contacto del titular de un dominio tras recibir un mensaje de alerta de OVHcloud"
-updated: 2025-05-20
+updated: 2025-05-21
 ---
 
 ## Objetivo
 
 ¿Acaba de recibir de OVHcloud un mensaje de correo electrónico indicándole que es necesario realizar una acción en relación con su dominio? ¿En ese mismo mensaje de correo electrónico se indica que los datos (datos de contacto) relativos al titular del dominio deben corregirse o completarse?
 
-**Descubra cómo corregir o completar los datos de contacto del titular de un dominio tras la recepción de un email de alerta de OVHcloud**
+**Descubra cómo corregir o completar los datos de contacto del titular de un dominio tras la recepción de un email de alerta de OVHcloud.**
 
 ## Requisitos
 
@@ -64,7 +64,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
->> Para más información sobre el cambio de titular, consulte nuestra guía "[Dominio - ¿Cómo cambiar el titular?](/pages/web_cloud/domains/trade_domain)"
+>> Para más información sobre el cambio de titular, consulte nuestra guía: "[Dominio - ¿Cómo cambiar el titular?](/pages/web_cloud/domains/trade_domain)".
 
 ### 2 - Reanudar la operación de verificación de los datos de contacto del titular del dominio
 
@@ -110,7 +110,7 @@ En su caso, esto significa que siempre es necesario realizar una corrección en 
 
 [Dominio - ¿Cómo cambiar el titular?](/pages/web_cloud/domains/trade_domain)
 
-[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts).
+[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts)
  
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  

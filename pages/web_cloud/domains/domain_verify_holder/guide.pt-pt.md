@@ -1,14 +1,14 @@
 ---
 title: "Corrigir os dados do titular de um nome de domínio"
 excerpt: "Saiba como corrigir ou completar as informações de contacto do titular de um domínio após a receção de um e-mail de alerta da OVHcloud"
-updated: 2025-05-20
+updated: 2025-05-21
 ---
 
 ## Objetivo
 
 Acaba de receber um e-mail da OVHcloud informando-o de que é necessária uma ação para o seu nome de domínio? Neste mesmo e-mail especifica-lhe que as informações de contacto (informações de contacto) relativas ao titular do seu nome de domínio devem ser corrigidas ou completadas?
 
-**Saiba como corrigir ou completar as informações de contacto do titular de um domínio após a receção de um e-mail de alerta da OVHcloud**
+**Saiba como corrigir ou completar as informações de contacto do titular de um domínio após a receção de um e-mail de alerta da OVHcloud.**
 
 ## Requisitos
 
@@ -16,8 +16,8 @@ Acaba de receber um e-mail da OVHcloud informando-o de que é necessária uma a�
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter recebido um e-mail da OVHcloud a informar que é necessária uma ação relativamente aos dados de contacto do titular do seu domínio.
 - Verifique o seguinte para se certificar de que não se trata de uma mensagem de correio eletrónico fraudulenta:
-- O assumpto do e-mail contém o seu identificador de cliente (por exemplo: `aa00000-ovh`), bem como o seu domínio (por exemplo: `domain.tld`).
-- O URL mencionado no e-mail começa com: `https://www.ovh.com/manager/#/web/domain/operation/`.
+    - O assumpto do e-mail contém o seu identificador de cliente (por exemplo: `aa00000-ovh`), bem como o seu domínio (por exemplo: `domain.tld`).
+    - O URL mencionado no e-mail começa com: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## Instruções
 
@@ -64,7 +64,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
->> Encontre mais pormenores sobre a mudança de titular no nosso guia: "[Nome de domínio - Como alterar o titular?](/pages/web_cloud/domains/trade_domain)".
+>> Encontre mais pormenores sobre a mudança de titular no nosso guia: «[Nome de domínio - Como alterar o titular?](/pages/web_cloud/domains/trade_domain)».
 
 ### 2 - Reiniciar a verificação das coordenadas/informações de contacto do titular do domínio
 
@@ -116,4 +116,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

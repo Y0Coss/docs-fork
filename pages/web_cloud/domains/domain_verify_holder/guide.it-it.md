@@ -1,14 +1,14 @@
 ---
 title: "Correggere le coordinate del titolare di un dominio"
 excerpt: "Questa guida ti mostra come correggere o completare le informazioni di contatto del titolare di un dominio dopo aver ricevuto un’email di alert da OVHcloud"
-updated: 2025-05-20
+updated: 2025-05-21
 ---
 
 ## Obiettivo
 
 Hai ricevuto un’email da parte di OVHcloud che ti informa che è necessaria un’azione per il tuo dominio? Nella stessa email ti viene indicato che le informazioni (informazioni di contatto) relative al titolare del dominio devono essere corrette o completate?
 
-**Questa guida ti mostra come correggere o completare le informazioni di contatto del titolare di un dominio dopo aver ricevuto un’email di alert da parte di OVHcloud**
+**Questa guida ti mostra come correggere o completare le informazioni di contatto del titolare di un dominio dopo aver ricevuto un’email di alert da parte di OVHcloud.**
 
 ## Prerequisiti
 
@@ -16,8 +16,8 @@ Hai ricevuto un’email da parte di OVHcloud che ti informa che è necessaria un
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Aver ricevuto un’email da parte di OVHcloud nella quale si informa che è necessario intervenire in merito ai dati di contatto del titolare del dominio.
 - Verificare che non si tratti di un’email fraudolenta:
-- L’oggetto dell’email contiene il tuo identificativo cliente (ad esempio: `aa00000-ovh`) e il tuo dominio (ad esempio: `domain.tld`).
-- L’URL indicato nell’email inizia con `https://www.ovh.com/manager/#/web/domain/operation/`.
+    - L’oggetto dell’email contiene il tuo identificativo cliente (ad esempio: `aa00000-ovh`) e il tuo dominio (ad esempio: `domain.tld`).
+    - L’URL indicato nell’email inizia con `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## Procedura
 
@@ -108,11 +108,11 @@ In caso affermativo, è necessario correggere i dati di contatto del titolare di
 
 ## Per saperne di più
 
-["Dominio - Come cambiare il titolare?](/pages/web_cloud/domains/trade_domain)
+[Dominio - Come cambiare il titolare?](/pages/web_cloud/domains/trade_domain)
 
-[Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts).
+[Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  

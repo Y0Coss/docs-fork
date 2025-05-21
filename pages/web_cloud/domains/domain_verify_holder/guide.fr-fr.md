@@ -8,7 +8,7 @@ updated: 2025-05-20
 
 Vous venez de recevoir un e-mail de la part d'OVHcloud vous précisant qu'une action est requise pour votre nom de domaine ? Ce même e-mail vous précise que les coordonnées (informations de contact) relatives au titulaire de votre nom de domaine doivent être corrigées ou complétées ?
 
-**Découvrez comment corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud**
+**Découvrez comment corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud.**
 
 ## Prérequis
 
