@@ -1,23 +1,23 @@
 ---
 title: "Angaben zum Inhaber eines Domainnamens korrigieren"
-excerpt: "Erfahren Sie, wie Sie die Kontaktinformationen des Inhabers eines Domainnamens nach Erhalt einer Benachrichtigungs-E-Mail von OVHcloud korrigieren oder vervollständigen können"
+excerpt: "Erfahren Sie, wie Sie die Kontaktinformationen des Inhabers eines Domainnamens nach Erhalt einer E-Mail von OVHcloud korrigieren oder vervollständigen können"
 updated: 2025-05-20
 ---
 
 ## Ziel
 
-Sie haben gerade eine E-Mail von OVHcloud erhalten, in der angegeben wird, dass für Ihren Domainnamen etwas getan werden muss? Ist in der E-Mail angegeben, dass die Angaben zum Inhaber Ihrer Domain korrigiert oder ergänzt werden müssen?
+Sie haben eine E-Mail von OVHcloud erhalten, in der angegeben wird, dass für Ihren Domainnamen etwas getan werden muss? Ist in der E-Mail angegeben, dass die Angaben zum Inhaber Ihrer Domain korrigiert oder ergänzt werden müssen?
 
-**So korrigieren oder vervollständigen Sie die Kontaktinformationen des Inhabers einer Domain nach Erhalt einer Benachrichtigungs-E-Mail von OVHcloud.**
+**Diese Anleitung erklärt, wie Sie die Kontaktinformationen des Inhabers einer Domain nach Erhalt einer Benachrichtigung von OVHcloud.**
 
 ## Voraussetzungen
 
-- Sie besitzen eine bei OVHcloud registrierte [Domain](/links/web/domains).
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt.
+- Sie haben eine bei OVHcloud registrierte [Domain](/links/web/domains).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben eine E-Mail von OVHcloud erhalten, die Ihnen mitteilt, dass bezüglich der Kontaktdaten des Inhabers Ihrer Domain eine Aktion erforderlich ist.
 - Überprüfen Sie die folgenden Punkte, um sicherzustellen, dass es sich nicht um eine betrügerische E-Mail handelt:
 - Der Betreff der E-Mail enthält Ihre Kundenkennung (zum Beispiel: `aa00000-ovh`) sowie Ihren Domainnamen (zum Beispiel: `domain.tld`).
-- Die in der E-Mail angegebene URL beginnt gut mit: `https://www.ovh.com/manager/#/web/domain/operation/`.
+- Die in der E-Mail angegebene URL beginnt mit: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## In der praktischen Anwendung
 
@@ -28,7 +28,7 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihre [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -64,7 +64,7 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
->> Weitere Informationen zum Inhaberwechsel finden Sie in unserer Anleitung: „[Domainname - Wie kann ich den Inhaber ändern?](/pages/web_cloud/domains/trade_domain)“.
+>> Weitere Informationen zum Inhaberwechsel finden Sie in unserer Anleitung: "[Domainname - Wie kann ich den Inhaber ändern?](/pages/web_cloud/domains/trade_domain)".
 
 ### 2 - Operation zur Überprüfung der Kontaktdaten/Kontaktinformationen des Domaininhabers neu starten
 
@@ -84,7 +84,7 @@ Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 >>
 > **Schritt 2**
 >>
->> Klicken Sie auf das Menü `Laufende Vorgänge`{.action} und suchen Sie die betreffende Domain in der angezeigten Liste.
+>> Klicken Sie auf das Menü `Laufende Vorgänge`{.action} und identifizieren Sie die betreffende Domain in der angezeigten Liste.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
@@ -100,11 +100,11 @@ Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 >>
 >> ![Operation data on domain](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations/contact-correction-relaunch-operation.png){.thumbnail}
 
-Es dauert einige Minuten, um den Vorgang abzuschließen. Aktualisieren Sie die Seite `Aktionen an meinen Domainnamen`, auf der sich die Kontaktkorrektur für Ihre Domain befand.
+Es dauert einige Minuten, um den Vorgang abzuschließen. Aktualisieren Sie die Seite `Aktionen an meinen Domainnamen` auf der die Kontaktkorrektur vorgenommen wurde.
 
-Wenn der Arbeitsvorgang erfolgreich abgeschlossen wurde, wird die Zeile für den verarbeiteten Arbeitsvorgang nicht mehr angezeigt.
+Wenn der Vorgang erfolgreich abgeschlossen wurde, wird die Zeile dieser Operation nicht mehr angezeigt.
 
-In diesem Fall bedeutet dies, dass die Kontaktdaten des Inhabers des Domainnamens noch korrigiert werden müssen. In diesem Fall können Sie diese Anleitung von Anfang an verwenden, um die Situation zu korrigieren.
+Die Kontaktdaten des Inhabers des Domainnamens müssen ggf. noch korrigiert werden. In diesem Fall können Sie dieser Anleitung von Anfang an folgen, um die Angaben zu korrigieren.
 
 ## Weiterführende Informationen
 
@@ -116,4 +116,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
  
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
  
-Treten Sie unserer [User Community](/links/community) bei..
+Treten Sie unserer [User Community](/links/community) bei.
