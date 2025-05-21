@@ -29,7 +29,7 @@ If you have just purchased an MX Plan solution, this means you have email addres
 
 ## Requirements
 
-- An MX plan solution, available with a [web hosting plan](/links/web/hosting), a [100M free hosting](/links/web/domains-free-hosting), or ordered separately
+- An MX plan solution, available with a [web hosting plan](/links/web/hosting)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions <a name="instructions"></a>

@@ -29,7 +29,7 @@ Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficie
 
 ## Prérequis
 
-- Posséder une offre MX Plan liée à une offre d’[hébergement web](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting), ou seule.
+- Posséder une offre MX Plan liée à une offre d’[hébergement web](/links/web/hosting).
 - Être connecté à l'[espace client OVHcloud](/links/manager).
 
 ## En pratique <a name="instructions"></a>
