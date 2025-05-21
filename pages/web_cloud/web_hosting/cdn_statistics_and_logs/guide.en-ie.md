@@ -94,9 +94,9 @@ Click on the tabs below to view each of the **5** steps.
 >> - Then click the `Generate`{.action} button.
 >>
 >> > [!primary]
->>>
+>>
 >> > CDN logs are unavailable the same day they are generated, so you will need to wait for the next day to view them.
->>>
+>>
 >>
 >> ![OSL CDN - Logs generated](/pages/assets/screens/other/web-tools/logs/osl-cdn-subdomain-date-selection.png){.thumbnail}
 >>

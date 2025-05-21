@@ -6,7 +6,7 @@ updated: 2025-05-20
 
 ## Wprowadzenie
 
-Niniejszy przewodnik wyjaśnia, jak sprawdzić statystyki i logi generowane przez[opcję CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) dostępną w ramach Twojego pakietu hostingowego [hosting](/links/web/hosting).
+Niniejszy przewodnik wyjaśnia, jak sprawdzić statystyki i logi generowane przez [opcję CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) dostępną w ramach Twojego pakietu hostingowego [hosting](/links/web/hosting).
 
 **Dowiedz się, jak sprawdzić statystyki i logi CDN Twojej strony WWW w ramach Twojego pakietu hostingowego.**
 
