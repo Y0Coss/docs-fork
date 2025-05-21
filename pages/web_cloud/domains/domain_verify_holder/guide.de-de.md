@@ -16,7 +16,7 @@ Sie haben eine E-Mail von OVHcloud erhalten, in der angegeben wird, dass für Ih
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben eine E-Mail von OVHcloud erhalten, die Ihnen mitteilt, dass bezüglich der Kontaktdaten des Inhabers Ihrer Domain eine Aktion erforderlich ist.
 - Überprüfen Sie die folgenden Punkte, um sicherzustellen, dass es sich nicht um eine betrügerische E-Mail handelt:
-- Der Betreff der E-Mail enthält Ihre Kundenkennung (zum Beispiel: `aa00000-ovh`) sowie Ihren Domainnamen (zum Beispiel: `domain.tld`).
+- Der Betreff der E-Mail enthält Ihre Kundenkennung (zum Beispiel: `aa00000-ovh`) sowie Ihren Domainnamen (Beispiel: `domain.tld`).
 - Die in der E-Mail angegebene URL beginnt mit: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
 ## In der praktischen Anwendung
@@ -66,11 +66,11 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> Weitere Informationen zum Inhaberwechsel finden Sie in unserer Anleitung: "[Domainname - Wie kann ich den Inhaber ändern?](/pages/web_cloud/domains/trade_domain)".
 
-### 2 - Operation zur Überprüfung der Kontaktdaten/Kontaktinformationen des Domaininhabers neu starten
+### 2 - Operation zur Überprüfung der Kontaktdaten des Domaininhabers neu starten
 
 > [!warning]
 >
-> Wenn die im ersten Teil dieser Anleitung vorgenommenen Korrekturen die Initiierung einer Inhaberänderung für den Domainnamen erforderlich gemacht haben, schließen Sie zuerst die Änderung des Inhabers ab, **bevor** Sie mit den in dieser Anleitung beschriebenen Aktionen fortfahren.
+> Wenn die im ersten Teil dieser Anleitung vorgenommenen Korrekturen die Inhaberänderung für den Domainnamen erforderlich gemacht haben, schließen Sie zuerst die Änderung des Inhabers ab, **bevor** Sie die Schritte dieser Anleitung ausführen.
 >
 
 Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
