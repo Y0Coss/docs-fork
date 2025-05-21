@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come conoscere cluster e filer"
 excerpt: "Questa guida ti mostra come trovare il numero del cluster e/o il numero del filer in cui si trova il tuo hosting Web"
-updated: 2025-05-20
+updated: 2025-05-21
 ---
 
 ## Obiettivo
@@ -46,7 +46,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 >> Nella nuova pagina, recupera il numero di cluster dell’hosting Web su questa pagina come **Server FTP e SFTP** (3 cifre comprese tra `0` e `9`).
 >>
->> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
+>> ![FTP-SSH - numero del cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
 
 ### Ritrova il numero del filer di un hosting Web
 
@@ -73,9 +73,9 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 
 ## Per saperne di più
 
-[Hosting Web - Lista degli indirizzi IP per cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+[Hosting Web - Lista degli indirizzi IP per cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  

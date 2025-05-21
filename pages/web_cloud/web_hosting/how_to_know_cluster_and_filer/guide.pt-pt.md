@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Como conhecer o seu cluster e o seu filer"
 excerpt: "Saiba como encontrar o número do cluster e/ou o número do filer onde se encontra o seu alojamento web"
-updated: 2025-05-20
+updated: 2025-05-21
 ---
 
 ## Objetivo
@@ -46,7 +46,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 >>
 >> Na nova página, obtenha o número do cluster do alojamento web nesta página com a menção **Servidor FTP e SFTP** (3 algarismos entre `0` e `9`).
 >>
->> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
+>> ![FTP-SSH - número do cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
 
 ### Encontre o número do filer de um alojamento web
 
@@ -73,10 +73,10 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 
 ## Quer saber mais?
 
-[Alojamento web - Lista dos endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+[Alojamento web - Lista dos endereços IP por cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

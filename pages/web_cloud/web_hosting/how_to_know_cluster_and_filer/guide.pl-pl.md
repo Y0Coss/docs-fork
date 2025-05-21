@@ -1,7 +1,7 @@
 ---
 title: "Hosting www - Poznaj klaster i syn"
 excerpt: "Dowiedz się, jak znaleźć numer klastra i/lub numer filera, w którym znajduje się Twój hosting"
-updated: 2025-05-20
+updated: 2025-05-21
 ---
 
 ## Wprowadzenie
@@ -46,7 +46,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno wszystkie **4** etapy.
 >>
 >> Na nowej stronie znajdziesz numer klastra hostingu WWW dostępny na tej stronie pod nazwą **Serwer FTP i SFTP** (3 cyfry: od `0` do `9`).
 >>
->> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
+>> ![FTP-SSH - numer klastra](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
 
 ### Znalezienie numeru kolejki dla hostingu WWW
 
@@ -69,11 +69,11 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno wszystkie **3** etapy.
 >>
 >> W ramce **Informacje ogólne** na stronie, która się wyświetla, pobierz numer kolejki, używając frazy `Serwer Filer`{.action}.
 >>
->> ![Numer pliku](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
+>> ![Numer kolejki](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
 
 ## Sprawdź również
 
-[Hosting WWW - Lista adresów IP według klastra](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+[Hosting WWW - Lista adresów IP według klastra](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
