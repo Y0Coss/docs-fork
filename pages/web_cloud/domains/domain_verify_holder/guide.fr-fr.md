@@ -1,14 +1,14 @@
 ---
 title: "Corriger les coordonnées du titulaire d'un nom de domaine"
 excerpt: "Découvrez comment corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud"
-updated: 2025-05-16
+updated: 2025-05-21
 ---
 
 ## Objectif
 
 Vous venez de recevoir un e-mail de la part d'OVHcloud vous précisant qu'une action est requise pour votre nom de domaine ? Ce même e-mail vous précise que les coordonnées (informations de contact) relatives au titulaire de votre nom de domaine doivent être corrigées ou complétées ?
 
-**Découvrez comment corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud**
+**Découvrez comment corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud.**
 
 ## Prérequis
 
@@ -40,9 +40,11 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 3**
 >>
->> Sur la page qui s'affiche, vous trouverez dans le cadre **Abonnement** la mention **Contacts**. Cliquez sur le bouton `...`{.action} à droite puis sur `Gérer les contacts`{.action}.
+>> Sur la page qui s'affiche, vérifiez d'abord que votre nom de domaine est bien concerné par la procédure grâce à la présence d'un bandeau (jaune ou rouge) signalant l'opération à réaliser.
 >>
->> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts.png){.thumbnail}
+>> Vous trouverez ensuite la mention **Contacts**  dans le cadre **Abonnement**. Cliquez sur le bouton `...`{.action} à droite puis sur `Gérer les contacts`{.action}.
+>>
+>> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
 > **Étape 4**
 >>
@@ -84,7 +86,7 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 >> Cliquez sur le menu `Opérations en cours`{.action}, puis retrouvez le nom de domaine concerné dans la liste qui s'affiche.
 >>
->> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
+>> ![Opérations en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/ongoing-operations.png){.thumbnail}
 >>
 > **Étape 3**
 >>
