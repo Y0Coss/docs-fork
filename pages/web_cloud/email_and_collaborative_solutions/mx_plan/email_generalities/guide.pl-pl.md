@@ -266,7 +266,7 @@ Wybierz kartę odpowiadającą technologii e-mail w Twojej usłudze MX Plan:
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Użyj interfejsu Webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_rundcube)
+[Użyj interfejsu Webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
 [Skorzystaj z poczty Zimbra Webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
