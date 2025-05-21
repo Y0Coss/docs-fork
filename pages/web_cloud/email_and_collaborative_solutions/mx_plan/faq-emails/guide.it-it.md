@@ -1,7 +1,7 @@
 ---
 title: FAQ email OVHcloud
 excerpt: "Rileggi le domande più frequenti sulle email"
-updated: 2025-04-07
+updated: 2025-05-21
 ---
 
 <style>
@@ -64,6 +64,7 @@ OVHcloud propone attualmente 4 offerte email. Per comprenderne le specificità, 
 >>
 
 > [!success]
+>
 > Tutte le soluzioni di posta elettronica OVHcloud sono soggette alle domande riportate di seguito, a meno che non sia specificato diversamente.
 
 /// details | Quali sono le differenze tra le tecnologie di posta elettronica utilizzate dalle soluzioni **MX Plan**?
@@ -90,7 +91,7 @@ La tecnologia di posta utilizzata per il servizio MX Plan è caratterizzata dall
 1. Accedi alla sezione `Web Cloud`{.action}.
 1. Clicca su `MX Plan`{.action}.
 1. Seleziona il dominio.
-1. Nella scheda `Informazioni generali`{.action}, seleziona l’opzione predefinita.
+1. Nella scheda `Informazioni generali`{.action}, selezionata di default.
 1. Aumenta la tecnologia utilizzata sotto la voce **Webmail**.
 
 ![MX plan](images/technology-email.png){.thumbnail .w-500}
@@ -124,21 +125,22 @@ La **password** deve rispettare queste regole:
 
 Qui sotto trovi le principali ragioni del mancato ricevimento delle tue email.
 
-1. **Software di posta elettronica**: Un problema di ricezione email è spesso legato alla configurazione del tuo indirizzo e-mail sul tuo client di posta (Outlook, Mail di macOS, Thunderbird, ecc...). Per verificarlo, accedi alla [webmail](/links/web/email). Se nella casella di posta in arrivo della Webmail vengono rilevati messaggi che non sono presenti nel client di posta, il problema potrebbe essere causato dalla configurazione del client di posta. Per maggiori informazioni, consulta la nostra pagina [Impossibile inviare o ricevere email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **Configurazione DNS**: il servizio di posta elettronica associato a un dominio. Nella sua zona DNS, i record MX designano i server di ricezione email. Se di recente hai modificato i tuoi server DNS o la tua zona DNS, è possibile che i record MX siano stati "tagliati". Per maggiori informazioni, consulta la nostra pagina [Impossibile inviare o ricevere email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostica_advanced).
-1. **Quota email superata**: Se la quota di spazio di archiviazione del tuo account email è raggiunta, non è più possibile ricevere email e il tuo mittente riceve un messaggio di errore che indica che il tuo account email è pieno. Gestire lo spazio di storage di un account email Per maggiori informazioni, consulta la nostra pagina [Gestire lo spazio di storage di un account email ](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota).
-1. **Regole della cartella della posta in arrivo**: è possibile che una regola della cartella della posta in arrivo impedisca la consegna di un'email nella cartella della posta in arrivo o la reindirizzi alla cartella SPAM. Consulta le tue regole dal tuo client di posta (Outlook, Mail di macOS, Thunderbird, ecc...) o dalla [webmail](/links/web/email).
-1. **Incidente o manutenzione**: consulta la nostra pagina [Web Cloud status](https://web-cloud.status-ovhcloud.com/) per verificare se è in corso un’operazione sul tuo servizio di posta elettronica.
+1. **Software di posta elettronica**: Un problema di ricezione email è spesso legato alla configurazione del tuo indirizzo e-mail sul tuo client di posta (Outlook, Mail di macOS, Thunderbird, ecc.). Per verificarlo, accedi alla [webmail](/links/web/email). Se nella casella di posta in arrivo della Webmail vengono rilevati messaggi che non sono presenti nel client di posta, il problema potrebbe essere causato dalla configurazione del client di posta. Per maggiori informazioni, consulta la nostra pagina "[Impossibile inviare o ricevere email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)".
+1. **Configurazione DNS**: Il servizio di posta elettronica associato a un dominio. Nella sua zona DNS, i record MX designano i server di ricezione email. Se di recente hai modificato i tuoi server DNS o la tua zona DNS, è possibile che i record MX siano stati "tagliati". Per maggiori informazioni, consulta la nostra pagina "[Impossibile inviare o ricevere email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostica_advanced)".
+1. **Quota email superata**: Se la quota di spazio di archiviazione del tuo account email è raggiunta, non è più possibile ricevere email e il tuo mittente riceve un messaggio di errore che indica che il tuo account email è pieno. Gestire lo spazio di storage di un account email Per maggiori informazioni, consulta la nostra pagina "[Gestire lo spazio di storage di un account email ](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)".
+1. **Regole della cartella della posta in arrivo**: È possibile che una regola della cartella della posta in arrivo impedisca la consegna di un'email nella cartella della posta in arrivo o la reindirizzi alla cartella SPAM. Consulta le tue regole dal tuo client di posta (Outlook, Mail di macOS, Thunderbird, ecc.) o dalla [webmail](/links/web/email).
+1. **Incidente o manutenzione**: consulta la nostra pagina "[Web Cloud status](https://web-cloud.status-ovhcloud.com/)" per verificare se è in corso un’operazione sul tuo servizio di posta elettronica.
 
 > [!primary]
+>
 > **Suggerimenti**: se non riesci ad accedere alla tua Webmail, è possibile che la tua password sia errata. Verifica la tua password e, se necessario, modificala dal tuo [Spazio Cliente OVHcloud](/links/manager) prima di effettuare nuovamente il login.
 
 ///
 
 /// details | Cosa fare se non è possibile inviare le email?
 
-1. **Software di posta elettronica**: Un difetto di invio può essere legato alla configurazione del tuo indirizzo e-mail sul tuo client di posta (Outlook, Mail di macOS, Thunderbird, ecc.). Per verificarlo, accedi alla [webmail](/links/web/email). Se ti accorgi di essere in grado di inviare email dalla Webmail, il problema è causato dalla tua configurazione software. Per maggiori informazioni, consulta la nostra pagina [Impossibile inviare o ricevere email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **Codice di errore**: quando si invia un messaggio e il server di destinazione lo rifiuta, in genere viene restituito un messaggio di errore con un codice di errore. Analizza il messaggio di errore e potrebbe indicarne il motivo (quota massima dell’account email raggiunto, indirizzo email del destinatario inesistente, ecc...). Per maggiori informazioni, consulta la nostra pagina [Impossibile inviare o ricevere email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
+1. **Software di posta elettronica**: Un difetto di invio può essere legato alla configurazione del tuo indirizzo e-mail sul tuo client di posta (Outlook, Mail di macOS, Thunderbird, ecc.). Per verificarlo, accedi alla [webmail](/links/web/email). Se ti accorgi di essere in grado di inviare email dalla Webmail, il problema è causato dalla tua configurazione software. Per maggiori informazioni, consulta la nostra pagina "[Impossibile inviare o ricevere email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)".
+1. **Codice di errore**: quando si invia un messaggio e il server di destinazione lo rifiuta, in genere viene restituito un messaggio di errore con un codice di errore. Analizza il messaggio di errore e potrebbe indicarne il motivo (quota massima dell’account email raggiunto, indirizzo email del destinatario inesistente, ecc.). Per maggiori informazioni, consulta la nostra pagina "[Impossibile inviare o ricevere email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)".
 1. **Dimensione dell’email**: Che si tratti del tuo provider di posta o del server di destinazione, esiste un limite di dimensione per un’email. Ti consigliamo di trasmettere principalmente immagini o file pdf con dimensioni ridotte. Per file di grandi dimensioni, è preferibile utilizzare strumenti di trasferimento file come [plik.ovh](https://plik.ovh/).
 
 ///
@@ -150,20 +152,20 @@ Qui sotto trovi le principali ragioni del mancato ricevimento delle tue email.
 
 che permette ai server di posta di verificare che le email siano state inviate da un server di fiducia. Questo protocollo è diventato indispensabile per legittimare gli scambi di email. Se il dominio del servizio di posta non è registrato come SPF, i messaggi di posta elettronica rischiano di essere considerati indesiderati dai destinatari.
 
-Per maggiori informazioni su come configurare un record SPF sul tuo servizio di posta, consulta la nostra guida [Migliorare la sicurezza delle email tramite un record SPF](/pages/web_cloud/domains/dns_zone_spf).
+Per maggiori informazioni su come configurare un record SPF sul tuo servizio di posta, consulta la nostra guida: "[Migliorare la sicurezza delle email tramite un record SPF](/pages/web_cloud/domains/dns_zone_spf)".
 
 **DKIM (DomainKeys Identified Mail)**
 
 Permette di firmare le email per evitare furti di identità. Questa firma funziona sul principio dell'hash combinato con una crittografia asimmetrica. Questo protocollo è complementare al SPF. Il record SPF conferma la legittimità del dominio, mentre il DKIM verifica che le email siano firmate dal servizio di posta corretto in fase di invio. Diventa anche un riferimento in termini di sicurezza email. Alcuni servizi di posta elettronica potrebbero inoltre considerare indesiderabile un messaggio di posta elettronica che non è protetto da una firma DKIM.
 
-Per informazioni su come configurare un record DKIM sul servizio di posta, consulta la nostra guida [Migliorare la sicurezza delle email tramite un record DKIM](/pages/web_cloud/domains/dns_zone_dkim).
+Per informazioni su come configurare un record DKIM sul servizio di posta, consulta la nostra guida: "[Migliorare la sicurezza delle email tramite un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)".
 
 ///
 
 
 /// details | Come configurare il tuo indirizzo email e utilizzarlo con la Webmail?
 
-È possibile configurare il tuo account email su un client di posta come Outlook, Thunderbird, Mail di Mac, ecc.
+È possibile configurare il tuo account email su un client di posta come Outlook, Thunderbird, Mail di macOS, ecc.
 Per seguire la procedura, puoi consultare le nostre guide disponibili [qui](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 > [!tabs]
@@ -254,7 +256,6 @@ La **password** deve rispettare queste regole:
 - Nessun carattere accentato.
 
 > [!warning]
->
 > Per motivi di sicurezza, ti consigliamo di non utilizzare due volte la stessa password, di sceglierne una che non abbia alcun rapporto con le tue informazioni personali (ad esempio evita di inserire il tuo cognome, nome e data di nascita) e di rinnovarla regolarmente.
 
 ///
@@ -271,19 +272,19 @@ Per motivi di sicurezza e riservatezza non è possibile **recuperare una passwor
 
 /// details | Come limitare la ricezione di spam?
 
-Per limitare la ricezione di SPAM, è possibile impostare filtri sulle email (chiamati “Filtri” nella soluzione MX Plan), per eliminare o spostare email nella cartella “posta indesiderata” fin dal loro arrivo.
-Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), sezione `MX Plan` e seleziona il tuo dominio. Clicca sulla scheda `Email`{.action} e, nella colonna `Filtro`, clicca sul pulsante di azione.
+Per limitare la ricezione di SPAM, è possibile impostare filtri sulle email (chiamati "Filtri" nella soluzione MX Plan), per eliminare o spostare email nella cartella "posta indesiderata" fin dal loro arrivo.
+Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action} e clicca su `MX Plan`{.action}. Seleziona il dominio interessato, clicca sulla scheda `Email`{.action} e poi nella colonna `Filtri` clicca sull’icona "Gestisci i filtri dell’account".
 
-Se nello Spazio Cliente non è presente la colonna `Filtro`, è necessario creare i filtri seguendo le regole di gestione della posta in arrivo di [Webmail](/links/web/email). Per maggiori dettagli, consulta questa guida: [Regole della posta in arrivo dall’interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
+Se nello Spazio Cliente non è presente la colonna `Filtri`, è necessario creare i filtri seguendo le regole di gestione della posta in arrivo di [Webmail](/links/web/email). Per maggiori dettagli, consulta questa guida: "[Regole della posta in arrivo dall’interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)".
 
-**Consigli e suggerimenti**: Se imposti un filtro sulla ricezione di SPAM, è probabile che alcune email legittime vengano considerate come SPAM. Queste email vengono chiamate “falsi positivi”. In tal caso, ti invitiamo a creare una richiesta di assistenza dal tuo [Spazio Cliente](/links/manager) per informarci. In questo modo potremo fare il necessario per fare in modo che queste email non vengano considerate come SPAM anche in futuro.
+**Consigli e suggerimenti**: Se imposti un filtro sulla ricezione di SPAM, è probabile che alcune email legittime vengano considerate come SPAM. Queste email vengono chiamate "falsi positivi". In tal caso, ti invitiamo a creare una richiesta di assistenza dal tuo [Spazio Cliente](/links/manager) per informarci. In questo modo potremo fare il necessario per fare in modo che queste email non vengano considerate come SPAM anche in futuro.
 
 ///
 
 
 /// details | Il mio indirizzo email è pieno, non ho più spazio. Cosa posso fare?
 
-Se hai attivato [una delle nostre soluzioni email OVHcloud](/links/web/emails) e uno dei tuoi account è pieno, consulta la nostra guida "[Gestire lo spazio di storage di un account email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Questa guida ti mostra come ottimizzare lo spazio disponibile o se è necessario cambiare il tuo servizio di posta per aumentare lo spazio di storage.
+Se hai attivato una delle nostre [soluzioni email OVHcloud](/links/web/emails) e uno dei tuoi account è pieno, consulta la nostra guida "[Gestire lo spazio di storage di un account email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Questa guida ti mostra come ottimizzare lo spazio disponibile o se è necessario cambiare il tuo servizio di posta per aumentare lo spazio di storage.
 
 ///
 
@@ -313,7 +314,7 @@ Consulta la guida "[Migrare il proprio sito Web e i servizi associati a OVHcloud
 
 ## Per saperne di più <a name="go-further"></a>
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

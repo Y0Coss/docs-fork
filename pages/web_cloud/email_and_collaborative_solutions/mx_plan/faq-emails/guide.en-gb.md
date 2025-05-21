@@ -272,9 +272,9 @@ For security and confidentiality reasons, it is not possible to **retrieve** a p
 /// details | How do I limit the amount of spam I receive?
 
 To limit the receipt of SPAM, you can set up filters on your emails (called "Filters" on the MX Plan solution). The purpose of these emails is to delete or move them into the “spam” folder as soon as they are received.
-To do this, log in to your [OVHcloud Control Panel](/links/manager), then in the `MX Plan` section, select the domain concerned , in the `Email`{.action} tab, then in the `Filter` column, click on the action button.
+To do this, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, and click `MX Plan`{.action}. Select the domain concerned, then click on the `Emails`{.action} tab, then in the `Filters` column, click on the "Account filter management" icon.
 
-If the `Filter` column is not present in your Control Panel, you will need to create filters via mailbox rules in the [webmail](/links/web/email). You can refer to the following guide for more details: “[Inbox rules from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)”.
+If the `Filters` column is not present in your Control Panel, you will need to create filters via mailbox rules in the [webmail](/links/web/email). You can refer to the following guide for more details: “[Inbox rules from the OWA interface](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)”.
 
 **Tips and Tricks**: If you set a filter on receiving SPAM, legitimate emails may be considered SPAM. If this happens to you, please open a support request in your [OVHcloud Control Panel](/links/manager) and let us know. This way, we can ensure that your emails are not marked as SPAM in the future.
 
