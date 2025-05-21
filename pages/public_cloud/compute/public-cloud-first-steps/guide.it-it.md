@@ -18,10 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Obiettivo
 
 Le istanze Public Cloud sono semplici da installare e gestire. In quanto membri dell'ecosistema Public Cloud di OVHcloud, le istanze offrono numerose opzioni di configurazione e possono essere adattate ai diversi casi d'uso. Le istruzioni seguenti includono tutti gli step necessari (e anche quelli facoltativi) per creare un’istanza nello Spazio Cliente OVHcloud e accedervi da remoto.  

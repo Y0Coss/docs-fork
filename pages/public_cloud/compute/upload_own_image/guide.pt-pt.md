@@ -4,10 +4,6 @@ excerpt: Saiba como importar a sua própria imagem para o Public Cloud
 updated: 2020-10-27
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 A OVHcloud oferece aos clientes Public Cloud imagens prontas a usar, mas também a possibilidade de utilizar as suas próprias imagens.
@@ -29,10 +25,10 @@ A OVHcloud oferece aos clientes Public Cloud imagens prontas a usar, mas também
 
 As imagens cloud compatíveis estão disponíveis aqui:
 
-- https://cloud.centos.org/centos/
-- https://cloud.debian.org/images/cloud/
-- https://cloud-images.ubuntu.com/releases/
-- https://alt.fedoraproject.org/cloud/
+- <https://cloud.centos.org/centos/>{.external}
+- <https://cloud.debian.org/images/cloud/>{.external}
+- <https://cloud-images.ubuntu.com/releases/>{.external}
+- <https://alt.fedoraproject.org/cloud/>{.external}
 
 Outros sistemas operativos também oferecem imagens ISO que são igualmente aplicáveis aquando da [criação de imagens com a Packer](https://www.packer.io/docs/builders), como a QEMU e a VirtualBox.
 
@@ -58,7 +54,7 @@ Quando a sua imagem estiver pronta, siga os passos abaixo para lançar a importa
 2\. Carregue o ficheiro openrc:
 
 ```sh
-fonte openrc.sh
+source openrc.sh
 ```
 
 3\. Depois de carregar o ficheiro, deverá introduzir a palavra-passe do utilizador OpenStack.
@@ -72,7 +68,7 @@ fonte openrc.sh
 - Define as propriedades recomendadas. Uma configuração ótima permite a utilização de funcionalidades tais como o *live-snapshot* e o *cloud-init* (necessita do nome de utilizador)
 
 ```sh
-openstack imagem create —disk formato raw —container-de-formato bare —file debian9.raw "Debian 9 - A minha imagem" —private —property distribution=debian —property hw_disk_bus=scsi —property hw_scsi_model=virtio-scsi —property hw_qemu_guest_agent=yagent; es —property image_original_user=debian
+openstack image create --disk-format raw --container-format bare --file debian9.raw "Debian 9 - My Image" --private --property distribution=debian --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property image_original_user=debian
 ```
 
 #### A partir da interface Horizon
@@ -85,7 +81,7 @@ Quando a sua imagem estiver pronta para ser importada, siga os passos abaixo par
 
 ![horizon_1](images/horizon_1.png){.thumbnail}
 
-3\. Dirija-se à secção `Imagens` e clique em `Create Image`{.action}.
+3\. Dirija-se à secção `Images` e clique em `Create Image`{.action}.
 
 ![horizon_2](images/horizon_2.png){.thumbnail}
 

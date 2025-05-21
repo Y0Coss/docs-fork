@@ -13,7 +13,7 @@ OVHcloud oferuje klientom Public Cloud obrazy gotowe do użycia, a także możli
 ## Wymagania początkowe
 
 - instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) w Panelu klienta OVHcloud
-- własny obraz RAW/ (zalecane formaty)
+- własny obraz RAW/QCOW2 (zalecane formaty)
 - użytkownik [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user)
 - środowisko [kompatybilne z CLI OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) (jeśli używasz CLI)
 
@@ -68,7 +68,7 @@ source openrc.sh
 - Ustawia zalecane właściwości. Optymalna konfiguracja pozwala na korzystanie z funkcji takich jak *live-snapshot* i *cloud-init* (wymaga użycia nazwy użytkownika)
 
 ```sh
-source openrc.sh
+openstack image create --disk-format raw --container-format bare --file debian9.raw "Debian 9 - My Image" --private --property distribution=debian --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property image_original_user=debian
 ```
 
 ### Z poziomu interfejsu Horizon
@@ -94,5 +94,5 @@ Kiedy Twój obraz jest gotowy do importu, wykonaj poniższe kroki, aby zaimporto
 ![horizon_4](images/horizon_4.png){.thumbnail}
 
 ## Sprawdź również <a name="go-further"></a>
- 
+
 Dołącz do [grona naszych użytkowników](/links/community).

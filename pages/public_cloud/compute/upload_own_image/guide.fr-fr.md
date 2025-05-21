@@ -68,7 +68,7 @@ source openrc.sh
 - Définit les propriétés recommandées. Une configuration optimale permet l'utilisation de fonctionnalités telles que *live-snapshot* et *cloud-init* (nécessite l'utilisation du nom d'utilisateur)
 
 ```sh
-openstack image create --disk-format raw --container-format bare --file debian9.raw "Debian 9 - Mon image" --private --property distribution=debian --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property image_original_user=debian
+openstack image create --disk-format raw --container-format bare --file debian9.raw "Debian 9 - My Image" --private --property distribution=debian --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property image_original_user=debian
 ```
 
 #### Depuis l'interface Horizon

@@ -18,10 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
 ## Objetivo
 
 Las instancias de Public Cloud son fáciles de desplegar y gestionar. Sin embargo, como miembro del ecosistema Public Cloud de OVHcloud, las instancias ofrecen numerosas opciones de configuración y pueden adaptarse a diferentes casos de uso. Las siguientes instrucciones incluyen todos los pasos necesarios (y opcionales) para crear una instancia en el área de cliente de OVHcloud y acceder a ella de forma remota.

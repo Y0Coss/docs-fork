@@ -18,10 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 As instâncias Public Cloud são fáceis de implementar e gerir. No entanto, enquanto membro do ecossistema Public Cloud da OVHcloud, as instâncias oferecem numerosas opções de configuração e podem ser adaptadas a diferentes casos de utilização. As instruções seguintes incluem todas as etapas necessárias (e também as etapas opcionais) para criar uma instância na Área de Cliente OVHcloud e aceder à distância.  
