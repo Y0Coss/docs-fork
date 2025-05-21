@@ -26,7 +26,7 @@ Le réseau vRack est un réseau privé mondial qui relie différents produits OV
 
 > [!primary]
 >
-> Le vRack prend en charge le routage public IPv4 et IPv6 avec des blocs d’adresses Additional IP. Vous pouvez trouver des instructions vous indiquant comment configurer des blocs IPv4 dans ce guide: [Configurer un bloc IP dans le vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack/).
+> Le vRack prend en charge le routage public IPv4 et IPv6 avec des blocs d’adresses Additional IP. Retrouvez les instructions sur la configuration de blocs IPv4 dans ce guide: [Configurer un bloc IP dans le vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack/).
 >
 
 > [!primary]
