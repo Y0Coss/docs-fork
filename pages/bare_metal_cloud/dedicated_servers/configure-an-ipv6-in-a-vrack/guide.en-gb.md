@@ -210,7 +210,7 @@ First, let's add an IP address on the vRack interface (in our example "eth1"):
 $ sudo ip address add 2001:41d0:abcd:ef00::2/64 dev eth1
 ```
 
-(Please note that the first IP address in a block, `2001:41d0:abcd:ef00::1/64` is gateway IP address and must not be used for host addressing).
+Please note that the first IP address in a block, `2001:41d0:abcd:ef00::1/64` is the gateway IP address and must not be used for host addressing.
 
 Optionally, if you want to use the vRack interface as the main one for IPv6 traffic, the default route can be configured the following way:
 
