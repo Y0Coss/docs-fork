@@ -1,7 +1,7 @@
 ---
 title: "How to correct the contact details of a domain name owner"
 excerpt: "Find out how to correct or complete the contact information of a domain name owner after receiving an alert email from OVHcloud"
-updated: 2025-05-20
+updated: 2025-05-21
 ---
 
 ## Objective

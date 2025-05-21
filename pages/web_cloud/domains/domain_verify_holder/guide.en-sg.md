@@ -1,27 +1,27 @@
 ---
-title: "Correct the contact details of a domain name holder"
-excerpt: "Find out how to correct or complete the contact information of a domain name holder after receiving an alert email from OVHcloud"
-updated: 2025-05-20
+title: "How to correct the contact details of a domain name owner"
+excerpt: "Find out how to correct or complete the contact information of a domain name owner after receiving an alert email from OVHcloud"
+updated: 2025-05-21
 ---
 
 ## Objective
 
-Have you just received an email from OVHcloud notifying you that an action is required for your domain name? Does the same email inform you that the contact details (contact information) relating to your domain name holder must be corrected or completed?
+Have you received an email from OVHcloud notifying you that an action is required for your domain name? Does the same email inform you that the contact details (contact information) relating to your domain name owner must be corrected or completed?
 
-**Find out how to correct or complete the contact information of a domain name holder after receiving an alert email from OVHcloud.**
+**Find out how to correct or complete the contact information of a domain name owner after receiving an alert email from OVHcloud.**
 
 ## Requirements
 
-- A [domain name](/links/web/domains) registered with OVHcloud.
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
-- You need to have received an email from OVHcloud stating that action is required regarding your domain name holder contact details.
+- You have a [domain name](/links/web/domains) registered with OVHcloud.
+- You have access to the [OVHcloud Control Panel](/links/manager).
+- You have received an email from OVHcloud stating that action is required regarding your domain name owner contact details.
 - Check the following points to ensure that this is not a fraudulent email:
 - The subject of the email contains your NIC handle (e.g.: `aa00000-ovh`) and your domain name (e.g.: `domain.tld`).
 - The URL mentioned in the email starts off with: `https://www.ovh.com/manager/#/web/domain/operation/`.
 
-## In practice
+## Instructions
 
-### 1 - Correct or complete the contact details/contact information of the domain name holder
+### 1 - Correct or complete the contact details of the domain name owner
 
 Click on the tabs below to view each of the **5** steps.
 
@@ -44,7 +44,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> You will then find the **Contacts** comment in the **Plan** box. Click the `...`{.action} button on the right, then `Manage contacts`{.action}.
 >>
->> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
+>> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-owner.png){.thumbnail}
 >>
 > **Step 4**
 >>
@@ -56,7 +56,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> > [!warning]
 >> >
->> > Any change to the owner's first name, surname, organization, legal status or email address is considered a **owner change**.
+>> > Any change to the owner's first name, surname, organization, legal status or email address is considered a **change of owner**.
 >> >
 >> > If you modify **only** the owner's contact details other than those mentioned above, edit the appropriate fields, then click `Confirm`{.action}. In this case it will not be necessary to initiate a request for a change of owner. For this operation, you do not need to confirm the changes by email.
 >> >
@@ -64,13 +64,13 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> ![Owner informations](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/owner.png){.thumbnail}
 >>
->> Find more details on changing the holder in our guide: “[Domain name - How do I change the owner](/pages/web_cloud/domains/trade_domain)”.
+>> Find more details on changing the owner in our guide: “[Domain name - How do I change the owner](/pages/web_cloud/domains/trade_domain)”.
 
-### 2 - Relaunch the operation to verify the contact details/information of the domain name holder
+### 2 - Relaunch the operation to verify the contact details of the domain name owner
 
 > [!warning]
 >
-> If the corrections made following the first part of this guide required the initialization of a change of holder for the domain name, first complete the change of holder **before** continuing with the actions described in this guide.
+> If the corrections in the first part of this guide required the initialization of a change of owner for the domain name, complete the change of owner **before** continuing with the actions described in this guide.
 >
 
 Click on the tabs below to view each of the **4** steps.
@@ -104,7 +104,7 @@ It will take a few minutes to complete the operation. Refresh the `Domain name o
 
 If the operation has completed successfully, the row for the processed operation no longer appears.
 
-If applicable, this means that a correction is always necessary in the domain name holder’s contact details. If this is the case, please follow this guide from the beginning to resolve the issue.
+If applicable, a correction is necessary in the domain name owner’s contact details. If this is the case, please follow this guide from the beginning to resolve the issue.
 
 ## Go further
 

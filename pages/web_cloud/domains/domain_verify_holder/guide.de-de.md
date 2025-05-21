@@ -1,7 +1,7 @@
 ---
 title: "Angaben zum Inhaber eines Domainnamens korrigieren"
 excerpt: "Erfahren Sie, wie Sie die Kontaktinformationen des Inhabers eines Domainnamens nach Erhalt einer E-Mail von OVHcloud korrigieren oder vervollständigen können"
-updated: 2025-05-20
+updated: 2025-05-21
 ---
 
 ## Ziel

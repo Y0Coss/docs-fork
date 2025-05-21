@@ -1,7 +1,7 @@
 ---
 title: "Corriger les coordonnées du titulaire d'un nom de domaine"
 excerpt: "Découvrez comment corriger ou compléter les informations de contact du titulaire d'un nom de domaine suite à la réception d'un e-mail d'alerte d'OVHcloud"
-updated: 2025-05-20
+updated: 2025-05-21
 ---
 
 ## Objectif
