@@ -1,7 +1,7 @@
 ---
 title: "Primeros pasos con un hosting Cloud Web"
 excerpt: "Descubra cómo empezar con un alojamiento Cloud Web"
-updated: 2025-04-28
+updated: 2025-05-21
 ---
 
 ## Objetivo
