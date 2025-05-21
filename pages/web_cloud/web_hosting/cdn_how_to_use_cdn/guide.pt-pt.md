@@ -6,7 +6,7 @@ updated: 2025-05-21
 
 ## Objetivo
 
-Se deseja melhorar a experiência dos seus utilizadores acelerando o seu site, a técnica mais eficaz é ativar um CDN (Content Delivery Network). Este último permite colocar em cache os ficheiros estáticos tais como as imagens, os css e os javascript, nos servidores mais próximos dos seus clientes.
+Se deseja melhorar a experiência dos seus utilizadores acelerando o seu site, a técnica mais eficaz é ativar um CDN (Content Delivery Network). Este último permite colocar em cache os ficheiros estáticos tais como as imagens, os CSS e os JavaScript, nos servidores mais próximos dos seus clientes.
 
 **Saiba como melhorar o seu website acelerando o seu carregamento no seu alojamento Web graças ao CDN.**
 
@@ -16,7 +16,7 @@ Se deseja melhorar a experiência dos seus utilizadores acelerando o seu site, a
 
 O CDN (Content Delivery Network) é literalmente uma rede dedicada à disponibilização de conteúdos. Utiliza vários servidores implementados em todo o mundo para apresentar o seu website. Quanto mais próximos esses servidores estiverem dos seus utilizadores, mais rápido será o seu website para eles.
 
-Para funcionar, cada servidor guarda na sua memória cache uma parte do seu website. Geralmente, é aconselhável incluir os ficheiros ditos estáticos: as imagens, os ficheiros javascript e css que permitem o bom funcionamento do seu site, mas que são modificados muito raramente.
+Para funcionar, cada servidor guarda na sua memória cache uma parte do seu website. Geralmente, é aconselhável incluir os ficheiros ditos estáticos: as imagens, os ficheiros JavaScript e CSS que permitem o bom funcionamento do seu site, mas que são modificados muito raramente.
 
 ## Requisitos
 
@@ -53,7 +53,7 @@ Assinale a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Va
 
 > [!warning]
 > 
-> No caso de um nome de domínio externo na OVHcloud adicionado à opção multisite no alojamento Web, deve mencionar o endereço IP do CDN do seu alojamento na zona DNS do nome do domínio.<br>
+> No caso de um nome de domínio externo na OVHcloud adicionado à opção multisite no alojamento Web, deve mencionar o endereço IP do CDN do seu alojamento na zona DNS do nome do domínio.
 > Consulte a [lista de endereços IP dos clusters e alojamento Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) para encontrar o endereço IP específico do CDN do seu cluster.
 
 **Porque não posso beneficiar do IP geolocalizado com a opção CDN?**
@@ -182,11 +182,11 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 
 - **Prefetch**: Antecipe o carregamento do próximo recurso. Introduza-a automaticamente na cache CDN graças ao *header link* do seu website. Este mecanismo é utilizado principalmente para carregar CSS, JavaScript, imagens, favicons ou ainda apólices web que são exigidas pelo tema do website. 
 
-	No exemplo abaixo, quando está na página de transações que exibe "Hi", um sub-pedido despoleta o pré-carregamento do recurso `/cache/style.css`.
+	No exemplo abaixo, quando está na página de transações que exibe "Hi", um sub-pedido despoleta o pré-carregamento do recurso `/cache/style.CSS`.
 
 	```
 	<?php
-	header("Link: </cache/style.css>; rel=prefetch");
+	header("Link: </cache/style.CSS>; rel=prefetch");
 	print 'Hi'
 	?>
 	```
@@ -228,7 +228,7 @@ Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.acti
 
 * **Nome da regra**: Atribua um nome à sua regra.
 * **Tipo de recurso**: Escolha entre as opções seguintes:
-    * **Extensão**: Introduza uma extensão de ficheiro válida sem que tenha de o aperfeiçoar, por exemplo: css
+    * **Extensão**: Introduza uma extensão de ficheiro válida sem que tenha de o aperfeiçoar, por exemplo: CSS
     * **Pasta**:  Introduza um caminho válido para uma das pastas presentes no diretório raiz do seu website.
     * **Expressão regular personalizada**: Aplica-se a todas as URI do seu website.
     * **URI**: Indique o subconjunto de recursos do seu website através do seu caminho no URL.
@@ -266,8 +266,8 @@ Mesmo que não utilize um CMS, poderá beneficiar da cache do CDN. Para isso, de
 3. Header set Cache-Control "max-age=604800, public"
 4. </FilesMatch>
 5. 
-6. # Cache dos javascript e CSS durante 1 mês
-7. <FilesMatch "\.(js|css)$">
+6. # Cache dos JavaScript e CSS durante 1 mês
+7. <FilesMatch "\.(js|CSS)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```

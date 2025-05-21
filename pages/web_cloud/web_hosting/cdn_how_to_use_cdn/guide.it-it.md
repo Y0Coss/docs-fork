@@ -6,7 +6,7 @@ updated: 2025-05-21
 
 ## Obiettivo
 
-Per accelerare la velocità di caricamento del tuo sito Web e migliorare così l’esperienza utente, la tecnica più efficace consiste nell’attivare la CDN (Content Delivery Network), che consente di conservare in cache i file che non richiedono un continuo aggiornamento (cosiddetti "statici"), come le immagini, i css e i javascript nei server più vicini ai tuoi utenti.
+Per accelerare la velocità di caricamento del tuo sito Web e migliorare così l’esperienza utente, la tecnica più efficace consiste nell’attivare la CDN (Content Delivery Network), che consente di conservare in cache i file che non richiedono un continuo aggiornamento (cosiddetti "statici"), come le immagini, i CSS e i JavaScript nei server più vicini ai tuoi utenti.
 
 **Questa guida ti mostra come gestire l’opzione CDN del tuo hosting Web.**
 
@@ -16,7 +16,7 @@ Per accelerare la velocità di caricamento del tuo sito Web e migliorare così l
 
 La CDN (Content Delivery Network) è letteralmente una rete dedicata alla consegna dei contenuti  e per visualizzare il contenuto del tuo sito Web utilizza vari server sparsi in tutto il mondo.  Più i server vicini ai tuoi utenti, maggiore sarà la velocità di caricamento del tuo sito Web sui loro dispositivi.
 
-Per funzionare correttamente, ciascun server salva nella memoria cache una parte del tuo sito Web. In generale, ti consigliamo di includere i file cosiddetti "statici": le immagini, i file javascript e css che garantiscono il buon funzionamento del tuo server, ma che vengono modificati molto raramente.
+Per funzionare correttamente, ciascun server salva nella memoria cache una parte del tuo sito Web. In generale, ti consigliamo di includere i file cosiddetti "statici": le immagini, i file JavaScript e CSS che garantiscono il buon funzionamento del tuo server, ma che vengono modificati molto raramente.
 
 ## Prerequisiti
 
@@ -183,11 +183,11 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 - **Prefetch**: Anticipa il caricamento della risorsa seguente. Precaricalo automaticamente nella cache CDN grazie all *header link* del tuo sito Web. Questo meccanismo è utilizzato principalmente per caricare CSS, JavaScript, immagini, favicons o ancora polizze Web richieste per il tema del sito Web. 
 
-	Nel nostro esempio, quando sei sulla pagina corrente che mostra "Hi", un sottorichiesto attiva il precaricamento della risorsa `/cache/style.css`.
+	Nel nostro esempio, quando sei sulla pagina corrente che mostra "Hi", un sottorichiesto attiva il precaricamento della risorsa `/cache/style.CSS`.
 
 	```	
 	<?php
-	header("Link: </cache/style.css>; rel=prefetch");
+	header("Link: </cache/style.CSS>; rel=prefetch");
 	print 'Hi'
 	?>
 	```
@@ -229,7 +229,7 @@ Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.actio
 
 * **Regola**: Assegna un nome alla tua regola.
 * **Tipo di risorsa**: Scegli tra le seguenti opzioni:
-    * **Estensione**: Inserisci un'estensione di file valida senza apportare modifiche, ad esempio: css
+    * **Estensione**: Inserisci un'estensione di file valida senza apportare modifiche, ad esempio: CSS
     * **Cartella**:  Inserisci un percorso valido per una delle cartelle presenti nella directory di root del tuo sito web.
     * **Espressione regolare personalizzata**: e si applica a tutti gli URI del tuo sito Web.
     * **URI**: Indica la sottounità di risorse del tuo sito Web, tramite il percorso che conduce all'URL.
@@ -265,8 +265,8 @@ Se non utilizzi un CMS, puoi usufruire della cache della CDN. Per farlo, è nece
 3. Header set Cache-Control "max-age=604800, public"
 4. </FilesMatch>
 5. 
-6. # Cache dei javascript e CSS per 1 mese
-7. <FilesMatch "\.(js|css)$">
+6. # Cache dei JavaScript e CSS per 1 mese
+7. <FilesMatch "\.(js|CSS)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```

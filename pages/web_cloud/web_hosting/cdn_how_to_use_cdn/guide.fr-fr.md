@@ -183,11 +183,11 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Prefetch** : Anticipez le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au *header link* de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web. 
 
-	Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant « Hi », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.css` .  
+	Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant « Hi », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.CSS` .  
 
 	```	
 	<?php
-	header("Link: </cache/style.css>; rel=prefetch");
+	header("Link: </cache/style.CSS>; rel=prefetch");
 	print 'Hi'
 	?> 
 	```
@@ -196,7 +196,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Purge avancée** : Personnalisez votre purge en choisissant les éléments du cache à vider : tout le site, un dossier, une URI, une extension de fichiers ou à l'aide d'une expression régulière personnalisée. 
 
-	Depuis l'onglet Multisite, cliquez sur le bouton `...`{.action} à droite de l'entrée multisite puis sur `Purger le CDN`{.action}. 
+	Depuis l'onglet `Multisite`{.action}, cliquez sur le bouton `...`{.action} à droite de l'entrée multisite puis sur `Purger le CDN`{.action}.
 
 	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
@@ -229,7 +229,7 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 * **Nom de règle** : Attribuez un nom à votre règle.
 * **Type de ressource** : Choisissez parmi les choix ci-dessous:
-    * **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : css
+    * **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : CSS
     * **Dossier** :  Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
     * **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web.
     * **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
@@ -266,7 +266,7 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 4. </FilesMatch>
 5. 
 6. # Cache des JavaScript et CSS durant 1 mois
-7. <FilesMatch "\.(js|css)$">
+7. <FilesMatch "\.(js|CSS)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```

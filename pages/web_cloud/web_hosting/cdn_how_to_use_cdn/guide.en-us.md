@@ -183,11 +183,11 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 - **Prefetch**: Anticipate the next resource being loaded. Preload it automatically in the CDN cache using your website’s *header link*. This mechanism is mainly used to load CSS, JavaScript, images, favicons or web fonts that are required by the website theme.
 
-	In the example below, when the current page is displaying 'Hi', a subquery triggers the preloading of the resource `/cache/style.css`.
+	In the example below, when the current page is displaying 'Hi', a subquery triggers the preloading of the resource `/cache/style.CSS`.
 
 	```
 	<?php
-	header("Link: </cache/style.css>; rel=prefetch");
+	header("Link: </cache/style.CSS>; rel=prefetch");
 	print 'Hi'
 	?>
 	```
@@ -229,7 +229,7 @@ Under **Cache** rules, click the `Add a rule`{.action} button.
 
 * **Rule name**: Give your rule a name.
 * **Resource type**: Choose from the options below:
-    * **Extension**: Please enter a valid file extension without putting a period, for example: css
+    * **Extension**: Please enter a valid file extension without putting a period, for example: CSS
     * **File**:  Please enter a valid path for one of the folders in the root directory of your website.
     * **Custom regular expression**: It applies to all URIs on your website.
     * **URI**: Enter the subset of your website’s resources via their URL path.
@@ -266,7 +266,7 @@ If you are not using a CMS, you can also use the CDN cache. To do this, you must
 4. </FilesMatch>
 5. 
 6. # Cache JavaScript and CSS for 1 month
-7. <FilesMatch "\.(js|css)$">
+7. <FilesMatch "\.(js|CSS)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```

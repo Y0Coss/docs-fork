@@ -6,7 +6,7 @@ updated: 2025-05-21
 
 ## Ziel 
 
-Sie können die Benutzerfreundlichkeit Ihrer Webseiten durch die Beschleunigung des Seitenaufbaus verbessern. Die effektivste Technik hierzu können Sie mit der Aktivierung eines CDN (Content Delivery Network) einsetzen. Diese Option ermöglicht das Zwischenspeichern statischer Dateien wie Bilder, CSS und Javascript auf Servern, die näher bei Ihren Besuchern liegen.
+Sie können die Benutzerfreundlichkeit Ihrer Webseiten durch die Beschleunigung des Seitenaufbaus verbessern. Die effektivste Technik hierzu können Sie mit der Aktivierung eines CDN (Content Delivery Network) einsetzen. Diese Option ermöglicht das Zwischenspeichern statischer Dateien wie Bilder, CSS und JavaScript auf Servern, die näher bei Ihren Besuchern liegen.
 
 **Diese Anleitung erklärt, wie Sie die CDN-Option für Ihr Webhosting verwalten.**
 
@@ -16,7 +16,7 @@ Sie können die Benutzerfreundlichkeit Ihrer Webseiten durch die Beschleunigung 
 
 Ein CDN (Content Delivery Network) bezeichnet ein Netzwerk für die Bereitstellung von Inhalten. Es werden mehrere Server weltweit bereitgestellt, um Ihre Webseiteninhalte anzuzeigen. Je näher diese Server bei Ihren Benutzern liegen, desto schneller funktioniert ihre Webseite.
 
-Jeder Server speichert einen Teil Ihrer Webseite im Cache, um die Funktion zu gewährleisten. Im Allgemeinen ist es ratsam, so genannte statische Dateien einzubeziehen: Bilder, Javascript- und CSS-Dateien, die das ordnungsgemäße Funktionieren Ihrer Webseite ermöglichen, aber nur sehr selten geändert werden.
+Jeder Server speichert einen Teil Ihrer Webseite im Cache, um die Funktion zu gewährleisten. Im Allgemeinen ist es ratsam, so genannte statische Dateien einzubeziehen: Bilder, JavaScript- und CSS-Dateien, die das ordnungsgemäße Funktionieren Ihrer Webseite ermöglichen, aber nur sehr selten geändert werden.
 
 ## Voraussetzungen
 
@@ -183,11 +183,11 @@ Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`
 
 - **Prefetch**: Planen Sie das Laden der nächsten Ressource. Laden Sie sie automatisch im CDN Cache mithilfe des *header link* Ihrer Website. Dieser Mechanismus wird hauptsächlich verwendet, um CSS, JavaScript, Bilder, Favicons oder Schriftarten zu laden, die von der Website angefordert werden. 
 
-	Im folgenden Beispiel wird, wenn die aktuelle Seite "Hi" anzeigt, eine Subanfrage das Vorladen der Ressource`/cache/style.css` auslösen.  
+	Im folgenden Beispiel wird, wenn die aktuelle Seite "Hi" anzeigt, eine Subanfrage das Vorladen der Ressource`/cache/style.CSS` auslösen.  
 
 	```	
 	<?php
-	header("Link: </cache/style.css>; rel=prefetch");
+	header("Link: </cache/style.CSS>; rel=prefetch");
 	print 'Hi'
 	?> 
 	```
@@ -229,7 +229,7 @@ Klicken Sie unter **Cache-Regeln** auf den Button `Regel hinzufügen`{.action}.
 
 * **Regelname**: Weisen Sie Ihrer Regel einen Namen zu.
 * **Ressourcenart**: Wählen Sie aus den folgenden Optionen:
-    * **Endung**: Geben Sie eine gültige Dateiendung ohne Punkt ein, zum Beispiel: css
+    * **Endung**: Geben Sie eine gültige Dateiendung ohne Punkt ein, zum Beispiel: CSS
     * **Ordner**:  Geben Sie einen gültigen Pfad zu einem Ordner im Wurzelverzeichnis Ihrer Website an.
     * **Eigener regulärer Ausdruck**: Gilt für alle URIs Ihrer Website.
     * **URI**: Geben Sie die Teilmenge der Ressourcen Ihrer Website über den URL-Pfad ein.
@@ -265,8 +265,8 @@ Sie können auch dann vom CDN-Cache profitieren, wenn Sie kein CMS verwenden. Hi
     Header-Set Cache-Control "max-age=604800, public"
     </FilesMatch>
 
-# Caching von Javascript und CSS für einen Monat
-    <FilesMatch "\.(js|css)$">
+# Caching von JavaScript und CSS für einen Monat
+    <FilesMatch "\.(js|CSS)$">
     Header-Set Cache-Control "max-age=2592000"
     </FilesMatch>
 ```

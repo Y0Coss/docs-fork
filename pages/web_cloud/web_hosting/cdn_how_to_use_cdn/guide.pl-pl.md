@@ -53,7 +53,7 @@ Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a nast
 
 > [!warning]
 > 
-> W przypadku nazwy domeny wykupionej poza OVHcloud i dodanej w opcji Multisite w hostingu WWW, należy podać adres IP Twojego hostingu w strefie DNS dla nazwy domeny.<br>
+> W przypadku nazwy domeny wykupionej poza OVHcloud i dodanej w opcji Multisite w hostingu WWW, należy podać adres IP Twojego hostingu w strefie DNS dla nazwy domeny.
 > Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
  
 **Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?**
@@ -183,11 +183,11 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 - **Prefetch**: Przewiduj załadowanie tego zasobu. Prześlij ją automatycznie do pamięci cache CDN za pomocą *header link* Twojej strony WWW. Mechanizm ten jest używany przede wszystkim do ładowania CSS, JavaScript, zdjęć, plików wideo lub czcionek www, które są wymagane przez motyw strony internetowej. 
 
-	W poniższym przykładzie, gdy jesteś na bieżącej stronie wyświetlającej "Hi", zapytanie podrzędne uruchamia wstępne załadowanie zasobów `/cache/style.css`.  
+	W poniższym przykładzie, gdy jesteś na bieżącej stronie wyświetlającej "Hi", zapytanie podrzędne uruchamia wstępne załadowanie zasobów `/cache/style.CSS`.  
 
 	```	
 	<?php
-	header("Link: </cache/style.css>; rel=prefetch");
+	header("Link: </cache/style.CSS>; rel=prefetch");
 	print Hi
 	?> 
 	```
@@ -229,7 +229,7 @@ W pozycji **Reguły cache** kliknij przycisk `Dodaj regułę`{.action}.
 
 * **Nazwa reguły**: Nadaj nazwę swojej regule.
 * **Rodzaj zasobów**: Wybierz spośród poniższych opcji:
-    * **Rozszerzenie**: Wprowadź poprawne rozszerzenie plików, na przykład css
+    * **Rozszerzenie**: Wprowadź poprawne rozszerzenie plików, na przykład CSS
     * **Dokumentacja**:  Wprowadź prawidłową ścieżkę dla jednego z katalogów znajdujących się w katalogu głównym Twojej strony WWW.
     * **Regularne spersonalizowane**: wyrażenie: Dotyczy ona wszystkich URI Twojej strony WWW.
     * **URI**: Wpisz podzbiór zasobów Twojej strony WWW, korzystając z jej ścieżki do URL.
@@ -266,7 +266,7 @@ Jeśli nie korzystasz z CMS-a, również możesz korzystać z usługi GeoCache. 
 4. </FilesMatch>
 5. 
 6. # Przechowywanie plików JavaScript i CSS przez 1 miesiąc
-7. <FilesMatch "\.(js|css)$">
+7. <FilesMatch "\.(js|CSS)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```

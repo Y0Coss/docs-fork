@@ -184,11 +184,11 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 - **Prefetch** : Adelántese la carga del siguiente recurso. Precargue automáticamente en la caché CDN gracias al *header link* de su sitio web. Este mecanismo se utiliza principalmente para cargar CSS, JavaScript, imágenes, favicons o incluso tipos de letra web que son necesarios para el tema del sitio web. 
 
-	En el ejemplo de abajo, cuando se encuentra en la página actual que muestra "Hi", una subpetición inicia la precarga de la fuente `/cache/style.css` .  
+	En el ejemplo de abajo, cuando se encuentra en la página actual que muestra "Hi", una subpetición inicia la precarga de la fuente `/cache/style.CSS` .  
 
 	```
 	<?php
-	header("Link: </cache/style.css>; rel=prefetch");
+	header("Link: </cache/style.CSS>; rel=prefetch");
 	print 'Hi'
 	?>
 	```
@@ -230,7 +230,7 @@ Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla
 
 * **Nombre de regla**: Asigne un nombre a la regla.
 * **Tipo de recurso**: Elija entre las siguientes opciones:
-    * **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: css
+    * **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: CSS
     * **Carpeta**:  Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
     * **Expresión regular personalizada**: y se aplica a todas las URI de su sitio web.
     * **URI**: Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL.
@@ -267,7 +267,7 @@ En caso de no utilizar ningún sistema de gestión de contenidos, puede disponer
 4. </FilesMatch>
 5. 
 6. # Caché de los JavaScript y CSS durante un mes
-7. <FilesMatch "\.(js|css)$">
+7. <FilesMatch "\.(js|CSS)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```
