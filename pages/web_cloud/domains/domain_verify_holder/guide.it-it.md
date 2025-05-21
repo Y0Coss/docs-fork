@@ -44,7 +44,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 >> Dopodiché visualizzi la voce **Contatti** nel riquadro **Abbonamento**. Clicca sul pulsante `...`{.action} a destra e poi su `Gestisci i contatti`{.action}.
 >>
->> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-information-holder.png){.thumbnail}
+>> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
 > **Passaggio 4**
 >>

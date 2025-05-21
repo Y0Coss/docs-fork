@@ -44,7 +44,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> You will then find the **Contacts** comment in the **Plan** box. Click the `...`{.action} button on the right, then `Manage contacts`{.action}.
 >>
->> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-owner.png){.thumbnail}
+>> ![Change owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/manage-contacts-verify-contact-informations-holder.png){.thumbnail}
 >>
 > **Step 4**
 >>
