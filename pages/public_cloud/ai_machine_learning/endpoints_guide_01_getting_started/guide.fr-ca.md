@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Premiers pas (EN)
 excerpt: Découvrez AI Endpoints, la plateforme d'OVHcloud dédiée aux développeurs pour accéder à des modèles d'IA de pointe via des API. Pas d'expertise IA requise.
-updated: 2025-05-05
+updated: 2025-05-21
 ---
 
 > [!primary]
@@ -129,11 +129,11 @@ This will take you to a dedicated page with several options for interacting with
 
 To maintain security and control over your API access, it is essential to **revoke keys that are no longer needed**.
 
-To revoke one of your API access keys, log in to the [Control Panel](/links/manager) and navigate to the **Public Cloud** section. From there, choose your desired **Public Cloud project** and proceed to the **AI & Machine Learning** category in the left-hand menu. Select **AI Endpoints** and click on the `API key`{.action} management section.
+To revoke one of your API access keys, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `AI Endpoints`{.action} underneath **AI & Machine Learning** in the left-hand menu, then on then `API key`{.action} management section.
 
 On the **AI key management** page, you will see a table listing all your generated API access keys, including their **name**, **description**, and **expiry date**. Find the key you want to revoke and click the three dots `...`{.action} button next to its details. This will open a menu where you can select `Delete`{.action}. Confirm this action to complete the revocation.
 
->> ![AI Endpoints access key cancellation](images/api-access-key-revoke.png){.thumbnail}
+![AI Endpoints access key cancellation](images/api-access-key-revoke.png){.thumbnail}
 
 **Verification**
 
