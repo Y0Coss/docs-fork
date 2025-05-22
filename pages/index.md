@@ -531,7 +531,7 @@
             + [Advanced tools](hosted_private_cloud/nutanix_on_ovhcloud/09-advanced-tools)
             + [Migrating to Nutanix via the Nutanix Move tool](hosted_private_cloud/nutanix_on_ovhcloud/32-move-to-nutanix)
             + [Activate Windows VMs installed on Nutanix by OVHcloud](hosted_private_cloud/nutanix_on_ovhcloud/34-activate_windows_vm)
-            + [Adding a node in a Nutanix cluster](hosted_private_cloud/nutanix_on_ovhcloud/33-add-node)
+            + [Add or Remove Nodes in a Nutanix Cluster (Scale In/Out)](hosted_private_cloud/nutanix_on_ovhcloud/33-add-node)
             + [Replacing Prism Central from Small Mode to X-Large Mode](hosted_private_cloud/nutanix_on_ovhcloud/35-prism-central-expansion)
             + [Setting up NCM Self Service (CALM)](hosted_private_cloud/nutanix_on_ovhcloud/36-self-service-calm)
             + [Setting up Nutanix Objects](hosted_private_cloud/nutanix_on_ovhcloud/37-objects)
