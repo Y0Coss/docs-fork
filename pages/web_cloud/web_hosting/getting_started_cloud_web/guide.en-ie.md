@@ -46,9 +46,9 @@ To access the runtime software applications for your [Cloud Web](/links/web/host
 
 When you set up your hosting plan, a runtime software application will be created automatically. It is included as the `Default choice` in the table that appears. To modify a runtime software that has already been set, click on the three dots next to it, then `Modify`{.action}. 
 
-If you have the [Cloud Web](/links/web/hosting-cloud-web-offer) offer with 2 vCores, you can add a second runtime environment to your offer (maximum 2 different runtime environments per offer) by clicking on the `Actions`{.action} button, then on `Add a runtime software application`{.action}.
+If you have the [Cloud Web](/links/web/hosting-cloud-web-offer) offer with 2 vCores, you can add a second runtime environment (maximum 2 different runtime environments per service) by clicking on the `Actions`{.action} button, then on `Add a runtime software application`{.action}.
 
-To check that you have 2 vCores with your Cloud Web hosting plan, log in to the [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. On the page that pops up, in the box **Plan** and under the mention `Service plan`, check that the reference `Cloud Web 3`{.action} is indicated.
+To check that you have 2 vCores with your Cloud Web hosting plan, log in to the [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. In the box **Plan** and under `Service plan`, check that the reference `Cloud Web 3`{.action} is present.
 
 Once you have done this, please ensure that you have the runtime software application (or applications) required for your project before you continue:
 
