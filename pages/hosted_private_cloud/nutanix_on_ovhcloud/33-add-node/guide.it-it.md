@@ -4,29 +4,6 @@ excerpt: 'Scale your Nutanix on OVHcloud cluster by adding or removing nodes via
 updated: 2025-05-22
 ---
 
-<style>
- pre {
-     font-size: 14px !important;
- }
- pre.bgwhite {
-   background-color: #fff !important;
-   color: #000 !important;
-   font-family: monospace !important;
-   padding: 5px !important;
-   margin-bottom: 5px !important;
- }
- pre.bgwhite code {
-   background-color: #fff !important;
-   border: solid 0px transparent !important;
-   font-family: monospace !important;
-   font-size: 0.90em !important;
-   color: #000 !important;
- }
- .small {
-     font-size: 0.90em !important;
- }
-</style>
-
 ## Objective
 
 Nutanix clusters on OVHcloud are scalable. You can now **add (scale out)** or **remove (scale in)** nodes directly from the OVHcloud Control Panel or the OVHcloud API.
@@ -82,7 +59,7 @@ The **Number of nodes** area will show a new node to install.
 > OVHcloud Control Panel
 >> If you click `Manage my nodes`{.action} again, you will see a list of your nodes. For any node with an **OS not installed** status, click the *more options* `...`{.action} button and select `Install`{.action}.
 >>
->> [Node status](images/install-os-01.png){.thumbnail}
+>> ![Node status](images/install-os-01.png){.thumbnail}
 >>
 >> Enter the configuration details for your node. Be sure to install the same AOS version as your cluster.
 >>
