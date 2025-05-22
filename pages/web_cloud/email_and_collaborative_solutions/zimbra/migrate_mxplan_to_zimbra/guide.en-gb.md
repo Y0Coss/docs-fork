@@ -64,15 +64,15 @@ On the <https://omm.ovh.net/> page, in the `Migration`{.action} tab, click `New 
 **Account**
 
 - **Source Account**:
-    - **Server type**: Select `Hosted by OVHcloud (Autodetect)`, this allows you to automatically fill in the information, with the exception of the password.
+    - **Server type**: Selecting `Hosted by OVHcloud (Autodetect)` allows you to automatically fill in the information, with the exception of the password.
     - **Server URL**: This field is filled in automatically.
     - **Login**: Enter the full email address of the account to be migrated (e.g.: `contact@mydomain.ovh`).
-    - **Password**: Enter the password for the email address concerned.
+    - **Password**: Enter the password for the email account concerned.
 - **Destination Account**:
     - **Server type**: Select `Zimbra` for the destination server type.
     - **Server URL**: Enter the Zimbra server address <https://zimbra1.mail.ovh.net>.
-    - **Login**: Enter the full email address of the target Zimbra account (e.g.:`contact2@mydomain.ovh`).
-    - **Password**: Enter the password for the target Zimbra account email address.
+    - **Login**: Enter the full email address of the target Zimbra account (e.g.: `contact2@mydomain.ovh`).
+    - **Password**: Enter the password for the target Zimbra account.
 
 **Options**
 
