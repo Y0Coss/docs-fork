@@ -4,29 +4,6 @@ excerpt: "Ajustez dynamiquement votre cluster Nutanix on OVHcloud en ajoutant ou
 updated: 2025-05-22
 ---
 
-<style>
- pre {
-     font-size: 14px !important;
- }
- pre.bgwhite {
-   background-color: #fff !important;
-   color: #000 !important;
-   font-family: monospace !important;
-   padding: 5px !important;
-   margin-bottom: 5px !important;
- }
- pre.bgwhite code {
-   background-color: #fff !important;
-   border: solid 0px transparent !important;
-   font-family: monospace !important;
-   font-size: 0.90em !important;
-   color: #000 !important;
- }
- .small {
-     font-size: 0.90em !important;
- }
-</style>
-
 ## Objectif
 
 Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajouter (scale out)** ou **retirer (scale in)** des nœuds directement depuis l'espace client ou l'API OVHcloud.
