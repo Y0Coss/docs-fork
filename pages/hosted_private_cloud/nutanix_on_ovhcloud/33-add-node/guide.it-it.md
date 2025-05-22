@@ -72,10 +72,10 @@ The **Number of nodes** area will show a new node to install.
 >> ![Confirmation message](images/install-os-03.png){.thumbnail}
 >>
 > OVHcloud API
->> To install your node via the [OVHcloud API](https://api.ovh.com/){.external}, use this call:
+>> To install your node via the [OVHcloud API](/links/api), use this call:
 >>
 >> > [!api]
->> > @api {v1} PUT /nutanix/{serviceName}/nodes/{server}/deploy
+>> > @api {v1} /nutanix PUT /nutanix/{serviceName}/nodes/{server}/deploy
 >> >
 >>
 
@@ -124,19 +124,19 @@ Please refer to the documentation below:
 >> - Get the Boot ID (enter *power* as the **bootType**):
 >>
 >> > [!api]
->> > @api {v1} GET /dedicated/server/{serviceName}/boot
+>> > @api {v1} /nutanix GET /dedicated/server/{serviceName}/boot
 >> >
 >>
 >> - Set the Boot ID: 
 >>
 >> > [!api]
->> > @api {v1} PUT /dedicated/server/{serviceName}
+>> > @api {v1} /nutanix PUT /dedicated/server/{serviceName}
 >> >
 >>
 >> - Power down the node:
 >>
 >> > [!api]
->> > @api {v1} POST /dedicated/server/{serviceName}/reboot
+>> > @api {v1} /nutanix POST /dedicated/server/{serviceName}/reboot
 >> >
 >>
 
@@ -164,7 +164,7 @@ Please refer to the documentation below:
 >> To uninstall your node via the [OVHcloud API](/links/api), use this call:
 >>
 >> > [!api]
->> > @api {v1} POST /nutanix/{serviceName}/node/{server}/terminate
+>> > @api {v1} /nutanix POST /nutanix/{serviceName}/node/{server}/terminate
 >> >
 >>
 
