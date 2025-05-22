@@ -46,9 +46,9 @@ Um zu den Runtime Engines Ihres Cloud Web Hostings zu gelangen, loggen Sie sich 
 
 Bei der Installation Ihres Hostings wird automatisch eine Engine erstellt und als `Standardauswahl` in der zugehörigen Tabelle angezeigt. Um eine bereits eingerichtete Runtime Engine zu bearbeiten, klicken Sie auf die drei Punkte rechts daneben und anschließend auf `Bearbeiten`{.action}. 
 
-Wenn Sie das Angebot [Cloud Web](/links/web/hosting-cloud-web-offer) mit 2 vCores nutzen, können Sie eine zweite Runtime Engine zu Ihrem Angebot hinzufügen (maximal 2 verschiedene Runtime Engines pro Angebot), indem Sie auf den Button `Aktionen`{.action} und dann auf `Runtime Engine hinzufügen`{.action} klicken.
+Wenn Sie das Angebot [Cloud Web](/links/web/hosting-cloud-web-offer) mit 2 vCores nutzen, können Sie zusätzliche Runtime Engines hinzufügen (maximal 2 verschiedene Runtime Engines pro Angebot), indem Sie auf den Button `Aktionen`{.action} und dann auf `Runtime Engine hinzufügen`{.action} klicken.
 
-Um zu überprüfen, dass Sie über 2 vCores für Ihr Cloud Web Hosting verfügen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Web Hosting aus. Überprüfen Sie auf der angezeigten Seite, in der Randleiste **Abo** und unter `Angebot`, dass die Referenz `Cloud Web 3`{.action} angegeben ist.
+Um zu überprüfen, dass Sie über 2 vCores für Ihr Cloud Web Hosting verfügen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Web Hosting aus. Überprüfen Sie auf der angezeigten Seite, in der Randleiste **Abo** und unter `Angebot`, dass die Referenz `Cloud Web 3`{.action} vorhanden ist.
 
 Überprüfen Sie daher, bevor Sie fortfahren, dass Sie über die für Ihr Projekt notwendigen Runtime Engines verfügen.
 
