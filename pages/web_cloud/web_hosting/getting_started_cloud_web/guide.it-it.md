@@ -42,7 +42,7 @@ I linguaggi di programmazione disponibili sono:
 - Python
 - Ruby
 
-Per accedere al programma d’esecuzione del tuo hosting Cloud Web, effettua l’accesso allo [Spazio Cliente OVHcloud](/links/manager). Clicca su `Web Cloud`{.action} nel menu a sinistra e poi su `Hosting`{.action}. Seleziona il nome dell’hosting Cloud Web interessato e seleziona la scheda `Programma d’esecuzione`{.action}.
+Per accedere al programma d’esecuzione del tuo hosting [Cloud Web](/links/web/hosting-cloud-web-offer), effettua l’accesso allo [Spazio Cliente OVHcloud](/links/manager). Clicca su `Web Cloud`{.action} nel menu a sinistra e poi su `Hosting`{.action}. Seleziona il nome dell’hosting Cloud Web interessato e seleziona la scheda `Programma d’esecuzione`{.action}.
 
 Nel momento in cui installi il tuo hosting, un programma viene utilizzato automaticamente e inserito come `Opzione predefinita`. Per modificare il programma d’esecuzione già configurato, clicca sui 3 puntini a destra, poi su `Modificare`{.action}. 
 
