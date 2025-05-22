@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan E-Mail-Account auf einen OVHcloud Zimbra E-Mail-Account migrieren'
 excerpt: 'Erfahren Sie hier, wie Sie einen MX Plan E-Mail-Account auf einen OVHcloud Zimbra E-Mail-Account migrieren'
-updated: 2025-04-10
+updated: 2025-05-22
 ---
 
 ## Ziel
