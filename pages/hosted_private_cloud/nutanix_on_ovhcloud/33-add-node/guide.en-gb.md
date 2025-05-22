@@ -2,7 +2,7 @@
 title: "Add or Remove Nodes in a Nutanix Cluster (Scale In/Out)"
 excerpt: 'Scale your Nutanix cluster on OVHcloud by adding or removing nodes via the Control Panel'
 hidden: true
-updated: 2025-05-20
+updated: 2025-05-22
 ---
 
 <style>
@@ -32,8 +32,6 @@ updated: 2025-05-20
 
 Nutanix clusters on OVHcloud are scalable. You can now **add (scale out)** or **remove (scale in)** nodes directly from the OVHcloud Control Panel.
 
-**This guide will show you how to add a node and ensure it works properly.**
-
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
@@ -61,7 +59,7 @@ Nutanix clusters on OVHcloud are scalable. You can now **add (scale out)** or **
 
 ![Nutanix cluster overview](images/adding-nodes-01.png){.thumbnail}
 
-2. In the **General information** tab, you can see the Number of nodes. Click `Manage my nodes`{.action}.
+2. In the **General information** tab, you can see the **Number of nodes**. Click `Manage my nodes`{.action}.
 
 ![Number of nodes](images/manage-nodes.png){.thumbnail}
 
@@ -75,16 +73,15 @@ Nutanix clusters on OVHcloud are scalable. You can now **add (scale out)** or **
 
 Once the node is delivered, you can see the status in the **General information** tab.
 
-
 The **Number of nodes** area will show a new node to install.
 
-![Number of nodes](images/adding-nodes-05.png){.thumbnail}
+![New node to install](images/adding-nodes-05.png){.thumbnail}
 
 #### Install an OS
 
 > [!tabs]
 > OVHcloud Control Panel
->> 1. If you click `Manage my nodes`{.action} again, you will see a list of your nodes. For any node with a **OS not installed** status, click the *more options* `...`{.action} button and select `Install`{.action}.
+>> 1. If you click `Manage my nodes`{.action} again, you will see a list of your nodes. For any node with an **OS not installed** status, click the *more options* `...`{.action} button and select `Install`{.action}.
 >>
 >> [Node status](images/install-os-01.png){.thumbnail}
 >>
@@ -94,22 +91,22 @@ The **Number of nodes** area will show a new node to install.
 >>
 >> ![Install option](images/install-os-02.png){.thumbnail}
 >>
->> 3. A confirmation message will appear.
+>> 3. A confirmation banner will appear.
 >>
 >> ![Confirmation message](images/install-os-03.png){.thumbnail}
 >>
->>
 > OVHcloud API
->> To install your node via the [OVHcloud API](https://api.ovh.com/){.external}., use this call:
+>> To install your node via the [OVHcloud API](https://api.ovh.com/){.external}, use this call:
 >>
 >> > [!api]
->> > @api {v1} PUT /nutanix/{serviceName}/nodes/{server}/deploy>> 
+>> > @api {v1} PUT /nutanix/{serviceName}/nodes/{server}/deploy
 
 Once the node has been installed, you can connect to Prism Central/Element and expand your cluster. 
 
 Please refer to the documentation below: 
 
 - [Expanding a Cluster through Prism Central](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2024_3_1:mul-node-add-pc-t.html)
+
 - [Expanding a Cluster](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v7_0:wc-cluster-expand-wc-t.html)
 
 ### Scale In (remove a node)
@@ -124,7 +121,7 @@ Please refer to the documentation below:
 
 ![Manage my nodes](images/manage-nodes.png){.thumbnail}
 
-3. Here, you've got 2 options:
+3. Here, you have 2 options:
 
 > [!tabs]
 > OVHcloud Control Panel
@@ -134,24 +131,25 @@ Please refer to the documentation below:
 >> A warning pop-up will appear. Type the required term and click `Power down`{.action}.
 >>
 >> > [!info]
->> > **Note:** Powering down a Nutanix node may impact your cluster.  
->> > Please check the [requirements on the Nutanix portal](https://portal.nutanix.com/page/documents/list?type=software) to complete this action.
+>> > **NOTE:** Powering down a Nutanix node may impact your cluster. Please check the [requirements on the Nutanix portal](https://portal.nutanix.com/page/documents/list?type=software) to complete this action.
 >>
 >> ![Power down warning](images/powerdown-nodes-02.png){.thumbnail}
 >>
->> A confirmation banner will appear to confirm that your request is processing.
+>> A confirmation banner will appear.
 >> ![Power down confirmation](images/powerdown-nodes-03.png){.thumbnail}
 >>
 > OVHcloud API
 >> You can also power down your node via the [OVHcloud API](https://api.ovh.com/){.external}.
 >> Get the Boot ID: 
->> 
 >> Enter *power* as the **bootType**.
+>>
 >> > [!api]
 >> > @api {v1} GET /dedicated/server/{serviceName}/boot
+>>
 >> Set the Boot ID: 
 >> > [!api]
 >> > @api {v1} PUT /dedicated/server/{serviceName}
+>>
 >> Power down the node:
 >> > [!api]
 >> > @api {v1} POST /dedicated/server/{serviceName}/reboot
@@ -166,151 +164,40 @@ Please refer to the documentation below:
 >> A warning pop-up will appear. Type the required term and click `Uninstall`{.action}.
 >>
 >> > [!info]
->> > **Note:** Uninstalling a Nutanix node may impact your cluster.  
->> > Please check the [requirements on the Nutanix portal](https://portal.nutanix.com/page/documents/list?type=software) to complete this action.
+>> > **NOTE:** Uninstalling a Nutanix node may impact your cluster. Please check the [requirements on the Nutanix portal](https://portal.nutanix.com/page/documents/list?type=software) to complete this action.
 >>
 >> ![Uninstall warning](images/remove-nodes-02.png){.thumbnail}
 >>
->> A confirmation banner will appear to confirm that your request is processing.
+>> A confirmation banner will appear.
 >>
 >> ![Uninstall confirmation](images/remove-nodes-03.png){.thumbnail}
 >>
 > OVHcloud API
->> To uninstall your node via the [OVHcloud API](https://api.ovh.com/){.external}., use this call:
+>> To uninstall your node via the [OVHcloud API](https://api.ovh.com/){.external}, use this call:
 >> > [!api]
 >> > @api {v1} POST /nutanix/{serviceName}/node/{server}/terminate
 
 #### Remove the node
 
-Once the node is uninstalled, click the *more options* `...`{.action} button and select `Uninstall`{.action}.
+Once the node is uninstalled, click the *more options* `...`{.action} button and select `Terminate`{.action}.
 
->> ![Remove the node](images/remove-nodes-04.png){.thumbnail}
+![Remove the node](images/remove-nodes-04.png){.thumbnail}
 
+A warning pop-up will appear. Type the required term and click `Confirm`{.action}.
 
-### Node installation.
+> [!info]
+> **NOTE:** Your suspended service will appear in your nodes list for approximately one week before being permanently deleted. This allows you to reactivate the service if you need to reverse the deletion.
 
-To install the new node, you must change the cluster properties by making a `PUT` on the cluster.
+## Go further
 
-To do this, use the following API call:
-
-> [!api]
->
-> @api {v1} /nutanix PUT /nutanix/{serviceName}
->
-
-> [!warning]
-> Make sure to untick the `redeployCluster` box.
-
-Tick the `scaleUp` box.
-Enter the following information below **nodes**:
-
-- **ahvip** : IP address of the hypervisor of the new node.
-- **cvmip** : IP address of the CVM of the new node.
-
-> [!warning]
-> These IP addresses must not already be used and must match your addressing plan.
-
-You must also complete the deployment version. It may not correspond to the current version of your cluster. This is not an issue as the node will be modified by the Nutanix installer when adding it to the cluster via Prism Element.
-
-![PUT scaleUp via APIV6](images/scaleup3.png){.thumbnail}
-
-Click `Execute`{.action} to send the request.
-
-In the "Result" tab, the new node appears with the new IP address.
-
-At the end of the installation, you will receive an email confirming that the node is ready.
-
-<pre class="bgwhite"><code>
-Dear Customer,
-
-Your server has just been installed.
-
-You must now add it back to your Nutanix cluster by connecting to Prism Central: https://cluster-xxxx.nutanix.ovh.net:9440
-
-We remain at your disposal for any further information.
-
-The OVHcloud Team
-</code></pre>
-
-### Add a node to a Nutanix cluster.
-
-Connect to **Prism Element** through **Prism Central**.
-
-For more information on connecting to the cluster, see the « [Go further](#gofurther) » section of this guide. 
-
-On the dashboard, the 3 nodes are visible in the `Hardware Summary`. Click on `View Details`{.action} in the middle left to bring up more details.
-
-![Display dashboard before Expansion](images/DisplayDashboardBefore.PNG){.thumbnail}
-
-A more detailed view is displayed with information such as total space and storage resilience capacity.<br>
-Click `Close`{.action} to close this window.
-
-![Cluster detail before Expansion](images/ClusterDetailBFromDashboard.PNG){.thumbnail}
-
-Open the `Home`{.action} menu and choose `Health`{.action} to perform a cluster analysis before adding the node.
-
-![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}
-
-Click on `Actions`{.action} in the top right-hand corner and choose `Run NCC Check`{.action}.
-
-![NCC check before Expansion 02](images/CheckBeforeAdd02.PNG){.thumbnail}
-
-Click `Run`{.action} to launch a control and wait for the operation to complete.
-
-![NCC check before Expansion 03](images/CheckBeforeAdd03.PNG){.thumbnail}
-
-After the check, click the `cogwheel`{.action} icon at the top right to change the settings.
-
-![Add Node 01](images/AddNode01.PNG){.thumbnail}
-
-Click `Expand Cluster`{.action}.
-
-![Add Node 02](images/AddNode02.PNG){.thumbnail}
-
-Check the box next to the discovered host to display the node details.
-
-![Add Node 03](images/AddNode03.PNG){.thumbnail}
-
-Scroll to see the options.
-
-![Add Node 04](images/AddNode04.PNG){.thumbnail}
-
-Scroll down to the bottom of the window and click on `Next`{.action}.
-
-![Add Node 05](images/AddNode05.PNG){.thumbnail}
-
-Choose the Rack in `Assign to Rack` and click `Next`{.action}.
-
-![Add Node 06](images/AddNode06.PNG){.thumbnail}
-
-Click `Expand Cluster`{.action}.
-
-![Add Node 07](images/AddNode07.PNG){.thumbnail}
-
-Click `Open`{.action} to view the cluster expansion details.
-
-![Add Node 08](images/AddNode08.PNG){.thumbnail}
-
-![Add Node 09](images/AddNode09.PNG){.thumbnail}
-
-The addition of the node is completed when the *Expanding Cluster* progress is 100%.
-
-![Add Node 10](images/AddNode10.PNG){.thumbnail}
-
-Four nodes are visible in `Hardware Summary`, click `View Details`{.action} for more information.
-
-![Display dashbord after expansion](images/DisplayDashboardAfter.PNG){.thumbnail}
-
-Click `Close`{.action} to return to the dashboard.
-
-![Cluster detail after Expansion](images/ClusterDetailAfterFromDashboard.PNG){.thumbnail}
-
-## Go further <a name="gofurther"></a>
+You can go even further by reading these guides:
 
 [Nutanix Hyperconvergence](/pages/hosted_private_cloud/nutanix_on_ovhcloud/03-nutanix-hci)
 
-[Nutanix Node Addition Guide](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-cluster-expand-wc-t.html)
+[Nutanix Node Addition Guide](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v7_0:wc-cluster-expand-wc-t.html)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, please contact your Technical Account Manager or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated [Discord](https://discord.gg/ovhcloud) channel.
+
+Join our [community of users](/links/community).
