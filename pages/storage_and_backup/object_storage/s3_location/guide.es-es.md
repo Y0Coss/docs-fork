@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints y geodisponibilidad del Object Storage (EN)
-updated: 2024-11-25
+updated: 2025-06-04
 ---
 
 <style>
@@ -192,7 +192,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 </table>
 
 > [!warning]
-> Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all features and API operations will be available.
+> Unlike AWS, Express One Zone is treated as a regular storage class by OVHcloud and all our supported S3 compatible features and API operations are available.
 
 ![Schema 1](images/io-mapping-v2.png)
 
