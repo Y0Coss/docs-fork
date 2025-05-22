@@ -42,7 +42,7 @@ As linguagens atualmente disponíveis são:
 - Python
 - Ruby
 
-Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Área de Cliente OVHcloud](/links/manager). Clique em `Web Cloud`{.action} na barra à esquerda e, a seguir, em `Alojamentos`{.action}. Escolha o nome do alojamento Cloud Web em causa e aceda ao separador `Motores de execução`{.action}.
+Para aceder aos motores de execução do seu alojamento [Cloud Web](/links/web/hosting-cloud-web-offer), aceda à [Área de Cliente OVHcloud](/links/manager). Clique em `Web Cloud`{.action} na barra à esquerda e, a seguir, em `Alojamentos`{.action}. Escolha o nome do alojamento Cloud Web em causa e aceda ao separador `Motores de execução`{.action}.
 
 Será automaticamente criado um motor durante a instalação do alojamento. É indicado como `Escolha padrão` no quadro que se apresenta. Para modificar um motor já parametrizado, clique nos três pontos à direita deste último e, a seguir, em `Modificar`{.action}. 
 
