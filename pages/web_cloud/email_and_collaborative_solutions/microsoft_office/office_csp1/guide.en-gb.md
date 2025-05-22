@@ -1,7 +1,7 @@
 ---
 title: Managing a group of Microsoft 365 OVHcloud licences
 excerpt: Find out how to subscribe to a Microsoft 365 licence and manage it in the OVHcloud Control Panel
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 <style>
@@ -48,7 +48,7 @@ To activate the license ordered:
 1. In the `MICROSOFT` section, click `Microsoft 365`{.action}.
 1. Select the Microsoft 365 service concerned.
 1. Click the `Licenses`{.action} tab.
-1. Click the &#8942; button on the license line for the activation, then click `Edit account`{.action}.
+1. Click the `⁝`{.action} button on the license line for the activation, then click `Edit account`{.action}.
 
 ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
@@ -81,7 +81,7 @@ If you would like to set your own license password:
 1. In the `MICROSOFT` section, click `Microsoft 365`{.action}.
 1. Select the Microsoft 365 service concerned.
 1. Click the `Licenses`{.action} tab.
-1. Click the &#8942; button to the right of the license concerned, then `Change password`{.action}.
+1. Click the `⁝`{.action} button to the right of the license concerned, then `Change password`{.action}.
 
 ![emails](images/Outlook-cps1-03.png){.thumbnail .w-500}
 
@@ -102,7 +102,7 @@ If you want to add one or more licenses to your existing license group:
 
 #### Delete a license in a license group
 
-In the `Licenses`{.action} tab of your license group, click the &#8942; button to the right of the license you want to cancel, then click `Delete account`{.action}.
+In the `Licenses`{.action} tab of your license group, click the `⁝`{.action} button to the right of the license you want to cancel, then click `Delete account`{.action}.
 
 ![emails](images/Outlook-cps1-06.png){.thumbnail .w-500}
 
@@ -127,5 +127,9 @@ To terminate your Microsoft Office 365 CSP1 license group:
 ## Go further
 
 [Using Remote Desktop with Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).

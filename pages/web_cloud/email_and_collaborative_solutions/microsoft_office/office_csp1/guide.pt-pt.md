@@ -1,7 +1,7 @@
 ---
 title: Gerir um grupo de licenças Microsoft 365 OVHcloud
 excerpt: Saiba como subscrever uma licença Microsoft 365 e geri-la na sua Área de Cliente OVHcloud.
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 <style>
@@ -35,7 +35,7 @@ Eis a lista dos softwares incluídos:
     - Aceda à secção `Web Cloud`{.action}.
     - Na rubrica `MICROSOFT`, clique em `Microsoft 365`{.action}.
     - Clique em `Encomendar`{.action}.
-1. Escolha entre as nossas ofertas disponíveis, a saber, « Apps for Business » e « Apps for Enterprise ».
+1. Escolha entre as nossas ofertas disponíveis, a saber, "Apps for Business" e "Apps for Enterprise".
 1. Defina a frequência de renovação do seu grupo de licenças.
 1. Defina o número de licenças pretendidas e conclua a sua encomenda.
 
@@ -48,9 +48,9 @@ Para ativar a licença encomendada:
 1. Na rubrica `MICROSOFT`, clique em `Microsoft 365`{.action}.
 1. Selecione o serviço Microsoft 365 correspondente.
 1. Clique no separador `Licenças`{.action}.
-1. Clique no botão &#8942; na linha da licença afetada pela ativação, depois em `Editar conta`{.action}.
+1. Clique no botão `⁝`{.action} na linha da licença afetada pela ativação, depois em `Editar conta`{.action}.
 
-![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
+    ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
 1. Introduza as informações relativas ao utilizador da licença e depois clique em `Validar`{.action}.
 
@@ -81,7 +81,7 @@ Se deseja definir a palavra-passe da sua licença:
 1. Na rubrica `MICROSOFT`, clique em `Microsoft 365`{.action}.
 1. Selecione o serviço Microsoft 365 correspondente.
 1. Clique no separador `Licenças`{.action}.
-1. Clique no botão &#8942; à direita da licença em causa, e em `Alterar palavra-passe`{.action}.
+1. Clique no botão `⁝`{.action} à direita da licença em causa, e em `Alterar palavra-passe`{.action}.
 
 ![emails](images/Outlook-cps1-03.png){.thumbnail .w-500}
 
@@ -102,7 +102,7 @@ Se pretender adicionar uma ou várias licenças ao grupo de licenças existente:
 
 #### Eliminar uma licença num grupo de licenças
 
-{.action} No separador `Licenças`{.action} do seu grupo de licenças, clique no botão &#8942; à direita da licença que deseja rescindir, e depois clique em `Eliminar conta`{.action}.
+No separador `Licenças`{.action} do seu grupo de licenças, clique no botão `⁝`{.action} à direita da licença que deseja rescindir, e depois clique em `Eliminar conta`{.action}.
 
 ![emails](images/Outlook-cps1-06.png){.thumbnail .w-500}
 
@@ -128,4 +128,8 @@ Para rescindir o seu grupo de licença Microsoft Office 365 CSP1:
 
 [Utilizar o ambiente de trabalho remoto com Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+
+Fale com a nossa [comunidade de utilizadores](/links/community).

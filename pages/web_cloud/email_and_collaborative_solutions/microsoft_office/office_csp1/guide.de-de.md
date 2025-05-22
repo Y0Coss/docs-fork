@@ -1,7 +1,7 @@
 ---
 title: Eine Microsoft 365 Lizenzgruppe von OVHcloud verwalten
 excerpt: Erfahren Sie hier, wie Sie eine Microsoft 365 Lizenz bestellen und in Ihrem OVHcloud Kundencenter verwalten
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 <style>
@@ -48,7 +48,7 @@ So aktivieren Sie die bestellte Lizenz:
 1. Klicken Sie im Feld `MICROSOFT` auf `Microsoft 365`{.action}.
 1. Wählen Sie den betreffenden Microsoft 365-Dienst aus.
 1. Wählen Sie die Registerkarte `Lizenzen`{.action}.
-1. Klicken Sie auf die Schaltfläche &#8942; in der Zeile der Lizenz, die von der Aktivierung betroffen ist, und dann auf `Account bearbeiten`{.action}.
+1. Klicken Sie auf die Schaltfläche `⁝`{.action} in der Zeile der Lizenz, die von der Aktivierung betroffen ist, und dann auf `Account bearbeiten`{.action}.
 
 ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
@@ -81,7 +81,7 @@ Wenn Sie das Passwort Ihrer Lizenz selbst festlegen möchten:
 1. Klicken Sie im Feld `MICROSOFT` auf `Microsoft 365`{.action}.
 1. Wählen Sie den betreffenden Microsoft 365-Dienst aus.
 1. Wählen Sie die Registerkarte `Lizenzen`{.action}.
-1. Klicken Sie auf den Button &#8942; rechts neben der betreffenden Lizenz und dann auf `Passwort ändern`{.action}.
+1. Klicken Sie auf den Button `⁝`{.action} rechts neben der betreffenden Lizenz und dann auf `Passwort ändern`{.action}.
 
 ![emails](images/Outlook-cps1-03.png){.thumbnail .w-500}
 
@@ -102,7 +102,7 @@ Wenn Sie Ihrer vorhandenen Lizenzgruppe eine oder mehrere Lizenzen hinzufügen m
 
 #### Lizenz aus einer Lizenzgruppe entfernen
 
-Klicken Sie im Tab `Lizenzen`{.action} Ihrer Lizenzgruppe auf den Button &#8942; rechts neben der Lizenz, die Sie kündigen möchten, und klicken Sie dann auf `Account löschen`{.action}.
+Klicken Sie im Tab `Lizenzen`{.action} Ihrer Lizenzgruppe auf den Button `⁝`{.action} rechts neben der Lizenz, die Sie kündigen möchten, und klicken Sie dann auf `Account löschen`{.action}.
 
 ![emails](images/Outlook-cps1-06.png){.thumbnail .w-500}
 
@@ -127,5 +127,9 @@ So kündigen Sie Ihre Microsoft Office 365 CSP1-Lizenzgruppe:
 ## Weiterführende Informationen
 
 [Remote Desktop mit Microsoft 365 Apps verwenden](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Treten Sie unserer [User Community](/links/community) bei.

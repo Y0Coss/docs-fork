@@ -1,7 +1,7 @@
 ---
 title: Gérer un groupe de licences Microsoft 365 OVHcloud (CSP1)
 excerpt: Découvrez comment souscrire à une licence Microsoft 365 et comment la gérer dans votre espace client OVHcloud
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 <style>
@@ -48,9 +48,9 @@ Pour activer la licence commandée :
 1. Dans la rubrique `MICROSOFT`, cliquez sur `Microsoft 365`{.action}.
 1. Sélectionnez le service Microsoft 365 concerné.
 1. Cliquez sur l'onglet `Licences`{.action}.
-1. Cliquez sur le bouton &#8942; sur la ligne de la licence concernée par l'activation, puis sur `Editer le compte`{.action}.
+1. Cliquez sur le bouton `⁝`{.action} sur la ligne de la licence concernée par l'activation, puis sur `Editer le compte`{.action}.
 
-![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
+    ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
 1. Saisissez les informations relatives à l'utilisateur de la licence, puis cliquez sur `Valider`{.action}.
 
@@ -81,7 +81,7 @@ Si vous souhaitez définir vous-même le mot de passe de votre licence :
 1. Dans la rubrique `MICROSOFT`, cliquez sur `Microsoft 365`{.action}.
 1. Sélectionnez le service Microsoft 365 concerné.
 1. Cliquez sur l'onglet `Licences`{.action}.
-1. Cliquez sur le bouton &#8942; à droite de la licence concernée puis sur `Modifier le mot de passe`{.action}.
+1. Cliquez sur le bouton `⁝`{.action} à droite de la licence concernée puis sur `Modifier le mot de passe`{.action}.
 
 ![emails](images/Outlook-cps1-03.png){.thumbnail .w-500}
 
@@ -93,6 +93,7 @@ Si vous souhaitez ajouter une ou plusieurs licences à votre groupe de licences 
 1. Rendez-vous dans la partie `Web Cloud`{.action}.
 1. Dans la rubrique `MICROSOFT`, cliquez sur `Microsoft 365`{.action}.
 1. Sélectionnez le service Microsoft 365 concerné.
+1. Cliquez sur l'onglet `Licences`{.action}.
 1. Cliquez sur le bouton `Commander plus de licences`{.action} à droite. 
 1. Déterminez le **nombre** et le **type de licence** que vous souhaitez commander, puis cliquez sur `Valider`{.action}.
 
@@ -102,7 +103,7 @@ Si vous souhaitez ajouter une ou plusieurs licences à votre groupe de licences 
 
 #### Supprimer une licence dans un groupe de licences
 
-Depuis l'onglet `Licences`{.action} de votre groupe de licences, cliquez sur le bouton &#8942; à droite de la licence que vous souhaitez résilier, puis cliquez sur `Supprimer le compte`{.action}.
+Depuis l'onglet `Licences`{.action} de votre groupe de licences, cliquez sur le bouton `⁝`{.action} à droite de la licence que vous souhaitez résilier, puis cliquez sur `Supprimer le compte`{.action}.
 
 ![emails](images/Outlook-cps1-06.png){.thumbnail .w-500}
 
@@ -127,5 +128,9 @@ Pour résilier votre groupe de licence Microsoft Office 365 CSP1 :
 ## Aller plus loin
 
 [Utiliser le bureau à distance avec Microsoft 365 apps](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus).
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
