@@ -42,7 +42,7 @@ Aktuell sind folgende Programmiersprachen verfügbar:
 - Python
 - Ruby
 
-Um zu den Runtime Engines Ihres [Cloud Web](/links/web/hosting-cloud-web-offer) Hostings zu gelangen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie links im Menü auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}. Der Name des betreffenden Cloud Web Hostings und gehen Sie zum Tab `Runtime Engines`{.action}.
+Um zu den Runtime Engines Ihres [Cloud Web](/links/web/hosting-cloud-web-offer) Hostings zu gelangen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie links im Menü auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}. Klicken Sie auf den Namen des betreffenden Cloud Web Hostings und gehen Sie zum Tab `Runtime Engines`{.action}.
 
 Bei der Installation Ihres Hostings wird automatisch eine Engine erstellt und als `Standardauswahl` in der zugehörigen Tabelle angezeigt. Um eine bereits eingerichtete Runtime Engine zu bearbeiten, klicken Sie auf die drei Punkte rechts daneben und anschließend auf `Bearbeiten`{.action}. 
 
