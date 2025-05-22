@@ -67,12 +67,12 @@ Klicken Sie auf der Seite <https://omm.ovh.net/> im Tab `Migration`{.action} auf
     - **Server type**: Wählen Sie `Hosted by OVHcloud (Autodetect)`. Dadurch können Sie die Informationen automatisch vervollständigen, mit Ausnahme des Passworts.
     - **Server URL**: Dieses Feld wird automatisch ausgefüllt.
     - **Login**: Geben Sie die vollständige E-Mail-Adresse des zu migrierenden Accounts ein (Beispiel: `contact@mydomain.ovh`).
-    - **Password**: Geben Sie das Passwort der betreffenden E-Mail-Adresse ein.
+    - **Password**: Geben Sie das Passwort des E-Mail-Accounts ein.
 - **Ziel Account**
     - **Server type**: Wählen Sie `Zimbra` für den Zielservertyp aus.
     - **Server URL**: Geben Sie die Adresse des Zimbra Servers <https://zimbra1.mail.ovh.net> ein.
     - **Login**: Geben Sie die vollständige E-Mail-Adresse des Ziel-Zimbra-Accounts ein (Beispiel:`contact2@mydomain.ovh`).
-    - **Password**: Geben Sie das Passwort der E-Mail-Adresse des Ziel-Zimbra-Accounts ein.
+    - **Password**: Geben Sie das Passwort des Ziel-Zimbra-Accounts ein.
 
 **Optionen**
 
@@ -80,7 +80,7 @@ Wählen Sie die Elemente aus, die Sie migrieren möchten. Je nach dem zuvor ausg
 
 **Informationen**
 
-Geben Sie eine E-Mail-Adresse ein, um über den Fortschritt der Migration informiert zu werden. Aktivieren Sie das Kontrollkästchen unten auf der Seite, um die Bedingungen von OMM zu akzeptieren.
+Geben Sie eine E-Mail-Adresse ein, um über den Fortschritt der Migration informiert zu werden. Haken Sie die Bestätigung unten auf der Seite an, um die Bedingungen von OMM zu akzeptieren.
 
 ![omm](images/omm-migration-create02.png){.thumbnail}
 
