@@ -57,7 +57,7 @@ Nutanix clusters on OVHcloud are scalable. You can now **add (scale out)** or **
 
 1. From the [OVHcloud Control Panel](/links/manager), navigate to your Nutanix cluster via the `Hosted Private Cloud`{.action} and `Nutanix`{.action} menus.
 
-![Nutanix cluster overview](images/adding-nodes-01.png){.thumbnail}
+![Nutanix cluster overview](images/control-panel.png){.thumbnail}
 
 2. In the **General information** tab, you can see the **Number of nodes**. Click `Manage my nodes`{.action}.
 

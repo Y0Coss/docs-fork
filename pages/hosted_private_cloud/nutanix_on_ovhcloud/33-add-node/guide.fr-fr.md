@@ -57,7 +57,7 @@ Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajou
 
 1. Depuis le [Control Panel OVHcloud](/links/manager), accédez à votre cluster Nutanix via les menus `Hosted Private Cloud`{.action} et `Nutanix`{.action}.
 
-![Vue d'ensemble du cluster](images/adding-nodes-01.png){.thumbnail}
+![Vue d'ensemble du cluster](images/control-panel.png){.thumbnail}
 
 2. Dans l’onglet **General information**, la section **Number of nodes** est visible. Cliquez sur `Manage my nodes`{.action}.
 
