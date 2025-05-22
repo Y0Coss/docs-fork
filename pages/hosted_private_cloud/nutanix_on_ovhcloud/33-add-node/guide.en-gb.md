@@ -1,8 +1,8 @@
 ---
-title: "Adding a node in a Nutanix cluster"
-excerpt: 'Add a node and confirm that it is working properly'
+title: "Add or Remove Nodes in a Nutanix Cluster (Scale In/Out)"
+excerpt: 'Scale your Nutanix cluster on OVHcloud by adding or removing nodes via the Control Panel'
 hidden: true
-updated: 2023-09-14
+updated: 2025-05-20
 ---
 
 <style>
@@ -30,7 +30,7 @@ updated: 2023-09-14
 
 ## Objective
 
-Nutanix clusters are scalable. You can add nodes to an existing cluster.
+Nutanix clusters on OVHcloud are scalable. You can now **add (scale out)** or **remove (scale in)** nodes directly from the OVHcloud Control Panel.
 
 **This guide will show you how to add a node and ensure it works properly.**
 
@@ -41,42 +41,151 @@ Nutanix clusters are scalable. You can add nodes to an existing cluster.
 
 ## Requirements
 
-- A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A Nutanix cluster hosted in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the Prism Central administration interface
 - Access to the [OVHcloud API](https://api.ovh.com/).
-- You must be connected to the cluster via Prism Central
-- A ready-to-configure physical server added to the OVHcloud Control Panel
 
-## Technical information
+## Technical Information
 
-The **Hosted Private Cloud solution powered by Nutanix** enables you to have between 3 and 18 nodes on the same cluster.
-
-It is possible to add several nodes when expanding the cluster.
-
-The nodes to be added must have the same version of **AOS** as the existing cluster.
+- Your cluster must have between **3 and 15 nodes**
+- All new nodes must run the **same AOS version** as the existing cluster
 
 ## Instructions
 
-### Checking node delivery.
+### Scale Out (add a node)
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and check that an additional node appears in the Nutanix cluster.
+#### Add a node
 
-![New Node](images/scaleup1.png){.thumbnail}
+1. From the [OVHcloud Control Panel](/links/manager), navigate to your Nutanix cluster via the `Hosted Private Cloud`{.action} and `Nutanix`{.action} menus.
 
-You can also check this via the OVHcloud API.
+![Nutanix cluster overview](images/adding-nodes-01.png){.thumbnail}
 
-Use the following API call:
+2. In the **General information** tab, you can see the Number of nodes. Click `Manage my nodes`{.action}.
 
-> [!api]
->
-> @api {v1} /nutanix GET /nutanix/{serviceName}
->
+![Number of nodes](images/manage-nodes.png){.thumbnail}
 
-- `serviceName`: enter the cluster name
+3. In the **Nodes** tab, select `Add nodes`{.action}.
 
-![New Node via APIV6](images/scaleup2.png){.thumbnail}
+![Add nodes tab](images/adding-nodes-03.png){.thumbnail}
 
-The new node appears with 0.0.0.0 IPs.
+5. Review the configuration and pricing in the pop-up window, then click `Order`{.action} to add the node(s).
+
+![Order popup](images/adding-nodes-04.png){.thumbnail}
+
+Once the node is delivered, you can see the status in the **General information** tab.
+
+
+The **Number of nodes** area will show a new node to install.
+
+![Number of nodes](images/adding-nodes-05.png){.thumbnail}
+
+#### Install an OS
+
+> [!tabs]
+> OVHcloud Control Panel
+>> 1. If you click `Manage my nodes`{.action} again, you will see a list of your nodes. For any node with a **OS not installed** status, click the *more options* `...`{.action} button and select `Install`{.action}.
+>>
+>> [Node status](images/install-os-01.png){.thumbnail}
+>>
+>> 2. Enter the configuration details for your node. Be sure to install the same AOS version as your cluster.
+>>
+>> Click  `Install`{.action}.
+>>
+>> ![Install option](images/install-os-02.png){.thumbnail}
+>>
+>> 3. A confirmation message will appear.
+>>
+>> ![Confirmation message](images/install-os-03.png){.thumbnail}
+>>
+>>
+> OVHcloud API
+>> To install your node via the [OVHcloud API](https://api.ovh.com/){.external}., use this call:
+>>
+>> > [!api]
+>> > @api {v1} PUT /nutanix/{serviceName}/nodes/{server}/deploy>> 
+
+Once the node has been installed, you can connect to Prism Central/Element and expand your cluster. 
+
+Please refer to the documentation below: 
+
+- [Expanding a Cluster through Prism Central](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2024_3_1:mul-node-add-pc-t.html)
+- [Expanding a Cluster](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v7_0:wc-cluster-expand-wc-t.html)
+
+### Scale In (remove a node)
+
+#### Power down a node
+
+1. From the [OVHcloud Control Panel](/links/manager), navigate to your Nutanix cluster via the `Hosted Private Cloud`{.action} and `Nutanix`{.action} menus.
+
+![Nutanix cluster overview](images/control-panel.png){.thumbnail}
+
+2. In the **General information** tab, you can see the Number of nodes. Click `Manage my nodes`{.action}.
+
+![Manage my nodes](images/manage-nodes.png){.thumbnail}
+
+3. Here, you've got 2 options:
+
+> [!tabs]
+> OVHcloud Control Panel
+>> For the node you wish to remove, click the *more options* `...`{.action} button and select `Power down`{.action}.
+>> ![Power down](images/powerdown-nodes-01.png){.thumbnail}
+>>
+>> A warning pop-up will appear. Type the required term and click `Power down`{.action}.
+>>
+>> > [!info]
+>> > **Note:** Powering down a Nutanix node may impact your cluster.  
+>> > Please check the [requirements on the Nutanix portal](https://portal.nutanix.com/page/documents/list?type=software) to complete this action.
+>>
+>> ![Power down warning](images/powerdown-nodes-02.png){.thumbnail}
+>>
+>> A confirmation banner will appear to confirm that your request is processing.
+>> ![Power down confirmation](images/powerdown-nodes-03.png){.thumbnail}
+>>
+> OVHcloud API
+>> You can also power down your node via the [OVHcloud API](https://api.ovh.com/){.external}.
+>> Get the Boot ID: 
+>> 
+>> Enter *power* as the **bootType**.
+>> > [!api]
+>> > @api {v1} GET /dedicated/server/{serviceName}/boot
+>> Set the Boot ID: 
+>> > [!api]
+>> > @api {v1} PUT /dedicated/server/{serviceName}
+>> Power down the node:
+>> > [!api]
+>> > @api {v1} POST /dedicated/server/{serviceName}/reboot
+
+#### Uninstall the node
+
+> [!tabs]
+> OVHcloud Control Panel
+>> Once the node is powered down, click the *more options* `...`{.action} button and select `Uninstall`{.action}.
+>> ![Uninstall button](images/remove-nodes-01.png){.thumbnail}
+>>
+>> A warning pop-up will appear. Type the required term and click `Uninstall`{.action}.
+>>
+>> > [!info]
+>> > **Note:** Uninstalling a Nutanix node may impact your cluster.  
+>> > Please check the [requirements on the Nutanix portal](https://portal.nutanix.com/page/documents/list?type=software) to complete this action.
+>>
+>> ![Uninstall warning](images/remove-nodes-02.png){.thumbnail}
+>>
+>> A confirmation banner will appear to confirm that your request is processing.
+>>
+>> ![Uninstall confirmation](images/remove-nodes-03.png){.thumbnail}
+>>
+> OVHcloud API
+>> To uninstall your node via the [OVHcloud API](https://api.ovh.com/){.external}., use this call:
+>> > [!api]
+>> > @api {v1} POST /nutanix/{serviceName}/node/{server}/terminate
+
+#### Remove the node
+
+Once the node is uninstalled, click the *more options* `...`{.action} button and select `Uninstall`{.action}.
+
+>> ![Remove the node](images/remove-nodes-04.png){.thumbnail}
+
 
 ### Node installation.
 
