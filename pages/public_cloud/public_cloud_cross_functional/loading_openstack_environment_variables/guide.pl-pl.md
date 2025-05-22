@@ -25,9 +25,9 @@ Pobranie zmiennych środowiskowych OpenStack na Twoje stanowisko umożliwi Ci ko
 Aby zgromadzić zmienne środowiskowe, możesz pobrać utworzony wcześniej plik OpenRC użytkownika OpenStack.
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}, przejdź do sekcji `Public Cloud`{.action} i wybierz Twój projekt Public Cloud na górze po lewej stronie.
-<br> W rubryce **Ustawienia** kliknij `Użytkownicy i role`{.action}, po prawej stronie nazwy użytkownika kliknij symbol `...`{.action} i wybierz pozycję `Pobierz plik RC OpenStack`{.action}.
+<br> W menu po lewej stronie, w rubryce **Ustawienia** kliknij `Użytkownicy i role`{.action}, po prawej stronie nazwy użytkownika kliknij symbol `...`{.action} i wybierz pozycję `Pobierz plik RC OpenStack`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
+![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 Plik OpenRC odpowiada użytkownikowi, a także strefie. Nie można zarządzać kilkoma strefami w jednym pliku.
 

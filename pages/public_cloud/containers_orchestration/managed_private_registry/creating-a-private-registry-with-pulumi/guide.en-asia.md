@@ -1,6 +1,6 @@
 ---
 title: Creating a private registry with Pulumi
-excerpt: 'Create an OVHcloud Managed Private Registry (Harbor) with Pulumi'
+excerpt: 'Create an OVHcloud Managed Private Registry (MPR) with Pulumi'
 updated: 2025-03-13
 ---
 
@@ -106,7 +106,7 @@ Examples:
 - [C#](https://github.com/ovh/pulumi-ovh/tree/main/examples/kubernetes/ovh-csharp)
 - [Go](https://github.com/ovh/pulumi-ovh/tree/main/examples/kubernetes/ovh-go)
 
-### Deploy your Managed Private Registry (Harbor) in Go / Golang
+### Deploy your Managed Private Registry (MPR) in Go / Golang
 
 #### Pulumi project creation and initialization
 

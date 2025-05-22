@@ -32,8 +32,6 @@ Le [vRack](/links/network/vrack) OVHcloud est un réseau privé qui vous permet 
 >
 > Vous pouvez également retirer le projet du vRack qui lui a été attribué et l'attacher à un autre vRack si vous le souhaitez, en particulier si vous aviez déjà un vRack existant avec votre/vos serveur(s) dédié(s).
 
-Pour les projets plus anciens, une fois que vous avez commandé votre [vRack](/links/network/vrack), rendez-vous dans le menu `Bare Metal Cloud`{.action}, cliquez sur `Network`{.action} dans l'onglet de gauche, puis sur `Réseau Privé vRack`{.action}. Sélectionnez votre vRack dans la liste.
-
 Dans la liste des services éligibles, sélectionnez le projet que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
 ![ajouter un projet au vrack](images/addprojectvrack.png){.thumbnail}

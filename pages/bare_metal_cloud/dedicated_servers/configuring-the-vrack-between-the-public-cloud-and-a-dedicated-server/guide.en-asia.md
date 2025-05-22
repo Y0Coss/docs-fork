@@ -32,8 +32,6 @@ The OVHcloud [vRack](/links/network/vrack) allows you to configure private netwo
 >
 > You can also remove the project from its allocated vRack and attach it to another vRack if you wish, particularly if you already had an existing vRack with your dedicated server(s).
 
-For older projects, once you have ordered your [vRack](/links/network/vrack), go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action} in the left tab, then on `vRack private network`{.action}. Select your vRack from the list.
-
 From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
 
 ![add project to vrack](images/addprojectvrack.png){.thumbnail}
