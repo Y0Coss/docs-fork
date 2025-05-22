@@ -99,7 +99,7 @@ Geben Sie den Code im Feld `Validierungscode` ein und bestätigen Sie.
 
 > [!primary]
 >
-> Mit dem `Validierungscode` können Sie nur die Änderung der Haupt-E-Mail-Adresse beschleunigen. Wenn die alte E-Mail-Adresse nicht erreichbar ist und Sie diesen Code nicht abrufen können, wird die Änderung dennoch automatisch durchgeführt **25** Stunden nach der Anfrage.
+> Mit dem `Validierungscode` können Sie nur die Änderung der Haupt-E-Mail-Adresse beschleunigen. Wenn die alte E-Mail-Adresse nicht erreichbar ist und Sie diesen Code nicht abrufen können, wird die Änderung dennoch **25 Stunden** nach der Anfrage automatisch durchgeführt.
 
 #### Account-Typ ändern
 
