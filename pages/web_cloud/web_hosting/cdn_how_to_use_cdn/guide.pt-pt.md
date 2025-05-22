@@ -1,7 +1,7 @@
 ---
 title: "Guia de utilização do acelerador CDN num alojamento web"
 excerpt: "Saiba como melhorar o seu website acelerando o seu carregamento no seu alojamento Web graças ao CDN"
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -109,7 +109,7 @@ Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.acti
 
 - **Duração**: indique a duração da colocação em cache do recurso selecionado.
 
-- **Classificação**:  Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
+- **Classificação**: Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
 
 Depois de escolher, clique no botão `Criar a regra`{.action}.
 
@@ -182,16 +182,16 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 
 - **Prefetch**: Antecipe o carregamento do próximo recurso. Introduza-a automaticamente na cache CDN graças ao *header link* do seu website. Este mecanismo é utilizado principalmente para carregar CSS, JavaScript, imagens, favicons ou ainda apólices web que são exigidas pelo tema do website. 
 
-	No exemplo abaixo, quando está na página de transações que exibe "Hi", um sub-pedido despoleta o pré-carregamento do recurso `/cache/style.CSS`.
+	No exemplo abaixo, quando está na página de transações que exibe "Hi", um sub-pedido despoleta o pré-carregamento do recurso `/cache/style.css`.
 
 	```
 	<?php
-	header("Link: </cache/style.CSS>; rel=prefetch");
+	header("Link: </cache/style.css>; rel=prefetch");
 	print 'Hi'
 	?>
 	```
 
-- **Móvel redirect**:  Reencaminhe automaticamente os visitantes "Mobile" para um website otimizado. À escolha: reencaminhar sistematicamente para a raiz de outro website, ou conservar o URL substituindo apenas o domínio (ou subdomínio).
+- **Móvel redirect**: Reencaminhe automaticamente os visitantes "Mobile" para um website otimizado. À escolha: reencaminhar sistematicamente para a raiz de outro website, ou conservar o URL substituindo apenas o domínio (ou subdomínio).
 
 - **Purga avançada**: Personalize a sua purga escolhendo os elementos da cache a esvaziar: todo o site, pasta, URI, extensão de ficheiros ou através de uma expressão personalizada e regular. 
 
@@ -228,13 +228,13 @@ Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.acti
 
 * **Nome da regra**: Atribua um nome à sua regra.
 * **Tipo de recurso**: Escolha entre as opções seguintes:
-    * **Extensão**: Introduza uma extensão de ficheiro válida sem que tenha de o aperfeiçoar, por exemplo: CSS
-    * **Pasta**:  Introduza um caminho válido para uma das pastas presentes no diretório raiz do seu website.
+    * **Extensão**: Introduza uma extensão de ficheiro válida sem que tenha de o aperfeiçoar, por exemplo: CSS.
+    * **Pasta**: Introduza um caminho válido para uma das pastas presentes no diretório raiz do seu website.
     * **Expressão regular personalizada**: Aplica-se a todas as URI do seu website.
     * **URI**: Indique o subconjunto de recursos do seu website através do seu caminho no URL.
 * **Recurso**: defina os atributos em função do tipo de recurso escolhido.
 * **Duração**: Indique a duração de implementação de cache do recurso selecionado.
-* **Classificação**:  Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
+* **Classificação**: Classifique as suas regras por ordem de execução (da mais baixa à mais elevada).
 
 Depois de escolher, clique no botão `Criar a regra`{.action}.
 
@@ -267,7 +267,7 @@ Mesmo que não utilize um CMS, poderá beneficiar da cache do CDN. Para isso, de
 4. </FilesMatch>
 5. 
 6. # Cache dos JavaScript e CSS durante 1 mês
-7. <FilesMatch "\.(js|CSS)$">
+7. <FilesMatch "\.(js|css)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```
@@ -359,8 +359,8 @@ A ausência da menção "*X-CDN*" indica que não passou através do CDN.
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

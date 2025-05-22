@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Consultar las estadísticas y logs de un sitio web"
 excerpt: "Descubra cómo consultar las estadísticas y los logs de un sitio web en un plan de hosting"
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -12,8 +12,8 @@ El acceso a los logs y a las estadísticas de su sitio web está incluido en su 
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](/links/web/hosting){.external} compatible.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener contratado un [plan de hosting](/links/web/hosting) compatible.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 

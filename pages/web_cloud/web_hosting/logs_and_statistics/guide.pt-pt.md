@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Consultar as estatísticas e logs de um website"
 excerpt: "Saiba como consultar as estatísticas e os logs do seu website graças à sua oferta de alojamento web"
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -12,8 +12,8 @@ O acesso aos logs e às estatísticas do seu website está incluído na sua ofer
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web](/links/web/hosting){.external} compatível.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter um serviço de [alojamento web](/links/web/hosting) compatível.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -130,8 +130,8 @@ Na nova página, obtenha o URL existente na barra de endereço do browser.
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc)., contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Acelerar un sitio web utilizando la CDN"
 excerpt: "Descubra cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN"
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -88,7 +88,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 - **Dev-mode** : permite desactivar la caché durante el desarrollo del sitio web.
 
-- **Brotli** :  tipo de compresión que permite optimizar el tamaño de los archivos en caché.
+- **Brotli** : tipo de compresión que permite optimizar el tamaño de los archivos en caché.
 
 - **Regla de caché**: Cree hasta 5 reglas. Dichas indicaciones determinan la frecuencia de actualización del cacheado para determinados recursos del sitio web. ([seguir el siguiente paso](#cacherules)). 
 
@@ -184,16 +184,16 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 - **Prefetch** : Adelántese la carga del siguiente recurso. Precargue automáticamente en la caché CDN gracias al *header link* de su sitio web. Este mecanismo se utiliza principalmente para cargar CSS, JavaScript, imágenes, favicons o incluso tipos de letra web que son necesarios para el tema del sitio web. 
 
-	En el ejemplo de abajo, cuando se encuentra en la página actual que muestra "Hi", una subpetición inicia la precarga de la fuente `/cache/style.CSS` .  
+	En el ejemplo de abajo, cuando se encuentra en la página actual que muestra "Hi", una subpetición inicia la precarga de la fuente `/cache/style.css` .  
 
 	```
 	<?php
-	header("Link: </cache/style.CSS>; rel=prefetch");
+	header("Link: </cache/style.css>; rel=prefetch");
 	print 'Hi'
 	?>
 	```
 
-- **Móvil redirect**:  Redirija automáticamente a los visitantes "Móvil" hacia un sitio web optimizado. A elegir: redirigir sistemáticamente hacia la raíz de otro sitio web, o conservar la URL sustituyendo únicamente el dominio (o el subdominio).
+- **Móvil redirect**: Redirija automáticamente a los visitantes "Móvil" hacia un sitio web optimizado. A elegir: redirigir sistemáticamente hacia la raíz de otro sitio web, o conservar la URL sustituyendo únicamente el dominio (o el subdominio).
 
 - **Purga avanzada**: Personalice su purga eligiendo los elementos de la caché a vaciar: todo el sitio web, una carpeta, una URI, una extensión de archivos o utilizando una expresión regular personalizada. 
 
@@ -230,13 +230,13 @@ Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla
 
 * **Nombre de regla**: Asigne un nombre a la regla.
 * **Tipo de recurso**: Elija entre las siguientes opciones:
-    * **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: CSS
-    * **Carpeta**:  Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
-    * **Expresión regular personalizada**: y se aplica a todas las URI de su sitio web.
+    * **Extensión**: Introduzca una extensión de archivo válida sin tener que crear un punto, por ejemplo: CSS.
+    * **Carpeta**: Introduzca una ruta válida para una de las carpetas del directorio raíz de su sitio web.
+    * **Expresión regular personalizada**: Se aplica a todos los URI de su sitio web.
     * **URI**: Indique el subconjunto de recursos de su sitio web, a través de su ruta, en la URL.
 * **Recursos**: defina los atributos en función del tipo de recurso elegido.
 * **Duración**: Indique el tiempo de cacheado del recurso seleccionado.
-* **Clasificación**:  Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
+* **Clasificación**: Clasifique sus reglas por orden de ejecución (desde el más bajo hasta el más alto).
 
 A continuación, haga clic en el botón `Crear la regla`{.action}.
 
@@ -267,7 +267,7 @@ En caso de no utilizar ningún sistema de gestión de contenidos, puede disponer
 4. </FilesMatch>
 5. 
 6. # Caché de los JavaScript y CSS durante un mes
-7. <FilesMatch "\.(js|CSS)$">
+7. <FilesMatch "\.(js|css)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```

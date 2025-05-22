@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - View website statistics and logs"
 excerpt: "Find out how to view your website's statistics and logs with your web hosting plan"
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 ## Objective
@@ -12,8 +12,8 @@ Access to your website’s logs and statistics is included in your web hosting p
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An [OVHcloud Web Hosting plan](/links/web/hosting).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 

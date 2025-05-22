@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - CDN Statistiken und Logs einsehen"
 excerpt: "Erfahren Sie, wie Sie die CDN Statistiken und Logs Ihrer Website mit Ihrem Webhosting einsehen können"
-updated: 2025-05-20
+updated: 2025-05-22
 ---
 
 ## Ziel
@@ -48,7 +48,7 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 > **Schritt 5**
 >>
->> Klicken Sie in der rechten Spalte auf den Tab `Cache`{.action}.
+>> Klicken Sie in der linken Spalte auf den Tab `Cache`{.action}.
 >>
 >> Sie sehen nun die Statistiken des CDN für Ihre Domain.
 >>
@@ -106,12 +106,12 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 
 ## Weiterführende Informationen
 
-[Ihre Webseiten mit CDN beschleunigen](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+[Ihre Webseiten mit CDN beschleunigen](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)
 
-[Webhosting - Statistiken und Logs einer Website einsehen](/pages/web_cloud/web_hosting/logs_and_statistics).
- 
+[Webhosting - Statistiken und Logs einer Website einsehen](/pages/web_cloud/web_hosting/logs_and_statistics)
+
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
- 
+
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
- 
+
 Treten Sie unserer [User Community](/links/community) bei.

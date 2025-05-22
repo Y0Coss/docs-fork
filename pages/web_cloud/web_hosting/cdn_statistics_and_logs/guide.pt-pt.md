@@ -1,7 +1,7 @@
 ---
 title: "Alojamento Web - Consultar as estatísticas e logs CDN"
 excerpt: "Saiba como consultar as estatísticas e os logs CDN do seu website graças à sua oferta de alojamento web"
-updated: 2025-05-20
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -48,7 +48,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 >>
 > **Etapa 5**
 >>
->> Na coluna da direita, clique no separador `Cache`{.action}.
+>> Na coluna da esquerda, clique no separador `Cache`{.action}.
 >>
 >> Visualize agora as estatísticas da CDN para o seu domínio.
 >>
@@ -106,12 +106,12 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 
 ## Quer saber mais?
 
-[Guia de utilização do acelerador CDN num alojamento web](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+[Guia de utilização do acelerador CDN num alojamento web](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)
 
-[Alojamento web - Consultar as estatísticas e logs de um website](/pages/web_cloud/web_hosting/logs_and_statistics).
- 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
- 
+[Alojamento web - Consultar as estatísticas e logs de um website](/pages/web_cloud/web_hosting/logs_and_statistics)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
+
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
- 
-Fale com nossa [comunidade de utilizadores](/links/community).
+
+Fale com a nossa [comunidade de utilizadores](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Consultar estadísticas y logs CDN"
 excerpt: "Descubra cómo consultar las estadísticas y los logs CDN de su sitio web gracias a su plan de hosting"
-updated: 2025-05-20
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -48,7 +48,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 > **Etapa 5**
 >>
->> En la columna derecha, haga clic en la pestaña `Caché`{.action}.
+>> En la columna izquierda, haga clic en la pestaña `Cache`{.action}.
 >>
 >> Ya puede consultar las estadísticas de la CDN para su dominio.
 >>
@@ -106,12 +106,12 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
 ## Más información
 
-[Acelerar un sitio web utilizando la CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+[Acelerar un sitio web utilizando la CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)
 
-[Web hosting - Consultar las estadísticas y logs de un sitio web](/pages/web_cloud/web_hosting/logs_and_statistics).
- 
+[Web hosting - Consultar las estadísticas y logs de un sitio web](/pages/web_cloud/web_hosting/logs_and_statistics)
+
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
- 
+
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
- 
+
 Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Sprawdzanie statystyk i logów CDN"
 excerpt: "Dowiedz się, jak sprawdzić statystyki i logi CDN Twojej strony WWW w ramach Twojego pakietu hostingowego"
-updated: 2025-05-20
+updated: 2025-05-22
 ---
 
 ## Wprowadzenie
@@ -48,11 +48,11 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **5** etapy.
 >>
 > **Etap 5**
 >>
->> W prawej kolumnie kliknij zakładkę `Cache`{.action}.
+>> W lewej kolumnie kliknij zakładkę `Cache`{.action}.
 >>
 >> Teraz wyświetlasz statystyki usługi CDN dla swojej domeny.
 >>
->> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem "[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)".
+>> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem „[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)”.
 
 ### Wyświetl logi usługi CDN
 
@@ -102,16 +102,16 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **5** etapy.
 >>
 >> W tabeli, która się wyświetli kliknij przycisk `Download`{.action} po prawej stronie nazwy domeny lub subdomeny, aby pobrać logi CDN.
 >>
->> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem "[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)".
+>> Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem „[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)”.
 
 ## Sprawdź również
 
-[Przewodnik dotyczący usługi CDN na hostingu www](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+[Przewodnik dotyczący usługi CDN na hostingu www](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)
 
-[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics).
- 
+[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)
+
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
- 
+
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
- 
+
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Accélérer mon site web en utilisant le CDN"
 excerpt: "Découvrez comment améliorer votre site web en accélérant son chargement sur votre hébergement web grâce au CDN"
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 ## Objectif
@@ -88,7 +88,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Dev-mode** : vous permet une désactivation du cache pendant le développement de votre site.
 
-- **Brotli** :  type de compression permettant une optimisation de la taille de vos fichiers en cache.
+- **Brotli** : type de compression permettant une optimisation de la taille de vos fichiers en cache.
 
 - **Règle de cache** : Créez jusqu'à 5 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site. ([suivre la prochaine étape](#cacherules)). 
 
@@ -110,7 +110,7 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 - **Durée** : indiquez la durée de mise en cache de la ressource choisie.
 
-- **Classement** :  Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
+- **Classement** : Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
 
 Une fois vos choix réalisés, cliquez sur le bouton `Créer la règle`{.action}.
 
@@ -183,16 +183,16 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 - **Prefetch** : Anticipez le chargement de la ressource suivante. Préchargez-la automatiquement dans le cache CDN grâce au *header link* de votre site web. Ce mécanisme est principalement utilisé pour charger les CSS, JavaScript, images, favicons ou encore des polices web qui sont requis par le thème du site web. 
 
-	Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant « Hi », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.CSS` .  
+	Dans l'exemple, ci-dessous, lorsque vous êtes sur la page courante affichant « Hi », une sous-requète déclenche le pré-chargement de la ressource `/cache/style.css` .  
 
 	```	
 	<?php
-	header("Link: </cache/style.CSS>; rel=prefetch");
+	header("Link: </cache/style.css>; rel=prefetch");
 	print 'Hi'
 	?> 
 	```
 
-- **Mobile redirect** :  Redirigez automatiquement les visiteurs « Mobile » vers un site web optimisé. Au choix : rediriger systématiquement vers la racine d'un autre site web, ou conserver l'URL en ne remplaçant que le domaine (ou le sous-domaine).
+- **Mobile redirect** : Redirigez automatiquement les visiteurs « Mobile » vers un site web optimisé. Au choix : rediriger systématiquement vers la racine d'un autre site web, ou conserver l'URL en ne remplaçant que le domaine (ou le sous-domaine).
 
 - **Purge avancée** : Personnalisez votre purge en choisissant les éléments du cache à vider : tout le site, un dossier, une URI, une extension de fichiers ou à l'aide d'une expression régulière personnalisée. 
 
@@ -229,13 +229,13 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 * **Nom de règle** : Attribuez un nom à votre règle.
 * **Type de ressource** : Choisissez parmi les choix ci-dessous:
-    * **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : CSS
-    * **Dossier** :  Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
+    * **Extension** : Veuillez saisir une extension de fichier valide sans mettre de point, par exemple : CSS.
+    * **Dossier** : Veuillez saisir un chemin valide pour l'un des dossiers présents dans le répertoire racine de votre site web.
     * **Expression régulière personnalisée** : Elle s'applique sur toutes les URI de votre site web.
     * **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans l'URL.
 * **Ressource** : définissez les attributs en fonction du type de ressource choisie.
 * **Durée** : Indiquez la durée de mise en cache de la ressource choisie.
-* **Classement** :  Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
+* **Classement** : Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
 
 Une fois vos choix réalisés, cliquez sur le bouton `Créer la règle`{.action}.
 
@@ -266,7 +266,7 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 4. </FilesMatch>
 5. 
 6. # Cache des JavaScript et CSS durant 1 mois
-7. <FilesMatch "\.(js|CSS)$">
+7. <FilesMatch "\.(js|css)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Aumentare la velocità di un sito Web con la CDN"
 excerpt: "Questa guida ti mostra come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN"
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 ## Obiettivo
@@ -183,16 +183,16 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 - **Prefetch**: Anticipa il caricamento della risorsa seguente. Precaricalo automaticamente nella cache CDN grazie all *header link* del tuo sito Web. Questo meccanismo è utilizzato principalmente per caricare CSS, JavaScript, immagini, favicons o ancora polizze Web richieste per il tema del sito Web. 
 
-	Nel nostro esempio, quando sei sulla pagina corrente che mostra "Hi", un sottorichiesto attiva il precaricamento della risorsa `/cache/style.CSS`.
+	Nel nostro esempio, quando sei sulla pagina corrente che mostra "Hi", un sottorichiesto attiva il precaricamento della risorsa `/cache/style.css`.
 
 	```	
 	<?php
-	header("Link: </cache/style.CSS>; rel=prefetch");
+	header("Link: </cache/style.css>; rel=prefetch");
 	print 'Hi'
 	?>
 	```
 
-- **Mobile redirect**:  Reindirizza automaticamente i visitatori "Mobile" verso un sito Web ottimizzato. A scelta: reindirizzare sistematicamente verso la radice di un altro sito Web, o conservare l'URL sostituendo solo il dominio (o sottodominio).
+- **Mobile redirect**: Reindirizza automaticamente i visitatori "Mobile" verso un sito Web ottimizzato. A scelta: reindirizzare sistematicamente verso la radice di un altro sito Web, o conservare l'URL sostituendo solo il dominio (o sottodominio).
 
 - **Purga avanzata**: Personalizza lo spurgo scegliendo gli elementi della cache da svuotare: tutto il sito, una cartella, un'URI, un'estensione di file o tramite un'espressione regolare personalizzata. 
 
@@ -229,13 +229,13 @@ Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.actio
 
 * **Regola**: Assegna un nome alla tua regola.
 * **Tipo di risorsa**: Scegli tra le seguenti opzioni:
-    * **Estensione**: Inserisci un'estensione di file valida senza apportare modifiche, ad esempio: CSS
-    * **Cartella**:  Inserisci un percorso valido per una delle cartelle presenti nella directory di root del tuo sito web.
-    * **Espressione regolare personalizzata**: e si applica a tutti gli URI del tuo sito Web.
+    * **Estensione**: Inserisci un'estensione di file valida senza apportare modifiche, ad esempio: CSS.
+    * **Cartella**: Inserisci un percorso valido per una delle cartelle presenti nella directory di root del tuo sito web.
+    * **Espressione regolare personalizzata**: E si applica a tutti gli URI del tuo sito Web.
     * **URI**: Indica la sottounità di risorse del tuo sito Web, tramite il percorso che conduce all'URL.
 * **Risorsa**: definisci gli attributi in funzione del tipo di risorsa scelta.
 * **Durata**: Indica la durata di messa in cache della risorsa scelta.
-* **Classificazione**:  Classifica per ordine di esecuzione le tue regole (da minimo a massimo).
+* **Classificazione**: Classifica per ordine di esecuzione le tue regole (da minimo a massimo).
 
 Una volta effettuate le scelte, clicca sul pulsante `Crea la regola`{.action}.
 
@@ -266,7 +266,7 @@ Se non utilizzi un CMS, puoi usufruire della cache della CDN. Per farlo, è nece
 4. </FilesMatch>
 5. 
 6. # Cache dei JavaScript e CSS per 1 mese
-7. <FilesMatch "\.(js|CSS)$">
+7. <FilesMatch "\.(js|css)$">
 8. Header set Cache-Control "max-age=2592000"
 9. </FilesMatch>
 ```
@@ -358,7 +358,7 @@ L’assenza dell’intestazione "*X-CDN*" indica che il traffico del tuo sito We
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

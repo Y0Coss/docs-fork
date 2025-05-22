@@ -1,7 +1,7 @@
 ---
 title: "Ihre Webseiten mit CDN beschleunigen"
 excerpt: "Diese Anleitung erklärt, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern"
-updated: 2025-05-21
+updated: 2025-05-22
 ---
 
 ## Ziel 
@@ -183,11 +183,11 @@ Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`
 
 - **Prefetch**: Planen Sie das Laden der nächsten Ressource. Laden Sie sie automatisch im CDN Cache mithilfe des *header link* Ihrer Website. Dieser Mechanismus wird hauptsächlich verwendet, um CSS, JavaScript, Bilder, Favicons oder Schriftarten zu laden, die von der Website angefordert werden. 
 
-	Im folgenden Beispiel wird, wenn die aktuelle Seite "Hi" anzeigt, eine Subanfrage das Vorladen der Ressource`/cache/style.CSS` auslösen.  
+	Im folgenden Beispiel wird, wenn die aktuelle Seite "Hi" anzeigt, eine Subanfrage das Vorladen der Ressource`/cache/style.css` auslösen.  
 
 	```	
 	<?php
-	header("Link: </cache/style.CSS>; rel=prefetch");
+	header("Link: </cache/style.css>; rel=prefetch");
 	print 'Hi'
 	?> 
 	```
@@ -229,8 +229,8 @@ Klicken Sie unter **Cache-Regeln** auf den Button `Regel hinzufügen`{.action}.
 
 * **Regelname**: Weisen Sie Ihrer Regel einen Namen zu.
 * **Ressourcenart**: Wählen Sie aus den folgenden Optionen:
-    * **Endung**: Geben Sie eine gültige Dateiendung ohne Punkt ein, zum Beispiel: CSS
-    * **Ordner**:  Geben Sie einen gültigen Pfad zu einem Ordner im Wurzelverzeichnis Ihrer Website an.
+    * **Endung**: Geben Sie eine gültige Dateiendung ohne Punkt ein, zum Beispiel: CSS.
+    * **Ordner**: Geben Sie einen gültigen Pfad zu einem Ordner im Wurzelverzeichnis Ihrer Website an.
     * **Eigener regulärer Ausdruck**: Gilt für alle URIs Ihrer Website.
     * **URI**: Geben Sie die Teilmenge der Ressourcen Ihrer Website über den URL-Pfad ein.
 * **Ressource**: Definieren Sie die Attribute abhängig vom gewählten Ressourcentyp.
@@ -266,7 +266,7 @@ Sie können auch dann vom CDN-Cache profitieren, wenn Sie kein CMS verwenden. Hi
     </FilesMatch>
 
 # Caching von JavaScript und CSS für einen Monat
-    <FilesMatch "\.(js|CSS)$">
+    <FilesMatch "\.(js|css)$">
     Header-Set Cache-Control "max-age=2592000"
     </FilesMatch>
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Consulta le statistiche e i log della CDN"
 excerpt: "Questa guida ti mostra come consultare le statistiche e i log CDN del tuo sito Web grazie alla tua offerta di hosting Web"
-updated: 2025-05-20
+updated: 2025-05-22
 ---
 
 ## Obiettivo
@@ -48,7 +48,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 5**
 >>
->> Nella colonna di destra, clicca sulla scheda `Cache`{.action}.
+>> Nella colonna a sinistra, clicca sulla scheda `Cache`{.action}.
 >>
 >> Visualizzi le statistiche della CDN per il tuo dominio.
 >>
@@ -106,12 +106,12 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 
 ## Per saperne di più
 
-[Aumentare la velocità di un sito Web con la CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+[Aumentare la velocità di un sito Web con la CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)
 
-[Hosting Web - Consultare le statistiche e i log di un sito Web](/pages/web_cloud/web_hosting/logs_and_statistics).
- 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
- 
+[Hosting Web - Consultare le statistiche e i log di un sito Web](/pages/web_cloud/web_hosting/logs_and_statistics)
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
+
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
- 
+
 Contatta la nostra [Community di utenti](/links/community).
