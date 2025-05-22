@@ -130,7 +130,7 @@ Na nova página, obtenha o URL existente na barra de endereço do browser.
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc)., contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
