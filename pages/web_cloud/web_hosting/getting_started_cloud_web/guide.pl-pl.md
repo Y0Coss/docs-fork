@@ -42,7 +42,7 @@ Aktualnie dostępne języki to:
 - Python
 - Ruby
 
-Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](/links/manager), kliknij `Hosting`{.action} na pasku usług po lewej stronie, a następnie wybierz nazwę odpowiedniego hostingu Cloud Web. Teraz przejdź do zakładki `Frameworki`{.action}.
+Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta OVHcloud](/links/manager). Kliknij `Web Cloud`{.action} na pasku usług po lewej stronie, a następnie `Hosting`{.action}. Wybierz nazwę odpowiedniego hostingu Cloud Web i przejdź do zakładki `Frameworki`{.action}.
 
 Framework jest automatycznie tworzony podczas instalacji hostingu. Oznaczony jest jako `Wybór domyślny` w tabeli, która się wyświetli. Aby zmodyfikować wcześniej skonfigurowany framework, kliknij trzy kropki po jego prawej stronie, a następnie `Modyfikuj`{.action}. 
 

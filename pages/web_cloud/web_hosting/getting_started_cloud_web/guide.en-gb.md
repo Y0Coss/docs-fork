@@ -42,6 +42,8 @@ The languages currently available are:
 - Python
 - Ruby
 
+To access the runtime software applications for your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan, log in to the [OVHcloud Control Panel](/links/manager). Click `Web Cloud`{.action} in the services bar on the left-hand side, then click `Hosting plans`{.action}. Select the name of the Cloud Web hosting plan concerned, and go to the `Runtime software`{.action} tab.
+
 To access the runtime software applications for your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan, log in to the [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
 
 When you set up your hosting plan, a runtime software application will be created automatically. It is included as the `Default choice` in the table that appears. To modify a runtime software that has already been set, click on the three dots next to it, then `Modify`{.action}. 
