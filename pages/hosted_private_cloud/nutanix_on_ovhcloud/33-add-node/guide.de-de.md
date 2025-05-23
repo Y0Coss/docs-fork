@@ -124,19 +124,19 @@ Please refer to the documentation below:
 >> - Get the Boot ID (enter *power* as the **bootType**):
 >>
 >> > [!api]
->> > @api {v1} /nutanix GET /dedicated/server/{serviceName}/boot
+>> > @api {v1} /dedicated/server/ GET /dedicated/server/{serviceName}/boot
 >> >
 >>
 >> - Set the Boot ID: 
 >>
 >> > [!api]
->> > @api {v1} /nutanix PUT /dedicated/server/{serviceName}
+>> > @api {v1} /dedicated/server/ PUT /dedicated/server/{serviceName}
 >> >
 >>
 >> - Power down the node:
 >>
 >> > [!api]
->> > @api {v1} /nutanix POST /dedicated/server/{serviceName}/reboot
+>> > @api {v1} /dedicated/server/ POST /dedicated/server/{serviceName}/reboot
 >> >
 >>
 
