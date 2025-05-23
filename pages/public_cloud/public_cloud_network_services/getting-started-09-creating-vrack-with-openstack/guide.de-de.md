@@ -51,7 +51,9 @@ Bevor Sie beginnen, sollten Sie unbedingt diese Leitfäden lesen, um Ihre OpenSt
 
 Wenn Sie ein älteres Projekt haben und kein vRack besitzen, müssen Sie eines bestellen. Dieses Produkt ist kostenlos und die Bereitstellung dauert nur wenige Minuten.
 
-Gehen Sie in das Menü `Bare Metal Cloud`{.action} und klicken Sie auf die Schaltfläche `Bestellen`{.action}. Unter diesem Menü klicken Sie auf die Option `vRack`{.action}.
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein und klicken Sie im linken Menü auf den Button `Dienst hinzufügen`{.action} (Warenkorbsymbol). Benutzen Sie den Filter oben auf der Seite oder scrollen Sie nach unten, um den Dienst `vRack`{.action} zu finden.
+
+![vRack bestellen](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
 ![vRack bestellen](images/ordering_vrack_2024.png){.thumbnail}
 

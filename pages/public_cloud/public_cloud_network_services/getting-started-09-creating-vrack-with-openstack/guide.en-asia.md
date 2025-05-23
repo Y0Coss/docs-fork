@@ -54,7 +54,7 @@ Before you get started, make sure you read these guides to properly setup your O
 
 If you have an older project and don't have a vRack, you need to order one. Using the vRack itself is free of charge and it can be delivered within a few minutes.
 
-Go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. Under this menu, click on `vRack`{.action}.
+Log in to your OVHcloud Control Panel and click the button `Add a service`{.action} (shopping cart icon) in the left-hand menu. Use the filter at the top of the page or scroll down to find the service `vRack`{.action}. 
 
 ![Order vrack](images/ordering_vrack_2024.png){.thumbnail}
 
