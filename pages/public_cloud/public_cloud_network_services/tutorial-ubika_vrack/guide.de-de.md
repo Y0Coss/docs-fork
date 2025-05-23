@@ -50,7 +50,7 @@ Indem Sie Ihr Public Cloud Projekt und Ihren Additional IP Block zum selben vRac
 
 **Fügen Sie Ihr Public Cloud Projekt und Ihren Additional IP Block zum selben vRack hinzu**
 
-Weitere Informationen finden Sie in der Anleitung „[IP-Block in einem vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)“.
+Weitere Informationen finden Sie in der Anleitung "[IP-Block in einem vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)".
 
 Hier die Architektur, die wir implementieren werden:
 
