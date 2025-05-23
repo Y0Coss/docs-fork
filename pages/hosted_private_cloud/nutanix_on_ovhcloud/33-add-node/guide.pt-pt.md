@@ -1,7 +1,7 @@
 ---
 title: "Adicionar ou retirar um nó num cluster Nutanix (Scale In/Out) (EN)"
 excerpt: 'Scale your Nutanix on OVHcloud cluster by adding or removing nodes via the Control Panel or the API'
-updated: 2025-05-22
+updated: 2025-05-23
 ---
 
 ## Objective
