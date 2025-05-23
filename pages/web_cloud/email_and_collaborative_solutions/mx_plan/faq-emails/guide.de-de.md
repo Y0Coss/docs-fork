@@ -27,16 +27,15 @@ Auf dieser Seite finden Sie die am häufigsten gestellten Fragen zur Verwendung 
 
 ### E-Mail-Angebote bei OVHcloud
 
-OVHcloud bietet derzeit 4 E-Mail-Angebote an. Um mehr über die Eigenschaften zu erfahren, gehen Sie zu den folgenden Registerkarten:
-
+OVHcloud bietet derzeit 4 E-Mail-Angebote an. Um mehr über die Eigenschaften zu erfahren, klicken Sie auf die Tabs:
 > [!tabs]
 > **E-Mails / MX Plan**
 >>
 >> ![MX Plan](images/mxplan01.png){.thumbnail .w-500}
 >>
 >> 1. Das älteste E-Mail-Angebot von OVHcloud, das die wesentlichen Funktionen eines E-Mail-Dienstes mit 5 GB Speicherplatz pro E-Mail-Account enthält.
->> 2. Bei den Webhosting-Angeboten inklusive und kann über das [OVHcloud Kundencenter](/links/manager) bestellt werden.
->> 3. Dieses Angebot ist mit 3 verschiedenen E-Mail-Technologien verfügbar. **RoundCube**, **OWA** (Outlook Web Access) und **Zimbra**.
+>> 2. Es ist in den Webhosting-Angeboten inklusive und kann über das [OVHcloud Kundencenter](/links/manager) bestellt werden.
+>> 3. Dieses Angebot ist mit 3 verschiedenen E-Mail-Technologien verfügbar. **RoundCube**, **OWA** (Outlook Web App) und **Zimbra**.
 >>
 > **Zimbra Mail**
 >>
@@ -44,23 +43,23 @@ OVHcloud bietet derzeit 4 E-Mail-Angebote an. Um mehr über die Eigenschaften zu
 >>
 >> 1. Sie ist das neueste E-Mail-Angebot von OVHcloud und bietet einen flexiblen und skalierbaren E-Mail-Dienst auf drei Ebenen von Angeboten und Funktionen.
 >> 2. Sie können einen Zimbra-Account über das [OVHcloud Kundencenter](/links/manager) oder direkt über [ovhcloud.com](/links/web/email) bestellen.
->> 3. Wie der Name schon sagt, verwendet sie das **Zimbra**-Interface.
+>> 3. Sie verwendet das **Zimbra**-Interface.
 >>
 > **E-Mails Pro**
 >>
 >> ![Email Pro](images/emailpro01.png){.thumbnail .w-500}
 >>
->> 1. E-Mail-Angebot auf Basis der Exchange Technologie mit grundlegenden Funktionen und 10 GB Speicherplatz.
+>> 1. E-Mail-Angebot auf Basis von Exchange mit grundlegenden Funktionen und 10 GB Speicherplatz.
 >> 2. Sie können einen E-Mail Pro Account über das [OVHcloud Kundencenter](/links/manager) oder direkt über [ovhcloud.com](/links/web/email) bestellen.
->> 3. Dieses Angebot verwendet das Webmail-Interface **OWA** (Outlook Web Access).
+>> 3. Dieses Angebot verwendet das Webmail-Interface **OWA** (Outlook Web App).
 >>
 > **Exchange**
 >>
 >> ![Exchange](images/exchange01.png){.thumbnail .w-500}
 >>
 >> 1. Umfassendes E-Mail-Angebot mit kollaborativen Funktionen mit 50 GB oder 300 GB Speicherplatz.
->> 2. Bei den Webhosting-Angeboten inklusive und kann über das [OVHcloud Kundencenter](/links/manager) bestellt werden.
->> 3. Dieses Angebot verwendet das Webmail-Interface **OWA** (Outlook Web Access).
+>> 2. Es ist in den Webhosting-Angeboten inklusive und kann über das [OVHcloud Kundencenter](/links/manager) bestellt werden.
+>> 3. Dieses Angebot verwendet das Webmail-Interface **OWA** (Outlook Web App).
 >>
 
 > [!success]
@@ -71,7 +70,7 @@ OVHcloud bietet derzeit 4 E-Mail-Angebote an. Um mehr über die Eigenschaften zu
 Das MX Plan Angebot zeichnet sich dadurch aus, dass es auf drei verschiedenen E-Mail-Technologien basiert. Jede hat ihr eigenes Webmail-Interface:
 
 - **RoundCube**.
-- **OWA** (Outlook Web Access).
+- **OWA** (Outlook Web App).
 - **Zimbra**.
 
 Diese Vielfalt an Technologien erfordert eine unterschiedliche Ergonomie des Betriebs für jede Schnittstelle. Einige Funktionen können über das Kundencenter konfiguriert werden, andere über Webmail.
@@ -82,7 +81,7 @@ Im Folgenden finden Sie eine Tabelle mit einer Zusammenfassung der wichtigsten E
 
 ///
 
-/// details | Wie kann ich die bei meinem Angebot verwendete Technologie identifizieren **MX Plan**?
+/// details | Wie kann ich die bei meinem **MX Plan** verwendete Technologie identifizieren?
 
 Die für Ihr MX Plan Angebot verwendete E-Mail-Technologie ist durch das Webmail-Interface gekennzeichnet. Um ihn über Ihr Kundencenter zu identifizieren, folgen Sie dem folgenden Pfad:
 
@@ -90,7 +89,7 @@ Die für Ihr MX Plan Angebot verwendete E-Mail-Technologie ist durch das Webmail
 1. Gehen Sie in den Bereich `Web Cloud`{.action}.
 1. Klicken Sie auf `MX Plan`{.action}.
 1. Wählen Sie die betreffende Domain aus.
-1. Wählen Sie im alternativen Teilsektor `Allgemeine Informationen`{.action} die Option „Standard“.
+1. Wählen Sie in `Allgemeine Informationen`{.action} die Option „Standard“.
 1. Notieren Sie die unter **Webmail** verwendete Technologie.
 
 ![MX PLAN](images/technology-email.png){.thumbnail .w-500}
@@ -116,7 +115,7 @@ Das **Passwort** muss folgende Bedingungen erfüllen:
 - Keine Zeichen mit Akzent.
 
 > [!warning]
-> Verwenden Sie aus Sicherheitsgründen nicht dasselbe Kennwort zweimal. Wählen Sie einen Namen aus, der in keinem Zusammenhang mit Ihren persönlichen Daten steht (vermeiden Sie z. B. Ihren Namen, Vornamen und Ihr Geburtsdatum). Ändern Sie es regelmäßig.
+> Verwenden Sie aus Sicherheitsgründen nicht dasselbe Passwort zweimal. Wählen Sie einen Namen aus, der in keinem Zusammenhang mit Ihren persönlichen Daten steht (vermeiden Sie z.B. Ihren Namen, Vornamen und Ihr Geburtsdatum). Ändern Sie es regelmäßig.
 
 ///
 
@@ -125,9 +124,9 @@ Das **Passwort** muss folgende Bedingungen erfüllen:
 Im Folgenden finden Sie die wichtigsten Gründe für den fehlenden Empfang Ihrer E-Mails.
 
 1. **E-Mail-Programm**: Ein Fehler beim Empfang von E-Mails hängt oft mit der Konfiguration Ihrer E-Mail-Adresse auf Ihrem E-Mail-Programm zusammen (Outlook, macOS Mail, Thunderbird usw.). Um dies zu überprüfen, loggen Sie sich im [webmail](/links/web/email) ein. Wenn Sie in Ihrem Posteingang im Webmail E-Mails sehen, die nicht in Ihrem E-Mail-Programm vorhanden sind, liegt das Problem in Ihrer Softwarekonfiguration. Weitere Informationen hierzu finden Sie auf unserer Seite [Versand oder Empfang von E-Mails nicht möglich](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **DNS-Konfiguration**: Ihr E-Mail-Angebot ist an einen Domainnamen gebunden. In der DNS-Zone der DNS-Zone bezeichnen MX-Einträge die Server, die E-Mails empfangen. Wenn Sie kürzlich Ihre DNS-Server oder die DNS-Zone geändert haben, wurden diese MX-Einträge möglicherweise „unterbrochen“. Dies würde einen Ausfall beim E-Mail-Empfang erklären.Weitere Informationen finden Sie auf unserer Seite [Versand oder Empfang von E-Mails nicht möglich](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **E-Mail-Quota überschritten**: Wenn das Speicherkontingent Ihres E-Mail-Accounts erreicht ist, können keine E-Mails mehr empfangen werden, und Ihr Absender erhält eine Fehlermeldung, dass Ihr E-Mail-Account voll ist. Speicherplatz eines E-Mail-Accounts verwalten Weitere Informationen finden Sie auf unserer Seite [Speicherplatz eines E-Mail-Accounts verwalten ](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota).
-1. **Posteingangsregeln**: Es ist möglich, dass eine Posteingangsregel die Zustellung einer E-Mail an Ihren Posteingang verhindern oder sie an den SPAM-Ordner weiterleiten kann. Überprüfen Sie Ihre Regeln mit Ihrem E-Mail Programm (Outlook, macOS Mail, Thunderbird...) oder über das [webmail](/links/web/email).
+1. **DNS-Konfiguration**: Ihr E-Mail-Angebot ist an einen Domainnamen gebunden. In der DNS-Zone der DNS-Zone bezeichnen MX-Einträge die Server, die E-Mails empfangen. Wenn Sie kürzlich Ihre DNS-Server oder die DNS-Zone geändert haben, wurden diese MX-Einträge möglicherweise inoperabel. Dies kann einen Ausfall beim E-Mail-Empfang erklären. Weitere Informationen finden Sie auf unserer Seite [Versand oder Empfang von E-Mails nicht möglich](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
+1. **E-Mail-Quota überschritten**: Wenn das Speicherkontingent Ihres E-Mail-Accounts erreicht ist, können keine E-Mails mehr empfangen werden, und Ihr Absender erhält eine Fehlermeldung, dass Ihr E-Mail-Account voll ist. Weitere Informationen finden Sie auf unserer Seite [Speicherplatz eines E-Mail-Accounts verwalten ](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota).
+1. **Posteingangsregeln**: Es ist möglich, dass eine Posteingangsregel die Zustellung einer E-Mail an Ihren Posteingang verhindern oder sie an den SPAM-Ordner weiterleiten kann. Überprüfen Sie Ihre Regeln mit Ihrem E-Mail Programm (Outlook, macOS Mail, Thunderbird, etc.) oder über das [webmail](/links/web/email).
 1. **Störung oder Wartung**: Überprüfen Sie auf unserer Seite [Web Cloud Status](https://web-cloud.status-ovhcloud.com/), ob derzeit eine Operation auf Ihrem E-Mail-Dienst läuft.
 
 > [!primary]
@@ -137,9 +136,9 @@ Im Folgenden finden Sie die wichtigsten Gründe für den fehlenden Empfang Ihrer
 
 /// details | Was kann ich tun, wenn ich meine E-Mails nicht senden kann?
 
-1. **E-Mail-Programm**: Ein Sendefehler kann mit der Konfiguration Ihrer E-Mail-Adresse auf Ihrem E-Mail-Programm zusammenhängen (Outlook, macOS Mail, Thunderbird usw.). Um dies zu überprüfen, loggen Sie sich im [webmail](/links/web/email) ein. Wenn Sie feststellen, dass Sie E-Mails über das Webmail versenden können, hängt das Problem von Ihrer Softwarekonfiguration ab. Weitere Informationen hierzu finden Sie auf unserer Seite [Versand oder Empfang von E-Mails nicht möglich](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **Fehlercode**: Wenn Sie eine Nachricht senden und der empfangende Server diese ablehnt, sendet er in der Regel eine Fehlermeldung mit einem Fehlercode an Sie zurück. Analysieren Sie die Fehlermeldung und geben Sie ggf. den Grund an (das maximale Kontingent des E-Mail-Accounts wurde erreicht, die E-Mail-Adresse des Empfängers existiert nicht usw.). Weitere Informationen hierzu finden Sie auf unserer Seite [Versand oder Empfang von E-Mails nicht möglich](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **E-Mail-Größe**: Es gibt eine Größenbeschränkung für E-Mails, egal ob es sich um Ihren E-Mail-Anbieter oder den Empfänger-Server handelt. Wir empfehlen Ihnen, vor allem kleine Bilder oder PDF-Dateien zu übertragen. Für große Dateien empfehlen wir die Verwendung von Tools zur Dateiübertragung wie [plik.ovh](https://plik.ovh/).
+1. **E-Mail-Programm**: Ein Sendefehler kann mit der Konfiguration Ihres E-Mail-Accounts auf Ihrem E-Mail-Programm zusammenhängen (Outlook, macOS Mail, Thunderbird, etc.). Um dies zu überprüfen, loggen Sie sich im [Webmail](/links/web/email) ein. Wenn Sie feststellen, dass Sie E-Mails über Webmail versenden können, hängt das Problem von Ihrer Softwarekonfiguration ab. Weitere Informationen hierzu finden Sie auf unserer Seite [Versand oder Empfang von E-Mails nicht möglich](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
+1. **Fehlercode**: Wenn Sie eine Nachricht senden und der empfangende Server diese ablehnt, sendet er in der Regel eine Fehlermeldung mit einem Fehlercode zurück. Analysieren Sie die Fehlermeldung auf den Grund (das maximale Kontingent des E-Mail-Accounts wurde erreicht, die E-Mail-Adresse des Empfängers existiert nicht, etc.). Weitere Informationen hierzu finden Sie auf unserer Seite [Versand oder Empfang von E-Mails nicht möglich](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
+1. **E-Mail-Größe**: Es gibt eine Größenbeschränkung für E-Mails, egal ob es sich um Ihren E-Mail-Anbieter oder den Empfänger-Server handelt. Wir empfehlen Ihnen, nur kleine Bilder oder PDF-Dateien zu übertragen. Für große Dateien empfehlen wir die Verwendung von Tools zur Dateiübertragung wie [plik.ovh](https://plik.ovh/).
 
 ///
 
@@ -154,7 +153,7 @@ Um zu erfahren, wie Sie einen SPF-Eintrag für Ihren E-Mail-Dienst konfigurieren
 
 **DKIM (DomainKeys Identified Mail)**
 
-Es ermöglicht das Signieren von E-Mails, um Identitätsdiebstahl zu verhindern. Diese Signatur basiert auf dem Prinzip von Hash in Kombination mit asymmetrischer Kryptographie. Dieses Protokoll ergänzt das SPF. Das SPF greift in die Legitimität des Domainnamens ein, während das DKIM sicherstellt, dass jede E-Mail beim Versand vom richtigen E-Mail-Dienst signiert wird. Es wird auch zu einer Referenz in Sachen E-Mail-Sicherheit. Einige E-Mail-Dienste können eine E-Mail auch als Junk-E-Mail einstufen, wenn sie nicht durch eine DKIM-Signatur geschützt ist.
+Es ermöglicht das Signieren von E-Mails, um Identitätsdiebstahl zu verhindern. Diese Signatur basiert auf dem Prinzip von Hash in Kombination mit asymmetrischer Kryptographie. Dieses Protokoll ergänzt SPF. SPF greift in die Legitimität des Domainnamens ein, während das DKIM sicherstellt, dass jede E-Mail beim Versand vom richtigen E-Mail-Dienst signiert wird. Es wird auch zu einer Referenz in Sachen E-Mail-Sicherheit. Einige E-Mail-Dienste können eine E-Mail auch als Junk-E-Mail einstufen, wenn sie nicht durch eine DKIM-Signatur geschützt ist.
 
 Weitere Informationen zum Konfigurieren eines DKIM-Eintrags für Ihren E-Mail-Dienst finden Sie in unserer Anleitung [E-Mail-Sicherheit durch einen DKIM-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dkim).
 
@@ -163,66 +162,66 @@ Weitere Informationen zum Konfigurieren eines DKIM-Eintrags für Ihren E-Mail-Di
 
 /// details | Wie kann ich meine E-Mail-Adresse einrichten und mit dem Webmail verwenden?
 
-Sie können Ihre E-Mail-Adresse auf einem E-Mail-Client wie Outlook, Thunderbird, Mac Mail etc. einrichten.
+Sie können Ihre E-Mail-Accounts auf einem E-Mail-Client wie Outlook, Thunderbird, Mac Mail, etc. einrichten.  
 Hierzu stellen wir Ihnen Anleitungen zur Einrichtung Ihrer E-Mail-Adresse zur Verfügung. Diese finden Sie [hier](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 > [!tabs]
 > **E-Mails und Zimbra Mail**
 >>
->> **Windows-Computer**
->> - [Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
->> - [Thunderbird für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows).
->> - [Mail for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10).
+>> **Windows**
+>> - [Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+>> - [Thunderbird für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows)
+>> - [Mail for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 >>
 >> **Apple Mac Computer**
->> - [Outlook für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac).
->> - [Mail für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos).
->> - [Thunderbird für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac).
+>> - [Outlook für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
+>> - [Mail für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
+>> - [Thunderbird für macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac)
 >>
 >> **iPhone oder iPad**
->> - [Mail für iPhone und iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios).
+>> - [Mail für iPhone und iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 >>
 >> **Android Smartphone oder Tablet**
->> - [Google Mail für Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
+>> - [Google Mail für Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)
 >>
 > **E-Mails Pro**
 >>
->> **Windows-Computer**
->> - [Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016).
->> - [Thunderbird für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_thunderbird).
->> - [Mail for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10).
+>> **Windows**
+>> - [Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+>> - [Thunderbird für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_thunderbird)
+>> - [Mail for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 >>
 >> **Apple Mac Computer**
->> - [Outlook für macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac).
->> - [Mail für macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos).
->> - [Thunderbird für macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_thunderbird_mac).
+>> - [Outlook für macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac)
+>> - [Mail für macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
+>> - [Thunderbird für macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_thunderbird_mac)
 >>
 >> **iPhone oder iPad**
->> - [Mail für iPhone und iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios).
+>> - [Mail für iPhone und iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 >>
 >> **Android Smartphone oder Tablet**
->> - [Google Mail für Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
+>> - [Google Mail für Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android)
 >>
 > **Microsoft Exchange**
 >>
->> **Windows-Computer**
->> - [Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016).
->> - [Thunderbird für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird).
->> - [Mail for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10).
+>> **Windows**
+>> - [Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
+>> - [Thunderbird für Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird)
+>> - [Mail for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
 >>
 >> **Apple Mac Computer**
->> - [Outlook für macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
->> - [Mail für macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos).
->> - [Thunderbird für macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird_mac).
+>> - [Outlook für macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
+>> - [Mail für macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)
+>> - [Thunderbird für macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird_mac)
 >>
 >> **iPhone oder iPad**
->> - [Mail für iPhone und iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios).
+>> - [Mail für iPhone und iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)
 >>
 >> **Android Smartphone oder Tablet**
->> - [Google Mail für Android](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).
+>> - [Google Mail für Android](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android)
 >>
 
-Dank [Webmail](/links/web/email) können Sie jederzeit und von jedem beliebigen Gerät aus auf Ihren E-Mail-Dienst zugreifen. Nachdem Sie Ihren E-Mail-Account erstellt haben, können Sie sich hier einloggen, um auf diesen zuzugreifen.
+Mit [Webmail](/links/web/email) können Sie jederzeit und von jedem beliebigen Gerät aus auf Ihren E-Mail-Dienst zugreifen. Nachdem Sie Ihren E-Mail-Account erstellt haben, können Sie sich hier einloggen, um auf diesen zuzugreifen.
 
 **Tipps und Tricks**: Wenn Sie Ihren E-Mail-Account auf einem E-Mail-Client einrichten, empfehlen wir Ihnen, hierzu das IMAP-Protokoll zu verwenden. So werden die E-Mails weiterhin auf dem Server gespeichert und Sie können sie von überall aus über das [Webmail](/links/web/email) einsehen. Weitere Informationen hierzu finden Sie in [unserer Dokumentation](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
@@ -266,13 +265,13 @@ Aus Gründen der Sicherheit und der Vertraulichkeit ist es nicht möglich, ein P
 
 > [!primary]
 >
-> Wenn Sie ein Kennwort speichern möchten, sollten Sie einen Kennwort-Manager verwenden, z. B. **Keepass**.
+> Wenn Sie ein Passwort speichern möchten, sollten Sie einen Passwort-Manager verwenden, z.B. **KeePass**.
 
 ///
 
 /// details | Wie kann ich die Anzahl der empfangenen Spam-Mails reduzieren?
 
-Um den Empfang von Spam-Mails einzuschränken, können Sie Eingangsregeln für Ihre E-Mails einrichten (bei MX Plan als „Filter“ bezeichnet). Ihr Ziel ist es, E-Mails bei Empfang in den Spam-Ordner zu verschieben oder direkt zu löschen.
+Um den Empfang von Spam-Mails einzuschränken, können Sie Eingangsregeln für Ihre E-Mails einrichten (bei MX Plan als „Filter“ bezeichnet). Ihr Ziel ist es, E-Mails bei Empfang in den Spam-Ordner zu verschieben oder direkt zu löschen.  
 Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Web Cloud`{.action} und klicken Sie auf `MX Plan`{.action}. Wählen Sie die betreffende Domain aus und klicken Sie dann auf den Tab `E-Mails`{.action}. In der Spalte `Filter` klicken Sie auf das Icon „Verwaltung der Filter des Accounts“.
 
 Wird in Ihrem Kundencenter keine `Filter`-Spalte angezeigt, müssen zunächst im [Webmail](/links/web/email) über die Verwaltungsregeln des Posteingangs Filter erstellt werden. Lesen Sie die folgende Anleitung für mehr Informationen: [Posteingangsregeln in OWA erstellen](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
@@ -284,12 +283,12 @@ Wird in Ihrem Kundencenter keine `Filter`-Spalte angezeigt, müssen zunächst im
 
 /// details | Mein E-Mail-Accounts ist voll, ich habe keinen Speicherplatz mehr. Was kann ich tun?
 
-Wenn Sie [eines der E-Mail-Angebote von OVHcloud](/links/web/emails) abonniert haben und einer Ihrer E-Mail-Accounts voll ist, lesen Sie unsere Anleitung „[Speicherplatz eines E-Mail-Accounts verwalten](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)“. In dieser Anleitung erfahren Sie, ob Sie den vorhandenen Speicherplatz optimieren können oder ob Sie das E-Mail-Angebot wechseln müssen, um die Speicherkapazität zu erhöhen.
+Wenn Sie [eines der E-Mail-Angebote von OVHcloud](/links/web/emails) abonniert haben und einer Ihrer E-Mail-Accounts voll ist, lesen Sie unsere Anleitung „[Speicherplatz eines E-Mail-Accounts verwalten](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)“. In dieser Anleitung erfahren Sie, ob Sie den vorhandenen Speicherplatz optimieren können oder das E-Mail-Angebot wechseln müssen, um die Speicherkapazität zu erhöhen.
 ///
 
-/// details | Ich möchte das E-Mail-Angebot meiner E-Mail-Adresse ändern. Wie kann ich dies tun und den Inhalt beibehalte?
+/// details | Ich möchte das E-Mail-Angebot meines E-Mail-Accounts ändern. Wie kann ich dies tun und den Inhalt beibehalten?
 
-Sie möchten zu einem anderen [E-Mail-Angebot](/links/web/emails) wechseln, um mehr Speicherplatz und Funktionen nutzen zu können, möchten aber den Inhalt Ihres bestehenden Accounts beibehalten. Folgen Sie hierzu der passenden Migrationsanleitung:
+Sie möchten zu einem anderen [E-Mail-Angebot](/links/web/emails) wechseln, um mehr Speicherplatz und Funktionen nutzen zu können, möchten aber den Inhalt Ihres bestehenden Accounts beibehalten.  Folgen Sie hierzu der passenden Migrationsanleitung:
 
 - [MX Plan E-Mail-Account auf E-Mail Pro oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
 - [E-Mail-Accounts von einer OVHcloud-E-Mail-Plattform auf eine andere migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
@@ -308,7 +307,6 @@ Das Office 365 Pro Plus Angebot beinhaltet keine Skype-Lizenz. Nur die Skype for
 /// details | Wie übertrage ich meine E-Mails, Websites, Datenbanken und Domains ohne Dienstunterbrechung auf die Server von OVHcloud?
 
 In der Anleitung "[Website und zugehörige Dienste zu OVHcloud migrieren](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" finden Sie alle notwendigen Schritte.
-
 
 ///
 
