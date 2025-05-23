@@ -159,7 +159,7 @@ Antes de avançar para o passo seguinte, certifique-se de que recuperou todos os
 
 > [!success]
 >
-> Se utilizar outro software para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
+> Se utilizar um programma para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
 >
 
 #### 4 - Restaurar os ficheiros
@@ -170,7 +170,7 @@ Uma vez ligado, só precisará de restaurar os ficheiros. Para isso, navegue pel
 
 > [!success]
 >
-> Se utilizar outro software para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
+> Se utilizar um programma para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
 >
 
 ## Quer saber mais?

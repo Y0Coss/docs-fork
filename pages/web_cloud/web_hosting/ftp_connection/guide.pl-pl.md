@@ -79,11 +79,6 @@ W tym momencie dysponujesz wszystkimi elementami pozwalającymi na zalogowanie s
 
 Połączenie z przestrzenią dyskową FTP można wykonać na kilka sposobów. Przejdź do opisu operacji, której chcesz użyć.
 
-- [1. Połączenie przez program FTP](#ftpsoftware): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przy użyciu programu (takiego jak [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) lub [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
-Najpierw zainstaluj wybrany program/klient FTP na komputerze.
-
-- [2. Połączenie przez dostęp SSH](#ssh): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przez SSH. Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](/links/web/hosting){.external} **Pro** lub **Performance**.
-
 #### 1. Logowanie przez program FTP <a name="ftpsoftware"></a>
 
 Po zainstalowaniu na komputerze odpowiedniego oprogramowania FTP (takiego jak [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) lub [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac), uruchom je. 
@@ -107,6 +102,8 @@ Poniżej znajduje się przypomnienie informacji, które należy wprowadzić:
 Jeśli wprowadzone dane są poprawne, program, którego używasz wyświetla zawartość Twojej przestrzeni dyskowej FTP. Może pojawić się komunikat (zwany również "statusem") w celu potwierdzenia, że zawartość została wyświetlona poprawnie za pomocą programu FTP.
 
 #### 2. Logowanie przez SSH <a name="ssh"></a>
+
+Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](/links/web/hosting){.external} **Pro** lub **Performance**.
 
 Aby zalogować się przez SSH, użyj terminala, aby połączyć się bezpośrednio z przestrzenią dyskową FTP za pomocą wierszy poleceń. 
 

@@ -159,7 +159,7 @@ Prima di passare allo step successivo, assicurati di aver recuperato tutti i fil
 
 > [!success]
 >
-> Se utilizzi un altro software per accedere allo spazio di storage FTP, ti consigliamo di consultare la documentazione ufficiale del tuo client per effettuare correttamente le operazioni.
+> Se utilizzi un client per accedere allo spazio di storage FTP, per effettuare questa operazione è necessario consultare la documentazione ufficiale del client.
 >
 
 #### 4. Ripristinare i file
@@ -170,7 +170,7 @@ A questo punto non ti resta che ripristinare i file: recuperali esplorando il co
 
 > [!success]
 >
-> Se utilizzi un altro software per accedere allo spazio di storage FTP, ti consigliamo di consultare la documentazione ufficiale del tuo client per effettuare correttamente le operazioni.
+> Se utilizzi un client per accedere allo spazio di storage FTP, per effettuare questa operazione è necessario consultare la documentazione ufficiale del client.
 >
 
 ## Per saperne di più

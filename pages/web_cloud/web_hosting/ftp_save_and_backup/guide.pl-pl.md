@@ -159,7 +159,7 @@ Zanim przejdziesz do kolejnego etapu, upewnij się, że pobrałeś wszystkie pli
 
 > [!success]
 >
-> Jeśli do logowania się do przestrzeni dyskowej FTP używasz innego oprogramowania, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc poprawnie wykonywać operacje.
+> Jeśli do logowania się do przestrzeni dyskowej FTP używasz programu, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc prawidłowo przeprowadzić operacje.
 >
 
 #### Etap 4: przywracanie wybranego pliku lub plików
@@ -169,8 +169,8 @@ Kiedy masz już plik lub pliki, zaloguj się ponownie do przestrzeni dyskowej. N
 Po zalogowaniu wgraj wybrany plik lub pliki. W tym celu przejrzyj zawartość Twojego komputera, następnie wybierz pliki i zastąp nimi stare pliki.
 
 > [!success]
->
-> Jeśli do logowania się do przestrzeni dyskowej FTP używasz innego oprogramowania, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc poprawnie wykonywać operacje.
+> 
+> Jeśli do logowania się do przestrzeni dyskowej FTP używasz programu, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc prawidłowo przeprowadzić operacje.
 >
 
 ## Sprawdź również

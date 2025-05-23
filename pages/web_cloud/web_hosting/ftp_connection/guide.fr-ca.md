@@ -81,11 +81,6 @@ Si vous ne connaissez plus le mot de passe d'un utilisateur FTP ou SSH, consulte
 
 La connexion à l’espace de stockage FTP peut s’effectuer de plusieurs manières. Poursuivez la lecture de cette documentation selon celle que vous souhaitez utiliser.
 
-- [1. Connexion via un logiciel FTP](#ftpsoftware) : permet d'accéder à votre espace de stockage FTP via un logiciel (comme [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) ou [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
-Vous devrez au préalable installer le logiciel/client FTP choisi sur votre ordinateur.
-
-- [2. Connexion via un accès SSH](#ssh) : permet d'accéder à votre espace de stockage FTP via un accès SSH. Des connaissances avancées, ainsi qu'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external} **Pro** ou **Performance** sont nécessaires pour utiliser ce type d’accès.
-
 #### 1. Connexion via un logiciel FTP <a name="ftpsoftware"></a>
 
 Après avoir installé au préalable le logiciel FTP de votre choix sur votre ordinateur (comme [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) ou [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)), démarrez-le. 
@@ -109,6 +104,8 @@ Voici un rappel des informations que vous devrez y renseigner :
 Si les informations sont correctes, le logiciel que vous utilisez affiche le contenu de votre espace de stockage FTP. Un message (appelé aussi « status ») peut apparaître afin de confirmer que le contenu a bien été listé avec succès par votre logiciel FTP.
 
 #### 2. Connexion en SSH <a name="ssh"></a>
+
+Des connaissances avancées, ainsi qu'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external} **Pro** ou **Performance** sont nécessaires pour utiliser ce type d’accès.
 
 Pour vous connecter en SSH, utilisez un terminal afin d’interagir directement avec votre espace de stockage FTP via des lignes de commande. 
 

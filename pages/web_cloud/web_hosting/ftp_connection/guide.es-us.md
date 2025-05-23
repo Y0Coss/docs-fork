@@ -79,11 +79,6 @@ En este punto, dispondrá de todos los elementos necesarios para conectarse a su
 
 Existen diversas formas de conectarse al espacio de almacenamiento FTP. Continúe leyendo esta guía en el apartado correspondiente a la acción que quiera realizar.
 
-- [1. Conexión mediante un programa FTP](#ftpsoftware): permite acceder a su espacio de almacenamiento FTP a través de un programa (como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) o [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac). 
-Es necesario instalar previamente el programa FTP/cliente elegido en su ordenador.
-
-- [2. Conexión mediante acceso SSH](#ssh): permite acceder al espacio de almacenamiento FTP a través de un acceso SSH. Este tipo de acceso requiere conocimientos avanzados y una solución de [alojamiento web de OVHcloud](/links/web/hosting){.external} **Pro** o **Performance**.
-
 #### 1. Conexión mediante un cliente FTP <a name="ftpsoftware"></a>
 
 Una vez que haya instalado en su ordenador el cliente FTP que usted elija (como [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) o [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)), reinicie el procedimiento. 
@@ -107,6 +102,8 @@ A continuación le ofrecemos un resumen de la información que deberá introduci
 Si la información es correcta, el programa que utilice mostrará el contenido del espacio de almacenamiento FTP. Es posible que aparezca un mensaje confirmando que el contenido se ha mostrado correctamente en su cliente FTP.
 
 #### 2. Conexión por SSH <a name="ssh"></a>
+
+Este tipo de acceso requiere conocimientos avanzados y una solución de [alojamiento web de OVHcloud](/links/web/hosting){.external} **Pro** o **Performance**.
 
 Para conectarse por SSH, utilice un terminal para interactuar directamente con su espacio de almacenamiento FTP a través de líneas de comando. 
 

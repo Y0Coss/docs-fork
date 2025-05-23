@@ -79,11 +79,6 @@ An diesem Punkt verfügen Sie über alle notwendigen Elemente, um sich mit Ihrem
 
 Die Verbindung zum FTP-Speicherplatz ist auf mehrere Arten möglich. Folgen Sie den Schritten dieser Anleitung je nach Ihrer gewünschten Methode.
 
-- [1. Verbindung über einen FTP-Client](#ftpsoftware): Ermöglicht den Zugriff auf Ihren FTP-Speicherplatz über eine Client-Software (z.B. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) oder [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)). 
-Installieren Sie zunächst das gewählte FTP-Programm auf Ihrem Computer.
-
-- [2. Verbindung über einen SSH Zugang](#ssh): Ermöglicht den Zugriff auf Ihren FTP-Speicherplatz über einen SSH-Zugang. Für die Nutzung dieses Zugriffstyps sind fortgeschrittene Kenntnisse sowie ein [OVHcloud Webhosting](/links/web/hosting){.external} **Pro** oder **Performance** erforderlich.
-
 #### 1. Via FTP-Client verbinden <a name="ftpsoftware"></a>
 
 Nachdem Sie zuvor das FTP-Programm Ihrer Wahl auf Ihrem Computer installiert haben (z.B. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) oder [Cyberduck](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)), starten Sie es. 
@@ -107,6 +102,8 @@ Hier eine Erinnerung an die Informationen, die Sie eingeben müssen:
 Wenn die Informationen korrekt sind, zeigt das von Ihnen verwendete Programm den Inhalt Ihres FTP-Speicherplatzes an. Es kann eine Nachricht (auch "Status"genannt) angezeigt werden, um zu bestätigen, dass der Inhalt von Ihrem FTP-Programm erfolgreich gelesen wurde.
 
 #### 2. Via SSH-Zugriff verbinden <a name="ssh"></a>
+
+Für die Nutzung dieses Zugriffstyps sind fortgeschrittene Kenntnisse sowie ein [OVHcloud Webhosting](/links/web/hosting){.external} **Pro** oder **Performance** erforderlich.
 
 Um sich via SSH zu verbinden, verwenden Sie ein Terminal, um direkt über die Kommandozeile mit Ihrem FTP-Speicherplatz zu kommunizieren. 
 

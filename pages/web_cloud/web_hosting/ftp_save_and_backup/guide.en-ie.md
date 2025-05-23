@@ -160,7 +160,7 @@ Before you move on to the next step, ensure that you have gathered all the files
 
 > [!success]
 >
-> If you use another program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
+> If you use a program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
 >
 
 #### Step 4: Restore the files.
@@ -171,7 +171,7 @@ Once you have connected, you can now restore the files you want. To do this, exp
 
 > [!success]
 >
-> If you use another program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
+> If you use a program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
 >
 
 ## Go further

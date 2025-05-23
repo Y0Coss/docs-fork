@@ -159,7 +159,7 @@ Antes de continuar en el siguiente paso, asegúrese de haber descargado todos lo
 
 > [!success]
 >
-> Si utiliza otro programa para conectarse a su espacio de almacenamiento FTP, le recomendamos que consulte la documentación oficial de su programa para realizar las operaciones correctamente.
+> Si utiliza un programa para conectarse a su espacio de almacenamiento FTP, le recomendamos que consulte la documentación oficial de su programa para realizar las operaciones correctamente.
 >
 
 #### 4. Restaurar los archivos 
@@ -170,7 +170,7 @@ Una vez que se haya conectado, solo tiene que restaurar los archivos que desee. 
 
 > [!success]
 >
-> Si utiliza otro programa para conectarse a su espacio de almacenamiento FTP, le recomendamos que consulte la documentación oficial de su programa para realizar las operaciones correctamente.
+> Si utiliza un programa para conectarse a su espacio de almacenamiento FTP, le recomendamos que consulte la documentación oficial de su programa para realizar las operaciones correctamente.
 >
 
 ## Más información
