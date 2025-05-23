@@ -1,7 +1,7 @@
 ---
 title: "Ajouter ou retirer un nœud dans un cluster Nutanix (Scale In/Out)"
 excerpt: "Ajustez dynamiquement votre cluster Nutanix on OVHcloud en ajoutant ou retirant des nœuds via l'espace client ou l'API OVHcloud"
-updated: 2025-05-22
+updated: 2025-05-23
 ---
 
 ## Objectif
@@ -123,19 +123,19 @@ Consultez la documentation suivante :
 >> - Récupérez le Boot ID (saisissez *power* comme valeur pour **bootType**) :
 >>
 >> > [!api]
->> > @api {v1} /nutanix GET /dedicated/server/{serviceName}/boot
+>> > @api {v1} /dedicated/server/ GET /dedicated/server/{serviceName}/boot
 >> >
 >>
 >> - Définissez le Boot ID :
 >>
 >> > [!api]
->> > @api {v1} /nutanix PUT /dedicated/server/{serviceName}
+>> > @api {v1} /dedicated/server/ PUT /dedicated/server/{serviceName}
 >> >
 >>
 >> - Éteignez le nœud :
 >>
 >> > [!api]
->> > @api {v1} /nutanix POST /dedicated/server/{serviceName}/reboot
+>> > @api {v1} /dedicated/server/ POST /dedicated/server/{serviceName}/reboot
 >> >
 >>
 
