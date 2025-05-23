@@ -159,7 +159,7 @@ Avant de passer à l'étape suivante, assurez-vous d'avoir récupéré tous les 
 
 > [!success]
 >
-> Si vous utilisez un autre logiciel pour vous connecter à votre espace de stockage FTP, nous vous recommandons de consulter la documentation officielle de votre logiciel pour effectuer correctement les manipulations.
+> Si vous utilisez un logiciel pour vous connecter à votre espace de stockage FTP, nous vous recommandons de consulter la documentation officielle de votre logiciel pour effectuer correctement les manipulations.
 >
 
 #### Étape 4 : restaurer le ou les fichiers souhaités
