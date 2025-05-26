@@ -49,7 +49,7 @@ Au clic, vous êtes redirigé vers l'onglet `Multisite`{.action} de l'hébergeme
 
 #### Nom du service
 
-Nom technique du service d’hébergement web sur lequel le site est configuré, sous forme `abcdv.clusterXX`.hosting.ovh.net.
+Nom technique du service d’hébergement web sur lequel le site est configuré, sous la forme `abcdv.clusterXX.hosting.ovh.net`.
 
 Au clic, vous êtes redirigé vers l'onglet `Informations générales`{.action} de l'hébergement concerné.
 
