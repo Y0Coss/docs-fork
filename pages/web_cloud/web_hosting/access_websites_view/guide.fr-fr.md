@@ -21,6 +21,8 @@ La vue `Sites internet` (ou `Websites`) permet de centraliser l'affichage de l'e
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}. Dans le menu de gauche, cliquez sur `Websites`{.action}. Un tableau s'affiche, regroupant l'ensemble de vos sites web et de leurs principales informations.
 
+![website_view](images/website_view_tab.png){.thumbnail}
+
 #### Domaine
 
 Affiche le nom de domaine principal du site web, tel qu’il est configuré dans l’onglet Multisite de votre hébergement. Au clic, vous êtes redirigé vers l'onglet `Multisite`{.action} de l'hébergement concerné.
