@@ -6,11 +6,11 @@ updated: 2025-05-20
 
 ## Objective
 
-Web Hosting plans work on a shared infrastructure called a *cluster*. OVHcloud has several clusters that host several web hosting plans.
+Web Hosting plans run on a shared infrastructure called a *cluster*. OVHcloud has several clusters that host several web hosting plans.  
 Each cluster, for efficiency and security reasons, is also divided virtually into several segments called *filers*. The filers themselves contain several web hosting plans.
-When using your web hosting plan, you may need to know the cluster number and/or filer your web hosting plan is based on.
+When using your web hosting plan, you may need to know the cluster and filer your web hosting plan is located on.
 
-**Find out how to find the cluster number and filer number where your web hosting plan is located.**
+**Find out how to find the cluster and filer numbers of your web hosting.**
 
 ## Requirements
 
@@ -19,7 +19,7 @@ When using your web hosting plan, you may need to know the cluster number and/or
 
 ## Instructions
 
-### You can find the cluster number of a web hosting plan
+### Cluster number of a web hosting plan
 
 Click on the tabs below to view each of the **4** steps.
 
@@ -38,7 +38,7 @@ Click on the tabs below to view each of the **4** steps.
 >>
 > **Step 3**
 >>
->> On the page that pops up, click on the `FTP - SSH`{.action} tab.
+>> On the new page, click on the `FTP - SSH`{.action} tab.
 >>
 >> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
 >>
@@ -48,7 +48,7 @@ Click on the tabs below to view each of the **4** steps.
 >>
 >> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
 
-### You can find the filer number of a web hosting plan
+### Filer number of a web hosting plan
 
 Click on the tabs below to view each of the **3** steps.
 
@@ -67,13 +67,13 @@ Click on the tabs below to view each of the **3** steps.
 >>
 > **Step 3**
 >>
->> In the **General information** box on the page that appears, retrieve the filer number with the comment `Filer`{.action}.
+>> In the **General information** box on the page that appears, retrieve the number under `Filer`{.action}.
 >>
 >> ![Filer number](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
 
 ## Go further
 
-[Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+[Web Hosting - List of IP addresses by cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
  
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
