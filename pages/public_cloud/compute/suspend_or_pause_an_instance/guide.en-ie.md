@@ -1,6 +1,6 @@
 ---
 title: Shelve or pause an instance
-updated: 2025-04-28
+updated: 2025-05-26
 ---
 
 ## Objective
@@ -46,11 +46,11 @@ The table below allows you to differentiate the options available on your instan
     - [From the OVHcloud Control Panel](#control-panel-unshelve)
     - [From the Horizon Interface](#horizon-unshelve)
     - [Using Openstack/Nova APIs](#openstack-nova-unshelve)
-- [### Stop (*suspend*) an instance](#stop-suspend-instance)
+- [Stop (*suspend*) an instance](#stop-suspend-instance)
     - [From the OVHcloud Control Panel](#stop-control-panel)
     - [From the Horizon Interface](#stop-horizon)
     - [Using Openstack/Nova APIs](#stop-openstack-nova)
-- [### Pause an instance](#pause-instance)
+- [Pause an instance](#pause-instance)
     - [From the Horizon Interface](#pause-horizon)
     - [Using Openstack/Nova APIs](#pause-openstack-nova)
 

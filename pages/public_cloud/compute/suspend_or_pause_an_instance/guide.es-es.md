@@ -1,6 +1,6 @@
 ---
 title: Suspender o poner en pausa una instancia
-updated: 2025-04-28
+updated: 2025-05-26
 ---
 
 ## Objetivo
@@ -42,15 +42,15 @@ En la siguiente tabla podrá diferenciar las opciones disponibles en sus instanc
     - [Desde al área de cliente de OVHcloud](#control-panel)
     - [Desde la interfaz Horizon](#horizon)
     - [Utilizando la API de OpenStack/Nova](#openstack-nova)
--[### Reactivar (unshelve) una instancia](#unshelve-instance)
+-[Reactivar (unshelve) una instancia](#unshelve-instance)
     - [Desde al área de cliente de OVHcloud](#control-panel-unshelve)
     - [Desde la interfaz Horizon](#horizon-unshelve)
     - [Utilizando la API de OpenStack/Nova](#openstack-nova-unshelve)
-- [### Detener (suspend) una instancia](#stop-suspend-instance)
+- [Detener (suspend) una instancia](#stop-suspend-instance)
     - [Desde al área de cliente de OVHcloud](#stop-control-panel)
     - [Desde la interfaz Horizon](#stop-horizon)
     - [Utilizando la API de OpenStack/Nova](#stop-openstack-nova)
-- [### Poner en pausa una instancia (*pause*)](#pause-instance)
+- [Poner en pausa una instancia (*pause*)](#pause-instance)
     - [Desde la interfaz Horizon](#pause-horizon)
     - [Utilizando la API de OpenStack/Nova](#pause-openstack-nova)
 

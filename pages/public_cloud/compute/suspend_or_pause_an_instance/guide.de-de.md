@@ -1,6 +1,6 @@
 ---
 title: Aussetzen oder Pausieren einer Instanz
-updated: 2025-04-28
+updated: 2025-05-26
 ---
 
 ## Ziel
@@ -42,15 +42,15 @@ In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optione
     - [Im OVHcloud Kundencenter](#control-panel)
     - [Im Horizon-Interface](#horizon)
     - [Verwendung der OpenStack/Nova API](#openstack-nova)
--[### Reaktivieren einer Instanz (*unshelve*)](#unshelve-instance)
+-[Reaktivieren einer Instanz (*unshelve*)](#unshelve-instance)
     - [Im OVHcloud Kundencenter](#control-panel-unshelve)
     - [Im Horizon-Interface](#horizon-unshelve)
     - [Verwendung der OpenStack/Nova API](#openstack-nova-unshelve)
-- [### Anhalten einer Instanz (*suspend*)](#stop-suspend-instance)
+- [Anhalten einer Instanz (*suspend*)](#stop-suspend-instance)
     - [Im OVHcloud Kundencenter](#stop-control-panel)
     - [Im Horizon-Interface](#stop-horizon)
     - [Verwendung der OpenStack/Nova API](#stop-openstack-nova)
-- [### Pausieren einer Instanz (*pause*)](#pause-instance)
+- [Pausieren einer Instanz (*pause*)](#pause-instance)
     - [Im Horizon-Interface](#pause-horizon)
     - [Verwendung der OpenStack/Nova API](#pause-openstack-nova)
 

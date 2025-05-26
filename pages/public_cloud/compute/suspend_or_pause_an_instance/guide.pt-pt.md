@@ -1,6 +1,6 @@
 ---
 title: Suspender ou colocar em pausa uma instância
-updated: 2025-04-28
+updated: 2025-05-26
 ---
 
 ## Objetivo
@@ -42,15 +42,15 @@ A tabela abaixo permite-lhe diferenciar as opções disponíveis nas suas instâ
     - [Da Área de Cliente OVHcloud](#control-panel)
     - [Da interface Horizon](#horizon)
     - [Utilização das API OpenStack/Nova](#openstack-nova)
--[### Reativar (unshelve) uma instância](#unshelve-instance)
+-[Reativar (unshelve) uma instância](#unshelve-instance)
     - [Da Área de Cliente OVHcloud](#control-panel-unshelve)
     - [Da interface Horizon](#horizon-unshelve)
     - [Utilização das API OpenStack/Nova](#openstack-nova-unshelve)
-- [### Parar (suspend) uma instância](#stop-suspend-instance)
+- [Parar (suspend) uma instância](#stop-suspend-instance)
     - [Da Área de Cliente OVHcloudl](#stop-control-panel)
     - [Da interface Horizon](#stop-horizon)
     - [Utilização das API OpenStack/Nova](#stop-openstack-nova)
-- [### Colocar em pausa uma instância (*pause*)](#pause-instance)
+- [Colocar em pausa uma instância (*pause*)](#pause-instance)
     - [Da interface Horizon](#pause-horizon)
     - [Utilização das API OpenStack/Nova](#pause-openstack-nova)
 

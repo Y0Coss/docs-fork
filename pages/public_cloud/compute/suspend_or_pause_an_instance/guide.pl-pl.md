@@ -1,6 +1,6 @@
 ---
 title: Wstrzymanie lub uśpienie instancji
-updated: 2025-04-28
+updated: 2025-05-26
 ---
 
 ## Wprowadzenie
@@ -42,15 +42,15 @@ Poniższa tabela pozwoli Ci odróżnić opcje dostępne dla Twoich instancji. Ko
     - [W Panelu klienta OVHcloud](#control-panel)
     - [Z poziomu interfejsu Horizon](#horizon)
     - [Korzystanie z API OpenStack/Nova](#openstack-nova)
--[### Ponownie aktywuj (*unshelve*) instancję](#unshelve-instance)
+-[Ponownie aktywuj (*unshelve*) instancję](#unshelve-instance)
     - [W Panelu klienta OVHcloud](#control-panel-unshelve)
     - [Z poziomu interfejsu Horizon](#horizon-unshelve)
     - [Korzystanie z API OpenStack/Nova](#openstack-nova-unshelve)
-- [### Zatrzymaj (suspend) instancję](#stop-suspend-instance)
+- [Zatrzymaj (suspend) instancję](#stop-suspend-instance)
     - [W Panelu klienta OVHcloudl](#stop-control-panel)
     - [Z poziomu interfejsu Horizon](#stop-horizon)
     - [Korzystanie z API OpenStack/Nova](#stop-openstack-nova)
-- [### Wstrzymaj instancję](#pause-instance)
+- [Wstrzymaj instancję](#pause-instance)
     - [Z poziomu interfejsu Horizon](#pause-horizon)
     - [Korzystanie z API OpenStack/Nova](#pause-openstack-nova)
 
