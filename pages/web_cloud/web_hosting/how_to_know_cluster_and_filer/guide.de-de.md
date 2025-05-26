@@ -1,16 +1,16 @@
 ---
-title: "Webhosting - Wie man seinen Cluster und sein Filer kennt"
-excerpt: "Diese Anleitung erklärt, wie Sie die Cluster-Nummer und/oder die Filer-Nummer Ihres Webhostings"
+title: "Webhosting - Cluster und Filer eines Webhostings finden"
+excerpt: "Erfahren Sie hier, wie Sie die Cluster-Nummer und die Filer-Nummer Ihres Webhostings herausfinden"
 updated: 2025-05-20
 ---
 
 ## Ziel
 
-Die Webhostings laufen auf einer gemeinsam genutzten Infrastruktur namens *cluster*. OVHcloud verfügt über mehrere Cluster, auf die mehrere Webhostings verteilt sind.
-Aus Gründen der Effizienz und Sicherheit wird jedes Cluster auch virtuell in mehrere Segmente aufgeteilt, die als *filers* bezeichnet werden. Die Filer enthalten selbst mehrere Webhostings.
-Bei der Verwendung Ihres Webhostings muss Ihnen möglicherweise die Nummer des Clusters und/oder Filers bekannt gegeben werden, in dem sich Ihr Webhosting befindet.
+Webhostings laufen auf einer gemeinsam genutzten Infrastruktur namens *Cluster*. OVHcloud verfügt über mehrere *Cluster*, auf denen Webhostings verteilt sind.
+Aus Gründen der Effizienz und Sicherheit wird jedes *Cluster* virtuell in mehrere Segmente aufgeteilt, die als *Filer* bezeichnet werden. Die *Filer* enthalten mehrere Webhostings.  
+Während der Verwendung Ihres Webhostings müssen Sie für bestimmte Anwendungsfälle die *Cluster*-Nummer oder die *Filer*-Nummer kennen.
 
-**Diese Anleitung erklärt, wie Sie die Cluster-Nummer und die Filer-Nummer Ihres Webhostings.**
+**Diese Anleitung erklärt, wo Sie die Cluster-Nummer und die Filer-Nummer Ihres Webhostings finden.**
 
 ## Voraussetzungen
 
@@ -19,14 +19,14 @@ Bei der Verwendung Ihres Webhostings muss Ihnen möglicherweise die Nummer des C
 
 ## In der praktischen Anwendung
 
-### Finden Sie die Nummer des Webhosting-Clusters
+### Nummer eines Webhosting Clusters
 
 Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -44,18 +44,18 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 >> 
 > **Schritt 4**
 >>
->> Auf dieser Seite finden Sie die Cluster-Nummer des Webhostings unter **FTP- und SFTP-Server** (3 Ziffern von `0` bis `9`).
+>> Auf dieser Seite finden Sie die *Cluster*-Nummer des Webhostings unter **FTP- und SFTP-Server** (3 Ziffern von `0` bis `9`).
 >>
 >> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
 
-### Die Filer-Nummer eines Webhostings finden
+### Nummer eines Webhosting Filers
 
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -67,7 +67,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 > **Schritt 3**
 >>
->> Suchen Sie in der Randleiste **Allgemeine Informationen** auf der angezeigten Seite nach der Filer-Nummer unter `Filer`{.action}.
+>> Finden Sie in **Allgemeine Informationen** die Nummer unter `Filer`{.action}.
 >>
 >> ![Filer-Nummer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/filer.png){.thumbnail}
 
