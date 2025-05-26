@@ -131,6 +131,21 @@ We start 15 AI Notebooks, each of them with one vCPU
 
 Price calculation for compute: 15 (notebooks) x 5 (hours) x 1 (CPU) x 0,03€ (price / CPU) = **2,25 euros**, billed at the end of the month
 
+## Images decommissioning
+
+### Objective
+
+Products evolve and eventually reach the end of their lifecycle. Our objective is to ensure this transition happens smoothly.
+
+All AI images follow the Python version lifecycle policy. Once a Python version reaches its end of life, the associated AI frameworks will be decommissioned.
+
+### What does it mean ?
+
+- You will not be able to create new notebooks based on this Python version.
+- Your existing notebooks will continue to work until you delete them.
+- During this period, the images will still receive security updates.
+- Once the underlying OS reaches its end of life, you will still be able to start your notebooks, but the image will no longer be maintained. We strongly encourage you to migrate to a newer image version.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
