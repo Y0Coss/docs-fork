@@ -43,7 +43,7 @@ Per maggiori informazioni sulla diagnostica, consulta la sezione "Diagnostica i 
 
 #### Cartella di root
 
-Indica la directory dell’hosting (ad esempio, www, app, public_html, ecc...) verso cui punta il dominio.
+Indica la directory dell’hosting (ad esempio, www, app, public_html, ecc.) verso cui punta il dominio.
 
 Cliccando sul pulsante sarai reindirizzato alla scheda `Multisito`{.action} dell’hosting interessato.
 
