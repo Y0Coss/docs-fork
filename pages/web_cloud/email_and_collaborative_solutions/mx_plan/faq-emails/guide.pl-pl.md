@@ -1,7 +1,7 @@
 ---
 title: FAQ e-mail OVHcloud
 excerpt: "Znajdź najczęściej zadawane pytania dotyczące kont e-mail"
-updated: 2025-04-07
+updated: 2025-05-21
 ---
 
 <style>
@@ -126,11 +126,11 @@ Utworzenie adresu e-mail nie jest skomplikowane, ale należy przestrzegać pewny
 
 Poniżej znajdziesz główne przyczyny braku otrzymywania e-maili.
 
-1. **Program pocztowy**: Problem z odbieraniem wiadomości e-mail jest często związany z konfiguracją konta e-mail w programie pocztowym (Outlook, Mail na macOS, Thunderbird, etc.). Aby to sprawdzić, zaloguj się do [webmail](/links/web/email). Jeśli zauważysz e-maile w skrzynce odbiorczej interfejsu webmail, które nie znajdują się w programie pocztowym, rzeczywiście jest to spowodowane konfiguracją oprogramowania. Więcej informacji na ten temat można znaleźć na naszej stronie [Wysyłka lub odbiór emaili jest niemożliwy](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **Konfiguracja DNS** : Twoja usługa e-mail jest przypisana do nazwy domeny. Rekordy MX w strefie DNS odnoszą się do serwerów poczty elektronicznej. Jeśli ostatnio zmodyfikowałeś serwery DNS lub strefę DNS, te rekordy MX mogły zostać "odłączone". Może to spowodować przerwę w otrzymywaniu e-maili.Więcej informacji na ten temat znajdziesz na naszej stronie [Wysyłka lub odbieranie e-maili niemożliwe](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **Przekroczono maksymalny rozmiar konta e-mail**: Jeśli rozmiar konta e-mail zostanie osiągnięty, nie będzie można odbierać e-maili, a nadawca otrzyma komunikat błędu informujący, że Twoje konto e-mail jest pełne. Zarządzanie przestrzenią dyskową konta e-mail Więcej informacji na ten temat można znaleźć na naszej stronie [Zarządzanie przestrzenią dyskową konta e-mail ](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota).
+1. **Program pocztowy**: Problem z odbieraniem wiadomości e-mail jest często związany z konfiguracją konta e-mail w programie pocztowym (Outlook, Mail na macOS, Thunderbird, etc.). Aby to sprawdzić, zaloguj się do [webmail](/links/web/email). Jeśli zauważysz e-maile w skrzynce odbiorczej interfejsu webmail, które nie znajdują się w programie pocztowym, rzeczywiście jest to spowodowane konfiguracją oprogramowania. Więcej informacji na ten temat można znaleźć na naszej stronie „[Wysyłka lub odbiór emaili jest niemożliwy](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)“.
+1. **Konfiguracja DNS**: Twoja usługa e-mail jest przypisana do nazwy domeny. Rekordy MX w strefie DNS odnoszą się do serwerów poczty elektronicznej. Jeśli ostatnio zmodyfikowałeś serwery DNS lub strefę DNS, te rekordy MX mogły zostać „odłączone“. Może to spowodować przerwę w otrzymywaniu e-maili.Więcej informacji na ten temat znajdziesz na naszej stronie „[Wysyłka lub odbieranie e-maili niemożliwe](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)“.
+1. **Przekroczono maksymalny rozmiar konta e-mail**: Jeśli rozmiar konta e-mail zostanie osiągnięty, nie będzie można odbierać e-maili, a nadawca otrzyma komunikat błędu informujący, że Twoje konto e-mail jest pełne. Zarządzanie przestrzenią dyskową konta e-mail Więcej informacji na ten temat można znaleźć na naszej stronie „[Zarządzanie przestrzenią dyskową konta e-mail ](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)“.
 1. **Reguły skrzynki odbiorczej**: Może istnieć sytuacja, w której reguła skrzynki odbiorczej uniemożliwia wysyłanie e-maili do Twojej skrzynki odbiorczej lub przekierowuje je do folderu SPAM. Sprawdź swoje reguły w programie pocztowym (Outlook, Mail na macOS, Thunderbird, etc.) lub w [webmail](/links/web/email).
-1. **Problem lub konserwacja** : Sprawdź na naszej stronie [Web Cloud status](https://web-cloud.status-ovhcloud.com/), czy nie trwają operacje dla Twojej usługi e-mail.
+1. **Problem lub konserwacja**: Sprawdź na naszej stronie „[Web Cloud status](https://web-cloud.status-ovhcloud.com/)“, czy nie trwają operacje dla Twojej usługi e-mail.
 
 > [!primary]
 >
@@ -140,8 +140,8 @@ Poniżej znajdziesz główne przyczyny braku otrzymywania e-maili.
 
 /// details | Co zrobić, jeśli nie mogę wysłać e-maili?
 
-1. **Program pocztowy**: Problem z wysyłką może być związany z konfiguracją konta e-mail w programie pocztowym (Outlook, Mail na macOS, Thunderbird, itp.). Aby to sprawdzić, zaloguj się do [webmail](/links/web/email). Jeśli wykryjesz, że możesz wysyłać e-maile z poziomu interfejsu webmail, jest to spowodowane Twoją konfiguracją oprogramowania. Więcej informacji na ten temat można znaleźć na naszej stronie [Wysyłanie lub odbieranie e-maili niemożliwe](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
-1. **Kod błędu**: Gdy wysyłasz wiadomość, a serwer docelowy odrzuca ją, zazwyczaj jest wysyłany komunikat o błędzie zawierający kod błędu. Przeanalizuj komunikat o błędzie i podaj przyczynę problemu (osiągnięty maksymalny limit konta e-mail, nieistniejący adres e-mail odbiorcy, etc.). Więcej informacji na ten temat można znaleźć na naszej stronie [Wysyłka lub odbiór emaili jest niemożliwy](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced).
+1. **Program pocztowy**: Problem z wysyłką może być związany z konfiguracją konta e-mail w programie pocztowym (Outlook, Mail na macOS, Thunderbird, itp.). Aby to sprawdzić, zaloguj się do [webmail](/links/web/email). Jeśli wykryjesz, że możesz wysyłać e-maile z poziomu interfejsu webmail, jest to spowodowane Twoją konfiguracją oprogramowania. Więcej informacji na ten temat można znaleźć na naszej stronie „[Wysyłanie lub odbieranie e-maili niemożliwe](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)“.
+1. **Kod błędu**: Gdy wysyłasz wiadomość, a serwer docelowy odrzuca ją, zazwyczaj jest wysyłany komunikat o błędzie zawierający kod błędu. Przeanalizuj komunikat o błędzie i podaj przyczynę problemu (osiągnięty maksymalny limit konta e-mail, nieistniejący adres e-mail odbiorcy, etc.). Więcej informacji na ten temat można znaleźć na naszej stronie „[Wysyłka lub odbiór emaili jest niemożliwy](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)“.
 1. **Rozmiar e-maila**: Nie ma znaczenia, czy dostawca poczty e-mail jest Twoim serwerem docelowym, istnieje limit rozmiaru wiadomości. Zalecamy przesyłanie głównie obrazów lub plików pdf o niewielkim rozmiarze. W przypadku dużych plików lepiej jest używać narzędzi do transferu plików, takich jak [plik.ovh](https://plik.ovh/).
 
 ///
@@ -153,13 +153,13 @@ Poniżej znajdziesz główne przyczyny braku otrzymywania e-maili.
 
 Dzięki niej serwery otrzymujące e-maile mają pewność, że zostały wysłane z zaufanego serwera. Protokół ten stał się niezbędny do legitymizacji wymiany e-maili. Bez rekordu SPF w domenie Twojej usługi e-mail Twoje e-maile mogą zostać uznane przez odbiorców za spam.
 
-Aby dowiedzieć się, jak skonfigurować rekord SPF w Twojej usłudze e-mail, zapoznaj się z naszym przewodnikiem [Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/pages/web_cloud/domains/dns_zone_spf).
+Aby dowiedzieć się, jak skonfigurować rekord SPF w Twojej usłudze e-mail, zapoznaj się z naszym przewodnikiem „[Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/pages/web_cloud/domains/dns_zone_spf)“.
 
 **DKIM (DomainKeys Identified Mail)**
 
 Podpisuje e-maile, aby zapobiec kradzieży tożsamości. Podpis ten działa na zasadzie skrótu w połączeniu z kryptografią asymetryczną. Protokół ten jest uzupełnieniem programu SPF. SPF ingeruje w legalność nazwy domeny, DKIM natomiast dba o to, aby każda wiadomość e-mail została podpisana przy wysyłaniu za pomocą odpowiedniego konta e-mail. Staje się on również referencją w zakresie bezpieczeństwa e-maili. Niektóre usługi e-mail mogą również uznawać wiadomość za spam, jeśli nie jest chroniona podpisem DKIM.
 
-Aby dowiedzieć się, jak skonfigurować rekord DKIM w Twojej usłudze e-mail, zapoznaj się z naszym przewodnikiem [Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim).
+Aby dowiedzieć się, jak skonfigurować rekord DKIM w Twojej usłudze e-mail, zapoznaj się z naszym przewodnikiem „[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)“.
 
 ///
 
@@ -227,7 +227,7 @@ W tym celu przygotowaliśmy przewodniki, z których dowiesz się, jak skonfiguro
 
 Dzięki usłudze [webmail](/links/web/email) możesz uzyskać dostęp do poczty elektronicznej w dowolnym momencie i z każdego urządzenia z dostępem do Internetu. Po utworzeniu konta e-mail zaloguj się tutaj, aby uzyskać dostęp do poczty.
 
-**Wskazówki i porady** : Jeśli konfigurujesz konto e-mail w programie pocztowym, zalecamy użycie protokołu IMAP. Dzięki temu wiadomości e-mail będą przechowywane na serwerze i będzie można uzyskać do nich dostęp z dowolnego miejsca za pośrednictwem [webmail](/links/web/email). W tym celu skorzystaj z [naszej dokumentacji](/pages/web_cloud/email_and_collaborative_solutions/mxan/email_generalities).
+**Wskazówki i porady**: Jeśli konfigurujesz konto e-mail w programie pocztowym, zalecamy użycie protokołu IMAP. Dzięki temu wiadomości e-mail będą przechowywane na serwerze i będzie można uzyskać do nich dostęp z dowolnego miejsca za pośrednictwem [webmail](/links/web/email). W tym celu skorzystaj z [naszej dokumentacji](/pages/web_cloud/email_and_collaborative_solutions/mxan/email_generalities).
 
 ///
 
@@ -245,16 +245,16 @@ Utworzenie adresu e-mail nie jest skomplikowane, ale należy przestrzegać pewny
 
 **Nazwa Twojego konta e-mail** musi spełniać następujące wymagania:
 
-- Minimum 2 znaki
-- Maksymalnie 32 znaki
-- Brak znaków akcentowanych
+- Minimum 2 znaki.
+- Maksymalnie 32 znaki.
+- Brak znaków akcentowanych.
 - Brak znaków specjalnych z wyjątkiem następujących znaków: `.`, `,`, `-` i `_`.
 
 **hasło** musi spełniać następujące wymagania:
 
-- Minimum 9 znaków
-- Maksymalnie 30 znaków
-- Brak znaków akcentowanych
+- Minimum 9 znaków.
+- Maksymalnie 30 znaków.
+- Brak znaków akcentowanych.
 
 > [!warning]
 >
@@ -265,7 +265,7 @@ Utworzenie adresu e-mail nie jest skomplikowane, ale należy przestrzegać pewny
 
 /// details | Jak odzyskać zapomniane hasło?
 
-Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** hasła. Zgodnie z opisem w sekcji "[Zmiana hasła do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mxan/email_change_password)" należy zresetować hasło, jeśli nie jest ono już znane.
+Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** hasła. Zgodnie z opisem w sekcji „[Zmiana hasła do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mxan/email_change_password)“ należy zresetować hasło, jeśli nie jest ono już znane.
 
 > [!primary]
 >
@@ -276,9 +276,9 @@ Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** ha
 /// details | Jak ograniczyć ilość otrzymywanego spamu?
 
 Aby ograniczyć liczbę wiadomości-śmieci, możesz skonfigurować filtry dla poczty e-mail (w ofercie MX Plan — „Filtrowanie”). Ich celem jest usunięcie lub przeniesienie tego typu wiadomości do folderu „Spam” w momencie ich odebrania.
-W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do rubryki `MX Plan`, a następnie wybierz daną domenę, kartę `E-mail`{.action}, a potem w kolumnie `Filtrowanie` kliknij przycisk akcji.
+W tym celu zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action} i kliknij na `MX Plan`{.action}. Wybierz odpowiednią domenę, następnie kliknij zakładkę `E-maile`{.action}, a następnie w kolumnie `Filtry` kliknij na ikonę „Zarządzanie filtrami konta“.
 
-Jeśli w Panelu klienta nie widzisz kolumny `Filtrowanie`, wówczas tworzenie filtrów odbywa się za pośrednictwem reguł zarządzania skrzynką odbiorczą w interfejsie [webmail](/links/web/email). Więcej szczegółów znajdziesz w przewodniku: [Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
+Jeśli w Panelu klienta nie widzisz kolumny `Filtry`, wówczas tworzenie filtrów odbywa się za pośrednictwem reguł zarządzania skrzynką odbiorczą w interfejsie [webmail](/links/web/email). Więcej szczegółów znajdziesz w przewodniku: „[Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan)“.
 
 **Wskazówki i porady**: Jeśli włączysz filtr antyspamowy, możliwe, że niektóre prawidłowe wiadomości zostaną uznane za spam. Jest to tzw. wynik „fałszywie pozytywny”. Jeśli tak się zdarzy, zachęcamy do otwarcia zgłoszenia w [Panelu klienta OVHcloud](/links/manager), aby poinformować nas o tym. Dzięki temu będziemy mogli podjąć odpowiednie kroki, aby takie wiadomości nie były w przyszłości uznawane za spam.
 
@@ -287,7 +287,7 @@ Jeśli w Panelu klienta nie widzisz kolumny `Filtrowanie`, wówczas tworzenie fi
 
 /// details | Mój adres e-mail jest zajęty. Nie mam już miejsca. Co mogę zrobić?
 
-Jeśli zamówiłeś [jedną z naszych ofert e-mail OVHcloud](/links/web/emails) i jedno z Twoich kont e-mail jest zapełnione, zapoznaj się z naszym przewodnikiem "[Zarządzanie przestrzenią dyskową konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Przewodnik ten pomoże Ci określić, czy możesz zoptymalizować istniejącą przestrzeń lub czy konieczna jest zmiana oferty e-mail w celu zwiększenia przestrzeni dyskowej.
+Jeśli zamówiłeś [jedną z naszych ofert e-mail OVHcloud](/links/web/emails) i jedno z Twoich kont e-mail jest zapełnione, zapoznaj się z naszym przewodnikiem „[Zarządzanie przestrzenią dyskową konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)“. Przewodnik ten pomoże Ci określić, czy możesz zoptymalizować istniejącą przestrzeń lub czy konieczna jest zmiana oferty e-mail w celu zwiększenia przestrzeni dyskowej.
 
 ///
 
@@ -295,11 +295,11 @@ Jeśli zamówiłeś [jedną z naszych ofert e-mail OVHcloud](/links/web/emails) 
 
 Chcesz zmienić [ofertę e-mail](/links/web/emails) na większą przestrzeń i więcej funkcji, ale chcesz zachować zawartość swojego istniejącego adresu. W tym celu skorzystaj z jednego z naszych przewodników:
 
-- [Przeniesienie adresu e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
-- [Przenoszenie adresów e-mail z jednej platformy e-mail OVHcloud na inną](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)
-- [Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
-- [Przeniesienie kont e-mail za pomocą OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
-- [Przeniesienie konta Gmail do konta e-mail OVHcloud za pośrednictwem OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
+- [Przeniesienie adresu e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+- [Przenoszenie adresów e-mail z jednej platformy e-mail OVHcloud na inną](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+- [Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
+- [Przeniesienie kont e-mail za pomocą OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+- [Przeniesienie konta Gmail do konta e-mail OVHcloud za pośrednictwem OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail).
 
 ///
 
@@ -311,7 +311,7 @@ Oferta Office 365 Pro Plus nie zawiera licencji Skype. W ofercie zawarty jest je
 
 /// details | Jak przenieść bez przerwy w działaniu usługi na serwery OVHcloud: moje e-maile, strona www, baza danych i nazwa domeny?
 
-Wszystkie kolejne etapy znajdują się w przewodniku "[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
+Wszystkie kolejne etapy znajdują się w przewodniku „[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)“.
 
 ///
 
