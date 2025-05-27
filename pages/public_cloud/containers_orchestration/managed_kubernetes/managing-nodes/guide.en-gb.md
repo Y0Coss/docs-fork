@@ -1,7 +1,7 @@
 ---
-title: Managing nodes and node pools
-excerpt: 'Learn how to manage nodes and node pools in your Managed Kubernetes cluster using the OVHcloud Control Panel, the OVHcloud API, and the NodePools Custom Resource Definition (CRD)'
-updated: 2025-05-02
+title: How to manage nodes and node pools on an OVHcloud Managed Kubernetes cluster
+excerpt: Learn how to manage nodes and node pools using the OVHcloud Control Panel, the OVHcloud API, and the NodePools Custom Resource Definition (CRD)
+updated: 2025-05-27
 ---
 
 ## Objective
@@ -10,27 +10,28 @@ The OVHcloud Managed Kubernetes service provides you with production-ready Kuber
 
 This guide covers one of the first steps after ordering a cluster: managing nodes and node pools.
 
-Depending on your preferred workflow, you can manage them through :
+Depending on your preferred workflow, you can manage them through:
 
-- The [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb)
-- The [OVHcloud API](https://api.ovh.com/)
-- The `NodePools` Custom Resource Definition (CRD) via `kubectl`
+- The [OVHcloud Control Panel](/links/manager).
+- The [OVHcloud API](/links/api).
+- The `NodePools` Custom Resource Definition (CRD) via `kubectl`.
 
 We will walk you through each method to help you efficiently scale and manage your Kubernetes infrastructure.
 
 ## Requirements
 
-- An OVHcloud Managed Kubernetes cluster
+- You have an OVHcloud Managed Kubernetes cluster.
 - If you plan to manage node pools using the `NodePools` CRD, make sure you have the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed. You can find [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/){.external} on the official Kubernetes website.
 
-## Nodes and node pools
+### On nodes and node pools
 
+> [!tabs]
 > Via the OVHcloud Control Panel
 >> In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).
 >>
 >> When you order a new cluster, it is created with a default node pool. Refer to our guide on [creating a cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) for more information.
 >>
->> In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb).
+>> In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](/links/manager).
 >>
 > Via the OVHcloud API
 >> In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).
@@ -45,11 +46,11 @@ We will walk you through each method to help you efficiently scale and manage yo
 >>
 >> Setting the `template` property will allow you to define some specs (annotations, finalizers, labels, taints, schedulability) that will be applied to each node under this node pool.
 >>
->> Finally `monthlyBilled` boolean ensures that all nodes in a node pool will be spawned in monthly billing mode and therefore benefit from the monthly discount.
+>> Finally the boolean `monthlyBilled` ensures that all nodes in a node pool will be spawned in monthly billing mode and therefore benefit from the monthly discount.
 >>
 >> After creation, the `desiredNodes`, `minNodes`, `maxNodes`, `autoscale` and `template` properties can also be edited at any time.
 >>
->> In this guide we explain how to do some basic operations with nodes and node pools using the [OVHcloud API](https://api.ovh.com/): adding nodes to an existing node pool, creating a new node pool, etc.
+>> In this guide we explain how to do some basic operations with nodes and node pools using the [OVHcloud API](/links/manager): adding nodes to an existing node pool, creating a new node pool, etc.
 >>
 > Via the NodePools CRD
 >> In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).
@@ -61,10 +62,9 @@ We will walk you through each method to help you efficiently scale and manage yo
 
 ## Instructions
 
-Before you start:
-
+> [!tabs]
 > Via the OVHcloud Control Panel
->> Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb). In the table, select a cluster by clicking on the cluster name.
+>> Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu in the Public Cloud section of the [OVHcloud Control Panel](/links/manager). In the table, select a cluster by clicking on the cluster name.
 >>
 >> ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 >>
@@ -76,19 +76,19 @@ Before you start:
 >>
 >> - **APIServer access**: You can add IPv4 ranges in order to restrict access to your cluster’s APIServer.
 >>
->> - **Audit Logs**: Here, you will find the logs for your Kubernetes cluster’s control-plane.
+>> - **Audit Logs**: Here, you will find the logs for your Kubernetes cluster’s control plane.
 >>
 > Via the OVHcloud API
->> To simplify things, we are using the [API Explorer](https://api.ovh.com/), which allows to explore, learn and interact with the API in an interactive way.
+>> To simplify things, we are using the [API Explorer](/links/api), which allows to explore, learn and interact with the API in an interactive way.
 >>
 >> Log in to the API Explorer using your OVH NIC.
 >>
 >> ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 >>
->> If you go to the [Cloud section](https://api.ovh.com/console/#/cloud) of the API Explorer, you will see the available `/cloud/project/{serviceName}/kube` endpoint.
+>> If you go to the [Cloud section of the API Explorer](/links/api), you will see the available `/cloud/project/{serviceName}/kube` endpoint.
 >>
 > Via the NodePools CRD
->> Kubernetes [Custom Resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) are extensions of the Kubernetes API. Like the default Kubernetes resources, the Custom Resources are endpoints in the Kubernetes API that store  collections of API objects of a certain kind. Custom Resources allows to easily extend Kubernetes by adding new features and behaviors.
+>> Kubernetes [Custom Resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) are extensions of the Kubernetes API. Like the default Kubernetes resources, the Custom Resources are endpoints in the Kubernetes API that store collections of API objects of a certain kind. Custom Resources allows to easily extend Kubernetes by adding new features and behaviors.
 >>
 >> The simplest way to add a Custom Resource to Kubernetes is to define a [`CustomResourceDefinition` (CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#customresourcedefinitions) with the resource schema.
 >>
@@ -206,16 +206,17 @@ Before you start:
 >>
 >> Be aware that `maxNodes` is set by default to 5 when `antiAffinity` is enabled.
 >>
->> To configure cluster autoscaling based on node pools, follow documentations [Configuring the cluster autoscaler](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-cluster-autoscaler) and [Cluster autoscaler example](/pages/public_cloud/containers_orchestration/managed_kubernetes/cluster-autoscaler-example).
+>> To configure cluster autoscaling based on node pools, follow the documentation [Configuring the cluster autoscaler](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-cluster-autoscaler) and [Cluster autoscaler example](/pages/public_cloud/containers_orchestration/managed_kubernetes/cluster-autoscaler-example).  
 >> To customers developing they own autoscaling scripts, we strongly encourage you to define `minNodes` and `maxNodes`.
 >>
 
 ### Getting your cluster information
 
+> [!tabs]
 > Via the OVHcloud Control Panel
->> Go to your Public Cloud project in the OVHcloud Control Panel and click on the `Managed Kubernetes Service`{.action}, then click on the `name of the relevant cluster`{.action}.
+>> Go to your Public Cloud project in the OVHcloud Control Panel and click on the `Managed Kubernetes Service`{.action}, then click on the name of the relevant cluster.
 >>
->> ![cluster informations via the OVHcloud Control Panel](images/cluster_informations_manager.png)
+>> ![cluster information via the OVHcloud Control Panel](images/cluster_informations_manager.png)
 >>
 > Via the OVHcloud API
 >> The `GET /cloud/project/{serviceName}/kube/{kubeId}` API endpoint provides important information about your OVHcloud Managed Kubernetes cluster, including its status and URL.
@@ -266,8 +267,9 @@ Before you start:
 
 ### Listing node pools
 
+> [!tabs]
 > Via the OVHcloud Control Panel
->> Go to your Public Cloud project in the OVHcloud Control Panel and click on the `Managed Kubernetes Service`{.action}, then click on the `name of the relevant cluster`{.action} and `Node pools`{.action}.
+>> Go to your Public Cloud project in the OVHcloud Control Panel and click on the `Managed Kubernetes Service`{.action}, then click on the name of the relevant cluster and `Node pools`{.action}.
 >>
 >> ![List nodes pools via manager](images/list_node_pools_manager.png){.thumbnail}
 >>
@@ -330,12 +332,13 @@ Before you start:
 
 ### Getting information on a node pool
 
+> [!tabs]
 > Via the OVHcloud Control Panel
->> Go to your Public Cloud project in the OVHcloud Control Panel and click on the `Managed Kubernetes Service`{.action}, then click on the `name of the relevant cluster`{.action} and `Node pools`{.action}.
+>> Go to your Public Cloud project in the OVHcloud Control Panel and click on the `Managed Kubernetes Service`{.action}, then click on the name of the relevant cluster and `Node pools`{.action}.
 >>
 >> ![List nodes pools](images/list_node_pools_manager.png){.thumbnail}
 >>
->> You can also view the nodes that make up a node pool, by clicking on the `name of one of them`{.action}.
+>> You can also view the nodes that make up a node pool, by clicking on the name of one of them.
 >>
 > Via the OVHcloud API
 >> Use the `GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` API endpoint to get information on a specific node pool:
@@ -386,7 +389,7 @@ Before you start:
 >> ```
 >>
 > Via the NodePools CRD
->> Use this command :
+>> Use this command:
 >>
 >> ```bash
 >> kubectl get nodepool <nodepool-name> -o yaml
@@ -411,7 +414,7 @@ Before you start:
 >>
 >> > [!primary]
 >> >
->> > To learn more about the flavors of the current OVHcloud range, [refer to this page](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+>> > To learn more about the flavors of the current OVHcloud range, [refer to this page](/links/public-cloud/public-cloud).
 >> >
 >>
 > Via the OVHcloud API
@@ -507,7 +510,7 @@ Before you start:
 >>
 >> > [!primary]
 >> >
->> > `antiAffinity`, `flavor` and `name` fields will not be editable after creation.
+>> > `antiAffinity`, `flavor` and `name` fields will not be editable after creation.  
 >> > You cannot change the `monthlyBilled` field from true to false.
 >>
 >> Then apply it to your cluster:
@@ -540,6 +543,7 @@ Before you start:
 
 ### Updating the node pool
 
+> [!tabs]
 > Via the OVHcloud Control Panel
 >> #### Configuring a node pool
 >>
@@ -590,17 +594,19 @@ Before you start:
 >> > It is not possible to update/change the following parameters: `antiAffinity`, `flavorName` and `name`.
 >>
 > Via the NodePools CRD
->> To upsize or downsize your node pool, you can simply edit the YAML file and re-apply it.
+>> To upsize or downsize your node pool, you can simply edit the YAML file and re-apply it.  
 >> For example, raise the `desiredNodes` to 5 in `new-nodepool.yaml` and apply the file:
 >>
 >> ```console
 >> $ kubectl apply -f new-nodepool.yaml
 >> nodepool.kube.cloud.ovh.com/my-new-node-pool configured
+>> ```
 >>
 >> > [!primary]
 >> >
 >> > `antiaffinity`, `flavor` and `name` fields can't be edited.
 >>
+>> ```console
 >> $ kubectl get nodepools
 >> NAME               FLAVOR   AUTOSCALED   MONTHLY BILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 >> my-new-node-pool   b2-7     false        false            false          5         3         3                        0     100   3s
@@ -651,6 +657,7 @@ Before you start:
 
 ### Deleting a node pool
 
+> [!tabs]
 > Via the OVHcloud Control Panel
 >> In the *Node pools* tab, click on the `...`{.action} button in the row of the node pool concerned, then select `Delete pool`{.action}.
 >>
@@ -680,10 +687,10 @@ Before you start:
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/).
+To have an overview of the OVHcloud Managed Kubernetes service, visit the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
 
-To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) and [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) .
+To deploy your first application on your Kubernetes cluster, we invite you to follow our guides to [configure default settings for `kubectl`](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) and to [deploy a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-- Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
