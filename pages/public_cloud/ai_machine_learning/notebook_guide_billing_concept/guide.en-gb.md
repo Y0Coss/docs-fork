@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Billing and lifecycle
 excerpt: Learn how we bill AI Notebooks
-updated: 2025-02-03
+updated: 2025-05-27
 ---
 
 ## Objective
