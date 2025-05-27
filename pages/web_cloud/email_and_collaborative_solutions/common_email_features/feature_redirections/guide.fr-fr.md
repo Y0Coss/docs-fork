@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser les alias et redirections e-mail'
 excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
-updated: 2025-04-28
+updated: 2025-05-22
 ---
 
 <style>
@@ -95,9 +95,94 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 > 1. Relevez la technologie utilisée sous la mention **Webmail**.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-500}
+>
+
+**Sommaire**
+
+- [Créer une redirection]()
+    - Depuis l'espace client
+    - 
+- [Supprimer une redirection]()
+- [Créer un alias]()
+- [Supprimer un alias]()
 
 
-### Créer une redirection <a name="redirect"></a>
+### Créer une redirection <a name="redirection"></a>
+
+#### Depuis l'espace client <a name="mxplan-manager"></a>
+
+> [!warning]
+>
+> - La méthode pour créer un alias ou pour créer une redirection est strictement la même.
+> - Il est possible de créer un maximum de 2000 alias et redirections, copies locales incluses.
+>
+
+##### MX Plan Roundcube / MX Plan OWA
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+1. Rendez-vous dans la partie `Web Cloud`{.action}.
+1. Cliquez sur `MX Plan`{.action}.
+1. Sélectionnez le domaine concerné.
+
+Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
+
+> [!tabs]
+> **Etape 1**
+>> Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.<br><br>
+>> ![emails](images/mxplan-legacy-1.png){.thumbnail .w-500}<br>
+>>
+> **Etape 2**
+>>
+>> Le tableau des redirections déjà actives s'affiche. À droite, cliquez sur le bouton `Ajouter une redirection`{.action}.<br><br>
+>>
+>> > [!primary]
+>> >
+>> > Pour modifier ou supprimer une redirection, cliquez sur `...`{.action}, à droite de la redirection concernée.
+>>
+>> ![emails](images/mxplan-legacy-2.png){.thumbnail .w-500}<br>
+>>
+> **Etape 3**
+>>
+>> **De l'adresse** : renseignez ici l'adresse e-mail que vous souhaitez rediriger.<br><br>
+>> **Vers l'adresse**: renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.<br><br>
+>> **Choisissez un mode de copie**: choisissez si vous souhaitez : <br> - **Conserver une copie du mail chez OVHcloud** (recevoir l'e-mail sur votre adresse principale ainsi que l'adresse de redirection)<br> *cf. le [schéma 2](#diagram) au début de ce guide.*<br><br> - **Ne pas conserver de copie du mail** (renvoyer directement vers l'adresse de redirection sans que l'adresse principale ne le reçoive) <br> *cf. le [schéma 1](#diagram) au début de ce guide.*<br><br>
+>> Cliquez ensuite sur `Valider`{.action} pour confirmer l'ajout de cette redirection.<br><br>
+>> ![emails](images/mxplan-legacy-3.png){.thumbnail .w-500}
+
+> [!primary]
+>
+> Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVHcloud** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des redirections, elle matérialise cette copie locale.
+>
+
+##### MX Plan Zimbra
+
+> [!tabs]
+> **Etape 1**
+>> Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Redirections`{.action}.
+>> ![emails](images/mxplan-zimbra-1.png){.thumbnail .w-500}<br>
+>>
+> **Etape 2**
+>>
+>> Le tableau des redirections déjà actives s'affiche. À droite, cliquez sur le bouton `Ajouter une redirection`{.action}.<br><br>
+>>
+>> > [!primary]
+>> >
+>> > Pour modifier ou supprimer une redirection, cliquez sur `...`{.action}, à droite de la redirection concernée.
+>>
+>> ![emails](images/mxplan-zimbra-2.png){.thumbnail .w-500}<br>
+>>
+> **Etape 3**
+>>
+>> **De l'adresse** : renseignez ici l'adresse e-mail que vous souhaitez rediriger.<br><br>
+>> **Vers l'adresse**: renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.<br><br>
+>> **Choisissez un mode de copie**: choisissez si vous souhaitez : <br> - **Conserver une copie du mail chez OVHcloud** (recevoir l'e-mail sur votre adresse principale ainsi que l'adresse de redirection)<br> *cf. le [schéma 2](#diagram) au début de ce guide.*<br><br> - **Ne pas conserver de copie du mail** (renvoyer directement vers l'adresse de redirection sans que l'adresse principale ne le reçoive) <br> *cf. le [schéma 1](#diagram) au début de ce guide.*<br><br>
+>> Cliquez ensuite sur `Valider`{.action} pour confirmer l'ajout de cette redirection.<br><br>
+>> ![emails](images/mxplan-zimbra-3.png){.thumbnail .w-500}
+
+
+##### Roundcube / OWA
+
+#### Depuis le webmail <a name="mxplanlegacy"></a>
 
 La gestion des redirections ne se fait pas via l'espace client mais directement via le webmail de l'adresse e-mail concernée.
 
@@ -105,9 +190,11 @@ Rendez-vous sur le [webmail](/links/web/email) . Saisissez **l'adresse e-mail** 
 
 ![emails](images/webmail.png){.thumbnail .w-500}
 
-Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](#diagram) au début de ce guide). Si cela correspond à votre besoin, cliquez sur `OK`{.action} (icône de disquette) en haut à gauche et la règle sera appliquée. Sinon, passez à l'étape ci-dessous.
+Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](#diagram) au début de ce guide).
 
 Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
+
+##### OWA 
 
 > [!tabs]
 > **Etape 1**
@@ -147,7 +234,46 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 > Pour appliquer une **redirection simple** (voir le [schéma 1](#diagram) au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur `Déplacer, copier ou supprimer`{.action} et enfin cliquez sur `supprimer le message`{.action}. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.<br><br>
 > ![emails](images/emails-all-07.png){.thumbnail .w-640}
 
-### Supprimer une redirection
+##### Zimbra
+
+Pour créer une redirection sur une adresse e-mail Zimbra, connectez-vous au [webmail](/links/web/email).
+La création d'une redirection se fait par le biais de règles de boîte de réception, appelée « filtres » dans le webmail. En effet, ces règles que l'on applique lors de la réception d'un e-mail permettent de transférer ou rediriger un e-mail.
+
+Pour rediriger les e-mails de votre compte Zimbra vers une autre adresse e-mail, nous allons appliquer une règle de transfert. Suivez les onglets ci-dessous pour mettre en place votre redirection.
+
+> [!primary]
+>
+> Dans notre exemple ci-dessous, nous avons choisi de rediriger l'ensemble des e-mails entrant vers une autre adresse e-mail. Pour comprendre l'exemple dans les captures d'écrans, nous sommes connectés sur l'adresse **zimbra@mydomain.ovh** et nous souhaitons rediriger les e-mails de ce compte vers l'adresse **address@example.com**.
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Cliquez sur le bouton &#9881; en haut à droite de votre fenêtre de webmail, puis cliquez sur `Paramètres`{.action}.
+>>
+>> ![zimbra](images/zimbra_settings01.png){.thumbnail .w-500}
+>>
+> **Etape 2**
+>>
+>> Cliquez sur la section `Filtres`{.action} depuis la fenêtre des paramètres, puis cliquez sur le bouton `Ajouter un filtre`{.action}.
+>>
+>> ![zimbra](images/zimbra_redirection02.png){.thumbnail .w-500}
+>>
+> **Etape 3**
+>>
+>> - Cliquez d'abord sur <u>Mode avancé</u> en haut à droite pour mettre en place cette règle.
+>> - Donnez un nom à votre filtre dans la case `Nom du filtre`.
+>> - Laissez le menu déroulant sur `toutes` dans la phrase « Si un message entrant réunit ... de ces conditions ».
+>> - Dans le premier menu déroulant des règles, choisissez `À` (To), laissez `contient` (contains), puis saisissez l'adresse e-mail sur laquelle vous êtes connecté dans la case juste à droite.
+>> - Sous la mention « Alors » (Then), sélectionnez `Transférer à` (Forward to) dans le menu déroulant, puis saisissez l'adresse e-mail de destination.
+>> - Cliquez sur `+ Ajouter une action`{.action}(Add an action) plus bas, puis sélectionnez `Déplacer vers le dossier réception` (Keep in Inbox).
+>> - Cliquez sur `Enregistrer`{.action} depuis la fenêtre de votre filtre et également depuis celle des paramètres.
+>>
+>> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-500}
+>>
+
+Pour plus de détails sur l'utilisation du webmail Zimbra, consultez notre guide « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
+
+### Supprimer une redirection <a name="delete-redirection"></a>
 
 Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
 
@@ -169,6 +295,8 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 >>
 
 ### Créer un alias <a name="alias"></a>
+
+#### OWA
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
 
@@ -196,7 +324,41 @@ Pour ajouter un alias à votre compte e-mail, suivez les étapes décrites en cl
 >> Cliquez sur `Ajouter un alias`{.action} puis saisissez l'adresse que vous avez choisie pour votre alias et validez votre choix.<br><br>
 >> ![emails](images/email-alias03.png){.thumbnail .w-500}<br>
 
-### Supprimer un alias
+##### Zimbra
+
+Créer un alias pour votre adresse e-mail vous permet de communiquer une adresse « masque » à vos contacts, sans avoir à communiquer votre adresse e-mail personnelle à l'expéditeur. 
+
+La création d'un alias se fait depuis l'[espace client OVHcloud](/links/manager), Cliquez sur les étapes ci-dessous :
+
+> [!tabs]
+> **Etape 1**
+>>
+>> - Cliquez sur l'onglet `Comptes e-mail`{.action} de votre service Zimbra.
+>> - Cliquez sur le bouton &#8942; du compte e-mail concerné.
+>> - Cliquez sur `Modifier`{.action}.
+>>
+>> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-500}
+>>
+> **Etape 2**
+>>
+>> La fenêtre de configuration de votre compte e-mail s'affiche, cliquez sur l'onglet `Alias`{.action} plus haut.
+>>
+>> ![zimbra](images/zimbra_alias02.png){.thumbnail .w-500}
+>>
+> **Etape 3**
+>>
+>> La fenêtre suivante contiendra la liste des alias que vous pouvez associer au compte concerné. Cliquez sur le bouton `Créer un Alias`{.action}.
+>>
+>> ![zimbra](images/zimbra_alias03.png){.thumbnail .w-500}
+>>
+> **Etape 4**
+>>
+>> Déterminez l'adresse de votre alias et sélectionnez un des noms de domaines associés à votre service Zimbra.
+>>
+>> ![zimbra](images/zimbra_alias04.png){.thumbnail .w-500}
+>>
+
+### Supprimer un alias <a name="delete-alias"></a>
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée. Cliquez ensuite sur `Configurer les alias`{.action} ( ou `Gérer les alias`{.action}).
 
@@ -204,48 +366,7 @@ Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le men
 
 ![emails](images/email-alias04.png){.thumbnail .w-500}
 
-### Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail <a name="mxplanlegacy"></a>
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Rendez-vous dans la partie `Web Cloud`{.action}.
-1. Cliquez sur `MX Plan`{.action}.
-1. Sélectionnez le domaine concerné.
-
-> [!warning]
->
-> - La méthode pour créer un alias ou pour créer une redirection est strictement la même.
-> - Il est possible de créer un maximum de 2000 alias et redirections, copies locales incluses.
->
-
-Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
-
-> [!tabs]
-> **Etape 1**
->> Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.<br><br>
->> ![emails](images/mxplan-legacy-1.png){.thumbnail .w-500}<br>
->>
-> **Etape 2**
->>
->> Le tableau des redirections déjà actives s'affiche. À droite, cliquez sur le bouton `Ajouter une redirection`{.action}.<br><br>
->>
->> > [!primary]
->> >
->> > Pour modifier ou supprimer une redirection, cliquez sur `...`{.action}, à droite de la redirection concernée.
->>
->> ![emails](images/mxplan-legacy-2.png){.thumbnail .w-500}<br>
->>
-> **Etape 3**
->>
->> **De l'adresse** : renseignez ici l'adresse e-mail que vous souhaitez rediriger.<br><br>
->> **Vers l'adresse**: renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.<br><br>
->> **Choisissez un mode de copie**: choisissez si vous souhaitez : <br> - **Conserver une copie du mail chez OVHcloud** (recevoir l'e-mail sur votre adresse principale ainsi que l'adresse de redirection)<br> *cf. le [schéma 2](#diagram) au début de ce guide.*<br><br> - **Ne pas conserver de copie du mail** (renvoyer directement vers l'adresse de redirection sans que l'adresse principale ne le reçoive) <br> *cf. le [schéma 1](#diagram) au début de ce guide.*<br><br>
->> Cliquez ensuite sur `Valider`{.action} pour confirmer l'ajout de cette redirection.<br><br>
->> ![emails](images/mxplan-legacy-3.png){.thumbnail .w-500}
-
-> [!primary]
->
-> Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVHcloud** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des redirections, elle matérialise cette copie locale.
->
 
 ### Supprimer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail <a name="del-mxplanlegacy"></a>
 
