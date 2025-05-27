@@ -59,7 +59,7 @@ A custom alias defined by the customer to better identify their service in the C
 
 Clicking this will redirect you to the `General information`{.action} tab for the web hosting plan concerned.
 
-#### Offer
+#### Service plan
 
 Shows the type of solution associated with the hosting plan: Starter, Personal, Professional or Performance.
 
@@ -70,7 +70,7 @@ Clicking this will redirect you to the `General information`{.action} tab for th
 Shows the status of the Git integration on the website:
 
 - Active: The Git repository is connected.
-- Inactive: Git repository is not enabled.
+- Inactive: The Git repository is not enabled.
 - In progress: The Git repository is being configured.
 - Error: An error is detected in the configuration of the Git repository.
 
@@ -82,7 +82,7 @@ Indicates whether a log space is enabled on the selected domain.
 
 Clicking this will redirect you to the `Multisite`{.action} tab for the web hosting plan concerned.
 
-Visit our page “[Monitor and analyze your website traffic](/links/web/hosting-traffic-analysis)” for more information.
+Visit our page “[Monitor and analyze website traffic](/links/web/hosting-traffic-analysis)” for more information.
 
 > [!warning]
 >
@@ -121,9 +121,9 @@ See our page “[Essential options for your web hosting](/links/web/hosting-opti
 
 Indicates whether or not the boost option is enabled on your web hosting plan. With the Boost option, you can temporarily increase your web hosting plan’s CPU and RAM resources.
 
-Clicking this will redirect you to the `Boost my solution`{.action} tab for the Web Hosting plan concerned.
+Clicking this will redirect you to the `Boost my hosting plan`{.action} tab for the Web Hosting plan concerned.
 
-For more details on the Boost option, please read the “Boost your Performance web hosting plan temporarily” section of our guide “[Web Hosting - How to upgrade your plan](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)”.
+For more details on the Boost option, please read the “Boost your Performance web hosting plan temporarily” section of our guide “[Web Hosting - How to change your solution](/pages/web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)”.
 
 ## Go further
 
