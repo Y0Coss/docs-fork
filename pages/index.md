@@ -839,7 +839,7 @@
                 + [Managed Kubernetes - Responsibility model](public_cloud/containers_orchestration/managed_kubernetes/responsibility-model)
             + [User guides](public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides)
                 + [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster)
-                + [Managing nodes and node pools](public_cloud/containers_orchestration/managed_kubernetes/managing-nodes)
+                + [How to manage nodes and node pools on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/managing-nodes)
                 + [Dynamically resizing a cluster with the cluster autoscaler](public_cloud/containers_orchestration/managed_kubernetes/using-cluster-autoscaler)
                 + [Configuring the cluster autoscaler](public_cloud/containers_orchestration/managed_kubernetes/configuring-cluster-autoscaler)
                 + [Add IP restrictions on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/add-ip-restrictions)
