@@ -8,7 +8,7 @@ flag: hidden
 ## Introduction
 Ce guide vous aidera à ajouter une clé SSH dans le panneau de contrôle OVHcloud. Les clés SSH sont utilisées pour établir des connexions sécurisées entre votre ordinateur et vos serveurs dédiés. Il est essentiel de suivre ces étapes pour garantir la sécurité de vos serveurs.
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/D5S1WcYadbU?si=nyT8rdCOybniAif2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video" width="800" src="https://www.youtube.com/embed/74wBYy9CxM4?si=xtcx_odTOcXKeSbx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Étape 1 : Accéder à la page "Mes offres et services"
 Pour commencer, vous devez accéder à la page "Mes offres et services" dans le panneau de contrôle OVHcloud. Vous pouvez y accéder en vous rendant sur l'URL suivante : [https://www.ovh.com/manager/#/billing/autorenew/](https://www.ovh.com/manager/#/billing/autorenew/). Assurez-vous d'être connecté à votre compte OVHcloud pour accéder à cette page.
