@@ -199,7 +199,7 @@ The following methods are supported to create an MKS Premium cluster:
 >>
 > Using Terraform
 >>
->> Refer to the [dedicated documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster-through-terraform) to create a Managed Kubernetes cluster.
+>> Refer to the [dedicated documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) to create a Managed Kubernetes cluster.
 >>
 >> Here is a sample Terraform file that creates an MKS Premium cluster and three nodepools on three different availability zones in the `EU-WEST-PAR` region.
 >>
