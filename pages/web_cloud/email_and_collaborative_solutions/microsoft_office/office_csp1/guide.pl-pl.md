@@ -54,7 +54,7 @@ Aby aktywować zamówioną licencję:
 
 1. Wpisz informacje dotyczące użytkownika licencji, a następnie kliknij przycisk `Zatwierdź`{.action}.
 
-![emaile](images/Outlook-cps1-02.png){.thumbnail .w-500}
+    ![emaile](images/Outlook-cps1-02.png){.thumbnail .w-500}
 
 ### Zainstaluj licencję Microsoft 365 na komputerze <a name="install365"></a>
 

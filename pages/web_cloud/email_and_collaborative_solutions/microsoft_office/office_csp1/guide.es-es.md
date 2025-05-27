@@ -54,7 +54,7 @@ Para activar la licencia contratada:
 
 1. Introduzca los datos del usuario de la licencia y haga clic en `Validar`{.action}.
 
-![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
+    ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
 
 ### Instalar la suite Microsoft 365 en su máquina <a name="install365"></a>
 

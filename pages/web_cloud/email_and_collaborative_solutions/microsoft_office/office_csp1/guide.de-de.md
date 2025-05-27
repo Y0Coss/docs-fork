@@ -50,11 +50,11 @@ So aktivieren Sie die bestellte Lizenz:
 1. Wählen Sie den Tab `Lizenzen`{.action}.
 1. Klicken Sie auf die Schaltfläche `⁝`{.action} in der Zeile der Lizenz, die von der Aktivierung betroffen ist, und dann auf `Account bearbeiten`{.action}.
 
-![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
+    ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
 1. Geben Sie die Lizenz-Daten ein, und klicken Sie auf `Bestätigen`{.action}.
 
-![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
+    ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
 
 ### Installieren von Microsoft 365 Suite <a name="install365"></a>
 

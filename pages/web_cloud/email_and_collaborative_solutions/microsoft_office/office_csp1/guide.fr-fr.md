@@ -54,7 +54,7 @@ Pour activer la licence commandée :
 
 1. Saisissez les informations relatives à l'utilisateur de la licence, puis cliquez sur `Valider`{.action}.
 
-![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
+    ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
 
 ### Installer la suite Microsoft 365 sur votre machine <a name="install365"></a>
 

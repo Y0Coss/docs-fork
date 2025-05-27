@@ -54,7 +54,7 @@ Per attivare la licenza ordinata:
 
 1. Inserisci le informazioni relative all’utente della licenza e clicca su `Conferma`{.action}.
 
-![email](images/Outlook-cps1-02.png){.thumbnail .w-500}
+    ![email](images/Outlook-cps1-02.png){.thumbnail .w-500}
 
 ### Installare la suite Microsoft 365 sulla macchina <a name="install365"></a>
 

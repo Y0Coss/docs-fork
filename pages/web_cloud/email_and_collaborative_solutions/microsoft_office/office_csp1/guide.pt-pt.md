@@ -54,7 +54,7 @@ Para ativar a licença encomendada:
 
 1. Introduza as informações relativas ao utilizador da licença e depois clique em `Validar`{.action}.
 
-![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
+    ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
 
 ### Instalar a suite Microsoft 365 na sua máquina <a name="install365"></a>
 

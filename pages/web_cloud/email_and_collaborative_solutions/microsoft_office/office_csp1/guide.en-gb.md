@@ -50,11 +50,11 @@ To activate the license ordered:
 1. Click the `Licenses`{.action} tab.
 1. Click the `⁝`{.action} button on the license line for the activation, then click `Edit account`{.action}.
 
-![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
+    ![emails](images/Outlook-cps1-01.png){.thumbnail .w-500}
 
 1. Enter the license user information, then click `Confirm`{.action}.
 
-![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
+    ![emails](images/Outlook-cps1-02.png){.thumbnail .w-500}
 
 ### Install the Microsoft 365 suite on your device <a name="install365"></a>
 
