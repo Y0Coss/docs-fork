@@ -1,49 +1,48 @@
 ---
-title: "Comparison of Public Cloud managed databases Deployment Modes - Understanding 3-AZ / 1-AZ"
-excerpt: "Explore OVHcloud's managed databases deployment modes"
+title: "Comparison of Public Cloud Databases Deployment Modes - Understanding 3-AZ / 1-AZ"
+excerpt: "Explore OVHcloud's Public Cloud Databases deployment modes"
 updated: 2025-05-23
 ---
 
 ## Objective
 
-OVHcloud offers two deployment modes for its [Public Cloud Databases](/links/public-cloud/databases) service, each tailored to specific needs regarding resilience, availability, performance, and latency. This document provides a detailed explanation of the characteristics of each deployment mode, followed by a comprehensive comparison to help users choose the best option for their requirements.
+OVHcloud offers two deployment modes for its [Public Cloud Databases](/links/public-cloud/databases) services, each tailored to specific needs regarding resilience, availability, performance, and latency. This document provides a detailed explanation of the characteristics of each deployment mode, followed by a comprehensive comparison to help users choose the best option for their requirements.
 
 ## Concepts
 
-OVHcloud managed databases offers two main deployment modes, each optimized for specific use cases and offering various levels of redundancy and fault tolerance:
+OVHcloud managed databases offer two main deployment modes, each optimized for specific use cases and offering various levels of redundancy and fault tolerance:
 
-1. **1-AZ Region**:
-2. **3-AZ Region**:
+1. **1-AZ Region**: for standard applications, offering basic resilience with optimized cost.
+2. **3-AZ Region**: suitable for applications that require high availability with low RTO/RPO and resilience to availability zone outage.
 
 ## Deployment modes
 
 > [!primary]
 >
-> The following information pertains to the different deployment modes available in OVHcloud’s managed databases service. Select the mode that best suits your needs based on resilience, availability, and performance.
+> The following information pertains to the different deployment modes available in OVHcloud’s managed database service. Select the mode that best suits your needs based on resilience, availability, and performance.
 
 ### 1-AZ Region
 
 #### Infrastructure and Redundancy
 
-A 1-AZ Region consists of a **single availability zone covering multiple data centers within the same region**, utilizing a 2N+1 redundancy design. This setup offers resilience against server and disk failures but may be vulnerable to a complete data center outage. Note that in a 1-AZ region, the databases service is located in a specific data center, and if an outage occurs in the specific data center hosting the databases service, access to data could be impacted, even if other data centers in the zone remain operational.
+A 1-AZ Region consists of a **single availability zone covering multiple data centers within the same geographical region**, utilizing a 2N+1 redundancy design. When a database service is deployed with multiple nodes, this single AZ setup offers resilience against node and disk failures but may be vulnerable to a complete OpenStack region outage. Note that in a 1-AZ region, the database service is located in a specific OpenStack region that spans over multiple data center. The nodes of a multi-node database services are scattered in different hosts that **may be** located in different data centers. If an outage occurs in a specific data center hosting one or multiple nodes of the database service, access to data could be impacted, even if other data centers in the zone remain operational.
 
 #### Characteristics
 
 - **Cost-Effectiveness:** Deploying in a 1-AZ region is generally more affordable, making it suitable for development, testing, and non-critical workloads where cost considerations are paramount.
-- **Simplified Architecture:** The single-zone setup simplifies deployment and management, reducing complexity for teams that do not require high availability across multiple zones.
-- **characteristic:**
+- **Host antiaffinity:** The nodes of a multi-node database service are deployed in different physical hosts offering resilience to host outage.
 
 #### Limitations
 
-- **Single Point of Failure:** In a 1-AZ region, the databases Engine is deployed within a specific data center. If this data center experiences an outage, access to your databases services could be impacted, even if other data centers within the same availability zone remain operational. 
+- **Single Point of Failure:** In a 1-AZ region, the database services nodes **may be** deployed within a single data center. If this data center experiences an outage, access to your database services could be impacted, even if other data centers within the same availability zone remain operational.
 
 #### Redundancy Specifications for 1-AZ
 
-| Specification         | Description                                                               |
-|-------------------|---------------------------------------------------------------------------|
-| **Redundancy Type**   | 2N+1 across multiple data centers                                         |
-| **Fault Tolerance**   | Server and disk-level fault tolerance. Data center outage risk .          |
-| **Use Case Examples** | Suitable for development, testing, and non-critical databases workloads where cost-effectiveness is prioritized over maximum availability.          |
+| Specification         | Description |
+|-----------------------|-------------|
+| **Redundancy Type** | 2N+1 across multiple data centers. |
+| **Fault Tolerance** | Server and disk-level fault tolerance. Data center outage risk. |
+| **Use Case Examples** | Suitable for development, testing, and non-critical databases workloads where cost-effectiveness is prioritized over maximum availability. |
 
 <a name="3azregion"></a>
 
@@ -55,9 +54,8 @@ A 1-AZ Region consists of a **single availability zone covering multiple data ce
 
 #### Characteristics
 
-- **High Availability:** The databases Engine is deployed across three independent availability zones, ensuring service continuity even if one zone experiences an outage.
-- **Fault Tolerance:** With data replicated across all three zones, the system provides robust fault tolerance, minimizing the risk of data loss.
-- **Low Latency:** The architecture offers ultra-low latency between availability zones, enhancing performance for databases workloads.
+- **High Availability:** Multi-node database service is deployed across three independent availability zones, ensuring service continuity even if one zone experiences an outage.
+- **Low Latency:** The architecture offers ultra-low latency between availability zones, ensuring performance of database read/write operations on primary and standby nodes.
 
 #### Ideal Use Cases
 
@@ -65,11 +63,11 @@ A 1-AZ Region consists of a **single availability zone covering multiple data ce
 
 #### Performance Specifications for 3-AZ
 
-| Specification         | Description                                                               |
-|-------------------|---------------------------------------------------------------------------|
-| **Connectivity**      | Low latency between availability zones                                   |
-| **High Availability** | Maintains access even in the event of zone failures                                  |
-| **Use Case Examples** | Mission-critical and availability-sensitive applications , e-commerce, healthcare platforms, financial services, or live-streaming applications. |
+| Specification         | Description |
+|-----------------------|-------------|
+| **Connectivity** | Low latency between availability zones. |
+| **High Availability** | Maintains access even in the event of zone failures. |
+| **Use Case Examples** | Mission-critical and availability-sensitive applications, e-commerce, healthcare platforms, financial services, or live-streaming applications. |
 
 ## Go Further
 
