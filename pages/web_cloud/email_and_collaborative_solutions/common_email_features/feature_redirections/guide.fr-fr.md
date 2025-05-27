@@ -74,14 +74,14 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 
 ## En pratique
 
-> [!warning]
->
-> Les chapitres « [créer une redirection](#redirect) » et « [créer un alias](#alias) » concernent l'ensemble de nos offres e-mail OVHcloud, **sauf si** :
->
-> - vous possédez la version historique de l'offre MX Plan (pour le vérifier, vous pouvez consulter le cadre ci-dessous).
-> - vous possédez un nom de domaine enregistré chez OVHcloud sans offre e-mail attachée.
->
-> Pour ces deux exceptions, seule la redirection est possible. Nous vous invitons à consulter directement le chapitre « [Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail](#mxplanlegacy) ».
+Ce guide concerne l'ensemble de nos offres e-mail. En fonction de l'offre, la gestion des alias et redirections peut se faire depuis l'espace client OVHcloud ou depuis le Webmail de votre offres. Pour plus de clareté nous mentionnont les type d'offres e-mail concerné dans chaque chapitre de ce guide :
+
+ - **MX Plan Roundcube** : Correspond à l'offre MX Plan utilisant le webmail Roundcube.
+ - **MX Plan Zimbra** : Correspond à l'offre MX Plan utilisant le webmail Zimbra. 
+ - **MX Plan OWA** : Correspond à l'offre MX Plan utilisant le webmail Zimbra. 
+ - **Exchange** : 
+ - **Email Pro** :
+ - **Zimbra** :
 
 > [!primary]
 >
