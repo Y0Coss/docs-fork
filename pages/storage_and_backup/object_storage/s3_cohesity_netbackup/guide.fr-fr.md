@@ -13,7 +13,7 @@ Il couvre notamment l’ajout d’un volume cloud, la configuration des paramèt
 ## Prérequis
 
 - Un Primary Server NetBackup installé et configuré. Voir [Installing NetBackup primart server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020){.external}
-- Un Media Server dédupliqué configuré sous Red Hat Enterprise Linux ou SUSE Linux Enterprise Server (voir [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index){.external})
+- Un serveur de médias avec option de déduplication installé sur Red Hat Enterprise ou SUSE Linux Enterprise Server (voir [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index){.external})
 - Un espace disque local disponible d’environ 1 To pour la gestion des métadonnées de déduplication.
 
 ## En pratique
@@ -51,7 +51,7 @@ Vous serez guidé tout au long de la procédure, depuis la sélection du Storage
 
 ![credentials page](images/credentials_page.png){.thumbnail}
 
-9. (Optionnel) Pour activer le mode WORM (S3 Object Lock), cochez `Use Object Lock`{.action}. Sélectionnez le mode de verrouillage NetBackup correspondant au mode S3 OVHcloud :
+9. (Optionnel) Pour activer le mode WORM (S3 Object Lock), cochez `Use Object Lock`{.action}. Sélectionnez le mode de verrouillage NetBackup correspondant au mode OVhcloud Object Lock :
 
 - Compliance -> Compliance
 - Enterprise -> Governance

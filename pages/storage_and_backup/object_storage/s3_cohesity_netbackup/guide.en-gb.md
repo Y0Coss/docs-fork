@@ -13,7 +13,7 @@ It covers the steps to add a cloud volume, configure optional WORM (Write Once R
 ## Requirements
 
 - A NetBackup Primary Server installed and configured. See [Installing NetBackup Primary Server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020){.external}
-- A deduplicated Media Server configured on Red Hat Enterprise Linux or SUSE Linux Enterprise Server (see [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index){.external})
+- A Media Server with deduplication option installed on Red Hat Enterprise or SUSE Linux Enterprise Server (see [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index){.external})
 - Approximately 1 TB of local disk space available for deduplication metadata management.
 
 ## Instructions
@@ -52,7 +52,7 @@ You will be guided through the entire process, from selecting the Storage Server
 
 ![credentials page](images/credentials_page.png){.thumbnail}
 
-9. (Optional) To enable WORM mode (S3 Object Lock), check `Use Object Lock`{.action}. Select the NetBackup lock mode matching the OVHcloud S3 mode:
+9. (Optional) To enable WORM mode (S3 Object Lock), check `Use Object Lock`{.action}. Select the NetBackup lock mode matching the OVhcloud Object Lock mode:
 
 - Compliance -> Compliance
 - Enterprise -> Governance
@@ -91,7 +91,7 @@ Then, set the minimum and maximum retention periods for the lock.
 - Use the storage unit directly in your backup jobs,
 - Or use it as a secondary target via a Storage Lifecycle Policy (SLP).
 
-16. Modify your backup policies accordingly to integrate OVHcloud storage.
+16. Modify your backup policies accordingly to integrate OVHcloud Object Storage.
 
 ![storage lifecycle policy](images/storage_lifecycle_policy.png){.thumbnail}
 ![create storage lifecycle policy](images/create_storage_lifecycle_policy.png){.thumbnail}
