@@ -92,7 +92,7 @@ Aby mieć pewność, że rozmiar dysku zostanie zwiększony we właściwym momen
 >> Aby sprawdzić partycje dysków i ich rozmiar:
 >>
 >> ```bash
->> Lsblk
+>> lsblk
 >> ```
 >>
 >> ///
