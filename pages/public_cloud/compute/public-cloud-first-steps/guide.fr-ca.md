@@ -1,7 +1,7 @@
 ---
 title: "Comment créer une instance Public Cloud et s'y connecter"
 excerpt: "Découvrez comment configurer des instances Public Cloud dans votre espace client OVHcloud ainsi que les premières étapes avec vos instances"
-updated: 2024-10-07
+updated: 2025-04-28
 ---
 
 <style>
@@ -39,9 +39,9 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
 
 > [!primary]
 >
-> Si vous n'avez pas encore créé de projet Public Cloud, commencez par notre [guide sur la création d'un projet](/pages/public_cloud/compute/create_a_public_cloud_project).
+> Si vous n'avez pas encore créé de projet Public Cloud, commencez par notre [guide sur la création d'un projet](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 >
-> **Les détails techniques** importants concernant le Public Cloud d’OVHcloud sont disponibles sur [cette page](/pages/public_cloud/compute/00-essential-info-to-get-started-on-public-cloud).
+> **Les détails techniques** importants concernant le Public Cloud d’OVHcloud sont disponibles sur [cette page](/pages/public_cloud/public_cloud_cross_functional/00-essential-info-to-get-started-on-public-cloud).
 >
 
 ### Présentation du contenu
@@ -112,9 +112,9 @@ Vous pouvez stocker vos clés SSH publiques dans la section `Public Cloud`{.acti
 
 Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
-![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Ouvrez `SSH Keys`{.action} dans le menu de gauche sous **Project Management**. Cliquez sur le bouton `Ajouter une clé SSH`{.action}.
+Ouvrez `Clés SSH`{.action} dans le menu de gauche sous **Paramètres**. Cliquez sur le bouton `Ajouter une clé SSH`{.action}.
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
 
@@ -168,7 +168,7 @@ Pour en savoir plus, consultez la [page Web des Local Zones](/links/public-cloud
 
 Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
-![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
 Sur la page « **Accueil** », cliquez sur `Créer une instance`{.action}.
 
@@ -188,7 +188,7 @@ Les modèles d'instance de type `Metal`{.action} fournissent des ressources phys
 
 > [!primary]
 >
-> Le total de vos ressources Public Cloud sera initialement limité pour des raisons de contrôle des coûts et de sécurité. Vous pouvez vérifier ces quotas en cliquant sur `Quota and Regions`{.action} dans la barre de navigation de gauche sous **Project Management**. Consultez [la documentation dédiée](/pages/public_cloud/compute/increasing_public_cloud_quota) pour plus d'informations.
+> Le total de vos ressources Public Cloud sera initialement limité pour des raisons de contrôle des coûts et de sécurité. Vous pouvez vérifier ces quotas en cliquant sur `Quota & Régions`{.action} dans la barre de navigation de gauche sous **Paramètres**. Consultez [la documentation dédiée](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) pour plus d'informations.
 >
 > Notez que vous pouvez **mettre à niveau** votre instance après sa création pour avoir plus de ressources disponibles. Le passage à un modèle plus petit n'est cependant pas possible avec une instance régulière. Vous trouverez plus d'informations sur ce sujet à l'**étape 4.4** ci-dessous.
 >
@@ -279,7 +279,7 @@ Cette étape offre plusieurs options de configuration. Cliquez sur les onglets c
 > [!tabs]
 > **1 : Nombre d'instances à créer**
 >>
->> Vous pouvez créer plusieurs instances en fonction des sélections effectuées lors des étapes de création, mais [les limites de quota de ressources](/pages/public_cloud/compute/increasing_public_cloud_quota) s’appliqueront.<br>
+>> Vous pouvez créer plusieurs instances en fonction des sélections effectuées lors des étapes de création, mais [les limites de quota de ressources](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) s’appliqueront.<br>
 >>
 > **2 : Instance flexible**
 >>
@@ -369,7 +369,7 @@ Cliquez sur `Suivant`{.action} pour passer à la dernière étape.
 
 Retrouvez les détails dans notre documentation de facturation dédiée :
 
-- [Facturation du Public Cloud](/pages/public_cloud/compute/analyze_billing)
+- [Facturation du Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)
 - [FAQ sur la facturation mensuelle](/pages/public_cloud/compute/faq_change_of_monthly_billing_method)
 
 Une fois la configuration de votre instance terminée, cliquez sur le bouton `Créer une instance`{.action}. La livraison de votre service peut prendre quelques minutes.
@@ -396,7 +396,7 @@ Notez que nous proposons des moyens d'accès alternatifs (principalement utilis�
 
 Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
-![espace client](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![espace client](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
 Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **Compute**. Votre instance est prête lorsque l'état est défini sur `Activé` dans le tableau. Si l'instance a été créée récemment et a un statut différent, cliquez sur le bouton « Actualiser » situé à côté du filtre de recherche.
 
@@ -533,7 +533,7 @@ La console VNC vous permet de vous connecter à vos instances même lorsque d'au
 
 Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
-![espace client](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![espace client](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
 Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **Compute**. Cliquez sur le nom de l'instance et ouvrez l'onglet `Console VNC`{.action}.
 
@@ -658,9 +658,9 @@ Consultez notre [guide dédié](/pages/public_cloud/compute/configuring_addition
 
 [Gestion des instances dans l’espace client](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
 
-[Comment démarrer avec OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+[Comment démarrer avec OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 
-[Comment démarrer avec Horizon](/pages/public_cloud/compute/introducing_horizon)
+[Comment démarrer avec Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

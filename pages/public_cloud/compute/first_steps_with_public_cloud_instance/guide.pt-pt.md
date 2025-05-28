@@ -1,7 +1,7 @@
 ---
 title: 'Gerir as suas instâncias Public Cloud'
 excerpt: 'Saiba como gerir as suas instâncias Public Cloud na Área de Cliente OVHcloud'
-updated: 2024-02-20
+updated: 2025-04-28
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-02-20
 
 ## Objetivo
 
-Pode gerir as suas instâncias Public Cloud na sua [Área de Cliente](/links/manager).
+Pode gerir as suas instâncias Public Cloud na sua [Área de Cliente OVHcloud](/links/manager).
 
 **Este guia explica em pormenor as ações disponíveis na Área de Cliente OVHcloud para uma instância Public Cloud.**
 
@@ -22,13 +22,13 @@ Pode gerir as suas instâncias Public Cloud na sua [Área de Cliente](/links/man
 
 ## Instruções
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e abra o seu projeto `Public Cloud`{.action}. 
+Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
 
 ### Utilizar a interface de gestão das instâncias
 
-Clique em `Instances`{.action} no menu à esquerda. 
+Clique em `Instâncias`{.action} no menu à esquerda. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 Esta página lista o conjunto das suas instâncias Public Cloud e algumas das suas propriedades:
 
@@ -95,7 +95,7 @@ Isto irá ativar o modo de rescue da instância. Consulte o nosso manual [Como a
 >
 
 - Clique em `Reboot a quente (soft)`{.action} para efetuar um reboot ao nível de software.
-- Clique em `Reiniciar a frio (hard)`{.action} para lançar um reboot ao nível material.
+- Clique em `Reboot a frio (hard)`{.action} para lançar um reboot ao nível material.
 
 Confirme o pedido de reboot na janela que aparecer.
 
@@ -129,7 +129,7 @@ Confirme o pedido de eliminação na janela que aparecer.
 
 ### Aceder à consola VNC <a name="accessvnc"></a>
 
-Clique em `Instances`{.action} no menu à esquerda. Na página de gestão das instâncias, clique no nome da instância.
+Clique em `Instâncias`{.action} no menu à esquerda. Na página de gestão das instâncias, clique no nome da instância.
 
 A seguir, clique no separador `Console VNC`{.action}.
 
@@ -143,8 +143,8 @@ Para mais informações, consulte o nosso manual "[Criação e conexão a uma pr
 
 [Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 
-[Apresentação do Horizon](/pages/public_cloud/compute/introducing_horizon)
+[Apresentação do Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

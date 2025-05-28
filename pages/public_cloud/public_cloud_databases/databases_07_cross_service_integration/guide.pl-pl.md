@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - How to setup a service integration
 excerpt: Find out how to use Cross Service Integration for Public Cloud Databases engines
-updated: 2023-05-25
+updated: 2025-04-15
 ---
 
 ## Objective
@@ -20,15 +20,15 @@ Cross Service Integration allows you to expose your Public Cloud Databases Logs 
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
-- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) or to the [OVHcloud API](https://api.ovh.com/)
+- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
 
 ## Concept
 
 The Cross Service Integrations for Logs and Metrics allow you for example:
 
-- To send Caching or MySQL metrics or Cassandra metrics in M3db or PostgreSQL.
+- To send Caching/Valkey or MySQL metrics or Cassandra metrics in PostgreSQL.
 - To send PostgreSQL or MySQL metrics to OpenSearch.
 - To show metrics in Dashboards service.
 
@@ -37,30 +37,28 @@ For that you need:
 - A source service
 - A destination service
 
-![Best practices](images/databases_07_cross_service_integration-20220708091945946.png){.thumbnail}
+![Best practices](images/databases_07_cross_service_integration_best_practice.png){.thumbnail}
 
 > [!warning]
 >
 > Although it is possible to define the same cluster as destination service and source service, this is a bad practice for multiple reasons (performance, security, resiliency, ...)
 >
 
-![Bad practices](images/databases_07_cross_service_integration-20220719203753927.png)
+![Bad practices](images/databases_07_cross_service_integration_bad_practice.png)
 
 ### Integration matrix
 
 - All services support logs to opensearch & kafka_logs to kafka.
-- All services except m3db & m3agg support metrics to pg & metrics to m3db.
+- All services support metrics to pg.
 
 Other integrations:
 
-| source →<br>↓ destination | dashboards service	| m3db	| kafka |
-|:--|---|---|---|
-| pg | dashboard, datasource | | |
-| opensearch | datasource | | |
-| m3db | dashboard, datasource | | |
-| m3agg | | m3agg | |
-| kmm | | | kafka_mirrormaker |
-| kc | | | kafka_connect |
+| source →<br>↓ destination | dashboards service	| kafka |
+|:--|---|---|
+| pg | dashboard, datasource | |
+| opensearch | datasource | |
+| kmm | | kafka_mirrormaker |
+| kc | | kafka_connect |
 
 ## Instructions
 
@@ -81,16 +79,11 @@ Define the `Integration type`{.action} and the `Destination service`{.action}:
 > First create a Public Cloud Database for your *Destination* service via your Control Panel or API.
 >
 
-> [!primary]
->
-> If you want to store the metrics of your *postgresql* cluster to *m3db*, select `m3dbMetrics` as `Integration type`{.action} and `m3db` as `Destination service`{.action}, as shown below.
->
-
-![Create integration](images/databases_07_cross_service_integration-20220708155848940.png){.thumbnail}
+![Create integration](images/databases_07_cross_service_integration_creation.png){.thumbnail}
 
 Your first integration is ready:
 
-![Result](images/databases_07_cross_service_integration-20220708160028574.png){.thumbnail}
+![Result](images/databases_07_cross_service_integration_list_example.png){.thumbnail}
 
 > [!primary]
 >
@@ -105,7 +98,7 @@ Your first integration is ready:
 
 Go to the `Service integration`{.action} tab of your `Destination service` service and click on `Add an integration`{.action}
 
-![Service integration](images/databases_07_cross_service_integration-20220708160203565.png){.thumbnail}
+![Service integration](images/databases_07_cross_service_integration_list_add.png){.thumbnail}
 
 > [!primary]
 >
@@ -114,11 +107,11 @@ Go to the `Service integration`{.action} tab of your `Destination service` servi
 
 Define `grafanaDashboard` as `Integration type`{.action} and the `Source service`{.action}:
 
-![Create integration](images/databases_07_cross_service_integration-20220708160400509.png){.thumbnail}
+![Create integration](images/databases_07_cross_service_integration_creation_grafana.png){.thumbnail}
 
 Your second integration is ready:
 
-![Result](images/databases_07_cross_service_integration-20220708160441618.png){.thumbnail}
+![Result](images/databases_07_cross_service_integration_list_example_2.png){.thumbnail}
 
 Connect to your Dashboards instance and browse the dashboards:
 
@@ -182,16 +175,6 @@ Open the following API call, paste your service ID into the `serviceName` input 
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaMirrorMaker
 >> >
-> M3 Aggregator
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/m3aggregator
->> >
-> M3db
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/m3db
->> >
 > MySQL
 >> > [!api]
 >> >
@@ -207,7 +190,7 @@ Open the following API call, paste your service ID into the `serviceName` input 
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql
 >> >
-> Caching
+> Caching/Valkey
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis
@@ -240,14 +223,6 @@ Get integration capabilities related to your Public Cloud Databases service:
 >> > [!api]
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/capabilities/integration
 >> >
-> M3 Aggregator
->> > [!api]
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/m3aggregator/{clusterId}/capabilities/integration
->> >
-> M3db
->> > [!api]
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/m3db/{clusterId}/capabilities/integration
->> >
 > MySQL
 >> > [!api]
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/capabilities/integration
@@ -260,12 +235,12 @@ Get integration capabilities related to your Public Cloud Databases service:
 >> > [!api]
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/integration
 >> >
-> Caching
+> Caching/Valkey
 >> > [!api]
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/caching/{clusterId}/capabilities/integration
 >> >
 
-![Get Integration Capabilities](images/databases_07_cross_service_integration-20220708142931159.png){.thumbnail}
+![Get Integration Capabilities](images/databases_07_cross_service_integration_api_capa_integration.png){.thumbnail}
 
 #### Store yours logs or metrics
 
@@ -294,14 +269,6 @@ For that, you need to create a new integration:
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/integration
 >> >
-> M3 Aggregator
->> > [!api]
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/m3aggregator/{clusterId}/integration
->> >
-> M3db
->> > [!api]
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/m3db/{clusterId}/integration
->> >
 > MySQL
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/integration
@@ -314,14 +281,14 @@ For that, you need to create a new integration:
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/postgresql/{clusterId}/integration
 >> >
-> Caching
+> Caching/Valkey
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/caching/{clusterId}/integration
 >> >
 
 Fill in the form with the information corresponding to the type of integration chosen.
 
-![Create a new integration](images/databases_07_cross_service_integration-2022070814275082.png){.thumbnail}
+![Create a new integration](images/databases_07_cross_service_integration_api_post_integration.png){.thumbnail}
 
 The `destionationServiceId` and the `sourceServiceId` correspond to the destination cluster ID and to the source cluster ID.
 
@@ -333,7 +300,7 @@ For that, first create a Public Cloud Database for Dashboards via our Control Pa
 
 Once done, get the `GrafanaDashboard` integration capability related to the destination service:
 
-![Get Dashboards integration capabilitie](images/databases_07_cross_service_integration-20220708141900814.png){.thumbnail}
+![Get Dashboards integration capabilitie](images/databases_07_cross_service_integration_api_capa_integration.png){.thumbnail}
 
 Then create a second integration from your *Destination* service name:
 
@@ -358,14 +325,6 @@ Then create a second integration from your *Destination* service name:
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/integration
 >> >
-> M3 Aggregator
->> > [!api]
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/m3aggregator/{clusterId}/integration
->> >
-> M3db
->> > [!api]
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/m3db/{clusterId}/integration
->> >
 > MySQL
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/integration
@@ -378,7 +337,7 @@ Then create a second integration from your *Destination* service name:
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/postgresql/{clusterId}/integration
 >> >
-> Caching
+> Caching/Valkey
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/caching/{clusterId}/integration
 >> >
@@ -397,6 +356,6 @@ Then open your new dashboard:
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

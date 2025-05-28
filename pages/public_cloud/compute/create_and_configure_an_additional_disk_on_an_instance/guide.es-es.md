@@ -1,7 +1,7 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
 excerpt: 'Cómo asociar un nuevo volumen a una instancia de Public Cloud'
-updated: 2025-03-21
+updated: 2025-04-28
 ---
 
 <style>
@@ -26,7 +26,7 @@ Esto puede ser útil en los siguientes casos:
 - Si quiere aumentar su capacidad de almacenamiento sin tener que cambiar el modelo de instancia.
 - Si quiere disponer de un espacio de almacenamiento de alta disponibilidad y buen rendimiento.
 - Si desea transferir su almacenamiento y sus datos a otra instancia.
-- Si desea preparar el entorno para utilizar [Terraform](/pages/public_cloud/compute/how_to_use_terraform), debe preparar el entorno.
+- Si desea preparar el entorno para utilizar [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), debe preparar el entorno.
 
 **Esta guía explica cómo crear un disco adicional y configurarlo en una instancia.**
 
@@ -35,7 +35,7 @@ Esto puede ser útil en los siguientes casos:
 - Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 - Disponer de una instancia de [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) en su cuenta de OVHcloud.
 - Tener acceso de administrador (sudo) a su instancia a través de SSH.
-- Preparar el entorno si desea utilizar [Terraform](/pages/public_cloud/compute/how_to_use_terraform).
+- Preparar el entorno si desea utilizar [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform).
 
 > [!warning]
 >
@@ -85,7 +85,7 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 > [!tabs]
 > **Desde el área de cliente de OVHcloud**
 >>
->> Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, abra `Block Storage`{.action} en el menú de la izquierda.
+>> Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, abra `Block Storage`{.action} en el menú de la izquierda bajo **Backup Storage**
 >>
 >> En esta sección, haga clic en el botón `Crear un volumen`{.action}.
 >>
@@ -366,7 +366,7 @@ sudo blkid
 
 Abra `/etc/fstab` con un editor de texto:
 
-```
+```bash
 sudo nano /etc/fstab
 ```
 
@@ -559,7 +559,7 @@ Por último, vamos a desvincular el volumen de la instancia:
 
 > [!tabs]
 > **Desde el área de cliente de OVHcloud**
->> Acceda a la sección `Public Cloud`{.action} de su área de cliente de OVHcloud y haga clic en `Block Storage`{.action} en el menú de la izquierda, en **Storage**.
+>> Acceda a la sección `Public Cloud`{.action} de su área de cliente de OVHcloud y haga clic en `Block Storage`{.action} en el menú de la izquierda bajo **Backup Storage**.
 >>
 >> Haga clic en el botón `...`{.action} junto al volumen correspondiente y seleccione `Desvincular de la instancia`{.action}.
 >>
@@ -617,7 +617,7 @@ Por último, vamos a desvincular el volumen de la instancia:
 >> ```console
 >> terraform apply
 >> ```
-.>
+>>
 >> El resultado debería ser similar al siguiente:
 >>
 >> ```console

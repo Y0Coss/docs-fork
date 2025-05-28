@@ -1,7 +1,7 @@
 ---
 title: "Technical capabilities and limitations of Public VCF aaS (aka Managed VCD)"
 excerpt: "Learn about the technical capabilities and limitations of Public VCF aaS (aka Managed VCD)"
-updated: 2025-04-04
+updated: 2025-05-13
 ---
 
 ## Objective
@@ -26,13 +26,17 @@ Before getting started, review the following guides to better understand VMware 
 |----------|---------|----------|---------|----------|
 | vCPU (per VM) | 32 | 32 | 32 | Number of available vCPUs per VM. |
 | RAM (per VM) | 128 GB | 128 GB | 128 GB | Maximum RAM per VM (min. 0.5 GB). |
-| Network Cards (per VM) | 5 | 10 | 10 | Maximum number of network adapters per VM. |
+| Network Cards (per VM) | 10 | 10 | 10 | Maximum number of network adapters per VM. |
 | Edge Gateway (per organization) | N/A | 5 | 5 | Maximum number of Edge Gateways per organization. |
 | Public IPs (per vDC) | N/A | 2 | 2 | Number of available public IPs per vDC. |
 | Snapshots (per VM) | 3 | 3 | 3 | Maximum of 3 snapshots per VM. |
 | VMs (per vApp) | 128 | 128 | 128 | Maximum number of VMs allowed per vApp. |
 | VMs (per organization) | 2000 | 4000 | 4000 | Maximum number of VMs per organization. |
 | vApps (per organization) | 10,000 | 10,000 | 10,000 | Maximum number of vApps per organization. |
+
+> **Note**: When creating a snapshot that includes the VM's memory, storage usage can quickly add up.
+> For example, if you have 1 VM with 1 GB of RAM and a 10 GB disk, and you create a snapshot that includes memory, your storage usage will be:  
+> 10 GB (disk) + 1 GB (VM swap) + up to 10 GB (disk snapshot) + 1 GB (memory snapshot) = **22 GB total**.
 
 ### Hardware limitations
 

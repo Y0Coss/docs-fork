@@ -12,7 +12,7 @@ Lors de votre activité, vous serez probablement amené à effectuer une sauvega
 ## Prérequis
 
 - Avoir [créé une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) dans votre compte OVHcloud
-- [Accéder à l'interface Horizon](/pages/public_cloud/compute/introducing_horizon)
+- [Accéder à l'interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## En pratique
 
@@ -28,7 +28,7 @@ Cliquez sur le menu `Compute`{.action} à gauche puis sur `Instances`{.action}. 
 
 Dans la fenêtre qui s'affiche, saisissez les informations requises :
 
-* Nom du snapshot (*Snapshot Name*): définissez un nom pour le snapshot et cliquez sur `Create Snapshot`{.action}.
+**Nom du snapshot** (*Snapshot Name*): définissez un nom pour le snapshot et cliquez sur `Create Snapshot`{.action}.
 
 ![Create snapshot](images/createsnapshot2.png){.thumbnail}
 
@@ -58,7 +58,7 @@ Dans la fenêtre contextuelle, un certain nombre d'options doivent être sélect
 >> Sélectionnez la flavor souhaitée. Assurez-vous de sélectionner une version dont les ressources sont égales ou supérieures à la taille de l’image (snapshot).<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
-> **Réseau (*Network*)**
+> **Réseau (*Networks*)**
 >>
 >> Sélectionnez un réseau public (Ext-Net) à attacher à l’instance.<br><br>
 >>![network](images/restoresnapshot3.png){.thumbnail}<br>

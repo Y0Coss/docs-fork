@@ -16,8 +16,8 @@ Istnieje możliwość tworzenia instancji bezpośrednio w interfejsie Horizon. M
 
 ## Wymagania początkowe
 
-- Utworzenie [projektu Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) na Twoim koncie OVHcloud
-- [Dostęp do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
+- Utworzenie [projektu Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) na Twoim koncie OVHcloud
+- [Dostęp do interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## W praktyce
 
@@ -25,7 +25,7 @@ Istnieje możliwość tworzenia instancji bezpośrednio w interfejsie Horizon. M
 
 Zalecamy utworzenie prywatnej sieci przed utworzeniem instancji. Będziesz mógł później przypisać tę sieć do Twojej instancji.
 
-Zaloguj się do interfejsu Horizon, aby rozpocząć. Jeśli potrzebujesz pomocy w przeprowadzeniu tej operacji, zapoznaj się z [naszą dokumentacją](/pages/public_cloud/compute/introducing_horizon).
+Zaloguj się do interfejsu Horizon, aby rozpocząć. Jeśli potrzebujesz pomocy w przeprowadzeniu tej operacji, zapoznaj się z [naszą dokumentacją](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 
 Następnie kliknij `Network`{.action} w menu po lewej stronie, po czym kliknij `Networks`{.action}.
 
@@ -122,7 +122,7 @@ Wstępnie zbudowane *flavor* są dostępne dla Ciebie. Wybierz *flavor* w zakła
 Aby uzyskać więcej informacji, zapoznaj się z [tym przewodnikiem](/pages/public_cloud/compute/setup_security_group).
 
 
-**Key Pairs (Para kluczy)**
+**Key Pair (Para kluczy)**
 
 > [!warning] 
 > 
@@ -156,7 +156,7 @@ Aby uzyskać więcej informacji na temat tworzenia klucza SSH, zapoznaj się z [
 >> Jeśli wolisz zaimportować klucz SSH utworzony wcześniej, kliknij przycisk `Import Key Pair`{.action}.
 >>
 >> **Key Pair Name:** Wprowadź nazwę dla klucza.<br>
->> **Key Type (Typ klucza):** Kliknij strzałkę rozwijaną` i wybierz `SSH Key`.<br>
+>> **Key Type (Typ klucza):** Kliknij `strzałkę w dół`{.action} i wybierz `SSH Key`{.action}.<br>
 >> **Load Public Key from a file (Załaduj klucz publiczny z pliku):** Kliknij `Browse`{.action}, aby określić lokalizację klucza publicznego na komputerze.<br>
 >> **Public Key:** Skopiuj i wklej tutaj klucz publiczny.<br>
 >> Kliknij przycisk `Import Key Pair`{.action}, aby zaimportować klucz.<br><br>
@@ -180,4 +180,4 @@ Uwaga: te opcje nie są wymagane do utworzenia podstawowej instancji. Jeśli chc
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

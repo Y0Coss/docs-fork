@@ -1,7 +1,7 @@
 ---
 title: Cómo dar de baja sus servicios de OVHcloud
 excerpt: Cómo interrumpir las suscripciones a OVHcloud
-updated: 2024-12-23
+updated: 2025-04-28
 ---
 
 ## Objetivo
@@ -36,7 +36,7 @@ Para poder dar de baja el servicio, deberá estar **seguro** de que:
 ## Requisitos
 
 - Ser el "contacto administrador" del servicio que deba darse de baja (para más información, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts#definition)
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Tener acceso al [área de cliente de OVHcloud](/links/manager)
 - Tener servicios de OVHcloud activos (no suspendidos por impago)
 
 ## En la práctica
@@ -47,9 +47,9 @@ No obstante, existen **casos especiales**, que se explican en detalle [más adel
 
 ### Cómo dar de baja la suscripción <a name="terminate"></a>
 
-Para cancelar la suscripción al servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Mis soluciones y servicios`{.action}.
+Para cancelar la suscripción al servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
 
-![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
+![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
 A continuación, haga clic en el botón `...`{.action} a la derecha del servicio que desea dar de baja y, seguidamente, en `Dar de baja mi servicio`{.action}.
 
@@ -90,9 +90,9 @@ Cada servicio [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) puede el
 
 ![public cloud instance deleite](images/pci-deletion-en.png){.thumbnail}
 
-El Public Cloud de OVHcloud se basa en el principio de *pago por consumo* (para más información, consulte nuestra página de [información sobre el modo de facturación de Public Cloud](/pages/public_cloud/compute/analyze_billing)). Solo tendrá que pagar a final de mes por el tiempo de uso efectivo de los recursos.
+El Public Cloud de OVHcloud se basa en el principio de *pago por consumo* (para más información, consulte nuestra página de [información sobre el modo de facturación de Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). Solo tendrá que pagar a final de mes por el tiempo de uso efectivo de los recursos.
 
-También puede [consultar su consumo actual](/pages/public_cloud/compute/analyze_billing#consumo-actual) desde el área de cliente de OVHcloud y recibir una notificación por correo electrónico cuando la proyección del consumo supere un determinado umbral.
+También puede [consultar su consumo actual](/pages/public_cloud/public_cloud_cross_functional/analyze_billing#consumo-actual) desde el área de cliente de OVHcloud y recibir una notificación por correo electrónico cuando la proyección del consumo supere un determinado umbral.
 
 ## ¿Cómo cancelar la baja de la suscripción? <a name="cancel"></a>
 
@@ -101,7 +101,7 @@ También puede [consultar su consumo actual](/pages/public_cloud/compute/analyze
 > Puede anular una solicitud de baja hasta 24 horas antes de la fecha de finalización de la suscripción.
 >
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Mis soluciones y servicios`{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} a la derecha del servicio objeto de la solicitud de baja y, seguidamente, en `Cancelar la baja del servicio`{.action} 
 

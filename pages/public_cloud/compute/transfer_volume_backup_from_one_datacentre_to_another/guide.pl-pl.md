@@ -4,13 +4,9 @@ excerpt: "Dowiedz się, jak przenieść kopię zapasową wolumenu z jednego regi
 updated: 2024-01-11
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
->
-
 ## Wprowadzenie
 
-Może zaistnieć potrzeba przeniesienia dodatkowych wolumenów z jednego regionu OpenStack do innego, ponieważ jest dostępny nowy region lub chcesz przenieść z [OVHcloud Labs](https://labs.ovh.com/){.external} do [Public Cloud](https://www.ovh.com/pl/public-cloud){.external}.
+Może zaistnieć potrzeba przeniesienia dodatkowych wolumenów z jednego regionu OpenStack do innego, ponieważ jest dostępny nowy region lub chcesz przenieść z [OVHcloud Labs](https://labs.ovh.com/) do [Public Cloud](https://www.ovh.com/pl/public-cloud).
 
 **Dowiedz się, jak przenieść kopię zapasową wolumenu z jednego regionu OpenStack do innego.**
 
@@ -18,7 +14,7 @@ Może zaistnieć potrzeba przeniesienia dodatkowych wolumenów z jednego regionu
 
 Do przeniesienia będziesz potrzebował środowiska z:
 
-- CLI OpenStack. Zapoznaj się z przewodnikiem "[Jak przygotować środowisko do korzystania z API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)".
+- CLI OpenStack. Zapoznaj się z przewodnikiem "[Jak przygotować środowisko do korzystania z API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)".
 - Łączność z API OVHcloud OpenStack.
 - Dostępnego miejsca do magazynowania odpowiadającego rozmiarowi dysku woluminu (dla tymczasowego magazynu kopii zapasowych).
 
@@ -194,4 +190,6 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+[Pobieranie i przesyłanie kopii zapasowej instancji z jednego regionu OpenStack do innego](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
+
+Dołącz do [grona naszych użytkowników](/links/community).

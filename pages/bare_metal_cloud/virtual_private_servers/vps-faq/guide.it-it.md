@@ -56,7 +56,7 @@ Per effettuare questa operazione, scegli tra le nostre soluzioni VPS:
 
 L’utilizzo di un VPS richiede competenze di base in amministrazione di server. Queste nozioni sono essenziali per gestire il sistema operativo (Linux o Windows) installato sulla macchina e configurare le applicazioni. Come fare per utilizzare un VPS senza possedere le competenze necessarie? È possibile contattare uno dei nostri [partner](/links/partner). 
 
-Per usufruire di risorse garantite anche senza conoscenze specifiche nell'amministrazione di server, ti consigliamo di optare per i nostri [hosting Web Performance](/links/hosting-performance-offer).
+Per usufruire di risorse garantite anche senza conoscenze specifiche nell'amministrazione di server, ti consigliamo di optare per i nostri [hosting Web Performance](/links/web/hosting-performance-offer).
 
 ### Come connettermi al tuo VPS?
 

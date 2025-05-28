@@ -1,7 +1,7 @@
 ---
 title: Managing your Public Cloud instances
 excerpt: 'Find out how to manage your Public Cloud instances in the OVHcloud Control Panel'
-updated: 2024-02-20
+updated: 2025-04-28
 ---
 
 ## Objective
@@ -18,19 +18,19 @@ You can manage your Public Cloud instances in the [OVHcloud Control Panel](/link
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. 
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. 
 
 ### Using the management interface for instances
 
 Click on `Instances`{.action} the left-hand menu. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 This page lists all your Public Cloud instances and some of their properties:
 
 - The instance ID, needed for certain API calls
 - The location of the data centre i.e. the region of the instance
-- The instance model
+- The instance template
 - The image i.e. the OS installed on the instance
 - The IPv4 address of the instance
 - The private address currently attached to the instance
@@ -56,7 +56,7 @@ The new page displays a modified version of the [instance creation options](/pag
 - **Renaming the instance**: You can give a name to the instance for easier identification.
 - **Changing the image**: You can choose a different operating system for the instance. (Note that reinstalling an instance will delete all data stored on it.)
 - **Changing the template**: You can switch to a different instance model. Please refer to [this guide](/pages/public_cloud/compute/public-cloud-first-steps#modele) for more information about the options.
-- **Changing the billing type**: You can change the billing period of the instance from hourly to monthly. Please refer to [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) for detailed information).
+- **Changing the billing type**: You can change the billing period of the instance from hourly to monthly. Please refer to [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) for detailed information.
 
 #### Creating a backup of the instance
 
@@ -139,7 +139,7 @@ Consult our [Getting started guide](/pages/public_cloud/compute/public-cloud-fir
 
 [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 
-[Introducing Horizon](/pages/public_cloud/compute/introducing_horizon)
+[Introducing Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

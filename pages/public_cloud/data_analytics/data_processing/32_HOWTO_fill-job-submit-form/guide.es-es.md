@@ -1,8 +1,17 @@
 ---
 title: How to fill the job submit form in the Data Processing page from the OVHcloud Manager
 excerpt: Find out how to fill the job submit form from the Data Processing page in the OVHcloud Manager
-updated: 2020-03-06
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 
@@ -16,7 +25,7 @@ To read an introduction about Data Processing service you can visit [Data Proces
 
 - Access to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
 - An OVHcloud account 
-- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/compute/create_a_public_cloud_project){.external} for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project){.external} for details.)
 - Your application must be uploaded into a container in your Object Storage.
 - For the Spark engine, your application can either be :
   - a JAR file, if you're using Java or Scala

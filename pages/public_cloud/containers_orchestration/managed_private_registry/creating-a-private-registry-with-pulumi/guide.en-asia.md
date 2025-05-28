@@ -1,6 +1,6 @@
 ---
 title: Creating a private registry with Pulumi
-excerpt: 'Create an OVHcloud Managed Private Registry (Harbor) with Pulumi'
+excerpt: 'Create an OVHcloud Managed Private Registry (MPR) with Pulumi'
 updated: 2025-03-13
 ---
 
@@ -19,7 +19,7 @@ Pulumi offers an intuitive command line interface (CLI), to provision, update or
 
 ## Requirements
 
-- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
+- A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
 - Installing the [Pulumi CLI](https://www.pulumi.com/docs/install/){.external}
 - An account in [Pulumi](https://www.pulumi.com/)
 - A [Pulumi access token](https://app.pulumi.com/account/tokens)
@@ -106,7 +106,7 @@ Examples:
 - [C#](https://github.com/ovh/pulumi-ovh/tree/main/examples/kubernetes/ovh-csharp)
 - [Go](https://github.com/ovh/pulumi-ovh/tree/main/examples/kubernetes/ovh-go)
 
-### Deploy your Managed Private Registry (Harbor) in Go / Golang
+### Deploy your Managed Private Registry (MPR) in Go / Golang
 
 #### Pulumi project creation and initialization
 

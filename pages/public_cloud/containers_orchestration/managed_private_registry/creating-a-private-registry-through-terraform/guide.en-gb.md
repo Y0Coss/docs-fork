@@ -1,6 +1,6 @@
 ---
 title: Creating a private registry (Harbor) through Terraform
-excerpt: 'Creates an OVHcloud Managed Private Registry (Harbor) through Terraform'
+excerpt: 'Create an OVHcloud Managed Private Registry (MPR) through Terraform'
 kb: Public Cloud
 category_l1: Containers & Orchestration
 category_l2: Managed Private Registry
@@ -10,7 +10,7 @@ updated: 2023-03-14
 
 ## Objective
 
-Creating an OVHcloud Managed Private Registry (Harbor) through the OVHcloud Control Panel is cool but do you know you can deploy a private registry programmatically, with Terraform?
+Creating an OVHcloud Managed Private Registry (MPR) through the OVHcloud Control Panel is cool but do you know you can deploy a private registry programmatically, with Terraform?
 
 ## Terraform
 
@@ -21,7 +21,7 @@ If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat
 
 ## Requirements
 
-- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
+- A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
 
 ## Before you begin

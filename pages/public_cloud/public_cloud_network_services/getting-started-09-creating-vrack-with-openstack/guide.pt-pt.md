@@ -12,15 +12,15 @@ O [vRack](/links/network/vrack) é uma rede privada que lhe permite configurar o
 
 ## Requisitos
 
-- Dispor de um [projeto Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project)
+- Dispor de um [projeto Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
-- Um [utilizador OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (opcional)
+- Um [utilizador OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (opcional)
 - Conhecimentos básicos de rede
 
 Antes de começar, certifique-se de que lê estes guias para configurar corretamente o seu ambiente OpenStack:
 
-- [Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
-- [Carregar as variáveis de ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
+- [Preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+- [Carregar as variáveis de ambiente OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 
 ## Instruções
 
@@ -50,18 +50,18 @@ Antes de começar, certifique-se de que lê estes guias para configurar corretam
 #### A partir da Área de Cliente OVHcloud
 
 > [!primary]
-> Isto não se aplica aos projetos recém-criados que são agora entregues automaticamente com um vRack. Para visualizar o vRack após a criação do projeto, aceda ao menu `Bare Metal Cloud`{.action} e clique em `Network`{.action} no separador à esquerda. Clique em `Rede privada vRack`{.action} para consultar o(s) vRack(s).
+> Isto não se aplica aos projetos recém-criados que são agora entregues automaticamente com um vRack. Para visualizar o vRack após a criação do projeto, aceda ao menu `Network`{.action} no separador à esquerda. Clique em `Rede privada vRack`{.action} para consultar o(s) vRack(s).
 >
 
 Se tem um projeto mais antigo e não possui vRack, deve encomendar um. Este produto é gratuito e a ativação é realizada em poucos minutos.
 
-Aceda ao menu `Bare Metal Cloud`{.action} e clique no botão `Encomendar`{.action}. Neste menu, clique na opção `vRack`{.action}.
+No menu à esquerda do ecrã, clique no botão `Adicionar um serviço`{.action} (ícone do carrinho de compras). Utilize o filtro no topo da página ou desloque-se para baixo para encontrar o serviço `vRack`{.action}.
 
-![Encomendar o vrack](images/ordering_vrack_2024.png){.thumbnail}
+![Order vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
 Será redirecionado para outra página para validar a encomenda, a operação demorará alguns minutos.
 
-Depois de ativado, o serviço será apresentado na Área de Cliente, na secção `Bare Metal Cloud`{.action} > `Network`{.action} > `Rede Privada vRack`{.action}. Sob a designação « pn-xxxxx ».
+Depois de ativado, o serviço será apresentado na Área de Cliente, na secção `Network`{.action} > `Rede Privada vRack`{.action}. Sob a designação « pn-xxxxx ».
 
 Na lista dos serviços elegíveis, selecione o projeto que deseja adicionar ao vRack e clique no botão `Adicionar`{.action}.
 

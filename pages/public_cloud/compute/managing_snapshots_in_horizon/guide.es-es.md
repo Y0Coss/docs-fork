@@ -18,7 +18,7 @@ Para ello, puede crear instantáneas (snapshot) de sus instancias, que podrá ut
 ## Requisitos
 
 - Haber [creado una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) en su cuenta de OVHcloud
-- [Conectarse a Horizon](/pages/public_cloud/compute/introducing_horizon)
+- [Conectarse a Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## Procedimiento
 
@@ -64,7 +64,7 @@ Para completar la restauración del snapshot, es necesario seleccionar una serie
 >> Seleccione el *flavor* deseado. Asegúrese de seleccionar una versión con recursos iguales o mayores que el tamaño de la imagen (snapshot).<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
-> **Red (*Network*)**
+> **Red (*Networks*)**
 >>
 >> Seleccione una red pública (Ext-Net) para asociarla a la instancia.<br><br>
 >>![network](images/restoresnapshot3.png){.thumbnail}<br>
@@ -87,6 +87,6 @@ Haga clic en la flecha desplegable situada junto al snapshot que desea eliminar 
 
 ## Más información
   
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).
 	
 

@@ -1,24 +1,24 @@
 ---
 title: 'Adicionar um crédito cloud'
 excerpt: 'Saiba como adicionar crédito ou vouchers ao seu projeto Public Cloud'
-updated: 2022-02-04
+updated: 2025-04-28
 ---
 
 ## Objetivo
 
-A opção de "crédito cloud" permite-lhe atribuir um montante específico ao seu projeto Public Cloud, que servirá de método de pagamento predefinido para a [facturação do projecto](/pages/public_cloud/compute/analyze_billing).<br>
+A opção de "crédito cloud" permite-lhe atribuir um montante específico ao seu projeto Public Cloud, que servirá de método de pagamento predefinido para a [facturação do projecto](/pages/public_cloud/public_cloud_cross_functional/analyze_billing).<br>
 Isto significa que este crédito cloud é debitado em primeiro lugar e que qualquer dívida será depois paga através dos outros meios de pagamento disponíveis. Não hesite em consultar os [guias de faturação do Public Cloud](/products/account-and-service-management-managing-billing-payments-and-services) para saber mais sobre o assumpto.
 
 **Esta guia explica-lhe como adicionar crédito na sua conta Public Cloud através de um voucher ou através da geração de uma nota de encomenda.**
 
 ## Requisitos
 
-- Um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Um projeto [Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. Abra `Credit and Vouchers`{.action} no menu à esquerda.
+Aceda à [Área de Cliente OVHcloud](/links/manager), aceda a secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. Abra `Créditos e Vouchers`{.action} no menu à esquerda, em **Parâmetros**
 
 > [!warning]
 >

@@ -1,24 +1,24 @@
 ---
 title: 'Aggiungi credito Cloud al tuo progetto'
 excerpt: 'Come aggiungere credito o voucher al tuo progetto Public Cloud'
-updated: 2022-02-04
+updated: 2025-04-28
 ---
 
 ## Obiettivo
 
-L'opzione di "credito Cloud" ti permette di assegnare un importo specifico al tuo progetto Public Cloud, che servirà come metodo di pagamento predefinito per la [fatturazione del progetto](/pages/public_cloud/compute/analyze_billing).<br>
+L'opzione di "credito Cloud" ti permette di assegnare un importo specifico al tuo progetto Public Cloud, che servirà come metodo di pagamento predefinito per la [fatturazione del progetto](/pages/public_cloud/public_cloud_cross_functional/analyze_billing).<br>
 Questo significa che il credito Cloud viene addebitato per primo e che il debito viene successivamente saldato con gli altri metodi di pagamento disponibili. Per saperne di più, consulta le [guide alla fatturazione del Public Cloud](/products/account-and-service-management-managing-billing-payments-and-services).
 
 **Questa guida ti mostra come aggiungere credito al tuo account Public Cloud tramite l’utilizzo di un voucher oppure generando un buono d’ordine.**
 
 ## Prerequisiti
 
-- Un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Un progetto [Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Apri `Credit and Vouchers`{.action} nel menu a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Apri `Crediti e voucher`{.action} nel menu a sinistra sotto **Impostazioni**.
 
 > [!warning]
 >

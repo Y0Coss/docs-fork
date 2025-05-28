@@ -12,7 +12,7 @@ Plesk is an easy-to-use hosting control panel. You can install and use it on OVH
 
 > [!warning]
 > 
-> OVHcloud provides services which you are responsible for.  In fact, as we do not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily.
+> OVHcloud provides services which you are responsible for. In fact, as we do not have administrative access to these machines, we are not administrators and we cannot provide you with support. This means that it is up to you to manage the software and security daily.
 >
 > We have provided you with this guide in order to help you with common tasks. However, we advise contacting a specialist provider if you experience any difficulties or doubts about administration, usage or server security. Feel free to visit our [community forum](/links/community) to interact with other users.
 >
@@ -32,9 +32,7 @@ Plesk can be installed easily via an SSH connection. To do this, download and la
 >
 > Depending on your instance's OS, the sudo command alone may not be sufficient. If you encounter an error, switch to superuser mode before starting the installation:
 >
-> ```bash
-> sudo su
-> ```
+> <pre class="highlight language-console"><code class="language-console">sudo su</code></pre>
 >
 
 - **For a default, non-custom Plesk installation**:

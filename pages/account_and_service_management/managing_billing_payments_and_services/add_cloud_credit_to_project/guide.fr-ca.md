@@ -1,24 +1,24 @@
 ---
 title: 'Ajouter du crédit cloud'
 excerpt: 'Découvrez comment ajouter du crédit sur votre projet Public Cloud'
-updated: 2022-02-04
+updated: 2025-04-28
 ---
 
 ## Objectif
 
-L'option de « crédit cloud » vous permet d'allouer un montant spécifique à votre projet Public Cloud, qui servira de moyen de paiement par défaut pour la [facturation de votre projet](/pages/public_cloud/compute/analyze_billing).<br>
+L'option de « crédit cloud » vous permet d'allouer un montant spécifique à votre projet Public Cloud, qui servira de moyen de paiement par défaut pour la [facturation de votre projet](/pages/public_cloud/public_cloud_cross_functional/analyze_billing).<br>
 Cela signifie que ce crédit cloud est débité en premier et que toute dette sera ensuite payée par les autres moyens de paiement disponibles. N’hésitez pas à consulter les [guides de facturation de Public Cloud](/products/account-and-service-management-managing-billing-payments-and-services) pour en savoir plus sur le sujet.
 
 **Ce guide vous explique comment ajouter du crédit sur votre compte Public Cloud à l’aide d’un voucher ou via la génération d’un bon de commande.**
 
 ## Prérequis
 
-- Un projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Ouvrez `Credit and Vouchers`{.action} dans le menu de gauche.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Ouvrez `Crédits & Vouchers`{.action} dans le menu de gauche sous **Paramètres**.
 
 > [!warning]
 >

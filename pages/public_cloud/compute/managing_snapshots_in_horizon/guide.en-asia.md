@@ -12,7 +12,7 @@ During your activity, you will probably need to back up your data, configuration
 ## Requirements
 
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) 
-- [Access to the Horizon interface](/pages/public_cloud/compute/introducing_horizon)
+- [Access to the Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## Instructions
 
@@ -28,7 +28,7 @@ Next, click on the `Compute`{.action} menu on the left side and select `Instance
 
 In the pop-up window, enter the required information:
 
-Snapshot Name: Set a name for the snapshot and click on `Create Snapshot`{.action}.
+* Snapshot Name: Set a name for the snapshot and click on `Create Snapshot`{.action}.
 
 ![Create snapshot](images/createsnapshot2.png){.thumbnail}
 
@@ -58,7 +58,7 @@ In the pop-up window, a number of options need to be selected to complete the re
 >> Select the flavor you want. Make sure you select a flavor whose resources are equal to or greater than the size of the image (snapshot).<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
-> **Network**
+> **Networks**
 >>
 >> Select a public network (Ext-Net) to attach to the instance.<br><br>
 >>![network](images/restoresnapshot3.png){.thumbnail}<br>

@@ -18,7 +18,7 @@ Możliwe jest tworzenie zrzutów instancji, które będą mogły zostać wykorzy
 ## Wymagania początkowe
 
 - Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na Twoim koncie OVHcloud
-- [Dostęp do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
+- [Dostęp do interfejsu Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## W praktyce
 
@@ -64,7 +64,7 @@ W oknie podręcznym musi być zaznaczona pewna liczba opcji, aby zakończyć prz
 >> Wybierz odpowiedni *flavor*. Upewnij się, że wybierasz wersję z zasobami równymi lub większymi niż rozmiar obrazu (snapshot).<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
-> **Sieć (*Network*)**
+> **Sieć (*Networks*)**
 >>
 >> Wybierz sieć publiczną (Ext-Net), którą chcesz przypisać do instancji.<br><br>
 >>![network](images/restoresnapshot3.png){.thumbnail}<br>
@@ -87,5 +87,5 @@ Następnie kliknij rozwijaną strzałkę obok snapshota, który chcesz usunąć 
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).
 

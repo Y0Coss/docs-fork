@@ -1,8 +1,17 @@
 ---
 title: Python - Analyzing most used words in lyrics with Apache Spark
 excerpt: Couting occurences of words in a file is a basic example about how using Apache Spark. Let's find out how !
-updated: 2021-01-20
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 This guide  gives you a basic example about using Apache Spark and OVHcloud Data Processing.
@@ -18,7 +27,7 @@ At the end of the tutorial, you will succeed to read CSV file from OVHcloud Obje
 ## Requirements
 - Access to the [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 - An OVHcloud account
-- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) for details.)
 - Data Processing activated (see [How to activate the Data Processing](/pages/public_cloud/data_analytics/data_processing/30_HOWTO_activate_project){.external} for details.)
 
 ## Step 1: Download dataset

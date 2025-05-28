@@ -1,7 +1,7 @@
 ---
 title: 'Configuring vRack for Public Cloud'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances'
-updated: 2024-12-23
+updated: 2025-04-28
 ---
 
 ## Objective
@@ -12,9 +12,9 @@ The OVHcloud [vRack](/links/network/vrack) is a private network solution that en
 
 ## Requirements
 
-- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
+- A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional)
+- An [OpenStack user](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 
 ## Interfaces
@@ -39,7 +39,7 @@ The [Horizon](https://horizon.cloud.ovh.net/auth/login/) interface (independent 
 
 This multifunctional, technical interface allows you to manage almost all OpenStack actions. It is one of the necessary interfaces if you need to manage more than two VLANS, add private network interfaces to your instances, manage custom images, etc.
 
-Please refer to [this guide](/pages/public_cloud/compute/introducing_horizon) to familiarise yourself with Horizon.
+Please refer to [this guide](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) to familiarise yourself with Horizon.
 
 > [!primary]
 > Horizon functions zone-specific, therefore you need to remember to choose your logical (geographic) work zone at the top left of your interface (GRA5, SBG3, BHS1, etc.).
@@ -69,8 +69,8 @@ With the OpenStack API, you can also easily automate this management through you
 
 To know more about the usage of the OpenStack API, please consult these guides:
 
-- [Preparing an environment for using the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
+- [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 
 You will then be able to use the APIs dedicated to OpenStack as needed:
 
@@ -102,18 +102,18 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 #### In the OVHcloud Control Panel
 
 > [!primary]
-> This does not apply to newly created projects which are now automatically delivered with a vRack. To view the vRack once the project has been created, go the `Bare Metal Cloud`{.action} menu and click on `Network`{.action} in the left tab. Click on `vRack private network`{.action} to view the vRack(s).
+> This does not apply to newly created projects which are now automatically delivered with a vRack. To view the vRack once the project has been created, go the `Network`{.action} section and click on `vRack private network`{.action} to view the vRack(s).
 >
 
 If you have an older project and don't have a vRack, you need to order one. Using the vRack itself is free of charge and it can be delivered within a few minutes.
 
-Go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. Under this menu, click on `vRack`{.action}.
+In the left-hand menu, click the button `Add a service`{.action} (shopping cart icon). Use the filter at the top of the page or scroll down to find the service `vRack`{.action}.
 
-![Order vrack](images/ordering_vrack_2024.png){.thumbnail}
+![Order vrack](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
 You will be redirected to another page to validate the order, it will take a few minutes for the vRack to be setup in your account.
 
-Once the service is active, you will find it in your Control Panel in the `Bare Metal Cloud`{.action} section > `Network`{.action} > `vRack private network`{.action}. Labelled "pn-xxxxxx".
+Once the service is active, you will find it in your Control Panel in the `Nerwork`{.action} section > `vRack private network`{.action}. Labelled "pn-xxxxxx".
 
 From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
 

@@ -15,7 +15,7 @@ While our app is running, it is likely that we will have to **update our Docker 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
-- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)
+- A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on your local computer or a virtual machine
 - The [OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)
@@ -34,7 +34,7 @@ When updating a Docker image, we have two options:
 
 > [!primary]
 >
-> In this tutorial, we will assume that you have already an app which is running on an Docker image, and an updated version of this image. The two previous possibilities (existing tag and new one) will be explained.
+> In this tutorial, we will assume that you already have an app that is running on a Docker image, and an updated version of this image. The two previous possibilities (existing tag and new one) will be explained.
 >
 
 ### Updating our app's image

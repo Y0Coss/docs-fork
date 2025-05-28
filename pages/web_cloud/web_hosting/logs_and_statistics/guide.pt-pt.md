@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Consultar as estatísticas e logs de um website"
 excerpt: "Saiba como consultar as estatísticas e os logs do seu website graças à sua oferta de alojamento web"
-updated: 2025-02-20
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -12,8 +12,8 @@ O acesso aos logs e às estatísticas do seu website está incluído na sua ofer
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web](/links/web/hosting){.external} compatível.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter um serviço de [alojamento web](/links/web/hosting) compatível.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -54,7 +54,7 @@ O campo "Period selection", no canto superior direito, permite selecionar um per
 
 ### Logs do website <a name="website-logs"></a>
 
-> [primary]
+> [!primary]
 >
 > Não poderemos acompanhá-lo na interpretação dos logs do seu alojamento web, uma vez que se trata apenas de um desenvolvimento web e não de um alojamento web.
 >
@@ -74,6 +74,10 @@ Tem à sua disposição diferentes tipos de logs:
 - **Logs out** : contém o histórico dos diferentes pedidos externos (ligações de saída TCP) realizados a partir do seu alojamento web em infraestruturas remotas.
 - **Logs SSH** : estes logs indicam as diferentes ligações/comandos realizados com o protocolo SSH.
 - **Logs CRON** : encontre aqui os resultados da execução das suas tarefas planificadas [(CRON)](/pages/web_cloud/web_hosting/cron_tasks) no seu alojamento web.
+
+> [!success]
+>
+> Para consultar as estatísticas e/ou os logs do CDN, consulte o nosso guia dedicado: "[Alojamento Web - Consultar as estatísticas e logs CDN](/pages/web_cloud/web_hosting/cdn_statistics_and_logs)".
 
 ### Estatísticas da infraestrutura <a name="infra-stats"></a>
 
@@ -126,8 +130,8 @@ Na nova página, obtenha o URL existente na barra de endereço do browser.
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

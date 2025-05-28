@@ -1,8 +1,17 @@
 ---
 title: How to activate the Data Processing service for your cloud project
 excerpt: Find out how to activate the Data Processing service for your cloud project and what are its implications 
-updated: 2020-03-06
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective
 
@@ -15,7 +24,7 @@ To read an introduction about Data Processing service you can visit [Data Proces
 ## Requirements 
 - Access to [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 - An OVHcloud account 
-- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/compute/create_a_public_cloud_project){.external} for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project){.external} for details.)
 
 ## How to activate the Data Processing service
 
@@ -47,8 +56,8 @@ This means that, for now, the only way to remove the Openstack Keystone Trust cr
 We therefore recommend you to use a dedicated cloud project to minimize impacts if you decided to stop using the Data Processing service in the future.
 To learn more about cloud projects, please visit these pages: 
 
-- [How to create a cloud project in OVHcloud account](/pages/public_cloud/compute/create_a_public_cloud_project)
-- [How to delete a cloud project in OVHcloud account](/pages/public_cloud/compute/delete_a_project)
+- [How to create a cloud project in OVHcloud account](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
+- [How to delete a cloud project in OVHcloud account](/pages/public_cloud/public_cloud_cross_functional/delete_a_project)
 
 ## Go further
 

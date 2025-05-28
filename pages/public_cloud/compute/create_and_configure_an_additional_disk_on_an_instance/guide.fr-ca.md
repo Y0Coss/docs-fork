@@ -1,7 +1,7 @@
 ---
 title: Créer et configurer un disque supplementaire sur une instance
 excerpt: Découvrez comment attacher un nouveau volume à votre instance Public Cloud
-updated: 2025-03-21
+updated: 2025-04-28
 ---
 
 <style>
@@ -26,7 +26,7 @@ Cela peut être utile dans les cas suivants :
 - Si vous souhaitez augmenter votre capacité de stockage sans avoir à changer le modèle d’instance.
 - Si vous souhaitez disposer d’un espace de stockage hautement disponible et performant.
 - Si vous souhaitez déplacer votre stockage et vos données vers une autre instance.
-- Si vous souhaitez préparer l'environnement pour utiliser [Terraform](/pages/public_cloud/compute/how_to_use_terraform), vous devez préparer l'environnement.
+- Si vous souhaitez préparer l'environnement pour utiliser [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), vous devez préparer l'environnement.
 
 **Découvrez comment créer un disque supplémentaire et le configurer sur votre instance.**
 
@@ -35,7 +35,7 @@ Cela peut être utile dans les cas suivants :
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d'une instance [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external} dans votre compte OVHcloud
 - Avoir un accès administrateur (sudo) à votre instance via SSH
-- Préparer l'environnement si vous souhaitez utiliser [Terraform](/pages/public_cloud/compute/how_to_use_terraform)
+- Préparer l'environnement si vous souhaitez utiliser [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform)
 
 > [!warning]
 > Cette fonctionnalité n'est actuellement pas disponible pour les instances Metal.
@@ -83,7 +83,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 
 > [!tabs]
 > **Via l'espace client OVHcloud**
->> Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Ensuite, ouvrez `Block Storage`{.action} dans le menu de gauche.
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Ensuite, ouvrez `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
 >>
 >> Dans cette partie, cliquez sur le bouton `Créer un volume`{.action}.
 >>
@@ -552,7 +552,7 @@ Pour finir, nous allons détacher le volume de l'instance :
 
 > [!tabs]
 > **Via l'espace client OVHcloud**
->> Rendez-vous dans la rubrique `Public Cloud`{.action} de votre espace client OVHcloud et cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage**.
+>> Rendez-vous dans la rubrique `Public Cloud`{.action} de votre espace client OVHcloud et cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
 >> Cliquez sur le bouton `...`{.action} à côté du volume correspondant et sélectionnez `Détacher de l'instance`{.action}.
 >>
 >> ![detach disk](images/detachinstance.png){.thumbnail}

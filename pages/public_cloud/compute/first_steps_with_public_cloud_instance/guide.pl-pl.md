@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie instancjami Public Cloud'
 excerpt: 'Dowiedz się, jak zarządzać instancjami Public Cloud w Panelu klienta OVHcloud'
-updated: 2024-02-20
+updated: 2025-04-28
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-02-20
 
 ## Wprowadzenie
 
-Możesz zarządzać instancjami Public Cloud w [Panelu client](/links/manager).
+Możesz zarządzać instancjami Public Cloud w [Panelu klienta OVHcloud](/links/manager).
 
 **Niniejszy przewodnik opisuje działania dostępne w Panelu klienta OVHcloud dla instancji Public Cloud.**
 
@@ -18,17 +18,17 @@ Możesz zarządzać instancjami Public Cloud w [Panelu client](/links/manager).
 
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
 - Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) w Twoim projekcie
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager) i otwórz swój projekt `Public Cloud`{.action}. 
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
 
 ### Korzystanie z interfejsu zarządzania instancjami
 
-Kliknij `Instances`{.action} w menu po lewej stronie. 
+Kliknij `Instancje`{.action} w menu po lewej stronie. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 Strona ta zawiera listę wszystkich instancji Public Cloud i niektórych ich właściwości:
 
@@ -129,7 +129,7 @@ Potwierdź zlecenie usunięcia w oknie, które się wyświetli.
 
 ### Dostęp do konsoli VNC <a name="accessvnc"></a>
 
-Kliknij `Instances`{.action} w menu po lewej stronie. Na stronie z interfejsem zarządzania instancjami kliknij nazwę instancji w tabeli.
+Kliknij `Instancje`{.action} w menu po lewej stronie. Na stronie z interfejsem zarządzania instancjami kliknij nazwę instancji w tabeli.
 
 Następnie kliknij kartę `Konsola VNC`{.action}.
 
@@ -143,8 +143,8 @@ Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Tworzeni
 
 [Tworzenie pierwszej instancji Public Cloud i łączenie się z nią](/pages/public_cloud/compute/public-cloud-first-steps)
 
-[Prezentacja programu "Horyzont"](/pages/public_cloud/compute/introducing_horizon)
+[Prezentacja Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

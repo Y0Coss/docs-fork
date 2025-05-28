@@ -1,7 +1,7 @@
 ---
 title: Comment résilier mes services OVHcloud
 excerpt: Découvrez comment interrompre vos abonnements OVHcloud depuis l'espace client
-updated: 2024-12-23
+updated: 2025-04-28
 ---
 
 ## Objectif
@@ -36,7 +36,7 @@ Avant de procéder à la résiliation d'un service, vous devez donc être **cert
 ## Prérequis
 
 - Etre le « contact administrateur » du service à résilier (pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition))
-- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ;
+- Avoir accès à votre [espace client OVHcloud](/links/manager)
 - Posséder des services OVHcloud actifs (non suspendus pour un défaut de paiement)
 
 ## En pratique
@@ -47,9 +47,9 @@ Des **cas particuliers** existent néanmoins et sont détaillés [plus bas](#spe
 
 ### Comment résilier votre abonnement ? <a name="terminate"></a>
 
-Pour résilier l'abonnement à votre service, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Mes offres & services`{.action}.
+Pour résilier l'abonnement à votre service, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
 
-![produits et services](/pages/assets/screens/control_panel/product-selection/right-column/products-services-fr.png){.thumbnail}
+![produits et services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier mon service`{.action}.
 
@@ -141,9 +141,9 @@ Sélectionnez un service à gauche, cliquez sur le bouton `...`{.action} à droi
 
 ![public cloud instance deletion](images/pci-deletion-fr.png){.thumbnail}
 
-Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (retrouvez plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/compute/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
+Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (retrouvez plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/public_cloud_cross_functional/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
 
-Vous pouvez également [consulter votre consommation actuelle](/pages/public_cloud/compute/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
+Vous pouvez également [consulter votre consommation actuelle](/pages/public_cloud/public_cloud_cross_functional/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
 
 ## Comment annuler la résiliation de votre abonnement ? <a name="cancel"></a>
 
@@ -152,7 +152,7 @@ Vous pouvez également [consulter votre consommation actuelle](/pages/public_clo
 > Vous pouvez annuler une demande de résiliation jusqu'à 24 heures avant la date de fin d'abonnement.
 >
 
-Pour annuler une demande de résiliation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Mes offres & services`{.action}.
+Pour annuler une demande de résiliation, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service faisant l'objet d'une demande de résiliation puis sur `Annuler la résiliation du service`{.action} 
 

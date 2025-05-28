@@ -16,8 +16,8 @@ In alcuni casi potrebbe essere necessario creare istanze direttamente dall’int
 
 ## Prerequisiti
 
-- Disporre di un progetto [Public Cloud OVHcloud](/pages/public_cloud/compute/create_a_public_cloud_project)
-- [Essere connesso all’interfaccia Horizon](/pages/public_cloud/compute/introducing_horizon)
+- Disporre di un progetto [Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
+- [Essere connesso all’interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## Procedura
 
@@ -25,7 +25,7 @@ In alcuni casi potrebbe essere necessario creare istanze direttamente dall’int
 
 Prima di creare un’istanza, consigliamo di creare una rete privata. Successivamente sarà possibile associare la rete alla propria istanza.
 
-Per iniziare, accedi all’interfaccia Horizon. Per maggiori informazioni, consulta la [nostra guida](/pages/public_cloud/compute/introducing_horizon).
+Per iniziare, accedi all’interfaccia Horizon. Per maggiori informazioni, consulta la [nostra guida](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon).
 
 Clicca su `Network`{.action} nel menu a sinistra e poi su `Networks`{.action}.
 
@@ -121,7 +121,7 @@ A questo punto completa i campi con le informazioni richieste aiutandoti, se nec
 
 Per maggiori informazioni, consulta [questa guida](/pages/public_cloud/compute/setup_security_group).
 
-**Key Pairs (Coppia di chiavi)**
+**Key Pair (Coppia di chiavi)**
 
 > [!warning] 
 >
@@ -178,4 +178,4 @@ Attenzione: queste opzioni non sono obbligatorie per la creazione di un’istanz
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

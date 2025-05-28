@@ -18,7 +18,7 @@ Creando degli snapshot, puoi effettuare una copia della tua istanza o ripristina
 ## Prerequisiti
 
 - Aver [creato un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) nel tuo account OVHcloud
-- [Accedere all’interfaccia Horizon](/pages/public_cloud/compute/introducing_horizon)
+- [Accedere all’interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## Procedura
 
@@ -64,7 +64,7 @@ Per completare il ripristino dello Snapshot, nella finestra pop-up è necessario
 >> Selezionate il *flavor* desiderato. Assicurati di selezionare una versione con risorse uguali o superiori alle dimensioni dell'immagine (snapshot).<br><br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
-> **Rete (*Network*)**
+> **Rete (*Networks*)**
 >>
 >> Seleziona una rete pubblica (Ext-Net) da associare all’istanza.<br><br>
 >>![network](images/restoresnapshot3.png){.thumbnail}<br>
@@ -87,4 +87,4 @@ Clicca sulla freccia a tendina accanto allo Snapshot da eliminare e clicca su `D
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

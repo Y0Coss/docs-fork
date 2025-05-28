@@ -10,13 +10,13 @@ updated: 2024-01-11
 
 ## Objetivo
 
-Poderá ter de migrar volumes adicionais de uma região OpenStack para outra, quer seja porque uma nova região está disponível, quer seja porque deseja migrar de [OVHcloud Labs](https://labs.ovh.com/){.external} para [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/compute/){.external}.
+Poderá ter de migrar volumes adicionais de uma região OpenStack para outra, quer seja porque uma nova região está disponível, quer seja porque deseja migrar de [OVHcloud Labs](https://labs.ovh.com/) para [Public Cloud](/links/public-cloud/compute).
 
 **Descubra como transferir um backup de volume de uma região do OpenStack para outra..**
 
 ## Requisitos
 
-- CLI OpenStack. Consulte o nosso guia « [Como preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) ».
+- CLI OpenStack. Consulte o nosso guia « [Como preparar o ambiente para utilizar a API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) ».
 - A Conectividade às API OVHcloud OpenStack.
 - Do espaço de armazenamento disponível correspondente ao tamanho do disco do volume (para o armazenamento de backup temporário).
 
@@ -192,6 +192,6 @@ $ openstack volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c439
 
 ## Quer saber mais?
 
-[Transferir a cópia de segurança de uma instância de uma região OpenStack para outra](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another){.external}.
+[Descarregar e transferir a cópia de segurança de uma instância de uma região OpenStack para outra](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
  
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

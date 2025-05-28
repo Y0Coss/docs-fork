@@ -18,7 +18,7 @@ Para tal, é possível que crie snapshots das suas instâncias, podendo utilizar
 ## Requisitos
 
 - Ter [criado uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na sua conta OVHcloud
-- [Ter acesso à interface Horizon](/pages/public_cloud/compute/introducing_horizon)
+- [Ter acesso à interface Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## Instruções
 
@@ -64,7 +64,7 @@ Na janela pop-up, é necessário selecionar várias opções para concluir o res
 >> Selecione o *flavor* desejado. Certifique-se de que seleciona uma versão com recursos iguais ou superiores ao tamanho da imagem (snapshot).<br><br>>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
-> **Rede (*Network*)**
+> **Rede (*Networks*)**
 >>
 >> Selecione uma rede pública (Ext-Net) a associar à instância.<br><br>
 >>![network](images/restoresnapshot3.png){.thumbnail}<br>
@@ -87,4 +87,4 @@ A seguir, clique na seta pendente junto da snapshot a eliminar e clique em `Dele
 
 ## Saiba mais
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

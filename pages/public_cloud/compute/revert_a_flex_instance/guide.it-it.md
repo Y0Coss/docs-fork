@@ -17,16 +17,16 @@ Un'istanza *flex* è un'istanza a disco unico (50 GB) che offre un processo più
 ## Prerequisiti
 
 - Disporre di un'[istanza Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#configuration) di tipo *flex*
-- [Crea un accesso all'interfaccia Horizon](/pages/public_cloud/compute/introducing_horizon)
+- [Crea un accesso all'interfaccia Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 ## Procedura
 
 > [!warning] 
 > - Se si passa da un'istanza flex a un'istanza classica con più risorse, questo viene considerato un aggiornamento. In questo caso, vi verrà addebitata la differenza. Al termine del periodo di fatturazione, riceverete due fatture.
 >
-> Se si passa da un'istanza flex a un'istanza classica con meno risorse, questo viene considerato un downgrade. In questo caso, non verrà emessa alcuna fattura.
+> - Se si passa da un'istanza flex a un'istanza classica con meno risorse, questo viene considerato un downgrade. In questo caso, non verrà emessa alcuna fattura.
 >
-> Se passate da un'istanza flex a un'istanza classica con le stesse risorse, non riceverete alcuna fattura.
+> - Se passate da un'istanza flex a un'istanza classica con le stesse risorse, non riceverete alcuna fattura.
 >
 
 Accedi all'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/) e assicurati di essere nella regione corretta. Puoi verificarlo nell'angolo in alto a sinistra.

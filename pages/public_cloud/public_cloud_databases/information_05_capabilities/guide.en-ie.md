@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases
-updated: 2024-06-12
+updated: 2025-04-15
 ---
 
 ## Public Cloud Databases
@@ -30,15 +30,10 @@ See our [PostgreSQL Capabilities and limitations](/pages/public_cloud/public_clo
 MongoDB is a fully managed and scalable document-oriented database management system which does not require a predefined data schema.<br>
 See our [MongoDB Capabilities and limitations](/pages/public_cloud/public_cloud_databases/mongodb_01_concept_capabilities) guide.
 
-### Caching
+### Caching/Valkey
 
-Caching is fully managed in-memory NoSQL database based on the Redis® open source software. It helps you store and access data quickly and efficiently.<br>
-See our [Caching Capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) guide.
-
-### M3db
-
-M3db is a fully managed distributed time series database. It's scalable and offers high-availability, which is ideal for your monitoring environment and time series applications.<br>
-See our [M3db Capabilities and limitations](/pages/public_cloud/public_cloud_databases/m3db_01_capabilities) guide.
+Caching/Valkey is fully managed in-memory NoSQL database based on the Redis® open source software. It helps you store and access data quickly and efficiently.<br>
+See our [Caching/Valkey Capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) guide.
 
 ### Cassandra
 
@@ -47,15 +42,15 @@ See our [Cassandra Capabilities and limitations](/pages/public_cloud/public_clou
 
 ## Feature Availability
 
-| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Caching | M3db | Cassandra |
-|--------------------------------------------------------------------------------------------------------------|-------|------------|------------------|-------|------------|-----------|
-| End-to-end security ([more information](/pages/public_cloud/public_cloud_databases/information_01_security_overview))         | ✓     | ✓          | ✓                | ✓     | ✓          | ✓         |
-| Automatic updates and one click upgrade                                                                      | ✓     | ✓          | ✓                | ✓     | ✓          | ✓         |
-| Read-only nodes                                                                                              | ✓     | ✓          | ✓                |       |            |           |
-| Point in Time Recovery                                                                                       | ✓     | ✓          | ✓ <sup>(1)</sup> |       |            |           |
-| Database forking                                                                                             | ✓     | ✓          | ✓                | ✓     | ✓          | ✓         |
-| Terraform Provider support ([more information](https://registry.terraform.io/providers/ovh/ovh/latest/docs)) | ✓     | ✓          | ✓                | ✓     | ✓          | ✓         |
-| Private network connectivity (vRack)                                                                         | ✓     | ✓          | ✓                | ✓     | ✓          | ✓         |
+| Feature                                                                                                      | MySQL | PostgreSQL | MongoDB          | Caching/Valkey | Cassandra |
+|--------------------------------------------------------------------------------------------------------------|-------|------------|------------------|-------|-----------|
+| End-to-end security ([more information](/pages/public_cloud/public_cloud_databases/information_01_security_overview))         | ✓     | ✓          | ✓                | ✓     | ✓         |
+| Automatic updates and one click upgrade                                                                      | ✓     | ✓          | ✓                | ✓     | ✓         |
+| Read-only nodes                                                                                              | ✓     | ✓          | ✓                |       |           |
+| Point in Time Recovery                                                                                       | ✓     | ✓          | ✓ <sup>(1)</sup> |       |           |
+| Database forking                                                                                             | ✓     | ✓          | ✓                | ✓     | ✓         |
+| Terraform Provider support ([more information](https://registry.terraform.io/providers/ovh/ovh/latest/docs)) | ✓     | ✓          | ✓                | ✓     | ✓         |
+| Private network connectivity (vRack)                                                                         | ✓     | ✓          | ✓                | ✓     | ✓         |
 
 (1) depends on the plan
 

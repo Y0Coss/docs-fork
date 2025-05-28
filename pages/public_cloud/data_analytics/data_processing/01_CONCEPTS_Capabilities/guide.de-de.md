@@ -1,8 +1,17 @@
 ---
 title: Data Processing Capabilities and Limitations
 excerpt: Find out what are the current capabilities and limitations of the OVHcloud Data Processing Platform 
-updated: 2024-12-13
+updated: 2025-05-13
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Life (EOL)**
+> 
+> OVHcloud Data Processing will reach End of Life on June 30, 2025.
+> 
+> This service will no longer be available after this date.
+>
 
 ## Objective 
 
@@ -68,7 +77,7 @@ Notebooks for Apache Spark provide the following templates as kernels:
 
 You have a limited amount of those resources that you can use simultaneously. If you have a job using all of your quotas, you will not be able to submit other jobs until it is completed. The maximum amount of each resource you can use simultaneously is fetched from your cloud project quotas. Only the maximum quotas are shared between Data Processing and your cloud project. If you run out of resource on your cloud project, it will not impact your ability to submit a job on Data Processing. 
 
-If you would like to increase the quotas for Data Processing you will need to increase your cloud project quotas. Please read our guide on [increasing Public Cloud quota](/pages/public_cloud/compute/increasing_public_cloud_quota) for more details on this topic. 
+If you would like to increase the quotas for Data Processing you will need to increase your cloud project quotas. Please read our guide on [increasing Public Cloud quota](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) for more details on this topic. 
 
 ### Supported languages
 

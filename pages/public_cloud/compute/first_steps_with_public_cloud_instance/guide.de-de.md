@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Instanzen verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Public Cloud Instanzen im OVHcloud Kundencenter verwalten
-updated: 2024-02-20
+updated: 2025-04-28
 ---
 
 > [!primary]
@@ -22,19 +22,19 @@ Sie können Ihre Public Cloud Instanzen in Ihrem [Kundencenter](/links/manager) 
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
+Loggen Sie sich in [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 
 ### Das Instanzen-Verwaltungsinterface verwenden
 
-Klicken Sie im linken Menü auf `Instances`{.action}. 
+Klicken Sie im linken Menü auf `Instanzen`{.action}. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 Diese Seite zeigt alle Ihre Public Cloud Instanzen und einige ihrer Eigenschaften an:
 
 - Die ID der Instanz (erforderlich für bestimmte API-Aufrufe)
 - Standort des Rechenzentrums, d.h. Region der Instanz
-- Der Instanz-Typ
+- Das Modell der Instanz
 - Das Image, d.h. das auf der Instanz installierte Betriebssystem
 - IPv4-Adresse der Instanz
 - Die private Adresse, die derzeit an die Instanz angehängt ist
@@ -129,7 +129,7 @@ Bestätigen Sie die Löschungsanfrage im angezeigten Fenster.
 
 ### Auf die VNC-Konsole zugreifen <a name="accessvnc"></a>
 
-Klicken Sie im linken Menü auf `Instances`{.action}. Klicken Sie auf der Instanzverwaltungsseite in der Tabelle auf den Namen der Instanz.
+Klicken Sie im linken Menü auf `Instanzen`{.action}. Klicken Sie auf der Instanzverwaltungsseite in der Tabelle auf den Namen der Instanz.
 
 Wechseln Sie dann vom Dashboard zum Tab `VNC-Konsole`{.action}.
 
@@ -143,8 +143,8 @@ Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitu
 
 [Erste Public Cloud Instanz erstellen und auf dieser einloggen](/pages/public_cloud/compute/public-cloud-first-steps)
 
-[Einführung in Horizon](/pages/public_cloud/compute/introducing_horizon)
+[Einführung in Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.
