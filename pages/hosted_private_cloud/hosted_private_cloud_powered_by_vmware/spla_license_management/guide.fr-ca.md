@@ -1,7 +1,6 @@
 ---
-title: Gérer les licences Windows de vos machines virtuelles
-excerpt: Gérer les licences Windows de vos machines virtuelles
-updated: 2025-05-28
+title: "Activer et gérer les licences Windows de vos machines virtuelles"
+excerpt: "Découvrez comment activer et gérer les licences Windows de vos machines virtuelles"
 ---
 
 ## Objectif
