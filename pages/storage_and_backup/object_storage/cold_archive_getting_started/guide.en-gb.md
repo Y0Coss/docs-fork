@@ -6,11 +6,10 @@ updated: 2024-11-29
 
 ## Objective
 
-Cold Archive is a service for long-term data storage.
-When archived, every object of a bucket is stored on physical tapes.
-Restoration can take some time as it needs to be read on tapes.
+Cold Archive provides long-term data storage by archiving bucket objects onto physical tapes.
+Restoration may take some time since data is read from tapes.
 
-**This guide explains how to set up storage on tapes with Cold Archive.**
+**This guide explains how to set up and manage storage on tapes with Cold Archive, in coexistence with your Object Storage.**
 
 ## Requirements
 
@@ -19,14 +18,20 @@ Restoration can take some time as it needs to be read on tapes.
 
 ## Instructions
 
+This section explains the step-by-step process to configure, archive, restore, and delete buckets with Cold Archive, in coexistence with your Object Storage.
+
 In this tutorial, **awscli aliases** are used to simplify the commands.
+
+### Initial Setup: create AWS CLI Aliases
+
+To simplify commands, create or edit the ~/.aws/cli/alias file:
 
 ```bash
 mkdir -p ~/.aws/cli
 touch ~/.aws/cli/alias
 ```
 
-Add this content to the file:
+Add the following content:
 
 ```bash
 [toplevel]
@@ -44,50 +49,34 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 >
 > - `Id` is a string used to identify the S3 **\*** Intelligent-Tiering configuration. Its value is arbitrary and up to you. It will be necessary for further PUT, GET and DELETE operations on the intelligent-tiering configuration.
 >
-> - `Status` and `Days` are mandatory but not used.
+> - `Status` and `Days` are mandatory but not used. Days is only meaningful with certain access tiers.
 >
 
-To retrieve an Intelligent tiering configuration, use the get-bucket-intelligent-tiering-configuration command:
+### Check for Incomplete Multipart Uploads Before Archiving
 
-```bash
-aws s3api get-bucket-intelligent-tiering-configuration --bucket example-bucket --id myid
-```
-
-```json
-{
-    "Id": "myid",
-    "Status": "Enabled",
-    "Tierings": [
-        {"Days": 999, "AccessTier": "OVH_ARCHIVE"}
-    ]
-}
-```
-
-> [!primary]
->
-> If you have defined multiple profiles, add `--profile <profile>` to the command line.
->
-
-### Bucket archiving
-
-Before archiving a bucket, make sure there are no incomplete multipart uploads.
-This can be done with:
+Run this command to ensure there are no incomplete multipart uploads on your bucket:
 
 ```bash
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api list-multipart-uploads --bucket <bucket_name>
 ```
 
-#### Archive a bucket
+### **Archive a Bucket**
+
+> [!primary]
+>
+> Before archiving a bucket, make sure there are no incomplete multipart uploads.
+>
+
 
 ```bash
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-archive <bucket_name>
 ```
 
-After this request, the bucket is not archived yet.<br>
-It will take some time before it is archived on the tapes.<br>
-From this command and until a restoration, the bucket cannot accept any read or write requests on objects (listing objects is still allowed).
+- The bucket status changes to Archiving.
+- Objects cannot be read or written during this process; only listing is allowed.
+- Archiving to tapes takes some time.
 
-#### Archive a bucket with retention lock
+### Archive a bucket with retention lock (WORM Compliance)
 
 By default, an archive is not locked i.e you can still delete an archive after it has been written to tapes. To ensure your archive follows the WORM (Write Once Read Many) model, you can set a retention period in your intelligent tiering configuration using the `OVH_ARCHIVE_LOCK` access tier and a number of days. The archive will be then locked until the current date + the number of days specified.
 
@@ -113,7 +102,7 @@ By default, an archive is not locked i.e you can still delete an archive after i
 > Similarly, you cannot have multiple access tiers in your intelligent tiering configuration i.e either you use the `OVH_ARCHIVE` access tier or you use the `OVH_ARCHIVE_LOCK` access tier but not both.
 >
 
-#### Lock a bucket after it is archived
+### Lock an Already Archived Bucket
 
 If you have buckets that have been previously archived without using the `OVH_ARCHIVE_LOCK` access tier, you can still lock them by re-applying an intelligent tiering configuration to your bucket using the `OVH_ARCHIVE_LOCK` access tier and specifying a retention duration in days.
 
@@ -135,7 +124,7 @@ If you want to edit the retention period, similarly, re-apply the intelligent ti
 > - OVHcloud Cold Archive will return an error because 2024-02-23 + 5 days < 2024-03-03.
 >
 
-### Bucket restoring
+### Restore a Bucket
 
 Restore a bucket:
 
@@ -143,14 +132,14 @@ Restore a bucket:
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-restore <bucket_name>
 ```
 
-After this request, the bucket is not restored yet.<br>
-It will take some time before it is restored and for the objects to be accessible in read-only (writing objects is forbidden).
+- Bucket status changes to Restoring.
+- Objects become accessible in read-only mode once restoration completes.
 
-### Bucket deletion
+### Delete an Archive
 
 > [!primary]
 >
-> If you have locked your archive, trying to delete it before the end of the retention period will result in a 400 Bad Request error:
+> If the bucket is locked, deletion before the retention period expires will fail.
 > `An error occurred (BadRequest) when calling the DeleteBucketIntelligentTieringConfiguration operation: Archive deletion is locked until 2124-01-19T15:24:56.000Z`
 >
 
@@ -180,7 +169,7 @@ Once the deletion is completed:
 aws s3 rb s3://<bucket_name>
 ```
 
-### Bucket status
+### Check Bucket Status and Retention Tags
 
 Once an intelligent-tiering configuration has been pushed (via a `put-bucket-intelligent-tiering-configuration` operation) and until it is removed (via a `delete-bucket-intelligent-tiering-configuration` operation), the status of a bucket is readable through:
 
@@ -220,6 +209,16 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api get-bucket-tagg
 | `Restored`  | Objects restored and accessible.                                                 | Read-only + Listing    |
 | `Deleting`  | Objects deletion from tapes (and disks if restored) in progress.                 | Listing                |
 | `Flushed`   | Bucket is empty and can safely be removed.                                       | Listing (empty bucket) |
+
+### Advanced Verification: Inspect Intelligent Tiering Configuration
+
+To retrieve the full intelligent-tiering configuration JSON applied to your bucket:
+
+```bash
+aws s3api get-bucket-intelligent-tiering-configuration --bucket <bucket_name> --id myid
+```
+
+This command returns detailed configuration info useful for debugging or verification.
 
 ## Go further
 
