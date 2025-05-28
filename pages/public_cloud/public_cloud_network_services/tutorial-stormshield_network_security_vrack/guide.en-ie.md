@@ -26,7 +26,7 @@ This guide provides step-by-step instructions for deploying and configuring SNS 
 - Basic networking knowledge
 - A Stormshield account on the [Stormshield website](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}
 - Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
-- An [Additional IP address](/links/network/additional-ip) for ensuring network failover and high availability setup.
+- An [Additional IP block](/links/network/additional-ip) (/29) for ensuring network failover and high availability setup.
 - Stormshield Elastic Virtual Appliance licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained through [third-party partners or resellers](https://www.stormshield.com/partner/partner-finder/){.external}, as you will need to provide it during the installation and configuration process.
 
 ## Instructions

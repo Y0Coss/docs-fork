@@ -26,7 +26,7 @@ Ce guide fournit des instructions pas à pas pour déployer et configurer SNS EV
 - Des connaissances de base en réseau.
 - Un compte Stormshield créé via le [site Stormshield](https://documentation.stormshield.eu/SNS/v4/fr/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}.
 - S'assurer que le vRack est activé et configuré pour permettre une communication sécurisée entre les composants de l'infrastructure.
-- Une adresse [Additional IP](/links/network/additional-ip) pour permettre le failover et la configuration de la haute disponibilité.
+- Un bloc d'adresses [Additional IP](/links/network/additional-ip) (/29) pour permettre le failover et la configuration de la haute disponibilité.
 - Une licence Stormshield Elastic Virtual Appliance BYOL (**B**ring **Y**our **O**wn **L**icence), obtenue auprès de [partenaires ou revendeurs tiers](https://www.stormshield.com/partner/partner-finder/){.external}, que vous devrez fournir lors de l'installation et de la configuration.
 
 ## En pratique
