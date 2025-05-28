@@ -1,6 +1,6 @@
 ---
-title: Activer et gérer les licences Windows de vos machines virtuelles
-excerpt: Activer et gérer les licences Windows de vos machines virtuelles v
+title: "Activer et gérer les licences Windows de vos machines virtuelles"
+excerpt: "Découvrez comment activer et gérer les licences Windows de vos machines virtuelles"
 updated: 2025-05-28
 ---
 
@@ -8,11 +8,12 @@ updated: 2025-05-28
 
 Ce guide vous explique comment gérer les licences Windows de vos machines virtuelles hébergées sur votre infrastructure Hosted Private Cloud.
 
-Il intègre désormais une nouvelle fonctionnalité disponible dans l’[espace client OVHcloud](/links/manager) qui vous permet de :
-- Visualiser le nombre de machines virtuelles Windows nécessitant une licence
-- Activer instantanément une licence sur les VM éligibles, directement depuis l’interface
+L’[espace client OVHcloud](/links/manager) intègre désormais une nouvelle fonctionnalité, qui vous permet :
 
-Cela vous offre une meilleure visibilité, réduit le recours aux appels API, et vous aide à rester conforme aux exigences de licences Microsoft.
+- De visualiser le nombre de machines virtuelles Windows nécessitant une licence.
+- D'activer instantanément une licence sur les VM éligibles, directement depuis l’interface.
+
+Cela vous offre une meilleure visibilité, réduit le recours aux appels API et vous aide à rester conforme aux exigences des licences Microsoft.
 
 > [!warning]
 >
@@ -22,29 +23,30 @@ Cela vous offre une meilleure visibilité, réduit le recours aux appels API, et
 
 ## Prérequis
 
-- Un service Hosted Private Cloud basé sur VMware
-- Au moins une machine virtuelle exécutant un système d’exploitation Windows
-- [Licences Windows activées](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#license-windows) dans votre [espace client OVHcloud](/links/manager)
+- Posséder un service Hosted Private Cloud basé sur VMware.
+- Détenir au moins une machine virtuelle exécutant un système d’exploitation Windows.
+- Avoir activé les **licences Windows** dans votre [espace client OVHcloud](/links/manager). Consultez la partie « licence windows » de notre guide « [Présentation de l'espace client Hosted Private Cloud OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud/) » pour plus d'informations.
 
 ## En pratique
 
-### Suivre et activer les licences Windows directement depuis votre espace client OVHcloud
+### Activer et gérer les licences Windows directement depuis votre espace client OVHcloud
 
 > [!primary]
 >
 > Cette fonctionnalité s’applique uniquement si vous souhaitez qu’OVHcloud fournisse la licence Windows via SPLA.
-> Si vous utilisez votre propre licence (BYOL), aucune activation n’est nécessaire dans l' [espace client OVHcloud](/links/manager).
+> Si vous utilisez votre propre licence (BYOL), aucune activation n’est nécessaire dans l'[espace client OVHcloud](/links/manager).
 
 #### Consulter l’usage des licences Windows dans l'espace client OVHcloud
 
-1. Rendez-vous dans la section `Hosted Private Cloud`{.action} de votre [espace client OVHcloud](/links/manager).
+1. Rendez-vous dans la section `Hosted Private Cloud`{.action} de votre [espace client OVHcloud](/links/manager) et cliquez sur `Managed VMware vSphere`{.action}.
 
-2. Sélectionnez votre service, puis ouvrez l'onglet `Datacenter`{.action} .
+2. Sélectionnez votre service, puis ouvrez l'onglet `Datacentres`{.action}.
 
 Vous y trouverez :
-- Le **nombre total de VM** en cours d'exécution dans votre datacenter
-- Le **nombre de VM Windows** (nécessitant une licence)
-- Le **nombre de VM Windows déclarées** (licenciées via OVHcloud)
+
+- Le **nombre total de VM** en cours d'exécution dans votre datacentre.
+- Le **nombre de VM Windows**, nécessitant une licence.
+- Le **nombre de VM Windows déclarées**, licenciées via OVHcloud.
 
     ![Licence overview](images/licence-visibility-FR.png).{thumbnail}
 
@@ -56,17 +58,17 @@ Vous y trouverez :
 
 Deux cas de figure sont possibles :
 
-- **Cas 1 : vous utilisez votre propre licence Microsoft (BYOL)**
+- **Cas n° 1 : vous utilisez votre propre licence Microsoft (BYOL) :**
     → Aucune action n'est requise dans l'interface.
 
-- **Cas n° 2 : vous souhaitez qu’OVHcloud fournisse une licence pour la VM**
+- **Cas n° 2 : vous souhaitez qu’OVHcloud fournisse une licence pour la VM :**
     → La licence de la VM doit être activée depuis l’[espace client OVHcloud](/links/manager) pour être correctement facturée.
     
 #### Activer une licence Windows depuis l'espace client
 
-1. Dans votre Private Cloud, accédez à l'onglet `Virtual Machines`{.action} .
-2. Localisez la VM concernée (sous licence Windows)
-3. Cliquez sur `Activer la licence`{.action}.
+1. Dans votre `Datacentre`, accédez à l'onglet `Virtual Machines`{.action}.
+2. Localisez la VM concernée dans la colonne `licence`.
+3. Cliquez sur `...`{.action} à droite, puis sur `Activer la licence`{.action}.
 
     ![Activer la licence](images/activate-licence-FR.png){.thumbnail}
 
@@ -81,7 +83,7 @@ Deux cas de figure sont possibles :
 
 ### Gérer les licences via l’API OVHcloud
 
-Si vous souhaitez automatiser la gestion des licences Windows ou l’intégrer à vos processus, vous pouvez utiliser l’[API OVHcloud](https://api.ovh.com/){.external} pour lister, attribuer, mettre à jour ou supprimer les licences de vos machines virtuelles.
+Si vous souhaitez automatiser la gestion des licences Windows ou l’intégrer à vos processus, vous pouvez utiliser l’[API OVHcloud](/links/api) pour lister, attribuer, mettre à jour ou supprimer les licences de vos machines virtuelles.
 
 #### Lister les machines virtuelles avec une licence
 
@@ -153,10 +155,10 @@ Vous pouvez supprimer la licence associée à une de vos machines virtuelles dep
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/removeLicense
 >
 
-## Aller plus loin
-
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](/links/professional-services).
-
-Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud) dédié.
-
+## Aller plus loin <a name="go-further"></a>
+ 
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
+ 
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+ 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
