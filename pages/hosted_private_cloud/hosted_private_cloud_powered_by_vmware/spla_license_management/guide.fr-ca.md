@@ -7,10 +7,10 @@ excerpt: "Découvrez comment activer et gérer les licences Windows de vos machi
 
 Ce guide vous explique comment gérer les licences Windows de vos machines virtuelles hébergées sur votre infrastructure Hosted Private Cloud.
 
-L’[espace client OVHcloud](/links/manager) intègre désormais une nouvelle fonctionnalité, qui vous permet :
+L’[espace client OVHcloud](/links/manager) intègre désormais une nouvelle fonctionnalité, avec laquelle vous pouvez :
 
-- De visualiser le nombre de machines virtuelles Windows nécessitant une licence.
-- D'activer instantanément une licence sur les VM éligibles, directement depuis l’interface.
+- Visualiser le nombre de machines virtuelles Windows nécessitant une licence.
+- Activer instantanément une licence sur les VM éligibles, directement depuis l’interface.
 
 Cela vous offre une meilleure visibilité, réduit le recours aux appels API et vous aide à rester conforme aux exigences des licences Microsoft.
 
