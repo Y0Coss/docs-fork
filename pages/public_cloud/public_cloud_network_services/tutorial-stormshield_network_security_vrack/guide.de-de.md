@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Infrastruktur mit Stormshield Network Security sichern
 excerpt: Erfahren Sie hier, wie Sie Ihre OVHcloud Infrastruktur mit Stormshield Network Security in der Public Cloud absichern können
-updated: 2024-05-12
+updated: 2025-05-29
 ---
 
 ## Ziel
@@ -26,7 +26,7 @@ In dieser Anleitung erhalten Sie Schritt-für-Schritt-Anweisungen zum Deployment
 - Sie haben Grundkenntnisse in Networking.
 - Sie haben auf der [Stormshield-Website](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external} einen Stormshield-Account erstellt.
 - Sie haben vRack aktiviert und konfiguriert, um eine sichere Kommunikation zwischen den Komponenten der Infrastruktur zu ermöglichen.
-- Sie haben eine [Additional IP-Adresse](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
+- Sie haben eine Adressblock [Additional IP](/links/network/additional-ip), um Failover und die Konfiguration von Hochverfügbarkeit zu ermöglichen.
 - Sie haben eine Stormshield Elastic Virtual Appliance Lizenz (**B**ring **Y**our **O**wn **L**icence) von [Partnern oder Drittanbietern](https://www.stormshield.com/partner/partner-finder/){.external} erworben. Diese ist zur Installation und Konfiguration erforderlich.
 
 ## In der praktischen Anwendung
@@ -282,7 +282,7 @@ Synchronisieren Sie die beiden HA SNS EVA Instanzen:
 
 ```bash
 ssh admin@<ip_address>
-hasyn
+hasync
 ```
 
 ##### Überprüfen, ob eine Instanz vom VLAN200 aus das Internet erreichen kann
@@ -366,7 +366,7 @@ Synchronisieren Sie die beiden HA SNS EVA Instanzen:
 
 ```bash
 ssh admin@<ip_address>
-hasyn
+hasync
 ```
 
 <a name="step4"></a>

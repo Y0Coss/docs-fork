@@ -1,7 +1,7 @@
 ---
 title: 'Securing your OVHcloud infrastructure with Stormshield Network Security'
 excerpt: 'Find out how to secure your OVHcloud infrastructure with Stormshield Network Security deployed on Public Cloud'
-updated: 2024-12-19
+updated: 2025-05-29
 ---
 
 ## Objective
@@ -271,7 +271,7 @@ Synchronize the two HA SNS EVA instances:
 
 ```bash
 ssh admin@<ip_address>
-hasyn
+hasync
 ```
 
 ##### Verify if an instance can reach the Internet from VLAN200
@@ -353,7 +353,7 @@ Synchronize the two HA SNS EVA instances:
 
 ```bash
 ssh admin@<ip_address>
-hasyn
+hasync
 ```
 
 #### Use case 3: IPsec tunnel (site-to-site) <a name="step4"></a>
