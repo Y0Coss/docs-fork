@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilité
 excerpt: "Découvrez nos fonctionnalités Object Storage compatibles avec S3*"
-updated: 2025-01-23
+updated: 2025-05-30
 ---
 
 <style>
@@ -91,17 +91,17 @@ Ce guide a pour objectif d'énumérer les fonctionnalités supportées par Objec
     <tr>
         <td rowspan="3">Lifecycle policy</td>
         <td>put bucket lifecycle conf</td>
-        <td>no</td>
+        <td>yes</td>
         <td>yes</td>
     </tr>
     <tr>
         <td>get bucket lifecycle conf</td>
-        <td>no</td>
+        <td>yes</td>
         <td>yes</td>
     </tr>
     <tr>
         <td>delete bucket lifecycle conf</td>
-        <td>no</td>
+        <td>yes</td>
         <td>yes</td>
     </tr>
     <tr>
