@@ -91,17 +91,17 @@ Ce guide a pour objectif d'énumérer les fonctionnalités supportées par Objec
     <tr>
         <td rowspan="3">Lifecycle policy</td>
         <td>put bucket lifecycle conf</td>
-        <td>no</td>
+        <td>yes</td>
         <td>yes</td>
     </tr>
     <tr>
         <td>get bucket lifecycle conf</td>
-        <td>no</td>
+        <td>yes</td>
         <td>yes</td>
     </tr>
     <tr>
         <td>delete bucket lifecycle conf</td>
-        <td>no</td>
+        <td>yes</td>
         <td>yes</td>
     </tr>
     <tr>
