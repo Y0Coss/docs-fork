@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Quota erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
-updated: 2025-04-28
+updated: 2025-05-30
 ---
 
 > [!primary]
@@ -28,6 +28,12 @@ Um zusätzliche Ressourcen und Instanzen nutzen zu können, müssen deren Quotas
 Gemäß interner Kriterien (Dienstalter, bezahlte Rechnungen usw.) können Sie direkt vom OVHcloud Kundencenter aus Quotenerhöhungen für Ihre Public Cloud-Projekte beantragen.
 
 Sie können Ihre Ressourcenquote manuell oder automatisch erhöhen.
+
+> [!primary]
+> Wenn Sie Ihr Quota erhöhen müssen und die Schaltfläche `Quota erhöhen`{.action} in Ihrem Kundencenter nicht verfügbar ist, klicken Sie auf die Schaltfläche `Kundendienst kontaktieren`{.action}.
+>
+
+![Contact Support](images/contact_support_quota.png){.thumbnail}
 
 #### Manuelle Erhöhung der Ressourcenquote
 
