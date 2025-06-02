@@ -1,7 +1,7 @@
 ---
 title: 'Bare Metal 3-AZ Region - Service presentation'
 excerpt: 'Discover Bare Metal 3-AZ service, offering unparalleled high availability and redundancy across three data centers'
-updated: 2025-04-28
+updated: 2025-06-02
 ---
 
 ## Objective
