@@ -1,7 +1,7 @@
 ---
 title: "Bare Metal 3-AZ Region - Vorstellung des Angebots"
 excerpt: "Entdecken Sie den Bare Metal 3-AZ Dienst, der eine unübertroffene Hochverfügbarkeit und Redundanz zwischen drei Rechenzentren bietet"
-updated: 2025-04-28
+updated: 2025-06-02
 ---
 
 ## Ziel
@@ -9,6 +9,20 @@ updated: 2025-04-28
 OVHcloud bietet Bare-Metal-Dienste in der [3-AZ-Region](/links/bare-metal/regions) an. Dies ist ein wichtiger Schritt in der Regionalisierungsstrategie des Unternehmens. Dieser Dienst, der im Großraum Paris verfügbar ist, stellt einen neuen Branchenstandard für die Zuverlässigkeit und Leistung von Bare-Metal-Servern dar.
 
 Bare Metal in der 3-AZ-Region erfüllt die Anforderungen von Kunden, die hohe Verfügbarkeit und Redundanz zur Sicherstellung von Business Continuity benötigen. Dieser Dienst bietet Bare-Metal-Server in drei Rechenzentren in der Nähe von Paris, die über ein Netzwerk mit niedrigen Latenzen verbunden sind. Sie bietet erhöhte Sicherheit, verbesserte Leistung und unterbrechungsfreie Funktionen, selbst bei lokalen Unterbrechungen.
+
+> [!primary]
+>
+> Opinião importante - Evolução da oferta Bare Metal 3-AZ
+>
+> A partir de maio de 2025, o modelo de entrega dos servidores Bare Metal na região Paris 3-AZ evolui significativamente. O anterior modelo de fornecimento obrigatório em clusters de 3 servidores (um em cada zona de disponibilidade) será abandonado.
+>
+> Principais alterações:
+> - Os clientes terão a possibilidade de escolher livremente o número exato de servidores de que necessitam.
+> - A repartição dos servidores pelas diferentes zonas de disponibilidade (AZ) será inteiramente personalizável.
+> - Nenhuma obrigação de implementação nas três zonas em simultâneo.
+>
+> Importante: as informações apresentadas neste guia, nomeadamente no que diz respeito à implementação obrigatória do cluster e potencialmente à experiência do utilizador que reflete este modelo, aplicam-se principalmente aos clientes cujos servidores foram entregues *antes de maio de 2025* com o modelo de cluster anterior. As novas implementações a partir de maio de 2025 beneficiarão da flexibilidade do novo modelo e potencialmente de uma interface adaptada. Para qualquer questão relativa a esta evolução ou para adaptar a sua infraestrutura existente, contacte o seu gestor de conta ou o suporte da OVHcloud.
+>
 
 ## Übersicht
 
