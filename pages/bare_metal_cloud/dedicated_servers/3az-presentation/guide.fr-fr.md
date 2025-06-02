@@ -1,8 +1,14 @@
 ---
 title: "Bare Metal 3-AZ Region - Présentation de l'offre"
 excerpt: 'Découvrez le service Bare Metal 3-AZ, qui offre une haute disponibilité et une redondance inégalées entre trois datacenters'
-updated: 2025-04-28
+updated: 2025-06-02
 ---
+
+## Objectif
+
+OVHcloud propose son service Bare Metal dans la [région 3-AZ](/links/bare-metal/regions), une évolution significative dans la stratégie de régionalisation de l'entreprise. Ce service, disponible dans l’agglomération de Paris, constitue un nouveau standard du secteur en matière de fiabilité et de performance des serveurs Bare Metal.
+
+Le Bare Metal de la région 3-AZ répond aux besoins des clients qui ont besoin d’une haute disponibilité et d’une redondance dans leurs plans de continuité d’activité. Ce service fournit des serveurs Bare Metal dans trois datacenters proches de Paris, connectés par un réseau à faible latence. Il garantit une sécurité renforcée, des performances améliorées et des fonctionnalités ininterrompues, même en cas d'incidents localisés.
 
 > [!primary]
 >
@@ -17,12 +23,6 @@ updated: 2025-04-28
 >
 > Important : les informations présentées dans ce guide, notamment en ce qui concerne le déploiement obligatoire du cluster et potentiellement l’expérience utilisateur reflétant ce modèle, s’appliquent principalement aux clients dont les serveurs ont été livrés *avant mai 2025* sous le modèle de cluster précédent. Les nouveaux déploiements à partir de mai 2025 bénéficieront de la flexibilité du nouveau modèle, et potentiellement d'une interface adaptée. Pour toute question concernant cette évolution ou pour adapter votre infrastructure existante, veuillez contacter votre gestionnaire de compte ou le support OVHcloud.
 >
-
-## Objectif
-
-OVHcloud propose son service Bare Metal dans la [région 3-AZ](/links/bare-metal/regions), une évolution significative dans la stratégie de régionalisation de l'entreprise. Ce service, disponible dans l’agglomération de Paris, constitue un nouveau standard du secteur en matière de fiabilité et de performance des serveurs Bare Metal.
-
-Le Bare Metal de la région 3-AZ répond aux besoins des clients qui ont besoin d’une haute disponibilité et d’une redondance dans leurs plans de continuité d’activité. Ce service fournit des serveurs Bare Metal dans trois datacenters proches de Paris, connectés par un réseau à faible latence. Il garantit une sécurité renforcée, des performances améliorées et des fonctionnalités ininterrompues, même en cas d'incidents localisés.
 
 ## Vue d'ensemble
 
