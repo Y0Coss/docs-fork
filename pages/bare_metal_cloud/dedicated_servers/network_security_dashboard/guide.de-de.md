@@ -1,7 +1,7 @@
 ---
 title: Monitoring von DDoS-Angriffen mit dem Network Security Dashboard
 excerpt: Erfahren Sie hier, wie Sie das Network Security Dashboard im OVHcloud Kundencenter verwenden
-updated: 2025-04-28
+updated: 2025-06-02
 ---
 
 > [!primary]
@@ -11,6 +11,12 @@ updated: 2025-04-28
 ## Ziel
 
 In dieser Anleitung wird das Network Security Dashboard erläutert. Außerdem erhalten Sie einen Überblick über Gegenmaßnahmen, die von unserer DDoS-Schutzinfrastruktur ausgelöst werden, wenn angreifende Netzwerkaktivitäten erkannt werden. Hier finden Sie Details zu den Auslösern zusätzlicher Schutzmaßnahmen, die eingerichtet werden müssen, um Ihre Dienste am Laufen zu halten. Darüber hinaus stehen im Dashboard Traffic-Diagramme für Aktivitätsperioden im Scrubbing Center zur Verfügung, um die Situation besser darzustellen.
+
+> [!warning]
+>
+> **Warnung**: Funktion "Scrubbing-Center: permanenter Modus" erreicht
+das End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
+>
 
 ## Voraussetzungen 
 

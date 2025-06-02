@@ -1,7 +1,7 @@
 ---
 title: "Monitoring ataków DDoS za pomocą Network Security Dashboard"
 excerpt: "Dowiedz się, jak nawigować za pomocą pulpitu nawigacyjnego zabezpieczeń sieciowych"
-updated: 2025-04-28
+updated: 2025-06-02
 ---
 
 > [!primary]
@@ -11,6 +11,12 @@ updated: 2025-04-28
 ## Wprowadzenie
 
 Z tego przewodnika dowiesz się, jak korzystać z Dashboardu zabezpieczeń sieci. Zawiera on przegląd środków zaradczych uruchamianych przez infrastrukturę ochrony Anty-DDoS w przypadku wykrycia złośliwej aktywności sieciowej. Dowiedz się, jakie dodatkowe zabezpieczenia należy wdrożyć, aby zapewnić ciągłość działania usług. Co więcej, na dashboardzie dostępne są wykresy ruchu pozwalające na lepszą wizualizację sytuacji podczas operacji centrum kontroli.
+
+> [!warning]
+>
+> **Ostrzeżenie** : funkcja "Scrubbing Center: tryb stały" została osiągnięta
+jego koniec życia (EOL) i zostanie definitywnie wyłączony 8 września 2025.
+>
 
 ## Wymagania początkowe
 

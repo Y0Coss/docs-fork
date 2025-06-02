@@ -1,7 +1,7 @@
 ---
 title: "Monitorização dos ataques DDoS com o Network Security Dashboard"
 excerpt: "Saiba como navegar no Dashboard de Segurança da Rede"
-updated: 2025-04-28
+updated: 2025-06-02
 ---
 
 > [!primary]
@@ -12,9 +12,15 @@ updated: 2025-04-28
 
 Este guia explica o Dashboard de Segurança de Rede e fornece uma visão geral das medidas de combate desencadeadas pela nossa infraestrutura de proteção DDoS quando uma atividade de rede maliciosa é detetada. Pode encontrar detalhes sobre o desencadeado pelas proteções adicionais a implementar para manter os serviços atualizados e a funcionar. Além disso, o painel de controlo disponibiliza gráficos de tráfego para a limpeza dos períodos de atividade do centro, a fim de melhor visualizar a situação.
 
+> [!warning]
+>
+> **Aviso** : a funcionalidade "Centro de Scrubbing: modo permanente" foi atingida
+o seu fim de vida útil (EOL) será definitivamente desativado em 8 de setembro de 2025.
+>
+
 ## Requisitos
 
-- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [IP adicional](/links/network/additional-ip), etc.)
+- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
 - Acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
