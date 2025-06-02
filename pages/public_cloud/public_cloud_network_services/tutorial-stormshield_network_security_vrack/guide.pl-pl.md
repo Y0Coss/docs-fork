@@ -1,7 +1,7 @@
 ---
 title: 'Zabezpieczenie infrastruktury OVHcloud za pomocą Stormshield Network Security'
 excerpt: 'Dowiedz się, jak zabezpieczyć Twoją infrastrukturę OVHcloud dzięki rozwiązaniu Stormshield Network Security wdrożonemu w Public Cloud'
-Updated: 2025-05-29
+updated: 2025-05-29
 ---
 
 ## Wymagania początkowe
@@ -59,7 +59,7 @@ Przykładowo, blok IP to `147.135.161.152/29`.<br>
 Używamy pierwszego adresu IP `147.135.161.153` dla pierwszej instancji SNS EVA i tymczasowo używamy drugiego adresu IP `147.135.161.154` dla drugiego SNS EVA.<br>
 Adres bramy to `147.135.161.158`.
 
-Więcej informacji zawiera przewodnik "[Konfiguracja bloku IP w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/configuing-an-ip-block-in-a-vrack)".
+Więcej informacji zawiera przewodnik "[Konfiguracja bloku IP w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)".
 
 Poniżej przedstawiamy architekturę, którą zamierzamy wprowadzić.
 
@@ -129,7 +129,7 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.8.3 --netwo
 
 #### Konfiguracja instancji SNS EVA
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. W menu po lewej stronie kliknij `Instances`{.action} w zakładce **Compute**, następnie odnajdź Twoje dwie instancje SNS EVA.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. W menu po lewej stronie kliknij `Instancje`{.action} w zakładce **Compute**, następnie odnajdź Twoje dwie instancje SNS EVA.
 
 Uzyskaj dostęp do konsoli VNC dla obu instancji SNS EVA i skonfiguruj układ klawiatury oraz hasło.
 
@@ -173,25 +173,25 @@ Dodaj inną licencję do obu instancji SNS EVA, postępując zgodnie z [oficjaln
 
 Utwórz regułę zapory podobną do tej w obu usługach SNS EVA w graficznym interfejsie sieciowym:
 
-![SNS EVA vrack](obrazy/ha-filter.png){.thumbnail}
+![SNS EVA vrack](images/ha-filter.png){.thumbnail}
 
 Na pierwszym serwerze SNS EVA utwórz grupę zapór sieciowych (`Configuration` > `System` > `High Availability`). W odniesieniu do adresu IP sprawdź, który adres IP został przypisany do interfejsu HA przez DHCP OpenStack.
 
-![SNS EVA vrack](obrazy/ha-1.png){.thumbnail}
+![SNS EVA vrack](images/ha-1.png){.thumbnail}
 
-![SNS EVA vrack](obrazy/ha-2.png){.thumbnail}
+![SNS EVA vrack](images/ha-2.png){.thumbnail}
 
 Po zakończeniu konfiguracji HA na pierwszym serwerze SNS EVA dołącz do grupy zapory sieciowej na drugim:
 
-![SNS EVA vrack](obrazy/ha-3.png){.thumbnail}
+![SNS EVA vrack](images/ha-3.png){.thumbnail}
 
-![SNS EVA vrack](obrazy/ha-4.png){.thumbnail}
+![SNS EVA vrack](images/ha-4.png){.thumbnail}
 
 Drugi zewnętrzny interfejs SNS EVA będzie odtąd korzystał z tego samego adresu IP co pierwszy. W związku z tym adres IP `147.135.161.154` może być od tej pory wykorzystywany do innych celów.
 
 Jeśli wszystko jest skonfigurowane poprawnie, po ponownym uruchomieniu drugiego SNS EVA, powinieneś zobaczyć coś podobnego we wskaźnikach integralności linku HA:
 
-![SNS EVA vrack](obrazy/ha-5.png){.thumbnail}
+![SNS EVA vrack](images/ha-5.png){.thumbnail}
 
 #### Konfiguracja i zabezpieczenie zarządzania usługą SNS EVA
 
@@ -327,19 +327,19 @@ W tym przykładzie Internet musi być w stanie dotrzeć do prywatnego serwera ww
 >>
 >> Utwórz obiekt hosta dla instancji ubuntu-webserver:
 >>
->>![SNS EVA vrack](obrazy/nat-1.png){.thumbnail}
+>>![SNS EVA vrack](images/nat-1.png){.thumbnail}
 >>
 > **Etap 3**
 >>
 >> Utwórz regułę NAT podobną do tej:
 >>
->> ![SNS EVA vrack](obrazy/nat-2.png){.thumbnail}
+>> ![SNS EVA vrack](images/nat-2.png){.thumbnail}
 >>
 > **Etap 4**
 >>
 >> Utwórz regułę filtrowania podobną do tej:
 >>
->> ![SNS EVA vrack](obrazy/nat-3.png){.thumbnail}
+>> ![SNS EVA vrack](images/nat-3.png){.thumbnail}
 >>
 
 Sprawdź stronę www z zewnątrz:
