@@ -48,7 +48,7 @@ Here, you will find:
 - The **number of Windows VMs** (requiring a licence).
 - The **number of declared Windows VMs** (licenced by OVHcloud).
 
-![Licence overview](images/licence-visibility-EN.png).{thumbnail}
+![Licence overview](images/licence-visibility-EN.png){.thumbnail}
 
 > [!primary]
 > 
@@ -59,10 +59,10 @@ Here, you will find:
 There are two scenarios:
 
 - **Case 1: You bring your own Microsoft licence (BYOL):**
-    → No action required in the interface.
+    - No action required in the interface.
 
 - **Case 2: You want OVHcloud to licence the VM:**
-    → The VM licence must be activated in the [OVHcloud Control Panel](/links/manager) for it to be billed properly.
+    - The VM licence must be activated in the [OVHcloud Control Panel](/links/manager) for it to be billed properly.
 
 #### Activate a Windows licence from the OVHcloud Control Panel
 
@@ -75,7 +75,7 @@ There are two scenarios:
 4. Choose the appropriate licence from the dropdown menu.
 5. Click `Activate`{.action} to confirm the action.
 
-    ![Activate licence](images/select-licence-EN.png){.thumbnail}
+![Activate licence](images/select-licence-EN.png){.thumbnail}
 
 > [!success]
 > 

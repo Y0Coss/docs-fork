@@ -1,6 +1,7 @@
 ---
 title: "Activer et gérer les licences Windows de vos machines virtuelles"
 excerpt: "Découvrez comment activer et gérer les licences Windows de vos machines virtuelles"
+updated: 2025-05-28
 ---
 
 ## Objectif
@@ -38,7 +39,6 @@ Cela vous offre une meilleure visibilité, réduit le recours aux appels API et 
 #### Consulter l’usage des licences Windows dans l'espace client OVHcloud
 
 1. Rendez-vous dans la section `Hosted Private Cloud`{.action} de votre [espace client OVHcloud](/links/manager) et cliquez sur `Managed VMware vSphere`{.action}.
-
 2. Sélectionnez votre service, puis ouvrez l'onglet `Datacentres`{.action}.
 
 Vous y trouverez :
@@ -47,7 +47,7 @@ Vous y trouverez :
 - Le **nombre de VM Windows**, nécessitant une licence.
 - Le **nombre de VM Windows déclarées**, licenciées via OVHcloud.
 
-    ![Licence overview](images/licence-visibility-FR.png).{thumbnail}
+![Licence overview](images/licence-visibility-FR.png){.thumbnail}
 
 > [!primary]
 >
@@ -58,11 +58,11 @@ Vous y trouverez :
 Deux cas de figure sont possibles :
 
 - **Cas n° 1 : vous utilisez votre propre licence Microsoft (BYOL) :**
-    → Aucune action n'est requise dans l'interface.
+    - Aucune action n'est requise dans l'interface.
 
 - **Cas n° 2 : vous souhaitez qu’OVHcloud fournisse une licence pour la VM :**
-    → La licence de la VM doit être activée depuis l’[espace client OVHcloud](/links/manager) pour être correctement facturée.
-    
+    - La licence de la VM doit être activée depuis l’[espace client OVHcloud](/links/manager) pour être correctement facturée.
+
 #### Activer une licence Windows depuis l'espace client
 
 1. Dans votre `Datacentre`, accédez à l'onglet `Virtual Machines`{.action}.
@@ -74,7 +74,7 @@ Deux cas de figure sont possibles :
 4. Choisissez la licence souhaitée dans le menu déroulant.
 5. Cliquez sur `Activer`{.action} pour confirmer l'action.
 
-    ![Activer la licence](images/select-licence-FR.png){.thumbnail}
+![Activer la licence](images/select-licence-FR.png){.thumbnail}
 
 > [!success]
 >
