@@ -1,7 +1,7 @@
 ---
 title: "Monitoring DDoS attacks with the Network Security Dashboard"
 excerpt: "Learn how to navigate through the Network Security Dashboard"
-updated: 2025-04-28
+updated: 2025-06-02
 ---
 
 ## Objective
