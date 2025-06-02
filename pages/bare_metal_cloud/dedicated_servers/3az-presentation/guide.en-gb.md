@@ -4,6 +4,12 @@ excerpt: 'Discover Bare Metal 3-AZ service, offering unparalleled high availabil
 updated: 2025-04-28
 ---
 
+## Objective
+
+OVHcloud offers its innovative Bare Metal service in the [3-AZ region](/links/bare-metal/regions), a significant development in the company's regionalization strategy. This service, available in the Paris metropolitan area, sets a new industry standard for reliability and performance in Bare Metal servers.
+
+Bare Metal in the 3-AZ region caters to customers requiring high availability and redundancy in their business continuity plans. This service provides Bare Metal servers across three proximal data centers in Paris, connected by a low-latency network. It ensures enhanced security, improved performance, and uninterrupted functionality, even in the event of localized incidents.
+
 > [!primary]
 >
 > Important Notice - Evolution of Bare Metal 3-AZ Offering
@@ -17,12 +23,6 @@ updated: 2025-04-28
 >
 > Important: The information presented in this guide, particularly concerning the mandatory cluster deployment and potentially the user experience reflecting this model, primarily applies to customers whose servers were delivered *before May 2025* under the previous cluster model. New deployments starting May 2025 will benefit from the flexibility of the new model, and potentially an adapted interface experience. For any questions regarding this evolution or to adapt your existing infrastructure, please contact your account manager or OVHcloud support.
 >
-
-## Objective
-
-OVHcloud offers its innovative Bare Metal service in the [3-AZ region](/links/bare-metal/regions), a significant development in the company's regionalization strategy. This service, available in the Paris metropolitan area, sets a new industry standard for reliability and performance in Bare Metal servers.
-
-Bare Metal in the 3-AZ region caters to customers requiring high availability and redundancy in their business continuity plans. This service provides Bare Metal servers across three proximal data centers in Paris, connected by a low-latency network. It ensures enhanced security, improved performance, and uninterrupted functionality, even in the event of localized incidents.
 
 ## Overview
 
