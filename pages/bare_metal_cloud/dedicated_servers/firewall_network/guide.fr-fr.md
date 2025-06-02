@@ -10,6 +10,12 @@ Pour protéger les services des clients exposés sur les adresses IP publiques, 
 
 **Ce guide vous explique comment configurer le Edge Network Firewall pour vos services.**
 
+> [!warning]
+>
+> **Avertissement** : la fonctionnalité "Centre de Scrubbing: mode permanent" atteint 
+sa fin de vie (EOL) et sera désactivée définitivement le 8 septembre 2025.
+>
+
 > [!primary]
 >
 > Pour plus d'informations sur notre solution Anti-DDoS, [cliquez ici](/links/security/antiddos).

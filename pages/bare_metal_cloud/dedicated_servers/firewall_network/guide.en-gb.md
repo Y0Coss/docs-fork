@@ -10,6 +10,11 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 
 **This guide will show you how to configure the Edge Network Firewall for your services.**
 
+> [!warning]
+>
+> **Warning**: Permanent Mitigation is reaching it's End-Of-Life (EOL) and will be disabled permanently on September 8, 2025.
+>
+
 > [!primary]
 >
 > You can find more information on our Anti-DDoS solution on [our website](/links/security/antiddos).

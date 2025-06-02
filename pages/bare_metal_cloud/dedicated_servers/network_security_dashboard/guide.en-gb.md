@@ -8,6 +8,11 @@ updated: 2025-04-28
 
 This guide explains the Network Security Dashboard and provides an overview of counter measures triggered by our DDoS protection infrastructure when malicious network activity is detected. You can find details on which additional protections should be implemented to keep your services up and running. Moreover, traffic charts are available on the dashboard for scrubbing centre activity periods to better visualize the situation.
 
+> [!warning]
+>
+> **Warning**: Permanent Mitigation is reaching it's End-Of-Life (EOL) and will be disabled permanently on September 8, 2025.
+>
+
 ## Requirements
 
 - An OVHcloud service exposed on a dedicated public IP address ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/en-gb/vps/), [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
