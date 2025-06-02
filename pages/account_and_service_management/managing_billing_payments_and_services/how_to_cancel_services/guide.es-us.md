@@ -35,7 +35,7 @@ Para poder dar de baja el servicio, deberá estar **seguro** de que:
 
 ## Requisitos
 
-- Ser el "contacto administrador" del servicio que deba darse de baja (para más información, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts#definition)
+- Ser el "contacto administrador" del servicio que deba darse de baja (para más información, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts#definition))
 - Tener acceso al [área de cliente de OVHcloud](/links/manager)
 - Tener servicios de OVHcloud activos (no suspendidos por impago)
 
