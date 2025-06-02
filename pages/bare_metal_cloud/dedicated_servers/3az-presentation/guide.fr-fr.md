@@ -4,7 +4,7 @@ excerpt: 'Découvrez le service Bare Metal 3-AZ, qui offre une haute disponibili
 updated: 2025-04-28
 ---
 
->[!primary]
+> [!primary]
 >
 > Avis important - Évolution de l’offre Bare Metal 3-AZ
 >

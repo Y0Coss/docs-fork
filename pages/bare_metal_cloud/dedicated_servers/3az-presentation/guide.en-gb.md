@@ -4,7 +4,7 @@ excerpt: 'Discover Bare Metal 3-AZ service, offering unparalleled high availabil
 updated: 2025-04-28
 ---
 
->[!primary]
+> [!primary]
 >
 > Important Notice - Evolution of Bare Metal 3-AZ Offering
 >
