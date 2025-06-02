@@ -251,7 +251,7 @@ Questa operazione è necessaria ogni volta che si aggiorna la configurazione.
 Una volta implementato, il firewall SNS EVA può essere utilizzato in diversi scenari di sicurezza avanzati come VPN IPsec, VPN SSL/TLS, gateway di rete (IN o OUT) come descritto di seguito.
 Grazie alla rete privata vRack, le VLAN elencate possono essere utilizzate anche al di fuori dell'ambiente Public Cloud: sui prodotti Bare Metal o Private Cloud.
 
-#### Case study n°1: configura Stormshield Network Security per l’utilizzo come gateway <a name="step2"></a>
+#### Caso d'uso 1: configura Stormshield Network Security per l’utilizzo come gateway <a name="step2"></a>
 
 In questo esempio, il firewall virtuale funziona come un gateway sicuro per le istanze private (o qualsiasi altro server) all'interno del VLAN200 della rete vRack specificata. Questo tipo di traffico può essere filtrato tramite URL nel firewall.
 
@@ -307,7 +307,7 @@ curl -I https://www.ovh.com/manager/
 HTTP/2 200
 ```
 
-#### Case study n°2: configura un NAT (**N**etwork **A**ddress **T**ranslation) per accedere a un servizio HTTP privato dall'esterno <a name="step3"></a>
+#### Caso d'uso 2: configura un NAT (**N**etwork **A**ddress **T**ranslation) per accedere a un servizio HTTP privato dall'esterno <a name="step3"></a>
 
 In questo esempio, Internet deve essere in grado di raggiungere il server Web privato installato sul VLAN200. Lo scopo di questa configurazione è di proteggere il server Web con un firewall di rete.
 
@@ -356,7 +356,7 @@ ssh admin@<ip_address>
 hasync
 ```
 
-#### Casi d'uso n°3: tunnel IPsec (da sito a sito) <a name="step4"></a>
+#### Caso d'uso 3: tunnel IPsec (da sito a sito) <a name="step4"></a>
 
 In questo esempio, il tunnel IPsec è configurato per interconnettere due diverse aree PCI: SBG7 (rete VLAN200) e GRA11 (rete VLAN201), ma ognuno di questi siti può essere un sito remoto come un ufficio o un datacenter.
 
@@ -437,7 +437,7 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 64 bytes from <ip_address>: icmp_seq=3 ttl=64 time=16.4 ms
 ```
 
-#### Caso d'uso n°4: VPN SSL/TLS (da client a sito) <a name="step5"></a>
+#### Caso d'uso 4: VPN SSL/TLS (da client a sito) <a name="step5"></a>
 
 In questo esempio, un client remoto OpenVPN si connetterà alla rete privata all’interno del VLAN200.
 

@@ -91,7 +91,7 @@ openstack network create --provider-network-type vrack --provider-segment 200 --
 openstack subnet create --network stormshield-vlan200 --subnet-range 10.200.0.0/16 --dhcp --dns-nameserver <dns_address_ip> stormshield-vlan200
 ```
 
-Erstellen Sie das private Netzwerk für die SNS HA Interfaces (**H**igh **A**vailability):
+Erstellen Sie das private Netzwerk für die EVA SNS HA Interfaces (**H**igh **A**vailability):
 
 ```bash
 openstack network create --provider-network-type vrack --provider-segment 199 --disable-port-security stormshield-ha
