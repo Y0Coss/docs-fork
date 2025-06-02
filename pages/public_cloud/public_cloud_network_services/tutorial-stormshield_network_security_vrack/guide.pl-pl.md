@@ -1,7 +1,7 @@
 ---
 title: 'Zabezpieczenie infrastruktury OVHcloud za pomocą Stormshield Network Security'
 excerpt: 'Dowiedz się, jak zabezpieczyć Twoją infrastrukturę OVHcloud dzięki rozwiązaniu Stormshield Network Security wdrożonemu w Public Cloud'
-Updated: 2025-05-29
+updated: 2025-05-29
 ---
 
 ## Wymagania początkowe
@@ -59,7 +59,7 @@ Przykładowo, blok IP to `147.135.161.152/29`.<br>
 Używamy pierwszego adresu IP `147.135.161.153` dla pierwszej instancji SNS EVA i tymczasowo używamy drugiego adresu IP `147.135.161.154` dla drugiego SNS EVA.<br>
 Adres bramy to `147.135.161.158`.
 
-Więcej informacji zawiera przewodnik "[Konfiguracja bloku IP w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/configuing-an-ip-block-in-a-vrack)".
+Więcej informacji zawiera przewodnik "[Konfiguracja bloku IP w sieci vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)".
 
 Poniżej przedstawiamy architekturę, którą zamierzamy wprowadzić.
 
