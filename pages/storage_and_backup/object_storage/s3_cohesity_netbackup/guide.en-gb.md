@@ -30,7 +30,7 @@ You will be guided through the entire process, from selecting the Storage Server
 
 3. Access the `Storage`{.action} menu, the `Disk storage`{.action} submenu, then click the `Storage Servers`{.action} tab.
 
-    ![storage menu](images/storage_menu.png){.thumbnail}
+    ![storage menu](images/storage_menu-b.png){.thumbnail}
 
 4. Open the `Disk Pools`{.action} tab and click on `Add`{.action} to create a new Disk Pool.
 

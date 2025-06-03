@@ -48,7 +48,7 @@ Here, you will find:
 - The **number of Windows VMs** (requiring a licence).
 - The **number of declared Windows VMs** (licenced by OVHcloud).
 
-![Licence overview](images/licence-visibility-EN.png){.thumbnail}
+![Licence overview](images/licence-visibility-EN-b.png){.thumbnail}
 
 > [!primary]
 > 
@@ -75,7 +75,7 @@ There are two scenarios:
 4. Choose the appropriate licence from the dropdown menu.
 5. Click `Activate`{.action} to confirm the action.
 
-![Activate licence](images/select-licence-EN.png){.thumbnail}
+    ![Activate licence](images/select-licence-EN-b.png){.thumbnail}
 
 > [!success]
 > 
