@@ -82,39 +82,81 @@ When versioning is enabled:
 
 ### How to Enable Versioning
 
-#### Using the AWS CLI
-
-To enable versioning on an Object Storage bucket, use the following command:
-
-```sh
-aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
-```
-
-**Explanation:**
-
-- **put-bucket-versioning:** AWS CLI command to configure versioning.
-- **--bucket my-bucket:** Replace `my-bucket` with the name of your bucket.
-- **--versioning-configuration Status=Enabled:** Enables versioning for the specified bucket.
-
-After enabling versioning, all objects added to the bucket will have a unique version ID. This means that every time an object is modified or deleted, a new version is created, which can be restored if needed.
+> [!tabs]
+> Via AWS CLI
+>> To enable versioning on an Object Storage bucket, use the following command:
+>>
+>> ```sh
+>> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
+>> ```
+>>
+>> **Explications :**
+>>
+>> - **put-bucket-versioning :** AWS CLI command to configure version management.
+>> - **--bucket my-bucket :** replace `my-bucket` with the name of your bucket.
+>> - **--versioning-configuration Status=Enabled :** enable versioning for the specified bucket.
+>>
+>> After enabling versioning, all objects added to the bucket will have a unique version identifier. This means that each time an object is modified or deleted, a new version is created, which can be restored if necessary.
+>>
+> Via the OVHcloud Control Panel
+>> There are two ways to activate versioning on an Object Storage bucket:
+>>
+>> When creating the bucket, simply activate the versioning option in the associated step:
+>>
+>> ![OVHcloud control panel - versioning in bucket creation](images/bucket_creation_versioning.png){.thumbnail}
+>>
+>> On an existing bucket, by modifying its parameters via the OVHcloud dashboard.
+>>
+>> ![OVHcloud control panel - versioning in bucket modification](images/bucket_modification_versioning.png){.thumbnail}
+>>
 
 ### How to Suspend Versioning
 
-#### Using the AWS CLI
+> [!tabs]
+> Via AWS CLI
+>> To suspend versioning, set the versioning configuration status to `Suspended`:
+>>
+>> ```sh
+>> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
+>> ````
+>>
+>> **Explanations:**
+>>
+>> - **put-bucket-versioning :** AWS CLI command to configure versioning.
+>> - **--bucket my-bucket :** replace `my-bucket` with the name of your bucket.
+>> - **--versioning-configuration Status=Suspended :** suspend versioning for the specified bucket.
+>>
+>> Suspending versioning prevents new objects from receiving a version identifier. Existing objects and their versions remain unchanged, but new objects will not have version identifiers until versioning is reactivated.
+>>
 
-To suspend versioning, set the versioning configuration status to `Suspended`:
+### Manage and access object versions
 
-```sh
-aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
-```
+#### View object versions
 
-**Explanation:**
+> [!tabs]
+> Via the OVHcloud Control Panel
+>> You can show or hide object versions in an Object Storage bucket by `clicking`{.action} on the following button:
+>>
+>> [enable version objects](images/bucket_enable_versions.png)
+>>
 
-- **put-bucket-versioning:** AWS CLI command to configure versioning.
-- **--bucket my-bucket:** Replace `my-bucket` with the name of your bucket.
-- **--versioning-configuration Status=Suspended:** Suspends versioning for the specified bucket.
+#### View the different versions of an object
 
-Suspending versioning stops new objects from receiving a version ID. Existing objects and their versions remain unchanged, but new objects will not have version IDs until versioning is re-enabled.
+> ![tabs]
+> Via the OVHcloud Control Panel
+>> To view the different versions of an object, `click`{.action} directly on the object concerned. You'll be redirected to a page detailing the information and versions available for this object:
+>>
+>> ![information versions object](images/bucket_versions_object_details.png)
+>>
+
+#### Download a current or previous version of an object
+
+> [!tabs]
+> Via the OVHcloud Control Panel
+>> From the main page of your Object Storage bucket (if version display is enabled) or from the object details page (see previous step), you can download the desired version by `clicking`{.action} on the three dots, then on `Download`{.action}.
+>>
+>> ![download current or versioned objects](images/bucket_download_versions.png)
+>>
 
 ### Important Considerations
 

@@ -82,39 +82,82 @@ Lorsque le versioning est activé :
 
 ### Comment activer le versioning
 
-#### Via l'AWS CLI
-
-Pour activer le versioning sur un bucket Object Storage, utilisez la commande suivante :
-
-```sh
-aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
-```
-
-**Explications :**
-
-- **put-bucket-versioning :** commande AWS CLI pour configurer la gestion des versions.
-- **--bucket my-bucket :** remplacez `my-bucket` par le nom de votre bucket.
-- **--versioning-configuration Status=Enabled :** active la gestion des versions pour le bucket spécifié.
-
-Après avoir activé la gestion des versions, tous les objets ajoutés au bucket auront un identifiant de version unique. Cela signifie que chaque fois qu'un objet est modifié ou supprimé, une nouvelle version est créée, pouvant être restaurée si nécessaire.
+> [!tabs]
+> Via l'AWS CLI
+>> Pour activer le versioning sur un bucket Object Storage, utilisez la commande suivante :
+>>
+>> ```sh
+>> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
+>> ```
+>>
+>> **Explications :**
+>>
+>> - **put-bucket-versioning :** commande AWS CLI pour configurer la gestion des versions.
+>> - **--bucket my-bucket :** remplacez `my-bucket` par le nom de votre bucket.
+>> - **--versioning-configuration Status=Enabled :** active la gestion des versions pour le bucket spécifié.
+>>
+>> Après avoir activé la gestion des versions, tous les objets ajoutés au bucket auront un identifiant de version unique. Cela signifie que chaque fois qu'un objet est modifié ou supprimé, une nouvelle version est créée, pouvant être restaurée si nécessaire.
+>>
+> Via l'espace client OVHcloud
+>> Pour activer le versioning sur un bucket Object Storage, deux possibilités s’offrent à vous :
+>>
+>> Lors de la création du bucket, activez simplement l’option de versioning dans l'étape associée:
+>>
+>> ![OVHcloud control panel - versioning in bucket creation](images/bucket_creation_versioning.png){.thumbnail}
+>>
+>> Sur un bucket existant, en modifiant ses paramètres via le tableau de bord OVHcloud.
+>>
+>> ![OVHcloud control panel - versioning in bucket modification](images/bucket_modification_versioning.png){.thumbnail}
+>>
 
 ### Comment suspendre la gestion des versions
 
-#### Via l'AWS CLI
+> [!tabs]
+> Via l'AWS CLI
+>>
+>> Pour suspendre la gestion des versions, définissez l'état de la configuration de la gestion des versions sur `Suspended` :
+>>
+>> ```sh
+>> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
+>> ```
+>>
+>> **Explications :**
+>>
+>> - **put-bucket-versioning :** commande AWS CLI pour configurer le versioning.
+>> - **--bucket my-bucket :** remplacez `my-bucket` par le nom de votre bucket.
+>> - **--versioning-configuration Status=Suspended :**  suspend le versioning pour le bucket spécifié.
+>>
+>> La suspension du versioning empêche les nouveaux objets de recevoir un identifiant de version. Les objets existants et leurs versions restent inchangés, mais les nouveaux objets n'auront pas d'identifiants de version jusqu'à ce que le versioning soit réactivé.
+>>
 
-Pour suspendre la gestion des versions, définissez l'état de la configuration de la gestion des versions sur `Suspended` :
+### Gérer et accéder aux versions d’objets
 
-```sh
-aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
-```
+#### Afficher les versions d'objets
 
-**Explications :**
+> [!tabs]
+> Via l'espace client OVHcloud
+>> Vous pouvez afficher ou masquer les versions des objets dans un bucket Object Storage en `cliquant`{.action} sur le bouton suivant :
+>>
+>> ![enable version objects](images/bucket_enable_versions.png)
+>>
 
-- **put-bucket-versioning :** commande AWS CLI pour configurer le versioning.
-- **--bucket my-bucket :** remplacez `my-bucket` par le nom de votre bucket.
-- **--versioning-configuration Status=Suspended :**  suspend le versioning pour le bucket spécifié.
+#### Afficher les différentes versions d'un objet
 
-La suspension du versioning empêche les nouveaux objets de recevoir un identifiant de version. Les objets existants et leurs versions restent inchangés, mais les nouveaux objets n'auront pas d'identifiants de version jusqu'à ce que le versioning soit réactivé.
+> ![tabs]
+> Via l'espace client OVHcloud
+>> Pour consulter les différentes versions d’un objet, `cliquez`{.action} directement sur l’objet concerné. Vous serez redirigé vers une page détaillant les informations et versions disponibles pour cet objet :
+>>
+>> ![informations versions object](images/bucket_versions_object_details.png)
+>>
+
+#### Télécharger une version actuelle ou antérieure d’un objet
+
+> [!tabs]
+> Via l'espace client OVHcloud
+>> Depuis la page principale de votre bucket Object Storage (si l’affichage des versions est activé) ou depuis la page de détails d’un objet (voir étape précédente), vous pouvez télécharger la version souhaitée en `cliquant`{.action} sur les trois points, puis sur `Télécharger`{.action}.
+>>
+>> ![download current or versioned objects](images/bucket_download_versions.png)
+>>
 
 ### Considérations importantes
 
