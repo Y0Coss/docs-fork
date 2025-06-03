@@ -12,9 +12,10 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 
 > [!primary]
 >
-> This article is about primary IP configuration. For servers that support vRack connectivity, you can also configure Additional IP addresses in a vRack rather than on the public interface of your server. You can find the matching instructions in these guides: <br>
-> IPv4: [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) <br>
-> IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> This article is about primary IP configuration. For servers that support vRack connectivity, you can also configure Additional IP addresses in a vRack rather than on the public interface of your server. You can find the matching instructions in these guides:
+>
+> - IPv4: [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
+> - IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 > [!warning]
