@@ -59,7 +59,7 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security: Acc
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Gestionar las máquinas virtuales
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring: Mantenimiento y supervisión
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-resources: Gestionar los recursos
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features:  Funcionalidades y opciones de OVHcloud
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features: Funcionalidades y opciones de OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: VMware vSphere
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: VMware NSX
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx-v: VMware NSX-v
@@ -349,3 +349,4 @@ observability-logs-data-platform-visualizing-querying-exploiting: Visualizing, q
 observability-logs-data-platform-opensearch-index: OpenSearch Index as a service
 observability-logs-data-platform-security-conformity: Security and conformity
 observability-logs-data-platform-usecases: Usecases
+observability-logs-data-platform-services-logs: OVHcloud Service Logs

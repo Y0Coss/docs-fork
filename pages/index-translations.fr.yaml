@@ -75,7 +75,7 @@ hosted-private-cloud-sap-ovhcloud-getting-started: Premiers pas
 hosted-private-cloud-sap-ovhcloud-automated-deployments: Déploiements automatisés
 hosted-private-cloud-sap-ovhcloud-resilience: Résilience
 hosted-private-cloud-sap-ovhcloud-backups: Sauvegardes
-hosted-private-cloud-sap-ovhcloud-observability: Observabilité 
+hosted-private-cloud-sap-ovhcloud-observability: Observabilité
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Premiers pas
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
@@ -346,8 +346,9 @@ manage-operate-observability: Observabilité
 manage-operate-kms: KMS
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Premiers pas
-observability-logs-data-platform-ingestion: Ingestion de vos logs 
+observability-logs-data-platform-ingestion: Ingestion de vos logs
 observability-logs-data-platform-visualizing-querying-exploiting: Visualisation, requête et exploitation de vos logs
-observability-logs-data-platform-opensearch-index: Index OpenSearch as-a-service 
+observability-logs-data-platform-opensearch-index: Index OpenSearch as-a-service
 observability-logs-data-platform-security-conformity: Sécurité et conformité
 observability-logs-data-platform-usecases: Cas d'usage
+observability-logs-data-platform-services-logs: OVHcloud Service Logs
