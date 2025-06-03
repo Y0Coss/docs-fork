@@ -1,7 +1,7 @@
 ---
 title: "Comparison of Public Cloud Databases Deployment Modes - Understanding 3-AZ / 1-AZ"
 excerpt: "Explore OVHcloud's Public Cloud Databases deployment modes"
-updated: 2025-05-27
+updated: 2025-06-03
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ OVHcloud offers two deployment modes for its [Public Cloud Databases](/links/pub
 OVHcloud managed databases offer two main deployment modes, each optimized for specific use cases and offering various levels of resilience and failover:
 
 1. **1-AZ Region**: for standard applications, offering basic resilience with optimized cost.
-2. **3-AZ Region**: suitable for applications that require high availability with low RTO/RPO and resilience to availability zone outage.
+2. **3-AZ Region**: suitable for applications that handles highly critical data or require high availability with low RTO/RPO and resilience to availability zone outage.
 
 ## Deployment modes
 
