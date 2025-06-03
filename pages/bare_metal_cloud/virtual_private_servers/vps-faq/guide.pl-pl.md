@@ -58,7 +58,7 @@ Pozwoli Ci to dokonać właściwego wyboru spośród naszych rozwiązań VPS:
 
 Każda osoba posiadająca podstawową wiedzę techniczną z zakresu administracji serwerami może korzystać z VPS.  Kompetencje te są niezbędne do zarządzania zainstalowanym na maszynie systemem operacyjnym (Linux lub Windows) i do konfigurowania aplikacji. Myślisz, że potrzebujesz serwera VPS, ale czy nie posiadasz wymaganych kompetencji? Prosimy o kontakt z jednym z naszych [partnerów](/links/partner).
 
-Jeśli chcesz korzystać z gwarantowanych zasobów bez znajomości administrowania serwerami, zalecamy nasze [hosting Performance](/links/hosting-performance-offer).
+Jeśli chcesz korzystać z gwarantowanych zasobów bez znajomości administrowania serwerami, zalecamy nasze [hosting Performance](/links/web/hosting-performance-offer).
 
 ### Jak się zalogować do mojego VPS?
 

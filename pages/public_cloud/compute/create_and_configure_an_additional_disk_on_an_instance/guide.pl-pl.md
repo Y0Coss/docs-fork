@@ -86,7 +86,7 @@ Generowanie 2 wolumenów High-Speed jest zoptymalizowane pod kątem najbardziej 
 
 > [!tabs]
 > **W Panelu klienta OVHcloud**
->> Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie.
+>> Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage i Backup**.
 >>
 >> W tej części kliknij przycisk `Utwórz wolumen`{.action}.
 >>
@@ -356,7 +356,7 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 > Montowanie nie jest stałe, ponieważ dysk zostanie odłączony podczas restartu instancji. Aby zautomatyzować montaż, edytuj plik `fstab`.
 >
 
-Pobierz UID (blok ID) nowego wolumenu:
+Pobierz UUID (blok ID) nowego wolumenu:
 
 ```bash
 sudo blkid
@@ -370,11 +370,11 @@ sudo blkid
 
 Otwórz `/etc/fstab` z edytorem tekstu:
 
-```
+```bash
 sudo nano /etc/fstab
 ```
 
-Dodaj poniższą linię do pliku i zastąp UID Twoją:
+Dodaj poniższą linię do pliku i zastąp UUID Twoją:
 
 ```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
@@ -563,7 +563,7 @@ Na koniec odłączymy wolumin od instancji:
 
 > [!tabs]
 > **W Panelu klienta OVHcloud**
->> Przejdź do sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud i kliknij `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage**.
+>> Przejdź do sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud i kliknij `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage i Backup**.
 >>
 >> Kliknij przycisk `...`{.action} obok odpowiedniego wolumenu i wybierz `Odłącz od instancji`{.action}.
 >>

@@ -1,7 +1,7 @@
 ---
 title: Assigning a Virtual MAC to an Additional IP
 excerpt: Find out how to create a virtual MAC address and assign it to an Additional IP address
-updated: 2024-12-13
+updated: 2025-05-16
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 >
 > - Third generation Advance servers (powered by EPYC 4004 Series processors) support 32 different vMACs.
 >
-> - This feature will be available on the Scale and High Grade ranges during 2025.
+> - As of May 2025, this feature is available on the Scale and High Grade ranges.
 > 
 
 > [!primary]
@@ -37,7 +37,7 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 #### Via the OVHcloud Control Panel
 
-To assign a virtual MAC address to an Additional IP, you first need to connect to your OVHcloud Control Panel. Next, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}.
 
 Click the `Additional IP`{.action} tab.
 
@@ -80,7 +80,7 @@ Use the following API call:
 
 #### Via the OVHcloud Control Panel
 
-To remove a virtual MAC address associated with an Additional IP, you must first connect to your [Control Panel](/links/manager). Once connected, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.action} menu in the left-hand sidebar and click `Public IP Addresses`{.action}. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete a Virtual MAC`{.action}.
 

@@ -86,7 +86,7 @@ High-Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 
 > [!tabs]
 > **Über das OVHcloud Kundencenter**
->> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Öffnen Sie `Block Storage`{.action} im linken Menü.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Öffnen Sie `Block Storage`{.action} im linken Menü unter **Storage und Backups**.
 >>
 >> Klicken Sie in diesem Bereich auf den Button `Volume erstellen`{.action}.
 >>
@@ -533,18 +533,6 @@ Wählen Sie das verwendete OS aus, um **das Volume** zu entfernen:
 >> sudo nano /etc/fstab
 >> ```
 >>
->> Speichern Sie die Änderungen und verlassen Sie den Editor.
->>
->> Gehen Sie in den Bereich `Public Cloud`{.action} in Ihrem OVHcloud Kundencenter und klicken Sie auf `Block Storage`{.action} im linken Menü unter **Storage**.
->>
->> Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
->>
->> ![detach disk](images/detachinstance.png){.thumbnail}
->>
->> Klicken Sie in neuen Fenster auf `Bestätigen`{.action}, um den Vorgang zu starten.
->>
->> ![Disk Detach](images/confirminstancedetach.png){.thumbnail}
->>
 > **Unter Windows** <a name="windows"></a>
 >>
 >> Stellen Sie eine Remotedesktop-Verbindung (RDP) mit Ihrer Windows-Instanz her.
@@ -572,7 +560,7 @@ Zum Schluss trennen wir das Volume von der Instanz:
 
 > [!tabs]
 > **Über das OVHcloud Kundencenter**
->> Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im Menü links unter **Storage** auf `Block Storage`{.action}.
+>> Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im Menü links unter **Storage und Backups** auf `Block Storage`{.action}.
 >>
 >> Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
 >>

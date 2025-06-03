@@ -1,16 +1,16 @@
 ---
 title: "Modificare i server DNS di un dominio OVHcloud"
 excerpt: "Scopri come modificare i server DNS di un dominio registrato in OVHcloud"
-updated: 2025-02-19
+updated: 2025-04-28
 ---
 
 ## Obiettivo
 
-L'acronimo **DNS** (**D**omain **N**ame **S**ystem), è un insieme di elementi (server DNS, zone DNS, ecc...) che permettono di far corrispondere un nome di dominio con un indirizzo IP.
+L'acronimo **DNS** (**D**omain **N**ame **S**ystem), è un insieme di elementi (server DNS, zone DNS, ecc.) che permettono di far corrispondere un nome di dominio con un indirizzo IP.
 
 Per maggiori informazioni, consulta le nostre guide "[Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)" e "[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
-**Questa guida ti mostra come modificare i server DNS in 3 step.**
+**Questa guida ti mostra come modificare i server DNS in 3 tappe.**
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -41,31 +41,30 @@ Tuttavia, è essenziale tenere conto dei seguenti punti:
 
 - In caso di modifica del server DNS (ad esempio, un DNS esterno tramite un DNS OVHcloud), il contenuto della configurazione precedente/zona DNS non viene automaticamente replicato nella nuova. Assicurati che la nuova zona DNS contenga tutti i record DNS necessari al corretto funzionamento dei servizi associati al dominio (ad esempio, il sito Web e gli indirizzi di posta elettronica).
 - Se non vuoi modificare i server DNS ma uno o più record della tua configurazione/zona DNS attuale, consulta la nostra guida: "[Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
-- Alcune organizzazioni, i Registri, che gestiscono le estensioni dei domini, hanno dei requisiti particolari riguardo ai server DNS (quantità di server dei nomi, valore dei record, ecc...). In caso di dubbi, contatta il Registro responsabile del dominio.
+- Alcune organizzazioni, i Registri, che gestiscono le estensioni dei domini, hanno dei requisiti particolari riguardo ai server DNS (quantità di server dei nomi, valore dei record, ecc.). In caso di dubbi, contatta il Registro responsabile del dominio.
 
 ### 1 - Accedi alla gestione dei server DNS OVHcloud <a name="access-dns-servers"></a>
 
-Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** tappe.
 
 > [!tabs]
-> **Step 1**
+> **Tappa 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Step 2**
+> **Tappa 2**
 >>
 >> Clicca sul menu `Domini`{.action} e seleziona il dominio interessato.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Step 3**
+> **Tappa 3**
 >>
 >> Seleziona la scheda `Server DNS`{.action} una volta posizionato sul dominio interessato.
 >>
->>
-> **Step 4**
+> **Tappa 4**
 >>
 >> Visualizzi una tabella con tutti i server DNS configurati da OVHcloud per il tuo dominio. A ogni riga corrisponde un server DNS.
 >>
@@ -79,7 +78,7 @@ Per effettuare questa operazione, clicca sulle schede qui sotto per visualizzare
 
 > [!primary]
 >
-> Tutte le funzionalità descritte in questa guida sono disponibili nella scheda `Server DNS`{.action} indicata nello [step 1](#access-dns-servers).
+> Tutte le funzionalità descritte in questa guida sono disponibili nella scheda `Server DNS`{.action} indicata nello [tappa 1](#access-dns-servers).
 >
 
 Per modificare i server DNS, clicca sul pulsante `Modifica i server DNS`{.action} a destra della tabella "server DNS". In base alla risoluzione dello schermo, il pulsante potrebbe trovarsi sotto la tabella.
@@ -102,7 +101,7 @@ Per utilizzare i server DNS predefiniti di OVHcloud, clicca su `Applicare la con
 
 ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-1-apply-configuration.png){.thumbnail}
 
-che riepiloga i nomi dei 2 server DNS che saranno applicati al dominio. Devono avere una delle 3 forme seguenti:
+Che riepiloga i nomi dei 2 server DNS che saranno applicati al dominio. Devono avere una delle 3 forme seguenti:
 
 - `nsXX.ovh.net` e `dnsXX.ovh.net` o, `nsXXX.ovh.net` e `dnsXXX.ovh.net` (dove ogni `X` rappresenta una cifra compresa tra **0** e **9**)
 - `nsXX.ovh.ca` e `dnsXX.ovh.ca` o, `nsXXX.ovh.ca` e `dnsXXX.ovh.ca` (dove ogni `X` rappresenta una cifra compresa tra **0** e **9**)
@@ -122,8 +121,8 @@ Questa opzione permette di dichiarare i server DNS di una zona DNS non gestita d
 
 Questo può essere, ad esempio:
 
-- server DNS esterni forniti da uno dei nostri concorrenti;
-- i tuoi server DNS se ospiti la tua zona DNS su uno dei tuoi server. I server DNS possono anche essere ospitati su un'infrastruttura OVHcloud (server dedicato, VPS, ecc...).
+- Server DNS esterni forniti da uno dei nostri concorrenti;
+- I tuoi server DNS se ospiti la tua zona DNS su uno dei tuoi server. I server DNS possono anche essere ospitati su un'infrastruttura OVHcloud (server dedicato, VPS, ecc.).
 
 > [!success]
 >
@@ -165,7 +164,7 @@ I server DNS dichiarati e la configurazione DNS applicata verranno disattivati p
 
 ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3.png){.thumbnail}
 
-Questa opzione permette di combinare l'utilizzo dei propri server DNS conservando i server DNS OVHcloud attivi per il dominio. Questa combinazione permette, ad esempio, di assicurare un maggiore accesso ai diversi servizi associati al dominio (hosting Web, server di posta, ecc...). Infatti, se un gruppo di server DNS diventa indisponibile per qualche minuto, gli altri server DNS dichiarati possono subentrare.
+Questa opzione permette di combinare l'utilizzo dei propri server DNS conservando i server DNS OVHcloud attivi per il dominio. Questa combinazione permette, ad esempio, di assicurare un maggiore accesso ai diversi servizi associati al dominio (hosting Web, server di posta, ecc.). Infatti, se un gruppo di server DNS diventa indisponibile per qualche minuto, gli altri server DNS dichiarati possono subentrare.
 
 E verifica che le configurazioni delle zone DNS dei diversi server siano configurate correttamente per funzionare tutte insieme. Nella maggior parte dei casi, tutti i server DNS saranno operativi. Saranno tutti in grado di rispondere alle richieste che verranno loro fatte in modo casuale sulla rete DNS.
 
@@ -215,7 +214,7 @@ I server DNS dichiarati e la configurazione DNS applicata verranno disattivati p
 
 Una volta effettuate le modifiche, è necessario considerare due periodi successivi:
 
-- *Il registro* che gestisce l’estensione del dominio (ad esempio, il registro delle estensioni con estensione *.fr*) deve essere informato della modifica DNS apportata da parte di OVHcloud. Segui lo stato di avanzamento dell’operazione nello [Spazio Cliente OVHcloud](/links/manager). Accedi alla sezione `Web Cloud`{.action}, clicca su `Domini`{.action} nella colonna di sinistra e seleziona `Operazioni in corso`{.action}.
+- *Il registro* che gestisce l’estensione del dominio (ad esempio, il registro delle estensioni con estensione *.fr*) deve essere informato della modifica DNS apportata da parte di OVHcloud. Segui lo stato di avanzamento dell’operazione nello [Spazio Cliente OVHcloud](/links/manager). Accedi alla sezione `Web Cloud`{.action} e seleziona `Operazioni in corso`{.action}.
 - Una volta aggiornate le informazioni del *Registro*, attendi fino a **48 ore** affinché le modifiche apportate siano completamente propagate ed effettive.
 
 ## Per saperne di più
@@ -228,7 +227,7 @@ Una volta effettuate le modifiche, è necessario considerare due periodi success
 
 [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  

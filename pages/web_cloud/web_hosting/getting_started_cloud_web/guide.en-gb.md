@@ -1,7 +1,7 @@
 ---
 title: "Getting started with a Cloud Web hosting plan"
 excerpt: "Find out how to get started with a Cloud Web hosting plan"
-updated: 2022-05-04
+updated: 2025-05-22
 ---
 
 ## Objective
@@ -42,11 +42,15 @@ The languages currently available are:
 - Python
 - Ruby
 
-To access the runtime software applications for your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan, log in to the [OVHcloud Control Panel](/links/manager){.external}, click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
+To access the runtime software applications for your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan, log in to the [OVHcloud Control Panel](/links/manager). Click `Web Cloud`{.action} in the services bar on the left-hand side, then click `Hosting plans`{.action}. Select the name of the Cloud Web hosting plan concerned, and go to the `Runtime software`{.action} tab.
+
+To access the runtime software applications for your [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan, log in to the [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
 
 When you set up your hosting plan, a runtime software application will be created automatically. It is included as the `Default choice` in the table that appears. To modify a runtime software that has already been set, click on the three dots next to it, then `Modify`{.action}. 
 
-Depending on which [Cloud Web](/links/web/hosting-cloud-web-offer) hosting plan you have chosen, you can also add additional runtime software applications by clicking the `Actions`{.action} button, then `Add a runtime software application`{.action}. Please note that the maximum number of runtime software applications will vary, depending on which [Cloud Web](/links/web/hosting-cloud-web-offer) solution you have ordered.
+If you have the [Cloud Web](/links/web/hosting-cloud-web-offer) offer with 2 vCores, you can add a second runtime environment (maximum 2 different runtime environments per service) by clicking on the `Actions`{.action} button, then on `Add a runtime software application`{.action}.
+
+To check that you have 2 vCores with your Cloud Web hosting plan, log in to the [OVHcloud Control Panel](/links/manager), click `Hosting plans`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. In the box **Plan** and under `Service plan`, check that the reference `Cloud Web 3`{.action} is present.
 
 Once you have done this, please ensure that you have the runtime software application (or applications) required for your project before you continue:
 
@@ -146,8 +150,8 @@ There are several OVHcloud DNS records. We will focus on two particular records,
 
 |DNS record|Associated service|Where to find it|
 |---|---|---|
-|A|For the website|In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Hosting`{.action} section for the hosting plan concerned. Copy the IP address that appears next to "IPv4" in the `General information`{.action} tab.|
-|MX|For emails|In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Emails`{.action} section for the domain name concerned. Copy the information that appears next to “MX records” in the `General information`{.action} tab.|
+|A|For the website|In the [OVHcloud Control Panel](/links/manager), go to the `Hosting`{.action} section for the hosting plan concerned. Copy the IP address that appears next to "IPv4" in the `General information`{.action} tab.|
+|MX|For emails|In the [OVHcloud Control Panel](/links/manager), go to the `Emails`{.action} section for the domain name concerned. Copy the information that appears next to “MX records” in the `General information`{.action} tab.|
 
 #### 2. Check and/or modify the DNS records.
 
@@ -157,14 +161,14 @@ Now that you are more familiar with the OVHcloud DNS records for your [Cloud Web
 >
 > - If your domain name does not use the OVHcloud DNS configuration, you will need to make changes using the interface given by the service provider managing your domain name.
 > 
-> - If your domain name is registered with OVHcloud, you can check if the domain name is using our DNS configuration. To do this, go to the [Control Panel](/links/manager){.external}, select the domain name concerned, and go to the `DNS servers`{.action} tab.
+> - If your domain name is registered with OVHcloud, you can check if the domain name is using our DNS configuration. To do this, go to the [Control Panel](/links/manager), select the domain name concerned, and go to the `DNS servers`{.action} tab.
 >
 
 Please read the instructions below to see where you should make the changes:
 
 |DNS configuration used|Where to make the changes|
 |---|---|
-|OVHcloud|In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Domains`{.action} section for the domain name concerned. Then in the DNS zone tab, check and edit the information as required. If you need any further assistance, you can read our guide to [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit){.external}.|
+|OVHcloud|In your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section. Click on the `DNS zones`{.action} menu, then choose the domain name concerned. Read our documentation "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)" if necessary.|
 |Other|From the interface given by the service provider managing your domain name’s DNS configuration. Please contact your service provider if you encounter any difficulties making these changes.|
 
 Once you have modified your domain name’s DNS configuration, you will need to allow a maximum of 24 hours for the changes to fully propagate and take effect. If you have added several domain names to your Cloud Web hosting plan as a multisite, you will need to make these two changes for each individual domain name. 

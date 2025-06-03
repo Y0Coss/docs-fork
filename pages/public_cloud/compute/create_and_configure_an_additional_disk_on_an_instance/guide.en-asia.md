@@ -86,7 +86,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then open `Block Storage`{.action} in the left-hand menu.
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
 >>
 >> In this section, click on the button `Create a volume`{.action}.
 >>
@@ -560,7 +560,7 @@ Finally, we will detach the volume from the instance:
 > [!tabs]
 > **Via the OVHcloud Control Panel**
 >>
->> Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
+>> Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage & backup**.
 >>
 >> Click the `...`{.action} button next to the corresponding volume and select `Detach from instance`{.action}.
 >>

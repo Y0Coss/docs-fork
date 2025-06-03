@@ -46,7 +46,7 @@ Note that we are both compatible with the standard and flex variations (Flex off
 Note however that Managed Kubernetes Service does not currently offer worker nodes resize.  
 
 Using our API, you shall use the flavor name such as `b2-7` as parameter of the POST `/cloud/project/{serviceName}/kube/{kubeId}/node` endpoint.  
-This is detailed in the [quickstart with OVH API](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world-ovh-api) guide.
+This is detailed in the [quickstart with OVH API](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) guide.
 
 GPU (`T1-*`) instances are now supported! If you want to know [how to deploy GPU applications on Kubernetes Managed Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-gpu-application), please read our tutorial.
 

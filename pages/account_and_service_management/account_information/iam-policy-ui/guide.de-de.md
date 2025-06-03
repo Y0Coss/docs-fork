@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinie über Ihr Kundencenter
 excerpt: Erfahren Sie hier, wie Sie Benutzern im OVHcloud Kunden-Account spezifische Zugriffsrechte gewähren
-updated: 2025-01-08
+updated: 2025-05-15
 ---
 
 ## Ziel
@@ -37,17 +37,13 @@ Es kann beispielsweise eine Richtlinie erstellt werden, um einem Benutzer namens
 
 ### Menü für IAM aufrufen
 
-Klicken Sie oben rechts auf den Namen Ihres Accounts und dann erneut in der Seitenleiste auf Ihren Namen.
+Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action} und anschließend auf `Richtlinien`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Sie können das IAM-Menü über den dedizierten Eintrag in Ihrem Kundencenter aufrufen.
-
-![IAM-Menüzugriff](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
-
 Wenn Sie dieses Menü zum ersten Mal aufrufen, wird die folgende Seite angezeigt:
 
-![IAM-Menüzugriff]](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
+![IAM-Menüzugriff](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
 Klicken Sie je nach der gewünschten Aktion auf [Richtlinie erstellen](#create-policy) oder auf [Benutzer erstellen](#create-users).
 
@@ -57,7 +53,7 @@ Klicken Sie je nach der gewünschten Aktion auf [Richtlinie erstellen](#create-p
 >
 > Kunden können diese Richtlinien nicht ändern oder löschen.
 
-Wenn Sie bereits Richtlinien oder Benutzer erstellt haben, wird im Menü eine Liste aller derzeit in Ihrem OVHcloud Kunden-Account erstellten Richtlinien angezeigt.
+Wenn Sie bereits Richtlinien oder Benutzer erstellt haben, finden Sie diese auf dem ersten Tab `Meine Richtlinien`{.action}. Der Tab `OVHcloud Richtlinien`{.action} enthält nicht bearbeitbare Policys, die automatisch von OVHcloud erstellt werden.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -151,7 +147,7 @@ In einem Popup-Fenster werden Sie aufgefordert, den Löschvorgang zu bestätigen
 
 ### Verwaltung von Identitäten
 
-Die für die Richtlinien verfügbaren Identitäten werden über den Tab `Identitäten`{.action} verwaltet.
+Um die für Richtlinien verfügbaren Identitäten zu verwalten, gehen Sie zum Menü `Identität, Sicherheit und Operationen`{.action} und danach zum Abschnitt `Identitäten`{.action}.
 
 Details zur Benutzerverwaltung finden Sie in [unserer Dokumentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
@@ -161,7 +157,7 @@ Richtlinien können auf Ressourcengruppen abzielen (anstatt direkt auf Ressource
 
 #### Ressourcengruppe erstellen
 
-Um eine Ressourcengruppe zu erstellen, öffnen Sie im IAM-Menü den entsprechenden Tab.
+Um eine Ressourcengruppe zu erstellen, gehen Sie zum Abschnitt `Richtlinien`{.action} und klicken Sie dann auf den Tab `Ressourcengruppen`{.action}:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 

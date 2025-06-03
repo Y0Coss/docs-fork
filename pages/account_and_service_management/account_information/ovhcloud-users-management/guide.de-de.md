@@ -1,7 +1,7 @@
 ---
 title: "Lokale Benutzer auf einem OVHcloud Kunden-Account erstellen und verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Benutzer über Ihren OVHcloud Kunden-Account verwalten"
-updated: 2024-06-25
+updated: 2025-05-16
 ---
 
 ## Ziel
@@ -20,7 +20,7 @@ Bei OVHcloud haben Sie die Möglichkeit, lokale Benutzer zu erstellen und diesen
 ## Voraussetzungen
 
 - Sie verfügen über einen aktiven OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -32,15 +32,7 @@ Lokale Benutzer sind einer der Identitätstypen, die in Ihrem OVHcloud Kunden-Ac
 
 #### Benutzer hinzufügen
 
-Klicken Sie oben rechts auf den Namen Ihres Accounts und dann erneut in der Seitenleiste auf Ihren Namen.
-
-![IAM-Menüzugriff](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Sie können das IAM-Menü über den dedizierten Eintrag in Ihrem Kundencenter aufrufen.
-
-![IAM-Menüzugriff](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
-
-Klicken Sie dann auf den Tab `Identitäten`{.action}, um auf die Verwaltung der lokalen Benutzer zuzugreifen.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie in der Seitenleiste auf `Identität, Sicherheit und Operationen`{.action}, dann auf `Identitäten`{.action}.
 
 ![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -66,13 +58,13 @@ Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken S
 | DEFAULT (Eingeschränkter Administrator) | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **ausschließlich** Benutzerverwaltung. |
 | ADMIN (Administrator) | Schreibzugriff auf das OVHcloud Kundencenter und alle Bereiche **einschließlich** Benutzerverwaltung. |
 
-Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen getrennt mit einem “/”.
+Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen, getrennt mit einem “/”.
 
 Beispiel: **1234-567-89/johnsmith**.
 
 ![Benutzerverwaltung](images/usersmanagement3.png){.thumbnail}
 
-Der Benutzer kann sich von nun an mit dieser Kennung im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen. 
+Der Benutzer kann sich von nun an mit dieser Kennung im [OVHcloud Kundencenter](/links/manager) einloggen. 
 
 Darüber hinaus kann er sein Passwort ändern und seinen eigenen Zugang zu Ihrem Account mithilfe einer Zwei-Faktor-Authentifizierung zusätzlich schützen (diese betrifft nur den Zugriff als Benutzer). Um mehr über die Einrichtung der Zwei-Faktor-Authentifizierung zu erfahren, lesen Sie [diese Anleitung](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
@@ -90,7 +82,7 @@ Durch Bearbeiten des Benutzers können Sie dessen E-Mail-Adresse, Rechte und die
 
 #### Gruppe hinzufügen
 
-Klicken Sie im Tab `Identitäten`{.action} auf `Gruppe deklarieren`{.action}.
+Um eine Gruppe hinzuzufügen, gehen Sie zum Abschnitt `Identitäten`{.action} und dann zum Tab `Nutzergruppen`{.action}. Klicken Sie dann auf die Schaltfläche `Eine Gruppe anmelden`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

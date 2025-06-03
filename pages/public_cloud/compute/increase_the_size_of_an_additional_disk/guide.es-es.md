@@ -1,7 +1,7 @@
 ---
 title: "Aumentar el tamaño de un disco adicional"
 excerpt: "Cómo aumentar el tamaño de un volumen adicional y aumentar su partición principal"
-updated: 2025-03-21
+updated: 2025-04-28
 ---
 
 <style>
@@ -26,7 +26,7 @@ Si ha alcanzado la capacidad máxima de su disco adicional, puede añadir almace
 
 ## Requisitos
 
-- Tener una [instancia Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su proyecto de Public Cloud.
+- Tener una [instancia Public Cloud](/links/public-cloud/compute) en su proyecto de Public Cloud.
 - Tener un [disco adicional](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creado en su proyecto.
 - Tienes acceso a su [área de cliente de OVHcloud](/links/manager).
 - Tener acceso administrativo (sudo) a su instancia a través de SSH (Linux) o RDP (Windows).
@@ -99,7 +99,7 @@ Para asegurarse de que cambia el tamaño del disco en el momento adecuado, es es
 
 ### Cambiar el tamaño del disco
 
-Conéctese al [área de cliente de OVHcloud](/links/manager) y abra su proyecto de `Public Cloud`{.action}. A continuación, haga clic en `Block Storage`{.action} en el menú de la izquierda.
+Conéctese al [área de cliente de OVHcloud](/links/manager) y abra su proyecto de `Public Cloud`{.action}. A continuación, haga clic en `Block Storage`{.action} en el menú de la izquierda en **Backup Storage**
 
 Si el volumen está asociado a una **instancia Windows**, haga clic en el botón `...`{.action} a la derecha del volumen correspondiente y seleccione `Desvincular de la instancia`{.action}.
 
@@ -234,6 +234,7 @@ El volumen redimensionado incluye ahora el espacio en disco adicional.
 ## Más información
 
 [Crear y configurar un disco adicional en una instancia](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
+
 [Cambie el tipo de volumen en su Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

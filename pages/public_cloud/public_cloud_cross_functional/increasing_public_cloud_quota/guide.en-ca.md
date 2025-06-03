@@ -1,7 +1,7 @@
 ---
 title: 'How to increase Public Cloud quotas'
 excerpt: 'Find out how to apply for a Public Cloud quota extension'
-updated: 2024-05-21
+updated: 2025-05-30
 ---
 
 ## Objective
@@ -26,16 +26,18 @@ In compliance with internal criteria (seniority, existence of paid invoices, etc
 You can increase your resources quota manually or automatically.
 
 > [!primary]
-> If you need to increase your quota and the `Increase your quota!`{.action} button is not available in your Control Panel, you can contact our support teams.
+> If you need to increase your quota and the `Increase your quota!`{.action} button is not available in your Control Panel, click on the `Contact Support`{.action} button.
 >
+
+![Contact Support](images/contact_support_quota.png){.thumbnail}
 
 #### Increasing your resources quota manually
 
 This procedure allows you to manually request a quota increase and validate it with an upfront payment (Public Cloud credit).
 
-Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
-In the left-hand sidebar, click on `Quota and Regions`{.action}.
+In the left-hand sidebar, click on `Quota & Regions`{.action} under **Settings**.
 
 ![access quota](images/raisepciquota1-2023.png){.thumbnail}
 
@@ -73,9 +75,9 @@ This option allows you to request an automatic and gradual increase of your reso
 
 This is not an instant process and the resources quota are increased over the course of time.
 
-Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
-In the left-hand sidebar, click on `Quota and Regions`{.action}.
+In the left-hand sidebar, click on `Quota & Regions`{.action} under **Settings**.
 
 Click on the `?`{.action} button for more information on this feature, then click on the `toggle icon`{.action} to switch the status to "**Enabled**".
 

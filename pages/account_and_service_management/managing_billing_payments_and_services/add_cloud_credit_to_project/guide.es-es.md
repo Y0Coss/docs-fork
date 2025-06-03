@@ -1,7 +1,7 @@
 ---
 title: 'Añadir crédito Cloud'
 excerpt: 'Cómo añadir créditos o códigos promocionales a su proyecto de Public Cloud'
-updated: 2022-02-04
+updated: 2025-04-28
 ---
 
 ## Objetivo
@@ -13,12 +13,12 @@ Esto significa que este crédito cloud se cargará en primer lugar y que, a cont
 
 ## Requisitos
 
-- Un proyecto de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Un proyecto de [Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
+- Accesar a su [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
-Inicie sesión en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. Abra `Credit and Vouchers`{.action} en el menú de la izquierda.
+Inicie sesión en su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. Abra `Crédito y códigos promocionales`{.action} en el menú de la izquierda en **Ajustes**.
 
 > [!warning]
 >

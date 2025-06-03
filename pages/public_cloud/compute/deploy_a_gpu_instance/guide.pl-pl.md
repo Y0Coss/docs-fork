@@ -1,7 +1,7 @@
 ---
 title: 'Uruchomienie instancji GPU'
 excerpt: 'Dowiedz się, jak uruchomić instancję GPU z systemem Linux lub Windows'
-updated: 2024-07-17
+updated: 2025-05-28
 ---
 
 > [!primary]
@@ -38,7 +38,7 @@ Wszystkich oferowanych obrazów można użyć w instancji GPU.
 > Jeśli ręczne skompilowanie modułu jądra stanowi problem, zalecamy użycie dystrybucji wspieranej przez firmę Nvidia, do której są udostępnione *gotowe* sterowniki: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Po zalogowaniu się do [Panelu klienta OVHcloud](/links/manager), kliknij zakładkę `Public Cloud`{.action}. Wybierz Twój projekt Public Cloud i kliknij `Instances`{.action} w menu po lewej stronie w zakładce **Compute**. Następnie kliknij przycisk `Utwórz instancję`{.action} i wybierz kompatybilną instancję GPU:
+Po zalogowaniu się do [Panelu klienta OVHcloud](/links/manager), kliknij zakładkę `Public Cloud`{.action}. Wybierz Twój projekt Public Cloud i kliknij `Instancje`{.action} w menu po lewej stronie w zakładce **Compute**. Następnie kliknij przycisk `Utwórz instancję`{.action} i wybierz kompatybilną instancję GPU:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
@@ -61,6 +61,8 @@ sudo dpkg -i cuda-repo-XXXX-XXXXXX
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install cuda
+sudo apt-get install -y cuda-drivers
+sudo apt-get install linux-headers-$(uname -r)
 sudo reboot
 ```
 
@@ -107,7 +109,7 @@ Dlatego oferujemy specjalne obrazy oparte na wirtualnym systemie BIOS UEFI, dzi�
 >
 
 
-Po zalogowaniu się do [Twojego panelu klienta OVHcloud](/links/manager) przejdź do Twojego projektu Public Cloud i kliknij `Instances`{.action} w menu po lewej stronie w zakładce **Compute**. Następnie kliknij przycisk `Utwórz instancję`{.action} i wybierz kompatybilną instancję GPU:
+Po zalogowaniu się do [Twojego panelu klienta OVHcloud](/links/manager) przejdź do Twojego projektu Public Cloud i kliknij `Instancje`{.action} w menu po lewej stronie w zakładce **Compute**. Następnie kliknij przycisk `Utwórz instancję`{.action} i wybierz kompatybilną instancję GPU:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 

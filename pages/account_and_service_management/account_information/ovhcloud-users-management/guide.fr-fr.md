@@ -1,7 +1,7 @@
 ---
 title: 'Créer et gérer des utilisateurs locaux sur un compte OVHcloud'
 excerpt: 'Découvrez comment ajouter des utilisateurs locaux depuis votre compte OVHcloud'
-updated: 2024-06-25
+updated: 2025-05-16
 ---
 
 ## Objectif
@@ -20,7 +20,7 @@ OVHcloud vous donne la possibilité de créer des utilisateurs locaux, qui peuve
 ## Prérequis
 
 - Disposer d'un compte OVHcloud actif.
-- Être connecté à votre espace client.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -32,15 +32,7 @@ Les utilisateurs locaux sont un des types d'identités pouvant être mis en plac
 
 #### Ajouter un utilisateur
 
-Cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre nom dans la barre latérale.
-
-![Accès au menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
-
-Vous pouvez accéder au menu IAM via l’entrée dédiée dans votre espace client.
-
-![Accès au menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
-
-Cliquez ensuite sur l'onglet `Identités`{.action} pour accéder à la gestion des utilisateurs locaux.
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Dans la barre latérale, cliquez sur `Identité, Sécurité & Opérations`{.action}, puis sur `Identités`{.action}.
 
 ![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -72,7 +64,7 @@ Exemple : **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 
-L'utilisateur créé pourra dès lors se connecter à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} en utilisant cet identifiant.
+L'utilisateur créé pourra dès lors se connecter à [l'espace client OVHcloud](/links/manager) en utilisant cet identifiant.
 
 Il pourra également modifier son mot de passe et sécuriser son propre accès à votre compte en activant une mesure de double authentification (celle-ci concernera uniquement son accès en tant qu'utilisateur). Vous pouvez consulter à cet effet [le guide sur la mise en place de la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa){.external}.
 
@@ -90,7 +82,7 @@ La modification de l'utilisateur vous permettra de mettre à jour son adresse e-
 
 #### Ajouter un groupe
 
-Dans l'onglet `Identités`{.action}, cliquez sur `Déclarer un groupe`{.action}.
+Pour ajouter un groupe, rendez-vous dans la section `Identités`{.action} puis dans l'onglet `Groupes d'utilisateurs`{.action}. Cliquez ensuite sur le bouton `Déclarer un groupe`{.action}.
 
 ![users-management](images/usersmanagement7.png){.thumbnail}
 

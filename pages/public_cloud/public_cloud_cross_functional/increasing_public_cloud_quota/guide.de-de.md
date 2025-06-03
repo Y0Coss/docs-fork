@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Quota erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
-updated: 2024-05-21
+updated: 2025-05-30
 ---
 
 > [!primary]
@@ -25,17 +25,23 @@ Um zusätzliche Ressourcen und Instanzen nutzen zu können, müssen deren Quotas
 
 ### Erhöhung der Ressourcenquote
 
-Gemäß interner Kriterien (Dienstalter, bezahlte Rechnungen usw.) können Sie direkt vom OVHcloud Kundencenter aus Quotenerhöhungen für Ihre Public Cloud-Projekte beantragen.
+Gemäß interner Kriterien (Dienstalter, bezahlte Rechnungen usw.) können Sie direkt vom OVHcloud Kundencenter aus Quotenerhöhungen für Ihre Public Cloud Projekte beantragen.
 
 Sie können Ihre Ressourcenquote manuell oder automatisch erhöhen.
+
+> [!primary]
+> Wenn Sie Ihre Quota erhöhen möchten und die Schaltfläche `Quota erhöhen`{.action} in Ihrem Kundencenter nicht verfügbar ist, klicken Sie auf die Schaltfläche `Kundendienst kontaktieren`{.action}.
+>
+
+![Contact Support](images/contact_support_quota.png){.thumbnail}
 
 #### Manuelle Erhöhung der Ressourcenquote
 
 Dieses Verfahren ermöglicht Ihnen, eine Quotenerhöhung manuell anzufordern und mit einer Vorauszahlung (Public Cloud Credit) zu bestätigen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 
-Klicken Sie im linken Menü auf `Quota and Regions`{.action}.
+Klicken Sie im linken Menü auf `Quota und Regionen`{.action}.
 
 ![access quota](images/raisepciquota1-2023.png){.thumbnail}
 
@@ -75,7 +81,7 @@ Dies ist kein sofortiger Prozess; die Ressourcenquote wird im Laufe der Zeit erh
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wechseln Sie zum Bereich `Public Cloud`{.action}.
 
-Klicken Sie im linken Menü auf `Quota and Regions`{.action}.
+Klicken Sie im linken Menü auf `Quota und Regionen`{.action}.
 
 Sie können auf den Button `?`{.action} klicken, um weitere Informationen zu dieser Funktion anzuzeigen. Klicken Sie dann auf den `Schieberegler`{.action}, um den Status auf "**Aktiviert**" zu setzen.
 

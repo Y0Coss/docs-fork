@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar las instancias de Public Cloud'
 excerpt: 'Cómo gestionar las instancias de Public Cloud desde el Panel de configuración de OVHcloud'
-updated: 2024-02-20
+updated: 2025-04-28
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-02-20
 
 ## Objetivo
 
-Puede gestionar sus instancias de Public Cloud desde el [Panel de configuración](/links/manager).
+Puede gestionar sus instancias de Public Cloud desde el [área de cliente de OVHcloud](/links/manager).
 
 **Esta guía explica las acciones disponibles en el área de cliente de OVHcloud para una instancia de Public Cloud.**
 
@@ -18,17 +18,17 @@ Puede gestionar sus instancias de Public Cloud desde el [Panel de configuración
 
 - Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
 - Una [instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) en su proyecto
-- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager)
+- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](/links/manager) y abra su proyecto de `Public Cloud`{.action}. 
+Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente.
 
 ### Utilizar la interfaz de gestión de instancias
 
-En el menú de la izquierda, haga clic en `Instances`{.action}. 
+En el menú de la izquierda, haga clic en `Instancias`{.action}. 
 
-![public-cloud](images/compute-2024.png){.thumbnail}
+![public-cloud](images/compute-2025.png){.thumbnail}
 
 Esta página lista todas sus instancias de Public Cloud y algunas de sus propiedades:
 
@@ -129,7 +129,7 @@ Confirme la solicitud de eliminación en la nueva ventana.
 
 ### Acceder a la consola VNC <a name="accessvnc"></a>
 
-En el menú de la izquierda, haga clic en `Instances`{.action}. En la página de gestión de las instancias, haga clic en el nombre de la instancia en la tabla.
+En el menú de la izquierda, haga clic en `Instancias`{.action}. En la página de gestión de las instancias, haga clic en el nombre de la instancia en la tabla.
 
 A continuación, abra la pestaña `Consola VNC`{.action}.
 
@@ -147,4 +147,4 @@ Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](/pag
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

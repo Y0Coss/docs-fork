@@ -68,6 +68,7 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-backup-drp: Sauvegar
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-tanzu: VMware Tanzu
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-secnumcloud: SecNumCloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: VMware vROps
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration: Migration
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-concepts: Concepts
 hosted-private-cloud-sap-ovhcloud-getting-started: Premiers pas
@@ -102,7 +103,7 @@ public-cloud-ai-and-machine-learning-ai-endpoints: AI Endpoints
 public-cloud-ai-and-machine-learning-ai-endpoints-guides: AI Endpoints - Guides
 public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutoriels
 public-cloud-containers-orchestration: Containers & Orchestration
-public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes (K8s)
+public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
 public-cloud-containers-orchestration-managed-kubernetes-k8s-technical-resources: Technical resources
 public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
@@ -117,7 +118,7 @@ public-cloud-containers-orchestration-managed-kubernetes-k8s-gpu: GPU
 public-cloud-containers-orchestration-managed-kubernetes-k8s-security: Security
 public-cloud-containers-orchestration-managed-kubernetes-k8s-serverless: Serverless
 public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operators
-public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (Harbor)
+public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (MPR)
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
@@ -149,9 +150,9 @@ public-cloud-databases-mysql-tutorials: MySQL - Tutoriels
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-postgresql-guides: PostgreSQL - Guides
 public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutoriels
-public-cloud-databases-redis: Caching
-public-cloud-databases-redis-guides: Caching - Guides
-public-cloud-databases-redis-tutorials: Caching - Tutoriels
+public-cloud-databases-redis: Caching/Valkey
+public-cloud-databases-redis-guides: Caching/Valkey - Guides
+public-cloud-databases-redis-tutorials: Caching/Valkey - Tutoriels
 public-cloud-data-analytics-grafana: Dashboards
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutoriels

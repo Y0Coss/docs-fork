@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Available language versions"
 excerpt: "Find out more about language versions (Apache, PHP, Python, Perl) for OVHcloud web hosting plans"
-updated: 2025-04-04
+updated: 2025-04-28
 ---
 
 ## Objective
@@ -109,10 +109,28 @@ The information contained in this guide concerns the versions of **PHP**, **Pyth
 </tbody>
 </table>
 
-For more details on PHP end-of-life and support dates, as well as information on runtime environments, please refer to our guides:
+### PHP - End-of-Support & End-Of-Life announcements
 
-- [PHP - End-of-Support & End-Of-Life announcements](/pages/web_cloud/web_hosting/php_eol_eos).
-- [Web Hosting - Environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+| **Version** | **Main PHP community dates**                                   | **Available version from OVHcloud** | **OVHcloud end of life date**          |
+|-------------|----------------------------------------------------------------|-------------------------------------|----------------------------------------|
+| PHP 8.4     | End of active support: 2026-12-31<br>End of security support: 2028-12-31<br>End of life: 2028-12-31 | Available                           | 2029-06-30                             |
+| PHP 8.3     | End of active support: 2025-12-31<br>End of security support: 2027-12-31<br>End of life: 2027-12-31 | Available                           | End of life date to be determined      |
+| PHP 8.2     | End of active support: <span style="color:red;">2024-12-31</span><br>End of security support: 2026-12-31<br>End of life: 2026-12-31 | Available                           | End of life date to be determined      |
+| PHP 8.1     | End of active support: <span style="color:red;">2023-11-25</span><br>End of security support: <span style="color:red;">2025-12-31</span><br>End of life: <span style="color:red;">2025-12-31</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 8.0     | End of active support: <span style="color:red;">2022-11-26</span><br>End of security support: <span style="color:red;">2023-11-26</span><br>End of life: <span style="color:red;">2023-11-26</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 7.4     | End of active support: <span style="color:red;">2021-11-28</span><br>End of security support: <span style="color:red;">2022-11-28</span><br>End of life: <span style="color:red;">2022-11-28</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 7.3     | End of active support: <span style="color:red;">2020-12-06</span><br>End of security support: <span style="color:red;">2021-12-06</span><br>End of life: <span style="color:red;">2021-12-06</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 7.2     | End of active support: <span style="color:red;">2019-11-30</span><br>End of security support: <span style="color:red;">2020-11-30</span><br>End of life: <span style="color:red;">2020-11-30</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 7.1     | End of active support: <span style="color:red;">2018-12-01</span><br>End of security support: <span style="color:red;">2019-12-01</span><br>End of life: <span style="color:red;">2019-12-01</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 7.0     | End of active support: <span style="color:red;">2017-12-03</span><br>End of security support: <span style="color:red;">2019-01-10</span><br>End of life: <span style="color:red;">2019-01-10</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 5.6     | End of active support: <span style="color:red;">2017-01-19</span><br>End of security support: <span style="color:red;">2018-12-31</span><br>End of life: <span style="color:red;">2018-12-31</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 5.5     | End of active support: <span style="color:red;">2015-07-10</span><br>End of security support: <span style="color:red;">2016-07-21</span><br>End of life: <span style="color:red;">2016-07-21</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 5.4     | End of active support: <span style="color:red;">2014-09-14</span><br>End of security support: <span style="color:red;">2015-09-03</span><br>End of life: <span style="color:red;">2015-09-03</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 5.3     | End of active support: <span style="color:red;">2011-06-30</span><br>End of security support: <span style="color:red;">2014-08-14</span><br>End of life: <span style="color:red;">2014-08-14</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 5.2     | End of active support: <span style="color:red;">2008-11-02</span><br>End of security support: <span style="color:red;">2011-01-06</span><br>End of life: <span style="color:red;">2011-01-06</span> | Available                           | <span style="color:red;">Recommended migration</span> |
+| PHP 4.4     | End of active support: <span style="color:red;">2008-08-07</span><br>End of security support: <span style="color:red;">2008-08-07</span><br>End of life: <span style="color:red;">2008-08-07</span> | Not available                      | <span style="color:red;">Recommended migration</span> |
+
+To update the PHP version of your web application, please read the “PHP versions” section of our guide [Web Hosting - Environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
 title: Aumenta la dimensione di un disco aggiuntivo
 excerpt: Come aumentare la dimensione di un volume aggiuntivo e aumentare la sua partizione principale
-updated: 2025-03-21
+updated: 2025-04-28
 ---
 
 <style>
@@ -26,7 +26,7 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, aggiungi spazio 
 
 ## Prerequisiti
 
-- Aver creato un’istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo progetto Public Cloud.
+- Aver creato un’istanza [Public Cloud](/links/public-cloud/compute) nel tuo progetto Public Cloud.
 - Disporre di un [disco aggiuntivo](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Avere accesso amministrativo (sudo) alla tua istanza via SSH (Linux) o RDP (Windows).
@@ -99,7 +99,7 @@ Per permettere di ridimensionare il disco al momento giusto, è fondamentale con
 
 ### Modifica la dimensione del disco
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e apri il tuo progetto `Public Cloud`{.action}. Clicca su `Block Storage`{.action} nel menu a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e apri il tuo progetto `Public Cloud`{.action}. Clicca su `Block Storage`{.action} nel menu a sinistra sotto **Storage e Backup**.
 
 Se il volume è associato a un'**istanza Windows**, clicca sul pulsante `...`{.action} a destra del volume corrispondente e seleziona `Scollega dall'istanza`{.action}.
 
@@ -234,6 +234,7 @@ Il volume ridimensionato include lo spazio disco aggiuntivo.
 ## Per saperne di più
 
 [Crea e configura un disco aggiuntivo sulla tua istanza](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
+
 [Modifica il tipo di volume di Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

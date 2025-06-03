@@ -41,7 +41,7 @@ Vous aurez alors accès aux conditions particulières relatives à l'hébergemen
 
 Prenez connaissance de ces dernières et cochez la case d'acceptation des contrats. Cliquez enfin sur `Mettre à jour`{.action} pour finaliser la prise en compte de la certification HDS sur votre projet, conformément aux conditions contractuelles.
 
-![activer HDS projet existant](images/hds-current-project.png){.thumbnail}
+![activer HDS projet existant](images/hds-current-project1.png){.thumbnail}
 
 ## Aller plus loin
 

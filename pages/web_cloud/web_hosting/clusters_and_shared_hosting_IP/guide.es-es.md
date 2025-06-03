@@ -27,7 +27,7 @@ Esta guía recoge todas las direcciones IP de los alojamientos web de OVHcloud. 
 
 ## Procedimiento
 
-Para conocer el cluster de alojamiento web en el que se encuentra su servicio, aga clic en las fichas siguientes para ver cada uno de los **4** etapas.
+Para conocer el cluster de alojamiento web en el que se encuentra su servicio, haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -40,7 +40,7 @@ Para conocer el cluster de alojamiento web en el que se encuentra su servicio, a
 >>
 >> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
 >>
->> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
 > **Etapa 3**
 >>

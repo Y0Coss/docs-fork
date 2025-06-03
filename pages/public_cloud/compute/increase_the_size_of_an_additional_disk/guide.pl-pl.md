@@ -1,7 +1,7 @@
 ---
 title: "Zwiększ rozmiar dodatkowego dysku"
 excerpt: "Dowiedz się, jak zwiększyć rozmiar dodatkowego wolumenu i powiększyć jego partycję główną"
-updated: 2025-03-21
+updated: 2025-04-28
 ---
 
 <style>
@@ -26,7 +26,7 @@ Jeśli osiągniesz maksymalną pojemność dodatkowego dysku, możesz dodać prz
 
 ## Wymagania początkowe
 
-- Instancja [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) w Twoim projekcie Public Cloud
+- Instancja [Public Cloud](/links/public-cloud/compute) w Twoim projekcie Public Cloud
 - [Dodatkowy dysk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Dostęp administracyjny (sudo) do Twojej instancji przez SSH (Linux) lub RDP (Windows)
@@ -92,14 +92,14 @@ Aby mieć pewność, że rozmiar dysku zostanie zwiększony we właściwym momen
 >> Aby sprawdzić partycje dysków i ich rozmiar:
 >>
 >> ```bash
->> Lsblk
+>> lsblk
 >> ```
 >>
 >> ///
 
 ### Zmień rozmiar dysku
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i otwórz swój projekt `Public Cloud`{.action}. Następnie w menu po lewej stronie kliknij `Block Storage`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i otwórz swój projekt `Public Cloud`{.action}. Następnie w menu po lewej stronie kliknij `Block Storage`{.action} pod **Storage i Backup**
 
 Jeśli wolumen jest przypisany do **instancji Windows**, kliknij przycisk `...`{.action} z prawej strony odpowiedniego wolumenu i wybierz opcję `Odłącz instancję`{.action}.
 
@@ -234,6 +234,7 @@ Zmieniony rozmiar przestrzeni dyskowej zawiera teraz dodatkową przestrzeń dysk
 ## Sprawdź również
 
 [Zarządzanie wolumenem instancji Public Cloud](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
+
 [Zmień typ wolumenu Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

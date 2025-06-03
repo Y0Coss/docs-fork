@@ -1,12 +1,12 @@
 ---
 title: 'Purchase Order (PO)'
 excerpt: Purchase Order Nummer verstehen und im Rahmen der OVHcloud Abrechnung anwenden
-updated: 2022-07-22
+updated: 2025-04-28
 ---
 
 ## Ziel
 
-In dieser Anleitung erfahren Sie, wie Sie die Bestellnummer bzw. Purchase Order Nummer für die OVHCloud Abrechnung verwenden.
+In dieser Anleitung erfahren Sie, wie Sie die Bestellnummer bzw. Purchase Order Nummer für die OVHcloud Abrechnung verwenden.
 
 ## In der praktischen Anwendung
 
@@ -49,9 +49,9 @@ Für OVHcloud muss das Dokument daher mindestens folgende Angaben enthalten:
 
 ### Wie Sie eine Purchase Order Nummer (PO) in Ihrem OVHcloud Kundencenter eingeben
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie dann im Tab `Dashboard`{.action} auf `Meine Bestellungen anzeigen`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie dann direkt auf der angezeigten Seite auf `Meine Bestellungen anzeigen`{.action}.
 
-![Kundencenter](images/internalreference00.png){.thumbnail}
+![Kundencenter](images/huborders.png){.thumbnail}
 
 Klicken Sie auf den Tab `Meine internen Referenzen`{.action} und anschließend auf den Button `+ Interne Referenz hinzufügen`{.action}.
 

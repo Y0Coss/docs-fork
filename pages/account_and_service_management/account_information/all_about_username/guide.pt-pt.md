@@ -1,7 +1,7 @@
 ---
 title: 'Proteger a minha conta OVHcloud e gerir as minhas informações pessoais'
 excerpt: 'Saiba como otimizar a segurança da sua conta OVHcloud, gerir os seus dados pessoais e delegar o acesso à sua conta.'
-updated: 2021-07-01
+updated: 2025-05-22
 ---
 
 ## Objetivo
@@ -53,9 +53,9 @@ Se ainda não o fez, guarde a sua palavra-passe num [gestor de palavras-passe](/
 Em caso de dificuldade de acesso ao seu endereço de e-mail principal, um endereço de e-mail de SOS permite conservar o acesso à sua conta e, portanto, à gestão dos seus serviços.
 <br>Este segundo endereço **deve ser diferente** do primeiro, nomeadamente para facilitar as suas diligências em caso de recuperação de password.
 
-Para introduzir este endereço de e-mail de SOS, clique no seu nome (canto superior direito) e, a seguir, nas suas iniciais.
+Para introduzir este endereço de e-mail de SOS, clicando, no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager), no seu nome e, depois, em `Aceder à minha conta`{.action}.
 
-Clique então, no quadro `O meu perfil` no botão `...`{.action} e em `Editar o meu perfil`{.action}.
+Na secção `O meu perfil`{.action} à direita do ecrã (clique novamente no seu nome para eliminar o menu à esquerda), clique em `Editar o meu perfil`{.action}.
 
 ![endereço de e-mail de recurso](images/edit-profile.png){.thumbnail}
 
@@ -78,11 +78,9 @@ Encontrará todos os detalhes para o ativar no nosso manual "[Proteger a sua con
 
 #### Modificar as minhas informações pessoais
 
-Pode alterar as informações da sua conta a partir da Área de [Cliente OVHcloud](/links/manager). Para isso, clique no seu nome (canto superior direito) e, a seguir, nas suas iniciais.
+Pode alterar as informações da sua conta a partir da Área de [Cliente OVHcloud](/links/manager). Para isso, clicando no canto superior direito do seu [Área de Cliente OVHcloud](/links/manager), no seu nome e, depois, em `Aceder à minha conta`{.action}.
 
-A seguir, clique no botão `...`{.action} no quadro `O meu perfil` e, a seguir, em `Editar o meu perfil`{.action}.
-
-![identificador de cliente](images/edit-profile.png){.thumbnail}
+Na secção `O meu perfil`{.action} à direita do ecrã (clique novamente no seu nome para eliminar o menu à esquerda), clique em `Editar o meu perfil`{.action}.
 
 Altere os seus dados e clique no botão `Validar`{.action}.
 
@@ -100,6 +98,10 @@ Se deseja indicar um novo endereço de e-mail principal, terá de o validar por 
 Introduza o código no campo `Código de validação` e valide.
 
 ![identificador de cliente](images/nichandle08.png){.thumbnail}
+
+> [!primary]
+>
+> O `Código de validação` só permite acelerar a alteração do endereço de e-mail principal. Se o antigo endereço de e-mail não estiver acessível e não puder recuperar este código, a modificação será no entanto efetuada automaticamente **25** horas após o pedido.
 
 #### Modificar o tipo de conta
 
