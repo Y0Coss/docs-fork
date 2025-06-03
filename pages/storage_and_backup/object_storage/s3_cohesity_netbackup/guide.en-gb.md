@@ -94,7 +94,7 @@ You will be guided through the entire process, from selecting the Storage Server
 16. Modify your backup policies accordingly to integrate OVHcloud Object Storage.
 
     ![storage lifecycle policy](images/storage_lifecycle_policy.png){.thumbnail}
-    ![create storage lifecycle policy](images/create_storage_lifecycle_policy.png){.thumbnail}
+    ![create storage lifecycle policy](images/new_operation_storage_lifecycle_policy.png){.thumbnail}
     ![create new policy](images/create_new_policy.png){.thumbnail}
     ![create new policy 2](images/create_new_policy2.png){.thumbnail}
 

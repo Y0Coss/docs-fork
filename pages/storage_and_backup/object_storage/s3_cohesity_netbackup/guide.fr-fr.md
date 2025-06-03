@@ -95,7 +95,7 @@ Vous serez guidé tout au long de la procédure, depuis la sélection du Storage
 16. Modifiez vos politiques de sauvegarde en conséquence pour intégrer le stockage OVHcloud.
 
     ![storage lifecycle policy](images/storage_lifecycle_policy.png){.thumbnail}
-    ![create storage lifecycle policy](images/create_storage_lifecycle_policy.png){.thumbnail}
+    ![create storage lifecycle policy](images/new_operation_storage_lifecycle_policy.png){.thumbnail}
     ![create new policy](images/create_new_policy.png){.thumbnail}
     ![create new policy 2](images/create_new_policy2.png){.thumbnail}
 
