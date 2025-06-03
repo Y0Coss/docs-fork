@@ -1,7 +1,7 @@
 ---
 title: Configurer un bloc Additional IPv6 dans un vRack
 excerpt: "Ce guide vous montrera comment configurer un bloc d'adresses IPv6 publiques à utiliser dans un vRack"
-updated: 2025-05-19
+updated: 2025-06-03
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: 'Configurer une adresse IPv6 principale sur un serveur dédié'
 excerpt: 'Découvrez comment configurer des adresses IPv6 sur notre infrastructure.'
-updated: 2025-05-19
+updated: 2025-06-03
 ---
 
 ## Objectif

@@ -1,7 +1,7 @@
 ---
 title: 'Configuring an Additional IP block in a vRack'
 excerpt: 'This guide will show you how to configure a block of public IP addresses for use with the vRack.'
-updated: 2025-05-19
+updated: 2025-06-03
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ As well as private IP addressing, the [vRack](/links/network/vrack){.external} a
 
 > [!primary]
 >
-> vRack supports both IPv4 and IPv6 public routing with Additional IP address blocks. You can find the instructions on how to configure IPv6 blocks in this guide: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> vRack supports both IPv4 and IPv6 public routing with Additional IP address blocks. You can find the instructions on how to configure IPv6 blocks in this guide: "[Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)".
 >
 
 > [!primary]
