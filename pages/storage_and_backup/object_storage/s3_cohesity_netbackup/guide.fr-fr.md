@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Utiliser Object Storage avec Cohesity NetBackup
 excerpt: Configurez OVHcloud Object Storage comme cible de sauvegarde avec Cohesity NetBackup.
-updated: 2025-05-28
+updated: 2025-06-03
 ---
 
 ## Objectif
@@ -12,8 +12,10 @@ Il couvre notamment l’ajout d’un volume cloud, la configuration des paramèt
 
 ## Prérequis
 
-- Un Primary Server NetBackup installé et configuré. Voir [Installing NetBackup primart server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020){.external}
-- Un serveur de médias avec option de déduplication installé sur Red Hat Enterprise ou SUSE Linux Enterprise Server (voir [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index){.external})
+Assurez-vous de disposer des éléments suivants :
+
+- Un Primary Server NetBackup installé et configuré. Voir la documentation suivante : « [Installing NetBackup primary server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020){.external} ».
+- Un serveur de médias avec option de déduplication installé sur Red Hat Enterprise ou SUSE Linux Enterprise Server. Voir la documentation suivante : « [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index){.external} ».
 - Un espace disque local disponible d’environ 1 To pour la gestion des métadonnées de déduplication.
 
 ## En pratique
@@ -25,77 +27,77 @@ Vous serez guidé tout au long de la procédure, depuis la sélection du Storage
 
 2. Connectez-vous à l’interface NetBackup en tant qu’administrateur.
 
-![connection page](images/user_connection.png){.thumbnail}
+    ![connection page](images/user_connection.png){.thumbnail}
 
-3. Accédez au `menu Storage`{.action} puis `Storage Servers`{.action}.
+3. Accédez au menu `Storage`{.action}, au sous-menu `Disk storage`{.action} puis cliquez sur l'onglet `Storage Servers`{.action}.
 
-![storage menu](images/storage_menu.png){.thumbnail}
+    ![storage menu](images/storage_menu.png){.thumbnail}
 
 4. Ouvrez l’onglet `Disk Pools`{.action} et cliquez sur `Add`{.action} pour créer un nouveau Disk Pool.
 
-![diskpool menu](images/diskpool_menu.png){.thumbnail}
+    ![diskpool menu](images/diskpool_menu.png){.thumbnail}
 
 5. Sélectionnez le `Storage Server MSDP`{.action} sur lequel vous souhaitez créer le pool dédupliqué.
 
-![storage server selection](images/storage_server_selection.png){.thumbnail}
+    ![storage server selection](images/storage_server_selection.png){.thumbnail}
 
 6. Lors de la sélection du volume, cliquez sur `Add Cloud Volume`{.action}.
 
-![add cloud volume](images/add_cloud_volume.png){.thumbnail}
+    ![add cloud volume](images/add_cloud_volume.png){.thumbnail}
 
 7. Choisissez `OVHcloud Standard Object Storage`{.action} comme type de stockage cloud.
 
-![type selection of storage](images/type_selection_of_storage.png){.thumbnail}
+    ![type selection of storage](images/type_selection_of_storage.png){.thumbnail}
 
-8. Sélectionnez l’endpoint souhaité, et ajoutez le credential OVHcloud si ce n’est pas déjà fait.
+8. Sélectionnez l’endpoint souhaité et ajoutez le credential OVHcloud si ce n’est pas déjà fait.
 
-![credentials page](images/credentials_page.png){.thumbnail}
+    ![credentials page](images/credentials_page.png){.thumbnail}
 
 9. (Optionnel) Pour activer le mode WORM (S3 Object Lock), cochez `Use Object Lock`{.action}. Sélectionnez le mode de verrouillage NetBackup correspondant au mode OVhcloud Object Lock :
 
-- Compliance -> Compliance
-- Enterprise -> Governance
+    - Compliance -> Compliance
+    - Enterprise -> Governance
 
-Et définissez les durées de rétention minimum et maximum du verrouillage.
+    Définissez ensuite les durées de rétention minimum et maximum du verrouillage.
 
-![activate worm mode](images/activate_worm_mode.png){.thumbnail}
+    ![activate worm mode](images/activate_worm_mode.png){.thumbnail}
 
 10. Entrez le nom du bucket que vous souhaitez utiliser, ou créez-en un nouveau.
 
-![bucket name](images/bucket_name.png){.thumbnail}
+    ![bucket name](images/bucket_name.png){.thumbnail}
 
 11. Cliquez sur `Next`{.action}, puis vérifiez les paramètres dans l’onglet Review.
 
-![review page](images/review_page.png){.thumbnail}
+    ![review page](images/review_page.png){.thumbnail}
 
 12. Cliquez sur `Add Storage Unit`{.action} en haut de l'écran, puis nommez l’unité de stockage.
 
-![add storage unit popup](images/add_storage_unit_popup.png){.thumbnail}
+    ![add storage unit popup](images/add_storage_unit_popup.png){.thumbnail}
 
-![unit storage name](images/unit_storage_name.png){.thumbnail}
+    ![unit storage name](images/unit_storage_name.png){.thumbnail}
 
 13. (Optionnel) Pour activer le verrouillage WORM, cochez `Lock until Expiration`{.action}.
 
-> [!primary]
->
-> Remarque : des données WORM et non-WORM peuvent coexister dans un même Disk Pool dédupliqué.
->
+    > [!primary]
+    >
+    > Remarque : des données WORM et non-WORM peuvent coexister dans un même Disk Pool dédupliqué.
+    >
 
 14. Vérifiez tous les paramètres dans l’onglet Review, puis validez.
 
-![unit storage review](images/unit_storage_review.png){.thumbnail}
+    ![unit storage review](images/unit_storage_review.png){.thumbnail}
 
 15. Vous pouvez maintenant :
 
-- Utiliser l’unité de stockage directement dans vos jobs de sauvegarde,
-- Ou l’utiliser en tant que cible secondaire via une Storage Lifecycle Policy (SLP).
+    - Utiliser l’unité de stockage directement dans vos jobs de sauvegarde,
+    - Ou l’utiliser en tant que cible secondaire via une Storage Lifecycle Policy (SLP).
 
 16. Modifiez vos politiques de sauvegarde en conséquence pour intégrer le stockage OVHcloud.
 
-![storage lifecycle policy](images/storage_lifecycle_policy.png){.thumbnail}
-![create storage lifecycle policy](images/create_storage_lifecycle_policy.png){.thumbnail}
-![create new policy](images/create_new_policy.png){.thumbnail}
-![create new policy 2](images/create_new_policy2.png){.thumbnail}
+    ![storage lifecycle policy](images/storage_lifecycle_policy.png){.thumbnail}
+    ![create storage lifecycle policy](images/create_storage_lifecycle_policy.png){.thumbnail}
+    ![create new policy](images/create_new_policy.png){.thumbnail}
+    ![create new policy 2](images/create_new_policy2.png){.thumbnail}
 
 ## Aller plus loin
 
