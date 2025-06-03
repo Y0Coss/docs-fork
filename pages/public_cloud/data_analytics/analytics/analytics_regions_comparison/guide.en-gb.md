@@ -1,7 +1,7 @@
 ---
 title: "Comparison of Analytics Engines Deployment Modes - Understanding 3-AZ / 1-AZ"
-excerpt: "Explore OVHcloud's Analytics engines deployment modes"
-updated: 2025-05-23
+excerpt: "Explore OVHcloud's Public Cloud Analytics deployment modes"
+updated: 2025-05-27
 ---
 
 ## Objective
@@ -10,66 +10,44 @@ OVHcloud offers two deployment modes for its [Analytics](/links/public-cloud/ana
 
 ## Concepts
 
-OVHcloud Analytics offers two main deployment modes, each optimized for specific use cases and offering various levels of redundancy and fault tolerance:
+OVHcloud managed analytics services offer two main deployment modes, each optimized for specific use cases and offering various levels of resilience and failover:
 
-1. **1-AZ Region**:
-2. **3-AZ Region**:
+1. **1-AZ Region**: for standard analytics workloads, offering basic resilience with optimized cost.
+2. **3-AZ Region**: suitable for highly availability analytics workloads with low RTO/RPO and resilience to availability zone outage.
 
 ## Deployment modes
 
 > [!primary]
 >
-> The following information pertains to the different deployment modes available in OVHcloud’s Analytics service. Select the mode that best suits your needs based on resilience, availability, and performance.
+> The following information pertains to the different deployment modes available in OVHcloud’s Analytics services. Select the mode that best suits your needs based on resilience, availability, and performance.
 
 ### 1-AZ Region
 
-#### Infrastructure and Redundancy
-
-A 1-AZ Region consists of a **single availability zone covering multiple data centers within the same region**, utilizing a 2N+1 redundancy design. This setup offers resilience against server and disk failures but may be vulnerable to a complete data center outage. Note that in a 1-AZ region, the Analytics service is located in a specific data center, and if an outage occurs in the specific data center hosting the Analytics service, access to data could be impacted, even if other data centers in the zone remain operational.
+A 1-AZ Region consists of a **single availability zone covering multiple data centers within the same geographical region**. When a multi-node analytics service is deployed, this single AZ setup offers resilience against node and disk failures but may be vulnerable to a complete OpenStack region outage. Note that in a 1-AZ region, the analytics service is located in a specific OpenStack region that spans over multiple data center. The nodes of a multi-node analytics service are scattered in different hosts that **may be** located in different data centers. If an outage occurs in a specific data center hosting one or multiple nodes of the analytics service, access to data could be impacted, even if other data centers in the zone remain operational.
 
 #### Characteristics
 
 - **Cost-Effectiveness:** Deploying in a 1-AZ region is generally more affordable, making it suitable for development, testing, and non-critical workloads where cost considerations are paramount.
-- **Simplified Architecture:** The single-zone setup simplifies deployment and management, reducing complexity for teams that do not require high availability across multiple zones.
-- **characteristic:**
+- **Host antiaffinity:** The nodes of a multi-node analytics service are deployed in different physical hosts offering resilience to host outage.
 
 #### Limitations
 
-- **Single Point of Failure:** In a 1-AZ region, the Analytics Engine is deployed within a specific data center. If this data center experiences an outage, access to your analytics services could be impacted, even if other data centers within the same availability zone remain operational. 
-
-#### Redundancy Specifications for 1-AZ
-
-| Specification         | Description                                                               |
-|-------------------|---------------------------------------------------------------------------|
-| **Redundancy Type**   | 2N+1 across multiple data centers                                         |
-| **Fault Tolerance**   | Server and disk-level fault tolerance. Data center outage risk .          |
-| **Use Case Examples** | Suitable for development, testing, and non-critical analytics workloads where cost-effectiveness is prioritized over maximum availability.          |
+- **Single Point of Failure:** In a 1-AZ region, the analytics service nodes **may be** deployed within a single data center. If this data center experiences an outage, access to your analytics service could be impacted, even if other data centers within the same availability zone remain operational.
 
 <a name="3azregion"></a>
 
 ### 3-AZ Region
 
-#### Infrastructure and Redundancy
-
 3-AZ Regions consist of **three independent availability zones**, each isolated in terms of power, cooling, and network systems, providing true fault isolation. This architecture ensures **service availability** even if an entire availability zone experiences an outage.
 
 #### Characteristics
 
-- **High Availability:** The Analytics Engine is deployed across three independent availability zones, ensuring service continuity even if one zone experiences an outage.
-- **Fault Tolerance:** With data replicated across all three zones, the system provides robust fault tolerance, minimizing the risk of data loss.
-- **Low Latency:** The architecture offers ultra-low latency between availability zones, enhancing performance for analytics workloads.
+- **High Availability:** Multi-node analytics service is deployed across three independent availability zones, ensuring service continuity even if one zone experiences an outage.
+- **Low Latency:** The architecture offers ultra-low latency between availability zones, ensuring performance of analytics operations accross all the nodes of the cluster.
 
 #### Ideal Use Cases
 
 3-AZ Regions are particularly suited to mission-critical and availability-sensitive applications, where data governance requires continuous availability. This includes sectors such as e-commerce, healthcare platforms, financial services or live streaming applications.
-
-#### Performance Specifications for 3-AZ
-
-| Specification         | Description                                                               |
-|-------------------|---------------------------------------------------------------------------|
-| **Connectivity**      | Low latency between availability zones                                   |
-| **High Availability** | Maintains access even in the event of zone failures                                  |
-| **Use Case Examples** | Mission-critical and availability-sensitive applications , e-commerce, healthcare platforms, financial services, or live-streaming applications. |
 
 ## Go Further
 
