@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser les alias et redirections e-mail'
 excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
-updated: 2025-06-02
+updated: 2025-06-03
 ---
 
 <style>
