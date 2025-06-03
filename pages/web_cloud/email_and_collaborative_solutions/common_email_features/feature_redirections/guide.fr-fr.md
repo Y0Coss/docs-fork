@@ -75,8 +75,10 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
-    - Une solution **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
-    - Une solution [Hosted Exchange](/links/web/emails-hosted-exchange) ou [Email Pro](/links/web/email-pro) commandée séparément comme solution autonome.
+    - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
+    - [Exchange](/links/web/emails).
+    - [Email Pro](/links/web/email-pro).
+    - [Zimbra](/links/web/emails-zimbra).
 
 ## En pratique
 
@@ -243,7 +245,7 @@ Parcourez les onglets ci-dessous pour mettre en place votre redirection via Outl
 >> - **Nom** : Définissez le nom de votre redirection.
 >> - **Lorsque le message arrive et remplit toutes ces conditions** : Si votre redirection s'applique à tous les messages, sélectionnez `[Appliquer à tous les messages]`{.action}.
 >>
->>![emails](images/emails-all-04.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-04.png){.thumbnail .w-640}
 >>
 > **Étape 5**
 >>
@@ -251,13 +253,13 @@ Parcourez les onglets ci-dessous pour mettre en place votre redirection via Outl
 >>
 >> **Effectuer toutes les opérations suivantes** : C'est ici que vous appliquez la redirection. Sélectionnez `Transférer, rediriger ou envoyer`{.action} puis `Rediriger le message vers...`{.action}.
 >>
->>![emails](images/emails-all-05.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-05.png){.thumbnail .w-640}
 >>
 > **Étape 6**
 >>
 >> Renseignez ensuite l'adresse vers laquelle vous souhaitez rediriger l'e-mail devant « **Rediriger le message vers...** » puis cliquez sur `Enregistrer`{.action}. Cliquez enfin sur `OK`{.action} (icône de disquette) pour finaliser votre redirection.
 >>
->>![emails](images/emails-all-06.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-06.png){.thumbnail .w-640}
 >>
 
 > [!primary]
