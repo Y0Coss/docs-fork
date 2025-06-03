@@ -56,7 +56,7 @@ Das Volume Classic ist eine zuverlässige und kostengünstige Speicherlösung, d
 - Speicherung kleiner bis mittlerer Datenbanken
 - Datensicherung und -archivierung
 
-In den 3AZ-Regionen sind Classic Volumes regionale Dienste, die *Distributed Erasure Coding* über mehrere Availability Zones verwenden. Dadurch wird sichergestellt, dass die Daten ohne Auswirkung oder Unterbrechung verfügbar sind, wenn eine Zone ausfällt, sofern die Anforderungen einer resilienten *Multi-Attach* Architektur erfüllt werden. Weitere Informationen finden Sie in unserer Anleitung „[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_restrictions)“.
+In den 3AZ-Regionen sind Classic Volumes regionale Dienste, die *Distributed Erasure Coding* über mehrere Availability Zones verwenden. Dadurch wird sichergestellt, dass die Daten ohne Auswirkung oder Unterbrechung verfügbar sind, wenn eine Zone ausfällt, sofern die Anforderungen einer resilienten *Multi-Attach* Architektur erfüllt werden. Weitere Informationen finden Sie in unserer Anleitung „[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)“.
 
 ///
 
