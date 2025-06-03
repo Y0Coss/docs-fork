@@ -46,7 +46,7 @@ Das kann in folgenden Fällen hilfreich sein:
 
 ### Die verschiedenen Volume-Typen
 
-OVHcloud bietet drei Arten von Block Storage-Volumes, die jeweils an spezifische Leistungs-, Kapazitäts- und Kostenanforderungen angepasst sind. Mit diesen Lösungen können Sie Ihren Instanzen persistenten Speicher zuweisen und so ein hohes Maß an Zuverlässigkeit und Verfügbarkeit sicherstellen.
+OVHcloud bietet drei Arten von Block Storage Volumes, die jeweils an spezifische Leistungs-, Kapazitäts- und Kostenanforderungen angepasst sind. Mit diesen Lösungen können Sie Ihren Instanzen persistenten Speicher zuweisen und so ein hohes Maß an Zuverlässigkeit und Verfügbarkeit sicherstellen.
 
 /// details | **Classic - 500 IOPS garantiert**
 
@@ -56,13 +56,13 @@ Das Volume Classic ist eine zuverlässige und kostengünstige Speicherlösung, d
 - Speicherung kleiner bis mittlerer Datenbanken
 - Datensicherung und -archivierung
 
-In den 3AZ-Regionen sind Classic-Volumes regionale Dienste, die Erasure Coding verwenden, das auf mehrere Verfügbarkeitszonen verteilt ist. Dadurch wird sichergestellt, dass die Daten ohne Auswirkung oder Unterbrechung verfügbar sind, wenn eine Zone ausfällt, sofern die Anforderungen der robusten Multi-Attached-Architektur erfüllt werden. Weitere Informationen finden Sie in unserer Anleitung „[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_restrictions)“.
+In den 3AZ-Regionen sind Classic Volumes regionale Dienste, die *Distributed Erasure Coding* über mehrere Availability Zones verwenden. Dadurch wird sichergestellt, dass die Daten ohne Auswirkung oder Unterbrechung verfügbar sind, wenn eine Zone ausfällt, sofern die Anforderungen einer resilienten *Multi-Attach* Architektur erfüllt werden. Weitere Informationen finden Sie in unserer Anleitung „[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_restrictions)“.
 
 ///
 
 /// details | **High-Speed - Bis zu 3000 IOPS**
 
-Das High-Speed-Volume wurde für Anwendungen entwickelt, die einen schnelleren Datenzugriff erfordern. Mit einer Leistung von bis zu 3000 IOPS ist es ideal für folgende Anwendungsfälle:
+Das High Speed-Volume wurde für Anwendungen entwickelt, die einen schnelleren Datenzugriff erfordern. Mit einer Leistung von bis zu 3000 IOPS ist es ideal für folgende Anwendungsfälle:
 
 - Transaktionsdatenbanken (MySQL, PostgreSQL, etc.)
 - Virtualisierungs- und Containerumgebungen
@@ -72,7 +72,7 @@ Das High-Speed-Volume wurde für Anwendungen entwickelt, die einen schnelleren D
 
 /// details | **High-Speed Gen2 - 30 IOPS/GB und bis zu 20.000 IOPS**
 
-High-Speed Volumes der zweiten Generation sind für die anspruchsvollsten Workloads optimiert. Mit einer Performance von 30 IOPS/GB bis zu 20.000 IOPS wird dieser Volume-Typ für folgende Anwendungen empfohlen:
+High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Workloads optimiert. Mit einer Performance von 30 IOPS/GB bis zu 20.000 IOPS wird dieser Volume-Typ für folgende Anwendungen empfohlen:
 
 - Big Data und Analysen in Echtzeit
 - Künstliche Intelligenz und Machine Learning
