@@ -1,7 +1,7 @@
 ---
 title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
 excerpt: Erfahren Sie hier, wie Sie eine neue Disk erstellen und zu Ihrer Public Cloud Instanz hinzufügen
-updated: 2024-03-21
+updated: 2025-06-03
 ---
 
 <style>
@@ -20,7 +20,8 @@ details[open]>summary::before {
 
 ## Ziel
 
-Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen zu erstellen. Das kann in folgenden Fällen hilfreich sein:
+Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen zu erstellen.
+Das kann in folgenden Fällen hilfreich sein:
 
 - Sie möchten Ihre Speicherkapazität erhöhen, ohne das Instanzmodell zu verändern.
 - Sie benötigen hochverfügbaren und leistungsfähigen Speicherplatz.
@@ -54,6 +55,8 @@ Das Volume Classic ist eine zuverlässige und kostengünstige Speicherlösung, d
 - Hosting klassischer Webanwendungen
 - Speicherung kleiner bis mittlerer Datenbanken
 - Datensicherung und -archivierung
+
+In den 3AZ-Regionen sind Classic-Volumes regionale Dienste, die Erasure Coding verwenden, das auf mehrere Verfügbarkeitszonen verteilt ist. Dadurch wird sichergestellt, dass die Daten ohne Auswirkung oder Unterbrechung verfügbar sind, wenn eine Zone ausfällt, sofern die Anforderungen der robusten Multi-Attached-Architektur erfüllt werden. Weitere Informationen finden Sie in unserer Anleitung „[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_restrictions)“.
 
 ///
 
