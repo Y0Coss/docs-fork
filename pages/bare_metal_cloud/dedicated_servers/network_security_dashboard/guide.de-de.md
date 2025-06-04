@@ -14,8 +14,7 @@ In dieser Anleitung wird das Network Security Dashboard erläutert. Außerdem er
 
 > [!warning]
 >
-> **Warnung**: Funktion "Scrubbing-Center: permanenter Modus" erreicht
-das End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
+> **Achtung**: Die Funktion "Scrubbing-Center: permanenter Modus" erreicht End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
 >
 
 ## Voraussetzungen 
