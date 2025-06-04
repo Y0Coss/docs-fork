@@ -1,5 +1,5 @@
 ---
-title: "Comparison and resilience of Deployment Modes - Understanding 3-AZ / 1-AZ / Local Zones"
+title: "Comparison and resilience of Deployment Modes - Understanding 3-AZ / 1-AZ / Local Zones (EN)"
 excerpt: "Explore OVHcloud's deployment modes"
 updated: 2025-03-21
 ---

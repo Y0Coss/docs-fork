@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment connaître son cluster et son filer"
 excerpt: "Découvrez comment retrouver le numéro de cluster et/ou le numéro du filer où se trouve votre hébergement web"
-updated: 2025-05-16
+updated: 2025-05-21
 ---
 
 ## Objectif
@@ -14,8 +14,8 @@ Au cours de l'utilisation de votre hébergement web, vous pouvez être amenés �
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Posséder une [offre d'hébergement web](/links/web/hosting).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 

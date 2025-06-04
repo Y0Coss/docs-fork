@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Consulter les statistiques et logs d'un site web"
 excerpt: "Découvrez comment consulter les statistiques et les logs de votre site web grâce à votre offre d'hébergement web"
-updated: 2025-05-19
+updated: 2025-05-22
 ---
 
 ## Objectif
@@ -12,8 +12,8 @@ L'accès aux logs et aux statistiques de votre site web est compris dans votre o
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](/links/web/hosting){.external} compatible.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'une offre d'[hébergement web](/links/web/hosting) compatible.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
