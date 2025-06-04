@@ -123,6 +123,7 @@ Now that you have created logs subscription(s), you can consume these logs the w
 All the possible ways to consume your logs are summarized in the [Introduction to Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 
 > [!primary]
+>
 > In the case of OVHcloud Service Logs, all the "Log Generation" and "Log Ingestion" are managed by OVHcloud. You only have to care about the "Storage" and "Query and visualization" parts.
 
 You can also manage your logs subscription from a data stream point of view. To do so, go to the Logs Data Platform section of the [OVHcloud Control Panel](/links/manager), select a service and click on the `Data stream`{.action} tab. In the table listing your streams you can see a `Subscriptions` column displaying you how many logs subscriptions target a given stream.
@@ -208,6 +209,6 @@ This means that:
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Create an account: [Try it!](https://www.ovh.com/en/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/en/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
 
 Join our [community of users](/links/community).
