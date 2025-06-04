@@ -48,12 +48,12 @@ Un serveur Bare Metal avec un périphérique Solidigm D7-P5520 PCIe 4.0 NVMe, pa
 > [!alert]
 >
 > Avant toute tentative de mise à jour du firmware, une sauvegarde des données du lecteur doit être effectuée. Découvrez comment sauvegarder vos données grâce à notre guide sur [Backup Storage](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
-> La mise à jour du firmware ne formate pas le lecteur ou ne supprime pas les données, mais une erreur de mise à jour du firmware peut se produire. Ne mettez pas le lecteur ou le serveur hors tension pendant le processus de mise à jour du firmware.
+> La mise à jour du firmware ne formate pas le lecteur ni ne supprime les données, mais une erreur de mise à jour du firmware peut se produire. Ne mettez pas le lecteur ou le serveur hors tension pendant le processus de mise à jour du firmware.
 >
 
 > [!primary]
 >
->Toutes les commandes doivent être exécutées en tant que root sous Linux et VMware ESXi, et avec un compte administrateur sous Windows.
+> Toutes les commandes doivent être exécutées en tant que root sous Linux et VMware ESXi, et avec un compte administrateur sous Windows.
 >
 
 ### Linux
@@ -75,7 +75,7 @@ Téléchargez le paquet du firmware sur votre serveur :
 wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/P5520/P5520_FW_to9CV10490_Linux_64.zip
 ```
 
-Décompresser l'archive :
+Décompressez l'archive :
 
 ```bash
 unzip P5520_FW_to9CV10490_Linux_64.zip
@@ -188,7 +188,8 @@ Une fois la mise à jour du firmware terminée, veuillez redémarrer votre serve
 
 #### Étape 4 - Vérifiez que la version du firmware est à jour après le redémarrage du serveur
 
-Pour vérifier que le firmware est à jour, il suffit de relancer l'outil logiciel :
+Pour vérifier que le firmware est à jour, il suffit de relancer l'outil *Sofu* :
+
 ```bash
 ./sofu_2.1_x64
 ```
@@ -274,7 +275,7 @@ wget https://last-public-ovh-bare.metal.snap.mirrors.ovh.net/hardware/P5520/P552
 
 **Par défaut, la politique de pare-feu d'ESXi bloque le trafic HTTPS sortant. Si vous ne parvenez pas à télécharger le firmware, vous devrez peut-être ajouter une règle de pare-feu pour autoriser les connexions HTTPS sortantes.**
 
-Décompresser l'archive :
+Décompressez l'archive :
 
 ```bash
 unzip -d /tmp P5520_FW_to_9CV10490_ESXi.zip
@@ -521,7 +522,7 @@ Status : The selected drive contains current firmware as of this tool release.
 
 #### Étape 1 - Télécharger le package du firmware
 
-Téléchargez le paquet firmware sur votre serveur : https://last-public-ovh-bare.metal.snap.mirrors.ovh.net/hardware/P5520/P5520_FW_to_9CV10490_Win64.zip
+Téléchargez le package du firmware sur votre serveur : https://last-public-ovh-bare.metal.snap.mirrors.ovh.net/hardware/P5520/P5520_FW_to_9CV10490_Win64.zip
 
 **Version de l'outil : 2.1**
 
@@ -652,7 +653,7 @@ Une fois la mise à jour du firmware terminée, veuillez redémarrer votre serve
 
 #### Étape 3 - Vérifiez que la version du firmware est à jour après le redémarrage du serveur
 
-Pour vérifier que le firmware est à jour, exécutez simplement l'outil sofu une fois de plus ; exécutez Windows PowerShell en tant qu'administrateur, puis exécutez la commande suivante dans le répertoire où sofu_2.1_win64.exe a été décompressé :
+Pour vérifier que le firmware est à jour, exécutez simplement l'outil *Sofu* une fois de plus ; exécutez Windows PowerShell en tant qu'administrateur, puis exécutez la commande suivante dans le répertoire où sofu_2.1_win64.exe a été décompressé :
 
 ```bash
 .\sofu_2.1_win64.exe

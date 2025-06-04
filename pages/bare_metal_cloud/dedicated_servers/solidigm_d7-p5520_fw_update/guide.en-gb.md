@@ -53,7 +53,7 @@ A bare metal server with a Solidigm D7-P5520 PCIe 4.0 NVMe device, from the foll
 
 > [!primary]
 >
->All commands must be run as root for Linux and VMware ESXi, and with an administrator account for Windows.
+> All commands must be run as root for Linux and VMware ESXi, and with an administrator account for Windows.
 >
 
 ### Linux
@@ -188,7 +188,8 @@ At this point the firmware update is complete, please reboot your server.
 
 #### Step 4 - Check the firmware version is up-to-date after the server reboot
 
-To check that the firmware is up to date, simply run the sofu tool once more:
+To check that the firmware is up to date, simply run the *Sofu* tool once more:
+
 ```bash
 ./sofu_2.1_x64
 ```
@@ -417,7 +418,7 @@ At this point the firmware update is complete, please reboot your server.
 
 ### Step 4 - Check the firmware version is up-to-date after the server reboot
 
-To check that the firmware is up to date, simply run the sofu tool once more:
+To check that the firmware is up to date, simply run the *Sofu* tool once more:
 
 ```bash
 cd /opt/solidigm/sofu/
@@ -649,7 +650,7 @@ At this point the firmware update is complete, please reboot your server.
 
 #### Step 3 - Check the firmware version is up-to-date after the server reboot
 
-To check that the firmware is up to date, simply run the sofu tool once more; Run Windows PowerShell as administrator, then run the following command in the directory where sofu_2.1_win64.exe was unzipped :
+To check that the firmware is up to date, simply run the *Sofu* tool once more; Run Windows PowerShell as administrator, then run the following command in the directory where sofu_2.1_win64.exe was unzipped :
 
 ```bash
 .\sofu_2.1_win64.exe
