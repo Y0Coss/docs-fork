@@ -1,7 +1,7 @@
 ---
 title: "Comment renouveler mon nom de domaine OVHcloud"
 excerpt: "Découvrez pourquoi et comment renouveler vos noms de domaine OVHcloud"
-updated: 2025-02-17
+updated: 2025-06-04
 ---
 
 ## Objectif 
@@ -107,6 +107,14 @@ Effectuez les action suivantes :
 Vous pouvez renouveler le service à tout moment avant son expiration et également choisir la durée de renouvellement.
 Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validité en cours. Vous ne perdrez pas le temps de validité restant.
 
+### Suivre le renouvellement de mon nom de domaine
+
+Une fois le prélèvement effectué, le nom de domaine sera renouvelé le jour précédent son expiration (environ un mois après le prélèvement).
+
+Les données affichées dans le WHOIS s'actualiseront alors, confirmant le bon renouvellement du nom de domaine.
+
+Sur votre espace client, vous trouverez la mention `Renouvellement en cours`{.action} lorsque le paiement sera effectué et juste avant le renouvellement effectif de votre nom de domaine auprès du registre. Cette mention est visible dans "Web Cloud" > "Domaines et DNS" > "Noms de domaine" > colonne "Statut".
+
 ### Résilier mon nom de domaine
 
 - Dans le tableau, identifiez le nom de domaine que vous souhaitez renouveler.
@@ -123,11 +131,6 @@ Cette action est proposée pour les services paramétrés en **renouvellement au
 Pour plus d'informations sur la résiliation des services OVHcloud, suivez les instructions du guide « **[Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)** ».
 
 ### Accéder à la facture du renouvellement de mon nom de domaine
-
-> [!primary]
->
-> La facture n’est disponible que le jour du renouvellement du nom de domaine (30 jours après le prélèvement en cas de renouvellement automatique).
->
 
 Une mention `Facture à régler` s'affiche lorsqu'une facture est en attente de règlement et lorsque :
 
@@ -150,6 +153,10 @@ Il vous suffit alors de choisir l'action `Régler ma facture`{.action} qui vous 
 >> Suivez les instructions de notre guide « [Transférer un nom de domaine vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) ».
 > Je suis en renouvellement automatique et j’ai été prélevé automatiquement. Or, je ne souhaite pas conserver mon nom de domaine et je veux être remboursé.
 >> Il est possible d’être automatiquement remboursé jusqu’à 10 jours avant la date de renouvellement effective du nom de domaine. Pour cela, résiliez le nom de domaine.
+> J'ai renouvelé mon nom de domaine mais le WHOIS n'est toujours pas à jour. Comment puis-je m'assurer que le nom de domaine est bien renouvelé ?
+>> Une fois le règlement des frais de renouvellement effectué, nous transmettons la demande auprès du registre approprié. Sur votre espace client, vous trouverez la mention "Renouvellement en cours" sur la page présentant la liste de tous vos noms de domaine (dans "Web Cloud" > "Domaines et DNS" > "Noms de domaine" > colonne "Statut").
+>> Une fois le renouvellement effectué par le registre (environ un mois après le règlement des frais de renouvellement), le statut de votre nom de domaine repassera sous la mention "enregistré".
+>> Les données du WHOIS se mettront ensuite à jour.
 
 ## Aller plus loin
 
