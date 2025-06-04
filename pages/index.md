@@ -1560,6 +1560,7 @@
             + [Initial setup](web-cloud-internet-overthebox-initial-setup)
                 + [Comment mettre à jour OverTheBox ?](web_cloud/internet/overthebox/config_upgrade)
                 + [Ajouter un accès à distance sur OverTheBox](web_cloud/internet/overthebox/middle_acces_a_distance)
+                + [Comment configurer IPv6 sur OverTheBox?](web_cloud/internet/overthebox/config_ipv6)
                 + [Comment réinitialiser ou restaurer la configuration d'une OverTheBox](web_cloud/internet/overthebox/config_reset)
                 + [Comment configurer le pare-feu (firewall) sur OverTheBox?](web_cloud/internet/overthebox/middle_redirection_de_port)
                 + [Comment configurer le réseau local d'une OverTheBox ?](web_cloud/internet/overthebox/middle_configurer_votre_lan)
