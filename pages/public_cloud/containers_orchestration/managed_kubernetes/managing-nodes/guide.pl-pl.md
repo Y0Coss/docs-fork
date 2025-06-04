@@ -1,7 +1,7 @@
 ---
 title: How to manage nodes and node pools on an OVHcloud Managed Kubernetes cluster
 excerpt: Learn how to manage nodes and node pools using the OVHcloud Control Panel, the OVHcloud API, and the NodePools Custom Resource Definition (CRD)
-updated: 2025-05-27
+updated: 2025-06-04
 ---
 
 ## Objective
