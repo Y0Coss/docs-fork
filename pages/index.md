@@ -1967,6 +1967,8 @@
                 + [Tracking slow MySQL queries with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_mysql_slow_queries)
                 + [Supervising your HAProxy deployment with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_haproxy)
                 + [Analyzing Twitter with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_twitter)
+            + [OVHcloud Service Logs](observability-logs-data-platform-services-logs)
+                + [Introduction to OVHcloud Service Logs with Logs Data Platform](manage_and_operate/observability/logs_data_platform/introduction_to_services_logs)
     + [Key Management Service (KMS)](manage-operate-kms)
         + [Getting started with OVHcloud Key Management Service (KMS)](manage_and_operate/kms/quick-start)
         + [Using the OVHcloud Key Management Service (KMS) with your data](manage_and_operate/kms/kms-usage)
