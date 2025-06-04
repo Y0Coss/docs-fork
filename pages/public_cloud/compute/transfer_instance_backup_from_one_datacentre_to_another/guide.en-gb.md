@@ -25,24 +25,10 @@ You will also need a [Public Cloud instance](/links/public-cloud/compute) in you
 
 ## Instructions
 
-### Create a backup
-
-
-```bash
-$ openstack server list
- 
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| ID                                   | Name      | Status | Networks                                         | Image Name   |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
-+--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
-```
-
-Next, run the following command to create a backup of your instance:
-
-```bash 
-$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
-```
+> [primary]
+>
+> If you need to create a backup with Openstack, please refer to this dedicated guide on how to [backup an instance.](/pages/public_cloud/compute/save_an_instance)
+>
 
 ### Download the backup
 

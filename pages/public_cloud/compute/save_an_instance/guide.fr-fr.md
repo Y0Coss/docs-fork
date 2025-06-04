@@ -1,8 +1,22 @@
 ---
 title: 'Sauvegarder une instance'
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud'
-updated: 2025-04-28
+updated: 2025-06-10
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -23,23 +37,68 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 > Cette option est uniquement disponible via un **Cold Snapshot** pour les instances Metal. L'instance Metal passera en mode rescue et, une fois la sauvegarde effectuée, l'instance sera redémarrée en mode normal.
 >
 
-Connectez-vous à [l’espace client d’OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
-
-Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer un backup`{.action}.
-
-![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
-
-Renseignez un nom pour la sauvegarde sur la page suivante. Prenez connaissance des informations tarifaires et cliquez sur `Confirmer`{.action}.
-
-![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
-
-Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, dans la section `Instance Backup`{.action} sous la rubrique **Compute** dans le menu de gauche, le statut `Backup en cours` sera affiché pendant le processus.
-
-![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
-
-Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Instance Backup`{.action} sous la rubrique **Compute** dans le menu de gauche.
-
-![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
+>[!tabs]
+> Via the OVHcloud Control Panel
+>> Connectez-vous à [l’espace client d’OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
+>>
+>> Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer un backup`{.action}.
+>>
+>> ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
+>>
+>> > [primary]
+>> >
+>> > Deux types de sauvegardes sont disponibles : locale et distante.
+>> >
+>> > L’option de sauvegarde distante génère également une sauvegarde locale, facturée séparément et non supprimée automatiquement.
+>> >
+>> > Il est recommandé de conserver cette sauvegarde locale, car en cas de recréation d’une instance dans la même région, la restauration sera notablement plus rapide. Cette pratique permet d’optimiser les temps de reprise et la performance.
+>> >
+>>
+>> /// details | Sauvegarde locale
+>>
+>> Renseignez un nom pour la sauvegarde. Prenez connaissance des informations tarifaires et cliquez sur `Confirmer`{.action}.
+>>
+>> ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
+>>
+>> ///
+>>
+>> /// details | Sauvegarde distante
+>>
+>> Renseignez un nom pour la sauvegarde locale dans le champ `Saisissez le nom de votre backup :`.
+>>
+>> ![public-cloud-instance-distant-backup](images/createdistantbackup1.png){.thumbnail}
+>>
+>> Ensuite, `activez`{.action} l’option permettant d’ajouter une sauvegarde distante, puis indiquez le nom de cette sauvegarde, sélectionnez sa région de destination et cliquez sur `Confirmer`{.action}.
+>>
+>> ![public-cloud-instance-distant-backup2](images/createdistantbackup2.png){.thumbnail}
+>>
+>> ///
+>>
+>> Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, dans la section `Instance Backup`{.action} sous la rubrique **Compute** dans le menu de gauche, le statut `Backup en cours` sera affiché pendant le processus.
+>>
+>> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+>>
+>> Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Instance Backup`{.action} sous la rubrique **Compute** dans le menu de gauche.
+>>
+>> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
+>>
+> Via Openstack
+>> ```bash
+>> $ openstack server list
+>>
+>> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> | ID | Name | Status | Networks | Image Name |
+>> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
+>> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> ```
+>>
+>> Exécutez ensuite la commande suivante pour créer une sauvegarde de votre instance :
+>>
+>> ```bash
+>> $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
+>> ```
+>>
 
 ### Créer une sauvegarde automatisée d’une instance
 
@@ -69,6 +128,10 @@ Vous pouvez définir une planification de sauvegarde personnalisée ou choisir l
 - Sauvegarde quotidienne avec rétention des 14 dernières sauvegardes
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
+
+Dans le cas ou vous activez l'option de sauvegarde distante, vous pourrez renseigner le nom ainsi que sélectionner la localisation de celle-ci.
+
+![public-cloud-instance-distant-backup-workflow](images/createdistantbackup3.png){.thumbnail}
 
 #### **Le nom** 
 
