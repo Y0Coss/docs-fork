@@ -1,7 +1,7 @@
 ---
 title: "Bare Metal 3-AZ Region - Presentación del producto"
 excerpt: 'Descubra el servicio Bare Metal 3-AZ, que ofrece una alta disponibilidad y redundancia sin igual entre tres datacenters'
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Objetivo
@@ -12,16 +12,17 @@ El Bare Metal de la región 3-AZ responde a las necesidades de los clientes que 
 
 > [!primary]
 >
-> Opinión importante - Evolución de la oferta Bare Metal 3-AZ
+> **Información importante - Evolución de la oferta Bare Metal 3-AZ**
 >
 > A partir de mayo de 2025, el modelo de entrega de los servidores Bare Metal en la región París 3-AZ evoluciona significativamente. Se abandonará el modelo anterior de entrega obligatoria en clusters de 3 servidores (uno en cada zona de disponibilidad).
 >
-> Cambios clave:
+> **Cambios clave:**
+
 > - Los clientes podrán elegir libremente el número exacto de servidores que necesitan.
 > - La distribución de los servidores entre las diferentes zonas de disponibilidad (AZ) será totalmente personalizable.
 > - No hay ninguna obligación de despliegue en las tres zonas simultáneamente.
 >
-> Importante: la información presentada en esta guía, en particular la relativa al despliegue obligatorio del cluster y la posible experiencia de usuario que refleja este modelo, se aplica principalmente a los clientes cuyos servidores se entregaron *antes de mayo de 2025* bajo el modelo de cluster anterior. Los nuevos despliegues a partir de mayo de 2025 se beneficiarán de la flexibilidad del nuevo modelo y, potencialmente, de una interfaz adecuada. Si tiene alguna pregunta sobre esta evolución o si desea adaptar su infraestructura existente, póngase en contacto con el administrador de su cuenta o con el soporte de OVHcloud.
+> **Importante:** la información presentada en esta guía, en particular la relativa al despliegue obligatorio del cluster y la posible experiencia de usuario que refleja este modelo, se aplica principalmente a los clientes cuyos servidores se entregaron *antes de mayo de 2025* bajo el modelo de cluster anterior. Los nuevos despliegues a partir de mayo de 2025 se beneficiarán de la flexibilidad del nuevo modelo y, potencialmente, de una interfaz adecuada. Si tiene alguna pregunta sobre esta evolución o si desea adaptar su infraestructura existente, póngase en contacto con el administrador de su cuenta o con el soporte de OVHcloud.
 >
 
 ## Información general

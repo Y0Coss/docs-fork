@@ -1,7 +1,7 @@
 ---
 title: "Bare Metal 3-AZ Region - Vorstellung des Angebots"
 excerpt: "Entdecken Sie den Bare Metal 3-AZ Dienst, der eine unübertroffene Hochverfügbarkeit und Redundanz zwischen drei Rechenzentren bietet"
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Ziel
@@ -12,11 +12,12 @@ Bare Metal in der 3-AZ-Region erfüllt die Anforderungen von Kunden, die hohe Ve
 
 > [!primary]
 >
-> Wichtiger Hinweis - Weiterentwicklung von Bare Metal 3-AZ
+> **Wichtiger Hinweis - Weiterentwicklung von Bare Metal 3-AZ**
 >
 > Ab Mai 2025 entwickelt sich das Liefermodell für Bare Metal Server in der Region Paris 3-AZ deutlich weiter. Das Modell der obligatorischen Bereitstellung in Clustern mit 3 Servern (einer pro Verfügbarkeitszone) wird eingestellt.
 >
-> Wichtigste Änderungen:
+> **Wichtigste Änderungen:**
+>
 > - Kunden können nun frei die genaue Anzahl der benötigten Server auswählen.
 > - Die Verteilung von Servern über verschiedene Verfügbarkeitszonen (AZ) kann individuell angepasst werden.
 > - Keine Verpflichtung zur gleichzeitigen Bereitstellung in allen drei Zonen.

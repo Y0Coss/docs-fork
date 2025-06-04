@@ -1,7 +1,7 @@
 ---
 title: "Bare Metal 3-AZ Region - Presentazione dell'offerta"
 excerpt: 'Scopri il servizio Bare Metal 3-AZ, che offre massima disponibilità e ridondanza tra tre datacenter'
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Obiettivo
@@ -12,16 +12,17 @@ Il Bare Metal della regione 3-AZ risponde alle esigenze dei clienti che hanno bi
 
 > [!primary]
 >
-> Recensione importante - Evoluzione dell'offerta Bare Metal 3-AZ
+> **Recensione importante - Evoluzione dell'offerta Bare Metal 3-AZ**
 >
 > A partire da maggio 2025, il modello di consegna dei server Bare Metal nella regione Parigi 3-AZ si evolve significativamente. Il precedente modello di consegna obbligatoria in cluster di 3 server (uno in ogni area di disponibilità) verrà abbandonato.
 >
-> Modifiche chiave:
+> **Modifiche chiave:**
+>
 > - I clienti potranno scegliere liberamente il numero esatto di server di cui hanno bisogno.
 > - La ripartizione dei server tra le diverse zone di disponibilità (AZ) sarà totalmente personalizzabile.
 > - Nessun obbligo di implementazione simultanea in tutte e tre le zone.
 >
-> Importante: le informazioni presentate in questa guida, in particolare quelle relative all'implementazione obbligatoria del cluster e, potenzialmente, all'esperienza utente che riflette questo modello, si applicano principalmente ai client i cui server sono stati consegnati *prima di maggio 2025* con il modello di cluster precedente. Le nuove installazioni a partire da maggio 2025 beneficeranno della flessibilità del nuovo modello e, potenzialmente, di un'interfaccia adattata. Per maggiori informazioni sullo stato di avanzamento del progetto o sull’adeguamento dell’infrastruttura esistente, contatta il gestore del tuo account o il supporto OVHcloud.
+> **Importante:** le informazioni presentate in questa guida, in particolare quelle relative all'implementazione obbligatoria del cluster e, potenzialmente, all'esperienza utente che riflette questo modello, si applicano principalmente ai client i cui server sono stati consegnati *prima di maggio 2025* con il modello di cluster precedente. Le nuove installazioni a partire da maggio 2025 beneficeranno della flessibilità del nuovo modello e, potenzialmente, di un'interfaccia adattata. Per maggiori informazioni sullo stato di avanzamento del progetto o sull’adeguamento dell’infrastruttura esistente, contatta il gestore del tuo account o il supporto OVHcloud.
 >
 
 ## Panoramica

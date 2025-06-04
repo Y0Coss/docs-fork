@@ -1,7 +1,7 @@
 ---
 title: "Bare Metal 3-AZ Region - Prezentacja oferty"
 excerpt: 'Odkryj usługę Bare Metal 3-AZ, która oferuje niezrównaną wysoką dostępność i redundancję między trzema centrami danych'
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Wprowadzenie
@@ -12,16 +12,17 @@ Serwery Bare Metal w regionie 3-AZ są odpowiedzią na potrzeby klientów, któr
 
 > [!primary]
 >
-> Ważna opinia - Zmiany w ofercie Bare Metal 3-AZ
+> **Ważna opinia - Zmiany w ofercie Bare Metal 3-AZ**
 >
 > Od maja 2025 roku model dostawy serwerów Bare Metal w regionie Paryż 3-AZ ulega znacznym zmianom. Poprzedni model obowiązkowej dostawy klastrów dla 3 serwerów (po jednym w każdej strefie dostępności) zostanie porzucony.
 >
-> Kluczowe zmiany:
+> **Kluczowe zmiany:**
+>
 > - Klienci będą mogli swobodnie wybierać dokładną liczbę serwerów, których potrzebują.
 > - Rozdzielenie serwerów pomiędzy różnymi strefami dostępności (AZ) będzie można w pełni spersonalizować.
 > - Brak obowiązku wdrożenia w trzech strefach jednocześnie.
 >
-> Ważne: Informacje przedstawione w tym przewodniku, zwłaszcza dotyczące obowiązkowego wdrażania klastra i potencjalnie wrażeń użytkownika odzwierciedlających ten model, dotyczą głównie klientów, których serwery zostały dostarczone *przed majem 2025* pod poprzednim modelem klastra. Nowe wdrożenia od maja 2025 będą korzystać z elastyczności nowego modelu i potencjalnie z dostosowanego interfejsu. W razie pytań dotyczących zmiany konfiguracji lub dostosowania istniejącej infrastruktury, prosimy o kontakt z opiekunem klienta lub działem wsparcia OVHcloud.
+> **Ważne:** Informacje przedstawione w tym przewodniku, zwłaszcza dotyczące obowiązkowego wdrażania klastra i potencjalnie wrażeń użytkownika odzwierciedlających ten model, dotyczą głównie klientów, których serwery zostały dostarczone *przed majem 2025* pod poprzednim modelem klastra. Nowe wdrożenia od maja 2025 będą korzystać z elastyczności nowego modelu i potencjalnie z dostosowanego interfejsu. W razie pytań dotyczących zmiany konfiguracji lub dostosowania istniejącej infrastruktury, prosimy o kontakt z opiekunem klienta lub działem wsparcia OVHcloud.
 >
 
 ## Przegląd
