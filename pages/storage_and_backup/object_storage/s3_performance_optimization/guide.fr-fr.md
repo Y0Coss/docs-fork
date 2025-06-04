@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Optimiser les performances
 excerpt: "Ce guide vous présente différentes méthodes pour optimiser les performances de vos buckets Object Storage, notamment la recherche par plage d'octets, le multipart upload ainsi que d'autres méthodes"
-updated: 2024-03-27
+updated: 2025-06-04
 ---
 
 ## Objectif
@@ -147,7 +147,7 @@ Où `mpu.json` est :
 > Si le *multipart upload* n'est pas terminé, l'objet final ne sera pas assemblé et restera invisible. Néanmoins, toutes les pièces téléchargées restent stockées et entraînent des frais de stockage.
 >
 
-Pour éviter des coûts inutiles, vous pouvez interrompre le téléchargement multipartite à l'aide de la commande CLI AWS suivante :
+Pour éviter des coûts inutiles, vous pouvez interrompre le *multipart upload* à l'aide de la commande CLI AWS suivante :
 
 ```bash
 user@host:~$ aws s3api abort-multipart-upload \
@@ -156,13 +156,13 @@ user@host:~$ aws s3api abort-multipart-upload \
   --upload-id <upload-id>
 ```
 
-L'ID du téléchargement est renvoyé par la commande create-multipart-upload ou peut être récupéré en listant les téléchargements multipartites en cours :
+L'ID de l'upload est renvoyé par la commande `create-multipart-upload` ou peut être récupéré en listant les *multipart uploads* en cours :
 
 ```bash
 user@host:~$ aws s3api list-multipart-uploads --bucket my-bucket
 ```
 
-Exemple d'interruption d'un téléchargement multipartite spécifique après avoir récupéré son ID de téléchargement :
+Exemple d'interruption d'un *multipart upload* spécifique après avoir récupéré son ID d'upload :
 
 ```bash
 user@host:~$ aws s3api abort-multipart-upload \

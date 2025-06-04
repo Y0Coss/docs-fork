@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Optimising Performance
 excerpt: This guide walks you through various methods to optimise the performance of your Object Storage buckets, including using byte range fetches, multipart uploads and other methods
-updated: 2024-03-27
+updated: 2025-06-04
 ---
 
 ## Objective
@@ -151,7 +151,7 @@ user@host:~$ aws s3api abort-multipart-upload \
   --upload-id <upload-id>
 ```
 
-The upload ID is returned by the create-multipart-upload command or can be retrieved by listing ongoing multipart uploads:
+The upload ID is returned by the `create-multipart-upload` command or can be retrieved by listing ongoing multipart uploads:
 
 ```bash
 user@host:~$ aws s3api list-multipart-uploads --bucket my-bucket
