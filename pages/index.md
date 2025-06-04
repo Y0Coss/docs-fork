@@ -177,6 +177,7 @@
             + [Activating Windows Machines using Hyper-V on an OVHcloud licensed Windows Server](bare_metal_cloud/dedicated_servers/activate_windows_vm_hyperv)
             + [Installing CUDA on a dedicated GPU server](bare_metal_cloud/dedicated_servers/cuda_installation_on_gpu)
             + [AMD SME/SEV on Ubuntu 20](bare_metal_cloud/dedicated_servers/sme_sev_enable_and_use)
+            + [Dedicated Servers - Upgrading your SSD Solidigm D7-P5520 firmware](bare_metal_cloud\dedicated_servers\solidigm_d7-p5520_fw_update)
             + [How to create a Palworld compatible server](bare_metal_cloud/virtual_private_servers/palworld-server-on-vps)
             + [Installing a web development environment on a VPS or a dedicated server](bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps)
             + [Installing WordPress with Docker on a VPS or a dedicated server](bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)
