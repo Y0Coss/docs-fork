@@ -5,7 +5,7 @@ updated: 2025-06-03
 ---
 
 <style>
-.w-500 {
+.w-640 {
   max-width:640px !important;
 }
 </style>
