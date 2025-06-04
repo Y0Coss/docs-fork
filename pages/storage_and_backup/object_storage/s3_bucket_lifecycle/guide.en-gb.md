@@ -55,7 +55,7 @@ When an object reaches the end of its lifetime based on its lifecycle configurat
 - **versioning-suspended**: we currently do not allow for the suspension of versioning if you have a lifecycle configuration in effect and vice-versa. We currently do not allow for the upload of a lifecycle configuration if versioning is suspended on the bucket.
 
 
-## Expiration (available)
+## Expiration
 
 Lifecycle rules are processed asynchronously and on a best-effort basis. Most rules are applied within 24 hours, but for very large buckets or when processing many objects, it might take longer. During this delay, you continue to be billed for the object's current storage tier, even if the rule (e.g., expiration or transition) has already been triggered but not yet completed. For example, if an object is set to be deleted on day 30 but is only processed on day 32, you may be billed for an additional two days.
 
