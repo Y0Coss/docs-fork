@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2025-05-05
+updated: 2025-06-04
 ---
 
 <style>
@@ -50,31 +50,6 @@ Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs/
 ### Préparation
 
 /// details | Pour utiliser l'AWS CLI
-
-> [!warning]
->
-> Avertissement sur la compatibilité de la CLI et du SDK AWS
->
-> Amazon Web Services (AWS) a récemment effectué une modification qui renforce les checksum lors d'opérations via l'API S3. Ces nouveaux contrôles d’intégrité sont en cours d'intégration sur notre plateforme. Aussi, les headers suivants ne sont pas supportés :
->
-> - `x-amz-content-sha256 with value STREAMING-UNSIGNED-PAYLOAD-TRAILER`
-> - `x-amz-sdk-checksum-algorithm with value CRC32`
->
-> En attendant la mise à jour de notre service Object Storage, nous vous recommandons d'utiliser les versions maximales prises en charge de la CLI, du SDK et des autres outils AWS suivants :
->
-> - boto3 1.35.99
-> - legacy aws cli 1.36.40
-> - aws cli 2.22.35
-> - aws-sdk-go 1.72.3
-> - aws-sdk-java 2.29.52
-> - aws-sdk-js-v3 3.726.1
-> - aws-sdk-net 3.7.962.0
-> - aws-sdk-php 3.336.15
-> - aws-sdk-ruby 1.177.0
->
-> Pour en savoir plus, rendez vous [ici](https://docs.aws.amazon.com/fr_fr/sdkref/latest/guide/feature-dataintegrity.html){.external}.
->
-> Obtenez des informations sur la mise à jour chez OVHcloud sur [cette page](https://public-cloud.status-ovhcloud.com/incidents/491vx956zx6b).
 
 Pour connaître la procédure d’installation de l’AWS CLI adaptée à votre environnement, nous vous recommandons de consulter [la documentation officielle d’AWS](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions){.external}.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Using OVHcloud Object Storage as Terraform Backend to store your Terraform state'
 excerpt: 'Find out how to use an OVHcloud Object Storage as a Terraform Backend to store your Terraform state'
-updated: 2025-05-14
+updated: 2025-06-04
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ In this tutorial you will:
 
 ## Before you begin
 
-* You should have installed Terraform CLI, version 0.12.x minimum, on your machine. You can install it by following the [detailed installation instructions](https://www.terraform.io/docs/cli/index.html){.external} or with the tool [tfenv](https://github.com/tfutils/tfenv){.external}.
+- You should have installed Terraform CLI, version 0.12.x minimum, on your machine. You can install it by following the [detailed installation instructions](https://www.terraform.io/docs/cli/index.html){.external} or with the tool [tfenv](https://github.com/tfutils/tfenv){.external}.
 
 ## Terraform
 
