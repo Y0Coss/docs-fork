@@ -1,12 +1,8 @@
 ---
 title: "Monitoraggio degli attacchi DDoS con il Network Security Dashboard"
 excerpt: "Scopri come navigare attraverso il dashboard di sicurezza di rete"
-updated: 2025-06-02
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -14,8 +10,7 @@ Questa guida ti mostra il Dashboard di Sicurezza di Rete e ti fornisce una panor
 
 > [!warning]
 >
-> **Avviso**: la funzionalità "Scrubbing Center: modalità permanente" ha raggiunto
-la fine del ciclo di vita (EOL) e sarà disattivata definitivamente l'8 settembre 2025.
+> **Avviso**: la funzionalità "Scrubbing Center: modalità permanente" ha raggiunto la fine del ciclo di vita (EOL) e sarà disattivata definitivamente l'8 settembre 2025.
 >
 
 ## Prerequisiti

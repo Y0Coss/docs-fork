@@ -1,7 +1,7 @@
 ---
 title: "Monitoring des attaques DDoS avec le Network Security Dashboard"
 excerpt: "Apprenez à naviguer dans le Network Security Dashboard"
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Objectif
@@ -10,8 +10,7 @@ Ce guide a pour but de présenter le tableau de bord de sécurité réseau (*Net
 
 > [!warning]
 >
-> **Avertissement** : la fonctionnalité "Centre de Scrubbing: mode permanent" atteint 
-sa fin de vie (EOL) et sera désactivée définitivement le 8 septembre 2025.
+> **Avertissement** : la fonctionnalité « Centre de Scrubbing: mode permanent » atteint sa fin de vie (EOL) et sera désactivée définitivement le 8 septembre 2025.
 >
 
 ## Prérequis

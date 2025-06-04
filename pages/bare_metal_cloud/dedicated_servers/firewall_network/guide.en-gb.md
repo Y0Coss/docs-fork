@@ -1,7 +1,7 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 
 > [!warning]
 >
-> **Warning**: Permanent Mitigation is reaching it's End-Of-Life (EOL) and will be disabled permanently on September 8, 2025.
+> **Warning**: Permanent Mitigation is reaching its End-Of-Life (EOL) and will be disabled permanently on September 8, 2025.
 >
 
 > [!primary]

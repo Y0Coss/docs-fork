@@ -1,12 +1,8 @@
 ---
 title: "Monitorización de los ataques DDoS con el Network Security Dashboard"
 excerpt: "Aprenda a navegar por el panel de control de seguridad de red"
-updated: 2025-06-02
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 ## Objetivo
 
@@ -14,8 +10,7 @@ Esta guía explica el panel de control de seguridad de la red y proporciona una 
 
 > [!warning]
 >
-> **Advertencia**: se alcanzó la funcionalidad "Scrubbing Center: modo permanente"
-su fin de vida útil (EOL) y se desactivará definitivamente el 8 de septiembre de 2025.
+> **Advertencia**: La mitigación permanente está llegando a su fin de vida útil (EOL) y se desactivará permanentemente el 8 de septiembre de 2025.
 >
 
 ## Requisitos

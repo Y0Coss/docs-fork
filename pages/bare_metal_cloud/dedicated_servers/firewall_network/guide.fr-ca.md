@@ -1,7 +1,7 @@
 ---
 title: 'Activer et configurer le Edge Network Firewall'
 excerpt: 'Découvrez comment configurer le Edge Network Firewall pour vos services'
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Objectif
@@ -12,8 +12,7 @@ Pour protéger les services des clients exposés sur les adresses IP publiques, 
 
 > [!warning]
 >
-> **Avertissement** : la fonctionnalité "Centre de Scrubbing: mode permanent" atteint 
-sa fin de vie (EOL) et sera désactivée définitivement le 8 septembre 2025.
+> **Avertissement** : la fonctionnalité « Centre de Scrubbing: mode permanent » atteint sa fin de vie (EOL) et sera désactivée définitivement le 8 septembre 2025.
 >
 
 > [!primary]

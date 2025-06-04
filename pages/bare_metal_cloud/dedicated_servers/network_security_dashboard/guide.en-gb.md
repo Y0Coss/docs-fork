@@ -1,7 +1,7 @@
 ---
 title: "Monitoring DDoS attacks with the Network Security Dashboard"
 excerpt: "Learn how to navigate through the Network Security Dashboard"
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ This guide explains the Network Security Dashboard and provides an overview of c
 
 > [!warning]
 >
-> **Warning**: Permanent Mitigation is reaching it's End-Of-Life (EOL) and will be disabled permanently on September 8, 2025.
+> **Warning**: Permanent Mitigation is reaching its End-Of-Life (EOL) and will be disabled permanently on September 8, 2025.
 >
 
 ## Requirements

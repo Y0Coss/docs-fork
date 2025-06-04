@@ -1,7 +1,7 @@
 ---
 title: 'Abilitazione e configurazione di Edge Network Firewall'
 excerpt: 'Come configurare Edge Network Firewall per i servizi'
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Obiettivo
@@ -12,8 +12,7 @@ Per proteggere i servizi clienti esposti agli indirizzi IP pubblici, OVHcloud of
 
 > [!warning]
 >
-> **Avviso**: la funzionalità "Scrubbing Center: modalità permanente" ha raggiunto
-la fine del ciclo di vita (EOL) e sarà disattivata definitivamente l'8 settembre 2025.
+> **Avviso**: la funzionalità "Scrubbing Center: modalità permanente" ha raggiunto la fine del ciclo di vita (EOL) e sarà disattivata definitivamente l'8 settembre 2025.
 >
 
 > [!primary]

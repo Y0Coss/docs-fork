@@ -1,7 +1,7 @@
 ---
 title: 'Aktywacja i konfiguracja Edge Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować Edge Network Firewall dla Twoich usług'
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Wprowadzenie
@@ -12,8 +12,7 @@ Aby chronić usługi dostępne dla klientów korzystających z publicznych adres
 
 > [!warning]
 >
-> **Ostrzeżenie** : funkcja "Scrubbing Center: tryb stały" została osiągnięta
-jego koniec życia (EOL) i zostanie definitywnie wyłączony 8 września 2025.
+> **Ostrzeżenie** : funkcja "Scrubbing Center: tryb stały" została osiągnięta jego koniec życia (EOL) i zostanie definitywnie wyłączony 8 września 2025.
 >
 
 > [!primary]

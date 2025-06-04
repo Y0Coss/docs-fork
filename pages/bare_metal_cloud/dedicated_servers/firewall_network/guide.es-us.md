@@ -1,7 +1,7 @@
 ---
 title: 'Activación y configuración del Edge Network Firewall'
 excerpt: 'Descubra cómo configurar el Edge Network Firewall para sus servicios'
-updated: 2025-06-02
+updated: 2025-06-04
 ---
 
 ## Objetivo
@@ -14,8 +14,7 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 > [!warning]
 >
-> **Advertencia**: se alcanzó la funcionalidad "Scrubbing Center: modo permanente"
-su fin de vida útil (EOL) y se desactivará definitivamente el 8 de septiembre de 2025.
+> **Advertencia**: La mitigación permanente está llegando a su fin de vida útil (EOL) y se desactivará permanentemente el 8 de septiembre de 2025.
 >
 
 > [!primary]
