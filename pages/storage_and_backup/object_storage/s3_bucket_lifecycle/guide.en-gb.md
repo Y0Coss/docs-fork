@@ -397,11 +397,12 @@ In a versioned bucket, the following configuration does the following actions:
 
 The following are the currently supported transitions:
 
-| from/to          | High Performance | Standard  | Standard Infrequent Access |Cold Archive |
-| ---------------- | ---------------- | --------- | -------------------------- |------------ |
-| High Performance |        -         | yes       |             yes            | no          |
-| Standard         | forbidden        | -         |             yes            | no          |
-| Cold Archive     | forbidden        | forbidden |             forbidden      | -           |
+| from/to          | High Performance | Standard  | Infrequent Access |Cold Archive |
+| ---------------- | ---------------- | --------- | ----------------- |------------ |
+| High Performance |        -         | yes       |    yes            | no          |
+| Standard         | forbidden        | -         |    yes            | no          |
+| Infrequent Access| forbidden        | forbidden |    -              | no          |
+| Cold Archive     | forbidden        | forbidden |    forbidden      | -           |
 
 ### Minimum object size
 
