@@ -12,8 +12,7 @@ Zum Schutz von Diensten, die über öffentliche IP-Adressen zugänglich sind, bi
 
 > [!warning]
 >
-> **Warnung**: Funktion "Scrubbing-Center: permanenter Modus" erreicht
-das End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
+> **Achtung**: Die Funktion "Scrubbing-Center: permanenter Modus" erreicht End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
 >
 
 > [!primary]
