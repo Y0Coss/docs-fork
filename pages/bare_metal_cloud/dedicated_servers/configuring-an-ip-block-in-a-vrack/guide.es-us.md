@@ -1,7 +1,7 @@
 ---
 title: 'Configurar un bloque de IP en el vRack'
 excerpt: 'Cómo configurar un bloque de direcciones IP públicas en el vRack'
-updated: 2025-06-03
+updated: 2025-06-04
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja bloku IP w sieci vRack'
 excerpt: 'Dowiedz się, jak skonfigurować blok publicznych adresów IP w sieci vRack'
-updated: 2025-06-03
+updated: 2025-06-04
 ---
 
 ## Wprowadzenie

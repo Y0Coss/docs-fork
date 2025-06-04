@@ -1,7 +1,7 @@
 ---
 title: 'IP-Block im vRack konfigurieren'
 excerpt: 'So konfigurieren Sie einen öffentlichen IP-Adressblock im vRack'
-updated: 2025-06-03
+updated: 2025-06-04
 ---
 
 ## Einleitung

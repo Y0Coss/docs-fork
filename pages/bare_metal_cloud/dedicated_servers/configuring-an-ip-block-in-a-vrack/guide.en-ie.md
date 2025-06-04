@@ -1,7 +1,7 @@
 ---
 title: Configuring an IP block in a vRack
 excerpt: This guide will show you how to configure a block of public IP addresses for use with the vRack.
-updated: 2025-06-03
+updated: 2025-06-04
 ---
 
 ## Objective
