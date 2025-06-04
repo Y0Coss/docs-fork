@@ -6,11 +6,11 @@ updated: 2025-06-04
 
 ## Objectif
 
-Les mises à jour régulières du microprogramme jouent un rôle essentiel dans la préservation des performances, de la stabilité et de la sécurité de vos disques. Ces mises à jour comprennent souvent des corrections de bugs critiques, une compatibilité améliorée et des fonctions de sécurité avancées qui sont indispensables pour préserver l'intégrité de vos données et maintenir une efficacité opérationnelle optimale.
+Les mises à jour régulières du firmware jouent un rôle essentiel dans la préservation des performances, de la stabilité et de la sécurité de vos disques. Ces mises à jour comprennent souvent des corrections de bugs critiques, une compatibilité améliorée et des fonctions de sécurité avancées qui sont indispensables pour préserver l'intégrité de vos données et maintenir une efficacité opérationnelle optimale.
 
 Un correctif important a été introduit dans ce nouveau firmware (version 9CV10490). Nous vous recommandons vivement de mettre à jour votre firmware afin d’éviter une panne prématurée.
 
-Notes de mise à jour du microprogramme :
+Notes de mise à jour du firmware :
 
 >Mitigates the following issues besides some other minor/corner case fixes:
 >
@@ -47,8 +47,8 @@ Un serveur Bare Metal avec un périphérique Solidigm D7-P5520 PCIe 4.0 NVMe, pa
 
 > [!alert]
 >
-> Avant toute tentative de mise à jour du microprogramme, une sauvegarde des données du lecteur doit être effectuée. Découvrez comment sauvegarder vos données grâce à notre guide sur [Backup Storage](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
-> La mise à jour du microprogramme ne formate pas le lecteur ou ne supprime pas les données, mais une erreur de mise à jour du microprogramme peut se produire. Ne mettez pas le lecteur ou le serveur hors tension pendant le processus de mise à jour du microprogramme.
+> Avant toute tentative de mise à jour du firmware, une sauvegarde des données du lecteur doit être effectuée. Découvrez comment sauvegarder vos données grâce à notre guide sur [Backup Storage](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
+> La mise à jour du firmware ne formate pas le lecteur ou ne supprime pas les données, mais une erreur de mise à jour du firmware peut se produire. Ne mettez pas le lecteur ou le serveur hors tension pendant le processus de mise à jour du firmware.
 >
 
 > [!primary]
@@ -67,7 +67,7 @@ Un serveur Bare Metal avec un périphérique Solidigm D7-P5520 PCIe 4.0 NVMe, pa
 | Rocky 8/9 OS | sofu 2.1 | 9CV10490 | OK |
 
 
-#### Étape 1 - Télécharger le package du microprogramme
+#### Étape 1 - Télécharger le package du firmware
 
 Téléchargez le paquet du firmware sur votre serveur :
 
@@ -89,7 +89,7 @@ chmod +x sofu_2.1_x64
 
 #### Étape 3 - Mettre à jour le firmware
 
-L'outil détecte uniquement les périphériques NVMe Solidigm D7-P5520 et démarre le flash si le microprogramme n'est pas à jour :
+L'outil détecte uniquement les périphériques NVMe Solidigm D7-P5520 et démarre le flash si le firmware n'est pas à jour :
 
 ```bash
 ./sofu_2.1_x64
@@ -172,7 +172,7 @@ Status : Firmware updated successfully. Please reboot the system.
 Status : Firmware updated successfully. Please reboot the system.
 ```
 
-Le message suivant doit s’afficher pour chaque périphérique NVMe Solidigm D7-P5520 dont le microprogramme n’est pas à jour :
+Le message suivant doit s’afficher pour chaque périphérique NVMe Solidigm D7-P5520 dont le firmware n’est pas à jour :
 
 ```bash
 Status : Firmware updated successfully. Please reboot the system.
@@ -264,7 +264,7 @@ Status : The selected drive contains current firmware as of this tool release.
 | -- | -- | -- | -- |
 | SE ESXi 8.0U2c | sofu 2.2 | 9CV10490 | OK |
 
-#### Étape 1 - Télécharger le package du microprogramme
+#### Étape 1 - Télécharger le package du firmware
 
 Téléchargez le paquet du firmware sur votre serveur :
 
@@ -272,7 +272,7 @@ Téléchargez le paquet du firmware sur votre serveur :
 wget https://last-public-ovh-bare.metal.snap.mirrors.ovh.net/hardware/P5520/P5520_FW_to_9CV10490_ESXi.zip --no-check-certificate
 ```
 
-**Par défaut, la politique de pare-feu d'ESXi bloque le trafic HTTPS sortant. Si vous ne parvenez pas à télécharger le microprogramme, vous devrez peut-être ajouter une règle de pare-feu pour autoriser les connexions HTTPS sortantes.**
+**Par défaut, la politique de pare-feu d'ESXi bloque le trafic HTTPS sortant. Si vous ne parvenez pas à télécharger le firmware, vous devrez peut-être ajouter une règle de pare-feu pour autoriser les connexions HTTPS sortantes.**
 
 Décompresser l'archive :
 
@@ -296,7 +296,7 @@ Ouvrez le répertoire de l'outil:
 cd /opt/solidigm/sofu/
 ```
 
-L'outil détecte uniquement les périphériques NVMe Solidigm D7-P5520 et démarre le flash si le microprogramme n'est pas à jour :
+L'outil détecte uniquement les périphériques NVMe Solidigm D7-P5520 et démarre le flash si le firmware n'est pas à jour :
 
 ```bash
 ./sofu
@@ -404,7 +404,7 @@ Status : Firmware update successful. Please reboot to apply update.
 Status : Firmware update successful. Please reboot to apply update.
 ```
 
-Le message suivant doit s’afficher pour chaque périphérique NVMe Solidigm D7-P5520 dont le microprogramme n’est pas à jour :
+Le message suivant doit s’afficher pour chaque périphérique NVMe Solidigm D7-P5520 dont le firmware n’est pas à jour :
 
 ```bash
 Status : Firmware update successful. Please reboot to apply update.
@@ -519,7 +519,7 @@ Status : The selected drive contains current firmware as of this tool release.
 | Windows 2022 | sofu 2.1 | 9CV10490 | OK |
 | Windows 2025 | sofu 2.1 | 9CV10490 | OK |
 
-#### Étape 1 - Télécharger le package du microprogramme
+#### Étape 1 - Télécharger le package du firmware
 
 Téléchargez le paquet firmware sur votre serveur : https://last-public-ovh-bare.metal.snap.mirrors.ovh.net/hardware/P5520/P5520_FW_to_9CV10490_Win64.zip
 
@@ -636,7 +636,7 @@ Status : Firmware updated successfully. Please reboot the system.
 Status : Firmware updated successfully. Please reboot the system.
 ```
 
-Le message suivant doit s’afficher pour chaque périphérique NVMe Solidigm D7-P5520 dont le microprogramme n’est pas à jour :
+Le message suivant doit s’afficher pour chaque périphérique NVMe Solidigm D7-P5520 dont le firmware n’est pas à jour :
 
 ```bash
 Status : Firmware updated successfully. Please reboot the system.
@@ -652,7 +652,7 @@ Une fois la mise à jour du firmware terminée, veuillez redémarrer votre serve
 
 #### Étape 3 - Vérifiez que la version du firmware est à jour après le redémarrage du serveur
 
-Pour vérifier que le microprogramme est à jour, exécutez simplement l'outil sofu une fois de plus ; exécutez Windows PowerShell en tant qu'administrateur, puis exécutez la commande suivante dans le répertoire où sofu_2.1_win64.exe a été décompressé :
+Pour vérifier que le firmware est à jour, exécutez simplement l'outil sofu une fois de plus ; exécutez Windows PowerShell en tant qu'administrateur, puis exécutez la commande suivante dans le répertoire où sofu_2.1_win64.exe a été décompressé :
 
 ```bash
 .\sofu_2.1_win64.exe
