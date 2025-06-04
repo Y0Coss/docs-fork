@@ -1,18 +1,22 @@
 ---
 title: 'Configurar IPv6 em servidores dedicados'
 excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
-updated: 2024-07-15
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
 O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para solucionar a já esperada exaustão do seu antecessor, o IPv4, através do recurso a endereços de 128 bits em vez de endereços de 32 bits. A maior parte dos servidores dedicados OVHcloud são entregues com um bloco IPv6 /64, à exceção dos servidores High Grade e Scale que são entregues com um bloco IPv6 /56. Isto representa mais de 18 quintiliões de endereços IP ao seu dispor.
 
 **Este guia explica como configurar endereços IPv6 no seu servidor por meio de vários exemplos.**
+
+> [!primary]
+>
+> Este artigo fornece detalhes sobre a configuração de um endereço IP principal. Nos servidores que são compatíveis com o vRack, pode também configurar endereços Additional IP num vRack em vez da interface pública do servidor. Consulte as instruções correspondentes nos seguintes artigos:
+>
+> - IPv4: [Configurar um bloco de endereços IP no vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
+> - IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
 
 > [!warning]
 > A OVHcloud presta-lhe serviços cuja configuração e gestão é da sua inteira responsabilidade, cabendo-lhe a si assegurar o seu correto funcionamento. 
