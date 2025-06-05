@@ -1973,7 +1973,7 @@
                 + [Analyzing Twitter with Logs Data Platform](manage_and_operate/observability/logs_data_platform/usecase_twitter)
                 + [Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit](manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit)
                 + [SAP logs on OVHcloud Logs Data Platform - Solution Setup](hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup)
-+ [Key Management Service (KMS)](manage-operate-kms)
+    + [Key Management Service (KMS)](manage-operate-kms)
         + [Getting started with OVHcloud Key Management Service (KMS)](manage_and_operate/kms/quick-start)
         + [Using the OVHcloud Key Management Service (KMS) with your data](manage_and_operate/kms/kms-usage)
         + [OVHcloud KMS Architecture overview](manage_and_operate/kms/architecture-overview)
