@@ -1,6 +1,6 @@
 ---
-title: Dedicated Servers - Mise à jour du firmware de votre SSD Solidigm D7-P5520
-excerpt: Découvrez comment mettre à jour le firmware de votre SSD Solidigm D7-P5520 sur vos serveurs dédiés Linux, ESXi et Windows
+title: "Serveurs Dédiés - Mise à jour du firmware de votre SSD Solidigm D7-P5520"
+excerpt: "Découvrez comment mettre à jour le firmware de votre SSD Solidigm D7-P5520 sur vos serveurs dédiés Linux, ESXi et Windows"
 updated: 2025-06-05
 ---
 
@@ -24,15 +24,15 @@ Les mises à jour régulières du firmware jouent un rôle essentiel dans la pr�
 
 Un correctif important a été introduit dans ce nouveau firmware (version 9CV10490). Nous vous recommandons vivement de mettre à jour votre firmware afin d’éviter une panne prématurée.
 
-Notes de mise à jour du firmware :
-
->Mitigates the following issues besides some other minor/corner case fixes:
+> **Notes de mise à jour du firmware :**
 >
->- Admin Command Timeout During Read Intensive Workloads
+> Mitigates the following issues besides some other minor/corner case fixes:
 >
->- Drive May Fail to Enumerate Following Unplanned Power Cycle
+> - Admin Command Timeout During Read Intensive Workloads
 >
->- Failure of MOS-FET Component Leads to Higher Drive Failure Rate
+> - Drive May Fail to Enumerate Following Unplanned Power Cycle
+>
+> - Failure of MOS-FET Component Leads to Higher Drive Failure Rate
 >
 
 L'objectif de ce guide est de vous aider à mettre à niveau le firmware de votre Solidigm D7-P5520 PCIe 4.0 NVMe.
@@ -57,7 +57,7 @@ Un serveur Bare Metal avec un périphérique Solidigm D7-P5520 PCIe 4.0 NVMe, pa
 - Advance Gen2/Gen3
 - Rise
 
-## Instructions
+## En pratique
 
 > [!alert]
 >
@@ -80,8 +80,7 @@ Un serveur Bare Metal avec un périphérique Solidigm D7-P5520 PCIe 4.0 NVMe, pa
 | Ubuntu 22.04/24.04 OS | sofu 2.1 | 9CV10490 | OK |
 | Rocky 8/9 OS | sofu 2.1 | 9CV10490 | OK |
 
-
-#### Étape 1 - Télécharger le package du firmware
+#### Étape 1 - Télécharger le paquet du firmware
 
 Téléchargez le paquet du firmware sur votre serveur :
 
@@ -109,7 +108,7 @@ L'outil détecte uniquement les périphériques NVMe Solidigm D7-P5520 et démar
 ./sofu_2.1_x64
 ```
 
-/// details | Exemple de résultat sur un serveur avec 3 disques Solidigm à mettre à jour :
+/// details | **Exemple de résultat sur un serveur avec 3 disques Solidigm à mettre à jour**
 
 ```bash
 root@labo:~# ./sofu_2.1_x64
@@ -202,7 +201,7 @@ Status : Firmware updated successfully. Please reboot the system.
 
 Une fois la mise à jour du firmware terminée, veuillez redémarrer votre serveur.
 
-#### Étape 4 - Vérifiez que la version du firmware est à jour après le redémarrage du serveur
+#### Étape 4 - Vérifier que la version du firmware est à jour après le redémarrage du serveur
 
 Pour vérifier que le firmware est à jour, il suffit de relancer l'outil *Sofu* :
 
@@ -214,7 +213,7 @@ L'outil doit renvoyer le message suivant pour chaque lecteur : **"The selected d
 
 Vous pouvez également vérifier pour chaque NVMe que la version du firmware est bien celle attendue : **9CV10490**
 
-/// details | Exemple de résultat sur un serveur avec 3 disques Solidigm à mettre à jour :
+/// details | **Exemple de résultat sur un serveur avec 3 disques Solidigm à mettre à jour**
 
 ```bash
 root@labo:~# ./sofu_2.1_x64
@@ -309,7 +308,7 @@ Redémarrez votre serveur, ce qui est nécessaire afin de mettre à jour le bina
 
 #### Étape 3 - Mettre à jour le firmware
 
-Ouvrez le répertoire de l'outil:
+Ouvrez le répertoire de l'outil :
 
 ```bash
 cd /opt/solidigm/sofu/
@@ -321,7 +320,7 @@ L'outil détecte uniquement les périphériques NVMe Solidigm D7-P5520 et démar
 ./sofu
 ```
 
-/// details | Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
+/// details | **Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour**
 
 ```bash
 [root@labo:~] cd /opt/solidigm/sofu/
@@ -439,7 +438,7 @@ Status : Firmware update successful. Please reboot to apply update.
 
 Une fois la mise à jour du firmware terminée, veuillez redémarrer votre serveur.
 
-### Étape 4 - Vérifiez que la version du firmware est à jour après le redémarrage du serveur
+### Étape 4 - Vérifier que la version du firmware est à jour après le redémarrage du serveur
 
 Pour vérifier que le firmware est à jour, il suffit de relancer l'outil logiciel :
 
@@ -452,7 +451,7 @@ L'outil doit renvoyer le message suivant pour chaque lecteur : **"The selected d
 
 Vous pouvez également vérifier pour chaque NVMe que la version du firmware est bien celle attendue : **9CV10490**
 
-/// details | Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
+/// details | **Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour**
 
 ```bash
 [root@labo:~] cd /opt/solidigm/sofu/
@@ -536,7 +535,7 @@ Status : The selected drive contains current firmware as of this tool release.
 
 #### Configuration logicielle testée par OVHcloud
 
-| Plateforme | Outil de flash | Firmware | Result |
+| Plateforme | Outil de flash | Firmware | Resultat |
 | -- | -- | -- | -- |
 | Windows 2019 | sofu 2.1 | 9CV10490 | OK |
 | Windows 2022 | sofu 2.1 | 9CV10490 | OK |
@@ -544,21 +543,21 @@ Status : The selected drive contains current firmware as of this tool release.
 
 #### Étape 1 - Télécharger le package du firmware
 
-Téléchargez le package du firmware sur votre serveur : https://last-public-ovh-bare.metal.snap.mirrors.ovh.net/hardware/P5520/P5520_FW_to_9CV10490_Win64.zip
+Téléchargez le package du firmware sur votre serveur : <https://last-public-ovh-bare.metal.snap.mirrors.ovh.net/hardware/P5520/P5520_FW_to_9CV10490_Win64.zip>
 
 **Version de l'outil : 2.1**
 
-Décompressez l'archive. L'outil à utiliser est sofu_2.1_win64.exe, il se trouve dans le dossier décompressé.
+Décompressez l'archive. L'outil à utiliser est `sofu_2.1_win64.exe`, il se trouve dans le dossier décompressé.
 
 #### Étape 2 - Mettre à jour le firmware
 
-Exécutez Windows PowerShell en tant qu'administrateur, puis exécutez la commande suivante dans le répertoire où sofu_2.1_win64.exe a été décompressé :
+Exécutez Windows PowerShell en tant qu'administrateur, puis exécutez la commande suivante dans le répertoire où `sofu_2.1_win64.exe` a été décompressé :
 
 ```bash
 .\sofu_2.1_win64.exe
 ```
 
-/// details | Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
+/// details | **Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour**
 
 ```bash
 PS C:\Users\admin\Desktop\P5520_FW_to_9CV10490_Win64> .\sofu_2.1_win64.exe
@@ -675,9 +674,9 @@ Status : Firmware updated successfully. Please reboot the system.
 
 Une fois la mise à jour du firmware terminée, veuillez redémarrer votre serveur.
 
-#### Étape 3 - Vérifiez que la version du firmware est à jour après le redémarrage du serveur
+#### Étape 3 - Vérifier que la version du firmware est à jour après le redémarrage du serveur
 
-Pour vérifier que le firmware est à jour, exécutez simplement l'outil *Sofu* une fois de plus ; exécutez Windows PowerShell en tant qu'administrateur, puis exécutez la commande suivante dans le répertoire où sofu_2.1_win64.exe a été décompressé :
+Pour vérifier que le firmware est à jour, exécutez simplement l'outil *Sofu* une fois de plus. Exécutez Windows PowerShell en tant qu'administrateur, puis exécutez la commande suivante dans le répertoire où `sofu_2.1_win64.exe` a été décompressé :
 
 ```bash
 .\sofu_2.1_win64.exe
@@ -687,7 +686,7 @@ L'outil doit renvoyer le message suivant pour chaque lecteur : **"The selected d
 
 Vous pouvez également vérifier pour chaque NVMe que la version du firmware est bien celle attendue : **9CV10490**
 
-/// details | Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
+/// details | **Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour**
 
 ```bash
 PS C:\Users\admin\Desktop\P5520_FW_to_9CV10490_Win64> .\sofu_2.1_win64.exe
@@ -770,4 +769,4 @@ Status : The selected drive contains current firmware as of this tool release.
 
 Si vous avez besoin de formation ou d’assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts Professional Services une analyse personnalisée de votre projet.
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

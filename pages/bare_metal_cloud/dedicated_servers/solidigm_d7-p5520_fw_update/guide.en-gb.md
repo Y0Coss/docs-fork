@@ -24,15 +24,13 @@ Routine firmware updates play a pivotal role in upholding your drives' performan
 
 An important patch has been introduced in this new firmware (version 9CV10490). We strongly recommend to update your firmware to avoid premature failure.
 
-Firmware Release Notes:
-
->Mitigates the following issues besides some other minor/corner case fixes:
+> **Firmware Release Notes:**
 >
->- Admin Command Timeout During Read Intensive Workloads
+> Mitigates the following issues besides some other minor/corner case fixes:
 >
->- Drive May Fail to Enumerate Following Unplanned Power Cycle
->
->- Failure of MOS-FET Component Leads to Higher Drive Failure Rate
+> - Admin Command Timeout During Read Intensive Workloads
+> - Drive May Fail to Enumerate Following Unplanned Power Cycle
+> - Failure of MOS-FET Component Leads to Higher Drive Failure Rate
 >
 
 The purpose of this guide is to help you upgrade your Solidigm D7-P5520 PCIe 4.0 NVMe firmware.
@@ -80,7 +78,6 @@ A bare metal server with a Solidigm D7-P5520 PCIe 4.0 NVMe device, from the foll
 | Ubuntu 22.04/24.04 OS | sofu 2.1 | 9CV10490 | OK |
 | Rocky 8/9 OS | sofu 2.1 | 9CV10490 | OK |
 
-
 #### Step 1 - Download the firmware package
 
 Download the firmware package on your server:
@@ -103,13 +100,13 @@ chmod +x sofu_2.1_x64
 
 #### Step 3 - Update the firmware
 
-The tool only detects Solidigm D7-P5520 NVMe devices and start the flash if the firmware is not up to date:
+The tool only detects Solidigm D7-P5520 NVMe devices and starts the flash if the firmware is not up to date:
 
 ```bash
 ./sofu_2.1_x64
 ```
 
-/// details | Example result on a server with 3 Solidigm drives to update:
+/// details | **Example result on a server with 3 Solidigm drives to update**
 
 ```bash
 root@labo:~# ./sofu_2.1_x64
@@ -200,7 +197,7 @@ Status : Firmware updated successfully. Please reboot the system.
 Status : Firmware updated successfully. Please reboot the system.
 ```
 
-At this point the firmware update is complete, please reboot your server.
+At this point the firmware update is complete. You should now reboot your server.
 
 #### Step 4 - Check the firmware version is up-to-date after the server reboot
 
@@ -214,7 +211,7 @@ The tool should return the following message for each drive: **"The selected dri
 
 You can also check for each NVMe that the firmware version is the expected one : **9CV10490**
 
-/// details | Example result on a server with 3 Solidigm drives to update:
+/// details | **Example result on a server with 3 Solidigm drives to update**
 
 ```bash
 root@labo:~# ./sofu_2.1_x64
@@ -305,7 +302,7 @@ unzip -d /tmp P5520_FW_to_9CV10490_ESXi.zip
 esxcli software vib install -v /tmp/solidigm-firmware-updater_2.2.201-400.vib --no-sig-check
 ```
 
-Run a server reboot, which is necessary in order to update the binary. 
+Run a server reboot, which is necessary in order to update the binary.
 
 #### Step 3 - Update the firmware
 
@@ -315,13 +312,13 @@ Enter the tool directory:
 cd /opt/solidigm/sofu/
 ```
 
-The tool only detects Solidigm D7-P5520 NVMe devices and start the flash if the firmware is not up to date:
+The tool only detects Solidigm D7-P5520 NVMe devices and starts the flash if the firmware is not up to date:
 
 ```bash
 ./sofu
 ```
 
-/// details | Example result on a server with 4 Solidigm drives to update:
+/// details | **Example result on a server with 4 Solidigm drives to update**
 
 ```bash
 [root@labo:~] cd /opt/solidigm/sofu/
@@ -437,7 +434,7 @@ Status : Firmware updated successfully. Please reboot the system.
 Status : Firmware updated successfully. Please reboot the system.
 ```
 
-At this point the firmware update is complete, please reboot your server.
+At this point the firmware update is complete. You should now reboot your server.
 
 ### Step 4 - Check the firmware version is up-to-date after the server reboot
 
@@ -452,7 +449,7 @@ The tool should return the following message for each drive: **"The selected dri
 
 You can also check for each NVMe that the firmware version is the expected one : **9CV10490**
 
-/// details | Example result on a server with 4 Solidigm drive to update:
+/// details | **Example result on a server with 4 Solidigm drives to update**
 
 ```bash
 [root@labo:~] cd /opt/solidigm/sofu/
@@ -544,21 +541,21 @@ Status : The selected drive contains current firmware as of this tool release.
 
 #### Step 1 - Download the firmware package
 
-Download the firmware package on your server: https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/P5520/P5520_FW_to_9CV10490_Win64.zip
+Download the firmware package on your server: <https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/P5520/P5520_FW_to_9CV10490_Win64.zip>
 
 **Tool version: 2.1**
 
-Unzip the archive. The tool to use is sofu_2.1_win64.exe, it is located in the unzipped folder.
+Unzip the archive. The tool to use is `sofu_2.1_win64.exe`, it is located in the unzipped folder.
 
 #### Step 2 - Update the firmware
 
-Run Windows PowerShell as administrator, then run the following command in the directory where sofu_2.1_win64.exe was unzipped :
+Run Windows PowerShell as administrator, then run the following command in the directory where `sofu_2.1_win64.exe` was unzipped :
 
 ```bash
 .\sofu_2.1_win64.exe
 ```
 
-/// details | Example result on a server with 4 Solidigm drives to update:
+/// details | **Example result on a server with 4 Solidigm drives to update**
 
 ```bash
 PS C:\Users\admin\Desktop\P5520_FW_to_9CV10490_Win64> .\sofu_2.1_win64.exe
@@ -673,11 +670,11 @@ Status : Firmware updated successfully. Please reboot the system.
 Status : Firmware updated successfully. Please reboot the system.
 ```
 
-At this point the firmware update is complete, please reboot your server.
+At this point the firmware update is complete. You should now reboot your server.
 
 #### Step 3 - Check the firmware version is up-to-date after the server reboot
 
-To check that the firmware is up to date, simply run the *Sofu* tool once more; Run Windows PowerShell as administrator, then run the following command in the directory where sofu_2.1_win64.exe was unzipped :
+To check that the firmware is up to date, simply run the *Sofu* tool once more. Run Windows PowerShell as administrator, then run the following command in the directory where `sofu_2.1_win64.exe` was unzipped :
 
 ```bash
 .\sofu_2.1_win64.exe
@@ -687,7 +684,7 @@ The tool should return the following message for each drive: **"The selected dri
 
 You can also check for each NVMe that the firmware version is the expected one : **9CV10490**
 
-/// details | Example result on a server with 4 Solidigm drives to update:
+/// details | **Example result on a server with 4 Solidigm drives to update**
 
 ```bash
 PS C:\Users\admin\Desktop\P5520_FW_to_9CV10490_Win64> .\sofu_2.1_win64.exe
@@ -770,4 +767,4 @@ Status : The selected drive contains current firmware as of this tool release.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our user community on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
