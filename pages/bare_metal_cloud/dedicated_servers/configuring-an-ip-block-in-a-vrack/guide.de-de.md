@@ -21,7 +21,7 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 >
 > - IPv4:
 >   - [IPv6 auf einem Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
->   - [IP-Adresse als Alias konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/configure-ip-aliasing)
+>   - [IP-Adresse als Alias konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing)
 >
 > - IPv6:
 >   - [IPv6 auf einem Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
