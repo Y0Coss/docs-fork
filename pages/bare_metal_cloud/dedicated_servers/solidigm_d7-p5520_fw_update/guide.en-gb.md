@@ -1,8 +1,22 @@
 ---
 title: Dedicated Servers - Upgrading your SSD Solidigm D7-P5520 firmware
 excerpt: Learn how to upgrade your SSD Solidigm D7-P5520 firmware for Linux, ESXi and Windows Dedicated Servers
-updated: 2025-06-04
+updated: 2025-06-05
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
@@ -95,7 +109,7 @@ The tool only detects Solidigm D7-P5520 NVMe devices and start the flash if the 
 ./sofu_2.1_x64
 ```
 
-Example result on a server with 3 Solidigm drives to update:
+/// details | Example result on a server with 3 Solidigm drives to update:
 
 ```bash
 root@labo:~# ./sofu_2.1_x64
@@ -171,6 +185,8 @@ Status : Firmware updated successfully. Please reboot the system.
  
 Status : Firmware updated successfully. Please reboot the system.
 ```
+
+///
 
 The following message should be displayed for each NVMe Solidigm D7-P5520 device whose firmware was not up to date:
 
@@ -198,7 +214,7 @@ The tool should return the following message for each drive: **"The selected dri
 
 You can also check for each NVMe that the firmware version is the expected one : **9CV10490**
 
-Example result on a server with 3 Solidigm drives to update:
+/// details | Example result on a server with 3 Solidigm drives to update:
 
 ```bash
 root@labo:~# ./sofu_2.1_x64
@@ -257,6 +273,8 @@ Updating firmware...
 Status : The selected drive contains current firmware as of this tool release.
 ```
 
+///
+
 ### ESXi 8.0
 
 #### Software configuration tested by OVHcloud
@@ -268,6 +286,7 @@ Status : The selected drive contains current firmware as of this tool release.
 #### Step 1 - Download the firmware package
 
 Download the firmware package on your server:
+
 ```bash
 wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/P5520/P5520_FW_to_9CV10490_ESXi.zip --no-check-certificate
 ```
@@ -275,6 +294,7 @@ wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/P5520/P5520
 **By default, ESXi's firewall policy blocks outbound HTTPS traffic. If you are unable to download the firmware, you may need to add a firewall rule to allow outbound HTTPS connections.**
 
 Unpack the archive:
+
 ```bash
 unzip -d /tmp P5520_FW_to_9CV10490_ESXi.zip
 ```
@@ -296,11 +316,12 @@ cd /opt/solidigm/sofu/
 ```
 
 The tool only detects Solidigm D7-P5520 NVMe devices and start the flash if the firmware is not up to date:
+
 ```bash
 ./sofu
 ```
 
-Example result on a server with 4 Solidigm drives to update:
+/// details | Example result on a server with 4 Solidigm drives to update:
 
 ```bash
 [root@labo:~] cd /opt/solidigm/sofu/
@@ -401,6 +422,8 @@ Status : Firmware update successful. Please reboot to apply update.
  
 Status : Firmware update successful. Please reboot to apply update.
 ```
+
+///
 
 The following message should be displayed for each NVMe Solidigm D7-P5520 device whose firmware was not up to date:
 
@@ -429,7 +452,7 @@ The tool should return the following message for each drive: **"The selected dri
 
 You can also check for each NVMe that the firmware version is the expected one : **9CV10490**
 
-Example result on a server with 4 Solidigm drive to update:
+/// details | Example result on a server with 4 Solidigm drive to update:
 
 ```bash
 [root@labo:~] cd /opt/solidigm/sofu/
@@ -507,6 +530,8 @@ Updating firmware...
 Status : The selected drive contains current firmware as of this tool release.
 ```
 
+///
+
 ### Windows
 
 #### Software configuration tested by OVHcloud
@@ -533,7 +558,7 @@ Run Windows PowerShell as administrator, then run the following command in the d
 .\sofu_2.1_win64.exe
 ```
 
-Example result on a server with 4 Solidigm drives to update:
+/// details | Example result on a server with 4 Solidigm drives to update:
 
 ```bash
 PS C:\Users\admin\Desktop\P5520_FW_to_9CV10490_Win64> .\sofu_2.1_win64.exe
@@ -633,6 +658,8 @@ Status : Firmware updated successfully. Please reboot the system.
  
 Status : Firmware updated successfully. Please reboot the system.
 ```
+
+///
 
 The following message should be displayed for each NVMe Solidigm D7-P5520 device whose firmware was not up to date:
 
@@ -660,7 +687,7 @@ The tool should return the following message for each drive: **"The selected dri
 
 You can also check for each NVMe that the firmware version is the expected one : **9CV10490**
 
-Example result on a server with 4 Solidigm drives to update:
+/// details | Example result on a server with 4 Solidigm drives to update:
 
 ```bash
 PS C:\Users\admin\Desktop\P5520_FW_to_9CV10490_Win64> .\sofu_2.1_win64.exe
@@ -736,6 +763,8 @@ Updating firmware...
  
 Status : The selected drive contains current firmware as of this tool release.
 ```
+
+///
 
 ## Go further <a name="gofurther"></a>
 

@@ -1,8 +1,22 @@
 ---
 title: Dedicated Servers - Mise à jour du firmware de votre SSD Solidigm D7-P5520
 excerpt: Découvrez comment mettre à jour le firmware de votre SSD Solidigm D7-P5520 sur vos serveurs dédiés Linux, ESXi et Windows
-updated: 2025-06-04
+updated: 2025-06-05
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -95,7 +109,7 @@ L'outil détecte uniquement les périphériques NVMe Solidigm D7-P5520 et démar
 ./sofu_2.1_x64
 ```
 
-Exemple de résultat sur un serveur avec 3 disques Solidigm à mettre à jour :
+/// details | Exemple de résultat sur un serveur avec 3 disques Solidigm à mettre à jour :
 
 ```bash
 root@labo:~# ./sofu_2.1_x64
@@ -171,6 +185,8 @@ Status : Firmware updated successfully. Please reboot the system.
  
 Status : Firmware updated successfully. Please reboot the system.
 ```
+
+///
 
 Le message suivant doit s’afficher pour chaque périphérique NVMe Solidigm D7-P5520 dont le firmware n’est pas à jour :
 
@@ -198,7 +214,7 @@ L'outil doit renvoyer le message suivant pour chaque lecteur : **"The selected d
 
 Vous pouvez également vérifier pour chaque NVMe que la version du firmware est bien celle attendue : **9CV10490**
 
-Exemple de résultat sur un serveur avec 3 disques Solidigm à mettre à jour :
+/// details | Exemple de résultat sur un serveur avec 3 disques Solidigm à mettre à jour :
 
 ```bash
 root@labo:~# ./sofu_2.1_x64
@@ -256,6 +272,8 @@ Updating firmware...
  
 Status : The selected drive contains current firmware as of this tool release.
 ```
+
+///
 
 ### ESXi 8.0
 
@@ -303,7 +321,7 @@ L'outil détecte uniquement les périphériques NVMe Solidigm D7-P5520 et démar
 ./sofu
 ```
 
-Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
+/// details | Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
 
 ```bash
 [root@labo:~] cd /opt/solidigm/sofu/
@@ -404,6 +422,8 @@ Status : Firmware update successful. Please reboot to apply update.
  
 Status : Firmware update successful. Please reboot to apply update.
 ```
+
+///
 
 Le message suivant doit s’afficher pour chaque périphérique NVMe Solidigm D7-P5520 dont le firmware n’est pas à jour :
 
@@ -432,7 +452,7 @@ L'outil doit renvoyer le message suivant pour chaque lecteur : **"The selected d
 
 Vous pouvez également vérifier pour chaque NVMe que la version du firmware est bien celle attendue : **9CV10490**
 
-Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
+/// details | Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
 
 ```bash
 [root@labo:~] cd /opt/solidigm/sofu/
@@ -510,6 +530,8 @@ Updating firmware...
 Status : The selected drive contains current firmware as of this tool release.
 ```
 
+///
+
 ### Windows
 
 #### Configuration logicielle testée par OVHcloud
@@ -536,7 +558,7 @@ Exécutez Windows PowerShell en tant qu'administrateur, puis exécutez la comman
 .\sofu_2.1_win64.exe
 ```
 
-Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
+/// details | Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
 
 ```bash
 PS C:\Users\admin\Desktop\P5520_FW_to_9CV10490_Win64> .\sofu_2.1_win64.exe
@@ -636,6 +658,8 @@ Status : Firmware updated successfully. Please reboot the system.
  
 Status : Firmware updated successfully. Please reboot the system.
 ```
+
+///
 
 Le message suivant doit s’afficher pour chaque périphérique NVMe Solidigm D7-P5520 dont le firmware n’est pas à jour :
 
@@ -663,7 +687,7 @@ L'outil doit renvoyer le message suivant pour chaque lecteur : **"The selected d
 
 Vous pouvez également vérifier pour chaque NVMe que la version du firmware est bien celle attendue : **9CV10490**
 
-Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
+/// details | Exemple de résultat sur un serveur avec 4 disques Solidigm à mettre à jour :
 
 ```bash
 PS C:\Users\admin\Desktop\P5520_FW_to_9CV10490_Win64> .\sofu_2.1_win64.exe
@@ -739,6 +763,8 @@ Updating firmware...
  
 Status : The selected drive contains current firmware as of this tool release.
 ```
+
+///
 
 ## Aller plus loin <a name="gofurther"></a>
 
