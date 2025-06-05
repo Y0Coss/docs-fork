@@ -9,7 +9,7 @@ flag: hidden
 Ce guide vous aidera à ajouter une clé SSH dans le panneau de contrôle OVHcloud. Les clés SSH sont utilisées pour établir des connexions sécurisées entre votre ordinateur et vos serveurs dédiés. Il est essentiel de suivre ces étapes pour garantir la sécurité de vos serveurs.
 
 <video controls="controls" width="100%">
-    <source src="https://vod.api.video/vod/vi1JjIt85a3Qo1g6ZBgBpxN5/mp4/source.mp4" type="video/mp4"/>
+    <source src="https://vod.api.video/vod/vi1ESnfEbtbkhZWex1HUcdBN/mp4/source.mp4" type="video/mp4"/>
 </video>
 
 ## Étape 1 : Accéder à la page "Mes offres et services"

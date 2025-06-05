@@ -9,7 +9,7 @@ flag: hidden
 Ten przewodnik pomoże Ci dodać klucz SSH w panelu sterowania OVHcloud. Klucze SSH są używane do uwierzytelniania i szyfrowania połączeń z serwerami zdalnymi<sup>[1](#footnote-1)</sup>. Przed rozpoczęciem upewnij się, że masz dostęp do panelu sterowania OVHcloud.
 
 <video controls="controls" width="100%">
-    <source src="https://vod.api.video/vod/vi3Xq7pBMhDR9szwqSKcWx8O/mp4/source.mp4" type="video/mp4"/>
+    <source src="https://vod.api.video/vod/vi3cCGqKVQdvA6rgepyKIeyC/mp4/source.mp4" type="video/mp4"/>
 </video>
 
 ## Krok 1: Otwórz stronę "Moje oferty i usługi"
