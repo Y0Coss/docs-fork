@@ -50,11 +50,11 @@ Our ambition is to make all OVHcloud products compatible with OVHcloud Service L
 
 | Product name | Availability | Status | Guide link |
 | :----------- | :----------- | :----: | :--------- |
-| Security & Identity - OVHcloud Account - Activity | API only | Beta | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding/) |
-| Security & Identity - OVHcloud Account - Audit | API only | Beta | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding/) |
-| Security & Identity - OVHcloud Account - IAM | OVHcloud Control Panel & API | Beta | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding/) |
+| Security & Identity - OVHcloud Account - Activity | API only | Beta | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding) |
+| Security & Identity - OVHcloud Account - Audit | API only | Beta | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding) |
+| Security & Identity - OVHcloud Account - IAM | OVHcloud Control Panel & API | Beta | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding) |
 | Security & Identity - Key Management Service | OVHcloud Control Panel & API | Beta | - |
-| Public Cloud - Managed Kubernetes Service | OVHcloud Control Panel & API | Beta | [Managed Kubernetes Service Audit Logs Forwarding](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform/) |
+| Public Cloud - Managed Kubernetes Service | OVHcloud Control Panel & API | Beta | [Managed Kubernetes Service Audit Logs Forwarding](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform) |
 | Public Cloud - Load Balancer | OVHcloud Control Panel & API | Beta | [Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](/pages/public_cloud/public_cloud_network_services/technical-resources-05-lb_logs_2_customers) |
 | Public Cloud - Managed Databases | OVHcloud Control Panel & API | Beta | [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) |
 | Hosted Private Cloud - Managed VMware vSphere | API only | Beta | - |
