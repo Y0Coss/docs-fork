@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux) (EN)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2025-04-29
+updated: 2025-06-05
 ---
 
 ## Objective
