@@ -54,14 +54,7 @@ Lorsqu'un objet atteint la fin de sa durée de vie selon la configuration de son
 - **versionné** : un marqueur de suppression est créé et devient la version courante. Vous pouvez également choisir le nombre d'anciennes versions que vous souhaitez conserver. Si la version courante de l'objet est la seule version de l'objet et qu'il s'agit également d'un marqueur de suppression, ce dernier sera supprimé.
 - **versioning suspendu** : actuellement, nous ne permettons pas la suspension du versioning si vous avez une configuration de lifecycle en vigueur. De la même manière, nous ne permettons pas le téléchargement d'une configuration de lifecycle si le versioning est suspendu sur le bucket.
 
-> [!warning]
-> 
-> La mise en place de la fonctionnalité se fera en 2 phases :
->
-> - Phase 1 : prise en charge de l'expiration uniquement
-> - Phase 2 : prise en charge des transitions
-
-## Expiration (disponible)
+## Expiration
 
 Les règles de lifecycle sont traitées de manière asynchrone et dans la mesure du possible. La plupart des règles sont appliquées dans les 24 heures, mais cela peut prendre plus de temps dans le cas d'un très grand nombre d'objets ou lors du traitement de nombreux objets. Pendant ce délai, vous continuez à être facturé pour le niveau de stockage actuel de l'objet, même si la règle (par exemple, l'expiration ou la transition) a déjà été déclenchée mais n'est pas encore terminée. Par exemple, si un objet doit être supprimé le 30e jour, mais qu'il n'est traité que le 32e jour, vous pouvez être facturé pour deux jours supplémentaires.
 
@@ -204,7 +197,6 @@ Si la date actuelle est 2024-10-29 et **NoncurrentDays**=5, la règle de lifecyc
 - B v2 est non-courante depuis 2024-10-20 (quand B v3 a été créée) : son âge en tant que version non-courante est 9 jours.
 
 ### Obtenir la date d'expiration programmée
-
 
 Si un objet est programmé pour être supprimé, un appel HEAD-OBJECT renvoie un en-tête de réponse http spécial x-amz-expiration qui contient un timestamp indiquant sa date d'expiration et un identifiant de la règle du lifecycle qui a été appliquée.
 
@@ -393,7 +385,7 @@ Dans un bucket versionné, la configuration suivante effectue ces actions :
 
 ///
 
-## Transition (à venir)
+## Transition
 
 ### Transitions supportées
 
@@ -404,10 +396,11 @@ Dans un bucket versionné, la configuration suivante effectue ces actions :
 
 Les transitions actuellement prises en charge sont les suivantes :
 
-| de/vers          | High Performance | Standard  | Standard Infrequent Access |Cold Archive |
+| de/vers          | High Performance | Standard  | Infrequent Access |Cold Archive |
 | ---------------- | ---------------- | --------- | -------------------------- |------------ |
 | High Performance |        -         | oui       |             oui            | non          |
 | Standard         | interdit        | -         |             oui            | non          |
+| Infrequent Access         | interdit        | interdit         |             -            | non          |
 | Cold Archive     | interdit        | interdit |             interdit      | -           |
 
 ### Taille minimale de l'objet

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Smart Storage Management with Lifecycle Rules
 excerpt: Learn how to optimise your storage costs with OVHcloud lifecycle rules
-updated: 2025-05-13
+updated: 2025-06-05
 ---
 
 <style>
@@ -53,7 +53,6 @@ When an object reaches the end of its lifetime based on its lifecycle configurat
 - **non-versioned**: there is only one existing version of the object which is the current version and it is deleted permanently.
 - **versioned**: a delete marker is created and becomes the current version. You can also choose how many old versions you want to keep. If the current object version is the only object version and it is also a delete marker, that delete marker will be removed.
 - **versioning-suspended**: we currently do not allow for the suspension of versioning if you have a lifecycle configuration in effect and vice-versa. We currently do not allow for the upload of a lifecycle configuration if versioning is suspended on the bucket.
-
 
 ## Expiration
 
