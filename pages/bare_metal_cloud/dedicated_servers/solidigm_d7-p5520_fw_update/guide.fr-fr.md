@@ -26,7 +26,7 @@ L'objectif de ce guide est de vous aider à mettre à niveau le firmware de votr
 Drive Part Number (Numéro de référence du lecteur) :
 
 - SSDPF2KX019T1O (1,92 To de capacité)
-- SSDPF2KX038T1O (capacité de 3,84 To)
+- SSDPF2KX038T1O (3,84 To de capacité)
 - SSDPF2KX076T1O (7,86 To de capacité)
 - SSDPF2KX153T1O (15,36 To de capacité)
 
