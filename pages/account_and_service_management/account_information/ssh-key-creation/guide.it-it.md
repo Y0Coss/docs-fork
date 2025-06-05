@@ -9,7 +9,7 @@ flag: hidden
 Benvenuti in questa guida su come aggiungere una chiave SSH nel pannello di controllo OVHcloud. Questa guida è stata progettata per aiutarti a comprendere i passaggi necessari per aggiungere una chiave SSH in modo semplice e veloce. Prima di iniziare, assicurati di avere accesso al pannello di controllo OVHcloud.
 
 <video controls="controls" width="100%">
-    <source src="https://vod.api.video/vod/vi0uYaHPOt7TOEWdoVIKDKZ/mp4/source.mp4" type="video/mp4"/>
+    <source src="https://vod.api.video/vod/vi5UW0KIxq7D5kc0UrvoiToZ/mp4/source.mp4" type="video/mp4"/>
 </video>
 
 ## Passo 1: Accedere alla pagina "My offers and services"

@@ -9,7 +9,7 @@ flag: hidden
 Willkommen bei diesem Leitfaden, in dem wir Ihnen Schritt für Schritt erklären, wie Sie einen SSH-Schlüssel*¹ im OVHcloud Control Panel hinzufügen. Dieser Vorgang ist wichtig, um die Sicherheit und Verwaltung Ihrer Server zu verbessern. Stellen Sie sicher, dass Sie die Anweisungen sorgfältig befolgen, um den Prozess erfolgreich abzuschließen.
 
 <video controls="controls" width="100%">
-    <source src="https://vod.api.video/vod/vi5Cqd86nC9OSwhTxi7yuCa0/mp4/source.mp4" type="video/mp4"/>
+    <source src="https://vod.api.video/vod/vi61ppwdv4ObB9E5Rhph7Uxq/mp4/source.mp4" type="video/mp4"/>
 </video>
 
 ## Schritt 1: Zugriff auf die Seite "Meine Angebote und Dienstleistungen"
