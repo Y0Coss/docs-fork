@@ -28,7 +28,7 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 ## Instructions
 
 > [!primary]
-> This tutorial is based on version "1.21" of Minecraft Java Edition and OpenJDK version "21.0.1".
+> This tutorial is based on version "1.21" of Minecraft Java Edition and OpenJDK version "24.0.1".
 >
 
 ### Step 1: Prepare the server
@@ -57,7 +57,7 @@ $ sudo apt install screen nano wget git
 Install the Java package:
 
 ```sh
-$ sudo apt install openjdk-21-jdk
+$ sudo apt install openjdk-24-jdk
 ```
 
 To avoid security vulnerabilities on your system, create a user named "minecraft" who will carry out the server actions:
@@ -141,7 +141,24 @@ You can also press `Ctrl`{.action}, then `a`{.action}, then `n`{.action} on your
 In the previously created `minecraft1` shell, launch the Minecraft server with the following command. (Use `ls` to verify the filename in case it differs.) 
 
 ```sh
+~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+- `Xmx1024M`: This sets the server to start up with 1024 MB or 1 GB of RAM. This limit can be increased if you want your server to start up with more RAM.
+- `Xms1024M`: This sets the server to use a maximum of 1024M RAM. You can increase this limit if you want your server to run with more RAM, to accommodate more players, or if you have the impression that your server is running slowly.
+- `jar`: Specifies which server jar file to run. 
+- `nogui`: This instructs the server not to launch a GUI, since it's a server and you don't have a GUI.
+
+Alternatively, you can use the command below instead:
+
+```sh
 ~/server$ java -jar server.jar
+```
+
+Once the server is operational, you will get the following result:
+
+```console
+[14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
 To shut down your server, enter the command `stop`.

@@ -28,7 +28,7 @@ Pode alugar um servidor Minecraft pré-construído ou configurá-lo você mesmo 
 ## Instruções
 
 > [!primary]
-> Este tutorial baseia-se na versão 1.21 do Minecraft Java Edition e na versão 21.0.1 do OpenJDK.
+> Este tutorial baseia-se na versão 1.21 do Minecraft Java Edition e na versão 24.0.1 do OpenJDK.
 >
 
 ### Etapa 1: preparar o servidor
@@ -57,7 +57,7 @@ $ sudo apt install screen nano wget git
 Instale o pacote Java:
 
 ```sh
-$ sudo apt install openjdk-21-jdk
+$ sudo apt install openjdk-24-jdk
 ```
 
 Para evitar criar vulnerabilidades no seu sistema, crie um utilizador chamado "minecraft" que executará as ações do servidor:
@@ -144,7 +144,24 @@ Também pode pressionar o `Ctrl`{.action}, depois `a`{.action} e depois `n`{.act
 Na `shell` anteriormente criada "minecraft1", lançar o servidor Minecraft com o seguinte comando. (Utilize `ls` para verificar o nome do ficheiro caso este seja diferente). 
 
 ```sh
+~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+- `Xmx1024M`: Isto configura o servidor para iniciar com 1024 MB ou 1 GB de RAM. Este limite pode ser aumentado se você quiser que seu servidor inicie com mais RAM.
+- `Xms1024M`: Isto permite que o servidor utilize um máximo de 1024M de RAM. Pode aumentar este limite se quiser que o seu servidor funcione com mais RAM, para acomodar mais jogadores ou se sentir que o seu servidor está a funcionar lentamente.
+- `jar`: Especifica o arquivo jar do servidor a ser executado.
+- `nogui`: Diz para o servidor não rodar uma GUI.
+
+Você também pode usar o comando abaixo:
+
+```sh
 ~/server$ java -jar server.jar
+```
+
+Uma vez que o servidor esteja funcionando, você terá o seguinte resultado:
+
+```console
+[14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
 Para parar o seu servidor, insira o comando de `stop`.

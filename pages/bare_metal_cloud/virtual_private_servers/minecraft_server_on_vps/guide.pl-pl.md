@@ -28,7 +28,7 @@ Możesz wynająć lub samodzielnie skonfigurować serwer Minecraft na [serwerze 
 ## W praktyce
 
 > [!primary]
-> Tutorial ten opiera się na wersji "1.21" Minecraft Java Edition oraz wersji "21.0.1" OpenJDK.
+> Tutorial ten opiera się na wersji "1.21" Minecraft Java Edition oraz wersji "24.0.1" OpenJDK.
 >
 
 ### Etap 1: przygotować serwer
@@ -57,7 +57,7 @@ $ sudo apt install screen nano wget git
 Zainstaluj pakiet Java:
 
 ```sh
-$ sudo apt install openjdk-21-jdk
+$ sudo apt install openjdk-24-jdk
 ```
 
 Aby uniknąć tworzenia luk w systemie, utwórz użytkownika o nazwie "minecraft", który będzie wykonywać operacje serwera:
@@ -144,7 +144,24 @@ Możesz również nacisnąć `Ctrl`{.action}, a następnie `a`{.action}, a nast�
 W wcześniej utworzonej powłoce `minecraft1` uruchom serwer Minecraft za pomocą następującego polecenia. (Użyj `ls`, aby sprawdzić nazwę pliku, jeśli jest inny.)
 
 ```sh
+~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+- `Xmx1024M`: Konfiguruje serwer do uruchomienia z 1024 MB lub 1 GB pamięci RAM. Limit ten można zwiększyć, jeśli serwer ma być uruchamiany z większą ilością pamięci RAM.
+- `Xms1024M`: Pozwala serwerowi na użycie maksymalnie 1024 MB pamięci RAM. Możesz zwiększyć ten limit, jeśli chcesz, aby serwer działał z większą ilością pamięci RAM, aby pomieścić więcej graczy lub jeśli uważasz, że serwer działa wolno.
+- `jar`: Określa plik jar serwera do uruchomienia.
+- `nogui`: Mówi serwerowi, by nie uruchamiał GUI.
+
+Można również użyć poniższego polecenia:
+
+```sh
 ~/server$ java -jar server.jar
+```
+
+Po uruchomieniu serwera otrzymamy następujący wynik:
+
+```console
+[14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
 Aby wyłączyć serwer, wprowadź komendę `stop`.

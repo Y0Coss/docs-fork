@@ -29,7 +29,7 @@ Sie können einen vorkonfigurierten Minecraft-Server mieten oder einen solchen s
 ## In der praktischen Anwendung
 
 > [!primary]
-> Diese Anleitung basiert auf der Minecraft Java Edition Version "1.21" und der OpenJDK Version "21.0.1".
+> Diese Anleitung basiert auf der Minecraft Java Edition Version "1.21" und der OpenJDK Version "24.0.1".
 >
 
 ### Schritt 1: Server vorbereiten
@@ -58,7 +58,7 @@ $ sudo apt install screen nano wget git
 Installieren Sie das Java-Paket:
 
 ```sh
-$ sudo apt install openjdk-21-jdk
+$ sudo apt install openjdk-24-jdk
 ```
 
 Um Sicherheitslücken in Ihrem System zu vermeiden, erstellen Sie einen Benutzer namens "minecraft", der die Server-Aktionen ausführen wird:
@@ -145,7 +145,24 @@ Sie können alternativ auch `Ctrl`{.action}, dann auf `a`{.action} und dann auf 
 Starten Sie den Server in der zuvor erstellten Shell "minecraft1" mit folgendem Befehl. (Verwenden Sie `ls`, um den Namen der Datei zu überprüfen, falls dieser abweicht.)
 
 ```sh
+~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+- `Xmx1024M`: Damit wird der Server so konfiguriert, dass er mit 1024 MB oder 1 GB RAM startet. Dieses Limit kann erhöht werden, wenn Sie möchten, dass Ihr Server mit mehr RAM startet.
+- `Xms1024M`: Dies lässt den Server maximal 1024M RAM verwenden. Sie können dieses Limit erhöhen, wenn Sie möchten, dass Ihr Server mit mehr RAM läuft, um mehr Spieler unterzubringen oder wenn Sie das Gefühl haben, dass Ihr Server langsam läuft.
+- `jar`: Gibt die jar-Datei des Servers an, die ausgeführt werden soll.
+- `nogui`: Damit wird dem Server mitgeteilt, dass er keine grafische Benutzeroberfläche starten soll.
+
+Sie können auch den folgenden Befehl verwenden:
+
+```sh
 ~/server$ java -jar server.jar
+```
+
+Sobald der Server läuft, erhalten Sie das folgende Ergebnis:
+
+```console
+[14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
 Um Ihren Server anzuhalten, geben Sie den Befehl `stop` ein.

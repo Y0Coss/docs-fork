@@ -28,7 +28,7 @@ Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo e
 ## Procedimiento
 
 > [!primary]
-> Este tutorial está basado en la versión "1.21" de Minecraft Java Edition y la versión "21.0.1" de OpenJDK.
+> Este tutorial está basado en la versión "1.21" de Minecraft Java Edition y la versión "24.0.1" de OpenJDK.
 >
 
 ### Paso 1: Preparar el servidor
@@ -57,7 +57,7 @@ $ sudo apt install screen nano wget git
 Instale el paquete Java:
 
 ```sh
-$ sudo apt install openjdk-21-jdk
+$ sudo apt install openjdk-24-jdk
 ```
 
 Para evitar crear vulnerabilidades en su sistema, cree un usuario llamado "minecraft" que ejecute las acciones del servidor:
@@ -144,7 +144,24 @@ También puede pulsar `Ctrl`{.action}, a continuación `a`{.action} y, a continu
 En el intérprete de órdenes `minecraft1` creado anteriormente, ejecute el servidor Minecraft con el siguiente comando. (Utilice `ls` archivos para comprobar el nombre del archivo en caso de que sea diferente).
 
 ```sh
+~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+- `Xmx1024M`: Configura el servidor para que arranque con 1024 MB o 1 GB de RAM. Este límite puede aumentarse si se desea que el servidor arranque con más RAM.
+- `Xms1024M`: Esto permite al servidor utilizar un máximo de 1024M de RAM. Puedes aumentar este límite si quieres que tu servidor funcione con más RAM, para acomodar a más jugadores o si sientes que tu servidor funciona lentamente.
+- `jar`: Especifica el archivo jar del servidor a ejecutar.
+- `nogui`: Indica al servidor que no ejecute una GUI.
+
+También puedes usar el siguiente comando:
+
+```sh
 ~/server$ java -jar server.jar
+```
+
+Una vez que el servidor está en marcha, se obtiene el siguiente resultado:
+
+```console
+[14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
 Para detener el servidor, introduzca el comando `stop`.
