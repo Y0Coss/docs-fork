@@ -108,7 +108,7 @@ MKS Premium only supports two out of the [three Storage Classes on OVHcloud Mana
 
 They allow to create **zone specific** volumes: a PVC provisioned on a zone `X` will only be accessible from the nodes on the zone `X`.
 
-The [classic multi-attach](/pages/public_cloud/compute/classic_block_multi_az_limitations#introduction) is not supported for MKS clusters yet, since the supported file systems (ext(2,3,4), xfs and btrfs) can be subject to data corruptions.
+The [classic multi-attach](/pages/public_cloud/compute/classic_block_multi_az_limitations#introduction) is not supported yet for MKS clusters on regions with multiple availability zones, since the currently available file systems (ext(2,3,4), xfs and btrfs) can be subject to data corruptions if volumes are attached to multiple instances.
 
 To create a volume on MKS Premium, use the same process as a [standard Managed Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume).
 
