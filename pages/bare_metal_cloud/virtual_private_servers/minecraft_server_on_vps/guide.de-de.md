@@ -1,7 +1,7 @@
 ---
 title: 'Einen Minecraft-Server auf einem VPS oder Dedicated Server einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren eigenen Minecraft-Server installieren'
-updated: 2025-06-05
+updated: 2025-06-06
 ---
 
 ## Ziel

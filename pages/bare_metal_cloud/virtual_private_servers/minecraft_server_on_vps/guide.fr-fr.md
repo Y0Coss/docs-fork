@@ -1,7 +1,7 @@
 ---
 title: 'Comment créer un serveur Minecraft sur un VPS ou un serveur dédié'
 excerpt: 'Découvrez comment installer votre propre serveur Minecraft'
-updated: 2025-06-05
+updated: 2025-06-06
 ---
 
 ## Objectif
