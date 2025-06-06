@@ -15,42 +15,38 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 ### Data Protection
 | Tool/Software | Compatibility | Notes | Getting Started |
 | --- | --- | --- | --- |
-| **Veeam** | Compatible | Veeam Ready certified, details can be found on [Veeam Alliance Technical Program page](https://www.veeam.com/partners/alliance-partner-technical-programs.html) | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
-| **IBM Storage Protect** | Compatible | Supports S3 API, provides a Python library for interacting with Object Storage | 
-| **Cohesity, Veritas NetBackup**  | Compatible | Officially supported, details can be found on [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/en_US/dpp.NetBackup)  |
-| **Artesca, Veritas BackupExec** | Compatible | TO ADD | 
-| **HYCU** | Compatible | TO ADD | 
+| **Veeam** | Compatible - Certified | Veeam Ready certified, details can be found on [Veeam Alliance Technical Program page](https://www.veeam.com/partners/alliance-partner-technical-programs.html) | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
+| **IBM Storage Protect** | Compatible - Certified | Officially supported, details can be found on [IBM Storage Protect Support Page](https://www.ibm.com/support/pages/ibm-spectrum-protect-object-storage-support) | Coming Soon |
+| **Cohesity, Veritas NetBackup**  | Compatible - Certified | Officially supported, details can be found on [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/en_US/dpp.NetBackup)  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | Coming Soon |
+| **Artesca, Veritas BackupExec** | Compatible - Certified | Officially supported, details can be found on [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/en_US/dpp.BackupExec) | Coming Soon |
+| **HYCU R-Cloud™** | Compatible - Certified | Officially supported, details can be found on [HYCU R-Cloud User Guide](https://docs.r-cloud.hycu.com/HYCU-R-Cloud-User-Guide.pdf) | [Guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup/) |
 
 ### Data Protection - Kubernetes Backup
 | Tool/Software | Compatibility | Notes | Getting Started |
 | --- | --- | --- | --- |
-| **Veeam Kasten** | Compatible | TO ADD | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
-| **Cloud Casa** | Compatible | TO ADD | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa/) |
+| **Veeam Kasten** | Compatible | N/A | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
+| **Cloud Casa** | Compatible | Officially supported, details can be found on [Cloud Casa product page](https://cloudcasa.io/partners/ovhcloud-kubernetes-backup-and-dr/) | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa/) |
+| **Trilio** | Compatible | Officially supported, details can be found on [Trilio Support Page](https://docs.trilio.io/kubernetes/appendix/configure-ovh-object-storage-as-a-target) | [Guide](https://help.ovhcloud.com/csm/en-public-cloud-kubernetes-backup-restore-cluster-trilio?id=kb_article_view&sysparm_article=KB0049632)  
 
 ### Command-Line Interface Integrations
-| Tool/Software | Compatibility | Notes | Link |
+| Tool/Software | Compatibility | Notes | Getting Started  |
 | --- | --- | --- | --- |
-| **Rclone** | Compatible | Provides a command-line interface for managing objects and buckets | 
-| **s3cmd** | Compatible | Supports S3 API, provides a command-line interface for managing objects and buckets |
+| **Rclone** | Compatible | Provides a command-line interface for managing objects and buckets. More details on [Rclone](https://rclone.org/) | [Guide](/pages/storage_and_backup/object_storage/s3_rclone) |
+| **s3cmd** | Compatible |  Provides a command line interface for uploading, retrieving and managing data. More details on [sm3cmd](https://s3tools.org/s3cmd) | [Guide](/pages/storage_and_backup/object_storage/s3_s3cmd) |
+| **Restic** | Compatible | Provides a backup tool that allows you to back up your Linux, Windows, Mac machines to storage repositories. More details on [Restic](https://restic.net/) | Coming Soon |
 
 ### File management 
-| Tool/Software | Compatibility | Notes | Link |
+| Tool/Software | Compatibility | Notes | Getting Started  |
 | --- | --- | --- | --- |
-| **WinSCP** | Compatible | TO ADD | 
-| **To ADD** | Compatible | TO ADD |
-
-### Data Analytics 
-| Tool/Software | Compatibility | Notes | Link |
-| --- | --- | --- | --- |
-| **Splunk** | Compatible | TO ADD | 
-| **Atempo Miria** | Compatible | TO ADD |
+| **Cyberduck** | Compatible | Provides an open-source Windows file transfer client for multiple protocols. More details on[WinSCP](https://winscp.net/eng/index.php) | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
+| **WinSCP** | Compatible | Provides an open-source Windows file transfer client for multiple protocols. More details on[WinSCP](https://winscp.net/eng/index.php) | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
 
 ### File Sharing 
-| Tool/Software | Compatibility | Notes | Link |
+| Tool/Software | Compatibility | Notes | Getting Started  |
 | --- | --- | --- | --- |
-| **ownCloud** | Compatible | Supports S3 API, can be used as a web-based interface for managing objects and buckets | 
-| **Nextcloud** | Compatible | Supports S3 API, can be used as a web-based interface for managing objects and buckets |
- 
+| **ownCloud** | Compatible | Open-source file sync and share platform for collaboration. More details on [ownCloud](https://owncloud.com/product) | [Guide](/pages/storage_and_backup/object_storage/s3_owncloud) |
+| **NextCloud Files** | Compatible | Open-source file sync and share platform for collaboration. More details on [ownCloud](https://owncloud.com/product) | [Guide](/pages/storage_and_backup/object_storage/s3_nextcloud) |
+
 ## Go further
  
 Join our [community of users](/links/community).
