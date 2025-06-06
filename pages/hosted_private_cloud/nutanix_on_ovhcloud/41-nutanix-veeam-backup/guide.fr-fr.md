@@ -16,21 +16,22 @@ Veeam Backup est un logiciel de sauvegarde disponible pour Nutanix.
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr/professional-services/) ou à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](/links/professional-services) ou à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur le cluster via **Prism Central**. 
 - **Veeam Backup & Replication** installé sur une machine virtuelle de votre cluster Nutanix via cette procédure : [Installer Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 - Connaître l'adresse IP publique utilisée par **Veeam Backup** pour accéder à Internet.
 - Disposer de 4 Go de mémoire vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
-- Posséder un stockage distant hors du cluster, tel que [OVHcloud Via S3<sup>1</sup> Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/).
+- Posséder un stockage distant hors du cluster, tel que [OVHcloud via S3<sup>1</sup> Object Storage](/links/public-cloud/object-storage).
 
 ## En pratique
-Nous allons personnaliser **Veeam Backup & Replication** pour l’utiliser sur un cluster Nutanix, avec un dépôt distant situé chez OVHcloud via la solution [Via S3 Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/).
+
+Nous allons personnaliser **Veeam Backup & Replication** pour l’utiliser sur un cluster Nutanix, avec un dépôt distant situé chez OVHcloud via la solution [OVHcloud via S3 Object Storage](/links/public-cloud/object-storage).
 
 ### Ajouter un utilisateur dans Prism Element pour Veeam Backup
 
@@ -263,11 +264,10 @@ proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 ```
 ### Ajouter un dépôt S3 Object Storage dans Veeam Backup
 
-Vous pouvez stocker vos sauvegardes dans un bucket [Via S3 Object Storage d’OVHcloud](https://www.ovhcloud.com/fr/public-cloud/object-storage/) directement depuis **Veeam Backup & Replication**.
+Vous pouvez stocker vos sauvegardes dans un bucket [Object Storage via S3 d’OVHcloud](/links/public-cloud/object-storage) directement depuis **Veeam Backup & Replication**.
 
 > [!primary]
-> Pour configurer ce type de dépôt dans Veeam, suivez les étapes détaillées dans la documentation dédiée 
-> [Utiliser S3 Object Storage avec Veeam Backup](/pages/storage_and_backup/object_storage/s3_veeam/)
+> Pour configurer ce type de dépôt dans Veeam, suivez les étapes détaillées dans la documentation dédiée : [Utiliser S3 Object Storage avec Veeam Backup](/pages/storage_and_backup/object_storage/s3_veeam).
 
 ### Mise en place d'une sauvegarde automatisée
 
@@ -383,7 +383,7 @@ Un aperçu de l'état de la restauration se lance, il faut patienter quelques te
 
 [Les solutions de stockage OVHcloud](/products/storage-backup)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 

@@ -22,16 +22,16 @@ Veeam Backup is a backup software available for Nutanix.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - You must be connected to the cluster via **Prism Central**. 
 - **Veeam Backup & Replication** installed on a virtual machine in your Nutanix cluster via this procedure: [Setting up Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 - Knowing the public IP address used by **Veeam Backup** to access the internet.
 - You must have 4 GB of RAM, 60 GB of storage and 4 vCPUs to add an additional virtual machine when configuring extensions for **Veeam Backup & Replication**.
-- You must have remote storage outside of the cluster, such as [OVHcloud Via S3<sup>1</sup> Object Storage](https://www.ovhcloud.com/en-gb/public-cloud/object-storage/).
+- You must have remote storage outside of the cluster, such as [OVHcloud Object Storage via S3<sup>1</sup>](/links/public-cloud/object-storage).
 
 ## Instructions
 
-We will customise **Veeam Backup & Replication** for use on a Nutanix cluster, with a remote repository for this cluster at OVHcloud, using the [OVHcloud Via S3 object storage solution](https://www.ovhcloud.com/en-gb/public-cloud/object-storage/).
+We will customise **Veeam Backup & Replication** for use on a Nutanix cluster, with a remote repository for this cluster at OVHcloud, using the [OVHcloud Object Storage via S3 solution](/links/public-cloud/object-storage).
 
 ### Add a user in Prism Element for Veeam Backup
 
@@ -264,11 +264,11 @@ proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 ```
 ### Add S3 Object Storage repository in Veeam Backup
 
-You can store your backups in [OVHcloud Via S3 Object Storage](https://www.ovhcloud.com/en-gb/public-cloud/object-storage/) directly from Veeam Backup & Replication.
+You can store your backups in [OVHcloud Object Storage via S3](/links/public-cloud/object-storage) directly from Veeam Backup & Replication.
 
 > [!primary]
 > To configure the repository in Veeam, please follow this step-by-step guide:
-> [Using S3 Object Storage with Veeam Backup](/pages/storage_and_backup/object_storage/s3_veeam/)
+> [Using S3 Object Storage with Veeam Backup](/pages/storage_and_backup/object_storage/s3_veeam)
 
 ### Setting up an automated backup
 
@@ -384,8 +384,8 @@ A preview of the status of the restoration is launched, it takes some time depen
 
 [OVHcloud storage solutions](/products/storage-backup)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
 
 _<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc._
