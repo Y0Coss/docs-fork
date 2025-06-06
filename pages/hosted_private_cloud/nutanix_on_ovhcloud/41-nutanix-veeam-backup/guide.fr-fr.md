@@ -4,7 +4,7 @@ excerpt: "Installation de la sauvegarde Veeam Backup sur un cluster Nutanix"
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Backups
-updated: 2025-05-19
+updated: 2025-06-06
 ---
 
 ## Objectif
@@ -187,7 +187,7 @@ Cliquez sur `Next`{.action}.
 Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la machine virtuelle **NUTANIX-PROXY**. Cette VM est ajoutée lors de l'ajout d'un cluster Nutanix dans la console **Veeam Backup et replication**.
 
 > [!warning]
-> Prenez bien notre du compte utilisateur et du mot de passe créés. Ces identifiants vous permettront de vous connecter sur la nouvelle machine virtuelle au travers du navigateur WEB sans passer par le logiciel **Veeam backup**. L'URL sera similaire à `https://adressipprivee:8100`.
+> Prenez bien note du compte utilisateur et du mot de passe créés. Ces identifiants vous permettront de vous connecter sur la nouvelle machine virtuelle au travers du navigateur WEB sans passer par le logiciel **Veeam backup**. L'URL sera similaire à `https://adressipprivee:8100`.
 
 ![Addon Cluster Nutanix to Veeam 18](images/03-addclusternutanix-to-veeam18.png){.thumbnail}
 

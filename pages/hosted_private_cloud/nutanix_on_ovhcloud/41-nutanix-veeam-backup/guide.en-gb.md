@@ -4,7 +4,7 @@ excerpt: Installing Veeam Backup on a Nutanix cluster
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Backups
-updated: 2025-05-19
+updated: 2025-06-06
 ---
 
 ## Objective
