@@ -184,7 +184,6 @@ Avec les paramètres suivants :
 |operatingSystem|Le nom de l'OS à installer|✅|
 |customizations|Personnalisation de la réinstallation OS|⚠️¹|
 |storage|Configuration du stockage de la réinstallation OS|❌|
-|properties|Propriétés arbitraires à passer au datasource config drive de cloud-init|❌|
 
 ¹ Spécifique au système d'exploitation, certaines personnalisations peuvent être requises dans certains cas.
 
