@@ -47,7 +47,7 @@ La version gratuite de Zoiper pour iOS, appelée *Zoiper Lite*, ne propose pas d
 
 Une fois Zoiper ouvert, vous devez renseigner deux champs.
 
-- Le premier champ doit être renseigné avec votre **Login/Username** et votre **domain** OVHcloud sous la forme `username@domain`. Par exemple : `0033912345678@sip5.ovh.fr`.
+- Le premier champ doit être renseigné avec votre **Login/Username** et votre **domain** OVHcloud sous la forme `username@domain`. Par exemple : `0033912345678@sip-domain.io`.
 - Renseignez votre **mot de passe SIP** dans le deuxième champ.
 
 **Cliquez sur l'onglet correspondant à votre plateforme :**
@@ -77,8 +77,14 @@ Dans la fenêtre suivante, renseignez à nouveau votre **domain** OVHcloud et cl
 >>
 > Android
 >> ![domain zoiper](images/zoiper02-android.png){.thumbnail height="500"}
+>> Vous aurez un avertissement si un proxy est nécessaire, poursuivez la création du compte.
+>> ![warning domain zoiper](images/zoiper02-android-proxy-warning.png){.thumbnail height="500"}
 
-L'assistant de configuration Zoiper vous propose alors de saisir un nom d'utilisateur d'authentification ou un proxy sortant. Ces informations n'étant pas nécessaires pour l'enregistrement d'une ligne SIP OVHcloud, cliquez sur le bouton `Passer`{.action}.
+L'assistant de configuration Zoiper vous propose alors de saisir un nom d'utilisateur d'authentification ou un proxy sortant.
+
+Si le proxy sortant :
+/// details | est identique au domaine
+Ces informations n'étant pas nécessaires pour l'enregistrement d'une ligne SIP OVHcloud, cliquez sur le bouton `Suivant`{.action}.
 
 > [!tabs]
 > Windows
@@ -89,6 +95,23 @@ L'assistant de configuration Zoiper vous propose alors de saisir un nom d'utilis
 >>
 > Android
 >> ![proxy zoiper](images/zoiper03-android.png){.thumbnail height="500"}
+
+///
+
+/// details | est différent du domaine
+Renseignez uniquement le proxy sortant pour l'enregistrement d'une ligne SIP OVHcloud, cliquez sur le bouton `Suivant`{.action}.
+
+> [!tabs]
+> Windows
+>> ![proxy zoiper](images/zoiper03-proxy.png){.thumbnail}
+>>
+> macOS
+>> ![proxy zoiper](images/zoiper03-macos-proxy.png){.thumbnail}
+>>
+> Android
+>> ![proxy zoiper](images/zoiper03-android-proxy.png){.thumbnail height="500"}
+
+//
 
 Le logiciel testera ensuite les protocoles de transport possibles. Les lignes SIP OVHcloud utilisant uniquement le protocole UDP, veillez à ce qu'il soit sélectionné.
 
@@ -147,14 +170,23 @@ Vous avez alors accès à la configuration du compte SIP. Complétez les champs 
 - `Domaine`{.action} : renseignez le domaine de votre ligne SIP. Si vous ne le connaissez pas, consultez le guide « [Tutoriel - Utiliser une ligne SIP OVHcloud sur un softphone](/pages/web_cloud/phone_and_fax/voip/register-sip-softphone) ».
 - `Numéro`{.action} : renseignez le numéro de votre ligne SIP au format `0033912345678`.
 - `Mot de passe`{.action} : renseignez le mot de passe de votre ligne SIP. Si vous ne connaissez plus votre mot de passe SIP, consultez notre guide pour [modifier le mot de passe d'une ligne SIP](/pages/web_cloud/phone_and_fax/voip/modifier-mot-de-passe-ligne-sip).
+- `Proxy sortant`{.action} : activez le slider `Proxy sortant activé` et renseignez le proxy sortant de votre ligne SIP **s'il est différent de votre domaine**.
 
 Appuyez ensuite sur le bouton vert `S'enregistrer`{.action} situé **au-dessus** des champs complétés.
 
-![zoiper - iOS - informations SIP](images/zoiper-ios06.png){.thumbnail height="500"}
+> [!tabs]
+> Configuraiton de base
+>> ![zoiper - iOS - informations SIP](images/zoiper-ios06.png){.thumbnail height="500"}
+> Proxy sortant différent du domaine
+>> ![zoiper - iOS - informations SIP](images/zoiper-ios06_proxy.png){.thumbnail height="500"}
 
 Si les informations d'identification de la ligne sont correctes, le message `État de l'enregistrement: OK` s'affichera alors. Revenez alors au menu principal de l'application Zoiper pour utiliser votre ligne SIP.
 
-![zoiper - iOS - enregistrement OK](images/zoiper-ios07.png){.thumbnail height="500"}
+> [!tabs]
+> Configuration de base
+>> ![zoiper - iOS - informations SIP](images/zoiper-ios07.png){.thumbnail height="500"}
+> Proxy sortant différent du domaine
+>> ![zoiper - iOS - informations SIP](images/zoiper-ios07_proxy.png){.thumbnail height="500"}
 
 ///
 

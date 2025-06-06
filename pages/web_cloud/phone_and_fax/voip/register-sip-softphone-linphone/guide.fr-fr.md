@@ -13,9 +13,9 @@ Le logiciel [Linphone](https://www.linphone.org/){.external} est un softphone (l
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
+>
 > Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
-> 
+>
 
 ## Prérequis
 
@@ -32,16 +32,27 @@ Ce tutoriel décrit la méthode pour enregistrer votre ligne sur la version Andr
 
 Une fois Linphone ouvert, un assistant vous permet de configurer votre compte SIP. Sélectionnez `Utiliser un compte SIP`{.action}.
 
-![assistant zoiper](images/linphone01.png){.thumbnail}
+![assistant linphone](images/linphone01.png){.thumbnail}
 
 Renseignez alors vos identifiants SIP OVHcloud dans les champs correspondants. Vous pouvez également définir un nom d'affichage qui sera présenté lors de vos émissions d'appels.<br>
 Cochez `UDP`{.action} pour le transport et appuyez sur `Connexion`{.action}.
 
-![connexion zoiper](images/linphone02.png){.thumbnail}
+![connexion linphone](images/linphone02.png){.thumbnail}
 
-Si la connexion a réussi, la notification `Connecté` apparaît en haut de l'application. 
+/// details | Si votre **Proxy** est différent de votre **Domain**.
 
-![connexion réussie zoiper](images/linphone03.png){.thumbnail}
+Un message d'erreur apparaîtra mais pas de panique ! Nous allons renseigner le `Proxy SIP` pour remédier à cela !
+
+![connexion linphone](images/linphone03-proxy.png){.thumbnail}
+
+Ouvrez le menu déroulant et appuyez sur `Options`. Appuyez sur votre compte récemment créé et déroulez les paramètres jusqu'à atteindre l'option `Proxy SIP`, remplissez le formulaire avec votre `Proxy sortant`, ici `outbound-ovh-1.sip-proxy.io`, activer ensuite l'option `Outbound proxy`.
+
+![connexion linphone](images/linphone04-proxy.png){.thumbnail}
+///
+
+Si la connexion est réussie, la notification `Connecté` apparaît en haut de l'application.
+
+![connexion réussie linphone](images/linphone03.png){.thumbnail}
 
 Vous pouvez dès lors être joint et composer des appels depuis votre ligne SIP OVHcloud.
 
