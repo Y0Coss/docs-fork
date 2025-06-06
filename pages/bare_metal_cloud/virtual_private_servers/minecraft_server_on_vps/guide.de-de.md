@@ -95,8 +95,8 @@ $ mkdir ~/server && cd ~/server
 > Ein "Vanilla"-Server ist eine Instanz ohne jegliche Add-ons oder Plugins. Sie werden das Spiel so erfahren, wie es von den Entwicklern veröffentlicht wurde.
 >
 
-Kopieren Sie zuerst den Download-Link für das Server-Programm.
-<br>Klicken Sie dazu auf der offiziellen [Website von Minecraft](https://minecraft.net/download/server){.external} mit der rechten Maustaste auf den Download-Link und wählen Sie `Linkadresse kopieren`{.action}.
+Kopieren Sie zuerst den Download-Link für das Server-Programm.  
+Klicken Sie dazu auf der offiziellen [Website von Minecraft](https://minecraft.net/download/server){.external} mit der rechten Maustaste auf den Download-Link und wählen Sie `Linkadresse kopieren`{.action}.
 
 ![Download des Servers](images/download_jar_file.png){.thumbnail}
 
@@ -113,12 +113,12 @@ Bevor Sie den Server starten, müssen Sie die EULA (*End User License Agreement*
 ~/server$ echo "eula=true" > eula.txt
 ```
 
-Anschließend befindet sich eine Datei namens `eula.txt` im Wurzelverzeichnis Ihres Servers, die die Zeile `eula=true` enthält. Dies zeigt der Software an, dass Sie die Nutzungsbedingungen für Minecraft akzeptieren.
-<br>Die allgemeinen Nutzungsbedingungen finden Sie auf der offiziellen [Website von Minecraft](https://www.minecraft.net/){.external}.
+Anschließend befindet sich eine Datei namens `eula.txt` im Wurzelverzeichnis Ihres Servers, die die Zeile `eula=true` enthält. Dies zeigt der Software an, dass Sie die Nutzungsbedingungen für Minecraft akzeptieren.  
+Die allgemeinen Nutzungsbedingungen finden Sie auf der offiziellen [Website von Minecraft](https://www.minecraft.net/){.external}.
 
 Ihr Server kann nun gestartet werden.
 
-In Schritt 1 wurde das Paket `screen` installiert, dem mehrere Terminalsitzungen (Shell) geöffnet werden können. Wir starten Minecraft nun in einer neuen Session, die im Hintergrund ausgeführt werden kann. Die Verwendung von `screen` kann sehr praktisch sein, weil Sie so mehrere Minecraft-Server gleichzeitig starten können.
+In Schritt 1 wurde das Paket `screen` installiert, mit dem mehrere Terminal-Sitzungen (Shell) geöffnet werden können. Wir starten Minecraft nun in einer neuen Session, die im Hintergrund ausgeführt werden kann. Die Verwendung von `screen` kann sehr praktisch sein, weil Sie so mehrere Minecraft-Server gleichzeitig starten können.
 
 Erzeugen Sie zunächst eine neue Shell namens "minecraft1":
 
@@ -185,7 +185,7 @@ Standardmäßig ist kein Port anzugeben.
 
 Ihr Minecraft Vanilla Server ist nun auf Ihrem VPS installiert.
 
-Bitte beachten Sie, dass diese Installationsanleitung auch für einen [OVHcloud Dedicated Server](/links/bare-metal/bare-metal) oder eine [Public Cloud Instanz](/links/public-cloud/compute) gilt. Mit diesen Lösungen profitieren Sie auch von garantierten und stabilen physischen Ressourcen, da die Hardware dediziert ist.
+Beachten Sie, dass diese Installationsanleitung auch für einen [OVHcloud Dedicated Server](/links/bare-metal/bare-metal) oder eine [Public Cloud Instanz](/links/public-cloud/compute) anwendbar ist. Mit diesen Lösungen profitieren Sie auch von garantierten und stabilen physischen Ressourcen, da die Hardware dediziert ist.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
