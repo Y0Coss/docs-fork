@@ -13,15 +13,15 @@ This policy aims to implement the general principles of reversibility and our co
 
 The functionalities of the Product are divided into three categories:
 
-* The main [features for which we guarantee you the possibility to migrate.](https://help.ovhcloud.com/csm)
-* OVHcloud is currently in operation, and [the migration will require adaptations to a new environment.](https://help.ovhcloud.com/csm)
+* The main features for which we guarantee you the possibility to migrate.
+* OVHcloud is currently in operation, and the migration will require adaptations to a new environment.
 * Specified functionalities whose migration as such is impossible to guarantee because they are linked to the OVHcloud environment or specific developments.
 
 **Main features**
 
 | **Function** | **Description** | **Formats**  **Available** | **Migration model** | **Documentation available** |
 | --- | --- | --- | --- | --- |
-| Document oriented database | Flexible JSON/BSON data storage for high scalability | BSON, JSON, CSV | **Incoming** : import via mongorestore/mongoimport ;  **Outgoing** : export via mongodump/mongoexport | [OVH](https://docs.mongodb.com/) |
+| Document oriented database | Flexible JSON/BSON data storage for high scalability | BSON, JSON, CSV | **Incoming** : import via mongorestore/mongoimport ;  **Outgoing** : export via mongodump/mongoexport | [MongoDB documentation](https://docs.mongodb.com/) |
 | Open-source MongoDB compatibility | Standard version of MongoDB without modification, facilitating portability | Standard MongoDB (CLI, API, tools) | **Incoming** : direct integration;  **Outgoing** : full export without adaptation | [MongoDB](https://help.ovhcloud.com/csm/en-gb-documentation-public-cloud-databases-mongodb?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=7165a1f6259c6110f0782e7048ecedec&spa=1) |
 | High availability | Replica sets ensuring redundancy and auto recovery | N/A | **Incoming** : configuration of replicas at import;  **Outgoing** : export and deployment on another cluster | [Replication](https://docs.mongodb.com/manual/replication/) |
 | Automatic backups | Daily backups with possibility of restoration | Snapshots MongoDB | **Incoming** : restoration possible;  **Outgoing:** manual download/export required | [MongoDB](https://help.ovhcloud.com/csm/en-gb-documentation-public-cloud-databases-mongodb?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=7165a1f6259c6110f0782e7048ecedec&spa=1) |
