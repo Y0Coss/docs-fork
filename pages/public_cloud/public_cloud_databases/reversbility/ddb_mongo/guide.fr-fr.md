@@ -1,5 +1,5 @@
 ---
-titre : « Reversibility Policy for Managed Document Database Product »
+titre : «Politique de réversbilité du produit Managed Document Database»
 mise à jour : 2025-06-06
 ---
 
