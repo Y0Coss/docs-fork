@@ -1,5 +1,3 @@
-**Managed MongoDB (DDB) Product Reversibility Policy**
-
 ---
 title: "Reversibility Policy for Managed Document Database Product"
 updated: 2025-06-06
