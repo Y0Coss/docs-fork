@@ -1,5 +1,4 @@
-# 
----
+ ---
 title: Reversibility Policy for Managed Relational Database Product
 updated: 2025-06-06
 ---
