@@ -1,7 +1,7 @@
 ---
 title: OVHcloud API and OS Installation
 excerpt: Use OVHcloud API to install or reinstall an OS on your dedicated server
-updated: 2025-02-25
+updated: 2025-06-06
 ---
 
 ## Objective
