@@ -10,7 +10,7 @@ This policy aims to implement general reversibility principles and our complianc
 
 ## List of Features
 
-The features of the â€œProductâ€ are divided into three categories:
+Features of the Product are divided into three categories:
 
 - **Core features** for which we guarantee migration capability.
 - **OVHcloud implementations** that require adaptation to a new environment for migration.
@@ -56,8 +56,8 @@ The features of the â€œProductâ€ are divided into three categories:
 
 ## List of Architectures
 
-**OVHcloudâ€™s Managed MySQL and Managed PostgreSQL** support different architectures depending on the selected service tier.  
-The **â€œBusinessâ€** and **â€œEnterpriseâ€** plans offer **high availability** with multiple nodes and **automatic asynchronous replication**.
+**Managed MySQL and Managed PostgreSQL** support different architectures depending on the selected service tier.  
+The **Business** and **Enterprise** plans offer **high availability** with multiple nodes and **automatic asynchronous replication**.
 
 
 
