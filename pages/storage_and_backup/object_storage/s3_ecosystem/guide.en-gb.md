@@ -27,6 +27,7 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 | **Veeam Kasten** | Compatible | N/A | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
 | **Cloud Casa** | Compatible | Officially supported, details can be found on [Cloud Casa product page](https://cloudcasa.io/partners/ovhcloud-kubernetes-backup-and-dr/) | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa/) |
 | **Trilio** | Compatible | Officially supported, details can be found on [Trilio Support Page](https://docs.trilio.io/kubernetes/appendix/configure-ovh-object-storage-as-a-target) | [Guide](https://help.ovhcloud.com/csm/en-public-cloud-kubernetes-backup-restore-cluster-trilio?id=kb_article_view&sysparm_article=KB0049632)  
+|**Velereo** | Compatible | N/A | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa/) 
 
 ### Command-Line Interface Integrations
 | Tool/Software | Compatibility | Notes | Getting Started  |
@@ -38,8 +39,8 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 ### File management 
 | Tool/Software | Compatibility | Notes | Getting Started  |
 | --- | --- | --- | --- |
-| **Cyberduck** | Compatible | Provides an open-source Windows file transfer client for multiple protocols. More details on[WinSCP](https://winscp.net/eng/index.php) | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
-| **WinSCP** | Compatible | Provides an open-source Windows file transfer client for multiple protocols. More details on[WinSCP](https://winscp.net/eng/index.php) | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
+| **Cyberduck** | Compatible | Provides an open-source Windows file transfer client for multiple protocols. More details on [Cyberduck](https://docs.cyberduck.io/cyberduck/) | Coming Soon |
+| **WinSCP** | Compatible | Provides an open-source Windows file transfer client for multiple protocols. More details on [WinSCP](https://winscp.net/eng/index.php) | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
 
 ### File Sharing 
 | Tool/Software | Compatibility | Notes | Getting Started  |
