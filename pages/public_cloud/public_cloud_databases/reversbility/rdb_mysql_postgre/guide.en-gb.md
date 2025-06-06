@@ -48,7 +48,7 @@ Features of the Product are divided into three categories:
 
 ## Specific Features
 
-| Function               | Description                                                                           | Formats Available | Migration Model                                                                                   | Documentation Available |
+| Feature               | Description                                                                           | Formats Available | Migration Model                                                                                   | Documentation Available |
 |------------------------|---------------------------------------------------------------------------------------|--------------------|----------------------------------------------------------------------------------------------------|--------------------------|
 | **OVHcloud Database Forking**    | Instant duplication of a database via OVHcloud's native "fork" feature.                                                  | OVHcloud internal   | **Incoming**: Feature not available for import. <br> **Outgoing**: Not portable â€” requires manual data export to replicate elsewhere. | [Databases & Analytics - Restore a backup](https://support.us.ovhcloud.com/hc/en-us/articles/20584170298515-Databases-Analytics-Restore-a-backup) |
 | **Infrastructure as Code** | Automated deployment via OVHcloud-specific Terraform modules                           | N/A                | **Incoming:** Scripts need to be adapted for other providers.  <br> **Outcoming:** Configuration rewrite required for Terraform.                             | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs)                      |
