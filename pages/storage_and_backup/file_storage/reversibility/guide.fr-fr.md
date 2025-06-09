@@ -1,5 +1,5 @@
 ---
-title : Politique de réversibilité du stockage de fichiers
+title : Politique de réversibilité du Produit File Storage
 mise à jour : 2025-06-09
 ---
 
