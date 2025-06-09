@@ -55,6 +55,7 @@ OVHcloud propose également un service dédié : [OVHcloud Professional Services
 Aucun frais de résiliation : Pas de sur facturation à l’usage. Le service est stoppé immédiatement après suppression du service.
 
 **Conservation des données après résiliation du contrat**
+
 Les données sont supprimées par action du client lui-même. OVHcloud ne conserve aucune donnée. Une exportation manuelle préalable est obligatoire pour préserver les données.
 Un point d’attention concernant la fonctionnalité Object Lock. Plus d’informations à retrouver sur la documentation associée.
 Une fois le service resilié par le client, OVHCloud libère les ressources qui étaient allouées.
