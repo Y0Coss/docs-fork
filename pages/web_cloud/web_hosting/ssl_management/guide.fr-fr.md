@@ -64,6 +64,8 @@ Il est indispensable de disposer d’un certificat SSL pour que votre site soit 
 
 > [!primary]
 >
+> **Informations sur la migration vers la nouvelle interface de gestion des certificats SSL :**
+>
 > La suite de ce guide s'adresse aux clients dont les services d'hébergement web ont déjà migré vers la nouvelle interface de gestion des certificats SSL.
 > Pour repérer si cette migration est effectuée, positionnez-vous sur votre hébergement web dans votre espace client OVHcloud et vérifiez la présence de l’onglet `Certificats SSL`.
 > Si l'onglet `Certificats SSL` est absent, votre service n'a pas encore migré sur la nouvelle interface de gestion. Dans ce cas, consultez directement [ce guide](/pages/web_cloud/web_hosting/ssl_on_webhosting) pour gérer votre certificat SSL.
