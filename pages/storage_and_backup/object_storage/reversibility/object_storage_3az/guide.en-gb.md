@@ -13,8 +13,8 @@ This policy aims to implement the general principles of reversibility and our co
 
 The functionalities of the Product are divided into three categories:
 
-* The main [features for which we guarantee you the possibility to migrate.](https://help.ovhcloud.com/csm)
-* OVHcloud is currently in operation, and [the migration will require adaptations to a new environment.](https://help.ovhcloud.com/csm)
+* The main features for which we guarantee you the possibility to migrate.
+* OVHcloud is currently in operation, and the migration will require adaptations to a new environment.
 * Specified functionalities whose migration as such is impossible to guarantee because they are linked to the OVHcloud environment or specific developments.
 
 **Main features**
