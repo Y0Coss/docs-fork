@@ -79,7 +79,7 @@ Um über Ihr Webhosting auf die Verwaltung der SSL-Zertifikate zuzugreifen, folg
 2. Klicken Sie auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
-5. Bleiben Sie auf der angezeigten Seite im Tab `SSL-Zertifikate`{.action}.
+5. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
 
 Hier können Sie Ihre SSL-Zertifikate für alle Domains und Subdomains Ihres Webhostings verwalten.
 
@@ -97,7 +97,7 @@ Das kostenlose SSL-Zertifikat von Let's Encrypt (DV) kann bis zu **99** Domainna
 2. Klicken Sie auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
-5. Bleiben Sie auf der angezeigten Seite im Tab `SSL-Zertifikate`{.action}.
+5. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
 6. Wählen Sie dann die Domain oder Subdomain aus, für die Sie das kostenlose SSL-Zertifikat Let's Encrypt (DV) aktivieren möchten, und klicken Sie auf den Link `SSL-Zertifikat aktivieren`.
 7. Klicken Sie anschließend auf den Button `SSL Let's Encrypt aktivieren`{.action}.
 
@@ -115,7 +115,7 @@ Das kostenpflichtige SSL-Zertifikat von Sectigo (DV) gilt nur für einen Domainn
 2. Klicken Sie auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
-5. Bleiben Sie auf der angezeigten Seite im Tab `SSL-Zertifikate`{.action}.
+5. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
 6. Klicken Sie auf den Button `SSL-Zertifikat Sectigo bestellen`{.action}.
 7. Wählen Sie im neu geöffneten Fenster über das Dropdown-Menü die betreffende Domain oder Subdomain aus und klicken Sie auf `Bestätigen`{.action}, um zum Bestellschein für Ihr Sectigo DV SSL-Zertifikat weitergeleitet zu werden.
 
@@ -148,7 +148,7 @@ Das kostenpflichtige SSL-Zertifikat von Sectigo (EV) gilt nur für einen Domainn
 2. Klicken Sie auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
-5. Bleiben Sie auf der angezeigten Seite im Tab `SSL-Zertifikate`{.action}.
+5. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
 6. Klicken Sie auf den Button `SSL-Zertifikat Sectigo bestellen`{.action}.
 7. Wählen Sie im neu geöffneten Fenster über das Dropdown-Menü die betreffende Domain oder Subdomain aus und klicken Sie auf `Bestätigen`{.action}, um zum Bestellschein für Ihr Sectigo EV SSL-Zertifikat weitergeleitet zu werden.
 
@@ -180,7 +180,7 @@ Diese Lösung erlaubt es Ihnen, Ihr eigenes SSL Zertifikat für Ihre Domain zu i
 2. Klicken Sie auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
-5. Bleiben Sie auf der angezeigten Seite im Tab `SSL-Zertifikate`{.action}.
+5. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
 6. Klicken Sie auf den Button `Import Ihres eigenen SSL-Zertifikats`{.action}.
 7. Füllen Sie im angezeigten Formular die 3 Felder aus und klicken Sie dann auf `Bestätigen`{.action}, um den Import des personalisierten SSL-Zertifikats auf Ihr Webhosting abzuschließen.
 
@@ -190,7 +190,7 @@ Diese Lösung erlaubt es Ihnen, Ihr eigenes SSL Zertifikat für Ihre Domain zu i
 
 ///
 
-### SSL-Zertifikat von einem Webhosting löschen <a name="delete-ssl"></a>
+### SSL-Zertifikat auf einem Webhosting deaktivieren <a name="delete-ssl"></a>
 
 > [!warning]
 >
@@ -204,7 +204,7 @@ So entfernen Sie das auf Ihrem Webhosting installierte SSL-Zertifikat:
 2. Klicken Sie auf den Tab `Web Cloud`{.action}.
 3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
-5. Bleiben Sie auf der angezeigten Seite im Tab `SSL-Zertifikate`{.action}.
+5. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
 6. Klicken Sie in der Tabelle unten auf der neu angezeigten Seite auf die Schaltfläche `⁝`{.action} rechts neben der Zeile für den betreffenden Domainnamen, und klicken Sie dann auf `SSL deaktivieren`{.action}.
 7. Bestätigen Sie im angezeigten Fenster die Deaktivierung, indem Sie auf `Bestätigen`{.action} klicken.
 
