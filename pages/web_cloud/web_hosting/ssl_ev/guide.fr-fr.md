@@ -87,6 +87,18 @@ Si vous avez besoin d'activer un certificat SSL pour plusieurs noms de domaine/s
 >
 > Pour rappel, si vous souscrivez à un certificat SSL Sectigo EV directement pour un sous-domaine (exemple : `sub.domain.tld`), vous n'êtes pas concerné par cette situation.
 
+> [!primary]
+>
+> **Informations sur la migration vers la nouvelle interface de gestion des certificats SSL :**
+>
+> La suite de la partie 1.1 s'adresse aux clients dont les services d'hébergement web n'ont pas encore migré vers la nouvelle interface de gestion des certificats SSL.
+> Pour repérer si cette migration est effectuée, positionnez-vous sur votre hébergement web dans votre espace client OVHcloud et vérifiez la présence de l’onglet `Certificats SSL`.
+> Si l'onglet `Certificats SSL` est présent, votre service a déjà migré sur la nouvelle interface de gestion. Dans ce cas, consultez directement [ce guide](/pages/web_cloud/web_hosting/ssl_management) pour gérer votre certificat SSL.
+>
+> Pour des raisons techniques, l'ensemble des services d'hébergement web de tous nos clients ne peut pas être migré en une seule fois. Cette migration est donc répartie sur quelques semaines et se réalise automatiquement, sans aucune incidence sur le fonctionnement de vos services d'hébergement web, et sans aucune intervention ou action nécessaire de votre part. 
+>
+> À terme, tous les services d'hébergement web fonctionneront avec la nouvelle interface de gestion des certificats SSL.
+
 Pour commander le certificat SSL Sectigo EV, réalisez les actions suivantes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
