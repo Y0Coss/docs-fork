@@ -11,11 +11,11 @@ Cette politique vise à mettre en œuvre les principes généraux de réversibil
 
 **Liste des fonctionnalités**
 
-The functionalities of the Product are divided into three categories:
+Les fonctionnalités du « Produit » sont réparties en trois catégories :
 
-* The main [features for which we guarantee you the possibility to migrate.](https://help.ovhcloud.com/csm)
-* OVHcloud is currently in operation, and [the migration will require adaptations to a new environment.](https://help.ovhcloud.com/csm)
-* Specified functionalities whose migration as such is impossible to guarantee because they are linked to the OVHcloud environment or specific developments.
+•	Les principales fonctionnalités pour lesquelles nous vous garantissons la possibilité de migrer.
+•	La mise en œuvre d’OVHcloud dont la migration nécessitera des adaptations à un nouvel environnement.
+•	Les fonctionnalités spécifiques dont la migration en tant que telle est impossible à garantir car elles sont liées à l'environnement OVHcloud ou à des développements spécifiques.
 
 **Principales fonctionnalités**
 
