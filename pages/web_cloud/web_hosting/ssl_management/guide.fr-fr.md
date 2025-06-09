@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Nouvelle gestion des certificats SSL"
 excerpt: "Découvrez comment gérer un certificat SSL sur votre hébergement web OVHcloud grâce à notre nouvelle interface de gestion"
-updated: 2025-06-05
+updated: 2025-06-09
 ---
 
 <style>
@@ -44,8 +44,6 @@ Il est indispensable de disposer d’un certificat SSL pour que votre site soit 
 - Posséder un [hébergement web OVHcloud](/links/web/hosting).
 - Avoir enregistré au moins un [nom de domaine](/links/web/domains).
 
-## En pratique
-
 > [!warning]
 >
 > **Avant de poursuivre**, vérifiez que chaque **nom de domaine et/ou sous-domaine** concerné par votre futur certificat SSL :
@@ -58,7 +56,8 @@ Il est indispensable de disposer d’un certificat SSL pour que votre site soit 
 > - [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 > - [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
->
+
+## En pratique
 
 ### Accéder à la gestion des certificats SSL depuis votre hébergement web
 
@@ -73,7 +72,6 @@ Il est indispensable de disposer d’un certificat SSL pour que votre site soit 
 > Pour des raisons techniques, l'ensemble des services d'hébergement web de tous nos clients ne peut pas être migré en une seule fois. Cette migration est donc répartie sur quelques semaines et se réalise automatiquement, sans aucune incidence sur le fonctionnement de vos services d'hébergement web, et sans aucune intervention ou action nécessaire de votre part. 
 >
 > À terme, tous les services d'hébergement web fonctionneront avec la nouvelle interface de gestion des certificats SSL.
->
 
 Pour accéder à la gestion des certificats SSL depuis votre hébergement web, suivez les étapes ci-dessous :
 
@@ -106,7 +104,6 @@ Le certificat SSL gratuit Let's Encrypt (DV) peut inclure jusqu'à **99** noms d
 > [!success]
 >
 > Un certificat SSL Let's Encrypt est automatiquement généré pour chaque nom de domaine et sous-domaine récemment déclaré en multisite sur votre hébergement web. Pour vous en assurer, vérifiez que votre nom de domaine et/ou sous-domaine apparaît bien dans le tableau présent en bas de la page `Certificats SSL`{.action}.
->
 
 ///
 
@@ -129,7 +126,6 @@ Poursuivez la commande jusqu'au paiement afin de valider la demande de création
 > Une fois la commande validée, la demande de certificat SSL Sectigo DV est envoyée à l'autorité de certification Sectigo.
 >
 > Dès lors, aucun remboursement du SSL Sectigo DV n'est possible.
->
 
 ///
 
@@ -147,7 +143,6 @@ Le certificat SSL payant Sectigo (EV) est valable pour un seul nom de domaine et
 > - Être en capacité de justifier avec exactitude des informations et coordonnées relatives à votre organisation.
 >
 > Pour vérifier si vous êtes éligible à la souscription d'un certificat SSL Sectigo EV, rendez-vous sur [ce lien](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
->
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 2. Rendez-vous dans la partie `Web Cloud`{.action}.
@@ -174,7 +169,6 @@ Poursuivez la commande jusqu'au paiement afin de valider la demande de création
 > Assurez-vous impérativement de votre éligibilité à la souscription d'un certificat SSL Sectigo EV **avant de payer le certificat**.
 >
 > En effet, aucun remboursement du certificat SSL Sectigo EV ne sera possible, **même si la procédure de vérification auprès de Sectigo n'aboutit pas**.
->
 
 ///
 
@@ -201,7 +195,6 @@ Cette solution vous permet d'installer votre propre certificat SSL pour votre no
 > [!warning]
 >
 > **Avant de poursuivre**, assurez-vous que la suppression du certificat SSL ne rendra pas vos sites web inaccessibles. Le cas échéant, vos utilisateurs rencontreront une erreur de sécurité lorsqu'ils essaieront d'accéder à votre site web en HTTPS.
->
 
 Cette vérification étant inhérente aux paramètres de votre ou vos sites web, nous vous recommandons de contacter un prestataire de services spécialisé si vous rencontrez des difficultés. Nous ne serons pas en mesure de vous fournir une assistance à ce sujet.
 
@@ -215,13 +208,11 @@ Pour supprimer le certificat SSL installé sur votre hébergement web, effectuez
 6. Dans le tableau présent en bas de la nouvelle page qui s'affiche, cliquez sur le bouton `⁝`{.action}, situé à droite de la ligne correspondant au nom de domaine concerné, puis cliquez sur `Désactiver SSL`{.action}.
 7. Dans la fenêtre qui s'ouvre, confirmez la désactivation en cliquant sur `Valider`{.action}.
 
-
 La désactivation du certificat SSL sera effective sous quelques heures au maximum.
 
 > [!warning]
 >
 > La suppression d'un certificat SSL payant **Sectigo** (DV ou EV) est définitive, même si le certificat n'est pas encore expiré. Aucun remboursement au prorata du temps restant ne pourra être effectué. Si vous souhaitez réinstaller un certificat SSL **Sectigo** (DV ou EV), vous devrez donc obligatoirement réaliser une nouvelle commande et payer l'intégralité du nouveau certificat SSL souscrit.
->
 
 ## Aller plus loin <a name="go-further"></a>
 
