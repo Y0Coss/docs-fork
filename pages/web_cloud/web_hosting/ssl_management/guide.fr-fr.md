@@ -159,7 +159,7 @@ Le certificat SSL payant Sectigo (EV) est valable pour un seul nom de domaine et
 
 Dans le tunnel de commande, sélectionnez le **Certificat SSL Sectigo EV** et poursuivez la commande.
 
-Renseignez avec exactitude les informations demandées par **Sectigo** à l'étape 2 du tunnel de commande.
+Renseignez avec exactitude les informations demandées par **Sectigo** à l'étape 2 de la commande.
 
 ![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
