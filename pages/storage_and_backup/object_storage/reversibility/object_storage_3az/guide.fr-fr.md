@@ -1,5 +1,5 @@
 ---
-title : Politique de réversibilité du produits Object Storage 3AZ
+title : Politique de réversibilité du produit Object Storage 3AZ
 updated: 2025-06-09
 ---
 
