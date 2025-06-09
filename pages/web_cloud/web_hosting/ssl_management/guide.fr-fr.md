@@ -200,7 +200,7 @@ Cette solution vous permet d'installer votre propre certificat SSL pour votre no
 
 > [!warning]
 >
-> Si vous souhaitez supprimer un certificat SSL de votre hébergement web et **avant de poursuivre**, assurez-vous que la suppression du certificat SSL ne rendra pas vos sites web inaccessibles. Le cas échéant, vos utilisateurs rencontreront une erreur de sécurité lorsqu'ils essaieront d'accéder à votre site web en HTTPS.
+> **Avant de poursuivre**, assurez-vous que la suppression du certificat SSL ne rendra pas vos sites web inaccessibles. Le cas échéant, vos utilisateurs rencontreront une erreur de sécurité lorsqu'ils essaieront d'accéder à votre site web en HTTPS.
 >
 
 Cette vérification étant inhérente aux paramètres de votre ou vos sites web, nous vous recommandons de contacter un prestataire de services spécialisé si vous rencontrez des difficultés. Nous ne serons pas en mesure de vous fournir une assistance à ce sujet.
