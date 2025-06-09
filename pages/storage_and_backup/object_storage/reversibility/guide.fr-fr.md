@@ -60,7 +60,7 @@ Aucun de frais de résiliation : Pas de sur facturation lié à la migration des
 
 ### Conservation des données après résiliation du contrat
 
-OVHcloud ne conserve aucune donnée après l’arrêt du service. Les snapshots sont irréversiblement supprimés. Une exportation manuelle préalable est obligatoire pour préserver les données.
+OVHcloud ne conserve aucune donnée après l’arrêt du service. Les données sont irréversiblement supprimées. Une exportation manuelle préalable est obligatoire pour préserver les données.
 Pour récupérer ses données, le client devra les désarchiver, puis les récupérer sur le bucket où elles ont été restaurées. 
 Attention le désarchivage peut prendre jusqu’à 48h.
 
