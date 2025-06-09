@@ -17,7 +17,7 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 - La [mise en œuvre d’OVHcloud](#ovhcloud-implementation), dont la migration nécessitera des adaptations à un nouvel environnement.
 - [Fonctionnalités spécifiques](#specific-functionalities), dont la migration en tant que telle est impossible à garantir car elles sont liées à l'environnement OVHcloud ou à des développements spécifiques.
 
-### Fonctionnalités principales <a name=« Fonctionnalités principales »></a>
+### Fonctionnalités principales 
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
@@ -26,7 +26,7 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 | **Chiffrement Côté Serveur** | Chiffrement AES-256 natif au niveau du bucket, compatible avec S3 SSE| S3 (SSE-S3, SSE-C) | **Entrant** : Upload de données chiffrées ou non, gestion transparente. <br> **Sortant** : Export sans adaptation, chiffrement maintenu ou retraité par la cible |[Documentation offre Cold Archive](https://help.ovhcloud.com/csm/en-gb-documentation-storage-object-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=b29021c8e5a5edd0f078850a25104df8&spa=1) |
 | **Conservation longue durée** | Données stockées sur bandes magnétiques, durée de vie supérieure à 10 ans| S3 (objets)| **Entrant** : Import sans adaptation. <br> **Sortant** : Export d’objets via API S3 ; récupération sur tout stockage compatible. |[Documentation offre Cold Archive](https://help.ovhcloud.com/csm/en-gb-documentation-storage-object-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=b29021c8e5a5edd0f078850a25104df8&spa=1) |
 
-### Implémentation OVHcloud <a name=« Implémentation OVHcloud »></a>
+### Implémentation OVHcloud 
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
@@ -36,7 +36,7 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 
 
 
-### Fonctionnalités spécifiques <a name=« Fonctionnalités spécifiques »></a>
+### Fonctionnalités spécifiques 
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
