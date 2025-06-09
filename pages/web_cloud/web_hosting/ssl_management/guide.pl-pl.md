@@ -196,7 +196,7 @@ Dzięki temu rozwiązaniu możesz zainstalować własny certyfikat SSL dla swoje
 >
 > Jeśli chcesz usunąć certyfikat SSL z Twojego hostingu i **przed kontynuacją**, upewnij się, że usunięcie certyfikatu SSL nie zakłóci dostępności Twoich stron WWW. W przeciwnym razie użytkownicy napotkają błąd bezpieczeństwa podczas próby uzyskania dostępu do Twojej strony WWW przy użyciu protokołu "HTTPS".
 
-Ponieważ weryfikacja ta jest ściśle związana z ustawieniami Twojej strony WWW, w przypadku trudności zalecamy skorzystanie z pomocy webmastera. Niestety firma OVH nie jest w stanie udzielić wsparcia w tym zakresie.
+Ponieważ weryfikacja ta jest ściśle związana z ustawieniami Twojej strony WWW, w przypadku trudności zalecamy skorzystanie z pomocy webmastera. Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
 
 Aby usunąć certyfikat SSL zainstalowany na Twoim hostingu, wykonaj następujące czynności:
 
