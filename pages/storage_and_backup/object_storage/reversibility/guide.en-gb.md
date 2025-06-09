@@ -1,5 +1,5 @@
 ---
-title: Cold Storage reversbility policy
+title: Cold Storage product reversbility policy
 updated: 2025-06-09
 ---
 
