@@ -17,7 +17,7 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 - La [mise en œuvre d’OVHcloud](#ovhcloud-implementation), dont la migration nécessitera des adaptations à un nouvel environnement.
 - [Fonctionnalités spécifiques](#specific-functionalities), dont la migration en tant que telle est impossible à garantir car elles sont liées à l'environnement OVHcloud ou à des développements spécifiques.
 
-### Fonctionnalités principales <a name=« core-features »></a>
+### Fonctionnalités principales <a name=« Fonctionnalités principales »></a>
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
@@ -25,7 +25,7 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 | **Snapshots Manuels/Automatiques**   | Création/restauration de snapshots pour la sauvegarde ou la restauration instantanée.                                               | NFSv3                  | **Entrant** : Copier les données du snapshot à l’aide d’outils tels que rsync.<br>**Sortant** : Export les données restaurées à l’aide de rsync ou d’outils similaires. | [File Storage](https://help.ovhcloud.com/csm/fr-documentation-storage-file-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=4da029c4d56129901e115599f64d04a9)
 | **Accès multi-serveurs**          | Montage simultané sur plusieurs serveurs (Linux/Unix/VMs).                                                   | NFSv3                  | **Entrant** : Montage sur tous les serveurs OVH concernés.<br>**Sortant** : Démontage, puis remontez sur la cible si compatible NFSv3. | [File Storage](https://help.ovhcloud.com/csm/fr-documentation-storage-file-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=4da029c4d56129901e115599f64d04a9)
 
-### Implémentation OVHcloud <a name=« ovhcloud-implementation »></a>
+### Implémentation OVHcloud <a name=« Implémentation OVHcloud »></a>
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
@@ -34,11 +34,11 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 
 
 
-### Fonctionnalités spécifiques <a name=« specific-functions »></a>
+### Fonctionnalités spécifiques <a name=« Fonctionnalités spécifiques »></a>
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
-|**Anti-DDoS**|L’anti-DDoS est un ensemble d’équipements et de moyens mis en place pour absorber les attaques par déni de service distribuées. Il comprend une analyse du trafic, l’« aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|NA|**Entrant** : L’Anti-DDoS est une composante de notre infrastructure, activée par défaut. Aucune action n’est requise.<br><br>**Migration sortante** : commandez et configurez un anti-DDoS chez le nouveau fournisseur.|[Protection anti-DDoS OVHcloud](https://www.ovh.co.uk/anti-ddos/)<br><br>[Technologie anti-DDoS](https://www.ovh.co.uk/anti-ddos/anti-ddos-technology.xml)|
+|**Anti-DDoS**|L’anti-DDoS est un ensemble d’équipements et de moyens mis en place pour absorber les attaques par déni de service distribuées. Il comprend une analyse du trafic, l’« aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|NA|**Entrant** : L’Anti-DDoS est une composante de notre infrastructure, activée par défaut. Aucune action n’est requise.<br><br>**sortant** : commandez et configurez un anti-DDoS chez le nouveau fournisseur.|[Protection anti-DDoS OVHcloud](https://www.ovh.co.uk/anti-ddos/)<br><br>[Technologie anti-DDoS](https://www.ovh.co.uk/anti-ddos/anti-ddos-technology.xml)|
 | **Gestion via OVHcloud Manager** | Service managé par OVHcloud avec une interface graphique propriétaire et des API pour la gestion des volumes et des snapshots. | N/A    | **Entrant** : Non applicable. <br> **Sortant** : les scripts/API doivent être réécrits pour la cible ; une gestion manuelle peut être nécessaire. | [File Storage](https://help.ovhcloud.com/csm/fr-documentation-storage-file-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=4da029c4d56129901e115599f64d04a9)
 
 Liste des architectures ###
