@@ -1,6 +1,6 @@
 ---
 title: 'Sauvegarder une instance'
-excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud'
+excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud ou Openstack'
 updated: 2025-06-10
 ---
 
@@ -28,6 +28,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 
 - Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
+- CLI OpenStack. Consultez notre guide « [Comment préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) ».
 
 ## En pratique
 
@@ -38,7 +39,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >
 
 >[!tabs]
-> Via the OVHcloud Control Panel
+> Via l'espace client OVHcloud
 >> Connectez-vous à [l’espace client d’OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
 >>
 >> Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer un backup`{.action}.

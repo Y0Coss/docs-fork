@@ -24,10 +24,23 @@ Vous aurez également besoin d’une [instance Public Cloud](/links/public-cloud
 
 ## En pratique
 
-> [primary]
->
-> Si vous devez créer une sauvegarde avec Openstack, veuillez vous référer à ce guide dédié pour savoir comment [sauvegarder une instance.](/pages/public_cloud/compute/save_an_instance)
->
+### Créer une sauvegarde
+
+```bash
+$ openstack server list
+
++--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+| ID | Name | Status | Networks | Image Name |
++--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+| aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
++--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+```
+
+Exécutez ensuite la commande suivante pour créer une sauvegarde de votre instance :
+
+```bash
+$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
+```
 
 ### Télécharger la sauvegarde
 

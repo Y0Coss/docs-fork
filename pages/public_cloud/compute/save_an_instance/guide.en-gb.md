@@ -1,6 +1,6 @@
 ---
 title: Backing up an instance
-excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel
+excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel or via Openstack
 updated: 2025-04-28
 ---
 
@@ -14,6 +14,7 @@ You can create a single backup of an instance or configure a schedule in order t
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
+- OpenStack CLI. Use [our guide to know how to prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 
 ## Instructions
 
@@ -23,23 +24,68 @@ You can create a single backup of an instance or configure a schedule in order t
 > This option is only available through a **Cold Snapshot** for Metal instances. During this process, the Metal instance will be switched to rescue-mode, and once the backup is performed, the instance will reboot back to normal mode.
 >
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu.
-
-Click on the `...`{.action} button to the right of the instance and select `Create a backup`{.action}.
-
-![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
-
-Enter a name for the backup on the next page. Take note of the pricing information and click on `Confirm`{.action}.
-
-![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
-
-It is not possible to track the progress of the backup in real time, however, in the `Instance Backup`{.action} section under **Compute** in the left-hand menu, the status will be displayed as "Backup in progress" during the process.
-
-![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
-
-Once the backup is complete, it will be available in the `Instance Backup`{.action} section under **Compute** in the left-hand menu.
-
-![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
+>[!tabs]
+> Via the OVHcloud Control Panel
+>> Log in to [OVHcloud customer area](/links/manager), access the `Public Cloud`{.action} section and select the relevant Public Cloud project. Then click on `Instances`{.action} in the left-hand menu.
+>>
+>> Click on the `...`{.action} button to the right of the instance and select `Create backup`{.action}.
+>>
+>> ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
+>>
+>> > [primary]
+>> >
+>> > Two types of backup are available: local and distant.
+>> >
+>> > The remote backup option also generates a local backup, billed separately and not deleted automatically.
+>> >
+>> > It is recommended that you keep this backup local, because if you recreate an instance in the same region, restoration will be significantly faster. This practice optimizes recovery times and performance.
+>> >
+>>
+>> /// details | Local backup
+>>
+>> Enter a name for the backup. Review the pricing information and click `Confirm`{.action}.
+>>
+>> ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
+>>
+>> ///
+>>
+>> /// details | Distant backup
+>>
+>> Enter a name for the local backup in the `Enter the name of your backup :` field.
+>>
+>> ![public-cloud-instance-distant-backup](images/createdistantbackup1.png){.thumbnail}
+>>
+>> Next, `activate`{.action} the option to add a remote backup, then specify the name of this backup, select its destination region and click `Confirm`{.action}.
+>>
+>> ![public-cloud-instance-distant-backup2](images/createdistantbackup2.png){.thumbnail}
+>>
+>> ///
+>>
+>> It is not possible to monitor backup progress in real time. However, in the `Instance Backup`{.action} section under **Compute** in the left-hand menu, the status `Backup in progress` will be displayed during the process.
+>>
+>> ![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
+>>
+>> Once the backup is complete, it will be available in the `Instance Backup`{.action} section under **Compute** in the left-hand menu.
+>>
+>> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
+>>
+> Via Openstack
+>> ```bash
+>> $ openstack server list
+>>
+>> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> | ID | Name | Status | Networks | Image Name |
+>> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> | aa7115b3-83df-4375-b2ee-19339041dcfa | Server 1 | ACTIVE | Ext-Net=51.xxx.xxx.xxx, 2001:41d0:xxx:xxxx::xxxx | Ubuntu 16.04 |
+>> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
+>> ```
+>>
+>> Then run the following command to create a backup of your instance:
+>>
+>> ```bash
+>> $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
+>> ```
+>>
 
 ### Creating an automated backup of an instance
 
