@@ -17,7 +17,7 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 - La [mise en œuvre d’OVHcloud](#ovhcloud-implementation), dont la migration nécessitera des adaptations à un nouvel environnement.
 - [Fonctionnalités spécifiques](#specific-functionalities), dont la migration en tant que telle est impossible à garantir car elles sont liées à l'environnement OVHcloud ou à des développements spécifiques.
 
-### Fonctionnalités principales <a name=«Fonctionnalités principales»></a>
+### Fonctionnalités principales 
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
@@ -25,7 +25,7 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 | **Snapshots Manuels/Automatiques**   | Création/restauration de snapshots pour la sauvegarde ou la restauration instantanée.                                               | NFSv3                  | **Entrant** : Copier les données du snapshot à l’aide d’outils tels que rsync.<br>**Sortant** : Export les données restaurées à l’aide de rsync ou d’outils similaires. | [File Storage](https://help.ovhcloud.com/csm/fr-documentation-storage-file-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=4da029c4d56129901e115599f64d04a9)
 | **Accès multi-serveurs**          | Montage simultané sur plusieurs serveurs (Linux/Unix/VMs).                                                   | NFSv3                  | **Entrant** : Montage sur tous les serveurs OVH concernés.<br>**Sortant** : Démontage, puis remontez sur la cible si compatible NFSv3. | [File Storage](https://help.ovhcloud.com/csm/fr-documentation-storage-file-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=4da029c4d56129901e115599f64d04a9)
 
-### Implémentation OVHcloud <a name=«Implémentation OVHcloud»></a>
+### Implémentation OVHcloud
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
@@ -34,7 +34,7 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 
 
 
-### Fonctionnalités spécifiques <a name=«Fonctionnalités spécifiques»></a>
+### Fonctionnalités spécifiques 
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
