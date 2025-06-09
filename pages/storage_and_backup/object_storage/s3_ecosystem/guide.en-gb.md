@@ -33,7 +33,7 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 | Tool/Software | Compatibility | Notes | Getting Started  |
 | --- | --- | --- | --- |
 | **Rclone** | Compatible | Provides a command-line interface for managing objects and buckets. More details on [Rclone](https://rclone.org/) | [Guide](/pages/storage_and_backup/object_storage/s3_rclone) |
-| **s3cmd** | Compatible |  Provides a command line interface for uploading, retrieving and managing data. More details on [sm3cmd](https://s3tools.org/s3cmd) | [Guide](/pages/storage_and_backup/object_storage/s3_s3cmd) |
+| **s3cmd** | Compatible |  Provides a command line interface for uploading, retrieving and managing data. More details on [s3cmd](https://s3tools.org/s3cmd) | [Guide](/pages/storage_and_backup/object_storage/s3_s3cmd) |
 | **Restic** | Compatible | Provides a backup tool that allows you to back up your Linux, Windows, Mac machines to storage repositories. More details on [Restic](https://restic.net/) | Coming Soon |
 | **MinIO client** | Compatible | Provides an alternative to UNIX commands and supports Amazon S3-compatible cloud storage services. More details on [MinIO client](https://min.io/docs/minio/linux/reference/minio-mc.html?ref=docs-redirect) | Coming Soon |
 
