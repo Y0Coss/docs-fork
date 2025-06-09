@@ -17,7 +17,7 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 - La [mise en œuvre d’OVHcloud](#ovhcloud-implementation), dont la migration nécessitera des adaptations à un nouvel environnement.
 - [Fonctionnalités spécifiques](#specific-functionalities), dont la migration en tant que telle est impossible à garantir car elles sont liées à l'environnement OVHcloud ou à des développements spécifiques.
 
-### Fonctionnalités principales <a name=« core-features »></a>
+### Fonctionnalités principales <a name=« Fonctionnalités principales »></a>
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
@@ -26,27 +26,27 @@ Les fonctionnalités du nom du produit sont réparties en trois catégories :
 | **Chiffrement Côté Serveur** | Chiffrement AES-256 natif au niveau du bucket, compatible avec S3 SSE| S3 (SSE-S3, SSE-C) | **Entrant** : Upload de données chiffrées ou non, gestion transparente. <br> **Sortant** : Export sans adaptation, chiffrement maintenu ou retraité par la cible |[Documentation offre Cold Archive](https://help.ovhcloud.com/csm/en-gb-documentation-storage-object-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=b29021c8e5a5edd0f078850a25104df8&spa=1) |
 | **Conservation longue durée** | Données stockées sur bandes magnétiques, durée de vie supérieure à 10 ans| S3 (objets)| **Entrant** : Import sans adaptation. <br> **Sortant** : Export d’objets via API S3 ; récupération sur tout stockage compatible. |[Documentation offre Cold Archive](https://help.ovhcloud.com/csm/en-gb-documentation-storage-object-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=b29021c8e5a5edd0f078850a25104df8&spa=1) |
 
-### Implémentation OVHcloud <a name=« ovhcloud-implementation »></a>
+### Implémentation OVHcloud <a name=« Implémentation OVHcloud »></a>
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
-| **Archivage complet par compartiments**        | L'archivage s'applique à l'ensemble du compartiment (pas d'archivage au niveau objet).                                           | S3 (compartiment)           | Entrant : nécessite le regroupement d'objets à archiver dans un bucket dédié. <br> Sortant : exporte les objets du bucket, puis les importe dans la cible (une adaptation peut être nécessaire si la cible ne prend pas en charge l’archivage au niveau du bucket). | [Cold Archive](https://www.ovhcloud.com/fr/cold-archive/) |
-| **Restauration différée (â€oeUnfreezeâ€)** | Les données doivent être « dégelées » avant d'être téléchargées (plusieurs heures de latence).                                           | S3 (objets)          | Entrant : Non applicable. <br> Sortant : l'utilisateur doit lancer une demande de restauration (« unfreeze »), puis télécharger les objets dans une fenêtre de 24 heures ; adaptation nécessaire si la cible ne dispose pas de ce mécanisme. | [Cold Archive](https://www.ovhcloud.com/fr/cold-archive/) |
-| **Immuabilité des données**            | Capacité à rendre les données immuables pour une période définie ou indéfinie (WORM).                                     | S3 (Object Lock)      | Entrant : la source doit prendre en charge l'immuabilité des données S3. <br> Sortant : exportation possible, mais la cible doit prendre en charge le verrouillage S3 ou nécessiter un ajustement manuel des stratégies d'immuabilité. | [Cold Archive](https://www.ovhcloud.com/fr/cold-archive/) |
+| **Archivage par bucket complet** | L’archivage s’applique à un bucket entier (pas d’archivage objet par objet)| S3 (bucket) | **Entrant** : Nécessite le regroupement d'objets à archiver dans un bucket dédié. <br> **Sortant** : Export des objets du bucket, puis import dans la cible (adaptation possible si la cible ne gère pas l’archivage par bucket). | [Documentation offre Cold Archive](https://help.ovhcloud.com/csm/en-gb-documentation-storage-object-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=b29021c8e5a5edd0f078850a25104df8&spa=1) |
+| **Restauration différée (“unfreeze”)** |Les données doivent être “dégelées” avant téléchargement (latence de plusieurs heures)| S3 (objets) | **Entrant** : Non applicable. <br> **Sortant** : L’utilisateur doit lancer une demande de restauration (“unfreeze”) puis télécharger les objets dans la fenêtre de disponibilité (24h) ; adaptation nécessaire si la cible n’a pas ce mécanisme. | [Documentation offre Cold Archive](https://help.ovhcloud.com/csm/en-gb-documentation-storage-object-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=b29021c8e5a5edd0f078850a25104df8&spa=1)  |
+| **Immuabilité des données**            | Possibilité de rendre les données immuables pour une durée définie ou indéfinie (WORM)| S3 (Object Lock)  | **Entrant** : Nécessite que la source supporte l’immuabilité S3. <br> **Sortant** : Export possible, mais la cible doit supporter le verrouillage S3 ou adaptation manuelle des politiques d'immuabilité. | [Documentation offre Cold Archive](https://help.ovhcloud.com/csm/en-gb-documentation-storage-object-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=b29021c8e5a5edd0f078850a25104df8&spa=1)|
 
 
 
-### Fonctionnalités spécifiques <a name=« specific-functions »></a>
+### Fonctionnalités spécifiques <a name=« Fonctionnalités spécifiques »></a>
 
 |Fonctionnalité|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
 |**Anti-DDoS**|L’anti-DDoS est un ensemble d’équipements et de moyens mis en place pour absorber les attaques par déni de service distribuées. Il comprend une analyse du trafic, l’« aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|S/O|**Migration entrante** : L’Anti-DDoS est une composante de notre infrastructure, activée par défaut. Aucune action n’est requise.<br><br>**Migration sortante** : commandez et configurez un anti-DDoS chez le nouveau fournisseur.|[Protection anti-DDoS OVHcloud](https://www.ovh.co.uk/anti-ddos/)<br><br>[Technologie anti-DDoS](https://www.ovh.co.uk/anti-ddos/anti-ddos-technology.xml)|
-| **Architecture OVHcloud 4-Datacenter** | Répartition sur 4 datacenters en France grâce à l’erasure coding 8+4.                                       | N/A    | Entrant : Non applicable. <br> Sortant : non transférable, dépend de l’architecture cible.              | [Cold Archive](https://www.ovhcloud.com/fr/cold-archive/) |
-| **Gestion via OVHcloud Manager/API** | Interface graphique et API propriétaires OVHcloud pour la gestion des archives.                                   | N/A    | Entrant : Non applicable. <br> Sortant : les scripts/API doivent être réécrits pour la cible ; une gestion manuelle peut être nécessaire. | [Cold Archive](https://www.ovhcloud.com/fr/cold-archive/) |
+| **Architecture  4-Datacenter OVHcloud** | Répartition sur 4 datacentres en France avec erasure coding 8+4 | N/A    | **Entrant** : Non applicable. <br> **Sortant** : non transférable, dépend de l’architecture cible.              | [Documentation offre Cold Archive](https://help.ovhcloud.com/csm/en-gb-documentation-storage-object-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=b29021c8e5a5edd0f078850a25104df8&spa=1) |
+| **Gestion via OVHcloud Manager/API** | Interface graphique et API propriétaires OVHcloud pour la gestion des archives. | N/A    | **Entrant** : Non applicable. <br> **Sortant** : : Scripts/API à réécrire pour la cible, gestion manuelle nécessaire. | [Documentation offre Cold Archive](https://help.ovhcloud.com/csm/en-gb-documentation-storage-object-storage?id=kb_browse_cat&kb_id=38e74da5a884a950f07829d7d5c75217&kb_category=b29021c8e5a5edd0f078850a25104df8&spa=1) |
 
-Liste des architectures ###
+### Liste des architectures ###
 
-Le stockage à froid d’OVHcloud (CDSTO) est basé sur une architecture géo-distribuée dans quatre datacenters physiquement séparés (distants de plusieurs kilomètres), utilisant la technologie de bande magnétique d’IBM. Les données sont stockées à l’aide d’un code d’effacement 8+4, ce qui garantit une résilience et une tolérance extrêmes à la perte d’un site entier.
+Le produit Cold Storage d’OVHcloud repose sur une architecture géo-distribuée sur quatre datacentres physiquement séparés (plusieurs kilomètres), utilisant la technologie de bandes magnétiques IBM. Les données sont stockées via erasure coding 8+4, garantissant une résilience extrême et la tolérance à la perte d’un site complet.
 
 ### Services partenaires
 
@@ -56,10 +56,11 @@ OVHcloud propose également un service dédié : [**OVHcloud Professional Servic
 
 ### Coût et frais
 
-Pas de frais de résiliation : il n'y a pas de frais supplémentaires par défaut pour la migration des données. La facturation s'arrête dès la résiliation du service. Cependant, une modification tarifaire intervient lors de la restauration des données, sur la base de la tarification actuelle du support de stockage vers lequel les données ont été transférées.
+Aucun de frais de résiliation : Pas de sur facturation lié à la migration des données par défaut. La facturation s’arrête dès la résiliation du service. Toutefois un changement de tarification aura lieu lors de la restauration des données. Il correspondra à la tarification en vigueur pour le support sur lequel les données ont été transférées.
 
-### Rétention des données après résiliation du contrat
+### Conservation des données après résiliation du contrat
 
-OVHcloud ne conserve aucune donnée après la résiliation du service. Les snapshots sont supprimés de manière irréversible. Une exportation manuelle doit être réalisée au préalable pour conserver les données.
-Pour récupérer ses données, le client doit les désarchiver, puis les récupérer dans le bucket où elles ont été restaurées.
-Remarque : le processus de désarchivage peut prendre jusqu'à 48 heures.
+OVHcloud ne conserve aucune donnée après l’arrêt du service. Les snapshots sont irréversiblement supprimés. Une exportation manuelle préalable est obligatoire pour préserver les données.
+Pour récupérer ses données, le client devra les désarchiver, puis les récupérer sur le bucket où elles ont été restaurées. 
+Attention le désarchivage peut prendre jusqu’à 48h.
+
