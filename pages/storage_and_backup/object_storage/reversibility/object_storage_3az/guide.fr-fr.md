@@ -48,6 +48,7 @@ Object Storage 3-AZ d’OVHcloud repose sur une architecture multi-AZ, avec dist
 **Services partenaires**
 
 Les partenaires OVHcloud sont répertoriés avec le mot-clé "Cloud Migration" dans le [répertoire dédié](https://partner.ovhcloud.com/en/directory/).
+
 OVHcloud propose également un service dédié : [OVHcloud Professional Services](https://www.ovhcloud.com/fr/professional-services/).
 
 **Coüts et frais**
