@@ -47,7 +47,7 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 | Tool/Software | Compatibility | Notes | Getting Started  |
 | --- | --- | --- | --- |
 | **ownCloud** | Compatible | Open-source file sync and share platform for collaboration. More details on [ownCloud](https://owncloud.com/product) | [Guide](/pages/storage_and_backup/object_storage/s3_owncloud) |
-| **NextCloud Files** | Compatible | Open-source file sync and share platform for collaboration. More details on [ownCloud](https://owncloud.com/product) | [Guide](/pages/storage_and_backup/object_storage/s3_nextcloud) |
+| **NextCloud Files** | Compatible | Open-source file sync and share platform for collaboration. More details on [NextCloud](https://nextcloud.com/files/) | [Guide](/pages/storage_and_backup/object_storage/s3_nextcloud) |
 
 ## Go further
  
