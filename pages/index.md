@@ -732,6 +732,7 @@
             + [Responsibility model](public_cloud/public_cloud_databases/information_03_shared_responsibility)
             + [FAQ Public Cloud databases](public_cloud/public_cloud_databases/information_04_faq)
             + [Public Cloud Databases - Capabilities and Limitations](public_cloud/public_cloud_databases/information_05_capabilities)
+            + [Comparison of Public Cloud Databases Deployment Modes - Understanding 3-AZ / 1-AZ](public_cloud/public_cloud_databases/databases_18_regions_comparison)
             + [Public Cloud Databases - Maintenance operations](public_cloud/public_cloud_databases/databases_15_maintenances)
             + [Public Cloud Databases - Automated Backups](public_cloud/public_cloud_databases/databases_05_automated_backups)
         + [General guides](public-cloud-databases-general-guides)
