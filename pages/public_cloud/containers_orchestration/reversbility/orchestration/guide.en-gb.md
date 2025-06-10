@@ -1,84 +1,78 @@
-# Reversibility Policy for the â€œManaged Orchestrationâ€ Product
+---
+title: Orchestration product reversibility policy
+updated: 2025-06-10
+---
 
 ## Objective
 
-This document outlines the reversibility policy for the product line (Managed Orchestration).
+This document describes the reversibility policy for the Managed Orchestration range corresponding to the OVHcloud service offers: Kubernetes and Rancher.
 
-This policy aims to implement general reversibility principles and our compliance with the SWIPO IaaS Code of Conduct for cloud providers.
+This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
+## Feature List
 
+The characteristics of the  product are divided into three categories:
 
-## List of Features
-
-The features of the â€œProductâ€ are divided into three categories:
-
-- **Core features** for which we guarantee migration capability.
-- **OVHcloud implementations** that require adaptation to a new environment for migration.
-- **Specific features** that cannot be guaranteed for migration as they are tied to the OVHcloud environment or involve custom developments.
+- **Main features** for which we guarantee migration capacity.
+- **OVHcloud implementations ** that require adaptation to a new migration environment.
+- **Specific features** that cannot be guaranteed for migration as they are related to the OVHcloud environment or involve custom developments.
 
 
 
-## Core Features
+## Main features
 
-| Feature                  | Description                                  | Formats       | Migration Model                                                                                                                                           | Documentation Available |
-|--------------------------|----------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| **Orchestration via Kubernetes** | Cluster management via Kubernetes API (kubectl, Helm, CI/CD, etc.), CNCF-compliant.                            | YAML, JSON, OCI               | **Incoming**: Deploy manifests, Helm charts, and OCI images via standard Kubernetes API.<br>**Outgoing**: Export manifests, Helm charts, images; reusable on any compatible Kubernetes cluster. | [Creating a cluster](https://help.ovhcloud.com/csm/fr-public-cloud-kubernetes-create-cluster?id=kb_article_view&sysparm_article=KB0054955)|
-| **Orchestration via Rancher**   | Container orchestration simplifying deployment, management, and scaling of containerized apps.                | YAML, JSON, OCI               | **Incoming**: Import of manifests, Helm charts, OCI images, or cluster via API and UI.<br>**Outgoing**: Export manifests, charts, images via API; reusable on any compatible cluster.            | [Getting Started with Managed Rancher Service](https://help.ovhcloud.com/csm/fr-public-cloud-managed-rancher-service-getting-started?id=kb_article_view&sysparm_article=KB0061903)
-| **Manifest Export/Import**      | Deployment, export, and migration of resources via standard Kubernetes YAML/JSON files.                        | YAML, JSON                    | **Incoming**: Direct import of existing manifests.<br>**Outgoing**: Export using `kubectl get -o yaml/json`; usable on any compatible Kubernetes cluster. |[Deploying an application](https://help.ovhcloud.com/csm/fr-public-cloud-kubernetes-deploy-application?id=kb_article_view&sysparm_article=KB0054991)|
-| **IAM**                         | Identity and access management for cluster resources via Rancher using external identity providers.           | Active Directory, LDAP, OpenLDAP, Azure AD | **Incoming**: Create or import roles and access policies via API or UI.<br>**Outgoing**: Export configurations via Rancher API or UI.                              | [Configuring Authentication](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/authentication-permissions-and-global-configuration/authentication-config)|
+| Feature| Description | Formats | Migration model | Documentation available |
+| --- | --- | --- | --- | --- |
+| **Orchestration via Kubernetes** | Cluster management via Kubernetes API (kubectl, Helm, CI/CD, etc.), CNCF compliant| YAML, JSON, OCI | **Inbound**: Deploy manifests, Helm charts, OCI images via the standard Kubernetes API.<br>**Outbound**: Export manifests, Helm charts, images via the standard API, reusable on any compatible Kubernetes cluster. | [Creating a cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster)|
+| **Orchestration via Rancher** | Container orchestration simplifies the deployment, management, and scaling of containerised applications. | YAML, JSON, OCI | **Inbound** : Import manifests, Helm charts, OCI images or cluster via API and user interface.<br>**Outbound** : Export manifests, Helm charts, images via API, reusable on any compatible Kubernetes cluster. | [Getting Started with Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/getting-started)
+| **Export/Import manifests** | Resource deployment, export and migration via standard Kubernetes YAML/JSON files | YAML, JSON | **Inbound** : Import existing manifests directly.<br>**Outbound** : Export manifests via kubectl get -o yaml/json, which can be used on any compatible Kubernetes cluster. |[Deploying an application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-an-application)|
+| **IAM** | Rancher management of identity and access to cluster resources via an external identity provider. | Active Directory, LDAP, OpenLDAP, Azure AD... | **Inbound**: Import or create roles and access policies via API or user interface..<br>**Outbound**: Export configurations via API or user interface.| [Configuring authentication](https://ranchermanager.docs.rancher.com/how-to/new-user-guides/permissions-authentication-and-global-configuration/authentication-config)|
 
-## OVHcloud Implementation
+## OVHcloud implementation
+| Feature| Description | Formats | Migration model | Documentation available |
+| --- | --- | --- | --- | --- |
+| **Link between Identity Provider and cluster** | Connection between identity provider and cluster | JSON | **Incoming** : Configuration adaptation in OVH format before import via CLI or IHM.<br>**Outgoing** : Export configurations in OVH format, adaptation to the target environment required. | [Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-oidc-provider-config) |
+| **Control Plane Configuration**| Ability to change certain settings to customize the cluster. | N/A | **Incoming** : : Configuration of certain Kubernetes Control Plane settings via an OVH-specific API.<br>**Outgoing** : Not directly exportable, rewriting settings in the target environment.| [Creating a cluster](    /pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) |
+| **Private network and vRack** | The vRack, or virtual rack, is a private VLAN technology that enables the connection between OVHcloud services available on the Managed Kubernetes service dataplane | N/A | **Inbound**: Managed Kubernetes services are included by default in vRack.<br>**Outbound**: Take note of the network architecture and reproduce it with VLANs.| [ Using vRack Private Network ](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-vrack) |
+| **Logging** | Action tracking in kubernetes.Rancher logs are not accessible to the customer.| N/A | **Incoming**: N/A<br>**Outgoing**: Log forwarding can be configured with the need to integrate with the OVHcloud Log Data Platform service. | [Managed Kubernetes Service Audit Logs Forwarding](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform) |
+| **Add-ons and specific operators** | Some operators/add-ons deployed via the OVHcloud Marketplace or specific to OVHcloud | YAML, JSON, Helm | **Inbound** : Installation possible if compatible with.<br>**Outbound**: Adaptation or replacement by equivalents on the target (limitation to Standard Rancher for Rancher). |
+| **Node pool** | Ability to create a node pool.| N/A | **Inbound**:Configure the node pool via the OVH interface.<br>**Outbound**: Reuse the node pool format in an equivalent environment |[Managing nodes and node pools](/pages/public_cloud/containers_orchestration/managed_kubernetes/managing-nodes) |
 
-| Feature         | Description                                                                                                       | Available Formats | Migration Model                                                                                                                          | Documentation Available |
-|------------------|-------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| **Identity Provider Binding**        | Connection between identity provider and the cluster                                                        | JSON                | **Incoming**: Adjust configuration files to OVH format before import via CLI or UI.<br>**Outgoing**: Export in OVH format, then adapt to the target environment.    | [Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster](https://help.ovhcloud.com/csm/en-public-cloud-kubernetes-configure-oidc-provider?id=kb_article_view&sysparm_article=KB0049671)|
-| **Control Plane Configuration**      | Kubernetes control plane configuration via OVH-specific API                                                 | N/A                 | **Incoming**: Some control plane parameters configurable through OVH API.<br>**Outgoing**: Not directly exportable; must be redefined manually in the target setup. | [Creating a cluster](https://help.ovhcloud.com/csm/fr-public-cloud-kubernetes-create-cluster?id=kb_article_view&sysparm_article=KB0054955)|
-| **vRack Integration**                | vRack provides private VLAN networking for OVHcloud services (only on Kubernetes dataplane, not controlplane) | N/A               | **Incoming**: Managed Kubernetes includes vRack by default.<br>**Outgoing**: Document network architecture and replicate with VLAN in the target environment.        | [ Using vRack Private Network ](https://help.ovhcloud.com/csm/fr-public-cloud-kubernetes-using-vrack?id=kb_article_view&sysparm_article=KB0055392)|
-| **Logging**                          | Audit and action traceability within Kubernetes. Rancher logs not accessible to the client.                | N/A                 | **Incoming**: N/A<br>**Outgoing**: Log forwarding requires integration with external LDP-compliant tools.                                                          |[Managed Kubernetes Service Audit Logs Forwarding](https://help.ovhcloud.com/csm/en-public-cloud-kubernetes-forwarding-audit-logs?id=kb_article_view&sysparm_article=KB0062285)|
-| **Custom Add-ons & Operators**       | Some operators/add-ons are deployed via OVHcloud Marketplace or specific to OVHcloud                        | YAML, JSON, Helm    | **Incoming**: Install if compatible with OVHcloud Kubernetes.<br>**Outgoing**: May require adaptation or replacement by standard equivalents (esp. in Rancher).       |[OVH Marketplace](https://marketplace.ovhcloud.com/?at_medium=sl&at_platform=google&at_campaign=AdWords&at_creation=noi_ovhmarketplace_fr_se_marketplace_marketplace_defensive_acquisition_mofu()&at_variant=684417988319&at_network=search&at_term=ovh%20marketplace&gad_source=1&gad_campaignid=20716048696&gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjdW-xorTLoCGLJT6ZIcLU6ayHPc80rpGxAAqcLnFeFggWUd2w1ycPgaAk-IEALw_wcB)|
-| **Node Pools**                       | Support for creating and managing node pools                                                                | N/A                 | **Incoming**: Node pools are configured via OVH interface.<br>**Outgoing**: Pool format can be reused in equivalent target environments.                            |[Managing nodes and node pools](https://help.ovhcloud.com/csm/en-public-cloud-kubernetes-managing-nodes?id=kb_article_view&sysparm_article=KB0049898)|
 
-
-## Specific Features
-
-| Function               | Description                                                                           | Formats Available | Migration Model                                                                                   | Documentation Available |
-|------------------------|---------------------------------------------------------------------------------------|--------------------|----------------------------------------------------------------------------------------------------|--------------------------|
-| **OVHcloud Manager/API**          | OVHcloud-specific graphical interface and API for managing clusters and resources                                 | N/A    | **Incoming**: N/A<br>**Outgoing**: Scripts and automation must be rewritten for the target provider; manual management may be required.                            | [OVHcloud API specification ](https://eu.api.ovh.com/console/?section=%2FallDom&branch=v1)|
-| **Managed Updates (MCO / MCS)**   | Control plane updates managed by OVHcloud                                                                         | N/A    | **Incoming**: N/A<br>**Outgoing**: Not portable; handled differently depending on the target platformâ€™s update strategy.                                            | [Partage de responsabilitÃ© sur le service OVHcloud managed Kubernetes](https://help.ovhcloud.com/csm/fr-public-cloud-kubernetes-responsibility-model?id=kb_article_view&sysparm_article=KB0058750)|
-| **Rancher OVHcloud Edition**      | Limited version of Rancher available within OVHcloud                                                              | N/A    | **Incoming**: Configure Rancher features if available.<br>**Outgoing**: Rewriting necessary for use with full-featured Rancher or alternate management tools.       |[Managed Rancher Service](https://www.ovhcloud.com/fr/public-cloud/managed-rancher-service/)|
-| **Infrastructure as Code** | Automated deployment via OVHcloud-specific Terraform modules                           | N/A                | **Inbound migration:** Scripts need to be adapted for other providers.  <br> **Outbound migration:** Configuration rewrite required for Terraform.                             | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs)                      |
-| **Anti-DDoS** | Anti-DDoS is a set of tools and mechanisms designed to absorb denial-of-service attacks. It includes traffic analysis, "scrubbing" through a specialized network, and mitigation handled by the VAC technology developed by OVHcloud.                                                  | N/A                | **Inbound migration:** The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required.  <br> **Outbound migration:** Order and configure an anti-DDoS service with the new provider.             | [Anti-DDoS Protection](https://www.ovh.com/fr/anti-ddos/)<br>[Anti-DDoS technologie](https://www.ovh.com/fr/anti-ddos/technologie-anti-ddos.xml)                        |
+## Specific features
+| Feature| Description | Formats | Migration model | Documentation available |
+| --- | --- | --- | --- | --- |
+| **OVHcloud Manager/API**| Managed via OVHcloud Manager/API| N/A | **Inbound**: N/A<br>**Outbound**: Scripts and APIs to be rewritten for the target environment, manual management required. | [OVHcloud API Specification ](https://eu.api.ovh.com/console/?section=%2FallDom&branch=v1)|
+| **Rancher OVHcloud Edition** | Rancher Limited Use Offer in OVH. | N/A | **Inbound** :: Feature configuration if available.<br>**Outbound** : Scripts/API to rewrite for the target, manual management required.| [Managed Rancher Service](https://www.ovhcloud.com/en-gb/public-cloud/managed-rancher-service/) |
+| **Infrastructure as Code** | Automated deployment via OVHcloud-specific Terraform modules for managed services, or via Terraform Kubernetes or Rancher modules for open-source services. | N/A | **Inbound:** Scripts to be adapted for other providers <br> **Outbound:** Terraform configurations need to be rewritten. | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs) |
+| **Anti-DDoS** | Anti-DDoS is a set of equipment and means put in place to absorb denial of service attacks. It includes traffic analysis, “vacuuming” to a specialized network, and mitigation, powered by VAC technology developed by OVHcloud. | N/A | **Incoming:** The anti-DDoS system is a component of our infrastructure, enabled by default. No action is required. <br> **Outgoing:** Order and configure an anti-DDoS solution with the new provider.| [Anti-DDoS Protection](https://www.ovh.com/en-gb/anti-ddos/)<br>[Anti-DDoS Technology](https://www.ovh.com/en-gb/anti-ddos/anti-ddos-technology.xml) |
 
 
 
-## List of Architectures
+## List of architectures
 
-OVHcloud Managed Orchestration is based on managed, multi-node Kubernetes clusters, offering high availability, auto-scaling, centralized management, and private network integration (vRack). It includes integration with major monitoring, logging, and CI/CD tools. The supported architectures allow for multi-cloud migration and hybrid deployment.
+OVHcloud Managed Orchestration is based on managed, multi-node Kubernetes clusters with high availability, auto-scaling, centralized management, and private network integration (vRack). Integration of the main monitoring, logging and CI/CD tools. Architectures support multi-cloud migration and hybrid deployment.
 
-The managed orchestration service runs in a single region (from several available regions offered by OVHcloud). It is possible to manage multiple clusters across different regions (provided by OVHcloud or other providers) using the Rancher service running in a single region.
-
+The managed orchestration service runs in a single region from among several regions, available from OVH. You can manage multiple clusters in multiple regions (provided by OVH or other providers) via the Rancher service running in a single region.
 
 
 ## Partner Services
 
-OVHcloud partners are listed under the keyword **"Cloud Migration"** in the dedicated partner directory.
+OVHcloud partners are listed under the keyword **“Migrate to the cloud”** in the Dedicated Partner Directory.
 
-OVHcloud also offers a dedicated service: [**OVHcloud Professional Services**](https://www.ovhcloud.com/fr/professional-services/).
+OVHcloud also offers a dedicated service: [**OVHcloud Professional Services**](https://www.ovhcloud.com/en-gb/professional-services/).
 
 
 
-## Cost and Fees
+## Cost and fees
 
-Billing follows a **pay-as-you-go** model. Charges stop when the client no longer consumes resources.  
-There are **no termination fees**: deleting the service immediately halts billing.  
-Any associated **OVHcloud credits are non-transferable**.
+Pay as you go billing. Billing stops when the customer no longer consumes resources. No specific cancelation fees apply: deleting the service will stop the billing immediately. Any associated OVHcloud credits cannot be transferred.
 
-After termination, OVHcloud releases the associated resources, which means data cannot be recovered.  
-Clients are responsible for exporting their configurations, manifests, and container images **prior to termination**.
+After the service has been canceled, OVH frees up its resources, making it impossible to retrieve the data. It is the customer’s responsibility to export their configurations, manifests and images prior to termination, due to the release of resources.
 
-> **Note:** When using Rancher, a minimal fee will apply even if no clusters are being orchestrated.
+If Rancher is used, the billing will include a minimum amount, even if it does not orchestrate any clusters.
 
-## Data Retention After Contract Termination
 
-Once the service is deleted or the contract is terminated, OVHcloud releases the cluster resources.  
-It is therefore **imperative to export all necessary data and configurations beforehand**, as no restoration is possible afterwards.
+## Data retention after termination of contract
+
+After deleting the service or terminating the contract, OVHcloud frees the cluster resources. It is therefore imperative to export all necessary data and configurations before deletion, as no post-removal restore is possible.
