@@ -11,7 +11,7 @@ Cette politique vise à mettre en œuvre les principes généraux de réversibil
 
 ## Liste des fonctionnalités
 
-Les caractéristiques de la â€oeProductâ€  sont réparties en trois catégories :
+Les caractéristiques du produit sont réparties en trois catégories :
 
 - **Fonctionnalités principales** pour lesquelles nous garantissons la capacité de migration.
 - **Implémentations OVHcloud** qui nécessitent une adaptation à un nouvel environnement de migration.
