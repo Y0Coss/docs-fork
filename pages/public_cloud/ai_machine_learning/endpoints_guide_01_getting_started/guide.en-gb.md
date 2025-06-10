@@ -48,6 +48,11 @@ Once you have filled in the required information, click the `Create`{.action} bu
 
 *Note that this access key can be [revoked](#revoke-your-api-access-key) at any time.*
 
+> [!primary]
+>
+> **Only project administrators can create keys.**
+> 
+
 **3\. Store the created API access key**
 
 Once created, the key will be displayed in the API keys table. You will see your new access key in this table, with its information (name, description, expiry date). 
