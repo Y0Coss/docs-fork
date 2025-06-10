@@ -1,12 +1,12 @@
 ---
-title: Compatibilité avec les applications tierces
-excerpt: Ce guide fournit une liste d'applications tierces testées et certifiées compatibles avec OVHcloud Object Storage.
+title: Object Storage - Compatibilité avec les applications tierces
+excerpt: "Ce guide fournit une liste d'applications tierces testées et certifiées compatibles avec OVHcloud Object Storage"
 updated: 2025-06-10
 ---
- 
+
 ## Objectif
-  
-Chez OVHcloud, nous comprenons l'importance de la compatibilité et de l'interopérabilité avec les outils et logiciels tiers. 
+
+Chez OVHcloud, nous comprenons l'importance de la compatibilité et de l'interopérabilité avec les outils et logiciels tiers.
 Notre service **Object Storage compatible S3<sup>*</sup>** est conçu pour être flexible et adaptable à divers cas d'utilisation et flux de travail. Ce guide vise à fournir une vue d'ensemble de la compatibilité de notre service de stockage d'objets avec des outils et logiciels tiers populaires, vous aidant ainsi à intégrer notre service de manière transparente dans votre infrastructure existante.
 
 ## Tableau de compatibilité
@@ -30,8 +30,8 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | --- | --- | --- | --- |
 | **Veeam Kasten** | Compatible | N/A | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
 | **Cloud Casa** | Compatible | Officiellement pris en charge, détails sur la page [produit Cloud Casa](https://cloudcasa.io/partners/ovhcloud-kubernetes-backup-and-dr/){.external} | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa) |
-| **Trilio** | Compatible | Officiellement pris en charge, détails sur la page [d'assistance de Trilio](https://docs.trilio.io/kubernetes/appendix/configure-ovh-object-storage-as-a-target){.external} | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio)  
-|**Velereo** | Compatible | N/A | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa) 
+| **Trilio** | Compatible | Officiellement pris en charge, détails sur la page [d'assistance de Trilio](https://docs.trilio.io/kubernetes/appendix/configure-ovh-object-storage-as-a-target){.external} | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio) |
+|**Velereo** | Compatible | N/A | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa) |
 
 ### Intégrations d'interface de ligne de commande
 
