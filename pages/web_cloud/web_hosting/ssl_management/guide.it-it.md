@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Nuova gestione dei certificati SSL"
 excerpt: "Scopri come gestire un certificato SSL su un hosting Web OVHcloud grazie alla nostra nuova interfaccia di gestione"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 <style>
@@ -26,15 +26,15 @@ OVHcloud propone diversi tipi di certificati SSL sulle nostre soluzioni di [host
 
 Esistono tre tipi di certificati SSL:
 
-- Domain Validation (DV)
-- Organization validation (OV)
-- Extended Validation (EV)
+- Domain Validation (DV).
+- Organization validation (OV).
+- Extended Validation (EV).
 
 I livelli di crittografia SSL sono identici tra questi tre tipi di certificati.
 
-La principale differenza risiede nel livello di controlli che saranno effettuati dall'Autorità di Certificazione (CA) che rilascia il certificato SSL e ne attesta l'autenticità.
+La principale differenza risiede nel livello di controlli che saranno effettuati dall'Autorità di Certificazione (AC) che rilascia il certificato SSL e ne attesta l'autenticità.
 
-Per utilizzare il protocollo HTTPS è indispensabile disporre di un certificato SSL.
+Per rendere il sito accessibile in HTTPS è necessario disporre di un certificato SSL.
 
 **Questa quiga ti mostra come gestire un certificato SSL su un hosting Web OVHcloud grazie alla nostra nuova interfaccia di gestione.**
 
@@ -46,16 +46,16 @@ Per utilizzare il protocollo HTTPS è indispensabile disporre di un certificato 
 
 > [!warning]
 >
-> **Prima di proseguire**, verifica che **i domini e/o sottodomini interessati dal tuo futuro certificato SSL:
+> **Prima di proseguire**, verifica che ogni **dominio e/o sottodominio** interessato dal tuo futuro certificato SSL:
 >
-> - punta(nt) verso l’indirizzo IP del tuo hosting Web;
-> - è (sono) dichiarato/i come multisito sul tuo hosting Web.
+> - Punta verso l’indirizzo IP del tuo hosting Web.
+> - Dichiarato in multisito sul tuo hosting Web.
 >
-> Per maggiori informazioni, consulta le nostre guide:
+> In caso di dubbi, consulta queste guide:
 >
-> - [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite);
-> - [Lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
-> - [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+> - [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+> - [Lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+> - [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ## Procedura
 
@@ -76,7 +76,7 @@ Per utilizzare il protocollo HTTPS è indispensabile disporre di un certificato 
 Per accedere alla gestione dei certificati SSL dall’hosting Web, segui questi step:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
@@ -94,7 +94,7 @@ OVHcloud propone 4 soluzioni per attivare o installare un certificato SSL su un 
 Il certificato SSL gratuito Let's Encrypt (DV) può includere fino a **99** domini e sottodomini dichiarati su un hosting Web.
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
@@ -112,7 +112,7 @@ Il certificato SSL gratuito Let's Encrypt (DV) può includere fino a **99** domi
 Il certificato SSL a pagamento Sectigo (DV) è valido per un solo dominio e il suo sottodominio in "www" (ad esempio: `domain.tld` e `wwww.domain.tld`) o **solo** un sottodominio (ad esempio: `sub.domain.tld`).
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
@@ -138,23 +138,23 @@ Il certificato SSL a pagamento Sectigo (EV) è valido per un solo dominio e il s
 > Il certificato SSL a pagamento Sectigo (EV) prevede condizioni di ammissibilità specifiche:
 >
 > - Ordinare o disporre di un [dominio](/links/web/domains) e disporre dei diritti esclusivi sull'utilizzo. Il dominio non deve essere già associato a un certificato SSL.
-> - essere un'organizzazione (impresa, agenzia governativa, ...) registrata presso un registro ufficiale.
+> - essere un'organizzazione (impresa, agenzia governativa, etc.) registrata presso un registro ufficiale.
 > - Disporre dell'autorizzazione della tua organizzazione per ordinare un certificato SSL Sectigo EV.
 > - Essere in grado di giustificare con esattezza le informazioni e le coordinate relative alla tua organizzazione.
 >
 > Per verificare se hai diritto alla sottoscrizione di un certificato SSL Sectigo EV, clicca su [questo link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
 6. Clicca sul pulsante `Ordina un certificato SSL Sectigo`{.action}.
 7. Nella nuova finestra, seleziona il dominio o sottodominio con il menu a tendina e clicca su `Conferma`{.action} per essere reindirizzato al buono d’ordine del tuo certificato SSL Sectigo EV.
 
-Seleziona il **Certificato SSL Sectigo EV** una volta arrivato nel tunnel d'ordine, poi prosegui con l'ordine.
+Nel tunnel dell'ordine, seleziona il **Certificato SSL Sectigo EV** e continua l'ordine.
 
-Inserisci con esattezza le informazioni richieste da **Sectigo** prima di ricevere il certificato SSL Sectigo EV. 
+Inserisci le informazioni richieste da **Sectigo** nella fase 2 dell'ordine.
 
 ![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
@@ -177,7 +177,7 @@ Continua l'ordine fino al pagamento per confermare la richiesta di creazione del
 Questa soluzione ti permette di installare il tuo certificato SSL per il tuo dominio, se nessuna delle 3 soluzioni precedenti corrisponde alle tue necessità e desideri utilizzare un certificato SSL di cui disponi già.
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
@@ -194,14 +194,14 @@ Questa soluzione ti permette di installare il tuo certificato SSL per il tuo dom
 
 > [!warning]
 >
-> Per rimuovere un certificato SSL da un hosting Web e **prima di continuare, assicurati che la rimozione del certificato non abbia impatto sulla raggiungibilità dei tuoi siti Web. In questo caso, gli utenti visualizzeranno un errore di sicurezza quando tenteranno di accedere al sito Web in "HTTPS".
+> **Prima di continuare**, assicurati che la rimozione del certificato SSL non abbia impatto sulla raggiungibilità dei tuoi siti Web. In questo caso, gli utenti visualizzeranno un errore di sicurezza quando tenteranno di accedere al sito Web in HTTPS.
 
-Queste operazioni sono relative ai parametri dei tuoi siti Web, per cui OVH non fornisce assistenza. In caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore. OVH non sarà in grado di fornirti assistenza.
+Queste operazioni sono relative ai parametri dei tuoi siti Web, per cui OVHcloud non fornisce assistenza. In caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore. OVHcloud non sarà in grado di fornirti assistenza.
 
 Per rimuovere il certificato SSL installato sull’hosting Web, esegui queste operazioni:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
@@ -216,11 +216,11 @@ L’operazione diventerà effettiva entro poche ore.
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Hosting Web - Passare il proprio sito Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+[Hosting Web - Passare il proprio sito Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-[Errori comuni associati alla protezione del sito Web con il certificato SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
+[Errori comuni associati alla protezione del sito Web con il certificato SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure)
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  

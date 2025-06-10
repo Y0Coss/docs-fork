@@ -38,7 +38,7 @@ Para los alojamientos compartidos de OVHcloud, la autoridad de certificación qu
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 - Contratar o disponer de un [hosting OVHcloud](/links/web/hosting) en el que no haya ningún certificado SSL instalado.
 - Contratar o disponer de un [nombre de dominio](/links/web/domains) y disponer de los derechos exclusivos sobre su uso. El nombre de dominio no debe estar ya asociado a un certificado SSL.
-- Ser una organización (empresa, agencia gubernamental...) registrada en un registro oficial.
+- Ser una organización (empresa, agencia gubernamental, etc.) registrada en un registro oficial.
 - La autorización de su organización para contratar un certificado SSL Sectigo EV.
 - Estar en condiciones de justificar con exactitud la información y los datos relativos a su organización.
 
@@ -90,7 +90,7 @@ Si necesita activar un certificado SSL para varios dominios o subdominios declar
 Para contratar el certificado SSL Sectigo EV, lleve a cabo las siguientes acciones:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Haga clic en la pestaña `Web Cloud`{.action}.
+2. Acceda a la sección `Web Cloud`{.action} de la página.
 3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. A continuación, siga en la pestaña `Información general`{.action}.

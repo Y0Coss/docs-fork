@@ -142,7 +142,7 @@ Para isso, efetue **por ordem** as seguintes ações:
 5. Selecione o alojamento web em causa.
 6. Na página que vai aparecer, permaneça no separador `Informações gerais`{.action}.
 7. Aceda à caixa chamada `Configuração`.
-8. À direita da menção `Certificado SSL`, clique no botão `..`{.action} e, a seguir, em `Gerar / atualizar certificado SSL`{.action}.
+8. À direita da menção `Certificado SSL`, clique no botão `...`{.action} e, a seguir, em `Gerar / atualizar certificado SSL`{.action}.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/regenerate-ssl-certificate.png){.thumbnail}
 

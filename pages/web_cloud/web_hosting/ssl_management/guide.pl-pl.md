@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - nowe zarządzanie certyfikatami SSL"
 excerpt: "Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud z poziomu naszego nowego interfejsu zarządzania"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 <style>
@@ -26,36 +26,36 @@ OVHcloud oferuje kilka rodzajów certyfikatów SSL na naszych rozwiązaniach hos
 
 Istnieją trzy rodzaje certyfikatów SSL:
 
-- Domain Validation (DV)
-- Organization validation (OV)
-- Extended Validation (EV)
+- Domain Validation (DV).
+- Organization validation (OV).
+- Extended Validation (EV).
 
 Poziomy szyfrowania SSL są identyczne dla tych trzech typów certyfikatów.
 
 Główna różnica polega na tym, że poziom weryfikacji będzie przeprowadzany przez Urząd Certyfikacji (CA), który wydaje certyfikat SSL i poświadcza jego autentyczność.
 
-Posiadanie certyfikatu SSL dla strony www jest niezbędne, aby używać go w HTTPS.
+Musisz posiadać certyfikat SSL, aby móc korzystać z protokołu HTTPS na swojej stronie WWW.
 
 **Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud z poziomu naszego nowego interfejsu zarządzania.**
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
-- Posiadanie [hostingu OVHcloud](/links/web/hosting)
-- Zarejestrowanie co najmniej jednej [domeny](/links/web/domains)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Posiadanie [hostingu OVHcloud](/links/web/hosting).
+- Zarejestrowanie co najmniej jednej [domeny](/links/web/domains).
 
 > [!warning]
 >
-> **Zanim przejdziesz dalej**, sprawdź, czy **nazwa(y) domeny i/lub subdomeny(y)**, której(e) będzie dotyczył(e) Twój przyszły certyfikat SSL:
+> **Zanim przejdziesz do kolejnego kroku** sprawdź, czy każda **domena i/lub subdomena** objęte będą Twoim przyszłym certyfikatem SSL:
 >
-> - przekierowuje(a) na adres IP Twojego hostingu;
-> - jest (jest) zadeklarowany(e) w opcji MultiSite na Twoim hostingu.
+> - Wskazuje na adres IP Twojego hostingu.
+> - Jest zadeklarowana jako MultiSite na Twoim hostingu.
 >
-> Sprawdź przewodniki:
+> W przypadku wątpliwości sprawdź przewodniki:
 >
-> - [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite) ;
-> - [Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
-> - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
+> - [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+> - [Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+> - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 
 ## W praktyce
 
@@ -138,7 +138,7 @@ Płatny certyfikat SSL Sectigo (EV) jest ważny dla jednej domeny i jej subdomen
 > Płatny certyfikat SSL Sectigo (EV) podlega dodatkowym warunkom:
 >
 > - Zamów [domenę](/links/web/domains) i uzyskaj wyłączne prawa do korzystania z tej domeny. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
-> - Być organizacją (firma, agencja rządowa, ...) zarejestrowaną w oficjalnym rejestrze.
+> - Być organizacją (firma, agencja rządowa, itp.) zarejestrowaną w oficjalnym rejestrze.
 > - Posiadanie upoważnienia organizacji do zamawiania certyfikatu SSL Sectigo EV.
 > - Być w stanie dokładnie uzasadnić informacje i dane kontaktowe dotyczące organizacji.
 >
@@ -152,9 +152,9 @@ Płatny certyfikat SSL Sectigo (EV) jest ważny dla jednej domeny i jej subdomen
 6. Kliknij przycisk `Zamów certyfikat SSL Sectigo`{.action}.
 7. W nowym oknie, które się otworzy, wybierz w rozwijanym menu odpowiednią domenę lub subdomenę, następnie kliknij `Zatwierdź`{.action}, aby uzyskać dostęp do zamówienia certyfikatu SSL Sectigo EV.
 
-Wybierz **Certyfikat SSL Sectigo EV**, po dotarciu do tunelu poleceń, następnie kontynuuj zamówienie.
+W tunelu zamówienia wybierz certyfikat SSL **Sectigo EV** i przejdź do realizacji zamówienia.
 
-Wpisz poprawnie informacje wymagane przez **Sectigo**, zanim otrzymasz certyfikat SSL Sectigo EV. 
+Wpisz poprawnie informacje wymagane przez **Sectigo** w kroku 2 zamówienia.
 
 ![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
@@ -194,7 +194,7 @@ Dzięki temu rozwiązaniu możesz zainstalować własny certyfikat SSL dla swoje
 
 > [!warning]
 >
-> Jeśli chcesz usunąć certyfikat SSL z Twojego hostingu i **przed kontynuacją**, upewnij się, że usunięcie certyfikatu SSL nie zakłóci dostępności Twoich stron WWW. W przeciwnym razie użytkownicy napotkają błąd bezpieczeństwa podczas próby uzyskania dostępu do Twojej strony WWW przy użyciu protokołu "HTTPS".
+> **Na wstępie sprawdź** czy usunięcie certyfikatu SSL nie spowoduje niedostępności Twoich stron WWW. W takim przypadku podczas próby dostępu do Twojej strony WWW za pomocą HTTPS na użytkownikach wyświetli się błąd bezpieczeństwa.
 
 Ponieważ weryfikacja ta jest ściśle związana z ustawieniami Twojej strony WWW, w przypadku trudności zalecamy skorzystanie z pomocy webmastera. Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
 
@@ -216,9 +216,9 @@ Certyfikat zostanie usunięty maksymalnie w ciągu kilku godzin.
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Hosting WWW - Ustaw HTTPS na stronie WWW](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+[Hosting WWW - Ustaw HTTPS na stronie WWW](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-[Typowe błędy związane z zabezpieczaniem strony www za pomocą certyfikatu SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
+[Typowe błędy związane z zabezpieczaniem strony www za pomocą certyfikatu SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  

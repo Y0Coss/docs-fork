@@ -73,7 +73,7 @@ Esta comprobación es inherente a la configuración de su sitio web. Si necesita
 Para eliminar el certificado SSL instalado en el alojamiento web, lleve a cabo los siguientes pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Haga clic en la pestaña `Web Cloud`{.action}.
+2. Acceda a la sección `Web Cloud`{.action} de la página.
 3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. A continuación, siga en la pestaña `Información general`{.action}.

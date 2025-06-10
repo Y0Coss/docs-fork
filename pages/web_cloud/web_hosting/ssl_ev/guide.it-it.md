@@ -38,7 +38,7 @@ Per gli hosting condivisi OVHcloud, l'autorità di certificazione che rilascia i
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Ordinare o disporre di un [hosting condiviso OVHcloud](/links/web/hosting) sul quale non è già installato alcun certificato SSL.
 - Ordinare o disporre di un [dominio](/links/web/domains) e disporre dei diritti esclusivi sull'utilizzo. Il dominio non deve essere già associato a un certificato SSL.
-- essere un'organizzazione (impresa, agenzia governativa, ...) registrata presso un registro ufficiale.
+- essere un'organizzazione (impresa, agenzia governativa, ecc.) registrata presso un registro ufficiale.
 - Disporre dell'autorizzazione della tua organizzazione per ordinare un certificato SSL Sectigo EV.
 - Essere in grado di giustificare con esattezza le informazioni e le coordinate relative alla tua organizzazione.
 
@@ -90,7 +90,7 @@ Per attivare un certificato SSL per più domini/sottodomini dichiarati sull’ho
 Per ordinare il certificato SSL Sectigo EV, esegui queste operazioni:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-2. Clicca sulla scheda `Web Cloud`{.action}.
+2. Accedi alla sezione `Web Cloud`{.action}.
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
@@ -223,7 +223,7 @@ A questo punto non ti resterà che [inserire il tuo sito in HTTPS](/pages/web_cl
 
 [Attiva il tuo sito in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

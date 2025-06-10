@@ -41,7 +41,7 @@ Por lo tanto, antes de instalar el certificado SSL Let's Encrypt, deberá prepar
 Para ello, lleve a cabo las siguientes acciones:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Haga clic en la pestaña `Web Cloud`{.action}.
+2. Acceda a la sección `Web Cloud`{.action} de la página.
 3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. En la nueva página, haga clic en la pestaña `Multisitio`{.action}.
@@ -95,7 +95,7 @@ Antes de realizar esta configuración, asegúrese de haber completado correctame
 Para activar su certificado SSL Let's Encrypt, realice las siguientes acciones:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Haga clic en la pestaña `Web Cloud`{.action}.
+2. Acceda a la sección `Web Cloud`{.action} de la página.
 3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. A continuación, siga en la pestaña `Información general`{.action}.
@@ -115,7 +115,7 @@ La instalación del certificado SSL Let's Encrypt puede tardar varias horas.
 Para comprobar que la instalación se ha completado, lleve a cabo los siguientes pasos:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-2. Haga clic en la pestaña `Web Cloud`{.action}.
+2. Acceda a la sección `Web Cloud`{.action} de la página.
 3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. A continuación, siga en la pestaña `Información general`{.action}.
@@ -137,7 +137,7 @@ Para ello, lleve a cabo **en orden** las siguientes acciones:
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
 2. Preatribuya el certificado SSL Let's Encrypt a sus nuevos dominios y subdominios, tal y como se indica en la [primera parte](#ssl-multisite) de esta guía.
-3. Haga clic en la pestaña `Web Cloud`{.action}.
+3. Acceda a la sección `Web Cloud`{.action} de la página.
 4. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 5. Seleccione el alojamiento web correspondiente.
 6. A continuación, siga en la pestaña `Información general`{.action}.

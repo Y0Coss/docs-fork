@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Nova gestão dos certificados SSL"
 excerpt: "Saiba como gerir um certificado SSL no alojamento web da OVHcloud graças à nossa nova interface de gestão"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 <style>
@@ -26,15 +26,15 @@ A OVHcloud oferece vários tipos de certificados SSL nas nossas ofertas de [aloj
 
 Existem três tipos de certificados SSL:
 
-- Domain Validation (DV)
-- Organization validation (OV)
-- Extended Validation (EV)
+- Domain Validation (DV).
+- Organization validation (OV).
+- Extended Validation (EV).
 
 Os níveis de encriptação SSL são iguais entre os três tipos de certificado.
 
 A principal diferença reside no nível de verificações que será realizado pela Autoridade de Certificação (AC) que emite o certificado SSL e atesta a sua autenticidade.
 
-Dispor de um certificado SSL para o seu website é incontornável para o utilizar em HTTPS.
+É indispensável dispor de um certificado SSL para que o website esteja acessível em HTTPS.
 
 **Saiba como gerir um certificado SSL no alojamento web da OVHcloud graças à nossa nova interface de gestão.**
 
@@ -46,16 +46,16 @@ Dispor de um certificado SSL para o seu website é incontornável para o utiliza
 
 > [!warning]
 >
-> **Antes de continuar**, verifique se **o(s) domínio(s) e/ou subdomínio(s)** em causa no seu futuro certificado SSL:
+> **Antes de continuar**, certifique-se de que cada **nome de domínio e/ou subdomínio** associado ao seu futuro certificado SSL:
 >
-> - apontado(a) para o endereço IP do seu alojamento web;
-> - está(ão) declarado(s) em multi-site no seu alojamento web.
+> - Pointe para o endereço IP do seu alojamento web.
+> - É declarado em multi-site no seu alojamento web.
 >
-> Para mais informações, consulte os nossos manuais:
+> Em caso de dúvida, consulte os manuais abaixo:
 >
-> - [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ;
-> - [Lista dos endereços IP dos clusters e alojamentos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ;
-> - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+> - [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+> - [Lista dos endereços IP dos clusters e alojamentos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+> - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ## Instruções
 
@@ -138,7 +138,7 @@ O certificado SSL pago Sectigo (EV) é válido para um único nome de domínio e
 > O certificado SSL Sectigo pago (EV) tem condições de elegibilidade específicas:
 >
 > - Encomendar ou dispor de um [nome de domínio](/links/web/domains) e dispor dos direitos exclusivos sobre a sua utilização. O domínio não deve estar associado a um certificado SSL.
-> - ser uma organização (empresa, agência governamental, ...) registada num registo oficial.
+> - ser uma organização (empresa, agência governamental, etc.) registada num registo oficial.
 > - Ter a autorização da sua organização para encomendar um certificado SSL Sectigo EV.
 > - estar em condições de justificar com exatidão as informações e os dados relativos à sua organização.
 >
@@ -152,9 +152,9 @@ O certificado SSL pago Sectigo (EV) é válido para um único nome de domínio e
 6. Clique no botão `Encomendar um certificado SSL Sectigo`{.action}.
 7. Na nova janela que se abrir, selecione o domínio ou subdomínio em causa através do menu pendente e clique em `Validar`{.action} para ser reencaminhado para a nota de encomenda do seu certificado SSL Sectigo EV.
 
-Selecione o **Certificado SSL Sectigo EV** uma vez chegado o túnel de encomenda e prossiga a encomenda.
+No túnel de encomenda, selecione o **Certificado SSL Sectigo EV** e prossiga com a encomenda.
 
-Insira com exatidão as informações solicitadas por **Sectigo** antes que lhe seja emitido o certificado SSL Sectigo EV. 
+Introduza as informações solicitadas por **Sectigo** na etapa 2 da encomenda.
 
 ![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
@@ -194,7 +194,7 @@ Esta solução permite-lhe instalar o seu próprio certificado SSL para o seu no
 
 > [!warning]
 >
-> Se deseja eliminar um certificado SSL do alojamento web e **antes de prosseguir**, certifique-se de que a eliminação do certificado SSL não irá afetar a disponibilidade dos seus websites. Se isso acontecer, os seus utilizadores irão encontrar um erro de segurança ao tentar aceder ao seu website em "HTTPS".
+> **Antes de prosseguir**, certifique-se de que a eliminação do certificado SSL não irá afetar a disponibilidade dos seus websites. Se isso acontecer, os seus utilizadores irão encontrar um erro de segurança ao tentar aceder ao seu website através de HTTPS.
 
 Como esta verificação é inerente aos parâmetros do(s) seu(s) website(s), recomendamos que contacte um prestador de serviços especializado se encontrar dificuldades. Não poderemos proporcionar-lhe assistência técnica.
 
@@ -218,10 +218,10 @@ Esta ficará efetiva dentro de algumas horas, no máximo.
 
 [Alojamento web - Passar o seu website em HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-[Erros comuns associados à segurança do seu website com SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
+[Erros comuns associados à segurança do seu website com SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure)
  
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

@@ -46,12 +46,12 @@ You must have an SSL certificate in order to use HTTPS for your website.
 
 > [!warning]
 >
-> **Before you continue**, please ensure that **all domain names and/or subdomains** included in your SSL certificate:
+> **Before you continue**, please ensure that each **domain name and/or subdomain** covered by your future SSL certificate:
 >
-> - Point to your web hosting plan’s IP address.
-> - Are declared as multisites on your web hosting plan.
+> - Points to the IP address of your web hosting plan.
+> - Is declared as a multisite on your web hosting plan.
 >
-> To check this, you can refer to our guides:
+> If you have any doubts, you can refer to the guides below:
 >
 > - [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 > - [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
@@ -152,9 +152,9 @@ The Sectigo (EV) paid SSL certificate is valid for a single domain name and its 
 6. Click the `Order a Sectigo SSL certificate`{.action} button.
 7. In the new window that opens, select the domain or subdomain concerned using the dropdown menu, then click `Confirm`{.action} to be redirected to the purchase order for your Sectigo EV SSL certificate.
 
-Select the **Sectigo EV SSL certificate**, then continue with the order.
+In the order tunnel, select the **Sectigo EV** SSL certificate and proceed with the order.
 
-Fill in the information requested by **Sectigo** before you receive the Sectigo EV SSL certificate.
+Enter the information requested by **Sectigo** in step 2 of the order correctly.
 
 ![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
@@ -194,7 +194,7 @@ This solution allows you to install your own SSL certificate for your domain nam
 
 > [!warning]
 >
-> If you would like to delete an SSL certificate from your web hosting plan, ensure that deleting the SSL certificate will not make your websites inaccessible **before you continue**. If this is the case, your users will encounter a security error when they try to access your website in HTTPS.
+> **Before you proceed**, please ensure that deleting the SSL certificate will not render your websites inaccessible. If this is the case, your users will encounter a security error when they try to access your website in HTTPS.
 
 Since this check is carried out depending on the settings for your website(s), we recommend that you contact a specialist service provider if you encounter any difficulties. We will not be able to assist you with this.
 
