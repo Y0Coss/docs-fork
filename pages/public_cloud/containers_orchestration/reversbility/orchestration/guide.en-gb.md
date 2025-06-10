@@ -5,7 +5,7 @@ updated: 2025-06-10
 
 ## Objective
 
-This document describes the reversibility policy for the Managed Orchestration range corresponding to the OVHcloud service offers: Kubernetes and Rancher.
+This document outlines the reversibility policy for the product Managed Orchestration covering OVHcloud offers: Kubernetes and Rancher.
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
@@ -14,14 +14,14 @@ This policy aims to implement the general reversibility principles and our compl
 The characteristics of the  product are divided into three categories:
 
 - **Main features** for which we guarantee migration capacity.
-- **OVHcloud implementations ** that require adaptation to a new migration environment.
+- **OVHcloud implementations** that require adaptation to a new migration environment.
 - **Specific features** that cannot be guaranteed for migration as they are related to the OVHcloud environment or involve custom developments.
 
 
 
 ## Main features
 
-| Feature| Description | Formats | Migration model | Documentation available |
+| Functionality| Description | Formats | Migration model | Documentation available |
 | --- | --- | --- | --- | --- |
 | **Orchestration via Kubernetes** | Cluster management via Kubernetes API (kubectl, Helm, CI/CD, etc.), CNCF compliant| YAML, JSON, OCI | **Inbound**: Deploy manifests, Helm charts, OCI images via the standard Kubernetes API.<br>**Outbound**: Export manifests, Helm charts, images via the standard API, reusable on any compatible Kubernetes cluster. | [Creating a cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster)|
 | **Orchestration via Rancher** | Container orchestration simplifies the deployment, management, and scaling of containerised applications. | YAML, JSON, OCI | **Inbound** : Import manifests, Helm charts, OCI images or cluster via API and user interface.<br>**Outbound** : Export manifests, Helm charts, images via API, reusable on any compatible Kubernetes cluster. | [Getting Started with Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/getting-started)
@@ -29,7 +29,7 @@ The characteristics of the  product are divided into three categories:
 | **IAM** | Rancher management of identity and access to cluster resources via an external identity provider. | Active Directory, LDAP, OpenLDAP, Azure AD... | **Inbound**: Import or create roles and access policies via API or user interface..<br>**Outbound**: Export configurations via API or user interface.| [Configuring authentication](https://ranchermanager.docs.rancher.com/how-to/new-user-guides/permissions-authentication-and-global-configuration/authentication-config)|
 
 ## OVHcloud implementation
-| Feature| Description | Formats | Migration model | Documentation available |
+| Functionality| Description | Formats | Migration model | Documentation available |
 | --- | --- | --- | --- | --- |
 | **Link between Identity Provider and cluster** | Connection between identity provider and cluster | JSON | **Incoming** : Configuration adaptation in OVH format before import via CLI or IHM.<br>**Outgoing** : Export configurations in OVH format, adaptation to the target environment required. | [Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-oidc-provider-config) |
 | **Control Plane Configuration**| Ability to change certain settings to customize the cluster. | N/A | **Incoming** : : Configuration of certain Kubernetes Control Plane settings via an OVH-specific API.<br>**Outgoing** : Not directly exportable, rewriting settings in the target environment.| [Creating a cluster](    /pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) |
@@ -40,7 +40,7 @@ The characteristics of the  product are divided into three categories:
 
 
 ## Specific features
-| Feature| Description | Formats | Migration model | Documentation available |
+| Functionality | Description | Formats | Migration model | Documentation available |
 | --- | --- | --- | --- | --- |
 | **OVHcloud Manager/API**| Managed via OVHcloud Manager/API| N/A | **Inbound**: N/A<br>**Outbound**: Scripts and APIs to be rewritten for the target environment, manual management required. | [OVHcloud API Specification ](https://eu.api.ovh.com/console/?section=%2FallDom&branch=v1)|
 | **Rancher OVHcloud Edition** | Rancher Limited Use Offer in OVH. | N/A | **Inbound** :: Feature configuration if available.<br>**Outbound** : Scripts/API to rewrite for the target, manual management required.| [Managed Rancher Service](https://www.ovhcloud.com/en-gb/public-cloud/managed-rancher-service/) |
