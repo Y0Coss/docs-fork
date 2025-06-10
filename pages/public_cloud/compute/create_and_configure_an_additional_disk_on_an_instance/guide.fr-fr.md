@@ -206,6 +206,29 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 >> ```
+>>
+> **Via l'interface Horizon**
+>> partie connection à Horizon blablabla
+>>
+>> Se rendre dans la section déroulante `Volumes`, cliquez sur `Volumes`{.action} puis sur `Create Volume`{.action}.
+>>
+>> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
+>>
+>> Renseignez le champs `Volume Name`{.action} et sélectionnez le type de volume que vous souhaitez. Cliquez ensuite sur `Create Volume`{.action}
+>>
+>> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"pas via }
+>>
+>> Pour attacher ce volume à une instance, sur la ligne de votre volume, cliquez sur `la flèche`{.action} se trouvant en bout de ligne à côté de `Edit Volume`. Puis cliquez sur `Manage Attachments`{.action}
+>>
+>> ![Attach a block storage volume to an instance](images/horizon_manage_attachments.png){.thumbnail}
+>>
+>> Selectionnez l'instance à laquelle vous souhaitez attacher votre colume, puis cliquez sur `Attach Volume.`{.action}
+>>
+>> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
+>> 
+> **Via the Openstack CLI**
+>> 
+>>
 
 ### Configuration du nouveau disque
 
