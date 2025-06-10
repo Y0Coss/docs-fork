@@ -28,7 +28,7 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 
 > [!primary]
 >
-> Pour les hébergements web, il n'est plus possible de se connecter à l'espace de stockage FTP via l'outil en ligne « FTP Explorer/Net2FTP ». Pour continuer à vous connecter en FTP à votre hébergement web, utilisez le logiciel [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
+> Pour les hébergements web, il n'est plus possible de se connecter à l'espace de stockage FTP via l'outil en ligne FTP Explorer/Net2FTP. Pour continuer à vous connecter en FTP à votre hébergement web, utilisez les logiciels [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Présentation de l'interface <a name="interface"></a>
 
