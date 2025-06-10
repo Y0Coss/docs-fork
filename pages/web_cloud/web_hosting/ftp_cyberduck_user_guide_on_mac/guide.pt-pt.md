@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Utilizar o Cyberduck com o meu alojamento web"
 excerpt: "Saiba como utilizar a aplicação Cyberduck para se ligar ao seu alojamento web da OVHcloud"
-updated: 2024-02-23
+updated: 2025-06-10
 ---
 
 ## Objetivo
@@ -29,6 +29,10 @@ Para transferir o Cyberduck, aceda a [site oficial](https://cyberduck.io/) da ap
 
 - Ter um plano de [alojamento web](/links/web/hosting){.external}.
 - Ter transferido e instalado a aplicação Cyberduck no seu computador.
+
+> [!primary]
+>
+> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Instruções
 
