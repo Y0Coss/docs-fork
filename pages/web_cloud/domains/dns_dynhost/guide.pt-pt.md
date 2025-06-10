@@ -164,8 +164,8 @@ Quando estiver pronto para criar o registo DynHost, clique nas guias abaixo para
 >>
 >> |Informações|Descrição|
 >> |---|---|
->> |Subdomínio|Indique o subdomínio cujo registo DNS deverá ser atualizado de forma dinâmica. Este subdomínio deve corresponder ao domínio indicado durante a criação do utilizador DynHost.</br></br>**Se desejar implementar um DynHost diretamente para o seu domínio, deixe este formulário em branco**|
->> |IP de destino|Introduza o endereço IP (apenas IPv4 ou IPv6) que deve ser atualmente utilizado pelo registo DNS. Trata-se geralmente do endereço IP público do seu *box* Internet ou do seu servidor alojado automaticamente.</br></br>De acordo com o princípio do DynHost, esta será atualizada automaticamente.</br></br>Deve ser indicado apenas um endereço IP neste formulário.|
+>> |Subdomínio|Indique o subdomínio cujo registo DNS deverá ser atualizado de forma dinâmica. Este subdomínio deve corresponder ao domínio indicado durante a criação do utilizador DynHost.<br><br>**Se desejar implementar um DynHost diretamente para o seu domínio, deixe este formulário em branco**|
+>> |IP de destino|Introduza o endereço IP (apenas IPv4 ou IPv6) que deve ser atualmente utilizado pelo registo DNS. Trata-se geralmente do endereço IP público do seu *box* Internet ou do seu servidor alojado automaticamente.<br><br>De acordo com o princípio do DynHost, esta será atualizada automaticamente.<br><br>Deve ser indicado apenas um endereço IP neste formulário.|
 >>
 >> > [!warning]
 >> >
