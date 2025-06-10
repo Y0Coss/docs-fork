@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Utilizar o Cyberduck com o meu alojamento web"
 excerpt: "Saiba como utilizar a aplicação Cyberduck para se ligar ao seu alojamento web da OVHcloud"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 ## Objetivo

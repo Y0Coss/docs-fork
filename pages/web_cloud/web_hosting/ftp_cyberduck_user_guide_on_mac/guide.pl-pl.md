@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Korzystanie z Cyberduck na moim hostingu"
 excerpt: "Dowiedz się, jak korzystać z aplikacji Cyberduck, aby zalogować się do hostingu OVHcloud"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 ## Wprowadzenie
@@ -32,7 +32,7 @@ Aby pobrać Cyberduck, przejdź do [oficjalnej strony](https://cyberduck.io/) ap
 
 > [!primary]
 >
-> W przypadku hostingu WWW nie jest już możliwe zalogowanie się do przestrzeni FTP przy użyciu narzędzia online FTP Explorer/Net2FTP. Aby kontynuować łączenie się przez FTP z Twoim hostingiem, skorzystaj z oprogramowania [Filezilla](https://filezilla-project.org/download.php){.external} lub [Cyberduck]((https://cyberduck.io/){.external}.
+> W przypadku hostingu WWW nie jest już możliwe zalogowanie się do przestrzeni FTP przy użyciu narzędzia online FTP Explorer/Net2FTP. Aby kontynuować łączenie się przez FTP z Twoim hostingiem, skorzystaj z oprogramowania [Filezilla](https://filezilla-project.org/download.php){.external} lub [Cyberduck](https://cyberduck.io/){.external}.
 
 ## W praktyce
 

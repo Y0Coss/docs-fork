@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Cyberduck mit einem Webhosting verwenden"
 excerpt: "Erfahren Sie hier, wie Sie die Software Cyberduck verwenden, um sich mit Ihrem OVHcloud Webhosting zu verbinden"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 ## Ziel

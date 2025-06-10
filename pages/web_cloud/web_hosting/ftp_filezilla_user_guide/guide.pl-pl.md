@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Korzystanie z FileZilla na Twoim hostingu OVHcloud"
 excerpt: "Zapoznaj się z przewodnikiem dotyczącym korzystania z oprogramowania Filezilla na hostingu"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 ## Wprowadzenie 
@@ -15,7 +15,7 @@ Umożliwia on umieszczanie w Internecie plików lub Twojej strony WWW, [zaloguj�
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z [pomocy specjalisty](/links/partner) lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź dalej"](#go-further) niniejszego tutoriala.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z [wyspecjalizowanego usługodawcy](/links/partner) lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź dalej"](#go-further) niniejszego tutoriala.
 > 
 
 ## Wymagania początkowe
@@ -26,7 +26,7 @@ Umożliwia on umieszczanie w Internecie plików lub Twojej strony WWW, [zaloguj�
 
 > [!primary]
 >
-> W przypadku hostingu WWW nie jest już możliwe zalogowanie się do przestrzeni FTP przy użyciu narzędzia online FTP Explorer/Net2FTP. Aby kontynuować łączenie się przez FTP z Twoim hostingiem, skorzystaj z oprogramowania [Filezilla](https://filezilla-project.org/download.php){.external} lub [Cyberduck]((https://cyberduck.io/){.external}.
+> W przypadku hostingu WWW nie jest już możliwe zalogowanie się do przestrzeni FTP przy użyciu narzędzia online FTP Explorer/Net2FTP. Aby kontynuować łączenie się przez FTP z Twoim hostingiem, skorzystaj z oprogramowania [Filezilla](https://filezilla-project.org/download.php){.external} lub [Cyberduck](https://cyberduck.io/){.external}.
 
 
 ## Prezentacja interfejsu <a name="interface"></a>

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - FileZilla mit Ihrem OVHcloud Hosting nutzen"
 excerpt: "Verwendung der FileZilla Software mit Ihrem Webhosting"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 ## Ziel 

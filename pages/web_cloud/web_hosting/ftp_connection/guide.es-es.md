@@ -1,7 +1,7 @@
 ---
 title: "Conectarse al espacio de almacenamiento FTP de un alojamiento web"
 excerpt: "Descubra cómo conectarse al espacio de almacenamiento FTP de un alojamiento web de OVHcloud"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 ## Objetivo

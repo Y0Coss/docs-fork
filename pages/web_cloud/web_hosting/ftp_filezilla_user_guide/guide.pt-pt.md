@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Utilizar o FileZilla com o seu alojamento OVHcloud"
 excerpt: "Encontre aqui um tutorial para a utilização do software Filezilla no seu alojamento partilhado"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 ## Objetivo

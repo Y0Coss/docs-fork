@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Utilizar FileZilla con su alojamiento de OVHcloud"
 excerpt: "Consulte aquí un tutorial sobre el uso de Filezilla en su alojamiento compartido"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud"
 excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hébergement mutualisé"
-updated: 2025-06-09
+updated: 2025-06-10
 ---
 
 ## Objectif
