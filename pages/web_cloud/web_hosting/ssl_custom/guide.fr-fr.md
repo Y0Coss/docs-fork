@@ -146,10 +146,10 @@ C'est le contenu de chacun de ses fichiers qui sera nécessaire pour réaliser l
 
 Si vous démarrez directement la lecture de ce guide à cette étape car vous disposez déjà d'un certificat SSL externe commandé auprès d'un fournisseur SSL, vérifiez que vous disposez bien uniquement des 3 fichiers suivants : `certificate.crt`, `private.key` et `ca_bundle.crt`. Si ne n'est pas le cas, consultez les informations [ci-dessus](#3files).
 
-**Avant de finaliser l'installation du certificat SSL sur votre hébergement web**, vérifiez que **l'ensemble des noms de domaine et/ou sous-domaines** concernés par votre certificat SSL : 
+**Avant de finaliser l'installation du certificat SSL sur votre hébergement web**, vérifiez que **l'ensemble des noms de domaine et/ou sous-domaines** concernés par votre certificat SSL :
 
-- pointent vers l'adresse IP de votre hébergement web ; 
-- sont déclarés en multisite sur votre hébergement web ;
+- Pointent vers l'adresse IP de votre hébergement web.
+- Sont déclarés en multisite sur votre hébergement web.
 
 > [!primary]
 >
