@@ -5,7 +5,7 @@ updated: 2025-06-10
 
 ## Objective
 
-This document describes the reversibility policy of the Managed OCI artifact Registry product corresponding to the OVHcloud solution: Managed Private Registry
+This document describes the reversibility policy of the Managed OCI artifact Registry product covering OVHcloud service : Managed Private Registry
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
