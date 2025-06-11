@@ -1,7 +1,7 @@
 ---
 title: 'Criar e configurar um disco suplementar numa instância'
 excerpt: 'Saiba como associar um novo volume à sua instância Public Cloud'
-updated: 2025-03-21
+updated: 2025-06-03
 ---
 
 <style>
@@ -56,6 +56,8 @@ O volume Classic é uma solução de armazenamento fiável e económica, ideal p
 - Armazenamento de bases de dados de pequena a média dimensão
 - Backup e arquivamento de dados
 
+Nas regiões 3AZ, os volumes Classic são serviços regionais que utilizam um Erasure Coding distribuído entre várias zonas de disponibilidade. Isto garante a disponibilidade dos dados sem impacto nem interrupção em caso de falha de uma zona, desde que sejam respeitadas as exigências da arquitetura resiliente com apego múltiplo. Para mais informações, consulte o guia "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
+
 ///
 
 /// details | **High-Speed - Até 3000 IOPS**
@@ -84,7 +86,7 @@ A geração 2 dos volumes High-Speed é otimizada para as cargas de trabalho mai
 
 > [!tabs]
 > **Através da Área de Cliente OVHcloud**
->> Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, abra o `Block Storage`{.action} no menu à esquerda.
+>> Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, abra o `Block Storage`{.action} no menu à esquerda em **Backup Storage**.
 >>
 >> Nesta parte, clique no botão `Criar um volume`{.action}.
 >>
@@ -92,7 +94,7 @@ A geração 2 dos volumes High-Speed é otimizada para as cargas de trabalho mai
 >>
 >> Siga os passos de configuração para selecionar as opções de localização, o tipo de disco e a capacidade de disco. Introduza um nome para o volume e valide clicando em `Criar o volume`{.action}.
 >>
->>> [!warning]
+>> > [!warning]
 >> >
 >> > Nota: O seu volume deve ser criado na mesma região que a instância à qual deseja associá-lo. Se o criar noutra região, poderá eliminá-lo e recriá-lo na região correta, ou migrá-lo seguindo [este manual](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
 >> >
@@ -362,7 +364,7 @@ sudo blkid
 
 Abra `/etc/fstab` com um editor de texto:
 
-```
+```bash
 sudo nano /etc/fstab
 ```
 
@@ -557,7 +559,7 @@ Por fim, vamos desassociar o volume da instância:
 
 > [!tabs]
 > **Através da Área de Cliente OVHcloud**
->> Aceda à secção `Public Cloud`{.action} da Área de Cliente OVHcloud e clique em `Block Storage`{.action} no menu à esquerda em **Storage**.
+>> Aceda à secção `Public Cloud`{.action} da Área de Cliente OVHcloud e clique em `Block Storage`{.action} no menu à esquerda em **Backup Storage**.
 >>
 >> Clique no botão `...`{.action} junto do volume correspondente e selecione `Desassociar a instância`{.action}.
 >>

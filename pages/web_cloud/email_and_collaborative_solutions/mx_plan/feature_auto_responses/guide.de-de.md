@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Einrichten von Auto-Antworten für E-Mails'
 excerpt: 'Erfahren Sie hier, wie Sie E-Mail-Responder für E-Mail-Adressen einrichten'
-updated: 2024-05-24
+updated: 2025-04-28
 ---
 
 ## Ziel
@@ -23,7 +23,11 @@ Mit diesem OVHcloud Feature können Sie einen E-Mail-Responder einrichten, der a
 
 ### Automatische Antwort erstellen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Web Cloud`{.action} und wählen Sie dann Ihre Domain unter `E-Mails`{.action} aus. Klicken Sie dann im Tab `E-Mails`{.action} auf den Button `Verwaltung der Auto-Antworten`{.action}.
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
+1. Öffnen Sie den Bereich `Web Cloud`{.action}.
+1. Klicken Sie auf `MX Plan`{.action}.
+1. Wählen Sie die betreffende Domain aus.
+1. Klicken Sie dann im Tab `E-Mails`{.action} auf den Button `Verwaltung der Auto-Antworten`{.action}.
 
 Sie werden zum Fenster `Verwaltung der Auto-Antworten` weitergeleitet, in dem alle für Ihr E-Mail-Angebot verfügbaren automatischen Antworten angezeigt werden.
 
@@ -35,7 +39,7 @@ Das Fenster "Eine Auto-Antwort hinzufügen" wird angezeigt. Füllen Sie das Form
 
 - `Art der Auto-Antwort`:
 
-**An eine Mailbox gebunden**: Zu verwenden, wenn es sich um einen bestehenden E-Mail-Account Ihres E-Mail-Dienstes handelt.</br>
+**An eine Mailbox gebunden**: Zu verwenden, wenn es sich um einen bestehenden E-Mail-Account Ihres E-Mail-Dienstes handelt.<br>
 **Frei**: Für eine Alias-Adresse zu verwenden. Ein Alias ist nicht mit einem bestehenden Account verknüpft.
 
 - `Mailbox` oder `Name der Auto-Antwort`: Wählen Sie den vom Responder betroffenen E-Mail-Account oder geben Sie die Alias-Adresse ein.

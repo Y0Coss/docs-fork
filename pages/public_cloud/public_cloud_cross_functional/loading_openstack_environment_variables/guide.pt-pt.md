@@ -25,9 +25,9 @@ Carregar as variáveis de ambiente OpenStack no seu computador permitirá usar a
 Para recuperar as suas variáveis de ambiente, pode transferir o ficheiro OpenRC do seu utilizador OpenStack previamente criado.
 
 Ligue-se à sua [Área de Cliente OVHcloud](/links/manager){.external}, aceda à secção `Public Cloud`{.action} e selecione o seu projeto Public Cloud no canto superior esquerdo.
-<br> Na rubrica `Project Management`, clique em `Users & Roles`{.action}, clique nas `...`{.action} do lado direito do seu utilizador, e selecione `Transferir o ficheiro RC do OpenStack`{.action}.
+<br> No menu à esquerda, na rubrica **Parâmetros**, clique em `Utilizadores & Funções`{.action}. A seguir, clique nas `...`{.action} do lado direito do seu utilizador, e selecione `Transferir o ficheiro RC do OpenStack`{.action}.
 
-![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
+![openstack-variables](images/download_rc_file.png){.thumbnail}
 
 Um ficheiro OpenRC corresponde a um utilizador e, também, a uma zona. Não pode gerir várias zonas num mesmo ficheiro.
 
@@ -39,7 +39,7 @@ Um ficheiro OpenRC corresponde a um utilizador e, também, a uma zona. Não pode
 * Carregue o conteúdo do ficheiro no ambiente normal. A palavra-passe do utilizador Horizon correspondente ser-lhe-á então pedida.
 
 ```bash
-admin@vpsxxxxxx:~$ source openrc.sh
+admin@remote_host:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
@@ -78,4 +78,4 @@ set OS_PASSWORD="Palavra-passe do utilizador Horizon"
 
 Para aprender a utilizar o OpenStack: [Documentação OpenStack](https://docs.openstack.org/){.external}
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

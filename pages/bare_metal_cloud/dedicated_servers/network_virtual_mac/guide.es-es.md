@@ -1,7 +1,7 @@
 ---
 title: 'Asignar una MAC virtual a una Additional IP'
 excerpt: 'Cómo crear una dirección MAC virtual y asociarle una Additional IP'
-updated: 2024-12-13
+updated: 2025-05-16
 ---
 
 ## Objetivo
@@ -22,7 +22,7 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 >
 > - Los servidores Advance de tercera generación (equipados con procesadores EPYC 4004 Series) soportan 32 vMAC diferentes.
 >
-> - Esta funcionalidad estará disponible en las gamas Scale y High Grade durante 2025.
+> - Desde mayo de 2025, esta funcionalidad está disponible en las gamas Scale y High Grade.
 
 > [!primary]
 > Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](/pages/manage_and_operate/api/first-steps).
@@ -38,7 +38,7 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 
 #### Desde el área de cliente de OVHcloud
 
-En el [área de cliente de OVHcloud](/links/manager), acceda al menú `Bare Metal Cloud`{.action} y abra la sección `Network`{.action}. Haga clic en `IP`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}.
 
 Haga clic en la pestaña `Additional IP`{.action}.
 
@@ -77,7 +77,7 @@ Utilice la siguiente llamada a la API:
 
 #### Desde el área de cliente de OVHcloud
 
-Para eliminar una dirección MAC virtual asociada a una Additional IP, en el [área de cliente de OVHcloud](/links/manager) acceda al menú `Bare Metal Cloud`{.action} y abra la sección `Network`{.action}. Haga clic en `IP`{.action}. Seleccione el servidor para ver las Additional IP o bloques de IP asociados.
+Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} en el menú situado a la izquierda de la pantalla y seleccione `Direcciones IP públicas`{.action}. Seleccione el servidor para ver las Additional IP o bloques de IP asociados.
 
 Por último, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Eliminar la MAC virtual`{.action}.
 

@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Découvrez comment déployer facilement vos propres images Linux sur des serveurs dédiés
-updated: 2025-02-25
+updated: 2025-06-05
 ---
 
 ## Objectif
@@ -52,10 +52,6 @@ Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.
 
 ![BringYourOwnLinux Control Panel 01](images/byolinux-controlpanel01.png){.thumbnail}
 
-Dans la fenêtre qui apparaît, sélectionnez `Installer à partir d'un template OVHcloud`{.action} et cliquez sur `Suivant`{.action}.
-
-![BringYourOwnLinux Control Panel 02](images/byolinux-controlpanel02.png){.thumbnail}
-
 A l'étape suivante, sélectionnez `Personnalisé` dans le menu puis `Bring Your Own Linux - byolinux` et cliquez sur `Suivant`{.action}.
 
 ![BringYourOwnLinux Control Panel 03](images/byolinux-controlpanel03.png){.thumbnail}
@@ -89,9 +85,9 @@ Le contenu de la requête API de Bring Your Own Linux (BYOLinux) doit être simi
   "operatingSystem": "byolinux_64",
   "customizations": {
     "hostname": "mon-tux",
-    "imageURL": "https://github.com/ashmonger/akution_test/releases/download/0.5-compress/deb11k6.qcow2",
+    "imageURL": "https://github.com/ashmonger/akution_test/releases/latest/download/deb11k6.qcow2",
     "efiBootloaderPath": "\\efi\\debian\\grubx64.efi",
-    "imageCheckSum": "367f26c915f39314dde155db3a2b0326803e06975d1f4be04256f8b591e38fd4062d36eb7d50e99da7a50b7f4cd69640e56a4ab93e8e0274e4e478e0f84b5d29",
+    "imageCheckSum": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "httpHeaders": {
       "Authorization": "Basic bG9naW46cGFzc3dvcmQ="
     },
@@ -100,6 +96,11 @@ Le contenu de la requête API de Bring Your Own Linux (BYOLinux) doit être simi
   }
 }
 ```
+
+> [!warning]
+>
+> Dans l'exemple ci-dessus, la valeur de `imageCheckSum` a été masquée, car elle change régulièrement à chaque reconstruction de l’image cible.
+>
 
 Même si le configDrive user data peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
 
@@ -157,7 +158,7 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 | Windows | `\\efi\microsoft\\boot\\bootmgfw.efi` |
 | FreeBSD | `\\efi\\FreeBSD\\loader.efi` |
 | Alma | `\\efi\\almalinux\\shimx64.efi` |
-| Gentoo | `\efi\\boot\\bootx64.efi` |
+| Gentoo | `\\efi\\boot\\bootx64.efi` |
 
 > [!primary]
 >

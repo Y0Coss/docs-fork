@@ -1,7 +1,7 @@
 ---
 title: "Eine Public Cloud Instanz erstellen und darauf zugreifen"
 excerpt: "Erfahren Sie hier, wie Sie Public Cloud Instanzen in Ihrem OVHcloud Kundencenter konfigurieren, sowie die ersten Schritte mit Instanzen"
-updated: 2024-10-07
+updated: 2025-04-28
 ---
 
 <style>
@@ -17,10 +17,6 @@ details[open]>summary::before {
     content:'\25BC';
 }
 </style>
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -116,9 +112,9 @@ Sie können Ihre öffentlichen SSH-Schlüssel im Bereich `Public Cloud`{.action}
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 
-![Control Panel](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![Control Panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Öffnen Sie `SSH Keys`{.action} im linken Menü unter **Project Management**. Klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
+Öffnen Sie `SSH-Schlüssel`{.action} im linken Menü unter **Einstellungen**. Klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
 
@@ -172,7 +168,7 @@ Weitere Informationen finden Sie auf der [Webseite zu Local Zones](/links/public
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 
-![Control Panel](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![Control Panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
 Klicken Sie in **Start** auf `Instanz erstellen`{.action}.
 
@@ -192,9 +188,9 @@ Instanz-Modelle vom Typ `Metal`{.action} stellen dedizierte physische Ressourcen
 
 > [!primary]
 >
-> Die Verfügbarkeit Ihrer Public Cloud Ressourcen wird anfänglich aus Gründen der Kostenkontrolle und Sicherheit begrenzt. Sie können diese Quotas überprüfen, indem Sie in der linken Navigationsleiste unter **Project Management** auf `Quota and Regions`{.action} klicken. Weitere Informationen finden Sie in der [dedizierten Dokumentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota).
+> Die Verfügbarkeit Ihrer Public Cloud Ressourcen wird anfänglich aus Gründen der Kostenkontrolle und Sicherheit begrenzt. Sie können diese Quotas überprüfen, indem Sie in der linken Navigationsleiste unter **Einstellungen** auf `Quota und Regionen`{.action} klicken. Weitere Informationen finden Sie in der [dedizierten Dokumentation](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota).
 >
-> Beachten Sie, dass Sie nach der Erstellung Ihrer Instanz ein **Upgrade** durchführen können, um mehr Ressourcen zur Verfügung zu stellen. Der Wechsel zu einem kleineren Modell ist mit einer regulären Variante jedoch nicht möglich. Weitere Informationen zu diesem Thema finden Sie im folgenden**Schritt 4.4**.
+> Beachten Sie, dass Sie nach der Erstellung Ihrer Instanz ein **Upgrade** durchführen können, um mehr Ressourcen zur Verfügung zu stellen. Der Wechsel zu einem kleineren Modell ist mit einer regulären Variante jedoch nicht möglich. Weitere Informationen zu diesem Thema finden Sie im folgenden **Schritt 4.4**.
 >
 
 #### Weitere Informationen
@@ -291,7 +287,7 @@ Dieser Schritt umfasst mehrere Konfigurationsoptionen. Klicken Sie auf die Tabs,
 >>
 > **3: Name der Instanz**
 >>
->> Geben Sie einen Anzeigenamen für Ihre Instanz ein. Der Standardwert ist die kommerzielle Referenz des Instanz-Modells..<br>
+>> Geben Sie einen Anzeigenamen für Ihre Instanz ein. Der Standardwert ist die kommerzielle Referenz des Instanz-Modells.<br>
 >>
 > **4: Post-Installation-Skript**
 >>
@@ -400,9 +396,9 @@ Beachten Sie, dass wir alternative Zugriffsmöglichkeiten (hauptsächlich zur Fe
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 
-![Kundencenter](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![Kundencenter](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Wählen Sie `Instances`{.action} in der linken Navigationsleiste unter **Compute** aus. Ihre Instanz ist bereit, wenn der Status in der Tabelle `Aktiviert` anzeigt. Wenn die Instanz vor kurzem erstellt wurde und einen anderen Status hat, klicken Sie auf den Button "Aktualisieren" links neben dem Suchfilter.
+Wählen Sie `Instanzen`{.action} in der linken Navigationsleiste unter **Compute** aus. Ihre Instanz ist bereit, wenn der Status in der Tabelle `Aktiviert` anzeigt. Wenn die Instanz vor kurzem erstellt wurde und einen anderen Status hat, klicken Sie auf den Button "Aktualisieren" links neben dem Suchfilter.
 
 ![Seite Instanzen](images/24-instance-connect01.png){.thumbnail}
 
@@ -537,7 +533,7 @@ Mit der VNC-Konsole können Sie sich auf Ihren Instanzen einloggen, auch wenn ke
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 
-![Kundencenter](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![Kundencenter](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
 Wählen Sie `Instanzen`{.action} in der linken Navigationsleiste unter **Compute** aus. Klicken Sie auf den Instanznamen und öffnen Sie den Tab `VNC-Konsole`{.action}.
 

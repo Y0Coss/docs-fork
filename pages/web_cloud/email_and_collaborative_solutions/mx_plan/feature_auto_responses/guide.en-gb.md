@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - How to create an automatic reply on an email address'
 excerpt: 'Find out how to set up an automatic reply on an email address'
-updated: 2024-05-24
+updated: 2025-04-28
 ---
 
 ## Objective
@@ -23,7 +23,11 @@ This OVHcloud feature allows you to set up an automatic email responder (auto-re
 
 ### Creating an auto-reply
 
-Log in to your [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action} at the top. Select `Emails`{.action}, then choose the domain name concerned. Open the tab `Emails`{.action}, then click on the button `Manage auto-replies`{.action} on the right.
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+1. Open the `Web Cloud`{.action} section.
+1. Click `MX Plan`{.action}.
+1. Select the domain concerned.
+1. Open the tab `Emails`{.action}, then click on the button `Manage auto-replies`{.action} on the right.
 
 You will be redirected to the `Manage auto-replies` section where all of the email responders for this domain name are listed.
 
@@ -35,7 +39,7 @@ The window `Add an auto-reply` appears. Fill out the form according to the infor
 
 - `Auto-replies type`:
 
-**Associated with an email inbox**: To use if it concerns an existing email account of your email solution.</br>
+**Associated with an email inbox**: To use if it concerns an existing email account of your email solution.<br>
 **Free**: To use in the case of an email alias address. It is not linked to an existing account.
 
 - `Mailbox` or `Auto-reply name`:  Select the email account or alias address concerned by the automatic reply.

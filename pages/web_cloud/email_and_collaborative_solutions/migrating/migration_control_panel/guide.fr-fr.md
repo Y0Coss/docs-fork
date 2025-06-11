@@ -1,7 +1,7 @@
 ---
 title: 'Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange'
 excerpt: 'Découvrez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange'
-updated: 2022-11-22
+updated: 2025-04-28
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dan
 
 > [!warning]
 >
-> [OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) permet de migrer vos messages d'un serveur e-mail à un autre.</br>
+> [OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) permet de migrer vos messages d'un serveur e-mail à un autre.<br>
 > Si vos e-mails sont uniquement enregistrés en local (configuration en POP ou archivage en local), vous pouvez effectuer un [export depuis votre logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), puis [importer votre fichier PST via OMM](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#realiser-une-migration-par-fichier) ou [importer directement depuis votre logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration).
 
 ## Prérequis
@@ -48,8 +48,8 @@ Dans le cas contraire, connectez-vous à votre [espace client OVHcloud](/links/m
 Avant de débuter votre migration, il vous faudra identifier la version du MX Plan depuis lequel vous migrez.
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
-1. Cliquez sur l'onglet `Web Cloud`{.action} .
-1. Cliquez sur `E-mails`{.action}.
+1. Rendez-vous dans la partie `Web Cloud`{.action}.
+1. Cliquez sur `MX Plan`{.action}.
 1. Sélectionnez le domaine concerné.
 
 Poursuivez selon la version que vous possédez en vous référant au tableau ci-dessous.

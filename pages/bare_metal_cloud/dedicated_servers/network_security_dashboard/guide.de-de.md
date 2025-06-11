@@ -1,16 +1,17 @@
 ---
 title: Monitoring von DDoS-Angriffen mit dem Network Security Dashboard
 excerpt: Erfahren Sie hier, wie Sie das Network Security Dashboard im OVHcloud Kundencenter verwenden
-updated: 2023-12-19
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
 In dieser Anleitung wird das Network Security Dashboard erläutert. Außerdem erhalten Sie einen Überblick über Gegenmaßnahmen, die von unserer DDoS-Schutzinfrastruktur ausgelöst werden, wenn angreifende Netzwerkaktivitäten erkannt werden. Hier finden Sie Details zu den Auslösern zusätzlicher Schutzmaßnahmen, die eingerichtet werden müssen, um Ihre Dienste am Laufen zu halten. Darüber hinaus stehen im Dashboard Traffic-Diagramme für Aktivitätsperioden im Scrubbing Center zur Verfügung, um die Situation besser darzustellen.
+
+> [!warning]
+>
+> **Achtung**: Die Funktion "Scrubbing-Center: permanenter Modus" erreicht End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
+>
 
 ## Voraussetzungen 
 
@@ -47,7 +48,7 @@ Während eines Angriffs wird eine aktive Abwehraktion durch ein Warnsymbol auf d
 
 ![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}{.thumbnail}
 
-Rufen Sie im OVHcloud Kundencenter den Bereich `Bare Metal Cloud`{.action} auf. Gehen Sie dann in der linken Seitenleiste zu `Netzwerk`{.action} und klicken Sie auf `IPs verwalten`{.action}. Stellen Sie sicher, dass der `Erweiterte Modus` aktiviert ist, um den Status der Anti-DDoS-Infrastruktur und die Konfiguration ihrer Komponenten anzuzeigen.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}. Stellen Sie sicher, dass der `Erweiterte Modus` aktiviert ist, um den Status der Anti-DDoS-Infrastruktur und die Konfiguration ihrer Komponenten anzuzeigen.
 
 Die Spalten entsprechen dem Status des Anti-DDoS-Scrubbing (**Mitigation**) sowie der Verfügbarkeit von Edge Network **Firewall** und **GAME Firewall** und deren Status.
 
@@ -70,13 +71,9 @@ Die Spalten entsprechen dem Status des Anti-DDoS-Scrubbing (**Mitigation**) sowi
 
 ### Dashboard Netzwerksicherheit
 
-Im OVHcloud Kundencenter können Sie das Dashboard entweder über die IP-Liste (für eine bestimmte IP) oder direkt über das Network Security Dashboard im Menü `Network`{.action} aufrufen.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Network Security Dashboard`{.action}.
 
-Gehen Sie in den Bereich `Bare Metal Cloud`{.action}, dann links auf `Netzwerk`{.action} und wählen Sie `Network Security Dashboard`{.action}.
-
-Alternativ können Sie von der IP-Liste aus zugreifen (nur verfügbar, wenn das Scrubbing Center aktiv ist): Klicken Sie im OVHcloud Kundencenter auf den Bereich `Bare Metal Cloud`{.action} und anschließend auf das Menü `Netzwerk`{.action} links. Gehen Sie zum Tab `Öffentliche IP Adressen`{.action} und klicken Sie auf `...`{.action}.Öffnen Sie `Network Security Dashboard`{.action}.
-
-Auf der Registerkarte **Scrubbing Center-Protokoll** können Sie alle Informationen zu Angriffen abrufen, die in der Vergangenheit entdeckt wurden (oder zurzeit aktiv sind).
+Auf **Scrubbing Center-Protokoll** können Sie alle Informationen zu Angriffen abrufen, die in der Vergangenheit entdeckt wurden (oder zurzeit aktiv sind).
 
 ![red-line-attack](images/nsd_main_blur.png){.thumbnail}
 
@@ -92,11 +89,11 @@ In der Tabelle sind die folgenden Spalten vorhanden:
 > Beachten Sie, dass Quell-IP-Adressen für erkannte Ereignisse nicht angezeigt werden, da sie in der Regel gefälscht sind (DDoS-Angriffe können auf Quellen verweisen, von denen Sie nicht stammen). Solche Informationen wären also irreführend oder nicht verwendbar.
 > 
 
-Auf der Registerkarte **Traffic Chart** sehen Sie ein Diagramm, das den Traffic zu Ihrer IP-Adresse (bps oder pps) anzeigt.
+Auf **Traffic Chart** sehen Sie ein Diagramm, das den Traffic zu Ihrer IP-Adresse (bps oder pps) anzeigt.
 
 ![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
 
-Sie zeigt schädlichen Datenverkehr, der verworfen wurde (**in rot**) und gesäuberten Datenverkehr, der an Ihre IP-Adresse übertragen wurde (**in grün**). Darüber hinaus werden grundlegende Abwehrstatistiken angezeigt, z.B. wie viele Angriffe für eine ausgewählte IP entdeckt wurden, wie viel Traffic (oder Pakete) während der Angriffe gesäubert wurde oder wie oft die Scrubbing Center in einem bestimmten Zeitraum eine Aktion zur Überprüfung Ihres Traffics (Anzahl der Ereignisse) durchgeführt haben.
+Sie zeigt schädlichen Datenverkehr, der verworfen wurde (**in rot**) und gesäuberten Datenverkehr, der an Ihre IP-Adresse übertragen wurde (**in grün**).  Darüber hinaus werden grundlegende Abwehrstatistiken angezeigt, z.B. wie viele Angriffe für eine ausgewählte IP entdeckt wurden, wie viel Traffic (oder Pakete) während der Angriffe gesäubert wurde oder wie oft die Scrubbing Center in einem bestimmten Zeitraum eine Aktion zur Überprüfung Ihres Traffics (Anzahl der Ereignisse) durchgeführt haben.
 
 ## FAQ
 

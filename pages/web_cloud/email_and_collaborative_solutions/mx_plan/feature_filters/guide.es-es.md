@@ -1,7 +1,7 @@
 ---
 title: 'Crear filtros para sus direcciones de correo'
 excerpt: 'Cómo crear y configurar un filtro en una dirección de correo electrónico'
-updated: 2024-03-26
+updated: 2025-04-28
 ---
 
 ## Objetivo
@@ -30,11 +30,11 @@ Versión histórica de la solución MX Plan|Nueva versión de la solución MX Pl
 |![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro Suscripción, en el epígrafe Producto.|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro Resumen, en el epígrafe Referencia del servidor.|
 |Continúe leyendo esta guía en el apartado "[En la práctica](#oldmxplan)".|Para más información, consulte nuestra guía Reglas de la bandeja de entrada desde la [interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).|
 
-## En la práctica <a name="oldmxplan"></a>
+## Procedimiento <a name="oldmxplan"></a>
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Haga clic en la pestaña `Web Cloud`{.action}.
-1. Haga clic en `Direcciones de correo`{.action}.
+1. Acceda al apartado `Web Cloud`{.action}.
+1. Haga clic en `MX Plan`{.action}.
 1. Seleccione el dominio.
 1. En la pestaña `Correo electrónico`{.action} de su servicio MX Plan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
 

@@ -1,12 +1,9 @@
 ---
 title: "Utilização dos tokens OpenStack"
 excerpt: "Saiba como criar e utilizar tokens OpenStack para as suas ações"
-updated: 2023-05-05
+updated: 2025-05-08
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -64,7 +61,7 @@ sudo yum install python3-openstackclient
 
 Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e abra o seu projeto `Public Cloud`{.action}.
 
-Clique em `Users & Roles`{.action} na secção `Project Management` e no botão `...`{.action} à direita do seu utilizador OpenStack.<br>
+Clique em `Utilizadores & Funções`{.action} na secção **Parâmetros** e no botão `...`{.action} à direita do seu utilizador OpenStack.<br>
 Faça o download do ficheiro OpenRC deste utilizador e especifique a região na qual deseja efetuar ações.
 
 ![descarregar o ficheiro openRC](images/openrc.png){.thumbnail}

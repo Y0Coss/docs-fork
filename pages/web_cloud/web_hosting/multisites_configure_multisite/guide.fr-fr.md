@@ -21,7 +21,7 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 
 ## Prérequis
 
-- Disposer d'une offre [d'hébergement web OVHcloud](/links/web/hosting){.external} compatible.
+- Disposer d'une offre [d'hébergement web OVHcloud](/links/web/hosting-multisite){.external} compatible.
 - Disposer d'un ou plusieurs [noms de domaine](/links/web/domains){.external}.
 - Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web_cloud/domains/dns_zone_edit)).
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
@@ -118,7 +118,7 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.domain.tld) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Il est important de noter que si vous souhaitez ajouter `blog.domain.tld`, vous devrez créer l'entrée TXT `ovhcontrol.domain.tld` et non l'entrée `ovhcontrol.blog.domain.tld`.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
+> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.domain.tld) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br><br>Il est important de noter que si vous souhaitez ajouter `blog.domain.tld`, vous devrez créer l'entrée TXT `ovhcontrol.domain.tld` et non l'entrée `ovhcontrol.blog.domain.tld`.<br><br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_edit) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
 >
 > ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
 >

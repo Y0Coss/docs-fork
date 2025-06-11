@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2025-03-17
+updated: 2025-06-04
 ---
 
 <style>
@@ -31,7 +31,7 @@ Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs/
 > - pour la classe de stockage **Standard object storage - SWIFT API**, suivez [ce guide](/pages/storage_and_backup/object_storage/pcs_create_container).
 > - pour la classe de stockage **Cloud Archive - SWIFT API**, suivez [ce guide](/pages/storage_and_backup/object_storage/pca_create_container).
 >
-> Pour les nouveaux projets, nous vous recommandons vivement d'utiliser notre stockage d'objets compatible S3<sup>*</sup>, qui bénéficie de nos dernières innovations et de nos nouvelles fonctionnalités.
+> Pour les nouveaux projets, nous vous recommandons vivement d'utiliser notre stockage d'objets compatible S3<sup>1</sup>, qui bénéficie de nos dernières innovations et de nos nouvelles fonctionnalités.
 >
 
 ## Prérequis
@@ -42,34 +42,14 @@ Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs/
 
 ## En pratique
 
+> [!primary]
+>
+> Si vous souhaitez utiliser le provider Terraform OVHcloud, vous pouvez suivre [ce guide](/pages/storage_and_backup/object_storage/s3_terraform).
+>
+
 ### Préparation
 
 /// details | Pour utiliser l'AWS CLI
-
-> [!warning]
->
-> Avertissement sur la compatibilité de la CLI et du SDK AWS
->
-> Amazon Web Services (AWS) a récemment effectué une modification qui renforce les checksum lors d'opérations via l'API S3. Ces nouveaux contrôles d’intégrité sont en cours d'intégration sur notre plateforme. Aussi, les headers suivants ne sont pas supportés :
->
-> - `x-amz-content-sha256 with value STREAMING-UNSIGNED-PAYLOAD-TRAILER`
-> - `x-amz-sdk-checksum-algorithm with value CRC32`
->
-> En attendant la mise à jour de notre service Object Storage, nous vous recommandons d'utiliser les versions maximales prises en charge de la CLI, du SDK et des autres outils AWS suivants :
->
-> - boto3 1.35.99
-> - legacy aws cli 1.36.40
-> - aws cli 2.22.35
-> - aws-sdk-go 1.72.3
-> - aws-sdk-java 2.29.52
-> - aws-sdk-js-v3 3.726.1
-> - aws-sdk-net 3.7.962.0
-> - aws-sdk-php 3.336.15
-> - aws-sdk-ruby 1.177.0
->
-> Pour en savoir plus, rendez vous [ici](https://docs.aws.amazon.com/fr_fr/sdkref/latest/guide/feature-dataintegrity.html){.external}.
->
-> Obtenez des informations sur la mise à jour chez OVHcloud sur [cette page](https://public-cloud.status-ovhcloud.com/incidents/491vx956zx6b).
 
 Pour connaître la procédure d’installation de l’AWS CLI adaptée à votre environnement, nous vous recommandons de consulter [la documentation officielle d’AWS](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions){.external}.
 
@@ -283,26 +263,11 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >> Félicitations, votre bucket est créé :
 >>
 >> ![Result](images/01-object-storage-bucket-listing.png)
+>>
 
 #### Télécharger vos fichiers en tant qu'objets dans votre bucket
 
-/// details | Différences entre les types de stockage **Standard** et **High Performance**
-
-**Classe de stockage Standard :**
-
-- Conçue pour le stockage polyvalent avec un équilibre entre le coût et la performance.
-- Convient aux charges de travail avec une fréquence d'accès modérée.
-- Assure la durabilité et la disponibilité, mais peut avoir une latence d'accès légèrement plus élevée.
-- Idéal pour les sauvegardes, l'archivage et les données rarement consultées.
-
-**Classe de stockage High Performance :**
-
-- Optimisée pour les charges de travail à faible latence et à haut débit.
-- Idéal pour les opérations de lecture/écriture fréquentes et intensives.
-- Convient aux analyses de données, aux charges de travail AI/ML et aux applications en temps réel.
-- Coûte généralement plus cher que le stockage de type Standard, mais offre de meilleures performances.
-
-///
+Lors du téléchargement des objets dans un bucket Object Storage, les utilisateurs peuvent choisir la classe de stockage, ce qui leur permet de contrôler la disponibilité, la redondance et le coût associés. Pour vous aider à choisir la classe de stockage la plus adaptée à vos besoins, consultez la documentation [ici](/pages/storage_and_backup/object_storage/s3_choosing_the_right_storage_class_for_your_needs).
 
 > [!tabs]
 > Via AWS CLI
@@ -351,7 +316,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> ![Ajout de fichiers](images/upload-file.png){.thumbnail}
 >>
->> Vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez la classe de stockage entre **Standard** et **High Performance**. Enfin, sélectionnez le fichier que vous êtes sur le point de télécharger et cliquez sur le bouton `Importer`{.action}.
+>> Vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez la classe de stockage. Enfin, sélectionnez le fichier que vous êtes sur le point de télécharger et cliquez sur le bouton `Importer`{.action}.
 >>
 >> ![upload file window](images/upload-files-window.png)
 
@@ -422,23 +387,6 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >
 
 > [!tabs]
-> Via l'espace client OVHcloud
->> **Suppression d'un bucket**
->>
->> Dans la liste des conteneurs Object Storage, cliquez sur le bouton `...`{.action} sur la ligne des conteneurs, puis sur `Supprimer`{.action}.
->>
->> ![Delete bucket](images/delete-bucket.png){.thumbnail}
->>
->> Cliquez sur `Confirmer`{.action}.
->>
->> **Suppression d'objets**
->>
->> Allez dans le bucket concerné et cliquez sur le bouton `...`{.action} sur la ligne de l'objet, puis sur `Supprimer`{.action}.
->>
->> ![Delete file](images/delete-file.png){.thumbnail}
->>
->> Cliquez sur `Confirmer`{.action}.
->>
 > Via AWS CLI
 >>
 >> /// details | **Avec AWS s3**
@@ -511,6 +459,24 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >> > Si le verrouillage d'objet est activé dans votre bucket, vous ne pourrez pas supprimer définitivement vos objets. Consultez notre [documentation](/pages/storage_and_backup/object_storage/s3_managing_object_lock) pour en savoir plus sur le verrouillage d'objet.
 >> > Si vous utilisez le verrouillage d'objet en mode GOUVERNANCE et que vous avez la permission de contourner le mode GOUVERNANCE, vous devrez ajouter l'option `--bypass-governance-retention` à vos commandes de suppression.
 >> >
+>>
+> Via l'espace client OVHcloud
+>> **Suppression d'un bucket**
+>>
+>> Dans la liste des conteneurs Object Storage, cliquez sur le bouton `...`{.action} sur la ligne des conteneurs, puis sur `Supprimer`{.action}.
+>>
+>> ![Delete bucket](images/delete-bucket.png){.thumbnail}
+>>
+>> Cliquez sur `Confirmer`{.action}.
+>>
+>> **Suppression d'objets**
+>>
+>> Allez dans le bucket concerné et cliquez sur le bouton `...`{.action} sur la ligne de l'objet, puis sur `Supprimer`{.action}.
+>>
+>> ![Delete file](images/delete-file.png){.thumbnail}
+>>
+>> Cliquez sur `Confirmer`{.action}.
+>>
 
 **Gérer les tags**
 
@@ -570,4 +536,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-<sup>*</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

@@ -1,7 +1,7 @@
 ---
 title: 'Habilitar e configurar o Edge Network Firewall'
 excerpt: 'Saiba como configurar a Edge Network Firewall para os seus serviços'
-updated: 2025-01-24
+updated: 2025-06-04
 ---
 
 ## Objetivo
@@ -9,6 +9,11 @@ updated: 2025-01-24
 Para proteger os serviços dos clientes expostos aos IPs públicos, a OVHcloud oferece uma firewall stateless que é configurada e integrada na **infraestrutura Anti-DDoS**: a Edge Network Firewall. Permite limitar a exposição do serviço a ataques DDoS, ao eliminar fluxos de rede específicos provenientes de fora da rede da OVHcloud.
 
 **Este guia explica como configurar a Edge Network Firewall para os seus serviços.**
+
+> [!warning]
+>
+> **Aviso** : a funcionalidade "Centro de Scrubbing: modo permanente" foi atingida o seu fim de vida útil (EOL) será definitivamente desativado em 8 de setembro de 2025.
+>
 
 > [!primary]
 >
@@ -21,7 +26,7 @@ Para proteger os serviços dos clientes expostos aos IPs públicos, a OVHcloud o
 
 ## Requisitos
 
-- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [IP adicional](/links/network/additional-ip), etc.)
+- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
 - Acesso à [Área de Cliente OVHcloud](/links/manager)
 
 > [!warning]
@@ -47,7 +52,7 @@ O Edge Network Firewall reduz a exposição a ataques DDoS na rede, permitindo q
 > O Edge Network Firewall protege um IP específico associado a um servidor (ou serviço). Assim, se tiver um servidor com vários endereços IP, cada IP deve ser configurado separadamente.
 > 
 
-Na Área de Cliente OVHcloud, clique na secção `Bare Metal Cloud`{.action}, clique no menu `Network`{.action} e abra `Endereços IP Públicos`{.action}. Pode utilizar o menu pendente situado por baixo de **"Os meus endereços IP públicos e os serviços associados"** para filtrar os seus serviços por categoria.
+Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} na barra lateral à esquerda e, a seguir, clique em `Endereços IP Públicos`{.action}. Pode utilizar o menu pendente situado por baixo de **"Os meus endereços IP públicos e os serviços associados"** para filtrar os seus serviços por categoria.
 
 ![filter service](images/selectservice_cut.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Przypisanie wirtualnego adresu MAC do Additional IP'
 excerpt: 'Dowiedz się, jak utworzyć wirtualny adres MAC i jak powiązać go z Additional IP'
-updated: 2024-12-13
+updated: 2025-05-16
 ---
 
 ## Wprowadzenie
@@ -22,7 +22,7 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 >
 > - Serwery Advance trzeciej generacji (wyposażone w procesory EPYC 4004 Series) obsługują 32 różne sieci vMAC.
 >
-> - Funkcja ta będzie dostępna w ofercie Scale i High Grade w roku 2025.
+> - Od maja 2025 funkcja ta jest dostępna w ofercie Scale i High Grade.
 
 > [!primary]
 > Jeśli nie jesteś zaznajomiony z korzystaniem z API OVHcloud, zapoznaj się z naszym przewodnikiem [Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps).
@@ -38,7 +38,7 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 
 #### Za pośrednictwem Panelu klienta OVHcloud
 
-Po zalogowaniu się do [Panelu klienta](/links/manager), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}.
 
 Kliknij na zakładkę `Additional IP`{.action}.
 
@@ -81,7 +81,7 @@ Skorzystaj z następującego wywołania API:
 
 #### Za pośrednictwem Panelu klienta OVHcloud
 
-Aby usunąć wirtualny adres MAC powiązany z Additional IP, zaloguj się do [Panelu klienta](/links/manager), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. Wybierz odpowiedni serwer, aby wyświetliły się powiązane z nim adresy Additional IP (lub blok IP).
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}. Wybierz odpowiedni serwer, aby wyświetliły się powiązane z nim adresy Additional IP (lub blok IP).
 
 Aby zakończyć, kliknij przycisk `...`{.action} po prawej stronie, po czym kliknij `Usuń wirtualny adres MAC`{.action}.
 

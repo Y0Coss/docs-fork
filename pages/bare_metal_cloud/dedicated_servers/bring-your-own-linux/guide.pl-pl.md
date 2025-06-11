@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux) (EN)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2025-02-25
+updated: 2025-06-05
 ---
 
 ## Objective
@@ -52,10 +52,6 @@ In the `General information`{.action} tab, click the `...`{.action} button next 
 
 ![BringYourOwnLinux Control Panel 01](images/byolinux-controlpanel01.png){.thumbnail}
 
-In the window that appears, select `Install from an OVHcloud template`{.action} and click `Next`{.action}.
-
-![BringYourOwnLinux Control Panel 02](images/byolinux-controlpanel02.png){.thumbnail}
-
 In the window that appears, select `Custom` in the menu, then `Bring Your Own Linux - byolinux`, and click `Next`{.action}.
 
 ![BringYourOwnLinux Control Panel 03](images/byolinux-controlpanel03.png){.thumbnail}
@@ -89,9 +85,9 @@ The Bring Your Own Linux (BYOLinux) payload should be similar to the following:
   "operatingSystem": "byolinux_64",
   "customizations": {
     "hostname": "mon-tux",
-    "imageURL": "https://github.com/ashmonger/akution_test/releases/download/0.5-compress/deb11k6.qcow2",
+    "imageURL": "https://github.com/ashmonger/akution_test/releases/latest/download/deb11k6.qcow2",
     "efiBootloaderPath": "\\efi\\debian\\grubx64.efi",
-    "imageCheckSum": "367f26c915f39314dde155db3a2b0326803e06975d1f4be04256f8b591e38fd4062d36eb7d50e99da7a50b7f4cd69640e56a4ab93e8e0274e4e478e0f84b5d29",
+    "imageCheckSum": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "httpHeaders": {
       "Authorization": "Basic bG9naW46cGFzc3dvcmQ="
     },
@@ -100,6 +96,11 @@ The Bring Your Own Linux (BYOLinux) payload should be similar to the following:
   }
 }
 ```
+
+> [!warning]
+>
+> In the example above, the `imageCheckSum` value has been obfuscated because it changes regularly whenever the target image is rebuilt.
+>
 
 Even though the configDrive user data could be sent to the API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your data:
 
@@ -157,7 +158,7 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 | Windows | `\\efi\microsoft\\boot\\bootmgfw.efi` |
 | FreeBSD | `\\efi\\FreeBSD\\loader.efi` |
 | Alma | `\\efi\\almalinux\\shimx64.efi` |
-| Gentoo | `\efi\\boot\\bootx64.efi` |
+| Gentoo | `\\efi\\boot\\bootx64.efi` |
 
 > [!primary]
 >

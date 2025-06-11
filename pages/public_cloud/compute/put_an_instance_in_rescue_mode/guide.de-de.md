@@ -1,7 +1,7 @@
 ---
 title: "Rescue-Modus auf einer Public Cloud Instanz aktivieren"
 excerpt: "Erfahren Sie hier, wie Sie den OVHcloud Rescue-Modus für Ihre Public Cloud Instanzen aktivieren und verwenden"
-updated: 2024-06-03
+updated: 2025-04-28
 ---
 
 ## Ziel
@@ -14,7 +14,7 @@ In diesem Fall können Sie Ihre Instanz mithilfe des Rescue-Modus neu konfigurie
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/compute).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -25,7 +25,9 @@ In diesem Fall können Sie Ihre Instanz mithilfe des Rescue-Modus neu konfigurie
 
 ### Schritt 1: Rescue-Modus aktivieren
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
+Loggen Sie sich zunächst im [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
+
+Klicken Sie dann in der Navigationsleiste links auf den Tab `Instanzen`{.action}.
 
 Klicken Sie im Interface für die Instanzen auf `...`{.action} rechts neben der Instanz und wählen Sie `Neustart im Rescue-Modus`{.action}.
 
@@ -106,4 +108,4 @@ nova unrescue INSTANCE_ID
 
 [SSH-Schlüsselpaar einer Instanz ersetzen](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

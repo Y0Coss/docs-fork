@@ -1,7 +1,7 @@
 ---
 title: "Cómo activar el modo de rescate en una instancia Public Cloud"
 excerpt: "Cómo activar y utilizar el modo de rescate de OVHcloud para una instancia de Public Cloud"
-updated: 2024-06-03
+updated: 2025-04-28
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia 
 
 ## Requisitos
 
-- Tener una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
+- Tener una [instancia de Public Cloud](/links/public-cloud/compute) en su cuenta de OVHcloud
 - Tener acceso al [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
@@ -29,9 +29,9 @@ En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia 
 
 ### Activar el modo de rescate
 
-En primer lugar, inicie sesión en el [área de cliente de OVHcloud](/links/manager) para acceder al panel de control y, seguidamente, haga clic en el menú `Public Cloud`{.action}.
+En primer lugar, conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente.
 
-A continuación, seleccione su proyecto de Public Cloud en el menú lateral a la izquierda de la pantalla y acceda a «Instancias».
+A continuación, haga clic en la pestaña `Instancias`{.action} en la barra de navegación a la izquierda.
 
 A continuación, haga clic en los 3 puntos a la derecha de la instancia y seleccione `Reiniciar en modo de rescate`{.action}.
 
@@ -86,12 +86,12 @@ Podrá acceder a sus datos desde la carpeta `/mnt`.
 
 ### Desactivar el modo de rescate
 
-Una vez que haya completado sus tareas, puede desactivar el modo de rescate reiniciando normalmente su instancia. Para hacerlo, haga clic en la flecha desplegable de su instancia y seleccione `Salir del modo de rescate`{.action}.
+Una vez que haya completado sus tareas, puede desactivar el modo de rescate reiniciando normalmente su instancia. Para hacerlo, haga clic en la flecha desplegable de su instancia y seleccione `Abandonar el modo de rescate`{.action}.
 
 ![control panel](images/rescueexit2022.png){.thumbnail}
 
 > [!warning]
-> Si el botón `Salir del modo de rescate`{.action} no aparece una vez que la instancia esté en modo de rescate, le recomendamos que actualice la pestaña.
+> Si el botón `Abandonar el modo de rescate`{.action} no aparece una vez que la instancia esté en modo de rescate, le recomendamos que actualice la pestaña.
 >
 
 ### Activar el modo rescate utilizando la API de OpenStack
@@ -112,4 +112,4 @@ nova unrescue INSTANCE_ID
 
 [Cómo sustituir un par de claves SSH en una instancia](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

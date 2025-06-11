@@ -1,7 +1,7 @@
 ---
 title: 'Crea e configura un disco aggiuntivo sulla tua istanza'
 excerpt: 'Come associare un nuovo volume alla tua istanza Public Cloud'
-updated: 2024-12-24
+updated: 2025-06-03
 ---
 
 <style>
@@ -56,6 +56,8 @@ Il volume Classic è una soluzione di storage affidabile ed economica, ideale pe
 - Storage di database di piccole e medie dimensioni
 - Backup e archiviazione dei dati
 
+Nelle aree 3AZ, i volumi Classic sono servizi locali che utilizzano un Erasure Coding distribuito tra più zone di disponibilità. In questo modo è garantita la disponibilità dei dati senza impatto né interruzioni in caso di guasto di una zona, a condizione che siano rispettati i requisiti dell'architettura resiliente con collegamento multiplo. Per maggiori informazioni, consulta la nostra guida "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
+
 ///
 
 /// details | **High Speed - Fino a 3000 IOPS**
@@ -84,7 +86,7 @@ La generazione 2 dei volumi High Speed è ottimizzata per i workload più esigen
 
 > [!tabs]
 > **Dallo Spazio Cliente OVHcloud**
->> Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto. Poi apri `Block Storage`{.action} nel menu a sinistra.
+>> Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto. Poi apri `Block Storage`{.action} nel menu a sinistra sotto **Storage e Backup**.
 >>
 >> In questa sezione clicca sul pulsante `Crea un volume`{.action}.
 >>
@@ -425,7 +427,7 @@ C:\> diskpart
 
 Per mettere il disco `online`, utilizza il seguente set di comandi DISKPART:
 
-```
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
@@ -558,7 +560,7 @@ Infine, scollegheremo il volume dell’istanza:
 
 > [!tabs]
 > **Dallo Spazio Cliente OVHcloud**
->> Accedi alla sezione `Public Cloud`{.action} dello Spazio Cliente e clicca su `Block Storage`{.action} nel menu a sinistra **Storage**.
+>> Accedi alla sezione `Public Cloud`{.action} dello Spazio Cliente e clicca su `Block Storage`{.action} nel menu a sinistra sotto **Storage e Backup**.
 >>
 >> Clicca sui `...`{.action} in corrispondenza del volume corrispondente e seleziona `Scollega dall'istanza`{.action}.
 >>

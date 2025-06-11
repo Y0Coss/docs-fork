@@ -1,7 +1,7 @@
 ---
 title: "Como criar uma instância Public Cloud e conectar-se a ela"
 excerpt: "Descubra como configurar instâncias Public Cloud na sua Área de Cliente OVHcloud, assim como os primeiros passos com as suas instâncias"
-updated: 2024-10-07
+updated: 2025-04-28
 ---
 
 <style>
@@ -17,10 +17,6 @@ details[open]>summary::before {
     content:'\25BC';
 }
 </style>
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -117,13 +113,13 @@ Pode armazenar as suas chaves SSH públicas na secção `Public Cloud`{.action} 
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
 
-![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Abra o `SSH Keys`{.action} no menu à esquerda em **Project Management**. Clique no botão `Adicionar uma chave SSH`{.action}.
+Abra o `Chaves SSH`{.action} no menu à esquerda em **Parâmetros**. Clique no botão `Adicionar chave SSH`{.action}.
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
 
-Na nova janela, introduza um nome para a chave. Preencha o campo `Chave` com a sua cadeia de chave pública, por exemplo, a criada na [etapa 1](#create-ssh). Confirme clicando em `Add`{.action} Adicionar {.action}.
+Na nova janela, introduza um nome para a chave. Preencha o campo `Chave` com a sua cadeia de chave pública, por exemplo, a criada na [etapa 1](#create-ssh). Confirme clicando em `Adicionar`{.action}.
 
 ![add key](images/24-addkey.png){.thumbnail}
 
@@ -173,7 +169,7 @@ Para saber mais, consulte [página Web das Local Zones](/links/public-cloud/loca
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
 
-![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
 Na página **Página Inicial**, clique em `Criar uma instância`{.action}.
 
@@ -193,7 +189,7 @@ Os modelos de instâncias do tipo `Metal`{.action} fornecem recursos físicos de
 
 > [!primary]
 >
-> O total dos seus recursos Public Cloud será inicialmente limitado por razões de controlo de custos e de segurança. Pode verificar estas quotas clicando em "Quota and Regions"{.action} na barra de navegação à esquerda em **Project Management**. Consulte [a documentação dedicada](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) para mais informações.
+> O total dos seus recursos Public Cloud será inicialmente limitado por razões de controlo de custos e de segurança. Pode verificar estas quotas clicando em `Limite e regiões`{.action} na barra de navegação à esquerda em **Parâmetros**. Consulte [a documentação dedicada](/pages/public_cloud/public_cloud_cross_functional/increasing_public_cloud_quota) para mais informações.
 >
 > Tenha em atenção que pode **atualizar** a sua instância após a sua criação para dispor de mais recursos disponíveis. No entanto, a mudança para um modelo mais pequeno não é possível com uma instância regular. Consulte a secção seguinte para obter mais informações sobre este assumpto **Passo 4.4**.
 >
@@ -403,9 +399,9 @@ Tenha em conta que propomos meios de acesso alternativos (principalmente utiliza
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
 
-![Área de Cliente](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![Área de Cliente](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Selecione `Instances`{.action} na barra de navegação à esquerda em **Compute**. A sua instância está pronta quando o estado está definido em `Ativado` na tabela. Se a instância tiver sido criada recentemente e tiver um estado diferente, clique no botão "Atualizar" junto do filtro de pesquisa.
+Selecione `Instâncias`{.action} na barra de navegação à esquerda em **Compute**. A sua instância está pronta quando o estado está definido em `Ativado` na tabela. Se a instância tiver sido criada recentemente e tiver um estado diferente, clique no botão "Atualizar" junto do filtro de pesquisa.
 
 ![page instâncias](images/24-instance-connect01.png){.thumbnail}
 
@@ -430,7 +426,7 @@ Se o seu [par de chaves SSH está corretamente configurado](#create-ssh), já po
 
 > [!primary]
 >
-> Se receber mensagens de erro sobre as suas **chaves SSH**, verifique se o seu dispositivo local dispõe de uma chave SSH privada corretamente configurada utilizando as informações de [este guia](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
+> Se receber mensagens de erro sobre as suas **chaves SSH**, verifique se o seu dispositivo local dispõe de uma chave SSH privada corretamente configurada utilizando as informações de [este guia](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
 > Se continuar a ter problemas, pode substituir o par de chaves utilizando [este manual](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Se criou uma instância sem chave SSH através da [API OVHcloud](/pages/manage_and_operate/api/first-steps) ou da [interface OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), só pode adicionar uma chave SSH à sua instância através do [modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) seguindo as instruções descritas em [este manual](/pages/public_cloud/compute/replacing_lost_ssh_key).
@@ -541,9 +537,9 @@ A consola VNC permite-lhe ligar-se às suas instâncias mesmo quando não estão
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa.
 
-![Área de Cliente](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+![Área de Cliente](/pages/assets/screens/control_panel/product-selection/public-cloud/select_project.png){.thumbnail}
 
-Selecione `Instances`{.action} na barra de navegação à esquerda em **Compute**. Clique no nome da instância e abra o separador `Consola VNC`{.action}.
+Selecione `Instâncias`{.action} na barra de navegação à esquerda em **Compute**. Clique no nome da instância e abra o separador `Consola VNC`{.action}.
 
 ![consola vnc](/pages/assets/screens/control_panel/product-selection/public-cloud/cp-pci-vnc-login.png){.thumbnail}
 

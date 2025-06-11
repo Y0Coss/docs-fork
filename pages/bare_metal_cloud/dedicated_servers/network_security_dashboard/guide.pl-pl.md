@@ -1,16 +1,17 @@
 ---
 title: "Monitoring ataków DDoS za pomocą Network Security Dashboard"
 excerpt: "Dowiedz się, jak nawigować za pomocą pulpitu nawigacyjnego zabezpieczeń sieciowych"
-updated: 2023-12-19
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
->
 
 ## Wprowadzenie
 
 Z tego przewodnika dowiesz się, jak korzystać z Dashboardu zabezpieczeń sieci. Zawiera on przegląd środków zaradczych uruchamianych przez infrastrukturę ochrony Anty-DDoS w przypadku wykrycia złośliwej aktywności sieciowej. Dowiedz się, jakie dodatkowe zabezpieczenia należy wdrożyć, aby zapewnić ciągłość działania usług. Co więcej, na dashboardzie dostępne są wykresy ruchu pozwalające na lepszą wizualizację sytuacji podczas operacji centrum kontroli.
+
+> [!warning]
+>
+> **Ostrzeżenie** : funkcja "Scrubbing Center: tryb stały" została osiągnięta jego koniec życia (EOL) i zostanie definitywnie wyłączony 8 września 2025.
+>
 
 ## Wymagania początkowe
 
@@ -47,7 +48,7 @@ W trakcie ataku, aktywne filtrowanie jest wskazane przez ikonę ostrzegawczą na
 
 ![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
-W Panelu klienta OVHcloud przejdź do sekcji `Bare Metal Cloud`{.action}. Następnie przejdź do sekcji `Sieć`{.action} na lewym pasku bocznym i kliknij pozycję `Adres IP`{.action}. Upewnij się, że `Tryb zaawansowany` jest włączony, aby sprawdzić stan infrastruktury anty-DDoS i konfigurację jej komponentów
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}. Upewnij się, że `Tryb zaawansowany` jest włączony, aby sprawdzić stan infrastruktury anty-DDoS i konfigurację jej komponentów
 
 Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Network **Firewall* i **GAME firewall** charakteryzują się dostępnością i statusami.
 
@@ -70,11 +71,7 @@ Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Netw
 
 ### Pulpit nawigacyjny zabezpieczeń sieciowych
 
-W Panelu klienta OVHcloud dostęp do dashboardu można uzyskać z poziomu strony wyświetlającej listę adresów IP (dla danego adresu IP) lub bezpośrednio z poziomu pulpitu nawigacyjnego zabezpieczeń sieci w menu "Sieć"{.action}.
-
-Przejdź do karty `Bare Metal Cloud`{.action}, następnie do `Sieć`{.action} i wybierz `Network Security Dashboard`{.action}.
-
-Alternatywnie, z listy IP (ta opcja jest dostępna tylko wtedy, gdy centrum oczyszczania jest w akcji): Przejdź do karty `Bare Metal Cloud`{.action}, następnie przejdź do `Network`{.action} i kliknij `Publiczne adresy IP`{.action}. Kliknij przycisk `...`{.action} i przejdź do `Network Security Dashboard`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Network Security Dashboard`{.action}.
 
 Karta **dziennik centrum oczyszczania** umożliwia pobranie wszystkich informacji o atakach wykrytych w przeszłości (lub w toku).
 

@@ -1,7 +1,7 @@
 ---
 title: "Augmenter la taille d’un disque supplémentaire"
 excerpt: "Découvrez comment augmenter la taille d'un volume supplémentaire et agrandir sa partition principale"
-updated: 2025-03-21
+updated: 2025-04-28
 ---
 
 <style>
@@ -26,9 +26,9 @@ Si vous avez atteint la capacité maximale de votre disque supplémentaire, vous
 
 ## Prérequis
 
-- Une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre projet Public Cloud.
+- Une [instance Public Cloud](/links/public-cloud/compute) dans votre projet Public Cloud.
 - Un [disque supplémentaire](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) créé dans votre projet.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir un accès administratif (sudo) à votre instance via SSH (Linux) ou RDP (Windows).
 
 ## En pratique
@@ -99,7 +99,7 @@ Pour vous assurer de redimensionner votre disque au bon moment, il est essentiel
 
 ### Modifier la taille du disque
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Block Storage`{.action} dans le menu de gauche.
+Connectez-vous à [l’espace client OVHcloud](/links/manager), rendez-vous dans la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Block Storage`{.action} dans le menu de gauche sous **Storage & Backup**.
 
 Si le volume est attaché à une **instance Windows**, cliquez sur le bouton `...`{.action} à droite du volume concerné et sélectionnez `Détacher de l'instance`{.action}.
 
@@ -238,6 +238,7 @@ Le volume redimensionné inclut désormais l'espace disque supplémentaire.
 ## Aller plus loin
 
 [Créer et configurer un disque additionnel sur une instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
+
 [Modifier un Volume Block Storage](/pages/public_cloud/compute/switch_volume_type)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Bare Metal 3-AZ Region - Présentation de l'offre"
 excerpt: 'Découvrez le service Bare Metal 3-AZ, qui offre une haute disponibilité et une redondance inégalées entre trois datacenters'
-updated: 2024-05-30
+updated: 2025-06-04
 ---
 
 ## Objectif
@@ -10,11 +10,26 @@ OVHcloud propose son service Bare Metal dans la [région 3-AZ](/links/bare-metal
 
 Le Bare Metal de la région 3-AZ répond aux besoins des clients qui ont besoin d’une haute disponibilité et d’une redondance dans leurs plans de continuité d’activité. Ce service fournit des serveurs Bare Metal dans trois datacenters proches de Paris, connectés par un réseau à faible latence. Il garantit une sécurité renforcée, des performances améliorées et des fonctionnalités ininterrompues, même en cas d'incidents localisés.
 
+> [!primary]
+>
+> **Information importante - Évolution de l’offre Bare Metal 3-AZ**
+>
+> À partir de mai 2025, le modèle de livraison des serveurs Bare Metal en région Paris 3-AZ évolue significativement. Le précédent modèle de livraison obligatoire en clusters de 3 serveurs (un dans chaque zone de disponibilité) sera abandonné.
+>
+> **Changements clés :**
+>
+> - Les clients pourront désormais choisir librement le nombre exact de serveurs dont ils ont besoin.
+> - La répartition des serveurs entre les différentes zones de disponibilité (AZ) sera entièrement personnalisable.
+> - Aucune obligation de déploiement dans les trois zones simultanément.
+>
+> **Important :** les informations présentées dans ce guide, notamment en ce qui concerne le déploiement obligatoire du cluster et potentiellement l’expérience utilisateur reflétant ce modèle, s’appliquent principalement aux clients dont les serveurs ont été livrés *avant mai 2025* sous le modèle de cluster précédent. Les nouveaux déploiements à partir de mai 2025 bénéficieront de la flexibilité du nouveau modèle, et potentiellement d'une interface adaptée. Pour toute question concernant cette évolution ou pour adapter votre infrastructure existante, veuillez contacter votre gestionnaire de compte ou le support OVHcloud.
+>
+
 ## Vue d'ensemble
 
 ### But du Service
 
-La valeur de la région 3-AZ réside dans l’offre de trois serveurs identiques répartis sur trois zones de disponibilité au sein d’une même région. Cette configuration garantit une haute disponibilité et une redondance des données, tout en maintenant la continuité opérationnelle et en réduisant le risque de perte de données. La distribution stratégique des serveurs minimise la latence et améliore les performances des applications.
+La valeur de la région 3-AZ réside dans l’offre de plusieurs serveurs identiques répartis sur trois zones de disponibilité au sein d’une même région. Cette configuration garantit une haute disponibilité et une redondance des données, tout en maintenant la continuité opérationnelle et en réduisant le risque de perte de données. La distribution stratégique des serveurs minimise la latence et améliore les performances des applications.
 
 ### La régionalisation chez OVHcloud
 
@@ -24,19 +39,19 @@ OVHcloud est présent dans le monde entier, notamment en Europe, aux États-Unis
 
 Pour des performances optimales, une région doit être sélectionnée au plus près de ses utilisateurs. Pour une disponibilité mondiale, les services doivent être répartis sur plusieurs régions. La région 3-AZ est idéale pour les clients à la recherche de la plus haute résilience et doit être utilisée pour créer des conceptions d'applications multi-AZ.
 
-Vous pouvez lister ici vos clusters avec un nouvel onglet dans l'interface (les serveurs sont représentés dans la liste sous-jacente à un cluster comprenant 3 nœuds) :
+Pour visualiser vos clusters depuis l'[espace client OVHcloud](/links/manager), cliquez sur `Bare Metal Cloud`{.action} dans le menu situé à gauche de l'écran, puis sur `Serveurs dédiés`{.action}. Enfin, cliquez sur l'onglet `Clusters 3-AZ`{.action}.
 
-![left_menu](images/01-20240513-blur.png){.thumbnail}
+![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters1.png){.thumbnail}
 
-![list_clusters](images/02-20240513-blur.png){.thumbnail}
+Cliquez sur le nom du cluster dans le tableau pour en afficher les détails.
 
-Lors de la sélection de votre cluster, vous avez la liste des 3 serveurs qu'il contient :
+![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters2.png){.thumbnail}
 
-![list_servers](images/03-20240513-blur.png){.thumbnail}
+Cliquez sur l'onglet `Noeuds`{.action} pour ouvrir la liste des serveurs du cluster.
 
-L'interface est toujours la même, il n'y a pas d'autres changements à ce niveau :
+![list_clusters](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/clusters3.png){.thumbnail}
 
-![detail_server](images/04-20240513-blur.png){.thumbnail}
+Cliquer sur un nom de serveur/nœud dans cette liste ouvre l'onglet `Informations générales`{.action} du serveur. Retrouvez les détails sur cette section de l'espace client dans notre guide « [Comment démarrer avec un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) ».
 
 ## Aller plus loin
 

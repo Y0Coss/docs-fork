@@ -1,7 +1,7 @@
 ---
 title: "vRack für Dedicated Server konfigurieren"
 excerpt: "Erfahren Sie hier, wie Sie ein vRack auf zwei oder mehr Servern einrichten"
-updated: 2025-03-24
+updated: 2025-04-28
 ---
 
 ## Ziel
@@ -29,15 +29,15 @@ Das OVHcloud vRack (Virtual Rack) erlaubt es, mehrere Server (unabhängig von de
 
 ### Schritt 1: vRack bestellen
 
-Wenn Sie sich in Ihrem OVHcloud Kundencenter eingeloggt haben, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf den Button `Bestellen`{.action}. Klicken Sie unter diesem Menü auf `vRack`{.action}.
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein und klicken Sie im linken Menü auf den Button `Dienst hinzufügen`{.action} (Warenkorbsymbol). Benutzen Sie den Filter oben auf der Seite oder scrollen Sie nach unten, um den Dienst `vRack`{.action} zu finden.
 
-![vRack bestellen](images/orderingvrack.png){.thumbnail}
+![vRack bestellen](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
 
-Sie werden auf eine andere Seite weitergeleitet, um die Bestellung zu validieren. Der Vorgang dauert einige Minuten.
+Klicken Sie auf das Feld `vRack`{.action}, um zur Seite weitergeleitet zu werden, auf der Sie die Bestellung validieren können. Es dauert einige Minuten, bis das vRack in Ihrem Konto eingerichtet ist.
 
 ### Schritt 2: Ihre Server zum vRack hinzufügen
 
-Wenn das vRack in Ihrem Account aktiviert ist, gehen Sie in den Bereich `Bare Metal Cloud`{.action}, klicken Sie auf `Network`{.action} und öffnen Sie das Menü `vRack`{.action}.
+Wenn das vRack in Ihrem Account aktiviert ist, öffnen Sie das Menü `Network`{.action} in der linken Seitenleiste und klicken Sie auf `Privates Netzwerk vRack`{.action}.
 
 Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleistungen anzuzeigen. Klicken Sie erst auf jeden der Server, die Sie zum vRack hinzufügen möchten, dann auf den Button `Hinzufügen`{.action}.
 

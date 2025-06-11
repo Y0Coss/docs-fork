@@ -1,7 +1,7 @@
 ---
 title: Getting started with Load Balancer on Public Cloud (EN)
 excerpt: Discover how to launch a Load Balancer on Public Cloud
-updated: 2024-02-15
+updated: 2025-04-28
 ---
 
 <style>
@@ -36,7 +36,7 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 
 ### Creating the Load Balancer from the OVHcloud Control Panel
 
-Open your Public Cloud project and click `Load Balancer`{.action} (under `Network`) in the left menu, then click the `Create a Load Balancer`{.action} button.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click `Load Balancer`{.action} (under **Network**) in the left menu, then click the `Create a Load Balancer`{.action} button.
 
 The configuration page will open.
 
@@ -101,7 +101,7 @@ You will be redirected to the Load Balancer listing page. Among the attributes t
 
 Another way to create a Load Balancer is through the Openstack Command Line Interface. Before you begin, consult the following guides:
 
-[Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).</br>
+[Preparing an environment for using the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).<br>
 [Setting OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 
 #### Configuring your private network

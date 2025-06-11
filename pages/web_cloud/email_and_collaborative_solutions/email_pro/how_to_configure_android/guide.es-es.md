@@ -1,7 +1,7 @@
 ---
 title: "Email Pro - Configurar una dirección de correo electrónico en Gmail para Android"
 excerpt: "Cómo configurar una cuenta Email Pro en Android utilizando la aplicación Gmail"
-updated: 2024-10-09
+updated: 2025-04-28
 ---
 
 <style>
@@ -36,15 +36,19 @@ Las direcciones de correo electrónico de la solución Email Pro pueden configur
 >
 > Esta documentación se ha realizado desde un dispositivo que utiliza la versión 13 de Android.
 
-## En la práctica
+## Procedimiento
 
 ### Cómo añadir una cuenta de correo
 
 > [!primary]
 >
-> En nuestro ejemplo, hemos utilizado la mención servidor: pro?.mail.ovh.net Sustituya la "?" por la cifra que designa al servidor de su servicio Email Pro.
+> En nuestro ejemplo, hemos utilizado la mención servidor: pro?.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+> 1. Acceda al apartado `Web Cloud`{.action}.
+> 1. Haga clic en `Email Pro`{.action}.
+> 1. Seleccione la plataforma correspondiente.
+> 1. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
 
 En la pantalla de inicio de su dispositivo, acceda a la aplicación `Gmail`{.action}.

@@ -1,7 +1,7 @@
 ---
 title: Gestione degli utenti OpenStack
 excerpt: "Scopri come gestire gli utenti OpenStack nello Spazio Cliente OVHcloud e nell’interfaccia Horizon"
-updated: 2025-04-02
+updated: 2025-04-28
 ---
 
 ## Obiettivo
@@ -16,14 +16,14 @@ Dall’interfaccia Horizon, è possibile impostare una password per ogni utente.
 
 ## Prerequisiti
 
-- Un progetto [Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) nel tuo account OVHcloud
+- Un progetto [Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) nel tuo account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
 ### Crea un utente OpenStack
 
-Accedi allo Spazio Cliente OVHcloud e apri il tuo progetto `Public Cloud`{.action}. Clicca su `Users & Roles`{.action} nel menu a sinistra sotto "Project management". 
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato. Clicca su `Utenti e ruoli`{.action} nel menu a sinistra sotto **Impostazioni**. 
 
 Clicca sul pulsante `Crea un utente`{.action}.
 
@@ -79,7 +79,7 @@ Ricorda che la modifica della password dell’account utente comporta l’annull
 
 ### Elimina l'utente OpenStack
 
-L'utente OpenStack viene eliminato dallo [Spazio Cliente OVHcloud](/links/manager). Clicca su `Users & Roles`{.action} nel menu a sinistra sotto "Project management". 
+L'utente OpenStack viene eliminato dallo [Spazio Cliente OVHcloud](/links/manager). Clicca su `Utenti e ruoli`{.action} nel menu a sinistra sotto **Impostazioni**. 
 
 ![public-cloud](images/delete.png){.thumbnail}
 

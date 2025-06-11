@@ -1,7 +1,7 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
 excerpt: 'Cómo asociar un nuevo volumen a una instancia de Public Cloud'
-updated: 2025-03-21
+updated: 2025-06-03
 ---
 
 <style>
@@ -56,6 +56,8 @@ El volumen Classic es una solución de almacenamiento fiable y rentable, ideal p
 - Almacenamiento de bases de datos de tamaño pequeño a mediano
 - Backup y archivado de datos
 
+En las regiones 3AZ, los volúmenes Classic son servicios regionales que utilizan un Erasure Coding distribuido entre varias zonas de disponibilidad. Esto garantiza la disponibilidad de los datos sin impacto ni interrupción en caso de fallo de una zona, siempre que se cumplan los requisitos de la arquitectura resiliente con conexión múltiple. Para más información, consulte nuestra guía "[Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](/pages/public_cloud/compute/classic_block_multi_az_limitations)".
+
 ///
 
 /// details | **High-Speed - Hasta 3000 IOPS**
@@ -85,7 +87,7 @@ La generación 2 de los volúmenes High-Speed está optimizada para las cargas d
 > [!tabs]
 > **Desde el área de cliente de OVHcloud**
 >>
->> Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, abra `Block Storage`{.action} en el menú de la izquierda.
+>> Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, abra `Block Storage`{.action} en el menú de la izquierda bajo **Backup Storage**
 >>
 >> En esta sección, haga clic en el botón `Crear un volumen`{.action}.
 >>
@@ -366,7 +368,7 @@ sudo blkid
 
 Abra `/etc/fstab` con un editor de texto:
 
-```
+```bash
 sudo nano /etc/fstab
 ```
 
@@ -559,7 +561,7 @@ Por último, vamos a desvincular el volumen de la instancia:
 
 > [!tabs]
 > **Desde el área de cliente de OVHcloud**
->> Acceda a la sección `Public Cloud`{.action} de su área de cliente de OVHcloud y haga clic en `Block Storage`{.action} en el menú de la izquierda, en **Storage**.
+>> Acceda a la sección `Public Cloud`{.action} de su área de cliente de OVHcloud y haga clic en `Block Storage`{.action} en el menú de la izquierda bajo **Backup Storage**.
 >>
 >> Haga clic en el botón `...`{.action} junto al volumen correspondiente y seleccione `Desvincular de la instancia`{.action}.
 >>
@@ -617,7 +619,7 @@ Por último, vamos a desvincular el volumen de la instancia:
 >> ```console
 >> terraform apply
 >> ```
-.>
+>>
 >> El resultado debería ser similar al siguiente:
 >>
 >> ```console

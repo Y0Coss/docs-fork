@@ -1,12 +1,17 @@
 ---
 title: "Monitoring des attaques DDoS avec le Network Security Dashboard"
 excerpt: "Apprenez à naviguer dans le Network Security Dashboard"
-updated: 2023-12-19
+updated: 2025-06-04
 ---
 
 ## Objectif
 
 Ce guide a pour but de présenter le tableau de bord de sécurité réseau (*Network Security Dashboard*), un outil d'aperçu de ce qui se passe lorsqu'une activité réseau malveillante est détectée et que l'infrastructure de protection DDoS est impliquée. Vous y trouverez des détails sur ce qui a déclenché la mise en place de protections supplémentaires pour maintenir vos services opérationnels. Des graphiques de trafic correspondant aux périodes d’activité du centre de nettoyage (*Scrubbing Center*) y sont également disponibles afin de mieux visualiser la situation.
+
+> [!warning]
+>
+> **Avertissement** : la fonctionnalité « Centre de Scrubbing: mode permanent » atteint sa fin de vie (EOL) et sera désactivée définitivement le 8 septembre 2025.
+>
 
 ## Prérequis
 
@@ -43,7 +48,7 @@ Lors d'une attaque, une action de mitigation active sera indiquée par une icôn
 
 ![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
-Dans votre espace client, accédez à l'onglet `Bare Metal Cloud`{.action}. Cliquez ensuite sur `Network`{.action} puis sur le menu `IP`{.action}. Assurez-vous que le « mode avancé » est activé pour voir l'état de l'infrastructure anti-DDoS et la configuration de ses composants.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Adresses IP Publiques`{.action}. Assurez-vous que le « mode avancé » est activé pour voir l'état de l'infrastructure anti-DDoS et la configuration de ses composants.
 
 Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scrubbing (**Mitigation**), du Edge Network **Firewall** et du **GAME firewall**.
 
@@ -66,11 +71,7 @@ Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scr
 
 ### Network Security Dashboard
 
-Dans l'espace client OVHcloud, l'accès au Network Security Dashboard peut se faire soit à partir de la page qui liste les IP (pour une IP particulière), soit en vous rendant directement dans le Network Security Dashboard dans le menu `Network`{.action}.
-
-Cliquez sur l'onglet `Bare Metal Cloud`{.action} puis sur `Network`{.action} et sélectionnez `Network Security Dashboard`{.action}.
-
-Vous pouvez également, à partir de la liste des adresses IP (cette option n'est disponible que lorsque le Centre de nettoyage est en action), accéder à l'onglet `Bare Metal Cloud`{.action} puis vous rendre dans `Network`{.action} et cliquer sur `Adresses IP publiques`{.action}. Cliquez sur le bouton `...`{.action} et accédez à `Network Security Dashboard`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran, puis sur `Network Security Dashboard`{.action}.
 
 Dans l'onglet **Journal du Centre de nettoyage**, vous pouvez récupérer toutes les informations sur les attaques détectées dans le passé (ou en cours).
 

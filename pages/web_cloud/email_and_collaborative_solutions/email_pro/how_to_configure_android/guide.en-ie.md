@@ -1,7 +1,7 @@
 ---
 title: "Email Pro - Configure your email account on Gmail for Android"
 excerpt: 'Find out how to configure an Email Pro account on Android, via the Gmail app'
-updated: 2024-10-09
+updated: 2025-04-28
 ---
 
 <style>
@@ -43,8 +43,12 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 > [!primary]
 >
 > In this guide, we will use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
-> 
-> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+>
+> 1. Log in to your [OVHcloud Control Panel](/links/manager).
+> 1. Open the `Web Cloud`{.action} section.
+> 1. Click `Email Pro`{.action}.
+> 1. Select the service concerned.
+> 1. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 On your device's homepage, go to the `Gmail`{.action} app.
@@ -83,7 +87,7 @@ Follow the next steps in the configuration process by browsing the tabs below:
 >> ![emailpro](images/emailpro-android-04.png){.thumbnail .h-600}
 >>
 > **Step 5**
->>> Enter the "**Incoming server settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email account password<br>- **Server**: Type pro?.mail.ovh.net (replace "?" with your server number). <br><br>
+>> Enter the "**Incoming server settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email account password<br>- **Server**: Type pro?.mail.ovh.net (replace "?" with your server number). <br><br>
 >>![emailpro](images/emailpro-android-05.png){.thumbnail .h-600}
 >>
 > **Etape 6**

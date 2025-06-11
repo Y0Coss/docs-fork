@@ -1,7 +1,7 @@
 ---
 title: Creating an OVHcloud DNS zone for a domain name
 excerpt: Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel
-updated: 2024-06-26
+updated: 2025-04-28
 ---
 
 ## Objective
@@ -42,7 +42,7 @@ For a number of reasons, you may need to create a DNS zone for your domain name 
 
 ### Step 1: Create the DNS zone via the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on `Order`{.action} then on the `DNS zone`{.action} icon.
+Log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click on `DNS zones`{.action} , then on the `Order`{.action} button in the top right-hand corner of the table that appears.
 
 On the page that appears, enter the domain name (*domain.tld*), for which you would like to create an OVHcloud DNS zone. You will need to wait a few moments for the tool to carry out its checks on the domain name.
 
@@ -56,8 +56,8 @@ Once the verification is complete, choose whether to enable the minimum records 
 
 |Enable minimal entries?|Details|
 |---|---|
-|Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.</br>![minimal-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
-|No|Select this option if you plan to use OVHcloud services as a [web hosting](/links/web/hosting){.external}, with the zone preconfigured for this purpose.</br>![no-minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
+|Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.<br>![minimal-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-minimal-entries.png){.thumbnail}|
+|No|Select this option if you plan to use OVHcloud services as a [web hosting](/links/web/hosting){.external}, with the zone preconfigured for this purpose.<br>![no-minimum-dns-entries](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-ovh-full-entries.png){.thumbnail}|
 
 Once you have chosen your DNS zone, follow the steps until you have created it.
 
@@ -69,14 +69,14 @@ To edit this DNS zone, please read our guide on [Editing a DNS zone at OVHcloud]
 
 > [!primary]
 >
-> If you have just created the DNS zone and the domain name does not yet appear in your list of services (under `Domain names`{.action} in the `Web Cloud`{.action} section of the OVHcloud Control Panel), wait 15 to 20 minutes, then reload the page.
+> If you have just created the DNS zone and the domain name does not yet appear in your list of services (under `DNS zones`{.action} in the `Web Cloud`{.action} section of the OVHcloud Control Panel), wait 15 to 20 minutes, then reload the page.
 >
 
 ### Step 3: Modify the domain name’s DNS servers
 
 Once the OVHcloud DNS zone is ready to be used, it needs to be activated by declaring the corresponding DNS servers. To do this, first retrieve the names of the OVHcloud **DNS servers** on which your domain name’s DNS zone was created.
 
-Log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the relevant DNS zone. It is named after your domain name and has a globe-shaped logo labelled *DNS* on its left.
+Log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the relevant DNS zone. It is named after your domain name and has a globe-shaped logo labelled *DNS* on its left.
 
 > [!primary]
 > At this point, if you only see the globe-shaped logo (without the label *DNS*), the domain name is already managed in your OVHcloud Control Panel. 

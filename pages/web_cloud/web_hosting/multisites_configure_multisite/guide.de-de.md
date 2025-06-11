@@ -21,7 +21,7 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 
 ## Voraussetzungen
 
-- Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
+- Sie haben ein kompatibles [OVHcloud Webhosting](/links/web/hosting-multisite) in Ihrem Kunden-Account.
 - Sie besitzen eine oder mehrere [Domainnamen](/links/web/domains){.external}.
 - Sie sind berechtigt, die Konfiguration Ihrer Domainnamen (die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)) zu ändern.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
@@ -120,7 +120,7 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 >
 > |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
 > |---|---|---|
-> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain `ovhcontrol` (z.B. `ovhcontrol.domain.tld`) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Bitte beachten Sie, wenn Sie `blog.domain.tld` hinzufügen möchten, dass der Eintrag für die Subdomain `ovhcontrol.domain.tld` sein muss, und nicht `ovhcontrol.blog.domain.tld`.<br></br> Um die relevante DNS-Zone zu bearbeiten, prüfen Sie, welche [DNS-Server](/pages/web_cloud/domains/dns_server_edit) Ihre Domain verwendet. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
+> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain `ovhcontrol` (z.B. `ovhcontrol.domain.tld`) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br><br>Bitte beachten Sie, wenn Sie `blog.domain.tld` hinzufügen möchten, dass der Eintrag für die Subdomain `ovhcontrol.domain.tld` sein muss, und nicht `ovhcontrol.blog.domain.tld`.<br><br> Um die relevante DNS-Zone zu bearbeiten, prüfen Sie, welche [DNS-Server](/pages/web_cloud/domains/dns_server_edit) Ihre Domain verwendet. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
 >
 > ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
 >
@@ -176,7 +176,7 @@ Wenn `A/AAAA` in der Spalte `Diagnose` grün ist, bedeutet dies, dass der **A**-
 
 Wenn `A/AAAA` in der Spalte `Diagnose` gelb angezeigt wird, bedeutet dies, dass der **A**-Eintrag (IPv4) oder **AAAA**-Eintrag (IPv6) Ihres Domainnamens auf eine IP-Adresse verweist, jedoch nicht auf das Webhosting, von dem aus Sie die Daten der Spalte `Diagnose` abrufen.  
 Klicken Sie auf `A/AAAA` für weitere Informationen. Die folgende Meldung wird angezeigt:
--
+
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
 Um DNS-Fehler zu beheben und sicherzustellen, dass korrekt auf das gewünschte Webhosting verwiesen wird, folgen Sie den Schritten in unserer Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“.

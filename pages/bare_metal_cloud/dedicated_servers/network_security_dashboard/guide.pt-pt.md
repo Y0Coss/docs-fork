@@ -1,20 +1,21 @@
 ---
 title: "Monitorização dos ataques DDoS com o Network Security Dashboard"
 excerpt: "Saiba como navegar no Dashboard de Segurança da Rede"
-updated: 2023-12-19
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
 Este guia explica o Dashboard de Segurança de Rede e fornece uma visão geral das medidas de combate desencadeadas pela nossa infraestrutura de proteção DDoS quando uma atividade de rede maliciosa é detetada. Pode encontrar detalhes sobre o desencadeado pelas proteções adicionais a implementar para manter os serviços atualizados e a funcionar. Além disso, o painel de controlo disponibiliza gráficos de tráfego para a limpeza dos períodos de atividade do centro, a fim de melhor visualizar a situação.
 
+> [!warning]
+>
+> **Aviso** : a funcionalidade "Centro de Scrubbing: modo permanente" foi atingida o seu fim de vida útil (EOL) será definitivamente desativado em 8 de setembro de 2025.
+>
+
 ## Requisitos
 
-- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [IP adicional](/links/network/additional-ip), etc.)
+- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
 - Acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
@@ -47,7 +48,7 @@ Durante um ataque, uma ação de mitigação ativa será indicada por um ícone 
 
 ![ataque-linha-vermelha](images/nsd_04_blur.PNG)
 
-Na Área de Cliente OVHcloud, aceda à secção `Bare Metal Cloud`{.action}. A seguir, vá para `Network`{.action} na barra lateral esquerda e clique em `IP`{.action}. Certifique-se de que o "Modo avançado" está ativado para consultar o estado da infraestrutura anti-DDoS e a configuração dos seus componentes.
+Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Endereços IP Públicos`{.action}. Certifique-se de que o "Modo avançado" está ativado para consultar o estado da infraestrutura anti-DDoS e a configuração dos seus componentes.
 
 As colunas correspondem ao estado de limpeza anti-DDoS (**Mitigação**), a Edge Network **Firewall** e a **GAME firewall** apresentam a disponibilidade e os estados.
 
@@ -70,11 +71,7 @@ As colunas correspondem ao estado de limpeza anti-DDoS (**Mitigação**), a Edge
 
 ### Dashboard de Segurança da Rede
 
-Na Área de Cliente OVHcloud, o acesso ao painel de controlo pode ser efetuado a partir da página de listagem de IP (para um IP específico) ou diretamente a partir do painel de controlo de segurança de rede no menu `Network`{.action}.
-
-Aceda ao separador `Bare Metal Cloud`{.action} e, em seguida, ao `Network`{.action}, selecione `Painel de Controlo de Segurança de Rede`{.action}.
-
-Alternativamente, a partir da lista de IPs (esta opção só está disponível quando o centro de limpeza está em funcionamento): Aceda ao separador `Bare Metal Cloud`{.action}, vá para `Network`{.action} e clique em `Endereços IP Públicos`{.action}. Clique no botão `...`{.action} e aceda a `Network Security Dashboard`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} no menu à esquerda do ecrã e, a seguir, em `Network Security Dashboard`{.action}.
 
 No separador **log** do centro de limpeza, pode obter todas as informações sobre ataques que foram detetados no passado (ou que estão em curso).
 

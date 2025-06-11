@@ -1,7 +1,7 @@
 ---
 title: 'Criar uma instância GPU'
 excerpt: 'Saiba como criar uma instância GPU em Linux ou Windows'
-updated: 2024-07-17
+updated: 2025-05-28
 ---
 
 > [!primary]
@@ -38,7 +38,7 @@ Todas as imagens que disponibilizamos são compatíveis com uma instância GPU.
 > Se não se sentir à vontade para compilar manualmente um módulo do kernel, recomendamos que utilize uma distribuição oficialmente suportada pela Nvidia e para a qual a Nvidia forneça drivers *prontos a usar*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Depois de aceder à [Área de Cliente OVHcloud](/links/manager), clique no separador `Public Cloud`{.action}. Selecione o seu projeto Public Cloud e clique em `Instances`{.action} no menu à esquerda no separador **Compute**. De seguida, clique em `Criar instância`{.action} e escolha uma instância GPU compatível:
+Depois de aceder à [Área de Cliente OVHcloud](/links/manager), clique no separador `Public Cloud`{.action}. Selecione o seu projeto Public Cloud e clique em `Instâncias`{.action} no menu à esquerda no separador **Compute**. De seguida, clique em `Criar instância`{.action} e escolha uma instância GPU compatível:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
@@ -61,6 +61,8 @@ sudo dpkg -i cuda-repo-XXXX-XXXXXX
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install cuda
+sudo apt-get install -y cuda-drivers
+sudo apt-get install linux-headers-$(uname -r)
 sudo reboot
 ```
 
@@ -106,7 +108,7 @@ Por isso, oferecemos imagens especiais, baseadas numa BIOS virtual UEFI e que pe
 > Oferecemos a possibilidade de instalar imagens especiais em alguns modelos selecionados (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). Além disso, dependendo da região selecionada, estas imagens especiais podem não estar disponíveis.
 >
 
-Depois de aceder à [Área de Cliente OVHcloud](/links/manager), aceda ao seu projeto Public Cloud e clique em `Instances`{.action} no menu à esquerda no separador **Compute**. De seguida, clique em `Criar uma instância`{.action} e escolha uma instância GPU compatível:
+Depois de aceder à [Área de Cliente OVHcloud](/links/manager), aceda ao seu projeto Public Cloud e clique em `Instâncias`{.action} no menu à esquerda no separador **Compute**. De seguida, clique em `Criar uma instância`{.action} e escolha uma instância GPU compatível:
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
@@ -159,6 +161,6 @@ Depois desse processo, basta instalar o driver necessário que será depois apre
 > Antes de qualquer atualização do driver NVIDIA, é fortemente recomendado que efetue uma snapshot da sua instância, o que lhe permitirá voltar atrás caso seja necessário.
 >
 
-## Vá mais longe
+## Quer saber mais?
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
