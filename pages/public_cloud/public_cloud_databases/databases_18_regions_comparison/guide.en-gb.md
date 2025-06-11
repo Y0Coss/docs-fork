@@ -1,7 +1,7 @@
 ---
 title: "Comparison of Public Cloud Databases Deployment Modes - Understanding 3-AZ / 1-AZ"
 excerpt: "Explore OVHcloud's Public Cloud Databases deployment modes"
-updated: 2025-06-10
+updated: 2025-06-11
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ OVHcloud offers two deployment modes for its [Public Cloud Databases](/links/pub
 OVHcloud managed databases offer two main deployment modes, each optimized for specific use cases and offering various levels of resilience and failover:
 
 1. **1-AZ Region**: for standard applications, offering basic resilience with optimized cost.
-2. **3-AZ Region**: suitable for applications that handles highly critical data or require high availability with low RTO/RPO and resilience to availability zone outage.
+2. **3-AZ Region**: suitable for applications that handle highly critical data or require high availability with low RTO/RPO and resilience to availability zone outage.
 
 ## Deployment modes
 
@@ -23,7 +23,7 @@ OVHcloud managed databases offer two main deployment modes, each optimized for s
 
 ### 1-AZ Region
 
-A 1-AZ Region consists of a **single availability zone covering multiple data centers within the same geographical region**. When a database service is deployed with multiple nodes, this single AZ setup offers resilience against node and disk failures but may be vulnerable to a complete OpenStack region outage. Note that in a 1-AZ region, the database service is located in a specific OpenStack region that spans over multiple data center. The nodes of a multi-node database services are scattered in different hosts that **may be** located in different data centers. If an outage occurs in a specific data center hosting one or multiple nodes of the database service, access to data could be impacted, even if other data centers in the zone remain operational.
+A 1-AZ Region consists of a **single availability zone covering multiple data centers within the same geographical region**. When a database service is deployed with multiple nodes, this single AZ setup offers resilience against node and disk failures but may be vulnerable to a complete OpenStack region outage. Note that in a 1-AZ region, the database service is located in a specific OpenStack region that spans over multiple data centers. The nodes of a multi-node database service are scattered in different hosts that **may be** located in different data centers. If an outage occurs in a specific data center hosting one or multiple nodes of the database service, access to data could be impacted, even if other data centers in the zone remain operational.
 
 #### Characteristics
 
