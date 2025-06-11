@@ -90,7 +90,7 @@ Este cálculo corresponde a la diferencia de precio entre su oferta inicial y su
 
 Siga [estas instrucciones](#modify) para realizar el cambio de producto.
 
-## Ir más allá <a name="go-further"></a>
+## Más información <a name="go-further"></a>
 
 [Consultar las estadísticas y los logs de un sitio alojado en un alojamiento compartido](/pages/web_cloud/web_hosting/logs_and_statistics)
 

@@ -15,7 +15,7 @@ A vista `Websites` permite centralizar a apresentação do conjunto dos seus web
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter um [plano de alojamento web](/links/web/hosting).
 
-## Na Prática
+## Instruções
 
 ### Aceder à vista `Websites`
 
