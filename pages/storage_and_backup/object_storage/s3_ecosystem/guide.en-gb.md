@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Third-party applications compatibility
 excerpt: This guide provides a list of tested, certified third-party applications compatible with OVHcloud Object Storage
-updated: 2025-06-10
+updated: 2025-06-11
 ---
 
 ## Objective
