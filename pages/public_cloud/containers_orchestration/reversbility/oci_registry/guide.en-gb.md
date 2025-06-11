@@ -1,4 +1,4 @@
-,---
+---
 title: Managed OCI artifact Registry Product Reversibility Policy
 updated: 2025-06-10
 ---
