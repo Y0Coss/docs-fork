@@ -1,6 +1,6 @@
 ---
 title: "Web Hosting - New SSL certificate management"
-excerpt: "Find out how to manage an SSL certificate on an OVHcloud Web Hosting plan, using our new management interface"
+excerpt: "Find out how to manage an SSL certificate on an OVHcloud web hosting plan, using our new management interface"
 updated: 2025-06-09
 ---
 
@@ -36,7 +36,7 @@ The main difference lies in the level of checks that will be carried out by the 
 
 You must have an SSL certificate in order to use HTTPS for your website.
 
-**Find out how to manage an SSL certificate on an OVHcloud Web Hosting plan, using our new management interface.**
+**Find out how to manage an SSL certificate on an OVHcloud web hosting plan, using our new management interface.**
 
 ## Requirements
 
@@ -59,21 +59,21 @@ You must have an SSL certificate in order to use HTTPS for your website.
 
 ## Instructions
 
-### Access SSL certificate management from your Web Hosting plan
+### Access SSL certificate management from your web hosting plan
 
 > [!primary]
 >
 > **Information on migrating to the new SSL certificate management interface:**
 >
 > The rest of this guide is aimed at customers whose web hosting services have already migrated to the new SSL certificate management interface.
-> To check if this migration has been carried out, go to your Web Hosting plan in the OVHcloud Control Panel, and check the `SSL certificates` tab.
-> If the `SSL certificates` tab is missing, your service has not yet migrated to the new management interface. If this is the case, please refer to [this guide](/pages/web_cloud/web_hosting/ssl_on_webhosting) directly to manage your SSL certificate.
+> To check if this migration has been carried out, go to your web hosting plan in the OVHcloud Control Panel, and check the `SSL certificates` tab.
+> If the `SSL certificates` tab is missing, your service has not yet migrated to the new management interface. If this is the case, please refer to [this guide](/pages/web_cloud/web_hosting/ssl_on_webhosting) to manage your SSL certificate.
 >
 > For technical reasons, not all of our customers' web hosting services can be migrated at once. This migration process is carried out automatically over a period of a few weeks, with no impact on the operation of your web hosting services, and no intervention or action required on your part.
 >
 > All web hosting services will eventually work with the new SSL certificate management interface.
 
-To access SSL certificate management from your Web Hosting plan, follow the steps below:
+To access SSL certificate management from your web hosting plan, follow the steps below:
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. Click on the `Web Cloud`{.action} tab.
@@ -81,15 +81,15 @@ To access SSL certificate management from your Web Hosting plan, follow the step
 4. Select the web hosting plan concerned.
 5. On the page that appears, click on the `SSL Certificates`{.action} tab.
 
-Here, you can fully manage your SSL certificates for all domain names and subdomains associated with your Web Hosting plan.
+Here, you can fully manage your SSL certificates for all domain names and subdomains associated with your web hosting plan.
 
-### Activate an SSL certificate on your Web Hosting plan <a name="ssl-enable"></a>
+### Activate an SSL certificate on your web hosting plan <a name="ssl-enable"></a>
 
 OVHcloud offers 4 solutions for activating or installing an SSL certificate on a web hosting plan.
 
 **Click on the SSL certificate of your choice below to view explanations.**
 
-/// details | SActivate the free Let's Encrypt (DV) SSL certificate
+/// details | Activate the free Let's Encrypt (DV) SSL certificate
 
 The free Let's Encrypt (DV) SSL certificate can include up to **99** domain names and subdomains declared on a web hosting plan.
 
@@ -98,18 +98,18 @@ The free Let's Encrypt (DV) SSL certificate can include up to **99** domain name
 3. In the left-hand column, click on the `Hosting plans`{.action} menu.
 4. Select the web hosting plan concerned.
 5. On the page that appears, click on the `SSL Certificates`{.action} tab.
-6. Then select the domain or subdomain for which you want to activate the free Let's Encrypt (DV) SSL certificate, under the mention `Activate SSL certificate`.
+6. Then select the domain or subdomain for which you want to activate the free Let's Encrypt (DV) SSL certificate, under `Activate SSL certificate`.
 7. Then click the `Activate SSL Let's Encrypt`{.action} button.
 
 > [!success]
 >
-> A Let's Encrypt SSL certificate is automatically generated for each domain name and subdomain that has recently been declared as a multisite domain on your Web Hosting plan. To check this, check that your domain name and/or subdomain appears in the table at the bottom of the `SSL certificates`{.action} page.
+> A Let's Encrypt SSL certificate is automatically generated for each domain name and subdomain that has recently been declared as a multisite domain on your web hosting plan. To check this, check that your domain name and/or subdomain appears in the table at the bottom of the `SSL certificates`{.action} page.
 
 ///
 
 /// details | Activate the Sectigo (DV) paid SSL certificate
 
-The Sectigo (DV) paid SSL certificate is valid for a single domain name and its subdomain in “www” (for example: `domain.tld` and `www.domain.tld`) or **only** a subdomain (for example: `sub.domain.tld`).
+The Sectigo (DV) paid SSL certificate is valid for a single domain name and its "www" subdomain (for example: `domain.tld` and `www.domain.tld`) or **only** a subdomain (for example: `sub.domain.tld`).
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. Click on the `Web Cloud`{.action} tab.
@@ -119,7 +119,7 @@ The Sectigo (DV) paid SSL certificate is valid for a single domain name and its 
 6. Click the `Order a Sectigo SSL certificate`{.action} button.
 7. In the new window that opens, select the domain or subdomain concerned using the dropdown menu, then click `Confirm`{.action} to be redirected to the purchase order for your Sectigo DV SSL certificate.
 
-Proceed with the order until payment is received in order to confirm the request to create the Sectigo DV SSL certificate for your domain name and/or subdomain on your Web Hosting plan.
+Proceed with the order until payment is received in order to confirm the request to create the Sectigo DV SSL certificate for your domain name and/or subdomain on your web hosting plan.
 
 > [!alert]
 >
@@ -131,7 +131,7 @@ Proceed with the order until payment is received in order to confirm the request
 
 /// details | Activate the Sectigo (EV) paid SSL certificate
 
-The Sectigo (EV) paid SSL certificate is valid for a single domain name and its subdomain in “www” (for example: `domain.tld` and `www.domain.tld`) or **only** a subdomain (for example: `sub.domain.tld`).
+The Sectigo (EV) paid SSL certificate is valid for a single domain name and its "www" subdomain (for example: `domain.tld` and `www.domain.tld`) or **only** a subdomain (for example: `sub.domain.tld`).
 
 > [!warning]
 >
@@ -182,11 +182,11 @@ This solution allows you to install your own SSL certificate for your domain nam
 4. Select the web hosting plan concerned.
 5. On the page that appears, click on the `SSL Certificates`{.action} tab.
 6. Click the `Import your own SSL certificate`{.action} button.
-7. In the form that opens, fill in the 3 fields, then click `Confirm`{.action} to finish importing the custom SSL certificate to your Web Hosting plan.
+7. In the form that opens, fill in the 3 fields, then click `Confirm`{.action} to finish importing the custom SSL certificate to your web hosting plan.
 
 > [!success]
 >
-> To find the information you need to enter in the 3 fields, please refer only to steps **1** and **2** of our guide on "[Web Hosting - How to install a custom SSL certificate](/pages/web_cloud/web_hosting/ssl_custom)".
+> To find the information you need to enter in the 3 fields, please refer only to steps **1** and **2** of our guide "[Web Hosting - How to install a custom SSL certificate](/pages/web_cloud/web_hosting/ssl_custom)".
 
 ///
 
@@ -194,7 +194,7 @@ This solution allows you to install your own SSL certificate for your domain nam
 
 > [!warning]
 >
-> **Before you proceed**, please ensure that deleting the SSL certificate will not render your websites inaccessible. If this is the case, your users will encounter a security error when they try to access your website in HTTPS.
+> **Before you proceed**, please ensure that deleting the SSL certificate will not render your websites inaccessible. If this is the case, your users will encounter a security error when they try to access your website in HTTPS
 
 Since this check is carried out depending on the settings for your website(s), we recommend that you contact a specialist service provider if you encounter any difficulties. We will not be able to assist you with this.
 
