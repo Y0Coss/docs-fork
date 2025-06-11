@@ -82,6 +82,8 @@
             + [Hosted Private Cloud Reversibility Policy](account_and_service_management/reversibility/02-hosted-private-cloud-reversibility-policy)
             + [Politique de réversibilité de VMware on OVHcloud sous la qualification SecNumCloud](account_and_service_management/reversibility/05-snc-vmware-reversibility-policy)
             + [Dedicated Servers Reversibility Policy](account_and_service_management/reversibility/01-dedicated-servers-reversibility-policy)
+            + [Reversibility Policy for Managed Document Database Product](public_cloud/public_cloud_databases/reversbility/rdb_mysql_postgre)
+            +[Reversibility Policy for Managed Document Database Product](public_cloud/public_cloud_databases/reversbility/ddb_mongo)
     + [Responsibility sharing](account-and-service-management-responsibility-sharing)
         + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)
         + [File Storage services - Responsibility model](account_and_service_management/responsibility_sharing/file-storage)
@@ -751,6 +753,9 @@
             + [Public Cloud Databases - How to setup your Kubernetes database operator](public_cloud/public_cloud_databases/databases_12_operator)
             + [Public Cloud Databases - How to setup a service integration](public_cloud/public_cloud_databases/databases_07_cross_service_integration)
             + [Public Cloud Databases - How to fetch service metrics with Prometheus](public_cloud/public_cloud_databases/databases_17_metrics_via_prometheus)
+        +[Reversbility]
+           +[Reversibility Policy for Managed Document Database Product](public_cloud/public_cloud_databases/reversbility/rdb_mysql_postgre)
+           +[Reversibility Policy for Managed Document Database Product](public_cloud/public_cloud_databases/reversbility/ddb_mongo)
         + [MongoDB](products/public-cloud-databases-mongodb)
             + [Getting Started](public-cloud-databases-mongodb-getting-started)
                 + [MongoDB - Why MongoDB](public_cloud/public_cloud_databases/mongodb_17_why_mongodb)
