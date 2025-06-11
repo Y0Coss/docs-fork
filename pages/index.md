@@ -1719,6 +1719,7 @@
             + [Object Storage - Master asynchronous replication across your buckets](storage_and_backup/object_storage/s3_asynchronous_replication)
             + [Object Storage - Getting Started with Versioning](storage_and_backup/object_storage/s3_versioning)
         + [Configure Object Storage with your solutions](storage-object-storage-configure-object-storage-with-your-solutions)
+            + [Object Storage - Third-party applications compatibility](storage_and_backup/object_storage/s3_ecosystem)
             + [Object Storage - Use Object Storage with Rclone](storage_and_backup/object_storage/s3_rclone)
             + [Object Storage - Use Object Storage with S3cmd](storage_and_backup/object_storage/s3_s3cmd)
             + [Object Storage - Use Object Storage with WinSCP](storage_and_backup/object_storage/s3_winscp)
