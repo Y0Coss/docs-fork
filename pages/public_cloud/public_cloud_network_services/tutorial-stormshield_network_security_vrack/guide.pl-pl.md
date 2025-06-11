@@ -4,7 +4,7 @@ excerpt: 'Dowiedz się, jak zabezpieczyć Twoją infrastrukturę OVHcloud dzięk
 updated: 2025-05-29
 ---
 
-## Wymagania początkowe
+## Wprowadzenie
 
 W dzisiejszym, nieustannie zmieniającym się krajobrazie cyfrowym, zabezpieczenie infrastruktury chmurowej stało się priorytetem dla firm każdej wielkości. Ponieważ firmy w coraz większym stopniu polegają na rozwiązaniach chmurowych w swojej działalności, zapewnienie ochrony wrażliwych danych i zachowanie integralności sieci jest krytycznym zadaniem. Stormshield SNS EVA (Stormshield Elastic Virtual Appliance) to kompleksowe rozwiązanie bezpieczeństwa zaprojektowane w celu ochrony środowisk chmurowych przed wieloma zagrożeniami.
 
@@ -18,7 +18,7 @@ Niniejszy przewodnik zawiera instrukcje krok po kroku dotyczące wdrażania i ko
 > W przypadku trudności w stosowaniu się do tych instrukcji zalecamy skontaktowanie się z [wyspecjalizowanym usługodawcą](/links/partner) i/lub omówienie problemu z naszą społecznością. Więcej informacji zawiera sekcja [Sprawdź również](#gofurther) w tym tutorialu.
 >
 
-## Wymagania
+## Wymagania początkowe
 
 - Jeden [projekt Public Cloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) na Twoim koncie OVHcloud.
 - Dostęp do [panelu klienta OVHcloud](/links/manager).
@@ -376,11 +376,11 @@ Powtórz wszystkie kroki w innym regionie, używając sieci VLAN 201 zamiast VLA
 >> Dodaj lokalną sieć prywatną i zdalną sieć prywatną:
 >>
 >>![SNS EVA vrack](images/ipsec-3.png){.thumbnail}
->>>
+>>
 > **Etap 2**
 >>
 >> Utwórz bramę zdalną:
->>>
+>>
 >>![SNS EVA vrack](images/ipsec-4.png){.thumbnail}
 >>
 > **Etap 3**
