@@ -67,4 +67,4 @@ La facturation est à l’usage, sans engagement. Aucun frais de résiliation sp
 
 ## Conservation des données après résiliation du contrat
 
-Après suppression du service ou résiliation du contrat, OVHcloud supprime définitivement tous les artefacts, images, signatures et métadonnées stockés dans le registre. Les logs et historiques d’accès sont également supprimés. Il est donc impératif d’exporter toutes les données nécessaires avant suppression, aucune restauration n’étant possible après coup.
+Après suppression du service ou résiliation du contrat, OVHcloud supprime définitivement tous les artefacts, images, signatures et métadonnées stockés dans le registre. Les logs et historiques d’accès sont également supprimés. Il est donc impératif d’exporter toutes les données nécessaires avant suppression, aucune restauration n’étant possible après la résiliation.
