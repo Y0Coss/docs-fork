@@ -21,7 +21,7 @@ The product features are divided into three categories:
 
 ## Main features
 
-| Feature| Description | Formats | Migration model | Documentation available |
+| Functionality| Description | Formats | Migration model | Documentation available |
 | --- | --- | --- | --- | --- |
 | **OCI API and OCI compatibility** | Native OCI (Open Container Initiative) support for artifacts, images, Helm charts, Cosign signatures, and more. | OCI, Helm, Cosign (signatures), JSON   | **Inbound** : Direct push of artifacts via standard tools (docker, helm, oras, cosign, etc.) or OCI API.<br>**Outbound** : Pull/export of artifacts via the same tools or API to any other OCI/Harbor/Artifact Registry compatible registry. | [Migrate Helm Chart from Chartmuseum to OCI](/pages/public_cloud/containers_orchestration/managed_private_registry/migrate-helm-charts-from-chartmuseum-to-oci)|
 | **Import/Export Artifacts**   | Upload and download artifacts (push/pull) via CLI/API standard Harbor/OCI | OCI, Helm, JSON | **Inbound**:Import via docker push, helm push, oras push, etc.<br>**Outbound** : Export via docker pull, helm pull, oras pull, then push to the target. | [Artifact Import/Export](/pages/public_cloud/containers_orchestration/managed_private_registry/migrate-helm-charts-from-chartmuseum-to-oci) |
@@ -31,7 +31,7 @@ The product features are divided into three categories:
 
 ## OVHcloud implementation
 
-| Feature| Description | Formats | Migration model | Documentation available |
+| Functionality| Description | Formats | Migration model | Documentation available |
 | --- | --- | --- | --- | --- |
 | **RBAC and rights management** | Manage access rights by project, user, robot account, RBAC Harbor | JSON (policies), interne Harbor | **Incoming**: Permissions are adjusted manually during import.<br>**Outgoing**: Artifacts are exported, then permissions are reconfigured on the target (RBAC format not always compatible between solutions). |[Managing users and projects](/pages/public_cloud/containers_orchestration/managed_private_registry/managing-users-and-projects)|
 | **Audit logs and logs** | Automatic access logging and operations (Harbor/OVHcloud logs) | JSON, internal logs | **Incoming**: Not applicable for import.<br>**Outgoing**: Manually export logs if required, adaptation required depending on the target (format/non-standardized logs).|[Access and Search Project Logs](https://goharbour.io/docs/2.3.0/working-with-projects/project-configuration/access-project-logs/) |
@@ -41,7 +41,7 @@ The product features are divided into three categories:
 
 ## Specific features
 
-| Feature| Description | Formats | Migration model | Documentation available |
+| Functionality| Description | Formats | Migration model | Documentation available |
 | --- | --- | --- | --- | --- |
 | **Managed via the OVHcloud Control Panel** | OVHcloud-specific graphical interface and API for service management | N/A | **Inbound**: N/A<br>**Outbound**: Scripts/API to rewrite for the target, manual management required. | [OVHcloud API ](https://eu.api.ovh.com/console/?section=%2FallDom&branch=v1)|
 | **Infrastructure as Code** | Automated deployment via Terraform modules specific to OVHcloud | N/A | **Inbound:** Scripts must be adapted for other providers. <br> **Outbound:** Terraform configurations need to be rewritten. | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs) |
