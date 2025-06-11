@@ -75,4 +75,4 @@ Dans le cas de l’utilisation de Rancher, la facturation inclura un montant min
 
 ## Rétention des données après résiliation du contrat
 
-Après suppression du service ou résiliation du contrat, OVHcloud libère les ressources du cluster. Il est donc impératif d’exporter toutes les données et configurations nécessaires avant suppression, aucune restauration n’étant possible après coup.
+Après suppression du service ou résiliation du contrat, OVHcloud libère les ressources du cluster. Il est donc impératif d’exporter toutes les données et configurations nécessaires avant suppression, aucune restauration n’étant possible après la résiliation.
