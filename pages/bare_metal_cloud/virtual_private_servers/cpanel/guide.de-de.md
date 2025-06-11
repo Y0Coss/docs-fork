@@ -38,7 +38,7 @@ Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten
 
 Um Ihren cPanel Server zu installieren, bestellen Sie einen VPS mit cPanel Distribution.
 
-![horizon](images/cpanel_order.png){.thumbnail}
+![horizon](images/cpanel-order.png){.thumbnail}
 
 Wenn Ihr VPS bereit ist, erhalten Sie eine E-Mail mit den Zugangsdaten, um sich mit Ihrem cPanel-Server zu verbinden, nach dem folgenden Schema:
 

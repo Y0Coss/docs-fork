@@ -38,7 +38,7 @@ Se já dispõe de um VPS e deseja instalar o cPanel, pode reinstalar o VPS a par
 
 Para instalar o seu servidor cPanel, encomende um VPS com a distribuição cPanel.
 
-![cPanel](images/cpanel_order.png){.thumbnail}
+![cPanel](images/cpanel-order.png){.thumbnail}
 
 Quando o VPS estiver pronto, receberá um e-mail a dar-lhe as informações de acesso ao servidor cPanel:
 
