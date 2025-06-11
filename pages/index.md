@@ -1100,6 +1100,7 @@
             + [Analytics - Security overview](public_cloud/public_cloud_databases/information_01_security_overview)
             + [Analytics - Lifecycle policy](public_cloud/data_analytics/analytics/information_02_lifecycle_policy)
             + [Analytics - Capabilities and Limitations](public_cloud/data_analytics/analytics/information_03_capabilities)
+            + [Comparison of Analytics Engines Deployment Modes - Understanding 3-AZ / 1-AZ](public_cloud/data_analytics/analytics/analytics_regions_comparison)
             + [Analytics - Maintenance operations](public_cloud/data_analytics/analytics/information_04_maintenances)
             + [Analytics - Automated Backups](public_cloud/data_analytics/analytics/information_05_automated_backups)
         + [General guides](products/public-cloud-data-analytics-general-guides)
