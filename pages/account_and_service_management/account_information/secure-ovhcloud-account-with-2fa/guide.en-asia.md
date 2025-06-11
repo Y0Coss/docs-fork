@@ -58,7 +58,7 @@ We offer three different methods (click on the tabs below to view their explanat
 >>
 >> > [!success]
 >> > **Advantages of this method**:
->>>
+>> >
 >> > - Once you have linked the application to your account for the first time, you no longer need to be connected to the internet on your smartphone/tablet for the codes to be generated.
 >> > - You can use a single OTP application for all of your services or sites that require two-factor authentication.
 >>

@@ -455,7 +455,7 @@ Para corrigir isto, siga estes passos:
 >>
 > **Caso n°2**
 >>
->> Os `Alvos` (servidores DNS) das entradas do tipo `NS` declaradas na zona DNS do nome de domínio **não são idênticos** às que são obtidas no separador "Servidores DNS" {.action}. No entanto, os `Alvos` (servidores DNS) assumem uma das seguintes formas:
+>> Os `Alvos` (servidores DNS) das entradas do tipo `NS` declaradas na zona DNS do nome de domínio **não são idênticos** às que são obtidas no separador `Servidores DNS`{.action}. No entanto, os `Alvos` (servidores DNS) assumem uma das seguintes formas:
 >>
 >> - `nsXX.ovh.net` e `dnsXX.ovh.net` **ou** `nsXXX.ovh.net` e `dnsXXX.ovh.net` (em que cada `X` designa um algarismo compreendido entre **0** e **9**);
 >> - `nsXX.ovh.ca` e `dnsXX.ovh.ca` **ou** `nsXXX.ovh.ca` e `dnsXXX.ovh.ca` (em que cada `X` designa um algarismo compreendido entre **0** e **9**);

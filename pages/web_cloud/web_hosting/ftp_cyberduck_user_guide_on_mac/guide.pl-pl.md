@@ -83,7 +83,7 @@ Aby zalogować się do przestrzeni hostingu, wykonaj następujące kroki:
 
 > [!success]
 >
-> - Możesz zarejestrować hasło w Cyberduck zaznaczając opcję "Add to keychain`{.action}. Jeśli nie zaznaczysz tego pola, wprowadź hasło, aby zalogować się ponownie do Twojej przestrzeni hostingowej.
+> - Możesz zarejestrować hasło w Cyberduck zaznaczając opcję `Add to keychain`{.action}. Jeśli nie zaznaczysz tego pola, wprowadź hasło, aby zalogować się ponownie do Twojej przestrzeni hostingowej.
 > - Jeśli nie znasz wszystkich swoich danych FTP (serwer, dane do logowania, etc.), zapoznaj się z przewodnikiem "[Logowanie do przestrzeni dyskowej FTP Twojego hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)".
 > 
 
