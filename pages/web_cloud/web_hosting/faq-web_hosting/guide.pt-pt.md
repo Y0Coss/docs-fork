@@ -469,7 +469,7 @@ Para corrigir isto, siga estes passos:
 >> Neste caso, isto significa que o seu domínio não utiliza os servidores DNS corretos da OVHcloud para aplicar a configuração da zona DNS presente no separador `Zona DNS`{.action}.
 >>
 >> Para corrigir isto, siga estes passos:
->>>
+>>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
 >> 2. Clique no menu `Nomes de domínio`{.action} e escolha o domínio em causa.
 >> 3. Na página que se abrir, clique no separador `Servidores DNS`{.action}.

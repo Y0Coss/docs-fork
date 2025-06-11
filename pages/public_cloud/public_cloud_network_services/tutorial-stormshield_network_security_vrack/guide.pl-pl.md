@@ -376,11 +376,11 @@ Powtórz wszystkie kroki w innym regionie, używając sieci VLAN 201 zamiast VLA
 >> Dodaj lokalną sieć prywatną i zdalną sieć prywatną:
 >>
 >>![SNS EVA vrack](images/ipsec-3.png){.thumbnail}
->>>
+>>
 > **Etap 2**
 >>
 >> Utwórz bramę zdalną:
->>>
+>>
 >>![SNS EVA vrack](images/ipsec-4.png){.thumbnail}
 >>
 > **Etap 3**
