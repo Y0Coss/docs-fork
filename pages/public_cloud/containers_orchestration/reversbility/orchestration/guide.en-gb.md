@@ -66,7 +66,7 @@ OVHcloud also offers a dedicated service: [**OVHcloud Professional Services**](h
 
 ## Cost and fees
 
-Pay as you go billing. Billing stops when the customer no longer consumes resources. No specific cancelation fees apply: deleting the service will stop the billing immediately. Any associated OVHcloud credits cannot be transferred.
+Billing on a pay-per-use basi. it stops when the customer no longer consumes resources. No specific cancelation fees apply: deleting the service will stop the billing immediately. Any associated OVHcloud credits cannot be transferred.
 
 After the service has been canceled, OVH frees up its resources, making it impossible to retrieve the data. It is the customer’s responsibility to export their configurations, manifests and images prior to termination, due to the release of resources.
 
