@@ -1,6 +1,6 @@
 ---
 title: Politique de réversibilité du produit Object Storage 3AZ
-updated: 2025-06-10
+updated: 2025-06-11
 ---
 
 ## Objectif
@@ -60,4 +60,3 @@ Aucun frais de résiliation : Pas de sur facturation à l’usage. Le service es
 Les données sont supprimées par action du client lui-même. OVHcloud ne conserve aucune donnée. Une exportation manuelle préalable est obligatoire pour préserver les données.
 Un point d’attention concernant la fonctionnalité Object Lock. Plus d’informations à retrouver sur la documentation associée.
 Une fois le service resilié par le client, OVHCloud libère les ressources qui étaient allouées.
-

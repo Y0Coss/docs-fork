@@ -1,6 +1,6 @@
 ---
 title: Object Storage 3AZ product reversibility policy
-updated: 2025-06-10
+updated: 2025-06-11
 ---
 
 ## Objective
@@ -31,7 +31,7 @@ The functionalities of the Product are divided into three categories:
 
 | **Functionality** | **Description** | **Available formats** | **Migration model** | **Documentation available** |
 | --- | --- | --- | --- | --- |
-| Offsite Replication OVHcloud | Automatic replication of data to a separate OVHcloud 1-AZ region | S3 (replicated objects) | **Incoming**: Not applicable to direct import, requires OVHcloud configuration.<br>  **Outgoing**: Manual restore from the replicated region, then export to external target (requires adaptation if the target does not have an equivalent mechanism). | [Cross region replication](pages/storage_and_backup/object_storage/s3_asynchronous_replication) |
+| Offsite Replication OVHcloud | Automatic replication of data to a separate OVHcloud 1-AZ region | S3 (replicated objects) | **Incoming**: Not applicable to direct import, requires OVHcloud configuration.<br>  **Outgoing**: Manual restore from the replicated region, then export to external target (requires adaptation if the target does not have an equivalent mechanism). | [Cross region replication](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) |
 | Object Lock | Object immutability (WORM), prevents deletion/modification for a defined period | S3 (Object Lock) | **Incoming**: Requires the source to support S3 Object Lock.</b>  **Outgoing**: Export possible, but the target must support S3 locking or manual adjustment of immutability policies.** | [Object storage ObjectLock](/pages/storage_and_backup/object_storage/s3_managing_object_lock) |
 | ACL and advanced access management | Rights management access via ACL S3, or specific policies | S3 (ACL, policies) | **Incoming** : Adaptation of accesses according to the target structure. <br>  **Outgoing**: Export of objects, but reconfiguration of ACL/policies required on the destination platform | [Access management](/pages/storage_and_backup/object_storage/s3_bucket_acl) |
 
