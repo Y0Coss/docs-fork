@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2025-05-12
+updated: 2025-06-04
 ---
 
 <style>
@@ -138,7 +138,7 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
     <tr>
         <th>AWS</th>
         <th>OVHcloud mapping actuel</th>
-        <th>OVHcloud mapping à partir du 17-06-2025</th>
+        <th>OVHcloud mapping à partir du 04-06-2025</th>
     </tr>
     <tr>
         <td>EXPRESS_ONEZONE</td> 
@@ -175,7 +175,7 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
 </table>
 
 _<sup>2</sup> :La classe de stockage par défaut sur le point de terminaison **io** sera Standard, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau Standard._
-_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 17-06-2025._
+_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 04-06-2025._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **io** est le suivant :
 
@@ -198,10 +198,10 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     </tr>
 </table>
 
-_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 17-06-2025._
+_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 04-06-2025._
 
 > [!warning]
-> Contrairement à AWS, Express One Zone sera traité comme une classe de stockage régulière par OVHcloud et toutes les fonctionnalités et opérations d'API seront disponibles.
+> Contrairement à AWS, Express One Zone est traité comme une classe de stockage régulière par OVHcloud et toutes nos fonctionnalités compatibles S3 prises en charge et leurs opérations d'API associées sont disponibles.
 
 ### Rétrocompatibilité des points de terminaison
 
@@ -216,7 +216,7 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     <tr>
         <th>AWS</th>
         <th>OVHcloud mapping actuel</th>
-        <th>OVHcloud mapping à partir du 17-06-2025</th>
+        <th>OVHcloud mapping à partir du 04-06-2025</th>
     </tr>
     <tr>
         <td>EXPRESS_ONEZONE</td> 
@@ -252,7 +252,7 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
     </tr>
 </table>
 
-_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 17-06-2025._
+_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 04-06-2025._
 _<sup>4</sup> : Le niveau de stockage par défaut sur le point de terminaison **perf** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau High Performance._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **perf** est le suivant :
@@ -275,7 +275,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
     </tr>
 </table>
 
-_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 17-06-2025._
+_<sup>3</sup> : Le niveau de stockage Standard Infrequent Access sera disponible à partir du 04-06-2025._
 
 ## Object Storage Swift
 

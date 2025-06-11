@@ -18,10 +18,6 @@ details[open]>summary::before {
 }
 </style>
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Obiettivo
 
 Le istanze Public Cloud sono semplici da installare e gestire. In quanto membri dell'ecosistema Public Cloud di OVHcloud, le istanze offrono numerose opzioni di configurazione e possono essere adattate ai diversi casi d'uso. Le istruzioni seguenti includono tutti gli step necessari (e anche quelli facoltativi) per creare un’istanza nello Spazio Cliente OVHcloud e accedervi da remoto.  
@@ -430,7 +426,7 @@ Se la tua [coppia di chiavi SSH è configurata correttamente](#create-ssh), puoi
 
 > [!primary]
 >
-> Se ricevi messaggi di errore relativi alle **chiavi SSH**, verifica che il tuo dispositivo locale disponga di una chiave SSH privata configurata correttamente utilizzando le informazioni di [questa guida](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
+> Se ricevi messaggi di errore relativi alle **chiavi SSH**, verifica che il tuo dispositivo locale disponga di una chiave SSH privata configurata correttamente utilizzando le informazioni di [questa guida](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
 > In caso di difficoltà, è possibile sostituire la coppia di chiavi utilizzando [questa guida](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Se hai creato un’istanza senza chiave SSH, tramite l’[API OVHcloud](/pages/manage_and_operate/api/first-steps) o l’[interfaccia OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), puoi aggiungere una chiave SSH alla tua istanza soltanto tramite il [modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) seguendo le istruzioni descritte in [questa guida](/pages/public_cloud/compute/replacing_lost_ssh_key).
@@ -488,7 +484,7 @@ A questo punto sarà necessario completare la configurazione iniziale del sistem
 
 <a name="login-windows"></a>
 
-###### 5.3.2: Connessione remota da Windows
+##### 5.3.2: Connessione remota da Windows
 
 Sul computer Windows locale, è possibile utilizzare l’applicazione client `Remote Desktop Connection` per connettersi all’istanza.
 

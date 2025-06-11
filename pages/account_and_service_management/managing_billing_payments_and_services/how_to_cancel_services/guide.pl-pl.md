@@ -8,7 +8,7 @@ updated: 2025-04-28
 
 Chcesz zrezygnować z jednej lub kilku usług OVHcloud. Z tego przewodnika dowiesz się, jak przerwać subskrypcję w Panelu klienta OVHcloud.
 
-- Zapoznaj się z częścią "Co się stanie, gdy usługa OVHcloud zostanie wyłączona?" znajdującą się poniżej.
+- Zapoznaj się z częścią "[Co się stanie, gdy usługa OVHcloud zostanie wyłączona?](#consequences)".
 - Następnie wybierz odpowiedni produkt w sekcji "[Jak zrezygnować z abonamentu?](#terminate)".
 
 ### Co się stanie, gdy usługa OVHcloud zostanie wyłączona? <a name="consequences"></a>
