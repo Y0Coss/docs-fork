@@ -62,9 +62,9 @@ OVHcloud also offers a dedicated service: [**OVHcloud Professional Services**](h
 
 ## Cost and fees
 
-You are billed on a pay-per-use basis, with no commitment. No specific cancelation fees apply: deleting the service will stop the billing immediately. Any associated OVHcloud credits cannot be transferred. It is the customer’s responsibility to export their artifacts before deletion, as deleting them is irreversible.
+Billing based on a pay-per-use basis, with no commitment. No specific cancelation fees apply: deleting the service will stop the billing immediately. Any associated OVHcloud credits cannot be transferred. It is the customer’s responsibility to export their artifacts before deletion, as deleting them is irreversible.
 
 
-## Retention of data after termination of contract
+## Data Retention after termination of the contract
 
 After deletion of the service or termination of the contract, OVHcloud permanently deletes all artifacts, images, signatures and metadata stored in the registry. Logs and access histories are also deleted. It is therefore imperative to export all necessary data before deletion, as no restoration is possible after the cancelation.
