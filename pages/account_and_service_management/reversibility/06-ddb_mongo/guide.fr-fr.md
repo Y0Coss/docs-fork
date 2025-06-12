@@ -40,7 +40,7 @@ Les fonctionnalités de la gamme de produits Managed Document Database sont rép
 | --- | --- | --- | --- | --- |
 | Réseau privé OVHcloud (vRack) | Connexion avec d’autres services OVHcloud en réseau privé. | N/A | **Entrant** : Config vRack. <br> **Sortant** : Fonctionnalité non transférable. | [vRack](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
 | Mises à jour gérées par OVHcloud | Gestion des versions de MongoDB par OVHcloud. | N/A | **Entrant** : Vérifier la compatibilité. <br> **Sortant** : Migration sous la responsabilité du client. | [MongoDB](/products/public-cloud-databases-mongodb) |
-| Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrante** : Le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortante** : Commandez et configurez un anti-DDoS chez le nouveau fournisseur. | [OVHcloudDDoS Protection](/links/security/antiddos) |
+| Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrante** : Le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortante** : Commandez et configurez un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
 
