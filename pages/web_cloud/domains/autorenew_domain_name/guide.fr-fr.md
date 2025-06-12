@@ -109,7 +109,7 @@ Dans ce cas, la durée de validité souscrite sera rajoutée au temps de validit
 
 ### Suivre le renouvellement de mon nom de domaine
 
-Une fois le prélèvement du revnouellement effectué, le nom de domaine sera renouvelé la veille de son expiration (environ un mois après le prélèvement).
+Une fois le prélèvement du renouvellement effectué, le nom de domaine sera renouvelé la veille de son expiration (environ un mois après le prélèvement).
 
 Les données affichées dans le WHOIS seront alors mises à jour, confirmant le bon renouvellement du nom de domaine.
 
