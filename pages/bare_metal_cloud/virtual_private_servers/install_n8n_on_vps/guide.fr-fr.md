@@ -100,6 +100,10 @@ EMAIL=admin@exemple.com
 
 Remplacez `exemple.com` par votre véritable nom de domaine et `admin@exemple.com` par l'e-mail de votre choix.
 
+> [!warning]
+>
+> Si vous ne possédez pas encore de nom de domaine, commandez-en un sur notre [site web](https://www.ovhcloud.com/fr/domains/).
+
 #### Fichier docker-compose.yml
 
 Ce fichier contient la définition des services N8N et Traefik. Il configure notamment :
@@ -117,8 +121,6 @@ nano docker-compose.yml
 Collez le contenu suivant :
 
 ```console
-version: "3.8"
-
 services:
   traefik:
     image: traefik:v2.11
