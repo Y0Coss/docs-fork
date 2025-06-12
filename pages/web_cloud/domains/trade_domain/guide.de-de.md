@@ -24,7 +24,7 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verwalten einen bei OVHcloud registrierten Domainnamen, für den keine Operation (Inhaberwechsel, Transfer, Erstellung) im Gange ist. Wenn vor kurzem ein solcher Vorgang für Ihren Domainnamen abgeschlossen wurde, gilt regulär eine Frist von 60 Kalendertagen, bevor eine neue Operation gestartet werden kann.
-- Sie sind die [Administrator- und Rechnungskontakte](/pages/account_and_service_management/account_information/managing_contacts) des entsprechenden Domainnamens.
+- Ihr Kunden-Account ist der [Kontakt für Administrator und Abrechnung](/pages/account_and_service_management/account_information/managing_contacts) des entsprechenden Domainnamens.
 - Sie haben die Zustimmung des aktuellen Inhabers des Domainnamens, den Inhaberwechsel durchzuführen oder Daten zu aktualisieren.
 
 ## In der praktischen Anwendung
