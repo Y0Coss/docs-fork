@@ -115,10 +115,10 @@ Les données affichées dans le WHOIS seront alors mises à jour, confirmant le 
 
 Pour vérifier le statut du renouvellement de votre nom de domaine :
 
-- Connectez-vous à votre [espace client OVHcloud](/links/manager).
-- Rendez-vous dans la partie `Web Cloud`{.action}.
-- Cliquez sur `Noms de domaine`{.action} dans la section `Domaines et DNS`{.action}.
-- Dans le tableau qui s'affiche, vérifiez le statut du renouvellement dans la colonne `Statut` sur la ligne du nom de domaine concerné.
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+1. Rendez-vous dans la partie `Web Cloud`{.action}.
+1. Cliquez sur `Noms de domaine`{.action} dans la section `Domaines et DNS`{.action}.
+1. Dans le tableau qui s'affiche, vérifiez le statut du renouvellement dans la colonne `Statut` sur la ligne du nom de domaine concerné.
 
 La mention `Renouvellement en cours` est présente une fois le paiement effectué, jusqu'au renouvellement effectif de votre nom de domaine auprès du registre.
 
@@ -184,10 +184,10 @@ Les données du WHOIS se mettront ensuite à jour.
 
 Pour vérifier le statut du renouvellement de votre nom de domaine :
 
-- Connectez-vous à votre [espace client OVHcloud](/links/manager).
-- Rendez-vous dans la partie `Web Cloud`{.action}.
-- Cliquez sur `Noms de domaine`{.action} dans la section `Domaines et DNS`{.action}.
-- Dans le tableau qui s'affiche, vérifiez le statut du renouvellement dans la colonne `Statut` sur la ligne du nom de domaine concerné.
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+1. Rendez-vous dans la partie `Web Cloud`{.action}.
+1. Cliquez sur `Noms de domaine`{.action} dans la section `Domaines et DNS`{.action}.
+1. Dans le tableau qui s'affiche, vérifiez le statut du renouvellement dans la colonne `Statut` sur la ligne du nom de domaine concerné.
 
 ///
 

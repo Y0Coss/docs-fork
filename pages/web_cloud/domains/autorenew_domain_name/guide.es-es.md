@@ -115,10 +115,10 @@ Los datos mostrados en el Whois se actualizarán para confirmar la renovación d
 
 Para comprobar el estado de la renovación del dominio:
 
-- Conéctese a su [área de cliente de OVHcloud](/links/manager).
-- Acceda a la sección `Web Cloud`{.action} en la columna izquierda.
-- Haga clic en `Dominios`{.action} en la sección `Dominios y DNS`{.action}.
-- Compruebe el estado de la renovación en la columna `Estado` de la línea correspondiente al dominio.
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+1. Acceda a la sección `Web Cloud`{.action} en la columna izquierda.
+1. Haga clic en `Dominios`{.action} en la sección `Dominios y DNS`{.action}.
+1. Compruebe el estado de la renovación en la columna `Estado` de la línea correspondiente al dominio.
 
 Una vez realizado el pago, aparecerá la indicación `Renovación en curso` hasta la renovación efectiva de su dominio en el registro.
 
@@ -184,10 +184,10 @@ Los datos del WHOIS se actualizarán posteriormente.
 
 Para comprobar el estado de la renovación del dominio:
 
-- Conéctese a su [área de cliente de OVHcloud](/links/manager).
-- Acceda a la sección `Web Cloud`{.action} en la columna izquierda.
-- Haga clic en `Dominios`{.action} en la sección `Dominios y DNS`{.action}.
-- Compruebe el estado de la renovación en la columna `Estado` de la línea correspondiente al dominio.
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+1. Acceda a la sección `Web Cloud`{.action} en la columna izquierda.
+1. Haga clic en `Dominios`{.action} en la sección `Dominios y DNS`{.action}.
+1. Compruebe el estado de la renovación en la columna `Estado` de la línea correspondiente al dominio.
 
 ///
 

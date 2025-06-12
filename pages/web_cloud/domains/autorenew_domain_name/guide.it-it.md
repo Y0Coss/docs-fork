@@ -115,10 +115,10 @@ I dati visualizzati nel WHOIS saranno aggiornati, a conferma del corretto rinnov
 
 Per verificare lo stato del rinnovo del dominio:
 
-- Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-- Accedi alla sezione `Web Cloud`{.action}.
-- Clicca su `Domini`{.action} nella sezione `Domini e DNS`{.action}.
-- Nella tabella che appare, verifica lo stato del rinnovo nella colonna `Stato` della riga del nome di dominio pertinente.
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
+1. Accedi alla sezione `Web Cloud`{.action}.
+1. Clicca su `Domini`{.action} nella sezione `Domini e DNS`{.action}.
+1. Nella tabella che appare, verifica lo stato del rinnovo nella colonna `Stato` della riga del nome di dominio pertinente.
 
 Una volta effettuato il pagamento, comparirà la dicitura `Rinnovo in corso` fino al rinnovo effettivo del dominio presso il Registro.
 
@@ -184,10 +184,10 @@ I dati del WHOIS si aggiorneranno in seguito.
 
 Per verificare lo stato del rinnovo del dominio:
 
-- Accedi allo [Spazio Cliente OVHcloud](/links/manager).
-- Accedi alla sezione `Web Cloud`{.action}.
-- Clicca su `Domini`{.action} nella sezione `Domini e DNS`{.action}.
-- Nella tabella che appare, verifica lo stato del rinnovo nella colonna `Stato` della riga del nome di dominio pertinente.
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
+1. Accedi alla sezione `Web Cloud`{.action}.
+1. Clicca su `Domini`{.action} nella sezione `Domini e DNS`{.action}.
+1. Nella tabella che appare, verifica lo stato del rinnovo nella colonna `Stato` della riga del nome di dominio pertinente.
 
 ///
 

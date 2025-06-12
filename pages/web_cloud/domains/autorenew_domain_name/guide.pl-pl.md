@@ -115,10 +115,10 @@ Dane wyświetlane w bazie WHOIS są aktualizowane w celu potwierdzenia poprawneg
 
 Aby sprawdzić status odnowienia domeny:
 
-- Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-- Przejdź do sekcji `Web Cloud`{.action}.
-- Kliknij na `Domeny`{.action} w sekcji `Domeny i DNS`{.action}.
-- W tabeli, która się wyświetla sprawdź status odnowienia w kolumnie `Status` danej domeny.
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+1. Przejdź do sekcji `Web Cloud`{.action}.
+1. Kliknij na `Domeny`{.action} w sekcji `Domeny i DNS`{.action}.
+1. W tabeli, która się wyświetla sprawdź status odnowienia w kolumnie `Status` danej domeny.
 
 Informacja `Odnowienie w trakcie` będzie pojawiać się po dokonaniu płatności, do momentu odnowienia domeny przez registry.
 
@@ -184,10 +184,10 @@ Dane WHOIS są aktualizowane.
 
 Aby sprawdzić status odnowienia domeny:
 
-- Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
-- Przejdź do sekcji `Web Cloud`{.action}.
-- Kliknij na `Domeny`{.action} w sekcji `Domeny i DNS`{.action}.
-- W tabeli, która się wyświetla sprawdź status odnowienia w kolumnie `Status` danej domeny.
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+1. Przejdź do sekcji `Web Cloud`{.action}.
+1. Kliknij na `Domeny`{.action} w sekcji `Domeny i DNS`{.action}.
+1. W tabeli, która się wyświetla sprawdź status odnowienia w kolumnie `Status` danej domeny.
 
 ///
 

@@ -112,10 +112,10 @@ Die im WHOIS angezeigten Daten werden dann aktualisiert, um die korrekte Domain-
 
 So überprüfen Sie den Verlängerungsstatus Ihrer Domain:
 
-- Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager).
-- Gehen Sie in den Bereich `Web Cloud`{.action}.
-- Klicken Sie im Bereich `Domains und DNS`{.action} auf `Domainnamen`{.action}.
-- Überprüfen Sie in der daraufhin angezeigten Tabelle den Verlängerungsstatus in der Spalte `Status` des betreffenden Domainnamens.
+1. Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager).
+1. Gehen Sie in den Bereich `Web Cloud`{.action}.
+1. Klicken Sie im Bereich `Domains und DNS`{.action} auf `Domainnamen`{.action}.
+1. Überprüfen Sie in der daraufhin angezeigten Tabelle den Verlängerungsstatus in der Spalte `Status` des betreffenden Domainnamens.
 
 Das Wort `Erneuerung in Bearbeitung` erscheint nach der Zahlung, bis Ihr Domainname zusammen mit der Registry verlängert wurde.
 
@@ -181,10 +181,10 @@ WHOIS-Daten werden dann aktualisiert.
 
 So überprüfen Sie den Verlängerungsstatus Ihrer Domain:
 
-- Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager).
-- Gehen Sie in den Bereich `Web Cloud`{.action}.
-- Klicken Sie im Bereich `Domains und DNS`{.action} auf `Domainnamen`{.action}.
-- Überprüfen Sie in der daraufhin angezeigten Tabelle den Verlängerungsstatus in der Spalte `Status` des betreffenden Domainnamens.
+1. Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager).
+1. Gehen Sie in den Bereich `Web Cloud`{.action}.
+1. Klicken Sie im Bereich `Domains und DNS`{.action} auf `Domainnamen`{.action}.
+1. Überprüfen Sie in der daraufhin angezeigten Tabelle den Verlängerungsstatus in der Spalte `Status` des betreffenden Domainnamens.
 
 ///
 
