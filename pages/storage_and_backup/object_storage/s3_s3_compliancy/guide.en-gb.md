@@ -498,7 +498,7 @@ This guide lists the features supported by Object Storage.
         <td>yes</td>
     </tr>
     <tr>
-        <td rowspan="4">Pre-signed urls</td>
+        <td rowspan="4">Presigned urls</td>
         <td>GET</td>
         <td>yes</td>
         <td>yes</td>
