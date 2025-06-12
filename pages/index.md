@@ -85,7 +85,6 @@
             + [File Storage reversibility policy](storage_and_backup/file_storage/reversibility)
             + [Cold Storage product reversibility policy](storage_and_backup/object_storage/reversibility/cold_storage)
             + [Object Storage 3AZ product reversibility policy](storage_and_backup/object_storage/reversibility/object_storage_3az)
-![image](https://github.com/user-attachments/assets/aa3a0e9e-d183-44a8-8d9d-84626c736737)
 
     + [Responsibility sharing](account-and-service-management-responsibility-sharing)
         + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)
