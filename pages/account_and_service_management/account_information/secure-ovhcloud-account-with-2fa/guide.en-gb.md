@@ -31,7 +31,7 @@ This guide will help you:
 - [Enable your first two-factor authentication method](#enabling-2fa)
 - [Find out how to log in with two-factor authentication](#login-2fa)
 - [Find out what to do if your phone/tablet/key is lost/stolen/damaged](#lost-device)
-- [Find out how to disable two-factor authentication completely](#desactivation)
+- [Find out how to disable two-factor authentication completely](#disable-2fa)
 
 ## Requirements
 
