@@ -1,67 +1,75 @@
 ---
-titre : «Politique de réversbilité du produit Managed Document Database»
-mise à jour : 2025-06-06
+title: "Politique de réversibilité du produit Managed Document Database"
+updated: 2025-06-12
 ---
 
-**Objectif**
+## Objectif
 
 Ce document décrit la politique de réversibilité de la gamme de produits Managed Document Database couvrant l'offre OVHcloud MongoDB.
 
 Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
-**Liste des fonctionnalités**
+## Liste des fonctionnalités
 
-Les fonctionnalités du Produit sont réparties en trois catégories :
+Les fonctionnalités de la gamme de produits Managed Document Database sont réparties en trois catégories :
 
-* Les principales fonctionnalités pour lesquelles nous vous garantissons la possibilité de migrer.
-* OVHcloud est actuellement opérationnel et la migration nécessitera des adaptations à un nouvel environnement.
-* Fonctionnalités spécifiées dont la migration en tant que telle est impossible à garantir car elles sont liées à l'environnement OVHcloud ou à des développements spécifiques.
+1. **Fonctionnalités principales** pour lesquelles nous garantissons la capacité de migration.
+1. **Implémentations OVHcloud** qui nécessitent une adaptation à un nouvel environnement de migration.
+1. **Fonctionnalités spécifiques** qui ne peuvent pas être garanties pour la migration car elles sont liées à l'environnement OVHcloud ou impliquent des développements personnalisés.
 
-**Caractéristiques principales**
-
-| **Fonction** | **Description** | **Formats** **Disponible** | **Modèle de migration** | **Documentation disponible** |
-| --- | --- | --- | --- | --- |
-| Base de données orientée document | Stockage de données JSON/BSON flexible pour une grande évolutivité | BSON, JSON, CSV | **Entrant** : import via mongorestore/mongoimport. <br><br> **Sortant** : export via mongodump/mongoexport | [MongoDB documentation](https://docs.mongodb.com/) |
-| Compatibilité Open-source MongoDB | Version standard de MongoDB sans modification, facilitant la portabilité | Standard MongoDB (CLI, API, outils) | **Entrant** : intégration directe.<br><br> **Sortant** : export complet sans adaptation |[MongoDB](https://help.ovhcloud.com/csm/en-gb-documentation-public-cloud-databases-mongodb?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=7165a1f6259c6110f0782e7048ecedec&spa=1)|
-| Haute disponibilité | Jeux de réplicas assurant la redondance et la récupération automatique | N/A | **Entrant** : configuration des réplicas à l'import. <br><br> **Sortant** : export et déploiement sur un autre cluster | [Replication](https://docs.mongodb.com/manual/replication/)|
-| Sauvegardes automatiques | Sauvegardes quotidiennes avec possibilité de restauration | Snapshots MongoDB | **Entrant** : restauration possible <br><br> **Sortant :** téléchargement/exportation manuel requis | [MongoDB Backups](/pages/public_cloud/public_cloud_databases/mongodb_06_howto_backup_restore)|
-
-** Implémentation OVHcloud **
+### 1 - Fonctionnalités principales
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| OVHcloud Dashboard | Interface de gestion et de monitoring des clusters MongoDB | N/A | **Entrant** : configuration initiale via l'interface <br><br> **Sortant** : administration interrompue après résiliation | [MongoDB](https://help.ovhcloud.com/csm/en-gb-documentation-public-cloud-databases-mongodb?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=7165a1f6259c6110f0782e7048ecedec&spa=1)|
-| Monitoring intégré | Suivi des performances via des métriques dans l'interface | N/A | **Entrant** : configuration des alertes <br><br> **Sortant** : à reconfigurer dans un autre environnement | [MongoDB](https://help.ovhcloud.com/csm/en-gb-documentation-public-cloud-databases-mongodb?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=7165a1f6259c6110f0782e7048ecedec&spa=1)|
-| Sécurité réseau (ACL) | Filtrage IP, TLS/SSL, accès restreint par vRack | IP, TLS/SSL | **Entrant** : définition des règles de sécurité <br><br> **Sortant** : configuration export | [MongoDB](https://help.ovhcloud.com/csm/en-gb-documentation-public-cloud-databases-mongodb?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=7165a1f6259c6110f0782e7048ecedec&spa=1)|
+| Base de données orientée document | Stockage de données JSON/BSON flexible pour une grande évolutivité. | BSON, JSON, CSV | **Entrant** : Import via mongorestore/mongoimport. <br> **Sortant** : Export via mongodump/mongoexport. | [MongoDB documentation](https://docs.mongodb.com/){.external} |
+| Compatibilité Open-source MongoDB | Version standard de MongoDB sans modification, facilitant la portabilité. | Standard MongoDB (CLI, API, outils) | **Entrant** : intégration directe. <br> **Sortant** : Export complet sans adaptation. |[MongoDB](/products/public-cloud-databases-mongodb)|
+| Haute disponibilité | Jeux de réplicas assurant la redondance et la récupération automatique. | N/A | **Entrant** : Configuration des réplicas à l'import. <br> **Sortant** : Export et déploiement sur un autre cluster. | [Replication](https://docs.mongodb.com/manual/replication/){.external} |
+| Sauvegardes automatiques | Sauvegardes quotidiennes avec possibilité de restauration. | Snapshots MongoDB | **Entrant** : Restauration possible. <br> **Sortant** : Téléchargement et exportation doivent être effectués manuellement. | [MongoDB Backups](/pages/public_cloud/public_cloud_databases/mongodb_06_howto_backup_restore)|
 
-**Caractéristiques particulières**
+### 2 - Implémentations OVHcloud
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Réseau privé OVHcloud (vRack) | Connexion avec d’autres services OVHcloud en réseau privé | N/A | **Entrant** : config vRack <br><br> **Sortant** : fonctionnalité non transférable | [vRack](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
-| Mises à jour gérées par OVHcloud | Versionning MongoDB par OVHcloud | N/A | **Entrant** : vérifier la compatibilité <br><br> **Sortant** : migration sous la responsabilité du client | [MongoDB](https://help.ovhcloud.com/csm/en-gb-documentation-public-cloud-databases-mongodb?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=7165a1f6259c6110f0782e7048ecedec&spa=1) |
-| Anti-DDoS | L’anti-DDoS est un ensemble d’équipements et de moyens mis en place pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, une somme de â€oeaspirationâ€  vers un réseau dédié et la mitigation, fournis par la technologie VAC développée par OVHcloud. | N/A | **Migration entrante** : Le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br><br>   **Migration sortante** : Commandez et configurez un anti-DDoS chez le nouveau fournisseur. | [OVHcloudDDoS Protection](https://www.ovh.com/fr/anti-ddos/) |
+| OVHcloud Dashboard | Interface de gestion et de monitoring des clusters MongoDB. | N/A | **Entrant** : Configuration initiale via l'interface. <br> **Sortant** : Administration interrompue après résiliation. | [MongoDB](/products/public-cloud-databases-mongodb)|
+| Monitoring intégré | Suivi des performances via des métriques dans l'interface. | N/A | **Entrant** : Configuration des alertes <br> **Sortant** : À reconfigurer dans un autre environnement. | [MongoDB](/products/public-cloud-databases-mongodb)|
+| Sécurité réseau (ACL) | Filtrage IP, TLS/SSL, accès restreint par vRack. | IP, TLS/SSL | **Entrant** : Définition des règles de sécurité. <br> **Sortant** : Configuration export. | [MongoDB](/products/public-cloud-databases-mongodb)|
 
-** Liste des architectures**
+### 3 - Fonctionnalités spécifiques
 
-Managed MongoDB repose sur une architecture distribuée avec des jeux de réplicas pour assurer une haute disponibilité. Les données sont réparties sur plusieurs nœuds grâce à des sauvegardes régulières, une surveillance continue et des outils de sécurité intégrés.
+| **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
+| --- | --- | --- | --- | --- |
+| Réseau privé OVHcloud (vRack) | Connexion avec d’autres services OVHcloud en réseau privé. | N/A | **Entrant** : Config vRack. <br> **Sortant** : Fonctionnalité non transférable. | [vRack](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
+| Mises à jour gérées par OVHcloud | Gestion des versions de MongoDB par OVHcloud. | N/A | **Entrant** : Vérifier la compatibilité. <br> **Sortant** : Migration sous la responsabilité du client. | [MongoDB](/products/public-cloud-databases-mongodb) |
+| Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrante** : Le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortante** : Commandez et configurez un anti-DDoS chez le nouveau fournisseur. | [OVHcloudDDoS Protection](/links/security/antiddos) |
 
-**Services partenaires**
+## Liste des architectures
 
-Les partenaires OVHcloud sont répertoriés avec le mot-clé **Cloud Migration** dans le [répertoire dédié](https://partner.ovhcloud.com/fr/directory/).
+Managed MongoDB repose sur une architecture distribuée avec des jeux de réplicas pour assurer une haute disponibilité.
 
-OVHcloud dispose également d’un service dédié : [OVHcloud Professional Services](https://www.ovhcloud.com/fr/professional-services/)
+Les données sont réparties sur plusieurs nœuds grâce à des sauvegardes régulières, une surveillance continue et des outils de sécurité intégrés.
 
-**Coût et coûts**
+## Services partenaires
+
+Les partenaires OVHcloud concernés figurent dans l'annuaire des [partenaires OVHcloud](/links/partner) sous les mots-clés **« migration vers le cloud »**.
+
+OVHcloud dispose également d’un service dédié : [OVHcloud Professional Services](/links/professional-services).
+
+## Coûts et frais
 
 Les fonctionnalités décrites dans les tableaux sont gratuites sauf mention contraire et sont librement utilisables par le client
 
-La facturation est basée sur la taille du cluster, la capacité de stockage et les sauvegardes. Il n'y a pas de frais de sortie, mais les données doivent être exportées avant la résiliation car elles seront supprimées.
+La facturation est basée sur la taille du cluster, la capacité de stockage et les sauvegardes.
 
-**Conservation des données après résiliation du contrat**
+Il n'y a pas de frais de résiliation, cependant les données doivent être exportées avant la résiliation car elles seront supprimées.
 
-Après résiliation, toutes les données de l'instance sont définitivement supprimées, y compris les sauvegardes effectuées par OVHcloud. Il appartient au client de réaliser l’exportation avant la fin du service, OVHcloud ne conservant aucune copie.
+## Conservation des données après résiliation du contrat
 
-OVHcloud ne garantit pas l’utilisation et la disponibilité des sauvegardes pour restaurer les données du client après la résiliation du service*.*
+> [!warning]
+>
+> OVHcloud ne garantit pas l’utilisation et la disponibilité des sauvegardes pour restaurer les données du client après la résiliation du service.
 
-Les instances primaires sont immédiatement supprimées et les sauvegardes sont conservées entre 2 jours et 1 mois selon les options spécifiées dans le contrat.
+Après résiliation, toutes les données de l'instance sont définitivement supprimées, y compris les sauvegardes effectuées par OVHcloud.
+
+Il appartient au client de réaliser l’exportation avant la fin du service, OVHcloud ne conservant aucune copie.
+
+Les instances primaires sont **supprimées immédiatement** et les **sauvegardes sont conservées pendant une période allant de 2 jours à 1 mois** selon les options spécifiées dans le contrat.
