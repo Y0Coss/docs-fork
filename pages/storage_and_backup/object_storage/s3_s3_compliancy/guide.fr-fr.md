@@ -498,7 +498,7 @@ Ce guide a pour objectif d'énumérer les fonctionnalités supportées par Objec
         <td>yes</td>
     </tr>
     <tr>
-        <td rowspan="4">Pre-signed urls</td>
+        <td rowspan="4">Presigned urls</td>
         <td>GET</td>
         <td>yes</td>
         <td>yes</td>
