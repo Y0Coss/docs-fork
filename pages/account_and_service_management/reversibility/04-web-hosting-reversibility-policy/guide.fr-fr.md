@@ -15,7 +15,7 @@ Les fonctionnalités des hébergements web OVHcloud sont divisées en trois cat�
 
 - Les [fonctionnalités principales](#fonctionnalites-principales) pour lesquelles nous garantissons la capacité de migrer.
 - L'[implémentation OVHcloud](#implementation-ovhcloud), dont la migration nécessitera des adaptations à un nouvel environnement.
-- Les [fonctionnalités spécifiques](#fonctifonctionnalitesons-specifiques), dont la migration en tant que telle est impossible à garantir car elle est liée à l'environnement OVHcloud ou à des développements spécifiques.
+- Les [fonctionnalités spécifiques](#fonctionnalites-specifiques), dont la migration en tant que telle est impossible à garantir car elle est liée à l'environnement OVHcloud ou à des développements spécifiques.
 
 ### Fonctionnalités principales
 
