@@ -24,7 +24,7 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 
 - Access to the [OVHcloud Control Panel](/links/manager).
 - A domain name registered with OVHcloud for which no operation (owner change, transfer, creation) is in progress. If an operation has recently been completed on this domain name, there is a mandatory waiting period of 60 calendar days before a new operation can be started.
-- You are the [admin and billing contacts](/pages/account_and_service_management/account_information/managing_contacts) for the domain name concerned.
+- Your customer account is the [admin and billing contact](/pages/account_and_service_management/account_information/managing_contacts) for the domain name concerned.
 - You have permission from the current domain name owner to change owners or edit the owner information.
 
 ## Instructions
