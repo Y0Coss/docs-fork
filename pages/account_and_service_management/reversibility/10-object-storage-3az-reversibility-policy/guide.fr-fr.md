@@ -11,7 +11,7 @@ Cette politique vise à mettre en œuvre les principes généraux de réversibil
 
 ## Liste des fonctionnalités
 
-Les fonctionnalités du « Produit » sont réparties en trois catégories :
+Les fonctionnalités du produit sont réparties en trois catégories :
 
 - Les principales fonctionnalités pour lesquelles nous vous garantissons la possibilité de migrer.
 - L'implémentation d'OVHcloud dont la migration nécessitera des adaptations à un nouvel environnement.
