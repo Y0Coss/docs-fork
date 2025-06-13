@@ -116,9 +116,9 @@ To check the renewal status of your domain name:
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 1. Go to the `Web Cloud`{.action} section.
 1. Click `Domain names`{.action} in the `Domains and DNS`{.action} section.
-1. In the table that pops up, check the renewal status in the `Status` column of the domain name concerned.
+1. In the table, check the renewal status in the `Status` column of the domain name concerned.
 
-The word `Renewal in progress` will appear once the payment has been made, until your domain name has been renewed with the registry.
+The status `Renewal in progress` will appear once the payment has been made, until your domain name has been renewed with the registry.
 
 ### Cancelling a domain name
 
