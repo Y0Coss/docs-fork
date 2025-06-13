@@ -440,6 +440,60 @@ $ aws s3api put-bucket-replication --bucket <source> --replication-configuration
 }
 ```
 
+### Using the web UI
+
+#### Prerequisites
+* a source and a destination bucket
+* versioning **must** be activated on source **and** destination bucket
+
+#### Apply replication configuration
+
+Find your source bucket in the bucket listing.
+
+Either open the menu and click on "Manage replication"
+
+![replication_screenshot_1](images/source-bucket-menu-EN.png)
+
+
+Or click directly on your bucket and click on "Manage replication".
+
+![replication_screenshot_2](images/source-bucket-details-EN.png)
+
+
+Choose "Add a replication rule".
+
+
+![replication_screenshot_3](images/replication-rules-EN.png)
+
+
+Specify a name for your rule to help identify it later. The name is required and must be unique within the bucket.
+
+(screenshot of rule creation EN)
+
+You can specify a prefix and/or tags to limit the scope of the objects to be replicated.
+
+> [!warning]
+> As a reminder, you cannot replicate delete markers if you are using tags to filter your objects.
+
+Under **Destination**, select a destination bucket. The selected bucket must have versioning enabled and if object lock has been enabled on the source bucket then it also must be enabled on the destination bucket.
+- By default, the objects will be replicated with the same storage class however, you can choose to replicate the objects to another storage class.
+- If there are two or more rules with the same destination bucket, objects will be replicated according to the rule with the highest priority. The higher the number, the higher the priority.
+
+Under **Status**, **Enabled** is selected by default. An enabled rule starts to work as soon as you save it. If you want to disable the rule at creation and activate it later, choose **Disabled**.
+
+To finish, click on "Create the rule".
+
+![replication_screenshot_5](images/replication-rules-success-EN.png)
+
+
+#### Delete a replication rule
+
+In the Replication rules management view, you can delete a rule from the menu.
+
+![replication_screenshot_6](images/replication-rules-delete-EN.png)
+
+
+
 ## Offsite Replication option in 3-AZ regions
 
 With Object Storage in a 3-AZ region, we have introduced a new option called **Offsite Replication**, which simplifies the replication process and automatically replicates your data to a remote site for greater resiliency with a one-click action in the OVHcloud Control Panel. 
