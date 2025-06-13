@@ -105,7 +105,7 @@ Perform the following actions:
 You can renew the service at any time before its expiry and also choose the renewal duration.  
 In this case, the duration of validity subscribed to will be added to the current validity period. You will not lose any remaining validity time.
 
-### Follow the renewal of my domain name
+### Checking the renewal status of a domain name
 
 Once you have paid for your renewal, the domain name will be renewed the day before its expiry (approximately one month after the renewal).
 
