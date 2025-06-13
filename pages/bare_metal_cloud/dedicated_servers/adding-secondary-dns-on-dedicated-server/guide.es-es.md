@@ -65,7 +65,7 @@ Los dominios añadidos se listarán en esta pestaña y pueden eliminarse haciend
 
 Es necesario confirmar la autorización para gestionar el dominio antes de poder añadirlo al DNS secundario de OVHcloud. Esto se realiza a través de una búsqueda DNS automatizada en el subdominio *ownercheck.sudominio*. Para ello, se genera una única cadena que se muestra en el área de cliente de OVHcloud.
 
-- Si el dominio es gestionado por un agente registrador externo o utiliza servidores DNS externos en esta etapa, conéctese al área de cliente de su proveedor DNS y añada un registro TXT con el subdominio "ownercheck" y el valor proporcionado en el paso 2 de la [adición de dominio"](#ajoutdomaine).
+- Si el dominio es gestionado por un agente registrador externo o utiliza servidores DNS externos en esta etapa, conéctese al área de cliente de su proveedor DNS y añada un registro TXT con el subdominio "ownercheck" y el valor proporcionado en el paso 2 de la ["adición de dominio"](#ajoutdomaine).
 
 - Si el dominio es gestionado por OVHcloud como servidor de registro y utiliza servidores DNS de OVHcloud, cierre la ventana haciendo clic en `Cancelar`{.action}. A continuación, siga las indicaciones de [esta guía](/pages/web_cloud/domains/dns_zone_edit) para añadir el registro TXT al [área de cliente de OVHcloud](/links/manager).
 

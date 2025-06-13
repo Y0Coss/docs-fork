@@ -65,7 +65,7 @@ Dodane domeny zostaną wymienione w tej zakładce i mogą zostać usunięte po k
 
 Zanim dodasz domenę do DNS secondary OVHcloud, musisz potwierdzić, że zezwalasz na zarządzanie tą domeną. Przeprowadza się to przez zautomatyzowane wyszukiwanie DNS subdomeny *ownercheck.twojej domeny*. W tym celu generowany jest unikalny ciąg znaków widoczny w Panelu klienta OVHcloud.
 
-- Jeśli domena jest zarządzana przez zewnętrznego operatora domeny lub na tym etapie korzysta z zewnętrznych serwerów DNS, zaloguj się do panelu klienta dostawcy DNS i dodaj rekord TXT z subdomeną "ownercheck" oraz wartością przedstawioną w etapie 2 [Dodania domeny"](#ajoutdomaine).
+- Jeśli domena jest zarządzana przez zewnętrznego operatora domeny lub na tym etapie korzysta z zewnętrznych serwerów DNS, zaloguj się do panelu klienta dostawcy DNS i dodaj rekord TXT z subdomeną "ownercheck" oraz wartością przedstawioną w etapie 2 ["Dodania domeny"](#ajoutdomaine).
 
 - Jeśli domena jest zarządzana przez OVHcloud jako serwer do rejestracji i korzysta z serwerów DNS OVHcloud, zamknij okno klikając wcześniej na `Anuluj`{.action}. Następnie postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit), aby dodać rekord TXT do Panelu [klienta OVHcloud](/links/manager).
 
