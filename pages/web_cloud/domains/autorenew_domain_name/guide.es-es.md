@@ -1,7 +1,7 @@
 ---
 title: "Renovar los dominios de OVHcloud"
 excerpt: "Descubra por qué y cómo renovar sus dominios OVHcloud"
-updated: 2025-06-12
+updated: 2025-06-13
 ---
 
 ## Objetivo
@@ -156,7 +156,7 @@ Si se trata de un dominio genérico (.com, .org, .net, etc.), este permanecerá 
 
 Durante el período de gracia, podrá renovarlo desde el área de cliente, siguiendo las etapas de esta guía.
 
-Durante el período de redención, el dominio ya no está gestionado por OVHcloud. La renovación desde el área de cliente conlleva un suplemento (gastos de restauración), que varía en función de la extensión. Ver los precios haciendo clic en la extensión correspondiente [aquí](/links/web/domains-tld).).
+Durante el período de redención, el dominio ya no está gestionado por OVHcloud. La renovación desde el área de cliente conlleva un suplemento (gastos de restauración), que varía en función de la extensión. Ver los precios haciendo clic en la extensión correspondiente [aquí](/links/web/domains-tld).
 
 Después del periodo de redención, el dominio entra en una fase de eliminación que puede durar varios días, antes de volver a estar disponible en el dominio público. Si quiere consultar su uso, le recomendamos que utilice la herramienta [Whois de un dominio](/links/web/domains-whois) para comprobar regularmente su disponibilidad.
 
