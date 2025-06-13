@@ -437,6 +437,58 @@ $ aws s3api put-bucket-replication --bucket <source> --replication-configuration
 }
 ```
 
+## Utilisation de la web UI
+
+#### Prérequis
+* un bucket source et un bucket de destination
+* le versioning **doit** être activé sur le bucket source **et** le bucket de destination
+
+#### Appliquer la configuration de replication
+
+Trouver votre bucket source dans la liste des buckets.
+
+Soit vous ouvrez le menu et cliquer sur "Gérer la réplication",
+
+![replication_screenshot_1](images/source-bucket-menu-FR.png)
+
+Soit vous cliquez directement sur votre bucket puis cliquez sur "Gérer la réplication".
+
+![replication_screenshot_2](images/source-bucket-details-FR.png)
+
+
+Sélectionnez "Ajouter une règle de réplication".
+
+![replication_screenshot_3](images/replication-rules-FR.png)
+
+
+Spécifiez un nom pour votre règle pour vous aider à l'identifier plus tard. Ce nom est requis et doit être unique au sein de votre bucket.
+
+(screenshot de création de la règle FR)
+
+Vous pouvez spécifier un préfixe et/ou des tags pour limiter le champ d'application des objets à répliquer.
+
+> [!warning]
+> Pour rappel, vous ne pouvez pas répliquer les marqueurs de suppression si vous utilisez des tags pour filtrer les objets.
+
+Sous **Destination**, sélectionnez un bucket de destination. Le bucket sélectionné doit avoir le versioning activé et si l'object lock a également été activé sur le bucket source, alors il doit aussi l'être sur le bucket de destination.
+- Par défaut, les objets seront répliqués en conservant leur classe de stockage d'origine, cependant, vous pouvez choisir de les répliquer vers une autre classe de stockage.
+- S'il existe plusieurs règles avec le même bucket de destination, les objets seront répliqués en fonction de la règle ayant la priorité la plus élevée. Plus le nombre est élevé, plus la priorité est élevée.
+
+Sous **Status**, "Activé" est sélectionné par défaut. Une règle activée commence à fonctionner dès que vous l'enregistrez. Si vous souhaitez désactiver la règle lors de sa création et l'activer ultérieurement, sélectionnez **Désactivé**.
+
+Pour terminer, cliquez sur "Créer la règle".
+
+![replication_screenshot_5](images/replication-rules-success-FR.png)
+
+
+#### Supprimer une règle de réplication
+
+Dans la vue de gestion des règles de réplication, vous pouvez supprimer une règle à partir du menu.
+
+![replication_screenshot_6](images/replication-rules-delete-FR.png)
+
+
+
 ## Option Offsite Replication dans les régions 3-AZ
 
 Lorsque vous utilisez Object Storage dans une région 3-AZ, nous vous proposons une nouvelle option appelée **Offsite Replication** (réplication hors site), qui simplifie le processus de réplication en répliquant automatiquement vos données sur un site distant pour une plus grande résilience, et ce en un seul clic depuis l'espace client OVHcloud. 
