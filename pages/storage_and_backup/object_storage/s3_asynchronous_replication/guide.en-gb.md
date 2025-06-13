@@ -368,9 +368,9 @@ Suppose the source bucket, `region1-destination-bucket` and `region2-destination
 > [!warning]
 > Versioning must be activated in source bucket and destination bucket(s).
 
-### Using the CLI
+## Using the CLI
 
-#### Create source and destination buckets
+### Create source and destination buckets
 
 The source bucket is the bucket whose objects are automatically replicated and the destination bucket is the bucket which will contain your object replicas.
 
@@ -386,7 +386,7 @@ $ aws s3 mb s3://my-source-bucket
 $ aws s3 mb s3://my-destination-bucket
 ```
 
-#### Activate versioning in source and destination bucket
+### Activate versioning in source and destination bucket
 
 ```bash
 $ aws s3api put-bucket-versioning --bucket <bucket_name> --versioning-configuration Status=Enabled
@@ -399,7 +399,7 @@ $ aws s3api put-bucket-versioning --bucket my-source-bucket --versioning-configu
 $ aws s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
 ```
 
-#### Apply replication configuration
+### Apply replication configuration
 
 Using the AWS CLI, replication configuration is applied on the source bucket.
 
@@ -440,7 +440,7 @@ $ aws s3api put-bucket-replication --bucket <source> --replication-configuration
 }
 ```
 
-### Offsite Replication option in 3-AZ regions
+## Offsite Replication option in 3-AZ regions
 
 With Object Storage in a 3-AZ region, we have introduced a new option called **Offsite Replication**, which simplifies the replication process and automatically replicates your data to a remote site for greater resiliency with a one-click action in the OVHcloud Control Panel. 
 This feature is only available for primary Object Storage in a 3-AZ region (to know more about existing 1-AZ and 3-AZ regions, see [Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location)) and is based on an OVHcloud auto-generated and managed replication rule configuration:
@@ -448,6 +448,8 @@ This feature is only available for primary Object Storage in a 3-AZ region (to k
 - Data is replicated on a remote 1-AZ region. The system will automatically determine the most suitable location among Strasbourg, Gravelines, and Roubaix, ensuring efficient and reliable offsite data protection.
 - Objects stored in the replica bucket are stored in an **Infrequent Access** class and are billed differently. View pricing on [this page](/links/public-cloud/prices). This class is designed for less frequently accessed data and allow you to reduce your overall Object Storage bill together with Standard-class performance level. This said, if the destination bucket storage class doesn’t suit your needs, you can choose another approach and use the asynchronous replication feature and manage the replication rule configuration by yourself. 
 - The replica bucket and the replication rule configuration are then available for modification if needed.
+
+### Offsite Replication Q&A
 
 #### How can I access the option in the OVHcloud Control Panel?
 
