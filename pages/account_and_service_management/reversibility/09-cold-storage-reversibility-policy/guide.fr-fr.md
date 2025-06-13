@@ -13,7 +13,7 @@ Cette politique vise à mettre en œuvre les principes de réversibilité mondia
 
 Les fonctionnalités du produit sont réparties en trois catégories :
 
-- Les f**onctionnalités principales** pour lesquelles nous garantissons la possibilité de migrer.
+- Les **fonctionnalités principales** pour lesquelles nous garantissons la possibilité de migrer.
 - L'**implémentation OVHcloud**, dont la migration nécessitera des adaptations à un nouvel environnement.
 - Des **fonctionnalités spécifiques**, dont la migration en tant que telle est impossible à garantir car elles sont liées à l'environnement OVHcloud ou à des développements spécifiques.
 
