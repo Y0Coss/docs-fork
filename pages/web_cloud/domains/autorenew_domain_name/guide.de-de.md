@@ -104,20 +104,20 @@ Führen Sie die folgenden Aktionen aus:
 Sie können den Dienst jederzeit vor dem Ablaufdatum verlängern und auch die Dauer der Verlängerung auswählen.  
 In diesem Fall wird die abonnierte Gültigkeitsdauer der laufenden Gültigkeitsdauer hinzugefügt. Sie verlieren die verbleibende Gültigkeitsdauer nicht.
 
-### Folgen Sie der Erneuerung meines Domainnamens
+### Verlängerung des Domainnamens überprüfen
 
-Sobald Sie die Verlängerung bezahlt haben, wird der Domainname am Tag vor Ablauf (etwa einen Monat nach Ablauf) verlängert.
+Sobald Sie die Verlängerung bezahlt haben, wird der Domainname am Tag vor Ablauf (ca. ein Monat nach Verlängerung) verlängert.
 
-Die im WHOIS angezeigten Daten werden dann aktualisiert, um die korrekte Domain-Erneuerung zu bestätigen.
+Die im WHOIS angezeigten Daten werden dann aktualisiert, um die korrekte Verlängerung zu bestätigen.
 
 So überprüfen Sie den Verlängerungsstatus Ihrer Domain:
 
-1. Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager).
+1. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein.
 1. Gehen Sie in den Bereich `Web Cloud`{.action}.
 1. Klicken Sie im Bereich `Domains und DNS`{.action} auf `Domainnamen`{.action}.
-1. Überprüfen Sie in der daraufhin angezeigten Tabelle den Verlängerungsstatus in der Spalte `Status` des betreffenden Domainnamens.
+1. Überprüfen Sie in der Tabelle den Verlängerungsstatus in der Spalte `Status` des betreffenden Domainnamens.
 
-Das Wort `Erneuerung in Bearbeitung` erscheint nach der Zahlung, bis Ihr Domainname zusammen mit der Registry verlängert wurde.
+Der Status `Erneuerung in Bearbeitung` erscheint nach der Zahlung, bis Ihr Domainname bei der Registry verlängert wurde.
 
 ### Domainnamen kündigen
 
