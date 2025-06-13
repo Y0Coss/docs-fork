@@ -98,7 +98,7 @@ $ mkdir ~/server && cd ~/server
 Kopieren Sie zuerst den Download-Link für das Server-Programm.  
 Klicken Sie dazu auf der offiziellen [Website von Minecraft](https://minecraft.net/download/server){.external} mit der rechten Maustaste auf den Download-Link und wählen Sie `Linkadresse kopieren`{.action}.
 
-![Download des Servers](images/download_jar_file.png){.thumbnail}
+![Download des Servers](images/jar_file_download.png){.thumbnail}
 
 Überprüfen Sie in Ihrem Kommandozeilenterminal, dass Sie noch im Verzeichnis `server` sind und verwenden Sie `wget`, um die Datei herunterzuladen.
 <br>Ersetzen Sie `download_link` mit der URL, die Sie zuvor kopiert haben.

@@ -33,7 +33,7 @@ Oznacza to, że przed rozwiązaniem umowy musisz być **pewny**:
 > Po zakończeniu aktualnego abonamentu Twoja domena ogólna (.com, .org. net, itp.) pozostaje "zarezerwowana" przez okres "*Grace*" (około 7 dni), a następnie przez okres "*redemption*" (około 35 do 40 dodatkowych dni). Oznacza to, że tylko Ty będziesz mógł go odnowić w tych okresach. Aby uzyskać więcej informacji, zapoznaj się z [FAQ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#faq) na dole naszego przewodnika "[Jak odnawiać usługi OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
 >
 
-## Wymagania
+## Wymagania początkowe
 
 - Pełnienie funkcji "kontaktu administracyjnego" dla usługi, z której chcesz zrezygnować (aby uzyskać więcej informacji, zapoznaj się z [tym przewodnikiem](/pages/account_and_service_management/account_information/managing_contacts#definition))
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)

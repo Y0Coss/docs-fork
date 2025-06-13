@@ -39,7 +39,7 @@ Para poder dar de baja el servicio, deberá estar **seguro** de que:
 - Tener acceso al [área de cliente de OVHcloud](/links/manager)
 - Tener servicios de OVHcloud activos (no suspendidos por impago)
 
-## En la práctica
+## Procedimiento
 
 El procedimiento de baja es el mismo para la mayoría de los servicios de OVHcloud.
 

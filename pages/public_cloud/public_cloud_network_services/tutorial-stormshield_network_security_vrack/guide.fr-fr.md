@@ -376,11 +376,11 @@ Répétez toutes les étapes dans une autre région en utilisant le VLAN 201 au 
 >> Ajoutez le réseau privé local et le réseau privé distant :
 >>
 >>![SNS EVA vrack](images/ipsec-3.png){.thumbnail}
->>>
+>>
 > **Étape 2**
 >>
 >> Créez la passerelle distante :
->>>
+>>
 >>![SNS EVA vrack](images/ipsec-4.png){.thumbnail}
 >>
 > **Étape 3**

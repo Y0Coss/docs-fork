@@ -94,7 +94,7 @@ A geração 2 dos volumes High-Speed é otimizada para as cargas de trabalho mai
 >>
 >> Siga os passos de configuração para selecionar as opções de localização, o tipo de disco e a capacidade de disco. Introduza um nome para o volume e valide clicando em `Criar o volume`{.action}.
 >>
->>> [!warning]
+>> > [!warning]
 >> >
 >> > Nota: O seu volume deve ser criado na mesma região que a instância à qual deseja associá-lo. Se o criar noutra região, poderá eliminá-lo e recriá-lo na região correta, ou migrá-lo seguindo [este manual](/pages/public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another).
 >> >

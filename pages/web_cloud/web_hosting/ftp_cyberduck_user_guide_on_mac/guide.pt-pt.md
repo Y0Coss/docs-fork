@@ -133,7 +133,7 @@ Para facilitar o acesso ao seu alojamento web, recomendamos que utilize os marca
 Para adicionar este arquivo:
 
 1. Aceda ao espaço FRP do seu alojamento web.
-2. No topo da interface, na barra de ferramentas, clique no separador "Bookmarks" {.action} (quadro laranja na imagem abaixo).
+2. No topo da interface, na barra de ferramentas, clique no separador `Bookmarks`{.action} (quadro laranja na imagem abaixo).
 3. No canto inferior esquerdo da janela, clique no ícone `+`{.action} para adicionar um novo marcador.
 
 ![hosting](/pages/assets/screens/other/web-tools/cyberduck/add-signet.png){.thumbnail}
