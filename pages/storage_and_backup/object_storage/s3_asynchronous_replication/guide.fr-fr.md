@@ -365,9 +365,9 @@ Supposons que le bucket source, le bucket `region1-destination-bucket` et le buc
 > [!warning]
 > Le contrôle de version doit être activé dans le bucket source et le(s) bucket(s) de destination.
 
-### Utilisation de la CLI
+## Utilisation de la CLI
 
-#### Créer les buckets source et destinataire
+### Créer les buckets source et destinataire
 
 Le bucket source est le bucket dont les objets sont automatiquement répliqués et le bucket destinataire est le bucket qui va contenir vos copies d'objet.
 
@@ -382,7 +382,7 @@ $ aws s3 mb s3://my-source-bucket
 $ aws s3 mb s3://my-destination-bucket
 ```
 
-#### Activer le versioning dans le bucket de destination et la source
+### Activer le versioning dans le bucket de destination et la source
 
 ```bash
 $ aws s3api put-bucket-versioning --bucket <bucket_name> --versioning-configuration Status=Enabled
@@ -396,7 +396,7 @@ $ aws s3api put-bucket-versioning --bucket my-source-bucket --versioning-configu
 $ aws s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
 ```
 
-#### Appliquer la configuration de réplication
+### Appliquer la configuration de réplication
 
 À l'aide de la CLI AWS, la configuration de réplication est appliquée au bucket source.
 
@@ -437,7 +437,7 @@ $ aws s3api put-bucket-replication --bucket <source> --replication-configuration
 }
 ```
 
-### Option Offsite Replication dans les régions 3-AZ
+## Option Offsite Replication dans les régions 3-AZ
 
 Lorsque vous utilisez Object Storage dans une région 3-AZ, nous vous proposons une nouvelle option appelée **Offsite Replication** (réplication hors site), qui simplifie le processus de réplication en répliquant automatiquement vos données sur un site distant pour une plus grande résilience, et ce en un seul clic depuis l'espace client OVHcloud. 
 Cette fonctionnalité n'est disponible que pour les régions 3-AZ (pour en savoir plus sur les régions 1-AZ et 3-AZ, consultez notre page [Endpoints et géo-disponibilité de l'Object Storage](/pages/storage_and_backup/object_storage/s3_location)) et repose sur une configuration de réplication automatique et gérée par OVHcloud :
@@ -445,6 +445,8 @@ Cette fonctionnalité n'est disponible que pour les régions 3-AZ (pour en savoi
 - Les données sont répliquées sur une région distante 1-AZ. Le système détermine automatiquement l'emplacement le plus approprié parmi **Strasbourg, Gravelines et Roubaix**, assurant une protection des données hors site efficace et fiable.
 - Les objets stockés dans le bucket de destination (aussi appelé *replica bucket*) le sont dans une classe différente, nommée **Infrequent Access**, et sont facturés différemment. Consultez la tarification sur [cette page](/links/public-cloud/prices). Cette classe est conçue pour des données moins fréquemment consultées et vous permet de réduire vos coûts Object Storage tout en gardant des performances comparables à la classe Standard. Cependant, si la classe du bucket de destination ne convient pas, il est possible de privilégier une autre approche et d'utiliser la fonctionnalité de réplication asynchrone permettant de gérer l'ensemble des paramètres de la configuration.
 - Le bucket de destination et la configuration de la règle de réplication peuvent ensuite être modifiés par l'utilisateur.
+
+### FAQ Offsite Replication
 
 #### Comment puis-je accéder à l’option depuis mon espace client ?
 
