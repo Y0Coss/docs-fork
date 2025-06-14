@@ -1,7 +1,7 @@
 ---
 title: Transfert des logs (Log Forwarding) TCP / HTTP / HTTPS du Load Balancer OVHcloud
 excerpt: Découvrez comment transférer vos logs depuis un Load Balancer OVHcloud vers Logs Data Platform
-updated: 2025-06-12
+updated: 2025-06-13
 ---
 
 ## Objectif
@@ -21,16 +21,16 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 
 ## Glossaire
 
-- **Logs Data Platform :** une plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](https://www.ovhcloud.com/fr/logs-data-platform/).
+- **Logs Data Platform :** une plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](/links/manage-operate/ldp).
 - **Data Stream:** une partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
 - **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
 - **Abonnement à la redirection de logs :** Lors de l'activation de la redirection de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *Abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
 
 ## Prérequis
 
-- Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start).
+- Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform (EN)](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start).
 - Si vous ne connaissez pas toutes les possibilités de configuration d'un *Stream* LDP, il vous suffit d'en créer un nouveau avec les options par défaut (indexation & websocket activés, stockage longue durée désactivé) pour suivre ce guide.
-- Un [Load Balancer OVHcloud] opérationnel (/pages/network/load_balancer/use_presentation).
+- Un [Load Balancer OVHcloud](/pages/network/load_balancer/use_presentation) opérationnel.
 - Le compte LDP et le compte OVHcloud Load Balancer doivent appartenir au même compte OVHcloud.
 
 ## Concepts & limites
@@ -46,7 +46,7 @@ Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wik
 ### Consignation du contenu pour les écouteurs TCP : `TCP`, `HTTP`
 
 | Nom du champ | Description | Type |
-|------------|-------------------------|
+|------------|-------------------------|-----------|
 | service_name | Le nom du Load Balancer qui a reçu la requête/connexion | Chaine (*String*) |
 | date_time | Horodatage auquel la requête/connexion a été effectuée | datetime (avec résolution en millisecondes) ex. 25/Mar/2024:14:07:19.536 |
 | zone | La région OVHcloud à laquelle appartient le Load Balancer | Chaine (*String*) |
@@ -68,7 +68,7 @@ Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wik
 ### Contenu supplémentaire pour les écouteurs `HTTP`
 
 | Nom du champ | Description | Type |
-|------------|-------------------------|
+|------------|---------------|----------|
 | catch_request_headers | Les en-têtes de la requête HTTP, par exemple « User-Agent » | Chaine (*String*) |
 | http_request | Ressource de la requête HTTP, par exemple « /index.html » | Chaine (*String*) |
 | http_status_code_int | Le statut HTTP retourné, par exemple « 200 » | *Integer* |
@@ -76,7 +76,7 @@ Les logs transférés sont générés par [HAproxy](https://fr.wikipedia.org/wik
 
 ## Instructions
 
-Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page] (https://www.ovhcloud.com/fr/logs-data-platform/).
+Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](/links/manage-operate/ldp).
 
 ### Activation du *forwarding* des journaux du Load Balancer via l’espace client OVHcloud
 
@@ -122,22 +122,22 @@ La requête POST a une charge utile qui nécessite :
 - `kind` : le type de journal que vous voulez transférer, soit « http » ou « tcp ». Vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://eu.api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing/-serviceName-/log/kind).
 - `streamId` : flux de données cible de votre compte LDP vers lequel vous souhaitez que vos logs du service Load Balancer soient transférés.
 
-« shell
+```shell
 POST /ipLoadbalancing/{serviceName}/log/subscription
 {
-« kind »: « string », // « http » ou « TCP ».
-« streamId »: « 18d602ec-af40-4000-8e59-41ecc8c23f80 » // The streamID of the target Stream.
+  "kind": "string", // "http" or "tcp".
+  "streamId": "18d602ec-af40-4000-8e59-41ecc8c23f80" // The streamID of the targeted Stream.
 }
-«
+```
 
-Vous obtiendrez en réponse un `operationId` :
+You will get in response an `operationId`:
 
-« shell
+```shell
 {
-« operationId »: « f550aa1c-89ab-4b1a-81ae-4fba4959966f »,
-« serviceName »: « ldp-xxxxx »
+  "operationId": "f550aa1c-89ab-4b1a-81ae-4fba4959966f",
+  "serviceName": "ldp-xxxxx"
 }
-«
+```
 
 Vous pouvez utiliser le `operationId` pour récupérer le `subscriptionId` à des fins de gestion ultérieure à l'aide de l'appel d'api suivant :
 
@@ -160,22 +160,22 @@ Une fois en possession du `subscriptionId`, vous pouvez obtenir les détails via
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/log/subscription/{subscriptionId}
 >
 
-« shell
+```shell
 GET /ipLoadbalancing/{serviceName}/log/subscription/{subscriptionId}
 
 {
-« createdAt »: « 2025-05-28T13:41:19.713Z »,
-« kind »: « string »,
-« resource »: {
-« name »: « string »,
-« type »: « string »
-},
-« serviceName »: « string »,
-« streamId »: « 19717204-2e10-4000-8b63-4f080b5d5101 »,
-« subscriptionId »: « 19717204-2e10-4000-8c42-d7b11c9ce680 »,
-« updatedAt »: « 2025-05-28T13:41:19.713Z »
+  "createdAt": "2025-05-28T13:41:19.713Z",
+  "kind": "string",
+  "resource": {
+    "name": "string",
+    "type": "string"
+  },
+  "serviceName": "string",
+  "streamId": "19717204-2e10-4000-8b63-4f080b5d5101",
+  "subscriptionId": "19717204-2e10-4000-8c42-d7b11c9ce680",
+  "updatedAt": "2025-05-28T13:41:19.713Z"
 }
-«
+```
 
 ### Comment utiliser les logs OVHcloud Load Balancer ?
 
@@ -186,7 +186,7 @@ Maintenant que vos logs sont ingérés et stockés dans votre flux de données L
 - Connectez-vous à Graylog en utilisant votre nom d'utilisateur et votre mot de passe Logs Data Platform.
 - Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html){.external} pour plus de détails sur la syntaxe de recherche.
 
-Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, querying and exploiting your logs](/products/observability-logs-data-platform-visualizing-querying-exploiting) pour plus de détails sur l'utilisation de vos logs avec Logs Data Platform, y compris sur la façon de :
+Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, querying and exploiting your logs (EN)](/products/observability-logs-data-platform-visualizing-querying-exploiting) pour plus de détails sur l'utilisation de vos logs avec Logs Data Platform, y compris sur la façon de :
 
 - mettre en place des alertes
 - consulter les logs en temps réel via un WebSocket
@@ -209,6 +209,6 @@ Pour supprimer votre abonnement, vous pouvez utiliser l'appel API suivant :
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demandez à nos experts Professional Services de vous aider sur votre cas d'utilisation spécifique de votre projet.
+Si vous avez besoin d'une formation ou d'assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demandez à nos experts Professional Services de vous aider sur votre cas d'utilisation spécifique de votre projet.
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
