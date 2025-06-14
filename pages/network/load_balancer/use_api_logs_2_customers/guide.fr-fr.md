@@ -130,7 +130,7 @@ POST /ipLoadbalancing/{serviceName}/log/subscription
 }
 ```
 
-You will get in response an `operationId`:
+Vous obtiendrez en réponse un `operationId` :
 
 ```shell
 {
