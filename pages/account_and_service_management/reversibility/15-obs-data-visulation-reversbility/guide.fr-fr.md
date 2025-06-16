@@ -30,11 +30,9 @@ Les fonctionnalités de la gamme de produits Managed Document Database sont rép
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Réseau privé OVHcloud (vRack) | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | N/A | **Entrant** : Configuration de la connexion réseau <br> **Sortant** : Prenez note de l'architecture réseau et reproduisez-la avec des VLAN | [vRack](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
-| Traçabilité (logs) | Stockage des logs dans OpenSearch managé OVHcloud | JSON (OpenSearch) | **Entrant** : NA <br> **Sortant** : 
-Export manuel des logs via API OpenSearch, puis réindexation dans l’environnement cible. | [Using Grafana with Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana)|
-| Sauvegardes automatiques | Sauvegardes gérées par OVHcloud, non directement exportables en dehors de l’écosystème. | Snapshots internes | **Entrant** : Non applicable à l’import direct. <br> **Sortant** :
-: Nécessite une restauration sur une instance OVHcloud puis export manuel (dump SQL) pour migration vers un autre environnement. | [Public Cloud Databases - Sauvegardes automatiques](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups)|
+| Réseau privé OVHcloud (vRack) | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | N/A | **Entrant** : Configuration de la connexion réseau <br> **Sortant**: Prenez note de l'architecture réseau et reproduisez-la avec des VLAN | [vRack](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
+| Traçabilité (logs) | Stockage des logs dans OpenSearch managé OVHcloud | JSON (OpenSearch) | **Entrant** : NA <br> **Sortant** : Export manuel des logs via API OpenSearch, puis réindexation dans l’environnement cible. | [Using Grafana with Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana)|
+| Sauvegardes automatiques | Sauvegardes gérées par OVHcloud, non directement exportables en dehors de l’écosystème. | Snapshots internes | **Entrant** : Non applicable à l’import direct. <br> **Sortant** :: Nécessite une restauration sur une instance OVHcloud puis export manuel (dump SQL) pour migration vers un autre environnement. | [Public Cloud Databases - Sauvegardes automatiques](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups)|
 | Sécurité réseau (ACL) ou IAM ? |  | Gestion des droits d’accès via interface OVHcloud | **Entrant** : Définition des règles de filtrage ? . <br> **Sortant** : Configuration export. | [TBC](to check)|
 
 ### 3 - Fonctionnalités spécifiques
