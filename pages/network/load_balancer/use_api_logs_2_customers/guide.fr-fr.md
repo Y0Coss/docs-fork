@@ -1,7 +1,7 @@
 ---
 title: Transfert des logs (Log Forwarding) TCP / HTTP / HTTPS du Load Balancer OVHcloud
 excerpt: Découvrez comment transférer vos logs depuis un Load Balancer OVHcloud vers Logs Data Platform
-updated: 2025-06-13
+updated: 2025-06-16
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 > [!primary]
 > Afin d'utiliser cette fonctionnalité, vous devez d'abord effectuer un appel de rafraîchissement via l'API aux Load Balancers dont vous souhaitez collecter les logs.
 > Ceci est nécessaire afin de s'assurer que le format des logs de l'OVHcloud Load Balancer est à jour.
-> Vous pouvez utiliser l'appel API ci-dessous, où **serviceName** est le nom interne de votre Load Balancer, que vous pouvez retrouver sur la page de gestion du Load Balancer de votre espace client OVHcloud ou en utilisant [l'appel API dédié](https://eu.api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing).
+> Vous pouvez utiliser l'appel API ci-dessous, où **serviceName** est le nom interne de votre Load Balancer, que vous pouvez retrouver sur la page de gestion du Load Balancer de votre espace client OVHcloud ou en utilisant [l'appel API dédié](https://api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing).
 
 > [!api]
 >
@@ -86,7 +86,7 @@ Cette fonctionnalité n'est pas encore disponible dans l'espace client.
 
 Vous devrez définir le *Stream* ciblé de l’un de vos comptes LDP vers lequel vous souhaitez transférer vos logs. L'activation du *forwarding* va créer un abonnement pour cet ID de flux.
 
-Vous pouvez récupérer les spécifications de l'API dans le portail [OVH API](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
+Vous pouvez récupérer les spécifications de l'API dans le portail [OVH API](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
 
 #### Étape 1 - Récupérer le Stream (et l'ID) cible
 
@@ -115,11 +115,11 @@ Utilisez l'appel API suivant pour créer un abonnement :
 
 Vous devrez remplacer :
 
-- **serviceName** : il s'agit du nom interne de votre Load Balancer, que vous pouvez retrouver sur la page de gestion du Load Balancer de votre espace client OVHcloud ou en utilisant [l'appel API dédié](https://eu.api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing).
+- **serviceName** : il s'agit du nom interne de votre Load Balancer, que vous pouvez retrouver sur la page de gestion du Load Balancer de votre espace client OVHcloud ou en utilisant [l'appel API dédié](https://api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing).
 
 La requête POST a une charge utile qui nécessite :
 
-- `kind` : le type de journal que vous voulez transférer, soit « http » ou « tcp ». Vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://eu.api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing/-serviceName-/log/kind).
+- `kind` : le type de journal que vous voulez transférer, soit « http » ou « tcp ». Vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing/-serviceName-/log/kind).
 - `streamId` : flux de données cible de votre compte LDP vers lequel vous souhaitez que vos logs du service Load Balancer soient transférés.
 
 ```shell
@@ -182,7 +182,7 @@ GET /ipLoadbalancing/{serviceName}/log/subscription/{subscriptionId}
 Maintenant que vos logs sont ingérés et stockés dans votre flux de données Logs Data Platform, vous pouvez interroger vos logs et créer des tableaux de bord pour avoir une représentation graphique de vos logs en utilisant l'interface web de Graylog.
 
 - Dans votre espace client, récupérez le nom d'utilisateur LDP (ex: logs-xxxx) et son mot de passe sur la page d'accueil de votre compte Logs Data Platform. Vous pouvez vous référer au [Guide de démarrage rapide pour Logs Data Platform](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start).
-- Ouvrir l'interface utilisateur Graylog. Vous pouvez récupérer le lien sur la page d'accueil de votre compte ou en utilisant votre point d'accès en fonction de la région de votre compte (par exemple : la région de Gravelines est https://gra1.logs.ovh.com/).
+- Ouvrir l'interface utilisateur Graylog. Vous pouvez récupérer le lien sur la page d'accueil de votre compte ou en utilisant votre point d'accès en fonction de la région de votre compte (par exemple : la région de Gravelines est `https://gra1.logs.ovh.com/`).
 - Connectez-vous à Graylog en utilisant votre nom d'utilisateur et votre mot de passe Logs Data Platform.
 - Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html){.external} pour plus de détails sur la syntaxe de recherche.
 

@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding
 excerpt: Find out how to forward your logs from an OVHcloud Load Balancer to Logs Data Platform
-updated: 2025-06-13
+updated: 2025-06-16
 ---
  
 ## Objective
@@ -12,7 +12,7 @@ If you would like to find out more about Logs Data Platform before reading this 
 > [!primary]
 > In order to use this feature, you must first make a refresh call via the API to the Load Balancers whose logs you want to collect. 
 > This is necessary to ensure that the logging format of the OVHcloud Load Balancer is up to date.
-> You can use the API call below, where **serviceName** is the internal name of your Load Balancer, which you can find in the Load Balancer management page in the OVHcloud Control Panel or using the [dedicated API](https://eu.api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing) call.
+> You can use the API call below, where **serviceName** is the internal name of your Load Balancer, which you can find in the Load Balancer management page in the OVHcloud Control Panel or using the [dedicated API](https://api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing) call.
 >
 
 > [!api]
@@ -87,7 +87,7 @@ This feature is not yet available in the Control Panel.
 
 You will have to define the targeted *Stream* of one of your LDP accounts to which you want your logs forwarded. The enablement of the forwarding will create a subscription for this stream id.
 
-You can retrieve the API specifications in the [OVH API Portal](https://eu.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
+You can retrieve the API specifications in the [OVH API Portal](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
 
 #### Step 1 - Retrieve your target Stream (and ID)
 
@@ -116,11 +116,11 @@ Use the following API call to create a subscription:
 
 You will need to replace:
 
-- **serviceName**: this is the internal name of your Load Balancer, you can find it in the Load Balancer management page in the OVHcloud Control Panel or using the [dedicated API](https://eu.api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing) call.
+- **serviceName**: this is the internal name of your Load Balancer, you can find it in the Load Balancer management page in the OVHcloud Control Panel or using the [dedicated API](https://api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing) call.
 
 The POST request has a payload that requires:
 
-- `kind`: the kind of log you want to forward, either "http" or "tcp". You can find available kinds using the [dedicated API](https://eu.api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing/-serviceName-/log/kind) call.
+- `kind`: the kind of log you want to forward, either "http" or "tcp". You can find available kinds using the [dedicated API](https://api.ovh.com/console/?section=%2FipLoadbalancing&branch=v1#get-/ipLoadbalancing/-serviceName-/log/kind) call.
 - `streamId`: the target data stream of your LDP account where you want your Load Balancer logs to be forwarded to. 
 
 ```shell
@@ -210,6 +210,6 @@ To delete your subscription you can use the following API call:
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
