@@ -10,7 +10,9 @@ This guide aims to educate and support customers in migrating their infrastructu
 
 It provides a step-by-step methodology for inventorying existing workloads, preparing a secure and scalable landing zone, and leveraging tools like Terraform/OpenTofu, Ansible, rclone, and rsync to automate deployment and data transfer.
 
-The guide also outlines best practices for selecting compatible OVHcloud instance flavours, configuring networks, and ensuring service continuity during migration. By following this guide, users can build a robust, cost-optimised, and cloud-native infrastructure aligned with OVHcloud’s IaaS ecosystem.
+The guide also outlines best practices for selecting compatible OVHcloud instance flavours, configuring networks, and ensuring service continuity during migration.
+
+By following this guide, users can build a robust, cost-optimised, and cloud-native infrastructure aligned with OVHcloud’s IaaS ecosystem.
 
 ## Requirements
 
@@ -125,7 +127,7 @@ Be sure to use the same applications versions as in your source environment to e
 
 Once configuration is complete, migrate your data using tools like rsync, scp, or database utilities, and validate that everything is working as expected.
 
-### 7. Migrate block storage using rsync (or similar tool)
+### 7. Migrate block storage using rsync (or a similar tool)
 
 To move your block storage to OVHcloud, start by configuring your target storage volumes. You can do this either [manually on the instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) or automatically using tools like Ansible.
 
@@ -135,7 +137,7 @@ This method allows you to migrate data progressively and validate it as you go.
 
 If you need help setting up this process or automating it across multiple instances, you can contact the OVHcloud [Professional Services](/links/professional-services) team.
 
-### 8. Migrate object storage using rclone (or similar tool)
+### 8. Migrate object storage using rclone (or a similar tool)
 
 To transfer your object storage to OVHcloud, use a tool like rclone, which supports most S3-compatible services.
 
