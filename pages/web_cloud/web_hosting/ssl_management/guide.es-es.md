@@ -65,9 +65,9 @@ Para que el sitio web esté accesible en HTTPS, es necesario disponer de un cert
 >
 > **Información sobre la migración a la nueva interfaz de gestión de certificados SSL:**
 >
-> Esta guía sigue dirigida a los clientes cuyos servicios de alojamiento web ya hayan migrado a la nueva interfaz de gestión de certificados SSL.
+> El resto de esta guía se dirige a los clientes cuyos servicios de alojamiento web ya hayan migrado a la nueva interfaz de gestión de certificados SSL.
 > Para comprobar si se ha realizado la migración, acceda a su alojamiento en el área de cliente de OVHcloud y compruebe la presencia de la pestaña `Certificados SSL`.
-> Si la pestaña Certificados SSL no está presente, el servicio no ha migrado aún a la nueva interfaz de gestión. En ese caso, consulte directamente [esta guía](/pages/web_cloud/web_hosting/ssl_on_webhosting) para gestionar su certificado SSL.
+> Si la pestaña `Certificados SSL` no está presente, el servicio no ha migrado aún a la nueva interfaz de gestión. En ese caso, consulte directamente [esta guía](/pages/web_cloud/web_hosting/ssl_on_webhosting) para gestionar su certificado SSL.
 >
 > Por razones técnicas, todos los servicios de alojamiento web de todos nuestros clientes no pueden migrarse de una sola vez. Esta migración se realiza de forma automática, a lo largo de varias semanas, sin que afecte al funcionamiento de los servicios de alojamiento web y sin que usted tenga que realizar ninguna intervención o acción.
 >

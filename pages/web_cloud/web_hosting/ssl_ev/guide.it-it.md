@@ -91,7 +91,7 @@ Per attivare un certificato SSL per più domini/sottodomini dichiarati sull’ho
 >
 > **Informazioni sulla migrazione alla nuova interfaccia di gestione dei certificati SSL:**
 >
-> La parte 1.1 continua con i clienti i cui servizi di hosting Web non sono ancora stati migrati verso la nuova interfaccia di gestione dei certificati SSL.
+> La parte restante della sezione 1.1 continua con i clienti i cui servizi di hosting Web non sono ancora stati migrati verso la nuova interfaccia di gestione dei certificati SSL.
 > Per sapere se la migrazione è stata effettuata, accedi al tuo hosting Web dallo Spazio Cliente OVHcloud e verifica la presenza della scheda `Certificati SSL`.
 > Se la scheda `Certificati SSL` è presente, il servizio è già migrato sulla nuova interfaccia di gestione. In questo caso, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/ssl_management) per gestire il tuo certificato SSL.
 >

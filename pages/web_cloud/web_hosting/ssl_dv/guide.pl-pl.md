@@ -80,9 +80,9 @@ Zapoznaj się z naszymi przewodnikami:
 >
 > **Informacje o migracji do nowego interfejsu zarządzania certyfikatami SSL:**
 >
-> Więcej informacji jest dostępnych dla klientów, których usługi hostingowe nie zostały jeszcze przeniesione do nowego interfejsu zarządzania certyfikatami SSL.
-> Aby sprawdzić, czy migracja została wykonana, przejdź do Panelu klienta OVHcloud i sprawdź kartę `Certyfikaty SSL`.
-> Jeśli zakładka `Certyfikaty SSL` jest obecna, Twoja usługa została już przeniesiona do nowego panelu zarządzania. W takim przypadku skorzystaj bezpośrednio z [tego przewodnika](/pages/web_cloud/web_hosting/ssl_management), aby zarządzać certyfikatem SSL.
+> Dalsza część tego przewodnika jest skierowana do klientów, których usługi hostingowe nie zostały jeszcze przeniesione do nowego interfejsu zarządzania certyfikatami SSL.
+> Aby sprawdzić, czy migracja została wykonana, przejdź do strony Hosting w Panelu klienta i w zakładce `Certyfikaty SSL`.
+> Jeśli zakładka `Certyfikaty SSL` jest aktywna, Twoja usługa została już przeniesiona do nowego panelu zarządzania. W takim przypadku zapoznaj się z [ten przewodnik](/pages/web_cloud/web_hosting/ssl_management) i zarządzaj certyfikatem SSL.
 >
 > Ze względów technicznych nie wszystkie usługi hostingowe naszych klientów mogą zostać migrowane za jednym razem. Migracja jest rozdzielona na kilka tygodni i jest wykonywana automatycznie. Nie wpływa ona na działanie usług hostingowych, nie wymaga interwencji ani nie wymaga żadnego działania ze strony użytkownika.
 >
