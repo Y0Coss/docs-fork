@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Instalar um certificado SSL personalizado"
 excerpt: "Saiba como importar e instalar um certificado SSL personalizado no seu alojamento Web OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objetivo
@@ -148,8 +148,20 @@ Se iniciar diretamente a leitura deste manual nesta etapa, uma vez que já disp�
 
 **Antes de finalizar a instalação do certificado SSL no alojamento web**, verifique se **todos os domínios e/ou subdomínios** abrangidos pelo seu certificado SSL:
 
-- apontam para o endereço IP do seu alojamento web;
-- estão declarados em multi-site no seu alojamento web;
+- apontam para o endereço IP do seu alojamento web.
+- estão declarados em multi-site no seu alojamento web.
+
+> [!primary]
+>
+> **Informações sobre a migração para a nova interface de gestão de certificados SSL:**
+>
+> Este manual destina-se aos clientes cujos serviços de alojamento web ainda não migraram para a nova interface de gestão dos certificados SSL.
+> Para detetar se esta migração foi efetuada, aceda ao seu alojamento web na Área de Cliente OVHcloud e verifique a presença do separador `Certificados SSL`.
+> Se estiver presente o separador `Certificados SSL`, o seu serviço já migrou para a nova interface de gestão. Neste caso, consulte diretamente [este manual](/pages/web_cloud/web_hosting/ssl_management) para gerir o seu certificado SSL.
+>
+> Por razões técnicas, nem todos os serviços de alojamento web de todos os nossos clientes podem ser migrados de uma só vez. Esta migração é, por isso, repartida durante algumas semanas e é realizada de forma automática, sem qualquer incidência no funcionamento dos seus serviços de alojamento web, e sem qualquer intervenção ou ação necessária da sua parte.
+>
+> A prazo, todos os serviços de alojamento web funcionarão com a nova interface de gestão dos certificados SSL.
 
 Verifique também o seguinte:
 

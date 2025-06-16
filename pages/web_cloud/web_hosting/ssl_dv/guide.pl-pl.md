@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Aktywacja certyfikatu SSL Sectigo DV"
 excerpt: "Dowiedz się, jak aktywować certyfikat SSL Sectigo DV na Twoim hostingu OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Wprowadzenie
@@ -75,6 +75,18 @@ Zapoznaj się z naszymi przewodnikami:
 - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Zamów certyfikat SSL Sectigo DV
+
+> [!primary]
+>
+> **Informacje o migracji do nowego interfejsu zarządzania certyfikatami SSL:**
+>
+> Więcej informacji jest dostępnych dla klientów, których usługi hostingowe nie zostały jeszcze przeniesione do nowego interfejsu zarządzania certyfikatami SSL.
+> Aby sprawdzić, czy migracja została wykonana, przejdź do Panelu klienta OVHcloud i sprawdź kartę `Certyfikaty SSL`.
+> Jeśli zakładka `Certyfikaty SSL` jest obecna, Twoja usługa została już przeniesiona do nowego panelu zarządzania. W takim przypadku skorzystaj bezpośrednio z [tego przewodnika](/pages/web_cloud/web_hosting/ssl_management), aby zarządzać certyfikatem SSL.
+>
+> Ze względów technicznych nie wszystkie usługi hostingowe naszych klientów mogą zostać migrowane za jednym razem. Migracja jest rozdzielona na kilka tygodni i jest wykonywana automatycznie. Nie wpływa ona na działanie usług hostingowych, nie wymaga interwencji ani nie wymaga żadnego działania ze strony użytkownika.
+>
+> Po pewnym czasie wszystkie usługi hostingowe będą działały w nowym interfejsie zarządzania certyfikatami SSL.
 
 Aby zamówić certyfikat SSL Sectigo DV, wykonaj następujące czynności:
 

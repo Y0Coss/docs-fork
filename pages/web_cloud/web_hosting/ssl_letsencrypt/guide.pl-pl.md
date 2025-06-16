@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Aktywacja darmowego certyfikatu SSL Let's Encrypt"
 excerpt: "Dowiedz się, jak aktywować lub odnowić bezpłatny certyfikat SSL Let's Encrypt na Twoim hostingu"
-updated: 2025-02-20
+updated: 2025-06-15
 ---
 
 ## Wprowadzenie
@@ -31,6 +31,18 @@ Let's Encrypt to bezpłatny, zautomatyzowany, otwarty i nienastawiony na zysk or
 - Zamówić lub dysponować [domeną](/links/web/domains) i mieć wyłączne prawa do jej używania. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
 
 ## W praktyce
+
+> [!primary]
+>
+> **Informacje o migracji do nowego interfejsu zarządzania certyfikatami SSL:**
+>
+> Więcej informacji jest dostępnych dla klientów, których usługi hostingowe nie zostały jeszcze przeniesione do nowego interfejsu zarządzania certyfikatami SSL.
+> Aby sprawdzić, czy migracja została wykonana, przejdź do Panelu klienta OVHcloud i sprawdź kartę `Certyfikaty SSL`.
+> Jeśli zakładka `Certyfikaty SSL` jest obecna, Twoja usługa została już przeniesiona do nowego panelu zarządzania. W takim przypadku skorzystaj bezpośrednio z [tego przewodnika](/pages/web_cloud/web_hosting/ssl_management), aby zarządzać certyfikatem SSL.
+>
+> Ze względów technicznych nie wszystkie usługi hostingowe naszych klientów mogą zostać migrowane za jednym razem. Migracja jest rozdzielona na kilka tygodni i jest wykonywana automatycznie. Nie wpływa ona na działanie usług hostingowych, nie wymaga interwencji ani nie wymaga żadnego działania ze strony użytkownika.
+>
+> Po pewnym czasie wszystkie usługi hostingowe będą działały w nowym interfejsie zarządzania certyfikatami SSL.
 
 ### 1. Przypisz wstępnie przyszły certyfikat SSL Let's Encrypt do Twojej (Twoich) domeny/subdomeny(ów) <a name="ssl-multisite"></a>
 

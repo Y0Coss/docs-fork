@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to install a custom SSL certificate"
 excerpt: "Find out how to import and install a custom SSL certificate on your OVHcloud Web Hosting plan"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objective
@@ -150,6 +150,18 @@ If you start reading this guide in this step because you already have an externa
 
 - Point to your web hosting plan’s IP address.
 - Are declared as multisites on your web hosting plan.
+
+> [!primary]
+>
+> **Information on migrating to the new SSL certificate management interface:**
+>
+> The rest of this guide is aimed at customers whose web hosting services have not yet migrated to the new SSL certificate management interface.
+> To check if this migration has been carried out, go to your Web Hosting plan in the OVHcloud Control Panel, and check the `SSL certificates` tab.
+> If the `SSL certificates` tab is present, your service has already migrated to the new management interface. If this is the case, please refer to [this guide](/pages/web_cloud/web_hosting/ssl_management) directly to manage your SSL certificate.
+>
+> For technical reasons, not all of our customers' web hosting services can be migrated at once. This migration process is carried out automatically over a period of a few weeks, with no impact on the operation of your web hosting services, and no intervention or action required on your part.
+>
+> All web hosting services will eventually work with the new SSL certificate management interface.
 
 Also check the following:
 

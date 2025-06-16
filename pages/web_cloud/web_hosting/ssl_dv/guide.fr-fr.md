@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer un certificat SSL Sectigo DV"
 excerpt: "Découvrez comment activer un certificat SSL Sectigo DV sur votre hébergement Web OVHcloud"
-updated: 2025-06-10
+updated: 2025-06-16
 ---
 
 ## Objectif

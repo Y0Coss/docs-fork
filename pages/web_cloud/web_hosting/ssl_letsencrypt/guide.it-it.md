@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Attivare un certificato SSL gratuito Let's Encrypt"
 excerpt: "Scopri come attivare o rigenerare un certificato SSL gratuito Let's Encrypt sul tuo hosting Web"
-updated: 2025-02-20
+updated: 2025-06-15
 ---
 
 ## Obiettivo
@@ -31,6 +31,18 @@ Let's Encrypt è un'autorità di certificazione gratuita, automatizzata, aperta 
 - Ordinare o disporre di un [dominio](/links/web/domains) e disporre dei diritti esclusivi sul suo utilizzo. Il dominio non deve essere già associato a un certificato SSL.
 
 ## Procedura
+
+> [!primary]
+>
+> **Informazioni sulla migrazione alla nuova interfaccia di gestione dei certificati SSL:**
+>
+> Questa guida si rivolge ai clienti i cui servizi di hosting Web non sono ancora stati migrati verso la nuova interfaccia di gestione dei certificati SSL.
+> Per sapere se la migrazione è stata effettuata, accedi al tuo hosting Web dallo Spazio Cliente OVHcloud e verifica la presenza della scheda `Certificati SSL`.
+> Se la scheda `Certificati SSL` è presente, il servizio è già migrato sulla nuova interfaccia di gestione. In questo caso, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/ssl_management) per gestire il tuo certificato SSL.
+>
+> Per motivi tecnici, non tutti i servizi di hosting Web dei nostri clienti possono essere migrati in una sola volta. Il trasferimento viene quindi effettuato in poche settimane e automaticamente, senza alcuna conseguenza sul funzionamento dei servizi di hosting Web e senza alcun intervento o azione da parte tua.
+>
+> Tutti i servizi di hosting Web funzioneranno col nuovo sistema di gestione dei certificati SSL.
 
 ### 1. Preattribuire il futuro certificato SSL Let's Encrypt al(i) dominio(i)/sottodominio(i) <a name="ssl-multisite"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Gestire un certificato SSL"
 excerpt: "Questa quiga ti mostra come attivare e utilizzare un certificato SSL sugli hosting Web OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Obiettivo
@@ -69,6 +69,18 @@ Trovi qui sotto i 4 link verso le nostre guide dedicate a queste 4 soluzioni:
 > Per rimuovere un certificato SSL da un hosting Web e **prima di continuare, assicurati che la rimozione del certificato non abbia impatto sulla raggiungibilità dei tuoi siti Web. In questo caso, gli utenti visualizzeranno un errore di sicurezza quando tenteranno di accedere al sito Web in "HTTPS".
 
 Queste operazioni sono relative ai parametri dei tuoi siti Web, per cui OVH non fornisce assistenza. In caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore. OVH non sarà in grado di fornirti assistenza.
+
+> [!primary]
+>
+> **Informazioni sulla migrazione alla nuova interfaccia di gestione dei certificati SSL:**
+>
+> Questa guida si rivolge ai clienti i cui servizi di hosting Web non sono ancora stati migrati verso la nuova interfaccia di gestione dei certificati SSL.
+> Per sapere se la migrazione è stata effettuata, accedi al tuo hosting Web dallo Spazio Cliente OVHcloud e verifica la presenza della scheda `Certificati SSL`.
+> Se la scheda `Certificati SSL` è presente, il servizio è già migrato sulla nuova interfaccia di gestione. In questo caso, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/ssl_management) per gestire il tuo certificato SSL.
+>
+> Per motivi tecnici, non tutti i servizi di hosting Web dei nostri clienti possono essere migrati in una sola volta. Il trasferimento viene quindi effettuato in poche settimane e automaticamente, senza alcuna conseguenza sul funzionamento dei servizi di hosting Web e senza alcun intervento o azione da parte tua.
+>
+> Tutti i servizi di hosting Web funzioneranno col nuovo sistema di gestione dei certificati SSL.
 
 Per rimuovere il certificato SSL installato sull’hosting Web, esegui queste operazioni:
 
