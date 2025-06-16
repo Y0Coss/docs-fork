@@ -227,7 +227,33 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
 >> 
 > **Via the Openstack CLI**
->> 
+>> Lister les types de volumes disponibles dans la région :
+>>
+>> ```bash
+>> openstack volume type list
+>> ```
+>>
+>> Créez un volume en spécifiant au minimum sa taille (en GB) ainsi qu’un type parmi ceux listés précédemment. Vous pouvez également indiquer un nom pour votre volume à la fin de la commande.
+>>
+>> ```bash
+>> openstack volume create --size 1 --type high-speed-gen2 volumeName
+>> ```
+>>
+>> Pour attacher un volume à une instance disponible dans la région, utilisez la commande suivante :
+>>
+>> ```bash
+>> openstack server add volume <server-id|server-name> <volume-id|volume-name>
+>>
+>> +-----------+-------------------------------------+
+>> | Field     | Value                               |
+>> +-----------+-------------------------------------+
+>> | ID        | 7d3d670f-****-****-****-60dd1e6**** |
+>> | Server ID | 74317f97-****-****-****-80cf2d4**** |
+>> | Volume ID | 7d3d670f-****-****-****-60dd1e6**** |
+>> | Device    | /dev/sdb                            |
+>> | Tag       | None                                |
+>> +-----------+-------------------------------------+
+>> ```
 >>
 
 ### Configuration du nouveau disque
