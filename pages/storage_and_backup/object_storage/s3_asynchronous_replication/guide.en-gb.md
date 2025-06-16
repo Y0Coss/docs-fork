@@ -440,7 +440,7 @@ $ aws s3api put-bucket-replication --bucket <source> --replication-configuration
 }
 ```
 
-### Using the web UI
+### Using the OVHcloud Control Panel
 
 #### Prerequisites
 * a source and a destination bucket
