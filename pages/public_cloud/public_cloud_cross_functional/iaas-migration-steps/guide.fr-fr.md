@@ -171,7 +171,7 @@ Une fois que vous avez vérifié que votre nouvel environnement OVHcloud fonctio
 
 Assurez-vous que toutes les données et tous les services ont bien été migrés et sauvegardés avant de mettre hors service les systèmes existants.
 
-### 12. Optimisez avec les Saving Plans
+### 12. Optimisez avec les Savings Plans
 
 Pour mieux gérer et réduire vos dépenses cloud, appliquez les bonnes pratiques FinOps. OVHcloud propose plusieurs solutions d’optimisation des coûts, dont des [Savings Plans](/links/public-cloud/savings-plan) adaptés à vos habitudes de consommation.
 

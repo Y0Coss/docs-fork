@@ -171,7 +171,7 @@ After verifying that your new OVHcloud environment is fully operational, you can
 
 Ensure all data and services have been successfully migrated and backed up before powering off legacy systems.
 
-### 12. Optimise with Saving Plans
+### 12. Optimise with Savings Plans
 
 To manage and reduce your cloud expenses, leverage FinOps best practices. OVHcloud offers various cost optimization solutions and [Savings Plans](/links/public-cloud/savings-plan) tailored to your usage patterns.
 
