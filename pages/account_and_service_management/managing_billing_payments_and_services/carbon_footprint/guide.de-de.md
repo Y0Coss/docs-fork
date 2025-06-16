@@ -89,7 +89,7 @@ Wenn alles korrekt ausgeführt wurde, erscheint im Fenster `RESPONSE`{.action} n
 
 ![API](/pages/assets/screens/api/post-me-carboncalculator-task-response.png){.thumbnail}
 
-Wenn Ihre OVHcloud Kundenkennung beispielsweise `aa00000-ovh` lautet und das zuvor gewählte Datum `2025-01-31` ist, erhalten Sie folgendes Ergebnis:
+Wenn Ihre OVHcloud Kundenkennung beispielsweise `aa00000-ovh` lautet und das zuvor gewählte Datum `31.01.2025` ist, erhalten Sie folgendes Ergebnis:
 
 ```bash
 {
