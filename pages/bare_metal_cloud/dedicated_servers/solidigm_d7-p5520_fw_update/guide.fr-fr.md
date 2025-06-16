@@ -48,14 +48,10 @@ Drive Part Number (Numéro de référence du lecteur) :
 
 Un serveur Bare Metal avec un périphérique Solidigm D7-P5520 PCIe 4.0 NVMe, parmi les gammes suivantes :
 
-- HGR SDS Gen1/Gen2
-- HGR HCI Gen1/Gen2
-- HGR-STOR Gen2
-- Scale-a
-- Scale-i
-- Scale Gen1
-- Advance Gen2/Gen3
-- Rise
+- High Grade
+- Scale
+- Advance
+- Rise (Processors: AMD Ryzen R5-5600X ; AMD Ryzen R7-5800X ; AMD Ryzen R7-3700pro ; AMD Epyc Epyc7302 ; Intel Xeon  E5-2689v4) 
 
 ## En pratique
 
