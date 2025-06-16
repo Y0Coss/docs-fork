@@ -468,7 +468,7 @@ Choose "Add a replication rule".
 
 Specify a name for your rule to help identify it later. The name is required and must be unique within the bucket.
 
-(screenshot of rule creation EN)
+![replication_screenshot_4](images/replication-rule-creation-EN.png)
 
 You can specify a prefix and/or tags to limit the scope of the objects to be replicated.
 
