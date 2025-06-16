@@ -7,7 +7,7 @@ updated: 2025-06-16
 ## Objectif
 
 L'objectif de ce guide est de vous montrer comment activer la redirection de logs de votre OVHcloud Load Balancer vers Logs Data Platform (LDP), une plateforme qui vous aide à stocker, archiver, interroger et visualiser vos logs.
-Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au [Guide d'introduction de Logs Data Platform](/pages/manage_and_operation/observability/logs_data_platform/getting_started_introduction_to_LDP).
+Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au [Guide d'introduction de Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 
 > [!primary]
 > Afin d'utiliser cette fonctionnalité, vous devez d'abord effectuer un appel de rafraîchissement via l'API aux Load Balancers dont vous souhaitez collecter les logs.
@@ -28,7 +28,7 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 
 ## Prérequis
 
-- Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform (EN)](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start).
+- Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 - Si vous ne connaissez pas toutes les possibilités de configuration d'un *Stream* LDP, il vous suffit d'en créer un nouveau avec les options par défaut (indexation & websocket activés, stockage longue durée désactivé) pour suivre ce guide.
 - Un [Load Balancer OVHcloud](/pages/network/load_balancer/use_presentation) opérationnel.
 - Le compte LDP et le compte OVHcloud Load Balancer doivent appartenir au même compte OVHcloud.
