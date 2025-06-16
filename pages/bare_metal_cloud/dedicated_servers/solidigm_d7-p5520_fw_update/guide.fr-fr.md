@@ -51,7 +51,7 @@ Un serveur Bare Metal avec un périphérique Solidigm D7-P5520 PCIe 4.0 NVMe, pa
 - High Grade
 - Scale
 - Advance
-- Rise (Processors: AMD Ryzen R5-5600X ; AMD Ryzen R7-5800X ; AMD Ryzen R7-3700pro ; AMD Epyc Epyc7302 ; Intel Xeon  E5-2689v4) 
+- Rise (processeurs : AMD Ryzen R5-5600X ; AMD Ryzen R7-5800X ; AMD Ryzen R7-3700pro ; AMD Epyc Epyc7302 ; Intel Xeon  E5-2689v4) 
 
 ## En pratique
 
