@@ -1967,7 +1967,7 @@
         + [OVHcloud KMS Architecture overview](manage_and_operate/kms/architecture-overview)
         + [OVHcloud KMS - Responsibility model](manage_and_operate/kms/responsibility-model-kms)
         + [How to connect a compatible product using KMIP protocol with OVHcloud KMS](manage_and_operate/kms/kms-kmip)
-        + [How to troubleshoot OVHcloud KMS access](manage_and_operate/kms/kms-troubleshooting)
+        + [Pushing logs from OVHcloud KMS to Logs Data Platform](manage_and_operate/kms/kms-troubleshooting)
 + OVHcloud Labs
     + [Data Collector](products/ovhcloud-labs-data-collector)
         + [Getting started](ovhcloud-labs-data-collector-getting-started)

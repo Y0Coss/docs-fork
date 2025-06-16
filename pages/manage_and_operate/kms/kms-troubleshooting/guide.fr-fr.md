@@ -1,12 +1,12 @@
 ---
-title: "Comment diagnostiquer les accès sur un OVHcloud KMS"
+title: "Transférer les logs du KMS OVHcloud à Logs Data Platform"
 excerpt: "Analyser les logs KMS via LDP"
 updated: 2025-06-13
 ---
 
 ## Objectif
 
-L'objectif de ce guide est de présenter les logs générés par le KMS OVHcloud et comment les interprêter
+L'objectif de ce guide est de présenter les logs générés par le KMS OVHcloud et comment y accéder depuis Logs Data Platform
 
 ## Prérequis
 
