@@ -39,9 +39,7 @@ Les fonctionnalités de la gamme de produits Managed Document Database sont rép
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-
-| Infrastructure As a Code  | Déploiement automatisé via modules Terraform spécifiques à OVHcloud | N/A | **Entrant** : Scripts à adapter pour d’autres fournisseurs. <br> **Sortant** : 
-Réécriture nécessaire des configurations Terraform. | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs) |
+| Infrastructure As a Code  | Déploiement automatisé via modules Terraform spécifiques à OVHcloud | N/A | **Entrant** : Scripts à adapter pour d’autres fournisseurs. <br> **Sortant** : Réécriture nécessaire des configurations Terraform. | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs) |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrante** : Le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortante** : Commandez et configurez un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
