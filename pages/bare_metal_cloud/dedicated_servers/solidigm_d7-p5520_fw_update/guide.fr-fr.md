@@ -1,7 +1,7 @@
 ---
 title: "Serveurs Dédiés - Mise à jour du firmware de votre SSD Solidigm D7-P5520"
 excerpt: "Découvrez comment mettre à jour le firmware de votre SSD Solidigm D7-P5520 sur vos serveurs dédiés Linux, ESXi et Windows"
-updated: 2025-06-05
+updated: 2025-06-16
 ---
 
 <style>
