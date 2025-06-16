@@ -185,7 +185,7 @@ Now that your logs are ingested and stored in your Logs Data Platform data strea
 - In the OVHcloud Control Panel, retrieve the LDP username (ex: logs-xxxx) and its password in your Logs Data Platform account home page. You can refer to the [Quick start guide for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 - Open the Graylog web-ui. You can retrieve the link in your account home page or using your Access point depending on your account region (for example: Gravelines region is https://gra1.logs.ovh.com/).
 - Log into Graylog using your Logs Data Platform Username and Password.
-- Search through your logs across the data stream of your Logs Data Platform account. You can refer to [Graylog writing search queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html){.external} documentation for details on search syntax.
+- Search through your logs across the data stream of your Logs Data Platform account. You can refer to [Graylog writing search queries](https://go2docs.graylog.org/current/making_sense_of_your_log_data/writing_search_queries.html){.external} documentation for details on search syntax.
 
 Refer to the following documentation: [Logs Data Platform - Visualizing, querying and exploiting your logs](/products/observability-logs-data-platform-visualizing-querying-exploiting) for more details about how to use your logs with Logs Data Platform, including how to:
 
