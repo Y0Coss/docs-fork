@@ -1,14 +1,15 @@
 ---
 title: 'Activer les DNS Anycast pour votre nom de domaine'
-excerpt: 'Découvrez, à partir de votre nom de domaine, comment accéder à vos services web plus rapidement. Ceci grâce à la vitesse de résolution DNS de l'option DNS Anycast'
+excerpt: "Découvrez comment accélérer l'accès à vos services web grâce à la vitesse de résolution DNS offerte par l’option DNS Anycast de votre nom de domaine"
 updated: 2025-06-16
 ---
 
 ## Objectif 
 
-Vous avez besoin que vos services (par exemple : votre site web) soient accessibles en un temps records sur l'ensemble du globe ? Vous souhaitez que la résolution DNS de votre nom de domaine soit optimisée ? OVHcloud vous propose l'option [DNS Anycast](/links/web/domains-options-anycast).
+Vous avez besoin que vos services (par exemple : votre site web) soient accessibles en un temps record sur l'ensemble du globe ? Vous souhaitez que la résolution DNS de votre nom de domaine soit optimisée ?
+OVHcloud vous propose l'option [DNS Anycast](/links/web/domains-options-anycast).
 
-**Découvrez, à partir de votre nom de domaine, comment accéder à vos services web plus rapidement. Ceci grâce à la vitesse de résolution DNS de l'option DNS Anycast.**
+**Découvrez comment accélérer l'accès à vos services web grâce à la vitesse de résolution DNS offerte par l’option DNS Anycast de votre nom de domaine.**
 
 ## Prérequis
 
@@ -47,13 +48,16 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 > **Étape 5**
 >>
->> Sur la nouvelle page qui s'affiche, choisissez la durée proposée dans la section `1`, choisissez votre moyen de paiement, puis cliquez sur `Payer`{.action} pour poursuivre l'activation des DNS Anycast.
+>> Sur la nouvelle page qui s'affiche :
+>>
+>> - Choisissez la durée proposée dans la section `1` et cliquez sur `suivant`{.action}.
+>> - Sélectionnez votre moyen de paiement puis cliquez sur `Payer`{.action} pour poursuivre l'activation des DNS Anycast.
 >>
 >> ![Order Anycast DNS step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/order-anycast-dns-step-2.png){.thumbnail}
 >>
->> Dans le message qui apparaît ensuite en vert, cliquez sur le bouton `Bon de commande`{.action} pour être redirigé sur le bon de commande d'activation de l'ption DNS Anycast.
+>> Dans le message qui apparaît ensuite en vert, cliquez sur le bouton `Bon de commande`{.action} pour être redirigé vers le bon de commande d'activation de l'option DNS Anycast.
 >>
->> Dès que vous êtes sur le bon de commande, poursuivez jusqu'à la validation du bon de commande à l'aide d'un moyen de paiement pour finaliser la prise en compte de la commande.
+>> Dès que vous êtes sur le bon de commande, poursuivez jusqu'à sa validation à l'aide d'un moyen de paiement pour finaliser la prise en compte de la commande.
 
 L'activation de l'option DNS Anycast peut prendre plusieurs minutes.
 
