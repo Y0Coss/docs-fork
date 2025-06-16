@@ -44,8 +44,8 @@ Les fonctionnalités de la gamme de produits Managed Document Database sont rép
 
 ## Liste des architectures
 
-L’offre de service Managed Grafana est déployée en mode single-node (plan essential). L’intégration avec d’autres services OVHcloud (OpenSearch, bases de données) est native via vRack. Les architectures incluent :
--Scalabilité verticale : Montée en puissance des ressources (CPU/RAM) via l’interface OVHcloud.
+L’offre de service Managed Grafana est déployée en mode single-node (plan essential). L’intégration avec d’autres services OVHcloud (OpenSearch, bases de données) est native via vRack. Les architectures incluent : <br>
+-Scalabilité verticale : Montée en puissance des ressources (CPU/RAM) via l’interface OVHcloud. <br>
 -Cross-service integration : Centralisation des logs et métriques dans OpenSearch managés
 
 ## Services partenaires
