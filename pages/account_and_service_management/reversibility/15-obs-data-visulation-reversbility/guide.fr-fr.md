@@ -21,14 +21,10 @@ Les fonctionnalités de la gamme de produits Managed Document Database sont rép
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Platforme As A Service | Plateforme permettant de mettre en place des dashboard et graphiques dynamiques. | JSON, YAML | **Entrant** : Connexion directe via API pour importer dashboards/configurations. <br> **Sortant** :
-Export des ressources via API REST vers tout environnement Grafana compatible. | [Présentation de l'offre](https://www.ovhcloud.com/fr/public-cloud/grafana/) |
-| Utilisation de plugins standards | Plugins open source (Prometheus, Loki, etc.) activables. | Plugins officiels Grafana | **Entrant** : Activation des plugins compatibles avec la version cible. <br> **Sortant** : 
-Plugins réutilisables si supportés par le nouvel environnement. |[Grafana Plugins](https://grafana.com/grafana/plugins/all-plugins/){.external}|
-| Dhasboards et alertes | Création manuelle de dashboards et règles d'alerte via interface Grafana | JSON | **Entrant** :Import des fichiers JSON via API ou interface. <br> **Sortant** : 
-Export des dashboards/alertes en JSON pour migration. | [Dashboards - Capacités et limitations](/pages/public_cloud/public_cloud_databases/grafana_01_capabilities)|
-| Sauvegardes manuelles | Génération manuelle de sauvegardes via outils externes (ex : grr) | JSON, SQLite | **Entrant** : Restauration depuis un fichier JSON ou SQLite. <br> **Sortant** : 
-Export manuel des données pour migration hors environnement d’hébergement OVHcloud. | [Grafana documentation](https://help.ovhcloud.com/csm/fr-documentation-public-cloud-data-analytics-grafana?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=804a1cf0b1e312981e118a746c410dfb&spa=1e)|
+| Platforme As A Service | Plateforme permettant de mettre en place des dashboard et graphiques dynamiques. | JSON, YAML | **Entrant** : Connexion directe via API pour importer dashboards/configurations. <br> **Sortant** :Export des ressources via API REST vers tout environnement Grafana compatible. | [Présentation de l'offre](https://www.ovhcloud.com/fr/public-cloud/grafana/) |
+| Utilisation de plugins standards | Plugins open source (Prometheus, Loki, etc.) activables. | Plugins officiels Grafana | **Entrant** : Activation des plugins compatibles avec la version cible. <br> **Sortant** : Plugins réutilisables si supportés par le nouvel environnement. |[Grafana Plugins](https://grafana.com/grafana/plugins/all-plugins/){.external}|
+| Dhasboards et alertes | Création manuelle de dashboards et règles d'alerte via interface Grafana | JSON | **Entrant** :Import des fichiers JSON via API ou interface. <br> **Sortant** : Export des dashboards/alertes en JSON pour migration. | [Dashboards - Capacités et limitations](/pages/public_cloud/public_cloud_databases/grafana_01_capabilities)|
+| Sauvegardes manuelles | Génération manuelle de sauvegardes via outils externes (ex : grr) | JSON, SQLite | **Entrant** : Restauration depuis un fichier JSON ou SQLite. <br> **Sortant** : Export manuel des données pour migration hors environnement d’hébergement OVHcloud. | [Grafana documentation](https://help.ovhcloud.com/csm/fr-documentation-public-cloud-data-analytics-grafana?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=804a1cf0b1e312981e118a746c410dfb&spa=1e)|
 
 ### 2 - Implémentations OVHcloud
 
