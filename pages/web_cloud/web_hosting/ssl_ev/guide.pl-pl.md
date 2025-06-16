@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Aktywacja certyfikatu SSL Sectigo EV"
 excerpt: "Dowiedz się, jak zamówić i zainstalować certyfikat SSL Sectigo EV na Twoim hostingu WWW OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Wprowadzenie
@@ -86,6 +86,18 @@ Jeśli chcesz aktywować certyfikat SSL dla kilku domen/subdomen zadeklarowanych
 > W razie potrzeby, jeśli zamówisz certyfikat SSL Sectigo EV i nie upewnisz się, czy zamówiłeś poprzednie punkty, wprowadź poprawki. Należy usunąć wykupiony wcześniej certyfikat SSL Sectigo EV **bez możliwości otrzymania zwrotu płatności**, a następnie zamówić nowy. Celem jest, aby nowy certyfikat SSL Sectigo EV obejmował zarówno Twoją domenę `domain.tld`, jak i jej subdomenę "www" `www.domain.tld`.
 >
 > Przypominamy, że jeśli subskrybujesz certyfikat SSL Sectigo EV bezpośrednio dla subdomeny (na przykład: `sub.domain.tld`), ta sytuacja Cię nie dotyczy.
+
+> [!primary]
+>
+> **Informacje o migracji do nowego interfejsu zarządzania certyfikatami SSL:**
+>
+> Część 1.1 jest skierowana do klientów, których usługi hostingowe nie zostały jeszcze przeniesione do nowego interfejsu zarządzania certyfikatami SSL.
+> Aby sprawdzić, czy migracja została wykonana, przejdź do Panelu klienta OVHcloud i sprawdź kartę `Certyfikaty SSL`.
+> Jeśli zakładka `Certyfikaty SSL` jest obecna, Twoja usługa została już przeniesiona do nowego panelu zarządzania. W takim przypadku skorzystaj bezpośrednio z [tego przewodnika](/pages/web_cloud/web_hosting/ssl_management), aby zarządzać certyfikatem SSL.
+>
+> Ze względów technicznych nie wszystkie usługi hostingowe naszych klientów mogą zostać migrowane za jednym razem. Migracja jest rozdzielona na kilka tygodni i jest wykonywana automatycznie. Nie wpływa ona na działanie usług hostingowych, nie wymaga interwencji ani nie wymaga żadnego działania ze strony użytkownika.
+>
+> Po pewnym czasie wszystkie usługi hostingowe będą działały w nowym interfejsie zarządzania certyfikatami SSL.
 
 Aby zamówić certyfikat SSL Sectigo EV, wykonaj następujące czynności:
 

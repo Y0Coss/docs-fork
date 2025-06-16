@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Attiva un certificato SSL Sectigo EV"
 excerpt: "Questa guida ti mostra come ordinare e installare un certificato SSL Sectigo EV sul tuo hosting Web OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Obiettivo
@@ -86,6 +86,18 @@ Per attivare un certificato SSL per più domini/sottodomini dichiarati sull’ho
 > Perché se ordini il certificato SSL Sectigo EV ma non ti assicuri i i punti precedenti, è necessario effettuare una correzione a posteriori. In questo caso, è necessario eliminare il certificato SSL Sectigo EV precedentemente sottoscritto **senza usufruire di un rimborso** e ordinarne un altro. Il nuovo certificato SSL Sectigo EV deve includere sia il dominio `domain.tld` che il sottodominio "www" `www.domain.tld`.
 >
 > Ti ricordiamo che se sottoscrivi un certificato SSL Sectigo EV direttamente per un sottodominio (esempio: `sub.domain.tld`), la situazione non interessa te.
+
+> [!primary]
+>
+> **Informazioni sulla migrazione alla nuova interfaccia di gestione dei certificati SSL:**
+>
+> La parte 1.1 continua con i clienti i cui servizi di hosting Web non sono ancora stati migrati verso la nuova interfaccia di gestione dei certificati SSL.
+> Per sapere se la migrazione è stata effettuata, accedi al tuo hosting Web dallo Spazio Cliente OVHcloud e verifica la presenza della scheda `Certificati SSL`.
+> Se la scheda `Certificati SSL` è presente, il servizio è già migrato sulla nuova interfaccia di gestione. In questo caso, consulta direttamente [questa guida](/pages/web_cloud/web_hosting/ssl_management) per gestire il tuo certificato SSL.
+>
+> Per motivi tecnici, non tutti i servizi di hosting Web dei nostri clienti possono essere migrati in una sola volta. Il trasferimento viene quindi effettuato in poche settimane e automaticamente, senza alcuna conseguenza sul funzionamento dei servizi di hosting Web e senza alcun intervento o azione da parte tua.
+>
+> Tutti i servizi di hosting Web funzioneranno col nuovo sistema di gestione dei certificati SSL.
 
 Per ordinare il certificato SSL Sectigo EV, esegui queste operazioni:
 

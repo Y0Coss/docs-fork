@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar um certificado SSL Sectigo EV"
 excerpt: "Saiba como encomendar e instalar um certificado SSL Sectigo EV no seu alojamento Web OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objetivo
@@ -86,6 +86,18 @@ Se precisar de ativar um certificado SSL para vários domínios/subdomínios dec
 > Sim, se aplicável, e se encomendar o certificado SSL Sectigo EV sem verificar os pontos anteriores, deverá efetuar uma correção a posteriori. Deverá eliminar o certificado SSL Sectigo EV que subscreveu anteriormente **sem poder beneficiar de um reembolso**, e depois encomendar um novo certificado. O objetivo é que o novo certificado SSL Sectigo EV englobe o seu domínio `domain.tld` e o seu subdomínio em "www" `www.domain.tld`.
 >
 > Lembrete: se subscrever a um certificado SSL Sectigo EV diretamente para um subdomínio (exemplo: `sub.domain.tld`), não é afetado por esta situação.
+
+> [!primary]
+>
+> **Informações sobre a migração para a nova interface de gestão de certificados SSL:**
+>
+> O restante da parte 1.1 destina-se aos clientes cujos serviços de alojamento web ainda não migraram para a nova interface de gestão dos certificados SSL.
+> Para detetar se esta migração foi efetuada, aceda ao seu alojamento web na Área de Cliente OVHcloud e verifique a presença do separador `Certificados SSL`.
+> Se estiver presente o separador `Certificados SSL`, o seu serviço já migrou para a nova interface de gestão. Neste caso, consulte diretamente [este manual](/pages/web_cloud/web_hosting/ssl_management) para gerir o seu certificado SSL.
+>
+> Por razões técnicas, nem todos os serviços de alojamento web de todos os nossos clientes podem ser migrados de uma só vez. Esta migração é, por isso, repartida durante algumas semanas e é realizada de forma automática, sem qualquer incidência no funcionamento dos seus serviços de alojamento web, e sem qualquer intervenção ou ação necessária da sua parte.
+>
+> A prazo, todos os serviços de alojamento web funcionarão com a nova interface de gestão dos certificados SSL.
 
 Para encomendar o certificado SSL Sectigo EV, execute as seguintes ações:
 
