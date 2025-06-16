@@ -118,7 +118,7 @@ Installez les dépendances nécessaires :
 npm install
 ```
 
-Cela va installer toutes les bibliothèques React/Lovable définies dans le fichier package.json.
+Cela va installer toutes les bibliothèques React/Lovable définies dans le fichier `package.json`.
 
 Générez les fichiers optimisés (build de production) :
 
