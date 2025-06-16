@@ -968,6 +968,7 @@
                 + [Creating, Updating and Accessing a Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher)
                 + [Managing users and projects in Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/managing-users-and-projects)
                 + [Tutorial - How to use Rancher CLI](public_cloud/containers_orchestration/managed_rancher_service/using-rancher-cli)
+                + [Orchestration product reversibility policy](account_and_service_management/reversibility/12-reversibility-orchestration)
             + [Resources](public-cloud-containers-orchestration-managed-rancher-service-resources)
                 + [Managed Rancher Service supported versions and lifecycle policy](public_cloud/containers_orchestration/managed_rancher_service/lifecycle-policy)
             + [Creating or importing a Kubernetes cluster](public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes)
