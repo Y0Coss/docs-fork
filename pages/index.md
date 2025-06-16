@@ -597,6 +597,8 @@
             + [Delegating projects](public_cloud/public_cloud_cross_functional/delegate_projects)
             + [Information regarding Public Cloud billing options](public_cloud/public_cloud_cross_functional/analyze_billing)
             + [Healthcare (HDS) compliance activation](public_cloud/public_cloud_cross_functional/activate-hds-certification)
+        + [Migration](public-cloud-cross-functional-migration)
+            + [Public Cloud IaaS Migration - Steps and Best Practices](public_cloud/public_cloud_cross_functional/iaas-migration-steps)
         + [Tutorials](public-cloud-cross-functional-tutorials)
             + [How to use Terraform](public_cloud/public_cloud_cross_functional/how_to_use_terraform)
         + [Services management](public-cloud-cross-functional-services-management)
