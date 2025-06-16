@@ -1883,6 +1883,7 @@
             + [Managing your Load Balancer service via the Control Panel](network/load_balancer/use-lb)
             + [Load Balancer API Quick Reference](network/load_balancer/use_api_reference)
             + [Details of API functions](network/load_balancer/use_api_details)
+            + [OVHcloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](network/load_balancer/use_api_logs_2_customers)
             + [Order a free SSL certificate](network/load_balancer/order_freecertificate)
             + [Load Balancer FAQ](network/load_balancer/create_faq)
         + [Use cases](network-load-balancer-use-cases)
