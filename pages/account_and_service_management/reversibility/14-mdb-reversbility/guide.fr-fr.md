@@ -5,7 +5,7 @@ updated: 2025-06-16
 
 ## Objectif
 
-Ce document décrit la politique de réversibilité de la gamme de produits Managed Message Broker couvrant l'offre OVHcloud Managed kAFKA.
+Ce document décrit la politique de réversibilité de la gamme de produits Managed Message Broker couvrant l'offre OVHcloud Managed Kafka.
 
 Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
