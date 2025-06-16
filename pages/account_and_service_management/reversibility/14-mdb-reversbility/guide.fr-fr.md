@@ -21,34 +21,30 @@ Les fonctionnalités de la gamme de produits Managed Document Database sont rép
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Streaming de messages à haute disponibilité | Transmission fiable et distribuée de données en temps réel. | Avro, JSON, Protobuf, Texte | **Entrant** : chargement via producteurs Kafka . <br> **Sortant** : export via consommateurs Kafka ou outils de replay. 
-| [Kafka - Capacités et limitations](pages/public_cloud/public_cloud_databases/kafka_01_capabilities/)|
+| Streaming de messages à haute disponibilité | Transmission fiable et distribuée de données en temps réel. | Avro, JSON, Protobuf, Texte | **Entrant** : chargement via producteurs Kafka . <br> **Sortant** : export via consommateurs Kafka ou outils de replay. | [Kafka - Capacités et limitations](/pages/public_cloud/public_cloud_databases/kafka_01_capabilities/)|
 | Compatibilité Kafka open-source | Utilisation du moteur Apache Kafka standard sans modification. | Natif Kafka (API standard) | **Entrant** : intégration directe avec outils Kafka existants . <br> **Sortant** : export standard Kafka|[Kafka documentation Gessting started](https://kafka.apache.org/documentation/){.external} |
-| Partitionnement et réplication | Gestion des partitions et répliques pour la tolérance aux pannes | N/A | **Entrant** : configurer partitions/réplicas à l'import. <br> **Sortant** : Export et déploiement sur un autre cluster. 
-| [Kafka - Capacités et limitations](pages/public_cloud/public_cloud_databases/kafka_01_capabilities/) |
-| Sauvegardes automatiques | Sauvegardes quotidiennes avec possibilité de restauration. | Snapshots MongoDB | **Entrant** : Restauration possible. <br> **Sortant** : Téléchargement et exportation doivent être effectués manuellement. | [MongoDB Backups](/pages/public_cloud/public_cloud_databases/mongodb_06_howto_backup_restore)|
+| Partitionnement et réplication | Gestion des partitions et répliques pour la tolérance aux pannes | N/A | **Entrant** : configurer partitions/réplicas à l'import. <br> **Sortant** : Export et déploiement sur un autre cluster. | [Kafka - Capacités et limitations](/pages/public_cloud/public_cloud_databases/kafka_01_capabilities/) |
+| Configuration de la rétention des données | Définition personnalisée de la durée de rétention des messages | NA | **Entrant** : ajustement des paramètres. <br> **Sortant** : migration limitée aux messages encore stockés. | [Kafka - Références des paramètres avancés](/pages/public_cloud/public_cloud_databases/kafka_03_advanced_parameters_references)|
+| Registre des schémas de données | Dépôt central pour stocker les schémas de données | Format natif Karapace | **Entrant** : NA. <br> **Sortant** : NA. | [Schema registry](/pages/public_cloud/public_cloud_databases/kafka_01_capabilities)|
 
 ### 2 - Implémentations OVHcloud
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| OVHcloud Dashboard | Interface de gestion et de monitoring des clusters MongoDB. | N/A | **Entrant** : Configuration initiale via l'interface. <br> **Sortant** : Administration interrompue après résiliation. | [MongoDB](/products/public-cloud-databases-mongodb)|
-| Monitoring intégré | Suivi des performances via des métriques dans l'interface. | N/A | **Entrant** : Configuration des alertes <br> **Sortant** : À reconfigurer dans un autre environnement. | [MongoDB](/products/public-cloud-databases-mongodb)|
-| Sécurité réseau (ACL) | Filtrage IP, TLS/SSL, accès restreint par vRack. | IP, TLS/SSL | **Entrant** : Définition des règles de sécurité. <br> **Sortant** : Configuration export. | [MongoDB](/products/public-cloud-databases-mongodb)|
+| OVHcloud Dashboard | Gestion des topics, ACL et monitoring via interface web. | N/A | **Entrant** : Configuration initiale via API et l'interface web. <br> **Sortant** : Administration interrompue après résiliation. reproduire les configurations manuellement dans l’environnement cible | [Dashboards - Capacités et limitations](/pages/public_cloud/public_cloud_databases/grafana_01_capabilities) <br> [Dashboards - Références des paramètres avancés ](/pages/public_cloud/public_cloud_databases/grafana_03_advanced_parameters_references)|
+| Monitoring intégré | Tableaux de bord de performances intégrés à l’interface OVHcloud. | N/A | **Entrant** : Configuration des métriques <br> **Sortant** : : configuration à recréer dans l’environnement cible | [Analytics - Kafka ](https://help.ovhcloud.com/csm/fr-documentation-public-cloud-data-analytics-kafka?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=e53a983881a35a581e11e4879ea7a52a&spa=1)|
+| Sécurité réseau (ACL) | Filtrage IP et authentification SASL/SSL. | IP, SASL/SSL | **Entrant** : configuration des règles. <br> **Sortant** : : export des ACL à répliquer. | [Kafka-Premiers pas](/pages/public_cloud/public_cloud_databases/kafka_02_getting_started)|
 
 ### 3 - Fonctionnalités spécifiques
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
 | Réseau privé OVHcloud (vRack) | Connexion avec d’autres services OVHcloud en réseau privé. | N/A | **Entrant** : Config vRack. <br> **Sortant** : Fonctionnalité non transférable. | [vRack](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
-| Mises à jour gérées par OVHcloud | Gestion des versions de MongoDB par OVHcloud. | N/A | **Entrant** : Vérifier la compatibilité. <br> **Sortant** : Migration sous la responsabilité du client. | [MongoDB](/products/public-cloud-databases-mongodb) |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrante** : Le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortante** : Commandez et configurez un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
 
-Managed MongoDB repose sur une architecture distribuée avec des jeux de réplicas pour assurer une haute disponibilité.
-
-Les données sont réparties sur plusieurs nœuds grâce à des sauvegardes régulières, une surveillance continue et des outils de sécurité intégrés.
+Le service Managed Kafka repose sur une architecture distribuée avec des brokers Kafka répartis entre plusieurs zones de disponibilité. La haute disponibilité est assurée via la réplication des partitions, avec un monitoring intégré pour la stabilité des flux de messages. Deux plans d’architecture sont proposés : un plan Business reposant trois nœuds et un plan Enterprise reposant sur six nœuds.
 
 ## Services partenaires
 
@@ -58,20 +54,10 @@ OVHcloud dispose également d’un service dédié : [OVHcloud Professional Serv
 
 ## Coûts et frais
 
-Les fonctionnalités décrites dans les tableaux sont gratuites sauf mention contraire et sont librement utilisables par le client
+Les fonctionnalités décrites dans les tableaux sont disponibles sans couts et frais sauf mentions contraires, et sont librement utilisables par le client.
+Le service est facturé selon les ressources utilisées : l’instance sélectionnée et le stockage. Aucun frais de résiliation n’est appliqué, mais il est impératif d’exporter les données avant résiliation/décommissionnement du service.
 
-La facturation est basée sur la taille du cluster, la capacité de stockage et les sauvegardes.
-
-Il n'y a pas de frais de résiliation, cependant les données doivent être exportées avant la résiliation car elles seront supprimées.
 
 ## Conservation des données après résiliation du contrat
 
-> [!warning]
->
-> OVHcloud ne garantit pas l’utilisation et la disponibilité des sauvegardes pour restaurer les données du client après la résiliation du service.
-
-Après résiliation, toutes les données de l'instance sont définitivement supprimées, y compris les sauvegardes effectuées par OVHcloud.
-
-Il appartient au client de réaliser l’exportation avant la fin du service, OVHcloud ne conservant aucune copie.
-
-Les instances primaires sont **supprimées immédiatement** et les **sauvegardes sont conservées pendant une période allant de 2 jours à 1 mois** selon les options spécifiées dans le contrat.
+Après résiliation du service, tous les messages et configurations Kafka sont supprimés de manière définitive. Le client doit effectuer une exportation complète avant résiliation, OVHcloud ne conservant aucune donnée.
