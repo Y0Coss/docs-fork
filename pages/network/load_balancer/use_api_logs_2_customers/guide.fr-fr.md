@@ -184,7 +184,7 @@ Maintenant que vos logs sont ingérés et stockés dans votre flux de données L
 - Dans votre espace client, récupérez le nom d'utilisateur LDP (ex: logs-xxxx) et son mot de passe sur la page d'accueil de votre compte Logs Data Platform. Vous pouvez vous référer au [Guide de démarrage rapide pour Logs Data Platform](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start).
 - Ouvrir l'interface utilisateur Graylog. Vous pouvez récupérer le lien sur la page d'accueil de votre compte ou en utilisant votre point d'accès en fonction de la région de votre compte (par exemple : la région de Gravelines est `https://gra1.logs.ovh.com/`).
 - Connectez-vous à Graylog en utilisant votre nom d'utilisateur et votre mot de passe Logs Data Platform.
-- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html){.external} pour plus de détails sur la syntaxe de recherche.
+- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries (EN)](https://go2docs.graylog.org/current/making_sense_of_your_log_data/writing_search_queries.html){.external} pour plus de détails sur la syntaxe de recherche.
 
 Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, querying and exploiting your logs (EN)](/products/observability-logs-data-platform-visualizing-querying-exploiting) pour plus de détails sur l'utilisation de vos logs avec Logs Data Platform, y compris sur la façon de :
 
