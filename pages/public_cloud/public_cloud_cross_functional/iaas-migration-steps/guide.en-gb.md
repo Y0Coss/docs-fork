@@ -56,8 +56,6 @@ Use the inventory data from your VMs, storage, networks and security devices to 
 
 Finally, integrate monitoring, logging and security tools right from the start to build agile and future-proof operations.
 
-For more detailed guidance on building an OVHcloud Landing Zone, please refer to this link: (LINK-TO-LZ-ArchRef).
-
 ### 3. Adapt your Terraform/OpenTofu configuration
 
 Although OVHcloud’s Public Cloud is based on OpenStack, it also offers proprietary services like Managed Kubernetes and Managed Databases. Because of this, you will need to use specific OpenTofu or Terraform providers tailored for OVHcloud’s infrastructure.
