@@ -53,7 +53,7 @@ Jeśli potrzebujesz śladu węglowego za miesiąc przed bieżącym miesiącem, m
 
 Udostępniamy domyślnie API OVHcloud, które umożliwiają programistom lub integratorom łączenie, na przykład, funkcji dostępnych lub nie w Panelu klienta OVHcloud bezpośrednio z ich aplikacjami lub rozwiązaniami.
 
-### Etap 1 - Logowanie do API OVHcloud
+#### Etap 1 - Logowanie do API OVHcloud
 
 - Przejdź do naszej strony [API OVHcloud](/links/api) (upewnij się, że jesteś na `https://eu.api.ovh.com` czy Twoje usługi są zainstalowane w Europie i na `https://ca.api.ovh.com` jeśli są zainstalowane poza Europą).
 - Na stronie, która się wyświetli kliknij `Explore the OVHcloud API`{.action}.
@@ -71,7 +71,7 @@ Udostępniamy domyślnie API OVHcloud, które umożliwiają programistom lub int
 - Zaloguj się za pomocą identyfikatora klienta, następnie kliknij `Authorize`{.action}, aby korzystać z API OVHcloud w połączeniu z Twoimi usługami.
 - Zostaniesz automatycznie przekierowany do poprzedniej strony API **POST /me/carbonCalculator/task**.
 
-### Etap 2 - Poproś o wygenerowanie bilansu i pobierz identyfikator żądanego zadania
+#### Etap 2 - Poproś o wygenerowanie bilansu i pobierz identyfikator żądanego zadania
 
 Zastąp datę dzisiejszą, która pojawia się w ramce API datą, z którą chcesz zatrzymać obliczanie bilansu. Zachowaj następujący format daty:
 
@@ -99,7 +99,7 @@ Na przykład, jeśli Twoim identyfikatorem klienta OVHcloud jest `aa00000-ovh`, 
 
 Skopiuj tylko uzyskaną wartość po Twojej stronie, która jest równa wartości z naszego przykładu `aa00000-ovh_202501` (bez kopiowania dwóch `"` znajdujących się na końcach).
 
-### Etap 3 - Pobieranie pliku z bilansem węglowym Twoich usług w formacie PDF
+#### Etap 3 - Pobieranie pliku z bilansem węglowym Twoich usług w formacie PDF
 
 Dzięki wartości `taskID` uprzednio uzyskanej, będziesz mógł pobrać bilans dwutlenku węgla Twoich usług w formacie PDF.
 
