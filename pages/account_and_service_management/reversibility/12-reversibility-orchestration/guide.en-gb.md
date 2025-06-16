@@ -56,7 +56,7 @@ The managed orchestration service runs in a single region from among several reg
 
 OVHcloud partners are listed under the keyword **“Migrate to the cloud”** in the [Dedicated Partner directory](/links/partner).
 
-OVHcloud also offers a dedicated service: [**OVHcloud Professional Services**](/links/professional-services).
+OVHcloud also offers a dedicated service: [OVHcloud Professional Services](/links/professional-services).
 
 ## Cost and fees
 

@@ -56,7 +56,7 @@ Le service Managed Orchestration tourne sur une seule région parmi plusieurs r�
 
 Les partenaires OVHcloud sont répertoriés sous le mot-clé **« Migration vers le cloud »** dans [l'annuaire des partenaires dédiés](/links/partner).
 
-OVHcloud propose également un service dédié : [**OVHcloud Professional Services**](/links/professional-services).
+OVHcloud propose également un service dédié : [OVHcloud Professional Services](/links/professional-services).
 
 ## Coût et frais
 
