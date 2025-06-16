@@ -1,7 +1,7 @@
 ---
 title: 'Activer les DNS Anycast pour votre nom de domaine'
 excerpt: 'Découvrez, à partir de votre nom de domaine, comment accéder à vos services web plus rapidement. Ceci grâce à la vitesse de résolution DNS de l'option DNS Anycast'
-updated: 2025-06-13
+updated: 2025-06-16
 ---
 
 ## Objectif 
@@ -13,6 +13,7 @@ Vous avez besoin que vos services (par exemple : votre site web) soient accessib
 ## Prérequis
 
 - Disposer d’un nom de domaine.
+- Le nom de domaine concerné doit posséder une extension compatible avec l'option DNS Anycast.
 - Être connecté à votre [espace client OVHcloud](/links/manager){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
