@@ -463,7 +463,8 @@ Sélectionnez "Ajouter une règle de réplication".
 
 Spécifiez un nom pour votre règle pour vous aider à l'identifier plus tard. Ce nom est requis et doit être unique au sein de votre bucket.
 
-(screenshot de création de la règle FR)
+![replication_screenshot_4](images/replication-rule-creation-FR.PNG)
+
 
 Vous pouvez spécifier un préfixe et/ou des tags pour limiter le champ d'application des objets à répliquer.
 
