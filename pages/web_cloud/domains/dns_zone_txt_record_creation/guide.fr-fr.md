@@ -1,7 +1,7 @@
 ---
 title: "Ajouter un enregistrement DNS de type TXT pour un nom de domaine"
 excerpt: "Découvrez comment ajouter un enregistrement DNS de type TXT dans une zone DNS gérée chez OVHcloud pour votre nom de domaine"
-updated: 2025-06-13
+updated: 2025-06-16
 ---
 
 <style>
@@ -20,13 +20,14 @@ details[open]>summary::before {
 
 ## Objectif
 
-Vous devez valider un processus de vérification ou de sécurité pour votre nom de domaine (association de services via un token de validation, clé de vérification, etc.) à partir de votre zone DNS ? Vous souhaitez ajouter la valeur de votre choix, au format textuel, dans la zone DNS de votre nom de domaine ? Pour cela, vous devrez alors configurer la zone DNS active de votre nom de domaine à l'aide d'un enregistrement DNS de type TXT.
+Vous devez valider un processus de vérification ou de sécurité pour votre nom de domaine (association de services via un token de validation, clé de vérification, etc.) en utilisant votre zone DNS ? Vous souhaitez ajouter une valeur personnalisée au format texte dans la zone DNS de votre nom de domaine ?
+Pour cela, vous devrez créer un enregistrement DNS de type TXT dans la zone DNS active de votre nom de domaine.
 
-**Découvrez comment ajouter un enregistrement DNS de type TXT dans une zone DNS gérée chez OVHcloud pour votre nom de domaine.**
+**Découvrez comment ajouter un enregistrement DNS de type TXT dans une zone DNS OVHcloud pour votre nom de domaine.**
 
 > [!primary]
 >
-> Pour modifier ou supprimer un enregistrement DNS de type TXT d'une zone DNS OVHcloud, suivez [ce guide](/pages/web_cloud/domains/dns_zone_edit).
+> Pour modifier ou supprimer un enregistrement DNS de type TXT d'une zone DNS OVHcloud, suivez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ## Prérequis
 
@@ -45,16 +46,16 @@ Vous devez valider un processus de vérification ou de sécurité pour votre nom
 1. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
 2. Sur la page qui s'affiche, cliquez sur sur le bouton `Ajouter une entrée`{.action}.
 3. Dans la fenêtre qui s'ouvre, sélectionnez le champ étendu de type `TXT`{.action}.
-4. Renseignez ensuite dans le champ `Valeur *` la valeur du champ TXT désiré (par exemple : `AbCdE-Value-of-TXT-fGhIjK`), puis cliquez sur `Suivant`{.action}.
+4. Renseignez ensuite dans le champ `Valeur *` la chaîne TXT à ajouter (par exemple : `AbCdE-Value-of-TXT-fGhIjK`), puis cliquez sur `Suivant`{.action}.
 5. Vérifiez le résumé, puis cliquez sur `Valider`{.action}. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
 
 /// details | Cliquez ici pour plus d'informations.
 
 Consultez nos guides détaillés :
 
-- [Tout savoir sur les zones DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+- [Tout savoir sur les zones DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
 
@@ -63,27 +64,27 @@ Consultez nos guides détaillés :
 1. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
 2. Sur la page qui s'affiche, cliquez sur sur le bouton `Ajouter une entrée`{.action}.
 3. Dans la fenêtre qui s'ouvre, sélectionnez le champ étendu de type `TXT`{.action}.
-4. Renseignez ensuite dans le champ `Sous-domaine` le sous-domaine concerné (par exemple : `www` pour le sous-domaine `www.domain.tld`), et, dans le champ `Valeur *`, la valeur du champ TXT désiré (par exemple : `AbCdE-Value-of-TXT-fGhIjK`). Cliquez enfin sur `Suivant`{.action}.
+4. Renseignez ensuite dans le champ `Sous-domaine` le sous-domaine concerné (par exemple : `www` pour le sous-domaine `www.domain.tld`), et dans le champ `Valeur *`, la chaîne TXT à ajouter (par exemple : `AbCdE-Value-of-TXT-fGhIjK`). Cliquez enfin sur `Suivant`{.action}.
 5. Vérifiez le résumé, puis cliquez sur `Valider`{.action}. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
 
 /// details | Cliquez ici pour plus d'informations.
 
 Consultez nos guides détaillés :
 
-- [Tout savoir sur les zones DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Comment créer un sous-domaine](/pages/web_cloud/domains/domain_create_subdomains).
-- [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+- [Tout savoir sur les zones DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Comment créer un sous-domaine](/pages/web_cloud/domains/domain_create_subdomains)
+- [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
 
 ## Aller plus loin
 
-[Tout savoir sur les zones DNS](/pages/web_cloud/domains/dns_zone_general_information).
+[Tout savoir sur les zones DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
+[Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
