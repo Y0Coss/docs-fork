@@ -9,7 +9,7 @@ This document describes the reversibility policy for the product line Managed Da
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
-## Feature List
+## List of features
 
 The features of the product line fall into three categories:
 
