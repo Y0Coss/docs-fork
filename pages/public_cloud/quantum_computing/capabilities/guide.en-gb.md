@@ -61,7 +61,7 @@ ovhai notebook get <notebook-id>
 
 You can then access your metrics through the `Monitoring Url`.
 
-You are also able to check it from the [OVHcloud Control Panel](/links/mnager) in your notebook's general information by clicking the `Go to Graph Dashboard`{.action} button.
+You are also able to check it from the [OVHcloud Control Panel](/links/manager) in your notebook's general information by clicking the `Go to Graph Dashboard`{.action} button.
 
 ### Planned features
 
@@ -141,11 +141,11 @@ You cannot install your own code editor on Quantum Notebooks.
 
 With VS Code, you get the capability to use remote connections (from a local computer).
 
-### Pre-installed AI environments
+### Pre-installed Quantum environments
 
-OVHcloud Quantum Notebooks comes with pre-installed AI environments.
+OVHcloud Quantum Notebooks comes with pre-installed Quantum environments.
 
-List of available AI Environments:
+List of available Quantum Environments:
 
 - Alice & Bob Felis
 - C12
