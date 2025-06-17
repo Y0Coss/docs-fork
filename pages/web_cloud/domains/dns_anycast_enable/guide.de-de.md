@@ -55,7 +55,7 @@ licken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> ![Order Anycast DNS step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/order-anycast-dns-step-2.png){.thumbnail}
 >>
->> Klicken Sie in der grün hervorgehobenen Nachricht auf den Button `Bestellung`{.action}, um zum Bestellschein für die Aktivierung der DNS Anycast Option weitergeleitet zu werden.
+>> Klicken Sie in der grün hervorgehobenen Nachricht auf den Button `Bestellschein`{.action}, um zum Bestellschein für die Aktivierung der DNS Anycast Option weitergeleitet zu werden.
 >>
 >> Sobald Sie auf dem Bestellschein sind, können Sie mit einer Zahlungsart fortfahren, um die Bearbeitung der Bestellung abzuschließen.
 

@@ -50,7 +50,7 @@ Haga clic en las fichas siguientes para ver cada uno de las **5** etapas.
 >>
 >> En la nueva página que aparece:
 >>
->> - Seleccione la duración propuesta en la sección `1` y haga clic en `siguiente`{.action}.
+>> - Seleccione la duración propuesta en la sección `1` y haga clic en `Siguiente`{.action}.
 >> - Seleccione su forma de pago y haga clic en `Pagar`{.action} para continuar con la activación de DNS Anycast.
 >>
 >> ![Order Anycast DNS step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/order-anycast-dns-step-2.png){.thumbnail}
