@@ -17,7 +17,7 @@ L'objectif de ce guide est de présenter les logs générés par le KMS OVHcloud
 
 ### Description
 
-Le KMS OVHcloud dispose d'une intégration native avec [Logs Data Plateform](/links/manage-operate/ldp) pour la gestion des logs.
+Le KMS OVHcloud dispose d'une intégration native avec [Logs Data Platform](/links/manage-operate/ldp) pour la gestion des logs.
 
 ### Accès aux logs en direct
 
@@ -34,7 +34,7 @@ Le sélecteur permet de choisir le type de logs affichés :
 ### Accès aux logs via LDP
 
 Depuis l'onglet `Logs`{.action} il est possible de s'abonner à un flux LDP.
-Une fois l'abonnement actif, l'ensemble des logs seront transmis à [Logs Data Plateform](/links/manage-operate/ldp) pour retrouver l'historique des logs générés et la possiblité de faire des recherches plus avancées, créer des alertes et des visualisations.
+Une fois l'abonnement actif, l'ensemble des logs seront transmis à [Logs Data Platform](/links/manage-operate/ldp) pour retrouver l'historique des logs générés et la possiblité de faire des recherches plus avancées, créer des alertes et des visualisations.
 
 ![LDP Subscription](images/kms-ldp-subscription.png){.thumbnail}
 
@@ -52,9 +52,13 @@ Les logs sont sous le format suivant :
 {{ http_method }} {{ http_path }} - {{ http_status }} - identity: {{ iam_identities }} - operation: {{ iam_operation }} on {{ res_urn }} - from {{ip}} with certificate {{cert_id}} - request id: {{ request_id }}
 ```
 
-Par exemple : INFO | GET /v1/servicekey/77f0a3f6-c2ef-4e76-xxxx-xxxxxxxxxxxx - 200 - identity: urn:v1:eu:identity:group:xx1111-ovh/john.smith - operation: okms:apiovh:serviceKey/get on urn:v1:eu:resource:okms:8d1c84cc-1128-4629-xxxx-xxxxxxxxxx/serviceKey/77f0a3f6-c2ef-4e76-xxxx-xxxxxxxxxxxx - from Manager/APIv2 - request id: EU.manager-5.684c3abe.3880620.2080cff16eaa5539bf92cxxxxxxxx
+**Exemple :**
 
-Les éléments pouvant être transmis à Logs Data Plateform sont :
+```console
+INFO | GET /v1/servicekey/77f0a3f6-c2ef-4e76-xxxx-xxxxxxxxxxxx - 200 - identity: urn:v1:eu:identity:group:xx1111-ovh/john.smith - operation: okms:apiovh:serviceKey/get on urn:v1:eu:resource:okms:8d1c84cc-1128-4629-xxxx-xxxxxxxxxx/serviceKey/77f0a3f6-c2ef-4e76-xxxx-xxxxxxxxxxxx - from Manager/APIv2 - request id: EU.manager-5.684c3abe.3880620.2080cff16eaa5539bf92cxxxxxxxx
+```
+
+Les éléments pouvant être transmis à Logs Data Platform sont :
 
 |**Champ**|**Description**|
 | :-: | :-: |
@@ -81,9 +85,13 @@ Les logs sont sous le format suivant :
 {{ http_method }} {{ http_path }} - {{ http_status }} - identity: {{ iam_identities }} - operation: {{ iam_operation }} on {{ res_urn }} - from {{ip}} with certificate {{cert_id}} - request id: {{ request_id }}
 ```
 
-Par exemple : INFO | GET on urn:v1:eu:resource:okms:8d1c84cc-1128-4629-xxxx-xxxxxxxxxxx/kmip/ff55638c-3e86-4cb3-xxxx-xxxxxxxx - identity: urn:v1:eu:identity:account:xx1111-ovh - operation: okms:kmip:get - from XXX.XXX.XXX.XXX with certificate e7850a19-a5de-4527-xxxx-xxxxxxxxx - request id: OKMS.db61c455-abfa-4a66-xxxx-xxxxxxxxxxx"
+**Exemple :**
 
-Les éléments pouvant être transmis à Logs Data Plateform étant :
+```console
+INFO | GET on urn:v1:eu:resource:okms:8d1c84cc-1128-4629-xxxx-xxxxxxxxxxx/kmip/ff55638c-3e86-4cb3-xxxx-xxxxxxxx - identity: urn:v1:eu:identity:account:xx1111-ovh - operation: okms:kmip:get - from XXX.XXX.XXX.XXX with certificate e7850a19-a5de-4527-xxxx-xxxxxxxxx - request id: OKMS.db61c455-abfa-4a66-xxxx-xxxxxxxxxxx"
+```
+
+Les éléments pouvant être transmis à Logs Data Platform étant :
 
 |**Champ**|**Description**|
 | :-: | :-: |
