@@ -42,7 +42,7 @@ Quantum Notebooks is a **pay-per-use solution**. You only pay for the **resource
 - Workspace remote storage (Optional)
 - Ingress/Egress network traffic (Optional)
 
-Here is a detailed graph that illustrates every step that is billed or not during the AI Notebook workflow:
+Here is a detailed graph that illustrates every step that is billed or not during the Quantum Notebooks workflow:
 
 ![billing](images/billing.png){.thumbnail}
 
@@ -92,7 +92,7 @@ This storage is not billed as it is directly linked to the compute resource(s) y
 
 #### Example 1: one GPU notebook for 10 hours then deleted
 
-We start one AI Notebook, with two GPUs and we keep it running for 10 hours then we **delete it**.
+We start one Quantum Notebook, with two GPUs and we keep it running for 10 hours then we **delete it**.
 
 - compute resources: 2 x GPU NVIDIA V100s (1,93€ / hour)
 - remote storage: nothing
@@ -102,7 +102,7 @@ Price calculation for compute: 10 (hours) x 2 (GPU) x 1,93€ (price / GPU) = **
 
 #### Example 2: one GPU notebook for 10 hours but stopped, not deleted
 
-We start one AI Notebook, with two GPUs and we keep it running for 10 hours then we stop it and finally we **delete it after 10 days**.
+We start one Quantum Notebook, with two GPUs and we keep it running for 10 hours then we stop it and finally we **delete it after 10 days**.
 
 - compute resources: 2 x GPU NVIDIA V100s (1,93 / hour)
 - remote storage: nothing
@@ -114,7 +114,7 @@ Price calculation for workspace : 90 (GB) x 0,01€ (price for object storage / 
 
 #### Example 3: one GPU notebook for 10 hours with 1TB remote storage
 
-We start one AI Notebook, with two GPUs and 1TB remote storage. We keep it running for 10 hours then we delete it.
+We start one Quantum Notebook, with two GPUs and 1TB remote storage. We keep it running for 10 hours then we delete it.
 
 - compute resources: 2 x GPU NVIDIA V100s (1,93 / hour)
 - remote storage: 1TB in OVHcloud Object Storage

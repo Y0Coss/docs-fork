@@ -142,7 +142,7 @@ Each Quantum Notebooks service comes with a monitoring dashboard, allowing you t
 
 To verify your usage metrics, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager) and select `Quantum Notebooks`{.action}. All your notebooks will be listed. Click on your notebook to check its information. In `Resources`{.action}, you can then access the monitoring of your resources via the `Graph Dashboard`.
 
-Please note that each AI Notebook is limited to a maximum amount of CPUs and GPUs. You can refer to the Quantum Notebooks [Capabilities and Limitations](/pages/public_cloud/quantum_computing/capabilities) guide.
+Please note that each Quantum Notebook is limited to a maximum amount of CPUs and GPUs. You can refer to the Quantum Notebooks [Capabilities and Limitations](/pages/public_cloud/quantum_computing/capabilities) guide.
 
 ///
 
