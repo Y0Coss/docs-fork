@@ -17,7 +17,7 @@ L'objectif de ce guide est de présenter les logs générés par le KMS OVHcloud
 
 ### Description
 
-Le KMS OVHcloud dispose d'une intégration native avec [Logs Data Plateform](https://www.ovhcloud.com/en/identity-security-operations/logs-data-platform/) pour la gestion des logs.
+Le KMS OVHcloud dispose d'une intégration native avec [Logs Data Plateform](/links/manage-operate/ldp) pour la gestion des logs.
 
 ### Accès aux logs en direct
 

@@ -38,7 +38,7 @@ One the subscribtion enable, all the logs will be pushed to [Logs Data Plateform
 
 ![LDP Subscription](images/kms-ldp-subscription.png){.thumbnail}
 
-For more information, please refer to our guide "[Quick start for Logs Data Platform](pages\manage_and_operate\observability\logs_data_platform\getting_started_quick_start)".
+For more information, please refer to our guide "[Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)".
 
 ### Available logs details
 
