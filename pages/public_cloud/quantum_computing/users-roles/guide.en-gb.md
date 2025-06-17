@@ -1,12 +1,12 @@
 ---
 title: Quantum computing - Users and roles
 excerpt: Learn how to manage users and roles 
-updated: 2025-06-10
+updated: 2025-06-17
 ---
 
 > [!warning]
 >
-> Some links on this documentation refers to AI and Machine Learning Solution. Quantum computing shares the same infrastructure as a service so you might be redirected to another section of this documentation.
+> Some links on this documentation refer to the AI and Machine Learning solution. Quantum computing shares the same infrastructure as a service so you might be redirected to another section of this documentation.
 
 ## Objective
 
@@ -14,15 +14,17 @@ The **users** of **OVHcloud Quantum computing** are the same as those in your [P
 
 ## Requirements
 
-* A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-* Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 
-## Creating and editing Quantum users
+## Instructions
 
-To grant access to **OVHcloud Quantum notebooks**, assign users the **Quantum Operator** or **Quantum Reader** role.
+### Creating and editing Quantum users
 
-* **Quantum Operator**: Provides complete access to **Quantum notebooks**. Users can launch, stop, and delete Quantum notebooks, and authenticate to existing ones. The [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) uses their credentials.
-* **Quantum Reader**: Allows users to access existing Quantum notebooks, but not launch, stop, or delete them.
+To grant access to **OVHcloud Quantum Notebooks**, assign users the **Quantum Operator** or **Quantum Reader** role.
+
+- **Quantum Operator**: Provides complete access to **Quantum Notebooks**. Users can launch, stop, and delete Quantum Notebooks, and authenticate to existing ones. The [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) uses their credentials.
+- **Quantum Reader**: Allows users to access existing Quantum Notebooks, but not launch, stop, or delete them.
 
 We recommend adding the **ObjectStore Operator** role to Quantum users, providing read/write access to **OVHcloud Object Storage**.
 
@@ -38,14 +40,14 @@ Click `+ Add user`{.action}, specify a name, and assign the required roles (**Qu
 
 ![image](images/04_users_roles.png){.thumbnail}
 
-This generates a password for authenticating to existing Quantum notebooks and the `ovhai` CLI.
+This generates a password for authenticating to existing Quantum Notebooks and the `ovhai` CLI.
 
 > [!primary]
 > If you lose a user's password, you can regenerate it by clicking the `...`{.action} button next to the user and selecting `Generate a password`{.action}. Access to a notebook can be revoked by deleting the user or removing their **Quantum Operator / Reader** role.
 
 **2. Edit an existing user's roles**
 
-Click the `...`{.action} button next to the user and select `Edit roles` to modify their existing roles.
+Click the `...`{.action} button next to the user and select `Edit roles`{.action} to modify their existing roles.
 
 ## Going further
 
@@ -55,6 +57,6 @@ For training or technical assistance, contact your sales representative or click
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-Please send us your questions, feedback, and suggestions regarding Quantum notebooks:
+Please send us your questions, feedback, and suggestions regarding Quantum Notebooks:
 
-* In the #quantum-computing channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud).
+- In the #quantum-computing channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud).
