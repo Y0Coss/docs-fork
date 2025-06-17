@@ -31,7 +31,7 @@ Cette configuration réduit la durée maximale d'interruption admissible (RTO), 
 
 La disponibilité de SAP HANA pourrait être affectée durant la configuration. Veillez à prendre toutes les précautions nécessaires avant de suivre les instructions de ce guide.
 
-### Utilisateur vSphere
+### Utilisateur vSphere <a name="creation-utilisateur-vsphere"></a>
 
 Pour autoriser le service corosync à obtenir les informations des nœuds SAP HANA, vous devez configurer un utilisateur avec les droits d'accès à l'interface vSphere.
 

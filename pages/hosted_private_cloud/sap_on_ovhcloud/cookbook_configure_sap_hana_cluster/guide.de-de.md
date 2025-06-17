@@ -31,7 +31,7 @@ This implementation reduces the Recovery Time Objective (RTO), in case of a virt
 
 The availability of the SAP HANA database might be impacted during this configuration. Please take all precautions before starting this guide.
 
-### vSphere user
+### vSphere user creation
 
 To allow the Corosync service to get information from your SAP HANA nodes, you have to configure a user which has access to the vSphere interface.
 
