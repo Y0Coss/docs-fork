@@ -87,7 +87,7 @@ Load the previously trained model for handwritten digits classification.
 >
 
 ```python
-model = tf.keras.models.load_model("model/sketch_recognition_numbers_model.h5")
+model = tf.keras.models.load_model("model/sketch_recognition_numbers_model.h5", compile=False)
 ```
 
 Create the function that recognizes the written number.
@@ -161,7 +161,7 @@ CMD [ "python3" , "/workspace/app.py" ]
 Launch the following command from the **Dockerfile** directory to build your application image:
 
 ```console
-docker build . -t gradio_app:latest
+docker buildx build --platform linux/amd64 -t gradio_app:latest
 ```
 
 > [!primary]
@@ -211,7 +211,7 @@ The following command starts a new AI Deploy app running your Gradio application
 ```console
 ovhai app run \
       --cpu 1 \
-      --volume <my_saved_model>@<region>/:/workspace/model:RO \
+      --volume <my_saved_model>@<region>/model/:/workspace/model:RO \
       <shared-registry-address>/gradio_app:latest
 ```
 
