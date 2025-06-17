@@ -42,7 +42,7 @@ lsblk
 
 La partizione corrispondente al Rescue mode (`sda1` in questo esempio) è montata nella directory `/` .Mentre il disco del VPS è denominato `sdb` e non deve avere alcun punto di mount.
 
-ad esempio,
+ad esempio:
 
 ```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -52,11 +52,11 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-Se il risultato è simile a quello dell'esempio precedente e la colonna `MOUNTPOINT` è vuota nella riga corrispondente, è possibile passare [allo step successivo](#checkfs).
+Se il risultato è simile a quello dell'esempio precedente e la colonna `MOUNTPOINT` è vuota nella riga corrispondente, è possibile passare [allo step successivo](#filesystemcheck).
 
 Tuttavia, se il risultato indica l’esistenza di un punto di mount per la partizione VPS, è necessario smontarla.
 
-ad esempio,
+ad esempio:
 
 
 ```console
@@ -78,7 +78,7 @@ In questo esempio di configurazione, il comando sarebbe:
 umount /dev/sdb1
 ```
 
-#### Verifica il file system <a name="checkfs"></a>
+#### Verifica il file system <a name="filesystemcheck"></a>
 
 Prima di continuare, si consiglia di controllare il file system (`filesystem check`) per vedere se ci sono errori nella partizione. Il comando è il seguente:
 

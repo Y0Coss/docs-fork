@@ -1,7 +1,7 @@
 ---
 title: MKS Premium Plan
 excerpt: 'Features and limitations of the MKS Premium Plan in Beta version'
-updated: 2025-04-30
+updated: 2025-06-05
 ---
 
 <style>
@@ -48,10 +48,6 @@ This list is subject to change as new features will be introduced during the Bet
 
 Upgrading an existing cluster is not supported at the moment, we'll deliver this functionality once we support the next Kubernetes release (1.33).
 
-### Cluster rename
-
-Renaming an existing cluster is not supported at the moment.
-
 ### Logs Data Platform integration
 
 Audit logs forwarding to the [Logs Data Platform](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform) is not supported at the moment.
@@ -59,10 +55,6 @@ Audit logs forwarding to the [Logs Data Platform](/pages/public_cloud/containers
 ### ETCD Quota
 
 Real-time monitoring of the etcd storage usage is not supported at the moment, current etcd quota is 8GB per cluster.
-
-### API server admission plugins configuration
-
-The configuration of the [API server admission plugins](/pages/public_cloud/containers_orchestration/managed_kubernetes/apiserver-flags-configuration) is not available at the moment.
 
 ### API Server IP restrictions
 
@@ -74,10 +66,6 @@ Retrieve the gateway IP of your cluster's gateway in the [OVHcloud Control Panel
 ```bash
 openstack router show ROUTER_ID -c external_gateway_info
 ```
-
-### Security Policies
-
-Changing the Security Policy after the cluster creation is not supported yet.
 
 ### Anti-affinity
 
@@ -113,6 +101,16 @@ The following ranges are used by the cluster, and should not be used elsewhere o
 ```
 
 These ranges will be configurable in a future version.
+
+### Storage classes
+
+MKS Premium only supports two out of the [three Storage Classes on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume#storage-classes): `csi-cinder-high-speed` and `csi-cinder-high-speed-gen2`.
+
+They allow to create **zone specific** volumes: a PVC provisioned on a zone `X` will only be accessible from the nodes on the zone `X`.
+
+The [classic multi-attach](/pages/public_cloud/compute/classic_block_multi_az_limitations#introduction) is not supported yet for MKS clusters on regions with multiple availability zones, since the currently available file systems (ext(2,3,4), xfs and btrfs) can be subject to data corruptions if volumes are attached to multiple instances.
+
+To create a volume on MKS Premium, use the same process as a [standard Managed Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume).
 
 ## Getting started
 
@@ -211,7 +209,7 @@ The following methods are supported to create an MKS Premium cluster:
 >>
 > Using Terraform
 >>
->> Refer to the [dedicated documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster-through-terraform) to create a Managed Kubernetes cluster.
+>> Refer to the [dedicated documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster) to create a Managed Kubernetes cluster.
 >>
 >> Here is a sample Terraform file that creates an MKS Premium cluster and three nodepools on three different availability zones in the `EU-WEST-PAR` region.
 >>

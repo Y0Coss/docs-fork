@@ -241,7 +241,7 @@ Następnie będziesz mógł zalogować się do drugiego hosta wprowadzając:
 ssh myserver
 ```
 
-Więcej informacji na temat pliku `config` można znaleźć na [odpowiedniej stronie `man`](https://manpages.org/ssh_config/5).
+Więcej informacji na temat pliku `config` można znaleźć na [odpowiedniej stronie `man`](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 
@@ -293,7 +293,7 @@ Możesz zabezpieczyć klucz SSH przy użyciu tajnego hasła. Jest to zalecane w 
 >
 > Zdalny dostęp do instancji jest tak samo bezpieczny jak urządzenie klienckie przechowujące klucz prywatny. W związku z tym niezwykle ważna jest ochrona urządzenia i zawartych na nim kluczowych plików przed nieuprawnionym dostępem.
 >
-> Dla większej wygody, przechowuj tajne hasła w menedżerze haseł na Twoim komputerze, takim jak rozwiązanie open source **KeePass***.
+> Dla większej wygody, przechowuj tajne hasła w menedżerze haseł na Twoim komputerze, takim jak rozwiązanie open source **KeePass**.
 >
 
 Domyślnie wszystkie klucze SSH są przechowywane w katalogu `.ssh`. Pliki klucza publicznego będą miały `.pub` dodane do nazwy pliku.
@@ -437,7 +437,7 @@ Następnie będziesz mógł zalogować się do drugiego hosta wprowadzając:
 ssh myserver
 ```
 
-Więcej informacji na temat pliku `config` można znaleźć na [odpowiedniej stronie `man`](https://manpages.org/ssh_config/5).
+Więcej informacji na temat pliku `config` można znaleźć na [odpowiedniej stronie `man`](https://manpages.ubuntu.com/manpages/xenial/en/man5/ssh_config.5.html).
 
 ///
 

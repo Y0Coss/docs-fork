@@ -44,7 +44,7 @@ Qui sotto trovi le informazioni di base sul tuo VPS e lo stato del servizio. Far
 > [!tabs]
 > Nome
 >>
->> Per personalizzare il nome del VPS, clicca sul pulsante `...`{.action} e seleziona `Cambia nome`{.action}. Questa funzionalità è utile per facilitare la navigazione nello Spazio Cliente quando si gestiscono più servizi VPS. Il nome interno del servizio rimane però nel formato *vps-XXXXXXX.vps.ovh.net*.
+>> Per personalizzare il nome del VPS, clicca sul pulsante `...`{.action} e seleziona `Modifica il nome`{.action}. Questa funzionalità è utile per facilitare la navigazione nello Spazio Cliente quando si gestiscono più servizi VPS. Il nome interno del servizio rimane però nel formato *vps-XXXXXXX.vps.ovh.net*.
 >>
 > Boot
 >>
@@ -376,4 +376,4 @@ Per un processo più automatizzato, OVHcloud propone anche la soluzione SSL Gate
 
 [Mettere in sicurezza un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -10,9 +10,9 @@ updated: 2024-07-17
 
 ## Objetivo
 
-Una instancia *flex* es una instancia de disco único (50 GB) que ofrece un proceso más rápido para los snapshots. Permite redimensionar a los modelos superior o inferior con un espacio de almacenamiento fijo, mientras que los modelos clásicos solo pueden redimensionarse hacia los modelos superiores.</br> Con una infraestructura en constante evolución, puede necesitar aumentar el espacio de almacenamiento de su instancia. En ese caso, deberá cambiar su instancia *flex* a un modelo clásico. Esta acción solo es posible desde Horizon.
+Una instancia *flex* es una instancia de disco único (50 GB) que ofrece un proceso más rápido para los snapshots. Permite redimensionar a los modelos superior o inferior con un espacio de almacenamiento fijo, mientras que los modelos clásicos solo pueden redimensionarse hacia los modelos superiores.<br> Con una infraestructura en constante evolución, puede necesitar aumentar el espacio de almacenamiento de su instancia. En ese caso, deberá cambiar su instancia *flex* a un modelo clásico. Esta acción solo es posible desde Horizon.
 
-</br>**Esta guía explica cómo cambiar de un modelo *flex* a un modelo clásico y redimensionar su instancia *flex* desde la interfaz OpenStack Horizon.**
+<br>**Esta guía explica cómo cambiar de un modelo *flex* a un modelo clásico y redimensionar su instancia *flex* desde la interfaz OpenStack Horizon.**
 
 ## Requisitos
 
@@ -24,7 +24,7 @@ Una instancia *flex* es una instancia de disco único (50 GB) que ofrece un proc
 > [!warning] 
 > - Si actualiza de una instancia flex a una instancia clásica con más recursos, esto se considera una actualización. En este caso, se le facturará la diferencia. Al final del periodo de facturación, recibirá dos facturas.
 >
-> Si pasa de una instancia flexible a una instancia clásica con menos recursos, se considera un downgrade. En este caso, no se le facturará.
+> - Si pasa de una instancia flexible a una instancia clásica con menos recursos, se considera un downgrade. En este caso, no se le facturará.
 >
 > - Si cambia de una instancia flexible a una instancia clásica con los mismos recursos, no se le facturará.
 >

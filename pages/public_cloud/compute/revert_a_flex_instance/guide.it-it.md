@@ -10,9 +10,9 @@ updated: 2024-07-17
 
 ## Obiettivo
 
-Un'istanza *flex* è un'istanza a disco unico (50 GB) che offre un processo più rapido per gli Snapshot. Permette un ridimensionamento verso modelli superiori o inferiori con spazio di storage fisso, mentre i modelli classici possono essere ridimensionati solo verso modelli superiori.</br> Con un'infrastruttura in costante evoluzione, potresti aver bisogno di aumentare lo spazio di storage della tua istanza. In questo caso, è necessario spostare l'istanza *flex* verso un modello classico. Questa operazione è possibile solo dall'interfaccia Horizon.
+Un'istanza *flex* è un'istanza a disco unico (50 GB) che offre un processo più rapido per gli Snapshot. Permette un ridimensionamento verso modelli superiori o inferiori con spazio di storage fisso, mentre i modelli classici possono essere ridimensionati solo verso modelli superiori.<br> Con un'infrastruttura in costante evoluzione, potresti aver bisogno di aumentare lo spazio di storage della tua istanza. In questo caso, è necessario spostare l'istanza *flex* verso un modello classico. Questa operazione è possibile solo dall'interfaccia Horizon.
 
-</br>**Questa guida ti mostra come passare da un modello *flex* a un modello classico e ridimensionare la tua istanza *flex* dall'interfaccia OpenStack Horizon.**
+<br>**Questa guida ti mostra come passare da un modello *flex* a un modello classico e ridimensionare la tua istanza *flex* dall'interfaccia OpenStack Horizon.**
 
 ## Prerequisiti
 
@@ -24,9 +24,9 @@ Un'istanza *flex* è un'istanza a disco unico (50 GB) che offre un processo più
 > [!warning] 
 > - Se si passa da un'istanza flex a un'istanza classica con più risorse, questo viene considerato un aggiornamento. In questo caso, vi verrà addebitata la differenza. Al termine del periodo di fatturazione, riceverete due fatture.
 >
-> Se si passa da un'istanza flex a un'istanza classica con meno risorse, questo viene considerato un downgrade. In questo caso, non verrà emessa alcuna fattura.
+> - Se si passa da un'istanza flex a un'istanza classica con meno risorse, questo viene considerato un downgrade. In questo caso, non verrà emessa alcuna fattura.
 >
-> Se passate da un'istanza flex a un'istanza classica con le stesse risorse, non riceverete alcuna fattura.
+> - Se passate da un'istanza flex a un'istanza classica con le stesse risorse, non riceverete alcuna fattura.
 >
 
 Accedi all'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/) e assicurati di essere nella regione corretta. Puoi verificarlo nell'angolo in alto a sinistra.

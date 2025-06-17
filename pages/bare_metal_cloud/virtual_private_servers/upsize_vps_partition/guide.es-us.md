@@ -42,7 +42,7 @@ lsblk
 
 La partición correspondiente al modo de rescate (`sda1` en este ejemplo) está montada en el directorio `/` .A su vez, el disco del VPS se denomina `sdb` y no debe tener ningún punto de montaje.
 
-por ejemplo,
+por ejemplo:
 
 ```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -52,11 +52,11 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-Si el resultado es parecido al del ejemplo anterior y la columna `MOUNTPOINT` está vacía en la fila correspondiente, puede pasar al [paso siguiente](#checkfs).
+Si el resultado es parecido al del ejemplo anterior y la columna `MOUNTPOINT` está vacía en la fila correspondiente, puede pasar al [paso siguiente](#filesystemcheck).
 
 Sin embargo, si el resultado muestra que existe un punto de montaje para la partición VPS, primero deberá desmontarla.
 
-por ejemplo,
+por ejemplo:
 
 ```console
 sdb 254:16 0 25G 0 disk
@@ -77,7 +77,7 @@ En este ejemplo de configuración, el comando sería:
 umount /dev/sdb1
 ```
 
-#### Comprobar sistema de archivos <a name="checkfs"></a>
+#### Comprobar sistema de archivos <a name="filesystemcheck"></a>
 
 Antes de continuar, se recomienda comprobar el sistema de archivos (`filesystem check`) para detectar errores en la partición. Utilice el siguiente comando:
 
