@@ -87,7 +87,7 @@ Nous vous invitons à consulter le guide [Changer sa clé SSH en cas de perte](/
 
 /// details | Comment créer et gérer des utilisateurs OpenStack ?
 
-**[Facultatif depuis septembre 2023]** Un utilisateur [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) peut être créer pour utiliser les API Horizon ou OpenStack. Ceci est facultatif car nous avons déployé une authentification unique (SSO : *Single Sign-On*) entre l'espace client OVHcloud et Horizon.
+**[Facultatif depuis septembre 2023]** Un utilisateur [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) peut être créé pour utiliser les API Horizon ou OpenStack. Ceci est facultatif car nous avons déployé une authentification unique (SSO : *Single Sign-On*) entre l'espace client OVHcloud et Horizon.
 
 ///
 
