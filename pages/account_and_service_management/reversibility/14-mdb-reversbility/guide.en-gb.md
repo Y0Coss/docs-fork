@@ -1,6 +1,6 @@
 ---
 title: "Managed Message Broker Product Reversibility Policy"
-updated: 2025-06-16
+updated: 2025-06-17
 ---
 
 ## Objective
