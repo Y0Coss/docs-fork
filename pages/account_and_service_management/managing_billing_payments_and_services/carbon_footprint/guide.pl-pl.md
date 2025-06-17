@@ -1,7 +1,7 @@
 ---
 title: "Jak uzyskać ślad węglowy Twoich usług OVHcloud"
 excerpt: "Dowiedz się, jak odzyskać miesięczny ślad węglowy usług OVHcloud za pomocą naszego kalkulatora emisji dwutlenku węgla"
-updated: 2025-06-16
+updated: 2025-06-17
 ---
 
 ## Wprowadzenie
@@ -30,11 +30,11 @@ Należy wziąć pod uwagę kilka kwestii:
 - Bilans nie może być generowany dłużej niż ostatnie 24 miesiące.
 - Brak bilansu za okres przed datą wdrożenia funkcji dla każdej usługi OVHcloud (patrz tabela poniżej).
 
-| Usługa                | Data uruchomienia kalkulatora śladu węglowego |
-|------------------------|----------------------------------------------------------------| 
-| Serwer Dedykowany      | 2023/05/01 |
-| Serwer Dedykowany Eco  | 2023/05/01 |
-| VMware on OVHcloud     | 2023/08/01 |
+| Usługa | Data uruchomienia kalkulatora śladu węglowego |
+|---|---|
+| Serwer Dedykowany | 2023/05/01 |
+| Serwer Dedykowany Eco | 2023/05/01 |
+| VMware on OVHcloud | 2023/08/01 |
 | Instancje Public Cloud | 2025/01/01 |
 
 ### Pobranie miesięcznego bilansu za poprzedni miesiąc w Panelu klienta OVHcloud

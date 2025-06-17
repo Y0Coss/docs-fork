@@ -1,7 +1,7 @@
 ---
 title: "Como obter a pegada de carbono dos seus serviços OVHcloud"
 excerpt: "Saiba como recuperar a pegada de carbono mensal dos serviços OVHcloud graças à nossa calculadora de carbono"
-updated: 2025-06-16
+updated: 2025-06-17
 ---
 
 ## Objetivo
@@ -12,7 +12,7 @@ No âmbito das suas atividades profissionais ou por interesse no assumpto, poder
 
 ## Requisitos
 
-- Ser contacto "faturação" serviços para os quais deseja obter a pegada de carbono. Para obter mais informações, consulte [o nosso manual sobre gestão de contactos](/pages/account_and_service_management/account_information/managing_contacts).
+- Ser contacto "Faturação" serviços para os quais deseja obter a pegada de carbono. Para obter mais informações, consulte [o nosso manual sobre gestão de contactos](/pages/account_and_service_management/account_information/managing_contacts).
 
 **O cálculo da pegada de carbono está disponível para os seguintes serviços:**
 
@@ -30,24 +30,24 @@ Há vários pontos a ter em conta:
 - Não podem ser efetuados balanços para além dos últimos 24 meses.
 - Nenhum balanço pode ser gerado para o período que precede a data de implementação da funcionalidade para cada serviço da OVHcloud (ver quadro abaixo).
 
-| Serviço                | Data de entrada em funcionamento da calculadora de pegada de carbono |
-|------------------------|----------------------------------------------------------------| 
-| Servidor Dedicado       | 2023/05/01 |
-| Servidor Dedicado Eco   | 2023/05/01 |
-| VMware on OVHcloud      | 2023/08/01 |
+| Serviço | Data de entrada em funcionamento da calculadora de pegada de carbono |
+|---|---|
+| Servidor Dedicado | 2023/05/01 |
+| Servidor Dedicado Eco | 2023/05/01 |
+| VMware on OVHcloud | 2023/08/01 |
 | Instâncias Public Cloud | 2025/01/01 |
 
 ### Recuperar o balanço mensal do mês anterior através da Área de Cliente OVHcloud
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-1. Na página que é apresentada, na coluna da esquerda, aceda à secção **Links úteis** e clique no separador `A minha pegada ecológica`{.action}.
+1. Na página que é apresentada, na coluna da esquerda, aceda à secção contendo os **Links úteis** e clique no separador `A minha pegada ecológica`{.action}.
 1. Na nova página que aparece, clique em `Fazer download da minha pegada de [Mês] de [Ano]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}
 
 Poderá recuperar todos os meses a pegada de carbono do mês anterior para os seus serviços elegíveis.
 
-Se precisar da "pegada de carbono" durante um mês antes do mês anterior ao mês em curso, deverá obrigatoriamente passar pelas nossas API para a recuperar.
+Se precisar da pegada de carbono durante um mês antes do mês anterior ao mês em curso, deverá obrigatoriamente passar pelas nossas API para a recuperar.
 
 ### Recuperar um balanço mensal anterior ao mês anterior através das nossas API
 
@@ -123,7 +123,7 @@ Preencha o formulário da parte `PATH PARAMETERS` assim:
 
 Depois de introduzir corretamente o valor do seu `taskID`, clique no botão azul `EXECUTE`{.action}.
 
-O resultado seguinte aparece na janela `RESPONSE`{.action} quando desce à página, abaixo do botão `EXECUTE`{.action} :
+O resultado seguinte aparece na janela `RESPONSE`{.action} quando desce à página, abaixo do botão `EXECUTE`{.action}:
 
 ![API](/pages/assets/screens/api/get-me-carboncalculator-task-taskid-response.png){.thumbnail}
 

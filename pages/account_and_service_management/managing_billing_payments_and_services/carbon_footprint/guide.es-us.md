@@ -1,7 +1,7 @@
 ---
 title: "Cómo obtener la huella de carbono de los servicios de OVHcloud"
 excerpt: "Descubra cómo obtener la huella de carbono mensual de los servicios de OVHcloud con nuestra calculadora de carbono"
-updated: 2025-06-16
+updated: 2025-06-17
 ---
 
 ## Objetivo
@@ -12,7 +12,7 @@ En el marco de sus actividades profesionales o por interés sobre el tema, es po
 
 ## Requisitos
 
-- Ser contacto «Facturación» de los servicios para los que desea obtener la huella de carbono. Para más información, consulte [nuestra guía sobre la gestión de contactos](/pages/account_and_service_management/account_information/managing_contacts).
+- Ser contacto de "Facturación" de los servicios para los que desea obtener la huella de carbono. Para más información, consulte [nuestra guía sobre la gestión de contactos](/pages/account_and_service_management/account_information/managing_contacts).
 
 **El cálculo de la huella de carbono está disponible para los siguientes servicios:**
 
@@ -30,17 +30,17 @@ Tenga en cuenta los siguientes puntos:
 - No se pueden generar balances después de los últimos 24 meses.
 - No es posible generar ningún balance del período anterior a la fecha de puesta en marcha de la funcionalidad para cada servicio de OVHcloud (ver la tabla a continuación).
 
-| Servicio               | Fecha de puesta en servicio de la calculadora de huella de carbono |
-|------------------------|----------------------------------------------------------|
-| Servidor dedicado      | 2023/05/01 |
-| Servidor Dedicado Eco  | 2023/05/01 |
-| VMware on OVHcloud     | 2023/08/01 |
+| Servicio | Fecha de puesta en servicio de la calculadora de huella de carbono |
+|---|---|
+| Servidor dedicado | 2023/05/01 |
+| Servidor Dedicado Eco | 2023/05/01 |
+| VMware on OVHcloud | 2023/08/01 |
 | Instances Public Cloud | 2025/01/01 |
 
 ### Obtener el balance mensual del mes anterior desde el área de cliente de OVHcloud
 
 1. Conéctese al [área de cliente de OVHcloud](/links/manager).
-1. En la página que aparece, en la columna izquierda, desplácese hasta la sección **Enlaces útiles** y haga clic en la pestaña `Mi huella de carbono`{.action}.
+1. En la página que aparece, en la columna izquierda, desplácese hasta la sección que contiene los **Enlaces útiles** y haga clic en la pestaña `Mi huella de carbono`{.action}.
 1. En la nueva página que aparece, haga clic en `Descargar mi huella de [Mes] [Año]`{.action}.
 
 ![Carbon footprint](/pages/assets/screens/control_panel/product-selection/right-column/carbon-footprint/my-carbon-footprint.png){.thumbnail}
@@ -135,7 +135,7 @@ El siguiente resultado aparece en la ventana `RESPONSE`{.action} cuando se despl
 }
 ```
 
-En este resultado, copie la URL completa en «HTTPS» (**sin las comillas**) a la derecha de la mención `"link":` y péguela en la barra de búsqueda de su navegador de internet para iniciar la descarga del balance de carbono en formato PDF.
+En este resultado, copie la URL completa en "HTTPS" (**sin las comillas**) a la derecha de la mención `"link":` y péguela en la barra de búsqueda de su navegador de Internet para iniciar la descarga del balance de carbono en formato PDF.
 
 Su navegador de Internet descargará automáticamente el archivo y lo mostrará.
 
@@ -158,5 +158,7 @@ Una vez abierto el archivo, podrá ver lo siguiente:
 [Primeros pasos con las API de OVHcloud](/pages/manage_and_operate/api/first-steps)
  
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+ 
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
  
 Interactúe con nuestra [comunidad de usuarios](/links/community).
