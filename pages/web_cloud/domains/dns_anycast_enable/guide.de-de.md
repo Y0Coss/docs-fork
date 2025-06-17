@@ -7,7 +7,7 @@ updated: 2025-06-17
 ## Ziel
 
 Sie möchten, dass Ihre Dienstleistungen (z.B. Ihre Website) weltweit in Rekordzeit verfügbar sind? Sie möchten die DNS-Auflösung Ihrer Domain optimieren?
-OVHcloud bietet Ihnen die Option [DNS Anycast](/links/web/domains-anycast-optionen).
+OVHcloud bietet Ihnen die Option [DNS Anycast](/links/web/domains-options-anycast).
 
 **Diese Anleitung erklärt, wie Sie mit der DNS Anycast Option Ihrer Domain den Zugriff auf Ihre Webdienste beschleunigen können.**
 
