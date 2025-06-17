@@ -1,44 +1,44 @@
 ---
 title: "Transférer les logs du KMS OVHcloud à Logs Data Platform"
 excerpt: "Analyser les logs KMS via LDP"
-updated: 2025-06-13
+updated: 2025-06-17
 ---
 
 ## Objectif
 
-L'objectif de ce guide est de présenter les logs générés par le KMS OVHcloud et comment y accéder depuis Logs Data Platform
+L'objectif de ce guide est de présenter les logs générés par le KMS OVHcloud et la manière dont ils sont gérés depuis Logs Data Platform.
 
 ## Prérequis
 
 - Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Avoir [commandé un KMS OVHcloud et créer un certificat d'accès](/pages/manage_and_operate/kms/quick-start)
+- Avoir [commandé un KMS OVHcloud et créé un certificat d'accès](/pages/manage_and_operate/kms/quick-start).
 
 ## En pratique
 
 ### Description
 
-Le KMS OVHcloud dispose d'une intégration native avec [Logs Data Plateform](https://www.ovhcloud.com/en/identity-security-operations/logs-data-platform/) pour la gestion des logs
+Le KMS OVHcloud dispose d'une intégration native avec [Logs Data Plateform](https://www.ovhcloud.com/en/identity-security-operations/logs-data-platform/) pour la gestion des logs.
 
 ### Accès aux logs en direct
 
-Les logs du KMS sont accessibles depuis l'onglet `Logs`{.action} d'un KMS
+Les logs du KMS sont accessibles depuis l'onglet `Logs`{.action} d'un KMS.
 
 ![Logs tab](images/kms-logs-tab.png){.thumbnail}
 
 Cet onglet affiche en temps réel les logs du KMS.
 Le sélecteur permet de choisir le type de logs affichés :
 
-- REST API audit logs
-- KMIP audit logs
+- REST API audit logs.
+- KMIP audit logs.
 
 ### Accès aux logs via LDP
 
 Depuis l'onglet `Logs`{.action} il est possible de s'abonner à un flux LDP.
-Une fois l'abonnement actif, l'ensemble des logs seront transmis à [Logs Data Plateform](https://www.ovhcloud.com/fr/identity-security-operations/logs-data-platform/) pour retrouver l'historique des logs généré et la possiblité de faire des recherches plus avancées, créer des alertes et des visualisations.
+Une fois l'abonnement actif, l'ensemble des logs seront transmis à [Logs Data Plateform](/links/manage-operate/ldp) pour retrouver l'historique des logs générés et la possiblité de faire des recherches plus avancées, créer des alertes et des visualisations.
 
 ![LDP Subscription](images/kms-ldp-subscription.png){.thumbnail}
 
-Pour plus d'informations, il est possible de regarder la [documentation dédiée](pages\manage_and_operate\observability\logs_data_platform\getting_started_quick_start)
+Pour plus d'informations, veuillez consulter notre guide « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) ».
 
 ### Liste des logs générés
 
@@ -54,7 +54,7 @@ Les logs sont sous le format suivant :
 
 Par exemple : INFO | GET /v1/servicekey/77f0a3f6-c2ef-4e76-xxxx-xxxxxxxxxxxx - 200 - identity: urn:v1:eu:identity:group:xx1111-ovh/john.smith - operation: okms:apiovh:serviceKey/get on urn:v1:eu:resource:okms:8d1c84cc-1128-4629-xxxx-xxxxxxxxxx/serviceKey/77f0a3f6-c2ef-4e76-xxxx-xxxxxxxxxxxx - from Manager/APIv2 - request id: EU.manager-5.684c3abe.3880620.2080cff16eaa5539bf92cxxxxxxxx
 
-Les éléments pouvant être transmis à Logs Data Plateform étant :
+Les éléments pouvant être transmis à Logs Data Plateform sont :
 
 |**Champ**|**Description**|
 | :-: | :-: |
@@ -93,12 +93,12 @@ Les éléments pouvant être transmis à Logs Data Plateform étant :
 |log_level|Niveau de priorité du log|
 |client_ip|IP du client réalisant la requête|
 |tls_cert_id|ID du certificat utilisé pour l'authentification|
-|res_urn|URN de la ressource ciblé|
+|res_urn|URN de la ressource ciblée|
 |region|Région du domaine OKMS|
 |iam_operation|Action IAM évaluée|
 |iam_identities|Identitée IAM utilisé pour l'évaluation des droits|
 |kmip_operation|Opération KMIP utilisée|
-|kmip_reason|[code d'erreur KMIP](https://docs.oasis-open.org/kmip/spec/v1.4/kmip-spec-v1.4.pdf#%5B%7B%22num%22%3A484%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C69%2C720%2C0%5D)|
+|kmip_reason|[code d'erreur KMIP](https://docs.oasis-open.org/kmip/spec/v1.4/kmip-spec-v1.4.pdf#%5B%7B%22num%22%3A484%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C69%2C720%2C0%5D){.external}|
 
 ## Aller plus loin
 
