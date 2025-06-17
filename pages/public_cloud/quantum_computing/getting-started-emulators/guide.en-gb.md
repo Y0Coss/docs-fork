@@ -113,7 +113,7 @@ To create a Quantum Notebook, follow these steps:
 >>
 >> At the end of the process, review your settings and click the `Order now`{.action} button to confirm and launch the creation of your Notebook. You will be redirected to you notebook dashboard:
 >> 
->> ![Create a Notebook Control Panel manager 10](images/creating-a-notebook-using-UI-08.png){.thumbnail}
+>> ![Create a Notebook Control Panel manager 10](images/creating-a-notebook-using-UI-08b.png){.thumbnail}
 >>
 >> > [!primary]
 >> >
@@ -313,9 +313,10 @@ To connect to your Quantum Notebook, you'll need to authenticate using a usernam
 >>
 >> ![Notebook Authentication Token](images//notebook-authentication-token.png){.thumbnail}
 >>
+
 ### Stopping a Quantum Notebook
 
-You can stop your Quantum Notebook at any time to release its compute resources. This will release its compute resources but will keep your Notebook data and installed libraries. Therefore, you will not incur any further charges for compute unless you restart the Notebook. However, attached storage will be billed at the price of OVHcloud Object Storage (consult the [Quantum Notebooks Billing documentation](/pages/public_cloud/quantum_computing/notebook_guide_billing_concept) for more information). To do so, follow these steps:
+You can stop your Quantum Notebook at any time to release its compute resources. This will release its compute resources but will keep your Notebook data and installed libraries. Therefore, you will not incur any further charges for compute unless you restart the Notebook. However, attached storage will be billed at the price of OVHcloud Object Storage (consult the [Quantum Notebooks Billing documentation](/pages/public_cloud/quantum_computing/billing) for more information). To do so, follow these steps:
 
 > [!tabs]
 > **Using the Control Panel (UI)**
