@@ -1,11 +1,11 @@
 ---
-title: "Politique de réversibilité du produit Managed Data Visulation"
+title: "Politique de réversibilité du produit Managed Data Visualisation"
 updated: 2025-06-16
 ---
 
 ## Objectif
 
-Ce document décrit la politique de réversibilité du produit Managed Data Visulation couvrant l'offre OVHcloud Managed Grafana.
+Ce document décrit la politique de réversibilité du produit Managed Data Visualisation couvrant l'offre OVHcloud Managed Grafana.
 
 Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
