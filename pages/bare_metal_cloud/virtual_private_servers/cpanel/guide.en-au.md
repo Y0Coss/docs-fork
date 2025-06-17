@@ -34,7 +34,7 @@ If you already have a VPS and want to have cPanel on it, you can reinstall the V
 
 To install your cPanel server, order a VPS with the cPanel distribution.
 
-![horizon](images/cpanel_order.png){.thumbnail}
+![horizon](images/cpanel-order.png){.thumbnail}
 
 When your VPS is ready, you will receive an email providing the information to connect to your cPanel server:
 
