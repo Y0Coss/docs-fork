@@ -3,6 +3,8 @@ title: 'Reading and filtering NSX-T logs'
 excerpt: 'Learn how to access, understand, and filter NSX-T firewall logs on your Hosted Private Cloud environment'
 updated: 2025-06-12
 ---
+ [OVHcloud Control Panel](/links/manager)
+ 
 
 ## Objective
 
@@ -11,7 +13,7 @@ updated: 2025-06-12
 ## Requirements
 
 - Access to the vSphere interface
-- Access to NSX-T Manager or your Syslog/log aggregation system
+- Access to the [OVHcloud Control Panel](/links/manager) (NSX-T must be activated) or your Syslog/log aggregation system
 - Basic understanding of NSX-T firewalling and network traffic
 
 ## Instructions
@@ -34,12 +36,12 @@ When inspecting logs, focus on the following elements:
 
 ### Step 2: Access the logs
 
-#### Option 1: From NSX-T Manager
+#### Option 1: From the OVHcloud Control Panel
 
-1. Log in to the **NSX Manager**
-2. In the left-hand menu, navigate to the `Security`{.action} section
-3. Under **Distributed Firewall**, click on the `Monitor`{.action} tab
-4. Open the `Logs`{.action} view to explore real-time entries or download historical logs
+1. Log in to the [OVHcloud Control Panel](/links/manager), then access NSX-T.
+2. In the left-hand menu, navigate to the `Security`{.action} section.
+3. Under **Distributed Firewall**, click on the `Monitor`{.action} tab.
+4. Open the `Logs`{.action} view to explore real-time entries or download historical logs.
 
 #### Option 2: From a Syslog server
 

@@ -1,7 +1,7 @@
 ---
 title: 'Lecture et filtrage des logs NSX-T'
 excerpt: 'Apprenez à accéder aux journaux du pare-feu NSX-T, à les comprendre et à les filtrer sur votre environnement Hosted Private Cloud'
-mise à jour : 12/06/2025
+updated: 2025-06-12
 ---
 
 ## Objectif
@@ -11,7 +11,7 @@ mise à jour : 12/06/2025
 ## Prérequis
 
 - Accès à l'interface vSphere
-- Accès à NSX-T Manager ou à votre système d'agrégation Syslog/log
+- Accès à [l'espace client OVHcloud](/links/manager) (NSX-T doit être activé) ou à votre système Syslog/outils d’agrégation de logs
 - Connaissance de base du firewall NSX-T et du trafic réseau
 
 ## Instructions
@@ -34,9 +34,9 @@ Lors de l'inspection des journaux, concentrez-vous sur les éléments suivants :
 
 ### Étape 2 : accéder aux logs
 
-#### Option 1 : Depuis NSX-T Manager
+#### Option 1 : Depuis l’espace client OVHcloud
 
-1. Connectez-vous au **NSX Manager**
+1. Connectez-vous à [l'espace client OVHcloud](/links/manager), puis accédez à NSX-T
 2. Dans le menu de gauche, accédez à la section `Sécurité`{.action}
 3. Sous **Pare-feu distribué**, cliquez sur l'onglet `Surveiller`{.action}
 4. Ouvrez la vue `Logs`{.action} pour explorer les entrées en temps réel ou télécharger les journaux historiques
@@ -63,6 +63,7 @@ En fonction de votre chaîne d'outils :
 « bash
 grep « DROP » nsx-logs.log | awk '{print $2, $5, $7}'
 «
+
 ## Aller plus loin
 
 - [Documentation officielle de VMware NSX-T](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/index.html)
