@@ -94,10 +94,11 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> ```
 >>
->> Exécutez ensuite la commande suivante pour créer une sauvegarde de votre instance :
+>> Exécutez ensuite les commandes suivantes pour créer une sauvegarde de votre instance :
 >>
 >> ```bash
 >> $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
+>> $ openstack workflow execution create ovh.glance.glance_download '{"src_image_id": "<image_id>", "src_region": "<current_region>", "dst_region": "<remote_region>"}'
 >> ```
 >>
 
