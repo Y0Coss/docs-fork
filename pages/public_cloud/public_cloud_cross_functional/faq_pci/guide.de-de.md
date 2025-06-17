@@ -88,7 +88,7 @@ Lesen Sie die Anleitung zum [Ändern des SSH-Schlüssels](/pages/public_cloud/co
 
 /// details | Wie kann ich OpenStack-Benutzer erstellen und verwalten?  
 
-- **[Optional seit September 2023]** Ein [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) kann erstellt werden, um die Horizon- oder OpenStack-APIs zu verwenden. Dies ist optional, da Single Sign-On (SSO) zwischen dem OVHcloud Kundencenter und Horizon eingerichtet wurde.
+- **[Optional seit September 2023]** Ein [OpenStack User](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) kann erstellt werden, um die Horizon- oder OpenStack-API zu verwenden. Dies ist optional, da Single Sign-On (SSO) zwischen dem OVHcloud Kundencenter und Horizon eingerichtet wurde.
 
 ///
 
