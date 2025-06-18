@@ -46,7 +46,7 @@ Cela peut être utile dans les cas suivants :
 
 ### Les différents types de volumes
 
-OVHcloud propose trois types de volumes Block Storage, chacun adapté à des besoins spécifiques en matière de performance, de capacité et de coûts. Ces solutions vous permettent d’attacher des volumes de stockage persistants à vos instances, en garantissant un haut niveau de fiabilité et de disponibilité.
+OVHcloud propose trois types de volumes Block Storage, chacun adapté à des besoins spécifiques en matière de performance, de capacité et de coûts. Ces solutions vous permettent d’attacher des volumes de stockage persistants à vos instances, en garantissant un haut niveau de fiabilité et de disponibilité. Si la fonctionnalité est disponible,  le chiffrement peut être activé à la création d'un volume, pour tous les types de volumes à l'exception des volumes Classic Multi-Attach dans les régions 3AZ.
 
 /// details | **Classic – 500 IOPS garantis**
 
@@ -82,6 +82,11 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 
 ![volumes_types](images/volume-types.png){.thumbnail}
 
+> [!primary]
+>
+> Tous les types de volumes sont également disponibles en version chiffrée (**LUKS**). Ces volumes assurent la confidentialité des données sans impact sur les performances. Disponibles depuis le Manager OVHcloud ainsi qu’avec les outils présentés dans la section suivante, en spécifiant le type <volume_type>-luks.
+> 
+
 ### Attacher un nouveau volume
 
 > [!tabs]
@@ -92,7 +97,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> ![sélectionner le projet](images/avolume01.png){.thumbnail}
 >>
->> Suivez les étapes de configuration afin de sélectionner les options d'emplacement, de type de disque et de capacité de disque. Renseignez un nom pour le volume et validez en cliquant sur `Créer le volume`{.action}.
+>> Suivez les étapes de configuration afin de sélectionner les options d'emplacement, de type de disque, de chiffrement et de capacité de disque. Renseignez un nom pour le volume et validez en cliquant sur `Créer le volume`{.action}.
 >>
 >> > [!warning]
 >> >
@@ -120,6 +125,22 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> >
 >>
 > **Via Terraform**
+>> > [!warning]
+>> > 
+>> > Veuillez noter que les types de volume « high-speed-gen2 » ou « luks » peuvent ne pas être disponibles dans toutes les régions.
+>> >
+>>
+>> Types de volumes :
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> Les types se terminant par -luks sont chiffrés (LUKS).
+>>
 >> Pour créer un volume block storage simple, vous avez besoin de 3 éléments :
 >>
 >> * Le nom du volume
@@ -134,6 +155,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>   name   = "terraform_blockstorage" # Nom du volume block storage
 >>   size   = 10                       # Taille du volume
 >>   region = "GRA11"                  # Région ou le volume doit être crée
+>>   volume_type = "volume_type"       # classic, high-speed, high-speed-gen2 ou équivalent `-luks`
 >> }
 >> ```
 >>
@@ -177,7 +199,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>       + name              = "terraform_blockstorage"
 >>       + region            = "GRA11"
 >>       + size              = 10
->>       + volume_type       = (known after apply)
+>>       + volume_type       = "high-speed-gen2"
 >>     }
 >>
 >>   # openstack_compute_volume_attach_v2.volume_attach will be created
@@ -208,13 +230,16 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> ```
 >>
 > **Via l'interface Horizon**
->> partie connection à Horizon blablabla
->>
 >> Se rendre dans la section déroulante `Volumes`, cliquez sur `Volumes`{.action} puis sur `Create Volume`{.action}.
 >>
 >> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
 >>
 >> Renseignez le champs `Volume Name`{.action} et sélectionnez le type de volume que vous souhaitez. Cliquez ensuite sur `Create Volume`{.action}
+>>
+>> > [!warning]
+>> >
+>> > Veuillez noter que si le type de volume « high-speed-gen2 » ou « luks » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
+>> >
 >>
 >> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"pas via }
 >>
@@ -225,8 +250,24 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> Selectionnez l'instance à laquelle vous souhaitez attacher votre colume, puis cliquez sur `Attach Volume.`{.action}
 >>
 >> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
->> 
-> **Via the Openstack CLI**
+>>
+> **Via la CLI Openstack**
+>> > [!warning]
+>> >
+>> > Veuillez noter que si le type de volume « high-speed-gen2 » ou « luks » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
+>> >
+>>
+>> Types de volumes :
+>>
+>> - Classic
+>> - High-speed
+>> - High-speed-gen2
+>> - Classic-luks
+>> - High-speed-luks
+>> - High-speed-gen2-luks
+>>
+>> Les types se terminant par -luks sont chiffrés (LUKS).
+>>
 >> Lister les types de volumes disponibles dans la région :
 >>
 >> ```bash
@@ -236,7 +277,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> Créez un volume en spécifiant au minimum sa taille (en GB) ainsi qu’un type parmi ceux listés précédemment. Vous pouvez également indiquer un nom pour votre volume à la fin de la commande.
 >>
 >> ```bash
->> openstack volume create --size 1 --type high-speed-gen2 volumeName
+>> openstack volume create --size 1 --type high-speed-gen2 volumeName # classic, high-speed, high-speed-gen2 ou équivalent `-luks`
 >> ```
 >>
 >> Pour attacher un volume à une instance disponible dans la région, utilisez la commande suivante :
