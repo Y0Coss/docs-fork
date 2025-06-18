@@ -1,7 +1,7 @@
 ---
 title: "CO2-Fußabdruck Ihrer OVHcloud Dienste einsehen"
 excerpt: "Erfahren Sie, wie Sie den monatlichen CO2-Fußabdruck der OVHcloud Dienste mit unserem CO2-Rechner abrufen"
-updated: 2025-06-16
+updated: 2025-06-17
 ---
 
 ## Ziel
