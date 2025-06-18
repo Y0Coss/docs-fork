@@ -18,7 +18,7 @@ Au cours de l'utilisation du produit, vous pouvez être amené à modifier les d
 
 ## En pratique
 
-Pour créer un nouvel utilisateur sur votre solution Web Cloud Databases, consultez la section **Créer un utilisateur** de notre guide « [Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
+Pour créer un nouvel utilisateur sur votre solution `Web Cloud Databases`, consultez la section **Créer un utilisateur** de notre guide « [Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
 
 Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **5** étapes.
 
