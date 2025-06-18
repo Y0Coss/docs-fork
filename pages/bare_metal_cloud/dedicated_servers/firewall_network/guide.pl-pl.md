@@ -1,7 +1,7 @@
 ---
 title: 'Aktywacja i konfiguracja Edge Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować Edge Network Firewall dla Twoich usług'
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Wprowadzenie
@@ -10,13 +10,18 @@ Aby chronić usługi dostępne dla klientów korzystających z publicznych adres
 
 **Ten przewodnik wyjaśnia, jak skonfigurować Edge Network Firewall dla Twoich usług.**
 
+> [!warning]
+>
+> **Ostrzeżenie** : funkcja "Scrubbing Center: tryb stały" została osiągnięta jego koniec życia (EOL) i zostanie definitywnie wyłączony 8 września 2025.
+>
+
 > [!primary]
 >
 > Więcej informacji na temat rozwiązania Anty-DDoS znajdziesz na [naszej stronie WWW](/links/security/antiddos).
 > 
 
 | ![global-schema](images/global_schema.png) |
-|:—:|
+|:--:|
 | Anty-DDoS - schemat infrastruktury i usług ochrony gier w OVHcloud |
 
 ## Wymagania początkowe
@@ -62,13 +67,13 @@ Następnie wymagane jest potwierdzenie. Firewall zostanie utworzony i będziesz 
 >
 
 | ![Enabling the configuration](images/activationconfig.png) |
-|:—:|
+|:--:|
 | Kliknij pozycję `Edge Network Firewall configuration`{.action}, aby rozpocząć konfigurację. |
 
 Na tej stronie można wybrać opcję **Aktywuj** lub **Wyłącz** zaporę za pomocą przycisku switch.
 Można to również zrobić w inny sposób wyjaśniony poniżej.
 
-Dla każdego adresu IP można skonfigurować do **20 reguł **.
+Dla każdego adresu IP można skonfigurować do **20 reguł**.
 
 > [!warning]
 >
@@ -96,19 +101,19 @@ Dla każdego adresu IP można skonfigurować do **20 reguł **.
 **Aby dodać regułę:**
 
 | ![add-rule-btn](images/enf_add_rule.png) | 
-|:—:| 
+|:--:| 
 | Kliknij opcję `Dodaj regułę`{.action}. |
 
 Dla każdej reguły (poza TCP) wybierz:
 
 | ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
-|:—| 
+|:-| 
 | &bull; Priorytet (od 0 do 19, gdzie 0 jest pierwszą zastosowaną regułą) <br>&bull; Akcja (`Accept`{.action} lub `Deny`{.action}) <br>&bull; Protokół <br>&bull; IP źródłowe (opcjonalnie) |
 
 Dla każdej reguły **TCP** należy wybrać:
 
 | ![add-rule-btn](images/enf_add_rule_tcp.png) | 
-|:—| 
+|:-| 
 | &bull; Priorytet (od 0 do 19, gdzie 0 jest pierwszą zastosowaną regułą) <br>&bull; Akcja (`Accept`{.action} lub `Deny`{.action}) <br>&bull; Protokół <br>&bull; IP źródłowe (opcjonalnie) <br>&bull; Port źródłowy (opcjonalnie) <br>&bull; Port docelowy (opcjonalnie) <br>&bull; Stan TCP (opcjonalnie) <br>&bull; Fragmenty (opcjonalnie)|
 
 > [!primary]
@@ -128,7 +133,7 @@ Dla każdej reguły **TCP** należy wybrać:
 **Włącz firewall:**
 
 | ![activate-desactivate](images/enf_enabled_button_01.png) |
-|:—:|
+|:--:|
 | `Włącz`{.action}, aby włączyć |
 
 Po potwierdzeniu firewall zostanie włączony.
@@ -136,7 +141,7 @@ Po potwierdzeniu firewall zostanie włączony.
 **Wyłącz firewall:**
 
 | ![activate-desactivate](images/enf_enabled_button_04.png) |
-|:—:|
+|:--:|
 | `Włącz`{.action}, aby włączyć |
 
 Po potwierdzeniu konfiguracja firewalla zostanie wyłączona.
@@ -174,12 +179,12 @@ Aby go aktywować, wykonaj następujące kroki:
 - Przejdź do sekcji `IP`{.action}.
 
 | ![menu-ipv4](images/mitigation_menu.png) |
-|:—:|
+|:--:|
 | Następnie kliknij `...`{.action} Przycisk po prawej stronie odpowiedniego adresu IPv4. |
 
 
 | ![mitigation-option](images/mitigation_menu_step_2.png) |
-|:—:|
+|:--:|
 | Wybierz `Filtrowanie: tryb stały`{.action}. |
 
 

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Optimiser les performances
 excerpt: "Ce guide vous présente différentes méthodes pour optimiser les performances de vos buckets Object Storage, notamment la recherche par plage d'octets, le multipart upload ainsi que d'autres méthodes"
-updated: 2024-03-27
+updated: 2025-06-04
 ---
 
 ## Objectif
@@ -67,7 +67,7 @@ user@host:~$ aws s3api create-multipart-upload --bucket test-bucket --key filena
 ```
 
 > [!primary]
-> N'oubliez pas de sauvegarder les **upload ID**, **key*- et **bucket name*- pour les utiliser avec la commande `upload-part`.
+> N'oubliez pas de sauvegarder les **upload ID**, **key** et **bucket name** pour les utiliser avec la commande `upload-part`.
 >
 
 Pour chaque partie, vous devez exécuter la commande `upload-part` dans laquelle vous spécifiez les *bucket*, *key- et *upload ID- :
@@ -143,8 +143,33 @@ Où `mpu.json` est :
 ```
 
 > [!primary]
-> Si vous ne terminez pas le *multipart upload*, votre objet ne sera pas reconstruit et ne sera pas visible MAIS vous devrez tout de même payer les coûts de stockage des parties.
 >
+> Si le *multipart upload* n'est pas terminé, l'objet final ne sera pas assemblé et restera invisible. Néanmoins, toutes les pièces téléchargées restent stockées et entraînent des frais de stockage.
+>
+
+Pour éviter des coûts inutiles, vous pouvez interrompre le *multipart upload* à l'aide de la commande CLI AWS suivante :
+
+```bash
+user@host:~$ aws s3api abort-multipart-upload \
+  --bucket test-bucket \
+  --key filename \
+  --upload-id <upload-id>
+```
+
+L'ID de l'upload est renvoyé par la commande `create-multipart-upload` ou peut être récupéré en listant les *multipart uploads* en cours :
+
+```bash
+user@host:~$ aws s3api list-multipart-uploads --bucket my-bucket
+```
+
+Exemple d'interruption d'un *multipart upload* spécifique après avoir récupéré son ID d'upload :
+
+```bash
+user@host:~$ aws s3api abort-multipart-upload \
+  --bucket my-bucket \
+  --upload-id "OWZiZTA4YzUtODExZC00ZjE5LTkyMjUtZGVmNjcwNjBiYWQ1" \
+  --key <my-file> # name or path of the object
+```
 
 ### Via d'autres outils tiers
 
@@ -214,7 +239,7 @@ OpenIO est une solution de *Software Defined Storage- sur laquelle repose l’Ob
 
 Dans OpenIO, un **conteneur*- est essentiellement une entité logique interne qui contient tous les objets d'un bucket donné. Chaque conteneur est associé à une base de données de métadonnées interne qui répertorie toutes les adresses du cluster des objets qu'il contient. Par défaut, un bucket Object Storage est associé à un conteneur, mais cela peut changer avec le mécanisme de *sharding*.
 
-Le *sharding- est le mécanisme par lequel un conteneur est divisé en 2 nouveaux sous-conteneurs (et donc sa base de données de métadonnées associée est également divisée en 2) lorsqu'il atteint **un nombre critique d'objets*- appelé **shards**.
+Le *sharding* est le mécanisme par lequel un conteneur est divisé en 2 nouveaux sous-conteneurs (et donc sa base de données de métadonnées associée est également divisée en 2) lorsqu'il atteint **un nombre critique d'objets** appelé **shards**.
 
 Le *sharding- permet :
 

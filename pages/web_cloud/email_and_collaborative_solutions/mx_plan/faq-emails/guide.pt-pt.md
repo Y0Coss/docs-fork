@@ -31,37 +31,37 @@ A OVHcloud oferece atualmente 4 ofertas de e-mail. Para compreender as suas espe
 
 > [!tabs]
 > **E-mails / MX Plan**
->>>
+>>
 >>![MX Plan](images/mxplan01.png){.thumbnail .w-500}
->>>
+>>
 >> 1. A oferta de e-mail mais antiga da OVHcloud, que inclui as funções essenciais de um serviço de e-mail com 5 GB de espaço de armazenamento por conta de e-mail.
 >> 2. Incluída com as ofertas de alojamento web e pode ser encomendada através da [Área de Cliente OVHcloud](/links/manager).
 >> 3. Esta oferta está disponível em 3 tecnologias de correio eletrónico diferentes. **Roundcube**, **OWA** (Outlook Web Access) e **Zimbra**.
->>>
+>>
 > **Zimbra Mail**
->>>
+>>
 >>![Zimbra Mail](images/zimbra01.png){.thumbnail .w-500}
->>>
+>>
 >> 1. Oferta de e-mail mais recente da OVHcloud, oferece um serviço de e-mail flexível e evolutivo em três níveis de oferta e de funcionalidades.
 >> 2. Pode encomendar uma conta Zimbra através da [Área de Cliente OVHcloud](/links/manager) ou diretamente em [ovhcloud.com](/links/web/email).
 >> 3. Como o nome indica, utiliza a interface **Zimbra**.
->>>
+>>
 > **E-mails Pro**
->>>
->>>![Email Pro](images/emailpro01.png){.thumbnail .w-500}
->>>
+>>
+>>![Email Pro](images/emailpro01.png){.thumbnail .w-500}
+>>
 >> 1. Oferta de e-mail baseada na tecnologia Exchange, com funcionalidades essenciais e um espaço de armazenamento de 10 GB.
 >> 2. Pode encomendar uma conta E-mail Pro através da [Área de Cliente OVHcloud](/links/manager) ou diretamente através de [ovhcloud.com](/links/web/email).
 >> 3. Esta oferta utiliza a interface webmail **OWA** (Outlook Web Access).
->>>
+>>
 > **Exchange**
->>>
->>>![Exchange](images/exchange01.png){.thumbnail .w-500}
->>>
+>>
+>>![Exchange](images/exchange01.png){.thumbnail .w-500}
+>>
 >> 1. Oferta de e-mail completa com funcionalidades de colaboração online com 50 GB ou 300 GB de espaço de armazenamento.
 >> 2. Incluída com as ofertas de alojamento web e pode ser encomendada através da [Área de Cliente OVHcloud](/links/manager).
 >> 3. Esta oferta utiliza a interface webmail **OWA** (Outlook Web Access).
->>>
+>>
 
 > [!success]
 >
@@ -125,8 +125,8 @@ A **palavra-passe** deve respeitar as seguintes regras:
 
 Encontrará abaixo as principais razões de uma falha na receção dos seus e-mails.
 
-1. **Software de correio eletrónico**: A falha na receção de correio eletrónico está frequentemente associada à configuração do endereço de correio eletrónico no software de correio eletrónico (Outlook, Mail para macOS, Thunderbird, etc.). Para o verificar, aceda a [webmail](/links/web/email). Se verificar que existem e-mails na pasta A receber do webmail que não estão presentes no software de mensagens, a resposta será provavelmente a sua configuração do software. Para mais informações, consulte a nossa página "[Impossível enviar ou receber e-mails](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostics_advanced)".
-1. **Configuração DNS**: O seu serviço de e-mail está associado a um domínio. Os registos MX na zona DNS designam os servidores de receção de e-mail. Se alterou recentemente os servidores DNS ou a zona DNS, estes registos MX podem ter sido "interrompidos". O que explicaria um corte na receção dos e-mails.Para mais informações sobre o assumpto, consulte a nossa página "[Impossível enviar ou receber e-mails](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostics_advanced)".
+1. **Software de correio eletrónico**: A falha na receção de correio eletrónico está frequentemente associada à configuração do endereço de correio eletrónico no software de correio eletrónico (Outlook, Mail para macOS, Thunderbird, etc.). Para o verificar, aceda a [webmail](/links/web/email). Se verificar que existem e-mails na pasta A receber do webmail que não estão presentes no software de mensagens, a resposta será provavelmente a sua configuração do software. Para mais informações, consulte a nossa página "[Impossível enviar ou receber e-mails](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)".
+1. **Configuração DNS**: O seu serviço de e-mail está associado a um domínio. Os registos MX na zona DNS designam os servidores de receção de e-mail. Se alterou recentemente os servidores DNS ou a zona DNS, estes registos MX podem ter sido "interrompidos". O que explicaria um corte na receção dos e-mails.Para mais informações sobre o assumpto, consulte a nossa página "[Impossível enviar ou receber e-mails](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)".
 1. **Quota de e-mail ultrapassada**: Se a quota de armazenamento da sua conta de e-mail for atingida, já não será possível receber e-mails e o seu remetente receberá uma mensagem de erro indicando que a sua conta de e-mail está cheia. Gerir o espaço de armazenamento de uma conta de e-mail Para mais informações, consulte a nossa página "[Gerir o espaço de armazenamento de uma conta de e-mail ](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)".
 1. **Regras da caixa de entrada**: A regra da caixa de entrada pode impedir a entrega de mensagens de correio eletrónico para a pasta A receber ou redirecioná-las para a pasta SPAM. Consulte as suas regras a partir do seu programa de mensagens (Outlook, Mail de macOS, Thunderbird, etc.) ou a partir de [webmail](/links/web/email).
 1. **Incidente ou manutenção**: Consultar a nossa página "[Web Cloud status](https://web-cloud.status-ovhcloud.com/pt/)" para verificar se uma operação não está em curso no seu serviço de e-mail.
@@ -139,8 +139,8 @@ Encontrará abaixo as principais razões de uma falha na receção dos seus e-ma
 
 /// details | O que fazer se não conseguir enviar os meus e-mails?
 
-1. **Software de correio eletrónico**: Se o seu endereço de correio eletrónico não for enviado com segurança, poderá ser configurado no software de correio eletrónico (Outlook, Mail para macOS, Thunderbird, etc.). Para o verificar, aceda a [webmail](/links/web/email). Se verificar que consegue enviar e-mails a partir do webmail, o fenómeno será causado pela configuração do seu software. Para mais informações, consulte a nossa página "[Impossível enviar ou receber e-mails](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostics_advanced)".
-1. **Código de erro**: Quando envia uma mensagem e o servidor destinatário a recusa, esta normalmente envia-lhe uma mensagem de erro com um código de erro. Analise a mensagem de erro, ela poderá especificar o motivo (limite máximo da conta de e-mail atingida, endereço de e-mail do destinatário inexistente, etc.). Para mais informações, consulte a nossa página "[Impossível enviar ou receber e-mails](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostics_advanced)".
+1. **Software de correio eletrónico**: Se o seu endereço de correio eletrónico não for enviado com segurança, poderá ser configurado no software de correio eletrónico (Outlook, Mail para macOS, Thunderbird, etc.). Para o verificar, aceda a [webmail](/links/web/email). Se verificar que consegue enviar e-mails a partir do webmail, o fenómeno será causado pela configuração do seu software. Para mais informações, consulte a nossa página "[Impossível enviar ou receber e-mails](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)".
+1. **Código de erro**: Quando envia uma mensagem e o servidor destinatário a recusa, esta normalmente envia-lhe uma mensagem de erro com um código de erro. Analise a mensagem de erro, ela poderá especificar o motivo (limite máximo da conta de e-mail atingida, endereço de e-mail do destinatário inexistente, etc.). Para mais informações, consulte a nossa página "[Impossível enviar ou receber e-mails](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_advanced)".
 1. **Tamanho do e-mail**: Quer seja o seu fornecedor de e-mail ou o servidor destinatário, existe um limite de tamanho para um e-mail. Aconselhamos que transmita principalmente imagens ou ficheiros pdf com um tamanho pequeno. No caso de ficheiros grandes, é preferível utilizar ferramentas de transferência de ficheiros como [plik.ovh](https://plik.ovh/).
 
 ///

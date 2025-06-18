@@ -1,16 +1,17 @@
 ---
 title: "Monitoring ataków DDoS za pomocą Network Security Dashboard"
 excerpt: "Dowiedz się, jak nawigować za pomocą pulpitu nawigacyjnego zabezpieczeń sieciowych"
-updated: 2025-04-28
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
->
 
 ## Wprowadzenie
 
 Z tego przewodnika dowiesz się, jak korzystać z Dashboardu zabezpieczeń sieci. Zawiera on przegląd środków zaradczych uruchamianych przez infrastrukturę ochrony Anty-DDoS w przypadku wykrycia złośliwej aktywności sieciowej. Dowiedz się, jakie dodatkowe zabezpieczenia należy wdrożyć, aby zapewnić ciągłość działania usług. Co więcej, na dashboardzie dostępne są wykresy ruchu pozwalające na lepszą wizualizację sytuacji podczas operacji centrum kontroli.
+
+> [!warning]
+>
+> **Ostrzeżenie** : funkcja "Scrubbing Center: tryb stały" została osiągnięta jego koniec życia (EOL) i zostanie definitywnie wyłączony 8 września 2025.
+>
 
 ## Wymagania początkowe
 
@@ -49,7 +50,7 @@ W trakcie ataku, aktywne filtrowanie jest wskazane przez ikonę ostrzegawczą na
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}. Upewnij się, że `Tryb zaawansowany` jest włączony, aby sprawdzić stan infrastruktury anty-DDoS i konfigurację jej komponentów
 
-Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Network **Firewall* i **GAME firewall** charakteryzują się dostępnością i statusami.
+Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Network **Firewall** i **GAME firewall** charakteryzują się dostępnością i statusami.
 
 - Stan **Filtrowanie** może być następujący:
     - **Automatycznie** - Centrum czyszczenia jest w trybie **automatycznym**. Jest to tryb zalecany do użycia. W razie potrzeby przekierowuje ruch w celu głębszej analizy.

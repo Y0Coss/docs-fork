@@ -13,7 +13,7 @@ Quiere dar de baja uno o varios servicios de OVHcloud. Esta guía explica cómo 
 
 ### ¿Qué ocurre cuando se da de baja un servicio de OVHcloud? <a name="consequences"></a>
 
-Al dar de baja un servicio de OVHcloud, este se interrumpirá definitivamente** al finalizar la suscripción actual (pero con una excepción, en el caso **de los [dominios](#domain)). Puede dar de baja el servicio o [cancelar una solicitud de baja](#cancel) hasta 24 horas antes de la fecha de finalización de la suscripción.
+Al dar de baja un servicio de OVHcloud, este se interrumpirá **definitivamente** al finalizar la suscripción actual (pero con una excepción, en el caso **de los [dominios](#domain)). Puede dar de baja el servicio o [cancelar una solicitud de baja](#cancel) hasta 24 horas antes de la fecha de finalización de la suscripción.
 
 Si se trata de un servicio de correo, un servidor o un alojamiento web, todos los datos correspondientes se eliminarán **sin que sea posible recuperarlos**.
 
@@ -35,11 +35,11 @@ Para poder dar de baja el servicio, deberá estar **seguro** de que:
 
 ## Requisitos
 
-- Ser el "contacto administrador" del servicio que deba darse de baja (para más información, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts#definition)
+- Ser el "contacto administrador" del servicio que deba darse de baja (para más información, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts#definition))
 - Tener acceso al [área de cliente de OVHcloud](/links/manager)
 - Tener servicios de OVHcloud activos (no suspendidos por impago)
 
-## En la práctica
+## Procedimiento
 
 El procedimiento de baja es el mismo para la mayoría de los servicios de OVHcloud.
 

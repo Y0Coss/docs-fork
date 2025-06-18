@@ -40,7 +40,7 @@ Se hai già un VPS e vuoi installarlo, puoi reinstallarlo dal tuo [Spazio Client
 
 Per installare il tuo server cPanel, ordina un VPS con la distribuzione cPanel.
 
-![cPanel](images/cpanel_order.png){.thumbnail}
+![cPanel](images/cpanel-order.png){.thumbnail}
 
 Quando il VPS è pronto, ricevi un’email con le credenziali di accesso al server cPanel:
 
