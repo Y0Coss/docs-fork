@@ -1,6 +1,6 @@
 ---
-title: "So erhalten Sie den CO2-Fußabdruck Ihrer OVHcloud Dienste"
-excerpt: "Hier erfahren Sie, wie Sie den monatlichen CO2-Fußabdruck der OVHcloud Dienste mit unserem CO2-Rechner abrufen"
+title: "CO2-Fußabdruck Ihrer OVHcloud Dienste einsehen"
+excerpt: "Erfahren Sie, wie Sie den monatlichen CO2-Fußabdruck der OVHcloud Dienste mit unserem CO2-Rechner abrufen"
 updated: 2025-06-16
 ---
 
@@ -12,7 +12,7 @@ Im Rahmen Ihrer beruflichen Tätigkeit oder aus Interesse an dem Thema müssen S
 
 ## Voraussetzungen
 
-- Sie sind der „Rechnungskontakt“ für die Dienstleistungen, für die Sie den CO2-Fußabdruck erhalten möchten. Weitere Informationen finden Sie in [unserer Anleitung zur Kontaktverwaltung](/pages/account_and_service_management/account_information/managing_contacts).
+- Ihr Kunden-Account ist der "Rechnungskontakt" für die Dienstleistungen, für die Sie den CO2-Fußabdruck erhalten möchten. Weitere Informationen finden Sie in [unserer Anleitung zur Kontaktverwaltung](/pages/account_and_service_management/account_information/managing_contacts).
 
 **Die Berechnung des CO2-Fußabdrucks ist für folgende Dienste verfügbar:**
 
@@ -37,7 +37,7 @@ Dabei sind mehrere Punkte zu beachten:
 | VMware on OVHcloud     | 2023/08/01 |
 | Public Cloud Instanzen | 2025/01/01 |
 
-### Rufen Sie die monatliche Bilanz des Vormonats über das OVHcloud Kundencenter ab
+### Abrufen der monatlichen Bilanz des Vormonats über das OVHcloud Kundencenter
 
 1. Melden Sie sich im [OVHcloud Kundencenter](/links/manager) an.
 1. Gehen Sie auf der angezeigten Seite in der linken Spalte nach unten zu **Nützliche Links**, und klicken Sie dann auf den Tab `Meine CO2-Bilanz`{.action}.
@@ -51,7 +51,7 @@ Wenn Sie den CO2-Fußabdruck für einen Monat vor dem laufenden Monat benötigen
 
 ### Eine monatliche Bilanz vor dem Vormonat über unsere API abrufen
 
-Standardmäßig werden die OVHcloud APIs zur Verfügung gestellt, damit Entwickler oder Integratoren beispielsweise Funktionen, die im OVHcloud Kundencenter vorhanden sind oder nicht, direkt in ihren Anwendungen oder Lösungen kombinieren können.
+Standardmäßig wird die OVHcloud API zur Verfügung gestellt, damit Entwickler oder Integratoren Funktionen, die im OVHcloud Kundencenter vorhanden sind oder darüber hinaus direkt in ihren Anwendungen oder Lösungen kombinieren können.
 
 #### Schritt 1 - Verbindung zur OVHcloud API
 
@@ -65,15 +65,15 @@ Standardmäßig werden die OVHcloud APIs zur Verfügung gestellt, damit Entwickl
 > @api {v1} /me POST /me/carbonCalculator/task
 >
 
-- Auf der rechten Seite wird dann die API mit dem zu vervollständigenden Kasten angezeigt.
+- Auf der rechten Seite wird dann der Aufruf mit den zu vervollständigenden Daten angezeigt.
 - Klicken Sie oben rechts auf `Authenticate`{.action} und dann auf `Login with OVHcloud SSO`{.action}.
 - Das Login-Interface für Ihr [OVHcloud Kundencenter](/links/manager) wird geöffnet.
-- Loggen Sie sich mit Ihrer Kundenkennung ein und klicken Sie auf `Authorize`{.action}, um die OVHcloud APIs mit Ihren Diensten zu verwenden.
-- Sie werden dann automatisch auf die vorherige Seite der API weitergeleitet **POST /me/carbonCalculator/task**.
+- Loggen Sie sich mit Ihrer Kundenkennung ein und klicken Sie auf `Authorize`{.action}, um die OVHcloud API mit Ihren Diensten zu verwenden.
+- Sie werden dann automatisch auf die vorherige Seite der API-Konsole weitergeleitet **POST /me/carbonCalculator/task**.
 
-#### Schritt 2 - Bilanzgenerierung anfordern und die ID der angeforderten Aufgabe abrufen
+#### Schritt 2 - Bilanzgenerierung anfordern und die ID des angeforderten Tasks abrufen
 
-Ersetzen Sie das aktuelle Datum im API-Kasten durch das Datum, an dem Sie die Bilanzberechnung beenden möchten. Bitte beachten Sie das folgende Datumsformat:
+Ersetzen Sie das aktuelle Datum in der Konsole durch das Datum, an dem Sie die Bilanzberechnung beenden möchten. Beachten Sie das folgende Datumsformat:
 
 ```bash
 {
@@ -83,9 +83,9 @@ Ersetzen Sie das aktuelle Datum im API-Kasten durch das Datum, an dem Sie die Bi
 
 ![API](/pages/assets/screens/api/post-me-carboncalculator-task.png){.thumbnail}
 
-Wenn Sie das Datum ausgewählt und richtig eingegeben haben, klicken Sie unten rechts im zuvor ausgefüllten Abschnitt auf die blaue Schaltfläche `EXECUTE`{.action}.
+Wenn Sie das Datum richtig eingegeben haben, klicken Sie unten rechts im zuvor ausgefüllten Abschnitt auf die blaue Schaltfläche `EXECUTE`{.action}.
 
-Wenn alles korrekt ausgeführt wurde, erscheint im Fenster `RESPONSE`{.action} nach unten auf der Seite unter der Schaltfläche `EXECUTE`{.action} eine `taskID`.
+Wenn alles korrekt ausgeführt wurde, erscheint im Fenster `RESPONSE`{.action} unten auf der Seite unter der Schaltfläche `EXECUTE`{.action} eine `taskID`.
 
 ![API](/pages/assets/screens/api/post-me-carboncalculator-task-response.png){.thumbnail}
 
@@ -97,13 +97,13 @@ Wenn Ihre OVHcloud Kundenkennung beispielsweise `aa00000-ovh` lautet und das zuv
 }
 ```
 
-Kopieren Sie nur den Wert von Ihrer Seite, der dem Wert unseres Beispiels `aa00000-ovh_202501` entspricht (ohne die beiden (`"`) an den Enden zu kopieren).
+Kopieren Sie nur den Wert der dem Wert unseres Beispiels `aa00000-ovh_202501` entspricht (ohne die beiden (`"`) an den Enden zu kopieren).
 
 #### Schritt 3 - Datei mit der Kohlenstoffbilanz Ihrer Dienstleistungen im PDF Format abrufen
 
 Dank des zuvor abgerufenen Wertes der `taskID` können Sie die CO2-Bilanz Ihrer Dienstleistungen im PDF-Format einsehen.
 
-Bleiben Sie auf unserer Website [OVHcloud API](/links/api) und führen Sie folgende Aktionen aus:
+In unserer API-Konsole [OVHcloud API](/links/api) führen Sie folgende Aktionen aus:
 
 - Gehen Sie auf der linken Seite auf das Formular rechts neben dem Formular `v1`{.action} und wählen Sie/geben Sie die Option `/me`{.action} ein.
 - Suchen Sie in der unten angezeigten Liste der API-Aufrufe nach dem folgenden API-Aufruf, und klicken Sie auf diesen: **GET /me/carbonCalculator/task/{taskID}**. Sie können auch direkt auf den unten stehenden API-Aufruf klicken, um darauf zuzugreifen:
@@ -135,23 +135,23 @@ Das folgende Ergebnis wird im Fenster `RESPONSE`{.action} angezeigt, wenn Sie na
 }
 ```
 
-Kopieren Sie in diesem Ergebnis die gesamte URL als „HTTPS“ (**ohne Anführungszeichen**) rechts neben dem Vermerk `"link":` und fügen Sie sie in die Suchleiste Ihres Internetbrowsers ein, um das Herunterladen der CO2-Bilanz im PDF-Format zu starten.
+Kopieren Sie in diesem Ergebnis die gesamte URL inklusive HTTPS rechts neben dem Vermerk `"link":` und fügen Sie sie in die Suchleiste Ihres Browsers ein, um das Herunterladen der CO2-Bilanz im PDF-Format zu starten.
 
-Die Datei wird in Ihrem Webbrowser automatisch heruntergeladen und angezeigt.
+Die Datei wird in Ihrem Browser automatisch heruntergeladen und ggf. angezeigt.
 
 > [!primary]
 >
-> Je nach Konfiguration Ihres Browsers kann es vorkommen, dass der Download und die Anzeige der Datei blockiert werden. Ist das der Fall, überprüfen Sie die Konfiguration Ihres Browsers und laden Sie die Seite neu.
+> Je nach Konfiguration Ihres Browsers kann es sein, dass der Download oder die Anzeige der Datei blockiert werden. Ist das der Fall, überprüfen Sie die Konfiguration Ihres Browsers und laden Sie die Seite neu.
 
-Nach dem Öffnen der Datei enthält sie u. a. folgende Elemente:
+Nach dem Öffnen der Datei enthält sie u.a. folgende Elemente:
 
-- Eine Tabelle mit einer Übersicht über die C02-Emissionen nach Kategorien für den beantragten Monat.
-- Eine Übersicht über die C02-Emissionen nach Kategorien vom Beginn des Kalenderjahres bis zum beantragten Monat.
-- Eine Tabelle, in der die Werte nach der Art des abonnierten Produkts aufgeführt sind.
-- Eine Grafik mit den C02-Emissionen nach Kategorie.
+- Eine Tabelle mit einer Übersicht über die C02-Emissionen nach Kategorien für den beantragten Monat
+- Eine Übersicht über die C02-Emissionen nach Kategorien vom Beginn des Kalenderjahres bis zum beantragten Monat
+- Eine Tabelle, in der die Werte nach der Art des abonnierten Produkts aufgeführt sind
+- Eine Grafik mit den C02-Emissionen nach Kategorie
 
 > [!warning]
-> Der generierte Link ist nur 24 Stunden gültig. Achten Sie also darauf, die CO2-Bilanz von Ihrem Browser herunterzuladen, nachdem der Link geöffnet wurde.
+> Der generierte Link ist nur 24 Stunden gültig. Achten Sie also darauf, die CO2-Bilanz mit Ihrem Browser herunterzuladen, nachdem der Link geöffnet wurde.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
