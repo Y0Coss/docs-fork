@@ -1,7 +1,7 @@
 ---
 title: "Adicionar um registo DNS do tipo TXT para um domínio"
 excerpt: "Saiba como adicionar um registo DNS do tipo TXT numa zona DNS gerida na OVHcloud para o seu domínio"
-updated: 2025-06-17
+updated: 2025-06-18
 ---
 
 <style>
@@ -27,7 +27,7 @@ Para isso, terá de criar um registo DNS de tipo TXT na zona DNS ativa do seu do
 
 > [!primary]
 >
-> Para alterar ou eliminar um registo DNS do tipo TXT de uma zona DNS da OVHcloud, siga [este manual](/pages/web_cloud/domains/dns_zone_edit).
+> Para alterar ou eliminar um registo DNS do tipo TXT de uma zona DNS da OVHcloud, siga o nosso guia «[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)».
 
 ## Requisitos
 
@@ -53,9 +53,9 @@ Para isso, terá de criar um registo DNS de tipo TXT na zona DNS ativa do seu do
 
 Consulte os nossos guias detalhados:
 
-- [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+- [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
 
@@ -71,18 +71,18 @@ Consulte os nossos guias detalhados:
 
 Consulte os nossos guias detalhados:
 
-- [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Como criar um subdomínio?](/pages/web_cloud/domains/domain_create_subdomains).
-- [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+- [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Como criar um subdomínio?](/pages/web_cloud/domains/domain_create_subdomains)
+- [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
 
 ## Quer saber mais?
 
-[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
+[Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records).
+[Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
  
 Para serviços especializados (SEO, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
  

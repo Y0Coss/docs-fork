@@ -1,7 +1,7 @@
 ---
 title: "Añadir un registro DNS de tipo TXT a un dominio"
 excerpt: "Descubra cómo añadir un registro DNS de tipo TXT a una zona DNS gestionada en OVHcloud para un dominio"
-updated: 2025-05-15
+updated: 2025-06-18
 ---
 
 <style>
@@ -27,7 +27,7 @@ Para ello, deberá crear un registro DNS de tipo TXT en la zona DNS activa del d
 
 > [!primary]
 >
-> Para modificar o eliminar un registro DNS de tipo TXT de una zona DNS de OVHcloud, siga [esta guía](/pages/web_cloud/domains/dns_zone_edit).
+> Para modificar o eliminar un registro DNS de tipo TXT de una zona DNS de OVHcloud, siga nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ## Requisitos
 
@@ -46,16 +46,16 @@ Para ello, deberá crear un registro DNS de tipo TXT en la zona DNS activa del d
 1. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 2. En la nueva página, haga clic en el botón `Añadir un registro`{.action}.
 3. En la ventana que se abre, seleccione el registro extendido de tipo `TXT`{.action}.
-4. Introduzca la cadena TXT que quiera añadir en el campo `Valor *` (por ejemplo, `AbCdE-Value-of-TXT-fGhIjK`) y haga clic en `Siguiente`{.action}.
+4. Introduzca la cadena TXT que quiera añadir en el campo `Valor *` (por ejemplo: `AbCdE-Value-of-TXT-fGhIjK`) y haga clic en `Siguiente`{.action}.
 5. Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
 
 /// details | Haga clic aquí para obtener más información.
 
 Consulte nuestras guías detalladas:
 
-- [Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+- [Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
 
@@ -64,25 +64,25 @@ Consulte nuestras guías detalladas:
 1. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 2. En la nueva página, haga clic en el botón `Añadir un registro`{.action}.
 3. En la ventana que se abre, seleccione el registro extendido de tipo `TXT`{.action}.
-4. Introduzca a continuación en el campo `Subdominio` el subdominio correspondiente (por ejemplo, `www` para el subdominio `www.domain.tld`), y en el campo `Valor *`, la cadena TXT que quiera añadir (por ejemplo, `AbCdE-Value-of-TXT-fGhIjK`). Haga clic en `Siguiente`{.action}.
+4. Introduzca a continuación en el campo `Subdominio` el subdominio correspondiente (por ejemplo: `www` para el subdominio `www.domain.tld`), y en el campo `Valor *`, la cadena TXT que quiera añadir (por ejemplo: `AbCdE-Value-of-TXT-fGhIjK`). Haga clic en `Siguiente`{.action}.
 5. Revise el resumen y haga clic en `Aceptar`{.action}. Espere hasta **24** horas para que la propagación de la adición en la red DNS sea plenamente efectiva.
 
 /// details | Haga clic aquí para obtener más información.
 
 Consulte nuestras guías detalladas:
 
-- [Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records).
-- [¿Cómo crear un subdominio?](/pages/web_cloud/domains/domain_create_subdomains).
-- [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+- [Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
+- [¿Cómo crear un subdominio?](/pages/web_cloud/domains/domain_create_subdomains)
+- [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
 
 ## Más información
 
-[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
+[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records).
+[Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  

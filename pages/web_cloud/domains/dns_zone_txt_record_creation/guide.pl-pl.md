@@ -1,7 +1,7 @@
 ---
 title: "Dodaj rekord DNS typu TXT dla domeny"
 excerpt: "Dowiedz się, jak dodać rekord DNS typu TXT w strefie DNS zarządzanej przez OVHcloud w przypadku Twojej domeny"
-updated: 2025-06-17
+updated: 2025-06-18
 ---
 
 <style>
@@ -27,7 +27,7 @@ W tym celu utwórz rekord DNS typu TXT w aktywnej strefie DNS Twojej domeny.
 
 > [!primary]
 >
-> Aby zmodyfikować lub usunąć rekord DNS typu TXT ze strefy DNS OVHcloud, skorzystaj z [tego przewodnika](/pages/web_cloud/domains/dns_zone_edit).
+> Aby zmodyfikować lub usunąć rekord DNS typu TXT strefy DNS OVHcloud, zapoznaj się z naszym przewodnikiem "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
 
 ## Wymagania początkowe
 
@@ -53,9 +53,9 @@ W tym celu utwórz rekord DNS typu TXT w aktywnej strefie DNS Twojej domeny.
 
 Zapoznaj się ze szczegółowymi przewodnikami:
 
-- [Informacje o strefach DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
+- [Informacje o strefach DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
 
@@ -71,18 +71,18 @@ Zapoznaj się ze szczegółowymi przewodnikami:
 
 Zapoznaj się ze szczegółowymi przewodnikami:
 
-- [Informacje o strefach DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Jak utworzyć subdomenę?](/pages/web_cloud/domains/domain_create_subdomains).
-- [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
+- [Informacje o strefach DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Jak utworzyć subdomenę?](/pages/web_cloud/domains/domain_create_subdomains)
+- [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
 
 ## Sprawdź również
 
-[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information).
+[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records).
+[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  

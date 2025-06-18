@@ -1,7 +1,7 @@
 ---
 title: "Aggiungere un record DNS di tipo TXT per un dominio"
 excerpt: "Scopri come aggiungere un record DNS di tipo TXT a una zona DNS gestita in OVHcloud per il tuo dominio"
-updated: 2025-06-17
+updated: 2025-06-18
 ---
 
 <style>
@@ -27,7 +27,7 @@ Per effettuare questa operazione è necessario creare un record DNS di tipo TXT 
 
 > [!primary]
 >
-> Per modificare o eliminare un record DNS di tipo TXT da una zona DNS di OVHcloud, segui [questa guida](/pages/web_cloud/domains/dns_zone_edit).
+> Per modificare o eliminare un record DNS di tipo TXT da una zona DNS di OVHcloud, segui la nostra guida "[Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ## Prerequisiti
 
@@ -39,7 +39,7 @@ Per effettuare questa operazione è necessario creare un record DNS di tipo TXT 
 
 > [!warning]
 >
-> L'aggiunta, la modifica o la cancellazione di record DNS in una zona DNS attiva è un'operazione delicata. In caso di dubbi, contatta un [provider specializzato](/links/partner).
+> L'aggiunta, la modifica o la cancellazione di record DNS in una zona DNS attiva è un'operazione delicata. In caso di dubbi, contatta un [fornitore specializzato](/links/partner).
 
 ### Aggiungere un record DNS di tipo TXT per un dominio
 
@@ -53,9 +53,9 @@ Per effettuare questa operazione è necessario creare un record DNS di tipo TXT 
 
 Consulta le nostre guide dettagliate:
 
-- [Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+- [Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
 
@@ -71,18 +71,18 @@ Consulta le nostre guide dettagliate:
 
 Consulta le nostre guide dettagliate:
 
-- [Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Come creare un sottodominio?](/pages/web_cloud/domains/domain_create_subdomains).
-- [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+- [Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Come creare un sottodominio?](/pages/web_cloud/domains/domain_create_subdomains)
+- [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 ///
 
 ## Per saperne di più
 
-[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
+[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records).
+[Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
  
 Per prestazioni specializzate (SEO, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
  
