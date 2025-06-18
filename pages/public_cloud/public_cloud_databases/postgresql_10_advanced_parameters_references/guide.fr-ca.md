@@ -33,9 +33,9 @@ This guide lists all the supported advanced parameters that allow you to configu
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account   
-- A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)   
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) or to the [OVHcloud API](https://api.ovh.com/console/)   
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
+- A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement).
+- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api).
 
 ## Instructions
 
@@ -54,21 +54,21 @@ Please refer to this [guide](/pages/public_cloud/public_cloud_databases/database
 
 ### Advanced parameters for PostgreSQL
 
-Below you can find a summary of every configuration option available for PostgreSQL service:
+Below you can find a summary of every configuration option available for a PostgreSQL service:
 
 #### General parameters
 
 | Parameters |
 |------------|
 |**pg.autovacuum_analyze_scale_factor** `double`<br>min: `0` max: `1`<br>Specifies a fraction of the table size to add to autovacuum_analyze_threshold when deciding whether to trigger an ANALYZE (e.g. `0.2` for 20% of the table size). The default is `0.2`.<br>|
-|**pg.autovacuum_analyze_threshold** `long`<br>min: `0` max: `2147483647`<br>Specifies the minimum number of inserted, updated or deleted tuples needed to trigger an ANALYZE in any one table. The default is `50`.<br>|
+|**pg.autovacuum_analyze_threshold** `long`<br>min: `0` max: `2147483647`<br>Specifies the minimum number of inserted, updated or deleted tuples needed to trigger an ANALYZE in any table. The default is `50`.<br>|
 |**pg.autovacuum_freeze_max_age** `long`<br>min: `200000000` max: `1500000000`<br>Specifies the maximum age (in transactions) that a table's pg_class.relfrozenxid field can attain before a VACUUM operation is forced to prevent transaction ID wraparound within the table. The system launches autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled. Changing this parameter causes a service restart.<br>|
-|**pg.autovacuum_max_workers** `long`<br>min: `1` max: `20`<br>Specifies the maximum number of autovacuum processes (other than the autovacuum launcher) that may be running at any one time. The default is `3`. Changing this parameter causes a service restart.<br>|
+|**pg.autovacuum_max_workers** `long`<br>min: `1` max: `20`<br>Specifies the maximum number of autovacuum processes (other than the autovacuum launcher) that may be running at any time. The default is `3`. Changing this parameter causes a service restart.<br>|
 |**pg.autovacuum_naptime** `long`<br>min: `1` max: `86400`<br>Specifies the minimum delay between autovacuum runs on any given database. The delay is measured in seconds. The default is `60`.<br>|
 |**pg.autovacuum_vacuum_cost_delay** `long`<br>min: `-1` max: `100`<br>Specifies the cost delay value that will be used in automatic VACUUM operations. If `-1` is specified, the regular vacuum_cost_delay value will be used. The default is `2` (upstream default).<br>|
 |**pg.autovacuum_vacuum_cost_limit** `long`<br>min: `-1` max: `10000`<br>Specifies the cost limit value that will be used in automatic VACUUM operations. If `-1` is specified, the regular vacuum_cost_limit value will be used. The default is `-1` (upstream default).<br>|
 |**pg.autovacuum_vacuum_scale_factor** `double`<br>min: `0` max: `1`<br>Specifies a fraction of the table size to add to autovacuum_vacuum_threshold when deciding whether to trigger a VACUUM (e.g. `0.2` for 20% of the table size). The default is `0.2`.<br>|
-|**pg.autovacuum_vacuum_threshold** `long`<br>min: `0` max: `2147483647`<br>Specifies the minimum number of updated or deleted tuples needed to trigger a VACUUM in any one table. The default is `50`.<br>|
+|**pg.autovacuum_vacuum_threshold** `long`<br>min: `0` max: `2147483647`<br>Specifies the minimum number of updated or deleted tuples needed to trigger a VACUUM in any table. The default is `50`.<br>|
 |**pg.bgwriter_delay** `long`<br>min: `10` max: `10000`<br>Specifies the delay between activity rounds for the background writer in milliseconds. The default is `200`.<br>|
 |**pg.bgwriter_flush_after** `long`<br>min: `0` max: `2048`<br>Whenever more than bgwriter_flush_after bytes have been written by the background writer, attempt to force the OS to issue these writes to the underlying storage. Specified in kilobytes. Setting of 0 disables forced writeback. The default is `512`.<br>|
 |**pg.bgwriter_lru_maxpages** `long`<br>min: `0` max: `1073741823`<br>In each round, no more than this many buffers will be written by the background writer. Setting this to zero disables background writing. The default is `100`.<br>|
@@ -128,6 +128,6 @@ Below you can find a summary of every configuration option available for Postgre
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
