@@ -73,7 +73,7 @@ Następnie wymagane jest potwierdzenie. Firewall zostanie utworzony i będziesz 
 Na tej stronie można wybrać opcję **Aktywuj** lub **Wyłącz** zaporę za pomocą przycisku switch.
 Można to również zrobić w inny sposób wyjaśniony poniżej.
 
-Dla każdego adresu IP można skonfigurować do **20 reguł **.
+Dla każdego adresu IP można skonfigurować do **20 reguł**.
 
 > [!warning]
 >
