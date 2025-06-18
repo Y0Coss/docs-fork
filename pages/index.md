@@ -1268,6 +1268,7 @@
                 + [Adding a DKIM record to the configuration of your domain name](web_cloud/domains/dns_zone_dkim)
                 + [Adding a DMARC record to the configuration of your domain name](web_cloud/domains/dns_zone_dmarc)
             + [DNS options](web-cloud-domains-dns-dns-options)
+                + [How to enable Anycast DNS for your domain name](web_cloud/domains/dns_anycast_enable)
                 + [Customising the DNS servers for an OVHcloud domain name](web_cloud/domains/glue_registry)
                 + [Configuring a dynamic DNS for a domain name](web_cloud/domains/dns_dynhost)
                 + [Securing your domain name with DNSSEC](web_cloud/domains/dns_dnssec)
