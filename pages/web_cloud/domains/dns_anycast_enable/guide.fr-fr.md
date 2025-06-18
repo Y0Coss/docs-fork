@@ -13,7 +13,7 @@ OVHcloud vous propose l'option [DNS Anycast](/links/web/domains-options-anycast)
 
 ## Prérequis
 
-- Disposer d’un nom de domaine.
+- Disposer d’un [nom de domaine](/links/web/domains).
 - Le nom de domaine concerné doit posséder une extension compatible avec l'option DNS Anycast.
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 

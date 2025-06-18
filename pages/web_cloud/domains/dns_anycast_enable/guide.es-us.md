@@ -6,14 +6,14 @@ updated: 2025-06-18
 
 ## Objetivo
 
-¿Necesita que sus servicios (por ejemplo, su sitio web) estén accesibles en tiempo récord en todo el mundo? ¿Quiere que optimice la resolución DNS de su dominio?
+¿Necesita que sus servicios (por ejemplo: su sitio web) estén accesibles en tiempo récord en todo el mundo? ¿Quiere que optimice la resolución DNS de su dominio?
 OVHcloud le ofrece la opción [DNS Anycast](/links/web/domains-options-anycast).
 
 **Descubra cómo acelerar el acceso a sus servicios web gracias a la velocidad de resolución DNS que ofrece la opción DNS Anycast de su dominio.**
 
 ## Requisitos
 
-- Tener un dominio.
+- Tener un [dominio](/links/web/domains).
 - El dominio debe tener una extensión compatible con la opción DNS Anycast.
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 

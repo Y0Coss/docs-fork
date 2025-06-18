@@ -6,14 +6,14 @@ updated: 2025-06-18
 
 ## Wprowadzenie
 
-Chcesz, aby Twoje usługi (na przykład Twoja strona WWW) były dostępne w rekordowym czasie na całym świecie? Czy chcesz, aby konfiguracja DNS Twojej domeny była zoptymalizowana?
+Chcesz, aby Twoje usługi (na przykład: Twoja strona WWW) były dostępne w rekordowym czasie na całym świecie? Czy chcesz, aby konfiguracja DNS Twojej domeny była zoptymalizowana?
 OVHcloud oferuje opcję [DNS Anycast](/links/web/domains-options-anycast).
 
 **Dowiedz się, jak przyspieszyć dostęp do usług WWW dzięki szybkości rozpoznawania DNS oferowanej przez opcję DNS Anycast dla Twojej domeny.**
 
 ## Wymagania początkowe
 
-- Zarejestrowana domena.
+- Zarejestrowana [domena](/links/web/domains).
 - Wybrana domena musi posiadać rozszerzenie kompatybilne z opcją DNS Anycast.
 - Dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 

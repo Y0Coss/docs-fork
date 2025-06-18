@@ -13,13 +13,13 @@ A OVHcloud oferece-lhe a opção [DNS Anycast](/links/web/domains-options-anycas
 
 ## Requisitos
 
-- Dispor de um nome de domínio.
+- Dispor de um [nome de domínio](/links/web/domains).
 - O domínio afetado deve dispor de uma extensão compatível com a opção DNS Anycast.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
 
 ## Instruções
 
-Clique nas guias abaixo para exibir sucessivamente cada um dos **3** etapas.
+Clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
 
 > [!tabs]
 > **Etapa 1**

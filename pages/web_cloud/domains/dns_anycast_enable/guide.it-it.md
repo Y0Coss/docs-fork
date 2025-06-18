@@ -6,15 +6,15 @@ updated: 2025-06-18
 
 ## Obiettivo
 
-Vuoi che i tuoi servizi (ad esempio il tuo sito Web) siano accessibili in tempi record in tutto il mondo? Vuoi che la risoluzione DNS del tuo dominio sia ottimizzata?
+Vuoi che i tuoi servizi (ad esempio: il tuo sito Web) siano accessibili in tempi record in tutto il mondo? Vuoi che la risoluzione DNS del tuo dominio sia ottimizzata?
 OVHcloud propone l'opzione [DNS Anycast](/links/web/domains-options-anycast).
 
 **Questa guida ti mostra come accelerare l'accesso ai servizi Web grazie alla velocità di risoluzione DNS dell’opzione DNS Anycast del tuo dominio.**
 
 ## Prerequisiti
 
-- Disporre di un dominio.
-- l’estensione del dominio deve essere compatibile con l'opzione DNS Anycast.
+- Disporre di un [dominio](/links/web/domains).
+- L’estensione del dominio deve essere compatibile con l'opzione DNS Anycast.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 
 ## Procedura
@@ -48,7 +48,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >>
 > **Passaggio 5**
 >>
->> Visualizzi una nuova pagina:
+>> Si apre una nuova pagina:
 >>
 >> - Scegli la durata proposta nella sezione `1` e clicca su `Continua`{.action}.
 >> - Seleziona il metodo di pagamento e clicca su `Paga`{.action} per proseguire con l’attivazione dei DNS Anycast.
