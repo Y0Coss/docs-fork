@@ -12,7 +12,7 @@ updated: 2025-06-17
 
 A **Notebook** is a document that integrates code, rich text elements, and multimedia, making it a convenient tool for quantum analysis and visualization.
 
-**OVHcloud Quantum emulator** is our managed solution for Jupyter and VSCode Notebooks. You can easily launch Notebooks with the required CPU and GPU resources while enjoying benefits like pre-installed dependencies and Quantum frameworks, secure user access, and simplified data management.
+**OVHcloud Quantum emulators** is our managed solution for Jupyter and VSCode Notebooks. You can easily launch Notebooks with the required CPU and GPU resources while enjoying benefits like pre-installed dependencies and Quantum frameworks, secure user access, and simplified data management.
 
 ## Objective
 
@@ -211,7 +211,7 @@ To create a Quantum Notebook, follow these steps:
 
 ### Accessing your Quantum Notebook
 
-Once your Quantum Notebook is created and running, you can access it using the `JupyterLab` link in the Quantum Emulator board or through the `ovhai` CLI, Quantum API, or Python SDK.
+Once your Quantum Notebook is created and running, you can access it using the `JupyterLab` link in the Quantum Emulators board or through the `ovhai` CLI, Quantum API, or Python SDK.
 
 > [!tabs]
 > **Using the Control Panel (UI)**
