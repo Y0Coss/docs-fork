@@ -1,30 +1,30 @@
 ---
-title: 'DNS Anycast für Ihren Domainnamen aktivieren'
+title: "DNS Anycast für Ihren Domainnamen aktivieren"
 excerpt: "Erfahren Sie, wie Sie mit der DNS Anycast Option Ihrer Domain den Zugriff auf Ihre Webdienste beschleunigen können"
 updated: 2025-06-17
 ---
 
 ## Ziel
 
-Sie möchten, dass Ihre Dienstleistungen (z.B. Ihre Website) weltweit in Rekordzeit verfügbar sind? Sie möchten die DNS-Auflösung Ihrer Domain optimieren?
+Sie möchten, dass Ihre Dienstleistungen (z.B. Ihre Website) weltweit in Rekordzeit verfügbar sind? Sie möchten die DNS-Auflösung Ihrer Domain optimieren?  
 OVHcloud bietet Ihnen die Option [DNS Anycast](/links/web/domains-options-anycast).
 
 **Diese Anleitung erklärt, wie Sie mit der DNS Anycast Option Ihrer Domain den Zugriff auf Ihre Webdienste beschleunigen können.**
 
 ## Voraussetzungen
 
-- Sie besitzen eine Domain.
-- Die betreffende Domain muss eine mit der DNS Anycast Option kompatible Endung haben.
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+- Sie verfügen über einen [Domainnamen](/links/web/domains).
+- Der Domainname hat eine mit der DNS Anycast Option kompatible Endung.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action}.
 
 ## In der praktischen Anwendung
 
-licken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
+Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
