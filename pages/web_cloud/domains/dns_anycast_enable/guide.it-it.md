@@ -1,7 +1,7 @@
 ---
 title: 'Attivare i DNS Anycast per il tuo dominio'
 excerpt: "Questa guida ti mostra accelerare l'accesso ai tuoi servizi Web grazie alla velocità di risoluzione DNS offerta dall'opzione DNS Anycast del tuo dominio"
-updated: 2025-06-17
+updated: 2025-06-18
 ---
 
 ## Obiettivo

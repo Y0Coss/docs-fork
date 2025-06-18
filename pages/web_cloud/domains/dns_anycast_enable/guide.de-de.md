@@ -1,7 +1,7 @@
 ---
 title: "DNS Anycast für Ihren Domainnamen aktivieren"
 excerpt: "Erfahren Sie, wie Sie mit der DNS Anycast Option Ihrer Domain den Zugriff auf Ihre Webdienste beschleunigen können"
-updated: 2025-06-17
+updated: 2025-06-18
 ---
 
 ## Ziel

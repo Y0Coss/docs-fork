@@ -1,7 +1,7 @@
 ---
 title: 'Włączenie DNS Anycast dla Twojej domeny'
 excerpt: "Dowiedz się, jak przyspieszyć dostęp do usług WWW dzięki prędkości odczytu DNS oferowanej przez opcję DNS Anycast dla Twojej domeny"
-updated: 2025-06-17
+updated: 2025-06-18
 ---
 
 ## Wprowadzenie

@@ -1,7 +1,7 @@
 ---
 title: "How to enable Anycast DNS for your domain name"
 excerpt: "Find out how to speed up access to your web services with the DNS resolution speed offered by your domain name’s Anycast DNS option"
-updated: 2025-06-17
+updated: 2025-06-18
 ---
 
 ## Objective
