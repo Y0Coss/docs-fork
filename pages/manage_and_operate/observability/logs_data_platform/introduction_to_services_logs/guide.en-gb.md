@@ -1,7 +1,7 @@
 ---
 title: Introduction to OVHcloud Service Logs with Logs Data Platform
 excerpt: Discover how to retrieve your OVHcloud managed products logs in Logs Data Platform
-updated: 2025-06-04
+updated: 2025-06-18
 ---
 
 ## Objective
@@ -53,7 +53,7 @@ Our ambition is to make all OVHcloud products compatible with OVHcloud Service L
 | Security & Identity - OVHcloud Account - Activity | API only | Beta | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding) |
 | Security & Identity - OVHcloud Account - Audit | API only | Beta | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding) |
 | Security & Identity - OVHcloud Account - IAM | OVHcloud Control Panel & API | Beta | [Generating OVHcloud account logs with Logs Data Platform](/pages/manage_and_operate/iam/iam-logs-forwarding) |
-| Security & Identity - Key Management Service | OVHcloud Control Panel & API | Beta | - |
+| Security & Identity - Key Management Service | OVHcloud Control Panel & API | Beta | [Pushing logs from OVHcloud KMS to Logs Data Platform](manage_and_operate/kms/kms-troubleshooting) |
 | Public Cloud - Managed Kubernetes Service | OVHcloud Control Panel & API | Beta | [Managed Kubernetes Service Audit Logs Forwarding](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform) |
 | Public Cloud - Load Balancer | OVHcloud Control Panel & API | Beta | [Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](/pages/public_cloud/public_cloud_network_services/technical-resources-05-lb_logs_2_customers) |
 | Public Cloud - Managed Databases | OVHcloud Control Panel & API | Beta | [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) |
