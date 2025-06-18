@@ -1,17 +1,17 @@
 ---
-title: 'Enable Anycast DNS for your domain name'
+title: "How to enable Anycast DNS for your domain name"
 excerpt: "Find out how to speed up access to your web services with the DNS resolution speed offered by your domain name’s Anycast DNS option"
 updated: 2025-06-17
 ---
 
 ## Objective
 
-Do you need your services (e.g. your website) to be accessible in record time across the globe? Do you want your domain name’s DNS resolution to be optimized?
-OVHcloud offers the [Anycast DNS](/links/web/domains-options-anycast) option .
+Do you need your services (e.g. your website) to be accessible in record time across the globe? Do you want your domain name’s DNS resolution to be optimized?  
+OVHcloud offers the [Anycast DNS](/links/web/domains-options-anycast) option.
 
 **Find out how to speed up access to your web services with the DNS resolution speed offered by your domain name’s Anycast DNS option.**
 
-# Requirements
+## Requirements
 
 - A domain name with an extension compatible with the Anycast DNS option.
 - Access to your [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section.
@@ -54,7 +54,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> ![Order Anycast DNS step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/order-anycast-dns-step-2.png){.thumbnail}
 >>
->> In the message that then appears in green, click the `Purchase order`{.action} button to be redirected to the purchase order for enabling the Anycast DNS option.
+>> In the message that appears in green, click the `Purchase order`{.action} button to be redirected to the purchase order for enabling the Anycast DNS option.
 >>
 >> Once you have placed an order, continue to validate it using a payment method to complete the processing of the order.
 
