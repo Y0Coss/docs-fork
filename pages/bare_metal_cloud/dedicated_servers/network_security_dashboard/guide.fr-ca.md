@@ -54,7 +54,7 @@ Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scr
 
 - L'état **Mitigation** peut être :
     - **Automatique** - Le centre de nettoyage est en mode **automatique**. Il s'agit du mode recommandé, car il redirige le trafic pour une analyse plus approfondie lorsque cela est nécessaire.
-    - **Permanent**** - Le centre de nettoyage est **activé en permanence**. Il est déconseillé de l'activer de manière permanente, sauf en cas de gigue (*jitter*) de latence due à un réacheminement du trafic en va-et-vient.
+    - **Permanent** - Le centre de nettoyage est **activé en permanence**. Il est déconseillé de l'activer de manière permanente, sauf en cas de gigue (*jitter*) de latence due à un réacheminement du trafic en va-et-vient.
     - **Forcé** - Ceci indique que le centre de nettoyage est **en train d'effectuer une action**.
 
 - La colonne **Firewall** indique l'état du Edge Firewall Network qui peut être :
