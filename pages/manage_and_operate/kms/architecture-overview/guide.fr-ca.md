@@ -57,11 +57,26 @@ Toutes les données des clients sont toujours stockées chiffrées dans les base
 L'emplacement de la sauvegarde dépend de l'emplacement du KMS OVHcloud.
 
 - **EU_WEST_RBX**
-    - KMS Backup Region 1 : EU_WEST_SBG
-    - KMS Backup Region 2 : EU_WEST_GRA
+  - KMS Backup Region 1 : EU_WEST_SBG
+  - KMS Backup Region 2 : EU_WEST_GRA
 - **EU_WEST_SBG**
-    - KMS Backup Region 1 : EU_WEST_RBX
-    - KMS Backup Region 2 : EU_WEST_GRA
+  - KMS Backup Region 1 : EU_WEST_RBX
+  - KMS Backup Region 2 : EU_WEST_GRA
+- **EU_WEST_PAR**
+  - KMS Backup Region 1 : EU_WEST_GRA
+  - KMS Backup Region 2 : EU_WEST_SBG
+- **CA_EAST_BHS**
+  - KMS Backup Region 1 : CA_EAST_BHS
+  - KMS Backup Region 2 : CA_EAST_TOR
+- **CA_EAST_TOR**
+  - KMS Backup Region 1 : CA_EAST_BHS
+  - KMS Backup Region 2 : CA_EAST_TOR
+- **AP_SOUTHEAST_SGP**
+  - KMS Backup Region 1 : AP_SOUTHEAST_SGP
+  - KMS Backup Region 2 : AP_SOUTHEAST_SYD
+- **AP_SOUTHEAST_SYD**
+  - KMS Backup Region 1 : AP_SOUTHEAST_SGP
+  - KMS Backup Region 2 : AP_SOUTHEAST_SYD
 
 ### Scenarios d'incidents
 
