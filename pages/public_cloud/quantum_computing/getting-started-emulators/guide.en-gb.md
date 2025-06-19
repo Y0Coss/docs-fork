@@ -12,7 +12,7 @@ updated: 2025-06-17
 
 A **Notebook** is a document that integrates code, rich text elements, and multimedia, making it a convenient tool for quantum analysis and visualization.
 
-**OVHcloud Quantum emulators** is our managed solution for Jupyter and VSCode Notebooks. You can easily launch Notebooks with the required CPU and GPU resources while enjoying benefits like pre-installed dependencies and Quantum frameworks, secure user access, and simplified data management.
+**OVHcloud Quantum Emulators** is our managed solution for Jupyter and VSCode Notebooks. You can easily launch Notebooks with the required CPU and GPU resources while enjoying benefits like pre-installed dependencies and Quantum frameworks, secure user access, and simplified data management.
 
 ## Objective
 
