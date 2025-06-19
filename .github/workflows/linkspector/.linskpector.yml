@@ -1,0 +1,34 @@
+files:
+  - README.md
+  - file2.md
+  - file3.md
+dirs:
+  - ./
+  - folder2
+excludedFiles:
+  - ./check.md
+  - excluded-file2.md
+excludedDirs:
+  - ./lib
+  - excluded-folder2
+baseUrl: https://example.com
+ignorePatterns:
+  - pattern: '^https://example.com/skip/.*$'
+  - pattern: "^(ftp)://[^\\s/$?#]*\\.[^\\s]*$"
+replacementPatterns:
+  - pattern: "(https?://example.com)/(\\w+)/(\\d+)"
+    replacement: '$1/id/$3'
+  - pattern: "\\[([^\\]]+)\\]\\((https?://example.com)/file\\)"
+    replacement: '<a href="$2/file">$1</a>'
+httpHeaders:
+  - url:
+      - https://example1.com
+    headers:
+      Authorization: Basic Zm9vOmJhcg==
+      Foo: Bar
+aliveStatusCodes:
+  - 200
+  - 201
+  - 204
+useGitIgnore: true
+followRedirects: false # Example of including it in a full config
