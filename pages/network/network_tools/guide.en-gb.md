@@ -1,7 +1,7 @@
 ---
 title: Using Networking Tools Available to OVHcloud Customers 
 excerpt: Find out how to use the networking tools available to OVHcloud customers
-updated: 2025-xx-xx
+updated: 2025-06-20
 ---
 
 ## Objective
@@ -20,10 +20,10 @@ OVHcloud provides several tools to customers and prospective customers to test a
 
 [Looking Glass](https://lg.ovh.net/) is a tool that enables you to run a traceroute or see the routing table to any IP as if you were using a machine in an OVHcloud data center. This tool is perfect if you are a prospective OVHcloud customer or considering expanding your presence to other data centers. It will ensure the networking is sufficient for your needs. The UI is very straightforward.
 
-1\. Instructions for the different commands you can run.
-2\. Select the data center in which you wish to run the test.
-3\. Select the command you wish to run and the IP/URL to which you want the route.
-4\. Recent history of your requests to allow you to run them again quickly.
+1. Instructions for the different commands you can run.
+2. Select the data center in which you wish to run the test.
+3. Select the command you wish to run and the IP/URL to which you want the route.
+4. Recent history of your requests to allow you to run them again quickly.
 
 
 ![looking glass](images/networktools1.png){.thumbnail}
@@ -50,12 +50,12 @@ Smokeping Probe servers are installed in each OVH data center to collect logs.
 
 Once you have accessed the Smokeping tool, you will see a top navigation menu (where a data center can be selected) and a side navigation menu with the following options:
 
-1\. **OVH:** Monitors a specific IP address in OVH DC, POP, and OVH Anycast destinations.
-2\. **ANYCAST:** Global Anycast Destinations like Google DNS and CloudFlare DNS plus destinations from other CDN providers.
-3\. **EMEA:** Service, content, and/or cloud providers in Europe.
-4\. **USA / CANADA:** Service, content, and/or cloud providers in the US and Canada.
-5\. **SA:** Service, content, and/or cloud providers in South America
-6\. **APAC:** Service, content, and/or cloud providers in Asia / Oceania
+1. **OVH:** Monitors a specific IP address in OVH DC, POP, and OVH Anycast destinations.
+2. **ANYCAST:** Global Anycast Destinations like Google DNS and CloudFlare DNS plus destinations from other CDN providers.
+3. **EMEA:** Service, content, and/or cloud providers in Europe.
+4. **USA / CANADA:** Service, content, and/or cloud providers in the US and Canada.
+5. **SA:** Service, content, and/or cloud providers in South America
+6. **APAC:** Service, content, and/or cloud providers in Asia / Oceania
 
 ![smokeping](images/networking_tools01_.png){.thumbnail}
 
@@ -75,11 +75,11 @@ If you click the name of the provider in the search results, you will see histor
 
 The [OVHcloud weathermap](https://weathermap.ovh.net/) is a way to view the network backbone. Here you can view the percentage of traffic load on each link.
 
-1\. Data center selection
-2\. Search boxes and adjust the time period
-3\. Load scale legend
-4\. Navigation tips
-5\. See link details
+1. Data center selection
+2. Search boxes and adjust the time period
+3. Load scale legend
+4. Navigation tips
+5. See link details
 
 ![weathermap](images/networking_tools05_.png){.thumbnail}
 
