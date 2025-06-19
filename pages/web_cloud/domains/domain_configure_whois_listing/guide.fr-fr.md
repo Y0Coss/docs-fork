@@ -6,17 +6,17 @@ updated: 2025-06-19
 
 ## Objectif
 
-Le WHOIS (signifiant « Who is ? » en Anglais) est un protocole permettant de connaître diverses informations sur un nom de domaine.
+Le WHOIS, abréviation de l'anglais « Who is ? », est un protocole qui permet d’accéder à différentes informations liées à un nom de domaine.
 
 Par exemple, vous pouvez y trouver les informations suivantes (liste non exhaustive) :
 
 - Coordonnées du titulaire (souscripteur), de l'administrateur et du contact technique du service.
-- Disponibilité ou non à l'achat.
-- Date de création, d'expiration, de dernière modification ou de renouvellement.
+- Indication de la disponibilité à l’achat.
+- Dates de création, d’expiration, de dernière modification et de renouvellement.
 - Statut (créé, bloqué, expiré, etc.).
 - Etc.
 
-Au cours de l'utilisation de votre nom de domaine, vous pouvez être amenés à devoir afficher ou, au contraire, masquer certaines des informations présentes dans le WHOIS.
+Au cours de l'utilisation de votre nom de domaine, vous pouvez être amené à devoir afficher ou masquer certaines informations présentes dans le WHOIS.
 
 **Découvrez comment afficher ou masquer certaines informations contenues dans le WHOIS d'un nom de domaine depuis votre espace client OVHcloud.**
 
@@ -28,36 +28,36 @@ Au cours de l'utilisation de votre nom de domaine, vous pouvez être amenés à 
 > [!warning]
 >
 > Certains registres (organismes gérant les extensions des noms de domaine tels que *.com*, *.net*, etc.) n'autorisent pas à forcer le masquage ou l'affichage de certaines informations présentes dans le WHOIS.
-> En effet, ce sont eux qui définissent les règles d'affichage. Ils déterminent également ce que doit contenir ou non le WHOIS de l'extensions qu'ils gèrent.
+> En effet, ce sont les registres qui définissent les règles d’affichage et déterminent les informations que doit ou ne doit pas contenir le WHOIS de l’extension qu’ils gèrent.
 >
-> Par conséquent, il est possible que, malgré vos souhaits en terme d'affichage ou de masquage dans le WHOIS de votre nom de domaine, votre demande ne soit pas prise en compte.
+> Par conséquent, il est possible que malgré vos souhaits en termes d'affichage ou de masquage dans le WHOIS de votre nom de domaine, votre demande ne soit pas prise en compte.
 
 ## En pratique
 
 Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
->> Sur la page qui s'affiche et dans l'encadré **Sécurité**, cliquez sur le bouton `Configurer l'affichage du WHOIS`{.action}.
+>> Sur la page qui s'affiche, dans l'encadré **Sécurité**, cliquez sur le bouton `Configurer l'affichage du WHOIS`{.action}.
 >>
 >> ![Configure WHOIS listing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing.png){.thumbnail}
 >>
-> **Etape 4**
+> **Étape 4**
 >>
->> Sur la nouvelle page qui apparaît, vous pourrez choisir entre `Afficher` ou `Masquer` les informations relatives au contact propriétaire, administrateur ou technique du nom de domaine. Dans la limite des actions autorisées par le registre gérant de l'extension de votre nom de domaine.
+>> Sur la nouvelle page qui apparaît, vous pourrez choisir d'`Afficher` ou de `Masquer` les informations relatives aux contacts propriétaire, administrateur et technique du nom de domaine, dans la limite des actions autorisées par le registre gestionnaire de l'extension.
 >>
 >> Pour chacun des 3 contacts, cochez la case `Gérer l'affichage champ par champ`{.action} pour obtenir plus d'options.
 >>
@@ -65,12 +65,12 @@ Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **
 >>
 >> Une fois vos choix effectués, cliquez sur le bouton `Enregistrer les modifications`{.action}.
 >>
->> La prise en compte des modifications peut prendre jusqu'à **48** heures, **dans la limite des actions autorisées par le registre gérant l'extension de votre nom de domaine**.
+>> La prise en compte des modifications peut nécessiter jusqu'à **48** heures. Ces modifications seront appliquées **uniquement si elles sont autorisées par le registre gérant l'extension de votre nom de domaine**.
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
-
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
+ 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
-
+ 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
