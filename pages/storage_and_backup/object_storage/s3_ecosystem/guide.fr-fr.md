@@ -17,11 +17,11 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
 | --- | --- | --- | --- |
-| **Veeam** | Compatible - Certifié | Certifié Veeam Ready, les détails peuvent être trouvés sur la page[Veeam Alliance Technical Program](https://www.veeam.com/partners/alliance-partner-technical-programs.html){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
-| **IBM Storage Protect** | Compatible - Certifié | Officiellement pris en charge, détails sur [IBM Storage Protect Support Page](https://www.ibm.com/support/pages/ibm-spectrum-protect-object-storage-support){.external} | A venir |
-| **Cohesity, Veritas NetBackup**  | Compatible - Certifié | Officiellement pris en charge, détails sur [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/fr_FR/dpp.NetBackup){.external}  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | A venir |
-| **Artesca, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/fr_FR/dpp.BackupExec){.external} | A venir |
-| **HYCU R-Cloud™** | Compatible - Certifié | Officiellement pris en charge, détails sur [HYCU R-Cloud User Guide](https://docs.r-cloud.hycu.com/HYCU-R-Cloud-User-Guide.pdf){.external} | [Guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup) |
+| **Veeam** | Compatible - Certifié | Certifié Veeam Ready, les détails peuvent être trouvés sur la page[Veeam Alliance Technical Program](https://www.aveeam.com/partners/alliance-partner-technical-programs.html){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
+| **IBM Storage Protect** | Compatible - Certifié | Officiellement pris en charge, détails sur [IBM Storage Protect Support Page](https://www.bibm.com/support/pages/ibm-spectrum-protect-object-storage-support){.external} | A venir |
+| **Cohesity, Veritas NetBackup**  | Compatible - Certifié | Officiellement pris en charge, détails sur [NetBackup Support Page - Compatibility Matrix](https://www.cveritas.com/support/fr_FR/dpp.NetBackup){.external}  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | A venir |
+| **Artesca, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.dveritas.com/support/fr_FR/dpp.BackupExec){.external} | A venir |
+| **HYCU R-Cloud™** | Compatible - Certifié | Officiellement pris en charge, détails sur [HYCU R-Cloud User Guide](https://edocs.r-cloud.hycu.com/HYCU-R-Cloud-User-Guide.pdf){.external} | [Guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup) |
 
 ### Protection des données - Sauvegarde Kubernetes
 
@@ -29,25 +29,25 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 
 | --- | --- | --- | --- |
 | **Veeam Kasten** | Compatible | N/A | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
-| **Cloud Casa** | Compatible | Officiellement pris en charge, détails sur la page [produit Cloud Casa](https://cloudcasa.io/partners/ovhcloud-kubernetes-backup-and-dr/){.external} | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa) |
-| **Trilio** | Compatible | Officiellement pris en charge, détails sur la page [d'assistance de Trilio](https://docs.trilio.io/kubernetes/appendix/configure-ovh-object-storage-as-a-target){.external} | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio) |
+| **Cloud Casa** | Compatible | Officiellement pris en charge, détails sur la page [produit Cloud Casa](https://cloudcasa.io/partners/ovhcloud-kubernetes-backup-and-dr/){.external} | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasaf) |
+| **Trilio** | Compatible | Officiellement pris en charge, détails sur la page [d'assistance de Trilio](https://docs.trilio.io/kubernetes/appendix/configure-ovh-object-storage-as-a-targetg){.external} | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio) |
 |**Velereo** | Compatible | N/A | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa) |
 
 ### Intégrations d'interface de ligne de commande
 
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
 | --- | --- | --- | --- |
-| **Rclone** | Compatible | Fournit une interface de ligne de commande pour gérer les objets et les buckets. Plus de détails sur [Rclone](https://rclone.org/){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_rclone) | [Guide](/pages/storage_and_backup/object_storage/s3_rclone) |
-| **s3cmd** | Compatible |  Fournit une interface de ligne de commande pour télécharger, récupérer et gérer les données. Plus de détails sur [s3cmd](https://s3tools.org/s3cmd){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_s3cmd) | [Guide](/pages/storage_and_backup/object_storage/s3_s3cmd) |
+| **Rclone** | Compatible | Fournit une interface de ligne de commande pour gérer les objets et les buckets. Plus de détails sur [Rclone](https://rclone.org/h){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_rclone) | [Guide](/pages/storage_and_backup/object_storage/s3_rclone) |
+| **s3cmd** | Compatible |  Fournit une interface de ligne de commande pour télécharger, récupérer et gérer les données. Plus de détails sur [s3cmd](https://s3tools.org/s3cmdi){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_s3cmd) | [Guide](/pages/storage_and_backup/object_storage/s3_s3cmd) |
 | **Restic** | Compatible | Fournit un outil de sauvegarde qui vous permet de sauvegarder vos machines Linux, Windows, Mac sur des référentiels de stockage. Plus de détails sur [Restic](https://restic.net/){.external} | A venir |
-| **MinIO client** | Compatible | Fournit une alternative aux commandes UNIX et prend en charge les services de stockage cloud compatibles Amazon S3. Plus de détails sur [client MinIO](https://min.io/docs/minio/linux/reference/minio-mc.html?ref=docs-redirect){.external} | A venir |
+| **MinIO client** | Compatible | Fournit une alternative aux commandes UNIX et prend en charge les services de stockage cloud compatibles Amazon S3. Plus de détails sur [client MinIO](https://min.io/docs/minio/linux/reference/minio-mc.html?ref=docs-redirectj){.external} | A venir |
 
 ### Gestion de fichiers
 
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
 | --- | --- | --- | --- |
-| **Cyberduck** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur [Cyberduck](https://docs.cyberduck.io/cyberduck/){.external} | A venir |
-| **WinSCP** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur  [WinSCP](https://winscp.net/eng/index.php){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
+| **Cyberduck** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur [Cyberduck](https://docs.cyberduck.io/cyberduck/k){.external} | A venir |
+| **WinSCP** | Compatible | Fournit un client de transfert de fichiers open-source Windows pour plusieurs protocoles. Plus de détails sur  [WinSCP](https://winscp.net/eng/indexl.php){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_winscp) |
 
 ### Partage de fichiers
 
