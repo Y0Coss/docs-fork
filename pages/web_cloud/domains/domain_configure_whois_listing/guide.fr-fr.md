@@ -1,5 +1,5 @@
 ---
-title: "Comment configurer l'affichage du WHOIS ?"
+title: "Comment configurer l'affichage du WHOIS d'un nom de domaine ?"
 excerpt: "Découvrez comment afficher ou masquer certaines informations contenues dans le WHOIS d'un nom de domaine depuis votre espace client OVHcloud"
 updated: 2025-06-19
 ---
