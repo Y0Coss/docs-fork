@@ -1,5 +1,5 @@
 ---
-title: "Managed Message Broker Product Reversibility Policy"
+title: "Reversibility Policy for the Managed Message Broker product"
 updated: 2025-06-17
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Reversibility Policy for Managed Data Visualization Product"
+title: "Reversibility Policy for the Managed Data Visualization product"
 updated: 2025-06-17
 ---
 
