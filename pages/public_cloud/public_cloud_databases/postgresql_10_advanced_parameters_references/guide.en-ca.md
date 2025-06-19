@@ -1,31 +1,8 @@
 ---
 title: PostgreSQL - Advanced parameters references
 excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for PostgreSQL according to your use cases
-updated: 2025-06-18
+updated: 2025-06-19
 ---
-
-<style>
-#content table,
-.ovh-documentation table {margin-bottom:25px;overflow:unset !important;}
-
-#content tbody,
-.ovh-documentation tbody {display: inline-table !important;width:100% !important;}
-
-#content thead,
-.ovh-documentation thead {display:none}
-
-#content tr:nth-child(2n),
-.ovh-documentation tr:nth-child(2n) {
-  background: none !important;
-}
-#content td:first-child,
-.ovh-documentation td:first-child {
-  background:#efefef;
-  font-weight:600;
-  vertical-align:top;
-  width:11ch;
-}
-</style>
 
 ## Objective
 
