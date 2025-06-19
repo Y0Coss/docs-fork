@@ -1,20 +1,12 @@
-files:
-  - README.md
-  - file2.md
-  - file3.md
 dirs:
   - ./
-  - folder2
-excludedFiles:
-  - ./check.md
-  - excluded-file2.md
 excludedDirs:
-  - ./lib
-  - excluded-folder2
-baseUrl: https://example.com
+  - ./images
 ignorePatterns:
   - pattern: '^https://example.com/skip/.*$'
   - pattern: "^(ftp)://[^\\s/$?#]*\\.[^\\s]*$"
+  - pattern: 'https://www.ovh.com.*$'
+  - pattern: 'https://www.ovhcloud.com.*$'
 replacementPatterns:
   - pattern: "(https?://example.com)/(\\w+)/(\\d+)"
     replacement: '$1/id/$3'
