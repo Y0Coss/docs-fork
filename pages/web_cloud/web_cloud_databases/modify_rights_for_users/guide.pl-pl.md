@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Zmiana uprawnień użytkownika"
 excerpt: "Dowiedz się, jak zmienić uprawnienia użytkownika w rozwiązaniu Web Cloud Databases"
-updated: 2025-06-18
+updated: 2025-06-19
 ---
 
 ## Wprowadzenie
@@ -19,7 +19,7 @@ Podczas korzystania z produktu może być konieczna zmiana uprawnień użytkowni
 ## W praktyce
 
 > [!primary]
-> Aby utworzyć nowego użytkownika w rozwiązaniu Web Cloud Databases, zapoznaj się z sekcją **Utwórz użytkownika** w naszym przewodniku "[Tworzenie baz danych i użytkowników na serwerze bazy danych](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
+> Aby utworzyć nowego użytkownika w rozwiązaniu Web Cloud Databases, zapoznaj się z sekcją **Tworzenie użytkownika** w naszym przewodniku "[Tworzenie baz danych i użytkowników na serwerze bazy danych](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **5**.
 
@@ -38,13 +38,13 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **5**.
 >>
 > **Etap 3**
 >>
->> Na stronie, która się wyświetli kliknij zakładkę `Użytkownicy i uprawnienia`{.action}
+>> Na stronie, która się wyświetli kliknij zakładkę `Użytkownicy i uprawnienia`{.action}.
 >>
 >> ![Users and rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights.png){.thumbnail}
 >>
 > **Etap 4**
 >>
->> W tabeli się pojawi przycisk `...`{.action} po prawej stronie wybranego użytkownika, następnie `Zarządzanie uprawnieniami`{.action}
+>> W tabeli się pojawi przycisk `...`{.action} po prawej stronie wybranego użytkownika, następnie `Zarządzanie uprawnieniami`{.action}.
 >>
 >> ![Manage rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights-user-alone.png){.thumbnail}
 >>

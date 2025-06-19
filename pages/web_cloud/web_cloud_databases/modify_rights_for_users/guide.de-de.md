@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Nutzerrechte ändern"
 excerpt: "Erfahren Sie, wie Sie die Rechte eines Benutzers auf Ihrer Web Cloud Databases Lösung ändern können"
-updated: 2025-06-18
+updated: 2025-06-19
 ---
 
 ## Ziel
@@ -38,13 +38,13 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 > **Schritt 3**
 >>
->> Klicken Sie auf der angezeigten Seite auf den Tab `Benutzer und Rechte`{.action}
+>> Klicken Sie auf der angezeigten Seite auf den Tab `Benutzer und Rechte`{.action}.
 >>
 >> ![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases.png){.thumbnail}
 >>
 > **Schritt 4**
 >>
->> In der angezeigten Tabelle klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden Benutzer und dann auf `Rechte verwalten`{.action}
+>> In der angezeigten Tabelle klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden Benutzer und dann auf `Rechte verwalten`{.action}.
 >>
 >> ![Manage rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights-user-alone.png){.thumbnail}
 >>

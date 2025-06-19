@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Alterar as permissões de um utilizador"
 excerpt: "Saiba como alterar os direitos de um utilizador no seu serviço Web Cloud Databases"
-updated: 2025-06-18
+updated: 2025-06-19
 ---
 
 ## Objetivo
@@ -38,13 +38,13 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
 >>
 > **Etapa 3**
 >>
->> Na página que se abrir, clique no separador `Utilizadores e permissões`{.action}
+>> Na página que se abrir, clique no separador `Utilizadores e permissões`{.action}.
 >>
 >>![Users and rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights.png){.thumbnail}
 >>
 > **Etapa 4**
 >>
->> Na tabela, clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Gerir permissões`{.action}
+>> Na tabela, clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Gerir permissões`{.action}.
 >>
 >> ![Manage rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights-user-alone.png){.thumbnail}
 >>
