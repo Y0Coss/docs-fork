@@ -31,14 +31,14 @@ Par ailleurs, ils peuvent aussi être utilisés pour valider certaines associati
 
 > [!alert]
 >
-> Pour un même sous-domaine source, il est recommandé de ne pas avoir d'enregistrement TXT déjà configuré avec ce dernier si vous souhaitez utiliser un enregistrement CNAME. Si tel est le cas, la résolution DNS des deux enregistrements se ferait aléatoirement car la zone DNS ne peut renvoyer qu'un seul résultat par demande.
+> Pour un même sous-domaine source, il est recommandé de ne pas configurer d'enregistrement TXT si vous souhaitez configurer un enregistrement CNAME. Si tel était le cas, la résolution DNS des deux enregistrements se ferait aléatoirement car la zone DNS ne peut renvoyer qu'un seul résultat par demande.
 >
-> Par exemple, si je dispose dans la zone DNS active du nom de domaine **domain.tld** des enregistrements DNS suivants :
+> Par exemple, si la zone DNS active du nom de domaine **domain.tld** contient les enregistrements DNS suivants :
 >
 > -  www.domain.tld. IN CNAME domain.tld. 
-> -  www.domain.tld. IN TXT "AbCdEf-TXT-Value-GhIjKl", 
+> -  www.domain.tld. IN TXT "AbCdEf-TXT-Value-GhIjKl".
 >
-> Dans ce cas, une requête de résolution DNS effectuée sur le sous-domaine **www.domain.tld** pourra retourner aléatoirement la cible **domain.tld** de l'enregistrement CNAME ou la valeur **AbCdEf-TXT-Value-GhIjKl** de l'enregistrement TXT.
+> Dans ce cas, une requête de résolution DNS effectuée sur le sous-domaine **www.domain.tld** peut retourner aléatoirement la cible **domain.tld** de l'enregistrement CNAME ou la valeur **AbCdEf-TXT-Value-GhIjKl** de l'enregistrement TXT.
 
 > [!primary]
 >
