@@ -33,7 +33,7 @@ Par ailleurs, ils peuvent aussi être utilisés pour valider certaines associati
 >
 > Pour un même sous-domaine source, il est recommandé de ne pas avoir d'enregistrement TXT déjà configuré si vous souhaitez utiliser un enregistrement CNAME avec ce dernier. Si tel est la cas, la résolution DNS des deux enregistrements se ferait aléatoirement car la zone DNS ne peut renvoyer qu'un seul résultat par demande.
 >
-> Un enregistrement TXT associé au même nom de domaine ou sous-domaine qu’un enregistrement CNAME peut compromettre le bon fonctionnement de ce dernier. Votre enregistrement CNAME ne fonctionnera alors que partiellement ou pas du tout.
+> Effectivement, un enregistrement TXT utilisant le même sous-domaine source qu’un enregistrement CNAME peut compromettre le bon fonctionnement de ce dernier. Votre enregistrement CNAME ne fonctionnera alors que partiellement ou pas du tout.
 
 > [!primary]
 >
