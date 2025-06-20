@@ -78,36 +78,36 @@ The `PoP configuration` menu will then appear.
 
 You can also add a second PoP L3 configuration via the second `PoP configuration` menu.
 
-### Step 3: Adding a data centre configuration
+### Step 3: Adding an availability zone configuration
 
 #### Configuration 
 
-When your PoP configuration is active, click `Add a configuration`{.action} under the `DC configuration` menu. Select a data centre from the drop-down menu and confirm.
+When your PoP configuration is active, click `Add a configuration`{.action} under the `AZ configuration` menu. Select an availability zone from the drop-down menu and confirm.
 
 ![add datacentre](images/l2dc1.png){.thumbnail}
 
 ![add datacentre](images/l2dc1-1.png){.thumbnail}
 
-The DC configuration will then begin.
+The AZ configuration will then begin.
 
 ![add datacentre](images/l2dc1-2.png){.thumbnail}
 
 #### Configuration L3 
 
-When your PoP configuration has been set, click `Add a configuration`{.action} under the `DC configuration` menu. 
+When your PoP configuration has been set, click `Add a configuration`{.action} under the `AZ configuration` menu. 
 
 ![add datacentre](images/l3dc0.png){.thumbnail}
 
-Select a data centre from the drop-down menu, then enter the information required. 
+Select an availability zone from the drop-down menu, then enter the information required. 
 
 | Information    | Description |
 |:-------:|:------:|
-| OVHcloud ASN    | The OVHcloud AS number that will be configured on the OVHcloud Connect routers located in the DC. This number may be different from the ASN chosen for the PoP |
-| A /28 subnetwork  |  A private subnetwork configured in your vRack in the selected DC. This can be an IPv4 block of size /28 or higher |
+| OVHcloud ASN    | The OVHcloud AS number that will be configured on the OVHcloud Connect routers located in the AZ. This number may be different from the ASN chosen for the PoP |
+| A /28 subnetwork  |  A private subnetwork configured in your vRack in the selected AZ. This can be an IPv4 block of size /28 or higher |
 
 ![add datacentre](images/l3dc1.png){.thumbnail}
 
-You can add additional data centre configurations by clicking on the `...`{.action} button, then `Add a configuration`{.action}.
+You can add additional availability zone configurations by clicking on the `+ Add a configuration`{.action} button.
 
 ![add datacentre](images/l3dc1-1.png){.thumbnail}
 
@@ -115,7 +115,7 @@ You must also add a routing configuration.
 
 ##### **Adding a routing configuration**
 
-Click on the `(...)`{.action} button on the desired data centre then on `Add routing configuration`{.action} .
+Click on the `(...)`{.action} button on the desired availability zone then on `Add routing configuration`{.action} .
 
 ![add routing configuration](images/l3dc2.png){.thumbnail}
 
@@ -127,8 +127,8 @@ If you choose the type BGP, then enter the required information.
 
 | Information    | Description |
 |:-------:|:------:|
-| Customer ASN    | Your AS BGP number, which is configured on your router located in the DC |
-| IP Neighbour    | IP address of the BGP neighbour of your router in the DC. This address must be part of the subnetwork specified in the `DC Configuration` section |
+| Customer ASN    | Your AS BGP number, which is configured on your router located in the AZ |
+| IP Neighbour    | IP address of the BGP neighbour of your router in the AZ. This address must be part of the subnetwork specified in the `AZ Configuration` section |
 
 ![add routing configuration](images/l3dc5.png){.thumbnail}
 
@@ -141,18 +141,18 @@ If you choose the Static type, enter the required information:
 
 ![add routing configuration](images/l3dc4.png){.thumbnail}
 
-You can add multiple routing configurations within the same data centre. The configuration type (BGP or Static) chosen for your first routing configuration will then apply to the next configuration on the same data centre.
+You can add multiple routing configurations within the same availability zone. The configuration type (BGP or Static) chosen for your first routing configuration will then apply to the next configuration on the same availability zone.
 
 ![add routing configuration](images/l3dc6.png){.thumbnail}
 
 ### Deletion of vCenter resources
 
-Each resource (PoP or DC) can be deleted individually, but deleting a parent resource such as DC or PoP will automatically delete all the subresources.
+Each resource (PoP or AZ) can be deleted individually, but deleting a parent resource such as AZ or PoP will automatically delete all the subresources.
 
 Recursive removal is slower than sequential removal of each resource.
 
 > [!primary]
-> If a DC configuration is shared between two or more OVHcloud Connect services, removing the PoP configuration from a single OVHcloud Connect service will not affect the DC resource.
+> If a AZ configuration is shared between two or more OVHcloud Connect services, removing the PoP configuration from a single OVHcloud Connect service will not affect the AZ resource.
 >
 
 #### Deleting a routing Configuration
@@ -161,14 +161,14 @@ To delete a routing configuration, click the `...`{.action} button on the routin
 
 ![deleting routing configuration](images/deleterouting.png){.thumbnail}
 
-#### Deleting a DC configuration
+#### Deleting a AZ configuration
 
-To delete a DC configuration, click the `...`{.action} button on the DC configuration to delete, then click `Delete`{.action}.
+To delete a AZ configuration, click the `...`{.action} button on the AZ configuration to delete, then click `Delete`{.action}.
 
 ![DC deletion](images/deletedc.png){.thumbnail}
 
 > [!primary]
-> Deleting a DC configuration will delete the related routing configurations.
+> Deleting a AZ configuration will delete the related routing configurations.
 >
 
 #### Deleting a PoP configuration
@@ -178,7 +178,7 @@ To delete a PoP configuration, click the `...`{.action} button on the PoP config
 ![deleting PoP configuration](images/deletepop.png){.thumbnail}
 
 > [!primary]
-> Deleting a PoP configuration will delete the related DC and routing configurations.
+> Deleting a PoP configuration will delete the related AZ and routing configurations.
 >
 
 ## Go further
