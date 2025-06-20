@@ -31,7 +31,7 @@ Par ailleurs, ils peuvent aussi être utilisés pour valider certaines associati
 
 > [!alert]
 >
-> Pour un même sous-domaine source, il est recommandé de ne pas avoir d'enregistrement TXT déjà configuré avec ce dernier si vous souhaitez utiliser un enregistrement CNAME. Si tel est la cas, la résolution DNS des deux enregistrements se ferait aléatoirement car la zone DNS ne peut renvoyer qu'un seul résultat par demande.
+> Pour un même sous-domaine source, il est recommandé de ne pas avoir d'enregistrement TXT déjà configuré avec ce dernier si vous souhaitez utiliser un enregistrement CNAME. Si tel est le cas, la résolution DNS des deux enregistrements se ferait aléatoirement car la zone DNS ne peut renvoyer qu'un seul résultat par demande.
 >
 > Effectivement et par exemple, si je dispose dans la zone DNS active du nom de domaine **domain.tld** des enregistrements DNS suivants :
 >
