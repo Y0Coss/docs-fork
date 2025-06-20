@@ -32,7 +32,7 @@ Par ailleurs, ils peuvent aussi être utilisés pour valider certaines associati
 > [!alert]
 >
 > Pour un même sous-domaine source, il est recommandé de ne pas avoir de champ TXT configuré si vous souhaitez utiliser le champ CNAME, car un enregistrement TXT peut perturber le fonctionnement de l'enregistrement CNAME.
-
+>
 > Un enregistrement TXT associé au même nom de domaine ou sous-domaine qu’un enregistrement CNAME peut compromettre le bon fonctionnement de ce dernier. Votre enregistrement CNAME ne fonctionnera alors que partiellement ou pas du tout.
 
 > [!primary]
