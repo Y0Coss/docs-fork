@@ -26,6 +26,7 @@ Cela vous offre une meilleure visibilité, réduit le recours aux appels API et 
 - Posséder un service Hosted Private Cloud basé sur VMware.
 - Détenir au moins une machine virtuelle exécutant un système d’exploitation Windows.
 - Avoir activé les **licences Windows** dans votre [espace client OVHcloud](/links/manager). Consultez la partie « licence windows » de notre guide « [Présentation de l'espace client Hosted Private Cloud OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud/) » pour plus d'informations.
+- Avoir autorisé la connexion TCP sortante 1688 depuis les machines virtuelles licenciées vers kms.ovh.net dans vos paramètres firewall.
 
 ## En pratique
 
