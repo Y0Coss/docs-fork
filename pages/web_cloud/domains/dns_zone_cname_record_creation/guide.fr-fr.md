@@ -38,7 +38,7 @@ Par ailleurs, ils peuvent aussi être utilisés pour valider certaines associati
 > -  www.domain.tld. IN CNAME domain.tld. 
 > -  www.domain.tld. IN TXT "AbCdEf-TXT-Value-GhIjKl", 
 >
-> Alors, à chaque requête DNS effectuée pour récupérer la résolution DNS de **www.domain.tld**, ce sera aléatoirement soit la cible **domain.tld** de l'enregistrement CNAME, soit la valeur **AbCdEf-TXT-Value-GhIjKl** de l'enregistrement TXT qui sera retourné en réponse à la requête.
+> Dans ce cas, une requête de résolution DNS effectuée sur le sous-domaine **www.domain.tld** pourra retourner aléatoirement la cible **domain.tld** de l'enregistrement CNAME ou la valeur **AbCdEf-TXT-Value-GhIjKl** de l'enregistrement TXT.
 
 > [!primary]
 >
