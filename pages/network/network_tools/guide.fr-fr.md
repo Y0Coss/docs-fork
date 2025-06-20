@@ -34,11 +34,11 @@ OVHcloud fournit plusieurs outils aux clients et aux prospects pour tester et é
 
 ![proof](images/networktools2.png){.thumbnail}
 
-La première fois que vous accédez au site, vous êtes redirigé vers l'onglet **Speedtest**. Il s'agit d'un test de vitesse normal. Si vous cliquez sur Fichiers, vous serez redirigé vers la page suivante :
+La première fois que vous accédez au site, vous êtes redirigé vers l'onglet **Speedtest**. Il s'agit d'un test de vitesse normal. Si vous cliquez sur *Files*, vous serez redirigé vers la page suivante :
 
 ![test de vitesse](images/networktools3.png){.thumbnail}
 
-Choisissez la taille du fichier que vous souhaitez tester et téléchargez le fichier pour tester votre vitesse de téléchargement sur le réseau d'OVHcloud. Le dernier onglet est l'onglet **Épreuves**. Dans le menu déroulant, sélectionnez le datacenter à tester. Vous serez ensuite soumis au test de vitesse avec ce datacenter sélectionné.
+Choisissez la taille du fichier que vous souhaitez tester et téléchargez le fichier pour tester votre vitesse de téléchargement sur le réseau d'OVHcloud. Le dernier onglet est l'onglet ***Proofs***. Dans le menu déroulant, sélectionnez le datacenter à tester. Vous serez ensuite soumis au test de vitesse avec ce datacenter sélectionné.
 
 ![choix du datacenter](images/networktools4.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Si vous cliquez sur le nom du fournisseur dans les résultats de la recherche, v
 
 ### Weathermap <a name="weathermap"></a>
 
-Le [weathermap OVHcloud](https://weathermap.ovh.net/) permet de visualiser le backbone du réseau. Permet de visualiser le pourcentage de charge de trafic sur chaque lien.
+Le [weathermap OVHcloud](https://weathermap.ovh.net/) permet de visualiser la structure du réseau. Vous pouvez y voir le pourcentage de la charge de trafic sur chaque lien.
 
 1. Choix du datacenter
 2. Rechercher dans les zones et ajuster la période
