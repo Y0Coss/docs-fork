@@ -54,7 +54,7 @@ En parallèle, ils peuvent aussi être utilisés pour valider certains services,
 > De plus, par convention, **les enregistrements de type CNAME ne peuvent pas être utilisés sur un nom de domaine dans sa propre zone DNS**. En effet, le nom de domaine doit obligatoirement pointer directement vers une adresse IP avec un enregistrement de type [A](/pages/web_cloud/domains/dns_zone_a_record_creation) pour une IPv4, ou [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) pour une IPv6.
 > 
 > Pour reprendre l’exemple donné plus haut, vous ne pourrez donc pas créer un enregistrement de type CNAME pour le nom de domaine *domain.tld* dans la zone DNS que vous avez créée pour celui-ci.
-> Vous pourrez cependant créer des enregistrements de type CNAME avec tous les sous-domaines (par exemple : *subdomain.domain.tld* ou *www.domain.tld*) du nom de domaine *domain.tld* dans la zone DNS créée pour *domain.tld*.
+> Vous pourrez cependant créer des enregistrements de type CNAME pour tous les sous-domaines (par exemple : *subdomain.domain.tld* ou *www.domain.tld*) du nom de domaine *domain.tld* dans la zone DNS créée pour *domain.tld*.
 
 ### Ajouter un enregistrement DNS de type CNAME pour le sous-domaine d'un nom de domaine
 
