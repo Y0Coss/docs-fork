@@ -1,12 +1,12 @@
 ---
 title: "Comment configurer l'affichage du WHOIS d'un nom de domaine ?"
 excerpt: "Découvrez comment afficher ou masquer certaines informations contenues dans le WHOIS d'un nom de domaine depuis votre espace client OVHcloud"
-updated: 2025-06-19
+updated: 2025-06-20
 ---
 
 ## Objectif
 
-Le WHOIS, abréviation de l'anglais « Who is ? », est un protocole qui permet d’accéder à différentes informations liées à un nom de domaine.
+Le WHOIS, abréviation de l'anglais « Who is ? », est un protocole permettant d’accéder à différentes informations liées à un nom de domaine.
 
 Par exemple, vous pouvez y trouver les informations suivantes (liste non exhaustive) :
 
@@ -23,7 +23,7 @@ Au cours de l'utilisation de votre nom de domaine, vous pouvez être amené à d
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Disposer d'au moins un [nom de domaine](/links/web/domains).
+- Disposer d'un [nom de domaine](/links/web/domains).
 
 > [!warning]
 >
@@ -34,7 +34,7 @@ Au cours de l'utilisation de votre nom de domaine, vous pouvez être amené à d
 
 ## En pratique
 
-Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes
+Cliquez sur les onglets ci-dessous afin d'afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Étape 1**
