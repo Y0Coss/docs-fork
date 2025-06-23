@@ -28,7 +28,6 @@ On parle alors d’« alias » : le sous-domaine alias reprend automatiquement l
 Par exemple, si l'on indique via un enregistrement CNAME présent dans la zone DNS active du nom de domaine **domain.tld**, que *www.domain.tld* est un alias de *domain.tld*, alors *www.domain.tld* utilisera l'adresse IP de *domain.tld*.
 
 Les enregistrements de type CNAME sont très utiles pour éviter d'avoir à retenir ou à modifier les adresses IP cibles pour vos différents sous-domaines.
-Par ailleurs, ils peuvent aussi être utilisés pour valider certaines associations de services, comme la configuration de serveurs e-mail.
 
 **Découvrez comment ajouter un enregistrement CNAME dans votre zone DNS OVHcloud.**
 
