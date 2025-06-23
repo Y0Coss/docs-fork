@@ -87,7 +87,6 @@ Consultez nos guides détaillés :
 
 ## Aller plus loin
 
-[Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
  
