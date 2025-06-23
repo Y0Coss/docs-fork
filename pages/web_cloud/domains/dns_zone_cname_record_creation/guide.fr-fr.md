@@ -42,7 +42,7 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 
 **Cas particuliers** :
 
-/// details | - Enregistrements CNAME et TXT pour un même sous-domaine - Cliquez ici pour plus d'informations
+/// details | Enregistrements CNAME et TXT pour un même sous-domaine - Cliquez ici pour plus d'informations
 
 Il est déconseillé de configurer à la fois un enregistrement CNAME et un enregistrement TXT pour le même sous-domaine. En effet, cela peut entraîner des résultats aléatoires lors de la résolution DNS, car seule une réponse peut être renvoyée par requête DNS.
 
