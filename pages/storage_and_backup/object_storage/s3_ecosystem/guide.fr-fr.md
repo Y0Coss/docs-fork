@@ -18,7 +18,7 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
 | --- | --- | --- | --- |
 | **Veeam** | Compatible - Certifié | Certifié Veeam Ready, les détails peuvent être trouvés sur la page[Veeam Alliance Technical Program](https://www.veeam.com/partners/alliance-partner-technical-programs.html){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
-| **Acronis Cyber Protect Cloud** | Compatible - Certifié | Officiellement pris en charge, détails sur la [documentation Acronis – Ajouter un stockage compatible S3](https://www.acronis.com/en-us/support/documentation/CyberProtectCloud/index.html#45594.html){.external} | A venir |
+| **Acronis Cyber Protect Cloud** | Compatible - Certifié | Officiellement pris en charge, détails disponibles sur la [page d’intégration Acronis S3](https://solutions.acronis.com/en-us/integrations/amazon-s3/){.external} | À venir |
 | **IBM Storage Protect** | Compatible - Certifié | Officiellement pris en charge, détails sur [IBM Storage Protect Support Page](https://www.ibm.com/support/pages/ibm-spectrum-protect-object-storage-support){.external} | A venir |
 | **Cohesity, Veritas NetBackup**  | Compatible - Certifié | Officiellement pris en charge, détails sur [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/fr_FR/dpp.NetBackup){.external}  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | A venir |
 | **Artesca, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/fr_FR/dpp.BackupExec){.external} | A venir |
