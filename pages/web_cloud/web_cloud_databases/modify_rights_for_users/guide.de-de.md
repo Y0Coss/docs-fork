@@ -6,7 +6,7 @@ updated: 2025-06-19
 
 ## Ziel
 
-Die Lösung [Web Cloud Databases](/links/web/databases) kann mehrere Datenbanken enthalten. Damit können Sie einen oder mehrere Benutzer für die Verwaltung und Nutzung Ihrer Datenbanken definieren. Diese Benutzer können je nach ihren Rollen in den Datenbanken über mehr oder weniger erweiterte Rechte verfügen.
+Die Lösung [Web Cloud Databases](/links/web/databases) kann mehrere Datenbanken enthalten. Damit können Sie einen oder mehrere Benutzer für die Verwaltung und Nutzung Ihrer Datenbanken definieren. Diese Benutzer können je nach ihren Rollen in den Datenbanken über mehr oder weniger erweiterte Rechte verfügen.  
 Bei der Verwendung des Produkts können Sie die Rechte eines Benutzers auf Ihrer [Web Cloud Databases](/links/web/databases) ändern.
 
 **Diese Anleitung erklärt, wie Sie die Benutzerrechte für Ihre Web Cloud Databases Lösung ändern können.**
@@ -14,19 +14,19 @@ Bei der Verwendung des Produkts können Sie die Rechte eines Benutzers auf Ihrer
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie verfügen über eine Lösung [Web Cloud Databases](/links/web/databases) und einen oder mehrere Benutzer.
+- Sie verfügen über einen [Web Cloud Databases](/links/web/databases) Dienst und einen oder mehrere Benutzer.
 
 ## In der praktischen Anwendung
 
 > [!primary]
-> Um einen neuen Benutzer für Ihre Web Cloud Databases Lösung zu erstellen, lesen Sie den Abschnitt **Einen Benutzer erstellen** unserer Anleitung „[Datenbanken und Benutzer auf Ihrem Datenbankserver erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)“.
+> Um einen neuen Benutzer für Ihre Web Cloud Databases Lösung zu erstellen, lesen Sie den Abschnitt **Einen Benutzer erstellen** unserer Anleitung "[Datenbanken und Benutzer auf Ihrem Datenbankserver erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
 
 Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -54,7 +54,7 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >>
 >> ![Changing user rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights-db-alone.png){.thumbnail}
 >>
->> Hier können Sie die Rechte Ihres Benutzers für jede Ihrer Datenbanken ändern. Klicken Sie hierzu für jede der betroffenen Datenbanken einfach auf die leeren Kreise, die den Rechten entsprechen, die Sie für Ihren Benutzer neu definieren möchten. Die Änderung wird innerhalb weniger Augenblicke wirksam.
+>> Hier können Sie die Rechte Ihres Benutzers für jede Ihrer Datenbanken ändern. Klicken Sie hierzu für jede der betroffenen Datenbanken auf die lren Kreise, die den Rechten entsprechen, die Sie für Ihren Benutzer neu definieren möchten. Die Änderung wird innerhalb weniger Augenblicke wirksam.
 
 Im Folgenden finden Sie eine zusammenfassende Tabelle der möglichen Abfragetypen für eine Datenbank, basierend auf den Berechtigungen, die dem Benutzer zugewiesen sind:
 
