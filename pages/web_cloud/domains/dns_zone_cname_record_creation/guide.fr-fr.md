@@ -55,7 +55,7 @@ Une requête DNS pour *www.domain.tld* retournera soit la cible de l'enregistrem
 
 ///
 
-/// details | - CNAME sur un domaine dans sa propre zone DNS - Cliquez ici pour plus d'informations
+/// details | CNAME sur un domaine dans sa propre zone DNS - Cliquez ici pour plus d'informations
 
 Par convention, **les enregistrements de type CNAME ne peuvent pas être utilisés sur un nom de domaine dans sa propre zone DNS**. En effet, le nom de domaine doit obligatoirement pointer directement vers une adresse IP avec un enregistrement de type [A](/pages/web_cloud/domains/dns_zone_a_record_creation) pour une IPv4, ou [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) pour une IPv6.
 
