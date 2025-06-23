@@ -1,7 +1,7 @@
 ---
 title: "How to manage Windows licences for virtual machines on your Hosted Private Cloud infrastructure"
 excerpt: "Learn how to track and activate Windows licences for your virtual machines using the OVHcloud Control Panel or API"
-updated: 2025-05-28
+updated: 2025-06-23
 ---
 
 ## Objective
