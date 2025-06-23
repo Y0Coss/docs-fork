@@ -6,7 +6,7 @@ updated: 2025-06-23
 
 ## Objective
 
-WHOIS, short for “Who is?”, is a protocol that allows you to access different information related to a domain name.
+WHOIS, short for "Who is?", is a protocol that allows you to access different information related to a domain name.
 
 For example, you can find the following information (non-exhaustive list):
 
@@ -14,7 +14,7 @@ For example, you can find the following information (non-exhaustive list):
 - Indication of availability for purchase.
 - Creation, expiry, last modification and renewal dates.
 - Status (created, blocked, expired, etc.).
-- Etc.
+- etc.
 
 When using your domain name, you may find that you need to show or hide certain information in WHOIS.
 
@@ -23,7 +23,7 @@ When using your domain name, you may find that you need to show or hide certain 
 ## Requirements
 
 - Access to your [OVHcloud Control Panel](/links/manager)
-- A [domain name](/links/web/domains).
+- A [domain name](/links/web/domains)
 
 > [!warning]
 >
