@@ -1,7 +1,7 @@
 ---
 title: "Ajouter un enregistrement DNS de type CNAME pour un sous-domaine"
 excerpt: "Découvrez comment ajouter un enregistrement DNS de type CNAME dans une zone DNS gérée chez OVHcloud pour le sous-domaine d'un nom de domaine"
-updated: 2025-06-20
+updated: 2025-06-23
 ---
 
 <style>
@@ -23,21 +23,10 @@ details[open]>summary::before {
 Un enregistrement CNAME permet d'associer un sous-domaine à un nom de domaine ou sous-domaine, sans avoir à spécifier une adresse IP. Cela signifie que le sous-domaine sera redirigé vers l'adresse IP du nom de domaine ou sous-domaine cible, sans nécessiter de configuration supplémentaire.
 
 Par exemple, si vous créez un enregistrement CNAME pour *www.domain.tld* qui pointe vers *domain.tld*, alors *www.domain.tld* utilisera la même adresse IP que *domain.tld*.
+
 Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adresses IP pour vos sous-domaines. Ils peuvent également être utilisés pour configurer des services comme les serveurs e-mail.
 
-
 **Découvrez comment ajouter un enregistrement CNAME dans votre zone DNS OVHcloud.**
-
-> [!alert]
->
-> Pour un même sous-domaine source, il est recommandé de ne pas configurer d'enregistrement TXT si vous souhaitez configurer un enregistrement CNAME. Si tel était le cas, la résolution DNS des deux enregistrements se ferait aléatoirement car la zone DNS ne peut renvoyer qu'un seul résultat par demande.
->
-> Par exemple, si la zone DNS active du nom de domaine **domain.tld** contient les enregistrements DNS suivants :
->
-> -  www.domain.tld. IN CNAME domain.tld. 
-> -  www.domain.tld. IN TXT "AbCdEf-TXT-Value-GhIjKl".
->
-> Dans ce cas, une requête de résolution DNS effectuée sur le sous-domaine **www.domain.tld** peut retourner aléatoirement la cible **domain.tld** de l'enregistrement CNAME ou la valeur **AbCdEf-TXT-Value-GhIjKl** de l'enregistrement TXT.
 
 **Vous avez déjà un enregistrement de type CNAME dans votre zone DNS ?** Suivez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ». 
 
@@ -47,16 +36,33 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 - Disposer d'une zone DNS associée à ce nom de domaine chez OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
+**L'ajout, la modification ou la suppression d'enregistrements DNS dans une zone DNS active est une manipulation sensible. En cas de doute, contactez un [prestataire spécialisé](/links/partner).**
+
 ## En pratique
 
-> [!warning]
->
-> L'ajout, la modification ou la suppression d'enregistrements DNS dans une zone DNS active est une manipulation sensible. En cas de doute, contactez un [prestataire spécialisé](/links/partner).
->
-> De plus, par convention, **les enregistrements de type CNAME ne peuvent pas être utilisés sur un nom de domaine dans sa propre zone DNS**. En effet, le nom de domaine doit obligatoirement pointer directement vers une adresse IP avec un enregistrement de type [A](/pages/web_cloud/domains/dns_zone_a_record_creation) pour une IPv4, ou [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) pour une IPv6.
-> 
-> Pour reprendre l’exemple donné plus haut, vous ne pourrez donc pas créer un enregistrement de type CNAME pour le nom de domaine *domain.tld* dans la zone DNS que vous avez créée pour celui-ci.
-> Vous pourrez cependant créer des enregistrements de type CNAME pour tous les sous-domaines (par exemple : *subdomain.domain.tld* ou *www.domain.tld*) du nom de domaine *domain.tld* dans la zone DNS créée pour *domain.tld*.
+**Cas particuliers** :
+
+/// details | - Enregistrements CNAME et TXT pour un même sous-domaine - Cliquez ici pour plus d'informations
+
+Il est déconseillé de configurer à la fois un enregistrement CNAME et un enregistrement TXT pour le même sous-domaine. En effet, cela peut entraîner des résultats aléatoires lors de la résolution DNS, car seule une réponse peut être renvoyée par demande.
+
+Par exemple, si vous avez les enregistrements suivants pour *www.domain.tld* :
+
+- Un enregistrement CNAME pointant vers *domain.tld*.
+- Un enregistrement TXT avec une valeur spécifique.
+
+Une requête DNS pour *www.domain.tld* retournera soit la cible de l'enregistrement CNAME, soit la valeur de l'enregistrement TXT, de manière aléatoire.
+
+///
+
+/// details | - CNAME sur un domaine dans sa propre zone DNS - Cliquez ici pour plus d'informations
+
+Par convention, **les enregistrements de type CNAME ne peuvent pas être utilisés sur un nom de domaine dans sa propre zone DNS**. En effet, le nom de domaine doit obligatoirement pointer directement vers une adresse IP avec un enregistrement de type [A](/pages/web_cloud/domains/dns_zone_a_record_creation) pour une IPv4, ou [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) pour une IPv6.
+
+Pour reprendre l’exemple donné plus haut, vous ne pourrez donc pas créer un enregistrement de type CNAME pour le nom de domaine *domain.tld* dans la zone DNS que vous avez créée pour celui-ci.
+Vous pourrez cependant créer des enregistrements de type CNAME pour tous les sous-domaines (par exemple : *subdomain.domain.tld* ou *www.domain.tld*) du nom de domaine *domain.tld* dans la zone DNS créée pour *domain.tld*.
+
+///
 
 ### Ajouter un enregistrement DNS de type CNAME pour le sous-domaine d'un nom de domaine
 
