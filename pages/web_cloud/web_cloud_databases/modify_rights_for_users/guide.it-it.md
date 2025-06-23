@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Modificare i diritti di un utente"
 excerpt: "Scopri come modificare i diritti di un utente sulla tua soluzione Web Cloud Databases"
-updated: 2025-06-19
+updated: 2025-06-23
 ---
 
 ## Obiettivo

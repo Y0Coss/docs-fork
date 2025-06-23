@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Modificar los permisos de un usuario"
 excerpt: "Descubra cómo modificar los permisos de un usuario en su solución Web Cloud Databases"
-updated: 2025-06-19
+updated: 2025-06-23
 ---
 
 ## Objetivo

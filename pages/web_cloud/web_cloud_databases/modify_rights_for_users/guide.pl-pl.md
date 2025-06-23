@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Zmiana uprawnień użytkownika"
 excerpt: "Dowiedz się, jak zmienić uprawnienia użytkownika w rozwiązaniu Web Cloud Databases"
-updated: 2025-06-19
+updated: 2025-06-23
 ---
 
 ## Wprowadzenie
