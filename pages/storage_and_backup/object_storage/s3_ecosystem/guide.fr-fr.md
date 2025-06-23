@@ -27,7 +27,6 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 ### Protection des données - Sauvegarde Kubernetes
 
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
-
 | --- | --- | --- | --- |
 | **Veeam Kasten** | Compatible | N/A | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
 | **Cloud Casa** | Compatible | Officiellement pris en charge, détails sur la page [produit Cloud Casa](https://cloudcasa.io/partners/ovhcloud-kubernetes-backup-and-dr/){.external} | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa) |
