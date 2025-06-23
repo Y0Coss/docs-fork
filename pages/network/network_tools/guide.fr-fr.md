@@ -1,67 +1,71 @@
 ---
-title: Utiliser les outils de mise en réseau disponibles pour les clients OVHcloud
-excerpt: Découvrez comment utiliser les outils de mise en réseau disponibles pour les clients OVHcloud
-updated: 2025-06-20
+title: "Utiliser les outils d'analyse de connectivité réseau disponibles pour les clients OVHcloud"
+excerpt: "Découvrez comment utiliser les outils d'analyse de connectivité réseau disponibles pour les clients OVHcloud"
+updated: 2025-06-23
 ---
 
 ## Objectif
 
 OVHcloud fournit plusieurs outils aux clients et aux prospects pour tester et évaluer leur connectivité réseau avec les services OVHcloud. Dans cet article, nous verrons comment utiliser ces outils.
 
-## Topics
+## En pratique
+
+Voici la liste des outils d'analyse de connectivité réseau proposés par OVHcloud :
 
 - [Looking Glass](#lookingglass)
 - [Proof](#proof)
 - [Smokeping](#smokeping)
 - [Weathermap](#weathermap)
 
-
 ### Looking Glass <a name="lookingglass"></a>
 
-[Looking Glass](https://lg.ovh.net/) est un outil qui vous permet d’exécuter un traceroute ou de visualiser la table de routage vers n’importe quelle IP comme si vous utilisiez une machine dans un datacenter OVHcloud. Cet outil est idéal si vous êtes un client potentiel d'OVHcloud ou si vous envisagez d'étendre votre présence à d'autres centres de données. Cela permettra de s’assurer que le réseau est suffisant pour vos besoins. L'interface utilisateur est très simple.
+[Looking Glass](https://lg.ovh.net/) est un outil qui vous permet d’exécuter un traceroute ou de visualiser la table de routage vers n’importe quelle adresse IP comme si vous utilisiez une machine dans un datacentre OVHcloud. Cet outil est idéal si vous êtes un client potentiel d'OVHcloud ou si vous envisagez d'étendre votre présence à d'autres datacentres. Cela vous permettra de vous assurer que le réseau est suffisant pour vos besoins. L'interface utilisateur est très simple.
 
-1. Instructions pour les différentes commandes que vous pouvez exécuter.
-2. Sélectionnez le datacenter dans lequel vous souhaitez exécuter le test.
-3. Sélectionnez la commande que vous souhaitez exécuter ainsi que l'IP/URL vers laquelle vous souhaitez obtenir l'itinéraire.
-4. Historique récent de vos requêtes pour vous permettre de les relancer rapidement.
-
+1. Présentation des commandes disponibles que vous pouvez exécuter.
+2. Choix du datacentre depuis lequel vous souhaitez lancer le test.
+3. Sélection de la commande à exécuter, ainsi que de l’adresse IP ou de l’URL cible pour tracer l’itinéraire.
+4. Accès à l’historique de vos requêtes, vous permettant de les relancer facilement.
 
 ![looking glass](images/networktools1.png){.thumbnail}
 
 ### Proof <a name="proof"></a>
 
-[Proof](https://proof.ovh.us/) est un test de vitesse pour le réseau d'OVHcloud. Proof vous propose trois options : un test de vitesse générique, des fichiers arbitraires à télécharger pour tester la vitesse, et un test de vitesse de preuve (vous permettant de choisir le datacenter).
+[Proof](https://proof.ovh.net/) est un outil de mesure du débit pour le réseau d’OVHcloud. Il propose trois options : un test de débit standard, un test de débit avancé (permettant de choisir le datacentre), ainsi que des fichiers à télécharger pour évaluer la vitesse de téléchargement.
+
+La première fois que vous accédez au site, vous êtes redirigé vers l'onglet **Speedtest**. Il s'agit d'un test de débit standard.
 
 ![proof](images/networktools2.png){.thumbnail}
 
-La première fois que vous accédez au site, vous êtes redirigé vers l'onglet **Speedtest**. Il s'agit d'un test de vitesse normal. Si vous cliquez sur *Files*, vous serez redirigé vers la page suivante :
+Si vous cliquez sur l'onglet **Files**, vous serez redirigé vers la page suivante :
 
 ![test de vitesse](images/networktools3.png){.thumbnail}
 
-Choisissez la taille du fichier que vous souhaitez tester et téléchargez le fichier pour tester votre vitesse de téléchargement sur le réseau d'OVHcloud. Le dernier onglet est l'onglet ***Proofs***. Dans le menu déroulant, sélectionnez le datacenter à tester. Vous serez ensuite soumis au test de vitesse avec ce datacenter sélectionné.
+Choisissez la taille du fichier que vous souhaitez tester, et téléchargez ce fichier pour tester votre vitesse de téléchargement depuis le réseau d'OVHcloud.
 
-![choix du datacenter](images/networktools4.png){.thumbnail}
+Le dernier onglet, **Proofs**, vous permet de choisir le datacentre à tester via un menu déroulant. Vous pourrez alors lancer un test de débit vers ce datacentre.
 
-### Smokeping <a name="smokingping"></a>
+![choix du datacentre](images/networktools4.png){.thumbnail}
 
-[Smokeping](https://smokeping.ovh.net/smokeping) est un outil de surveillance permettant de vérifier l’accessibilité ICMP, la latence et le changement de chemin de trafic (traceroute) pour les datacenters externes AS/internes OVH, via FPing, à l'aide d'un exemple d'adresse IP/IPv6 (ajouté manuellement).
+### Smokeping <a name="smokeping"></a>
 
-Des serveurs Smokeping Probe sont installés dans chaque datacenter OVH pour collecter les logs.
+[Smokeping](https://smokeping.ovh.net/smokeping) est un outil de surveillance permettant de vérifier la réponse aux requêtes ICMP (c'est à dire la réponse au ping), la latence et les changements de routage (traceroute) vers des datacentres externes (AS) ou internes à OVHcloud, à l'aide de FPing et d'une adresse IPv4 ou IPv6 ajoutée manuellement.
 
-Une fois que vous avez accédé à l'outil Smokeping, vous verrez un menu de navigation supérieur (où un datacenter peut être sélectionné) et un menu de navigation latéral avec les options suivantes :
+Des serveurs Smokeping Probe sont installés dans chaque datacentre OVHcloud pour collecter les logs.
 
-1. **OVH :** Surveille une adresse IP spécifique dans les destinations DC, POP et Anycast OVH.
-2. **ANYCAST :** Destinations Anycast mondiales telles que DNS Google et DNS CloudFlare plus destinations d'autres fournisseurs de CDN.
-3. **EMEA :** Fournisseurs de services, de contenus et/ou de cloud en Europe.
-4. **USA / CANADA :** Fournisseurs de services, de contenus et/ou de cloud aux États-Unis et au Canada.
-5. **SA :** Fournisseurs de services, de contenus et/ou de cloud en Amérique du Sud
-6. **APAC :** Fournisseurs de services, de contenus et/ou de cloud en Asie / Océanie
+Depuis l'interface de Smokeping, vous pouvez sélectionner un datacentre à l’aide du menu en haut de la page. Le menu latéral situé à gauche vous donne ensuite accès aux options suivantes :
+
+1. **OVH** : Permet de surveiller une adresse IP spécifique au sein des destinations OVHcloud, incluant les DC (datacentres), les POP (points de présence) et les services Anycast.
+2. **ANYCAST** : Couvre les destinations Anycast mondiales, comme les serveurs DNS de Google ou de Cloudflare, ainsi que d'autres fournisseurs de CDN.
+3. **EMEA** : Regroupe les fournisseurs de services, de contenu et/ou de cloud situés en Europe, au Moyen-Orient et en Afrique.
+4. **USA / CANADA** : Inclut les fournisseurs de services, de contenu et/ou de cloud basés aux États-Unis et au Canada.
+5. **SA** : Regroupe les fournisseurs de services, de contenus et/ou de cloud situés en Amérique du Sud.
+6. **APAC** : Inclut les fournisseurs de services, de contenus et/ou de cloud basés en Asie et dans la région Pacifique (Océanie).
 
 ![smokeping](images/networking_tools01_.png){.thumbnail}
 
-Pour afficher les résultats de la latence pour une région entière, cliquez sur [code]3. EMEA, puis le nom de la région. Vous pouvez afficher la perte de latence/ping pour l'ASN surveillé dans cette région spécifique.
+Pour afficher les résultats de la latence pour une région entière, cliquez sur la zone concercnée, par exemple *3. EMEA*, puis sur le nom de la région. Vous pouvez afficher la perte de latence/ping pour l'ASN surveillé dans cette région spécifique.
 
-![latency results](images/networking_tools02_.png){.thumbnail}
+![Affichage latence](images/networking_tools02_.png){.thumbnail}
 
 Vous pouvez utiliser la zone de recherche dans le coin supérieur droit pour vérifier les résultats d'un AS/Nom spécifique. Tous les résultats seront affichés sur le côté gauche de la page.
 
@@ -73,13 +77,13 @@ Si vous cliquez sur le nom du fournisseur dans les résultats de la recherche, v
 
 ### Weathermap <a name="weathermap"></a>
 
-Le [weathermap OVHcloud](https://weathermap.ovh.net/) permet de visualiser la structure du réseau. Vous pouvez y voir le pourcentage de la charge de trafic sur chaque lien.
+Le [weathermap OVHcloud](https://weathermap.ovh.net/) permet de visualiser la structure du réseau. Vous pouvez y observer le pourcentage de la charge de trafic sur chaque lien.
 
-1. Choix du datacenter
-2. Rechercher dans les zones et ajuster la période
-3. Charger la légende de l'échelle
-4. Conseils de navigation
-5. Voir les détails du lien
+1. Choix du datacentre.
+2. Rechercher dans les zones et ajuster la période.
+3. Charger la légende de l'échelle.
+4. Conseils de navigation.
+5. Voir les détails du lien.
 
 ![weathermap](images/networking_tools05_.png){.thumbnail}
 
