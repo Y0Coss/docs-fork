@@ -1417,6 +1417,7 @@
             + [Getting started with PostgreSQL](web_cloud/web_cloud_databases/using-pgsql)
         + [Configuration](web-cloud-clouddb-configuration)
             + [Creating databases and users on your database server](web_cloud/web_cloud_databases/create-db-and-user-on-db-server)
+            + [Web Cloud Databases - Modifying a user's rights](web_cloud/web_cloud_databases/modify_rights_for_users)
             + [Connecting to a database on your database server](web_cloud/web_cloud_databases/connecting-to-database-on-database-server)
             + [Backing up and exporting a database of your database server](web_cloud/web_cloud_databases/save-export-on-database-server)
             + [Restoring and importing a database to your database server](web_cloud/web_cloud_databases/restore-import-on-database-server)
