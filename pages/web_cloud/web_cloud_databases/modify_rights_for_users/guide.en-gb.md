@@ -6,15 +6,15 @@ updated: 2025-06-19
 
 ## Objective
 
-The [Web Cloud Databases](/links/web/databases) solution can contain several databases. You can use it to define one or more users for managing and using your databases. These users may have higher or lower rights depending on their roles in your databases.
+The [Web Cloud Databases](/links/web/databases) solution can contain several databases. You can use it to define one or more users for managing and using your databases. These users may have higher or lower rights depending on their roles in your databases.  
 While using the product, you may need to modify a user’s permissions on your [Web Cloud Databases](/links/web/databases).
 
 **Find out how to change a user's permissions on your Web Cloud Databases solution.**
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
-- You must have a [Web Cloud Databases](/links/web/databases) solution and one or more users.
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Web Cloud Databases](/links/web/databases) solution and one or more users
 
 ## Instructions
 
