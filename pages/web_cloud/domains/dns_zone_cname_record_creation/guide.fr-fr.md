@@ -40,7 +40,6 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 > Dans ce cas, une requête de résolution DNS effectuée sur le sous-domaine **www.domain.tld** peut retourner aléatoirement la cible **domain.tld** de l'enregistrement CNAME ou la valeur **AbCdEf-TXT-Value-GhIjKl** de l'enregistrement TXT.
 
 **Vous avez déjà un enregistrement de type CNAME dans votre zone DNS ?** Suivez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ». 
-> Pour modifier ou supprimer un enregistrement DNS de type CNAME d'une zone DNS OVHcloud, suivez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ## Prérequis
 
