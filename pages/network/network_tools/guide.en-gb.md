@@ -30,7 +30,7 @@ Below is the list of network connectivity analysis tools offered by OVHcloud:
 
 ### Proof <a name="proof"></a>
 
-[Proof](https://proof.ovh.us/) is a speed test for OVHcloud's network. Proof gives you three options: a generic speed test, arbitrary files to download to test speed, and a proof speed test (allowing you to choose the data centre).
+[Proof](https://proof.ovh.net/) is a speed test for OVHcloud's network. Proof gives you three options: a generic speed test, arbitrary files to download to test speed, and a proof speed test (allowing you to choose the data centre).
 
 When you first go to the site, you will be directed to the **Speedtest** tab. This is a normal speed test.
 
@@ -87,7 +87,7 @@ The [OVHcloud weathermap](https://weathermap.ovh.net/) is a way to view the netw
 
 ![weathermap](images/networking_tools05_.png){.thumbnail}
 
-For more information and tutorials, please see our other [Networking and Security support guides](/products/network) or explore the [guides for other OVHcloud products and services](https://help.ovhcloud.com/csm/en-gb-documentation?id=kb_home).
+For more information and tutorials, please see our other [Networking and Security support guides](/products/network) or explore the [guides for other OVHcloud products and services](/links/documentation).
 
 ## Go further
 

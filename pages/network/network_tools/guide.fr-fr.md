@@ -87,7 +87,7 @@ Le [weathermap OVHcloud](https://weathermap.ovh.net/) permet de visualiser la st
 
 ![weathermap](images/networking_tools05_.png){.thumbnail}
 
-Pour plus d'informations et de tutoriels, veuillez consulter nos autres [guides d’assistance sur la mise en réseau et la sécurité](/products/network) ou explorer les [guides for other OVHcloud products and services](https://help.ovhcloud.com/csm/fr-documentation?id=kb_home).
+Pour plus d'informations et de tutoriels, veuillez consulter nos autres [guides d’assistance sur la mise en réseau et la sécurité](/products/network) ou explorer les [guides for other OVHcloud products and services](/links/documentation).
 
 ## Aller plus loin
 
