@@ -1,7 +1,7 @@
 ---
 title: "How do I configure the WHOIS display for a domain name?"
 excerpt: "Find out how to show or hide certain information contained in a domain name's WHOIS in your OVHcloud Control Panel"
-updated: 2025-06-20
+updated: 2025-06-23
 ---
 
 ## Objective

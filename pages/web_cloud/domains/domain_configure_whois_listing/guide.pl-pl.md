@@ -1,7 +1,7 @@
 ---
 title: "Jak skonfigurować wyświetlanie danych w bazie WHOIS?"
 excerpt: "Dowiedz się, jak wyświetlić lub ukryć niektóre informacje zawarte w bazie WHOIS domeny w Panelu klienta OVHcloud"
-updated: 2025-06-20
+updated: 2025-06-23
 ---
 
 ## Wprowadzenie

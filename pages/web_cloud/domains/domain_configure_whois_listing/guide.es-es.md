@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo configurar la visualización del WHOIS de un dominio?"
 excerpt: "Descubra cómo mostrar u ocultar determinados datos contenidos en el Whois de un dominio desde el área de cliente de OVHcloud"
-updated: 2025-06-20
+updated: 2025-06-23
 ---
 
 ## Objetivo

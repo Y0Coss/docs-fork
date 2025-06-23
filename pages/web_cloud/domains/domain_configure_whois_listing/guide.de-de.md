@@ -1,7 +1,7 @@
 ---
 title: "Wie konfiguriere ich die Anzeige des WHOIS einer Domain?"
 excerpt: "Hier erfahren Sie, wie Sie bestimmte Informationen im WHOIS einer Domain über Ihr OVHcloud Kundencenter ein- oder ausblenden."
-updated: 2025-06-20
+updated: 2025-06-23
 ---
 
 ## Ziel
