@@ -87,7 +87,6 @@ Consultez nos guides détaillés :
 
 ## Aller plus loin
 
-[Tout savoir sur les zones DNS](/pages/web_cloud/domains/dns_zone_general_information)
 
 [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
