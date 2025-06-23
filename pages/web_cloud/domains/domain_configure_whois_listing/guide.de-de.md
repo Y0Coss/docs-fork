@@ -1,20 +1,20 @@
 ---
 title: "Wie konfiguriere ich die Anzeige des WHOIS einer Domain?"
-excerpt: "Hier erfahren Sie, wie Sie bestimmte Informationen im WHOIS einer Domain über Ihr OVHcloud Kundencenter ein- oder ausblenden."
+excerpt: "Erfahren Sie, wie Sie bestimmte Informationen im WHOIS einer Domain über Ihr OVHcloud Kundencenter ein- oder ausblenden"
 updated: 2025-06-23
 ---
 
 ## Ziel
 
-Das WHOIS, abgekürzt „Who is? “, ist ein Protokoll, das den Zugriff auf verschiedene Informationen im Zusammenhang mit einem Domainnamen ermöglicht.
+Das WHOIS, für "Who is?", ist ein Protokoll, das den Zugriff auf verschiedene Informationen im Zusammenhang mit einem Domainnamen ermöglicht.
 
 Die folgenden Informationen sind beispielsweise enthalten (nicht erschöpfende Liste):
 
-- Kontaktdaten des Inhabers (Abonnenten), des Administrators und des technischen Kontakts des Dienstes.
-- Angabe der Verfügbarkeit zum Kauf.
-- Datum der Erstellung, des Ablaufs, der letzten Änderung und der Verlängerung.
-- Status (erstellt, gesperrt, abgelaufen usw.).
-- usw.
+- Kontaktdaten des Inhabers (Abonnenten), des Administrators und des technischen Kontakts des Dienstes
+- Angabe der Verfügbarkeit zum Kauf
+- Datum der Erstellung, des Ablaufs, der letzten Änderung und der Verlängerung
+- Status (erstellt, gesperrt, abgelaufen, etc.)
+- etc.
 
 Bei der Verwendung Ihres Domainnamens kann es vorkommen, dass Sie bestimmte Informationen im WHOIS ein- oder ausblenden müssen.
 
@@ -27,10 +27,10 @@ Bei der Verwendung Ihres Domainnamens kann es vorkommen, dass Sie bestimmte Info
 
 > [!warning]
 >
-> Einige Registrys (Organisationen, die Domainendungen wie *.com*, *.net*, usw. verwalten) erlauben es nicht, die Maskierung oder Anzeige bestimmter Informationen im WHOIS zu erzwingen.
-> Es sind nämlich die Registrys, die die Anzeigeregeln definieren und bestimmen, welche Informationen der WHOIS der von ihnen verwalteten Endung enthalten muss oder nicht.
+> Einige Registrys (Organisationen, die Domainendungen wie *.com*, *.net*, etc. verwalten) erlauben es nicht, die Maskierung oder Anzeige bestimmter Informationen im WHOIS zu erzwingen.  
+> Es sind die Registrys, die Anzeigeregeln definieren und bestimmen, welche Informationen im WHOIS der von ihnen verwalteten Endung öffentlich sind.
 >
-> Es ist daher möglich, dass Ihre Anfrage trotz Ihrer Wünsche bezüglich der Anzeige oder Maskierung Ihres Domainnamens im WHOIS nicht berücksichtigt wird.
+> Es ist daher möglich, dass Ihre Anfrage bezüglich der Anzeige oder Maskierung Ihres Domainnamens im WHOIS nicht berücksichtigt wird.
 
 ## In der praktischen Anwendung
 
@@ -39,7 +39,7 @@ Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 > [!tabs]
 > **Schritt 1**
 >>
->> Loggen Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
@@ -57,9 +57,9 @@ Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 >>
 > **Schritt 4**
 >>
->> Auf der neu geöffneten Seite können Sie im Rahmen der von der Registry, die die Domainendung verwaltet, genehmigten Aktionen auswählen, ob die Informationen zu den Inhabern, Administratoren und technischen Kontakten der Domain `Anzeige` oder `Verbergen` werden sollen.
+>> Auf der neu geöffneten Seite können Sie im Rahmen der von der Registry, die die Domainendung verwaltet, genehmigten Aktionen auswählen, ob die Informationen zu den Inhabern, Administratoren und technischen Kontakten der Domain `angezeigt` oder `verborgen` werden sollen.
 >>
->> Aktivieren Sie für jeden der 3 Kontakte das Kontrollkästchen `Anzeige für jedes Feld einzeln verwalten`{.action}, um weitere Optionen anzuzeigen.
+>> Aktivieren Sie für jeden der 3 Kontakte die Option `Anzeige für jedes Feld einzeln verwalten`{.action}, um weitere Optionen anzuzeigen.
 >>
 >> ![Configure listing in WHOIS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing/configure-listing-in-whois.png){.thumbnail}
 >>
