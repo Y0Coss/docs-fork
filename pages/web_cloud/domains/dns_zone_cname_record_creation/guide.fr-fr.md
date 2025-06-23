@@ -20,7 +20,10 @@ details[open]>summary::before {
 
 ## Objectif
 
-Un enregistrement CNAME (**C**anonical **NAME**) est un type d’enregistrement DNS permettant d’associer un sous-domaine à un nom de domaine ou sous-domaine, au lieu de le faire pointer directement vers une adresse IP.
+Un enregistrement CNAME permet d'associer un sous-domaine à un nom de domaine ou sous-domaine, sans avoir à spécifier une adresse IP. Cela signifie que le sous-domaine sera redirigé vers l'adresse IP du nom de domaine ou sous-domaine cible, sans nécessiter de configuration supplémentaire.
+
+Par exemple, si vous créez un enregistrement CNAME pour *www.domain.tld* qui pointe vers *domain.tld*, alors *www.domain.tld* utilisera la même adresse IP que *domain.tld*.
+Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adresses IP pour vos sous-domaines. Ils peuvent également être utilisés pour configurer des services comme les serveurs e-mail.
 On parle alors d’« alias » : le sous-domaine alias reprend automatiquement l'adresse IP du nom de domaine ou sous-domaine cible.
 Par exemple, si l'on indique via un enregistrement CNAME présent dans la zone DNS active du nom de domaine **domain.tld**, que *www.domain.tld* est un alias de *domain.tld*, alors *www.domain.tld* utilisera l'adresse IP de *domain.tld*.
 
