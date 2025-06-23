@@ -1,7 +1,7 @@
 ---
 title: "Ajouter un enregistrement DNS de type TXT pour un nom de domaine"
 excerpt: "Découvrez comment ajouter un enregistrement DNS de type TXT dans une zone DNS gérée chez OVHcloud pour votre nom de domaine"
-updated: 2025-06-18
+updated: 2025-06-23
 ---
 
 <style>

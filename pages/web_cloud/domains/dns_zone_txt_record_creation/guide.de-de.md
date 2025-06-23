@@ -1,7 +1,7 @@
 ---
 title: "DNS-TXT-Eintrag für einen Domainnamen hinzufügen"
 excerpt: "Erfahren Sie hier, wie Sie einen DNS-Eintrag vom Typ TXT zu einer von OVHcloud verwalteten DNS-Zone für Ihre Domain hinzufügen"
-updated: 2025-06-17
+updated: 2025-06-23
 ---
 
 <style>

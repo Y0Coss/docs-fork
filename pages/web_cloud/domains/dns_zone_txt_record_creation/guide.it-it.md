@@ -1,7 +1,7 @@
 ---
 title: "Aggiungere un record DNS di tipo TXT per un dominio"
 excerpt: "Scopri come aggiungere un record DNS di tipo TXT a una zona DNS gestita in OVHcloud per il tuo dominio"
-updated: 2025-06-18
+updated: 2025-06-23
 ---
 
 <style>

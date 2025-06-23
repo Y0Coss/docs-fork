@@ -1,7 +1,7 @@
 ---
 title: "Adicionar um registo DNS do tipo TXT para um domínio"
 excerpt: "Saiba como adicionar um registo DNS do tipo TXT numa zona DNS gerida na OVHcloud para o seu domínio"
-updated: 2025-06-18
+updated: 2025-06-23
 ---
 
 <style>

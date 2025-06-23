@@ -1,7 +1,7 @@
 ---
 title: "How to add a DNS TXT record for a domain name"
 excerpt: "Find out how to add an TXT record to an OVHcloud DNS zone for your domain name"
-updated: 2025-06-17
+updated: 2025-06-23
 ---
 
 <style>
