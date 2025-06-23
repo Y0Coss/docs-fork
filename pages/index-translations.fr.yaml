@@ -317,7 +317,7 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Agent Backup for IaaS
-network-byoip: Bring your own IP (BYOIP)
+network-general-information: Informations générales
 network-additional-ip: Additional IP
 network-bgp: BGP Service
 network-security: Réseau et Sécurité
