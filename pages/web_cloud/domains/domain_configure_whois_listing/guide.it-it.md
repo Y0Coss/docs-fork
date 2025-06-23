@@ -27,8 +27,8 @@ Durante l’utilizzo del dominio potrebbe essere necessario mostrare o nasconder
 
 > [!warning]
 >
-> Alcuni Registri (enti che gestiscono le estensioni dei domini come *.com*, *.net*, ecc...) non autorizzano a forzare la mascheratura o la visualizzazione di alcune informazioni presenti nel WHOIS.
-> in effetti, sono i registri che definiscono le regole di visualizzazione e determinano le informazioni che devono o non devono contenere il WHOIS dell'estensione che gestiscono.
+> Alcuni Registri (enti che gestiscono le estensioni dei domini come *.com*, *.net*, ecc.) non autorizzano a forzare la mascheratura o la visualizzazione di alcune informazioni presenti nel WHOIS.
+> In effetti, sono i registri che definiscono le regole di visualizzazione e determinano le informazioni che devono o non devono contenere il WHOIS dell'estensione che gestiscono.
 >
 > Di conseguenza, è possibile che, malgrado i vostri desideri in termini di visualizzazione o di mascheramento nel WHOIS del vostro nome a dominio, la vostra richiesta non venga presa in carico.
 
@@ -53,7 +53,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 >> Nella nuova pagina, nel riquadro **Sicurezza**, clicca sul pulsante `Configura la visualizzazione del WHOIS`{.action}.
 >>
->>![Configure WHOIS listing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing.png){.thumbnail}
+>> ![Configure WHOIS listing](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/configure-whois-listing.png){.thumbnail}
 >>
 > **Passaggio 4**
 >>
@@ -65,7 +65,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >>
 >> Una volta effettuate le scelte, clicca sul pulsante `Registrare le modifiche`{.action}.
 >>
->> per l'applicazione delle modifiche potrebbe essere necessario un massimo di **48** ore. Le modifiche saranno applicate **solo se autorizzate dal Registro che gestisce l’estensione del dominio**.
+>> Per l'applicazione delle modifiche potrebbe essere necessario un massimo di **48** ore. Le modifiche saranno applicate **solo se autorizzate dal Registro che gestisce l’estensione del dominio**.
 
 ## Per saperne di più
  

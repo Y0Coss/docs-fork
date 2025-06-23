@@ -13,7 +13,7 @@ Na przykład można tam znaleźć następujące informacje (lista nie jest wycze
 - Dane właściciela (subskrybenta), administratora i kontaktu technicznego usługi.
 - Informacja o gotowości do zakupu.
 - Daty utworzenia, wygaśnięcia, ostatniej modyfikacji i odnowienia.
-- Status (utworzony, zablokowany, wygasł, etc.).
+- Status (utworzony, zablokowany, wygasł, itp.).
 - Itp.
 
 Podczas używania nazwy domeny może być konieczne wyświetlenie lub ukrycie niektórych informacji w bazie WHOIS.
@@ -69,7 +69,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **4**.
 
 ## Sprawdź również
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  

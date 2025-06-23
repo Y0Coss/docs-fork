@@ -6,15 +6,15 @@ updated: 2025-06-23
 
 ## Objetivo
 
-O WHOIS, abreviação do inglês « Who is? », é um protocolo que permite aceder a diferentes informações ligadas a um nome de domínio.
+O WHOIS, abreviação do inglês "Who is?", é um protocolo que permite aceder a diferentes informações ligadas a um nome de domínio.
 
 Por exemplo, pode encontrar as seguintes informações (lista não exaustiva):
 
 - Dados de contacto do titular (subscritor), do administrador e do contacto técnico do serviço.
-- Indicação da disponibilidade aquando da compra.
+- Indicação da disponibilidade para a compra.
 - Datas de criação, expiração, última modificação e renovação.
 - Estado (criado, bloqueado, expirado, etc.).
-- etc.
+- Etc.
 
 Durante a utilização do domínio, poderá ser necessário mostrar ou ocultar algumas informações presentes no WHOIS.
 

@@ -6,7 +6,7 @@ updated: 2025-06-23
 
 ## Objetivo
 
-El Whois, abreviatura del inglés «¿Quién es?», es un protocolo que permite acceder a diferentes datos asociados a un dominio.
+El Whois, abreviatura del inglés "¿Who is?", es un protocolo que permite acceder a diferentes datos asociados a un dominio.
 
 Por ejemplo, puede encontrar la siguiente información (lista no exhaustiva):
 
