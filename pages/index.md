@@ -1267,6 +1267,7 @@
                 + [Everything you need to know about DNS records](web_cloud/domains/dns_zone_records)
                 + [How to add a DNS A record for a domain name](web_cloud/domains/dns_zone_a_record_creation)
                 + [How to add a DNS AAAA record for a domain name](web_cloud/domains/dns_zone_aaaa_record_creation)
+                + [How to add a DNS TXT record for a domain name](web_cloud/domains/dns_zone_txt_record_creation)
                 + [Add an MX record to your domain name’s configuration](web_cloud/domains/dns_zone_mx)
                 + [Adding an SPF record to the configuration of your domain name](web_cloud/domains/dns_zone_spf)
                 + [Adding a DKIM record to the configuration of your domain name](web_cloud/domains/dns_zone_dkim)
