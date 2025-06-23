@@ -6,11 +6,11 @@ updated: 2024-01-11
 
 ## Wprowadzenie
 
-Może zaistnieć potrzeba przeniesienia dodatkowych wolumenów z jednego regionu OpenStack do innego, ponieważ jest dostępny nowy region lub chcesz przenieść z [OVHcloud Labs](https://labs.ovh.com/) do [Public Cloud](https://www.ovh.com/pl/public-cloud).
+Może zaistnieć potrzeba przeniesienia dodatkowych wolumenów z jednego regionu OpenStack do innego, ponieważ jest dostępny nowy region lub chcesz przenieść z [OVHcloud Labs](https://labs.ovh.com/) do [Public Cloud](/links/public-cloud/compute).
 
 **Dowiedz się, jak przenieść kopię zapasową wolumenu z jednego regionu OpenStack do innego.**
 
-## Wymagania
+## Wymagania początkowe
 
 Do przeniesienia będziesz potrzebował środowiska z:
 

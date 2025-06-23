@@ -168,7 +168,7 @@ A nossa infraestrutura Anti-DDoS (VAC) funciona de duas formas: **auto** e **per
 
 - **A mitigação automática** é a predefinição: Todos os IPs da OVHcloud estão sob mitigação automática. Geralmente, esta é a melhor escolha para os seus serviços. Caso seja detetado algum tráfego malicioso, o centro de depuração é ativado. Este estado é indicado pelo estado "Forçado" para um determinado endereço IP. Neste momento, a Firewall Edge Network também está ativa. A situação volta ao normal quando o ataque é mitigado e não se observa mais nenhuma atividade suspeita.
 
-- ** O modo de mitigação permanente** pode ser ativado ou desativado a partir da Área de Cliente OVHcloud. Com a mitigação permanente, aplica de forma permanente o primeiro nível de filtragem, pelo que todo o tráfego passa sempre pelo sistema de mitigação antes de chegar ao servidor. Não recomendamos que ative esta opção por períodos mais longos, exceto se observar um certo nervosismo devido ao facto de o centro de limpeza redirecionar o tráfego com demasiada frequência.
+- **O modo de mitigação permanente** pode ser ativado ou desativado a partir da Área de Cliente OVHcloud. Com a mitigação permanente, aplica de forma permanente o primeiro nível de filtragem, pelo que todo o tráfego passa sempre pelo sistema de mitigação antes de chegar ao servidor. Não recomendamos que ative esta opção por períodos mais longos, exceto se observar um certo nervosismo devido ao facto de o centro de limpeza redirecionar o tráfego com demasiada frequência.
 
 Note que, quando comparado com o modo automático, o nível de proteção aumenta **não** quando o modo atual é ativado.
 

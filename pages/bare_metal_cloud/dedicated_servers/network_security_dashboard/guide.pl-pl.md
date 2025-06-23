@@ -50,7 +50,7 @@ W trakcie ataku, aktywne filtrowanie jest wskazane przez ikonę ostrzegawczą na
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.action} w menu po lewej stronie ekranu, a następnie `Publiczne adresy IP`{.action}. Upewnij się, że `Tryb zaawansowany` jest włączony, aby sprawdzić stan infrastruktury anty-DDoS i konfigurację jej komponentów
 
-Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Network **Firewall* i **GAME firewall** charakteryzują się dostępnością i statusami.
+Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Network **Firewall** i **GAME firewall** charakteryzują się dostępnością i statusami.
 
 - Stan **Filtrowanie** może być następujący:
     - **Automatycznie** - Centrum czyszczenia jest w trybie **automatycznym**. Jest to tryb zalecany do użycia. W razie potrzeby przekierowuje ruch w celu głębszej analizy.
