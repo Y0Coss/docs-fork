@@ -22,9 +22,9 @@ Voici la liste des outils d'analyse de connectivité réseau proposés par OVHcl
 [Looking Glass](https://lg.ovh.net/) est un outil qui vous permet d’exécuter un traceroute ou de visualiser la table de routage vers n’importe quelle adresse IP comme si vous utilisiez une machine dans un datacentre OVHcloud. Cet outil est idéal si vous êtes un client potentiel d'OVHcloud ou si vous envisagez d'étendre votre présence à d'autres datacentres. Cela vous permettra de vous assurer que le réseau est suffisant pour vos besoins. L'interface utilisateur est très simple.
 
 1. Présentation des commandes disponibles que vous pouvez exécuter.
-2. Choix du datacentre depuis lequel vous souhaitez lancer le test.
-3. Sélection de la commande à exécuter, ainsi que de l’adresse IP ou de l’URL cible pour tracer l’itinéraire.
-4. Accès à l’historique de vos requêtes, vous permettant de les relancer facilement.
+2. Choisissez le datacentre depuis lequel vous souhaitez lancer le test.
+3. Sélectionnez la commande à exécuter, puis renseignez l’adresse IP ou l’URL cible pour tracer l’itinéraire.
+4. Accédez à l’historique de vos requêtes, vous pouvez ainsi les relancer facilement.
 
 ![looking glass](images/networktools1.png){.thumbnail}
 
@@ -79,11 +79,11 @@ Si vous cliquez sur le nom du fournisseur dans les résultats de la recherche, v
 
 Le [weathermap OVHcloud](https://weathermap.ovh.net/) permet de visualiser la structure du réseau. Vous pouvez y observer le pourcentage de la charge de trafic sur chaque lien.
 
-1. Choix du datacentre.
-2. Rechercher dans les zones et ajuster la période.
-3. Charger la légende de l'échelle.
-4. Conseils de navigation.
-5. Voir les détails du lien.
+1. Choisissez le datacentre souhaité.
+2. Recherchez des zones et ajustez la période.
+3. Visualisez la légende relative à la charge de trafic sur chaque lien.
+4. Obtenez des conseils de navigation.
+5. Accédez aux détails du lien.
 
 ![weathermap](images/networking_tools05_.png){.thumbnail}
 
