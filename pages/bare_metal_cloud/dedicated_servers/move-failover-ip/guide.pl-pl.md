@@ -27,7 +27,7 @@ Bloki adresów IP w regionie mogą być przenoszone między centrami danych w da
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external} w Panelu klienta
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) w Panelu klienta
 - Posiadanie [adresu Additional IP](/links/network/additional-ip)
 - Dostęp do [panelu klienta OVHcloud](/links/manager)
 
