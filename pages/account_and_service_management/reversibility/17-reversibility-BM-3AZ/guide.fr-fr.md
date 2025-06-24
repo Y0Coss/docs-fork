@@ -7,8 +7,7 @@ updated: 2025-06-24
 
 Ce document est la politique de réversibilité pour la gamme de produits Dedicated Server 3-AZ.
 
-Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
-
+Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au code de conduite IaaS SWIPO pour les fournisseurs Cloud.
 ## Liste des fonctionnalités
 
 Les fonctionnalités des serveurs dédiés sont divisées en trois catégories :
