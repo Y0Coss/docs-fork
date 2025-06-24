@@ -58,7 +58,8 @@ Aucun frais de résiliation : pas de surfacturation à l’usage. Le service est
 
 ## Conservation des données après résiliation du contrat
 
-Les données (Objets et Buckets) peuvent être supprimées par action du client (CLI) ou via une décommission du service en supprimant le projet Public Cloud relatif au produit. Ceci déclenche une libération automatique des ressources. Aucune restauration de données ne sera possible après ces actions.
+Les données (Objets et Buckets) peuvent être supprimées par action du client (CLI) ou via un décommissionnnement du service en supprimant le projet Public Cloud relatif au produit. Ceci déclenche une libération automatique des ressources. Aucune restauration de données ne sera possible après ces actions.
+Une exportation manuelle préalable est obligatoire pour préserver les données.
 
 Un point d’attention doit être néanmoins porté à la fonctionnalité Object Lock. Retrouvez plus d’informations sur notre guide de [gestion de l'immuabilité des objets avec Object Lock (WORM)](/pages/storage_and_backup/object_storage/s3_managing_object_lock).
 
