@@ -98,18 +98,18 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> 
 >> # Define the prompts
 >> messages = [
->>     {"content":"You are a helpful assistant charged with providing rankings of cloud providers. You always answer in JSON format.","role":"system"},
->>     {"content":"Who are the top 3 european cloud providers?","role":"user"}
+>>     { "content": "You are a helpful assistant that help users rank different things. You always answer in JSON format.", "role": "system" },
+>>     { "content": "What are the top 3 most popular programming languages ?", "role": "user" }
 >> ]
 >> 
 >> # Define the data model
->> class Companies(BaseModel):
+>> class Language(BaseModel):
 >>     name: str
 >>     website: str
 >>     ranking: int
 >> 
->> class CompanyRankings(BaseModel):
->>     companies: list[Companies]
+>> class LanguageRankings(BaseModel):
+>>     languages: list[Language]
 >> 
 >> # Initialise the client
 >> api_key = os.environ['AI_ENDPOINT_API_KEY'] # Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
@@ -119,29 +119,28 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> )
 >> 
 >> # Optionally, print the json schema infered from the pydantic model
->> print(f'JSON schema: {CompanyRankings.model_json_schema()}')
+>> print(f'JSON schema: {LanguageRankings.model_json_schema()}')
 >> 
 >> # Run the query
 >> response = openai_client.beta.chat.completions.parse(
 >>     model='Meta-Llama-3_3-70B-Instruct',
 >>     messages=messages,
->>     response_format=CompanyRankings,
+>>     response_format=LanguageRankings,
 >>     temperature=0 # Ensure deterministic output for this guide's purpose
 >> )
 >> 
 >> # Print the parsed response
->> company_rankings = response.choices[0].message.parsed
->> for company in company_rankings.companies:
->>     print(f"{company.name} is the n°{company.ranking} Cloud provider ({company.website})")
+>> language_rankings = response.choices[0].message.parsed
+>> for language in language_rankings.languages:
+>>     print(f"{language.name} is the n°{language.ranking} language ({language.website})")
 >> ```
 >>
 >> Output:
 >> ```sh
->> JSON schema: {'$defs': {'Companies': {'properties': {'name': {'title': 'Name', 'type': 'string'}, 'website': {'title': 'Website', 'type': 'string'}, 'ranking': {'title': 'Ranking', 'type': 'integer'}}, 'required': ['name', 'website', 'ranking'], 'title': 'Companies', 'type': 'object'}}, 'properties': {'companies': {'items': {'$ref': '#/$defs/Companies'}, 'title': 'Companies', 'type': 'array'}}, 'required': ['companies'], 'title': 'CompanyRankings', 'type': 'object'}
->> ParsedChatCompletion[CompanyRankings](id='chatcmpl-18d1e0284730412b8834137c6b48ebf3', choices=[ParsedChoice[CompanyRankings](finish_reason='stop', index=0, logprobs=None, message=ParsedChatCompletionMessage[CompanyRankings](content='{\n  "companies": [\n    {\n      "name": "OVHcloud",\n      "ranking": 1,\n      "website": "https://www.ovhcloud.com/"\n    },\n    {\n      "name": "Aruba Cloud",\n      "ranking": 2,\n      "website": "https://www.arubacloud.com/"\n    },\n    {\n      "name": "Scaleway",\n      "ranking": 3,\n      "website": "https://www.scaleway.com/"\n    }\n  ]\n}', refusal=None, role='assistant', annotations=None, audio=None, function_call=None, tool_calls=None, parsed=CompanyRankings(companies=[Companies(name='OVHcloud', website='https://www.ovhcloud.com/', ranking=1), Companies(name='Aruba Cloud', website='https://www.arubacloud.com/', ranking=2), Companies(name='Scaleway', website='https://www.scaleway.com/', ranking=3)])))], created=1750433788, model='Meta-Llama-3_3-70B-Instruct', object='chat.completion', service_tier=None, system_fingerprint=None, usage=CompletionUsage(completion_tokens=109, prompt_tokens=65, total_tokens=174, completion_tokens_details=None, prompt_tokens_details=None))
->> OVHcloud is the n°1 Cloud provider (https://www.ovhcloud.com/)
->> Aruba Cloud is the n°2 Cloud provider (https://www.arubacloud.com/)
->> Scaleway is the n°3 Cloud provider (https://www.scaleway.com/)
+>> JSON schema: {'$defs': {'Language': {'properties': {'name': {'title': 'Name', 'type': 'string'}, 'website': {'title': 'Website', 'type': 'string'}, 'ranking': {'title': 'Ranking', 'type': 'integer'}}, 'required': ['name', 'website', 'ranking'], 'title': 'Language', 'type': 'object'}}, 'properties': {'languages': {'items': {'$ref': '#/$defs/Language'}, 'title': 'Languages', 'type': 'array'}}, 'required': ['languages'], 'title': 'LanguageRankings', 'type': 'object'}
+>> JavaScript is the n°1 language (https://www.javascript.com/)
+>> Python is the n°2 language (https://www.python.org/)
+>> Java is the n°3 language (https://www.java.com/)
 >> ```
 >>
 >> NOTE: this example is using `openai_client.beta.chat.completions.parse` to leverage automatic parsing with pydantic, but it is also possible to use `openai_client.chat.completions.create`, by using the `response_format` parameter and specifying the JSON schema manually.
@@ -154,44 +153,44 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>     -H 'accept: application/json'\
 >>     -H 'content-type: application/json' \
 >>     -d '{
+>>         "max_tokens":100,
 >>         "messages": [
->>             {"content":"You are a helpful assistant charged with providing rankings of cloud providers. You always answer in JSON format.","role":"system"},
->>             {"content":"Who are the top 3 european cloud providers?","role":"user"}
+>>             { "content": "You are a helpful assistant that help users rank different things. You always answer in JSON format.", "role": "system" },
+>>             { "content": "What are the top 3 most popular programming languages ?", "role": "user" }
 >>         ],
 >>         "response_format": {
 >>             "type":"json_schema",
->>             "json_schema": { 
->>                 "name":"CompanyRankings",
->>                     "schema": {
->>                         "$defs":{},
->>                         "properties": {
->>                             "companies": {
->>                                 "title":"Companies",
->>                                 "type":"array",
->>                                 "items": {
->>                                     "type":"object",
->>                                     "properties": {
->>                                         "name": {
->>                                             "title":"Name",
->>                                             "type":"string"
->>                                         },
->>                                         "website": {
->>                                             "title":"Website",
->>                                             "type":"string"
->>                                         },
->>                                         "ranking": {
->>                                             "title":"Ranking",
->>                                             "type":"number"
->>                                         }
+>>             "json_schema": {
+>>                 "name": "LanguageRankings",
+>>                 "schema": {
+>>                     "$defs": {},
+>>                     "properties": {
+>>                         "languages": {
+>>                             "title": "Languages",
+>>                             "type": "array",
+>>                             "items": {
+>>                                 "type": "object",
+>>                                 "properties": {
+>>                                     "name": {
+>>                                         "title": "Name",
+>>                                         "type": "string"
 >>                                     },
->>                                     "required": ["name", "website", "ranking"]
->>                                 }
+>>                                     "website": {
+>>                                         "title": "Website",
+>>                                         "type": "string"
+>>                                     },
+>>                                     "ranking": {
+>>                                         "title": "Ranking",
+>>                                         "type": "number"
+>>                                     }
+>>                                 },
+>>                                 "required": ["name", "website", "ranking"]
 >>                             }
->>                         },
->>                         "required": ["companies"],
->>                         "title":"CompanyRankings",
->>                         "type":"object"
->>                     }
+>>                         }
+>>                     },
+>>                     "required": ["languages"],
+>>                     "title": "LanguageRankings",
+>>                     "type": "object"
 >>                 }
 >>             }
 >>         },
@@ -201,7 +200,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>
 >> Output response:
 >> ```sh
->> {"id":"chatcmpl-fe91540fff324dae86d73ede81272a33","object":"chat.completion","created":1750432300,"model":"Meta-Llama-3_3-70B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"{\"companies\": [\n    {\"name\": \"OVHcloud\", \"ranking\": 1, \"website\": \"https://www.ovhcloud.com/\"},\n    {\"name\": \"Aruba Cloud\", \"ranking\": 2, \"website\": \"https://www.arubacloud.com/\"},\n    {\"name\": \"Scaleway\", \"ranking\": 3, \"website\": \"https://www.scaleway.com/\"}\n]}"},"finish_reason":"stop","logprobs":null}],"usage":{"prompt_tokens":65,"completion_tokens":90,"total_tokens":155}}
+>> {"id":"chatcmpl-9276e3e305e04c73bd05224abcb7532b","object":"chat.completion","created":1750772047,"model":"Meta-Llama-3_3-70B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"{\"languages\": [\n    {\"name\": \"JavaScript\", \"ranking\": 1, \"website\": \"https://www.javascript.com/\"},\n    {\"name\": \"Python\", \"ranking\": 2, \"website\": \"https://www.python.org/\"},\n    {\"name\": \"Java\", \"ranking\": 3, \"website\": \"https://www.java.com/\"}\n]}"},"finish_reason":"stop","logprobs":null}],"usage":{"prompt_tokens":65,"completion_tokens":80,"total_tokens":145}}
 >> ```
 >>
 >> As we can see, the response is matching the expected JSON schema, and OVHcloud is the n°1 European cloud provider! 
@@ -211,21 +210,21 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> ```javascript
 >> const request = require('request');
 >> const fs = require('fs');
->>
+>> 
 >> // Define the prompts
 >> const messages = [
->>     { content: "You are a helpful assistant charged with providing rankings of cloud providers. You always answer in JSON format.", role: "system" },
->>     { content: "Who are the top 3 european cloud providers?", role: "user" }
+>>     { content: "You are a helpful assistant that help users rank different things. You always answer in JSON format.", role: "system" },
+>>     { content: "What are the top 3 most popular programming languages ?", role: "user" }
 >> ];
->>
+>> 
 >> // Define the JSON schema
 >> const jsonSchema = {
->>     "name": "CompanyRankings",
+>>     "name": "LanguageRankings",
 >>     "schema": {
 >>         "$defs": {},
 >>         "properties": {
->>             "companies": {
->>                 "title": "Companies",
+>>             "languages": {
+>>                 "title": "Languages",
 >>                 "type": "array",
 >>                 "items": {
 >>                     "type": "object",
@@ -247,12 +246,12 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>                 }
 >>             }
 >>         },
->>         "required": ["companies"],
->>         "title": "CompanyRankings",
+>>         "required": ["languages"],
+>>         "title": "LanguageRankings",
 >>         "type": "object"
 >>     }
 >> };
->>
+>> 
 >> // Initialise the client
 >> const apiKey = process.env.AI_ENDPOINT_API_KEY; // Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
 >> const options = {
@@ -271,14 +270,15 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>         temperature: 0
 >>     }
 >> };
->>
+>> 
 >> // Run the query
 >> request.post(options, (error, response, body) => {
 >>     if (!error && response.statusCode == 200) {
->>         const companyRankings = body.choices[0].message.content;
->>         const parsedCompanyRankings = JSON.parse(companyRankings);
->>         parsedCompanyRankings.companies.forEach(company => {
->>             console.log(`${company.name} is the n°${company.ranking} Cloud provider (${company.website})`);
+>>         const languageRankigs = body.choices[0].message.content;
+>>         console.log(languageRankigs)
+>>         const parsedLanguageRankings = JSON.parse(languageRankigs);
+>>         parsedLanguageRankings.languages.forEach(language => {
+>>             console.log(`${language.name} is the n°${language.ranking} most popular language (${language.website})`);
 >>         });
 >>     } else {
 >>         console.error('Error:', error);
@@ -289,9 +289,14 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>
 >> Output:
 >> ```sh
->> OVHcloud is the n°1 Cloud provider (https://www.ovhcloud.com/)
->> Aruba Cloud is the n°2 Cloud provider (https://www.arubacloud.com/)
->> Scaleway is the n°3 Cloud provider (https://www.scaleway.com/)
+>> {"languages": [
+>>     {"name": "JavaScript", "ranking": 1, "website": "https://www.javascript.com/"},
+>>     {"name": "Python", "ranking": 2, "website": "https://www.python.org/"},
+>>     {"name": "Java", "ranking": 3, "website": "https://www.java.com/"}
+>> ]}
+>> JavaScript is the n°1 most popular language (https://www.javascript.com/)
+>> Python is the n°2 most popular language (https://www.python.org/)
+>> Java is the n°3 most popular language (https://www.java.com/)
 >> ```
 >>
 >> This example shows us how to use the JSON schema response format with Javascript.
