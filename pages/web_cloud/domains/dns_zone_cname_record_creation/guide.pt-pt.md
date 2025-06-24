@@ -42,7 +42,7 @@ Os registos CNAME são úteis para evitar a necessidade de alterar os endereços
 
 **Casos especiais**:
 
-/// details | Registos CNAME e TXT para o mesmo subdomínio - Clique aqui para mais informações
+/// details | Registos CNAME e TXT para o mesmo subdomínio - Clique aqui para mais informações.
 
 Não é aconselhável configurar tanto um registo CNAME como um registo TXT para o mesmo subdomínio. Isto pode levar a resultados aleatórios durante a resolução DNS, uma vez que apenas uma resposta pode ser devolvida através de consulta DNS.
 
@@ -55,7 +55,7 @@ Um pedido DNS para *www.domain.tld* retornará o destino do registo CNAME ou o v
 
 ///
 
-/// details | CNAME num domínio na sua própria zona DNS - Clique aqui para mais informações
+/// details | CNAME num domínio na sua própria zona DNS - Clique aqui para mais informações.
 
 Por convenção, **os registos do tipo CNAME não podem ser utilizados num nome de domínio na sua própria zona DNS**. De facto, o domínio deve obrigatoriamente apontar diretamente para um endereço IP com um registo do tipo [A](/pages/web_cloud/domains/dns_zone_a_record_creation) para um IPv4, ou [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) para um IPv6.
 
@@ -76,18 +76,18 @@ No entanto, pode criar registos do tipo CNAME para todos os subdomínios (por ex
 
 Consulte os nossos guias detalhados:
 
-- [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Como criar um subdomínio?](/pages/web_cloud/domains/domain_create_subdomains).
-- [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-- [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Alojamento web - Alterar um nome de domínio já associado a um alojamento](/pages/web_cloud/web_hosting/multisites_modify_domain).
+- [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Como criar um subdomínio?](/pages/web_cloud/domains/domain_create_subdomains)
+- [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+- [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+- [Alojamento web - Alterar um nome de domínio já associado a um alojamento](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
 ///
 
 ## Quer saber mais?
  
-Para serviços especializados (SEO, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  

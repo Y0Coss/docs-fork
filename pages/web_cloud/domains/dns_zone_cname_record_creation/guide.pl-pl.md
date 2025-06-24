@@ -28,7 +28,7 @@ Rekordy CNAME są użyteczne, jeśli chcesz uniknąć konieczności zmiany adres
 
 **Dowiedz się, jak dodać rekord CNAME w strefie DNS OVHcloud.**
 
-**Czy w strefie DNS posiadasz już rekord CNAME?* Zapoznaj się z naszym przewodnikiem "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
+**Czy w strefie DNS posiadasz już rekord CNAME?** Zapoznaj się z naszym przewodnikiem "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
 
 ## Wymagania początkowe
 
@@ -42,7 +42,7 @@ Rekordy CNAME są użyteczne, jeśli chcesz uniknąć konieczności zmiany adres
 
 **Przypadki szczególne**:
 
-/// details | Rekordy CNAME i TXT dla tej samej subdomeny - Kliknij tutaj, aby uzyskać więcej informacji
+/// details | Rekordy CNAME i TXT dla tej samej subdomeny - Kliknij tutaj, aby uzyskać więcej informacji.
 
 Odradzamy konfigurowanie jednocześnie rekordu CNAME i rekordu TXT dla tej samej subdomeny. Może to spowodować losowe wyniki podczas rozpoznawania DNS, ponieważ tylko jedna odpowiedź może zostać zwrócona przez zapytanie DNS.
 
@@ -55,7 +55,7 @@ Zapytanie DNS dla *www.domain.tld* zwróci losowo wartość docelową rekordu CN
 
 ///
 
-/// details | CNAME dla domeny w jej własnej strefie DNS - Kliknij tutaj, aby uzyskać więcej informacji
+/// details | CNAME dla domeny w jej własnej strefie DNS - Kliknij tutaj, aby uzyskać więcej informacji.
 
 Konwencjonalnie, **rekordy CNAME nie mogą być używane dla nazwy domeny w jej własnej strefie DNS**. Nazwa domeny musi wskazywać bezpośrednio na adres IP z rekordem typu [A](/pages/web_cloud/domains/dns_zone_a_record_creation) w przypadku adresu IPv4 lub [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) w przypadku adresu IPv6.
 
@@ -76,12 +76,12 @@ Będziesz mógł jednak tworzyć rekordy CNAME dla wszystkich subdomen (na przyk
 
 Zapoznaj się ze szczegółowymi przewodnikami:
 
-- [Informacje o strefach DNS](/pages/web_cloud/domains/dns_zone_general_information).
-- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records).
-- [Jak utworzyć subdomenę?](/pages/web_cloud/domains/domain_create_subdomains).
-- [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
-- [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite).
-- [Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem](/pages/web_cloud/web_hosting/multisites_modify_domain).
+- [Informacje o strefach DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Jak utworzyć subdomenę?](/pages/web_cloud/domains/domain_create_subdomains)
+- [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
+- [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+- [Hosting WWW - Zmiana nazwy domeny powiązanej z hostingiem](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
 ///
 
