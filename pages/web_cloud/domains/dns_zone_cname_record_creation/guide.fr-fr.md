@@ -28,7 +28,7 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 
 **Découvrez comment ajouter un enregistrement CNAME dans votre zone DNS OVHcloud.**
 
-**Vous avez déjà un enregistrement de type CNAME dans votre zone DNS ?** Suivez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ». 
+> **Vous avez déjà un enregistrement de type CNAME dans votre zone DNS ?** Suivez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ## Prérequis
 
@@ -36,13 +36,26 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 - Disposer d'une zone DNS associée à ce nom de domaine chez OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
-**L'ajout, la modification ou la suppression d'enregistrements DNS dans une zone DNS active est une manipulation sensible. En cas de doute, contactez un [prestataire spécialisé](/links/partner).**
+> [!warning]
+>
+> **L'ajout, la modification ou la suppression d'enregistrements DNS dans une zone DNS active sont des manipulations sensibles.**
+> En cas de doute, contactez un [prestataire spécialisé](/links/partner).
 
 ## En pratique
 
-**Cas particuliers** :
+### Ajouter un enregistrement DNS de type CNAME pour le sous-domaine d'un nom de domaine
 
-/// details | Enregistrements CNAME et TXT pour un même sous-domaine - Cliquez ici pour plus d'informations.
+1. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
+2. Sur la page qui s'affiche, cliquez sur le bouton `Ajouter une entrée`{.action}.
+3. Dans la fenêtre qui s'ouvre, sélectionnez le champ de pointage de type `CNAME`{.action}.
+4. Renseignez ensuite dans le champ `Sous-domaine` le sous-domaine concerné (par exemple : `www` pour le sous-domaine `www.domain.tld`), et, dans le champ `Cible *`, le nom de domaine ou sous-domaine (par exemple : `domain.tld`) que vous souhaitez cibler à l'aide de l'enregistrement de type CNAME. Cliquez enfin sur `Suivant`{.action}.
+5. Vérifiez le résumé, puis cliquez sur `Valider`{.action}. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
+
+### Cas particuliers
+
+**Cliquez sur les liens ci-dessous pour plus d'informations :**
+
+/// details | Enregistrements CNAME et TXT pour un même sous-domaine
 
 Il est déconseillé de configurer à la fois un enregistrement CNAME et un enregistrement TXT pour le même sous-domaine. En effet, cela peut entraîner des résultats aléatoires lors de la résolution DNS, car seule une réponse peut être renvoyée par requête DNS.
 
@@ -55,7 +68,7 @@ Une requête DNS pour *www.domain.tld* retournera soit la cible de l'enregistrem
 
 ///
 
-/// details | CNAME sur un domaine dans sa propre zone DNS - Cliquez ici pour plus d'informations.
+/// details | Enregistrement CNAME sur un domaine dans sa propre zone DNS
 
 Par convention, **les enregistrements de type CNAME ne peuvent pas être utilisés sur un nom de domaine dans sa propre zone DNS**. En effet, le nom de domaine doit obligatoirement pointer directement vers une adresse IP avec un enregistrement de type [A](/pages/web_cloud/domains/dns_zone_a_record_creation) pour une IPv4, ou [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) pour une IPv6.
 
@@ -64,15 +77,7 @@ Vous pourrez cependant créer des enregistrements de type CNAME pour tous les so
 
 ///
 
-### Ajouter un enregistrement DNS de type CNAME pour le sous-domaine d'un nom de domaine
-
-1. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
-2. Sur la page qui s'affiche, cliquez sur le bouton `Ajouter une entrée`{.action}.
-3. Dans la fenêtre qui s'ouvre, sélectionnez le champ de pointage de type `CNAME`{.action}.
-4. Renseignez ensuite dans le champ `Sous-domaine` le sous-domaine concerné (par exemple : `www` pour le sous-domaine `www.domain.tld`), et, dans le champ `Cible *`, le nom de domaine ou sous-domaine (par exemple : `domain.tld`) que vous souhaitez cibler à l'aide de l'enregistrement de type CNAME. Cliquez enfin sur `Suivant`{.action}.
-5. Vérifiez le résumé, puis cliquez sur `Valider`{.action}. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
-
-/// details | Cliquez ici pour plus d'informations.
+## Aller plus loin
 
 Consultez nos guides détaillés :
 
@@ -82,10 +87,6 @@ Consultez nos guides détaillés :
 - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 - [Hébergement web - Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 - [Hébergement web - Modifier un nom de domaine déjà associé](/pages/web_cloud/web_hosting/multisites_modify_domain)
-
-///
-
-## Aller plus loin
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
  
