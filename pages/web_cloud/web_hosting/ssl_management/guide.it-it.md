@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Nuova gestione dei certificati SSL"
 excerpt: "Scopri come gestire un certificato SSL su un hosting Web OVHcloud grazie alla nostra nuova interfaccia di gestione"
-updated: 2025-06-10
+updated: 2025-06-30
 ---
 
 <style>
@@ -98,8 +98,8 @@ Il certificato SSL gratuito Let's Encrypt (DV) può includere fino a **99** domi
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
-6. In seguito seleziona il dominio o sottodominio per il quale vuoi attivare il certificato SSL gratuito Let's Encrypt (DV), sotto la voce `Attiva il certificato SSL`.
-7. Clicca sul pulsante `Attiva SSL Let's Encrypt`{.action}.
+6. In seguito seleziona il dominio o sottodominio per il quale vuoi attivare il certificato SSL gratuito Let's Encrypt (DV), sotto la voce `Attivare il certificato SSL`.
+7. Clicca sul pulsante `Attivare SSL Let's Encrypt`{.action}.
 
 > [!success]
 >
@@ -116,8 +116,8 @@ Il certificato SSL a pagamento Sectigo (DV) è valido per un solo dominio e il s
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
-6. Clicca sul pulsante `Ordina un certificato SSL Sectigo`{.action}.
-7. Nella nuova finestra, seleziona il dominio o sottodominio con il menu a tendina e clicca su `Conferma`{.action} per essere reindirizzato al buono d’ordine del tuo certificato SSL Sectigo DV.
+6. Clicca sul pulsante `Ordinare un certificato SSL Sectigo`{.action}.
+7. Nella nuova finestra, seleziona il dominio o sottodominio con il menu a tendina e clicca su `Confermare`{.action} per essere reindirizzato al buono d’ordine del tuo certificato SSL Sectigo DV.
 
 Prosegui con l’ordine fino al saldo dell’ordine per confermare la richiesta di creazione del certificato SSL Sectigo DV per il tuo dominio e/o sottodominio sull’hosting Web.
 
@@ -149,8 +149,8 @@ Il certificato SSL a pagamento Sectigo (EV) è valido per un solo dominio e il s
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
-6. Clicca sul pulsante `Ordina un certificato SSL Sectigo`{.action}.
-7. Nella nuova finestra, seleziona il dominio o sottodominio con il menu a tendina e clicca su `Conferma`{.action} per essere reindirizzato al buono d’ordine del tuo certificato SSL Sectigo EV.
+6. Clicca sul pulsante `Ordinare un certificato SSL Sectigo`{.action}.
+7. Nella nuova finestra, seleziona il dominio o sottodominio con il menu a tendina e clicca su `Confermare`{.action} per essere reindirizzato al buono d’ordine del tuo certificato SSL Sectigo EV.
 
 Nel tunnel dell'ordine, seleziona il **Certificato SSL Sectigo EV** e continua l'ordine.
 
@@ -181,8 +181,8 @@ Questa soluzione ti permette di installare il tuo certificato SSL per il tuo dom
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
-6. Clicca sul pulsante `Importa il tuo certificato SSL`{.action}.
-7. Nel modulo che si apre, compila i 3 campi e clicca su `Conferma`{.action} per completare l’importazione del certificato SSL personalizzato sul tuo hosting Web.
+6. Clicca sul pulsante `Importazione del tuo certificato SSL`{.action}.
+7. Nel modulo che si apre, compila i 3 campi e clicca su `Confermare`{.action} per completare l’importazione del certificato SSL personalizzato sul tuo hosting Web.
 
 > [!success]
 >
@@ -205,8 +205,8 @@ Per rimuovere il certificato SSL installato sull’hosting Web, esegui queste op
 3. Nella colonna di sinistra, clicca sul menu `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Clicca sulla scheda `Certificati SSL`{.action}.
-6. Nella tabella in fondo alla nuova pagina, clicca sul pulsante `⁝`{.action}, a destra della riga corrispondente al dominio in questione e poi clicca su `Disattiva SSL`{.action}.
-7. Nella nuova finestra, conferma la disattivazione cliccando su `Conferma`{.action}.
+6. Nella tabella in fondo alla nuova pagina, clicca sul pulsante `⁝`{.action}, a destra della riga corrispondente al dominio in questione e poi clicca su `Disattivare SSL`{.action}.
+7. Nella nuova finestra, conferma la disattivazione cliccando su `Confermare`{.action}.
 
 L’operazione diventerà effettiva entro poche ore.
 

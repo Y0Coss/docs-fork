@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Neue Verwaltung der SSL-Zertifikate"
 excerpt: "Erfahren Sie hier, wie Sie mit unserem neuen Verwaltungsinterface ein SSL-Zertifikat auf Ihrem OVHcloud Webhosting verwalten"
-updated: 2025-06-09
+updated: 2025-06-30
 ---
 
 <style>
@@ -116,7 +116,7 @@ Das kostenpflichtige SSL-Zertifikat von Sectigo (DV) gilt nur für einen Domainn
 3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
 5. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
-6. Klicken Sie auf den Button `SSL-Zertifikat Sectigo bestellen`{.action}.
+6. Klicken Sie auf den Button `Sectigo-SSL-Zertifikat bestellen`{.action}.
 7. Wählen Sie im neu geöffneten Fenster über das Dropdown-Menü die betreffende Domain oder Subdomain aus und klicken Sie auf `Bestätigen`{.action}, um zum Bestellschein für Ihr Sectigo DV SSL-Zertifikat weitergeleitet zu werden.
 
 Folgen Sie der Bestellung bis zur Zahlung, um die Anfrage zur Erstellung des Sectigo DV SSL-Zertifikats für Ihre Domain und/oder Subdomain auf Ihrem Webhosting zu bestätigen.
@@ -149,7 +149,7 @@ Das kostenpflichtige SSL-Zertifikat von Sectigo (EV) gilt nur für einen Domainn
 3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
 5. Klicken Sie auf der angezeigten Seite auf den Tab `SSL-Zertifikate`{.action}.
-6. Klicken Sie auf den Button `SSL-Zertifikat Sectigo bestellen`{.action}.
+6. Klicken Sie auf den Button `Sectigo-SSL-Zertifikat bestellen`{.action}.
 7. Wählen Sie im neu geöffneten Fenster über das Dropdown-Menü die betreffende Domain oder Subdomain aus und klicken Sie auf `Bestätigen`{.action}, um zum Bestellschein für Ihr Sectigo EV SSL-Zertifikat weitergeleitet zu werden.
 
 Wählen Sie das **Sectigo EV SSL-Zertifikat** aus und fahren Sie mit der Bestellung fort.

@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - New SSL certificate management"
 excerpt: "Find out how to manage an SSL certificate on an OVHcloud web hosting plan, using our new management interface"
-updated: 2025-06-09
+updated: 2025-06-30
 ---
 
 <style>
@@ -98,8 +98,8 @@ The free Let's Encrypt (DV) SSL certificate can include up to **99** domain name
 3. In the left-hand column, click on the `Hosting plans`{.action} menu.
 4. Select the web hosting plan concerned.
 5. On the page that appears, click on the `SSL Certificates`{.action} tab.
-6. Then select the domain or subdomain for which you want to activate the free Let's Encrypt (DV) SSL certificate, under `Activate SSL certificate`.
-7. Then click the `Activate SSL Let's Encrypt`{.action} button.
+6. Then select the domain or subdomain for which you want to activate the free Let's Encrypt (DV) SSL certificate, under `Enable SSL certificate`.
+7. Then click the `Enable Let’s Encrypt SSL`{.action} button.
 
 > [!success]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Nueva gestión de certificados SSL"
 excerpt: "Descubra cómo gestionar un certificado SSL en un alojamiento web de OVHcloud desde nuestra nueva interfaz de gestión"
-updated: 2025-06-10
+updated: 2025-06-30
 ---
 
 <style>
@@ -99,7 +99,7 @@ El certificado SSL gratuito Let's Encrypt (DV) puede incluir hasta **99** nombre
 4. Seleccione el alojamiento web correspondiente.
 5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
 6. A continuación, seleccione el dominio o subdominio para el que quiera activar el certificado SSL gratuito Let's Encrypt (DV), bajo la indicación `Activar el certificado SSL`.
-7. A continuación, haga clic en el botón `Activar SSL Let's Encrypt`{.action}.
+7. A continuación, haga clic en el botón `Activar SSL Let's encrypt`{.action}.
 
 > [!success]
 >
@@ -117,7 +117,7 @@ El certificado SSL de pago Sectigo (DV) es válido para un único dominio y su s
 4. Seleccione el alojamiento web correspondiente.
 5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
 6. Haga clic en el botón `Contratar un certificado SSL Sectigo`{.action}.
-7. En la nueva ventana, seleccione el dominio o subdominio correspondiente en el menú desplegable y haga clic en `Validar`{.action} para redirigirlo a la orden de pedido de su certificado SSL Sectigo DV.
+7. En la nueva ventana, seleccione el dominio o subdominio correspondiente en el menú desplegable y haga clic en `Confirmar`{.action} para redirigirlo a la orden de pedido de su certificado SSL Sectigo DV.
 
 Continúe con el pedido hasta el pago para validar la solicitud de creación del certificado SSL Sectigo DV para su dominio y/o subdominio en su alojamiento web.
 
@@ -150,7 +150,7 @@ El certificado SSL de pago Sectigo (EV) es válido para un único dominio y su s
 4. Seleccione el alojamiento web correspondiente.
 5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
 6. Haga clic en el botón `Contratar un certificado SSL Sectigo`{.action}.
-7. En la nueva ventana, seleccione el dominio o subdominio correspondiente en el menú desplegable y haga clic en `Validar`{.action} para redirigirlo a la orden de pedido de su certificado SSL Sectigo EV.
+7. En la nueva ventana, seleccione el dominio o subdominio correspondiente en el menú desplegable y haga clic en `Confirmar`{.action} para redirigirlo a la orden de pedido de su certificado SSL Sectigo EV.
 
 En el túnel del pedido, seleccione el **Certificado SSL Sectigo EV** y continúe con el pedido.
 
@@ -181,8 +181,8 @@ Esta solución le permite instalar su propio certificado SSL para su nombre de d
 3. En la columna izquierda, haga clic en el menú `Alojamientos`{.action}.
 4. Seleccione el alojamiento web correspondiente.
 5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
-6. Haga clic en el botón `Importar su propio certificado SSL`{.action}.
-7. En el formulario que se abrirá, complete los 3 campos y haga clic en `Validar`{.action} para finalizar la importación del certificado SSL personalizado en su alojamiento web.
+6. Haga clic en el botón `Importación de su propio certificado SSL`{.action}.
+7. En el formulario que se abrirá, complete los 3 campos y haga clic en `Confirmar`{.action} para finalizar la importación del certificado SSL personalizado en su alojamiento web.
 
 > [!success]
 >
@@ -206,7 +206,7 @@ Para eliminar el certificado SSL instalado en el alojamiento web, lleve a cabo l
 4. Seleccione el alojamiento web correspondiente.
 5. En la página que aparece, haga clic en la pestaña `Certificados SSL`{.action}.
 6. En la tabla que aparece en la parte inferior de la nueva página, haga clic en el botón `⁝`{.action}, situado a la derecha de la línea correspondiente al dominio en cuestión, y seleccione `Desactivar SSL`{.action}.
-7. En la nueva ventana, confirme la desactivación haciendo clic en `Aceptar`{.action}.
+7. En la nueva ventana, confirme la desactivación haciendo clic en `Confirmar`{.action}.
 
 La desactivación del certificado SSL será efectiva en unas horas como máximo.
 

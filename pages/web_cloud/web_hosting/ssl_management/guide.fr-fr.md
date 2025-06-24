@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Nouvelle gestion des certificats SSL"
 excerpt: "Découvrez comment gérer un certificat SSL sur votre hébergement web OVHcloud grâce à notre nouvelle interface de gestion"
-updated: 2025-06-09
+updated: 2025-06-30
 ---
 
 <style>

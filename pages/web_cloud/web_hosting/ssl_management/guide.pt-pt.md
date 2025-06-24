@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Nova gestão dos certificados SSL"
 excerpt: "Saiba como gerir um certificado SSL no alojamento web da OVHcloud graças à nossa nova interface de gestão"
-updated: 2025-06-10
+updated: 2025-06-30
 ---
 
 <style>
@@ -98,8 +98,8 @@ O certificado SSL gratuito Let's Encrypt (DV) pode incluir até **99** nomes de 
 3. Na coluna da esquerda, clique no menu `Alojamentos`{.action}.
 4. Selecione o alojamento web em causa.
 5. Na página que vai aparecer, clique no separador `Certificados SSL`{.action}.
-6. De seguida, selecione o domínio ou subdomínio para o qual deseja ativar o certificado SSL gratuito Let's Encrypt (DV), com a menção `Ativar certificado SSL`.
-7. De seguida, clique no botão `Ativar SSL Let's Encrypt`{.action}.
+6. De seguida, selecione o domínio ou subdomínio para o qual deseja ativar o certificado SSL gratuito Let's Encrypt (DV), com a menção `Ativar o certificado SSL`.
+7. De seguida, clique no botão `Ativar o certificado SSL Let's encrypt`{.action}.
 
 > [!success]
 >
@@ -205,7 +205,7 @@ Para eliminar o certificado SSL instalado no alojamento web, efetue as seguintes
 3. Na coluna da esquerda, clique no menu `Alojamentos`{.action}.
 4. Selecione o alojamento web em causa.
 5. Na página que vai aparecer, clique no separador `Certificados SSL`{.action}.
-6. Na tabela que se segue, na parte inferior da nova página que se abrir, clique no botão `⁝`{.action}, situado à direita da linha correspondente ao domínio em questão, e clique em `Desativar SSL`{.action}.
+6. Na tabela que se segue, na parte inferior da nova página que se abrir, clique no botão `⁝`{.action}, situado à direita da linha correspondente ao domínio em questão, e clique em `Desativar o certificado SSL`{.action}.
 7. Na janela que se abrir, confirme a desativação clicando em `Validar`{.action}.
 
 Esta ficará efetiva dentro de algumas horas, no máximo.

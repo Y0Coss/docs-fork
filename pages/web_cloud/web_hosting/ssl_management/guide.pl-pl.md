@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - nowe zarządzanie certyfikatami SSL"
 excerpt: "Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud z poziomu naszego nowego interfejsu zarządzania"
-updated: 2025-06-10
+updated: 2025-06-30
 ---
 
 <style>
@@ -98,8 +98,8 @@ Bezpłatny certyfikat SSL Let's Encrypt (DV) może zawierać do **99** nazw dome
 3. W lewej kolumnie kliknij menu `Hosting`{.action}.
 4. Wybierz odpowiedni hosting.
 5. Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
-6. Następnie wybierz domenę lub subdomenę, dla której chcesz aktywować bezpłatny certyfikat SSL Let's Encrypt (DV), pod opcją `Aktywuj certyfikat SSL`.
-7. Następnie kliknij przycisk `Aktywuj SSL Let's Encrypt`{.action}.
+6. Następnie wybierz domenę lub subdomenę, dla której chcesz aktywować bezpłatny certyfikat SSL Let's Encrypt (DV), pod opcją `Włącz certyfikat SSL`.
+7. Następnie kliknij przycisk `Włącz SSL Let's Encrypt`{.action}.
 
 > [!success]
 >
@@ -181,7 +181,7 @@ Dzięki temu rozwiązaniu możesz zainstalować własny certyfikat SSL dla swoje
 3. W lewej kolumnie kliknij menu `Hosting`{.action}.
 4. Wybierz odpowiedni hosting.
 5. Na stronie, która się wyświetli kliknij zakładkę `Certyfikaty SSL`{.action}.
-6. Kliknij przycisk `Importuj własny certyfikat SSL`{.action}.
+6. Kliknij przycisk `Import własnego certyfikatu SSL`{.action}.
 7. W formularzu, który się otworzy, wypełnij 3 pola, po czym kliknij `Zatwierdź`{.action}, aby zakończyć import spersonalizowanego certyfikatu SSL na Twoim hostingu.
 
 > [!success]
