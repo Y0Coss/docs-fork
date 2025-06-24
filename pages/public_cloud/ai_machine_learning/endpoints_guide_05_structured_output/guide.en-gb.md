@@ -16,7 +16,6 @@ updated: 2025-04-28
 ## Objective
 
 This documentation provides an overview on how to use structured outputs with the various AI models offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). 
-We will e.
 The examples provided in this guide will be using the [Llama 3.3 70b model](https://endpoints.ai.cloud.ovh.net/models/c968b503-27fa-451d-b59d-1b0ff91d304d)
 
 Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with Structured Output.
@@ -24,9 +23,8 @@ The output formats managed by each model are defined in the Response Format sect
 ![Model Specs](images/image.png)
 
 ## Requirements
-Requirements: Detail what requirements are mandatory for the customer so that he can apply what's documented on your guide.
 
-The examples provided during this guide can be used with the following environments:
+The examples provided during this guide can be used with one of the following environments:
 
 ### Python
 
@@ -55,13 +53,12 @@ Follow the following instructions in the [AI Endpoints - Getting Started](/pages
 
 ## Instructions
 
-Structured output is a very powerful feature that allows...
+Structured output is a very powerful feature that allows... TODO
 
 Under the hood, structured output is usually made possible with combination of:
 - specific examples used during model training
 - runtime guided decoding, with backend such as [outlines](https://github.com/dottxt-ai/outlines), [xgrammar](https://github.com/mlc-ai/xgrammar), or [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer)
 TODO: link literature ?
-
 
 ### How to use
 
@@ -92,7 +89,6 @@ The following code samples provide a simple example on how to specify a JSON sch
 >>
 >> ```python
 >> from pydantic import BaseModel
->> import json
 >> import openai
 >> import os
 >> 
@@ -274,9 +270,9 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> // Run the query
 >> request.post(options, (error, response, body) => {
 >>     if (!error && response.statusCode == 200) {
->>         const languageRankigs = body.choices[0].message.content;
->>         console.log(languageRankigs)
->>         const parsedLanguageRankings = JSON.parse(languageRankigs);
+>>         const languageRankings = body.choices[0].message.content;
+>>         console.log(languageRankings)
+>>         const parsedLanguageRankings = JSON.parse(languageRankings);
 >>         parsedLanguageRankings.languages.forEach(language => {
 >>             console.log(`${language.name} is the n°${language.ranking} most popular language (${language.website})`);
 >>         });
@@ -303,36 +299,239 @@ The following code samples provide a simple example on how to specify a JSON sch
 
 ### JSON object
 
-TODO
+The following code samples provide a simple example on how to use the legacy JSON object mode, using the `response_format` parameter.
+Note that when using the JSON object mode, we cannot specify explicitly the schema of the output.
+
+> [!tabs]
+> **Python**
+>>
+>> ```python
+>> import json
+>> import openai
+>> import os
+>> 
+>> # Define the prompts
+>> messages = [
+>>     { "content": "You are a helpful assistant that help users rank different things. You always answer in JSON format.", "role": "system" },
+>>     { "content": "What are the top 3 most popular programming languages ?", "role": "user" }
+>> ]
+>> 
+>> # Initialise the client
+>> api_key = os.environ['AI_ENDPOINT_API_KEY'] # Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
+>> openai_client = openai.OpenAI(
+>>     base_url='https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1',
+>>     api_key=api_key
+>> )
+>> 
+>> # Run the query
+>> response = openai_client.chat.completions.create(
+>>     model='Meta-Llama-3_3-70B-Instruct',
+>>     messages=messages,
+>>     response_format={
+>>         "type": "json_object",
+>>     },
+>>     temperature=0 # Ensure deterministic output for this guide's purpose
+>> )
+>> 
+>> # Print the response
+>> output = json.loads(response.choices[0].message.content)
+>> print(json.dumps(output, indent=2))
+>> ```
+>>
+>> Output:
+>> ```sh
+>> {
+>>   "rank": [
+>>     {
+>>       "position": 1,
+>>       "language": "JavaScript",
+>>       "popularity": "94.5%"
+>>     },
+>>     {
+>>       "position": 2,
+>>       "language": "HTML/CSS",
+>>       "popularity": "83.6%"
+>>     },
+>>     {
+>>       "position": 3,
+>>       "language": "Python",
+>>       "popularity": "78.9%"
+>>     }
+>>   ]
+>> }
+>> ```
+>>
+> **Curl**
+>>
+>> Input query:
+>> ```sh
+>> curl -X POST "https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions" \
+>>     -H 'accept: application/json' \
+>>     -H 'content-type: application/json' \
+>>     -d '{
+>>         "model": "Meta-Llama-3_3-70B-Instruct",
+>>         "max_tokens": 100,
+>>         "messages": [
+>>             { "content": "You are a helpful assistant that help users rank different things. You always answer in JSON format.", "role": "system" },
+>>             { "content": "What are the top 3 most popular programming languages ?", "role": "user" }
+>>         ],
+>>         "response_format": {
+>>             "type": "json_object"
+>>         },
+>>         "temperature": 0
+>>     }'
+>> ```
+>>
+>> Output:
+>> ```sh
+>> {"id":"chatcmpl-dfdbf074ab864199bac48ec929179fed","object":"chat.completion","created":1750773314,"model":"Meta-Llama-3_3-70B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"{\"rank\": [\n    {\"position\": 1, \"language\": \"JavaScript\", \"popularity\": \"94.5%\"},\n    {\"position\": 2, \"language\": \"HTML/CSS\", \"popularity\": \"93.2%\"},\n    {\"position\": 3, \"language\": \"Python\", \"popularity\": \"87.3%\"}\n]}"},"finish_reason":"stop","logprobs":null}],"usage":{"prompt_tokens":65,"completion_tokens":77,"total_tokens":142}}%
+>> ```
+>>
+> **Javascript**
+>>
+>> ```javascript
+>> const request = require('request');
+>> const fs = require('fs');
+>> 
+>> // Define the prompts
+>> const messages = [
+>>     { content: "You are a helpful assistant that help users rank different things. You always answer in JSON format.", role: "system" },
+>>     { content: "What are the top 3 most popular programming languages ?", role: "user" }
+>> ];
+>> 
+>> // Initialise the client
+>> const apiKey = process.env.AI_ENDPOINT_API_KEY; // Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
+>> const options = {
+>>     url: 'https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions',
+>>     headers: {
+>>         'Content-Type': 'application/json',
+>>         'Authorization': `Bearer ${apiKey}`
+>>     },
+>>     json: true,
+>>     body: {
+>>         messages: messages,
+>>         response_format: {
+>>             type: 'json_object',
+>>         },
+>>         temperature: 0
+>>     }
+>> };
+>> 
+>> // Run the query
+>> request.post(options, (error, response, body) => {
+>>     if (!error && response.statusCode == 200) {
+>>         const languages = body.choices[0].message.content;
+>>         const parsedData = JSON.parse(languages);
+>>         console.log(parsedData)
+>>     } else {
+>>         console.error('Error:', error);
+>>         console.error('Response:', response.body);
+>>     }
+>> });
+>> ```
+>>
+>> Output:
+>> ```sh
+>> {
+>>   rank: [
+>>     { position: 1, language: 'JavaScript', popularity: '94.5%' },
+>>     { position: 2, language: 'HTML/CSS', popularity: '87.4%' },
+>>     { position: 3, language: 'Python', popularity: '83.8%' }
+>>   ]
+>> }
+>> ```
 
 ### Tips and best practices
 
-This section contains useful tips that may improve the performance of Structured Output queries.
+This section contains additional tips that may improve the performance of Structured Output queries.
 
 #### Streaming
 
-All kinds of response_format are compatible with streaming. To enable streaming, simply use `"streaming": true"` in your request's body and process the streaming response appropriately.
+All kinds of response_format are compatible with streaming. To enable streaming, simply use `"streaming": true` in your request's body and process the stream accordingly.
 
-TODO example queries
+Example with python:
+```python
+from pydantic import BaseModel
+import openai
+import os
+
+# Define the prompts
+messages = [
+    { "content": "You are a helpful assistant that help users rank different things. You always answer in JSON format.", "role": "system" },
+    { "content": "What are the top 3 most popular programming languages ?", "role": "user" }
+]
+
+# Define the data model
+class Language(BaseModel):
+    name: str
+    website: str
+    ranking: int
+
+class LanguageRankings(BaseModel):
+    languages: list[Language]
+
+# Initialise the client
+api_key = os.environ['AI_ENDPOINT_API_KEY'] # Assuming your API key is available in this environment variable (export AI_ENDPOINT_API_KEY='your_api_key')
+openai_client = openai.OpenAI(
+    base_url='https://llama-3-3-70b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1',
+    api_key=api_key
+)
+
+# Run the query
+with openai_client.beta.chat.completions.stream(
+    model='Meta-Llama-3_3-70B-Instruct',
+    messages=messages,
+    response_format=LanguageRankings,
+    temperature=0,
+) as stream:
+    for event in stream:
+        if event.type == "response.refusal.delta":
+            print(event.delta, end="")
+        elif event.type == "response.output_text.delta":
+            print(event.delta, end="")
+        elif event.type == "response.error":
+            print(event.error, end="")
+        elif event.type == "response.completed":
+            print("Completed")
+        elif event.type == "chunk":
+            if len(event.chunk.choices):
+                print(event.chunk.choices[0].delta.content, end="")
+
+    response = stream.get_final_completion()
+
+# Print the parsed response
+language_rankings = response.choices[0].message.parsed
+for language in language_rankings.languages:
+    print(f"{language.name} is the n°{language.ranking} language ({language.website})")
+```
+
+Streamed output response:
+```sh
+{"languages": [
+    {"name": "JavaScript", "ranking": 1, "website": "https://www.javascript.com/"},
+    {"name": "Python", "ranking": 2, "website": "https://www.python.org/"},
+    {"name": "Java", "ranking": 3, "website": "https://www.java.com/"}
+]}
+JavaScript is the n°1 language (https://www.javascript.com/)
+Python is the n°2 language (https://www.python.org/)
+Java is the n°3 language (https://www.java.com/)
+```
 
 #### Schema definition
 
-key ordering -> equation example
-subset of json schema specs, anyof, etc... -> not all of them - limitation
-required fields
-additional properties: false
-We encourage users to experiment with different variations of their JSON schemas to reach the best performance.
+Some considerations about the JSON schema definition:
+- Structured output currently supports a subset of the [JSON schema specification](https://json-schema.org/specification). Some features may not be compatible.
+- The models will generate the output following alphabetical order of the JSON schema keys. It may be useful to rename your fields to enforce a specific order during generation.
+- To avoid divergence, we recommend setting [additional properties](https://json-schema.org/understanding-json-schema/reference/object#additionalproperties) to `false` and explicity setting the [required fields](https://json-schema.org/learn/getting-started-step-by-step#define-required-properties)
 
-#### Refusal management
-
-Some models may refusal (TODO: can we manage this?)
+Don't hesitate to experiment with different variations of your JSON schemas to reach the best performance!
 
 #### Prompting & additional parameters
 
--> generally better to ask for json in both json modes
--> Tend to perform better with lower temperature (and top_p ? <- verify this)
--> check model specifics TODO huggingface example
-
+Some additional considerations regarding prompts and model parameters:
+- Even though the response_format can be used to enable structured outputs, models can generally perform better when asked to produce json outputs within the prompt (`messages` field).
+- Most models tend to perform better when using lower temperature for structured outputs.
+- Some model providers may recommend specific system prompts and parameters to use for structured outputs and function calling. Don't hesitate to visit the model pages to dive deeper into model specifics ([example for Llama 3.3 on HuggingFace](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)).
 
 ## Conclusion
 
