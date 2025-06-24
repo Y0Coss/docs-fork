@@ -53,12 +53,12 @@ Follow the following instructions in the [AI Endpoints - Getting Started](/pages
 
 ## Instructions
 
-Structured output is a very powerful feature that allows... TODO
+Structured output is a very powerful feature that allows us to enforce specific formats of the models' outputs.
+Using the JSON schema specification, this feature enables users to specialize and integrate LLMs into various applications.
 
 Under the hood, structured output is usually made possible with combination of:
 - specific examples used during model training
-- runtime guided decoding, with backend such as [outlines](https://github.com/dottxt-ai/outlines), [xgrammar](https://github.com/mlc-ai/xgrammar), or [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer)
-TODO: link literature ?
+- runtime guided decoding, with popular backends such as [outlines](https://github.com/dottxt-ai/outlines), [xgrammar](https://github.com/mlc-ai/xgrammar), or [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer)
 
 ### How to use
 
@@ -300,7 +300,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 ### JSON object
 
 The following code samples provide a simple example on how to use the legacy JSON object mode, using the `response_format` parameter.
-Note that when using the JSON object mode, we cannot specify explicitly the schema of the output.
+Note that when using the JSON object mode, we cannot explicitly specify the schema of the output.
 
 > [!tabs]
 > **Python**
