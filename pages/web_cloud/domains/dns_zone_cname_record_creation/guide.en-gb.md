@@ -1,7 +1,7 @@
 ---
 title: "How to add a CNAME record for a subdomain"
 excerpt: "Find out how to add a CNAME DNS record to an OVHcloud DNS zone for a domain name subdomain"
-updated: 2025-06-23
+updated: 2025-06-24
 ---
 
 <style>

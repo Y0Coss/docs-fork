@@ -1,7 +1,7 @@
 ---
 title: "So fügen Sie einen CNAME DNS-Eintrag für eine Subdomain hinzu"
 excerpt: "Hier erfahren Sie, wie Sie einen DNS-Eintrag vom Typ CNAME zu einer von OVHcloud verwalteten DNS-Zone für die Subdomain einer Domain hinzufügen."
-updated: 2025-06-23
+updated: 2025-06-24
 ---
 
 <style>
