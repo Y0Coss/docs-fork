@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilité avec les applications tierces
 excerpt: "Ce guide fournit une liste d'applications tierces testées et certifiées compatibles avec OVHcloud Object Storage"
-updated: 2025-06-11
+updated: 2025-06-23
 ---
 
 ## Objectif
@@ -18,6 +18,7 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
 | --- | --- | --- | --- |
 | **Veeam** | Compatible - Certifié | Certifié Veeam Ready, les détails peuvent être trouvés sur la page[Veeam Alliance Technical Program](https://www.veeam.com/partners/alliance-partner-technical-programs.html){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
+| **Acronis Cyber Protect Cloud** | Compatible - Certifié | Officiellement pris en charge, détails disponibles sur la [page d’intégration Acronis S3](https://solutions.acronis.com/en-us/integrations/amazon-s3/){.external} | À venir |
 | **IBM Storage Protect** | Compatible - Certifié | Officiellement pris en charge, détails sur [IBM Storage Protect Support Page](https://www.ibm.com/support/pages/ibm-spectrum-protect-object-storage-support){.external} | A venir |
 | **Cohesity, Veritas NetBackup**  | Compatible - Certifié | Officiellement pris en charge, détails sur [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/fr_FR/dpp.NetBackup){.external}  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | A venir |
 | **Artesca, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/fr_FR/dpp.BackupExec){.external} | A venir |
@@ -26,7 +27,6 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 ### Protection des données - Sauvegarde Kubernetes
 
 | Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
-
 | --- | --- | --- | --- |
 | **Veeam Kasten** | Compatible | N/A | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
 | **Cloud Casa** | Compatible | Officiellement pris en charge, détails sur la page [produit Cloud Casa](https://cloudcasa.io/partners/ovhcloud-kubernetes-backup-and-dr/){.external} | [Guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa) |
@@ -60,4 +60,4 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
  
 Rejoignez notre [communauté d'utilisateurs](/links/community).
 
-<sup>*</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

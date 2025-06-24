@@ -24,8 +24,8 @@ Alias IP (po angielsku IP aliasing) to specjalna konfiguracja sieci serwera dedy
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}.
-- Dysponowanie jednym lub kilkoma adresami Additional IP.
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal).
+- Dysponowanie jednym lub kilkoma adresami [Additional IP](/links/network/additional-ip).
 - Zalogowanie się poprzez SSH do serwera (dostęp *sudo*).
 
 > [!warning]

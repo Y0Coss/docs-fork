@@ -17,8 +17,8 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de la r
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external}
-- Tener una o más direcciones [Additional IP](/links/network/additional-ip){.external}.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal).
+- Tener una o más direcciones [Additional IP](/links/network/additional-ip).
 - Estar conectado al servidor por SSH (acceso *sudo*).
 
 > [!warning]
