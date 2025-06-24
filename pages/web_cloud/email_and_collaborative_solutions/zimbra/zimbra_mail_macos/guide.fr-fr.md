@@ -12,6 +12,9 @@ updated: 2025-06-24
 
 ## Objectif
 
+> [!primary]
+> Ce guide nécessite le service [Zimbra Pro](https://www.ovhcloud.com/fr/emails/zimbra-emails/) qui sera disponible en bêta à partir de juillet 2025. 
+
 Les comptes Zimbra Pro peuvent être configurés en utilisant le protocole EWS (Excahnge Web Services) sur un macOS, cela vous permet de configurer l'ensemble des fonctionnalités collaboratives de votre adresse e-mail en une seule fois. L'application Mail sur macOS est disponible nativement.
 
 **Découvrez comment configurer votre adresse e-mail Zimbra Pro sur l'application Mail sur Mac via le protocole EWS**

@@ -12,6 +12,9 @@ updated: 2025-06-24
 
 ## Objectif
 
+> [!primary]
+> Ce guide nécessite le service [Zimbra Pro](https://www.ovhcloud.com/fr/emails/zimbra-emails/) qui sera disponible en bêta à partir de juillet 2025. 
+
 Les comptes Zimbra Pro peuvent être configurés en utilisant le protocole Active Sync sur un iPhone, cela vous permet de configurer l'ensemble des fonctionnalités collaboratives de votre adresse e-mail en une seule fois. L'application Outlook de Microsoft sur iOS est disponible gratuitement depuisdepuis l'App Store de Apple.
 
 **Découvrez comment configurer votre adresse e-mail Zimbra Pro sur l'application mobile Outlook pour iOS via le protocole Active Sync**

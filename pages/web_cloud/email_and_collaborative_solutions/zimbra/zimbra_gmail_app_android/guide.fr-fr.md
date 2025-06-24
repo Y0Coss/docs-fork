@@ -12,6 +12,9 @@ updated: 2025-06-24
 
 ## Objectif
 
+> [!primary]
+> Ce guide nécessite le service [Zimbra Pro](https://www.ovhcloud.com/fr/emails/zimbra-emails/) qui sera disponible en bêta à partir de juillet 2025.
+
 Les comptes Zimbra Pro peuvent être configurés en utilisant le protocole Active Sync sur un mobile Android, cela vous permet de configurer l'ensemble des fonctionnalités collaboratives de votre adresse e-mail en une seule fois. L'application Gmail de Google sur Android est disponible gratuitement depuis le Google Play Store.
 
 **Découvrez comment configurer son adresse e-mail Zimbra Pro sur l'application mobile Gmail pour Android via le protocole Activesync**
