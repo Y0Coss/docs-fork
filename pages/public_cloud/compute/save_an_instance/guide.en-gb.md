@@ -94,15 +94,31 @@ You can create a single backup of an instance or configure a schedule in order t
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> ```
 >>
->> Then run the following commands to create a backup of your instance:
+>> /// details | Local backup
 >>
->> ```bash
+>> Then run the following command to create a backup of your instance:
+>>
+>> ````bash
 >> $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
->> $ openstack workflow execution create ovh.glance.glance_download '{"src_image_id": "<image_id>", "src_region": "<current_region>", "dst_region": "<remote_region>"}'
 >> ```
+>>
+>> ///
+>>
+>> /// details | Remote backup
+>>
+>> Run the following command after following the local backup step:
+>>
+>> ````bash
+>> $ openstack workflow execution create ovh. glance.glance_download '{"src_image_id":"<image_id>", "src_region":"<current_region>", "dst_region":"<remote_region>"}'
+>> ````
 >>
 
 ### Creating an automated backup of an instance
+
+> [!primary]
+>
+> If you want to automate this functionality directly via OpenStack, you can create a Mistral workflow associated with a cron trigger.
+>
 
 Click on the `...`{.action} button to the right of the instance and select `Create an automatic backup`{.action}.
 

@@ -94,15 +94,33 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 >> ```
 >>
->> Exécutez ensuite les commandes suivantes pour créer une sauvegarde de votre instance :
+>> /// details | Sauvegarde locale
+>>
+>> Exécutez ensuite la commande suivante pour créer une sauvegarde de votre instance :
 >>
 >> ```bash
 >> $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
+>> ```
+>>
+>> ///
+>>
+>> /// details | Sauvegarde distante
+>>
+>> Exécutez la commande suivante après avoir suivi l'étape de la sauvegarde locale :
+>>
+>> ```bash
 >> $ openstack workflow execution create ovh.glance.glance_download '{"src_image_id": "<image_id>", "src_region": "<current_region>", "dst_region": "<remote_region>"}'
 >> ```
 >>
+>> ///
+>>
 
 ### Créer une sauvegarde automatisée d’une instance
+
+> [!primary]
+>
+> Si vous souhaitez automatiser cette fonctionnalité directement via OpenStack, vous pouvez créer un workflow Mistral associé à un cron trigger.
+>
 
 Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer une sauvegarde automatisée`{.action}.
 
