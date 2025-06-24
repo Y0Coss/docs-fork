@@ -91,7 +91,7 @@ Si votre compte e-mail est déjà paramétré et que vous souhaitez le paramétr
 1. Sélectionnez votre comptre dans la colonne de gauche.
 1. Cliquez sur `Avancé...`{.action} en bas à droite.
 
-![outlook ios](images/outlook-app-ios-modify-account-01.png){.thumbnail .h-500}
+![outlook macos](images/outlook-app-macos-modify-account-01.png){.thumbnail .h-500}
 
 Retrouvez les paramètres à **l'étape 3** du chapitre [Ajouter le compte](#add-account).
 
@@ -102,7 +102,7 @@ Retrouvez les paramètres à **l'étape 3** du chapitre [Ajouter le compte](#add
 1. Sélectionnez votre comptre dans la colonne de gauche.
 1. Cliquez sur `-`{.action} en bas à gauche
 
-![outlook ios](images/outlook-app-ios-modify-delete-01.png){.thumbnail .h-500}
+![outlook macos](images/outlook-app-macos-modify-delete-01.png){.thumbnail .h-500}
 
 
 ## Aller plus loin
