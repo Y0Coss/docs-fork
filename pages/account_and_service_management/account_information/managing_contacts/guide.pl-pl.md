@@ -102,7 +102,7 @@ Jeśli jeden z kontaktów nie otrzymał e-maila, może to na przykład oznaczać
 
 ![Contact management](images/managing_contacts_06.png){.thumbnail}
 
-Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informujący, że wniosek wciąż oczekuje na zatwierdzenie przez drugi kontakt. Gdy jeden z kontaktów zatwierdzi wniosek, informacje wyświetlane w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} zaktualizują się w ciągu kilku minut.
+Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informujący, że wniosek wciąż oczekuje na zatwierdzenie przez drugi kontakt. Gdy jeden z kontaktów zatwierdzi wniosek, informacje wyświetlane w [Panelu klienta OVHcloud](/links/manager){.external} zaktualizują się w ciągu kilku minut.
 
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 
@@ -110,11 +110,11 @@ Zmiana kontaktu zostanie wykonana w ciągu kilku minut od zatwierdzenia przez ob
 
 ### Przykład: zarządzanie stroną www na webmasterze
 
-Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [sklepu internetowego](https://www.ovhcloud.com/pl/web-hosting/ecommerce-website/). Skontaktowałeś się z jednym z naszych [partnerów](https://partner.ovhcloud.com/pl/directory/) i poprosił Cię o prawa dostępu do Twoich usług OVHcloud, aby rozpocząć tworzenie Twojej strony WWW.
+Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [sklepu internetowego](https://www.ovhcloud.com/pl/web-hosting/ecommerce-website/). Skontaktowałeś się z jednym z naszych [partnerów](/links/partner) i poprosił Cię o prawa dostępu do Twoich usług OVHcloud, aby rozpocząć tworzenie Twojej strony WWW.
 
 > [!warning]
 >
-> Odradzamy udzielenie jakiejkolwiek osobie trzeciej danych dostępowych do Twojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> Odradzamy udzielenie jakiejkolwiek osobie trzeciej danych dostępowych do Twojego [Panelu klienta](/links/manager).
 >
 
 W takiej sytuacji daj swojemu dostawcy prawo do [kontaktu technicznego](#gestion_des_contacts) na Twoim hostingu OVHcloud. Dostęp do strony pozwoli mu na wykonanie operacji niezbędnych do uruchomienia strony (dodanie domeny lub subdomeny do strony podpiętej w opcji MultiSite, zainstalowanie modułu za 1 kliknięciem, zmiana hasła FTP lub bazy danych, utworzenie certyfikatu SSL, itp.).
