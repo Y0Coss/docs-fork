@@ -552,4 +552,4 @@ A continuación, solo tiene que hacer ping desde su Additional IP hacia el exter
 
 [Modo Bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

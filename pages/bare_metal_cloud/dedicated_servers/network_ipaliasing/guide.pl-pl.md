@@ -556,4 +556,4 @@ Następnie wystarczy skierować ping z Additional IP na zewnątrz. Jeśli to dzi
 
 [Tryb bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+Dołącz do [grona naszych użytkowników](/links/community).

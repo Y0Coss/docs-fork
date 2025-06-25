@@ -563,4 +563,4 @@ Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn d
 
 [Network Bridge einrichten](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

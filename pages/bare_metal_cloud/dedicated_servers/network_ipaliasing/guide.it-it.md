@@ -563,4 +563,4 @@ In seguito, ti basta effettuare un ping dal tuo Additional IP verso l'esterno. S
 
 [Modalità bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).
