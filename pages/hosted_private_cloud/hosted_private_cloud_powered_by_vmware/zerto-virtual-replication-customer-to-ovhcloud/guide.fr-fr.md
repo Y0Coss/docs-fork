@@ -1,7 +1,7 @@
 ---
 title: "Utiliser Zerto entre OVHcloud et une plateforme tierce"
 excerpt: 'Découvrez comment connecter votre Zerto OVHcloud à une autre plateforme.'
-updated: 2023-12-04
+updated: 2025-06-25
 ---
 
 ## Objectif :
