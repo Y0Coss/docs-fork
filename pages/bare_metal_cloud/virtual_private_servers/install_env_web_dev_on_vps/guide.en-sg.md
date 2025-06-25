@@ -114,6 +114,6 @@ For some general tips on securing a GNU/Linux-based server, see our guides:
 
 [Securing a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 Join our [community of users](/links/community).
