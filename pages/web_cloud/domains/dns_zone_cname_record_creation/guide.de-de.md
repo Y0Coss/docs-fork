@@ -1,7 +1,7 @@
 ---
 title: "Hinzufügen eines CNAME DNS-Eintrags für eine Subdomain"
 excerpt: "Erfahren Sie, wie Sie einen DNS-Eintrag vom Typ CNAME zu einer von OVHcloud verwalteten DNS-Zone für die Subdomain einer Domain hinzufügen"
-updated: 2025-06-24
+updated: 2025-06-25
 ---
 
 <style>
@@ -28,7 +28,7 @@ CNAME-Einträge sind nützlich, um zu vermeiden, dass die IP-Adressen für Ihre 
 
 **Diese Anleitung erklärt, wie Sie einen CNAME-Eintrag in Ihre OVHcloud DNS-Zone eintragen.**
 
-**Sie haben bereits einen CNAME Eintrag in Ihrer DNS-Zone?** Folgen Sie unserer Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
+> **Sie haben bereits einen CNAME Eintrag in Ihrer DNS-Zone?** Folgen Sie unserer Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)".
 
 ## Voraussetzungen
 
@@ -36,15 +36,40 @@ CNAME-Einträge sind nützlich, um zu vermeiden, dass die IP-Adressen für Ihre 
 - Sie nutzen eine diesem Domainnamen zugeordnete DNS-Zone bei OVHcloud.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action}.
 
-**Das Hinzufügen, Ändern oder Löschen von DNS-Einträgen in einer aktiven DNS-Zone ist kritisch. Im Zweifelsfall wenden Sie sich an einen [spezialisierten Dienstleister](/links/partner).**
+> [!warning]
+>
+> **Das Hinzufügen, Ändern oder Löschen von DNS-Einträgen in einer aktiven DNS-Zone ist kritisch.**
+> Im Zweifelsfall wenden Sie sich an einen [spezialisierten Dienstleister](/links/partner).
 
 ## In der praktischen Anwendung
 
-**Sonderfälle**:
+### Einen CNAME DNS-Eintrag für die Subdomain einer Domain hinzufügen
 
-/// details  | CNAME- und TXT-Einträge für eine Subdomain - Klicken Sie hier für weitere Informationen
+1. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
+2. Klicken Sie auf der angezeigten Seite auf die Schaltfläche `Eintrag hinzufügen`{.action}.
+3. Wählen Sie im angezeigten Fenster das Feld `CNAME`{.action} aus.
+4. Geben Sie anschließend im Feld `Subdomain` die betreffende Subdomain (zum Beispiel `www` für die Subdomain `www.domain.tld`) und im Feld `Ziel *` den Domainnamen oder die Subdomain (zum Beispiel `domain.tld`) ein, auf die Sie mit dem CNAME Eintrag zeigen möchten. Klicken Sie anschließend auf `Weiter`{.action}.
+5. Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Warten Sie bis zu **24** Stunden, bis die Propagation im DNS-Netzwerk voll wirksam ist.
 
-Es wird nicht empfohlen, sowohl einen CNAME-Eintrag als auch einen TXT-Eintrag für dieselbe Subdomain zu konfigurieren. Dies kann zu unvorhersehbaren Ergebnissen bei der DNS-Auflösung führen, da nur eine Antwort pro DNS-Abfrage zurückgegeben werden kann.
+/// details | Lesen Sie unsere detaillierten Anleitungen:
+
+- [Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)
+- [Alle Informationen zu DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records)
+- [Erstellung einer Subdomain](/pages/web_cloud/domains/domain_create_subdomains)
+- [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
+- [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+- [Webhosting - Ändern von mit einem Webhosting verbundenen Domainnamen](/pages/web_cloud/web_hosting/multisites_modify_domain)
+
+///
+
+
+### Sonderfälle
+
+Klicken Sie auf die folgenden Links, um weitere Informationen zu erhalten:
+
+/// details | CNAME- und TXT-Einträge für eine Subdomain
+
+Konfigurieren Sie nicht gleichzeitig einen CNAME- und einen TXT-Eintrag für dieselbe Subdomain. Dies kann zu unvorhersehbaren Ergebnissen bei der DNS-Auflösung führen, da nur eine Antwort pro DNS-Abfrage zurückgegeben werden kann.
 
 Beispiel: Für *www.domain.tld* stehen folgende Einträge zur Verfügung:
 
@@ -55,33 +80,12 @@ Eine DNS-Abfrage für *www.domain.tld* gibt entweder das Ziel des CNAME-Eintrags
 
 ///
 
-/// details  | CNAME auf einer Domain in ihrer eigenen DNS-Zone - Klicken Sie hier für weitere Informationen
+/// details | CNAME auf einer Domain in ihrer eigenen DNS-Zone
 
 Gemäß der Konvention **können CNAME Einträge nicht für einen Domainnamen in seiner eigenen DNS-Zone verwendet werden**. Der Domainname muss nämlich direkt auf eine IP-Adresse mit einem Eintrag vom Typ [A](/pages/web_cloud/domains/dns_zone_a_record_creation) für eine IPv4 oder [AAAA](/pages/web_cloud/domains/dns_zone_aaaa_record_creation) für eine IPv6 verweisen.
 
 Wie bereits erwähnt, können Sie in der DNS-Zone, die Sie für die Domain *domain.tld* erstellt haben, keinen CNAME-Eintrag für diese Domain erstellen.  
 Sie können jedoch CNAME-Einträge für alle Subdomains (zum Beispiel: *subdomain.domain.tld* oder *www.domain.tld*) der Domain *domain.tld* in der für *domain.tld* erstellten DNS-Zone erstellen.
-
-///
-
-### Einen CNAME DNS-Eintrag für die Subdomain einer Domain hinzufügen
-
-1. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
-2. Klicken Sie auf der angezeigten Seite auf die Schaltfläche `Eintrag hinzufügen`{.action}.
-3. Wählen Sie im angezeigten Fenster das Feld `CNAME`{.action} aus.
-4. Geben Sie anschließend im Feld `Subdomain` die betreffende Subdomain (zum Beispiel `www` für die Subdomain `www.domain.tld`) und im Feld `Ziel *` den Domainnamen oder die Subdomain (zum Beispiel `domain.tld`) ein, auf die Sie mit dem CNAME Eintrag zeigen möchten. Klicken Sie anschließend auf `Weiter`{.action}.
-5. Überprüfen Sie die Zusammenfassung, und klicken Sie auf `Bestätigen`{.action}. Warten Sie bis zu **24** Stunden, bis die Propagation im DNS-Netzwerk voll wirksam ist.
-
-/// details | Klicken Sie hier für weitere Informationen.
-
-Lesen Sie unsere detaillierten Anleitungen:
-
-- [Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)
-- [Alle Informationen zu DNS-Einträgen](/pages/web_cloud/domains/dns_zone_records)
-- [Erstellung einer Subdomain](/pages/web_cloud/domains/domain_create_subdomains)
-- [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
-- [Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
-- [Webhosting - Ändern von mit einem Webhosting verbundenen Domainnamen](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
 ///
 
