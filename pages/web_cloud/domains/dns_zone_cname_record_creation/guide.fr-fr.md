@@ -51,9 +51,21 @@ Les enregistrements CNAME sont utiles pour éviter de devoir modifier les adress
 4. Renseignez ensuite dans le champ `Sous-domaine` le sous-domaine concerné (par exemple : `www` pour le sous-domaine `www.domain.tld`), et, dans le champ `Cible *`, le nom de domaine ou sous-domaine (par exemple : `domain.tld`) que vous souhaitez cibler à l'aide de l'enregistrement de type CNAME. Cliquez enfin sur `Suivant`{.action}.
 5. Vérifiez le résumé, puis cliquez sur `Valider`{.action}. Patientez jusqu'à **24** heures pour que la propagation de l'ajout sur le réseau DNS soit pleinement effective.
 
+/// details | Consultez nos guides détaillés :
+
+- [Tout savoir sur les zones DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
+- [Comment créer un sous-domaine ?](/pages/web_cloud/domains/domain_create_subdomains)
+- [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+- [Hébergement web - Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+- [Hébergement web - Modifier un nom de domaine déjà associé](/pages/web_cloud/web_hosting/multisites_modify_domain)
+
+///
+
+
 ### Cas particuliers
 
-**Cliquez sur les liens ci-dessous pour plus d'informations :**
+Cliquez sur les liens ci-dessous pour plus d'informations :
 
 /// details | Enregistrements CNAME et TXT pour un même sous-domaine
 
@@ -78,15 +90,6 @@ Vous pourrez cependant créer des enregistrements de type CNAME pour tous les so
 ///
 
 ## Aller plus loin
-
-Consultez nos guides détaillés :
-
-- [Tout savoir sur les zones DNS](/pages/web_cloud/domains/dns_zone_general_information)
-- [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
-- [Comment créer un sous-domaine ?](/pages/web_cloud/domains/domain_create_subdomains)
-- [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
-- [Hébergement web - Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
-- [Hébergement web - Modifier un nom de domaine déjà associé](/pages/web_cloud/web_hosting/multisites_modify_domain)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
  
