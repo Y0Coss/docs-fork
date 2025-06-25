@@ -443,6 +443,29 @@ Your code is executed in your browser and will consume the CPU and GPU resources
 
 To save your Notebook, click on the sub-menu `Save`{.action} of the `File` menu. Alternatively, you can use the keyboard shortcut `Ctrl+S`, or `CMD+S`, to save the Notebook quickly.
 
+### Getting started with code examples
+
+To help you get started with your AI Notebook, we provide a [GitHub repository](https://github.com/ovh/ai-training-examples) named `ai-training-examples`, containing code examples and tutorials. This repository is already cloned in your Notebook workspace when you launch it, so you can start exploring the examples right away.
+
+We currently provide a variety of tutorials, including for examples:
+
+- [Tensorflow](https://www.tensorflow.org/) tutorials as `ipython notebooks`
+- - Basic computation using single CPU or GPU: accessible on `notebooks/getting-started/tensorflow/basic_gpu_cpu_benchmark.ipynb`. Github preview available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/tensorflow/basic_gpu_cpu_benchmark.ipynb)
+- - Basic computation using multiple GPUs: accessible on `notebooks/getting-started/tensorflow/multiple_gpus_computation.ipynb`. Github preview available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/tensorflow/multiple_gpus_computation.ipynb)
+- A [PyTorch](https://pytorch.org/) version of this multi-GPU benchmarking tutorial, available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/pytorch/multi_gpu_benchmark.ipynb).
+
+These tutorials demonstrate how to perform simple tensor computations and compare the performance of running them on CPU versus GPU. 
+
+In addition to these tutorials, we also provide examples for more advanced topics, including:
+
+- Audio classification
+- Image classification
+- Image Generation
+- Image Segmentation
+- Object detection
+
+You can also learn to compare AI models based on resource consumption, accuracy, and training time. Refer to [this tutorial](/pages/public_cloud/ai_machine_learning/training_tuto_06_models_comparaison_weights_and_biases) for more information.
+
 ### Stopping an AI Notebook
 
 You can stop your AI Notebook at any time. This will release its compute resources but will keep your Notebook data and installed libraries. Therefore, you will not incur any further charges for compute unless you restart the Notebook. However, attached storage will be billed at the price of OVHcloud Object Storage. Consult the [AI Notebooks Billing documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_billing_concept) for more information.
