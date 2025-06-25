@@ -99,7 +99,7 @@ O certificado SSL gratuito Let's Encrypt (DV) pode incluir até **99** nomes de 
 4. Selecione o alojamento web em causa.
 5. Na página que vai aparecer, clique no separador `Certificados SSL`{.action}.
 6. De seguida, selecione o domínio ou subdomínio para o qual deseja ativar o certificado SSL gratuito Let's Encrypt (DV), com a menção `Ativar o certificado SSL`.
-7. De seguida, clique no botão `Ativar o certificado SSL Let's encrypt`{.action}.
+7. De seguida, clique no botão `Ativar o certificado SSL Let's Encrypt`{.action}.
 
 > [!success]
 >
