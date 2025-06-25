@@ -1,7 +1,7 @@
 ---
 title: Créer et configurer un disque supplementaire sur une instance
 excerpt: Découvrez comment attacher un nouveau volume à votre instance Public Cloud
-updated: 2025-06-03
+updated: 2025-06-26
 ---
 
 <style>
@@ -46,7 +46,7 @@ Cela peut être utile dans les cas suivants :
 
 ### Les différents types de volumes
 
-OVHcloud propose trois types de volumes Block Storage, chacun adapté à des besoins spécifiques en matière de performance, de capacité et de coûts. Ces solutions vous permettent d’attacher des volumes de stockage persistants à vos instances, en garantissant un haut niveau de fiabilité et de disponibilité. Si la fonctionnalité est disponible,  le chiffrement peut être activé à la création d'un volume, pour tous les types de volumes à l'exception des volumes Classic Multi-Attach dans les régions 3AZ.
+OVHcloud propose trois types de volumes Block Storage, chacun adapté à des besoins spécifiques en matière de performance, de capacité et de coûts. Ces solutions vous permettent d’attacher des volumes de stockage persistants à vos instances, en garantissant un haut niveau de fiabilité et de disponibilité. Si la fonctionnalité est disponible, le chiffrement peut être activé à la création d'un volume, pour tous les types de volumes à l'exception des volumes Classic Multi-Attach dans les régions 3AZ.
 
 /// details | **Classic – 500 IOPS garantis**
 
@@ -84,7 +84,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 
 > [!primary]
 >
-> Tous les types de volumes sont également disponibles en version chiffrée (**LUKS**). Ces volumes assurent la confidentialité des données sans impact sur les performances. Disponibles depuis le Manager OVHcloud ainsi qu’avec les outils présentés dans la section suivante, en spécifiant le type <volume_type>-luks.
+> Chaque type de volume est également disponible en version chiffrée (**LUKS**). Ces volumes assurent la confidentialité des données sans impact sur les performances. Ils sont disponibles depuis l'espace client OVHcloud ainsi qu’avec les outils présentés dans la section suivante, en spécifiant le type `<volume_type>-luks`.
 > 
 
 ### Attacher un nouveau volume
@@ -143,9 +143,9 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> Pour créer un volume block storage simple, vous avez besoin de 3 éléments :
 >>
->> * Le nom du volume
->> * La région
->> * La taille du volume en GB
+>> - Le nom du volume
+>> - La région
+>> - La taille du volume en GB
 >>
 >> Dans notre exemple, nous allons créer un block storage dans la région **GRA11** d'une taille de **10 GB**. Ajoutez les lignes suivantes dans un fichier nommé *simple_blockstorage.tf* :
 >>
@@ -230,28 +230,28 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> ```
 >>
 > **Via l'interface Horizon**
->> Se rendre dans la section déroulante `Volumes`, cliquez sur `Volumes`{.action} puis sur `Create Volume`{.action}.
+>> Rendez-vous dans la section déroulante `Volumes`{.action}, cliquez sur `Volumes`{.action} puis sur `Create Volume`{.action}.
 >>
 >> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
 >>
->> Renseignez le champs `Volume Name`{.action} et sélectionnez le type de volume que vous souhaitez. Cliquez ensuite sur `Create Volume`{.action}
+>> Renseignez le champ `Volume Name`{.action} et sélectionnez le type de volume que vous souhaitez. Cliquez ensuite sur `Create Volume`{.action}.
 >>
 >> > [!warning]
 >> >
 >> > Veuillez noter que si le type de volume « high-speed-gen2 » ou « luks » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
 >> >
 >>
->> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"pas via }
+>> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
 >>
->> Pour attacher ce volume à une instance, sur la ligne de votre volume, cliquez sur `la flèche`{.action} se trouvant en bout de ligne à côté de `Edit Volume`. Puis cliquez sur `Manage Attachments`{.action}
+>> Pour attacher ce volume à une instance, sur la ligne de votre volume, cliquez sur `la flèche`{.action} se trouvant en bout de ligne à côté de `Edit Volume`{.action}. Cliquez alors sur `Manage Attachments`{.action}
 >>
 >> ![Attach a block storage volume to an instance](images/horizon_manage_attachments.png){.thumbnail}
 >>
->> Selectionnez l'instance à laquelle vous souhaitez attacher votre colume, puis cliquez sur `Attach Volume.`{.action}
+>> Selectionnez l'instance à laquelle vous souhaitez attacher votre volume, puis cliquez sur `Attach Volume`{.action}.
 >>
 >> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
 >>
-> **Via la CLI Openstack**
+> **Via la CLI OpenStack**
 >> > [!warning]
 >> >
 >> > Veuillez noter que si le type de volume « high-speed-gen2 » ou « luks » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
@@ -268,7 +268,7 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> Les types se terminant par -luks sont chiffrés (LUKS).
 >>
->> Lister les types de volumes disponibles dans la région :
+>> Listez les types de volumes disponibles dans la région :
 >>
 >> ```bash
 >> openstack volume type list

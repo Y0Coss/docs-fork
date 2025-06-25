@@ -1,7 +1,7 @@
 ---
 title: Creating and configuring an additional disk on an instance
 excerpt: Find out how to attach a new volume to your Public Cloud instance
-updated: 2025-06-03
+updated: 2025-06-26
 ---
 
 <style>
@@ -83,7 +83,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 
 > [!primary]
 >
-> All volume types are also available in an encrypted version (LUKS). These volumes ensure data confidentiality without impacting performance. They are available through the OVHcloud Manager as well as via the tools presented in the next section, by specifying the type <volume_type>-luks.
+> All volume types are also available in an encrypted version (LUKS). These volumes ensure data confidentiality without impacting performance. They are available through the OVHcloud Control Panel as well as via the tools presented in the next section, by specifying the type `<volume_type>-luks`.
 >
 
 ### Attaching a new volume
@@ -143,9 +143,9 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >>
 >> To create a simple block storage volume, you need 3 elements:
 >>
->> * The name of the volume
->> * The region
->> * The size of the volume in GB
+>> - The name of the volume
+>> - The region
+>> - The size of the volume in GB
 >>
 >> In our example, we will create a block storage in the **GRA11** region with a size of **10 GB**. Add the following lines to a file named *simple_blockstorage.tf*:
 >>
@@ -230,7 +230,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >> ```
 >>
 > **Via the Horizon interface**
->> Go to the `Volumes` drop-down section, click `Volumes`{.action} and then `Create Volume`{.action}.
+>> Go to the `Volumes`{.action} drop-down section, click `Volumes`{.action} and then `Create Volume`{.action}.
 >>
 >> ![create volume block storage](images/horizon_create_volume.png){.thumbnail}
 >>
@@ -238,23 +238,23 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >>
 >> > [!warning]
 >> >
->> > Please note that if the volume type “high-speed-gen2” or “luks” does not appear in the list, this means that it is not available in this region.
+>> > Please note that if the volume type "high-speed-gen2" or "luks" does not appear in the list, this means that it is not available in this region.
 >> >
 >>
->> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000 "not via }
+>> ![create volume block storage 02](images/horizon_create_volume_02.png){.thumbnail width="1000"}
 >>
->> To attach this volume to an instance, on your volume line, click on `the arrow`{.action} at the end of the line next to `Edit Volume`. Then click on `Manage Attachments`{.action}
+>> To attach this volume to an instance, on your volume line, click `the arrow`{.action} at the end of the line next to `Edit Volume`. Then click on `Manage Attachments`{.action}.
 >>
 >> ![Attach a block storage volume to an instance](images/horizon_manage_attachments.png){.thumbnail}
 >>
->> Select the instance to which you wish to attach your volume, then click on `Attach Volume.`{.action}
+>> Select the instance to which you wish to attach your volume, then click on `Attach Volume`{.action}.
 >>
 >> ![Attach a block storage volume to an instance 02](images/horizon_manage_attachments_display.png){.thumbnail}
 >>
-> **Via the Openstack CLI**
+> **Via the OpenStack CLI**
 >> > [!warning]
 >> >
->> > Please note that if the volume type “high-speed-gen2” or “luks” does not appear in the list, this means that it is not available in this region.
+>> > Please note that if the volume type "high-speed-gen2" or "luks" does not appear in the list, this means that it is not available in this region.
 >> >
 >>
 >> Types of volumes:
@@ -294,7 +294,7 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >> | Device | /dev/sdb |
 >> | Tag | None |
 >> +-----------+-------------------------------------+
->> ````
+>> ```
 >>
 
 ### Configuring the new disk
