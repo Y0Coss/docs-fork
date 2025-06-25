@@ -1047,7 +1047,6 @@
             + [Tutorials](public-cloud-ai-and-machine-learning-ai-training-tutorials)
                 + [AI Training - Tutorial - Train your first ML model](public_cloud/ai_machine_learning/training_tuto_01_train_your_first_model)
                 + [AI Training - Tutorial - Build & use custom Docker image](public_cloud/ai_machine_learning/training_tuto_02_build_custom_image)
-                + [AI Training - Tutorial - Run your first Tensorflow code with GPUs](public_cloud/ai_machine_learning/training_tuto_03_tensorflow_gpu)
                 + [AI Training - Tutorial - Connect to VSCode via remote](public_cloud/ai_machine_learning/training_tuto_04_vscode_remote)
                 + [AI Training - Tutorial - Use tensorboard inside a job](public_cloud/ai_machine_learning/training_tuto_05_tensorboard)
                 + [AI Training - Tutorial - Compare models with W&B for audio classification task](public_cloud/ai_machine_learning/training_tuto_06_models_comparaison_weights_and_biases)
