@@ -1872,7 +1872,7 @@
             + [Backing-up an OVHcloud Managed Kubernetes cluster using Velero](public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero)
             + [Backing-up Persistent Volumes using Stash](public_cloud/containers_orchestration/managed_kubernetes/backing-up-volumes-using-stash)
 + Network
-   + [General Information](network-general-information)
+    + [General Information](network-general-information)
         + [How to troubleshoot your network using OVHcloud tools](network/network_tools)
         + [How to use the Bring Your Own IP feature](network/bring_your_own_ip/bring-your-own-IP)
     + [Additional IP](network-additional-ip)
