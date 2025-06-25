@@ -1,7 +1,7 @@
 ---
 title: "Comment ajouter un enregistrement DNS de type CNAME pour un sous-domaine"
 excerpt: "Découvrez comment ajouter un enregistrement DNS de type CNAME dans une zone DNS gérée chez OVHcloud pour le sous-domaine d'un nom de domaine"
-updated: 2025-06-24
+updated: 2025-06-25
 ---
 
 <style>
@@ -69,7 +69,7 @@ Cliquez sur les liens ci-dessous pour plus d'informations :
 
 /// details | Enregistrements CNAME et TXT pour un même sous-domaine
 
-Il est déconseillé de configurer à la fois un enregistrement CNAME et un enregistrement TXT pour le même sous-domaine. En effet, cela peut entraîner des résultats aléatoires lors de la résolution DNS, car seule une réponse peut être renvoyée par requête DNS.
+Ne configurez pas à la fois un enregistrement CNAME et un enregistrement TXT pour le même sous-domaine. En effet, cela peut entraîner des résultats aléatoires lors de la résolution DNS, car seule une réponse peut être renvoyée par requête DNS.
 
 Par exemple, si vous avez les enregistrements suivants pour *www.domain.tld* :
 
