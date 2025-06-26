@@ -204,8 +204,8 @@ Below are the **SMTP** settings to use when sending emails:
 
 - **Username**: Enter the **full** email address.
 - **Password**: Enter the password for the email account.
-- **EUROPE server (outgoing)**: pop.mail.ovh.net **or** ssl0.ovh.net.
-- **AMERICA/ASIA-PACIFIC server (outgoing)**: pop.mail.ovh.ca.
+- **EUROPE server (outgoing)**: smtp.mail.ovh.net **or** ssl0.ovh.net.
+- **AMERICA/ASIA-PACIFIC server (outgoing)**: smtp.mail.ovh.ca.
 - **Port**: 465.
 - **Security type**: SSL/TLS.
 

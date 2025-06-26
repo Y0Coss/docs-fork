@@ -204,8 +204,8 @@ Di seguito sono riportati i parametri **SMTP** da utilizzare per l’invio delle
 
 - **Nome utente**: Inserisci l'indirizzo email **completo**.
 - **Password**: Inserisci la password dell’indirizzo email.
-- **Server EUROPE (in uscita)**: pop.mail.ovh.net **o** ssl0.ovh.net.
-- **Server AMERICA/ASIA PACIFICA (in uscita)**: pop.mail.ovh.ca.
+- **Server EUROPE (in uscita)**: smtp.mail.ovh.net **o** ssl0.ovh.net.
+- **Server AMERICA/ASIA PACIFICA (in uscita)**: smtp.mail.ovh.ca.
 - **Porta**: 465.
 - **Tipo di sicurezza**: SSL/TLS.
 

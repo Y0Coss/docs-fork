@@ -204,8 +204,8 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 
 - **Nom d'utilisateur** : Renseignez l'adresse e-mail **complète**.
 - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
-- **Serveur EUROPE (sortant)** : pop.mail.ovh.net **ou** ssl0.ovh.net.
-- **Serveur AMERIQUE/ASIE-PACIFIQUE (sortant)** : pop.mail.ovh.ca.
+- **Serveur EUROPE (sortant)** : smtp.mail.ovh.net **ou** ssl0.ovh.net.
+- **Serveur AMERIQUE/ASIE-PACIFIQUE (sortant)** : smtp.mail.ovh.ca.
 - **Port** : 465.
 - **Type de sécurité** : SSL/TLS.
 
