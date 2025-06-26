@@ -99,26 +99,25 @@ CMD [ "streamlit" , "run" , "/workspace/main.py", "--server.address=0.0.0.0" ]
 
 ### Build the Docker image from the Dockerfile
 
-Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, Dockerfile, python files).
-
-Once you are in it, launch the following command to build your application image:
+From the directory containing your **Dockerfile**, run one of the following commands to build your application image:
 
 ```console
+# Build the image using your machine's default architecture
 docker build . -t llama_app:latest
+
+# Build image targeting the linux/amd64 architecture
+docker buildx build --platform linux/amd64 -t llama_app:latest .
 ```
 
-> [!primary]
-> **Notes**
->
-> - The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
->
-> - The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **llama_app:latest**.
+- The **first command** builds the image using your system’s default architecture. This may work if your machine already uses the `linux/amd64` architecture, which is required to run containers with our AI products. However, on systems with a different architecture (e.g. `ARM64` on `Apple Silicon`), the resulting image will not be compatible and cannot be deployed.
 
-> [!warning]
+- The **second command** explicitly targets the `linux/AMD64` architecture to ensure compatibility with our AI services. This requires `buildx`, which is not installed by default. If you haven’t used `buildx` before, you can install it by running: `docker buildx install`
+
+> [!primary]
 >
-> In order to run containers using AI products, please make sure that the docker image you will push respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
+> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
-> `docker buildx build --platform linux/amd64 ...`
+> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **llama_app:latest**.
 >
 
 ### Test it locally (optional)
