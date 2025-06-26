@@ -1,7 +1,7 @@
 ---
 title: 'Assigner un tag à un serveur Bare Metal'
 excerpt: 'Créez et modifiez des tags pour chaque serveur depuis votre espace client'
-updated: 2025-02-07
+updated: 2025-06-27
 ---
 
 ## Objectif
