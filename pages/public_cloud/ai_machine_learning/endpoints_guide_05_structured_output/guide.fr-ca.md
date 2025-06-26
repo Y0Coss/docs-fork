@@ -13,6 +13,15 @@ updated: 2025-04-28
 
 [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
+**Structured Output** is a powerful feature that allows you to enforce specific formats for the responses from AI models. By using the `response_format` parameter in your API calls, you can define how you want the output to be structured, ensuring consistency and ease of integration with your applications.
+This is particularly useful when you need the AI model to return data in a specific JSON format.
+The [JSON schema](https://json-schema.org/) specification can be used to describe what data structure should the output adhere to, and the AI model will generate responses that match it. 
+This feature allows for seamless integration of AI-generated data into your applications, enabling you to build robust and consistent workflows.
+
+Under the hood, structured output is usually made possible with combination of:
+- specific examples used during model training
+- runtime guided decoding, with popular backends such as [outlines](https://github.com/dottxt-ai/outlines), [xgrammar](https://github.com/mlc-ai/xgrammar), or [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer)
+
 ## Objective
 
 This documentation provides an overview on how to use structured outputs with the various AI models offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). 
@@ -20,7 +29,7 @@ The examples provided in this guide will be using the [Llama 3.3 70b model](http
 
 Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with Structured Output.
 The output formats managed by each model are defined in the Response Format section:
-![Model Specs](images/image.png)
+![Model Specs](images/model_specs.png)
 
 ## Requirements
 
@@ -52,15 +61,6 @@ If you wish to enable authentication using your own token, simply specify your A
 Follow the following instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) for more information on authentication.
 
 ## Instructions
-
-Structured output is a very powerful feature that allows us to enforce specific formats of the models' outputs.
-Using the JSON schema specification, this feature enables users to specialize and integrate LLMs into various applications.
-
-Under the hood, structured output is usually made possible with combination of:
-- specific examples used during model training
-- runtime guided decoding, with popular backends such as [outlines](https://github.com/dottxt-ai/outlines), [xgrammar](https://github.com/mlc-ai/xgrammar), or [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer)
-
-### How to use
 
 The `response_format` parameter of the Chat Completion API allows us to enable and configure the Structured Output features.
 Models that support structured output can manage the three following modes:
