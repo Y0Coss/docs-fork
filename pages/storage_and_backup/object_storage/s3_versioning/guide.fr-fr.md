@@ -159,6 +159,24 @@ Lorsque le versioning est activé :
 >> ![download current or versioned objects](images/bucket_download_versions.png)
 >>
 
+### Suppression d’objets : suppression simple, définitive et gestion des Delete Markers
+
+> [!tabs]
+> Via l'espace client OVHcloud
+>> Depuis la page principale de votre bucket Object Storage ou depuis la page de détails d’un objet, vous pouvez supprimer votre objet en cliquant sur `supprimer`{.action}.
+>>
+>> ![delete current or versioned objects](images/bucket_download_versions.png)
+>>
+>> > [!primary]
+>> >
+>> > Si le versioning est activé sur votre bucket S3, la suppression d’un objet ajoute un Delete Marker : l’objet disparaît de la vue par défaut, mais reste visible via l’option Voir les versions.
+Cette protection permet de restaurer un objet supprimé par erreur.
+Pour supprimer définitivement une version, cliquez sur les `trois points`{.action}, puis sur `Supprimer`{.action}, et confirmez l’action de suppression définitive.
+>> >
+>>
+> Via l'AWS CLI
+>>
+
 ### Considérations importantes
 
 - **Coûts de stockage :** chaque version d'un objet est stockée comme un objet complet, ce qui entraîne des coûts de stockage Object Storage - Standard.
