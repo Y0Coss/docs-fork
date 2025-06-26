@@ -1739,7 +1739,6 @@
         + [General guides to start](storage-object-storage-general-guides-to-start)
             + [Object Storage - Getting started with Object Storage](storage_and_backup/object_storage/s3_getting_started_with_object_storage)
             + [Object Storage - Identity and access management](storage_and_backup/object_storage/s3_identity_and_access_management)
-            + [Object Storage - How to connect Object Storage buckets with other resources in a vRack](storage_and_backup/object_storage/connect_other_ressources_in_vrack_private_network)
         + [Tutorials](storage-object-storage-tutorials)
             + [Object Storage - Encrypt your server-side objects with SSE-C](storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c)
             + [Object Storage - Optimise the sending of your files to Object Storage](storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files)
