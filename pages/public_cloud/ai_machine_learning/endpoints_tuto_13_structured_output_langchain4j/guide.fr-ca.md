@@ -1,6 +1,6 @@
 ---
-title: AI Endpoints - Using Structured Output with LangChain4j
-excerpt: Learn how to use Structured Output with Java, LangChain4j and OVHcloud AI Endpoints
+title: AI Endpoints - Utiliser les sorties structurées avec LangChain4j
+excerpt: Apprenez à utiliser les sorties structurées avec Java, LangChain4j et OVHcloud AI Endpoints
 updated: 2025-06-17
 ---
 

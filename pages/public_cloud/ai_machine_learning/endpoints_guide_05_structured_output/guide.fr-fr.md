@@ -1,6 +1,6 @@
 ---
-title: AI Endpoints - Structured Output
-excerpt: Learn how to use Structured Output with OVHcloud AI Endpoints
+title: AI Endpoints - Sorties structurées
+excerpt: Découvrez comment utiliser les sorties structurées avec OVHcloud AI Endpoints
 updated: 2025-04-28
 ---
 
