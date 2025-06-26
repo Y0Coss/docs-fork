@@ -6,7 +6,7 @@ updated: 2025-06-26
 
 ## Objectif
 
-Vous souhaitez récupérer une liste de tous les noms de domaine présents sur votre compte client OVHcloud ? Vous avez besoin de récupérer l'ensemble des informations relatives à vos noms de domaines (contacts associés, titulaire, options actives, dates de création et d'expiration, etc.) en une seule fois ?
+Vous souhaitez récupérer la liste de tous les noms de domaine présents sur votre compte client OVHcloud ? Vous avez besoin de récupérer, en une seule fois, l'ensemble des informations relatives à vos noms de domaine (contacts associés, titulaire, options actives, dates de création et d'expiration, etc.) ?
 
 **Découvrez comment exporter la liste de vos noms de domaine et leurs informations associées au format CSV depuis votre espace client OVHcloud.**
 
@@ -28,7 +28,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 2**
 >>
->> Cliquez sur le menu `Noms de domaine`{.action}. Au dessus du tableau qui s'affiche, cliquez sur le bouton `Exporter en CSV`{.action}.
+>> Cliquez sur le menu `Noms de domaine`{.action}. Au-dessus du tableau qui s'affiche, cliquez sur le bouton `Exporter en CSV`{.action}.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
@@ -42,15 +42,15 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 > **Étape 4**
 >>
->> Une fenêtre de chargement apparaît avec une barre de progression. Patientez jusqu'à ce que la barre de progression atteigne les 100%.
+>> Une fenêtre de chargement apparaît. Patientez jusqu'à ce que la barre de progression atteigne 100 %.
 >>
 >> ![Export domains in CSV format step 2 in progress](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/export-csv/export-domains-in-csv-format-step-2a.png){.thumbnail}
 >>
->> Dès que le fichier au format CSV est généré, le message suivant s'affiche et le téléchargement automatique du fichier se lance :
+>> Dès que le fichier CSV est généré, le message suivant s'affiche et le téléchargement du fichier se lance automatiquement :
 >>
 >> ![Export domains in CSV format step 2 done](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/export-csv/export-domains-in-csv-format-step-2b.png){.thumbnail}
 >>
->> Si le téléchargmenet du fichier CSV ne s'est pas lancé automatiquement, cliquez sur le lien `télécharger manuellement`{.action} présent dans le message pour récupérer le fichier au format CSV.
+>> Si le téléchargement du fichier CSV ne s'est pas lancé automatiquement, cliquez sur le lien `télécharger manuellement`{.action} afin de le récupérer.
 
 ## Aller plus loin
 
