@@ -198,17 +198,8 @@ public-cloud-storage-object-storage-tutorials: Tutorials
 public-cloud-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
 public-cloud-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
 public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
-public-cloud-storage-file-storage: File Storage
-public-cloud-storage-file-storage-enterprise-file-storage: Enterprise File Storage
-public-cloud-storage-file-storage-ha-nas: HA-NAS
 public-cloud-storage-block-storage: Block Storage
 public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
-public-cloud-storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
-public-cloud-storage-backup-and-disaster-recovery-solution-veeam: Veeam
-public-cloud-storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
-public-cloud-storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Managed Kubernetes - Data Protection
-public-cloud-storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Agent Backup for IaaS
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
