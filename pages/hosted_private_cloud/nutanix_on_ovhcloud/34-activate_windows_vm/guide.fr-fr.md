@@ -11,7 +11,7 @@ updated: 2022-12-21
 > [!warning]
 > Ce tutoriel vous explique comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes et décrit les actions à effectuer dans un contexte spécifique. Vous devrez peut-être adapter les instructions en fonction de votre situation.
 >
-> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/). Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce tutoriel.
+> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/). Pour plus d'informations, consultez la section [Aller plus loin](#go-further) de ce tutoriel.
 >
 
 ## Prérequis
@@ -20,7 +20,7 @@ updated: 2022-12-21
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Une licence Windows fournie par OVHcloud.
 - Une machine virtuelle sous Windows Server. Vous pouvez vous aider de ce guide pour installer une machine virtuelle sous Windows : [Gestion des machines virtuelles](/pages/hosted_private_cloud/nutanix_on_ovhcloud/06-virtual-machine-management).
-- La machine virtuelle se connecte à Internet au travers du rtVrack (par exemple via la passerelle par défaut).
+- La machine virtuelle se connecte à Internet au travers du rtvRack (par exemple via la passerelle par défaut).
 
 ## En pratique
 

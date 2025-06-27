@@ -27,7 +27,7 @@ Los bloques de direcciones IP de una región pueden moverse de un datacenter a o
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external} en el área de cliente de OVHcloud.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal) en el área de cliente de OVHcloud.
 - Tener una [dirección Additional IP](/links/network/additional-ip).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 

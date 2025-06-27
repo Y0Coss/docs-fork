@@ -10,7 +10,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer votre mac
 
 ## Prérequis
 
-- Avoir un serveur dédié avec un hyperviseur installé, par exemple [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/){.external}, [Proxmox](https://www.proxmox.com/en/proxmox-ve){.external}, etc.
+- Avoir un serveur dédié avec un hyperviseur installé, par exemple [VMware ESXi](https://www.vmware.com/products/cloud-infrastructure/vsphere){.external}, [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/){.external}, [Proxmox](https://www.proxmox.com/en/proxmox-ve){.external}, etc.
 - Avoir au moins une adresse [Additional IP](/links/network/additional-ip) connectée au serveur 
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 

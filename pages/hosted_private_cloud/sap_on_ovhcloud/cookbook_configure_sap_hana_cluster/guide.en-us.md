@@ -31,13 +31,13 @@ This implementation reduces the Recovery Time Objective (RTO), in case of a virt
 
 The availability of the SAP HANA database might be impacted during this configuration. Please take all precautions before starting this guide.
 
-### vSphere user
+### vSphere user creation
 
 To allow the Corosync service to get information from your SAP HANA nodes, you have to configure a user which has access to the vSphere interface.
 
 We recommend creating a dedicated user with limited permissions to interact with vSphere.
 
-This dedicated user needs only the "Read only" right to the datacenter on which the SAP HANA virtual machines are hosted. To know how to create this dedicated user, please refer to [our guide on changing user rights](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
+This dedicated user needs only the "Read only" right to the datacenter on which the SAP HANA virtual machines are hosted. To know how to create this dedicated user, please refer to [our guide on changing user rights](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud).
 
 ### SUSE packages
 

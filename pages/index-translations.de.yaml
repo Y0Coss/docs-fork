@@ -101,6 +101,10 @@ public-cloud-ai-and-machine-learning-ai-ecosystem-guides: AI Partners - Guides
 public-cloud-ai-and-machine-learning-ai-endpoints: AI Endpoints
 public-cloud-ai-and-machine-learning-ai-endpoints-guides: AI Endpoints - Guides
 public-cloud-ai-and-machine-learning-ai-endpointstutorials: AI Endpoints - Tutorials
+public-cloud-quantum-computing: Quantum computing
+public-cloud-quantum-computing-general-information: General information
+public-cloud-quantum-computing-emulator: Quantum emulators
+public-cloud-quantum-computing-emulators-guides: Guides
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes Service (MKS)
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
@@ -148,9 +152,9 @@ public-cloud-databases-mysql-tutorials: MySQL - Tutorials
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-postgresql-guides: PostgreSQL - Guides
 public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
-public-cloud-databases-redis: Caching/Valkey
-public-cloud-databases-redis-guides: Caching/Valkey - Guides
-public-cloud-databases-redis-tutorials: Caching/Valkey - Tutorials
+public-cloud-databases-redis: Valkey
+public-cloud-databases-redis-guides: Valkey - Guides
+public-cloud-databases-redis-tutorials: Valkey - Tutorials
 public-cloud-data-analytics-grafana: Dashboards
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
@@ -179,6 +183,7 @@ public-cloud-cross-functional: Public Cloud - Allgemeine Informationen
 public-cloud-cross-functional-getting-started: Erste Schritte
 public-cloud-cross-functional-general-information: Allgemeine Informationen
 public-cloud-cross-functional-project-management: Public Cloud Projektverwaltung
+public-cloud-cross-functional-migration: Migration
 public-cloud-cross-functional-tutorials: Tutorials
 public-cloud-cross-functional-services-management: Verwaltung von Dienstleistungen
 public-cloud-cross-functional-horizon: Verwaltung über Horizon
@@ -223,6 +228,9 @@ web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-appl
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Störungsbehebung
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-email-collaborative-solutions-zimbra: Zimbra
+web-cloud-email-collaborative-solutions-zimbra-getting-started: Erste Schritte
+web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-computer: E-Mail-Anwendung auf Ihrem Computer einrichten
+web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-mobile-device: E-Mail-Anwendung auf Ihrem Mobilgerät einrichten
 web-cloud-domains: Domains
 web-cloud-domains-api: API
 web-cloud-domains-api-frequent-tasks: Wiederkehrende Tasks
@@ -314,7 +322,7 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Agent Backup for IaaS
-network-byoip: Bring your own IP (BYOIP)
+network-general-information: Allgemeine Informationen
 network-additional-ip: Additional IP
 network-bgp: BGP Service
 network-security: Netzwerk und Sicherheit

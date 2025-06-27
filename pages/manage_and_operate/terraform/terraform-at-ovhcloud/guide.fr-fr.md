@@ -1,7 +1,7 @@
 ---
 title: Using Terraform with OVHcloud (EN)
 excerpt: Find out about useful resources in order to use Terraform with OVHcloud
-updated: 2023-09-27
+updated: 2025-06-13
 ---
 
 ## Introduction
@@ -21,7 +21,7 @@ Based on your automation needs at OVHcloud, you have to pick one or more of the 
 - [Hashicorp AWS provider](https://registry.terraform.io/providers/hashicorp/aws/latest/) to automate the operations of the Object Storage.
 - [Hashicorp Kubernetes provider](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) : once you have provisionned a Kubernetes cluster with OVH provider, you can manage your Kubernetes configuration with this provider.
 - [Hashicorp vSphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/latest) to automate the operations of [VMware on OVHcloud solutions](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
-- [Nutanix provider](https://registry.terraform.io/providers/nutanix/nutanix/latest) to automate the operations of OVHcloud [Nutanix on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/nutanix/).
+- [Nutanix provider](https://registry.terraform.io/providers/nutanix/nutanix/latest) to automate the operations of OVHcloud [Nutanix on OVHcloud](/links/hosted-private-cloud/nutanix).
 
 ## Mapping OVHcloud GUI to Terraform providers & resources
 
@@ -43,7 +43,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | HA-NAS | ovh |-[data source] [ovh_dedicated_nasha](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/dedicated_nasha)<br/>- [ovh_dedicated_nasha_partition](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dedicated_nasha_partition)|
 | Enterprise File Storage | ovh | not available |
 | Cloud Disk array | ovh | [data source] [ovh_dedicated_ceph](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/dedicated_ceph)|
-| Veam Cloud Connect | not available ||
+| Veeam Cloud Connect | not available ||
 | Logs Data Platform | ovh | partially available :<br/>- [ovh_dbaas_logs_graylog_output_stream](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_graylog_output_stream) <br/> - [ovh_dbaas_logs_input](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_input) <br/>- [data source] [ovh_dbaas_logs_input_engine](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/dbaas_logs_input_engine)
 
 ### Hosted Private Cloud
@@ -148,7 +148,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | --- | --- | --- |
 | vRack private network | ovh | [ovh_vrack](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/vrack)|
 | Public IP Adresses - Additional IPs | ovh | [ovh_ip_service](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/ip_service) |
-| OVH Cloud Connect | not available ||
+| OVH Cloud Connect | ovh | [ovh_ovhcloud_connect](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/ovhcloud_connect)|
 | Load Balancer |ovh| [ovh_iploadbalancing](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/iploadbalancing)|
 | CDN Infrastructure| not available ||
 
