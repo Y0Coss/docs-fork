@@ -522,7 +522,7 @@ Ce guide a pour objectif d'énumérer les fonctionnalités supportées par Objec
         <td>Browser-based uploads</td>
         <td>POST</td>
         <td>no</td>
-        <td>no</td>
+        <td>yes</td>
     </tr>
     <tr>
         <td>Data analytics</td>
