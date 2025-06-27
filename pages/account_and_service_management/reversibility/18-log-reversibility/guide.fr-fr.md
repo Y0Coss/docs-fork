@@ -67,6 +67,5 @@ Les fonctionnalités décrites dans les tableaux sont disponibles sans couts et 
 
 OVH ne garantit pas l'exploitation et la disponibilité des sauvegardes pour effectuer des restaurations des données des clients après la résiliation du service. 
 Les streams et index OpenSearch sont supprimés immédiatement après suppression du service.
-
 • Les archives Cold Storage sont immédiatement détruites à la résiliation du service
 • Le client est entièrement responsable du rapatriement de ses données via API ou  [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror) avant le décommissionnement du service ou résiliation du contrat.
