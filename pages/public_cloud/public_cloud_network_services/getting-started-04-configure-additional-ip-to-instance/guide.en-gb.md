@@ -9,6 +9,14 @@ updated: 2025-04-28
 > Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
 >
 
+> [!primary]
+> This article is about Additional IPv4 configuration. You can also configure IPv6 addresses on your Public Cloud instances using [this guide](public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+>
+> You can also use our vRack feature, which allows you to set up a virtual private network hosted on our infrastructures, on which you can connect a wide range of OVHcloud services. <br>
+> For Public Cloud instances that support vRack connectivity, you can configure a public IP block for usage in a vRack. You can find the instructions in this guide: <br>
+> [Configuring a public IP block in a vRack on a Public Cloud instance](public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance)
+>
+
 ## Objective
 
 You may need to configure Additional IP addresses on your instances, for example if you are hosting multiple websites or international services. OVHcloud Additional IPs allow you to associate multiple IP addresses with a single network interface.

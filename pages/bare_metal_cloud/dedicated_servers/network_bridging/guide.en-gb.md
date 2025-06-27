@@ -9,6 +9,15 @@ updated: 2025-05-16
 > Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
 >
 
+> [!primary]
+> This article is about Additional IPv4 configuration. You can also configure IPv6 addresses on your virtual machines using [this guide](bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm).
+>
+> You can also use our vRack feature, which allows you to use a virtual private network hosted on our infrastructures, on which you can connect a wide range of OVHcloud services. <br>
+> For servers that support vRack connectivity, you can configure Additional IP addresses in a vRack rather than on the public interface of your server. You can find the instructions in these guides: <br>
+> IPv4: [Configuring an IP block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-ip-block-vrack?id=kb_article_view&sysparm_article=KB0043342) <br>
+> IPv6: [Configuring an IPv6 block in a vRack](https://help.ovhcloud.com/csm/en-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062838).
+>
+
 ## Objective
 
 Bridged networking can be used to configure your virtual machines. Some tweaking is necessary to make the network configuration work on our network.
