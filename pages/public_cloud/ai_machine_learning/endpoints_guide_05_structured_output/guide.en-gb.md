@@ -1,6 +1,6 @@
 ---
-title: AI Endpoints - Function Calling
-excerpt: Learn how to use Function Calling with OVHcloud AI Endpoints
+title: AI Endpoints - Structured Output
+excerpt: Learn how to use Structured Output with OVHcloud AI Endpoints
 updated: 2025-04-28
 ---
 
@@ -18,9 +18,7 @@ This is particularly useful when you need the AI model to return data in a speci
 The [JSON schema](https://json-schema.org/) specification can be used to describe what data structure should the output adhere to, and the AI model will generate responses that match it. 
 This feature allows for seamless integration of AI-generated data into your applications, enabling you to build robust and consistent workflows.
 
-Under the hood, structured output is usually made possible with combination of:
-- specific examples used during model training
-- runtime guided decoding, with popular backends such as [outlines](https://github.com/dottxt-ai/outlines), [xgrammar](https://github.com/mlc-ai/xgrammar), or [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer)
+Under the hood, structured output is usually made possible with combination of specific examples used during model training, and runtime guided decoding (with popular backends such as [outlines](https://github.com/dottxt-ai/outlines), [xgrammar](https://github.com/mlc-ai/xgrammar), or [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer)).
 
 ## Objective
 
@@ -29,34 +27,37 @@ The examples provided in this guide will be using the [Llama 3.3 70b model](http
 
 Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with Structured Output.
 The output formats managed by each model are defined in the Response Format section:
+
 ![Model Specs](images/model_specs.png)
 
 ## Requirements
 
 The examples provided during this guide can be used with one of the following environments:
 
-### Python
-
-A [Python](https://www.python.org/) environment with the [openai client](https://pypi.org/project/openai/) and the pydantic library installed.
-```sh
-pip install openai pydantic
-```
-
-### Javascript
-
-A [Node.js](https://nodejs.org/en) environment with the [request](https://www.npmjs.com/package/request) library.
-Request can be installed using [NPM](https://www.npmjs.com/):
-```sh
-npm install request
-```
-
-### Curl
-
-A standard terminal, with [curl](https://curl.se/) installed on the system.
+> [!tabs]
+> **Python**
+>> 
+>> A [Python](https://www.python.org/) environment with the [openai client](https://pypi.org/project/openai/) and the pydantic library installed.
+>> ```sh
+>> pip install openai pydantic
+>> ```
+>> 
+>> **Javascript**
+>> 
+>> A [Node.js](https://nodejs.org/en) environment with the [request](https://www.npmjs.com/package/request) library.
+>> Request can be installed using [NPM](https://www.npmjs.com/):
+>> ```sh
+>> npm install request
+>> ```
+>> 
+>> **Curl**
+>> 
+>> A standard terminal, with [curl](https://curl.se/) installed on the system.
+>> 
 
 ### Authentication & rate limiting
 
-All the examples provided in this guide are using the anynomous authentication which makes it simpler to use but may cause rate limiting issues.
+Most of the examples provided in this guide are using the anynomous authentication which makes it simpler to use but may cause rate limiting issues.
 If you wish to enable authentication using your own token, simply specify your API key within the requests.
 Follow the following instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) for more information on authentication.
 
@@ -199,7 +200,7 @@ The following code samples provide a simple example on how to specify a JSON sch
 >> {"id":"chatcmpl-9276e3e305e04c73bd05224abcb7532b","object":"chat.completion","created":1750772047,"model":"Meta-Llama-3_3-70B-Instruct","choices":[{"index":0,"message":{"role":"assistant","content":"{\"languages\": [\n    {\"name\": \"JavaScript\", \"ranking\": 1, \"website\": \"https://www.javascript.com/\"},\n    {\"name\": \"Python\", \"ranking\": 2, \"website\": \"https://www.python.org/\"},\n    {\"name\": \"Java\", \"ranking\": 3, \"website\": \"https://www.java.com/\"}\n]}"},"finish_reason":"stop","logprobs":null}],"usage":{"prompt_tokens":65,"completion_tokens":80,"total_tokens":145}}
 >> ```
 >>
->> As we can see, the response is matching the expected JSON schema, and OVHcloud is the n°1 European cloud provider! 
+>> As we can see, the response is matching the expected JSON schema!
 >>
 > **Javascript**
 >>

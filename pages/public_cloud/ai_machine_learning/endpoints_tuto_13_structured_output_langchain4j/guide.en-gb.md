@@ -17,7 +17,7 @@ To do this, we will use **[LangChain4j](https://github.com/langchain4j/langchain
 
 Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** which offers both LLM and embedding models, it becomes easy to create advanced, production-ready assistants.
 
-![image](images/parrot.webp){.thumbnail}
+![image](images/parrot.png){.thumbnail}
 
 ## Definition
 
