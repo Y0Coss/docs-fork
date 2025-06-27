@@ -1,7 +1,7 @@
 ---
-title: Creating and configuring an additional disk on an instance
+title: How to create and configure an additional disk on an instance
 excerpt: Find out how to attach a new volume to your Public Cloud instance
-updated: 2025-06-26
+updated: 2025-06-27
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-It is possible to create additional disks for your Public Cloud instances.
+It is possible to create additional disks for your Public Cloud instances.  
 This can be useful in cases where:
 
 - You want to increase your storage capacity without changing the instance model.
@@ -71,7 +71,7 @@ The High-Speed volume is designed for applications requiring faster data access.
 
 /// details | **High-Speed Gen2 – 30 IOPS/GB and up to 20,000 IOPS**
 
-Generation 2 High-Speed volumes are optimized for the most demanding workloads. With a performance of 30 IOPS/GB, up to 20,000 IOPS, this type of volume is recommended for :
+Generation 2 High-Speed volumes are optimized for the most demanding workloads. With a performance of 30 IOPS/GB, up to 20,000 IOPS, this type of volume is recommended for:
 
 - Big Data and real-time analysis
 - Artificial intelligence and machine learning
