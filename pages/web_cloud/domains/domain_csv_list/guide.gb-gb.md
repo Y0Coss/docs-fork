@@ -28,7 +28,7 @@ Click on the tabs below to view each of the **4** steps.
 >>
 > **Step 2**
 >>
->> Click the `Domain names`{.action} menu. Above the table that appears, click `Export as CSV`{.action}.
+>> Click the `Domain names`{.action} menu. Above the table that appears, click `Export in CSV format`{.action}.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>
