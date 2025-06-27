@@ -38,7 +38,7 @@ Les comptes Zimbra Pro peuvent être configurés sur un iPhone en utilisant le p
 - **Lors du premier démarrage de l'application Outlook**, un assistant de configuration s'affiche :
     - Appuyez sur `Ajouter un compte`{.action}.
 
-![outlook ios](images/outlook-app-ios-add01.png){.thumbnail .h-500}
+![outlook ios](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
 
 - **Si un compte est déjà paramétré sur l'application Outlook** :
     1. Appuyez sur le cercle contenant les initiales du compte e-mail consulté ou sur l'icône de maison (`⌂`{.action}) dans la partie supérieure gauche de votre écran.
@@ -47,7 +47,7 @@ Les comptes Zimbra Pro peuvent être configurés sur un iPhone en utilisant le p
     4. Appuyez sur `Ajouter un compte`{.action}.
     5. Appuyez sur `Compte de courrier`{.action}.
 
-![outlook ios](images/outlook-app-ios-add02.png){.thumbnail .h-500}
+![outlook ios](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
 
 Suivez les étapes d'installation en cliquant successivement sur les **3** onglets ci-dessous :
 
@@ -56,7 +56,7 @@ Suivez les étapes d'installation en cliquant successivement sur les **3** ongle
 >>
 >> Saisissez votre adresse e-mail et appuyez sur `Ajouter un compte`{.action}.
 >>
->> ![outlook ios](images/outlook-app-ios-add-step01.png){.thumbnail .h-500}
+>> ![outlook ios](images/outlook-app-ios-add-step-01.png){.thumbnail .h-500}
 >>
 > **Étape 2**
 >>
@@ -64,7 +64,7 @@ Suivez les étapes d'installation en cliquant successivement sur les **3** ongle
 >>
 >> - Si la mention « **IMAP** » est présente en haut de la page : appuyez sur le bouton `?` dans le coin supérieur droit de l'écran **(1)**, puis choisissez `Changer de fournisseur de compte`{.action} **(2)**. Sélectionnez alors `Exchange` **(3)** et passez à l'étape 3.
 >>
->> ![outlook ios](images/outlook-app-ios-add-step02.png){.thumbnail .h-500}
+>> ![outlook ios](images/outlook-app-ios-add-step-02.png){.thumbnail .h-500}
 >>
 >> - Si vous êtes directement dirigé vers le choix du type de compte, sélectionnez `Exchange`.
 >>
@@ -81,7 +81,7 @@ Suivez les étapes d'installation en cliquant successivement sur les **3** ongle
 >>
 >> Pour finaliser la configuration, appuyez sur `Connexion`{.action}.
 >>
->> ![outlook ios](images/outlook-app-ios-add-step03.png){.thumbnail .h-500}
+>> ![outlook ios](images/outlook-app-ios-add-step-03.png){.thumbnail .h-500}
 >>
 
 > [!warning]
@@ -102,7 +102,7 @@ OVHcloud propose également une application web permettant d'accéder à votre a
 1. Sélectionnez le compte concerné.
 1. Appuyez sur `Modifier les informations de connexion`{.action}.
 
-![outlook ios](images/outlook-app-ios-modify-account-01.png){.thumbnail .h-500}
+![outlook ios](images/outlook-app-ios-modify-01.png){.thumbnail .h-500}
 
 Retrouvez les paramètres à **l'étape 3** du chapitre [Ajouter le compte](#add-account).
 
@@ -114,7 +114,7 @@ Retrouvez les paramètres à **l'étape 3** du chapitre [Ajouter le compte](#add
 1. Sélectionnez le compte concerné.
 1. Appuyez sur `Suppression du compte`{.action}.
 
-![outlook ios](images/outlook-app-ios-modify-delete-01.png){.thumbnail .h-500}
+![outlook ios](images/outlook-app-ios-delete-01.png){.thumbnail .h-500}
 
 
 ## Aller plus loin <a name="go-further"></a>
