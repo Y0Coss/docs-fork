@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compliancy
 excerpt: "Discover our S3* compatible Object Storage features list"
-updated: 2025-06-17
+updated: 2025-06-27
 ---
 
 <style>
