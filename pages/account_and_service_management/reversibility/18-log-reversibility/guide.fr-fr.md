@@ -27,45 +27,45 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | Tableaux de bords OpenSearch| Visualisation et exploration via OpenSearch Dashboards| JSON | **Entrant/Sortant** : Visualisations, tableaux de bord et paramètres via API et interface utilisateur. | [Using OpenSearch Dashboards with Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards)|
 | Stockage et archivage à froid | Archivage quotidien chiffrable, conservation longue durée disponible 48h après réception des logs | Fichier contenant du GELF livré sous forme d’archive | **Entrant** : activation de l’option et configuration du stream.  <br> **Sortant** : téléchargement via Control Panel ou API OVH. | [Archiving your logs-cold storage](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage) |
 
-### 2 - Implémentation OVHcloud
+### 2 - Implémentations OVHcloud
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
 | Plan de contrôle de la plateforme | Interface dans l'espace client pour créer des streams, dashboard, Alias, index OpenSearch dashboards ou inputs Logstash  | NA  | **Entrant** : Configuration des éléments liés au cycle de vie du service  <br> **Sortant** : Recréation de  la configuration sur un autre service ou plateforme de gestion de logs.   | [OVHcloud API](https://eu.api.ovh.com/console/?section=%2Fdbaas%2Flogs&branch=v1) |
 | OpenSearch Index As a Service | Import ou export de documents via l'API OpenSearch | JSON | **Entrant** : conventions de noms spécifiques pour les index et alias, paramètres d'index et restrictions API.  <br> **Sortant** : Requêtes de défilement OpenSearch avec pagination  | [OpenSearch Index as a Service](/pages/manage_and_operate/observability/logs_data_platform/opensearch_index) |
 | Tableaux de bords Greylog | Configuration des tableaux de bords et des recherches sauvegardées par le client sur l’interface  Graylog  | JSON | **Entrant** : utilisation des API ou du Panneau de contrôle Graylog  <br> **Sortant** : utilisation des API Graylog | [Greylog documentation](https://go2docs.graylog.org/4-0/home.htm) |
-| Chiffrement des archives | Chiffrement systématique des archives en utilisant les clés PGP publiques fournies par le client | Clé PGP | **Entrant** : Enregistrement des clés PGP via API ou l’espace client  <br> **Sortant** : récupération des clés enregistrés et mise en place d’un Mécanisme de chiffrement dans l’environnement cible | [Encrypting your logs Archives](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage_encryption)|
+| Chiffrement des archives | Chiffrement systématique des archives en utilisant les clés PGP publiques fournies par le client | Clés PGP | **Entrant** : Enregistrement des clés PGP via API ou l’espace client  <br> **Sortant** : récupération des clés enregistrés et mise en place d’un Mécanisme de chiffrement dans l’environnement cible | [Encrypting your logs Archives](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage_encryption)|
 
 ### 3 - Fonctionnalités spécifiques
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Infrastructure As a Code  | Déploiement automatisé via modules Terraform spécifiques à OVHcloud | N/A | **Entrant** : scripts à adapter pour d’autres fournisseurs. <br> **Sortant** : réécriture nécessaire des configurations Terraform. | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs) |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrante** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortante** : commandez et configurez un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
 
-L’offre de service Managed Grafana est déployée en mode single-node (plan essential). L’intégration avec d’autres services OVHcloud (OpenSearch, bases de données) est native via vRack. Les architectures incluent :
-
-- Scalabilité verticale : montée en puissance des ressources (CPU/RAM) via l’interface OVHcloud.
-- Cross-service integration : centralisation des logs et métriques dans OpenSearch managé.
+Les composants du produit sont accessibles depuis l’interface OVHcloud et permettent d’opérer les flux de données, les tableaux de bord, les outils de collecte, les index, les alias et les instances OpenSearch Dashboards. 
+Le produit est décliné en deux offres de service : 
+- Une infrastructure mutualisée : « logs-account »
+- Un cluster dédié : « logs-enterprise »
 
 ## Services partenaires
 
-Les partenaires OVHcloud concernés figurent dans l'annuaire des [partenaires OVHcloud](/links/partner) sous les mots-clés « **migration vers le cloud** ».
+Les partenaires OVHcloud concernés figurent dans l'annuaire des [partenaires OVHcloud](/links/partner) sous les mots-clés « **Data center expansion and Migration** ».
 
 OVHcloud dispose également d’un service dédié : [OVHcloud Professional Services](/links/professional-services).
 
 ## Coûts et frais
 
-Aucun frais de résiliation : pas de surfacturation liée à la migration des données par défaut. La facturation s’arrête dès la résiliation du service. 
-Les fonctionnalités décrites dans les tableaux sont disponibles sans coûts ni frais, sauf mentions contraires, et sont librement utilisables par le client.
+Les fonctionnalités décrites dans les tableaux sont disponibles sans couts et frais sauf mentions contraires, et sont librement utilisables par le client.
+• Aucun frais de sortie supplémentaire n'est appliqué.
+• La facturation dépend du volume stocké et du type d’infrastructure mobilisé (indexé/archivé).
+• Toute prestation d’assistance ou export clé en main peut engendrer des coûts additionnels.
+
 
 ## Conservation des données après résiliation du contrat
 
-> [!warning]
->
-> OVHcloud ne garantit pas l’utilisation et la disponibilité des sauvegardes pour restaurer les données du client après la résiliation du service.
-
-OVHcloud ne conserve aucune donnée après suppression d’un cluster Managed Data Visualization. 
-Les snapshots (automatiques ou manuels) sont irréversiblement supprimés. Une exportation manuelle préalable est obligatoire pour préserver les données.
+OVH ne garantit pas l'exploitation et la disponibilité des sauvegardes pour effectuer des restaurations des données des clients après la résiliation du service. 
+Les streams et index OpenSearch sont supprimés immédiatement après suppression du service.
+• Les archives Cold Storage sont immédiatement détruites à la résiliation du service
+• Le client est entièrement responsable du rapatriement de ses données via API ou  [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror) avant le décommissionnement du service ou résiliation du contrat.
