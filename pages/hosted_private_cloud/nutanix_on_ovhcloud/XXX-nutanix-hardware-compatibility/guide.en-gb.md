@@ -16,6 +16,14 @@ Each configuration includes chassis, motherboard, CPU, storage, and network elem
 - Basic understanding of hardware compatibility layers
 - Familiarity with T5, T4, and GEN2 profiles used in OVHcloud data centers
 
+The following software versions are currently validated by OVHcloud for Nutanix environments:
+
+| Product/Feature | Version | Comment |
+|-----------------|---------|---------|
+| AOS             | 7.X     | **LTS (Long-Term Support)** — Once validated by OVHcloud |
+| AHV             | 10.X    | Latest available version for the AOS installed by OVHcloud |
+| PrismCentral    | 2024.X  | Latest compatible version tested and validated by OVHcloud |
+
 ## Instructions
 
 ### T5 - HGR-HCI - Inspur NF5280M5

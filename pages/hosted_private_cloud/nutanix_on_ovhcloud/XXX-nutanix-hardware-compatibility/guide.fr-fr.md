@@ -6,14 +6,28 @@ updated: 2025-06-27
 
 ## Objectif
 
-**Découvrez les composants matériels validés pour les infrastructures Nutanix chez OVHcloud.**  
+**Découvrez les composants matériels validés pour les infrastructures Nutanix chez OVHcloud.**
 Chaque configuration regroupe les éléments clés : châssis, carte mère, processeur, stockage et réseau, selon le profil matériel utilisé.
+
+## Prérequis
+
+- Accès aux spécifications techniques Nutanix d’OVHcloud
+- Connaissances de base sur les couches de compatibilité matérielle
+- Connaissance des profils T5, T4 et GEN2 utilisés dans les datacentres OVHcloud
 
 ## Prérequis
 
 - Accès aux spécifications techniques Nutanix d’OVHcloud  
 - Connaissances de base sur les couches de compatibilité matérielle  
 - Connaissance des profils T5, T4 et GEN2 utilisés dans les datacentres OVHcloud
+
+Les versions logicielles suivantes sont actuellement validées par OVHcloud pour les environnements Nutanix :
+
+| Produit/Fonctionnalité | Version | Commentaire |
+|------------------------|---------|-------------|
+| AOS                    | 7.X     | **LTS (Long-Term Support)** — Une fois validée par OVHcloud |
+| AHV                    | 10.X    | Dernière version disponible pour l’AOS installé par OVHcloud |
+| PrismCentral           | 2024.X  | Dernière version compatible testée et validée par OVHcloud |
 
 ## En pratique
 
