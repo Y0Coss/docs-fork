@@ -14,7 +14,7 @@ Cette politique vise à mettre en œuvre les principes généraux de réversibil
 Les fonctionnalités du produit sont réparties en trois catégories :
 
 1. Les **fonctionnalités principales** pour lesquelles nous garantissons la capacité de migration.
-1. Les **implémentations OVHcloud** qui nécessitent une adaptation à un nouvel environnement de migration.
+1. Les **implémentation OVHcloud** qui nécessitent une adaptation à un nouvel environnement de migration.
 1. Les **fonctionnalités spécifiques** qui ne peuvent pas être garanties pour la migration car elles sont liées à l'environnement OVHcloud ou impliquent des développements personnalisés.
 
 ### 1 - Fonctionnalités principales
@@ -27,7 +27,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | Tableaux de bords OpenSearch| Visualisation et exploration via OpenSearch Dashboards| JSON | **Entrant/Sortant** : Visualisations, tableaux de bord et paramètres via API et interface utilisateur. | [Using OpenSearch Dashboards with Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards)|
 | Stockage et archivage à froid | Archivage quotidien chiffrable, conservation longue durée disponible 48h après réception des logs | Fichier contenant du GELF livré sous forme d’archive | **Entrant** : activation de l’option et configuration du stream.  <br> **Sortant** : téléchargement via Control Panel ou API OVH. | [Archiving your logs-cold storage](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage) |
 
-### 2 - Implémentations OVHcloud
+### 2 - Implémentation OVHcloud
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
