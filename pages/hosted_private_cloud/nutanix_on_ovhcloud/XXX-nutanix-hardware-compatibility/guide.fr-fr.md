@@ -33,67 +33,88 @@ Les versions logicielles suivantes sont actuellement validées par OVHcloud pour
 
 ### T5 - HGR-HCI - Inspur NF5280M5
 
-| Component Name | Component |
-|----------------|-----------|
-| Châssis | Inspur NF5280M5 |
-| Carte mère | YZMB-00882-104 |
-| Carte mère | YZMB-00882-10E |
-| Processeur | Intel Xeon Gold 6226R |
-| Processeur | Intel Xeon Gold 6242R |
-| Processeur | Intel Xeon Gold 6248R |
-| Mémoire | Aucun bridage lié à la certification Nutanix. Toute référence présente dans le BOM NF5280M5 est utilisable. |
-| Disque OS | Intel D3-S4510 Sata SSD 480 Go - ref. SSDSCKKB480G801 |
-| Disque (SAS uniquement) | Samsung SAS SSD PM1643a 3.84 To - ref. MZILT3T8HBLS/007 |
-| Disque (SAS uniquement) | Samsung SAS SSD PM1643 3.84 To - ref. MZILT3T8HALS-00007 |
-| Disque (SAS uniquement) | WDS SS530 3.84 To - ref. WUSTR1538ASS201 |
-| Contrôleur de stockage | Carte Jbod LSI 12 Gbps PCIe 8x 6xSFF-8643 9305-24I |
-| Carte réseau | ConnectX-5 OCP2.0 25GbE dual-port SFP28, PCIe 3.0 x8 |
+Cette configuration repose sur le châssis Inspur NF5280M5, largement utilisé dans les clusters HCI d’OVHcloud.
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr><th>Component Name</th><th>Component</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="1">Châssis</td><td>Inspur NF5280M5</td></tr>
+    <tr><td rowspan="2">Carte mère</td><td>YZMB-00882-104</td></tr>
+    <tr><td>YZMB-00882-10E</td></tr>
+    <tr><td rowspan="3">Processeur</td><td>Intel Xeon Gold 6226R</td></tr>
+    <tr><td>Intel Xeon Gold 6242R</td></tr>
+    <tr><td>Intel Xeon Gold 6248R</td></tr>
+    <tr><td rowspan="1">Mémoire</td><td>Aucun bridage lié à la certification Nutanix. Toute référence présente dans le BOM NF5280M5 est utilisable.</td></tr>
+    <tr><td rowspan="1">Disque OS</td><td>Intel D3-S4510 Sata SSD 480 Go - ref. SSDSCKKB480G801</td></tr>
+    <tr><td rowspan="3">Disque (SAS uniquement)</td><td>Samsung SAS SSD PM1643a 3.84 To - ref. MZILT3T8HBLS/007</td></tr>
+    <tr><td>Samsung SAS SSD PM1643 3.84 To - ref. MZILT3T8HALS-00007</td></tr>
+    <tr><td>WDS SS530 3.84 To - ref. WUSTR1538ASS201</td></tr>
+    <tr><td rowspan="1">Contrôleur de stockage</td><td>Carte Jbod LSI 12 Gbps PCIe 8x 6xSFF-8643 9305-24I</td></tr>
+    <tr><td rowspan="1">Carte réseau</td><td>ConnectX-5 OCP2.0 25GbE dual-port SFP28, PCIe 3.0 x8</td></tr>
+  </tbody>
+</table>
+
 
 ### T4 - Scale-iX - Asrock SPC741D8QM3-NL-E
 
-| Component Name | Component |
-|----------------|-----------|
-| Châssis | 1U 21" OVH |
-| Carte mère | Asrock SPC741D8QM3-NL-E |
-| Processeur | Intel Emerald Rapids Xeon 6526Y |
-| Processeur | Intel Emerald Rapids Xeon 6542Y |
-| Processeur | Intel Emerald Rapids Xeon 6554S |
-| Mémoire | Aucun bridage lié à la certification Nutanix. Toute référence présente dans le BOM SCALE T4 est utilisable. |
-| Disque OS | Samsung PM9A3 NVMe 960 Go - ref. MZQL2960HCJR-00A07 |
-| Disque OS (alt.) | Micron 7450PRO NVMe 960 Go - ref. MTFDKCC960TFR-1BC15ABYY |
-| Disque NVMe | Samsung PM9A3 NVMe 1.92 To - ref. MZQL21T9HCJR-00A07 |
-| Disque NVMe | Samsung PM9A3 NVMe 3.84 To - ref. MZQL23T8HCLS-00A07 |
-| Disque NVMe | Samsung PM9A3 NVMe 7.68 To - ref. MZQL27T6HBLA-00A07 |
-| Disque NVMe (alt.) | Micron 7450PRO NVMe 1.92 To - ref. MTFDKCC1T9TFR-1BC15ABYY |
-| Disque NVMe (alt.) | Micron 7450PRO NVMe 3.84 To - ref. MTFDKCC3T8TFR-1BC15ABYY |
-| Disque NVMe (alt.) | Micron 7450PRO NVMe 7.68 To - ref. MTFDKCC7T6TFR-1BC15ABYY |
-| Contrôleur de stockage | X |
-| Carte réseau | NVIDIA CX-6 LX CRYPTO 2xSFP28 25GbE OCP 3.0 - ref. 900-9X625-0083-SB0 |
-| Carte réseau (alt.) | Broadcom 2xSFP28 25GbE OCP 3.0 - ref. BCM957414N4140C |
-| Carte réseau (alt.) | Broadcom PCIe 4.0 x8 - ref. BCM957414A4142CC |
-| Alimentation | FSP 850W AC 1U - ref. YH5851-1EBR2A0D |
-| TPM | TPM ASROCK SPI 2.0 |
+Cette configuration 1U est conçue pour les clusters SCALE-iX. Elle prend en charge les processeurs Emerald Rapids et un stockage 100 % NVMe.
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr><th>Component Name</th><th>Component</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="1">Châssis</td><td>1U 21" OVH</td></tr>
+    <tr><td rowspan="1">Carte mère</td><td>Asrock SPC741D8QM3-NL-E</td></tr>
+    <tr><td rowspan="3">Processeur</td><td>Intel Emerald Rapids Xeon 6526Y</td></tr>
+    <tr><td>Intel Emerald Rapids Xeon 6542Y</td></tr>
+    <tr><td>Intel Emerald Rapids Xeon 6554S</td></tr>
+    <tr><td rowspan="1">Mémoire</td><td>Aucun bridage lié à la certification Nutanix. Toute référence présente dans le BOM SCALE T4 est utilisable.</td></tr>
+    <tr><td rowspan="1">Disque OS</td><td>Samsung PM9A3 NVMe 960 Go - ref. MZQL2960HCJR-00A07</td></tr>
+    <tr><td rowspan="1">Disque OS (alt.)</td><td>Micron 7450PRO NVMe 960 Go - ref. MTFDKCC960TFR-1BC15ABYY</td></tr>
+    <tr><td rowspan="3">Disque NVMe</td><td>Samsung PM9A3 NVMe 1.92 To - ref. MZQL21T9HCJR-00A07</td></tr>
+    <tr><td>Samsung PM9A3 NVMe 3.84 To - ref. MZQL23T8HCLS-00A07</td></tr>
+    <tr><td>Samsung PM9A3 NVMe 7.68 To - ref. MZQL27T6HBLA-00A07</td></tr>
+    <tr><td rowspan="3">Disque NVMe (alt.)</td><td>Micron 7450PRO NVMe 1.92 To - ref. MTFDKCC1T9TFR-1BC15ABYY</td></tr>
+    <tr><td>Micron 7450PRO NVMe 3.84 To - ref. MTFDKCC3T8TFR-1BC15ABYY</td></tr>
+    <tr><td>Micron 7450PRO NVMe 7.68 To - ref. MTFDKCC7T6TFR-1BC15ABYY</td></tr>
+    <tr><td rowspan="1">Contrôleur de stockage</td><td>X</td></tr>
+    <tr><td rowspan="1">Carte réseau</td><td>NVIDIA CX-6 LX CRYPTO 2xSFP28 25GbE OCP 3.0 - ref. 900-9X625-0083-SB0</td></tr>
+    <tr><td rowspan="2">Carte réseau (alt.)</td><td>Broadcom 2xSFP28 25GbE OCP 3.0 - ref. BCM957414N4140C</td></tr>
+    <tr><td>Broadcom PCIe 4.0 x8 - ref. BCM957414A4142CC</td></tr>
+    <tr><td rowspan="1">Alimentation</td><td>FSP 850W AC 1U - ref. YH5851-1EBR2A0D</td></tr>
+    <tr><td rowspan="1">TPM</td><td>TPM ASROCK SPI 2.0</td></tr>
+  </tbody>
+</table>
 
 ### T5 - HGR-HCI GEN2 - COMPAL FERA1
 
-| Component Name | Component |
-|----------------|-----------|
-| Châssis | COMPAL SR220-2 |
-| Carte mère | COMPAL IER70 FERA1-E - CM LGA4677-X |
-| Processeur | Intel EMR Xeon 5515+ |
-| Processeur | Intel EMR Xeon 6526Y |
-| Processeur | Intel EMR Xeon 6542Y |
-| Mémoire | Aucun bridage lié à la certification Nutanix. Toute référence présente dans le BOM NF5280M5 est utilisable. |
-| Disque OS | Samsung PM9A3 NVMe 960 Go - ref. MZQL2960HCJR-00A07 |
-| Disque NVMe | Samsung PM9A3 NVMe 1.92 To - ref. MZQL21T9HCJR-00A07 |
-| Disque NVMe | Samsung PM9A3 NVMe 3.84 To - ref. MZQL23T8HCLS-00A07 |
-| Disque NVMe | Samsung PM9A3 NVMe 7.68 To - ref. MZQL27T6HBLA-00A07 |
-| Disque NVMe (alt.) | Micron 7450PRO NVMe 1.92 To - ref. MTFDKCC1T9TFR-1BC15ABYY |
-| Disque NVMe (alt.) | Micron 7450PRO NVMe 3.84 To - ref. MTFDKCC3T8TFR-1BC15ABYY |
-| Disque NVMe (alt.) | Micron 7450PRO NVMe 7.68 To - ref. MTFDKCC7T6TFR-1BC15ABYY |
-| Contrôleur de stockage | X |
-| Carte réseau | NVIDIA CX-6 LX CRYPTO 2xSFP28 25GbE OCP 3.0 - ref. 900-9X625-0083-SB0 |
+Ce profil T5 GEN2 intègre la plateforme COMPAL FERA1. Il cible les environnements HCI à hautes performances reposant sur des disques NVMe.
 
+<table border="1" cellpadding="4" cellspacing="0">
+  <thead>
+    <tr><th>Component Name</th><th>Component</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="1">Châssis</td><td>COMPAL SR220-2</td></tr>
+    <tr><td rowspan="1">Carte mère</td><td>COMPAL IER70 FERA1-E - CM LGA4677-X</td></tr>
+    <tr><td rowspan="3">Processeur</td><td>Intel EMR Xeon 5515+</td></tr>
+    <tr><td>Intel EMR Xeon 6526Y</td></tr>
+    <tr><td>Intel EMR Xeon 6542Y</td></tr>
+    <tr><td rowspan="1">Mémoire</td><td>Aucun bridage lié à la certification Nutanix. Toute référence présente dans le BOM NF5280M5 est utilisable.</td></tr>
+    <tr><td rowspan="1">Disque OS</td><td>Samsung PM9A3 NVMe 960 Go - ref. MZQL2960HCJR-00A07</td></tr>
+    <tr><td rowspan="3">Disque NVMe</td><td>Samsung PM9A3 NVMe 1.92 To - ref. MZQL21T9HCJR-00A07</td></tr>
+    <tr><td>Samsung PM9A3 NVMe 3.84 To - ref. MZQL23T8HCLS-00A07</td></tr>
+    <tr><td>Samsung PM9A3 NVMe 7.68 To - ref. MZQL27T6HBLA-00A07</td></tr>
+    <tr><td rowspan="3">Disque NVMe (alt.)</td><td>Micron 7450PRO NVMe 1.92 To - ref. MTFDKCC1T9TFR-1BC15ABYY</td></tr>
+    <tr><td>Micron 7450PRO NVMe 3.84 To - ref. MTFDKCC3T8TFR-1BC15ABYY</td></tr>
+    <tr><td>Micron 7450PRO NVMe 7.68 To - ref. MTFDKCC7T6TFR-1BC15ABYY</td></tr>
+    <tr><td rowspan="1">Contrôleur de stockage</td><td>X</td></tr>
+    <tr><td rowspan="1">Carte réseau</td><td>NVIDIA CX-6 LX CRYPTO 2xSFP28 25GbE OCP 3.0 - ref. 900-9X625-0083-SB0</td></tr>
+  </tbody>
+</table>
 
 ## Aller plus loin
 
