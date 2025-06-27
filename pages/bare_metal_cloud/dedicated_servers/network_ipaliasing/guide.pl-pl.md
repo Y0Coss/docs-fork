@@ -24,8 +24,8 @@ Alias IP (po angielsku IP aliasing) to specjalna konfiguracja sieci serwera dedy
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}.
-- Dysponowanie jednym lub kilkoma adresami Additional IP.
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal).
+- Dysponowanie jednym lub kilkoma adresami [Additional IP](/links/network/additional-ip).
 - Zalogowanie się poprzez SSH do serwera (dostęp *sudo*).
 
 > [!warning]
@@ -556,4 +556,4 @@ Następnie wystarczy skierować ping z Additional IP na zewnątrz. Jeśli to dzi
 
 [Tryb bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+Dołącz do [grona naszych użytkowników](/links/community).

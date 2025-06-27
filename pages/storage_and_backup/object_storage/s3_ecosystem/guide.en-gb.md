@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Third-party applications compatibility
 excerpt: This guide provides a list of tested, certified third-party applications compatible with OVHcloud Object Storage
-updated: 2025-06-11
+updated: 2025-06-23
 ---
 
 ## Objective
@@ -17,6 +17,7 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 | Tool/Software | Compatibility | Notes | Getting Started |
 | --- | --- | --- | --- |
 | **Veeam** | Compatible - Certified | Veeam Ready certified, details can be found on [Veeam Alliance Technical Program page](https://www.veeam.com/partners/alliance-partner-technical-programs.html){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_veeam) |
+| **Acronis Cyber Protect Cloud** | Compatible - Certified | Officially supported, details can be found on [Acronis S3 Integration page](https://solutions.acronis.com/en-us/integrations/amazon-s3/){.external} | Coming Soon |
 | **IBM Storage Protect** | Compatible - Certified | Officially supported, details can be found on [IBM Storage Protect Support Page](https://www.ibm.com/support/pages/ibm-spectrum-protect-object-storage-support){.external} | Coming Soon |
 | **Cohesity, Veritas NetBackup**  | Compatible - Certified | Officially supported, details can be found on [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/en_US/dpp.NetBackup){.external}  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | Coming Soon |
 | **Artesca, Veritas BackupExec** | Compatible - Certified | Officially supported, details can be found on [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/en_US/dpp.BackupExec){.external} | Coming Soon |

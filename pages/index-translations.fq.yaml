@@ -239,6 +239,9 @@ web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-appl
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnostic et dépannage
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-email-collaborative-solutions-zimbra: Zimbra
+web-cloud-email-collaborative-solutions-zimbra-getting-started: Premiers pas
+web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-zimbra-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-domains: Domaines
 web-cloud-domains-api: API
 web-cloud-domains-api-frequent-tasks: Tâches courantes
@@ -330,7 +333,7 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 storage-backup-and-disaster-recovery-solution-agent-backup-for-iaas: Agent Backup for IaaS
-network-byoip: Bring your own IP (BYOIP)
+network-general-information: Informations générales
 network-additional-ip: Additional IP
 network-bgp: BGP Service
 network-security: Réseau et Sécurité
