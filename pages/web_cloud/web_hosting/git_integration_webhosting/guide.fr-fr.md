@@ -108,7 +108,7 @@ Pour configurer votre clé SSH, consultez la section [Associer une clé SSH à G
 >
 > La génération d'une clé SSH est une étape cruciale, car elle établit une connexion sécurisée et chiffrée entre le répertoire de votre site web et le dépôt GitHub. Cette clé assure que les transferts de données et les modifications de code se font de manière sûre et authentifiée, prévenant les accès non autorisés et garantissant l'intégrité du code.
 
-Copiez votre clé SSH en cliquant sur le boutton à droite.
+Copiez votre clé SSH en cliquant sur le bouton à droite.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key-copy.png){.thumbnail}
 
