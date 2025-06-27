@@ -1,5 +1,5 @@
 ---
-title: 'Assigning a tag to a Bare Metal server'
+title: 'How to assign a tag to a Bare Metal server'
 excerpt: 'Create and modify tags for individual servers in the OVHcloud Control Panel'
 updated: 2025-06-27
 ---
