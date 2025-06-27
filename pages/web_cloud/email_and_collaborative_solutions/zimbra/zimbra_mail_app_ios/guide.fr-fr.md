@@ -44,14 +44,14 @@ Depuis votre iPhone ou votre iPad, rendez-vous dans les `Réglages` puis suivez 
 >> 2. Appuyez sur `Ajouter un compte`{.action}.
 >> 3. Sélectionnez `Microsoft Exchange`{.action}.
 >>
->> ![mail ios](images/mail-app-ios-add-step01.png){.thumbnail .h-500}
+>> ![mail ios](images/mail-app-ios-add-step-01.png){.thumbnail .h-500}
 >>
 > **Étape 2**
 >>
 >> 1. Saisissez votre adresse e-mail et une description, puis appuyez sur `Suivant`{.action}.
 >> 2. Dans la fenêtre qui apparaît, choisissez `Configurer manuellement`{.action}.
 >>
->> ![mail ios](images/mail-app-ios-add-step02.png){.thumbnail .h-500}
+>> ![mail ios](images/mail-app-ios-add-step-02.png){.thumbnail .h-500}
 >>
 > **Étape 3**
 >>
@@ -59,7 +59,7 @@ Depuis votre iPhone ou votre iPad, rendez-vous dans les `Réglages` puis suivez 
 >> - **Mot de passe** : Saisissez le mot de passe associé à votre adresse e-mail.
 >> - **Description** : Renseignez un nom permettant d'identifier ce compte parmi vos autres comptes e-mail enregistrés sur mail.
 >>
->> ![mail ios](images/mail-app-ios-add-step03.png){.thumbnail .h-500}
+>> ![mail ios](images/mail-app-ios-add-step-03.png){.thumbnail .h-500}
 >>
 > **Étape 4**
 >>
@@ -74,7 +74,7 @@ Depuis votre iPhone ou votre iPad, rendez-vous dans les `Réglages` puis suivez 
 >>
 >> Pour finaliser la configuration, appuyez sur `Suivant`{.action} et sélectionnez les fonctionnalités que vous souhaitez explorer sur votre iPhone ou iPad.
 >>
->> ![mail ios](images/mail-app-ios-add-step04.png){.thumbnail .h-500}
+>> ![mail ios](images/mail-app-ios-add-step-04.png){.thumbnail .h-500}
 >>
 
 > [!warning]
