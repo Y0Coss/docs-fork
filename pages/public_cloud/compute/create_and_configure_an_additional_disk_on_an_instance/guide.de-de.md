@@ -82,7 +82,7 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 
 ![standardvolumes](images/volume-types.png){.thumbnail}
 
-> [!PRIMARY]
+> [!primary]
 >
 > Jeder Volume-Typ ist auch als verschlüsselte Version verfügbar (**LUKS**). Diese Volumes gewährleisten die Vertraulichkeit der Daten, ohne die Leistung zu beeinträchtigen. Sie sind über das OVHcloud Kundencenter sowie mit den im nächsten Abschnitt beschriebenen Tools verfügbar, indem Sie den `<volume_type>-luks`-Typ angeben.
 >
