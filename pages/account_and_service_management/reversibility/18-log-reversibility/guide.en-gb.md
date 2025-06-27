@@ -40,8 +40,7 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| Versioning managed by OVHcloud | Updates of OpenSearch, Graylog are under OVHcloud responsibility | N/A | **Incoming**: installation of new packages that allow the platform to be used (see RACI). <br>**Outgoing**: version management at the expense of the client. | [Accountability model](https://help.ovhcloud.com/csm/en-gb-logs-data-platform-responsibility-model?id=kb_article_view&sysparm_article=KB0050057) |
-| Anti-DDoS OVHcloud | Mitigation VAC included by default | N/A | **Incoming**: automatic. <br> **Outgoing**: provide an equivalent third party solution. | [Anti-DDoS OVHcloud](https://www.ovhcloud.com/en/security/anti-ddos/) |
+| Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Incoming**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outgoing**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](https://www.ovhcloud.com/en/security/anti-ddos/) |
 
 **List of architectures**
 
@@ -54,22 +53,24 @@ The product is divided into two service offers:
 
 **Partner services**
 
-The OVHcloud partners concerned are listed in the [OVHcloud partners directory](/links/partner) under the "**cloud migration**" keywords.
+The OVHcloud partners concerned are listed in the [OVHcloud partners directory](/links/partner) under the "**Data center expansion and Migration**" keywords.
 
 OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
 
 **Cost and fees**
 
-Some features described in the tables above are not available free of charge, please consult the [product page](https://www.ovhcloud.com/en-gb/identity-security-operations/logs-data-platform/) to see the complete pricing
+Features described in tables are available at no cost, unless otherwise specified, and are freely usable by the customer. More details about pricing are available at [this link:](https://www.ovhcloud.com/en-gb/identity-security-operations/logs-data-platform/)
 
-* No additional exit fees.
+[product page](https://www.ovhcloud.com/en-gb/identity-security-operations/logs-data-platform/) to see the complete pricing
+
+* No additional exit fees applied.
 * Billing depends on the volume stored and the type of infrastructure mobilized (indexed/archived).
 * Any assistance or turnkey export service may incur additional costs.
 
 **Data retention after termination of the contract**
 
-OVHcloud does not guarantee the use and availability of backups to restore customer data after termination of the service.
+OVHcloud does not guarantee the use and availability of backups to restore client's data after service termination.
 
-* Streams and OpenSearch indices are deleted immediately after service is removed.
+* Streams and OpenSearch indexes are deleted immediately once the service is removed.
 * The cold storage archives are immediately destroyed upon termination of the service
-* The customer is fully responsible for the repatriation of his data via API or [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror) before decommissioning the service or terminating the contract.
+* The client is fully responsible for data export via API or [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror) before decommissioning the service or contract termination.
