@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy Whisper Speech Recognition Model
 excerpt: How to deploy OpenAI’s Whisper Speech Recognition Model
-updated: 2023-12-15
+updated: 2025-06-27
 ---
 
 > [!primary]

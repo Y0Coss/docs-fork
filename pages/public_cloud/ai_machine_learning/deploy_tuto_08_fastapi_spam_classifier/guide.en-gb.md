@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy and call a spam classifier with FastAPI
 excerpt: How to deploy and call an API for spam classification using FastAPI
-updated: 2023-11-27
+updated: 2025-06-27
 ---
 
 > [!primary]

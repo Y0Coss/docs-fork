@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy a web service for YOLOv5 using Flask
 excerpt: How to deploy a web service for YOLOv5 using your own weights with Flask
-updated: 2023-11-27
+updated: 2025-06-27
 ---
 
 > [!primary]
@@ -19,12 +19,12 @@ For more information on how to train YOLOv5 on a custom dataset, refer to the fo
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](/links/manager)
--   an AI Deploy project created inside a Public Cloud project
--   a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
--   [Docker](https://www.docker.com/get-started) installed on your local computer
--   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
--   your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov5/notebook_object_detection_yolov5_coco.ipynb)
+- access to the [OVHcloud Control Panel](/links/manager)
+- an AI Deploy project created inside a Public Cloud project
+- a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
+- [Docker](https://www.docker.com/get-started) installed on your local computer
+- some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+- your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov5/notebook_object_detection_yolov5_coco.ipynb))
 
 ## Instructions
 

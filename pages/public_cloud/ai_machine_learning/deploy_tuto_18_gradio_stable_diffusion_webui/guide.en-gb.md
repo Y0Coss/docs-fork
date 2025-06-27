@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy Stable Diffusion WebUI
 excerpt: How to deploy Automatic1111’s Stable Diffusion WebUI
-updated: 2023-12-20
+updated: 2025-06-27
 ---
 
 > [!primary]

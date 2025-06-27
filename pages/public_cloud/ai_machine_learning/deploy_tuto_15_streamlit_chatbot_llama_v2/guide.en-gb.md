@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy LLaMA 2 in a Streamlit application
 excerpt: How to build and deploy a LLaMA 2 chatbot application using Streamlit
-updated: 2023-11-27
+updated: 2025-06-27
 ---
 
 On July 18, 2023, [Meta](https://about.meta.com/) released [LLaMA 2](https://ai.meta.com/llama/), the latest version of their open-source Large Language Model (LLM).
@@ -26,7 +26,7 @@ To deploy your app, you need:
 - An AI Deploy Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
-- [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
+- [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](/links/manager).
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 - The full code of the application, which can be found on this [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/llama-2-chatbot), which we advise you to clone.
 - An **access to Llama 2 Models**. To obtain Llama 2, you will need to:

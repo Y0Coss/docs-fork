@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy a brain tumor segmentation app using Streamlit
 excerpt: How to build and deploy a brain tumor segmentation application using streamlit
-updated: 2023-11-27
+updated: 2025-06-27
 ---
 
 > [!primary]
@@ -29,7 +29,7 @@ To deploy your app, you need:
 - An AI Deploy Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
-- [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
+- [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](/links/manager).
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 - The BraTS2020 dataset. [Download it here](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation)
 - Your weights obtained from training the U-Net model on this dataset (refer to the *"Step 6 - Train and Save the model"* part of the [image segmentation notebook tutorial](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb)). 

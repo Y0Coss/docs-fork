@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Compare models with W&B for audio classification task
 excerpt: Compare 2 models by running 2 jobs in parallel. See which one performs best on your data!
-updated: 2023-05-11
+updated: 2025-06-27
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy a Rasa chatbot with a simple Flask app
 excerpt: Understand how simple it is to deploy a chatbot with AI Deploy
-updated: 2023-05-11
+updated: 2025-06-27
 ---
 
 > [!primary]

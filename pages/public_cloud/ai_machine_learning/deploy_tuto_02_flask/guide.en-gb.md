@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy a simple app with Flask
 excerpt: How to build and use a custom Docker image containing a Flask application
-updated: 2023-11-27
+updated: 2025-06-27
 ---
 
 > [!primary]
