@@ -94,7 +94,7 @@ Si vous avez renseigné un dépôt GitHub privé (adresse de dépôt de type `gi
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
 
-Pour configurer votre clé SSH, consultez la section [Associer une clé SSH à GitHub (uniquement pour les dépôts GitHub privés)](#linkSSHKey).
+Pour configurer votre clé SSH, consultez la section Associer une clé SSH à GitHub (uniquement pour les dépôts GitHub privés) ci-dessous.
 
 #### Associer une clé SSH à GitHub (uniquement pour les dépôts GitHub privés) <a name="linkSSHKey"></a>
 
