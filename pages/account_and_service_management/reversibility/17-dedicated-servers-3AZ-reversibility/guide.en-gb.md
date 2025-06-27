@@ -1,6 +1,6 @@
 ---
 title: Dedicated Servers 3-AZ Reversibility Policy
-updated: 2025-06-24
+updated: 2025-06-27
 ---
 
 ## Objective

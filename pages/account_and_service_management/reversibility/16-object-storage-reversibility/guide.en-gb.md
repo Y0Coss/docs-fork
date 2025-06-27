@@ -1,6 +1,6 @@
 ---
 title: Object Storage product reversibility policy
-updated: 2025-06-24
+updated: 2025-06-27
 ---
 
 ## Objective
