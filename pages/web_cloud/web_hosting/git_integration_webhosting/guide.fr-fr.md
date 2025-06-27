@@ -1,7 +1,7 @@
 ---
 title: "Configurer et utiliser Git avec son hébergement web OVHcloud"
 excerpt: "Découvrez comment configurer et utiliser Git avec votre hébergement web dans votre espace client OVHcloud"
-updated: 2025-01-31
+updated: 2025-06-27
 ---
 
 ## Objectif
@@ -73,11 +73,11 @@ Enfin, cliquez sur `Create Repository`{.action}.
 Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme :
 
 - `https://github.com/<username>/<repository_name.git>` pour un dépôt public.
-- `git@github.com:<username>/<repository_name.git>` pour un dépôt privé. 
- 
- Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
+- `git@github.com:<username>/<repository_name.git>` pour un dépôt privé.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
+Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
+
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branchv-name.png){.thumbnail}
 
 Définissez maintenant la branche de votre dépôt GitHub. La branche par défaut est `main`, mais si vous voulez utiliser une autre branche, créez-en une sur GitHub en suivant les étapes ci-dessous :
 
@@ -90,11 +90,13 @@ Définissez maintenant la branche de votre dépôt GitHub. La branche par défau
 
 Retournez sur le formulaire d'association de Git de votre espace client OVHcloud et indiquez le nom de la nouvelle branche que vous venez de créer.
 
-#### Associer une clé SSH à GitHub (uniquement pour les dépôts GitHub privés) <a name="linkSSHKey"></a>
+Si vous avez renseigné un dépôt GitHub privé (adresse de dépôt de type `git@github.com:<username>/<repository_name.git>`), alors un champ `SSH key` (clé SSH) s'affiche en dessous du champ `Branch`.
 
-> [!primary]
->
-> La génération d'une clé SSH est une étape cruciale, car elle établit une connexion sécurisée et chiffrée entre le répertoire de votre site web et le dépôt GitHub. Cette clé assure que les transferts de données et les modifications de code se font de manière sûre et authentifiée, prévenant les accès non autorisés et garantissant l'intégrité du code.
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
+
+Pour configurer votre clé SSH, consultez la section [Associer une clé SSH à GitHub (uniquement pour les dépôts GitHub privés)](#linkSSHKey).
+
+#### Associer une clé SSH à GitHub (uniquement pour les dépôts GitHub privés) <a name="linkSSHKey"></a>
 
 > [!primary]
 >
@@ -102,7 +104,15 @@ Retournez sur le formulaire d'association de Git de votre espace client OVHcloud
 >
 > Lorsque votre dépôt GitHub est public, les fichiers peuvent être récupérés sans authentification, ce qui signifie que Git peut cloner et mettre à jour le code sans avoir besoin d'une clé SSH. En revanche, si votre dépôt est privé, GitHub exige une authentification pour y accéder. La clé SSH permet alors d’établir cette connexion sécurisée et de garantir que seuls les utilisateurs autorisés puissent interagir avec le dépôt.
 
-Copiez et enregistrez la clé SSH sur votre compte GitHub. Cela permet d'établir une connexion sécurisée sans nécessiter de saisie de mot de passe à chaque opération Git que vous serez amené à effectuer.
+> [!primary]
+>
+> La génération d'une clé SSH est une étape cruciale, car elle établit une connexion sécurisée et chiffrée entre le répertoire de votre site web et le dépôt GitHub. Cette clé assure que les transferts de données et les modifications de code se font de manière sûre et authentifiée, prévenant les accès non autorisés et garantissant l'intégrité du code.
+
+Copiez votre clé SSH en cliquant sur le boutton à droite.
+
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key-copy.png){.thumbnail}
+
+Enregistrez la clé SSH sur votre compte GitHub :
 
 - Connectez-vous à votre compte GitHub.
 - Cliquez sur votre image de profil en haut à droite, puis sur `Settings`{.action}.
