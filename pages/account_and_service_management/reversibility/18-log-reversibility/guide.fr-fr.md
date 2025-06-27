@@ -58,14 +58,14 @@ OVHcloud dispose également d’un service dédié : [OVHcloud Professional Serv
 ## Coûts et frais
 
 Les fonctionnalités décrites dans les tableaux sont disponibles sans couts et frais sauf mentions contraires, et sont librement utilisables par le client.
-• Aucun frais de sortie supplémentaire n'est appliqué.
-• La facturation dépend du volume stocké et du type d’infrastructure mobilisé (indexé/archivé).
-• Toute prestation d’assistance ou export clé en main peut engendrer des coûts additionnels.
+- Aucun frais de sortie supplémentaire n'est appliqué.
+- La facturation dépend du volume stocké et du type d’infrastructure mobilisé (indexé/archivé).
+- Toute prestation d’assistance ou export clé en main peut engendrer des coûts additionnels.
 
 
 ## Conservation des données après résiliation du contrat
 
 OVH ne garantit pas l'exploitation et la disponibilité des sauvegardes pour effectuer des restaurations des données des clients après la résiliation du service. 
 Les streams et index OpenSearch sont supprimés immédiatement après suppression du service.
-• Les archives Cold Storage sont immédiatement détruites à la résiliation du service
-• Le client est entièrement responsable du rapatriement de ses données via API ou  [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror) avant le décommissionnement du service ou résiliation du contrat.
+- Les archives Cold Storage sont immédiatement détruites à la résiliation du service
+- Le client est entièrement responsable du rapatriement de ses données via API ou  [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror) avant le décommissionnement du service ou résiliation du contrat.
