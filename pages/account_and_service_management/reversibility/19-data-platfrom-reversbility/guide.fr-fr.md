@@ -21,13 +21,17 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Data Catalog | Intégration de plus de 60 connecteurs pour centraliser les sources de données | CSV, JSON, XML, Parquet, Avro, JDBC, Kafka, REST, FTP, etc. | **Entrante** : Configuration de connecteurs standard via interface web.<br> **Sortante** : export des métadonnées et données via API.| [Data Catalog](https://docs.dataplatform.ovh.net/#/en/product/data-catalog/index) |
-
+| Data Catalog | Intégration de plus de 60 connecteurs pour centraliser les sources de données | CSV, JSON, XML, Parquet, Avro, JDBC, Kafka, REST, FTP, etc. | **Entrante** : Configuration de connecteurs standard via interface web.<br> **Sortante** : export des métadonnées et données via API.| [Data Catalog documentation](https://docs.dataplatform.ovh.net/#/en/product/data-catalog/index) |
+| Lakehouse Manager | Stockage unifié basé sur Apache Iceberg et Trino | Parquet, ORC, Avro, Iceberg |  **Entrante** : Configuration manuelle via une interface web   <br> **Sortante** : eExport via Trino, Spark, ou API.  | [Lakehouse Manager documentation](https://docs.dataplatform.ovh.net/#/en/product/lakehouse-manager/index) |
+| Data Processing Engine | Orchestration de pipelines ETL/ELT avec Spark et Python. | Python, PySpark | **Entrante** : Configuration manuelle via interface web ou connexion de repository git. <br> **Sortante** : export des workflows via Git ou API.  | [Data processing engine documentation](https://docs.dataplatform.ovh.net/#/en/product/dpe/index) |
+| Analytics Manager | Création de tableaux de bords avec éditeur no-code ou SQL (Trino). | SQL, JSON | **Entrante** :configuration manuelle via l’interface web. <br> **Sortante** :export des requêtes/visualisations via API. | [Analytics Manager documentation](https://docs.dataplatform.ovh.net/#/en/product/am/index) |
+| Applications Services | Déploiement d'applications web et APIs (Node.js, Python, Docker). | --- | **Entrante** : configuration manuelle via interface web ou via repository git. <br> **Sortante** : export via Git ou API | [Applications services documentation](https://docs.dataplatform.ovh.net/#/en/product/app-manager/index)  |
 
 ### 2 - Implémentations OVHcloud
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | **Entrante** :--- <br> **Sortante** : | []()  |
+| --- | --- | --- | **Entrante** :--- <br> **Sortante** : | []()  |
 
 ### 3 - Fonctionnalités spécifiques
 
