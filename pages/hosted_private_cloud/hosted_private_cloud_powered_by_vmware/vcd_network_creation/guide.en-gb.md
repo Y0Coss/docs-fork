@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Creating network components from the VCD control panel"
 excerpt: "Find out how to easily create network components within the VCD on OVHcloud control panel"
-updated: 2024-09-17
+updated: 2025-06-30
 ---
 
 <style>
@@ -379,7 +379,8 @@ To configure Promiscuous or Allow-DHCP mode:
 | Quality of service   | NSX-T Default Segment Profile             | NSX-T Default Segment Profile               |
 | Segment Security     | NSX-T Default Segment Profile             | `ovh-default-dhcp-security-segment-profile` |
 
-> **Tip:** Promiscuous and DHCP profiles must be set manually after the network is created if required.
+> [!warning]
+> Promiscuous and DHCP profiles must be set manually after the network is created if required.
 
 Do a final check of the settings, then click `FINISH`.
 

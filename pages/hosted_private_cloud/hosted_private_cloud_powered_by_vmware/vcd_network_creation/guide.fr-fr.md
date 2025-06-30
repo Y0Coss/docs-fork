@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud"
 excerpt: "Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud"
-updated: 2024-09-17
+updated: 2025-06-30
 ---
 
 <style>
@@ -351,52 +351,47 @@ Pour continuer l'étape 5 (de création d'un réseau privé), cliquez sur `SUIVA
 
 6\. Il est possible ici de définir des modèles de profil de segments (optionnel).
 
-Ces modèles peuvent être utilisés pour des besoins avancés en matière de réseaux (par exemple avec pfSense : Promiscuous mode).
+6\. (Optionnel) Des modèles de profil de segment peuvent être définis ici.
 
-Il existe **3 modes** :
+Les profils de segment peuvent être utilisés pour des cas d’usage réseau avancés, comme l’activation du protocole CARP ou le mode Promiscuous dans des environnements imbriqués.
 
-- **Non défini (le mode de ce guide).**
-- **Allow-DHCP.**
-- **Promiscuous mode.**
+Il existe **3 modes disponibles** :
 
-| Détails du modèle        | Promiscuous mode                   |
-|--------------------------|------------------------------------|
-| Découverte d'adresses IP | Profil de segment par défaut NSX-T |
-| Découverte MAC           | Promiscuous mode                   |
-| SpoofGuard               | Profil de segment par défaut NSX-T |
-| Qualité de service       | Profil de segment par défaut NSX-T |
-| Sécurité des segments    | Profil de segment par défaut NSX-T |
+- **Par défaut** (appliqué automatiquement)
+- **Allow-DHCP**
+- **Promiscuous**
 
-| Détails du modèle        | Allow-DHCP                         |
-|--------------------------|------------------------------------|
-| Découverte d'adresses IP | Profil de segment par défaut NSX-T |
-| Découverte MAC           | Promiscuous mode                   |
-| SpoofGuard               | Profil de segment par défaut NSX-T |
-| Qualité de service       | Profil de segment par défaut NSX-T |
-| Sécurité des segments    | Allow-DHCP                         |
+> Ces profils sont nécessaires dans certaines situations spécifiques :
+>
+> - Apprentissage MAC ou IP dans des environnements imbriqués
+> - Profils de sécurité personnalisés pour autoriser le trafic DHCP
+> - Besoins en protection contre l'usurpation
 
-Des profils de segments personnalisés sont nécessaires dans un certain nombre de situations spécifiques.
+Pour configurer le mode Promiscuous ou Allow-DHCP :
 
-**Celles-ci incluent notamment :**
+1. Rendez-vous dans `Mise en réseau`{.action} > `Tous les réseaux`{.action}
+2. Sélectionnez le réseau cible
+3. Dans la section `Profils de segment`{.action}, cliquez sur `Modifier`{.action}
+4. Choisissez le profil approprié
 
-- L'apprentissage MAC ou IP doit être activé pour les environnements imbriqués.
-- Profils de sécurité personnalisés pour autoriser le trafic DHCP provenant d'un réseau.
-- Activation des protections contre l'usurpation.
+![VCD Networking Network 06](images/NETWORK_6_1.png){.thumbnail}
 
-![VCD Networking Network 06_2](images/NETWORK_6_2.png){.thumbnail}
+| Paramètre               | Mode Promiscuous                          | Mode Allow-DHCP                          |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| Découverte d'adresses IP | Profil de segment par défaut NSX-T             | Profil de segment par défaut NSX-T               |
+| MAC Discovery        | `ovh-default-promiscuous-mac-discovery-profile` | `ovh-default-promiscuous-mac-discovery-profile` |
+| SpoofGuard           | Profil de segment par défaut NSX-T             | Profil de segment par défaut NSX-T               |
+| Qualité de service   | Profil de segment par défaut NSX-T             | Profil de segment par défaut NSX-T               |
+| Sécurité des segments     | Profil de segment par défaut NSX-T             | `ovh-default-dhcp-security-segment-profile` |
 
-7\. Suivant le choix de votre configuration, vous pouvez arriver à l'étape 7 ou 8.
+> [!warning]
+> Les profils Promiscuous et Allow-DHCP doivent être configurés manuellement après la création du réseau si nécessaire.
 
-**Exemple :**
+Vérifiez une dernière fois les paramètres, puis cliquez sur `TERMINER`{.action}.
 
-- **Étape 7** : Avec "Modèle de profil de segment".
-- **Étape 8** : Sans "Modèle de profil de segment".
+![Finaliser la création du réseau](images/NETWORK_7.png)
 
-Vérifiez les réglages définis puis lancee la création du réseau en cliquant sur `TERMINER`{.action}.
-
-![VCD Networking Network 07](images/NETWORK_7.png){.thumbnail}
-
-Votre réseau est maintenant entièrement créé et prêt à l'emploi.
+Votre réseau est maintenant entièrement créé et prêt à être utilisé.
 
 **Glossaire :**
 
