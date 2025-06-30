@@ -14,7 +14,7 @@ updated: 2025-06-27
 
 > [!primary]
 >
-> This guide is aimed at customers with an email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
+> This guide is aimed at customers with the email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
 
 Zimbra Pro email accounts can be configured on an Android mobile using the ActiveSync protocol. This allows you to configure all the collaborative features of your email address at once. The Google Gmail app is available for free from the Google Play Store on Android.
 
@@ -22,15 +22,16 @@ Zimbra Pro email accounts can be configured on an Android mobile using the Activ
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is your responsibility to ensure that these services work properly.
->
-> This guide is designed to help you accomplish common tasks. Nevertheless, we recommend contacting a [specialized partner](https://marketplace.ovhcloud.com/c/support-collaboration) and/or the service publisher if you experience any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+> 
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> 
 
 ## Requirements
 
-- an email address [Zimbra Pro](/links/web/emails-zimbra).
-- You need to have the Gmail application installed on your Android mobile device.
-- You must have the login details for the email address you would like to configure.
+- A [Zimbra Pro](/links/web/emails-zimbra) account
+- The Gmail app installed on your device
+- The login details for the email account you would like to configure
 
 > [!primary]
 >
@@ -75,8 +76,8 @@ Follow the installation steps by clicking on the **4** tabs below:
 >>
 >> - **Email**: This field is pre-filled with the email address you entered earlier. Please check that your email address is complete and correct.
 >> - **Password**: This field is pre-filled with the password entered earlier.
->> - **Domain\Username** : Enter your full email address.
->> - **Server** : Enter "zimbra1.mail.ovh.net".
+>> - **Domain\Username**: Enter your full email address.
+>> - **Server**: Enter "zimbra1.mail.ovh.net".
 >> - **Port**: Leave the value "443" as the default.
 >>
 >> To finalize the configuration, press `Next`{.action}.
@@ -88,7 +89,7 @@ Follow the installation steps by clicking on the **4** tabs below:
 
 Once you have configured your email address, you can start using it! You can now send and receive messages, and manage your calendars and tasks.
 
-OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ### How do I modify existing settings?<a name="modify-settings"></a>
 
