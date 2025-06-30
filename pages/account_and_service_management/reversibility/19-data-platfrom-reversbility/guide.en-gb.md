@@ -31,8 +31,9 @@ The features of the product line fall into three categories:
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
 | --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
-| --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
-| --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
+| Data Processing Engine | ETL/ELT pipeline orchestration with Spark and Python. | OVHcloud platform-specific format, no standards deployed | **Inbound**: Data imported from data catalog with manual or automatic configuration of jobs <br> **Outbound**: No export possible | [Data processing engine documentation](https://docs.dataplatform.ovh.net/#/en/product/dpe/index) |
+| Identity and access management | Account management and user access on the platform | NA | **Inbound**: Configuration via the web interface <br> **Outbound**: Export user accounts in CSV format | [DATAP IAM documentation](https://docs.dataplatform.ovh.net/#/en/getting-further/project-toolkit?id=user-management) |
+
 
 
   
@@ -41,8 +42,7 @@ The features of the product line fall into three categories:
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
 | --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
-| API OVHcloud | Automatisation via API propriÃ©taires. | JSON | Entrante : CrÃ©ation du serviceSortante : Pas dâ€™export de donnÃ©e | API OVH |
-| Monitoring intÃ©grÃ© | Outils de surveillance OVHcloud intÃ©grÃ©s. | N/A | Entrante : N/A (Pas de donnÃ©es importÃ©es)Sortante : Non exportable actuellement (Logs et infos de monitoring de la plateforme) | Control center |
+| Integrated monitoring | Monitoring and centralized performance management developed by OVHcloud.| NA | **Inbound**: Default integrated tracking interface on platform <br> **Outbound**: Logs and monitoring information cannot be exported | [Control center documentation](https://docs.dataplatform.ovh.net/#/en/product/cc/index) |
 
 ## List of architectures
 
