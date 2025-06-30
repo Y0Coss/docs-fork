@@ -10,11 +10,12 @@ updated: 2025-06-27
 }
 </style>
 
+
 ## Objective
 
 > [!primary]
 >
-> This guide is aimed at customers with an email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
+> This guide is aimed at customers with the email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
 
 Zimbra Pro accounts can be configured on iPhone or iPad using ActiveSync protocol. This allows you to configure all the collaborative features of your email address at once. The Mail application is available natively on iOS.
 
@@ -22,21 +23,22 @@ Zimbra Pro accounts can be configured on iPhone or iPad using ActiveSync protoco
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is your responsibility to ensure that these services work properly.
->
-> This guide is designed to help you accomplish common tasks. Nevertheless, we recommend contacting a [specialized partner](https://marketplace.ovhcloud.com/c/support-collaboration) and/or the service publisher if you experience any difficulties. We will not be able to assist you. For more information, see the [Go further](#go-further) section of this guide.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+> 
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> 
 
 ## Requirements
 
-- an email address [Zimbra Pro](/links/web/emails-zimbra).
-- You need to have the Mail app installed on your iPhone or iPad.
-- You must have the login details for the email address you would like to configure.
+- A [Zimbra Pro](/links/web/emails-zimbra) account
+- The Mail app installed on your device
+- The login details for the email account you would like to configure
 
 ## Instructions
 
 ### Add the <a name="add-account"></a> account
 
-From your iPhone or iPad, go to the `Settings` section, then follow the installation steps by clicking on the **4** tabs below:
+From your iPhone or iPad, go to the "Settings" section, then follow the installation steps by clicking on the **4** tabs below:
 
 > [!tabs]
 > **Step 1**
@@ -56,7 +58,7 @@ From your iPhone or iPad, go to the `Settings` section, then follow the installa
 >>
 > **Step 3**
 >>
->> - **Email** : Enter your full email address.
+>> - **Email**: Enter your full email address.
 >> - **Password**: Enter the password associated with your email address.
 >> - **Description**: Enter a name that can be used to identify this account, along with other email accounts saved on email.
 >>
@@ -66,14 +68,14 @@ From your iPhone or iPad, go to the `Settings` section, then follow the installa
 >>
 >> In the next window, tick `Advanced settings`{.action} and enter the following information:
 >>
->> - **Email** : Enter your full email address.
->> - **Server** : Enter “zimbra1.mail.ovh.net”.
+>> - **Email**: Enter your full email address.
+>> - **Server**: Enter “zimbra1.mail.ovh.net”.
 >> - **Domain**: Leave this field blank.
->> - **Username** : Enter your full email address.
->> - **Password** : Enter the password associated with the email address.
+>> - **Username**: Enter your full email address.
+>> - **Password**: Enter the password associated with the email address.
 >> - **Description**: Enter a name that can be used to identify this account, along with other email accounts saved on email.
 >>
->> To finalize the configuration, tap `Next`{.action} and select the features you want to explore on your iPhone or iPad.
+>> To finalize the configuration, tap `Next`{.action} and select the features you want to use on your iPhone or iPad.
 >>
 >> ![mail ios](images/mail-app-ios-add-step04.png){.thumbnail .h-500}
 >>
@@ -86,7 +88,7 @@ From your iPhone or iPad, go to the `Settings` section, then follow the installa
 
 Once you have configured your email address, you can start using it! You can now send and receive messages, and manage your calendars and tasks.
 
-OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ### How do I modify existing settings?<a name="modify-settings"></a>
 
