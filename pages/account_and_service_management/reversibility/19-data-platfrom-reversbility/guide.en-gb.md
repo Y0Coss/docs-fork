@@ -31,9 +31,9 @@ The features of the product line fall into three categories:
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
 | --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
-| Data Processing Engine | Orchestration de pipelines ETL/ELT avec Spark et Python. | Format spÃ©cifique Ã  la plateforme OVH, pas de standard | Entrante : DonnÃ©es importÃ©es depuis data catalog avec configuration manuelle ou automatique des jobsSortante : Pas dâ€™export possible | Data processing engine |
-| Gestion des identitÃ©s et des accÃ¨s | Gestion des comptes et accÃ¨s utilisateurs sur la data platform | N/A | EntranteÂ : configuration via lâ€™interface WebSortanteÂ : export des comptes utilisateurs au format CSV | DATAP IAM |
-| Control Center | Gestion centralisÃ©e des performances et workflows. | N/A | Entrante : N/A (Pas de donnÃ©es importÃ©es)Sortante : Non exportable actuellement (Logs et infos de monitoring de la plateforme) | Control center |
+| --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
+| --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
+
 
   
 ### 3 - Specific features
