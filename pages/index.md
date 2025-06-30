@@ -169,6 +169,7 @@
         + [Troubleshooting](bare-metal-cloud-dedicated-servers-troubleshooting)
             + [How to activate and use rescue mode](bare_metal_cloud/dedicated_servers/rescue_mode)
             + [How to activate and use Windows rescue mode](bare_metal_cloud/dedicated_servers/rescue-customer-windows)
+            + [How to assign a tag to a Bare Metal server](bare_metal_cloud/dedicated_servers/resource-tag-assign)
             + [How to recover server access if your user password is lost](bare_metal_cloud/dedicated_servers/replacing-user-password)
             + [How to replace an SSH key pair](bare_metal_cloud/dedicated_servers/replacing-lost-ssh-key)
             + [Replacing a defective disk](bare_metal_cloud/dedicated_servers/disk_replacement)
