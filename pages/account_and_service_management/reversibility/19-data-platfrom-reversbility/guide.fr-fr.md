@@ -39,7 +39,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Monitoring intégré | Surveillance et gestion centralisée des performances développés par OVHcloud.| NA | **Entrante** : Interface de suivi intégrée par défaut sur la plateforme <br> **Sortante** : Logs et information de monitoring non exportables | -[Control center documentation](https://docs.dataplatform.ovh.net/#/en/product/cc/index) |
+| Monitoring intégré | Surveillance et gestion centralisée des performances développés par OVHcloud.| NA | **Entrante** : Interface de suivi intégrée par défaut sur la plateforme <br> **Sortante** : Logs et information de monitoring non exportables | [Control center documentation](https://docs.dataplatform.ovh.net/#/en/product/cc/index) |
 
 
 ## Liste des architectures
