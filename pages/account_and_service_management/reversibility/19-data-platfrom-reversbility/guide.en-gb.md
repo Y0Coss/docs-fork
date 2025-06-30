@@ -1,61 +1,58 @@
-**Politique de rÃ©versibilitÃ© du Produit Unified Data Platform (DATAP)**
+title: "Reversibility Policy for the Data Unified product"
+updated: 2025-07-31
 
-**Objectif**
+**Objective**
 
-Ce document est la politique de rÃ©versibilitÃ© de la gamme de produits Unified Data Platform (DATAP)[.](https://www.ovhcloud.com/fr/enterprise/products/secnumcloud/)
+This document describes the reversibility policy for the Managed Data Visualization product covering the OVHcloud Managed Grafana offer.
 
-Cette politique vise Ã  mettre en Å“uvre les principes gÃ©nÃ©raux de rÃ©versibilitÃ© et notre conformitÃ© avec le [Code de conduite SWIPO IaaS pour les fournisseurs de cloud](https://swipo.eu/download-section/copyrighted-downloads/).
+This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
-**Liste des fonctionnalitÃ©s**
 
-Les fonctionnalitÃ©s du Â«Â ProduitÂ Â» sont rÃ©parties en trois catÃ©gories :
+## List of features
 
-*   Les [principales fonctionnalitÃ©s](https://help.ovhcloud.com/csm) pour lesquelles nous vous garantissons la possibilitÃ© de migrer.
-*   La [mise en Å“uvre dâ€™OVHcloud](https://help.ovhcloud.com/csm) dont la migration nÃ©cessitera des adaptations Ã  un nouvel environnement.
-*   Les fonctionnalitÃ©s spÃ©cifiques dont la migration en tant que telle est impossible Ã  garantir car elles sont liÃ©es Ã  l'environnement OVHcloud ou Ã  des dÃ©veloppements spÃ©cifiques
+The features of the product line fall into three categories:
 
-**Principales fonctionnalitÃ©s**
+1. **Core features** for which we guarantee migration capacity.
+1. **OVHcloud implementations** that require adaptation to a new migration environment.
+1. **Specific features** that cannot be guaranteed for migration as they are related to the OVHcloud environment or involve custom developments.
 
-| FonctionnalitÃ© | Description | FormatsDisponible | ModÃ¨le de migration | Documentation disponible |
+### 1 - Core features
+
+| **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| Data Catalog | IntÃ©gration de plus de 60 connecteurs pour centraliser les sources de donnÃ©es. | CSV, JSON, XML, Parquet, Avro, JDBC, Kafka, REST, FTP, etc. | Entrante : Configuration de connecteurs standard via interface web.Sortante : export des mÃ©tadonnÃ©es et donnÃ©es via API. | Data Catalog |
-| Lakehouse Manager | Stockage unifiÃ© basÃ© sur Apache Iceberg et Trino. | Parquet, ORC, Avro, Iceberg | Entrante : Manuelle via interface web.Sortante : export via Trino, Spark, ou API. | Lakehouse Manager |
-| Data Processing Engine | Orchestration de pipelines ETL/ELT avec Spark et Python. | Python, PySpark, | Entrante : manuelle via interface web ou connexion de repository git.Sortante : export des workflows via Git ou API. | Data processing engine |
-| Analytics Manager | CrÃ©ation de tableaux de bord avec Ã©diteur no-code ou SQL (Trino). | SQL, JSON | Entrante : manuelle via interface web.Sortante : export des requÃªtes/visualisations via API. | Analytics Manager |
-| Applications Services | DÃ©ploiement d'applications web et APIs (Node.js, Python, Docker). | Node.js, Python, Docker, REST | Entrante : Manuelle via interface web ou via repository git.Sortante : export via Git/API. | Applications services |
+| Data Catalog | Integration of more than 60 connectors to centralize data sources | CSV, JSON, XML, Parquet, Avro, JDBC, Kafka, REST, FTP, etc. | **Inbound**: configuration of standard connectors via web interface.<br> **Outbound**: export metadata and data via API.| [Data Catalog documentation](https://docs.dataplatform.ovh.net/#/en/product/data-catalog/index) |
+| Lakehouse Manager | Unified storage based on Apache, Iceberg and Trino | Parquet, ORC, Avro, Iceberg | **Inbound**: manual configuration via a web interface   <br> **Outbound**: export via Trino, Spark, or API. | [Lakehouse Manager documentation](https://docs.dataplatform.ovh.net/#/en/product/lakehouse-manager/index) |
+| Data Processing Engine | ETL/ELT pipeline orchestration with Spark and Python. | Python, PySpark | **Inbound**: manual configuration via web interface or git repository connection. <br> **Outbound**: export workflows via Git or API. | [Data processing engine documentation](https://docs.dataplatform.ovh.net/#/en/product/dpe/index) |
+| Analytics Manager | Create dashboards with no-code or SQL (Trino) editor. | SQL, JSON | **Inbound**: manual configuration via the web interface. <br> **Outbound**: export requests/visualizations via API. | [Analytics Manager documentation](https://docs.dataplatform.ovh.net/#/en/product/am/index) |
+| Applications Services | Web application deployment and APIs (Node.js, Python, Docker). | --- | **Inbound**: manual configuration via web interface or via git repository. <br> **Outbound**: export via Git or API | [Applications services documentation](https://docs.dataplatform.ovh.net/#/en/product/app-manager/index) |
 
-**ImplÃ©mentation OVHcloud**
+### 2 - OVHcloud implementations
 
-| FonctionnalitÃ© | Description | Formats disponibles | ModÃ¨le de migration | Documentation disponible |
+| **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
+| --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
 | Data Processing Engine | Orchestration de pipelines ETL/ELT avec Spark et Python. | Format spÃ©cifique Ã  la plateforme OVH, pas de standard | Entrante : DonnÃ©es importÃ©es depuis data catalog avec configuration manuelle ou automatique des jobsSortante : Pas dâ€™export possible | Data processing engine |
 | Gestion des identitÃ©s et des accÃ¨s | Gestion des comptes et accÃ¨s utilisateurs sur la data platform | N/A | EntranteÂ : configuration via lâ€™interface WebSortanteÂ : export des comptes utilisateurs au format CSV | DATAP IAM |
 | Control Center | Gestion centralisÃ©e des performances et workflows. | N/A | Entrante : N/A (Pas de donnÃ©es importÃ©es)Sortante : Non exportable actuellement (Logs et infos de monitoring de la plateforme) | Control center |
 
-**  
-FonctionnalitÃ©s spÃ©cifiques**
+  
+### 3 - Specific features
 
-| Fonction | Description | Formats disponibles | ModÃ¨le de migration | Documentation disponible |
+| **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
+| --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
 | API OVHcloud | Automatisation via API propriÃ©taires. | JSON | Entrante : CrÃ©ation du serviceSortante : Pas dâ€™export de donnÃ©e | API OVH |
 | Monitoring intÃ©grÃ© | Outils de surveillance OVHcloud intÃ©grÃ©s. | N/A | Entrante : N/A (Pas de donnÃ©es importÃ©es)Sortante : Non exportable actuellement (Logs et infos de monitoring de la plateforme) | Control center |
 
-**Liste des architectures**
+## List of architectures
 
-Le service OVHcloud Unified Data Platform repose sur des technologies open source comme Trino, Apache Iceberg, et Kubernetes. Il est compatible avec les architectures Cloud public OVHcloud.
 
-**Services partenaires**
 
-Les partenaires OVHcloud sont rÃ©pertoriÃ©s avec le mot clÃ© Â« Cloud Migration Â» dans le [rÃ©pertoire dÃ©diÃ©](https://partner.ovhcloud.com/fr/directory/).
+## Partner Services
 
-OVHcloud dispose Ã©galement dâ€™un service dÃ©diÃ©Â : [Les Professional Services dâ€™OVHcloud](https://www.ovhcloud.com/fr/professional-services/)
+The OVHcloud partners concerned are listed in the [OVHcloud partners directory](/links/partner) under the "**Data center expansion and migration**" keywords.
 
-**CoÃ»t et frais**
+OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
 
-Les fonctionnalitÃ©s dÃ©crites dans les tableaux sont disponibles sans couts et frais sauf mentions contraires, et sont librement utilisables par le client.
+## Costs and fees
 
-OVHcloud applique une tarification Ã  lâ€™usage, sans frais de sortie ni pÃ©nalitÃ©. La facturation est interrompue immÃ©diatement Ã  la suppression des services, permettant un contrÃ´le souple des coÃ»ts
-
-**Conservation des donnÃ©es aprÃ¨s rÃ©siliation du contrat**
-
-Une fois le service rÃ©siliÃ©, toutes les donnÃ©es du client sont supprimÃ©es de maniÃ¨re irrÃ©versible. Il incombe au client de rÃ©aliser une sauvegarde ou migration complÃ¨te avant rÃ©siliation.
