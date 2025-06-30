@@ -24,7 +24,7 @@ The features of the product line fall into three categories:
 | Lakehouse Manager | Unified storage based on Apache, Iceberg and Trino | Parquet, ORC, Avro, Iceberg | **Inbound**: manual configuration via a web interface   <br> **Outbound**: export via Trino, Spark, or API. | [Lakehouse Manager documentation](https://docs.dataplatform.ovh.net/#/en/product/lakehouse-manager/index) |
 | Data Processing Engine | ETL/ELT pipeline orchestration with Spark and Python. | Python, PySpark | **Inbound**: manual configuration via web interface or git repository connection. <br> **Outbound**: export workflows via Git or API. | [Data processing engine documentation](https://docs.dataplatform.ovh.net/#/en/product/dpe/index) |
 | Analytics Manager | Create dashboards with no-code or SQL (Trino) editor. | SQL, JSON | **Inbound**: manual configuration via the web interface. <br> **Outbound**: export requests/visualizations via API. | [Analytics Manager documentation](https://docs.dataplatform.ovh.net/#/en/product/am/index) |
-| Applications Services | Web application deployment and APIs (Node.js, Python, Docker). | --- | **Inbound**: manual configuration via web interface or via git repository. <br> **Outbound**: export via Git or API | [Applications services documentation](https://docs.dataplatform.ovh.net/#/en/product/app-manager/index) |
+| Applications Services | Web application deployment and APIs (Node.js, Python, Docker). | Node.js, Python, Docker, REST | **Inbound**: manual configuration via web interface or via git repository. <br> **Outbound**: export via Git or API | [Applications services documentation](https://docs.dataplatform.ovh.net/#/en/product/app-manager/index) |
 
 ### 2 - OVHcloud implementations
 
