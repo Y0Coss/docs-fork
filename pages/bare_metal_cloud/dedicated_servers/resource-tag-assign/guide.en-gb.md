@@ -56,7 +56,7 @@ Next, click in the `Value`{.action} field and select the appropriate value from 
 
 > [!warning]
 >
-> If you want to use a key or value that does not yet exist, you can create it by entering it, then clicking `Add your-value`{.action}, where "your-value" corresponds to the text you have entered.
+> **If you want to use a key or value that does not yet exist**, you can create it by entering it, then clicking `Add your-value`{.action}, where "your-value" corresponds to the text you have entered.
 >
 
 Finally, click the `Add`{.action} button to create the tag, then click the `Assign`{.action} button in the lower right-hand part of the window.
