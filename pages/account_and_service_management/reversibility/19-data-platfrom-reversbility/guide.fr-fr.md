@@ -22,16 +22,17 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
 | Data Catalog | Intégration de plus de 60 connecteurs pour centraliser les sources de données | CSV, JSON, XML, Parquet, Avro, JDBC, Kafka, REST, FTP, etc. | **Entrante** : Configuration de connecteurs standard via interface web.<br> **Sortante** : export des métadonnées et données via API.| [Data Catalog documentation](https://docs.dataplatform.ovh.net/#/en/product/data-catalog/index) |
-| Lakehouse Manager | Stockage unifié basé sur Apache Iceberg et Trino | Parquet, ORC, Avro, Iceberg |  **Entrante** : Configuration manuelle via une interface web   <br> **Sortante** : eExport via Trino, Spark, ou API.  | [Lakehouse Manager documentation](https://docs.dataplatform.ovh.net/#/en/product/lakehouse-manager/index) |
-| Data Processing Engine | Orchestration de pipelines ETL/ELT avec Spark et Python. | Python, PySpark | **Entrante** : Configuration manuelle via interface web ou connexion de repository git. <br> **Sortante** : export des workflows via Git ou API.  | [Data processing engine documentation](https://docs.dataplatform.ovh.net/#/en/product/dpe/index) |
-| Analytics Manager | Création de tableaux de bords avec éditeur no-code ou SQL (Trino). | SQL, JSON | **Entrante** :configuration manuelle via l’interface web. <br> **Sortante** :export des requêtes/visualisations via API. | [Analytics Manager documentation](https://docs.dataplatform.ovh.net/#/en/product/am/index) |
+| Lakehouse Manager | Stockage unifié basé sur Apache, Iceberg et Trino | Parquet, ORC, Avro, Iceberg |  **Entrante** : configuration manuelle via une interface web   <br> **Sortante** : export via Trino, Spark, ou API.  | [Lakehouse Manager documentation](https://docs.dataplatform.ovh.net/#/en/product/lakehouse-manager/index) |
+| Data Processing Engine | Orchestration de pipelines ETL/ELT avec Spark et Python. | Python, PySpark | **Entrante** : configuration manuelle via interface web ou connexion de repository git. <br> **Sortante** : export des workflows via Git ou API.  | [Data processing engine documentation](https://docs.dataplatform.ovh.net/#/en/product/dpe/index) |
+| Analytics Manager | Création de tableaux de bords avec éditeur no-code ou SQL (Trino). | SQL, JSON | **Entrante** : configuration manuelle via l’interface web. <br> **Sortante** : export des requêtes/visualisations via API. | [Analytics Manager documentation](https://docs.dataplatform.ovh.net/#/en/product/am/index) |
 | Applications Services | Déploiement d'applications web et APIs (Node.js, Python, Docker). | --- | **Entrante** : configuration manuelle via interface web ou via repository git. <br> **Sortante** : export via Git ou API | [Applications services documentation](https://docs.dataplatform.ovh.net/#/en/product/app-manager/index)  |
 
 ### 2 - Implémentations OVHcloud
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
-| --- | --- | --- | **Entrante** :--- <br> **Sortante** : | []()  |
-| --- | --- | --- | **Entrante** :--- <br> **Sortante** : | []()  |
+| Data Processing Engine | Orchestration de pipelines ETL/ELT avec Spark et Python. | Format spécifique à la plateforme OVHcloud, aucun standard déployé | **Entrante** : Données importées depuis data catalog avec configuration manuelle ou automatique des jobs <br> **Sortante** : Pas d’export possible | [Data processing engine documentation](https://docs.dataplatform.ovh.net/#/en/product/dpe/index)  |
+| Gestion des identités et des accès | Gestion des comptes et accès utilisateurs sur la plateforme | NA | **Entrante** : configuration via l’interface Web <br> **Sortante** : export des comptes utilisateurs au format CSV | [DATAP IAM documentation](https://docs.dataplatform.ovh.net/#/en/getting-further/project-toolkit?id=user-management)  |
+| Control Center | Gestion centralisée des performances et workflows | NA | **Entrante** : Interface de suivi intégrée par défaut sur la plateforme <br> **Sortante** : Logs et information de monitoring non exportables | -[Control center documentation](https://docs.dataplatform.ovh.net/#/en/product/cc/index) |
 
 ### 3 - Fonctionnalités spécifiques
 
