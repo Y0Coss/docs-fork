@@ -33,13 +33,14 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | --- | --- | --- | --- | --- |
 | Data Processing Engine | Orchestration de pipelines ETL/ELT avec Spark et Python. | Format spécifique à la plateforme OVHcloud, aucun standard déployé | **Entrante** : Données importées depuis data catalog avec configuration manuelle ou automatique des jobs <br> **Sortante** : Pas d’export possible | [Data processing engine documentation](https://docs.dataplatform.ovh.net/#/en/product/dpe/index)  |
 | Gestion des identités et des accès | Gestion des comptes et accès utilisateurs sur la plateforme | NA | **Entrante** : configuration via l’interface Web <br> **Sortante** : export des comptes utilisateurs au format CSV | [DATAP IAM documentation](https://docs.dataplatform.ovh.net/#/en/getting-further/project-toolkit?id=user-management)  |
-| Control Center | Gestion centralisée des performances et workflows | NA | **Entrante** : Interface de suivi intégrée par défaut sur la plateforme <br> **Sortante** : Logs et information de monitoring non exportables | -[Control center documentation](https://docs.dataplatform.ovh.net/#/en/product/cc/index) |
+
 
 ### 3 - Fonctionnalités spécifiques
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrante** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortante** : commander et configurer un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
+| Monitoring intégré | Surveillance et gestion centralisée des performances développés par OVHcloud.| NA | **Entrante** : Interface de suivi intégrée par défaut sur la plateforme <br> **Sortante** : Logs et information de monitoring non exportables | -[Control center documentation](https://docs.dataplatform.ovh.net/#/en/product/cc/index) |
+
 
 ## Liste des architectures
 
