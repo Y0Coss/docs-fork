@@ -15,7 +15,7 @@ updated: 2025-06-27
 
 > [!primary]
 >
-> This guide is aimed at customers with an email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
+> This guide is aimed at customers with the email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
 
 Zimbra Pro accounts can be configured on an iPhone using the ActiveSync protocol. This allows you to configure all the collaborative features of your email address at once. The Microsoft Outlook app on iOS is available for free from the Apple App Store.
 
@@ -23,15 +23,16 @@ Zimbra Pro accounts can be configured on an iPhone using the ActiveSync protocol
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is your responsibility to ensure that these services work properly.
->
-> This guide is designed to help you accomplish common tasks. Nevertheless, we recommend contacting a [specialized partner](https://marketplace.ovhcloud.com/c/support-collaboration) and/or the service publisher if you experience any difficulties. We will not be able to assist you. For more information, see the [Go further](#go-further) section of this guide.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+> 
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> 
 
 ## Requirements
 
-- an email address [Zimbra Pro](/links/web/emails-zimbra).
-- You must have the application [Outlook for iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
-- You must have the login details for the email address you would like to configure.
+- A [Zimbra Pro](/links/web/emails-zimbra) account
+- [Outlook for iOS](https://apps.apple.com/app/microsoft-outlook/id951937596) installed on your device
+- The login details for the email account you would like to configure
 
 ## Instructions
 
@@ -64,11 +65,11 @@ Follow the installation steps by clicking on the **3** tabs below:
 >>
 >> Two scenarios are possible:
 >>
->> - If the “**IMAP**” is visible at the top of the page: press the `?” button in the top right corner of the **(1)** screen, then choose `Change account provider`{.action} **(2)**. Then select `Exchange` **(3)** and go to step 3.
+>> - If **IMAP** is visible at the top of the page: press the `?`{.action} button in the top right corner of the **(1)** screen, then choose `Change account provider`{.action} **(2)**. Then select `Exchange` **(3)** and go to step 3.
 >>
 >> ![outlook ios](images/outlook-app-ios-add-step02.png){.thumbnail .h-500}
 >>
->> - If you are directly directed to the choice of account type, select `Exchange`.
+>> - If you are directed to the choice of account type, select `Exchange`.
 >>
 > **Step 3**
 >>
@@ -77,9 +78,9 @@ Follow the installation steps by clicking on the **3** tabs below:
 >> - **Email address**: Enter your full email address.
 >> - **Password**: Enter the password associated with your email address.
 >> - **Description**: Enter a name that can be used to identify this account among your other email accounts saved in Outlook.
->> - **Server** : type "zimbra1.mail.ovh.net".
+>> - **Server**: Type "zimbra1.mail.ovh.net".
 >> - **Domain**: Leave this field blank.
->> - **Username** : Enter your full email address.
+>> - **Username**: Enter your full email address.
 >>
 >> To finalize the configuration, press `Login`{.action}.
 >>
@@ -94,7 +95,7 @@ Follow the installation steps by clicking on the **3** tabs below:
 
 Once you have configured your email address, you can start using it! You can now send and receive messages, and manage your calendars and tasks.
 
-OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ### How do I change the existing settings? <a name="modify-settings"></a>
 
