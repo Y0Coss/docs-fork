@@ -1,6 +1,6 @@
 ---
-title: "Zimbra Pro - Configuring your email account via ActiveSync on Mail for iPhone or iPad"
-excerpt: "Find out how to configure your Zimbra Pro email address on the Mail mobile app for iOS via the ActiveSync protocol"
+title: "Zimbra Pro - Configuring your email account via EWS in Mail on Mac"
+excerpt: "Find out how to configure your Zimbra Pro email address on the Mail app on Mac via the EWS protocol"
 updated: 2025-06-27
 ---
 
@@ -10,75 +10,75 @@ updated: 2025-06-27
 }
 </style>
 
-
 ## Objective
 
 > [!primary]
->
-> This guide is aimed at customers with the email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
+> This guide is aimed at customers with an email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
 
-Zimbra Pro accounts can be configured on iPhone or iPad using ActiveSync protocol. This allows you to configure all the collaborative features of your email address at once. The Mail application is available natively on iOS.
+Zimbra Pro accounts can be configured on a macOS using EWS protocol (**E**xchange **W**eb **S**services). This allows you to configure all the collaborative features of your email address at once. The Mail application is available natively on macOS.
 
-**Find out how to configure your Zimbra Pro email address on the Mail for iOS mobile app via the ActiveSync protocol.**
+**Find out how to configure your Zimbra Pro email address on the Mail app on Mac via the EWS protocol.**
 
 > [!warning]
 >
-> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
-> 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
-> 
+> OVHcloud provides services that you are responsible for configuring, managing and managing. It is your responsibility to ensure that these services work properly.
+>
+> This guide is designed to help you accomplish common tasks. Nevertheless, we recommend contacting a [specialized partner](https://marketplace.ovhcloud.com/c/support-collaboration) and/or the service publisher if you experience any difficulties. We will not be able to assist you. For more information, see the [Go further](#go-further) section of this guide.
 
 ## Requirements
 
-- A [Zimbra Pro](/links/web/emails-zimbra) account
-- The Mail app installed on your device
-- The login details for the email account you would like to configure
+- an email address [Zimbra Pro](/links/web/emails-zimbra).
+- You need to have the Mail app on your Mac.
+- You must have the login details for the email address you would like to configure.
 
 ## Instructions
 
 ### Add the <a name="add-account"></a> account
 
-From your iPhone or iPad, go to the "Settings" section, then follow the installation steps by clicking on the **4** tabs below:
+- **When you start the Mail application for the first time**, a configuration wizard will appear, prompting you to choose your account type.
+
+- **If an account is already set up on the Mail app**:
+- Click `Mail`{.action} in the menu bar at the top of your screen.
+- Click `Accounts`{.action}.
+- In the “Internet accounts” window that pops up, click `Add an account`{.action}
+
+![mail macOS](images/mail-macos-add-step00.png){.thumbnail .h-500}
+
+Follow the installation steps by clicking on the **3** tabs below:
 
 > [!tabs]
 > **Step 1**
 >>
->> 1. Enter “add an account” in the search bar.
->> 2. Tap `Add Account`{.action}.
->> 3. Select `Microsoft Exchange`{.action}.
+>> - Select `Microsoft Exchange`{.action}.
+>> - Define a **name** and enter your **email address**.
+>> - Then click `Log in`{.action}.
 >>
->> ![mail ios](images/mail-app-ios-add-step01.png){.thumbnail .h-500}
+>> ![mail macos](images/mail-macos-add-step01.png){.thumbnail .h-500}
 >>
 > **Step 2**
 >>
->> 1. Enter your email address and a description, then press `Next`{.action}.
->> 2. In the window that pops up, choose `Configure manually`{.action}.
+>> - Choose `Configure Manually`{.action} from the window that appears.
+>> - Then enter the **password** of your email address in addition to the information already entered.
 >>
->> ![mail ios](images/mail-app-ios-add-step02.png){.thumbnail .h-500}
+>> ![mail macos](images/mail-macos-add-step02.png){.thumbnail .h-500}
 >>
 > **Step 3**
 >>
->> - **Email**: Enter your full email address.
->> - **Password**: Enter the password associated with your email address.
->> - **Description**: Enter a name that can be used to identify this account, along with other email accounts saved on email.
+>> Check and complete the following information:
 >>
->> ![mail ios](images/mail-app-ios-add-step03.png){.thumbnail .h-500}
->>
-> **Step 4**
->>
->> In the next window, tick `Advanced settings`{.action} and enter the following information:
->>
->> - **Email**: Enter your full email address.
->> - **Server**: Enter “zimbra1.mail.ovh.net”.
->> - **Domain**: Leave this field blank.
+>> - **Email address**: Enter your full email address.
 >> - **Username**: Enter your full email address.
->> - **Password**: Enter the password associated with the email address.
->> - **Description**: Enter a name that can be used to identify this account, along with other email accounts saved on email.
+>> - **Password**: Enter the password associated with your email address.
+>> - **Internal URL**: Enter “zimbra1.mail.ovh.net”.
+>> - **External URL** : Enter "zimbra1.mail.ovh.net".
 >>
->> To finalize the configuration, tap `Next`{.action} and select the features you want to use on your iPhone or iPad.
+>> To finalize the configuration, tap `Log in`{.action} and select the features you want to explore on your Mac.
 >>
->> ![mail ios](images/mail-app-ios-add-step04.png){.thumbnail .h-500}
+>> ![mail macos](images/mail-macos-add-step04.png){.thumbnail .h-500}
 >>
+>> > [!warning]
+>>>
+>>> It is normal to see the message in red “**Unable to verify account name or password**” when the window is first displayed. However, if this message persists after validation, it means that the information entered is incorrect.
 
 > [!warning]
 >
@@ -88,35 +88,31 @@ From your iPhone or iPad, go to the "Settings" section, then follow the installa
 
 Once you have configured your email address, you can start using it! You can now send and receive messages, and manage your calendars and tasks.
 
-OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
+OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
 
 ### How do I modify existing settings?<a name="modify-settings"></a>
 
-From your iPhone or iPad, go to the "Settings" section, then follow the instructions below:
+You cannot change the server settings of an Exchange email account using the Mail app on Mac.
 
-1. Enter “mail accounts” in the search bar.
-1. Select the email account concerned.
-1. Press `Account Settings`{.action} at the bottom of the page.
+If your email account is already configured and you want to change its settings, you will need to delete and recreate it.
 
-![mail ios](images/mail-app-ios-modify-account-01.png){.thumbnail .h-500}
+To delete an Exchange email account, follow the instructions below:
 
-Find the settings in **Step 4** of the [Add account](#add-account) chapter.
-
-### How do I delete an email account?<a name="delete-account"></a>
-
-From your iPhone or iPad, go to the "Settings" section, then follow the instructions below:
-
-1. From the search bar, enter “email accounts”.
-1. Select the email account concerned.
+1. Click `Mail`{.action} in the menu bar at the top of your screen.
+1. Click `Accounts`{.action} and select the email account concerned.
 1. Press `Delete Account`{.action}.
 
-![mail ios](images/mail-app-ios-modify-delete-01.png){.thumbnail .h-500}
+![mail macos](images/mail-macos-modify-delete-01.png){.thumbnail .h-500}
+
+> [!success]
+>
+> Once you have deleted your email account, follow the installation steps listed in the “[Add account](#add-account)” section of this guide.
 
 ## Go further <a name="go-further"></a>
 
 > [!primary]
 >
-> For more information on configuring an email address from the Mail app on iOS, visit [Apple Help Center](https://support.apple.com/en-gb/102619).
+> For more information on configuring an email address from the Mail app on macOS, see the [Apple Help Center](https://support.apple.com/en-gb/102619).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
