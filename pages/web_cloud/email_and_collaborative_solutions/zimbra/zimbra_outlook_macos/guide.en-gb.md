@@ -15,31 +15,32 @@ updated: 2025-06-27
 
 > [!primary]
 >
-> This guide is aimed at customers with an email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
+> This guide is aimed at customers with the email solution [Zimbra Pro](/links/web/emails-zimbra). This service will be available in beta version from July 2025.
 
-Zimbra Pro accounts can be configured on a Mac using the EWS protocol (**E**xchange **W**eb **S**services). This allows you to configure all the collaborative features of your email address at once. The application [Outlook on macOS](https://apps.apple.com/en-gb/app/microsoft-outlook/id985367838?mt=12) is available on the Apple App Store.
+Zimbra Pro accounts can be configured on a Mac using the EWS protocol (**E**xchange **W**eb **S**ervices). This allows you to configure all the collaborative features of your email address at once. The application [Outlook on macOS](https://apps.apple.com/en-gb/app/microsoft-outlook/id985367838?mt=12) is available on the Apple App Store.
 
 **Find out how to configure your Zimbra Pro email address in Outlook for macOS via the EWS protocol.**
 
 > [!warning]
 >
-> OVHcloud provides services that you are responsible for configuring, managing and managing. It is your responsibility to ensure that these services work properly.
->
-> This guide is designed to help you accomplish common tasks. Nevertheless, we recommend contacting a [specialized partner](https://marketplace.ovhcloud.com/c/support-collaboration) and/or the service publisher if you experience any difficulties. We will not be able to assist you. For more information, see the [Go further](#go-further) section of this guide.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+> 
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> 
 
 ## Requirements
 
-- an email address [Zimbra Pro](/links/web/emails-zimbra).
-- You must have the application [Outlook on macOS](https://apps.apple.com/fr/app/microsoft-outlook/id985367838?mt=12).
-- You must have the login details for the email address you would like to configure.
+- A [Zimbra Pro](/links/web/emails-zimbra) account
+- [Outlook on macOS](https://apps.apple.com/fr/app/microsoft-outlook/id985367838?mt=12) installed on your device
+- The login details for the email account you would like to configure
 
 ## Instructions
 
 ### Add the <a name="add-account"></a> account
 
-- **When you start the Outlook application for the first time**: a configuration wizard will appear, prompting you to enter the first email address you would like to add.
+- **When you start the Outlook application for the first time**: A configuration wizard will appear, prompting you to enter the first email address you would like to add.
 
-- **If an account is already set up on the Outlook application**:
+- **If an account is already set up on the Outlook application**:  
 1. Click `Tools`{.action} in the menu bar at the top of your screen.
 2. Click `Accounts`{.action}.
 3. In the “Accounts” window that pops up, click on `+`{.action} in the bottom left-hand corner, then click on `New account`{.action}.
@@ -59,8 +60,8 @@ Follow the installation steps by clicking on the **3** tabs below:
 >>
 >> Two scenarios are possible:
 >>
->> - **If the “IMAP/POP” window appears** : click `This is not a POP/IMAP account`{.action}, then choose `Exchange`{.action} from the “Choose Provider” window.
->> - **If you go directly to “Choose the provider”**, choose `Exchange`{.action}.
+>> - **If the “IMAP/POP” window appears**: Click `This is not a POP/IMAP account`{.action}, then choose `Exchange`{.action} from the “Choose Provider” window.
+>> - **If you go directly to “Choose the provider”**: Choose `Exchange`{.action}.
 >>
 >> ![mail macos](images/outlook-macos-add-step02.png){.thumbnail .h-500}
 >>
@@ -72,9 +73,9 @@ Follow the installation steps by clicking on the **3** tabs below:
 >> - **Email address**: Enter your full email address.
 >> - **DOMAIN\User name or email address**: Enter your full email address.
 >> - **Password**: Enter the password associated with your email address.
->> - **Server** : Enter "zimbra1.mail.ovh.net".
+>> - **Server**: Enter "zimbra1.mail.ovh.net".
 >>
->> To finalize the configuration, tap `Add an account`{.action} and select the features you want to explore on your Mac.
+>> To finalize the configuration, tap `Add an account`{.action} and select the features you want to use on your Mac.
 >>
 >> ![mail macos](images/outlook-macos-add-step03.png){.thumbnail .h-500}
 >>
@@ -87,7 +88,7 @@ Follow the installation steps by clicking on the **3** tabs below:
 
 Once you have configured your email address, you can start using it! You can now send and receive messages, and manage your calendars and tasks.
 
-OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 ### How do I modify existing settings?<a name="modify-settings"></a>
 
