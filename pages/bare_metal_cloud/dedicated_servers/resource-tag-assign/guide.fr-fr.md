@@ -1,63 +1,90 @@
 ---
-title: 'Assigner un tag à un serveur Bare Metal'
-excerpt: 'Créez et modifiez des tags pour chaque serveur depuis votre espace client'
-updated: 2025-06-27
+title: 'Comment assigner un tag à un serveur Bare Metal'
+excerpt: "Découvrez comment créer et modifier des tags pour chaque serveur dédié depuis l'espace client OVHcloud"
+updated: 2025-06-30
 ---
 
 ## Objectif
 
-Créez des tags à assigner à vos services, afin de les organiser, et leur appliquer des stratégies avec la granularité souhaitée.
+Les tags sont des étiquettes attribuables à vos ressources, vous permettant de les organiser et de les gérer plus efficacement.
 
-**Ce guide détaille comment attribuer et supprimer des tags pour des serveurs individuels, depuis l'espace client OVHcloud.**
+Chaque tag est constitué de deux parties :
 
-## Introduction
+- **La clé** : Représente un attribut ou une catégorie.
+- **La valeur** : Correspond à l'information associée à cette clé.
 
-Les tags sont des étiquettes que vous pouvez attribuer à vos ressources, et qui vous permettent de les organiser et les gérer plus efficacement. Chaque tag est constitué de deux parties: la clé, qui représente un attribut ou une catégorie, et la valeur, qui est l'information associée à cette clé.
+Par exemple, vous pouvez catégoriser vos ressources par site, par service, ou encore par niveau de sécurité. L'utilisation des tags peut notamment faciliter la recherche, l'organisation de vos ressources, la gestion des coûts associés, ou encore l'application de stratégies avec la granularité souhaitée.
 
-Vous pouvez, par exemple, catégoriser vos ressources par site, service, ou encore niveau de sécurité. Une telle utilisation des tags peut notamment faciliter la recherche, l'organisation de vos ressources, la gestion des coûts associés, ou encore l'application de stratégies avec la granularité souhaitée.
+**Ce guide vous explique comment créer, attribuer et supprimer des tags pour chaque serveur dédié depuis l'espace client OVHcloud.**
 
 ## Prérequis
-- Un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
-- Accès à l’[espace client OVHcloud](/links/manager)
 
-### Attribution d’un tag à un serveur depuis l’espace client
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal).
+- Être connecté à l’[espace client OVHcloud](/links/manager).
 
-Pour commencer à utiliser des tags, connectez-vous à [OVHcloud Control Panel](/links/manager){.external} et choisissez la section `Bare Metal Cloud`{.action}. Cliquez sur `Serveurs Dédiés`{.action} et sélectionnez votre serveur dans la liste.
+## En pratique
 
-![General informations](images/general_information.png){.thumbnail}
+### Attribuer un tag à un serveur dédié depuis l’espace client
 
-Dans l'onglet `General informations`{.action} (1), cliquez sur le bouton `Ajouter un tag`{.action} (2) dans la zone **Tags**. Cliquez ensuite sur `Assigner un tag`{.action} (2).
+Pour attribuer un tag à un serveur :
 
-![Add a tag](images/add_a_tag.png){.thumbnail}
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+1. Rendez-vous dans la section `Bare Metal Cloud`{.action}.
+1. Cliquez sur `Serveurs dédiés`{.action} et sélectionnez votre serveur dans la liste.
 
-![Empty tag list](images/Tag_list_empty.png){.thumbnail}
+Par défaut, vous êtes redirigé vers l'onglet `Informations générales`{.action}.
 
-Ouvrez le menu déroulant sous `Clé`{.action} et sélectionnez le tag que vous souhaitez appliquer au serveur.
+![Informations générales](images/general_information.png){.thumbnail}
 
-Ensuite, ouvrez de la même manière le menu déroulant sous `Valeur`{.action} et sélectionnez la valeur appropriée.
+Dans l'encadré **Tags**, cliquez sur `Ajouter un tag`{.action}.
 
-Si vous souhaitez utiliser une clé ou une valeur qui n'est pas encore créée, tapez-la, puis cliquez sur `Ajouter texte`{.action}, où « texte » est remplacé par le texte que vous avez entré.
+![Ajouter un tag](images/add_a_tag.png){.thumbnail}
 
-![Assign a tag](images/assign_tag.png){.thumbnail}
+Vous êtes automatiquement orienté vers l'onglet `Tags`.
 
-![Assign a tag - populated](images/assign_tag_populated.png){.thumbnail}
+Cliquez sur le bouton `Assigner un tag`{.action}.
 
-Enfin, cliquez sur le bouton `Assigner`{.action} dans la partie inférieure droite de la fenêtre.
-Vous visualisez alors la liste des tags appliqués au serveur choisi.
+![Tags - liste vide](images/Tag_list_empty.png){.thumbnail}
 
-![Tag list with example](images/tag_list_with_example.png){.thumbnail}
+Dans la fenêtre qui apparaît, cliquez dans le champ `Clé`{.action} pour ouvrir le menu déroulant, puis sélectionnez la clé souhaitée.
 
-### Suppression d'un tag sur serveur
+![Assigner un tag - clé](images/assign_tag.png){.thumbnail}
 
-Dans la liste des tags attribués, cliquez sur le bouton `...`{.action}, à droite du tag que vous souhaitez supprimer.
+Ensuite, cliquez dans le champ `Valeur`{.action} et sélectionnez la valeur appropriée dans le menu déroulant.
+
+![Assigner un tag - valeur](images/assign_tag_populated.png){.thumbnail}
+
+> [!warning]
+>
+> **Si vous souhaitez utiliser une clé ou une valeur qui n'existe pas encore**, vous pouvez la créer en la saisissant, puis en cliquant sur `Ajouter ce-texte`{.action}, où « ce-texte » corrrespond au texte que vous avez renseigné.
+>
+
+Enfin, cliquez sur le bouton `Ajouter`{.action} pour créer le tag, puis sur le bouton `Assigner`{.action} dans la partie inférieure droite de la fenêtre.
+
+![Tag ajouté](images/tag_added.png){.thumbnail}
+
+Un message de confirmation apparaît en vert, au-dessus de la liste des tags appliqués au serveur choisi.
+
+![Tags - liste avec exemple](images/tag_list_with_example.png){.thumbnail}
+
+### Supprimer un tag sur un serveur dédié
+
+Pour retrouver la liste des tags attribués à votre serveur :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+1. Rendez-vous dans la section `Bare Metal Cloud`{.action}.
+1. Cliquez sur `Serveurs dédiés`{.action} et sélectionnez votre serveur dans la liste.
+1. Rendez-vous dans l'onglet `Tags`{.action}.
+
+Cliquez sur le bouton `...`{.action}, à droite du tag que vous souhaitez supprimer de votre serveur.
 Cliquez ensuite sur `Désassigner`{.action}.
 
-![Tag list unassign](images/tag_list_unassign.png){.thumbnail}
+![Supprimer un tag de la liste](images/tag_list_remove.png){.thumbnail}
 
 Une fenêtre de confirmation s'affiche. Cliquez sur le bouton `Confirmer`{.action} pour désassigner le tag.
 
-![Unassign tag](images/unassign_tag){.thumbnail}
+![Confirmer la suppression du tag](images/remove_tag.png){.thumbnail}
 
 ## Aller plus loin
 
-Rejoignez notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).
