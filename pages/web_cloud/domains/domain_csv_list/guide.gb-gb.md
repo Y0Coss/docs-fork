@@ -12,7 +12,7 @@ Want to retrieve a list of all the domain names on your OVHcloud customer accoun
 
 ## Requirements
 
-- A [domain name](/links/web/domains) registered with OVHcloud.
+- A [domain name](/links/web/domains) registered with OVHcloud
 - Access to your [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
