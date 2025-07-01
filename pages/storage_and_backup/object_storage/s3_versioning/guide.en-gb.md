@@ -158,6 +158,64 @@ When versioning is enabled:
 >> ![download current or versioned objects](images/bucket_download_versions.png)
 >>
 
+### Object deletion: simple, permanent deletion and Delete Marker management
+
+> [!primary]
+>
+> If versioning is enabled on your S3 bucket, deleting an object adds a Delete Marker: the object disappears from the default view, but remains visible via the View versions option.
+>
+> This protection allows you to restore an object deleted by mistake.
+>
+
+> [!tabs]
+> Via the OVHcloud customer area
+>> From the main page of your Object Storage bucket, or from the object details page, you can delete your object by clicking on `delete`{.action}.
+>>
+>> ![delete current or versioned objects](images/bucket_download_versions.png)
+>>
+>>
+>> To delete a version definitively, click on the `three dots`{.action}, then on `Delete`{.action}, and confirm the definitive deletion action.
+>>
+>>
+> Via the AWS CLI
+>> To delete an object, use the following command:
+>>
+>> ```bash
+>> aws s3api delete-object --bucket <bucket> --key <objet>
+>> ````
+>>
+>> If you want to see the different versions of an object, use the following command:
+>>
+>> ```bash
+>> aws s3api list-object-versions --bucket <bucket> --prefix <objet>
+>> ```
+>>
+>> To delete a specific version of an object:
+>>
+>> ```bash
+>> aws s3api list-object-versions --bucket <bucket> --prefix <objet>
+>> ```
+>>
+>> If you wish to delete a `delete marker` to recover your object version, proceed as follows:
+>>
+>> - List delete markers and identify the version-id of the delete marker:
+>>
+>>
+>> ```bash
+>> aws s3api list-object-versions --bucket my-bucket --prefix my-object. txt \
+>> --query "DeleteMarkers" --output json
+>> ````
+>>
+>> - Delete this delete marker:
+>>
+>> ```bash
+>> aws s3api delete-object \
+>> --bucket my-bucket \
+>> --key my-object.txt \
+>> --version-id <delete-marker-version-id>
+>> ````
+>>
+
 ### Important Considerations
 
 - **Storage Costs:** Each version of an object is stored as a full object, incurring Standard Object Storage costs.
