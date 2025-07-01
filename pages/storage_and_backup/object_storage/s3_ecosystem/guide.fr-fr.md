@@ -56,6 +56,12 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | **ownCloud** | Compatible | Plate-forme de synchronisation et de partage de fichiers open-source pour la collaboration. Plus de détails sur [ownCloud](https://owncloud.com/product){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_owncloud) |
 | **NextCloud Files** | Compatible | Plate-forme de synchronisation et de partage de fichiers open-source pour la collaboration. Plus de détails sur [NextCloud](https://nextcloud.com/fr/files/){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_nextcloud) |
 
+### Plafteformes de stockage
+
+| Tool/Software | Compatibility | Notes | Getting Started  |
+| --- | --- | --- | --- |
+| **Pure Storage FlashBlade** | Compatible - Certifié |  Officiellement pris en charge comme cible de réplication compatible S3. | [Guide](/pages/storage_and_backup/object_storage/s3_pure_storage_flashblade) |
+
 ## Aller plus loin
  
 Rejoignez notre [communauté d'utilisateurs](/links/community).
