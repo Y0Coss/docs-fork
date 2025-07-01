@@ -91,6 +91,8 @@
             + [Object Storage 3AZ product reversibility policy](account_and_service_management/reversibility/10-object-storage-3az-reversibility-policy)
             + [Orchestration product reversibility policy](account_and_service_management/reversibility/12-reversibility-orchestration)
             + [Managed OCI artifact Registry Product Reversibility Policy](account_and_service_management/reversibility/13-reversibility-oci-registry)
+            + [Reversibility Policy for the Managed Log Manager product](account_and_service_management/reversibility/18-log-reversbility)
+            + [Reversbility Policy for the Data Unified Product](account_and_service_management/reversibility/19-data-platfrom-reversbility)
     + [Responsibility sharing](account-and-service-management-responsibility-sharing)
         + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)
         + [File Storage services - Responsibility model](account_and_service_management/responsibility_sharing/file-storage)
