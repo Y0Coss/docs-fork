@@ -1,7 +1,7 @@
 ---
 title: "Como exportar a lista dos seus nomes de domínio em CSV"
 excerpt: "Saiba como exportar a lista dos seus nomes de domínio e as informações associadas ao formato CSV a partir da sua Área de Cliente OVHcloud"
-updated: 2025-06-27
+updated: 2025-07-01
 ---
 
 ## Objetivo
@@ -28,7 +28,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 >>
 > **Etapa 2**
 >>
->> Clique no menu `Nomes de domínios`{.action}. Acima da tabela que é apresentada, clique no botão `Exportar em CSV`{.action}.
+>> Clique no menu `Nomes de domínio`{.action}. Acima da tabela que é apresentada, clique no botão `Exportar em CSV`{.action}.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
 >>

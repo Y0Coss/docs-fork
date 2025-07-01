@@ -1,7 +1,7 @@
 ---
 title: "Comment exporter la liste de vos noms de domaine en CSV"
 excerpt: "Découvrez comment exporter la liste de vos noms de domaine et leurs informations associées au format CSV depuis votre espace client OVHcloud"
-updated: 2025-06-27
+updated: 2025-07-01
 ---
 
 ## Objectif

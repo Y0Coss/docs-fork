@@ -1,12 +1,12 @@
 ---
 title: "Come esportare la lista dei tuoi domini in CSV"
 excerpt: "Scopri come esportare la lista dei tuoi domini e le informazioni associate in formato CSV dallo Spazio Cliente OVHcloud"
-updated: 2025-06-27
+updated: 2025-07-01
 ---
 
 ## Obiettivo
 
-Vuoi recuperare la lista di tutti i domini presenti sul tuo account cliente OVHcloud? Hai bisogno di recuperare, in un solo gesto, tutte le informazioni relative ai tuoi domini (contatti associati, titolari, opzioni attive, date di creazione e di scadenza, ecc...)?
+Vuoi recuperare la lista di tutti i domini presenti sul tuo account cliente OVHcloud? Hai bisogno di recuperare, in un solo gesto, tutte le informazioni relative ai tuoi domini (contatti associati, titolari, opzioni attive, date di creazione e di scadenza, ecc.)?
 
 **Questa guida ti mostra come esportare la lista dei tuoi domini e le informazioni associate in formato CSV dallo Spazio Cliente OVHcloud.**
 
