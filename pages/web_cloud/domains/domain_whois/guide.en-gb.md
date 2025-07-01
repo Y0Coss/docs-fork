@@ -14,7 +14,7 @@ WHOIS, short for “Who is?”, is a protocol that allows access to different da
 
 ## Requirements
 
-- an internet browser (e.g. Firefox, Chrome, Safari, Edge, etc.) on your computer, tablet or smartphone.
+- An Internet browser (e.g. Firefox, Chrome, Safari, Edge, etc.) on your computer, tablet or smartphone.
 
 ## Instructions
 
