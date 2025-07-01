@@ -1,7 +1,7 @@
 ---
 title: "Comment obtenir des informations relatives à un nom de domaine avec le WHOIS"
 excerpt: "Découvrez comment utiliser l'outil WHOIS pour obtenir des détails sur un nom de domaine"
-updated: 2025-06-30
+updated: 2025-07-01
 ---
 
 ## Objectif
