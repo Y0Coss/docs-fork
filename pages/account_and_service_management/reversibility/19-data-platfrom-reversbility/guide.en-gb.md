@@ -1,5 +1,5 @@
 title: "Reversibility Policy for the Data Unified product"
-updated: 2025-07-31
+updated: 2025-07-01
 
 **Objective**
 
@@ -30,7 +30,6 @@ The features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
 | Data Processing Engine | ETL/ELT pipeline orchestration with Spark and Python. | OVHcloud platform-specific format, no standards deployed | **Inbound**: Data imported from data catalog with manual or automatic configuration of jobs <br> **Outbound**: No export possible | [Data processing engine documentation](https://docs.dataplatform.ovh.net/#/en/product/dpe/index) |
 | Identity and access management | Account management and user access on the platform | NA | **Inbound**: Configuration via the web interface <br> **Outbound**: Export user accounts in CSV format | [DATAP IAM documentation](https://docs.dataplatform.ovh.net/#/en/getting-further/project-toolkit?id=user-management) |
 
@@ -41,11 +40,10 @@ The features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound**: <br> **Outbound** : | --- |
 | Integrated monitoring | Monitoring and centralized performance management developed by OVHcloud.| NA | **Inbound**: Default integrated tracking interface on platform <br> **Outbound**: Logs and monitoring information cannot be exported | [Control center documentation](https://docs.dataplatform.ovh.net/#/en/product/cc/index) |
 
 ## List of architectures
-
+OVHcloud Unified Data Platform service is based on open-source technologies such as Trino, Apache Iceberg, and Kubernetes. It is compatible with OVHcloud Public Cloud architectures.
 
 
 ## Partner Services
@@ -55,4 +53,10 @@ The OVHcloud partners concerned are listed in the [OVHcloud partners directory](
 OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
 
 ## Costs and fees
+
+Les fonctionnalités décrites dans les tableaux sont disponibles sans couts et frais sauf mentions contraires, et sont librement utilisables par le client.
+OVHcloud applique une tarification à l’usage, sans frais de sortie. La facturation est interrompue immédiatement à la suppression des services, permettant un contrôle souple des coûts. 
+
+## Data renetntion after service termination
+Une fois le service résilié, toutes les données du client sont supprimées de manière irréversible. Il incombe au client de réaliser une sauvegarde ou migration complète avant résiliation.
 
