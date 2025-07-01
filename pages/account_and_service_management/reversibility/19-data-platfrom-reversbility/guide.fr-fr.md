@@ -44,7 +44,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 ## Liste des architectures
 
-
+Le service OVHcloud Unified Data Platform repose sur des technologies open source comme Trino, Apache Iceberg, et Kubernetes. Il est compatible avec les architectures Cloud publique OVHcloud.
 
 ## Services partenaires
 
@@ -54,7 +54,8 @@ OVHcloud dispose également d’un service dédié : [OVHcloud Professional Serv
 
 ## Coûts et frais
 
-
-
+Features described in the tables are available at no cost, unless otherwise specified, and are freely usable by the customer.
+OVHcloud uses pay-as-you-go pricing, with no egress fee. Billing is stopped immediately when services are canceled, allowing flexible cost control.
 
 ## Conservation des données après résiliation du contrat
+Once the service is canceled, all customer data is irreversibly deleted. It is the client’s responsibility to carry out a full backup or migration before termination.
