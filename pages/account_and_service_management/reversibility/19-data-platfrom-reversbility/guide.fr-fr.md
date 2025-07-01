@@ -1,6 +1,6 @@
 ---
 title: "Politique de réversibilité du produit Unified Data Platfrom"
-updated: 2025-06-27
+updated: 2025-07-01
 ---
 
 ## Objectif
