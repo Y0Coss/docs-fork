@@ -19,7 +19,7 @@ Beispielsweise können Sie Ihre Ressourcen nach Standort, Dienst oder sogar nach
 
 ## Voraussetzungen
 
-- Ein [Dedicated Server](/links/Bare-Metal/Bare-Metal) in Ihrem OVHcloud Account.
+- Ein [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem OVHcloud Account.
 - Zugriff auf das [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
