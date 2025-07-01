@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Getting started
 excerpt: Discover AI Deploy and unfold your first application
-updated: 2024-06-26
+updated: 2025-07-01
 ---
 
 > [!primary]
@@ -17,8 +17,8 @@ This guide explains how to get started with OVHcloud AI Deploy, covering the dep
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
-- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
 ## Instructions
 
@@ -161,7 +161,7 @@ There are also optional parameters:
 - `Authorisation`: The permission rights on the mounted data. Available rights are **Read Only (ro)**, **Read Write (rw)**. Default value is ro.
 - `Cache`: Whether the synced data should be added to the project cache. Data in the cache can be used by other apps without additional synchronization. To benefit from the cache, the new apps also need to mount the data with the cache option.
 
-To learn more about data, volumes and permissions, check out the [data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) page.
+To learn more about data, volumes and permissions, check out the [data page](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data).
 
 ![AI Deploy app volumes](images/step-8-app-volumes.png){.thumbnail}
 
@@ -189,7 +189,7 @@ This allows you to monitor the health of your app and ensure it is ready to rece
 
 This final step provides a summary of your AI Deploy app deployment, allowing you to review the previously selected options and parameters.
 
-You can also generate the equivalent `ovhai` CLI command, which enables you to deploy the same application using the command-line interface. This CLI can be downloaded [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). For more information, consult the [CLI - Launch an AI Deploy app](/pages/public_cloud/ai_machine_learning/cli_18_howto_deploy_app) documentation.
+You can also generate the equivalent `ovhai` CLI command, which enables you to deploy the same application using the command line interface. This CLI can be downloaded [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). For more information, consult the [CLI - Launch an AI Deploy app](/pages/public_cloud/ai_machine_learning/cli_18_howto_deploy_app) documentation.
 
 To launch your AI Deploy app, click on `Order now`{.action}. Please note that your app will not be immediately available, as it requires some time to:
 
@@ -303,14 +303,14 @@ You have the flexibility to keep your AI Deploy app running for an indefinite pe
 >>
 >> Then, select the `AI Deploy`{.action} section, which allows you to manage and access all your created apps.
 >> 
->> Locate the specific AI Deploy app you want to stop and click. Click on the `...`{.action} button alongside, and stop your AI Deploy application by clicking `Stop`{.action}.
+>> Locate the specific AI Deploy app you want to stop. Click the `...`{.action} button and stop your AI Deploy application by selecting `Stop`{.action} from the context menu.
 >>
 >> ![image](images/step-11-stop-app.png){.thumbnail}
 >>
 >> Once stopped, your AI Deploy app will free up the previously allocated compute resources. Your endpoint is kept and if you restart your AI Deploy app, the same endpoint can be reused seamlessly.
 >> Also, when you stop your app, you no longer book compute resources which means you don't have expenses for this part. Only expenses for attached storage may occur.
 >>
->> If you want to completely **delete** your AI Deploy app, just click on the `delete`{.action} action.
+>> If you want to completely **delete** your AI Deploy app, select the `Delete`{.action} action.
 >> Be sure to also delete your Object Storage data if you don't need it anymore, by going in the `Object Storage`{.action} section (in the Storage category).
 >>
 > **Using ovhai CLI**

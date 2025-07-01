@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Getting started
 excerpt: Learn how to simply bootstrap an AI Notebook
-updated: 2024-12-10
+updated: 2025-07-01
 ---
 
 ## Introduction
@@ -429,7 +429,7 @@ With your new Notebook open, enter some Python code in the first code cell. We c
 print("Hello World")
 ```
 
-To execute the code, simply press the `▶️`{.action} located in the toolbar above the code cell. You should then see the output:
+To execute the code, simply press the ▶️ button located in the toolbar above the code cell. You should then see the output:
 
 ```bash
 Hello World
@@ -450,8 +450,8 @@ To help you get started with your AI Notebook, we provide a [GitHub repository](
 We currently provide a variety of tutorials, including for examples:
 
 - [Tensorflow](https://www.tensorflow.org/) tutorials as `ipython notebooks`
-- - Basic computation using single CPU or GPU: accessible on `notebooks/getting-started/tensorflow/basic_gpu_cpu_benchmark.ipynb`. Github preview available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/tensorflow/basic_gpu_cpu_benchmark.ipynb)
-- - Basic computation using multiple GPUs: accessible on `notebooks/getting-started/tensorflow/multiple_gpus_computation.ipynb`. Github preview available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/tensorflow/multiple_gpus_computation.ipynb)
+    - Basic computation using single CPU or GPU: accessible on `notebooks/getting-started/tensorflow/basic_gpu_cpu_benchmark.ipynb`. GitHub preview available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/tensorflow/basic_gpu_cpu_benchmark.ipynb).
+    - Basic computation using multiple GPUs: accessible on `notebooks/getting-started/tensorflow/multiple_gpus_computation.ipynb`. GitHub preview available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/tensorflow/multiple_gpus_computation.ipynb).
 - A [PyTorch](https://pytorch.org/) version of this multi-GPU benchmarking tutorial, available [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/pytorch/multi_gpu_benchmark.ipynb).
 
 These tutorials demonstrate how to perform simple tensor computations and compare the performance of running them on CPU versus GPU. 
