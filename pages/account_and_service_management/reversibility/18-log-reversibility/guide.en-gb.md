@@ -5,7 +5,7 @@ updated: 2025-06-27
 
 **Objective**
 
-This document describes the reversibility policy for the Managed Log Manager product covering the OVHcloud Log Data Platform offer.
+This document describes the reversibility policy for the Managed Log Manager product covering the OVHcloud Logs Data Platform offer.
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
