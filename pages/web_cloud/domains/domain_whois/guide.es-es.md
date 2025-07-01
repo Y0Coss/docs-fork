@@ -8,7 +8,7 @@ updated: 2025-07-01
 
 ¿Quiere saber si un dominio está disponible? Si desea conocer determinados datos relativos a un dominio, como los datos del titular, la fecha de expiración, etc. ?
 
-El Whois, abreviatura del inglés «¿Quién es?», es un protocolo que permite acceder a diferentes datos asociados a un dominio.
+El Whois, abreviatura del inglés "Who is ?", es un protocolo que permite acceder a diferentes datos asociados a un dominio.
 
 **Descubra cómo utilizar la herramienta WHOIS para obtener información sobre un dominio.**
 
