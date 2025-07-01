@@ -1,0 +1,4 @@
+- [Firefox](https://support.mozilla.org/en-US/kb/update-firefox-latest-release){.external}.
+- [Chrome](https://support.google.com/chrome/answer/95414?hl=en-GB&co=GENIE.Platform%3DDesktop&oco=0){.external}.
+- [Safari](https://support.apple.com/en-gb/102665){.external}.
+- [Edge](https://support.microsoft.com/en-gb/topic/microsoft-edge-update-settings-af8aaca2-1b69-4870-94fe-18822dbb7ef1){.external}.
