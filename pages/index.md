@@ -727,6 +727,7 @@
                 + [Object Storage - Use Object Storage with Nextcloud](storage_and_backup/object_storage/s3_nextcloud)
                 + [Object Storage - Use Object Storage with Owncloud](storage_and_backup/object_storage/s3_owncloud)
                 + [Object Storage - Use Object Storage with Cohesity NetBackup](storage_and_backup/object_storage/s3_cohesity_netbackup)
+                + [Object Storage - Use Object Storage with Pure Storage Flashblade](storage_and_backup/object_storage/s3_pure_storage_flashblade)
                 + [Object Storage - Manage an Object Storage bucket with Terraform](storage_and_backup/object_storage/s3_terraform)
             + [Cold Archive Storage Class Specifics](public-cloud-storage-object-storage-cold-archive-storage-class-specifics)
                 + [Cold Archive - Getting started with Cold Archive](storage_and_backup/object_storage/cold_archive_getting_started)
