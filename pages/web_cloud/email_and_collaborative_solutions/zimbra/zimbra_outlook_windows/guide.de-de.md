@@ -1,8 +1,8 @@
---
-title: „Zimbra Pro - Konfiguration Ihres E-Mail-Accounts mit ActiveSync auf Outlook für Windows“
-excerpt: „Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse auf Outlook für Windows über das ActiveSync-Protokoll konfigurieren.“
+---
+title: "Zimbra Pro - Konfiguration Ihres E-Mail-Accounts mit ActiveSync auf Outlook für Windows"
+excerpt: "Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse auf Outlook für Windows über das ActiveSync-Protokoll konfigurieren"
 updated: 2025-06-27
---
+---
 
 <style>
 .h-500 {
@@ -13,25 +13,27 @@ updated: 2025-06-27
 ## Ziel
 
 > [!primary]
-> Diese Anleitung richtet sich an Kunden, die über ein E-Mail-Angebot von [Zimbra Pro] verfügen (/links/web/emails-zimbra). Diese Dienstleistung wird ab Juli 2025 als Beta verfügbar sein.
+> Diese Anleitung richtet sich an Kunden, die über das E-Mail-Angebot [Zimbra Pro](/links/web/emails-zimbra) verfügen. Diese Dienstleistung wird ab Juli 2025 als Beta verfügbar sein.
 
 Zimbra Pro Accounts können unter Windows mithilfe des ActiveSync-Protokolls konfiguriert werden, was es Ihnen erlaubt, alle kollaborativen Funktionen Ihrer E-Mail-Adresse auf einmal zu konfigurieren. Die Outlook für Windows-App ermöglicht die Anzeige Ihres Zimbra Pro E-Mail-Kontos über das ActiveSync-Protokoll.
 
-**Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse auf Outlook für Windows über das ActiveSync-Protokoll konfigurieren.**
+
+**Diese Anleitung erklärt, wie Sie Ihre Zimbra Pro E-Mail-Adresse auf Outlook für Windows über das ActiveSync-Protokoll konfigurieren.**
 
 > [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung genereller Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Partner](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren, wenn Sie bei der Administration Ihrer Dienste Hilfe benötigen. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
-> OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt in Ihrer Verantwortung, das ordnungsgemäße Funktionieren dieser Dienste sicherzustellen.
->
-> Dieses Handbuch soll Ihnen bei der Durchführung häufiger Aufgaben helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Partner](https://marketplace.ovhcloud.com/c/support-collaboration) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
 
 ## Voraussetzungen
 
-- Sie besitzen eine E-Mail-Adresse [Zimbra Pro](/links/web/emails-zimbra).
-- Sie haben die Anwendung [klassisches Outlook](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classic-on-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) unter Windows.
-- Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
+- Sie haben einen E-Mail-Account auf der OVHcloud [Zimbra Pro E-Mail-Lösung](/links/web/emails-zimbra) abonniert.
+Sie haben die Windows Anwendung [Outlook Classic](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classic-on-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5).
+- Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
-## In der Praxis
+
+## In der praktischen Anwendung
 
 > [!warning]
 >
@@ -45,7 +47,7 @@ Zimbra Pro Accounts können unter Windows mithilfe des ActiveSync-Protokolls kon
 
 ### Konto <a name="add-account"></a> hinzufügen
 
-Um einen Zimbra Pro Account in Outlook Classic hinzuzufügen, folgen Sie den nachfolgenden Schritten und klicken Sie nacheinander auf die **7** Registerkarten unten:
+Um einen Zimbra Pro Account in Outlook Classic hinzuzufügen, folgen Sie den Installationsschritten, indem Sie auf die Tabs klicken:
 
 > [!tabs]
 > **Schritt 1**
@@ -93,13 +95,13 @@ Um einen Zimbra Pro Account in Outlook Classic hinzuzufügen, folgen Sie den nac
 >>
 > **Schritt 6**
 >>
->> Ihre E-Mail-Adresse ist jetzt für Outlook konfiguriert. Um die vollständige Synchronisierung der Funktionen Ihres Zimbra Pro Accounts zu nutzen, **laden Sie „[Zimbra Connector for Outlook](https://www.zimbra.com/product/addons/zimbra-connector-for-outlook-download/)“ herunter und installieren Sie es**.
+>> Ihre E-Mail-Adresse ist jetzt für Outlook konfiguriert. Um die vollständige Synchronisierung der Funktionen Ihres Zimbra Pro Accounts zu nutzen, laden Sie [Zimbra Connector for Outlook](https://www.zimbra.com/product/addons/zimbra-connector-for-outlook-download/) herunter und installieren Sie es.
 >>
 >> ![Outlook Windows](images/outlook-windows-add-step06.png){.thumbnail .h-500}
 >>
 > **Schritt 7**
 >>
->> Nach der Installation von „[Zimbra Connector for Outlook](https://www.zimbra.com/product/addons/zimbra-connector-for-outlook-download/)“ starten Sie Outlook Classic.
+>> Nach der Installation von [Zimbra Connector for Outlook](https://www.zimbra.com/product/addons/zimbra-connector-for-outlook-download/) starten Sie Outlook Classic.
 >> Beim ersten Mal wird das Konfigurationsfenster **Zimbra Server Configuration Settings** angezeigt. Geben Sie die folgenden Informationen ein:
 >>
 >> - **Servername**: Geben Sie „zimbra1.mail.ovh.net“ ein.
@@ -118,13 +120,13 @@ Um einen Zimbra Pro Account in Outlook Classic hinzuzufügen, folgen Sie den nac
 
 Sobald die E-Mail-Adresse eingerichtet ist, können Sie sie verwenden! Sie können ab sofort Nachrichten senden und empfangen sowie Ihre Kalender und Aufgaben verwalten.
 
-OVHcloud bietet auch eine Web-Anwendung an, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können. Sie können sich mit den Zugangsdaten Ihrer E-Mail-Adresse im [OVHcloud Webmail](/links/web/email) einloggen. Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
+OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über [Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
 
 ### Wie kann ich vorhandene Einstellungen ändern?<a name="modify-settings"></a>
 
 Um die Einstellungen eines bereits konfigurierten E-Mail-Accounts zu ändern, befolgen Sie die folgenden Anweisungen:
 
-1. Begeben Sie sich in die Windows-Systemsteuerung**.
+1. Begeben Sie sich in die Windows-Systemsteuerung.
 1. Klicken Sie auf `Benutzerkonten`{.action}.
 1. Klicken Sie auf `Mail`{.action}.
 1. Klicken Sie auf `E-Mail-Konten...`{.action}.
@@ -156,8 +158,9 @@ Um Ihren E-Mail-Account zu löschen befolgen Sie die folgenden Anweisungen:
 >
 > Weitere Informationen zum Konfigurieren einer E-Mail-Adresse in der Outlook-Anwendung auf Windows finden Sie im [Microsoft Help Center](https://support.microsoft.com/office/add-an-email-account-to-outlook-for-windows-6e27792a-9267-4aa4-8bb6-c84ef146101b?ocmsassetID=HA102823161&1 relationId=778d1d8d-9ac2-449b-9624-1268559fa794#picktab=classic_outlook).
 
-Für spezielle Dienstleistungen (Referenzierung, Entwicklung usw.) wenden Sie sich bitte an die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Verwendung und Konfiguration Ihrer OVHcloud Lösungen benötigen, empfehlen wir Ihnen unsere verschiedenen [Support-Angebote](/links/support).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Für den Austausch mit unserer [User Community](/links/community).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+
+Treten Sie unserer [User Community](/links/community) bei.
