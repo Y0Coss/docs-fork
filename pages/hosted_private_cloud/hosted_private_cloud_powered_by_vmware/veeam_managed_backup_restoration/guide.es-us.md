@@ -25,7 +25,7 @@ Si no está familiarizado con el funcionamiento de las API de OVHcloud, consulte
 
 En primer lugar, debe identificar los backups que desea restaurar.
 
-Conéctese a [https://ca.api.ovh.com/](/links/api) y utilice la siguiente llamada:
+Conéctese a la [API de OVHcloud](/links/api) y utilice la siguiente llamada:
 
 > [!api]
 >
