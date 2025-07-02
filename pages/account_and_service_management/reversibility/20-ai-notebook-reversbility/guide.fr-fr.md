@@ -32,8 +32,9 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| Stockage objet compatible S3 | Les données utilisateur sont synchronisées sur un Object Storage OVHcloud compatible S3 après arrêt/suppression du Notebook. 
+Le stockage S3 peut se faire avec un produit OVHcloud ou en dehors des infrastructures OVHcloud.| S3 (objets, fichiers) | **Entrante** : import de données via un Object Storage S3 ou téléchargement direct. <br>**Sortante** : Eexport des fichiers/datasets via un  Object Storage S3, réutilisables sur tout autre stockage compatible S3  | [Caractéristiques, capacités et limites](/pages/public_cloud/ai_machine_learning/notebook_guide_capabilities) <br> [Politique de révesibilité du produit Object Storage ](/pages/account_and_service_management/reversibility/16-object-storage-reversibility) |
+| Gestion des accès utilisateurs | Gestion des accès via l’interface OVHcloud, version non standardisée | NA | **Entrante** : configuration manuelle des accès sur l’interface <br>**Sortante** : Aadaptation de la gestion des droits selon l’outil cible (JupyterHub, VS Code Live Share, etc.). | [Se servir de données dans un notebook via l'espace client](/pages/public_cloud/ai_machine_learning/notebook_guide_data_ui) |
 
 
 ### 3 - Fonctionnalités spécifiques
