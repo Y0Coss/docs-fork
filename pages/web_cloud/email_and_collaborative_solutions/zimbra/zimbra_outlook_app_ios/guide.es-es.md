@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar una cuenta de correo electrónico a través de ActiveSync en Outlook para iOS"
 excerpt: "Aprenda a configurar su cuenta de correo electrónico Zimbra Pro en la aplicación móvil Outlook para iOS a través del protocolo ActiveSync"
-updated: 2025-06-27
+updated: 2025-07-02
 ---
 
 <style>
@@ -36,29 +36,30 @@ Las cuentas Zimbra Pro pueden configurarse en un iPhone utilizando el protocolo 
 ### Añadir la cuenta <a name="add-account"></a>
 
 - **La primera vez que inicie la aplicación Outlook**, aparecerá un asistente de configuración:
-    - Pulsa `Añadir cuenta`{.action}.
+  - Pulse `Añadir cuenta`{.action}.
 
-![outlook ios](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
+  ![outlook ios](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
 
 - **Si ya tiene una cuenta configurada en la aplicación Outlook**:
-    1. Pulse el círculo que contiene las iniciales de la cuenta de correo consultada o el icono de la casa (`⌂`{.action}) en la parte superior izquierda de la pantalla.
-    2. Pulse el engranaje (`⛭`{.action}) en la parte inferior izquierda de la pantalla.
-    3. A continuación, pulse `Cuentas`{.action} en el menú **Ajustes**.
-    4. Pulsa `Añadir cuenta`{.action}.
-    5. Pulsa `Cuenta de correo`{.action}.
 
-![outlook ios](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
+  1. Pulse el círculo que contiene las iniciales de la cuenta de correo consultada o el icono de la casa (`⌂`{.action}) en la parte superior izquierda de la pantalla.
+  2. Pulse el engranaje (`⛭`{.action}) en la parte inferior izquierda de la pantalla.
+  3. A continuación, pulse `Cuentas`{.action} en el menú **Ajustes**.
+  4. Pulse `Añadir cuenta`{.action}.
+  5. Pulse `Cuenta de correo`{.action}.
+
+  ![outlook ios](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
 
 Siga los pasos de instalación haciendo clic en las siguientes **3** pestañas:
 
 > [!tabs]
-> **Etapa 1**
+> **Paso 1**
 >>
 >> Introduzca su dirección de correo electrónico y pulse `Añadir una cuenta`{.action}.
 >>
 >> ![outlook ios](images/outlook-app-ios-add-step-01.png){.thumbnail .h-500}
 >>
-> **Etapa 2**
+> **Paso 2**
 >>
 >> Existen dos escenarios posibles:
 >>
@@ -68,13 +69,13 @@ Siga los pasos de instalación haciendo clic en las siguientes **3** pestañas:
 >>
 >> - Si va directamente a elegir el tipo de cuenta, seleccione `Exchange`.
 >>
-> **Etapa 3**
+> **Paso 3**
 >>
 >> En la siguiente ventana, marque `Parámetros avanzados`{.action} e introduzca la siguiente información:
 >>
 >> - **Dirección de correo electrónico**: Introduzca su dirección de correo electrónico completa.
 >> - **Contraseña**: Introduzca la contraseña asociada a su dirección de correo electrónico.
->> - **Description** : Introduzca un nombre que le permita identificar esta cuenta entre sus otras cuentas de correo registradas en Outlook.
+>> - **Description**: Introduzca un nombre que le permita identificar esta cuenta entre sus otras cuentas de correo registradas en Outlook.
 >> - **Servidor**: introduzca "zimbra1.mail.ovh.net".
 >> - **Dominio**: Deje este campo en blanco.
 >> - **Nombre de usuario**: Introduzca su dirección de correo electrónico completa.
@@ -104,15 +105,15 @@ OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de
 
 ![outlook ios](images/outlook-app-ios-modify-01.png){.thumbnail .h-500}
 
-Consulte los parámetros en **el Etapa 3** del capítulo [Añadir la cuenta](#add-account).
+Consulte los parámetros en el **paso 3** del capítulo "[Añadir la cuenta](#add-account)".
 
-### ¿Cómo eliminar una cuenta de correo?<a name="delete-account"></a>
+### ¿Cómo eliminar una cuenta de correo? <a name="delete-account"></a>
 
 1. Pulse el círculo que contiene las iniciales de la cuenta de correo consultada o el icono de la casa (`⌂`{.action}) en la parte superior izquierda de la pantalla.
 1. Pulse el engranaje (`⛭`{.action}) en la parte inferior izquierda de la pantalla.
 1. A continuación, pulse `Cuentas`{.action} en el menú **Ajustes**.
 1. Seleccione la cuenta.
-1. Pulsa `Eliminar la cuenta`{.action}.
+1. Pulse `Eliminar la cuenta`{.action}.
 
 ![outlook ios](images/outlook-app-ios-delete-01.png){.thumbnail .h-500}
 
@@ -121,10 +122,10 @@ Consulte los parámetros en **el Etapa 3** del capítulo [Añadir la cuenta](#ad
 
 > [!primary]
 >
-> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en iOS, consulte el [Centro de ayuda de Microsoft](https://support.microsoft.com/office/config-l-application-outlook-para-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en iOS, consulte el [centro de ayuda de Microsoft](https://support.microsoft.com/office/config-l-application-outlook-para-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
 
-Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si necesita ayuda para el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras distintas [ofertas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

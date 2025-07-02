@@ -120,7 +120,7 @@ Depois de configurar um endereço de e-mail, pode começar a utilizá-lo! Já po
 
 A OVHcloud também disponibiliza uma aplicação web que pode usar para aceder ao seu e-mail diretamente a partir do browser. Pode ligar a [webmail OVHcloud](/links/web/email) com as credenciais do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o guia "[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/email_zimbra)".
 
-### Como alterar os parâmetros existentes?<a name="modify-settings"></a>
+### Como alterar os parâmetros existentes? <a name="modify-settings"></a>
 
 Para alterar os parâmetros de uma conta de e-mail já configurada, siga as instruções seguintes:
 
@@ -134,7 +134,7 @@ Para alterar os parâmetros de uma conta de e-mail já configurada, siga as inst
 
 Consulte as definições para **no passo 7** no capítulo [Adicionar conta](#add-account).
 
-### Como eliminar uma conta de e-mail?<a name="delete-account"></a>
+### Como eliminar uma conta de e-mail? <a name="delete-account"></a>
 
 Para eliminar a sua conta de e-mail, siga as instruções seguintes:
 

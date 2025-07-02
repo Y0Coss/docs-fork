@@ -41,7 +41,7 @@ Zimbra Pro accounts can be configured on an iPhone using the ActiveSync protocol
 - **When you start the Outlook application for the first time**, a configuration wizard will appear:
 - Press `Add Account`{.action}.
 
-![outlook ios](images/outlook-app-ios-add01.png){.thumbnail .h-500}
+  ![outlook ios](images/outlook-app-ios-add01.png){.thumbnail .h-500}
 
 - **If an account is already set up on the Outlook application**:
 1. Tap on the circle containing the initials of the email account you are looking at, or on the house icon (`⌂`{.action}) in the top left-hand corner of your screen.
@@ -50,7 +50,7 @@ Zimbra Pro accounts can be configured on an iPhone using the ActiveSync protocol
 4. Press `Add Account`{.action}.
 5. Press `Email account`{.action}.
 
-![outlook ios](images/outlook-app-ios-add02.png){.thumbnail .h-500}
+  ![outlook ios](images/outlook-app-ios-add02.png){.thumbnail .h-500}
 
 Follow the installation steps by clicking on the **3** tabs below:
 
@@ -109,7 +109,7 @@ OVHcloud also offers a web application that allows you to access your email addr
 
 Find the settings in **Step 3** of the [Add account](#add-account) chapter.
 
-### How do I delete an email account?<a name="delete-account"></a>
+### How do I delete an email account? <a name="delete-account"></a>
 
 1. Tap on the circle containing the initials of the email account you are looking at, or the house icon (`⌂`{.action}) in the top left-hand corner of your screen.
 1. Press the gear (`⛭`{.action}) in the lower left of your screen.

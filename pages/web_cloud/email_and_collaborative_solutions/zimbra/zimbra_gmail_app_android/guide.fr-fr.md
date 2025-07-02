@@ -89,7 +89,7 @@ Une fois l'adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vou
 
 OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Vous pouvez connecter au [webmail OVHcloud](/links/web/email) avec les identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, consultez notre guide « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
 
-### Comment modifier les paramètres existants ?<a name="modify-settings"></a>
+### Comment modifier les paramètres existants ? <a name="modify-settings"></a>
 
 Pour modifier les paramètres d’un compte e-mail déjà configuré, suivez les instructions ci-dessous :
 
@@ -97,11 +97,11 @@ Pour modifier les paramètres d’un compte e-mail déjà configuré, suivez les
 1. Appuyez ensuite sur `Paramètres` dans le bas de la colonne de gauche.
 1. Sélectionnez le compte concerné.
 1. Dans le bas de la page qui s'affiche, appuyez sur `Paramètres de réception`.
-1. Référez-vous à l'**Étape 4** du chapitre [Ajouter le compte](#add-account) pour vérifier les paramètres du compte concerné.
+1. Référez-vous à l'**Étape 4** du chapitre « [Ajouter le compte](#add-account) » pour vérifier les paramètres du compte concerné.
 
 ![Gmail android](images/gmail-app-android-exchange-modify-account-01.png){.thumbnail .h-500}
 
-### Comment supprimer un compte e-mail ?<a name="delete-account"></a>
+### Comment supprimer un compte e-mail ? <a name="delete-account"></a>
 
 1. Appuyez sur le menu `☰` en haut à gauche.
 1. Appuyez ensuite sur `Paramètres` dans le bas de la colonne de gauche.

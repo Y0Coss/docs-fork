@@ -89,7 +89,7 @@ Sobald die E-Mail-Adresse eingerichtet ist, können Sie sie verwenden! Sie könn
 
 OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über[Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
 
-### Wie kann ich vorhandene Einstellungen ändern?<a name="modify-settings"></a>
+### Wie kann ich vorhandene Einstellungen ändern? <a name="modify-settings"></a>
 
 Um die Einstellungen eines bereits konfigurierten E-Mail-Accounts zu ändern, befolgen Sie die folgenden Anweisungen:
 
@@ -97,11 +97,11 @@ Um die Einstellungen eines bereits konfigurierten E-Mail-Accounts zu ändern, be
 1. Tippen Sie dann unten in der linken Spalte auf `Einstellungen`.
 1. Wählen Sie das entsprechende Konto aus.
 1. Tippen Sie unten auf der angezeigten Seite auf `Empfangseinstellungen`.
-1. Überprüfen Sie die Einstellungen des betreffenden Kontos im Kapitel [Konto hinzufügen](#add-account) unter **Schritt 4**.
+1. Überprüfen Sie die Einstellungen des betreffenden Kontos im Kapitel „[Konto hinzufügen](#add-account)“ unter **Schritt 4**.
 
 ![Gmail-Android](images/gmail-app-android-exchange-modify-account-01.png){.thumbnail .h-500}
 
-### Wie lösche ich einen E-Mail-Account?<a name="delete-account"></a>
+### Wie lösche ich einen E-Mail-Account? <a name="delete-account"></a>
 
 1. Tippen Sie oben links auf das Menü `☰`.
 1. Tippen Sie dann unten in der linken Spalte auf `Einstellungen`.

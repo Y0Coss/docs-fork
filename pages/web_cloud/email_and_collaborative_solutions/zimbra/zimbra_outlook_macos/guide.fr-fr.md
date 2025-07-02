@@ -87,7 +87,7 @@ Une fois l'adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vou
 
 OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Vous pouvez connecter au [webmail OVHcloud](/links/web/email) avec les identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, consultez notre guide « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
 
-### Comment modifier les paramètres existants ?<a name="modify-settings"></a>
+### Comment modifier les paramètres existants ? <a name="modify-settings"></a>
 
 Pour modifier les paramètres d’un compte e-mail déjà configuré, suivez les instructions ci-dessous :
 
@@ -98,9 +98,9 @@ Pour modifier les paramètres d’un compte e-mail déjà configuré, suivez les
 
 ![outlook macos](images/outlook-macos-modify-01.png){.thumbnail .h-500}
 
-Retrouvez les paramètres à **l'étape 3** du chapitre [Ajouter le compte](#add-account).
+Retrouvez les paramètres à **l'étape 3** du chapitre « [Ajouter le compte](#add-account) ».
 
-### Comment supprimer un compte e-mail ?<a name="delete-account"></a>
+### Comment supprimer un compte e-mail ? <a name="delete-account"></a>
 
 1. Cliquez sur `Outils`{.action} dans la barre de menu en haut de votre écran.
 1. Cliquez sur `Comptes`{.action}.
@@ -108,7 +108,6 @@ Retrouvez les paramètres à **l'étape 3** du chapitre [Ajouter le compte](#add
 1. Cliquez sur `-`{.action} en bas à gauche
 
 ![outlook macos](images/outlook-macos-delete-01.png){.thumbnail .h-500}
-
 
 ## Aller plus loin <a name="go-further"></a>
 

@@ -122,7 +122,7 @@ Sobald die E-Mail-Adresse eingerichtet ist, können Sie sie verwenden! Sie könn
 
 OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über [Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
 
-### Wie kann ich vorhandene Einstellungen ändern?<a name="modify-settings"></a>
+### Wie kann ich vorhandene Einstellungen ändern? <a name="modify-settings"></a>
 
 Um die Einstellungen eines bereits konfigurierten E-Mail-Accounts zu ändern, befolgen Sie die folgenden Anweisungen:
 
@@ -134,9 +134,9 @@ Um die Einstellungen eines bereits konfigurierten E-Mail-Accounts zu ändern, be
 
 ![Outlook iOS](images/outlook-windows-modify-01.png){.thumbnail .h-500}
 
-Die Einstellungen finden Sie in **Schritt 7** des Kapitels [Account hinzufügen](#add-account).
+Die Einstellungen finden Sie in **Schritt 7** des Kapitels „[Account hinzufügen](#add-account)“.
 
-### Wie lösche ich einen E-Mail-Account?<a name="delete-account"></a>
+### Wie lösche ich einen E-Mail-Account? <a name="delete-account"></a>
 
 Um Ihren E-Mail-Account zu löschen befolgen Sie die folgenden Anweisungen:
 

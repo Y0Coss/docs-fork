@@ -87,7 +87,7 @@ Una volta configurato l’indirizzo email, puoi iniziare a utilizzarlo! Da quest
 
 OVHcloud propone anche un’applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. È possibile accedere alla [webmail OVHcloud](/links/web/email) con le credenziali del tuo indirizzo email. Per qualsiasi domanda relativa al suo utilizzo, consulta la nostra guida "[Utilizzare la webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
-### Come modificare le impostazioni esistenti?<a name="modify-settings"></a>
+### Come modificare le impostazioni esistenti? <a name="modify-settings"></a>
 
 Per modificare le impostazioni di un account email già configurato, segui le istruzioni seguenti:
 
@@ -100,7 +100,7 @@ Per modificare le impostazioni di un account email già configurato, segui le is
 
 I parametri sono disponibili al **passaggio 3** del capitolo [Aggiungi account](#add-account).
 
-### Come eliminare un account email?<a name="delete-account"></a>
+### Come eliminare un account email? <a name="delete-account"></a>
 
 1. Clicca su `Strumenti`{.action} nella barra del menu nella parte superiore dello schermo.
 1. Clicca su `Account`{.action}.
@@ -108,7 +108,6 @@ I parametri sono disponibili al **passaggio 3** del capitolo [Aggiungi account](
 1. Clicca su `-`{.action} in basso a sinistra
 
 ![outlook macos](images/outlook-macos-delete-01.png){.thumbnail .h-500}
-
 
 ## Per saperne di più <a name="go-further"></a>
 

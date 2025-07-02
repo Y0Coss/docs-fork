@@ -93,7 +93,7 @@ Once you have configured your email address, you can start using it! You can now
 
 OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
-### How do I modify existing settings?<a name="modify-settings"></a>
+### How do I modify existing settings? <a name="modify-settings"></a>
 
 The Outlook application does not allow you to modify the server settings of your email account.
 
@@ -103,13 +103,13 @@ If your email account is already configured and you want to change its settings,
 2. Tap the adjustment icon (`⛭`{.action}) at the bottom of the left column.
 3. In the "General" section, press `Accounts` to view all of the email addresses configured on the application.
 
-![outlook android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
 
 4. Select the email account concerned.
 5. Press `Delete Account`{.action}.
 6. Press `Delete`{.action} when the question “Do you want to delete the account ?” appears.
 
-![outlook android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
 
 > [!success]
 >

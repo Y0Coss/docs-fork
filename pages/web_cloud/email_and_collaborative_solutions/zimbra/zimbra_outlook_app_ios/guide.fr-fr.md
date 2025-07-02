@@ -38,7 +38,7 @@ Les comptes Zimbra Pro peuvent être configurés sur un iPhone en utilisant le p
 - **Lors du premier démarrage de l'application Outlook**, un assistant de configuration s'affiche :
     - Appuyez sur `Ajouter un compte`{.action}.
 
-![outlook ios](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
+  ![outlook ios](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
 
 - **Si un compte est déjà paramétré sur l'application Outlook** :
     1. Appuyez sur le cercle contenant les initiales du compte e-mail consulté ou sur l'icône de maison (`⌂`{.action}) dans la partie supérieure gauche de votre écran.
@@ -47,7 +47,7 @@ Les comptes Zimbra Pro peuvent être configurés sur un iPhone en utilisant le p
     4. Appuyez sur `Ajouter un compte`{.action}.
     5. Appuyez sur `Compte de courrier`{.action}.
 
-![outlook ios](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
+  ![outlook ios](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
 
 Suivez les étapes d'installation en cliquant successivement sur les **3** onglets ci-dessous :
 
@@ -104,9 +104,9 @@ OVHcloud propose également une application web permettant d'accéder à votre a
 
 ![outlook ios](images/outlook-app-ios-modify-01.png){.thumbnail .h-500}
 
-Retrouvez les paramètres à **l'étape 3** du chapitre [Ajouter le compte](#add-account).
+Retrouvez les paramètres à **l'étape 3** du chapitre « [Ajouter le compte](#add-account) ».
 
-### Comment supprimer un compte e-mail ?<a name="delete-account"></a>
+### Comment supprimer un compte e-mail ? <a name="delete-account"></a>
 
 1. Appuyez sur le cercle contenant les initiales du compte e-mail consulté ou l'icône de maison (`⌂`{.action}) dans la partie supérieure gauche de votre écran.
 1. Appuyez sur l'engrenage (`⛭`{.action}) dans la partie inférieure gauche de votre écran.

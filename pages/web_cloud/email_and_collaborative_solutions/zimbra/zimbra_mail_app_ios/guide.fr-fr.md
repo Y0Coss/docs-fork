@@ -87,7 +87,7 @@ Une fois l'adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vou
 
 OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Vous pouvez connecter au [webmail OVHcloud](/links/web/email) avec les identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, consultez notre guide « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
 
-### Comment modifier les paramètres existants ?<a name="modify-settings"></a>
+### Comment modifier les paramètres existants ? <a name="modify-settings"></a>
 
 Depuis votre iPhone ou votre iPad, rendez-vous dans les `Réglages` puis suivez les instructions ci-dessous :
 
@@ -97,9 +97,9 @@ Depuis votre iPhone ou votre iPad, rendez-vous dans les `Réglages` puis suivez 
 
 ![mail ios](images/mail-app-ios-modify-account-01.png){.thumbnail .h-500}
 
-Retrouvez les paramètres à **l'étape 4** du chapitre [Ajouter le compte](#add-account).
+Retrouvez les paramètres à **l'étape 4** du chapitre « [Ajouter le compte](#add-account) ».
 
-### Comment supprimer un compte e-mail ?<a name="delete-account"></a>
+### Comment supprimer un compte e-mail ? <a name="delete-account"></a>
 
 Depuis votre iPhone ou votre iPad, rendez-vous dans les `Réglages` puis suivez les instructions ci-dessous :
 

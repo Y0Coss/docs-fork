@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar una cuenta de correo electrónico a través de ActiveSync en Outlook para Android"
 excerpt: "Cómo configurar una cuenta de correo electrónico de Zimbra Pro en la aplicación móvil de Outlook para Android a través del protocolo ActiveSync"
-updated: 2025-06-27
+updated: 2025-07-01
 ---
 
 <style>
@@ -40,41 +40,41 @@ Las cuentas Zimbra Pro pueden configurarse en un móvil Android utilizando el pr
 ### Añadir la cuenta <a name="add-account"></a>
 
 - **La primera vez que inicie la aplicación Outlook**, aparecerá un asistente de configuración:
-    - Pulsa `Añadir cuenta`{.action}.
+    - Pulse `Añadir cuenta`{.action}.
 
 ![outlook android](images/outlook-app-android-add01.png){.thumbnail .h-500}
 
 - **Si ya tiene una cuenta configurada en la aplicación Outlook**:
     - Pulse el sobre (`✉`{.action}) en la parte superior izquierda de la pantalla.
     - A continuación, pulse el botón `+`{.action} en la barra vertical izquierda.
-    - Pulsa `Añadir cuenta`{.action}.
+    - Pulse `Añadir cuenta`{.action}.
 
 ![outlook android](images/outlook-app-android-add02.png){.thumbnail .h-500}
 
 Siga los pasos de instalación haciendo clic en las siguientes **3** pestañas:
 
 > [!tabs]
-> **Etapa 1**
+> **Paso 1**
 >>
 >> Introduzca su dirección de correo electrónico y pulse `Continuar`{.action}.
 >>
 >> ![outlook android](images/outlook-app-android-add-step01.png){.thumbnail .h-500}
 >>
-> **Etapa 2**
+> **Paso 2**
 >>
 >> ![outlook android](images/zimbra-activesync-outlook-android03.png){.thumbnail .h-500}
 >>
 >> - Seleccione **Exchange** en la lista de tipos de cuenta.
->> - **O**, si aparece una ventana en la que se le solicita que seleccione el protocolo **IMAP** o **POP3**, pulse en uno de ellos. En la siguiente ventana, pulsa el botón `?`{.action} en la esquina superior derecha de la pantalla y elige `Cambiar proveedor de cuenta`{.action}. Seleccione `Exchange`.
+>> - **O**, si aparece una ventana en la que se le solicita que seleccione el protocolo **IMAP** o **POP3**, pulse en uno de ellos. En la siguiente ventana, pulse el botón `?`{.action} en la esquina superior derecha de la pantalla y elige `Cambiar proveedor de cuenta`{.action}. Seleccione `Exchange`.
 >>
 >> ![outlook android](images/outlook-app-android-add-step021.png){.thumbnail .h-500}
 >>
-> **Etapa 3**
+> **Paso 3**
 >>
 >> En la siguiente ventana, marque `Parámetros avanzados`{.action} e introduzca la siguiente información:
 >>
 >> - **Dirección de correo electrónico**: Introduzca su dirección de correo electrónico completa.
->> - **Description** : Introduzca un nombre que le permita identificar esta cuenta entre sus otras cuentas de correo registradas en Outlook.
+>> - **Description**: Introduzca un nombre que le permita identificar esta cuenta entre sus otras cuentas de correo registradas en Outlook.
 >> - **Servidor**: Introduzca "zimbra1.mail.ovh.net".
 >> - **Dominio**: Deje este campo en blanco.
 >> - **Nombre de usuario**: Introduzca su dirección de correo electrónico completa.
@@ -90,7 +90,7 @@ Una vez que haya configurado la dirección de correo electrónico, ¡ya puede em
 
 OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador. Puede conectarse al [webmail OVHcloud](/links/web/email) con las claves de su dirección de correo electrónico. Para cualquier pregunta relativa al uso de este servicio, consulte nuestra guía "[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
-### ¿Cómo modificar los parámetros existentes?<a name="modify-settings"></a>
+### ¿Cómo modificar los parámetros existentes? <a name="modify-settings"></a>
 
 La aplicación Outlook no permite modificar la configuración del servidor de su cuenta de correo.
 
@@ -100,13 +100,13 @@ Si su cuenta de correo ya está configurada y desea modificar su configuración,
 2. Pulse el icono de sintonización (`⛭`{.action}) en la parte inferior de la columna izquierda.
 3. En la sección "General", pulse `Cuentas` para ver todas las direcciones de correo configuradas en la aplicación.
 
-![outlook android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
 
 4. Seleccione la cuenta de correo correspondiente.
-5. Pulsa `Eliminar la cuenta`{.action}.
-6. Pulsa `Eliminar`{.action} cuando aparezca la pregunta "¿Quieres eliminar la cuenta?".
+5. Pulse `Eliminar la cuenta`{.action}.
+6. Pulse `Eliminar`{.action} cuando aparezca la pregunta "¿Quieres eliminar la cuenta?".
 
-![outlook android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
+  [outlook android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
 
 > [!success]
 >
@@ -116,10 +116,10 @@ Si su cuenta de correo ya está configurada y desea modificar su configuración,
 
 > [!primary]
 >
-> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en Android, consulte el [Centro de ayuda de Microsoft](https://support.microsoft.com/office/configure-el-correo-%C3%A9e-e-%C3%A0-l-aide-de-l-application-outlook-para-android-886db551-8dfa-4fd5-b835-f8e532091872).
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en Android, consulte el [centro de ayuda de Microsoft](https://support.microsoft.com/office/configure-el-correo-%C3%A9e-e-%C3%A0-l-aide-de-l-application-outlook-para-android-886db551-8dfa-4fd5-b835-f8e532091872).
 
-Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si necesita ayuda para el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras distintas [ofertas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

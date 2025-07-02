@@ -120,7 +120,7 @@ Une fois l'adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vou
 
 OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Vous pouvez connecter au [webmail OVHcloud](/links/web/email) avec les identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, consultez notre guide « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
 
-### Comment modifier les paramètres existants ?<a name="modify-settings"></a>
+### Comment modifier les paramètres existants ? <a name="modify-settings"></a>
 
 Pour modifier les paramètres d’un compte e-mail déjà configuré, suivez les instructions ci-dessous :
 
@@ -132,9 +132,9 @@ Pour modifier les paramètres d’un compte e-mail déjà configuré, suivez les
 
 ![outlook ios](images/outlook-windows-modify-01.png){.thumbnail .h-500}
 
-Retrouvez les paramètres à **l'étape 7** du chapitre [Ajouter le compte](#add-account).
+Retrouvez les paramètres à **l'étape 7** du chapitre « [Ajouter le compte](#add-account) ».
 
-### Comment supprimer un compte e-mail ?<a name="delete-account"></a>
+### Comment supprimer un compte e-mail ? <a name="delete-account"></a>
 
 Pour supprimer votre compte e-mail, suivez les instructions ci-dessous:
 

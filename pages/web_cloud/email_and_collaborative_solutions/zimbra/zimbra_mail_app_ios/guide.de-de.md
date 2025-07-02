@@ -87,7 +87,7 @@ Sobald die E-Mail-Adresse eingerichtet ist, können Sie sie verwenden! Sie könn
 
 OVHcloud bietet auch eine Web-Anwendung an, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können. Sie können sich mit den Zugangsdaten Ihrer E-Mail-Adresse im [OVHcloud Webmail](/links/web/email) einloggen. Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
 
-### Wie kann ich vorhandene Einstellungen ändern?<a name="modify-settings"></a>
+### Wie kann ich vorhandene Einstellungen ändern? <a name="modify-settings"></a>
 
 Begeben Sie sich von Ihrem iPhone oder iPad aus in die `Einstellungen` und folgen Sie den nachstehenden Anweisungen:
 
@@ -97,9 +97,9 @@ Begeben Sie sich von Ihrem iPhone oder iPad aus in die `Einstellungen` und folge
 
 ![iOS Mail](images/mail-app-ios-modify-account-01.png){.thumbnail .h-500}
 
-Die Einstellungen finden Sie in **Schritt 4** im Abschnitt [Account hinzufügen](#add-account).
+Die Einstellungen finden Sie in **Schritt 4** im Abschnitt „[Account hinzufügen](#add-account)“.
 
-### Wie lösche ich einen E-Mail-Account?<a name="delete-account"></a>
+### Wie lösche ich einen E-Mail-Account? <a name="delete-account"></a>
 
 Begeben Sie sich von Ihrem iPhone oder iPad aus in die `Einstellungen` und folgen Sie den nachstehenden Anweisungen:
 

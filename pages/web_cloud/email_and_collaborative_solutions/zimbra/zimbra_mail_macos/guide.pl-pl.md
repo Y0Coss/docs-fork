@@ -90,7 +90,7 @@ Po skonfigurowaniu adresu e-mail możesz zacząć z niego korzystać! Teraz moż
 
 OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Możesz zalogować się do [webmail OVHcloud](/links/web/email) za pomocą identyfikatora Twojego konta e-mail. Jeśli masz pytania dotyczące korzystania z tej usługi, zapoznaj się z przewodnikiem "[Korzystanie z poczty Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
-### Jak zmienić istniejące ustawienia?<a name="modify-settings"></a>
+### Jak zmienić istniejące ustawienia? <a name="modify-settings"></a>
 
 Aplikacja Mail na komputery Mac nie pozwala na modyfikowanie ustawień serwera dla konta e-mail Exchange.
 

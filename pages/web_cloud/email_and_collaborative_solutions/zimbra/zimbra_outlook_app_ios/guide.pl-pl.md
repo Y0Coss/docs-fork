@@ -38,7 +38,7 @@ Konta Zimbra Pro można skonfigurować na urządzeniu iPhone za pomocą protoko�
 - **Podczas pierwszego uruchomienia aplikacji Outlook** pojawi się asystent konfiguracji:
     - Kliknij `Dodaj konto`{.action}.
 
-![Outlook iOS](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
+  ![Outlook iOS](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
 
 - **Jeśli konto jest już skonfigurowane w aplikacji Outlook**:
     1. Kliknij kółko z inicjałami konta e-mail, z którym się konsultujesz, lub ikonę domu (`⌂`{.action}) w lewym górnym rogu ekranu.
@@ -47,7 +47,7 @@ Konta Zimbra Pro można skonfigurować na urządzeniu iPhone za pomocą protoko�
     4. Kliknij `Dodaj konto`{.action}.
     5. Naciśnij `Konto pocztowe`{.action}.
 
-![Outlook iOS](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
+  ![Outlook iOS](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
 
 Postępuj zgodnie z kolejnymi instrukcjami zawartymi w **3** zakładkach:
 
@@ -106,7 +106,7 @@ OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie 
 
 Ustawienia znajdziesz w **etapie 3** rozdziału [Dodaj konto](#add-account).
 
-### Jak usunąć konto e-mail?<a name="delete-account"></a>
+### Jak usunąć konto e-mail? <a name="delete-account"></a>
 
 1. Stuknij kółko zawierające inicjały konta e-mail, z którym się konsultujesz lub ikonę domu (`⌂`{.action}) w lewym górnym rogu ekranu.
 1. Naciśnij na koło zębate (`⛭`{.action}) w lewym dolnym rogu ekranu.

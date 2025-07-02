@@ -90,7 +90,7 @@ Una volta configurato l’indirizzo email, puoi iniziare a utilizzarlo! Da quest
 
 OVHcloud propone anche un’applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. È possibile accedere alla [webmail OVHcloud](/links/web/email) con le credenziali del tuo indirizzo email. Per qualsiasi domanda relativa al suo utilizzo, consulta la nostra guida "[Utilizzare la webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
-### Come modificare le impostazioni esistenti?<a name="modify-settings"></a>
+### Come modificare le impostazioni esistenti? <a name="modify-settings"></a>
 
 L’applicazione Mail su Mac non permette di modificare le impostazioni server di un account email Exchange.
 

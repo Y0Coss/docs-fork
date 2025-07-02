@@ -90,7 +90,7 @@ Po skonfigurowaniu adresu e-mail możesz zacząć z niego korzystać! Teraz moż
 
 OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Możesz zalogować się do [webmail OVHcloud](/links/web/email) za pomocą identyfikatora Twojego konta e-mail. Jeśli masz pytania dotyczące korzystania z tej usługi, zapoznaj się z przewodnikiem "[Korzystanie z poczty Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
-### Jak zmienić istniejące ustawienia?<a name="modify-settings"></a>
+### Jak zmienić istniejące ustawienia? <a name="modify-settings"></a>
 
 Aplikacja Outlook nie pozwala na zmianę ustawień serwera dla Twojego konta e-mail.
 
@@ -100,13 +100,13 @@ Jeśli Twoje konto e-mail jest już skonfigurowane i chcesz zmienić jego ustawi
 2. Stuknij ikonę dopasowania (`⛭`{.action}) w dolnej części lewej kolumny.
 3. W sekcji "Ogólne" kliknij `Konta`, aby wyświetlić wszystkie adresy e-mail skonfigurowane w aplikacji.
 
-![Outlook Android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
+  ![Outlook Android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
 
 4. Wybierz odpowiednie konto e-mail.
 5. Kliknij `Usuń konto`{.action}.
 6. Naciśnij przycisk `Usuń`{.action}, gdy pojawi się pytanie "Czy chcesz usunąć konto?".
 
-![Outlook Android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
+  ![Outlook Android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
 
 > [!success]
 >

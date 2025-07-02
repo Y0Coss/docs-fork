@@ -120,7 +120,7 @@ Po skonfigurowaniu adresu e-mail możesz zacząć z niego korzystać! Teraz moż
 
 OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Możesz zalogować się do [webmail OVHcloud](/links/web/email) za pomocą identyfikatora Twojego konta e-mail. Jeśli masz pytania dotyczące korzystania z tej usługi, zapoznaj się z przewodnikiem "[Korzystanie z poczty Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
-### Jak zmienić istniejące ustawienia?<a name="modify-settings"></a>
+### Jak zmienić istniejące ustawienia? <a name="modify-settings"></a>
 
 Aby zmienić parametry skonfigurowanego konta e-mail, postępuj zgodnie z poniższymi instrukcjami:
 
@@ -134,7 +134,7 @@ Aby zmienić parametry skonfigurowanego konta e-mail, postępuj zgodnie z poniż
 
 Ustawienia znajdziesz w **etapie 7** rozdziału [Dodaj konto](#add-account).
 
-### Jak usunąć konto e-mail?<a name="delete-account"></a>
+### Jak usunąć konto e-mail? <a name="delete-account"></a>
 
 Aby usunąć konto e-mail, postępuj zgodnie z poniższymi instrukcjami:
 

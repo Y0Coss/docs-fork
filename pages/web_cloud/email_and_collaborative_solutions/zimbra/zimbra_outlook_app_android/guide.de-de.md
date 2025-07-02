@@ -90,7 +90,7 @@ Sobald die E-Mail-Adresse eingerichtet ist, können Sie sie verwenden! Sie könn
 
 OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über[Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
 
-### Wie kann ich vorhandene Einstellungen ändern?<a name="modify-settings"></a>
+### Wie kann ich vorhandene Einstellungen ändern? <a name="modify-settings"></a>
 
 Die Outlook-Anwendung erlaubt es nicht, die Servereinstellungen Ihres E-Mail-Kontos zu ändern.
 
@@ -100,13 +100,13 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie seine Einstellungen än
 2. Tippen Sie unten in der linken Spalte auf das Einstellungssymbol (`⛭`{.action}).
 3. Tippen Sie im Bereich „Allgemein“ auf `Accounts`, um alle in der App konfigurierten E-Mail-Adressen anzuzeigen.
 
-![Outlook-Android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
+  ![Outlook-Android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
 
 4. Wählen Sie den betreffenden E-Mail-Account aus.
 5. Drücken Sie `Account löschen`{.action}.
 6. Drücken Sie `Löschen`{.action}, wenn die Frage „Möchten Sie den Account löschen?“ angezeigt wird.
 
-![Outlook-Android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
+  ![Outlook-Android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
 
 > [!success]
 >

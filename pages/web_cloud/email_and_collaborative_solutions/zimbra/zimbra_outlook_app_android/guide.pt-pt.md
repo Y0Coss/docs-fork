@@ -90,7 +90,7 @@ Depois de configurar um endereço de e-mail, pode começar a utilizá-lo! Já po
 
 A OVHcloud também disponibiliza uma aplicação web que pode usar para aceder ao seu e-mail diretamente a partir do browser. Pode ligar a [webmail OVHcloud](/links/web/email) com as credenciais do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o guia "[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/email_zimbra)".
 
-### Como alterar os parâmetros existentes?<a name="modify-settings"></a>
+### Como alterar os parâmetros existentes? <a name="modify-settings"></a>
 
 A aplicação Outlook não permite alterar as definições do servidor da sua conta de e-mail.
 
@@ -100,13 +100,13 @@ Se a sua conta de e-mail já estiver configurada e pretender alterar as suas def
 2. Toque no ícone de ajuste (`⛭`{.action}) na parte inferior da coluna da esquerda.
 3. Na secção "Geral" pressione `Contas` para visualizar todos os endereços de e-mail configurados na aplicação.
 
-![outlook android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
 
 4. Selecione a conta de e-mail correspondente.
 5. Prima `Eliminar conta`{.action}.
 6. Prima `Eliminar`{.action} quando a pergunta "Deseja eliminar a conta?" for apresentada.
 
-![outlook android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
 
 > [!success]
 >

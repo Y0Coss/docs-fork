@@ -38,7 +38,7 @@ Gli account Zimbra Pro possono essere configurati su un iPhone utilizzando il pr
 - **Al primo avvio dell’applicazione Outlook**, verrà visualizzata un’assistente di configurazione:
     - Clicca su `Aggiungi account`{.action}.
 
-![outlook-ios](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
+  ![outlook-ios](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
 
 - **Se un account è già impostato sull'applicazione Outlook**:
     1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o sull’icona di casa (`⌂`{.action}) in alto a sinistra dello schermo.
@@ -47,7 +47,7 @@ Gli account Zimbra Pro possono essere configurati su un iPhone utilizzando il pr
     4. Clicca su `Aggiungi un account`{.action}.
     5. Clicca su `Account di posta`{.action}.
 
-![outlook-ios](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
+  ![outlook-ios](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
 
 Segui i passaggi di installazione cliccando sulle **3** schede qui sotto:
 
@@ -106,7 +106,7 @@ OVHcloud propone anche un’applicazione Web che permette di accedere al tuo ind
 
 I parametri sono disponibili al **passaggio 3** del capitolo [Aggiungi account](#add-account).
 
-### Come eliminare un account email?<a name="delete-account"></a>
+### Come eliminare un account email? <a name="delete-account"></a>
 
 1. Clicca sul cerchio che contiene le iniziali dell’account email consultato o l’icona della casa (`⌂`{.action}) nella parte superiore sinistra dello schermo.
 1. Premere l'ingranaggio (`⛭`{.action}) nella parte inferiore sinistra dello schermo.

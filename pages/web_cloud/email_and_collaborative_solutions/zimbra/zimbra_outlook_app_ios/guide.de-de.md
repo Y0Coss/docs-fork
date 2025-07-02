@@ -39,7 +39,7 @@ Zimbra Pro Accounts können auf einem iPhone mithilfe des ActiveSync Protokolls 
 - **Beim ersten Start der Outlook-Anwendung** wird ein Konfigurationsassistent angezeigt:
     - Tippen Sie auf `Account hinzufügen`{.action}.
 
-![Outlook iOS](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
+  ![Outlook iOS](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
 
 - **Wenn bereits ein Account für die Outlook-App eingerichtet ist**:
     1. Tippen Sie auf den Kreis, der die Initialen des angezeigten E-Mail-Accounts enthält, oder auf das Haussymbol (`⌂`{.action}) oben links auf Ihrem Bildschirm.
@@ -48,7 +48,7 @@ Zimbra Pro Accounts können auf einem iPhone mithilfe des ActiveSync Protokolls 
     4. Tippen Sie auf `Konto hinzufügen`{.action}.
     5. Drücken Sie `E-Mail-Konto`{.action}.
 
-![Outlook iOS](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
+  ![Outlook iOS](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
 
 Folgen Sie den Installationsschritten, indem Sie auf die Tabs klicken:
 
@@ -105,7 +105,7 @@ OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbr
 
 ![Outlook iOS](images/outlook-app-ios-modify-01.png){.thumbnail .h-500}
 
-Die Einstellungen finden Sie in **Schritt 3** im Kapitel [Account hinzufügen](#add-account).
+Die Einstellungen finden Sie in **Schritt 3** im Kapitel „[Account hinzufügen](#add-account)“.
 
 ### Wie lösche ich einen E-Mail-Account? <a name="delete-account"></a>
 

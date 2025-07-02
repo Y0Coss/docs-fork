@@ -89,7 +89,7 @@ Una volta configurato l’indirizzo email, puoi iniziare a utilizzarlo! Da quest
 
 OVHcloud propone anche un’applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. È possibile accedere alla [webmail OVHcloud](/links/web/email) con le credenziali del tuo indirizzo email. Per qualsiasi domanda relativa al suo utilizzo, consulta la nostra guida "[Utilizzare la webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
-### Come modificare le impostazioni esistenti?<a name="modify-settings"></a>
+### Come modificare le impostazioni esistenti? <a name="modify-settings"></a>
 
 Per modificare le impostazioni di un account email già configurato, segui le istruzioni seguenti:
 
@@ -101,7 +101,7 @@ Per modificare le impostazioni di un account email già configurato, segui le is
 
 ![Gmail android](images/gmail-app-android-exchange-modify-account-01.png){.thumbnail .h-500}
 
-### Come eliminare un account email?<a name="delete-account"></a>
+### Come eliminare un account email? <a name="delete-account"></a>
 
 1. Premere il menu `☰` in alto a sinistra.
 1. Premere `Impostazioni` nella parte inferiore della colonna sinistra.

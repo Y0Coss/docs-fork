@@ -1,7 +1,7 @@
 ---
-title: "Zimbra Pro - Configurar una cuenta de correo electrónico en EWS en Outlook para Mac"
+title: "Zimbra Pro - Configurar una cuenta de correo electrónico a través de EWS en Outlook para Mac"
 excerpt: "Cómo configurar una dirección de correo electrónico Zimbra Pro en Outlook para macOS mediante el protocolo EWS"
-updated: 2025-06-27
+updated: 2025-07-02
 ---
 
 <style>
@@ -38,22 +38,23 @@ Las cuentas Zimbra Pro pueden configurarse en un Mac utilizando el protocolo EWS
 - **La primera vez que inicie la aplicación Outlook**, aparecerá un asistente de configuración que le pedirá que introduzca la primera dirección de correo electrónico que desee añadir.
 
 - **Si ya tiene una cuenta configurada en la aplicación Outlook**:
-1. Haga clic en `Herramientas`{.action} en la barra de menús de la parte superior de la pantalla.
-2. Haga clic en `Cuentas`{.action}.
-3. En la ventana "Cuentas", haga clic en "`+`{.action} en la parte inferior izquierda y seleccione "Nueva cuenta"`{.action}.
 
-![mail macOS](images/outlook-macos-add-step00.png){.thumbnail .h-500}
+  1. Haga clic en `Herramientas`{.action} en la barra de menús de la parte superior de la pantalla.
+  2. Haga clic en `Cuentas`{.action}.
+  3. En la ventana "Cuentas", haga clic en "`+`{.action} en la parte inferior izquierda y seleccione `Nueva cuenta`{.action}.
+
+  ![mail macOS](images/outlook-macos-add-step00.png){.thumbnail .h-500}
 
 Siga los pasos de instalación haciendo clic en las siguientes **3** pestañas:
 
 > [!tabs]
-> **Etapa 1**
+> **Paso 1**
 >>
 >> Introduzca su dirección de correo electrónico bajo el epígrafe "Dirección de correo electrónico" y haga clic en `Continuar`{.action}.
 >>
 >> ![mail macos](images/outlook-macos-add-step01.png){.thumbnail .h-500}
 >>
-> **Etapa 2**
+> **Paso 2**
 >>
 >> Existen dos escenarios posibles:
 >>
@@ -62,7 +63,7 @@ Siga los pasos de instalación haciendo clic en las siguientes **3** pestañas:
 >>
 >> ![mail macos](images/outlook-macos-add-step02.png){.thumbnail .h-500}
 >>
-> **Etapa 3**
+> **Paso 3**
 >>
 >> Compruebe y complete la siguiente información:
 >>
@@ -72,7 +73,7 @@ Siga los pasos de instalación haciendo clic en las siguientes **3** pestañas:
 >> - **Contraseña**: Introduzca la contraseña asociada a su dirección de correo electrónico.
 >> - **Servidor**: Introduzca "zimbra1.mail.ovh.net".
 >>
->> Para finalizar la configuración, pulsa `Añadir una cuenta`{.action} y selecciona las funciones que deseas explorar en tu Mac.
+>> Para finalizar la configuración, pulsa `Añadir una cuenta`{.action} y selecciona las funciones que deseas explorar en su Mac.
 >>
 >> ![mail macos](images/outlook-macos-add-step03.png){.thumbnail .h-500}
 >>
@@ -87,7 +88,7 @@ Una vez que haya configurado la dirección de correo electrónico, ¡ya puede em
 
 OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador. Puede conectarse al [webmail OVHcloud](/links/web/email) con las claves de su dirección de correo electrónico. Para cualquier pregunta relativa al uso de este servicio, consulte nuestra guía "[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
-### ¿Cómo modificar los parámetros existentes?<a name="modify-settings"></a>
+### ¿Cómo modificar los parámetros existentes? <a name="modify-settings"></a>
 
 Para modificar la configuración de una cuenta de correo ya configurada, siga estas instrucciones:
 
@@ -98,17 +99,16 @@ Para modificar la configuración de una cuenta de correo ya configurada, siga es
 
 ![outlook macos](images/outlook-macos-modify-01.png){.thumbnail .h-500}
 
-Consulte los parámetros en **el paso 3** del capítulo [Añadir la cuenta](#add-account).
+Consulte los parámetros en el **paso 3** del capítulo "[Añadir la cuenta](#add-account)".
 
-### ¿Cómo eliminar una cuenta de correo?<a name="delete-account"></a>
+### ¿Cómo eliminar una cuenta de correo? <a name="delete-account"></a>
 
 1. Haga clic en `Herramientas`{.action} en la barra de menús de la parte superior de la pantalla.
 1. Haga clic en `Cuentas`{.action}.
 1. Seleccione su cuenta en la columna izquierda.
-1. Haga clic en `-`{.action} en la parte inferior izquierda
+1. Haga clic en `-`{.action} en la parte inferior izquierda.
 
 ![outlook macos](images/outlook-macos-delete-01.png){.thumbnail .h-500}
-
 
 ## Más información <a name="go-further"></a>
 
@@ -116,8 +116,8 @@ Consulte los parámetros en **el paso 3** del capítulo [Añadir la cuenta](#add
 >
 > Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación Mail en macOS, consulte el [centro de ayuda de Apple](https://support.apple.com/es-es/102619).
 
-Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si necesita ayuda para el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras distintas [ofertas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
