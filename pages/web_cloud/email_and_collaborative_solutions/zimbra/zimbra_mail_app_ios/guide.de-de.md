@@ -1,6 +1,6 @@
 ---
 title: "Zimbra Pro - Konfiguration Ihres E-Mail-Accounts mit ActiveSync auf Mail für iPhone oder iPad"
-excerpt: "Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das ActiveSync-Protokoll auf der mobilen Mail App für iOS konfigurieren."
+excerpt: "Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das ActiveSync-Protokoll auf der mobilen Mail App für iOS konfigurieren"
 updated: 2025-06-27
 ---
 
@@ -13,29 +13,29 @@ updated: 2025-06-27
 ## Ziel
 
 > [!primary]
-> Diese Anleitung richtet sich an Kunden, die über ein E-Mail-Angebot von [Zimbra Pro] verfügen (/links/web/emails-zimbra). Diese Dienstleistung wird ab Juli 2025 als Beta verfügbar sein.
+> Diese Anleitung richtet sich an Kunden, die über das E-Mail-Angebot [Zimbra Pro](/links/web/emails-zimbra) verfügen. Diese Dienstleistung wird ab Juli 2025 als Beta verfügbar sein.
 
 Zimbra Pro Accounts können auf einem iPhone oder iPad mithilfe des ActiveSync Protokolls konfiguriert werden. So können Sie alle kollaborativen Funktionen Ihrer E-Mail-Adresse in einem Schritt konfigurieren. Die Mail App ist nativ für iOS verfügbar.
 
-**Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das ActiveSync-Protokoll auf der mobilen Mail App für iOS konfigurieren.**
+**Diese Anleitung erklärt, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das ActiveSync-Protokoll auf der mobilen Mail App für iOS konfigurieren.**
 
 > [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung genereller Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Partner](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren, wenn Sie bei der Administration Ihrer Dienste Hilfe benötigen. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
-> OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt in Ihrer Verantwortung, das ordnungsgemäße Funktionieren dieser Dienste sicherzustellen.
->
-> Dieses Handbuch soll Ihnen bei der Durchführung häufiger Aufgaben helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Partner](https://marketplace.ovhcloud.com/c/support-collaboration) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
 
 ## Voraussetzungen
 
-- Sie besitzen eine E-Mail-Adresse [Zimbra Pro](/links/web/emails-zimbra).
+- Sie haben einen E-Mail-Account auf der OVHcloud [Zimbra Pro E-Mail-Lösung](/links/web/emails-zimbra) abonniert.
 - Sie haben die Mail App auf Ihrem iPhone oder iPad.
-- Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
+- Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
-## In der Praxis
+## In der praktischen Anwendung
 
-### Konto <a name="add-account"></a> hinzufügen
+### Account <a name="add-account"></a> hinzufügen
 
-Begeben Sie sich von Ihrem iPhone oder iPad aus in die `Einstellungen` und folgen Sie den Installationsschritten, indem Sie nacheinander auf die unten stehenden **4** Tabs klicken:
+Begeben Sie sich von Ihrem iPhone oder iPad aus in die `Einstellungen` und folgen Sie den Installationsschritten, indem Sie auf die Tabs klicken:
 
 > [!tabs]
 > **Schritt 1**
@@ -72,7 +72,7 @@ Begeben Sie sich von Ihrem iPhone oder iPad aus in die `Einstellungen` und folge
 >> - **Passwort**: Geben Sie das Passwort der E-Mail-Adresse ein.
 >> - **Description**: Geben Sie einen Namen ein, mit dem dieser Account von Ihren anderen E-Mail Accounts identifiziert werden kann, die bei E-Mail registriert sind.
 >>
->> Um die Konfiguration abzuschließen, tippen Sie auf `Weiter`{.action} und wählen Sie die Funktionen aus, die Sie auf Ihrem iPhone oder iPad erkunden möchten.
+>> Um die Konfiguration abzuschließen, tippen Sie auf `Weiter`{.action} und wählen Sie die Funktionen aus, die Sie auf Ihrem iPhone oder iPad verwenden möchten.
 >>
 >> ![iOS Mail](images/mail-app-ios-add-step-04.png){.thumbnail .h-500}
 >>
@@ -97,7 +97,7 @@ Begeben Sie sich von Ihrem iPhone oder iPad aus in die `Einstellungen` und folge
 
 ![iOS Mail](images/mail-app-ios-modify-account-01.png){.thumbnail .h-500}
 
-Die Einstellungen finden Sie in **Schritt 4** des Kapitels [Account hinzufügen](#add-account).
+Die Einstellungen finden Sie in **Schritt 4** im Abschnitt [Account hinzufügen](#add-account).
 
 ### Wie lösche ich einen E-Mail-Account?<a name="delete-account"></a>
 
@@ -115,8 +115,8 @@ Begeben Sie sich von Ihrem iPhone oder iPad aus in die `Einstellungen` und folge
 >
 > Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf iOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/102619).
 
-Für spezielle Dienstleistungen (Referenzierung, Entwicklung usw.) wenden Sie sich bitte an die [OVHcloud Partner](/links/partner).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Verwendung und Konfiguration Ihrer OVHcloud Lösungen benötigen, empfehlen wir Ihnen unsere verschiedenen [Support-Angebote](/links/support).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer [User Community](/links/community).
+Treten Sie unserer [User Community](/links/community) bei.
