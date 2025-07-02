@@ -22,7 +22,7 @@ If you would like to install a CMS (**C**ontent **M**anagement **S**ystem) on yo
 
 ## Requirements
 
-- A [VPS] solution (https://www.ovhcloud.com/en-au/vps/) or a [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your [OVHcloud Control Panel](/links/manager)
+- A [VPS] solution (/links/bare-metal/vps) or a [dedicated server](/links/bare-metal/bare-metal) in your [OVHcloud Control Panel](/links/manager)
 - Administrative (sudo) access to your server via SSH
 
 ## Instructions
