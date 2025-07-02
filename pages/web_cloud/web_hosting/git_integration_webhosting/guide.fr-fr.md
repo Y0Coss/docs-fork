@@ -1,7 +1,7 @@
 ---
 title: "Configurer et utiliser Git avec son hébergement web OVHcloud"
 excerpt: "Découvrez comment configurer et utiliser Git avec votre hébergement web dans votre espace client OVHcloud"
-updated: 2025-06-27
+updated: 2025-07-02
 ---
 
 ## Objectif
@@ -72,8 +72,8 @@ Enfin, cliquez sur `Create Repository`{.action}.
 
 Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme :
 
-- `https://github.com/<username>/<repository_name.git>` pour un dépôt public.
-- `git@github.com:<username>/<repository_name.git>` pour un dépôt privé.
+- `https://github.com/<username>/<repository_name>.git` pour un dépôt public.
+- `git@github.com:<username>/<repository_name>.git` pour un dépôt privé.
 
 Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
 
@@ -90,7 +90,7 @@ Définissez maintenant la branche de votre dépôt GitHub. La branche par défau
 
 Retournez sur le formulaire d'association de Git de votre espace client OVHcloud et indiquez le nom de la nouvelle branche que vous venez de créer.
 
-Si vous avez renseigné un dépôt GitHub privé (adresse de dépôt de type `git@github.com:<username>/<repository_name.git>`), alors un champ `SSH key` (clé SSH) s'affiche en dessous du champ `Branch`.
+Si vous renseignez l'adresse d'un dépôt GitHub privé (de type `git@github.com:<username>/<repository_name>.git`), un champ `SSH key` (clé SSH) s'affiche sous le champ `Branch`.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
 
@@ -136,7 +136,7 @@ En bas du formulaire d'association de Git, une section `Configuration du déploi
 Avant de valider le formulaire d'association de Git, assurez-vous que :
 
 - Votre clé SSH a bien été enregistrée dans votre compte GitHub.
-- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name.git>`.
+- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name>.git`.
 - Le nom de la branche du dépôt GitHub est correct.
 - Votre répertoire d'installation est vide.
 

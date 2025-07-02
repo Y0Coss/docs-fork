@@ -73,8 +73,8 @@ Na koniec kliknij przycisk `Create Repository`{.action}.
 
 Skopiuj adres repozytorium GitHub. Musi mieć formę:
 
-- `https://github.com/<username>/<repository_name.git>` w repozytorium publicznym.
-- `git@github.com:<username>/<repository_name.git>` w prywatnym repozytorium.
+- `https://github.com/<username>/<repository_name>.git` w repozytorium publicznym.
+- `git@github.com:<username>/<repository_name>.git` w prywatnym repozytorium.
 
 Wróć do formularza kojarzenia Git i wklej adres Twojego repozytorium GitHub w polu `Repozytorium`{.action}. Jeśli adres ma niepoprawny format, wyświetlany jest następujący komunikat o błędzie:
 
@@ -128,7 +128,7 @@ W dolnej części formularza kojarzenia Git, wyświetla się sekcja `Skonfiguruj
 Przed zatwierdzeniem formularza skojarzenia Git, upewnij się, że:
 
 - Twój klucz SSH został zarejestrowany na koncie GitHub.
-- Adres repozytorium GitHub jest poprawny. Musi mieć formę `https://github.com/<username>/<repository_name.git>`.
+- Adres repozytorium GitHub jest poprawny. Musi mieć formę `https://github.com/<username>/<repository_name>.git`.
 - Nazwa gałęzi repozytorium GitHub jest poprawna.
 - Twój katalog instalacyjny jest pusty.
 

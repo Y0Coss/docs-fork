@@ -73,8 +73,8 @@ Por fim, clique em `Create Repository`{.action}.
 
 Copie o endereço do seu repositório GitHub. Esta deve ser da forma:
 
-- `https://github.com/<username>/<repository_name.git>` para um repositório público.
-- `git@github.com:<username>/<repository_name.git>` para um repositório privado.
+- `https://github.com/<username>/<repository_name>.git` para um repositório público.
+- `git@github.com:<username>/<repository_name>.git` para um repositório privado.
 
 Volte para o formulário de associação do Git e cole o endereço do repositório GitHub no campo `Repositório`{.action}. Se o formato do endereço não estiver correto, aparecerá a seguinte mensagem de erro:
 
@@ -128,7 +128,7 @@ Na parte inferior do formulário de associação do Git, aparece uma secção `C
 Antes de validar o formulário de associação do Git, certifique-se de que:
 
 - A sua chave SSH foi corretamente registada na sua conta GitHub.
-- O endereço do seu repositório GitHub está correto. Deve ser da forma `https://github.com/<username>/<repository_name.git>`.
+- O endereço do seu repositório GitHub está correto. Deve ser da forma `https://github.com/<username>/<repository_name>.git`.
 - O nome do ramo do repositório GitHub está correto.
 - O diretório de instalação está vazio.
 

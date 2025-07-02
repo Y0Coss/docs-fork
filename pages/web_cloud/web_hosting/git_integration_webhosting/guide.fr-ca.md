@@ -72,8 +72,8 @@ Enfin, cliquez sur `Create Repository`{.action}.
 
 Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme :
 
-- `https://github.com/<username>/<repository_name.git>` pour un dépôt public.
-- `git@github.com:<username>/<repository_name.git>` pour un dépôt privé. 
+- `https://github.com/<username>/<repository_name>.git` pour un dépôt public.
+- `git@github.com:<username>/<repository_name>.git` pour un dépôt privé. 
  
  Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
 
@@ -126,7 +126,7 @@ En bas du formulaire d'association de Git, une section `Configuration du déploi
 Avant de valider le formulaire d'association de Git, assurez-vous que :
 
 - Votre clé SSH a bien été enregistrée dans votre compte GitHub.
-- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name.git>`.
+- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name>.git`.
 - Le nom de la branche du dépôt GitHub est correct.
 - Votre répertoire d'installation est vide.
 

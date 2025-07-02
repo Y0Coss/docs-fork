@@ -73,8 +73,8 @@ Infine clicca su `Create Repository`{.action}.
 
 Copia l'indirizzo del tuo repository GitHub. La forma deve essere:
 
-- `https://github.com/<username>/<repository_name.git>` per un deposito pubblico.
-- `git@github.com:<username>/<repository_name.git>` per un deposito privato.
+- `https://github.com/<username>/<repository_name>.git` per un deposito pubblico.
+- `git@github.com:<username>/<repository_name>.git` per un deposito privato.
 
 Tornare al modulo di associazione di Git e incollare l'indirizzo del repository GitHub nel campo `Repository`{.action}. Se il formato dell'indirizzo non è corretto, viene visualizzato il seguente messaggio di errore:
 
@@ -128,7 +128,7 @@ Nella parte inferiore del modulo di associazione di Git, viene visualizzata la s
 Prima di convalidare il modulo di associazione di Git, assicurarsi che:
 
 - La chiave SSH è stata registrata correttamente nel tuo account GitHub.
-- L'indirizzo del tuo repository GitHub è corretto. Il formato deve essere `https://github.com/<username>/<repository_name.git>`.
+- L'indirizzo del tuo repository GitHub è corretto. Il formato deve essere `https://github.com/<username>/<repository_name>.git`.
 - Il nome del ramo del repository GitHub è corretto.
 - La directory di installazione è vuota.
 
