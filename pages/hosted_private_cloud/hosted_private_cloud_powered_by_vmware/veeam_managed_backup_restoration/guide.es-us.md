@@ -59,7 +59,7 @@ Tenga en cuenta que el backup repository permite restaurar las copias de segurid
 
 La llamada a la API restaurará los últimos puntos de restauración válidos de cada backup presente en el directorio de almacenamiento.
 
-Conéctese a [https://ca.api.ovh.com/](/links/api) y utilice la siguiente llamada:
+Conéctese a la [API de OVHcloud](/links/api) y utilice la siguiente llamada:
 
 > [!api]
 >
