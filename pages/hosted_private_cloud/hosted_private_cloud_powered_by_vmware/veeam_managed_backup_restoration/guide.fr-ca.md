@@ -55,7 +55,7 @@ Prenez note du dossier de stockage (BackupRepository), celui-ci vous permettra d
 
 L'appel API va restaurer les derniers points de restauration valides de chaque sauvegarde présente sur le dossier de stockage.
 
-Connectez-vous sur [https://ca.api.ovh.com/](/links/api) et utilisez l'appel suivant :
+Connectez-vous aux [API OVHcloud](/links/api) et utilisez l'appel suivant :
 
 > [!api]
 >
