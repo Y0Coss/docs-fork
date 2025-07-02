@@ -40,7 +40,7 @@ As contas Zimbra Pro podem ser configuradas num Mac utilizando o protocolo EWS (
 - **Se uma conta já estiver parametrizada na aplicação Outlook**:
     1. Clique em `Ferramentas`{.action} na barra de menu no topo do seu ecrã.
     2. Clique em `Contas`{.action}.
-    3. Na janela "Contas" que se abrir, clique em `+`{.action} no canto inferior esquerdo e, a seguir, clique em 'Nova conta' {.action}.
+    3. Na janela "Contas" que se abrir, clique em `+`{.action} no canto inferior esquerdo e, a seguir, clique em 'Nova conta`{.action}.
 
 ![mail macOS](images/outlook-macos-add-step00.png){.thumbnail .h-500}
 

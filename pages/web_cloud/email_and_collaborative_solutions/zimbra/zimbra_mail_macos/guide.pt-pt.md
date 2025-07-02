@@ -100,7 +100,7 @@ Para eliminar uma conta de e-mail Exchange, siga as instruções seguintes:
 
 1. Clique em `Mail`{.action} na barra de menu no topo do seu ecrã.
 1. Clique em `Contas`{.action} e selecione a conta de e-mail em causa.
-1. Prima 'Eliminar conta' {.action}.
+1. Prima 'Eliminar conta`{.action}.
 
 ![mail macos](images/mail-macos-modify-delete-01.png){.thumbnail .h-500}
 

@@ -36,7 +36,7 @@ As contas Zimbra Pro podem ser configuradas num iPhone utilizando o protocolo At
 ### Adicionar a conta <a name="add-account"></a>
 
 - **Ao iniciar pela primeira vez a aplicação Outlook**, é apresentado um assistente de configuração:
-    - Prima 'Adicionar uma conta' {.action}.
+    - Prima 'Adicionar uma conta`{.action}.
 
 ![outlook ios](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
 
@@ -44,7 +44,7 @@ As contas Zimbra Pro podem ser configuradas num iPhone utilizando o protocolo At
     1. Toque no círculo que contém as iniciais da conta de e-mail visitada ou no ícone de casa (`⌂`{.action}) na parte superior esquerda do ecrã.
     2. Pressione a engrenagem (`⛭`{.action}) na parte inferior esquerda do seu ecrã.
     3. De seguida, clique em `Contas`{.action} no menu **Definições**.
-    4. Prima 'Adicionar uma conta' {.action}.
+    4. Prima 'Adicionar uma conta`{.action}.
     5. Toque em `Conta de e-mail`{.action}.
 
 ![outlook ios](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
