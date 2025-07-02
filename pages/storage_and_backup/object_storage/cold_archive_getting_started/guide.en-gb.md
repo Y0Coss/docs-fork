@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Getting started with Cold Archive
 excerpt: This guide shows you how to manage your data with Cold Archive
-updated: 2024-11-29
+updated: 2025-07-04
 ---
 
 ## Objective
@@ -17,6 +17,11 @@ Restoration may take some time since data is read from tapes.
 - `awscli` version >= 1.16.62
 
 ## Instructions
+
+> [!primary]
+>
+> You can find the Cold Archive storage presentation and workflow [here](/pages/storage_and_backup/object_storage/cold_archive_overview).
+>
 
 This section explains the step-by-step process to configure, archive, restore, and delete buckets with Cold Archive, in coexistence with your Object Storage.
 
@@ -67,10 +72,17 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api list-multipart-
 > Before archiving a bucket, make sure there are no incomplete multipart uploads.
 >
 
-
-```bash
-aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-archive <bucket_name>
-```
+> [!tabs]
+> Via the AWS S3api
+>> ```bash
+>> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-archive <bucket_name>
+>> ```
+>>
+> Via the OVHcloud Control Panel
+>> Click on` the three dots`{.action}, then select `Archive`{.action}
+>>
+>> ![Archive a cold archive bucket](images/cold_archive_01.png){.thumbnail}
+>>
 
 - The bucket status changes to Archiving.
 - Objects cannot be read or written during this process; only listing is allowed.
@@ -126,11 +138,19 @@ If you want to edit the retention period, similarly, re-apply the intelligent ti
 
 ### Restore a Bucket
 
-Restore a bucket:
-
-```bash
-aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-restore <bucket_name>
-```
+> [!tabs]
+> Via the AWS S3api
+>> Restore a bucket :
+>>
+>> ```bash
+>> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-restore <bucket_name>
+>> ```
+>>
+> Via the OVHcloud Control Panel
+>> Click on the `three dots`{.action}, then select `Restore`{.action}.
+>>
+>> ![Restore a cold archive bucket](images/cold_archive_02.png){.thumbnail}
+>>
 
 - Bucket status changes to Restoring.
 - Objects become accessible in read-only mode once restoration completes.
@@ -145,9 +165,20 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-restore <buck
 
 Delete an intelligent-tiering configuration and objects of a bucket:
 
-```bash
-aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net delete-ovh-archive <bucket_name>
-```
+
+> [!tabs]
+> Via the AWS S3api
+>> Delete an Intelligent-Tiering configuration and the objects in a bucket:
+>>
+>> ```bash
+>> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net delete-ovh-archive <bucket_name>
+>> ```
+>>
+> Via the OVHcloud Control Panel
+>> Click on the `three dots`{.action}, then select `Delete`{.action}.
+>>
+>> ![Delete a cold archive bucket](images/cold_archive_03.png){.thumbnail}
+>>
 
 After this request, the objects of the bucket are not deleted yet as the deletion is done asynchronously.<br>
 The operation will delete everything (on tapes and all objects if restored) and the bucket status will be in a "Deleting" status.<br>
@@ -171,32 +202,41 @@ aws s3 rb s3://<bucket_name>
 
 ### Check Bucket Status and Retention Tags
 
-Once an intelligent-tiering configuration has been pushed (via a `put-bucket-intelligent-tiering-configuration` operation) and until it is removed (via a `delete-bucket-intelligent-tiering-configuration` operation), the status of a bucket is readable through:
+> [!tabs]
+> Via the AWS S3api
+>> Once an intelligent-tiering configuration has been pushed (via a `put-bucket-intelligent-tiering-configuration` operation) and until it is removed (via a `delete-bucket-intelligent-tiering-configuration` operation), the status of a bucket is readable through:
+>>
+>> ```bash
+>> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net >> s3api get-bucket-tagging --bucket <bucket_name>
+>> ```
+>>
+>> If you have locked your archive, you can check the retention period using the `get-bucket-tagging command`.
+>>
+>> - Example:
+>>
+>> ```bash
+>> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api get-bucket-tagging --bucket <bucket_name>
+>>
+>> {
+>>     "TagSet": [
+>>         {
+>>             "Key": "ovh:intelligent_tiering_status",
+>>             "Value": "Archived"
+>>         },
+>>         {
+>>             "Key": "ovh:intelligent_tiering_archive_lock_until",
+>>             "Value": "2124-01-19T15:24:56.000Z"
+>>         }
+>>     ]
+>> } 
+>> ```
+>>
+> Via the OVHcloud Control Panel
+>> You can check the status of your bucket by looking at the value in the `Status` column, as well as its retention period in the `Locked until` column.
+>>
+>> ![Cold archive bucket information](images/cold_archive_04.png){.thumbnail}
+>>
 
-```bash
-aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api get-bucket-tagging --bucket <bucket_name>
-```
-
-If you have locked your archive, you can check the retention period using the `get-bucket-tagging command`.
-
-- Example:
-
-```bash
-aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api get-bucket-tagging --bucket <bucket_name>
-
-{
-    "TagSet": [
-        {
-            "Key": "ovh:intelligent_tiering_status",
-            "Value": "Archived"
-        },
-        {
-            "Key": "ovh:intelligent_tiering_archive_lock_until",
-            "Value": "2124-01-19T15:24:56.000Z"
-        }
-    ]
-} 
-```
 
 #### List of bucket statuses
 
@@ -221,6 +261,8 @@ aws s3api get-bucket-intelligent-tiering-configuration --bucket <bucket_name> --
 This command returns detailed configuration info useful for debugging or verification.
 
 ## Go further
+
+Check out our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, share feedback, and interact directly with the team behind our storage and backup services.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
