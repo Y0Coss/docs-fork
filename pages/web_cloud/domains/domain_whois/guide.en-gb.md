@@ -24,12 +24,12 @@ OVHcloud provides an interface to allow you to execute the WHOIS command for a d
 >
 > The content and presentation of the information in the result of a WHOIS query may differ depending on the domain name extension (e.g. *.com*, *.net*, *.ovh*, etc.).
 >
-> In addition, the registries that manage these extensions may allow domain name holders to hide certain personal elements in WHOIS.
+> In addition, the registries that manage these extensions may allow domain name holders to hide personal information in WHOIS.
 
 The following steps will take you to the WHOIS records associated with a domain name:
 
 1. Access our [WHOIS online tool](/links/web/domains-whois).
-1. On the page that pops up, enter the domain name (for example: *domain.tld* **without** the *www*) in the `Domain name *`{.action} field, then enter the `Security code` that pops up in the `Enter security code *`{.action} field.
+1. On the page that pops up, enter the domain name (for example: *domain.tld* **without** the *www*) in the `Domain name *`{.action} field, then enter the `Security code` in the `Enter security code *`{.action} field.
 1. Click the `Whois`{.action} button to send the request.
 1. See the result of the WHOIS query in the new section titled `Whois search results :`{.action} under the `Whois`{.action} button.
 
