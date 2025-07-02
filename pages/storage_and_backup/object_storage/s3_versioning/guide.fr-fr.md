@@ -172,7 +172,7 @@ Lorsque le versioning est activé :
 > Via l'espace client OVHcloud
 >> Depuis la page principale de votre bucket Object Storage ou depuis la page de détails d’un objet, vous pouvez supprimer votre objet en cliquant sur `supprimer`{.action}.
 >>
->> ![delete current or versioned objects](images/bucket_download_versions.png)
+>> ![delete current or versioned objects](images/bucket_delete_object_versions.png)
 >>
 >>
 >> Pour supprimer définitivement une version, cliquez sur les `trois points`{.action}, puis sur `Supprimer`{.action}, et confirmez l’action de suppression définitive.

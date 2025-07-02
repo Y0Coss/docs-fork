@@ -171,7 +171,7 @@ When versioning is enabled:
 > Via the OVHcloud customer area
 >> From the main page of your Object Storage bucket, or from the object details page, you can delete your object by clicking on `delete`{.action}.
 >>
->> ![delete current or versioned objects](images/bucket_download_versions.png)
+>> ![delete current or versioned objects](images/bucket_delete_object_versions.png)
 >>
 >>
 >> To delete a version definitively, click on the `three dots`{.action}, then on `Delete`{.action}, and confirm the definitive deletion action.
