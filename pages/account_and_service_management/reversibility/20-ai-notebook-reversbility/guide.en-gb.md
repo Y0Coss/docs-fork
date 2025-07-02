@@ -21,8 +21,10 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
+| Import and export Notebooks | Store notebooks in standard Jupyter (.ipynb) or VS Code Notebook formats including import and export without adaptation | (.ipynb), Python, CSV, TXT | **Incoming**: Direct download of .ipynb files or conversion via Jupyter/VS Code. <br>**Outgoing**: Direct export of .ipynb notebooks, reusable on any Jupyter or other compatible environment. |[Using data in a notebook via the OVHcloud Control Panel](/pages/public_cloud/ai_machine_learning/notebook_guide_data_ui) |
+| Support for standard AI frameworks | Pre-installation of environments such as TensorFlow, PyTorch, Scikit-learn, MXNet, Hugging Face, etc. | Notebooks, Python scripts | **Incoming**:import notebooks/scripts using these frameworks. <br>**Outgoing**: export notebooks/scripts, which can be reused on any platform supporting these frameworks. | [Tutorial - Using Tensorboard in a notebook](/pages/public_cloud/ai_machine_learning/notebook_tuto_02_tensorboard) |
+| Manage custom environments | Install libraries and dependencies via pip/conda, specific to each notebook | YAML (environments), requirements.txt | **Incoming**: Recreating the environment via requirements.txt/environment.yml files. <br>**Outbound**:  Manually export from the package list, adapt, and reinstall on the target environment | [Features, Capabilities and Limits](/pages/public_cloud/ai_machine_learning/notebook_guide_capabilities) |
+| VS Code Integration | Visual Studio Code edition support for Notebooks | Notebooks, Python scripts | **Incoming**: possible import, but requires adaptation of environment if target does not support VS Code. <br>**Outgoing**: export notebooks/scripts, possibly adjust VS Code configuration on target environment | [Features, Capabilities and Limits](/pages/public_cloud/ai_machine_learning/notebook_guide_capabilities) |
 
 
 
