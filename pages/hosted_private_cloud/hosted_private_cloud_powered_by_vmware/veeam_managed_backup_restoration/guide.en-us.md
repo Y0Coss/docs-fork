@@ -55,7 +55,7 @@ Take note of the BackupRepository reference, this will allow you to restore back
 
 The API call will restore the last valid restore points for each backup in the storage folder.
 
-Log in to [https://ca.api.ovh.com/](/links/api) and use the following call:
+Log in to the [OVHcloud API](/links/api) and use the following call:
 
 > [!api]
 >
