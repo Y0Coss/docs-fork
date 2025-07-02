@@ -21,7 +21,7 @@ Si vous n'êtes pas habitué au fonctionnement des API OVHcloud, consultez notre
 
 Il vous faut dans un premier temps cibler les sauvegardes à restaurer.
 
-Connectez-vous sur [https://ca.api.ovh.com/](/links/api) et utilisez l'appel suivant :
+Connectez-vous aux [API OVHcloud](/links/api) et utilisez l'appel suivant :
 
 > [!api]
 >
