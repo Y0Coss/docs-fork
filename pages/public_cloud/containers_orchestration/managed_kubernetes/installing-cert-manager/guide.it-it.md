@@ -1,7 +1,7 @@
 ---
 title: Installing cert-manager on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to install cert-manager on OVHcloud Managed Kubernetes'
-updated: 2024-01-18
+updated: 2025-07-02
 ---
 
 ## Objective
