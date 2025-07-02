@@ -14,7 +14,7 @@ Cette politique vise à mettre en œuvre les principes généraux de réversibil
 Les fonctionnalités du produit sont réparties en trois catégories :
 
 1. Les **fonctionnalités principales** pour lesquelles nous garantissons la capacité de migration.
-1. Les **implémentation OVHcloud** qui nécessitent une adaptation à un nouvel environnement de migration.
+1. Les **implémentations OVHcloud** qui nécessitent une adaptation à un nouvel environnement de migration.
 1. Les **fonctionnalités spécifiques** qui ne peuvent pas être garanties pour la migration car elles sont liées à l'environnement OVHcloud ou impliquent des développements personnalisés.
 
 ### 1 - Fonctionnalités principales
