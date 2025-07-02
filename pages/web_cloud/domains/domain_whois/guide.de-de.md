@@ -1,37 +1,37 @@
 ---
-title: "So erhalten Sie Informationen zu einer Domain mit dem WHOIS"
-excerpt: "Hier erfahren Sie, wie Sie mit dem Tool WHOIS Details zu einer Domain erhalten"
+title: "WHOIS Informationen eines Domainnamens abrufen"
+excerpt: "Erfahren Sie, wie Sie mit dem WHOIS Tool verfügbare Details zu einem Domainname erhalten"
 updated: 2025-07-01
 ---
 
 ## Ziel
 
-Sie möchten wissen, ob ein Domainname verfügbar ist? Sie möchten bestimmte Informationen zu einem Domainnamen wissen, wie die Kontaktdaten des Inhabers, das Ablaufdatum usw. Ist das so?
+Sie möchten wissen, ob ein Domainname verfügbar ist? Sie möchten bestimmte Informationen zu einem Domainnamen wissen, wie die Kontaktdaten des Inhabers, das Ablaufdatum, etc.?
 
-Das WHOIS, abgekürzt für „Who is?“, ist ein Protokoll, das den Zugriff auf verschiedene Daten einer Domain ermöglicht.
+Das WHOIS, für "Who is?", ist ein Protokoll, das den Zugriff auf verschiedene Informationen im Zusammenhang mit einem Domainnamen ermöglicht.
 
-**Diese Anleitung erklärt, wie Sie mit dem WHOIS-Tool Informationen zu einer Domain erhalten.**
+**Diese Anleitung erklärt, wie Sie mit dem WHOIS Tool Informationen zu einer Domain erhalten.**
 
 ## Voraussetzungen
 
-- Sie verfügen über einen Internetbrowser (zum Beispiel: Firefox, Chrome, Safari, Edge usw.) auf Ihrem Computer, Tablet oder Smartphone.
+- Sie verfügen über einen Internetbrowser (zum Beispiel: Firefox, Chrome, Safari, Edge, etc.) auf Ihrem Computer, Tablet oder Smartphone.
 
 ## In der praktischen Anwendung
 
-OVHcloud stellt Ihnen ein Interface zur Verfügung, über das Sie den WHOIS-Befehl für eine Domain ausführen können.
+OVHcloud stellt ein Interface zur Verfügung, über das Sie WHOIS Abfragen für Domainnamen ausführen können.
 
 > [!primary]
 >
-> Der Inhalt und die Darstellung der Informationen im Ergebnis einer WHOIS-Abfrage können je nach Domainendung variieren (zum Beispiel: *.com*, *.net*, *.ovh* etc.).
+> Der Inhalt und die Darstellung der Informationen im Ergebnis einer WHOIS Abfrage können je nach Domainendung variieren (zum Beispiel: *.com*, *.net*, *.ovh* etc.).
 >
 > Darüber hinaus können die Registrys, die diese Domainendungen verwalten, es den Inhabern von Domainnamen ermöglichen, bestimmte persönliche Elemente im WHOIS zu verbergen.
 
-Mit den folgenden Schritten können Sie auf die WHOIS-Einträge zugreifen, die einer Domain zugeordnet sind:
+Mit den folgenden Schritten können Sie auf die WHOIS Einträge zugreifen, die einer Domain zugeordnet sind:
 
-1. Greifen Sie auf unser [WHOIS Online-Tool](/links/web/domains-whois) zu.
-1. Geben Sie auf der angezeigten Seite den Domainnamen (zum Beispiel: *domain.tld* **ohne** die *www*) in das Feld `Domainname *`{.action} ein und geben Sie den `Sicherheitscode` ein, der in dem Feld `Sicherheitscode eingeben *`{.action} angezeigt wird.
+1. Greifen Sie auf unser [WHOIS Tool](/links/web/domains-whois) zu.
+1. Geben Sie auf der angezeigten Seite den Domainnamen (zum Beispiel: *domain.tld*, **ohne** www) in das Feld `Domainname *`{.action} ein und geben Sie den `Sicherheitscode` im Feld `Sicherheitscode eingeben *`{.action} ein.
 1. Klicken Sie auf die Schaltfläche `Whois`{.action}, um die Anfrage zu senden.
-1. Überprüfen Sie das Ergebnis der WHOIS-Abfrage im neuen Abschnitt `Whois search results :`{.action} unter der Schaltfläche `Whois`{.action}.
+1. Überprüfen Sie das Ergebnis der WHOIS Abfrage im neuen Abschnitt `Whois search results :`{.action} unter der Schaltfläche `Whois`{.action}.
 
 In diesem Ergebnis finden Sie alle Informationen zu der Domain, die Sie im Schritt **2** angegeben haben.
 
