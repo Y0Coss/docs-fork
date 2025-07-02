@@ -1,19 +1,19 @@
 ---
 title: Object Storage – Use Object Storage with Pure Storage Flashblade
-excerpt: Set up Pure Storage Flashblade to work toghether with OVHcloud ObjectStorage
+excerpt: Set up Pure Storage Flashblade to work toghether with OVHcloud Object Storage
 updated: 2025-07-02
 ---
  
 ## Objective
 
-This guide aims to help you configure and use OVHcloud Object Storage as a replication target for Pure Storage "[Flashblade unified storage platform](https://www.purestorage.com/uk/products/unstructured-data-storage/flashblade-s.html){.external}"
+This guide aims to help you configure and use OVHcloud Object Storage as a replication target for Pure Storage "[Flashblade unified storage platform](https://www.purestorage.com/uk/products/unstructured-data-storage/flashblade-s.html){.external}".
 
 It covers how you can easily configure, manage and start replicating Pure Storage FlashBlade S3-compatible objects to OVHcloud Object Storage.
 
 ## Requirements
 
-- An OVHcloud Object Storage container/bucket
-- A user with the required access rights on the bucket
+- An OVHcloud Object Storage container/bucket.
+- A user with the required access rights on the bucket.
 - Your Object Storage credentials (access_key and secret_access_key).
 
 See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
@@ -30,7 +30,7 @@ See our [Getting started with Object Storage](/pages/storage_and_backup/object_s
 
 4. Name the connection, for example with OVHCLOUD_OBJECT_STORAGE and add the associated OVHcloud Object Storage endpoints in the `Address` field.
 
- ![connection page](images/01.Connections.png){.thumbnail}
+![connection page](images/01.Connections.png){.thumbnail}
 
 The list of all OVHcloud Object Storage endpoints can be found [here](/pages/storage_and_backup/object_storage/s3_location).
 
