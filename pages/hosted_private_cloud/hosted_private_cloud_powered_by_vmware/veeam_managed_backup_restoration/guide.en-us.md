@@ -21,7 +21,7 @@ If you are not familiar with OVHcloud APIs, please refer to our [Getting started
 
 First, you need to target the backups you want to restore.
 
-Log in to [https://ca.api.ovh.com/](/links/api) and use the following call:
+Log in to the [OVHcloud API](/links/api) and use the following call:
 
 > [!api]
 >
