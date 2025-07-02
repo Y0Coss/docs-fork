@@ -1,6 +1,6 @@
 ---
 title: "Zimbra Pro - Konfiguration Ihres E-Mail-Accounts via EWS in Mail auf Mac"
-excerpt: "Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das EWS-Protokoll in der Mail App auf dem Mac einrichten."
+excerpt: "Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das EWS-Protokoll in der Mail App auf dem Mac einrichten"
 updated: 2025-06-27
 ---
 
@@ -13,25 +13,25 @@ updated: 2025-06-27
 ## Ziel
 
 > [!primary]
-> Diese Anleitung richtet sich an Kunden, die über ein E-Mail-Angebot von [Zimbra Pro] verfügen (/links/web/emails-zimbra). Diese Dienstleistung wird ab Juli 2025 als Beta verfügbar sein.
+> Diese Anleitung richtet sich an Kunden, die über das E-Mail-Angebot [Zimbra Pro](/links/web/emails-zimbra) verfügen. Diese Dienstleistung wird ab Juli 2025 als Beta verfügbar sein.
 
-Zimbra Pro Accounts können auf einem macOS mit dem EWS Protokoll konfiguriert werden (**E**xchange **W**eb **S**services). So können Sie alle kollaborativen Funktionen Ihrer E-Mail-Adresse in einem Schritt konfigurieren. Die Mail App ist nativ auf macOS verfügbar.
+Zimbra Pro Accounts können auf einem macOS mit dem EWS Protokoll konfiguriert werden (**E**xchange **W**eb **S**ervices). So können Sie alle kollaborativen Funktionen Ihrer E-Mail-Adresse in einem Schritt konfigurieren. Die Mail App ist nativ auf macOS verfügbar.
 
-**Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das EWS-Protokoll auf der Mail App auf dem Mac einrichten.**
+**Diese Anleitung erklärt, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das EWS-Protokoll auf der Mail App auf dem Mac einrichten.**
 
 > [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung genereller Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Partner](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren, wenn Sie bei der Administration Ihrer Dienste Hilfe benötigen. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
-> OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt in Ihrer Verantwortung, das ordnungsgemäße Funktionieren dieser Dienste sicherzustellen.
->
-> Dieses Handbuch soll Ihnen bei der Durchführung häufiger Aufgaben helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Partner](https://marketplace.ovhcloud.com/c/support-collaboration) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
 
 ## Voraussetzungen
 
-- Sie besitzen eine E-Mail-Adresse [Zimbra Pro](/links/web/emails-zimbra).
+- Sie haben einen E-Mail-Account auf der OVHcloud [Zimbra Pro E-Mail-Lösung](/links/web/emails-zimbra) abonniert.
 - Sie haben die Mail App auf Ihrem Mac.
-- Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
+- Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
-## In der Praxis
+## In der praktischen Anwendung
 
 ### Konto <a name="add-account"></a> hinzufügen
 
@@ -72,7 +72,7 @@ Folgen Sie den Installationsschritten, indem Sie nacheinander auf die unten steh
 >> - **Interne URL**: Geben Sie „zimbra1.mail.ovh.net“ ein.
 >> - **Externe URL**: Geben Sie „zimbra1.mail.ovh.net“ ein.
 >>
->> Um die Konfiguration abzuschließen, tippen Sie auf `Verbinden`{.action} und wählen Sie die Funktionen aus, die Sie auf Ihrem Mac erkunden möchten.
+>> Um die Konfiguration abzuschließen, tippen Sie auf `Verbinden`{.action} und wählen Sie die Funktionen aus, die Sie auf Ihrem Mac verwenden möchten.
 >>
 >> ![mail macos](images/mail-macos-add-step04.png){.thumbnail .h-500}
 >>
@@ -88,7 +88,7 @@ Folgen Sie den Installationsschritten, indem Sie nacheinander auf die unten steh
 
 Sobald die E-Mail-Adresse eingerichtet ist, können Sie sie verwenden! Sie können ab sofort Nachrichten senden und empfangen sowie Ihre Kalender und Aufgaben verwalten.
 
-OVHcloud bietet auch eine Web-Anwendung an, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können. Sie können sich mit den Zugangsdaten Ihrer E-Mail-Adresse im [OVHcloud Webmail](/links/web/email) einloggen. Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
+OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über[Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
 
 ### Wie kann ich vorhandene Einstellungen ändern?<a name="modify-settings"></a>
 
@@ -114,8 +114,8 @@ So löschen Sie einen Exchange E-Mail-Account:
 >
 > Weitere Informationen zum Einrichten einer E-Mail-Adresse in der Mail App auf macOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/102619).
 
-Für spezielle Dienstleistungen (Referenzierung, Entwicklung usw.) wenden Sie sich bitte an die [OVHcloud Partner](/links/partner).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Verwendung und Konfiguration Ihrer OVHcloud Lösungen benötigen, empfehlen wir Ihnen unsere verschiedenen [Support-Angebote](/links/support).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer [User Community](/links/community).
+Treten Sie unserer [User Community](/links/community) bei.
