@@ -44,7 +44,7 @@ Se abrirá automáticamente la pestaña `Tags`.
 
 Haga clic en el botón `Asignar un tag`{.action}.
 
-![Tags - lista vacía](images/Tag_list_empty.png){.thumbnail}
+![Tags - lista vacía](images/tag_list_empty.png){.thumbnail}
 
 En la ventana que aparece, haga clic en el campo `Clave`{.action} para abrir el menú desplegable y seleccione la clave deseada.
 

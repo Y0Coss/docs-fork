@@ -44,7 +44,7 @@ Será automaticamente orientado para o separador `Tags`.
 
 Clique no botão `Atribuir uma tag`{.action}.
 
-![Tags - lista em branco](images/Tag_list_empty.png){.thumbnail}
+![Tags - lista em branco](images/tag_list_empty.png){.thumbnail}
 
 Na janela que aparece, clique no campo `Chave`{.action} para abrir o menu pendente e selecione a chave desejada.
 
@@ -65,7 +65,7 @@ Por fim, clique no botão `Adicionar`{.action} para criar a tag e, a seguir, no 
 
 Uma mensagem de confirmação será exibida em verde, acima da lista de tags aplicadas ao servidor escolhido.
 
-![Tags - lista com exemplo](images/tag_list_with_exemplo.png){.thumbnail}
+![Tags - lista com exemplo](images/tag_list_with_example.png){.thumbnail}
 
 ### Eliminar uma tag num servidor dedicado
 

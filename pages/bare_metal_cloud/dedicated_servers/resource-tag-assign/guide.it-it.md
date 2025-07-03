@@ -44,7 +44,7 @@ Verrai automaticamente indirizzato alla scheda `Tags`.
 
 Clicca sul pulsante `Assegnare un tag`{.action}.
 
-![Tags - elenco vuoto](images/Tag_list_empty.png){.thumbnail}
+![Tags - elenco vuoto](images/tag_list_empty.png){.thumbnail}
 
 Nella nuova finestra, clicca sul campo `Chiave`{.action} per aprire il menu a tendina e seleziona la chiave desiderata.
 
