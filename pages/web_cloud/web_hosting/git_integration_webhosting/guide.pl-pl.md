@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja i korzystanie z Git na hostingu OVHcloud"
 excerpt: "Dowiedz się, jak skonfigurować i korzystać z Git na Twoim hostingu w Panelu klienta OVHcloud"
-updated: 2025-01-31
+updated: 2025-07-03
 ---
 
 ## Wprowadzenie
@@ -91,12 +91,13 @@ Teraz zdefiniuj gałąź repozytorium GitHub. Domyślną gałęzią jest `main`,
 
 Powróć do formularza stowarzyszenia Git w Panelu klienta OVHcloud i podaj nazwę nowo utworzonej gałęzi.
 
-#### Przypisz klucz SSH do GitHuba (tylko w przypadku prywatnych repozytoriów GitHub) <a name="linkSSHKey"></a>
+Jeśli wprowadzasz adres prywatnego repozytorium w serwisie GitHub (typu `git@github.com:<username>/<repository_name>.git`), pod polem `Branch` wyświetla się pole `SSH key` (klucz SSH).
 
-> [!primary]
->
-> Wygenerowanie klucza SSH jest kluczowym etapem, ponieważ ustanawia bezpieczne, zaszyfrowane połączenie między katalogiem Twojej strony WWW i repozytorium GitHub. Klucz ten gwarantuje, że transfer danych oraz modyfikacje kodu są realizowane w bezpieczny i uwierzytelniony sposób, zapobiegając nieautoryzowanemu dostępowi oraz zapewniając integralność kodu.
->
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
+
+Aby skonfigurować klucz SSH, zapoznaj się z etapem "Przypisanie klucza SSH do GitHuba (tylko w przypadku prywatnych repozytoriów GitHub)" poniżej.
+
+#### Przypisz klucz SSH do GitHuba (tylko w przypadku prywatnych repozytoriów GitHub) <a name="linkSSHKey"></a>
 
 > [!primary]
 >
@@ -104,7 +105,16 @@ Powróć do formularza stowarzyszenia Git w Panelu klienta OVHcloud i podaj nazw
 >
 > Gdy repozytorium GitHub jest publiczne, pliki mogą być odzyskiwane bez uwierzytelniania, co oznacza, że Git może klonować i aktualizować kod bez potrzeby posiadania klucza SSH. Jeśli repozytorium jest prywatne, GitHub wymaga uwierzytelnienia, aby uzyskać do niego dostęp. Klucz SSH pozwala następnie na nawiązanie bezpiecznego połączenia i gwarantuje, że tylko autoryzowani użytkownicy mogą wchodzić w interakcje z repozytorium.
 
-Skopiuj i zapisz klucz SSH na koncie GitHub. Pozwala to na nawiązanie bezpiecznego połączenia bez konieczności wprowadzania hasła do każdej operacji Git, którą będziesz musiał wykonać.
+> [!primary]
+>
+> Wygenerowanie klucza SSH jest kluczowym etapem, ponieważ ustanawia bezpieczne, zaszyfrowane połączenie między katalogiem Twojej strony WWW i repozytorium GitHub. Klucz ten gwarantuje, że transfer danych oraz modyfikacje kodu są realizowane w bezpieczny i uwierzytelniony sposób, zapobiegając nieautoryzowanemu dostępowi oraz zapewniając integralność kodu.
+>
+
+Skopiuj klucz SSH, klikając przycisk po prawej stronie.
+
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key-copy.png){.thumbnail}
+
+Zapisz klucz SSH na koncie GitHub:
 
 - Zaloguj się do swojego konta GitHub.
 - Kliknij na Twój obraz profilu w prawym górnym rogu, a następnie `Settings`{.action}.
