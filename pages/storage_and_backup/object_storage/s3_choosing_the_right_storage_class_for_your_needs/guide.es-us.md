@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Elegir la clase de almacenamiento adecuada para sus necesidades (EN)
-updated: 2025-07-02
+updated: 2025-07-03
 ---
 
 Object Storage is a family of storage solutions that offer high-performance, scalable and secure storage spaces.
