@@ -57,4 +57,4 @@ Billing is based on 'pay-as-you-go'. There is no specific fees applied on servic
 
 **Data retention after contract termination **
 
-After deleting a notebook, OVHcloud automatically synchronizes user data on an S3-compatible Object Storage. Notebooks and files remain accessible on this storage space until the user deletes it manually. Once data has been deleted from this space, it cannot be restored. It is therefore imperative to export all the necessary data before decommissioning the service.
+After deleting a notebook, OVHcloud automatically synchronizes user data on an S3-compatible Object Storage. Notebooks and files remain accessible on this storage space until the user deletes it manually. Once data has been deleted from this space, it cannot be restored.Therefore, it's imperative to export all the necessary data before decommissioning the service.
