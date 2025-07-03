@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurare un account email via ActiveSync su Mail per iPhone o iPad"
 excerpt: "Scopri come configurare il tuo indirizzo email Zimbra Pro sull’applicazione mobile Mail per iOS tramite il protocollo ActiveSync"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Gli account Zimbra Pro possono essere configurati su un iPhone o un iPad utilizz
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. Garantire il corretto funzionamento di questi servizi è responsabilità dell’utente.
 >
-> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://marketplace.ovhcloud.com/c/support-collaboration) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://marketplace.ovhcloud.com/c/support-collaboration) o il fornitore del servizio. Non saremo infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
 
 ## Prerequisiti
 
@@ -97,7 +97,7 @@ Dal tuo iPhone o iPad, accedi alle `Impostazioni` e segui le istruzioni qui sott
 
 ![mail ios](images/mail-app-ios-modify-account-01.png){.thumbnail .h-500}
 
-I parametri sono disponibili nel **Step 4** del capitolo [Aggiungi account](#add-account).
+I parametri sono disponibili nel **step 4** del capitolo "[Aggiungi account](#add-account)".
 
 ### Come eliminare un account email? <a name="delete-account"></a>
 
@@ -113,10 +113,10 @@ Dal tuo iPhone o iPad, accedi alle `Impostazioni` e segui le istruzioni qui sott
 
 > [!primary]
 >
-> Per maggiori informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su iOS, consulta il [Help Center Apple](https://support.apple.com/it-it/102619).
+> Per maggiori informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su iOS, consulta il [centro assistenza Apple](https://support.apple.com/it-it/102619).
 
-Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/link/supporto).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

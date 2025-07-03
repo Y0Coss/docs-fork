@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar a sua conta de e-mail através do AtiveSync no Outlook para iOS"
 excerpt: "Saiba como configurar o seu endereço de e-mail Zimbra Pro na aplicação móvel Outlook para iOS através do protocolo AtiveSync"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ As contas Zimbra Pro podem ser configuradas num iPhone utilizando o protocolo At
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. É da sua responsabilidade assegurar o bom funcionamento destes serviços.
 >
-> Este manual foi concebido para o ajudar a realizar tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte [Ir mais longe](#go-further) deste guia.
+> Este manual foi concebido para o ajudar a realizar tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte "[Quer saber mais?](#go-further)" deste guia.
 
 ## Requisitos
 
@@ -36,7 +36,7 @@ As contas Zimbra Pro podem ser configuradas num iPhone utilizando o protocolo At
 ### Adicionar a conta <a name="add-account"></a>
 
 - **Ao iniciar pela primeira vez a aplicação Outlook**, é apresentado um assistente de configuração:
-    - Prima 'Adicionar uma conta`{.action}.
+    - Prima `Adicionar uma conta`{.action}.
 
   ![outlook ios](images/outlook-app-ios-add-01.png){.thumbnail .h-500}
 
@@ -44,7 +44,7 @@ As contas Zimbra Pro podem ser configuradas num iPhone utilizando o protocolo At
     1. Toque no círculo que contém as iniciais da conta de e-mail visitada ou no ícone de casa (`⌂`{.action}) na parte superior esquerda do ecrã.
     2. Pressione a engrenagem (`⛭`{.action}) na parte inferior esquerda do seu ecrã.
     3. De seguida, clique em `Contas`{.action} no menu **Definições**.
-    4. Prima 'Adicionar uma conta`{.action}.
+    4. Prima `Adicionar uma conta`{.action}.
     5. Toque em `Conta de e-mail`{.action}.
 
   ![outlook ios](images/outlook-app-ios-add-02.png){.thumbnail .h-500}
@@ -52,13 +52,13 @@ As contas Zimbra Pro podem ser configuradas num iPhone utilizando o protocolo At
 Siga as etapas de instalação clicando sucessivamente nos **3** separadores abaixo:
 
 > [!tabs]
-> **1**
+> **Etapa 1**
 >>
 >> Introduza o seu endereço de e-mail e clique em `Adicionar uma conta`{.action}.
 >>
 >> ![outlook ios](images/outlook-app-ios-add-step-01.png){.thumbnail .h-500}
 >>
-> **2**
+> **Etapa 2**
 >>
 >> Dois cenários são possíveis:
 >>
@@ -74,10 +74,10 @@ Siga as etapas de instalação clicando sucessivamente nos **3** separadores aba
 >>
 >> - **Endereço de correio eletrónico**: Introduza o endereço de correio eletrónico completo.
 >> - **Palavra-passe**: Introduza a palavra-passe associada ao seu endereço de e-mail.
->> - **Description** : Insira um nome que permita identificar esta conta entre as outras contas de e-mail registadas no Outlook.
->> - **Servidor** : introduza "zimbra1.mail.ovh.net".
+>> - **Description**: Insira um nome que permita identificar esta conta entre as outras contas de e-mail registadas no Outlook.
+>> - **Servidor**: introduza "zimbra1.mail.ovh.net".
 >> - **Domínio**: Deixe este campo em branco.
->> - **Nome de utilizador** : Introduza o seu endereço de e-mail completo.
+>> - **Nome de utilizador**: Introduza o seu endereço de e-mail completo.
 >>
 >> Para finalizar a configuração, prima `Connection`{.action}.
 >>
@@ -104,7 +104,7 @@ A OVHcloud também disponibiliza uma aplicação web que pode usar para aceder a
 
 ![outlook ios](images/outlook-app-ios-modify-01.png){.thumbnail .h-500}
 
-Consulte as definições para **no passo 3** no capítulo [Adicionar conta](#add-account).
+Consulte os parâmetros para **etapa 3** no capítulo "[Adicionar conta](#add-account)".
 
 ### Como eliminar uma conta de e-mail? <a name="delete-account"></a>
 
@@ -121,10 +121,10 @@ Consulte as definições para **no passo 3** no capítulo [Adicionar conta](#add
 
 > [!primary]
 >
-> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Outlook para iOS, consulte o [Centro de Ajuda da Microsoft](https://support.microsoft.com/office/config-l-application-outlook-para-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Outlook para iOS, consulte o [Centro de Ajuda da Microsoft](https://support.microsoft.com/pt-pt/office/configurer-l-application-outlook-pour-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se deseja beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/suporte).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

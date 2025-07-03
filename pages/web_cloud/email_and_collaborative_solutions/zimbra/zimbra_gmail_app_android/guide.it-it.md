@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurare un account email con ActiveSync su Gmail per Android"
 excerpt: "Scopri come configurare il suo indirizzo email Zimbra Pro sull’applicazione mobile Gmail per Android tramite il protocollo ActiveSync"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Gli account email Zimbra Pro possono essere configurati su un cellulare Android 
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. Garantire il corretto funzionamento di questi servizi è responsabilità dell’utente.
 >
-> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://marketplace.ovhcloud.com/c/support-collaboration) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://marketplace.ovhcloud.com/c/support-collaboration) o il fornitore del servizio. Non saremo infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
 
 ## Prerequisiti
 
@@ -72,11 +72,11 @@ Segui i passaggi di installazione cliccando sulle **4** schede qui sotto:
 >>
 >> Verificate e completate le seguenti informazioni:
 >>
->> - **Email**: questo campo è precompilato con l’indirizzo email inserito precedentemente, verifica che il tuo indirizzo email sia completo e corretto.
->> - **Password**: questo campo è precompilato con la password inserita precedentemente.
+>> - **Email**: Questo campo è precompilato con l’indirizzo email inserito precedentemente, verifica che il tuo indirizzo email sia completo e corretto.
+>> - **Password**: Questo campo è precompilato con la password inserita precedentemente.
 >> - **Dominio\Nome utente**: Inserisci l’indirizzo email completo.
 >> - **Server**: Inserisci "zimbra1.mail.ovh.net".
->> - **Porta**: lasciare il valore predefinito 443.
+>> - **Porta**: Lasciare il valore predefinito 443.
 >>
 >> Per completare la configurazione, clicca su `Avanti`{.action}.
 >>
@@ -97,7 +97,7 @@ Per modificare le impostazioni di un account email già configurato, segui le is
 1. Premere `Impostazioni` nella parte inferiore della colonna sinistra.
 1. Selezionare l'account.
 1. Nella parte inferiore della pagina, clicca su `Impostazioni di ricezione`.
-1. Per verificare le impostazioni dell'account pertinente, fare riferimento al**Step 4** del capitolo [Aggiungi account](#add-account).
+1. Per verificare le impostazioni dell'account pertinente, fare riferimento al **step 4** del capitolo "[Aggiungi account](#add-account)".
 
 ![Gmail android](images/gmail-app-android-exchange-modify-account-01.png){.thumbnail .h-500}
 
@@ -117,8 +117,8 @@ Per modificare le impostazioni di un account email già configurato, segui le is
 >
 > Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Gmail su Android, consultare il [servizio di assistenza Google](https://support.google.com/mail/answer/6078445?hl=it-CA&co=GENIE.Platform%3DAndroid#zippy=%2Aggiungere-un-account).
 
-Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/link/supporto).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

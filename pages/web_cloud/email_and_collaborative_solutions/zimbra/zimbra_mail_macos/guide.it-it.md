@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurare un account email via EWS in Mail su Mac"
 excerpt: "Scopri come configurare il tuo indirizzo email Zimbra Pro sull’applicazione Mail su Mac tramite il protocollo EWS"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Gli account Zimbra Pro possono essere configurati su un macOS utilizzando il pro
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. Garantire il corretto funzionamento di questi servizi è responsabilità dell’utente.
 >
-> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://marketplace.ovhcloud.com/c/support-collaboration) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://marketplace.ovhcloud.com/c/support-collaboration) o il fornitore del servizio. Non saremo infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
 
 ## Prerequisiti
 
@@ -112,10 +112,10 @@ Per eliminare un account email Exchange, segui le istruzioni qui sotto:
 
 > [!primary]
 >
-> Per informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su macOS, consulta il [Help Center Apple](https://support.apple.com/fr-fr/102619).
+> Per informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su macOS, consulta il [centro assistenza Apple](https://support.apple.com/fr-fr/102619).
 
-Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/link/supporto).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

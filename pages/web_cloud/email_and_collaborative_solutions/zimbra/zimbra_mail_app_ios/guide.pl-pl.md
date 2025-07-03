@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Konfiguracja konta e-mail za pomocą ActiveSync w aplikacji Mail na urządzeniu iPhone lub iPad"
 excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail Zimbra Pro w aplikacji Mail na urządzeniu z systemem iOS przy użyciu protokołu ActiveSync"
-Updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,9 +23,9 @@ Konta Zimbra Pro można skonfigurować na urządzeniu iPhone lub iPad przy użyc
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Twoim obowiązkiem jest zapewnienie właściwego funkcjonowania tych usług.
 >
-> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja [Sprawdź również](#go-further) w tym przewodniku.
+> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja "[Sprawdź również](#go-further)" w tym przewodniku.
 
-## Wymagania początkowe początkowe początkowe
+## Wymagania początkowe
 
 - Posiadanie adresu e-mail [Zimbra Pro](/links/web/emails-zimbra).
 - Instalacja aplikacji Mail na iPhonie lub iPadzie.
@@ -55,9 +55,9 @@ Na telefonie iPhone lub iPad przejdź do `Ustawienia`, następnie wykonaj kolejn
 >>
 > **Etap 3**
 >>
->> - **Email** : Wpisz pełny adres e-mail.
->> - **Hasło** : Wpisz hasło powiązane z Twoim kontem e-mail.
->> - **Opis** : Wpisz nazwę pozwalającą zidentyfikować to konto wśród Twoich pozostałych kont e-mail zarejestrowanych w e-mailu.
+>> - **Email**: Wpisz pełny adres e-mail.
+>> - **Hasło**: Wpisz hasło powiązane z Twoim kontem e-mail.
+>> - **Opis**: Wpisz nazwę pozwalającą zidentyfikować to konto wśród Twoich pozostałych kont e-mail zarejestrowanych w e-mailu.
 >>
 >> ![Mail iOS](images/mail-app-ios-add-step-03.png){.thumbnail .h-500}
 >>
@@ -65,12 +65,12 @@ Na telefonie iPhone lub iPad przejdź do `Ustawienia`, następnie wykonaj kolejn
 >>
 >> W kolejnym oknie zaznacz `Ustawienia zaawansowane`{.action} i uzupełnij następujące informacje:
 >>
->> - **Email** : Wpisz pełny adres e-mail.
->> - **Serwer** : Wpisz "zimbra1.mail.ovh.net".
+>> - **Email**: Wpisz pełny adres e-mail.
+>> - **Serwer**: Wpisz "zimbra1.mail.ovh.net".
 >> - **Domena**: Pozostaw to pole puste.
->> - **Nazwa użytkownika** : Wpisz pełny adres e-mail.
->> - **Hasło** : Wpisz hasło przypisane do konta e-mail.
->> - **Opis** : Wpisz nazwę pozwalającą zidentyfikować to konto wśród Twoich pozostałych kont e-mail zarejestrowanych w e-mailu.
+>> - **Nazwa użytkownika**: Wpisz pełny adres e-mail.
+>> - **Hasło**: Wpisz hasło przypisane do konta e-mail.
+>> - **Opis**: Wpisz nazwę pozwalającą zidentyfikować to konto wśród Twoich pozostałych kont e-mail zarejestrowanych w e-mailu.
 >>
 >> Aby dokończyć konfigurację, naciśnij przycisk `Dalej`{.action} i wybierz funkcje, które chcesz sprawdzić na swoim iPhonie lub iPadzie.
 >>
@@ -97,7 +97,7 @@ Na iPhonie lub iPadzie przejdź do `Ustawienia` i postępuj zgodnie z poniższym
 
 ![mail iOS](images/mail-app-ios-modify-account-01.png){.thumbnail .h-500}
 
-Ustawienia znajdziesz w **etapie 4** rozdziału [Dodaj konto](#add-account).
+Ustawienia znajdziesz w **etap 4** rozdziału "[Dodaj konto](#add-account)".
 
 ### Jak usunąć konto e-mail? <a name="delete-account"></a>
 
@@ -109,14 +109,14 @@ Na iPhonie lub iPadzie przejdź do `Ustawienia` i postępuj zgodnie z poniższym
 
 ![mail iOS](images/mail-app-ios-modify-delete-01.png){.thumbnail .h-500}
 
-## Idź dalej <a name="go-further"></a>
+## Sprawdź również <a name="go-further"></a>
 
 > [!primary]
 >
-> Więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail w systemie iOS można znaleźć w [Centrum pomocy Apple](https://support.apple.com/pl-pl/102619).
+> Więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail w systemie iOS można znaleźć w [centrum pomocy Apple](https://support.apple.com/pl-pl/102619).
 
-W przypadku usług specjalistycznych (SEO, programowanie, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Przyłącz się do [społeczności użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

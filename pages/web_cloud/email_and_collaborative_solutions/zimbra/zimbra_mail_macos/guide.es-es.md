@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar una cuenta de correo electrónico mediante EWS en Mail en Mac"
 excerpt: "Cómo configurar una dirección de correo electrónico Zimbra Pro en la aplicación Mail en Mac mediante el protocolo EWS"
-updated: 2025-07-02
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Las cuentas Zimbra Pro pueden configurarse en un macOS utilizando el protocolo E
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Es su responsabilidad garantizar que estos servicios funcionen correctamente.
 >
-> Esta guía está diseñada para ayudarle a realizar tareas comunes. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección [Más información](#go-further) de esta guía.
+> Esta guía está diseñada para ayudarle a realizar tareas comunes. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
 
 ## Requisitos
 

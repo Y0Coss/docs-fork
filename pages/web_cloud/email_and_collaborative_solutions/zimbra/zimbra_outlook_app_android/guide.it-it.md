@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurare un account email con ActiveSync su Outlook per Android"
 excerpt: "Scopri come configurare il tuo indirizzo email Zimbra Pro sull’applicazione mobile Outlook per Android tramite il protocollo ActiveSync"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Gli account Zimbra Pro possono essere configurati su un cellulare Android utiliz
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. Garantire il corretto funzionamento di questi servizi è responsabilità dell’utente.
 >
-> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://marketplace.ovhcloud.com/c/support-collaboration) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://marketplace.ovhcloud.com/c/support-collaboration) o il fornitore del servizio. Non saremo infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
 
 ## Prerequisiti
 
@@ -42,14 +42,14 @@ Gli account Zimbra Pro possono essere configurati su un cellulare Android utiliz
 - **Al primo avvio dell’applicazione Outlook**, verrà visualizzata un’assistente di configurazione:
     - Clicca su `Aggiungi account`{.action}.
 
-![outlook android](images/outlook-app-android-add01.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-add01.png){.thumbnail .h-500}
 
 - **Se un account è già impostato sull'applicazione Outlook**:
     - Clicca sulla busta (`✉`{.action}) in alto a sinistra.
     - Clicca sul pulsante `+`{.action} nella barra verticale sinistra.
     - Clicca su `Aggiungi account`{.action}.
 
-![outlook android](images/outlook-app-android-add02.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-add02.png){.thumbnail .h-500}
 
 Segui i passaggi di installazione cliccando sulle **3** schede qui sotto:
 
@@ -77,7 +77,7 @@ Segui i passaggi di installazione cliccando sulle **3** schede qui sotto:
 >> - **Descrizione**: Inserisci un nome che permetta di identificare questo account tra quelli registrati su Outlook.
 >> - **Server**: Inserisci "zimbra1.mail.ovh.net".
 >> - **Dominio**: Lasciare vuoto questo campo.
->> - **Nome utente**: inserisci il tuo indirizzo email completo.
+>> - **Nome utente**: Inserisci il tuo indirizzo email completo.
 >>
 >> Per completare la configurazione, clicca sul pulsante " &#10003;".
 >>
@@ -116,10 +116,10 @@ Se il tuo account email è già configurato e vuoi modificarne le impostazioni, 
 
 > [!primary]
 >
-> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Outlook su Android, consultare il [Microsoft Help Center](https://support.microsoft.com/office/configuration-le-mail-%C3%A9elettronica-%C3%A0-l-aiuto-dell-applicazione-outlook-per-android-886db551-8dfa-4fd5-b835-f8e532091872).
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Outlook su Android, consultare il [centro assistenza Microsoft](https://support.microsoft.com/it-it/office/configurare-la-posta-elettronica-nell-app-outlook-per-android-886db551-8dfa-4fd5-b835-f8e532091872).
 
-Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/link/supporto).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

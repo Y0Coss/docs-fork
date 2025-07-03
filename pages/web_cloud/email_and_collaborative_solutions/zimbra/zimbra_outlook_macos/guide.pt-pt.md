@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar a sua conta de e-mail através do EWS no Outlook para Mac"
 excerpt: "Saiba como configurar o seu endereço de e-mail Zimbra Pro no Outlook para macOS através do protocolo EWS"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ As contas Zimbra Pro podem ser configuradas num Mac utilizando o protocolo EWS (
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. É da sua responsabilidade assegurar o bom funcionamento destes serviços.
 >
-> Este manual foi concebido para o ajudar a realizar tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte [Ir mais longe](#go-further) deste guia.
+> Este manual foi concebido para o ajudar a realizar tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte "[Quer saber mais?](#go-further)" deste guia.
 
 ## Requisitos
 
@@ -35,29 +35,29 @@ As contas Zimbra Pro podem ser configuradas num Mac utilizando o protocolo EWS (
 
 ### Adicionar a conta <a name="add-account"></a>
 
-- **Quando a aplicação Outlook** for iniciada pela primeira vez: é apresentado um assistente de configuração que lhe irá solicitar que introduza o primeiro endereço de correio eletrónico que pretende adicionar.
+- **Quando a aplicação Outlook for iniciada pela primeira vez**: é apresentado um assistente de configuração que lhe irá solicitar que introduza o primeiro endereço de correio eletrónico que pretende adicionar.
 
 - **Se uma conta já estiver parametrizada na aplicação Outlook**:
     1. Clique em `Ferramentas`{.action} na barra de menu no topo do seu ecrã.
     2. Clique em `Contas`{.action}.
-    3. Na janela "Contas" que se abrir, clique em `+`{.action} no canto inferior esquerdo e, a seguir, clique em 'Nova conta`{.action}.
+    3. Na janela "Contas" que se abrir, clique em `+`{.action} no canto inferior esquerdo e, a seguir, clique em `Nova conta`{.action}.
 
 ![mail macOS](images/outlook-macos-add-step00.png){.thumbnail .h-500}
 
 Siga as etapas de instalação clicando sucessivamente nos **3** separadores abaixo:
 
 > [!tabs]
-> **1**
+> **Etapa 1**
 >>
->> Introduza o seu endereço de e-mail abaixo "Endereço de e-mail" e clique em ‘Continuar`{.action}.
+>> Introduza o seu endereço de e-mail abaixo "Endereço de e-mail" e clique em `Continuar`{.action}.
 >>
 >> ![mail macos](images/outlook-macos-add-step01.png){.thumbnail .h-500}
 >>
-> **2**
+> **Etapa 2**
 >>
 >> Dois cenários são possíveis:
 >>
->> - **Se a janela "IMAP/POP" aparecer** : clique em `Não é uma conta POP/IMAP`{.action} e escolha `Exchange`{.action} a partir da janela "Escolher o fornecedor".
+>> - **Se a janela "IMAP/POP" aparecer**: clique em `Não é uma conta POP/IMAP`{.action} e escolha `Exchange`{.action} a partir da janela "Escolher o fornecedor".
 >> - **Se clicar diretamente "Escolher o fornecedor"**, escolha o nome do servidor `Exchange`{.action}.
 >>
 >> ![mail macos](images/outlook-macos-add-step02.png){.thumbnail .h-500}
@@ -66,9 +66,9 @@ Siga as etapas de instalação clicando sucessivamente nos **3** separadores aba
 >>
 >> Verifique e complete as seguintes informações:
 >>
->> - **Método** : Escolha `Nome de utilizador e palavra-passe`.
+>> - **Método**: Escolha `Nome de utilizador e palavra-passe`.
 >> - **Endereço de correio eletrónico**: Introduza o seu endereço de correio eletrónico completo.
->> - **DOMÍNIO\Nome de utilizador ou endereço de correio eletrónico** : Introduza o seu endereço de correio eletrónico completo.
+>> - **DOMÍNIO\Nome de utilizador ou endereço de correio eletrónico**: Introduza o seu endereço de correio eletrónico completo.
 >> - **Palavra-passe**: Introduza a palavra-passe associada ao seu endereço de e-mail.
 >> - **Servidor**: Introduza "zimbra1.mail.ovh.net".
 >>
@@ -98,7 +98,7 @@ Para alterar os parâmetros de uma conta de e-mail já configurada, siga as inst
 
 ![outlook macos](images/outlook-macos-modify-01.png){.thumbnail .h-500}
 
-Consulte as definições para no **passo 3** no capítulo [Adicionar conta](#add-account).
+Consulte os parâmetros para **etapa 3** no capítulo "[Adicionar conta](#add-account)".
 
 ### Como eliminar uma conta de e-mail? <a name="delete-account"></a>
 
@@ -117,6 +117,6 @@ Consulte as definições para no **passo 3** no capítulo [Adicionar conta](#add
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se deseja beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/suporte).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

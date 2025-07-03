@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurare un account email con ActiveSync su Outlook per iOS"
 excerpt: "Scopri come configurare il tuo indirizzo email Zimbra Pro sull’applicazione mobile Outlook per iOS tramite il protocollo ActiveSync"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Gli account Zimbra Pro possono essere configurati su un iPhone utilizzando il pr
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. Garantire il corretto funzionamento di questi servizi è responsabilità dell’utente.
 >
-> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://marketplace.ovhcloud.com/c/support-collaboration) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida è progettata per aiutarvi a svolgere le attività più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [partner specializzato](https://marketplace.ovhcloud.com/c/support-collaboration) o il fornitore del servizio. Non saremo infatti in grado di fornirti assistenza. Per maggiori informazioni, consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
 
 ## Prerequisiti
 
@@ -104,7 +104,7 @@ OVHcloud propone anche un’applicazione Web che permette di accedere al tuo ind
 
 ![outlook-ios](images/outlook-app-ios-modify-01.png){.thumbnail .h-500}
 
-I parametri sono disponibili al **passaggio 3** del capitolo [Aggiungi account](#add-account).
+I parametri sono disponibili al **step 3** del capitolo "[Aggiungi account](#add-account)".
 
 ### Come eliminare un account email? <a name="delete-account"></a>
 
@@ -121,10 +121,10 @@ I parametri sono disponibili al **passaggio 3** del capitolo [Aggiungi account](
 
 > [!primary]
 >
-> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Outlook su iOS, consultare il [Microsoft Help Center](https://support.microsoft.com/office/configuration-l-application-outlook-pour-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Outlook su iOS, consultare il [centro assistenza Microsoft](https://support.microsoft.com/it-it/office/configurer-l-application-outlook-pour-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
 
-Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/link/supporto).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

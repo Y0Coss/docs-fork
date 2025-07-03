@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Konfiguracja konta e-mail za pomocą ActiveSync w programie Outlook na Androida"
 excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail Zimbra Pro w aplikacji mobilnej Outlook dla Androida przy użyciu protokołu ActiveSync"
-Updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,9 +23,9 @@ Konta Zimbra Pro można skonfigurować na urządzeniu z systemem Android przy u�
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Twoim obowiązkiem jest zapewnienie właściwego funkcjonowania tych usług.
 >
-> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja [Sprawdź również](#go-further) w tym przewodniku.
+> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja "[Sprawdź również](#go-further)" w tym przewodniku.
 
-## Wymagania początkowe początkowe początkowe
+## Wymagania początkowe
 
 - Posiadanie adresu e-mail [Zimbra Pro](/links/web/emails-zimbra).
 - Posiadanie [aplikacji Outlook](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=pl) na urządzeniu z systemem Android.
@@ -42,14 +42,14 @@ Konta Zimbra Pro można skonfigurować na urządzeniu z systemem Android przy u�
 - **Podczas pierwszego uruchomienia aplikacji Outlook** pojawi się asystent konfiguracji:
     - Kliknij `Dodaj konto`{.action}.
 
-![Outlook Android](images/outlook-app-android-add01.png){.thumbnail .h-500}
+  ![Outlook Android](images/outlook-app-android-add01.png){.thumbnail .h-500}
 
 - **Jeśli konto jest już skonfigurowane w aplikacji Outlook**:
     - Naciśnij kopertę (`✉` {.action}) w lewym górnym rogu ekranu.
     - Następnie naciśnij przycisk `+`{.action} w lewym pionowym pasku.
     - Kliknij `Dodaj konto`{.action}.
 
-![Outlook Android](images/outlook-app-android-add02.png){.thumbnail .h-500}
+  ![Outlook Android](images/outlook-app-android-add02.png){.thumbnail .h-500}
 
 Postępuj zgodnie z kolejnymi instrukcjami zawartymi w **3** zakładkach:
 
@@ -112,14 +112,14 @@ Jeśli Twoje konto e-mail jest już skonfigurowane i chcesz zmienić jego ustawi
 >
 > Po usunięciu konta e-mail wykonaj kroki instalacji wskazane w "[Dodaj konto](#add-account)" w tym przewodniku.
 
-## Idź dalej <a name="go-further"></a>
+## Sprawdź również <a name="go-further"></a>
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniu z systemem Android, zobacz [Centrum pomocy Microsoft](https://support.microsoft.com/office/configuration-le-mail-mail-%C3%A9electronic-%C3%A0-l-pomoc-aplikacji-outlook-dla-android-886db551-8dfa-4fd5-b835-f8e532091872).
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniu z systemem Android, zobacz [centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/konfigurowanie-poczty-e-mail-w-aplikacji-outlook-dla-systemu-android-886db551-8dfa-4fd5-b835-f8e532091872).
 
-W przypadku usług specjalistycznych (SEO, programowanie, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Przyłącz się do [społeczności użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

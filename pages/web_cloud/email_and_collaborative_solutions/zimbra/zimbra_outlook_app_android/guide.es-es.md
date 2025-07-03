@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar una cuenta de correo electrónico a través de ActiveSync en Outlook para Android"
 excerpt: "Cómo configurar una cuenta de correo electrónico de Zimbra Pro en la aplicación móvil de Outlook para Android a través del protocolo ActiveSync"
-updated: 2025-07-01
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Las cuentas Zimbra Pro pueden configurarse en un móvil Android utilizando el pr
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Es su responsabilidad garantizar que estos servicios funcionen correctamente.
 >
-> Esta guía está diseñada para ayudarle a realizar tareas comunes. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección [Más información](#go-further) de esta guía.
+> Esta guía está diseñada para ayudarle a realizar tareas comunes. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
 
 ## Requisitos
 
@@ -42,14 +42,14 @@ Las cuentas Zimbra Pro pueden configurarse en un móvil Android utilizando el pr
 - **La primera vez que inicie la aplicación Outlook**, aparecerá un asistente de configuración:
     - Pulse `Añadir cuenta`{.action}.
 
-![outlook android](images/outlook-app-android-add01.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-add01.png){.thumbnail .h-500}
 
 - **Si ya tiene una cuenta configurada en la aplicación Outlook**:
     - Pulse el sobre (`✉`{.action}) en la parte superior izquierda de la pantalla.
     - A continuación, pulse el botón `+`{.action} en la barra vertical izquierda.
     - Pulse `Añadir cuenta`{.action}.
 
-![outlook android](images/outlook-app-android-add02.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-add02.png){.thumbnail .h-500}
 
 Siga los pasos de instalación haciendo clic en las siguientes **3** pestañas:
 
@@ -116,7 +116,7 @@ Si su cuenta de correo ya está configurada y desea modificar su configuración,
 
 > [!primary]
 >
-> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en Android, consulte el [centro de ayuda de Microsoft](https://support.microsoft.com/office/configure-el-correo-%C3%A9e-e-%C3%A0-l-aide-de-l-application-outlook-para-android-886db551-8dfa-4fd5-b835-f8e532091872).
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en Android, consulte el [centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/configurar-el-correo-electr%C3%B3nico-en-la-aplicaci%C3%B3n-de-outlook-para-android-886db551-8dfa-4fd5-b835-f8e532091872).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

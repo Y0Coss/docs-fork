@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Konfiguracja konta e-mail za pomocą ActiveSync w programie Outlook na urządzeniu z systemem iOS"
 excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail Zimbra Pro w aplikacji mobilnej Outlook dla systemu iOS przy użyciu protokołu ActiveSync"
-Updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,9 +23,9 @@ Konta Zimbra Pro można skonfigurować na urządzeniu iPhone za pomocą protoko�
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Twoim obowiązkiem jest zapewnienie właściwego funkcjonowania tych usług.
 >
-> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja [Sprawdź również](#go-further) w tym przewodniku.
+> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja "[Sprawdź również](#go-further)" w tym przewodniku.
 
-## Wymagania początkowe początkowe początkowe początkowe początkowe początkowe
+## Wymagania początkowe
 
 - Posiadanie adresu e-mail [Zimbra Pro](/links/web/emails-zimbra).
 - Posiadanie aplikacji [Outlook dla systemu iOS](https://apps.apple.com/app/microsoft-outlook/id951937596).
@@ -72,12 +72,12 @@ Postępuj zgodnie z kolejnymi instrukcjami zawartymi w **3** zakładkach:
 >>
 >> W kolejnym oknie zaznacz `Ustawienia zaawansowane`{.action} i uzupełnij następujące informacje:
 >>
->> - **Adres e-mail** : Wpisz pełny adres e-mail.
->> - **Hasło** : Wpisz hasło powiązane z Twoim kontem e-mail.
+>> - **Adres e-mail**: Wpisz pełny adres e-mail.
+>> - **Hasło**: Wpisz hasło powiązane z Twoim kontem e-mail.
 >> - **Opis**: Wprowadź nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont e-mail zarejestrowanych w programie Outlook.
->> - **Serwer** : wprowadź "zimbra1.mail.ovh.net".
+>> - **Serwer**: wprowadź "zimbra1.mail.ovh.net".
 >> - **Domena**: Pozostaw to pole puste.
->> - **Nazwa użytkownika** : Wpisz pełny adres e-mail.
+>> - **Nazwa użytkownika**: Wpisz pełny adres e-mail.
 >>
 >> Aby dokończyć konfigurację, naciśnij przycisk `Połącz`{.action}.
 >>
@@ -104,7 +104,7 @@ OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie 
 
 ![Outlook iOS](images/outlook-app-ios-modify-01.png){.thumbnail .h-500}
 
-Ustawienia znajdziesz w **etapie 3** rozdziału [Dodaj konto](#add-account).
+Ustawienia znajdziesz w **etap 3** rozdziału "[Dodaj konto](#add-account)".
 
 ### Jak usunąć konto e-mail? <a name="delete-account"></a>
 
@@ -117,14 +117,14 @@ Ustawienia znajdziesz w **etapie 3** rozdziału [Dodaj konto](#add-account).
 ![Outlook iOS](images/outlook-app-ios-delete-01.png){.thumbnail .h-500}
 
 
-## Idź dalej <a name="go-further"></a>
+## Sprawdź również <a name="go-further"></a>
 
 > [!primary]
 >
-> Więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniach z systemem iOS można znaleźć w [Centrum pomocy Microsoft](https://support.microsoft.com/office/configurer-l-application-outlook-pour-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
+> Więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniach z systemem iOS można znaleźć w [centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/configurer-l-application-outlook-pour-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
 
-W przypadku usług specjalistycznych (SEO, programowanie, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Przyłącz się do [społeczności użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

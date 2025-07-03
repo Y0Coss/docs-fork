@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar uma conta de e-mail via AtiveSync no Mail para iPhone ou iPad"
 excerpt: "Saiba como configurar o seu endereço de e-mail Zimbra Pro na aplicação móvel Mail para iOS através do protocolo AtiveSync"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ As contas Zimbra Pro podem ser configuradas num iPhone ou num iPad utilizando o 
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. É da sua responsabilidade assegurar o bom funcionamento destes serviços.
 >
-> Este manual foi concebido para o ajudar a realizar tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte [Ir mais longe](#go-further) deste guia.
+> Este manual foi concebido para o ajudar a realizar tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte "[Quer saber mais?](#go-further)" deste guia.
 
 ## Requisitos
 
@@ -35,10 +35,10 @@ As contas Zimbra Pro podem ser configuradas num iPhone ou num iPad utilizando o 
 
 ### Adicionar a conta <a name="add-account"></a>
 
-A partir do seu iPhone ou do seu iPad, aceda aos `Settings` e siga as etapas de instalação ao clicar sucessivamente nos **4** separadores abaixo :
+A partir do seu iPhone ou do seu iPad, aceda aos `Definições` e siga as etapas de instalação ao clicar sucessivamente nos **4** separadores abaixo:
 
 > [!tabs]
-> **1**
+> **Etapa 1**
 >>
 >> 1. Introduza "adicionar uma conta" na barra de procura.
 >> 2. Toque em `Adicionar uma conta`{.action}.
@@ -46,7 +46,7 @@ A partir do seu iPhone ou do seu iPad, aceda aos `Settings` e siga as etapas de 
 >>
 >> ![mail iOS](images/mail-app-ios-add-step-01.png){.thumbnail .h-500}
 >>
-> **2**
+> **Etapa 2**
 >>
 >> 1. Introduza o seu endereço de e-mail e uma descrição e prima `Seguinte`{.action}.
 >> 2. Na janela que surgir, escolha `Configurar manualmente`{.action}.
@@ -97,7 +97,7 @@ A partir do seu iPhone ou do seu iPad, aceda às "Definições" e siga as instru
 
 ![mail iOS](images/mail-app-ios-modify-account-01.png){.thumbnail .h-500}
 
-Consulte as definições no **passo 4** do capítulo [Adicionar conta](#add-account).
+Consulte os parâmetros para **etapa 4** do capítulo "[Adicionar a conta](#add-account)".
 
 ### Como eliminar uma conta de e-mail? <a name="delete-account"></a>
 
@@ -117,6 +117,6 @@ A partir do seu iPhone ou do seu iPad, aceda às `Definições` e siga as instru
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se deseja beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/suporte).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

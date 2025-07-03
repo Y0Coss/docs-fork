@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurer son compte e-mail via EWS sur Outlook pour Mac"
 excerpt: "Découvrez comment configurer votre adresse e-mail Zimbra Pro sur Outlook pour macOS via le protocole EWS"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Les comptes Zimbra Pro peuvent être configurés sur un Mac en utilisant le prot
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il est de votre responsabilité d'assurer le bon fonctionnement de ces services.
 >
-> Ce guide est conçu pour vous aider à accomplir des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Pour plus d'informations, consultez la section [Aller plus loin](#go-further) de ce guide.
+> Ce guide est conçu pour vous aider à accomplir des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Pour plus d'informations, consultez la section « [Aller plus loin](#go-further) » de ce guide .
 
 ## Prérequis
 
@@ -58,7 +58,7 @@ Suivez les étapes d'installation en cliquant successivement sur les **3** ongle
 >> Deux scénarios sont possibles :
 >>
 >> - **Si la fenêtre « IMAP/POP » apparaît** : cliquez sur `Ce n'est pas un compte POP/IMAP`{.action}, puis choisissez `Exchange`{.action} depuis la fenêtre « Choisir le fourniseur ».
->> - **Si vous tombez directement sur « Choisir le fourniseur »**, choisissez `Exchange`{.action}.
+>> - **Si vous arrivez directement sur « Choisir le fourniseur »**, choisissez `Exchange`{.action}.
 >>
 >> ![mail macos](images/outlook-macos-add-step02.png){.thumbnail .h-500}
 >>

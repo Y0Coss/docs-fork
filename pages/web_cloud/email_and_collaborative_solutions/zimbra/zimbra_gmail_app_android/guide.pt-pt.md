@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar uma conta de e-mail via AtiveSync no Gmail para Android"
 excerpt: "Saiba como configurar um endereço de e-mail Zimbra Pro no aplicativo móvel Gmail para Android através do protocolo AtiveSync"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ As contas de e-mail Zimbra Pro podem ser configuradas em dispositivos móveis An
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. É da sua responsabilidade assegurar o bom funcionamento destes serviços.
 >
-> Este manual foi concebido para o ajudar a realizar tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte [Vá mais longe](#go-further) deste guia.
+> Este manual foi concebido para o ajudar a realizar tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte "[Quer saber mais?](#go-further)" deste guia.
 
 ## Requisitos
 
@@ -50,13 +50,13 @@ As contas de e-mail Zimbra Pro podem ser configuradas em dispositivos móveis An
 Siga as etapas de instalação clicando sucessivamente nos **4** separadores abaixo:
 
 > [!tabs]
-> **1**
+> **Etapa 1**
 >>
 >> Selecione `Exchange and Office 365`{.action} como tipo de conta.
 >>
 >> ![Gmail android](images/gmail-app-android-exchange-add-step01.png){.thumbnail .h-500}
 >>
-> **2**
+> **Etapa 2**
 >>
 >> Introduza o seu endereço de e-mail e prima `Seguinte`{.action}.
 >>
@@ -72,11 +72,11 @@ Siga as etapas de instalação clicando sucessivamente nos **4** separadores aba
 >>
 >> Verifique e complete as seguintes informações:
 >>
->> - **Email** : Este campo é pré-preenchido com o endereço de e-mail indicado anteriormente, verifique se o seu endereço de e-mail está completo e correto.
->> - **Palavra-passe** : Este campo é pré-preenchido com a palavra-passe que introduziu anteriormente.
->> - **Domínio\Nome de utilizador** : Introduza o seu endereço de e-mail completo.
+>> - **Email**: Este campo é pré-preenchido com o endereço de e-mail indicado anteriormente, verifique se o seu endereço de e-mail está completo e correto.
+>> - **Palavra-passe**: Este campo é pré-preenchido com a palavra-passe que introduziu anteriormente.
+>> - **Domínio\Nome de utilizador**: Introduza o seu endereço de e-mail completo.
 >> - **Servidor**: Introduza "zimbra1.mail.ovh.net".
->> - **Port** : deixe o valor "443" indicado por predefinição.
+>> - **Port**: Deixe o valor "443" indicado por predefinição.
 >>
 >> Para finalizar a configuração, prima `Seguinte`{.action}.
 >>
@@ -97,7 +97,7 @@ Para alterar os parâmetros de uma conta de e-mail já configurada, siga as inst
 1. Em seguida, pressione `Configurações` na parte inferior da coluna da esquerda.
 1. Selecione a conta correspondente.
 1. Na parte inferior da página exibida, pressione a tecla `Configurações de receção`.
-1. Consulte o **Passo 4** no capítulo [Adicionar conta](#add-account) para verificar as definições da conta em questão.
+1. Consulte a **etapa 4** no capítulo "[Adicionar a conta](#add-account)" para verificar as definições da conta em questão.
 
 ![Gmail android](images/gmail-app-android-exchange-modify-account-01.png){.thumbnail .h-500}
 
@@ -119,6 +119,6 @@ Para alterar os parâmetros de uma conta de e-mail já configurada, siga as inst
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se deseja beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/suporte).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

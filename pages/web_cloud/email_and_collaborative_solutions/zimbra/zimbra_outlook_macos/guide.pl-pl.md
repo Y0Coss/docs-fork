@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Konfiguracja konta e-mail przez EWS w Outlook na urządzeniu Mac"
 excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail Zimbra Pro w programie Outlook na urządzeniach z systemem macOS przy użyciu protokołu EWS"
-Updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,9 +23,9 @@ Konta Zimbra Pro można skonfigurować na komputerze Mac za pomocą protokołu E
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Twoim obowiązkiem jest zapewnienie właściwego funkcjonowania tych usług.
 >
-> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym] (https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja [Sprawdź również](#go-further) w tym przewodniku.
+> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja "[Sprawdź również](#go-further)" w tym przewodniku.
 
-## Wymagania początkowe początkowe początkowe
+## Wymagania początkowe
 
 - Posiadanie adresu e-mail [Zimbra Pro](/links/web/emails-zimbra).
 - Posiadanie aplikacji [Outlook na urządzeniach macOS](https://apps.apple.com/pl/app/microsoft-outlook/id985367838?mt=12).
@@ -35,7 +35,7 @@ Konta Zimbra Pro można skonfigurować na komputerze Mac za pomocą protokołu E
 
 ### Dodaj konto <a name="add-account"></a>
 
-- **Podczas pierwszego uruchomienia aplikacji Outlook** : bezpośrednio wyświetli się asystent konfiguracji i poprosi o wpisanie pierwszego adresu e-mail, który chcesz dodać.
+- **Podczas pierwszego uruchomienia aplikacji Outlook**: bezpośrednio wyświetli się asystent konfiguracji i poprosi o wpisanie pierwszego adresu e-mail, który chcesz dodać.
 
 - **Jeśli konto jest już skonfigurowane w aplikacji Outlook**:
     1. Kliknij `Narzędzia`{.action} na pasku menu u góry ekranu.
@@ -66,11 +66,11 @@ Postępuj zgodnie z kolejnymi instrukcjami zawartymi w **3** zakładkach:
 >>
 >> Sprawdź i uzupełnij następujące informacje:
 >>
->> - **Metoda** : Wybierz opcję `Nazwa użytkownika i hasło`.
->> - **Adres e-mail** : Wpisz pełny adres e-mail.
->> - **DOMENA\Nazwa użytkownika lub adres e-mail** : Wpisz pełny adres e-mail.
->> - **Hasło** : Wpisz hasło powiązane z Twoim kontem e-mail.
->> - **Serwer** : Wpisz "zimbra1.mail.ovh.net".
+>> - **Metoda**: Wybierz opcję `Nazwa użytkownika i hasło`.
+>> - **Adres e-mail**: Wpisz pełny adres e-mail.
+>> - **DOMENA\Nazwa użytkownika lub adres e-mail**: Wpisz pełny adres e-mail.
+>> - **Hasło**: Wpisz hasło powiązane z Twoim kontem e-mail.
+>> - **Serwer**: Wpisz "zimbra1.mail.ovh.net".
 >>
 >> Aby dokończyć konfigurację, naciśnij przycisk `Dodaj konto`{.action} i wybierz funkcje, które chcesz sprawdzić na urządzeniu Mac.
 >>
@@ -98,7 +98,7 @@ Aby zmienić parametry skonfigurowanego konta e-mail, postępuj zgodnie z poniż
 
 ![Outlook macos](images/outlook-macos-modify-01.png){.thumbnail .h-500}
 
-Ustawienia znajdziesz w **etapie 3** rozdziału [Dodaj konto](#add-account).
+Ustawienia znajdziesz w **etap 3** rozdziału "[Dodaj konto](#add-account)".
 
 ### Jak usunąć konto e-mail? <a name="delete-account"></a>
 
@@ -109,14 +109,14 @@ Ustawienia znajdziesz w **etapie 3** rozdziału [Dodaj konto](#add-account).
 
 ![Outlook macos](images/outlook-macos-delete-01.png){.thumbnail .h-500}
 
-## Idź dalej <a name="go-further"></a>
+## Sprawdź również <a name="go-further"></a>
 
 > [!primary]
 >
-> Więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail na macOS znajduje się w [Centrum pomocy Apple](https://support.apple.com/pl-pl/102619).
+> Więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail na macOS znajduje się w [centrum pomocy Apple](https://support.apple.com/pl-pl/102619).
 
-W przypadku usług specjalistycznych (SEO, programowanie, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Przyłącz się do [społeczności użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

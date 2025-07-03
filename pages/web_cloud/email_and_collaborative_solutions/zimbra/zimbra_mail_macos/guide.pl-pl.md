@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Konfiguracja konta e-mail poprzez EWS w Mail na Mac"
 excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail Zimbra Pro w aplikacji Mail na urządzeniu Mac przy użyciu protokołu EWS"
-Updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,9 +23,9 @@ Konta Zimbra Pro można skonfigurować w systemie macOS przy użyciu protokołu 
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Twoim obowiązkiem jest zapewnienie właściwego funkcjonowania tych usług.
 >
-> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym] (https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja [Sprawdź również](#go-further) w tym przewodniku.
+> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja "[Sprawdź również](#go-further)" w tym przewodniku.
 
-## Wymagania początkowe początkowe początkowe
+## Wymagania początkowe
 
 - Posiadanie adresu e-mail [Zimbra Pro](/links/web/emails-zimbra).
 - Instalacja aplikacji Mail na komputerze Mac.
@@ -38,9 +38,9 @@ Konta Zimbra Pro można skonfigurować w systemie macOS przy użyciu protokołu 
 - **Podczas pierwszego uruchomienia aplikacji Mail** bezpośrednio wyświetli się asystent konfiguracji i poprosi o wybranie typu konta.
 
 - **Jeśli konto jest już skonfigurowane w aplikacji Mail**:
-- Kliknij na `Mail`{.action} na pasku menu u góry ekranu.
-- Kliknij na `Konta`{.action}.
-- W oknie "Konta internetowe", które się wyświetli kliknij `Dodaj konto`{.action}
+    - Kliknij na `Mail`{.action} na pasku menu u góry ekranu.
+    - Kliknij na `Konta`{.action}.
+    - W oknie "Konta internetowe", które się wyświetli kliknij `Dodaj konto`{.action}
 
 ![mail macOS](images/mail-macos-add-step00.png){.thumbnail .h-500}
 
@@ -66,11 +66,11 @@ Postępuj zgodnie z kolejnymi instrukcjami zawartymi w **3** zakładkach:
 >>
 >> Sprawdź i uzupełnij następujące informacje:
 >>
->> - **Adres e-mail** : Wpisz pełny adres e-mail.
->> - **Nazwa użytkownika** : Wpisz pełny adres e-mail.
->> - **Hasło** : Wprowadź hasło powiązane z Twoim kontem e-mail.
->> - **Wewnętrzny adres URL** : Wpisz "zimbra1.mail.ovh.net".
->> - **Zewnętrzny adres URL** : Wpisz "zimbra1.mail.ovh.net".
+>> - **Adres e-mail**: Wpisz pełny adres e-mail.
+>> - **Nazwa użytkownika**: Wpisz pełny adres e-mail.
+>> - **Hasło**: Wprowadź hasło powiązane z Twoim kontem e-mail.
+>> - **Wewnętrzny adres URL**: Wpisz "zimbra1.mail.ovh.net".
+>> - **Zewnętrzny adres URL**: Wpisz "zimbra1.mail.ovh.net".
 >>
 >> Aby dokończyć konfigurację, naciśnij przycisk `Zaloguj się`{.action} i wybierz funkcje, które chcesz sprawdzić na komputerze Mac.
 >>
@@ -108,14 +108,14 @@ Aby usunąć konto e-mail Exchange, postępuj zgodnie z poniższymi instrukcjami
 >
 > Po usunięciu konta e-mail wykonaj kroki instalacji wskazane w "[Dodaj konto](#add-account)" w tym przewodniku.
 
-## Idź dalej <a name="go-further"></a>
+## Sprawdź również <a name="go-further"></a>
 
 > [!primary]
 >
-> Więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail na macOS znajduje się w [Centrum pomocy Apple](https://support.apple.com/pl-pl/102619).
+> Więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail na macOS znajduje się w [centrum pomocy Apple](https://support.apple.com/pl-pl/102619).
 
-W przypadku usług specjalistycznych (SEO, programowanie, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Przyłącz się do [społeczności użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

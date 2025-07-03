@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar una cuenta de correo electrónico mediante ActiveSync en Outlook para Windows"
 excerpt: "Cómo configurar una cuenta de correo electrónico de Zimbra Pro en Outlook para Windows mediante el protocolo ActiveSync"
-updated: 2025-07-01
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Las cuentas Zimbra Pro pueden configurarse en Windows utilizando el protocolo Ac
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Es su responsabilidad garantizar que estos servicios funcionen correctamente.
 >
-> Esta guía está diseñada para ayudarle a realizar tareas comunes. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección [Más información](#go-further) de esta guía.
+> Esta guía está diseñada para ayudarle a realizar tareas comunes. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
 
 ## Requisitos
 
@@ -154,7 +154,7 @@ Para eliminar su cuenta de correo, siga estas instrucciones:
 
 > [!primary]
 >
-> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en Windows, consulte el [Centro de ayuda de Microsoft](https://support.microsoft.com/office/add-an-email-account-to-outlook-for-windows-6e27792a-9267-4aa4-8bb6-c84ef146101b?ocmsassetID=HA102823161&CorrelationId=778d1d8d-9ac2-444496 24-1268559fa794#picktab=classic_outlook).
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en Windows, consulte el [centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/agregar-una-cuenta-de-correo-electr%C3%B3nico-a-outlook-para-windows-6e27792a-9267-4aa4-8bb6-c84ef146101b?ocmsassetID=&CorrelationId=778d1d8d-9ac2-4449b-96292924_4b).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Konfiguracja konta e-mail za pomocą ActiveSync na koncie Gmail na urządzeniu z systemem Android"
 excerpt: "Dowiedz się, jak skonfigurować konto e-mail Zimbra Pro w aplikacji mobilnej Gmail na urządzeniu z systemem Android przy użyciu protokołu ActiveSync"
-Updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,9 +23,9 @@ Konta e-mail Zimbra Pro można skonfigurować na urządzeniu z systemem Android 
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Twoim obowiązkiem jest zapewnienie właściwego funkcjonowania tych usług.
 >
-> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym] (https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) niniejszego przewodnika.
+> Ten przewodnik ma na celu pomóc w wykonywaniu typowych zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [partnerem wyspecjalizowanym](https://marketplace.ovhcloud.com/c/support-collaboration) i/lub skontaktowanie się z wydawcą usługi. Niestety firma OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji zawiera sekcja "[Sprawdź również](#go-further)" w tym przewodniku.
 
-## Wymagania początkowe początkowe początkowe początkowe początkowe początkowe początkowe początkowe
+## Wymagania początkowe
 
 - Posiadanie adresu e-mail [Zimbra Pro](/links/web/emails-zimbra).
 - Instalacja aplikacji Gmail na urządzeniu mobilnym z systemem Android.
@@ -40,10 +40,10 @@ Konta e-mail Zimbra Pro można skonfigurować na urządzeniu z systemem Android 
 ### Dodaj konto <a name="add-account"></a>
 
 - **Podczas pierwszego uruchomienia aplikacji Gmail** pojawi się asystent konfiguracji:
-- Kliknij `Dodaj inny adres e-mail`.
+    - Kliknij `Dodaj inny adres e-mail`.
 - **Jeśli konto jest już skonfigurowane w aplikacji Gmail**:
-- Stuknij zdjęcie profilowe w prawym górnym rogu ekranu.
-- Następnie kliknij przycisk '+ Dodaj inne konto`{.action}.
+    - Stuknij zdjęcie profilowe w prawym górnym rogu ekranu.
+    - Następnie kliknij przycisk '+ Dodaj inne konto`{.action}.
 
 ![Gmail android](images/gmail-app-android-exchange-add01.png){.thumbnail .h-500}
 
@@ -64,7 +64,7 @@ Postępuj zgodnie z kolejnymi instrukcjami zawartymi w **4** zakładkach:
 >>
 > **Etap 3**
 >>
->> Wpisz hasło przypisane do Twojego konta e-mail i kliknij przycisk Dalej`{.action}.
+>> Wpisz hasło przypisane do Twojego konta e-mail i kliknij `przycisk Dalej`{.action}.
 >>
 >> ![Gmail android](images/gmail-app-android-exchange-add-step03.png){.thumbnail .h-500}
 >>
@@ -72,10 +72,10 @@ Postępuj zgodnie z kolejnymi instrukcjami zawartymi w **4** zakładkach:
 >>
 >> Sprawdź i uzupełnij następujące informacje:
 >>
->> - **Email** : To pole jest wstępnie wypełnione adresem e-mail podanym powyżej. Sprawdź, czy Twój adres jest kompletny i poprawny.
->> - **Hasło** : To pole jest wstępnie wypełnione hasłem podanym powyżej.
->> - **Domena\Nazwa użytkownika** : Wpisz pełny adres e-mail.
->> - **Serwer** : Wpisz "zimbra1.mail.ovh.net".
+>> - **Email**: To pole jest wstępnie wypełnione adresem e-mail podanym powyżej. Sprawdź, czy Twój adres jest kompletny i poprawny.
+>> - **Hasło**: To pole jest wstępnie wypełnione hasłem podanym powyżej.
+>> - **Domena\Nazwa użytkownika**: Wpisz pełny adres e-mail.
+>> - **Serwer**: Wpisz "zimbra1.mail.ovh.net".
 >> - **Port**: Pozostaw domyślną wartość "443".
 >>
 >> Aby zakończyć konfigurację, naciśnij przycisk `Dalej`{.action}.
@@ -97,7 +97,7 @@ Aby zmienić parametry skonfigurowanego konta e-mail, postępuj zgodnie z poniż
 1. Następnie kliknij `Parametry` w dolnej części lewej kolumny.
 1. Wybierz odpowiednie konto.
 1. W dolnej części strony, która się wyświetli, naciśnij klawisz `Parametry odbioru`.
-1. Aby sprawdzić ustawienia wybranego konta, przejdź do **Etap 4** w rozdziale [Dodaj konto](#add-account).
+1. Aby sprawdzić ustawienia wybranego konta, przejdź do **etap 4** w rozdziale "[Dodaj konto](#add-account)".
 
 ![Gmail android](images/gmail-app-android-exchange-modify-account-01.png){.thumbnail .h-500}
 
@@ -111,14 +111,14 @@ Aby zmienić parametry skonfigurowanego konta e-mail, postępuj zgodnie z poniż
 
 ![Gmail android](images/gmail-app-android-exchange-delete-account-01.png){.thumbnail .h-500}
 
-## Idź dalej <a name="go-further"></a>
+## Sprawdź również <a name="go-further"></a>
 
 > [!primary]
 >
-> Więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Gmail na urządzeniach z systemem Android można znaleźć w [Centrum pomocy Google](https://support.google.com/mail/answer/6078445?hl=fr-CA&co=GENIE.Platform%3DAndroid#zippy=%2Dodaj-konto).
+> Więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Gmail na urządzeniach z systemem Android można znaleźć w [centrum pomocy Google](https://support.google.com/mail/answer/6078445?hl=fr-CA&co=GENIE.Platform%3DAndroid#zippy=%2Dodaj-konto).
 
-W przypadku usług specjalistycznych (SEO, programowanie, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Przyłącz się do [społeczności użytkowników](/links/community).
+Dołącz do [grona naszych użytkowników](/links/community).

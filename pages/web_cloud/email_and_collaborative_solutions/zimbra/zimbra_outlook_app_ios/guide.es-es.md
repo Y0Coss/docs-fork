@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar una cuenta de correo electrónico a través de ActiveSync en Outlook para iOS"
 excerpt: "Aprenda a configurar su cuenta de correo electrónico Zimbra Pro en la aplicación móvil Outlook para iOS a través del protocolo ActiveSync"
-updated: 2025-07-02
+Updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Las cuentas Zimbra Pro pueden configurarse en un iPhone utilizando el protocolo 
 >
 > OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Es su responsabilidad garantizar que estos servicios funcionen correctamente.
 >
-> Esta guía está diseñada para ayudarle a realizar tareas comunes. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección [Más información](#go-further) de esta guía.
+> Esta guía está diseñada para ayudarle a realizar tareas comunes. No obstante, si necesita ayuda, le recomendamos que contacte con un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
 
 ## Requisitos
 
@@ -122,7 +122,7 @@ Consulte los parámetros en el **paso 3** del capítulo "[Añadir la cuenta](#ad
 
 > [!primary]
 >
-> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en iOS, consulte el [centro de ayuda de Microsoft](https://support.microsoft.com/office/config-l-application-outlook-para-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en iOS, consulte el [centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/configurer-l-application-outlook-pour-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

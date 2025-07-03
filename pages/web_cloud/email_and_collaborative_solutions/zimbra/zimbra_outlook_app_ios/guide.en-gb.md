@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configuring your email account via ActiveSync in Outlook for iOS"
 excerpt: "Find out how to configure your Zimbra Pro email address on the Outlook mobile app for iOS via the ActiveSync protocol"
-updated: 2025-06-27
+Updated: 2025-07-03
 ---
 
 <style>
@@ -25,7 +25,7 @@ Zimbra Pro accounts can be configured on an iPhone using the ActiveSync protocol
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
 > 
 
 ## Requirements
@@ -124,7 +124,7 @@ Find the settings in **Step 3** of the [Add account](#add-account) chapter.
 
 > [!primary]
 >
-> For more information about configuring an email address from the Outlook application on iOS, see the [Microsoft Help Center](https://support.microsoft.com/office/configure-the-outlook-application-for-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
+> For more information about configuring an email address from the Outlook application on iOS, see the [Microsoft Help Center](https://support.microsoft.com/en-gb/office/configurer-l-application-outlook-pour-ios-b2de2161-cc1d-49ef-9ef9-81acd1c8e234).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
