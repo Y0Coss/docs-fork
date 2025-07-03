@@ -1,7 +1,7 @@
 ---
 title: "Exportieren Ihrer Domainnamen als Liste im CSV-Format"
 excerpt: "Erfahren Sie, wie Sie die Liste Ihrer Domainnamen und die zugehörigen Informationen im CSV-Format über Ihr OVHcloud Kundencenter exportieren"
-updated: 2025-07-01
+updated: 2025-07-03
 ---
 
 ## Ziel

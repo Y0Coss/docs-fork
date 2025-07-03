@@ -1,7 +1,7 @@
 ---
 title: "Jak wyeksportować listę domen w formacie CSV"
 excerpt: "Dowiedz się, jak wyeksportować listę Twoich domen i powiązane z nimi informacje w formacie CSV z Panelu klienta OVHcloud"
-updated: 2025-07-01
+updated: 2025-07-03
 ---
 
 ## Wprowadzenie

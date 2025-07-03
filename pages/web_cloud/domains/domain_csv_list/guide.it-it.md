@@ -1,7 +1,7 @@
 ---
 title: "Come esportare la lista dei tuoi domini in CSV"
 excerpt: "Scopri come esportare la lista dei tuoi domini e le informazioni associate in formato CSV dallo Spazio Cliente OVHcloud"
-updated: 2025-07-01
+updated: 2025-07-03
 ---
 
 ## Obiettivo

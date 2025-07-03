@@ -1,7 +1,7 @@
 ---
 title: "Cómo exportar la lista de dominios en CSV"
 excerpt: "Descubra cómo exportar la lista de dominios y la información asociada en formato CSV desde el área de cliente de OVHcloud"
-updated: 2025-07-01
+updated: 2025-07-03
 ---
 
 ## Objetivo
