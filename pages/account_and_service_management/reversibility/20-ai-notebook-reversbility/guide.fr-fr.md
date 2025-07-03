@@ -47,7 +47,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 ## Liste des architectures
 
 L’offre de service d’OVHcloud propose des environnements Jupyter et Visual Studio Code managés, avec une allocation de ressources CPU/GPU à la demande. 
-Les notebooks sont isolés par utilisateur et projet, avec du stockage persistant sur un service  Object Storage compatible S3. Les principaux frameworks IA (TensorFlow, PyTorch, Scikit-learn, MXNet, Hugging Face) sont préinstallés avec intégration native des outils de data science (Matplotlib, Seaborn, Pandas). L’architecture supporte l’arrêt et redémarrage des notebooks, la synchronisation automatique des données et la gestion multi-utilisateurs.
+Les notebooks sont isolés par utilisateur et projet, avec un stockage persistant sur un service  Object Storage compatible S3. Les principaux frameworks IA (TensorFlow, PyTorch, Scikit-learn, MXNet, Hugging Face) sont préinstallés avec intégration native des outils de data science (Matplotlib, Seaborn, Pandas). L’architecture supporte l’arrêt et redémarrage des notebooks, la synchronisation automatique des données et la gestion multi-utilisateurs.
 
 ## Services partenaires
 
