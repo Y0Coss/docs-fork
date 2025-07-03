@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Konfiguracja konta e-mail za pomocą ActiveSync w aplikacji Mail na urządzeniu iPhone lub iPad"
 excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail Zimbra Pro w aplikacji Mail na urządzeniu z systemem iOS przy użyciu protokołu ActiveSync"
-Updated: 2025-07-03
+updated: 2025-07-03
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Konfiguration Ihres E-Mail-Accounts mit ActiveSync auf Gmail für Android"
 excerpt: "Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse über das ActiveSync-Protokoll in der Gmail-App für Android konfigurieren"
-Updated: 2025-07-03
+updated: 2025-07-03
 ---
 
 <style>

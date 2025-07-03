@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar una cuenta de correo electrónico a través de ActiveSync en Outlook para Android"
 excerpt: "Cómo configurar una cuenta de correo electrónico de Zimbra Pro en la aplicación móvil de Outlook para Android a través del protocolo ActiveSync"
-Updated: 2025-07-03
+updated: 2025-07-03
 ---
 
 <style>

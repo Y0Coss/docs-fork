@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar sua conta de e-mail via AtiveSync no Outlook para Android"
 excerpt: "Saiba como configurar seu endereço de e-mail Zimbra Pro no aplicativo móvel Outlook para Android através do protocolo AtiveSync"
-Updated: 2025-07-03
+updated: 2025-07-03
 ---
 
 <style>

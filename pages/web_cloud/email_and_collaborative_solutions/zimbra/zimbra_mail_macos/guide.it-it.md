@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurare un account email via EWS in Mail su Mac"
 excerpt: "Scopri come configurare il tuo indirizzo email Zimbra Pro sull’applicazione Mail su Mac tramite il protocollo EWS"
-Updated: 2025-07-03
+updated: 2025-07-03
 ---
 
 <style>

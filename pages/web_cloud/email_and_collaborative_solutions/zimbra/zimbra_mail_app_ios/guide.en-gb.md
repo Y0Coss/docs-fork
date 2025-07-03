@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configuring your email account via ActiveSync on Mail for iPhone or iPad"
 excerpt: "Find out how to configure your Zimbra Pro email address on the Mail mobile app for iOS via the ActiveSync protocol"
-Updated: 2025-07-03
+updated: 2025-07-03
 ---
 
 <style>

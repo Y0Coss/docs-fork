@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Konfiguration Ihres E-Mail-Accounts via EWS auf Outlook für Mac"
 excerpt: "Erfahren Sie, wie Sie Ihre Zimbra Pro E-Mail-Adresse auf Outlook für macOS über das EWS-Protokoll konfigurieren"
-Updated: 2025-07-03
+updated: 2025-07-03
 ---
 
 <style>

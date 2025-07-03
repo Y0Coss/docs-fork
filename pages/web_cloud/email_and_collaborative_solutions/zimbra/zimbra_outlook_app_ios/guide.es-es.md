@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurar una cuenta de correo electrónico a través de ActiveSync en Outlook para iOS"
 excerpt: "Aprenda a configurar su cuenta de correo electrónico Zimbra Pro en la aplicación móvil Outlook para iOS a través del protocolo ActiveSync"
-Updated: 2025-07-03
+updated: 2025-07-03
 ---
 
 <style>

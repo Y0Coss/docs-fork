@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Konfiguracja konta e-mail za pomocą ActiveSync w programie Outlook na urządzeniu z systemem Windows"
 excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail Zimbra Pro w programie Outlook na urządzeniu z systemem Windows przy użyciu protokołu ActiveSync"
-Updated: 2025-07-03
+updated: 2025-07-03
 ---
 
 <style>

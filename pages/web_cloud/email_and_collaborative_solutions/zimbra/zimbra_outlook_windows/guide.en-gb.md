@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configuring your email account via ActiveSync in Outlook for Windows"
 excerpt: "Find out how to configure your Zimbra Pro email address in Outlook for Windows using the ActiveSync protocol"
-Updated: 2025-07-03
+updated: 2025-07-03
 ---
 
 <style>
