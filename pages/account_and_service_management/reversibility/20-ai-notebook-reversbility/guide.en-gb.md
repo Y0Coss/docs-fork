@@ -39,17 +39,12 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
+| OVHcloud API, CLI and Python SDK | Notebook management, automation and migration via OVHcloud’s own REST API, CLI AI and Python SDK. | JSON, YAML, Python | **Inbound**: Tools and management interfaces available by default <br>**Outbound**: APIs and CLIs will depend on the target environments and may require adaptation. | [AI Notebooks - Getting started](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition)|
 | Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Inbound**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outbound**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](https://www.ovhcloud.com/en/security/anti-ddos/) |
 
 **List of architectures**
-xxxx
-
-The product is divided into two service offers:
-
-* xxxx
-* xxx
+OVHcloud’s service offer includes managed Jupyter and Visual Studio Code environments, with on-demand CPU/GPU resource allocation.
+Notebooks are isolated by user and project, with a persistent storage on an S3-compatible Object Storage service. The main AI frameworks (TensorFlow, PyTorch, Scikit-learn, MXNet, Hugging Face) are preinstalled with native integration of data science tools (Matplotlib, Seaborn, Pandas). The architecture supports notebook shutdowns and restarts, automatic data synchronization and multi-user management.
 
 **Partner services**
 
