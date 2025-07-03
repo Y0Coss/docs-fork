@@ -1,6 +1,6 @@
 ---
 title: "Politique de réversibilité du produit Notebook Interface"
-updated: 2025-07-02
+updated: 2025-07-03
 ---
 
 ## Objectif
