@@ -50,7 +50,7 @@ Dès lors où votre navigateur Internet est à jour, tentez à nouveau d'accéde
 
 Le système de sécurité qui bloque vos requêtes se trouve en amont de votre hébergement web. Par conséquent et dans ce cas précis, vous n'aurez pas accès aux logs de ce système de sécurité depuis votre espace client OVHcloud.
 
-### 2.1 - Récupérer les informations présentes sur la page « Your request has been blocked »
+#### 2.1 - Récupérer les informations présentes sur la page « Your request has been blocked »
 
 Dans un premier temps, récupérez les 3 informations suivantes qui s'affichent sur la page « Your request has been blocked » :
 
