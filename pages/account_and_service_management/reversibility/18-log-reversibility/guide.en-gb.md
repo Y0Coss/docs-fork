@@ -40,7 +40,7 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Incoming**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outgoing**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](https://www.ovhcloud.com/en/security/anti-ddos/) |
+| Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Incoming**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outgoing**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](/links/security/ddos) |
 
 **List of architectures**
 
@@ -48,8 +48,8 @@ The components of the product are accessible from the OVHcloud interface and all
 
 The product is divided into two service offers:
 
-* A shared infrastructure: "logs-account"
-* A dedicated cluster: "logs-enterprise"
+- A shared infrastructure: "logs-account"
+- A dedicated cluster: "logs-enterprise"
 
 **Partner services**
 
@@ -59,18 +59,16 @@ OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/p
 
 **Cost and fees**
 
-Features described in tables are available at no cost, unless otherwise specified, and are freely usable by the customer. More details about pricing are available at [this link:](https://www.ovhcloud.com/en-gb/identity-security-operations/logs-data-platform/)
+Features described in tables are available at no cost, unless otherwise specified, and are freely usable by the customer. Visit the [Logs Data Platform product page](/links/manage-operate/ldp) to see the price list.
 
-[product page](https://www.ovhcloud.com/en-gb/identity-security-operations/logs-data-platform/) to see the complete pricing
-
-* No additional exit fees applied.
-* Billing depends on the volume stored and the type of infrastructure mobilized (indexed/archived).
-* Any assistance or turnkey export service may incur additional costs.
+- No additional exit fees applied.
+- Billing depends on the volume stored and the type of infrastructure mobilized (indexed/archived).
+- Any assistance or turnkey export service may incur additional costs.
 
 **Data retention after termination of the contract**
 
 OVHcloud does not guarantee the use and availability of backups to restore client's data after service termination.
 
-* Streams and OpenSearch indexes are deleted immediately once the service is removed.
-* The cold storage archives are immediately destroyed upon termination of the service
-* The client is fully responsible for data export via API or [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror) before decommissioning the service or contract termination.
+- Streams and OpenSearch indexes are deleted immediately once the service is removed.
+- The cold storage archives are immediately destroyed upon termination of the service
+- The client is fully responsible for data export via API or [ldp-archive-mirror](https://github.com/ovh/ldp-archive-mirror) before decommissioning the service or contract termination.
