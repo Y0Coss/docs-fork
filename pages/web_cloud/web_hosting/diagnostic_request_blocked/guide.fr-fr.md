@@ -58,7 +58,7 @@ Dans un premier temps, récupérez les 3 informations suivantes qui s'affichent 
 - `Date` (exemple : 2025-07-01T16:30:45:150Z).
 - `Request ID` (exemple : AbCdEf-your-request-ID-GhIjKlM).
 
-### 2.2 - Contactez le support
+#### 2.2 - Contactez le support
 
 Une fois les éléments récupérés, créer [un ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help) depuis le Centre d'Aide OVHcloud en y précisant :
 
