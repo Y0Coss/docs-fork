@@ -36,13 +36,13 @@ Por defecto, se le redirigirá a la pestaña `Información general`{.action}.
 
 ![Información general](images/general_information.png){.thumbnail}
 
-En el recuadro **Tags**, haga clic en `Añadir una tag`{.action}.
+En el recuadro **Tags**, haga clic en `Añadir un tag`{.action}.
 
 ![Agregar tag](images/add_a_tag.png){.thumbnail}
 
 Se abrirá automáticamente la pestaña `Tags`.
 
-Haga clic en el botón `Asignar una tag`{.action}.
+Haga clic en el botón `Asignar un tag`{.action}.
 
 ![Tags - lista vacía](images/Tag_list_empty.png){.thumbnail}
 
