@@ -53,7 +53,8 @@ The OVHcloud partners concerned are listed in the [OVHcloud partners directory](
 OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
 
 **Cost and fees**
+Billing is based on 'pay-as-you-go'. There is no specific fees applied on service termination. Stopping or deleting a notebook will stop billing for computing resources. The associated storage (Object Storage) remains billed until data are deleted. Notebooks and data must be exported before deleting and canceling the service.
 
 **Data retention after contract termination **
 
-
+After deleting a notebook, OVHcloud automatically synchronizes user data on an S3-compatible Object Storage. Notebooks and files remain accessible on this storage space until the user deletes it manually. Once data has been deleted from this space, it cannot be restored. It is therefore imperative to export all the necessary data before decommissioning the service.
