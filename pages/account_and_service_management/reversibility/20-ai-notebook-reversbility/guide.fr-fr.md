@@ -56,8 +56,8 @@ Les partenaires OVHcloud concernés figurent dans l'annuaire des [partenaires OV
 OVHcloud dispose également d’un service dédié : [OVHcloud Professional Services](/links/professional-services).
 
 ## Coûts et frais
-
+La facturation est en mode pay as you go. Aucun frais de résiliation spécifique n’est appliqué : l’arrêt ou la suppression d’un notebook arrête la facturation des ressources de calcul. Le stockage associé (Object Storage) reste facturé tant que les données ne sont pas supprimées. L’export des notebooks et données est nécessaire avant la suppression définitive et résiliation du service.
 
 ## Conservation des données après résiliation du contrat
 
-
+Après suppression d’un notebook, OVHcloud synchronise automatiquement les données utilisateur sur un Object Storage compatible S3. Les notebooks et fichiers restent accessibles sur cet espace de stockage jusqu’à leur suppression manuelle par l’utilisateur. Une fois les données supprimées de cet espace, aucune restauration n’est possible. Il est donc impératif d’exporter toutes les données nécessaires avant le décommissionnement du service.
