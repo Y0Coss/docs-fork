@@ -1,7 +1,7 @@
 ---
 title: 'How to assign a tag to a Bare Metal server'
 excerpt: 'Find out how to create and modify tags for each dedicated server via the OVHcloud Control Panel'
-updated: 2025-06-30
+updated: 2025-07-01
 ---
 
 ## Objective
