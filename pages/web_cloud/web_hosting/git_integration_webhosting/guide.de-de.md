@@ -96,7 +96,7 @@ Wenn Sie die Adresse eines privaten GitHub-Repositorys (Typ `git@github.com:<use
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
 
-Um Ihren SSH-Schlüssel zu konfigurieren, lesen Sie den Schritt „Einen SSH-Schlüssel mit GitHub verbinden (nur für private GitHub-Repositorys)“ weiter unten.
+Um Ihren SSH-Schlüssel zu konfigurieren, folgen Sie dem Schritt "Einen SSH-Schlüssel mit GitHub verbinden (nur für private GitHub-Repositorys)".
 
 ### Einen SSH-Schlüssel mit GitHub verbinden (nur für private GitHub-Repositorys) <a name="linkSSHKey"></a>
 
