@@ -50,7 +50,7 @@ Numer telefonu powinien zostać wpisany w formacie międzynarodowym.
 
 #### Wskazówki i porady
 
-Dla numeru „06 12 34 56 78” należy zatem wpisać “+48 612345678”. Prefiks “+48” dodawany jest automatycznie po wybraniu Polski jako kraju zamieszkania.
+Dla numeru “06 12 34 56 78” należy zatem wpisać “+48 612345678”. Prefiks “+48” dodawany jest automatycznie po wybraniu Polski jako kraju zamieszkania.
 
 ### Jakie są konsekwencje wprowadzenia rozporządzenia RODO względem ochrony moich danych osobowych?
 
