@@ -1,7 +1,7 @@
 ---
 title: 'Como configurar o protocolo HTTP/2 no Load Balancer OVH'
 excerpt: 'Configuração do protocolo HTTP/2 no Load Balancer OVH'
-updated: 2018-01-15
+updated: 2025-07-04
 ---
 
 ## Sumário
@@ -11,6 +11,13 @@ Neste momento, o Load Balancer OVH não é compatível com protocolo HTTP/2. No 
 A ALPN (Application-Layer Protocol Negotiation) é uma extensão TLS que permite à Application Layer <b>negociar</b> que protocolo será usado (neste caso, h2).
 
 **Este manual mostra como criar um serviço HTTP/2 com o Load Balancer OVH. Em particular, vamos demonstrar como configurar o serviço para repartir o tráfego por vários servidores que respondam em HTTP/2.**
+
+> [!primary]
+>
+> Desde junho de 2025, os Frontends HTTP e TLS dos serviços Load Balancer da OVHcloud suportam nativamente o protocolo HTTP/2.
+>
+> O seguinte manual continua a ser aplicável aos Frontends TCP.
+>
 
 ## Requisitos
 

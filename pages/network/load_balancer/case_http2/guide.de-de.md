@@ -1,7 +1,7 @@
 ---
 title: Konfiguration von HTTP/2 auf dem OVH Loadbalancer
 excerpt: So konfigurieren Sie HTTP/2 auf dem OVH Loadbalancer
-updated: 2018-01-15
+updated: 2025-07-04
 ---
 
 ## Einleitung
@@ -11,6 +11,13 @@ Das HTTP/2-Protokoll wird aktuell nicht vom OVH Loadbalancer unterstützt. Sie k
 ALPN (Application-Layer Protocol Negotiation) ist eine TLS-Erweiterung, die es der Anwendungsschicht erlaubt, das verwendete Protokoll auszuhandeln (im vorliegenden Fall h2).
 
 **In dieser Anleitung erfahren Sie, wie Sie HTTP/2 auf dem OVH Loadbalancer einrichten. Wir werden den Dienst im Folgenden konfigurieren, um die Traffic-Last auf mehrere Server zu verteilen, die mit HTTP/2 antworten.**
+
+> [!primary]
+>
+> Seit Juni 2025 unterstützen die HTTP- und TLS-Frontends der OVHcloud Loadbalancer-Dienste nativ das HTTP/2-Protokoll.
+>
+> Die folgende Anleitung gilt jedoch weiterhin für TCP-Frontends.
+>
 
 ## Voraussetzungen
 
