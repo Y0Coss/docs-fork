@@ -13,7 +13,7 @@ updated: 2025-07-03
 ## Obiettivo
 
 > [!primary]
-> Questa guida è per i clienti che dispongono di un servizio di posta elettronica [Zimbra Pro](/links/web/email-zimbra). Questo servizio sarà disponibile in beta a partire da luglio 2025.
+> Questa guida è per i clienti che dispongono di un servizio di posta elettronica [Zimbra Pro](/links/web/emails-zimbra). Questo servizio sarà disponibile in beta a partire da luglio 2025.
 
 Gli account Zimbra Pro possono essere configurati su un Mac utilizzando il protocollo EWS (**E**xchange **W**eb **S**services). In questo modo è possibile configurare tutte le funzionalità collaborative del proprio indirizzo email in una sola volta. L'applicazione [Outlook su macOS](https://apps.apple.com/fr/app/microsoft-outlook/id985367838?mt=12) è disponibile sull'App Store di Apple.
 
