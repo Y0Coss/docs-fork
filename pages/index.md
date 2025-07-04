@@ -512,6 +512,7 @@
             + [Migrating VMware Workloads to OVHcloud SecNumCloud with Veeam Replication](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam_secnumcloud)
         + [Migration](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration)
             + [Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Veeam Replication](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam)
+            + [Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Zerto](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto)
     + [Nutanix on OVHcloud](products/hosted-private-cloud-nutanix-on-ovhcloud)
         + [Getting started](hosted-private-cloud-nutanix-on-ovhcloud-getting-started)
             + [Nutanix global high-level documentation](hosted_private_cloud/nutanix_on_ovhcloud/01-global-high-level-doc)
