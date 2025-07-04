@@ -62,7 +62,7 @@ Postępuj zgodnie z kolejnymi instrukcjami zawartymi w **3** zakładkach:
 >>
 > **Etap 2**
 >>
->> ![Outlook Android](images/Zimbra-ActiveSync-Outlook-Android03.png){.thumbnail .h-500}
+>> ![Outlook Android](images/zimbra-activesync-outlook-android03.png){.thumbnail .h-500}
 >>
 >> - Wybierz **Exchange** z listy typów kont.
 >> - **Lub**, jeśli otrzymasz okno z prośbą o wybranie protokołu **IMAP** lub **POP3**, naciśnij dowolny z nich. W kolejnym oknie naciśnij przycisk `?`{.action} w prawym górnym rogu ekranu, następnie wybierz `Zmień dostawcę konta`{.action}. Następnie wybierz `Exchange`.

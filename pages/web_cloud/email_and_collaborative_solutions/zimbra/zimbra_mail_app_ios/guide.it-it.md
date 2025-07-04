@@ -13,7 +13,7 @@ updated: 2025-07-03
 ## Obiettivo
 
 > [!primary]
-> Questa guida è per i clienti che dispongono di un servizio di posta elettronica [Zimbra Pro](/links/web/email-zimbra). Questo servizio sarà disponibile in beta a partire da luglio 2025.
+> Questa guida è per i clienti che dispongono di un servizio di posta elettronica [Zimbra Pro](/links/web/emails-zimbra). Questo servizio sarà disponibile in beta a partire da luglio 2025.
 
 Gli account Zimbra Pro possono essere configurati su un iPhone o un iPad utilizzando il protocollo ActiveSync. In questo modo è possibile configurare tutte le funzionalità collaborative del proprio indirizzo email in una sola volta. L'applicazione Mail è disponibile nativamente su iOS.
 

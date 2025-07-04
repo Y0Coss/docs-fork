@@ -106,7 +106,7 @@ Si su cuenta de correo ya está configurada y desea modificar su configuración,
 5. Pulse `Eliminar la cuenta`{.action}.
 6. Pulse `Eliminar`{.action} cuando aparezca la pregunta "¿Quieres eliminar la cuenta?".
 
-  [outlook android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
 
 > [!success]
 >

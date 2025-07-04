@@ -13,7 +13,7 @@ updated: 2025-07-03
 ## Obiettivo
 
 > [!primary]
-> Questa guida è per i clienti che dispongono di un servizio di posta elettronica [Zimbra Pro](/links/web/email-zimbra). Questo servizio sarà disponibile in beta a partire da luglio 2025.
+> Questa guida è per i clienti che dispongono di un servizio di posta elettronica [Zimbra Pro](/links/web/emails-zimbra). Questo servizio sarà disponibile in beta a partire da luglio 2025.
 
 Gli account Zimbra Pro possono essere configurati su Windows utilizzando il protocollo ActiveSync, per consentirti di configurare tutte le funzionalità collaborative del tuo indirizzo email in una sola volta. L’applicazione Outlook per Windows consente di visualizzare l’account email Zimbra Pro tramite il protocollo ActiveSync.
 

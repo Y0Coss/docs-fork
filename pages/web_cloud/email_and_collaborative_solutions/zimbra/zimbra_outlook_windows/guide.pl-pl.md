@@ -130,7 +130,7 @@ Aby zmienić parametry skonfigurowanego konta e-mail, postępuj zgodnie z poniż
 1. Kliknij `Konta e-mail...`{.action}.
 1. Wybierz z listy odpowiednie konto e-mail i kliknij przycisk `Zmień...`{.action}.
 
-![Outlook iOS](images/Outlook-Windows-Modify-01.png){.thumbnail .h-500}
+![Outlook iOS](images/outlook-windows-modify-01.png){.thumbnail .h-500}
 
 Ustawienia znajdziesz w **etap 7** rozdziału "[Dodaj konto](#add-account)".
 
@@ -144,7 +144,7 @@ Aby usunąć konto e-mail, postępuj zgodnie z poniższymi instrukcjami:
 1. Kliknij `Konta e-mail...`{.action}.
 1. Wybierz z listy odpowiednie konto e-mail i kliknij przycisk `Usuń`{.action}.
 
-![Outlook iOS](images/Outlook-Windows-Delete-01.png){.thumbnail .h-500}
+![Outlook iOS](images/outlook-windows-delete-01.png){.thumbnail .h-500}
 
 > [!warning]
 >
