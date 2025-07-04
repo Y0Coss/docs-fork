@@ -24,7 +24,7 @@ Si votre site web affiche une page « Your request has been blocked », cela sig
 La page « Your request has been blocked » peut s'afficher pour diverses raisons (liste non exhaustive) :
 
 - La requête est effectuée depuis un navigateur Internet (Firefox, Chrome, Safari, Edge, etc.) non mis à jour.
-- Un très grand nombre de requêtes, similaires ou non, sont effectués dans un délai extrêmement court.
+- Un très grand nombre de requêtes, similaires ou non, sont effectuées dans un délai extrêmement court.
 - La requête tente d'exécuter des actions non autorisées sur l'infrastructure mutualisée où se trouve votre hébergement web.
 
 ### 1 - Vérifiez que votre navigateur Internet est à jour
