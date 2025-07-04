@@ -1,14 +1,14 @@
 ---
-title : Object Storage - Utiliser Object Storage avec Pure Storage Flashblade
-excerpt : Configurez Pure Storage Flashblade pour collaborer avec OVHcloud Object Storage
-mise à jour : 2025-07-02
+title: Object Storage - Utiliser Object Storage avec Pure Storage Flashblade
+excerpt: Configurez Pure Storage Flashblade pour collaborer avec OVHcloud Object Storage
+updated: 2025-07-02
 ---
 
 ## Objectif
 
 Ce guide a pour but de vous aider à configurer et à utiliser OVHcloud Object Storage comme cible de réplication pour Pure Storage « [Flashblade unified storage platform](https://www.purestorage.com/fr/products/unstructured-data-storage/flashblade-s.html){.external} ».
 
-Il explique comment configurer, gérer et répliquer facilement des objets compatibles Pure Storage FlashBlade S3 vers OVHcloud Object Storage.
+Il explique comment configurer, gérer et répliquer facilement des objets compatibles Pure Storage Flashblade S3 vers OVHcloud Object Storage.
 
 ## Prérequis
 
@@ -16,19 +16,19 @@ Il explique comment configurer, gérer et répliquer facilement des objets compa
 - Un utilisateur avec les droits d'accès requis sur le bucket.
 - Vos identifiants Object Storage (access_key et secret_access_key).
 
-Consultez notre guide [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
+Consultez notre guide [Object Storage - Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
 ## Instructions
 
 ### Créer une connexion cible compatible S3
 
-1. Connectez-vous à l'interface utilisateur graphique de Pure Storage FlashBlade.
+1. Connectez-vous à l'interface utilisateur graphique de Pure Storage Flashblade.
 
-2. Rendez-vous dans la section `Stockage`{.action} puis `Array`{.action}.
+2. Rendez-vous dans la section `Stockage`{.action}, puis `Array`{.action}.
 
 3. Cliquez sur le bouton « + » à côté de `S3 Target Connections` pour créer un stockage d'objets cloud *Target Connections*.
 
-4. Nommez la connexion, par exemple avec OVHCLOUD_OBJECT_STORAGE et ajoutez les points de terminaison OVHcloud Object Storage associés dans le champ `Address`.
+4. Nommez la connexion, par exemple « OVHCLOUD_OBJECT_STORAGE » et ajoutez les points de terminaison OVHcloud Object Storage associés dans le champ `Address`.
 
 ![page de connexion](images/01.Connections.png){.thumbnail}
 
@@ -68,7 +68,7 @@ La liste de tous les points de terminaison OVHcloud Object Storage se trouve [ic
 
 17. Sélectionnez `OVHCLOUD_OBJECT_STORAGE`{.action} pour la baie distante.
 
-18. Ajoutez le nom de votre compartiment Object Storage OVHcloud, « OVHcloud-dest-2025 »
+18. Ajoutez le nom de votre compartiment Object Storage OVHcloud, « OVHcloud-dest-2025 ».
 
 19. Ajoutez vos identifiants à distance « OVHcloud_credentials ». Le lien de réplica de compartiment va être créé.
 
