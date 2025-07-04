@@ -14,9 +14,9 @@ ALPN (Application-Layer Protocol Negotiation) es una extensión de TLS que permi
 
 > [!primary]
 >
-> Desde junio de 2025, los frontends HTTP y TLS de los servicios Load Balancer de OVHcloud soportan de forma nativa el protocolo HTTP/2.
+> Desde junio de 2025, los frontend HTTP y TLS de los servicios Load Balancer de OVHcloud soportan de forma nativa el protocolo HTTP/2.
 >
-> No obstante, la siguiente guía sigue siendo aplicable para los frontends TCP.
+> No obstante, la siguiente guía sigue siendo aplicable para los frontend TCP.
 >
 
 ## Requisitos

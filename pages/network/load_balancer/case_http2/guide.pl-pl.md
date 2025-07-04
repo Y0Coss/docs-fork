@@ -35,7 +35,7 @@ ALPN (Application-Layer Protocol Negotiation) jest rozszerzeniem TLS, które umo
 
 Dodaj trasę do Twojej usługi.
 
-#### Za pomocą API OVH
+#### Za pomocą API OVHcloud
 
 > [!faq]
 >
@@ -72,7 +72,7 @@ Dodaj trasę do Twojej usługi.
 
 Dodaj regułę do trasy.
 
-#### Za pomocą API OVH
+#### Za pomocą API OVHcloud
 
 > [!faq]
 >
@@ -113,7 +113,7 @@ Modyfikacje wprowadzone w Load Balancerze muszą zostać *wyraźnie zatwierdzone
 
 W przypadku kilku stref, musisz zastosować tę samą konfigurację dla każdej z nich.
 
-#### Za pomocą API OVH
+#### Za pomocą API OVHcloud
 
 Odświeżanie strefy:
 
