@@ -80,7 +80,7 @@ Se vuoi recuperare un dominio di cui risulti proprietario presso il Registro (ve
 
 #### Consigli e suggerimenti
 
-Per maggiori informazioni sulla gestione dei contatti, consulta questa [guida] (/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti).
+Per maggiori informazioni sulla gestione dei contatti, consulta questa [guida](/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti).
 
 ### Come configurare o modificare il contatto di fatturazione?
 
