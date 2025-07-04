@@ -91,7 +91,7 @@ Teraz zdefiniuj gałąź repozytorium GitHub. Domyślną gałęzią jest `main`,
 
 Powróć do formularza stowarzyszenia Git w Panelu klienta OVHcloud i podaj nazwę nowo utworzonej gałęzi.
 
-Jeśli wprowadzasz adres prywatnego repozytorium w serwisie GitHub (typu `git@github.com:<username>/<repository_name>.git`), pod polem `Branch` wyświetla się pole `SSH key` (klucz SSH).
+Jeśli wprowadzasz adres prywatnego repozytorium w serwisie GitHub (typu `git@github.com:<username>/<repository_name>.git`), pod polem `Branch` wyświetli się pole `SSH key` (klucz SSH).
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
 

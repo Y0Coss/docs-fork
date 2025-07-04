@@ -91,7 +91,7 @@ Ahora defina la rama de su repositorio de GitHub. La rama predeterminada es `mai
 
 Vuelva al formulario de asociación de Git en el área de cliente de OVHcloud e introduzca el nombre de la nueva rama que acaba de crear.
 
-Si introduce la dirección de un repositorio privado de GitHub (de tipo `git@github.com:<username>/<repository_name>.git`), aparecerá un campo `SSH key` (llave SSH) en el campo `Branch`.
+Si introduce la dirección de un repositorio privado de GitHub (de tipo `git@github.com:<username>/<repository_name>.git`), aparecerá un campo `SSH key` (llave SSH) debajo del campo `Branch`.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
 

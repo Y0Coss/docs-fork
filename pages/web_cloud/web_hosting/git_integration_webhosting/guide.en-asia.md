@@ -94,7 +94,7 @@ If you enter the address of a private GitHub repository (of type `git@github.com
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
 
-To configure your SSH key, please refer to the 'Associate an SSH key with GitHub (for private GitHub repositories only)' step below.
+To configure your SSH key, please refer to the "Attach an SSH key to GitHub (only for private GitHub repositories)" step below.
 
 #### Attach an SSH key to GitHub (only for private GitHub repositories) <a name="linkSSHKey"></a>
 

@@ -91,7 +91,7 @@ Agora defina o ramo do seu repositório GitHub. O branch padrão é "main`", mas
 
 Volte para o formulário de associação de Git na sua Área de Cliente OVHcloud e indique o nome do novo ramo que acabou de criar.
 
-Se indicar o endereço de um repositório GitHub privado (do tipo `git@github.com:<username>/<repository_name>.git`), um campo `SSH key` (chave SSH) será apresentado no campo `Branch`.
+Se indicar o endereço de um repositório GitHub privado (do tipo `git@github.com:<username>/<repository_name>.git`), um campo `SSH key` (chave SSH) será apresentado abaixo no campo `Branch`.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
 
