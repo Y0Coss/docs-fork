@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurer son compte e-mail via ActiveSync sur Gmail pour Android"
 excerpt: "Découvrez comment configurer son adresse e-mail Zimbra Pro sur l'application mobile Gmail pour Android via le protocole ActiveSync"
-updated: 2025-06-27
+updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Les comptes e-mail Zimbra Pro peuvent être configurés sur un mobile Android en
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il est de votre responsabilité d'assurer le bon fonctionnement de ces services.
 >
-> Ce guide est conçu pour vous aider à accomplir des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
+> Ce guide est conçu pour vous aider à accomplir des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Pour plus d'informations, consultez la section « [Aller plus loin](#go-further) » de ce guide .
 
 ## Prérequis
 
@@ -89,7 +89,7 @@ Une fois l'adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vou
 
 OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Vous pouvez connecter au [webmail OVHcloud](/links/web/email) avec les identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, consultez notre guide « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
 
-### Comment modifier les paramètres existants ?<a name="modify-settings"></a>
+### Comment modifier les paramètres existants ? <a name="modify-settings"></a>
 
 Pour modifier les paramètres d’un compte e-mail déjà configuré, suivez les instructions ci-dessous :
 
@@ -97,11 +97,11 @@ Pour modifier les paramètres d’un compte e-mail déjà configuré, suivez les
 1. Appuyez ensuite sur `Paramètres` dans le bas de la colonne de gauche.
 1. Sélectionnez le compte concerné.
 1. Dans le bas de la page qui s'affiche, appuyez sur `Paramètres de réception`.
-1. Référez-vous à l'**Étape 4** du chapitre [Ajouter le compte](#add-account) pour vérifier les paramètres du compte concerné.
+1. Référez-vous à l'**Étape 4** du chapitre « [Ajouter le compte](#add-account) » pour vérifier les paramètres du compte concerné.
 
 ![Gmail android](images/gmail-app-android-exchange-modify-account-01.png){.thumbnail .h-500}
 
-### Comment supprimer un compte e-mail ?<a name="delete-account"></a>
+### Comment supprimer un compte e-mail ? <a name="delete-account"></a>
 
 1. Appuyez sur le menu `☰` en haut à gauche.
 1. Appuyez ensuite sur `Paramètres` dans le bas de la colonne de gauche.
