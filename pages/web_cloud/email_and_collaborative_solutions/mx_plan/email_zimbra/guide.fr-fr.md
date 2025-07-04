@@ -31,7 +31,7 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
 - [Gestion des dossiers de votre compte e-mail](#folders-management)
     - [Les dossiers spéciaux](#folders-specials)
     - [Créer des dossiers](#folders-creation)
- - [Traitement des e-mails](#email-management)
+- [Traitement des e-mails](#email-management)
     - [Action sur un e-mail sélectionné](#email-action)
     - [Rechercher un e-mail](#email-search)
 - [Rédiger un e-mail](#email-writing)
@@ -43,6 +43,7 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
 - [Calendrier](#calendar)
     - [Gestion des calendriers](#calendar-management)
     - [Tâches](#tasks)
+- [Stockage](#storage)
 - [Filtres](#filters)
     - [Comprendre comment paramètrer ses filtres](#filters-howto)
     - [Créer un filtre](#filters-creation)
@@ -440,7 +441,69 @@ Cliquez ensuite sur `Enregistrer`{.action} pour finaliser la création de votre 
 
 ![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
 
-#### Filtres <a name="filters"></a>
+### Stockage <a name="storage"></a>
+
+> [!success]
+>
+> La fonctionnalité de stockage appelé « Malette » n'est disponible qu'à partir de l'offre Zimbra Pro.
+
+> [!warning]
+>
+> L'offre Zimbra Pro est actuellement en version bêta, certaines fonctionnalités sont toujours en cours d'amélioration.
+
+Cliquez sur l'icône `Mallette`{.action}, dans la barre supérieure, pour accéder à votre espace de stockage. Vous pourrez y stocker vos fichiers et les partager.
+
+1. Dans la colonne de gauche, vous retrouvez les dossiers de votre espace de stockage. Cliquez sur `+ Ajouter un dossier`{.action} en bas de la colonne pour créer un nouveau dossier. Vous pouvez également créer un sous-dossier, pour cela réalisez un clic droit sur l'un des dossiers, puis cliquez sur `Créer un sous-dossier`{.action}.
+2. Dans la colonne centrale, vous retrouvez la liste des fichiers présents dans le dossier sélectionné.
+3. Dans la fenêtre de droite, selon le type le fichier sélectionné dans la colonne centrale, un aperçu du contenu s'affiche. La barre supérieure de l'aperçu affiche les actions possibles sur le ou les fichiers que vous avez sélectionnés.
+
+![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
+
+#### Ajouter un fichier <a name="storage"></a>
+
+Pour ajouter un fichier à votre espace de stockage, suivez les étapes ci-dessous :
+
+1. Cliquez sur `Télécharger`{.action}(Upload) dans la colonne de gauche.
+2. Depuis la fenêtre d'exploration de fichier, sélectionnez le ou les fichiers à téléverser sur votre espace de stockage.
+3. Cliquez sur `Ouvrir`{.action} pour téléverser le ou les éléments sur votre stockage.
+
+![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
+
+#### Partager un fichier/dossier <a name="storage"></a>
+
+Le partage vous permet de donner accès à un dossier ou fichier sur votre stockage à une personne tiers, hors de votre compte zimbra.
+
+> [!warning]
+>
+> Le partage incluant la possibilité de modifier, supprimer ou administrer est possible seulement avec un autre compte Zimbra Pro.
+
+> [!tabs]
+> **Partager un fichier**
+>>
+>> 1. Sélectionnez le fichier à partager et cliquez sur `Suite...`{.action}.
+>> 2. Cliquez sur `Partager...`{.action}.
+>> 3. Saisissez l'adresse e-mail de l'invité, puis cliquez sur `Ajouter`{.action}. Vous pouvez ajouter plusieurs adresses e-mail.
+>> 4. Choisissez les droits que vous souhaitez attribuer à l'invité.
+>> 5. Cliquez sur `Enregistrer`{.action} pour finaliser
+>>
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
+>>
+> **Partager un dossier**
+>>
+>> 1. Réalisez un clic droit sur le dossier à partager, puis cliquez sur `Partager...`{.action}.
+>> 2. Saisissez l'adresse e-mail de l'invité, puis cliquez sur `Ajouter`{.action}.
+>> 3. Choisissez les droits que vous souhaitez attribuer à l'invité.
+>> 4. Cliquez 
+>>
+>> ![Zimbra - storage](images/zimbra-storage-share-02.png){.thumbnail}
+>>
+
+L'invité reçoit un e-mail l'invitant à créer un compte Zimbra composé d'un identifiant et d'un mot de passe. Ce compte permet d'accèder à une interface Zimbra limitée à ce qui a été partagé.
+
+![Zimbra - storage](images/zimbra-storage-share-invite-01.png){.thumbnail}
+
+### Filtres <a name="filters"></a>
 
 #### Comprendre comment paramétrer ses filtres <a name="filters-howto"></a>
 
