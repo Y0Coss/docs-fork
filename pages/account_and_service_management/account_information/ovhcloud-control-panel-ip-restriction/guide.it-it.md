@@ -20,8 +20,8 @@ L'attivazione di questa opzione, associata alla protezione del tuo account con u
 
 ## Prerequisiti
   
-- Avere accesso allo[Spazio Cliente OVHcloud](/links/manager)
-- Aver letto le [raccomandazioni sulla gestione della password di accesso al tuo account](/pages/account_and_service_management/account_information/manage-ovh-password)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+- Aver letto le [raccomandazioni sulla gestione della password di accesso al tuo account](/pages/account_and_service_management/account_information/manage-ovh-password).
 
 ## Procedura
 
