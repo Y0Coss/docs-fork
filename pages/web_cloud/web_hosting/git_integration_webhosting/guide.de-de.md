@@ -74,8 +74,8 @@ Klicken Sie abschließend auf `Create Repository`{.action}.
 
 Kopieren Sie die Adresse Ihres GitHub-Repositorys. Diese muss folgende Form haben:
 
-- `https://github.com/<username>/<repository_name.git>` für ein öffentliches Repository.
-- `git@github.com:<username>/<repository_name.git>` für ein privates Repository.
+- `https://github.com/<username>/<repository_name>.git` für ein öffentliches Repository.
+- `git@github.com:<username>/<repository_name>.git` für ein privates Repository.
 
 Kehren Sie zum Git-Zuordnungsformular zurück und fügen Sie die Adresse Ihres GitHub-Repositorys in das Feld `Repository`{.action} ein. Wenn das Adressformat nicht korrekt ist, wird die folgende Fehlermeldung angezeigt:
 
@@ -129,7 +129,7 @@ Am unteren Rand des Git-Zuordnungsformulars wird ein Abschnitt `Automatische Ber
 Bevor Sie das Git-Zuordnungsformular bestätigen, überprüfen Sie:
 
 - Ihr SSH-Schlüssel wurde erfolgreich in Ihrem GitHub-Konto gespeichert.
-- Die Adresse Ihres GitHub-Repositorys ist korrekt. Sie muss im Format `https://github.com/<username>/<repository_name.git>` vorliegen.
+- Die Adresse Ihres GitHub-Repositorys ist korrekt. Sie muss im Format `https://github.com/<username>/<repository_name>.git` vorliegen.
 - Der Zweigname des GitHub-Repositorys ist korrekt.
 - Das Installationsverzeichnis ist leer.
 
