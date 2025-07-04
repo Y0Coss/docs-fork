@@ -1,8 +1,17 @@
 ---
 title: Cassandra - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-updated: 2025-02-19
+updated: 2025-07-04
 ---
+
+> [!warning]
+>
+> **Important Notice – End of Sales (EOS)**
+> 
+> Sales of our Cassandra managed database service will end on 31 July 2025. 
+> 
+> Existing services will continue to operate until the end of life on 15 December 2025.
+>
 
 ## Objective
 
