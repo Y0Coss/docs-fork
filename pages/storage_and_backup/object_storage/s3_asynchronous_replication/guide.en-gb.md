@@ -231,15 +231,10 @@ Object Lock can be used with replication to enable automatic copying of locked o
 > [!warning]
 > To replicate data in buckets with object lock on, you must have the following prerequisites:
 >
+> - Versioning must be enabled on both source and destination buckets.
 > - Object Lock must be enabled on both source and destination buckets.
-> - You must provide a token when uploading your replication configuration on the source bucket.
 >
 
-You can obtain a token by [contacting our support team](https://help.ovhcloud.com/csm?id=csm_get_help). Once you are provided with a token, you can set it via the cli in the `--token` parameter of the `put-bucket-replication` command:
-
-```bash
-$AWS s3api put-bucket-replication --replication-configuration "file://path_to_replication_conf_file" --bucket bucket_name --token $TOKEN
-```
 
 #### Example of replication configuration
 
