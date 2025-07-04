@@ -1,11 +1,11 @@
 ---
-title: "Politique de réversibilité du produit xxxxxx"
-updated: 2025-06-27
+title: "Politique de réversibilité du produit AI Managed Container "
+updated: 2025-07-04
 ---
 
 ## Objectif
 
-Ce document est la politique de réversibilité du produit xxxx couvrant l’offre commerciale d’OVHcloud xxxxxx.
+Ce document est la politique de réversibilité du produit AI Managed Container couvrant l’offre commerciale d’OVHcloud AI Deploy et AI Training.
 
 Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
@@ -21,9 +21,10 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-
+| Déploiement et gestion de containers OCI | Déploiement de modèles d’IA ou workloads via des images Docker/OCI standards, orchestrés sur un cluster Kubernetes natif ou API compatible | OCI, Docker, YAML, JSON | **Entrante** : import direct d’images OCI/Docker via API, CLI (docker, kubectl, helm, etc.), ou via pipeline CI/CD. <br>**Sortante** : export des images OCI/Docker, manifests YAML/JSON, et configurations, utilisables sur tout cluster Kubernetes ou plateforme OCI. | [Build & use a custom Docker image](/pages/public_cloud/ai_machine_learning/deploy_tuto_12_build_custom_image) |
+| Utilisation standard d’API | Gestion des workloads, services, configurations et monitoring via API Kubernetes (kubectl, Helm, etc.) | YAML, JSON, OCI | **Entrante** : déploiement direct de manifests, charts, modèles IA via API standard. <br>**Sortante** : export des manifests, charts et configurations via kubectl utilisables sur tout cluster Kubernetes compatible.  | [Build & use a custom Docker image](/pages/public_cloud/ai_machine_learning/deploy_tuto_12_build_custom_image) |
+| Registry d’images OCI/Docker | Utilisation de registries publics/privés pour des images de containers et des modèles IA | OCI, Docker | **Entrante** : pull/extraction d’images depuis tout registry compatible. <br>**Sortante** : push/export des images vers tout autre registry compatible.  | [Portfolio of AI apps and models](/pages/public_cloud/ai_machine_learning/deploy_guide_05_app_portfolio) |
+| Utilisation d’API, CLI et Infrastructure as Code | Déploiement, gestion et automatisation via API OVHcloud, CLI ou Infrastructure as Code (Terraform) | YAML, JSON, HCL | **Entrante** : configurations, scripts et templates. <br>**Sortante** : export des scripts, templates et configurations qui sont réutilisables sur d’autres environnements cibles   | [Caractéristiques, capacités et limites](/pages/public_cloud/ai_machine_learning/deploy_guide_01_capabilities) |
 
 ### 2 - Implémentations OVHcloud
 
