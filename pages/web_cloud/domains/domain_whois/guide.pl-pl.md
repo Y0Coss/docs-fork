@@ -1,7 +1,7 @@
 ---
 title: "Jak uzyskać informacje związane z domeną w bazie WHOIS"
 excerpt: "Dowiedz się, jak korzystać z narzędzia WHOIS, aby uzyskać szczegółowe informacje na temat nazwy domeny"
-updated: 2025-07-01
+updated: 2025-07-04
 --- 
 
 ## Wprowadzenie

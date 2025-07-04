@@ -1,12 +1,12 @@
 ---
 title: "Como obter informações relativas a um domínio com o WHOIS"
 excerpt: "Saiba como utilizar a ferramenta WHOIS para obter detalhes sobre um domínio"
-updated: 2025-07-01
+updated: 2025-07-04
 ---
 
 ## Objetivo
 
-Deseja saber se um domínio está disponível? Deseja conhecer certas informações relativas a um domínio, como os dados do titular, a data de expiração, etc. ?
+Deseja saber se um domínio está disponível? Deseja conhecer certas informações relativas a um domínio, como os dados do titular, a data de expiração, etc.?
 
 O WHOIS, abreviação do inglês "Who is?", é um protocolo que permite aceder a diferentes dados ligados a um nome de domínio.
 

@@ -1,7 +1,7 @@
 ---
 title: "Come ottenere informazioni relative a un dominio con il WHOIS"
 excerpt: "Scopri come utilizzare lo strumento WHOIS per ottenere informazioni su un dominio"
-updated: 2025-07-01
+updated: 2025-07-04
 ---
 
 ## Obiettivo
@@ -14,7 +14,7 @@ Il WHOIS, abbreviazione dell'inglese "Who is?", è un protocollo che permette di
 
 ## Prerequisiti
 
-- Disporre di un browser Internet (ad esempio Firefox, Chrome, Safari, Edge, ecc.) sul proprio computer, tablet o smartphone.
+- Disporre di un browser Internet (ad esempio: Firefox, Chrome, Safari, Edge, ecc.) sul proprio computer, tablet o smartphone.
 
 ## Procedura
 
@@ -22,7 +22,7 @@ OVHcloud mette a disposizione un’interfaccia per l’esecuzione del comando WH
 
 > [!primary]
 >
-> Il contenuto e la presentazione delle informazioni nel risultato di una richiesta WHOIS possono variare in base all'estensione del dominio (ad esempio: *.com*, *.net*, *.ovh*, ecc...).
+> Il contenuto e la presentazione delle informazioni nel risultato di una richiesta WHOIS possono variare in base all'estensione del dominio (ad esempio: *.com*, *.net*, *.ovh*, ecc.).
 >
 > Inoltre, i registri che gestiscono queste estensioni possono permettere ai titolari dei domini di nascondere alcuni elementi personali nel WHOIS.
 

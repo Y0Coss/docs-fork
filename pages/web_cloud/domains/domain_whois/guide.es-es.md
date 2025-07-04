@@ -1,20 +1,20 @@
 ---
 title: "Cómo obtener información relativa a un dominio con el WHOIS"
 excerpt: "Descubra cómo utilizar la herramienta WHOIS para obtener detalles sobre un dominio"
-updated: 2025-07-01
+updated: 2025-07-04
 ---
 
 ## Objetivo
 
-¿Quiere saber si un dominio está disponible? Si desea conocer determinados datos relativos a un dominio, como los datos del titular, la fecha de expiración, etc. ?
+¿Quiere saber si un dominio está disponible? Si desea conocer determinados datos relativos a un dominio, como los datos del titular, la fecha de expiración, etc.?
 
-El Whois, abreviatura del inglés "Who is ?", es un protocolo que permite acceder a diferentes datos asociados a un dominio.
+El Whois, abreviatura del inglés "¿Who is?", es un protocolo que permite acceder a diferentes datos asociados a un dominio.
 
 **Descubra cómo utilizar la herramienta WHOIS para obtener información sobre un dominio.**
 
 ## Requisitos
 
-- Tener un navegador de Internet (por ejemplo, Firefox, Chrome, Safari, Edge, etc.) en su ordenador, tablet o smartphone.
+- Tener un navegador de Internet (por ejemplo: Firefox, Chrome, Safari, Edge, etc.) en su ordenador, tablet o smartphone.
 
 ## Procedimiento
 
@@ -29,11 +29,11 @@ OVHcloud pone a su disposición una interfaz con la que podrá ejecutar el coman
 Siga estos pasos para acceder a los registros WHOIS asociados a un dominio:
 
 1. Acceda a nuestra [herramienta WHOIS online](/links/web/domains-whois).
-1. Introduzca el nombre de dominio (por ejemplo, *domain.tld* **sin** los *www*) en el campo `Dominio *`{.action} e introduzca el `Código de seguridad` que aparece en el campo `Introduzca el código de seguridad *`{.action}.
+1. Introduzca el nombre de dominio (por ejemplo:, *domain.tld* **sin** los *www*) en el campo `Dominio *`{.action} e introduzca el `Código de seguridad` que aparece en el campo `Introduzca el código de seguridad *`{.action}.
 1. Haga clic en el botón `Whois`{.action} para enviar la consulta.
 1. Consulte el resultado de la consulta WHOIS en la nueva sección titulada `Whois search results:`{.action} situada debajo del botón `Whois`{.action}.
 
-Para más información sobre el dominio, consulte el apartado **2**.
+En este resultado, encontrará toda la información disponible sobre el nombre de dominio especificado en la etapa **2**.
 
 ![WHOIS search results](/pages/assets/screens/website/whois/whois-search.png){.thumbnail}
 

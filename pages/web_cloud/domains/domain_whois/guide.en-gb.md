@@ -1,7 +1,7 @@
 ---
 title: "How to get information about a domain name with WHOIS"
 excerpt: "Find out how to use the WHOIS tool to get details on a domain name"
-updated: 2025-07-01
+updated: 2025-07-04
 ---
 
 ## Objective

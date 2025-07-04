@@ -1,7 +1,7 @@
 ---
 title: "WHOIS Informationen eines Domainnamens abrufen"
 excerpt: "Erfahren Sie, wie Sie mit dem WHOIS Tool verfügbare Details zu einem Domainname erhalten"
-updated: 2025-07-01
+updated: 2025-07-04
 ---
 
 ## Ziel
