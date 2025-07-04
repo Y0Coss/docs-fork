@@ -90,7 +90,7 @@ Définissez maintenant la branche de votre dépôt GitHub. La branche par défau
 
 Retournez sur le formulaire d'association de Git de votre espace client OVHcloud et indiquez le nom de la nouvelle branche que vous venez de créer.
 
-Si vous renseignez l'adresse d'un dépôt GitHub privé (de type `git@github.com:<username>/<repository_name>.git`), un champ `SSH key` (clé SSH) s'affiche sous le champ `Branch`.
+Si vous renseignez l'adresse d'un dépôt GitHub privé (de type `git@github.com:<username>/<repository_name>.git`), un champ `SSH key` (clé SSH) s'affichera sous le champ `Branch`.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/field-ssh-key.png){.thumbnail}
 
