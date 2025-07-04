@@ -1,7 +1,7 @@
 ---
-title: "VMware Cloud Director - Creating network components from the VCD control panel"
-excerpt: "Find out how to easily create network components within the VCD on OVHcloud control panel"
-updated: 2025-06-30
+title: "VMware Cloud Director - Creating network components from the Public VCF as-a-Service control panel"
+excerpt: "Find out how to easily create network components within the Public VCFaaS control panel"
+updated: 2025-07-04
 ---
 
 <style>
@@ -20,12 +20,12 @@ details[open]>summary::before {
 
 > [!primary]
 > 
-> VCD on OVHcloud is currently in Alpha phase. This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
+> This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
 > 
 
 ## Objective
 
-**To create, configure and effectively manage your network (IP spaces, Edge gateways and providers, and private network) from the VCD on OVHcloud control panel.**
+**To create, configure and effectively manage your network (IP spaces, Edge gateways and providers, and private network) from the Public VCF as-a-Service control panel.**
 
 ## Requirements
 

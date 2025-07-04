@@ -1,7 +1,7 @@
 ---
-title: "VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud"
-excerpt: "Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud"
-updated: 2025-06-30
+title: "VMware Cloud Director - Création de composants réseaux via Public VCF as-a-Service"
+excerpt: "Découvrez comment créer facilement des composants réseau depuis le control panel Public VCFaaS"
+updated: 2025-07-04
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 > [!primary]
 > 
-> VCD on OVHcloud est actuellement en phase Alpha. Ce guide peut donc évoluer et être mis à jour à l'avenir avec les avancées de nos équipes en charge de ce produit.
+> Ce guide est susceptible d'évoluer et d'être mis à jour à l'avenir, au rythme des avancées de nos équipes en charge de ce produit.
 >
 
 ## Objectif
