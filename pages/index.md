@@ -1312,6 +1312,7 @@
                 + [Redirecting a domain name managed by OVHcloud](web_cloud/domains/redirect_domain_name)
                 + [Domains - Shared Responsibility](web_cloud/domains/responsibility_model_domains)
                 + [How to renew OVHcloud domain names](web_cloud/domains/autorenew_domain_name)
+                + [How to get information about a domain name with WHOIS](web_cloud/domains/domain_whois)
                 + [How do I configure the WHOIS display for a domain name?](web_cloud/domains/domain_configure_whois_listing)
                 + [How to export the list of your domain names in CSV](web_cloud/domains/domain_csv_list)
             + [Changing a domain name owner (trade)](web-cloud-domains-domain-names-changing-a-domain-name-owner-trade)
