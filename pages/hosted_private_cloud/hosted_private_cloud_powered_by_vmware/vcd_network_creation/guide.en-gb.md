@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Creating network components from the Public VCF as-a-Service control panel"
 excerpt: "Find out how to easily create network components within the Public VCFaaS control panel"
-updated: 2025-07-04
+updated: 2025-07-07
 ---
 
 <style>

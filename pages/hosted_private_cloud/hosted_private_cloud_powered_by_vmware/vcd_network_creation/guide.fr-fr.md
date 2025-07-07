@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Création de composants réseaux via Public VCF as-a-Service"
-excerpt: "Découvrez comment créer facilement des composants réseau depuis le control panel Public VCFaaS"
-updated: 2025-07-04
+excerpt: "Découvrez comment créer facilement des composants réseau depuis l'interface Public VCFaaS"
+updated: 2025-07-07
 ---
 
 <style>
@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-**Ce guide vous montre comment créer, configurer et gérer efficacement votre réseau (espaces IP, les passerelles Edge et fournisseurs et réseau privé) depuis l'interface VCD on OVHcloud.**
+**Ce guide vous montre comment créer, configurer et gérer efficacement votre réseau (espaces IP, les passerelles Edge et fournisseurs et réseau privé) depuis l'interface Public VCF as-a-Servive.**
 
 ## Prérequis
 
@@ -349,13 +349,11 @@ Pour continuer l'étape 5 (de création d'un réseau privé), cliquez sur `SUIVA
 
 ![VCD Networking Network 06](images/NETWORK_6.png){.thumbnail}
 
-6\. Il est possible ici de définir des modèles de profil de segments (optionnel).
-
-6\. (Optionnel) Des modèles de profil de segment peuvent être définis ici.
+6\. (Facultatif) Des modèles de profil de segment peuvent être définis ici.
 
 Les profils de segment peuvent être utilisés pour des cas d’usage réseau avancés, comme l’activation du protocole CARP ou le mode Promiscuous dans des environnements imbriqués.
 
-Il existe **3 modes disponibles** :
+**Trois modes sont disponibles** :
 
 - **Par défaut** (appliqué automatiquement)
 - **Allow-DHCP**
@@ -369,10 +367,10 @@ Il existe **3 modes disponibles** :
 
 Pour configurer le mode Promiscuous ou Allow-DHCP :
 
-1. Rendez-vous dans `Mise en réseau`{.action} > `Tous les réseaux`{.action}
-2. Sélectionnez le réseau cible
-3. Dans la section `Profils de segment`{.action}, cliquez sur `Modifier`{.action}
-4. Choisissez le profil approprié
+1. Rendez-vous dans `Mise en réseau`{.action} > `Tous les réseaux`{.action}.
+2. Sélectionnez le réseau cible.
+3. Dans la section `Profils de segment`{.action}, cliquez sur `Modifier`{.action}.
+4. Choisissez le profil approprié.
 
 ![VCD Networking Network 06](images/NETWORK_6_1.png){.thumbnail}
 
