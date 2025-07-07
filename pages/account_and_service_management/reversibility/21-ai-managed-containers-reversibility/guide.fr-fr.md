@@ -30,16 +30,16 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-
+| Gestion des accès et secrets | Modèle RBAC de Kubernetes et  gestion des secrets ou bien utilisation  des solutions OVHcloud | YAML, JSON | **Entrante** : Adaptation des rôles, secrets et permissions à l’environnement  <br>**Sortante** : export des configurations, adaptation nécessaire selon l’environnement cible   | [AI Training - Premiers pas](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) |
+| Auto-scaling et load balancing managés | Auto-scaling horizontal/vertical, load balancing OVHcloud intégré | YAML, JSON | **Entrante** : adaptation des paramètres d’auto-scaling et loadbalancing dans l’environnement  <br>**Sortante** : export des configurations, adaptation à l’auto-scaling et loadbalancing dans l’environnement cible   | [Stratégies de mise à l'échelle](/pages/public_cloud/ai_machine_learning/deploy_guide_04_scaling_strategies) |
+| Monitoring et logging intégrés | Supervision intégrée (Prometheus, Grafana, Loki, etc.) via services managés OVHcloud | Prometheus metrics, logs, JSON | **Entrante** : adaptation des dashboards et des agents  <br>**Sortante** : export des métriques/logs et reconfiguration dans le nouvel environnement  | [Caractéristiques, capacités et limites](/pages/public_cloud/ai_machine_learning/deploy_guide_01_capabilities) |
+| Stockage persistant managé | Intégration Block/Object Storage OVHcloud, classes de stockage spécifiques | PVC, YAML, JSON | **Entrante** : adaptation des PersistentVolumeClaims à l'environnement. <br>**Sortante** : export des données via snapshot. Export, adaptation des volumes à la cible (ex : migration via CSI driver ou rsync  | [Caractéristiques, capacités et limites](/pages/public_cloud/ai_machine_learning/deploy_guide_01_capabilities) |
 
 ### 3 - Fonctionnalités spécifiques
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| Infrastructure as a code | Déploiement automatisé via modules Terraform spécifiques à OVHcloud | NA | **Entrante** : adaptation des scripts <br>**Sortante** : Rréécriture nécessaire des configurations Terraform dans le nouvel envirpnnement.  | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs).{External} |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrante**: le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortante**: commande et configuration un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
