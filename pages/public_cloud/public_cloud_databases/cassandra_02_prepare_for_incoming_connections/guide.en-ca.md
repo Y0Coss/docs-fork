@@ -7,10 +7,10 @@ updated: 2025-07-07
 > [!warning]
 >
 > **Important Notice – End of Sale (EOS)**
-> 
-> Sale of our Cassandra managed database service will end on 15 september 2025. 
-> 
-> Existing services will continue to operate until the end of life on 15 December 2025.
+>
+> Sale of our Cassandra managed database service will end on 15 September 2025.
+>
+> Existing services will continue to operate until the End Of Life (EOL) on 15 December 2025.
 >
 
 ## Objective
