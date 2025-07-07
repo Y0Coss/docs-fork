@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le webmail Zimbra"
 excerpt: "Découvrez l'interface du webmail Zimbra pour vos adresses e-mail MX Plan OVHcloud"
-updated: 2025-02-12
+updated: 2025-07-08
 ---
 
 <style>
@@ -455,8 +455,8 @@ Cliquez sur l'icône `Mallette`{.action} située dans la barre supérieure pour 
 
 1. Dans la colonne de gauche, vous retrouvez les dossiers de votre espace de stockage.
 
-    - Pour créer un nouveau dossier, cliquez sur `+ Ajouter un dossier`{.action} en bas de la colonne. Renseignez le nom souhaité puis validez en appuyant sur la touche `entrée`{.action}.
-    - Pour créer un sous-dossier, réalisez un clic droit sur l'un des dossiers, puis cliquez sur `Créer un sous-dossier`{.action}. Renseignez le nom souhaité puis validez en appuyant sur la touche `entrée`{.action}.
+    - Pour créer un nouveau dossier, cliquez sur `+ Ajouter un dossier`{.action} en bas de la colonne. Renseignez le nom souhaité puis validez en appuyant sur la touche `Entrée`{.action}.
+    - Pour créer un sous-dossier, faites un clic droit sur l'un des dossiers, puis cliquez sur `Créer un sous-dossier`{.action}. Renseignez le nom souhaité puis validez en appuyant sur la touche `Entrée`{.action}.
 
 2. Dans la colonne centrale, vous retrouvez la liste des fichiers présents dans le dossier sélectionné.
 
@@ -466,7 +466,7 @@ Cliquez sur l'icône `Mallette`{.action} située dans la barre supérieure pour 
 
 #### Ajouter un fichier
 
-Pour ajouter un fichier à votre espace de stockage, suivez les étapes ci-dessous :
+Pour ajouter un fichier dans votre espace de stockage, suivez les étapes ci-dessous :
 
 1. Cliquez sur `Télécharger`{.action} (Upload) dans la colonne de gauche.
 2. Depuis la fenêtre d'exploration de fichiers, sélectionnez le ou les fichiers à téléverser sur votre espace de stockage.
@@ -480,7 +480,7 @@ Le partage vous permet de donner accès à un dossier ou à un fichier sur votre
 
 > [!warning]
 >
-> Les partages incluant la possibilité d'ajouter, de modifier, de supprimer et d'administrer les dossiers et fichiers sont possibles uniquement avec un autre compte Zimbra Pro.
+> Les partages (incluant la possibilité d'ajouter, de modifier, de supprimer et d'administrer les dossiers et fichiers) sont possibles uniquement avec un autre compte Zimbra Pro.
 
 > [!tabs]
 > **Partager un fichier**
@@ -495,7 +495,7 @@ Le partage vous permet de donner accès à un dossier ou à un fichier sur votre
 >>
 > **Partager un dossier**
 >>
->> 1. Réalisez un clic droit sur le dossier à partager, puis cliquez sur `Partager...`{.action}.
+>> 1. Faites un clic droit sur le dossier à partager, puis cliquez sur `Partager...`{.action}.
 >> 2. Saisissez l'adresse e-mail de l'invité, puis cliquez sur `Ajouter`{.action}.
 >> 3. Choisissez les droits que vous souhaitez attribuer à l'invité.
 >> 4. Cliquez sur `Enregistrer`{.action} pour finaliser le partage.
