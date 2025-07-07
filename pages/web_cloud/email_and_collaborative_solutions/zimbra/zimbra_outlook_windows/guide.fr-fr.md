@@ -108,7 +108,7 @@ Pour ajouter un compte Zimbra Pro sur Outlook classique, suivez sur les étapes 
 >>
 >> Il n'est pas nécessaire de modifier les autres paramètres. Cliquez sur `Appliquer`{.action} pour valider les paramètres et assurez-vous qu'ils soient conformes. Cliquez enfin sur `OK`{.action} pour accéder à Outlook et commencer à utiliser votre adresse e-mail.
 >>
->> ![outlook Windows](images/outlook-windows-add-step07.png){.thumbnail .h-500}
+>> ![outlook Windows](images/outlook-windows-add-step-07.png){.thumbnail .h-500}
 
 > [!warning]
 >

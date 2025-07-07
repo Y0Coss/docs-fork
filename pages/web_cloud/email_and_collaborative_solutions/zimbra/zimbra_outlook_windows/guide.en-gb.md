@@ -111,7 +111,7 @@ To add a Zimbra Pro account on Outlook Classic, follow the steps below by clicki
 >>
 >> You do not need to change any other settings. Click `Apply`{.action} to validate the settings and ensure that they are compliant. Finally, click `OK`{.action} to go to Outlook and start using your email address.
 >>
->> ![outlook Windows](images/outlook-windows-add-step07.png){.thumbnail .h-500}
+>> ![outlook Windows](images/outlook-windows-add-step-07.png){.thumbnail .h-500}
 
 > [!warning]
 >
