@@ -46,12 +46,7 @@ Features of the product line fall into three categories:
 | Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Inbound**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outbound**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](https://www.ovhcloud.com/en/security/anti-ddos/) |
 
 **List of architectures**
-xxxx
-
-The product is divided into two service offers:
-
-* xxxx
-* xxx
+The product is based on managed Kubernetes clusters, with full orchestration of AI workloads (deployment, scaling, monitoring). Architectures support horizontal and vertical auto-scaling, integrated load balancing, high availability, GPU/CPU integration for training and inference and access to persistant storage services (Block storage, Object Storage). CI/CD integration, multi-model management, and access governance are native.
 
 **Partner services**
 
@@ -60,7 +55,9 @@ The OVHcloud partners concerned are listed in the [OVHcloud partners directory](
 OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
 
 **Cost and fees**
+Billing on a pay-per-use basis. It stops when the customer no longer consumes resources. No specific cancellation fees apply: deleting the service will stop the billing immediately. Any associated OVHcloud credits cannot be transferred.
+After the service has been cancelled, OVHcloud frees up its resources, making it impossible to retrieve the data. It is the client’s responsibility to export his configurations, manifests and images prior to termination, due to the release of resources.
 
-**Data retention after contract termination **
+**Data retention after contract termination**
 
-
+After deleting the service or contract termination, OVHcloud deletes permanently all images, models, logs, metrics and configurations stored on its environment . Automatic backups and logs are also deleted. It is therefore imperative to export all the necessary data before deletion, as you cannot restore it after these actions.
