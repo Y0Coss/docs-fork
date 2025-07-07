@@ -32,14 +32,17 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
+| Access and secret management | Kubernetes RBAC model and secret management or use of OVHcloud solutions | YAML, JSON | **Inbound**: Adapt roles, secrets and permissions to the environment <br>**Outbound** : export configurations, adaptation required according to the target environment   | [AI Training - Getting started](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) |
+| Managed auto-scaling and load balancing | Horizontal and vertical auto-scaling, integrated OVHcloud load balancing | YAML, JSON | **Inbound** : adaptation of auto-scaling and loadbalancing parameters in the environment <br>**Outbound** : export configurations, adaptation to auto-scaling and loadbalancing in the target environment   | [AI Deploy - Scaling strategies](/pages/public_cloud/ai_machine_learning/deploy_guide_04_scaling_strategies) |
+| Integrated monitoring and logging | Integrated supervision (Prometheus, Grafana, Loki, etc.) via OVHcloud managed services | Prometheus metrics, logs, JSON | **Inbound**: Adapt dashboards and agents <br>**Outbound**: export metrics, logs and reconfigure the new environment | [AI Deploy-Features, Capabilities and Limits](/pages/public_cloud/ai_machine_learning/deploy_guide_01_capabilities) |
+| Managed Persistent Storage | OVHcloud Block storage, Object Storage integration, specific storage classes | PVC, YAML, JSON | **Inbound**: adapte PersistentVolumeClaims to the environment. <br>**Outbound**: export data via snapshot. Export, adapt volumes to the target (e.g. migration via CSI driver or rsync) | [AI Deploy-Features, Capabilities and Limits](/pages/public_cloud/ai_machine_learning/deploy_guide_01_capabilities) |
 
 
 **Specific features**
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
+| Infrastructure as a Code | Automated deployment via Terraform modules specific to OVHcloud | NA | **Inbound**: adapt scripts   <br>  **Outbound**: Rewrite Terraform configurations required | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs).{External} |
 | Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Inbound**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outbound**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](https://www.ovhcloud.com/en/security/anti-ddos/) |
 
 **List of architectures**
