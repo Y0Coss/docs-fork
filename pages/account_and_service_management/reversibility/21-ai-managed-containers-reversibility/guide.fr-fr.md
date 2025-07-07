@@ -56,5 +56,5 @@ OVHcloud dispose également d’un service dédié : [OVHcloud Professional Serv
 La facturation est à l'usage et sans engagement. Aucun frais de résiliation spécifique n’est appliqué : la suppression du service arrête la facturation immédiatement. Les crédits OVHcloud éventuellement associés ne sont pas transférables. Il incombe au client d’exporter ses configurations, manifests et images avant suppression, car leur effacement est irréversible.
 
 ## Conservation des données après résiliation du contrat
-Après suppression du service ou résiliation du contrat, OVHcloud supprime définitivement toutes les images, modèles, logs, métriques et configurations stockés sur son environnement. Les sauvegardes automatiques et logs internes sont également supprimés. Il est donc impératif d’exporter toutes les données nécessaires avant suppression, aucune restauration n’étant possible après ces actions.
+Après suppression du service ou résiliation du contrat, OVHcloud supprime définitivement toutes les images, modèles, logs, métriques et configurations stockés sur son environnement. Les sauvegardes automatiques et logs sont également supprimés. Il est donc impératif d’exporter toutes les données nécessaires avant suppression, aucune restauration n’étant possible après ces actions.
 
