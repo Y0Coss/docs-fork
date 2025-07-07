@@ -1,14 +1,14 @@
 ---
 title: Cassandra - Configure your Cassandra instance to accept incoming connections
 excerpt: Find out how to configure your Cassandra instance to accept incoming connections
-updated: 2025-07-04
+updated: 2025-07-07
 ---
 
 > [!warning]
 >
-> **Important Notice – End of Sales (EOS)**
+> **Important Notice – End of Sale (EOS)**
 > 
-> Sales of our Cassandra managed database service will end on 15 september 2025. 
+> Sale of our Cassandra managed database service will end on 15 september 2025. 
 > 
 > Existing services will continue to operate until the end of life on 15 December 2025.
 >
