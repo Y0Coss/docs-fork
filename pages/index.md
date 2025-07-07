@@ -93,6 +93,9 @@
             + [Object Storage 3AZ product reversibility policy](account_and_service_management/reversibility/10-object-storage-3az-reversibility-policy)
             + [Orchestration product reversibility policy](account_and_service_management/reversibility/12-reversibility-orchestration)
             + [Managed OCI artifact Registry Product Reversibility Policy](account_and_service_management/reversibility/13-reversibility-oci-registry)
+            + [Reversibility Policy for the Notebook Interface product](/pages/account_and_service_management/reversibility/20-ai-notebook-reversbility)
+            + [Reversibility Policy for the Managed Containers product](/pages/account_and_service_management/reversibility/21-ai-managed-containers-reversbility)
+              
     + [Responsibility sharing](account-and-service-management-responsibility-sharing)
         + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)
         + [File Storage services - Responsibility model](account_and_service_management/responsibility_sharing/file-storage)
@@ -1086,6 +1089,8 @@
             + [Registries - Use & manage registries](public_cloud/ai_machine_learning/gi_07_manage_registry)
             + [AI Tools - Lifecycle policy](public_cloud/ai_machine_learning/gi_09_lifecycle_policy)
             + [AI Tools - ovhai SDK](public_cloud/ai_machine_learning/gi_10_ovhai_sdk)
+            + [Reversibility Policy for the Notebook Interface product](/pages/account_and_service_management/reversibility/20-ai-notebook-reversbility)
+            + [Reversibility Policy for the Managed Containers product](/pages/account_and_service_management/reversibility/21-ai-managed-containers-reversbility)
         + [Command Line Interface](public-cloud-ai-and-machine-learning-command-line-interface)
             + [CLI - Installation](public_cloud/ai_machine_learning/cli_10_howto_install_cli)
             + [CLI - Launch an AI notebook](public_cloud/ai_machine_learning/cli_11_howto_run_notebook_cli)
