@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2025-06-17
+updated: 2025-07-07
 ---
 
 ## Introduction
@@ -231,8 +231,7 @@ Le verrouillage d'objet peut être utilisé avec la réplication pour permettre 
 >
 > - Le versioning doit être activé sur le bucket source et le bucket de destination.
 > - Le verrouillage d'objet doit être activé sur les buckets source et de destination.
-> 
-
+>
 
 #### Exemple de configuration de réplication
 

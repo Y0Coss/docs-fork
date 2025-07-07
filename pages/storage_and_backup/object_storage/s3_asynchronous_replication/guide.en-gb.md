@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2025-06-17
+updated: 2025-07-07
 ---
 
 ## Introduction
@@ -234,7 +234,6 @@ Object Lock can be used with replication to enable automatic copying of locked o
 > - Versioning must be enabled on both source and destination buckets.
 > - Object Lock must be enabled on both source and destination buckets.
 >
-
 
 #### Example of replication configuration
 
