@@ -44,10 +44,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 ## Liste des architectures
 
-blabla
-Le produit est décliné en deux offres de service : 
-- xxxxx
-- xxxxx
+Le service s’appuie sur des clusters Kubernetes managés, avec orchestration complète des workloads IA (déploiement, scaling, monitoring). Les architectures supportent l’auto-scaling horizontal/vertical, le load balacing intégré, la haute disponibilité, l’intégration GPU/CPU pour l’entraînement et l’inférence et l’accès à des services de stockage persistant (Block/Object Storage). L’intégration CI/CD, la gestion multi-modèles et la gouvernance des accès sont natives.
 
 ## Services partenaires
 
@@ -56,8 +53,8 @@ Les partenaires OVHcloud concernés figurent dans l'annuaire des [partenaires OV
 OVHcloud dispose également d’un service dédié : [OVHcloud Professional Services](/links/professional-services).
 
 ## Coûts et frais
-
+La facturation est à l'usage et sans engagement. Aucun frais de résiliation spécifique n’est appliqué : la suppression du service arrête la facturation immédiatement. Les crédits OVHcloud éventuellement associés ne sont pas transférables. Il incombe au client d’exporter ses configurations, manifests et images avant suppression, car leur effacement est irréversible.
 
 ## Conservation des données après résiliation du contrat
-
+Après suppression du service ou résiliation du contrat, OVHcloud supprime définitivement toutes les images, modèles, logs, métriques et configurations stockés sur son environnement. Les sauvegardes automatiques et logs internes sont également supprimés. Il est donc impératif d’exporter toutes les données nécessaires avant suppression, aucune restauration n’étant possible après ces actions.
 
