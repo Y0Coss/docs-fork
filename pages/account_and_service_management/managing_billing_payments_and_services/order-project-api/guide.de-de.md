@@ -12,8 +12,8 @@ Die Erstellung eines Projekts ist der erste Schritt zum Deployment von [Public C
 
 ## Voraussetzungen
 
-- Sie verfügen über gültige OVHcloud-Kennungen
-- Sie haben einen [gültigen](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) und in Ihrem OVHcloud Account gespeicherten Zahlungsmodus
+- Sie verfügen über gültige OVHcloud-Kennungen.
+- Sie haben einen [gültigen](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) und in Ihrem OVHcloud Account gespeicherten Zahlungsmodus.
 - Sie müssen mit der [Funktionsweise der OVHcloud APIv6 vertraut sein](/pages/manage_and_operate/api/first-steps).
 
 ## In der praktischen Anwendung
