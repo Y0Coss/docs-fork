@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets (EN)
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2025-07-07
+updated: 2025-07-10
 ---
 
 ## Introduction
