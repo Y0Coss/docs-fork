@@ -1,11 +1,8 @@
 ---
 title: 'Object Storage - Getting Started with Versioning'
 excerpt: 'Learn how to enable and manage versioning for your OVHcloud Object Storage buckets using APIs'
-updated: 2024-07-08
+updated: 2025-07-07
 ---
-
-> [!primary]
-> This guide documents API usage only. Future updates will cover the OVHcloud Control Panel.
 
 ## Objective
 
@@ -90,11 +87,11 @@ When versioning is enabled:
 >> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
 >> ```
 >>
->> **Explications :**
+>> **Explanations:**
 >>
->> - **put-bucket-versioning :** AWS CLI command to configure version management.
->> - **--bucket my-bucket :** replace `my-bucket` with the name of your bucket.
->> - **--versioning-configuration Status=Enabled :** enable versioning for the specified bucket.
+>> - `put-bucket-versioning`: AWS CLI command to configure version management.
+>> - `--bucket my-bucket`: replace `my-bucket` with the name of your bucket.
+>> - `--versioning-configuration Status=Enabled`: enable versioning for the specified bucket.
 >>
 >> After enabling versioning, all objects added to the bucket will have a unique version identifier. This means that each time an object is modified or deleted, a new version is created, which can be restored if necessary.
 >>
@@ -118,13 +115,13 @@ When versioning is enabled:
 >>
 >> ```sh
 >> aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Suspended
->> ````
+>> ```
 >>
 >> **Explanations:**
 >>
->> - **put-bucket-versioning :** AWS CLI command to configure versioning.
->> - **--bucket my-bucket :** replace `my-bucket` with the name of your bucket.
->> - **--versioning-configuration Status=Suspended :** suspend versioning for the specified bucket.
+>> - `put-bucket-versioning`: AWS CLI command to configure versioning.
+>> - `--bucket my-bucket`: replace `my-bucket` with the name of your bucket.
+>> - `--versioning-configuration Status=Suspended`: suspend versioning for the specified bucket.
 >>
 >> Suspending versioning prevents new objects from receiving a version identifier. Existing objects and their versions remain unchanged, but new objects will not have version identifiers until versioning is reactivated.
 >>
@@ -135,46 +132,45 @@ When versioning is enabled:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> You can show or hide object versions in an Object Storage bucket by `clicking`{.action} on the following button:
+>> You can show or hide object versions in an Object Storage bucket by clicking on the following button:
 >>
->> [enable version objects](images/bucket_enable_versions.png)
+>> [enable version objects](images/bucket_enable_versions.png){.thumbnail}
 >>
 
 #### View the different versions of an object
 
 > ![tabs]
 > Via the OVHcloud Control Panel
->> To view the different versions of an object, `click`{.action} directly on the object concerned. You'll be redirected to a page detailing the information and versions available for this object:
+>> To view the different versions of an object, click directly on the object concerned. You'll be redirected to a page detailing the information and versions available for this object:
 >>
->> ![information versions object](images/bucket_versions_object_details.png)
+>> ![information versions object](images/bucket_versions_object_details.png){.thumbnail}
 >>
 
 #### Download a current or previous version of an object
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> From the main page of your Object Storage bucket (if version display is enabled) or from the object details page (see previous step), you can download the desired version by `clicking`{.action} on the three dots, then on `Download`{.action}.
+>> From the main page of your Object Storage bucket (if version display is enabled) or from the object details page (see previous step), you can download the desired version by clickin the `...`{.action} button, then on `Download`{.action}.
 >>
->> ![download current or versioned objects](images/bucket_download_versions.png)
+>> ![download current or versioned objects](images/bucket_download_versions.png){.thumbnail}
 >>
 
 ### Object deletion: simple, permanent deletion and Delete Marker management
 
 > [!primary]
 >
-> If versioning is enabled on your S3 bucket, deleting an object adds a Delete Marker: the object disappears from the default view, but remains visible via the View versions option.
+> If versioning is enabled on your S3 bucket, deleting an object adds a Delete Marker: the object disappears from the default view, but remains visible via the `View versions`{.action} option.
 >
 > This protection allows you to restore an object deleted by mistake.
 >
 
 > [!tabs]
-> Via the OVHcloud customer area
->> From the main page of your Object Storage bucket, or from the object details page, you can delete your object by clicking on `delete`{.action}.
+> Via the OVHcloud Control Panel
+>> From the main page of your Object Storage bucket, or from the object details page, you can delete your object by clicking on `Delete`{.action}.
 >>
->> ![delete current or versioned objects](images/bucket_delete_object_versions.png)
+>> ![delete current or versioned objects](images/bucket_delete_object_versions.png){.thumbnail}
 >>
->>
->> To delete a version definitively, click on the `three dots`{.action}, then on `Delete`{.action}, and confirm the definitive deletion action.
+>> To delete a version permanently, click the `...`{.action} button, then on `Delete`{.action}, and confirm the definitive deletion action.
 >>
 >>
 > Via the AWS CLI
@@ -182,7 +178,7 @@ When versioning is enabled:
 >>
 >> ```bash
 >> aws s3api delete-object --bucket <bucket> --key <objet>
->> ````
+>> ```
 >>
 >> If you want to see the different versions of an object, use the following command:
 >>
@@ -200,11 +196,10 @@ When versioning is enabled:
 >>
 >> - List delete markers and identify the version-id of the delete marker:
 >>
->>
 >> ```bash
 >> aws s3api list-object-versions --bucket my-bucket --prefix my-object. txt \
 >> --query "DeleteMarkers" --output json
->> ````
+>> ```
 >>
 >> - Delete this delete marker:
 >>
@@ -213,7 +208,7 @@ When versioning is enabled:
 >> --bucket my-bucket \
 >> --key my-object.txt \
 >> --version-id <delete-marker-version-id>
->> ````
+>> ```
 >>
 
 ### Important Considerations
