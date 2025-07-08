@@ -30,7 +30,7 @@ Consultez notre guide [Object Storage - Premiers pas avec Object Storage](/pages
 
 4\. Nommez la connexion, par exemple « OVHCLOUD_OBJECT_STORAGE » et ajoutez les endpoints OVHcloud Object Storage associés dans le champ `Address`.
 
-![page de connexion](images/01.Connections.png){.thumbnail}
+![page de connexion](images/01-connections.png){.thumbnail}
 
 La liste de tous les endooints OVHcloud Object Storage se trouve [ici](/pages/storage_and_backup/object_storage/s3_location).
 
