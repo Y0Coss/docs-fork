@@ -1,9 +1,9 @@
 ---
 title: "Reversibility Policy for the AI Managed Container  product"
-updated: 2025-06-27
+updated: 2025-07-08
 ---
 
-**Objective**
+## Objective
 
 This document describes the reversibility policy for the AI Managed Container product covering the OVHcloud AI Deploy and AI Training offers.
 
