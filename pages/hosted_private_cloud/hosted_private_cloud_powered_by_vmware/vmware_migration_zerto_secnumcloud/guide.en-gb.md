@@ -1,6 +1,6 @@
 ---
-title: Move2Cloud - Migrate VMware workloads to OVHcloud Hosted Private Cloud with Zerto
-excerpt: "Learn how to migrate your on-premises VMware workloads to an OVHcloud Hosted Private Cloud environment using Zerto Virtual Replication."
+title: Move2Cloud - Migrate VMware workloads to OVHcloud SecNumCloud Hosted Private Cloud with Zerto
+excerpt: "Learn how to migrate on-premises VMware workloads to a SecNumCloud-qualified Hosted Private Cloud using Zerto Virtual Replication."
 updated: 2025-07-08
 ---
 
@@ -65,7 +65,8 @@ Record the full network configuration used by your source VMs:
 - IP address ranges to preserve
 - Inter-VM communication flows (source/destination, port, protocol)
 
-This network design will be recreated in your OVHcloud HPC tenant using `vRack` and NSX-T.
+This network design will be recreated in your OVHcloud HPC tenant using NSX-T overlay segments.
+
 You can find more about network planning in [NSX-T - First steps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
 For additional guidance from Zerto, refer to [Planning Your Installation](https://help.zerto.com/bundle/Install.VC.HTML/page/Planning_Your_Installation.htm){.external}.
@@ -90,33 +91,30 @@ Based on your workloads, select the most appropriate storage type:
 Estimate total disk space needed, plus redundancy if applicable.
 If your workloads require high IOPS, vSAN is the preferred option.
 
-### Step 2.3: Plan target network
+### Step 2.3: Plan the target network
 
-Plan how your virtual network will be recreated using NSX-T:
+Plan your virtual network using NSX-T:
 
-- Decide which segments will be VLAN-backed vs. overlay
-- Identify gateway needs (Tier-0 and Tier-1)
-- Evaluate firewalling rules and north/south traffic
+- Only **overlay segments** are supported; VLAN-backed segments are not allowed
+- Define Tier-0 and Tier-1 gateway needs based on internal routing
+- Configure firewall rules for east-west traffic
 
-If you need to expose services on the internet, you can:
+No direct internet exposure is permitted. All access must go through approved bastion or VPN links.
 
-- Request public IPs via your `Hosted Private Cloud`{.action}
-- Migrate your existing IP ranges using the [Bring Your Own IP (BYOIP)](/links/network/byoip) feature
+> [!primary]
+> The [Bring Your Own IP (BYOIP)](/links/network/byoip) feature is not available in SecNumCloud environments.
 
 ## Step 3: Enable access to the vCenter
 
-Access to vCenter is restricted by default in all OVHcloud HPC environments.
+Access to `vCenter`{.action} is restricted by default in SecNumCloud environments.
 
-You must explicitly allow your admin IPs to reach the `vCenter`{.action} endpoint.
+You must request access from OVHcloud Support.
 
-To do so:
-
-1. Log in to the [OVHcloud Control Panel](/links/manager)
+1. Open a support ticket from the [OVHcloud Control Panel](/links/manager)
 2. Select your `Hosted Private Cloud`{.action}
-3. Go to the `Secure SSL Gateway`{.action} tab
-4. Add your source infrastructure IPs and Zerto components to the whitelist
+3. Provide the list of source IPs that require access
 
-For step-by-step instructions, refer to [Authorise IPs to connect to vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter).
+For step-by-step instructions, refer to [Authorize IPs to connect to vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter).
 
 ## Step 4: Configure roles and permissions
 
@@ -162,28 +160,30 @@ Details on required permissions are available in Zerto’s documentation:
 
 Before starting any VM replication or failover test, your Hosted Private Cloud network must be ready to receive the workloads. This includes replicating the source structure, creating the right segments, and preparing firewall rules.
 
-### Step 5.1: Recreate your VLANs and segments
+### Step 5.1: Recreate your segments
 
-When your HPC is delivered, it comes with a default distributed virtual switch and at least one VLAN. You can add your own VLANs via the `vRack`{.action}.
+In SecNumCloud environments, VLAN-backed segments and vRack are not available.
 
-If you are using NSX-T, plan your segmentation as follows:
+When your HPC is delivered, it comes with a default distributed virtual switch. You must use NSX-T overlay segments only.
 
-- Define your segments (VLAN-backed or overlay)
-- Assign each to a corresponding application batch or service zone
-- Recreate IP addressing schemes as defined in your inventory
+Use `NSX Manager`{.action} to:
 
-Refer to [NSX-T – First steps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) for details on creating segments and assigning them to VMs.
+- Create overlay segments for each application batch or service zone
+- Reproduce the IP addressing plan from your inventory
+- Attach segments to the relevant gateways (usually Tier-1)
+
+Do not expose any segment to the internet. Access must be routed through bastions or private VPN links.
 
 ### Step 5.2: Configure NSX-T routing and gateways
 
-If using NSX-T, you must define how traffic will route between segments and to the internet:
+In SNC environments, NSX-T gateways are used only for internal routing or secure VPN-based flows.
 
-- A **Tier-1 Gateway** handles internal routing
-- A **Tier-0 Gateway** connects your environment to upstream services or external networks
+- A **Tier-1 Gateway** handles internal routing between overlay segments
+- **Tier-0 Gateways** may be deployed but only for approved VPN uplinks
 
-These gateways are automatically deployed when NSX-T is enabled. You can review and modify them in the `NSX Manager`{.action} interface.
+Use the `NSX Manager`{.action} interface to define and manage your gateway configuration.
 
-Set up routing and services based on your flow matrix defined in Step 1.
+No external/public IP connectivity is allowed.
 
 ### Step 5.3: Prepare firewall rules
 
@@ -193,9 +193,14 @@ NSX-T provides a **distributed firewall (DFW)** that controls east-west traffic 
 - Management access to vCenter and Zerto components
 - Optional: quarantine or isolation zones for test VMs
 
-If you're not using NSX-T, implement similar rules using your preferred virtual appliance firewall (e.g., FortiVM, Stormshield, Palo Alto VM-Series).
+If you are not using NSX-T, implement similar rules using your preferred virtual firewall appliance (e.g., FortiVM, Stormshield, Palo Alto VM-Series).
 
 You can find an overview of how NSX handles these features in [NSX-T – First steps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
+
+> [!primary]
+> 
+> In SecNumCloud, firewall rules must strictly restrict traffic to internal flows or secured VPN entry points. No DNAT/SNAT rules toward the public internet are allowed
+>
 
 ## Step 6: Deploy core services in the target HPC
 
@@ -217,21 +222,13 @@ You can also establish secure communication between the on-prem AD and the tenan
 
 ## Step 7: Install and activate Zerto in the OVHcloud tenant
 
-Zerto is installed and managed per site. On the OVHcloud side, the components are deployed automatically when you activate Zerto.
+Zerto must be installed by OVHcloud in SecNumCloud environments.
 
-In your `Hosted Private Cloud`{.action} interface:
+1. In the `Hosted Private Cloud`{.action} interface, open a support ticket
+2. Request Zerto Virtual Replication for your SNC tenant
+3. Wait for OVHcloud to deploy the ZVM, ZVRAs, and required firewall rules
 
-1. Go to `Disaster Recovery`{.action}
-2. Select `Enable Zerto Virtual Replication`{.action}
-3. Confirm and wait for deployment
-
-OVHcloud will deploy the following:
-
-- A dedicated ZVM (Zerto Virtual Manager)
-- A ZVRA (Zerto Virtual Replication Appliance) on each ESXi host
-- An OVH-managed NSX-T firewall with preconfigured rules for Zerto ports
-
-Full details can be found in [Zerto Virtual Replication on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_zerto_virtual_replication_customer_to_ovh).
+Full details: [Zerto Virtual Replication on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_zerto_virtual_replication_customer_to_ovh)
 
 ## Step 8: Install Zerto on the source site
 
@@ -244,7 +241,7 @@ The main components are:
 - ZVM: Installed on a Windows Server with vSphere access
 - ZVRAs: Deployed on each ESXi host hosting protected VMs
 
-Make sure that:
+Ensure that:
 
 - TCP ports 9071, 9081 are open between ZVMs
 - TCP ports 4007, 4008 are open between ZVRAs

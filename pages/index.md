@@ -510,6 +510,7 @@
             + [VPN-SPN Concept](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-vpn-spn)
             + [SPN Connector Concept](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-spn-connector)
             + [Migrating VMware Workloads to OVHcloud SecNumCloud with Veeam Replication](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam_secnumcloud)
+            + [Migrating VMware Workloads to OVHcloud SecNumCloud with Zerto](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto_secnumcloud)
         + [Migration](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration)
             + [Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Veeam Replication](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam)
             + [Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Zerto](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto)
