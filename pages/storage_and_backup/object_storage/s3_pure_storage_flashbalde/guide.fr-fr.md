@@ -8,7 +8,7 @@ updated: 2025-07-02
 
 Ce guide a pour but de vous aider à configurer et à utiliser OVHcloud Object Storage comme cible de réplication pour Pure Storage « [Flashblade unified storage platform](https://www.purestorage.com/fr/products/unstructured-data-storage/flashblade-s.html){.external} ».
 
-Il explique comment configurer, gérer et répliquer facilement des objets compatibles Pure Storage Flashblade S3 vers OVHcloud Object Storage.
+Il explique comment configurer, gérer et répliquer facilement des objets compatibles Pure Storage Flashblade S3<sup>1</sup> vers OVHcloud Object Storage.
 
 ## Prérequis
 
@@ -79,3 +79,6 @@ La liste de tous les endooints OVHcloud Object Storage se trouve [ici](/pages/st
 ## Aller plus loin
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
+
