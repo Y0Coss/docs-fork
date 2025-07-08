@@ -106,7 +106,7 @@ Szczegółowe informacje można znaleźć na stronie <http://www.usenix.org.uk/c
 
 ///
 
-### UCEprotect
+#### UCEprotect
 
 /// details | Więcej informacji...
 
@@ -126,7 +126,7 @@ Jeśli jesteś aktualnie zainteresowany(a) tą sytuacją, zalecamy:
 
 ///
 
-### Fabel Spamsources
+#### Fabel Spamsources
 
 /// details | Więcej informacji...
 
@@ -142,7 +142,7 @@ Usunięcie listy powinno zająć od 20 do 30 minut.
 
 ///
 
-### MIPSpace
+#### MIPSpace
 
 /// details | Więcej informacji...
 
