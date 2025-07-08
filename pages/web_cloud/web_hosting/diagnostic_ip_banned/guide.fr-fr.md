@@ -11,7 +11,7 @@ Si votre site web affiche une page « Your IP has been banned », cela signifie 
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-**Découvrez comment remettre votre site web en ligne s'il affiche une page « Your IP has been banned ».**
+**Découvrez comment débloquer votre adresse IP si votre site web affiche une page « Your IP has been banned ».**
 
 ## Prérequis
 
