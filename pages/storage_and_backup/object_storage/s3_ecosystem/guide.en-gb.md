@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Third-party applications compatibility
 excerpt: This guide provides a list of tested, certified third-party applications compatible with OVHcloud Object Storage
-updated: 2025-06-23
+updated: 2025-07-08
 ---
 
 ## Objective
@@ -54,6 +54,12 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 | --- | --- | --- | --- |
 | **ownCloud** | Compatible | Open-source file sync and share platform for collaboration. More details on [ownCloud](https://owncloud.com/product){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_owncloud) |
 | **NextCloud Files** | Compatible | Open-source file sync and share platform for collaboration. More details on [NextCloud](https://nextcloud.com/files/){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_nextcloud) |
+
+### Storage platforms
+
+| Tool/Software | Compatibility | Notes | Getting Started  |
+| --- | --- | --- | --- |
+| **Pure Storage FlashBlade** | Compatible - Certified | Officially supported as an external S3-compatible object storage replication target. | [Guide](/pages/storage_and_backup/object_storage/s3_pure_storage_flashblade) |
 
 ## Go further
  
