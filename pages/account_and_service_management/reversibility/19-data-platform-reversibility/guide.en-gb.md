@@ -5,10 +5,9 @@ updated: 2025-07-08
 
 **Objective**
 
-This document describes the reversibility policy for the Managed Data Visualization product covering the OVHcloud Managed Grafana offer.
+This document describes the reversibility policy for the Managed Data Visualization product covering the OVHcloud Data Platform offer.
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
-
 
 ## List of features
 
@@ -42,6 +41,7 @@ The features of the product line fall into three categories:
 | Integrated monitoring | Monitoring and centralized performance management developed by OVHcloud.| NA | **Inbound**: Default integrated tracking interface on platform <br> **Outbound**: Logs and monitoring information cannot be exported | [Control center documentation](https://docs.dataplatform.ovh.net/#/en/product/cc/index) |
 
 ## List of architectures
+
 OVHcloud Unified Data Platform service is based on open-source technologies such as Trino, Apache Iceberg, and Kubernetes. It is compatible with OVHcloud Public Cloud architectures.
 
 ## Partner Services
@@ -59,4 +59,3 @@ OVHcloud uses pay-as-you-go pricing, with no egress fee. Billing is interrupted 
 ## Data retention after service termination
 
 Once the service is canceled, all data are irreversibly deleted. It is the client’s responsibility to carry out a full backup or migration before termination.
-

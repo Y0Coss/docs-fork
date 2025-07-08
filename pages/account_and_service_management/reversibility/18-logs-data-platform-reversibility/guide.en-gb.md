@@ -1,6 +1,6 @@
 ---
 title: "Reversibility Policy for the Managed Log Manager product"
-updated: 2025-06-27
+updated: 2025-07-08
 ---
 
 **Objective**
@@ -31,7 +31,7 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| Control Panel platform | User Interface in the Control Panel to create streams, dashboard, alias, index, OpenSearch dashboards or Logstash Inputs | N/A | **Incoming**: data and configurations related to the lifecycle of the service. <br> **Outgoing**: recreate configurations on another logs manager service. | [OVHcloud API](https://eu.api.ovh.com/console/?section=%2Fdbaas%2Flogs&branch=v1) |
+| Control Panel platform | User Interface in the Control Panel to create streams, dashboard, alias, index, OpenSearch dashboards or Logstash Inputs | N/A | **Incoming**: data and configurations related to the lifecycle of the service. <br> **Outgoing**: recreate configurations on another logs manager service. | [OVHcloud API](https://api.ovh.com/console/?section=%2Fdbaas%2Flogs&branch=v1) |
 | OpenSearch Index As a Service | Import or Export documents through OpenSearch API  | JSON | **Incoming**: specific names' conventions for indexes and aliases, index settings  and API restrictions. <br>**Outgoing**: OpenSearch Scroll queries with pagination | [OpenSearch Index as a Service](/pages/manage_and_operate/observability/logs_data_platform/opensearch_index) |
 | Graylog Dashboards | Configuration of dashboards and searches saved by the client on the graylog interface | JSON | **Incoming**: use of Graylog APIs or Graylog User Interface. <br>**Outgoing**: Use of Graylog APIs. | [Greylog documentation](https://go2docs.graylog.org/4-0/home.htm) |
 | Archives encryption | Systematic encryption of archives using public PGP keys provided by the client | PGP Keys | **Incoming**: PGP key registration via API or User Interface on the Control Panel. <br>**Outgoing**: Retrieving the saved keys and setting up an encryption mechanism in the target environment | [Encrypting your logs Archives](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage_encryption) |
