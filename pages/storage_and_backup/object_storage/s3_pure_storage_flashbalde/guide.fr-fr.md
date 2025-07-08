@@ -48,7 +48,7 @@ La liste de tous les points de terminaison OVHcloud Object Storage se trouve [ic
 
 ![creds page](images/02.Creds.png){.thumbnail}
 
-### Créez un bucket qui sera répliqué sur l’Object Storage OVHcloud
+### Créer un bucket qui sera répliqué sur l’Object Storage OVHcloud
 
 10\. Si ce n'est pas déjà fait, rendez-vous dans la section `Storage`{.action} puis `Object Storage`{.action} et enfin `Accounts`{.action} pour créer le compte.
 
