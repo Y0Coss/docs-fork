@@ -1,6 +1,6 @@
 ---
 title: "Reversibility Policy for the Data Unified product"
-updated: 2025-07-01
+updated: 2025-07-08
 ---
 
 **Objective**
@@ -35,9 +35,6 @@ The features of the product line fall into three categories:
 | Data Processing Engine | ETL/ELT pipeline orchestration with Spark and Python. | OVHcloud platform-specific format, no standards deployed | **Inbound**: Data imported from data catalog with manual or automatic configuration of jobs <br> **Outbound**: No export possible | [Data processing engine documentation](https://docs.dataplatform.ovh.net/#/en/product/dpe/index) |
 | Identity and access management | Account management and user access on the platform | NA | **Inbound**: Configuration via the web interface <br> **Outbound**: Export user accounts in CSV format | [DATAP IAM documentation](https://docs.dataplatform.ovh.net/#/en/getting-further/project-toolkit?id=user-management) |
 
-
-
-  
 ### 3 - Specific features
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
@@ -47,7 +44,6 @@ The features of the product line fall into three categories:
 ## List of architectures
 OVHcloud Unified Data Platform service is based on open-source technologies such as Trino, Apache Iceberg, and Kubernetes. It is compatible with OVHcloud Public Cloud architectures.
 
-
 ## Partner Services
 
 The OVHcloud partners concerned are listed in the [OVHcloud partners directory](/links/partner) under the "**Data center expansion and migration**" keywords.
@@ -56,9 +52,11 @@ OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/p
 
 ## Costs and fees
 
-Les fonctionnalités décrites dans les tableaux sont disponibles sans couts et frais sauf mentions contraires, et sont librement utilisables par le client.
-OVHcloud applique une tarification à l’usage, sans frais de sortie. La facturation est interrompue immédiatement à la suppression des services, permettant un contrôle souple des coûts. 
+Features described in the tables are available at no cost, unless otherwise specified and are freely usable.
 
-## Data renetntion after service termination
-Une fois le service résilié, toutes les données du client sont supprimées de manière irréversible. Il incombe au client de réaliser une sauvegarde ou migration complète avant résiliation.
+OVHcloud uses pay-as-you-go pricing, with no egress fee. Billing is interrupted immediately when the service is canceled, allowing flexible cost control.
+
+## Data retention after service termination
+
+Once the service is canceled, all data are irreversibly deleted. It is the client’s responsibility to carry out a full backup or migration before termination.
 
