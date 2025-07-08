@@ -11,7 +11,7 @@ Si votre site web affiche une page « Your request has been blocked », cela sig
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-**Découvrez comment remettre votre site web en ligne s'il affiche une page « Your request has been blocked ».**
+**Découvrez comment débloquer la situation si votre site web affiche une page « Your request has been blocked ».**
 
 ## Prérequis
 
