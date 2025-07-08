@@ -46,7 +46,7 @@ La liste de tous les endooints OVHcloud Object Storage se trouve [ici](/pages/st
 
 9\. Confirmez en cliquant sur `Create`{.action} et vos identifiants distants seront créés.
 
-![creds page](images/02.Creds.png){.thumbnail}
+![creds page](images/02-creds.png){.thumbnail}
 
 ### Créer un bucket qui sera répliqué sur l’Object Storage OVHcloud
 
@@ -72,7 +72,7 @@ La liste de tous les endooints OVHcloud Object Storage se trouve [ici](/pages/st
 
 19\. Ajoutez vos identifiants « OVHcloud_credentials ». Le lien vers le conteneur réplica va être créé.
 
-![replica page](images/03.Replica.png){.thumbnail}
+![replica page](images/03-replica.png){.thumbnail}
 
 20\. Vous pouvez maintenant tester et valider la réplication du conteneur de la plateforme Pure Storage Flashblade vers OVHcloud Object Storage.
 
