@@ -7,7 +7,7 @@ update: 2025-07-04
 ## Objectif
 
 L'infrastructure mutualisée où se trouvent les hébergements web OVHcloud dispose de plusieurs systèmes de sécurité.
-Si votre site web affiche une page « Your request has been blocked », cela signifie que l'une des requêtes que vous tentez d'exécuter depuis votre site web a été bloquée par nos systèmes de sécurité.
+Si votre site web affiche une page « Your request has been blocked », cela signifie que l'une des requêtes que vous tentez d'exécuter vers votre site web a été bloquée par nos systèmes de sécurité.
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
