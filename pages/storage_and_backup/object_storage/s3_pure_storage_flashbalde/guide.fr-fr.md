@@ -22,29 +22,29 @@ Consultez notre guide [Object Storage - Premiers pas avec Object Storage](/pages
 
 ### Créer une connexion cible compatible S3
 
-1\. Connectez-vous à l'interface utilisateur graphique de Pure Storage Flashblade.
+1\. Connectez-vous à l'interface utilisateur de Pure Storage Flashblade.
 
 2\. Rendez-vous dans la section `Storage`{.action}, puis `Array`{.action}.
 
 3\. Cliquez sur le bouton « + » à côté de `S3 Target Connections` pour créer un stockage d'objets cloud *Target Connections*.
 
-4\. Nommez la connexion, par exemple « OVHCLOUD_OBJECT_STORAGE » et ajoutez les points de terminaison OVHcloud Object Storage associés dans le champ `Address`.
+4\. Nommez la connexion, par exemple « OVHCLOUD_OBJECT_STORAGE » et ajoutez les endpoints OVHcloud Object Storage associés dans le champ `Address`.
 
 ![page de connexion](images/01.Connections.png){.thumbnail}
 
-La liste de tous les points de terminaison OVHcloud Object Storage se trouve [ici](/pages/storage_and_backup/object_storage/s3_location).
+La liste de tous les endooints OVHcloud Object Storage se trouve [ici](/pages/storage_and_backup/object_storage/s3_location).
 
-### Ajouter des informations d'identification pour le stockage d'objets dans le Cloud à distance
+### Ajouter des informations d'identification pour le stockage d'objets distant
 
 5\. Rendez-vous dans la section `Protection`{.action} puis cliquez sur `Object Replica Links`{.action}.
 
 6\. Cliquez sur le bouton « + » pour ajouter des informations d'identification et de connexion distantes pour la réplication d'objets.
 
-7\. Sélectionnez `OVHCLOUD_OBJECT_STORAGE`{.action} pour la baie distante.
+7\. Sélectionnez `OVHCLOUD_OBJECT_STORAGE`{.action} dans `Remote Array`{.action}.
 
-8\. Ajoutez le nom de votre connexion, par exemple « OVHcloud_credentials », et ajoutez vos clés d'accès et secrètes depuis l'espace client.
+8\. Ajoutez le nom de votre connexion, par exemple « OVHcloud_credentials », et ajoutez votre clé d'accès et votre clé secrète disponibles depuis l'espace client OVHcloud.
 
-9\. Confirmez en cliquant sur `Create`{.action} et vos identifiants à distance seront créés.
+9\. Confirmez en cliquant sur `Create`{.action} et vos identifiants distants seront créés.
 
 ![creds page](images/02.Creds.png){.thumbnail}
 
@@ -64,13 +64,13 @@ La liste de tous les points de terminaison OVHcloud Object Storage se trouve [ic
 
 15\. Cliquez sur le bouton « + » pour créer un lien de réplica de conteneur.
 
-16\. Sélectionnez le regroupement que vous venez de créer.
+16\. Sélectionnez le conteneur que vous venez de créer.
 
-17\. Sélectionnez `OVHCLOUD_OBJECT_STORAGE`{.action} pour la baie distante.
+17\. Sélectionnez `OVHCLOUD_OBJECT_STORAGE`{.action} dans `Remote Array`{.action}.
 
 18\. Ajoutez le nom de votre conteneur Object Storage OVHcloud, « OVHcloud-dest-2025 ».
 
-19\. Ajoutez vos identifiants à distance « OVHcloud_credentials ». Le lien de réplica de conteneur va être créé.
+19\. Ajoutez vos identifiants « OVHcloud_credentials ». Le lien vers le conteneur réplica va être créé.
 
 ![replica page](images/03.Replica.png){.thumbnail}
 
