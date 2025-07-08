@@ -82,4 +82,3 @@ La liste de tous les endooints OVHcloud Object Storage se trouve [ici](/pages/st
 Rejoignez notre [communauté d'utilisateurs](/links/community).
 
 <sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
-

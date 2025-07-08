@@ -134,7 +134,7 @@ When versioning is enabled:
 > Via the OVHcloud Control Panel
 >> You can show or hide object versions in an Object Storage bucket by clicking on the following button:
 >>
->> [enable version objects](images/bucket_enable_versions.png){.thumbnail}
+>> ![enable version objects](images/bucket_enable_versions.png){.thumbnail}
 >>
 
 #### View the different versions of an object
