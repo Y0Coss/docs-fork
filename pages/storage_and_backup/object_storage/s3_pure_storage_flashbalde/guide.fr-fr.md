@@ -18,7 +18,7 @@ Il explique comment configurer, gérer et répliquer facilement des objets compa
 
 Consultez notre guide [Object Storage - Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
-## Instructions
+## En pratique
 
 ### Créer une connexion cible compatible S3
 
