@@ -30,7 +30,7 @@ See our [Getting started with Object Storage](/pages/storage_and_backup/object_s
 
 4\. Name the connection, for example with OVHCLOUD_OBJECT_STORAGE and add the associated OVHcloud Object Storage endpoints in the `Address` field.
 
-![connection page](images/01.Connections.png){.thumbnail}
+![connection page](images/01-connections.png){.thumbnail}
 
 The list of all OVHcloud Object Storage endpoints can be found [here](/pages/storage_and_backup/object_storage/s3_location).
 
@@ -46,7 +46,7 @@ The list of all OVHcloud Object Storage endpoints can be found [here](/pages/sto
 
 9\. Confirm by clicking on `Create`{.action} and your remote credentials will be created. 
 
-![creds page](images/02.Creds.png){.thumbnail}
+![creds page](images/02-creds.png){.thumbnail}
 
 ### Create a bucket that will be replicated to OVHcloud Object Storage
 
@@ -72,7 +72,7 @@ The list of all OVHcloud Object Storage endpoints can be found [here](/pages/sto
 
 19\. Add your remote credentials "OVHcloud_credentials". The bucket replica link will be created.
 
-![replica page](images/03.Replica.png){.thumbnail}
+![replica page](images/03-replica.png){.thumbnail}
 
 20\. You can now test and validate the bucket replication from Pure Storage Flashblade platform to OVHcloud Object Storage.
 
