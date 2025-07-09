@@ -64,7 +64,7 @@ Click on the tabs below to view each of the **5** steps.
 >>
 >> On the page that opens, click on the `Authorised IPs`{.action} tab.
 >>
->>![Authorized IPs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips.png){.thumbnail}
+>> ![Authorised IPs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorised-ips.png){.thumbnail}
 >>
 > **Step 4**
 >>
