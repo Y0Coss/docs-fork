@@ -1,6 +1,6 @@
 ---
 title: "Politique de réversibilité du produit Managed Search Engine Software Platform"
-updated: 2025-06-27
+updated: 2025-07-09
 ---
 
 ## Objectif
@@ -41,17 +41,16 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-
+| Infrastructure as a code | Déploiement automatisé via modules Terraform spécifiques à OVHcloud | NA | **Entrante** : scripts à adapter pour d’autres fournisseurs <br>**Sortante** : réécriture nécessaire des configurations Terraform  | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs).{external} |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrant** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortant** : commande et configuration un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
 
-blabla
-Le produit est décliné en deux offres de service : 
-- xxxxx
-- xxxxx
+Le produit propose des clusters multi-nœuds (jusqu’à 3 nœuds pour l’offre Business), avec réplication des données pour la haute disponibilité. Le sharding automatique (aka partitionnement de bases de données) est géré via le nombre de réplicas configurés par index. 
+Les architectures incluent : 
+- Cluster dédié : Isolation logique des ressources par projet.
+- Intégration vRack : Interconnexion sécurisée avec d’autres services OVHcloud
+- Scalabilité verticale : Montée en puissance des nœuds (RAM, stockage) via l’interface OVHcloud
 
 ## Services partenaires
 
@@ -60,8 +59,10 @@ Les partenaires OVHcloud concernés figurent dans l'annuaire des [partenaires OV
 OVHcloud dispose également d’un service dédié : [OVHcloud Professional Services](/links/professional-services).
 
 ## Coûts et frais
-
+Les fonctionnalités décrites dans les tableaux sont disponibles sans couts et frais sauf mentions contraires, et sont librement utilisables par le client. Par défaut, aucune surfacturation n’est appliquée suite à la migration des données.  La facturation s’arrête dès la résiliation du service.
 
 ## Conservation des données après résiliation du contrat
-
+Les snapshots (automatiques ou manuels) sont irréversiblement supprimés. Un export manuel préalable est obligatoire pour préserver les données.
+Les instances primaires sont supprimées immédiatement et les sauvegardes sont conservées, par OVHcloud, entre 2 jours et un mois selon les options spécifiés dans le contrat.
+Il convient de préciser que le client ne peut pas compter sur ces sauvegardes pour faire des restaurations de données. OVHcloud ne garantit pas l'exploitation et la disponibilité des sauvegardes pour effectuer des restaurations des données des clients après la résiliation du service. 
 
