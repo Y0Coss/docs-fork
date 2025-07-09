@@ -1,11 +1,11 @@
 ---
-title: "Reversibility Policy for the xxxxx product"
+title: "Reversibility Policy for the Managed Search Engine Software Platform product"
 updated: 2025-06-27
 ---
 
 ##Objective
 
-This document describes the reversibility policy for the xxxx product covering the OVHcloud xxxx offer.
+This document describes the reversibility policy for the Managed Search Engine Software Platform product covering the OVHcloud Managed OpenSearch offer.
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
@@ -21,9 +21,10 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-
+| Platform as a Service | NoSQL indexing, content search and data analysis engine fully managed by OVHcloud | JSON (S3 snapshots) | **Inbound** : source snapshot creation, migration via RFS to the platform <br>**Outbound** : export OVHcloud snapshots to any compatible OpenSearch cluster via RFS or native tools | [OpenSearch-Getting started](/pages/public_cloud/public_cloud_databases/opensearch_02_getting_Started) |
+| Standard REST API access | Access via OpenSearch REST API (port 9200) | JSON | **Inbound**: direct connection from existing tools and applications <br>**Outbound**: data extraction via API for migration to another cluster. | [OVH-OpenSearch API](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/database/opensearch) |
+| Manual snapshots | Create snapshots manually via API or Dashboard | JSON (S3, external storage) | **Inbound**: restoring an external snapshot. <br>**Outbound**: snapshot exportable to any OpenSearch environment. | [OVH-OpenSearch API](https://eu.api.ovh.com/console/?section=%2Fcloud&branch=v1#get-/cloud/project/-serviceName-/database/opensearch) |
+| Standard plugins | List of open-source plugins (ICU Analysis, Phonetic Analysis, etc.) that can be activated, deactivated and compatible with the technology   | Official OpenSearch plugins | **Inbound**: Enable plugins compatible with the target version <br>**Outbound**: reuse plugins if it's are supported by the new environment | [OpenSearch - Capabilities and Limitations](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities) |
 
 
 ## 2-OVHcloud Implementations
