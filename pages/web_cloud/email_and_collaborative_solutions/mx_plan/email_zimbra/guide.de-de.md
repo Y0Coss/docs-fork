@@ -454,14 +454,14 @@ Klicken Sie dann auf `Speichern`{.action}, um die Erstellung Ihrer Aufgabe abzus
 
 Klicken Sie auf das `Aktentasche`{.action} Symbol in der oberen Leiste, um auf Ihren Speicherplatz zuzugreifen. Sie können Ihre Dateien hochladen und dort freigeben.
 
-1\. In der linken Spalte sehen Sie die Ordner für Ihren Speicherplatz.
+1. In der linken Spalte sehen Sie die Ordner für Ihren Speicherplatz.
 
- - Um einen neuen Ordner zu erstellen, klicken Sie auf `+ Einen Ordner hinzufügen`{.action} am Ende der Spalte. Geben Sie den gewünschten Namen ein und bestätigen Sie ihn mit der `Enter`{.action} Taste.
- - Um einen Unterordner zu erstellen, klicken Sie mit der rechten Maustaste auf einen der Ordner und danach auf `Unterordner erstellen`{.action}. Geben Sie den gewünschten Namen ein und bestätigen Sie ihn mit `Enter`{.action}.
+    - Um einen neuen Ordner zu erstellen, klicken Sie auf `+ Einen Ordner hinzufügen`{.action} am Ende der Spalte. Geben Sie den gewünschten Namen ein und bestätigen Sie ihn mit der `Enter`{.action} Taste.
+    - Um einen Unterordner zu erstellen, klicken Sie mit der rechten Maustaste auf einen der Ordner und danach auf `Unterordner erstellen`{.action}. Geben Sie den gewünschten Namen ein und bestätigen Sie ihn mit `Enter`{.action}.
 
-2\. In der mittleren Spalte wird eine Liste der Dateien im ausgewählten Ordner angezeigt.
+2. In der mittleren Spalte wird eine Liste der Dateien im ausgewählten Ordner angezeigt.
 
-3\. Im rechten Fenster wird abhängig vom in der mittleren Spalte ausgewählten Dateityp eine Vorschau des Inhalts angezeigt. In der oberen Leiste der Vorschau werden die möglichen Aktionen für die ausgewählten Dateien angezeigt.
+3. Im rechten Fenster wird abhängig vom in der mittleren Spalte ausgewählten Dateityp eine Vorschau des Inhalts angezeigt. In der oberen Leiste der Vorschau werden die möglichen Aktionen für die ausgewählten Dateien angezeigt.
 
 ![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
 
