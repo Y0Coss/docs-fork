@@ -1,7 +1,7 @@
 ---
 title: "Web Cloud Databases - Comment autoriser une adresse IP ?"
 excerpt: "Découvrez comment autoriser une ou plusieurs adresses IP à accéder à votre solution Web Cloud Databases"
-updated: 2025-07-08
+updated: 2025-07-10
 ---
 
 <style>
@@ -68,11 +68,9 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 > **Étape 4**
 >>
->> Sur la page qui apparaît, vous retrouvez la configuration par défaut suivante :
+>> Sur la page qui apparaît, cliquez sur le bouton `Ajouter une adresse IP / masque`{.action} situé au-dessus du tableau.
 >>
 >> ![Authorised IPs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-0000-sftp-hosting-enabled.png){.thumbnail}
->>
->> Au-dessus du tableau, cliquez sur le bouton `Ajouter une adresse IP / masque`{.action}.
 >>
 >> > [!success]
 >> >
