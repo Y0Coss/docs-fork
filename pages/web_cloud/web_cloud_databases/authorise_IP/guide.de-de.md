@@ -123,9 +123,9 @@ Wenn Sie diese Berechtigung deaktivieren möchten, da Sie kein Webhosting mit Ih
 > [!tabs]
 > **Schritt 1**
 >>
->> Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 >>
->>![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Schritt 2**
 >>
