@@ -489,7 +489,7 @@ Udostępnianie pozwala na udostępnienie katalogu lub pliku na Twojej przestrzen
 >> 2. Kliknij Na `Udostępnij...`{.action}.
 >> 3. Wpisz adres e-mail gościa i kliknij na `Dodaj`{.action}. Możesz dodać kilka kont e-mail.
 >> 4. Wybierz uprawnienia, które chcesz przypisać gościowi.
->> 5 Kliknij `Zapisz`{.action}, aby dokończyć udostępnianie.
+>> 5. Kliknij `Zapisz`{.action}, aby dokończyć udostępnianie.
 >>
 >> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
 >>
