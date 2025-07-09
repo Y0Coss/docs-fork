@@ -41,6 +41,7 @@ Access Control List (ACL) | Manage access rights via the OVHcloud interface | NA
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
+| Infrastructure as a Code | --- | --- | **Inbound**:   <br> **Outbound**:   | --- |
 | Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Inbound**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outbound**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](https://www.ovhcloud.com/en/security/anti-ddos/) |
 
 ##List of architectures
