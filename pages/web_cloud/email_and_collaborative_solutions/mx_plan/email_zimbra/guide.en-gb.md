@@ -489,7 +489,7 @@ Sharing allows you to give access to a folder or file on your storage to a third
 >> 2. Click `Share...`{.action}.
 >> 3. Enter the guest email address, then click `Add`{.action}. You can add multiple email addresses.
 >> 4. Choose the permissions you want to assign to the guest.
->> 5 Click `Save`{.action} to finalize the sharing.
+>> 5. Click `Save`{.action} to finalize the sharing.
 >>
 >> ![Zimbra - storage](images/zimbra-storage-share-01.png){.thumbnail}
 >>
