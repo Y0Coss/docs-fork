@@ -35,7 +35,7 @@ Möchten Sie diese Berechtigungen/Einschränkungen ändern?
 
 - Sie verfügen über eine Lösung [Web Cloud Databases](/links/web/databases).
 - Die IP-Adresse (oder den IP-Adressbereich) kennen, die bzw. der für Ihre Lösung autorisiert werden soll.
-- Sie sind in Ihrem [OVHcloud Kundencenter] eingeloggt (/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
