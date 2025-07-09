@@ -80,7 +80,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5*
 >>
 >> Dans la fenêtre qui s'ouvre, plusieurs champs sont à compléter :
 >>
->> ![Changing user rights](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
+>> ![Add an IP address or mask](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 >>
 >> - `IP / masque *`{.action} : Saisissez ici l'adresse IP (par exemple : `203.0.113.44`) ou la plage d'adresses IP (par exemple : `203.0.113.0/24` représentant toutes les adresses IP de `203.0.113.0` à `203.0.113.255`) que vous souhaitez autoriser sur votre solution Web Cloud Databases.
 >> - `Description`{.action} (facultatif) : Vous pouvez, par exemple, y ajouter des informations sur le rôle de l'adresse IP ou de la plage d'adresses IP concernée.
