@@ -95,6 +95,8 @@
             + [Managed OCI artifact Registry Product Reversibility Policy](account_and_service_management/reversibility/13-reversibility-oci-registry)
             + [Reversibility Policy for the Managed Log Manager product](account_and_service_management/reversibility/18-logs-data-platform-reversibility)
             + [Reversibility Policy for the Data Unified Product](account_and_service_management/reversibility/19-data-platform-reversibility)
+            + [Reversibility Policy for the product Managed Search Engine Software Platform](/pages/account_and_service_management/reversibility/22-sdb-managed-opensearch-reversibility)
+
     + [Responsibility sharing](account-and-service-management-responsibility-sharing)
         + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)
         + [File Storage services - Responsibility model](account_and_service_management/responsibility_sharing/file-storage)
@@ -857,6 +859,7 @@
             + [Reversibility Policy for Managed Relational Database Product](account_and_service_management/reversibility/07-rdb_mysql_postgre)
             + [Reversibility Policy for the Managed Message Broker product](account_and_service_management/reversibility/14-reversibility-mdb)
             + [Reversibility Policy for the Managed Data Visualization product](account_and_service_management/reversibility/15-reversibility-obs-data-visualization)
+            + [Reversibility Policy for the product Managed Search Engine Software Platform](/pages/account_and_service_management/reversibility/22-sdb-managed-opensearch-reversibility)
         + [MongoDB](products/public-cloud-databases-mongodb)
             + [Getting Started](public-cloud-databases-mongodb-getting-started)
                 + [MongoDB - Why MongoDB](public_cloud/public_cloud_databases/mongodb_17_why_mongodb)
