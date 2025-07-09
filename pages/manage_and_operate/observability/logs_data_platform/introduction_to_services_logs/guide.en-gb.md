@@ -1,7 +1,7 @@
 ---
 title: Introduction to OVHcloud Service Logs with Logs Data Platform
 excerpt: Discover how to retrieve your OVHcloud managed products logs in Logs Data Platform
-updated: 2025-06-18
+updated: 2025-07-09
 ---
 
 ## Objective
@@ -62,7 +62,7 @@ Our ambition is to make all OVHcloud products compatible with OVHcloud Service L
 | Hosting & Collaboration - Microsoft Private Exchange | API only | Beta | - |
 | Hosting & Collaboration - Microsoft Trusted Exchange | API only | Beta | - |
 | Infrastructure solutions - OVHcloud Connect | API only | Beta | - |
-| Infrastructure solutions - OVHcloud Load Balancer | API only | Beta | - |
+| Infrastructure solutions - OVHcloud Load Balancer | API only | Beta | [OVHcloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](/pages/network/load_balancer/use_api_logs_2_customers) |
 
 ## Instructions
 
