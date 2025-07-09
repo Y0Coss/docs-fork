@@ -1,7 +1,7 @@
 ---
 title: Attaching a Floating IP to a Public Cloud instance
 excerpt: Find out how a Floating IP address functions and how to configure it
-updated: 2024-03-26
+updated: 2025-07-09
 ---
 
 ## Objective
@@ -382,6 +382,66 @@ To delete a Floating IP, you must do it explicitly:
 $ openstack floating ip delete 169.254.10.25
 $ openstack floating ip list
 ```
+
+///
+
+#### Via the Horizon interface
+
+/// details | Unfold this section
+
+The following steps describe how to attach a Floating IP to an existing instance.
+
+> [!primary]
+> Before you proceed, make sure your instance is linked to a private network **only** and that the private network is linked to a Gateway.
+>
+
+> [!tabs]
+>> 
+>> Log into the Horizon interface, and ensure that you are in the correct region. You can verify this on the top left corner.
+>>
+>> ![Region selection](images/region2021.png){.thumbnail}
+>>
+>> In the left-hand menu, click on `Network`{.action} then on `Floating IPs`{.action}.
+>>
+>> ![network](images/network_floating_ip.png){.thumbnail}
+>>
+>> Click on `Associate`{.action} next to the corresponding instance.
+>>
+>> ![associate](images/associate_floating_ip.png){.thumbnail}
+>> 
+>> A pop-up window will appear. Click on the drop-down arrow underneath `Port to be assiociated` and select the "port" or "instance" to attach the Floating IP to.
+>>
+>> ![associate](images/associate_floating_ip.png){.thumbnail}
+>>
+>> Next, click on `Associate`{.action}
+>>
+>> Once done, the Floating IP will be associated to the instance.
+>>
+>> ![linked](images/instance_floating_ip.png){.thumbnail}
+>>
+>>
+
+#### Detaching a Floating IP <a name="disassociateip"></a>
+
+You can detach a Floating ip from your instance at anytime.
+
+Once you are connected to the Horizon interface, click on `Network`{.action}, then on `Floating IPs`{.action}.
+
+Click on `Disassociate`{.action} next to the corresponding IP.
+
+![disassociate](images/disassociate_floating_ip.png){.thumbnail}
+
+A pop-up window will appear prompting you to confirm the selection. Click on `Disassociate`{.action}.
+
+![confirm](images/confirm_disassociate_ip.png){.thumbnail}
+
+Once done, the Floating will be detached from the instance.
+
+#### Deleting a Floating IP
+
+To delete a Floating IP, click on the drop-down arrow next to the corresponding instance, then click on `Release Floating IP`{.action}.
+
+![delete](images/release_floating_ip.png){.thumbnail}
 
 ///
 
