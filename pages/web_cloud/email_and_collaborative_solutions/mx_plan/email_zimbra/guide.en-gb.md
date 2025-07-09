@@ -453,14 +453,14 @@ Then click `Save`{.action} to finish creating your task.
 
 Click the `Briefcase`{.action} icon in the top bar to access your storage space. You can upload your files and share them there.
 
-1. In the left-hand column, you will see the folders for your storage space.
+1\. In the left-hand column, you will see the folders for your storage space.
 
-    - To create a new folder, click `+ Add a folder`{.action} at the bottom of the column. Enter the name you want, then confirm by pressing the `Enter`{.action} key.
-    - To create a subfolder, right-click on one of the folders, then click `Create subfolder`{.action}. Enter the name you want, then confirm by pressing the `Enter`{.action} key.
+ - To create a new folder, click `+ Add a folder`{.action} at the bottom of the column. Enter the name you want, then confirm by pressing the `Enter`{.action} key.
+ - To create a subfolder, right-click on one of the folders, then click `Create subfolder`{.action}. Enter the name you want, then confirm by pressing the `Enter`{.action} key.
 
-2. In the center column, you will see a list of the files in the selected folder.
+2\. In the center column, you will see a list of the files in the selected folder.
 
-3. In the right window, depending on the file type selected in the center column, a preview of the content is displayed. The top bar of the preview displays the possible actions on the file or files you selected.
+3\. In the right window, depending on the file type selected in the center column, a preview of the content is displayed. The top bar of the preview displays the possible actions on the file or files you selected.
 
 ![Zimbra - storage](images/zimbra-storage-01.png){.thumbnail}
 
