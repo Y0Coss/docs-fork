@@ -1,6 +1,6 @@
 ---
 title: "Reversibility Policy for the Managed Search Engine Software Platform product"
-updated: 2025-06-27
+updated: 2025-07-09
 ---
 
 ##Objective
@@ -41,16 +41,15 @@ Access Control List (ACL) | Manage access rights via the OVHcloud interface | NA
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| Infrastructure as a Code | --- | --- | **Inbound**:   <br> **Outbound**:   | --- |
+| Infrastructure as a code | Automated deployment via Terraform modules specific to OVHcloud | NA | **Inbound**: scripts to be adapted for other providers <br>**Outbound**: Terraform configurations need to be rewritten | [Terraform](https://registry.terraform.io/providers/ovh/latest/docs).{external} |
 | Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Inbound**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outbound**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](https://www.ovhcloud.com/en/security/anti-ddos/) |
 
 ##List of architectures
-xxxx
-
-The product is divided into two service offers:
-
-* xxxx
-* xxx
+The product offers multi-node clusters (up to 3 nodes for the Business range), with data replication for high availability. Automatic sharding is managed via the number of replicas configured per index.
+Architectures include:
+- Dedicated cluster: Logical isolation of resources by project.
+- vRack integration: Secure interconnection with other OVHcloud services
+- Vertical scalability: Node scalability (RAM, storage) via the OVHcloud interface
 
 ##Partner services
 
@@ -59,7 +58,12 @@ The OVHcloud partners concerned are listed in the [OVHcloud partners directory](
 OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
 
 ##Cost and fees
+Features described in the tables are available at no cost, unless otherwise specified and are freely usable by the customer.
+By default, no extra billing is applied following the data migration.
+Billing stops as soon as the service is canceled.
 
 ##Data retention after contract termination 
 
-
+Snapshots (automatic or manual ones) are irreversibly deleted. A manual export is required to preserve data.
+Primary instances are deleted immediately, and backups are stored by OVHcloud, between 2 days and 1 month depending on the options specified in the contract.
+Please note that the customer cannot rely on these backups to perform data restores. OVHcloud does not guarantee exploitation and availability of backups to perform restores of customer data after the service cancelation.
