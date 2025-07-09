@@ -1,0 +1,79 @@
+---
+title: "Fin du support Plesk et cPanel pour VPS - Assurer la continuité de vos services.
+excerpt: "Découvrez les dates de fin de support des systèmes d'exploitation de votre VPS OVHcloud affectant les licences Plesk et cPanel."
+updated: 2025-07-09
+---
+
+## Objectif
+
+Ce guide vous explique comment assurer la continuité de vos services en migrant votre VPS OVHcloud vers un système d’exploitation compatible avec les dernières versions de **Plesk** et **cPanel**, suite à la fin de support annoncée pour plusieurs OS.
+
+**Découvrez les dates de fin de support des systèmes d'exploitation de votre VPS OVHcloud affectant les licences Plesk et cPanel.**
+
+## Prérequis
+
+- Disposer d'une offre [VPS](/links/bare-metal/vps){.external} avec une distribution [compatible](https://www.ovhcloud.com/fr/vps/os/).
+
+## En pratique
+
+Les éditeurs **Plesk** et **cPanel** annoncent la fin du support des systèmes d’exploitation suivants :
+
+| Système d'exploitation | Impacté par    | Fin du support       |
+| ---------------------- | -------------- | -------------------- |
+| Ubuntu 18.04           | Plesk          | **1er juillet 2025** |
+| Debian 10              | Plesk          | **1er juillet 2025** |  
+| CentOS 7               | Plesk / cPanel | **1er janvier 2026** |
+| CloudLinux 7           | Plesk / cPanel | **1er janvier 2026** |
+
+Pour plus de détails concernant les fins de support, consultez les documentations officielles :
+
+- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
+- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/).
+
+### Que faire concrètement ?
+
+> [!primary]
+>
+> D’un point de vue **sécurité**, continuer à utiliser un OS non supporté vous expose à des attaques.
+Nous vous recommandons de lire [les recommandations de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/) et [les recommandations de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/).
+
+#### 1. Vérifier votre système actuel
+
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs privés virtuels`{.action}.
+
+![EOS Plesk cPanel](images/vpshome.png){.thumbnail}
+
+Dans l'onglet `Accueil`{.action}, retrouvez les détails de votre système d'exploitation dans la section `OS/Distribution`{.action}.
+
+#### 2. Identifier un OS compatible
+
+Si votre système d'exploitation fait partie des OS qui ne seront plus supportés, migrez vers un système compatible recommandé par l’éditeur.
+
+Consultez la documentation officielle des OS supportés :
+
+- [Liste des OS supportés par Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/)
+- [Liste des OS compatibles avec cPanel](https://docs.cpanel.net/installation-guide/system-requirements/)
+
+#### 3. Migrer votre service
+
+**Option A — Réinstallation manuelle**
+
+1. [Sauvegardez vos données](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) (contenu web, base de données, e-mails, etc.).
+2. Réinstallez un OS compatible depuis l’espace client OVHcloud en suivant la section `Réinstaller votre VPS` de notre guide [Premiers pas avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
+3. [Réinstallez cPanel](/pages/bare_metal_cloud/virtual_private_servers/cpanel) ou Plesk sur le nouveau système.
+4. Restaurez vos données à partir de vos sauvegardes.
+
+**Option B — Migration via Plesk ou cPanel**
+
+Cette méthode est recommandée si vous pouvez déployer une nouvelle instance de VPS avec un système à jour en parallèle de l’ancienne.
+
+Commandez un nouveau VPS avec un OS compatible si ce n'est pas déjà fait. [Installez cPanel](/pages/bare_metal_cloud/virtual_private_servers/cpanel) ou Plesk.
+
+Utilisez l’outil de migration de votre choix. Ces outils permettent de transférer automatiquement vos sites web, bases de données, comptes e-mail et configurations d’un VPS à l’autre :
+
+- Plesk Migrator – [Documentation officielle](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/)
+- cPanel Transfer Tool – [Documentation officielle](https://docs.cpanel.net/whm/transfers/transfer-tool/)
+
+## Aller plus loin
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
