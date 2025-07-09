@@ -1,7 +1,7 @@
 ---
 title: "What should I do if the “Your IP has been banned” page appears?"
 excerpt: "Find out how to unblock your IP address if your website displays a “Your IP has been banned” page"
-update: 2025-07-08
+update: 2025-07-09
 ---
 
 ## Objective
