@@ -1,61 +1,63 @@
 ---
-title: "Reversibility Policy for the xxxxx product"
+title: "Politique de réversibilité du produit xxxxxx"
 updated: 2025-06-27
 ---
 
-##Objective
+## Objectif
 
-This document describes the reversibility policy for the xxxx product covering the OVHcloud xxxx offer.
+Ce document est la politique de réversibilité du produit xxxx couvrant l’offre commerciale d’OVHcloud xxxxxx.
 
-This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
+Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
-##List of features
+## Liste des fonctionnalités
 
-Features of the product line fall into three categories:
+Les fonctionnalités du produit sont réparties en trois catégories :
 
-1. **Core features** for which we guarantee migration capacity.
-2. **OVHcloud implementations** that require adaptation to a new migration environment.
-3. **Specific features** that cannot be guaranteed for migration as they are related to the OVHcloud environment or involve custom developments.
+1. Les **fonctionnalités principales** pour lesquelles nous garantissons la capacité de migration.
+2. Les **implémentation OVHcloud** qui nécessitent une adaptation à un nouvel environnement de migration.
+3. Les **fonctionnalités spécifiques** qui ne peuvent pas être garanties pour la migration car elles sont liées à l'environnement OVHcloud ou impliquent des développements personnalisés.
 
-## 1-Core features
+### 1 - Fonctionnalités principales
 
-| **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
+| **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
+| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
 
 
+### 2 - Implémentations OVHcloud
 
-## 2-OVHcloud Implementations
-
-| **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
+| **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
+| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
 
 
-## 3-Specific features
+### 3 - Fonctionnalités spécifiques
 
-| **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
+| **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Inbound**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outbound**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](https://www.ovhcloud.com/en/security/anti-ddos/) |
+| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
 
-##List of architectures
-xxxx
+| Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrant** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortant** : commande et configuration un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
-The product is divided into two service offers:
+## Liste des architectures
 
-* xxxx
-* xxx
+blabla
+Le produit est décliné en deux offres de service : 
+- xxxxx
+- xxxxx
 
-##Partner services
+## Services partenaires
 
-The OVHcloud partners concerned are listed in the [OVHcloud partners directory](/links/partner) under the "**Data center expansion and Migration**" keywords.
+Les partenaires OVHcloud concernés figurent dans l'annuaire des [partenaires OVHcloud](/links/partner) sous les mots-clés « **Data center expansion and Migration** ».
 
-OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
+OVHcloud dispose également d’un service dédié : [OVHcloud Professional Services](/links/professional-services).
 
-##Cost and fees
+## Coûts et frais
 
-##Data retention after contract termination 
+
+## Conservation des données après résiliation du contrat
 
 
