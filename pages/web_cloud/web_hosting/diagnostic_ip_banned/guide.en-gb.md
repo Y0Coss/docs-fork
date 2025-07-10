@@ -1,12 +1,12 @@
 ---
-title: "What should I do if the “Your IP has been banned” page appears?"
+title: "What should I do if the page “Your IP has been banned” appears?"
 excerpt: "Find out how to unblock your IP address if your website displays a “Your IP has been banned” page"
 update: 2025-07-09
 ---
 
 ## Objective
 
-The shared infrastructure where OVHcloud web hosting plans are located has several security systems.
+The shared infrastructure where OVHcloud web hosting plans are located has several security systems.  
 If your website displays a “Your IP has been banned” page, this means that the IP address from which you are trying to access your website has been temporarily blocked by our security systems.
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
@@ -28,11 +28,11 @@ The “Your IP has been banned” page may appear for a number of reasons (non-e
 
 ### 1 - Retrieve the information on the page “Your IP has been banned”
 
-First, retrieve the three information below that appears on the “Your IP has been banned” page:
+First, retrieve the information below that appears on the “Your IP has been banned” page:
 
-- `IP address` (e.g.: 203.0.113.0).
-- `Date` (for example: 2025-07-01T16:30:45:150Z).
-- `Request ID` (for example: AbCdEf-your-request-ID-GhIjKlM).
+- `IP address` (e.g.: 203.0.113.0)
+- `Date` (for example: 2025-07-01T16:30:45:150Z)
+- `Request ID` (for example: AbCdEf-your-request-ID-GhIjKlM)
 
 ### 2 - Contact support
 
