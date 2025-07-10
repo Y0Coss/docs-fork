@@ -1,7 +1,7 @@
 ---
 title: "OVHcloud KMS Architecture overview"
 excerpt: "Discover how we handle the security of the OVHcloud KMS"
-updated: 2025-07-10
+updated: 2025-06-18
 ---
 
 ## Objective
