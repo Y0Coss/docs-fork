@@ -1,11 +1,11 @@
 ---
-title: "Politique de réversibilité du produit xxxxxx"
+title: "Politique de réversibilité du produit Managed Mutualized Virtualization "
 updated: 2025-06-27
 ---
 
 ## Objectif
 
-Ce document est la politique de réversibilité du produit xxxx couvrant l’offre commerciale d’OVHcloud xxxxxx.
+Ce document est la politique de réversibilité du produit Managed Mutualized Virtualization correspondant à l’offre commerciale d’OVHcloud VMware Cloud Director.
 
 Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
@@ -21,25 +21,23 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| Images VM standards  | Import/export d’images VM aux formats standards pris en charge par l’hyperviseur OVF | OVF | **Entrante** : import d’images via l’API ou l’interface utilisateur <br>**Sortante** : export des images VM, réutilisables sur tout environnement compatible  | [Les concepts fondamentaux de VCD ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) <br><br>[OVHF Tool](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool) |
+
 
 
 ### 2 - Implémentations OVHcloud
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| Gestion avec l’API OVHcloud | Gestion des VM via API | JSON, YAML, scripts | **Entrante** : déploiement, gestion et import automatisés <br>**Sortante** : export des configurations, scripts et automatisations utilisables sur d'autres plateformes  | [Connexion à l’API OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/connexion_a_l_api_ovh) |
+| Sauvegarde et restauration manuelle | Snapshots, sauvegardes et restaurations à la demande via interface utilisateur ou API | Snapshots, images disques | **Entrante** : import d’image VM standard <br>**Sortante** :  Pas d’accès aux fichiers natifs de sauvegarde. L’export n’est pas possible dans un nouvel environnement d’hébergement  | [Sauvegardes avec Veeam et restaurations](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup) |
+| Gestion des réseaux virtuels | Configuration réseaux (subnets, security groups) spécifique à OVHcloud | NA | **Entrante** : <br>**Sortante** :  | [VMware Cloud Director - Concepts réseaux et bonnes pratiques]() <br><br>[VMware Cloud Director - Création de composants réseaux via Public VCF as-a-Service]() |
 
 
 ### 3 - Fonctionnalités spécifiques
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrant** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortant** : commande et configuration un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
