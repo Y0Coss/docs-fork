@@ -516,7 +516,7 @@ With the OVHcloud API, you can only attach a Floating IP to an existing instance
 
 #### Detaching a Floating IP
 
-This feature is currently only available via the [OpenStack API](#detachip). 
+This feature is available via the [OpenStack API](#detachip) and the [Horizon interface](#disassociateip). 
 
 #### Deleting a Floating IP
 
