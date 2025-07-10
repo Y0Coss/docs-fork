@@ -82,10 +82,10 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **5** etapas.
 >>
 >> ![Add an IP address or mask](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 >>
->> - `IP / máscara *`{.action} : Introduza aqui o endereço IP (por exemplo: `203.0.113.44`) ou o intervalo de endereços IP (por exemplo: `203.0.113.0/24` que representa todos os endereços IP de `203.0.113.0` a `203.0.113.255`) que deseja autorizar para a sua solução Web Cloud Databases.
+>> - `IP / máscara *`{.action}: Introduza aqui o endereço IP (por exemplo: `203.0.113.44`) ou o intervalo de endereços IP (por exemplo: `203.0.113.0/24` que representa todos os endereços IP de `203.0.113.0` a `203.0.113.255`) que deseja autorizar para a sua solução Web Cloud Databases.
 >> - `Descrição`{.action} (facultativo): Pode, por exemplo, adicionar informações sobre a função do endereço IP ou do intervalo de endereços IP em causa.
->> - `Base de dados`{.action} : Selecione esta opção para que o endereço IP ou o intervalo de endereços IP possam aceder às bases de dados presentes na sua solução Web Cloud Databases.
->> - `SFTP`{.action} : Selecione esta opção para que o endereço IP ou o intervalo de endereços IP possam aceder aos logs da sua solução Web Cloud Databases.
+>> - `Base de dados`{.action}: Selecione esta opção para que o endereço IP ou o intervalo de endereços IP possam aceder às bases de dados presentes na sua solução Web Cloud Databases.
+>> - `SFTP`{.action}: Selecione esta opção para que o endereço IP ou o intervalo de endereços IP possam aceder aos logs da sua solução Web Cloud Databases.
 >>
 >> > [!warning]
 >> >
@@ -118,7 +118,7 @@ Efetivamente, isto permitiria autorizar o acesso às suas bases de dados a todos
 
 Aquando da ativação da sua solução Web Cloud Databases, a autorização de acesso aos alojamentos web da OVHcloud é ativada por predefinição.
 
-Se deseja desativar esta autorização pois não utiliza um alojamento web com a sua solução Web Cloud Databases, siga sucessivamente as etapas seguintes **4**:
+Se deseja desativar esta autorização pois não utiliza um alojamento web com a sua solução Web Cloud Databases, siga sucessivamente as etapas **4** abaixo:
 
 > [!tabs]
 > **Etapa 1**

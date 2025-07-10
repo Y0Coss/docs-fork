@@ -43,7 +43,7 @@ Chcesz zmienić te uprawnienia/ograniczenia?
 
 > [!primary]
 >
-> Przypominamy, że jeśli właśnie aktywowałeś rozwiązanie [Web Cloud Databases](/links/web/databases) i chcesz z niego korzystać w ramach oferty hostingu [OVHcloud](/links/web/hosting), adresy IP tych ofert są już domyślnie autoryzowane.
+> Przypominamy, że jeśli właśnie aktywowałeś rozwiązanie [Web Cloud Databases](/links/web/databases) i chcesz z niego korzystać w ramach oferty [hostingu OVHcloud](/links/web/hosting), adresy IP tych ofert są już domyślnie autoryzowane.
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **5**.
 
@@ -82,10 +82,10 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **5**.
 >>
 >> ![Add an IP address or mask](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 >>
->> - `IP / maska *`{.action} : Tutaj wpisz adres IP (na przykład: `203.0.113.44`) lub zakres adresów IP (na przykład: `203.0.113.0/24` reprezentujący wszystkie adresy IP od `203.0.113.0` do `203.0.113.255`), które chcesz autoryzować w rozwiązaniu Web Cloud Databases.
->> - `Opis`{.action} (opcjonalnie) : Możesz na przykład dodać informacje o roli adresu IP lub zakresu adresów IP.
->> - `Bazy danych`{.action} : Zaznacz to pole, aby adres IP lub zakres adresów IP miał prawo dostępu do baz danych znajdujących się w Twoim rozwiązaniu Web Cloud Databases.
->> - `SFTP`{.action} : Zaznacz to pole, aby adres IP lub zakres adresów IP miał dostęp do logów Twojego rozwiązania Web Cloud Databases.
+>> - `IP / maska *`{.action}: Tutaj wpisz adres IP (na przykład: `203.0.113.44`) lub zakres adresów IP (na przykład: `203.0.113.0/24` reprezentujący wszystkie adresy IP od `203.0.113.0` do `203.0.113.255`), które chcesz autoryzować w rozwiązaniu Web Cloud Databases.
+>> - `Opis`{.action} (opcjonalnie): Możesz na przykład dodać informacje o roli adresu IP lub zakresu adresów IP.
+>> - `Bazy danych`{.action}: Zaznacz to pole, aby adres IP lub zakres adresów IP miał prawo dostępu do baz danych znajdujących się w Twoim rozwiązaniu Web Cloud Databases.
+>> - `SFTP`{.action}: Zaznacz to pole, aby adres IP lub zakres adresów IP miał dostęp do logów Twojego rozwiązania Web Cloud Databases.
 >>
 >> > [!warning]
 >> >

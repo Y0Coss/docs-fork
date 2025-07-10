@@ -34,7 +34,7 @@ Di default, per motivi di sicurezza, su queste soluzioni:
 ## Prerequisiti
 
 - Disporre di una soluzione [Web Cloud Databases](/links/web/databases).
-- conoscere l’indirizzo IP (o la classe di indirizzi IP) da autorizzare sulla soluzione.
+- Conoscere l’indirizzo IP (o la classe di indirizzi IP) da autorizzare sulla soluzione.
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
@@ -83,7 +83,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** pa
 >> ![Add an IP address or mask](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 >>
 >> - `IP/mask *`{.action}: Inserisci qui l’indirizzo IP (ad esempio: `203.0.113.44`) o la classe di indirizzi IP (ad esempio: `203.0.113.0/24` che rappresenta tutti gli indirizzi IP da `203.0.113.0` a `203.0.113.255`) che vuoi autorizzare sulla tua soluzione Web Cloud Databases.
->> - `Descrizione`{.action} (facoltativo): ad esempio, è possibile aggiungere informazioni sul ruolo dell’indirizzo IP o della classe di indirizzi IP in questione.
+>> - `Descrizione`{.action} (facoltativo): Ad esempio, è possibile aggiungere informazioni sul ruolo dell’indirizzo IP o della classe di indirizzi IP in questione.
 >> - `Database`{.action}: Seleziona questa casella per consentire all’indirizzo IP o alla classe di indirizzi IP di accedere ai database presenti sulla soluzione Web Cloud Databases.
 >> - `SFTP`{.action}: spunta questa casella per autorizzare l’indirizzo IP o la classe di indirizzi IP ad accedere ai log della soluzione Web Cloud Databases.
 >>

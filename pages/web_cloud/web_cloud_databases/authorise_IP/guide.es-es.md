@@ -24,7 +24,7 @@ Las soluciones [Web Cloud Databases](/links/web/databases) pueden utilizarse con
 
 Por defecto y por motivos de seguridad, en estas soluciones:
 
-Solo las direcciones IP asociadas a nuestra infraestructura de alojamientos compartidos están autorizadas a acceder al contenido de las bases de datos.
+- Solo las direcciones IP asociadas a nuestra infraestructura de alojamientos compartidos están autorizadas a acceder al contenido de las bases de datos.
 - El acceso a los logs de la solución no está restringido en función de las direcciones IP. Esto permite acceder a ella a través de un ordenador, por ejemplo.
 
 ¿Necesita cambiar estos permisos o restricciones?
@@ -43,7 +43,7 @@ Solo las direcciones IP asociadas a nuestra infraestructura de alojamientos comp
 
 > [!primary]
 >
-> Le recordamos que, si acaba de activar su solución [Web Cloud Databases] (/links/web/databases) y desea utilizarla con un plan de hosting de [OVHcloud] (/links/web/hosting), las direcciones IP de estos planes están autorizadas por defecto.
+> Le recordamos que, si acaba de activar su solución [Web Cloud Databases](/links/web/databases) y desea utilizarla con un plan de [hosting de OVHcloud](/links/web/hosting), las direcciones IP de estos planes están autorizadas por defecto.
 
 Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
@@ -82,7 +82,7 @@ Haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 >>
 >> ![Add an IP address or mask](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 >>
->> - `IP/Máscara *`{.action} : Introduzca aquí la dirección IP (por ejemplo, `203.0.113.44`) o el rango de direcciones IP (por ejemplo, `203.0.113.0/24` que represente todas las direcciones IP de `203.0.113.0` a `203.0.113.255`) que desee autorizar en su solución Web Cloud Databases.
+>> - `IP/Máscara *`{.action}: Introduzca aquí la dirección IP (por ejemplo, `203.0.113.44`) o el rango de direcciones IP (por ejemplo, `203.0.113.0/24` que represente todas las direcciones IP de `203.0.113.0` a `203.0.113.255`) que desee autorizar en su solución Web Cloud Databases.
 >> - `Descripción`{.action} (opcional): Puede, por ejemplo, añadir información sobre el rol de la dirección IP o del rango de direcciones IP en cuestión.
 >> - `Bases de datos`{.action}: Marque esta casilla para que la dirección IP o el rango de direcciones IP estén autorizados a acceder a las bases de datos presentes en su solución Web Cloud Databases.
 >> - `SFTP`{.action}: Marque esta casilla para que la dirección IP o el rango de direcciones IP estén autorizados a acceder a los logs de su solución Web Cloud Databases.
