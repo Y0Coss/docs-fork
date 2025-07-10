@@ -15,9 +15,9 @@ Se sul sito viene visualizzata la pagina "Your IP has been banned", significa ch
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web](/links/web/hosting) OVHcloud
-- Disporre delle [credenziali di accesso](/pages/web_cloud/web_hosting/ftp_connection) allo spazio di storage FTP dell'hosting
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di una [soluzione di hosting Web](/links/web/hosting) OVHcloud.
+- Disporre delle [credenziali di accesso](/pages/web_cloud/web_hosting/ftp_connection) allo spazio di storage FTP dell'hosting.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura
 
@@ -40,8 +40,8 @@ Una volta raccolti i dati, crea un [ticket di assistenza](https://help.ovhcloud.
 
 - Il messaggio incontrato sulla pagina ("Your IP has been banned").
 - I tre elementi recuperati precedentemente (`IP address`, `Date` e `Request ID`).
-- l’URL a partire dal quale viene visualizzata la pagina (ad esempio, `https://www.domain.tld/index.php`).
-- il browser Internet utilizzato.
+- l’URL a partire dal quale viene visualizzata la pagina (ad esempio: `https://www.domain.tld/index.php`).
+- Il browser Internet utilizzato.
 
 Il supporto ti contatterà nel più breve tempo possibile per indicarti l'origine del blocco.
 
