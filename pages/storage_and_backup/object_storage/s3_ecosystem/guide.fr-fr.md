@@ -23,6 +23,7 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | **Cohesity, Veritas NetBackup**  | Compatible - Certifié | Officiellement pris en charge, détails sur [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/fr_FR/dpp.NetBackup){.external}  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | A venir |
 | **Arctera, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/fr_FR/dpp.BackupExec){.external} | A venir |
 | **HYCU R-Cloud™** | Compatible - Certifié | Officiellement pris en charge, détails sur [HYCU R-Cloud User Guide](https://docs.r-cloud.hycu.com/HYCU-R-Cloud-User-Guide.pdf){.external} | [Guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup) |
+| **Backint for SAP HANA™** | Compatible - Certifié | Officiellement pris en charge, détails sur le [SAP Certified Solutions Directory](https://www.sap.com/dmc/exp/sap-certified-solutions/#/solutions?search=backint&id=s:c5927e8a-cf79-40c1-84ad-cdd354554389){.external} | [Guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent/) |
 
 ### Protection des données - Sauvegarde Kubernetes
 
