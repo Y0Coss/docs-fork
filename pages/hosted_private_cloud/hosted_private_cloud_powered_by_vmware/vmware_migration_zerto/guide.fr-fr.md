@@ -1,7 +1,7 @@
 ---
 title: Move2Cloud - Migration de charges VMware vers OVHcloud Hosted Private Cloud avec Zerto
 excerpt: "Découvrez comment migrer vos charges de travail VMware on-premises vers un environnement Hosted Private Cloud OVHcloud à l’aide de Zerto Virtual Replication."
-updated: 2025-07-08
+updated: 2025-07-10
 ---
 ## Objectif
 
