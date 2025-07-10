@@ -1,7 +1,7 @@
 ---
 title: Managing Enterprise File Storage with OVHcloud Terraform provider
 excerpt: Find out how to manage your Enterprise File Storage offer using Terraform
-updated: 2025-07-03
+updated: 2025-07-10
 ---
 
 ## Objective
@@ -31,7 +31,7 @@ In this guide, you will learn how to use OVHcloud Terraform provider to manage y
 
 The OVHcloud Teraform Provider needs to be configured with an API token to be able to make calls to the OVHcloud API.
 
-The API token informaition is needed because **behind the scenes, the OVHcloud Terraform Provider is making requests to the OVHcloud API**.
+The API token information is needed because **the OVHcloud Terraform Provider is making requests to the OVHcloud API in the backend**.
 
 Your API token will need to have the following rights:
 

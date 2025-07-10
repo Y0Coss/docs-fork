@@ -1,7 +1,7 @@
 ---
 title: Managing Enterprise File Storage with OVHcloud Terraform provider
 excerpt: Find out how to manage your Enterprise File Storage offer using Terraform
-updated: 2025-07-03
+updated: 2025-07-10
 ---
 
 ## Objective
@@ -31,7 +31,7 @@ In this guide, you will learn how to use OVHcloud Terraform provider to manage y
 
 The OVHcloud Teraform Provider needs to be configured with an API token to be able to make calls to the OVHcloud API.
 
-The API token informaition is needed because **behind the scenes, the OVHcloud Terraform Provider is making requests to the OVHcloud API**.
+The API token information is needed because **the OVHcloud Terraform Provider is making requests to the OVHcloud API in the backend**.
 
 Your API token will need to have the following rights:
 
@@ -46,7 +46,7 @@ Follow the [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/fi
 	
 #### Get your service ID
 
-The ID of your Enterprise File Storage service can be obtained via the OVHcloud API or the OVHcloud Manager.
+The ID of your Enterprise File Storage service can be obtained via the OVHcloud API or the OVHcloud Control Panel.
 
 > [!success]
 > If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
@@ -58,7 +58,7 @@ The ID of your Enterprise File Storage service can be obtained via the OVHcloud 
 > @api {v1} /storage GET /storage/netapp
 >
 
-- **OVH Manager method**: Navigate to the [Enteprise File Storage](/links/storage/enterprise-file-storage) section.
+- **OVHcloud Control Panel method**: Navigate to the [Enteprise File Storage](/links/storage/enterprise-file-storage) section.
 
 #### Configure provider parameters
 
@@ -200,7 +200,7 @@ service_quota = 1000
 
 ### Volumes Management
 
-OVHcloud Terraform Provider allows following volume management operations: creation, modification and deletion.
+OVHcloud Terraform Provider allows the following volume management operations: creation, modification and deletion.
 
 [ovh_storage_efs_share](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs_share) resource represents a volume.
 
@@ -222,8 +222,8 @@ resource "ovh_storage_efs_share" "volume" {
 
 Additionnal properties:
 
-- A custom mount path can be specified using `mount_path` property
-- The volume can be created from an existing snapshot using `snapshot_id` property
+- A custom mount path can be specified using `mount_path` property.
+- The volume can be created from an existing snapshot using `snapshot_id` property.
 
 Run [terraform plan](https://developer.hashicorp.com/terraform/cli/commands/plan) to create the execution plan:
 
@@ -472,7 +472,7 @@ share_access_paths = {
 
 ### Snapshots Management
 
-OVHcloud Terraform Provider allows following snapshot management operations: creation, modification and deletion.
+OVHcloud Terraform Provider allows the following snapshot management operations: creation, modification and deletion.
 
 [ovh_storage_efs_share_snapshot](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs_share_snapshot) represents a volume snapshot.
 
@@ -604,7 +604,7 @@ Once the value(s) are updated inside your `main.tf` file, apply the changes usin
 
 #### Delete a snapshot
 
-To delete your snapshot use[terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) command.
+To delete your snapshot use the [terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) command.
 
 ```bash
 terraform destroy -var-file=secrets.tfvars
@@ -770,7 +770,7 @@ Your ACL is now available.
 
 #### Delete an ACL
 
-To delete your ACL use [terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) command. 
+To delete your ACL use the [terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) command. 
 
 ```bash
 terraform destroy -var-file=secrets.tfvars
@@ -827,7 +827,7 @@ Destroy complete! Resources: 2 destroyed.
 ## Troubleshooting
 
 - **Authentication Issues**: Verify API credentials and permissions.
-- **Resource Limits**: Check volume/snapshot quota usage in the OVHcloud Manager.
+- **Resource Limits**: Check volume/snapshot quota usage in the OVHcloud Control Panel.
 - **Volume Deletion Issues**: Ensure all `manual` snapshots are deleted before removing the volume.
 
 ## Go further
@@ -838,4 +838,4 @@ Destroy complete! Resources: 2 destroyed.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our [community of users](/links/community)
+Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Gestion avec Terraform
 excerpt: Découvrez comment gérer votre service Enterprise File Storage avec Terraform
-updated: 2025-07-03
+updated: 2025-07-10
 ---
 
 ## Objectif

@@ -1,67 +1,68 @@
 ---
-title: Enterprise File Storage - Gestion avec Terraform
-excerpt: Découvrez comment gérer votre service Enterprise File Storage avec Terraform
-updated: 2025-07-03
+title: Managing Enterprise File Storage with OVHcloud Terraform provider
+excerpt: Find out how to manage your Enterprise File Storage offer using Terraform
+updated: 2025-07-10
 ---
 
-## Objectif
+## Objective
 
-Enterprise File Storage est une solution de stockage qui vous permet de provisionner des volumes NFS entièrement gérés par OVHcloud. Terraform est un outil d'*infrastructure-as-code* qui automatise la provision de ressources.
+Enterprise File Storage is a storage solution that allows you to provision NFS volumes that are fully managed by OVHcloud. Terraform is an infrastructure-as-code tool that automates resource provisioning.
 
-Dans ce guide, vous apprendrez à utiliser le provider Terraform d'OVHcloud pour gérer les volumes de votre solution EFS, les snapshots et plus encore.
+In this guide, you will learn how to use OVHcloud Terraform provider to manage your EFS solution volumes, snapshots and more.
 
 > [!primary]
-> Dans ce guide, les termes suivants sont utilisés de manière interchangeable:
-> 
-> - Un volume est également appelé *share*
-> - Un instantané est également appelé *snapshot*
-> - Une liste de contrôle d'accès est également appelée *ACL*
+> In this guide, a volume is also called *share* as in the OVHcloud API.
 >
-	
-## Prérequis
+
+**Learn how manage your EFS service using Terraform.**
+
+## Requirements
 
 - [Terraform >= 0.17.1](https://www.terraform.io/)
-- [Provider Terraform OVHcloud >= v2.5.0](https://github.com/ovh/terraform-provider-ovh/releases/)
-- Avoir accèss aux [API OVHcloud](/links/api)
-- Avoir un service Enterprise File Storage dans votre compte OVHcloud. Le service peut être commandé depuis la [page produit](/links/storage/enterprise-file-storage) ou depuis l'[espace client OVHcloud](/links/manager).
+- [OVHcloud Terraform provider >= v2.5.0](https://github.com/ovh/terraform-provider-ovh/releases/)
+- Access to the [OVHcloud API](/links/api)
+- An Enterprise File Storage service. A service can be ordered from the [product page](/links/storage/enterprise-file-storage) or from the [OVHcloud Control Panel](/links/manager).
 
-## En pratique 
+## Instructions
 
-### Configurer le provider Terraform d'OVHcloud
+### Configure the OVHcloud Terraform provider
 
-#### Générer un token d'accès API
+#### Generate API credentials
 
-Le provider Terraform d'OVHcloud doit être configuré avec un token d'API afin de pouvoir faire des appels à aux API OVHclod.
+The OVHcloud Teraform Provider needs to be configured with an API token to be able to make calls to the OVHcloud API.
 
-Le token API doit avoir les permissions suivantes:
+The API token informaition is needed because **behind the scenes, the OVHcloud Terraform Provider is making requests to the OVHcloud API**.
+
+Your API token will need to have the following rights:
 
 - GET `/storage/netapp/*`
 - POST `/storage/netapp/*`
 - PUT `/storage/netapp/*`
 - DELETE `/storage/netapp/*`
 
-Vous pouvez suivre le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour générer votre token d'API.
+Follow the [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide to generate your API token.
 
-**Une fois le token généré, sauvegardez les informations du token pour pouvoir l'utiliser avec le provider Terraform d'OVHcloud**.
+**Once your token is generated, save its information for later use with the OVHcloud Terraform provider**.
+	
+#### Get your service ID
 
-#### Récupére l'ID d'un service
+The ID of your Enterprise File Storage service can be obtained via the OVHcloud API or the OVHcloud Manager.
 
-L'ID d'un service peut être obtenu depuis les API OVHcloud ou via le manager OVHcloud.
+> [!success]
+> If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
-> Si vous n'êtes pas familiarisé avec l'utilisation des API d'OVHcloud, veuillez consulter notre guide sur les [Premiers pas avec les API d'OVHcloud](/pages/manage_and_operate/api/first-steps).
-
-- **Méthode API**: Appellez `GET /storage/netapp`
+- **API method**: Call `GET /storage/netapp`.
 
 > [!api]
 > 
 > @api {v1} /storage GET /storage/netapp
 >
 
-- **Méthode Manager OVH**: Accédez à la section [Enteprise File Storage](/links/storage/enterprise-file-storage)
+- **OVH Manager method**: Navigate to the [Enteprise File Storage](/links/storage/enterprise-file-storage) section.
 
-#### Configurer le provider Terraform OVHcloud
+#### Configure provider parameters
 
-Créez un fichier `provider .tf` définissant la configuration du provider OVHcloud:
+Create a `provider.tf` file defining the OVHcloud provider configuration:
 
 ```bash
 terraform {
@@ -83,7 +84,7 @@ provider "ovh" {
 }
 ```
 
-Créez ensuite un fichier `variables.tf` définissant les variables qui seront utilisées dans vos fichiers `.tf`:
+Then create a `variables.tf` file definining the variables that will be used inside your `.tf` files:
 
 ```bash
 variable "ovh" {
@@ -98,18 +99,17 @@ variable "ovh" {
 ```
 
 > [!primary]
-> À propos de la variable ovh.endpoint : par défaut, `ovh-eu` est défini car nous effectuons des appels aux API OVHcloud Europe.
+> About the `ovh.endpoint` variable: by default, `ovh-eu` is defined because we are making calls to the OVHcloud Europe API.
 >
-> D'autres valeurs existent pour cette variable, en fonction de vos besoins :
+> Other endpoints exists, depending on your needs:
 >
-> - `ovh-eu` pour les API OVHcloud Europe
-> - `ovh-ca` pour les API OVHcloud Amérique du Nord
->
+> - `ovh-eu` for OVHcloud Europe API
+> - `ovh-ca` for OVHcloud North America API
 
-Finalement, créez un fichier `secrets.tfvars` contenant les valeurs de variables requises:
+Finally, create a `secrets.tfvars` file containing the required variable values:
 
 > [!warning]
-> N'oubliez pas de remplacer `<application_key>`, `<application_secret>` et `<consumer_key>` avec les informations de votre token API obtenu précédemment.
+> Don't forget to replace `<application_key>`, `<application_secret>` and `<consumer_key>` with your API token information obtained previously.
 >
 
 ```bash
@@ -121,39 +121,39 @@ ovh = {
 }
 ```
 
-Maintenant, vous pouvez initaliser Terraform:
+Now you need to initiliaze Terraform:
 
 ```bash
 terraform init
 ```
 
-La commande `init` initialisera votre répertoire de travail qui contient les fichiers de configuration `.tf`.
+The init command will initialize your working directory which contains `.tf` configuration files.
 
-C'est la première commande à exécuter pour une nouvelle configuration, ou après avoir récupéré une configuration existante depuis un dépôt Git, par exemple.
+It’s the first command to execute for a new configuration, or after doing a checkout of an existing configuration in a given git repository for example.
 
-La commande `init` téléchargera les providers Terraform nécessaires et configurera l'environnement de travail.
+The init command will download the necessary providers and initialize the backend.
 
 > [!success]
 > 
-> Une fois l'initialisation réussie, vous êtes maintenant en mesure de gérer les ressources et les sources de données d'une offre Enterprise File Storage qui sont disponibles à l'intérieur du [provider Terraform OVHcloud](https://registry.terraform.io/providers/ovh/ovh/latest/docs).
+> Once the initialization is successfull you are now able to manage Enterprise File Storage resources and data sources that are availalable inside the OVHcloud Terraform provider.
 >
 
-### Gestion des services
+### Service management
 
-#### Récupérer les informations d'un service
+#### Get service information
 
-La source de données [ovh_storage_efs](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs) permet de récupérer les détails d'un service.
+Use the [ovh_storage_efs](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs) data source to fetch service details. 
 
-Créez un fichier `main.tf`:
+Create a `main.tf` file:
 
 ```bash
 data "ovh_storage_efs" "efs" {
-  service_name = "<service_id>" # Remplacez cette valeur par l'ID de votre service EFS.
+  service_name = "<service_id>" # Replace this value with EFS service ID.
 }
 ```
 
-Définissez les [outputs](https://developer.hashicorp.com/terraform/language/values/outputs) dans un fichier `output.tf`:
-
+Define [outputs](https://developer.hashicorp.com/terraform/language/values/outputs) in an `output.tf` file:
+	
 ```bash
 output "service_id" {
   value = data.ovh_storage_efs.efs.id
@@ -168,7 +168,7 @@ output "service_quota" {
 }
 ```
 
-Exécutez la commande [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) pour voir le résultat:
+Run [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) to view the outputs: 
 
 ```bash
 terraform apply -var-file=secrets.tfvars
@@ -198,19 +198,19 @@ service_product = "enterprise-file-storage-premium-1tb"
 service_quota = 1000
 ```
 
-### Gestion des volumes
+### Volumes Management
 
-Le provider Terraform OVHcloud permet les opérations de gestion de volume suivantes : création, modification et suppression.
+OVHcloud Terraform Provider allows following volume management operations: creation, modification and deletion.
 
-La ressource [ovh_storage_efs_share](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs_share) représente un volume.
+[ovh_storage_efs_share](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs_share) resource represents a volume.
 
-#### Créer un volume
+#### Create a volume
 
-Définissez un volume à l’intérieur de votre fichier `main.tf`:
+Define a volume inside your `main.tf` file:
 
 ```bash
 resource "ovh_storage_efs_share" "volume" {
-  service_name = "<service_id>" # Remplacez cette valeur par l'ID de votre service EFS.
+  service_name = "<service_id>" # Replace this value with EFS service ID.
   name         = "share"
   description  = "My share"
   protocol     = "NFS"
@@ -220,12 +220,12 @@ resource "ovh_storage_efs_share" "volume" {
 }
 ```
 
-Propriétés supplémentaires :
+Additionnal properties:
 
-- Un chemin de montage personnalisé peut être spécifié en utilisant la propriété `mount_path`
-- Le volume peut être créé à partir d'un snapshot existant en utilisant la propriété `snapshot_id`
+- A custom mount path can be specified using `mount_path` property
+- The volume can be created from an existing snapshot using `snapshot_id` property
 
-Exécutez la commande [terraform plan](https://developer.hashicorp.com/terraform/cli/commands/plan) afin de créer un plan d'exécution :
+Run [terraform plan](https://developer.hashicorp.com/terraform/cli/commands/plan) to create the execution plan:
 
 ```bash
 terraform plan -var-file=secrets.tfvars -out main.tfplan
@@ -256,14 +256,14 @@ Saved the plan to: main.tfplan
 To perform exactly these actions, run the following command to apply:
     terraform apply "main.tfplan"
 ```
-	
-Points clés :
 
-- La commande `terraform plan` va créer un plan d'exécution mais ne l'exécutera pas. Au lieu de cela, elle déterminera les actions nécessaires pour créer la configuration spécifiée à l'intérieur de vos fichiers de configuration. Cela vous permettra de vérifier si votre plan d'exécution correspond à vos attentes avant d'apporter des modifications aux ressources réelles.
+Key points:
 
-- Le paramètre facultatif `-out` vous permet de spécifier un fichier de sortie pour le plan. Il garantit que le plan que vous avez examiné sera le même que celui qui est appliqué.
+ - The `terraform plan` command will create an execution plan but won't execute it. Instead, it will determine what actions are necessary to create the configuration specified inside your configuration files. This will allow you to verifiy whether your execution plan matches exectations before making any changes to actual resources.
 
-Une fois que vous avez examiné le plan d'exécution, exécutez `terraform apply` pour apporter des modifications :
+ - The optional `-out` parameter allows your to specifiy an output file for the plan. It will ensure that the plan you reviewed will be the same as what is applied.
+
+Once you reviewed the execution plan, run [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) to make changes:
 
 ```bash
 terraform apply main.tfplan
@@ -275,21 +275,21 @@ ovh_storage_efs_share.volume: Creation complete after 11s [id=29d1facf-db03-4951
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-Votre volume est désormais crée.
+Your volume is now created.
 
-#### Modifier un volume
+#### Modify a volume
 
-Les nom (`name`), la description (`description`) et la taille (`size`) d'un volume peuvent être mis à jour.
+Volume `name`, `description` and `size` can be updated.
 
-Une fois que la (ou les) valeur(s) est (sont) mise(s) à jour dans votre fichier `main.tf`, appliquez les modifications en utilisant [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply).
+Once the value(s) are updated inside your `main.tf` file, apply the changes using [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply).
 
-#### Supprimer un volume
+#### Delete a volume
 
-Pour supprimer votre volume, utilisez la commande [terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy).
+To delete your volume use [terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) command. 
 
 > [!warning]
 >
-> Si votre volume a des snapshots de type `manual` qui ne sont pas référencés par Terraform, ils doivent être supprimés avant que le volume ne soit supprimé.
+> If your volume has `manual` snapshots that are not referenced by Terraform, they must be deleted before the volume is deleted. 
 >
 
 ```bash
@@ -329,16 +329,16 @@ ovh_storage_efs_share.volume: Destruction complete after 1s
 Destroy complete! Resources: 1 destroyed.
 ```
 
-#### Obtenir des informations sur les chemins d'access d'un volume
+#### Get information about volume access paths
 
-Pour récupérer des informations sur un ou tous les chemins d'accès d'un volume, utilisez les sources de données [ovh_storage_efs_share_access_paths](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs_share_access_paths) et [ovh_storage_efs_share_access_path](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs_share_access_path) respectivement.
+To retrieve information about one or all of the volume access paths use [ovh_storage_efs_share_access_paths](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs_share_access_paths) and [ovh_storage_efs_share_access_path](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs_share_access_path) data sources respectively.
 
-Créez ou ajoutez au fichier `main.tf` existant le contenu suivant :
+Create or add to an existing `main.tf` file the following content:
 
 > [!primary]
 >
-> Vous pouvez (ré)utiliser un volume qui existe déjà (dans votre configuration Terraform ou non).
-> 
+> You can (re-)use a volume that already exists (within your Terraform configuration or not).
+>
 
 ```bash
 resource "ovh_storage_efs_share" "volume" {
@@ -361,7 +361,7 @@ data "ovh_storage_efs_share_access_path" "access_path" {
 }
 ```
 
-Définissez les [outputs](https://developer.hashicorp.com/terraform/language/values/outputs) dans un fichier `output.tf` :
+Define access path [outputs](https://developer.hashicorp.com/terraform/language/values/outputs) in an `output.tf` file:
 
 ```bash
 output "share_acccess_path" {
@@ -373,7 +373,7 @@ output "share_access_paths" {
 }
 ```
 
-Exécutez la commande [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) pour ajouter les sources de données et afficher les *outputs* :
+Run [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) to add your data source and create outputs:
 
 ```bash
 terraform apply data_source.tfplan
@@ -401,7 +401,7 @@ Terraform will perform the following actions:
       + service_name = "xxx-xxx-xxx-xxx-xxx"
       + share_id     = (known after apply)
     }
- 
+
   # ovh_storage_efs_share.volume will be created
   + resource "ovh_storage_efs_share" "volume" {
       + created_at       = (known after apply)
@@ -470,31 +470,31 @@ share_access_paths = {
 }
 ```
 
-### Gestion des snapshots
+### Snapshots Management
 
-Le provider Terraform OVHcloud permet les opérations de gestion de snapshots suivantes : création, modification et suppression.
+OVHcloud Terraform Provider allows following snapshot management operations: creation, modification and deletion.
 
-[ovh_storage_efs_share_snapshot](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs_share_snapshot) représente un snapshot.
+[ovh_storage_efs_share_snapshot](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs_share_snapshot) represents a volume snapshot.
 
-#### Creer un snapshot
+#### Create a snapshot
 
-Définissez un snapshot à l'intérieur de votre fichier `main.tf`:
-
-> [!primary]
->
-> Vous pouvez (ré)utiliser un volume qui existe déjà (dans votre configuration Terraform ou non) pour créer votre snapshot.
->
+Define a snapshot inside `main.tf` file:
 
 > [!primary]
 >
-> La ressource `time_sleep` gère le délai entre la suppression du snapshot et la suppression du volume. Le snapshot doit être supprimé avant que le volume puisse être supprimé.
+> You can (re-)use a volume that already exists (within your Terraform configuration or not) to create your snapshot.
 >
-> Si n'avez pas déjà installé le provider Terraform `hashicorp/time`, vous devrez exécuter `terraform init -upgrade` pour le télécharger avant de lancer la commande `terraform plan`.
+
+> [!primary]
+> 
+> The `time_sleep` resource manages delay between snapshot and volume deletion. The snapshot has to be deleted before the volume can be deleted.
+>
+> If you don't already have the `hashicorp/time` provider installed, you will need to run `terraform init -upgrade` to download it.
 >
 
 ```bash
 resource "ovh_storage_efs_share" "volume" {
-  service_name = "<service_id>" # Remplacez cette valeur par l'ID de votre service EFS.
+  service_name = "<service_id>" # Replace this value with service ID.
   name         = "share"
   description  = "My share"
   protocol     = "NFS"
@@ -504,7 +504,7 @@ resource "ovh_storage_efs_share" "volume" {
 resource "ovh_storage_efs_share_snapshot" "snapshot" {
   depends_on = [time_sleep.wait_10_seconds]
 
-  service_name = "<service_id>" # Remplacez cette valeur par l'ID de votre service EFS.
+  service_name = "<service_id>" # Replace this value with service ID.
   share_id = ovh_storage_efs_share.share.id
   name = "snapshot"
   description = "My snapshot"
@@ -517,7 +517,7 @@ resource "time_sleep" "wait_10_seconds" {
 }
 ```
 
-Exécutez la commande [terraform plan](https://developer.hashicorp.com/terraform/cli/commands/plan) afin de créer un plan d'exécution :
+Run [terraform plan](https://developer.hashicorp.com/terraform/cli/commands/plan) to create the execution plan:
 
 ```bash
 terraform plan -var-file=secrets.tfvars -out main.tfplan
@@ -568,13 +568,13 @@ To perform exactly these actions, run the following command to apply:
     terraform apply "main.tfplan"
 ```
 
-Points clés :
+Key points:
 
-- La commande `terraform plan` va créer un plan d'exécution mais ne l’exécutera pas. Au lieu de cela, elle déterminera les actions nécessaires pour créer la configuration spécifiée à l'intérieur de vos fichiers de configuration. Cela vous permettra de vérifier si votre plan d'exécution correspond à vos attentes avant d'apporter des modifications aux ressources réelles. 
+ - The `terraform plan` command will create an execution plan but won't execute it. Instead, it will determine what actions are necessary to create the configuration specified inside your configuration files. This will allow you to verifiy whether your execution plan matches exectations before making any changes to actual resources.
 
-- Le paramètre facultatif `-out` vous permet de spécifier un fichier de sortie pour le plan. Il garantit que le plan que vous avez examiné sera le même que celui qui est appliqué.
+ - The optional `-out` parameter allows your to specifiy an output file for the plan. It will ensure that the plan you reviewed will be the same as what is applied.
 
-Une fois que vous avez examiné le plan d'exécution, exécutez `terraform apply` pour apporter des modifications :
+Once you reviewed the execution plan, run [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) to make changes:
 
 ```bash
 terraform apply main.tfplan
@@ -594,17 +594,17 @@ ovh_storage_efs_share_snapshot.snapshot: Creation complete after 10s [id=f92bc04
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 ```
 
-Votre snapshot est désormais créé.
+Your snapshot is now available.
 
-#### Modifier un snapshot
+#### Modify a snapshot
 
-Les noms (`name`) et description (`description`) d'un snapshot peuvent être mis à jour.
+Snapshot `name` and `description` properties can be updated.
 
-Une fois que la (ou les) valeur(s) est (sont) mise(s) à jour dans votre fichier `main.tf`, appliquez les modifications en utilisant [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply).
+Once the value(s) are updated inside your `main.tf` file, apply the changes using [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply).
 
-#### Supprimer un snapshot
+#### Delete a snapshot
 
-Pour supprimer votre snapshot, utilisez la commande [terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy).
+To delete your snapshot use[terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) command.
 
 ```bash
 terraform destroy -var-file=secrets.tfvars
@@ -669,39 +669,39 @@ ovh_storage_efs_share.volume: Destruction complete after 1s
 Destroy complete! Resources: 3 destroyed.
 ```
 
-### Gestion des ACLs
+### ACLs management
 
-Le provider Terraform OVHCloud permet les opérations de gestion des ACL suivantes : création et suppression.
+OVHcloud Terraform Provider allows ACLs creation and deletion.
 
-La ressource [ovh_storage_efs_share_acl](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs_share_acl) représente une ACL.
+[ovh_storage_efs_share_acl](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs_share_acl) resource represents an ACL.
 
-#### Créer une ACL
+#### Create an ACL
 
-Définissez une ACL dans le fichier `main.tf`:
+Define an ACL inside `main.tf` file:
 
 > [!primary]
 >
-> Vous pouvez (ré)utiliser un volume qui existe déjà (dans votre configuration Terraform ou non) pour créer une ACL.
+> You can (re-)use a volume that already exists (within your Terraform configuration or not) to create your ACL.
 >
 
 ```bash
 resource "ovh_storage_efs_share" "volume" {
-  service_name = "<service_id>" # Remplacez cette valeur par l'ID de votre service EFS.
+  service_name = "<service_id>" # Replace this value with service ID.
   name = "share"
   description = "My share"
   protocol = "NFS"
   size = 100
 }
-i
+
 resource "ovh_storage_efs_share_acl" "acl" {
-  service_name = "<service_id>" # Remplacez cette valeur par l'ID de votre service EFS.
+  service_name = "<service_id>" # Replace this value with service ID.
   share_id = ovh_storage_efs_share.volume.id
   access_level = "rw"
   access_to = "10.0.0.1/32"
 }
 ```
 
-Exécutez la commande [terraform plan](https://developer.hashicorp.com/terraform/cli/commands/plan) afin de créer un plan d'exécution :
+Run [terraform plan](https://developer.hashicorp.com/terraform/cli/commands/plan) to create the execution plan:
 
 ```bash
 terraform plan -var-file=secrets.tfvars -out main.tfplan
@@ -745,13 +745,13 @@ To perform exactly these actions, run the following command to apply:
     terraform apply "main.tfplan"
 ```
 
-Points clés :
+Key points:
 
-- La commande `terraform plan` va créer un plan d'execution mais ne l’exécutera pas. Au lieu de cela, elle déterminera les actions nécessaires pour créer la configuration spécifiée à l'intérieur de vos fichiers de configuration. Cela vous permettra de vérifier si votre plan d'exécution correspond à vos attentes avant d'apporter des modifications aux ressources réelles. 
+  - The `terraform plan` command will create an execution plan but won't execute it. Instead, it will determine what actions are necessary to create the configuration specified inside your configuration files. This will allow you to verifiy whether your execution plan matches exectations before making any changes to actual resources.
 
-- Le paramètre facultatif `-out` vous permet de spécifier un fichier de sortie pour le plan. Il garantit que le plan que vous avez examiné sera le même que celui qui est appliqué.
+  - The optional `-out` parameter allows your to specifiy an output file for the plan. It will ensure that the plan you reviewed will be the same as what is applied.
 
-Une fois que vous avez examiné le plan d'exécution, exécutez `terraform apply` pour apporter les modifications :
+Once you reviewed the execution plan, run [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) to make changes:
 
 ```bash
 terraform apply main.tfplan
@@ -766,11 +766,11 @@ ovh_storage_efs_share_acl.acl: Creation complete after 11s [id=9274f4d4-de96-46e
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
-Votre ACL est désormais créée.
+Your ACL is now available.
 
-#### Supprimer une ACL
+#### Delete an ACL
 
-Pour supprimer votre ACL, utilisez la commande [terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy).
+To delete your ACL use [terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) command. 
 
 ```bash
 terraform destroy -var-file=secrets.tfvars
@@ -807,7 +807,7 @@ Terraform will perform the following actions:
       - share_id     = "001ccf4b-3537-41c0-b446-a42663971d58" -> null
       - status       = "active" -> null
     }
-	
+
 Plan: 0 to add, 0 to change, 2 to destroy.
 
 Do you really want to destroy all resources?
@@ -824,18 +824,18 @@ ovh_storage_efs_share.volume: Destruction complete after 0s
 Destroy complete! Resources: 2 destroyed.
 ```
 
-## Erreurs fréquentes
+## Troubleshooting
 
-- **Problèmes d'authentification** : Vérifiez les informations d'identification des API et les autorisations.
-- **Limites de ressources** : Vérifiez l'utilisation des quotas de volumes/snapshots dans le gestionnaire OVHcloud.
-- **Problèmes de suppression de volume** : Assurez-vous que tous les snapshots de type `manual` sont supprimés avant de supprimer le volume.
+- **Authentication Issues**: Verify API credentials and permissions.
+- **Resource Limits**: Check volume/snapshot quota usage in the OVHcloud Manager.
+- **Volume Deletion Issues**: Ensure all `manual` snapshots are deleted before removing the volume.
 
-## Aller plus loin
+## Go further
 
-[Enterprise File Storage - API Quickstart](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp)
+[API Quickstart](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start)
 
 [Enterprise File Storage - FAQ](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_faq/)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Join our [community of users](/links/community)

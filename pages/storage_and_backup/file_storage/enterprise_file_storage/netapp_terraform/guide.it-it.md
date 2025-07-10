@@ -1,7 +1,7 @@
 ---
 title: Managing Enterprise File Storage with OVHcloud Terraform provider
 excerpt: Find out how to manage your Enterprise File Storage offer using Terraform
-updated: 2025-07-03
+updated: 2025-07-10
 ---
 
 ## Objective
