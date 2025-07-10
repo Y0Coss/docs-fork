@@ -1,7 +1,7 @@
 ---
 title: "KMS OVHcloud - Aperçu de l'architecture"
 excerpt: "Découvrez comment nous gérons la sécurité du KMS OVHcloud"
-updated: 2025-06-18
+updated: 2025-07-10
 ---
 
 ## Objectif
@@ -69,7 +69,7 @@ L'emplacement de la sauvegarde dépend de l'emplacement du KMS OVHcloud.
     - KMS Backup Region 1 : CA_EAST_BHS
     - KMS Backup Region 2 : CA_EAST_TOR
 - **CA_EAST_TOR**
-  -  KMS Backup Region 1 : CA_EAST_BHS
+    - KMS Backup Region 1 : CA_EAST_BHS
     - KMS Backup Region 2 : CA_EAST_TOR
 - **AP_SOUTHEAST_SGP**
     - KMS Backup Region 1 : AP_SOUTHEAST_SGP
