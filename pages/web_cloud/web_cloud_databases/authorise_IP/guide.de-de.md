@@ -43,7 +43,7 @@ Möchten Sie diese Berechtigungen/Einschränkungen ändern?
 
 > [!primary]
 >
-> Zur Erinnerung: Wenn Sie Ihre [Web Cloud Databases](/links/web/databases) Lösung gerade aktiviert haben und diese nur mit einem [OVHcloud Webhosting](/links/web/hosting) verwenden möchten, müsssen die IP-Adressen Ihres Webhosting nicht manuell autorisiert werden.
+> Zur Erinnerung: Wenn Sie Ihre [Web Cloud Databases](/links/web/databases) Lösung gerade aktiviert haben und diese nur mit einem [OVHcloud Webhosting](/links/web/hosting) verwenden möchten, müssen die IP-Adressen Ihres Webhosting nicht manuell autorisiert werden.
 
 Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 
