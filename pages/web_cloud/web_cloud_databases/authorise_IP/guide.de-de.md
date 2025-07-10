@@ -85,7 +85,7 @@ Klicken Sie jeweils auf die Tabs, um die **5** Schritte anzuzeigen.
 >> - `IP / Maske *`{.action}: Geben Sie hier die IP-Adresse (zum Beispiel: `203.0.113.44`) ein, die Sie für Ihre Web Cloud Databases Lösung autorisieren möchten bzw. den IP-Adressbereich (zum Beispiel: `203.0.113.0/24`, der alle IP-Adressen von `203.0.113.0` bis `203.0.113.255` darstellt).
 >> - `Beschreibung`{.action} (optional): Sie können etwa Informationen zur Rolle der betreffenden IP-Adresse (oder IP-Adressbereich) hinzufügen.
 >> - `Datenbanken`{.action}: Aktivieren Sie diese Option, damit die IP-Adresse (oder IP-Adressbereich) auf die Datenbanken auf Ihrer Web Cloud Databases Lösung zugreifen kann.
->> - `SFTP`{.action} : Setzen Sie hier einen Haken, damit die IP-Adresse oder der IP-Adressbereich auf die Logs Ihrer Web Cloud Databases Lösung zugreifen können.
+>> - `SFTP`{.action}: Setzen Sie hier einen Haken, damit die IP-Adresse oder der IP-Adressbereich auf die Logs Ihrer Web Cloud Databases Lösung zugreifen können.
 >>
 >> > [!warning]
 >> >
