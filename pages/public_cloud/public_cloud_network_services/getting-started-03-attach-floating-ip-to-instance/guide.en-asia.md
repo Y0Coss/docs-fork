@@ -1,7 +1,7 @@
 ---
 title: Attaching a Floating IP to a Public Cloud instance
 excerpt: Find out how a Floating IP address functions and how to configure it
-updated: 2025-07-09
+updated: 2025-07-10
 ---
 
 ## Objective
@@ -411,9 +411,9 @@ The following steps describe how to attach a Floating IP to an existing instance
 >> 
 >> A pop-up window will appear. Click on the drop-down arrow underneath `Port to be assiociated` and select the "port" or "instance" to attach the Floating IP to.
 >>
->> ![associate](images/associate_floating_ip.png){.thumbnail}
+>> ![associate](images/select_port.png){.thumbnail}
 >>
->> Next, click on `Associate`{.action}
+>> Next, click on `Associate`{.action}.
 >>
 >> Once done, the Floating IP will be associated to the instance.
 >>
@@ -435,7 +435,7 @@ A pop-up window will appear prompting you to confirm the selection. Click on `Di
 
 ![confirm](images/confirm_disassociate_ip.png){.thumbnail}
 
-Once done, the Floating will be detached from the instance.
+Once done, the Floating IP will be detached from the instance and .
 
 #### Deleting a Floating IP
 
