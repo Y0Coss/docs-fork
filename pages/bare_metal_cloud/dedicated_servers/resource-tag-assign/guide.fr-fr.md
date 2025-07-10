@@ -1,7 +1,7 @@
 ---
 title: 'Comment assigner un tag à un serveur Bare Metal'
 excerpt: "Découvrez comment créer et modifier des tags pour chaque serveur dédié depuis l'espace client OVHcloud"
-updated: 2025-06-30
+updated: 2025-07-01
 ---
 
 ## Objectif
@@ -44,7 +44,7 @@ Vous êtes automatiquement orienté vers l'onglet `Tags`.
 
 Cliquez sur le bouton `Assigner un tag`{.action}.
 
-![Tags - liste vide](images/Tag_list_empty.png){.thumbnail}
+![Tags - liste vide](images/tag_list_empty.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, cliquez dans le champ `Clé`{.action} pour ouvrir le menu déroulant, puis sélectionnez la clé souhaitée.
 

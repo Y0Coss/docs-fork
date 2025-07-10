@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilité avec les applications tierces
 excerpt: "Ce guide fournit une liste d'applications tierces testées et certifiées compatibles avec OVHcloud Object Storage"
-updated: 2025-06-23
+updated: 2025-07-08
 ---
 
 ## Objectif
@@ -21,7 +21,7 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | **Acronis Cyber Protect Cloud** | Compatible - Certifié | Officiellement pris en charge, détails disponibles sur la [page d’intégration Acronis S3](https://solutions.acronis.com/en-us/integrations/amazon-s3/){.external} | À venir |
 | **IBM Storage Protect** | Compatible - Certifié | Officiellement pris en charge, détails sur [IBM Storage Protect Support Page](https://www.ibm.com/support/pages/ibm-spectrum-protect-object-storage-support){.external} | A venir |
 | **Cohesity, Veritas NetBackup**  | Compatible - Certifié | Officiellement pris en charge, détails sur [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/fr_FR/dpp.NetBackup){.external}  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | A venir |
-| **Artesca, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/fr_FR/dpp.BackupExec){.external} | A venir |
+| **Arctera, Veritas BackupExec** | Compatible - Certifié | Officiellement pris en charge, détails sur [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/fr_FR/dpp.BackupExec){.external} | A venir |
 | **HYCU R-Cloud™** | Compatible - Certifié | Officiellement pris en charge, détails sur [HYCU R-Cloud User Guide](https://docs.r-cloud.hycu.com/HYCU-R-Cloud-User-Guide.pdf){.external} | [Guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup) |
 
 ### Protection des données - Sauvegarde Kubernetes
@@ -55,6 +55,12 @@ Le tableau suivant fournit une vue d'ensemble de la compatibilité de notre serv
 | --- | --- | --- | --- |
 | **ownCloud** | Compatible | Plate-forme de synchronisation et de partage de fichiers open-source pour la collaboration. Plus de détails sur [ownCloud](https://owncloud.com/product){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_owncloud) |
 | **NextCloud Files** | Compatible | Plate-forme de synchronisation et de partage de fichiers open-source pour la collaboration. Plus de détails sur [NextCloud](https://nextcloud.com/fr/files/){.external} | [Guide](/pages/storage_and_backup/object_storage/s3_nextcloud) |
+
+### Plafteformes de stockage
+
+| Outil/Logiciel | Compatibilité | Notes | Guide de démarrage |
+| --- | --- | --- | --- |
+| **Pure Storage FlashBlade** | Compatible - Certifié |  Officiellement pris en charge comme cible de réplication compatible S3. | [Guide](/pages/storage_and_backup/object_storage/s3_pure_storage_flashblade) |
 
 ## Aller plus loin
  

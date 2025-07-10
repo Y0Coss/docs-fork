@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configuring your email account via ActiveSync on Mail for iPhone or iPad"
 excerpt: "Find out how to configure your Zimbra Pro email address on the Mail mobile app for iOS via the ActiveSync protocol"
-updated: 2025-06-27
+updated: 2025-07-03
 ---
 
 <style>
@@ -25,7 +25,7 @@ Zimbra Pro accounts can be configured on iPhone or iPad using ActiveSync protoco
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
 > 
 
 ## Requirements
@@ -47,14 +47,14 @@ From your iPhone or iPad, go to the "Settings" section, then follow the installa
 >> 2. Tap `Add Account`{.action}.
 >> 3. Select `Microsoft Exchange`{.action}.
 >>
->> ![mail ios](images/mail-app-ios-add-step01.png){.thumbnail .h-500}
+>> ![mail ios](images/mail-app-ios-add-step-01.png){.thumbnail .h-500}
 >>
 > **Step 2**
 >>
 >> 1. Enter your email address and a description, then press `Next`{.action}.
 >> 2. In the window that pops up, choose `Configure manually`{.action}.
 >>
->> ![mail ios](images/mail-app-ios-add-step02.png){.thumbnail .h-500}
+>> ![mail ios](images/mail-app-ios-add-step-02.png){.thumbnail .h-500}
 >>
 > **Step 3**
 >>
@@ -62,7 +62,7 @@ From your iPhone or iPad, go to the "Settings" section, then follow the installa
 >> - **Password**: Enter the password associated with your email address.
 >> - **Description**: Enter a name that can be used to identify this account, along with other email accounts saved on email.
 >>
->> ![mail ios](images/mail-app-ios-add-step03.png){.thumbnail .h-500}
+>> ![mail ios](images/mail-app-ios-add-step-03.png){.thumbnail .h-500}
 >>
 > **Step 4**
 >>
@@ -77,7 +77,7 @@ From your iPhone or iPad, go to the "Settings" section, then follow the installa
 >>
 >> To finalize the configuration, tap `Next`{.action} and select the features you want to use on your iPhone or iPad.
 >>
->> ![mail ios](images/mail-app-ios-add-step04.png){.thumbnail .h-500}
+>> ![mail ios](images/mail-app-ios-add-step-04.png){.thumbnail .h-500}
 >>
 
 > [!warning]
@@ -90,7 +90,7 @@ Once you have configured your email address, you can start using it! You can now
 
 OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
-### How do I modify existing settings?<a name="modify-settings"></a>
+### How do I modify existing settings? <a name="modify-settings"></a>
 
 From your iPhone or iPad, go to the "Settings" section, then follow the instructions below:
 
@@ -102,7 +102,7 @@ From your iPhone or iPad, go to the "Settings" section, then follow the instruct
 
 Find the settings in **Step 4** of the [Add account](#add-account) chapter.
 
-### How do I delete an email account?<a name="delete-account"></a>
+### How do I delete an email account? <a name="delete-account"></a>
 
 From your iPhone or iPad, go to the "Settings" section, then follow the instructions below:
 

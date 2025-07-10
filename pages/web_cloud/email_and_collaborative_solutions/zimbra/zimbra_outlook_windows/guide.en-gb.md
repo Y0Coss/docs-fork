@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configuring your email account via ActiveSync in Outlook for Windows"
 excerpt: "Find out how to configure your Zimbra Pro email address in Outlook for Windows using the ActiveSync protocol"
-updated: 2025-06-27
+updated: 2025-07-03
 ---
 
 <style>
@@ -25,13 +25,13 @@ Zimbra Pro accounts can be configured on Windows using the ActiveSync protocol, 
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
 > 
 
 ## Requirements
 
 - A [Zimbra Pro](/links/web/emails-zimbra) account
-- [Outlook Classic](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-Classic-on-a-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) for Windows  installed on your device
+- [Outlook Classic](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) for Windows  installed on your device
 - The login details for the email account you would like to configure
 
 ## Instructions
@@ -40,7 +40,7 @@ Zimbra Pro accounts can be configured on Windows using the ActiveSync protocol, 
 >
 > Before you begin configuring your account, it is important to note that the Outlook application included free with Windows 11 is incompatible with the ActiveSync protocol, which is required to configure a Zimbra Pro account. You will need to use the classic **Outlook** version to benefit from ActiveSync protocol support.
 >
-> To install Outlook Classic on your Windows computer, download it from the Microsoft page "[Install or reinstall Outlook Classic on a Windows PC](https://support.microsoft.com/office/installer-ou-r%C3%A9install-outlook-Classic-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5)", and install it.
+> To install Outlook Classic on your Windows computer, download it from the Microsoft page "[Install or reinstall Outlook Classic on a Windows PC](https://support.microsoft.com/en-gb/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5)", and install it.
 >
 > Once the installation is complete, to distinguish between the two versions when they are installed, type "Outlook" in the Windows search bar. You can then see the difference as below.
 >
@@ -111,7 +111,7 @@ To add a Zimbra Pro account on Outlook Classic, follow the steps below by clicki
 >>
 >> You do not need to change any other settings. Click `Apply`{.action} to validate the settings and ensure that they are compliant. Finally, click `OK`{.action} to go to Outlook and start using your email address.
 >>
->> ![outlook Windows](images/outlook-windows-add-step07.png){.thumbnail .h-500}
+>> ![outlook Windows](images/outlook-windows-add-step-07.png){.thumbnail .h-500}
 
 > [!warning]
 >
@@ -123,7 +123,7 @@ Once you have configured your email address, you can start using it! You can now
 
 OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
-### How do I modify existing settings?<a name="modify-settings"></a>
+### How do I modify existing settings? <a name="modify-settings"></a>
 
 To modify the settings of an email account that has already been configured, follow the instructions below:
 
@@ -137,7 +137,7 @@ To modify the settings of an email account that has already been configured, fol
 
 Find the settings in **Step 7** under [Add account](#add-account).
 
-### How do I delete an email account?<a name="delete-account"></a>
+### How do I delete an email account? <a name="delete-account"></a>
 
 To delete your email account, follow the instructions below:
 
@@ -157,7 +157,7 @@ To delete your email account, follow the instructions below:
 
 > [!primary]
 >
-> For more information about configuring an email address from the Outlook application on Windows, see [Microsoft Help Center](https://support.microsoft.com/office/add-an-email-account-to-outlook-for-windows-6e27792a-9267-4aa4-8bb6-c84ef146101b?ocmsassetID=HA102823161&CorrelationId=778d1d8d-9ac2-449b-9624-126559fa_outlook_classic).
+> For more information about configuring an email address from the Outlook application on Windows, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-an-email-account-to-outlook-for-windows-6e27792a-9267-4aa4-8bb6-c84ef146101b?ocmsassetID=&CorrelationId=778d1d8d-9ac2-4449b-96292924_4b).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

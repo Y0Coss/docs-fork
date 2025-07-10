@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configuring your email account via EWS in Mail on Mac"
 excerpt: "Find out how to configure your Zimbra Pro email address on the Mail app on Mac via the EWS protocol"
-updated: 2025-06-27
+updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Zimbra Pro accounts can be configured on a macOS using EWS protocol (**E**xchang
 >
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the software publisher if you encounter any difficulties. OVHcloud cannot provide you with technical support in this regard. You can find more information in the "[Go further](#go-further)" section of this guide.
 >
 
 ## Requirements
@@ -91,7 +91,7 @@ Once you have configured your email address, you can start using it! You can now
 
 OVHcloud also offers a web application that allows you to access your email address from an internet browser. You can log in to the [OVHcloud webmail](/links/web/email) using your email credentials. If you have any questions on how to use it, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
-### How do I modify existing settings?<a name="modify-settings"></a>
+### How do I modify existing settings? <a name="modify-settings"></a>
 
 You cannot change the server settings of an Exchange email account using the Mail app on Mac.
 
