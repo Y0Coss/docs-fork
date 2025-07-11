@@ -50,9 +50,11 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> >
 >> > Deux types de sauvegardes sont disponibles : locale et distante.
 >> >
->> > L’option de sauvegarde distante génère également une sauvegarde locale, facturée séparément et non supprimée automatiquement.
+>> > Une sauvegarde locale est stockée dans la même région que votre instance.
 >> >
->> > Il est recommandé de conserver cette sauvegarde locale, car en cas de recréation d’une instance dans la même région, la restauration sera notablement plus rapide. Cette pratique permet d’optimiser les temps de reprise et la performance.
+>> > Une sauvegarde distante crée automatiquement une copie de la sauvegarde locale dans une autre région de votre choix.
+>> >
+>> > Chaque sauvegarde est facturée séparément. La sauvegarde distante sera facturée selon la tarification du stockage dans la région distante sélectionnée.
 >> >
 >>
 >> /// details | Sauvegarde locale
@@ -113,6 +115,15 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >> ```
 >>
 >> ///
+>>
+> Via Horizon
+>> Cliquez sur le menu `Compute`{.action} à gauche puis sélectionnez `Instances`{.action}. Cliquez sur le bouton `Create Snapshot`{.action} situé à droite de la ligne correspondant à l’instance concernée.
+>>
+>> ![public-cloud-instance-backup-horizon1](images/createbackuphorizon1.png){.thumbnail}
+>>
+>> Remplissez le nom du backup et appuyez sur le bouton `Create Snapshot`{.action}.
+>>
+>> ![public-cloud-instance-backup-horizon2](images/createbackuphorizon2.png){.thumbnail}
 >>
 
 ### Créer une sauvegarde automatisée d’une instance

@@ -50,9 +50,11 @@ You can create a single backup of an instance or configure a schedule in order t
 >> >
 >> > Two types of backup are available: local and distant.
 >> >
->> > The remote backup option also generates a local backup, billed separately and not deleted automatically.
+>> > A local backup is stored in the same region as your instance.
 >> >
->> > It is recommended that you keep this backup local, because if you recreate an instance in the same region, restoration will be significantly faster. This practice optimizes recovery times and performance.
+>> > A distant backup automatically creates a copy of the local backup in a different region of your choice.
+>> >
+>> > Each backup is billed separately — the distant backup will be charged based on the storage pricing of the selected remote region.
 >> >
 >>
 >> /// details | Local backup
@@ -98,7 +100,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> Then run the following command to create a backup of your instance:
 >>
->> ````bash
+>> ```bash
 >> $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
 >> ```
 >>
@@ -108,9 +110,20 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> Run the following command after following the local backup step:
 >>
->> ````bash
+>> ```bash
 >> $ openstack workflow execution create ovh. glance.glance_download '{"src_image_id":"<image_id>", "src_region":"<current_region>", "dst_region":"<remote_region>"}'
->> ````
+>> ```
+>>
+>> //
+>>
+> Via Horizon
+>> Click on the `Compute`{.action} menu on the left, then select `Instances`{.action}. Click on the `Create Snapshot`{.action} button to the right of the instance line.
+>>
+>> ![public-cloud-instance-backup-horizon1](images/createbackuphorizon1.png){.thumbnail}
+>>
+>> Fill in the backup name and press the `Create Snapshot`{.action} button.
+>>
+>> ![public-cloud-instance-backup-horizon2](images/createbackuphorizon2.png){.thumbnail}
 >>
 
 ### Creating an automated backup of an instance
