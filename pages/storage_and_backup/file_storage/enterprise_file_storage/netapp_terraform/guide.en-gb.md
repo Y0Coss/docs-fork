@@ -104,7 +104,7 @@ variable "ovh" {
 > Other endpoints exists, depending on your needs:
 >
 > - `ovh-eu` for OVHcloud Europe API
-> - `ovh-ca` for OVHcloud North America API
+> - `ovh-ca` for OVHcloud America/Asia API
 
 Finally, create a `secrets.tfvars` file containing the required variable values:
 
