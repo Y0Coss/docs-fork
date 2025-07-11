@@ -1,6 +1,6 @@
 ---
 title: "Politique de réversibilité du produit Managed Mutualized Virtualization "
-updated: 2025-06-27
+updated: 2025-07-11
 ---
 
 ## Objectif
@@ -42,11 +42,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrante** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortante** : commande et configuration un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
-
-blabla
-Le produit est décliné en deux offres de service : 
-- xxxxx
-- xxxxx
+Le produit s’appuie sur un hyperviseur VMware, permettant l’exécution de VM isolées sur des hôtes physiques mutualisés. L’architecture supporte la virtualisation complète, la migration à chaud des VM, l’allocation dynamique des ressources (CPU, RAM, stockage), la gestion avancée du réseau (segment GENEVE) et la sauvegarde de snapshots à la demande. Les VM peuvent exécuter divers OS (Linux, Windows et BSD). 
 
 ## Services partenaires
 
@@ -55,8 +51,8 @@ Les partenaires OVHcloud concernés figurent dans l'annuaire des [partenaires OV
 OVHcloud dispose également d’un service dédié : [OVHcloud Professional Services](/links/professional-services).
 
 ## Coûts et frais
-
+La facturation est mensuelle et sans engagement de durée. Aucun frais de résiliation spécifique n’est appliqué : la suppression du service arrête la facturation à la fin de la fin de la période en cours. Les crédits OVHcloud éventuellement associés ne sont pas transférables. Il incombe au client d’exporter ses données, images, snapshots et configurations avant suppression car leur effacement est irréversible.
 
 ## Conservation des données après résiliation du contrat
-
+Après suppression du service ou résiliation du contrat, OVHcloud supprime définitivement toutes les données, images, snapshots et configurations des VM mutualisées. Les sauvegardes automatiques sont également supprimées. Il est donc impératif d’exporter toutes les données nécessaires avant suppression. Aucune restauration n’étant possible après coup.
 
