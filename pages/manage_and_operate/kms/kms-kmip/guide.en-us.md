@@ -1,7 +1,7 @@
 ---
 title: "How to connect a compatible product using KMIP protocol"
 excerpt: "How to communicate with the OVHcloud KMS using KMIP protocol"
-updated: 2025-07-01
+updated: 2025-07-11
 ---
 
 ## Objective
