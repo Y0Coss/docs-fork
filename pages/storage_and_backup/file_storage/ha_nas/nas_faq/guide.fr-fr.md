@@ -1,7 +1,7 @@
 ---
 title: Les questions fréquentes concernant le service NAS-HA
 excerpt: Une question sur le NAS-HA ? Voici les questions les plus fréquemment posées.
-updated: 2024-02-26
+updated: 2025-07-11
 ---
 
 ## Objectif
@@ -36,7 +36,7 @@ NAS-HA est fourni avec un taux de disponibilité de 99,99%.
 
 ### Quels protocoles de transfert de fichiers sont actuellement supportés sur la solution NAS-HA ?
 
-NAS-HA supporte le transfert de fichiers via NFS (NFSv3) et CIFS (SMB).
+NAS-HA supporte le transfert de fichiers via NFS (NFSv3, NFSv4.1, NFNSv4.2) ainsi que CIFS (SMB).
 
 ### Depuis quels services OVHcloud puis-je pousser des données ?
 
@@ -124,7 +124,6 @@ A ce jour, il n'est pas possible de modifier dynamiquement votre NAS-HA. Pour au
 
 Les snapshots sont des images instantanées de l’état de votre disque et des données qui y sont stockées à un instant donné. Ils permettent de proposer un premier niveau de sauvegarde. La configuration et la gestion des snapshots sont réalisables depuis votre espace client OVHcloud.
 
-Par défaut, la fonction snapshot est activée lors de la création de votre partition, la fréquence est préréglée sur « toutes les heures ».
 
 ### Quelle politique de sauvegarde est associée à NAS-HA ?
 
@@ -176,7 +175,8 @@ Par exemple, pour un service de 3 To, 450 Go additionnels sont réservés pour l
 
 ### Où sont stockés les snapshots ?
 
-Les snapshots sont stockés au même niveau que votre service. Les snapshots sont ainsi répliqués sur deux serveurs distincts dans deux racks différents. En complément, OVHcloud effectue un snapshot quotidien sur un site distant.
+Les snapshots sont stockés au même niveau que votre service.
+En complément, OVHcloud effectue un snapshot quotidien (avec une retention de 24H) sur un serveur de backup situé dans un rack distinct.
 
 ### Où puis-je récupérer mes snapshots ?
 
