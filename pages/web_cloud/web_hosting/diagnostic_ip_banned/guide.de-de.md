@@ -1,7 +1,7 @@
 ---
 title: "Was tun, wenn die Meldung „Your IP has been banned“ angezeigt wird?"
 excerpt: "Erfahren Sie, wie Sie Ihre IP-Adresse entsperren, wenn Ihre Website die Seite „Your IP has been banned“ anzeigt"
-update: 2025-07-11
+updated: 2025-07-11
 ---
 
 ## Ziel

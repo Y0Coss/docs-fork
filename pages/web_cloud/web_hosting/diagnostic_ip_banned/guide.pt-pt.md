@@ -1,7 +1,7 @@
 ---
 title: "O que acontece se a página «Your IP has been banned» aparecer?"
 excerpt: "Descubra como desbloquear o seu endereço IP se o seu website apresentar uma página «Your IP has been banned»"
-update: 2025-07-11
+updated: 2025-07-11
 ---
 
 ## Objetivo
