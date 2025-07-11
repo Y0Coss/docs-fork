@@ -84,19 +84,19 @@ Vous pouvez également ajouter une seconde configuration PoP L3 via le deuxième
 
 Lorsque votre configuration PoP est active, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration AZ`. Sélectionnez une zone de disponibilité dans le menu déroulant et validez.
 
-![ajout datacentre](images/l2dc1.png){.thumbnail}
+![ajout AZ](images/l2dc1.png){.thumbnail}
 
-![ajout datacentre](images/l2dc1-1.png){.thumbnail}
+![ajout AZ](images/l2dc1-1.png){.thumbnail}
 
 La configuration de la zone de disponibilité débutera alors.
 
-![ajout datacentre](images/l2dc1-2.png){.thumbnail}
+![ajout AZ](images/l2dc1-2.png){.thumbnail}
 
 #### Configuration L3 
 
 Lorsque votre configuration PoP a été définie, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration AZ`. 
 
-![ajout datacentre](images/l3dc0.png){.thumbnail}
+![ajout AZ](images/l3dc0.png){.thumbnail}
 
 Sélectionnez une zone de disponibilité dans le menu déroulant puis renseignez les informations requises. 
 
@@ -105,11 +105,11 @@ Sélectionnez une zone de disponibilité dans le menu déroulant puis renseignez
 | ASN OVHcloud    | Le numéro d'AS OVHcloud qui sera configuré sur les routeurs OVHcloud Connect situés dans l'AZ. Ce numéro peut être différent de l'ASN choisi pour le PoP |
 | Sous-réseau en /28    |  Un sous-réseau privé configuré dans votre vRack dans l'AZ sélectionnée. Cela peut être un bloc IPv4 de taille /28 ou supérieur |
 
-![ajout datacentre](images/l3dc1.png){.thumbnail}
+![ajout AZ](images/l3dc1.png){.thumbnail}
 
 Vous pouvez ajouter des configurations Zone de disponibilité supplémentaires en cliquant sur le bouton `+ Ajouter une configuration`{.action}.
 
-![ajout datacentre](images/l3dc1-1.png){.thumbnail}
+![ajout AZ](images/l3dc1-1.png){.thumbnail}
 
 Vous devez également ajouter une configuration de routage.
 
@@ -117,11 +117,11 @@ Vous devez également ajouter une configuration de routage.
 
 Cliquez sur le bouton `(...)`{.action} sur la zone de disponibilité voulue puis sur `Ajouter configuration de routage`{.action}.
 
-![ajout datacentre](images/l3dc2.png){.thumbnail}
+![ajout AZ](images/l3dc2.png){.thumbnail}
 
 Choisissez alors le type de routage entre « Static » et « BGP ». 
 
-![ajout datacentre](images/l3dc3.png){.thumbnail}
+![ajout AZ](images/l3dc3.png){.thumbnail}
 
 Si vous choisissez le type « BGP », saisissez alors les informations requises.
 
@@ -130,7 +130,7 @@ Si vous choisissez le type « BGP », saisissez alors les informations requises.
 | ASN client    | Votre numéro d'AS BGP, qui est configuré sur votre routeur situé dans l'AZ |
 | IP Neighbor    | Adresse IP du neighbor BGP de votre routeur dans l'AZ. Cette adresse doit faire partie du sous-réseau renseigné dans la `Configuration AZ` |
 
-![ajout datacentre](images/l3dc5.png){.thumbnail}
+![ajout AZ](images/l3dc5.png){.thumbnail}
 
 Si vous choisissez le type « Static », saisissez les informations requises :
 
@@ -139,11 +139,11 @@ Si vous choisissez le type « Static », saisissez les informations requises :
 | Sous-réseau    | Un préfixe utilisant la notation CIDR |
 | Nexthop    | Adresse IP agissant comme passerelle dans la plage de sous-réseau |
 
-![ajout datacentre](images/l3dc4.png){.thumbnail}
+![ajout AZ](images/l3dc4.png){.thumbnail}
 
 Vous pouvez ajouter plusieurs configurations de routage au sein d'une même zone de disponibilité. Le type de configuration (BGP ou Static) choisi sur votre première configuration de routage s'appliquera alors aux suivantes sur la même zone de disponibilité.
 
-![ajout datacentre](images/l3dc6.png){.thumbnail}
+![ajout AZ](images/l3dc6.png){.thumbnail}
 
 ### Suppression des ressources
 

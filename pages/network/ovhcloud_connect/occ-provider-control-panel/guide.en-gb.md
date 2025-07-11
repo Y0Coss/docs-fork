@@ -50,7 +50,7 @@ A message will confirm the vRack association.
 > The OVHcloud Connect Provider solution requires an L3 level configuration.
 >
 
-Once you have connected your vRack, click `Add a PoP configuration`{.action}  and select the L3 configuration from the drop-down menu.
+Once you have connected your vRack, click the cogwheel button in the `PoP configuration`{.action} section and select the L3 configuration from the drop-down menu.
 
 ![PoP addition](images/pop1.png){.thumbnail}
 
@@ -72,7 +72,7 @@ The `PoP configuration` menu will then appear.
 
 When your PoP configuration has been set, click `Add a configuration`{.action} under the `AZ configuration` menu.
 
-![adding datacentre](images/l3dc0.png){.thumbnail}
+![adding AZ](images/l3dc0.png){.thumbnail}
 
 Select an availability zone from the dropdown menu, then enter the information required. 
 
@@ -81,11 +81,11 @@ Select an availability zone from the dropdown menu, then enter the information r
 | OVHcloud ASN   | The OVHcloud AS number that will be configured on the OVHcloud Connect routers located in the AZ. This number may be different from the ASN chosen for the PoP |
 | A /28 subnetwork    |  A private subnetwork configured in your vRack in the selected AZ. This can be an IPv4 block of size /28 or higher |
 
-![adding datacentre](images/l3dc1.png){.thumbnail}
+![adding AZ](images/l3dc1.png){.thumbnail}
 
 You can add additional availability zone configurations by clicking on the `+ Add a configuration`{.action} button.
 
-![adding datacentre](images/l3dc1-1.png){.thumbnail}
+![adding AZ](images/l3dc1-1.png){.thumbnail}
 
 You must also add a routing configuration.
 
@@ -93,11 +93,11 @@ You must also add a routing configuration.
 
 Click on the `...`{.action} button on the desired availability zone then on `Add routing configuration`{.action}.
 
-![add datacentre](images/l3dc2.png){.thumbnail}
+![add AZ](images/l3dc2.png){.thumbnail}
 
 Then choose the routing type between Static and BGP.
 
-![add datacentre](images/l3dc3.png){.thumbnail}
+![add AZ](images/l3dc3.png){.thumbnail}
 
 If you choose the BGP type, then enter the required information:
 
@@ -106,7 +106,7 @@ If you choose the BGP type, then enter the required information:
 | Customer ASN    | Your AS BGP number, which is configured on your router located in the AZ |
 | IP Neighbour    | IP address of the BGP neighbour of your router in the AZ. This address must be part of the subnet specified in the `AZ Configuration` menu |
 
-![add datacentre](images/l3dc5.png){.thumbnail}
+![add AZ](images/l3dc5.png){.thumbnail}
 
 If you choose the Static type, enter the required information:
 
@@ -115,11 +115,11 @@ If you choose the Static type, enter the required information:
 | Subnetwork    | A prefix using CIDR notation |
 | Next hop    | IP address acting as gateway in the subnet range |
 
-![add datacentre](images/l3dc4.png){.thumbnail}
+![add AZ](images/l3dc4.png){.thumbnail}
 
 You can add multiple routing configurations within the same availability zone. The configuration type (BGP or Static) chosen for your first configuration will then apply to the next configuration in the same availability zone.
 
-![add datacentre](images/l3dc6.png){.thumbnail}
+![add AZ](images/l3dc6.png){.thumbnail}
 
 ### Deletion of vCenter resources
 
@@ -147,7 +147,7 @@ To delete a AZ configuration, click the `...`{.action} button on the AZ configur
 > Deleting an AZ configuration will delete the related routing configurations.
 >
 
-#### Enabling the configuration
+#### Deleting a PoP configuration
 
 To delete a PoP configuration, click the `...`{.action} button on the PoP configuration, then click `Delete configuration`{.action}.
 

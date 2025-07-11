@@ -52,7 +52,7 @@ Once you have linked your vRack, two `PoP configuration` menus will appear. Clic
 
 ![adding PoP L2](images/pop2.png){.thumbnail}
 
-The L2 configuration will then be enabled in the two `PoP configuration` menus.
+The L2 configuration will then be enabled in the `PoP configuration` menu.
 
 ![adding PoP L2](images/l2pop2.png){.thumbnail}
 
@@ -84,19 +84,19 @@ You can also add a second PoP L3 configuration via the second `PoP configuration
 
 When your PoP configuration is active, click `Add a configuration`{.action} under the `AZ configuration` menu. Select an availability zone from the drop-down menu and confirm.
 
-![add datacentre](images/l2dc1.png){.thumbnail}
+![add AZ](images/l2dc1.png){.thumbnail}
 
-![add datacentre](images/l2dc1-1.png){.thumbnail}
+![add AZ](images/l2dc1-1.png){.thumbnail}
 
 The AZ configuration will then begin.
 
-![add datacentre](images/l2dc1-2.png){.thumbnail}
+![add AZ](images/l2dc1-2.png){.thumbnail}
 
 #### Configuration L3 
 
 When your PoP configuration has been set, click `Add a configuration`{.action} under the `AZ configuration` menu. 
 
-![add datacentre](images/l3dc0.png){.thumbnail}
+![add AZ](images/l3dc0.png){.thumbnail}
 
 Select an availability zone from the drop-down menu, then enter the information required. 
 
@@ -105,11 +105,11 @@ Select an availability zone from the drop-down menu, then enter the information 
 | OVHcloud ASN    | The OVHcloud AS number that will be configured on the OVHcloud Connect routers located in the AZ. This number may be different from the ASN chosen for the PoP |
 | A /28 subnetwork  |  A private subnetwork configured in your vRack in the selected AZ. This can be an IPv4 block of size /28 or higher |
 
-![add datacentre](images/l3dc1.png){.thumbnail}
+![add AZ](images/l3dc1.png){.thumbnail}
 
 You can add additional availability zone configurations by clicking on the `+ Add a configuration`{.action} button.
 
-![add datacentre](images/l3dc1-1.png){.thumbnail}
+![add AZ](images/l3dc1-1.png){.thumbnail}
 
 You must also add a routing configuration.
 
