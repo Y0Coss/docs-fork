@@ -146,18 +146,10 @@ $ openstack image set --property "_system_cloud_property=windows" --property "di
 +------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Create an instance from your backup
-
-> [!warning]
+> [!primary]
 >
-> If your instance is a Windows server, you must select a flavor of type win-xx-xx (for example, win-b2-15) and have a public interface on the Ext-Net network. Without these conditions, authentication with the OVHcloud KMS will not be possible, and your server will remain with an [unactivated licence](/pages/public_cloud/compute/activate-windows-license-private-mode). This could lead to limitations, including the absence of updates. Please note that it is not possible to resize a Linux instance (such as b2-15) to a Windows instance (such as win-b2-15). To make this transition, you need to recreate a new instance.
+> If you wish to recreate your instance from this backup, follow our guide: [Using instance backups to create or restore an instance](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviaopenstack)
 >
-
-To create an instance from your backup, use the backup ID as the image with this command:
-
-```bash
-$ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
-```
 
 ## Go further
 

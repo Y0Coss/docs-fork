@@ -23,32 +23,73 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 
 ### Créer une instance a partir d'une sauvegarde
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Public Cloud`{.action}. Sélectionnez le projet Public Cloud concerné puis cliquez sur `Instance backup`{.action} sous la section **Compute**.
-
-![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
-
-Cliquez alors sur les `...`{.action} à droite de la sauvegarde choisie et enfin sur `Créer une instance`{.action}.
-
-Une version abrégée de la page de création de l'instance s'affiche, dans laquelle vous pouvez modifier certaines options.
-
-![public-cloud-instance-backup](images/restorebackup02.png){.thumbnail}
-
-Certains éléments sont prédéfinis :
-
-- **Localisation** : votre instance sera créée dans le même datacentre que votre sauvegarde.
-- **Image** : elle correspondra à votre sauvegarde.
-- **Modèle** : seuls ceux pouvant accueillir votre image seront disponibles, en fonction de votre quota.
-
-![public-cloud-instance-backup](images/restorebackup03.png){.thumbnail}
-
-Définissez le nom de la nouvelle instance, la clé SSH, le vRack et la période de facturation, puis cliquez sur le bouton `Créer l'instance`{.action}.
-
-Pour plus d'informations sur la création d'une instance, consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps).
-
-> [!primary]
->
-> Pour créer une instance dans un autre datacentre que celui de la sauvegarde, il faudra transférer celle-ci vers la zone correspondante. Référez-vous alors au [guide sur la sauvegarde d'une instance d'un datacentre à l'autre](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
->
+> [!tabs]
+> Via l'espace client OVHcloud <a name="createinstanceviamanager"></a>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Public Cloud`{.action}. Sélectionnez le projet Public Cloud concerné puis cliquez sur `Instance backup`{.action} sous la section **Compute**.
+>>
+>> ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
+>>
+>> Cliquez alors sur les `...`{.action} à droite de la sauvegarde choisie et enfin sur `Créer une instance`{.action}.
+>>
+>> Une version abrégée de la page de création de l'instance s'affiche, dans laquelle vous pouvez modifier certaines options.
+>>
+>> ![public-cloud-instance-backup](images/restorebackup02.png){.thumbnail}
+>>
+>> Certains éléments sont prédéfinis :
+>>
+>> - **Localisation** : votre instance sera créée dans le même datacentre que votre sauvegarde.
+>> - **Image** : elle correspondra à votre sauvegarde.
+>> - **Modèle** : seuls ceux pouvant accueillir votre image seront disponibles, en fonction de votre quota.
+>>
+>> ![public-cloud-instance-backup](images/restorebackup03.png){.thumbnail}
+>>
+>> Définissez le nom de la nouvelle instance, la clé SSH, le vRack et la période de facturation, puis cliquez sur le bouton `Créer l'instance`{.action}.
+>>
+>> Pour plus d'informations sur la création d'une instance, consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps).
+>>
+>> > [!primary]
+>> >
+>> > Pour créer une instance dans un autre datacentre que celui de la sauvegarde, il faudra transférer celle-ci vers la zone correspondante. Référez-vous alors au [guide sur la sauvegarde d'une instance d'un datacentre à l'autre](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
+>> >
+>>
+> Via la CLI Openstack <a name="createinstanceviaopenstack"></a>
+>> > [!warning]
+>> >
+>> > Si votre instance est un serveur Windows, vous devez sélectionner une flavor de type win-xx-xx (par exemple, win-b2-15) et disposer d’une interface publique sur le réseau Ext-Net. Sans ces conditions, l’authentification auprès du KMS OVHcloud ne sera pas possible, et votre serveur restera avec une [licence non activée](/pages/public_cloud/compute/activate-windows-license-private-mode). Cela pourrait entraîner des limitations, notamment l’absence de mises à jour. À noter qu’il est impossible de redimensionner une instance Linux (par exemple b2-15) en une instance Windows (comme win-b2-15). Pour effectuer cette transition, il est nécessaire de recréer une nouvelle instance.
+>> >
+>>
+>> Pour créer une instance à partir de votre sauvegarde, utilisez l'ID de sauvegarde comme image avec cette commande :
+>>
+>> ```bash
+>> $ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
+>> ```
+>>
+> Via Horizon <a name="createinstanceviahorizon"></a>
+>> Dans l'interface Horizon, cliquez sur `Compute`{.action} dans le menu de gauche, puis sur `Images`{.action}. Cherchez l'image désirée et Cliquez sur le bouton `Launch`{.action} se trouvant sur la droite de la ligne de votre image. 
+>>
+>> ![public-cloud-instance-backup-horizon](images/restorebackuphorizon1.png){.thumbnail}
+>>
+>> Nommez votre instance dans le champs dédié et determinez le nombre d'instance à créer. Puis cliquez sur l'onglet `Flavor`{.action}.
+>>
+>> ![public-cloud-instance-backup-horizon-2](images/restorebackuphorizon2.png){.thumbnail}
+>>
+>>  Choisissez le modèle d'instance désiré, puis cliquez sur l'onglet `Networks`{.action}.
+>>
+>> > [!warning]
+>> >
+>> > Si votre instance est un serveur Windows, vous devez sélectionner une flavor de type win-xx-xx (par exemple, win-b2-15) et disposer d’une interface publique sur le réseau Ext-Net. Sans ces conditions, l’authentification auprès du KMS OVHcloud ne sera pas possible, et votre serveur restera avec une [licence non activée](/pages/public_cloud/compute/activate-windows-license-private-mode). Cela pourrait entraîner des limitations, notamment l’absence de mises à jour. À noter qu’il est impossible de redimensionner une instance Linux (par exemple b2-15) en une instance Windows (comme win-b2-15). Pour effectuer cette transition, il est nécessaire de recréer une nouvelle instance.
+>> >
+>>
+>> ![public-cloud-instance-backup-horizon-3](images/restorebackuphorizon3.png){.thumbnail}
+>>
+>> Choisissez le network que vous souhaitez lui assigner, puis cliquez sur le bouton `Launch Instance`{.action}.
+>>
+>> ![public-cloud-instance-backup-horizon-4](images/restorebackuphorizon4.png){.thumbnail}
+>>
+>> Vous pouvez retrouver le status de votre nouvelle instance dans `Compute`{.action} dans le menu de gauche, puis sur `Instances`{.action}.
+>>
+>> ![public-cloud-instance-backup-horizon-5](images/restorebackuphorizon5.png){.thumbnail}
+>>
 
 ### Restaurer une instance à partir d’une sauvegarde
 
