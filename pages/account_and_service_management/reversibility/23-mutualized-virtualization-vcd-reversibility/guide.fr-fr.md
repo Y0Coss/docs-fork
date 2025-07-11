@@ -21,7 +21,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Images VM standards  | Import/export d’images VM aux formats standards pris en charge par l’hyperviseur OVF | OVF | **Entrante** : import d’images via l’API ou l’interface utilisateur <br>**Sortante** : export des images VM, réutilisables sur tout environnement compatible  | [Les concepts fondamentaux de VCD ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) <br><br>[VMware Cloud Director - Migration depuis VMware vSphere on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases) <br><br>[OVHF Tool](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool) |
+| Images VM standards  | Import et export d’images VM aux formats standards pris en charge par l’hyperviseur OVF | OVF | **Entrante** : import d’images via l’API ou l’interface utilisateur <br>**Sortante** : export des images VM, réutilisables sur tout environnement compatible  | [Les concepts fondamentaux de VCD ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) <br><br>[VMware Cloud Director - Migration depuis VMware vSphere on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases) <br><br>[OVHF Tool](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool) |
 
 
 
