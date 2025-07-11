@@ -1,11 +1,11 @@
 ---
-title: "Reversibility Policy for the xxxxx product"
-updated: 2025-06-27
+title: "Reversibility Policy for the Managed Mutualized Virtualization product"
+updated: 2025-07-11
 ---
 
 ##Objective
 
-This document describes the reversibility policy for the xxxx product covering the OVHcloud xxxx offer.
+This document describes the reversibility policy for the Managed Mutualized Virtualization product covering the OVHcloud VMware Cloud Director offer.
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
