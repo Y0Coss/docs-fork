@@ -1,7 +1,7 @@
 ---
 title: Attacher une adresse Floating IP à une instance Public Cloud
 excerpt: Comprendre qu'est-ce qu’une Floating IP des services L3 et comment la configurer
-updated: 2025-07-10
+updated: 2025-07-11
 ---
 
 ## Objectif
@@ -431,7 +431,7 @@ Une fenêtre contextuelle s'affiche vous invitant à confirmer la sélection. Cl
 
 ![confirm](images/confirm_disassociate_ip.png){.thumbnail}
 
-Une fois fait, l'adresse Floating IP sera détaché de l'instance.
+Une fois cette opération effectuée, l'adresse Floating IP sera détachée de l'instance et réintégrée dans votre pool d'adresses Floating IP.
 
 #### Supprimer une Floating IP
 

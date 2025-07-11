@@ -1,7 +1,7 @@
 ---
 title: Attaching a Floating IP to a Public Cloud instance
 excerpt: Find out how a Floating IP address functions and how to configure it
-updated: 2025-07-10
+updated: 2025-07-11
 ---
 
 ## Objective
@@ -352,7 +352,7 @@ $ openstack floating ip set --dns-domain <DOMAIN_NAME> <IP_ADDRESS_ID>
 
 #### Detaching a Floating IP <a name="detachip"></a>
 
-You can detach a Floating ip from your VM at anytime.
+You can detach a Floating IP from your VM at anytime.
 
 ```bash
 $ openstack server remove floating ip vm4fip 169.254.10.25
@@ -423,7 +423,7 @@ The following steps describe how to attach a Floating IP to an existing instance
 
 #### Detaching a Floating IP <a name="disassociateip"></a>
 
-You can detach a Floating ip from your instance at anytime.
+You can detach a Floating IP from your instance at anytime.
 
 Once you are connected to the Horizon interface, click on `Network`{.action}, then on `Floating IPs`{.action}.
 
@@ -435,7 +435,7 @@ A pop-up window will appear prompting you to confirm the selection. Click on `Di
 
 ![confirm](images/confirm_disassociate_ip.png){.thumbnail}
 
-Once done, the Floating IP will be detached from the instance and .
+Once done, the Floating IP will be detached from the instance and returned to the pool of Floating IPs.
 
 #### Deleting a Floating IP
 
