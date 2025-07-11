@@ -23,7 +23,7 @@ details[open]>summary::before {
 The shared infrastructure where OVHcloud web hosting plans are located has several security systems.
 If your website displays a “Your request has been blocked” page, this means that one of the requests you are trying to execute to your website has been blocked by our security systems.
 
-![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
+![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
 **Find out what to do if your website displays a “Your request has been blocked” page.**
 
