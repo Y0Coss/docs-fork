@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurer son compte e-mail via ActiveSync sur Outlook pour Android"
 excerpt: "Découvrez comment configurer votre adresse e-mail Zimbra Pro sur l'application mobile Outlook pour Android via le protocole ActiveSync"
-updated: 2025-06-27
+updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Les comptes Zimbra Pro peuvent être configurés sur un mobile Android en utilis
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il est de votre responsabilité d'assurer le bon fonctionnement de ces services.
 >
-> Ce guide est conçu pour vous aider à accomplir des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Pour plus d'informations, consultez la section [Aller plus loin](#go-further) de ce guide.
+> Ce guide est conçu pour vous aider à accomplir des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Pour plus d'informations, consultez la section « [Aller plus loin](#go-further) » de ce guide .
 
 ## Prérequis
 
@@ -42,14 +42,14 @@ Les comptes Zimbra Pro peuvent être configurés sur un mobile Android en utilis
 - **Lors du premier démarrage de l'application Outlook**, un assistant de configuration s'affiche :
     - Appuyez sur `Ajouter un compte`{.action}.
 
-![outlook android](images/outlook-app-android-add01.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-add01.png){.thumbnail .h-500}
 
 - **Si un compte est déjà paramétré sur l'application Outlook** :
     - Appuyez sur l'enveloppe (`✉`{.action}) dans la partie supérieure gauche de votre écran.
     - Appuyez ensuite sur le bouton `+`{.action} dans la barre verticale de gauche.
     - Appuyez sur `Ajouter un compte`{.action}.
 
-![outlook android](images/outlook-app-android-add02.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-add02.png){.thumbnail .h-500}
 
 Suivez les étapes d'installation en cliquant successivement sur les **3** onglets ci-dessous :
 
@@ -90,7 +90,7 @@ Une fois l'adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vou
 
 OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Vous pouvez connecter au [webmail OVHcloud](/links/web/email) avec les identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, consultez notre guide « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
 
-### Comment modifier les paramètres existants ?<a name="modify-settings"></a>
+### Comment modifier les paramètres existants ? <a name="modify-settings"></a>
 
 L'application Outlook ne permet pas de modifier les paramètres serveur de votre compte e-mail.
 
@@ -100,13 +100,13 @@ Si votre compte e-mail est déjà configuré et que vous souhaitez en modifier l
 2. Appuyez sur l'icône de réglage (`⛭`{.action}) dans le bas de la colonne de gauche.
 3. Dans la section « Général » appuyez sur `Comptes` pour visualiser l'ensemble des adresses e-mail configurées sur l'application.
 
-![outlook android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-delete-account-01.png){.thumbnail .h-500}
 
 4. Sélectionnez le compte e-mail concerné.
 5. Appuyez sur `Supprimer le compte`{.action}.
 6. Appuyez sur `Supprimer`{.action} lorsque la question « Voulez-vous supprimer le compte ? » apparaît.
 
-![outlook android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
+  ![outlook android](images/outlook-app-android-delete-account-02.png){.thumbnail .h-500}
 
 > [!success]
 >
@@ -116,7 +116,7 @@ Si votre compte e-mail est déjà configuré et que vous souhaitez en modifier l
 
 > [!primary]
 >
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur Android, consultez le [centre d'aide Microsoft](https://support.microsoft.com/office/configurer-le-courrier-%C3%A9lectronique-%C3%A0-l-aide-de-l-application-outlook-pour-android-886db551-8dfa-4fd5-b835-f8e532091872).
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur Android, consultez le [centre d'aide Microsoft](https://support.microsoft.com/fr-fr/office/configurer-le-courrier-%C3%A9lectronique-%C3%A0-l-aide-de-l-application-outlook-pour-android-886db551-8dfa-4fd5-b835-f8e532091872).
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

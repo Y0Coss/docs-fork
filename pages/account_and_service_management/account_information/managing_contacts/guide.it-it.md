@@ -56,7 +56,7 @@ Visualizzi una tabella con i diversi servizi per cui il tuo identificativo clien
 
 ### Modifica i contatti di un servizio
 
-Accedi alla pagina di gestione dei contatti e clicca sui`...`{.action}in corrispondenza del servizio che vuoi modificare e poi clicca su `Modifica i contatti`{.action}. Inserisci i nuovi contatti e infine clicca su`Conferma`{.action}.
+Accedi alla pagina di gestione dei contatti e clicca sui `...`{.action}in corrispondenza del servizio che vuoi modificare e poi clicca su `Modifica i contatti`{.action}. Inserisci i nuovi contatti e infine clicca su `Conferma`{.action}.
 
 ![Gestione dei contatti](images/managing_contacts_03.png){.thumbnail}
 

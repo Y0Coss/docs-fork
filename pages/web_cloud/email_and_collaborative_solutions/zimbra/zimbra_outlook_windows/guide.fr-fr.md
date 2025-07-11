@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurer son compte e-mail via ActiveSync sur Outlook pour Windows"
 excerpt: "Découvrez comment configurer votre adresse e-mail Zimbra Pro sur Outlook pour Windows via le protocole ActiveSync"
-updated: 2025-06-27
+updated: 2025-07-03
 ---
 
 <style>
@@ -23,12 +23,12 @@ Les comptes Zimbra Pro peuvent être configurés sur Windows en utilisant le pro
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il est de votre responsabilité d'assurer le bon fonctionnement de ces services.
 >
-> Ce guide est conçu pour vous aider à accomplir des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Pour plus d'informations, consultez la section [Aller plus loin](#go-further) de ce guide.
+> Ce guide est conçu pour vous aider à accomplir des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Pour plus d'informations, consultez la section « [Aller plus loin](#go-further) » de ce guide.
 
 ## Prérequis
 
 - Disposer d’une adresse e-mail [Zimbra Pro](/links/web/emails-zimbra).
-- Disposer de l'application [Outlook classique](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) sur Windows.
+- Disposer de l'application [Outlook classique](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) sur Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
 ## En pratique
@@ -37,7 +37,7 @@ Les comptes Zimbra Pro peuvent être configurés sur Windows en utilisant le pro
 >
 > Avant de débuter votre configuration, il est important de noter que l'application Outlook incluse gratuitement avec Windows 11 est incompatible avec le protocole ActiveSync, nécessaire à la configuration d'un compte Zimbra Pro. Vous devrez utiliser la version **Outlook classique** pour bénéficier de la prise en charge du protocole ActiveSync.
 >
-> Pour installer Outlook classique sur votre ordinateur Windows, téléchargez-le depuis la page Microsoft « [Installer ou réinstaller Outlook classique sur un PC Windows](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) », et installez-le.
+> Pour installer Outlook classique sur votre ordinateur Windows, téléchargez-le depuis la page Microsoft « [Installer ou réinstaller Outlook classique sur un PC Windows](https://support.microsoft.com/fr-fr/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) », et installez-le.
 >
 > Une fois l'installation terminée, pour distinguer les deux versions lorsqu'elles sont installées, tapez « Outlook » dans la barre de recherche Windows. Vous pourrez alors constater la différence comme ci-dessous.
 >
@@ -84,7 +84,7 @@ Pour ajouter un compte Zimbra Pro sur Outlook classique, suivez sur les étapes 
 >> - **Votre nom** : Définissez un nom d'affichage.
 >> - **Adresse e-mail** : Saisissez votre adresse e-mail complète.
 >> - **Serveur de courrier** : Saisissez « zimbra1.mail.ovh.net ».
->> - **Nom d'utilisateur** : Saisissez votre adresse e-mail complète .
+>> - **Nom d'utilisateur** : Saisissez votre adresse e-mail complète.
 >> - **Mot de passe** : Saisissez le mot de passe associé à votre adresse e-mail.
 >>
 >> Cliquez sur `Suivant`{.action} pour finaliser l'ajout du compte.
@@ -108,7 +108,7 @@ Pour ajouter un compte Zimbra Pro sur Outlook classique, suivez sur les étapes 
 >>
 >> Il n'est pas nécessaire de modifier les autres paramètres. Cliquez sur `Appliquer`{.action} pour valider les paramètres et assurez-vous qu'ils soient conformes. Cliquez enfin sur `OK`{.action} pour accéder à Outlook et commencer à utiliser votre adresse e-mail.
 >>
->> ![outlook Windows](images/outlook-windows-add-step07.png){.thumbnail .h-500}
+>> ![outlook Windows](images/outlook-windows-add-step-07.png){.thumbnail .h-500}
 
 > [!warning]
 >
@@ -120,7 +120,7 @@ Une fois l'adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vou
 
 OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Vous pouvez connecter au [webmail OVHcloud](/links/web/email) avec les identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, consultez notre guide « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
 
-### Comment modifier les paramètres existants ?<a name="modify-settings"></a>
+### Comment modifier les paramètres existants ? <a name="modify-settings"></a>
 
 Pour modifier les paramètres d’un compte e-mail déjà configuré, suivez les instructions ci-dessous :
 
@@ -132,9 +132,9 @@ Pour modifier les paramètres d’un compte e-mail déjà configuré, suivez les
 
 ![outlook ios](images/outlook-windows-modify-01.png){.thumbnail .h-500}
 
-Retrouvez les paramètres à **l'étape 7** du chapitre [Ajouter le compte](#add-account).
+Retrouvez les paramètres à **l'étape 7** du chapitre « [Ajouter le compte](#add-account) ».
 
-### Comment supprimer un compte e-mail ?<a name="delete-account"></a>
+### Comment supprimer un compte e-mail ? <a name="delete-account"></a>
 
 Pour supprimer votre compte e-mail, suivez les instructions ci-dessous:
 
@@ -154,7 +154,7 @@ Pour supprimer votre compte e-mail, suivez les instructions ci-dessous:
 
 > [!primary]
 >
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur Windows, consultez le [centre d'aide Microsoft](https://support.microsoft.com/office/add-an-email-account-to-outlook-for-windows-6e27792a-9267-4aa4-8bb6-c84ef146101b?ocmsassetID=HA102823161&CorrelationId=778d1d8d-9ac2-449b-9624-1268559fa794#picktab=classic_outlook).
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur Windows, consultez le [centre d'aide Microsoft](https://support.microsoft.com/fr-fr/office/ajouter-un-compte-de-messagerie-%C3%A0-outlook-pour-windows-6e27792a-9267-4aa4-8bb6-c84ef146101b?ocmsassetID=HA102823161&CorrelationId=778d1d8d-9ac2-449b-9624-1268559fa794).
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 

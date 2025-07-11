@@ -1,7 +1,7 @@
 ---
 title: "Zimbra Pro - Configurer son compte e-mail via EWS dans Mail sur Mac"
 excerpt: "Découvrez comment configurer votre adresse e-mail Zimbra Pro sur l'application Mail sur Mac via le protocole EWS"
-updated: 2025-06-27
+updated: 2025-07-03
 ---
 
 <style>
@@ -23,7 +23,7 @@ Les comptes Zimbra Pro peuvent être configurés sur un macOS en utilisant le pr
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il est de votre responsabilité d'assurer le bon fonctionnement de ces services.
 >
-> Ce guide est conçu pour vous aider à accomplir des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Pour plus d'informations, consultez la section [Aller plus loin](#go-further) de ce guide.
+> Ce guide est conçu pour vous aider à accomplir des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Pour plus d'informations, consultez la section « [Aller plus loin](#go-further) » de ce guide .
 
 ## Prérequis
 
@@ -90,7 +90,7 @@ Une fois l'adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vou
 
 OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Vous pouvez connecter au [webmail OVHcloud](/links/web/email) avec les identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, consultez notre guide « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
 
-### Comment modifier les paramètres existants ?<a name="modify-settings"></a>
+### Comment modifier les paramètres existants ? <a name="modify-settings"></a>
 
 L'application Mail sur Mac ne permet pas de modifier les paramètres serveur d'un compte e-mail Exchange.
 

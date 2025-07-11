@@ -207,11 +207,11 @@ curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 
 O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
 
-* **File** : o nome do ficheiro que pretende guardar.
-* **FtpUsername** : o seu nome de utilizador FTP.
-* **FtpPassword** : a sua password FTP.
-* **HostName** : o nome do seu Backup Storage.
-* **FolderLocation** : o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
+* **File**: o nome do ficheiro que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua password FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **FolderLocation**: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
 
 Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
 

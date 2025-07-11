@@ -56,7 +56,7 @@ Pojawi się tabela, która umożliwia wyświetlenie różnych usług, dla który
 
 ### Zmiana kontaktów usługi
 
-Na stronie zarządzania kontaktami kliknij przycisk `…`{.action} po prawej stronie usługi, którą chcesz zmienić, a następnie kliknij `Zmień kontakty`{.action}. Podaj nowy kontakt lub nowe kontakty, a następnie kliknij przycisk `Zatwierdź`{.action}.
+Na stronie zarządzania kontaktami kliknij przycisk `...`{.action} po prawej stronie usługi, którą chcesz zmienić, a następnie kliknij `Zmień kontakty`{.action}. Podaj nowy kontakt lub nowe kontakty, a następnie kliknij przycisk `Zatwierdź`{.action}.
 
 ![Contact management](images/managing_contacts_03.png){.thumbnail}
 
