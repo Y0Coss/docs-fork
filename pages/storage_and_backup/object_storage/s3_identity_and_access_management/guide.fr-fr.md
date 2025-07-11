@@ -120,6 +120,24 @@ Quelques exemples de fichiers de configuration JSON :
 }
 ```
 
+**Refuser l'affichage de tous les buckets appartenant au compte.**
+
+> [!primary]
+>
+> L'action (`s3:ListAllMyBuckets`) est autorisée par défaut pour un utilisateur donné. Ajouter explicitement un `deny`{.action} si vous souhaitez refuser l'utilisation de l'opération d'API `ListBuckets`{.action}.
+>  
+
+```json
+{
+  "Statement":[{
+    "Sid": "DenyListBucket",
+    "Effect": "Deny",
+    "Action":["s3:ListAllMyBuckets"],
+    "Resource":["*"]
+  }]
+}
+```
+
 **Autoriser toutes les opérations sur toutes les ressources d'un projet**
 
 ```json
