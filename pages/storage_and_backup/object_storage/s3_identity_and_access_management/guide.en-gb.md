@@ -176,6 +176,7 @@ Some examples of JSON configuration files:
 | s3:GetObjectRetention | Object |
 | s3:GetObjectTagging | Object |
 | s3:GetReplicationConfiguration | Bucket |
+| s3:ListAllMyBuckets | Bucket |
 | s3:ListBucket | Bucket |
 | s3:ListBucketMultipartUploads | Bucket |
 | s3:ListMultipartUploadParts | Object |
