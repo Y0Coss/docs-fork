@@ -692,6 +692,7 @@
             + [Resizing the file system in FreeBSD 12](public_cloud/compute/resize_freebsd_file_system_after_install)
             + [Forensics: How to deal with Public Cloud instances](public_cloud/compute/forensics)
             + [Local Zone VPN-as-a-Service (VPNaaS) with Tailscale Integration](public_cloud/compute/local-zones-vpn-tailscale-integration)
+            + [Migration of instances between different regions](public_cloud/compute/migration_between_regions)
     + [Storage and Backup](products/public-cloud-storage)
         + [Object Storage](products/public-cloud-storage-object-storage)
             + [General information](public-cloud-storage-object-storage-general-information)
