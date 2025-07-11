@@ -36,25 +36,21 @@ Features of the product line fall into three categories:
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
 | Virtual network management | Network configuration (subnets, security groups) specific to OVHcloud | NA | **Inbound**: adapt network configurations to the OVHcloud environment. <br>**Outbound**: | [VMware Cloud Director - Network Concepts and Best Practices]() <br><br>[VMware Cloud Director - Creating Network Components via Public VCF as-a-Service]() |
-| Administration and monitoring | Manage security policies, users, groups, and monitor infrastructure| NA | **Inbound**: Interfaces and features available by default <br> **Outbound**: Rules cannot be exported. Ordering and configuring tools in the target environment |[VCD core concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)<br><br>[VMware Cloud Director - Learn how to use the VCD user interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started) |
+| Administration and monitoring | Manage security policies, users, groups, and monitor infrastructure| NA | **Inbound**: Interfaces and features available by default <br> **Outbound**: Rules cannot be exported. Order and configure tools in the target environment |[VCD core concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)<br><br>[VMware Cloud Director - Learn how to use the VCD user interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started) |
 | Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Inbound**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outbound**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](https://www.ovhcloud.com/en/security/anti-ddos/) |
 
-##List of architectures
-xxxx
+## List of architectures
+The product is based on a VMware hypervisor and enables isolated VMs to run on shared physical hosts. The architecture supports full virtualization, live migration of VMs, dynamic resource allocation (CPU, RAM, storage), advanced network management (GENEVA segment) and backup of snapshots on demand. VMs can run various OS (Linux, Windows and BSD).
 
-The product is divided into two service offers:
-
-* xxxx
-* xxx
-
-##Partner services
+## Partner services
 
 The OVHcloud partners concerned are listed in the [OVHcloud partners directory](/links/partner) under the "**Data center expansion and Migration**" keywords.
 
 OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
 
-##Cost and fees
+## Cost and fees
+Billing is for monthly use without duration commitment. There is no specific cancelation fee: deleting the service will stop billing at the end of the current period. Any associated OVHcloud credits cannot be transferred. It is the client’s responsibility to export data, images, snapshots and configurations before service deletion, as deletion is irreversible.
 
-##Data retention after contract termination 
-
+## Data retention after contract termination 
+After the service deletion or a contract termination, OVHcloud permanently deletes all data, images, snapshots and configurations of the shared VMs. Automatic backups are also deleted. It is therefore imperative to export all necessary data before deletion. No restoration is possible after the fact.
 
