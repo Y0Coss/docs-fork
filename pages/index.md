@@ -1482,6 +1482,7 @@
             + [Fixing the 500 Internal Server Error](web_cloud/web_hosting/diagnostic_fix_500_internal_server_error)
             + [Troubleshooting an "Index of" page](web_cloud/web_hosting/diagnostic-index-of)
             + [What do I do if I have a 403 forbidden page?](web_cloud/web_hosting/diagnostic_403_forbidden)
+            + [What should I do if the page “Your IP has been banned” appears?](web_cloud/web_hosting/diagnostic_ip_banned)
             + [Monitoring and managing automated emails in your Web Hosting plan](web_cloud/web_hosting/mail_function_script_records)
         + [Automating tasks (cron)](web-cloud-hosting-automating-tasks-cron)
             + [Using automated tasks on a Web Hosting plan](web_cloud/web_hosting/cron_tasks)
