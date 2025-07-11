@@ -1,8 +1,22 @@
 ---
 title: "Que faire si la page « Your request has been blocked » s’affiche ?"
-excerpt: "Découvrez comment remettre votre site web en ligne s'il affiche une page « Your request has been blocked »"
-update: 2025-07-04
+excerpt: "Découvrez comment agir si votre site web affiche une page « Your request has been blocked »"
+update: 2025-07-11
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -11,7 +25,7 @@ Si votre site web affiche une page « Your request has been blocked », cela sig
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-**Découvrez comment débloquer la situation si votre site web affiche une page « Your request has been blocked ».**
+**Découvrez comment agir si votre site web affiche une page « Your request has been blocked ».**
 
 ## Prérequis
 
