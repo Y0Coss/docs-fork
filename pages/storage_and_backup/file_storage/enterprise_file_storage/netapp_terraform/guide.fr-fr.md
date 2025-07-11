@@ -1,17 +1,17 @@
 ---
 title: Enterprise File Storage - Gestion avec Terraform
 excerpt: Découvrez comment gérer votre service Enterprise File Storage avec Terraform
-updated: 2025-07-10
+updated: 2025-07-11
 ---
 
 ## Objectif
 
 Enterprise File Storage est une solution de stockage qui vous permet de provisionner des volumes NFS entièrement gérés par OVHcloud. Terraform est un outil d'*infrastructure-as-code* qui automatise la provision de ressources.
 
-Dans ce guide, vous apprendrez à utiliser le provider Terraform d'OVHcloud pour gérer les volumes de votre solution EFS, les snapshots et plus encore.
+Dans ce guide, vous apprendrez à utiliser le provider Terraform d'OVHcloud pour gérer les volumes de votre solution Enterprise File Storage (EFS), les snapshots et plus encore.
 
 > [!primary]
-> Dans ce guide, les termes suivants sont utilisés de manière interchangeable:
+> Dans ce guide, les termes suivants sont utilisés de manière interchangeable :
 > 
 > - Un volume est également appelé *share*
 > - Un instantané est également appelé *snapshot*
@@ -33,7 +33,7 @@ Dans ce guide, vous apprendrez à utiliser le provider Terraform d'OVHcloud pour
 
 Le provider Terraform d'OVHcloud doit être configuré avec un token d'API afin de pouvoir faire des appels à aux API OVHclod.
 
-Le token API doit avoir les permissions suivantes:
+Le token API doit avoir les permissions suivantes :
 
 - GET `/storage/netapp/*`
 - POST `/storage/netapp/*`
@@ -44,24 +44,25 @@ Vous pouvez suivre le guide [Premiers pas avec les API OVHcloud](/pages/manage_a
 
 **Une fois le token généré, sauvegardez les informations du token pour pouvoir l'utiliser avec le provider Terraform d'OVHcloud**.
 
-#### Récupére l'ID d'un service
+#### Récupérer l'ID d'un service
 
-L'ID d'un service peut être obtenu depuis les API OVHcloud ou via le manager OVHcloud.
+L'ID d'un service peut être obtenu depuis les API OVHcloud ou via l'espace client OVHcloud.
 
-> Si vous n'êtes pas familiarisé avec l'utilisation des API d'OVHcloud, veuillez consulter notre guide sur les [Premiers pas avec les API d'OVHcloud](/pages/manage_and_operate/api/first-steps).
+> [!success]
+> Si vous n'êtes pas familiarisé avec l'utilisation des API OVHcloud, veuillez consulter notre guide sur les [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
-- **Méthode API**: Appellez `GET /storage/netapp`
+- **Méthode API** : Appelez `GET /storage/netapp`
 
 > [!api]
 > 
 > @api {v1} /storage GET /storage/netapp
 >
 
-- **Méthode Manager OVH**: Accédez à la section [Enteprise File Storage](/links/storage/enterprise-file-storage)
+- **Méthode via l'espace client OVHcloud** : Accédez à la section [Enteprise File Storage](/links/manager)
 
 #### Configurer le provider Terraform OVHcloud
 
-Créez un fichier `provider .tf` définissant la configuration du provider OVHcloud:
+Créez un fichier `provider .tf` définissant la configuration du provider OVHcloud :
 
 ```bash
 terraform {
@@ -83,7 +84,7 @@ provider "ovh" {
 }
 ```
 
-Créez ensuite un fichier `variables.tf` définissant les variables qui seront utilisées dans vos fichiers `.tf`:
+Créez ensuite un fichier `variables.tf` définissant les variables qui seront utilisées dans vos fichiers `.tf` :
 
 ```bash
 variable "ovh" {
@@ -106,7 +107,7 @@ variable "ovh" {
 > - `ovh-ca` pour les API OVHcloud Amérique du Nord
 >
 
-Finalement, créez un fichier `secrets.tfvars` contenant les valeurs de variables requises:
+Finalement, créez un fichier `secrets.tfvars` contenant les valeurs de variables requises :
 
 > [!warning]
 > N'oubliez pas de remplacer `<application_key>`, `<application_secret>` et `<consumer_key>` avec les informations de votre token API obtenu précédemment.
@@ -121,7 +122,7 @@ ovh = {
 }
 ```
 
-Maintenant, vous pouvez initaliser Terraform:
+Maintenant, vous pouvez initaliser Terraform :
 
 ```bash
 terraform init
@@ -144,7 +145,7 @@ La commande `init` téléchargera les providers Terraform nécessaires et config
 
 La source de données [ovh_storage_efs](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs) permet de récupérer les détails d'un service.
 
-Créez un fichier `main.tf`:
+Créez un fichier `main.tf` :
 
 ```bash
 data "ovh_storage_efs" "efs" {
@@ -152,7 +153,7 @@ data "ovh_storage_efs" "efs" {
 }
 ```
 
-Définissez les [outputs](https://developer.hashicorp.com/terraform/language/values/outputs) dans un fichier `output.tf`:
+Définissez les [outputs](https://developer.hashicorp.com/terraform/language/values/outputs) dans un fichier `output.tf` :
 
 ```bash
 output "service_id" {
@@ -168,7 +169,7 @@ output "service_quota" {
 }
 ```
 
-Exécutez la commande [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) pour voir le résultat:
+Exécutez la commande [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) pour voir le résultat :
 
 ```bash
 terraform apply -var-file=secrets.tfvars
@@ -206,7 +207,7 @@ La ressource [ovh_storage_efs_share](https://registry.terraform.io/providers/ovh
 
 #### Créer un volume
 
-Définissez un volume à l’intérieur de votre fichier `main.tf`:
+Définissez un volume à l’intérieur de votre fichier `main.tf` :
 
 ```bash
 resource "ovh_storage_efs_share" "volume" {
@@ -260,7 +261,6 @@ To perform exactly these actions, run the following command to apply:
 Points clés :
 
 - La commande `terraform plan` va créer un plan d'exécution mais ne l'exécutera pas. Au lieu de cela, elle déterminera les actions nécessaires pour créer la configuration spécifiée à l'intérieur de vos fichiers de configuration. Cela vous permettra de vérifier si votre plan d'exécution correspond à vos attentes avant d'apporter des modifications aux ressources réelles.
-
 - Le paramètre facultatif `-out` vous permet de spécifier un fichier de sortie pour le plan. Il garantit que le plan que vous avez examiné sera le même que celui qui est appliqué.
 
 Une fois que vous avez examiné le plan d'exécution, exécutez `terraform apply` pour apporter des modifications :
@@ -275,11 +275,11 @@ ovh_storage_efs_share.volume: Creation complete after 11s [id=29d1facf-db03-4951
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-Votre volume est désormais crée.
+Votre volume est désormais créé.
 
 #### Modifier un volume
 
-Les nom (`name`), la description (`description`) et la taille (`size`) d'un volume peuvent être mis à jour.
+Le nom (`name`), la description (`description`) et la taille (`size`) d'un volume peuvent être mis à jour.
 
 Une fois que la (ou les) valeur(s) est (sont) mise(s) à jour dans votre fichier `main.tf`, appliquez les modifications en utilisant [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply).
 
@@ -331,7 +331,7 @@ Destroy complete! Resources: 1 destroyed.
 
 #### Obtenir des informations sur les chemins d'access d'un volume
 
-Pour récupérer des informations sur un ou tous les chemins d'accès d'un volume, utilisez les sources de données [ovh_storage_efs_share_access_paths](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs_share_access_paths) et [ovh_storage_efs_share_access_path](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs_share_access_path) respectivement.
+Pour récupérer des informations sur un ou tous les chemins d'accès d'un volume, utilisez respectivement les sources de données [ovh_storage_efs_share_access_paths](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs_share_access_paths) et [ovh_storage_efs_share_access_path](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/storage_efs_share_access_path).
 
 Créez ou ajoutez au fichier `main.tf` existant le contenu suivant :
 
@@ -476,9 +476,9 @@ Le provider Terraform OVHcloud permet les opérations de gestion de snapshots su
 
 [ovh_storage_efs_share_snapshot](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs_share_snapshot) représente un snapshot.
 
-#### Creer un snapshot
+#### Créer un snapshot
 
-Définissez un snapshot à l'intérieur de votre fichier `main.tf`:
+Définissez un snapshot à l'intérieur de votre fichier `main.tf` :
 
 > [!primary]
 >
@@ -570,8 +570,7 @@ To perform exactly these actions, run the following command to apply:
 
 Points clés :
 
-- La commande `terraform plan` va créer un plan d'exécution mais ne l’exécutera pas. Au lieu de cela, elle déterminera les actions nécessaires pour créer la configuration spécifiée à l'intérieur de vos fichiers de configuration. Cela vous permettra de vérifier si votre plan d'exécution correspond à vos attentes avant d'apporter des modifications aux ressources réelles. 
-
+- La commande `terraform plan` va créer un plan d'exécution mais ne l’exécutera pas. Au lieu de cela, elle déterminera les actions nécessaires pour créer la configuration spécifiée à l'intérieur de vos fichiers de configuration. Cela vous permettra de vérifier si votre plan d'exécution correspond à vos attentes avant d'apporter des modifications aux ressources réelles.
 - Le paramètre facultatif `-out` vous permet de spécifier un fichier de sortie pour le plan. Il garantit que le plan que vous avez examiné sera le même que celui qui est appliqué.
 
 Une fois que vous avez examiné le plan d'exécution, exécutez `terraform apply` pour apporter des modifications :
@@ -598,7 +597,7 @@ Votre snapshot est désormais créé.
 
 #### Modifier un snapshot
 
-Les noms (`name`) et description (`description`) d'un snapshot peuvent être mis à jour.
+Le nom (`name`) et la description (`description`) d'un snapshot peuvent être mis à jour.
 
 Une fois que la (ou les) valeur(s) est (sont) mise(s) à jour dans votre fichier `main.tf`, appliquez les modifications en utilisant [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply).
 
@@ -671,13 +670,13 @@ Destroy complete! Resources: 3 destroyed.
 
 ### Gestion des ACLs
 
-Le provider Terraform OVHCloud permet les opérations de gestion des ACL suivantes : création et suppression.
+Le provider Terraform OVHcloud permet les opérations de gestion des ACL suivantes : création et suppression.
 
 La ressource [ovh_storage_efs_share_acl](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/storage_efs_share_acl) représente une ACL.
 
 #### Créer une ACL
 
-Définissez une ACL dans le fichier `main.tf`:
+Définissez une ACL dans le fichier `main.tf` :
 
 > [!primary]
 >
@@ -747,8 +746,7 @@ To perform exactly these actions, run the following command to apply:
 
 Points clés :
 
-- La commande `terraform plan` va créer un plan d'execution mais ne l’exécutera pas. Au lieu de cela, elle déterminera les actions nécessaires pour créer la configuration spécifiée à l'intérieur de vos fichiers de configuration. Cela vous permettra de vérifier si votre plan d'exécution correspond à vos attentes avant d'apporter des modifications aux ressources réelles. 
-
+- La commande `terraform plan` va créer un plan d'execution mais ne l’exécutera pas. Au lieu de cela, elle déterminera les actions nécessaires pour créer la configuration spécifiée à l'intérieur de vos fichiers de configuration. Cela vous permettra de vérifier si votre plan d'exécution correspond à vos attentes avant d'apporter des modifications aux ressources réelles.
 - Le paramètre facultatif `-out` vous permet de spécifier un fichier de sortie pour le plan. Il garantit que le plan que vous avez examiné sera le même que celui qui est appliqué.
 
 Une fois que vous avez examiné le plan d'exécution, exécutez `terraform apply` pour apporter les modifications :
@@ -834,7 +832,7 @@ Destroy complete! Resources: 2 destroyed.
 
 [Enterprise File Storage - API Quickstart](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp)
 
-[Enterprise File Storage - FAQ](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_faq/)
+[Enterprise File Storage - FAQ](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_faq)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

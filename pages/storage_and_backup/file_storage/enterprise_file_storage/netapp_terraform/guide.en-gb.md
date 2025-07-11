@@ -1,7 +1,7 @@
 ---
 title: Managing Enterprise File Storage with OVHcloud Terraform provider
 excerpt: Find out how to manage your Enterprise File Storage offer using Terraform
-updated: 2025-07-10
+updated: 2025-07-11
 ---
 
 ## Objective
@@ -58,7 +58,7 @@ The ID of your Enterprise File Storage service can be obtained via the OVHcloud 
 > @api {v1} /storage GET /storage/netapp
 >
 
-- **OVHcloud Control Panel method**: Navigate to the [Enteprise File Storage](/links/storage/enterprise-file-storage) section.
+- **OVHcloud Control Panel method**: Navigate to the [Enteprise File Storage](/links/manager) section.
 
 #### Configure provider parameters
 
@@ -834,7 +834,7 @@ Destroy complete! Resources: 2 destroyed.
 
 [API Quickstart](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start)
 
-[Enterprise File Storage - FAQ](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_faq/)
+[Enterprise File Storage - FAQ](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_faq)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
