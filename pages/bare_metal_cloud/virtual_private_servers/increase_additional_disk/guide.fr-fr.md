@@ -33,7 +33,7 @@ Choisissez la nouvelle taille de disque dans la fenêtre qui apparaît, puis cli
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Un message apparaîtra pour confirmer votre demande. Cliquez sur le lien à l'intérieur du message et suivez le processus de commande. Il est possible qu'un nouvel onglet de navigation pour la commande se soit ouvert automatiquement.
+Un message apparaîtra pour confirmer votre demande. Cliquez sur le lien à l'intérieur du message et suivez le processus de commande. Un nouvel onglet de navigateur s'ouvre pour finaliser la commande.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 

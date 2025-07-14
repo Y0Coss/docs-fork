@@ -37,7 +37,7 @@ Wybierz nowy rozmiar dysku w oknie, które się wyświetli, po czym kliknij `Zwi
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Pojawi się komunikat potwierdzający zlecenie. Kliknij link w wiadomości i postępuj zgodnie z poleceniami. Możliwe, że nowa zakładka nawigacyjna dla zamówienia została automatycznie otwarta.
+Pojawi się komunikat potwierdzający zlecenie. Kliknij link w wiadomości i postępuj zgodnie z poleceniami. Otworzy się nowa zakładka przeglądarki, aby sfinalizować zamówienie.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 

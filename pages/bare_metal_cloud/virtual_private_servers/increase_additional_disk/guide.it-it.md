@@ -37,7 +37,7 @@ Seleziona la nuova dimensione del disco nella nuova finestra e clicca su `Aument
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Visualizzerai un messaggio per confermare la tua richiesta. Clicca sul link all'interno del messaggio e segui la procedura d'ordine. È possibile che una nuova scheda di navigazione per il comando si sia aperta automaticamente.
+Visualizzerai un messaggio per confermare la tua richiesta. Clicca sul link all'interno del messaggio e segui la procedura d'ordine. Viene visualizzata una nuova scheda del browser per completare l'ordine.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 

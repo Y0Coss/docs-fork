@@ -37,7 +37,7 @@ Escolha o novo tamanho de disco na nova janela e clique em `Aumentar`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Irá aparecer uma mensagem para confirmar o seu pedido. Clique na ligação dentro da mensagem e siga o processo de encomenda. É possível que um novo separador de navegação para a encomenda tenha sido aberto automaticamente.
+Irá aparecer uma mensagem para confirmar o seu pedido. Clique na ligação dentro da mensagem e siga o processo de encomenda. É aberto um novo separador do browser para finalizar a encomenda.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
