@@ -1,7 +1,7 @@
 ---
 title: How to use the backup storage on a dedicated server
 excerpt: 'Find out how to enable and access your additional storage space'
-updated: 2025-03-27
+updated: 2025-07-14
 ---
 
 ## Objective
@@ -193,6 +193,7 @@ The code example above contains variables, which you will need to substitute wit
 > [!primary]
 >
 > To use FTPS you must change the hostname of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net. You also need to add the -ssl flag to the commands below.
+> If the Backup Storage is located in Canada (BHS), you will need to change it to ftpback-bhsX-YYY.mybackup.ovh.ca.
 >
 
 To save individual files to your backup storage, you can use the following command:
@@ -244,6 +245,7 @@ The code example above contains variables, which you will need to substitute wit
 > [!primary]
 >
 > lftp uses FTP+SSL/TLS by default. So you must change the host name of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net.
+> If the Backup Storage is located in Canada (BHS), you will need to change it to ftpback-bhsX-YYY.mybackup.ovh.ca.
 >
 
 To save individual files to your backup storage, you can use the following command:

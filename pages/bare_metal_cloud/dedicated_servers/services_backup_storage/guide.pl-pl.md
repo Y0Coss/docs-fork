@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z Backup Storage na serwerze dedykowanym'
 excerpt: 'Dowiedz się, jak aktywować i uzyskać dostęp do dodatkowej przestrzeni dyskowej'
-updated: 2025-02-12
+updated: 2025-07-14
 ---
 
 ## Wprowadzenie
@@ -199,6 +199,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 > [!primary]
 >
 > Aby korzystać z FTPS, zmień nazwę Backup Storage. Na przykład, jeśli nazwa Backup Storage to "ftpback-rbxX-YY.ip-Z.Z.Z.net", zmień ją w następujący sposób: "ftpback-rbxX-YYY.mybackup.ovh.net". Należy również dodać argument \`-ssl\` do poniższej komendy.
+> Jeśli Backup Storage znajduje się w Kanadzie (BHS), zmień go w formie "ftpback-bhsX-YYY.mybackup.ovh.ca".
 >
 
 Aby zapisać jeden plik, możesz użyć następującej komendy:
@@ -305,6 +306,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 > [!primary]
 >
 > Aby użyć protokołu FTPS, zmień nazwę Twojej usługi Backup Storage. Na przykład, jeśli nazwa brzmi “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, zmień ją w następujący sposób: “ftpback-rbxX-YYY.mybackup.ovh.net”. Dodaj również flagę `-ssl` do poniższej komendy.
+> Jeśli Backup Storage znajduje się w Kanadzie (BHS), zmień go w formie “ftpback-bhsX-YYY.mybackup.ovh.ca”.
 >
 
 Aby zapisać jeden plik, możesz użyć następującej komendy:

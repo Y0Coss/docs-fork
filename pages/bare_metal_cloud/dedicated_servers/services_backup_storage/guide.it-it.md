@@ -1,7 +1,7 @@
 ---
 title: Utilizzare il Backup Storage su un server dedicato
 excerpt: Come attivare e accedere allo spazio di storage aggiuntivo
-updated: 2025-02-12
+updated: 2025-07-14
 ---
 
 ## Obiettivo
@@ -199,6 +199,7 @@ Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 > [!primary]
 >
 > Per utilizzare il protocollo FTPS è necessario modificare il nome del Backup Storage: “ftpback-rbxX-YYY.ip- Z.Z.Z.Z.net”, ad esempio, dovrà essere cambiato in “ftpback-rbxX-YYY.mybackup.ovh.net”. Dovrai inoltre aggiungere l'argomento `-ssl` al seguente comando.
+> Se il Backup Storage si trova in Canada (BHS), è necessario cambiarlo nel formato “ftpback-bhsX-YYY.mybackup.ovh.ca”.
 >
 
 Per salvare un solo file, esegui il comando:
@@ -250,6 +251,7 @@ Sostituisci le variabili dell’esempio con le informazioni dei tuoi servizi.
 > [!primary]
 >
 > Di default, lftp utilizza FTP+SSL/TLS. È quindi necessario modificare il nome del Backup Storage: “ftpback-rbxX-YYY.ip- Z.Z.Z.Z.net”, ad esempio, dovrà essere cambiato in “ftpback-rbxX-YYY.mybackup.ovh.net”.
+> Se il Backup Storage si trova in Canada (BHS), è necessario cambiarlo nel formato “ftpback-bhsX-YYY.mybackup.ovh.ca”.
 >
 
 Per salvare un solo file, esegui il comando:
