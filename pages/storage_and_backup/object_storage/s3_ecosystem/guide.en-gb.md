@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Third-party applications compatibility
 excerpt: This guide provides a list of tested, certified third-party applications compatible with OVHcloud Object Storage
-updated: 2025-07-08
+updated: 2025-07-10
 ---
 
 ## Objective
@@ -22,6 +22,7 @@ The following table provides an overview of the compatibility of our OVHcloud Ob
 | **Cohesity, Veritas NetBackup**  | Compatible - Certified | Officially supported, details can be found on [NetBackup Support Page - Compatibility Matrix](https://www.veritas.com/support/en_US/dpp.NetBackup){.external}  | [Guide](/pages/storage_and_backup/object_storage/s3_cohesity_netbackup) | Coming Soon |
 | **Arctera, Veritas BackupExec** | Compatible - Certified | Officially supported, details can be found on [BackupExec Support Page - Hardware and Cloud Storage Compatibility List](https://www.veritas.com/support/en_US/dpp.BackupExec){.external} | Coming Soon |
 | **HYCU R-Cloud™** | Compatible - Certified | Officially supported, details can be found on [HYCU R-Cloud User Guide](https://docs.r-cloud.hycu.com/HYCU-R-Cloud-User-Guide.pdf){.external} | [Guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/40-hycu-backup) |
+| **Backint for SAP HANA™** | Compatible - Certified | Officially supported, details can be found on [SAP Certified Solutions Directory](https://www.sap.com/dmc/exp/sap-certified-solutions/#/solutions?search=backint&id=s:c5927e8a-cf79-40c1-84ad-cdd354554389){.external} | [Guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent/) |
 
 ### Data Protection - Kubernetes Backup
 

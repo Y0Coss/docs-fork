@@ -474,13 +474,13 @@ Pour ajouter un fichier dans votre espace de stockage, suivez les étapes ci-des
 
 ![Zimbra - storage](images/zimbra-storage-add-01.png){.thumbnail}
 
-#### Partager un fichier/dossier
+#### Partager un fichier ou un dossier
 
 Le partage vous permet de donner accès à un dossier ou à un fichier sur votre stockage à une personne tierce, hors de votre compte Zimbra.
 
 > [!warning]
 >
-> Les partages (incluant la possibilité d'ajouter, de modifier, de supprimer et d'administrer les dossiers et fichiers) sont possibles uniquement avec un autre compte Zimbra Pro.
+> Le partage permettant l'administration des dossiers et fichiers est possible uniquement avec un autre compte Zimbra Pro.
 
 > [!tabs]
 > **Partager un fichier**
@@ -496,7 +496,7 @@ Le partage vous permet de donner accès à un dossier ou à un fichier sur votre
 > **Partager un dossier**
 >>
 >> 1. Faites un clic droit sur le dossier à partager, puis cliquez sur `Partager...`{.action}.
->> 2. Saisissez l'adresse e-mail de l'invité, puis cliquez sur `Ajouter`{.action}.
+>> 2. Saisissez l'adresse e-mail de l'invité, puis cliquez sur `Ajouter`{.action}. Vous pouvez ajouter plusieurs adresses e-mail.
 >> 3. Choisissez les droits que vous souhaitez attribuer à l'invité.
 >> 4. Cliquez sur `Enregistrer`{.action} pour finaliser le partage.
 >>
