@@ -20,7 +20,7 @@ Dzięki interfejsowi graficznemu umożliwiającemu automatyzację parametrów, h
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [VPS](/links/bare-metal/vps){.external} z dystrybucją [kompatybilną](/links/bare-metal/vps-os).
+- Wykupienie usługi [VPS](/links/bare-metal/vps) z dystrybucją [kompatybilną](/links/bare-metal/vps-os).
 - zalogowanie do [Panelu client OVHcloud](/links/manager).
 
 ## W praktyce

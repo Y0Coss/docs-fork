@@ -20,8 +20,8 @@ Grâce à une interface graphique permettant l'automatisation des paramètres, l
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](/links/bare-metal/vps){.external} avec une distribution [compatible](/links/bare-metal/vps-os).
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'une offre [VPS](/links/bare-metal/vps) avec une distribution [compatible](/links/bare-metal/vps-os).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 

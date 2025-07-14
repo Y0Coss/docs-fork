@@ -20,7 +20,7 @@ Grazie a unâ€™interfaccia grafica che permette di automatizzare i parametri, lâ€
 
 ## Prerequisiti
 
-- Disporre di una soluzione [VPS recente](/links/bare-metal/vps){.external} con un [OS compatibile con cPanel](/links/bare-metal/vps-os).
+- Disporre di una soluzione [VPS recente](/links/bare-metal/vps) con un [OS compatibile con cPanel](/links/bare-metal/vps-os).
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Procedura

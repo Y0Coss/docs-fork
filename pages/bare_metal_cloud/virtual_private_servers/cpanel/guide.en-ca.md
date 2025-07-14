@@ -20,7 +20,7 @@ This simplifies website hosting, thanks to a graphical interface for automating 
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-gb/vps) solution with a [compatible distribution](/links/bare-metal/vps-os)
+- A [VPS](/links/bare-metal/vps) solution with a [compatible distribution](/links/bare-metal/vps-os)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

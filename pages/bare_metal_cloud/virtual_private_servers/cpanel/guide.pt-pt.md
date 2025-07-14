@@ -20,7 +20,7 @@ Graças a uma interface gráfica que permite a automatização dos parâmetros, 
 
 ## Requisitos
 
-- Ter uma oferta [VPS recente](/links/bare-metal/vps){.external} com uma distribuição [compatível com cPanel](/links/bare-metal/vps-os).
+- Ter uma oferta [VPS recente](/links/bare-metal/vps) com uma distribuição [compatível com cPanel](/links/bare-metal/vps-os).
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
