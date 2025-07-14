@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-The shared infrastructure where OVHcloud web hosting plans are located has several security systems.
+The shared infrastructure where OVHcloud web hosting plans are located has several security systems.  
 If your website displays a “Your request has been blocked” page, this means that one of the requests you are trying to execute to your website has been blocked by our security systems.
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
@@ -49,16 +49,16 @@ Go to your web browser settings and check if an update is available.
 
 Below are the procedures for updating the most popular web browsers (documentation provided by their publishers):
 
-- [Firefox](https://support.mozilla.org/en-US/kb/update-firefox-latest-release){.external}.
-- [Chrome](https://support.google.com/chrome/answer/95414?hl=en-GB&co=GENIE.Platform%3DDesktop&oco=0){.external}.
-- [Safari](https://support.apple.com/en-gb/102665){.external}.
-- [Edge](https://support.microsoft.com/en-gb/topic/microsoft-edge-update-settings-af8aaca2-1b69-4870-94fe-18822dbb7ef1){.external}.
+- [Firefox](https://support.mozilla.org/en-US/kb/update-firefox-latest-release){.external}
+- [Chrome](https://support.google.com/chrome/answer/95414?hl=en-GB&co=GENIE.Platform%3DDesktop&oco=0){.external}
+- [Safari](https://support.apple.com/en-gb/102665){.external}
+- [Edge](https://support.microsoft.com/en-gb/topic/microsoft-edge-update-settings-af8aaca2-1b69-4870-94fe-18822dbb7ef1){.external}
 
 If your Internet browser is not present in the list above, refer to your browser's online documentation or contact the publisher's support.
 
 ///
 
-Once your web browser is up to date, try accessing your website again. If the situation persists, please read this guide.
+Once your web browser is up to date, try accessing your website again. If the situation persists, continue with step 2.
 
 ### 2 - Retrieve the information on the “Your request has been blocked” page and contact support
 
@@ -68,7 +68,7 @@ The security system that blocks your requests is located upstream of your web ho
 
 First, retrieve the information below that appears on the “Your request has been blocked” page:
 
-- `IP address` (e.g.: 203.0.113.0)
+- `IP address` (for example: 203.0.113.0)
 - `Date` (for example: 2025-07-01T16:30:45:150Z)
 - `Request ID` (for example: AbCdEf-your-request-ID-GhIjKlM)
 
