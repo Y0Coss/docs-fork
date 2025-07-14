@@ -37,7 +37,7 @@ Wählen Sie im neuen Fenster die gewünschte Größe aus und klicken Sie dann au
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Es erscheint eine Nachricht, um Ihre Anfrage zu bestätigen. Klicken Sie auf den Link innerhalb der Nachricht und folgen Sie dem Bestellprozess. (Es ist auch möglich, dass sich automatisch ein neuer Browser-Tab für die Bestellung geöffnet hat.)
+Es erscheint eine Nachricht, um Ihre Anfrage zu bestätigen. Klicken Sie auf den Link innerhalb der Nachricht und folgen Sie dem Bestellprozess. Ein neuer Browser-Tab öffnet sich zum Abschließen der Bestellung.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
