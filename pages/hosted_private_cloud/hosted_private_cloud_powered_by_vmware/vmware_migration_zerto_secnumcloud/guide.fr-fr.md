@@ -30,7 +30,7 @@ Avant de commencer, assurez-vous d'avoir :
 
 ## En pratique
 
-![Move2CloudZerto](images/Move2Cloud-Zerto.png){.thumbnail}
+![Move2CloudZerto](/pages/assets/screens/other/zerto/move2cloud-zerto.png){.thumbnail}
 
 ## Étape 1 : Définir votre périmètre de migration
 
