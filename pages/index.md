@@ -1058,6 +1058,7 @@
                 + [Scanning Docker images for vulnerabilities with OVHcloud Managed Private Registry](public_cloud/containers_orchestration/managed_private_registry/scan-docker-images-vulnerabilities)
                 + [Sign OCI artifacts with Cosign on OVHcloud Managed Private Registry](public_cloud/containers_orchestration/managed_private_registry/sign-artifacts-with-cosign)
                 + [Configure the authentication via an OIDC provider on an OVHcloud Managed Private Registry](public_cloud/containers_orchestration/managed_private_registry/configure-oidc-provider-authentication)
+                + [Configure access control using OVHcloud IAM on an OVHcloud Managed Private Registry](public_cloud/containers_orchestration/managed_private_registry/managing-iam-authentication)
                 + [Adding IP restrictions on an OVHcloud Managed Private Registry](public_cloud/containers_orchestration/managed_private_registry/add-ip-restrictions)
         + [Managed Rancher Service (MRS)](products/public-cloud-containers-orchestration-managed-rancher-service)
             + [Getting started](public-cloud-containers-orchestration-managed-rancher-service-getting-started)
