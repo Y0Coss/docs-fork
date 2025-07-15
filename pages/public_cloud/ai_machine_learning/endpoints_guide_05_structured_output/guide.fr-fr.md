@@ -18,8 +18,6 @@ This is particularly useful when you need the AI model to return data in a speci
 The [JSON schema](https://json-schema.org/) specification can be used to describe what data structure should the output adhere to, and the AI model will generate responses that match it. 
 This feature allows for seamless integration of AI-generated data into your applications, enabling you to build robust and consistent workflows.
 
-Under the hood, structured output is usually made possible with combination of specific examples used during model training, and runtime guided decoding (with popular backends such as [outlines](https://github.com/dottxt-ai/outlines), [xgrammar](https://github.com/mlc-ai/xgrammar), or [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer)).
-
 ## Objective
 
 This documentation provides an overview on how to use structured outputs with the various AI models offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). 
