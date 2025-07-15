@@ -1,11 +1,11 @@
 ---
-title: "Reversibility Policy for the Data Unified product"
+title: "Reversibility Policy for the Unified Data Platform product"
 updated: 2025-07-08
 ---
 
 **Objective**
 
-This document describes the reversibility policy for the Managed Data Visualization product covering the OVHcloud Data Platform offer.
+This document describes the reversibility policy for the Unified Data Platform product covering the OVHcloud Data Platform offer.
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
