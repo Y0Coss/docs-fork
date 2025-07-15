@@ -65,7 +65,20 @@ Run this command to ensure there are no incomplete multipart uploads on your buc
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api list-multipart-uploads --bucket <bucket_name>
 ```
 
-### **Archive a Bucket**
+### Upload your objects
+
+To add objects to the bucket you wish to archive, use the following command:
+
+```bash
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api put-object --bucket <bucket-name> --key <object-name> --body <object-name>
+```
+
+> [!primary]
+>
+> This operation is not currently available via the OVHcloud client space. It must be performed on the command line via the S3 API.
+>
+
+### **Archive a bucket**
 
 > [!primary]
 >

@@ -65,11 +65,24 @@ Exécutez cette commande pour vous assurer qu'il n'y a pas d'uploads multipart i
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api list-multipart-uploads --bucket <nom_du_bucket>
 ```
 
-### **Archiver un Bucket**
+### Téléchargez vos objets
+
+Pour ajouter des objets dans le bucket que vous souhaitez archiver, utilisez la commande suivante :
+
+```bash
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api put-object --bucket <bucket-name> --key <object-name> --body <object-name>
+```
 
 > [!primary]
 >
-> Avant d'archiver un panier, assurez-vous qu'il n'y a pas de téléchargements multipartites incomplets.
+> Cette opération n’est actuellement pas disponible via l’espace client OVHcloud. Elle doit être effectuée en ligne de commande via l’API S3.
+>
+
+### **Archiver un bucket**
+
+> [!primary]
+>
+> Avant d'archiver un bucket, assurez-vous qu'il n'y a pas de téléchargements multipartites incomplets.
 >
 
 > [!tabs]
@@ -114,13 +127,13 @@ Par défaut, une archive n'est pas verrouillée, c'est-à-dire que vous pouvez t
 > De même, vous ne pouvez pas avoir plusieurs niveaux d'accès dans votre configuration de hiérarchisation intelligente, c'est-à-dire que vous utilisez soit le niveau d'accès `OVH_ARCHIVE`, soit le niveau d'accès `OVH_ARCHIVE_LOCK`, mais pas les deux.
 >
 
-### Verrouiller un panier déjà archivé
+### Verrouiller un bucket déjà archivé
 
 Si vous avez des buckets qui ont été précédemment archivés sans utiliser le niveau d'accès `OVH_ARCHIVE_LOCK`, vous pouvez toujours les verrouiller en réappliquant une configuration de hiérarchisation intelligente à votre bucket en utilisant le niveau d'accès `OVH_ARCHIVE_LOCK` et en spécifiant une durée de rétention en jours.
 
 > [!primary]
 >
-> Pour verrouiller un panier déjà archivé, il doit être dans l'état "Archivé" ou "Restauré".
+> Pour verrouiller un bucket déjà archivé, il doit être dans l'état "Archivé" ou "Restauré".
 > Vous devez également utiliser la même configuration de hiérarchisation intelligente "Id".
 >
 
