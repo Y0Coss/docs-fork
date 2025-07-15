@@ -4,6 +4,20 @@ excerpt: Find out how a Floating IP address functions and how to configure it
 updated: 2025-07-11
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objective
 
 Floating IPs are public IP addresses for [Public Cloud](https://www.ovhcloud.com/en-ca/public-cloud/), used to expose a private instance or a private network service to the public network. You can read more about it on our dedicated [concepts page](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
