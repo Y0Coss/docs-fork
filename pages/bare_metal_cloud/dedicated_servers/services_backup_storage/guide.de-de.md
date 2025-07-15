@@ -158,11 +158,11 @@ ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **FtpUsername**: Ihr FTP-Benutzername
-* **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storages
-* **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
-* **File**: Name der Datei, für die Sie ein Backup erstellen möchten
+- **FtpUsername**: Ihr FTP-Benutzername
+- **FtpPassword**: Ihr FTP-Passwort
+- **HostName**: Name Ihres Backup Storages
+- **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
+- **File**: Name der Datei, für die Sie ein Backup erstellen möchten
 
 Um ein Backup für ein komplettes Verzeichnis zu erstellen, archivieren Sie dieses und übertragen Sie es dann mit folgendem Befehl in Ihren Backup-Bereich:
 
@@ -172,11 +172,11 @@ tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName Archi
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
-* **FtpUsername**: Ihr FTP-Benutzername
-* **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storages
-* **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
+- **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
+- **FtpUsername**: Ihr FTP-Benutzername
+- **FtpPassword**: Ihr FTP-Passwort
+- **HostName**: Name Ihres Backup Storages
+- **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
 
 Um eine Archivdatei aus Ihrem Backup-Speicher herunterzuladen, können Sie folgenden Befehl verwenden:
 
@@ -186,11 +186,11 @@ ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **FtpUsername**: Ihr FTP-Benutzername
-* **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storage
-* **LocalFolder**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
-* **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
+- **FtpUsername**: Ihr FTP-Benutzername
+- **FtpPassword**: Ihr FTP-Passwort
+- **HostName**: Name Ihres Backup Storage
+- **LocalFolder**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
+- **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
 
 ##### cURL (für Linux)
 
@@ -208,11 +208,11 @@ curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **File**: Name der Datei, für die Sie ein Backup erstellen möchten
-* **FtpUsername**: Ihr FTP-Benutzername
-* **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storage
-* **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
+- **File**: Name der Datei, für die Sie ein Backup erstellen möchten
+- **FtpUsername**: Ihr FTP-Benutzername
+- **FtpPassword**: Ihr FTP-Passwort
+- **HostName**: Name Ihres Backup Storage
+- **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
 
 Um ein Backup für ein komplettes Verzeichnis zu erstellen, archivieren Sie dieses und übertragen Sie es dann mit folgendem Befehl in Ihren Backup-Bereich:
 
@@ -222,12 +222,12 @@ tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocati
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
-* **FtpUsername**: Ihr FTP-Benutzername
-* **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storage
-* **FolderLocation**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
-* **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
+- **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
+- **FtpUsername**: Ihr FTP-Benutzername
+- **FtpPassword**: Ihr FTP-Passwort
+- **HostName**: Name Ihres Backup Storage
+- **FolderLocation**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
+- **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
 
 Um eine Archivdatei aus Ihrem Backup-Speicher herunterzuladen, können Sie folgenden Befehl verwenden:
 
@@ -238,11 +238,11 @@ curl -u FtpUsername:FtpPassword ftp://HostName/File
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **FtpUsername**: Ihr FTP-Benutzername
-* **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storage
-* **LocalFolder**: Name des lokalen Verzeichnisses, in dem Sie die Datei speichern möchten
-* **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
+- **FtpUsername**: Ihr FTP-Benutzername
+- **FtpPassword**: Ihr FTP-Passwort
+- **HostName**: Name Ihres Backup Storage
+- **LocalFolder**: Name des lokalen Verzeichnisses, in dem Sie die Datei speichern möchten
+- **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
 
 #### lftp (für Linux)
 
@@ -260,11 +260,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; 
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **File**: Name der Datei, für die Sie ein Backup erstellen möchten
-* **FtpUsername**: Ihr FTP-Benutzername
-* **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storage
-* **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
+- **File**: Name der Datei, für die Sie ein Backup erstellen möchten
+- **FtpUsername**: Ihr FTP-Benutzername
+- **FtpPassword**: Ihr FTP-Passwort
+- **HostName**: Name Ihres Backup Storage
+- **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
 
 Um ein Backup für ein komplettes Verzeichnis zu erstellen, archivieren Sie dieses und übertragen Sie es dann mit folgendem Befehl in Ihren Backup-Bereich:
 
@@ -274,12 +274,12 @@ tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderL
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
-* **FtpUsername**: Ihr FTP-Benutzername
-* **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storage
-* **FolderLocation**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
-* **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
+- **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
+- **FtpUsername**: Ihr FTP-Benutzername
+- **FtpPassword**: Ihr FTP-Passwort
+- **HostName**: Name Ihres Backup Storage
+- **FolderLocation**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
+- **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
 
 Um eine Archivdatei aus Ihrem Backup-Speicher herunterzuladen, können Sie folgenden Befehl verwenden:
 
@@ -290,11 +290,11 @@ lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **FtpUsername**: Ihr FTP-Benutzername
-* **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storages
-* **LocalFolder**: Name des lokalen Verzeichnisses, in dem Sie die Datei speichern möchten
-* **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
+- **FtpUsername**: Ihr FTP-Benutzername
+- **FtpPassword**: Ihr FTP-Passwort
+- **HostName**: Name Ihres Backup Storages
+- **LocalFolder**: Name des lokalen Verzeichnisses, in dem Sie die Datei speichern möchten
+- **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
 
 ##### FileZilla
 
@@ -312,9 +312,9 @@ mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **HostName**: Name Ihres Backup Storages
-* **ServiceName**: Name Ihres Servers (z. B.: `ns1111111.ip-203-0-113.eu`)
-* **FolderMount**: Verzeichnis, in das Sie die NFS-Freigabe mounten möchten
+- **HostName**: Name Ihres Backup Storages
+- **ServiceName**: Name Ihres Servers (z. B.: `ns1111111.ip-203-0-113.eu`)
+- **FolderMount**: Verzeichnis, in das Sie die NFS-Freigabe mounten möchten
 
 Wenn die Freigabe eingehängt ist, können Sie Befehle wie **cp** oder **rsync** wie bei einem normalen Verzeichnis nutzen.
 
@@ -330,8 +330,8 @@ net use z: \\HostName\ServiceName
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **HostName**: Name Ihres Backup Storages
-* **ServiceName**: Name Ihres Servers (z. B.: `ns1111111.ip-203-0-113.eu`)
+- **HostName**: Name Ihres Backup Storages
+- **ServiceName**: Name Ihres Servers (z. B.: `ns1111111.ip-203-0-113.eu`)
 
 Möglicherweise wird die folgende Fehlermeldung angezeigt:
 
@@ -370,9 +370,9 @@ mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password=
 
 Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Werten.
 
-* **HostName**: Name Ihres Backup Storages
-* **ServiceName**: Name Ihres Servers (z. B.: `ns1111111.ip-203-0-113.eu`)
-* **FolderMount**: Verzeichnis, in das Sie die Freigabe mounten möchten (es muss bereits existieren)
+- **HostName**: Name Ihres Backup Storages
+- **ServiceName**: Name Ihres Servers (z. B.: `ns1111111.ip-203-0-113.eu`)
+- **FolderMount**: Verzeichnis, in das Sie die Freigabe mounten möchten (es muss bereits existieren)
 
 ## Weiterführende Informationen
 
