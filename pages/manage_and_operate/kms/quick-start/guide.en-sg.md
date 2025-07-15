@@ -208,7 +208,7 @@ The following information is required:
 - **name**: the name of the certificate
 - **identityURNs**: list of OVHcloud identities in URN format that will be provided to the IAM for calculating access rights
 - **description**: certificate description (optional)
-- **certificateType** : Certificate signature algorithm (ECDSA or RSA) - ECDSA by default (optional)
+- **certificateType** : certificate signature algorithm (ECDSA or RSA) - ECDSA by default (optional)
 - **validity**: certificate validity duration in days - 365 days by default (optional)
 
 **Example of certificate creation with root account:**
@@ -249,7 +249,7 @@ The API then returns the certificate creation status:
     "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
     "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
-  "certificateType": "ECDSA"
+  "certificateType": "ECDSA",
   "status": "CREATING",
   "fromCSR": false,
   "privateKeyPEM": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIDOfWuMVQxl5quoURzThF4zTI9YYTmylSaPjneLBwP+2oAoGCCqGSM49\nAwEHoUQDQgAERd1eMw0YdAD+E9oSymGc4bCL1mfJl0EZwoM2ya/uKFFVFnGMnckg\nXXXXXXXXXXXXXXX==\n-----END EC PRIVATE KEY-----\n",

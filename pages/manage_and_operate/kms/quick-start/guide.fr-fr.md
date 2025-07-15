@@ -255,7 +255,7 @@ L'API retourne ensuite l'état de création du certificat :
     "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
     "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
-  "certificateType": "ECDSA"
+  "certificateType": "ECDSA",
   "status": "CREATING",
   "fromCSR": false,
   "privateKeyPEM": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIDOfWuMVQxl5quoURzThF4zTI9YYTmylSaPjneLBwP+2oAoGCCqGSM49\nAwEHoUQDQgAERd1eMw0YdAD+E9oSymGc4bCL1mfJl0EZwoM2ya/uKFFVFnGMnckg\nXXXXXXXXXXXXXXX==\n-----END EC PRIVATE KEY-----\n",
