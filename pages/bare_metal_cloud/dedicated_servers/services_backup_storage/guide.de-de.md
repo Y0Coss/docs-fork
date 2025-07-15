@@ -6,7 +6,7 @@ updated: 2025-07-14
 
 ## Ziel
 
-Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speicher für die Speicherung wichtiger Daten und Konfigurationsdateien. Dieser Bereich ist skalierbar, abgesichert und vom Hauptserver unabhängig.
+Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speicherplatz für die Speicherung wichtiger Daten und Konfigurationsdateien. Dieser Bereich ist skalierbar, abgesichert und vom Hauptserver unabhängig.
 
 **Diese Anleitung erklärt, wie Sie Ihren Backup-Speicherplatz aktivieren und verwenden.**
 
@@ -30,8 +30,7 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 
 ### Backup Storage aktivieren
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) 
-ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button  `Storage-Backup aktivieren`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button  `Storage-Backup aktivieren`{.action}.
 
 ![Backup Storage aktivieren](images/backup-storage01.png){.thumbnail}
 
@@ -66,7 +65,7 @@ Sie können anschließend über den von Ihnen gewählten IP-Block auf den Backup
 
 #### Zugang zum Backup Storage bearbeiten oder löschen
 
-Sobald der Dienst aktiviert ist, wird Ihre ACL Tabelle im Tab `Storage-Backup`{.action} angezeigt. Klicken Sie auf `...`{.action}. rechts neben einem IP-Block, um das Zugangsmenü zu öffnen.
+Sobald der Dienst aktiviert ist, wird Ihre ACL Tabelle im Tab `Storage-Backup`{.action} angezeigt. Klicken Sie auf `...`{.action} rechts neben einem IP-Block, um das Zugangsmenü zu öffnen.
 
 ![Zugang zum Backup-Speicher hinzufügen](images/backup-storage05.png){.thumbnail}
 
@@ -124,8 +123,7 @@ Klicken Sie auf `Bestätigen`{.action}, um mit der Löschung fortzufahren. Ihr B
 
 ### Zusätzlichen Speicherplatz bestellen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) 
-ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Speicherplatz bestellen`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Speicherplatz bestellen`{.action}.
 
 ![Zusätzlichen Backup-Speicherplatz bestellen](images/backup-storage06.png){.thumbnail}
 
@@ -190,7 +188,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storages
+* **HostName**: Name Ihres Backup Storage
 * **LocalFolder**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
 * **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
 
@@ -198,8 +196,8 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 > [!primary]
 >
-> Um das FTPS-Protokoll zu verwenden, muss der Name Ihres Backup Storage geändert werden. Lautet der Name beispielsweise “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, muss er zu “ftpback-rbxX-YYY.mybackup.ovh.net” abgeändert werden. Fügen Sie außerdem dem untenstehenden Befehl ein `-ssl` Argument hinzu.
-> Wenn sich das Storage-Backup in Kanada (BHS) befindet, muss es in “ftpback-bhsX-YYY.mybackup.ovh.ca” geändert werden.
+> Um das FTPS-Protokoll zu verwenden, muss der Name Ihres Backup Storage geändert werden. Lautet der Name beispielsweise “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, muss er zu “ftpback-rbxX-YYY.mybackup.ovh.net” abgeändert werden. Fügen Sie außerdem dem untenstehenden Befehl ein `-ssl` Argument hinzu.  
+> Wenn sich das Backup Storage in Kanada (BHS) befindet, muss er in “ftpback-bhsX-YYY.mybackup.ovh.ca” geändert werden.
 >
 
 Geben Sie für das Backup einer einzelnen Datei folgenden Befehl ein:
@@ -213,7 +211,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **File**: Name der Datei, für die Sie ein Backup erstellen möchten
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storages
+* **HostName**: Name Ihres Backup Storage
 * **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
 
 Um ein Backup für ein komplettes Verzeichnis zu erstellen, archivieren Sie dieses und übertragen Sie es dann mit folgendem Befehl in Ihren Backup-Bereich:
@@ -227,7 +225,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storages
+* **HostName**: Name Ihres Backup Storage
 * **FolderLocation**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
 * **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
 
@@ -242,7 +240,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storages
+* **HostName**: Name Ihres Backup Storage
 * **LocalFolder**: Name des lokalen Verzeichnisses, in dem Sie die Datei speichern möchten
 * **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
 
@@ -250,8 +248,8 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 > [!primary]
 >
-> lftp verwendet standardmäßig FTP+SSL/TLS. Ändern Sie deshalb den Namen Ihres Backup Storages. Lautet dieser beispielsweise “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, muss er zu “ftpback-rbxX-YYY.mybackup.ovh.net” abgeändert werden.
-> Wenn sich das Storage-Backup in Kanada (BHS) befindet, muss es in “ftpback-bhsX-YYY.mybackup.ovh.ca” geändert werden.
+> lftp verwendet standardmäßig FTP+SSL/TLS. Ändern Sie deshalb den Namen Ihres Backup Storage. Lautet dieser beispielsweise “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, muss er zu “ftpback-rbxX-YYY.mybackup.ovh.net” abgeändert werden.  
+> Wenn sich das Backup Storage in Kanada (BHS) befindet, muss er in “ftpback-bhsX-YYY.mybackup.ovh.ca” geändert werden.
 >
 
 Geben Sie für das Backup einer einzelnen Datei folgenden Befehl ein:
@@ -265,7 +263,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **File**: Name der Datei, für die Sie ein Backup erstellen möchten
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storages
+* **HostName**: Name Ihres Backup Storage
 * **FolderLocation**: Zugriffspfad zum Zielverzeichnis, in dem Sie die Datei speichern möchten
 
 Um ein Backup für ein komplettes Verzeichnis zu erstellen, archivieren Sie dieses und übertragen Sie es dann mit folgendem Befehl in Ihren Backup-Bereich:
@@ -279,7 +277,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **FolderName**: Zugriffspfad zum Verzeichnis, für das Sie ein Backup erstellen möchten
 * **FtpUsername**: Ihr FTP-Benutzername
 * **FtpPassword**: Ihr FTP-Passwort
-* **HostName**: Name Ihres Backup Storages
+* **HostName**: Name Ihres Backup Storage
 * **FolderLocation**: Zugriffspfad zum lokalen Verzeichnis, in dem Sie die Datei speichern möchten
 * **ArchiveName**: Name des Verzeichnisses, für das Sie ein Backup erstellen möchten
 
