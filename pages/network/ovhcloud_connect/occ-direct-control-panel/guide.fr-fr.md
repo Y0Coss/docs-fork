@@ -1,7 +1,7 @@
 ---
 title: Mise en service de OVHcloud Connect Direct depuis l’espace client OVHcloud
 excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Direct depuis votre espace client OVHcloud
-updated: 2020-09-28
+updated: 2025-07-15
 ---
 
 ## Objectif
@@ -16,13 +16,13 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 > Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](/pages/network/ovhcloud_connect/occ-limits) et configurer vos équipements réseau en accord avec celles-ci.
 >
 
-- Posséder une [offre OVHcloud Connect Direct](https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/)
-- Disposer d'un [vRack OVHcloud](https://www.ovh.com/fr/solutions/vrack/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Posséder une [offre OVHcloud Connect Direct](/links/network/ovhcloud-connect)
+- Disposer d'un [vRack OVHcloud](/links/network/vrack)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Bare Metal Cloud`{.action} puis sélectionnez l'onglet `Network`{.action}. Ensuite, cliquez sur `OVHcloud Connect`{.action} puis sur votre offre.
+Connectez-vous à [l’espace client OVHcloud](/links/manager), cliquez sur `Bare Metal Cloud`{.action} puis sélectionnez l'onglet `Network`{.action}. Ensuite, cliquez sur `OVHcloud Connect`{.action} puis sur votre offre.
 
 ![ovhcloud connect selection](images/occ_01.png){.thumbnail}
 
@@ -182,6 +182,6 @@ Pour supprimer une configuration PoP, cliquez sur le bouton `(...)`{.action} sur
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

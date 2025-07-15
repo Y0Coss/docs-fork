@@ -1,7 +1,7 @@
 ---
 title: Installation of OVHcloud Connect Direct from the OVHcloud Control Panel
 excerpt: Find out how to set up your OVHcloud Connect Direct solution via the OVHcloud Control Panel
-updated: 2020-09-28
+updated: 2025-07-15
 ---
 
 ## Objective
@@ -16,13 +16,13 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 > To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](/pages/network/ovhcloud_connect/occ-limits) and configure your network devices accordingly.
 >
 
-- An [OVHcloud Connect Direct solution](https://www.ovhcloud.com/en-gb/network-security/ovhcloud-connect/)
-- An OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud Connect Direct solution](/links/network/ovhcloud-connect)
+- An OVHcloud [vRack](/links/network/vrack)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open `OVHcloud Connect`{.action} and click on your solution.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open `OVHcloud Connect`{.action} and click on your solution.
 
 ![ovhcloud connect selection](images/occ_01.png){.thumbnail}
 
@@ -115,7 +115,7 @@ You must also add a routing configuration.
 
 ##### **Adding a routing configuration**
 
-Click on the `(...)`{.action} button on the desired availability zone then on `Add routing configuration`{.action} .
+Click on the `(...)`{.action} button on the desired availability zone then on `Add routing configuration`{.action}.
 
 ![add routing configuration](images/l3dc2.png){.thumbnail}
 
@@ -183,6 +183,6 @@ To delete a PoP configuration, click the `...`{.action} button on the PoP config
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

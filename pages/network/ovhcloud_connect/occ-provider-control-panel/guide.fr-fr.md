@@ -1,7 +1,7 @@
 ---
 title: Mise en service de OVHcloud Connect Provider depuis l’espace client OVHcloud
 excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Provider depuis votre espace client OVHcloud
-updated: 2020-09-28
+updated: 2025-07-15
 ---
 
 ## Objectif
@@ -16,9 +16,9 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 > Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](/pages/network/ovhcloud_connect/occ-limits) et configurer vos équipements réseau en accord avec celles-ci.
 >
 
-- Avoir commandé une [offre OVHcloud Connect Provider](https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/)
-- Disposer d'un [vRack OVHcloud](https://www.ovh.com/fr/solutions/vrack/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avoir commandé une [offre OVHcloud Connect Provider](/links/network/ovhcloud-connect)
+- Disposer d'un [vRack OVHcloud](/links/network/vrack)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
@@ -29,15 +29,15 @@ Une fois votre offre OVHcloud Connect Provider commandée, vous recevrez une con
 Selon le fournisseur que vous avez choisi, rendez-vous ensuite sur le portail de celui-ci pour vous identifier, le lien étant fourni dans l'e-mail de confirmation de commande. 
 Renseignez alors votre clé de service et validez la commande qui vous sera présentée.
 
-Vérifiez par la suite dans votre  [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} le statut d'activation de votre offre. Pour cela, cliquez sur `Bare Metal Cloud`{.action} puis sélectionnez l'onglet `Network`{.action}. Ensuite, cliquez sur `OVHcloud Connect`{.action} puis sur votre offre. Le statut de votre offre passera à « Actif ».
+Vérifiez par la suite dans votre  [espace client OVHcloud](/links/manager) le statut d'activation de votre offre. Pour cela, cliquez sur `Bare Metal Cloud`{.action} puis sélectionnez l'onglet `Network`{.action}. Ensuite, cliquez sur `OVHcloud Connect`{.action} puis sur votre offre. Le statut de votre offre passera à « Actif ».
 
 ### Étape 2 : associer un vRack
 
-Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Bare Metal Cloud`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
+Connectez-vous à [l’espace client OVHcloud](/links/manager), cliquez sur `Bare Metal Cloud`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
 
 ![ovhcloud connect selection](images/occ_01.png){.thumbnail}
 
-Vous devez commencer par associer un vRack à votre offre. Cliquez sur le bouton  `Associer un vRack`{.action} et sélectionnez un vRack existant dans le menu déroulant. 
+Vous devez commencer par associer un vRack à votre offre. Cliquez sur le bouton `Associer un vRack`{.action} et sélectionnez un vRack existant dans le menu déroulant. 
 
 ![associate vRack](images/vrack01.png){.thumbnail}
 
@@ -160,6 +160,6 @@ Pour supprimer une configuration PoP, cliquez sur le bouton `(...)`{.action} sur
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
