@@ -6,13 +6,15 @@ updated: 2025-07-10
 
 ## Objective
 
-This guide explains how to migrate your on-premises VMware workloads to an **OVHcloud Hosted Private Cloud (HPC)** using **Zerto Virtual Replication**.
+This guide explains how to migrate your on-premises VMware workloads to an **OVHcloud Hosted Private Cloud (HPC) SecNumCloud environment** using **Zerto Virtual Replication**.
 
-> [!primary]
-> **This guide applies to standard Hosted Private Cloud environments that are NOT part of SecNumCloud (SNC), PCI-DSS, or HDS-qualified frameworks.**
-> If you are using an SNC, PCI-DSS, or HDS-qualified Hosted Private Cloud, some features described here, such as OVHcloud IAM or NSX-T advanced networking, may not be available in SNC environments.
-> For SecNumCloud environments, please refer to the dedicated guide:
-> [Move2Cloud - Migrating VMware Workloads to SecNumCloud Hosted Private Cloud with Zerto](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto_secnumcloud)
+>[!primary]
+> **This guide applies to Hosted Private Cloud environments qualified for SecNumCloud (SNC).**  
+> Some features such as OVHcloud IAM are not available in SNC environments.
+> 
+> For environments that are NOT part of SecNumCloud (SNC), please refer to the dedicated guide:
+> [Move2Cloud - Migrate VMware workloads to OVHcloud Hosted Private Cloud with Zerto](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto_secnumcloud)
+
 
 ## Requirements
 
