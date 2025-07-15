@@ -1,6 +1,6 @@
 ---
 title: "Politique de réversibilité du produit Managed Mutualized Virtualization "
-updated: 2025-07-11
+updated: 2025-07-15
 ---
 
 ## Objectif
@@ -35,8 +35,8 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
 | Gestion des réseaux virtuels | Configuration réseaux (subnets) spécifique à OVHcloud | NA | **Entrante** : adaptation des configurations réseau à l’environnement OVHcloud <br>**Sortante** : pas d'export possible des configurations. Prendre note de l’architecture et la reproduire dans l’environnement cible | [VMware Cloud Director - Concepts réseaux et bonnes pratiques](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) <br><br>[VMware Cloud Director - Création de composants réseaux via Public VCF as-a-Service]() |
-| Administration et monitoring | Gestion des règles de sécurité, des utilisateurs, des groupes et surveillance de l’infrastructure| NA | **Entrante** : interfaces et fonctionnalités disponible par défaut <br> **Sortante** : l’export des règles n’est pas possible. Commande et configuration des outils dans l’environnement cible  |[Les concepts fondamentaux de VCD ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)<br><br>[VMware Cloud Director - Découvrez comment utiliser l'interface utilisateur de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started) |
-| Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud | N/A | **Entrante** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortante** : commande et configuration un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
+| Administration et monitoring | Gestion des règles de sécurité, des utilisateurs, des groupes et surveillance de l’infrastructure| NA | **Entrante** : interfaces et fonctionnalités disponible par défaut <br> **Sortante** : l’export des règles n’est pas possible. Commande et configuration des outils dans l’environnement cible | [Les concepts fondamentaux de VCD ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)<br><br>[VMware Cloud Director - Découvrez comment utiliser l'interface utilisateur de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started) |
+| Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud | N/A | **Entrante** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise <br> **Sortante** : Commande et configuration d'une solution anti-DDoS auprès du nouveau fournisseur | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
 
@@ -50,7 +50,7 @@ OVHcloud dispose également d’un service dédié : [OVHcloud Professional Serv
 
 ## Coûts et frais
 
-La facturation est mensuelle et sans engagement de durée. Aucun frais de résiliation spécifique n’est appliqué : la suppression du service arrête la facturation à la fin de la fin de la période en cours. Les crédits OVHcloud éventuellement associés ne sont pas transférables. Il incombe au client d’exporter ses données, images, snapshots et configurations avant suppression car leur effacement est irréversible.
+La facturation est mensuelle et sans engagement de durée. Aucun frais de résiliation spécifique n’est appliqué. La suppression du service arrête la facturation à la fin de la fin de la période en cours. Les crédits OVHcloud éventuellement associés ne sont pas transférables. Il incombe au client d’exporter ses données, images, snapshots et configurations avant suppression, car la suppression est irréversible.
 
 ## Conservation des données après résiliation du contrat
 
