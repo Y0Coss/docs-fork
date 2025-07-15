@@ -43,7 +43,12 @@ Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public 
 In the list of registries, click the `...`{.action} button on the relevant line, then choose:
 
 - `Activate authentication via OVHcloud IAM`{.action} to enable it.
+
+![activate IAM](images/activate_iam.png){.thumbnail}
+
 - `Disable authentication via OVHcloud IAM`{.action} to disable it.
+
+![diasable IAM](images/disable_iam.png){.thumbnail}
 
 ### Authentication using SSO with OVHcloud IAM users
 
@@ -53,11 +58,11 @@ To log in via SSO:
 
 - Open the `Harbor user interface`{.action} from the Control Panel.
 
-![harbor user interface](images/)
+![harbor user interface](images/harbor_interface.png){.thumbnail}
 
 - You will be redirected to the OVHcloud authentication page, log in using your OVHcloud IAM credentials.
 
-![login with SSO](images/)
+![login with SSO](images/iam_authentication.png){.thumbnail}
 
 - Access to Harbor is granted based on the IAM role associated with your user account.
 
@@ -87,19 +92,19 @@ These roles are assigned through IAM policies. To create and configure a policy:
 
 In the OVHcloud Control Panel, go to the `Identity, Security & Operations`{.action} section. In the left-hand menu, under `Identity and Access Management`, click on `Policies`{.action} and `Create a policy`{.action}.
 
-![Create policy](images/)
+![Create policy](images/managing_iam.png){.thumbnail}
 
 Define users and groups, name your policy, add the users you want to include and optionally, add user groups if they have already been created.
 
-![Create policy users](images/)
+![Create policy users](images/create_policy.png){.thumbnail width="700"}
 
 Set permissions for MPR, in the `Product types` section, select `Public Cloud Project/Managed Registry`. In `Resources`, choose the specific MPR instance to which the policy will apply.
 
-![Create policy product types](images/)
+![Create policy product types](images/create_policy_product_types.png){.thumbnail}
 
 Expand `Public Cloud Project/Managed Registry` and select the desired role for the users defined in the policy.
 
-![Create policy roles](images/)
+![Create policy roles](images/create_policy_action.png){.thumbnail width="700"}
 
 ### Go further
 
