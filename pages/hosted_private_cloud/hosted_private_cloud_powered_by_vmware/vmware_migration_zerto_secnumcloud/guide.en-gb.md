@@ -11,7 +11,7 @@ This guide explains how to migrate your on-premises VMware workloads to an **OVH
 > [!primary]
 > **This guide applies to SecNumCloud (SNC) qualified Hosted Private Cloud environments.**
 > Some features available in standard environments like **OVHcloud IAM**, **vRack** or the **advanced NSX-T network** may be restricted or unavailable here.
-> For standard environments, refer to the following guide:
+> For standard environments, refer to the dedicated guide:
 > [Move2Cloud - Migrate VMware workloads to OVHcloud Hosted Private Cloud with Zerto](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto).
 
 ## Requirements
