@@ -1,7 +1,7 @@
 ---
 title: "Fin du support Plesk et cPanel pour VPS - Assurer la continuité de vos services"
 excerpt: "Découvrez les dates de fin de support des systèmes d'exploitation de votre VPS OVHcloud affectant les licences Plesk et cPanel"
-updated: 2025-07-09
+updated: 2025-07-15
 ---
 
 ## Objectif
@@ -20,8 +20,8 @@ Les éditeurs **Plesk** et **cPanel** annoncent la fin du support des systèmes 
 
 | Système d'exploitation | Impacté par    | Fin du support       |
 | ---------------------- | -------------- | -------------------- |
-| Ubuntu 18.04           | Plesk          | **1er juillet 2025** |
-| Debian 10              | Plesk          | **1er juillet 2025** |  
+| Ubuntu 18.04           | Plesk          | **1er janvier 2026** |
+| Debian 10              | Plesk          | **1er janvier 2026** |  
 | CentOS 7               | Plesk / cPanel | **1er janvier 2026** |
 | CloudLinux 7           | Plesk / cPanel | **1er janvier 2026** |
 
@@ -73,6 +73,18 @@ Utilisez l’outil de migration de votre choix. Ces outils permettent de transf�
 
 - Plesk Migrator – [Documentation officielle](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/)
 - cPanel Transfer Tool – [Documentation officielle](https://docs.cpanel.net/whm/transfers/transfer-tool/)
+
+**Option C — Mise à jour sur place (avancé)**
+
+Si vous ne pouvez pas déployer une nouvelle instance de VPS, certains outils permettent de **mettre à niveau directement votre système d’exploitation** tout en conservant Plesk ou cPanel installé. Cette méthode s'adresse aux utilisateurs expérimentés, car elle comporte des risques si elle est mal exécutée.
+
+- Pour **Plesk** (passage de CentOS 7 vers AlmaLinux 8), utilisez le script `centos2alma` proposé par la [documentation officielle de Plesk](https://github.com/plesk/centos2alma). Consultez aussi les instructions détaillées du [support de Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983).
+
+- Pour **cPanel** (passage de CentOS 7 vers AlmaLinux 8), utilisez l'outil **Elevate** proposé par la [documentation officielle de cPanel](https://cpanel.github.io/elevate/).
+
+> [!primary]
+>
+> Ces outils ne sont pas garantis à 100 % et nécessitent des sauvegardes complètes avant de procéder. Assurez-vous également que votre VPS dispose de ressources suffisantes (RAM, CPU, disque).
 
 ## Aller plus loin
 
