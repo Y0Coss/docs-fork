@@ -70,7 +70,7 @@ It's possible to create this certificate from the dedicated entry on the adminis
 
 ![Create a certificate](images/create_certificat_01.png){.thumbnail}
 
-The first part of the form allows you to precise its validity duration, choose signature algorithm, and providing or not your Certificate Signing Request (CSR) in case you have your own private key
+The first part of the form allows you to precise its validity duration, choose signature algorithm, and providing or not your Certificate Signing Request (CSR) in case you have your own private key.
 
 - Without providing a private key:
 
