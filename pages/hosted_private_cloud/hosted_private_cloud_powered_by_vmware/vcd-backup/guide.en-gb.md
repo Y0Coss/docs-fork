@@ -1,6 +1,6 @@
 ---
 title: "Public VCF as-a-Service - Backups with Veeam Data Platform"
-excerpt: "Find out how to perform backups and restoration with Veeam (Plug-in) Data Platform / Protection for Public VCF as-a-Service on OVHcloud"
+excerpt: "Find out how to perform backups and restoration with Veeam (Plug-in) Data Platform / Protection for Public VCF as-a-Service"
 updated: 2025-02-24
 ---
 

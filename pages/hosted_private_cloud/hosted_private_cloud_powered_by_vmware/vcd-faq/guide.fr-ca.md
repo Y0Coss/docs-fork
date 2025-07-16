@@ -25,7 +25,7 @@ updated: 2024-10-07
 > > Cependant, notre objectif est de migrer vers Public VCF as-a-Service dès que nous sommes prêts. Nous vous avertirons 1 à 2 semaines avant le début de votre migration, qui sera effectuée sans temps d'arrêt. Si, pour des raisons techniques, une migration à chaud ne peut pas être effectuée, nous discuterons avec vous de la meilleure façon de procéder.
 > > 
 > **Comment migrer mes données vers Public VCF as-a-Service** ? <a name="migrationdata"></a>
-> > Vos données restent sur les *filers* Leclerc v3, nous allons exposer àPublic VCF as-a-Service le stockage comme nous exposons le stockage à vSphere. La migration « en direct » entre deux hôtes avec le même CPU (Intel) se fait via vMotion.
+> > Vos données restent sur les *filers* Leclerc v3, nous allons exposer à Public VCF as-a-Service le stockage comme nous exposons le stockage à vSphere. La migration « en direct » entre deux hôtes avec le même CPU (Intel) se fait via vMotion.
 > >
 > **Puis-je toujours avoir accès à vSphere ESXi et à l’API vCenter avec Public VCF as-a-Service** ? <a name="accessAPI"></a>
 > > Avec Public VCF as-a-Service, vous ne pouvez pas accéder aux API vSphere ESXi et vCenter. Vous aurez accès à l’API de Cloud Director et pourrez utiliser des outils comme [Terraform](https://registry.terraform.io/providers/vmware/vcd/latest/docs).

@@ -1,6 +1,6 @@
 ---
 title: "Public VCF as-a-Service - Sauvegarde avec Veeam Data Platform"
-excerpt: "Découvrez comment effectuer des sauvegardes et des restaurations avec Veeam (Plug-In) Data Platform / Protection pour votre Public VCF as-a-Service managé on OVHcloud"
+excerpt: "Découvrez comment effectuer des sauvegardes et des restaurations avec Veeam (Plug-In) Data Platform / Protection pour votre Public VCF as-a-Service"
 updated: 2025-02-24
 ---
 
@@ -30,7 +30,7 @@ details[open]>summary::before {
     - [Les concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
     - [Comment se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
     - [Comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
-- Avoir une connaissance du fonctionnement de Veeam et de l'impact financier consécutif aux différents paramètres de charge qui s'appliquent lors de la mise en place de cette solution àPublic VCF as-a-Service (cf. grille tarifaire des sauvegardes Veeam Public VCF as-a-Service on OVHcloud disponible via [ce lien](/links/hosted-private-cloud/veeam-managed-backup).
+- Avoir une connaissance du fonctionnement de Veeam et de l'impact financier consécutif aux différents paramètres de charge qui s'appliquent lors de la mise en place de cette solution à Public VCF as-a-Service (cf. grille tarifaire des sauvegardes Veeam Public VCF as-a-Service disponible via [ce lien](/links/hosted-private-cloud/veeam-managed-backup).
 
 ## En pratique
 
@@ -261,7 +261,7 @@ Dans la dernière étape, cliquez sur `Finish`{.action}. Si vous le souhaitez, v
 
 ![VCD_Veeam_restore_vm_3](images/vcd_veeam_restore_vm_3.png){.thumbnail}
 
-Ce processus est simplifié grâce àPublic VCF as-a-Service, Veeam et OVHcloud.
+Ce processus est simplifié grâce à Public VCF as-a-Service, Veeam et OVHcloud.
 
 **Comment restaurer un fichier depuis le plugin Veeam Data Platform Public VCF as-a-Service ?**
 

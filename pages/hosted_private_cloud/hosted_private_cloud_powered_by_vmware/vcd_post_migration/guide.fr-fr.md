@@ -6,13 +6,13 @@ updated: 2025-03-04
 
 ## Objectif
 
-Ce guide explique les étapes nécessaires pour configurer votre environnement après la migration de vos services **VMware vSphere on OVHcloud** vers une offre **Public VCF as-a-Service on OVHcloud**.
+Ce guide explique les étapes nécessaires pour configurer votre environnement après la migration de vos services **VMware vSphere on OVHcloud** vers une offre **Public VCF as-a-Service**.
 
 Ces ajustements sont essentiels pour assurer le bon fonctionnement de vos machines virtuelles (VMs) et de vos réseaux.
 
 ## Prérequis
 
-- Une offre [Public VCF as-a-Service on OVHcloud](/links/hosted-private-cloud/vmware-vcd).
+- Une offre [Public VCF as-a-Service](/links/hosted-private-cloud/vmware-vcd).
 - Être administrateur technique de votre solution [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware).
 - Être connecté à [l'espace client OVHcloud](/links/manager)
 

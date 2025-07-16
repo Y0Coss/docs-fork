@@ -6,13 +6,13 @@ updated: 2024-10-23
 
 ## FAQ
 
-**Find below the most frequently asked questions about Public VCF as-a-Service on OVHcloud**
+**Find below the most frequently asked questions about Public VCF as-a-Service**
 
 > [!faq]
-> **What is Public VCF as-a-Service on OVHcloud**? <a name="VCDonOVH"></a>
+> **What is Public VCF as-a-Service**? <a name="VCDonOVH"></a>
 > > This is a new product available in the VMware on OVHcloud solution, which provides you with a virtual datacentre powered by VMware technology, in addition to a shared infrastructure hosted and operated by OVHcloud.
 > >
-> > Public VCF as-a-Service on OVHcloud will be available in 3 tiers:
+> > Public VCF as-a-Service will be available in 3 tiers:
 > > - Public VCF as-a-Service Standard, providing the standard VMware stack virtualization capabilities.
 > > - Public VCF as-a-Service Advanced, including advanced networking & security capabilities on top of the Standard tier.
 > > - Public VCF as-a-Service Premium, adding high-performance vSAN storage to the Advanced tier.

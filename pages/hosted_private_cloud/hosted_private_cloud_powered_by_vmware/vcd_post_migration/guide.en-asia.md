@@ -6,7 +6,7 @@ updated: 2025-03-04
 
 ## Objective
 
-This guide explains the necessary steps to configure your environment after migrating from your managed **VMware vSphere on OVHcloud** services to a managed **Public VCF as-a-Service on OVHcloud** solution.
+This guide explains the necessary steps to configure your environment after migrating from your managed **VMware vSphere on OVHcloud** services to a managed **Public VCF as-a-Service** solution.
 
 These modifications are essential to ensure the proper functioning of your virtual machines and networks.
 

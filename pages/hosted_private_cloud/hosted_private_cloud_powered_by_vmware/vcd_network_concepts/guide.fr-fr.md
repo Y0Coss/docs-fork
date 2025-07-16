@@ -1,6 +1,6 @@
 ---
 title: "Public VCF as-a-Service - Concepts réseaux et bonnes pratiques"
-excerpt: "Découvrez les puissantes capacités de mise en réseau de Public VCF as-a-Service on OVHcloud avec ce guide complet sur les concepts et fonctionnalités clés"
+excerpt: "Découvrez les puissantes capacités de mise en réseau de Public VCF as-a-Service avec ce guide complet sur les concepts et fonctionnalités clés"
 updated: 2025-03-03
 ---
 
@@ -20,18 +20,18 @@ details[open]>summary::before {
 
 > [!primary]
 >
->Public VCF as-a-Service on OVHcloud est actuellement en phase Alpha. Ce guide peut donc évoluer et être mis à jour à l'avenir avec les avancées de nos équipes en charge de ce produit.
+>Public VCF as-a-Service est actuellement en phase Alpha. Ce guide peut donc évoluer et être mis à jour à l'avenir avec les avancées de nos équipes en charge de ce produit.
 >
 
 ## Objectif
 
-**Ce guide expose les principes et les notions fondamentales du réseau au sein de Public VCF as-a-Service on OVHcloud.**
+**Ce guide expose les principes et les notions fondamentales du réseau au sein de Public VCF as-a-Service.**
 
 ## Prérequis
 
 > [!primary]
 >
-> Si vous ne savez pas comment vous connecter au portail web de votre organisation, consultez d'abord le guide « [Comment se connecter àPublic VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) ».
+> Si vous ne savez pas comment vous connecter au portail web de votre organisation, consultez d'abord le guide « [Comment se connecter à Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) ».
 >
 
 - Un navigateur Web (de préférence un navigateur basé sur Chromium et avec la traduction activée en français).
@@ -44,7 +44,7 @@ details[open]>summary::before {
 
 Dans ce guide d'introduction, nous allons exposer :
 
-- Les différents concepts de mise en réseau au sein de Public VCF as-a-Service on OVHcloud.
+- Les différents concepts de mise en réseau au sein de Public VCF as-a-Service.
 - Les notions d'optimisation de l'espace réseau telles que, par exemple, l'espace IP, les passerelles Edge, les groupes de centres de données.
 
 Pour assurer une infrastructure réseau flexible et sécurisée dans un environnement de cloud polyvalent, Public VCF as-a-Service utilise une architecture de mise en réseau superposée comprenant quatre catégories de réseaux :
@@ -77,7 +77,7 @@ Il contient aussi une section `Réseau`{.action} au sein de chaque vDC dans `Cen
 
 **Capacités de mise en réseau**
 
-Voici les principales fonctionnalités réseau offertes avec les offres Public VCF as-a-Service on OVHcloud.
+Voici les principales fonctionnalités réseau offertes avec les offres Public VCF as-a-Service.
 
 | Features                          | Standard | Advanced | Premium | Comments                                                                                                                                                                                                                        |
 |-----------------------------------|----------|----------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -89,9 +89,9 @@ Voici les principales fonctionnalités réseau offertes avec les offres Public V
 | **Load Balancing.**               |          |          |         | - Non pris en charge avec les fonctionnalités réseau Public VCF as-a-Service natives.                                                                                                                                                               |
 | **Load balancing avancée.**       |          |          |         | - Dans la Roadmap.                                                                                                                                                                                                              |
 
-**Fonctionnalités réseau des offres Public VCF as-a-Service on OVHcloud**
+**Fonctionnalités réseau des offres Public VCF as-a-Service**
 
-Voici un comparatif des 3 offres proposées par Public VCF as-a-Service on OVHcloud.
+Voici un comparatif des 3 offres proposées par Public VCF as-a-Service.
 
 |                   | Advanced Network & Security | vSAN Storage |
 |:-----------------:|:---------------------------:|:------------:|
@@ -99,7 +99,7 @@ Voici un comparatif des 3 offres proposées par Public VCF as-a-Service on OVHcl
 | **Public VCF as-a-ServiceAdvanced.** |              ✅              |       -      |
 | **Public VCF as-a-ServicePremium.**  |              ✅              |      ✅       |
 
-Les fonctionnalités de réseau avancé et de sécurité au sein de Public VCF as-a-Service on OVHcloud ne sont disponibles que dans les offres **Advanced et Premium**.
+Les fonctionnalités de réseau avancé et de sécurité au sein de Public VCF as-a-Service ne sont disponibles que dans les offres **Advanced et Premium**.
 
 ///
 
@@ -156,7 +156,7 @@ Les pools de réseaux doivent être mis en place préalablement aux réseaux vDC
 
 > [!primary]
 >
-> Vous pouvez utiliser une nouvelle façon de gérer votre espace IP dans Public VCF as-a-Service on OVHcloud avec le nouveau sous-système de gestion des espaces IP.
+> Vous pouvez utiliser une nouvelle façon de gérer votre espace IP dans Public VCF as-a-Service avec le nouveau sous-système de gestion des espaces IP.
 >
 > Les passerelles Edge ne peuvent se connecter qu'aux passerelles de fournisseurs utilisant des espaces IP.
 
@@ -169,11 +169,11 @@ Il existe deux types d'espaces IP que vous pouvez utiliser en tant qu'utilisateu
 - **Espace IP public** : un espace IP public est utilisé par plusieurs organisations et est contrôlé par le Fournisseur de services par le biais d'un système basé sur les quotas.
 - **Espace IP privé** : les espaces IP privés sont dédiés à un seul locataire. Un espace IP privé est utilisé uniquement par une organisation spécifiée lors de la création de l'espace IP. Pour cette organisation, la consommation d'adresses IP est illimitée.
 
-![Public VCF as-a-ServiceNetwork IP Prefixe](images/vcd_network_ipspace_banner.png){.thumbnail}
+![Public VCF as-a-Service Network IP Prefixe](images/vcd_network_ipspace_banner.png){.thumbnail}
 
 #### Via l'espace client Public VCF as-a-Service**
 
-![Public VCF as-a-ServiceNetwork IP Prefixe 02](images/vcd_network_ipspace.gif){.thumbnail}
+![Public VCF as-a-Service Network IP Prefixe 02](images/vcd_network_ipspace.gif){.thumbnail}
 
 **Configuration :**
 
@@ -201,7 +201,7 @@ Vous retrouvez les topologies réseau depuis le control panel Public VCF as-a-Se
 
 Les topologies réseau sont utilisées pour configurer les espaces IP afin d'activer le trafic nord-sud.
 
-![Public VCF as-a-ServiceNetwork IP Spaces Topology](images/vcd_network_ip_space_topology.png){.thumbnail}
+![Public VCF as-a-Service Network IP Spaces Topology](images/vcd_network_ip_space_topology.png){.thumbnail}
 
 **Règles de configuration automatique par défaut :**
 
@@ -211,7 +211,7 @@ Les topologies réseau sont utilisées pour configurer les espaces IP afin d'act
 
 Les réseaux de groupe de centres de données sont un type de réseaux vDC d'organisation qui sont partagés entre un ou plusieurs vDC et auxquels les vApp peuvent se connecter.
 
-![Public VCF as-a-ServiceNetwork Datacenter Groups Overview Gif](images/vcd_network_datacenter-groups_overview.gif){.thumbnail}
+![Public VCF as-a-Service Network Datacenter Groups Overview Gif](images/vcd_network_datacenter-groups_overview.gif){.thumbnail}
 
 Lors de la création d'un réseau, vous pouvez rejoindre votre groupe de centres de données, ce qui permettra ainsi de fournir la connectivité aux vApp/VM de tous les VDC participants.
 
@@ -219,13 +219,13 @@ Lors de la création d'un réseau, vous pouvez rejoindre votre groupe de centres
 
 Il est aussi possible de les synchroniser. Cette action de synchronisation vérifiera tous les vDC associés pour s'assurer qu'ils sont toujours réalisés et correctement configurés.
 
-![Public VCF as-a-ServiceNetwork Datacenter Groups Sync](images/vcd_network_datacenter-groups_sync.png){.thumbnail}
+![Public VCF as-a-Service Network Datacenter Groups Sync](images/vcd_network_datacenter-groups_sync.png){.thumbnail}
 
 **Création ou import de réseau dans le groupe de centre de données (optionnel)**
 
-![Public VCF as-a-ServiceNetwork Datacenter Groups Network Creation](images/vcd_network_datacenter-groups_network_creation.png){.thumbnail}
+![Public VCF as-a-Service Network Datacenter Groups Network Creation](images/vcd_network_datacenter-groups_network_creation.png){.thumbnail}
 
-![Public VCF as-a-ServiceNetwork Datacenter Groups Network Import](images/vcd_network_datacenter-groups_network_import.png){.thumbnail}
+![Public VCF as-a-Service Network Datacenter Groups Network Import](images/vcd_network_datacenter-groups_network_import.png){.thumbnail}
 
 Les passerelles Edge (obligatoire)**
 
@@ -233,7 +233,7 @@ La passerelle Edge de Public VCF as-a-Service permet à un réseau vDC d'organis
 
 Public VCF as-a-Serviceprend en charge les passerelles Edge `IPv4 et IPv6`.
 
-![Public VCF as-a-ServiceNetwork Edge Overview Gif](images/vcd_network_edge_overview.gif)
+![Public VCF as-a-Service Network Edge Overview Gif](images/vcd_network_edge_overview.gif)
 
 **Mode DHCP (optionnel)**
 
@@ -250,13 +250,13 @@ DHCP automatise l'attribution d'adresses IP aux machines virtuelles connectées 
 - **Relay :** les messages DHCP sont relayés depuis les machines virtuelles vers les serveurs DHCP désignés dans votre infrastructure DHCP physique.
 - **Passerelle :** le service DHCP de la passerelle Edge est utilisé pour obtenir les IP DHCP.
 
-![Public VCF as-a-ServiceNetwork DHCP Activation](images/vcd_network_dhcp.png)
+![Public VCF as-a-Service Network DHCP Activation](images/vcd_network_dhcp.png)
 
 **Réseaux vApp (concept)**
 
 Les réseaux vApp permettent aux machines virtuelles de communiquer entre elles ou, en se connectant à un réseau vDC d'organisation, avec des machines virtuelles dans d'autres vApps.
 
-![Public VCF as-a-ServiceNetwork vApp Network Gif](images/vcd_network_vapp.gif)
+![Public VCF as-a-Service Network vApp Network Gif](images/vcd_network_vapp.gif)
 
 ///
 
@@ -264,7 +264,7 @@ Les réseaux vApp permettent aux machines virtuelles de communiquer entre elles 
 
 /// details | Quelles sont les limitations réseau connues ?
 
-D'un point de vue général, les seules limitations que vous pouvez retrouver au sein de Public VCF as-a-Service on OVHcloud sont celles d'un service managé.
+D'un point de vue général, les seules limitations que vous pouvez retrouver au sein de Public VCF as-a-Service sont celles d'un service managé.
 
 Un peu moins de granularité est offerte en matière de configuration bas niveau.
 
@@ -272,7 +272,7 @@ Bien sûr, cela peut avoir un impact sur les fonctionnalités avancées en mati�
 
 **Limitations VPN IPsec**
 
-Lors de l'ajout d'un tunnel IPsec, le paramètre d'ajout d'une session IPSEC basée sur une route (route based IPsec tunnel) n'est pas supporté au sein de Public VCF as-a-Service on OVHcloud à ce jour (voir : [docs > VMware NSX > Guide d'administration de NSX > Ajout d'une session IPSec basée sur une route](<https://knowledge.broadcom.com/external/article/319147/vmware-cloud-director-nsx-feature-suppor.html>))
+Lors de l'ajout d'un tunnel IPsec, le paramètre d'ajout d'une session IPSEC basée sur une route (route based IPsec tunnel) n'est pas supporté au sein de Public VCF as-a-Service à ce jour (voir : [docs > VMware NSX > Guide d'administration de NSX > Ajout d'une session IPSec basée sur une route](<https://knowledge.broadcom.com/external/article/319147/vmware-cloud-director-nsx-feature-suppor.html>))
 
 **Limitation passerelles de fournisseur (provider gateway)**
 
@@ -280,29 +280,29 @@ Les passerelles de fournisseur sont clairement visibles, mais ne peuvent pas êt
 
 **Limitation NSX**
 
-Vous ne disposez pas de l'accès au control panel NSX pour votre Hosted Private Public VCF as-a-Service on OVHcloud.
+Vous ne disposez pas de l'accès au control panel NSX pour votre Hosted Private Public VCF as-a-Service.
 
 **Limitation Load Balancer**
 
-Les fonctionnalités de Load Balancing au sein de Public VCF as-a-Service on OVHcloud ne sont pas disponibles pour le moment.
+Les fonctionnalités de Load Balancing au sein de Public VCF as-a-Service ne sont pas disponibles pour le moment.
 
 **Limitation IAM**
 
-À ce jour, IAM n'est pas disponible au sein de Public VCF as-a-Service on OVHcloud.
+À ce jour, IAM n'est pas disponible au sein de Public VCF as-a-Service.
 
 ///
 
 ## Aller plus loin
 
-Vous pouvez maintenant suivre les étapes du guide suivant : [« Guide 2 - Public VCF as-a-Service on OVHcloud - Network - Créer des composants réseau via le control panel Public VCF as-a-Service on OVHcloud »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
+Vous pouvez maintenant suivre les étapes du guide suivant : [« Guide 2 - Public VCF as-a-Service - Network - Créer des composants réseau via le control panel Public VCF as-a-Service »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
 
-**Networking pour Public VCF as-a-Service on OVHcloud - Index des guides** :
+**Networking pour Public VCF as-a-Service - Index des guides** :
 
-- Guide 1 : « Public VCF as-a-Service on OVHcloud - Network - Concepts »
-- Guide 2 : « [Public VCF as-a-Service on OVHcloud - Network - Créer des composants réseau via le control panel Public VCF as-a-Service on OVHcloud »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
-- **Bientôt disponible** : « Guide 3 : Public VCF as-a-Service on OVHcloud - Network - Comment créer un tunnel IPsec avec Public VCF as-a-Service on OVHcloud ? »
-- **Bientôt disponible** : « Guide 4 : Public VCF as-a-Service on OVHcloud - Network - Comment exploiter un bloc IP avec Public VCF as-a-Service on OVHcloud ? »
-- **Bientôt disponible** : « Guide 5 : Public VCF as-a-Service on OVHcloud - Network - Comment utiliser le distributed firewalling (East - Ouest) ? »
+- Guide 1 : « Public VCF as-a-Service - Network - Concepts »
+- Guide 2 : « [Public VCF as-a-Service - Network - Créer des composants réseau via le control panel Public VCF as-a-Service »](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
+- **Bientôt disponible** : « Guide 3 : Public VCF as-a-Service - Network - Comment créer un tunnel IPsec avec Public VCF as-a-Service ? »
+- **Bientôt disponible** : « Guide 4 : Public VCF as-a-Service - Network - Comment exploiter un bloc IP avec Public VCF as-a-Service ? »
+- **Bientôt disponible** : « Guide 5 : Public VCF as-a-Service - Network - Comment utiliser le distributed firewalling (East - Ouest) ? »
 
 **Notions réseau OVHcloud utiles**
 

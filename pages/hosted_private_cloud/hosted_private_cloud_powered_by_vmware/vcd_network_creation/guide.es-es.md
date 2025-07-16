@@ -35,11 +35,11 @@ details[open]>summary::before {
 >
 
 - A web browser (with a preference of chromium based one, and translation enabled in English).
-- A Public VCF as-a-Service on OVHcloud (Alpha phase) account with sufficient rights.
+- A Public VCF as-a-Service (Alpha phase) account with sufficient rights.
 
 You need to have read the Public VCF as-a-Service guides:
 
-- [Public VCF as-a-Service - Networking - Network concepts Public VCF as-a-Service on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
+- [Public VCF as-a-Service - Networking - Network concepts Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
 - [Public VCF as-a-Service - The fundamentals of Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts).
 - [Public VCF as-a-Service - Connect to your organization](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
@@ -60,13 +60,13 @@ Before creating a network, the main concept to understand with Public VCF as-a-S
 > You can use a new method of managing your IP space in Public VCF as-a-Service with the new IP space management subsystem.
 >
 
-/// details | How to create an IP space with Public VCF as-a-Service on OVHcloud?
+/// details | How to create an IP space with Public VCF as-a-Service?
 
 To connect to your Public VCF as-a-Service environment, follow the guide: [How to connect to Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
 1\. Next, click `Network`{.action} > `IP Spaces`{.action} > `New`{.action}.
 
-![Public VCF as-a-ServiceNetworking IP Spaces](images/ESPACE_IP.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces](images/ESPACE_IP.png){.thumbnail}
 
 You will find the window for creating **an IP space** for your network, and choose the name you want:
 
@@ -75,11 +75,11 @@ You will find the window for creating **an IP space** for your network, and choo
 - **Name**: `IP Space 01`.
 - **Description**: `Private > Public IP Space`.
 
-![Public VCF as-a-ServiceNetworking IP Spaces 01](images/ESPACE_IP_1_1.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 01](images/ESPACE_IP_1_1.png){.thumbnail}
 
 2\. Leave the following options disabled for now.
 
-![Public VCF as-a-ServiceNetworking IP Spaces 02](images/ESPACE_IP_2.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 02](images/ESPACE_IP_2.png){.thumbnail}
 
 3\. Choose the perimeter (ported/extended), (internal/external), with which you want to access your network:
 
@@ -88,7 +88,7 @@ You will find the window for creating **an IP space** for your network, and choo
 
 Then click `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking IP Spaces 03](images/ESPACE_IP_3.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 03](images/ESPACE_IP_3.png){.thumbnail}
 
 The IP ranges must correspond to the internal scope of this IP space (the range of IPs you want to make available for your machines).
 
@@ -98,7 +98,7 @@ Example: `172.19.0.2-172.19.0.100`.
 
 Then click `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking IP Spaces 04](images/ESPACE_IP_4.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 04](images/ESPACE_IP_4.png){.thumbnail}
 
 IP prefixes must match the internal scope of this IP space:
 
@@ -108,19 +108,19 @@ Then add your sequences and prefixes.
 
 Example: `10.0.0.0/23 | 1`.
 
-You can increase or decrease your number of prefixes with the (up/down) arrow: ![Public VCF as-a-ServiceNetworking Arrow](images/ESPACE_IP_5_arrow.png)
+You can increase or decrease your number of prefixes with the (up/down) arrow: ![Public VCF as-a-Service Networking Arrow](images/ESPACE_IP_5_arrow.png)
 
 The sequence addition is automatically added as a preview if it is conclusive.
 
-![Public VCF as-a-ServiceNetworking IP Spaces 05](images/ESPACE_IP_5.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 05](images/ESPACE_IP_5.png){.thumbnail}
 
 Click `NEXT`{.action} to complete step 5.
 
 6\. The final section is a thorough review of all the settings you have made. You can then check and confirm your choice by clicking on the button `FINISH`{.action}.
 
-![Public VCF as-a-ServiceNetworking IP Spaces 06](images/ESPACE_IP_6.png){.thumbnail}
+![Public VCF as-a-Service Networking IP Spaces 06](images/ESPACE_IP_6.png){.thumbnail}
 
-Next, we will move on to the Public VCF as-a-Service section `VCD`{.action} > `Network`{.action} > `IP Space`{.action} and/or `Public VCF as-a-ServiceNetwork`{.action} > `Network`{.action}.
+Next, we will move on to the Public VCF as-a-Service section `VCD`{.action} > `Network`{.action} > `IP Space`{.action} and/or `VCD Network`{.action} > `Network`{.action}.
 
 ///
 
@@ -143,31 +143,31 @@ Go to the Networking section by clicking `Networking` > `Data Center Groups`{.ac
 
 Then click on `NEW`{.action}.
 
-![Public VCF as-a-ServiceNetworking Data Center Groups 00](images/DATA_CENTER_GROUPS_00.png){.thumbnail}
+![Public VCF as-a-Service Networking Data Center Groups 00](images/DATA_CENTER_GROUPS_00.png){.thumbnail}
 
 Select a vDC that will be part of the group. When you select a startup vDC, you can create a group in which this vDC can participate.
 
 1\. Choose the vDC you want, then click on `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking Data Center Groups 01](images/DATA_CENTER_GROUPS_01.png){.thumbnail}
+![Public VCF as-a-Service Networking Data Center Groups 01](images/DATA_CENTER_GROUPS_01.png){.thumbnail}
 
 2\. In section 2, choose the name of your datacentre group and a short description, then click on `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking Data Center Groups 02](images/DATA_CENTER_GROUPS_02.png){.thumbnail}
+![Public VCF as-a-Service Networking Data Center Groups 02](images/DATA_CENTER_GROUPS_02.png){.thumbnail}
 
 3\. Next, select the additional vDCs that you want to be part of the group, then click on `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking Data Center Groups 03](images/DATA_CENTER_GROUPS_03.png){.thumbnail}
+![Public VCF as-a-Service Networking Data Center Groups 03](images/DATA_CENTER_GROUPS_03.png){.thumbnail}
 
 Finally, click on `FINISH`{.action}.
 
-![Public VCF as-a-ServiceNetworking Data Center Groups 04](images/DATA_CENTER_GROUPS_04.png){.thumbnail}
+![Public VCF as-a-Service Networking Data Center Groups 04](images/DATA_CENTER_GROUPS_04.png){.thumbnail}
 
 ///
 
 ### Step 3 - Create an Edge Gateway (optional)
 
-/// details | How do I create an Edge Gateway with Public VCF as-a-Service on OVHcloud?
+/// details | How do I create an Edge Gateway with Public VCF as-a-Service?
 
 This step is necessary, otherwise you will not be able to finish creating your network in step 3.
 
@@ -177,7 +177,7 @@ To access the Edge Gateways section, click on `Networking > Edge Gateways`{.acti
 
 To create a new Edge Gateway, click on `NEW`{.action}.
 
-![Public VCF as-a-ServiceNetworking Edge Gateway 00](images/EDGE_GATEWAY.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 00](images/EDGE_GATEWAY.png){.thumbnail}
 
 Here, you will see the window for creating an **Edge Gateway** for your Public VCF as-a-Service environment:
 
@@ -188,9 +188,9 @@ You can then choose between: `Organization Virtual Data Center`{.action} or `Dat
 
 1\. Choose `Organization Virtual Data Center`{.action} or `Data Center Group`{.action} to select the virtual datacentre with which you want to install your new **Edge Gateway**.
 
-![Public VCF as-a-ServiceNetworking Edge Gateway 01](images/EDGE_GATEWAY_1-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 01](images/EDGE_GATEWAY_1-optimized.png){.thumbnail}
 
-![Public VCF as-a-ServiceNetworking Edge Gateway 01_1](images/EDGE_GATEWAY_1_1-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 01_1](images/EDGE_GATEWAY_1_1-optimized.png){.thumbnail}
 
 2\. After the general section, you can name your **edge gateway** in any way you want:
 
@@ -211,9 +211,9 @@ Choose the default gateway for your vDC provider: `graveline-gateway`{.action}.
 
 Once you have chosen (step 3: Create an Edge Gateway), click `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking Edge Gateway 02](images/EDGE_GATEWAY_2-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 02](images/EDGE_GATEWAY_2-optimized.png){.thumbnail}
 
-![Public VCF as-a-ServiceNetworking Edge Gateway 03](images/EDGE_GATEWAY_3-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 03](images/EDGE_GATEWAY_3-optimized.png){.thumbnail}
 
 4\. Choose the Edge Cluster option to create this provider Edge Gateway:
 
@@ -221,19 +221,19 @@ The parameter: `Use the Tier-0 Gateway provider edge cluster`{.action} means tha
 
 When you have chosen your settings (step 4), click on `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking Edge Gateway 04](images/EDGE_GATEWAY_4-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 04](images/EDGE_GATEWAY_4-optimized.png){.thumbnail}
 
 Once you have added the settings, you can check that everything is correct in section 5: `Ready to Complete`{.action}.
 
 Finally, (step 5: Create an Edge Gateway) click on `FINISH`{.action}.
 
-![Public VCF as-a-ServiceNetworking Edge Gateway 05](images/EDGE_GATEWAY_5-optimized.png){.thumbnail}
+![Public VCF as-a-Service Networking Edge Gateway 05](images/EDGE_GATEWAY_5-optimized.png){.thumbnail}
 
 ///
 
 ### Step 4 - Create a private network
 
-/// details | How do I create a network with Public VCF as-a-Service on OVHcloud?
+/// details | How do I create a network with Public VCF as-a-Service?
 
 We will now create a new network and attach our preconfigured settings.
 
@@ -241,7 +241,7 @@ Go to the Networking section by clicking `Networking`{.action} > `Networks`{.act
 
 Then click on `NEW`{.action}.
 
-![Public VCF as-a-ServiceNetworking Network 00](images/NETWORK_0.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 00](images/NETWORK_0.png){.thumbnail}
 
 1\. You will find this after the Scope 1 section.
 
@@ -252,9 +252,9 @@ You can choose between:
 
 Select **the vDC Virtual Datacenter Organization** or the **Datacenter Group** in the scope in which you want to create your network.
 
-![Public VCF as-a-ServiceNetworking Network 01](images/NETWORK_1.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 01](images/NETWORK_1.png){.thumbnail}
 
-![Public VCF as-a-ServiceNetworking Network 01_1](images/NETWORK_1_1.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 01_1](images/NETWORK_1_1.png){.thumbnail}
 
 Next, select the type of network you want to create.
 
@@ -280,7 +280,7 @@ You can either create another **"Edge Gateway"**, or use the **"Datacenter Group
 
 The **Routed** (through an "ovh-Edge-GW-GRA" Edge Gateway) type of network provides controlled access to machines and networks outside of the vDC or vDC group through an edge gateway.
 
-![Public VCF as-a-ServiceNetworking Network 02](images/NETWORK_2.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 02](images/NETWORK_2.png){.thumbnail}
 
 2\. In the `Edge Gateways`{.action} section, you will see your previously created Edge gateway: `ovh-Edge-gra-demo`.
 
@@ -292,7 +292,7 @@ Choose your **Edge Gateway** by clicking on the available round button (white) t
 
 To conclude, click on `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking Network 03](images/NETWORK_3.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 03](images/NETWORK_3.png){.thumbnail}
 
 3\. In the general section, you can add the name of your network, a description, and the IP space created earlier.
 
@@ -311,7 +311,7 @@ We don't need IPv6 at all, so we choose to leave this option disabled.
 
 To continue (step 3: Create a private network), click on `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking Network 04](images/NETWORK_4.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 04](images/NETWORK_4.png){.thumbnail}
 
 4\. Here, you can allocate your network’s IP range. We choose to allocate 98 IPs:
 
@@ -328,7 +328,7 @@ As well as at the beginning and end of your 2 IPs, ->**172.16.1.2**<- and ->**17
 
 To continue, click on `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking Network 05](images/NETWORK_5.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 05](images/NETWORK_5.png){.thumbnail}
 
 5\. In the fifth section, add the DNS servers for your network.
 
@@ -344,7 +344,7 @@ But you can leave those used by default in the Hosted Private Cloud VMware on OV
 
 To continue with step 5 (creating a private network), click on `NEXT`{.action}.
 
-![Public VCF as-a-ServiceNetworking Network 06](images/NETWORK_6.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 06](images/NETWORK_6.png){.thumbnail}
 
 6\. (Optional) Segment profile templates can be defined here.
 
@@ -369,7 +369,7 @@ To configure Promiscuous or Allow-DHCP mode:
 3. In the `Segment Profiles`{.action} section, click `Edit`{.action}
 4. Choose the appropriate profile
 
-![Public VCF as-a-ServiceNetworking Network 06](images/NETWORK_6_1.png){.thumbnail}
+![Public VCF as-a-Service Networking Network 06](images/NETWORK_6_1.png){.thumbnail}
 
 | Setting               | Promiscuous mode                          | Allow-DHCP mode                              |
 |----------------------|-------------------------------------------|---------------------------------------------|
@@ -398,9 +398,9 @@ Your network is now fully created and ready to use.
 
 You can now follow the steps of the next guide :
 
-- **Coming soon:** Guide 3 - Public VCF as-a-Service on OVHcloud - Network - How to create an IPsec tunnel with Public VCF as-a-Service on OVHcloud ?
+- **Coming soon:** Guide 3 - Public VCF as-a-Service - Network - How to create an IPsec tunnel with Public VCF as-a-Service?
 
-If you experience any network issues within Public VCF as-a-Service on OVHcloud, please read our guide « [Public VCF as-a-Service on OVHcloud - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) »
+If you experience any network issues within Public VCF as-a-Service, please read our guide « [Public VCF as-a-Service - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) »
 
 If you require training or technical assistance in implementing our solutions, contact your sales representative or [click here](/links/professional-services) for a quote and request a custom analysis of your project from our Professional Services team experts.
 
