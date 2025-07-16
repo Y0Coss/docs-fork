@@ -5,7 +5,7 @@ updated: 2025-07-15
 
 ## Objectif
 
-Ce document décrit la politique de réversibilité du produit Managed Mutualized Virtualization correspondant à l’offre commerciale d’OVHcloud VMware Cloud Director.
+Ce document décrit la politique de réversibilité du produit Managed Mutualized Virtualization correspondant à l’offre commerciale d’OVHcloud Public VCF-as-a-Service.
 
 Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
@@ -21,7 +21,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Images VM standards  | Import et export d’images VM aux formats standards pris en charge par l’hyperviseur OVF | OVF | **Entrante** : import d’images via l’API ou l’interface utilisateur <br>**Sortante** : export des images VM, réutilisables sur tout environnement compatible | [Les concepts fondamentaux de VCD ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) <br><br>[VMware Cloud Director - Migration depuis VMware vSphere on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases) <br><br>[OVF Tool](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool) |
+| Images VM standards  | Import et export d’images VM aux formats standards pris en charge par l’hyperviseur OVF | OVF | **Entrante** : import d’images via l’API ou l’interface utilisateur <br>**Sortante** : export des images VM, réutilisables sur tout environnement compatible | [Les concepts fondamentaux de Public VCF-as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) <br><br>[Public VCF-as-a-Service - Migration depuis VMware vSphere on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases) <br><br>[OVF Tool](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool) |
 
 ### 2 - Implémentations OVHcloud
 
@@ -34,8 +34,8 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Gestion des réseaux virtuels | Configuration réseaux (subnets) spécifique à OVHcloud | NA | **Entrante** : adaptation des configurations réseau à l’environnement OVHcloud <br>**Sortante** : pas d'export possible des configurations. Prendre note de l’architecture et la reproduire dans l’environnement cible | [VMware Cloud Director - Concepts réseaux et bonnes pratiques](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) <br><br>[VMware Cloud Director - Création de composants réseaux via Public VCF as-a-Service]() |
-| Administration et monitoring | Gestion des règles de sécurité, des utilisateurs, des groupes et surveillance de l’infrastructure| NA | **Entrante** : interfaces et fonctionnalités disponible par défaut <br> **Sortante** : l’export des règles n’est pas possible. Commande et configuration des outils dans l’environnement cible | [Les concepts fondamentaux de VCD ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)<br><br>[VMware Cloud Director - Découvrez comment utiliser l'interface utilisateur de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started) |
+| Gestion des réseaux virtuels | Configuration réseaux (subnets) spécifique à OVHcloud | NA | **Entrante** : adaptation des configurations réseau à l’environnement OVHcloud <br>**Sortante** : pas d'export possible des configurations. Prendre note de l’architecture et la reproduire dans l’environnement cible | [Public VCF-as-a-Service - Concepts réseaux et bonnes pratiques](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) <br><br>[Public VCF-as-a-Service - Création de composants réseaux via Public VCF as-a-Service]() |
+| Administration et monitoring | Gestion des règles de sécurité, des utilisateurs, des groupes et surveillance de l’infrastructure| NA | **Entrante** : interfaces et fonctionnalités disponible par défaut <br> **Sortante** : l’export des règles n’est pas possible. Commande et configuration des outils dans l’environnement cible | [Les concepts fondamentaux de Public VCF-as-a-Service ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)<br><br>[Public VCF-as-a-Service - Découvrez comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started) |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud | N/A | **Entrante** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise <br> **Sortante** : Commande et configuration d'une solution anti-DDoS auprès du nouveau fournisseur | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
