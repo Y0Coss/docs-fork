@@ -1,6 +1,6 @@
 ---
 title: "Public VCF as-a-Service - Création d'une nouvelle machine virtuelle"
-excerpt: "Comment créer une nouvelle machine virtuelle dansPublic VCF as-a-Service"
+excerpt: "Comment créer une nouvelle machine virtuelle dans Public VCF as-a-Service"
 updated: 2024-05-23
 ---
 
@@ -22,7 +22,7 @@ Ce guide vous détaille comment créer votre première machine virtuelle (VM) de
 
 Pour créer votre machine virtuelle, accédez d'abord au datacenter où vous prévoyez de la déployer. Ensuite, naviguez vers la section `Calculer`{.action} > `Machines Virtuelles`{.action} > `Nouvelle VM`{.action}.
 
-![dashboardPublic VCF as-a-Service](images/vcd-dashboard-vcd.png){.thumbnail}
+![dashboard Public VCF as-a-Service](images/vcd-dashboard-vcd.png){.thumbnail}
 
 ![dashboard vm](images/vcd-vm-dashboad.png){.thumbnail}
 
@@ -58,7 +58,7 @@ La liste déroulante **« Mode IP »** vous propose différents modes d'attribut
 - **Statique (Manuel)** : vous devez définir l'IP manuellement.
 
 > [!warning]
-> Attention, ce mode IP vous permet uniquement d'organiser votre inventairePublic VCF as-a-Service mais vous devrez tout de même configurer l'adresse IP statique (ou DHCP) à l'intérieur même de la VM.
+> Attention, ce mode IP vous permet uniquement d'organiser votre inventaire Public VCF as-a-Service mais vous devrez tout de même configurer l'adresse IP statique (ou DHCP) à l'intérieur même de la VM.
 >
 
 En ce qui concerne la section `Stratégies de stockage`{.action}, vous ne trouverez qu'une seule possibilité : la politique de stockage par défaut de vSAN.

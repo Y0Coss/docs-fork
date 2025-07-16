@@ -1,12 +1,12 @@
 ---
-title: "Technical capabilities and limitations of Public VCF aaS (aka ManagedPublic VCF as-a-Service)"
-excerpt: "Learn about the technical capabilities and limitations of Public VCF aaS (aka ManagedPublic VCF as-a-Service)"
+title: "Technical capabilities and limitations of Public VCF aaS (aka Public VCF as-a-Service)"
+excerpt: "Learn about the technical capabilities and limitations of Public VCF aaS (aka Public VCF as-a-Service)"
 updated: 2025-05-13
 ---
 
 ## Objective
 
-**This guide explains the technical capabilities and limitations of Public VCF aaS (aka ManagedPublic VCF as-a-Service), including resource constraints and configuration restrictions.**
+**This guide explains the technical capabilities and limitations of Public VCF aaS (aka Public VCF as-a-Service), including resource constraints and configuration restrictions.**
 
 ## Requirements
 
@@ -15,7 +15,7 @@ Before getting started, review the following guides to better understand Public 
 - [Public VCF as-a-Service - Fundamental Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
 - [Public VCF as-a-Service - Network Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts)
 - [Creating a VM on Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
-- [Creating network components viaPublic VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
+- [Creating network components via Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
 
 
 ## Instructions

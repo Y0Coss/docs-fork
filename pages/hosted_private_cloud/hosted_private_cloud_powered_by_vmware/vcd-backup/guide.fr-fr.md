@@ -1,6 +1,6 @@
 ---
 title: "Public VCF as-a-Service - Sauvegarde avec Veeam Data Platform"
-excerpt: "Découvrez comment effectuer des sauvegardes et des restaurations avec Veeam (Plug-In) Data Platform / Protection pour votrePublic VCF as-a-Service managé on OVHcloud"
+excerpt: "Découvrez comment effectuer des sauvegardes et des restaurations avec Veeam (Plug-In) Data Platform / Protection pour votre Public VCF as-a-Service managé on OVHcloud"
 updated: 2025-02-24
 ---
 
@@ -20,21 +20,21 @@ details[open]>summary::before {
 
 ## Objectif
 
-**Ce guide vous décrit les solutions de sauvegarde et de restauration du pluginPublic VCF as-a-Service Veeam Data Platform.**
+**Ce guide vous décrit les solutions de sauvegarde et de restauration du plugin Public VCF as-a-Service Veeam Data Platform.**
 
 ## Prérequis
 
-- Un compte vCloud Director administrateur avec une OrganisationPublic VCF as-a-Service
+- Un compte vCloud Director administrateur avec une organisation Public VCF as-a-Service
 - Un utilisateur avec le rôle Administrateur de l'organisation pour vous connecter au portail en libre-service Veeam Data Platform (le nouvel utilisateur admin d'un datacenter virtuel a le rôle par défaut).
-- Avoir pris connaissances des guidesPublic VCF as-a-Service :
+- Avoir pris connaissances des guides Public VCF as-a-Service :
     - [Les concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
     - [Comment se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
     - [Comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
-- Avoir une connaissance du fonctionnement de Veeam et de l'impact financier consécutif aux différents paramètres de charge qui s'appliquent lors de la mise en place de cette solution àPublic VCF as-a-Service (cf. grille tarifaire des sauvegardes VeeamPublic VCF as-a-Service on OVHcloud disponible via [ce lien](/links/hosted-private-cloud/veeam-managed-backup).
+- Avoir une connaissance du fonctionnement de Veeam et de l'impact financier consécutif aux différents paramètres de charge qui s'appliquent lors de la mise en place de cette solution àPublic VCF as-a-Service (cf. grille tarifaire des sauvegardes Veeam Public VCF as-a-Service on OVHcloud disponible via [ce lien](/links/hosted-private-cloud/veeam-managed-backup).
 
 ## En pratique
 
-Veeam Data Platform accompagnePublic VCF as-a-Service. Il utilise l'API Public VCF as-a-Service pour sauvegarder les vApps et les VMs et les restaurer directement dans la hiérarchie Public VCF as-a-Service.
+Veeam Data Platform accompagne Public VCF as-a-Service. Il utilise l'API Public VCF as-a-Service pour sauvegarder les vApps et les VMs et les restaurer directement dans la hiérarchie Public VCF as-a-Service.
 
 Le service Veeam Data Platform est disponible et prêt à l'emploi pour les 3 offres OVHcloud (voir le [catalogue des fonctionnalités](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features)).
 
@@ -44,42 +44,42 @@ Le service Veeam Data Platform est disponible et prêt à l'emploi pour les 3 of
 >
 > Si vous utilisez le traitement d'images supportant les applications pour les sauvegardes de base de données MS SQL ou Oracle, les options compatibles avec les applications et restaurations d'éléments ne seront pas prises en charge. Une restauration complète de la machine virtuelle doit être réalisée, cela implique une fenêtre de temps d'arrêt pour tous les utilisateurs de la base de données. Il est impossible de relancer manuellement un échec de sauvegarde immuable. Vous devez exécuter une sauvegarde complète active ou attendre l'exécution de la prochaine sauvegarde planifiée (consultez la [documentation Veeam pour en savoir plus](https://helpcenter.veeam.com/docs/backup/vsphere/vcloud_manage_backup.html?ver=120)).
 >
-> La console VeeamPublic VCF as-a-Service est à ce jour disponible uniquement en anglais.
+> La console Veeam Public VCF as-a-Service est à ce jour disponible uniquement en anglais.
 >
 
 ### Étape 1 - Sauvegarder avec Veeam Data Platform
 
-Le service **Veeam Data Platform** dispose d’un pluginPublic VCF as-a-Service pour sauvegarder des VMs et des vApp à partir de n’importe quel Virtual Data Center (VDC) de l’organisation. Il est disponible au niveau de l'organisation pour tout utilisateur Public VCF as-a-Service ayant le rôle d'administrateur de l'organisation.
+Le service **Veeam Data Platform** dispose d’un plugin Public VCF as-a-Service pour sauvegarder des VMs et des vApp à partir de n’importe quel Virtual Data Center (VDC) de l’organisation. Il est disponible au niveau de l'organisation pour tout utilisateur Public VCF as-a-Service ayant le rôle d'administrateur de l'organisation.
 
 /// details | Accéder à la console d'administration Veeam Data Platform
 
-Lorsque vous utilisez l'intégrationPublic VCF as-a-Service Protection des données avec Veeam pour créer des tâches de sauvegarde, vous pouvez choisir n'importe quelle instance de machine virtuelle à partir de n'importe quel datacenter virtuel de l'organisation.
+Lorsque vous utilisez l'intégration Public VCF as-a-Service Protection des données avec Veeam pour créer des tâches de sauvegarde, vous pouvez choisir n'importe quelle instance de machine virtuelle à partir de n'importe quel datacenter virtuel de l'organisation.
 
-Pour accéder au Portail Protection des données avec Veeam depuis Cloud Director, connectez-vous au portail clientPublic VCF as-a-Service avec un compte vCloud Director disposant des droits appropriés.
+Pour accéder au Portail Protection des données avec Veeam depuis Cloud Director, connectez-vous au portail client Public VCF as-a-Service avec un compte vCloud Director disposant des droits appropriés.
 
 Dans le menu de la barre centrale supérieure, cliquez sur `Plus`{.action} et sélectionnez `Protection des données avec Veeam`{.action}
 
-![Public VCF as-a-Serviceaccess to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
+![Public VCF as-a-Service access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
-La fenêtre du Plugin VeeamPublic VCF as-a-Service s'ouvrira avec un bandeau gris/noir.
+La fenêtre du Plugin Veeam Public VCF as-a-Service s'ouvrira avec un bandeau gris/noir.
 
-![Public VCF as-a-Serviceaccess to Veeam Backup](images/vcd_veeam_backup_repo_2.png){.thumbnail}
+![Public VCF as-a-Service access to Veeam Backup](images/vcd_veeam_backup_repo_2.png){.thumbnail}
 
 #### Repository
 
 Par défaut, vous disposez des *repositories* (dépôts) suivants :
 
-- **Bronze Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un bucket le plus proche de votre environnementPublic VCF as-a-Service.
-- **Silver Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-Out Backup Repository) avec des buckets de niveau de performance plus proches de votre environnementPublic VCF as-a-Service et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
+- **Bronze Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un bucket le plus proche de votre environnement Public VCF as-a-Service.
+- **Silver Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-Out Backup Repository) avec des buckets de niveau de performance plus proches de votre environnement Public VCF as-a-Service et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
 - **Gold Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage High performance](/links/public-cloud/object-storage). Il inclut les options précédentes + OVHcloud Object Storage "High performance".
 
 Depuis votre espace client, vous pouvez activer le `Gold Repository`.
 
 Tous ces repositories ont un quota de stockage de 100 To. Vous pouvez contacter les [équipes de support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
 
-Voici un exemple de site primaire et de destination utilisés pour la copie VeeamPublic VCF as-a-Service des sauvegardes hors site (dans les offres **Advanced/Premium**) :
+Voici un exemple de site primaire et de destination utilisés pour la copie Veeam Public VCF as-a-Service des sauvegardes hors site (dans les offres **Advanced/Premium**) :
 
-![Public VCF as-a-ServiceVeeam 4Public VCF as-a-Service Sites](images/vcd_veeam_zones.png){.thumbnail}
+![Public VCF as-a-Service Veeam 4 Sites](images/vcd_veeam_zones.png){.thumbnail}
 
 - `Bronze Repository` : Roubaix
 - `Silver Repository` : Roubaix -> Strasbourg
@@ -139,35 +139,35 @@ Pour les machines virtuelles gérées par Public VCF as-a-Service, Veeam Backup 
 
 **Comment créer une tâche de sauvegarde avec Veeam Data Platform ?**
 
-Vous allez créer votre premiere tâche de sauvegarde depuis le pluginPublic VCF as-a-Service Veeam Data Platform  :
+Vous allez créer votre premiere tâche de sauvegarde depuis le plugin Public VCF as-a-Service Veeam Data Platform  :
 
-Dans la consolePublic VCF as-a-Service Veeam, cliquez sur `Plus`{.action} et sélectionnez `Protection des données avec Veeam`{.action}
+Dans la console Public VCF as-a-Service Veeam, cliquez sur `Plus`{.action} et sélectionnez `Protection des données avec Veeam`{.action}
 
-![Public VCF as-a-Serviceaccess to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
+![Public VCF as-a-Service access to Veeam Backup](images/vcd_veeam_backup.png){.thumbnail}
 
 Cliquez sur `Jobs`{.action} puis sur `Create`{.action}
 
-![Public VCF as-a-ServiceBackup Job Veeam creation](images/vcd_veeam_backup_job_creation.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation.png){.thumbnail}
 
 Dans la fenêtre qui s'ouvre, spécifiez le nom de la tâche de sauvegarde, la description et la politique de rétention. Une fois les éléments définis (Job name, description, retention), cliquez sur `Next`{.action}.
 
-![Public VCF as-a-ServiceBackup Job Veeam creation](images/vcd_veeam_backup_jobs.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_jobs.png){.thumbnail}
 
 Vous devez ensuite choisir votre machine virtuelle (VM). Pour cela, cliquez sur `Add`{.action}.
 
-![Public VCF as-a-ServiceBackup Job Veeam creation](images/vcd_veeam_backup_job_creation_3.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_3.png){.thumbnail}
 
 Vous pouvez dérouler l'arborescence de votre organisation Public VCF as-a-Service et sélectionner votre VM.
 
 Cliquez sur `Next`{.action}.
 
-![Public VCF as-a-ServiceBackup Job Veeam creation](images/vcd_veeam_backup_job_creation_4.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_4.png){.thumbnail}
 
 Votre machine virtuelle apparait alors dans la liste.
 
 Cliquez sur `Next.`{.action}
 
-![Public VCF as-a-ServiceBackup Job Veeam creation](images/vcd_veeam_backup_job_creation_5.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_5.png){.thumbnail}
 
 > [!warning]
 >
@@ -180,7 +180,7 @@ Cliquez sur `Next.`{.action}
 
 Cliquez sur `Next`{.action}
 
-![Public VCF as-a-ServiceBackup Job Veeam creation](images/vcd_veeam_backup_job_creation_6.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_6.png){.thumbnail}
 
 Si nécessaire, vous pouvez ajouter des options de monitoring pour vos tâches de sauvegarde. Cliquez enfin sur `Finish`{.action}.
 
@@ -188,7 +188,7 @@ Si nécessaire, vous pouvez ajouter des options de monitoring pour vos tâches d
 > Si vous ajoutez plusieurs adresses e-mail pour le monitoring, utilisez un point-virgule (`;`) comme séparateur entre chaque adresse.
 > **Exemple** : `email1@example.com; email2@example.com`
 
-![Public VCF as-a-ServiceBackup Job Veeam creation](images/vcd_veeam_backup_job_creation_7.png){.thumbnail}
+![Public VCF as-a-Service Backup Job Veeam creation](images/vcd_veeam_backup_job_creation_7.png){.thumbnail}
 
 La tâche de sauvegarde apparait dans la liste.
 
@@ -245,7 +245,7 @@ Lorsque vous restaurez des VMs normales ou autonomes dans la hiérarchie vCloud 
 - Veeam utilise les métadonnées vApp capturées pour définir les paramètres vApp et l'emplacement d'origine de la machine virtuelle dans la hiérarchie Public VCF as-a-Service. 
 - Veeam restaure les VMs du fichier de sauvegarde à leur emplacement d'origine ou à un autre emplacement. De plus, Veeam restaure tous les paramètres des VM.
 
-**Comment restaurer une machine virtuelle depuis le plugin Veeam Data PlatformPublic VCF as-a-Service ?**
+**Comment restaurer une machine virtuelle depuis le plugin Veeam Data Platform Public VCF as-a-Service ?**
 
 Pour effectuer une restauration complète, cliquez sur `Entire VM Restore`{.action}
 
@@ -263,7 +263,7 @@ Dans la dernière étape, cliquez sur `Finish`{.action}. Si vous le souhaitez, v
 
 Ce processus est simplifié grâce àPublic VCF as-a-Service, Veeam et OVHcloud.
 
-**Comment restaurer un fichier depuis le plugin Veeam Data PlatformPublic VCF as-a-Service ?**
+**Comment restaurer un fichier depuis le plugin Veeam Data Platform Public VCF as-a-Service ?**
 
 - **File level restore** : cette option n'est pas encore disponible à ce jour.
 

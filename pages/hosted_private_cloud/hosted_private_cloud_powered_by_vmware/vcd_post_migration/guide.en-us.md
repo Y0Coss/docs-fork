@@ -1,5 +1,5 @@
 ---
-title: "Public VCF as-a-Service - Setting up your network after vSphere toPublic VCF as-a-Service migration"
+title: "Public VCF as-a-Service - Setting up your network after vSphere to Public VCF as-a-Service migration"
 excerpt: "Learn how to configure your network after migrating from VMware vSphere to Public VCF as-a-Service"
 updated: 2025-03-04
 ---
@@ -34,7 +34,7 @@ To set the network configuration to DHCP (**recommended**):
 
 ![Disabled setting](images/02-VCD-post-migration.png){.thumbnail}
 
-### Step 2: Handling the IP addressing bug inPublic VCF as-a-Service
+### Step 2: Handling the IP addressing bug in Public VCF as-a-Service
 
 Networks are pre-created with placeholder Gateway CIDRs, as the actual VM subnets are unknown beforehand.
 

@@ -824,6 +824,6 @@ print(body['cert'])
 " | openssl x509 -text; echo $?
 ```
 
-If you require training or technical support to implement your migration withPublic VCF as-a-Service, please contact your TAM or [click here](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
+If you require training or technical support to implement your migration with Public VCF as-a-Service, please contact your TAM or [click here](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
 Join our [community of users](/links/community).

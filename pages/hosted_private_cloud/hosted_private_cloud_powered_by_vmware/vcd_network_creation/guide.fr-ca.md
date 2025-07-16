@@ -37,15 +37,15 @@ details[open]>summary::before {
 - Un navigateur Web (avec de préférence avec une base chromium et la traduction activée en français).
 - Avoir un compte Public VCF as-a-Service on OVHcloud phase Alpha avec les droits suffisants.
 
-Avoir lu les guidesPublic VCF as-a-Service : 
+Avoir lu les guides Public VCF as-a-Service : 
 
 - [Public VCF as-a-Service - Networking - Concepts réseau](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
-- [Public VCF as-a-Service - Les concepts fondamentaux dePublic VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts).
+- [Public VCF as-a-Service - Les concepts fondamentaux de Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts).
 - [Public VCF as-a-Service - Se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
 ## En pratique
 
-Avant de créer un réseau, le concept principal à comprendre avec Public VCF as-a-Service est **l’espace IP**. Prenons en exemple celui par défaut créé avec votre organisationPublic VCF as-a-Service :
+Avant de créer un réseau, le concept principal à comprendre avec Public VCF as-a-Service est **l’espace IP**. Prenons en exemple celui par défaut créé avec votre organisation Public VCF as-a-Service :
 
 **Le périmètre interne (Internal Scope)** représente l'IP entière de votre futur réseau, e.g. : `192.168.0.0/24`{.action}.
 
@@ -62,7 +62,7 @@ Avant de créer un réseau, le concept principal à comprendre avec Public VCF a
 
 /// details | Comment créer un Espace IP avec Public VCF as-a-Service on OVHcloud ?
 
-Pour vous connecter à votre environnementPublic VCF as-a-Service, suivez le guide : [Comment se connecter àPublic VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
+Pour vous connecter à votre environnement Public VCF as-a-Service, suivez le guide : [Comment se connecter àPublic VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
 1\. Cliquez sur : `Réseaux`{.action} > `Espaces IP`{.action} > `Nouveau`{.action}.
 
@@ -120,7 +120,7 @@ Cliquez sur `SUIVANT`{.action} pour terminer l'étape n°5.
 
 ![Public VCF as-a-ServiceNetworking IP Spaces 06](images/ESPACE_IP_6.png){.thumbnail}
 
-Nous allons ensuite passer de la section dePublic VCF as-a-Service `Mise en Réseau | Espace IP`{.action} à `Mise en Réseau | Réseaux`{.action}.
+Nous allons ensuite passer de la section de Public VCF as-a-Service `Mise en Réseau | Espace IP`{.action} à `Mise en Réseau | Réseaux`{.action}.
 
 ///
 
@@ -179,7 +179,7 @@ Pour créer une nouvelle Passerelle Edge, cliquez sur `NOUVEAU`{.action}.
 
 ![Public VCF as-a-ServiceNetworking Edge Gateway 00](images/EDGE_GATEWAY.png){.thumbnail}
 
-Vous retrouvez la fenêtre de création de **Passerelle Edge** pour votre environnementPublic VCF as-a-Service :
+Vous retrouvez la fenêtre de création de **Passerelle Edge** pour votre environnement Public VCF as-a-Service :
 
 Vous avez ensuite le choix entre `Centre de données virtuel d'organisation`{.action} et/ou `Groupe de centres de données`{.action}.
 
@@ -203,7 +203,7 @@ Cliquez ensuite sur `Utiliser les espaces IP`{.action}.
 
 **Pourquoi ?** 
 
-Cela force l'utilisation des espaces IP aux passerelles Provider, et permet ainsi d'optimiser l'application des nouvelles techniques intelligentes de gestion de l'espace réseauPublic VCF as-a-Service.
+Cela force l'utilisation des espaces IP aux passerelles Provider, et permet ainsi d'optimiser l'application des nouvelles techniques intelligentes de gestion de l'espace réseau Public VCF as-a-Service.
 
 Quand vous avez fini, cliquez sur `SUIVANT`{.action}.
 
@@ -268,7 +268,7 @@ Vous avez la possibilité de créer un type de **Réseau routé** ou **isolé** 
 
 Le réseau **"routé"** autorise le trafic entrant, tandis que le réseau **"isolé"** l'interdit.
 
-DéfinitionPublic VCF as-a-Service :
+Définition Public VCF as-a-Service :
 
 - **Routé** : ce type de réseau fournit un accès contrôlé aux machines et aux réseaux en dehors du vDC ou du groupe de vDC par le biais d'une passerelle périphérique.
 - **Isolé** : ce type de réseau fournit un environnement entièrement isolé, accessible uniquement par ce vDC ou ce groupe de vDC de l'organisation.
@@ -401,9 +401,9 @@ Votre réseau est maintenant entièrement créé et prêt à être utilisé.
 
 Vous pouvez maintenant suivre les étapes du prochain guide :
 
-- **Bientôt disponible** : Guide 3 : « Public VCF as-a-Service on OVHcloud - Network - Comment créer un tunnel IPsec avecPublic VCF as-a-Service on OVHcloud ? ».
+- **Bientôt disponible** : Guide 3 : « Public VCF as-a-Service on OVHcloud - Network - Comment créer un tunnel IPsec avec Public VCF as-a-Service on OVHcloud ? ».
 
-Si vous rencontrez des difficultés avec le réseau au sein dePublic VCF as-a-Service on OVHcloud, consultez le guide « [Public VCF as-a-Service on OVHcloud - Network Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) ».
+Si vous rencontrez des difficultés avec le réseau au sein de Public VCF as-a-Service on OVHcloud, consultez le guide « [Public VCF as-a-Service on OVHcloud - Network Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) ».
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou [cliquez ici](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

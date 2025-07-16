@@ -1,5 +1,5 @@
 ---
-title: "Public VCF as-a-Service - The fundamentals ofPublic VCF as-a-Service"
+title: "Public VCF as-a-Service - The fundamentals of Public VCF as-a-Service"
 excerpt: "Discover the basic concepts of Public VCF as-a-Service"
 updated: 2024-12-19
 ---
@@ -12,7 +12,7 @@ updated: 2024-12-19
 
 In this section, we will detail the essential foundations of Public VCF as-a-Service.
 
-By defining these principles in a clear and concise way, we will provide the necessary foundation for effective and successful Public VCF as-a-Service use. Whether it’s for administrators looking to deploy complex infrastructures, or for users looking to access resources quickly, this exploration ofPublic VCF as-a-Service basics is a vital starting point.
+By defining these principles in a clear and concise way, we will provide the necessary foundation for effective and successful Public VCF as-a-Service use. Whether it’s for administrators looking to deploy complex infrastructures, or for users looking to access resources quickly, this exploration of Public VCF as-a-Service basics is a vital starting point.
 
 ### Organizations
 
@@ -96,7 +96,7 @@ Below is a comparison of the features provided by OVHcloud on its 3 Public VCF a
 
 |               Features              	| Standard 	| Advanced 	| Premium 	|                                                 Comments                                                	|
 |:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------------------------------------------------------------:	|
-|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in aPublic VCF as-a-Service Organisation Manage roles/permissions for Organisation users           	|
+|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in a Public VCF as-a-Service Organisation Manage roles/permissions for Organisation users           	|
 | Identity Provider Integration - SSO 	|          	|          	|         	| in Roadmap (via OVHcloud uIAM service)                                                                  	|
 | vCPU over-allocation                	|     ✅    	|     ✅    	|    ✅    	| Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
 
@@ -109,7 +109,7 @@ Below is a comparison of the features provided by OVHcloud on its 3 Public VCF a
 | Private Network - vRack support 	| ✅        	| ✅        	| ✅       	| in Roadmap                                                                                                                                                                                                   	|
 | Routing & Switching IPv6        	|          	|          	|         	| in Roadmap                                                                                                                                                                                         	|
 | VPN                             	|          	| ✅        	| ✅       	| L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	|
-| Load Balancing                  	|          	|          	|         	| Not supported with nativePublic VCF as-a-Service network capabilities                                                                                                                                                 	|
+| Load Balancing                  	|          	|          	|         	| Not supported with native Public VCF as-a-Service network capabilities                                                                                                                                                 	|
 | Advanced Load Balancing         	|          	|          	|         	| in Roadmap                                                                                                                                                                                         	|
 
 #### Security

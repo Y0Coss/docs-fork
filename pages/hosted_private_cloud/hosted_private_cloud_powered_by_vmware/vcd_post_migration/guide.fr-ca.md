@@ -1,5 +1,5 @@
 ---
-title: "Public VCF as-a-Service - Configuration réseau après migration de vSphere versPublic VCF as-a-Service"
+title: "Public VCF as-a-Service - Configuration réseau après migration de vSphere vers Public VCF as-a-Service"
 excerpt: "Apprenez à configurer votre réseau après la migration de VMware vSphere vers Public VCF as-a-Service"
 updated: 2025-03-04
 ---
@@ -34,7 +34,7 @@ Pour passer la configuration réseau en DHCP **(recommandé)** :
 
 ![Paramètre Désactivé](images/02-VCD-post-migration.png){.thumbnail}
 
-### Étape 2 : Gérer le problème d’adressage IP dansPublic VCF as-a-Service
+### Étape 2 : Gérer le problème d’adressage IP dans Public VCF as-a-Service
 
 Les réseaux sont précréés avec des CIDR de passerelle temporaires, car les sous-réseaux réels des machines virtuelles ne sont pas connus à l’avance.
 

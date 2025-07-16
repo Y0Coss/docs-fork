@@ -1,5 +1,5 @@
 ---
-title: "Public VCF as-a-Service - Découvrez comment utiliser l'interface utilisateur dePublic VCF as-a-Service"
+title: "Public VCF as-a-Service - Découvrez comment utiliser l'interface utilisateur de Public VCF as-a-Service"
 excerpt: "Découvrez l'interface utilisateur de Public VCF as-a-Service"
 updated: 2024-05-23
 ---
@@ -12,7 +12,7 @@ La version utilisée pour l'ensemble de nos produits Public VCF as-a-Service est
 
 ## Prérequis
 
-- Une connaissance pratique des réseaux Linux, vSphere, Windows et IP est nécessaire pour configurer et gérerPublic VCF as-a-Service
+- Une connaissance pratique des réseaux Linux, vSphere, Windows et IP est nécessaire pour configurer et gérer Public VCF as-a-Service
 - Avoir un compte Public VCF as-a-Service administrateur
 
 >[!primary]
@@ -23,7 +23,7 @@ La version utilisée pour l'ensemble de nos produits Public VCF as-a-Service est
 > [!primary]
 > Une fois connecté à votre interface web, vous serez accueillis par un tableau de bord affichant vos **vDC**, ainsi qu'un résumé détaillé de votre utilisation des ressources (10). En haut de l'écran, vous trouverez également une barre de navigation regroupant les différentes options de paramétrage disponibles pour vCloud Director (VCD).
 
-VMware vCloud Director (VCD) est une plateforme de gestion de cloud computing. Celle-ci permet la création, la gestion et le déploiement de ressources informatiques virtualisées à grande échelle.Public VCF as-a-Service offre une infrastructure agile et évolutive. Grâce à son interface utilisateur conviviale et à ses fonctionnalités avancées telles que la gestion des ressources, du réseau logiciel, et la sécurité renforcée, vCloud Director simplifie la gestion des environnements cloud complexes.
+VMware vCloud Director (VCD) est une plateforme de gestion de cloud computing. Celle-ci permet la création, la gestion et le déploiement de ressources informatiques virtualisées à grande échelle. Public VCF as-a-Service offre une infrastructure agile et évolutive. Grâce à son interface utilisateur conviviale et à ses fonctionnalités avancées telles que la gestion des ressources, du réseau logiciel, et la sécurité renforcée, vCloud Director simplifie la gestion des environnements cloud complexes.
 
 Cette solution vous permet de provisionner et de gérer efficacement des machines virtuelles, des réseaux virtuels et d'autres ressources, en offrant une agilité opérationnelle et une flexibilité accrues pour répondre à l'évolution des besoins de l'entreprise.
 
@@ -103,7 +103,7 @@ Vous pouvez voir sur la capture d'écran ci-dessous que les fonctionnalités les
 
 ![Réseau Overview](images/vcd_overview_networking.gif){.thumbnail}
 
-Dans cette section, vous retrouvez tous les composants réseau de vos environnementsPublic VCF as-a-Service :
+Dans cette section, vous retrouvez tous les composants réseau de vos environnements Public VCF as-a-Service :
 
 Réseaux :
 
@@ -146,7 +146,7 @@ Libraries :
 
 Vous avez la possibilité de gérer ici les utilisateurs de votre organisation, de créer des rôles et des groupes et de configurer un fournisseur d'identification (OIDC/SAML). Vous pouvez également paramétrer des stratégies d'alertes et d'expiration par e-mail pour vos applications.
 
-Dans cette section, vous retrouvez tous les composants d'administration de votre organisationPublic VCF as-a-Service :
+Dans cette section, vous retrouvez tous les composants d'administration de votre organisation Public VCF as-a-Service :
 
 Contrôle d'accès :
 

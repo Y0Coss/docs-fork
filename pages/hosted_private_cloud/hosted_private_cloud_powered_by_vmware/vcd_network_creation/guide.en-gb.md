@@ -31,21 +31,21 @@ details[open]>summary::before {
 
 > [!primary]
 > 
-> If you are unsure how to log in to your organization's web portal, first refer to the guide: [How to log in toPublic VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
+> If you are unsure how to log in to your organization's web portal, first refer to the guide: [How to log in to Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 >
 
 - A web browser (with a preference of chromium based one, and translation enabled in English).
 - A Public VCF as-a-Service on OVHcloud (Alpha phase) account with sufficient rights.
 
-You need to have read thePublic VCF as-a-Service guides:
+You need to have read the Public VCF as-a-Service guides:
 
 - [Public VCF as-a-Service - Networking - Network concepts Public VCF as-a-Service on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
-- [Public VCF as-a-Service - The fundamentals ofPublic VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts).
+- [Public VCF as-a-Service - The fundamentals of Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts).
 - [Public VCF as-a-Service - Connect to your organization](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
 ## Instructions
 
-Before creating a network, the main concept to understand with Public VCF as-a-Service is the IP space. For example, consider the default one created with yourPublic VCF as-a-Service organization:
+Before creating a network, the main concept to understand with Public VCF as-a-Service is the IP space. For example, consider the default one created with your Public VCF as-a-Service organization:
 
 **The internal scope** represents the entire IP of your future network, e.g.: `192.168.0.0/24`{.action}.
 
@@ -62,7 +62,7 @@ Before creating a network, the main concept to understand with Public VCF as-a-S
 
 /// details | How to create an IP space with Public VCF as-a-Service on OVHcloud?
 
-To connect to yourPublic VCF as-a-Service environment, follow the guide: [How to connect toPublic VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
+To connect to your Public VCF as-a-Service environment, follow the guide: [How to connect to Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
 1\. Next, click `Network`{.action} > `IP Spaces`{.action} > `New`{.action}.
 
@@ -120,7 +120,7 @@ Click `NEXT`{.action} to complete step 5.
 
 ![Public VCF as-a-ServiceNetworking IP Spaces 06](images/ESPACE_IP_6.png){.thumbnail}
 
-Next, we will move on to thePublic VCF as-a-Service section `VCD`{.action} > `Network`{.action} > `IP Space`{.action} and/or `Public VCF as-a-ServiceNetwork`{.action} > `Network`{.action}.
+Next, we will move on to the Public VCF as-a-Service section `VCD`{.action} > `Network`{.action} > `IP Space`{.action} and/or `Public VCF as-a-ServiceNetwork`{.action} > `Network`{.action}.
 
 ///
 
@@ -137,7 +137,7 @@ Next, we will move on to thePublic VCF as-a-Service section `VCD`{.action} > `Ne
 
 This step is optional, but recommended for the vast majority of use cases (e.g. when two VDC networks need to add up).
 
-We will now create a datacentre group to optimize the management of our network with this newPublic VCF as-a-Service feature.
+We will now create a datacentre group to optimize the management of our network with this new Public VCF as-a-Service feature.
 
 Go to the Networking section by clicking `Networking` > `Data Center Groups`{.action}.
 
@@ -179,7 +179,7 @@ To create a new Edge Gateway, click on `NEW`{.action}.
 
 ![Public VCF as-a-ServiceNetworking Edge Gateway 00](images/EDGE_GATEWAY.png){.thumbnail}
 
-Here, you will see the window for creating an **Edge Gateway** for yourPublic VCF as-a-Service environment:
+Here, you will see the window for creating an **Edge Gateway** for your Public VCF as-a-Service environment:
 
 You can then choose between: `Organization Virtual Data Center`{.action} or `Data Center Group`{.action}.
 
@@ -201,7 +201,7 @@ You can then choose between: `Organization Virtual Data Center`{.action} or `Dat
 
 Next, click on `Use IP Spaces`{.action}.
 
-This forces the use of IP spaces with the Provider gateways and optimize the application of new intelligentPublic VCF as-a-Service network space management techniques.
+This forces the use of IP spaces with the Provider gateways and optimize the application of new intelligent Public VCF as-a-Service network space management techniques.
 
 When done, click on `NEXT`{.action}.
 
@@ -398,9 +398,9 @@ Your network is now fully created and ready to use.
 
 You can now follow the steps of the next guide :
 
-- **Coming soon:** Guide 3 - Public VCF as-a-Service on OVHcloud - Network - How to create an IPsec tunnel withPublic VCF as-a-Service on OVHcloud ?
+- **Coming soon:** Guide 3 - Public VCF as-a-Service on OVHcloud - Network - How to create an IPsec tunnel with Public VCF as-a-Service on OVHcloud ?
 
-If you experience any network issues withinPublic VCF as-a-Service on OVHcloud, please read our guide « [Public VCF as-a-Service on OVHcloud - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) »
+If you experience any network issues within Public VCF as-a-Service on OVHcloud, please read our guide « [Public VCF as-a-Service on OVHcloud - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) »
 
 If you require training or technical assistance in implementing our solutions, contact your sales representative or [click here](/links/professional-services) for a quote and request a custom analysis of your project from our Professional Services team experts.
 

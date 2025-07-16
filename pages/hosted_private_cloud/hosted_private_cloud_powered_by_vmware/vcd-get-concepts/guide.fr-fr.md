@@ -1,5 +1,5 @@
 ---
-title: "Public VCF as-a-Service - Les concepts fondamentaux dePublic VCF as-a-Service"
+title: "Public VCF as-a-Service - Les concepts fondamentaux de Public VCF as-a-Service"
 excerpt: "Decouvrez les concepts fondamentaux de Public VCF as-a-Service"
 updated: 2024-12-19
 ---
@@ -12,7 +12,7 @@ updated: 2024-12-19
 
 Dans cette section, nous allons établir les bases essentielles de Public VCF as-a-Service.
 
-En définissant ces principes de manière claire et concise, nous allons fournir les bases nécessaires pour une utilisation efficace et réussie de Public VCF as-a-Service. Que ce soit pour les administrateurs cherchant à déployer des infrastructures complexes ou pour les utilisateurs souhaitant accéder aux ressources rapidement. Cette exploration des concepts de base dePublic VCF as-a-Service constitue un point de départ essentiel.
+En définissant ces principes de manière claire et concise, nous allons fournir les bases nécessaires pour une utilisation efficace et réussie de Public VCF as-a-Service. Que ce soit pour les administrateurs cherchant à déployer des infrastructures complexes ou pour les utilisateurs souhaitant accéder aux ressources rapidement. Cette exploration des concepts de base de Public VCF as-a-Service constitue un point de départ essentiel.
 
 ### Organisations
 
@@ -96,7 +96,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 |               Features              	| Standard 	| Advanced 	| Premium 	|                                                 Comments                                                	|
 |:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------------------------------------------------------------:	|
-|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in aPublic VCF as-a-Service Organisation Manage roles/permissions for Organisation users           	|
+|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in a Public VCF as-a-Service Organisation Manage roles/permissions for Organisation users           	|
 | Identity Provider Integration - SSO 	|          	|          	|         	| in Roadmap (via OVHcloud uIAM service)                                                                  	|
 | vCPU over-allocation                	|     ✅    	|     ✅    	|    ✅    	| Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
 
@@ -109,7 +109,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 | Private Network - vRack support   | ✅        	| ✅        	| ✅       	| In Roadmap                                                                                                                                                                                                	 |
 | Routing & Switching IPv6        	 |          	|          	|         	| in Roadmap                                                                                                                                                                                         	        |
 | VPN                             	 |          	| ✅        	| ✅       	| L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	        |
-| Load Balancing                  	 |          	|          	|         	| Not supported with nativePublic VCF as-a-Service network capabilities                                                                                                                                                 	        |
+| Load Balancing                  	 |          	|          	|         	| Not supported with native Public VCF as-a-Service network capabilities                                                                                                                                                 	        |
 | Advanced Load Balancing         	 |          	|          	|         	| in Roadmap                                                                                                                                                                                         	        |                                                                                          	|
 
 #### Security
