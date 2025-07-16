@@ -9,12 +9,11 @@ Ce guide explique comment migrer vos charges de travail VMware on-premises vers 
 
 > [!primary]
 > **Ce guide s’applique aux environnements Hosted Private Cloud qualifiés SecNumCloud (SNC).**
-> Certaines fonctionnalités disponibles dans les environnements standard comme **OVHcloud IAM**, **vRack** ou le **réseau NSX-T avancé** peuvent être restreintes ou indisponibles ici.
-> Pour les environnements standard, consultez le guide suivant :
+> Certaines fonctionnalités disponibles dans les environnements standards comme **OVHcloud IAM**, **vRack** ou le **réseau NSX-T avancé** peuvent être restreintes ou indisponibles ici.
+> Pour les environnements standards, consultez le guide suivant :
 > [Move2Cloud - Migration de charges de travail VMware vers le Hosted Private Cloud OVHcloud avec Zerto](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto)
 
 ## Prérequis
-
 Avant de commencer, assurez-vous d'avoir :
 
 - Un inventaire complet de vos machines virtuelles (VM) : FQDN, adresse IP, version du système d'exploitation, dépendances applicatives
@@ -116,7 +115,7 @@ Cette étape garantit que les administrateurs et les outils comme Zerto ont un a
 
 ### Étape 4.1 : Utiliser la solution IAM d’OVHcloud
 
-La solution IAM d’OVHcloud est la méthode recommandée pour gérer l’accès dans les environnements Hosted Private Cloud standard.
+La solution IAM d’OVHcloud est la méthode recommandée pour gérer l’accès dans les environnements Hosted Private Cloud standards.
 
 Pour configurer l'accès :
 

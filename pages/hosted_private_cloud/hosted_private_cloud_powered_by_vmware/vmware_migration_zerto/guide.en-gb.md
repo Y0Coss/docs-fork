@@ -69,7 +69,7 @@ This network design will be recreated in your OVHcloud HPC tenant using `vRack` 
 
 You can find more about network planning in [NSX-T - First steps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
-For additional guidance from Zerto, refer to [Planning Your Installation](https://help.zerto.com/bundle/Install.VC.HTML/page/Planning_Your_Installation.htm){.external}.
+For additional guidance from Zerto, refer to [Installing the Zerto Solution](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm){.external}.
 
 ### Step 2: Plan Hosted Private Cloud resources
 
@@ -114,8 +114,8 @@ To do so:
 
 1. Log in to the [OVHcloud Control Panel](/links/manager).
 2. Select your `Hosted Private Cloud`{.action}.
-3. Go to the `Secure SSL Gateway`{.action} tab.
-4. Add your source infrastructure IPs and Zerto components to the whitelist.
+3. Navigate to the `Security`{.action} tab.
+4. Click `Add a new IP address range`{.action} to authorize your source infrastructure IPs and Zerto components.
 
 For step-by-step instructions, refer to [Authorise IPs to connect to vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter).
 
@@ -125,21 +125,13 @@ This step ensures that administrators and tools like Zerto have the correct acce
 
 #### Step 4.1: Use OVHcloud IAM
 
-OVHcloud IAM is the recommended way to manage access in standard Hosted Private Cloud environments.
-
-To configure access:
-
-1. Log in to the [OVHcloud Control Panel](/links/manager).
-2. Go to `Hosted Private Cloud`{.action}.
-3. Open the `Users and Roles`{.action} section.
-4. Assign roles based on your security policy (e.g., Read-only, Admin).
-
-You can define users, groups, and their permissions using the OVHcloud Identity and Access Management service.
-
-For a complete walkthrough, refer to [Getting Started with IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
+Set up roles and permissions in your `Hosted Private Cloud`{.action} using `OVHcloud IAM`.
 
 > [!warning]
-> OVHcloud IAM is not available in SecNumCloud, PCI-DSS or HDS-qualified environments.
+> **OVHcloud IAM is not available in SecNumCloud (SNC), PCI-DSS, or HDS environments.**
+> If you are using one of these qualified environments, you must configure roles and permissions directly in vSphere or use an external IAM solution such as Microsoft Active Directory or Okta.
+
+For instructions, refer to the [IAM setup guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
 
 #### Step 4.2: Connect your own IAM solution
 
@@ -233,7 +225,7 @@ OVHcloud will deploy the following:
 - A ZVRA (Zerto Virtual Replication Appliance) on each ESXi host.
 - An OVH-managed NSX-T firewall with preconfigured rules for Zerto ports.
 
-Full details can be found in [Zerto Virtual Replication on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_zerto_virtual_replication_customer_to_ovh).
+Full details can be found in [Zerto Virtual Replication on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
 
 ### Step 8: Install Zerto on the source site
 
@@ -290,8 +282,8 @@ Use the `Failover Test` option in the Zerto UI. This powers on the replicated VM
 
 Instructions:
 
-- [Start a test failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm){.external}
-- [Stop a test failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/What_Happens_After_Starting_a_Test.htm){.external}
+- [Starting and Stopping Failover Tests](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm){.external}
+- [What Happens After Starting a Test?](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/What_Happens_After_Starting_a_Test.htm){.external}
 
 ### Step 13: Execute the planned migration
 
@@ -333,12 +325,6 @@ See [VMware Storage vMotion](/pages/hosted_private_cloud/hosted_private_cloud_po
 ### Step 17: Back up your workloads
 
 Once your VMs are in production, secure them with a backup plan.
-
-#### Option 1: Veeam Backup as a Service
-Use [Veeam Backup as a Service](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/vmware_veeam_backup_as_a_service) if you want a managed backup solution integrated with your HPC.
-
-#### Option 2: Self-managed Veeam with Enterprise license
-Deploy your own Veeam Backup server and use [Veeam Backup & Replication for Public Cloud](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/public_cloud_storage_veeam_backup_replication).
 
 ## Go further
 
