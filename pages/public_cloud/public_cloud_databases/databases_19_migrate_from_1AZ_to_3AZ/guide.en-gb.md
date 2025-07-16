@@ -104,19 +104,19 @@ For more detailed information on the deployment modes and their technical specif
 >>     "time": "15:04:05"                                     # Time on which backups start every day
 >>   },
 >>   "disk": {
->>     "size": 80 # Service disk size 
+>>     "size": 240                                            # Service disk size 
 >>   },
 >>   "forkFrom": {
 >>     "backupId": "********-****-****-****-3684de51065d",    # the previously recovered ID of the backup
 >>     "serviceId": "********-****-****-****-ce179babccf3"    # the id of the engine instance to which this backup belongs
 >>   },
 >>   "maintenanceTime": "15:04:05",                           # Time on which maintenances can start every day
->>   "nodePattern": {                                         # Pattern definition of the nodes in the cluster, not compatible with nodesList
->>     "flavor": "db1-4",
+>>   "nodesPattern": {                                        # Pattern definition of the nodes in the cluster, not compatible with nodesList
+>>     "flavor": "b3-8",
 >>     "number": 2,
 >>     "region": "EU-WEST-PAR"
 >>   },
->>   "plan": "business",
+>>   "plan": "production",
 >>   "version": "16"
 >> }
 >> ```
