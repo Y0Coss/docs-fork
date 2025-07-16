@@ -5,7 +5,7 @@ updated: 2025-07-15
 
 ## Objective
 
-This document describes the reversibility policy for the Managed Mutualized Virtualization product covering the OVHcloud VMware Cloud Director offer.
+This document describes the reversibility policy for the Managed Mutualized Virtualization product covering the OVHcloud Public VCF-as-a-Service offer.
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
@@ -21,7 +21,7 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| Standard VM images | Import and export VM images in standard formats supported by the OVF hypervisor | OVF | **Inbound**: import images via API or User Interface <br>**Outbound**: export VM images which can be reused on any compatible environment | [The fundamentals of VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) <br><br>[VMware Cloud Director - Migrate from VMware vSphere on OVHcloud ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases) <br><br>[OVF Tool](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool) |
+| Standard VM images | Import and export VM images in standard formats supported by the OVF hypervisor | OVF | **Inbound**: import images via API or User Interface <br>**Outbound**: export VM images which can be reused on any compatible environment | [The fundamentals of Public VCF-as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) <br><br>[Public VCF-as-a-Service - Migrate from VMware vSphere on OVHcloud ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases) <br><br>[OVF Tool](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool) |
 
 ### 2. OVHcloud Implementations
 
@@ -34,9 +34,9 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| Virtual network management | Network configuration (subnets, security groups) specific to OVHcloud | NA | **Inbound**: adapt network configurations to the OVHcloud environment. <br>**Outbound**: configurations cannot be exported. Take note of the architecture and reproduce it in the target environment | [VMware Cloud Director - Network Concepts and Best Practices](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) <br><br>[VMware Cloud Director - Creating Network Components via Public VCF as-a-Service]() |
-| Administration and monitoring | Manage security policies, users, groups, and monitor infrastructure| NA | **Inbound**: interfaces and features available by default <br> **Outbound**: rules cannot be exported. Order and configure tools in the target environment | [VCD core concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)<br><br>[VMware Cloud Director - Learn how to use the VCD user interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started) |
-| Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Inbound**: the anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outbound**: order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](/links/security/anti-ddos) |
+| Virtual network management | Network configuration (subnets, security groups) specific to OVHcloud | NA | **Inbound**: adapt network configurations to the OVHcloud environment. <br>**Outbound**: configurations cannot be exported. Take note of the architecture and reproduce it in the target environment | [Public VCF-as-a-Service - Network Concepts and Best Practices](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) <br><br>[Public VCF-as-a-Service - Creating Network Components via Public VCF as-a-Service]() |
+| Administration and monitoring | Manage security policies, users, groups, and monitor infrastructure| NA | **Inbound**: interfaces and features available by default <br> **Outbound**: rules cannot be exported. Order and configure tools in the target environment | [Public VCF-as-a-Service core concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)<br><br>[Public VCF-as-a-Service - Learn how to use the user interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started) |
+| Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Inbound**: the anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outbound**: order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](/links/security/antiddos) |
 
 ## List of architectures
 
