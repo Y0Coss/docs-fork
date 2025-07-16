@@ -1,7 +1,7 @@
 ---
-title: Move2Cloud - Migration de charges VMware vers OVHcloud Hosted Private Cloud avec Zerto
+title: Move2Cloud - Migration de charges de travail VMware vers OVHcloud Hosted Private Cloud avec Zerto
 excerpt: "Découvrez comment migrer vos charges de travail VMware on-premises vers un environnement Hosted Private Cloud OVHcloud à l’aide de Zerto Virtual Replication"
-updated: 2025-07-10
+updated: 2025-07-16
 ---
 
 ## Objectif
@@ -97,8 +97,8 @@ Si vos charges de travail nécessitent des IOPS élevées, vSAN est l'option pri
 Planifiez la recréation de votre réseau virtuel à l'aide de NSX-T :
 
 - Décidez quels segments seront de type VLAN ou Overlay.
-- Identifiez les besoins en matière de passerelle (Tier-0 et Tier-1).
-- Évaluez les règles de pare-feu et le trafic nord/sud.
+- Identifiez les besoins en matière de passerelles (Tier-0 et Tier-1).
+- Évaluez les règles de pare-feu et le trafic nord-sud.
 
 Si vous devez exposer des services sur Internet, vous pouvez :
 
@@ -116,7 +116,7 @@ Pour ce faire :
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 2. Sélectionnez votre `Hosted Private Cloud`{.action}.
 3. Accédez à l'onglet `Sécurité`{.action}
-4. Cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action} pour autoriser vos adresses IP d'infrastructure source et vos composants Zerto"
+4. Cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action} pour autoriser vos adresses IP d'infrastructure source et vos composants Zerto.
 
 Pour des instructions détaillées, référez-vous à notre guide « [Autoriser des IP à se connecter au vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter) ».
 
@@ -153,7 +153,9 @@ Les détails sur les autorisations requises sont disponibles dans la documentati
 
 ### Étape 5 : Construire le réseau cible
 
-Avant de commencer tout test de réplication ou de basculement de VM, votre réseau Hosted Private Cloud doit être prêt à recevoir les charges de travail. Cela inclut notamment la réplication de la structure source, la création des segments de réseau appropriés et la configuration des règles de pare-feu nécessaires.
+Avant de commencer tout test de réplication ou de basculement de VM, votre réseau Hosted Private Cloud doit être prêt à recevoir les charges de travail.
+
+Cela inclut notamment la réplication de la structure source, la création des segments de réseau appropriés et la configuration des règles de pare-feu nécessaires.
 
 #### Étape 5.1 : Recréer vos VLAN et segments
 
@@ -261,7 +263,7 @@ Une fois les ZVM en ligne et la communication validée :
 
 Un VPG regroupe toutes les VM qui doivent être répliquées et basculées ensemble.
 
-Plus d'informations dans le guide Zerto suivant : « [Créer un VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm){.external} ».
+Retrouvez plus d'informations dans le guide Zerto suivant : « [Créer un VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm){.external} ».
 
 ### Étape 11 : Surveiller l'état de la réplication
 
@@ -279,7 +281,7 @@ Avant de migrer les charges de travail de production, testez le comportement de 
 
 Utilisez l'option `Failover Test` dans l'interface utilisateur Zerto. Cela permet de mettre sous tension les machines virtuelles répliquées sans impacter la production.
 
-Instructions :
+Retrouvez ci-dessous les guides de Zerto à ce sujet :
 
 - [Démarrage et arrêt des tests de basculement](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm){.external}
 - [Que se passe-t-il après avoir démarré un test ?](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/What_Happens_After_Starting_a_Test.htm){.external}
@@ -291,7 +293,7 @@ Lorsque vous êtes prêt à migrer :
 1. Utilisez l'opération **Move** dans Zerto pour migrer chaque VPG.
 2. Choisissez la stratégie de validation (manuelle, automatique, annulation).
 
-Pour obtenir des instructions complètes, suivez le guide Zerto « [Processus de déplacement](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm){.external} ».
+Pour obtenir des instructions complètes, référez-vous au guide Zerto suivant : « [Processus de déplacement](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm){.external} ».
 
 ### Étape 14 : Valider la disponibilité de l'application
 
@@ -324,6 +326,11 @@ Pour plus de détails, consultez notre guide « [VMware Storage vMotion](/pages/
 ### Étape 17 : Sauvegarder vos charges de travail
 
 Une fois vos VM en production, sécurisez-les avec un plan de sauvegarde.
+
+Vous disposez de 2 options :
+
+- **Option 1** : Utilisez **Veeam Backup as a Service** si vous souhaitez une solution de sauvegarde managée intégrée à votre HPC.
+- **Option 2** : Déployez votre propre serveur Veeam Backup et utilisez **Veeam Backup & Replication for Public Cloud**.
 
 ## Aller plus loin
 

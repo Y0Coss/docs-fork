@@ -1,7 +1,7 @@
 ---
 title: Move2Cloud - Migrate VMware workloads to OVHcloud Hosted Private Cloud with Zerto
 excerpt: "Learn how to migrate your on-premises VMware workloads to an OVHcloud Hosted Private Cloud environment using Zerto Virtual Replication"
-updated: 2025-07-10
+updated: 2025-07-16
 ---
 
 ## Objective
@@ -150,7 +150,7 @@ Zerto components require specific vSphere roles and permissions to function. You
 
 Details on required permissions are available in Zerto’s documentation:
 
-[Zerto User Permissions](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/User_Permissions.htm){.external}
+[Roles and Permissions Within Zerto](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Roles_and_Permissions_Within_.htm){.external}
 
 ### Step 5: Build the target network
 
@@ -325,6 +325,11 @@ See [VMware Storage vMotion](/pages/hosted_private_cloud/hosted_private_cloud_po
 ### Step 17: Back up your workloads
 
 Once your VMs are in production, secure them with a backup plan.
+
+You have 2 options:
+
+- **Option 1**: Use **Veeam Backup as a Service** if you want a managed backup solution integrated with your HPC.
+- **Option 2**: Deploy your own Veeam Backup server and use **Veeam Backup & Replication for Public Cloud**.
 
 ## Go further
 

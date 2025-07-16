@@ -1,7 +1,7 @@
 ---
 title: Move2Cloud - Migrate VMware workloads to OVHcloud SecNumCloud Hosted Private Cloud with Zerto
 excerpt: "Learn how to migrate on-premises VMware workloads to a SecNumCloud-qualified Hosted Private Cloud using Zerto Virtual Replication"
-updated: 2025-07-10
+updated: 2025-07-16
 ---
 
 ## Objective
@@ -69,7 +69,7 @@ This network design will be recreated in your OVHcloud HPC tenant using NSX-T ov
 
 You can find more about network planning in [NSX-T - First steps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
-For additional guidance from Zerto, refer to [Planning Your Installation](https://help.zerto.com/bundle/Install.VC.HTML/page/Planning_Your_Installation.htm){.external}.
+For additional guidance from Zerto, refer to [Installing the Zerto Solution](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm){.external}.
 
 ### Step 2: Plan Hosted Private Cloud resources
 
@@ -155,7 +155,7 @@ Zerto components require specific vSphere roles and permissions to function. You
 
 Details on required permissions are available in Zerto’s documentation:
 
-[Zerto User Permissions](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/User_Permissions.htm){.external}
+[Roles and Permissions Within Zerto](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Roles_and_Permissions_Within_.htm){.external}
 
 ### Step 5: Build the target network
 
@@ -330,11 +330,10 @@ See [VMware Storage vMotion](/pages/hosted_private_cloud/hosted_private_cloud_po
 
 Once your VMs are in production, secure them with a backup plan.
 
-#### Option 1: Veeam Backup as a Service
-Use [Veeam Backup as a Service](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/vmware_veeam_backup_as_a_service) if you want a managed backup solution integrated with your HPC.
+You have 2 options:
 
-#### Option 2: Self-managed Veeam with Enterprise license
-Deploy your own Veeam Backup server and use [Veeam Backup & Replication for Public Cloud](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/public_cloud_storage_veeam_backup_replication).
+- **Option 1**: Use **Veeam Backup as a Service** if you want a managed backup solution integrated with your HPC.
+- **Option 2**: Deploy your own Veeam Backup server and use **Veeam Backup & Replication for Public Cloud**.
 
 ## Go further
 
