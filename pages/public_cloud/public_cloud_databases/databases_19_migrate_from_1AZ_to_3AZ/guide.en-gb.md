@@ -126,12 +126,12 @@ For more detailed information on the deployment modes and their technical specif
 
 After your new 3-AZ database service has been successfully provisioned, it's crucial to validate its deployment and ensure your applications can connect to it.
 
-1\. Test the connection to your new service:
+1. Test the connection to your new service:
 
 - Use a database client (e.g., psql for PostgreSQL, mysql for MySQL) or a simple script to verify that you can connect to the new 3-AZ service's endpoint using its credentials.
 - Confirm that your data has been successfully migrated and is accessible.
 
-2\. Configure your application to use the new service:
+2. Configure your application to use the new service:
 
 - Update your application's configuration files or environment variables to point to the new 3-AZ database service's connection string (host, port, username, password).
 - Restart your application to apply the changes.
@@ -149,7 +149,7 @@ Follow these instructions to delete the old 1-AZ service:
 > Via the OVHcloud Control Panel
 >> Navigate to your list of engine instances, click on the `...`{.action} button on the engine instance line and click on the `Delete`{.action} button to permanently delete the service.
 >>
->> ![databases - delete the 1-AZ engine instance](images/databases_delete_1-AZ.png)
+>> ![databases - delete the 1-AZ engine instance](images/databases_delete_1az.png)
 >>
 > Via the OVHcloud API
 >> To delete your engine instance, use the following API call:
