@@ -49,7 +49,7 @@ This 1U configuration supports Cascade Lake CPUs and SAS SSD-only storage, desig
     <tr><td rowspan="3">Processor</td><td>CPU Intel Cascade Lake 6226R</td></tr>
     <tr><td>CPU Intel Cascade Lake 6242R</td></tr>
     <tr><td>CPU Intel Cascade Lake 6248R</td></tr>
-    <tr><td rowspan="1">Memory</td><td>There is no memory limitation due to Nutanix Certification. Any equivalent memory compliant with motherboard can be usable.</td></tr>
+    <tr><td rowspan="1">Memory</td><td>There is no memory limitation due to Nutanix Certification. Any equivalent memory compliant with motherboard can be used.</td></tr>
     <tr><td rowspan="1">OS Drive</td><td>Intel D3-S4510 Sata SSD 480gb - ref. SSDSCKKB480G801</td></tr>
     <tr><td rowspan="3">Storage Drive (Only SAS SSD)</td><td>Samsung SAS SSD PM1643a 3.84TB ref MZILT3T8HBLS/007</td></tr>
     <tr><td>Samsung SAS SSD PM1643 3.84TB ref MZILT3T8HALS-00007</td></tr>
@@ -58,7 +58,6 @@ This 1U configuration supports Cascade Lake CPUs and SAS SSD-only storage, desig
     <tr><td rowspan="1">NIC</td><td>ConnectX-5 NIC card for OCP2.0 25GbE dual-port SFP28, PCIe3.0 x8</td></tr>
   </tbody>
 </table>
-
 
 ### OVHcloud-Scale-G2-EMR-01
 
@@ -74,15 +73,14 @@ This 1U configuration supports Emerald Rapids CPUs and NVMe-only storage, design
     <tr><td rowspan="3">Processor</td><td>CPU INTEL Emerald Rapids XEON6526Y</td></tr>
     <tr><td>CPU INTEL Emerald Rapids XEON6542Y</td></tr>
     <tr><td>CPU INTEL Emerald Rapids XEON6554S</td></tr>
-    <tr><td rowspan="1">Memory</td><td>There is no memory limitation due to Nutanix Certification. Any equivalent from T4 SCALE BOM is usable.</td></tr>
+    <tr><td rowspan="1">Memory</td><td>TThere is no memory limitation due to Nutanix Certification. Any equivalent from NF5280M5 BOM is usable.</td></tr>
     <tr><td rowspan="1">OS Drive</td><td>DD 2.5in SSD NVMe 960GB 64gbps PM9A3 512n Samsung ref MZQL2960HCJR-00A07</td></tr>
     <tr><td rowspan="1">OS Drive (alt.)</td><td>DD 2.5in SSD NVMe 960GB 64gbps 7450PRO 512n Micron ref MTFDKCC960TFR-1BC15ABYY</td></tr>
     <tr><td rowspan="3">Storage Drive (Only NVME)</td><td>DD 2.5in SSD NVMe 1.92TB 64gbps PM9A3 512n Samsung ref MZQL21T9HCJR-00A07</td></tr>
     <tr><td> 2.5in SSD NVMe 3.84TB 64gbps PM9A3 512n Samsung ref MZQL23T8HCLS-00A07</td></tr>
     <tr><td> 2.5in SSD NVMe 7.68TB 64gbps PM9A3 512n Samsung ref MZQL27T6HBLA-00A07</td></tr>
-    <tr><td rowspan="1">Storage Controller</td><td>X</td></tr>
-    <tr><td rowspan="1">NIC</td><td> NVIDIA 2xSFP28 25GbE OCP 3.0 ref CX-6 LX CRYPTO - SECURE BOOT 900-9X625-0083-SB0</td></tr>
-    <tr><td> BROADCOM 2xSFP28 25GbE PCIe 4.0 x8 ref P225P BCM957414A4142CC</td></tr>
+<tr><td rowspan="2">NIC</td><td>NVIDIA 2xSFP28 25GbE OCP 3.0 ref CX-6 LX CRYPTO - SECURE BOOT 900-9X625-0083-SB0</td></tr>
+<tr><td>BROADCOM 2xSFP28 25GbE PCIe 4.0 x8 ref P225P BCM957414A4142CC</td></tr>
     <tr><td rowspan="1">Power Supply</td><td> AC 1U T4 850W FSP YH5851-1EBR2A0D</td></tr>
     <tr><td rowspan="1">TPM</td><td>TPM ASROCK SPI 2.0</td></tr>
   </tbody>
@@ -107,7 +105,6 @@ This 1U configuration supports Emerald Rapids CPUs and NVMe-only storage, design
     <tr><td rowspan="3">Storage Drive (Only NVME)</td><td>DD 2.5in SSD NVMe 1.92TB 64gbps PM9A3 512n Samsung ref MZQL21T9HCJR-00A07</td></tr>
     <tr><td> 2.5in SSD NVMe 3.84TB 64gbps PM9A3 512n Samsung ref MZQL23T8HCLS-00A07</td></tr>
     <tr><td> 2.5in SSD NVMe 7.68TB 64gbps PM9A3 512n Samsung ref MZQL27T6HBLA-00A07</td></tr>
-    <tr><td rowspan="1">Storage Controller</td><td>X</td></tr>
     <tr><td rowspan="1">NIC</td><td> NVIDIA 2xSFP28 25GbE OCP 3.0 ref CX-6 LX CRYPTO - SECURE BOOT 900-9X625-0083-SB0</td></tr>
   </tbody>
 </table>
