@@ -32,7 +32,7 @@ For more information, refer to the following links:
 ## Harware compatibility
 
 > [!success]
-> Dual sourcing has been secured for all components of hardware platforms.
+> Dual sourcing has been secured for all components of hardware platforms. This ensures continuity of supply, reduces risk of shortages, and strengthens infrastructure resilience.
 
 ### OVHcloud-HGR-G1-CL-01
 
