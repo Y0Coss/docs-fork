@@ -1,21 +1,21 @@
 ---
-title: "Technical capabilities and limitations of Public VCF aaS (aka Managed VCD)"
-excerpt: "Learn about the technical capabilities and limitations of Public VCF aaS (aka Managed VCD)"
+title: "Technical capabilities and limitations of Public VCF aaS (aka ManagedPublic VCF as-a-Service)"
+excerpt: "Learn about the technical capabilities and limitations of Public VCF aaS (aka ManagedPublic VCF as-a-Service)"
 updated: 2025-05-13
 ---
 
 ## Objective
 
-**This guide explains the technical capabilities and limitations of Public VCF aaS (aka Managed VCD), including resource constraints and configuration restrictions.**
+**This guide explains the technical capabilities and limitations of Public VCF aaS (aka ManagedPublic VCF as-a-Service), including resource constraints and configuration restrictions.**
 
 ## Requirements
 
-Before getting started, review the following guides to better understand VMware Cloud Director:
+Before getting started, review the following guides to better understand Public VCF as-a-Service:
 
-- [VMware Cloud Director - Fundamental Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
-- [VMware Cloud Director - Network Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts)
-- [Creating a VM on VMware Cloud Director](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
-- [Creating network components via VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
+- [Public VCF as-a-Service - Fundamental Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
+- [Public VCF as-a-Service - Network Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts)
+- [Creating a VM on Public VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-first-vm-creation)
+- [Creating network components viaPublic VCF as-a-Service](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
 
 
 ## Instructions

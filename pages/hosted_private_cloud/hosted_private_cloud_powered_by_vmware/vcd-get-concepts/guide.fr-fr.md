@@ -1,18 +1,18 @@
 ---
-title: "VMware Cloud Director - Les concepts fondamentaux de VCD"
-excerpt: "Decouvrez les concepts fondamentaux de VMware Cloud Director"
+title: "Public VCF as-a-Service - Les concepts fondamentaux dePublic VCF as-a-Service"
+excerpt: "Decouvrez les concepts fondamentaux de Public VCF as-a-Service"
 updated: 2024-12-19
 ---
 
 ## Objectif
 
-**Ce guide vous détaille les fondamentaux de VMware Cloud Director (VCD) managé par OVHcloud.**
+**Ce guide vous détaille les fondamentaux de Public VCF as-a-Service managé par OVHcloud.**
 
 ## Concept fondamentaux
 
-Dans cette section, nous allons établir les bases essentielles de VMware Cloud Director (VCD).
+Dans cette section, nous allons établir les bases essentielles de Public VCF as-a-Service.
 
-En définissant ces principes de manière claire et concise, nous allons fournir les bases nécessaires pour une utilisation efficace et réussie de VMware Cloud Director. Que ce soit pour les administrateurs cherchant à déployer des infrastructures complexes ou pour les utilisateurs souhaitant accéder aux ressources rapidement. Cette exploration des concepts de base de VCD constitue un point de départ essentiel.
+En définissant ces principes de manière claire et concise, nous allons fournir les bases nécessaires pour une utilisation efficace et réussie de Public VCF as-a-Service. Que ce soit pour les administrateurs cherchant à déployer des infrastructures complexes ou pour les utilisateurs souhaitant accéder aux ressources rapidement. Cette exploration des concepts de base dePublic VCF as-a-Service constitue un point de départ essentiel.
 
 ### Organisations
 
@@ -36,7 +36,7 @@ Il est important de noter qu'une organisation peut disposer de plusieurs centres
 
 ### Réseaux de centre de données virtuels d'organisations
 
-Un réseau vDC est encapsulé dans un centre de données (virtuels) spécifique créé avec VMware Cloud Director (VCD), et il est accessible à toutes les vApps de cette organisation. Ce réseau permet aux différentes vApps d'une organisation de communiquer entre elles de manière transparente. Il peut être configuré afin de se connecter à un réseau externe ou maintenu isolé et interne à l'organisation.
+Un réseau vDC est encapsulé dans un centre de données (virtuels) spécifique créé avec Public VCF as-a-Service, et il est accessible à toutes les vApps de cette organisation. Ce réseau permet aux différentes vApps d'une organisation de communiquer entre elles de manière transparente. Il peut être configuré afin de se connecter à un réseau externe ou maintenu isolé et interne à l'organisation.
 
 Seuls les administrateurs système ont le privilège de créer de tels réseaux, mais les administrateurs d'organisation sont en mesure de gérer les configurations des réseaux de centre de données virtuel d'organisation, y compris les services réseau qu'ils offrent.
 
@@ -58,15 +58,15 @@ De plus, les administrateurs d'organisation ont la capacité de copier des élé
 
 <a name="key-features"></a>
 
-### Fonctionnalités de VMware Cloud Director chez OVHcloud
+### Fonctionnalités de Public VCF as-a-Service chez OVHcloud
 
-Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud sur ses 3 offres de VMware Cloud Director.
+Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud sur ses 3 offres de Public VCF as-a-Service.
 
 |              | Advanced Network & Security | vSAN Storage |
 |:------------:|:---------------------------:|:------------:|
-| VCD Standard |              -              |       -      |
-| VCD Advanced |              ✅             |       -     |
-| VCD Premium  |              ✅             |       ✅      |
+|Public VCF as-a-Service Standard |              -              |       -      |
+|Public VCF as-a-Service Advanced |              ✅             |       -     |
+|Public VCF as-a-Service Premium  |              ✅             |       ✅      |
 
 #### Cluster Management
 
@@ -96,7 +96,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 |               Features              	| Standard 	| Advanced 	| Premium 	|                                                 Comments                                                	|
 |:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------------------------------------------------------------:	|
-|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in a VCD Organisation Manage roles/permissions for Organisation users           	|
+|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in aPublic VCF as-a-Service Organisation Manage roles/permissions for Organisation users           	|
 | Identity Provider Integration - SSO 	|          	|          	|         	| in Roadmap (via OVHcloud uIAM service)                                                                  	|
 | vCPU over-allocation                	|     ✅    	|     ✅    	|    ✅    	| Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
 
@@ -109,7 +109,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 | Private Network - vRack support   | ✅        	| ✅        	| ✅       	| In Roadmap                                                                                                                                                                                                	 |
 | Routing & Switching IPv6        	 |          	|          	|         	| in Roadmap                                                                                                                                                                                         	        |
 | VPN                             	 |          	| ✅        	| ✅       	| L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	        |
-| Load Balancing                  	 |          	|          	|         	| Not supported with native VCD network capabilities                                                                                                                                                 	        |
+| Load Balancing                  	 |          	|          	|         	| Not supported with nativePublic VCF as-a-Service network capabilities                                                                                                                                                 	        |
 | Advanced Load Balancing         	 |          	|          	|         	| in Roadmap                                                                                                                                                                                         	        |                                                                                          	|
 
 #### Security

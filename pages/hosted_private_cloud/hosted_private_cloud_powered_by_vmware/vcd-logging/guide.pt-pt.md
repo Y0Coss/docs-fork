@@ -1,12 +1,12 @@
 ---
-title: "VMware Cloud Director - Logging in to your organization (EN)"
+title: "Public VCF as-a-Service - Logging in to your organization (EN)"
 excerpt: "How to log in to your organization and change your password"
 updated: 2024-04-16
 ---
 
 ## Objective
 
-**This guide provides step-by-step instructions on how to log in to VMware Cloud Director.**
+**This guide provides step-by-step instructions on how to log in to Public VCF as-a-Service.**
 
 ## Requirements
 
@@ -17,13 +17,13 @@ updated: 2024-04-16
 
 ### First login
 
-Open your web browser and go to the VCD login page. Enter your organization name (provided in the account creation email).
+Open your web browser and go to thePublic VCF as-a-Service login page. Enter your organization name (provided in the account creation email).
 
 ![First page connection](images/vcd-organization-connection.png){.thumbnail}
 
 You will now be prompted to enter your username and password in the appropriate fields (this information is provided in the creation email).
 
-Click the `Log in`{.action} button to access VMware Cloud Director.
+Click the `Log in`{.action} button to access Public VCF as-a-Service.
 
 ![Login connection](images/vcd-login-connection.png){.thumbnail}
 
