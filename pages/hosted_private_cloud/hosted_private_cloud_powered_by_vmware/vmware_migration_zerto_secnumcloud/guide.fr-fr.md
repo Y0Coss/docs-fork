@@ -1,7 +1,7 @@
 ---
 title: Move2Cloud - Migration de charges de travail VMware vers OVHcloud Hosted Private Cloud SecNumCloud avec Zerto
 excerpt: "Découvrez comment migrer des charges VMware on-premises vers un Hosted Private Cloud qualifié SecNumCloud à l’aide de Zerto Virtual Replication"
-updated: 2025-07-16
+updated: 2025-07-17
 ---
 
 ## Objectif
