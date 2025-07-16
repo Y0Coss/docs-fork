@@ -73,7 +73,7 @@ This 1U configuration supports Emerald Rapids CPUs and NVMe-only storage, design
     <tr><td rowspan="3">Processor</td><td>CPU INTEL Emerald Rapids XEON6526Y</td></tr>
     <tr><td>CPU INTEL Emerald Rapids XEON6542Y</td></tr>
     <tr><td>CPU INTEL Emerald Rapids XEON6554S</td></tr>
-    <tr><td rowspan="1">Memory</td><td>TThere is no memory limitation due to Nutanix Certification. Any equivalent from NF5280M5 BOM is usable.</td></tr>
+    <tr><td rowspan="1">Memory</td><td>There is no memory limitation due to Nutanix Certification. Any equivalent from NF5280M5 BOM is usable.</td></tr>
     <tr><td rowspan="1">OS Drive</td><td>DD 2.5in SSD NVMe 960GB 64gbps PM9A3 512n Samsung ref MZQL2960HCJR-00A07</td></tr>
     <tr><td rowspan="1">OS Drive (alt.)</td><td>DD 2.5in SSD NVMe 960GB 64gbps 7450PRO 512n Micron ref MTFDKCC960TFR-1BC15ABYY</td></tr>
     <tr><td rowspan="3">Storage Drive (Only NVME)</td><td>DD 2.5in SSD NVMe 1.92TB 64gbps PM9A3 512n Samsung ref MZQL21T9HCJR-00A07</td></tr>
