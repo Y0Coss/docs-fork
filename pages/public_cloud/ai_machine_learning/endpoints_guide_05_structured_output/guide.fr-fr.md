@@ -57,7 +57,7 @@ The examples provided during this guide can be used with one of the following en
 
 ### Authentication & rate limiting
 
-Most of the examples provided in this guide are using the anynomous authentication which makes it simpler to use but may cause rate limiting issues.
+Most of the examples provided in this guide are using the anonymous authentication which makes it simpler to use but may cause rate limiting issues.
 If you wish to enable authentication using your own token, simply specify your API key within the requests.
 Follow the following instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) for more information on authentication.
 
