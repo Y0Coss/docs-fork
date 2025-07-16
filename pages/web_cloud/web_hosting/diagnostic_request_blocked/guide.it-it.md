@@ -1,7 +1,7 @@
 ---
 title: "Cosa fare se viene visualizzata la pagina 'Your request has been blocked'?"
 excerpt: "Questa guida ti mostra la procedura da seguire se sul tuo sito Web appare la pagina 'Your request has been blocked'"
-updated: 2025-07-11
+updated: 2025-07-16
 ---
 
 <style>
