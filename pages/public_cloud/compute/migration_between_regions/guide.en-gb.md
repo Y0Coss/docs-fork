@@ -22,14 +22,21 @@ This guide explains how to migrate a Public Cloud instance from one region to an
 > To find out more, consult the documentation: [Comparison and resilience of Deployment Modes - Understanding 3-AZ / 1-AZ / Local Zones](/pages/public_cloud/public_cloud_cross_functional/deployment_modes_comparison_resilience_details)
 >
 
-### Étape 1. Backup your instance 
+### Étape 1. Backup your instance
 
 Start by creating a backup of your instance to be migrated, or use an existing one if it's still valid.
 
 OVHcloud offers two types of backup, with different behaviors depending on the type of migration desired:
 
 - Local backup: requires manual transfer if you're migrating to another region or AZ.
-- Remote backup - recommended: automatically managed by OVHcloud, replicated in the chosen region (AZ). No manual transfer required.
+- Remote backup - recommended: automatically managed by OVHcloud, the local backup is replicated in the selected region. No manual transfer required.
+
+> [!primary]
+>
+> If your local backup was performed in a 3AZ region and you wish to recreate the instance in another AZ in the same region, no transfer is required.
+>
+> Local backups are accessible from all availability zones within a 3AZ region. You can proceed directly to the instance recreation stage.
+>
 
 > [!tabs]
 > Via the OVHcloud Control Panel

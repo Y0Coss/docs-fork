@@ -29,7 +29,14 @@ Commencez par créer une sauvegarde de votre instance à migrer, ou utilisez-en 
 OVHcloud propose deux types de sauvegardes, avec des comportements différents selon le type de migration souhaité :
 
 - Sauvegarde locale : nécessitent un transfert manuel si vous migrez vers une autre région ou AZ.
-- Sauvegarde distante (backup distant) - recommandée : gérée automatiquement par OVHcloud, elle est répliquée dans la région (AZ) choisi. Aucun transfert manuel n’est requis.
+- Sauvegarde distante (backup distant) - recommandée : gérée automatiquement par OVHcloud, la sauvegarde locale est répliquée dans la région choisi. Aucun transfert manuel n’est requis.
+
+> [!primary]
+>
+> Si votre sauvegarde locale a été effectuée dans une région 3AZ et que vous souhaitez recréer l’instance dans une autre AZ de cette même région, aucun transfert n’est nécessaire.
+>
+> Les sauvegardes locales sont accessibles depuis toutes les zones de disponibilité d’une région 3AZ. Vous pouvez directement passer à l’étape de recréation de l’instance.
+>
 
 > [!tabs]
 > Via l'espace client OVHcloud
