@@ -79,14 +79,14 @@ This step helps you determine the required compute, storage, and network resourc
 
 Review your current infrastructure to calculate how many vCPUs and how much RAM you will need in the target environment.
 
-Use your existing pCPU/vCPU consolidation ratio to size the number of `ESXi hosts`{.action} required.
+Use your existing pCPU/vCPU consolidation ratio to size the number of `ESXi hosts` required.
 
 #### Step 2.2: Define storage capacity
 
 Based on your workloads, select the most appropriate storage type:
 
-- `NFS datastores`{.action} for general-purpose workloads
-- `vSAN`{.action} for performance-intensive applications
+- `NFS datastores` for general-purpose workloads
+- `vSAN` for performance-intensive applications
 
 Estimate total disk space needed, plus redundancy if applicable.  
 If your workloads require high IOPS, vSAN is the preferred option.
@@ -101,14 +101,14 @@ Plan how your virtual network will be recreated using NSX-T:
 
 If you need to expose services on the internet, you can:
 
-- Request public IPs via your `Hosted Private Cloud`{.action}.
+- Request public IPs via your `Hosted Private Cloud`.
 - Migrate your existing IP ranges using the [Bring Your Own IP (BYOIP)](/links/network/byoip) feature.
 
 ### Step 3: Enable access to the vCenter
 
 Access to vCenter is restricted by default in all OVHcloud HPC environments.
 
-You must explicitly allow your admin IPs to reach the `vCenter`{.action} endpoint.
+You must explicitly allow your admin IPs to reach the `vCenter` endpoint.
 
 To do so:
 
@@ -125,7 +125,7 @@ This step ensures that administrators and tools like Zerto have the correct acce
 
 #### Step 4.1: Use OVHcloud IAM
 
-Set up roles and permissions in your `Hosted Private Cloud`{.action} using `OVHcloud IAM`.
+Set up roles and permissions in your `Hosted Private Cloud` using `OVHcloud IAM`.
 
 > [!warning]
 > **OVHcloud IAM is not available in SecNumCloud (SNC), PCI-DSS, or HDS environments.**
@@ -158,7 +158,7 @@ Before starting any VM replication or failover test, your Hosted Private Cloud n
 
 #### Step 5.1: Recreate your VLANs and segments
 
-When your HPC is delivered, it comes with a default distributed virtual switch and at least one VLAN. You can add your own VLANs via the `vRack`{.action}.
+When your HPC is delivered, it comes with a default distributed virtual switch and at least one VLAN. You can add your own VLANs via the `vRack`.
 
 If you are using NSX-T, plan your segmentation as follows:
 
@@ -175,7 +175,7 @@ If using NSX-T, you must define how traffic will route between segments and to t
 - A **Tier-1 Gateway** handles internal routing.
 - A **Tier-0 Gateway** connects your environment to upstream services or external networks.
 
-These gateways are automatically deployed when NSX-T is enabled. You can review and modify them in the `NSX Manager`{.action} interface.
+These gateways are automatically deployed when NSX-T is enabled. You can review and modify them in the `NSX Manager` interface.
 
 Set up routing and services based on your flow matrix defined in Step 1.
 

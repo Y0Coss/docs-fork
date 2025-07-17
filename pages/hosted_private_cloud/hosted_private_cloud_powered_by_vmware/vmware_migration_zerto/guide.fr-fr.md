@@ -70,7 +70,7 @@ Cette structure réseau sera répliquée dans votre Hosted Private Cloud à l'ai
 
 Retrouvez plus d'informations sur la planification du réseau dans notre guide « [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) ».
 
-Pour obtenir des conseils supplémentaires de Zerto, référez-vous à la documentation suivante : « [Installer la solution Zerto](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm){.external} ».
+Pour obtenir des conseils supplémentaires sur l'utilisation de Zerto, référez-vous à la documentation suivante : [Installer la solution Zerto](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm){.external}.
 
 ### Étape 2 : Planifier les ressources de votre Hosted Private Cloud
 
@@ -80,14 +80,14 @@ Cette étape vous aide à déterminer les ressources de calcul, de stockage et d
 
 Examinez votre infrastructure actuelle pour calculer la quantité de vCPU et de RAM nécessaires dans l'environnement cible.
 
-Utilisez votre ratio de consolidation pCPU/vCPU existant pour dimensionner le nombre de `ESXi hosts`{.action} requis.
+Utilisez votre ratio de consolidation pCPU/vCPU existant pour dimensionner le nombre de `ESXi hosts` requis.
 
 #### Étape 2.2 : Définir la capacité de stockage
 
 En fonction de vos charges de travail, sélectionnez le type de stockage le plus approprié :
 
-- `Datastores NFS`{.action} pour les charges de travail générales.
-- `vSAN`{.action} pour les applications exigeantes en performances.
+- `Datastores NFS` pour les charges de travail générales.
+- `vSAN` pour les applications exigeantes en performances.
 
 Estimez l'espace disque total nécessaire, plus la redondance le cas échéant.  
 Si vos charges de travail nécessitent des IOPS élevées, vSAN est l'option privilégiée.
@@ -102,14 +102,14 @@ Planifiez la recréation de votre réseau virtuel à l'aide de NSX-T :
 
 Si vous devez exposer des services sur Internet, vous pouvez :
 
-- Demander des adresses IP publiques via votre `Hosted Private Cloud`{.action}.
+- Demander des adresses IP publiques via votre `Hosted Private Cloud`.
 - Migrer vos plages d'adresses IP existantes grâce à la fonctionnalité [Bring Your Own IP (BYOIP)](/links/network/byoip).
 
 ### Étape 3 : Activer l'accès au vCenter
 
 L'accès au vCenter est restreint par défaut dans tous les environnements HPC OVHcloud.
 
-Vous devez explicitement autoriser vos adresses IP d'administration à atteindre le point de terminaison `vCenter`{.action}.
+Vous devez explicitement autoriser vos adresses IP d'administration à atteindre le point de terminaison `vCenter`.
 
 Pour ce faire :
 
@@ -126,7 +126,7 @@ Cette étape garantit que les administrateurs et les outils comme Zerto ont un a
 
 #### Étape 4.1 : Utiliser la solution IAM (Identity and Access Management) d’OVHcloud
 
-Configurez les rôles et permissions dans votre `Hosted Private Cloud`{.action} via la solution **IAM d'OVHcloud**.
+Configurez les rôles et permissions dans votre `Hosted Private Cloud`{.action} via la solution **IAM** d'OVHcloud.
 
 > [!warning]
 > **La solution IAM d'OVHcloud n’est pas disponible dans les environnements qualifiés SecNumCloud (SNC), PCI-DSS ou HDS.**
@@ -136,7 +136,7 @@ Pour des instructions détaillées, référez-vous au [guide de configuration IA
 
 #### Étape 4.2 : Connecter votre propre solution IAM
 
-Si vous préférez utiliser votre fournisseur d'identité existant (comme Active Directory ou Okta), déployez un service d'annuaire directement dans votre locataire OVHcloud.
+Si vous préférez utiliser votre fournisseur d'identité existant (comme Active Directory ou Okta), déployez un service d'annuaire directement dans votre tenant OVHcloud.
 
 Vous pouvez également associer la solution IAM d’OVHcloud à votre serveur ADFS existant pour activer l’authentification unique basée sur SAML.
 
@@ -153,18 +153,18 @@ Les détails sur les autorisations requises sont disponibles dans la documentati
 
 ### Étape 5 : Construire le réseau cible
 
-Avant de commencer tout test de réplication ou de basculement de VM, votre réseau Hosted Private Cloud doit être prêt à recevoir les charges de travail.
+Avant de commencer tout test de réplication ou de failover de VM, votre réseau Hosted Private Cloud doit être prêt à recevoir les charges de travail.
 
 Cela inclut notamment la réplication de la structure source, la création des segments de réseau appropriés et la configuration des règles de pare-feu nécessaires.
 
 #### Étape 5.1 : Recréer vos VLAN et segments
 
-Lors de la livraison de votre HPC, celui-ci est configuré par défaut avec un commutateur virtuel distribué et au moins un VLAN. Vous pouvez ajouter vos propres VLAN via le `vRack`{.action}.
+Lors de la livraison de votre HPC, celui-ci est configuré par défaut avec un commutateur virtuel distribué et au moins un VLAN. Vous pouvez ajouter vos propres VLAN via le `vRack`.
 
 Si vous utilisez NSX-T, planifiez votre segmentation comme suit :
 
 - Définissez vos segments (VLAN-backed ou overlay).
-- Affectez chaque application à un lot d'applications ou à une zone de service correspondant.
+- Affectez chaque application à un lot d'applications ou à une zone de service correspondante.
 - Reproduisez les plans d’adressage IP définis dans votre inventaire
 
 Référez-vous à notre guide « [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) pour obtenir plus de détails sur la création de segments et leur affectation aux machines virtuelles ».
@@ -176,7 +176,7 @@ Si vous utilisez NSX-T, vous devez définir comment le trafic sera routé entre 
 - Une **Gateway Tier-1** gère le routage interne.
 - Une **Gateway Tier-0** relie votre environnement à des services en amont ou à des réseaux externes.
 
-Ces passerelles sont automatiquement déployées lorsque NSX-T est activé. Vous pouvez les consulter et les modifier depuis l'interface `NSX Manager`{.action}.
+Ces passerelles sont automatiquement déployées lorsque NSX-T est activé. Vous pouvez les consulter et les modifier depuis l'interface `NSX Manager`.
 
 Paramétrez des routages et des services basés sur votre matrice de flux définie à l'étape 1.
 
@@ -224,7 +224,7 @@ OVHcloud déploiera les éléments suivants :
 
 - Un ZVM (Zerto Virtual Manager) dédié.
 - Un ZVRA (Zerto Virtual Replication Appliance) sur chaque hôte ESXi.
-- Un firewall NSX-T géré par OVH avec des règles préconfigurées pour les ports Zerto.
+- Un firewall NSX-T géré par OVHcloud avec des règles préconfigurées pour les ports Zerto.
 
 Tous les détails sont disponibles dans notre guide « [Utiliser Zerto entre OVHcloud et une plateforme tierce](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud) ».
 
@@ -263,7 +263,7 @@ Une fois les ZVM en ligne et la communication validée :
 
 Un VPG regroupe toutes les VM qui doivent être répliquées et basculées ensemble.
 
-Retrouvez plus d'informations dans le guide Zerto suivant : « [Créer un VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm){.external} ».
+Retrouvez plus d'informations dans le guide Zerto suivant : [Créer un VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm){.external}.
 
 ### Étape 11 : Surveiller l'état de la réplication
 
@@ -271,19 +271,19 @@ Surveillez chaque VPG depuis l'interface utilisateur Zerto :
 
 - Confirmez que la réplication est active.
 - Vérifiez le RPO (Recovery Point Objective).
-- Résolvez les alertes avant d'exécuter un test ou un basculement.
+- Résolvez les alertes avant d'exécuter un test ou un failover.
 
-Si besoin, consultez le guide Zerto suivant : « [Surveillance des groupes de protection virtuels](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Monitoring_Virtual_Protection_Groups.htm){.external} ».
+Si besoin, consultez le guide Zerto suivant : [Surveillance des groupes de protection virtuels](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Monitoring_Virtual_Protection_Groups.htm){.external}.
 
-### Étape 12 : Exécuter un test de basculement
+### Étape 12 : Exécuter un test de failover
 
-Avant de migrer les charges de travail de production, testez le comportement de vos VM dans le locataire OVHcloud.
+Avant de migrer les charges de travail de production, testez le comportement de vos VM dans le tenant OVHcloud.
 
 Utilisez l'option `Failover Test` dans l'interface utilisateur Zerto. Cela permet de mettre sous tension les machines virtuelles répliquées sans impacter la production.
 
 Retrouvez ci-dessous les guides de Zerto à ce sujet :
 
-- [Démarrage et arrêt des tests de basculement](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm){.external}
+- [Démarrage et arrêt des tests de failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm){.external}
 - [Que se passe-t-il après avoir démarré un test ?](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/What_Happens_After_Starting_a_Test.htm){.external}
 
 ### Étape 13 : Exécuter la migration prévue
@@ -293,7 +293,7 @@ Lorsque vous êtes prêt à migrer :
 1. Utilisez l'opération **Move** dans Zerto pour migrer chaque VPG.
 2. Choisissez la stratégie de validation (manuelle, automatique, annulation).
 
-Pour obtenir des instructions complètes, référez-vous au guide Zerto suivant : « [Processus de déplacement](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm){.external} ».
+Pour obtenir des instructions complètes, référez-vous au guide Zerto suivant : [Processus de déplacement](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm){.external}.
 
 ### Étape 14 : Valider la disponibilité de l'application
 
@@ -309,7 +309,7 @@ Si tous les tests réussissent, validez l'opération dans Zerto.
 
 Si quelque chose ne fonctionne pas, vous pouvez annuler le déplacement et revenir à votre environnement local.
 
-Voir le guide Zerto suivant : « [Déplacement des machines virtuelles protégées vers le site distant](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Moving_Protected_Virtual_Machines_to_the_Remote_Site.htm){.external} ».
+Voir le guide Zerto suivant : [Déplacement des machines virtuelles protégées vers le site distant](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Moving_Protected_Virtual_Machines_to_the_Remote_Site.htm){.external}.
 
 ### Étape 16 : Utiliser Storage vMotion pour placer les VM sur le stockage cible
 
@@ -329,8 +329,8 @@ Une fois vos VM en production, sécurisez-les avec un plan de sauvegarde.
 
 Vous disposez de 2 options :
 
-- **Option 1** : Utilisez **Veeam Backup as a Service** si vous souhaitez une solution de sauvegarde managée intégrée à votre HPC.
-- **Option 2** : Déployez votre propre serveur Veeam Backup et utilisez **Veeam Backup & Replication for Public Cloud**.
+- **Option 1** : Utiliser **Veeam Backup as a Service** si vous souhaitez une solution de sauvegarde managée intégrée à votre HPC.
+- **Option 2** : Déployer votre propre serveur Veeam Backup et utiliser **Veeam Backup & Replication for Public Cloud**.
 
 ## Aller plus loin
 

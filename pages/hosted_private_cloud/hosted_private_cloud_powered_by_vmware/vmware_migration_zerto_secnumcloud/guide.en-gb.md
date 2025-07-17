@@ -79,14 +79,14 @@ This step helps you determine the required compute, storage, and network resourc
 
 Review your current infrastructure to calculate how many vCPUs and how much RAM you will need in the target environment.
 
-Use your existing pCPU/vCPU consolidation ratio to size the number of `ESXi hosts`{.action} required.
+Use your existing pCPU/vCPU consolidation ratio to size the number of `ESXi hosts` required.
 
 #### Step 2.2: Define storage capacity
 
 Based on your workloads, select the most appropriate storage type:
 
-- `NFS datastores`{.action} for general-purpose workloads
-- `vSAN`{.action} for performance-intensive applications
+- `NFS datastores` for general-purpose workloads
+- `vSAN` for performance-intensive applications
 
 Estimate total disk space needed, plus redundancy if applicable.  
 If your workloads require high IOPS, vSAN is the preferred option.
@@ -167,7 +167,7 @@ In SecNumCloud environments, VLAN-backed segments and vRack are not available.
 
 When your HPC is delivered, it comes with a default distributed virtual switch. You must use NSX-T overlay segments only.
 
-Use `NSX Manager`{.action} to:
+Use `NSX Manager` to:
 
 - Create overlay segments for each application batch or service zone.
 - Reproduce the IP addressing plan from your inventory.
@@ -182,7 +182,7 @@ In SNC environments, NSX-T gateways are used only for internal routing or secure
 - A **Tier-1 Gateway** handles internal routing between overlay segments.
 - **Tier-0 Gateways** may be deployed but only for approved VPN uplinks.
 
-Use the `NSX Manager`{.action} interface to define and manage your gateway configuration.
+Use the `NSX Manager` interface to define and manage your gateway configuration.
 
 No external/public IP connectivity is allowed.
 

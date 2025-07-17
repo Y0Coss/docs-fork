@@ -66,11 +66,11 @@ Notez la configuration réseau complète utilisée par vos VM sources :
 - Les plages d'adresses IP à conserver.
 - Les flux autorisés (IP source/destination, ports, protocoles).
 
-Cette conception réseau sera recréée dans votre locataire HPC OVHcloud à l'aide de segments de superposition NSX-T.
+Cette conception réseau sera recréée dans votre tenant HPC OVHcloud à l'aide de segments de superposition NSX-T.
 
 Retrouvez plus d'informations sur la planification du réseau dans notre guide « [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) ».
 
-Pour obtenir des conseils supplémentaires de Zerto, référez-vous à la documentation suivante : « [Installer la solution Zerto](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm){.external} ».
+Pour obtenir des conseils supplémentaires sur l'utilisation de Zerto, référez-vous à la documentation suivante : [Installer la solution Zerto](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm){.external}.
 
 ### Étape 2 : Planifier les ressources de votre Hosted Private Cloud
 
@@ -80,14 +80,14 @@ Cette étape vous aide à déterminer les ressources de calcul, de stockage et d
 
 Examinez votre infrastructure actuelle pour calculer combien de vCPU et de RAM vous aurez besoin dans l'environnement cible.
 
-Utilisez votre ratio de consolidation pCPU/vCPU existant pour dimensionner le nombre de `ESXi hosts`{.action} requis.
+Utilisez votre ratio de consolidation pCPU/vCPU existant pour dimensionner le nombre de `ESXi hosts` requis.
 
 #### Étape 2.2 : Définir la capacité de stockage
 
 En fonction de vos charges de travail, sélectionnez le type de stockage le plus approprié :
 
-- `Datastores NFS`{.action} pour les charges de travail générales.
-- `vSAN`{.action} pour les applications exigeantes en performances.
+- `Datastores NFS` pour les charges de travail générales.
+- `vSAN` pour les applications exigeantes en performances.
 
 Estimez l'espace disque total nécessaire, plus la redondance le cas échéant.  
 Si vos charges de travail nécessitent des IOPS élevées, vSAN est l'option privilégiée.
@@ -133,7 +133,7 @@ Pour des instructions détaillées, référez-vous au [guide de configuration IA
 
 #### Étape 4.2 : Connecter votre propre solution IAM
 
-Si vous préférez utiliser votre fournisseur d'identité existant (comme Active Directory ou Okta), déployez un service d'annuaire directement dans votre locataire OVHcloud.
+Si vous préférez utiliser votre fournisseur d'identité existant (comme Active Directory ou Okta), déployez un service d'annuaire directement dans votre tenant OVHcloud.
 
 Vous pouvez également associer la solution IAM d’OVHcloud à votre serveur ADFS existant pour activer l’authentification unique basée sur SAML.
 
@@ -150,7 +150,7 @@ Les détails sur les autorisations requises sont disponibles dans la documentati
 
 ### Étape 5 : Construire le réseau cible
 
-Avant de commencer tout test de réplication ou de basculement de VM, votre réseau Hosted Private Cloud doit être prêt à recevoir les charges de travail. 
+Avant de commencer tout test de réplication ou de failover de VM, votre réseau Hosted Private Cloud doit être prêt à recevoir les charges de travail. 
 
 Cela inclut notamment la réplication de la structure source, la création des segments de réseau appropriés et la configuration des règles de pare-feu nécessaires.
 
@@ -160,7 +160,7 @@ Dans les environnements SecNumCloud, les segments sauvegardés par VLAN et le vR
 
 Lors de la livraison de votre HPC, celui-ci est configuré par défaut avec un commutateur virtuel distribué. Vous devez utiliser uniquement des segments de superposition NSX-T.
 
-Utilisez `NSX Manager`{.action} pour :
+Utilisez `NSX Manager` pour :
 
 - Créer des segments de superposition pour chaque lot d'applications ou zone de service.
 - Reproduire le plan d'adressage IP depuis votre inventaire.
@@ -175,7 +175,7 @@ Dans les environnements SNC, les passerelles NSX-T sont utilisées uniquement po
 - Une **Gateway Tier-1** gère le routage interne entre les segments de superposition.
 - Les **Gateways Tier-0** peuvent être déployées, mais uniquement pour les liaisons VPN montantes approuvées.
 
-Utilisez l'interface `NSX Manager`{.action} pour définir et gérer la configuration de votre passerelle.
+Utilisez l'interface `NSX Manager` pour définir et gérer la configuration de votre passerelle.
 
 Aucune connectivité IP externe/publique n'est autorisée.
 
@@ -189,7 +189,7 @@ NSX-T fournit un **pare-feu distribué** qui contrôle le trafic est-ouest entre
 
 Si vous n'utilisez pas NSX-T, mettez en œuvre des règles similaires à l'aide du pare-feu de l'appliance virtuelle de votre choix (par exemple : FortiVM, Stormshield ou Palo Alto VM-Series).
 
-Vous retrouverez un aperçu de la façon dont NSX gère ces fonctionnalités dans notre guide : « [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) ».
+Vous retrouverez un aperçu de la façon dont NSX gère ces fonctionnalités dans notre guide : [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
 > [!primary]
 >
@@ -204,7 +204,7 @@ Vos charges de travail migrées nécessiteront des services d'infrastructure de 
 
 Assurez-vous que toutes les machines virtuelles et tous les services utilisent une source de temps cohérente. Vous pouvez configurer vos charges de travail HPC pour utiliser `ntp.ovh.net` comme serveur de temps fiable.
 
-#### Étape 6.2 : Déployer DNS
+#### Étape 6.2 : Déployer les DNS
 
 Si vos applications s'appuient sur une résolution DNS interne, déployez un contrôleur de domaine ou un serveur DNS dédié au sein de votre environnement HPC. Il peut s’agir d’un clone de votre serveur on-premises ou d’une nouvelle instance.
 
@@ -214,7 +214,7 @@ Si votre authentification est basée sur Active Directory, déployez un contrôl
 
 Vous pouvez également établir une communication sécurisée entre l'AD on-premises et le client pour éviter la duplication des identités.
 
-### Étape 7 : Installer et activer Zerto sur le locataire OVHcloud
+### Étape 7 : Installer et activer Zerto sur le tenant OVHcloud
 
 Zerto doit être installé par OVHcloud dans les environnements SecNumCloud.
 
@@ -229,7 +229,7 @@ Tous les détails sont disponibles dans notre guide « [Utiliser Zerto entre OVH
 
 Vous devez installer manuellement les composants Zerto sur votre infrastructure on-premises.
 
-Suivez la procédure décrite dans le guide Zerto suivant : « [Réaliser une installation rapide](https://help.zerto.com/bundle/Install.VC.HTML/page/Performing_an_Express_Installation.htm){.external} ».
+Suivez la procédure décrite dans le guide Zerto suivant : [Réaliser une installation rapide](https://help.zerto.com/bundle/Install.VC.HTML/page/Performing_an_Express_Installation.htm){.external}.
 
 Les principaux composants sont les suivants :
 
@@ -260,7 +260,7 @@ Une fois les ZVM en ligne et la communication validée :
 
 Un VPG regroupe toutes les VM qui doivent être répliquées et basculées ensemble.
 
-Retrouvez plus d'informations dans le guide Zerto suivant : « [Créer un VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm){.external} ».
+Retrouvez plus d'informations dans le guide Zerto suivant : [Créer un VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm){.external} .
 
 ### Étape 11 : Surveiller l'état de la réplication
 
@@ -268,19 +268,19 @@ Surveillez chaque VPG depuis l'interface utilisateur Zerto :
 
 - Confirmez que la réplication est active.
 - Vérifiez le RPO (Recovery Point Objective).
-- Résolvez les alertes avant d'exécuter un test ou un basculement.
+- Résolvez les alertes avant d'exécuter un test ou un failover.
 
-Si besoin, consultez le guide Zerto suivant : « [Surveillance des groupes de protection virtuels](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Monitoring_Virtual_Protection_Groups.htm){.external} ».
+Si besoin, consultez le guide Zerto suivant : [Surveillance des groupes de protection virtuels](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Monitoring_Virtual_Protection_Groups.htm){.external}.
 
-### Étape 12 : Exécuter un test de basculement
+### Étape 12 : Exécuter un test de failover
 
-Avant de migrer les charges de travail de production, testez le comportement de vos VM dans le locataire OVHcloud.
+Avant de migrer les charges de travail de production, testez le comportement de vos VM dans le tenant OVHcloud.
 
 Utilisez l'option `Failover Test` dans l'interface utilisateur Zerto. Cela permet de mettre sous tension les machines virtuelles répliquées sans impacter la production.
 
 Retrouvez ci-dessous les guides de Zerto à ce sujet :
 
-- [Démarrage et arrêt des tests de basculement](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm){.external}
+- [Démarrage et arrêt des tests de failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm){.external}
 - [Que se passe-t-il après avoir démarré un test ?](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/What_Happens_After_Starting_a_Test.htm){.external}
 
 ### Étape 13 : Exécuter la migration prévue
@@ -306,7 +306,7 @@ Si tous les tests réussissent, validez l'opération dans Zerto.
 
 Si quelque chose ne fonctionne pas, vous pouvez annuler le déplacement et revenir à votre environnement local.
 
-Voir le guide Zerto suivant : « [Déplacement des machines virtuelles protégées vers le site distant](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Moving_Protected_Virtual_Machines_to_the_Remote_Site.htm){.external} ».
+Voir le guide Zerto suivant : [Déplacement des machines virtuelles protégées vers le site distant](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Moving_Protected_Virtual_Machines_to_the_Remote_Site.htm){.external}.
 
 ### Étape 16 : Utiliser Storage vMotion pour placer les VM sur le stockage cible
 
@@ -326,8 +326,8 @@ Une fois vos VM en production, sécurisez-les avec un plan de sauvegarde.
 
 Vous disposez de 2 options :
 
-- **Option 1** : Utilisez **Veeam Backup as a Service** si vous souhaitez une solution de sauvegarde managée intégrée à votre HPC.
-- **Option 2** : Déployez votre propre serveur Veeam Backup et utilisez **Veeam Backup & Replication for Public Cloud**.
+- **Option 1** : Utiliser **Veeam Backup as a Service** si vous souhaitez une solution de sauvegarde managée intégrée à votre HPC.
+- **Option 2** : Déployer votre propre serveur Veeam Backup et utiliser **Veeam Backup & Replication for Public Cloud**.
 
 ## Aller plus loin
 
