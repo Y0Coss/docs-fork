@@ -341,21 +341,21 @@ The available conditions are:
 |     resource.Type      |          EQ <br>IN <br>STARTS_WITH <br>ENDS_WITH           |    string    |  Filter on resource types  |      "resource.Type.In": "dnsZone,vps"      |
 |       request.IP       |                   EQ <br>IN <br>IN_RANGE                   |    IP v4     |  Filter on client source IP  |    "request.IP.IN_RANGE": "10.23.0.0/16"    |
 
-Dates use time zones based on IANA database names (<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>). If not specified, the date will be evaluated in UTC time zone.
+Dates use time zones based on [IANA database names](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). If not specified, the date will be evaluated in UTC time zone.
 
 The available operators for condition types are:
 
-- **EQ** : The value must exactly match the specified value
-- **BEFORE** or **LT** (less than) : The value must be strictly less than
-- **AFTER** or **GE** (greater or equal) : The value must be equal to or greater than
-- **GT** (greater than) : The value must be strictly greater than
-- **LE** (less or equal) : The value must be equal to or less than
-- **IN** : The value must be included in the list
-- **START_WITH** : The value must start with the specified value
-- **END_WITH** : The value must end with the specified value
-- **IN_RANGE** : The value must be in the specified IP subnet
+- **EQ**: The value must exactly match the specified value
+- **BEFORE** or **LT** (less than): The value must be strictly less than
+- **AFTER** or **GE** (greater or equal): The value must be equal to or greater than
+- **GT** (greater than): The value must be strictly greater than
+- **LE** (less or equal): The value must be equal to or less than
+- **IN**: The value must be included in the list
+- **START_WITH**: The value must start with the specified value
+- **END_WITH**: The value must end with the specified value
+- **IN_RANGE**: The value must be in the specified IP subnet
 
-If not specified, the default operator is **EQ**
+If not specified, the default operator is **EQ**.
 
 ### Identities
 

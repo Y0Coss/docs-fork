@@ -292,8 +292,9 @@ Les politiques ont été créées avec succès. Maintenant, "***user1***" peut *
 
 #### Conditions
 
-Il est possible d'ajouter des conditions aux politiques. La politique ne sera valable que si les conditions sont validée.
-Les conditions sont ajoutées dans une polique d'accès sous la forme :
+Il est possible d'ajouter des conditions aux politiques. La politique ne sera valable que si les conditions sont validées.
+
+Les conditions sont ajoutées dans une polique d'accès sous la forme suivante :
 
 ```json
 {
@@ -321,9 +322,9 @@ Les conditions sont ajoutées dans une polique d'accès sous la forme :
 }
 ```
 
-Par exemple une politique avec cette condition est valable si les ressources ciblés sont de type **dnsZone** avec un tag **"environment:prod"**, sauf les **Samedi et Dimanche** sur le fuseau horaire de Paris
+L'exemple ci-dessus illustre une politique avec une condition valable si les ressources ciblés sont de type **dnsZone** avec un tag **"environment:prod"**, sauf les **Samedi et Dimanche** sur le fuseau horaire de Paris.
 
-Le champ **operator** permet de préciser la manière dont vont être évaluée les conditions
+Le champ **operator** permet de préciser la manière dont vont être évaluées les conditions :
 
 - **AND**: Toutes les conditions doivent être validées
 - **NOT**: Exactement aucune condition ne doit être validée
@@ -332,31 +333,31 @@ Le champ **operator** permet de préciser la manière dont vont être évaluée 
 
 Les conditions disponibles sont :
 
-|       Condition        |                         Operateur                          | Type de donnée |            Description             |                    Example                    |
+|       Condition        |                         Opérateur                          | Type de donnée |            Description             |                    Exemple                    |
 | :--------------------: | :--------------------------------------------------------: | :------------: | :--------------------------------: | :-------------------------------------------: |
-|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |   YYYY-MM-DD   |  Filtre sur les jours calendaire   |  "date.Date(America/New_York)": "2024-12-25"  |
+|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |   YYYY-MM-DD   |  Filtre sur les jours calendaires  |  "date.Date(America/New_York)": "2024-12-25"  |
 |  date(location).Hour   | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |      int       |       Filtre sur les heures        |    "date(Europe/Paris).Hour.IN" : "7,8,9"     |
 | date(location).WeekDay | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |     string     | Filtre sur les jours de la semaine | "date(Europe/Berlin).WeekDay.AFTER": "monday" |
 | resource.Tag(tag_key)  |              EQ <br>STARTS_WITH <br>ENDS_WITH              |     string     |        Filtre sur les tags         |       "resource.Tag(environment): "dev"       |
 |     resource.Name      |          EQ <br>IN <br>STARTS_WITH <br>ENDS_WITH           |     string     | Filtre sur les noms de ressources  |      "resource.Name.Start_with": "vps-"       |
-|     resource.Type      |          EQ <br>IN <br>STARTS_WITH <br>ENDS_WITH           |     string     |  Filtre sur le type de ressources  |       "resource.Type.In": "dnsZone,vps"       |
+|     resource.Type      |          EQ <br>IN <br>STARTS_WITH <br>ENDS_WITH           |     string     |  Filtre sur le type de ressource   |       "resource.Type.In": "dnsZone,vps"       |
 |       request.IP       |                   EQ <br>IN <br>IN_RANGE                   |     IP v4      |  Filtre sur l'IP source du client  |     "request.IP.IN_RANGE": "10.23.0.0/16"     |
 
-Les dates utilisent des localisations basées sur les noms de la base IANA (<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>). Si non précisé, la date sera évaluée sur le fuseau horaire UTC.
+Les dates utilisent des localisations basées sur les [noms de la base IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). Si cela n'est pas précisé, la date sera évaluée sur le fuseau horaire UTC.
 
 Les opérateurs disponibles pour les types de conditions sont :
 
 - **EQ** : La valeur doit être exactement celle indiquée
-- **BEFORE** ou **LT** (less than) : La valeur doit être strictement inférieur
-- **AFTER** ou **GE** (greater or equal) : La valeur doit être égale ou supérieur
-- **GT** (greater than) : La valeur doit être strictement supérieur
-- **LE** (less or equal) : La valeur doit être égale ou inférieur
+- **BEFORE** ou **LT** (less than) : La valeur doit être strictement inférieure
+- **AFTER** ou **GE** (greater or equal) : La valeur doit être égale ou supérieure
+- **GT** (greater than) : La valeur doit être strictement supérieure
+- **LE** (less or equal) : La valeur doit être égale ou inférieure
 - **IN** : La valeur doit être comprise dans la liste
 - **START_WITH** : La valeur doit commencer par celle indiquée
 - **END_WITH** : La valeur doit terminer par celle indiquée
 - **IN_RANGE** : La valeur doit être dans le subnet IP indiqué
 
-Si non précisé, l'opérateur par défaut est **EQ**
+S'il n'est pas précisé, l'opérateur par défaut est **EQ**.
 
 ### Identités
 
