@@ -19,11 +19,11 @@ Além do direcionamento IP privado, o [vRack](https://www.ovh.pt/solucoes/vrack/
 >
 > Este artigo detalha a configuração de endereços Additional IP numa rede vRack. Se você estiver procurando instruções sobre como configurar endereços Additional IP com um endereço IP principal (na interface de rede pública), consulte os seguintes artigos:
 >
-> - IPv4:
+> IPv4:
 >   - [Configurar um endereço IP como alias num servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
 >   - [Configurar um endereço IP como alias num servidor VPS](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
 >
-> - IPv6:
+> IPv6:
 >   - [Configurar IPv6 em servidores dedicados](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 >   - [Configurar o IPv6 num VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
 >   - [Configurar o IPv6 numa instância Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
