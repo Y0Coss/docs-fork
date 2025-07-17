@@ -1,7 +1,7 @@
 ---
 title: Attaching a Floating IP to a Public Cloud instance
 excerpt: Find out how a Floating IP address functions and how to configure it
-updated: 2025-07-11
+updated: 2025-07-17
 ---
 
 <style>
