@@ -1,7 +1,7 @@
 ---
 title: "Hosted Private Cloud VMware Lifecycle Policy"
 excerpt: "Lifecycle policy for VMware on OVHcloud"
-updated: 2025-07-17
+updated: 2025-07-18
 ---
 
 > [!warning]

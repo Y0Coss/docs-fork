@@ -1,7 +1,7 @@
 ---
 title: "Cycle de vie de la solution VMware on OVHcloud"
 excerpt: "VMware on OVHcloud"
-updated: 2025-07-17
+updated: 2025-07-18
 ---
 
 > [!warning]
