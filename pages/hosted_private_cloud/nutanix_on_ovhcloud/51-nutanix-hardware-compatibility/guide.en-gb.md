@@ -2,6 +2,7 @@
 title: 'Nutanix hardware compatibility - OVHcloud configurations'
 excerpt: 'Detailed overview of qualified hardware components for OVHcloud Nutanix platforms'
 updated: 2025-07-17
+flag: hidden
 ---
 
 ## Objective
