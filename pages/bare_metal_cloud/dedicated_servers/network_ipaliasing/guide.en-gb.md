@@ -9,6 +9,15 @@ updated: 2024-11-05
 > Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
 >
 
+> [!primary]
+> This article is about Additional IPv4 configuration on a public interface. You can also configure Primary IPv6 addresses on your dedicated servers using [this guide](pages/bare_metal_cloud/dedicated_servers/network_ipv6).
+> 
+> Please note that Additional IP addresses can also be configured in a vRack private network, which allows interconnection over a wide range of OVHcloud services, offering more flexibility. <br>
+> You can find more information about configuring Additional IP addresses in a vRack in the following guides: <br>
+> IPv4: [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack); <br>
+> IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
+
 ## Objective
 
 IP aliasing is a special network configuration for your OVHcloud dedicated servers, which allows you to associate multiple IP addresses with a single network interface.

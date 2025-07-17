@@ -4,6 +4,15 @@ excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
 updated: 2024-09-11
 ---
 
+> [!primary]
+> This article is about Primary IPv6 configuration on a public interface. You can also configure Additional IP addresses on your VPS using [this guide](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+> 
+> Please note that Additional IP addresses can also be configured in a vRack private network, which allows interconnection over a wide range of OVHcloud services, offering more flexibility. <br>
+> You can find more information about configuring Additional IP addresses in a vRack in the following guides: <br>
+> IPv4: [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack); <br>
+> IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
+
 ## Objective
 
 IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server is delivered with an IPv4 address and an IPv6 address. However, only IPv4 is configured by default. If you need to configure IPv6, it has to be set up manually on your system.

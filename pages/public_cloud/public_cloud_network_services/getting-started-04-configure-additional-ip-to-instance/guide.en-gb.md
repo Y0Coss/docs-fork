@@ -10,11 +10,12 @@ updated: 2025-04-28
 >
 
 > [!primary]
-> This article is about Additional IPv4 configuration. You can also configure IPv6 addresses on your Public Cloud instances using [this guide](public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
->
-> You can also use our vRack feature, which allows you to set up a virtual private network hosted on our infrastructures, on which you can connect a wide range of OVHcloud services. <br>
-> For Public Cloud instances that support vRack connectivity, you can configure a public IP block for usage in a vRack. You can find the instructions in this guide: <br>
-> [Configuring a public IP block in a vRack on a Public Cloud instance](public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance)
+> This article is about Additional IPv4 configuration on a public interface. You can also configure IPv6 addresses on your Public Cloud instances using [this guide](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+> 
+> Please note that Additional IP addresses can also be configured in a vRack private network, which allows interconnection over a wide range of OVHcloud services, offering more flexibility. <br>
+> You can find more information about configuring Additional IP addresses in a vRack for usage with Public Cloud instances in the following guides: <br>
+> [Configuring a public IP block in a vRack on a Public Cloud instance](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance); <br>
+> [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objective

@@ -9,6 +9,15 @@ updated: 2025-04-28
 > Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
 >
 
+> [!primary]
+> This article is about Additional IPv4 configuration. You can also configure Primary IPv6 addresses on your dedicated servers using [this guide](pages/bare_metal_cloud/dedicated_servers/network_ipv6).
+> 
+> Please note that Additional IP addresses can also be configured in a vRack private network, which allows interconnection over a wide range of OVHcloud services, offering more flexibility. <br>
+> You can find more information about configuring Additional IP addresses in a vRack in the following guides: <br>
+> IPv4: [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack); <br>
+> IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
+
 ## Objective
 
 Additional IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.

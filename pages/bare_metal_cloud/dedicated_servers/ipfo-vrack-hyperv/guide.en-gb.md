@@ -4,6 +4,10 @@ excerpt: "How to use Hyper-V with Additional IPs over a vRack"
 updated: 2021-02-25
 ---
 
+> [!primary]
+> This article is about Additional IPv4 configuration over a vRack. You can also configure Additional IPv6 addresses on your vRack using [this guide](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> 
+
 ## Objective
 
 **This guide will take you through the process of installing Hyper-V, associating a virtual switch, and configuring a VM to work with Additional IPs over a vRack.**
