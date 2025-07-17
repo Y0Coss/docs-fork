@@ -1,20 +1,18 @@
 ---
 title: Move2Cloud - Migrate VMware workloads to OVHcloud SecNumCloud Hosted Private Cloud with Zerto
-excerpt: "Learn how to migrate on-premises VMware workloads to a SecNumCloud-qualified Hosted Private Cloud using Zerto Virtual Replication."
-updated: 2025-07-10
+excerpt: "Learn how to migrate on-premises VMware workloads to a SecNumCloud-qualified Hosted Private Cloud using Zerto Virtual Replication"
+updated: 2025-07-17
 ---
 
 ## Objective
 
-This guide explains how to migrate your on-premises VMware workloads to an **OVHcloud Hosted Private Cloud (HPC) SecNumCloud environment** using **Zerto Virtual Replication**.
+This guide explains how to migrate your on-premises VMware workloads to an **OVHcloud SecNumCloud Hosted Private Cloud (HPC)** using **Zerto Virtual Replication**.
 
->[!primary]
-> **This guide applies to Hosted Private Cloud environments qualified for SecNumCloud (SNC).**  
-> Some features such as OVHcloud IAM are not available in SNC environments.
-> 
-> For environments that are NOT part of SecNumCloud (SNC), please refer to the dedicated guide:
-> [Move2Cloud - Migrate VMware workloads to OVHcloud Hosted Private Cloud with Zerto](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto_secnumcloud)
-
+> [!primary]
+> **This guide applies to SecNumCloud (SNC) qualified Hosted Private Cloud environments.**
+> Some features available in standard environments like **OVHcloud IAM**, **vRack** or the **advanced NSX-T network** may be restricted or unavailable here.
+> For standard environments, refer to the dedicated guide:
+> [Move2Cloud - Migrate VMware workloads to OVHcloud Hosted Private Cloud with Zerto](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto).
 
 ## Requirements
 
@@ -28,18 +26,18 @@ Before you begin, make sure you have:
 - Access to the Zerto console and vCenter interfaces on both sides.
 
 >[!warning]
-> As of May 2025, **Zerto does not support replication of virtual machines with VMEncrypt enabled**.
+> As of May 2025, **Zerto does not support replication of virtual machines with VMEncrypt enabled**.  
 > vSAN’s encryption at rest is supported. You can also encrypt your VMs after migration is complete.
 
-## In practice
+## Instructions
 
-![Move2CloudZerto](images/Move2Cloud-Zerto.png){.thumbnail}
+![Move2CloudZerto](/pages/assets/screens/other/zerto/move2cloud-zerto.png){.thumbnail}
 
-## Step 1: Define your migration scope
+### Step 1: Define your migration scope
 
 At the end of this step, you will have a structured list of workloads to migrate and the associated network design.
 
-### Step 1.1: Create an inventory of source VMs
+#### Step 1.1: Create an inventory of source VMs
 
 List all virtual machines to be migrated and collect the following data:
 
@@ -50,16 +48,16 @@ List all virtual machines to be migrated and collect the following data:
 
 This inventory allows you to group VMs into consistent application stacks for batch migration.
 
-### Step 1.2: Group VMs into migration batches
+#### Step 1.2: Group VMs into migration batches
 
-Organize your VMs into logical groups according to application-level dependencies.
+Organize your VMs into logical groups according to application-level dependencies.  
 Each batch should contain all virtual machines required to migrate and operate a single application, such as:
 
 - Web frontend VM
 - Application logic VM
 - Database backend VM
 
-### Step 1.3: Document current network configuration
+#### Step 1.3: Document the current network configuration
 
 Record the full network configuration used by your source VMs:
 
@@ -71,123 +69,93 @@ This network design will be recreated in your OVHcloud HPC tenant using NSX-T ov
 
 You can find more about network planning in [NSX-T - First steps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps).
 
-For additional guidance from Zerto, refer to [Planning Your Installation](https://help.zerto.com/bundle/Install.VC.HTML/page/Planning_Your_Installation.htm){.external}.
+For additional guidance from Zerto, refer to [Installing the Zerto Solution](https://help.zerto.com/bundle/Install.HV.HTML/page/Installing_the_Zerto_Solution.htm){.external}.
 
-## Step 2: Plan Hosted Private Cloud resources
+### Step 2: Plan Hosted Private Cloud resources
 
 This step helps you determine the required compute, storage, and network resources for your HPC environment.
 
-### Step 2.1: Estimate CPU and memory
+#### Step 2.1: Estimate CPU and memory
 
 Review your current infrastructure to calculate how many vCPUs and how much RAM you will need in the target environment.
 
-Use your existing pCPU/vCPU consolidation ratio to size the number of `ESXi hosts`{.action} required.
+Use your existing pCPU/vCPU consolidation ratio to size the number of `ESXi hosts` required.
 
-### Step 2.2: Define storage capacity
+#### Step 2.2: Define storage capacity
 
 Based on your workloads, select the most appropriate storage type:
 
-- `NFS datastores`{.action} for general-purpose workloads
-- `vSAN`{.action} for performance-intensive applications
+- `NFS datastores` for general-purpose workloads
+- `vSAN` for performance-intensive applications
 
-Estimate total disk space needed, plus redundancy if applicable.
+Estimate total disk space needed, plus redundancy if applicable.  
 If your workloads require high IOPS, vSAN is the preferred option.
 
-### Step 2.3: Plan the target network
+#### Step 2.3: Plan the target network
 
 Plan your virtual network using NSX-T:
 
-- Only **overlay segments** are supported; VLAN-backed segments are not allowed
-- Define Tier-0 and Tier-1 gateway needs based on internal routing
-- Configure firewall rules for east-west traffic
+- Only **overlay segments** are supported; VLAN-backed segments are not allowed.
+- Define Tier-0 and Tier-1 gateway needs based on internal routing.
+- Configure firewall rules for east-west traffic.
 
 No direct internet exposure is permitted. All access must go through approved bastion or VPN links.
 
 > [!primary]
 > The [Bring Your Own IP (BYOIP)](/links/network/byoip) feature is not available in SecNumCloud environments.
 
-## Step 3: Enable access to the vCenter
+### Step 3: Enable access to the vCenter
 
 Access to `vCenter`{.action} is restricted by default in SecNumCloud environments.
 
 You must request access from OVHcloud Support.
 
-1. Open a support ticket from the [OVHcloud Control Panel](/links/manager)
-2. Select your `Hosted Private Cloud`{.action}
-3. Provide the list of source IPs that require access
+1. Open a support ticket from the [OVHcloud Control Panel](/links/manager).
+2. Select your `Hosted Private Cloud`{.action}.
+3. Provide the list of source IPs that require access.
 
 For step-by-step instructions, refer to [Authorize IPs to connect to vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter).
 
-## Step 4: Configure roles and permissions
+### Step 4: Configure roles and permissions
 
-This step ensures that administrators and tools like Zerto have the correct access to vSphere resources within your OVHcloud Hosted Private Cloud.
+As IAM is not available in SecNumCloud environments, you must configure roles and permissions for your VMware environment using **local accounts** within the OVHcloud SecNumCloud tenant.
 
-### Step 4.1: Use OVHcloud IAM
+> [!primary]
+> All accounts in a SecNumCloud environment must be secured with **two-factor authentication (2FA)**.
 
-OVHcloud IAM is the recommended way to manage access in standard Hosted Private Cloud environments.
+For detailed instructions on how to enroll local accounts with 2FA, refer to the official guide:
+[Enabling secure access to the vSphere interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure)
 
-To configure access:
-
-1. Log in to the [OVHcloud Control Panel](/links/manager)
-2. Go to `Hosted Private Cloud`{.action}
-3. Open the `Users and Roles`{.action} section
-4. Assign roles based on your security policy (e.g., Read-only, Admin)
-
-You can define users, groups, and their permissions using the OVHcloud Identity and Access Management service.
-
-For a complete walkthrough, refer to [Getting Started with IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
-
-> [!warning]
-> OVHcloud IAM is not available in SecNumCloud, PCI-DSS or HDS-qualified environments.
-
-### Step 4.2: Connect your own IAM solution
-
-If you prefer to use your existing identity provider (e.g., Active Directory or Okta), deploy a directory service directly in your OVHcloud tenant.
-
-You can also link OVHcloud IAM with your existing ADFS server to enable SAML-based SSO.
-
-To do so, follow [Connect OVHcloud IAM to ADFS](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs).
-
-### Step 4.3: Service accounts for Zerto
-
-Zerto components require specific vSphere roles and permissions to function. You can:
-
-- Create a dedicated `zerto-admin` account in vSphere
-- Assign the necessary privileges to manage replication and recovery
-
-Details on required permissions are available in Zerto’s documentation:
-[Zerto User Permissions](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/User_Permissions.htm){.external}
-
-## Step 5: Build the target network
+### Step 5: Build the target network
 
 Before starting any VM replication or failover test, your Hosted Private Cloud network must be ready to receive the workloads. This includes replicating the source structure, creating the right segments, and preparing firewall rules.
 
-### Step 5.1: Recreate your segments
+#### Step 5.1: Recreate your segments
 
 In SecNumCloud environments, VLAN-backed segments and vRack are not available.
 
 When your HPC is delivered, it comes with a default distributed virtual switch. You must use NSX-T overlay segments only.
 
-Use `NSX Manager`{.action} to:
+Use `NSX Manager` to:
 
-- Create overlay segments for each application batch or service zone
-- Reproduce the IP addressing plan from your inventory
-- Attach segments to the relevant gateways (usually Tier-1)
+- Create overlay segments for each application batch or service zone.
+- Reproduce the IP addressing plan from your inventory.
+- Attach segments to the relevant gateways (usually Tier-1).
 
 Do not expose any segment to the internet. Access must be routed through bastions or private VPN links.
 
-### Step 5.2: Configure NSX-T routing and gateways
+#### Step 5.2: Configure NSX-T routing and gateways
 
 In SNC environments, NSX-T gateways are used only for internal routing or secure VPN-based flows.
 
-- A **Tier-1 Gateway** handles internal routing between overlay segments
-- **Tier-0 Gateways** may be deployed but only for approved VPN uplinks
+- A **Tier-1 Gateway** handles internal routing between overlay segments.
+- **Tier-0 Gateways** may be deployed but only for approved VPN uplinks.
 
-Use the `NSX Manager`{.action} interface to define and manage your gateway configuration.
+Use the `NSX Manager` interface to define and manage your gateway configuration.
 
 No external/public IP connectivity is allowed.
 
-### Step 5.3: Prepare firewall rules
+#### Step 5.3: Prepare firewall rules
 
 NSX-T provides a **distributed firewall (DFW)** that controls east-west traffic between VMs. You should define rules for:
 
@@ -201,38 +169,38 @@ You can find an overview of how NSX handles these features in [NSX-T – First s
 
 > [!primary]
 > 
-> In SecNumCloud, firewall rules must strictly restrict traffic to internal flows or secured VPN entry points. No DNAT/SNAT rules toward the public internet are allowed
+> In SecNumCloud, firewall rules must strictly restrict traffic to internal flows or secured VPN entry points. No DNAT/SNAT rules toward the public internet are allowed.
 >
 
-## Step 6: Deploy core services in the target HPC
+### Step 6: Deploy core services in the target HPC
 
 Your migrated workloads will need basic infrastructure services to function properly once they are running in your Hosted Private Cloud.
 
-### Step 6.1: Deploy NTP
+#### Step 6.1: Deploy NTP
 
 Ensure all VMs and services use a consistent time source. You can configure your HPC workloads to use `ntp.ovh.net` as a reliable time server.
 
-### Step 6.2: Deploy DNS
+#### Step 6.2: Deploy DNS
 
 If your applications rely on internal DNS resolution, deploy a domain controller or dedicated DNS server inside your HPC environment. This can be a clone of your on-prem server or a new instance.
 
-### Step 6.3: Set up authentication services
+#### Step 6.3: Set up authentication services
 
 If your authentication is based on Active Directory, deploy a replica domain controller in the HPC.
 
 You can also establish secure communication between the on-prem AD and the tenant to avoid duplicating identities.
 
-## Step 7: Install and activate Zerto in the OVHcloud tenant
+### Step 7: Install and activate Zerto in the OVHcloud tenant
 
 Zerto must be installed by OVHcloud in SecNumCloud environments.
 
-1. In the `Hosted Private Cloud`{.action} interface, open a support ticket
-2. Request Zerto Virtual Replication for your SNC tenant
-3. Wait for OVHcloud to deploy the ZVM, ZVRAs, and required firewall rules
+1. In the `Hosted Private Cloud`{.action} interface, open a support ticket.
+2. Request Zerto Virtual Replication for your SNC tenant.
+3. Wait for OVHcloud to deploy the ZVM, ZVRAs, and required firewall rules.
 
 Full details: [Zerto Virtual Replication on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_zerto_virtual_replication_customer_to_ovh)
 
-## Step 8: Install Zerto on the source site
+### Step 8: Install Zerto on the source site
 
 You must install Zerto components manually on your on-premises infrastructure.
 
@@ -245,10 +213,10 @@ The main components are:
 
 Ensure that:
 
-- TCP ports 9071, 9081 are open between ZVMs
-- TCP ports 4007, 4008 are open between ZVRAs
+- TCP ports 9071, 9081 are open between ZVMs.
+- TCP ports 4007, 4008 are open between ZVRAs.
 
-## Step 9: Set up the IPsec VPN tunnel
+### Step 9: Set up the IPsec VPN tunnel
 
 Zerto requires **direct communication** between ZVMs and ZVRAs. NAT is not supported.
 
@@ -258,28 +226,28 @@ You can use any compatible device (e.g., Fortinet, Palo Alto, OPNsense).
 
 Details and parameters are available in [Zerto VPN Setup on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_zerto_virtual_replication_customer_to_ovh).
 
-## Step 10: Pair the sites and create VPGs
+### Step 10: Pair the sites and create VPGs
 
 Once ZVMs are online and communication is confirmed:
 
-1. Use the Zerto console to **pair both sites**
-2. Create your first **Virtual Protection Group (VPG)**
+1. Use the Zerto console to **pair both sites**.
+2. Create your first **Virtual Protection Group (VPG)**.
 
 A VPG groups all VMs that should be replicated and failed over together.
 
 More information in [Creating a VPG](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Creating_a_VPG.htm){.external}
 
-## Step 11: Monitor the replication status
+### Step 11: Monitor the replication status
 
 Monitor each VPG from the Zerto UI:
 
-- Confirm that replication is active
-- Check the RPO (Recovery Point Objective)
-- Resolve any alerts before running a test or failover
+- Confirm that replication is active.
+- Check the RPO (Recovery Point Objective).
+- Resolve any alerts before running a test or failover.
 
 Refer to [Monitoring Virtual Protection Groups](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Monitoring_Virtual_Protection_Groups.htm){.external}
 
-## Step 12: Run a test failover
+### Step 12: Run a test failover
 
 Before migrating production workloads, test the behavior of your VMs in the OVHcloud tenant.
 
@@ -290,24 +258,24 @@ Instructions:
 - [Start a test failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/StartingFailoverTest.htm){.external}
 - [Stop a test failover](https://help.zerto.com/bundle/Admin.VC.HTML.10.0_U3/page/What_Happens_After_Starting_a_Test.htm){.external}
 
-## Step 13: Execute the planned migration
+### Step 13: Execute the planned migration
 
 When you are ready to migrate:
 
-1. Use the **Move** operation in Zerto to migrate each VPG
-2. Choose the commit policy (manual, auto, rollback)
+1. Use the **Move** operation in Zerto to migrate each VPG.
+2. Choose the commit policy (manual, auto, rollback).
 
 See [The Move Process](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm){.external} for full instructions.
 
-## Step 14: Validate application availability
+### Step 14: Validate application availability
 
 After the move:
 
-- Verify that all VMs are powered on
-- Test connectivity (AD, DNS, Bastion, internet)
-- Validate each application and service
+- Verify that all VMs are powered on.
+- Test connectivity (AD, DNS, Bastion, internet).
+- Validate each application and service.
 
-## Step 15: Commit or roll back the migration
+### Step 15: Commit or roll back the migration
 
 If all tests succeed, commit the operation in Zerto.
 
@@ -315,27 +283,26 @@ If something is not working, you can cancel the move and roll back to your on-pr
 
 More in [Moving Protected VMs to Remote Site](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/Moving_Protected_Virtual_Machines_to_the_Remote_Site.htm){.external}
 
-## Step 16: Use Storage vMotion to place VMs on target storage
+### Step 16: Use Storage vMotion to place VMs on target storage
 
 After migration, you may want to move some VMs to another datastore or vSAN policy.
 
 Use `Storage vMotion`{.action} via the `vSphere Client`{.action}:
 
-1. Right-click on the VM > `Migrate`{.action}
-2. Select `Change storage only`{.action}
-3. Choose the destination datastore or vSAN policy
+1. Right-click on the VM > `Migrate`{.action}.
+2. Select `Change storage only`{.action}.
+3. Choose the destination datastore or vSAN policy.
 
 See [VMware Storage vMotion](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_storage_vmotion) for full details.
 
-## Step 17: Back up your workloads
+### Step 17: Back up your workloads
 
 Once your VMs are in production, secure them with a backup plan.
 
-### Option 1: Veeam Backup as a Service
-Use [Veeam Backup as a Service](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/vmware_veeam_backup_as_a_service) if you want a managed backup solution integrated with your HPC.
+You have 2 options:
 
-### Option 2: Self-managed Veeam with Enterprise license
-Deploy your own Veeam Backup server and use [Veeam Backup & Replication for Public Cloud](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/public_cloud_storage_veeam_backup_replication).
+- **Option 1**: Use **Veeam Backup as a Service** if you want a managed backup solution integrated with your HPC.
+- **Option 2**: Deploy your own Veeam Backup server and use **Veeam Backup & Replication for Public Cloud**.
 
 ## Go further
 
