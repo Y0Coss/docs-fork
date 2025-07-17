@@ -45,13 +45,13 @@ Les ressources, les groupes de ressources et les actions nécessaires à la cré
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
 
-|**Méthode**|**Chemin**|**Description**|
-| :-: | :-: | :-: |
-|GET|/iam/policy|Récupérer toutes les politiques|
-|POST|/iam/policy|Créer une nouvelle politique|
-|GET|/iam/policy/{policyId}|Récupérer une politique spécifique|
-|PUT|/iam/policy/{policyId}|Mettre à jour une politique existante|
-|DELETE|/iam/policy/{policyId}|Supprimer une politique spécifique|
+| **Méthode** |       **Chemin**       |            **Description**            |
+| :---------: | :--------------------: | :-----------------------------------: |
+|     GET     |      /iam/policy       |    Récupérer toutes les politiques    |
+|    POST     |      /iam/policy       |     Créer une nouvelle politique      |
+|     GET     | /iam/policy/{policyId} |  Récupérer une politique spécifique   |
+|     PUT     | /iam/policy/{policyId} | Mettre à jour une politique existante |
+|   DELETE    | /iam/policy/{policyId} |  Supprimer une politique spécifique   |
 
 #### Récupérer toutes les politiques
 
@@ -95,14 +95,14 @@ Dans cet exemple, le compte "*urn:v1:eu:identity:account:xx1111-ovh*" peut faire
 
 Les éléments des politiques sont définis par des URNs. Ces URNs sont définies par le modèle suivant :
 
-||**URN**|**:**|**version**|**:**|**plaque**|**:**|**type**|**:**|**sous-type**|**:**|**id**|
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-|**Description**|préfixe immuable|:|version du système IAM|:|Plaque où se trouve l'URN|:|Type de l'URN actuelle|:|(optionnel) Sous-type pour les types **identity** ou **resource** |:|Identifiant unique associé à l'URN|
-|**Valeurs possibles**|urn|:|v1|:|eu, ca, us|:|identity, resource, resourceGroup|:|<p>Pour le type **identity** : account, user, group</p><p>Pour le type **resource** : tous les types de ressources</p>|:|Valeur alphanumérique|
-|**Account ID Exemple**|urn|:|v1|:|eu|:|identity|:|account|:|xx1111-ovh|
-|**User group Exemple**|urn|:|v1|:|eu|:|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
-|**VPS Exemple**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
-|**Resource Group Exemple**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
+|                            |     **URN**      | **:** |      **version**       | **:** |        **plaque**         | **:** |             **type**              | **:** |                                                     **sous-type**                                                      | **:** |                **id**                |
+| :------------------------: | :--------------: | :---: | :--------------------: | :---: | :-----------------------: | :---: | :-------------------------------: | :---: | :--------------------------------------------------------------------------------------------------------------------: | :---: | :----------------------------------: |
+|      **Description**       | préfixe immuable |   :   | version du système IAM |   :   | Plaque où se trouve l'URN |   :   |      Type de l'URN actuelle       |   :   |                           (optionnel) Sous-type pour les types **identity** ou **resource**                            |   :   |  Identifiant unique associé à l'URN  |
+|   **Valeurs possibles**    |       urn        |   :   |           v1           |   :   |        eu, ca, us         |   :   | identity, resource, resourceGroup |   :   | <p>Pour le type **identity** : account, user, group</p><p>Pour le type **resource** : tous les types de ressources</p> |   :   |        Valeur alphanumérique         |
+|   **Account ID Exemple**   |       urn        |   :   |           v1           |   :   |            eu             |   :   |             identity              |   :   |                                                        account                                                         |   :   |              xx1111-ovh              |
+|   **User group Exemple**   |       urn        |   :   |           v1           |   :   |            eu             |   :   |             identity              |   :   |                                                         group                                                          |   :   |    xx1111-ovh/admin@mycompany.com    |
+|      **VPS Exemple**       |       urn        |   :   |           v1           |   :   |            ca             |   :   |             resource              |   :   |                                                          vps                                                           |   :   |       vps-5b48d78b.vps.ovh.net       |
+| **Resource Group Exemple** |       urn        |   :   |           v1           |   :   |            us             |   :   |           resourceGroup           |       |                                                                                                                        |   :   | aa0713ab-ed13-4f1a-89a5-32aa0cb936d8 |
 
 Les actions et les URNs peuvent finir par un caractère *wildcard* `*`. Cela permet de faire référence à plusieurs resources ou identités en une seule ligne.
 
@@ -127,6 +127,7 @@ Les actions et les URNs peuvent finir par un caractère *wildcard* `*`. Cela per
     - **deny**: Ensemble des actions explicitement interdites pour les identitités concernant les ressources. Une action interdite sera refusée quelque soient les actions autorisées dans d'autres politiques.
     - **except**: Extension du paramètre d'autorisation **allow**. Ensemble d'actions à ne pas autoriser même si elles sont incluses dans les actions **allow**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard. Contrairement au **deny**, **except** est limité au périmètre d'une seule politique.
 - **permissionsGroups**: Liste des [groupes de permissions](/pages/account_and_service_management/account_information/iam-permission-groups) appliqués à cette politique.
+- **conditions**: Liste des conditions appliquée à la politique
 - **expiredAt**: Date après laquelle la politique sera désactivée.
 - **createdAt**: Date de création de la politique.
 - **updateAt**: Dernière mise à jour de la politique.
@@ -135,9 +136,9 @@ Les actions et les URNs peuvent finir par un caractère *wildcard* `*`. Cela per
 
 Créez une nouvelle politique en utilisant cet appel API :
 
-|**Méthode**|**Chemin**|**Description**|
-| :-: | :-: | :-: |
-|POST|/iam/policy|Créer une nouvelle politique|
+| **Méthode** | **Chemin**  |       **Description**        |
+| :---------: | :---------: | :--------------------------: |
+|    POST     | /iam/policy | Créer une nouvelle politique |
 
 Par exemple, créez une politique autorisant l'utilisateur nommé "*user1*" à faire des actions sur un VPS :
 
@@ -289,6 +290,74 @@ Vérifiez cela avec `GET /iam/policy`:
 
 Les politiques ont été créées avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots)** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***". "***user2***" peut **effectuer toutes les actions vps à l'exception de la suppression des snapshots** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
 
+#### Conditions
+
+Il est possible d'ajouter des conditions aux politiques. La politique ne sera valable que si les conditions sont validée.
+Les conditions sont ajoutées dans une polique d'accès sous la forme :
+
+```json
+{
+  "operator": "AND",
+  "conditions": [
+    {
+        "operator": "MATCH",
+        "values": {
+            "resource.Tag(environment)": "prod",
+            "resource.Type": "dnsZone"
+      }
+    },
+    {
+      "operator": "NOT",
+      "conditions": [
+        {
+            "operator": "MATCH",
+            "values": {
+                "date(Europe/Paris).WeekDay.IN": "Saturday,Sunday"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+Par exemple une politique avec cette condition est valable si les ressources ciblés sont de type **dnsZone** avec un tag **"environment:prod"**, sauf les **Samedi et Dimanche** sur le fuseau horaire de Paris
+
+Le champ **operator** permet de préciser la manière dont vont être évaluée les conditions
+
+- **AND**: Toutes les conditions doivent être validées
+- **NOT**: Exactement aucune condition ne doit être validée
+- **OR**: Au moins une condition doit être validée
+- **MATCH**: Opérateur d'évaluation des conditions
+
+Les conditions disponibles sont :
+
+|       Condition        |                         Operateur                          | Type de donnée |            Description             |                    Example                    |
+| :--------------------: | :--------------------------------------------------------: | :------------: | :--------------------------------: | :-------------------------------------------: |
+|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |   YYYY-MM-DD   |  Filtre sur les jours calendaire   |  "date.Date(America/New_York)": "2024-12-25"  |
+|  date(location).Hour   | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |      int       |       Filtre sur les heures        |    "date(Europe/Paris).Hour.IN" : "7,8,9"     |
+| date(location).WeekDay | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |     string     | Filtre sur les jours de la semaine | "date(Europe/Berlin).WeekDay.AFTER": "monday" |
+| resource.Tag(tag_key)  |              EQ <br>STARTS_WITH <br>ENDS_WITH              |     string     |        Filtre sur les tags         |       "resource.Tag(environment): "dev"       |
+|     resource.Name      |          EQ <br>IN <br>STARTS_WITH <br>ENDS_WITH           |     string     | Filtre sur les noms de ressources  |      "resource.Name.Start_with": "vps-"       |
+|     resource.Type      |          EQ <br>IN <br>STARTS_WITH <br>ENDS_WITH           |     string     |  Filtre sur le type de ressources  |       "resource.Type.In": "dnsZone,vps"       |
+|       request.IP       |                   EQ <br>IN <br>IN_RANGE                   |     IP v4      |  Filtre sur l'IP source du client  |     "request.IP.IN_RANGE": "10.23.0.0/16"     |
+
+Les dates utilisent des localisations basées sur les noms de la base IANA (<https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>). Si non précisé, la date sera évaluée sur le fuseau horaire UTC.
+
+Les opérateurs disponibles pour les types de conditions sont :
+
+- **EQ** : La valeur doit être exactement celle indiquée
+- **BEFORE** ou **LT** (less than) : La valeur doit être strictement inférieur
+- **AFTER** ou **GE** (greater or equal) : La valeur doit être égale ou supérieur
+- **GT** (greater than) : La valeur doit être strictement supérieur
+- **LE** (less or equal) : La valeur doit être égale ou inférieur
+- **IN** : La valeur doit être comprise dans la liste
+- **START_WITH** : La valeur doit commencer par celle indiquée
+- **END_WITH** : La valeur doit terminer par celle indiquée
+- **IN_RANGE** : La valeur doit être dans le subnet IP indiqué
+
+Si non précisé, l'opérateur par défaut est **EQ**
+
 ### Identités
 
 Les politiques s'appliquent aux utilisateurs, qui peuvent être des comptes, des utilisateurs ou des groupes d'utilisateurs.
@@ -299,18 +368,18 @@ Cette section décrit comment récupérer ou créer un utilisateur pour la polit
 
 <https://api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
 
-|**Méthode**|**Chemin**|**Description**|
-| :-: | :-: | :-: |
-|GET|/me/identity/user|Récupérer tous les utilisateurs de ce compte|
-|POST|/me/identity/user|Créer un nouvel utilisateur|
-|GET|/me/identity/user/{user}|Obtenir les détails de cet utilisateur spécifique|
-|PUT|/me/identity/user/{user}|Modifier un utilisateur|
-|DELETE|/me/identity/user/{user}|Supprimer un utilisateur|
-|GET|/me/identity/group|Récupérer tous les groupes de ce compte|
-|POST|/me/identity/group|Créer un nouveau groupe|
-|GET|/me/identity/group/{group}|Obtenir les détails de ce groupe spécifique|
-|PUT|/me/identity/group/{group}|Modifier un groupe|
-|DELETE|/me/identity/group/{group}|Supprimer un groupe|
+| **Méthode** |         **Chemin**         |                  **Description**                  |
+| :---------: | :------------------------: | :-----------------------------------------------: |
+|     GET     |     /me/identity/user      |   Récupérer tous les utilisateurs de ce compte    |
+|    POST     |     /me/identity/user      |            Créer un nouvel utilisateur            |
+|     GET     |  /me/identity/user/{user}  | Obtenir les détails de cet utilisateur spécifique |
+|     PUT     |  /me/identity/user/{user}  |              Modifier un utilisateur              |
+|   DELETE    |  /me/identity/user/{user}  |             Supprimer un utilisateur              |
+|     GET     |     /me/identity/group     |      Récupérer tous les groupes de ce compte      |
+|    POST     |     /me/identity/group     |              Créer un nouveau groupe              |
+|     GET     | /me/identity/group/{group} |    Obtenir les détails de ce groupe spécifique    |
+|     PUT     | /me/identity/group/{group} |                Modifier un groupe                 |
+|   DELETE    | /me/identity/group/{group} |                Supprimer un groupe                |
 
 #### Créer des utilisateurs
 
@@ -386,10 +455,10 @@ Cette section décrit comment récupérer les informations sur les ressources po
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
 
-|**Méthode**|**Chemin**|**Description**|
-| :-: | :-: | :-: |
-|GET|/iam/resource|List all resources|
-|GET|/iam/resource/{resourceId}|Retrieve a resource|
+| **Méthode** |         **Chemin**         |   **Description**   |
+| :---------: | :------------------------: | :-----------------: |
+|     GET     |       /iam/resource        | List all resources  |
+|     GET     | /iam/resource/{resourceId} | Retrieve a resource |
 
 #### Exemple
 
@@ -445,13 +514,13 @@ Pour faciliter la gestion des politiques pour un grand nombre de ressources, il 
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
 
-|**Méthode**|**Chemin**|**Description**|
-| :-: | :-: | :-: |
-|GET|/iam/resourceGroup|Récupérer tous les groupes de ressources|
-|POST|/iam/resourceGroup|Créer un nouveau groupe de ressources|
-|GET|/iam/resourceGroup/{groupId}|Récupérer un groupe de ressources spécifique|
-|PUT|/iam/resourceGroup/{groupId}|Mettre à jour un groupe de ressources existant|
-|DELETE|/iam/resourceGroup/{groupId}|Supprimer un groupe de ressources spécifique|
+| **Méthode** |          **Chemin**          |                **Description**                 |
+| :---------: | :--------------------------: | :--------------------------------------------: |
+|     GET     |      /iam/resourceGroup      |    Récupérer tous les groupes de ressources    |
+|    POST     |      /iam/resourceGroup      |     Créer un nouveau groupe de ressources      |
+|     GET     | /iam/resourceGroup/{groupId} |  Récupérer un groupe de ressources spécifique  |
+|     PUT     | /iam/resourceGroup/{groupId} | Mettre à jour un groupe de ressources existant |
+|   DELETE    | /iam/resourceGroup/{groupId} |  Supprimer un groupe de ressources spécifique  |
 
 #### Récupérer un groupe de ressources
 
@@ -507,9 +576,9 @@ Dans cet exemple, nous pouvons voir que ce groupe de ressources "*urn:v1:eu:reso
 
 Créez un groupe de ressources avec l'API suivante :
 
-|**Méthode**|**Chemin**|**Description**|
-| :-: | :-: | :-: |
-|POST|/iam/resourceGroup|Créer un nouveau groupe de ressources|
+| **Méthode** |     **Chemin**     |            **Description**            |
+| :---------: | :----------------: | :-----------------------------------: |
+|    POST     | /iam/resourceGroup | Créer un nouveau groupe de ressources |
 
 L'exemple suivant crée un groupe de ressources "*Test\_Envrionment*" contenant 2 ressources:
 
@@ -538,9 +607,9 @@ Ces actions sont spécifiques à chaque produit, comme le redémarrage d'un serv
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
 
-|**Méthode**|**Chemin**|**Description**|
-| :-: | :-: | :-: |
-|GET|/iam/reference/action|Récupérer toutes les actions|
+| **Méthode** |      **Chemin**       |       **Description**        |
+| :---------: | :-------------------: | :--------------------------: |
+|     GET     | /iam/reference/action | Récupérer toutes les actions |
 
 #### Exemple
 
@@ -578,9 +647,9 @@ OVHcloud met à disposition des groupes de permissions regroupant toutes les act
 
 Les groupes de permissions sont accessible via l'API suivante :
 
-|**Méthode**|**Chemin**|**Description**|
-| :-: | :-: | :-: |
-|GET|/iam/permissionsGroup|Récupérer tous les groupes de permissions|
+| **Méthode** |      **Chemin**       |              **Description**              |
+| :---------: | :-------------------: | :---------------------------------------: |
+|     GET     | /iam/permissionsGroup | Récupérer tous les groupes de permissions |
 
 ```json
 {
@@ -630,9 +699,9 @@ La description complète des groupes de permissions est disponible dans la [docu
 
 #### Définition de l'API
 
-|**Méthode**|**Chemin**|**Description**|
-| :-: | :-: | :-: |
-|GET|/iam/reference/resource/type|Récupérer tous les types de ressources|
+| **Méthode** |          **Chemin**          |            **Description**             |
+| :---------: | :--------------------------: | :------------------------------------: |
+|     GET     | /iam/reference/resource/type | Récupérer tous les types de ressources |
 
 #### Exemple
 
