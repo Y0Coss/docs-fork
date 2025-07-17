@@ -149,7 +149,7 @@ Les composants Zerto nécessitent des rôles et des autorisations vSphere spéci
 - Créer un compte dédié `zerto-admin` dans vSphere.
 - Attribuer les privilèges nécessaires pour gérer la réplication et la restauration.
 
-Les détails sur les autorisations requises sont disponibles dans la documentation de Zerto : « [Rôles et autorisations dans Zerto](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Roles_and_Permissions_Within_.htm){.external} ».
+Les détails sur les autorisations requises sont disponibles dans la documentation de Zerto : [Rôles et autorisations dans Zerto](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Roles_and_Permissions_Within_.htm){.external}.
 
 ### Étape 5 : Construire le réseau cible
 
@@ -167,7 +167,7 @@ Si vous utilisez NSX-T, planifiez votre segmentation comme suit :
 - Affectez chaque application à un lot d'applications ou à une zone de service correspondante.
 - Reproduisez les plans d’adressage IP définis dans votre inventaire
 
-Référez-vous à notre guide « [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) pour obtenir plus de détails sur la création de segments et leur affectation aux machines virtuelles ».
+Référez-vous à notre guide « [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) » pour obtenir plus de détails sur la création de segments et leur affectation aux machines virtuelles.
 
 #### Étape 5.2 : Configurer le routage et les passerelles NSX-T
 
@@ -190,7 +190,7 @@ NSX-T fournit un **pare-feu distribué** qui contrôle le trafic est-ouest entre
 
 Si vous n'utilisez pas NSX-T, mettez en œuvre des règles similaires à l'aide du pare-feu de l'appliance virtuelle de votre choix (par exemple : FortiVM, Stormshield ou Palo Alto VM-Series).
 
-Vous retrouverez un aperçu de la façon dont NSX gère ces fonctionnalités dans notre guide : « [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) ».
+Vous retrouverez un aperçu de la façon dont NSX gère ces fonctionnalités dans notre guide « [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) ».
 
 ### Étape 6 : Déployer les services core dans le HPC cible
 
@@ -232,7 +232,7 @@ Tous les détails sont disponibles dans notre guide « [Utiliser Zerto entre OVH
 
 Vous devez installer manuellement les composants Zerto sur votre infrastructure on-premises.
 
-Suivez la procédure décrite dans le guide Zerto suivant : « [Réaliser une installation rapide](https://help.zerto.com/bundle/Install.VC.HTML/page/Performing_an_Express_Installation.htm){.external} ».
+Suivez la procédure décrite dans le guide Zerto suivant : [Réaliser une installation rapide](https://help.zerto.com/bundle/Install.VC.HTML/page/Performing_an_Express_Installation.htm){.external}.
 
 Les principaux composants sont les suivants :
 

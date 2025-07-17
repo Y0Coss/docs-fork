@@ -146,7 +146,7 @@ Les composants Zerto nécessitent des rôles et des autorisations vSphere spéci
 - Créer un compte dédié `zerto-admin` dans vSphere.
 - Attribuer les privilèges nécessaires pour gérer la réplication et la restauration.
 
-Les détails sur les autorisations requises sont disponibles dans la documentation de Zerto : « [Rôles et autorisations dans Zerto](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Roles_and_Permissions_Within_.htm){.external} ».
+Les détails sur les autorisations requises sont disponibles dans la documentation de Zerto : [Rôles et autorisations dans Zerto](https://help.zerto.com/bundle/Admin.VC.HTML.90/page/Roles_and_Permissions_Within_.htm){.external}.
 
 ### Étape 5 : Construire le réseau cible
 
@@ -290,7 +290,7 @@ Lorsque vous êtes prêt à migrer :
 1. Utilisez l'opération **Move** dans Zerto pour migrer chaque VPG.
 2. Choisissez la stratégie de validation (manuelle, automatique, annulation).
 
-Pour obtenir des instructions complètes, référez-vous au guide Zerto suivant : « [Processus de déplacement](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm){.external} ».
+Pour obtenir des instructions complètes, référez-vous au guide Zerto suivant : [Processus de déplacement](https://help.zerto.com/bundle/Admin.ZSSP.HTML.10.0_U3/page/The_Move_Process.htm){.external}.
 
 ### Étape 14 : Valider la disponibilité de l'application
 
