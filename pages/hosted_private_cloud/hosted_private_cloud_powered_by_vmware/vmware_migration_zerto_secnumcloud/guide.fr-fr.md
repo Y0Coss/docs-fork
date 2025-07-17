@@ -6,7 +6,7 @@ updated: 2025-07-17
 
 ## Objectif
 
-Ce guide explique comment migrer vos charges de travail VMware on-premises vers un **Hosted Private Cloud (HPC) OVHcloud** en utilisant **Zerto Virtual Replication**.
+Ce guide explique comment migrer vos charges de travail VMware on-premises vers un **Hosted Private Cloud (HPC) SecNumCloud OVHcloud** en utilisant **Zerto Virtual Replication**.
 
 > [!primary]
 > **Ce guide s’applique aux environnements Hosted Private Cloud qualifiés SecNumCloud (SNC).**
