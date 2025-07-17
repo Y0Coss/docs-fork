@@ -3,7 +3,7 @@ title: Terraform Tutorial (EN)
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
-updated: 2024-04-26
+updated: 2025-07-17
 ---
 
 ## Objective
@@ -76,12 +76,12 @@ required_version    = ">= 0.14.0" # Takes into account Terraform versions from 0
   required_providers {
     openstack = {
       source  = "terraform-provider-openstack/openstack"
-      version = "~> 1.42.0"
+      version = ">= 3.0.0"
     }
  
     ovh = {
       source  = "ovh/ovh"
-      version = ">= 0.13.0"
+      version = ">= 2.1.0"
     }
   }
 }
