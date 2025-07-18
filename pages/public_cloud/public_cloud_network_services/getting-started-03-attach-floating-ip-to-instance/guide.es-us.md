@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objective
 
-Floating IPs are public IP addresses for [Public Cloud](https://www.ovhcloud.com/es/public-cloud/), used to expose a private instance or a private network service to the public network. You can read more about it on our dedicated [concepts page](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
+Floating IPs are public IP addresses for [Public Cloud](/links/public-cloud/public-cloud), used to expose a private instance or a private network service to the public network. You can read more about it on our dedicated [concepts page](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
 
 **This guide explains how to attach Floating IP addresses to your instances.**
 
