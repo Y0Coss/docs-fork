@@ -263,6 +263,8 @@ Sofern nicht anders vermerkt, können alle in unserer Dokumentation beschriebene
 Wenn Sie eine **Distribution mit Applikation** (Plesk, cPanel, Docker) ausgewählt haben, gelten die allgemeinen Sicherheitsmaßnahmen möglicherweise nicht uneingeschränkt für Ihr System. Nutzen Sie deshalb unsere Anleitungen [Erste Schritte mit vorinstallierten Anwendungen](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) und [cPanel auf einem VPS installieren](/pages/bare_metal_cloud/virtual_private_servers/cpanel) sowie die offizielle Dokumentation des jeweiligen Herausgebers.
 >
 
+Wenn Sie Ihr Benutzer- oder Root-Passwort verloren haben, lesen Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password), um zu erfahren, wie Sie dieses zurücksetzen.
+
 <a name="winconnect"></a>
 
 #### Windows VPS
@@ -379,5 +381,7 @@ OVHcloud bietet auch die Lösung SSL Gateway zur Automatisierung dieses Prozesse
 [SSH Einführung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [VPS absichern](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+[Wiederherstellen des Serverzugriffs bei Passwortverlust](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Treten Sie unserer [User Community](/links/community) bei.

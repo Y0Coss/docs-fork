@@ -258,6 +258,8 @@ passwd: password updated successfully
 Veuillez noter que si vous avez sélectionné une **distribution avec application** (Plesk, cPanel, Docker), les mesures de sécurité génériques peuvent ne pas s'appliquer à votre système. Nous vous invitons à consulter nos guides « [Premiers pas avec les applications préinstallées](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) » et « [Déployer cPanel sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel) », ainsi que la documentation officielle de l’éditeur concerné.
 >
 
+Si vous avez perdu votre mot de passe utilisateur ou root, consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password) pour savoir comment le réinitialiser.
+
 <a name="winconnect"></a>
 
 #### Distribution Windows
@@ -374,5 +376,7 @@ Pour un processus plus automatisé, OVHcloud propose également la solution « S
 [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+[Comment récupérer l'accès au serveur en cas de perte du mot de passe de l'utilisateur](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
