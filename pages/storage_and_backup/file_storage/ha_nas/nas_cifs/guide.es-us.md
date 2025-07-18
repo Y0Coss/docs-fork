@@ -15,7 +15,7 @@ Configure e monte su espacio de almacenamiento NAS-HA OVHcloud en Windows Server
 ## Requisitos
 
 - Un [servidor dedicado](/links/bare-metal/bare-metal) **o** un [VPS](/links/bare-metal/vps) **o** una [instancia de Public Cloud](/links/public-cloud/public-cloud) con una distribución Windows.
-- Una oferta [NAS-HA](https://www.ovh.com/world/es/nas/).
+- Una oferta [NAS-HA](/links/storage/nas-ha).
 
 ### Configuración
 

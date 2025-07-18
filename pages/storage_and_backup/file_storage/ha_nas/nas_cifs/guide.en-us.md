@@ -11,7 +11,7 @@ Configure and mount an OVHcloud HA-NAS storage space on your Windows Server usin
 ## Requirements
 
 - a [Dedicated Server](/links/bare-metal/bare-metal) **or** a [VPS](/links/bare-metal/vps) **or** a [Public Cloud Instance](/links/public-cloud/public-cloud) with a Windows distribution
-- a [HA-NAS solution](https://www.ovh.com/world/nas/)
+- a [HA-NAS solution](/links/storage/nas-ha)
 
 ### Settings
 
