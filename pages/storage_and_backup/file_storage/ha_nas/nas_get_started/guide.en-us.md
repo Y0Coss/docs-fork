@@ -11,7 +11,7 @@ Network Attached Storage (NAS) is a file server connected to a network whose mai
 ## Requirements
 
 - An IP address attached to an OVHcloud service (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud instance, etc.)
-- A [HA-NAS solution](https://www.ovh.com/world/nas/)
+- A [HA-NAS solution](/links/storage/nas-ha)
 - Access to the [OVHcloud Control Panel](/links/manager){.external}
 
 ## Instructions

@@ -15,7 +15,7 @@ O NAS (Network Attached Storage) é um servidor de ficheiros ligado a uma rede c
 ## Requisitos
 
 - Dispor de um endereço IP associado a um serviço OVHcloud (Hosted Private Cloud, Servidor Dedicado, VPS, Instância Public Cloud, etc...)
-- Dispor de um [NAS-HA](https://www.ovh.pt/nas/)
+- Dispor de um [NAS-HA](/links/storage/nas-ha)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
