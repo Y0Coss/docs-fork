@@ -29,7 +29,7 @@ Być może będziesz musiał skonfigurować adresy Additional IP na Twoich insta
 ## Wymagania początkowe
 
 - instancji [Public Cloud](/links/public-cloud/public-cloud) na Twoim koncie OVHcloud
-- adresu [Additional IP](/links/network/additional-ip) lub bloku Additional IP
+- adresu [Additional IP](/links/bare-metal/ip) lub bloku Additional IP
 - dostęp administratora (sudo) przez SSH lub GUI do Twojej instancji
 - podstawowa wiedza o sieciach i ich administrowaniu
 

@@ -69,7 +69,7 @@ The backup location depends on the location of the OVHcloud KMS.
     - KMS Backup Region 1 : CA_EAST_BHS
     - KMS Backup Region 2 : CA_EAST_TOR
 - **CA_EAST_TOR**
-  -  KMS Backup Region 1 : CA_EAST_BHS
+    - KMS Backup Region 1 : CA_EAST_BHS
     - KMS Backup Region 2 : CA_EAST_TOR
 - **AP_SOUTHEAST_SGP**
     - KMS Backup Region 1 : AP_SOUTHEAST_SGP

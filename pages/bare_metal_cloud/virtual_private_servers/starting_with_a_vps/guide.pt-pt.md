@@ -257,6 +257,8 @@ Salvo indicação em contrário, todas as ações administrativas descritas na n
 Tenha em conta que se selecionou uma **distribuição com aplicação** (Plesk, cPanel, Docker), as medidas de segurança genéricas podem não se aplicar ao seu sistema. Sugerimos que consulte os nossos manuais [Primeiros passos com as aplicações pré-instaladas](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) e [Implementar o cPanel num VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), assim como a documentação oficial do editor em causa.
 >
 
+Se perdeu a sua palavra-passe de utilizador ou root, consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password) para saber como reinicializá-la.
+
 <a name="winconnect"></a>
 
 #### VPS Windows
@@ -373,5 +375,7 @@ Para um processo mais automatizado, a OVHcloud propõe igualmente a solução SS
 [Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [Como proteger um VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+[Como recuperar o acesso ao servidor em caso de perda da palavra-passe do utilizador](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

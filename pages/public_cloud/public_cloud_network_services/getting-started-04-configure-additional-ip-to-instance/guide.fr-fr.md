@@ -29,7 +29,7 @@ Vous devrez peut-être configurer des adresses Additional IP sur vos instances, 
 ## Prérequis
 
 - une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- une [adresse Additional IP](/links/network/additional-ip) ou un bloc Additional IP
+- une [adresse Additional IP](/links/bare-metal/ip) ou un bloc Additional IP
 - un accès administrateur (sudo) via SSH ou GUI à votre instance
 - des connaissances de base sur les réseaux et leur administration
 

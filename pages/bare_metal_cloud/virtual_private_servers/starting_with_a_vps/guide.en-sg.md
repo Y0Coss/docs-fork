@@ -256,6 +256,8 @@ Unless stated otherwise, all administrative actions described in our documentati
 Please note that if you have selected a **distribution with application** (Plesk, cPanel, Docker), generic security measures might not apply to your system. We recommend to refer to our documentation regarding the [first steps with preinstalled applications](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) and [how to deploy cPanel on a VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), as well as the official documentation of the respective publisher.
 >
 
+If you have lost your user or root password, consult [this guide](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password) to find out how to reset it.
+
 <a name="winconnect"></a>
 
 #### Windows Server
@@ -370,5 +372,7 @@ You can install this SSL certificate manually, directly on the VPS. Please refer
 [Introduction to SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [How to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+[How to recover server access if your user password is lost](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Join our [community of users](/links/community).
