@@ -144,8 +144,8 @@ Es wird ein Bestellschein erzeugt und sobald Ihre Zahlung verbucht wurde, erhalt
 > Der Backup Storage Dienst hat ein Limit von drei gleichzeitigen Verbindungen per IP.
 >
 
-> [!PRIMARY]
-> Um den *Hostname* Ihres Backup Storage abzurufen, klicken Sie auf den Tab `Backup Storage`{.action} im Interface des betreffenden Dedicated Servers. Üblicherweise geschrieben als `ftpback-bhsX-YYY.ip-Z.Z.Z.net` oder `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
+> [!primary]
+> Um den *Hostname* (im Format `ftpback-bhsX-YYY.ip-Z.Z.Z.net` oder `ftpback-bhsX-YYY.ip-Z.Z.Z.net`) Ihres Backup Storage abzurufen, klicken Sie auf den Tab `Backup Storage`{.action} im Interface des betreffenden Dedicated Servers.
 >
 
 #### FTP/FTPS
