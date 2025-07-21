@@ -1,7 +1,7 @@
 ---
 title: Utilizzare il Backup Storage su un server dedicato
 excerpt: Come attivare e accedere allo spazio di storage aggiuntivo
-updated: 2025-07-14
+updated: 2025-07-21
 ---
 
 ## Obiettivo
@@ -144,6 +144,10 @@ Verrà creato un buono d'ordine. Una volta effettuato il pagamento, riceverai un
 > [!warning]
 >
 > Il servizio di Backup Storage ha un limite di tre connessioni simultanee su un IP.
+>
+
+> [!primary]
+> Per recuperare il *Hostname* del Backup Storage, clicca sulla scheda `Backup Storage`{.action} nell’interfaccia del server dedicato interessato. *Hostname* è generalmente scritto in formato `ftpback-rbxX-YYY.ip-Z.Z.Z.net` o `ftpback-bhsX-YYY.ip-Z.Z.net`.
 >
 
 #### FTP/FTPS

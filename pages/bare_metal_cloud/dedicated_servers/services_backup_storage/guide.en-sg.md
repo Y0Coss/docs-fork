@@ -1,7 +1,7 @@
 ---
 title: How to use the backup storage on a dedicated server
 excerpt: 'Find out how to enable and access your additional storage space'
-updated: 2025-07-14
+updated: 2025-07-21
 ---
 
 ## Objective
@@ -138,7 +138,9 @@ An order will be created and once your payment has been processed, you will be n
 > [!warning]
 > 
 > The backup storage service has a limit of three simultaneous connections on an IP.
-> 
+>
+
+To retrieve the Hostname of your backup storage, click on the `Backup Storage`{.action} tab in the interface of the dedicated server concerned. The Hostname is usually written as `ftpback-rbxX-YYY.ip-Z.Z.Z.net` or `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
 
 #### FTP/FTPS
 

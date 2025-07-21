@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z Backup Storage na serwerze dedykowanym'
 excerpt: 'Dowiedz się, jak aktywować i uzyskać dostęp do dodatkowej przestrzeni dyskowej'
-updated: 2025-07-14
+updated: 2025-07-21
 ---
 
 ## Wprowadzenie
@@ -144,6 +144,10 @@ Zostanie utworzone zamówienie. Po zaksięgowaniu płatności otrzymasz powiadom
 > [!warning]
 >
 > Usługa Backup Storage ma limit trzech jednoczesnych połączeń z jednym adresem IP.
+>
+
+> [!primary]
+> Aby sprawdzić status *Hostname* dla Backup Storage, kliknij zakładkę `Backup Storage`{.action} w interfejsie danego serwera dedykowanego. *Hostname* jest zazwyczaj zapisywany w formie `ftpback-rbxX-YYY.ip-Z.Z.Z.net` lub `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
 >
 
 #### FTP/FTPS
