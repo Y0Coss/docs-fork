@@ -17,7 +17,7 @@ Un lien de secours LTE permet de sécuriser votre connexion en cas de coupure. S
 
 > [!alert]
 >
-> Attention, les clés Brovî E3372-**325** sont nativement incompatibles avec les modems OVHcloud.
+> Attention, les clés Brovi E3372-**325** sont nativement incompatibles avec les modems OVHcloud.
 >
 
 ## En pratique
