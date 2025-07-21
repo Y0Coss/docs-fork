@@ -375,4 +375,6 @@ To automate this process, OVHcloud also offers the SSL Gateway solution. Please 
 
 [How to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
+[How to recover server access if your user password is lost](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
+
 Join our [community of users](/links/community).
