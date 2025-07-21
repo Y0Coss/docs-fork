@@ -3,7 +3,7 @@ title: Terraform verwenden (EN)
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
-updated: 2025-07-17
+updated: 2025-07-21
 ---
 
 ## Objective
