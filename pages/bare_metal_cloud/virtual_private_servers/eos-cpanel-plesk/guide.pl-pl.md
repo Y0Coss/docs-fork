@@ -1,8 +1,8 @@
---- 
+---
 title: "Zakończenie wsparcia Plesk i cPanel dla serwerów VPS - Jak zapewnić ciągłość działania usług"
 excerpt: "Dowiesz się, kiedy dobiega końca okres wsparcia dla systemów operacyjnych na VPS OVHcloud, które mają wpływ na licencje Plesk i cPanel"
 updated: 2025-07-21
---- 
+---
 
 ## Cel
 
