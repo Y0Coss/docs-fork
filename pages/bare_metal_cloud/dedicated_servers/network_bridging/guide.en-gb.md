@@ -1,13 +1,14 @@
 ---
 title: 'Configuring Additional IPs in bridge mode on your virtual machines'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2025-05-16
+updated: 2025-07-21
 ---
 
 > [!primary]
 > This article is about Additional IPv4 configuration on a public interface. You can also configure IPv6 addresses on your virtual machines using [this guide](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm).
 > 
-> Please note that Additional IP addresses can also be configured in a vRack private network, which allows interconnection over a wide range of OVHcloud services, offering more flexibility. <br>
+> Please note that Additional IP addresses can also be configured in a vRack (private network), which allows interconnection over a wide range of OVHcloud services, offering more flexibility.
+> 
 > Learn how to configure Additional IP addresses in a vRack with our guides for [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) and [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 

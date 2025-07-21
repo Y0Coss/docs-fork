@@ -1,30 +1,33 @@
 ---
 title: Configuring an Additional IP
 excerpt: "Find out how to add Additional IP addresses to your instance's configuration"
-updated: 2025-04-28
+updated: 2025-07-21
 ---
 
 > [!primary]
+> This article is about Additional IPv4 configuration on a public interface. You can also configure IPv6 addresses on your Public Cloud instances using [this guide](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+> 
+> Please note that Additional IP addresses can also be configured in a vRack (private network), which allows interconnection over a wide range of OVHcloud services, offering more flexibility.
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
+> You can find more information about configuring Additional IP addresses in a vRack for usage with Public Cloud instances in the following guides:
+> - [Configuring a public IP block in a vRack on a Public Cloud instance](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
+> - [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
-
-## Objective
 
 You may need to configure Additional IP addresses on your instances, for example if you are hosting multiple websites or international services. OVHcloud Additional IPs allow you to associate multiple IP addresses with a single network interface.
 
 **This guide explains how to add Additional IP addresses to your network configuration.**
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [Public Cloud instance](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-- An [Additional IP address](https://www.ovhcloud.com/asia/bare-metal/ip/) or an Additional IP block
+- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
+- An [Additional IP address](/links/network/additional-ip) or an Additional IP block
 - Administrative access (sudo) via SSH or GUI to your instance
 - Basic networking and administration knowledge
 
@@ -299,6 +302,6 @@ To test the connection, simply ping your Additional IP from the outside. If it r
 
 [Migrating an Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-migrate)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

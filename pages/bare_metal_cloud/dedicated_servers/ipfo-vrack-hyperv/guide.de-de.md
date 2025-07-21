@@ -1,11 +1,11 @@
 ---
 title: "Hyper-V mit Additional IPs in einem vRack verwenden"
 excerpt: "Erfahren Sie hier, wie Sie Hyper-V mit Additional IPs in einem vRack konfigurieren"
-updated: 2021-02-25
+updated: 2025-07-21
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+> In diesem Artikel erfahren Sie, wie Sie zusätzliche Additional IPv4-Adressen für ein vRack konfigurieren. Sie können auch Additional IPv6-Adressen in Ihrem vRack konfigurieren, indem Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack) verwenden.
 >
 
 ## Ziel

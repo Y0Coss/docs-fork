@@ -1,13 +1,14 @@
 ---
 title: 'Configuring IP aliasing'
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
-updated: 2024-11-05
+updated: 2025-07-21
 ---
 
 > [!primary]
 > This article is about Additional IPv4 configuration on a public interface. You can also configure Primary IPv6 addresses on your dedicated servers using [this guide](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 > 
-> Please note that Additional IP addresses can also be configured in a vRack private network, which allows interconnection over a wide range of OVHcloud services, offering more flexibility. <br>
+> Please note that Additional IP addresses can also be configured in a vRack (private network), which allows interconnection over a wide range of OVHcloud services, offering more flexibility.
+>
 > Learn how to configure Additional IP addresses in a vRack with our guides for [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) and [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 

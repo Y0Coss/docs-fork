@@ -1,13 +1,14 @@
 ---
 title: 'Configurer son adresse IP en alias'
 excerpt: 'Découvrez comment ajouter des Additional IP à votre configuration'
-updated: 2024-11-05
+updated: 2025-07-21
 ---
 
 > [!primary]
 > Cet article concerne la configuration d'adresses Additional IPv4 sur une interface publique. Vous pouvez également configurer des adresses IPv6 sur vos serveurs dédiés en utilisant [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 > 
-> Veuillez noter que les Additional IP peuvent également être configurées dans un réseau privé vRack, ce qui permet d'interconnecter une large gamme de services OVHcloud, offrant plus de flexibilité. <br>
+> Veuillez noter que les Additional IP peuvent également être configurées dans un vRack (réseau privé), ce qui permet d'interconnecter une large gamme de services OVHcloud, offrant plus de flexibilité.
+>
 > Apprenez à configurer des Additional IP dans un vRack avec nos guides pour [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) et [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 

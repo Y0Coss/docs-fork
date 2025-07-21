@@ -14,7 +14,7 @@ updated: 2025-05-16
 > [!primary]
 > Cet article concerne la configuration d'adresses Additional IPv4 sur une interface publique. Vous pouvez également configurer des adresses Additional IPv6 sur vos machines virtuelles en utilisant [ce guide](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm).
 > 
-> Veuillez noter que les Additional IP peuvent également être configurées dans un réseau privé vRack, ce qui permet d'interconnecter une large gamme de services OVHcloud, offrant plus de flexibilité. <br>
+> Veuillez noter que les Additional IP peuvent également être configurées dans un vRack (réseau privé), ce qui permet d'interconnecter une large gamme de services OVHcloud, offrant plus de flexibilité. <br>
 > Apprenez à configurer des Additional IP dans un vRack avec nos guides pour [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) et [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
