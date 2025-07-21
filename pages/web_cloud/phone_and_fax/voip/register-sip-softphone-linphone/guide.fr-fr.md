@@ -1,7 +1,7 @@
 ---
 title: 'Tutoriel - Utiliser une ligne SIP OVHcloud sur Linphone'
 excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur le softphone Linphone'
-updated: 2024-09-08
+updated: 2025-09-08
 ---
 
 <style>
