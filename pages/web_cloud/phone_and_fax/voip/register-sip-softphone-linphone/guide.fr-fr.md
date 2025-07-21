@@ -4,6 +4,20 @@ excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur le softphone
 updated: 2022-03-31
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objectif
 
 Le logiciel [Linphone](https://www.linphone.org/){.external} est un softphone (logiciel de téléphonie) open-source et gratuit permettant d'enregistrer une ligne SIP fixe OVHcloud, afin d'émettre et recevoir des appels via cette ligne, depuis un ordinateur ou un smartphone.
