@@ -12,7 +12,7 @@ Ce guide vous explique comment assurer la continuité de vos services en migrant
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](/links/bare-metal/vps){.external} avec une distribution [compatible](https://www.ovhcloud.com/fr/vps/os/).
+- Disposer d'une offre [VPS](/links/bare-metal/vps){.external} avec une distribution [compatible](/links/bare-metal/vps-os).
 
 ## En pratique
 
