@@ -4,6 +4,10 @@ excerpt: "Découvrez comment configurer une machine virtuelle avec des IPs Addit
 updated: 2021-02-25
 ---
 
+> [!primary]
+> Cet article concerne la configuration d'adresses Additional IPv4 supplémentaires sur un vRack. Vous pouvez également configurer des adresses Additional IPv6 sur votre vRack en utilisant [ce guide](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
+
 ## Objectif
 
 Suivez le processus d'installation d'Hyper-V, l'association d'un switch virtuel et la configuration d'une machine virtuelle pour fonctionner avec les IPs Additional IP sur un vRack.

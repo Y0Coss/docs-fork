@@ -5,8 +5,10 @@ updated: 2025-04-28
 ---
 
 > [!primary]
->
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](/links/network/additional-ip). Cela n'a pas d'impact sur ses fonctionnalités.
+> Cet article concerne le déplacement d'adresses Additional IPv4, qui est limité selon des [restrictions régionales](#limitations).
+> 
+> La configuration d'Additional IP dans un réseau privé vRack contourne ces restrictions régionales en perdant la dépendance à une seule région, tout en facilitant l'interconnexion sur une large gamme de services OVHcloud.
+> Apprenez à configurer des Additional IP dans un vRack avec nos guides pour [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) et [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objectif

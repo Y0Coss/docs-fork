@@ -5,8 +5,12 @@ updated: 2025-04-28
 ---
 
 > [!primary]
->
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](/links/network/additional-ip). Cela n'a pas d'impact sur ses fonctionnalités.
+> Cet article concerne la configuration d'adresses Additional IPv4 sur une interface publique. Vous pouvez également configurer des adresses IPv6 sur vos instances Public Cloud en utilisant [ce guide](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+> 
+> Veuillez noter que les adresses Additional IP peuvent également être configurées dans un réseau privé vRack, ce qui permet l'interconnexion sur une large gamme de services OVHcloud, offrant plus de flexibilité. <br>
+> Vous trouverez plus d'informations sur la configuration des adresses Additional IP dans un vRack pour une utilisation avec les instances Public Cloud dans les guides suivants : <br>
+> [Configuration d'un bloc d'IP publiques dans un vRack sur une instance Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance) ; <br>
+> [Configuration d'un bloc IPv6 dans un vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objectif
