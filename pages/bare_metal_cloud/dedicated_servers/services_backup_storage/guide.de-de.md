@@ -145,7 +145,7 @@ Es wird ein Bestellschein erzeugt und sobald Ihre Zahlung verbucht wurde, erhalt
 >
 
 > [!primary]
-> Um den *Hostname* (im Format `ftpback-bhsX-YYY.ip-Z.Z.Z.net` oder `ftpback-bhsX-YYY.ip-Z.Z.Z.net`) Ihres Backup Storage abzurufen, klicken Sie auf den Tab `Backup Storage`{.action} im Interface des betreffenden Dedicated Servers.
+> Um den *Hostname* (im Format `ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net` oder `ftpback-bhsX-YYY.ip-Z.Z.Z.net`) Ihres Backup Storage abzurufen, klicken Sie auf den Tab `Backup Storage`{.action} im Interface des betreffenden Dedicated Servers.
 >
 
 #### FTP/FTPS

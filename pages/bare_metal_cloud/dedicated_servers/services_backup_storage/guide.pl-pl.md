@@ -147,7 +147,7 @@ Zostanie utworzone zamówienie. Po zaksięgowaniu płatności otrzymasz powiadom
 >
 
 > [!primary]
-> Aby sprawdzić status *Hostname* dla Backup Storage, kliknij zakładkę `Backup Storage`{.action} w interfejsie danego serwera dedykowanego. Zwykle pisane jako `ftpback-rbxX-YYY.ip-Z.Z.Z.net` lub `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
+> Aby sprawdzić status *Hostname* dla Backup Storage, kliknij zakładkę `Backup Storage`{.action} w interfejsie danego serwera dedykowanego. *Hostname* jest zazwyczaj zapisywany w formie `ftpback-rbxX-YYY.ip-Z.Z.Z.net` lub `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
 >
 
 #### FTP/FTPS

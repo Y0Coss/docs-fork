@@ -144,7 +144,7 @@ Se generará una orden de pedido. Una vez registrado el pago, recibirá una noti
 >
 
 > [!primary]
-> Para obtener el *Hostname* de su Backup Storage, haga clic en la pestaña `Backup Storage`{.action} en la interfaz del servidor dedicado correspondiente. Normalmente escrito como `ftpback-rbxX-YYY.ip-Z.Z.Z.net` o `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
+> Para obtener el *Hostname* de su Backup Storage, haga clic en la pestaña `Backup Storage`{.action} en la interfaz del servidor dedicado correspondiente. El *Hostname* suele escribirse como `ftpback-rbxX-YYY.ip-Z.Z.Z.net` o `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
 >
 
 #### FTP/FTPS
