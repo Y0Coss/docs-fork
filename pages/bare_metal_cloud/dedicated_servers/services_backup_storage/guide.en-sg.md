@@ -140,9 +140,7 @@ An order will be created and once your payment has been processed, you will be n
 > The backup storage service has a limit of three simultaneous connections on an IP.
 >
 
-> [!primary]
-> To retrieve the hostname of your backup storage, click on the `Backup Storage`{.action} tab in the relevant dedicated server interface. Usually written as `ftpback-rbxX-YYY.ip-Z.Z.Z.net` or `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
-> 
+To retrieve the Hostname of your backup storage, click on the `Backup Storage`{.action} tab in the interface of the dedicated server concerned. The Hostname is usually written as `ftpback-rbxX-YYY.ip-Z.Z.Z.net` or `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
 
 #### FTP/FTPS
 

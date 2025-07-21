@@ -145,7 +145,7 @@ Será criada uma nota de encomenda. Uma vez o pagamento registado, será notific
 >
 
 > [!primary]
-> Para recuperar o *Hostname* do seu Backup Storage, clique no separador "Backup Storage"{.action} na interface do servidor dedicado em causa. O *Hostname* é geralmente escrito sob a forma de `ftpback-rbxX-YYY.ip-Z.Z.Z.net` ou `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
+> Para recuperar o *Hostname* do seu Backup Storage, clique no separador `Backup Storage`{.action} na interface do servidor dedicado em causa. O *Hostname* é geralmente escrito sob a forma de `ftpback-rbxX-YYY.ip-Z.Z.Z.net` ou `ftpback-bhsX-YYY.ip-Z.Z.Z.net`.
 >
 
 #### FTP/FTPS
