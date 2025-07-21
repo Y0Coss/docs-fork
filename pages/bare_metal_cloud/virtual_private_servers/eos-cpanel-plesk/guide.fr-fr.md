@@ -12,30 +12,30 @@ Ce guide vous explique comment assurer la continuité de vos services en migrant
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](/links/bare-metal/vps){.external} avec une distribution [compatible](/links/bare-metal/vps-os).
+- Disposer d'une offre [VPS](/links/bare-metal/vps) avec une [distribution compatible](/links/bare-metal/vps-os).
 
 ## En pratique
 
 Les éditeurs **Plesk** et **cPanel** annoncent la fin du support des systèmes d’exploitation suivants :
 
-| Système d'exploitation | Impacté par    | Fin du support       |
+| Système d'exploitation | Produit        | Fin du support       |
 | ---------------------- | -------------- | -------------------- |
 | Ubuntu 18.04           | Plesk          | **1er janvier 2026** |
-| Debian 10              | Plesk          | **1er janvier 2026** |  
+| Debian 10              | Plesk          | **1er janvier 2026** |
 | CentOS 7               | Plesk / cPanel | **1er janvier 2026** |
 | CloudLinux 7           | Plesk / cPanel | **1er janvier 2026** |
 
 Pour plus de détails concernant les fins de support, consultez les documentations officielles :
 
-- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
-- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/).
+- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
+- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/){.external}.
 
 ### Que faire concrètement ?
 
 > [!primary]
 >
 > D’un point de vue **sécurité**, continuer à utiliser un OS non supporté vous expose à des attaques.
-Nous vous recommandons de lire [les recommandations de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/) et [les recommandations de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/).
+Nous vous recommandons de lire [les recommandations de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external} et [les recommandations de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
 
 #### 1. Vérifier votre système actuel
 
@@ -43,7 +43,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous da
 
 ![EOS Plesk cPanel](images/vpshome.png){.thumbnail}
 
-Dans l'onglet `Accueil`{.action}, retrouvez les détails de votre système d'exploitation dans la section `OS/Distribution`{.action}.
+Dans l'onglet `Accueil`{.action}, retrouvez les détails de votre système d'exploitation dans la section `OS / Distribution` de l'encadré `Votre VPS`.
 
 #### 2. Identifier un OS compatible
 
@@ -51,8 +51,8 @@ Si votre système d'exploitation fait partie des OS qui ne seront plus supporté
 
 Consultez la documentation officielle des OS supportés :
 
-- [Liste des OS supportés par Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/)
-- [Liste des OS compatibles avec cPanel](https://docs.cpanel.net/installation-guide/system-requirements/)
+- [Liste des OS supportés par Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
+- [Liste des OS compatibles avec cPanel](https://docs.cpanel.net/installation-guide/system-requirements/){.external}.
 
 #### 3. Migrer votre service
 
@@ -71,21 +71,23 @@ Commandez un nouveau VPS avec un OS compatible si ce n'est pas déjà fait. [Ins
 
 Utilisez l’outil de migration de votre choix. Ces outils permettent de transférer automatiquement vos sites web, bases de données, comptes e-mail et configurations d’un VPS à l’autre :
 
-- Plesk Migrator – [Documentation officielle](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/)
-- cPanel Transfer Tool – [Documentation officielle](https://docs.cpanel.net/whm/transfers/transfer-tool/)
+- Plesk Migrator – [Documentation officielle](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}.
+- cPanel Transfer Tool – [Documentation officielle](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}.
 
 **Option C — Mise à jour sur place (avancé)**
 
 Si vous ne pouvez pas déployer une nouvelle instance de VPS, certains outils permettent de **mettre à niveau directement votre système d’exploitation** tout en conservant Plesk ou cPanel installé. Cette méthode s'adresse aux utilisateurs expérimentés, car elle comporte des risques si elle est mal exécutée.
 
-- Pour **Plesk** (passage de CentOS 7 vers AlmaLinux 8), utilisez le script `centos2alma` proposé par la [documentation officielle de Plesk](https://github.com/plesk/centos2alma). Consultez aussi les instructions détaillées du [support de Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983).
+- Pour **Plesk** (passage de CentOS 7 vers AlmaLinux 8), utilisez le script `centos2alma` proposé par la [documentation officielle de Plesk](https://github.com/plesk/centos2alma){.external}. Consultez aussi les instructions détaillées du [support de Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
 
-- Pour **cPanel** (passage de CentOS 7 vers AlmaLinux 8), utilisez l'outil **Elevate** proposé par la [documentation officielle de cPanel](https://cpanel.github.io/elevate/).
+- Pour **cPanel** (passage de CentOS 7 vers AlmaLinux 8), utilisez l'outil **Elevate** proposé par la [documentation officielle de cPanel](https://cpanel.github.io/elevate/){.external}.
 
 > [!primary]
 >
 > Ces outils ne sont pas garantis à 100 % et nécessitent des sauvegardes complètes avant de procéder. Assurez-vous également que votre VPS dispose de ressources suffisantes (RAM, CPU, disque).
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

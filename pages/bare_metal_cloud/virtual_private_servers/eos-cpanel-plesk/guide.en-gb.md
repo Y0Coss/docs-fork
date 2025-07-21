@@ -12,30 +12,30 @@ This guide will explain how you can ensure continuity for your services by migra
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-au/vps) solution with a [compatible distribution](https://www.ovhcloud.com/en-au/vps/os/).
+- A [VPS](/links/bare-metal/vps) solution with a [compatible distribution](/links/bare-metal/vps-os).
 
 ## Instructions
 
 The **Plesk** and **cPanel** publishers announce the end of support for the following operating systems:
 
-| Operating system | Impacted by    | End of Support       |
-| ------------------- | ------------- | ------------------ |
-| Ubuntu 18.04           | Plesk          | **1st January 2026** |
-| Debian 10              | Plesk          | **1st January 2026** |
-| CentOS 7               | Plesk/cPanel | **1st January 2026** |
-| CloudLinux 7           | Plesk/cPanel | **1st January 2026** |
+| Operating system | Product      | End of Support       |
+| ---------------- | ------------ | -------------------- |
+| Ubuntu 18.04     | Plesk        | **1st January 2026** |
+| Debian 10        | Plesk        | **1st January 2026** |
+| CentOS 7         | Plesk/cPanel | **1st January 2026** |
+| CloudLinux 7     | Plesk/cPanel | **1st January 2026** |
 
 For more details on support purposes, please refer to the official documentation:
 
-- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/).
-- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/).
+- [Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
+- [cPanel](https://docs.cpanel.net/knowledge-base/cpanel-product/cpanel-deprecation-plan/){.external}.
 
 ### What can I do concretely?
 
 > [!primary]
 >
 > From a **security** point of view, continuing to use an unsupported OS exposes you to attacks.
-We recommend reading [cPanel recommendations](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/) and [Plesk recommendations](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/).
+We recommend reading [cPanel recommendations](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external} and [Plesk recommendations](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
 
 #### 1. Check your current system
 
@@ -43,23 +43,23 @@ Log in to your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal C
 
 ![EOS Plesk cPanel](images/vpshome.png){.thumbnail}
 
-In the `Home`{.action} tab, find the details of your operating system in the `OS/Distribution`{.action} section.
+In the `Home`{.action} tab, find the details of your operating system in the `OS/Distribution` section in the `Your VPS` box.
 
-### 2. Identify a compatible OS
+#### 2. Identify a compatible OS
 
 If your operating system is part of the OS that will no longer be supported, migrate to a compatible system recommended by the publisher.
 
 Consult the official documentation of supported OSs:
 
-- [List of OSs supported by Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/)
-- [List of cPanel compatible OSs](https://docs.cpanel.net/installation-guide/system-requirements/)
+- [List of OSs supported by Plesk](https://docs.plesk.com/release-notes/obsidian/system-requirements/){.external}.
+- [List of cPanel compatible OSs](https://docs.cpanel.net/installation-guide/system-requirements/){.external}.
 
 #### 3. Migrate your service
 
 **Option A — Manual reinstallation**
 
 1. [Back up your data](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps) (web content, database, emails, etc.).
-2. Reinstall a compatible OS from the OVHcloud Control Panel by following the “Reinstall your VPS” section of our guide [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
+2. Reinstall a compatible OS from the OVHcloud Control Panel by following the `Reinstalling your VPS` section of our guide [How to get started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 3. [Reinstall cPanel](/pages/bare_metal_cloud/virtual_private_servers/cpanel) or Plesk on the new system.
 4. Restore your data from your backups.
 
@@ -71,22 +71,22 @@ Order a new VPS with a compatible OS if you have not already done so. [Install c
 
 Use the migration tool of your choice. These tools allow you to automatically transfer your websites, databases, email accounts and configurations from one VPS to another:
 
-- Plesk Migrator - [Official documentation](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/)
-- cPanel Transfer Tool - [Official documentation](https://docs.cpanel.net/whm/transfers/transfer-tool/)
+- Plesk Migrator - [Official documentation](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}.
+- cPanel Transfer Tool - [Official documentation](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}.
 
 **Option C — On-site update (advanced)**
 
 If you cannot deploy a new instance of a VPS, you can use certain tools to **upgrade your operating system directly**, while keeping Plesk or cPanel installed. This method is intended for advanced users, as it carries risks if executed incorrectly.
 
-- For **Plesk** (switching from CentOS 7 to AlmaLinux 8), use the `centos2alma` script provided by the [official Plesk documentation](https://github.com/plesk/centos2alma). See also detailed instructions in [Plesk support](https://support.plesk.com/hc/en-us/articles/12377714344983).
+- For **Plesk** (switching from CentOS 7 to AlmaLinux 8), use the `centos2alma` script provided by the [official Plesk documentation](https://github.com/plesk/centos2alma){.external}. See also detailed instructions in [Plesk support](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
 
-- For **cPanel** (switching from CentOS 7 to AlmaLinux 8), use the **Elevate** tool provided by the [official cPanel documentation](https://cpanel.github.io/elevate/).
+- For **cPanel** (switching from CentOS 7 to AlmaLinux 8), use the **Elevate** tool provided by the [official cPanel documentation](https://cpanel.github.io/elevate/){.external}.
 
 > [!primary]
 >
 > These tools are not 100% guaranteed and require full backups before proceeding. Also make sure that your VPS has sufficient resources (RAM, CPU, disk).
 
-## Go further
+## Go further <a name="go-further"></a>
 
 For specialized services (SEO, development, etc.), contact the [OVHcloud partners](/links/partner).
 
