@@ -66,8 +66,8 @@ Vous retrouvez alors, dans le cadre « Informations SIP », votre **Login**, **D
 ![username - domain](images/username-domain.png){.thumbnail}
 
 > [!warning]
-> Dans l'exemple ci-dessus, le **Domain** est `sip-domain.io`. Prenez soin de vérifier quel est le **Domain** de votre ligne, celui-ci pouvant être différent.
-> Le **Proxy sortant** est `outbound-ovh-1.sip-proxy.io`, mais il sera différent pour votre ligne.
+> Dans l'exemple ci-dessus, le **Domain** est `sip-domain.io`. Prenez soin de vérifier quel est le **Domain** de votre ligne SIP, celui-ci pouvant être différent.
+> Le **Proxy sortant** est `outbound-ovh-1.sip-proxy.io`, mais il sera différent pour votre ligne SIP.
 >
 
 #### Mot de passe SIP

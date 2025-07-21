@@ -41,16 +41,19 @@ Cochez `UDP`{.action} pour le transport et appuyez sur `Connexion`{.action}.
 
 /// details | Si votre **Proxy** est différent de votre **Domain**.
 
-Un message d'erreur apparaîtra mais pas de panique ! Nous allons renseigner le `Proxy SIP` pour remédier à cela !
+Dans ce cas, l'enregistrement de votre ligne SIP n'aboutit pas directement et un message d'erreur apparaît.  
+Pour y remédier, il convient de renseigner le `Proxy SIP` pour finaliser la configuration de votre ligne SIP dans Linphone.  
+Cliquez sur `Continuer`{.action}.
 
 ![connexion linphone](images/linphone03-proxy.png){.thumbnail}
 
-Ouvrez le menu déroulant et appuyez sur `Options`. Appuyez sur votre compte récemment créé et déroulez les paramètres jusqu'à atteindre l'option `Proxy SIP`, remplissez le formulaire avec votre `Proxy sortant`, ici `outbound-ovh-1.sip-proxy.io`, activer ensuite l'option `Outbound proxy`.
+Ouvrez le menu déroulant situé en haut à gauche et appuyez sur `Options`{.action}. Appuyez sur votre compte récemment créé et faites défiler les paramètres jusqu'à atteindre l'option `Proxy SIP`. Remplissez le formulaire avec votre `Proxy sortant`, dans notre exemple `outbound-ovh-1.sip-proxy.io`.  
+**Activez ensuite l'option `Outbound proxy`.**
 
 ![connexion linphone](images/linphone04-proxy.png){.thumbnail}
 ///
 
-Si la connexion est réussie, la notification `Connecté` apparaît en haut de l'application.
+Si la connexion aboutit, la notification `Connecté` apparaît en haut de l'application.
 
 ![connexion réussie linphone](images/linphone03.png){.thumbnail}
 
