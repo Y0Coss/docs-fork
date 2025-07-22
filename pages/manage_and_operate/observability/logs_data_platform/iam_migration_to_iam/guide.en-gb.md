@@ -1,7 +1,7 @@
 ---
 title: IAM for Logs Data Platform - Migration and Breaking Changes 
 excerpt: Important changes to be aware of before the IAM migration
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ This guide explains the breaking changes resulting from the IAM migration and pr
 
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A Logs Data Platform service
+- A [Logs Data Platform service](/links/manage-operate/ldp)
 
 ## Instructions
 
@@ -33,9 +33,9 @@ IAM stands for **Identity and Access Management**. It is a system of policies an
 
 The IAM Migration for Logs Data Platform is scheduled for 17 September 2025. A scheduled maintenance will enable IAM for all Logs Data Platform customers, introducing new features and allowing full migration to IAM.
 
-#### Breaking Changes
+### Breaking Changes
 
-##### Roles and Permissions
+#### Roles and Permissions
 
 If you use the [role and permission system](/pages/manage_and_operate/observability/logs_data_platform/getting_started_roles_permission), please note that members of your roles will no longer see shared items in their own service when connecting to the Logs Data Platform control panel.
 
@@ -43,18 +43,18 @@ However, they will still be able to access these items when using their credenti
 
 If you use the role and permission system, we strongly recommend [migrating to IAM policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management).
 
-##### Web UIs
+#### Web UIs
 
 The Graylog Web UI will now display an Identity Provider selector. You can find the username/password authenticator by selecting **Legacy username/password**. You can also try the OVHcloud IAM authenticator by selecting the appropriate provider (EU or CA).
 
-![Legacy username/password](images/graylog_legacy.png)
+![Legacy username/password](images/graylog_legacy.png){.thumbnail}
 
 ### Deprecated Features
 
 The IAM migration allows us to deprecate some Logs Data Platform features that have IAM replacements:
 
-- [Roles and permissions](/pages/manage_and_operate/observability/logs_data_platform/getting_started_roles_permission/)
-- [Legacy tokens](/pages/manage_and_operate/observability/logs_data_platform/security_tokens/)
+- [Roles and permissions](/pages/manage_and_operate/observability/logs_data_platform/getting_started_roles_permission)
+- [Legacy tokens](/pages/manage_and_operate/observability/logs_data_platform/security_tokens)
 
 These features are replaced by [access management policies](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management) and by either [Local Users Personal Access Tokens](/pages/account_and_service_management/account_information/ovhcloud-users-management) or [Service account tokens](/pages/account_and_service_management/account_information/authenticate-api-with-service-account).
 
@@ -73,11 +73,10 @@ These features are replaced by [access management policies](/pages/manage_and_op
 - [Presentation and FAQ](/pages/manage_and_operate/observability/logs_data_platform/iam_presentation_faq)
 - [Access Management](/pages/manage_and_operate/observability/logs_data_platform/iam_access_management)
 
-
 ## Go further
 
 - [Introduction to Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
 - [IAM for Logs Data Platform - Presentation and FAQ](/pages/manage_and_operate/observability/logs_data_platform/iam_presentation_faq)
-- [Our documentation](/products/public-cloud-data-platforms-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- [Our documentation](/products/observability-logs-data-platform)
+- Join our [community of users](/links/community)
+- Create an account: [Try it!](/links/manage-operate/ldp)

@@ -358,6 +358,7 @@ manage-operate-observability: Observabilité
 manage-operate-kms: KMS
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Premiers pas
+observability-logs-data-platform-iam: IAM
 observability-logs-data-platform-ingestion: Ingestion de vos logs
 observability-logs-data-platform-visualizing-querying-exploiting: Visualisation, requête et exploitation de vos logs
 observability-logs-data-platform-opensearch-index: Index OpenSearch as-a-service
