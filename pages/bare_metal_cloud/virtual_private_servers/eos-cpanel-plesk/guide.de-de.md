@@ -35,7 +35,8 @@ Weitere Informationen zum Support finden Sie in der offiziellen Dokumentation:
 > [!primary]
 >
 > Aus der Sicht der **Sicherheit** birgt die fortgesetzte Verwendung eines nicht unterstützten Betriebssystems ein erhöhtes Risiko für Angriffe.  
-> Wir empfehlen, hierzu die folgenden Informationen zu beachten:  
+> Wir empfehlen, hierzu die folgenden Informationen zu beachten:
+>
 > - [cPanel Recommendations](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}
 > - [Plesk Recommendations](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}
 
@@ -67,7 +68,7 @@ Weitere Informationen finden Sie in der offiziellen Dokumentation zu unterstütz
 
 **Option B - Migration über Plesk oder cPanel**
 
-Diese Methode wird empfohlen, wenn Sie eine neue VPS-Instanz mit einem aktualisierten System zusammen mit der alten Instanz bereitstellen können.
+Diese Methode wird empfohlen, wenn Sie einen neuen VPS mit einem aktualisierten System zusammen mit dem alten bereitstellen können.
 
 Bestellen Sie einen neuen VPS mit einem kompatiblen Betriebssystem, falls Sie dies noch nicht getan haben. Installieren Sie [cPanel](/pages/bare_metal_cloud/virtual_private_servers/cpanel) oder Plesk.
 
@@ -76,9 +77,9 @@ Verwenden Sie ein Tool zur Migration. Mit diesen Tools können Sie Ihre Websites
 - Plesk Migrator - [Offizielle Dokumentation](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}
 - cPanel Transfer Tool - [Official documentation](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}
 
-**Option C - Lokale Aktualisierung**
+**Option C - Direktes Betriebssystem-Update ohne Neuinstallation oder Migration (erfahrene Benutzer)**
 
-Wenn Sie keine neuen VPS einrichten möchten, können Sie bestimmte Tools verwenden, um **Ihr Betriebssystem direkt zu aktualisieren**, während Plesk oder cPanel installiert bleibt. Diese Methode ist für fortgeschrittene Benutzer vorgesehen, da sie Risiken birgt, wenn sie falsch ausgeführt wird.
+Wenn Sie keinen neuen VPS bereitstellen können, können Sie bestimmte Tools verwenden, um **Ihr Betriebssystem direkt zu aktualisieren**, während Plesk oder cPanel installiert bleibt. Diese Methode ist für fortgeschrittene Benutzer vorgesehen, da sie Risiken birgt, wenn sie falsch ausgeführt wird.
 
 - **Plesk** (Wechsel von CentOS 7 zu AlmaLinux 8): Verwenden Sie das Skript `centos2alma`, wie in der [offiziellen Plesk-Dokumentation](https://github.com/plesk/centos2alma){.external} erklärt. Siehe auch die ausführlichen Anweisungen in [Plesk Support](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
 
