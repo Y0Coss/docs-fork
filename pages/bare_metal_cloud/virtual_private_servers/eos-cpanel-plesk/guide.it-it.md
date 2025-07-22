@@ -1,7 +1,7 @@
 ---
 title: "Fine del supporto Plesk e cPanel per VPS - Garantire la continuità dei servizi"
 excerpt: "Scopri le date di fine del supporto dei sistemi operativi del tuo VPS OVHcloud che interessano le licenze Plesk e cPanel"
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 ## Obiettivo
