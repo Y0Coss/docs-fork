@@ -47,7 +47,7 @@ If you use the role and permission system, we strongly recommend [migrating to I
 
 The Graylog Web UI will now display an Identity Provider selector. You can find the username/password authenticator by selecting **Legacy username/password**. You can also try the OVHcloud IAM authenticator by selecting the appropriate provider (EU or CA).
 
-![Legacy username - password](images/graylog-legacy.png){.thumbnail}
+![Legacy username - password](images/graylog-legacy01.png){.thumbnail}
 
 ### Deprecated Features
 

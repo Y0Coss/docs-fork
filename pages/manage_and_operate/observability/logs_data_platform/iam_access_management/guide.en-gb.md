@@ -45,9 +45,9 @@ This section details how to configure local user/identity groups and policies to
 
 ### Create a group for local users
 
-By default, the least privileged group available for local users is read-only over all the products of your account. If you would like to have an even more restricted account able to read only shared data from your Logs Data Platform, we advise you to create a group with the role **None** and attach your local users to it. In the OVHcloud Control Panel, navigate to `IAM`{.action} {.action} > `Identities`{.action} > `User groups`{.action} to create such a group. 
+By default, the least privileged group available for local users is read-only over all the products of your account. If you would like to have an even more restricted account able to read only shared data from your Logs Data Platform, we advise you to create a group with the role **None** and attach your local users to it. In the OVHcloud Control Panel, navigate to `IAM`{.action} > `Identities`{.action} > `User groups`{.action} to create such a group. 
 
-![Create a group](images/create_group01.png){.thumbnail}
+![Create a group](images/create_group.png){.thumbnail}
 
 You can then create a policy with the basic rights to access the OVHcloud Control Panel and attach it to the group. All your local users will be able to connect to the OVHcloud Control Panel. Navigate to `IAM`{.action} > `Policies`{.action} > `My Policies`{.action} to create this policy and attach it to the user group.
 
@@ -67,7 +67,9 @@ Creating a local user is fully documented in the [dedicated documentation](/page
 
 ### Create a policy for the service
 
-You now need to create a policy in order to allow the local user to see the Logs Data Platform service inside the OVHcloud Control Panel. The goal here is to have access to the service only but without any sub resources visible (ie no streams, dashboards, indices, aliases or OpenSearch Dashboards instances). Navigate to `IAM`{.action} > `Policies`{.action} > `My Policies`{.action} to create this policy. Add the local user to your policy and select the **Logs Data Platform: service** product type to list your services in the *Resources* dropdown list and enable the panel of the *Actions* related to Logs Data Service. 
+You now need to create a policy in order to allow the local user to see the Logs Data Platform service inside the OVHcloud Control Panel. The goal here is to have access to the service only but without any sub resources visible (ie no streams, dashboards, indices, aliases or OpenSearch Dashboards instances). Navigate to `IAM`{.action} > `Policies`{.action} > `My Policies`{.action} to create this policy. 
+
+Add the local user to your policy and select the **Logs Data Platform: service** product type to list your services in the *Resources* dropdown list and enable the panel of the *Actions* related to Logs Data Service. 
 
 ![Create policy service 1](images/create_policy_service_1.png){.thumbnail}
 
@@ -102,7 +104,7 @@ One of the new feature available thanks to IAM is the ability to group sub-resou
 
 To create a resource group, navigate to `IAM`{.action} > `Policies`{.action} > `Resource Groups`{.action}.
 
-![Create Resource Group](images/create_rg01.png){.thumbnail}
+![Create Resource Group](images/create_rg.png){.thumbnail}
 
 You need to select the product type (Dashboards, Streams, Alias, Index, OpenSearch Dashboards) and then select the specific resource you want to share. 
 
@@ -120,7 +122,9 @@ Similarly to the previous policy, you need to add your local user and you need t
 You can mix Resource Groups and specific resources in the same policy. All actions attached to the policy will be then be attached to all related sub-resources.  
 You have several actions for each sub-resource type. For brevity, this guide will not detail all the actions available for all the items.
 
-Here are some use cases of several rights which can all be together in one policy showcasing the complexity enabled by IAM policies. Actions starting with **ldp:apiovh** are actions related to OVHcloud APIs (thus the control panel UI). The other actions are related to their specific backend: Graylog or OpenSearch. 
+Here are some use cases of several rights which can all be together in one policy showcasing the complexity enabled by IAM policies. Actions starting with **ldp:apiovh** are actions related to OVHcloud APIs (thus the control panel UI). The other actions are related to their specific backend: Graylog or OpenSearch.
+
+**Click the following links to display the related examples:**
 
 /// details | These actions give an access in read-only to one or several indices:
 
