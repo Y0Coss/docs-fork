@@ -13,7 +13,7 @@ A sua solução Web Cloud Databases está associada de forma padrão à rede de 
 
 ## Requisitos
 
-- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) (associada a um [alojamento web](/links/web/hosting)).
+- Dispor de uma [instância Web Cloud Databases](/links/web/databases) (associada a um [alojamento web](/links/web/hosting)).
 - Aceder à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções

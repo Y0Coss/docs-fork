@@ -48,7 +48,7 @@ Here is the context of the diagram above:
 
 - An OVHcloud [Private Exchange](/links/web/emails-private-exchange) or [OVHcloud](/links/web/emails-trusted-exchange) Trusted Exchange platform.
 - Access to the [OVHcloud Control Panel](/links/manager)
-- Access to the [OVHcloud API](https://api.ovh.com/)
+- Access to the [OVHcloud API](/links/api)
 - The configuration details needed for the send connector received from your service provider
 
 ## Instructions

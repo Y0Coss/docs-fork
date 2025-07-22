@@ -18,7 +18,7 @@ updated: 2022-11-25
 
 - a Nutanix Cluster in your OVHcloud account
 - access to the [OVHcloud Control Panel](/links/manager)
-- access to the [OVHcloud API page](https://api.ovh.com/)
+- access to the [OVHcloud API page](/links/api)
 
 ## Overview of versions supported on an OVHcloud Nutanix cluster
 

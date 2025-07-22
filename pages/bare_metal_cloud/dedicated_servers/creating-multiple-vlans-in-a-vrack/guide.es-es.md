@@ -16,8 +16,8 @@ La [configuración estándar del vRack](/pages/bare_metal_cloud/dedicated_server
 
 ## Requisitos
 
-- Tener uno o más [servidores dedicados](https://www.ovh.es/servidores_dedicados/){.external} compatibles con el vRack.
-- Haber activado el servicio [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
+- Tener uno o más [servidores dedicados](/links/bare-metal/bare-metal){.external} compatibles con el vRack.
+- Haber activado el servicio [vRack](/links/network/vrack){.external}.
 - Tener acceso al rango de direcciones IP privadas elegido.
 - Estar conectado por SSH con el usuario root (Linux).
 - Estar conectado con la cuenta de administrador (Windows).

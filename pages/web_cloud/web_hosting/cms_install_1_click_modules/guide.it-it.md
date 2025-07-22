@@ -221,7 +221,7 @@ Per maggiori informazioni sulle funzionalità del tuo CMS, contatta il produttor
 
 Per mantenere il pieno controllo sull’installazione del CMS è possibile [installare manualmente un CMS sull’hosting Web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
 
-Scopri la nostra soluzione [Web Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}.
+Scopri la nostra soluzione [Web Cloud Database](/links/web/databases){.external}.
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

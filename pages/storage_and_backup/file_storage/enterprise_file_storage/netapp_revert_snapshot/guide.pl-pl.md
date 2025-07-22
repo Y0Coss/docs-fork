@@ -17,7 +17,7 @@ W niniejszym przewodniku wyjaśnimy, jak przywrócić wolumen do jego ostatniego
 ## Wymagania początkowe
 
 - Wykupienie usługi OVHcloud Enterprise File Storage z wolumenem
-- Połączenie z [API OVHcloud](https://api.ovh.com/)
+- Połączenie z [API OVHcloud](/links/api)
 
 ## Podstawowe zasady
 

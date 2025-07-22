@@ -43,7 +43,7 @@ En el ejemplo anterior, la dirección IP está anunciada en **Roubaix**. Puede v
 
 ### 2. Modificar el anuncio del bloque de IP
 
-Conéctese a la [API de OVHcloud](https://api.ovh.com/) con su ID de cliente y contraseña. Utilice las siguientes llamadas a la API para modificar el anuncio del bloque de IP:
+Conéctese a la [API de OVHcloud](/links/api) con su ID de cliente y contraseña. Utilice las siguientes llamadas a la API para modificar el anuncio del bloque de IP:
 
 > [!api]
 >

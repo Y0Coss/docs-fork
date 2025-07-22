@@ -5,11 +5,11 @@ updated: 2025-07-22
 ---
 
 > [!primary]
-> Ten artykuł dotyczy konfiguracji głównych adresów IPv6 w interfejsie publicznym. Możesz również skonfigurować adresy Additional IP na Twoim serwerze VPS, używając [tego przewodnika](/pages/bare_metal_cloud/virtual_private_servers/configuing-ip-aliasing).
+> Ten artykuł dotyczy konfiguracji głównych adresów IPv6 w interfejsie publicznym. Możesz również skonfigurować adresy Additional IP na Twoim serwerze VPS, używając [tego przewodnika](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
 >
 > Pamiętaj, że adresy Additional IP mogą być również skonfigurowane w sieci vRack (sieć prywatna), co pozwala na połączenie szerokiej gamy usług OVHcloud i zapewnia większą elastyczność.
 >
-> Dowiedz się, jak skonfigurować dodatkowe adresy IP w sieci vRack za pomocą przewodników dla [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuing-an-ip-block-in-a-vrack) i [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> Dowiedz się, jak skonfigurować dodatkowe adresy IP w sieci vRack za pomocą przewodników dla [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) i [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Wprowadzenie
@@ -28,7 +28,7 @@ IPv6 to najnowsza wersja *Internet Protocol* (IP). Każdy serwer VPS OVHcloud je
 - Posiadanie [serwera VPS OVHcloud](/links/bare-metal/vps){.external}.
 - Połączenie z serwerem VPS przez SSH (dostęp root) lub przez zdalny pulpit (Windows).
 - Posiadanie podstawowej wiedzy w zakresie sieci.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external} lub [API OVHcloud](https://api.ovh.com/).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external} lub [API OVHcloud](/links/api).
 
 ## W praktyce
 

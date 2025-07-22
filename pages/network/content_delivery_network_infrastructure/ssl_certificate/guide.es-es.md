@@ -12,7 +12,7 @@ Es posible añadir un [certificado SSL](/links/web/hosting-options-ssl){.externa
 
 ## Requisitos
 
-- Tener contratada la solución [CDN de OVH](https://www.ovh.es/cdn/){.external}.
+- Tener contratada la solución [CDN de OVH](/links/network/cdn-infrastructure){.external}.
 - Tener acceso a la gestión de la zona DNS del dominio.
 
 ## Procedimiento

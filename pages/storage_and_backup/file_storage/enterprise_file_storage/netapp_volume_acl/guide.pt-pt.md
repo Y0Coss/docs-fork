@@ -17,7 +17,7 @@ Neste guia, saiba como gerir os ACL de um volume para a oferta OVHcloud Enterpri
 ## Requisitos
 
 - Dispor de uma oferta OVHcloud Enterprise File Storage com um volume
-- Ter acesso à página das [API OVHcloud](https://api.ovh.com/)
+- Ter acesso à página das [API OVHcloud](/links/api)
 
 ## O essencial
 

@@ -146,7 +146,7 @@ Para mejorar el acceso al sitio web y su descarga, y lograr un posicionamiento n
 
 Como resultado, mejorará los tiempos de respuesta para los visitantes de todo el mundo, ya que estos podrán descargar las partes estáticas de su sitio web en el punto de presencia más cercano.
 
-Descubra nuestra [solución de red de distribución de contenidos (CDN) aquí](https://www.ovh.es/cdn/){.external}.
+Descubra nuestra [solución de red de distribución de contenidos (CDN) aquí](/links/web/hosting-options-cdn){.external}.
 
 ### Paso 6: comprobar el sistema de gestión de contenidos (CMS) y los complementos utilizados
 
@@ -225,7 +225,7 @@ Evite usar la cláusula «HAVING», ya que puede lentificar las consultas. Tambi
 #### Web Cloud Databases
 Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de Web Cloud Databases para disponer de más recursos.
 
-[Consultar la solución Web Cloud Databases en nuestro sitio web](https://www.ovh.es/cloud/cloud-databases/){.external}.
+[Consultar la solución Web Cloud Databases en nuestro sitio web](/links/web/databases){.external}.
 
 ## Más información
 

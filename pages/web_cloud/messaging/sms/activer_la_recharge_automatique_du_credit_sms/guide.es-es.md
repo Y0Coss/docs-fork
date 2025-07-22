@@ -15,7 +15,7 @@ Esta guía explica en qué consiste el crédito de SMS, cómo recargarlo de form
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud.
-- Conectarse a la [API de OVHcloud](https://api.ovh.com/) (solo para las transferencias de crédito).
+- Conectarse a la [API de OVHcloud](/links/api) (solo para las transferencias de crédito).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}, en la sección `Telecom`{.action} > `SMS`{.action}.
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
@@ -26,14 +26,14 @@ Esta guía explica en qué consiste el crédito de SMS, cómo recargarlo de form
 
 En España, 0,7 créditos equivalen a 1 SMS enviado (máximo 160 caracteres). El precio por SMS es decreciente y depende de la cantidad de crédito de SMS que se adquiera en una misma contratación. 
 
-Puede consultar la lista de packs de créditos de SMS en el siguiente enlace: [https://www.ovh.es/sms/](https://www.ovh.es/sms/).
+Puede consultar la lista de packs de créditos de SMS en [el siguiente enlace](/links/telecom/sms).
 
 **Por ejemplo, si adquiere un pack de 100 créditos de SMS, cada crédito tendrá un precio de 0,06 € :**
 
 Cada SMS enviado en España equivale a 0,7 créditos, por lo que podrá enviar hasta 142 SMS.<br>
 En el caso de India, por ejemplo, cada SMS equivale a 0,4 créditos, por lo que podrá enviar hasta 250 SMS.
 
-Para más información sobre el coste de envío en créditos de sus SMS en función del destino, consulte la siguiente página: [https://www.ovh.es/sms/precios/](https://www.ovh.es/sms/precios/).
+Para más información sobre el coste de envío en créditos de sus SMS en función del destino, consulte [la siguiente página](/links/telecom/sms-prices).
 
 > [!primary]
 >

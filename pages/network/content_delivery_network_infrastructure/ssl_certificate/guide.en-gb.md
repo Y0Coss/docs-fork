@@ -6,7 +6,7 @@ updated: 2018-02-22
 
 ## Objective
 
-You can add an [SSL certificate](https://www.ovh.co.uk/ssl/){.external} to your Content Delivery Network (CDN), so that your users can connect securely, even if they do so via the CDN.
+You can add an [SSL certificate](/links/web/hosting-options-ssl){.external} to your Content Delivery Network (CDN), so that your users can connect securely, even if they do so via the CDN.
 
 **In this guide, we will show you how to do this with a Let's Encrypt certificate, delivered by OVH.**
 

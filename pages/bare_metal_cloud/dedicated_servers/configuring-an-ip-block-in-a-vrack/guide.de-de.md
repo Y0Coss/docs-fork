@@ -6,7 +6,7 @@ updated: 2025-06-04
 
 ## Einleitung
 
-Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/vrack/){.external} auch möglich, mithilfe eines öffentlichen IP-Adressblocks den öffentlichen IP-Traffic über den vRack Port Ihres Servers zu routen.
+Neben Private IP Addressing ist es mit dem [vRack](/links/network/vrack){.external} auch möglich, mithilfe eines öffentlichen IP-Adressblocks den öffentlichen IP-Traffic über den vRack Port Ihres Servers zu routen.
 
 **In dieser Anleitung erfahren Sie, wie Sie einen öffentlichen IP-Adressblock so konfigurieren, dass Sie ihn mit dem vRack verwenden können.**
 
@@ -34,7 +34,7 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 - Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Account reserviert.
 - Sie haben den gewünschten privaten IP-Adressbereich vorbereitet.
 - Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](/links/bare-metal/bare-metal).
-- Sie haben einen [vRack](https://www.ovh.de/loesungen/vrack/){.external} Dienst aktiviert.
+- Sie haben einen [vRack](/links/network/vrack){.external} Dienst aktiviert.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]

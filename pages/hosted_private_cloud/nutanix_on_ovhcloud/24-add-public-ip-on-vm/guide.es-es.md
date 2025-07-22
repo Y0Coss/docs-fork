@@ -27,13 +27,13 @@ If you want to create a web front-end or a reverse proxy to create a stack of VM
 
 ### Adding a new Additional IP to your vRack
 
-Log in to the [OVHcloud Control Panel](/links/manager) and add a Additional IP address to your [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
+Log in to the [OVHcloud Control Panel](/links/manager) and add a Additional IP address to your [vRack](/links/network/vrack){.external}.
 
 > [!primary]
 > The following instructions will use the IP block 123.45.6.78/30 for example purposes.
 >
 
-For [vRack](https://www.ovh.es/soluciones/vrack/){.external} purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below:
+For [vRack](/links/network/vrack){.external} purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first usable address is the second address in the block, as shown below:
 
 ```console
 123.45.6.76   Reserved: Network address

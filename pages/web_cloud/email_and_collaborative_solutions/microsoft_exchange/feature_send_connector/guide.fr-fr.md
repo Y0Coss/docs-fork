@@ -48,7 +48,7 @@ Voici le contexte du schéma ci-dessus:
 
 - Avoir souscrit à une plateforme [Private Exchange OVHcloud](/links/web/emails-private-exchange) ou [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
 - Être connecté à [l'espace client OVHcloud](/links/manager).
-- Être connecté aux [API OVHcloud](https://api.ovh.com/).
+- Être connecté aux [API OVHcloud](/links/api).
 - Disposer des paramètres nécessaires au paramétrage du connecteur d'envoi. Rapprochez-vous du prestataire qui vous délivre le service.
 
 ## En pratique

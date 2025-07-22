@@ -6,7 +6,7 @@ updated: 2018-01-17
 
 ## Objetivo
 
-El nuevo [Load Balancer de OVH](https://www.ovh.es/soluciones/load-balancer/){.external} es un balanceador de carga (*load balancer*) que combina fiabilidad y una gran flexibilidad en la configuración. Usted solo tiene que configurar sus productos con el Load Balancer de OVH y nosotros nos encargamos del resto.
+El nuevo [Load Balancer de OVH](/links/network/load-balancer){.external} es un balanceador de carga (*load balancer*) que combina fiabilidad y una gran flexibilidad en la configuración. Usted solo tiene que configurar sus productos con el Load Balancer de OVH y nosotros nos encargamos del resto.
 
 **Esta guía explica brevemente el funcionamiento del nuevo Load Balancer de OVH.**
 
@@ -19,7 +19,7 @@ El nuevo [Load Balancer de OVH](https://www.ovh.es/soluciones/load-balancer/){.e
  
 Este nuevo producto está basado en tecnologías *open source* muy robustas: HAProxy para el tráfico TCP y Nginx para el tráfico UDP.
 
-¡Se acabaron las limitaciones! El nuevo [Load Balancer de OVH](https://www.ovh.es/soluciones/load-balancer/){.external} se puede utilizar con diferentes protocolos:
+¡Se acabaron las limitaciones! El nuevo [Load Balancer de OVH](/links/network/load-balancer){.external} se puede utilizar con diferentes protocolos:
 
 |Tipo|Descripción|Ventajas|Tecnología|
 |---|---|---|---|

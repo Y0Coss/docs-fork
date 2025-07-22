@@ -47,7 +47,7 @@ No obstante, existen **casos especiales**, que se explican en detalle [más adel
 
 ### Cómo dar de baja la suscripción <a name="terminate"></a>
 
-Para cancelar la suscripción al servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
+Para cancelar la suscripción al servicio, conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
 
 ![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 
@@ -102,7 +102,7 @@ No es posible dar de baja las ofertas [SSL sectigo](/links/web/hosting-options-s
 
 #### SMS <a name="sms"></a>
 
-No existe procedimiento de baja para los [productos SMS](https://www.ovh.es/sms/). Una cuenta de SMS no genera ninguna suscripción mensual ni de facturación. Los créditos de SMS tienen una duración ilimitada.
+No existe procedimiento de baja para los [productos SMS](/links/telecom/sms). Una cuenta de SMS no genera ninguna suscripción mensual ni de facturación. Los créditos de SMS tienen una duración ilimitada.
 
 Si quiere eliminar una cuenta de SMS, póngase en contacto con nuestro equipo de soporte abriendo un tíquet desde el [centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help).
 
@@ -112,7 +112,7 @@ Para dar de baja su servicio [Managed bare metal](https://www.ovhcloud.com/es-es
 
 #### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Para dar de baja su servicio [VMware on OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Para dar de baja su servicio [VMware on OVHcloud](/links/hosted-private-cloud/vmware), siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Public Cloud <a name="publiccloud"></a>
 

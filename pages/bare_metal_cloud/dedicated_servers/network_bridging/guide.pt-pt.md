@@ -86,7 +86,7 @@ A gateway IPv4 atribuída ao seu servidor é apresentada na secção `Rede` do s
 
 #### Através das API OVHcloud <a name="viaapi"></a>
 
-Na [página API da OVHcloud](https://api.ovh.com/), clique no canto superior direito em `Login`{.action}. Na página seguinte, introduza o seu identificador de cliente OVHcloud.
+Na [página API da OVHcloud](/links/api), clique no canto superior direito em `Login`{.action}. Na página seguinte, introduza o seu identificador de cliente OVHcloud.
 
 Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
 >

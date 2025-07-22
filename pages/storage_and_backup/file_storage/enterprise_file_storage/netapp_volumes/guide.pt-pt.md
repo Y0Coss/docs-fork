@@ -17,7 +17,7 @@ Neste guia, saiba como gerir os volumes da oferta OVHcloud Enterprise File Stora
 ## Requisitos
 
 - Ter uma oferta OVHcloud Enterprise File Storage
-- Ter acesso à página das [API OVHcloud](https://api.ovh.com/)
+- Ter acesso à página das [API OVHcloud](/links/api)
 
 ## O essencial
 

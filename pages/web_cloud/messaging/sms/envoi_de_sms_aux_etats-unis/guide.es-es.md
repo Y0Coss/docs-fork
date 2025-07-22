@@ -15,7 +15,7 @@ El envío de SMS a Estados Unidos está sujeto a normas específicas. Esta guía
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
-- Conectarse a la [API de OVHcloud](https://api.ovh.com/) (solo para el método de envío a través de la API).
+- Conectarse a la [API de OVHcloud](/links/api) (solo para el método de envío a través de la API).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}, en la sección `Telecom`{.action} > `SMS`{.action}.
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
@@ -64,7 +64,7 @@ Rellene los campos en la ventaja emergente que aparece.
 > [!success]
 > Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](/pages/manage_and_operate/api/first-steps).
 
-Conéctese a [api.ovh.com](https://api.ovh.com/) y realice la siguiente llamada:
+Conéctese a [api.ovh.com](/links/api) y realice la siguiente llamada:
 
 > [!api]
 >

@@ -28,7 +28,7 @@ It also supposes that you already have followed the [Using vRack](/pages/public_
 And to understand why this configuration is needed, please have a look at the [Using vRack - Communicating between different private networks](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-vrack-between-private-networks) technical document.
 
 > [!warning]
-> This guide assumes you are familiar with the [OVHcloud API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+> This guide assumes you are familiar with the [OVHcloud API](/links/api). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 >
 
 ## Instructions
@@ -39,7 +39,7 @@ First of all, we will need to set up vRack Private Network for our Public Cloud.
 
 As explained in the [known limits](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits) guide, the default subnet ranges for our private networks won't work with OVHcloud Managed Kubernetes, as the ranges `10.2.0.0/16` and `10.3.0.0/16` are reserved to internal Managed Kubernetes use.
 
-Once we have created a vRack, we need to create two different Private Networks enabled at least on the region of our cluster (GRA5 in our example). The private networks created via the OVHcloud Manager have by-default ranges, that can't be easily modified. We are thus creating the private networks using the [OVHcloud API](https://api.ovh.com/). 
+Once we have created a vRack, we need to create two different Private Networks enabled at least on the region of our cluster (GRA5 in our example). The private networks created via the OVHcloud Manager have by-default ranges, that can't be easily modified. We are thus creating the private networks using the [OVHcloud API](/links/api). 
 
 For this example we are creating two private networks, `priv-net-01` & `priv-net-02`, with DHCP subnets with ranges of `10.0.1.0/24` et `10.0.2.0/24`.
 

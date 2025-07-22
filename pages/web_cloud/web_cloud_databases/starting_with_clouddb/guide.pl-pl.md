@@ -13,7 +13,7 @@ Twoje rozwiązanie Web Cloud Databases jest domyślnie powiązane z siecią host
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartego w ofercie [pakiecie hostingowym performance](/links/web/hosting))
+- Posiadanie [instancji Cloud Databases](/links/web/databases){.external} (zawartego w ofercie [pakiecie hostingowym performance](/links/web/hosting))
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce

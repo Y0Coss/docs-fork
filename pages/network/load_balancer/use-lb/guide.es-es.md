@@ -8,8 +8,8 @@ updated: 2017-12-01
 Esta guía explica los primeros pasos con el servicio Load Balancer y presenta sus principales funcionalidades.
 
 ## Requisitos
-- Tener acceso al [área de cliente](https://www.ovh.com/manager/).
-- Haber contratado un [Load Balancer](https://www.ovh.es/soluciones/load-balancer).
+- Tener acceso al [área de cliente](/links/manager).
+- Haber contratado un [Load Balancer](/links/network/load-balancer).
 
 ## Procedimiento
 

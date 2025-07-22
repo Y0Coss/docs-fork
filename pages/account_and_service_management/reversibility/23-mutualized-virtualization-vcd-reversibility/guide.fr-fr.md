@@ -27,7 +27,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Gestion avec l’API OVHcloud | Gestion des VM via API | JSON, YAML, scripts | **Entrante** : déploiement, gestion et import automatisés <br>**Sortante** : export des configurations, scripts et automatisations utilisables sur d'autres plateformes | [Connexion à l’API OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/connexion_a_l_api_ovh) |
+| Gestion avec l’API OVHcloud | Gestion des VM via API | JSON, YAML, scripts | **Entrante** : déploiement, gestion et import automatisés <br>**Sortante** : export des configurations, scripts et automatisations utilisables sur d'autres plateformes | [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) |
 | Sauvegarde et restauration manuelle | Snapshots, sauvegardes et restaurations à la demande via interface utilisateur ou API | Snapshots, images disques | **Entrante** : import d’image VM standard <br>**Sortante** :  Pas d’accès aux fichiers natifs de sauvegarde. L’export n’est pas possible dans un nouvel environnement d’hébergement | [Sauvegardes avec Veeam et restaurations](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup) |
 
 ### 3 - Fonctionnalités spécifiques

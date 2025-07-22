@@ -16,7 +16,7 @@ En los servidores Alta Gama compatibles, es posible sustituir un disco dañado e
 
 ## Requisitos
 
-- Tener contratado un servidor [mHG, HG o BHG](https://www.ovh.es/servidores_dedicados/hg/){.external}.
+- Tener contratado un servidor [mHG, HG o BHG](/links/bare-metal/hg){.external}.
 - Tener RAID por software (con tarjeta LSI).
 - Tener acceso por SSH (Linux) o RDP (Windows).
 - Haber instalado la utilidad sas2ircu (disponible en la web de [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).

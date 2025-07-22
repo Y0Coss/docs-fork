@@ -17,7 +17,7 @@ W tym przewodniku dowiesz się, jak zarządzać ACL wolumenu w ofercie OVHcloud 
 ## Wymagania początkowe
 
 - Posiadanie oferty OVHcloud Enterprise File Storage z wolumenem
-- Dostęp do strony [API OVHcloud](https://api.ovh.com/)
+- Dostęp do strony [API OVHcloud](/links/api)
 
 ## Podstawowe
 

@@ -17,7 +17,7 @@ In questa guida ti spieghiamo come ripristinare un volume al suo ultimo Snapshot
 ## Prerequisiti
 
 - Disporre di una soluzione OVHcloud Enterprise File Storage con un volume
-- Avere accesso all’[API OVHcloud](https://api.ovh.com/)
+- Avere accesso all’[API OVHcloud](/links/api)
 
 ## Nozioni di base
 

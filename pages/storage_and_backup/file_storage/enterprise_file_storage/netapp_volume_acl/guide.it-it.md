@@ -16,7 +16,7 @@ Questa guida ti mostra come gestire le ACL di un volume con l'offerta OVHcloud E
 ## Prerequisiti
 
 - Disporre di una soluzione OVHcloud Enterprise File Storage con un volume
-- Essere connesso alla pagina delle [API OVHcloud](https://api.ovh.com/)
+- Essere connesso alla pagina delle [API OVHcloud](/links/api)
 
 ## L'essenziale
 

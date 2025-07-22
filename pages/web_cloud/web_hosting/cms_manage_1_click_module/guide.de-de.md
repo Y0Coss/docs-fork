@@ -73,7 +73,7 @@ Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr 
 
 Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst sein Datenbank mit Sicherheit **identifizieren**. Gehen Sie dazu im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}.
 
-Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
+Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [Web Cloud Databases](/links/web/databases) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
 
 Andernfalls gehen Sie zum Tab `Multisite`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`: Dieses Verzeichnis enthält die Dateien, aus denen Ihr 1-Klick-Modul auf dem FTP-Server besteht.
 
