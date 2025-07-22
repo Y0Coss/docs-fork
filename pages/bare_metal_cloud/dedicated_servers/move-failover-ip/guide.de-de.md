@@ -4,12 +4,12 @@ excerpt: Erfahren Sie hier, wie Sie eine Additional IP über Ihr Kundencenter od
 updated: 2025-07-21
 ---
 
-> [!PRIMARY]
-> Dieser Artikel befasst sich mit der Verschiebung von Additional IPv4-Adressen, die nach [regionalen Beschränkungen](#limitations) eingeschränkt ist.
+> [!primary]
+> Diese Anleitung befasst sich mit dem Umzug von Additional IPv4-Adressen, die nach [regionalen Beschränkungen](#limitations) limitiert ist.
 >
-> Die Konfiguration von Additional IPs in einem vRack (privatem Netzwerk) umgeht diese regionalen Einschränkungen, da die Abhängigkeit von einer einzelnen Region verloren geht und gleichzeitig die Anbindung an eine breite Palette von OVHcloud-Diensten vereinfacht wird.
+> Die Konfiguration von Additional IPs in einem vRack (privates Netzwerk) umgeht diese regionalen Einschränkungen, da die Abhängigkeit von einer einzelnen Region nicht besteht und gleichzeitig die Anbindung an eine breite Palette von OVHcloud Diensten vereinfacht wird.
 >
-> Hier erfahren Sie, wie Sie Additional IPs in einem vRack mithilfe unserer Anleitungen für [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) und [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack) konfigurieren.
+> Erfahren Sie, wie Sie Additional IPs in einem vRack mithilfe unserer Anleitungen für [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) und [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack) konfigurieren.
 >
 
 ## Ziel
@@ -19,8 +19,7 @@ Additional IP-Adressen können zwischen den von Ihnen verwendeten Diensten versc
 Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in weniger als einer Minute austauschen, praktisch ohne Unterbrechung für Ihre Nutzer. Dies ist nützlich für Service-Migrationen (z.B. Verschieben von Projekten von der Entwicklung in die Produktion) oder beim Wechsel zu einem Sicherungsserver während eines technischen Problems.
 
 > [!primary]
-> Sie können Ihre IP-Adressblöcke jedem kompatiblen Dienst innerhalb einer Region zuweisen.
-IP-Adressblöcke in einer Region können innerhalb dieser Region von einem Rechenzentrum in ein anderes verschoben werden, aber nicht aus dieser Region heraus.
+> Sie können Ihre IP-Adressblöcke jedem kompatiblen Dienst innerhalb einer Region zuweisen. IP-Adressblöcke in einer Region können innerhalb dieser Region von einem Rechenzentrum in ein anderes verschoben werden, aber nicht aus dieser Region heraus.
 >
 > Eine Ausnahme bilden die Regionen eu-west-gra, eu-west-rbx und eu-west-sbg, da hier IP-Adressblöcke zwischen diesen 3 Regionen verschoben werden können.
 >
