@@ -4,11 +4,6 @@ excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre VPS-Konfiguration ei
 updated: 2024-11-05
 ---
 
-> [!primary]
->
-> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](/links/network/additional-ip). Die Namensänderung hat keine Auswirkungen auf dessen technische Funktionen.
->
-
 ## Ziel
 
 Bei *IP Aliasing* handelt es sich um eine spezielle Netzwerkkonfiguration für bestimme OVHcloud Dienste, mit der Sie mehrere IP-Adressen über ein einziges Netzwerkinterface verbinden können.
@@ -45,7 +40,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 |NETWORK_INTERFACE|Name des Netzwerkinterfaces|*eth*, *ens3*|
 |ID|ID der Alias-IP, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IP-Adressen)|*0*, *1*|
 
-### Debian 10/11
+### Debian 11
 
 #### Schritt 1: Automatische Netzwerkkonfiguration deaktivieren
 
@@ -214,7 +209,7 @@ sudo netplan apply
 
 Wiederholen Sie diesen Vorgang für jede Additional IP-Adresse.
 
-### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 Die Hauptkonfigurationsdatei befindet sich im Ordner `/etc/sysconfig/network-scripts/`. In diesem Beispiel ist es `ifcfg-eth0`. Überprüfen Sie den Dateinamen in Ihrem Ordner, bevor Sie Änderungen vornehmen.
 
@@ -402,7 +397,7 @@ Geben Sie `cmd` ein und klicken Sie auf `OK`{.action}, um die Eingabeaufforderun
 
 Um die aktuelle IP-Konfiguration anzuzeigen, geben Sie `ipconfig` ein.
 
-```powershell
+```console
 C:\Users\Administrator>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
@@ -450,7 +445,7 @@ Die Verbindung zu Ihrem Server wird für einige Sekunden unterbrochen.
 
 Öffnen Sie die Eingabeaufforderung (cmd), und geben Sie `ipconfig` ein. Die Konfiguration muss nun die neue Additional IP-Adresse enthalten.
 
-```powershell
+```console
 C:\Users\Administrator>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
