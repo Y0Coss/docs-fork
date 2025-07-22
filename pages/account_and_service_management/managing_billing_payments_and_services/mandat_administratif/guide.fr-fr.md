@@ -1,6 +1,6 @@
 ---
 title: 'Payer une commande en tant qu’administration publique'
-updated: 2018-05-31
+updated: 2025-07-22
 ---
 
 ## Objectif
@@ -46,7 +46,7 @@ Il n'est plus nécessaire d'effectuer le paiement par mandat administratif. OVHc
 
 ### Cas des conventions tripartites
 
-Pour mettre en place une convention tripartite avec OVHcloud, nous vous invitons à contacter notre [service commercial](https://www.ovh.com/fr/support/nous-contacter/){.external}.
+Pour mettre en place une convention tripartite avec OVHcloud, nous vous invitons à contacter notre [support](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ## Aller plus loin
 
