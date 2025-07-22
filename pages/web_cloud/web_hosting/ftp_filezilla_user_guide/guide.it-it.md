@@ -4,6 +4,11 @@ excerpt: "Consulta qui una guida all'utilizzo del software Filezilla sul tuo hos
 updated: 2025-06-10
 ---
 
+> [!primary]
+> **Disattivazione dello strumento FTP Explorer/Net2FTP**
+>
+> Per gli hosting Web, non è più possibile connettersi allo spazio di storage FTP tramite lo strumento online FTP Explorer/Net2FTP. Per continuare a connettersi in FTP al tuo hosting Web, utilizza i software [Filezilla](https://filezilla-project.org/download.php){.external} o [Cyberduck](https://cyberduck.io/){.external}.
+
 ## Obiettivo
 
 FileZilla è un software disponibile gratuitamente su diversi sistemi operativi (Windows, macOS, ecc...).
@@ -11,22 +16,11 @@ Permette di pubblicare online file o sito Internet [accedendo allo spazio FTP](/
 
 **Questa guida ti mostra come utilizzare Filezilla con il tuo hosting condiviso.**
 
-> [!warning]
->
-> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
-> 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla gestione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](/links/partner) o contattare l'amministratore del software. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
-> 
-
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre di una soluzione di [hosting Web](/links/web/hosting){.external} attiva
 - Aver installato il software Filezilla sul tuo computer Disponibile gratuitamente sulla pagina [filezilla-project.org](https://filezilla-project.org/download.php){.external}
-
-> [!primary]
->
-> Per gli hosting Web, non è più possibile connettersi allo spazio di storage FTP tramite lo strumento online FTP Explorer/Net2FTP. Per continuare a connettersi in FTP al tuo hosting Web, utilizza i software [Filezilla](https://filezilla-project.org/download.php){.external} o [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Presentazione dell'interfaccia <a name="interface"></a>
 

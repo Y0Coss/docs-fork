@@ -4,7 +4,12 @@ excerpt: "Verwendung der FileZilla Software mit Ihrem Webhosting"
 updated: 2025-06-10
 ---
 
-## Ziel 
+> [!primary]
+> **FTP-Explorer/Net2FTP deaktivieren**
+>
+> Bei Webhostings ist es nicht mehr möglich, sich mit dem FTP-Speicherplatz über das Online-Tool FTP Explorer/Net2FTP zu verbinden. Um sich weiterhin per FTP mit Ihrem Webhosting zu verbinden, verwenden Sie die Programme [Filezilla](https://filezilla-project.org/download.php){.external} oder [Cyberduck](https://cyberduck.io/){.external}.
+
+## Ziel
 
 FileZilla ist ein FTP-Client, der für mehrere Betriebssystemen (Windows, macOS etc.) kostenlos zur Verfügung steht.
 
@@ -12,21 +17,11 @@ Sie können damit Dateien bzw. Ihre Websiten online stellen, indem Sie sich im [
 
 **In dieser Anleitung erfahren Sie, wie Sie FileZilla mit Ihrem Webhosting verwenden.**
 
-> [!warning]
-> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
-> 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
->
-
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben FileZilla auf Ihrem Gerät installiert. Das Programm ist kostenlos verfügbar auf der offiziellen Seite: [filezilla-project.org](https://FileZilla-project.org/download.php){.external}
-
-> [!primary]
->
-> Bei Webhostings ist es nicht mehr möglich, sich mit dem FTP-Speicherplatz über das Online-Tool FTP Explorer/Net2FTP zu verbinden. Um sich weiterhin per FTP mit Ihrem Webhosting zu verbinden, verwenden Sie die Programme [Filezilla](https://filezilla-project.org/download.php){.external} oder [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Interface Übersicht <a name="interface"></a>
 

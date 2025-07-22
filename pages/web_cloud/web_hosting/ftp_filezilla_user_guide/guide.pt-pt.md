@@ -4,6 +4,11 @@ excerpt: "Encontre aqui um tutorial para a utilização do software Filezilla no
 updated: 2025-06-10
 ---
 
+> [!primary]
+> **Ferramenta FTP Explorer/Net2FTP desativada**
+>
+> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
+
 ## Objetivo
 
 O FileZilla é um software disponível gratuitamente em vários sistemas operativos (Windows, macOS, etc.).
@@ -11,22 +16,11 @@ Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](/pages/web
 
 **Saiba como utilizar o software Filezilla com o seu alojamento partilhado.**
 
-> [!warning]
->
-> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
-> 
-> Este tutorial está disponível para o acompanhar nas suas operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do software. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
-> 
-
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting){.external}.
 - Ter instalado o software Filezilla no seu computador. Este último está disponível gratuitamente a partir da página [filezilla-project.org](https://filezilla-project.org/download.php){.external}
-
-> [!primary]
->
-> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Apresentação da interface <a name="interface"></a>
 

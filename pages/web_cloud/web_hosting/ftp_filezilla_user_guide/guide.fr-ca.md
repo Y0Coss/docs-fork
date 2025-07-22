@@ -4,6 +4,11 @@ excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur
 updated: 2025-06-10
 ---
 
+> [!primary]
+> **Désactivation de l'outil FTP Explorer/Net2FTP**
+>
+> Pour les hébergements web, il n'est plus possible de se connecter à l'espace de stockage FTP via l'outil en ligne FTP Explorer/Net2FTP. Pour continuer à vous connecter en FTP à votre hébergement web, utilisez les logiciels [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
+
 ## Objectif
 
 FileZilla est un logiciel disponible gratuitement sur plusieurs systèmes d'exploitations (Windows, macOS, etc).
@@ -13,22 +18,11 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/wwPx8ORF1kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
-> [!warning]
->
-> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
-> 
-
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
 - Avoir installé le logiciel Filezilla sur votre ordinateur. Celui-ci est disponible gratuitement depuis la page [filezilla-project.org](https://filezilla-project.org/download.php){.external}
-
-> [!primary]
->
-> Pour les hébergements web, il n'est plus possible de se connecter à l'espace de stockage FTP via l'outil en ligne FTP Explorer/Net2FTP. Pour continuer à vous connecter en FTP à votre hébergement web, utilisez les logiciels [Filezilla](https://filezilla-project.org/download.php){.external} ou [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Présentation de l'interface <a name="interface"></a>
 

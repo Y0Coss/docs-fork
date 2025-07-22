@@ -4,6 +4,11 @@ excerpt: "Find here a tutorial for using the FileZilla software on your web host
 updated: 2025-06-10
 ---
 
+> [!primary]
+> **FTP Explorer/Net2FTP tool deactivated**
+>
+> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php){.external} or [Cyberduck](https://cyberduck.io/){.external} software.
+
 ## Objective
 
 FileZilla is free software available on several operating systems (Windows, macOS, etc.).
@@ -11,22 +16,11 @@ You can use it to put files or your website online by [connecting to your web ho
 
 **Find out how to use the FileZilla software on your web hosting plan.**
 
-> [!warning]
->
-> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
->
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [`Go further`](#go-further) section of this guide.
->
-
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
 - An [OVHcloud Web Hosting plan](/links/web/hosting)
 - You need to have installed the FileZilla client on your computer. It is available free of charge from the page [filezilla-project.org](https://filezilla-project.org/download.php){.external}.
-
-> [!primary]
->
-> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php){.external} or [Cyberduck](https://cyberduck.io/){.external} software.
 
 ## Interface overview <a name="interface"></a>
 

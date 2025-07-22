@@ -4,6 +4,11 @@ excerpt: "Consulte aquí un tutorial sobre el uso de Filezilla en su alojamiento
 updated: 2025-06-10
 ---
 
+> [!primary]
+> **Desactivación de FTP Explorer/Net2FTP**
+>
+> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php){.external} o [Cyberduck](https://cyberduck.io/){.external}.
+
 ## Objetivo
 
 FileZilla es un programa gratuito disponible en varios sistemas operativos (Windows, macOS, etc.).
@@ -11,22 +16,11 @@ Permite publicar archivos o su sitio web [conectándose al espacio FTP](/pages/w
 
 **Esta guía explica cómo utilizar Filezilla en un alojamiento compartido.**
 
-> [!warning]
->
-> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
-> 
-> Ponemos a su disposición este tutorial para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del programa. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado ["Más información"](#go-further) de este tutorial.
-> 
-
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un [plan de hosting](/links/web/hosting){.external}.
 - Haber instalado Filezilla en su ordenador. Está disponible de forma gratuita en la página [filezilla-project.org.](https://filezilla-project.org/download.php){.external}
-
-> [!primary]
->
-> Para los alojamientos web, ya no es posible conectarse al espacio de almacenamiento FTP mediante la herramienta en línea FTP Explorer/Net2FTP. Para seguir conectándose por FTP a su alojamiento web, utilice los programas [Filezilla](https://filezilla-project.org/download.php){.external} o [Cyberduck](https://cyberduck.io/){.external}.
 
 ## Presentación de la interfaz <a name="interface"></a>
 
