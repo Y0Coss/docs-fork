@@ -1,7 +1,7 @@
 ---
 title: "KMS for VMware on OVHcloud - Configuring VM encryption"
 excerpt: "Find out how to enable VM encryption in your managed Hosted Private Cloud VMware vSphere with the OVHcloud KMS (OKMS) solution managed as a service"
-updated: 2024-08-28
+updated: 2025-07-22
 ---
 
 <style>
@@ -17,11 +17,6 @@ details[open]>summary::before {
 content:'\25BC';
 }
 </style>
-
-> [!primary]
->
-> This feature is available in beta version.
->
 
 ## Objective
 
@@ -42,14 +37,24 @@ content:'\25BC';
 
 **Summary of guide steps**:
 
-- [Introduction - Lists of OVHcloud KMS endpoints](#introduction)
-- [Step 1 - Ordering an OVHcloud KMS (mandatory)](#order-okms)
-- [Step 2 - OVHcloud KMS activation (mandatory)](#activation-okms)
-- [Step 3 - Creating an IAM policy (mandatory)](#iam-creation)
-- [Step 4 - Configuring OKMS with vSphere (mandatory)](#add-okms)
-- [Step 5 - Creating a VM storage policy (mandatory)](#storage-policy)
-- [Step 6 - Enabling encryption on a VM (mandatory)](#activation-encryption)
-- [Step 7 - TLS OKMS useful information](#useful-information)
+- [Objective](#objective)
+- [Requirements](#requirements)
+- [Instructions ](#instructions-)
+  - [Introduction, list of available URLs and OKMS API calls ](#introduction-list-of-available-urls-and-okms-api-calls-)
+    - [URLs OKMS](#urls-okms)
+    - [List of API v1 and v2 KMS calls ](#list-of-api-v1-and-v2-kms-calls-)
+  - [Step 1 - Ordering an OVHcloud KMS (mandatory) ](#step-1---ordering-an-ovhcloud-kms-mandatory-)
+    - [Via the OVHcloud Control Panel](#via-the-ovhcloud-control-panel)
+    - [Via OVHcloud APIs](#via-ovhcloud-apis)
+  - [Step 2 - Activate OVHcloud KMS (mandatory) ](#step-2---activate-ovhcloud-kms-mandatory-)
+    - [Via the OVHcloud Control Panel](#via-the-ovhcloud-control-panel-1)
+    - [Via OVHcloud APIs (optional)](#via-ovhcloud-apis-optional)
+  - [Step 3 - Create an IAM policy ](#step-3---create-an-iam-policy-)
+  - [Step 4 - Configuring OKMS with VMware vSphere HPC (mandatory) ](#step-4---configuring-okms-with-vmware-vsphere-hpc-mandatory-)
+  - [Step 5 - Create a VM storage policy (required) ](#step-5---create-a-vm-storage-policy-required-)
+  - [Step 6 - Enabling encryption on a VM (required) ](#step-6---enabling-encryption-on-a-vm-required-)
+- [Go further ](#go-further-)
+  - [Useful information - TLS/KMS ](#useful-information---tlskms-)
 
 ### Introduction, list of available URLs and OKMS API calls <a name="introduction"></a>
 
@@ -59,56 +64,62 @@ For more information on the choices you can make with KMS and VMware on OVHcloud
 
 > [!primary]
 >
-> Information and API calls for beta phase.
+> Information and API endpoints.
 >
 
-|   **Type**    | **URL**                          |      **Region**       |  **OKMS Enum Region**  |      **IP**      |
-|:-------------:|:---------------------------------|:---------------------:|:----------------------:|:----------------:|
-|   **KMIP**    | eu-west-rbx.okms.ovh.net         |   France - Roubaix    |      EU_WEST_RBX       |  91.134.128.102  |
-|   **KMIP**    | eu-west-rbx.okms.ovh.net         |   France - Roubaix    |      EU_WEST_RBX       |  91.134.128.102  |
-|   **REST**    | eu-west-rbx.okms.ovh.net         |   France - Roubaix    |      EU_WEST_RBX       |  91.134.128.102  |
-|  **Swagger**  | swagger-eu-west-rbx.okms.ovh.net |   France - Roubaix    |      EU_WEST_RBX       |  91.134.128.102  |
-|   **KMIP**    | eu-west-sbg.okms.ovh.net         |  France - Strasbourg  |      EU_WEST_SBG       |  137.74.127.152  |
-|   **KMIP**    | eu-west-sbg.okms.ovh.net         |  France - Strasbourg  |      EU_WEST_SBG       |  137.74.127.152  |
-|   **REST**    | eu-west-sbg.okms.ovh.net         |  France - Strasbourg  |      EU_WEST_SBG       |  137.74.127.152  |
-|  **Swagger**  | swagger-eu-west-sbg.okms.ovh.net |  France - Strasbourg  |      EU_WEST_SBG       |  137.74.127.152  |
+|   **Type**   | **URL**                          |         **Region**          | **OKMS Enum Region** |                   **IP**                    |
+| :----------: | :------------------------------- | :-------------------------: | :------------------: | :-----------------------------------------: |
+| **Endpoint** | eu-west-rbx.okms.ovh.net         |      France - Roubaix       |     EU_WEST_RBX      |               91.134.128.102                |
+| **Swagger**  | swagger-eu-west-rbx.okms.ovh.net |      France - Roubaix       |     EU_WEST_RBX      |               91.134.128.102                |
+| **Endpoint** | eu-west-sbg.okms.ovh.net         |     France - Strasbourg     |     EU_WEST_SBG      |               137.74.127.152                |
+| **Swagger**  | swagger-eu-west-sbg.okms.ovh.net |     France - Strasbourg     |     EU_WEST_SBG      |               137.74.127.152                |
+| **Endpoint** | ca-east-bhs.okms.ovh.net         | North America - Beauharnois |     CA_EAST_BHS      |                142.44.140.50                |
+| **Swagger**  | swagger-ca-east-bhs.okms.ovh.net | North America - Beauharnois |     CA_EAST_BHS      |                142.44.140.50                |
+| **Endpoint** | ca-east-tor.okms.ovh.net         |   North America - Toronto   |     CA_EAST_TOR      |                 72.251.10.6                 |
+| **Swagger**  | swagger-ca-east-tor.okms.ovh.net |   North America - Toronto   |     CA_EAST_TOR      |                 72.251.10.6                 |
+| **Endpoint** | ap-southeast-syd.okms.ovh.net    |    Asia Pacific - Sydney    |   AP_SOUTHEAST_SYD   |                139.99.175.10                |
+| **Swagger**  | ap-southeast-syd.okms.ovh.net    |    Asia Pacific - Sydney    |   AP_SOUTHEAST_SYD   |                139.99.175.10                |
+| **Endpoint** | ap-southeast-sgp.ovh.net         |  Asia Pacific - Singapore   |   AP_SOUTHEAST_SGP   |       51.79.192.115 <br>51.79.192.94        |
+| **Swagger**  | swagger-ap-southeast-sgp.ovh.net |  Asia Pacific - Singapore   |   AP_SOUTHEAST_SGP   |       51.79.192.115 <br>51.79.192.94        |
+| **Endpoint** | eu-west-par.okms.ovh.net         |       France - Paris        |     EU_WEST_PAR      | 57.130.4.16 <br>57.130.4.25 <br>57.130.4.26 |
+| **Swagger**  | swagger-eu-west-par.okms.ovh.net |       France - Paris        |     EU_WEST_PAR      | 57.130.4.16 <br>57.130.4.25 <br>57.130.4.26 |
 
 #### List of API v1 and v2 KMS calls <a name="listing-api"></a>
 
 > [!primary]
 >
-> Information and API calls for beta phase.
+> Information and API calls.
 >
 
-|      **Method**       |   **API**   | **Path**                                                                 | **Comments**                                                     |
-|:---------------------:|:-----------:|:-------------------------------------------------------------------------|:-----------------------------------------------------------------|
-|                       |             |                                                                          |                                                                  |
-|   **Credentials:**    |             |                                                                          |                                                                  |
-|        **GET**        |     v2      | /okms/resource/{okmsId}/credential                                       | - List all access credentials.                                   |
-|       **POST**        |     v2      | /okms/resource/{okmsId}/credential                                       | - Request a new access credential.                               |
-|        **GET**        |     v2      | /okms/resource/{okmsId}/credential/{credentialId}                        | - Get an access credential.                                      |
-|        **DEL**        |     v2      | /okms/resource/{okmsId}/credential/{credentialId}                        | - Revoke and delete an access credential.                        |
-|                       |             |                                                                          |                                                                  |
-|    **Reference:**     |             |                                                                          |                                                                  |
-|        **GET**        |     v2      | /okms/reference/serviceKey                                               | - Get service key type, size, curve and operations combination.  |
-|                       |             |                                                                          |                                                                  |
-|    **Resources:**     |             |                                                                          |                                                                  |
-|        **GET**        |     v2      | /okms/resource                                                           | - List of OVHcloud KMS services.                                 |
-|        **GET**        |     v2      | /okms/resource/{okmsId}                                                  | - Get an OVHcloud KMS service.                                   |
-|                       |             |                                                                          |                                                                  |
-|   **Service Keys:**   |             |                                                                          |                                                                  |
-|        **GET**        |     v2      | /okms/resource/{okmsId}/serviceKey                                       | - List all keys.                                                 |
-|       **POST**        |     v2      | /okms/resource/{okmsId}/serviceKey                                       | - Create or import a service key.                                |
-|        **GET**        |     v2      | /okms/resource/{okmsId}/serviceKey/{keyId}                               | - Retrieve a key.                                                |
-|        **PUT**        |     v2      | /okms/resource/{okmsId}/serviceKey/{keyId}                               | - Update a service key.                                          |
-|        **DEL**        |     v2      | /okms/resource/{okmsId}/serviceKey/{keyId}                               | - Delete the given service key.                                  |
-|                       |             |                                                                          |                                                                  |
-|  **Authentication:**  |             |                                                                          |                                                                  |
-|        **GET**        |     v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms                           | - List virtual machine encryption KMS servers.                   |
-|       **POST**        |     v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms                           | - Create virtual machine encryption KMS server.                  |
-|        **GET**        |     v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                   | - Get virtual machine encryption KMS server.                     |
-|        **DEL**        |     v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                   | - Remove virtual machine encryption KMS server.                  |
-|       **POST**        |     v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties  | - Update virtual machine encryption KMS server.                  |
+|     **Method**      | **API** | **Path**                                                                | **Comments**                                                    |
+| :-----------------: | :-----: | :---------------------------------------------------------------------- | :-------------------------------------------------------------- |
+|                     |         |                                                                         |                                                                 |
+|  **Credentials:**   |         |                                                                         |                                                                 |
+|       **GET**       |   v2    | /okms/resource/{okmsId}/credential                                      | - List all access credentials.                                  |
+|      **POST**       |   v2    | /okms/resource/{okmsId}/credential                                      | - Request a new access credential.                              |
+|       **GET**       |   v2    | /okms/resource/{okmsId}/credential/{credentialId}                       | - Get an access credential.                                     |
+|       **DEL**       |   v2    | /okms/resource/{okmsId}/credential/{credentialId}                       | - Revoke and delete an access credential.                       |
+|                     |         |                                                                         |                                                                 |
+|   **Reference:**    |         |                                                                         |                                                                 |
+|       **GET**       |   v2    | /okms/reference/serviceKey                                              | - Get service key type, size, curve and operations combination. |
+|                     |         |                                                                         |                                                                 |
+|   **Resources:**    |         |                                                                         |                                                                 |
+|       **GET**       |   v2    | /okms/resource                                                          | - List of OVHcloud KMS services.                                |
+|       **GET**       |   v2    | /okms/resource/{okmsId}                                                 | - Get an OVHcloud KMS service.                                  |
+|                     |         |                                                                         |                                                                 |
+|  **Service Keys:**  |         |                                                                         |                                                                 |
+|       **GET**       |   v2    | /okms/resource/{okmsId}/serviceKey                                      | - List all keys.                                                |
+|      **POST**       |   v2    | /okms/resource/{okmsId}/serviceKey                                      | - Create or import a service key.                               |
+|       **GET**       |   v2    | /okms/resource/{okmsId}/serviceKey/{keyId}                              | - Retrieve a key.                                               |
+|       **PUT**       |   v2    | /okms/resource/{okmsId}/serviceKey/{keyId}                              | - Update a service key.                                         |
+|       **DEL**       |   v2    | /okms/resource/{okmsId}/serviceKey/{keyId}                              | - Delete the given service key.                                 |
+|                     |         |                                                                         |                                                                 |
+| **Authentication:** |         |                                                                         |                                                                 |
+|       **GET**       |   v1    | /dedicatedCloud/{serviceName}/vmEncryption/kms                          | - List virtual machine encryption KMS servers.                  |
+|      **POST**       |   v1    | /dedicatedCloud/{serviceName}/vmEncryption/kms                          | - Create virtual machine encryption KMS server.                 |
+|       **GET**       |   v1    | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                  | - Get virtual machine encryption KMS server.                    |
+|       **DEL**       |   v1    | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                  | - Remove virtual machine encryption KMS server.                 |
+|      **POST**       |   v1    | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties | - Update virtual machine encryption KMS server.                 |
 
 ### Step 1 - Ordering an OVHcloud KMS (mandatory) <a name="command-okms"></a>
 
@@ -120,12 +131,7 @@ For more information on the choices you can make with KMS and VMware on OVHcloud
 
 To access the OVHcloud KMS, log in to your [OVHcloud Control Panel](/links/manager), then go to the `Hosted Private Cloud`{.action} section. In the left-hand column, click `Identity, Security & Operation`{.action}, then `Key Management Service`{.action}.
 
-To order a new KMS server, click the `Order a KMS`{.action} button, then `Select a region`{.action} from the two currently available:
-
-You currently have the following regions available:
-
-- `Europe - France Roubaix`
-- `Europe - France Strasbourg`
+To order a new KMS server, click the `Order a KMS`{.action} button, then `Select a region`{.action}.
 
 The encryption keys and access certificates for this KMS will be stored in the specified region. They can be used for any OVHcloud product, regardless of region.
 
@@ -196,7 +202,8 @@ Return example:
   {
     "id": "Null",
     "region": "EU_WEST_RBX",
-    "kmipEndpoint": "eu-west-rbx.okms.ovh.net:5696",
+    "kmipEndpoint": "eu-west-rbx.okms.ovh.net:5696"
+    "kmipRsaEndpoint": "eu-west-rbx.okms.ovh.net:5697",
     "restEndpoint": "https://eu-west-rbx.okms.ovh.net",
     "swaggerEndpoint": "https://swagger-eu-west-rbx.okms.ovh.net",
     "iam": {
@@ -245,7 +252,7 @@ In the new window that pops up, fill out the following forms:
 To retrieve the TLS fingerprint, launch the following OpenSSL command (adapt your OKMS endpoint to the right region (e.g. eu-west-rbx/sbg), which includes your OVHcloud KMS):
 
 ```shell
-openssl s_client -connect eu-west-rbx.okms.ovh.net:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
+openssl s_client -connect eu-west-rbx.okms.ovh.net:5697 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 ---
 Return:
 SHA1 Fingerprint=FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47
@@ -323,7 +330,7 @@ Copy and paste (with KMS settings):
 To retrieve the KMS TLS fingerprint, run the following command **OpenSSL**, adapting the command to the region where your KMS is located:
 
 ```shell
-openssl s_client -connect eu-west-rbx.okms.ovh.net:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
+openssl s_client -connect eu-west-rbx.okms.ovh.net:5697 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 ---
 Back:
 SHA1 Fingerprint=FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47
@@ -364,7 +371,7 @@ After running the API, you should see the following result in response:
 ```shell
 {
   "kmsId": XXX,
-  "kmsTcpPort": 5696,
+  "kmsTcpPort": 5697,
   "sslThumbprint": "Null",
   "description": "OKMS description",
   "state": "delivered",
@@ -449,7 +456,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >>
 >> ![KMS Key Provider](images/kms_key_provider.png){.thumbnail}
 >>
->> Once you have selected the option to add a Key Provider, a window or form will open to enter the details of the **Key Provider** you wish to add. This may include information such as the IP address or domain name (DNS) of the OKMS server, but also the port used (5696).
+>> Once you have selected the option to add a Key Provider, a window or form will open to enter the details of the **Key Provider** you wish to add. This may include information such as the IP address or domain name (DNS) of the OKMS server, but also the port used (5697).
 >>
 >> The domain names and the port (KMIP) do not change.
 >>
@@ -462,7 +469,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >> |   **Name**    |                                                          | - Name your cluster within vCenter.                                               |
 >> |    **KMS**    |                                                          | - The name that will appear in vSphere for your OKMS.                             |
 >> |  **Address**  | eu-west-rbx.okms.ovh.net <br/> eu-west-sbg.okms.ovh.net  | - **Endpoint** of the OKMS server. Choose a domain name over an IP (in vSphere).  |
->> |   **Port**    | 5696                                                     | - Port used by KMIP (does not change).                                            |
+>> |   **Port**    | 5697                                                     | - Port used by KMIP (does not change).                                            |
 >>
 >> Wait for vSphere to establish the connection with the Key Provider you added. You should see a hint or message confirming that the connection has been successfully established.
 >>
