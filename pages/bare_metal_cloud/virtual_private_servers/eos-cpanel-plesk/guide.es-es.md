@@ -36,6 +36,7 @@ Para obtener más información sobre los fines de soporte técnico, consulte la 
 >
 > Desde un punto de vista **seguridad**, seguir utilizando un SO no compatible le expone a ataques.
 > Le recomendamos que lea:
+>
 > - [las recomendaciones de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
 > - [las recomendaciones de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
 
@@ -67,7 +68,7 @@ Consulte la documentación oficial de los SO compatibles:
 
 **Opción B — Migración a través de Plesk o cPanel**
 
-Se recomienda este método si puede desplegar una nueva instancia de VPS con un sistema actualizado en paralelo con la antigua.
+Questo metodo è consigliato se è possibile distribuire un nuovo VPS con un sistema aggiornato contemporaneamente a quello precedente.
 
 Contrate un nuevo VPS con un SO compatible si aún no lo ha hecho. [Instale cPanel](/pages/bare_metal_cloud/virtual_private_servers/cpanel) o Plesk.
 
@@ -76,9 +77,9 @@ Utilice la herramienta de migración que prefiera. Estas herramientas permiten t
 - Plesk Migrator - [Documentación oficial](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}.
 - cPanel Transfer Tool - [Documentación oficial](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}.
 
-**Opción C — Actualización in situ (avanzada)**
+**Opción C — Actualización directa del SO sin reinstalación ni migración (usuarios avanzados)**
 
-Si no puede desplegar una nueva instancia de VPS, algunas herramientas permiten **actualizar directamente su sistema operativo** conservando Plesk o cPanel instalado. Este método es para usuarios avanzados, ya que puede suponer un riesgo si se ejecuta incorrectamente.
+Si no puede desplegar un nuevo VPS, algunas herramientas permiten **actualizar directamente su sistema operativo** conservando Plesk o cPanel instalado. Este método es para usuarios avanzados, ya que puede suponer un riesgo si se ejecuta incorrectamente.
 
 - Para **Plesk** (cambio de CentOS 7 a AlmaLinux 8), utilice el script `centos2alma` ofrecido por la [documentación oficial de Plesk](https://github.com/plesk/centos2alma){.external}. Consulte también las instrucciones detalladas del [soporte de Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
 

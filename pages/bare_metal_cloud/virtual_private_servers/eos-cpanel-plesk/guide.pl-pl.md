@@ -36,6 +36,7 @@ Więcej informacji na temat pomocy znajdziesz w oficjalnej dokumentacji:
 >
 > Z punktu widzenia **bezpieczeństwa** dalsze korzystanie z nieobsługiwanego systemu operacyjnego naraża Cię na ataki.
 > Zalecamy zapoznanie się z dokumentacją:
+>
 > - [zalecenia cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
 > - [zalecenia Pleska](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
 
@@ -65,9 +66,9 @@ Sprawdź oficjalną dokumentację obsługiwanych systemów operacyjnych:
 3. [Reinstaluj cPanel](/pages/bare_metal_cloud/virtual_private_servers/cpanel) lub Plesk na nowym systemie.
 4. Przywracaj dane z kopii zapasowych.
 
-** Opcja B - Migracja za pomocą panelu Plesk lub cPanel**
+**Opcja B - Migracja za pomocą panelu Plesk lub cPanel**
 
-Metoda ta jest zalecana, jeśli można uruchomić nową instancję VPS z systemem zaktualizowanym obok starej instancji.
+Ta metoda jest zalecana, jeśli możesz wdrożyć nowy VPS ze zaktualizowanym systemem obok starego.
 
 Jeśli jeszcze tego nie zrobiłeś, zamów nowy VPS z kompatybilnym systemem operacyjnym. [Instaluj cPanel](/pages/bare_metal_cloud/virtual_private_servers/cpanel) lub Plesk.
 
@@ -76,9 +77,9 @@ Użyj wybranego narzędzia do migracji. Narzędzia te pozwalają na automatyczne
 - Plesk Migrator - [Oficjalna dokumentacja](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}.
 - Narzędzie do transferu cPanel - [Oficjalna dokumentacja](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}.
 
-** Opcja C — Aktualizacja na miejscu (zaawansowana)**
+**Opcja C — Bezpośrednia aktualizacja systemu operacyjnego bez reinstalacji lub migracji (zaawansowani użytkownicy)**
 
-Jeśli nie możesz uruchomić nowej instancji na serwerze VPS, skorzystaj z narzędzi, dzięki którym **zaktualizujesz bezpośrednio system operacyjny**, zachowując jednocześnie zainstalowany Plesk lub cPanel. Metoda ta jest przeznaczona dla zaawansowanych użytkowników, ponieważ niesie ze sobą ryzyko, jeśli zostanie przeprowadzona nieprawidłowo.
+Jeśli nie możesz uruchomić nowego VPS, skorzystaj z narzędzi, dzięki którym **zaktualizujesz bezpośrednio system operacyjny**, zachowując jednocześnie zainstalowany Plesk lub cPanel. Metoda ta jest przeznaczona dla zaawansowanych użytkowników, ponieważ niesie ze sobą ryzyko, jeśli zostanie przeprowadzona nieprawidłowo.
 
 - W przypadku **Plesk** (przejście z CentOS 7 na AlmaLinux 8) użyj skryptu "centos2alma" dostarczonego przez [oficjalna dokumentacja Pleska](https://github.com/plesk/centos2alma){.external}. [Plesk support](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
 

@@ -36,6 +36,7 @@ Per ulteriori informazioni sul supporto, consultare la documentazione ufficiale:
 >
 > Dal punto di vista **sicurezza**, continuare a utilizzare un sistema operativo non supportato ti espone ad attacchi.
 > Consigliamo di leggere:
+>
 > - [le raccomandazioni di cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
 > - [le raccomandazioni di Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
 
@@ -67,7 +68,7 @@ Consulta la documentazione ufficiale degli OS supportati:
 
 **Opzione B — Migrazione via Plesk o cPanel**
 
-Questo metodo è consigliato per distribuire una nuova istanza VPS con un sistema aggiornato contemporaneamente alla precedente.
+Questo metodo è consigliato se è possibile distribuire un nuovo VPS con un sistema aggiornato contemporaneamente a quello precedente.
 
 Ordina un nuovo VPS con OS compatibile, se non lo hai già fatto. [Installare cPanel](/pages/bare_metal_cloud/virtual_private_servers/cpanel) o Plesk.
 
@@ -76,9 +77,9 @@ Utilizza lo strumento di migrazione che preferisci. Questi strumenti permettono 
 - Plesk Migrator - [Documentazione ufficiale](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}.
 - cPanel Transfer Tool - [Documentazione ufficiale](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}.
 
-**Opzione C — Aggiornamento in loco (avanzato)**
+**Opzione C — Aggiornamento diretto del sistema operativo senza reinstallazione o migrazione (utenti avanzati)**
 
-Se non è possibile creare una nuova istanza di VPS, è possibile utilizzare alcuni strumenti per effettuare l'aggiornamento direttamente dal sistema operativo**, mantenendo installato Plesk o cPanel. Questo metodo è indicato per utenti esperti, in quanto comporta rischi in caso di esecuzione non corretta.
+Se non riesci a creare un nuovo VPS, è possibile utilizzare alcuni strumenti per effettuare l'aggiornamento direttamente dal sistema operativo**, mantenendo installato Plesk o cPanel. Questo metodo è indicato per utenti esperti, in quanto comporta rischi in caso di esecuzione non corretta.
 
 - Per **Plesk** (passaggio da CentOS 7 verso AlmaLinux 8), utilizza lo script `centos2alma` proposto nella [documentazione ufficiale di Plesk](https://github.com/plesk/centos2alma){.external}. Consulta anche le istruzioni dettagliate del [supporto di Plesk](https://support.plesk.com/hc/en-us/articles/12377714344983){.external}.
 
