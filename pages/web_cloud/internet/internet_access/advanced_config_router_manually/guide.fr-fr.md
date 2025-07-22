@@ -47,10 +47,10 @@ Le profil de votre accès est disponible sur l'espace client. Pour le retrouver,
 
 Par défaut, l'onglet affiché est `Mon accès`.
 
-Les informations sur le profil du modem sont disponible dans la section `Connexion` des `Caractéristiques`.
-Les informations sur le type de l'accès sont disponible dans la section `Informations générales`.
+Le type de l'accès est disponible dans le cadre `Informations générales`.
+Le profil du modem est disponible dans la section `Connexion` du cadre `Caractéristiques`.
 
-![modem profil dans espace client](images/profil-2025.png){.thumbnail}
+![profil du modem dans l'espace client](images/profil-2025.png){.thumbnail}
 
 ### Profil A
 
@@ -84,7 +84,7 @@ Les paramètres à configurer sont :
 ### Profil B
 
 > [!primary]
-> La différence avec le «profil A» est l'activation du VLAN 835.
+> La différence avec le « profil A » est l'activation du VLAN 835.
 >
 
 Ce profil s'applique aux typologies d'accès suivantes :
@@ -107,7 +107,7 @@ Les paramètres à configurer sont :
 ### Profil C
 
 > [!primary]
-> La différence avec le «profil A» est l'activation du VLAN 4001.
+> La différence avec le « profil A » est l'activation du VLAN 4001.
 >
 
 Ce profil s'applique aux typologies d'accès suivantes :
@@ -128,7 +128,7 @@ Les paramètres à configurer sont :
 ### Profil D
 
 > [!primary]
-> La différence avec le «profil A» est l'activation du VLAN 4070.
+> La différence avec le « profil A » est l'activation du VLAN 4070.
 >
 
 Ce profil s'applique aux typologies d'accès suivantes :
