@@ -35,7 +35,9 @@ Pour plus de détails concernant les fins de support, consultez les documentatio
 > [!primary]
 >
 > D’un point de vue **sécurité**, continuer à utiliser un OS non supporté vous expose à des attaques.
-Nous vous recommandons de lire [les recommandations de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external} et [les recommandations de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
+> Nous vous recommandons de lire :
+> - [les recommandations de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
+> - [les recommandations de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
 
 #### 1. Vérifier votre système actuel
 

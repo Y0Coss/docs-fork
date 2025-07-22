@@ -35,7 +35,9 @@ Para obter mais informações de apoio, consulte a documentação oficial:
 > [!primary]
 >
 > De um ponto de vista **segurança**, continuar a utilizar um SO não suportado expõe-no a ataques.
-Recomendamos que leia [as recomendações do cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external} e [as recomendações do Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
+> Recomendamos que leia:
+> - [as recomendações do cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
+> - [as recomendações do Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
 
 #### 1. Verificar o sistema atual
 

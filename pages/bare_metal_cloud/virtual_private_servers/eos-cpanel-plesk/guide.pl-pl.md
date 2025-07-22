@@ -35,7 +35,9 @@ Więcej informacji na temat pomocy znajdziesz w oficjalnej dokumentacji:
 > [!primary]
 >
 > Z punktu widzenia **bezpieczeństwa** dalsze korzystanie z nieobsługiwanego systemu operacyjnego naraża Cię na ataki.
-Zalecamy zapoznanie się z dokumentacją [zalecenia cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external} i [zalecenia Pleska](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
+> Zalecamy zapoznanie się z dokumentacją:
+> - [zalecenia cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
+> - [zalecenia Pleska](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
 
 #### 1. Sprawdź aktualny system
 

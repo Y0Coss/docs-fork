@@ -35,7 +35,9 @@ Para obtener más información sobre los fines de soporte técnico, consulte la 
 > [!primary]
 >
 > Desde un punto de vista **seguridad**, seguir utilizando un SO no compatible le expone a ataques.
-Le recomendamos que lea [las recomendaciones de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external} y [las recomendaciones de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
+> Le recomendamos que lea:
+> - [las recomendaciones de cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
+> - [las recomendaciones de Plesk](https://docs.plesk.com/en-US/obsidian/administrator-guide/plesk-administration/securing-plesk.59464/){.external}.
 
 #### 1. Comprobar el sistema actual
 
