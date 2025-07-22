@@ -77,7 +77,7 @@ Verwenden Sie ein Tool zur Migration. Mit diesen Tools können Sie Ihre Websites
 - Plesk Migrator - [Offizielle Dokumentation](https://docs.plesk.com/en-US/obsidian/migration-guide/introduction.75496/){.external}
 - cPanel Transfer Tool - [Official documentation](https://docs.cpanel.net/whm/transfers/transfer-tool/){.external}
 
-**Option C - Lokale Aktualisierung**
+**Option C - Direktes Betriebssystem-Update ohne Neuinstallation oder Migration (erfahrene Benutzer)**
 
 Wenn Sie keinen neuen VPS bereitstellen können, können Sie bestimmte Tools verwenden, um **Ihr Betriebssystem direkt zu aktualisieren**, während Plesk oder cPanel installiert bleibt. Diese Methode ist für fortgeschrittene Benutzer vorgesehen, da sie Risiken birgt, wenn sie falsch ausgeführt wird.
 
