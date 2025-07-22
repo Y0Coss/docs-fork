@@ -46,7 +46,7 @@ If you have an existing service, follow these steps:
 
 Once IAM is activated, a new **IAM Policies** section will replace the previous **Roles** section. 
 
-[!Activated IAM](images/activated_iam.png){.thumbnail}
+![Activated IAM](images/activated_iam.png){.thumbnail}
 
 ### How to enable OVHcloud IAM on a new service?
 
