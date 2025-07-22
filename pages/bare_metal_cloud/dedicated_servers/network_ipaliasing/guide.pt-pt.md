@@ -1,7 +1,7 @@
 ---
 title: Como configurar um IP alias
 excerpt: Descubra como adicionar endereços Additional IP à configuração de rede
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]

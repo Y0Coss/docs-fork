@@ -1,7 +1,7 @@
 ---
 title: 'Configuring Additional IPs in bridge mode on your virtual machines'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]

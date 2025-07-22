@@ -19,14 +19,14 @@ Además del direccionamiento IP privado, el [vRack](https://www.ovh.es/solucione
 >
 > Este artículo explica cómo configurar direcciones Additional IP en una red vRack. Si necesita instrucciones para configurar direcciones Additional IP con una dirección IP principal (en la interfaz de red pública), consulte los siguientes artículos:
 >
-> IPv4:
->   - [Configurar una dirección IP como alias en un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
->   - [Configurar una dirección IP como alias en un servidor VPS](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+> - IPv4:
+>     - [Configurar una dirección IP como alias en un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+>     - [Configurar una dirección IP como alias en un servidor VPS](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
 >
-> IPv6:
->   - [Configurar IPv6 en un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
->   - [Configurar la IPv6 en un VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
->   - [Configurar IPv6 en una instancia de Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+> - IPv6:
+>     - [Configurar IPv6 en un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
+>     - [Configurar la IPv6 en un VPS](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>     - [Configurar IPv6 en una instancia de Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
 >
 
 ## Requisitos

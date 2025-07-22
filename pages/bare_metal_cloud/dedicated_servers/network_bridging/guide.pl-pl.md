@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja Additional IP w trybie bridge na wirtualnych maszynach'
 excerpt: 'Dowiedz się, jak używać trybu bridge do konfiguracji dostępu do Internetu Twoich wirtualnych maszyn'
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title:  Déplacer une Additional IP
 excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]

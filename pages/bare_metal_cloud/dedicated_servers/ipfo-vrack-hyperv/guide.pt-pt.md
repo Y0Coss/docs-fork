@@ -1,7 +1,7 @@
 ---
 title: "Utilizar Hyper-V com endereços Additional IP num vRack"
 excerpt: "Descubra como configurar uma máquina virtual com Additional IP e Hyper-V num vRack"
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]

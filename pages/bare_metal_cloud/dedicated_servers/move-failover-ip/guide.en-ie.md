@@ -1,7 +1,7 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]

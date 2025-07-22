@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IP aliasing'
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]

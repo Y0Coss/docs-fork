@@ -1,7 +1,7 @@
 ---
 title: Configuring an Additional IP
 excerpt: "Find out how to add Additional IP addresses to your instance's configuration"
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]
@@ -10,6 +10,7 @@ updated: 2025-07-21
 > Please note that Additional IP addresses can also be configured in a vRack (private network), which allows interconnection over a wide range of OVHcloud services, offering more flexibility.
 >
 > You can find more information about configuring Additional IP addresses in a vRack for usage with Public Cloud instances in the following guides:
+>
 > - [Configuring a public IP block in a vRack on a Public Cloud instance](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
 > - [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >

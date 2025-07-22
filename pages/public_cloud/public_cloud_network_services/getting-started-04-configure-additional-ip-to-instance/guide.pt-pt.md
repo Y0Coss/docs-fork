@@ -1,7 +1,7 @@
 ---
 title: Configurar um Additional IP
 excerpt: "Saiba como adicionar endereços Additional IP à configuração da sua instância"
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]
@@ -10,6 +10,7 @@ updated: 2025-07-21
 > Tenha em conta que os endereços Additional IP podem igualmente ser configurados num vRack (rede privada), o que permite a interligação numa vasta gama de serviços OVHcloud, oferecendo uma maior flexibilidade.
 >
 > Encontrará mais informações sobre a configuração dos endereços Additional IP num vRack para uma utilização com as instâncias Public Cloud nos seguintes guias:
+>
 > - [Configurar um bloco IP num vRack numa instância Public Cloud (EN)](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
 > - [Configurar um bloco IPv6 num vRack (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >

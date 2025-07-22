@@ -19,14 +19,14 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 >
 > Dieser Artikel erklärt die Konfiguration von Additional IP über ein vRack Netzwerk. Weitere Informationen zur Konfiguration mit der primären IP (über die Schnittstelle des öffentlichen Netzwerks) finden Sie in den folgenden Anleitungen:
 >
-> IPv4:
->   - [Konfiguration von IP-Aliasing](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
->   - [IP-Adresse als Alias auf einem VPS konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing)
+> - IPv4:
+>     - [Konfiguration von IP-Aliasing](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+>     - [IP-Adresse als Alias auf einem VPS konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing)
 >
-> IPv6:
->   - [IPv6 auf einem Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
->   - [IPv6 auf einem VPS einrichten](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6)
->   - [IPv6 auf einer Public Cloud Instanz konfigurieren](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6)
+> - IPv6:
+>     - [IPv6 auf einem Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+>     - [IPv6 auf einem VPS einrichten](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6)
+>     - [IPv6 auf einer Public Cloud Instanz konfigurieren](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6)
 >
 
 ## Voraussetzungen

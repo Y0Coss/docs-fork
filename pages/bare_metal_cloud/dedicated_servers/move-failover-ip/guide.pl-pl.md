@@ -1,7 +1,7 @@
 ---
 title:  Przenieś Additional IP
 excerpt: Dowiedz się, jak przenieść Additional IP z Panelu klienta lub poprzez API OVHcloud
-updated: 2025-07-21
+updated: 2025-07-22
 ---
 
 > [!primary]
