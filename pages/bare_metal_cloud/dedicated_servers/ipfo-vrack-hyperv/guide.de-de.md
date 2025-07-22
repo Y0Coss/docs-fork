@@ -5,7 +5,7 @@ updated: 2025-07-21
 ---
 
 > [!primary]
-> In diesem Artikel erfahren Sie, wie Sie zusätzliche Additional IPv4-Adressen für ein vRack konfigurieren. Sie können auch Additional IPv6-Adressen in Ihrem vRack konfigurieren, indem Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack) verwenden.
+> Die folgenden Informationen beziehen sich auf die Konfiguration von Additional IPv4-Adressen im vRack. Sie können auch Additional IPv6-Adressen in Ihrem vRack konfigurieren, indem Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack) verwenden.
 >
 
 ## Ziel
@@ -17,7 +17,7 @@ updated: 2025-07-21
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account (vRack-kompatibel), auf dem Windows Server installiert ist.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben ein ISO-Image für das zu installierende Betriebssystem der VM (CentOS 7 wird in dieser Anleitung beispielhaft verwendet).
-- Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
+- Sie haben ein [vRack](/links/network/vrack) in Ihrem Kunden-Account eingerichtet.
 - Sie verfügen über einen IP-Block von 4 oder mehr IP-Adressen.
 
 > [!warning]
