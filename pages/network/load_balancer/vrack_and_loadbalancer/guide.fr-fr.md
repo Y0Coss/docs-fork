@@ -16,7 +16,7 @@ Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons 
 
 - Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Être connecté à l'[API OVHcloud](https://api.ovh.com/){.external}.
+- Être connecté à l'[API OVHcloud](/links/api){.external}.
 - Posséder une ferme configurée
 - Posséder un frontend configuré
 
@@ -27,7 +27,7 @@ Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons 
 
 ## En pratique
 
-Connectez-vous à l'[interface API OVHcloud](https://api.ovh.com/) et suivez les étapes ci-dessous.
+Connectez-vous à l'[interface API OVHcloud](/links/api) et suivez les étapes ci-dessous.
 
 ### Lister les services Load Balancer éligibles au vRack
 

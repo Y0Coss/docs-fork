@@ -12,7 +12,7 @@ Bei der ersten Konfiguration des Content Delivery Network (CDN) müssen zunächs
 
 ## Voraussetzungen
 
-- Sie nutzen das [OVH Content Delivery Network (CDN)](https://www.ovh.de/cdn/){.external}.
+- Sie nutzen das [OVH Content Delivery Network (CDN)](/links/network/cdn-infrastructure){.external}.
 - Sie haben Zugriff auf die Verwaltung der DNS-Zone Ihrer Domain.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager){.external}.
 

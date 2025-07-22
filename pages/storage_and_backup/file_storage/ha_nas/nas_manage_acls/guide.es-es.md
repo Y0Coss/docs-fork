@@ -16,7 +16,7 @@ El servicio NAS-HA de OVHcloud le permite gestionar un almacenamiento de archivo
 
 ## Requisitos
 
-- Un servicio [NAS-HA de OVHcloud](https://www.ovh.es/nas/)
+- Un servicio [NAS-HA de OVHcloud](/links/storage/nas-ha)
 - Consulte nuestra guía de [primeros pasos con la API de OVHcloud](/pages/manage_and_operate/api/first-steps) para familiarizarse con la APIv6 de OVHcloud.
 
 ## Procedimiento

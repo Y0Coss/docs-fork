@@ -150,7 +150,7 @@ Una volta stabilito se il contenuto delle tue tabelle è necessario per il funzi
 > Per aumentare le dimensioni del database, è necessario creare un nuovo database più grande e copiare il contenuto dal database precedente a quello nuovo. Infatti, non è possibile aumentare direttamente la dimensione di un database associato a un hosting Web.
 >
 
-Consulta la nostra offerta di database [Web Cloud Databasess](https://www.ovh.it/cloud/cloud-databases/) per scegliere il tuo nuovo servizio di database. 
+Consulta la nostra offerta di database [Web Cloud Databasess](/links/web/databases) per scegliere il tuo nuovo servizio di database. 
 
 Consigliamo questa offerta per database voluminosi.
 

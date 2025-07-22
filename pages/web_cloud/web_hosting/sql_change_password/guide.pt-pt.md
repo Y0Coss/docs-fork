@@ -40,7 +40,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 
 - Ter um [plano de alojamento web OVHcloud](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Utilizar uma [base de dados associada à sua oferta de alojamento partilhado](/links/web/hosting-options-startsql) ou a um [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
+- Utilizar uma [base de dados associada à sua oferta de alojamento partilhado](/links/web/hosting-options-startsql) ou a um [Web Cloud Databases](/links/web/databases).
 - Ter acesso às credenciais FTP para aceder ao [espaço de armazenamento do alojamento](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## Instruções
@@ -89,7 +89,7 @@ De seguida, volte à sua [Área de Cliente OVHcloud](/links/manager) na secção
 
 Se localizar o nome da base de dados indicado no ficheiro de configuração nesta parte da Área de Cliente, consulte o [Etapa 3](#step3).
 
-Caso contrário, a base de dados do seu site está associada a uma oferta [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
+Caso contrário, a base de dados do seu site está associada a uma oferta [Web Cloud Databases](/links/web/databases).
 
 Para anotar o *nome do servidor* e o *nome de utilizador* da base de dados, deverá voltar ao ficheiro de configuração do seu site:
 
@@ -100,7 +100,7 @@ Para anotar o *nome do servidor* e o *nome de utilizador* da base de dados, deve
 
 A seguir, clique na secção `Bases de dados`{.action}, na secção `Web Cloud`{.action}. 
 
-No separador `Informações gerais`{.action}, identifique, nas suas ofertas [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/), a que contém, sob a menção `Nome do host`{.action}, o nome do servidor da sua base de dados encontrado anteriormente.
+No separador `Informações gerais`{.action}, identifique, nas suas ofertas [Web Cloud Databases](/links/web/databases), a que contém, sob a menção `Nome do host`{.action}, o nome do servidor da sua base de dados encontrado anteriormente.
 
 Ainda nesta parte da sua Área de Cliente, aceda ao separador `Utilizador e permissões`{.action}, para que possa também consultar o `Nome de utilizador`{.action} da sua base de dados.
 

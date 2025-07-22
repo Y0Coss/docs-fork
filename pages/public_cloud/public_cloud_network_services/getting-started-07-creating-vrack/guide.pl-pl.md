@@ -47,11 +47,11 @@ Zapoznaj się z następującą [instrukcją](/pages/public_cloud/public_cloud_cr
 
 ### APIv6 OVHcloud
 
-Każde działanie podejmowane w Panelu klienta OVHcloud można wywołać za pomocą interfejsu [APIv6 OVHcloud](https://api.ovh.com/). Oferuje on nawet więcej możliwości niż interfejs graficzny.
+Każde działanie podejmowane w Panelu klienta OVHcloud można wywołać za pomocą interfejsu [APIv6 OVHcloud](/links/api). Oferuje on nawet więcej możliwości niż interfejs graficzny.
 
 Interfejs API jest mniej wizualny niż Panel klienta OVHcloud, ale pozwala na wykonanie dużej liczby operacji. Możesz zarządzać i dostosowywać VLAN, dodawać interfejsy do instancji lub tworzyć wysoko spersonalizowane serwery.
 
-Możesz po prostu uzyskać do niej dostęp z [naszej strony internetowej](https://api.ovh.com/), ale również wykorzystać go do tworzenia skryptów PHP lub Python. Dzięki temu możesz swobodnie automatyzować podstawowe zadania za pomocą skryptów, zoptymalizować własne funkcje i wiele więcej.
+Możesz po prostu uzyskać do niej dostęp z [naszej strony internetowej](/links/api), ale również wykorzystać go do tworzenia skryptów PHP lub Python. Dzięki temu możesz swobodnie automatyzować podstawowe zadania za pomocą skryptów, zoptymalizować własne funkcje i wiele więcej.
 
 Przed użyciem niektórych wywołań API może być konieczne pobranie różnych informacji, ponieważ wymagane jest wprowadzenie określonych danych.
 

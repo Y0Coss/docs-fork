@@ -17,7 +17,7 @@ This guide provides an introduction to the ways in which you can configure these
 ## Requirements
 
 - an [OVH Load Balancer](https://www.ovh.co.uk/solutions/load-balancer/){.external}
-- access to the [OVH Control Panel](/links/manager){.external}, or the [OVH API](https://api.ovh.com/){.external}
+- access to the [OVH Control Panel](/links/manager){.external}, or the [OVH API](/links/api){.external}
 
 ## Instructions
 

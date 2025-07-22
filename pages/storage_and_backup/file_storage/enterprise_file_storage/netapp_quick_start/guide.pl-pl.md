@@ -17,7 +17,7 @@ W tym przewodniku szybko uruchamiania dowiesz się, jak rozpocząć korzystanie 
 ## Wymagania początkowe
 
 - Posiadanie oferty OVHcloud Enterprise File Storage
-- Dostęp do strony [API OVHcloud](https://api.ovh.com/)
+- Dostęp do strony [API OVHcloud](/links/api)
 - Umiejętność [montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs)
 
 ## Podstawowe

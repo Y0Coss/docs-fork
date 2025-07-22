@@ -15,7 +15,7 @@ Die Aktivierung der Intel Software Guard Extensions (SGX) auf Ihrem Server erlau
 ## Voraussetzungen
 
 - Sie haben einen Dedicated Server kompatibel mit der Option [SGX](https://www.ovhcloud.com/de/bare-metal/intel-software-guard-extensions/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder die [OVHcloud API](https://api.ovh.com/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder die [OVHcloud API](/links/api).
 - Sie verfügen über die Zugangsdaten, die Sie nach der Installation per E-Mail erhalten haben.
 
 ## In der praktischen Anwendung
@@ -62,7 +62,7 @@ Folgen Sie der Anleitung weiter ab [Schritt 3](#sgx-softwares).
 
 #### Schritt 1: In der API-Konsole anmelden
 
-Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/) auf `Login`{.action} oben rechts.  
+Klicken Sie auf der [OVHcloud API Seite](/links/api) auf `Login`{.action} oben rechts.  
 Melden Sie sich auf der folgenden Seite mit den Logindaten Ihres OVHcloud Kunden-Accounts an.
 
 #### Schritt 2: SGX aktivieren

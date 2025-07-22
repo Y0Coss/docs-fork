@@ -14,7 +14,7 @@ Retrouvez ici les principales informations relatives à la gestion de votre héb
 ## Prérequis 
 
 - Disposer d'une des 3 offres d'hébergement web POWER : [Node.js](https://labs.ovh.com/managed-nodejs), [Python](https://labs.ovh.com/managed-python) ou [Ruby](https://labs.ovh.com/managed-ruby).
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external} ou aux [API OVHcloud](https://api.ovh.com/).
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external} ou aux [API OVHcloud](/links/api).
 
 ## En pratique
 
@@ -168,7 +168,7 @@ Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restar
 
 Si vous n'êtes pas déjà familiarisé avec le fonctionnement des API OVHcloud, consultez le guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
-Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d'hébergement POWER sont les suivantes :
+Les [API OVHcloud](/links/api) actuellement disponibles pour l'offre d'hébergement POWER sont les suivantes :
 
 #### Lister les configurations disponibles
 

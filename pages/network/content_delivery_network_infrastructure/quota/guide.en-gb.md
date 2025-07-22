@@ -24,7 +24,7 @@ If you need additional quota, you can order it directly via the [OVH Control Pan
 
 ![Add quota](images/add_quota.png){.thumbnail}
 
-You can view the prices for quota allowance on our [website](https://www.ovh.co.uk/cdn/infrastructure/){.external}.
+You can view the prices for quota allowance on our [website](/links/network/cdn-infrastructure){.external}.
 
 You are automatically notified when you have **100 GB** of quota remaining, so that you have time to order more bandwidth in advance. If you run out of quota allowance, the  `bypass` is automatically enabled until you order more quota.
 

@@ -86,7 +86,7 @@ Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
 ### IP-Adresse über die API umziehen
 
-Loggen Sie sich auf der [Webseite der OVHcloud API](https://api.ovh.com/) ein.
+Loggen Sie sich auf der [Webseite der OVHcloud API](/links/api) ein.
 
 Es ist am besten, zunächst zu prüfen, ob die IP-Adresse umgezogen werden kann.  
 Um zu überprüfen, ob die IP auf einen Ihrer Dedicated Server umgezogen werden kann, verwenden Sie folgenden Aufruf:

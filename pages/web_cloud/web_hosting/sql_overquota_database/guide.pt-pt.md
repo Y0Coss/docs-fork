@@ -149,7 +149,7 @@ Deverá migrar a sua base de dados para uma base de dados mais volumosa.
 > Para aumentar o tamanho alocado à sua base de dados, deverá obrigatoriamente criar uma nova base de dados maior e copiar o conteúdo da antiga para a nova. De facto, não é possível aumentar diretamente o tamanho de uma base de dados associada a um alojamento web.
 >
 
-Consulte a nossa oferta de bases de dados [Web Cloud Databasess](https://www.ovh.pt/cloud/cloud-databases/) para escolher o seu novo serviço de base de dados. 
+Consulte a nossa oferta de bases de dados [Web Cloud Databasess](/links/web/databases) para escolher o seu novo serviço de base de dados. 
 
 Recomendamos esta oferta para bases de dados volumosas.
 

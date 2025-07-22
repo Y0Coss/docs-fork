@@ -16,7 +16,7 @@ Chaque session du service OVHcloud Load Balancer est maintenue par un système d
 
 - Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/){.external}.
 - Avoir accès à l'[espace client OVHcloud](/links/manager){.external}, ou bien
-- Avoir accès à l'[API OVHcloud](https://api.ovh.com/){.external}.
+- Avoir accès à l'[API OVHcloud](/links/api){.external}.
 
 ## En pratique
 

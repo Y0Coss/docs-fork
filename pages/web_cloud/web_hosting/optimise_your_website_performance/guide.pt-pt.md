@@ -224,7 +224,7 @@ Evite utilizar a cláusula “HAVING”, por exemplo, que atrasa as suas consult
 
 #### Web Cloud Databases
 Se, apesar de todas as alterações e otimizações realizadas, a base de dados estiver lenta, ou se for efetuado um grande número de consultas na base de dados, é aconselhável mudar para a nossa oferta de Web Cloud Databases para ter mais recursos disponíveis.
-[Consultar a oferta Web Cloud Databases no nosso site](https://www.ovh.pt/cloud/cloud-databases/){.external}.
+[Consultar a oferta Web Cloud Databases no nosso site](/links/web/databases){.external}.
 
 ## Quer saber mais?
 

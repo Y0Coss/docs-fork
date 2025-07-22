@@ -213,7 +213,7 @@ Para mais informações, contacte o editor do CMS que instalou. Encontrará junt
 
 [Gestão de uma base de dados a partir de um alojamento partilhado](/pages/web_cloud/web_hosting/sql_create_database).
 
-Veja a nossa [oferta Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/){.external}.
+Veja a nossa [oferta Web Cloud Databases](/links/web/databases){.external}.
 
 [Gerir o CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 

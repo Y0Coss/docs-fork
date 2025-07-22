@@ -54,7 +54,7 @@ On each archive you can use the `Download`{.action} action to directly download 
 
 #### Using the API
 
-If you want to download your logs using the API (to use them in a Big Data analysis platform for example), you can do all these steps by using the OVHcloud api available at [https://api.ovh.com](https://api.ovh.com){.external}. You can try all these steps with the [OVHcloud API Console](https://api.ovh.com/){.external}.
+If you want to download your logs using the API (to use them in a Big Data analysis platform for example), you can do all these steps by using the OVHcloud api available at [https://api.ovh.com](https://api.ovh.com){.external}. You can try all these steps with the [OVHcloud API Console](/links/api){.external}.
 
 You will need your OVHcloud service name associated with your account. Your service name is the login logs-xxxxx that is displayed in the left of the OVHcloud Manager.
 

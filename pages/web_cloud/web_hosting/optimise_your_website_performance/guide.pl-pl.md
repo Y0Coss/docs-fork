@@ -224,7 +224,7 @@ Na przykład klauzuli „HAVING”, która może spowolnić zapytania. Nie używ
 
 #### Web Cloud Databases
 Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, albo jeśli liczba zapytań do bazy danych jest bardzo duża, możesz skorzystać z oferty prywatnej bazy danych SQL — Web Cloud Databases. Będziesz mieć do dyspozycji więcej zasobów.
-[Sprawdź ofertę Web Cloud Databases na naszej stronie](https://www.ovh.pl/cloud/cloud-databases/){.external}.
+[Sprawdź ofertę Web Cloud Databases na naszej stronie](/links/web/databases){.external}.
 
 ## Sprawdź również
 

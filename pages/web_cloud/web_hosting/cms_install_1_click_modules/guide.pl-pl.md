@@ -221,7 +221,7 @@ Jeśli chcesz uzyskać pomoc w zakresie funkcji Twojego CMS-a, skontaktuj się z
 
 Jeśli chcesz zachować pełną kontrolę nad instalacją Twojego CMS-a, możesz [zainstalować ręcznie CMS na Twoim hostingu OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation).
 
-Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}.
+Poznaj ofertę [Cloud Databases](/links/web/databases){.external}.
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

@@ -19,7 +19,7 @@ Wsparcie dla tej funkcji jest warunkiem wstępnym wszystkich operacji dotyczący
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}
-- Dostęp do [API OVHcloud](https://api.ovh.com/){.external}.
+- Dostęp do [API OVHcloud](/links/api){.external}.
 
 > [!primary]
 > Jeśli nie wiesz, jak korzystać z API OVHcloud, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](/pages/manage_and_operate/api/first-steps)".

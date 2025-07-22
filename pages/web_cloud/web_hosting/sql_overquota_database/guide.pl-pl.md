@@ -149,7 +149,7 @@ Musisz zmienić bazę danych na większą bazę danych.
 > Aby zwiększyć rozmiar bazy danych, musisz utworzyć nową, większą bazę danych i skopiować zawartość ze starej do nowej. Nie jest możliwe bezpośrednie zwiększenie rozmiaru bazy danych powiązanej z hostingiem.
 >
 
-Zapoznaj się z naszą ofertą baz danych [Web Cloud Databasess](https://www.ovh.pl/cloud/cloud-databases/), aby wybrać nową usługę baz danych. 
+Zapoznaj się z naszą ofertą baz danych [Web Cloud Databasess](/links/web/databases), aby wybrać nową usługę baz danych. 
 
 Zalecamy tę ofertę dla dużych baz danych.
 

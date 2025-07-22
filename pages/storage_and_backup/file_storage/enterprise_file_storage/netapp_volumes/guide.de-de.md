@@ -17,7 +17,7 @@ In diesem Tutorial geben wir einen Überblick über die Volume-Verwaltung von OV
 ## Voraussetzungen
 
 - Sie verfügen über einen OVHcloud Enterprise File Storage
-- Sie sind zur Verwendung der [OVHcloud API](https://api.ovh.com/) eingeloggt
+- Sie sind zur Verwendung der [OVHcloud API](/links/api) eingeloggt
 
 ## Das Wesentliche
 

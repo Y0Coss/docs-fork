@@ -12,7 +12,7 @@ OVHcloud bietet Ihnen standardmäßig die Möglichkeit, Ihre Dienste automatisch
 
 ## Voraussetzungen
 
-- Sie sind in der [OVHcloud API](https://api.ovh.com/){.external} eingeloggt.
+- Sie sind in der [OVHcloud API](/links/api){.external} eingeloggt.
 - Sie haben Ihre [Zugangsdaten für die OVHcloud API eingerichtet - EN](/pages/manage_and_operate/api/first-steps).
 
 ## In der praktischen Anwendung

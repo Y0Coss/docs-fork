@@ -190,7 +190,7 @@ Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 
 > Because OpenStack is not located at the same level, you will not be able to customise VLANs through the Horizon interface or OpenStack APIs.
 >
 
-Once logged in to the [OVHcloud APIv6 interface](https://api.ovh.com/), follow these steps:
+Once logged in to the [OVHcloud APIv6 interface](/links/api), follow these steps:
 
 #### Retrieving the required information
 
@@ -311,7 +311,7 @@ There are two possible scenarios:
 
 #### In case of a new instance
 
-Once logged in to the [OVHcloud APIv6 interface](https://api.ovh.com/), follow these steps:
+Once logged in to the [OVHcloud APIv6 interface](/links/api), follow these steps:
 
 ##### **Retrieving the required information**
 

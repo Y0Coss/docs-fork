@@ -18,7 +18,7 @@ La creazione di un progetto è il primo step per l'implementazione di [istanze P
 
 ## Procedura
 
-Accedi all'[interfaccia API OVHcloud](https://api.ovh.com/) e segui gli step qui sotto.
+Accedi all'[interfaccia API OVHcloud](/links/api) e segui gli step qui sotto.
 
 ### Step 1: costruire il carrello
 

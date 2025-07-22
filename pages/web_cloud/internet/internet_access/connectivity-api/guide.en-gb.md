@@ -11,7 +11,7 @@ This guide is designed to help developers use our APIs to create their own appli
 ## Requirements
 
 - An active OVHcloud account, and your login details.
-- Access to the [OVHcloud API webpage](https://api.ovh.com/).
+- Access to the [OVHcloud API webpage](/links/api).
 - Read our [Getting started with OVHcloud APIs guide](/pages/manage_and_operate/api/first-steps) to get started using OVHcloud APIv6.
 
 ## Instructions

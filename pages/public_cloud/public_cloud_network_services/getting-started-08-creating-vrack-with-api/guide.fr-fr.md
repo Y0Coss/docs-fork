@@ -192,7 +192,7 @@ Depuis les APIv6 OVHcloud, vous pourrez personnaliser l'ensemble des paramètres
 >OpenStack n'étant pas située au même niveau de l'infrastructure, vous ne pourrez pas personnaliser les vLan au travers de l'interface Horizon ou des API OpenStack.
 >
 
-Une fois connecté à l'[APIv6 OVHcloud](https://api.ovh.com/), exécutez les commandes suivantes dans l'ordre.
+Une fois connecté à l'[APIv6 OVHcloud](/links/api), exécutez les commandes suivantes dans l'ordre.
 
 #### Récupération des informations nécessaires :
 
@@ -313,7 +313,7 @@ Deux situations peuvent se présenter à vous :
 
 #### Cas d'une nouvelle instance
 
-Une fois connecté à l'[APIv6 OVHcloud](https://api.ovh.com/), exécutez les commandes suivantes dans l'ordre.
+Une fois connecté à l'[APIv6 OVHcloud](/links/api), exécutez les commandes suivantes dans l'ordre.
 
 ##### **Récupération des informations nécessaires**
 

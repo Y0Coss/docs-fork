@@ -18,7 +18,7 @@ Die Erstellung eines Projekts ist der erste Schritt zum Deployment von [Public C
 
 ## In der praktischen Anwendung
 
-Verbinden Sie sich mit dem [OVHcloud API](https://api.ovh.com/)-Interface und folgen Sie den nachstehenden Schritten.
+Verbinden Sie sich mit dem [OVHcloud API](/links/api)-Interface und folgen Sie den nachstehenden Schritten.
 
 ### Schritt 1: Den Warenkorb erstellen
 

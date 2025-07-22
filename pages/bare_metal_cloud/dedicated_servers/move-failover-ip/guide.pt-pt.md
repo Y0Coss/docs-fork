@@ -83,7 +83,7 @@ Clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
 ### Migrar um IP através das API
 
-Aceda à página web das [API OVHcloud](https://api.ovh.com/).
+Aceda à página web das [API OVHcloud](/links/api).
 
 Numa primeira fase, é preferível verificar se o endereço IP pode ser migrado.
 <br>Para verificar se o IP pode ser migrado para um dos seus servidores dedicados, utilize a seguinte chamada:

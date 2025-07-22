@@ -6,7 +6,7 @@ updated: 2022-01-11
 
 ## Objective
 
-After delivery, Prism Central is accessible on the public Internet. Access restriction to one or more IP addresses can be achieved through the [OVHcloud Load Balancer](https://www.ovh.de/loesungen/load-balancer/){.external}.
+After delivery, Prism Central is accessible on the public Internet. Access restriction to one or more IP addresses can be achieved through the [OVHcloud Load Balancer](/links/network/load-balancer){.external}.
 
 **This guide explains how to secure access to Prism Central.**
 

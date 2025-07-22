@@ -27,7 +27,7 @@ In diesem Tutorial lernen Sie, wie Sie einen OVHcloud Storage Server nach Ihren 
 - einen [OVHcloud Storage Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external}
 - eine Produktionsinfrastruktur ([VPS](/links/bare-metal/vps), [Dedicated Server](/links/bare-metal/bare-metal), [Public Cloud](/links/public-cloud/public-cloud), etc.)
 - eine SSH-Verbindung zwischen dem Storage Server und der Produktionsinfrastruktur
-- empfohlen: ein privates Netzwerk zwischen Ihren Servern ([OVHcloud vRack](https://www.ovh.de/loesungen/vrack/){.external})
+- empfohlen: ein privates Netzwerk zwischen Ihren Servern ([OVHcloud vRack](/links/network/vrack){.external})
 
 ## Beschreibung
 

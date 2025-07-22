@@ -16,7 +16,7 @@ At the heart of the Terraform product is the concept of [provider](https://devel
 
 Based on your automation needs at OVHcloud, you have to pick one or more of the following Terraform providers:
 
-- [OVH provider](https://registry.terraform.io/providers/ovh/ovh/latest) that interacts with [OVHcloud API portal](https://api.ovh.com/). You can refer to [this guide](/pages/manage_and_operate/api/first-steps) to learn more on how to use the API portal. Furthermore, the OVH provider evolves as fast as the OVHcloud offering, be sure to follow the [releases](https://github.com/ovh/terraform-provider-ovh/releases).
+- [OVH provider](https://registry.terraform.io/providers/ovh/ovh/latest) that interacts with [OVHcloud API portal](/links/api). You can refer to [this guide](/pages/manage_and_operate/api/first-steps) to learn more on how to use the API portal. Furthermore, the OVH provider evolves as fast as the OVHcloud offering, be sure to follow the [releases](https://github.com/ovh/terraform-provider-ovh/releases).
 - [OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/lastest) : the open standard cloud computing platform that OVHcloud is using to power its Public Cloud service. For more information, check [this page](https://www.ovhcloud.com/en-gb/public-cloud/openstack/).
 - [Hashicorp AWS provider](https://registry.terraform.io/providers/hashicorp/aws/latest/) to automate the operations of the Object Storage.
 - [Hashicorp Kubernetes provider](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) : once you have provisionned a Kubernetes cluster with OVH provider, you can manage your Kubernetes configuration with this provider.

@@ -10,14 +10,14 @@ updated: 2025-05-13
 
 ## Objetivo
 
-As API disponíveis em [https://api.ovh.com/](https://api.ovh.com/){.external} permitem-lhe adquirir, gerir, atualizar e configurar produtos OVHcloud sem utilizar uma interface gráfica como a Área de Cliente.
+As API disponíveis em [https://api.ovh.com/](/links/api){.external} permitem-lhe adquirir, gerir, atualizar e configurar produtos OVHcloud sem utilizar uma interface gráfica como a Área de Cliente.
 
 **Saiba como utilizar as API da OVHcloud e como associá-las às suas aplicações**
 
 ## Requisitos
 
 - Ter uma conta OVHcloud ativa e conhecer os seus identificadores.
-- Estar na página web das [API OVHcloud](https://api.ovh.com/){.external}.
+- Estar na página web das [API OVHcloud](/links/api){.external}.
 
 ## Instruções
 
@@ -32,7 +32,7 @@ As API disponíveis em [https://api.ovh.com/](https://api.ovh.com/){.external} p
 
 #### Ligar-se às API OVHcloud
 
-Na página das [API OVHcloud](https://api.ovh.com/), clique em `Explore the OVH API`{.action} para apresentar a lista das API. 
+Na página das [API OVHcloud](/links/api), clique em `Explore the OVH API`{.action} para apresentar a lista das API. 
 
 Para utilizar as API nos seus produtos, deve ligar-se a este site graças aos seus identificadores OVHcloud.
 

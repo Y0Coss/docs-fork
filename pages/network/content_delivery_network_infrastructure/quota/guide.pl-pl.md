@@ -24,7 +24,7 @@ Jeśli potrzebujesz dodatkowego transferu, możesz zamówić go bezpośrednio w 
 
 ![Dodatnie limitu transferu](images/add_quota.png){.thumbnail}
 
-Zapoznaj się z cennikiem pakietów transferu na [stronie WWW OVH](https://www.ovh.pl/cdn/){.external}.
+Zapoznaj się z cennikiem pakietów transferu na [stronie WWW OVH](/links/network/cdn-infrastructure){.external}.
 
 W momencie gdy pozostaje Ci **100 GB** z bieżącego limitu transferu, otrzymujesz automatyczne powiadomienie, abyś mógł zaplanować zakup kolejnego pakietu. Jeśli wyczerpałeś cały limit, włączona zostaje automatycznie funkcja `Bypass` do momentu, gdy na Twoim koncie dostępny będzie nowy pakiet transferu danych.
 

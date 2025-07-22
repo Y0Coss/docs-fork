@@ -9,7 +9,7 @@ updated: 2025-07-22
 >
 > Konfiguracja Additional IP w sieci vRack (sieć prywatna) pozwala obejść te ograniczenia regionalne, gdyż w przeciwnym razie utracisz zależność od jednego regionu, ułatwiając łączenie wielu usług OVHcloud.
 >
-> Dowiedz się, jak skonfigurować dodatkowe adresy IP w sieci vRack za pomocą przewodników dla [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuing-an-ip-block-in-a-vrack) i [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+> Dowiedz się, jak skonfigurować dodatkowe adresy IP w sieci vRack za pomocą przewodników dla [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) i [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Wprowadzenie
@@ -80,7 +80,7 @@ Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
 ### Przeniesienie IP przez API
 
-Zaloguj się na stronie WWW [API OVHcloud](https://api.ovh.com/).
+Zaloguj się na stronie WWW [API OVHcloud](/links/api).
 
 Najpierw należy sprawdzić, czy adres IP może zostać przeniesiony.
 <br>Aby sprawdzić, czy IP może zostać przeniesione na jeden z Twoich serwerów dedykowanych, wywołaj następujące połączenie:

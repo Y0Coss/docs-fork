@@ -12,7 +12,7 @@ Para empezar a utilizar la solución Content Delivery Network (CDN) de OVH, es n
 
 ## Requisitos
 
-- Tener contratada la solución [CDN de OVH](https://www.ovh.es/cdn/){.external}.
+- Tener contratada la solución [CDN de OVH](/links/network/cdn-infrastructure){.external}.
 - Tener acceso a la gestión de la zona DNS del dominio.
 - Tener acceso al [área de cliente](/links/manager){.external}.
 

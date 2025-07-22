@@ -17,7 +17,7 @@ W niniejszym przewodniku dowiesz się, jak zarządzać wolumenami w ramach ofert
 ## Wymagania początkowe
 
 - Posiadanie oferty OVHcloud Enterprise File Storage
-- Dostęp do strony [API OVHcloud](https://api.ovh.com/)
+- Dostęp do strony [API OVHcloud](/links/api)
 
 ## Podstawowe
 

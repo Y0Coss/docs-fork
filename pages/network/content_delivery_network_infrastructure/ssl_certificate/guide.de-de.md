@@ -6,13 +6,13 @@ updated: 2018-02-22
 
 ## Einleitung
 
-Sie können Ihrem Content Delivery Network (CDN) ein [SSL-Zertifikat](https://www.ovh.de/ssl/){.external} hinzufügen, damit Ihre Nutzer auch über das CDN eine gesicherte Verbindung herstellen können.
+Sie können Ihrem Content Delivery Network (CDN) ein [SSL-Zertifikat](/links/web/hosting-options-ssl){.external} hinzufügen, damit Ihre Nutzer auch über das CDN eine gesicherte Verbindung herstellen können.
 
 **In dieser Anleitung erfahren Sie, wie die SSL-Zertifikate von Let's Encrypt bei OVH funktionieren.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [CDN von OVH](https://www.ovh.de/cdn/){.external}.
+- Sie verfügen über ein [CDN von OVH](/links/network/cdn-infrastructure){.external}.
 - Sie haben Zugriff auf die Verwaltung der DNS-Zone Ihrer Domain.
 
 ## Beschreibung

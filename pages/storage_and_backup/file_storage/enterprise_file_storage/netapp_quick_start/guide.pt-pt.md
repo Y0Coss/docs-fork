@@ -17,7 +17,7 @@ Neste guia de arranque rápido, saiba como começar na oferta Enterprise File St
 ## Requisitos
 
 - Ter uma oferta OVHcloud Enterprise File Storage
-- Ter acesso à página das [API OVHcloud](https://api.ovh.com/)
+- Ter acesso à página das [API OVHcloud](/links/api)
 - Saber [montar um NAS através de NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs)
 
 ## O essencial

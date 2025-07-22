@@ -68,7 +68,7 @@ This guide will help you to:
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en).<br>
+Log in to your [OVHcloud Control Panel](/links/manager).<br>
 Click your name in the top right-hand corner, then choose `My offers and services`{.action}.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}

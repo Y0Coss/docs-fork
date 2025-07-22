@@ -86,7 +86,7 @@ Clicca su `Seguente`{.action} e poi su `Conferma`{.action}.
 
 ### Trasferisci un IP via API
 
-Accedi alla pagina web delle [API OVHcloud](https://api.ovh.com/).
+Accedi alla pagina web delle [API OVHcloud](/links/api).
 
 Per prima cosa, è meglio verificare se l'indirizzo IP può essere spostato.
 <br>Per verificare se l'IP può essere spostato verso uno dei tuoi server dedicati, utilizza questa chiamata:

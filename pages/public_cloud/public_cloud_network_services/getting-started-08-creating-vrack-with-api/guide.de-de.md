@@ -6,7 +6,7 @@ updated: 2022-11-02
 
 ## Objective
 
-The [vRack](https://www.ovh.de/loesungen/vrack/) is a private network that allows you to configure addressing between two or more compatible OVHcloud services. It also allows you to add [Public Cloud instances](/links/public-cloud/public-cloud) to your private network to create an infrastructure of physical and virtual resources.
+The [vRack](/links/network/vrack) is a private network that allows you to configure addressing between two or more compatible OVHcloud services. It also allows you to add [Public Cloud instances](/links/public-cloud/public-cloud) to your private network to create an infrastructure of physical and virtual resources.
 
 **This guide provides some basic information on creating and configuring the vRack on Public Cloud using the OVHcloud API.**
 

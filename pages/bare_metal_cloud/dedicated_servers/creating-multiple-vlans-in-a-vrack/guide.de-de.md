@@ -16,7 +16,7 @@ Bei der [Standardkonfiguration des vRack](/pages/bare_metal_cloud/dedicated_serv
 
 ## Voraussetzungen
 
-- Sie verfügen über einen oder mehrere mit dem vRack kompatible [Dedicated Server](https://www.ovh.de/dedicated_server/).
+- Sie verfügen über einen oder mehrere mit dem vRack kompatible [Dedicated Server](/links/bare-metal/bare-metal).
 - Sie haben ein [vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server) in Ihrem Kunden-Account eingerichtet.
 - Sie haben einen privaten IP-Adressbereich für das vRack festgelegt.
 - Sie sind via SSH als Root-Benutzer eingeloggt (Linux).

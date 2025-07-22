@@ -17,7 +17,7 @@ Esta guía explica cómo gestionar los snapshots de los volúmenes de la soluci�
 ## Requisitos
 
 - Tener contratado un plan Enterprise File Storage de OVHcloud con un volumen.
-- Estar conectado a la página de las [API de OVHcloud.](https://api.ovh.com/)
+- Estar conectado a la página de las [API de OVHcloud.](/links/api)
 
 ## Lo esencial
 
