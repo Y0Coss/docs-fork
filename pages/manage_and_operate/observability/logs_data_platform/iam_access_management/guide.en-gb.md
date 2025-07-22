@@ -4,7 +4,21 @@ excerpt: A comprehensive guide to managing access rights for Logs Data Platform 
 updated: 2025-07-22
 ---
 
-> ![primary]
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
+> [!primary]
 > IAM for Logs Data Platform will be available starting **17th September 2025**.
 > The content of this documentation will be valid from this date.
 >
@@ -17,7 +31,7 @@ This guide provides instructions for configuring access rights on OVHcloud IAM t
 
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A Logs Data Platform Account With [IAM enabled](/pages/manage_and_operate/observability/logs_data_platform/iam_presentation_faq).
+- A Logs Data Platform Account With [IAM enabled](/pages/manage_and_operate/observability/logs_data_platform/iam_presentation_faq)
 
 ## Policies and identities
 
@@ -31,9 +45,9 @@ This section details how to configure local user/identity groups and policies to
 
 ### Create a group for local users
 
-By default, the least privileged group available for local users is read-only over all the products of your account. If you would like to have an even more restricted account able to read only shared data from your Logs Data Platform, we advise you to create a group with the role **None** and attach your local users to it. In the OVHcloud Control Panel, navigate to `IAM`{.action} {.action} > `Identities`{.action} > `User groups` to create such a group. 
+By default, the least privileged group available for local users is read-only over all the products of your account. If you would like to have an even more restricted account able to read only shared data from your Logs Data Platform, we advise you to create a group with the role **None** and attach your local users to it. In the OVHcloud Control Panel, navigate to `IAM`{.action} {.action} > `Identities`{.action} > `User groups`{.action} to create such a group. 
 
-![Create a group](images/create_group.png){.thumbnail}
+![Create a group](images/create_group01.png){.thumbnail}
 
 You can then create a policy with the basic rights to access the OVHcloud Control Panel and attach it to the group. All your local users will be able to connect to the OVHcloud Control Panel. Navigate to `IAM`{.action} > `Policies`{.action} > `My Policies`{.action} to create this policy and attach it to the user group.
 
@@ -88,7 +102,7 @@ One of the new feature available thanks to IAM is the ability to group sub-resou
 
 To create a resource group, navigate to `IAM`{.action} > `Policies`{.action} > `Resource Groups`{.action}.
 
-![Create Resource Group](images/create_rg.png){.thumbnail}
+![Create Resource Group](images/create_rg01.png){.thumbnail}
 
 You need to select the product type (Dashboards, Streams, Alias, Index, OpenSearch Dashboards) and then select the specific resource you want to share. 
 
@@ -100,7 +114,7 @@ Similarly to the previous policy, you need to add your local user and you need t
 
 ![Create sub resource policy](images/policy_sub_product_types.png){.thumbnail}
 
-> ![warning]
+> [!warning]
 > Do not add a Logs Data Platform service to this policy. If you do so it will transitively give access to all sub-resources of this service (ie all LDP items) to the local users/identities or groups attached to the policy. The previous service policy has been created to prevent this behaviour.
 
 You can mix Resource Groups and specific resources in the same policy. All actions attached to the policy will be then be attached to all related sub-resources.  
@@ -108,47 +122,59 @@ You have several actions for each sub-resource type. For brevity, this guide wil
 
 Here are some use cases of several rights which can all be together in one policy showcasing the complexity enabled by IAM policies. Actions starting with **ldp:apiovh** are actions related to OVHcloud APIs (thus the control panel UI). The other actions are related to their specific backend: Graylog or OpenSearch. 
 
-- These actions give an access in read-only to one or several indices:
-    ```yaml
-    - ldp:apiovh:output/opensearch/index/get
-    - ldp:apiovh:output/opensearch/index/url/get
-    - ldp:opensearch:index/read
-    ```
+/// details | These actions give an access in read-only to one or several indices:
 
-    ![policy sub resource 2](images/carousel_policy_sub_2.png){.thumbnail}
+```yaml
+- ldp:apiovh:output/opensearch/index/get
+- ldp:apiovh:output/opensearch/index/url/get
+- ldp:opensearch:index/read
+```
 
-- These actions allow to read and modify a Graylog Dashboard:
-    ```yaml
-    - ldp:graylog:dashboard/update
-    - ldp:apiovh:output/graylog/dashboard/get
-    - ldp:apiovh:output/graylog/dashboard/url/get
-    - ldp:graylog:dashboard/read
-    ```
+![policy sub resource 0](images/carousel_policy_sub_0.png){.thumbnail}
 
-    ![policy sub resource 1](images/carousel_policy_sub_1.png){.thumbnail}
+///
 
-- These actions allow to consult and create visualizations in one or several OpenSearch Dashboard instances:
-    ```yaml
-    - ldp:opensearch:osd/update 
-    - ldp:apiovh:output/opensearch/osd/get
-    - ldp:apiovh:output/opensearch/osd/url/get
-    - ldp:opensearch:osd/get 
-    ```
+/// details | These actions allow to read and modify a Graylog Dashboard:
 
-    ![policy sub resource 3](images/carousel_policy_sub_3.png){.thumbnail}
- 
-- These actions give a read-only access in both Graylog and the control panel to one or several streams:
-    ```yaml
-    - ldp:apiovh:output/graylog/stream/get
-    - ldp:apiovh:output/graylog/stream/url/get 
-    - ldp:graylog:stream/read  
-    ```
+```yaml
+- ldp:graylog:dashboard/update
+- ldp:apiovh:output/graylog/dashboard/get
+- ldp:apiovh:output/graylog/dashboard/url/get
+- ldp:graylog:dashboard/read
+```
 
-    ![policy sub resource 4](images/carousel_policy_sub_4.png){.thumbnail}
+![policy sub resource 1](images/carousel_policy_sub_1.png){.thumbnail}
+
+///
+
+/// details | These actions allow to consult and create visualizations in one or several OpenSearch Dashboard instances:
+
+```yaml
+- ldp:opensearch:osd/update 
+- ldp:apiovh:output/opensearch/osd/get
+- ldp:apiovh:output/opensearch/osd/url/get
+- ldp:opensearch:osd/get 
+```
+
+![policy sub resource 3](images/carousel_policy_sub_3.png){.thumbnail}
+
+///
+
+/// details | These actions give a read-only access in both Graylog and the control panel to one or several streams:
+
+```yaml
+- ldp:apiovh:output/graylog/stream/get
+- ldp:apiovh:output/graylog/stream/url/get 
+- ldp:graylog:stream/read  
+```
+
+![policy sub resource 4](images/carousel_policy_sub_4.png){.thumbnail}
+
+///
 
 Once the policy is created, the local user/identity will only see the related sub resource of the policy in its own control panel. 
 
-![local user control panel](images/local_user_control_panel.png){.thumbnail}
+![local user control panel](images/local_user_control_panel01.png){.thumbnail}
 
 ### Analyse your policy results
 
@@ -167,7 +193,7 @@ Thanks to OVHcloud IAM, you can then delegates the creation rights of sub-resour
 
 The actions related to create items are part of the service actions. You will need to add them to a policy to allow a user to create items with their PAT.
 
-> ![info]
+> [!primary]
 > You don't need to allow any OVHcloud APIs action to allow a local user to interact with the Logs Data Platform backends (OpenSearch, Graylog, OpenSearch Dashboards) APIs.
 > Local users allow you to generate tokens which can only interact with the backend similarly to legacy Logs Data Platform tokens. 
 
