@@ -124,7 +124,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Es gibt zwei Methoden, um Ihr Netzwerk entsprechend dem auf Ihrem Server installierten Betriebssystem zu konfigurieren:
 
-- **Für Debian 10 und 11**: Verwenden Sie [die auf der Datei *interfaces* basierende Methode](#interfaces).
+- **Für Debian 11**: Verwenden Sie [die auf der Datei *interfaces* basierende Methode](#interfaces).
 
 - **Für Debian 12, Ubuntu 20.04 und spätere Versionen**: Verwenden Sie [die *Netplan*-Methode](#netplan).
 

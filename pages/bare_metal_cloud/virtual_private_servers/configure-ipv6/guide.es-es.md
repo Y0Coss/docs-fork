@@ -124,7 +124,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Dos métodos para configurar su red:
 
-- **Para Debian 10 e 11**: utilice el [método basado en el archivo *interfaces*](#interfaces).
+- **Para Debian 11**: utilice el [método basado en el archivo *interfaces*](#interfaces).
 
 - **para Debian 12, Ubuntu 20.04 y versiones posteriores**: utilice el [método basado en la función *Netplan*](#netplan).
 

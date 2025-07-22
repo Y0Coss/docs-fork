@@ -123,7 +123,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Esistono due metodi per configurare la tua rete in base al sistema operativo installato sul tuo server:
 
-- **Per Debian 10 e 11**: utilizza il [metodo basato sul file *interfaces*](#interfaces).
+- **Per Debian 11**: utilizza il [metodo basato sul file *interfaces*](#interfaces).
 
 - **Per Debian 12, Ubuntu 20.04 e versioni successive**: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
 
