@@ -53,8 +53,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.acti
 The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the Edge Network **Firewall** and **GAME firewall** features availability and their statuses.
 
 - The **Mitigation** state can be:
-    - **Automatic** - The scrubbing centre is in **automatic** mode. It is the recommended mode to use, it reroutes traffic for deeper analysis when needed.
-    - **Permanent** - The scrubbing centre is **permanently enabled**. We do not recommend it to be enabled permanently, unless latency jitter is noted due to rerouting traffic back and forth.
+    - **Automatic** - The scrubbing centre is in **automatic** mode, and reroutes traffic for deeper analysis when needed.
     - **Forced** - This indicates the scrubbing centre is **taking action** right now.
 
 - The **Firewall** column indicates the state of the Edge Network Firewall which can be:
