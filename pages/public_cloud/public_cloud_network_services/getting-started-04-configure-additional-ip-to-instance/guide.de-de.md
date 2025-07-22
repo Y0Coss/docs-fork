@@ -4,13 +4,13 @@ excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre Instanzen einbinden"
 updated: 2025-07-21
 ---
 
-> [!PRIMARY]
-> Dieser Artikel befasst sich mit der Konfiguration von Additional IPv4-Adressen auf einer öffentlichen Schnittstelle. Sie können auch IPv6-Adressen auf Ihren Public Cloud Instanzen konfigurieren, indem Sie [diese Anleitung](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6) verwenden.
+> [!primary]
+> Diese Anleitung befasst sich mit der Konfiguration von Additional IPv4-Adressen auf einer öffentlichen Schnittstelle. Sie können auch IPv6-Adressen auf Ihren Public Cloud Instanzen konfigurieren, indem Sie [diese Anleitung](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6) verwenden.
 >
-> Bitte beachten Sie, dass die Additional IPs auch in einem vRack (privatem Netzwerk) konfiguriert werden können, was die Verbindung zu einer breiten Palette von OVHcloud Diensten ermöglicht und somit eine größere Flexibilität bietet.
+> Beachten Sie, dass Additional IPs auch in einem vRack (privates Netzwerk) konfiguriert werden können, was die Anbindung einer breiten Palette von OVHcloud Diensten ermöglicht und somit eine größere Flexibilität bietet.
 >
 > Weitere Informationen zum Konfigurieren von Additional IPs in einem vRack zur Verwendung mit Public Cloud Instanzen finden Sie in folgenden Anleitungen:
-> - [Einen IP-Block in einem vRack auf einer Public Cloud Instanz konfigurieren (EN)](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
+> - [IP-Block in einem vRack auf einer Public Cloud Instanz konfigurieren (EN)](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
 > - [IPv6-Block in einem vRack konfigurieren (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
