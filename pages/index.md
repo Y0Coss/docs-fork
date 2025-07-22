@@ -264,6 +264,7 @@
             + [Configuring the firewall on Windows](bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
             + [Public Cloud & VPS - Image and OS life cycle and end of life/support announcements](public_cloud/compute/image-life-cycle)
             + [Managing a legacy VPS](bare_metal_cloud/virtual_private_servers/vps_legacy_control_panel)
+            + [End of Plesk and cPanel support for VPS - Ensure continuity of your services](bare_metal_cloud/virtual_private_servers/eos-cpanel-plesk)
         + [Backup options](bare-metal-cloud-virtual-private-servers-backups)
             + [Using snapshots on a VPS](bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps)
             + [Using automatic backups on a VPS](bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
