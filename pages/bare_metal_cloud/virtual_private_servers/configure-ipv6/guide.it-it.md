@@ -1,11 +1,15 @@
 ---
 title: "Configurare IPv6 su un server VPS"
 excerpt: "Come configurare IPv6 sul tuo VPS OVHcloud"
-updated: 2024-09-11
+updated: 2025-07-22
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+> Questo articolo riguarda la configurazione di indirizzi IPv6 principali su un'interfaccia pubblica. È inoltre possibile configurare gli indirizzi Additional IP sul VPS utilizzando [questa guida](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>
+> Ti ricordiamo che gli Additional IP possono essere configurati anche in una vRack (rete privata), per consentire l'interconnessione di un'ampia gamma di servizi OVHcloud e offrire una maggiore flessibilità.
+>
+> Scopri come configurare gli Additional IP in una vRack utilizzando le nostre guide per [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) e [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Obiettivo

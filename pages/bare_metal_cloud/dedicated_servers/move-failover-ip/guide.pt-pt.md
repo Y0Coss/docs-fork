@@ -1,12 +1,15 @@
 ---
 title:  Migrar um Additional IP
 excerpt: Saiba como migrar um Additional IP a partir da Área de Cliente ou através das API OVHcloud
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Este artigo diz respeito à deslocação de endereços Additional IPv4, que é limitado por [restrições regionais](#limitations).
 >
-> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](/links/network/additional-ip). Isto não afeta as suas funcionalidades.
+> A configuração do Additional IP num vRack (rede privada) contorna estas restrições regionais ao perder a dependência de uma única região, facilitando ao mesmo tempo a interligação numa vasta gama de serviços OVHcloud.
+>
+> Saiba como configurar o Additional IP num vRack com os nossos manuais para [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) e [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objetivo

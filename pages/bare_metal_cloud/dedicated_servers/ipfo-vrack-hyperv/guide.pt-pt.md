@@ -1,11 +1,11 @@
 ---
 title: "Utilizar Hyper-V com endereços Additional IP num vRack"
 excerpt: "Descubra como configurar uma máquina virtual com Additional IP e Hyper-V num vRack"
-updated: 2021-02-25
+updated: 2025-07-22
 ---
 
 > [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+> Este artigo refere-se à configuração de endereços Additional IPv4 suplementares num vRack. Pode igualmente configurar endereços Additional IPv6 no seu vRack utilizando [este manual](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objetivo

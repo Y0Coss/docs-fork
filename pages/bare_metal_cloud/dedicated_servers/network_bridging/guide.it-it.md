@@ -1,12 +1,15 @@
 ---
 title: 'Configurare Additional IP in modalità bridge sulle proprie macchine virtuali'
 excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzando la modalità bridge
-updated: 2025-05-16
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Questo articolo riguarda la configurazione di indirizzi Additional IPv4 su un'interfaccia pubblica. È inoltre possibile configurare indirizzi IPv6 sui server virtuali utilizzando [questa guida](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm).
 >
-> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](/links/network/additional-ip). Questo non ha alcun impatto sulla sua funzionalità.
+> Ti ricordiamo che gli Additional IP possono essere configurati anche in una vRack (rete privata), per consentire l'interconnessione di un'ampia gamma di servizi OVHcloud e offrire una maggiore flessibilità.
+>
+> Scopri come configurare gli Additional IP in una vRack utilizzando le nostre guide per [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) e [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Obiettivo

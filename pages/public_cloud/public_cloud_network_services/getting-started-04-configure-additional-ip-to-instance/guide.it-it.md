@@ -1,16 +1,18 @@
 ---
 title: Configura un Additional IP
 excerpt: Come aggiungere indirizzi Additional IP alla configurazione della tua istanza
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+> Questo articolo riguarda la configurazione di indirizzi Additional IPv4 su un'interfaccia pubblica. È inoltre possibile configurare indirizzi IPv6 sulle istanze Public Cloud utilizzando [questa guida](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
 >
-
-> [!primary]
+> Ti ricordiamo che gli indirizzi Additional IP possono essere configurati anche in una vRack (rete privata), per consentire l'interconnessione su un'ampia gamma di servizi OVHcloud e offrire una maggiore flessibilità.
 >
-> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](/links/network/additional-ip). Questo non ha alcun impatto sulla sua funzionalità.
+> Per maggiori informazioni sulla configurazione degli indirizzi Additional IP in una vRack da utilizzare con le istanze Public Cloud, consulta queste guide:
+>
+> - [Configurare un blocco IP in una vRack su un’istanza Public Cloud (EN)](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
+> - [Configurare un blocco IPv6 in una vRack (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Obiettivo
@@ -314,4 +316,4 @@ Per testare la connessione, ti basta inviare un ping al tuo indirizzo Additional
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

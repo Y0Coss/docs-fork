@@ -1,16 +1,18 @@
 ---
 title: Configurar um Additional IP
 excerpt: "Saiba como adicionar endereços Additional IP à configuração da sua instância"
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+> Este artigo diz respeito à configuração de endereços Additional IPv4 numa interface pública. Também pode configurar endereços IPv6 nas suas instâncias Public Cloud utilizando [este manual](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
 >
-
-> [!primary]
+> Tenha em conta que os endereços Additional IP podem igualmente ser configurados num vRack (rede privada), o que permite a interligação numa vasta gama de serviços OVHcloud, oferecendo uma maior flexibilidade.
 >
-> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](/links/network/additional-ip). Isto não afeta as suas funcionalidades.
+> Encontrará mais informações sobre a configuração dos endereços Additional IP num vRack para uma utilização com as instâncias Public Cloud nos seguintes guias:
+>
+> - [Configurar um bloco IP num vRack numa instância Public Cloud (EN)](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
+> - [Configurar um bloco IPv6 num vRack (EN)](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objetivo
@@ -20,9 +22,9 @@ Poderá ter de configurar endereços Additional IP nas suas instâncias, por exe
 **Este guia explica como adicionar endereços Additional IP à sua configuração de rede.**
 
 > [!warning]
->A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
+> A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
 >
->Este guia foi concebido para o ajudar o mais possível nas tarefas mais comuns. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação dos serviços num servidor, recomendamos que contacte um fornecedor especializado.
+> Este guia foi concebido para o ajudar o mais possível nas tarefas mais comuns. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação dos serviços num servidor, recomendamos que contacte um fornecedor especializado.
 >
 
 ## Requisitos
@@ -314,4 +316,4 @@ Para testar a ligação, basta enviar um ping ao seu endereço Additional IP a p
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

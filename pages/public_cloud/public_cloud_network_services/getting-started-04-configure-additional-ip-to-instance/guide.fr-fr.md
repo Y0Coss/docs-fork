@@ -1,12 +1,18 @@
 ---
 title: Configurer une Additional IP
 excerpt: Découvrez comment ajouter des adresses Additional IP à la configuration de votre instance
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Cet article concerne la configuration d'adresses Additional IPv4 sur une interface publique. Vous pouvez également configurer des adresses IPv6 sur vos instances Public Cloud en utilisant [ce guide](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6).
+> 
+> Veuillez noter que les adresses Additional IP peuvent également être configurées dans un vRack (réseau privé), ce qui permet l'interconnexion sur une large gamme de services OVHcloud, offrant plus de flexibilité.
 >
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](/links/network/additional-ip). Cela n'a pas d'impact sur ses fonctionnalités.
+> Vous trouverez plus d'informations sur la configuration des adresses Additional IP dans un vRack pour une utilisation avec les instances Public Cloud dans les guides suivants :
+>
+> - [Configurer un bloc IP dans un vRack sur une instance Public Cloud](/pages/public_cloud/public_cloud_network_services/configuration-06-configure-ip-block-vrack-to-instance).
+> - [Configurer un bloc IPv6 dans un vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objectif
@@ -16,9 +22,9 @@ Vous devrez peut-être configurer des adresses Additional IP sur vos instances, 
 **Ce guide explique comment ajouter des adresses Additional IP à votre configuration réseau.**
 
 > [!warning]
->OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
+> OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
 >
->Ce guide est conçu pour vous aider le plus possible dans les tâches courantes. Néanmoins, nous vous recommandons de contacter un prestataire de services spécialisé si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en oeuvre des services sur un serveur.
+> Ce guide est conçu pour vous aider le plus possible dans les tâches courantes. Néanmoins, nous vous recommandons de contacter un prestataire de services spécialisé si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en oeuvre des services sur un serveur.
 >
 
 ## Prérequis
