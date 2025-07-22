@@ -5,7 +5,7 @@ updated: 2025-07-21
 ---
 
 > [!primary]
-> In diesem Artikel wird die Konfiguration primärer IPv6-Adressen auf einer öffentlichen Schnittstelle erläutert. Sie können auch Additional IP-Adressen auf Ihrem VPS konfigurieren, indem Sie [diese Anleitung](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing) verwenden.
+> In dieser Anleitung wird die Konfiguration primärer IPv6-Adressen auf einer öffentlichen Schnittstelle erläutert. Sie können auch Additional IP-Adressen auf Ihrem VPS konfigurieren, indem Sie [diese Anleitung](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing) verwenden.
 >
 > Beachten Sie, dass Additional IPs auch in einem vRack (privates Netzwerk) konfiguriert werden können, was die Anbindung eines breiten Spektrums von OVHcloud Diensten ermöglicht und so für mehr Flexibilität sorgt.
 >
