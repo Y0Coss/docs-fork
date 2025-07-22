@@ -115,7 +115,7 @@ Here are some use cases of several rights which can all be together in one polic
     - ldp:opensearch:index/read
     ```
 
-    ![policy sub resource 2](images/carousel_policy_sub_2.png)
+    ![policy sub resource 2](images/carousel_policy_sub_2.png){.thumbnail}
 
 - These actions allow to read and modify a Graylog Dashboard:
     ```yaml
@@ -125,7 +125,7 @@ Here are some use cases of several rights which can all be together in one polic
     - ldp:graylog:dashboard/read
     ```
 
-    ![policy sub resource 1](images/carousel_policy_sub_1.png)
+    ![policy sub resource 1](images/carousel_policy_sub_1.png){.thumbnail}
 
 - These actions allow to consult and create visualizations in one or several OpenSearch Dashboard instances:
     ```yaml
@@ -135,7 +135,7 @@ Here are some use cases of several rights which can all be together in one polic
     - ldp:opensearch:osd/get 
     ```
 
-    ![policy sub resource 3](images/carousel_policy_sub_3.png)
+    ![policy sub resource 3](images/carousel_policy_sub_3.png){.thumbnail}
  
 - These actions give a read-only access in both Graylog and the control panel to one or several streams:
     ```yaml
@@ -144,7 +144,7 @@ Here are some use cases of several rights which can all be together in one polic
     - ldp:graylog:stream/read  
     ```
 
-    ![policy sub resource 4](images/carousel_policy_sub_4.png)
+    ![policy sub resource 4](images/carousel_policy_sub_4.png){.thumbnail}
 
 Once the policy is created, the local user/identity will only see the related sub resource of the policy in its own control panel. 
 
