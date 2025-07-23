@@ -32,7 +32,7 @@ Les deux clusters doivent être entièrement visibles entre eux, au travers d'un
 
 Pour cela, vous pouvez utiliser des technologies diverses telles que :
 
-- Une connexion des sites entre eux au travers du même [vRack](https://www.ovh.com/fr/solutions/vrack/) sur tous les sites.
+- Une connexion des sites entre eux au travers du même [vRack](/links/network/vrack) sur tous les sites.
 
 ![Interconnection with vRack diagram](images/vrackinterconnection.png){.thumbnail}
 

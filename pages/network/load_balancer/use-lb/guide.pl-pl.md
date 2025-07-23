@@ -10,7 +10,7 @@ Niniejsza instrukcja ma na celu zapewnienie użytkownikowi pomocy we wdrożeniu 
 ## Wymagania początkowe
 
 - Dostęp do Twojego Panelu klienta
-- Zamówienie rozwiązania [Load Balancer]( https://www.ovh.pl/rozwiazania/load-balancer/)
+- Zamówienie rozwiązania [Load Balancer](/links/network/load-balancer)
 
 ## W praktyce
 

@@ -11,7 +11,7 @@ Este guia tem como objetivo facilitar a primeira utilização do Load Balancer e
 ## Pré-requisitos
 
 - Ter acesso à Área de Cliente
-- Ter contratado um [Load Balancer](https://www.ovh.pt/solucoes/load-balancer/)
+- Ter contratado um [Load Balancer](/links/network/load-balancer)
 
 ## Questões práticas
 

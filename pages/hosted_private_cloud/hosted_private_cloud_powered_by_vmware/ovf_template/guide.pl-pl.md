@@ -12,7 +12,7 @@ OVH oferuje szablony Windows i SQL Server (w formacie OVF), które możesz wdro�
 
 > [!primary]
 > 
-> Ceny obrazów systemów oferowanych przez OVH znajdziesz na [stronie WWW](https://www.ovh.pl/private-cloud/opcje/obrazy-licencje.xml){.external}.
+> Ceny obrazów systemów oferowanych przez OVH znajdziesz na [stronie WWW](/links/hosted-private-cloud/vmware-images-licenses){.external}.
 >
 
 ## Wymagania początkowe

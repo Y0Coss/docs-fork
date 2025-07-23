@@ -22,7 +22,7 @@ updated: 2022-09-28
 ## En pratique
 
 Nous allons interconnecter deux clusters Nutanix distants, l'un à Gravelines et l'autre à Roubaix au travers du même vRack.<br>
-Consultez notre [présentation du vRack](https://www.ovh.com/fr/solutions/vrack/) pour en savoir plus sur la solution vRack OVHcloud.
+Consultez notre [présentation du vRack](/links/network/vrack) pour en savoir plus sur la solution vRack OVHcloud.
 
 ### Préparation des deux clusters avant l'interconnexion
 
@@ -204,7 +204,7 @@ Le Load Balancer est relié au vRack commun aux deux sites et l'accès à Prism 
 
 [Réplication avancée avec Leap](/pages/hosted_private_cloud/nutanix_on_ovhcloud/47-nutanix-leap)
 
-[Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
+[Présentation des vRack](/links/network/vrack)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

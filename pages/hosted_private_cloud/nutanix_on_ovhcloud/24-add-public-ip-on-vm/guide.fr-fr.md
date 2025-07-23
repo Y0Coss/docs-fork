@@ -27,13 +27,13 @@ Si vous souhaitez créer un frontend web ou un reverse proxy pour créer une pil
 
 ### Ajouter une nouvelle Additional IP à votre vRack
 
-Connectez-vous à l'[espace client OVHcloud](/links/manager) et ajoutez une adresse Additional IP à votre [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
+Connectez-vous à l'[espace client OVHcloud](/links/manager) et ajoutez une adresse Additional IP à votre [vRack](/links/network/vrack){.external}.
 
 > [!primary]
 > Les instructions suivantes vont utiliser le bloc IP 123.45.6.78/30 à titre d'exemple.
 >
 
-Dans le cadre d'une utilisation du [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}, la première adresse, l'avant-dernière et la dernière adresse d'un bloc IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au broadcast du réseau. Cela signifie que la première adresse utilisable est la seconde adresse du bloc, comme indiqué ci-dessous :
+Dans le cadre d'une utilisation du [vRack](/links/network/vrack){.external}, la première adresse, l'avant-dernière et la dernière adresse d'un bloc IP donné sont toujours réservées respectivement à l'adresse réseau, à la passerelle réseau et au broadcast du réseau. Cela signifie que la première adresse utilisable est la seconde adresse du bloc, comme indiqué ci-dessous :
 
 ```console
 123.45.6.76   Reserved: Network address

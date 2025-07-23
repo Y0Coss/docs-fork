@@ -47,7 +47,7 @@ No obstante, existen **casos especiales**, que se explican en detalle [más adel
 
 ### Cómo dar de baja la suscripción <a name="terminate"></a>
 
-Para cancelar la suscripción al servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
+Para cancelar la suscripción al servicio, conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
 
 ![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
 

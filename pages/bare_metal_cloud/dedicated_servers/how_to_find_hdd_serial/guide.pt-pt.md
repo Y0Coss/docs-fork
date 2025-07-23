@@ -12,7 +12,7 @@ Para minimizar os riscos de erro durante a substituição de um disco rígido, p
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external}.
 - Ter acesso ao servidor através de SSH enquanto administrador (sudo).
 - Ter instalado o utilitário sas2ircu no servidor Windows (disponível através do motor de busca [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
 

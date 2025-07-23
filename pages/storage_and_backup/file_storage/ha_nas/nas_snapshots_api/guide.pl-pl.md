@@ -16,7 +16,7 @@ NAS-HA OVHcloud umożliwia tworzenie i zarządzanie wolumenami plików dostępny
 
 ## Wymagania początkowe
 
-- Usługa [NAS-HA OVHcloud](https://www.ovh.pl/nas/)
+- Usługa [NAS-HA OVHcloud](/links/storage/nas-ha)
 - Zapoznaj się z naszym przewodnikiem Pierwsze kroki z [API OVHcloud](/pages/manage_and_operate/api/first-steps), aby zapoznać się z APIv6 OVHcloud
 
 ## W praktyce

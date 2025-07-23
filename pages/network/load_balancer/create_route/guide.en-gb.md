@@ -14,7 +14,7 @@ In some cases, you can go a step further and route, redirect or block traffic ac
 
 ## Requirements
 
-- an [OVH Load Balancer](https://www.ovh.co.uk/solutions/load-balancer/){.external} on a solution that lets you create routes
+- an [OVH Load Balancer](/links/network/load-balancer){.external} on a solution that lets you create routes
 - access to the [OVH API](/links/api){.external}
 
 ## Instructions

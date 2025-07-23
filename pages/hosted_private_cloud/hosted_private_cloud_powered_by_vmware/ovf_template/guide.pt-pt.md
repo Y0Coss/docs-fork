@@ -12,7 +12,7 @@ A OVH disponibiliza templates Windows e SQL server (em formato OVF) que pode usa
 
 > [!primary]
 > 
-> Encontre nesta [página](https://www.ovh.pt/private-cloud/opcoes/imagens-licencas.xml){.external} os preços das imagens disponibilizadas pela OVH.
+> Encontre nesta [página](/links/hosted-private-cloud/vmware-images-licenses){.external} os preços das imagens disponibilizadas pela OVH.
 >
 
 ## Requisitos

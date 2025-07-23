@@ -13,7 +13,7 @@ The OVH Load Balancer acts by default as a proxy. It can also be configured to r
 
 ## Requirements
 
-- an [OVH Load Balancer](https://www.ovh.co.uk/solutions/load-balancer/){.external}
+- an [OVH Load Balancer](/links/network/load-balancer){.external}
 - access to the [OVH Control Panel](/links/manager){.external}, or the [OVH API](/links/api){.external}
 
 ## Instructions

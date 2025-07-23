@@ -12,7 +12,7 @@ When you configure the Content Delivery Network (CDN) for the first time, you ne
 
 ## Requirements
 
-- an [OVH Content Delivery Network (CDN)](https://www.ovh.co.uk/cdn/){.external} solution
+- an [OVH Content Delivery Network (CDN)](/links/network/cdn-infrastructure){.external} solution
 - access to the [OVH Control Panel](/links/manager){.external}
 - the permissions needed to manage your domain’s DNS zone
  

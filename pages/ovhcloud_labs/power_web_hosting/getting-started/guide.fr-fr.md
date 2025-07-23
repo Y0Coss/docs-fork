@@ -34,7 +34,7 @@ Vous trouverez des informations complémentaires dans notre guide « [Se connect
 
 #### Ajouter un nom de domaine
 
-Par défaut, votre hébergement web POWER est attaché à une URL automatiquement attribuée. Vous pouvez néanmoins utiliser votre propre [nom de domaine](https://www.ovh.com/fr/domaines/), en l'ajoutant depuis l'onglet `Multisite`{.action}.
+Par défaut, votre hébergement web POWER est attaché à une URL automatiquement attribuée. Vous pouvez néanmoins utiliser votre propre [nom de domaine](/links/web/domains), en l'ajoutant depuis l'onglet `Multisite`{.action}.
 
 ![Adding a domain name](images/getting-started-03.png){.thumbnail}
 

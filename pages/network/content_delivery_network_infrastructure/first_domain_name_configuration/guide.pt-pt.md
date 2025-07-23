@@ -12,7 +12,7 @@ Ao configurar a solução Content Delivery Network (CDN) pela primeira vez, deve
 
 ## Requisitos
 
-- Possuir a solução [Content Delivery Network (CDN) da OVH](https://www.ovh.pt/cdn/){.external}.
+- Possuir a solução [Content Delivery Network (CDN) da OVH](/links/network/cdn-infrastructure){.external}.
 - Ter acesso à gestão da zona DNS do seu nome de domínio.
 - Ter acesso à [Área de Cliente OVH](/links/manager){.external}.
 
