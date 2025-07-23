@@ -1,7 +1,7 @@
 ---
 title: "KMS pour VMware on OVHcloud - Configuration du chiffrement de VM"
 excerpt: "Découvrez comment activer le chiffrement de vos VMs au sein de votre VMware vSphere managé Hosted Private Cloud grâce à la solution KMS OVHcloud (OKMS) en tant que service managé"
-updated: 2025-07-22
+updated: 2025-07-23
 ---
 
 <style>
@@ -37,20 +37,20 @@ details[open]>summary::before {
 
 **Sommaire des étapes du guide** :
 
-  - [Introduction, liste des URLs et des appels API OKMS disponibles ](#introduction)
-  - [Étape 1 - Commande d'un KMS OVHcloud (obligatoire)](#command-okms)
-  - [Étape 2 - Activation du KMS OVHcloud (obligatoire)](#activation-okms)
-  - [Étape 3 - Création d'une politique IAM ](#iam-creation)
-  - [Étape 4 - Configuration de OKMS avec VMware vSphere HPC (obligatoire)](#add-okms)
-  - [Étape 5 - Création d'une stratégie de stockage VM (obligatoire)](#storage-policy)
-  - [Étape 6 - Activation du chiffrement sur une VM (obligatoire)](#activation-encryption)
-  - [Informations utiles TLS OKMS](#useful-information)
+- [Introduction, liste des URL et des appels API OKMS disponibles](#introduction)
+- [Étape 1 - Commande d'un KMS OVHcloud (obligatoire)](#command-okms)
+- [Étape 2 - Activation du KMS OVHcloud (obligatoire)](#activation-okms)
+- [Étape 3 - Création d'une politique IAM](#iam-creation)
+- [Étape 4 - Configuration de OKMS avec VMware vSphere HPC (obligatoire)](#add-okms)
+- [Étape 5 - Création d'une stratégie de stockage VM (obligatoire)](#storage-policy)
+- [Étape 6 - Activation du chiffrement sur une VM (obligatoire)](#activation-encryption)
+- [Informations utiles TLS OKMS](#useful-information)
 
-### Introduction, liste des URLs et des appels API OKMS disponibles <a name="introduction"></a>
+### Introduction, liste des URL et des appels API OKMS disponibles <a name="introduction"></a>
 
 Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted Private Cloud VMware on OVHcloud, consultez le guide « [Présentation des solutions pour chiffrer des VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt) ».
 
-#### URLs OKMS
+#### URL OKMS
 
 > [!primary]
 >
@@ -58,7 +58,7 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 > 
 
 |   **Type**   | **URL**                          |         **Région**          | **OKMS Région enum** |                   **IP**                    |
-| :----------: | :------------------------------- | :-------------------------: | :------------------: | :-----------------------------------------: |
+| ------------ | -------------------------------- | --------------------------- | -------------------- | ------------------------------------------- |
 | **Endpoint** | eu-west-rbx.okms.ovh.net         |      France - Roubaix       |     EU_WEST_RBX      |               91.134.128.102                |
 | **Swagger**  | swagger-eu-west-rbx.okms.ovh.net |      France - Roubaix       |     EU_WEST_RBX      |               91.134.128.102                |
 | **Endpoint** | eu-west-sbg.okms.ovh.net         |     France - Strasbourg     |     EU_WEST_SBG      |               137.74.127.152                |

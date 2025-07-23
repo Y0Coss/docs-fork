@@ -1,7 +1,7 @@
 ---
 title: "KMS for VMware on OVHcloud - Configuring VM encryption"
 excerpt: "Find out how to enable VM encryption in your managed Hosted Private Cloud VMware vSphere with the OVHcloud KMS (OKMS) solution managed as a service"
-updated: 2025-07-22
+updated: 2025-07-23
 ---
 
 <style>
@@ -37,7 +37,7 @@ content:'\25BC';
 
 **Summary of guide steps**:
 
-- [Introduction - Lists of available URLs and OVHcloud KMS endpoints](#introduction)
+- [Introduction - Lists of available OVHcloud KMS URLs and API endpoints](#introduction)
 - [Step 1 - Ordering an OVHcloud KMS (mandatory)](#command-okms)
 - [Step 2 - OVHcloud KMS activation (mandatory)](#activation-okms)
 - [Step 3 - Creating an IAM policy (mandatory)](#iam-creation)
@@ -50,7 +50,7 @@ content:'\25BC';
 
 For more information on the choices you can make with KMS and VMware on OVHcloud Hosted Private Cloud, please read our guide “[Introduction to solutions for encrypting VMs](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt)”.
 
-#### URLs OKMS
+#### OKMS URLs
 
 > [!primary]
 >
@@ -58,7 +58,7 @@ For more information on the choices you can make with KMS and VMware on OVHcloud
 >
 
 |   **Type**   | **URL**                          |         **Region**          | **OKMS Enum Region** |                   **IP**                    |
-| :----------: | :------------------------------- | :-------------------------: | :------------------: | :-----------------------------------------: |
+| ------------ | -------------------------------- | --------------------------- | -------------------- | ------------------------------------------- |
 | **Endpoint** | eu-west-rbx.okms.ovh.net         |      France - Roubaix       |     EU_WEST_RBX      |               91.134.128.102                |
 | **Swagger**  | swagger-eu-west-rbx.okms.ovh.net |      France - Roubaix       |     EU_WEST_RBX      |               91.134.128.102                |
 | **Endpoint** | eu-west-sbg.okms.ovh.net         |     France - Strasbourg     |     EU_WEST_SBG      |               137.74.127.152                |
