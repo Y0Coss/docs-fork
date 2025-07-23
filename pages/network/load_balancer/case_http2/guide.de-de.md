@@ -1,8 +1,28 @@
 ---
 title: Konfiguration von HTTP/2 auf dem OVHcloud Loadbalancer
 excerpt: So konfigurieren Sie HTTP/2 auf dem OVHcloud Loadbalancer
-updated: 2025-07-04
+updated: 2025-07-24
 ---
+
+> [!primary]
+> **Hinweis auf native HTTP/2-Medien**
+>
+> Seit Juni 2025 unterstützen die HTTP- und TLS-Frontends der OVHcloud Loadbalancer-Dienste nativ das HTTP/2-Protokoll.
+>
+> Für TCP-Frontends, die für Anwendungen mit geringer Latenz und hoher Leistung nützlich sein können, gilt jedoch die folgende Anleitung.
+>
+> HTTP/2 verbessert die Performance Ihrer Web-Applikationen durch:
+>
+> - *Schnellere Ladezeiten* durch Query Multiplexing, das es ermöglicht, mehrere Anfragen parallel über eine Verbindung zu senden.
+> - *Reduzierte Latenz* mit besserem Verbindungsmanagement.
+> - *Optimierung der Netzwerkressourcen* durch Header-Komprimierung.
+>
+> Um das HTTP/2-Protokoll auf bestehenden HTTP- und TLS-Frontends zu aktivieren, führen Sie den unten stehenden Aufruf zum Aktualisieren über die API aus, wobei **serviceName** der interne Name Ihres Loadbalancers ist.
+
+> [!api]
+>
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
+>
 
 ## Einleitung
 

@@ -1,7 +1,7 @@
 ---
 title: Configuring HTTP/2 on an OVH Load Balancer service
 excerpt: Configuring HTTP/2 on an OVH Load Balancer service
-updated: 2025-07-23
+updated: 2025-07-24
 ---
 
 > [!primary]
@@ -9,11 +9,12 @@ updated: 2025-07-23
 >
 > Since June 2025, HTTP and TLS frontends used by OVHcloud Load Balancer services natively support the HTTP/2 protocol.
 >
-> However, the following guide remains applicable for TCP frontends, which may be desirable in high performance, low latency applications.
+> However, the following guide remains applicable for TCP frontends, which may be useful in high performance, low latency applications.
 >
-> HTTP/2 brings numerous advantages to enhance the performance the performance and efficiency of your applications: <br>
-> - *Faster load times* thanks to multiplexing, which allows multiple requests to be sent in parallel on the same connection;
-> - *Reduced latency* by limiting the exchanges between the client and the server;
+> HTTP/2 brings numerous advantages to enhance the performance and efficiency of your applications:
+>
+> - *Faster load times* thanks to multiplexing, which allows multiple requests to be sent in parallel on the same connection.
+> - *Reduced latency* by limiting the exchanges between the client and the server.
 > - *Optimized network performance* through header compression.
 >
 > In order to enable HTTP/2 on existing HTTP and TLS frontends, you must make the following refresh call via the API, where **{serviceName}** is the internal name of your Load Balancer.
@@ -26,11 +27,11 @@ updated: 2025-07-23
 
 ## Objective
 
-The OVH Load Balancer TCP frontends do not currently support the HTTP/2 protocol. However, you can bypass this restriction by using TCP mode with the ALPN extension of the TLS protocol.
+The OVHcloud Load Balancer TCP frontends do not currently support the HTTP/2 protocol. However, you can bypass this restriction by using TCP mode with the ALPN extension of the TLS protocol.
 
 ALPN (Application-Layer Protocol Negotiation) is a TLS extension that enables the application layer to negotiate which protocol will be used (h2 in this case).
 
-**This guide is designed to help you create an HTTP/2 service with the OVH Load Balancer solution. Here, we will configure this service to balance the load across several servers responding with HTTP/2.**
+**This guide is designed to help you create an HTTP/2 service with the OVHcloud Load Balancer solution. Here, we will configure this service to balance the load across several servers responding with HTTP/2.**
 
 
 ## Requirements
