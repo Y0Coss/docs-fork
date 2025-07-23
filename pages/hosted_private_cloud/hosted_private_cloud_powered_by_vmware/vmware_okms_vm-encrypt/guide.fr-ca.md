@@ -37,7 +37,7 @@ details[open]>summary::before {
 
 **Sommaire des étapes du guide** :
 
-- [Introduction, liste des URL et des appels API OKMS disponibles](#introduction)
+- [Introduction - Liste des URL et des appels API OKMS disponibles](#introduction)
 - [Étape 1 - Commande d'un KMS OVHcloud (obligatoire)](#command-okms)
 - [Étape 2 - Activation du KMS OVHcloud (obligatoire)](#activation-okms)
 - [Étape 3 - Création d'une politique IAM](#iam-creation)

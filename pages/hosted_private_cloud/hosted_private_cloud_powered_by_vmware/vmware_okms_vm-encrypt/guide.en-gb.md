@@ -37,7 +37,7 @@ content:'\25BC';
 
 **Summary of guide steps**:
 
-- [Introduction - Lists of available OVHcloud KMS URLs and API endpoints](#introduction)
+- [Introduction - List of available URLs and OKMS API calls](#introduction)
 - [Step 1 - Ordering an OVHcloud KMS (mandatory)](#command-okms)
 - [Step 2 - OVHcloud KMS activation (mandatory)](#activation-okms)
 - [Step 3 - Creating an IAM policy (mandatory)](#iam-creation)
