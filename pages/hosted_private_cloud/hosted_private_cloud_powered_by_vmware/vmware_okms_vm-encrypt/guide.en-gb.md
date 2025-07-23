@@ -37,30 +37,20 @@ content:'\25BC';
 
 **Summary of guide steps**:
 
-- [Objective](#objective)
-- [Requirements](#requirements)
-- [Instructions ](#instructions-)
-  - [Introduction, list of available URLs and OKMS API calls ](#introduction-list-of-available-urls-and-okms-api-calls-)
-    - [URLs OKMS](#urls-okms)
-    - [List of API v1 and v2 KMS calls ](#list-of-api-v1-and-v2-kms-calls-)
-  - [Step 1 - Ordering an OVHcloud KMS (mandatory) ](#step-1---ordering-an-ovhcloud-kms-mandatory-)
-    - [Via the OVHcloud Control Panel](#via-the-ovhcloud-control-panel)
-    - [Via OVHcloud APIs](#via-ovhcloud-apis)
-  - [Step 2 - Activate OVHcloud KMS (mandatory) ](#step-2---activate-ovhcloud-kms-mandatory-)
-    - [Via the OVHcloud Control Panel](#via-the-ovhcloud-control-panel-1)
-    - [Via OVHcloud APIs (optional)](#via-ovhcloud-apis-optional)
-  - [Step 3 - Create an IAM policy ](#step-3---create-an-iam-policy-)
-  - [Step 4 - Configuring OKMS with VMware vSphere HPC (mandatory) ](#step-4---configuring-okms-with-vmware-vsphere-hpc-mandatory-)
-  - [Step 5 - Create a VM storage policy (required) ](#step-5---create-a-vm-storage-policy-required-)
-  - [Step 6 - Enabling encryption on a VM (required) ](#step-6---enabling-encryption-on-a-vm-required-)
-- [Go further ](#go-further-)
-  - [Useful information - TLS/KMS ](#useful-information---tlskms-)
+- [Introduction - Lists of available URLs and OVHcloud KMS endpoints](#introduction)
+- [Step 1 - Ordering an OVHcloud KMS (mandatory)](#command-okms)
+- [Step 2 - OVHcloud KMS activation (mandatory)](#activation-okms)
+- [Step 3 - Creating an IAM policy (mandatory)](#iam-creation)
+- [Step 4 - Configuring OKMS with vSphere (mandatory)](#add-okms)
+- [Step 5 - Creating a VM storage policy (mandatory)](#storage-policy)
+- [Step 6 - Enabling encryption on a VM (mandatory)](#activation-encryption)
+- [TLS OKMS useful information](#useful-information)
 
 ### Introduction, list of available URLs and OKMS API calls <a name="introduction"></a>
 
 For more information on the choices you can make with KMS and VMware on OVHcloud Hosted Private Cloud, please read our guide “[Introduction to solutions for encrypting VMs](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt)”.
 
-#### URLs OKMS
+#### OKMS URLs
 
 > [!primary]
 >
@@ -91,35 +81,35 @@ For more information on the choices you can make with KMS and VMware on OVHcloud
 > Information and API calls.
 >
 
-|      **Method**       |   **API**   | **Path**                                                                 | **Comments**                                                     |
-|:---------------------:|:-----------:|:-------------------------------------------------------------------------|:-----------------------------------------------------------------|
-|                       |             |                                                                          |                                                                  |
-|   **Credentials:**    |             |                                                                          |                                                                  |
-|        **GET**        |     v2      | /okms/resource/{okmsId}/credential                                       | - List all access credentials.                                   |
-|       **POST**        |     v2      | /okms/resource/{okmsId}/credential                                       | - Request a new access credential.                               |
-|        **GET**        |     v2      | /okms/resource/{okmsId}/credential/{credentialId}                        | - Get an access credential.                                      |
-|        **DEL**        |     v2      | /okms/resource/{okmsId}/credential/{credentialId}                        | - Revoke and delete an access credential.                        |
-|                       |             |                                                                          |                                                                  |
-|    **Reference:**     |             |                                                                          |                                                                  |
-|        **GET**        |     v2      | /okms/reference/serviceKey                                               | - Get service key type, size, curve and operations combination.  |
-|                       |             |                                                                          |                                                                  |
-|    **Resources:**     |             |                                                                          |                                                                  |
-|        **GET**        |     v2      | /okms/resource                                                           | - List of OVHcloud KMS services.                                 |
-|        **GET**        |     v2      | /okms/resource/{okmsId}                                                  | - Get an OVHcloud KMS service.                                   |
-|                       |             |                                                                          |                                                                  |
-|   **Service Keys:**   |             |                                                                          |                                                                  |
-|        **GET**        |     v2      | /okms/resource/{okmsId}/serviceKey                                       | - List all keys.                                                 |
-|       **POST**        |     v2      | /okms/resource/{okmsId}/serviceKey                                       | - Create or import a service key.                                |
-|        **GET**        |     v2      | /okms/resource/{okmsId}/serviceKey/{keyId}                               | - Retrieve a key.                                                |
-|        **PUT**        |     v2      | /okms/resource/{okmsId}/serviceKey/{keyId}                               | - Update a service key.                                          |
-|        **DEL**        |     v2      | /okms/resource/{okmsId}/serviceKey/{keyId}                               | - Delete the given service key.                                  |
-|                       |             |                                                                          |                                                                  |
-|  **Authentication:**  |             |                                                                          |                                                                  |
-|        **GET**        |     v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms                           | - List virtual machine encryption KMS servers.                   |
-|       **POST**        |     v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms                           | - Create virtual machine encryption KMS server.                  |
-|        **GET**        |     v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                   | - Get virtual machine encryption KMS server.                     |
-|        **DEL**        |     v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                   | - Remove virtual machine encryption KMS server.                  |
-|       **POST**        |     v1      | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties  | - Update virtual machine encryption KMS server.                  |
+|      **Method**       | **API** |                                 **Path**                                |                   **Comments**                  |
+| --------------------- | ------- | ----------------------------------------------------------------------- | ----------------------------------------------- |
+|                       |         |                                                                         |                                                 |
+|   **Credentials:**    |         |                                                                         |                                                 |
+|        **GET**        |   v2    | /okms/resource/{okmsId}/credential                                      | - List all access credentials.                  |
+|       **POST**        |   v2    | /okms/resource/{okmsId}/credential                                      | - Request a new access credential.              |
+|        **GET**        |   v2    | /okms/resource/{okmsId}/credential/{credentialId}                       | - Get an access credential.                     |
+|        **DEL**        |   v2    | /okms/resource/{okmsId}/credential/{credentialId}                       | - Revoke and delete an access credential.       |
+|                       |         |                                                                         |                                                 |
+|    **Reference:**     |         |                                                                         |                                                 |
+|        **GET**        |   v2    | /okms/reference/serviceKey                              | - Get service key type, size, curve and operations combination. |
+|                       |         |                                                                         |                                                 |
+|    **Resources:**     |         |                                                                         |                                                 |
+|        **GET**        |   v2    | /okms/resource                                                          | - List OVHcloud KMS services.                   |
+|        **GET**        |   v2    | /okms/resource/{okmsId}                                                 | - Get an OVHcloud KMS service.                  |
+|                       |         |                                                                         |                                                 |
+|   **Service Keys:**   |         |                                                                         |                                                 |
+|        **GET**        |   v2    | /okms/resource/{okmsId}/serviceKey                                      | - List all keys.                                |
+|       **POST**        |   v2    | /okms/resource/{okmsId}/serviceKey                                      | - Create or import a service key.               |
+|        **GET**        |   v2    | /okms/resource/{okmsId}/serviceKey/{keyId}                              | - Retrieve a key.                               |
+|        **PUT**        |   v2    | /okms/resource/{okmsId}/serviceKey/{keyId}                              | - Update a service key.                         |
+|        **DEL**        |   v2    | /okms/resource/{okmsId}/serviceKey/{keyId}                              | - Delete the given service key.                 |
+|                       |         |                                                                         |                                                 |
+|  **Authentication:**  |         |                                                                         |                                                 |
+|        **GET**        |   v1    | /dedicatedCloud/{serviceName}/vmEncryption/kms                          | - List virtual machine encryption KMS servers.  |
+|       **POST**        |   v1    | /dedicatedCloud/{serviceName}/vmEncryption/kms                          | - Create virtual machine encryption KMS server. |
+|        **GET**        |   v1    | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                  | - Get virtual machine encryption KMS server.    |
+|        **DEL**        |   v1    | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                  | - Remove virtual machine encryption KMS server. |
+|       **POST**        |   v1    | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties | - Update virtual machine encryption KMS server. |
 
 ### Step 1 - Ordering an OVHcloud KMS (mandatory) <a name="command-okms"></a>
 
@@ -390,7 +380,7 @@ If you do not already have an IAM policy created, we will create one to list the
 
 You will need to log in to your [OVHcloud control panel](/links/manager).
 
-Go to IAM on section `Identity, Security & Operations`{.action} and `Policies`{.action}.
+Go to `Identity, Security & Operations`{.action} section. Click `Policies`{.action}, then `Create a policy`{.action}.
 
 ![Manager IAM Policy](images/manager_iam-resize-optim.png){.thumbnail}
 
