@@ -1,12 +1,8 @@
 ---
 title: 'Configurar um disco adicional'
 excerpt: 'Saiba como adicionar e configurar espaço de armazenamento adicional num VPS'
-updated: 2023-02-15
+updated: 2025-07-23
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
->
 
 ## Objetivo
 
@@ -195,11 +191,11 @@ Se o disco estiver marcado como fora de ligação, deve ser iniciado. Para isso,
 
 ##### **Iniciar o disco na ferramenta "Gestão dos discos"** <a name="initDiskManagement"></a>
 
- Clique com o botão direito do rato no disco e selecione `Online`{.action}. 
+Clique com o botão direito do rato no disco e selecione `Online`{.action}. 
 
 ![winmountdiskvps](images/disk_vps_win03.png){.thumbnail}
 
- Clique com o botão direito do rato no disco e selecione `Iniciar o disco`{.action}.
+Clique com o botão direito do rato no disco e selecione `Iniciar o disco`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win04.png){.thumbnail}
 
@@ -207,9 +203,9 @@ Selecione `MBR`{.action} (Sector de arranque principal) na nova janela e clique 
 
 ![winmountdiskvps](images/disk_vps_win05.png){.thumbnail}
 
-##### **Iniciar o disco com DISKPARTIDO** <a name="initDiskpart"></a>
+##### **Iniciar o disco com DISKPART** <a name="initDiskpart"></a>
 
- Clique com o botão direito do rato no `Menu Iniciar`{.action} e abra a `Executar`{.action}.
+Clique com o botão direito do rato no `Menu Iniciar`{.action} e abra a `Executar`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win06.png){.thumbnail}
 
@@ -217,21 +213,21 @@ Introduza `cmd` e clique em `OK`{.action} para abrir a aplicação de linha de c
 
 ![winmountdiskvps](images/disk_vps_win07.png){.thumbnail}
 
-No convite à encomenda, abra o DISKPARTIDO:
+No convite à encomenda, abra o DISKPART:
 
-```powershell
+```console
 C:\> diskpart
 ```
 
-Utilize a seguinte série de comandos DISKPart para configurar o disco online:
+Utilize a seguinte série de comandos DISKPART para configurar o disco online:
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -245,19 +241,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```powershell
+```console
 DISKPart> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -269,7 +265,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -297,7 +293,7 @@ Na última janela, clique em `Terminar`{.action} para formatar o disco. Ficará 
 
 ### Rescindir a opção de disco adicional
 
-No separador `Página Inicial`{.action}, expanda o ecrã até à zona intitulada **Resumo das opções**. Clique em `...`{.action} em frente à opção "Discos adicionais". Clique em `Rescindir`{.action} no menu contextual.
+No separador `Home`{.action}, aceda à secção rotulada **A sua configuração**. Clique em `...`{.action} junto à opção `Discos adicionais` e no respetivo menu clique em `Rescindir`{.action}.
 
 ![rescisão de disco adicional](images/disk_vps02.png){.thumbnail}
 

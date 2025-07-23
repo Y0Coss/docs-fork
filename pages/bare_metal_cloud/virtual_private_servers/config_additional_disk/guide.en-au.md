@@ -1,7 +1,7 @@
 ---
 title: 'Configuring an additional disk'
 excerpt: 'Find out how to add and configure additional storage space on a VPS'
-updated: 2023-02-15
+updated: 2025-07-23
 ---
 
 ## Objective
@@ -215,19 +215,19 @@ Type `cmd` and click `OK`{.action} to open the command line application.
 
 At the command prompt, open DISKPART:
 
-```powershell
+```console
 C:\> diskpart
 ```
 
 Use the following series of DISKPART commands to set the disk to online:
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -241,19 +241,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -265,7 +265,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.

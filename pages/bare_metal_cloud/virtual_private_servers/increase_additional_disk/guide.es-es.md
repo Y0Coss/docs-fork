@@ -1,12 +1,8 @@
 ---
 title: "Aumentar el tamaño de un disco adicional"
 excerpt: "Cómo aumentar el tamaño de un volumen adicional y aumentar su partición principal"
-updated: 2023-03-14
+updated: 2025-07-23
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Objetivo
 
@@ -213,4 +209,4 @@ El volumen redimensionado incluye ahora el espacio en disco adicional.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

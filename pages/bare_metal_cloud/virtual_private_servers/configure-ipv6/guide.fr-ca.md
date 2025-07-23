@@ -12,7 +12,6 @@ updated: 2025-07-22
 > Apprenez à configurer des Additional IP  dans un vRack avec nos guides pour [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) et [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
-
 ## Objectif
 
 L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VPS OVHcloud est livré avec une adresse IPv4 ainsi qu'une adresse IPv6. Par défaut, seule l'IPv4 y est configurée. Si vous devez configurer l'IPv6, vous devez le faire manuellement sur votre système.
@@ -67,7 +66,7 @@ L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans 
 
 #### Via les API OVHcloud <a name="viaapi"></a>
 
-Rendez-vous sur le site </links/api> et connectez-vous à ce dernier avec votre identifiant OVHcloud. Utilisez ensuite les deux API ci-dessous.
+Rendez-vous sur le site <https://api.ovh.com/console/> et connectez-vous à ce dernier avec votre identifiant OVHcloud. Utilisez ensuite les deux API ci-dessous.
 
 La première vous permet de récupérer l'adresse IPv6 assignée à votre serveur.
 

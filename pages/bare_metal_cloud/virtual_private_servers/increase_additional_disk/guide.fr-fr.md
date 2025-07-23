@@ -1,7 +1,7 @@
 ---
 title: "Augmenter la taille d’un disque additionnel"
 excerpt: "Découvrez comment augmenter la taille d'un volume additionnel et agrandir sa partition principale"
-updated: 2023-03-14
+updated: 2025-07-23
 ---
 
 ## Objectif
@@ -25,7 +25,7 @@ Les étapes ci-dessous supposent que vous avez configuré un disque additionnel 
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les `Serveurs Privés Virtuels`{.action}.
 
-Dans le cadre **Résumé des options**, cliquez sur le bouton `...`{.action} dans la section `Disques additionnels`. Sélectionnez `Augmenter la taille du disque`{.action}.
+Dans l'onglet `Accueil`{.action}, rendez-vous dans la section intitulée **Votre configuration**. Cliquez sur `...`{.action} à côté de l'option `Disques additionnels` et dans le menu contextuel cliquez sur `Augmenter la taille du disque`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 

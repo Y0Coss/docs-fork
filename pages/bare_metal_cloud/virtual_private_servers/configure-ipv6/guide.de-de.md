@@ -29,7 +29,7 @@ IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVHcloud VPS wi
 - Sie verfügen über einen [OVHcloud VPS](/links/bare-metal/vps).
 - Sie haben administrativen Zugriff (sudo) auf Ihren VPS über SSH oder RDP (Windows).
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) / die [OVHcloud API](https://api.ovh.com/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) / die [OVHcloud API](/links/api).
 
 ## In der praktischen Anwendung
 
@@ -67,7 +67,7 @@ Die Ihrem Server zugewiesene IPv6-Adresse sowie das zugehörige IPv6-Gateway wer
 
 #### Über die OVHcloud API <a name="viaapi"></a>
 
-Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein. 
+Klicken Sie auf der [OVHcloud API Seite](/links/api) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein. 
 
 Verwenden Sie diesen Aufruf, um die zu Ihrem Server gehörige IPv6-Adresse zu erhalten:
 

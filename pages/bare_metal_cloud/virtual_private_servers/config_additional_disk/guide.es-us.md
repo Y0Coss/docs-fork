@@ -1,12 +1,8 @@
 ---
 title: 'Configurar un disco adicional'
 excerpt: 'Cómo añadir y configurar espacio de almacenamiento adicional en un VPS'
-updated: 2023-02-15
+updated: 2025-07-23
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Objetivo
 
@@ -219,19 +215,19 @@ Pulse `cmd` y haga clic en `Aceptar`{.action} para abrir la aplicación de líne
 
 En la línea de comandos, abra DISKPART:
 
-```powershell
+```console
 C:\> diskpart
 ```
 
 Utilice la siguiente serie de comandos DISKPART para configurar el disco en línea:
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy: Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -245,19 +241,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk
 ```
 
-```powershell
+```console
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -269,7 +265,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -297,7 +293,7 @@ En la última ventana, haga clic en `Finalizar`{.action} para dar formato al dis
 
 ### Dar de baja la opción de disco adicional
 
-En la pestaña `Inicio`{.action}, desplace la pantalla hasta el cuadro **Resumen de las opciones**. Haga clic en `...`{.action} delante de la opción "Discos adicionales". Haga clic en `Dar de baja`{.action} en el menú contextual.
+En la pestaña `Inicio`{.action}, acceda a la sección **Su configuración**. Haga clic en `...`{.action} junto a la opción `Discos adicionales` y en el menú contextual haga clic en `Dar de baja`{.action}.
 
 ![baja del disco adicional](images/disk_vps02.png){.thumbnail}
 

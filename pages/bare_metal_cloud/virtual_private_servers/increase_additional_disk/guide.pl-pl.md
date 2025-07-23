@@ -1,12 +1,8 @@
 ---
 title: "Zwiększ rozmiar dodatkowego dysku"
 excerpt: "Dowiedz się, jak zwiększyć rozmiar dodatkowego wolumenu i powiększyć jego partycję główną"
-updated: 2023-03-14
+updated: 2025-07-23
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
 
 ## Wprowadzenie
 
@@ -29,7 +25,7 @@ Poniższe etapy zakładają, że skonfigurowałeś dodatkowy dysk zgodnie z inst
 
 Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer spośród `Prywatne serwery wirtualne`{.action}.
 
-W sekcji **Podsumowanie opcji** kliknij przycisk `...`{.action} w sekcji `Dodatkowe dyski`. Wybierz `Zwiększ rozmiar dysku`{.action}.
+W zakładce `Strona główna`{.action} przejdź do sekcji **Twoja konfiguracja**. Kliknij `...`{.action} obok opcji `Dodatkowe dyski` i w menu kontekstowym kliknij na `Zwiększ rozmiar dysku`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 
@@ -213,4 +209,4 @@ Zmieniony rozmiar przestrzeni dyskowej zawiera teraz dodatkową przestrzeń dysk
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

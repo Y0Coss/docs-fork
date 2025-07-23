@@ -1,6 +1,6 @@
 ---
-title: 'Configuring IPv6 on a VPS'
-excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
+title: "How to configure IPv6 on a VPS"
+excerpt: "Find out how to configure IPv6 on your OVHcloud VPS"
 updated: 2025-07-22
 ---
 
@@ -53,8 +53,8 @@ Please take note of the following terminology that will be used in code examples
 
 The first step is to identify the IPv6 address and the IPv6 gateway assigned to your server. There are two ways of doing this:
 
-- [retrieving the network information via the OVHcloud Control Panel](#viacontrolpanel)
-- [retrieving the network information via the OVHcloud API](#viaapi) 
+- [Retrieving the network information via the OVHcloud Control Panel](#viacontrolpanel)
+- [Retrieving the network information via the OVHcloud API](#viaapi) 
 
 #### Via the OVHcloud Control Panel <a name="viacontrolpanel"></a>
 
@@ -105,8 +105,8 @@ There are several ways to apply the IPv6 configuration. Use whichever method bes
 
 Connect to your server via SSH and enter the following commands. Take care to tailor these with:
 
-- the network information, retrieved in the previous step (*YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*)
-- the network interface (if your server is not using **eth0**)
+- The network information, retrieved in the previous step (*YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*).
+- The network interface (if your server is not using **eth0**).
 
 ```bash
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
@@ -127,7 +127,7 @@ There are two ways to configure your network depending on the operating system i
 
 - **For Debian 12, Ubuntu 20.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
 
-In some cases, the appropriate method may not be the one specified above. To make sure, browse your system to check which one is active. Visit <https://netplan.io/> for more information, if necessary.<br>
+In some cases, the appropriate method may not be the one specified above. To make sure, browse your system to check which one is active. Visit <https://netplan.io/> for more information, if necessary.  
 Moreover, keep in mind that the exact file names may vary.
 
 ##### Configuration of *interfaces* files <a name="interfaces"></a>
@@ -420,7 +420,7 @@ ping6 proof.ovh.net
 
 - **For a Windows-based system**, use the following command:
 
-```powershell
+```console
 ipconfig
 
 Windows IP Configuration

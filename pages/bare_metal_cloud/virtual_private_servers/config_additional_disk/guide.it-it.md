@@ -1,12 +1,8 @@
 ---
 title: 'Configura un disco aggiuntivo'
 excerpt: Come aggiungere e configurare spazio di storage aggiuntivo su un VPS
-updated: 2023-02-15
+updated: 2025-07-23
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -219,19 +215,19 @@ Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga d
 
 Nel prompt dei comandi, apri DISKPART:
 
-```powershell
+```console
 C:\> diskpart
 ```
 
 Per configurare il disco online, utilizza questo set di comandi DISKpart:
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy: Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -245,19 +241,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -269,7 +265,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -297,7 +293,7 @@ Nell'ultima finestra, clicca su `Terminare`{.action} per formattare il disco. Do
 
 ### Disattiva l'opzione di disco aggiuntivo
 
-Nella scheda `Home`{.action}, sposta lo schermo fino all'area intitolata **Sintesi delle opzioni**. Clicca sui tre puntini `...`{.action} in corrispondenza dell'opzione "Dischi aggiuntivi". Clicca su `Disattiva`{.action} il menu contestuale.
+Nella scheda `Home`{.action}, accedi alla sezione **La tua configurazione**. Clicca su `...`{.action} accanto all'opzione `Dischi aggiuntivi` e nel menu di scelta rapida clicca su `Disattiva`{.action}.
 
 ![disattivazione disco aggiuntivo](images/disk_vps02.png){.thumbnail}
 

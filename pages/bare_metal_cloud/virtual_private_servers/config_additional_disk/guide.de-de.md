@@ -1,12 +1,8 @@
 ---
 title: Zusätzliche Disk konfigurieren
 excerpt: Erfahren Sie hier, wie Sie auf einem VPS externen Speicherplatz hinzufügen und konfigurieren
-updated: 2023-02-15
+updated: 2025-07-23
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -219,19 +215,19 @@ Geben Sie `cmd` ein und klicken Sie auf `OK`{.action}, um die Kommandozeilenanwe
 
 In der Eingabeaufforderung starten Sie DISKPART:
 
-```powershell
+```console
 C:\> diskpart
 ```
 
 Verwenden Sie folgende Befehle in DISKPART, um die Disk als "Online" zu konfigurieren:
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -245,19 +241,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -269,7 +265,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -297,10 +293,10 @@ Klicken Sie im letzten Fenster auf `Beenden`{.action}, um die Disk zu formatiere
 
 ### Zusätzliche Disk kündigen
 
-Im Tab `Start`{.action} scrollen Sie nach unten bis zum Bereich **Zusammenfassung der Optionen**. Klicken Sie `...`{.action} neben "Zusätzliche Festplatten". Klicken Sie Kontextmenü auf `Kündigen`{.action}.
+Im Tab `Start`{.action} finden Sie im Bereich **Ihre Konfiguration** den Abschnitt mit der Bezeichnung `Zusätzliche Festplatten`. Klicken Sie auf `...`{.action} und im Kontextmenü auf `Kündigen`{.action}.
 
-![Kündigung der zusätzlichen Festplatte](images/disk_vps02.png){.thumbnail}
+![Kündigung](images/disk_vps02.png){.thumbnail}
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

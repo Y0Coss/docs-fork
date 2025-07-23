@@ -1,12 +1,8 @@
 ---
 title: 'Konfiguracja dodatkowego dysku'
 excerpt: "Dowiedz się, jak dodać i skonfigurować dodatkową przestrzeń dyskową na serwerze VPS"
-updated: 2023-02-15
+updated: 2025-07-23
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
 
 ## Wprowadzenie
 
@@ -219,19 +215,19 @@ Wpisz `cmd` i kliknij `OK`{.action}, aby otworzyć aplikację wiersza poleceń.
 
 W wierszu zamówień otwórz DISKPART:
 
-```powershell
+```console
 C:\> diskpart
 ```
 
 Aby skonfigurować dysk online, użyj następującej serii poleceń DISKPART:
 
-```powershell
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-```powershell
+```console
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -245,19 +241,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```powershell
+```console
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```powershell
+```console
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -269,7 +265,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```powershell
+```console
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -297,7 +293,7 @@ W ostatnim oknie kliknij `Zakończ`{.action}, aby sformatować dysk. Będzie on 
 
 ### Zrezygnuj z opcji dodatkowego dysku
 
-W zakładce `Strona główna`{.action} przewiń ekran do strefy zatytułowanej **Podsumowanie opcji**. Kliknij `...`{.action} naprzeciwko opcji "Dodatkowe dyski". Kliknij `Zrezygnuj`{.action} z menu PPM.
+W zakładce `Strona główna`{.action} przejdź do sekcji **Twoja konfiguracja**. Kliknij `...`{.action} obok opcji `Dodatkowe dyski` i w menu kontekstowym kliknij na `Zrezygnuj`{.action}.
 
 ![rozwiązanie dodatkowego dysku](images/disk_vps02.png){.thumbnail}
 
