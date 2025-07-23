@@ -161,12 +161,6 @@ Um die für Richtlinien verfügbaren Identitäten zu verwalten, gehen Sie zum Me
 
 Details zur Benutzerverwaltung finden Sie in [unserer Dokumentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
-### Verwaltung von Identitäten
-
-Die für die Richtlinien verfügbaren Identitäten werden über den Tab `Identitäten`{.action} verwaltet.
-
-Details zur Benutzerverwaltung finden Sie in [unserer Dokumentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
-
 ### Verwaltung von Ressourcengruppen
 
 Richtlinien können auf Ressourcengruppen abzielen (anstatt direkt auf Ressourcen). Diese Ressourcengruppen können Ressourcen aus verschiedenen Produktbereichen zusammenfassen, etwa zum Konfigurieren einer Testumgebung.
