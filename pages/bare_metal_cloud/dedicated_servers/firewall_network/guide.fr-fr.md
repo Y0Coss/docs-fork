@@ -156,10 +156,9 @@ Par exemple, un paquet pour le port TCP 80 sera intercepté par la règle 2 et l
 
 ### Mitigation des attaques - Activité du centre de nettoyage (Scrubbing Center)
 
-Notre infrastructure anti-DDoS (VAC) fonctionne automatiquement. Le processus de mitigation est effectué via un centre de nettoyage (*Scrubbing Center*) automatisé. C’est là que notre technologie avancée examine en profondeur les paquets et tente de supprimer le trafic DDoS tout en permettant au trafic légitime de passer.
+Notre infrastructure anti-DDoS (VAC) fonctionne automatiquement. Le processus de mitigation s'effectue via un centre de nettoyage (**Scrubbing Center**) automatisé. C’est là que notre technologie avancée examine en profondeur les paquets et tente de supprimer le trafic DDoS tout en permettant au trafic légitime de passer.
 
-Toutes les adresses IP OVHcloud sont en mitigation automatique. Si un trafic malveillant est détecté, le Scrubbing Center est actif. Cet état est alors indiqué par un statut « Forcé » pour une adresse IP donnée. Le Edge Network Firewall est également actif. La situation revient à la normale lorsque l’attaque est mitigée et qu’aucune autre activité suspecte n’est observée.
-
+Toutes les adresses IP OVHcloud sont en mitigation automatique. Si un trafic malveillant est détecté, le **Scrubbing Center** s'active. Cet état est alors représenté par un statut « Forcé » pour une adresse IP donnée. Le Edge Network Firewall est également actif. La situation revient à la normale lorsque l’attaque est mitigée et qu’aucune autre activité suspecte n’est observée.
 
 > [!success]
 > **Astuces**

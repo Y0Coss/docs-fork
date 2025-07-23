@@ -164,7 +164,6 @@ Our Anti-DDoS infrastructure (VAC) operates automatically. The mitigation proces
 
 All OVHcloud IPs are under automatic mitigation. In case any malicious traffic is detected, the scrubbing centre activates. This state is indicated by the "Forced" status for a given IP address. At this time the Edge Network Firewall is also active. The situation comes back to normal when the attack is mitigated and no more suspicious activity is observed.
 
-
 > [!success]
 > **Tips**
 >
@@ -177,11 +176,9 @@ All OVHcloud IPs are under automatic mitigation. In case any malicious traffic i
 > Please note that our Anti-DDoS infrastructure cannot be disabled on a service. All OVHcloud products are delivered within the scope of protection and this cannot be changed.
 >
 
-
 ## Network Security Dashboard
 
 For detailed insight into detected attacks and the results of scrubbing centre activities, we encourage you to explore our [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard).
-
 
 ## Conclusion
 

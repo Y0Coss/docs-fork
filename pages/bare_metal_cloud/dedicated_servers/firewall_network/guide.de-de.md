@@ -1,7 +1,7 @@
 ---
 title: Aktivieren und Konfigurieren der Edge Network Firewall
 excerpt: Erfahren Sie hier, wie Sie die Edge Network Firewall konfigurieren
-updated: 2025-06-04
+updated: 2025-09-08
 ---
 
 ## Ziel
@@ -9,11 +9,6 @@ updated: 2025-06-04
 Zum Schutz von Diensten, die über öffentliche IP-Adressen zugänglich sind, bietet OVHcloud eine konfigurierbare Firewall an, die in unsere **DDoS-Schutz-Infrastruktur** integriert ist: Edge Network Firewall. Mithilfe dieser Option kann die Anfälligkeit der Dienste für Angriffe von außerhalb des OVHcloud Netzwerks begrenzt werden.
 
 **Diese Anleitung erklärt, wie Sie die Edge Network Firewall für Ihre Dienste konfigurieren.**
-
-> [!warning]
->
-> **Achtung**: Die Funktion "Scrubbing-Center: permanenter Modus" erreicht End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
->
 
 > [!primary]
 >
@@ -164,30 +159,9 @@ Beispiel: Ein Paket für den TCP-Port 80 wird von Regel 2 abgefangen und die fol
 
 ### Schutz vor Angriffen - Aktivität im Scrubbing Center
 
-Unsere Anti-DDoS-Infrastruktur (VAC) verfügt über zwei Betriebsmodusse: **automatisch** und **permanent**. Der Schutz erfolgt über das automatische Scrubbing Center. In diesem Bereich untersucht unsere Technik die Datenpakete und versucht, den DDoS-Datenverkehr zu entfernen, während der legitime Datenverkehr durchgelassen wird.
+Unsere Infrastruktur für DDoS-Schutz (VAC) läuft automatisch. Der Schutz erfolgt über das automatische Reinigungszentrum. In diesem Bereich untersucht unsere fortschrittliche Technologie die Datenpakete und versucht, den DDoS-Datenverkehr zu entfernen, während der legitime Datenverkehr durchgelassen wird.
 
-- **Automatische Abwehr** ist die Standardeinstellung: Alle IPs von OVHcloud werden automatisch protektiert. In der Regel ist dies die beste Wahl für Ihre Dienste. Wird illegitimer Traffic entdeckt, wird das Scrubbing Center aktiviert. Dies wird durch den Status „Erzwungen“ für eine bestimmte IP-Adresse angezeigt. Zu diesem Zeitpunkt ist auch die Edge Network Firewall aktiv. Die Situation normalisiert sich wieder, wenn der Angriff abgemildert wurde und keine verdächtigen Aktivitäten mehr beobachtet werden.
-
-- **Der permanente Schutz** kann über das OVHcloud Kundencenter aktiviert und deaktiviert werden. Bei permanentem Schutz wird die erste Filterstufe permanent angewendet, damit der gesamte Traffic das Schutzsystem durchläuft, bevor er den Server erreicht. Es wird davon abgeraten, diese Option über längere Zeiträume zu aktivieren, es sei denn, Sie bemerken starke Latenzschwankungen, da das Scrubbing Center den Traffic zu häufig umleitet.
-
-Beachten Sie, dass im Vergleich zum automatischen Modus **keine** Erhöhung des Schutzniveaus erreicht wird, wenn dieser Modus aktiviert ist.
-
-So aktivieren Sie die Funktion:
-
-- Klicken Sie auf das Menü `Bare Metal Cloud`{.action}.
-- Gehen Sie zu `Netzwerk`{.action} in der linken Seitenleiste.
-- Gehen Sie zum Abschnitt `IP`{.action}.
-
-| ![menu-ipv4](images/mitigation_menu.png) | 
-|:--:| 
-| Als Nächstes klicken Sie auf die Schaltfläche `...`{.action} rechts von der betreffenden IPv4. |
-
-
-| ![mitigation-option](images/mitigation_menu_step_2.png) |
-|:--:| 
-| Wählen Sie `Mitigation: Permanent mode`{.action}. |
-
-
+Alle IPs von OVHcloud werden automatisch gemildert. Wird bösartiger Traffic entdeckt, wird das Scrubbing Center aktiviert. Dieser Status wird durch den Status „Erzwungen“ für eine bestimmte IP-Adresse angezeigt. Zu diesem Zeitpunkt ist auch die Edge Network Firewall aktiv. Die Situation normalisiert sich wieder, wenn der Angriff abgemildert wird und keine verdächtigen Aktivitäten mehr beobachtet werden.
 
 > [!success]
 > **Hinweis**
@@ -201,11 +175,9 @@ So aktivieren Sie die Funktion:
 > Beachten Sie, dass unsere DDoS-Schutz-Infrastruktur für einen Dienst nicht deaktiviert werden kann. Alle OVHcloud Produkte werden im Rahmen des Schutzes geliefert und können nicht ausgenommen werden.
 >
 
-
 ## Network Security Dashboard
 
 Detaillierte Einblicke in entdeckte Angriffe und die Ergebnisse der Aktivitäten des Scrubbing Centers erhalten Sie in unserem [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard).
-
 
 ## Fazit
 
@@ -215,4 +187,4 @@ Nachdem Sie dieses Tutorial gelesen haben, sollten Sie in der Lage sein, die Edg
 
 [Game Server mit der Application Firewall schützen](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.
