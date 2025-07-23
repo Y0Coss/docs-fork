@@ -137,11 +137,6 @@ Les clés de chiffrement et certificats d’accès de ce KMS seront stockés dan
 
 Une fois votre choix fait, cliquez sur le bouton `Commander`{.action}.
 
-> [!primary]
-> 
-> Si vous n'arrivez pas à completer la commande, relancez-la manuellement en cliquant sur [ce lien](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX).
->
-
 Enfin, cliquez sur `Terminer`{.action} pour finaliser la commande.
 
 ![Manager KMS Menu OKMS Order Finish](images/okms_order_finish-optimized.png){.thumbnail}

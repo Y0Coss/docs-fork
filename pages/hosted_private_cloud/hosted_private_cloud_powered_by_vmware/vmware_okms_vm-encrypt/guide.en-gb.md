@@ -137,11 +137,6 @@ The encryption keys and access certificates for this KMS will be stored in the s
 
 Once you have made your choice, click on the `Order`{.action} button.
 
-> [!primary]
->
-> If you were unable to complete the order, launch it manually by clicking on [this link](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX).
->
-
 Finally, click `Finish`{.action} to finalize the order.
 
 ![Manager KMS Menu OKMS Order Finish](images/okms_order_finish-optimized.png){.thumbnail}
