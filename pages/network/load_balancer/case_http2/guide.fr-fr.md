@@ -1,12 +1,31 @@
 ---
 title: 'Configurer HTTP/2 sur un service OVHcloud Load Balancer'
 excerpt: 'Configuration de HTTP/2 sur un service OVHcloud Load Balancer'
-updated: 2025-07-04
+updated: 2025-07-23
 ---
+
+> [!primary]
+> **Note sur le support natif du protocole HTTP/2**
+>
+> Depuis juin 2025, les frontend HTTP et TLS des services Load Balancer OVHcloud supportent nativement le protocole HTTP/2.
+>
+> Le guide suivant reste cependant applicable pour les frontend TCP, qui peuvent être désirables pour des applications nécessitant une faible latence et de hautes performances.
+>
+> HTTP/2 améliore les performances de vos applications web en permettant: <br>
+> - *Des temps de chargement plus rapides* grâce au multiplexage des requêtes, qui permet d'envoyer plusieurs requêtes en parallèle sur une même connexion;
+> - *Une réduction de la latence* avec une meilleure gestion des connexions;
+> - *Une optimisation des ressources réseau* grâce à la compression des en-têtes.
+>
+> Afin d'activer le protocole HTTP/2 sur des frontends HTTP et TLS existants, vous devez effectuer l'appel de rafraîchissement suivant via l'API, où **serviceName** est le nom interne de votre Load Balancer,
+
+> [!api]
+>
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
+>
 
 ## Objectif
 
-L'OVHcloud Load Balancer ne supporte pas le protocole HTTP/2. Il existe cependant un moyen de contourner cette restriction, en utilisant conjointement le mode TCP et l'extension ALPN du protocole TLS.
+Les frontends TCP de l'OVHcloud Load Balancer ne supportent pas le protocole HTTP/2. Il existe cependant un moyen de contourner cette restriction, en utilisant conjointement le mode TCP et l'extension ALPN du protocole TLS.
 
 ALPN (Application-Layer Protocol Negotiation) est une extension TLS qui permet à la couche applicative de négocier quel protocole sera utilisé (h2 dans notre cas).
 
