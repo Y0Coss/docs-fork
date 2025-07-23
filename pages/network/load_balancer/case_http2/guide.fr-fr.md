@@ -7,9 +7,9 @@ updated: 2025-07-23
 > [!primary]
 > **Note sur le support natif du protocole HTTP/2**
 >
-> Depuis juin 2025, les frontend HTTP et TLS des services Load Balancer OVHcloud supportent nativement le protocole HTTP/2.
+> Depuis juin 2025, les frontends HTTP et TLS des services Load Balancer OVHcloud supportent nativement le protocole HTTP/2.
 >
-> Le guide suivant reste cependant applicable pour les frontend TCP, qui peuvent être désirables pour des applications nécessitant une faible latence et de hautes performances.
+> Le guide suivant reste cependant applicable pour les frontends TCP, qui peuvent être désirables pour des applications nécessitant une faible latence et de hautes performances.
 >
 > HTTP/2 améliore les performances de vos applications web en permettant: <br>
 > - *Des temps de chargement plus rapides* grâce au multiplexage des requêtes, qui permet d'envoyer plusieurs requêtes en parallèle sur une même connexion;
@@ -30,13 +30,6 @@ Les frontends TCP de l'OVHcloud Load Balancer ne supportent pas le protocole HTT
 ALPN (Application-Layer Protocol Negotiation) est une extension TLS qui permet à la couche applicative de négocier quel protocole sera utilisé (h2 dans notre cas).
 
 **Ce guide a pour but de vous aider à créer un service HTTP/2 avec l'offre Load Balancer OVHcloud. Nous allons ici configurer ce service pour répartir la charge sur plusieurs serveurs répondant en HTTP/2.**
-
-> [!primary]
->
-> Depuis juin 2025, les frontend HTTP et TLS des services Load Balancer OVHcloud supportent nativement le protocole HTTP/2.
->
-> Le guide suivant reste cependant applicable pour les frontend TCP.
->
 
 ## Prérequis
 
