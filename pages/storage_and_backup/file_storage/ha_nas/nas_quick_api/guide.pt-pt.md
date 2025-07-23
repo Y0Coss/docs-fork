@@ -16,7 +16,7 @@ O serviço NAS-HA da OVHcloud permite-lhe gerir ficheiros acessíveis a partir d
 
 ## Requisitos
 
-- Um serviço [NAS-HA OVHcloud](https://www.ovh.pt/nas/)
+- Um serviço [NAS-HA OVHcloud](/links/storage/nas-ha)
 - Consulte o nosso guia dos [primeiros passos com a API OVHcloud](/pages/manage_and_operate/api/first-steps) para se familiarizar com a APIv6 OVHcloud
 
 ## Instruções

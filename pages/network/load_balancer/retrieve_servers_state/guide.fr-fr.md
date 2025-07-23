@@ -20,7 +20,7 @@ Ce tutoriel explique comment connaître l'état de santé de chaque serveur pour
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté à l'[API OVHcloud](/links/api){.external}.
 - Posséder une ferme configurée

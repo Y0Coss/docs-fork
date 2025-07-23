@@ -33,7 +33,7 @@ Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
 
 ### Comprendere l'origine della pagina "Index of"
 
-Il tuo dominio è stato dichiarato per accedere a una directory di destinazione (una "`Cartella root`") sul server [FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting web condiviso. accedendo alla scheda [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo hosting Web presente nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=i).
+Il tuo dominio è stato dichiarato per accedere a una directory di destinazione (una "`Cartella root`") sul server [FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting web condiviso. accedendo alla scheda [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) del tuo hosting Web presente nel tuo [Spazio Cliente OVHcloud](/links/manager).
 
 La pagina **Index of** indica che la directory di destinazione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*" del tuo sito Web. Il nome del file è normalizzato.
 

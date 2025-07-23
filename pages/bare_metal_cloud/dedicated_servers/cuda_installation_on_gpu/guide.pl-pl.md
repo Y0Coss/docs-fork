@@ -176,6 +176,4 @@ Wed Nov 1 09:14:38 2017
 
 ## Sprawdź również
 
-[Dowiedz się więcej na temat serwerów z układami GPU](https://www.ovh.pl/serwery_dedykowane/gpu/){.external}
-
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

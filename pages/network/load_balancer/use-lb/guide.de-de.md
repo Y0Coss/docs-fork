@@ -11,7 +11,7 @@ Ziel dieser Anleitung ist es, Sie bei der erstmaligen Verwendung des Loadbalance
 ## Voraussetzungen
 
 - Zugang zu Ihrem OVHcloud Kundencenter
-- Bestellung des [Loadbalancers](https://www.ovh.com/fr/solutions/load-balancer)
+- Bestellung des [Loadbalancers](/links/network/load-balancer)
 
 ## Beschreibung
 

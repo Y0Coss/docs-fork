@@ -10,7 +10,7 @@ Le service OVHcloud Load Balancer agit par défaut comme un mandataire ou « Pro
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté à l'[API OVHcloud](/links/api){.external}.
 

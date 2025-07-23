@@ -146,7 +146,7 @@ Aby usprawnić dostęp do witryny internetowej i pobieranie oraz uzyskać optyma
 
 Efektem będzie skrócenie czasów odpowiedzi dla wszystkich odwiedzających na całym świecie, ponieważ elementy statyczne witryny będą pobierane bezpośrednio z miejsca, które znajduje się najbliżej nich.
 
-Poznaj [nasze rozwiązanie CDN](https://www.ovh.pl/cdn/){.external}.
+Poznaj [nasze rozwiązanie CDN](/links/network/cdn-infrastructure){.external}.
 
 ### Krok 6: sprawdzenie używanego System zarządzania treścią (CMS) i wtyczek
 

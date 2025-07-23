@@ -100,7 +100,7 @@ To cancel your [Office 365 CSP2](/links/web/ms365) solution, follow the instruct
 
 #### SMS <a name="sms"></a>
 
-There is no cancellation procedure for [SMS offers](https://www.ovh.co.uk/sms/). An SMS account does not generate a monthly subscription or billing. SMS credits have an unlimited lifetime.
+There is no cancellation procedure for [SMS offers](/links/telecom/sms). An SMS account does not generate a monthly subscription or billing. SMS credits have an unlimited lifetime.
 
 If you would like to delete an SMS account, please create a support request via the OVHcloud Control Panel.
 

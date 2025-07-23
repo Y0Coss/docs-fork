@@ -23,7 +23,7 @@ For more information on the OVH Load Balancer solution, you can read our [Introd
 
 ## Requirements
 
-- a correctly configured [OVH Load Balancer](https://www.ovh.co.uk/solutions/load-balancer/){.external}
+- a correctly configured [OVH Load Balancer](/links/network/load-balancer){.external}
 - an [Additional IP](/links/bare-metal/ip){.external}
 
 > [!primary]

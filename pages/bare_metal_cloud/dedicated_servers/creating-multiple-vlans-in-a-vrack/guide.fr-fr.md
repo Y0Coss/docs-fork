@@ -13,7 +13,7 @@ La [configuration standard du vRack](/pages/bare_metal_cloud/dedicated_servers/v
 ## Prérequis
 
 - Posséder un ou plusieurs [serveurs dédiés](/links/bare-metal/bare-metal){.external} compatibles avec le vRack.
-- Avoir activé un service [vRack](https://www.ovh.com/fr/solutions/vrack){.external}.
+- Avoir activé un service [vRack](/links/network/vrack){.external}.
 - Avoir accès à votre plage d'adresses IP privées choisie.
 - Être connecté en SSH avec l'identifiant root (Linux).
 - Être connecté avec le compte administrateur (Windows).

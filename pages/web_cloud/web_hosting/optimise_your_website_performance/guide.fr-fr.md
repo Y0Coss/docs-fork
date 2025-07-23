@@ -148,7 +148,7 @@ Pour améliorer l’accès au site web, les téléchargements et profiter d’un
 
 Ainsi, vous améliorez le temps de réponse pour les visiteurs dans le monde entier puisque les parties statiques de votre site web seront téléchargées directement par votre visiteur au point de présence le plus proche de leur emplacement.
 
-Découvrez notre [solution CDN](https://www.ovh.com/fr/cdn/){.external}. 
+Découvrez notre [solution CDN](/links/network/cdn-infrastructure){.external}. 
 
 ### Étape 6 : Contrôle du système de gestion du contenu (CMS) et des plugins utilisés
 

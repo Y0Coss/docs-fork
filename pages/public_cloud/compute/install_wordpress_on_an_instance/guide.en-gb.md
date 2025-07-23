@@ -229,7 +229,7 @@ Once this is confirmed, you will be able to log in to your website's administati
 >
 > In order to establish secure connections (`https`), the web server has to be secured via a Certificate Authority such as "[Let’s Encrypt](https://letsencrypt.org/)" which offers free certificates. You will need to install a client tool (such as "Certbot") and configure Apache. Without this step, your website can only accept `http` requests. 
 > 
-> As an alternative, OVHcloud offers the solution [SSL Gateway](https://www.ovh.co.uk/ssl-gateway/). Refer to the [guide pages](/pages/web_cloud/ssl_gateway/order-ssl-gateway) as well for further information.
+> As an alternative, OVHcloud offers the solution [SSL Gateway](/links/web/ssl-gateway). Refer to the [guide pages](/pages/web_cloud/ssl_gateway/order-ssl-gateway) as well for further information.
 >
 
 ### Step 6 (optional): Enabling secure connections with Let’s Encrypt
