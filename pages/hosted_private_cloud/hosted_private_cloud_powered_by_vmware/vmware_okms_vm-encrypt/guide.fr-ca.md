@@ -395,7 +395,7 @@ Si vous n'avez pas déjà de politique IAM crée, nous allons en créer une afin
 
 Il faut vous connecter à votre [espace client OVHcloud](/links/manager).
 
-Rendez-vous dans IAM en cliquant en haut à droite sur `Mon compte > mon utilisateur > IAM > Créer une politique`{.action}.
+Rendez-vous dans IAM dans la section `Identité, Sécurité & Opérations`{.action} et `Politiques`{.action}.
 
 ![Manager IAM Policy](images/manager_iam-resize-optim.png){.thumbnail}
 

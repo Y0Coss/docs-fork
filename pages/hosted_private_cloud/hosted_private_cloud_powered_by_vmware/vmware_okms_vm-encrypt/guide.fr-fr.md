@@ -395,7 +395,7 @@ Si vous n'avez pas déjà de politique IAM crée, nous allons en créer une afin
 
 Il faut vous connecter à votre [espace client OVHcloud](/links/manager).
 
-Rendez-vous dans IAM en cliquant en haut à droite sur `Mon compte > mon utilisateur > IAM > Créer une politique`{.action}.
+Rendez-vous dans IAM dans la section `Identité, Sécurité & Opérations`{.action} et `Politiques`{.action}.
 
 ![Manager IAM Policy](images/manager_iam-resize-optim.png){.thumbnail}
 
@@ -407,7 +407,7 @@ Dans `Identités`{.action}, ajoutez votre utilisateur local OVHcloud. Celui avec
 
 Vous devez ensuite ajouter les actions afin de pouvoir générer les clés pour votre politique de chiffrement vSphere.
 
-Cliquez dans le champ « Type de produits », puis ajoutez `iam_ressource_type_okms`{.action}.
+Cliquez dans le champ « Type de produits », puis ajoutez `Key Management System (KMS)`{.action}.
 
 Vous pouvez choisir d'ajouter toutes les actions ou filtrer plus finement selon vos besoins utilisateurs.
 

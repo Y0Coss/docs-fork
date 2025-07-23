@@ -385,7 +385,7 @@ If you do not already have an IAM policy created, we will create one to list the
 
 You will need to log in to your [OVHcloud control panel](/links/manager).
 
-Go to IAM by clicking on `My account > my user > IAM > Create a policy`{.action} in the top right-hand corner.
+Go to IAM on section `Identity, Security & Operations`{.action} and `Policies`{.action}.
 
 ![Manager IAM Policy](images/manager_iam-resize-optim.png){.thumbnail}
 
@@ -399,7 +399,7 @@ In `Identities`{.action}, add your local OVHcloud user (the one with which you g
 
 You then need to add the actions in order to generate the keys for your vSphere encryption policy.
 
-Click in the Product type field, then add `iam_ressources_type_okms`{.action}
+Click in the Product type field, then add `Key Management System (KMS)`{.action}
 
 You can choose to add all actions or filter more finely according to your user needs.
 
