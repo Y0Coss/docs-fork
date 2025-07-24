@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec un VPS
 excerpt: "Apprenez à gérer un VPS dans votre espace client et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
-updated: 2024-11-22
+updated: 2025-07-31
 ---
 
 ## Objectif
@@ -111,7 +111,7 @@ Cliquez sur les onglets ci-dessous pour afficher les détails de cette section.
 
 #### Sauvegarde
 
-Ces options se réfèrent à des services VPS supplémentaires qui peuvent être commandés dans l'espace client.
+Ces options font référence à des services VPS supplémentaires pour les sauvegardes et la restauration de votre système.
 
 > [!tabs]
 > Snapshot
@@ -120,11 +120,13 @@ Ces options se réfèrent à des services VPS supplémentaires qui peuvent être
 >>
 > Backup automatisé
 >> 
->> L'option `Backup automatisé` permet de programmer des sauvegardes régulières de votre VPS. Contrairement aux snapshots manuels, cette fonctionnalité conserve plusieurs points de restauration dans le temps, vous offrant ainsi une protection continue et automatique de vos données (hors disques additionnels).
+>> Une sauvegarde quotidienne du système est créée automatiquement (hors disques additionnels) et conservée 24h/24. En passant à l'option « Sauvegarde automatique Premium », vous disposez des 7 dernières sauvegardes quotidiennes de votre VPS à monter et restaurer.  
+Par rapport aux snapshots manuels, cette fonctionnalité augmente la sécurité des données en créant plusieurs points de restauration à intervalles réguliers.
+>>
 
 Retrouvez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit VPS](/links/bare-metal/vps-options) et dans nos [guides respectifs](/products/bare-metal-cloud-virtual-private-servers-backups).
 
-#### Abonnement
+#### Mon offre
 
 Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la [documentation correspondante](/products/account-and-service-management-managing-billing-payments-and-services).
 
