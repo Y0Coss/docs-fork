@@ -1,7 +1,7 @@
 ---
 title: "Configurer l'IPv6 sur un serveur VPS"
 excerpt: "Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud"
-updated: 2025-07-22
+updated: 2025-07-24
 ---
 
 > [!primary]
@@ -12,7 +12,6 @@ updated: 2025-07-22
 > Apprenez à configurer des Additional IP  dans un vRack avec nos guides pour [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) et [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
-
 ## Objectif
 
 L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VPS OVHcloud est livré avec une adresse IPv4 ainsi qu'une adresse IPv6. Par défaut, seule l'IPv4 y est configurée. Si vous devez configurer l'IPv6, vous devez le faire manuellement sur votre système.
@@ -21,15 +20,15 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 
 > [!warning]
 >
-> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section [Aller plus loin](#go-further) de ce guide.
 > 
 
 ## Prérequis
 
-- Disposer d'un [serveur VPS OVHcloud](/links/bare-metal/vps){.external}.
+- Disposer d'un [serveur VPS OVHcloud](/links/bare-metal/vps).
 - Être connecté à votre VPS en SSH (accès root) ou via un bureau à distance (Windows).
 - Disposer de connaissances basiques en réseau.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external} ou à l'[API OVHcloud](/links/api).
+- Être connecté à l'[espace client OVHcloud](/links/manager) ou à l'[API OVHcloud](/links/api).
 
 ## En pratique
 
@@ -67,16 +66,21 @@ L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans 
 
 #### Via les API OVHcloud <a name="viaapi"></a>
 
-Rendez-vous sur le site </links/api> et connectez-vous à ce dernier avec votre identifiant OVHcloud. Utilisez ensuite les deux API ci-dessous.
+Rendez-vous sur la page des [API OVHcloud](/links/console) :
 
-La première vous permet de récupérer l'adresse IPv6 assignée à votre serveur.
+- Cliquez sur `Authentication`{.action} en haut à gauche.
+- Cliquez ensuite `Login with OVHcloud SSO`{.action}.
+- Saisissez vos identifiants OVHcloud.
+- Cliquez sur le bouton `Authorize`{.action} pour autoriser les appels aux API depuis ce site.
+
+La première fonction vous permet de récupérer l'adresse IPv6 assignée à votre serveur.
 
 > [!api]
 >
 > @api {v1} /vps GET /vps/{serviceName}/ips
 >
 
-La seconde vous permet de récupérer la gateway IPv6 assignée à votre serveur.
+La seconde fonction vous permet de récupérer la gateway IPv6 assignée à votre serveur.
 
 > [!api]
 >
