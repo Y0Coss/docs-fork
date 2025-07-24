@@ -47,14 +47,14 @@ Lesen Sie die [Anleitung zu Horizon](/pages/public_cloud/public_cloud_cross_func
 
 ### OVHcloud APIv6
 
-Jede Aktion, die Sie im OVHcloud Kundencenter durchführen, erfolgt auf der Grundlage der [OVHcloud APIv6](https://api.ovh.com/).
+Jede Aktion, die Sie im OVHcloud Kundencenter durchführen, erfolgt auf der Grundlage der [OVHcloud APIv6](/links/api).
 Sie können mit der API darüber hinaus noch mehr Funktionen nutzen als über Ihr Kundencenter verfügbar sind.
 
 Das Interface ist weniger visuell als das OVHcloud Kundencenter, ermöglicht Ihnen aber die Durchführung zahlreicher Aktionen. So können Sie Ihre VLANs verwalten und personalisieren, Interfaces zu Ihren Instanzen hinzufügen oder hochpersonalisierte Server erstellen.
 
 Vor der Verwendung eines bestimmten API-Aufrufs müssen Sie möglicherweise mehrere Parameter abfragen.
 
-Sie können einfach von unserer Webseite aus auf die [API](https://api.ovh.com/) zugreifen, aber auch Ihre PHP- oder Python-Skripte verwenden, um API-Funktionen auszuführen.
+Sie können einfach von unserer Webseite aus auf die [API](/links/api) zugreifen, aber auch Ihre PHP- oder Python-Skripte verwenden, um API-Funktionen auszuführen.
 
 So können Sie Ihre Tasks frei automatisieren, Skripte verwenden, Ihre eigenen Funktionen optimieren etc.
 

@@ -237,7 +237,7 @@ Po zatwierdzeniu będziesz mógł zalogować się do panelu administracyjnego Tw
 >
 > Aby zbudować bezpieczne połączenia (`https`), serwer www musi być zabezpieczony za pośrednictwem Organu Certyfikacyjnego, takiego jak [Let's Encrypt](https://letsencrypt.org/){.external}, który oferuje bezpłatne certyfikaty. Należy zainstalować narzędzie klienta (takie jak "Certbot") i skonfigurować Apache. W przeciwnym razie Twoja strona WWW będzie mogła przyjmować tylko zapytania `http`.
 > 
-> OVHcloud oferuje również rozwiązanie [SSL Gateway](https://www.ovh.pl/ssl-gateway/). Więcej informacji znajdziesz w [dokumentacji](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
+> OVHcloud oferuje również rozwiązanie [SSL Gateway](/links/web/ssl-gateway). Więcej informacji znajdziesz w [dokumentacji](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 > 
 
 ### Etap 6 (opcjonalnie): aktywuj bezpieczne połączenia z Let's Encrypt

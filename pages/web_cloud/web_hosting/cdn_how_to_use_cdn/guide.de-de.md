@@ -21,7 +21,7 @@ Jeder Server speichert einen Teil Ihrer Webseite im Cache, um die Funktion zu ge
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
 

@@ -26,7 +26,7 @@ Es posible adquirir tráfico adicional directamente desde el [área de cliente d
 
 ![Adquirir tráfico](images/add_quota.png){.thumbnail}
 
-Puede consultar el precio de los paquetes de tráfico disponibles en la página de la solución [CDN de OVH](https://www.ovh.es/cdn/infrastructure/){.external}.
+Puede consultar el precio de los paquetes de tráfico disponibles en la página de la solución [CDN de OVH](/links/network/cdn-infrastructure){.external}.
 
 Cuando el tráfico disponible sea inferior a **100 GB**, recibirá una notificación informándole de la necesidad de ampliar el límite de tráfico. Si ha consumido todo el tráfico disponible, la función *bypass* se activará automáticamente hasta que adquiera más tráfico.
 

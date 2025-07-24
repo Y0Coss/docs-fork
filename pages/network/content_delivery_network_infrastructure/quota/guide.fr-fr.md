@@ -24,7 +24,7 @@ Si vous avez besoin de quota supplémentaire, vous pouvez le commander directeme
 
 ![Ajout de quota](images/add_quota.png){.thumbnail}
 
-Retrouvez les tarifications de ce quota sur [notre site](https://www.ovh.com/fr/cdn/infrastructure/){.external}.
+Retrouvez les tarifications de ce quota sur [notre site](/links/network/cdn-infrastructure){.external}.
 
 Une alerte vous est automatiquement envoyée lorsqu'il vous reste **100 Go** de quota pour que vous puissiez planifier un nouvel achat de bande passante. S'il ne vous reste plus de quota, la fonction `*bypass*` sera automatiquement activée jusqu'à ce que vous possédiez de nouveau du quota disponible.
 

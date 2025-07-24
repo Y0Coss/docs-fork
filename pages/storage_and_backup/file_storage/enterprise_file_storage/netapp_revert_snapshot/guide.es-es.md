@@ -17,7 +17,7 @@ Esta guía explica cómo restaurar un volumen a su último snapshot utilizando l
 ## Requisitos
 
 - Disponer de una solución OVHcloud Enterprise File Storage con un volumen
-- Estar conectado a la [API de OVHcloud](https://api.ovh.com/)
+- Estar conectado a la [API de OVHcloud](/links/api)
 
 ## Principios básicos
 

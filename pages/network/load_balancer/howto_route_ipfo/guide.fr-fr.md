@@ -23,7 +23,7 @@ Pour plus d'informations sur le service OVHcloud Load Balancer, nous vous consei
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/) correctement configuré.
+- Disposer d'un [Load Balancer OVHcloud](/links/network/load-balancer) correctement configuré.
 - Disposer d'une [Additional IP](/links/bare-metal/ip).
 
 > [!primary]

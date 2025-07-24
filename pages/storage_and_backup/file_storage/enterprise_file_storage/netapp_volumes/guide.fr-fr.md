@@ -13,7 +13,7 @@ Dans ce guide, découvrez comment gérer les volumes pour l'offre OVHcloud Enter
 ## Prérequis
 
 - Disposer d'une offre OVHcloud Enterprise File Storage
-- Être connecté sur la page des [API OVHcloud](https://api.ovh.com/)
+- Être connecté sur la page des [API OVHcloud](/links/api)
 
 ## L'essentiel
 

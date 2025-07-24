@@ -6,7 +6,7 @@ updated: 2025-06-04
 
 ## Objectif
 
-En plus de l'adressage IP privé, le [vRack](https://www.ovh.com/fr/solutions/vrack){.external} vous permet de diriger le trafic IP public via le port vRack de votre serveur à l'aide d'un bloc d'adresses IP publiques.
+En plus de l'adressage IP privé, le [vRack](/links/network/vrack){.external} vous permet de diriger le trafic IP public via le port vRack de votre serveur à l'aide d'un bloc d'adresses IP publiques.
 
 **Ce guide vous explique comment configurer un bloc d'adresses IP publiques à utiliser avec le vRack.**
 
@@ -34,7 +34,7 @@ En plus de l'adressage IP privé, le [vRack](https://www.ovh.com/fr/solutions/vr
 - Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
 - Préparer votre plage d'adresses IP privées choisies.
 - Posséder un [serveur compatible vRack](/links/bare-metal/bare-metal){.external}.
-- Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
+- Activer un service [vRack](/links/network/vrack){.external}.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 > [!warning]

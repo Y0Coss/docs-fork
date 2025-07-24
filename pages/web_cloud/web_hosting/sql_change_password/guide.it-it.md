@@ -40,7 +40,7 @@ La modifica della password del database del tuo sito avviene in quattro step:
 
 - Disporre di una [soluzione di hosting Web OVHcloud](/links/web/hosting)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Utilizza un [database associato alla tua offerta di hosting condiviso](/links/web/hosting-options-startsql) o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/).
+- Utilizza un [database associato alla tua offerta di hosting condiviso](/links/web/hosting-options-startsql) o [Web Cloud Databases](/links/web/databases).
 - Disporre delle credenziali FTP per accedere allo [spazio di storage dell'hosting](/pages/web_cloud/web_hosting/ftp_connection) 
 
 ## Procedura
@@ -89,7 +89,7 @@ Dopodiché torna allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cl
 
 Se hai ritrovato in questa sezione del tuo Spazio Cliente il nome del database indicato nel file di configurazione, passa allo [Step 3](#step3).
 
-In caso contrario, il database del tuo sito è associato a un'offerta [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/).
+In caso contrario, il database del tuo sito è associato a un'offerta [Web Cloud Databases](/links/web/databases).
 
 Per registrare il *nome del server* e il *nome utente* del database, è necessario ritornare al file di configurazione del tuo sito:
 
@@ -100,7 +100,7 @@ Per registrare il *nome del server* e il *nome utente* del database, è necessar
 
 Clicca su `Database`{.action} nella sezione `Web Cloud`{.action}. 
 
-Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) quella che contiene, con la voce `Nome host`{.action}, il nome del server del tuo database trovato precedentemente.
+Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [Web Cloud Databases](/links/web/databases) quella che contiene, con la voce `Nome host`{.action}, il nome del server del tuo database trovato precedentemente.
 
 Sempre in questa sezione del tuo Spazio Cliente OVHcloud, clicca sulla scheda `Utente e diritti`{.action}, per visualizzare anche il `Nome utente`{.action} del tuo database.
 

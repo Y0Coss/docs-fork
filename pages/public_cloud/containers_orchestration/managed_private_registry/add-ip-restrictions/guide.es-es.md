@@ -13,7 +13,7 @@ This guide will cover the feature that allows you to manage access to the HMI of
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=es)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An OVHcloud Managed Private Registry (see the [creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) guide for more information)
 
 ## Instructions
@@ -29,7 +29,7 @@ This means that you can configure different IP blocks (CIDR) for the HMI and the
 
 #### The API Explorer
 
-To simplify things, we are using the [API Explorer](https://api.ovh.com/) which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](/links/api) which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVHcloud customer ID (NIC handle).
 

@@ -212,7 +212,7 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database)
 
-[Alles zu unseren Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/)
+[Alles zu unseren Web Cloud Databases](/links/web/databases)
 
 [CMS verwalten](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 

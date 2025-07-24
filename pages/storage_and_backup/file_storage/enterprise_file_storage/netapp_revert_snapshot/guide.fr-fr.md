@@ -13,7 +13,7 @@ Dans ce guide, nous allons expliquer comment restaurer un volume à son dernier 
 ## Prérequis
 
 - Disposer d'une offre OVHcloud Enterprise File Storage avec un volume
-- Être connecté à l’[API OVHcloud](https://api.ovh.com/)
+- Être connecté à l’[API OVHcloud](/links/api)
 
 ## Principes de base
 

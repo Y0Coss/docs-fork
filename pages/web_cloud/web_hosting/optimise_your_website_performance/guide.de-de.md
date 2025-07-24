@@ -135,7 +135,7 @@ Um den Webseitenzugriff auf Downloads zu verbessern und ein optimiertes Ranking 
 
 Infolgedessen verbessern Sie die Reaktionszeiten für Besucher auf der ganzen Welt, da die statischen Teile Ihrer Website direkt von Ihrem Besucher an der nächstgelegenen Präsenzstelle (PoP) heruntergeladen werden.
 
-Entdecken Sie hier unsere [CDN Lösung](https://www.ovh.de/cdn/).
+Entdecken Sie hier unsere [CDN Lösung](/links/network/cdn-infrastructure).
 
 ### Schritt 6: Überprüfen des verwendeten Content Management Systems (CMS) und der verwendeten Plugins
 
@@ -212,7 +212,7 @@ Vermeiden Sie die Verwendung der „HAVING“ -Klausel, die Abfragen verlangsame
 
 #### Web Cloud Databases
 Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenommen haben, zu langsam läuft oder wenn eine große Anzahl von Anfragen regelmäßig an die Datenbank gestellt werden, können Sie gegebenenfalls zu unserem Web Cloud Databases-Angebot wechseln; dort stehen Ihnen dann mehr Ressourcen zur Verfügung.
-[Das Web Cloud Databases Angebot auf unserer Website](https://www.ovh.de/cloud/cloud-databases/){.external}.
+[Das Web Cloud Databases Angebot auf unserer Website](/links/web/databases){.external}.
 
 ## Weiterführende Informationen
 

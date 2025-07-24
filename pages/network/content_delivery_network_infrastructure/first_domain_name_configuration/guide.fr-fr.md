@@ -12,7 +12,7 @@ Lors de la première configuration du Content Delivery Network (CDN), il est né
 
 ## Prérequis
 
-- Bénéficier du [Content Delivery Network (CDN) d'OVH](https://www.ovh.com/fr/cdn/){.external}.
+- Bénéficier du [Content Delivery Network (CDN) d'OVH](/links/network/cdn-infrastructure){.external}.
 - Avoir accès à la gestion de la zone DNS de votre nom de domaine.
 - Avoir accès à votre [espace client OVH](/links/manager){.external}.
 

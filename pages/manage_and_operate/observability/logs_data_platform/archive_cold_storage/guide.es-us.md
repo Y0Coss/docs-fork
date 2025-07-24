@@ -54,7 +54,7 @@ On each archive you can use the `Download`{.action} action to directly download 
 
 #### Using the API
 
-If you want to download your logs using the API (to use them in a Big Data analysis platform for example), you can do all these steps by using the OVHcloud api available at [https://api.ovh.com](https://api.ovh.com){.external}. You can try all these steps with the [OVHcloud API Console](https://api.ovh.com/){.external}.
+If you want to download your logs using the API (to use them in a Big Data analysis platform for example), you can do all these steps by using the OVHcloud api available at [https://api.ovh.com](https://api.ovh.com){.external}. You can try all these steps with the [OVHcloud API Console](/links/api){.external}.
 
 You will need your OVHcloud service name associated with your account. Your service name is the login logs-xxxxx that is displayed in the left of the OVHcloud Manager.
 
@@ -147,4 +147,4 @@ Remember, that you can also use a special field X-OVH-TO-FREEZE on your logs to 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Create an account: [Try it!](/links/manage-operate/ldp)

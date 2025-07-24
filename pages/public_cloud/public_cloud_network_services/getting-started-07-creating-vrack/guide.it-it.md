@@ -47,14 +47,14 @@ Consulta la guida [Creare un utente per accedere a Horizon](/pages/public_cloud/
 
 ### APIv6 OVHcloud
 
-Ogni azione eseguita nello Spazio Cliente OVHcloud utilizza le [APIv6 OVHcloud](https://api.ovh.com/).
+Ogni azione eseguita nello Spazio Cliente OVHcloud utilizza le [APIv6 OVHcloud](/links/api).
 È possibile accedere alle API in misura maggiore rispetto allo Spazio Cliente.
 
 L'interfaccia è meno visiva dello Spazio Cliente OVHcloud, ma ti permette di effettuare numerose azioni. In questo modo è possibile gestire e personalizzare le tue VLAN, aggiungere interfacce alle tue istanze o creare server altamente personalizzati.
 
 A volte sarà necessario recuperare più informazioni prima dell'utilizzo di un'API specifica.
 
-Puoi semplicemente accedere alle API dalla [nostra pagina Web](https://api.ovh.com/), ma anche creare i tuoi script PHP o Python per farvi ricorso.
+Puoi semplicemente accedere alle API dalla [nostra pagina Web](/links/api), ma anche creare i tuoi script PHP o Python per farvi ricorso.
 
 In questo modo, potrai automatizzare liberamente le operazioni di base tramite script, ottimizzare le tue funzioni, ecc...
 

@@ -12,7 +12,7 @@ Podczas pierwszej konfiguracji usługi CDN (Content Delivery Network) konieczne 
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [CDN (Content Delivery Network) od OVH](https://www.ovh.pl/cdn/){.external}
+- Posiadanie usługi [CDN (Content Delivery Network) od OVH](/links/network/cdn-infrastructure){.external}
 - Dostęp do interfejsu zarządzania strefą DNS Twojej domeny
 - Dostęp do [Panelu klienta OVH](/links/manager){.external}
 

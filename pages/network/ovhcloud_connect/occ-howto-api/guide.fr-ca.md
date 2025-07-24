@@ -16,7 +16,7 @@ La mise en place de l'offre OVHcloud Connect peut se faire directement depuis le
 > Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](/pages/network/ovhcloud_connect/occ-limits) et configurer vos équipements réseau en accord avec celles-ci.
 >
 
-* Posséder une offre [OVHcloud Connect](https://www.ovh.com/fr/solutions/ovhcloud-connect/) dans votre compte OVHcloud.
+* Posséder une offre [OVHcloud Connect](/links/network/ovhcloud-connect) dans votre compte OVHcloud.
 * Être connecté aux [API OVHcloud](/links/api){.external}.
 * Avoir [créé vos credentials pour l'utilisation des API OVHcloud](/pages/manage_and_operate/api/first-steps).
 

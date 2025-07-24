@@ -84,7 +84,7 @@ Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action}.
 
 ### Mover una IP a través de las API
 
-Conéctese a la página web de las [API de OVHcloud](https://api.ovh.com/).
+Conéctese a la página web de las [API de OVHcloud](/links/api).
 
 En primer lugar, es mejor comprobar si la dirección IP se puede mover correctamente al servidor deseado.
 <br>Para comprobar si la IP puede moverse a uno de sus servidores dedicados, utilice la siguiente llamada:

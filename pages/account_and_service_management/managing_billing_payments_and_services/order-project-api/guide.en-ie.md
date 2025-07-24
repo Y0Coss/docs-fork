@@ -18,7 +18,7 @@ Creating a project is the first step in deploying [Public Cloud instances](/link
 
 ## Instructions
 
-Log in to the [OVHcloud API interface](https://api.ovh.com/) according to the [relevant guide](/pages/manage_and_operate/api/first-steps) and follow the steps below.
+Log in to the [OVHcloud API interface](/links/api) according to the [relevant guide](/pages/manage_and_operate/api/first-steps) and follow the steps below.
 
 ### Step 1: Building your cart
 

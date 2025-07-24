@@ -17,7 +17,7 @@ Esta guía explica cómo empezar con Enterprise File Storage.
 ## Requisitos
 
 - Tener contratado un plan Enterprise File Storage de OVHcloud.
-- Estar conectado a la página de las [API de OVHcloud](https://api.ovh.com/)
+- Estar conectado a la página de las [API de OVHcloud](/links/api)
 - Saber [montar un NAS mediante NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_nfs)
 
 ## Lo esencial

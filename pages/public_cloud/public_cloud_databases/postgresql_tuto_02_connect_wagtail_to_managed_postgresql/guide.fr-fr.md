@@ -33,7 +33,7 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=G) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
+Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
 
 ### Step 1: Verify your user roles and password
 

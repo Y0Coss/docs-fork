@@ -67,7 +67,7 @@ Die Ihrem Server zugewiesene IPv6-Adresse sowie das zugehörige IPv6-Gateway wer
 
 #### Über die OVHcloud API <a name="viaapi"></a>
 
-Zur [OVHcloud Console API](/links/console)-Seite:
+Öffnen Sie die [OVHcloud API-Konsole](/links/console).
 
 - Klicken Sie oben links auf `Authentication`{.action}.
 - Wählen Sie `Login with OVHcloud SSO`{.action}.

@@ -24,7 +24,7 @@ Caso necessite de tráfego adicional, poderá adicionar diretamente a partir da 
 
 ![Adquirir tráfego](images/add_quota.png){.thumbnail}
 
-Pode consultar os preços dos pacotes de tráfego disponíveis no [nosso site](https://www.ovh.com/pt/cdn/infrastructure/){.external}.
+Pode consultar os preços dos pacotes de tráfego disponíveis no [nosso site](/links/network/cdn-infrastructure){.external}.
 
 Quando o tráfego disponível for inferior a **100 GB**, receberá um aviso indicando-lhe que é necessário adquirir mais largura de banda. Se não possuir tráfego na solução, a função `bypass` será automaticamente ativada até que adquira mais largura de banda.
 

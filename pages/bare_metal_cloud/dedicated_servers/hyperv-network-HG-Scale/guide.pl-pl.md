@@ -253,7 +253,7 @@ network:
 - Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów
 - Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
 - Posiadanie [serwera kompatybilnego z vRack](/links/bare-metal/bare-metal){.external}
-- Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
+- Aktywacja usługi [vRack](/links/network/vrack){.external}
 - Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
 
 #### Wyjaśnienia

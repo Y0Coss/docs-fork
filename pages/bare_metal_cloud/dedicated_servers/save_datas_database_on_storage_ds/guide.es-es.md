@@ -27,7 +27,7 @@ Esta guía explica cómo configurar un servidor de almacenamiento de OVHcloud pa
 - Un [servidor de almacenamiento](https://www.ovhcloud.com/es-es/bare-metal/storage/){.external} de OVHcloud.
 - Una infraestructura de producción ([VPS](/links/bare-metal/vps), [servidor dedicado](/links/bare-metal/bare-metal), [instancia de Public Cloud](/links/public-cloud/public-cloud), etc.).
 - Conexión SSH configurada entre el servidor de almacenamiento y la infraestructura de producción.
-- Una [red privada](https://www.ovh.es/soluciones/vrack/){.external} entre los servidores (recomendado).
+- Una [red privada](/links/network/vrack){.external} entre los servidores (recomendado).
 
 ## Procedimiento
 

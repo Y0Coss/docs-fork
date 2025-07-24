@@ -432,7 +432,7 @@ For this step, you will need two elements:
 - The IP block initially associated with the NSX-V vDC.
 - The public IP of the VIP associated with the NSX-T0 (visible in `Networking`{.action} => `Tier-0 Gateways`{.action} => `ovh-T0-XXXX`{.action} => expand => `HA VIP Configuration`{.action} => click on `1`{.action} => `IP Address / Mask`{.action} section)
 
-Next, in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), follow the instructions in our [Move an Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip) guide to move the initial NSX-V block to the PCC service you are migrating, but specify the VIP IP of the T0 as the "next hop", as shown in the example below:
+Next, in the [OVHcloud Control Panel](/links/manager), follow the instructions in our [Move an Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip) guide to move the initial NSX-V block to the PCC service you are migrating, but specify the VIP IP of the T0 as the "next hop", as shown in the example below:
 
 ![NSX IP Migration](images/MoveIPNextHop.png){.thumbnail}
 

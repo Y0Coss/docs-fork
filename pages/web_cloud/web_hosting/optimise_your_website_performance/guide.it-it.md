@@ -227,7 +227,7 @@ Ad esempio, evita di utilizzare “HAVING” (che appesantisce le tue richieste)
 #### Web Cloud Databases
 
 Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è lento, o se vengono inviate numerose richieste al database, ti consigliamo di passare alla nostra soluzione Web Cloud Databases per avere più risorse disponibili.
-[Consulta l'offerta Web Cloud Databases sul nostro sito](https://www.ovh.it/cloud/cloud-databases/){.external}.
+[Consulta l'offerta Web Cloud Databases sul nostro sito](/links/web/databases){.external}.
 
 ## Per saperne di più 
 

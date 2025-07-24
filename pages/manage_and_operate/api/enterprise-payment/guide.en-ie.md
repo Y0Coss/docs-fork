@@ -10,7 +10,7 @@ We will describe part of your payment and billing cycle at OVHcloud.
 
 ## Requirements
 
-* Being connected on [OVHcloud API](https://api.ovh.com/){.external}.
+* Being connected on [OVHcloud API](/links/api){.external}.
 * Having [created your credentials for OVHcloud API](/pages/manage_and_operate/api/first-steps){.external}.
 * Having a customer account wih Reseller Tag (contact your sales representative for eligibility if applicable).
 * Having [created subaccounts for the OVHcloud API if necessary](/pages/manage_and_operate/api/account){.external}.

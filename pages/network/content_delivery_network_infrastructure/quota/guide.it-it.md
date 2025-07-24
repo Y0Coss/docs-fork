@@ -24,7 +24,7 @@ Il traffico supplementare può essere aggiunto direttamente dallo [Spazio Client
 
 ![Aggiungere quota](images/add_quota.png){.thumbnail}
 
-Le tariffe relative alla quota aggiuntiva sono disponibili sul [sito OVH](https://www.ovh.it/cdn/infrastructure/){.external}.
+Le tariffe relative alla quota aggiuntiva sono disponibili sul [sito OVH](/links/network/cdn-infrastructure){.external}.
 
 Al raggiungimento di **100 GB** residui viene inviata automaticamente una notifica per poter pianificare un nuovo acquisto di banda passante. Se il traffico a disposizione termina si attiva automaticamente la funzione _bypass_, che resterà abilitata fino a quando non sarà nuovamente disponibile una quota.
 

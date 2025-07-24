@@ -13,7 +13,7 @@ La soluzione Web Cloud Databases è associata di default alla rete di hosting We
 
 ## Prerequisiti
 
-- Disporre di un’[istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa nelle soluzioni di [hosting Web performance](/links/web/hosting))
+- Disporre di un’[istanza Web Cloud Databases](/links/web/databases){.external} (inclusa nelle soluzioni di [hosting Web performance](/links/web/hosting))
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura

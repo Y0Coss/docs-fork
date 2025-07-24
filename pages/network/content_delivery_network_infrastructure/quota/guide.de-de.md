@@ -24,7 +24,7 @@ Wenn Sie zusätzliches Quota benötigen, können Sie dieses direkt über Ihr [OV
 
 ![Quota hinzufügen](images/add_quota.png){.thumbnail}
 
-Die Preise für das Quota finden Sie auf der zugehörigen [Webseite](https://www.ovh.de/cdn/infrastructure/){.external}.
+Die Preise für das Quota finden Sie auf der zugehörigen [Webseite](/links/network/cdn-infrastructure){.external}.
 
 Sobald nur noch **100 GB** übrig sind, erhalten Sie eine automatische Warnung zu Ihrem Quota-Verbrauch, damit Sie rechtzeitig weitere Bandbreite bestellen können. Wenn Ihr Quota aufgebraucht ist, wird automatisch die `bypass`-Funktion aktiviert, bis Sie weiteres Quota bestellt haben.
 

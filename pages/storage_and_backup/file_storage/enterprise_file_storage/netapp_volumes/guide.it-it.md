@@ -17,7 +17,7 @@ Questa guida ti mostra come gestire i volumi del servizio OVHcloud Enterprise Fi
 ## Prerequisiti
 
 - Disporre di una soluzione OVHcloud Enterprise File Storage
-- Essere connesso alla pagina delle [API OVHcloud](https://api.ovh.com/)
+- Essere connesso alla pagina delle [API OVHcloud](/links/api)
 
 ## L'essenziale
 

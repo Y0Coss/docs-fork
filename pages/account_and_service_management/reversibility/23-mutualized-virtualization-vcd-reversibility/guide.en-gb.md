@@ -27,7 +27,7 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| Management with OVHcloud API | VM management via API | JSON, YAML, scripts | **Inbound**: automated deployment, management and import <br>**Outbound**: export configurations, scripts and automations that can be used on other platforms | [Login to OVH API](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/connexion_a_l_api_ovh) |
+| Management with OVHcloud API | VM management via API | JSON, YAML, scripts | **Inbound**: automated deployment, management and import <br>**Outbound**: export configurations, scripts and automations that can be used on other platforms | [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) |
 | Manual backup and restore | Snapshots, backups and restores on demand via User Interface or API | Snapshots, disk images | **Inbound**: standard VM Image Import <br>**Outbound**: no access to native backup files. You cannot export to a new hosting environment | [Backups with Veeam and restorations](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup) |
 
 ### 3. Specific features

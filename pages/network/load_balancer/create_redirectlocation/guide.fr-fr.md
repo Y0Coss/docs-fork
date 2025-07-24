@@ -10,9 +10,9 @@ Le service OVHcloud Load Balancer agit par défaut comme un mandataire ou « Pro
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Être connecté à l'[API OVHcloud](https://api.ovh.com/){.external}.
+- Être connecté à l'[API OVHcloud](/links/api){.external}.
 
 ## En pratique
 
@@ -67,7 +67,7 @@ Pour ce faire, vous pouvez au choix :
 
 ### Ajouter une redirection personnalisée depuis l'API OVHcloud
 
-Dans l'[API OVHcloud](https://api.ovh.com/){.external}, les redirections sont spécifiées dans la chaîne de caractère redirectLocation :
+Dans l'[API OVHcloud](/links/api){.external}, les redirections sont spécifiées dans la chaîne de caractère redirectLocation :
 
 #### Création d'un nouveau frontend
 

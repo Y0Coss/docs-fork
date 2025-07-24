@@ -253,7 +253,7 @@ network:
 - Ter reservado um bloco público de endereços IP na sua conta, com um mínimo de quatro endereços.
 - Ter acesso ao intervalo de endereços de IP privados escolhidos.
 - Dispor de um [servidor compatível com o vRack](/links/bare-metal/bare-metal){.external}.
-- Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
+- Ter ativado um serviço [vRack](/links/network/vrack){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 #### Explicações

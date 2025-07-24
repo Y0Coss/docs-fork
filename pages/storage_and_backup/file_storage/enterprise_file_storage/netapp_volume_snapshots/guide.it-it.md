@@ -17,7 +17,7 @@ Questa guida ti mostra come gestire gli Snapshot dei volumi del servizio OVHclou
 ## Prerequisiti
 
 - Disporre di una soluzione OVHcloud Enterprise File Storage con un volume
-- Essere connesso alla pagina delle [API OVHcloud](https://api.ovh.com/)
+- Essere connesso alla pagina delle [API OVHcloud](/links/api)
 
 ## L'essenziale
 

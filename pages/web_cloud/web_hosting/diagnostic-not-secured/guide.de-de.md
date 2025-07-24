@@ -76,7 +76,7 @@ Notieren Sie das "Ziel" des Eintrags vom Typ `A` Ihres Domainnamens:
 
 #### Szenario 1: Ihr Hosting enthält kein SSL-Zertifikat
 
-Aktivieren Sie ein [SSL-Zertifikat](https://www.ovh.de/ssl/) auf Ihrem Webhosting gemäß den Anweisungen in dieser [Anleitung](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+Aktivieren Sie ein [SSL-Zertifikat](/links/web/hosting-options-ssl) auf Ihrem Webhosting gemäß den Anweisungen in dieser [Anleitung](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 #### Szenario 2: Das SSL-Zertifikat Ihres Hostings funktioniert nicht
 

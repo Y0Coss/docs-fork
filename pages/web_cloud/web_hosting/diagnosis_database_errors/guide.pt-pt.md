@@ -21,7 +21,7 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 
 - Ter um [serviço de alojamento web](/links/web/hosting) OVHcloud.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Utilizar uma das nossas ofertas de bases de dados [Web Cloud](/links/web/hosting-options-startsql) ou [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
+- Utilizar uma das nossas ofertas de bases de dados [Web Cloud](/links/web/hosting-options-startsql) ou [Web Cloud Databases](/links/web/databases).
 
 ## Instruções
 
@@ -150,7 +150,7 @@ Para otimizar a sua base de dados, siga as instruções do nosso guia "[Configur
 
 ### Capacidade de RAM excedida (Web Cloud Databases apenas)
 
-A seguinte mensagem na parte `Web Cloud Databases`{.action} do seu [Área de Cliente OVHcloud](/links/manager) indica que o seu servidor [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) consumiu uma quantidade de recursos demasiado importante na infraestrutura OVHcloud:
+A seguinte mensagem na parte `Web Cloud Databases`{.action} do seu [Área de Cliente OVHcloud](/links/manager) indica que o seu servidor [Web Cloud Databases](/links/web/databases) consumiu uma quantidade de recursos demasiado importante na infraestrutura OVHcloud:
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 

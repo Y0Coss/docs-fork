@@ -198,7 +198,7 @@ Zerto must be installed by OVHcloud in SecNumCloud environments.
 2. Request Zerto Virtual Replication for your SNC tenant.
 3. Wait for OVHcloud to deploy the ZVM, ZVRAs, and required firewall rules.
 
-Full details: [Zerto Virtual Replication on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_zerto_virtual_replication_customer_to_ovh)
+Full details: [Zerto Virtual Replication on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud)
 
 ### Step 8: Install Zerto on the source site
 
@@ -224,7 +224,7 @@ Set up a site-to-site IPsec tunnel between your on-prem firewall and the OVHclou
 
 You can use any compatible device (e.g., Fortinet, Palo Alto, OPNsense).
 
-Details and parameters are available in [Zerto VPN Setup on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_zerto_virtual_replication_customer_to_ovh).
+Details and parameters are available in [Zerto VPN Setup on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
 
 ### Step 10: Pair the sites and create VPGs
 

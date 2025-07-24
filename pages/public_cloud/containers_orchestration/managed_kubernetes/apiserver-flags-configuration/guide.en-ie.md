@@ -47,7 +47,7 @@ In this guide, we will show you how to enable and disable API server admission p
 
 #### The API Explorer
 
-To simplify things, we are using the [API Explorer](https://api.ovh.com/), which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](/links/api), which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVH NIC.
 
@@ -484,7 +484,7 @@ Destroy complete! Resources: 1 destroyed.
 
 ## Go further
 
-To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
+To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
 
 To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 

@@ -21,7 +21,7 @@ Ce service étant encore jeune, l'essentiel de ses fonctionnalités est uniqueme
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud. Le service doit être correctement configuré, avec un paramétrage des fermes et des serveurs.
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud. Le service doit être correctement configuré, avec un paramétrage des fermes et des serveurs.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique

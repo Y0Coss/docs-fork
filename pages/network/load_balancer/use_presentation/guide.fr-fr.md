@@ -6,7 +6,7 @@ updated: 2018-01-17
 
 ## Objectif
 
-Le [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/) répartit la charge entre vos différents services dans nos datacentres. Il vous assure la mise à l'échelle de votre infrastructure face à un trafic important, une tolérance aux pannes et des temps de réponse optimisés.
+Le [Load Balancer OVHcloud](/links/network/load-balancer) répartit la charge entre vos différents services dans nos datacentres. Il vous assure la mise à l'échelle de votre infrastructure face à un trafic important, une tolérance aux pannes et des temps de réponse optimisés.
 
 Vous pouvez ajouter des fontionnalités d'équilibrage de charge qui correspondent le mieux à vos besoins.
 

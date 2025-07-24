@@ -6,13 +6,13 @@ updated: 2018-02-22
 
 ## Wprowadzenie
 
-Do Twojej usługi Content Delivery Network (CDN) można dodać [certyfikat SSL](https://www.ovh.pl/ssl/){.external}, dzięki czemu Twoi użytkownicy mogą łączyć się bezpiecznie, nawet korzystając z CDN.
+Do Twojej usługi Content Delivery Network (CDN) można dodać [certyfikat SSL](/links/web/hosting-options-ssl){.external}, dzięki czemu Twoi użytkownicy mogą łączyć się bezpiecznie, nawet korzystając z CDN.
 
 **W niniejszym przewodniku wyjaśnimy działanie certyfikatu SSL Let's Encrypt dostarczonego przez OVH.**
 
 ## Wymagania początkowe
 
-- Posiadanie [usługi CDN od OVH](https://www.ovh.pl/cdn/){.external}
+- Posiadanie [usługi CDN od OVH](/links/network/cdn-infrastructure){.external}
 - Dostęp do interfejsu zarządzania strefą DNS domeny
 
 ## W praktyce

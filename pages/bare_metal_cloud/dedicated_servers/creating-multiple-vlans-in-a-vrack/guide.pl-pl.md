@@ -12,8 +12,8 @@ updated: 2023-09-12
 
 ## Wymagania początkowe
 
-- Posiadanie jednego lub kilku [serwerów dedykowanych](https://www.ovh.pl/serwery_dedykowane/){.external} kompatybilnych z vRack
-- Aktywowanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
+- Posiadanie jednego lub kilku [serwerów dedykowanych](/links/bare-metal/bare-metal){.external} kompatybilnych z vRack
+- Aktywowanie usługi [vRack](/links/network/vrack){.external}
 - Dostęp do wybranego zakresu Twoich prywatnych adresów IP
 - Połączenie przez SSH z identyfikatorem root (Linux)
 - Połączenie z kontem administratora (Windows)
