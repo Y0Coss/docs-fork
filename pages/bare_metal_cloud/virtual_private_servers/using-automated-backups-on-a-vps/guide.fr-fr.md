@@ -1,14 +1,14 @@
 ---
-title: 'Utiliser la sauvegarde automatique'
-excerpt: 'Découvrez comment activer et utiliser l’option de sauvegarde automatique depuis l’espace client OVHcloud'
+title: "Comment utiliser les sauvegardes automatiques sur un VPS"
+excerpt: "Découvrez comment utiliser l'option de sauvegarde automatique de votre espace client pour sécuriser vos données"
 updated: 2023-08-07
 ---
 
 ## Objectif
 
-Cette option vous offre un moyen pratique de disposer fréquemment de sauvegardes VPS complètes à partir de l'espace client OVHcloud sans avoir à vous connecter au serveur pour les créer et les restaurer manuellement. Un autre avantage est que vous pouvez aussi choisir de monter une image de sauvegarde et y accéder en SSH.
+L'option de sauvegarde automatique pour les VPS offre un moyen pratique de disposer de sauvegardes complètes du système depuis votre espace client OVHcloud sans avoir à se connecter au serveur pour les créer et les restaurer manuellement. Un autre avantage est que vous pouvez également choisir de monter une sauvegarde et ensuite accéder à ses fichiers à distance.
 
-**Ce guide explique comment utiliser la sauvegarde automatique pour votre VPS.**
+**Ce guide vous explique l'option de sauvegarde automatique pour votre VPS OVHcloud.**
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pazh9ozbkEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -24,15 +24,45 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 
 ## En pratique
 
+### Présentation du contenu
+
+- [Comment passer à la sauvegarde automatique Premium](#premium)
+- [Configurer l’heure du backup](#time)
+- [Comment restaurer une sauvegarde depuis l’espace client OVHcloud](#restore)
+- [Monter et accéder à une image de sauvegarde](#mount)
+    - [Sous Linux](#shell)
+    - [Sous Windows](#windows)
+- [Bonnes pratiques pour l'utilisation de la sauvegarde automatique](#bestpractice)
+    - [Configuration de l'agent QEMU sur un VPS](#qemu)
+        - [Distributions Redhat](#deb)
+        - [Distributions Debian](#red)
+        - [Windows](#win)
+
+
 Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
-### Étape 1 : Activer l’option de sauvegarde automatisée
+Lorsque vous commandez un VPS, une seule sauvegarde automatique quotidienne est incluse en option de service gratuite. Cette option de sauvegarde standard vous permet de :
 
-Après avoir sélectionné votre VPS, cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal.
+- Monter et restaurer la sauvegarde quotidienne.
+- Définissez l'heure de création de cette sauvegarde.
 
-Nous vous invitons à prendre connaissance des informations tarifaires à l'étape suivante. Cliquez ensuite sur le bouton `Commander`{.action}. Vous serez guidé dans le processus de commande et recevrez un e-mail de confirmation. Les sauvegardes seront désormais créées quotidiennement jusqu’à ce que l’option soit résiliée.
+Pour plus de flexibilité avec vos sauvegardes, vous pouvez activer l'option Sauvegarde automatique Premium.
 
-#### Configurer l’heure du backup
+<a name="premium"></a>
+
+### Comment passer à la sauvegarde automatique Premium
+
+La mise à niveau vers « Premium » améliore votre option de sauvegarde automatique vers une sauvegarde quotidienne sur 7 jours glissants. Cela vous permet de revenir à des versions de sauvegarde plus anciennes par rapport à la rotation sur 24 heures de l'option standard.
+
+Après avoir sélectionné votre VPS, cliquez sur l'onglet `Sauvegarde automatisée`{.action} dans le menu horizontal.
+
+Cliquez sur le lien `Commander un backup premium`{.action}.
+
+![autobackupvps](images/backup_vps.png){.thumbnail}
+
+<a name="time"></a>
+
+### Configurer l’heure du backup
 
 Vous pouvez modifier l'heure à laquelle la sauvegarde aura lieu. 
 
@@ -49,9 +79,12 @@ Dans la fenêtre qui s'affiche, modifiez l'heure de la journée (norme de temps 
 > Une fois validé dans l’espace client, le changement sera effectif dans un délai de 24 à 48 heures.
 >
 
-### Étape 2 : restaurer une sauvegarde à partir de l'espace client OVHcloud
+<a name="restore"></a>
 
-Sélectionnez votre VPS puis cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal. Un maximum de 7 sauvegardes quotidiennes seront disponibles (15 sauvegardes quotidiennes pour les VPS d'anciennes gammes). Cliquez sur `...`{.action} à droite de la sauvegarde à restaurer et sélectionnez `Restauration`{.action}.
+### Comment restaurer une sauvegarde depuis l’espace client OVHcloud
+
+Sélectionnez votre VPS puis cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal.  
+Cliquez sur `...`{.action} à droite de la sauvegarde à restaurer et sélectionnez `Restauration`{.action}.
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
@@ -61,6 +94,8 @@ Si vous avez récemment modifié votre mot de passe root, assurez-vous de cocher
 >
 Notez que les sauvegardes automatisées n'incluent pas vos éventuels disques additionnels.
 >
+
+<a name="mount"></a>
 
 ### Monter et accéder à une image de sauvegarde
 
@@ -80,6 +115,8 @@ Cliquez sur `...`{.action} à droite de la sauvegarde souhaitée et sélectionne
 Lorsque vous utilisez cette option, une copie en lecture-écriture de la sauvegarde est créée et montée. La sauvegarde d'origine reste disponible telle quelle pour les restaurations futures.
 
 Une fois le processus terminé, vous recevrez un e-mail. Vous pourrez alors vous connecter à votre VPS et ajouter la partition où se trouve votre sauvegarde.
+
+<a name="shell"></a>
 
 #### Sous Linux
 
@@ -119,6 +156,8 @@ Pensez à bien démonter la sauvegarde automatique une fois l'utilisation de cel
 
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
 
+<a name="windows"></a>
+
 #### Sous Windows
 
 Établissez une connexion RDP (Remote Desktop) avec votre VPS.
@@ -147,15 +186,21 @@ Pensez à bien démonter la sauvegarde automatique une fois l'utilisation de cel
 > Veuillez noter qu'un redémarrage du serveur se produira lors du démontage de la sauvegarde.
 >
 
+<a name="bestpractice"></a>
+
 ### Bonnes pratiques pour l'utilisation de la sauvegarde automatique
 
 La fonctionnalité de sauvegarde automatique est basée sur les snapshots VPS. Nous vous recommandons de suivre les étapes ci-dessous pour éviter toute anomalie avant d'utiliser cette option.
+
+<a name="qemu"></a>
 
 #### Configuration de l'agent QEMU sur un VPS
 
 Les snapshots sont des images instantanées de votre système en cours d'exécution (« live snapshots »). Pour garantir la disponibilité de votre système lors de la création du snapshot, l'agent QEMU est utilisé pour préparer le système de fichiers au processus.
 
 Le *qemu-guest-agent* requis n'est pas installé par défaut sur la plupart des distributions. En outre, les restrictions de licence peuvent empêcher OVHcloud de l'inclure dans les images d'OS disponibles. Par conséquent, il est recommandé de vérifier et d'installer l'agent au cas où il ne serait pas activé sur votre VPS. Connectez-vous à votre VPS en SSH et suivez les instructions ci-dessous, selon votre système d'exploitation.
+
+<a name="deb"></a>
 
 ##### **Distributions Debian (Debian, Ubuntu)**
 
@@ -184,6 +229,8 @@ Démarrez le service pour vous assurer qu'il est en cours d'exécution :
 ```bash
 sudo service qemu-guest-agent start
 ```
+
+<a name="red"></a>
 
 ##### **Distributions Redhat (CentOS, Fedora)**
 
@@ -214,13 +261,15 @@ sudo service qemu-guest-agent start
 sudo service qemu-guest-agent status
 ```
 
+<a name="win"></a>
+
 ##### **Windows**
 
 Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
 Vérifiez que le service est en cours d'exécution à l'aide de la commande powershell suivante :
 
-```powershell
+```console
 PS C:\Users\Administrator> Get-Service QEMU-GA
 Status   Name               DisplayName
 ------   ----               -----------
