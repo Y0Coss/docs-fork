@@ -51,7 +51,7 @@ For more flexiblity with your backups, you can activate the Automatic Backup Pre
 
 ### How to upgrade to Automatic Backup Premium
 
-Upgrading to "Premium" enhances your automatic backup option to a 7-day rolling daily backup. This allows you to revert to an older backup version compared to the 24-hour rotation of the standard option.
+Upgrading to "Premium" enhances your automatic backup option to a 7-day rolling daily backup. This allows you to revert to older backup versions compared to the 24-hour rotation of the standard option.
 
 After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.
 
