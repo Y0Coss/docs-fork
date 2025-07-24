@@ -65,7 +65,9 @@ In the next step, please take note of the pricing information, then click on `Or
 
 ### How to configure the backup time
 
-You can change the time of day at which the backup will take place. 
+You can change the time of day at which the backup will take place.
+
+After selecting your VPS, click on the `Automated backup`{.action} tab in the horizontal menu.
 
 Click on `...`{.action} above the table and then on `Edit`{.action}.
 
