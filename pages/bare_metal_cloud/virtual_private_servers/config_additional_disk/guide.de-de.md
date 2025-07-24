@@ -1,7 +1,7 @@
 ---
 title: Zusätzliche Disk konfigurieren
 excerpt: Erfahren Sie hier, wie Sie auf einem VPS externen Speicherplatz hinzufügen und konfigurieren
-updated: 2025-07-23
+updated: 2025-07-24
 ---
 
 ## Ziel

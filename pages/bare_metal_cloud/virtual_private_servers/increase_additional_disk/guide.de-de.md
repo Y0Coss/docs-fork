@@ -1,7 +1,7 @@
 ---
 title: "Die Größe einer zusätzlichen Disk erweitern"
 excerpt: "Erfahren Sie hier, wie Sie die Kapazität eines zusätzlichen Volumes vergrößern und die Hauptpartition anpassen"
-updated: 2025-07-23
+updated: 2025-07-24
 ---
 
 ## Ziel

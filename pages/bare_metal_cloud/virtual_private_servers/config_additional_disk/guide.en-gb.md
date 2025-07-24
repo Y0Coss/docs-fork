@@ -1,7 +1,7 @@
 ---
 title: "How to configure an additional disk"
 excerpt: "Find out how to add and configure additional storage space on a VPS"
-updated: 2025-07-23
+updated: 2025-07-24
 ---
 
 ## Objective

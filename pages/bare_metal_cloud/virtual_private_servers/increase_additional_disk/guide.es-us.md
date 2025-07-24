@@ -1,7 +1,7 @@
 ---
 title: "Aumentar el tamaño de un disco adicional"
 excerpt: "Cómo aumentar el tamaño de un volumen adicional y aumentar su partición principal"
-updated: 2025-07-23
+updated: 2025-07-24
 ---
 
 ## Objetivo

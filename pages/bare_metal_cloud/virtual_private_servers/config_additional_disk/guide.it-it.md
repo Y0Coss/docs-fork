@@ -1,7 +1,7 @@
 ---
 title: 'Configura un disco aggiuntivo'
 excerpt: Come aggiungere e configurare spazio di storage aggiuntivo su un VPS
-updated: 2025-07-23
+updated: 2025-07-24
 ---
 
 ## Obiettivo

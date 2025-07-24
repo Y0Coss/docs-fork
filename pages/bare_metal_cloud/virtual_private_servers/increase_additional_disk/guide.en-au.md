@@ -1,7 +1,7 @@
 ---
 title: "How to increase the size of an additional disk"
 excerpt: "Find out how to increase the size of an additional volume and enlarge its main partition"
-updated: 2025-07-23
+updated: 2025-07-24
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Augmenter la taille d’un disque additionnel"
 excerpt: "Découvrez comment augmenter la taille d'un volume additionnel et agrandir sa partition principale"
-updated: 2025-07-23
+updated: 2025-07-24
 ---
 
 ## Objectif
