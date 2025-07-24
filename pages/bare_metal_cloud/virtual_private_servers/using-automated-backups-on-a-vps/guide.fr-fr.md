@@ -64,7 +64,9 @@ Cliquez sur le lien `Commander un backup premium`{.action}.
 
 ### Configurer l’heure du backup
 
-Vous pouvez modifier l'heure à laquelle la sauvegarde aura lieu. 
+Vous pouvez modifier l'heure à laquelle la sauvegarde aura lieu.
+
+Après avoir sélectionné votre VPS, cliquez sur l'onglet `Sauvegarde automatisée`{.action} dans le menu horizontal.
 
 Cliquez sur `...`{.action} au-dessus du tableau puis sur `Editer`{.action}.
 
