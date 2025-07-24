@@ -25,7 +25,7 @@ Negli step successivi è necessario aver configurato un disco aggiuntivo seguend
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server tra i `Server Privati Virtuali`{.action}.
 
-Nella scheda `Home`{.action}, accedi alla sezione **La tua configurazione**. Clicca su `...`{.action} accanto all'opzione `Dischi aggiuntivi` e nel menu di scelta rapida clicca su `Aumenta la dimensione del disco`{.action}.
+Nella scheda `Home page`{.action}, nella sezione **La tua configurazione**, clicca su `...`{.action} accanto all’opzione `Dischi aggiuntivi` e poi clicca su `Aumenta la capacità del disco`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 

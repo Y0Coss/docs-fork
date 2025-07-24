@@ -20,15 +20,15 @@ O IPv6 é a versão mais recente do *Internet Protocol* (IP). Cada servidor VPS 
 
 > [!warning]
 >
-> A utilização e a gestão dos serviços da OVHcloud são da responsabilidade do cliente. A OVHcloud não tem permissões de acesso aos VPS e o cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”.
+> A utilização e a gestão dos serviços da OVHcloud são da responsabilidade do cliente. A OVHcloud não tem permissões de acesso aos VPS e o cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: "[Quer saber mais?](#go-further)".
 > 
 
 ## Requisitos
 
-- Dispor de um [servidor VPS da OVHcloud](/links/bare-metal/vps){.external}.
+- Dispor de um [servidor VPS da OVHcloud](/links/bare-metal/vps).
 - Ter acesso ao VPS através de SSH (acesso root) ou de um ambiente de trabalho remoto (Windows).
 - Ter conhecimentos básciso de rede.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external} ou à [API OVHcloud](/links/api).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager) ou à [API OVHcloud](/links/api).
 
 ## Instruções
 
@@ -66,7 +66,12 @@ O endereço IPv6 e a gateway IPv6 associados ao servidor aparecem na secção `I
 
 #### Através das API OVHcloud <a name="viaapi"></a>
 
-Aceda ao site <https://api.ovh.com/console/> e ligue-se ao mesmo com o seu ID OVHcloud. A seguir, utilize as duas API abaixo.
+Aceda à página [API OVHcloud](/links/console):
+
+- Clique em `Authentication`{.action} no canto superior esquerdo.
+- A seguir, clique em `Login with OVHcloud SSO`{.action}.
+- Introduza as suas credenciais OVHcloud.
+- Clique no botão `Authorize`{.action} para autorizar as chamadas às API a partir deste site.
 
 A primeira permite-lhe obter o endereço IPv6 associado ao seu servidor.
 
@@ -486,6 +491,6 @@ sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-netw
 
 Para que o cloud-init volte a gerir a rede de forma automática, elimine o ficheiro recentemente criado e mova-o para outro diretório.
 
-## Saiba mais
+## Quer saber mais? <a name="go-further"></a>
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

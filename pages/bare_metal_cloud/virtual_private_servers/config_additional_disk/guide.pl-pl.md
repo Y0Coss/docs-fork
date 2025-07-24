@@ -31,9 +31,9 @@ Zapisz informacje dotyczące płatności i kliknij na `Zamów`{.action}. Po zain
 ### Zamontuj nową przestrzeń dyskową
 
 > [!warning]
-> OVHcloud świadczy usługi, za które jesteś odpowiedzialny w związku z ich konfiguracją i zarządzaniem. Jesteś więc odpowiedzialny za ich prawidłowe funkcjonowanie.
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Do Ciebie należy zatem zapewnienie ich prawidłowego działania.
 >
->Jeśli napotkasz trudności z przeprowadzeniem tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług i/lub przedyskutuj problem z naszą społecznością użytkowników na stronie https://community.ovh.com/en/. OVHcloud nie może udzielić Ci wsparcia technicznego w tym zakresie.
+> Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z [dostawcą usług specjalistycznych](/links/partner) lub kontakt z [naszą społecznością użytkowników](/links/community).
 >
 
 #### Na serwerze VPS Linux
@@ -293,10 +293,10 @@ W ostatnim oknie kliknij `Zakończ`{.action}, aby sformatować dysk. Będzie on 
 
 ### Zrezygnuj z opcji dodatkowego dysku
 
-W zakładce `Strona główna`{.action} przejdź do sekcji **Twoja konfiguracja**. Kliknij `...`{.action} obok opcji `Dodatkowe dyski` i w menu kontekstowym kliknij na `Zrezygnuj`{.action}.
+W zakładce `Strona główna`{.action}, w sekcji **Twoja konfiguracja** kliknij `...`{.action} obok opcji `Dodatkowe dyski` i kliknij `Rezygnacja`{.action}.
 
 ![rozwiązanie dodatkowego dysku](images/disk_vps02.png){.thumbnail}
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

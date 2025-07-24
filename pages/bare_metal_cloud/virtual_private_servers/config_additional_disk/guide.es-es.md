@@ -31,9 +31,9 @@ Tome nota de la información sobre los precios y haga clic en `Contratar`{.actio
 ### Montar el nuevo espacio de almacenamiento
 
 > [!warning]
-> OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
+> OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
->Si necesita ayuda, póngase en contacto con un proveedor de servicios especializado o debata el problema con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle soporte técnico sobre este asunto.
+> Si tiene problemas para realizar estas acciones, póngase en contacto con un [proveedor de servicios especializado](/links/partner) o hable del problema con nuestra [comunidad de usuarios](/links/community). OVHcloud no puede proporcionarle soporte técnico sobre este tema.
 >
 
 #### En un VPS Linux
@@ -293,10 +293,10 @@ En la última ventana, haga clic en `Finalizar`{.action} para dar formato al dis
 
 ### Dar de baja la opción de disco adicional
 
-En la pestaña `Inicio`{.action}, acceda a la sección **Su configuración**. Haga clic en `...`{.action} junto a la opción `Discos adicionales` y en el menú contextual haga clic en `Dar de baja`{.action}.
+En la pestaña `Inicio`{.action}, en la sección **Su configuración**, haga clic en `...`{.action} junto a la opción `Discos adicionales` y seleccione `Dar de baja`{.action}.
 
 ![baja del disco adicional](images/disk_vps02.png){.thumbnail}
 
 ## Más información
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

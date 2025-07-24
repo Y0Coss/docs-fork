@@ -22,7 +22,7 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 >
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and security. Since we have no administrative access to your devices, it is your responsibility to manage the software and to ensure they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -66,7 +66,12 @@ The IPv6 address and the IPv6 gateway assigned to your server will appear in the
 
 #### Via the OVHcloud API <a name="viaapi"></a>
 
-On the [OVHcloud API page](/links/api) click on `Login`{.action} in the top-right corner. On the following page, enter the credentials of your OVHcloud account.
+Go to the [OVHcloud console API](/links/console) page:
+
+- Click `Authentication`{.action} in the upper left corner.
+- Select `Login with OVHcloud SSO`{.action}.
+- Enter your OVHcloud credentials.
+- Click `Authorize`{.action} to allow performing API calls through the console.
 
 Use this call to retrieve the IPv6 address assigned to your server:
 
@@ -481,6 +486,6 @@ sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-netw
 In order to return to automatic management of your network by Cloud-init, delete the newly created file or move it to another directory.
 
 
-## Go further
+## Go further <a name="go-further"></a>
 
 Join our [community of users](/links/community).

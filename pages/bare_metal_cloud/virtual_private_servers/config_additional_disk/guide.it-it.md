@@ -31,9 +31,9 @@ Annota le informazioni relative alla tariffazione e clicca su `Ordina`{.action}.
 ### Montare il nuovo spazio di storage
 
 > [!warning]
-> OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 >
->In caso di difficoltà nell'effettuare queste azioni, contatta un fornitore di servizi specializzato e/o discuta il problema con la nostra Community di utenti all'indirizzo https://community.ovh.com/en/. OVHcloud non può fornirti assistenza tecnica su questo argomento.
+> In caso di difficoltà nell'esecuzione di queste operazioni, contattare un [fornitore di servizi specializzato](/links/partner) e/o discutere il problema con la nostra [comunità di utenti](/links/community). OVHcloud non può fornirti assistenza tecnica su questo argomento.
 >
 
 #### Su un VPS Linux
@@ -293,10 +293,10 @@ Nell'ultima finestra, clicca su `Terminare`{.action} per formattare il disco. Do
 
 ### Disattiva l'opzione di disco aggiuntivo
 
-Nella scheda `Home`{.action}, accedi alla sezione **La tua configurazione**. Clicca su `...`{.action} accanto all'opzione `Dischi aggiuntivi` e nel menu di scelta rapida clicca su `Disattiva`{.action}.
+Nella scheda `Home page`{.action}, nella sezione **La tua configurazione**, clicca su `...`{.action} accanto all’opzione `Dischi aggiuntivi` e poi clicca su `Disattiva`{.action}.
 
 ![disattivazione disco aggiuntivo](images/disk_vps02.png){.thumbnail}
 
 ## Per saperne di più
 
-Unisciti alla nostra Community di utenti <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

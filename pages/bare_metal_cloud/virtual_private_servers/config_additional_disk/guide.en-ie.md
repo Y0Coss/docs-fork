@@ -1,6 +1,6 @@
 ---
-title: 'Configuring an additional disk'
-excerpt: 'Find out how to add and configure additional storage space on a VPS'
+title: "How to configure an additional disk"
+excerpt: "Find out how to add and configure additional storage space on a VPS"
 updated: 2025-07-23
 ---
 
@@ -31,9 +31,9 @@ Take note of the pricing information, then click on `Order`{.action}. You will b
 ### Mounting the new storage space
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
->If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community of users](/links/community) if you experience any issues.
 >
 
 #### On a Linux VPS

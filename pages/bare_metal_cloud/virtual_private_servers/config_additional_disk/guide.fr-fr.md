@@ -31,9 +31,9 @@ Prenez note des informations de tarification, puis cliquez sur `Commander`{.acti
 ### Monter le nouvel espace de stockage
 
 > [!warning]
-> OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
->Si vous rencontrez des difficultés pour effectuer ces actions, veuillez contacter un prestataire de services spécialisé et/ou discuter du problème avec notre [communauté d'utilisateurs](/links/community). OVHcloud ne peut pas vous fournir de support technique sur ce sujet.
+> Si vous rencontrez des difficultés pour effectuer ces actions, veuillez contacter un [prestataire de services spécialisé](/links/partner) et/ou discuter du problème avec notre [communauté d'utilisateurs](/links/community). OVHcloud ne peut pas vous fournir de support technique sur ce sujet.
 >
 
 #### Sur un VPS Linux
@@ -293,7 +293,7 @@ Dans la dernière fenêtre, cliquez sur `Terminer`{.action} pour formater le dis
 
 ### Résilier l'option de disque additionnel
 
-Dans l'onglet `Accueil`{.action}, rendez-vous dans la section intitulée **Votre configuration**. Cliquez sur `...`{.action} à côté de l'option `Disques additionnels` et dans le menu contextuel cliquez sur `Résilier`{.action}.
+Depuis l'onglet `Accueil`{.action}, dans la section **Votre configuration**, cliquez sur `...`{.action} à côté de l'option `Disques additionnels` puis cliquez sur `Résilier`{.action}.
 
 ![résiliation disque additionnel](images/disk_vps02.png){.thumbnail}
 

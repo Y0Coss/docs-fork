@@ -21,7 +21,7 @@ IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVHcloud VPS wi
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](/links/community) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 ## Voraussetzungen
@@ -67,7 +67,12 @@ Die Ihrem Server zugewiesene IPv6-Adresse sowie das zugehörige IPv6-Gateway wer
 
 #### Über die OVHcloud API <a name="viaapi"></a>
 
-Klicken Sie auf der [OVHcloud API Seite](/links/api) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein. 
+Zur [OVHcloud Console API](/links/console)-Seite:
+
+- Klicken Sie oben links auf `Authentication`{.action}.
+- Wählen Sie `Login with OVHcloud SSO`{.action}.
+- Geben Sie Ihre Login-Daten für OVHcloud ein.
+- Klicken Sie auf `Authorize`{.action}, um die Ausführung von API-Aufrufen über die Konsole zu erlauben.
 
 Verwenden Sie diesen Aufruf, um die zu Ihrem Server gehörige IPv6-Adresse zu erhalten:
 

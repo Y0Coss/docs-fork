@@ -31,9 +31,9 @@ Tome nota das informações de tarifação e clique em `Encomendar`{.action}. Se
 ### Montar o novo espaço de armazenamento
 
 > [!warning]
-> A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
+> A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 >
-> Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>. A OVHcloud não lhe pode fornecer apoio técnico sobre este assumpto.
+> Se tiver problemas na realização destas ações, contacte um [fornecedor de serviços especializado](/links/partner) e/ou discuta o problema com a nossa [comunidade de utilizadores](/links/community). A OVHcloud não pode fornecer-lhe suporte técnico sobre este assumpto.
 >
 
 #### Num VPS Linux
@@ -293,10 +293,10 @@ Na última janela, clique em `Terminar`{.action} para formatar o disco. Ficará 
 
 ### Rescindir a opção de disco adicional
 
-No separador `Home`{.action}, aceda à secção rotulada **A sua configuração**. Clique em `...`{.action} junto à opção `Discos adicionais` e no respetivo menu clique em `Rescindir`{.action}.
+No separador `Página Inicial`{.action}, na secção **A sua configuração**, clique em `...`{.action} ao lado da opção `Discos adicionais` e, a seguir, clique em `Rescindir`{.action}.
 
 ![rescisão de disco adicional](images/disk_vps02.png){.thumbnail}
 
 ## Quer saber mais?
 
-Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

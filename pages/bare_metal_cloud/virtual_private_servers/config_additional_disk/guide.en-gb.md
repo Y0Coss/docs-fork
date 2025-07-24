@@ -33,7 +33,7 @@ Take note of the pricing information, then click on `Order`{.action}. You will b
 > [!warning]
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community](/links/community) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community of users](/links/community) if you experience any issues.
 >
 
 #### On a Linux VPS
@@ -293,7 +293,7 @@ In the last window, click `Finish`{.action} to format the disk. It will be avail
 
 ### How to cancel the additional disk option
 
-In the `Home`{.action} tab, go to the section labelled **Your configuration**. Click on `...`{.action} next to the option `Additional disks` and in the context menu click on `Close`{.action}.
+In the `Home`{.action} tab, in the **Your configuration** section, click `...`{.action} next to the `Additional disks` option, then click `Close`{.action}.
 
 ![canceldiskvps](images/disk_vps02.png){.thumbnail}
 
