@@ -27,9 +27,7 @@ updated: 2025-07-24
 
 ## Objective
 
-The OVHcloud Load Balancer TCP frontends do not currently support the HTTP/2 protocol. However, you can bypass this restriction by using TCP mode with the ALPN extension of the TLS protocol.
-
-ALPN (Application-Layer Protocol Negotiation) is a TLS extension that enables the application layer to negotiate which protocol will be used (h2 in this case).
+The TCP frontends of the OVHcloud Load Balancer, operating at Layer 4 (Transport level), do not directly interpret the HTTP/2 protocol. However, they can route HTTP/2 traffic between the client and the backend servers, provided that its routing is manually configured.
 
 **This guide is designed to help you create an HTTP/2 service with the OVHcloud Load Balancer solution. Here, we will configure this service to balance the load across several servers responding with HTTP/2.**
 
