@@ -276,6 +276,8 @@ Status   Name               DisplayName
 Running  QEMU-GA            QEMU Guest Agent
 ```
 
+<a name="go-further"></a>
+
 ## Go further
 
 [Using snapshots on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps)
