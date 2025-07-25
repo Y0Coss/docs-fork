@@ -119,7 +119,7 @@ Queste opzioni si riferiscono a servizi VPS aggiuntivi per il backup e il ripris
 >>
 > Backup automatizzato
 >>
->> Il backup giornaliero del sistema viene creato automaticamente (esclusi i dischi aggiuntivi) e conservato per 24 ore. Passando all'opzione Backup automatico Premium, disporrai degli ultimi 7 backup giornalieri del tuo VPS disponibili per il montaggio e il ripristino.  
+>> Il backup giornaliero del sistema viene creato automaticamente (esclusi i dischi aggiuntivi) e conservato per 24 ore. Passando all'opzione **Backup automatico Premium**, disporrai degli ultimi 7 backup giornalieri del tuo VPS disponibili per il montaggio e il ripristino.  
 Rispetto alle copie istantanee manuali, questa funzione aumenta la sicurezza dei dati creando diversi punti di ripristino a intervalli regolari.
 >>
 

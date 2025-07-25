@@ -119,9 +119,9 @@ Ces options font référence à des services VPS supplémentaires pour les sauve
 >> Un snapshot sur un VPS est une sauvegarde instantanée de l'état du serveur, qui permet de restaurer rapidement le système en cas de problème. L'option `Snapshot` permet de créer un snapshot manuel comme point de restauration unique.
 >>
 > Backup automatisé
->> 
->> Une sauvegarde quotidienne du système est créée automatiquement (hors disques additionnels) et conservée 24h/24. En passant à l'option « Sauvegarde automatique Premium », vous disposez des 7 dernières sauvegardes quotidiennes de votre VPS à monter et restaurer.  
-Par rapport aux snapshots manuels, cette fonctionnalité augmente la sécurité des données en créant plusieurs points de restauration à intervalles réguliers.
+>>
+>> Une sauvegarde quotidienne du système (hors disques additionnels) est réalisée automatiquement et conservée durant 24 heures. En passant à l'option « **Sauvegarde automatique Premium** », vous disposerez des 7 dernières sauvegardes quotidiennes de votre VPS, que vous pourrez utiliser pour des montages et des restaurations.  
+>> Par rapport aux snapshots manuels, cette fonctionnalité augmente la sécurité des données en créant plusieurs points de restauration à intervalles réguliers.
 >>
 
 Retrouvez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit VPS](/links/bare-metal/vps-options) et dans nos [guides respectifs](/products/bare-metal-cloud-virtual-private-servers-backups).

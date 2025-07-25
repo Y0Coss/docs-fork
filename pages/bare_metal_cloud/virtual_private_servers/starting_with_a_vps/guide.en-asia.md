@@ -119,8 +119,8 @@ These options refer to additional VPS services for backups and restoration of yo
 >>
 > Automated backup
 >>
->> A daily backup of the system is created automatically (excluding additional disks) and retained for 24 hours. By upgrading to the Automatic Backup Premium option, you will have the last 7 daily backups of your VPS available to mount and restore.  
-Compared to manual snapshots, this feature increases data security by creating several restore points at regular intervals.
+>> A daily backup of the system (excluding additional disks) is created automatically and retained for 24 hours. By upgrading to the **Automatic Backup Premium** option, you will have the last 7 daily backups of your VPS available to mount and restore.  
+>> Compared to manual snapshots, this feature increases data security by creating several restore points at regular intervals.
 >>
 
 You can find all information on the available backup solutions for your service on the [VPS product page](/links/bare-metal/vps-options) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers-backups).

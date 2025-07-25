@@ -119,7 +119,7 @@ Estas opciones hacen referencia a servicios VPS adicionales que pueden solicitar
 >>
 > Backup automatizado
 >>
->> Automáticamente se crea una copia de seguridad diaria del sistema (excluyendo discos adicionales) y se conserva durante 24 horas. Al cambiar a la opción Automatic Backup Premium, dispondrá de las últimas 7 copias de seguridad diarias de su VPS para el montaje y la restauración.  
+>> Automáticamente se crea una copia de seguridad diaria del sistema (excluyendo discos adicionales) y se conserva durante 24 horas. Al cambiar a la opción **Automatic Backup Premium**, dispondrá de las últimas 7 copias de seguridad diarias de su VPS para el montaje y la restauración.  
 En comparación con las copias instantáneas manuales, esta función aumenta la seguridad de los datos al crear varios puntos de restauración a intervalos regulares.
 >>
 

@@ -119,7 +119,7 @@ Estas opções referem-se a serviços VPS adicionais para backups e restauro do 
 >>
 > Backup automatizado
 >>
->> É automaticamente criado um backup diário do sistema (excluindo discos adicionais), que é guardado durante 24 horas. Ao passar para a opção Backup Premium automático, fica com disponíveis 7 últimos backups diários do seu VPS para montagem e restauro.  
+>> É automaticamente criado um backup diário do sistema (excluindo discos adicionais), que é guardado durante 24 horas. Ao passar para a opção **Backup Premium automático**, fica com disponíveis 7 últimos backups diários do seu VPS para montagem e restauro.  
 Em comparação com instantâneos manuais, esta funcionalidade aumenta a segurança dos dados através da criação de vários pontos de restauro em intervalos regulares.
 >>
 

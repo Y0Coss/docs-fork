@@ -119,7 +119,7 @@ Opcje te odnoszą się do dodatkowych usług VPS służących do wykonywania kop
 >>
 > Automatyczny backup
 >>
->> Codzienna kopia zapasowa systemu jest tworzona automatycznie (z wyłączeniem dysków dodatkowych) i przechowywana przez 24 godziny. Po zamówieniu opcji Automatyczny backup Premium będziesz miał do dyspozycji 7 ostatnich codziennych kopii zapasowych serwera VPS do zamontowania i przywrócenia.  
+>> Codzienna kopia zapasowa systemu jest tworzona automatycznie (z wyłączeniem dysków dodatkowych) i przechowywana przez 24 godziny. Po zamówieniu opcji **Automatyczny backup Premium** będziesz miał do dyspozycji 7 ostatnich codziennych kopii zapasowych serwera VPS do zamontowania i przywrócenia.  
 W porównaniu z migawkami ręcznymi funkcja ta zwiększa bezpieczeństwo danych, tworząc kilka punktów przywracania w regularnych odstępach czasu.
 >>
 
