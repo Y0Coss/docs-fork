@@ -54,7 +54,7 @@ Pour plus de flexibilité avec vos sauvegardes, vous pouvez activer l'option Sau
 
 La mise à niveau vers « Premium » améliore votre option de sauvegarde automatique vers une sauvegarde quotidienne sur 7 jours glissants. Cela vous permet de revenir à des versions de sauvegarde plus anciennes par rapport à la rotation sur 24 heures de l'option standard.
 
-Après avoir sélectionné votre VPS, cliquez sur l'onglet `Sauvegarde automatisée`{.action} dans le menu horizontal.
+Après avoir sélectionné votre VPS, cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal.
 
 Cliquez sur le lien `Commander un backup premium`{.action}.
 
@@ -66,7 +66,7 @@ Cliquez sur le lien `Commander un backup premium`{.action}.
 
 Vous pouvez modifier l'heure à laquelle la sauvegarde aura lieu.
 
-Après avoir sélectionné votre VPS, cliquez sur l'onglet `Sauvegarde automatisée`{.action} dans le menu horizontal.
+Après avoir sélectionné votre VPS, cliquez sur l'onglet `Backup automatisé`{.action} dans le menu horizontal.
 
 Cliquez sur `...`{.action} au-dessus du tableau puis sur `Editer`{.action}.
 
