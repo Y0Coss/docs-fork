@@ -67,7 +67,7 @@ Sì, un VPS può essere suddiviso in partizioni e organizzato in base a necessit
 ### Viene eseguito regolarmente un backup del VPS?
 
 È consigliabile adottare una strategia di backup adeguata in base alla sensibilità dei dati.  
-Per maggiori informazioni sulle opzioni disponibili, consulta la nostra pagina Web sui VPS (/links/bare-metal/vps-options).
+Per maggiori informazioni sulle opzioni disponibili, consulta la nostra [pagina Web sui VPS](/links/bare-metal/vps-options).
 
 ### Come proteggere un VPS?
 
