@@ -91,7 +91,7 @@ Dès lors, plusieurs possibilités selon l'état des voyants.
 
 - **Le voyant PON est éteint** : assurez-vous que le câble de fibre optique est correctement relié à votre ONT et que celui-ci est en bon état (non plié ou non coincé sous un meuble). Essayez de redémarrer l'ONT grâce au bouton-poussoir « ON/OFF », situé sur une tranche de l'appareil. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
 
-- **Le voyant « Alarm » est allumé en rouge fixe ou clignote rapidement** : essayez de redémarrer l'ONT grâce au bouton-poussoir « ON/OFF », situé sur une tranche de l'appareil. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
+- **Le voyant « Alarm » (ou « LOS ») est allumé en rouge fixe ou clignote rapidement** : essayez de redémarrer l'ONT grâce au bouton-poussoir « ON/OFF », situé sur une tranche de l'appareil. Si le défaut persiste, [prenez contact avec notre équipe support](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 - **L'état des voyants indique que tout fonctionne correctement** : cela signifie que l'ONT est allumé et que la connexion avec le signal optique est établie. Dans ce cas, poursuivez vers l'étape 3 « [vérifier le fonctionnement jusqu'à la box OVHcloud](/pages/web_cloud/internet/internet_access/ftth_fix_access#etape-3-verifier-le-fonctionnement-jusqua-la-box-ovh) ».
 
