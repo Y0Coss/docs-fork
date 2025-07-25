@@ -1,7 +1,7 @@
 ---
 title: "How to use automatic backups on a VPS"
 excerpt: "Find out how to use the automatic backup option in the OVHcloud Control Panel to secure your data"
-updated: 2025-07-31
+updated: 2025-08-05
 ---
 
 ## Objective

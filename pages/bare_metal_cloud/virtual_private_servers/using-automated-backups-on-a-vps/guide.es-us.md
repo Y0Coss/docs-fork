@@ -1,7 +1,7 @@
 ---
 title: "Cómo utilizar las copias de seguridad automáticas en un VPS"
 excerpt: "Descubra cómo utilizar la opción de backup automático en el área de cliente de OVHcloud para proteger sus datos"
-updated: 2023-08-07
+updated: 2025-08-05
 ---
 
 ## Objetivo

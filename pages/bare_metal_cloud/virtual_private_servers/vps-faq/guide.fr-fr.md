@@ -1,6 +1,6 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2025-07-31
+updated: 2025-08-05
 ---
 
 ## FAQ VPS

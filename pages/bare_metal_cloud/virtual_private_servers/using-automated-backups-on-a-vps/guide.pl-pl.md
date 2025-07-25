@@ -1,7 +1,7 @@
 ---
 title: "Jak korzystać z automatycznych kopii zapasowych na prywatnym serwerze wirtualnym"
 excerpt: "Dowiedz się, jak zabezpieczyć dane przy użyciu opcji automatycznych kopii zapasowych z poziomu Panelu klienta"
-updated: 2023-08-07
+updated: 2025-08-05
 ---
 
 ## Wprowadzenie

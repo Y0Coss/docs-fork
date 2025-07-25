@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit einem VPS
 excerpt: Erfahren Sie hier, wie Sie einen VPS in Ihrem Kundencenter verwalten sowie die ersten Schritte zum Start, inklusive Remote-Verbindungen und Sicherheitsmaßnahmen
-updated: 2025-07-31
+updated: 2025-08-05
 ---
 
 ## Ziel

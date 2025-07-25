@@ -1,7 +1,7 @@
 ---
 title: "Comment utiliser les sauvegardes automatiques sur un VPS"
 excerpt: "Découvrez comment utiliser l'option de sauvegarde automatique de votre espace client pour sécuriser vos données"
-updated: 2023-08-07
+updated: 2025-08-05
 ---
 
 ## Objectif
