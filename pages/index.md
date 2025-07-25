@@ -1188,6 +1188,7 @@
                 + [AI Deploy - Tutorial - Create an application to play rock paper scissors with YoloV8](public_cloud/ai_machine_learning/deploy_tuto_15_rock_paper_scissors)
                 + [AI Deploy - Tutorial - Deploy Whisper Speech Recognition Model](public_cloud/ai_machine_learning/deploy_tuto_17_streamlit_whisper)
                 + [AI Deploy - Tutorial - Deploy Stable Diffusion WebUI](public_cloud/ai_machine_learning/deploy_tuto_18_gradio_stable_diffusion_webui)
+                + [AI Deploy - Tutorial - Deploy FLUX Models](public_cloud/ai_machine_learning/deploy_tuto_19_flux)
         + [AI Endpoints](products/public-cloud-ai-and-machine-learning-ai-endpoints)
             + [Guides](public-cloud-ai-and-machine-learning-ai-endpoints-guides)
                 + [AI Endpoints - Getting started](public_cloud/ai_machine_learning/endpoints_guide_01_getting_started)
