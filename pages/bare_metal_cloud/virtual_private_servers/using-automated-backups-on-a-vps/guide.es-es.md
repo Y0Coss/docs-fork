@@ -1,18 +1,14 @@
 ---
-title: 'Usar copias de seguridad automáticas en un servidor virtual privado (VPS)'
-excerpt: 'Cómo activar y usar la opción «Copia de seguridad automatizada» en el panel de control de OVHcloud'
+title: "Cómo utilizar las copias de seguridad automáticas en un VPS"
+excerpt: "Descubra cómo utilizar la opción de backup automático en el área de cliente de OVHcloud para proteger sus datos"
 updated: 2023-08-07
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
 ## Objetivo
 
-Esta opción disponible desde el área de cliente de OVHcloud le ofrece una forma conveniente de disponer frecuentemente de copias de seguridad completas del servidor virtual privado (VPS) sin tener que conectarse al servidor para crearlas y restaurarlas manualmente. Otra ventaja es que también puede optar por montar una copia de seguridad y acceder a ella a través del protocolo/programa SSH.
+La opción de copia de seguridad automática para VPS es una forma cómoda de tener copias de seguridad completas del sistema disponibles desde el área de cliente de OVHcloud sin tener que conectarse al servidor para crearlas y restaurarlas manualmente. Otra ventaja es que también puede optar por montar una copia de seguridad y acceder a sus archivos de forma remota.
 
-**En esta guía, se explica cómo usar copias de seguridad automáticas en su servidor virtual privado (VPS) de OVHcloud.**
+**Esta guía explica la opción de backup automático para su VPS OVHcloud.**
 
 > [!primary]
 >
@@ -27,17 +23,49 @@ Antes de aplicar las opciones de copia de seguridad, le recomendamos que consult
 
 ## Procedimiento
 
+### Introducción al contenido
+
+- [Cómo actualizar a Automatic Backup Premium](#premium)
+- [Configurar la hora del backup](#time)
+- [Restaurar una copia de seguridad desde el área de cliente de OVHcloud](#restore)
+- [Cómo montar y acceder a un backup](#mount)
+    - [En Secure Shell](#shell)
+    - [En Windows](#windows)
+- [Buenas prácticas para utilizar la copia de seguridad automática](#bestpractice)
+    - [Configuración del agente QEMU en un VPS](#qemu)
+        - [Distribuciones Debian](#deb)
+        - [Distribuciones Redhat](#red)
+        - [Windows](#win)
+
+
 Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
-### Paso 1: Activar la opción «Copias de seguridad automatizadas»
+Al contratar un VPS, la opción de servicio gratuito incluye una única copia de seguridad automática diaria. Esta opción de backup estándar le permite:
 
-Después de seleccionar su servidor virtual privado (VPS), haga clic en la pestaña `Copia de seguridad automatizada`{.action} en el menú horizontal.
+- Monte y restaure el backup diario.
+- Establecer la hora del día en que se creará esta copia de seguridad.
 
-En el siguiente paso, tenga en cuenta la información sobre los precios y haga clic en `Contratar`{.action}. Se le guiará por el proceso de contratación y recibirá un mensaje de correo electrónico de confirmación. Las copias de seguridad se crearán ahora diariamente hasta que se vuelva a cancelar la opción.
+Para mayor flexibilidad en sus backups, puede activar la opción Backup Automático Premium.
 
-#### Configurar la hora del backup
+<a name="premium"></a>
 
-Puede cambiar la hora en la que se realizará la copia de seguridad. 
+### Cómo actualizar a Automatic Backup Premium
+
+La actualización a «Premium» mejora su opción de backup automático a un backup diario continuo de 7 días. Esto le permite volver a versiones de backup más antiguas en comparación con la rotación de 24 horas de la opción estándar.
+
+Una vez seleccionado el VPS, haga clic en la pestaña `Copia de seguridad automatizada`{.action} del menú horizontal.
+
+Haga clic en el enlace `Contratar una copia de seguridad premium`{.action}.
+
+![autobackupvps](images/backup_vps.png){.thumbnail}
+
+<a name="time"></a>
+
+### Configurar la hora del backup
+
+Puede cambiar la hora en la que se realizará la copia de seguridad.
+
+Una vez seleccionado el VPS, haga clic en la pestaña `Copia de seguridad automatizada`{.action} del menú horizontal.
 
 Haga clic en `...`{.action} encima de la tabla y, seguidamente, en `Editar`{.action}.
 
@@ -52,9 +80,12 @@ Se abrirá una ventana en la que podrá cambiar la hora del día (UTC 24 horas).
 > Una vez validado en el área de cliente, el cambio será efectivo en un plazo de 24 a 48 horas.
 >
 
-### Paso 2: Restaurar una copia de seguridad desde el panel de control de OVHcloud
+<a name="restore"></a>
 
-Después de seleccionar su servidor virtual privado (VPS), haga clic en la pestaña `Copia de seguridad automatizada`{.action} en el menú horizontal. Habrá un máximo de 7 copias de seguridad diarias disponibles (15 copias de seguridad diarias para los VPS de las antiguas gamas). Haga clic en `...`{.action} junto a la copia de seguridad que quiera restaurar y seleccione `Restauración`{.action}.
+### Restaurar una copia de seguridad desde el área de cliente de OVHcloud
+
+Después de seleccionar su servidor virtual privado (VPS), haga clic en la pestaña `Copia de seguridad automatizada`{.action} en el menú horizontal.  
+Haga clic en `...`{.action} junto a la copia de seguridad que quiera restaurar y seleccione `Restauración`{.action}.
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
 
@@ -65,7 +96,9 @@ Si recientemente ha cambiado su contraseña raíz, asegúrese de marcar la opci�
 Tenga en cuenta que las copias de seguridad automatizadas no incluirán sus discos adicionales.
 >
 
-### Cómo montar una copia de seguridad y acceder a ella
+<a name="mount"></a>
+
+### Cómo montar y acceder a un backup
 
 No es necesario sobrescribir íntegramente el servicio existente con una restauración. La opción «Montaje» le permite acceder a los datos de la copia de seguridad para recuperar sus archivos.
 
@@ -82,6 +115,8 @@ Haga clic en `...`{.action} junto a la copia de seguridad a la que necesite acce
 Cuando se utiliza esta opción, se crea y monta una copia de seguridad de lectura-escritura. La copia de seguridad original sigue estando disponible para futuras restauraciones.
 
 Una vez completado el proceso, recibirá un mensaje de correo electrónico. Ahora, puede conectarse a su servidor virtual privado (VPS) y añadir la partición donde se encuentra su copia de seguridad.
+
+<a name="shell"></a>
 
 #### En Secure Shell
 
@@ -121,6 +156,8 @@ Recuerde desmontar la copia de seguridad automática una vez que haya finalizado
 
 ![unmount](images/backup_vps_unmount.png){.thumbnail}
 
+<a name="windows"></a>
+
 #### En Windows
 
 Establezca una conexión RDP (Remote Desktop) con su VPS.
@@ -149,15 +186,21 @@ Recuerde desmontar la copia de seguridad automática una vez que haya finalizado
 > Tenga en cuenta que se reiniciará el servidor al desmontar la copia de seguridad.
 >
 
+<a name="bestpractice"></a>
+
 ### Buenas prácticas para utilizar la copia de seguridad automática
 
 La función de backup automático está basada en los snapshots VPS. Le recomendamos que siga los pasos que se indican a continuación para evitar cualquier anomalía antes de utilizar esta opción.
+
+<a name="qemu"></a>
 
 #### Configuración del agente QEMU en un VPS
 
 Los snapshots son imágenes instantáneas de su sistema en ejecución (« live snapshots »). Para garantizar la disponibilidad de su sistema durante la creación del snapshot, el software QEMU permite preparar el sistema de archivos para este proceso.
 
 La mayoría de las distribuciones no disponen por defecto de *qemu-guest* obligatorio. Además, las restricciones de licencia pueden impedir que OVHcloud lo incluya en las imágenes de los SO disponibles. Por lo tanto, le recomendamos que compruebe si este agente está activado en su VPS y, en caso negativo, que lo instale. Para ello, conéctese a su VPS por SSH y siga las instrucciones que se indican en función de su sistema operativo.
+
+<a name="deb"></a>
 
 ##### **Distribuciones Debian (Debian, Ubuntu)**
 
@@ -186,6 +229,8 @@ Inicie el servicio para garantizar que está en ejecución:
 ```bash
 sudo service qemu-guest-agent start
 ```
+
+<a name="red"></a>
 
 ##### **Distribuciones Redhat (CentOS, Fedora)**
 
@@ -216,13 +261,15 @@ sudo service qemu-guest-agent start
 sudo service qemu-guest-agent status
 ```
 
+<a name="win"></a>
+
 ##### **Windows**
 
 Puede instalar el agente a través de un archivo MSI, disponible en el sitio web del proyecto Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
 Compruebe que el servicio está en ejecución con el siguiente comando PowerShell:
 
-```powershell
+```console
 PS C:\Users\Administrator> Get-Service QEMU-GA
 Status   Name               DisplayName
 ------   ----               -----------
