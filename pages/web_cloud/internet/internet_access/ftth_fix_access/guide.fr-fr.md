@@ -81,7 +81,7 @@ Commencez en relevant l'état des trois voyants mentionnés ci-dessous sur l'app
 |Voyant|États et significations|
 |---|---|
 |Power|**Vert fixe** : l'équipement ONT est bien alimenté électriquement.<br> **Éteint** : l'équipement ONT n'est pas raccordé électriquement ou n'est pas allumé (bouton ON/OFF) ou est hors service.|
-|Alarm|**Éteint** : l'équipement ONT fonctionne correctement.<br>**Rouge fixe** : le signal optique présente des anomalies LOF/LOS (pertes de frames/pertes de signal)|
+|Alarm (ou LOS)|**Éteint** : l'équipement ONT fonctionne correctement.<br>**Rouge fixe** : le signal optique présente des anomalies LOF/LOS (pertes de frames/pertes de signal)|
 |PON|**Vert fixe** : la synchronisation optique (fibre) est établie.<br> **Vert clignotant** : un signal optique (fibre) est détecté, la synchronisation est en train de s'établir.<br> **Éteint** : le signal optique (fibre) n'est pas/plus détecté par l'équipement ONT.|
 |LAN|**Vert clignotant** : fonctionnement normal, des données sont échangées entre l'équipement ONT et le routeur.<br>**Éteint** : il n'y a pas/plus de communication entre l'équipement ONT et le routeur OVHcloud, via un câble RJ45.<br>**Vert fixe** : cela signifie que l'équipement ONT est bien relié au routeur via un câble RJ45 mais il n'y a pas de communication de données entre ces deux éléments.|
 
