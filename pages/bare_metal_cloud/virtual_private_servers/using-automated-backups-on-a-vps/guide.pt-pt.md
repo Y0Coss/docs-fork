@@ -1,59 +1,57 @@
 ---
-title: "Utilização do backup automático num alojamento VPS"
-excerpt: "Saiba como usar a opção Backup automático na Área de Cliente OVHcloud para proteger os seus dados"
+title: "Como utilizar os backups automatizados num VPS"
+excerpt: "Descubra como utilizar a opção Backup automatizado a partir da Área de Cliente OVHcloud para proteger os seus dados"
 updated: 2025-08-05
 ---
 
 ## Objetivo
 
-A opção de backup automático para VPS oferece uma forma prática de ter backups do sistema completos disponíveis na Área de Cliente OVHcloud sem ter de se conectar ao servidor para os criar e restaurar manualmente. Outra vantagem é que também pode optar por montar um backup e depois aceder aos seus ficheiros remotamente.
+A opção de Backup automatizado para VPS oferece uma forma prática de ter backups do sistema completos disponíveis na Área de Cliente OVHcloud sem ter de se conectar ao servidor para os criar e restaurar manualmente. Outra vantagem é que também pode optar por montar um backup e depois aceder aos seus ficheiros remotamente.
 
-**Este guia explica a opção de backup automático para o seu VPS OVHcloud.**
+**Este guia explica a opção de Backup automatizado para o seu VPS OVHcloud.**
 
 > [!primary]
->
-Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e perguntas frequentes do produto](/links/bare-metal/vps-options) para obter uma comparação de preços e outras informações.
+> Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e perguntas frequentes do produto](/links/bare-metal/vps-options) para obter uma comparação de preços e outras informações.
 >
 
 ## Requisitos
 
-- acesso à [Área de Cliente OVHcloud](/links/manager)
-- um [serviço VPS](/links/bare-metal/vps) OVHcloud já instalado
-- acesso administrativo (sudo) via SSH ao seu alojamento VPS (opcional)
+- Ter acesso a [Área de Cliente OVHcloud](/links/manager).
+- Ter um [VPS OVHcloud](/links/bare-metal/vps) já configurado.
+- Ter acesso de administrador (sudo) por SSH ao VPS (opcional).
 
 ## Instruções
 
 ### Apresentação do conteúdo
 
-- [Como passar para o Backup Automático Premium](#premium)
+- [Como passar para o Backup automatizado Premium](#premium)
 - [Configurar a hora do backup](#time)
 - [Como restaurar um backup a partir da Área de Cliente OVHcloud](#restore)
 - [Como montar e aceder a um backup](#mount)
     - [Em Secure Shell](#shell)
     - [Em Windows](#windows)
-- [Boas práticas para a utilização do backup automático](#bestpractice)
+- [Boas práticas para a utilização do Backup automatizado](#bestpractice)
     - [Configuração do agente QEMU num VPS](#qemu)
         - [Distribuições Debian](#deb)
         - [Distributions Redhat](#red)
         - [Windows](#win)
 
-
 Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 Quando adquire um VPS, é incluído um backup automático diário como opção de serviço gratuito. Esta opção de backup standard permite:
 
-- Monte e restaure o backup diário.
-- Defina a hora do dia em que este backup será criado.
+- Montar e restaurar o backup diário.
+- Definir a hora de criação deste backup.
 
-Para uma maior flexibilidade dos seus backups, pode ativar a opção Backup Automático Premium.
+Para uma maior flexibilidade dos seus backups, pode ativar a opção Backup automatizado Premium.
 
 <a name="premium"></a>
 
-### Como passar para o Backup Automático Premium
+### Como passar para o Backup automatizado Premium
 
-A atualização para o "Premium" melhora a sua opção de backup automático para um backup diário de atualização de 7 dias. Isto permite-lhe voltar às versões de backup mais antigas em comparação com a rotação de 24 horas da opção standard.
+A atualização para o Backup automatizado Premium melhora a sua opção de backup automático para um backup diário de atualização de 7 dias. Isto permite-lhe voltar às versões de backup mais antigas em comparação com a rotação de 24 horas da opção standard.
 
-Após selecionar o seu alojamento VPS, clique no separador `Backup automático`{.action} no menu horizontal.
+Após selecionar o seu alojamento VPS, clique no separador `Backup automatizado`{.action} no menu horizontal.
 
 Clique no link `Encomendar uma cópia de segurança premium`{.action}.
 
@@ -86,7 +84,7 @@ Na nova janela, altere a hora do dia (norma UTC 24 horas). Clique em `Confirmar`
 
 ### Como restaurar um backup a partir da Área de Cliente OVHcloud
 
-Após selecionar o seu alojamento VPS, clique no separador `Backup automático`{.action} no menu horizontal.  
+Após selecionar o seu alojamento VPS, clique no separador `Backup automatizado`{.action} no menu horizontal.  
 Clique em `...`{.action} junto ao backup pretendido e selecione `Restauro`{.action}.
 
 ![autobackupvps](images/backup_vps_step1.png){.thumbnail}
@@ -95,7 +93,7 @@ Caso tenha modificado recentemente a palavra-passe da raiz (*root*), assegure-se
 
 > [!alert]
 >
-Tenha em atenção que os backups automáticos não incluem os seus discos adicionais.
+> Tenha em atenção que os backups automáticos não incluem os seus discos adicionais.
 >
 
 <a name="mount"></a>
@@ -105,16 +103,17 @@ Tenha em atenção que os backups automáticos não incluem os seus discos adici
 Não é necessário restaurar completamente o seu atual serviço. A opção “Montar” permite-lhe aceder aos dados do seu backup para obter os seus ficheiros.
 
 > [!warning]
->A OVHcloud presta-lhe serviços cuja configuração e gestão são da sua inteira responsabilidade, cabendo-lhe a si assegurar o seu correto funcionamento.
 >
->Este guia foi concebido para o ajudar, tanto quanto possível, nas tarefas mais comuns. No entanto, caso tenha alguma dificuldade, recomendamos que contacte um fornecedor especializado e/ou o editor do software do serviço, uma vez que não poderemos assisti-lo pessoalmente. Para mais informações, consulte a secção “Vá mais longe” neste guia.
+> A OVHcloud presta-lhe serviços cuja configuração e gestão são da sua inteira responsabilidade, cabendo-lhe a si assegurar o seu correto funcionamento.
+>
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, consulte "[Quer saber mais?](#go-further)" deste guia.
 >
 
 Clique em `...`{.action} junto ao backup pretendido e selecione `Montar`{.action}.
 
 ![autobackupvps](images/backup_vps_step2.png){.thumbnail}
 
-Quando utiliza esta opção, é criada e montada uma cópia de leitura/escrita do backup. O backup original está disponível tal como está para restauros futuros.
+Quando utiliza esta opção, é criada e montada uma cópia do backup para leitura e escrita. O backup original permanece disponível como está para restauros futuros.
 
 Após concluir o processo, irá receber um e-mail de confirmação. Poderá então ligar-se ao seu alojamento VPS e adicionar a partição onde o seu backup está localizado.
 
@@ -200,7 +199,7 @@ A funcionalidade de backup automático é baseada nas snapshots VPS. Recomendamo
 
 As snapshots são imagens instantâneas do seu sistema em execução (“live snapshots”). Para garantir a disponibilidade do seu sistema aquando da criação da snapshot, o agente QEMU é utilizado para preparar o sistema de ficheiros ao processo.
 
-Na maioria das distribuições, o *comutador* necessário não está instalado de forma padrão. Além disso, as restrições de licença podem impedir a OVHcloud de o incluir nas imagens de SO disponíveis. Por consequente, recomenda-se que verifique e instale o agente caso não esteja ativo no seu VPS. Ligue-se ao seu VPS em SSH e siga as instruções abaixo, em função do seu sistema operativo.
+O agente "**wemu-guest-agent**" não está instalado por predefinição na maioria das distribuições. Além disso, as restrições de licença podem impedir a OVHcloud de o incluir nas imagens de SO disponíveis. Por consequente, recomenda-se que verifique e instale o agente caso não esteja ativo no seu VPS. Ligue-se ao seu VPS em SSH e siga as instruções abaixo, em função do seu sistema operativo.
 
 <a name="deb"></a>
 
@@ -210,10 +209,15 @@ Utilize o seguinte comando para verificar se o sistema está corretamente config
 
 ```bash
 file /dev/virtio-ports/org.qemu.guest_agent.0
+```
+
+O resultado esperado é:
+
+```console
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Se o resultado for diferente (“No such file or directory”), instale a última versão do pacote:
+Se o resultado for diferente, como por exemplo "No such file or diretory", instale a versão mais recente do pacote:
 
 ```bash
 sudo apt-get update
@@ -240,10 +244,15 @@ Utilize o seguinte comando para verificar se o sistema está corretamente config
 
 ```bash
 file /dev/virtio-ports/org.qemu.guest_agent.0
+```
+
+O resultado esperado é:
+
+```console
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Se o resultado for diferente (“No such file or directory”), instale e ative o agente:
+Se o resultado for diferente, como por exemplo "No such file or diretory", instale e ative o agente:
 
 ```bash
 sudo yum install qemu-guest-agent
@@ -278,8 +287,10 @@ Status   Name               DisplayName
 Running  QEMU-GA            QEMU Guest Agent
 ```
 
+<a name="go-further"></a>
+
 ## Quer saber mais?
 
 [Utilizar snapshots num alojamento VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps)
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).
