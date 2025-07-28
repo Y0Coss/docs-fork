@@ -49,7 +49,8 @@ Die Edge Network Firewall reduziert die Anfälligkeit für DDoS-Angriffe im Netz
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}. Über das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und zugehörige Dienste** können Sie Ihre Dienste nach Kategorien filtern.
 
-![filter service](images/selectservice_cut.png){.thumbnail}
+![filter service](images/selectservice_cut.png){.thumbnail}   
+
 
 Klicken Sie anschließend rechts neben der IPv4 auf `...`{.action} und wählen Sie `Firewall erstellen`{.action}.
 
@@ -159,9 +160,9 @@ Beispiel: Ein Paket für den TCP-Port 80 wird von Regel 2 abgefangen und die fol
 
 ### Schutz vor Angriffen - Aktivität im Scrubbing Center
 
-Unsere Infrastruktur für DDoS-Schutz (VAC) läuft automatisch. Der Schutz erfolgt über das automatische Reinigungszentrum. In diesem Bereich untersucht unsere fortschrittliche Technologie die Datenpakete und versucht, den DDoS-Datenverkehr zu entfernen, während der legitime Datenverkehr durchgelassen wird.
+Unsere Infrastruktur für DDoS-Schutz (VAC) läuft automatisch. Der Schutz erfolgt über das Scrubbing Center. In diesem Bereich untersucht unsere Technik die Datenpakete und versucht, den DDoS-Datenverkehr zu entfernen, während der legitime Datenverkehr durchgelassen wird.
 
-Alle IPs von OVHcloud werden automatisch gemildert. Wird bösartiger Traffic entdeckt, wird das Scrubbing Center aktiviert. Dieser Status wird durch den Status „Erzwungen“ für eine bestimmte IP-Adresse angezeigt. Zu diesem Zeitpunkt ist auch die Edge Network Firewall aktiv. Die Situation normalisiert sich wieder, wenn der Angriff abgemildert wird und keine verdächtigen Aktivitäten mehr beobachtet werden.
+Alle IPs von OVHcloud werden automatisch protektiert. In der Regel ist dies die beste Wahl für Ihre Dienste. Wird illegitimer Traffic entdeckt, wird das Scrubbing Center aktiviert. Dies wird durch den Status „Erzwungen“ für eine bestimmte IP-Adresse angezeigt. Zu diesem Zeitpunkt ist auch die Edge Network Firewall aktiv. Die Situation normalisiert sich wieder, wenn der Angriff abgemildert wurde und keine verdächtigen Aktivitäten mehr beobachtet werden.
 
 > [!success]
 > **Hinweis**
