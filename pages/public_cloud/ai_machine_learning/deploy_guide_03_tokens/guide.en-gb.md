@@ -27,13 +27,13 @@ Tokens are scoped based on labels added to your AI Deploy app. To scope a token 
 
 ![app add label](images/01-app-add-label.png){.thumbnail}
 
-In this instance we add the label `group=A` to the AI Deploy app. A set of defaults labels is added to all AI Deploy apps:
+In this instance we add the label `group=A` to the AI Deploy app. In addition to this, the 2 following labels are systematically added by default to each AI Deploy application:
 
 - `ovh/id` whose value is the ID of the AI Deploy app
 - `ovh/type` with value `app`, the type of AI resource
 
 > [!primary]
-> Labels prefixed by `ovh/` are reserved by the platform, those labels are overriden upon submission if any are provided.
+> These labels are prefixed by `ovh/`, meaning these are reserved by the platform. Those labels are overriden upon submission if any are provided.
 
 All the labels of an AI Deploy app are listed on the AI Deploy app details under **Tags**:
 
@@ -47,7 +47,7 @@ From the **AI Deploy** page, you access the tokens management page by clicking t
 
 Once on the token management tab, simply click on `New Token`{.action}.
 
-![token list new](images/04-token-list-new-2.png){.thumbnail}
+![token list new](images/04-token-list.png){.thumbnail}
 
 #### Read token
 
