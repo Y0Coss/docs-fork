@@ -4,6 +4,11 @@ excerpt: Come autenticarsi al tuo account OVHcloud
 updated: 2025-04-28
 ---
 
+> [!success]
+> Partecipa al nostro sondaggio e aiutaci a migliorare questa guida!<br>
+> Condividi con noi le tue opinioni e idee.<br>
+> [Accedi al sondaggio.](https://s.elq.fr/ovhext/OiIwy54)
+
 ## Obiettivo
 
 Per gestire i tuoi servizi accedi allo Spazio Cliente OVHcloud.
