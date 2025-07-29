@@ -58,9 +58,21 @@ If you exceed this limit, a **429 error code** will be returned.
 
 If you require higher usage, please **[get in touch with us](https://help.ovhcloud.com/csm?id=csm_get_help)** to discuss increasing your rate limits.
 
+### Payload size limits
+
+To ensure security and stability, AI Endpoints APIs enforce default request payload size limits:
+
+- Most endpoints are limited to **2 MB** per request body. This applies to common input types such as String, Json, or Form parameters.
+
+However, some endpoints are specifically configured to accept larger payloads due to their use cases:
+
+- `/api/v1/asr` (RIVA ASR models): Configured to allow request bodies up to 1 GB.
+
+These extended limits enable support for large audio files, which are typical in speech-to-text tasks.
+
 ### No usage limit
 
-As of now, the AI Endpoints platform does not impose any usage limits for API requests, apart from the rate limiting.
+As of now, the AI Endpoints platform does not impose any usage limits for API requests, apart from the rate and payload size limiting.
 
 However, we are considering introducing a usage limit feature in the future. This feature will allow you to set a limit on the number of tokens, characters, seconds of audio consumed, depending on your usage, providing better control and management over AI Endpoints consumption.
 
