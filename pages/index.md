@@ -1852,6 +1852,7 @@
             + [Object Storage - Use Object Storage with Owncloud](storage_and_backup/object_storage/s3_owncloud)
             + [Object Storage - Use Object Storage with Cohesity NetBackup](storage_and_backup/object_storage/s3_cohesity_netbackup)
             + [Object Storage - Manage an Object Storage bucket with Terraform](storage_and_backup/object_storage/s3_terraform)
+            + [Object Storage - How to migrate from an S3-compatible object storage provider to OVHcloud Object Storage](storage_and_backup/object_storage/s3_migration)
         + [Cold Archive Storage Class Specifics](storage-object-storage-cold-archive-storage-class-specifics)
             + [Cold Archive - Getting started with Cold Archive](storage_and_backup/object_storage/cold_archive_getting_started)
             + [Cold Archive - Overview](storage_and_backup/object_storage/cold_archive_overview)
