@@ -41,9 +41,21 @@ Avant de commencer, consultez les guides suivants pour mieux comprendre Public V
 
 | Ressource | Standard | Advanced | Premium | Commentaires |
 |-----------|---------|----------|---------|--------------|
-| Fréquence vCPU Min | 1 GHz | 1 GHz | 1 GHz | Dépend du matériel Baremetal. |
-| Fréquence vCPU Max | 3 GHz | 3 GHz | 3 GHz | Dépend du matériel Baremetal. |
+| Fréquence vCPU Min | 1 GHz | 1 GHz | 1 GHz | In Roadmap. |
+| Fréquence vCPU Max | 3 GHz | 3 GHz | 3 GHz | Par défaut. |
 | Stockage par VM (VMDK) | 1,5 To | 1,5 To | 1,5 To | Limite de stockage sur VMDK. |
+
+## Limitations d’intégration avec des applications externes
+
+### Solution de Backup
+Avec Public VCF as-a-Service, vous ne pouvez pas utiliser d’outil de backup autre que notre outil managed Veeam for VCD. Vous pouvez suivre le guide suivant pour plus d'information : [Public VCF as-a-Service - Sauvegarde avec Veeam Data Platform](https://help.ovhcloud.com/csm/fr-vmware-vcd-backup?id=kb_article_view&sysparm_article=KB0063124).
+
+### API VMware
+Les produits tiers s'appuyant sur les APIs vSphere pour fonctionner comme Naviko, Rubrik, ou Zerto (liste non exhaustive) ne sont pas utilisables actuellement dans le cadre du produit Public VCF as-a-Service.
+
+### Certifications
+Lors du lancement du service, aucune certification spécifique ne sera applicable au service Public VCF as-a-Service par OVHcloud.
+Cependant, la prise en charge des certifications HDS, ISO27001, SOC2 ou PCI-DSS est un des objectifs de notre feuille de route.
 
 ## Aller plus loin
 
