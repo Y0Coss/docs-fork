@@ -33,25 +33,21 @@ By following this model lifecycle process, OVHcloud ensures that customers are w
 
 Here is the model billing overview for AI Endpoints.
 
-> [!primary]
->
-> In appreciation of their continued support, our **Beta testers will have the possibility to keep using their existing API access keys and create new ones and won't be billed until 31th May**. After this date, the pricing will be implemented for them and clearly outlined in the table below, which details the categories, models, and their respective pricing information:
->
-
 | Category        | Model            | Price ($)  | Price (€)  | Unit Price |
 | -------------- | --------------- | ------ | ------ | ---------- |
-| Large Language Model (LLM)            | Llama 3.3 70B Instruct          | 0.70   | 0.67   | per 1M tokens          |
-| Large Language Model (LLM)            | Llama 3.1 70B Instruct          | 0.70   | 0.67   | per 1M tokens          |
-| Large Language Model (LLM)            | Mixtral 8x7B Instruct v0.1         | 0.65   | 0.63   | per 1M tokens          |
+| Large Language Model (LLM)            | Llama 3.3 70B Instruct          | 0.74   | 0.67   | per 1M tokens          |
+| Large Language Model (LLM)            | Llama 3.1 70B Instruct          | 0.74   | 0.67   | per 1M tokens          |
+| Large Language Model (LLM)            | Mixtral 8x7B Instruct v0.1         | 0.70   | 0.63   | per 1M tokens          |
 | Large Language Model (LLM)            | Mistral-Nemo-Instruct-2407          | 0.14   | 0.13   | per 1M tokens          |
 | Large Language Model (LLM)            | Llama 3.1 8B Instruct          | 0.10   | 0.10   | per 1M tokens          |
-| Large Language Model (LLM)            | Mistral 7B Instruct v0.3          | 0.10   | 0.10   | per 1M tokens          |
-| Reasoning LLM   | DeepSeek R1         | Free   | Free   | per 1M tokens          |
-| Reasoning LLM   | DeepSeek R1 Distill Llama 70B          | 0.70   | 0.67   | per 1M tokens          |
-| Code LLM        | Qwen2.5 Coder 32B Instruct          | 0.90   | 0.87   | per 1M tokens          |
-| Code LLM        | Mamba Codestral 7B v0.1          | 0.20   | 0.19   | per 1M tokens          |
-| Visual LLM      | Qwen2.5 VL 72B Instruct         | 0.95   | 0.91   | per 1M tokens          |
-| Visual LLM      | Llava Next Mistral 7B          | 0.30   | 0.29   | per 1M tokens          |
+| Large Language Model (LLM)            | Mistral 7B Instruct v0.3          | 0.11   | 0.10   | per 1M tokens          |
+| Reasoning LLM   | DeepSeek R1 Distill Llama 70B          | 0.74   | 0.67   | per 1M tokens          |
+| Reasoning LLM   | Qwen3 32B          | 0.09   | 0.08   | per 1M tokens          |
+| Code LLM        | Qwen2.5 Coder 32B Instruct          | 0.96   | 0.87   | per 1M tokens          |
+| Code LLM        | Mamba Codestral 7B v0.1          | 0.21   | 0.19   | per 1M tokens          |
+| Visual LLM      | Mistral Small 3.2 24B Instruct 2506          | 0.10   | 0.09   | per 1M tokens          |
+| Visual LLM      | Qwen2.5 VL 72B Instruct         | 1.01   | 0.91   | per 1M tokens          |
+| Visual LLM      | Llava Next Mistral 7B          | 0.32   | 0.29   | per 1M tokens          |
 | Embeddings     | BGE Multilingual Gemma2          | 0.01   | 0.01   | per 1M tokens          |
 | Embeddings     | BGE-M3          | 0.01   | 0.01   | per 1M tokens          |
 | Embeddings     | BGE Base EN v1.5          | 0.01   | 0.005   | per 1M tokens          |
