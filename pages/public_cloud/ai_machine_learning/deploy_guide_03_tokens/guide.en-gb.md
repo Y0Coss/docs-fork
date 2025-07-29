@@ -24,13 +24,14 @@ In this tutorial, we will create and assign tokens to a basic AI Deploy app, run
 
 ## Instructions
 
-By default, the 2 following labels are systematically added to each AI Deploy application:
+By default, the following two labels are automatically added to each AI Deploy application:
 
 - `ovh/id` whose value is the ID of the AI Deploy app
 - `ovh/type` whose value is `app`, the type of AI resource
 
 > [!primary]
 > These labels are prefixed by `ovh/`, meaning these are reserved by the platform. These labels will be automatically overwritten by the platform if you attempt to redefine them during submission. They won't be displayed in the manager UI.
+>
 
 In addition to these default labels, you can **create new ones** to further customize and secure your application access.
 
@@ -65,7 +66,7 @@ If your app is already deployed, you can still add or update labels at any time 
 >>
 > **Using ovhai CLI**
 >>
->> To follow this part, make sure you have installed the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) on your computer or on an instance.
+>> To follow this section, make sure you have installed the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) on your computer or on an instance.
 >>
 >> You can also add labels to an existing app using the `ovhai` CLI. Run the following command:
 >>
@@ -85,7 +86,7 @@ If your app is already deployed, you can still add or update labels at any time 
 
 ### Generating tokens
 
-From the **AI Dashboard** page, you can access the tokens management page by clicking the `Tokens`{.action} tab. From there, you can click on the `+ Create a token`{.action} button to create a new token:
+From the **AI Dashboard** page, you can access the tokens management page by clicking on the `Tokens`{.action} tab. From there, you can click on the `+ Create a token`{.action} button to create a new token:
 
 ![token list new](images/04-token-list.png){.thumbnail}
 
@@ -107,12 +108,12 @@ Let's create a token for the AI Deploy apps matching the label `group=A` with re
   - `AI Operator`: read & manage
 - **Region**: e.g., `GRA` (for Gravelines)
 
-After completing the form, click `Generate`{.action} to confirm token creation. 
+After completing the form, click `Generate`{.action} to confirm the token creation. 
 
 > [!warning]
 > You will then receive the value of your new token, which you must **carefully save**, as its value is only displayed once. If you lose the token value, you will need to [regenerate it](#regenerating-a-token).
 
-Then, you will be redirected to the token list with the newly generated token displayed at the top:
+You will then be redirected to the token list, where the newly generated token will be displayed at the top:
 
 ![token generation result](images/06-token-gen-result-read.png){.thumbnail}
 
@@ -136,7 +137,7 @@ Equivalent CLI command is:
 ovhai token create operator-token --role operator --label-selector group=A
 ```
 
-You can also scope a token to a specific app using `ovh/id` label and the app’s ID as its value. This label is added automatically by default as explained [above](#instructions) and, because it is reserved, it will uniquely match only one app.
+You can also scope a token to a specific app using the `ovh/id` label and the app’s ID as its value. This label is added automatically by default as explained [above](#instructions) and, because it is reserved, it will uniquely match only one app.
 
 ### Using a token to query an AI Deploy app
 
