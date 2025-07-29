@@ -46,7 +46,17 @@ Before getting started, review the following guides to better understand Public 
 | vCPU Frequency Max | 3 GHz | 3 GHz | 3 GHz | By Default. |
 | Storage per VM (VMDK) | 1.5 TB | 1.5 TB | 1.5 TB | Storage limit on VMDK. |
 
+## Limitations of integration with external applications
 
+### Backup Solution
+With Public VCF as-a-Service, you cannot use a backup tool other than our managed Veeam for VCD tool. You can follow the following guide for more information: Public VCF as-a-Service - Backup with Veeam Data Platform. [Public VCF as-a-Service - Sauvegarde avec Veeam Data Platform](https://help.ovhcloud.com/csm/en-gb-vmware-vcd-backup?id=kb_article_view&sysparm_article=KB0063128).
+
+### VMware API
+Third-party products relying on vSphere APIs to function, such as Naviko, Rubrik, or Zerto (non-exhaustive list), are not currently usable within the Public VCF as-a-Service product.
+
+### Certifications
+At the launch of the service, no specific certification will be applicable to the Public VCF as-a-Service by OVHcloud.
+However, supporting HDS, ISO27001, SOC2, or PCI-DSS certifications is one of the objectives of our roadmap.
 
 ## Go further
 
