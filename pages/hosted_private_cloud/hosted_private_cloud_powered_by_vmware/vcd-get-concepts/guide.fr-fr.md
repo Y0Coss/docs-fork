@@ -58,6 +58,7 @@ De plus, les administrateurs d'organisation ont la capacité de copier des élé
 
 <a name="key-features"></a>
 
+
 ### Fonctionnalités de Public VCF as-a-Service chez OVHcloud
 
 Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud sur ses 3 offres de Public VCF as-a-Service.
@@ -96,9 +97,9 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 |               Features              	| Standard 	| Advanced 	| Premium 	|                                                 Comments                                                	|
 |:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------------------------------------------------------------:	|
-|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in a Public VCF as-a-Service Organisation Manage roles/permissions for Organisation users           	|
+|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Manage users in a Public VCF as-a-Service           	|
 | Identity Provider Integration - SSO 	|          	|          	|         	| in Roadmap (via OVHcloud uIAM service)                                                                  	|
-| vCPU over-allocation                	|     ✅    	|     ✅    	|    ✅    	| Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
+| vCPU over-allocation                	|         	|        	|        	| in Roadmap - Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
 
 #### Networking
 
@@ -110,7 +111,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 | Routing & Switching IPv6        	 |          	|          	|         	| in Roadmap                                                                                                                                                                                         	        |
 | VPN                             	 |          	| ✅        	| ✅       	| L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	        |
 | Load Balancing                  	 |          	|          	|         	| Not supported with native Public VCF as-a-Service network capabilities                                                                                                                                                 	        |
-| Advanced Load Balancing         	 |          	|          	|         	| in Roadmap                                                                                                                                                                                         	        |                                                                                          	|
+| Advanced Load Balancing         	 |          	|          	|         	| In Roadmap                                                                                                                                                                                         	        |                                                                                          	|
 
 #### Security
 
@@ -141,7 +142,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 |     Features    	| Standard 	| Advanced 	| Premium 	|                      Comments                     	|
 |:---------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------:	|
-| Aria operations 	|     ✅    	|     ✅    	|    ✅    	| Resource management Metrics, Dashboard, Reporting 	|
+| Aria operations 	|         	|         	|        	| In Roadmap - Resource management Metrics, Dashboard, Reporting|
 
 ## Aller plus loin
 
