@@ -28,7 +28,7 @@ Avant de commencer, consultez les guides suivants pour mieux comprendre Public V
 | Cartes réseau (par VM) | 10 | 10 | 10 | Nombre maximal d'adaptateurs réseau par VM. |
 | Edge Gateway (par organisation) | N/A | 5 | 5 | Nombre maximal d'Edge Gateways par organisation. |
 | IP publiques (par vDC) | N/A | 2 | 2 | Nombre d’IP publiques disponibles par vDC. |
-| Snapshots (par VM) | 3 | 3 | 3 | Nombre maximal de snapshots par VM. |
+| Snapshots (par VM) | 1 | 1 | 1 | Nombre maximal de snapshots par VM. |
 | VMs (par vApp) | 128 | 128 | 128 | Nombre maximal de VMs autorisées par vApp. |
 | VMs (par organisation) | 2000 | 4000 | 4000 | Nombre maximal de VMs par organisation. |
 | vApps (par organisation) | 10 000 | 10 000 | 10 000 | Nombre maximal de vApps par organisation. |
