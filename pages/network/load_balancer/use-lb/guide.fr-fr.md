@@ -1,7 +1,7 @@
 ---
 title: "Gestion du service OVHcloud Load Balancer via l'espace client"
 excerpt: "Résumé des principales fonctionnalités et prise en main du service Load Balancer via l'espace client OVHcloud"
-updated: 2025-07-04
+updated: 2025-07-30
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Ce guide a pour but de vous aider lors de la première prise en main de votre Lo
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
@@ -47,7 +47,7 @@ Détails des éléments d'un frontend :
 |Nom|Vous pouvez nommer ici votre frontend, afin notamment de l'identifier rapidement si vous en avez plusieurs |
 |Protocole|Vous avez le choix entre le HTTP, HTTPS, TCP, SSL TCP (ou TLS) et l'UDP|
 |Port|Choisissez ici le port d'écoute à utiliser|
-|Datacenter|Vous pouvez choisir entre une zone de disponibilité en particulier ou tous pour la création du frontend|
+|Datacenter|Vous pouvez choisir entre une zone de disponibilité en particulier ou toutes les zones de disponibilité pour la création du frontend|
 |Ferme par défaut|Si vous avez plusieurs fermes paramétrées, vous pourrez en choisir une par défaut pour chaque frontend|
 
 Vous avez également accès à des paramètres avancés :

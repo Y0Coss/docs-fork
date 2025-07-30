@@ -1,7 +1,7 @@
 ---
 title: "Configuring an OVHcloud Load Balancer with ProxyProtocol"
 excerpt: Integrate your TCP services behind a Load Balancer with ProxyProtocol
-updated: 2025-07-25
+updated: 2025-07-30
 ---
 
 ## Objective
@@ -132,7 +132,7 @@ To use ProxyProtocol with Nginx, you can configure the server section of your co
 3.     listen 80 proxy_protocol;
 4.
 5.     # Trust the proxy protocol provided informations from your OVHcloud Load Balancer service
-6.     # See [https://www.ovh.com/manager/cloud/index.html#/network/iplb/](https://www.ovh.com/manager/cloud/index.html#/network/iplb/) for an up to date list
+6.     # See https://www.ovh.com/manager/cloud/index.html#/network/iplb/ for an up to date list
 7.     set_real_ip_from 10.108.0.0/14;
 8.     real_ip_header proxy_protocol;
 9.
@@ -156,7 +156,7 @@ service nginx reload
 > This example uses the HTTP protocol for more simplicity. If you are using HTTP, we strongly recommend using HTTP headers instead of ProxyProtocol, unless your OVHcloud Load Balancer service is configured in TCP. This can happen in the case of SSL termination for HTTP/2, for example.
 >
 
-For more information on configuring ProxyProtocol in Nginx, please consult the project's official documentation: [https://www.nginx.com/resources/admin-guide/proxy-protocol/](https://www.nginx.com/resources/admin-guide/proxy-protocol/){.external}
+For more information on configuring ProxyProtocol in Nginx, please consult [the project's official documentation](https://www.nginx.com/resources/admin-guide/proxy-protocol/){.external}.
 
 #### Apache
 
@@ -184,7 +184,7 @@ iptables -A INPUT                     -p tcp --dport 80 -j DROP
 sudo apt install git apache2-dev
 
 # Grab the sources
-git clone [https://github.com/roadrunner2/mod-proxy-protocol.git](https://github.com/roadrunner2/mod-proxy-protocol.git)
+git clone https://github.com/roadrunner2/mod-proxy-protocol.git
 cd mod-proxy-protocol
 
 # Build and install the module
@@ -243,13 +243,13 @@ In this case, a trick is to place a local HAProxy instance in front of the softw
 
 This guide provides an example of a possible configuration for TCP port 3306 used by MySQL. This configuration is not intended to be a complete example but rather to serve as a basis for a functional setup.
 
-- Install HAProxy
+- Install HAProxy:
 
 ```bash
 sudo apt install haproxy
 ```
 
-- Configure your proxy
+- Configure your proxy:
 
 ```haproxy
 1. listen mysql
@@ -259,7 +259,7 @@ sudo apt install haproxy
 5.     bind *:3306
 6.
 7.     # Expect ProxyProtocol header if and only if from a trusted network
-8.     # See [https://www.ovh.com/manager/cloud/index.html#/network/iplb/](https://www.ovh.com/manager/cloud/index.html#/network/iplb/) for an up to date list
+8.     # See https://www.ovh.com/manager/cloud/index.html#/network/iplb/ for an up to date list
 9.     tcp-request connection expect-proxy layer4 if { src 10.108.0.0/14 }
 10.
 11.    # Declare local server, on a non standard port to avoid collisions

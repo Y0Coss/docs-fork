@@ -1,7 +1,7 @@
 ---
 title: Working with zones
 excerpt: Use zones to increase availability and decrease latency
-updated: 2025-07-25
+updated: 2025-07-30
 ---
 
 ## Introduction
@@ -20,7 +20,7 @@ It is also possible, if configured appropriately, to use multiple zones to minim
 
 #### From the OVHcloud Control Panel
 
-You can order an additional zone from the [OVHcloud Control Panel](/manager) in the `Bare Metal Cloud`{.action} section, then `Load Balancer`{.action}.
+You can order an additional zone from the [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} section, click `Network`{.action}, then `Load Balancer`{.action}.
 
 Select your Load Balancer, then in the `Home`{.action} tab and the `Configuration`{.action} menu, click `Add`{.action} in the "Availability zones" section.
 
@@ -112,3 +112,7 @@ you can order a Load Balancer service in the `gra` and `bhs` areas and configure
 
 - A frontend in the gra zone with as default cluster in the gra zone which contains servers in the Gravelines datacenter
 - A frontend in the bhs zone with a default cluster in the bhs zone that contains servers in the Beauharnois datacenter
+
+## Go further
+
+Join our [community of users](/links/community).

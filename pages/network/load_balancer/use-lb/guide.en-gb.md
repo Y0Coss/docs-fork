@@ -1,7 +1,7 @@
 ---
 title: Managing your Load Balancer service via the Control Panel
 excerpt: An overview of the main features, and how to get started using the Load Balancer service from the Control Panel
-updated: 2025-07-04
+updated: 2025-07-30
 ---
 
 ## Objective
@@ -11,7 +11,7 @@ This guide is designed to help you get started using the Load Balancer, by intro
 ## Requirements
 
 - You must have access to your OVH Control Panel.
-- You must have ordered a [Load Balancer.](https://www.ovh.com/fr/solutions/load-balancer)
+- You must have ordered a [Load Balancer](/links/network/load-balancer).
 
 ## Instructions
 
@@ -28,8 +28,8 @@ On this page, you will see the following information:
 |Status|An overview of your Load Balancer with the IP, front-ends, functional clusters and servers added|
 |Use|A summary of how to use your Load Balancer|
 |Graphs|In this section, you will see the graphs linked to service, by concurrent connections or requests per minute|
-|Information|Your IPv4 and IPv6 address and the Additional IPs linked to them, as well as the number of outgoing IPv4s (see more details by clicking on the `...`{.action} button)|
-|Configuration|Here, you can customise the name of your solution (which will appear at the top of the left-hand column) The cipher(s) are customisable, as well as the availability zones where your Load Balancer is based|
+|Information|Your IPv4 and IPv6 addresses and the Additional IPs linked to them, as well as the number of outgoing IPv4s (see more details by clicking on the `...`{.action} button)|
+|Configuration|Here, you can customise the name of your solution (which will appear at the top of the left-hand column) The cipher(s) are customisable, as well as the availability zone where your Load Balancer is based|
 |Subscription|Here, you will see the admin details for your solution|
 
 To add `front-ends`{.action} or `Server clusters`{.action}, simply click on their respective buttons. A form will then help you configure each part of your solution.
