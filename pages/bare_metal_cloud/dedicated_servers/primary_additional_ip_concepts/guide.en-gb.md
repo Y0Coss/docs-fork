@@ -1,5 +1,5 @@
 ---
-title: Concepts - Primary IP or Additional IP
+title: Concepts - Primary IP and Additional IP
 excerpt: Understand the differences between Primary IP and Additional IP addresses and their uses
 updated: 2025-07-25
 ---
@@ -12,9 +12,9 @@ When a service should be optimised for scalability or agility, its public IP add
 
 In the Bare Metal universe, you can use the Primary IP addresses of your services, or configure Additional IP addresses, which provide a flexible way to manage public access to your services. They can stay infrastructure-agnostic and be scaled up or migrated whenever needed.
 
-## IP Addresses in OVHcloud: Primary, Additional, and Floating
+## IP Addresses in OVHcloud: Primary, Additional
 
-OVHcloud offers various types of IP addresses, each designed for specific use cases and offering different levels of flexibility and functionality. Understanding the distinctions between Primary IP, Additional IP, and Floating IP is crucial for effective network management and service deployment.
+OVHcloud offers various types of IP addresses, each designed for specific use cases and offering different levels of flexibility and functionality. Understanding the distinctions between Primary IP and Additional IP is crucial for effective network management and service deployment.
 
 ## Primary IP Addresses
 
@@ -26,6 +26,10 @@ Primary IP addresses are fundamental to OVHcloud services, providing immediate c
 * **Purpose:** Its main purpose is to enable easy communication and ensure reachability for the associated service.
 * **Availability:** Both IPv4 and IPv6 primary addresses are available with many OVHcloud products. Refer to specific product pages for detailed availability.
 * **Configuration:** IPv4 and IPv6 address configuration details, such as address, prefix size, or default gateway, can be found within the OVHcloud Control Panel, usually in the Network tab of the given product.
+
+### Attachment Methods:
+
+Primary IP addresses come pre-attached to your OVHcloud services, and serve as their default IP address.
 
 ### Use Cases:
 
@@ -58,11 +62,12 @@ Additional IP addresses can be attached to OVHcloud services in two primary ways
     * Refer to your product’s specifications for network/gateway setting details.
 
 2.  **Via vRack Private Network:**
-    * Supports both Additional IPv4 and Additional IPv6.
-    * Available for products compatible with vRack.
-    * **Advantages of using with vRack:**
-        * **Crossing Regional Boundaries:** While Additional IP addresses can only be moved between products within the region they were issued, using them over a vRack allows customers to define the gateway region (where public traffic enters and leaves the vRack network), while backend services can be utilized in any location that supports vRack network.
-        * **IPv6 Subnet Routing:** This feature is available only for Additional IPv6 when used over a vRack network, enabling more granular control over IPv6 traffic within your private network.
+    - Supports both Additional IPv4 and Additional IPv6.
+    - Available for products compatible with vRack.
+    - **Advantages of using with vRack:**
+        - **Crossing Regional Boundaries:** While Additional IP addresses can only be moved between products within the region they were issued, using them over a vRack allows customers to define the gateway region (where public traffic enters and leaves the vRack network), while backend services can be utilized in any location that supports vRack network.
+        - **IPv6 Subnet Routing:** This feature is available only for Additional IPv6 when used over a vRack network, enabling more granular control over IPv6 traffic within your private network.
+        - **VRRP Protocol:** (VRRP and CARP) (Different from classic Failover) keepaliveD
 
 ### Use Cases:
 
