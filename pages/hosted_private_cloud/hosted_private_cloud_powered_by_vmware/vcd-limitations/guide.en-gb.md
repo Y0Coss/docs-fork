@@ -49,12 +49,15 @@ Before getting started, review the following guides to better understand Public 
 ## Limitations of integration with external applications
 
 ### Backup Solution
-With Public VCF as-a-Service, you cannot use a backup tool other than our managed Veeam for VCD tool. You can follow the following guide for more information: Public VCF as-a-Service - Backup with Veeam Data Platform. [Public VCF as-a-Service - Sauvegarde avec Veeam Data Platform](https://help.ovhcloud.com/csm/en-gb-vmware-vcd-backup?id=kb_article_view&sysparm_article=KB0063128).
+
+With Public VCF as-a-Service, you cannot use a backup tool other than our managed Veeam for VCD tool. Refer to the following guide for more information: [Public VCF as-a-Service - Backups with Veeam Data Platform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup).
 
 ### VMware API
-Third-party products relying on vSphere APIs to function, such as Naviko, Rubrik, or Zerto (non-exhaustive list), are not currently usable within the Public VCF as-a-Service product.
+
+Third-party products relying on vSphere APIs to function (such as Naviko, Rubrik or Zerto (non-exhaustive list)) are currently not usable within the Public VCF as-a-Service product.
 
 ### Certifications
+
 At the launch of the service, no specific certification will be applicable to the Public VCF as-a-Service by OVHcloud.
 However, supporting HDS, ISO27001, SOC2, or PCI-DSS certifications is one of the objectives of our roadmap.
 

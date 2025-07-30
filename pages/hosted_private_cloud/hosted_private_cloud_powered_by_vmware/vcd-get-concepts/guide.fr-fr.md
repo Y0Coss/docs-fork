@@ -98,8 +98,8 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 |               Features              	| Standard 	| Advanced 	| Premium 	|                                                 Comments                                                	|
 |:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------------------------------------------------------------:	|
 |           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Manage users in a Public VCF as-a-Service           	|
-| Identity Provider Integration - SSO 	|          	|          	|         	| in Roadmap (via OVHcloud uIAM service)                                                                  	|
-| vCPU over-allocation                	|         	|        	|        	| in Roadmap - Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
+| Identity Provider Integration - SSO 	|          	|          	|         	| In Roadmap (via OVHcloud uIAM service)                                                                  	|
+| vCPU over-allocation                	|         	|        	|        	| In Roadmap - Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
 
 #### Networking
 
