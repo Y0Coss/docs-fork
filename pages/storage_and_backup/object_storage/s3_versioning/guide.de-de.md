@@ -189,7 +189,7 @@ When versioning is enabled:
 >> To delete a specific version of an object:
 >>
 >> ```bash
->> aws s3api list-object-versions --bucket <bucket> --prefix <objet>
+>> aws s3api delete-object --bucket <bucket> --key <object> --version-id <version-id>
 >> ```
 >>
 >> If you wish to delete a `delete marker` to recover your object version, proceed as follows:
