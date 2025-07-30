@@ -31,12 +31,7 @@ By following this model lifecycle process, OVHcloud ensures that customers are w
 
 ## Billing principles
 
-Here is the model billing overview for AI Endpoints.
-
-> [!primary]
->
-> In appreciation of their continued support, our **Beta testers will have the possibility to keep using their existing API access keys and create new ones and won't be billed until 31th May**. After this date, the pricing will be implemented for them and clearly outlined in the table below, which details the categories, models, and their respective pricing information:
->
+Here is the model billing overview for AI Endpoints models:
 
 | Category                   | Model                      | Input Price (\$) | Output Price (\$) | Input Price (€) | Output Price (€) | Unit Price                        |
 | -------------------------- | -------------------------- | ---------------- | ----------------- | --------------- | ---------------- | --------------------------------- |
