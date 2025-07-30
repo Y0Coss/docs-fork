@@ -12,7 +12,7 @@ Do Twojej usługi Content Delivery Network (CDN) można dodać [certyfikat SSL](
 
 ## Wymagania początkowe
 
-- Posiadanie [usługi CDN od OVH](https://www.ovh.pl/cdn/){.external}
+- Posiadanie [usługi CDN od OVH](/links/network/cdn-infrastructure){.external}
 - Dostęp do interfejsu zarządzania strefą DNS domeny
 
 ## W praktyce

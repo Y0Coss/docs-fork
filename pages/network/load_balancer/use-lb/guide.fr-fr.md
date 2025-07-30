@@ -10,7 +10,7 @@ Ce guide a pour but de vous aider lors de la première prise en main de votre Lo
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique

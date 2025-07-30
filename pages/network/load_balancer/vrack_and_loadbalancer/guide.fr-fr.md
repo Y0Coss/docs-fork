@@ -8,13 +8,13 @@ updated: 2022-04-04
 
 Ce guide a pour but de vous aider à lier et à configurer votre Load Balancer dans le vRack via l'APIv6 OVHcloud.
 
-Le vRack est un réseau privé dédié qui crée un lien entre tous vos produits cloud. Pour plus d'informations n'hésitez pas à consulter la page sur le [vRack](https://www.ovh.com/fr/solutions/vrack/)
+Le vRack est un réseau privé dédié qui crée un lien entre tous vos produits cloud. Pour plus d'informations n'hésitez pas à consulter la page sur le [vRack](/links/network/vrack)
 
 Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons de consulter la [présentation générale du service Load Balancer](/pages/network/load_balancer/use_presentation).
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté à l'[API OVHcloud](/links/api){.external}.
 - Posséder une ferme configurée

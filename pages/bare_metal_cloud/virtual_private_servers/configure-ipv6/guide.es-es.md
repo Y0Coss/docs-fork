@@ -1,7 +1,7 @@
 ---
 title: "Configurar la IPv6 en un VPS"
 excerpt: 'Cómo configurar la IPv6 en un VPS de OVHcloud'
-updated: 2025-07-22
+updated: 2025-07-24
 ---
 
 > [!primary]
@@ -20,15 +20,15 @@ El protocolo de internet versión 6 (IPv6) es la última versión del protocolo 
 
 > [!warning]
 >
-> La responsabilidad sobre las máquinas que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
+> La responsabilidad sobre las máquinas que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 > 
 
 ## Requisitos
 
-- Tener un [VPS de OVHcloud](/links/bare-metal/vps){.external}.
+- Tener un [VPS de OVHcloud](/links/bare-metal/vps).
 - Estar conectado al VPS por SSH (acceso root) o a través de un escritorio remoto (Windows).
 - Tener conocimientos básicos de redes.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external} o a la [API de OVHcloud](/links/api).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager) o a la [API de OVHcloud](/links/api).
 
 ## Procedimiento
 
@@ -67,7 +67,12 @@ En el apartado IP podrá ver la dirección IPv6 y la puerta de enlace IPv6 asign
 
 #### A través de la API de OVHcloud <a name="viaapi"></a>
 
-Vaya al sitio web <https://api.ovh.com/console/> y conéctese a él con su ID de cliente de OVHcloud. Utilice las llamadas a la API que se indican a continuación.
+Acceda a la página de las [API OVHcloud](/links/console):
+
+- Haga clic en `Authentication`{.action} en la parte superior izquierda.
+- Haga clic en `Login with OVHcloud SSO`{.action}.
+- Introduzca sus claves de acceso de OVHcloud.
+- Haga clic en el botón `Authorize`{.action} para autorizar las llamadas a las API desde este sitio web.
 
 Para obtener la dirección IPv6 asignada al VPS:
 
@@ -488,6 +493,6 @@ sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-netw
 
 Para que cloud-init vuelva a gestionar la red automáticamente, elimine dicho archivo o muévalo a otro directorio.
 
-## Más información
+## Más información <a name="go-further"></a>
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

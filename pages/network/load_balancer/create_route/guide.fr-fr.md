@@ -12,7 +12,7 @@ Dans certains cas, il est possible d'aller plus loin et de router, rediriger ou 
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/){.external} sur une offre autorisant la création des routes.
+- Disposer d'un [Load Balancer OVHcloud](/links/network/load-balancer){.external} sur une offre autorisant la création des routes.
 - Avoir accès à l'[API OVHcloud](/links/api){.external}.
 
 ## En pratique

@@ -22,14 +22,14 @@ Ce guide à pour objectif de vous expliquer ce que sont les crédit SMS, comment
 
 1 crédit SMS correspond au coût pour l'envoi de 1 SMS en France métropolitaine, le tarif étant dégressif en fonction du nombre de crédits SMS que vous achetez en une fois. 
 
-Vous trouverez la liste des packs SMS en suivant ce lien : [https://www.ovhtelecom.fr/sms/](https://www.ovhtelecom.fr/sms/).
+Vous trouverez la liste des packs SMS en suivant [ce lien](/links/telecom/sms).
 
 **Exemple pour l'achat d'un pack de 100 crédits SMS, chaque crédit coûtant donc 0,06 € HT :**
 
 L'envoi de 1 SMS en France métropolitaine coûte 1 crédit. Avec ce pack, vous pourrez envoyer 100 SMS en France métropolitaine.
 L'envoi de 1 SMS en Inde coûte 0,4 crédit. Avec ce pack, vous pourrez envoyer 250 SMS en Inde.
 
-Le lien suivant vous permettra de retrouver le coût d'envoi, en crédits, de vos SMS en fonction de leur destination : [https://www.ovhtelecom.fr/sms/tarifs.xml](https://www.ovhtelecom.fr/sms/tarifs.xml).
+[Cette page](/links/telecom/sms-prices) vous permettra de retrouver le coût d'envoi, en crédits, de vos SMS en fonction de leur destination.
 
 > [!primary]
 >

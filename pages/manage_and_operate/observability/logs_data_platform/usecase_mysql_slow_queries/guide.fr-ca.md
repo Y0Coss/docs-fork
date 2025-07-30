@@ -191,4 +191,4 @@ All this information can help you to analyse the most difficult queries for your
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Create an account: [Try it!](/links/manage-operate/ldp)

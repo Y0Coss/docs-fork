@@ -191,7 +191,7 @@ Lorsque le versioning est activé :
 >> Pour supprimer une version spécifique d'un objet :
 >>
 >> ```bash
->> aws s3api list-object-versions --bucket <bucket> --prefix <objet>
+>> aws s3api delete-object --bucket <bucket> --key <object> --version-id <version-id>
 >> ```
 >>
 >> Si vous souhaitez supprimer une étiquette `delete marker` pour récuperer votre version d'objet, procédez comme suit :

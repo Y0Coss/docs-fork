@@ -27,7 +27,7 @@ Neste tutorial, ficará a saber como configurar um servidor de armazenamento da 
 - Um [servidor de armazenamento OVHcloud](https://www.ovhcloud.com/pt/bare-metal/storage/){.external}.
 - Uma infraestrutura de produção ([VPS](/links/bare-metal/vps), [servidores dedicados](/links/bare-metal/bare-metal), [Public Cloud](/links/public-cloud/public-cloud), etc.).
 - Um acesso SSH configurado entre o servidor de armazenamento e a infraestrutura de produção.
-- Recomendação: uma rede privada entre os servidores ([vRack OVHcloud](https://www.ovh.pt/solucoes/vrack/){.external}).
+- Recomendação: uma rede privada entre os servidores ([vRack OVHcloud](/links/network/vrack){.external}).
 
 ## Instruções
 

@@ -17,7 +17,7 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 >
 
 - An [OVHcloud Connect Direct solution](https://www.ovhcloud.com/pt/network-security/ovhcloud-connect/)
-- An OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/)
+- An OVHcloud [vRack](/links/network/vrack)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

@@ -61,7 +61,7 @@ Pierwszy etap polega na pobraniu bramy (gateway) IPv6 przypisanej do Twojego ser
 
 ### W Panelu klienta <a name="viacontrolpanel"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Serwer dedykowany`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Serwer dedykowany`{.action}.
 
 Brama IPv6 przypisana do Twojego serwera jest wyświetlana w sekcji `Sieć` w zakładce `Informacje ogólne`{.action}. Po skopiowaniu przejdź do aplikacji konfiguracyjnej IPv6.
 

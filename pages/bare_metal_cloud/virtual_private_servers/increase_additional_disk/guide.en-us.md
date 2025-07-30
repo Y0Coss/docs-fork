@@ -1,7 +1,7 @@
 ---
 title: "How to increase the size of an additional disk"
 excerpt: "Find out how to increase the size of an additional volume and enlarge its main partition"
-updated: 2023-03-10
+updated: 2025-07-24
 ---
 
 ## Objective
@@ -25,7 +25,7 @@ The following steps presume that you have configured an additional disk accordin
 
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
-In the box **Summary of options**, click on `...`{.action} in the section "Additional disks". Select `Increase the disk size`{.action}.
+In the `Home`{.action} tab, go to the section labelled **Your configuration**. Click on `...`{.action} next to the option `Additional disks` and in the context menu click on `Increase the disk size`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 

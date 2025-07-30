@@ -22,7 +22,7 @@ Le « provider OVH » doit être configuré avec un ensemble d'informations d'id
 - une `application_secret`
 - une `consumer_key`
 
-Pourquoi ?
+### Pourquoi ?
 
 Parce que, dans les coulisses, le « OVH Terraform provider » fait des requêtes aux API d'OVHcloud.
 
@@ -32,7 +32,7 @@ Lorsque vous avez généré avec succès vos tokens OVHcloud, conservez-les. Vou
 
 La dernière information nécessaire est le `service_name` : c'est l'ID de votre projet Public Cloud.
 
-Comment l'obtenir ?
+### Comment l'obtenir ?
 
 Dans la section Public Cloud, vous pouvez récupérer l'ID de votre nom de service grâce au bouton `Copier dans le presse-papier`{.action}.
 
@@ -42,7 +42,7 @@ Vous utiliserez également ces informations dans les fichiers de définition des
 
 ## En pratique
 
-Si vous souhaitez accéder à la documentation du provider sur Object Storage, [cliquez-ici](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_storage.){.external}
+Si vous souhaitez accéder à la documentation du provider sur Object Storage, [cliquez-ici](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_storage){.external}
 
 ### Configuration
 

@@ -1,12 +1,8 @@
 ---
 title: "Aumentar el tamaño de un disco adicional"
 excerpt: "Cómo aumentar el tamaño de un volumen adicional y aumentar su partición principal"
-updated: 2023-03-14
+updated: 2025-07-24
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Objetivo
 
@@ -29,7 +25,7 @@ Los pasos que se indican a continuación suponen que ha configurado un disco adi
 
 Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor entre los `Servidores privados virtuales`{.action}.
 
-En el cuadro **Resumen de las opciones**, haga clic en el botón `...`{.action} situado en la sección `Discos adicionales`. Seleccione `Aumentar el tamaño del disco`{.action}.
+En la pestaña `Inicio`{.action}, en la sección **Su configuración**, haga clic en `...`{.action} junto a la opción `Discos adicionales` y seleccione `Aumentar el tamaño del disco`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 
@@ -213,4 +209,4 @@ El volumen redimensionado incluye ahora el espacio en disco adicional.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -32,7 +32,7 @@ The two clusters must be fully visible to each other through a secure connection
 
 To do this, you can use various methods such as:
 
-- Connecting all sites via the same [vRack](https://www.ovh.co.uk/solutions/vrack/).
+- Connecting all sites via the same [vRack](/links/network/vrack).
 
 ![Interconnection with vRack diagram](images/vrackinterconnection.png){.thumbnail}
 
