@@ -48,7 +48,7 @@ Un frontend TCP opère à la Couche 4 (la couche de transport) du modèle OSI. L
 
 Cependant, comme il ne comprend pas le protocole applicatif, il ne peut pas effectuer d'optimisations avancées spécifiques à HTTP, telles que le routage basé sur le contenu ou la manipulation des en-têtes HTTP.
 
-Les frontends HTTP et TLS, à l'inverse, opèrent à la Couche 7 (la couche application). Lorsqu'un client se connecte à un frontend compatible HTTP/2, le Load Balancer décode entièrement les trames HTTP/2 avant d'établir une connexion avec un serveur backend.
+Les frontends HTTP et TLS, quant à eux, opèrent à la Couche 7 (la couche application). Lorsqu'un client se connecte à un frontend compatible HTTP/2, le Load Balancer décode entièrement les trames HTTP/2 avant d'établir une connexion avec un serveur backend.
 
 En interprétant le protocole applicatif, un frontend compatible HTTP/2 peut fournir de nombreuses fonctionnalités avancées. Celles-ci incluent la terminaison SSL/TLS (déchargeant le chiffrement/déchiffrement des serveurs backend), le routage basé sur le contenu (par exemple, le routage des requêtes vers différentes fermes de backend en fonction du chemin d'URL ou des en-têtes), la modification des requêtes/réponses et le multiplexage HTTP/2.
 
