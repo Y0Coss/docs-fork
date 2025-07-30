@@ -1,6 +1,6 @@
 ---
 title: "Public VCF as-a-Service - Linking a public IP block with vRack for VCD"
-excerpt: "Find out how to link the public IP address block delivered with your VCD organization and its vRack"
+excerpt: "Find out how to link the block of public IP addresses delivered with your VCD organization and its vRack"
 updated: 2025-07-30
 ---
 
@@ -12,11 +12,11 @@ updated: 2025-07-30
 
 ## Objective
 
-When you order a new VCD organization, a vRack is delivered to you, along with a block of public IP addresses.
+When you order a new VCD organization, a vRack and a block of public IP addresses are delivered to you.
 
 This IP block is not directly linked to your vRack. You will need to link it manually.
 
-**Find out how to link the public IP address block delivered with your VCD organization and its vRack.**
+**Find out how to link the block of public IP addresses delivered with your VCD organization and its vRack.**
 
 ## Requirements
 
@@ -26,8 +26,8 @@ This IP block is not directly linked to your vRack. You will need to link it man
 
 ## Instructions
 
-1. Log in to your [OVHcloud Control Panel](/links/manager)
-2. Display the VCD organization information from the `Managed VCD`{.action} menu in the left-hand column, then select your organization.
+1. Log in to your [OVHcloud Control Panel](/links/manager).
+2. Click `Hosted Private Cloud`{.action} at the top of the page, expand the `Managed VCD`{.action} menu in the left-hand column, and select your organization.
 
 ![Managed VCD organization](images/01-vcd-link-ip-vrack.png){.thumbnail .w-640}
 
@@ -35,11 +35,11 @@ This IP block is not directly linked to your vRack. You will need to link it man
 
 ![VCD vRack attached](images/02-vcd-link-ip-vrack.png){.thumbnail .w-640}
 
-4. In the left-hand column, in the `Network`{.action} menu, select your vRack `pn-xxxxxxx`.
+4. Expand the `Network`{.action} menu in the left-hand column and select your vRack `pn-xxxxxxx`.
 
 ![Network vRack](images/03-vcd-link-ip-vrack.png){.thumbnail .w-640}
 
-5. Select the IP block to link to your vRack/Organization and click `Add`{.action}.
+5. Select the IP block to link to your vRack/organization and click `Add`{.action}.
 
 ![add IP to vRack](images/04-vcd-link-ip-vrack.png){.thumbnail .w-640}
 

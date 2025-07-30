@@ -1,6 +1,6 @@
 ---
 title: "Public VCF as-a-Service - Liaison d'un bloc IP public avec vRack pour VCD"
-excerpt: "Découvrez comment lier le bloc d'adresse IP publique livré avec votre organisation VCD et son vRack"
+excerpt: "Découvrez comment lier le bloc d'adresses IP publiques livré avec votre organisation VCD et son vRack"
 updated: 2025-07-30
 ---
 
@@ -12,34 +12,34 @@ updated: 2025-07-30
 
 ## Objectif
 
-Lors de la commande d'une nouvelle organisation VCD, un vRack vous est livré ainsi qu'un bloc d'adresse IP publique.
+Lors de la commande d'une nouvelle organisation VCD, un vRack ainsi qu'un bloc d'adresses IP publiques vous sont livrés.
 
-Ce bloc IP n'est pas lié directement à votre vRACK, vous devez faire cette liaison manuellement.
+Ce bloc IP n'est pas directement lié à votre vRack, vous devez effectuer cette liaison manuellement.
 
-**Découvrez comment lier le bloc d'adresse IP publique livré avec votre organisation VCD et son vRack.**
+**Découvrez comment lier le bloc d'adresses IP publiques livré avec votre organisation VCD et son vRack.**
 
 ## Prérequis
 
-- Une offre [Public VCF as-a-Service](/links/hosted-private-cloud/vmware-vcd).
+- Posséder une offre [Public VCF as-a-Service](/links/hosted-private-cloud/vmware-vcd).
 - Être administrateur technique de votre solution [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware).
-- Être connecté à [l'espace client OVHcloud](/links/manager)
+- Être connecté à [l'espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager)
-2. Affichez les informations de l'organisation VCD depuis le menu `Managed VCD`{.action} dans la colonne de gauche, puis sélectionnez votre organisation.
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+2. Cliquez sur `Hosted Private Cloud`{.action} en haut de page, dépliez le menu `Managed VCD`{.action} dans la colonne de gauche et sélectionnez votre organisation.
 
 ![Managed VCD organization](images/01-vcd-link-ip-vrack.png){.thumbnail .w-640}
 
-3. Depuis l'onglet `Information générale`{.action}, le vRack attaché à votre organisation apparaitra avec un ID sous la forme `pn-xxxxxxx`.
+3. Depuis l'onglet `Information générale`{.action}, le vRack attaché à votre organisation apparaîtra avec un ID sous la forme `pn-xxxxxxx`.
 
 ![VCD vRack attached](images/02-vcd-link-ip-vrack.png){.thumbnail .w-640}
 
-4. Dans la colonne de gauche, dans le menu `Network`{.action}, sélectionnez votre vRack `pn-xxxxxxx`.
+4. Dépliez le menu `Network`{.action} dans la colonne de gauche et sélectionnez votre vRack `pn-xxxxxxx`.
 
 ![Network vRack](images/03-vcd-link-ip-vrack.png){.thumbnail .w-640}
 
-5. Sélectionnez le bloc IP à lier à votre vRack/Organisation et cliquez sur `Ajouter`{.action}.
+5. Sélectionnez le bloc IP à lier à votre vRack/organisation et cliquez sur `Ajouter`{.action}.
 
 ![add IP to vRack](images/04-vcd-link-ip-vrack.png){.thumbnail .w-640}
 
