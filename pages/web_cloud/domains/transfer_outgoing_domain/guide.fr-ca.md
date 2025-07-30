@@ -1,7 +1,7 @@
 ---
 title: "Transférer son nom de domaine OVHcloud vers un autre bureau d'enregistrement"
 excerpt: "Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix"
-updated: 2024-05-16
+updated: 2024-07-30
 ---
 
 ## Objectif
@@ -104,9 +104,9 @@ Une fois le code de transfert récupéré, **ne reverrouillez pas votre domaine,
 
 ### Étape 3 : débuter le transfert vers le nouveau bureau d'enregistrement
 
-Une fois les étapes précédentes effectuées, vous pouvez lancer le processus de transfert, généralement en passant une commande. Le transfert peut prendre jusqu'à 10 jours. 
+Une fois les étapes précédentes effectuées, lancez le processus de transfert, généralement en passant une commande auprès de votre nouveau bureau d'enregistrement. Le transfert peut prendre jusqu'à 10 jours. 
 
-Pour plus d'informations, contactez votre nouveau bureau d'enregistrement.
+Pour plus d'informations, contactez le nouveau bureau d'enregistrement que vous avez choisi.
 
 > [!warning]
 >
