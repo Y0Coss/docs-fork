@@ -61,7 +61,7 @@ As explained before you will need your `access key`, `secret key` but also the `
   
 ### Step 2 - Preparing your OVHcloud destination bucket
 
-Similar to your source bucket, you will need your `access key`, `secret key` but also the `region ID` for your destination bucket. Log in to the [OVHcloud Control Panel](/links/manager) and Navigate to the `Object Storage`{.action} section to collect those details.
+Similar to your source bucket, you will need your `access key`, `secret key` but also the `region ID` for your destination bucket. Log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Object Storage`{.action} section to collect those details.
 
 ### Step 3 - Installing, configuring and running Rclone
 
@@ -99,13 +99,14 @@ provider = OVHcloud
 env_auth = false
 access_key_id = OVH-ACCESS-KEY
 secret_access_key = OVH-SECRET-KEY
-endpoint = s3.rbx.io.cloud.ovh.net
-region = rbx
+endpoint = [s3.rbx.io.cloud.ovh.net](https://s3.<region>.io.cloud.ovh.net)
+region = <region>
 ```
+
 
 > [!primary]
 >
-> To get the list of supported providers, access the [Rclone Supported Providers](https://rclone.org/#providers){.external} documentation. This will help you filling out the `<your source remote provider name>` field.
+> To get the list of OVHcloud region endpoints, see [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_locations).
 >
 
 You can then test your source provider and your OVHcloud connections using the `rclone config` command by as below:
