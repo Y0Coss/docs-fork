@@ -99,7 +99,7 @@ provider = OVHcloud
 env_auth = false
 access_key_id = OVH-ACCESS-KEY
 secret_access_key = OVH-SECRET-KEY
-endpoint = [s3.rbx.io.cloud.ovh.net](https://s3.<region>.io.cloud.ovh.net)
+endpoint = s3.<region>.io.cloud.ovh.net
 region = <region>
 ```
 
