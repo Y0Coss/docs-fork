@@ -1,7 +1,7 @@
 ---
 title: "Transferir um domínio para outro agente de registo"
 excerpt: "Saiba como transferir um domínio da OVHcloud para o agente de registo da sua escolha"
-updated: 2024-05-16
+updated: 2025-07-31
 ---
 
 ## Objetivo
@@ -104,9 +104,9 @@ Uma vez o código de transferência recuperado, **não bloqueie de novo o seu do
 
 ### Etapa 3: iniciar a transferência para o novo agente de registo
 
-Depois de realizar os passos anteriores, pode lançar o processo de transferência, geralmente através de uma encomenda. A transferência pode demorar até 10 dias. 
+Depois de executar as etapas anteriores, inicie o processo de transferência, normalmente com um pedido no novo agente de registo. A transferência pode demorar até 10 dias.
 
-Para mais informações contacte o seu novo agente de registo.
+Para mais informações, contacte o novo agente de registo que escolheu.
 
 > [!warning]
 >
