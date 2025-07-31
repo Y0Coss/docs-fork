@@ -31,7 +31,6 @@ Database nodes have to be in the same region. Multi-AZ is currently not supporte
 
 The Public Cloud Databases offer uses the following Redis® open source and Valkey versions:
 
-- Redis® open source 7.2
 - Valkey 7.2
 - Valkey 8.0
 
@@ -50,10 +49,10 @@ Two plans are available:
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes |
-| ------------ | -------------------------- | ---------------- |
-| *Essential*  | 1                          | No               |
-| *Business/Production*   | 2                          | No               |
+| Plan                  | Number of nodes by default | Additional nodes |
+| --------------------- | -------------------------- | ---------------- |
+| *Essential*           | 1                          | No               |
+| *Business/Production* | 2                          | No               |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
@@ -67,11 +66,9 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 #### License type
 
-Redis® open source software prior version 7.4 is under the 3-Clause-BSD license, a liberal open-source license.
+Valkey is provided under BSD 3-Clause License.
 
-Redis® open source software starting from version 7.4, Redis Stack and all Redis modules created by Redis Ltd. (e.g., RediSearch, RedisJSON, RedisGraph, RedisTimeSeries, and RedisBloom) are dual-licensed under the Redis Source Available License v2 (RSALv2) and SSPL. The RSALv2 license model prohibits OVHcloud, and any other service provider, from offering these softwares and modules to third parties as a service. So **these softwares and modules are not available**.
-
-More information on <https://redis.com/legal/licenses/>.
+More information on <https://valkey.io/topics/license/>.
 
 ### Hardware resources
 
