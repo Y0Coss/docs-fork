@@ -29,19 +29,19 @@ This IP block is not directly linked to your vRack. You will need to link it man
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. Click `Hosted Private Cloud`{.action} at the top of the page, expand the `Managed VCD`{.action} menu in the left-hand column, and select your organization.
 
-![Managed VCD organization](images/01-vcd-link-ip-vrack.png){.thumbnail .w-640}
+![Managed VCD organization](images/vcd-link-ip-vrack-01.png){.thumbnail .w-640}
 
 3. From the `General information`{.action} tab, the vRack attached to your organization will appear with an ID in the form `pn-xxxxxxx`.
 
-![VCD vRack attached](images/02-vcd-link-ip-vrack.png){.thumbnail .w-640}
+![VCD vRack attached](images/vcd-link-ip-vrack-02.png){.thumbnail .w-640}
 
 4. Expand the `Network`{.action} menu in the left-hand column and select your vRack `pn-xxxxxxx`.
 
-![Network vRack](images/03-vcd-link-ip-vrack.png){.thumbnail .w-640}
+![Network vRack](images/vcd-link-ip-vrack-03.png){.thumbnail .w-640}
 
 5. Select the IP block to link to your vRack/organization and click `Add`{.action}.
 
-![add IP to vRack](images/04-vcd-link-ip-vrack.png){.thumbnail .w-640}
+![add IP to vRack](images/vcd-link-ip-vrack-04.png){.thumbnail .w-640}
 
 ## Go further
 
