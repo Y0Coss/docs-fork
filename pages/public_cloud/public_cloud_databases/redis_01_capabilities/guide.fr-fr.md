@@ -1,7 +1,7 @@
 ---
 title: Valkey - Capacités et limites (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Valkey
-updated: 2025-05-05
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -21,6 +21,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -45,14 +46,14 @@ You can use any of the [clients recommended by Redis®](https://redis.io/clients
 Two plans are available:
 
 - *Essential*
-- *Business*
+- *Business/Production*
 
 Here is an overview of the various plans' capabilities:
 
 | Plan         | Number of nodes by default | Additional nodes |
 | ------------ | -------------------------- | ---------------- |
 | *Essential*  | 1                          | No               |
-| *Business*   | 2                          | No               |
+| *Business/Production*   | 2                          | No               |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
@@ -62,7 +63,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 #### Nodes and replicas
 
 - **Essential**: the cluster can support at most one node.
-- **Business**: the cluster is delivered with 2 nodes by default.
+- **Business/Production**: the cluster is delivered with 2 nodes by default.
 
 #### License type
 
@@ -114,7 +115,7 @@ You can further customise your service by using advanced parameters. See the [Ad
 
 *Essential* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 1 day.
 
-*Business* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 3 days.
+*Business/Production* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 3 days.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 
