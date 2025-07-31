@@ -104,9 +104,9 @@ Po pobraniu kodu transferu **nie zablokuj ponownie domeny, chyba że nie chcesz 
 
 ### Etap 3: rozpocząć transfer do nowego operatora
 
-Po wykonaniu powyższych czynności, uruchom proces przeniesienia domeny, zazwyczaj zamawiając ją u nowego operatora. Transfer może potrwać do 10 dni.
+Po wykonaniu powyższych czynności, uruchom proces przeniesienia domeny, zazwyczaj zamawiając ją u nowego rejestrator domen. Transfer może potrwać do 10 dni.
 
-Aby uzyskać więcej informacji, skontaktuj się z wybranym przez Ciebie nowym operatorem.
+Aby uzyskać więcej informacji, skontaktuj się z wybranym przez Ciebie nowym rejestrator domen.
 
 > [!warning]
 >
