@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Capabilities and Limitations
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2025-04-08
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -19,6 +19,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
