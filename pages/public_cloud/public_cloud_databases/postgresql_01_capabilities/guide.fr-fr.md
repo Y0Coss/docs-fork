@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
-updated: 2025-06-18
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -21,6 +21,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -43,19 +44,19 @@ You can use any of the [PostgreSQL-recommended drivers and extensions](https://w
 
 ### Plans
 
-Three plans are available:
+Different plans are available:
 
 - *Essential*
-- *Business*
-- *Enterprise*
+- *Business/Production*
+- *Enterprise/Advanced*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Read replicas |
-| ------------ | -------------------------- | ------------- |
-| *Essential*  | 1                          | No            |
-| *Business*   | 2                          | Planned       |
-| *Enterprise* | 3                          | Planned       |
+| Plan                  | Number of nodes by default | Read replicas |
+| --------------------- | -------------------------- | ------------- |
+| *Essential*           | 1                          | No            |
+| *Business/Production* | 2                          | Planned       |
+| *Enterprise/Advanced* | 3                          | Planned       |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
@@ -65,8 +66,8 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 #### Nodes and replicas
 
 - **Essential**: the cluster can support at most one node.
-- **Business**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
-- **Enterprise**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Business/Production**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
+- **Enterprise/Advanced**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
 
 #### License type
 
@@ -146,9 +147,9 @@ You can further customise your PostgreSQL by using advanced parameters. See the 
 
 *Essential* plan clusters are automatically backed up daily. Backup retention is 2 days.
 
-*Business* plan clusters are automatically backed up daily. Backup retention is 14 days.
+*Business/Production* plan clusters are automatically backed up daily. Backup retention is 14 days.
 
-*Enterprise* plan clusters are automatically backed up daily. Backup retention is 30 days.
+*Enterprise/Advanced* plan clusters are automatically backed up daily. Backup retention is 30 days.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 
