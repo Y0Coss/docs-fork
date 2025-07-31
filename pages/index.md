@@ -378,6 +378,7 @@
             + [VMware Cloud Director - Network - Create network components](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
             + [VMware Cloud Director - Audit tricky use cases of migration to VCD](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases)
             + [VMware Cloud Director - Setting up your network after vSphere to VCD migration](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_post_migration)
+            + [VMware Cloud Director - Link a public IP block with vRack for VCD](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_link_ip_to_vrack)
             + [Reversibility Policy for the Managed Mutualized Virtualization product](/pages/account_and_service_management/reversibility/23-mutualized-virtualization-vcd-reversibility)
         + [Access and Security](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security)
             + [IAM for VMware on OVHcloud - Introduction and FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)

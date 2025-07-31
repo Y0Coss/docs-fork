@@ -1,5 +1,5 @@
 ---
-title: "Public VCF as-a-Service - The fundamentals of Public VCF as-a-Service (EN)"
+title: "Public VCF as-a-Service - The fundamentals of Public VCF as-a-Service"
 excerpt: "Discover the basic concepts of Public VCF as-a-Service"
 updated: 2024-12-19
 ---
@@ -96,9 +96,9 @@ Below is a comparison of the features provided by OVHcloud on its 3 Public VCF a
 
 |               Features              	| Standard 	| Advanced 	| Premium 	|                                                 Comments                                                	|
 |:-----------------------------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------------------------------------------------------------:	|
-|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Create users in a Public VCF as-a-Service Organisation Manage roles/permissions for Organisation users           	|
-| Identity Provider Integration - SSO 	|          	|          	|         	| in Roadmap (via OVHcloud uIAM service)                                                                  	|
-| vCPU over-allocation                	|     ✅    	|     ✅    	|    ✅    	| Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
+|           User Management           	|     ✅    	|     ✅    	|    ✅    	|            Manage users in a Public VCF as-a-Service           	|
+| Identity Provider Integration - SSO 	|          	|          	|         	| In Roadmap (via OVHcloud uIAM service)                                                                  	|
+| vCPU over-allocation                	|         	|        	|       	| In Roadmap - Allow users to adjust the quantity of vCPU/GHz for a virtual DC Possible through **OVH manager or API** 	|
 
 #### Networking
 
@@ -141,7 +141,7 @@ Below is a comparison of the features provided by OVHcloud on its 3 Public VCF a
 
 |     Features    	| Standard 	| Advanced 	| Premium 	|                      Comments                     	|
 |:---------------:	|:--------:	|:--------:	|:-------:	|:-------------------------------------------------:	|
-| Aria operations 	|     ✅    	|     ✅    	|    ✅    	| Resource management Metrics, Dashboard, Reporting 	|
+| Aria operations 	|         	|         	|        	| In Roadmap - Resource management Metrics, Dashboard, Reporting 	|
 
 ## Go further
 

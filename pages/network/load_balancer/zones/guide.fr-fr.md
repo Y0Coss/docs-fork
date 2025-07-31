@@ -27,7 +27,7 @@ Via une configuration adéquate, vous pouvez également utiliser plusieurs zones
 
 #### Depuis l'espace client OVHcloud
 
-Vous pouvez commander une zone supplémentaire depuis l'[espace client OVHcloud](/links/manager) dans la partie `Bare Metal Cloud`{.action}, puis `Load Balancer`{.action}.
+Vous pouvez commander une zone supplémentaire depuis l'[espace client OVHcloud](/links/manager). Dans la partie `Bare Metal Cloud`{.action}, cliquez sur `Network`{.action} puis sur `Load Balancer`{.action}.
 
 Sélectionnez votre Load Balancer puis, dans l'onglet `Accueil`{.action} et le menu `Configuration`{.action}, cliquez sur `Ajouter`{.action} dans la partie « Zones de disponibilité ».
 

@@ -4,6 +4,11 @@ excerpt: Dowiedz się, jak usunąć błąd "Strona nie została zainstalowana"
 updated: 2025-04-28
 ---
 
+> [!success]
+> Dołącz do ankiety i pomóż nam ulepszyć ten przewodnik!<br>
+> Podziel się z nami swoją opinią i pomysłami.<br>
+> [przejdź do ankiety.](https://s.elq.fr/ovhext/B4nKjrd)
+
 ## Wprowadzenie 
 
 W przeglądarce internetowej może pojawić się komunikat o błędzie **Niezainstalowana strona**, zwłaszcza przy pierwszej instalacji Twojej strony WWW.
