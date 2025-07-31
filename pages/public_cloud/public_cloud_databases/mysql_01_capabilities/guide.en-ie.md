@@ -25,7 +25,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Entire database instances have to be in the same region. Multi-AZ is currently not supported.
+Entire database instances have to be in the same region.
 
 ### MySQL versions
 
