@@ -1,7 +1,7 @@
 ---
 title: Kafka Connect - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka Connect
-updated: 2025-02-19
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -21,26 +21,36 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Database nodes have to be in the same region. Multi-AZ is currently not supported.
+Nodes have to be in the same region.
+
+### Kafka Connect versions
+
+The following Kafka Connect versions are supported:
+
+- Kafka Connect 3.8
+- Kafka Connect 3.9
+
+Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions.
 
 ### Plans
 
 Three plans are available:
 
 - *Essential*
-- *Business*
-- *Enterprise*
+- *Business/Production*
+- *Enterprise/Advanced*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes | Additional nodes |
-| ------------ | --------------- | ---------------- |
-| *Essential*  | 1               | No               |
-| *Business*   | 3               | No               |
-| *Enterprise* | 6               | No               |
+| Plan                  | Number of nodes | Additional nodes |
+| --------------------- | --------------- | ---------------- |
+| *Essential*           | 1               | No               |
+| *Business/Production* | 3               | No               |
+| *Enterprise/Advanced* | 6               | No               |
 
 Your choice of plan affects the number of nodes your cluster run or the SLA.
 
@@ -50,8 +60,8 @@ Your choice of plan affects the number of nodes your cluster run or the SLA.
 #### Nodes
 
 - **Essential**: the cluster consists of one node.
-- **Business**: the cluster is delivered with 3 nodes.
-- **Enterprise**: the cluster is delivered with 6 nodes.
+- **Business/Production**: the cluster is delivered with 3 nodes.
+- **Enterprise/Advanced**: the cluster is delivered with 6 nodes.
 
 ### Hardware resources
 
