@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Enable conversational memory in your chatbot using LangChain
 excerpt: How to integrate conversational memory into your chatbot using AI Endpoints and LangChain’s memory modules
-updated: 2025-04-28
+updated: 2025-07-31
 ---
 
 > [!primary]
