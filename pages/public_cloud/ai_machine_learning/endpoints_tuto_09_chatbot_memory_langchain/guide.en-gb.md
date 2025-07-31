@@ -66,6 +66,7 @@ Then, create a `requirements.txt` file with the required libraries:
 python-dotenv==1.0.1
 langchain_openai==0.1.14
 openai==1.68.2
+langchain==0.2.17
 ```
 
 Then, launch the installation of these dependencies:
