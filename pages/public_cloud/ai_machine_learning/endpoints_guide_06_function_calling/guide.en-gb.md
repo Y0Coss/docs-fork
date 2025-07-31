@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Function Calling
 excerpt: Learn how to use Function Calling with OVHcloud AI Endpoints
-updated: 2025-04-28
+updated: 2025-07-16
 ---
 
 > [!primary]
@@ -13,75 +13,267 @@ updated: 2025-04-28
 
 [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
-**Structured Output** is a powerful feature that allows you to enforce specific formats for the responses from AI models. By using the `response_format` parameter in your API calls, you can define how you want the output to be structured, ensuring consistency and ease of integration with your applications. This is particularly useful when you need the AI model to return data in a specific JSON format.
+**Function Calling**, also named tool calling, is a feature that enables a large language model (LLM) to trigger user-defined functions (also named tools). These tools are defined by the developer and implement specific behaviors such as calling an API, fetching data or calculating values, which extends the capabilities of the LLM.
 
-Structured output is a very powerful feature that allows us to enforce specific formats of the models' outputs.
-For example, you can specify a JSON schema that the output must adhere to, and the AI model will generate responses that match this schema. 
-This allows for seamless integration of AI-generated data into your applications, enabling you to build robust and consistent workflows.
-
-Under the hood, structured output is usually made possible with combination of:
-- specific examples used during model training
-- runtime guided decoding, with popular backends such as [outlines](https://github.com/dottxt-ai/outlines), [xgrammar](https://github.com/mlc-ai/xgrammar), or [lm-format-enforcer](https://github.com/noamgat/lm-format-enforcer)
-
+The LLM will identify which tool(s) to call and the arguments to use.
+This feature can be used to develop assistants or agents for instance.
 
 ## Objective
 
-This documentation provides an overview on how to use structured outputs with the various AI models offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/). 
-The examples provided in this guide will be using the [Llama 3.3 70b model](https://endpoints.ai.cloud.ovh.net/models/c968b503-27fa-451d-b59d-1b0ff91d304d)
+This documentation provides an overview on how to use function calling with the AI models offered on [AI Endpoints](https://endpoints.ai.cloud.ovh.net/).
+The examples provided in this guide will be using the [Mistral-Nemo-Instruct-2407](https://endpoints.ai.cloud.ovh.net/models/mistral-nemo-instruct-2407) model.
 
-Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with Structured Output.
-The output formats managed by each model are defined in the Response Format section:
-![Model Specs](images/model_specs.png)
+Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out which models are compatible with Function Calling.
 
 ## Requirements
 
-The examples provided during this guide can be used with one of the following environments:
+We use Python for the examples provided through this guide.
 
-### Python
-
-A [Python](https://www.python.org/) environment with the [openai client](https://pypi.org/project/openai/) and the pydantic library installed.
+Make sure you have a [Python](https://www.python.org/) environment configurer, and install the [openai client](https://pypi.org/project/openai/).
 ```sh
-pip install openai pydantic
+pip install openai
 ```
-
-### Javascript
-
-A [Node.js](https://nodejs.org/en) environment with the [request](https://www.npmjs.com/package/request) library.
-Request can be installed using [NPM](https://www.npmjs.com/):
-```sh
-npm install request
-```
-
-### Curl
-
-A standard terminal, with [curl](https://curl.se/) installed on the system.
 
 ### Authentication & rate limiting
 
-All the examples provided in this guide are using the anynomous authentication which makes it simpler to use but may cause rate limiting issues.
+All the examples provided in this guide are using the anonymous authentication which makes it simpler to use but may cause rate limiting issues.
 If you wish to enable authentication using your own token, simply specify your API key within the requests.
 Follow the following instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) for more information on authentication.
 
-## Instructions
+## Function Calling overview
 
-The `response_format` parameter of the Chat Completion API allows us to enable and configure the Structured Output features.
-Models that support structured output can manage the three following modes:
+The workflow to use function calling is described below:
+1. **Define tools**: tell the model what tools it can use, with a JSON schema for each tool
+2. **Process tools calls**: for each tool calls eventually returned by the model, execute the actual implementation of the tool in your code, using the name and arguments provided
+3. **Final response**: call the model with the updated conversation, containing the results of the tools calls, so that the model can generate a final answer
 
-- `{"type": "text"}`
-The default textual format. This is the same as specifying no `response_format`.
+![Function calling workflow](images/function_calling_workflow.png)
 
-- `{"type": "json_object"}`
-The JSON object format is a legacy format that was introduced with the first iteration of Structured Outputs.
-This mode is non-deterministic and allows the model to output a JSON object without strict validation.
+## Example: a time-tracking assistant
 
-- `{"type": "json_schema", "json_schema": .. }`
-[JSON schema](https://json-schema.org/) is a very powerful tool used to specify and validate a JSON data structure.
-This latest kind of response_format allows us to enforce custom output formats in LLM outputs using this specification and ensure consistency and interoperability with a variety of platforms and applications.
-When using the JSON schema mode, outputs are deterministic and will always adhere to the schema specified.
+To illustrate the use of function calling and progressively introduce the important notions related to this feature, we are going to develop a time-tracking assistant, step-by-step.
 
-We recommend using JSON schema over JSON object whenever possible.
+The assistant will be able to:
+* log time spent on a task
+* generate a time report
 
-### JSON schema
+Each task has a name, category and total duration in minutes. Categories are a fixed list of strings, for example "Code" or "Meetings".
+A time report can be generated for a category of task.
+
+The user will be able to interact with the assistant to log time and get information about how time was spent.
+
+### Define tools
+
+Our time-tracking assistant will use two tools :
+* `log_work`: log time spent on a task. Take the name of the task, category, duration and unit (minutes or hours).
+For example, to log 2 hours on documentation writing, you would call `log_work("User guide", "Documentation", 2, "hours")`
+* `time_report`: get a JSON with data about all tasks of a given category, and the total duration, in a given time unit (minutes or hours).
+For example, to get the breakdown on time spent on coding tasks, in hours, you would call `time_report("Code", "hours")`
+
+To get the LLM to use those tools, first we have to declare them with JSON schemas, in a `tools` list that we will pass to the chat completion API.
+
+```python
+# TOOLS DECLARATION (JSON SCHEMA)
+# Possible Categories (we'll reuse this later)
+CATEGORIES = ["Code", "Meetings", "Documentation", "Other"]
+
+# Define the tool specification
+TOOLS = [
+    {
+        "type": "function",
+        "function": {
+            "name": "log_work",
+            "description": "Logs a work session for a specific task by providing a start and end datetime.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "task_name": {
+                        "type": "string",
+                        "description": "The name of the task to log work for."
+                    },
+                    "task_category": {
+                        "type": "string",
+                        "enum": CATEGORIES,
+                        "description": "The category of the task to log work for."
+                    },
+                    "duration": {
+                        "type": "number",
+                        "description": "The duration to log work for."
+                    },
+                    "unit": {
+                        "type": "string",
+                        "enum": ["minutes", "hours"],
+                        "description": "The time unit to log work in."
+                    }
+                },
+                "required": ["task_name", "task_category", "duration", "unit"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "time_report",
+            "description": "Output a JSON with the breakdown of time spent by each task of a given category, returned in a given time unit.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "category": {
+                        "type": "string",
+                        "description": "The name of the category to get the report for."
+                    },
+                    "unit": {
+                        "type": "string",
+                        "enum": ["minutes", "hours"],
+                        "description": "The time unit to return the result in."
+                    }
+                },
+                "required": ["category", "unit"]
+            }
+        }
+    }
+]
+```
+
+### Generate tool calls
+
+With our tools ready, we can now try to call the model and see if it understands our tools definition.
+We use the OpenAI Python SDK to call the ``/v1/chat/completions`` route on the endpoint, passing the tools definition in the `tools` parameter.
+
+Let's send a simple user message: `log 1 hour team meeting` and see what the model answers.
+
+```python
+import os
+from openai import OpenAI
+
+MODEL_NAME = "Mistral-Nemo-Instruct-2407"
+API_KEY = os.environ.get("OVH_AI_ENDPOINTS_API_KEY")
+
+# Initialize the OpenAI client
+client = OpenAI(
+    base_url="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+    api_key=API_KEY
+)
+
+messages = [
+    {"role": "user", "content": "log 1 hour team meeting"}
+]
+response = client.chat.completions.create(
+    model=MODEL_NAME,
+    messages=messages,
+    tools=TOOLS,
+    tool_choice="auto",
+    temperature=0.15
+)
+
+print(response.choices[0].message.to_json())
+```
+
+Output:
+```json
+{
+  "role": "assistant",
+  "tool_calls": [
+    {
+      "id": "wuvyeH6fR",
+      "function": {
+        "arguments": "{\"task_name\": \"team meeting\", \"task_category\": \"Meetings\", \"duration\": 1, \"unit\": \"hours\"}",
+        "name": "log_work"
+      },
+      "type": "function"
+    }
+  ]
+}
+```
+
+The `tool_calls` output list contains the tool calls the model generated in response to our user message.
+We see that the model has successfully understood our query and generated the appropriate tool call.
+The `name` and `arguments` fields tells us which tool to call and which parameters to pass to the function.
+The `id` is an unique identifier for this tool call, that we will need later on.
+
+Under the hood, the model has recognized that the user intent was related to the set of tools given, and generated a sequence of specific tokens that were post-processed to create a tool call object.
+
+About the `tool_choice` parameter:
+You've noticed that we used the `auto` mode in our request to the endpoint.
+Here are the available values for this parameter and the impact on the output.
+
+| `tool_choice` value | Effect                                                                                                                                                                                                              |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `auto`              | Default mode when tools are defined, the model generates 0 to N tool calls.                                                                                                                                         |
+| `required`          | Force the model to generate at least 1 tool call, using structured outputs.                                                                                                                                         |
+| named function      | Force the model to generate at least 1 tool call to the given function.<br/>For example, to force the model to call the `log_work` tool:<br/>`tool_choice = {"type": "function", "function": {"name": "log_work"}}` |
+| `none`              | No tool calls generated.                                                                                                                                                                                            |
+
+
+### Process tools calls
+
+Now that we see that the model is able to generate tool calls, we need to code the actual Python implementation of the tools, so that we can process the tool calls the LLM will generate.
+Each task is stored in a dict, with the name as key.
+Categories are a fixed list.
+
+```python
+# TOOLS IMPLEMENTATION
+
+import json
+import os
+from dataclasses import dataclass
+
+# We store tasks by their names
+TASKS_BY_NAME = {}
+
+# A task has a name, category, and total duration in minutes
+# When we log a new work entry for a task, we add to this total duration
+@dataclass
+class Task:
+    name: str
+    category: str
+    duration_minutes: float = 0.0
+
+    def add_entry(self, duration:float, unit:str):
+        self.duration_minutes += to_minutes(duration, unit)
+
+    def __str__(self):
+        return json.dumps({"name": self.name, "category": self.category, "total_duration": self.duration_minutes})
+
+
+# TOOL 1 : log a work entry (task name, category, duration and unit = minutes or hours)
+def log_work(task_name: str, task_category: str, duration: float, unit: str):
+    # we create a new task if the name doesn't exist yet
+    if task_name not in TASKS_BY_NAME:
+        TASKS_BY_NAME[task_name] = Task(task_name, task_category)
+
+    task = TASKS_BY_NAME.get(task_name)
+    task.add_entry(duration=float(duration), unit=unit)
+
+    # the tool returns the data for the created or updated task, so that the model can use this information if needed
+    return {"task": task.name, "task_category": task_category, "total_duration": convert(task.duration_minutes, unit)}
+
+# TOOL 2 : get JSON data about a tasks in a given category, and total duration (category, unit = minutes or hours)
+def time_report(category: str, unit: str):
+    data = [{"name":t.name, "total_duration":convert(t.duration_minutes, unit)} for t in TASKS_BY_NAME.values() if t.category == category]
+    data.append({"total_duration_for_category": sum([x["total_duration"] for x in data])})
+    return data
+
+# Utilities function: convert to and from minutes and hours
+def convert(duration_min: float, unit: str) -> float:
+    if unit == "minutes":
+        return duration_min
+    elif unit == "hours":
+        return duration_min / 60
+    else:
+        raise ValueError("Invalid unit. Must be 'minutes', or 'hours'.")
+
+def to_minutes(duration: float, unit: str) -> float:
+    if unit == "minutes":
+        return duration
+    elif unit == "hours":
+        return duration * 60
+    else:
+        raise ValueError("Invalid unit. Must be 'minutes', or 'hours'.")
+```
+
+
+### Final response
 
 The following code samples provide a simple example on how to specify a JSON schema, using the `response_format` parameter.
 
