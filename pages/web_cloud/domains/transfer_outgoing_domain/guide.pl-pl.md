@@ -1,7 +1,7 @@
 ---
 title: "Transfer domeny do innego operatora"
 excerpt: "Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora"
-updated: 2024-05-16
+updated: 2025-07-31
 ---
 
 ## Wprowadzenie
@@ -104,9 +104,9 @@ Po pobraniu kodu transferu **nie zablokuj ponownie domeny, chyba że nie chcesz 
 
 ### Etap 3: rozpocząć transfer do nowego operatora
 
-Po wykonaniu poprzednich etapów, możesz rozpocząć proces transferu, zazwyczaj składając zamówienie. Transfer może trwać do 10 dni. 
+Po wykonaniu powyższych czynności, uruchom proces przeniesienia domeny, zazwyczaj zamawiając ją u nowego rejestrator domen. Transfer może potrwać do 10 dni.
 
-Aby uzyskać więcej informacji, skontaktuj się z nowym operatorem.
+Aby uzyskać więcej informacji, skontaktuj się z wybranym przez Ciebie nowym rejestrator domen.
 
 > [!warning]
 >
