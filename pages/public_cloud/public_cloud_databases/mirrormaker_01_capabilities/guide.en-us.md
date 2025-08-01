@@ -1,7 +1,7 @@
 ---
 title: Kafka MirrorMaker - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka MirrorMaker
-updated: 2024-05-27
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -21,6 +21,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -30,8 +31,8 @@ Kafka MirrorMaker nodes have to be in the same region. Multi-AZ is currently not
 
 The Public Cloud Databases offer supports the following Kafka versions:
 
-- Kafka MirrorMaker 2.0
-- Kafka 3.6
+- Kafka MirrorMaker 3.7
+- Kafka MirrorMaker 3.8
 
 You can follow Kafka Release Cycle on their official page: <https://kafka.apache.org/downloads>
 
@@ -46,16 +47,16 @@ Additionally, Kafka Connect is available at OVHcloud.
 Three plans are available:
 
 - *Essential*
-- *Business*
-- *Enterprise*
+- *Business/Production*
+- *Enterprise/Advanced*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes |
-| ------------ | -------------------------- | ---------------- |
-| *Essential*  | 1                          | No               |
-| *Business*   | 3                          | No               |
-| *Enterprise* | 6                          | No               |
+| Plan                  | Number of nodes by default | Additional nodes |
+| --------------------- | -------------------------- | ---------------- |
+| *Essential*           | 1                          | No               |
+| *Business/Production* | 3                          | No               |
+| *Enterprise/Advanced* | 6                          | No               |
 
 Your choice of plan affects the number of nodes your cluster can run as well as the SLA.
 
@@ -65,8 +66,8 @@ Your choice of plan affects the number of nodes your cluster can run as well as 
 #### Nodes
 
 - **Essential**: the cluster is delivered with 1 node by default.
-- **Business**: the cluster is delivered with 3 nodes by default.
-- **Enterprise**: the cluster is delivered with 6 nodes by default.
+- **Business/Production**: the cluster is delivered with 3 nodes by default.
+- **Enterprise/Advanced**: the cluster is delivered with 6 nodes by default.
 
 #### License type
 

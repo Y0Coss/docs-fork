@@ -1,7 +1,7 @@
 ---
 title: OpenSearch – Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for OpenSearch
-updated: 2025-02-19
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -21,6 +21,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -43,27 +44,24 @@ You can use any of the [OpenSearch-recommended clients and plugins](https://open
 Three plans are available:
 
 - *Essential*
-- *Business*
-- *Enterprise*
+- *Business/Production*
+- *Enterprise/Advanced*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Additional Read replicas |
-| ------------ | -------------------------- | ------------------------ |
-| *Essential*  | 1                          | No                       |
-| *Business*   | 3                          | Planned                  |
-| *Enterprise* | 6                          | Planned                  |
+| Plan                  | Number of nodes by default |
+| --------------------- | -------------------------- |
+| *Essential*           | 1                          |
+| *Business/Production* | 3                          |
+| *Enterprise/Advanced* | 6                          |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
-
-> [!primary]
-> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
 
 #### Nodes and replicas
 
 - **Essential**: the cluster can support at most one node.
-- **Business**: the cluster is delivered with 3 nodes by default.
-- **Enterprise**: the cluster is delivered with 6 nodes by default.
+- **Business/Production**: the cluster is delivered with 3 nodes by default.
+- **Enterprise/Advanced**: the cluster is delivered with 6 nodes by default.
 
 #### License type
 
@@ -129,9 +127,9 @@ You can further customise your OpenSearch by using advanced parameters. See the 
 
 *Essential* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 3 days for daily backups.
 
-*Business* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 14 days for daily backups.
+*Business/Production* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 14 days for daily backups.
 
-*Enterprise* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 30 days for daily backups.
+*Enterprise/Advanced* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 30 days for daily backups.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 

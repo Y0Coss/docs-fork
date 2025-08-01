@@ -1,7 +1,7 @@
 ---
 title: Kafka - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
-updated: 2025-02-19
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -21,16 +21,14 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
+- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Kafka nodes have to be in the same region. Multi-AZ is currently not supported.
-
 ### Kafka versions
 
-The Public Cloud Databases offer supports the following Kafka versions:
+The Public Cloud Databases offer supports the following Kafka version:
 
-- Kafka 3.7 (soon depreciated)
 - Kafka 3.8
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Kafka Release Cycle on their official page: <https://kafka.apache.org/downloads>
@@ -43,17 +41,17 @@ Kafka Connect and Kafka Mirrormaker 2 are available at OVHcloud.
 
 ### Plans
 
-Two plans are available:
+Different plans are available:
 
-- *Business*
-- *Enterprise*
+- *Business/Production*
+- *Enterprise/Advanced*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes |
-| ------------ | -------------------------- | ---------------- |
-| *Business*   | 3                          | No               |
-| *Enterprise* | 6                          | No               |
+| Plan                  | Number of nodes by default | Additional nodes |
+| --------------------- | -------------------------- | ---------------- |
+| *Business/Production* | 3                          | No               |
+| *Enterprise/Advanced* | 6                          | No               |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
@@ -62,8 +60,8 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 #### Nodes and replicas
 
-- **Business**: the cluster is delivered with 3 nodes by default.
-- **Enterprise**: the cluster is delivered with 6 nodes by default.
+- **Business/Production**: the cluster is delivered with 3 nodes by default.
+- **Enterprise/Advanced**: the cluster is delivered with 6 nodes by default.
 
 #### License type
 
@@ -71,29 +69,6 @@ Kafka software is under the Apache 2 license, a liberal open-source license.
 More information on <https://github.com/apache/kafka/blob/trunk/LICENSE>.
 
 ### Hardware resources
-
-Here are the node types you can choose from:
-
-**Business plans**
-
-| Name    | Storage                  | vCore | Memory (GB) |
-| ------- | ------------------------ | ----- | ----------- |
-| db1-4   | From 480 GB to 1.44 TB   | 2     | 4           |
-| db1-7   | From 960 GB to 2.88 TB   | 2     | 7           |
-| db1-15  | From 1.92 TB to 5.76 TB  | 4     | 15          |
-| db1-30  | From 3.84 TB to 11.52 TB | 8     | 30          |
-| db1-60  | From 7.68 TB to 23.04 TB | 16    | 60          |
-
-**Enterprise plans**
-
-| Name    | Storage                   | vCore | Memory (GB) |
-| ------- | ------------------------- | ----- | ----------- |
-| db1-7   | From 1.92 TB to 5.76 TB   | 2     | 7           |
-| db1-15  | From 3.84 TB to 11.52 TB  | 4     | 15          |
-| db1-30  | From 7.68 TB to 23.04 TB  | 8     | 30          |
-| db1-60  | From 15.36 TB to 46.08 TB | 16    | 60          |
-
-Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 
 #### Flexible storage
 
