@@ -676,7 +676,8 @@ data: [DONE]
 ```
 
 The first tool call delta contains the tool call unique `id`, and a function delta with the `name` of the function to call.
-The following function deltas contain a part of the arguments to use.
+
+The next function deltas contain a part of the `arguments` to use.
 
 To parse these chunks with the OpenAI Python SDK, you can use this code snippet:
 
