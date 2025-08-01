@@ -29,7 +29,7 @@ Visit our [Catalog](https://endpoints.ai.cloud.ovh.net/catalog) to find out whic
 
 We use Python for the examples provided through this guide.
 
-Make sure you have a [Python](https://www.python.org/) environment configurer, and install the [openai client](https://pypi.org/project/openai/).
+Make sure you have a [Python](https://www.python.org/) environment configured, and install the [openai client](https://pypi.org/project/openai/).
 ```sh
 pip install openai
 ```
