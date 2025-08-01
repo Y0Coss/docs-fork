@@ -253,7 +253,7 @@ def log_work(task_name: str, task_category: str, duration: float, unit: str):
     task.add_entry(duration=duration, unit=unit)
 
     # the tool returns the data for the created or updated task, so that the model can use this information if needed
-    return {"task": task.name, "task_category": task_category, "total_duration": convert(task.duration_minutes, unit), "status": status}
+    return {"task": task.name, "task_category": task.category, "total_duration": convert(task.duration_minutes, unit), "status": status}
 
 # TOOL 2 : get JSON data about a tasks in a given category, and total duration (category, unit = minutes or hours)
 def time_report(category: str, unit: str):
