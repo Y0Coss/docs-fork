@@ -319,7 +319,7 @@ We see that we successfully created a task called "team meeting", in the "Meetin
 
 Now that we have executed our tool calls, we have to send the result back to the model, so that it can generate a new response that takes this new information into account, to tell the user the task has been created successfully or to give the time report for instance.
 
-All we have to do is to add the tool results as new `tool` messages into the conversation, so we'll update our code:
+All we have to do, is to add the tool results as new `tool` messages into the conversation, so we'll update our code:
 ```python
 if assistant_response.tool_calls:
     print(f"<\t{len(assistant_response.tool_calls)} tool(s) to call")
@@ -334,7 +334,6 @@ if assistant_response.tool_calls:
             # execute the tool
             function_response = FUNCTION_MAP[tool_call.function.name](**function_args)
 
-
             # Add tool call result to the conversation
             tool_call_result = {
                 "role": "tool",
@@ -343,6 +342,7 @@ if assistant_response.tool_calls:
                 "tool_call_id": tool_call.id
             }
             messages.append(tool_call_result)
+            
             print(f">\t\tAdd tool call result to conversation:\n{tool_call_result}")
 ```
 
@@ -445,7 +445,6 @@ ef query(user_prompt: str):
                 print(f">\t\tExecute tool {tool_call.function.name} with arguments {function_args}")
                 function_response = FUNCTION_MAP[tool_call.function.name](**function_args)
 
-
                 # Add results to the conversation
                 tool_call_result = {
                     "role": "tool",
@@ -454,6 +453,7 @@ ef query(user_prompt: str):
                     "tool_call_id": tool_call.id
                 }
                 messages.append(tool_call_result)
+                
                 print(f">\t\tAdd tool call result to conversation:\n{tool_call_result}")
     else:
         print("<\tNO TOOL CALLS")
