@@ -719,7 +719,7 @@ Some additional considerations regarding prompts and model parameters:
 
 ## Conclusion
 
-In this guide, we have explained how to use Structured Output with the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) models.
+In this guide, we have explained how to use Function Calling with the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) models.
 We have provided a comprehensive overview of the feature which can help you perfect your integration of LLM for your own application.
 
 ## Go further
