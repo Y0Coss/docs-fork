@@ -49,6 +49,7 @@ The workflow to use function calling is described below:
 4. **Call the model with tools responses**: send a new request to the model, with the conversation updated with tool calls results.
 4. **Final response**: process the final generated answer, which takes the tools results into account.
 
+This diagram illustrates the workflow:
 ![Function calling workflow](images/function_calling_workflow.png)
 
 ## Example: a time-tracking assistant
@@ -66,13 +67,13 @@ The user will be able to interact with the assistant to log time and get informa
 
 ### Define tools
 
-To get the LLM to use those tools, first we have to declare them with JSON schemas, in a `tools` list that we will pass to the chat completion API.
-
 Our time-tracking assistant will use two tools :
 * `log_work`: log time spent on a task. Take the name of the task, category, duration and unit (minutes or hours).
   For example, to log 2 hours on documentation writing, you would call `log_work("User guide", "Documentation", 2, "hours")`
 * `time_report`: get JSON data about all tasks of a given category, and the total duration, in a given time unit (minutes or hours).
   For example, to get the breakdown on time spent on coding tasks, in hours, you would call `time_report("Code", "hours")`
+
+To get the model to use those tools, first we have to declare them with JSON schemas, in a `tools` list that we will pass to the Chat Completion API.
 
 Here is how the tools can be declared in Python:
 
@@ -162,6 +163,7 @@ client = OpenAI(
 messages = [
     {"role": "user", "content": "log 1 hour team meeting"}
 ]
+
 response = client.chat.completions.create(
     model=MODEL_NAME,
     messages=messages,
@@ -194,10 +196,12 @@ Output:
 }
 ```
 
-The `tool_calls` output list contains the tool calls the model generated in response to our user message.
-We see that the model has successfully understood our query and generated the appropriate tool call.
+We see that the model understood correctly that it needed to call the `log_work` tool, by looking at the `assistant` message generated.
+
+The `tool_calls` list contains the tool calls the model generated in response to our user message.
 The `name` and `arguments` fields tells us which tool to call and which parameters to pass to the function.
 The `id` is an unique identifier for this tool call, that we will need later on.
+You can have multiple tool calls in this list.
 
 Under the hood, the model has recognized that the user intent was related to the set of tools given, and generated a sequence of specific tokens that were post-processed to create a tool call object.
 
