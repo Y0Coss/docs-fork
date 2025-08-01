@@ -562,7 +562,7 @@ De facto, este erro também pode aparecer em caso de pedido HTTP que chegue ao *
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-A página «Your request has been blocked» pode ser apresentada por vários motivos (lista não exaustiva):
+A página "Your request has been blocked" pode ser apresentada por vários motivos (lista não exaustiva):
 
 - O pedido é efetuado a partir de um browser Internet (Firefox, Chrome, Safari, Edge, etc.) não atualizado.
 - Um grande número de pedidos, semelhantes ou não, são efetuados num prazo extremamente curto.
@@ -571,14 +571,14 @@ A página «Your request has been blocked» pode ser apresentada por vários mot
 Nesta situação, são necessárias várias ações:
 
 - Verifique se o seu browser da Internet está atualizado.
-- Recupere o URL chamado (por exemplo: `https://www.domain.tld`), bem como todas as informações presentes na página « Your request has been blocked » (`IP address`, `Date` e `Request ID`).
+- Recupere o URL chamado (por exemplo: `https://www.domain.tld`), bem como todas as informações presentes na página "Your request has been blocked" (`IP address`, `Date` e `Request ID`).
 - Transmita os elementos recuperados ao suporte através da criação de um [ticket de assistência](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
 
 > [!success]
 >
-Consulte também o nosso guia detalhado: [O que acontece se a página «Your request has been blocked» aparecer?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
+Consulte também o nosso guia detalhado: [O que acontece se a página "Your request has been blocked" aparecer?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
 
 ///
 
@@ -586,21 +586,21 @@ Consulte também o nosso guia detalhado: [O que acontece se a página «Your req
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-A página «Your IP has been banned» pode ser apresentada por vários motivos (lista não exaustiva):
+A página "Your IP has been banned" pode ser apresentada por vários motivos (lista não exaustiva):
 
 - Um grande número de pedidos, semelhantes ou não, são efetuados num prazo extremamente curto a partir do mesmo endereço IP.
 - As consultas efetuadas a partir do endereço IP em questão são suspeitas.
 
 Nesta situação, são necessárias várias ações:
 
-- Recupere o URL chamado (por exemplo: `https://www.domain.tld`), bem como todas as informações presentes na página « Your IP has been banned » (`IP address`, `Date` e `Request ID`).
+- Recupere o URL chamado (por exemplo: `https://www.domain.tld`), bem como todas as informações presentes na página "Your IP has been banned" (`IP address`, `Date` e `Request ID`).
 - Transmita os elementos recuperados ao suporte através da criação de um [ticket de assistência](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
 
 > [!success]
 >
-> Consulte também o nosso guia detalhado: [O que acontece se a página «Your IP has been banned» aparecer?](/pages/web_cloud/web_hosting/diagnostic_ip_banned).
+> Consulte também o nosso guia detalhado: [O que acontece se a página "Your IP has been banned" aparecer?](/pages/web_cloud/web_hosting/diagnostic_ip_banned).
 
 ///
 
