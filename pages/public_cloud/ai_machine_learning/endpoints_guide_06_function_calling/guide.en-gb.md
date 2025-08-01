@@ -415,7 +415,7 @@ Now we can combine all notions we've seen so far to create a `query` method that
 * output the final answer
 
 ```python
-ef query(user_prompt: str):
+def query(user_prompt: str):
     print(f"> Querying assistant with user prompt: {user_prompt}")
 
     messages = [
