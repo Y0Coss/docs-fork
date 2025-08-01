@@ -1,7 +1,7 @@
 ---
 title: "Hébergement Web - FAQ"
 excerpt: "Retrouvez les principales questions posées sur les hébergements web OVHcloud"
-updated: 2025-04-25
+updated: 2025-08-01
 ---
 
 <style>
@@ -562,22 +562,23 @@ En effet, cette erreur peut aussi apparaître en cas de requête HTTP qui abouti
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-Ce message indique que le type de requête HTTP que vous tentez de faire sur votre site web est interdit pour un temps limité, généralement pour des raisons de sécurité.
+La page « Your request has been blocked » peut s'afficher pour diverses raisons (liste non exhaustive) :
+
+- La requête est effectuée depuis un navigateur Internet (Firefox, Chrome, Safari, Edge, etc.) non mis à jour.
+- Un très grand nombre de requêtes, similaires ou non, sont effectuées dans un délai extrêmement court.
+- La requête tente d'exécuter des actions non autorisées sur l'infrastructure mutualisée où se trouve votre hébergement web.
 
 Dans cette situation, plusieurs actions sont requises :
 
-- Examinez les [logs](/pages/web_cloud/web_hosting/logs_and_statistics) de votre site web, afin de déterminer quelles requêtes ont provoqué ce blocage.
-- Àl'aide d'un logiciel anti-virus ou anti-spyware, vérifiez que vos appareils (ordinateurs, smartphones, etc.) ne sont pas infectés par un logiciel espion ou malveillant.
-- Vérifiez le code source de votre site web (espace de stockage FTP et base(s) de données). 
+- Vérifiez que votre navigateur Internet est à jour.
+- Récupérez l'URL appelée (par exemple : `https://www.domain.tld`) ainsi que toutes les informations présentes sur la page « Your request has been blocked » (`IP address`, `Date` et `Request ID`).
+- Transmettez les éléments récupérés au support en créant un [ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
 
 > [!success]
 >
-> Consultez également nos guides détaillés :
->
-> - [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Cas d'usage - Conseils suite au piratage de votre site Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Consultez également notre guide détaillé : [Que faire si la page « Your request has been blocked » s’affiche ?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
 
 ///
 
@@ -585,22 +586,21 @@ Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webm
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-Ce message indique que l'adresse IP que vous utilisez pour vous connecter à votre site web est bloquée pour un temps limité, généralement pour des raisons de sécurité.
+La page « Your IP has been banned » peut s'afficher pour diverses raisons (liste non exhaustive) :
+
+- Un très grand nombre de requêtes, similaires ou non, sont effectuées dans un délai extrêmement court depuis la même adresse IP.
+- Les requêtes effectuées depuis l'adresse IP en question sont suspectes.
 
 Dans cette situation, plusieurs actions sont requises :
 
-- Examinez les [logs](/pages/web_cloud/web_hosting/logs_and_statistics) de votre site web, afin de déterminer quelles requêtes ont provoqué ce blocage.
-- À l'aide d'un logiciel anti-virus ou anti-spyware, vérifiez que vos appareils (ordinateurs, smartphones, etc.) ne sont pas infectés par un logiciel espion ou malveillant.
-- Vérifiez le code source de votre site web (espace de stockage FTP et base(s) de données).
+- Récupérez l'URL appelée (par exemple : `https://www.domain.tld`) ainsi que toutes les informations présentes sur la page « Your IP has been banned » (`IP address`, `Date` et `Request ID`).
+- Transmettez les éléments récupérés au support en créant un [ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
 
 > [!success]
 >
-> Consultez également nos guides détaillés :
->
-> - [Hébergement web - Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Cas d'usage - Conseils suite au piratage de votre site Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Consultez également notre guide détaillé : [Que faire si la page « Your IP has been banned » s'affiche ?](/pages/web_cloud/web_hosting/diagnostic_ip_banned).
 
 ///
 

@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Poznaj najważniejsze pytania dotyczące hostingu WWW OVHcloud"
-updated: 2025-04-25
+updated: 2025-08-01
 ---
 
 <style>
@@ -562,22 +562,23 @@ Błąd ten może się pojawić również w przypadku żądania HTTP, które koń
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-Ten komunikat wskazuje, że typ zapytania HTTP, które próbujesz wykonać na twojej stronie WWW, jest zabroniony przez ograniczony czas, zwykle ze względów bezpieczeństwa.
+Strona "Your request has been blocked" może się wyświetlać z różnych powodów (lista nie jest wyczerpująca):
+
+- Zapytanie jest wykonywane z poziomu niezaktualizowanej przeglądarki internetowej (Firefox, Chrome, Safari, Edge, itp.).
+- Bardzo duża liczba zapytań, podobnych lub nie, jest wykonywana w niezwykle krótkim czasie.
+- Zapytanie próbuje wykonać nieautoryzowane operacje na infrastrukturze współdzielonej, na której znajduje się Twój hosting.
 
 W tej sytuacji należy podjąć kilka działań:
 
-- Sprawdź [logi](/pages/web_cloud/web_hosting/logs_and_statistics) twojej strony WWW, aby ustalić, które zapytania spowodowały tę blokadę.
-- Za pomocą oprogramowania antywirusowego lub antyspyware sprawdź, czy twoje urządzenia (komputery, smartfony itp.) nie są zainfekowane oprogramowaniem szpiegującym lub złośliwym.
-- Sprawdź kod źródłowy twojej strony WWW (przestrzeń FTP i baza(y) danych).
+- Upewnij się, że Twoja przeglądarka internetowa jest aktualna.
+- Pobierz wywołany adres URL (na przykład: `https://www.domain.tld`) oraz wszystkie informacje dostępne na stronie "Your request has been blocked" (`IP address`, `Date` i `Request ID`).
+- Prześlij odzyskane elementy do pomocy technicznej, tworząc [zgłoszenie serwisowe](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z webmasterem lub jednym z naszych [partnerów](/links/partner).
 
 > [!success]
 >
-> Sprawdź nasze szczegółowe przewodniki:
->
-> - [Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Przykłady zastosowania - Porady po włamaniu się na stronę WWW](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Zapoznaj się również z przewodnikiem: [Co zrobić, jeśli wyświetla się strona 'Your request has been blocked'?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
 
 ///
 
@@ -585,22 +586,21 @@ Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z we
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-Komunikat ten oznacza, że adres IP, którego używasz do logowania się na twojej stronie WWW, jest zablokowany na ograniczony czas, zazwyczaj ze względów bezpieczeństwa.
+Strona "Your IP has been banned" może się wyświetlać z różnych powodów (lista nie jest wyczerpująca):
+
+- Bardzo duża liczba zapytań, podobnych lub nie, jest wykonywana w bardzo krótkim czasie z tego samego adresu IP.
+- Zapytania wykonane z danego adresu IP są podejrzane.
 
 W tej sytuacji należy podjąć kilka działań:
 
-- Sprawdź [logi](/pages/web_cloud/web_hosting/logs_and_statistics) twojej strony WWW, aby ustalić, które zapytania spowodowały tę blokadę.
-- Za pomocą oprogramowania antywirusowego lub antyspyware sprawdź, czy twoje urządzenia (komputery, smartfony itp.) nie są zainfekowane oprogramowaniem szpiegującym lub złośliwym.
-- Sprawdź kod źródłowy twojej strony WWW (przestrzeń FTP i baza(y) danych).
+- Pobierz wywołany adres URL (na przykład: `https://www.domain.tld`) oraz wszystkie informacje dostępne na stronie "Your IP has been banned" (`IP address`, `Date` i `Request ID`).
+- Prześlij odzyskane elementy do pomocy technicznej, tworząc [zgłoszenie serwisowe](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Jeśli nie jesteś pewien, jakie operacje należy wykonać, skontaktuj się z webmasterem lub jednym z naszych [partnerów](/links/partner).
 
 > [!success]
 >
-> Sprawdź nasze szczegółowe przewodniki:
->
-> - [Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Przykłady zastosowania - Porady po włamaniu się na stronę WWW](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Zapoznaj się również ze szczegółowym przewodnikiem: [Co zrobić, jeśli wyświetla się strona 'Your IP has been banned'?](/pages/web_cloud/web_hosting/diagnostic_ip_banned).
 
 ///
 
