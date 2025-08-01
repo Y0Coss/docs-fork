@@ -600,8 +600,6 @@ Wenn Sie sich nicht sicher sind, welche Schritte Sie ausführen sollen, wenden S
 
 > [!success]
 >
-> Lesen Sie auch unsere detaillierten Anleitungen:
->
 > Lesen Sie auch unsere detaillierte Anleitung: [Was tun, wenn die Meldung „Your IP has been banned“ angezeigt wird?](/pages/web_cloud/web_hosting/diagnostic_ip_banned).
 
 ///
