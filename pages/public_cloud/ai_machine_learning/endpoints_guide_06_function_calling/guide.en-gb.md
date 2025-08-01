@@ -50,6 +50,7 @@ The workflow to use function calling is described below:
 4. **Final response**: process the final generated answer, which takes the tools results into account.
 
 This diagram illustrates the workflow:
+
 ![Function calling workflow](images/function_calling_workflow.png)
 
 ## Example: a time-tracking assistant
