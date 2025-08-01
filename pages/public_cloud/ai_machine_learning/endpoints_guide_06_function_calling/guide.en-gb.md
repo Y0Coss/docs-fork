@@ -43,9 +43,11 @@ Follow the following instructions in the [AI Endpoints - Getting Started](/pages
 ## Function Calling overview
 
 The workflow to use function calling is described below:
-1. **Define tools**: tell the model what tools it can use, with a JSON schema for each tool
-2. **Process tools calls**: for each tool calls eventually returned by the model, execute the actual implementation of the tool in your code, using the name and arguments provided
-3. **Final response**: call the model with the updated conversation, containing the results of the tools calls, so that the model can generate a final answer
+1. **Define tools**: tell the model what tools it can use, with a JSON schema for each tool.
+2. **Call the model with tools**: pass tools along with your system and user messages to the model, which will eventually generate tool calls.
+3. **Process tools calls**: for each tool calls returned by the model, execute the actual implementation of the tool in your code.
+4. **Call the model with tools responses**: send a new request to the model, with the conversation updated with tool calls results.
+4. **Final response**: process the final generated answer, which takes the tools results into account.
 
 ![Function calling workflow](images/function_calling_workflow.png)
 
@@ -168,7 +170,10 @@ response = client.chat.completions.create(
     temperature=0.15
 )
 
+# Add the assistant response to the conversation
 assistant_response = response.choices[0].message
+messages.append(assistant_response)
+
 print(assistant_response.to_json())
 ```
 
@@ -196,16 +201,20 @@ The `id` is an unique identifier for this tool call, that we will need later on.
 
 Under the hood, the model has recognized that the user intent was related to the set of tools given, and generated a sequence of specific tokens that were post-processed to create a tool call object.
 
-About the `tool_choice` parameter:
-You've noticed that we used the `auto` mode in our request to the endpoint.
-Here are the available values for this parameter and the impact on the output.
+We add this message to the conversation so that the model can have knowledge about this tool call in the next rounds of our multi-turn conversation.
 
-| `tool_choice` value | Effect                                                                                                                                                                                                              |
-|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `auto`              | Default mode when tools are defined, the model generates 0 to N tool calls.                                                                                                                                         |
-| `required`          | Force the model to generate at least 1 tool call, using structured outputs.                                                                                                                                         |
-| named function      | Force the model to generate at least 1 tool call to the given function.<br/>For example, to force the model to call the `log_work` tool:<br/>`tool_choice = {"type": "function", "function": {"name": "log_work"}}` |
-| `none`              | No tool calls generated.                                                                                                                                                                                            |
+> About the `tool_choice` parameter:
+> 
+> You've noticed that we used the `auto` mode in our request to the endpoint.
+>
+> Here are the available values for this parameter and the impact on the output.
+>
+> | `tool_choice` value | Effect                                                                                                                                                                                                              |
+> |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+> | `auto`              | Default mode when tools are defined, the model generates 0 to N tool calls.                                                                                                                                         |
+> | `required`          | Force the model to generate at least 1 tool call, using structured outputs.                                                                                                                                         |
+> | named function      | Force the model to generate at least 1 tool call to the given function.<br/>For example, to force the model to call the `log_work` tool:<br/>`tool_choice = {"type": "function", "function": {"name": "log_work"}}` |
+> | `none`              | No tool calls generated.                                                                                                                                                                                            |
 
 
 ### Process tools calls
@@ -243,14 +252,17 @@ class Task:
 # TOOL 1 : log a work entry (task name, category, duration and unit = minutes or hours)
 def log_work(task_name: str, task_category: str, duration: float, unit: str):
     # we create a new task if the name doesn't exist yet
-    if task_name not in TASKS_BY_NAME:
+    if task_name in TASKS_BY_NAME:
+        status = "updated"
+    else:
+        status = "created"
         TASKS_BY_NAME[task_name] = Task(task_name, task_category)
 
     task = TASKS_BY_NAME.get(task_name)
-    task.add_entry(duration=float(duration), unit=unit)
+    task.add_entry(duration=duration, unit=unit)
 
     # the tool returns the data for the created or updated task, so that the model can use this information if needed
-    return {"task": task.name, "task_category": task_category, "total_duration": convert(task.duration_minutes, unit)}
+    return {"task": task.name, "task_category": task_category, "total_duration": convert(task.duration_minutes, unit), "status": status}
 
 # TOOL 2 : get JSON data about a tasks in a given category, and total duration (category, unit = minutes or hours)
 def time_report(category: str, unit: str):
@@ -289,10 +301,8 @@ FUNCTION_MAP = {
 # if there are tool calls in the assistant generated response
 if assistant_response.tool_calls:
     print(f"<\t{len(assistant_response.tool_calls)} tool(s) to call")
-    
     # we can have several tool calls
     for tool_call in assistant_response.tool_calls:
-
         # The tool name should be associated with a Python function
         if tool_call.function.name in FUNCTION_MAP.keys():
             # the arguments provided by the model should be a valid JSON (in production code, this should be checked)
@@ -314,25 +324,393 @@ Output:
 
 We see that we successfully created a task called "team meeting", in the "Meetings" category with a total duration of 1 hour.
 
-### Final response
+### Send tool calls results and get the final response
+
+Now that we have executed our tool calls, we have to send the result back to the model, so that it can generate a new response that takes this new information into account, to tell the user the task has been created successfully or to give the time report for instance.
+
+All we have to do is to add the tool results as new `tool` messages into the conversation, so we'll update our code:
+```python
+if assistant_response.tool_calls:
+    print(f"<\t{len(assistant_response.tool_calls)} tool(s) to call")
+    # we can have several tool calls
+    for tool_call in assistant_response.tool_calls:
+        # The tool name should be associated with a Python function
+        if tool_call.function.name in FUNCTION_MAP.keys():
+            # the arguments provided by the model should be a valid JSON (in production code, this should be checked)
+            function_args = json.loads(tool_call.function.arguments)
+            print(f">\t\tExecute tool {tool_call.function.name} with arguments {function_args}")
+
+            # execute the tool
+            function_response = FUNCTION_MAP[tool_call.function.name](**function_args)
+
+
+            # Add tool call result to the conversation
+            tool_call_result = {
+                "role": "tool",
+                "name": tool_call.function.name,
+                "content": json.dumps(function_response),
+                "tool_call_id": tool_call.id
+            }
+            messages.append(tool_call_result)
+            print(f">\t\tAdd tool call result to conversation:\n{tool_call_result}")
+```
+
+We then call the model with the updated conversation:
+
+```python
+print(f">\tCall assistant with tool results")
+
+response = client.chat.completions.create(
+    model=MODEL_NAME,
+    messages=messages,
+)
+
+print(f"<\t\tAssistant final answer:\n{response.choices[0].message.content}")
+```
+
+Output:
+```
+<	1 tool(s) to call
+>		Execute tool log_work with arguments {'task_name': 'team meeting', 'task_category': 'Meetings', 'duration': 1, 'unit': 'hours'}
+>		Add tool call result to conversation:
+{'role': 'tool', 'name': 'log_work', 'content': '{"task": "team meeting", "task_category": "Meetings", "total_duration": 1.0, "status": "created"}', 'tool_call_id': 'v1X1sJP9b'}
+>	Call assistant with tool results
+<		Assistant final answer:
+Following is the details of 1 hour team meeting:
+
+- Task: Team Meeting
+- Duration: 1.0 hours
+- Status: Created
+```
 
 ### Add a system prompt
 
+To make our assistant more robust and powerful, it can be useful to add a system prompt that:
+* explains what is expected from the model
+* provides useful information to the model, such as the current existing tasks and categories
+
+```python
+SYSTEM_PROMPT = \
+    """
+    You are a helpful and precise time-tracking assistant.
+    You use tools to log work and generate time reports.
+    
+    # Possible categories: {{categories}}
+    
+    # Existing tasks: {{tasks}}
+    
+    """
+
+def format_system_prompt():
+    return SYSTEM_PROMPT \
+        .replace("{{tasks}}", json.dumps([str(t) for t in TASKS_BY_NAME.values()])) \
+        .replace("{{categories}}", json.dumps(CATEGORIES))
+
+messages = [
+    {"role": "system", "content": format_system_prompt()},
+    {"role": "user", "content": "log 1 hour team meeting"}
+]
+```
+
+With this system prompt, the model will be able to use data about existing tasks and categories to generate its responses.
+
 ### Putting it all together
 
-## Tips and best practices
+Now we can combine all notions we've seen so far to create a `query` method that will:
+* call the model with the formatted system prompt and user message
+* process tool calls
+* call the model a second time with the tool results
+* output the final answer
 
+```python
+ef query(user_prompt: str):
+    print(f"> Querying assistant with user prompt: {user_prompt}")
+
+    messages = [
+        {"role": "system", "content": format_system_prompt()},
+        {"role": "user", "content": user_prompt}
+    ]
+    
+    response = client.chat.completions.create(
+        model=MODEL_NAME,
+        messages=messages,
+        tools=TOOLS,
+        tool_choice="auto",
+        temperature=0.15
+    )
+
+    # Add the assistant response to the conversation
+    assistant_response = response.choices[0].message
+    messages.append(assistant_response)
+
+    # Process the tool calls
+    if assistant_response.tool_calls:
+        print(f"<\t{len(assistant_response.tool_calls)} tool(s) to call")
+        for tool_call in assistant_response.tool_calls:
+
+            # Execute the function
+            if tool_call.function.name in FUNCTION_MAP.keys():
+                function_args = json.loads(tool_call.function.arguments)
+                print(f">\t\tExecute tool {tool_call.function.name} with arguments {function_args}")
+                function_response = FUNCTION_MAP[tool_call.function.name](**function_args)
+
+
+                # Add results to the conversation
+                tool_call_result = {
+                    "role": "tool",
+                    "name": tool_call.function.name,
+                    "content": json.dumps(function_response),
+                    "tool_call_id": tool_call.id
+                }
+                messages.append(tool_call_result)
+                print(f">\t\tAdd tool call result to conversation:\n{tool_call_result}")
+    else:
+        print("<\tNO TOOL CALLS")
+
+    print(f">\tCall assistant with tool results")
+
+    response = client.chat.completions.create(
+        model=MODEL_NAME,
+        messages=messages,
+    )
+
+    print(f"<\t\tAssistant final answer:\n{response.choices[0].message.content}")
+    print("\n---\n")
+```
+
+Let's try our assistant on some examples!
+
+```python
+query("Spent 2 hours coding on Feature A")
+query("Feature B: 3h")
+query("Team meeting 1h")
+# this query is more complex as it requires the model to generate 2 tool calls (one log_work for each feature), and to reuse the task "Feature B" instead of creating a new one
+query("log 2 hours on feat B and 3 hours on feature C")
+query("time spent in meetings?")
+query("total time on coding")
+query("on which task did I spent most hours coding?")
+```
+
+Output:
+```
+> Querying assistant with user prompt: Spent 2 hours coding on Feature A
+<	1 tool(s) to call
+>		Execute tool log_work with arguments {'duration': 2, 'task_category': 'Code', 'task_name': 'Feature A', 'unit': 'hours'}
+>		Add tool call result to conversation:
+{'role': 'tool', 'name': 'log_work', 'content': '{"task": "Feature A", "task_category": "Code", "total_duration": 2.0, "status": "created"}', 'tool_call_id': 'iGcC6qbte'}
+>	Call assistant with tool results
+<		Assistant final answer:
+Logged time for Code
+  Feature A 2 hours, 0 minutes
+  ============================
+
+---
+
+> Querying assistant with user prompt: Feature B: 3h
+<	1 tool(s) to call
+>		Execute tool log_work with arguments {'task_name': 'Feature B', 'task_category': 'Code', 'duration': 3, 'unit': 'hours'}
+>		Add tool call result to conversation:
+{'role': 'tool', 'name': 'log_work', 'content': '{"task": "Feature B", "task_category": "Code", "total_duration": 3.0, "status": "created"}', 'tool_call_id': 'd30xAKNT1'}
+>	Call assistant with tool results
+<		Assistant final answer:
+- Your work log has been created. Here are the details:
+  - Task: Feature B
+  - Category: Code
+  - Duration: 3 hours
+  - Status: Created
+
+---
+
+> Querying assistant with user prompt: Team meeting 1h
+<	1 tool(s) to call
+>		Execute tool log_work with arguments {'task_name': 'Team meeting', 'task_category': 'Meetings', 'duration': 60, 'unit': 'minutes'}
+>		Add tool call result to conversation:
+{'role': 'tool', 'name': 'log_work', 'content': '{"task": "Team meeting", "task_category": "Meetings", "total_duration": 60.0, "status": "created"}', 'tool_call_id': 'EV3D7LdPE'}
+>	Call assistant with tool results
+<		Assistant final answer:
+The task "Team meeting" has been created successfully.
+
+---
+
+> Querying assistant with user prompt: log 2 hours on feat B and 3 hours on feature C
+<	2 tool(s) to call
+>		Execute tool log_work with arguments {'task_name': 'Feature B', 'task_category': 'Code', 'duration': 2, 'unit': 'hours'}
+>		Add tool call result to conversation:
+{'role': 'tool', 'name': 'log_work', 'content': '{"task": "Feature B", "task_category": "Code", "total_duration": 5.0, "status": "updated"}', 'tool_call_id': 'frrThsgJ5'}
+>		Execute tool log_work with arguments {'task_name': 'Feature C', 'task_category': 'Code', 'duration': 3, 'unit': 'hours'}
+>		Add tool call result to conversation:
+{'role': 'tool', 'name': 'log_work', 'content': '{"task": "Feature C", "task_category": "Code", "total_duration": 3.0, "status": "created"}', 'tool_call_id': 'K4aTPhdBp'}
+>	Call assistant with tool results
+<		Assistant final answer:
+Great! Feature B's total working hours have been updated to 5 hours. Feature C's working time has been recorded as 3 hours.
+
+---
+
+> Querying assistant with user prompt: time spent in meetings?
+<	1 tool(s) to call
+>		Execute tool time_report with arguments {'category': 'Meetings', 'unit': 'minutes'}
+>		Add tool call result to conversation:
+{'role': 'tool', 'name': 'time_report', 'content': '[{"name": "Team meeting", "total_duration": 60.0}, {"total_duration_for_category": 60.0}]', 'tool_call_id': '1G8uk1bPH'}
+>	Call assistant with tool results
+<		Assistant final answer:
+Here's the time spent in meetings:
+
+- **Team meeting**: 60 minutes
+
+---
+
+> Querying assistant with user prompt: total time on coding
+<	1 tool(s) to call
+>		Execute tool time_report with arguments {'category': 'Code', 'unit': 'hours'}
+>		Add tool call result to conversation:
+{'role': 'tool', 'name': 'time_report', 'content': '[{"name": "Feature A", "total_duration": 2.0}, {"name": "Feature B", "total_duration": 5.0}, {"name": "Feature C", "total_duration": 3.0}, {"total_duration_for_category": 10.0}]', 'tool_call_id': '50bmrsPII'}
+>	Call assistant with tool results
+<		Assistant final answer:
+Here's the breakdown of your coding time:
+
+- Feature A: 2 hours
+- Feature B: 5 hours
+- Feature C: 3 hours
+- **Total**: 10 hours
+
+---
+
+> Querying assistant with user prompt: on which task did I spent most hours coding?
+<	1 tool(s) to call
+>		Execute tool time_report with arguments {'category': 'Code', 'unit': 'hours'}
+>		Add tool call result to conversation:
+{'role': 'tool', 'name': 'time_report', 'content': '[{"name": "Feature A", "total_duration": 2.0}, {"name": "Feature B", "total_duration": 5.0}, {"name": "Feature C", "total_duration": 3.0}, {"total_duration_for_category": 10.0}]', 'tool_call_id': 'uFDF7rS0H'}
+>	Call assistant with tool results
+<		Assistant final answer:
+Based on the tracking data, the task on which you spent the most hours coding is:
+
+- **Feature B**: 5 hours
+- The total coding time across all tasks is 10 hours.
+```
+
+Mission accomplished!
+
+## Tips and best practices
 This section contains additional tips that may improve the performance of Function Calling queries.
 
 ### Streaming
 
+It is possible to use Function Calling in streaming mode, by setting `stream` to `true` in your request.
+
+Let's see an example with cURL and the LLaMa 3.1 8B model:
+```bash
+curl -X 'POST'
+        'https://llama-3-1-8b-instruct.endpoints.kepler.ai.cloud.ovh.net/api/openai_compat/v1/chat/completions'
+        -H 'accept: application/json'
+           -H 'Content-Type: application/json'
+              -d '{
+"max_tokens": 100,
+"messages": [
+    {
+        "content": "What is the current weather in Paris?",
+        "role": "user"
+    }
+],
+"model": null,
+"seed": null,
+"stream": true,
+"temperature": 0.1,
+"tool_choice": "auto",
+"tools": [
+    {
+        "function": {
+            "description": "Get the current weather in a given location",
+            "name": "get_current_weather",
+            "parameters": {
+                "properties": {
+                    "country": {
+                        "description": "The two-letters country code",
+                        "type": "string"
+                    },
+                    "location": {
+                        "description": "The city",
+                        "type": "string"
+                    },
+                    "unit": {
+                        "enum": [
+                            "celsius",
+                            "fahrenheit"
+                        ],
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "location",
+                    "country"
+                ],
+                "type": "object"
+            }
+        },
+        "type": "function"
+    }
+],
+"top_p": 1
+}'
+```
+
+You will get tool call deltas in the server-side events chunks, with this format:
+```
+data: {...,"choices":[{"index":0,"delta":{"role":"assistant","content":""}}],...,"object":"chat.completion.chunk"}
+data: {...,"choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"index":0,"id":"chatcmpl-tool-e41bfee4ae1346bbbb4336061037e2b5","type":"function","function":{"name":"get_current_weather","arguments":""}}]}}],...,"object":"chat.completion.chunk"}
+data: {...,"choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"index":0,"function":{"arguments":"{\"country\": \""}}]}}],...,"object":"chat.completion.chunk"}
+data: {...,"choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"index":0,"function":{"arguments":"FR\""}}]}}],...,"object":"chat.completion.chunk"}
+data: {...,"choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"index":0,"function":{"arguments":", \"location\": \""}}]}}],...,"object":"chat.completion.chunk"}
+data: {...,"choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"index":0,"function":{"arguments":"Paris\""}}]}}],...,"object":"chat.completion.chunk"}
+data: {...,"choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"index":0,"function":{"arguments":", \"unit\": \""}}]}}],...,"object":"chat.completion.chunk"}
+data: {...,"choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"index":0,"function":{"arguments":"c"}}]}}],...,"object":"chat.completion.chunk"}
+data: {...,"choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"index":0,"function":{"arguments":"elsius\"}"}}]}}],...,"object":"chat.completion.chunk"}
+data: {...,"choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"index":0,"function":{"arguments":""}}]},"finish_reason":"tool_calls"}],...,"object":"chat.completion.chunk"}
+data: [DONE]
+```
+
+Each tool call delta contains either the name of the function to call, either a part of the arguments to use.
+
+To parse these chunks with the OpenAI Python SDK, you can use this code snippet:
+
+```python
+final_tool_calls_dict = {}
+
+for chunk in completion:
+    if len(chunk.choices) > 0:
+        for tool_call in chunk.choices[0].delta.tool_calls or []:
+            index = tool_call.index
+
+            if index not in final_tool_calls_dict:
+                final_tool_calls_dict[index] = tool_call
+
+            final_tool_calls_dict[index].function.arguments += tool_call.function.arguments
+
+final_tool_calls = [v for (k, v) in sorted(final_tool_calls_dict.items())]
+```
+
 ### Parallel tool calls
 
-### Prompting
+Some models are able to generate multiple tool calls in one round (see the time-tracking tutorial above for an example).
+To control this behavior, the OpenAI specification allows to pass a `parallel_tool_calls` boolean parameter.
+
+If `false`, the model can only generate one tool call at most.
+This case is currently not supported by AI Endpoints.
+
+If you need your system to process only one tool call at a time, or if the model you are using doesn't support multiple tool calls, we suggest you pick the first one, process it, and call the model again.
+
+Please note that LLaMa models don't support multiple tool calls between users and assistants messages.
+
+#### Prompting & additional parameters
+
+Some additional considerations regarding prompts and model parameters:
+- Most models tend to perform better when using lower temperature for function calling.
+- The use of a system prompt is recommended, to ground the model into using the tools at its disposal. Whether a system prompt is defined or not, a description of the tools will usually be included in the tokens sent to the model (see the model chat template for more details).
+- If you know in advance that your model needs to call tools, use the `tool_choice=required` parameter to make sure it generates at least one tool call.
+- Some model providers may recommend specific system prompts and parameters to use for structured output and function calling. Don't hesitate to visit the model pages to dive deeper into model specifics ([example for Llama 3.3 on HuggingFace](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)).
 
 ## Conclusion
 
-In this guide, we have explained how to use Function Calling with the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) models.
+In this guide, we have explained how to use Structured Output with the [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) models.
 We have provided a comprehensive overview of the feature which can help you perfect your integration of LLM for your own application.
 
 ## Go further
