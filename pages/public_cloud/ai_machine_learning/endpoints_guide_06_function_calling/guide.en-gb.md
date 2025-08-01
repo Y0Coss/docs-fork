@@ -383,15 +383,15 @@ To make our assistant more robust and powerful, it can be useful to add a system
 
 ```python
 SYSTEM_PROMPT = \
-    """
-    You are a helpful and precise time-tracking assistant.
-    You use tools to log work and generate time reports.
-    
-    # Possible categories: {{categories}}
-    
-    # Existing tasks: {{tasks}}
-    
-    """
+"""
+You are a helpful and precise time-tracking assistant.
+You use tools to log work and generate time reports.
+
+# Possible categories: {{categories}}
+
+# Existing tasks: {{tasks}}
+
+"""
 
 def format_system_prompt():
     return SYSTEM_PROMPT \
