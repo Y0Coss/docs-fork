@@ -589,7 +589,7 @@ This section contains additional tips that may improve the performance of Functi
 
 ### Tool choice
 
-You've noticed that we used the `auto` mode in our request to the endpoint.
+You've noticed that we used the `auto` mode in our tutorial.
 
 Here are the available values for this parameter and the impact on the output.
 
