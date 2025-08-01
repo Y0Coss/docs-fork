@@ -21,7 +21,7 @@ Les clusters Nutanix sur OVHcloud sont évolutifs. Vous pouvez désormais **ajou
 
 ## Informations techniques
 
-- Votre cluster doit comporter entre **3 et 15 nœuds**
+- Votre cluster doit comporter entre **3 et 32 nœuds**
 - Tous les nouveaux nœuds doivent utiliser la **même version d’AOS** que le cluster existant
 
 ## En pratique

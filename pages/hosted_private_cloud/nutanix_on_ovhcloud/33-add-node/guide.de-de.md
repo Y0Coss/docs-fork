@@ -22,7 +22,7 @@ Nutanix clusters on OVHcloud are scalable. You can now **add (scale out)** or **
 
 ## Technical Information
 
-- Your cluster must have between **3 and 15 nodes**
+- Your cluster must have between **3 and 32 nodes**
 - All new nodes must run the **same AOS version** as the existing cluster
 
 ## Instructions
