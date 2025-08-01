@@ -208,20 +208,6 @@ Under the hood, the model has recognized that the user intent was related to the
 
 We add this message to the conversation so that the model can have knowledge about this tool call in the next rounds of our multi-turn conversation.
 
-> About the `tool_choice` parameter:
-> 
-> You've noticed that we used the `auto` mode in our request to the endpoint.
->
-> Here are the available values for this parameter and the impact on the output.
->
-> | `tool_choice` value | Effect                                                                                                                                                                                                              |
-> |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-> | `auto`              | Default mode when tools are defined, the model generates 0 to N tool calls.                                                                                                                                         |
-> | `required`          | Force the model to generate at least 1 tool call, using structured outputs.                                                                                                                                         |
-> | named function      | Force the model to generate at least 1 tool call to the given function.<br/>For example, to force the model to call the `log_work` tool:<br/>`tool_choice = {"type": "function", "function": {"name": "log_work"}}` |
-> | `none`              | No tool calls generated.                                                                                                                                                                                            |
-
-
 ### Process tools calls
 
 Now that we see that the model is able to generate tool calls, we need to code the Python implementation of the tools, so that we can process the tool calls the LLM will generate and actually start to log time!
@@ -597,6 +583,19 @@ Mission accomplished!
 
 ## Tips and best practices
 This section contains additional tips that may improve the performance of Function Calling queries.
+
+### Tool choice
+
+You've noticed that we used the `auto` mode in our request to the endpoint.
+
+Here are the available values for this parameter and the impact on the output.
+
+| `tool_choice` value | Effect                                                                                                                                                                                                              |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `auto`              | Default mode when tools are defined, the model generates 0 to N tool calls.                                                                                                                                         |
+| `required`          | Force the model to generate at least 1 tool call, using structured outputs.                                                                                                                                         |
+| named function      | Force the model to generate at least 1 tool call to the given function.<br/>For example, to force the model to call the `log_work` tool:<br/>`tool_choice = {"type": "function", "function": {"name": "log_work"}}` |
+| `none`              | No tool calls generated.                                                                                                                                                                                            |
 
 ### Streaming
 
