@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Function Calling
 excerpt: Learn how to use Function Calling with OVHcloud AI Endpoints
-updated: 2025-07-16
+updated: 2025-08-01
 ---
 
 > [!primary]
