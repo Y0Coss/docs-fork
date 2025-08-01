@@ -476,7 +476,9 @@ Let's try our assistant on some examples!
 query("Spent 2 hours coding on Feature A")
 query("Feature B: 3h")
 query("Team meeting 1h")
-# this query is more complex as it requires the model to generate 2 tool calls (one log_work for each feature), and to reuse the task "Feature B" instead of creating a new one
+# this query is more complex as
+# it requires the model to generate 2 tool calls (one log_work for each feature),
+# and to reuse the task "Feature B" instead of creating a new one
 query("log 2 hours on feat B and 3 hours on feature C")
 query("time spent in meetings?")
 query("total time on coding")
