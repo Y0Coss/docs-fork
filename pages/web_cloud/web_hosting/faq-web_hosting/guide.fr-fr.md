@@ -570,8 +570,8 @@ La page « Your request has been blocked » peut s'afficher pour diverses raison
 
 Dans cette situation, plusieurs actions sont requises :
 
-- Vérifiez que votre navigateur Internet est à jour
-- Récupérez l'URL (exemple : `https://www.domain.tld)` appelée ainsi que toutes les informations (`IP address`, `Date` et `Request ID`) présentes sur la page « Your request has been blocked ».
+- Vérifiez que votre navigateur Internet est à jour.
+- Récupérez l'URL appelée (par exemple : `https://www.domain.tld`) ainsi que toutes les informations présentes sur la page « Your request has been blocked » (`IP address`, `Date` et `Request ID`).
 - Transmettez les éléments récupérés au support en créant un [ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
@@ -593,7 +593,7 @@ La page « Your IP has been banned » peut s'afficher pour diverses raisons (lis
 
 Dans cette situation, plusieurs actions sont requises :
 
-- Récupérez l'URL (exemple : `https://www.domain.tld)` appelée ainsi que toutes les informations (`IP address`, `Date` et `Request ID`) présentes sur la page « Your IP has been banned ».
+- Récupérez l'URL appelée (par exemple : `https://www.domain.tld`) ainsi que toutes les informations présentes sur la page « Your IP has been banned » (`IP address`, `Date` et `Request ID`).
 - Transmettez les éléments récupérés au support en créant un [ticket d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Si vous n'êtes pas certain des manipulations à effectuer, contactez votre Webmaster ou l'un de nos [partenaires](/links/partner).
