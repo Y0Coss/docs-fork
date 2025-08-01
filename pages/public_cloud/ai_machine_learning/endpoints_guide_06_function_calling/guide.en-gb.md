@@ -709,7 +709,7 @@ If you need your system to process only one tool call at a time, or if the model
 
 Please note that LLaMa models don't support multiple tool calls between users and assistants messages.
 
-#### Prompting & additional parameters
+### Prompting & additional parameters
 
 Some additional considerations regarding prompts and model parameters:
 - Most models tend to perform better when using lower temperature for function calling.
