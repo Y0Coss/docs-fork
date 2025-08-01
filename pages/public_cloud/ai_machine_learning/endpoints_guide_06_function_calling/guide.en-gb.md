@@ -45,7 +45,7 @@ Follow the following instructions in the [AI Endpoints - Getting Started](/pages
 The workflow to use function calling is described below:
 1. **Define tools**: tell the model what tools it can use, with a JSON schema for each tool.
 2. **Call the model with tools**: pass tools along with your system and user messages to the model, which will eventually generate tool calls.
-3. **Process tools calls**: for each tool calls returned by the model, execute the actual implementation of the tool in your code.
+3. **Process tools calls**: for each tool call returned by the model, execute the actual implementation of the tool in your code.
 4. **Call the model with tools responses**: send a new request to the model, with the conversation updated with tool calls results.
 4. **Final response**: process the final generated answer, which takes the tools results into account.
 
