@@ -675,7 +675,8 @@ data: {...,"choices":[{"index":0,"delta":{"role":"assistant","tool_calls":[{"ind
 data: [DONE]
 ```
 
-Each tool call delta contains either the name of the function to call, either a part of the arguments to use.
+The first tool call delta contains the tool call unique `id`, and a function delta with the `name` of the function to call.
+The following function deltas contain a part of the arguments to use.
 
 To parse these chunks with the OpenAI Python SDK, you can use this code snippet:
 
