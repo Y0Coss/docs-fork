@@ -109,7 +109,8 @@ You can add more users by clicking the `Add user`{.action} button.
 ![Add a user](images/kafka_add_user.v2.png){.thumbnail}
 
 Enter a username, then click `Create User`{.action}.
-Passwords need to be reset from the `Users`{.action} tab.
+
+Passwords need to be reset from the `Users`{.action} table.
 
 ![Password reset](images/kafka_user_password_reset1.v2.png){.thumbnail}
 
@@ -118,7 +119,7 @@ Passwords need to be reset from the `Users`{.action} tab.
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical to authorize the suitable IP addresses in order to successfully access your Kafka cluster.
 
-If you did not define the authorised IPs during the order you could do it in the `Authorized IPs`{.action} tab. At least one IP address must be authorised here before you can connect to your database.
+If you did not define the authorised IPs during the order you could do it in the `Configuration`{.action} tab. At least one IP address must be authorised here before you can connect to your database.
 
 ![Authorised IP](images/kafka_authorized_ip.v2.png){.thumbnail}
 
