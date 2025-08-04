@@ -1,12 +1,12 @@
 ---
 title: Kafka Connect - Capacités et limitations (EN)
-excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka Connect
+excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka Connect
 updated: 2025-08-04
 ---
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka Connect offer.
+This page provides the technical capabilities and limitations of the Public Cloud Analytics for Kafka Connect offer.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
@@ -14,7 +14,7 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ### Supported regions and multi-AZ
 
-The Public Cloud Databases offer is available in the following regions:
+The Public Cloud Analytics offer is available in the following regions:
 
 - `BHS` (Beauharnois, Canada)
 - `DE` (Frankfurt, Germany)
@@ -53,9 +53,6 @@ Here is an overview of the various plans' capabilities:
 | *Enterprise/Advanced* | 6               | No               |
 
 Your choice of plan affects the number of nodes your cluster run or the SLA.
-
-> [!primary]
-> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
 
 #### Nodes
 
@@ -110,4 +107,4 @@ We would love to help answer questions and appreciate any feedback you may have.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our analytics service!
