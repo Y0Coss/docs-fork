@@ -1,7 +1,7 @@
 ---
 title: "Installer N8N sur un VPS OVHcloud"
 excerpt: "Apprenez à héberger la plateforme d’automatisation N8N sur un VPS OVHcloud à l’aide de Docker et Traefik"
-updated: 2025-06-11
+updated: 2025-08-05
 ---
 
 ## Objectif
@@ -238,11 +238,22 @@ Assurez-vous que votre sous-domaine (ex : n8n.exemple.com) pointe bien vers l’
 
 ### Accéder à l’interface N8N <a name="step5"></a>
 
-Accédez à N8N dans un navigateur via l'URL `https://n8n.exemple.com/`. Remplacez `n8n.exemple.com` par le domaine réel que vous avez défini. La page suivante s'affiche.
+Accédez à N8N dans un navigateur via l'URL `https://n8n.exemple.com/`. Remplacez `n8n.exemple.com` par le domaine réel que vous avez défini.
 
-![Install N8N VPS](images/setup_n8n.png){.thumbnail}
+> [!warning]
+>
+> Depuis la version 1.0 de N8N, vous devez obligatoirement créer un compte administrateur lors du premier accès à votre instance auto-hébergée, même si vous avez déjà un compte sur [n8n.cloud](https://n8n.cloud). Les comptes sont **propres à chaque instance**. Un compte créé sur votre VPS ne peut pas être utilisé sur une autre instance, même avec la même adresse e-mail.
 
-Une fois la page chargée, vous serez invité à créer le premier utilisateur administrateur de votre instance N8N via le formulaire de configuration.
+> [!tabs]
+> Premier accès
+>>	Un formulaire de création de compte s'affiche. Complétez-le pour configurer le premier utilisateur administrateur de votre instance N8N.
+>>
+>> ![Install N8N VPS](images/setup_n8n.png){.thumbnail}
+>> 
+> Compte N8N déjà créé
+>> Vous êtes redirigé vers l’écran de connexion. Utilisez les identifiants définis précédemment.
+>>
+>> ![Install N8N VPS](images/login_n8n.png){.thumbnail}
 
 ### Conclusion <a name="step6"></a>
 
