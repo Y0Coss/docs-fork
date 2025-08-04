@@ -1,7 +1,7 @@
 ---
 title: "Hinzufügen oder Entfernen eines Nodes in einem Nutanix-Cluster (Scale In/Out) (EN)"
 excerpt: 'Scale your Nutanix on OVHcloud cluster by adding or removing nodes via the Control Panel or the API'
-updated: 2025-05-23
+updated: 2025-08-05
 ---
 
 ## Objective

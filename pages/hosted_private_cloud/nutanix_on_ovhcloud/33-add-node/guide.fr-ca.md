@@ -1,7 +1,7 @@
 ---
 title: "Ajouter ou retirer un nœud dans un cluster Nutanix (Scale In/Out)"
 excerpt: "Ajustez dynamiquement votre cluster Nutanix on OVHcloud en ajoutant ou retirant des nœuds via l'espace client ou l'API OVHcloud"
-updated: 2025-05-23
+updated: 2025-08-05
 ---
 
 ## Objectif
