@@ -49,7 +49,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > **Étape 3**
 >>
 >> Dans le cadre **Configuration**, vous trouverez la mention **Adresses e-mails**.
->> Cliquez sur le bouton `...`{.action} à droite puis sur `Activer la solution e-mail`{.action}.
+>> Cliquez sur le bouton `...`{.action} à droite puis sur `Activer mon offre e-mail`{.action}.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
@@ -66,7 +66,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > Attention : l'activation de l'option e-mail peut prendre quelques minutes. Vous recevrez un e-mail pour vous confirmer l'installation et l'activation de l'offre MXPLAN. Elle inclut notamment la gestion et la configuration de vos adresses e-mail.
 >
 
-### Conservation de vos adresses e-mail avant expiration de l'hébergement web
+### Conservation de vos adresses e-mail avant l'expiration de l'hébergement web
 
 Lorsque votre hébergement arrive à expiration ou qu'il doit être supprimé, il est possible de conserver vos adresses e-mail.
 
@@ -100,7 +100,7 @@ Il est possible de supprimer définitivement l'offre e-mail associée à votre h
 
 > [!warning]
 >
-> Attention, cette action est irréversible. les comptes e-mail et leur contenu seront supprimés.
+> Attention, cette action est irréversible. Les comptes e-mail et leur contenu seront supprimés.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
@@ -138,7 +138,7 @@ Une fois la demande traitée, vous pourrez alors associer l'offre e-mail liée �
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
