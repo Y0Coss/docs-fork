@@ -1,7 +1,7 @@
 ---
 title: Kafka Connect - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka Connect
-updated: 2025-07-31
+updated: 2025-08-04
 ---
 
 ## Objective
@@ -34,7 +34,7 @@ The following Kafka Connect versions are supported:
 - Kafka Connect 3.8
 - Kafka Connect 3.9
 
-Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions.
+Please refer to the [Analytics lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions.
 
 ### Plans
 
@@ -75,14 +75,14 @@ Public as well as private networking (vRack) can be used for all the offers.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
 
-The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
+The analytics service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
 
 Here are some considerations to take into account when using private network:
 
-- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the analytics services first.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the analytics service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
 - OpenStack subnets routes announcement will not be applied to your services.
 - You can only create private network services if you are the original owner of the network. You can not create private network services on a shared network.
