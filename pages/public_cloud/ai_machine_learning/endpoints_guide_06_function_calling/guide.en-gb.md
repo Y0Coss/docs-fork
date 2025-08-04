@@ -13,10 +13,10 @@ updated: 2025-08-01
 
 [AI Endpoints](https://endpoints.ai.cloud.ovh.net/) is a serverless platform provided by OVHcloud that offers easy access to a selection of world-renowned, pre-trained AI models. The platform is designed to be simple, secure, and intuitive, making it an ideal solution for developers who want to enhance their applications with AI capabilities without extensive AI expertise or concerns about data privacy.
 
-**Function Calling**, also named tool calling, is a feature that enables a large language model (LLM) to trigger user-defined functions (also named tools). These tools are defined by the developer and implement specific behaviors such as calling an API, fetching data or calculating values, which extends the capabilities of the LLM.
+**Function Calling**, also known as tool calling, is a feature that enables a large language model (LLM) to trigger user-defined functions (also named tools). These tools are defined by the developer and implement specific behaviors such as calling an API, fetching data or calculating values, which extends the capabilities of the LLM.
 
 The LLM will identify which tool(s) to call and the arguments to use.
-This feature can be used to develop assistants or agents for instance.
+This feature can be used to develop assistants or agents, for instance.
 
 ## Objective
 
@@ -197,21 +197,21 @@ Output:
 }
 ```
 
-We see that the model understood correctly that it needed to call the `log_work` tool, by looking at the `assistant` message generated.
+We see that the model correctly identified that it needed to call the `log_work` tool, by looking at the `assistant` message generated.
 
 The `tool_calls` list contains the tool calls the model generated in response to our user message.
-The `name` and `arguments` fields tells us which tool to call and which parameters to pass to the function.
-The `id` is an unique identifier for this tool call, that we will need later on.
+The `name` and `arguments` fields specify which tool to call and which parameters to pass to the function.
+The `id` is a unique identifier for this tool call, that we will need later on.
 You can have multiple tool calls in this list.
 
-Under the hood, the model has recognized that the user intent was related to the set of tools given, and generated a sequence of specific tokens that were post-processed to create a tool call object.
+Under the hood, the model has recognized that the user's intent was related to the set of tools provided, and generated a sequence of specific tokens that were post-processed to create a tool call object.
 
-We add this message to the conversation so that the model can have knowledge about this tool call in the next rounds of our multi-turn conversation.
+We add this message to the conversation so that the model is aware of this tool call in subsequent rounds of our multi-turn conversation.
 
 ### Process tools calls
 
 Now that we see that the model is able to generate tool calls, we need to code the Python implementation of the tools, so that we can process the tool calls the LLM will generate and actually start to log time!
-Each task is stored in a dict, with the name as key.
+Each task is stored in a dict, with the name as the key.
 Categories are a fixed list.
 
 We define the two functions, `log_work` and `time_report`, in the Python code below:
@@ -289,7 +289,7 @@ FUNCTION_MAP = {
     "time_report": time_report
 }
 
-# if there are tool calls in the assistant generated response
+# if there are tool calls in the assistant-generated response
 if assistant_response.tool_calls:
     print(f"<\t{len(assistant_response.tool_calls)} tool(s) to call")
     # we can have several tool calls
@@ -319,7 +319,7 @@ We see that we successfully created a task called "team meeting", in the "Meetin
 
 Now that we have executed our tool calls, we have to send the result back to the model, so that it can generate a new response that takes this new information into account, to tell the user the task has been created successfully or to give the time report for instance.
 
-All we have to do, is to add the tool results as new `tool` messages into the conversation, so we'll update our code:
+All we have to do, is add the tool results as new `tool` messages into the conversation, so we'll update our code:
 ```python
 if assistant_response.tool_calls:
     print(f"<\t{len(assistant_response.tool_calls)} tool(s) to call")
