@@ -1,6 +1,6 @@
 ---
-title: 'Utiliser les alias et redirections e-mail'
-excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
+title: "Utiliser les alias et redirections e-mail"
+excerpt: "Découvrez comment gérer vos alias et redirections e-mail"
 updated: 2025-06-03
 ---
 
@@ -544,7 +544,7 @@ Cliquez sur le bouton `...`{.action} à droite de la redirection concernée puis
 [Premiers pas avec l'offre Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
- 
+
 Échangez avec notre [communauté d'utilisateurs](/links/community).

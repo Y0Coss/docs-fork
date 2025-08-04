@@ -146,11 +146,11 @@ In our example, this is a **redirection with a local copy** (see [diagram 2](#di
 >>
 >> By default, you are in the `General information`{.action} tab of your MX Plan. Click on the `Emails`{.action} tab, then on the right-hand side on the `Manage redirections`{.action} button.
 >>
->>![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
+>> ![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
 >>
 >> The table of redirections that are already active appears. On the right, click `Add a redirection`{.action}.
 >>
->>![emails](images/mxplan-legacy-2.png){.thumbnail .w-640}
+>> ![emails](images/mxplan-legacy-2.png){.thumbnail .w-640}
 >>
 >> In the form `Create a redirection`, enter the following information:
 >>
@@ -162,7 +162,7 @@ In our example, this is a **redirection with a local copy** (see [diagram 2](#di
 >>
 >> Then click `Confirm`{.action} to confirm the addition of this redirection.
 >>
->>![emails](images/mxplan-legacy-3.png){.thumbnail .w-640}
+>> ![emails](images/mxplan-legacy-3.png){.thumbnail .w-640}
 >>
 >> > [!primary]
 >>>
@@ -174,7 +174,7 @@ In our example, this is a **redirection with a local copy** (see [diagram 2](#di
 >>
 >> The table of redirections that are already active appears. On the right, click `Add a redirection`{.action}.
 >>
->>![emails](images/mxplan-zimbra-1.png){.thumbnail .w-640}
+>> ![emails](images/mxplan-zimbra-1.png){.thumbnail .w-640}
 >>
 >> In the form `Create a redirection`, enter the following information:
 >>
@@ -186,7 +186,7 @@ In our example, this is a **redirection with a local copy** (see [diagram 2](#di
 >>
 >> Then click `Confirm`{.action} to confirm the addition of this redirection.
 >>
->>![emails](images/mxplan-legacy-3.png){.thumbnail .w-640}
+>> ![emails](images/mxplan-legacy-3.png){.thumbnail .w-640}
 >>
 
 > [!primary]
@@ -195,6 +195,7 @@ In our example, this is a **redirection with a local copy** (see [diagram 2](#di
 >
 
 #### Via webmail <a name="redirect-webmail"></a>
+
 Go to [webmail](/links/web/email). Enter **the email address** and the **password** to log in.
 
 ![emails](images/webmail.png){.thumbnail}
@@ -221,13 +222,13 @@ Browse the tabs below to set up your redirection via Outlook Web App:
 >>
 >> Once you have logged in to your email address via [webmail](/links/web/email), click on the cogwheel in the top right-hand corner, then `Options`{.action}.
 >>
->>![emails](images/emails-all-01.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-01.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
 >> From the **Options** window, in the left-hand column, go to the **Automatic processing** category in the **Mail** section, then click `Inbox and storage rules`{.action}.
 >>
->>![emails](images/emails-all-02.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-02.png){.thumbnail .w-640}
 >>
 >> Use this window to manage your redirections and apply filters on all incoming emails.
 >>
@@ -235,7 +236,7 @@ Browse the tabs below to set up your redirection via Outlook Web App:
 >>
 >> Once you have opened the window for managing **Inbox rules**, click on the icon `+`{.action} in the top left-hand corner.
 >>
->>![emails](images/emails-all-03.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-03.png){.thumbnail .w-640}
 >>
 > **Step 4**
 >>
@@ -243,7 +244,7 @@ Browse the tabs below to set up your redirection via Outlook Web App:
 >> - **Name**: Define the name of your redirection.
 >> - **When the message arrives and meets all these conditions**: If your redirection applies to all messages, select `[Apply to all messages]`{.action}.
 >>
->>![emails](images/emails-all-04.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-04.png){.thumbnail .w-640}
 >>
 > **Step 5**
 >>
@@ -251,13 +252,13 @@ Browse the tabs below to set up your redirection via Outlook Web App:
 >>
 >> **Do all of the following**: This is where you apply the redirection. Select `Forward, redirect or send`{.action} then `Redirect the message to...`{.action}.
 >>
->>![emails](images/emails-all-05.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-05.png){.thumbnail .w-640}
 >>
 > **Step 6**
 >>
->> Then enter the email address you would like to redirect the email to in “**Redirect the email to...**”, then click on “Save`{.action}”. Finally, click `OK`{.action} (floppy disk icon) to complete your redirection.
+>> Then enter the email address you would like to redirect the email to in “**Redirect the email to...**”, then click on `Save`{.action}. Finally, click `OK`{.action} (floppy disk icon) to complete your redirection.
 >>
->>![emails](images/emails-all-06.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-06.png){.thumbnail .w-640}
 >>
 
 > [!primary]
@@ -291,25 +292,25 @@ Follow the steps below by clicking on the tabs to set up your redirection:
 >>
 >> Click the &#9881; button in the top right-hand corner of your webmail window, then click `Settings`{.action}.
 >>
->>![zimbra](images/zimbra_settings01.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_settings01.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
 >> Click the `Filters`{.action} section in the settings window, then click the `Add a filter`{.action} button.
 >>
->>![zimbra](images/zimbra_redirection02.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_redirection02.png){.thumbnail .w-640}
 >>
 > **Step 3**
 >>
 >> - First click <u>Advanced Mode</u> in the top right-hand corner to set up this rule.
 >> - Enter a name for your filter in the `Filter name` box.
 >> - Leave the dropdown menu on `all` in the sentence “If an incoming message meets ... of these conditions”.
->> - In the first dropdown menu of the rules, choose `To` (To), leave `contains` (contains), then enter the email address you are logged in to in the box to the right.
+>> - In the first dropdown menu of the rules, choose `To`, leave `contains`, then enter the email address you are logged in to in the box to the right.
 >> - Under “Then”, select `Forward to' from the drop-down menu and enter the destination email address.
 >> - Click `+ Add an action`{.action} (Add an action) below, then select `Move to receive folder` (Keep in Inbox).
 >> - Click `Save`{.action} from your filter window and also from the settings window.
 >>
->>![zimbra](images/zimbra_redirection03.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-640}
 >>
 
 For more details on using Zimbra webmail, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
@@ -355,13 +356,13 @@ Go to [webmail](/links/web/email). Enter **the email address** and the **passwor
 >>
 >> Once you have logged in to the OWA webmail interface, click on the cogwheel icon in the top right-hand corner, then `Options`{.action}.
 >>
->>![emails](images/emails-all-01.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-01.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
 >> From the **Options** window, in the left-hand column, go to the **Automatic processing** category in the **Mail** section, then click `Inbox and storage rules`{.action}.
 >>
->>![emails](images/owa-redirect-del-01.png){.thumbnail .w-640}
+>> ![emails](images/owa-redirect-del-01.png){.thumbnail .w-640}
 >>
 >> You will find the window you can use to manage your redirections and filters.
 >>
@@ -369,7 +370,7 @@ Go to [webmail](/links/web/email). Enter **the email address** and the **passwor
 >>
 >> Once in the window for managing **Inbox rules**, click on the redirection you want to delete, it must be highlighted. Then click the recycle bin icon.
 >>
->>![emails](images/owa-redirect-del-02.png){.thumbnail .w-640}
+>> ![emails](images/owa-redirect-del-02.png){.thumbnail .w-640}
 >>
 
 ##### Zimbra <a name="redirect-delete-zimbra"></a>
@@ -381,19 +382,19 @@ Go to [webmail](/links/web/email). Enter **the email address** and the **passwor
 >>
 >> Once you have logged in to the Zimbra webmail interface, click the &#9881; button in the top right-hand corner of your webmail window, then click `Settings`{.action}.
 >>
->>![zimbra](images/zimbra_settings01.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_settings01.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
 >> Click on the `Filters`{.action} section in the settings window.
 >>
->>![zimbra](images/zimbra_redirect-del-01.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_redirect-del-01.png){.thumbnail .w-640}
 >>
 > **Step 3**
 >>
 >> Click the `...`{.action} button to the right of the filter concerned, then click `Delete`{.action}.
 >>
->>![zimbra](images/zimbra_redirect-del-02.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_redirect-del-02.png){.thumbnail .w-640}
 >>
 
 ### Create an alias <a name="alias"></a>
@@ -417,19 +418,19 @@ To add an alias to your email account, follow the steps described by clicking on
 >>
 >> In the table that appears, you will find an `Alias` column.
 >>
->>![emails](images/email-alias012.png){.thumbnail .w-640}
+>> ![emails](images/email-alias012.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
 >> Click the `...`{.action} button, then `Configure aliases`{.action} (or `Manage aliases`{.action}).
 >>
->>![emails](images/email-alias02.png){.thumbnail .w-640}
+>> ![emails](images/email-alias02.png){.thumbnail .w-640}
 >>
 > **Step 3**
 >>
 >> Click `Add an alias`{.action} , then enter the address you have chosen for your alias and confirm your choice.
 >>
->>![emails](images/email-alias03.png){.thumbnail .w-640}
+>> ![emails](images/email-alias03.png){.thumbnail .w-640}
 
 #### MX Plan Roundcube <a name="alias-mxplan-roundcube"></a>
 
@@ -448,25 +449,25 @@ To create an alias on an MX Plan Roundcube email account, you must do it the sam
 >> - Click the `⁝` button to the right of the email account concerned.
 >> - Click `Modify`{.action}.
 >>
->>![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
 >> The window for configuring your email account will open. Click on the `Alias`{.action} tab above.
 >>
->>![zimbra](images/zimbra_alias02.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_alias02.png){.thumbnail .w-640}
 >>
 > **Step 3**
 >>
 >> The following window will contain a list of aliases that you can associate with the account concerned. Click the `Create Alias`{.action} button.
 >>
->>![zimbra](images/zimbra_alias03.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_alias03.png){.thumbnail .w-640}
 >>
 > **Step 4**
 >>
 >> Determine the address of your alias and select one of the domain names associated with your Zimbra service.
 >>
->>![zimbra](images/zimbra_alias04.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_alias04.png){.thumbnail .w-640}
 >>
 
 ### Delete an alias <a name="alias-delete"></a>
@@ -515,19 +516,19 @@ Click the `...`{.action} button to the right of the redirection concerned, then 
 >> - Click the `⁝` button to the right of the email account concerned.
 >> - Click `Modify`{.action}.
 >>
->>![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
 >> The window for configuring your email account will open. Click on the `Alias`{.action} tab above.
 >>
->>![zimbra](images/zimbra_alias02.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_alias02.png){.thumbnail .w-640}
 >>
 > **Step 3**
 >>
 >> The following window contains a list of aliases that you can associate with the account concerned. Click the `Create Alias`{.action} button.
 >>
->>![zimbra](images/zimbra_alias03.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_alias03.png){.thumbnail .w-640}
 >>
 
 ## Go further
