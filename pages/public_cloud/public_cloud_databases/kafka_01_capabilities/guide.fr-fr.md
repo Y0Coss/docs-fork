@@ -31,7 +31,7 @@ The Public Cloud Databases offer supports the following Kafka version:
 
 - Kafka 3.8
 
-Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Kafka Release Cycle on their official page: <https://kafka.apache.org/downloads>
+Please refer to the [Analytics lifecycle policy guide](/pages/public_cloud/data_analytics/analytics/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Kafka Release Cycle on their official page: <https://kafka.apache.org/downloads>
 
 ### Kafka clients
 
@@ -72,7 +72,7 @@ More information on <https://github.com/apache/kafka/blob/trunk/LICENSE>.
 
 #### Flexible storage
 
-You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage) for more information.
+You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/public_cloud/data_analytics/analytics/analytics_resize_cluster_storage) for more information.
 
 #### Node template upgrade
 
@@ -96,7 +96,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
 3. You then have the ability to upgrade to a higher service plan with more storage.
 
-See the [Handling «Disk Full» situations documentation](/pages/public_cloud/public_cloud_databases/databases_10_full_disk_handling) for more information.
+See the [Handling «Disk Full» situations documentation](/pages/public_cloud/data_analytics/analytics/analytics_full_disk_handling) for more information.
 
 ### Features
 
