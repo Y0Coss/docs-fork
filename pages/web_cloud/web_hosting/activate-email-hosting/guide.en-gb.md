@@ -14,7 +14,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 ## Requirements
 
-- A [domain name](/links/web/domains){.external} registered with OVHcloud or a [DNS zone](https://www.ovhcloud.com/en-gb/domains/dns-subdomain/){.external} of a domain name not registered with OVHcloud 
+- A [domain name](/links/web/domains) registered with OVHcloud or a [DNS zone](https://www.ovhcloud.com/en-gb/domains/dns-subdomain/) of a domain name not registered with OVHcloud 
 - An [OVHcloud Web Hosting plan](/links/web/hosting) (excluding "100 MB free hosting" and "Start10m" offers)
 - Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the Web Hosting plan
 
@@ -33,7 +33,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 > [!primary]
 >
-> For external domain names you need to activate the DNS zone first. Please read our documentation: [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)){.external}.
+> For external domain names you need to activate the DNS zone first. Please read our documentation: [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)).
 >
 
 Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan that has the email solution.
@@ -47,7 +47,7 @@ The activation window appears. Choose the domain name you would like to link you
 ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> If you would like to have more included email accounts, please order a higher [web hosting plan](/links/web/hosting){.external} from our webpage.
+> If you would like to have more included email accounts, please order a higher [web hosting plan](/links/web/hosting) from our webpage.
 >
 > Please note: it may take a few minutes for the email option to be enabled. You will receive an email confirming that you have installed and enabled the MX Plan solution. This includes managing and configuring your email accounts.
 >
