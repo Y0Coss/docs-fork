@@ -118,7 +118,7 @@ Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new 
 
 You can edit and remove database access via the `...`{.action} button in the IP table.
 
-If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external}.
+If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/).
 Copy the IP address shown on this website and keep it for later.
 
 Your Apache Kafka service is now fully accessible!
@@ -197,13 +197,13 @@ Also download the user access key.
 
 #### Install an Apache Kafka CLI
 
-As part of the Apache Kafka official installation, you will get different scripts that will also allow you to connect to Kafka in a Java 8+ environment: [Apache Kafka Official Quickstart](https://kafka.apache.org/quickstart){.external}.
+As part of the Apache Kafka official installation, you will get different scripts that will also allow you to connect to Kafka in a Java 8+ environment: [Apache Kafka Official Quickstart](https://kafka.apache.org/quickstart).
 
 We propose to use a generic producer and consumer client instead: Kcat (formerly known as kafkacat). Kcat is more lightweight since it does not require a JVM.
 
 ##### **Install Kcat**
 
-For this client installation, please follow the instructions available at: [Kafkacat Official Github](https://github.com/edenhill/kcat){.external}.
+For this client installation, please follow the instructions available at: [Kafkacat Official Github](https://github.com/edenhill/kcat).
 
 ##### **Kcat configuration file**
 
@@ -252,15 +252,15 @@ Congratulations, you now have an up and running Apache Kafka cluster, fully mana
 
 [Kafka capabilities](/pages/public_cloud/public_cloud_databases/kafka_01_capabilities)
 
-[Kafka Official documentation](https://kafka.apache.org/documentation/){.external}
+[Kafka Official documentation](https://kafka.apache.org/documentation/)
 
-[Kafka clients](https://cwiki.apache.org/confluence/display/KAFKA/Clients){.external}
+[Kafka clients](https://cwiki.apache.org/confluence/display/KAFKA/Clients)
 
 Some UI tools for Kafka are also available:
 
-- [Lenses](https://lenses.io){.external}
-- [Xeotek](https://www.xeotek.com/){.external}
-- [Conduktor](https://www.conduktor.io/){.external}
+- [Lenses](https://lenses.io)
+- [Xeotek](https://www.xeotek.com/)
+- [Conduktor](https://www.conduktor.io/)
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka) to find how to connect to your database with several languages.
 
