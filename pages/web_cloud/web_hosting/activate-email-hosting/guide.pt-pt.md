@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar os endereços de e-mail incluídos"
 excerpt: "Saiba como ativar os endereços de e-mail incluídos na sua oferta de alojamento web"
-updated: 2025-06-03
+updated: 2025-08-04
 ---
 
 ## Objetivo
