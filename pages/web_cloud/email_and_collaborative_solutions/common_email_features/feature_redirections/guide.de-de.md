@@ -77,7 +77,7 @@ Klicken Sie auf die Tabs, um die Funktionsweise von Aliasnamen und Weiterleitung
     - **MX Plan** mit unseren [Webhosting Angeboten](/links/web/hosting) oder in einem [100M Gratis-Hosting](/links/web/domains-free-hosting) inklusive.
     - [Exchange](/links/web/emails).
     - [Email Pro](/links/web/email-pro).
-     - [Zimbra](/links/web/emails-zimbra).
+    - [Zimbra](/links/web/emails-zimbra).
 
 ## In der praktischen Anwendung
 
@@ -89,7 +89,7 @@ Diese Anleitung gilt für alle unsere E-Mail-Angebote. Je nach Angebot können S
 - **Exchange**: Gilt für Angebote **Hosted**, **Private** und **Dedicated** Exchange, die Outlook Web App (OWA) Webmail verwenden.
 - **Email Pro**: Exchange-basiertes E-Mail-Angebot mit Outlook Web App (OWA) Webmail.
 - **Zimbra**: Dediziertes Angebot mit Zimbra Webmail.
-- **redirect**: Dieses kostenlose Angebot ist automatisch verfügbar, wenn Sie einen Domainnamen in Ihrem Kundencenter haben und kein E-Mail-Angebot dazugehört. Sie erlaubt die Erstellung von E-Mail-Weiterleitungen.
+- **Redirect**: Dieses kostenlose Angebot ist automatisch verfügbar, wenn Sie einen Domainnamen in Ihrem Kundencenter haben und kein E-Mail-Angebot dazugehört. Sie erlaubt die Erstellung von E-Mail-Weiterleitungen.
 
 > [!primary]
 >
@@ -132,7 +132,7 @@ Diese Anleitung gilt für alle unsere E-Mail-Angebote. Je nach Angebot können S
 
 Derzeit verfügen nur die Angebote **MX plan** und **redirect** über ein Interface zur Verwaltung der Weiterleitungen über das OVHcloud Kundencenter.
 
-#### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
+##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
 1. Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).
 1. Gehen Sie in den Bereich `Web Cloud`{.action}.
@@ -154,9 +154,9 @@ In unserem Beispiel ist dies eine **Weiterleitung mit lokaler Kopie** (siehe [Sc
 >>
 >> Geben Sie im Formular `Weiterleitung erstellen` Folgendes ein:
 >>
->> - **Von Adresse** : Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.
->> - **An Adresse** : Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dabei kann es sich um eine Ihrer OVHcloud E-Mail-Adressen oder um eine externe E-Mail-Adresse handeln.
->> - **Kopiermodus auswählen**: Wählen Sie aus, ob Sie:
+>> - **Von der Adresse** : Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.
+>> - **An die Adresse** : Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dabei kann es sich um eine Ihrer OVHcloud E-Mail-Adressen oder um eine externe E-Mail-Adresse handeln.
+>> - **Wählen Sie einen Kopiermodus aus**: Wählen Sie aus, ob Sie:
 >>      - **Eine Kopie der E-Mail bei OVHcloud aufbewahren**: Die E-Mail an Ihre Haupt-E-Mail-Adresse sowie die Weiterleitungsadresse senden (siehe [Schema 2](#diagram) am Anfang dieser Anleitung).
 >>      - **Keine Kopie der Mail aufbewahren**: direkt an die Weiterleitungsadresse weiterleiten, ohne dass diese von der Hauptadresse empfangen wird (siehe [Schema 1](#diagram) am Anfang dieser Anleitung).
 >>
@@ -178,9 +178,9 @@ In unserem Beispiel ist dies eine **Weiterleitung mit lokaler Kopie** (siehe [Sc
 >>
 >> Geben Sie im Formular `Weiterleitung erstellen` Folgendes ein:
 >>
->> - **Von Adresse** : Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.
->> - **An Adresse** : Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dabei kann es sich um eine Ihrer OVHcloud E-Mail-Adressen oder um eine externe E-Mail-Adresse handeln.
->> - **Kopiermodus auswählen**: Wählen Sie aus, ob Sie:
+>> - **Von der Adresse** : Geben Sie hier die E-Mail-Adresse ein, die Sie weiterleiten möchten.
+>> - **An die Adresse** : Geben Sie hier die Zieladresse Ihrer Weiterleitung ein. Dabei kann es sich um eine Ihrer OVHcloud E-Mail-Adressen oder um eine externe E-Mail-Adresse handeln.
+>> - **Wählen Sie einen Kopiermodus aus**: Wählen Sie aus, ob Sie:
 >>      - **Eine Kopie der E-Mail bei OVHcloud aufbewahren**: Die E-Mail an Ihre Haupt-E-Mail-Adresse sowie die Weiterleitungsadresse senden (siehe [Schema 2](#diagram) am Anfang dieser Anleitung).
 >>      - **Keine Kopie der Mail aufbewahren**: direkt an die Weiterleitungsadresse weiterleiten, ohne dass diese von der Hauptadresse empfangen wird (siehe [Schema 1](#diagram) am Anfang dieser Anleitung).
 >>
@@ -305,7 +305,7 @@ Führen Sie die folgenden Schritte aus, indem Sie auf die Registerkarten klicken
 >> - Klicken Sie oben rechts auf <u>Erweiterter Modus</u>, um diese Regel zu implementieren.
 >> - Geben Sie einen Namen für Ihren Filter in das Feld `Filtername` ein.
 >> - Lassen Sie das Dropdown-Menü auf `Alle` im Satz „Wenn eine eingehende Nachricht ... dieser Bedingungen entspricht“.
->> - Wählen Sie im ersten Pop-up-Menü der Regeln `Bis` (TB) aus, lassen Sie `enthält` (contains) und geben Sie die E-Mail-Adresse, mit der Sie verbunden sind, in das Feld rechts ein.
+>> - Wählen Sie im ersten Pop-up-Menü der Regeln `Bis` (To) aus, lassen Sie `enthält` (contains) und geben Sie die E-Mail-Adresse, mit der Sie verbunden sind, in das Feld rechts ein.
 >> - Wählen Sie unter „Dann“ (Then) im Drop-down-Menü `Weiterleiten an` (Forward to) aus und geben Sie die Ziel-E-Mail-Adresse ein.
 >> - Klicken Sie unten auf `+ Aktion hinzufügen`{.action} (Add an action) und wählen Sie `In Empfangsordner verschieben` (Keep in Inbox).
 >> - Klicken Sie auf `Speichern`{.action} aus dem Fenster Ihres Filters und auch aus dem Fenster der Einstellungen.
@@ -446,7 +446,7 @@ Um einen Alias für einen MX Plan Roundcube E-Mail-Account zu erstellen, müssen
 > [!tabs]
 > **Schritt 1**
 >>
->> - Klicken Sie auf den Button `⁝` rechts neben dem betreffenden E-Mail-Account.
+>> - Klicken Sie auf den Button `⁝`{.action} rechts neben dem betreffenden E-Mail-Account.
 >> - Klicken Sie auf `Bearbeiten`{.action}.
 >>
 >> ![Zimbra](images/Zimbra_alias01.png){.thumbnail .w-640}
@@ -513,7 +513,7 @@ Klicken Sie auf den Button `...`{.action} rechts neben der betreffenden Weiterle
 > [!tabs]
 > **Schritt 1**
 >>
->> - Klicken Sie auf den Button `⁝` rechts neben dem betreffenden E-Mail-Account.
+>> - Klicken Sie auf den Button `⁝`{.action} rechts neben dem betreffenden E-Mail-Account.
 >> - Klicken Sie auf `Bearbeiten`{.action}.
 >>
 >> ![Zimbra](images/Zimbra_alias01.png){.thumbnail .w-640}

@@ -89,7 +89,7 @@ Ce guide concerne l'ensemble de nos offres e-mail. En fonction de l'offre, la ge
  - **Exchange** : S'applique aux offres **Hosted**, **Private** et **Dedicated** Exchange utilisant le webmail Outlook Web App (OWA).
  - **Email Pro** : Offre E-mail basée sur Exchange utilisant le webmail Outlook Web App (OWA).
  - **Zimbra** : Offre dédiée utilisant le webmail Zimbra.
- - **redirect** : Cette offre gratuite est automatiquement disponible si vous disposez d'un nom de domaine dans votre espace client sans offre e-mail attachée. Elle permet de créer des redirections e-mail.
+ - **Redirect** : Cette offre gratuite est automatiquement disponible si vous disposez d'un nom de domaine dans votre espace client sans offre e-mail attachée. Elle permet de créer des redirections e-mail.
 
 > [!primary]
 >
@@ -142,7 +142,7 @@ Actuellement, seules les offres **MX plan** et **redirect** disposent d'une inte
 Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](#diagram) au début de ce guide). Si cela correspond à votre besoin, suivez les étapes ci-dessous en cliquant sur l'onglet correspondant à la technologie webmail utilisée par votre MX Plan :
 
 > [!tabs]
-> **MX Plan Roundcube / MX Plan Outlook Web App / redirect**
+> **MX Plan Roundcube / MX Plan Outlook Web App / Redirect**
 >>
 >> Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.
 >>
@@ -446,7 +446,7 @@ Pour créer un alias sur un compte email MX Plan Roundcube, vous devez le faire 
 > [!tabs]
 > **Étape 1**
 >>
->> - Cliquez sur le bouton `⁝` à droite du compte e-mail concerné.
+>> - Cliquez sur le bouton `⁝`{.action} à droite du compte e-mail concerné.
 >> - Cliquez sur `Modifier`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
@@ -513,7 +513,7 @@ Cliquez sur le bouton `...`{.action} à droite de la redirection concernée puis
 > [!tabs]
 > **Étape 1**
 >>
->> - Cliquez sur le bouton `⁝` à droite du compte e-mail concerné.
+>> - Cliquez sur le bouton `⁝`{.action} à droite du compte e-mail concerné.
 >> - Cliquez sur `Modifier`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
