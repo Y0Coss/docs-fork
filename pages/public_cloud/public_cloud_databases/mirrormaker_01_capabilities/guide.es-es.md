@@ -1,12 +1,12 @@
 ---
 title: Kafka MirrorMaker - Capabilities and Limitations
-excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka MirrorMaker
-updated: 2025-07-31
+excerpt: Discover the capabilities and limitations of Public Cloud Analytics for Kafka MirrorMaker
+updated: 2025-08-04
 ---
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka MirrorMaker offer.
+This page provides the technical capabilities and limitations of the Public Cloud Analytics for Kafka MirrorMaker offer.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
@@ -14,7 +14,7 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ### Supported regions and multi-AZ
 
-The Public Cloud Databases offer is available in the following regions:
+The Public Cloud Analytics offer is available in the following regions:
 
 - `BHS` (Beauharnois, Canada)
 - `DE` (Frankfurt, Germany)
@@ -29,7 +29,7 @@ Kafka MirrorMaker nodes have to be in the same region. Multi-AZ is currently not
 
 ### Kafka versions
 
-The Public Cloud Databases offer supports the following Kafka versions:
+The Public Cloud Analytics offer supports the following Kafka versions:
 
 - Kafka MirrorMaker 3.7
 - Kafka MirrorMaker 3.8
@@ -60,9 +60,6 @@ Here is an overview of the various plans' capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run as well as the SLA.
 
-> [!primary]
-> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
-
 #### Nodes
 
 - **Essential**: the cluster is delivered with 1 node by default.
@@ -85,13 +82,13 @@ Public as well as private networking (vRack) can be used for all the offers.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
 
-The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
+The analytics service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
 Here are some considerations to take into account when using private network:
 
-- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Analytics services first.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the analytics service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
 - OpenStack subnets routes announcement will not be applied to your services.
 - You can only create private network services if you are the original owner of the network. You can not create private network services on a shared network.
@@ -129,12 +126,12 @@ Kafka is a streaming tool. We don't backup Kafka data.
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. For setup instructions, see the [Public Cloud Databases - How to setup logs forwarding guide](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer).
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. For setup instructions, see the [Analytics - How to setup logs forwarding](/pages/public_cloud/data_analytics/analytics/analytics_logs_to_customer).
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
 
-Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
+Please note that if the analytics instance is deleted, logs and metrics are also automatically deleted.
 
 #### Users and roles
 
@@ -148,4 +145,4 @@ We would love to help answer questions and appreciate any feedback you may have.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our analytics service!
