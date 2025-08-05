@@ -23,17 +23,29 @@ Ce changement peut impacter les clients ayant configuré :
 - Des **adresses IP manuelles** dans leurs enregistrements `NS`, `A` ou `GLUE`.
 - Des **GLUE records** (pour plus d'informations, consultez notre guide « [Personnaliser les serveurs DNS d'un nom de domaine (Glue Records)](/pages/web_cloud/domains/glue_registry) »).
 
+> [!warning]
+>
+> Si vous n’avez effectué aucune modification manuelle de la configuration DNS (paramétrage par défaut), vous n’êtes pas concerné par ce changement.
+
 ### Calendrier
 
 | Étape                                | Date prévue           |
 |-------------------------------------|------------------------|
-| Suppression du trafic IPv6 sur les anciennes IPs | Immédiate |
-| Mise en service des nouvelles IPs   | Dès le **15 septembre 2025** |
-| Suppression du trafic IPv4          | Début **octobre 2025** |
+| Mise en service des nouvelles IPs   | Dès le 5 août 2025 |
+| Envoi du premier e-mail d’information aux clients identifiés | Mi-août 2025 |
+| Envoi du second e-mail de rappel         | 15 septembre 2025 |
+| Suppression du trafic IPv6 sur les anciennes IPs         | Immédiate |
+| Suppression du trafic IPv4          | Début octobre 2025 |
 
 > [!warning]
 >
 > L’utilisation prolongée des anciennes adresses IP après cette date provoquera l’échec de la résolution DNS pour les domaines mal configurés.
+
+### Que faire si je suis concerné ?
+
+1. Identifiez si vous utilisez encore une ancienne IP dans votre zone DNS.
+2. **Remplacez-la** par la nouvelle correspondance (voir tableau ci-dessus).
+3. **Mettez à jour vos GLUE records** si vous en avez configuré dans votre interface client.
 
 ### Table des correspondances IP
 
@@ -91,12 +103,6 @@ Ce changement peut impacter les clients ayant configuré :
 | ns112.ovh.net  | 51.68.107.109   | 5.135.80.109    | 2001:41d0:209::3    | 2001:41d0:b01::2      |
 | dns113.ovh.net | 87.98.168.13    | 5.196.46.145    | 2001:41d0:1:4a9e::1 | 2001:41d0:d01:700::2  |
 | ns113.ovh.net  | 87.98.168.141   | 5.135.82.125    | 2001:41d0:209::4    | 2001:41d0:b01:100::2  |
-
-### Que faire si je suis concerné ?
-
-1. Identifiez si vous utilisez encore une ancienne IP dans votre zone DNS.
-2. **Remplacez-la** par la nouvelle correspondance (voir tableau ci-dessus).
-3. **Mettez à jour vos GLUE records** si vous en avez configuré dans votre interface client.
 
 ## Aller plus loin
 
