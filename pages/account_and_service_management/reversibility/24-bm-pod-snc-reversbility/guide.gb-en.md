@@ -21,16 +21,16 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-
+| Bare Metal Provisioning | Direct deployment of operating systems via Ironic (openstack open-source component) on physical servers | JSON, Rest API | **Inbound**: import configurations via CLI / API <br>**Outbound**: export configuration via CLI / API | [Getting started with a dedicated server ](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) |
+| Dedicated hardware and network isolation | Exclusive access to the physical infrastructure (servers, network, racks) without shared hosting, compatible with any bare metal solution | Any type of data format | **Inbound** : OS installation, backup recovery, workload migration via standard tools (PXE, rsync, etc.). <br>**Outbound** : data export, images, VMs, via standard tools, migration to any other dedicated environment |[How to secure a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server) |
+| Network configuration | Network management via Neutron (OpenStack) | JSON, Rest API | **Inbound** : definition and import of network configurations, subnets, security groups <br>**Outbound** : export of reusable network configurations to any other cloud compatible with OpenStack technology | [How to secure a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server) |
 
 
 ## 2. OVHcloud Implementations
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-|Identity and Access Management | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
+|Identity and Access Management | Identity and access management via Keycloak, roles, policies, audit logs | JSON, YAML (policies) | **Inbound** : manual rols and policy adaptation during the import <br>**Outbound** : export configurations and required adaptation depending on the target's IAM model (OpenStack Keystone or other). Provision of logs following request| [Configuring Keycloak for production](https://www.keycloak.org/server/configuration-production).{external} |
 |VPN Gateway|An IPsec VPN gateway that connects external networks to the SecNumCloud infrastructure through an encrypted funnel |N/A|**Inbound**: Subscribe to and use the VPN Gateway service included in the qualified scope. <br><br>**Outbound**: Use the vRack service included with other OVHcloud services, or take note of the network architecture and replicate it with VLANs and another encrypted funnel.|[Introduction to SecNumCloud Connectivity](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-overview)<br><br>[VPN-SPN concept overview](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-vpn-spn)<br><br>[Personalized VPN via NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge)|
 |SPN|A private network that connects the resources and services available in the SecNumCloud infrastructure to one or more sites in the SecNumCloud zone. You can also use it to connect other OVHcloud services, or services hosted with a third party via the VPN Gateway.|N/A|**Inbound**: Subscribe to and use the SPN service included in the qualified scope.<br><br>**Outbound**: Take note of the network architecture and replicate it with the concepts of subnets and routing.|[SPN introduction and concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-spn)<br><br>[SPN connector](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-spn-connector)|
 |SPN Inter-DC|An encrypted link between two sites hosting the SecNumcloud infrastructure, enabling SPNs to be connected.|N/A|**Incoming**: Subscribe to and use the Inter-DC SPN service included in the qualified scope.<br><br>**Outbound**: Configure your IP routing between two sites hosting the SecNumcloud infrastructure outside of OVHcloud.|[SPN InterDC option](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-spn)|
@@ -41,9 +41,7 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-
-
+| OpenStack Horizon web interface | Manage an OpenStack infrastructure that provides visual dashboards for interacting with different OpenStack services. | HTML | **Incoming**: NA. User interface available by default. <br>**Outgoing**: No resource to export, dashboards are static | [Introduction to Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) |
 
 ##List of architectures
 
