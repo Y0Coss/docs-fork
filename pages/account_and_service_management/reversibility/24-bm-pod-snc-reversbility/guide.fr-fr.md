@@ -21,8 +21,10 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| Bare Metal Provisioning | Déploiement direct de systèmes d’exploitation via Ironic (composant opensource d’openstack) sur des serveurs physiques | JSON,API Rest | **Entrante** : import des données de configuration via CLI / API <br>**Sortante** : export des données de configuration via CLI / API | [Premiers pas avec un serveur dédié ](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) |
+| Matériel dédié et isolation réseau | Accès exclusif à l’infrastructure physique (serveurs, réseau, racks) sans mutualisation, compatible avec toute solution bare metal | Tout type de format de données | **Entrante** : installation d’OS, restauration de sauvegardes, migration de workloads via outils standards (PXE, rsync, etc.). <br>**Sortante** : export des données, images, VM, via outils standards, migration vers tout autre environnement dédié  | [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server) |
+| Configuration réseau | Gestion réseau via Neutron (OpenStack)  | JSON, API Rest | **Entrante** : féfinition et import des configuration réseaux, subnets, security groups <br>**Sortante** : export des configurations réseau réutilisables sur tout autre cloud compatible avec la technologie OpenStack  | [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server) |
+
 
 
 ### 2. Implémentations OVHcloud
@@ -41,8 +43,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
  
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| Interface Web Openstack Horizon | Gestion d’une infrastructure OpenStack offrant des tableaux de bord visuels pour interagir avec les différents services OpenStack. | HTML | **Entrante** : NA <br>**Sortante** : Pas de ressource à exporter, les dashboard sont statics  | [Présentation de Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) |
 
 
 ## Liste des architectures
