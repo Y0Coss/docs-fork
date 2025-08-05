@@ -43,7 +43,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
  
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Interface Web Openstack Horizon | Gestion d’une infrastructure OpenStack offrant des tableaux de bord visuels pour interagir avec les différents services OpenStack. | HTML | **Entrante** : NA <br>**Sortante** : Pas de ressource à exporter, les dashboard sont statics  | [Présentation de Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) |
+| Interface Web Openstack Horizon | Gestion d’une infrastructure OpenStack offrant des tableaux de bord visuels pour interagir avec les différents services OpenStack. | HTML | **Entrante** : NA. Interface utilisateur disponible par défaut. <br>**Sortante** : Pas de ressource à exporter, les dashboard sont statics  | [Présentation de Horizon](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon) |
 
 
 ## Liste des architectures
