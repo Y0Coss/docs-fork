@@ -47,9 +47,9 @@ Features of the product line fall into three categories:
 
 ##List of architectures
 
-The service offering is based on a sovereign private cloud architecture, deployed in 1, 2 or 3 physically distinct datacentres in France, with physical and logical isolation. 
+The service offer is based on a sovereign private cloud architecture, deployed in 1, 2 or 3 physically distinct datacentres in France, with physical and logical isolation. 
 Each customer has one rack, network and dedicated servers, managed through a proprietary software layer and OpenStack API. The architecture supports compliance with the ANSSI SecNumCloud framework. The product requires public connectivity to enable migration of incoming or outgoing data. 
-Today, public connectivity is through an additional Managed Dedicated Cloud - SecNumCloud which is a temporary solution while dedicated public connectivity is in place.
+Today, public connectivity is made through an additional Managed Dedicated Cloud - SecNumCloud which is a temporary solution while dedicated public connectivity will be in place.
 
 ##Partner services
 
@@ -58,7 +58,8 @@ The OVHcloud partners concerned are listed in the [OVHcloud partners directory](
 OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
 
 ##Cost and fees
+No specific cancelation fees applied: deleting the service will stop the billing immediately. Any associated OVHcloud credits cannot be transferred. It is the customer’s responsibility to export their data, images, configurations and logs before deletion, as deletion is irreversible.
+The default subscription period for the service is 12 months. Data can be exported before the end of this period.
 
 ##Data retention after contract termination 
-
-
+After service decommission or contract termination, OVHcloud permanently deletes all data, images, volumes, configurations and logs on the service. It is therefore imperative to export all necessary data before deletion, as no restoration is possible after the fact. At the end of the service, OVHcloud performs a secure erase. This deletion will be subject to 21 calendar days’ notice.
