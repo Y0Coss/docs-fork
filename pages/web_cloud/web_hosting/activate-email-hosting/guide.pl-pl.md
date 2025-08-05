@@ -29,17 +29,36 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 
 ## W praktyce
 
-### Aktywacja pakietu e-mail
+### Aktywacja kont e-mail zawartych w ofercie hostingu WWW
 
-Zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
-W polu `Konfiguracja` znajduje się wzmianka `Konta e-mail`. Kliknij przycisk `…`{.action} po prawej stronie, a następnie przycisk `Aktywuj rozwiązanie e-mail`{.action}.
-
-![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
-
-Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać konta e-mail i potwierdź swój wybór.
-
-![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> W ramce **Konfiguracja** znajduje się wzmianka **Konta e-mail**.
+>> Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Aktywuj rozwiązanie e-mail`{.action}.
+>>
+>> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać konta e-mail i potwierdź swój wybór.
+>>
+>> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
+>>
 
 > [!primary]
 > Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](/links/web/hosting){.external} na naszej stronie handlowej.
@@ -51,11 +70,28 @@ Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać
 
 Kiedy Twój hosting wygaśnie lub musi zostać usunięty, możesz zachować Twoje konta e-mail.
 
-Zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki `Konta e-mail`, a następnie kliknij przycisk `Odłącz opcję e-mail`{.action}.
-
-![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> W ramce **Konfiguracja** znajduje się wzmianka **Konta e-mail**.
+>> Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Odłącz opcję e-mail`{.action}.
+>>
+>> ![email-detach](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
+>>
 
 Odpowiednia oferta MX zostanie Ci zaproponowana w momencie zakupu. Kiedy opłacisz zamówienie, Twoje konta e-mail będą nadal działać po zawieszeniu hostingu.
  
@@ -67,15 +103,31 @@ Możesz trwale usunąć usługę e-mail powiązaną z Twoim hostingiem.
 >
 > Uwaga: operacja ta jest nieodwracalna. Nie ma możliwości ponownej aktywacji usługi e-mail po zrezygnowaniu z tej opcji.
 
-Zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting.
+Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki `Konta e-mail`, a następnie kliknij przycisk `Rezygnacja z opcji e-mail`{.action}.
-
-![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}
-
-> [!warning]
->
-> W celu potwierdzenia usunięcia oferty e-mail powiązanej z Twoim hostingiem, otrzymasz e-mail z linkiem weryfikacyjnym. Aby rozpocząć operację usuwania, należy kliknąć to łącze.
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> W ramce **Konfiguracja** znajduje się wzmianka **Konta e-mail**.
+>> Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Rezygnacja z opcji e-mail`{.action}.
+>>
+>> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > W celu potwierdzenia usunięcia oferty e-mail powiązanej z Twoim hostingiem, otrzymasz e-mail z linkiem weryfikacyjnym. Aby rozpocząć operację usuwania, należy kliknąć to łącze.
 
 #### Przypadki szczególne - Usunięcie usługi e-mail powiązanej z Twoim hostingiem (w celu przypisania jej do innej domeny)
 
