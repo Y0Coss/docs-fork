@@ -1,7 +1,7 @@
 ---
 title: "Changement des adresses IP des serveurs DNS OVHcloud"
 excerpt: "Découvrez la liste des nouvelles adresses IP des serveurs DNS OVHcloud"
-updated: 2025-08-05
+updated: 2025-08-06
 ---
 
 ## Objectif
