@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Model Context Protocol (MCP) avec LangChain4j
 excerpt: Apprenez à utiliser le Model Context Protocol (MCP) avec Java, LangChain4j et OVHcloud AI Endpoints
-updated: 2025-06-27
+updated: 2025-08-06
 ---
 
 > [!primary]
@@ -11,7 +11,7 @@ updated: 2025-06-27
 
 ## Objective
 
-OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** allows developers to easily add AI features to there day to day developments.
+OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** allows developers to easily add AI features to their day to day developments.
 
 In this article, we will explore how to create a Model Context Protocol (MCP) server and client using [Quarkus](https://quarkus.io/) and [LangChain4J](https://docs.langchain4j.dev/) to interact with OVHcloud AI Endpoints.
 
@@ -23,7 +23,7 @@ Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** w
 
 - **Model Context Protocol**: MCP is a protocol that allows your LLM to ask for additional context or data from external sources during the generation processes. If you want more information about MCP, please refer to the [official documentation](https://modelcontextprotocol.io/introduction).
 - **[LangChain4j](https://github.com/langchain4j/langchain4j)**: Java-based framework inspired by [LangChain](https://github.com/langchain-ai/langchain), designed to simplify the integration of LLMs (Large Language Models) into applications. Note that LangChain4j is not officially maintained by the LangChain team, despite the similar name.
-- **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive, with data privacy as a top priority.
+- **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**: A serverless platform by OVHcloud providing easy access to a variety of world-renowned AI models including Mistral, LLaMA, and more. This platform is designed to be simple, secure, and intuitive with data privacy as a top priority.
 
 ## Requirements
 
@@ -33,7 +33,7 @@ Combined with OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** w
 
 ## Instructions
 
-In this tutorial, we will explore how to easily create, in Java, a MCP Server using Quarkus and a client using LangChain4J.
+In this tutorial, we will explore how to easily create in Java, a MCP Server using Quarkus and a client using LangChain4J.
 
 ### Creating a Server with Quarkus
 
@@ -44,7 +44,7 @@ The goal of this MCP server is to allow the LLM to ask for information about OVH
 > ℹ️ The code used to call the [OVHcloud API](https://eu.api.ovh.com/) is in the [GitHub repository](https://github.com/ovh/public-cloud-examples/tree/main/ai/ai-endpoints/mcp-quarkus-langchain4j) and will not be detailed here.
 > 
 
-Thanks to Quarkus, the only things you need to create a MCP server is to define the tools that you want to expose to the LLM.
+Thanks to Quarkus, the only thing you need to create a MCP server, is to define the tools that you want to expose to the LLM.
 
 ```java
 // Quarkus code for MCP Server
@@ -63,16 +63,16 @@ public class PublicCloudUserTool {
 }
 ```
 
-⚠️ The description is very important as it will be used by the LLM to choose the right tool for the task. ⚠️
+⚠️ The description is very important, as it will be used by the LLM to choose the right tool for the task. ⚠️
 
-At the time of writing, there are two type of MCP servers: [stdio](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#stdio) and [Streamable HTTP](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http).
+At the time of writing, there are two types of MCP servers: [stdio](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#stdio) and [Streamable HTTP](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http).
 This blog post uses the Streamable mode thanks to Quarkus with the quarkus-mcp-server-sse extension.
 
-Run your server with the quarkus dev command. Your MCP server will be used on http://localhost:8080.
+Run your server with the quarkus dev command. Your MCP server will be used on <http://localhost:8080>.
 
 ### Using the MCP server with LangChain4J
 
-You can, now, use the MCP server with LangChain4J to create a powerful chatbot that can now interact with your OVHcloud account!
+You can now use the MCP server with LangChain4J to create a powerful chatbot that can now interact with your OVHcloud account!
 
 ```java
 ///usr/bin/env jbang "$0" "$@" ; exit $?
@@ -190,5 +190,3 @@ If you need training or technical assistance to implement our solutions, contact
 Please feel free to send us your questions, feedback, and suggestions regarding AI Endpoints and its features:
 
 - In the #ai-endpoints channel of the OVHcloud [Discord server](https://discord.gg/ovhcloud), where you can engage with the community and OVHcloud team members.
-
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
