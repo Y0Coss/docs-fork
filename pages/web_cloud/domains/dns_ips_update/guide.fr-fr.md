@@ -20,7 +20,7 @@ Ce guide présente les changements d’adresses IP affectant une partie de nos s
 
 Ce changement peut impacter les clients qui :
 
-- Ont défini un nom de serveur DNS personnalisé dans les enregistrements `NS` de leur zone DNS, et ont associé une adresse IP d’un serveur DNS OVHcloud à ce nom via un enregistrement `A`.
+- Ont défini un nom de serveur DNS personnalisé dans les enregistrements DNS de type `NS` de leur zone DNS, et ont associé une adresse IP d’un serveur DNS OVHcloud à ce nom via un enregistrement DNS de type `A`.
 - Ont également configuré un enregistrement `GLUE` pour ce nom personnalisé, afin de l’associer à l’adresse IP d’un serveur DNS OVHcloud, dans la configuration des serveurs DNS du domaine.
 - Et utilisent actuellement ce nom personnalisé comme serveur DNS de leur nom de domaine (défini dans leur espace client ou auprès de leur bureau d’enregistrement).
 
