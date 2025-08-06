@@ -192,7 +192,7 @@ W poniższym przykładzie mamy do czynienia z **przekierowaniem z kopią lokaln�
 
 > [!primary]
 >
-> Gdy wybierzesz tryb kopii "**Zachowaj kopię e-maila w OVHcloud**", na liście przekierowań automatycznie tworzone jest przekierowanie z adresu e-mail do samego siebie. Jest to odzwierciedlenie lokalnej kopii.
+> Gdy wybierzesz tryb kopii "**Zachowaj kopię wiadomości e-mail w OVHcloud**", na liście przekierowań automatycznie tworzone jest przekierowanie z adresu e-mail do samego siebie. Jest to odzwierciedlenie lokalnej kopii.
 >
 
 ### Z poziomu interfejsu webmail <a name="redirect-webmail"></a>

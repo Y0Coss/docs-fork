@@ -86,11 +86,11 @@ Este guia diz respeito ao conjunto das nossas ofertas de e-mail. Em função da 
 
 - **MX Plan Roundcube**: Corresponde à oferta MX Plan que utiliza o webmail Roundcube.
 - **MX Plan Zimbra**: Corresponde à oferta MX Plan que utiliza o webmail Zimbra.
-- **MX Plan OWA** : Corresponde à oferta MX Plan utilizando o webmail Outlook Web App (OWA).
-- **Exchange** : Aplicável às ofertas **Hosted**, **Private** e **Dedicated*** Exchange que utilizam o webmail Outlook Web App (OWA).
+- **MX Plan OWA**: Corresponde à oferta MX Plan utilizando o webmail Outlook Web App (OWA).
+- **Exchange**: Aplicável às ofertas **Hosted**, **Private** e **Dedicated*** Exchange que utilizam o webmail Outlook Web App (OWA).
 - **Email Pro**: Oferta de e-mail baseado em Exchange que utiliza o webmail Outlook Web App (OWA).
 - **Zimbra**: Oferta dedicada que utiliza o webmail Zimbra.
-- **Redirect** : Esta oferta gratuita está automaticamente disponível se dispuser de um domínio na Área de Cliente sem que tenha recebido uma oferta por e-mail. Permite criar reencaminhamentos de e-mail.
+- **Redirect**: Esta oferta gratuita está automaticamente disponível se dispuser de um domínio na Área de Cliente sem que tenha recebido uma oferta por e-mail. Permite criar reencaminhamentos de e-mail.
 
 > [!primary]
 >
@@ -155,11 +155,11 @@ No nosso exemplo, trata-se de um **reencaminhamento com cópia local** (ver [esq
 >>
 >> No formulário `Criar um reencaminhamento`, complete os seguintes elementos:
 >>
->> - ** Do endereço** : Introduza aqui o endereço de e-mail que deseja reencaminhar.
->> - **Para o endereço** : Introduza aqui o endereço de destino do seu reencaminhamento. Pode ser um dos seus endereços de e-mail OVHcloud ou um endereço de e-mail externo.
->> - **Escolha um modo de cópia** : Escolha se deseja:
->>      - **Conservar uma cópia do e-mail na OVHcloud** : Receber o e-mail no seu endereço principal bem como o endereço de reencaminhamento (ver [esquema 2](#diagram) no início deste guia).
->>      - **Não conservar uma cópia do e-mail** : Reenviar diretamente para o endereço de reencaminhamento sem que o endereço principal o receba (ver [esquema 1](#diagram) no início deste guia).
+>> - **Do endereço**: Introduza aqui o endereço de e-mail que deseja reencaminhar.
+>> - **Para o endereço**: Introduza aqui o endereço de destino do seu reencaminhamento. Pode ser um dos seus endereços de e-mail OVHcloud ou um endereço de e-mail externo.
+>> - **Escolha o modo de cópia**: Escolha se deseja:
+>>      - **Manter uma cópia do e-mail na OVHcloud**: Receber o e-mail no seu endereço principal bem como o endereço de reencaminhamento (ver [esquema 2](#diagram) no início deste guia).
+>>      - **Não manter uma cópia do e-mail**: Reenviar diretamente para o endereço de reencaminhamento sem que o endereço principal o receba (ver [esquema 1](#diagram) no início deste guia).
 >>
 >> Clique em `Validar`{.action} para confirmar a adição deste reencaminhamento.
 >>
@@ -179,11 +179,11 @@ No nosso exemplo, trata-se de um **reencaminhamento com cópia local** (ver [esq
 >>
 >> No formulário `Criar um reencaminhamento`, complete os seguintes elementos:
 >>
->> - ** Do endereço** : Introduza aqui o endereço de e-mail que deseja reencaminhar.
->> - **Para o endereço** : Introduza aqui o endereço de destino do seu reencaminhamento. Pode ser um dos seus endereços de e-mail OVHcloud ou um endereço de e-mail externo.
->> - **Escolha um modo de cópia** : Escolha se deseja:
->>      - **Conservar uma cópia do e-mail na OVHcloud** : Receber o e-mail no seu endereço principal bem como o endereço de reencaminhamento (ver [esquema 2](#diagram) no início deste guia).
->>      - **Não conservar uma cópia do e-mail** : Reenviar diretamente para o endereço de reencaminhamento sem que o endereço principal o receba (ver [esquema 1](#diagram) no início deste guia).
+>> - **Do endereço**: Introduza aqui o endereço de e-mail que deseja reencaminhar.
+>> - **Para o endereço**: Introduza aqui o endereço de destino do seu reencaminhamento. Pode ser um dos seus endereços de e-mail OVHcloud ou um endereço de e-mail externo.
+>> - **Escolha um modo de cópia**: Escolha se deseja:
+>>      - **Manter uma cópia do e-mail na OVHcloud**: Receber o e-mail no seu endereço principal bem como o endereço de reencaminhamento (ver [esquema 2](#diagram) no início deste guia).
+>>      - **Não mantar uma cópia do e-mail**: Reenviar diretamente para o endereço de reencaminhamento sem que o endereço principal o receba (ver [esquema 1](#diagram) no início deste guia).
 >>
 >> Clique em `Validar`{.action} para confirmar a adição deste reencaminhamento.
 >>
@@ -192,16 +192,16 @@ No nosso exemplo, trata-se de um **reencaminhamento com cópia local** (ver [esq
 
 > [!primary]
 >
-> Quando escolhe o modo de cópia « **Conservar uma cópia do e-mail na OVHcloud** », um reencaminhamento do endereço de e-mail para si é automaticamente criado na lista dos reencaminhamentos e materializa esta cópia local.
+> Quando escolhe o modo de cópia "**Manter uma cópia do e-mail na OVHcloud**", um reencaminhamento do endereço de e-mail para si é automaticamente criado na lista dos reencaminhamentos e materializa esta cópia local.
 >
 
 #### A partir do webmail <a name="redirect-webmail"></a>
 
 Aceda ao [webmail](/links/web/email). Introduza **o endereço de correio eletrónico** e **a palavra-passe** para iniciar sessão.
 
-![emails](imagens/webmail.png){.thumbnail}
+![emails](images/webmail.png){.thumbnail}
 
-Para criar um reencaminhamento, são utilizadas regras da caixa de entrada, também conhecidas « filtros » no webmail. Estas regras, que se aplicam quando recebemos um e-mail, permitem que o e-mail recebido seja reencaminhado ou reencaminhado.
+Para criar um reencaminhamento, são utilizadas regras da caixa de entrada, também conhecidas "filtros" no webmail. Estas regras, que se aplicam quando recebemos um e-mail, permitem que o e-mail recebido seja reencaminhado ou reencaminhado.
 
 ##### Outlook Web App (OWA) <a name="redirect-webmail-owa"></a>
 
@@ -209,9 +209,9 @@ Para criar um reencaminhamento, são utilizadas regras da caixa de entrada, tamb
 >
 > Este capítulo diz respeito às seguintes ofertas:
 >
-> - **MX Plan OWA.**
-> - **Exchange.**
-> - **E-mail Pro.**
+> - **MX Plan OWA**.
+> - **Exchange**.
+> - **E-mail Pro**.
 >
 
 Outlook Web App é uma interface utilizada para as nossas ofertas **Exchange**, **E-mail Pro** e uma parte das contas **MX Plan**.
@@ -223,13 +223,13 @@ Navegue pelos separadores abaixo para configurar o seu reencaminhamento através
 >>
 >> Depois de aceder ao endereço de e-mail através do [webmail](/links/web/email), clique na roda dentada no canto superior direito e, a seguir, em `Opções`{.action}.
 >>
->> ![emails](imagens/emails-all-01.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-01.png){.thumbnail .w-640}
 >>
 > **Etapa 2**
 >>
->> Na janela **Options**, na coluna da esquerda, aceda à categoria **Tratamento automático** na secção **Mail** e clique em `Regras da caixa de entrada e de arrumação`{.action}.
+>> Na janela **Opções**, na coluna da esquerda, aceda à categoria **Tratamento automático** na secção **Mail** e clique em `Regras da caixa de entrada e de arrumação`{.action}.
 >>
->> ![emails](imagens/emails-all-02.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-02.png){.thumbnail .w-640}
 >>
 >> Esta janela permite gerir os reencaminhamentos e aplicar filtros ao conjunto dos e-mails recebidos.
 >>
@@ -237,15 +237,15 @@ Navegue pelos separadores abaixo para configurar o seu reencaminhamento através
 >>
 >> Na janela de gestão das **Regras da caixa de receção**, clique no ícone `+`{.action} no canto superior esquerdo.
 >>
->> ![emails](imagens/emails-all-03.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-03.png){.thumbnail .w-640}
 >>
 > **Etapa 4**
 >>
 >> Na nova janela que aparecerá, preencha os seguintes elementos:
->> - **Nome** : Defina o nome do reencaminhamento.
+>> - **Nome**: Defina o nome do reencaminhamento.
 >> - **Quando a mensagem for recebida e satisfizer todas estas condições**: Se o reencaminhamento se aplicar a todas as mensagens, selecione `[Aplicar a todas as mensagens]`{.action}.
 >>
->> ![emails](imagens/emails-all-04.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-04.png){.thumbnail .w-640}
 >>
 > **Etapa 5**
 >>
@@ -253,20 +253,20 @@ Navegue pelos separadores abaixo para configurar o seu reencaminhamento através
 >>
 >> **Efetuar todas as operações seguintes**: É aqui que aplica o reencaminhamento. Selecione `Transferir, reencaminhar ou enviar`{.action} e `Reencaminhar a mensagem para...`{.action}.
 >>
->> ![emails](imagens/emails-all-05.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-05.png){.thumbnail .w-640}
 >>
 > **Etapa 6**
 >>
->> Introduza o endereço para o qual deseja reencaminhar o e-mail antes de « **Reencaminhar o e-mail para...** » e depois clique em `Registar`{.action}. Por fim, clique em `OK`{.action} (ícone de disquete) para finalizar o reencaminhamento.
+>> Introduza o endereço para o qual deseja reencaminhar o e-mail antes de "**Reencaminhar o e-mail para...**" e depois clique em `Registar`{.action}. Por fim, clique em `OK`{.action} (ícone de disquete) para finalizar o reencaminhamento.
 >>
->> ![emails](imagens/emails-all-06.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-06.png){.thumbnail .w-640}
 >>
 
 > [!primary]
 >
 > Para aplicar um **reencaminhamento simples** (ver [esquema 1](#diagram) no início deste guia), adicione uma regra suplementar ao seu **reencaminhamento com cópia local** a partir desta janela. Clique em `Adicionar uma ação`{.action} (quadro 1), depois em `Mover, copiar ou eliminar`{.action}, e por fim clique em `eliminar a mensagem`{.action}. Esta regra envia a mensagem diretamente para o lixo depois de reencaminhar a mensagem para o endereço final.
 >
-> ![emails](imagens/emails-all-07.png){.thumbnail .w-640}
+> ![emails](images/emails-all-07.png){.thumbnail .w-640}
 >
 
 ##### Zimbra <a name="redirect-webmail-zimbra"></a>
@@ -276,7 +276,7 @@ Navegue pelos separadores abaixo para configurar o seu reencaminhamento através
 > Este capítulo diz respeito às seguintes ofertas:
 >
 > - **MX Plan** com a menção zimbra para o webmail.
-> - **Zimbra.**
+> - **Zimbra**.
 >
 
 Para reencaminhar os e-mails da sua conta Zimbra para outro endereço de e-mail, vamos aplicar uma regra de transferência.
@@ -299,22 +299,22 @@ Siga as etapas abaixo para configurar o reencaminhamento:
 >>
 >> Clique na secção `Filtros`{.action} a partir da janela de parâmetros e, a seguir, clique no botão `Adicionar um filtro`{.action}.
 >>
->> ![zimbra](images/zimbra_reencaminhamento02.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_redirection02.png){.thumbnail .w-640}
 >>
 > **Etapa 3**
 >>
 >> - Clique em <u>Modo avançado</u> no canto superior direito para implementar esta regra.
 >> - Dê um nome ao seu filtro na caixa `Nome do filtro`.
->> - Deixe o menu suspenso em `todos` na frase « Se uma mensagem de entrada reúne ... dessas condições ».
->> - No primeiro menu suspenso das regras, escolha `À` (To), deixe `content` (contains) e, em seguida, insira o endereço de e-mail no qual você está conectado na caixa à direita.
->> - Sob a menção « Então » (Then), selecione `Transferir para` (Forward to) no menu pendente e, em seguida, insira o endereço de e-mail de destino.
+>> - Deixe o menu suspenso em `todos` na frase "Se uma mensagem de entrada reúne ... dessas condições".
+>> - No primeiro menu suspenso das regras, escolha `À` (To), deixe `contém` (contains) e, em seguida, insira o endereço de e-mail no qual você está conectado na caixa à direita.
+>> - Sob a menção "Então" (Then), selecione `Transferir para` (Forward to) no menu pendente e, em seguida, insira o endereço de e-mail de destino.
 >> - Clique em `+ Adicionar uma ação`{.action} (Add an action) abaixo e selecione `Mover para a pasta receção` (Keep in Inbox).
 >> - Clique em `Guardar`{.action} a partir da janela do seu filtro e também a partir da janela dos parâmetros.
 >>
->> ![zimbra](images/zimbra_reencaminhamento03.png){.thumbnail .w-640}
+>> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-640}
 >>
 
-Para mais informações sobre a utilização do webmail Zimbra, consulte o guia « [Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
+Para mais informações sobre a utilização do webmail Zimbra, consulte o guia "[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
 #### Eliminar um reencaminhamento <a name="redirect-delete"></a>
 
@@ -328,7 +328,7 @@ Para mais informações sobre a utilização do webmail Zimbra, consulte o guia 
 Selecione o separador abaixo para a tecnologia de e-mail utilizada pelo serviço MX Plan:
 
 > [!tabs]
-> **MX Plan Roundcube / MX Plan OWA / redirect**
+> **MX Plan Roundcube / MX Plan OWA / Redirect**
 >>
 >> - Por defeito, aparecerá no separador `Informações gerais`{.action} do seu MX Plan.
 >> - Clique no separador `E-mails`{.action} e, à direita, no botão `Gestão dos reencaminhamentos`{.action}.
@@ -357,11 +357,11 @@ Aceda ao [webmail](/links/web/email). Introduza **o endereço de correio eletró
 >>
 >> Depois de aceder à interface do webmail OWA, clique na roda dentada no canto superior direito e, a seguir, em `Opções`{.action}.
 >>
->> ![emails](imagens/emails-all-01.png){.thumbnail .w-640}
+>> ![emails](images/emails-all-01.png){.thumbnail .w-640}
 >>
 > **Etapa 2**
 >>
->> Na janela **Options**, na coluna da esquerda, aceda à categoria **Tratamento automático** na secção **Mail** e clique em `Regras da caixa de entrada e de arrumação`{.action}.
+>> Na janela **Opções**, na coluna da esquerda, aceda à categoria **Tratamento automático** na secção **Mail** e clique em `Regras da caixa de entrada e de arrumação`{.action}.
 >>
 >> ![emails](images/owa-redirect-del-01.png){.thumbnail .w-640}
 >>
@@ -400,17 +400,17 @@ Aceda ao [webmail](/links/web/email). Introduza **o endereço de correio eletró
 
 ### Criar um alias <a name="alias"></a>
 
-Criar um alias para o seu endereço de e-mail permite-lhe comunicar um endereço « máscara » aos seus contactos, sem ter de comunicar o seu endereço de e-mail pessoal ao remetente.
+Criar um alias para o seu endereço de e-mail permite-lhe comunicar um endereço "máscara" aos seus contactos, sem ter de comunicar o seu endereço de e-mail pessoal ao remetente.
 
 #### Exchange / E-mail Pro / MX Plan <a name="alias-exchange-emp-mxplan"></a>
 
 Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`. De seguida, escolha o menu em função do seu serviço de e-mail:
 
-- **Exchange** : Aceda à secção `Microsoft`{.action}, clique em `Exchange`{.action} e selecione a plataforma em causa. Clique no separador `Contas de e-mail`{.action}.
+- **Exchange**: Aceda à secção `Microsoft`{.action}, clique em `Exchange`{.action} e selecione a plataforma em causa. Clique no separador `Contas de e-mail`{.action}.
 
-- **E-mail Pro** : Aceda à secção `E-mail Pro`{.action}, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
+- **E-mail Pro**: Aceda à secção `E-mail Pro`{.action}, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
 
-- **MX Plan** : Aceda à secção `MX Plan`{.action}, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
+- **MX Plan**: Aceda à secção `MX Plan`{.action}, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
 
 Para adicionar um alias à sua conta de e-mail, siga as etapas descritas clicando sucessivamente em cada separador abaixo:
 
@@ -477,17 +477,17 @@ Para criar um alias numa conta de e-mail MX Plan Roundcube, deve fazê-lo da mes
 
 Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`. De seguida, escolha o menu em função do seu serviço de e-mail:
 
-- **Exchange** : Aceda à secção `Microsoft`{.action}, clique em `Exchange`{.action} e selecione a plataforma em causa. Clique no separador `Contas de e-mail`{.action}.
+- **Exchange**: Aceda à secção `Microsoft`{.action}, clique em `Exchange`{.action} e selecione a plataforma em causa. Clique no separador `Contas de e-mail`{.action}.
 
-- **E-mail Pro** : Aceda à secção `E-mail Pro`{.action}, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
+- **E-mail Pro**: Aceda à secção `E-mail Pro`{.action}, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
 
-- **MX Plan** : Aceda à secção `MX Plan`{.action}, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
+- **MX Plan**: Aceda à secção `MX Plan`{.action}, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
 
 No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} à direita do endereço de e-mail em causa. A seguir, clique em `Configurar os alias`{.action} (ou `Gerir os alias`{.action}).
 
 Clique no botão `...`{.action} à direita do alias em causa, no menu de gestão dos alias. Por fim, clique em `Eliminar o alias`{.action}
 
-![emails](imagens/email-alias04.png){.thumbnail .w-640}
+![emails](images/email-alias04.png){.thumbnail .w-640}
 
 #### MX Plan Roundcube <a name="alias-delete-mxplan-roundcube"></a>
 
@@ -544,8 +544,8 @@ Clique no botão `...`{.action} à direita do reencaminhamento em causa e, a seg
 
 [Primeiros passos com a oferta Zimbra](/pages/web_cloud/email_and_colaborative_solutions/zimbra/getting_started_zimbra)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

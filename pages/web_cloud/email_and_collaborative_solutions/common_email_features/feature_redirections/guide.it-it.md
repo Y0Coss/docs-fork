@@ -130,7 +130,7 @@ Questa guida si applica a tutte le nostre offerte di posta elettronica. La gesti
 
 #### Dallo Spazio Cliente <a name="redirect-manager"></a>
 
-Al momento, solo le offerte **MX plan** e **redirect** dispongono di un’interfaccia di gestione dei reindirizzamenti tramite lo Spazio Cliente OVHcloud.
+Al momento, solo le offerte **MX plan** e **Redirect** dispongono di un’interfaccia di gestione dei reindirizzamenti tramite lo Spazio Cliente OVHcloud.
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
@@ -327,7 +327,7 @@ Per maggiori informazioni sull’utilizzo della webmail Zimbra, consulta la nost
 Seleziona qui sotto la scheda corrispondente alla tecnologia email utilizzata dal tuo servizio MX Plan:
 
 > [!tabs]
-> **MX Plan Roundcube/MX Plan OWA/Redirect**
+> **MX Plan Roundcube/MX Plan OWA/redirect**
 >>
 >> - Di default, ti trovi nella scheda `Informazioni generali`{.action} del tuo MX Plan.
 >> - Clicca sulla scheda `Email`{.action} e poi a destra sul pulsante `Gestione dei reindirizzamenti`{.action}.

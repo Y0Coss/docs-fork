@@ -324,7 +324,7 @@ Pour plus de détails sur l'utilisation du webmail Zimbra, consultez notre guide
 1. Cliquez sur `MX Plan`{.action}.
 1. Sélectionnez le domaine concerné.
 
-Sélectionnez, ci-dessous, l'onglet correspondant à la technologie e-mail utilisée par votre service  MX Plan :
+Sélectionnez, ci-dessous, l'onglet correspondant à la technologie e-mail utilisée par votre service MX Plan :
 
 > [!tabs]
 > **MX Plan Roundcube / MX Plan OWA / Redirect**

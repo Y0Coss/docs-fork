@@ -405,9 +405,9 @@ Crear un alias para su dirección de correo electrónico le permite comunicar un
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`. Seleccione el menú en función de su solución de correo:
 
-- **Exchange**: Acceda a la sección `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo electrónico`{.action}.
+- **Exchange**: Acceda a la sección `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}.
 
-- **Email Pro**: Acceda a la sección `Email Pro`{.action} de, seleccione la plataforma correspondiente y abra la pestaña `Cuentas de correo electrónico`{.action}.
+- **Email Pro**: Acceda a la sección `Email Pro`{.action} de, seleccione la plataforma correspondiente y abra la pestaña `Cuentas de correo`{.action}.
 
 - **MX Plan**: Acceda a la sección `MX Plan`{.action}, seleccione la plataforma correspondiente y haga clic en la pestaña `Cuentas de correo`{.action}.
 
@@ -476,9 +476,9 @@ Para crear un alias en una cuenta MX Plan Roundcube, debe hacerlo de la misma ma
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`. Seleccione el menú en función de su solución de correo:
 
-- **Exchange**: Acceda a la sección `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo electrónico`{.action}.
+- **Exchange**: Acceda a la sección `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}.
 
-- **Email Pro**: Acceda a la sección `Email Pro`{.action}, seleccione la plataforma correspondiente y abra la pestaña `Cuentas de correo electrónico`{.action}.
+- **Email Pro**: Acceda a la sección `Email Pro`{.action}, seleccione la plataforma correspondiente y abra la pestaña `Cuentas de correo`{.action}.
 
 - **MX Plan**: Acceda a la sección `MX Plan`{.action}, seleccione la plataforma correspondiente y haga clic en la pestaña `Cuentas de correo`{.action}.
 

@@ -405,7 +405,7 @@ Wenn Sie einen Alias für Ihre E-Mail-Adresse erstellen, können Sie Ihren Konta
 
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) und gehen Sie in den Bereich `Web Cloud`. Wählen Sie dann das Menü abhängig von Ihrem E-Mail-Angebot aus:
 
-- **Exchange**: Gehen Sie in den Bereich `Microsoft`{.action}, klicken Sie auf `Exchange`{.action} und wählen Sie die betreffende Plattform aus. Klicken Sie auf den Tab `E-Mail-Konten`{.action}.
+- **Exchange**: Gehen Sie in den Bereich `Microsoft`{.action}, klicken Sie auf `Exchange`{.action} und wählen Sie die betreffende Plattform aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}.
 
 - **E-Mail Pro**: Gehen Sie in den Bereich `E-Mail Pro`{.action}, wählen Sie die betreffende Plattform aus und klicken Sie dann auf den Tab `E-Mail-Accounts`{.action}.
 
@@ -476,7 +476,7 @@ Um einen Alias für einen MX Plan Roundcube E-Mail-Account zu erstellen, müssen
 
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager) und gehen Sie in den Bereich `Web Cloud`. Wählen Sie dann das Menü abhängig von Ihrem E-Mail-Angebot aus:
 
-- **Exchange**: Gehen Sie in den Bereich `Microsoft`{.action}, klicken Sie auf `Exchange`{.action} und wählen Sie die betreffende Plattform aus. Klicken Sie auf den Tab `E-Mail-Konten`{.action}.
+- **Exchange**: Gehen Sie in den Bereich `Microsoft`{.action}, klicken Sie auf `Exchange`{.action} und wählen Sie die betreffende Plattform aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}.
 
 - **E-Mail Pro**: Gehen Sie in den Bereich `E-Mail Pro`{.action}, wählen Sie die betreffende Plattform aus und klicken Sie dann auf den Tab `E-Mail-Accounts`{.action}.
 
