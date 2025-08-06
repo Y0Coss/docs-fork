@@ -1,6 +1,6 @@
 ---
 title: "Politique de réversibilité du produit Dedicated PoD-SecNumCloud"
-updated: 2025-08-05
+updated: 2025-08-06
 ---
 
 ## Objectif
