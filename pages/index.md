@@ -99,6 +99,7 @@
             + [Reversibility Policy for the Managed Containers product](account_and_service_management/reversibility/21-ai-managed-containers-reversibility)
             + [Reversibility Policy for the product Managed Search Engine Software Platform](account_and_service_management/reversibility/22-SDB-opensearch-reversibility)
             + [Reversibility Policy for the Managed Mutualized Virtualization product](account_and_service_management/reversibility/23-mutualized-virtualization-vcd-reversibility)
+            + [Reversibility Policy for the Dedicated PoD-SecNumCloud product](account_and_service_management/reversibility/24-bm-pod-snc-reversbility)
     + [Responsibility sharing](account-and-service-management-responsibility-sharing)
         + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)
         + [File Storage services - Responsibility model](account_and_service_management/responsibility_sharing/file-storage)
