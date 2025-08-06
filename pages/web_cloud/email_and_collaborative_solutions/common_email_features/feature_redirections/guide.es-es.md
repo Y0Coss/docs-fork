@@ -75,7 +75,7 @@ Haga clic en las fichas siguientes para obtener una explicación ilustrada del f
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Disponer de una solución de correo de OVHcloud previamente configurada, que incluya:
     - **MX Plan** ofrecido con nuestros [planes de hosting](/links/web/hosting) o incluido en un [alojamiento gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails-hosted-exchange).
+    - [Exchange](/links/web/emails).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
@@ -89,7 +89,7 @@ Esta guía explica todas nuestras soluciones de correo. En función del producto
 - **Exchange**: Aplicable a los productos **Hosted**, **Private** y **Dedicated** Exchange que utiliza el webmail Outlook Web App (OWA).
 - **Email Pro**: Solución de correo basada en Exchange que utiliza Outlook Web App (OWA).
 - **Zimbra**: Oferta dedicada que utiliza el webmail Zimbra.
-- **redirect**: Esta oferta gratuita está disponible automáticamente si dispone de un dominio en su área de cliente sin una oferta de correo asociada. Permite crear redirecciones de correo.
+- **Redirect**: Esta oferta gratuita está disponible automáticamente si dispone de un dominio en su área de cliente sin una oferta de correo asociada. Permite crear redirecciones de correo.
 
 > [!primary]
 >
@@ -130,7 +130,7 @@ Esta guía explica todas nuestras soluciones de correo. En función del producto
 
 #### Desde el área de cliente <a name="redirect-manager"></a>
 
-Actualmente, solo los planes **MX plan** y **redirect** disponen de una interfaz de gestión de las redirecciones a través del área de cliente de OVHcloud.
+Actualmente, solo los planes **MX plan** y **Redirect** disponen de una interfaz de gestión de las redirecciones a través del área de cliente de OVHcloud.
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
@@ -327,10 +327,10 @@ Para más información sobre el uso del webmail Zimbra, consulte nuestra guía "
 A continuación, abra la pestaña correspondiente a la tecnología de correo que utiliza su servicio MX Plan:
 
 > [!tabs]
-> **MX Plan Roundcube / MX Plan OWA / redirect**
+> **MX Plan Roundcube / MX Plan OWA / Redirect**
 >>
 >> - Por defecto, se encuentra en la pestaña `Información general`{.action} de su MX Plan.
->> - Haga clic en la pestaña `Emails`{.action} y seleccione el botón `Gestiónar las redirecciones`{.action}.
+>> - Haga clic en la pestaña `Correo electrónico`{.action} y seleccione el botón `Gestiónar las redirecciones`{.action}.
 >>
 >>    ![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
 >>

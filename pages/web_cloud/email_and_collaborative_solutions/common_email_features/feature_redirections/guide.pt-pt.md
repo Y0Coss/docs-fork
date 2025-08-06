@@ -90,7 +90,7 @@ Este guia diz respeito ao conjunto das nossas ofertas de e-mail. Em função da 
 - **Exchange** : Aplicável às ofertas **Hosted**, **Private** e **Dedicated*** Exchange que utilizam o webmail Outlook Web App (OWA).
 - **Email Pro**: Oferta de e-mail baseado em Exchange que utiliza o webmail Outlook Web App (OWA).
 - **Zimbra**: Oferta dedicada que utiliza o webmail Zimbra.
-- **redirect** : Esta oferta gratuita está automaticamente disponível se dispuser de um domínio na Área de Cliente sem que tenha recebido uma oferta por e-mail. Permite criar reencaminhamentos de e-mail.
+- **Redirect** : Esta oferta gratuita está automaticamente disponível se dispuser de um domínio na Área de Cliente sem que tenha recebido uma oferta por e-mail. Permite criar reencaminhamentos de e-mail.
 
 > [!primary]
 >
@@ -131,7 +131,7 @@ Este guia diz respeito ao conjunto das nossas ofertas de e-mail. Em função da 
 
 #### A partir da Área de Cliente <a name="redirect-manager"></a>
 
-Atualmente, apenas as ofertas **MX plan** e **redirect** dispõem de uma interface de gestão dos reencaminhamentos através da Área de Cliente OVHcloud.
+Atualmente, apenas as ofertas **MX plan** e **Redirect** dispõem de uma interface de gestão dos reencaminhamentos através da Área de Cliente OVHcloud.
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
@@ -143,7 +143,7 @@ Atualmente, apenas as ofertas **MX plan** e **redirect** dispõem de uma interfa
 No nosso exemplo, trata-se de um **reencaminhamento com cópia local** (ver [esquema 2](#diagram) no início deste guia). Se for necessário, clique no separador correspondente à tecnologia webmail utilizada pelo MX Plan e siga as etapas abaixo:
 
 > [!tabs]
-> **MX Plan Roundcube / MX Plan Outlook Web App / redirect**
+> **MX Plan Roundcube / MX Plan Outlook Web App / Redirect**
 >>
 >> Por predefinição, está no separador `Informações gerais`{.action} do seu MX Plan. Clique no separador `E-mails`{.action} e, a seguir, no botão `Gestão dos reencaminhamentos`{.action}.
 >>

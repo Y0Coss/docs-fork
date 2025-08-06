@@ -75,7 +75,7 @@ Click on the tabs below for an illustrated explanation of how aliases and redire
 - Access to the [OVHcloud Control Panel](/links/manager).
 - A preconfigured OVHcloud email solution:
     - **MX Plan** available with a [web hosting plan](/links/web/hosting), or included in a [100M free hosting](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails-hosted-exchange).
+    - [Exchange](/links/web/emails).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
@@ -130,7 +130,7 @@ This guide covers all of our email solutions. Depending on the solution, you can
 
 #### Via the OVH Control Panel <a name="redirect-manager"></a>
 
-Currently, only the **MX Plan** and **redirect** plans have a redirection management interface via the OVHcloud Control Panel.
+Currently, only the **MX Plan** and **Redirect** plans have a redirection management interface via the OVHcloud Control Panel.
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
@@ -142,7 +142,7 @@ Currently, only the **MX Plan** and **redirect** plans have a redirection manage
 In our example, this is a **redirection with a local copy** (see [diagram 2](#diagram) at the beginning of this guide). If this is what you need, follow the steps below by clicking on the tab corresponding to the webmail technology used by your MX Plan:
 
 > [!tabs]
-> **MX Plan Roundcube / MX Plan Outlook Web App / redirect**
+> **MX Plan Roundcube / MX Plan Outlook Web App / Redirect**
 >>
 >> By default, you are in the `General information`{.action} tab of your MX Plan. Click on the `Emails`{.action} tab, then on the right-hand side on the `Manage redirections`{.action} button.
 >>
@@ -327,7 +327,7 @@ For more details on using Zimbra webmail, please read our guide on [Using Zimbra
 Select the tab below for the email technology used by your MX Plan service:
 
 > [!tabs]
-> **MX Plan Roundcube / MX Plan OWA / redirect**
+> **MX Plan Roundcube / MX Plan OWA / Redirect**
 >>
 >> - By default, you are in the `General information`{.action} tab of your MX Plan.
 >> - Click the `Emails`{.action} tab, then on the right-hand side the `Manage redirections`{.action} button.

@@ -75,7 +75,7 @@ Fare clic sulle schede seguenti per illustrare il funzionamento di alias e reind
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di una soluzione email OVHcloud precedentemente configurata, tra le seguenti:
     - **MX Plan** proposta con le nostre [offerte di hosting Web](/links/web/hosting) o inclusa in un [hosting gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails-hosted-exchange).
+    - [Exchange](/links/web/emails).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
@@ -89,7 +89,7 @@ Questa guida si applica a tutte le nostre offerte di posta elettronica. La gesti
 - **Exchange**: Si applica alle offerte **Hosted**, **Private** e **Dedicated** Exchange utilizzando la webmail Outlook Web App (OWA).
 - **Email Pro**: Offerta Email basata su Exchange con webmail Outlook Web App (OWA).
 - **Zimbra**: Offerta dedicata che utilizza la Webmail Zimbra.
-- **redirect**: Quest'offerta gratuita è automaticamente disponibile se hai un dominio nel tuo Spazio Cliente senza offerta email associata. Permette di creare reindirizzamenti email.
+- **Redirect**: Quest'offerta gratuita è automaticamente disponibile se hai un dominio nel tuo Spazio Cliente senza offerta email associata. Permette di creare reindirizzamenti email.
 
 > [!primary]
 >
@@ -327,7 +327,7 @@ Per maggiori informazioni sull’utilizzo della webmail Zimbra, consulta la nost
 Seleziona qui sotto la scheda corrispondente alla tecnologia email utilizzata dal tuo servizio MX Plan:
 
 > [!tabs]
-> **MX Plan Roundcube/MX Plan OWA/redirect**
+> **MX Plan Roundcube/MX Plan OWA/Redirect**
 >>
 >> - Di default, ti trovi nella scheda `Informazioni generali`{.action} del tuo MX Plan.
 >> - Clicca sulla scheda `Email`{.action} e poi a destra sul pulsante `Gestione dei reindirizzamenti`{.action}.

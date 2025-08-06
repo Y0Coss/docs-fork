@@ -75,7 +75,7 @@ Klicken Sie auf die Tabs, um die Funktionsweise von Aliasnamen und Weiterleitung
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine vorkonfigurierte OVHcloud E-Mail-Lösung, darunter:
     - **MX Plan** mit unseren [Webhosting Angeboten](/links/web/hosting) oder in einem [100M Gratis-Hosting](/links/web/domains-free-hosting) inklusive.
-    - [Exchange](/links/web/emails-hosted-exchange).
+    - [Exchange](/links/web/emails).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
@@ -130,7 +130,7 @@ Diese Anleitung gilt für alle unsere E-Mail-Angebote. Je nach Angebot können S
 
 #### Über das Kundencenter <a name="redirect-manager"></a>
 
-Derzeit verfügen nur die Angebote **MX plan** und **redirect** über ein Interface zur Verwaltung der Weiterleitungen über das OVHcloud Kundencenter.
+Derzeit verfügen nur die Angebote **MX plan** und **Redirect** über ein Interface zur Verwaltung der Weiterleitungen über das OVHcloud Kundencenter.
 
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
