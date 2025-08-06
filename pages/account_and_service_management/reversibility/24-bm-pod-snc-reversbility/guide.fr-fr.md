@@ -65,7 +65,7 @@ La période d’engagement par défaut sur le service est de 12 mois. L’export
 ## Conservation des données après résiliation du contrat
 
 Après suppression du service ou résiliation du contrat, OVHcloud supprime définitivement toutes les données, images, volumes, configurations et logs du service. Il est donc impératif d’exporter toutes les données nécessaires avant suppression, aucune restauration n’étant possible après coup.
-A la fin du service, OVHcloud opère un effacement sécurisé. Cet effacement fera l’objet d’un préavis de 21 jour calendaires.
+A la fin du service, OVHcloud opère un effacement sécurisé. Cet effacement fera l’objet d’un préavis de 21 jours calendaires.
 
 
 
