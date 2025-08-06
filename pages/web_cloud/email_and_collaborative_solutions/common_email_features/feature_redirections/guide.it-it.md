@@ -327,7 +327,7 @@ Per maggiori informazioni sull’utilizzo della webmail Zimbra, consulta la nost
 Seleziona qui sotto la scheda corrispondente alla tecnologia email utilizzata dal tuo servizio MX Plan:
 
 > [!tabs]
-> **MX Plan Roundcube/MX Plan OWA/redirect**
+> **MX Plan Roundcube/MX Plan OWA/Redirect**
 >>
 >> - Di default, ti trovi nella scheda `Informazioni generali`{.action} del tuo MX Plan.
 >> - Clicca sulla scheda `Email`{.action} e poi a destra sul pulsante `Gestione dei reindirizzamenti`{.action}.
