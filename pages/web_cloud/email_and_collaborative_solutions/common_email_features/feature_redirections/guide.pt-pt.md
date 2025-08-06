@@ -18,7 +18,7 @@ Encontre neste guia diferentes informações e dicas relativas à configuração
 
 **Saiba como gerir os seus alias e reencaminhamentos de e-mail.**
 
-/// Details | O que é um reencaminhamento de e-mail?
+/// details | O que é um reencaminhamento de e-mail?
 
 Um reencaminhamento permite modificar o trajeto inicial de um e-mail para um ou vários outros endereços de e-mail.
 
@@ -26,7 +26,7 @@ Por exemplo, ao enviar um e-mail para **contact@mydomain.ovh**, este deverá ser
 
 ///
 
-/// Details | O que é um alias de e-mail?
+/// details | O que é um alias de e-mail?
 
 Contrariamente ao reencaminhamento, o endereço de e-mail associado ao alias não é um endereço que se possa consultar, trata-se de uma "máscara".
 
@@ -36,7 +36,7 @@ Por exemplo, o seu endereço de e-mail é **john.smith@mydomain.ovh** e o seu al
 
 ///
 
-/// Details | Reencaminhamento e alias em imagem <a name="diagram"></a>
+/// details | Reencaminhamento e alias em imagem <a name="diagram"></a>
 
 Clique nos separadores seguintes para obter explicações ilustradas sobre o funcionamento dos alias e reencaminhamentos.
 
@@ -447,7 +447,7 @@ Para criar um alias numa conta de e-mail MX Plan Roundcube, deve fazê-lo da mes
 > [!tabs]
 > **Etapa 1**
 >>
->> - Clique no botão `⁝` à direita da conta de e-mail em causa.
+>> - Clique no botão `⁝`{.action} à direita da conta de e-mail em causa.
 >> - Clique em `Modificar`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
@@ -514,7 +514,7 @@ Clique no botão `...`{.action} à direita do reencaminhamento em causa e, a seg
 > [!tabs]
 > **Etapa 1**
 >>
->> - Clique no botão `⁝` à direita da conta de e-mail em causa.
+>> - Clique no botão `⁝`{.action} à direita da conta de e-mail em causa.
 >> - Clique em `Modificar`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}

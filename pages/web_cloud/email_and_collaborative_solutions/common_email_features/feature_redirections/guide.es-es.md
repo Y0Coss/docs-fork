@@ -18,31 +18,31 @@ En esta guía encontrará toda la información necesaria para configurar las **r
 
 **Cómo gestionar los alias y redirecciones de correo.**
 
-/// Details | ¿Qué es una redirección de correo?
+/// details | ¿Qué es una redirección de correo?
 
 Una redirección permite modificar el trayecto inicial de un email a otra o más direcciones de correo.
 
-Por ejemplo, desea que cuando envíe un mensaje de correo electrónico en **contact@mydomain.ovh**, este también se reenvíe a **john.smith@otherdomain.ovh**. Esto permite que un mensaje de correo electrónico dirigido a **contact@mydomain.ovh** se reenvíe automáticamente a **john.smith@otherdomain.ovh**.
+Por ejemplo: desea que cuando envíe un mensaje de correo electrónico en **contact@mydomain.ovh**, este también se reenvíe a **john.smith@otherdomain.ovh**. Esto permite que un mensaje de correo electrónico dirigido a **contact@mydomain.ovh** se reenvíe automáticamente a **john.smith@otherdomain.ovh**.
 
 ///
 
-/// Details | ¿Qué es un alias de correo?
+/// details | ¿Qué es un alias de correo?
 
 A diferencia de la redirección, la dirección de correo electrónico asociada al alias no es una dirección que se consulte, sino que se trata de una "máscara".
 
 Crear un alias para su dirección de correo le permite comunicar una dirección "máscara" a sus contactos, sin tener que comunicar su dirección personal al remitente. Una dirección de correo electrónico puede tener varios alias.
 
-Por ejemplo, su dirección de correo electrónico es **john.smith@mydomain.ovh** y su alias **information@mydomain.ovh**. A continuación, podrá comunicar a sus contactos la dirección **information@mydomain.ovh** y recibir sus emails en **john.smith@mydomain.ovh**, sin que el remitente tenga conocimiento de **john.smith@mydomain.ovh**.
+Por ejemplo: su dirección de correo electrónico es **john.smith@mydomain.ovh** y su alias **information@mydomain.ovh**. A continuación, podrá comunicar a sus contactos la dirección **information@mydomain.ovh** y recibir sus emails en **john.smith@mydomain.ovh**, sin que el remitente tenga conocimiento de **john.smith@mydomain.ovh**.
 
 ///
 
-/// Details | Redirección y alias en imágenes <a name="diagram"></a>
+/// details | Redirección y alias en imágenes <a name="diagram"></a>
 
 Haga clic en las fichas siguientes para obtener una explicación ilustrada del funcionamiento de los alias y redirecciones.
 
-- `From` significa la dirección del remitente
-- `To` significa la dirección del destinatario
-- `Redirect to` es la dirección de correo electrónico de redirección que se ha configurado.
+- `From`: Significa la dirección del remitente.
+- `To`: Significa la dirección del destinatario.
+- `Redirect to`: Es la dirección de correo electrónico de redirección que se ha configurado.
 
 > [!tabs]
 > **1. La redirección simple**
@@ -75,7 +75,7 @@ Haga clic en las fichas siguientes para obtener una explicación ilustrada del f
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Disponer de una solución de correo de OVHcloud previamente configurada, que incluya:
     - **MX Plan** ofrecido con nuestros [planes de hosting](/links/web/hosting) o incluido en un [alojamiento gratuito 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-hosted-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
@@ -135,32 +135,32 @@ Actualmente, solo los planes **MX plan** y **redirect** disponen de una interfaz
 ##### MX Plan / redirect <a name="redirect-manager-mxplan"></a>
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action} de la columna.
+1. Acceda a la sección `Web Cloud`{.action}.
 1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
+1. Seleccione el dominio correspondiente.
 
 En nuestro ejemplo, se trata de una **redirección con copia local** (consulte el [esquema 2](#diagram) al principio de esta guía). Si lo necesita, siga los pasos que se indican a continuación en la pestaña correspondiente a la tecnología webmail utilizada por su MX Plan:
 
 > [!tabs]
-> **MX Plan Roundcube / MX Plan Outlook Web App / redirect**
+> **MX Plan Roundcube / MX Plan Outlook Web App / Redirect**
 >>
->> Por defecto, se encuentra en la pestaña `Información general`{.action} de su MX Plan. Haga clic en la pestaña `Correo electrónico`{.action} y seleccione el botón `Gestión de las redirecciones`{.action} en el lado derecho.
+>> Por defecto, se encuentra en la pestaña `Información general`{.action} de su MX Plan. Haga clic en la pestaña `Correo electrónico`{.action} y seleccione el botón `Gestionar las redirecciones`{.action} en el lado derecho.
 >>
 >> ![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
 >>
->> Se mostrará una tabla con las redirecciones activas. A la derecha, haga clic en el botón `Añadir una redirección`{.action}.
+>> Se mostrará una tabla con las redirecciones activas. A la derecha, haga clic en el botón `Crear una redirección`{.action}.
 >>
 >> ![emails](images/mxplan-legacy-2.png){.thumbnail .w-640}
 >>
 >> En el formulario `Crear una redirección`, complete los siguientes elementos:
 >>
->> - **De la dirección** : Introduzca aquí la dirección de correo electrónico que quiera redirigir.
->> - **A la dirección** : Introduzca aquí la dirección de destino de su redirección. Puede ser una de sus direcciones de correo electrónico de OVHcloud o una dirección de correo electrónico externa.
->> - **Elija un modo de copia**: Elija si desea:
->>      - **Conservar una copia del correo en OVHcloud** : Recibir el correo en su dirección principal y la dirección de redirección (ver el [esquema 2](#diagram) al principio de esta guía).
->>      - **No conservar copia del correo** : Reenviar directamente a la dirección de redirección sin que la dirección principal lo reciba (ver el [esquema 1](#diagram) al principio de esta guía).
+>> - **De la dirección**: Introduzca aquí la dirección de correo electrónico que quiera redirigir.
+>> - **A la dirección**: Introduzca aquí la dirección de destino de su redirección. Puede ser una de sus direcciones de correo electrónico de OVHcloud o una dirección de correo electrónico externa.
+>> - **Seleccione un modo de copia**: Elija si desea:
+>>      - **Conservar una copia del correo en OVHcloud**: Recibir el correo en su dirección principal y la dirección de redirección (ver el [esquema 2](#diagram) al principio de esta guía).
+>>      - **No conservar copia del correo**: Reenviar directamente a la dirección de redirección sin que la dirección principal lo reciba (ver el [esquema 1](#diagram) al principio de esta guía).
 >>
->> Haga clic en `Validar`{.action} para confirmar la redirección.
+>> Haga clic en `Aceptar`{.action} para confirmar la redirección.
 >>
 >> ![emails](images/mxplan-legacy-3.png){.thumbnail .w-640}
 >>
@@ -178,13 +178,13 @@ En nuestro ejemplo, se trata de una **redirección con copia local** (consulte e
 >>
 >> En el formulario `Crear una redirección`, complete los siguientes elementos:
 >>
->> - **De la dirección** : Introduzca aquí la dirección de correo electrónico que quiera redirigir.
->> - **A la dirección** : Introduzca aquí la dirección de destino de su redirección. Puede ser una de sus direcciones de correo electrónico de OVHcloud o una dirección de correo electrónico externa.
->> - **Elija un modo de copia**: Elija si desea:
->>      - **Conservar una copia del correo en OVHcloud** : Recibir el correo en su dirección principal y la dirección de redirección (ver el [esquema 2](#diagram) al principio de esta guía).
->>      - **No conservar copia del correo** : Reenviar directamente a la dirección de redirección sin que la dirección principal lo reciba (ver el [esquema 1](#diagram) al principio de esta guía).
+>> - **De la dirección**: Introduzca aquí la dirección de correo electrónico que quiera redirigir.
+>> - **A la dirección**: Introduzca aquí la dirección de destino de su redirección. Puede ser una de sus direcciones de correo electrónico de OVHcloud o una dirección de correo electrónico externa.
+>> - **Seleccione un modo de copia**: Elija si desea:
+>>      - **Conservar una copia del correo en OVHcloud**: Recibir el correo en su dirección principal y la dirección de redirección (ver el [esquema 2](#diagram) al principio de esta guía).
+>>      - **No conservar copia del correo**: Reenviar directamente a la dirección de redirección sin que la dirección principal lo reciba (ver el [esquema 1](#diagram) al principio de esta guía).
 >>
->> Haga clic en `Validar`{.action} para confirmar la redirección.
+>> Haga clic en `Aceptar`{.action} para confirmar la redirección.
 >>
 >> ![emails](images/mxplan-legacy-3.png){.thumbnail .w-640}
 >>
@@ -208,9 +208,9 @@ La creación de una redirección se hace a través de reglas de bandeja de entra
 >
 > Este capítulo cubre los siguientes productos:
 >
-> - **MX Plan OWA.**
-> - **Exchange.**
-> - **Email Pro.**
+> - **MX Plan OWA**.
+> - **Exchange**.
+> - **Email Pro**.
 >
 
 Outlook Web App es una interfaz utilizada para nuestras ofertas **Exchange**, **Email Pro** y una parte de las cuentas **MX Plan**.
@@ -220,7 +220,7 @@ Desplácese por las fichas siguientes para configurar la redirección a través 
 > [!tabs]
 > **Etapa 1**
 >>
->> Una vez que se haya conectado a su dirección de correo electrónico a través del [webmail](/links/web/email), haga clic en el icono con forma de rueda dentada situado en la esquina superior derecha y seleccione `Options`{.action}.
+>> Una vez que se haya conectado a su dirección de correo electrónico a través del [webmail](/links/web/email), haga clic en el icono con forma de rueda dentada situado en la esquina superior derecha y seleccione `Opciones`{.action}.
 >>
 >> ![emails](images/emails-all-01.png){.thumbnail .w-640}
 >>
@@ -256,7 +256,7 @@ Desplácese por las fichas siguientes para configurar la redirección a través 
 >>
 > **Etapa 6**
 >>
->> A continuación, introduzca la dirección a la que quiere redirigir el correo electrónico delante de "**Redirigir el mensaje hacia..**" y haga clic en `Guardar`{.action}. Por último, haga clic en `OK`{.action} (icono de disquete) para finalizar la redirección.
+>> A continuación, introduzca la dirección a la que quiere redirigir el correo electrónico delante de "**Redirigir el mensaje hacia...**" y haga clic en `Guardar`{.action}. Por último, haga clic en `OK`{.action} (icono de disquete) para finalizar la redirección.
 >>
 >> ![emails](images/emails-all-06.png){.thumbnail .w-640}
 >>
@@ -275,7 +275,7 @@ Desplácese por las fichas siguientes para configurar la redirección a través 
 > Este capítulo se refiere a los siguientes productos:
 >
 > - **MX Plan** con la mención zimbra para el webmail.
-> - **Zimbra.**
+> - **Zimbra**.
 >
 
 Para redirigir los emails de su cuenta Zimbra hacia otra dirección de correo, vamos a aplicar una regla de transferencia.
@@ -304,16 +304,16 @@ Siga los pasos que se indican a continuación haciendo clic en las fichas para r
 >>
 >> - En primer lugar, haga clic en <u>Modo avanzado</u> en la parte superior derecha para aplicar esta regla.
 >> - Asigne un nombre al filtro en el cuadro `Nombre del filtro`.
->> - Deje el menú desplegable en `todas` en la frase " Si un mensaje entrante cumple ... estas condiciones ".
->> - En el primer menú desplegable de reglas, seleccione `A` (To), deje `contient` (contains) e introduzca la dirección de correo electrónico en la que ha iniciado sesión en el cuadro de la derecha.
->> - Bajo el epígrafe " Entonces " (Then), seleccione `Reenviar a ` (Forward to) en el menú desplegable e introduzca la dirección de correo electrónico de destino.
+>> - Deje el menú desplegable en `todas` en la frase "Si un mensaje entrante cumple ... estas condiciones".
+>> - En el primer menú desplegable de reglas, seleccione `A` (To), deje `contiene` (contains) e introduzca la dirección de correo electrónico en la que ha iniciado sesión en el cuadro de la derecha.
+>> - Bajo el epígrafe "Entonces" (Then), seleccione `Reenviar a` (Forward to) en el menú desplegable e introduzca la dirección de correo electrónico de destino.
 >> - Haga clic en `+ Añadir acción`{.action} (Add an action) más abajo y seleccione `Mover a recepción` (Keep in Inbox).
 >> - Haga clic en `Guardar`{.action} en la ventana de su filtro y también en la ventana de configuración.
 >>
 >> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-640}
 >>
 
-Para más información sobre el uso del webmail Zimbra, consulte nuestra guía "[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ".
+Para más información sobre el uso del webmail Zimbra, consulte nuestra guía "[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 
 #### Eliminar una redirección <a name="redirect-delete"></a>
 
@@ -322,7 +322,7 @@ Para más información sobre el uso del webmail Zimbra, consulte nuestra guía "
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
 1. Acceda a la sección `Web Cloud`{.action} de la columna.
 1. Haga clic en `MX Plan`{.action}.
-1. Seleccione el dominio.
+1. Seleccione el dominio correspondiente.
 
 A continuación, abra la pestaña correspondiente a la tecnología de correo que utiliza su servicio MX Plan:
 
@@ -330,7 +330,7 @@ A continuación, abra la pestaña correspondiente a la tecnología de correo que
 > **MX Plan Roundcube / MX Plan OWA / redirect**
 >>
 >> - Por defecto, se encuentra en la pestaña `Información general`{.action} de su MX Plan.
->> - Haga clic en la pestaña `Emails`{.action} y seleccione el botón `Gestión de las redirecciones`{.action}.
+>> - Haga clic en la pestaña `Emails`{.action} y seleccione el botón `Gestiónar las redirecciones`{.action}.
 >>
 >>    ![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
 >>
@@ -407,7 +407,7 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sec
 
 - **Exchange**: Acceda a la sección `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo electrónico`{.action}.
 
-- **Email Pro** : Acceda a la sección `Email Pro`{.action} de, seleccione la plataforma correspondiente y abra la pestaña `Cuentas de correo electrónico`{.action}.
+- **Email Pro**: Acceda a la sección `Email Pro`{.action} de, seleccione la plataforma correspondiente y abra la pestaña `Cuentas de correo electrónico`{.action}.
 
 - **MX Plan**: Acceda a la sección `MX Plan`{.action}, seleccione la plataforma correspondiente y haga clic en la pestaña `Cuentas de correo`{.action}.
 
@@ -439,14 +439,14 @@ Para crear un alias en una cuenta MX Plan Roundcube, debe hacerlo de la misma ma
 #### Zimbra <a name="alias-mxplan-roundcube"></a>
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action} de la columna.
-1. Pulse `Zimbra Mail`{.action}.
+1. Acceda a la sección `Web Cloud`{.action}.
+1. Haga clic en `Zimbra Mail`{.action}.
 1. Haga clic en la pestaña `Cuentas de correo electrónico`{.action} del servicio Zimbra.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> - Haga clic en el botón `⁝` a la derecha de la cuenta de correo correspondiente.
+>> - Haga clic en el botón `⁝`{.action} a la derecha de la cuenta de correo correspondiente.
 >> - Haga clic en `Modificar`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
@@ -478,7 +478,7 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sec
 
 - **Exchange**: Acceda a la sección `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo electrónico`{.action}.
 
-- **Email Pro** : Acceda a la sección `Email Pro`{.action}, seleccione la plataforma correspondiente y abra la pestaña `Cuentas de correo electrónico`{.action}.
+- **Email Pro**: Acceda a la sección `Email Pro`{.action}, seleccione la plataforma correspondiente y abra la pestaña `Cuentas de correo electrónico`{.action}.
 
 - **MX Plan**: Acceda a la sección `MX Plan`{.action}, seleccione la plataforma correspondiente y haga clic en la pestaña `Cuentas de correo`{.action}.
 
@@ -506,14 +506,14 @@ Haga clic en el botón `...`{.action} a la derecha de la redirección correspond
 #### Zimbra <a name="alias-delete-zimbra"></a>
 
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
-1. Acceda a la sección `Web Cloud`{.action} de la columna.
-1. Pulse `Zimbra Mail`{.action}.
+1. Acceda a la sección `Web Cloud`{.action}.
+1. Haga clic en `Zimbra Mail`{.action}.
 1. Haga clic en la pestaña `Cuentas de correo electrónico`{.action} del servicio Zimbra.
 
 > [!tabs]
 > **Etapa 1**
 >>
->> - Haga clic en el botón `⁝` a la derecha de la cuenta de correo correspondiente.
+>> - Haga clic en el botón `⁝`{.action} a la derecha de la cuenta de correo correspondiente.
 >> - Haga clic en `Modificar`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
@@ -543,8 +543,8 @@ Haga clic en el botón `...`{.action} a la derecha de la redirección correspond
 
 [Primeros pasos con Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
-Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si necesita ayuda para el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras distintas [ofertas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

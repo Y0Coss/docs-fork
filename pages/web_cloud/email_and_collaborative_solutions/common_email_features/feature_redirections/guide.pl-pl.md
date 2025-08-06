@@ -19,7 +19,7 @@ W tym przewodniku znajdziesz różne informacje i pomoce dotyczące konfiguracji
 
 **Dowiedz się, jak zarządzać aliasami i przekierowaniami e-mail.**
 
-/// Details | Co to jest przekierowanie wiadomości e-mail?
+/// details | Co to jest przekierowanie wiadomości e-mail?
 
 Przekierowanie pozwala na zmianę pierwotnej podróży z jednego e-maila na jeden lub kilka innych adresów e-mail.
 
@@ -27,7 +27,7 @@ Na przykład chcesz, aby przy wysyłce wiadomości e-mail na adres **contact@myd
 
 ///
 
-/// Details | Co to jest alias e-mail?
+/// details | Co to jest alias e-mail?
 
 W przeciwieństwie do przekierowania, adres e-mail powiązany z aliasem nie jest adresem, który się z nim konsultuje, jest to "maska".
 
@@ -37,7 +37,7 @@ Na przykład adres e-mail to **john.smith@mydomain.ovh** oraz alias **informatio
 
 ///
 
-/// Details | Przekierowanie i alias <a name="diagram"></a>
+/// details | Przekierowanie i alias <a name="diagram"></a>
 
 Kliknij poniższe zakładki, aby uzyskać ilustrowane wyjaśnienia dotyczące działania aliasów i przekierowań.
 
@@ -447,7 +447,7 @@ Aby utworzyć alias dla konta e-mail MX Plan Roundcube, należy go utworzyć w t
 > [!tabs]
 > **Etap 1**
 >>
->> - Kliknij przycisk `⁝` prawej stronie wybranego konta e-mail.
+>> - Kliknij przycisk `⁝`{.action} prawej stronie wybranego konta e-mail.
 >> - Kliknij na `Zmień`{.action}.
 >>
 >> ![Zimbra](images/Zimbra_alias01.png){.thumbnail .w-640}
@@ -514,7 +514,7 @@ Kliknij przycisk`...`{.action} po prawej stronie wybranego przekierowania, a nas
 > [!tabs]
 > **Etap 1**
 >>
->> - Kliknij przycisk `⁝` prawej stronie wybranego konta e-mail.
+>> - Kliknij przycisk `⁝`{.action} prawej stronie wybranego konta e-mail.
 >> - Kliknij na `Zmień`{.action}.
 >>
 >> ![Zimbra](images/Zimbra_alias01.png){.thumbnail .w-640}

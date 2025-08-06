@@ -18,7 +18,7 @@ Retrouvez dans ce guide différentes informations et aides concernant la configu
 
 **Découvrez comment gérer vos alias et redirections e-mail.**
 
-/// Details | Qu'est-ce qu'une redirection e-mail ?
+/// details | Qu'est-ce qu'une redirection e-mail ?
 
 Une redirection permet de modifier le trajet initial d'un e-mail vers une ou plusieurs autres adresses e-mail.
 
@@ -26,7 +26,7 @@ Par exemple : vous souhaitez qu'à la réception d'un e-mail sur **contact@mydom
 
 ///
 
-/// Details | Qu'est-ce qu'un alias e-mail ?
+/// details | Qu'est-ce qu'un alias e-mail ?
 
 Contrairement à la redirection, l'adresse e-mail associée à l'alias n'est pas une adresse que l'on consulte, il s'agit d'un « masque ».
 
@@ -36,7 +36,7 @@ Par exemple : votre adresse e-mail est **john.smith@mydomain.ovh** et votre alia
 
 ///
 
-/// Details | Redirection et alias en image <a name="diagram"></a>
+/// details | Redirection et alias en image <a name="diagram"></a>
 
 Cliquez sur les onglets suivants pour des explications illustrées sur le fonctionnement des alias et redirections.
 

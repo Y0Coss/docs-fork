@@ -18,7 +18,7 @@ In questa guida ti forniamo informazioni e suggerimenti sulla configurazione dei
 
 **Come gestire gli alias e i reindirizzamenti email**
 
-/// Details | Che cos’è un reindirizzamento email?
+/// details | Che cos’è un reindirizzamento email?
 
 Un reindirizzamento permette di modificare il percorso iniziale di un'email verso uno o più indirizzi email.
 
@@ -26,7 +26,7 @@ Ad esempio, desiderate che all'invio di un'email su **contact@mydomain.ovh**, qu
 
 ///
 
-/// Details | Cos'è un alias email?
+/// details | Cos'è un alias email?
 
 Diversamente dal reindirizzamento, l'indirizzo email associato all'alias non è un indirizzo consultabile ma è una "maschera".
 
@@ -36,7 +36,7 @@ Ad esempio, il tuo indirizzo email è **john.smith@mydomain.ovh** e il tuo alias
 
 ///
 
-/// Details | Reindirizzamento e alias in immagine <a name="diagram"></a>
+/// details | Reindirizzamento e alias in immagine <a name="diagram"></a>
 
 Fare clic sulle schede seguenti per illustrare il funzionamento di alias e reindirizzamenti.
 
@@ -446,7 +446,7 @@ Per creare un alias su un account email MX Plan Roundcube, è necessario farlo a
 > [!tabs]
 > **Step 1**
 >>
->> - clicca sul pulsante `⁝` in corrispondenza dell’account email interessato.
+>> - clicca sul pulsante `⁝`{.action} in corrispondenza dell’account email interessato.
 >> - Clicca su `Modifica`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
@@ -513,7 +513,7 @@ Clicca sul pulsante `...`{.action} a destra del reindirizzamento in questione e 
 > [!tabs]
 > **Step 1**
 >>
->> - clicca sul pulsante `⁝` in corrispondenza dell’account email interessato.
+>> - clicca sul pulsante `⁝`{.action} in corrispondenza dell’account email interessato.
 >> - Clicca su `Modifica`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}

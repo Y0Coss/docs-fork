@@ -18,7 +18,7 @@ In dieser Anleitung finden Sie Informationen und Instruktionen zur Konfiguration
 
 **Diese Anleitung erklärt, wie Sie E-Mail Aliase und Weiterleitungen konfigurieren.**
 
-/// Details | Was ist eine E-Mail-Weiterleitung?
+/// details | Was ist eine E-Mail-Weiterleitung?
 
 Mit einer Weiterleitung können Sie den ursprünglichen Weg einer E-Mail zu einer oder mehreren anderen E-Mail-Adressen ändern.
 
@@ -26,7 +26,7 @@ Zum Beispiel: Sie möchten, dass eine E-Mail, die Sie auf **kontakt@mydomain.ovh
 
 ///
 
-/// Details | Was ist ein E-Mail-Alias?
+/// details | Was ist ein E-Mail-Alias?
 
 Im Gegensatz zur Weiterleitung handelt es sich bei der dem Alias zugeordneten E-Mail-Adresse nicht um eine angezeigte Adresse, sondern um eine „Maske“.
 
@@ -36,7 +36,7 @@ Zum Beispiel: Ihre E-Mail-Adresse ist **john.smith@mydomain.ovh** und Ihr Alias 
 
 ///
 
-/// Details | Weiterleitung und Alias im Bild <a name="diagram"></a>
+/// details | Weiterleitung und Alias im Bild <a name="diagram"></a>
 
 Klicken Sie auf die Tabs, um die Funktionsweise von Aliasnamen und Weiterleitungen anzuzeigen.
 
