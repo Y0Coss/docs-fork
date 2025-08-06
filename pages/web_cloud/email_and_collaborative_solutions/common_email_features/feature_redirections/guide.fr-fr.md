@@ -75,7 +75,7 @@ Cliquez sur les onglets suivants pour des explications illustrées sur le foncti
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
     - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-hosted-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
@@ -208,9 +208,9 @@ La création d'une redirection se fait par le biais de règles de boîte de réc
 >
 > Ce chapitre concerne les offres suivantes :
 >
-> - **MX Plan OWA.**
-> - **Exchange.**
-> - **E-mail Pro.**
+> - **MX Plan OWA**.
+> - **Exchange**.
+> - **E-mail Pro**.
 >
 
 Outlook Web App est une interface utilisée pour nos offres **Exchange**, **E-mail Pro** et une partie des comptes **MX Plan**.
@@ -275,7 +275,7 @@ Parcourez les onglets ci-dessous pour mettre en place votre redirection via Outl
 > Ce chapitre concerne les offres suivantes:
 >
 > - **MX Plan** ayant la mention zimbra pour le webmail.
-> - **Zimbra.**
+> - **Zimbra**.
 >
 
 Pour rediriger les e-mails de votre compte Zimbra vers une autre adresse e-mail, nous allons appliquer une règle de transfert.
@@ -484,7 +484,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée. Cliquez ensuite sur `Configurer les alias`{.action} (ou `Gérer les alias`{.action}).
 
-Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le menu de gestion des alias. Enfin, cliquez sur `Supprimer l'alias`{.action}
+Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le menu de gestion des alias. Enfin, cliquez sur `Supprimer l'alias`{.action}.
 
 ![emails](images/email-alias04.png){.thumbnail .w-640}
 

@@ -75,7 +75,7 @@ Klicken Sie auf die Tabs, um die Funktionsweise von Aliasnamen und Weiterleitung
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine vorkonfigurierte OVHcloud E-Mail-Lösung, darunter:
     - **MX Plan** mit unseren [Webhosting Angeboten](/links/web/hosting) oder in einem [100M Gratis-Hosting](/links/web/domains-free-hosting) inklusive.
-    - [Exchange](/links/web/emails).
+    - [Exchange](/links/web/emails-hosted-exchange).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
@@ -208,9 +208,9 @@ Die Erstellung einer Weiterleitung erfolgt über Posteingangsregeln, im Webmail 
 >
 > Dieses Kapitel betrifft die folgenden Angebote:
 >
-> - **MX PLAN OWA.**
-> - **Exchange.**
-> - **E-Mail Pro.**
+> - **MX PLAN OWA**.
+> - **Exchange**.
+> - **E-Mail Pro**.
 >
 
 Outlook Web App ist ein Interface, das für unsere Angebote **Exchange**, **E-Mail Pro** und einen Teil der Accounts **MX Plan** verwendet wird.
@@ -275,7 +275,7 @@ Durchsuchen Sie die folgenden Registerkarten, um Ihre Weiterleitung über Outloo
 > Dieses Kapitel betrifft die folgenden Angebote:
 >
 > - **MX Plan** mit Zimbra-Kennzeichnung für Webmail.
-> - **Zimbra.**
+> - **Zimbra**.
 >
 
 Um die E-Mails Ihres Zimbra-Accounts an eine andere E-Mail-Adresse weiterzuleiten, wenden wir eine Transferregel an.

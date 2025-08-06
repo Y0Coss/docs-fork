@@ -36,12 +36,12 @@ For example, your email address is **john.smith@mydomain.ovh** and your alias is
 
 ///
 
-/// details | Redirection and alias in comparison <a name="diagram"></a>
+/// details | Redirection and alias in pictures <a name="diagram"></a>
 
 Click on the tabs below for an illustrated explanation of how aliases and redirections work.
 
-- `From` is the sender's address
-- `To` is the address of the recipient
+- `From` is the sender's address.
+- `To` is the address of the recipient.
 - `Redirect to` refers to the redirection email address that has been configured.
 
 > [!tabs]
@@ -72,24 +72,24 @@ Click on the tabs below for an illustrated explanation of how aliases and redire
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](/links/manager).
 - A preconfigured OVHcloud email solution:
-    - **MX Plan** (available with a [web hosting plan](/links/web/hosting), a [100M free hosting](/links/web/domains-free-hosting), or ordered separately)
-    - [Exchange](/links/web/emails-hosted-exchange)
-    - [Email Pro](/links/web/email-pro)
+    - **MX Plan** available with a [web hosting plan](/links/web/hosting), or included in a [100M free hosting](/links/web/domains-free-hosting).
+    - [Exchange](/links/web/emails-hosted-exchange).
+    - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
 
 ## Instructions
 
 This guide covers all of our email solutions. Depending on the solution, you can manage aliases and redirections from the OVHcloud Control Panel, or via webmail. For clarity, we mention the types of email solutions concerned in each chapter of this guide. Here are the different types of OVHcloud email solutions:
 
-- **MX Plan Roundcube** : Corresponds to the MX Plan solution using Roundcube webmail.
+- **MX Plan Roundcube**: Corresponds to the MX Plan solution using Roundcube webmail.
 - **MX Plan Zimbra**: Corresponds to the MX Plan solution using Zimbra webmail.
-- **MX Plan OWA** : Corresponds to the MX Plan solution using the Outlook Web App (OWA) webmail.
+- **MX Plan OWA**: Corresponds to the MX Plan solution using the Outlook Web App (OWA) webmail.
 - **Exchange**: Applies to **Hosted**, **Private** and **Dedicated** Exchange solutions using the Outlook Web App (OWA) webmail.
 - **Email Pro**: Exchange-based email solution using the Outlook Web App (OWA) webmail.
 - **Zimbra**: Dedicated solution using Zimbra webmail.
-- **redirect**: This free solution is automatically available if you have a domain name in your Control Panel without an attached email solution. You can use it to create email redirections.
+- **Redirect**: This free solution is automatically available if you have a domain name in your Control Panel without an attached email solution. You can use it to create email redirections.
 
 > [!primary]
 >
@@ -154,9 +154,9 @@ In our example, this is a **redirection with a local copy** (see [diagram 2](#di
 >>
 >> In the form `Create a redirection`, enter the following information:
 >>
->> - **From address** : Enter the email address you would like to redirect.
+>> - **From address**: Enter the email address you would like to redirect.
 >> - **To the address**: Enter the destination address for your redirection here. This can be one of your OVHcloud email addresses, or an external email address.
->> - **Choose a copy mode** : Choose if you want to:
+>> - **Choose a copy mode**: Choose if you want to:
 >>      - **Keep a copy of the email with OVHcloud**: Receive the email on your main address as well as the redirection address (see [diagram 2](#diagram) at the beginning of this guide).
 >>      - **Do not store a copy of the email**: Send directly to the redirection address without the primary address receiving it (see [diagram 1](#diagram) at the beginning of this guide).
 >>
@@ -176,11 +176,11 @@ In our example, this is a **redirection with a local copy** (see [diagram 2](#di
 >>
 >> ![emails](images/mxplan-zimbra-1.png){.thumbnail .w-640}
 >>
->> In the form `Create a redirection`, enter the following information:
+>> In the `Create a redirection` form, enter the following information:
 >>
->> - **From address** : Enter the email address you would like to redirect.
+>> - **From address**: Enter the email address you would like to redirect.
 >> - **To the address**: Enter the destination address for your redirection here. This can be one of your OVHcloud email addresses, or an external email address.
->> - **Choose a copy mode** : Choose if you want to:
+>> - **Choose a copy mode**: Choose if you want to:
 >>      - **Keep a copy of the email with OVHcloud**: Receive the email on your main address as well as the redirection address (see [diagram 2](#diagram) at the beginning of this guide).
 >>      - **Do not store a copy of the email**: Send directly to the redirection address without the primary address receiving it (see [diagram 1](#diagram) at the beginning of this guide).
 >>
@@ -200,7 +200,7 @@ Go to [webmail](/links/web/email). Enter **the email address** and the **passwor
 
 ![emails](images/webmail.png){.thumbnail}
 
-You can create a redirection using inbox rules, also called filters in webmail. These rules, which are applied when an email is received, allow an incoming email to be forwarded or redirected.
+You can create a redirection using inbox rules, also called "filters" in webmail. These rules, which are applied when an email is received, allow an incoming email to be forwarded or redirected.
 
 ##### Outlook Web App (OWA) <a name="redirect-webmail-owa"></a>
 
@@ -208,9 +208,9 @@ You can create a redirection using inbox rules, also called filters in webmail. 
 >
 > This chapter covers the following offers:
 >
-> - **MX Plan OWA.**
-> - **Exchange.**
-> - **Email Pro.**
+> - **MX Plan OWA**.
+> - **Exchange**.
+> - **Email Pro**.
 >
 
 Outlook Web App is an interface used for our **Exchange**, **Email Pro** offers, and some **MX Plan** accounts.
@@ -234,7 +234,7 @@ Browse the tabs below to set up your redirection via Outlook Web App:
 >>
 > **Step 3**
 >>
->> Once you have opened the window for managing **Inbox rules**, click on the icon `+`{.action} in the top left-hand corner.
+>> Once you have opened the window for managing **Inbox rules**, click the `+`{.action} icon in the top left-hand corner.
 >>
 >> ![emails](images/emails-all-03.png){.thumbnail .w-640}
 >>
@@ -256,14 +256,14 @@ Browse the tabs below to set up your redirection via Outlook Web App:
 >>
 > **Step 6**
 >>
->> Then enter the email address you would like to redirect the email to in “**Redirect the email to...**”, then click on `Save`{.action}. Finally, click `OK`{.action} (floppy disk icon) to complete your redirection.
+>> Then enter the email address you would like to redirect the email to in "**Redirect the email to...**", then click `Save`{.action}. Finally, click `OK`{.action} (floppy disk icon) to complete your redirection.
 >>
 >> ![emails](images/emails-all-06.png){.thumbnail .w-640}
 >>
 
 > [!primary]
 >
-> To apply a simple **redirection** (see [diagram 1](#diagram) at the beginning of this guide), add an additional rule to your **redirection with a local copy** from this window. Click `Add an action`{.action} (box 1), then `Move, copy or delete`{.action} , then click `delete message`{.action}. This rule moves the message directly to the trash, after redirecting the message to the redirection address.
+> To apply a **simple redirection** (see [diagram 1](#diagram) at the beginning of this guide), add an additional rule to your **redirection with a local copy** from this window. Click `Add an action`{.action} (box 1), then `Move, copy or delete`{.action}, then click `delete message`{.action}. This rule moves the message directly to the trash, after redirecting the message to the redirection address.
 >
 >![emails](images/emails-all-07.png){.thumbnail .w-640}
 >
@@ -275,7 +275,7 @@ Browse the tabs below to set up your redirection via Outlook Web App:
 > This chapter covers the following offers:
 >
 > - **MX Plan** with zimbra for webmail.
-> - **Zimbra.**
+> - **Zimbra**.
 >
 
 To redirect emails from your Zimbra account to another email address, we will apply a transfer rule.
@@ -304,16 +304,16 @@ Follow the steps below by clicking on the tabs to set up your redirection:
 >>
 >> - First click <u>Advanced Mode</u> in the top right-hand corner to set up this rule.
 >> - Enter a name for your filter in the `Filter name` box.
->> - Leave the dropdown menu on `all` in the sentence “If an incoming message meets ... of these conditions”.
+>> - Leave the dropdown menu on `all` in the sentence "If an incoming message meets ... of these conditions".
 >> - In the first dropdown menu of the rules, choose `To`, leave `contains`, then enter the email address you are logged in to in the box to the right.
->> - Under “Then”, select `Forward to' from the drop-down menu and enter the destination email address.
->> - Click `+ Add an action`{.action} (Add an action) below, then select `Move to receive folder` (Keep in Inbox).
+>> - Under "Then", select `Forward to` from the drop-down menu and enter the destination email address.
+>> - Click `+ Add an action`{.action} below, then select `Move to receive folder` (Keep in Inbox).
 >> - Click `Save`{.action} from your filter window and also from the settings window.
 >>
 >> ![zimbra](images/zimbra_redirection03.png){.thumbnail .w-640}
 >>
 
-For more details on using Zimbra webmail, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+For more details on using Zimbra webmail, please read our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
 #### Delete a redirection <a name="redirect-delete"></a>
 
@@ -330,7 +330,7 @@ Select the tab below for the email technology used by your MX Plan service:
 > **MX Plan Roundcube / MX Plan OWA / redirect**
 >>
 >> - By default, you are in the `General information`{.action} tab of your MX Plan.
->> - Click on the `Emails`{.action} tab, then on the right-hand side on the `Manage redirections`{.action} button.
+>> - Click the `Emails`{.action} tab, then on the right-hand side the `Manage redirections`{.action} button.
 >>
 >>    ![emails](images/mxplan-legacy-1.png){.thumbnail .w-640}
 >>
@@ -341,8 +341,8 @@ Select the tab below for the email technology used by your MX Plan service:
 > **MX Plan Zimbra**
 >>
 >> - By default, you are in the `General information`{.action} tab of your MX Plan.
->> - Click on the `Redirections`{.action} tab.
->> - Click `...`{.action}, to the right of the redirection concerned, then `Delete redirection`{.action}.
+>> - Click the `Redirections`{.action} tab.
+>> - Click on `...`{.action}, to the right of the redirection concerned, then `Delete redirection`{.action}.
 >>
 >>    ![emails](images/mxplan-redirect-delete02.png){.thumbnail .w-640}
 >>
@@ -354,7 +354,7 @@ Go to [webmail](/links/web/email). Enter **the email address** and the **passwor
 > [!tabs]
 > **Step 1**
 >>
->> Once you have logged in to the OWA webmail interface, click on the cogwheel icon in the top right-hand corner, then `Options`{.action}.
+>> Once you have logged in to the OWA webmail interface, click the cogwheel icon in the top right-hand corner, then `Options`{.action}.
 >>
 >> ![emails](images/emails-all-01.png){.thumbnail .w-640}
 >>
@@ -399,17 +399,17 @@ Go to [webmail](/links/web/email). Enter **the email address** and the **passwor
 
 ### Create an alias <a name="alias"></a>
 
-Creating an alias for your email address allows you to provide a “mask” address to your contacts, without having to provide your personal email address to the sender.
+Creating an alias for your email address allows you to provide a "mask" address to your contacts, without having to provide your personal email address to the sender.
 
 #### Exchange / Email Pro / MX Plan <a name="alias-exchange-emp-mxplan"></a>
 
 Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud` section. Then choose the menu according to your email solution:
 
-- **Exchange**: Go to the `Microsoft`{.action} section, click `Exchange`{.action} and select the platform concerned. Click on the `Email accounts`{.action} tab.
+- **Exchange**: Go to the `Microsoft`{.action} section, click `Exchange`{.action} and select the platform concerned. Click the `Email accounts`{.action} tab.
 
-- **Email Pro**: Go to the `Email Pro`{.action} section, select the platform concerned, then click on the `Email accounts`{.action} tab.
+- **Email Pro**: Go to the `Email Pro`{.action} section, select the platform concerned, then click the `Email accounts`{.action} tab.
 
-- **MX Plan**: Go to the `MX Plan`{.action} section, select the platform concerned, then click on the `Email accounts`{.action} tab.
+- **MX Plan**: Go to the `MX Plan`{.action} section, select the platform concerned, then click the `Email accounts`{.action} tab.
 
 To add an alias to your email account, follow the steps described by clicking on each tab below:
 
@@ -428,32 +428,32 @@ To add an alias to your email account, follow the steps described by clicking on
 >>
 > **Step 3**
 >>
->> Click `Add an alias`{.action} , then enter the address you have chosen for your alias and confirm your choice.
+>> Click `Add an alias`{.action}, then enter the address you have chosen for your alias and confirm your choice.
 >>
 >> ![emails](images/email-alias03.png){.thumbnail .w-640}
 
 #### MX Plan Roundcube <a name="alias-mxplan-roundcube"></a>
 
-To create an alias on an MX Plan Roundcube email account, you must do it the same way as a redirection. Simply determine an email address that does not exist on your domain name and point to an existing address. Follow the [MX Plan / MX redirect](#redirect-manager-mxplan) chapter in the “Create a redirection” section of this guide.
+To create an alias on an MX Plan Roundcube email account, you must do it the same way as a redirection. Simply determine an email address that does not exist on your domain name and point to an existing address. Follow the [MX Plan / MX redirect](#redirect-manager-mxplan) chapter in the "Create a redirection" section of this guide.
 
 #### Zimbra <a name="alias-mxplan-roundcube"></a>
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 1. Go to the `Web Cloud`{.action} section.
 1. Click `Zimbra Mail`{.action}.
-1. Click on the `Email accounts`{.action} tab of your Zimbra service.
+1. Click the `Email accounts`{.action} tab of your Zimbra service.
 
 > [!tabs]
 > **Step 1**
 >>
->> - Click the `⁝` button to the right of the email account concerned.
+>> - Click the `⁝`{.action} button to the right of the email account concerned.
 >> - Click `Modify`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
->> The window for configuring your email account will open. Click on the `Alias`{.action} tab above.
+>> The window for configuring your email account will open. Click the `Alias`{.action} tab above.
 >>
 >> ![zimbra](images/zimbra_alias02.png){.thumbnail .w-640}
 >>
@@ -484,7 +484,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud
 
 In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the email address concerned. Then click `Configure aliases`{.action} (or `Manage aliases`{.action}).
 
-Click the `...`{.action} button to the right of the alias concerned, in the alias management menu. Finally, click `Delete alias`{.action}
+Click the `...`{.action} button to the right of the alias concerned, in the alias management menu. Finally, click `Delete alias`{.action}.
 
 ![emails](images/email-alias04.png){.thumbnail .w-640}
 
@@ -508,19 +508,19 @@ Click the `...`{.action} button to the right of the redirection concerned, then 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 1. Go to the `Web Cloud`{.action} section.
 1. Click `Zimbra Mail`{.action}.
-1. Click on the `Email accounts`{.action} tab of your Zimbra service.
+1. Click the `Email accounts`{.action} tab of your Zimbra service.
 
 > [!tabs]
 > **Step 1**
 >>
->> - Click the `⁝` button to the right of the email account concerned.
+>> - Click the `⁝`{.action} button to the right of the email account concerned.
 >> - Click `Modify`{.action}.
 >>
 >> ![zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
->> The window for configuring your email account will open. Click on the `Alias`{.action} tab above.
+>> The window for configuring your email account will open. Click the `Alias`{.action} tab above.
 >>
 >> ![zimbra](images/zimbra_alias02.png){.thumbnail .w-640}
 >>
