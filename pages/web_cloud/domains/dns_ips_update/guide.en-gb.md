@@ -50,7 +50,7 @@ For more information, please read our guide on [Customizing a domain name’s DN
 2. Replace it with the new IP (see table below).
 3. [Update your GLUE records](/pages/web_cloud/domains/glue_registry) if you have configured one in your client interface.
 
-### IP mapping table
+### IP address mapping table
 
 | Hostname     | Old IPv4   | New IPv4   | Old IPv6       | New IPv6         |
 |:---------------|:----------------|:---------------|:---------------------|:----------------------------|
