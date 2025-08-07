@@ -42,7 +42,7 @@ Pour plus d'informations, consultez notre guide « [Personnaliser les serveurs D
 
 > [!warning]
 >
-> L’utilisation prolongée des anciennes adresses IP après cette date provoquera l’échec de la résolution DNS pour les noms de domaine mal configurés.
+> L’utilisation des anciennes adresses IP après cette date provoquera l’échec de la résolution DNS pour les noms de domaine dont la configuration n'a pas été mise à jour.
 
 ### Que faire si je suis concerné ?
 
