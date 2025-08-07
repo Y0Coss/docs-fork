@@ -23,15 +23,11 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
+| Virtualization | VM management via vSphere, vCenter, vMotion, and support for VMware standard formats | OVA, OVF | **Inbound** : import VMs, disks, snapshots via vSphere interface or any specialized tools (e.g. Veeam, Zerto, etc...) <br>**Oubound** : export VMs, disks via vSphere, and reuse on any VMware or compatible environment. Specialized tools can be used (e.g. Veeam, Zerto, etc.) | [Connect to the vSphere web interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connection)<br<br>[Deploying a virtual machine](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deployment_of_a_virtual machine)<br><br>[How to connect an ISO image to a VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_connect_an_iso_image_to_a_vm) <br>[br>[Create a cluster and enable EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc) |
 | --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
 | --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
 
 
-
-
-|Migration model|Available documentation|
-|---|---|
-|**Inbound migration**:<br>- Sign up for an Hosted Private Cloud project<br>-Order the appropriate number of hosts and datastores on the project to achieve capacity comparable to the original infrastructure.<br>-Migrate via a specialized tool (e.g. Veeam, Zerto...)<br><br>**Outbound migration**:<br>- Set up a vsphere hypervisor in the target environment<br>- Plan the capacities of the target environment in a manner comparable to the original environment<br>- Migrate via a specialized tool (e.g. Veeam, Zerto...)|[Standard vSphere documentation](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-CEFF6D89-8C19-4143-8C26-4B6D6734D2CB.html) applies.<br><br>[Deploying an OVF Linux, Windows Server and Windows SQL Server template](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)<br><br>[Deploying a virtual machine with vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deploiement_d_une_machine_virtuelle)<br><br>[Create a cluster and enable EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc)(FR)|
 
 ## 2. OVHcloud Implementations
 
