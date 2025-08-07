@@ -48,7 +48,7 @@ Pour plus d'informations, consultez notre guide « [Personnaliser les serveurs D
 
 1. Identifiez si vous utilisez encore une ancienne adresse IP dans votre zone DNS.
 2. **Remplacez-la** par la nouvelle IP (voir tableau ci-dessous).
-3. **Mettez à jour vos GLUE records** si vous en avez configuré dans votre interface client.
+3. [Mettez à jour vos GLUE records](/pages/web_cloud/domains/glue_registry) si vous en avez configuré dans votre interface client.
 
 ### Table des correspondances IP
 
