@@ -23,14 +23,10 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| Virtualisation | Gestion des VM via vSphere, vCenter, vMotion, et support de formats standards VMware | OVA, OVF | **Entrante** : import de VM, disques, snapshots via l’interface vSphere ou les outils spécialisés (exemple Veeam, Zerto, etc …)  <br>**Sortante** : export des VM, disques via vSphere, et réutilisation sur tout environnement VMware ou compatible. Des outils spécialisés peuvent être utilisés (exemple Veeam, Zerto, etc …) | [Se connecter à l’interface web vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion)<br><br>[Déploiement d’une machine virtuelle](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deploiement_d_une_machine_virtuelle)<br><br>[Comment connecter une image ISO à une VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_connect_an_iso_image_to_a_vm) <br><br>[Création de cluster et activation EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc) |
+| Gestion des utilisateurs et droits | Création, gestion et suppression des utilisateurs, gestion des permissions et rôles via l’interface utilisateur  | JSON, CSV (exports)  | **Entrante** : import manuel ou automatisé des utilisateurs et des /permissions <br>**Sortante** : export des listes d’utilisateurs, permissions et adaptation sur la cible.  | [IAM pour VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started) |
+| Gestion des réseaux virtuels  | Configuration réseau via NSX, gestion des VLAN, routage, firewall, sécurité des réseaux via API ou UI | YAML, JSON, scripts | **Entrante** : définition des réseaux, VLAN, règles firewall <br>**Sortante** : export des configurations réseau à travers les API VMWare disponibles  | [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) |
 
-
-
-|Modèle de migration|Documentation disponible|
-|---|---|
-|**Migration entrante**:<br>- Souscrivez un projet Hosted Private Cloud<br>-Commandez le nombre approprié d'hôtes et de datastores sur le projet pour obtenir une capacité comparable à celle de l'infrastructure d'origine.<br>-Migrez à l'aide d'un outil spécialisé (Veeam, Zerto...)<br><br>**Migration sortante**: <br> -Configurez un hyperviseur vSphere dans l'environnement cible<br>- Planifiez les capacités de l'environnement cible comparativement à l'environnement d'origine<br>- Migrez via un outil spécialisé (par exemple Veeam, Zerto...)|La [Documentation vSphere standard](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-CEFF6D89-8C19-4143-8C26-4B6D6734D2CB.html) s'applique.<br><br>[Déployer un template OVF Linux, Windows Server et Windows SQL Server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)<br><br>[Déploiement d'une machine virtuelle avec vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deploiement_d_une_machine_virtuelle)<br><br>[Création de cluster et activation EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc)|
 
 ### 2. Implémentations OVHcloud
 
@@ -53,13 +49,8 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 ### Liste des architectures
 
-Les informations relatives à l'architecture (serveurs, stockage, etc.) sont centralisées et visibles dans la console vSphere.
+xxxxxxxxx
 
-### Outils de migration disponibles
-
-[Importer/exporter des machnes virtuelles](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool).
-
-[Convertir une machine physique/virtuelle en une infrastructure Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vcenter_converter).
 
 ### Services Partenaires
 
