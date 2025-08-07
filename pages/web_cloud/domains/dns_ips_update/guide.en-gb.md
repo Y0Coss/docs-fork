@@ -42,7 +42,7 @@ For more information, please read our guide on [Customizing a domain name’s DN
 
 > [!warning]
 >
-> Prolonged use of old IP addresses after this date will cause DNS resolution to fail for misconfigured domain names.
+> Using old IP addresses after this date will cause DNS resolution failure for domain names whose configuration has not been updated.
 
 ### What do I do if I am affected?
 
