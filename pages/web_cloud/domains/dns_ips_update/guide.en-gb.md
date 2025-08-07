@@ -16,7 +16,7 @@ This guide explains the IP addresses changes affecting part of our DNS servers h
 
 ## Instructions
 
-### Who is affected?
+### Who is concerned?
 
 This change can impact customers who:
 
