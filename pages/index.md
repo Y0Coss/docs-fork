@@ -1346,6 +1346,7 @@
             + [DNS servers](web-cloud-domains-dns-dns-servers)
                 + [Everything you need to know about DNS servers](web_cloud/domains/dns_server_general_information)
                 + [Editing the DNS servers for an OVHcloud domain name](web_cloud/domains/dns_server_edit)
+                + [Changing the IP addresses of OVHcloud DNS servers](web_cloud/domains/dns_ips_update)
             + [DNS zone](web-cloud-domains-dns-dns-zone)
                 + [Everything you need to know about DNS zone](web_cloud/domains/dns_zone_general_information)
                 + [Creating an OVHcloud DNS zone for a domain name](web_cloud/domains/dns_zone_create)

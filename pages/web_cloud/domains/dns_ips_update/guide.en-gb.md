@@ -1,59 +1,59 @@
 ---
-title: "Changement des adresses IP des serveurs DNS OVHcloud"
-excerpt: "Découvrez la liste des nouvelles adresses IP des serveurs DNS OVHcloud"
+title: "Changing the IP addresses of OVHcloud DNS servers"
+excerpt: "Discover the list of new IP addresses for OVHcloud DNS servers"
 updated: 2025-08-07
 ---
 
-## Objectif
+## Objective
 
-Ce guide présente les changements d’adresses IP affectant une partie de nos serveurs DNS hébergés en Europe, applicables à partir d'**août 2025**.
+This guide explains the IP address changes affecting part of our DNS servers hosted in Europe, which will apply from **August 2025**.
 
-**Découvrez la liste des nouvelles adresses IP des serveurs DNS.**
+**See the list of new DNS server IP addresses.**
 
-## Prérequis
+## Requirements
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](/links/manager).
+- You must have access to manage the domain name concerned from your [OVHcloud Control Panel](/links/manager).
 
-## En pratique
+## Instructions
 
-### Qui est concerné ?
+### Who is affected?
 
-Ce changement peut impacter les clients qui :
+This change can impact customers who:
 
-- Ont défini un nom de serveur DNS personnalisé dans les enregistrements DNS de type `NS` de leur zone DNS, et ont associé une adresse IP d’un serveur DNS OVHcloud à ce nom via un enregistrement DNS de type `A`.
-- Ont également configuré un enregistrement `GLUE` pour ce nom personnalisé, afin de l’associer à l’adresse IP d’un serveur DNS OVHcloud, dans la configuration des serveurs DNS du nom de domaine.
-- Et utilisent actuellement ce nom personnalisé comme serveur DNS de leur nom de domaine (défini dans leur espace client ou auprès de leur bureau d’enregistrement).
+- Have defined a custom DNS server name in the DNS records of type `NS` of their DNS zone, and have associated an IP address of an OVHcloud DNS server with this name via a DNS record of type `A`.
+- Have also configured a `GLUE` record for this custom name, in order to associate it with the IP address of an OVHcloud DNS server, in the configuration of the domain name’s DNS servers.
+- And are currently using this custom name as their domain name’s DNS server (defined in their Control Panel or at their registrar).
 
-Pour plus d'informations, consultez notre guide « [Personnaliser les serveurs DNS d'un nom de domaine (Glue Records)](/pages/web_cloud/domains/glue_registry) ».
-
-> [!warning]
->
-> Si vous n’avez effectué aucune modification manuelle de la configuration DNS (paramétrage par défaut), vous n’êtes pas concerné par ce changement.
-
-### Calendrier
-
-| Étape                                | Date prévue           |
-|-------------------------------------|------------------------|
-| Mise en service des nouvelles IPs   | Dès le 5 août 2025 |
-| Envoi du premier e-mail d’information aux clients identifiés | Mi-août 2025 |
-| Envoi du second e-mail de rappel         | 15 septembre 2025 |
-| Suppression du trafic IPv6 sur les anciennes IPs         | Immédiate |
-| Suppression du trafic IPv4          | Début octobre 2025 |
+For more information, please read our guide on [Customizing a domain name’s DNS servers (Glue Records)](/pages/web_cloud/domains/glue_registry) .
 
 > [!warning]
 >
-> L’utilisation prolongée des anciennes adresses IP après cette date provoquera l’échec de la résolution DNS pour les noms de domaine mal configurés.
+> If you have not made any manual changes to the DNS configuration (default setting), you will not be affected by this change.
 
-### Que faire si je suis concerné ?
+### Calendar
 
-1. Identifiez si vous utilisez encore une ancienne adresse IP dans votre zone DNS.
-2. **Remplacez-la** par la nouvelle correspondance (voir tableau ci-dessus).
-3. **Mettez à jour vos GLUE records** si vous en avez configuré dans votre interface client.
+| Step                                | Estimated date           |
+|------------------------------|------------------------------|
+| Commissioning of new IPs   | Starting August 5, 2025 |
+| Send the first informational email to the identified customers | Mid-August 2025 |
+| Send second reminder email         | September 15, 2025 |
+| Delete IPv6 traffic on old IPs         | Immediate |
+| Deletion of IPv4 traffic          | Early October 2025 |
 
-### Table des correspondances IP
+> [!warning]
+>
+> Prolonged use of old IP addresses after this date will cause DNS resolution to fail for misconfigured domain names.
 
-| Nom d’hôte     | Ancienne IPv4   | Nouvelle IPv4   | Ancienne IPv6       | Nouvelle IPv6         |
-|:---------------|:----------------|:----------------|:--------------------|:----------------------|
+### What do I do if I am affected?
+
+1. Determine if you are still using an old IP address in your DNS zone.
+2. Replace it with the new correspondence (see table above).
+3. Update your GLUE records if you have configured one in your customer interface.
+
+### IP mapping table
+
+| Host name     | Old IPv4   | New IPv4   | Old IPv6       | New IPv6         |
+|:---------------|:----------------|:---------------|:---------------------|:----------------------------|
 | dns.ovh.net    | 213.186.33.102  | 5.135.230.153   | 2001:41d0:3:166::1  | 2001:41d0:d00:e400::2 |
 | ns.ovh.net     | 213.251.128.136 | 5.135.230.149   | 2001:41d0:209::1    | 2001:41d0:b00:ea00::2 |
 | dns10.ovh.net  | 213.251.188.129 | 5.135.85.109    | 2001:41d0:1:4a81::1 | 2001:41d0:d00:6100::2 |
@@ -107,10 +107,10 @@ Pour plus d'informations, consultez notre guide « [Personnaliser les serveurs D
 | dns113.ovh.net | 87.98.168.13    | 5.196.46.145    | 2001:41d0:1:4a9e::1 | 2001:41d0:d01:700::2  |
 | ns113.ovh.net  | 87.98.168.141   | 5.135.82.125    | 2001:41d0:209::4    | 2001:41d0:b01:100::2  |
 
-## Aller plus loin
+## Go further
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner)
+For specialized services (SEO, development, etc.), contact the [OVHcloud partners](/links/partner)
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](/links/support).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Join our [community of users](/links/community).
