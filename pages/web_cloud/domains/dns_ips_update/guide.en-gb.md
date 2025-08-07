@@ -47,7 +47,7 @@ For more information, please read our guide on [Customizing a domain name’s DN
 ### What can I do if I am concerned?
 
 1. Determine if you are still using an old IP address in your DNS zone.
-2. Replace it with the new IP (see table below).
+2. Replace it with the new IP address (see the table below).
 3. [Update your GLUE records](/pages/web_cloud/domains/glue_registry) if you have configured one in your client interface.
 
 ### IP address mapping table
