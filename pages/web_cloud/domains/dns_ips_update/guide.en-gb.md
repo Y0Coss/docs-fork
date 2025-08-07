@@ -109,7 +109,7 @@ For more information, please read our guide on [Customizing a domain name’s DN
 
 ## Go further
 
-For specialized services (SEO, development, etc.), contact the [OVHcloud partners](/links/partner)
+For specialized services (SEO, development, etc.), contact the [OVHcloud partners](/links/partner).
 
 If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](/links/support).
 
