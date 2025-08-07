@@ -37,7 +37,6 @@ Pour plus d'informations, consultez notre guide « [Personnaliser les serveurs D
 | Mise en service des nouvelles IPs   | Dès le 5 août 2025 |
 | Envoi du premier e-mail d’information aux clients identifiés | Mi-août 2025 |
 | Envoi du second e-mail de rappel         | 15 septembre 2025 |
-| Suppression du trafic IPv6 sur les anciennes IPs         | Immédiate |
 | Suppression du trafic IPv4          | Début octobre 2025 |
 
 > [!warning]
