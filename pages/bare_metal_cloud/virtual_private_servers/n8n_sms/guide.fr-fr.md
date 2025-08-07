@@ -100,13 +100,13 @@ Si vous utilisez Docker ou souhaitez exposer cette API, pensez à ouvrir le port
 2. Cliquez sur le bouton **Create Workflow**.
 3. Ajoutez un nœud de type **Set** et nommez-le par exemple `Set - Credentials`. Pour plus de détails concernant la création de nœud, consultez la [documentation officielle de n8n](https://docs.n8n.io/integrations/creating-nodes/overview/).
 
-Ajoutez un nœud de type `Set` avec les valeurs suivantes :
+Ajoutez les valeurs suivantes dans votre nœud :
 
-- Name : applicationKey / Value : "VOTRE_APPLICATION_KEY"
-- Name : consumerKey / Value : "VOTRE_CONSUMER_KEY"
-- Name : serviceName / Value : "sms-ovh-123456"
-
-Transformer en tableau
+| Name          | Value                    |
+|---------------|--------------------------|
+| applicationKey | "VOTRE_APPLICATION_KEY" |
+| consumerKey    | "VOTRE_CONSUMER_KEY"    |
+| serviceName    | "sms-ovh-123456"        |
 
 Ces champs seront utilisés dynamiquement dans les nœuds suivants.
 
@@ -135,7 +135,7 @@ Ajoutez un troisième nœud `HTTP Request`, et nommez-le `SMS - Send`.
 
 * **HTTP Method** : `POST`
 * **URL** : `https://eu.api.ovh.com/1.0/sms/{{ $node["Set - Credentials"].json["serviceName"] }}/jobs`
-* **Headers** : cliquez sur **Add Header** et remplissez :
+* **Headers** : cliquez sur **Send Header** et remplissez :
 
 | Name              | Value                                                        |
 | ----------------- | ------------------------------------------------------------ |
