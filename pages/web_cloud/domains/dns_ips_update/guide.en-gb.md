@@ -6,7 +6,7 @@ updated: 2025-08-07
 
 ## Objective
 
-This guide explains the IP address changes affecting part of our DNS servers hosted in Europe, which will apply from **August 2025**.
+This guide explains the IP addresses changes affecting part of our DNS servers hosted in Europe, which will apply from **August 2025**.
 
 **See the list of new DNS server IP addresses.**
 
