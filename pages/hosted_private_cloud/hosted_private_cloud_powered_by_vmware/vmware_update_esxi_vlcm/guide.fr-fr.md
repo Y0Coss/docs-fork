@@ -28,6 +28,15 @@ Connectez-vous à votre interface vSphere, puis sélectionnez le **cluster d’h
 
 ### Étape 2 : 
 
+Si vous utilisez l'option Zerto (Plan de reprise d'activité) :
+
+Vous devez d'abord mettre les hôtes de votre cluster en Mode Maintenance avant de procéder à la mise à jour avec vLCM : 
+
+<img width="630" height="313" alt="vlcm_zerto_entermaintenancemode" src="https://github.com/user-attachments/assets/06b845dc-fa09-4915-b6b7-6c0d8c374a83" />
+
+
+### Étape 3 : 
+
 Accédez au menu `Updates`{.action} > `Hosts`{.action} > `Image`{.action} pour consulter l’image actuelle.
 
 ![Affichage de l'image actuelle dans vLCM](images/vlcm_00.png){.thumbnail}
@@ -47,7 +56,7 @@ Cliquez sur `Save`{.action} pour valider et enregistrer l’image sélectionnée
 
 Votre image est maintenant chargée.
 
-### Étape 3 : Lancer la mise à jour
+### Étape 4 : Lancer la mise à jour
 
 Cliquez sur `Remediate All`{.action} pour appliquer l’image à l’ensemble des hôtes du cluster.
 
@@ -68,6 +77,9 @@ Cliquez sur `Start Remediation`{.action} pour démarrer le processus.
 Le processus de mise à jour est lancé. Il peut durer plusieurs minutes par hôte.
 
 ![Validation finale](images/vlcm_05.png){.thumbnail}
+
+
+Option Zerto: après la confirmation de la mise à jour, vous pouvez procéder à la sortie de votre cluster du Mode Maintenance.
 
 ## Aller plus loin
 
