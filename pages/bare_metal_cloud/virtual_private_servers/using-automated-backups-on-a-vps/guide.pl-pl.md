@@ -1,7 +1,7 @@
 ---
 title: "Jak korzystać z automatycznych kopii zapasowych na serwerze VPS"
 excerpt: "Dowiedz się, jak korzystać z opcji zautomatyzowany backup zapasowych z poziomu Panelu klienta OVHcloud do zabezpieczania danych"
-updated: 2025-08-05
+updated: 2025-08-07
 ---
 
 ## Wprowadzenie

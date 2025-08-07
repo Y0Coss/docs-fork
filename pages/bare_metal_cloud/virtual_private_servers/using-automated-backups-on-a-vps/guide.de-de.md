@@ -1,7 +1,7 @@
 ---
 title: "Automatische Backups auf einem VPS verwenden"
 excerpt: "Erfahren Sie, wie Sie im OVHcloud Kundencenter die Backup-Option verwenden, um Ihre Daten zu sichern"
-updated: 2025-08-05
+updated: 2025-08-07
 ---
 
 ## Ziel

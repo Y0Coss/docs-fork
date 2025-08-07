@@ -1,7 +1,7 @@
 ---
 title: "Como utilizar os backups automatizados num VPS"
 excerpt: "Descubra como utilizar a opção Backup automatizado a partir da Área de Cliente OVHcloud para proteger os seus dados"
-updated: 2025-08-05
+updated: 2025-08-07
 ---
 
 ## Objetivo
