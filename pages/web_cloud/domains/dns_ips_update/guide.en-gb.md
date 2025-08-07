@@ -22,7 +22,7 @@ This change can impact customers who:
 
 - Have defined a custom DNS server name in the DNS records of type `NS` of their DNS zone, and have associated an IP address of an OVHcloud DNS server with this name via a DNS record of type `A`.
 - Have also configured a `GLUE` record for this custom name, in order to associate it with the IP address of an OVHcloud DNS server, in the configuration of the domain name’s DNS servers.
-- And are currently using this custom name as their domain name’s DNS server (defined in their Control Panel or at their registrar).
+- Are currently using this custom name as their domain name’s DNS server (defined in their Control Panel or at their registrar).
 
 For more information, please read our guide on [Customizing a domain name’s DNS servers (Glue Records)](/pages/web_cloud/domains/glue_registry).
 
