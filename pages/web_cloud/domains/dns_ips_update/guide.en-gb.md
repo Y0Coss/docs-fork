@@ -34,10 +34,10 @@ For more information, please read our guide on [Customizing a domain name’s DN
 
 | Step                                | Estimated date           |
 |------------------------------|------------------------------|
+| Delete IPv6 traffic on old IPs         | Completed on 05 August 2025 |
 | Commissioning of new IPs   | Starting August 5, 2025 |
 | Send the first informational email to the identified customers | Mid-August 2025 |
 | Send second reminder email         | September 15, 2025 |
-| Delete IPv6 traffic on old IPs         | Immediate |
 | Deletion of IPv4 traffic          | Early October 2025 |
 
 > [!warning]
@@ -47,8 +47,8 @@ For more information, please read our guide on [Customizing a domain name’s DN
 ### What do I do if I am affected?
 
 1. Determine if you are still using an old IP address in your DNS zone.
-2. Replace it with the new correspondence (see table above).
-3. Update your GLUE records if you have configured one in your customer interface.
+2. Replace it with the new IP (see table below).
+3. [Update your GLUE records](/pages/web_cloud/domains/glue_registry) if you have configured one in your client interface.
 
 ### IP mapping table
 
