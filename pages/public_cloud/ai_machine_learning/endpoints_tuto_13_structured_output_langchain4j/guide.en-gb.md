@@ -53,7 +53,6 @@ ResponseFormat responseFormat = ResponseFormat.builder()
 ```
 
 In this example, we define a JSON output format with a schema that specifies the name, age, height, and married properties as required.
-Configure the model to use
 
 This example uses the Mistral AI model hosted on OVHcloud AI Endpoints. 
 
