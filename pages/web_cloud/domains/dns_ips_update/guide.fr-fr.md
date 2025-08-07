@@ -12,7 +12,7 @@ Ce guide présente les changements d’adresses IP affectant une partie de nos s
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](/links/manager).
+- Avoir un accès à votre [espace client OVHcloud](/links/manager) pour configurer le nom de domaine concerné.
 
 ## En pratique
 
