@@ -34,7 +34,7 @@ Pour plus d'informations, consultez notre guide « [Personnaliser les serveurs D
 
 | Étape                                | Date prévue           |
 |-------------------------------------|------------------------|
-| Suppression du trafic IPv6 sur les anciennes IPs         | Effectuée le 05 août 2025 |
+| Suppression du trafic IPv6 sur les anciennes adresses IP         | Effectuée le 05 août 2025 |
 | Mise en service des nouvelles adresses IP   | Dès le 5 août 2025 |
 | Envoi du premier e-mail d’information aux clients identifiés | Mi-août 2025 |
 | Envoi du second e-mail de rappel         | 15 septembre 2025 |
