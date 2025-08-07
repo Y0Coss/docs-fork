@@ -44,7 +44,7 @@ For more information, please read our guide on [Customizing a domain name’s DN
 >
 > Using old IP addresses after this date will cause DNS resolution failure for domain names whose configuration has not been updated.
 
-### What do I do if I am affected?
+### What can I do if I am concerned?
 
 1. Determine if you are still using an old IP address in your DNS zone.
 2. Replace it with the new IP (see table below).
