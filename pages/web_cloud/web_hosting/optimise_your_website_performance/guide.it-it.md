@@ -146,7 +146,7 @@ Per migliorare l’accessibilità, il download e il posizionamento naturale del 
 
 In questo modo, migliorano i tempi di risposta degli utenti finali in tutto il mondo, dato che le parti statiche del tuo sito vengono caricate direttamente dall’utente nel POP a lui più vicino.
 
-Trovi tutte le offerte CDN OVHcloud [qui](https://www.ovh.it/cdn/){.external}.
+Trovi tutte le offerte CDN OVHcloud [qui](/links/web/hosting-options-cdn){.external}.
 
 ### Step 6: Verifica i CMS (Content Management System) e i plugin utilizzati
 

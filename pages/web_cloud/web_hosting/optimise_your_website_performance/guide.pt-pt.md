@@ -146,7 +146,7 @@ Para melhorar o acesso ao website, o descarregamento no website e obter uma clas
 
 Por conseguinte, irá melhorar os tempos de resposta dos visitantes em todo o mundo, porque as partes estáticas do seu website serão descarregadas diretamente pelo visitante no ponto de presença mais próximo do mesmo.
 
-Conheça a nossa [solução CDN aqui](/links/network/cdn-infrastructure){.external}.
+Conheça a nossa [solução CDN aqui](/links/web/hosting-options-cdn){.external}.
 
 ### Passo 6: Analisar o sistema de gestão de conteúdos (CMS) e os plugins utilizados
 
