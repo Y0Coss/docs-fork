@@ -50,7 +50,7 @@ Pour plus d'informations, consultez notre guide « [Personnaliser les serveurs D
 2. **Remplacez-la** par la nouvelle adresse IP (voir le tableau ci-dessous).
 3. [Mettez à jour vos GLUE records](/pages/web_cloud/domains/glue_registry) si vous en avez configuré dans votre interface client.
 
-### Table des correspondances IP
+### Tableau de correspondance des adresses IP
 
 | Nom d’hôte     | Ancienne IPv4   | Nouvelle IPv4   | Ancienne IPv6       | Nouvelle IPv6         |
 |:---------------|:----------------|:----------------|:--------------------|:----------------------|
