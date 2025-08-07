@@ -52,7 +52,7 @@ For more information, please read our guide on [Customizing a domain name’s DN
 
 ### IP mapping table
 
-| Host name     | Old IPv4   | New IPv4   | Old IPv6       | New IPv6         |
+| Hostname     | Old IPv4   | New IPv4   | Old IPv6       | New IPv6         |
 |:---------------|:----------------|:---------------|:---------------------|:----------------------------|
 | dns.ovh.net    | 213.186.33.102  | 5.135.230.153   | 2001:41d0:3:166::1  | 2001:41d0:d00:e400::2 |
 | ns.ovh.net     | 213.251.128.136 | 5.135.230.149   | 2001:41d0:209::1    | 2001:41d0:b00:ea00::2 |
