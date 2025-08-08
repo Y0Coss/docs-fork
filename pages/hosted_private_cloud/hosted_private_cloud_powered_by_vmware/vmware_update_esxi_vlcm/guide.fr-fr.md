@@ -30,7 +30,7 @@ Connectez-vous à votre interface vSphere, puis sélectionnez le **cluster d’h
 
 Si vous utilisez l'option Zerto (Plan de reprise d'activité) :
 
-Vous devez d'abord basculer les hôtes de votre cluster en Mode Maintenance avant lancer la mise à jour avec vLCM : 
+Vous devez d'abord basculer les hôtes de votre cluster en Mode Maintenance avant de lancer la mise à jour avec vLCM : 
 
 <img width="630" height="313" alt="vlcm_zerto_entermaintenancemode" src="https://github.com/user-attachments/assets/06b845dc-fa09-4915-b6b7-6c0d8c374a83" />
 
@@ -77,7 +77,7 @@ Le processus de mise à jour est lancé. Il peut durer plusieurs minutes par hô
 
 ![Validation finale](images/vlcm_05.png){.thumbnail}
 
-**Option Zerto** : Lorsque la mise à jour est terminée, vous pouvez sortir du Mode Maintenance sur les hôtes de votre cluster.
+**Option Zerto** : Lorsque la mise à jour est terminée, vous pouvez sortir les hôtes de votre cluster du Mode Maintenance.
 
 ## Aller plus loin
 
