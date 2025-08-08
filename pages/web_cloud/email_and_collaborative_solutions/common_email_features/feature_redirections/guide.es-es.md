@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar los alias y redirecciones de correo'
 excerpt: 'Cómo gestionar los alias y redirecciones de correo'
-updated: 2025-04-28
+updated: 2025-06-03
 ---
 
 <style>
@@ -535,9 +535,9 @@ Haga clic en el botón `...`{.action} a la derecha de la redirección correspond
 
 [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
-[Primeros pasos con el servicio Hosted Exchange](/pages/web_cloud/email_and_colaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+[Primeros pasos con el servicio Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-[Primeros pasos con el servicio Private Exchange](/pages/web_cloud/email_and_colaborative_solutions/microsoft_exchange/exchange_starting_private)
+[Primeros pasos con el servicio Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 [Primeros pasos con la solución Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 

@@ -1,7 +1,7 @@
 ---
 title: 'Utilizzare gli alias e i reindirizzamenti email'
 excerpt: 'Come gestire gli alias e i reindirizzamenti email'
-updated: 2025-04-28
+updated: 2025-06-03
 ---
 
 <style>
@@ -222,7 +222,7 @@ Sfoglia le schede qui sotto per impostare il reindirizzamento tramite Outlook We
 >>
 >> Una volta connesso al tuo indirizzo email tramite la [webmail](/links/web/email), clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Opzioni`{.action}.
 >>
->> ![email](images/email-all-01.png){.thumbnail .w-640}
+>> ![email](images/emails-all-01.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
@@ -356,7 +356,7 @@ Accedi alla [webmail](/links/web/email). Inserisci **l'indirizzo email** e la **
 >>
 >> Una volta connesso all’interfaccia della Webmail OWA, clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Opzioni`{.action}.
 >>
->> ![email](images/email-all-01.png){.thumbnail .w-640}
+>> ![email](images/emails-all-01.png){.thumbnail .w-640}
 >>
 > **Step 2**
 >>
