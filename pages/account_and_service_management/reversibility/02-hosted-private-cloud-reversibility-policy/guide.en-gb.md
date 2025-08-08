@@ -19,7 +19,7 @@ Features of the product line fall into three categories:
 3. **Specific features** that cannot be guaranteed for migration as they are related to the OVHcloud environment or involve custom developments.
 
 
-## 1. Core features
+### 1. Core features
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@ Features of the product line fall into three categories:
 | Dedicated storage (vSAN and/or NFS) | Use of dedicated vSAN and/or NFS datastores, snapshot and clone management. | NA | **Inbound**: add datastores, restore VMs and snapshots <br>**Outbound**: export VMs and snapshots to compatible target storage. | [Using VMware Hyperconvergence with vSAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)|
 
 
-## 2. OVHcloud Implementations
+### 2. OVHcloud Implementations
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
@@ -38,7 +38,7 @@ Features of the product line fall into three categories:
 |Backup and replication|Backup-as-a-Service solution for your VMs|VBK, VIB, VBM|**Inbound**: activation of Veeam backup option in the [OVHcloud Control Panel](/links/manager).<br><br>**Outbound**: import backups manually, then restore backups|[Activating and using Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service)<br><br>[Move2Cloud - Migrating VMware Workloads to OVHcloud Hosted Private Cloud with Veeam Replication](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam)|
 |Zerto|Business continuity and disaster recovery platform.|N/A|**Inbound**: activation of the option in the [OVHcloud Control Panel](/links/manager) or directly in the provided Zerto Replication Interface.<br><br>**Outbound**: export zerto VPG settings and import those settings in the new environment.|[Setting up Zerto Virtual Replication for your DRP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)<br><br>[Move2Cloud - Migrate VMware workloads to OVHcloud Hosted Private Cloud with Zerto](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto)<br><br>[Exporting Zerto VPG settings](https://www.zerto.com/myzerto/knowledge-base/exporting-and-importing-vpg-settings-with-zerto-diagnostic-tool/)|
 
-## 3. Specific features
+### 3. Specific features
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
