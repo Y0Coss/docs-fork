@@ -67,7 +67,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 
 ### Conservação dos seus endereços de e-mail após a expiração do seu alojamento web
 
-Quando o seu alojamento web chega ao seu fim ou quando este deve ser eliminado, é possível conservar os seus endereços de e-mail.
+Se o seu alojamento web estiver prestes a expirar, é possível que peça a conservação dos seus endereços de e-mail **antes** da data de expiração.
 
 Clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 

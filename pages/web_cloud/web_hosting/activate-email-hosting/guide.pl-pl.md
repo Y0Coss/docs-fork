@@ -68,7 +68,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 
 ### Zachowanie kont e-mail po wygaśnięciu hostingu
 
-Kiedy Twój hosting wygaśnie lub musi zostać usunięty, możesz zachować Twoje konta e-mail.
+Jeśli Twój hosting www niebawem wygaśnie, możesz zażądać zachowania Twoich kont e-mail **przed** datą wygaśnięcia.
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 

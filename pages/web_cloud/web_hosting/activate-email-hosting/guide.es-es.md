@@ -67,7 +67,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** etapas.
 
 ### Conservación de sus direcciones de correo tras la expiración de su alojamiento web
 
-Es posible conservar las direcciones de correo electrónico cuando el alojamiento caduque o deba eliminarse.
+Si su alojamiento web está a punto de expirar, es posible solicitar la conservación de sus direcciones de correo **antes** de su fecha de expiración.
 
 Haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
 

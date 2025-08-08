@@ -73,7 +73,7 @@ Click on the tabs below to view each of the **4** steps.
 
 ### Keeping your email addresses after your web hosting plan has expired
 
-When your Web Hosting plan expires or needs to be deleted, you can keep your email addresses.
+If your web hosting plan is about to expire, you can request to keep your email addresses **before** its expiry date.
 
 Click on the tabs below to view each of the **3** steps.
 

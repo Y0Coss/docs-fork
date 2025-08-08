@@ -67,7 +67,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 
 ### Conservazione degli indirizzi email dopo la scadenza dell’hosting Web
 
-Una volta che la soluzione giunge a scadenza o è necessario eliminarla, è possibile conservare gli indirizzi email ad essa associati.
+In caso di scadenza imminente dell’hosting Web, è possibile richiedere la conservazione degli indirizzi email **prima** della data di scadenza.
 
 Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 

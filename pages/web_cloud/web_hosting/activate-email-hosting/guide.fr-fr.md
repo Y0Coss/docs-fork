@@ -68,7 +68,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 
 ### Conservation de vos adresses e-mail après l'expiration de votre hébergement web
 
-Lorsque votre hébergement arrive à expiration ou qu'il doit être supprimé, il est possible de conserver vos adresses e-mail.
+Si votre hébergement web est sur le point d'expirer, il est possible de demander la conservation de vos adresses e-mail **avant** sa date d'expiration.
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 

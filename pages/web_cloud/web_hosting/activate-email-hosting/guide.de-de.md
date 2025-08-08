@@ -68,7 +68,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 ### Speicherung Ihrer E-Mail-Adressen nach Ablauf Ihres Webhostings
 
-Wenn Ihr Hosting abläuft oder gelöscht werden muss, können Sie dennoch Ihre E-Mail-Accounts beibehalten.
+Wenn Ihr Webhosting in Kürze abläuft, können Sie die Speicherung Ihrer E-Mail-Adressen **vor dem Ablaufdatum** anfordern.
 
 Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
