@@ -1,7 +1,7 @@
 ---
 title: "How to move a database service from a single AZ region to a 3-AZ region"
 excerpt: "Learn how to move your OVHcloud Public Cloud Database from a single AZ to a 3-AZ region and ensure high availability"
-updated: 2025-07-14
+updated: 2025-08-08
 ---
 
 ## Objective
@@ -31,7 +31,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 
 ## Instructions
 
-### Move an engine instance to 3-AZ
+### Move a database service to 3-AZ
 
 > [!tabs]
 > Via the OVHcloud Control Panel
@@ -78,14 +78,14 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 >> > To interact with your Public Cloud Databases services via the OVHcloud API, make sure you've mastered the basics first by consulting our guide: [Public Cloud Databases - Getting started with APIs](/pages/public_cloud/public_cloud_databases/databases_02_order_api).
 >> >
 >>
->> To find the backup ID of an engine instance, use this following API call:
+>> To find the backup ID of a service, use this following API call:
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/backup
 >> >
 >>
->> This call retrieves the backup list of the engine instance concerned. They are listed in order from the most recent backup to the oldest.
+>> This call retrieves the backup list of the concerned service. They are listed in order from the most recent backup to the oldest.
 >>
 >> If you want to check the information on a particular backup, you can use this API call:
 >>
@@ -94,7 +94,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/backup/{backupId}
 >> >
 >>
->> To create your engine instance from one backup, use the following API call:
+>> To create your new service from one backup, use the following API call:
 >>
 >> > [!api]
 >> >
@@ -109,7 +109,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 >> >
 >>
 >> ```console
->> body : {
+>> {
 >>   "description": "laughable-peebles",                      # Name of the new service
 >>   "nodesPattern": {                                        # Service configuration
 >>     "flavor": "b3-8",
@@ -130,7 +130,7 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 >>   "forkFrom": {
 >>     "serviceId": "********-****-****-****-ce179babccf3",   # The identifier of the origin service to which this backup belongs
 >>     "backupId": "********-****-****-****-3684de51065d"     # The identifier of the previously retrieved backup
->>   },
+>>   }
 >> }
 >> ```
 >>
@@ -141,14 +141,14 @@ After your new 3-AZ database service has been successfully provisioned, it's cru
 
 1. Test the connection to your new service:
 
-  - Use a database client (e.g., psql for PostgreSQL, mysql for MySQL) or a simple script to verify that you can connect to the new 3-AZ service's endpoint using its credentials.
-  - Confirm that your data has been successfully migrated and is accessible.
+  1. Use a database client (e.g., psql for PostgreSQL, mysql for MySQL) or a simple script to verify that you can connect to the new 3-AZ service's endpoint using its credentials.
+  2. Confirm that your data has been successfully migrated and is accessible.
 
 2. Configure your application to use the new service:
 
-  - Update your application's configuration files or environment variables to point to the new 3-AZ database service's connection string (host, port, username, password).
-  - Restart your application to apply the changes.
-  - Thoroughly test your application's functionality to ensure it operates correctly with the new database endpoint.
+  1. Update your application's configuration files or environment variables to point to the new 3-AZ database service's connection string (host, port, username, password).
+  2. Restart your application to apply the changes.
+  3. Thoroughly test your application's functionality to ensure it operates correctly with the new database endpoint.
 
 ### Clean up
 
@@ -160,12 +160,12 @@ Follow these instructions to delete the old 1-AZ service:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Navigate to your list of engine instances, click on the `...`{.action} button on the engine instance line and click on the `Delete`{.action} button to permanently delete the service.
+>> Navigate to your list of database services, click on the `...`{.action} button on the service line and click on the `Delete`{.action} button to permanently delete the service.
 >>
->> ![databases - delete the 1-AZ engine instance](images/databases_delete_1az.png)
+>> ![databases - delete the 1-AZ service](images/databases_delete_1az.png)
 >>
 > Via the OVHcloud API
->> To delete your engine instance, use the following API call:
+>> To delete your service, use the following API call:
 >>
 >> > [!api]
 >> >
