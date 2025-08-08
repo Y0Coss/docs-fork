@@ -32,7 +32,7 @@ If you are using the Zerto option (Disaster Recovery Plan):
 
 You must first switch the hosts in your cluster to Maintenance Mode before starting the update with vLCM:
 
-<img width="630" height="313" alt="vlcm_zerto_entermaintenancemode" src="https://github.com/user-attachments/assets/06b845dc-fa09-4915-b6b7-6c0d8c374a83" />
+![Maintenance Mode](images/vlcm_step2.png){.thumbnail}
 
 ### Step 3: Select a new image
 
