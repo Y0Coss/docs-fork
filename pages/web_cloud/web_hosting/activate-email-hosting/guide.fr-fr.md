@@ -66,7 +66,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 > Attention : l'activation de l'option e-mail peut prendre quelques minutes. Vous recevrez un e-mail pour vous confirmer l'installation et l'activation de l'offre MXPLAN. Elle inclut notamment la gestion et la configuration de vos adresses e-mail.
 >
 
-### Conservation de vos adresses e-mail après l'expiration de l'hébergement web
+### Conservation de vos adresses e-mail après l'expiration de votre hébergement web
 
 Lorsque votre hébergement arrive à expiration ou qu'il doit être supprimé, il est possible de conserver vos adresses e-mail.
 
