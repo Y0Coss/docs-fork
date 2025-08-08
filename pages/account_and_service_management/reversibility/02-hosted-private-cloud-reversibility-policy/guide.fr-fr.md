@@ -46,7 +46,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 ### Liste des architectures
 
-Le produit repose sur une solution VMware dédiée, incluant des briques commme vSphere, stockage NFS, vROps, des options avancées de sécurité (chiffrement, MFA) et options NSX (SDN) et/ou vSAN à activer. Les ressources (compute, stockage, réseau) sont isolées physiquement et logiquement, avec une gestion fine des droits (IAM), et l'intégration de services de réseaux privés. L’architecture est opérée dans des les datacentres OVHcloud.
+Le produit repose sur une solution VMware dédiée, incluant des briques commme vSphere, vCenter, stockage NFS, vROps, des options avancées de sécurité (chiffrement, MFA) et options NSX (SDN) et/ou vSAN à activer. Les ressources (compute, stockage, réseau) sont isolées physiquement et logiquement, avec une gestion fine des droits (IAM), et l'intégration de services de réseaux privés. L’architecture est opérée dans des les datacentres OVHcloud.
 
 
 ### Services Partenaires
