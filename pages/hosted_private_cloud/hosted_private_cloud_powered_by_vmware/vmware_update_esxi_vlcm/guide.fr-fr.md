@@ -1,7 +1,7 @@
 ---
 title: Mise à jour des hôtes avec vSphere Lifecycle Management (vLCM)
 excerpt: Apprenez à maintenir vos hôtes ESXi à jour via vSphere Lifecycle Management, en toute sécurité et en quelques clics.
-updated: 2025-04-17
+updated: 2025-08-08
 ---
 
 ## Objectif
@@ -26,16 +26,15 @@ Vous bénéficiez ainsi d’une vue centralisée de l’état de vos hôtes et p
 
 Connectez-vous à votre interface vSphere, puis sélectionnez le **cluster d’hôtes** à mettre à jour.
 
-### Étape 2 : 
+### Étape 2 : Activer le Mode Maintenance (Zerto)
 
 Si vous utilisez l'option Zerto (Plan de reprise d'activité) :
 
-Vous devez d'abord mettre les hôtes de votre cluster en Mode Maintenance avant de procéder à la mise à jour avec vLCM : 
+Vous devez d'abord basculer les hôtes de votre cluster en Mode Maintenance avant lancer la mise à jour avec vLCM : 
 
 <img width="630" height="313" alt="vlcm_zerto_entermaintenancemode" src="https://github.com/user-attachments/assets/06b845dc-fa09-4915-b6b7-6c0d8c374a83" />
 
-
-### Étape 3 : 
+### Étape 3 : Sélectionner une nouvelle image
 
 Accédez au menu `Updates`{.action} > `Hosts`{.action} > `Image`{.action} pour consulter l’image actuelle.
 
@@ -78,8 +77,7 @@ Le processus de mise à jour est lancé. Il peut durer plusieurs minutes par hô
 
 ![Validation finale](images/vlcm_05.png){.thumbnail}
 
-
-Option Zerto: après la confirmation de la mise à jour, vous pouvez procéder à la sortie de votre cluster du Mode Maintenance.
+**Option Zerto** : Lorsque la mise à jour est terminée, vous pouvez sortir du Mode Maintenance sur les hôtes de votre cluster.
 
 ## Aller plus loin
 
