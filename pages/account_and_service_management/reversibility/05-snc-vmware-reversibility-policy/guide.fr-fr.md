@@ -1,5 +1,5 @@
 ---
-title: Politique de réversibilité du proeduit Managed Dedicated Cloud - SecNumCloud
+title: Politique de réversibilité du produit Managed Dedicated Cloud - SecNumCloud
 updated: 2025-08-08
 ---
 
