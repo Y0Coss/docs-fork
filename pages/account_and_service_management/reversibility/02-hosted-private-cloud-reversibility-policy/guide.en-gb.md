@@ -47,7 +47,7 @@ Features of the product line fall into three categories:
 
 ## List of architectures
 
-The product is based on a dedicated VMware solution, including bricks such as vSphere, NFS storage, vROps, advanced security options (encryption, MFA) and NSX (SDN) and/or vSAN options to be enabled. Resources (compute, storage, network) are physically and logically isolated, with fine grained rights management (IAM), and the integration of private network services. The architecture is carried out in OVHcloud datacentres.
+The product is based on a dedicated VMware solution, including bricks such as vSphere, vCenter, NFS storage, vROps, advanced security options (encryption, MFA) and NSX (SDN) and/or vSAN options to be enabled. Resources (compute, storage, network) are physically and logically isolated, with fine grained rights management (IAM), and the integration of private network services. The architecture is carried out in OVHcloud datacentres.
 
 
 ### Partner services
