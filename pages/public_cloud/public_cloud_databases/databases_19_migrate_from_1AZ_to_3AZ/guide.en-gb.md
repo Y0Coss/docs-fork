@@ -17,9 +17,17 @@ OVHcloud Public Cloud Databases can be deployed with different architectures to 
 
 ## Why move to 3-AZ?
 
-Migrating your database service to a 3-AZ deployment significantly enhances its resilience, high availability, and disaster recovery capabilities. In a 3-AZ setup, your data is synchronously replicated across three distinct availability zones within the same region. This architecture ensures that in the event of an outage in one zone, your database service can automatically failover to another operational zone with minimal downtime and no data loss.
+Migrating your database service to a 3-AZ deployment significantly enhances its resilience, high availability, and disaster recovery capabilities. In a 3-AZ setup, provided your service runs on multiple nodes, your data is synchronously replicated across three distinct availability zones within the same region. This architecture ensures that in the event of an outage in one zone, your database service can automatically failover to another operational zone with minimal downtime and no data loss.
 
 For more detailed information on the deployment modes and their technical specifications, please refer to our dedicated guide: [Comparison of Public Cloud Databases Deployment Modes - Understanding 3-AZ / 1-AZ](/pages/public_cloud/public_cloud_databases/databases_18_regions_comparison).
+
+Here is a list of currently support 1-AZ and 3-AZ regions for database services:
+
+![databases - datacentres](images/databases_datacentre.png)
+
+## Reversibility
+
+The migration from a Single-AZ region to a Multi-AZ region is reversible — services can be migrated back to a Single-AZ region.
 
 ## Instructions
 
@@ -27,7 +35,7 @@ For more detailed information on the deployment modes and their technical specif
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> To move a database service from a 1-AZ to a 3-AZ region, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your engine instance then click the `Backups`{.action} tab.
+>> To move a database service from a 1-AZ to a 3-AZ region, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your database service then click the `Backups`{.action} tab.
 >>
 >> ![databases - select engines instances and go to the backups section](images/databases_select_cluster.png)
 >>
@@ -35,34 +43,39 @@ For more detailed information on the deployment modes and their technical specif
 >>
 >> ![databases - click on the duplicate button](images/databases_fork_backup.png)
 >>
+>> The page that appears allows you to configure your service and choose the destination region.<br>
 >> Select the Restore point named `Backup`{.action}.
 >>
 >> ![databases fork - select backup for the restore point part](images/databases_fork_restore_point.png)
->>
->> Select your `plan`{.action} for the engine instance.
->>
->> ![databases fork - select your plan](images/databases_fork_plan.png)
 >>
 >> Select a `3-AZ region`{.action}.
 >>
 >> ![databases fork - select your 3-AZ region](images/databases_fork_region.png)
 >>
->> Select the `node type`{.action} for the engine instance.
+>> Select your `plan`{.action} of the service.
 >>
->> ![databases fork - select the node type](images/databases_fork_node_type.png)
+>> ![databases fork - select your plan](images/databases_fork_plan.png)
 >>
->> If needed, you can configure additional storage and connectivity settings, then verify the IP addresses to whitelist (the list is pre-filled by default with the origin service's configuration).
+>> Select the `instance`{.action} that will host the service.
 >>
->> ![databases fork - select optional fields](images/databases_fork_optional.png)
+>> ![databases fork - select the instance](images/databases_fork_instance.png)
 >>
->> When you have completed your configuration, click on the `Order`{.action} button. 
+>> Select the `storage`{.action} of the service.
 >>
->> ![databases fork - select optional fields](images/databases_fork_order.png)
+>> ![databases fork - select the storage](images/databases_fork_storage.png)
+>>
+>> If needed, you can edit the connectivity settings, then verify the IP addresses to whitelist (the list is pre-filled by default with the origin service's configuration).
+>>
+>> ![databases fork - select optional fields](images/databases_fork_options.png)
+>>
+>> When you have completed your configuration, review your order then click on the `Order`{.action} button. 
+>>
+>> ![databases fork - review](images/databases_fork_summary.png)
 >>
 > Via the OVHcloud API
 >> > [!primary]
 >> >
->> > To interact with your Public Cloud Databases services via the OVHcloud API, make sure you've mastered the basics first by consulting our guide: [Public CLoud Databases - Getting started with APIs](/pages/public_cloud/public_cloud_databases/databases_02_order_api).
+>> > To interact with your Public Cloud Databases services via the OVHcloud API, make sure you've mastered the basics first by consulting our guide: [Public Cloud Databases - Getting started with APIs](/pages/public_cloud/public_cloud_databases/databases_02_order_api).
 >> >
 >>
 >> To find the backup ID of an engine instance, use this following API call:
@@ -97,27 +110,27 @@ For more detailed information on the deployment modes and their technical specif
 >>
 >> ```console
 >> body : {
->>   "backups": {
->>     "regions": [
->>       "EU-WEST-PAR"                                        # Regions on which the backups are stored
->>     ],
->>     "time": "15:04:05"                                     # Time on which backups start every day
->>   },
->>   "disk": {
->>     "size": 240                                            # Service disk size 
->>   },
->>   "forkFrom": {
->>     "backupId": "********-****-****-****-3684de51065d",    # the previously recovered ID of the backup
->>     "serviceId": "********-****-****-****-ce179babccf3"    # the id of the engine instance to which this backup belongs
->>   },
->>   "maintenanceTime": "15:04:05",                           # Time on which maintenances can start every day
->>   "nodesPattern": {                                        # Pattern definition of the nodes in the cluster, not compatible with nodesList
+>>   "description": "laughable-peebles",                      # Name of the new service
+>>   "nodesPattern": {                                        # Service configuration
 >>     "flavor": "b3-8",
 >>     "number": 2,
 >>     "region": "EU-WEST-PAR"
 >>   },
->>   "plan": "production",
->>   "version": "16"
+>>   "plan": "production",                                    # Plan of the service
+>>   "disk": {
+>>     "size": 160                                            # Service disk size
+>>   },
+>>   "version": "17",
+>>   "ipRestrictions": [                                      # Connectivity settings
+>>     {
+>>       "ip": "1.2.3.4/32",
+>>       "description": ""
+>>     }
+>>   ],
+>>   "forkFrom": {
+>>     "serviceId": "********-****-****-****-ce179babccf3",   # The identifier of the origin service to which this backup belongs
+>>     "backupId": "********-****-****-****-3684de51065d"     # The identifier of the previously retrieved backup
+>>   },
 >> }
 >> ```
 >>
@@ -128,14 +141,14 @@ After your new 3-AZ database service has been successfully provisioned, it's cru
 
 1. Test the connection to your new service:
 
-- Use a database client (e.g., psql for PostgreSQL, mysql for MySQL) or a simple script to verify that you can connect to the new 3-AZ service's endpoint using its credentials.
-- Confirm that your data has been successfully migrated and is accessible.
+  - Use a database client (e.g., psql for PostgreSQL, mysql for MySQL) or a simple script to verify that you can connect to the new 3-AZ service's endpoint using its credentials.
+  - Confirm that your data has been successfully migrated and is accessible.
 
 2. Configure your application to use the new service:
 
-- Update your application's configuration files or environment variables to point to the new 3-AZ database service's connection string (host, port, username, password).
-- Restart your application to apply the changes.
-- Thoroughly test your application's functionality to ensure it operates correctly with the new database endpoint.
+  - Update your application's configuration files or environment variables to point to the new 3-AZ database service's connection string (host, port, username, password).
+  - Restart your application to apply the changes.
+  - Thoroughly test your application's functionality to ensure it operates correctly with the new database endpoint.
 
 ### Clean up
 
@@ -159,7 +172,6 @@ Follow these instructions to delete the old 1-AZ service:
 >> > @api {v1} /cloud DEL /cloud/project/{serviceName}/database/postgresql/{clusterId}
 >> >
 >>
-
 
 ## We want your feedback!
 
