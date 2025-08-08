@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Ativar os endereços de e-mail incluídos"
 excerpt: "Saiba como ativar os endereços de e-mail incluídos na sua oferta de alojamento web"
-updated: 2025-08-05
+updated: 2025-08-08
 ---
 
 ## Objetivo
@@ -14,9 +14,9 @@ Se adquiriu um alojamento web sem o associar diretamente a um nome de domínio, 
 
 ## Requisitos
 
-- Dispor de um [nome de domínio](https://www.ovh.com/pt/dominios/){.external} na sua Área de Cliente OVHcloud.
-- Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting){.external} (exceto ofertas "Alojamento gratuito 100M" e "Start10m").
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Dispor de um [nome de domínio](https://www.ovh.com/pt/dominios/) na sua Área de Cliente OVHcloud.
+- Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting) (exceto ofertas "Alojamento gratuito 100M" e "Start10m").
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -49,7 +49,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 > **Etapa 3**
 >>
 >> No marco **Configuração**, encontrará **Endereços de e-mail**.
->> Clique no botão `...`{.action} à direita e, a seguir, em `Ativar a solução de e-mail`{.action}.
+>> Clique no botão `...`{.action} à direita e, a seguir, em `Ativar a minha oferta de e-mail`{.action}.
 >>
 >> ![Ativação de e-mail](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
@@ -60,12 +60,12 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **4**.
 >> ![Ativação de e-mail](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> Se deseja usufruir de mais contas de e-mail incluídas, convidamos a encomendar uma [oferta de alojamento web](/links/web/hosting){.external} superior a partir da nossa página comercial.
+> Se deseja usufruir de mais contas de e-mail incluídas, convidamos a encomendar uma [oferta de alojamento web](/links/web/hosting) superior a partir da nossa página comercial.
 >
 > Atenção: a ativação da opção de e-mail pode levar alguns minutos. Receberá um e-mail para confirmar a instalação e a ativação da oferta MXPLAN. Inclui a gestão e a configuração dos seus endereços de e-mail.
 >
 
-### Conservação de endereços de e-mail antes da expiração do alojamento web
+### Conservação dos seus endereços de e-mail após a expiração do seu alojamento web
 
 Quando o seu alojamento web chega ao seu fim ou quando este deve ser eliminado, é possível conservar os seus endereços de e-mail.
 

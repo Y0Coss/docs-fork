@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - Activating email addresses included"
 excerpt: "Find out how to activate the email addresses included in your Web Hosting plan"
-updated: 2025-08-05
+updated: 2025-08-08
 ---
 
 ## Objective
@@ -14,9 +14,9 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 ## Requirements
 
-- A [domain name](/links/web/domains){.external} registered with OVHcloud or a [DNS zone](https://www.ovhcloud.com/en-gb/domains/dns-subdomain/){.external} of a domain name not registered with OVHcloud 
-- An [OVHcloud Web Hosting plan](/links/web/hosting) (excluding "100 MB free hosting" and "Start10m" offers)
-- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the Web Hosting plan
+- A [domain name](/links/web/domains) registered with OVHcloud or a [DNS zone](https://www.ovhcloud.com/en-au/domains/dns-subdomain/) of a domain name not registered with OVHcloud.
+- An [OVHcloud Web Hosting plan](/links/web/hosting) (excluding "100 MB free hosting" and "Start10m" offers).
+- Access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the Web Hosting plan.
 
 > [!warning]
 >
@@ -33,7 +33,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 > [!primary]
 >
-> For external domain names you need to activate the DNS zone first. Please read our documentation: [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create){.external}.
+> For external domain names you need to activate the DNS zone first. Please read our documentation: [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create).
 >
 
 Click on the tabs below to view each of the **4** steps.
@@ -66,7 +66,7 @@ Click on the tabs below to view each of the **4** steps.
 >>
 
 > [!primary]
-> If you would like to have more included email accounts, please order a higher [web hosting plan](/links/web/hosting){.external} from our webpage.
+> If you would like to have more included email accounts, please order a higher [web hosting plan](/links/web/hosting) from our webpage.
 >
 > Please note: it may take a few minutes for the email option to be enabled. You will receive an email confirming that you have installed and enabled the MX Plan solution. This includes managing and configuring your email accounts.
 >

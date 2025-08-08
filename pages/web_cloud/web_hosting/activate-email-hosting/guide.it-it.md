@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Attiva gli indirizzi email inclusi"
 excerpt: "Questa guida ti mostra come attivare gli account di posta inclusi nella tua soluzione di hosting Web"
-updated: 2025-08-05
+updated: 2025-08-08
 ---
 
 ## Obiettivo
@@ -14,9 +14,9 @@ Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’
 
 ## Prerequisiti
 
-- Aver registrato un [dominio](/links/web/domains){.external} nello Spazio Cliente OVHcloud
-- Disporre di una soluzione di [hosting Web](/links/web/hosting){.external} attiva (escluse le offerte "Hosting gratuito 100M" e "Start10m")
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Aver registrato un [dominio](/links/web/domains) nello Spazio Cliente OVHcloud.
+- Disporre di una soluzione di [hosting Web](/links/web/hosting) attiva (escluse le offerte "Hosting gratuito 100M" e "Start10m").
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -60,12 +60,12 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 >> ![Attivazione email](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 >>
 >> > [!primary]
->> > Per usufruire di più account email inclusi, ordina una [offerta di hosting web](/links/web/hosting){.external} superiore dalla nostra pagina commerciale.
+>> > Per usufruire di più account email inclusi, ordina una [offerta di hosting web](/links/web/hosting) superiore dalla nostra pagina commerciale.
 >> >
 >> > Attenzione: l’attivazione dell’opzione email potrebbe richiedere alcuni minuti. Riceverai un’email di conferma dell’installazione e dell’attivazione della soluzione MXPLAN. e include la gestione e la configurazione degli indirizzi email.
 >> >
 
-### Mantieni gli indirizzi email alla scadenza dell’hosting Web
+### Conservazione degli indirizzi email dopo la scadenza dell’hosting Web
 
 Una volta che la soluzione giunge a scadenza o è necessario eliminarla, è possibile conservare gli indirizzi email ad essa associati.
 

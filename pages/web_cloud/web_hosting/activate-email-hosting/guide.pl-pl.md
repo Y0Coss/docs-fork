@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Włącz konta e-mail zawarte w ofercie"
 excerpt: "Dowiedz się, jak aktywować konta e-mail zawarte w hostingu"
-updated: 2025-08-05
+updated: 2025-08-08
 ---
 
 ## Wprowadzenie 
@@ -14,9 +14,9 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](/links/web/domains){.external}i możliwość zarządzania nią w Panelu klienta
-- Posiadanie [hostingu WWW](/links/web/hosting){.external} (poza ofertami "Darmowy hosting 100M" i "Start 10M").
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Posiadanie [domeny](/links/web/domains) i możliwość zarządzania nią w Panelu klienta.
+- Posiadanie [hostingu WWW](/links/web/hosting) (poza ofertami "Darmowy hosting 100M" i "Start 10M").
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -48,8 +48,8 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >>
 > **Etap 3**
 >>
->> W ramce **Konfiguracja** znajduje się wzmianka **Konta e-mail**.
->> Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Aktywuj rozwiązanie e-mail`{.action}.
+>> W ramce **Konfiguracja** znajduje się wzmianka **Adresy e-mail**.
+>> Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Włącz mój pakiet e-mail`{.action}.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 >>
@@ -61,12 +61,12 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** kroki.
 >>
 
 > [!primary]
-> Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](/links/web/hosting){.external} na naszej stronie handlowej.
+> Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](/links/web/hosting) na naszej stronie handlowej.
 >
 > Uwaga: aktywacja opcji e-mail może zająć kilka minut. Otrzymasz e-mail potwierdzający instalację i aktywację oferty MXPLAN. Obejmuje to zarządzanie i konfigurację adresów e-mail.
 >
 
-### Zachowanie kont e-mail przed upływem terminu ważności usługi hostingowej
+### Zachowanie kont e-mail po wygaśnięciu hostingu
 
 Kiedy Twój hosting wygaśnie lub musi zostać usunięty, możesz zachować Twoje konta e-mail.
 
@@ -87,7 +87,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 > **Etap 3**
 >>
->> W ramce **Konfiguracja** znajduje się wzmianka **Konta e-mail**.
+>> W ramce **Konfiguracja** znajduje się wzmianka **Adresy e-mail**.
 >> Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Odłącz opcję e-mail`{.action}.
 >>
 >> ![email-detach](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
@@ -120,7 +120,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 >>
 > **Etap 3**
 >>
->> W ramce **Konfiguracja** znajduje się wzmianka **Konta e-mail**.
+>> W ramce **Konfiguracja** znajduje się wzmianka **Adresy e-mail**.
 >> Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Rezygnacja z opcji e-mail`{.action}.
 >>
 >> ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}

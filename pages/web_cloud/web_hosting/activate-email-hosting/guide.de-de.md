@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Inklusiv-E-Mail-Adressen aktivieren"
 excerpt: "Diese Anleitung erklärt, wie Sie die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren können"
-updated: 2025-08-05
+updated: 2025-08-08
 ---
 
 ## Ziel 
@@ -11,7 +11,6 @@ Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu 
 **Diese Anleitung erklärt, wie Sie die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren können.**
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/oqWovkSP85A?si=1rnqBvhVLdhr2rI5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ## Voraussetzungen
 
@@ -67,7 +66,7 @@ Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 > Achtung: Die Aktivierung der Option E-Mail kann einige Minuten in Anspruch nehmen. Sie erhalten eine E-Mail, die die Installation und Aktivierung des Dienstes MX Plan bestätigt. Dies ist Voraussetzung zur Erstellung und Konfiguration Ihrer E-Mail-Accounts.
 >
 
-### Sichern Ihrer E-Mail-Accounts, bevor Ihr Webhosting endet
+### Speicherung Ihrer E-Mail-Adressen nach Ablauf Ihres Webhostings
 
 Wenn Ihr Hosting abläuft oder gelöscht werden muss, können Sie dennoch Ihre E-Mail-Accounts beibehalten.
 
@@ -121,7 +120,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 > **Schritt 3**
 >>
 >> Im Feld **Konfiguration** finden Sie die Adresse unter **E-Mail-Adressen**.
->> Klicken Sie rechts davon auf `...`{.action} und danach auf `Die Option "E-Mail" kündigen`{.action}.
+>> Klicken Sie rechts davon auf `...`{.action} und danach auf `Die Option „E-Mail“ kündigen`{.action}.
 >>
 >> ![Aktivierung der E-Mail-Adressen](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}
 >>

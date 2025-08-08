@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer les adresses e-mails incluses"
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
-updated: 2025-08-05
+updated: 2025-08-08
 ---
 
 ## Objectif
@@ -14,9 +14,9 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](/links/web/domains){.external} dans votre espace client OVHcloud.
-- Posséder une [offre d'hébergement web](/links/web/hosting){.external} (hors offres « Hébergement gratuit 100M » et « Start10m »).
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'un [nom de domaine](/links/web/domains) dans votre espace client OVHcloud.
+- Posséder une [offre d'hébergement web](/links/web/hosting) (hors offres « Hébergement gratuit 100M » et « Start10m »).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -61,12 +61,12 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 
 > [!primary]
-> Si vous souhaitez obtenir davantage de comptes e-mails inclus, nous vous invitons à commander une [offre d'hébergement web](/links/web/hosting){.external} supérieure depuis notre page commerciale.
+> Si vous souhaitez obtenir davantage de comptes e-mails inclus, nous vous invitons à commander une [offre d'hébergement web](/links/web/hosting) supérieure depuis notre page commerciale.
 >
 > Attention : l'activation de l'option e-mail peut prendre quelques minutes. Vous recevrez un e-mail pour vous confirmer l'installation et l'activation de l'offre MXPLAN. Elle inclut notamment la gestion et la configuration de vos adresses e-mail.
 >
 
-### Conservation de vos adresses e-mail avant l'expiration de l'hébergement web
+### Conservation de vos adresses e-mail après l'expiration de l'hébergement web
 
 Lorsque votre hébergement arrive à expiration ou qu'il doit être supprimé, il est possible de conserver vos adresses e-mail.
 
