@@ -288,7 +288,7 @@ Haga clic en el botón `...`{.action} situado al final de la línea correspondie
 
 [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
-[Primeros pasos con el servicio Hosted Exchange](/pages/web_cloud/email_and_colaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+[Primeros pasos con el servicio Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

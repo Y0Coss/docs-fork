@@ -198,7 +198,7 @@ In unserem Beispiel ist dies eine **Weiterleitung mit lokaler Kopie** (siehe [Sc
 
 Gehen Sie auf das [webmail](/links/web/email). Geben Sie **E-Mail-Adresse** und **Passwort** ein, um sich anzumelden.
 
-![emails](bilder/webmail.png){.thumbnail}
+![emails](images/webmail.png){.thumbnail}
 
 Die Erstellung einer Weiterleitung erfolgt über Posteingangsregeln, im Webmail auch als „Filter“ bezeichnet. Diese Regeln, die beim Empfang einer E-Mail angewendet werden, erlauben es, eine eingehende E-Mail weiterzuleiten oder umzuleiten.
 
@@ -292,13 +292,13 @@ Führen Sie die folgenden Schritte aus, indem Sie auf die Registerkarten klicken
 >>
 >> Klicken Sie auf die Schaltfläche &#9881; oben rechts in Ihrem Webmail-Fenster und dann auf `Einstellungen`{.action}.
 >>
->> ![Zimbra](images/Zimbra_Settings01.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_settings01.png){.thumbnail .w-640}
 >>
 > **Schritt 2**
 >>
 >> Klicken Sie im Parameterfenster auf den Abschnitt `Filter`{.action} und dann auf die Schaltfläche `Filter hinzufügen`{.action}.
 >>
->> ![Zimbra](images/Zimbra_redirection02.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_redirection02.png){.thumbnail .w-640}
 >>
 > **Schritt 3**
 >>
@@ -310,7 +310,7 @@ Führen Sie die folgenden Schritte aus, indem Sie auf die Registerkarten klicken
 >> - Klicken Sie unten auf `+ Aktion hinzufügen`{.action} (Add an action) und wählen Sie `In Empfangsordner verschieben` (Keep in Inbox).
 >> - Klicken Sie auf `Speichern`{.action} aus dem Fenster Ihres Filters und auch aus dem Fenster der Einstellungen.
 >>
->> ![Zimbra](images/Zimbra_redirection03.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_redirection03.png){.thumbnail .w-640}
 >>
 
 Weitere Informationen zur Verwendung von Zimbra Webmail finden Sie in unserer Anleitung „[Zimbra Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)“.
@@ -362,7 +362,7 @@ Gehen Sie auf das [webmail](/links/web/email). Geben Sie **E-Mail-Adresse** und 
 >>
 >> Gehen Sie im Fenster **Optionen** in der linken Spalte in die Kategorie **Automatische Verarbeitung** im Abschnitt **Post** und klicken Sie dann auf `Posteingangs- und Aufbewahrungsregeln`{.action}.
 >>
->> ![E-Mails](images/OWA-redirect-del-01.png){.thumbnail .w-640}
+>> ![E-Mails](images/owa-redirect-del-01.png){.thumbnail .w-640}
 >>
 >> Hier finden Sie ein Fenster, in dem Sie Ihre Weiterleitungen und Filter verwalten können.
 >>
@@ -370,7 +370,7 @@ Gehen Sie auf das [webmail](/links/web/email). Geben Sie **E-Mail-Adresse** und 
 >>
 >> Klicken Sie im Verwaltungsfenster für die **Posteingangsregeln** auf die Weiterleitung, die Sie löschen möchten. Sie sollte hervorgehoben sein. Klicken Sie dann auf das Papierkorbsymbol.
 >>
->> ![E-Mails](images/OWA-redirect-del-02.png){.thumbnail .w-640}
+>> ![E-Mails](images/owa-redirect-del-02.png){.thumbnail .w-640}
 >>
 
 #### Zimbra <a name="redirect-delete-zimbra"></a>
@@ -382,19 +382,19 @@ Gehen Sie auf das [webmail](/links/web/email). Geben Sie **E-Mail-Adresse** und 
 >>
 >> Nachdem Sie sich im Zimbra Webmail-Interface eingeloggt haben, klicken Sie auf den Button &#9881; oben rechts in Ihrem Webmail-Fenster und dann auf `Einstellungen`{.action}.
 >>
->> ![Zimbra](images/Zimbra_Settings01.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_settings01.png){.thumbnail .w-640}
 >>
 > **Schritt 2**
 >>
 >> Klicken Sie im Parameterfenster auf den Abschnitt `Filter`{.action}.
 >>
->> ![Zimbra](images/Zimbra_redirect-del-01.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_redirect-del-01.png){.thumbnail .w-640}
 >>
 > **Schritt 3**
 >>
 >> Klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden Filter und dann auf `Löschen`{.action}.
 >>
->> ![Zimbra](images/Zimbra_redirect-del-02.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_redirect-del-02.png){.thumbnail .w-640}
 >>
 
 ### Alias erstellen <a name="alias"></a>
@@ -449,25 +449,25 @@ Um einen Alias für einen MX Plan Roundcube E-Mail-Account zu erstellen, müssen
 >> - Klicken Sie auf den Button `⁝`{.action} rechts neben dem betreffenden E-Mail-Account.
 >> - Klicken Sie auf `Bearbeiten`{.action}.
 >>
->> ![Zimbra](images/Zimbra_alias01.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
 >>
 > **Schritt 2**
 >>
 >> Das Fenster zur Konfiguration Ihres E-Mail-Accounts wird angezeigt. Klicken Sie oben auf den Tab `Alias`{.action}.
 >>
->> ![Zimbra](images/Zimbra_alias02.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_alias02.png){.thumbnail .w-640}
 >>
 > **Schritt 3**
 >>
 >> Das folgende Fenster enthält eine Liste der Aliase, die Sie dem betreffenden Account zuordnen können. Klicken Sie auf den Button `Alias erstellen`{.action}.
 >>
->> ![Zimbra](images/Zimbra_alias03.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_alias03.png){.thumbnail .w-640}
 >>
 > **Schritt 4**
 >>
 >> Legen Sie die Adresse Ihres Alias fest und wählen Sie einen der mit Ihrem Zimbra Dienst verbundenen Domainnamen aus.
 >>
->> ![Zimbra](images/Zimbra_alias04.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_alias04.png){.thumbnail .w-640}
 >>
 
 ### Alias löschen <a name="alias-delete"></a>
@@ -516,19 +516,19 @@ Klicken Sie auf den Button `...`{.action} rechts neben der betreffenden Weiterle
 >> - Klicken Sie auf den Button `⁝`{.action} rechts neben dem betreffenden E-Mail-Account.
 >> - Klicken Sie auf `Bearbeiten`{.action}.
 >>
->> ![Zimbra](images/Zimbra_alias01.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_alias01.png){.thumbnail .w-640}
 >>
 > **Schritt 2**
 >>
 >> Das Fenster zur Konfiguration Ihres E-Mail-Accounts wird angezeigt. Klicken Sie oben auf den Tab `Alias`{.action}.
 >>
->> ![Zimbra](images/Zimbra_alias02.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_alias02.png){.thumbnail .w-640}
 >>
 > **Schritt 3**
 >>
 >> Das folgende Fenster enthält eine Liste der Aliase, die Sie dem betreffenden Account zuordnen können. Klicken Sie auf den Button `Alias erstellen`{.action}.
 >>
->> ![Zimbra](images/Zimbra_alias03.png){.thumbnail .w-640}
+>> ![Zimbra](images/zimbra_alias03.png){.thumbnail .w-640}
 >>
 
 ## Weiterführende Informationen

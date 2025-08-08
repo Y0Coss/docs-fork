@@ -534,15 +534,15 @@ Clique no botão `...`{.action} à direita do reencaminhamento em causa e, a seg
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/email_generalities)
+[Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
-[Primeiros passos com o serviço Hosted Exchange](/pages/web_cloud/email_and_colaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+[Primeiros passos com o serviço Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-[Primeiros passos com o serviço Private Exchange](/pages/web_cloud/email_and_colaborative_solutions/microsoft_exchange/exchange_starting_private)
+[Primeiros passos com o serviço Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
-[Primeiros passos com a solução E-mail Pro](/pages/web_cloud/email_and_colaborative_solutions/email_pro/first_config)
+[Primeiros passos com a solução E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-[Primeiros passos com a oferta Zimbra](/pages/web_cloud/email_and_colaborative_solutions/zimbra/getting_started_zimbra)
+[Primeiros passos com a oferta Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 

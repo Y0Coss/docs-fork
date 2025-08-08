@@ -357,7 +357,7 @@ Przejdź do [webmail](/links/web/email). Wpisz **adres e-mail** i **hasło**, ab
 >>
 >> Po zalogowaniu się do interfejsu Webmail OWA, w prawym górnym rogu kliknij symbol koła zębatego, a następnie kliknij `Opcje`{.action}.
 >>
->> ![emaile](images/emaile-all-01.png){.thumbnail .w-640}
+>> ![emaile](images/emails-all-01.png){.thumbnail .w-640}
 >>
 > **Etap 2**
 >>
