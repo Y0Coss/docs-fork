@@ -135,7 +135,7 @@ Um den Webseitenzugriff auf Downloads zu verbessern und ein optimiertes Ranking 
 
 Infolgedessen verbessern Sie die Reaktionszeiten für Besucher auf der ganzen Welt, da die statischen Teile Ihrer Website direkt von Ihrem Besucher an der nächstgelegenen Präsenzstelle (PoP) heruntergeladen werden.
 
-Entdecken Sie hier unsere [CDN Lösung](/links/network/cdn-infrastructure).
+Entdecken Sie hier unsere [CDN Lösung](/links/web/hosting-options-cdn).
 
 ### Schritt 6: Überprüfen des verwendeten Content Management Systems (CMS) und der verwendeten Plugins
 

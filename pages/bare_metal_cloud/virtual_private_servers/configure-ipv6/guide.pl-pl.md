@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja IPv6 na serwerze VPS"
 excerpt: "Dowiedz się, jak skonfigurować IPv6 na VPS OVHcloud"
-updated: 2025-07-24
+updated: 2025-08-07
 ---
 
 > [!primary]

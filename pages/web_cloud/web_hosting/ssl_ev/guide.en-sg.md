@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to activate a Sectigo EV SSL certificate"
 excerpt: "Find out how to order and install a Sectigo EV SSL certificate for an OVHcloud web hosting plan"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Objective
@@ -86,6 +86,18 @@ If you need to activate an SSL certificate for several domain names/subdomains d
 > If you order a Sectigo EV SSL certificate without checking the previous points, you will need to make a correction at a later date. You will then need to delete the Sectigo EV SSL certificate you have previously subscribed to **without being able to receive a refund**, then order a new one. The goal is for the new Sectigo EV SSL certificate to include both your domain name `domain.tld` and its subdomain in “www” `www.domain.tld`.
 >
 > As a reminder, if you subscribe to a Sectigo EV SSL certificate directly for a subdomain (example: `sub.domain.tld`), you are not affected by this situation.
+
+> [!primary]
+>
+> **Information on migrating to the new SSL certificate management interface:**
+>
+> The remainder of Part 1.1 is aimed at customers whose web hosting services have not yet migrated to the new SSL certificate management interface.
+> To check if this migration has been carried out, go to your Web Hosting plan in the OVHcloud Control Panel, and check the `SSL certificates` tab.
+> If the `SSL certificates` tab is present, your service has already migrated to the new management interface. If this is the case, please refer to [this guide](/pages/web_cloud/web_hosting/ssl_management) directly to manage your SSL certificate.
+>
+> For technical reasons, not all of our customers' web hosting services can be migrated at once. This migration process is carried out automatically over a period of a few weeks, with no impact on the operation of your web hosting services, and no intervention or action required on your part.
+>
+> All web hosting services will eventually work with the new SSL certificate management interface.
 
 To order the Sectigo EV SSL certificate, perform the following steps:
 

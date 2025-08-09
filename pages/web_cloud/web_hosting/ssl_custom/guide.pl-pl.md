@@ -1,7 +1,7 @@
 ---
 title: "Hosting - Instalacja spersonalizowanego certyfikatu SSL"
 excerpt: "Dowiedz się, jak importować i instalować spersonalizowany certyfikat SSL na Twoim hostingu OVHcloud"
-updated: 2025-02-20
+updated: 2025-06-16
 ---
 
 ## Wprowadzenie
@@ -148,8 +148,20 @@ Jeśli rozpoczniesz od razu lekturę tego przewodnika, ponieważ już posiadasz 
 
 **Przed zakończeniem instalacji certyfikatu SSL na Twoim hostingu** sprawdź, czy **wszystkie domeny i/lub subdomeny**, dla których jest dostępny certyfikat SSL:
 
-- wskazują na adres IP Twojego hostingu;
-- są zadeklarowane w opcji MultiSite na Twoim hostingu;
+- wskazują na adres IP Twojego hostingu.
+- są zadeklarowane w opcji MultiSite na Twoim hostingu.
+
+> [!primary]
+>
+> **Informacje o migracji do nowego interfejsu zarządzania certyfikatami SSL:**
+>
+> Dalsza część tego przewodnika jest skierowana do klientów, których usługi hostingowe nie zostały jeszcze przeniesione do nowego interfejsu zarządzania certyfikatami SSL.
+> Aby sprawdzić, czy migracja została wykonana, przejdź do strony Hosting w Panelu klienta i w zakładce `Certyfikaty SSL`.
+> Jeśli zakładka `Certyfikaty SSL` jest aktywna, Twoja usługa została już przeniesiona do nowego panelu zarządzania. W takim przypadku zapoznaj się z [ten przewodnik](/pages/web_cloud/web_hosting/ssl_management) i zarządzaj certyfikatem SSL.
+>
+> Ze względów technicznych nie wszystkie usługi hostingowe naszych klientów mogą zostać migrowane za jednym razem. Migracja jest rozdzielona na kilka tygodni i jest wykonywana automatycznie. Nie wpływa ona na działanie usług hostingowych, nie wymaga interwencji ani nie wymaga żadnego działania ze strony użytkownika.
+>
+> Po pewnym czasie wszystkie usługi hostingowe będą działały w nowym interfejsie zarządzania certyfikatami SSL.
 
 Sprawdź również, czy:
 
