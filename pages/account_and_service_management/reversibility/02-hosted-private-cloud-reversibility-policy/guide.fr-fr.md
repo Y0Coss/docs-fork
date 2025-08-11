@@ -9,7 +9,6 @@ Ce document est la politique de réversibilité du produit Managed Dedicated Clo
 
 Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
-
 ## Liste des fonctionnalités
 
 Les fonctionnalités du produit sont réparties en trois catégories :
