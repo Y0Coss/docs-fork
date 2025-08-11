@@ -25,8 +25,8 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 * [Charger les variables d'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables)
 * [Disposer de vos identifiants API et de votre clé d'autorisation OVHcloud](/pages/manage_and_operate/api/first-steps)
 * [Une clé SSH](/pages/public_cloud/compute/public-cloud-first-steps)
-* [Le provider Terraform OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
-* [Le provider Terraform OVHcloud](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}
+* [Le provider Terraform OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs)
+* [Le provider Terraform OVHcloud](https://registry.terraform.io/providers/ovh/ovh/latest/docs)
 
 > [!primary]
 >
