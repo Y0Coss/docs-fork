@@ -14,9 +14,9 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](/links/web/domains){.external}i możliwość zarządzania nią w Panelu klienta
-- Posiadanie [hostingu WWW](/links/web/hosting){.external} (poza ofertami "Darmowy hosting 100M" i "Start 10M").
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Posiadanie [domeny](/links/web/domains)i możliwość zarządzania nią w Panelu klienta
+- Posiadanie [hostingu WWW](/links/web/hosting) (poza ofertami "Darmowy hosting 100M" i "Start 10M").
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -31,7 +31,7 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 
 ### Aktywacja pakietu e-mail
 
-Zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting.
+Zaloguj się do [Panelu klienta](/links/manager), kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting.
 
 W polu `Konfiguracja` znajduje się wzmianka `Konta e-mail`. Kliknij przycisk `…`{.action} po prawej stronie, a następnie przycisk `Aktywuj rozwiązanie e-mail`{.action}.
 
@@ -42,7 +42,7 @@ Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać
 ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](/links/web/hosting){.external} na naszej stronie handlowej.
+> Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](/links/web/hosting) na naszej stronie handlowej.
 >
 > Uwaga: aktywacja opcji e-mail może zająć kilka minut. Otrzymasz e-mail potwierdzający instalację i aktywację oferty MXPLAN. Obejmuje to zarządzanie i konfigurację adresów e-mail.
 >
@@ -51,7 +51,7 @@ Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać
 
 Kiedy Twój hosting wygaśnie lub musi zostać usunięty, możesz zachować Twoje konta e-mail.
 
-Zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting.
+Zaloguj się do [Panelu klienta](/links/manager), kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting.
 
 W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki `Konta e-mail`, a następnie kliknij przycisk `Odłącz opcję e-mail`{.action}.
 
@@ -67,7 +67,7 @@ Możesz trwale usunąć usługę e-mail powiązaną z Twoim hostingiem.
 >
 > Uwaga: operacja ta jest nieodwracalna. Nie ma możliwości ponownej aktywacji usługi e-mail po zrezygnowaniu z tej opcji.
 
-Zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting.
+Zaloguj się do [Panelu klienta](/links/manager), kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting.
 
 W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki `Konta e-mail`, a następnie kliknij przycisk `Rezygnacja z opcji e-mail`{.action}.
 

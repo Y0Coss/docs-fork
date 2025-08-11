@@ -14,7 +14,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 ## Requirements
 
-- a [domain name](/links/web/domains){.external} registered with OVHcloud
+- a [domain name](/links/web/domains) registered with OVHcloud
 - an [OVHcloud Web Hosting plan](/links/web/hosting) (excluding "100 MB free hosting" and "Start10m" offers)
 - access to the [OVHcloud Control Panel](/links/manager) with the necessary permissions to manage the Web Hosting plan
 
@@ -42,7 +42,7 @@ The activation window appears. Choose the domain name you would like to link you
 ![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
-> If you would like to have more included email accounts, please order a higher [web hosting plan](/links/web/hosting){.external} from our webpage.
+> If you would like to have more included email accounts, please order a higher [web hosting plan](/links/web/hosting) from our webpage.
 >
 > Please note: it may take a few minutes for the email option to be enabled. You will receive an email confirming that you have installed and enabled the MX Plan solution. This includes managing and configuring your email accounts.
 >
