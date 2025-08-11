@@ -34,8 +34,6 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 > [!primary]
 >
 > For external domain names you need to activate the DNS zone first. Please read our documentation: [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create).
->
-
 Click on the tabs below to view each of the **4** steps.
 
 > [!tabs]
