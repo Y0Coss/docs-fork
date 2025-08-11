@@ -164,6 +164,76 @@ Quelques exemples de fichiers de configuration JSON :
 }
 ```
 
+**Accès en lecture sur les objets seulement à des ips specifiques**
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetObject",
+      "s3:ListBucket",
+      "s3:ListBucketVersions"
+    ],
+    "Resource": [
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "IpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+}
+```
+
+**Accès à toutes les opérations à des ips spécifiques en whitelistant les ips autorisées**
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Deny",
+    "Action": "s3:*",
+    "Resource": [
+      "arn:aws:s3:::companybucket",
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "NotIpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+} 
+```
+
+**Refuser l'accès en lecture aux objets à des ips spécifiques en blacklistant les ips non-autorisées**
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetObject",
+      "s3:ListBucket",
+      "s3:ListBucketVersions"
+    ],
+    "Resource": [
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "NotIpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+}
+```
+
+
 ### Liste des actions supportées
 
 | Action | Scope |
