@@ -164,6 +164,77 @@ Some examples of JSON configuration files:
 }
 ```
 
+
+**Allow read objects only for specific ips**
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetObject",
+      "s3:ListBucket",
+      "s3:ListBucketVersions"
+    ],
+    "Resource": [
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "IpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+}
+```
+
+**Allow all operations for specific ips by whitelisting authorized ips**
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Deny",
+    "Action": "s3:*",
+    "Resource": [
+      "arn:aws:s3:::companybucket",
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "NotIpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+} 
+```
+
+**Deny read objects for specific ips by blacklisting unauthorized ips**
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetObject",
+      "s3:ListBucket",
+      "s3:ListBucketVersions"
+    ],
+    "Resource": [
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "NotIpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+}
+```
+
+
 ### List of supported actions
 
 | Action | Scope |
