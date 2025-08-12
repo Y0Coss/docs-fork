@@ -129,7 +129,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 |Champs|Détail|
 |---|---|
 |E-mail|Renseignez l'adresse e-mail que vous souhaitez notifier.|
-|Type de notification|Choisissez « Notification uniquement » pour recevoir un e-mail vous avertissant d'un nouveau message sur le répondeur. Sélectionnez « Message joint en attachement » pour recevoir la notification par e-mail ainsi que le message au format souhaité en pièce jointe.|
+|Type de notification|Choisissez « Notification uniquement » pour recevoir un e-mail vous avertissant d'un nouveau message sur le répondeur. Sélectionnez « Message joint en attachement » pour recevoir la notification par e-mail ainsi que le message au format souhaité en pièce jointe.<br><br>**Nouvelle fonctionnalité en Bêta** : Il est à présent possible de recevoir par e-mail une transcription écrite du message générée par Intelligence Artificielle.<br> Pour cela, choisissez « Transcription et message joint en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir la transcription écrite et le message vocal au format souhaité en pièce jointe, ou « Transcription en attachement (Bêta, générée par Intelligence Artificielle.) » pour recevoir uniquement la transcription écrite du message en pièce jointe.|
 
 ![repondeur](images/voicemail-step6.png){.thumbnail}
 
