@@ -38,7 +38,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 >
 > **Identifier la technologie e-mail de votre offre MX Plan.**
 >
-> En fonction de la date d’activation de votre offre MX Plan ou d’une migration récente, la technologie e-mail associée peut différer. Cette version est caractérisée par l'interface de son webmail. Pour l'identifier :
+> En fonction de la date d’activation de votre offre MX Plan ou d’une migration récente, la technologie e-mail associée peut différer. Celle-ci est caractérisée par l'interface de son webmail. Pour l'identifier :
 >
 > - Depuis l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action} sous `Webmail`{.action}.
 >
