@@ -249,7 +249,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 >> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
 > **Zimbra**
->> L'offre Zimbra Starter comprend 15 Go de stockage, si vous souhaitez augmenter la capacité, il est possible de basculer vers l'offre Zimbra Pro.
+>> L'offre Zimbra Starter comprend 15 Go de stockage. Si vous souhaitez augmenter la capacité, vous pouvez basculer vers l'offre Zimbra Pro.
 >> Depuis l'onglet `Compte e-mail`{.action} de votre plateforme, cliquez sur le bouton `...`{.action} à droite du compte à modifier, puis cliquez sur `Mettre à niveau`{.action}.<br><br>
 >> ![email](images/email-quota-more03.png){.thumbnail}<br>
 
