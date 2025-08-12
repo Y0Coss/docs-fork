@@ -138,11 +138,23 @@ Pour cela, cliquez sur les onglets ci-dessous afin d'afficher successivement cha
 >>
 >> ![DNS zones](/pages/assets/screens/control_panel/product-selection/web-cloud/dns-zones.png){.thumbnail}
 >>
+>> > [!primary]
+>> >
+>> > Si votre nom de domaine n'apparaît pas dans la liste qui s'affiche, cela signifie que sa zone DNS n'est pas gérée depuis votre espace client OVHcloud.<br>
+>> > Déterminez son « bureau d'enregistrement » via notre outil [WHOIS](/links/web/domains-whois) et les serveurs DNS auxquels il est associé.<br>
+>> > Retrouvez et modifiez la zone DNS concernée en conséquence en suivant la rubrique dédiée du guide « [Partager son hébergement entre plusieurs sites - ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+>>
 > **Etape 3**
 >>
->> Le tableau qui apparaît affiche pour chaque ligne un enregistrement DNS lié à votre nom de domaine chez OVHcloud. Vous avez la possibilité d'en filtrer le contenu par type d'enregistrement ou par domaine.
+>> Le tableau qui apparaît affiche pour chaque ligne un enregistrement DNS lié à votre nom de domaine chez OVHcloud. Vous avez la possibilité d'en filtrer le contenu par type d'enregistrement ou par nom de domaine.
 >>
 >> ![dns zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab.png){.thumbnail}
+>>
+>> > [!primary]
+>> >
+>> > Si l'onglet `Zone DNS`{.action} de votre nom de domaine s'affiche de la façon suivante :<br><br>![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}<br>
+>> >
+>> > Cela signifie que votre nom de domaine n'est pas géré depuis votre espace client OVHcloud.<br>Déterminez son « bureau d'enregistrement » via notre outil [WHOIS](/links/web/domains-whois) et les serveurs DNS auxquels il est associé.<br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant la rubrique dédiée du guide « [Partager son hébergement entre plusieurs sites - ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 >>
 >> Passez à l'étape 4 pour visualiser les différents scénarios possibles et les actions à entreprendre.
 >>
@@ -150,10 +162,10 @@ Pour cela, cliquez sur les onglets ci-dessous afin d'afficher successivement cha
 >>
 >> |Scénarios possibles|Action à entreprendre|
 >> |---|---|
->> |Dans la zone DNS active, votre nom de domaine/sous-domaine pointe vers l'adresse IP de votre hébergement web avec un enregistrement de type A (pour une IPv4) ou AAAA (pour une IPv6).<br><br>![zoneDNS_IP2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}|Ceci indique que la configuration de votre nom de domaine est correcte.<br><br> Patientez le temps de la propagation DNS si la modification est récente.<br><br> N'oubliez pas non plus de redémarrer vos appareils (PC, smartphone, box, etc.) et de vider le cache de votre navigateur internet. En effet, l'ancienne configuration de votre nom de domaine peut être mise en cache : ce qui peut ralentir l'affichage de votre mise à jour.|
->> |La zone DNS active ne comporte pas d'enregistrements de type A ou AAAA reliant votre nom de domaine/sous-domaine à l'adresse IP de votre hébergement web. Ou l'enregistrement existant pointe sur une autre adresse IP.|Ajoutez le nouvel enregistrement de type A ou AAAA ou corrigez l'enregistrement existant en suivant [ce guide](/pages/web_cloud/domains/dns_zone_edit).|
->> |Votre nom de domaine n'apparaît pas dans la partie `Zones DNS`{.action} de votre espace client OVHcloud.<br><br>Ou l'onglet `Zone DNS`{.action} de votre nom de domaine s'affiche de la façon suivante :<br><br>![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|Cela signifie que votre nom de domaine n'est pas géré depuis votre espace client OVHcloud.<br><br>Déterminez son « registrar » via notre outil [WHOIS](/links/web/domains-whois) et les serveurs DNS auxquels il est associé. <br><br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant la rubrique dédiée du guide « [Partager son hébergement entre plusieurs sites - ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».|
->> |Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre nom de domaine en conséquence en suivant notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit). »|
+>> |Dans la zone DNS active, votre nom de domaine/sous-domaine pointe vers l'adresse IP de votre hébergement web avec un enregistrement de type A (pour une IPv4) ou AAAA (pour une IPv6).<br><br>![zoneDNS_IP2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}|Ceci indique que la configuration de votre nom de domaine est correcte.<br> Patientez le temps de la propagation DNS si la modification est récente.<br><br>Redémarrez vos appareils (PC, smartphone, box, etc.) et videz le cache de votre navigateur internet. L'ancienne configuration de votre nom de domaine peut être mise en cache : ce qui peut ralentir l'affichage de votre mise à jour.|
+>> |La zone DNS active ne comporte pas d'enregistrements de type A ou AAAA reliant votre nom de domaine/sous-domaine à l'adresse IP de votre hébergement web.|Ajoutez le nouvel enregistrement DNS de type A ou AAAA ou corrigez l'enregistrement existant en suivant [ce guide](/pages/web_cloud/domains/dns_zone_edit).|
+>> |L'enregistrement DNS de type A ou AAAA existant dans la zone DNS pour otre nom de domaine/sous-domaine pointe sur une autre adresse IP que celle de votre hébergement web.|Ajoutez le nouvel enregistrement DNS de type A ou AAAA ou corrigez l'enregistrement existant en suivant [ce guide](/pages/web_cloud/domains/dns_zone_edit).|
+>> |Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifiez les serveurs DNS de votre nom de domaine en conséquence en suivant notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit). »|
 
 ## Aller plus loin <a name="go-further"></a>
 
