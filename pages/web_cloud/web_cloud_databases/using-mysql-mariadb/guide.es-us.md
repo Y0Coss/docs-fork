@@ -79,7 +79,7 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña=contraseña nom
 - Cumplimente los campos como se indica a continuación y acepte con el botón `OK`{.action}:
     - **Name**: Indique un nombre.
     - **Driver**: Seleccione `MySQL Driver`.
-    - **URL**: Indique la dirección del servidor y el puerto en formato `jdbc:mysql://servidor:puerto`.
+    - **URL**: Indique la dirección del servidor y el puerto en formato `jdbc:mysql://server:port`.
     - **User Name**: Indique el nombre de usuario.
     - **Password**: Indique la contraseña.
 
