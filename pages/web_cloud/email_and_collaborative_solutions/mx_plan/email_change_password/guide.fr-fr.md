@@ -26,7 +26,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 
 > [!primary]
 >
-> Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consulter nos guides de configurations pour votre logiciel de messagerie.
+> Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consulter le guide de configuration correspondant à votre logiciel de messagerie.
 
 ### Modifier le mot de passe depuis l'espace client <a name="controlpanel"></a>
 
