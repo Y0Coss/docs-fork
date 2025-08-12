@@ -124,7 +124,7 @@ Sur la nouvelle fenêtre qui apparaît, commencez par renseigner votre mot de pa
 
 Rendez-vous sur la page [Webmail](/links/web/email). Saisissez votre adresse e-mail et le mot de passe puis cliquez sur `Connexion`{.action}.
 
-Cliquez sur le nom de votre compte e-mail dans la partie supérieure droite de votre interface. Depuis ce menu, vous pourrez `Changer le mot de passe`{.action} .
+Cliquez sur le nom de votre compte e-mail dans la partie supérieure droite de votre interface. Depuis ce menu, vous pourrez `Changer le mot de passe`{.action}.
 
 ![Zimbra - préférences](images/zimbra-password.png){.thumbnail}
 
