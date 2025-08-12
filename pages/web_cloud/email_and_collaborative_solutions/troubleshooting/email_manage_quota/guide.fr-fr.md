@@ -240,7 +240,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 >>
 > **Email Pro**
 >>
->> L'offre Email Pro dispose d'une capacité unique de 10Go. Vous pouvez opter pour une migration vers une offre [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange) ou [**Zimbra** ou 50 Go](/links/web/emails-zimbra). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform) ».
+>> L'offre Email Pro dispose d'une capacité unique de 10Go. Vous pouvez opter pour une migration vers une offre [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange) ou [**Zimbra** de 50 Go](/links/web/emails-zimbra). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform) ».
 >>
 > **Exchange**
 >>
