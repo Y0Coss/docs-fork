@@ -108,7 +108,7 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña nombre_de_la_BD
 - Cumplimente los campos como se indica a continuación y acepte con el botón `{.action}OK:
     - **Name**: Indique un nombre.
     - **Driver**: Seleccione « MySQL Driver »
-    - **URL**: Indique la dirección del servidor y el puerto en formato \*\*jdbc:mysql://server:port
+    - **URL**: Indique la dirección del servidor y el puerto en formato jdbc:mysql://server:port
     - **User name**: Indique el nombre de usuario.
     - **Password**: Indique la contraseña.
 
@@ -167,7 +167,7 @@ mysql --host=servidor --user=nombre_de_usuario --port=puerto --password=contrase
 - Cumplimente los campos como se indica a continuación y acepte con el botón `{.action}OK:
     - **Name**: Indique un nombre.
     - **Driver**: Seleccione « PostgreSQL »
-    - **URL**: Indique la dirección del servidor y el puerto en formato \*\*jdbc:postgresql://server:port/database
+    - **URL**: Indique la dirección del servidor y el puerto en formato jdbc:postgresql://server:port/database
     - **User name**: Indique el nombre de usuario.
     - **Password**: Indique la contraseña.
 
