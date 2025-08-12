@@ -36,7 +36,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
 >>
 > **Etapa 3**
 >>
->> En el recuadro **Información general** de la página que se abre, obtenga el número del cluster con la mención `Clúster`{.action} (3 cifras comprendidas entre `0` y `9`) y el número del filer con la mención `Servidor de archivos`{.action}.
+>> En el recuadro **Información general** de la página que se abre, obtenga el número del cluster bajo la mención **Clúster** (3 cifras comprendidas entre `0` y `9`) y el número del filer bajo la mención **Servidor de archivos**.
 >>
 >> ![Números de cluster y filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 

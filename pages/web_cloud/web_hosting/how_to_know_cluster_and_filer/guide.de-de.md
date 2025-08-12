@@ -36,7 +36,7 @@ Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 >>
 > **Schritt 3**
 >>
->> Suchen Sie in der Randleiste **Allgemeine Informationen** auf der angezeigten Seite die Cluster-Nummer unter `Cluster`{.action} (3 Ziffern von `0` bis `9`) und die Filer-Nummer unter `Filer`{.action}.
+>> Suchen Sie in der Randleiste **Allgemeine Informationen** auf der angezeigten Seite die Cluster-Nummer unter **Cluster** (3 Ziffern von `0` bis `9`) und die Filer-Nummer unter **Filer**.
 >>
 >> ![Cluster-Nummer und Filer-Nummer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 

@@ -36,7 +36,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** pa
 >>
 > **Passaggio 3**
 >>
->> Nel riquadro **Informazioni generali** della pagina che appare, recupera il numero del cluster sotto la dicitura `Cluster`{.action} (3 cifre comprese tra `0` e `9`) e il numero del filer sotto la dicitura `Filer`{.action}.
+>> Nel riquadro **Informazioni generali** della pagina che appare, recupera il numero del cluster sotto la dicitura **Cluster** (3 cifre comprese tra `0` e `9`) e il numero del filer sotto la dicitura **Filer**.
 >>
 >> ![Numeri del cluster e del filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 

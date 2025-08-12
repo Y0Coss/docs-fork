@@ -36,7 +36,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 >>
 > **Etapa 3**
 >>
->> No quadro **Informações gerais** da página que se apresenta, recupere o número do cluster com a menção `Cluster`{.action} (3 algarismos compreendidos entre `0` e `9`) e o número do filer com a menção `Filer`{.action}.
+>> No quadro **Informações gerais** da página que se apresenta, recupere o número do cluster com a menção **Cluster** (3 algarismos compreendidos entre `0` e `9`) e o número do filer com a menção **Filer**.
 >>
 >> ![Números do cluster e do filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 

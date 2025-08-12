@@ -36,7 +36,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno wszystkie **3** etapy.
 >>
 > **Etap 3**
 >>
->> W ramce **Informacje ogólne** na stronie, która się wyświetla, pobierz numer klastra oznaczony jako `Klaster`{.action} (3 cyfry zawarte między `0` i `9`) oraz numer kolejki oznaczony jako `Serwer Filer`{.action}.
+>> W ramce **Informacje ogólne** na stronie, która się wyświetla, pobierz numer klastra oznaczony jako **Klaster** (3 cyfry zawarte między `0` i `9`) oraz numer kolejki oznaczony jako **Serwer Filer**.
 >>
 >>![Numery klastra i pliku](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 

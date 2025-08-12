@@ -36,7 +36,7 @@ Click on the tabs below to view each of the **3** steps.
 >>
 > **Step 3**
 >>
->> In the **General information** box on the page that appears, retrieve the cluster number under the mention `Cluster`{.action} (3 digits between `0` and `9`) and the filer number under the mention `Filer`{.action}.
+>> In the **General information** box on the page that appears, retrieve the cluster number under the mention **Cluster** (3 digits between `0` and `9`) and the filer number under the mention **Filer**.
 >>
 >> ![Cluster and Filer number](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 

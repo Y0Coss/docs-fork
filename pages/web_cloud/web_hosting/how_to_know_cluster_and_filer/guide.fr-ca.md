@@ -36,7 +36,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3*
 >>
 > **Étape 3**
 >>
->> Dans l'encadré **Informations générales** de la page qui s'affiche, récupérez le numéro du cluster sous la mention `Cluster`{.action} (3 chiffres compris entre `0` et `9`) et le numéro du filer sous la mention `Filer`{.action}.
+>> Dans l'encadré **Informations générales** de la page qui s'affiche, récupérez le numéro du cluster sous la mention **Cluster** (3 chiffres compris entre `0` et `9`) et le numéro du filer sous la mention **Filer**.
 >>
 >> ![Numéros du cluster et du filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
