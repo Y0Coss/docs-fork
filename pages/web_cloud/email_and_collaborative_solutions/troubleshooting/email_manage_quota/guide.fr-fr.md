@@ -143,7 +143,7 @@ Il est possible d'augmenter la capacité de stockage de votre compte e-mail, si 
 >>
 >> L'offre Zimbra Starter comprend 15 Go de stockage. Si vous souhaitez augmenter la capacité, vous pouvez basculer vers l'offre Zimbra Pro.
 >> Depuis l'onglet `Compte e-mail`{.action} de votre plateforme, cliquez sur le bouton `...`{.action} à droite du compte à modifier, puis cliquez sur `Mettre à niveau`{.action}.
->> Si vous êtes déjà sur une offre Zimbra Pro ou Business, vous êtes déjà au maximum de votre capacité de 50 Go. Vous devrez libérer de l'espace sur votre compte Zimbra en supprimant des éléments superflus ou [archiver vos e-mails](#archiveorswitch) sur votre ordinateur en local.
+>> Si vous avez une offre Zimbra Pro ou Business, vous disposez déjà du maximum de votre capacité de 50 Go. Vous devrez libérer de l'espace sur votre compte Zimbra en supprimant des éléments superflus ou [archiver vos e-mails](#archiveorswitch) sur votre ordinateur en local.
 
 ### 3- **Archiver** ou **changer d'offre e-mail** <a name="archiveorswitch"></a>
 
