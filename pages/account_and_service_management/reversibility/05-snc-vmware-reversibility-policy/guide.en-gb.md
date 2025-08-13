@@ -57,7 +57,7 @@ the tab to be transformed
 
 ### List of architectures
 
-TBC
+The product is based on a dedicated SecNumCloud-qualified VMware Software-Defined Data Center (SDDC) architecture, including vSphere, vCenter, NSX (SDN), vSAN (distributed storage), vROps (monitoring), and advanced security options (encryption, MFA, zero trust). Resources (compute, storage, network) are physically and logically isolated, with fine-grained rights management (IAM), multi-site support (SPN Inter-DC), and integration of private network services (SPN, VPN Gateway). The architecture is carried out in Datacentres based in France.
 
 ### Partner Services
 
