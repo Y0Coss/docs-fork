@@ -1,18 +1,18 @@
 ---
-title: "Créer et importer un site web Lovable.dev sur un VPS OVHcloud"
+title: "Comment créer et importer un site web Lovable sur un VPS OVHcloud"
 excerpt: "Apprenez comment héberger un site web généré par Lovable.dev sur votre VPS OVHcloud"
 updated: 2025-06-17
 ---
 
 ## Objectif
 
-[Lovable.dev](https://lovable.dev) est un outil qui permet de générer des sites web à partir de prompts. Ce guide vous explique comment importer et publier un site web généré via Lovable sur un **hébergement mutualisé OVHcloud**.  
+[Lovable](https://lovable.dev) est un outil qui permet de générer des sites web à partir de prompts. Ce guide vous explique comment importer et publier un site web généré via Lovable sur un **VPS OVHcloud**.
 
 ## Prérequis
 
-- Disposer d'une offre [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/)
+- Disposer d'une offre [VPS OVHcloud](/links/bare-metal/vps)
 - Disposer d'un accès administrateur (sudo) via SSH à votre serveur
-- Posséder un compte sur [Lovable.dev](https://lovable.dev)
+- Posséder un compte sur [Lovable](https://lovable.dev)
 
 ## En pratique
 
@@ -20,9 +20,9 @@ updated: 2025-06-17
 
 - [Étape 1 : Générer votre site web sur Lovable.dev](#step1)
 - [Étape 2 : Exporter votre site web via GitHub et le récupérer](#step2)
-- [Étape 3 : Envoyer l’archive sur le VPS ](#step3)
+- [Étape 3 : Envoyer l’archive sur le VPS](#step3)
 - [Étape 4 : Installer Node.js et les outils nécessaires](#step4)
-- [Étape 5 : Décompresser et builder votre site web](#step5)
+- [Étape 5 : Décompresser et construire votre site web](#step5)
 - [Étape 6 : Déployer votre site web](#step6)
 - [Étape 7 : Installer et configurer le serveur web](#step7)
 - [Étape 8 : Accéder à votre site web](#step8)
@@ -37,19 +37,19 @@ updated: 2025-06-17
 
 ### Étape 2 : Exporter votre site web via GitHub et le récupérer <a name="step2"></a>
 
-Une fois votre site web généré par Lovable, exportez-le via GitHub. Dans l'interface principale de Lovable.dev, cliquez en haut à droite sur l'icône de Github (`Sync your project to GitHub`).
+Une fois votre site web généré par Lovable, exportez-le via GitHub. Dans l'interface principale de Lovable, cliquez en haut à droite sur l'icône de Github (`Sync your project to GitHub`).
 
 ![hosting](images/synch_project_github_button.png){.thumbnail}
 
-Pour connecter votre compte Lovable à GitHub, suivez la documentation officielle de [Lovable.dev](https://lovable.dev/integrations/github).
+Pour connecter votre compte Lovable à GitHub, suivez la documentation officielle de [Lovable](https://lovable.dev/integrations/github).
 
 Une fois le processus terminé, un nouveau dépôt contenant le code de votre site web est présent dans votre compte GitHub.
 
 Depuis ce dépôt GitHub, effectuez les actions suivantes :
 
-- Cliquez sur `Code`{.action} puis sur `Download ZIP`{.action}
-- Cela télécharge un fichier `.zip` contenant votre projet
-- Décompressez-le.
+1. Cliquez sur `Code`{.action} puis sur `Download ZIP`{.action}.
+1. Cela télécharge un fichier `.zip` contenant votre projet.
+1. Décompressez-le.
 
 ### Étape 3 : Envoyer l’archive sur le VPS <a name="step3"></a>
 
@@ -61,7 +61,7 @@ scp mon_site.zip <utilisateur>@<IP_VPS>:~
 
 Remplacez :
 
-- `mon_site.zip` par le nom du fichier téléchargé depuis lovable
+- `mon_site.zip` par le nom du fichier téléchargé depuis Lovable
 - `<utilisateur>` par votre nom d'utilisateur root (ex: debian, root, etc.)
 - `<IP_VPS>` par l'adresse IP publique ou le nom DNS de votre VPS
 
@@ -98,7 +98,7 @@ node -v
 npm -v
 ```
 
-### Étape 5 : Décompresser et builder votre site web <a name="step5"></a>
+### Étape 5 : Décompresser et construire votre site web <a name="step5"></a>
 
 Décompressez l'archive `.zip` dans un dossier de destination (ex: `lovable-src`):
 
@@ -141,7 +141,7 @@ sudo cp -r dist/* /var/www/lovable/
 
 > [!primary]
 >
-> Pour ce guide, nous choisissons Nginx mais vous êtes libre d'installer le serveur web de votre choix.
+> Pour ce guide, nous choisissons NGINX mais vous êtes libre d'installer le serveur web de votre choix.
 >
 
 Installez NGINX :
@@ -156,7 +156,7 @@ Créez un fichier de configuration pour votre site :
 sudo nano /etc/nginx/sites-available/lovable
 ```
 
-Collez le contenu suivant, en remplaçant adresse_du_vps par l'adresse IP de votre VPS ou votre nom de domaine :
+Collez le contenu suivant, en remplaçant `adresse_du_vps` par l'adresse IP de votre VPS ou votre nom de domaine :
 
 ```console
 server {
@@ -207,7 +207,7 @@ ou :
 http://NOM_DE_DOMAINE
 ```
 
-Votre site web Lovable s'affiche.
+Votre site web Lovable s'affiche alors.
 
 ### Conclusion <a name="conclusion"></a>
 
@@ -219,6 +219,6 @@ En quelques minutes, vous avez créé votre site web avec Lovable, puis l’avez
 
 [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/)
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
