@@ -291,7 +291,6 @@ With your Docker image built and model weights available in Object Storage, you 
 Run the following command to deploy your application:
 
 > [!tabs]
-
 > **Schnell**
 >>
 >> ```sh
