@@ -380,6 +380,7 @@
             + [Public VCF as-a-Service - Migrate from VMware vSphere on OVHcloud](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases)
             + [Public VCF as-a-Service - Setting up your network after vSphere to Public VCF as-a-Service migration](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_post_migration)
             + [Public VCF as-a-Service - Linking a public IP block with vRack](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_link_ip_to_vrack)
+            + [Public VCF as-a-Service - Declaring the public IP gateway in VCD](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_declare_public_gateway)
             + [Reversibility Policy for the Managed Mutualized Virtualization product](/pages/account_and_service_management/reversibility/23-mutualized-virtualization-vcd-reversibility)
         + [Access and Security](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security)
             + [IAM for VMware on OVHcloud - Introduction and FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
