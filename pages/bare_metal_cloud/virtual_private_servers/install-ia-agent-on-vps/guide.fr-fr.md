@@ -1,18 +1,18 @@
 ---
-title: 'Installer un agent IA sur un VPS OVHcloud'
+title: 'Comment installer un agent IA sur un VPS OVHcloud'
 excerpt: 'Découvrez comment déployer un agent IA comme OpenInterpreter ou GPT4All sur un VPS OVHcloud'
-updated: 2025-06-26
+updated: 2025-08-14
 ---
 
 ## Objectif
 
-Ce guide explique comment déployer un agent IA local sur un VPS OVHcloud, sans dépendre du cloud de fournisseurs externes. Vous utiliserez pour cela un conteneur Docker prêt à l'emploi contenant un agent IA open source comme [OpenInterpreter](https://github.com/KillianLucas/open-interpreter), [GPT4All](https://github.com/nomic-ai/gpt4all) ou [Auto-GPT](https://github.com/Torantulino/Auto-GPT).
+Ce guide explique comment déployer un agent IA local sur un VPS OVHcloud, sans dépendre du cloud de fournisseurs externes. Vous utiliserez pour cela un conteneur Docker prêt à l'emploi contenant un agent IA open source comme [Open Interpreter](https://github.com/openinterpreter/open-interpreter), [GPT4All](https://github.com/nomic-ai/gpt4all) ou [Auto-GPT](https://github.com/Significant-Gravitas/AutoGPT).
 
 **Découvrez comment déployer un agent IA comme OpenInterpreter ou GPT4All sur un VPS OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) fonctionnel (Debian 11 ou supérieur recommandé)
+- Disposer d'un [VPS](/links/bare-metal/vps) fonctionnel (Debian 11 ou supérieur recommandé)
 - Disposer d'un accès administrateur (sudo) via SSH à votre serveur
 - Python ≥ 3.10 installé sur le VPS
 
@@ -20,7 +20,7 @@ Ce guide explique comment déployer un agent IA local sur un VPS OVHcloud, sans 
 
 ### Mettre à jour votre VPS et installer Python <a name="step1"></a>
 
-Ouvrez un terminal et connectez-vous à votre VPS avec la commande suivante (en remplaçant `IP_DU_VPS` par la véritable IP) :
+Ouvrez un terminal et connectez-vous à votre VPS avec la commande suivante (en remplaçant `IP_VPS` par la véritable IP) :
 
 ```bash
 ssh <user>@IP_VPS
@@ -111,7 +111,7 @@ Cette erreur indique que votre VPS n’a pas assez de mémoire vive (RAM). Voici
 
 - Changer de machine avec au moins 8 Go de RAM.
 - Utiliser l'API OpenAI (voir `Option 1` ci-dessus).
-- Utiliser un modèle plus léger, comme mistral.
+- Utiliser un modèle plus léger, comme Mistral.
 
 ### Tester votre agent IA <a name="step4"></a>
 
@@ -141,6 +141,6 @@ Grâce à ce guide, vous avez installé un agent IA sur votre VPS OVHcloud, capa
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/)
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
