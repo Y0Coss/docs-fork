@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Identitäts- und Zugriffsverwaltung (EN)
 excerpt: The purpose of this guide is to show you how to manage your identities and access your Object Storage resources
-updated: 2025-03-21
+updated: 2025-08-25
 ---
 
 ## Objective
@@ -120,6 +120,24 @@ Some examples of JSON configuration files:
 }
 ```
 
+**Deny listing of all buckets owned by the parent account**
+
+> [!primary]
+>
+> The (`s3:ListAllMyBuckets`) action is allowed by default for a given user. Add the `deny`{.action} effect if you want to explictly refuse the use of the `ListBuckets`{.action} API operation.
+>  
+
+```json
+{
+  "Statement":[{
+    "Sid": "DenyListBucket",
+    "Effect": "Deny",
+    "Action":["s3:ListAllMyBuckets"],
+    "Resource":["*"]
+  }]
+}
+```
+
 **Allow all operations on all project resources**
 
 ```json
@@ -143,6 +161,76 @@ Some examples of JSON configuration files:
     "Action":["s3:GetObject", "s3:PutObject", "s3:DeleteObject", "s3:ListBucket", "s3:ListMultipartUploadParts", "s3:ListBucketMultipartUploads", "s3:AbortMultipartUpload", "s3:GetBucketLocation"],
     "Resource":["arn:aws:s3:::companybucket", "arn:aws:s3:::companybucket/home/user2/*"]
   }]
+}
+```
+
+
+**Allow read access to objects only to specific IPs**
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetObject",
+      "s3:ListBucket",
+      "s3:ListBucketVersions"
+    ],
+    "Resource": [
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "IpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+}
+```
+
+**Allow all operations to specific IPs by whitelisting authorized IPs**
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Deny",
+    "Action": "s3:*",
+    "Resource": [
+      "arn:aws:s3:::companybucket",
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "NotIpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+} 
+```
+
+**Deny read access to objects to specific IPs by blacklisting unauthorized IPs**
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetObject",
+      "s3:ListBucket",
+      "s3:ListBucketVersions"
+    ],
+    "Resource": [
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "NotIpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
 }
 ```
 
@@ -176,6 +264,7 @@ Some examples of JSON configuration files:
 | s3:GetObjectRetention | Object |
 | s3:GetObjectTagging | Object |
 | s3:GetReplicationConfiguration | Bucket |
+| s3:ListAllMyBuckets | Bucket |
 | s3:ListBucket | Bucket |
 | s3:ListBucketMultipartUploads | Bucket |
 | s3:ListMultipartUploadParts | Object |

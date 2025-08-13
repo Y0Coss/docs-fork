@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Gestion des identités et des accès
 excerpt: Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources Object Storage
-updated: 2025-07-11
+updated: 2025-08-25
 ---
 
 ## Objectif
@@ -164,7 +164,7 @@ Quelques exemples de fichiers de configuration JSON :
 }
 ```
 
-**Accès en lecture sur les objets seulement à des ips specifiques**
+**Aautoriser l'accès en lecture sur les objets uniquement à des IPs specifiques**
 
 ```json
 {
@@ -188,7 +188,7 @@ Quelques exemples de fichiers de configuration JSON :
 }
 ```
 
-**Accès à toutes les opérations à des ips spécifiques en whitelistant les ips autorisées**
+**Autoriser l’accès à toutes les opérations uniquement depuis certaines adresses IP en utilisant une liste blanche des adresses autorisées**
 
 ```json
 {
@@ -209,7 +209,7 @@ Quelques exemples de fichiers de configuration JSON :
 } 
 ```
 
-**Refuser l'accès en lecture aux objets à des ips spécifiques en blacklistant les ips non-autorisées**
+**Refuser l’accès en lecture aux objets depuis certaines adresses IP en utilisant une liste noire des adresses non autorisées.**
 
 ```json
 {
@@ -232,7 +232,6 @@ Quelques exemples de fichiers de configuration JSON :
   }
 }
 ```
-
 
 ### Liste des actions supportées
 

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Identity and access management
 excerpt: The purpose of this guide is to show you how to manage your identities and access your Object Storage resources
-updated: 2025-07-11
+updated: 2025-08-25
 ---
 
 ## Objective
@@ -165,7 +165,7 @@ Some examples of JSON configuration files:
 ```
 
 
-**Allow read objects only for specific ips**
+**Allow read access to objects only to specific IPs**
 
 ```json
 {
@@ -189,7 +189,7 @@ Some examples of JSON configuration files:
 }
 ```
 
-**Allow all operations for specific ips by whitelisting authorized ips**
+**Allow all operations to specific IPs by whitelisting authorized IPs**
 
 ```json
 {
@@ -210,7 +210,7 @@ Some examples of JSON configuration files:
 } 
 ```
 
-**Deny read objects for specific ips by blacklisting unauthorized ips**
+**Deny read access to objects to specific IPs by blacklisting unauthorized IPs**
 
 ```json
 {
@@ -233,7 +233,6 @@ Some examples of JSON configuration files:
   }
 }
 ```
-
 
 ### List of supported actions
 
