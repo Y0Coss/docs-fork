@@ -26,7 +26,7 @@ This guide shows how to retrieve the correct gateway and add it to your VDC.
 
     ![Select VDC and check vRack](images/vcd-declare-public-gateway-02.png){.thumbnail}
 
-In `General information`{.action}, verify that the vRack shown is the one linked to your public IP block.
+    In `General information`{.action}, verify that the vRack shown is the one linked to your public IP block.
 
     ![Select VDC and check vRack](images/vcd-declare-public-gateway-03.png){.thumbnail}
 
@@ -34,15 +34,15 @@ In `General information`{.action}, verify that the vRack shown is the one linked
 
     ![Select the vRack tab](images/vcd-declare-public-gateway-04.png){.thumbnail}
 
-Locate the vRack segment named `vRack segment - VLAN0` or `vRack segment - PUBLIC`.
+    Locate the vRack segment named `vRack segment - VLAN0` or `vRack segment - PUBLIC`.
 
-Click the three dot menu `⋮`{.action} and `Add a subnet`{.action}.
+    Click the three dot menu `⋮`{.action} and `Add a subnet`{.action}.
 
     ![Add a subnet on the vRack segment](images/vcd-declare-public-gateway-05.png){.thumbnail}
 
 4. In the modal, enter the **gateway in CIDR** form for your public IP block, then confirm. The gateway is the **last usable host** of the block.
 
-**Example**: for `203.0.113.0/29`, the last usable host is `203.0.113.6` so enter `203.0.113.6/29`. You can use any standard IP calculator to verify.
+    **Example**: for `203.0.113.0/29`, the last usable host is `203.0.113.6` so enter `203.0.113.6/29`. You can use any standard IP calculator to verify.
 
     ![Enter gateway CIDR](images/vcd-declare-public-gateway-06.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Click the three dot menu `⋮`{.action} and `Add a subnet`{.action}.
 
 - When creating a vApp or VM in VCD, pick the corresponding **Organization VDC network** and choose a **Direct** network type to see the available public gateways.
 
-    ![Select Direct network type and gateway](images/vcd-declare-public-gateway-08.png){.thumbnail}
+![Select Direct network type and gateway](images/vcd-declare-public-gateway-08.png){.thumbnail}
 
 > [!primary]
 > **Known limitation**:

@@ -26,7 +26,7 @@ Ce guide explique comment récupérer la passerelle correcte et l’ajouter à v
 
     ![Sélectionner le VDC](images/vcd-declare-public-gateway-02.png){.thumbnail}
 
-Dans `General information`{.action}, vérifiez que le vRack affiché est bien celui lié à votre bloc d’adresses IP publiques.
+    Dans `General information`{.action}, vérifiez que le vRack affiché est bien celui lié à votre bloc d’adresses IP publiques.
 
     ![Vérifier le vRack lié](images/vcd-declare-public-gateway-03.png){.thumbnail}
 
@@ -34,15 +34,15 @@ Dans `General information`{.action}, vérifiez que le vRack affiché est bien ce
 
     ![Ouvrir l’onglet vRack](images/vcd-declare-public-gateway-04.png){.thumbnail}
 
-Repérez le segment nommé `vRack segment - VLAN0` ou `vRack segment - PUBLIC`.
+    Repérez le segment nommé `vRack segment - VLAN0` ou `vRack segment - PUBLIC`.
 
-Cliquez sur le menu à trois points `⋮`{.action} puis sur `Add a subnet`{.action}.
+    Cliquez sur le menu à trois points `⋮`{.action} puis sur `Add a subnet`{.action}.
 
     ![Ajouter un sous-réseau sur le segment vRack](images/vcd-declare-public-gateway-05.png){.thumbnail}
 
 4. Dans la fenêtre modale, saisissez la **passerelle au format CIDR** pour votre bloc d’adresses IP publiques, puis validez. La passerelle correspond au **dernier hôte utilisable** du bloc.
 
-**Exemple** : pour `203.0.113.0/29`, le dernier hôte utilisable est `203.0.113.6`, saisissez donc `203.0.113.6/29`. Vous pouvez utiliser n’importe quel calculateur IP standard pour vérifier.
+    **Exemple** : pour `203.0.113.0/29`, le dernier hôte utilisable est `203.0.113.6`, saisissez donc `203.0.113.6/29`. Vous pouvez utiliser n’importe quel calculateur IP standard pour vérifier.
 
     ![Saisir la passerelle au format CIDR](images/vcd-declare-public-gateway-06.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Cliquez sur le menu à trois points `⋮`{.action} puis sur `Add a subnet`{.acti
 
 - Lors de la création d’une vApp ou d’une VM dans VCD, sélectionnez le **réseau VDC d’organisation** correspondant et choisissez un type de réseau **Direct** pour afficher les passerelles publiques disponibles.
 
-    ![Sélection du type de réseau Direct et de la passerelle](images/vcd-declare-public-gateway-08.png){.thumbnail}
+![Sélection du type de réseau Direct et de la passerelle](images/vcd-declare-public-gateway-08.png){.thumbnail}
 
 > [!primary]
 > **Limitation connue :**
