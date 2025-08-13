@@ -46,9 +46,9 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 ![Outlook Android Email Pro](images/outlook-app-android-add01.png){.thumbnail .w-400 .h-600}
 
 - **Jeśli konto zostało już skonfigurowane**:
-- Naciśnij karnację " &#9993;" w lewym górnym rogu ekranu.
-- Następnie naciśnij przycisk '+`{.action} w lewym pionowym pasku.
-- Kliknij `Dodaj konto`{.action}.
+    - Naciśnij karnację " &#9993;" w lewym górnym rogu ekranu.
+    - Następnie naciśnij przycisk '+`{.action} w lewym pionowym pasku.
+    - Kliknij `Dodaj konto`{.action}.
 
 ![Outlook Android Email Pro](images/outlook-app-android-add02.png){.thumbnail .w-400 .h-600}
 

@@ -46,9 +46,9 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 ![outlook android email pro](images/outlook-app-android-add01.png){.thumbnail .w-400 .h-600}
 
 - **Se uma conta já tiver sido parametrizada**:
-- Pressione o envelope « &#9993; » na parte superior esquerda do seu ecrã.
-- De seguida, prima o botão `+`{.action} na barra vertical à esquerda.
-- Prima 'Adicionar uma conta' {.action}.
+    - Pressione o envelope « &#9993; » na parte superior esquerda do seu ecrã.
+    - De seguida, prima o botão `+`{.action} na barra vertical à esquerda.
+    - Prima 'Adicionar uma conta' {.action}.
 
 ![outlook android email pro](images/outlook-app-android-add02.png){.thumbnail .w-400 .h-600}
 

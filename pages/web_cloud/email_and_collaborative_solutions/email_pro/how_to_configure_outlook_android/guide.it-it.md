@@ -46,9 +46,9 @@ Gli account Email Pro possono essere configurati su client di posta compatibili.
 ![outlook android email pro](images/outlook-app-android-add01.png){.thumbnail .w-400 .h-600}
 
 - **Se è già stato impostato un account**:
-- Premere lo skin " &#9993;" in alto a sinistra.
-- Clicca sul pulsante `+`{.action} nella barra verticale sinistra.
-- Clicca su `Aggiungi account`{.action}.
+    - Premere lo skin " &#9993;" in alto a sinistra.
+    - Clicca sul pulsante `+`{.action} nella barra verticale sinistra.
+    - Clicca su `Aggiungi account`{.action}.
 
 ![outlook android email pro](images/outlook-app-android-add02.png){.thumbnail .w-400 .h-600}
 
