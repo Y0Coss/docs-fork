@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy FLUX Text-to-Image Models
 excerpt: How to deploy the FLUX image generation models using ComfyUI
-updated: 2025-08-01
+updated: 2025-08-13
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy FLUX Text-to-Image Models
 excerpt: How to deploy the FLUX image generation models using ComfyUI
-updated: 2025-08-01
+updated: 2025-08-13
 ---
 
 > [!primary]
@@ -33,9 +33,9 @@ The following table lists the main FLUX variants and their intended use cases:
 
 | Name                        | Usage                                                      | HuggingFace repo                                               | License                                                               |
 | --------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------- |
-| `FLUX.1 [schnell]`          | [Text to Image](docs/text-to-image.md)                     | https://huggingface.co/black-forest-labs/FLUX.1-schnell        | [apache-2.0](model_licenses/LICENSE-FLUX1-schnell)                    |
-| `FLUX.1 [dev]`              | [Text to Image](docs/text-to-image.md)                     | https://huggingface.co/black-forest-labs/FLUX.1-dev            | [FLUX.1-dev Non-Commercial License](model_licenses/LICENSE-FLUX1-dev) |
-| `FLUX.1 Kontext [dev]`      | [Image editing](docs/image-editing.md)                     | https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev    | [FLUX.1-dev Non-Commercial License](model_licenses/LICENSE-FLUX1-dev) |
+| `FLUX.1 [schnell]`          | Text to Image                     | [Schnell repo](https://huggingface.co/black-forest-labs/FLUX.1-schnell)        | [apache-2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md)                    |
+| `FLUX.1 [dev]`              | Text to Image                     | [Dev repo](https://huggingface.co/black-forest-labs/FLUX.1-dev)            | [FLUX.1-dev Non-Commercial License](https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md) |
+| `FLUX.1 Kontext [dev]`      | Image editing                     | [Kontext repo](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev)    | [FLUX.1-dev Non-Commercial License](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/blob/main/LICENSE.md) |
 
 Full list is available on the [official repository](https://github.com/black-forest-labs/flux) for FLUX.1 models.
 
