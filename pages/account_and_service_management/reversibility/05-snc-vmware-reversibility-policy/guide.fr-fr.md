@@ -59,7 +59,7 @@ cette partie est à transformer
 
 ### Liste des architectures
 
-Le produit repose sur une architecture VMware Software-Defined Data Center (SDDC) dédiée, qualifiée SecNumCloud, incluant les briques vSphere, vCenter, NSX (SDN), vSAN (stockage distribué), vROps (monitoring), et des options avancées de sécurité (chiffrement, MFA, Zero Trust). Les ressources (compute, stockage, réseau) sont isolées physiquement et logiquement, avec une gestion fine des droits (IAM), un support du multi-site (SPN Inter-DC), et l’intégration de services réseaux privés (SPN, VPN Gateway). L’ensemble est opéré dans des datacentres en France. 
+Le produit repose sur une architecture VMware Software-Defined Data Center (SDDC) dédiée, qualifiée SecNumCloud, incluant les briques vSphere, vCenter, NSX (SDN), vSAN (stockage distribué), vROps (monitoring), et des options avancées de sécurité (chiffrement, MFA, Zero Trust). Les ressources (compute, stockage, réseau) sont isolées physiquement et logiquement, avec une gestion fine des droits (IAM), un support du multi-site (SPN Inter-DC), et l’intégration de services réseaux privés (SPN, VPN Gateway). L’ensemble est opéré dans des Datacentres en France. 
 
 ### Services Partenaires
 
