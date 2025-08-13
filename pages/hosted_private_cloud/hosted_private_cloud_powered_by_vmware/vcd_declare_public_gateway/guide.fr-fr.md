@@ -16,7 +16,7 @@ Ce guide explique comment récupérer la passerelle correcte et l’ajouter à v
 - Droits d’administrateur technique sur [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware).
 - Accès à l’[espace client OVHcloud](/links/manager).
 
-## Instructions
+## En pratique
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur `Hosted Private Cloud`{.action}, puis `Public VCF as-a-Service`{.action}, et sélectionnez votre organisation.
 
