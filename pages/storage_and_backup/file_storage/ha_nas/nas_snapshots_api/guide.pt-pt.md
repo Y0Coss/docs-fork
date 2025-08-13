@@ -16,7 +16,7 @@ As NAS-HA da OVHcloud permitem-lhe criar e gerir volumes de ficheiros acessívei
 
 ## Requisitos
 
-- Um serviço [NAS-HA OVHcloud](https://www.ovh.pt/nas/)
+- Um serviço [NAS-HA OVHcloud](/links/storage/nas-ha)
 - Consulte o nosso guia dos [primeiros passos com a API OVHcloud](/pages/manage_and_operate/api/first-steps) para se familiarizar com a APIv6 OVHcloud
 
 ## Instruções

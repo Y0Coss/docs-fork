@@ -14,7 +14,7 @@ Retrouvez ici les principales informations relatives à la gestion de votre héb
 ## Prérequis 
 
 - Disposer d'une des 3 offres d'hébergement web POWER : [Node.js](https://labs.ovh.com/managed-nodejs), [Python](https://labs.ovh.com/managed-python) ou [Ruby](https://labs.ovh.com/managed-ruby).
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external} ou aux [API OVHcloud](/links/api).
+- Être connecté à votre [espace client OVHcloud](/links/manager) ou aux [API OVHcloud](/links/api).
 
 ## En pratique
 
@@ -34,7 +34,7 @@ Vous trouverez des informations complémentaires dans notre guide « [Se connect
 
 #### Ajouter un nom de domaine
 
-Par défaut, votre hébergement web POWER est attaché à une URL automatiquement attribuée. Vous pouvez néanmoins utiliser votre propre [nom de domaine](https://www.ovh.com/fr/domaines/), en l'ajoutant depuis l'onglet `Multisite`{.action}.
+Par défaut, votre hébergement web POWER est attaché à une URL automatiquement attribuée. Vous pouvez néanmoins utiliser votre propre [nom de domaine](/links/web/domains), en l'ajoutant depuis l'onglet `Multisite`{.action}.
 
 ![Adding a domain name](images/getting-started-03.png){.thumbnail}
 

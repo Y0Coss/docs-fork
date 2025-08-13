@@ -1,7 +1,7 @@
 ---
 title: "Configurar o IPv6 num VPS"
 excerpt: "Saiba como configurar o IPv6 num VPS da OVHcloud"
-updated: 2025-07-22
+updated: 2025-08-07
 ---
 
 > [!primary]
@@ -20,15 +20,15 @@ O IPv6 é a versão mais recente do *Internet Protocol* (IP). Cada servidor VPS 
 
 > [!warning]
 >
-> A utilização e a gestão dos serviços da OVHcloud são da responsabilidade do cliente. A OVHcloud não tem permissões de acesso aos VPS e o cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”.
+> A utilização e a gestão dos serviços da OVHcloud são da responsabilidade do cliente. A OVHcloud não tem permissões de acesso aos VPS e o cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: "[Quer saber mais?](#go-further)".
 > 
 
 ## Requisitos
 
-- Dispor de um [servidor VPS da OVHcloud](/links/bare-metal/vps){.external}.
+- Dispor de um [servidor VPS da OVHcloud](/links/bare-metal/vps).
 - Ter acesso ao VPS através de SSH (acesso root) ou de um ambiente de trabalho remoto (Windows).
 - Ter conhecimentos básciso de rede.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external} ou à [API OVHcloud](/links/api).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager) ou à [API OVHcloud](/links/api).
 
 ## Instruções
 
@@ -66,7 +66,12 @@ O endereço IPv6 e a gateway IPv6 associados ao servidor aparecem na secção `I
 
 #### Através das API OVHcloud <a name="viaapi"></a>
 
-Aceda ao site <https://api.ovh.com/console/> e ligue-se ao mesmo com o seu ID OVHcloud. A seguir, utilize as duas API abaixo.
+Aceda à página [API OVHcloud](/links/console):
+
+- Clique em `Authentication`{.action} no canto superior esquerdo.
+- A seguir, clique em `Login with OVHcloud SSO`{.action}.
+- Introduza as suas credenciais OVHcloud.
+- Clique no botão `Authorize`{.action} para autorizar as chamadas às API a partir deste site.
 
 A primeira permite-lhe obter o endereço IPv6 associado ao seu servidor.
 
@@ -86,7 +91,7 @@ Depois de obter os endereços, consulte o passo 2 "[Aplicar a configuração IPv
 
 ### Etapa 2: aplicar a configuração IPv6 <a name="applyipv6"></a>
 
-Depois de obter as informações necessárias para a configuração IPv6, aceda ao seu VPS através de SSH. Caso seja necessário, consulte o nosso manual “[Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction){.external}” para obter mais informações.
+Depois de obter as informações necessárias para a configuração IPv6, aceda ao seu VPS através de SSH. Caso seja necessário, consulte o nosso manual “[Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)” para obter mais informações.
 
 Existem vários métodos para aplicar a configuração IPv6. Escolha a que pretende utilizar consoante a sua situação e as suas necessidades.
 
@@ -210,7 +215,7 @@ Os ficheiros de configuração de rede estão localizados no diretório `/etc/ne
 
 Se o endereço IPv6 não estiver configurado, a melhor abordagem é criar um ficheiro de configuração separado para configurar o endereço IPv6 no diretório `/etc/netplan/`. Desta forma, poderá facilmente reverter as alterações em caso de erro.
 
-Além disso, recomendamos que ajuste as permissões para o ficheiro recém-criado. Para mais informações sobre as permissões dos ficheiros, consulte a [documentação oficial do ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+Além disso, recomendamos que ajuste as permissões para o ficheiro recém-criado. Para mais informações sobre as permissões dos ficheiros, consulte a [documentação oficial do ubuntu](https://help.ubuntu.com/community/FilePermissions).
 
 No nosso exemplo, o nosso ficheiro é nomeado `51-cloud-init-ipv6.yaml`:
 
@@ -486,6 +491,6 @@ sudo echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-netw
 
 Para que o cloud-init volte a gerir a rede de forma automática, elimine o ficheiro recentemente criado e mova-o para outro diretório.
 
-## Saiba mais
+## Quer saber mais? <a name="go-further"></a>
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

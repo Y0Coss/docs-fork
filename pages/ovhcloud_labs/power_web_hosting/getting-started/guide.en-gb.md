@@ -35,7 +35,7 @@ You will find detailed information on this topic in our [SSH guide](/pages/web_c
 
 #### Adding a domain name
 
-For default, your POWER web hosting plan is attached to a generated URL. In order to use your own [domain name](https://www.ovh.co.uk/domains/), you can add it in the `Multisite`{.action} tab.
+For default, your POWER web hosting plan is attached to a generated URL. In order to use your own [domain name](/links/web/domains), you can add it in the `Multisite`{.action} tab.
 
 ![Adding a domain name](images/getting-started-03.png){.thumbnail}
 

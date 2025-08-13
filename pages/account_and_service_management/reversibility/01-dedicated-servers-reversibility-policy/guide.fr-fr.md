@@ -7,7 +7,7 @@ updated: 2021-05-05
 
 Ce document est la politique de réversibilité pour la gamme de produits [Serveurs dédiés](/links/bare-metal/bare-metal).
 
-Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
+Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/).
 
 ## Détails des fonctionnalités
 
@@ -36,8 +36,8 @@ Fourniture de serveurs dédiés|Fourniture de différentes gammes de serveurs d�
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|-----|---|-----|-----|
-|Load Balancing|Les Load Balancers sont des périphériques réseau qui distribuent les demandes entre les services et les datacenters pour s'assurer qu'il n'y a pas de surcharge.|N/A|**Migration entrante**: Commande et activation via l'[espace client OVHcloud](/links/manager).<br><br>**Migration sortante**: Commandez et configurez un équilibrage de charge avec le nouveau fournisseur.|**Migration entrante**: [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/)<br><br>**Migration sortante**: N/A|
-|Anti-DDoS|L'anti-DDoS est un ensemble d'équipements et de moyens mis en place pour absorber les attaques par déni de service. Il comprend une analyse du trafic, « l’aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|N/A|**Migration entrante**: Le système anti-DDoS est un composant de notre infrastructure, activé par défaut. Aucune action n'est requise.<br><br>**Migration sortante**: Commandez et configurez un anti-DDoS avec le nouveau fournisseur.|**Migration entrante**: [Protection anti-DDoS OVHcloud](https://www.ovh.com/fr/anti-ddos/) et [Technologie anti-DDoS](https://www.ovh.com/fr/anti-ddos/technologie-anti-ddos.xml)<br><br>**Migration sortante**: N/A|
+|Load Balancing|Les Load Balancers sont des périphériques réseau qui distribuent les demandes entre les services et les datacenters pour s'assurer qu'il n'y a pas de surcharge.|N/A|**Migration entrante**: Commande et activation via l'[espace client OVHcloud](/links/manager).<br><br>**Migration sortante**: Commandez et configurez un équilibrage de charge avec le nouveau fournisseur.|**Migration entrante**: [Load Balancer OVHcloud](/links/network/load-balancer)<br><br>**Migration sortante**: N/A|
+|Anti-DDoS|L'anti-DDoS est un ensemble d'équipements et de moyens mis en place pour absorber les attaques par déni de service. Il comprend une analyse du trafic, « l’aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|N/A|**Migration entrante**: Le système anti-DDoS est un composant de notre infrastructure, activé par défaut. Aucune action n'est requise.<br><br>**Migration sortante**: Commandez et configurez un anti-DDoS avec le nouveau fournisseur.|**Migration entrante**: [Protection anti-DDoS OVHcloud](/links/security/antiddos)<br><br>**Migration sortante**: N/A|
 
 ### Liste des architectures
 

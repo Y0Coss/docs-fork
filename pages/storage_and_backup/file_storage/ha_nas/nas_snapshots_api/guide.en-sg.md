@@ -12,7 +12,7 @@ OVHcloud HA-NAS allows you to create and manage file volumes that can be accesse
 
 ## Requirements
 
-- An OVHcloud [HA-NAS service](https://www.ovh.co.uk/nas/)
+- An OVHcloud [HA-NAS service](/links/storage/nas-ha)
 - Consulting the [OVHcloud API first steps guide](/pages/manage_and_operate/api/first-steps) to familiarise yourself with the OVHcloud APIv6
 
 ## Instructions

@@ -237,7 +237,7 @@ Aby dowiedzieć się więcej, zapoznaj się z przewodnikiem "[Modyfikacja strefy
 >
 > Aby zbudować bezpieczne połączenia (`https`), serwer www musi być zabezpieczony przez Oficjalny Organ Certyfikacyjny jako "[Let's Encrypt](https://letsencrypt.org/)", który oferuje bezpłatne certyfikaty. Musisz zainstalować narzędzie klienta (takie jak Certbot) i odpowiednio skonfigurować Apache. Bez tego etapu Twoja strona WWW lub aplikacja mogą akceptować tylko niezaszyfrowane zapytania `http`.
 > 
-> OVHcloud oferuje również rozwiązanie [SSL Gateway](https://www.ovh.pl/ssl-gateway/). Więcej informacji znajdziesz w [dokumentacji](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
+> OVHcloud oferuje również rozwiązanie [SSL Gateway](/links/web/ssl-gateway). Więcej informacji znajdziesz w [dokumentacji](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 > 
 
 Upewnij się najpierw, czy Twoja domena jest poprawnie wpisana w strefie DNS, czyli zaznaczona na adres IP Twojego serwera.

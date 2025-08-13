@@ -137,7 +137,7 @@ Once your object containers are created, you will see them in the Object Storage
 
 #### 1.2 - Upload data via CLI
 
-To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/) on your computer or on an instance.
+To follow this part, make sure you have installed the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) on your computer or on an instance.
 
 As in the Control Panel, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of an object container can be done with the following command:
 

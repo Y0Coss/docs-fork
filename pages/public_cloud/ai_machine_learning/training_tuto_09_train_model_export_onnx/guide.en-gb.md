@@ -39,7 +39,7 @@ You can create the bucket that will store your ONNX model at the end of the trai
 
 #### Create your bucket via ovhai CLI
 
-To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/) on your computer or on an instance.
+To follow this part, make sure you have installed the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) on your computer or on an instance.
 
 As in the Control Panel, you will have to specify the `region`and the `name` (**cnn-model-onnx**) of your bucket. Create your Object Storage bucket as follows:
 
