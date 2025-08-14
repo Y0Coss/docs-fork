@@ -62,13 +62,9 @@ If you require higher usage, please **[get in touch with us](https://help.ovhclo
 
 To ensure security and stability, AI Endpoints APIs enforce default request payload size limits:
 
-- Most endpoints are limited to **2 MB** per request body. This applies to common input types such as String, Json, or Form parameters.
+Most endpoints are limited to **2 MB** per request body. This applies to common input types such as String and Json parameters.
 
-However, some endpoints are specifically configured to accept larger payloads due to their use cases:
-
-- `/api/v1/asr` (RIVA ASR models): Configured to allow request bodies up to 1 GB.
-
-These extended limits enable support for large audio files, which are typical in speech-to-text tasks.
+However, some endpoints like those handling audio transcriptions, are specifically configured to accept larger payloads due to their use cases. These endpoints can handle larger audio files, but are limited by audio file size and duration. The specific limits of these endpoints will be indicated in their respective model documentation.
 
 ### No usage limit
 
