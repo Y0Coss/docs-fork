@@ -164,7 +164,7 @@ Quelques exemples de fichiers de configuration JSON :
 }
 ```
 
-**Aautoriser l'accès en lecture sur les objets uniquement à des IPs specifiques**
+**Autoriser l'accès en lecture sur les objets uniquement à des adresses IP specifiques**
 
 ```json
 {
