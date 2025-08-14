@@ -1,6 +1,6 @@
 ---
 title: Reversibility policy for the product Managed Dedicated Cloud - SecNumCloud
-updated: 2025-08-08
+updated: 2025-08-14
 ---
 
 ## Objective
@@ -36,7 +36,7 @@ Features of the product line fall into three categories:
 |Monitoring and supervision|VMware standard monitoring solution via vROps|Many formats supported by the platform(e.g JSON, Syslog, etc) |**Inbound**: vROps is included by default with every VMware Private cloud. Adaptation of Cloud dashboards and monitoring agents.<br><br>**Outbound**: Install and configure vROps in a vSphere environment.Export metrics/logs and reconfigure the new environment|[First connection on vROps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrops_introduction)|
 |Managed Veeam backup|Backup as a service solution for VMs|VBK, VIB, VBM|**Inbound**: Enable a Veeam backup option in the [OVHcloud Control Panel](/links/manager). The import of external backups isn't possible <br><br>**Outbound**: export primary data (excluding backed-ups data). Customers can export their primary data (excluding backed-up data) and configure a backup solution of their choice at the destination site.|[Enable and use Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service)<br><br>[Move2Cloud - Migrating VMware Workloads to OVHcloud SecNumCloud with Veeam Replicationn](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_veeam_secnumcloud)|
 |Zerto|Business continuity and disaster recovery platform.|N/A|**Inbound**: activation of the option in the [OVHcloud Control Panel](/links/manager) or directly in the provided Zerto Replication Interface.<br><br>**Outbound**: export zerto VPG settings and import those settings in the new environment.|[Setting up Zerto Virtual Replication for your DRP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)<br><br>[Migrate VMware workloads to OVHcloud SecNumCloud Hosted Private Cloud with Zerto](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_migration_zerto_secnumcloud)<br><br>[Exporting Zerto VPG settings](https://www.zerto.com/myzerto/knowledge-base/exporting-and-importing-vpg-settings-with-zerto-diagnostic-tool/)|
-| IAM to add | TBC | --- | **Inbound** :  <br> **Oubound** :   | []() |
+
 
 ## 3. Specific features
 
@@ -58,9 +58,9 @@ OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/p
 
 ### Cost and fees
 
-No additional billing is planned from OVHcloud for the migration features listed here.
+No specific cancelation fees apply: deleting the service will stop the billing immediately. Migration features (VM export, disks, configuration) are included at no extra cost. The costs are related to the resource usage and options subscribed to (hosts, storage, VPN Gateway, etc.) during the commitment period.
 
 ### Data retention after contract termination
 
-The data is stored until the end of the month following the termination of the service, then permanently deleted in accordance with the commitments of the SecNumCloud Terms of Service.
+After termination or deletion of the service, OVHcloud permanently deletes all data, VMs, snapshots and configurations by securely deleting the storage media. This deletion will be subject to 21 calendar days’ notice. It is imperative to export all necessary data before permanent deletion, as no post-removal recovery will be possible.
 
