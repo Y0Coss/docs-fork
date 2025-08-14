@@ -1,7 +1,7 @@
 ---
 title: "Gerir o espaço de armazenamento de uma conta de e-mail"
 excerpt: "Saiba como gerir e otimizar o espaço de armazenamento de um endereço de e-mail "
-updated: 2025-04-28
+updated: 2025-08-12
 ---
 
 ## Objetivo
@@ -12,8 +12,12 @@ Cada conta de e-mail da OVHcloud dispõe de um espaço de armazenamento dedicado
 
 ## Requisitos
 
-- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](/links/web/hosting), incluída num [alojamento gratuito 100M](/links/web/domains-free-hosting) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou o [**Email Pro**](/links/web/email-pro))
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter uma solução de e-mail OVHcloud previamente configurada, entre as seguintes:
+    - **MX Plan** proposta com os nossos [oferta de alojamento web](/links/web/hosting) ou incluída num [alojamento gratuito 100M](/links/web/domains-free-hosting).
+    - [Exchange](/links/web/emails).
+    - [Email Pro](/links/web/email-pro).
+    - [Zimbra](/links/web/emails-zimbra).
 - Dispor das informações de ligação aos endereços de e-mail em causa.
 
 > [!primary]
@@ -22,6 +26,16 @@ Cada conta de e-mail da OVHcloud dispõe de um espaço de armazenamento dedicado
 >
 > - Relativamente ao Alojamento gratuito 100M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode efetuar esta operação a partir da [Área de Cliente OVHcloud](/links/manager), posicionando-se no domínio em questão.
 > - No âmbito de um [alojamento web](/links/web/hosting), é necessário ativar a oferta MX Plan incluída antes de continuar a ler este manual. Para isso, consulte o nosso manual "[Ativar os endereços de e-mail incluídos no seu alojamento web](/pages/web_cloud/web_hosting/activate-email-hosting)".
+
+> [!primary]
+>
+> **Identificar a tecnologia de e-mail da oferta MX Plan.**
+>
+> Em função da data de ativação da sua oferta MX Plan ou de uma migração recente, a tecnologia de e-mail associada pode diferir. Esta versão é caracterizada pela interface do seu webmail. Para identificá-lo:
+>
+> - No separador `Informações gerais`{.action}, consulte a tecnologia utilizada sob a menção **Webmail** presente na caixa `Subscrição`{.action} ou `Ligação`{.action}.
+>
+> ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 ## Instruções <a name="instructions"></a>
 
@@ -42,7 +56,7 @@ Pode realizar esta ação a partir da Área de Cliente se tem a gestão do servi
 Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
 
 > [!tabs]
-> **E-mails (MXplan)**
+> **MX Plan**
 >>
 >> Clique em `MX Plan`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Na coluna `Tamanho`, pode ver o consumo em curso do armazenamento do seu endereço de e-mail.<br><br>
 >>![email](images/email-quota-quotacontrolpanel01.png){.thumbnail}<br>
@@ -63,12 +77,12 @@ Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.a
 Para se ligar ao webmail, aceda à página [Webmail](/links/web/email)e introduza as informações de ligação à sua conta de e-mail. De seguida, selecione o webmail correspondente à sua oferta:
 
 > [!tabs]
-> **OWA**: **E-mails (MXplan)** / **Email Pro** / **Exchange**
+> **OWA**: **MX Plan** / **Email Pro** / **Exchange**
 >>
 >> Clique no botão <i class="icons-gear-concept icons-masterbrand-blue"></i>no canto superior direito do seu ecrã, clique em `Opções`{.action}. Clique em `A minha conta`{.action} na secção `Geral`{.action} na coluna da esquerda. Pode visualizar o limite atual da sua conta na parte inferior direita do formulário.<br><br>
 >>![email](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
-> **Roundcube**: **E-mails (MXplan)**
+> **Roundcube**: **MX Plan**
 >>
 >> Quando está conectado ao webmail Roundcube, o limite é visível na parte inferior esquerda, materializado por uma câmara e a percentagem consumida.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
@@ -96,7 +110,7 @@ Antes de efetuar qualquer operação na sua conta de e-mail, é necessário toma
 É possível aumentar a capacidade de armazenamento da sua conta de e-mail, se esta não atingiu a sua capacidade máxima. Consulte abaixo o procedimento a seguir em função da sua oferta:
 
 > [!tabs]
-> **E-mails (MXplan)**
+> **MX Plan**
 >>
 >> A capacidade de uma conta MX Plan pode variar entre 2,5 MB e 5 GB. Se estiver saturado e a sua capacidade for inferior a 5GB, pode alterar a sua capacidade através da [Área de Cliente OVHcloud](/links/manager).<br>
 >> No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Alterar`{.action}.
@@ -138,7 +152,7 @@ Encontrará abaixo uma lista não exaustiva dos guias de configuração para os 
 - o protocolo EWS sobre a oferta **Exchange** para o Outlook macOS.
 
 > [!tabs]
-> **E-mails (MXplan)**
+> **MX Plan**
 >>
 >> Configuração de uma conta MX plan em **Windows*:<br><br>
 >> - [Endereço do Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (English) (incluído com Windows)<br>
@@ -197,7 +211,7 @@ Depois de instalar o seu software de correio, siga as instruções abaixo para p
 Selecione, no menu abaixo, a oferta atual da sua conta de e-mail:
 
 > [!tabs]
-> **E-mails (MXplan)**
+> **MX Plan**
 >>
 >> Se a capacidade da sua conta de e-mail já está a um máximo de 5GB, pode optar por uma migração para uma oferta [**Email Pro** de 10GB](/links/web/email-pro) ou [**Hosted Exchange** de 50GB](/links/web/emails-hosted-exchange). Para isso, sugerimos que encomende a oferta mais adequada e siga a documentação "[Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
 >>

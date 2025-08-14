@@ -35,7 +35,7 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 >
 > - Depuis l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action} sous `Webmail`{.action}.
 >
-> ![MX plan](images/technology-email.png){.thumbnail .w-500}
+> ![MX plan](images/technology-email.png){.thumbnail}
 
 ## En pratique <a name="instructions"></a>
 
@@ -157,7 +157,8 @@ Lorsque vous avez configuré votre adresse e-mail sur votre client de messagerie
 
 ![email](images/email-quota-step03-archive.png){.thumbnail}
 
-Si vous le souhaitez, il est possible de libérer l'espace de stockage de votre compte e-mail en stockant vos e-mails directement sur votre ordinateur. Pour cela il vous sera necessaire de faire appel à un logiciel de messagerie installé sur votre ordinateur. 
+Si vous le souhaitez, il est possible de libérer l'espace de stockage de votre compte e-mail en stockant vos e-mails directement sur votre ordinateur. Pour cela il vous sera necessaire de faire appel à un logiciel de messagerie installé sur votre ordinateur.
+
 En effet, le logiciel de messagerie aura pour rôle de convertir vos e-mails en fichiers, pour pouvoir les stocker sur votre ordinateur. Il est néanmoins nécessaire de paramétrer la fonction « archive » de votre logiciel de messagerie. Les e-mails seront alors dans un dossier « local » et non directement sur le serveur de votre compte e-mail.
 
 Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration pour les clients de messagerie utilisant:

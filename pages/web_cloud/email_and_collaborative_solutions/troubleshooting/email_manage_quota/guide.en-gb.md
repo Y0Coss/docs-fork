@@ -1,7 +1,7 @@
 ---
 title: "Managing the storage space for an email account"
 excerpt: "Find out how to manage and optimise an email account storage space"
-updated: 2025-04-28
+updated: 2025-08-12
 ---
 
 ## Objective
@@ -12,8 +12,12 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) or **MX Plan** (available with a [web hosting plan](/links/web/hosting), a [100M free hosting](/links/web/domains-free-hosting), or ordered separately)
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](/links/manager).
+- A preconfigured OVHcloud email solution:
+    - **MX Plan** available with a [web hosting plan](/links/web/hosting), or included in a [100M free hosting](/links/web/domains-free-hosting).
+    - [Exchange](/links/web/emails).
+    - [Email Pro](/links/web/email-pro).
+    - [Zimbra](/links/web/emails-zimbra).
 - Login credentials for the email account concerned
 
 > [!primary]
@@ -22,6 +26,16 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 >
 > - Regarding the 100M free hosting solution, you will need to activate it beforehand in order to create an email account. You can do this from your [OVHcloud Control Panel](/links/manager) by going to the domain name concerned.
 > - For [web hosting plans](/links/web/hosting), you will need to activate your MX Plan before continuing with this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](/pages/web_cloud/web_hosting/activate-email-hosting).
+
+> [!primary]
+>
+> **Identify the email technology for your MX Plan solution.**
+>
+> Depending on the activation date of your MX Plan solution, or on a recent migration, the email technology associated with it may differ. This version is characterized by its webmail interface. To identify it:
+>
+> - In the `General information`{.action} tab, note the technology used under the **** comment in the `Subscription`{.action} or `Connection`{.action} box.
+>
+> ![mx plan](images/technology-email.png){.thumbnail .w-500}
 
 ## Instructions <a name="instructions"></a>
 
@@ -42,7 +56,7 @@ You can do this via the OVHcloud Control Panel if you are managing the email ser
 In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
 
 > [!tabs]
-> **Emails (MX Plan)**
+> **MX Plan**
 >>
 >> Click `MX Plan`{.action}, then choose the name of the MX Plan service concerned. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts. In the `Size` column, you can see your email account’s current storage consumption.<br><br>
 >>![email](images/email-quota-quotacontrolpanel01.png){.thumbnail}<br>
@@ -63,12 +77,12 @@ In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} 
 To log in to webmail, go to the page [Webmail](/links/web/email) and enter the login information for your email account. Select the webmail client of your solution below:
 
 > [!tabs]
-> **OWA**: **Emails (MX Plan)** / **Email Pro** / **Exchange**
+> **OWA**: **MX Plan** / **Email Pro** / **Exchange**
 >>
 >> Click the gear icon on the top right and select `Options`{.action}. Click `My account`{.action} in the `General`{.action} section in the left-hand column. You can view your account’s current quota in the lower right-hand corner of the form.<br><br>
 >>![email](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
-> **Roundcube**: **Emails (MX Plan)**
+> **Roundcube**: **MX Plan**
 >>
 >> When you are logged in to Roundcube webmail, the quota is visible in the lower left-hand corner, displayed as a pie chart with the percentage used.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
@@ -96,7 +110,7 @@ Before you perform any other operation on your email account, you will need to f
 You can increase the storage capacity of your email account, if it has not reached its maximum capacity. Below, you will find the approach to follow, depending on your solution:
 
 > [!tabs]
-> **Emails (MX Plan)**
+> **MX Plan**
 >>
 >> The capacity of an MX Plan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](/links/manager).<br>
 >> In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the account you want to change, and then click `Edit`{.action}.
@@ -139,7 +153,7 @@ Below is a nonexhaustive list of configuration guides for email clients on compu
 - EWS protocol on the **Exchange** offer for macOS Outlook
 
 > [!tabs]
-> **Emails (MX Plan)**
+> **MX Plan and Zimbra Starter**
 >>
 >> Configuring an MX Plan account on **Windows**:<br><br>
 >> - [Windows 10 Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (included with Windows)<br>
@@ -198,7 +212,7 @@ Once you have installed your email software, follow the instructions below to pr
 Select the current solution for your email account from the menu below:
 
 > [!tabs]
-> **Emails (MX Plan)**
+> **MX Plan**
 >>
 >> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a [10 GB **Email Pro** solution](/links/web/email-pro) or a 50 GB [**Hosted Exchange** offer](/links/web/emails-hosted-exchange). To do this, please order the solution that suits your needs, and follow our guide on [Migrating an MX Plan email account to Email Pro or Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel). 
 >>

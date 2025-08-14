@@ -1,7 +1,7 @@
 ---
 title: Gestionar el espacio de almacenamiento de una cuenta de correo
 excerpt: "Cómo gestionar y optimizar el espacio de almacenamiento de una dirección de correo"
-updated: 2025-04-28
+updated: 2025-08-12
 ---
 
 
@@ -13,8 +13,12 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 
 ## Requisitos
 
-- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](/links/web/hosting), incluida en un [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratada por separado como solución autónoma, como [**Hosted Exchange**](/links/web/emails-hosted-exchange)).
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Disponer de una solución de correo de OVHcloud previamente configurada, que incluya:
+    - **MX Plan** ofrecido con nuestros [planes de hosting](/links/web/hosting) o incluido en un [alojamiento gratuito 100M](/links/web/domains-free-hosting).
+    - [Exchange](/links/web/emails).
+    - [Email Pro](/links/web/email-pro).
+    - [Zimbra](/links/web/emails-zimbra).
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
 
 > [!primary]
@@ -23,6 +27,16 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 >
 > - En el caso del alojamiento gratuito 100M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](/links/manager), accediendo al dominio correspondiente.
 > - Si tiene un [alojamiento web](/links/web/hosting), deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](/pages/web_cloud/web_hosting/activate-email-hosting).
+
+> [!primary]
+>
+> **Identificar la tecnología de correo electrónico de su solución MX Plan.**
+>
+> En función de la fecha de activación de su MX Plan o de una migración reciente, la tecnología de correo asociada puede diferir. Esta versión se caracteriza por la interfaz de su webmail. Para identificarlo:
+>
+> - En la pestaña `Información general`{.action}, consulte la tecnología utilizada bajo la mención **Webmail** que aparece en el recuadro `Suscripción`{.action} o `Webmail`{.action}.
+>
+> ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
 ## Procedimiento  <a name="instructions"></a>
 
@@ -43,7 +57,7 @@ Puede realizar esta acción desde el área de cliente si tiene la gestión del s
 Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
 
 > [!tabs]
-> **Emails (MXplan)**
+> **MX Plan**
 >>
 >> Haga clic en `MX Plan`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. En la columna `Tamaño`, puede consultar el consumo en curso de almacenamiento de su dirección de correo electrónico.<br><br>
 >>![Correo electrónico](images/email-quota-quotacontrolpanel01.png){.thumbnail}<br>
@@ -64,7 +78,7 @@ Para conectarse al webmail, acceda a la página [Webmail](/links/web/email) e in
 >> Haga clic en el botón <i class="icons-gear-concept icons-masterbrand-blue"></i> situado en la parte superior derecha de la pantalla y seleccione `Opciones`{.action}. Haga clic en `Mi cuenta`{.action} en la sección `General`{.action} de la columna izquierda. Puede ver el límite actual de su cuenta en la parte inferior derecha del formulario.<br><br>
 >>![Correo electrónico](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
-> **Roundcube**: **Emails (MXplan)**
+> **Roundcube**: **MX Plan**
 >>
 >> Cuando se conecta al webmail Roundcube, la cuota se muestra en la parte inferior izquierda, materializada por un campo y el porcentaje consumido.<br><br>
 >>![Correo electrónico](images/email-quota-webmail02.png){.thumbnail}<br>
@@ -92,7 +106,7 @@ Antes de realizar cualquier otra operación en su cuenta de correo, es necesario
 Es posible aumentar la capacidad de almacenamiento de su cuenta de correo si esta no ha alcanzado su capacidad máxima. A continuación explicamos cómo hacerlo, en función de su plan:
 
 > [!tabs]
-> **Emails (MXplan)**
+> **MX Plan**
 >>
 >> La capacidad de una cuenta MX Plan puede ir de 2,5 MB a 5 GB. Si está saturado y tiene una capacidad inferior a 5 GB, puede modificar su capacidad desde el [área de cliente de OVHcloud](/links/manager).<br>
 >> En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action}situado al final de la línea correspondiente a la cuenta que quiera modificar y seleccione `Editar`{.action}.
@@ -130,7 +144,7 @@ A continuación ofrecemos una lista no exhaustiva de las guías de configuració
 - el protocolo EWS de la solución **Exchange** para Outlook macOS.
 
 > [!tabs]
-> **Emails (MXplan)**
+> **MX Plan y Zimbra Starter**
 >>
 >> Configuración de una cuenta MX Plan en **Windows**:<br><br>
 >> - [Correo en Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (incluido con Windows)<br>
@@ -178,7 +192,7 @@ Una vez instalado el cliente de correo, siga las instrucciones que se indican a 
 En el siguiente menú, seleccione la solución actual de su cuenta de correo:
 
 > [!tabs]
-> **Emails (MXplan)**
+> **MX Plan**
 >>
 >> Si su cuenta de correo ya tiene una capacidad máxima de 5 GB, puede optar por migrar a una solución [**Hosted Exchange** de 50 GB](/links/web/emails-hosted-exchange). Para ello, puede contratar el servicio más adecuado y consultar nuestra guía [Migrar una dirección de correo MX Plan a una cuenta Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 >>
