@@ -1,7 +1,7 @@
 ---
 title: 'Installer un agent IA sur un VPS OVHcloud'
 excerpt: 'Découvrez comment déployer un agent IA comme OpenInterpreter ou GPT4All sur un VPS OVHcloud'
-updated: 2025-06-26
+updated: 2025-06-14
 ---
 
 ## Objectif
