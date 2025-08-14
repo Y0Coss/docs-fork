@@ -1,6 +1,6 @@
 ---
 title: 'Comment installer un agent IA sur un VPS OVHcloud'
-excerpt: 'Découvrez comment déployer un agent IA comme OpenInterpreter ou GPT4All sur un VPS OVHcloud'
+excerpt: 'Découvrez comment déployer un agent IA comme Open Interpreter ou GPT4All sur un VPS OVHcloud'
 updated: 2025-08-14
 ---
 
@@ -8,7 +8,7 @@ updated: 2025-08-14
 
 Ce guide explique comment déployer un agent IA local sur un VPS OVHcloud, sans dépendre du cloud de fournisseurs externes. Vous utiliserez pour cela un conteneur Docker prêt à l'emploi contenant un agent IA open source comme [Open Interpreter](https://github.com/openinterpreter/open-interpreter), [GPT4All](https://github.com/nomic-ai/gpt4all) ou [Auto-GPT](https://github.com/Significant-Gravitas/AutoGPT).
 
-**Découvrez comment déployer un agent IA comme OpenInterpreter ou GPT4All sur un VPS OVHcloud.**
+**Découvrez comment déployer un agent IA comme Open Interpreter ou GPT4All sur un VPS OVHcloud.**
 
 ## Prérequis
 

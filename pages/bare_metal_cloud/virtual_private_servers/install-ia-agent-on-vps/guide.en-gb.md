@@ -1,64 +1,64 @@
 ---
 title: 'Installing an AI agent on an OVHcloud VPS'
-excerpt: 'Find out how to deploy an AI agent like OpenInterpreter or GPT4All on an OVHcloud VPS'
-updated: 2025-06-26
+excerpt: 'Find out how to deploy an AI agent like Open Interpreter or GPT4All on an OVHcloud VPS'
+updated: 2025-08-14
 ---
 
 ## Objective
 
-This guide explains how to deploy an on-premises AI agent on an OVHcloud VPS, without depending on the cloud of external providers. You will use a ready-to-use Docker container containing an open-source AI agent, such as [OpenInterpreter](https://github.com/KillianLucas/open-interpreter), [GPT4All](https://github.com/nomic-ai/gpt4all) or [Auto-GPT](https://github.com/Torantulino/Auto-GPT).
+This guide explains how to deploy an on-premises AI agent on an OVHcloud VPS, without depending on the cloud of external providers. You will use a ready-to-use Docker container containing an open-source AI agent, such as [Open Interpreter](https://github.com/KillianLucas/open-interpreter), [GPT4All](https://github.com/nomic-ai/gpt4all) or [Auto-GPT](https://github.com/Torantulino/Auto-GPT).
 
-**Find out how to deploy an AI agent such as OpenInterpreter or GPT4All on an OVHcloud VPS.**
+**Find out how to deploy an AI agent such as Open Interpreter or GPT4All on an OVHcloud VPS.**
 
 ## Requirements
 
-- You must have a [VPS](https://www.ovhcloud.com/en-gb/vps/) that works (Debian 11 or higher is recommended)
-- administrative (sudo) access to your server via SSH
+- A [OVHcloud VPS](https://www.ovhcloud.com/en-gb/vps/) (Debian 11 or higher is recommended)
+- Administrative (sudo) SSH access to your server
 - Python ≥ 3.10 installed on the VPS
 
-## In practice
+## Instructions
 
 ### Update your VPS and install Python <a name="step1"></a>
 
-Open a terminal and connect to your VPS with the following command (replacing `IP_DU_VPS` with the real IP):
+Open a terminal and connect to your VPS with the following command (replacing `VPS_IP` with the real IP):
 
-‘bash
-ssh <user>@IP_VPS
-“
+```bash
+ssh <user>@VPS_IP
+```
 
 Update the packages:
 
-‘bash
+```bash
 sudo apt update && sudo apt upgrade -y
-“
+```
 
 Verify that Python ≥ 3.10 is installed:
 
-‘bash
+```bash
 python3 --version
-“
+```
 
 If necessary, install Python 3.10+ and pip:
 
-‘bash
+```bash
 sudo apt install -y python3 python3-pip python3-venv
-“
+```
 
 ### Create a virtual environment and install Open Interpreter <a name="step2"></a>
 
-Recent environments limit the use of “pip” globally. It is recommended that you create and use a virtual environment:
+Recent environments limit the use of `pip` globally. It is recommended that you create and use a virtual environment:
 
-‘bash
+```bash
 python3 -m venv ~/venv-openinterpreter
 source ~/venv-openinterpreter/bin/activate
-“
+```
 
 Install Open Interpreter:
 
-‘bash
+```bash
 pip install --upgrade pip
 pip install open-interpreter
-“
+```
 
 ### Configure an AI template for the agent (local or remote) <a name="step3"></a>
 
@@ -66,10 +66,10 @@ pip install open-interpreter
 
 You must have an OpenAI API key. Add it when you launch it for the first time, or set it beforehand:
 
-‘bash
+```bash
 export OPENAI_API_KEY="API_KEY"
 interpret
-“
+```
 
 Then follow the instructions.
 
@@ -77,31 +77,31 @@ Then follow the instructions.
 
 If you do not want to use OpenAI, run a local model using Ollama:
 
-‘bash
+```bash
 interpreter --local
-“
+```
 
 This will give you several options (Ollama, LM Studio, etc.). We recommend using Ollama, as it is easy to install and compatible with several modern models such as `llama3` or `mistral`.
 
 Install Ollama:
 
-‘bash
+```bash
 sudo apt install curl -y
 curl -fsSL https://ollama.com/install.sh | sh
 exec $SHELL
-“
+```
 
 Load the model:
 
-‘bash
+```bash
 ollama pull mistral
-“
+```
 
 Then try again:
 
-‘bash
+```bash
 interpreter --local
-“
+```
 
 #### Common errors
 
@@ -109,7 +109,7 @@ interpreter --local
 
 This error indicates that your VPS does not have enough RAM. Here are your options:
 
-- Change machine with at least 8GB RAM.
+- Change machine with at least 8 GB RAM.
 - Use the OpenAI API (see `Option 1` above).
 - Use a lighter model, like mistral.
 
@@ -117,17 +117,17 @@ This error indicates that your VPS does not have enough RAM. Here are your optio
 
 Test the following use cases:
 
-“console
+```console
 What is in the /tmp folder?
-“
+```
 
 Sample response:
 
 ![AI agent](images/question-version-python.png){.thumbnail}
 
-“console
+```console
 Writes a Python script that lists the files in the current folder.
-“
+```
 
 The agent interprets your request, generates code, and executes it locally.
 
@@ -141,6 +141,6 @@ With this guide, you have installed an AI agent on your OVHcloud VPS, capable of
 
 ## Go further
 
-For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/)
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/)
 
 Join our [community of users](/links/community).
