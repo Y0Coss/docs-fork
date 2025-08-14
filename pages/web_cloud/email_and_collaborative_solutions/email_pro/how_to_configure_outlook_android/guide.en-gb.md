@@ -33,7 +33,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. T
 
 ## Instructions
 
-#### Add the <a name="add-account"></a> account
+### Add the account <a name="add-account"></a>
 
 > [!warning]
 >
