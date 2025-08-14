@@ -48,13 +48,7 @@ Pour plus de détails concernant la création de nœud, consultez la [documentat
 
 Reliez les nœuds dans cet ordre :
 
-```
-Start → Set - Credentials
-            ↘
-             Merge → Sign - Generate Signature → SMS - Send
-            ↗
-     Set - Request Details
-```
+![N8N SMS](images/nodes.png){.thumbnail}
 
 Le nœud `Merge` reçoit les sorties des deux nœuds `Set - Credentials` et `Set - Request Details`, puis alimente `Sign - Generate Signature`, qui alimente `SMS - Send`.
 
@@ -62,7 +56,9 @@ Le nœud `Merge` reçoit les sorties des deux nœuds `Set - Credentials` et `Set
 
 Ajoutez les paramètres suivants dans votre nœud `Set - Credentials` :
 
-| Nom          | Valeur (exemple)          |
+- Mode : `Manual Mapping`.
+
+| Nom          | Valeur         |
 |---------------|--------------------------|
 | applicationKey | "VOTRE_APPLICATION_KEY" |
 | consumerKey    | "VOTRE_CONSUMER_KEY"    |
@@ -74,8 +70,8 @@ Ajoutez les paramètres suivants dans votre nœud `Set - Credentials` :
 
 Paramétrez le nœud `Set - Request Details` :
 
-- Mode : **Manual Mapping**.
-- Ajoutez un champ nommé `body` de type **Object** avec le contenu ci-dessous (exemple minimal).
+- Mode : `Manual Mapping`.
+- Ajoutez un champ nommé `body` de type `Object` avec le contenu ci-dessous (exemple minimal).
 
 ```json
 {
@@ -109,8 +105,8 @@ En sortie (output), vous devez avoir au même niveau : `applicationKey`, `applic
 
 Paramétrez le nœud `Sign - Generate Signature` :
 
-- Language : `JavaScript` (mode *par item*).
 - Mode : `Run once for each item`.
+- Language : `JavaScript`.
 
 Collez le code ci-dessous :
 
@@ -149,7 +145,7 @@ function sha1(input) {
 const j = $json;
 const method = 'POST';
 // Utilise l'endpoint EU standard recommandé:
-const url = `https://eu.api.ovh.com/1.0/sms/${j.serviceName}/jobs`; // (US/CA => adapte l'host) 
+const url = `https://eu.api.ovh.com/1.0/sms/${j.serviceName}/jobs`;
 const bodyString = JSON.stringify(j.body);
 const timestamp = Math.floor(Date.now()/1000).toString();
 
@@ -172,8 +168,9 @@ Paramétrez le nœud `SMS - Send` :
 - URL : `{{$json.url}}`.
 - Authentication : `None`.
 - Send Headers : `ON`.
+- Specify Headers : `Using fields below`.
 
-Ajoutez les paramètres suivants :
+Ajoutez les paramètres de header suivants :
 
 | Nom          | Valeur          |
 |---------------|--------------------------|
@@ -183,7 +180,7 @@ Ajoutez les paramètres suivants :
 | X-Ovh-Timestamp    | {{$json.timestamp}}   |
 | X-Ovh-Signature    | {{$json.signature}}   |
 
-Activez le `Send Body` et ajoutez les paramètres suivants :
+Activez le `Send Body` et ajoutez les paramètres de body suivants :
 
 | Nom          | Valeur          |
 |---------------|--------------------------|
@@ -209,7 +206,7 @@ Le message est alors transmis via l’API OVHcloud à votre destinataire.
 
 - L’URL signée est différente de l'URL envoyée (host différent, `/` final en trop).
 - Le body signé est différent du body envoyé (re-`stringify`, espaces, ordre, etc.).
-- Horloge locale trop décalée → utilisez l’heure serveur OVH (voir la partie [Industrialisation et sécurité](#industrialisation)).
+- L'horloge locale est trop décalée. Utilisez plutôt l’heure serveur OVH (voir la partie [Industrialisation et sécurité](#industrialisation)).
 
 #### **Sms sender ... does not exist (403)**
 
@@ -230,7 +227,7 @@ Le `sender` (expéditeur) n’est pas déclaré/validé dans votre espace client
 
 Si vous souhaitez industrialiser votre workflow et le sécuriser davantage, appliquez les conseils suivants.
 
-#### Heure serveur OVH (recommandé)
+#### Heure serveur OVHcloud
 
 Ajoutez un nœud de type **HTTP Request** avant la signature :
 
