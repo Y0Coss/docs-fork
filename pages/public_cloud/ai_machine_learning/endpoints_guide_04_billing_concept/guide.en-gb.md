@@ -41,6 +41,8 @@ Here is the model billing overview for AI Endpoints models:
 | Large Language Model (LLM) | Mistral Nemo Instruct 2407     | 0.14                | 0.14                | 0.13               | 0.13               | Per 1 million tokens |
 | Large Language Model (LLM) | Llama 3.1 8B Instruct     | 0.11                | 0.11                | 0.10               | 0.10               | Per 1 million tokens |
 | Large Language Model (LLM) | Mistral 7B Instruct v0.3 | 0.11                | 0.11                | 0.10               | 0.10               | Per 1 million tokens |
+| Reasoning LLM | Gpt Oss 120B     | 0.00                | 0.00                | 0.00               | 0.00               | Per 1 million tokens |
+| Reasoning LLM | Gpt Oss 20B     | 0.00                | 0.00                | 0.00               | 0.00               | Per 1 million tokens |
 | Reasoning LLM | Qwen 3 32B     | 0.09                | 0.25                | 0.08               | 0.23               | Per 1 million tokens |
 | Reasoning LLM | DeepSeek R1 Distill Llama 70B     | 0.74                | 0.74                | 0.67               | 0.67               | Per 1 million tokens |
 | Code LLM | Qwen 2.5 Coder 32B Instruct | 0.96                | 0.96                | 0.87               | 0.87               | Per 1 million tokens |
@@ -56,8 +58,9 @@ Here is the model billing overview for AI Endpoints models:
 | Natural Language Processing (NLP) | Bert Base NER     | Free                | Free                | Free               | Free               | Per 1 million characters |
 | Natural Language Processing (NLP) | Bart Large CNN     | Free                | Free                | Free               | Free               | Per 1 million characters |
 | Image generation | Stable Diffusion XL     | Free                | Free                | Free               | Free               | Per image |
-| Audio Analysis | RIVA Automatic Speech Recognition | Free                | Free                | Free               | Free               | Per hour |
-| Audio Analysis | RIVA Text-to-Speech     | Free                | Free                | Free               | Free               | Per hour |
+| Audio Analysis | Whisper Large V3 Turbo | 0.00001413468                | Free                | 0.00001278               | Free               | Per second |
+| Audio Analysis | Whisper Large V3 | 0.00004515798                | Free                | 0.00004083               | Free               | Per second |
+| Audio Analysis | RIVA Text-to-Speech     | Free                | Free                | Free               | Free               | Per second |
 | Translation | T5-Large     | Free                | Free                | Free               | Free               | Per 1 million characters |
 | Computer vision | YOLOv11 Object Detection     | Free                | Free                | Free               | Free               | Per image |
 | Computer vision | YOLOv11 Image Segmentation | Free                | Free                | Free               | Free               | Per image |
