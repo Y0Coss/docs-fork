@@ -1,27 +1,28 @@
 ---
 
-title: "Automatiser l'envoie de SMS avec n8n via l'API OVHcloud"
+title: "Automatiser l'envoi de SMS avec n8n via l'API OVHcloud"
 excerpt: "Découvrez comment envoyer des SMS depuis n8n en utilisant l'API OVHcloud."
 updated: 2025-07-15
 ---
 
 ## Objectif
 
-Ce guide vous explique comment intégrer l'API SMS d'OVHcloud dans **n8n**, afin d'envoyer automatiquement des SMS depuis vos workflows. Vous apprendrez à configurer un appel HTTP signé via l'API OVH pour déclencher l'envoi d’un message.
+Ce guide vous explique comment intégrer l'API SMS d'OVHcloud dans **n8n**, afin d'envoyer automatiquement des SMS depuis vos workflows. Vous apprendrez à configurer un appel HTTP signé via l'API OVHcloud pour déclencher l'envoi d’un message.
 
+**Découvrez comment envoyer des SMS depuis n8n en utilisant l'API OVHcloud.**
 
 ## Prérequis
 
 - Disposer d'un compte OVHcloud actif avec le service **SMS** activé
-- Des **crédentiels API OVHcloud** (application key, application secret, consumer key)
-- Un numéro d’expéditeur (ex : votre nom ou numéro valide déclaré dans le Manager OVHcloud)
+- Des identifiants API OVHcloud (application key, application secret, consumer key)
+- Un numéro d’expéditeur (ex. : votre nom ou numéro valide déclaré dans le Manager OVHcloud)
 - Un VPS, un serveur ou un poste local avec [n8n](https://n8n.io/) installé et accessible
 
 ## En pratique
 
 ### Étape 1 – Générer les identifiants API OVHcloud
 
-Avant de pouvoir envoyer des SMS via l’API OVHcloud, vous devez récupérer les trois identifiants suivants :
+Avant de pouvoir envoyer des SMS via l’API OVHcloud, récupérez les trois identifiants suivants :
 
 - Application key
 - Application secret
@@ -29,125 +30,52 @@ Avant de pouvoir envoyer des SMS via l’API OVHcloud, vous devez récupérer le
 
 Consultez la section « Utilisation avancée : coupler les API OVHcloud avec une application » de notre guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) puis copiez et conservez les trois identifiants `Application key`, `Application secret` et `Consumer key`.
 
-## Étape 2 – Générer une signature API OVHcloud depuis un service externe
+### Étape 2 — Créer le workflow et les nœuds
 
-L’API OVHcloud exige une signature HMAC-SHA1 qui n’est pas générable directement dans un nœud `Code` N8N, car la bibliothèque `crypto` de Node.js n’est pas disponible dans cet environnement.
+Schéma (dans cet ordre) :
 
-### Solution recommandée : créer un mini service Node.js sur votre VPS
+Connectez-vous à votre interface n8n puis cliquez sur le bouton **Create Workflow**.
 
-Cette solution consiste à créer un petit script Node.js qui sera exposé via une API locale. Il générera pour vous la signature attendue par OVHcloud.
+Créez les nœuds suivants (vides pour le moment) :
 
-### 1. Créer le script sur votre VPS
+- `Set - Credentials` : de type **Edit Fields (Set)**
+- `Set - Request Details` : de type **Edit Fields (Set)**
+- `Merge` : de type **Merge**
+- `Sign - Generate Signature` : de type **Code**
+- `SMS - Send` : de type **HTTP Request**
 
-1. Connectez-vous à votre VPS.
-2. Déplacez-vous dans un dossier adapté, par exemple :
+Pour plus de détails concernant la création de nœud, consultez la [documentation officielle de n8n](https://docs.n8n.io/integrations/creating-nodes/overview/).
 
-   ```bash
-   cd /opt
-   mkdir n8n-signature-api && cd n8n-signature-api
-   ```
-3. Créez un fichier `index.js` :
+Reliez les nœuds dans cet ordre :
 
-   ```bash
-   nano index.js
-   ```
-4. Collez ce code dans le fichier :
-
-```js
-const express = require('express');
-const crypto = require('crypto');
-const cors = require('cors');
-const app = express();
-app.use(cors());
-app.use(express.json());
-
-const applicationSecret = 'VOTRE_APPLICATION_SECRET';
-
-app.post('/sign', (req, res) => {
-  const { consumerKey, method, url, body, timestamp } = req.body;
-  const toSign = `${applicationSecret}+${consumerKey}+${method}+${url}+${body}+${timestamp}`;
-  const signature = '$1$' + crypto.createHmac('sha1', applicationSecret).update(toSign).digest('hex');
-  res.json({ signature });
-});
-
-app.listen(3000, () => console.log('Signer API prêt sur http://localhost:3000'));
+```
+Start → Set - Credentials
+            ↘
+             Merge → Sign - Generate Signature → SMS - Send
+            ↗
+     Set - Request Details
 ```
 
-Remplacez `VOTRE_APPLICATION_SECRET` par votre application secret.
+Le nœud `Merge` reçoit les sorties des deux nœuds `Set - Credentials` et `Set - Request Details`, puis alimente `Sign - Generate Signature`, qui alimente `SMS - Send`.
 
-5. Installez les dépendances :
+### Étape 3 — Paramétrer le nœud `Set – Credentials`
 
-```bash
-npm init -y
-npm install express cors
-```
+Ajoutez les paramètres suivants dans votre nœud `Set - Credentials` :
 
-6. Lancez le serveur :
-
-```bash
-node index.js
-```
-
-Le service est maintenant accessible sur `http://[IP_DE_VOTRE_VPS]:3000/sign`.
-
-Si vous utilisez Docker ou souhaitez exposer cette API, pensez à ouvrir le port 3000 ou utiliser un proxy (comme Caddy ou NGINX).
-
-### Étape 3 – Créer le workflow dans N8N
-
-#### 1. Créer un nœud `Set` pour stocker les variables globales
-
-1. Connectez-vous à votre interface n8N
-2. Cliquez sur le bouton **Create Workflow**.
-3. Ajoutez un nœud de type **Set** et nommez-le par exemple `Set - Credentials`. Pour plus de détails concernant la création de nœud, consultez la [documentation officielle de n8n](https://docs.n8n.io/integrations/creating-nodes/overview/).
-
-Ajoutez les valeurs suivantes dans votre nœud :
-
-| Name          | Value                    |
+| Nom          | Valeur (exemple)          |
 |---------------|--------------------------|
 | applicationKey | "VOTRE_APPLICATION_KEY" |
 | consumerKey    | "VOTRE_CONSUMER_KEY"    |
 | serviceName    | "sms-ovh-123456"        |
+| applicationSecret | "AS_xxxxxxxxxxxxx" |
+| timestamp | {{ Math.floor(Date.now() / 1000) }} |
 
-Ces champs seront utilisés dynamiquement dans les nœuds suivants.
+### Étape 4 — Paramétrer le nœud `Set – Request Details`
 
-#### 2. Créer un nœud `HTTP Request` vers le service `/sign`
+Paramétrez le nœud `Set - Request Details` :
 
-Ajoutez un nœud `HTTP Request` et nommez-le `Sign - Generate Signature`. Appliquez la configuration suivante :
-
-* **HTTP Method** : `POST`
-* **URL** : `http://[IP_DE_VOTRE_VPS]:3000/sign`
-* **Request Format** : `JSON`
-* Cliquez sur **Add Parameter** → `Body Parameters` → Ajoutez les paramètres suivants :
-
-| Name          | Value       |
-| ------------- | ----------------------------------------------- |
-| `method`      | `POST`                                          |
-| `url`         | `https://eu.api.ovh.com/1.0/sms/{{ $node["Set - Credentials"].json["serviceName"] }}/jobs`      |
-| `body`        | `{"charset":"UTF-8","coding":"7bit","message":"Message test","noStopClause":true,"priority":"high","receivers":["33600000000"],"sender":"MonEntreprise"}` |
-| `timestamp`   | `{{ Math.floor(Date.now() / 1000) }}`                 |
-| `consumerKey` | `{{ $node["Set - Credentials"].json["consumerKey"] }}`    |
-
-Cela appellera le service VPS pour générer la signature.
-
-#### 3. Créer un nœud `HTTP Request` vers OVH pour envoyer le SMS
-
-Ajoutez un troisième nœud `HTTP Request`, et nommez-le `SMS - Send`.
-
-* **HTTP Method** : `POST`
-* **URL** : `https://eu.api.ovh.com/1.0/sms/{{ $node["Set - Credentials"].json["serviceName"] }}/jobs`
-* **Headers** : cliquez sur **Send Header** et remplissez :
-
-| Name              | Value                                                        |
-| ----------------- | ------------------------------------------------------------ |
-| Content-Type      | `application/json`                                           |
-| X-Ovh-Application | `{{ $node["Set - Credentials"].json["applicationKey"] }}`    |
-| X-Ovh-Timestamp   | `{{ $node["Sign - Generate Signature"].json["timestamp"] }}` |
-| X-Ovh-Signature   | `{{ $node["Sign - Generate Signature"].json["signature"] }}` |
-| X-Ovh-Consumer    | `{{ $node["Set - Credentials"].json["consumerKey"] }}`       |
-
-* **Body Content Type** : `Raw`
-* **Content Type** : `application/json`
-* **Body** : collez ce contenu directement dans le champ :
+- Mode : **Manual Mapping**.
+- Ajoutez un champ nommé `body` de type **Object** avec le contenu ci-dessous (exemple minimal).
 
 ```json
 {
@@ -156,92 +84,168 @@ Ajoutez un troisième nœud `HTTP Request`, et nommez-le `SMS - Send`.
   "message": "Message test",
   "noStopClause": true,
   "priority": "high",
-  "receivers": ["33600000000"],
-  "sender": "MonEntreprise"
+  "receivers": ["+33612345678"],
+  "sender": "SENDER"
 }
 ```
 
-**Important** : ne mettez pas de variable ici, ne l'entourez pas d'expressions `{{ }}`, ni de `stringify` — c'est du JSON brut.
+Assurez-vous :
 
-#### 4. Relier les nœuds entre eux dans N8N
+- D'utiliser un numéro au format international (ex. : +336...).
+- D'avoir défini votre expéditeur dans votre compte OVHcloud. Pour tester sans déclarer d'expéditeur, remplacez `"sender": "SENDER"` par `"senderForResponse": true`.
 
-Dans l'interface de N8N, reliez les nœuds dans cet ordre :
+### Étape 5 — Paramétrer le nœud `Merge`
 
+Paramétrez le nœud `Merge` :
+
+- Mode : `Combine`.
+- Combine by : `Position`.
+- Number of Inputs : `2`.
+
+Reliez `Set - Credentials` en **Input 1** et `Set - Request Details` en **Input 2**.
+En sortie (output), vous devez avoir au même niveau : `applicationKey`, `applicationSecret`, `consumerKey`, `serviceName`, `timestamp` et `body`.
+
+### Étape 6 — Paramétrer le nœud `Sign – Generate Signature`
+
+Paramétrez le nœud `Sign - Generate Signature` :
+
+- Language : `JavaScript` (mode *par item*).
+- Mode : `Run once for each item`.
+
+Collez le code ci-dessous :
+
+```js
+// --- SHA1 pur (pas HMAC) ---
+function sha1(input) {
+  function rotl(n, s) { return (n << s) | (n >>> (32 - s)); }
+  function hex(v){ let s=''; for(let i=7;i>=0;i--) s+=((v >>> (i*4)) & 0xf).toString(16); return s; }
+  function utf8(str){
+    str=str.replace(/\r\n/g,'\n');
+    let out=''; for (let i=0;i<str.length;i++){
+      const c=str.charCodeAt(i);
+      if (c<128) out+=String.fromCharCode(c);
+      else if (c<2048) out+=String.fromCharCode((c>>6)|192, (c&63)|128);
+      else out+=String.fromCharCode((c>>12)|224, ((c>>6)&63)|128, (c&63)|128);
+    } return out;
+  }
+  let i,j,A,B,C,D,E,temp,H0=0x67452301,H1=0xEFCDAB89,H2=0x98BADCFE,H3=0x10325476,H4=0xC3D2E1F0;
+  const W=new Array(80), m=utf8(input), ml=m.length, wa=[];
+  for(i=0;i<ml-3;i+=4){ j=(m.charCodeAt(i)<<24)|(m.charCodeAt(i+1)<<16)|(m.charCodeAt(i+2)<<8)|m.charCodeAt(i+3); wa.push(j); }
+  let last; switch(ml%4){case 0:last=0x080000000;break;case 1:last=(m.charCodeAt(ml-1)<<24)|0x0800000;break;case 2:last=(m.charCodeAt(ml-2)<<24)|(m.charCodeAt(ml-1)<<16)|0x08000;break;case 3:last=(m.charCodeAt(ml-3)<<24)|(m.charCodeAt(ml-2)<<16)|(m.charCodeAt(ml-1)<<8)|0x80;break;}
+  wa.push(last); while ((wa.length%16)!==14) wa.push(0); wa.push(ml>>>29); wa.push((ml<<3)&0x0ffffffff);
+  for(let bs=0; bs<wa.length; bs+=16){
+    for(i=0;i<16;i++) W[i]=wa[bs+i]; for(i=16;i<=79;i++) W[i]=rotl(W[i-3]^W[i-8]^W[i-14]^W[i-16],1);
+    A=H0; B=H1; C=H2; D=H3; E=H4;
+    for(i=0;i<=19;i++){ temp=(rotl(A,5)+((B&C)|(~B&D))+E+W[i]+0x5A827999)&0x0ffffffff; E=D; D=C; C=rotl(B,30); B=A; A=temp; }
+    for(i=20;i<=39;i++){ temp=(rotl(A,5)+(B^C^D)+E+W[i]+0x6ED9EBA1)&0x0ffffffff; E=D; D=C; C=rotl(B,30); B=A; A=temp; }
+    for(i=40;i<=59;i++){ temp=(rotl(A,5)+((B&C)|(B&D)|(C&D))+E+W[i]+0x8F1BBCDC)&0x0ffffffff; E=D; D=C; C=rotl(B,30); B=A; A=temp; }
+    for(i=60;i<=79;i++){ temp=(rotl(A,5)+(B^C^D)+E+W[i]+0xCA62C1D6)&0x0ffffffff; E=D; D=C; C=rotl(B,30); B=A; A=temp; }
+    H0=(H0+A)&0x0ffffffff; H1=(H1+B)&0x0ffffffff; H2=(H2+C)&0x0ffffffff; H3=(H3+D)&0x0ffffffff; H4=(H4+E)&0x0ffffffff;
+  }
+  return (hex(H0)+hex(H1)+hex(H2)+hex(H3)+hex(H4)).toLowerCase();
+}
+
+// -- SIGNATURE OVH --
+const j = $json;
+const method = 'POST';
+// Utilise l'endpoint EU standard recommandé:
+const url = `https://eu.api.ovh.com/1.0/sms/${j.serviceName}/jobs`; // (US/CA => adapte l'host) 
+const bodyString = JSON.stringify(j.body);
+const timestamp = Math.floor(Date.now()/1000).toString();
+
+// AppSecret + ConsumerKey + Method + URL + Body + Timestamp
+const toSign = [ j.applicationSecret, j.consumerKey, method, url, bodyString, timestamp ].join('+');
+const signature = `$1$${sha1(toSign)}`;
+
+return { json: { ...j, url, bodyString, timestamp, signature } };
 ```
-Start → Set - Credentials → Sign - Generate Signature → SMS - Send
-```
 
-Pour relier deux nœuds, cliquez sur le petit carré gris à droite du premier nœud, puis faites glisser jusqu'au carré gauche du nœud suivant.
+> [!warning]
+>
+> N'utilisez pas de **HMAC** ici (OVH attend8 `"$1$" + SHA1(AppSecret + … + Timestamp)`). Le paramètre `bodyString` est **exactement** le JSON qui sera envoyé ensuite (pas d’autre `stringify`). L’URL signée doit être **strictement identique** à celle de l’envoi (même host, pas de `/` final en plus).
+
+### Étape 7 — Paramétrer le nœud `SMS - Send`
+
+Paramétrez le nœud `SMS - Send` :
+
+- Method : `POST`.
+- URL : `{{$json.url}}`.
+- Authentication : `None`.
+- Send Headers : `ON`.
+
+Ajoutez les paramètres suivants :
+
+| Nom          | Valeur          |
+|---------------|--------------------------|
+| Content-Type | application/json |
+| X-Ovh-Application  | {{$json.applicationKey}}   |
+| X-Ovh-Consumer    | {{$json.consumerKey}}   |
+| X-Ovh-Timestamp    | {{$json.timestamp}}   |
+| X-Ovh-Signature    | {{$json.signature}}   |
+
+Activez le `Send Body` et ajoutez les paramètres suivants :
+
+| Nom          | Valeur          |
+|---------------|--------------------------|
+| Body Content Type | Raw |
+| Content Type  | application/json   |
+| Body  | {{$json.bodyString}}   |
 
 ### Tester votre workflow
 
-Exécutez votre workflow. Les étapes suivantes s'éxécutent :
+Exécutez votre workflow. Les étapes suivantes s'exécutent :
 
-1. Récupère les identifiants via `Set`
-2. Génère dynamiquement la signature via le service `/sign`
-3. Appelle l’API OVH pour envoyer le SMS
+1. Set - Credentials : met à disposition applicationKey, consumerKey, serviceName (et éventuellement applicationSecret si vous ne l’avez pas externalisé).
+2. Set - Request Details : prépare l’objet body contenant le corps du SMS.
+3. Merge (Combine/Position) : fusionne les deux sorties des nœuds précédents.
+4. Sign - Generate Signature (Code) : calcule bodyString, timestamp, signature (SHA‑1 simple) et l’URL d’appel.
+5. SMS - Send (HTTP Request) : envoie le POST vers l'URL avec le body {{$json.bodyString}} et les headers X-Ovh-*.
 
 Le message est alors transmis via l’API OVHcloud à votre destinataire.
 
-#### Erreurs fréquentes
+### Erreurs fréquentes
 
-##### Problem in node : The service refused the connection - perhaps it is offline
+#### **Invalid_signature (400)**
 
-Cela signifie que N8N ne peut pas contacter votre serveur de signature. Voici les points à vérifier :
+- L’URL signée est différente de l'URL envoyée (host différent, `/` final en trop).
+- Le body signé est différent du body envoyé (re-`stringify`, espaces, ordre, etc.).
+- Horloge locale trop décalée → utilisez l’heure serveur OVH (voir la partie [Industrialisation et sécurité](#industrialisation)).
 
-1. Le serveur Node.js est-il lancé ?
+#### **Sms sender ... does not exist (403)**
 
-Exécutez dans votre terminal :
+Le `sender` (expéditeur) n’est pas déclaré/validé dans votre espace client OVHcloud. Testez avec `senderForResponse: true` ou validez votre émetteur.
 
-node index.js
+#### **Bad Request**
 
-Vous devez voir :
+- Vérifiez dans chaque nœud le nom et la valeur de vos paramètres.
+- Assurez-vous que les headers et les body soient complets.
+- Vérifiez que l'URL du nœud Send - SMS respecte bien le format suivant : `https://eu.api.ovh.com/1.0/sms/sms-ab12345/jobs`
 
-Signer API prêt sur http://localhost:3000
+#### **Erreurs de nœud Code**
 
-2. Utilisez-vous la bonne IP dans l’URL ?
+- N'utilisez pas de `require('crypto')` dans n8n mais plutôt **SHA-1 pur Javascript** ci-dessus.
+- Utilisez le mode *par item* et évitez d'appeler `$input.all()` dans votre code.
 
-Ne mettez pas localhost dans N8N sauf si N8N et votre script sont sur la même machine.
+### Industrialisation et sécurité <a name="industrialisation"></a>
 
-Utilisez l’adresse IP publique de votre VPS : http://[IP_DE_VOTRE_VPS]:3000/sign
+Si vous souhaitez industrialiser votre workflow et le sécuriser davantage, appliquez les conseils suivants.
 
-3. Le port 3000 est-il ouvert ?
+#### Heure serveur OVH (recommandé)
 
-Sur un serveur Ubuntu avec UFW :
+Ajoutez un nœud de type **HTTP Request** avant la signature :
 
-sudo ufw allow 3000/tcp
+- `GET https://eu.api.ovh.com/1.0/auth/time`
+- Récupérez la valeur et remplacez `timestamp` par cette valeur **exacte**.
 
-Vérifiez également les règles de pare-feu côté OVH / hébergeur.
+#### Ne pas faire transiter l’`applicationSecret`
 
-4. L’URL est-elle correcte dans le nœud HTTP vers /sign ?
+- Stockez-le comme **variable d’environnement** (ex. `OVH_APP_SECRET`) et lisez-le dans le nœud de type Code (Sign - Generate Signature) via `$env.OVH_APP_SECRET`, ou via la fonctionnalité **Secrets/Credentials** de n8n.
+- À défaut, **ne retournez jamais** le secret en sortie du nœud.
 
-Elle doit pointer vers : http://[IP_DE_VOTRE_VPS]:3000/sign
+#### Gestion des caractères
 
-Corrigez ces éléments et relancez le workflow.
+Si votre message contient des emojis/accents non GSM, utilisez `"coding": "ucs2"`.
 
-##### Bad request – please check your parameters
+## Aller plus loin
 
-Cela signifie que la requête envoyée à l’API OVH est mal formée. Voici les causes fréquentes :
-
-Le JSON dans le Body est-il bien formé ?
-
-Utilisez bien le type Raw, Content-Type: application/json et collez un JSON propre (pas d'expressions {{ }} ni de stringify).
-
-Le numéro dans receivers est-il bien au format international ?
-
-Exemple correct : "33612345678" (sans espace, sans +)
-
-Le champ sender est-il déclaré dans votre espace OVH ?
-
-Il doit être validé côté OVH sinon la requête échouera.
-
-Les headers contiennent-ils tous les bons champs ?
-
-X-Ovh-Application, X-Ovh-Timestamp, X-Ovh-Signature, X-Ovh-Consumer, Content-Type
-
-La signature générée est-elle correcte ?
-
-Vérifiez que le corps utilisé pour signer (body) est identique à celui envoyé.
-
-Astuce : si le problème persiste, remplacez temporairement le corps par un exemple minimal et remontez les paramètres un par un.
-
+Échangez avec notre [communauté d'utilisateurs](/links/community).
