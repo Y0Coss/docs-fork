@@ -53,7 +53,7 @@ Depuis ce dépôt GitHub, effectuez les actions suivantes :
 
 ### Étape 3 : Envoyer l’archive sur le VPS <a name="step3"></a>
 
-Dans votre terminal (à l’emplacement où se trouve le fichier .zip), utilisez cette commande :
+Dans votre terminal (à l’emplacement où se trouve le fichier `.zip`), utilisez cette commande :
 
 ```bash
 scp mon_site.zip <utilisateur>@<IP_VPS>:~
@@ -142,7 +142,6 @@ sudo cp -r dist/* /var/www/lovable/
 > [!primary]
 >
 > Pour ce guide, nous choisissons NGINX mais vous êtes libre d'installer le serveur web de votre choix.
->
 
 Installez NGINX :
 
@@ -156,7 +155,7 @@ Créez un fichier de configuration pour votre site :
 sudo nano /etc/nginx/sites-available/lovable
 ```
 
-Collez le contenu suivant, en remplaçant `adresse_du_vps` par l'adresse IP de votre VPS ou votre nom de domaine :
+Collez le contenu suivant :
 
 ```console
 server {
