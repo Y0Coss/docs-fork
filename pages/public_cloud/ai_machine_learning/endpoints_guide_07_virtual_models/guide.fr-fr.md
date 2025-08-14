@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Modèles virtuels
 excerpt: Découvrez comment utiliser les modèles virtuels d'AI Endpoints
-updated: 2025-08-06
+updated: 2025-08-14
 ---
 
 > [!primary]
@@ -13,7 +13,7 @@ updated: 2025-08-06
 
 Choosing the right Large Language Model (LLM) is not always straightforward. Models vary in strengths, performance, cost, and licensing, and new ones appear regularly—often outperforming previous options. This rapid evolution makes it essential to match your choice to your specific needs, while staying ready to adapt as better models emerge.
 
-To make this easier, we developed a system of virtual models where instead of requesting a hard-coded model, you specify the expected specifications of the model you need (size, price, ...) and we resolve it to the currently best matching model in our catalog. In this guide, we'll see the different capabilities of this feature and how to use it with your OpenAI compatible code.
+To make this easier, we developed a system of virtual models where instead of requesting a hard-coded model, you specify the expected specifications of the model you need (size, price, etc.) and we resolve it to the currently best matching model in our catalog. In this guide, we'll see the different capabilities of this feature and how to use it with your OpenAI compatible code.
 
 ## Requirements
 
@@ -28,7 +28,7 @@ The examples provided during this guide can be used with one of the following en
 >> pip install openai
 >> ```
 >> 
->> **Curl**
+> **Curl**
 >> 
 >> A standard terminal, with [curl](https://curl.se/) installed on the system.
 >> 
@@ -43,23 +43,25 @@ Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cl
 ## Model DSL
 
 When you request a LLM generation through our unified endpoint, you can provide in the OpenAI-compliant `model` field a model DSL query instead of a hardcoded model name.
-These queries are divided into three parts: tag, ranker, and condition.
-- **Tag**: A tag can be a model series (llama, mistral, codestral, ...), a publisher (meta-llama, mistralai, ...) or use case tag (code_chat, code_completion, summarization, ...)
-- **Ranker**: The ranker defines a model's capability compared to other models. We support multiple rankers such as fastest, cheapest, biggest, latest or smallest
+
+These queries are divided into three parts: tag, ranker, and condition:
+
+- **Tag**: A tag can be a model series (llama, mistral, codestral, ...), a publisher (meta-llama, mistralai, ...) or use case tag (code_chat, code_completion, summarization, etc.)
+- **Ranker**: The ranker defines a model's capability compared to other models. We support multiple rankers such as fastest, cheapest, biggest, latest or smallest.
 - **Condition**: The condition allows you to filter models based on strict requirements on some of the model specifications such as context_size, max_tokens and input_cost. These conditions support basic operators (<, >, =).
 
 Below are some example queries and the models they currently resolve to. Please note that the resolved model can change, as we continuously update our catalog with new model releases.
 
 | Model Query | Current Target Model | Usage |
 |-----------|-----------|-----------|
-| code_chat@latest   | Qwen3-32B   | 	The most recently released model optimized for code chat tasks |
-| meta-llama@latest   | Llama-3.1-8B-Instruct   | The latest Meta-released LLaMA model |
+| code_chat@latest | Qwen3-32B | The most recently released model optimized for code chat tasks |
+| meta-llama@latest | Llama-3.1-8B-Instruct | The latest Meta-released LLaMA model |
 | mistral@latest?context_size > 100000 | Mistral-Small-3.2-24B-Instruct-2506 | The latest Mistral model with a context window greater than 100k tokens |
 | llama@biggest?input_cost<0.5 | Llama-3.1-8B-Instruct | The largest LLaMA model whose input token cost is under €0.50 per 1M tokens |
 
 You can visit our [catalog](https://endpoints.ai.cloud.ovh.net/catalog) to learn more about the different model specifications.
 
-## Example Usage
+### Example Usage
 
 The following code samples provide a simple example on how to query our API with a model query.
 
