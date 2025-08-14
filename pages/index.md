@@ -868,6 +868,7 @@
             + [Public Cloud Databases - How to setup your Kubernetes database operator](public_cloud/public_cloud_databases/databases_12_operator)
             + [Public Cloud Databases - How to setup a service integration](public_cloud/public_cloud_databases/databases_07_cross_service_integration)
             + [Public Cloud Databases - How to fetch service metrics with Prometheus](public_cloud/public_cloud_databases/databases_17_metrics_via_prometheus)
+            + [Public Cloud Databases - How to enable deletion protection](public_cloud/public_cloud_databases/databases_19_deletion_protection)
             + [Reversibility Policy for Managed Document Database Product](account_and_service_management/reversibility/06-ddb_mongo)
             + [Reversibility Policy for Managed Relational Database Product](account_and_service_management/reversibility/07-rdb_mysql_postgre)
             + [Reversibility Policy for the Managed Message Broker product](account_and_service_management/reversibility/14-reversibility-mdb)
