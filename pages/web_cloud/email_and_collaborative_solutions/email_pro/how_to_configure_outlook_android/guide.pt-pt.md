@@ -68,8 +68,8 @@ Siga as etapas de instalação, clicando nos separadores abaixo:
 >> ![outlook android email pro](images/outlook-app-android-add-step02.png){.thumbnail .w-400 .h-600}
 >>
 >> [!warning]
->> > >
->> Se a janela de escolha do protocolo não aparecer, prima o botão `?` no canto superior direito do ecrã e escolha `Mudar de fornecedor de conta`{.action}. Selecione `IMAP`(recomendado) ou `POP3`.<br>
+>> > 
+>> > Se a janela de escolha do protocolo não aparecer, prima o botão `?` no canto superior direito do ecrã e escolha `Mudar de fornecedor de conta`{.action}. Selecione `IMAP`(recomendado) ou `POP3`.<br>
 >> ![outlook android email pro](images/outlook-app-android-add-step021.png){.thumbnail .w-400 .h-600}
 >>
 > **Passo 3 - IMAP**
