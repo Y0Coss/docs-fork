@@ -1,18 +1,18 @@
 ---
 title: Public Cloud Databases - How to enable deletion protection
 excerpt: Find out how to setup a deletion protection for your Public Cloud databases service
-updated: 2025-08-14
+updated: 2025-08-15
 ---
 
 ## Objective
 
-Public Cloud databases allow you protect your service to deletion by mistake.
+Public Cloud databases allow you to protect your service against accidental deletion.
 
-**This guide explains how to setup deletion protection for your Public Cloud databases service so that the service cannot be delete anymore until the deletion protection is disable.**
+**This guide explains how to configure deletion protection for your Public Cloud databases service so that the service cannot be deleted until the deletion protection is disabled.**
 
 ## Requirements
 
-- A [Public Cloud databases service](/links/public-cloud/databases) up and running,
+- A [Public Cloud databases service](/links/public-cloud/databases) up and running
 - Access to the [OVHcloud API](/links/api)
 
 ## Instructions
