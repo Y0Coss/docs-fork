@@ -6,9 +6,9 @@ updated: 2025-08-14
 
 ## Objective
 
-Public Cloud databases allow you protect your service to deletion by mistake.
+Public cloud databases allow you to protect your service against accidental deletion.
 
-**This guide explains how to setup deletion protection for your Public Cloud databases service so that the service cannot be delete anymore until the deletion protection is disable.**
+**This guide explains how to configure deletion protection for your Public Cloud database service so that the service cannot be deleted until deletion protection is disabled.**
 
 ## Requirements
 
