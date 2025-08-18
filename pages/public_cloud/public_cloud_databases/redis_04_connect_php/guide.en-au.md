@@ -14,8 +14,8 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your Valkey service](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
@@ -27,7 +27,7 @@ One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as s
 
 Another way is to interact directly using programming languages, such as PHP.
 PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or WordPress.
-Redis® has multiple PHP clients, allowing us to connect and manage an instance from code. Please follow the official [Redis® documentation for PHP clients](https://redis.io/clients#php){.external} to get the latest clients information.
+Redis® has multiple PHP clients, allowing us to connect and manage an instance from code. Please follow the official [Redis® documentation for PHP clients](https://redis.io/clients#php) to get the latest clients information.
 
 We will need to set up our PHP environment with phpredis client, then configure our Public Cloud Databases for Valkey services to accept incoming connections, and finally code in PHP to perform a few example actions.
 

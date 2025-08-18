@@ -1,7 +1,7 @@
 ---
 title: 'Managed Rancher Service supported versions and lifecycle policy'
 excerpt: 'A complete guide including lifecycle policy, release calendar, and supported versions for OVHcloud Managed Rancher Service'
-updated: 2024-10-21
+updated: 2025-08-15
 ---
 
 ## Objective
@@ -39,17 +39,15 @@ The following table provides an overview of the estimated release schedule for e
 This schedule is subject to change and is provided for informational purposes only. Exact release dates may vary, depending on development requirements, testing, and other factors.
 
 | Rancher version | Upstream release date | MRS release date | MRS End of support | MRS End of life |
-|-----------------|-----------------------|------------------|--------------------|----------------|
-| 2.10            | 2024-11-19            | 2025-02          | 2025-11            | 2026-Q1        |
-| 2.9             | 2024-07-30            | 2025-01-15       | 2025-08            | 2025-11        |
-| 2.8             | 2023-12-13            | 2024-03-25       | 2025-04-01         | 2025-07        |
-| 2.7             | 2022-11-16            | 2023-12-06       | 2025-02-28         | 2025-05        |
+|-----------------|-----------------------|------------------|--------------------|-----------------|
+| 2.11            | 2025-03-31            | 2025-08-14       | 2026-04            | 2026-06         |
+| 2.10            | 2024-11-19            | 2025-01-30       | 2025-11            | 2026-Q1         |
+| 2.9             | 2024-07-30            | 2025-01-15       | 2025-08-14         | 2025-11         |
 
 **MRS release date:** Estimated date when this Rancher version is available for OVHcloud Managed Rancher Service. 
 
 - The **Date format** follows the [international standard for numeric dates](https://en.wikipedia.org/wiki/ISO_8601#Week_dates). Dates listed by [quarter year](https://en.wikipedia.org/wiki/Calendar_year#Quarter_year) are estimates and will be updated once specific dates are known.
 - The abbreviation **TBD** is used when a date is to be determined.
-- Due to Managed Rancher Service private alpha and public beta phases (early 2024), the release schedules for versions 2.7 and 2.8 do not conform to our Lifecycle Policy.
 
 ### Downstream clusters Kubernetes supported version matrix <a name="supportmatrix"></a>
 
@@ -62,6 +60,8 @@ Depending on the version of Rancher, the OVHcloud Managed Kubernetes Service (MK
 - **Rancher 2.7.15** -> MKS 1.26 to 1.27
 - **Rancher 2.8.7** -> MKS 1.27 to 1.28
 - **Rancher 2.9.x** -> MKS 1.28 to 1.30
+- **Rancher 2.10.x** -> MKS 1.28 to 1.31
+- **Rancher 2.11.x** -> MKS 1.30 to 1.32
 
 ## Go Further
 

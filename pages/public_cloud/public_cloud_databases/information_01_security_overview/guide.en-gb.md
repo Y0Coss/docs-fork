@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases Concepts - Security overview
 excerpt: Public Cloud Databases security overview
-updated: 2023-12-13
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -35,9 +35,11 @@ You are not authorized to use your service to scan other infrastructures.
 
 ## 3.SLA
 
-SLA are available only for "Business" and "Enterprise" plans of this service, with the exception of Mongo DB on which SLA are available for "Production" and "Advanced" plans.<br>
-SLA for the Business range are 99,90%.<br>
-SLA for the Enterprise range are 99,95%.<br>
+SLA are available only for "Business/Production" and "Enterprise/Advanced" plans of this service.<br>
+SLA for the Business/Production range in Single AZ are 99,90%.<br>
+SLA for the Enterprise/Advanced range in Single AZ are 99,95%.<br>
+SLA for the Production range in Multi AZ are 99,95%.<br>
+SLA for the Advanced range in Multi AZ are 99,99%.<br>
 The calculation method of SLA consists of the total number of minutes in the month in question deducted from the number of minutes of unavailability over the month in question. The total is divided by the total number of minutes in the month.
 Service credits can be 10%, 25 % or 100% of the hourly cost per hour of unavailability of the affected Service. You can refer to the Particular Conditions of the service to get more details about the monthly available rate for each service range or plan and credits limitation.
 
@@ -86,9 +88,8 @@ Once a VM is created by OVHcloud, on which the customer Database engines run, a 
 
 ### 8.1 High availability
 
-Three plans are made available on the service : Essential, Business and Enterprise plans.<br>
-You can choose a "Business" or "Enterprise" offer to benefit from a high availability service as your data will be replicated across two or three nodes following the chosen plan.<br>
-For MongoDB, high availability is offered with "Production" and "Advanced" plans. 
+Different plans are made available on the service: Essential, Business/Production and Enterprise/Advanced plans.<br>
+You can choose a "Business/Production" or "Enterprise/Advanced" offer to benefit from a high availability service as your data will be replicated across multiple nodes following the chosen plan.
 
 ### 8.2 Data encryption
 
@@ -126,7 +127,7 @@ The RSA key-pair is randomly generated for each service. The key lengths are 256
 > Currently, OVHcloud does not offer a KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
 >
 
-Currently, we do not provide in-use encryption except for MongoDB Enterprise plans, based on MongoDB Client-Side Field Level Encryption.<br>
+Currently, we do not provide in-use encryption except for MongoDB Advanced plans, based on MongoDB Client-Side Field Level Encryption.<br>
 Data is encrypted client-side with customer-controlled encryption keys, before being sent, stored, or retrieved from the database.<br>
 Client-Side Field Level Encryption (FLE) is an in-use encryption capability that enables a client application to encrypt sensitive data before storing it in the MongoDB database. Sensitive data is transparently encrypted, remains encrypted throughout its lifecycle, and is only decrypted on the client side.
 
@@ -143,7 +144,7 @@ You can activate the vRack option at the subscription step or afterwards and hav
 ### 8.5 HDS option
 
 The HDS option can be activated on the service.<br>
-This option is available only for "Business" and "Entreprise" plans for this service.<br>
+This option is available only for "Business/Production" and "Enterprise/Advanced" plans for this service.<br>
 The subscription to the Business support level is mandatory, at least to maintain necessary requirements.
 
 ## 9.Reversibility
@@ -164,4 +165,4 @@ As the encryption keys are unique for each project, they will be deleted after s
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.

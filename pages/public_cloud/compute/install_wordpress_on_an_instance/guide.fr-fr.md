@@ -14,7 +14,7 @@ Ce tutoriel fournit les étapes de base pour une installation manuelle de WordPr
 
 ## Prérequis
 
-- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Un projet [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Avoir une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) avec Debian ou Ubuntu installé
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d’un accès administratif (sudo) à votre instance via SSH
@@ -226,9 +226,9 @@ Une fois validé, vous pourrez vous connecter à l'espace d'administration de vo
 
 > [!primary]
 >
-> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification comme [Let’s Encrypt](https://letsencrypt.org/){.external} qui propose des certificats gratuits. Vous devrez installer un outil client (comme « Certbot ») et configurer Apache. Sans cette étape, votre site ne pourra accepter que des requêtes `http`.
+> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification comme [Let’s Encrypt](https://letsencrypt.org/) qui propose des certificats gratuits. Vous devrez installer un outil client (comme « Certbot ») et configurer Apache. Sans cette étape, votre site ne pourra accepter que des requêtes `http`.
 > 
-> En alternative, OVHcloud vous propose la solution [SSL Gateway](https://www.ovh.com/fr/ssl-gateway/). Référez-vous à [notre documentation](/pages/web_cloud/ssl_gateway/order-ssl-gateway) pour plus d'informations.
+> En alternative, OVHcloud vous propose la solution [SSL Gateway](/links/web/ssl-gateway). Référez-vous à [notre documentation](/pages/web_cloud/ssl_gateway/order-ssl-gateway) pour plus d'informations.
 >
 
 ### Étape 6 (facultatif) : activer des connexions sécurisées avec Let’s Encrypt

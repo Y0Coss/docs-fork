@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - How to update your service plan
 excerpt: Find out how to upgrade the service plan of your cluster
-updated: 2025-01-06
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -44,7 +44,7 @@ To upgrade or downgrade the service plan of your cluster, use the following API 
 
 ```console
 body : {
-    plan: <essential|business|enterprise>
+    plan: <essential|business|production|enterprise|advanced>
 }
 ```
 

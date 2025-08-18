@@ -1,12 +1,15 @@
 ---
 title: 'Configurar una IP como alias'
 excerpt: 'Descubra cómo añadir direcciones Additional IP a la configuración de un servidor'
-updated: 2024-11-05
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Este artículo explica cómo configurar direcciones Additional IPv4 en una interfaz pública. También puede configurar direcciones IPv6 en sus servidores dedicados utilizando [esta guía](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 >
-> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](/links/network/additional-ip). Esto no afectará a sus funcionalidades.
+> Tenga en cuenta que las direcciones Additional IP también pueden configurarse en un vRack (red privada), lo que permite interconectar una amplia gama de servicios de OVHcloud, ofreciendo mayor flexibilidad.
+>
+> Cómo configurar direcciones Additional IP en un vRack con nuestras guías para [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) y [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objetivo
@@ -22,9 +25,9 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de la r
 - Estar conectado al servidor por SSH (acceso *sudo*).
 
 > [!warning]
-> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
-> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
+> Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
 
 ## Procedimiento
 
@@ -321,7 +324,7 @@ sudo netplan apply
 ```
 
 > [!primary]
-> Al utilizar el comando `netplan try`, es posible que el sistema envíe un mensaje de advertencia como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Simplemente significa que el archivo no tiene permisos restrictivos. Esto no afecta a la configuración de su Additional IP. Para obtener más información sobre los permisos de archivo, consulte la [documentación oficial de ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+> Al utilizar el comando `netplan try`, es posible que el sistema envíe un mensaje de advertencia como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Simplemente significa que el archivo no tiene permisos restrictivos. Esto no afecta a la configuración de su Additional IP. Para obtener más información sobre los permisos de archivo, consulte la [documentación oficial de ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >
 
 ### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
@@ -541,7 +544,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Donde podrá sustituir "ADDITIONAL_IP" por la auténtica Additional IP.
 
-A continuación, solo tiene que hacer ping desde su Additional IP hacia el exterior. Si funciona, es probable que haya un error de configuración que deba corregirse. Si, por el contrario, la dirección IP sigue sin funcionar, abra un tíquet con el equipo de soporte a través del [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help){.external} y especifique lo siguiente:
+A continuación, solo tiene que hacer ping desde su Additional IP hacia el exterior. Si funciona, es probable que haya un error de configuración que deba corregirse. Si, por el contrario, la dirección IP sigue sin funcionar, abra un tíquet con el equipo de soporte a través del [Centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) y especifique lo siguiente:
 
 
 - El nombre y la versión del sistema operativo que utiliza en su servidor.
@@ -552,4 +555,4 @@ A continuación, solo tiene que hacer ping desde su Additional IP hacia el exter
 
 [Modo Bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).
