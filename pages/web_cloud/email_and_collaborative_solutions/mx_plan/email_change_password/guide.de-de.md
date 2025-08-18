@@ -124,9 +124,9 @@ Geben Sie im neu geöffneten Fenster zunächst Ihr aktuelles Passwort ein. Geben
 
 Gehen Sie auf die Seite [Webmail](/links/web/email). Geben Sie Ihre E-Mail-Adresse und das Passwort ein und klicken Sie auf `Anmelden`{.action}.
 
-Klicken Sie rechts oben in Ihrem Interface auf den Namen Ihres E-Mail-Accounts. In diesem Menü können Sie `das Passwort ändern`{.action}.
+Klicken Sie rechts oben in Ihrem Interface auf den Namen Ihres E-Mail-Accounts. In diesem Menü können Sie das `Passwort ändern`{.action}.
 
-![Zimbra - Voreinstellungen](images/Zimbra-password.png){.thumbnail}
+![Zimbra - Voreinstellungen](images/zimbra-password.png){.thumbnail}
 
 ### Passwort abrufen
 

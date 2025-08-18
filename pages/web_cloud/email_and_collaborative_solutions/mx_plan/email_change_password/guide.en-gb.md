@@ -40,7 +40,7 @@ You can access your OVHcloud email accounts using the password associated with t
 >
 > Depending on the activation date of your MX Plan solution, or on a recent migration, the email technology associated with it may differ. This version is characterized by its webmail interface. To identify it:
 >
-> - In the `General information`{.action} tab, note the technology used under the **** comment in the `Subscription`{.action} or `Connection`{.action} box.
+> - In the `General information`{.action} tab, note the technology used under the **Webmail** comment in the `Subscription`{.action} or `Connection`{.action} box.
 >
 > ![mx plan](images/technology-email.png){.thumbnail .w-500}Webmail
 
@@ -122,7 +122,7 @@ In the new window that opens, enter your current password first. Then enter your
 
 #### Zimbra
 
-Go to [Webmail](/links/web/email). Enter your email address and password, then click `Login`{.action}.
+Go to the [Webmail](/links/web/email). Enter your email address and password, then click `Login`{.action}.
 
 Click on the name of your email account in the top right-hand corner of your interface. From this menu, you can `Change the password`{.action}.
 
