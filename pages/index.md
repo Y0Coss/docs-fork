@@ -300,6 +300,7 @@
             + [Automating the deployment of your website on your VPS via GitHub Actions](bare_metal_cloud/virtual_private_servers/deploy-website-github-actions)
             + [Automating the deployment of your website on your VPS via GitLab CI/CD](bare_metal_cloud/virtual_private_servers/deploy-website-gitlab-ci-cd)
             + [How to create and import a Lovable website on an OVHcloud VPS](bare_metal_cloud/virtual_private_servers/import-lovable-website-on-vps)
+            + [How to install an AI agent on an OVHcloud VPS](bare_metal_cloud/virtual_private_servers/install-ia-agent-on-vps)
     + [Managed Bare Metal](products/bare-metal-cloud-managed-bare-metal)
         + [OVHcloud services and options](bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options)
             + [Setting up a VPN for OVHcloud Zerto DRP](bare_metal_cloud/managed_bare_metal/zerto-virtual-replication-customer-to-ovhcloud)
