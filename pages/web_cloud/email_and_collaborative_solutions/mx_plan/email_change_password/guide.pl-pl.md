@@ -76,7 +76,7 @@ W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.acti
 > **Zimbra**
 >>
 >> Kliknij na `Zimbra Mail`{.action}, następnie przejdź do zakładki `Konto email`{.action}. W oknie, które się wyświetla, wyświetlają się istniejące konta e-mail. <br>
->> Kliknij przycisk ``...`{.action} następnie `Zmień`{.action}.<br><br>
+>> Kliknij przycisk `...`{.action} następnie `Zmień`{.action}.<br><br>
 >>![email](obrazy/email-password-zimbra01.png){.thumbnail}<br>
 >>
 
