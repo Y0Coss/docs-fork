@@ -77,7 +77,7 @@ Follow the installation steps by clicking on the tabs below:
 >> In the next window, tick `Advanced settings`{.action} and enter the following information:
 >>
 >> - **Email address**
->> - **Full name** : enter your full email address
+>> - **Full name**: enter your full email address
 >> - **Description**
 >> - **IMAP Incoming Mail Server**:<br>- **IMAP Hostname** : type pro?.mail.ovh.net (replace "?" with your server number).<br>- **Port**: 993<br>- **Security Type**: SSL/TLS<br>- **IMAP Username**: Your full email address<br>- **IMAP password**: Your email address
 >> - **SMTP Outgoing Mail Server**:<br>- **SMTP Hostname**: Type pro?.mail.ovh.net (replace "?" with your server number).<br>- **Port**: 587<br>- **Security Type**: STARTTLS<br>- **SMTP Username**: Your full email address<br>- **SMTP password**: Your email address
