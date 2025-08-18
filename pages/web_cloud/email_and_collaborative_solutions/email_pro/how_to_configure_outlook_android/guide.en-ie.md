@@ -46,9 +46,9 @@ You can configure Email Pro accounts on email clients, if they are compatible. T
 ![outlook android email pro](images/outlook-app-android-add01.png){.thumbnail .w-400 .h-600}
 
 - **If an account has already been set up**:
-    - Press the envelope "&#9993;" at the top left of your screen.
-    - Then press the `+`{.action}' button in the left-hand vertical bar.
-    - Press `Add Account`{.action}.
+    - Tap the envelope "&#9993;" at the top left of your screen.
+    - Then tap the `+`{.action}' button in the left-hand vertical bar.
+    - Tap `Add Account`{.action}.
 
 ![outlook android email pro](images/outlook-app-android-add02.png){.thumbnail .w-400 .h-600}
 
@@ -57,7 +57,7 @@ Follow the installation steps by clicking on the tabs below:
 > [!tabs]
 > **Step 1**
 >>
->> Enter your email address and press `Continue`{.action}.
+>> Enter your email address and tap `Continue`{.action}.
 >>
 >> ![outlook android email pro](images/outlook-app-android-add-step01.png){.thumbnail .w-400 .h-600}
 >>
@@ -69,7 +69,7 @@ Follow the installation steps by clicking on the tabs below:
 >>
 >> > [!warning]
 >>>
->> > If the protocol selection window does not appear, press the `?` button in the top right-hand corner of the screen, then choose `Change account provider`{.action}. Then select `IMAP`(recommended) or `POP3`.<br>
+>> > If the protocol selection window does not appear, tap the `?` button in the top right-hand corner of the screen, then choose `Change account provider`{.action}. Then select `IMAP`(recommended) or `POP3`.<br>
 >> > ![outlook android email pro](images/outlook-app-android-add-step021.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 3 - IMAP**
@@ -117,9 +117,9 @@ The Outlook application does not allow you to modify the server settings of your
 
 If your email account is already set up and you want to set it up again, you will need to delete and recreate it:
 
-1. Press the envelope "&#9993;" at the top left of your screen.
+1. Tap the envelope "&#9993;" at the top left of your screen.
 2. Tap the "&#9965;" adjustment icon at the bottom of the left column.
-3. In the "General" section, press `Accounts` to view all of the email addresses configured on the application.
+3. In the "General" section, tap `Accounts` to view all of the email addresses configured on the application.
 
 ![outlook android email pro](images/outlook-app-android-delete-account-01.png){.thumbnail .w-400 .h-600}
 
