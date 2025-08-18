@@ -1,7 +1,7 @@
 ---
 title: 'Comment installer un agent IA sur un VPS OVHcloud'
 excerpt: 'Découvrez comment déployer un agent IA comme Open Interpreter ou GPT4All sur un VPS OVHcloud'
-updated: 2025-08-14
+updated: 2025-08-18
 ---
 
 ## Objectif
@@ -109,7 +109,7 @@ interpreter --local
 
 Cette erreur indique que votre VPS n’a pas assez de mémoire vive (RAM). Voici vos options :
 
-- Changer de machine avec au moins 8 Go de RAM.
+- Opter pour un VPS disposant d'au moins 8 Go de RAM.
 - Utiliser l'API OpenAI (voir `Option 1` ci-dessus).
 - Utiliser un modèle plus léger, comme Mistral.
 

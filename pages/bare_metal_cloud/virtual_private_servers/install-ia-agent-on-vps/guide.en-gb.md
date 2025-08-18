@@ -1,18 +1,18 @@
 ---
-title: 'Installing an AI agent on an OVHcloud VPS'
+title: 'How to install an AI agent on an OVHcloud VPS'
 excerpt: 'Find out how to deploy an AI agent like Open Interpreter or GPT4All on an OVHcloud VPS'
-updated: 2025-08-14
+updated: 2025-08-18
 ---
 
 ## Objective
 
-This guide explains how to deploy an on-premises AI agent on an OVHcloud VPS, without depending on the cloud of external providers. You will use a ready-to-use Docker container containing an open-source AI agent, such as [Open Interpreter](https://github.com/KillianLucas/open-interpreter), [GPT4All](https://github.com/nomic-ai/gpt4all) or [Auto-GPT](https://github.com/Torantulino/Auto-GPT).
+This guide explains how to deploy an on-premises AI agent on an OVHcloud VPS, without depending on the cloud of external providers. You will use a ready-to-use Docker container containing an open-source AI agent, such as [Open Interpreter](https://github.com/openinterpreter/open-interpreter), [GPT4All](https://github.com/nomic-ai/gpt4all) or [Auto-GPT](https://github.com/Significant-Gravitas/AutoGPT).
 
 **Find out how to deploy an AI agent such as Open Interpreter or GPT4All on an OVHcloud VPS.**
 
 ## Requirements
 
-- A [OVHcloud VPS](https://www.ovhcloud.com/en-gb/vps/) (Debian 11 or higher is recommended)
+- An [OVHcloud VPS](/links/bare-metal/vps) (Debian 11 or higher is recommended)
 - Administrative (sudo) SSH access to your server
 - Python ≥ 3.10 installed on the VPS
 
@@ -109,7 +109,7 @@ interpreter --local
 
 This error indicates that your VPS does not have enough RAM. Here are your options:
 
-- Change machine with at least 8 GB RAM.
+- Choose a new VPS with at least 8 GB RAM.
 - Use the OpenAI API (see `Option 1` above).
 - Use a lighter model, like mistral.
 
@@ -126,7 +126,7 @@ Sample response:
 ![AI agent](images/question-version-python.png){.thumbnail}
 
 ```console
-Writes a Python script that lists the files in the current folder.
+Write a Python script that lists the files in the current folder.
 ```
 
 The agent interprets your request, generates code, and executes it locally.
@@ -141,6 +141,6 @@ With this guide, you have installed an AI agent on your OVHcloud VPS, capable of
 
 ## Go further
 
-For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/)
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner)
 
 Join our [community of users](/links/community).
