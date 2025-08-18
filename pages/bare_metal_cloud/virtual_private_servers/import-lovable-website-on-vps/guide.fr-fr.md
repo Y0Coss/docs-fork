@@ -1,7 +1,7 @@
 ---
 title: "Comment créer et importer un site web Lovable sur un VPS OVHcloud"
-excerpt: "Apprenez comment héberger un site web généré par Lovable.dev sur votre VPS OVHcloud"
-updated: 2025-08-14
+excerpt: "Apprenez comment héberger un site web généré par Lovable.dev sur un VPS OVHcloud"
+updated: 2025-08-18
 ---
 
 ## Objectif
