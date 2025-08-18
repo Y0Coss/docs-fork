@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Endpoints
-updated: 2025-06-13
+updated: 2025-08-18
 ---
 
 > [!primary]
@@ -58,9 +58,17 @@ If you exceed this limit, a **429 error code** will be returned.
 
 If you require higher usage, please **[get in touch with us](https://help.ovhcloud.com/csm?id=csm_get_help)** to discuss increasing your rate limits.
 
+### Payload size limits
+
+To ensure security and stability, AI Endpoints APIs enforce default request payload size limits:
+
+Most endpoints are limited to **2 MB** per request body. This applies to common input types such as String and Json parameters.
+
+However some endpoints, like those handling audio transcriptions, are specifically configured to accept larger payloads due to their use cases. These endpoints can handle larger audio files, but are limited by audio file size and duration. The specific limits of these endpoints will be indicated in their respective model documentation.
+
 ### No usage limit
 
-As of now, the AI Endpoints platform does not impose any usage limits for API requests, apart from the rate limiting.
+As of now, the AI Endpoints platform does not impose any usage limits for API requests, apart from the rate and payload size limiting.
 
 However, we are considering introducing a usage limit feature in the future. This feature will allow you to set a limit on the number of tokens, characters, seconds of audio consumed, depending on your usage, providing better control and management over AI Endpoints consumption.
 
