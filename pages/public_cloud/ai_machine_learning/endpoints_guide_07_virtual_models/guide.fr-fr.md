@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Modèles virtuels
-excerpt: Découvrez comment utiliser les modèles virtuels d'AI Endpoints
-updated: 2025-08-14
+excerpt: "Découvrez comment utiliser les modèles virtuels d'AI Endpoints"
+updated: 2025-08-18
 ---
 
 > [!primary]
@@ -11,13 +11,13 @@ updated: 2025-08-14
 
 ## Introduction
 
-Choosing the right Large Language Model (LLM) is not always straightforward. Models vary in strengths, performance, cost, and licensing, and new ones appear regularly—often outperforming previous options. This rapid evolution makes it essential to match your choice to your specific needs, while staying ready to adapt as better models emerge.
+Choosing the right Large Language Model (LLM) is not always straightforward. Models vary in strengths, performance, cost, and licensing, and new ones appear regularly, often outperforming previous options. This rapid evolution makes it essential to match your choice to your specific needs, while staying ready to adapt as better models emerge.
 
-To make this easier, we developed a system of virtual models where instead of requesting a hard-coded model, you specify the expected specifications of the model you need (size, price, etc.) and we resolve it to the currently best matching model in our catalog. In this guide, we'll see the different capabilities of this feature and how to use it with your OpenAI compatible code.
+To make this easier, we developed a system of virtual models. Instead of requesting a hard-coded model, you specify the expected specifications of the model you need (size, price, etc.) andthe system automatically maps your request to the best available match in our catalog. In this guide, you will learn about the different capabilities of this feature and how to use it with your OpenAI compatible code.
 
 ## Requirements
 
-The examples provided during this guide can be used with one of the following environments:
+The examples provided in this guide can be used with one of the following environments:
 
 > [!tabs]
 > **Python**
@@ -42,7 +42,7 @@ Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cl
 
 ## Model DSL
 
-When you request a LLM generation through our unified endpoint, you can provide in the OpenAI-compliant `model` field a model DSL query instead of a hardcoded model name.
+When you request an LLM generation through our unified endpoint, you can provide in the OpenAI-compliant `model` field a model DSL query instead of a hardcoded model name.
 
 These queries are divided into three parts: tag, ranker, and condition:
 
@@ -129,11 +129,9 @@ The following code samples provide a simple example on how to query our API with
 ## Conclusion
 
 Using OVHcloud AI Endpoints with virtual models allows you to stay up to date with the best available LLMs without having to change your code whenever a new release arrives.
-By defining your requirements through tags, rankers, and conditions, you can ensure your application always runs on the most suitable model for your needs—whether you prioritize speed, cost, size, or capabilities. This flexibility makes it easier to build, maintain, and scale AI-powered solutions over time.
+By defining your requirements through tags, rankers, and conditions, you can ensure your application always runs on the most suitable model for your needs, whether you prioritize speed, cost, size, or capabilities. This flexibility makes it easier to build, maintain, and scale AI-powered solutions over time.
 
 ## Go further
-
-Browse the full [AI Endpoints documentation](/products/public-cloud-ai-and-machine-learning-ai-endpoints) to further understand the main concepts and get started.
 
 To discover how to build complete and powerful applications using AI Endpoints, explore our dedicated [AI Endpoints guides](/products/public-cloud-ai-and-machine-learning-ai-endpoints).
 
@@ -144,3 +142,4 @@ If you need training or technical assistance to implement our solutions, contact
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud).
+
