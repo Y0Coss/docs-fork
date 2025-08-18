@@ -14,10 +14,6 @@ Most services created with OVHcloud are managed by several contacts. Each of the
 > OVHcloud offers an [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/) system allowing to delegate access to other customer accounts.  
 > IAM policies enable precise access control while keeping tracability of the actions.
 
-> [!primary]
-> OVHcloud offers an [IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui/) system allowing to delegate access to other customer accounts.  
-> IAM policies enable precise access control while keeping tracability of the actions.
-
 ## Definition
 
 There are three different contact types:
