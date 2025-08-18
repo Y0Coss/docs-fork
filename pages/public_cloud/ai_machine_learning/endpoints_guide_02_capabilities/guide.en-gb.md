@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Endpoints
-updated: 2025-08-14
+updated: 2025-08-18
 ---
 
 > [!primary]
@@ -64,7 +64,7 @@ To ensure security and stability, AI Endpoints APIs enforce default request payl
 
 Most endpoints are limited to **2 MB** per request body. This applies to common input types such as String and Json parameters.
 
-However, some endpoints like those handling audio transcriptions, are specifically configured to accept larger payloads due to their use cases. These endpoints can handle larger audio files, but are limited by audio file size and duration. The specific limits of these endpoints will be indicated in their respective model documentation.
+However some endpoints, like those handling audio transcriptions, are specifically configured to accept larger payloads due to their use cases. These endpoints can handle larger audio files, but are limited by audio file size and duration. The specific limits of these endpoints will be indicated in their respective model documentation.
 
 ### No usage limit
 
