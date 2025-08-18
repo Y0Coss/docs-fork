@@ -37,7 +37,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 
 > [!warning]
 >
-> Nos nossos exemplos, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o «? » pelo número que identifica o servidor do seu serviço E-mail Pro.
+> Nos nossos exemplos, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o «?" pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
 > Encontre este algarismo na sua área de cliente OVHcloud(/links/manager), na rubrica `Web Cloud`{.action} e depois `E-mail Pro`{.action}. O nome do servidor está visível na tabela **Ligação** do separador ‘Informações gerais`{.action}.
 
@@ -46,9 +46,9 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 ![outlook android email pro](images/outlook-app-android-add01.png){.thumbnail .w-400 .h-600}
 
 - **Se uma conta já tiver sido parametrizada**:
-    - Pressione o envelope « &#9993; » na parte superior esquerda do seu ecrã.
+    - Pressione o envelope "&#9993;" na parte superior esquerda do seu ecrã.
     - De seguida, prima o botão `+`{.action} na barra vertical à esquerda.
-    - Prima 'Adicionar uma conta' {.action}.
+    - Prima `Adicionar uma conta`{.action}.
 
 ![outlook android email pro](images/outlook-app-android-add02.png){.thumbnail .w-400 .h-600}
 
@@ -82,7 +82,7 @@ Siga as etapas de instalação, clicando nos separadores abaixo:
 >> - **Servidor de receção de correio eletrónico IMAP**:<br>- **Nome de anfitrião IMAP**: digite pro?.mail.ovh.net (substitua «?» pelo número do seu servidor).<br>- **Port**: 993<br>- **Tipo de segurança**: SSL/TLS<br>- **Nome de utilizador IMAP** : o seu endereço de correio eletrónico completo<br>- **Palavra-passe IMAP** : o do seu endereço de e-mail
 >> - **Servidor de correio de saída SMTP**:<br>- **Nome de host SMTP**: introduza pro?.mail.ovh.net (substitua «?» pelo número do seu servidor).<br>- **Porta*: 587<br>- **Tipo de segurança**: STARTTLS<br>- **Nome de utilizador SMTP** : o seu endereço de correio eletrónico completo<br>- **Palavra-passe SMTP** : o do seu endereço de correio eletrónico
 >>
->> Para finalizar a configuração, clique no botão « &#10003; ».
+>> Para finalizar a configuração, clique no botão "&#10003;".
 >>
 >> ![outlook android email pro](images/outlook-app-android-add-step03-imap-emailpro.png){.thumbnail .w-400 .h-600}
 >>
@@ -93,23 +93,23 @@ Siga as etapas de instalação, clicando nos separadores abaixo:
 >> - **Endereço de correio eletrónico**
 >> - **Nome completo** : Introduza o seu endereço de e-mail completo
 >> - **Description**
->>- **Servidor de receção de correio eletrónico POP3**:<br>- **Nome de anfitrião POP3** : digite pro?.mail.ovh.net (substitua «?» pelo número do seu servidor).<br>- **Port**: 995<br>- **Tipo de segurança**: SSL/TLS<br>- **Nome de utilizador POP3** : o seu endereço de correio eletrónico completo<br>- **Palavra-passe POP3** : o do seu endereço de e-mail
+>> - **Servidor de receção de correio eletrónico POP3**:<br>- **Nome de anfitrião POP3** : digite pro?.mail.ovh.net (substitua «?» pelo número do seu servidor).<br>- **Port**: 995<br>- **Tipo de segurança**: SSL/TLS<br>- **Nome de utilizador POP3** : o seu endereço de correio eletrónico completo<br>- **Palavra-passe POP3** : o do seu endereço de e-mail
 >> - **Servidor de correio de saída SMTP**:<br>- **Nome de host SMTP**: introduza pro?.mail.ovh.net (substitua «?» pelo número do seu servidor).<br>- **Porta*: 587<br>- **Tipo de segurança**: STARTTLS<br>- **Nome de utilizador SMTP** : o seu endereço de correio eletrónico completo<br>- **Palavra-passe SMTP** : o do seu endereço de correio eletrónico
 >>
->> Para finalizar a configuração, clique no botão « &#10003; ».
+>> Para finalizar a configuração, clique no botão "&#10003;".
 >>
 >> ![outlook android email pro](images/outlook-app-android-add-step03-pop-emailpro.png){.thumbnail .w-400 .h-600}
 >>
 
 > [!warning]
 >
-> Se, seguindo os passos de configuração acima, encontrar um problema de envio ou receção, vá para « [Editar definições existentes](#modify-settings)».
+> Se, seguindo os passos de configuração acima, encontrar um problema de envio ou receção, vá para "[Editar definições existentes](#modify-settings)».
 
 ### Utilizar o endereço de e-mail
 
 Depois de configurar o endereço de e-mail, já só precisa de o utilizar! Já pode enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web que pode usar para aceder ao seu e-mail diretamente a partir do browser. Aceda através desta ligação: [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso guia [Consultar a sua conta a partir da interface OWA](/pages/web_cloud/email_and_colaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+A OVHcloud também disponibiliza uma aplicação web que pode usar para aceder ao seu e-mail diretamente a partir do browser. Aceda através desta ligação: [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso guia [Consultar a sua conta a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Alterar os parâmetros existentes <a name="modify-settings"></a>
 
@@ -117,21 +117,21 @@ A aplicação Outlook não permite alterar as definições do servidor da sua co
 
 Se a sua conta de e-mail já estiver configurada e pretender voltar a parametrizá-la, deverá eliminá-la e recriá-la:
 
-1. Pressione o envelope « &#9993; » na parte superior esquerda do seu ecrã.
-2. Pressione o ícone de ajuste « &#9965; » na parte inferior da coluna da esquerda.
-3. Na secção « Geral », toque em "Contas` para visualizar o conjunto dos endereços de e-mail configurados na aplicação.
+1. Pressione o envelope "&#9993;" na parte superior esquerda do seu ecrã.
+2. Pressione o ícone de ajuste "&#9965;" na parte inferior da coluna da esquerda.
+3. Na secção "Geral", toque em `Contas` para visualizar o conjunto dos endereços de e-mail configurados na aplicação.
 
 ![outlook android email pro](images/outlook-app-android-delete-account-01.png){.thumbnail .w-400 .h-600}
 
 - Selecione a conta de correio eletrónico correspondente.
-- Prima 'Eliminar conta' {.action}.
-- Toque em ‘Eliminar’ {.action} à pergunta « Deseja eliminar a conta? ».
+- Prima `Eliminar conta`{.action}.
+- Toque em `Eliminar`{.action} à pergunta "Deseja eliminar a conta?".
 
 ![outlook android email pro](images/outlook-app-android-delete-account-02.png){.thumbnail .w-400 .h-600}
 
 > [!success]
 >
-> Após a eliminação da conta de e-mail, siga as instruções da secção « [Adicionar conta](#add-account) » deste manual.
+> Após a eliminação da conta de e-mail, siga as instruções da secção "[Adicionar conta](#add-account)" deste manual.
 
 ### Lembrete dos parâmetros POP, IMAP e SMTP <a name="popimap-settings"></a>
 
@@ -174,7 +174,7 @@ Se necessita de inserir manualmente as definições **SMTP** nas preferências d
 >
 > **Alterar a configuração**
 >
-> Se o seu endereço de e-mail estiver configurado em **IMAP** e pretender alterar esta configuração para **POP**, deve eliminar a conta e recriá-la em **POP**. Consulte o capítulo « [Editar definições existentes](#modify-settings) » deste manual.
+> Se o seu endereço de e-mail estiver configurado em **IMAP** e pretender alterar esta configuração para **POP**, deve eliminar a conta e recriá-la em **POP**. Consulte o capítulo "[Editar definições existentes](#modify-settings)" deste manual.
 
 
 ## Quer saber mais? <a name="go-further"></a>

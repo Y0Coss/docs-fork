@@ -77,9 +77,9 @@ Follow the installation steps by clicking on the tabs below:
 >> In the next window, tick `Advanced settings`{.action} and enter the following information:
 >>
 >> - **Email address**
->> - **Full name** : enter your full email address
+>> - **Full name**: Enter your full email address
 >> - **Description**
->> - **IMAP Incoming Mail Server**:<br>- **IMAP Hostname** : type pro?.mail.ovh.net (replace "?" with your server number).<br>- **Port**: 993<br>- **Security Type**: SSL/TLS<br>- **IMAP Username**: Your full email address<br>- **IMAP password**: Your email address
+>> - **IMAP Incoming Mail Server**:<br>- **IMAP Hostname**: Type pro?.mail.ovh.net (replace "?" with your server number).<br>- **Port**: 993<br>- **Security Type**: SSL/TLS<br>- **IMAP Username**: Your full email address<br>- **IMAP password**: Your email address
 >> - **SMTP Outgoing Mail Server**:<br>- **SMTP Hostname**: Type pro?.mail.ovh.net (replace "?" with your server number).<br>- **Port**: 587<br>- **Security Type**: STARTTLS<br>- **SMTP Username**: Your full email address<br>- **SMTP password**: Your email address
 >>
 >> To finalize the configuration, click the “&#10003;” button.
@@ -91,9 +91,9 @@ Follow the installation steps by clicking on the tabs below:
 >> In the next window, tick `Advanced settings`{.action} and enter the following information:
 >>
 >> - **Email address**
->> - **Full name** : Enter your full email address
+>> - **Full name**: Enter your full email address
 >> - **Description**
->> - **POP3 Incoming Mail Server**:<br>- **POP3 Hostname** : type pro?.mail.ovh.net (replace "?" with your server number).<br>- **Port**: 995<br>- **Security Type**: SSL/TLS<br>- **POP3 User Name**: Your full email address<br>- **POP3 Password**: Your email address
+>> - **POP3 Incoming Mail Server**:<br>- **POP3 Hostname**: Type pro?.mail.ovh.net (replace "?" with your server number).<br>- **Port**: 995<br>- **Security Type**: SSL/TLS<br>- **POP3 User Name**: Your full email address<br>- **POP3 Password**: Your email address
 >> - **SMTP Outgoing Mail Server**:<br>- **SMTP Hostname**: Type pro?.mail.ovh.net (replace "?" with your server number).<br>- **Port**: 587<br>- **Security Type**: STARTTLS<br>- **SMTP Username**: Your full email address<br>- **SMTP password**: Your email address
 >>
 >> To finalize the configuration, click the “&#10003;” button.
@@ -103,7 +103,7 @@ Follow the installation steps by clicking on the tabs below:
 
 > [!warning]
 >
-> If, after following the configuration steps above, you encounter a sending or receiving error, please refer to the topic “[Modify existing settings](#modify-settings)”.
+> After following the configuration steps above, if you encounter a sending or receiving error, please refer to the topic “[Modify existing settings](#modify-settings)”.
 
 ### Use the email address
 
@@ -124,7 +124,7 @@ If your email account is already set up and you want to set it up again, you wil
 ![outlook android email pro](images/outlook-app-android-delete-account-01.png){.thumbnail .w-400 .h-600}
 
 - Select the email account concerned.
-- Press `Delete account`{.action}.
+- Tap `Delete account`{.action}.
 - Tap `Delete`{.action} at the question “Do you want to delete the account?”.
 
 ![outlook android email pro](images/outlook-app-android-delete-account-02.png){.thumbnail .w-400 .h-600}

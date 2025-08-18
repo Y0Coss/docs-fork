@@ -28,8 +28,8 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 ## Wymagania początkowe
 
 - Wykupienie usługi [E-mail Pro](/links/web/email-pro).
-- Disposer de l'application Outlook sur votre appareil mobile [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=pl).
-- Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+- Instalacja aplikacji Outlook na urządzeniu przenośnym [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=pl).
+- Dane do logowania do konta e-mail, które chcesz skonfigurować.
 
 ## W praktyce
 
@@ -47,7 +47,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 - **Jeśli konto zostało już skonfigurowane**:
     - Naciśnij karnację " &#9993;" w lewym górnym rogu ekranu.
-    - Następnie naciśnij przycisk '+`{.action} w lewym pionowym pasku.
+    - Następnie naciśnij przycisk `+`{.action} w lewym pionowym pasku.
     - Kliknij `Dodaj konto`{.action}.
 
 ![Outlook Android Email Pro](images/outlook-app-android-add02.png){.thumbnail .w-400 .h-600}
@@ -69,7 +69,7 @@ Postępuj zgodnie z kolejnymi instrukcjami, klikając poniższe zakładki:
 >>
 >> > [!warning]
 >> >
->> > Jeśli okno wyboru protokołu nie wyświetla się, kliknij przycisk '?` w prawym górnym rogu ekranu, następnie wybierz `Zmień dostawcę konta`{.action}. Następnie wybierz `IMAP`(zalecane) lub `POP3`.<br>
+>> > Jeśli okno wyboru protokołu nie wyświetla się, kliknij przycisk `?` w prawym górnym rogu ekranu, następnie wybierz `Zmień dostawcę konta`{.action}. Następnie wybierz `IMAP`(zalecane) lub `POP3`.<br>
 >> > ![Outlook Android Email Pro](images/outlook-app-android-add-step021.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 3 - IMAP**
@@ -117,8 +117,8 @@ Aplikacja Outlook nie pozwala na zmianę ustawień serwera dla Twojego konta e-m
 
 Jeśli Twoje konto e-mail zostało już skonfigurowane i chcesz je ponownie skonfigurować, musisz je usunąć i utworzyć ponownie:
 
-1. Stuknij karnację " &#9993;" w lewym górnym rogu ekranu.
-2. Stuknij ikonę dopasowania " &#9965;" w dolnej części lewej kolumny.
+1. Stuknij karnację "&#9993;" w lewym górnym rogu ekranu.
+2. Stuknij ikonę dopasowania "&#9965;" w dolnej części lewej kolumny.
 3. W sekcji "Ogólne" kliknij `Konta`, aby wyświetlić wszystkie adresy e-mail skonfigurowane w aplikacji.
 
 ![Outlook Android Email Pro](images/outlook-app-android-delete-account-01.png){.thumbnail .w-400 .h-600}
