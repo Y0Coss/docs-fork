@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Premiers pas avec Cold Archive
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
-updated: 2025-07-04
+updated: 2025-08-18
 ---
 
 ## Objectif
@@ -29,7 +29,7 @@ Dans ce guide, les **alias awscli** sont utilisés pour simplifier les commandes
 
 ### Configuration initiale : créer des alias AWS CLI
 
-Pour simplifier les commandes, créez ou éditez le fichier ~/.aws/cli/alias :
+Pour simplifier les commandes, créez ou éditez le fichier`~/.aws/cli/alias` :
 
 ```bash
 mkdir -p ~/.aws/cli
@@ -52,20 +52,20 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 
 > [!primary]
 >
-> - `Id` est une chaîne utilisée pour identifier la configuration de l'Intelligent-Tiering S3 **\***. Sa valeur est arbitraire et vous pouvez la modifier. Elle sera nécessaire pour les opérations ultérieures PUT, GET et DELETE sur la configuration de l'Intelligent-Tiering.
+> - `Id` est une chaîne utilisée pour identifier la configuration de l'Intelligent-Tiering S3<sup>1</sup>. Sa valeur est arbitraire et vous pouvez la modifier. Elle sera nécessaire pour les opérations ultérieures PUT, GET et DELETE sur la configuration de l'Intelligent-Tiering.
 > 
 > - `Status` et `Days` sont obligatoires mais non utilisés. Les jours ne sont significatifs que pour certains niveaux d'accès.
 >
 
-### Vérifier les téléchargements multipartites incomplets avant l'archivage
+### Vérifier les uploads multiparts incomplets avant l'archivage
 
-Exécutez cette commande pour vous assurer qu'il n'y a pas d'uploads multipart incomplets sur votre bucket :
+Exécutez cette commande pour vous assurer qu'il n'y a pas d'uploads multiparts incomplets sur votre bucket :
 
 ```bash
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api list-multipart-uploads --bucket <nom_du_bucket>
 ```
 
-### Téléchargez vos objets
+### Téléverser vos objets
 
 Pour ajouter des objets dans le bucket que vous souhaitez archiver, utilisez la commande suivante :
 
@@ -82,28 +82,28 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api put-object --bu
 
 > [!primary]
 >
-> Avant d'archiver un bucket, assurez-vous qu'il n'y a pas de téléchargements multipartites incomplets.
+> Avant d'archiver un bucket, assurez-vous qu'il n'y a pas d'uploads multiparts incomplets.
 >
 
 > [!tabs]
-> Via l'AWS S3api
+> Via l'API S3 AWS
 >> ```bash
 >> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-archive <bucket_name>
 >> ```
 >>
 > Via l'espace client OVHcloud
->> Cliquez sur les `trois petits points`{.action}, puis sur `Archiver`{.action}.
+>> Cliquez sur le bouton `⋮`{.action} puis sur `Archiver`{.action}.
 >>
 >> ![Archive a cold archive bucket](images/cold_archive_01.png){.thumbnail}
 >>
 
-- Le statut du bucket passe à Archivage.
+- Le statut du bucket passe à "Archivage".
 - Il n'est pas possible de lire ou d'écrire des objets au cours de ce processus ; seule l'énumération est autorisée.
 - L'archivage sur bandes prend un certain temps.
 
 ### Archivage d'un bucket avec verrouillage de la rétention (conformité WORM)
 
-Par défaut, une archive n'est pas verrouillée, c'est-à-dire que vous pouvez toujours supprimer une archive après qu'elle ait été écrite sur des bandes. Pour vous assurer que votre archive suit le modèle WORM (Write Once Read Many), vous pouvez définir une période de rétention dans votre configuration de hiérarchisation intelligente en utilisant le niveau d'accès `OVH_ARCHIVE_LOCK` et un nombre de jours. L'archive sera alors verrouillée jusqu'à la date actuelle + le nombre de jours spécifié.
+Par défaut, une archive n'est pas verrouillée, c'est-à-dire que vous pouvez toujours supprimer une archive après qu'elle ait été écrite sur des bandes. Pour vous assurer que votre archive suit le modèle WORM (Write Once Read Many), vous pouvez définir une période de rétention dans votre configuration de Intelligent-Tiering en utilisant le niveau d'accès `OVH_ARCHIVE_LOCK` et un nombre de jours. L'archive sera alors verrouillée jusqu'à la date actuelle + le nombre de jours spécifié.
 
 > [!primary]
 >
@@ -123,36 +123,37 @@ Par défaut, une archive n'est pas verrouillée, c'est-à-dire que vous pouvez t
 
 > [!primary]
 >
-> Vous ne pouvez pas avoir plusieurs configurations de hiérarchisation intelligente sur votre archive.
-> De même, vous ne pouvez pas avoir plusieurs niveaux d'accès dans votre configuration de hiérarchisation intelligente, c'est-à-dire que vous utilisez soit le niveau d'accès `OVH_ARCHIVE`, soit le niveau d'accès `OVH_ARCHIVE_LOCK`, mais pas les deux.
+> Vous ne pouvez pas avoir plusieurs configurations d'Intelligent-Tiering sur votre archive.
+> De même, vous ne pouvez pas avoir plusieurs niveaux d'accès dans votre configuration d'Intelligent-Tiering, c'est-à-dire que vous utilisez soit le niveau d'accès `OVH_ARCHIVE`, soit le niveau d'accès `OVH_ARCHIVE_LOCK`, mais pas les deux.
 >
 
 ### Verrouiller un bucket déjà archivé
 
-Si vous avez des buckets qui ont été précédemment archivés sans utiliser le niveau d'accès `OVH_ARCHIVE_LOCK`, vous pouvez toujours les verrouiller en réappliquant une configuration de hiérarchisation intelligente à votre bucket en utilisant le niveau d'accès `OVH_ARCHIVE_LOCK` et en spécifiant une durée de rétention en jours.
+Si vous avez des buckets qui ont été précédemment archivés sans utiliser le niveau d'accès `OVH_ARCHIVE_LOCK`, vous pouvez toujours les verrouiller en réappliquant une configuration d'Intelligent-Tiering à votre bucket en utilisant le niveau d'accès `OVH_ARCHIVE_LOCK` et en spécifiant une durée de rétention en jours.
 
 > [!primary]
 >
 > Pour verrouiller un bucket déjà archivé, il doit être dans l'état "Archivé" ou "Restauré".
-> Vous devez également utiliser la même configuration de hiérarchisation intelligente "Id".
+> Vous devez également utiliser le même "Id" de configuration d'Intelligent-Tiering.
 >
 
-Si vous souhaitez modifier le délai de conservation, appliquez à nouveau la configuration de l'étagement intelligent en utilisant le même "Id".
+Si vous souhaitez modifier le délai de conservation, appliquez à nouveau la configuration d'Intelligent-Tiering en utilisant le même "Id".
 
 > [!primary]
 >
 > Vous ne pouvez pas réduire un délai de conservation précédemment défini, c'est-à-dire que le nouveau délai de conservation (date actuelle + nombre de jours) doit être supérieur au délai de conservation précédent.
 > Exemple :
 >
-> - Le 2024-02-22, vous avez mis en place un verrou de 10 jours, la période de rétention sera jusqu'au 2024-03-03. 
-> - Le 2024-02-23, vous changez d'avis et décidez de fixer la durée du verrouillage à 5 jours. 
+> - Le 2024-02-22, vous avez mis en place un verrou de 10 jours, la période de rétention sera jusqu'au 2024-03-03.
+> - Le 2024-02-23, vous changez d'avis et décidez de fixer la durée du verrouillage à 5 jours.
+>
 > OVHcloud Cold Archive retournera une erreur car 2024-02-23 + 5 jours < 2024-03-03.
 >
 
-### Restorer un Bucket
+### Restaurer un Bucket
 
 > [!tabs]
-> Via l'AWS S3api
+> Via l'API S3 AWS
 >> Restauration d'un bucket :
 >>
 >> ```bash
@@ -160,13 +161,13 @@ Si vous souhaitez modifier le délai de conservation, appliquez à nouveau la co
 >> ```
 >>
 > Via l'espace client OVHcloud
->> Cliquez sur les `trois petits points`{.action}, puis sur `Restaurer`{.action}.
+>> Cliquez sur le bouton `⋮`{.action} puis sur `Restaurer`{.action}.
 >>
 >> ![Restore a cold archive bucket](images/cold_archive_02.png){.thumbnail}
 >>
 
-- Le statut du bucket passe à Restauration.
-- Les objets deviennent accessibles en mode lecture seule une fois la restauration terminée.
+- Le statut du bucket passe à "Restauration".
+- Les objets deviennent accessibles en mode lecture-seule une fois la restauration terminée.
 
 ### Supprimer une archive
 
@@ -177,7 +178,7 @@ Si vous souhaitez modifier le délai de conservation, appliquez à nouveau la co
 >
 
 > [!tabs]
-> Via l'AWS S3api
+> Via l'API S3 AWS
 >> Supprime une configuration d'Intelligent-Tiering et les objets d'un bucket :
 >>
 >> ```bash
@@ -185,7 +186,7 @@ Si vous souhaitez modifier le délai de conservation, appliquez à nouveau la co
 >> ```
 >>
 > Via l'espace client OVHcloud
->> Cliquez sur les `trois petits points`{.action}, puis sur `Supprimer`{.action}.
+>> Cliquez sur le bouton `⋮`{.action} puis sur `Supprimer`{.action}.
 >>
 >> ![Delete a cold archive bucket](images/cold_archive_03.png){.thumbnail}
 >>
@@ -195,7 +196,7 @@ L'opération supprimera tout (sur les bandes et tous les objets s'ils sont resta
 
 > [!primary]
 >
-> Bien que la suppression des données soit effectuée de manière asynchrone, la facturation est arrêtée dès que vous soumettez la demande!<br>
+> Bien que la suppression des données soit effectuée de manière asynchrone, la facturation est arrêtée dès que vous soumettez la demande !<br>
 > La suppression est effectuée sur la base du meilleur effort et il n'y a pas de durée engagée.<br>
 > Dans l'état "Deleting", le bucket est verrouillé et n'est pas accessible.<br>
 >
@@ -210,11 +211,11 @@ Une fois la suppression terminée :
 aws s3 rb s3://<nom_du_bucket>
 ```
 
-### Vérifier l'état des buckets et les étiquettes de rétention
+### Vérifier l'état des buckets et les durées de rétention
 
 > [!tabs]
-> Via l'AWS S3api
->> Une fois qu'une configuration d'Intelligent-tiering a été poussée (via l'opération `put-bucket-intelligent-tiering-configuration`) et jusqu'à ce qu'elle soit supprimée (via l'opération `delete-bucket-intelligent-tiering-configuration`), le statut d'un bucket est lisible à travers :
+> Via l'API S3 AWS
+>> Une fois qu'une configuration d'Intelligent-Tiering a été poussée (via l'opération `put-bucket-intelligent-tiering-configuration`) et jusqu'à ce qu'elle soit supprimée (via l'opération `delete-bucket-intelligent-tiering-configuration`), le statut d'un bucket est lisible à travers :
 >>
 >> ```bash
 >> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api get-bucket-tagging --bucket <bucket_name>
@@ -277,4 +278,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

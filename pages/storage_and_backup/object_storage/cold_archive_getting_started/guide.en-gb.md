@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Getting started with Cold Archive
 excerpt: This guide shows you how to manage your data with Cold Archive
-updated: 2025-07-04
+updated: 2025-08-18
 ---
 
 ## Objective
@@ -29,7 +29,7 @@ In this tutorial, **awscli aliases** are used to simplify the commands.
 
 ### Initial Setup: create AWS CLI Aliases
 
-To simplify commands, create or edit the ~/.aws/cli/alias file:
+To simplify commands, create or edit the `~/.aws/cli/alias` file:
 
 ```bash
 mkdir -p ~/.aws/cli
@@ -52,9 +52,9 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 
 > [!primary]
 >
-> - `Id` is a string used to identify the S3 **\*** Intelligent-Tiering configuration. Its value is arbitrary and up to you. It will be necessary for further PUT, GET and DELETE operations on the intelligent-tiering configuration.
+> - `Id` is a string used to identify the S3<sup>1</sup> Intelligent-Tiering configuration. Its value is arbitrary and up to you. It will be necessary for further PUT, GET and DELETE operations on the intelligent-tiering configuration.
 >
-> - `Status` and `Days` are mandatory but not used. Days is only meaningful with certain access tiers.
+> - `Status` and `Days` are mandatory but not used. `Days` is only meaningful with certain access tiers.
 >
 
 ### Check for Incomplete Multipart Uploads Before Archiving
@@ -78,7 +78,7 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api put-object --bu
 > This operation is not currently available via the OVHcloud Control Panel. It must be performed on the command line via the S3 API.
 >
 
-### **Archive a bucket**
+### Archive a bucket
 
 > [!primary]
 >
@@ -86,18 +86,18 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api put-object --bu
 >
 
 > [!tabs]
-> Via the AWS S3api
+> Via the AWS S3 API
 >> ```bash
 >> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net put-ovh-archive <bucket_name>
 >> ```
 >>
 > Via the OVHcloud Control Panel
->> Click on` the three dots`{.action}, then select `Archive`{.action}
+>> Click the `⋮`{.action} button then select `Archive`{.action}
 >>
 >> ![Archive a cold archive bucket](images/cold_archive_01.png){.thumbnail}
 >>
 
-- The bucket status changes to Archiving.
+- The bucket status changes to "Archiving".
 - Objects cannot be read or written during this process; only listing is allowed.
 - Archiving to tapes takes some time.
 
@@ -127,7 +127,7 @@ By default, an archive is not locked i.e you can still delete an archive after i
 > Similarly, you cannot have multiple access tiers in your intelligent tiering configuration i.e either you use the `OVH_ARCHIVE` access tier or you use the `OVH_ARCHIVE_LOCK` access tier but not both.
 >
 
-### Lock an Already Archived Bucket
+### Lock an already archived bucket
 
 If you have buckets that have been previously archived without using the `OVH_ARCHIVE_LOCK` access tier, you can still lock them by re-applying an intelligent tiering configuration to your bucket using the `OVH_ARCHIVE_LOCK` access tier and specifying a retention duration in days.
 
@@ -149,10 +149,10 @@ If you want to edit the retention period, similarly, re-apply the intelligent ti
 > - OVHcloud Cold Archive will return an error because 2024-02-23 + 5 days < 2024-03-03.
 >
 
-### Restore a Bucket
+### Restore a bucket
 
 > [!tabs]
-> Via the AWS S3api
+> Via the AWS S3 API
 >> Restore a bucket :
 >>
 >> ```bash
@@ -160,15 +160,15 @@ If you want to edit the retention period, similarly, re-apply the intelligent ti
 >> ```
 >>
 > Via the OVHcloud Control Panel
->> Click on the `three dots`{.action}, then select `Restore`{.action}.
+>> Click the `⋮`{.action} button then select `Restore`{.action}.
 >>
 >> ![Restore a cold archive bucket](images/cold_archive_02.png){.thumbnail}
 >>
 
-- Bucket status changes to Restoring.
+- Bucket status changes to "Restoring".
 - Objects become accessible in read-only mode once restoration completes.
 
-### Delete an Archive
+### Delete an archive
 
 > [!primary]
 >
@@ -176,19 +176,17 @@ If you want to edit the retention period, similarly, re-apply the intelligent ti
 > `An error occurred (BadRequest) when calling the DeleteBucketIntelligentTieringConfiguration operation: Archive deletion is locked until 2124-01-19T15:24:56.000Z`
 >
 
-Delete an intelligent-tiering configuration and objects of a bucket:
-
+### Delete an intelligent-tiering configuration and objects of a bucket
 
 > [!tabs]
-> Via the AWS S3api
->> Delete an Intelligent-Tiering configuration and the objects in a bucket:
+> Via the AWS S3 API
 >>
 >> ```bash
 >> aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net delete-ovh-archive <bucket_name>
 >> ```
 >>
 > Via the OVHcloud Control Panel
->> Click on the `three dots`{.action}, then select `Delete`{.action}.
+>> Click on the `⋮`{.action}, then select `Delete`{.action}.
 >>
 >> ![Delete a cold archive bucket](images/cold_archive_03.png){.thumbnail}
 >>
@@ -213,10 +211,10 @@ Once the deletion is completed:
 aws s3 rb s3://<bucket_name>
 ```
 
-### Check Bucket Status and Retention Tags
+### Check the bucket status and retention tags
 
 > [!tabs]
-> Via the AWS S3api
+> Via the AWS S3 API
 >> Once an intelligent-tiering configuration has been pushed (via a `put-bucket-intelligent-tiering-configuration` operation) and until it is removed (via a `delete-bucket-intelligent-tiering-configuration` operation), the status of a bucket is readable through:
 >>
 >> ```bash
@@ -271,7 +269,7 @@ To retrieve the full intelligent-tiering configuration JSON applied to your buck
 aws s3api get-bucket-intelligent-tiering-configuration --bucket <bucket_name> --id myid
 ```
 
-This command returns detailed configuration info useful for debugging or verification.
+This command returns detailed configuration info which can be useful for debugging or verification.
 
 ## Go further
 
@@ -281,4 +279,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our [community of users](/links/community).
 
-**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
