@@ -12,7 +12,7 @@ The OVHcloud vRack feature makes it possible to connect different cloud services
 
 ## Requirements
 
-- A [vRack](https://www.ovh.co.uk/solutions/vrack/) service in your account or order one if needed
+- A [vRack](/links/network/vrack) service in your account or order one if needed
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere (created in the [OVHcloud Control Panel](/links/manager))
 

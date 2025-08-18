@@ -53,7 +53,7 @@ Saisissez vos informations d'identification et cliquez sur `LOG IN`{.action}.
 > [!warning]
 > Pour s'authentifier sur l'interface NSX, il faut utiliser un compte vSphere avec les droits NSX. Veillez à ce que le nom du PCC (FQDN, sous la forme `pcc-x-x-x-x.ovh.xx`) soit selectionné dans le formulaire de connexion.
 >
-> Si vous n'utilisez pas l'interface NSX mais l'API ou un autre outil externe (tel que VMware Cloud Director, VCD), il vous faudra utiliser comme identifiant le compte fourni par OVHcloud suivi du FQDN du PCC. Par exemple `login@pcc-1-2-3-4.ovh.eu` dans l'exemple ci-dessous.
+> Si vous n'utilisez pas l'interface NSX mais l'API ou un autre outil externe (tel que Public VCF as-a-Service), il vous faudra utiliser comme identifiant le compte fourni par OVHcloud suivi du FQDN du PCC. Par exemple `login@pcc-1-2-3-4.ovh.eu` dans l'exemple ci-dessous.
 >
 
 ![01 NSX Connection 02](images/01-nsxt-connection02.png){.thumbnail}

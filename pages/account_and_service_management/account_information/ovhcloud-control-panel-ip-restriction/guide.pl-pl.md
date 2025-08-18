@@ -17,10 +17,10 @@ Uruchomienie tej opcji, w połączeniu z zabezpieczeniem Twojego konta przez [we
 >
 > Ograniczenie dostępu z adresu IP i/lub weryfikacja dwuetapowa zabezpiecza dostęp do Panelu klienta OVHcloud, z którego możesz zamawiać, zarządzać, odnawiać lub usuwać usługi OVHcloud. Opcje te nie zabezpieczają Twoich usług samodzielnie, w przypadku których należy zastosować określone środki bezpieczeństwa.
 >
-  
+
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](/pages/account_and_service_management/account_information/manage-ovh-password).
   
 ## W praktyce
@@ -34,7 +34,7 @@ Istnieją dwa rodzaje adresów IP:
 
 Aby skorzystać z opcji ograniczenia IP w Panelu klienta OVHcloud, należy wpisać **tylko** Twój publiczny adres IP.
 
-Aby uzyskać publiczny adres IP urządzenia, które będzie uprawnione do dostępu do Panelu klienta OVHcloud, przejdź na stronę [whatismyip.com](https://www.whatismyip.com/){.external} (nie zarządzany przez OVHcloud).
+Aby uzyskać publiczny adres IP urządzenia, które będzie uprawnione do dostępu do Panelu klienta OVHcloud, przejdź na stronę [whatismyip.com](https://www.whatismyip.com/) (nie zarządzany przez OVHcloud).
 
 Przypisz do wiadomości adres IP, który się wyświetli, po czym powtórzyj operację dla każdego urządzenia, który będzie miał dostęp do Twojego Panelu klienta OVHcloud.
 
@@ -133,7 +133,7 @@ Reguła powinna pojawić się w sekcji `Skonfigurowane IP`.
 
 > [!primary]
 >
-> **Przed*** wykonaniem operacji opisanych w tym etapie należy powtórzyć operację dla wszystkich pozostałych adresów IP, które chcesz zablokować dostęp do Panelu klienta OVHcloud.
+> **Przed** wykonaniem operacji opisanych w tym etapie należy powtórzyć operację dla wszystkich pozostałych adresów IP, które chcesz zablokować dostęp do Panelu klienta OVHcloud.
 >
 
 Po wprowadzeniu wszystkich publicznych adresów IP w sekcji `Skonfigurowane IP`, w sekcji `Domyślna reguła` pozostaw regułę w statusie `Autoryzowany`{.action}. Zaznacz kratkę `Alert`{.action}, jeśli chcesz zostać powiadomiony e-mailem o próbach logowania, następnie kliknij `Zatwierdź`{.action}.

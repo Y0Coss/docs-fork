@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit einem VPS
 excerpt: Erfahren Sie hier, wie Sie einen VPS in Ihrem Kundencenter verwalten sowie die ersten Schritte zum Start, inklusive Remote-Verbindungen und Sicherheitsmaßnahmen
-updated: 2024-11-22
+updated: 2025-08-07
 ---
 
 ## Ziel
@@ -112,20 +112,22 @@ Klicken Sie auf die Tabs, um Erläuterungen dieses Bereichs anzuzeigen.
 
 #### Backup
 
-Diese Optionen beziehen sich auf zusätzliche VPS-Dienste, die über das Kundencenter bestellt werden können.
+Diese Optionen beziehen sich auf zusätzliche VPS-Dienste für Backups und die Wiederherstellung Ihres Systems.
 
 > [!tabs]
 > Snapshot
 >>
 >> Ein Snapshot eines VPS ist eine instante Sicherung des Serverzustands, mit der sich das System bei einem Problem schnell wiederherstellen lässt. Mit der Option `Snapshot` können Sie einen manuellen Snapshot als singulären Wiederherstellungspunkt erstellen.
 >>
-> Automatisiertes Backup
+> Automatisches Backup
 >>
->> Mit der Option `Automatisches Backup` können Sie regelmäßige Backups Ihres VPS planen  (mit Ausnahme zusätzlicher Disks). Im Vergleich zu manuellen Snapshots erhöht diese Funktion die Datensicherheit, indem mehrere Wiederherstellungspunkte in regelmäßigen Abständen beibehalten werden.
+>> Ein tägliches Backup des Systems (ausgenommen zusätzliche Disks) wird automatisch erstellt und 24 Stunden lang aufbewahrt. Mit einem Upgrade auf die Option "**Automatisches Backup Premium**" stehen Ihnen die letzten 7 täglichen Backups Ihres VPS zum Mounten und Wiederherstellen zur Verfügung.  
+Im Vergleich zu manuellen Snapshots erhöht diese Funktion die Datensicherheit, indem mehrere Wiederherstellungspunkte in regelmäßigen Abständen erstellt werden.
+>>
 
 Genaue Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden Sie auf der [Produktseite](/links/bare-metal/vps-options) und in den entsprechenden [Anleitungen](/products/bare-metal-cloud-virtual-private-servers-backups).
 
-#### Abo
+#### Mein Angebot
 
 In diesen Abschnitten finden Sie die wichtigsten Daten zur Abrechnung Ihres Dienstes. Weitere Informationen zu diesem Thema finden Sie in der entsprechenden [Dokumentation](/products/account-and-service-management-managing-billing-payments-and-services).
 
@@ -263,6 +265,8 @@ Sofern nicht anders vermerkt, können alle in unserer Dokumentation beschriebene
 Wenn Sie eine **Distribution mit Applikation** (Plesk, cPanel, Docker) ausgewählt haben, gelten die allgemeinen Sicherheitsmaßnahmen möglicherweise nicht uneingeschränkt für Ihr System. Nutzen Sie deshalb unsere Anleitungen [Erste Schritte mit vorinstallierten Anwendungen](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) und [cPanel auf einem VPS installieren](/pages/bare_metal_cloud/virtual_private_servers/cpanel) sowie die offizielle Dokumentation des jeweiligen Herausgebers.
 >
 
+Wenn Sie Ihr Benutzer- oder Root-Passwort verloren haben, lesen Sie [diese Anleitung](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password), um zu erfahren, wie Sie dieses zurücksetzen.
+
 <a name="winconnect"></a>
 
 #### Windows VPS
@@ -379,5 +383,7 @@ OVHcloud bietet auch die Lösung SSL Gateway zur Automatisierung dieses Prozesse
 [SSH Einführung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
 [VPS absichern](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+
+[Wiederherstellen des Serverzugriffs bei Passwortverlust](/pages/bare_metal_cloud/dedicated_servers/replacing-user-password)
 
 Treten Sie unserer [User Community](/links/community) bei.

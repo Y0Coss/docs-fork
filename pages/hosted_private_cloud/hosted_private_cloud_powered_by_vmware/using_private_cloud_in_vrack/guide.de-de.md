@@ -16,7 +16,7 @@ vRack bietet die Möglichkeit, verschiedene Cloud-Dienste von OVHcloud untereina
 
 ## Voraussetzungen
 
-- Sie haben eine [vRack](https://www.ovh.de/loesungen/vrack/) Dienstleistung in Ihrem Account.
+- Sie haben eine [vRack](/links/network/vrack) Dienstleistung in Ihrem Account.
 - Sie sind Administrator-Kontakt für die [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur, um Login-Daten zu erhalten.
 - Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](/links/manager)).
 

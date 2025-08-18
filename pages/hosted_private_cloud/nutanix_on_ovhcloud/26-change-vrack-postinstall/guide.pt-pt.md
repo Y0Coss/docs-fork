@@ -19,7 +19,7 @@ A Nutanix cluster is delivered with its own vRack. In order to interconnect with
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- An additional [vRack](https://www.ovh.pt/solucoes/vrack/) service activated in your account
+- An additional [vRack](/links/network/vrack) service activated in your account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

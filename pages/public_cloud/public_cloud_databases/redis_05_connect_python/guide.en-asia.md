@@ -14,8 +14,8 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A Valkey service running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your Valkey service](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
 - A working Python environment.
@@ -38,7 +38,7 @@ To interact with your instance using Python, your development environment needs 
 - A compatible version of Python
 - Redis-py
 
-Please follow the official [Redis-py](https://github.com/redis/redis-py#installation){.external} to get the latest information.
+Please follow the official [Redis-py](https://github.com/redis/redis-py#installation) to get the latest information.
 
 Once your Python environment is set up and you begin executing a **python --version** in your command line interface (CLI), you should see information about the version as shown below:
 

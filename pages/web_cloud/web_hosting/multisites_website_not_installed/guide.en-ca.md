@@ -4,6 +4,11 @@ excerpt: 'Find out how to resolve a “Site not installed” error'
 updated: 2025-04-28
 ---
 
+> [!success]
+> Participate in our survey and help us improve this guide!<br>
+> Feel free to share your thoughts and ideas with us.<br>
+> [Go to the survey.](https://s.elq.fr/ovhext/B4nKjrd)
+
 ## Objective
 
 You may see the error page **Site not installed** displayed on your web browser, particularly when your website is first installed.

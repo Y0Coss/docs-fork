@@ -29,7 +29,7 @@ As any other OVHcloud service, an Additional IP service can be cancelled at any 
 
 ### Cancelling an Additional IP service via the API
 
-Log in to the OVHcloud [API web page](https://api.ovh.com/).
+Log in to the OVHcloud [API web page](/links/api).
 
 You first need to find out the name of the service you need to cancel. Use the following call:
 

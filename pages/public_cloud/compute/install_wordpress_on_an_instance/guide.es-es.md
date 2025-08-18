@@ -25,7 +25,7 @@ Este tutorial explica cómo instalar WordPress manualmente en una instancia de P
 
 ## Requisitos
 
-- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
+- Un [proyecto de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud.
 - Tener una [instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) con Debian o Ubuntu instalado.
 - Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 - Acceso de administrador (sudo) a su instancia a través de SSH.
@@ -237,9 +237,9 @@ Una vez validado, podrá conectarse al panel de administración del sitio web co
 
 > [!primary]
 >
-> Para establecer conexiones seguras (`https`), el servidor web debe estar protegido a través de una Autoridad de Certificación como [Let's Encrypt](https://letsencrypt.org/){.external} que ofrece certificados gratuitos. Deberá instalar una herramienta de cliente (como "Certbot") y configurar Apache. Sin este paso, el sitio web solo podrá aceptar peticiones `http`.
+> Para establecer conexiones seguras (`https`), el servidor web debe estar protegido a través de una Autoridad de Certificación como [Let's Encrypt](https://letsencrypt.org/) que ofrece certificados gratuitos. Deberá instalar una herramienta de cliente (como "Certbot") y configurar Apache. Sin este paso, el sitio web solo podrá aceptar peticiones `http`.
 >
-> Como alternativa, OVHcloud le ofrece la solución [SSL Gateway](https://www.ovh.es/ssl-gateway/). Para más información, consulte [nuestra guía](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
+> Como alternativa, OVHcloud le ofrece la solución [SSL Gateway](/links/web/ssl-gateway). Para más información, consulte [nuestra guía](/pages/web_cloud/ssl_gateway/order-ssl-gateway).
 > 
 
 ### Paso 6: (opcional): activar conexiones seguras con Let's Encrypt

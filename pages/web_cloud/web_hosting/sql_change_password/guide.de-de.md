@@ -39,7 +39,7 @@ Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Schritte
 
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie verwenden eine [in Ihrem Webhosting enthaltene Datenbank](/links/web/hosting-options-startsql) oder einen [Web Cloud Databases Dienst](https://www.ovh.de/cloud-databases/).
+- Sie verwenden eine [in Ihrem Webhosting enthaltene Datenbank](/links/web/hosting-options-startsql) oder einen [Web Cloud Databases Dienst](/links/web/databases).
 - Sie verfügen über die FTP-Zugangsdaten, um sich auf dem [Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) Ihres Hostings einzuloggen.
 
 ## In der praktischen Anwendung
@@ -88,7 +88,7 @@ Führen Sie im Bereich `Web Cloud`{.action} Ihres [OVHcloud Kundencenters](/link
 
 Wenn Sie in diesem Teil Ihres Kundencenters den Namen der in der Konfigurationsdatei angegebenen Datenbank gefunden haben, gehen Sie zu [Schritt 3](#step3).
 
-Ist das nicht der Fall, ist die Datenbank Ihrer Website an ein [Web Cloud Databases Angebot](https://www.ovh.de/cloud-databases/) gebunden.
+Ist das nicht der Fall, ist die Datenbank Ihrer Website an ein [Web Cloud Databases Angebot](/links/web/databases) gebunden.
 
 Gehen Sie dann zurück zur Konfigurationsdatei Ihrer Website, um den *Servernamen* sowie den *Benutzernamen* Ihrer Datenbank zu notieren:
 
@@ -99,7 +99,7 @@ Gehen Sie dann zurück zur Konfigurationsdatei Ihrer Website, um den *Servername
 
 Öffnen Sie anschließend `Datenbanken`{.action} im Bereich `Web Cloud`{.action}.
 
-Im Tab `Allgemeine Informationen`{.action} können Sie in Ihren [Web Cloud Databases Angeboten](https://www.ovh.de/cloud-databases/) den Servernamen Ihrer zuvor gefundenen Datenbank unter `Hostname`{.action} auswählen.
+Im Tab `Allgemeine Informationen`{.action} können Sie in Ihren [Web Cloud Databases Angeboten](/links/web/databases) den Servernamen Ihrer zuvor gefundenen Datenbank unter `Hostname`{.action} auswählen.
 
 Gehen Sie in diesem Bereich Ihres Kundencenters auf den Tab `Benutzer und Rechte`{.action}, um auch den `Benutzernamen`{.action} Ihrer Datenbank zu ermitteln.
 

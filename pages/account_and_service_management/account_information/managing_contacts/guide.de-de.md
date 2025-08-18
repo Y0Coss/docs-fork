@@ -122,7 +122,7 @@ Wenn Ihre Domain noch nicht mit Ihrem Webhosting verbunden ist und Sie die notwe
 
 Die Zugangsberechtigung eines ["technischen Kontakts"](#gestion_des_contacts) ermöglicht keine Änderung der Administrator- oder Rechnungskontakte einer Dienstleistung. Er gewährt Ihrem Webmaster keinen Zugriff auf Ihre Rechnungen oder Bestellungen, die Verlängerung Ihrer Dienstleistungen oder Zahlungsmittel. Ebenfalls nicht möglich ist es, die [Verwaltung Ihres Domainnamens auf einen anderen Hosting-Provider zu übertragen](/pages/web_cloud/domains/transfer_outgoing_domain) oder den [Inhaber zu ändern](/pages/web_cloud/domains/trade_domain). 
 
-Weiterhin können Sie als [Administrator-Kontakt](#administrateur) Ihrer Dienste jederzeit den ["technischen Kontakt"](#technique)" Ihrer Dienstleistung ändern.
+Weiterhin können Sie als [Administrator-Kontakt](#administrateur) Ihrer Dienste jederzeit den ["technischen Kontakt"](#technique) Ihrer Dienstleistung ändern.
 
 ### Sonderfall bei Domaininhabern
 

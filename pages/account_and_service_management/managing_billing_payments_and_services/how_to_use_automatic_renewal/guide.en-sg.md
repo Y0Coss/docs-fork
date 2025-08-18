@@ -4,6 +4,11 @@ excerpt: Find out how to manage automatic renewal for your services via the OVHc
 updated: 2025-01-28
 ---
 
+> [!success]
+> Participate in our survey and help us improve this guide!<br>
+> Feel free to share your thoughts and ideas with us.<br>
+> [Go to the survey.](https://s.elq.fr/ovhext/FFBTC2m)
+
 ## Objective
 
 The **My solutions & services** menu in the OVHcloud Control Panel allows you to check the status of your services, renew them, modify their renewal type, pay your bills, or pay in advance.
@@ -68,7 +73,7 @@ This guide will help you to:
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en).<br>
+Log in to your [OVHcloud Control Panel](/links/manager).<br>
 Click your name in the top right-hand corner, then choose `My offers and services`{.action}.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}

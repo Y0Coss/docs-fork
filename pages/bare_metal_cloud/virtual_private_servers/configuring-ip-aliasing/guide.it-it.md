@@ -4,11 +4,6 @@ excerpt: Come aggiungere indirizzi Additional IP alla tua configurazione VPS
 updated: 2024-11-05
 ---
 
-> [!primary]
->
-> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](/links/network/additional-ip). Questo non ha alcun impatto sulla sua funzionalità.
->
-
 ## Obiettivo
 
 L'alias IP (*IP aliasing* in inglese) è una configurazione di rete speciale per i tuoi server OVHcloud, che ti permette di associare più indirizzi IP su un'unica interfaccia di rete.
@@ -46,7 +41,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 |NETWORK_INTERFACE|Nome dell'interfaccia di rete|*eth0*, *ens3*|
 |ID|ID dell'alias IP, che inizia con *0* (in base al numero di indirizzi IP aggiuntivi da configurare)|*0*, *1*|
 
-### Debian 10/11
+### Debian 11
 
 #### Step 1: disattiva la configurazione automatica della rete
 
@@ -221,7 +216,7 @@ sudo netplan apply
 
 Ripeti questa procedura per ogni indirizzo Additional IP.
 
-### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 Il file di configurazione principale si trova nella cartella `/etc/sysconfig/network-scripts/`. In questo esempio, si chiama `ifcfg-eth0`. Prima di apportare modifiche, verificare il nome effettivo del file nella cartella.
 
@@ -408,7 +403,7 @@ Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga d
 
 Per recuperare la configurazione IP corrente, inserisci `ipconfig` nel prompt dei comandi.
 
-```powershell
+```console
 C:\Users\Administrator>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
@@ -454,7 +449,7 @@ Si perderà la connessione al server per alcuni secondi.
 
 Apri il prompt dei comandi (cmd) e inserisci `ipconfig`. La configurazione deve includere il nuovo indirizzo Additional IP.
 
-```powershell
+```console
 C:\Users\Administrator>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:

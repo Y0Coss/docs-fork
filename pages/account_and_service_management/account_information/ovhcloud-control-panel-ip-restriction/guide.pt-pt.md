@@ -17,7 +17,7 @@ A implementação desta opção, associada à proteção da sua conta com uma [d
 >
 > A restrição de acesso por IP e/ou a dupla autenticação só protegem o acesso à Área de Cliente OVHcloud a partir da qual pode encomendar, gerir, renovar ou eliminar os seus serviços OVHcloud. Estas opções não protegem os seus serviços, para os quais deve implementar medidas de segurança específicas.
 >
-  
+
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
@@ -34,7 +34,7 @@ Existem dois tipos de endereços IP:
 
 Para utilizar a opção de restrição por IP da Área de Cliente OVHcloud, deverá introduzir **unicamente** o(s) seu(s) endereço(s) IP público(ais).
 
-Para obter o endereço IP público de um dispositivo que será autorizado a aceder à sua Área de Cliente OVHcloud, aceda ao site [whatismyip.com](https://www.whatismyip.com/){.external} (não gerido pela OVHcloud).
+Para obter o endereço IP público de um dispositivo que será autorizado a aceder à sua Área de Cliente OVHcloud, aceda ao site [whatismyip.com](https://www.whatismyip.com/) (não gerido pela OVHcloud).
 
 Tome nota do endereço IP que aparece e repita a operação para cada um dos dispositivos que será autorizado a aceder à sua Área de Cliente OVHcloud.
 
@@ -66,8 +66,8 @@ Clique em `Ativar`{.action} à direita da `restrição de acesso por IP`.
 Estão presentes duas secções para a implementação das restrições por IP:
 
 - **Regra predefinida**. Este campo permite:
-    - recusar o acesso ao conjunto dos endereços IP, exceto os previamente declarados como **autorizados* na segunda secção *IP configurados*. 
-    - permitir o acesso a todos os endereços de IP, exceto os previamente declarados como **recusados* na segunda secção *IP configurados*.
+    - recusar o acesso ao conjunto dos endereços IP, exceto os previamente declarados como **autorizados** na segunda secção *IP configurados*. 
+    - permitir o acesso a todos os endereços de IP, exceto os previamente declarados como **recusados** na segunda secção *IP configurados*.
     > Escolha a casa `Alerta`{.action} se deseja ser notificado por e-mail no seu endereço de e-mail de contacto, quando foi efetuada uma tentativa de ligação não autorizada para aceder à sua Área de Cliente.
 
 - **IP configurados**. Este campo permite declarar os endereços IP que serão objeto de uma restrição ou de uma autorização de acesso. Também permite visualizar as regras previamente implementadas.

@@ -1,12 +1,8 @@
 ---
 title: "Aumentar o tamanho de um disco adicional"
 excerpt: "Descubra como aumentar o tamanho de um volume adicional e aumentar a sua partição principal"
-updated: 2023-03-14
+updated: 2025-07-24
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -29,7 +25,7 @@ Os passos abaixo sugerem que configurou um disco adicional seguindo as instruç�
 
 Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor entre os `Servidores privados virtuais`{.action}.
 
-No quadro **Resumo das opções**, clique no botão `...`{.action} na secção `Discos adicionais`. Selecione `Aumentar o tamanho do disco`{.action}.
+No separador `Página Inicial` {.action}, na secção **A sua configuração**, clique em `...`{.action} ao lado da opção `Discos adicionais` e, a seguir, clique em `Aumentar o tamanho do disco`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 
@@ -37,7 +33,7 @@ Escolha o novo tamanho de disco na nova janela e clique em `Aumentar`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Irá aparecer uma mensagem para confirmar o seu pedido. Clique na ligação dentro da mensagem e siga o processo de encomenda. É possível que um novo separador de navegação para a encomenda tenha sido aberto automaticamente.
+Irá aparecer uma mensagem para confirmar o seu pedido. Clique na ligação dentro da mensagem e siga o processo de encomenda. É aberto um novo separador do browser para finalizar a encomenda.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
@@ -213,4 +209,4 @@ O volume redimensionado inclui agora o espaço de disco adicional.
 
 ## Quer saber mais?
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

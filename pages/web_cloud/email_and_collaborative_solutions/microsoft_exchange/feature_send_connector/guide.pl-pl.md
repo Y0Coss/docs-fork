@@ -48,7 +48,7 @@ Poniżej przedstawiamy kontekst dla powyższego schematu:
 
 - Wykupienie platformy [Private Exchange OVHcloud](/links/web/emails-private-exchange) lub [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Zalogowanie do [API OVHcloud](https://api.ovh.com/).
+- Zalogowanie do [API OVHcloud](/links/api).
 - Posiadanie parametrów niezbędnych do skonfigurowania łącznika przesyłania. Skontaktuj się z dostawcą, który dostarcza Ci usługę.
 
 ## W praktyce

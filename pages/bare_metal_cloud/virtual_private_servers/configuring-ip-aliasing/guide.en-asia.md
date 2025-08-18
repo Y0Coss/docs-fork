@@ -4,11 +4,6 @@ excerpt: Find out how to add Additional IP addresses to your VPS configuration
 updated: 2024-11-05
 ---
 
-> [!primary]
->
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
->
-
 ## Objective
 
 IP aliasing refers to a special network configuration for certain OVHcloud services. Additional IPs allow you to associate multiple IP addresses with a single network interface.
@@ -16,9 +11,9 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 **This guide explains how to add Additional IP addresses to your network configuration.**
 
 > [!warning]
-> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on https://community.ovh.com/en/ if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to the [OVHcloud community](/links/community) if you encounter any difficulties.
 >
 
 ## Requirements
@@ -45,7 +40,7 @@ Concerning different distribution releases, please note that the proper procedur
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
-### Debian 10/11
+### Debian 11
 
 #### Step 1: Disable automatic network configuration
 
@@ -167,7 +162,7 @@ network:
        INTERFACE_NAME:
            dhcp4: true
            addresses:
-           - ADDITIONAL_IP1/32
+           - ADDITIONAL_IP/32
 ```
 
 If you have more Additional IPs to configure, the configuration file should look like this:
@@ -216,7 +211,7 @@ If it is correct, apply it using the following command:
 sudo netplan apply
 ```
 
-### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called `ifcfg-eth0`. Before making changes, verify the actual file name in this folder.
 
@@ -400,7 +395,7 @@ Type `cmd` and click `OK`{.action} to open the command line application.
 
 In order to retrieve the current IP configuration, enter `ipconfig` at the command prompt.
 
-```powershell
+```console
 C:\Users\Administrator>ipconfig
 
 Windows IP Configuration
@@ -445,7 +440,7 @@ Confirm by clicking on `Add`{.action}.
 
 ![Additional IP configuration](images/additional-ip-config.png){.thumbnail}
 
-Once done, click on `OK`{.action} to apply the configuration. 
+Once done, click on `OK`{.action} to apply the configuration.
 
 ![Additional IP configuration](images/final-configuration.png){.thumbnail}
 
@@ -455,7 +450,7 @@ You will lose the connection to the server for a few seconds.
 
 Open the command prompt (cmd) and enter `ipconfig`. The configuration should now include the new Additional IP address.
 
-```powershell
+```console
 C:\Users\Administrator>ipconfig
 
 Windows IP Configuration
@@ -470,7 +465,6 @@ Ethernet adapter Ethernet:
    IPv4 Address. . . . . . . . . . . : 203.0.113.0
    Subnet Mask . . . . . . . . . . . : 255.255.255.255
    Default Gateway . . . . . . . . . : 192.0.2.1
-
 ```
 
 ### Troubleshooting
