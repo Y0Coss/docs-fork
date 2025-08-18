@@ -75,7 +75,7 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api put-object --bu
 
 > [!primary]
 >
-> This operation is not currently available via the OVHcloud client space. It must be performed on the command line via the S3 API.
+> This operation is not currently available via the OVHcloud Control Panel. It must be performed on the command line via the S3 API.
 >
 
 ### **Archive a bucket**
