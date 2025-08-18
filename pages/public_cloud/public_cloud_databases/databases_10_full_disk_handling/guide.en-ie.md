@@ -36,7 +36,7 @@ Different engines react in different ways, thus Public Cloud Databases services 
 - `Valkey` does not store any user data on disk. Thus, it will not fill up the underlying disk storage.
 - `Cassandra` turns to read-only.
 - `MySQL` and `PostgreSQL` turn to read-only with a way to temporarily revert to read-write.
-- `MongoDB` forbids writes but allows deletes only for the Admin. users
+- `MongoDB` forbids writes but allows deletes only for the Admin users.
 
 #### Upgrading your service
 
