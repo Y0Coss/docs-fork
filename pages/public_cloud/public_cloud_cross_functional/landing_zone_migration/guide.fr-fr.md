@@ -175,7 +175,7 @@ Maîtrisez vos dépenses cloud grâce à :
 
 Utilisez les tags, les rôles IAM et les alertes pour associer les coûts aux équipes, aux environnements ou aux services. Pour plus d'informations, consultez [cette documentation](/pages/public_cloud/public_cloud_cross_functional/analyze_billing).
 
-## Go Further
+## Aller plus loin
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts des services professionnels de vous aider dans votre cas d'utilisation spécifique.
 
