@@ -1,7 +1,7 @@
 ---
 title: Migration Guide – Moving Your Kubernetes Cluster to OVHcloud
 excerpt: Learn how to effectively migrate your Kubernetes cluster from an external provider to OVHcloud, leveraging its features and flexibility.
-updated: 2025-07-18
+updated: 2025-08-19
 ---
 
 ## Objective
@@ -41,24 +41,24 @@ Ensure the Velero Helm chart is installed on your Kubernetes cluster and configu
 - Refer to the [official Velero documentation on backup reference](https://velero.io/docs/v1.16/backup-reference/){.external} to back up your Kubernetes manifests and Persistent Volume Claims (PVCs).
 - Ensure that all backups are successfully stored in your configured OVHcloud Object Storage.
 
-2. **Pick a flavour and node pool for your new OVHcloud cluster**
-
-- **Size your worker nodes:** Carefully assess your existing architecture's CPU and RAM requirements and select OVHcloud node flavors that match these specifications.
-- **Replicate network setup:** Ensure your new cluster's network configuration mirrors your original cluster (e.g., private nodes on a private subnet, dedicated outbound gateway).
-- **Choose deployment mode:** Select a deployment mode (e.g., 1AZ or 3AZ) based on your fault tolerance needs and high availability requirements.
-
 3. **Create your target Kubernetes cluster on OVHcloud**
 
 - Follow the instructions in the OVHcloud documentation for [creating a Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster).
 - Choose your preferred deployment mode and proceed with the cluster creation.
 - **Optional:** OVHcloud Professional Services can assist you in creating an Infrastructure-as-Code script for your new Kubernetes deployment using OpenTofu, streamlining the provisioning process.
 
-4. **Deploy Velero Helm chart on the new cluster**
+4. **Pick a flavour and node pool for your new OVHcloud cluster**
 
-- On your newly created OVHcloud Kubernetes cluster, deploy the Velero Helm chart.
+- **Size your worker nodes:** Carefully assess your existing architecture's CPU and RAM requirements and select OVHcloud node flavors that match these specifications.
+- **Replicate network setup:** Ensure your new cluster's network configuration mirrors your original cluster (e.g., private nodes on a private subnet, dedicated outbound gateway).
+- **Choose deployment mode:** Select a deployment mode (e.g., 1AZ or 3AZ) based on your fault tolerance needs and high availability requirements.
+
+5. **Deploy Velero Helm chart on the new cluster**
+
+- On your newly created OVHcloud Kubernetes cluster, deploy the Velero Helm chart. To do this, you can follow this [guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero).
 - Crucially, point Velero to the same OVHcloud S3-compatible endpoint that contains your existing backups. This action will automatically make your backup resources available to the new cluster.
 
-5. **Restore your backups onto the new cluster**
+6. **Restore your backups onto the new cluster**
 
 - Utilize the Velero CLI to restore all your previous backups onto the new cluster. Refer to the Velero [documentation on file system backup](https://velero.io/docs/v1.16/file-system-backup/){.external} for detailed commands.
 - Before restoring, set your application to maintenance mode on the source cluster to prevent data inconsistencies during the transition.
@@ -67,21 +67,21 @@ Ensure the Velero Helm chart is installed on your Kubernetes cluster and configu
 - Map the source cluster's storage class to the target cluster's equivalent using [Velero configuration](https://velero.io/docs/v1.16/restore-reference/){.external} if your storage classes differ between environments.
 - **Optional:** If the deployment process appears overly complex, or if you require assistance with migration and rollback strategies, reach out to the OVHcloud Professional Services team.
 
-6. **Run integration tests to ensure restore is complete**
+7. **Run integration tests to ensure restore is complete**
 
 - Execute all your application's integration tests on the new target cluster.
 - Thoroughly verify the health and functionality of your applications after the deployment.
 - If any issues are detected, be prepared to roll back to your source cluster if necessary.
 
-7. **Seek Professional Services assistance (if needed)**
+8. **Seek Professional Services assistance (if needed)**
 
 If certain resources from your source cluster are particularly complex or require specialized knowledge for migration, the OVHcloud Professional Services team is available to provide expert assistance. You can find more information about their services [here](https://www.ovhcloud.com/en-gb/professional-services/){.external}.
 
-8. **Set up Saving Plans (if needed)**
+9. **Set up Saving Plans (if needed)**
 
 Explore the option of [OVHcloud Saving Plans](/pages/public_cloud/public_cloud_cross_functional/savings_plans) to optimize your cloud costs. Learn more about the available Saving Plans to determine if they align with your financial strategy.
 
-9.  **Decommission your source cluster**
+10.  **Decommission your source cluster**
 
 Once you have thoroughly validated that your applications are running correctly and stably on the new OVHcloud Kubernetes cluster, you can proceed to safely delete your source cluster.
 

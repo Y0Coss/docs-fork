@@ -1,96 +1,97 @@
 ---
-title: Migration Guide – Moving Your Kubernetes Cluster to OVHcloud
-excerpt: Learn how to effectively migrate your Kubernetes cluster from an external provider to OVHcloud, leveraging its features and flexibility.
-updated: 2025-07-18
+title: Guide de migration – Transférer votre cluster Kubernetes vers OVHcloud
+excerpt: Découvrez comment migrer efficacement votre cluster Kubernetes depuis un fournisseur externe vers OVHcloud, en tirant parti de ses fonctionnalités et de sa flexibilité.
+updated: 2025-08-19
 ---
 
-## Objective
+## Objectif
 
-This guide outlines the process of migrating your Kubernetes cluster from an external provider to OVHcloud Managed Kubernetes. It provides a step-by-step walkthrough to help you seamlessly transfer your applications and data, ensuring minimal downtime and a smooth transition.
+Ce guide décrit le processus de migration de votre cluster Kubernetes depuis un fournisseur externe vers OVHcloud Managed Kubernetes. Il propose un accompagnement étape par étape pour transférer vos applications et vos données en toute fluidité, tout en minimisant les interruptions de service et en garantissant une transition réussie.
 
-We'll cover the essential phases of migration, including:
+Nous aborderons les phases essentielles de la migration, notamment :
 
-- Backup and Restore: Utilizing Velero for efficient data transfer.
-- Cluster Provisioning: Selecting and deploying your new Kubernetes cluster on OVHcloud.
-- Post-Migration Validation: Ensuring your applications are fully functional on the new environment.
+- Sauvegarde et restauration : utilisation de Velero pour un transfert de données efficace.
+- Provisionnement du cluster : choix et déploiement de votre nouveau cluster Kubernetes sur OVHcloud.
+- Validation post-migration : vérification du bon fonctionnement de vos applications dans le nouvel environnement.
 
-This guide aims to equip you with the knowledge to manage your Kubernetes migration effectively. For complex scenarios or specialized assistance, the OVHcloud Professional Services team is available to provide expert support.
+L’objectif de ce guide est de vous fournir les connaissances nécessaires pour gérer efficacement la migration de votre cluster Kubernetes. Pour les scénarios complexes ou un accompagnement spécifique, l’équipe OVHcloud Professional Services est disponible pour vous apporter une expertise dédiée.
 
-## Requirements
+## Prérequis
 
-To successfully migrate your Kubernetes cluster to OVHcloud, ensure you have the following in place:
+Pour réussir la migration de votre cluster Kubernetes vers OVHcloud, assurez-vous de disposer des éléments suivants :
 
-- **Velero Setup:** Velero, along with its Helm chart, should be installed and configured on your source Kubernetes cluster. It's crucial that Velero is connected to an OVHcloud S3-compatible Object Storage endpoint for backup storage. You can find detailed instructions for Velero installation and configuration in the official [Velero Helm chart documentation](https://github.com/vmware-tanzu/helm-charts/blob/main/charts/velero/README.md){.external}.
-- **OVHcloud S3-compatible Endpoint:** Ensure your Velero setup correctly references the OVHcloud S3-compatible endpoints as the BackupStorageLocation. If you encounter any difficulties with these settings, don't hesitate to reach out to our [Professional Services experts](https://www.ovhcloud.com/en-gb/professional-services){.external} for assistance.
-- **kubectl:** You'll need the kubectl command-line tool installed to interact with your Kubernetes clusters. Refer to the [official Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/){.external} for installation instructions.
+- **Configuration de Velero :** Velero, ainsi que son chart Helm, doivent être installés et configurés sur votre cluster Kubernetes source. Il est essentiel que Velero soit connecté à un Endpoint OVHcloud Object Storage compatible S3 pour le stockage des sauvegardes. Vous trouverez des instructions détaillées pour l’installation et la configuration de Velero dans la [documentation officielle du chart Helm Velero](https://github.com/vmware-tanzu/helm-charts/blob/main/charts/velero/README.md){.external}.
+- **Endpoint OVHcloud compatible S3 :** Vérifiez que votre configuration Velero référence correctement les Endpoints OVHcloud compatibles S3 en tant que BackupStorageLocation. En cas de difficulté avec ces paramètres, n’hésitez pas à contacter nos [Professional Services experts](https://www.ovhcloud.com/en-gb/professional-services){.external} pour obtenir de l’aide.
+- **kubectl :** Vous aurez besoin de l’outil en ligne de commande kubectl pour interagir avec vos clusters Kubernetes. Reportez-vous à la [documentation officielle Kubernetes](https://kubernetes.io/docs/tasks/tools/){.external} pour les instructions d’installation.
 
-## Instructions
+## En pratique
 
 ![Migration of a Kubernetes to OVHcloud](images/migration_schema.png)
 
-The following diagram illustrates the complete migration journey from your existing Kubernetes environment to OVHcloud. This visual roadmap provides a clear understanding of each phase involved in transferring your cluster.
+Le schéma ci-dessous illustre l’ensemble du parcours de migration depuis votre environnement Kubernetes actuel vers OVHcloud. Cette représentation visuelle permet de mieux comprendre chacune des étapes nécessaires au transfert de votre cluster.
 
-Let's now dive into the detailed steps for migrating your Kubernetes cluster to OVHcloud:
+Passons maintenant aux étapes détaillées de la migration de votre cluster Kubernetes vers OVHcloud :
 
-1. **Install and Configure Velero with OVHcloud S3**
+1. **Installer et configurer Velero avec le stockage S3 d’OVHcloud**
 
-Ensure the Velero Helm chart is installed on your Kubernetes cluster and configured to use the OVHcloud S3-compatible storage.
+Assurez-vous que le chart Helm Velero est installé sur votre cluster Kubernetes et configuré pour utiliser le stockage OVHcloud Object Storage compatible S3.
 
-2. **Back up your cluster using Velero**
+2. **Sauvegarder votre cluster avec Velero**
 
-- Refer to the [official Velero documentation on backup reference](https://velero.io/docs/v1.16/backup-reference/){.external} to back up your Kubernetes manifests and Persistent Volume Claims (PVCs).
-- Ensure that all backups are successfully stored in your configured OVHcloud Object Storage.
+Reportez-vous à la [documentation officielle de Velero sur la sauvegarde](https://velero.io/docs/v1.16/backup-reference/){.external} pour sauvegarder vos manifestes Kubernetes et vos Persistent Volume Claims (PVCs).
 
-2. **Pick a flavour and node pool for your new OVHcloud cluster**
+Vérifiez que toutes les sauvegardes sont correctement stockées dans votre Object Storage OVHcloud configuré.
 
-- **Size your worker nodes:** Carefully assess your existing architecture's CPU and RAM requirements and select OVHcloud node flavors that match these specifications.
-- **Replicate network setup:** Ensure your new cluster's network configuration mirrors your original cluster (e.g., private nodes on a private subnet, dedicated outbound gateway).
-- **Choose deployment mode:** Select a deployment mode (e.g., 1AZ or 3AZ) based on your fault tolerance needs and high availability requirements.
+3. **Créer votre cluster Kubernetes cible sur OVHcloud**
 
-3. **Create your target Kubernetes cluster on OVHcloud**
+- Suivez les instructions de la documentation OVHcloud pour [créer un cluster Kubernetes.](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster).
+- Choisissez votre mode de déploiement préféré et procédez à la création du cluster.
+- **Optionnel :** Les équipes OVHcloud Professional Services peuvent vous accompagner dans la création d’un script Infrastructure-as-Code pour le déploiement de votre nouveau cluster Kubernetes avec OpenTofu, afin de simplifier et d’automatiser le processus de provisionnement.
 
-- Follow the instructions in the OVHcloud documentation for [creating a Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster).
-- Choose your preferred deployment mode and proceed with the cluster creation.
-- **Optional:** OVHcloud Professional Services can assist you in creating an Infrastructure-as-Code script for your new Kubernetes deployment using OpenTofu, streamlining the provisioning process.
+4. **Choisir une flavor et un pool de nodes pour votre nouveau cluster OVHcloud**
 
-4. **Deploy Velero Helm chart on the new cluster**
+- **Dimensionner vos nodes de calcul:** Analysez attentivement les besoins en CPU et en mémoire RAM de votre architecture actuelle, puis sélectionnez la flavor du node OVHcloud qui correspondent à ces spécifications.
+- **Reproduire la configuration réseau :** Assurez-vous que la configuration réseau de votre nouveau cluster reflète celle de votre cluster d’origine (par exemple : private nodes dans un sous-réseau privé, passerelle de sortie dédiée).
+- **Choisir le mode de déploiement :** Sélectionnez un mode de déploiement (par ex. 1AZ ou 3AZ) en fonction de vos besoins en tolérance aux pannes et en haute disponibilité.
 
-- On your newly created OVHcloud Kubernetes cluster, deploy the Velero Helm chart.
-- Crucially, point Velero to the same OVHcloud S3-compatible endpoint that contains your existing backups. This action will automatically make your backup resources available to the new cluster.
+5. **Déployer le chart Helm Velero sur le nouveau cluster**
 
-5. **Restore your backups onto the new cluster**
+- Sur votre cluster Kubernetes OVHcloud nouvellement créé, déployez le chart Helm Velero. Pour cela, vous pouvez suivre ce [guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero).
+- Point essentiel : configurez Velero pour qu’il utilise le même point de terminaison OVHcloud Object Storage compatible S3 contenant vos sauvegardes existantes. Cette opération permettra de rendre automatiquement vos ressources de sauvegarde disponibles sur le nouveau cluster.
 
-- Utilize the Velero CLI to restore all your previous backups onto the new cluster. Refer to the Velero [documentation on file system backup](https://velero.io/docs/v1.16/file-system-backup/){.external} for detailed commands.
-- Before restoring, set your application to maintenance mode on the source cluster to prevent data inconsistencies during the transition.
-- After restoration, carefully update all your DNS records to point to the new cluster's services.
-- Ensure your ingress controllers and Load Balancers are properly configured and ready on the new cluster.
-- Map the source cluster's storage class to the target cluster's equivalent using [Velero configuration](https://velero.io/docs/v1.16/restore-reference/){.external} if your storage classes differ between environments.
-- **Optional:** If the deployment process appears overly complex, or if you require assistance with migration and rollback strategies, reach out to the OVHcloud Professional Services team.
+6. **Restaurer vos sauvegardes sur le nouveau cluster**
 
-6. **Run integration tests to ensure restore is complete**
+- Utilisez la CLI Velero pour restaurer l’ensemble de vos sauvegardes précédentes sur le nouveau cluster. Reportez-vous à la [documentation Velero sur la sauvegarde au niveau du système de fichiers](https://velero.io/docs/v1.16/file-system-backup/){.external} pour consulter les commandes détaillées.
+- Avant de lancer la restauration, placez vos applications en mode maintenance sur le cluster source afin d’éviter toute incohérence de données pendant la transition.
+- Après la restauration, mettez à jour soigneusement tous vos enregistrements DNS pour qu’ils pointent vers les services du nouveau cluster.
+- Assurez-vous que vos ingress controllers et vos Load Balancers sont correctement configurés et opérationnels sur le nouveau cluster.
+- Si vos classes de stockage diffèrent entre les environnements, mappez la classe de stockage du cluster source à l’équivalent sur le cluster cible à l’aide de la [configuration Velero](https://velero.io/docs/v1.16/restore-reference/){.external}.
+- **Optionnel :** Si le processus de déploiement vous paraît trop complexe ou si vous avez besoin d’un accompagnement sur les stratégies de migration et de rollback, n’hésitez pas à contacter l’équipe OVHcloud Professional Services.
 
-- Execute all your application's integration tests on the new target cluster.
-- Thoroughly verify the health and functionality of your applications after the deployment.
-- If any issues are detected, be prepared to roll back to your source cluster if necessary.
+7. **Exécuter des tests d’intégration pour valider la restauration**
 
-7. **Seek Professional Services assistance (if needed)**
+- Lancez l’ensemble des tests d’intégration de vos applications sur le nouveau cluster cible.
+- Vérifiez de manière approfondie l’état de santé et le bon fonctionnement de vos applications après le déploiement.
+- Si des problèmes sont détectés, soyez prêt à effectuer un rollback vers votre cluster source si nécessaire.
 
-If certain resources from your source cluster are particularly complex or require specialized knowledge for migration, the OVHcloud Professional Services team is available to provide expert assistance. You can find more information about their services [here](https://www.ovhcloud.com/en-gb/professional-services/){.external}.
+8. **Faire appel à l’assistance Professional Services (si besoin)**
 
-8. **Set up Saving Plans (if needed)**
+Si certaines ressources de votre cluster source sont particulièrement complexes ou nécessitent une expertise spécifique pour la migration, l’équipe OVHcloud Professional Services est disponible pour vous apporter un accompagnement expert. Vous pouvez trouver plus d’informations sur leurs services [ici](https://www.ovhcloud.com/en-gb/professional-services/){.external}.
 
-Explore the option of [OVHcloud Saving Plans](/pages/public_cloud/public_cloud_cross_functional/savings_plans) to optimize your cloud costs. Learn more about the available Saving Plans to determine if they align with your financial strategy.
+9. **Mettre en place des Saving Plans (si nécessaire)**
 
-9.  **Decommission your source cluster**
+Explorez l’option des [Savings Plans OVHcloud](/pages/public_cloud/public_cloud_cross_functional/savings_plans) afin d’optimiser vos coûts cloud. Renseignez-vous sur les différents Saving Plans disponibles pour déterminer s’ils correspondent à votre stratégie financière.
 
-Once you have thoroughly validated that your applications are running correctly and stably on the new OVHcloud Kubernetes cluster, you can proceed to safely delete your source cluster.
+10. **Désactiver votre cluster source**
+
+Une fois que vous avez validé de manière approfondie que vos applications fonctionnent correctement et de façon stable sur le nouveau cluster Kubernetes OVHcloud, vous pouvez procéder à la suppression en toute sécurité de votre cluster source.
 
 ## Go further
 
-To have an overview of the OVHcloud Managed Kubernetes service, visit the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
+Pour avoir une vue d’ensemble du service OVHcloud Managed Kubernetes, consultez la page [OVHcloud Managed Kubernetes](/links/public-cloud/kubernetes).
 
-To deploy your first application on your Kubernetes cluster, we invite you to follow our guides to [configure default settings for `kubectl`](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) and to [deploy a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
+Pour déployer votre première application sur votre cluster Kubernetes, nous vous invitons à suivre nos guides pour [configurer les paramètres par défaut de `kubectl`](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) et pour [déployer une application Hello World](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+Si vous avez besoin de formation ou d’une assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts Professional Services une analyse personnalisée de votre projet.
 
-Join our [community of users](/links/community).
+Rejoignez notre [communauté d’utilisateurs](/links/community).
