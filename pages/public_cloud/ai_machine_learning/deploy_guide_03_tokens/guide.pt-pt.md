@@ -1,6 +1,6 @@
 ---
-title: AI Deploy - Accessing your app with tokens
-excerpt: Discover how to create a scoped token and query your AI Deploy app
+title: AI Deploy - Accessing your app with tokens (EN)
+excerpt: Learn how to create scoped tokens to securely access your AI Deploy applications
 updated: 2025-07-28
 ---
 
