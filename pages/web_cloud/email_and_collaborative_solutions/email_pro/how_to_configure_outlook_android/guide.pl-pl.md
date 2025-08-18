@@ -1,7 +1,7 @@
 ---
 title: "E-mail Pro - Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Android"
 excerpt: "Dowiedz się, jak skonfigurować konto E-mail Pro w aplikacji Adroid przy użyciu aplikacji Microsoft Outlook"
-updated: 2025-08-12
+updated: 2025-08-18
 ---
 
 <style>

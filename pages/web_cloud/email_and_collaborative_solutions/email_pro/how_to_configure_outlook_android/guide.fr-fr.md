@@ -1,7 +1,7 @@
 ---
 title: "E-mail Pro - Configurer son compte e-mail sur Outlook pour Android"
 excerpt: "Découvrez comment configurer votre adresse E-mail Pro sur l'application mobile Outlook pour Android"
-updated: 2025-08-12
+updated: 2025-08-18
 ---
 
 <style>
