@@ -16,7 +16,7 @@ You must therefore use the [OVHcloud API](/pages/manage_and_operate/api/first-st
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account.
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account.
 - An up and running Public Cloud Database for Valkey.
 
 If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
@@ -95,7 +95,7 @@ The result shows four string arrays, which represent the ACLs defined for the gi
 - Commands: Add or remove the command to the list of commands the user can call.
 - Channels: Allow and disallow Pub/Sub channels.
 
-You can follow the official Redis® documentation about users and ACL: [https://redis.io/topics/acl](https://redis.io/topics/acl){.external}.
+You can follow the official Redis® documentation about users and ACL: [https://redis.io/topics/acl](https://redis.io/topics/acl).
 
 ### Update an ACL with the API
 

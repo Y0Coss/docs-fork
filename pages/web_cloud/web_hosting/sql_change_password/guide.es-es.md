@@ -40,7 +40,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Utilizar una [base de datos asociada a su plan de hosting](/links/web/hosting-options-startsql) o a un [servidor Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
+- Utilizar una [base de datos asociada a su plan de hosting](/links/web/hosting-options-startsql) o a un [servidor Web Cloud Databases](/links/web/databases).
 - Disponer de las claves FTP para conectarse al [espacio de almacenamiento](/pages/web_cloud/web_hosting/ftp_connection) del alojamiento.
 
 ## Procedimiento
@@ -89,7 +89,7 @@ Vuelva al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cl
 
 Si ha encontrado en esta sección del área de cliente el nombre de la base de datos indicada en el archivo de configuración, vaya al [Etapa 3](#step3).
 
-En caso contrario, la base de datos del sitio web está asociada a un servicio [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
+En caso contrario, la base de datos del sitio web está asociada a un servicio [Web Cloud Databases](/links/web/databases).
 
 En ese caso, deberá volver al archivo de configuración del sitio web para registrar el *nombre del servidor* y el *nombre de usuario* de la base de datos:
 
@@ -100,7 +100,7 @@ En ese caso, deberá volver al archivo de configuración del sitio web para regi
 
 A continuación, haga clic en `Bases de datos`{.action} en el apartado `Web Cloud`{.action}. 
 
-En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/), con el `Nombre del host`{.action}.
+En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [Web Cloud Databases](/links/web/databases), con el `Nombre del host`{.action}.
 
 En el área de cliente de OVHcloud, abra la pestaña `Usuario y permisos`{.action} para identificar también el `Nombre de usuario`{.action} de la base de datos.
 

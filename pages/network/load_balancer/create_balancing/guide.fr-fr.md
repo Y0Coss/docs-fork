@@ -12,8 +12,8 @@ Le service OVHcloud Load Balancer offre différents types de répartition de cha
 
 ## Prérequis
 
-- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Posséder une ferme de serveurs créée.
 
 ## En pratique
@@ -22,7 +22,7 @@ Le service OVHcloud Load Balancer offre différents types de répartition de cha
 
 La répartition de charge est utilisée dans les fermes de serveurs. C'est ce paramètre qui définit la manière dont les requêtes sont réparties entre les serveurs de la ferme.
 
-Pour connaître les différentes parties élémentaires du service OVHcloud Load Balancer, consultez la [présentation du Load Balancer](/pages/network/load_balancer/use_presentation){.external}.
+Pour connaître les différentes parties élémentaires du service OVHcloud Load Balancer, consultez la [présentation du Load Balancer](/pages/network/load_balancer/use_presentation).
 
 |Algorithme|Fonctionnalités|
 |---|---|

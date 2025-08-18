@@ -17,7 +17,7 @@ Si configura su servidor dedicado como servidor DNS, puede utilizar el DNS de OV
 ## Requisitos
 
 - Tener un [servidor dedicado](/links/bare-metal/bare-metal).
-- Tener un [dominio](https://www.ovhcloud.com/es/domains/){.external} gestionado administrativa o técnicamente.
+- Tener un [dominio](/links/web/domains) gestionado administrativa o técnicamente.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
@@ -75,6 +75,6 @@ Una vez que haya añadido correctamente el registro TXT a la zona DNS del domini
 
 ## Más información
 
-[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}
+[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).

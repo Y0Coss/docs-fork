@@ -6,7 +6,7 @@ updated: 2021-01-05
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Python** applications, and you want to deploy [Flask](https://flask.palletsprojects.com/en/1.1.x/){.external} on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Python** applications, and you want to deploy [Flask](https://flask.palletsprojects.com/en/1.1.x/) on it.
 
 This guide will explain how to do it.
 
@@ -15,7 +15,7 @@ This guide will explain how to do it.
 ## Requirements
 
 - A [Python](https://labs.ovh.com/managed-python) POWER web hosting plan
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](/pages/ovhcloud_labs/power_web_hosting/getting-started) guide before going further.
 
