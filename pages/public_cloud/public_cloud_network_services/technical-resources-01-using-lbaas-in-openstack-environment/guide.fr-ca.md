@@ -322,4 +322,4 @@ Si vous avez besoin d'une formation ou d'une assistance technique pour la mise e
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
 
-Rejoignez notre [Discord](https://discord.gg/PwPqWUpN8G) pour discuter avec les membres de l'équipe OVHcloud et d'autre utilisateurs.
+Rejoignez notre [Discord](https://discord.gg/ovhcloud) pour discuter avec les membres de l'équipe OVHcloud et d'autre utilisateurs.
