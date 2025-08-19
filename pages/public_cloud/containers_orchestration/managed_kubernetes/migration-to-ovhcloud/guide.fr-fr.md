@@ -34,13 +34,13 @@ Passons maintenant aux étapes détaillées de la migration de votre cluster Kub
 
 1. **Installer et configurer Velero avec le stockage S3 d’OVHcloud**
 
-Assurez-vous que le chart Helm Velero est installé sur votre cluster Kubernetes et configuré pour utiliser le stockage OVHcloud Object Storage compatible S3.
+    Assurez-vous que le chart Helm Velero est installé sur votre cluster Kubernetes et configuré pour utiliser le stockage OVHcloud Object Storage compatible S3.
 
 2. **Sauvegarder votre cluster avec Velero**
 
-Reportez-vous à la [documentation officielle de Velero sur la sauvegarde](https://velero.io/docs/v1.16/backup-reference/) pour sauvegarder vos manifestes Kubernetes et vos Persistent Volume Claims (PVCs).
+    Reportez-vous à la [documentation officielle de Velero sur la sauvegarde](https://velero.io/docs/v1.16/backup-reference/) pour sauvegarder vos manifestes Kubernetes et vos Persistent Volume Claims (PVCs).
 
-Vérifiez que toutes les sauvegardes sont correctement stockées dans votre Object Storage OVHcloud configuré.
+    Vérifiez que toutes les sauvegardes sont correctement stockées dans votre Object Storage OVHcloud configuré.
 
 3. **Créer votre cluster Kubernetes cible sur OVHcloud**
 
@@ -76,15 +76,15 @@ Vérifiez que toutes les sauvegardes sont correctement stockées dans votre Obje
 
 8. **Faire appel à l’assistance Professional Services (si besoin)**
 
-Si certaines ressources de votre cluster source sont particulièrement complexes ou nécessitent une expertise spécifique pour la migration, l’équipe OVHcloud Professional Services est disponible pour vous apporter un accompagnement expert. Vous pouvez trouver plus d’informations sur leurs services [ici](/links/professional-services).
+    Si certaines ressources de votre cluster source sont particulièrement complexes ou nécessitent une expertise spécifique pour la migration, l’équipe OVHcloud Professional Services est disponible pour vous apporter un accompagnement expert. Vous pouvez trouver plus d’informations sur leurs services [ici](/links/professional-services).
 
 9. **Mettre en place des Saving Plans (si nécessaire)**
 
-Explorez l’option des [Savings Plans OVHcloud](/pages/public_cloud/public_cloud_cross_functional/savings_plans) afin d’optimiser vos coûts cloud. Renseignez-vous sur les différents Saving Plans disponibles pour déterminer s’ils correspondent à votre stratégie financière.
+    Explorez l’option des [Savings Plans OVHcloud](/pages/public_cloud/public_cloud_cross_functional/savings_plans) afin d’optimiser vos coûts cloud. Renseignez-vous sur les différents Saving Plans disponibles pour déterminer s’ils correspondent à votre stratégie financière.
 
 10. **Désactiver votre cluster source**
 
-Une fois que vous avez validé de manière approfondie que vos applications fonctionnent correctement et de façon stable sur le nouveau cluster Kubernetes OVHcloud, vous pouvez procéder à la suppression en toute sécurité de votre cluster source.
+    Une fois que vous avez validé de manière approfondie que vos applications fonctionnent correctement et de façon stable sur le nouveau cluster Kubernetes OVHcloud, vous pouvez procéder à la suppression en toute sécurité de votre cluster source.
 
 ## Aller plus loin
 
