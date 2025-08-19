@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Block Storage - Partage des responsabilités
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation du Block Storage Public Cloud"
-updated: 2025-07-17
+updated: 2025-08-19
 ---
 
 ## Objectif

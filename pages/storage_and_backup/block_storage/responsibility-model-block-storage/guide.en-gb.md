@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Block Storage - Shared responsibilities
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Block Storage"
-updated: 2025-07-17
+updated: 2025-08-19
 ---
 
 ## Objective
