@@ -69,7 +69,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> |Scénarios|Actions à entreprendre|
 >> |---|---|
->> |Le nom de domaine ou le sous-domaine lié à votre site web **apparaît** dans le tableau « multisite ».|Si vous venez d’ajouter votre nom de domaine ou votre sous-domaine dans la partie `Multisite`{.action} de votre hébergement web, patientez environ **vingt minutes** puis rafraîchissez le cache de votre navigateur Internet. Si le message « Site non installé » apparaît toujours, passez à [l'étape 2](#check-dns-domain).|
+>> |Le nom de domaine ou le sous-domaine lié à votre site web **apparaît** dans le tableau « multisite ».|Si vous venez d’ajouter votre nom de domaine ou votre sous-domaine dans la partie `Multisite`{.action} de votre hébergement web, patientez environ **vingt minutes** puis rafraîchissez le cache de votre navigateur Internet. Si le message « Site non installé » apparaît toujours, passez à la [partie 2](#check-dns-domain).|
 >> |Le nom de domaine ou le sous-domaine lié à votre site web **n'apparaît pas** dans le tableau « multisite ».|Ajoutez votre nom de domaine ou votre sous-domaine dans la partie `Multisite`{.action} en suivant la rubrique dédiée du guide « [Partager son hébergement entre plusieurs sites - ajouter un domaine ou un sous-domaine](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».|
 >> |Le nom de domaine ou le sous-domaine **a été supprimé** du tableau « multisite » sans action de votre part.|Votre domaine ou sa zone DNS sont peut-être gérés depuis un autre compte. Ajoutez votre nom de domaine ou votre sous-domaine dans la partie `Multisite`{.action} en suivant la rubrique dédiée du guide « [Partager son hébergement entre plusieurs sites - ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».|
 
@@ -84,7 +84,6 @@ Cette étape consiste à vérifier que votre nom de domaine ou sous-domaine poin
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit);
 > - [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create);
 > - [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit).
->
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement web OVHcloud
 
