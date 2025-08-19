@@ -24,21 +24,23 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 
 ## En pratique <a name="instructions"></a>
 
-Selon la date d'activation de votre service ou si celui-ci a été récemment migré, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci.
-
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 1. Rendez-vous dans la partie `Web Cloud`{.action}.
 1. Cliquez sur `MX Plan`{.action}.
 1. Sélectionnez le domaine concerné.
+1. **Poursuivez selon la technologie e-mail utilisée par votre service MX Plan**.
 
-Poursuivez selon la version que vous possédez.
+> [!primary]
+>
+> **Identifier la technologie e-mail de votre offre MX Plan.**
+>
+> En fonction de la date d’activation de votre offre MX Plan ou d’une migration récente, la technologie e-mail associée peut différer. Cette version est caractérisée par l'interface de son webmail. Pour l'identifier :
+>
+> - Depuis l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action} sous `Webmail`{.action}.
+>
+> ![MX plan](images/technology-email.png){.thumbnail .w-500}
 
-|Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
-|---|---|
-|![email](images/mxplan-creation-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-creation-new-step1.png){.thumbnail}<br>Repérez la `Référence serveur` dans le cadre « Résumé »|
-|Poursuivre vers « [Version historique de l'offre MX Plan](./#version-historique-de-loffre-mx-plan) »|Poursuivre vers « [Nouvelle version de l'offre MX Plan](./#nouvelle-version-de-loffre-mx-plan) »|
-
-### Nouvelle version de l'offre MX Plan <a name="newmxplan"></a>
+### OWA et Zimbra <a name="newmxplan"></a>
 
 #### Accéder à la gestion du service e-mail
 
@@ -108,7 +110,7 @@ Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} 
 
 ![email](images/mxplan-new-reset.png){.thumbnail}
 
-### Version historique de l'offre MX Plan <a name="mxplanlegacy"></a>
+### MX Plan Roundcube <a name="roundcube"></a>
 
 #### Accéder à la gestion du service e-mail
 
@@ -124,10 +126,10 @@ Pour obtenir une nouvelle adresse e-mail, positionnez-vous sur l'onglet `Emails`
 
 Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 
-- **Nom du compte**: Renseignez le nom que vous souhaitez pour votre adresse e-mail (votre prénom.nom, par exemple). Le nom de domaine concerné est déjà complété par défaut.|  
-- **Description du compte**: Indiquez une courte description vous permettant de reconnaître ce compte parmi d'autres affichés dans votre espace client OVHcloud.|  
-- **Taille du compte**: Sélectionnez la taille du compte souhaitée. Il s'agit de l'espace dont bénéficiera votre adresse pour stocker les messages.|  
-- **Mot de passe**: Définissez un mot de passe et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.|
+- **Nom du compte**: Renseignez le nom que vous souhaitez pour votre adresse e-mail (votre prénom.nom, par exemple). Le nom de domaine concerné est déjà complété par défaut.
+- **Description du compte**: Indiquez une courte description vous permettant de reconnaître ce compte parmi d'autres affichés dans votre espace client OVHcloud.
+- **Taille du compte**: Sélectionnez la taille du compte souhaitée. Il s'agit de l'espace dont bénéficiera votre adresse pour stocker les messages.
+- **Mot de passe**: Définissez un mot de passe et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
 
 Une fois les champs complétés, cliquez sur `Suivant`{.action}.
 
