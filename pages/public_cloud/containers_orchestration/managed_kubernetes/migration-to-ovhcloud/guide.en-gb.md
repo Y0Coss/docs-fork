@@ -28,7 +28,7 @@ To successfully migrate your Kubernetes cluster to OVHcloud, ensure you have the
 
 The following diagram illustrates the complete migration journey from your existing Kubernetes environment to OVHcloud. This visual roadmap provides a clear understanding of each phase involved in transferring your cluster.
 
-![Migration of a Kubernetes to OVHcloud](images/migration_schema.png){.thumbnail}
+![Migration of a Kubernetes to OVHcloud](images/migration-schema.png){.thumbnail}
 
 Let's now dive into the detailed steps for migrating your Kubernetes cluster to OVHcloud:
 
