@@ -73,7 +73,7 @@ Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web
 >>
 > **Zimbra**
 >>
->> Pulse `Zimbra Mail`{.action}. Abra la pestaña «Cuenta de correo» de {.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. En la columna `Quota` puede ver el consumo actual del almacenamiento de su dirección de correo.<br><br>
+>> Haga clic en `Zimbra Mail`{.action}. Abra la pestaña `Cuenta de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. En la columna`Quota` puede consultar el consumo actual del almacenamiento de su dirección de correo.<br><br>
 >>![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
 >>
 
@@ -89,14 +89,14 @@ Para conectarse al webmail, acceda a la página [Webmail](/links/web/email) e in
 >>
 > **Roundcube**: **MX Plan**
 >>
->> Cuando se conecta al webmail Roundcube, la cuota se muestra en la parte inferior izquierda, materializada por un campo y el porcentaje consumido.<br><br>
+>> Cuando se conecta al webmail Roundcube, la cuota se muestra en la parte inferior izquierda, materializada en un diagrama circular y el porcentaje consumido.<br><br>
 >>![Correo electrónico](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>>
->> Cuando se conecta al webmail Zimbra, el límite se muestra en la parte inferior izquierda, representado por un camembert y el porcentaje consumido.<br><br>
+>> Cuando se conecte al webmail Zimbra, haga clic en la rueda dentada `&#9881;` en la parte superior derecha de su interfaz y, a continuación, haga clic en `Parámetros`{.action}. En la pestaña `General`{.action} de la columna izquierda, haga clic en  para consultar el "Almacenamiento".<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
->>>
+>>
 
 ### 2. **Optimizar** su cuenta de correo <a name="optimise"></a>
 

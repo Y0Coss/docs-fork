@@ -89,12 +89,12 @@ Um sich im Webmail einzuloggen, gehen Sie auf die Seite [Webmail](/links/web/ema
 >>
 > **Roundcube**: **MX Plan**
 >>
->> Wenn Sie im Roundcube Webmail eingeloggt sind, wird die Quota im linken Bereich als Kreisdiagramm mit Prozentangabe angezeigt.<br><br>
+>> Wenn Sie im Roundcube Webmail eingeloggt sind, sehen Sie unten links das Quota in einem Kreisdiagramm und den prozentualen Verbrauch.<br><br>
 >>![E-Mail](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Wenn Sie bei Zimbra Webmail eingeloggt sind, sehen Sie unten links das Quota, das sich in Form eines Kreises und des prozentualen Verbrauchs zeigt.<br><br>
+>> Wenn Sie im Zimbra Webmail eingeloggt sind, klicken Sie auf das Zahnrad `&#9881;` oben rechts in Ihrem Interface und dann auf `Einstellungen`{.action}. Im Tab `Allgemein`{.action} wird das verwendete Quota unter dem Vermerk „Stauraum“ angezeigt.<br><br>
 >> ![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 

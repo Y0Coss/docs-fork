@@ -12,12 +12,12 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 
 ## Prérequis
 
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
     - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
     - [Exchange](/links/web/emails).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mails concernées.
 
 > [!primary]
@@ -89,12 +89,12 @@ Pour vous connecter au webmail, rendez-vous sur la page [Webmail](/links/web/ema
 >>
 > **Roundcube** : **MX Plan**
 >>
->> Lorsque vous êtes connecté au webmail Roundcube, le quota est visible dans la partie inférieure gauche, matérialisé par un camembert et le pourcentage consommé.<br><br>
+>> Lorsque vous êtes connecté au webmail Roundcube, le quota est visible dans la partie inférieure gauche, matérialisé par un diagramme circulaire et le pourcentage consommé.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 > **Zimbra** : **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Lorsque vous êtes connecté au webmail Zimbra, le quota est visible dans la partie inférieure gauche, matérialisé par un camembert et le pourcentage consommé.<br><br>
+>> Lorsque vous êtes connecté au webmail Zimbra, cliquez sur la roue crantée `&#9881;` en haut à droite de votre interface, puis cliquez ensuite sur `Paramètres`{.action}. Depuis l'onglet `Général`{.action} le quota utilisé est visible sous la mention «Espace de rangement».<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
@@ -237,7 +237,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 > [!tabs]
 > **MX Plan**
 >>
->> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Email Pro** de 10 Go](/links/web/email-pro), [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange) ou [**Zimbra** de 15 Go ou 50 Go](/links/web/emails-zimbra). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ». 
+>> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Email Pro** de 10 Go](/links/web/email-pro), [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange) ou [**Zimbra** de 15 Go ou 50 Go](/links/web/emails-zimbra). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ».
 >>
 > **Email Pro**
 >>

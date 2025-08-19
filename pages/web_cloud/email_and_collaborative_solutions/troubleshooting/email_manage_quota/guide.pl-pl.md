@@ -89,12 +89,12 @@ Aby zalogować się do interfejsu Webmail, przejdź do strony [Webmail](/links/w
 >>
 > **Roundcube**: **MX Plan**
 >>
->> Po zalogowaniu się do interfejsu Webmail Roundcube limit jest widoczny w dolnej części lewej strony, potwierdzony wykresem oraz wykorzystany procent.<br><br>
+>> Po zalogowaniu się do interfejsu Webmail Roundcube limit jest widoczny w lewym dolnym rogu, widoczny na wykresie kołowym i w wykorzystanym procencie.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Po zalogowaniu do Zimbra Webmail, limit jest widoczny w lewej dolnej części, zmaterializowany przez wykres kołowy i wykorzystany procent.<br><br>
+>> Lorsque vous êtes connecté au webmail Zimbra, cliquez sur la roue crantée `&#9881;` en haut à droite de votre interface, puis cliquez ensuite sur `Paramètres`{.action}. Depuis l'onglet `Général`{.action} le quota utilisé est visible sous la mention «Espace de rangement».<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
@@ -142,8 +142,8 @@ Zwiększ rozmiar przestrzeni dyskowej Twojego konta e-mail, jeśli konto nie osi
 > **Zimbra**
 >>
 >> Oferta Zimbra Starter zawiera 15 GB przestrzeni dyskowej. Jeśli chcesz zwiększyć pojemność, możesz przejść na ofertę Zimbra Pro.
->> W zakładce `Konto e-mail`{.action} Twojej platformy kliknij przycisk`...`{.action} po prawej stronie konta, które chcesz zmienić, a następnie kliknij `Uaktualnij`{.action}.
->> Jeśli posiadasz ofertę Zimbra Pro lub Business, dysponujesz już maksimum pojemności 50 GB. Musisz zwolnić miejsce na swoim koncie Zimbra usuwając niepotrzebne elementy lub [archiwizuj e-maile] (#archiveorswitch) lokalnie na swoim komputerze.
+>> W zakładce `Konto e-mail`{.action} Twojej platformy kliknij przycisk `...`{.action} po prawej stronie konta, które chcesz zmienić, a następnie kliknij `Uaktualnij`{.action}.
+>> Jeśli posiadasz ofertę Zimbra Pro lub Business, dysponujesz już maksimum pojemności 50 GB. Musisz zwolnić miejsce na swoim koncie Zimbra usuwając niepotrzebne elementy lub [archiwizuj e-maile](#archiveorswitch) lokalnie na swoim komputerze.
 
 ### 3- **Archiwum** lub **zmiana oferty e-mail** <a name="archiveorswitch"></a>
 
@@ -250,9 +250,9 @@ Z poniższego menu wybierz aktualną ofertę Twojego konta e-mail:
 >> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
 > **Zimbra**
->> L'offerta Zimbra Starter include 15 GB di storage. Per aumentare la capacità è possibile passare all’offerta Zimbra Pro.
->> Dalla scheda `Account email`{.action} della piattaforma, clicca sul pulsante `...`{.action} a destra dell’account da modificare e poi clicca su `Aggiorna`{.action}.<br><br><br>
->>![email](images/email-quota-more03.png){.thumbnail}<br>
+>> Oferta Zimbra Starter zawiera 15 GB przestrzeni dyskowej. Jeśli chcesz zwiększyć pojemność, możesz przejść na ofertę Zimbra Pro.
+>> W zakładce `Konto e-mail`{.action} Twojej platformy kliknij przycisk `...`{.action} po prawej stronie konta, które chcesz zmienić, a następnie kliknij `Uaktualnij`{.action}.<br><br>
+>> ![email](images/email-quota-more03.png){.thumbnail}<br>
 
 ## Sprawdź również
 

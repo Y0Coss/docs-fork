@@ -89,12 +89,12 @@ Para se ligar ao webmail, aceda à página [Webmail](/links/web/email)e introduz
 >>
 > **Roundcube**: **MX Plan**
 >>
->> Quando está conectado ao webmail Roundcube, o limite é visível na parte inferior esquerda, materializado por uma câmara e a percentagem consumida.<br><br>
+>> Quando estiver conectado ao webmail Roundcube, o limite será visível na parte inferior esquerda, materializado por um diagrama circular e a percentagem consumida.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Quando estiver ligado ao webmail Zimbra, a quota é visível na parte inferior esquerda, materializada por um segmento e a percentagem consumida.<br><br>
+>> Quando estiver ligado ao webmail Zimbra, clique na roda dentada `&#9881;` no canto superior direito da sua interface e, a seguir, clique em `Configurações`{.action}. No separador `Geral`{.action}, o limite utilizado é visível sob a menção «Espaço de armazenamento».<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 

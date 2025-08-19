@@ -79,7 +79,7 @@ In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} 
 
 #### From webmail <a name="quotawebmail"></a>
 
-To log in to webmail, go to the page [Webmail](/links/web/email) and enter the login information for your email account. Select the webmail client of your solution below:
+Go to the page [Webmail](/links/web/email) and enter the login information for your email account. Select the webmail client of your solution below:
 
 > [!tabs]
 > **OWA**: **MX Plan** / **Email Pro** / **Exchange**
@@ -89,13 +89,13 @@ To log in to webmail, go to the page [Webmail](/links/web/email) and enter the l
 >>
 > **Roundcube**: **MX Plan**
 >>
->> When you are logged in to Roundcube webmail, the quota is visible in the lower left-hand corner, displayed as a pie chart with the percentage used.<br><br>
+>> When you are logged in to the Roundcube webmail platform, the quota is visible on the lower left-hand side, represented by a circular diagram and the percentage used.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> When you are logged in to Zimbra webmail, the quota is visible on the lower left, represented by a pie chart and the percentage consumed.<br><br>
->>![email](images/email-quota-webmail03.png){.thumbnail}<br>
+>> When you are logged in to the Zimbra webmail, click on the cogwheel `&#9881;` in the top right-hand corner of your interface, then click `Settings`{.action}. In the `General`{.action} tab, you can view the quota used under the heading “Storage space”.<br><br>
+>>![email](images/email-quota-webmail03.png){.thumbnail}<br>When you are logged in to the Zimbra webmail, click on the cogwheel `&#9881;' in the top right-hand corner of your interface, then click `Settings`{.action}. In the `General`{.action} tab, you can view the quota used under the heading “Storage space”.
 >>
 
 ### 2. **Optimise** your email account <a name="optimise"></a>
@@ -141,7 +141,7 @@ You can increase the storage capacity of your email account, if it has not reach
 >>
 > **Zimbra**
 >>
->> The Zimbra Starter solution includes 15 GB of storage. If you would like to increase capacity, you can switch to the Zimbra Pro solution.
+>> The Zimbra Starter solution includes 15 GB of storage. If you would like to increase its capacity, you can switch to the Zimbra Pro solution.
 >> In the `Email account`{.action} tab of your platform, click the `...`{.action} button to the right of the account you want to modify, then click `Upgrade`{.action}.
 >> If you have a Zimbra Pro or Business solution, you already have the maximum capacity of 50 GB. You will need to free up space on your Zimbra account by deleting unnecessary items, or [archive your emails](#archiveorswitch) on your computer locally.
 
