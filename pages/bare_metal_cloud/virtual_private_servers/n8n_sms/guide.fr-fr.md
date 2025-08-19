@@ -20,6 +20,8 @@ Ce guide vous explique comment intégrer l'API SMS d'OVHcloud dans **n8n**, afin
 
 ## En pratique
 
+Si vous n'avez pas encore installé N8N sur votre VPS, suivez les instructions de notre guide [Installer n8n sur un VPS OVHcloud]().
+
 ### Étape 1 – Générer les identifiants API OVHcloud
 
 Avant de pouvoir envoyer des SMS via l’API OVHcloud, récupérez les trois identifiants suivants :
