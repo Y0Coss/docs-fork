@@ -1,7 +1,7 @@
 ---
 title: Gestionar el espacio de almacenamiento de una cuenta de correo
 excerpt: "Cómo gestionar y optimizar el espacio de almacenamiento de una dirección de correo"
-updated: 2025-08-12
+updated: 2025-08-19
 ---
 
 ## Objetivo

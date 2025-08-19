@@ -1,7 +1,7 @@
 ---
 title: "Managing the storage space for an email account"
 excerpt: "Find out how to manage and optimise an email account storage space"
-updated: 2025-08-12
+updated: 2025-08-19
 ---
 
 ## Objective
@@ -89,7 +89,7 @@ Go to the page [Webmail](/links/web/email) and enter the login information for y
 >>
 > **Roundcube**: **MX Plan**
 >>
->> When you are logged in to the Roundcube webmail platform, the quota is visible on the lower left-hand side, represented by a circular diagram and the percentage used.<br><br>
+>> When you are logged in to the Roundcube webmail, the quota is visible on the lower left-hand side, represented by a circular diagram and the percentage used.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**

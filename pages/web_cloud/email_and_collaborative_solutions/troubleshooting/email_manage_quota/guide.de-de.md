@@ -1,7 +1,7 @@
 ---
 title: "Speicherplatz eines E-Mail-Accounts verwalten"
 excerpt: "Erfahren Sie hier, wie Sie den Speicherplatz von E-Mail-Accounts verwalten und optimieren"
-updated: 2025-08-12
+updated: 2025-08-19
 ---
 
 ## Ziel
@@ -94,7 +94,7 @@ Um sich im Webmail einzuloggen, gehen Sie auf die Seite [Webmail](/links/web/ema
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Wenn Sie im Zimbra Webmail eingeloggt sind, klicken Sie auf das Zahnrad `&#9881;` oben rechts in Ihrem Interface und dann auf `Einstellungen`{.action}. Im Tab `Allgemein`{.action} wird das verwendete Quota unter dem Vermerk „Stauraum“ angezeigt.<br><br>
+>> Wenn Sie im Zimbra Webmail eingeloggt sind, klicken Sie auf das Zahnrad `&#9881;` oben rechts in Ihrem Interface und dann auf `Einstellungen`{.action}. Im Tab `Allgemein`{.action} wird das verwendete Quota unter dem Vermerk "Stauraum" angezeigt.<br><br>
 >> ![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 

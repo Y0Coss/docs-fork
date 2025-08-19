@@ -1,7 +1,7 @@
 ---
 title: Gestire lo spazio di storage di un account email
 excerpt: Come gestire e ottimizzare lo spazio di storage di un indirizzo email
-updated: 2025-08-12
+updated: 2025-08-19
 ---
 
 ## Obiettivo

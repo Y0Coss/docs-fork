@@ -1,7 +1,7 @@
 ---
 title: "Zarządzanie przestrzenią dyskową konta e-mail"
 excerpt: "Dowiedz się, jak zarządzać przestrzenią dyskową konta e-mail i jej optymalizować"
-updated: 2025-08-12
+updated: 2025-08-19
 ---
 
 ## Wprowadzenie
@@ -94,7 +94,7 @@ Aby zalogować się do interfejsu Webmail, przejdź do strony [Webmail](/links/w
 >>
 > **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Lorsque vous êtes connecté au webmail Zimbra, cliquez sur la roue crantée `&#9881;` en haut à droite de votre interface, puis cliquez ensuite sur `Paramètres`{.action}. Depuis l'onglet `Général`{.action} le quota utilisé est visible sous la mention «Espace de rangement».<br><br>
+>> Po zalogowaniu do Zimbra Webmail kliknij na symbol koła zębatego`&#9881;` w prawym górnym rogu interfejsu, a następnie kliknij `Parametry`{.action}. W zakładce `Ogólne`{.action} wyświetla się wykorzystany limit pod napisem "Przestrzeń dyskowa".<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 

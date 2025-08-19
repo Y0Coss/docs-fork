@@ -1,7 +1,7 @@
 ---
 title: "Gérer l'espace de stockage d'un compte e-mail"
 excerpt: "Découvrez comment gérer et optimiser l'espace de stockage d'une adresse e-mail "
-updated: 2025-08-12
+updated: 2025-08-19
 ---
 
 ## Objectif
@@ -94,7 +94,7 @@ Pour vous connecter au webmail, rendez-vous sur la page [Webmail](/links/web/ema
 >>
 > **Zimbra** : **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Lorsque vous êtes connecté au webmail Zimbra, cliquez sur la roue crantée `&#9881;` en haut à droite de votre interface, puis cliquez ensuite sur `Paramètres`{.action}. Depuis l'onglet `Général`{.action} le quota utilisé est visible sous la mention «Espace de rangement».<br><br>
+>> Lorsque vous êtes connecté au webmail Zimbra, cliquez sur la roue crantée `&#9881;` en haut à droite de votre interface, puis cliquez sur `Paramètres`{.action}. Dans l'onglet `Général`{.action}, le quota utilisé est visible sous la mention « Espace de rangement ».<br><br>
 >>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
