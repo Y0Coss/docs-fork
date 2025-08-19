@@ -74,7 +74,7 @@ W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.acti
 > **Zimbra**
 >>
 >> Kliknij na `Zimbra Mail`{.action}. Przejdź do zakładki `Konto e-mail`{.action}. W oknie, które się wyświetla, wyświetlają się istniejące konta e-mail. W kolumnie `Quota` możesz sprawdzić bieżące zużycie przestrzeni dyskowej Twojego konta e-mail.<br><br>
->> ![email](images/email-quota-quotacontrolPanel04.png){.thumbnail}<br>
+>> ![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
 >>
 
 #### Z poziomu interfejsu Webmail <a name="quotawebmail"></a>
