@@ -79,6 +79,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Gérer et monitorer la capacité des serveurs physiques en support des services Public Cloud |  | RA |
 | Suivre les performances des clusters de Block Storage | I | RA |
 | Conserver les logs du control plane qui supervise l'instance (API, hyperviseur) |  | RA |
+| Conserver les logs du système d’information hébergé sur l'instance | RA | |
 | Monitorer et surveiller le bon fonctionnement des dispositifs physiques (utilités) en support du stockage | I | RA |
 | Créer, modifier, contrôler, restaurer, supprimer les jobs de backups | RA |  |
 | Créer les jobs des backups suite à la souscription à l'option Automated backups | AI | R |

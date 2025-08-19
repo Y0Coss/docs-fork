@@ -79,6 +79,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Manage and monitor physical servers capacity in support of Public Cloud services |  | RA |
 | Monitor Block Storage clusters' performances | I | RA |
 | Retain logs of control plane for Instances monitoring (API, hypervisor) | | RA |
+| Retain logs of Information System hosted on Instances | RA | |
 | Monitor the proper functioning of physical devices (utilities) in support of the service | I | RA |
 | Create, modify, control, restore, delete jobs of backups | RA | |
 | Create jobs of backups following subscription to Automated backups option | AI | R |
