@@ -39,7 +39,7 @@ La pagina **Sito non installato** viene visualizzata per due motivi:
 
 Gli step successivi ti permetteranno di correggere l’errore `Sito non installato` in entrambi i casi.
 
-### Step 1 - Verifica la dichiarazione del dominio o sottodominio sull’hosting Web <a name="check-multisites"></a>
+### 1 - Verifica la dichiarazione del dominio o sottodominio sull’hosting Web <a name="check-multisites"></a>
 
 Nel tuo [Spazio Cliente OVHcloud](/links/manager), vai alla sezione `Web Cloud`{.action} in alto nella pagina, poi clicca sulla scheda `Hosting`{.action} nella colonna di sinistra.
 
@@ -51,7 +51,7 @@ Seleziona l’hosting Web nella lista e clicca sulla scheda `Multisito`{.action}
 |Il dominio o sottodominio associato al sito Web non compare nella tabella "Multisito".|Aggiungere il dominio o il sottodominio nella sezione `Multisito`{.action} seguendo la sezione dedicata della guida "[Condivisione dell’hosting tra più siti - Aggiungere un dominio o un sottodominio](/pages/web_cloud/web_hosting/multisites_configure_multisite)".|
 |Il dominio o sottodominio è stato rimosso dalla tabella "Multisito" senza alcuna azione da parte tua.|Il dominio o la zona DNS possono essere gestiti da un altro account. Aggiungere un dominio/sottodominio nella sezione `Multisito`{.action} seguendo la sezione dedicata della guida "[Condivisione dell’hosting tra più siti - Aggiungere un dominio esterno](/pages/web_cloud/web_hosting/multisites_configure_multisite)".|
 
-### Step 2 - Verifica il puntamento IP nella zona DNS attiva del tuo dominio <a name="check-dns-domain"></a>
+### 2 - Verifica il puntamento IP nella zona DNS attiva del tuo dominio <a name="check-dns-domain"></a>
 
 Per prima cosa è necessario verificare che il dominio o sottodominio punti verso l’indirizzo IP dell’hosting Web, dalla sua zona DNS attiva.
 
