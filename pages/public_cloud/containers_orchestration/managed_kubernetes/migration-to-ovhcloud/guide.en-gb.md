@@ -28,18 +28,18 @@ To successfully migrate your Kubernetes cluster to OVHcloud, ensure you have the
 
 The following diagram illustrates the complete migration journey from your existing Kubernetes environment to OVHcloud. This visual roadmap provides a clear understanding of each phase involved in transferring your cluster.
 
-![Migration of a Kubernetes to OVHcloud](images/migration_schema.png){.thumbnail}
+![Migration of a Kubernetes to OVHcloud](images/migration-schema.png){.thumbnail}
 
 Let's now dive into the detailed steps for migrating your Kubernetes cluster to OVHcloud:
 
 1. **Install and Configure Velero with OVHcloud S3**
 
-Ensure the Velero Helm chart is installed on your Kubernetes cluster and configured to use the OVHcloud S3-compatible storage.
+    Ensure the Velero Helm chart is installed on your Kubernetes cluster and configured to use the OVHcloud S3-compatible storage.
 
 2. **Back up your cluster using Velero**
 
-    - Refer to the [official Velero documentation on backup reference](https://velero.io/docs/v1.16/backup-reference/) to back up your Kubernetes manifests and Persistent Volume Claims (PVCs).
-    - Ensure that all backups are successfully stored in your configured OVHcloud Object Storage.
+    Refer to the [official Velero documentation on backup reference](https://velero.io/docs/v1.16/backup-reference/) to back up your Kubernetes manifests and Persistent Volume Claims (PVCs).
+    Ensure that all backups are successfully stored in your configured OVHcloud Object Storage.
 
 3. **Create your target Kubernetes cluster on OVHcloud**
 
@@ -75,15 +75,15 @@ Ensure the Velero Helm chart is installed on your Kubernetes cluster and configu
 
 8. **Seek Professional Services assistance (if needed)**
 
-If certain resources from your source cluster are particularly complex or require specialized knowledge for migration, the OVHcloud Professional Services team is available to provide expert assistance. You can find more information about their services [here](/links/professional-services).
+    If certain resources from your source cluster are particularly complex or require specialized knowledge for migration, the OVHcloud Professional Services team is available to provide expert assistance. You can find more information about their services [here](/links/professional-services).
 
 9. **Set up Saving Plans (if needed)**
 
-Explore the option of [OVHcloud Saving Plans](/pages/public_cloud/public_cloud_cross_functional/savings_plans) to optimize your cloud costs. Learn more about the available Saving Plans to determine if they align with your financial strategy.
+    Explore the option of [OVHcloud Saving Plans](/pages/public_cloud/public_cloud_cross_functional/savings_plans) to optimize your cloud costs. Learn more about the available Saving Plans to determine if they align with your financial strategy.
 
 10. **Decommission your source cluster**
 
-After fully confirming that your applications are running reliably and without issues on the new OVHcloud Kubernetes cluster, you can safely decommission your source cluster.
+    After fully confirming that your applications are running reliably and without issues on the new OVHcloud Kubernetes cluster, you can safely decommission your source cluster.
 
 ## Go further
 
