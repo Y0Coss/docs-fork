@@ -155,11 +155,14 @@ public-cloud-data-analytics-grafana: Dashboards
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutoriels
 public-cloud-data-analytics-kafka: Kafka
-public-cloud-data-analytics-kafka-guides: Kafka - Guides
+public-cloud-data-analytics-kafka-advanced-guides: Kafka - Advanced guides
 public-cloud-data-analytics-kafka-connect: Kafka Connect
 public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
+public-cloud-data-analytics-kafka-getting-started: Kafka - Premiers pas
+public-cloud-data-analytics-kafka-guides: Kafka - Guides utilisateur
 public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
 public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
+public-cloud-data-analytics-kafka-tutorials: Kafka - Tutoriels
 public-cloud-databases-cassandra: Cassandra
 public-cloud-databases-cassandra-guides: Cassandra - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
