@@ -71,6 +71,11 @@ Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.a
 >> Clique em `Microsoft`{.action} / `Exchange`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Na coluna `Tamanho`, pode ver o consumo em curso do armazenamento do seu endereço de e-mail.<br><br>
 >>![email](images/email-quota-quotacontrolpanel03.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>>
+>> Clique em `Zimbra Mail`{.action}. Aceda ao separador `Conta de e-mail`{.action}. A janela que aparece apresenta as contas de e-mail existentes. Pode verificar, na coluna "Quota", o consumo em curso de armazenamento do seu endereço de e-mail.<br><br>
+>>![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
+>>
 
 #### A partir do webmail <a name="quotawebmail"></a>
 
@@ -86,6 +91,11 @@ Para se ligar ao webmail, aceda à página [Webmail](/links/web/email)e introduz
 >>
 >> Quando está conectado ao webmail Roundcube, o limite é visível na parte inferior esquerda, materializado por uma câmara e a percentagem consumida.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
+>>
+> **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
+>>
+>> Quando estiver ligado ao webmail Zimbra, a quota é visível na parte inferior esquerda, materializada por um segmento e a percentagem consumida.<br><br>
+>>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
 ### 2- **Otimizar** a sua conta de e-mail <a name="optimise"></a>
@@ -129,6 +139,11 @@ Antes de efetuar qualquer operação na sua conta de e-mail, é necessário toma
 >>
 >> Se a sua conta Exchange já preencheu os seus 300GB de armazenamento numa oferta **Hosted** ou **Provider**, deverá libertar espaço na sua conta Exchange eliminando elementos supérfluos ou [arquivar os seus e-mails](#archiveorswitch) no seu computador local. Esta situação é igualmente válida para as contas Exchange de 50GB presentes numa oferta **Private**.
 >>
+> **Zimbra**
+>>
+>> A oferta Zimbra Starter inclui 15 GB de armazenamento. Se pretender aumentar a capacidade, pode passar para a oferta Zimbra Pro.
+>> No separador `Conta de e-mail`{.action} da sua plataforma, clique no botão `...`{.action} à direita da conta a modificar e, a seguir, clique em `Atualizar`{.action}.
+>> Se tem uma oferta Zimbra Pro ou Business, já dispõe do máximo da sua capacidade de 50GB. Deverá libertar espaço na sua conta Zimbra eliminando elementos supérfluos ou [arquivar os seus e-mails](#archiveorswitch) no seu computador localmente.
 
 ### 3- **Arquivar** ou **mudar de oferta de e-mail** <a name="archiveorswitch"></a>
 
@@ -143,6 +158,7 @@ Quando configurou o seu endereço de e-mail no seu cliente de e-mail em IMAP, **
 ![email](images/email-quota-step03-archive.png){.thumbnail}
 
 Se desejar, pode libertar o espaço de armazenamento da sua conta de e-mail armazenando os seus e-mails diretamente no seu computador. Para isso, terá de recorrer a um software de mensagens instalado no seu computador.
+
 O papel do software de e-mail será converter os seus e-mails em ficheiros, de modo a poder armazená-los no seu computador. No entanto, é necessário configurar a função de arquivo do seu software de e-mail. Os e-mails serão colocados numa pasta "local" e não diretamente no servidor da sua conta de e-mail.
 
 Encontrará abaixo uma lista não exaustiva dos guias de configuração para os clientes de e-mail que utilizam:
@@ -154,7 +170,7 @@ Encontrará abaixo uma lista não exaustiva dos guias de configuração para os 
 > [!tabs]
 > **MX Plan**
 >>
->> Configuração de uma conta MX plan em **Windows*:<br><br>
+>> Configuração de uma conta MX plan em **Windows**:<br><br>
 >> - [Endereço do Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (English) (incluído com Windows)<br>
 >> - [Outlook para MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows) (gratuito)<br><br>
@@ -165,7 +181,7 @@ Encontrará abaixo uma lista não exaustiva dos guias de configuração para os 
 >>
 > **E-mail Pro**
 >>
->> Configuração de uma conta E-mail Pro em **Windows*:<br><br>
+>> Configuração de uma conta E-mail Pro em **Windows**:<br><br>
 >> - [Endereço do Windows 10](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) (English) (incluído com Windows)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_thunderbird) (gratuito)<br><br>
@@ -176,7 +192,7 @@ Encontrará abaixo uma lista não exaustiva dos guias de configuração para os 
 >>
 > **Exchange**
 >>
->> Configuração de uma conta Exchange em **Windows*:<br><br>
+>> Configuração de uma conta Exchange em **Windows**:<br><br>
 >> - [Endereço do Windows 10](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10) (English) (incluído com Windows)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird) (gratuito)<br><br>
@@ -184,6 +200,14 @@ Encontrará abaixo uma lista não exaustiva dos guias de configuração para os 
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos) (incluído com macOS)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird_mac) (gratuito)<br>
+>>
+> **Zimbra Pro**
+>>
+>> Configurar uma conta Zimbra em **Windows**:<br><br>
+>> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_windows)<br>
+>> Configurar uma conta Zimbra em **macOS**:<br><br>
+>> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_macos)<br>
+>> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_macos)<br>
 >>
 
 Depois de instalar o seu software de correio, siga as instruções abaixo para preparar a pasta do arquivo no seu software de correio eletrónico.
@@ -225,6 +249,10 @@ Selecione, no menu abaixo, a oferta atual da sua conta de e-mail:
 >> No separador `Contas de e-mail`{.action} da sua plataforma Exchange, clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Aumentar a capacidade para 300GB`{.action}.<br><br>
 >> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>> A oferta Zimbra Starter inclui 15 GB de armazenamento. Se pretender aumentar a capacidade, pode passar para a oferta Zimbra Pro.
+>> No separador `Conta de e-mail`{.action} da sua plataforma, clique no botão `...`{.action} à direita da conta a modificar e, a seguir, clique em `Atualizar`{.action}.<br><br>
+>>![email](images/email-quota-more03.png){.thumbnail}<br>
 
 ## Saiba mais
 

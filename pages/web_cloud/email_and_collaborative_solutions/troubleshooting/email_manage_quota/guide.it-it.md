@@ -71,6 +71,11 @@ Dallo [Spazio Cliente OVHcloud](/links/manager), seleziona la sezione `Web Cloud
 >> Clicca su `Microsoft`{.action} / `Exchange`{.action} e poi seleziona il nome della piattaforma. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. Nella colonna `Dimensione` del tuo account puoi visualizzare i consumi in corso di storage del tuo indirizzo email.<br><br>
 >>![email](images/email-quota-quotacontrolpanel03.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>>
+>> Clicca su `Zimbra Mail`{.action}. Seleziona la scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. Nella colonna `Quota` è possibile visualizzare il consumo corrente dello storage del tuo indirizzo email.<br><br>
+>>![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
+>>
 
 #### Dalla Webmail <a name="quotawebmail"></a>
 
@@ -86,6 +91,11 @@ Accedi alla Webmail, clicca sulla pagina [Webmail](/links/web/email)e inserisci 
 >>
 >> Quando sei connesso alla Webmail Roundcube, la quota è visibile nella parte inferiore sinistra, materializzata da un camembert e la percentuale consumata.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
+>>
+> **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
+>>
+>> Cuando se conecta al webmail Zimbra, el límite se muestra en la parte inferior izquierda, representado por un camembert y el porcentaje consumido.<br><br>
+>>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
 ### 2- **Ottimizza** il tuo account email <a name="optimise"></a>
@@ -129,6 +139,11 @@ Se l'account email non ha raggiunto la sua capacità massima, è possibile aumen
 >>
 >> Se il tuo account Exchange ha già riempito i 300 GB di spazio su un'offerta **Hosted** o **Provider**, devi liberare spazio sul tuo account Exchange eliminando elementi superflui o [archiviare le tue email](#archiveorswitch) sul tuo computer in locale. Questa situazione è valida anche per gli account Exchange da 50 GB presenti su un'offerta **Private**.
 >>
+> **Zimbra**
+>>
+>> L'offerta Zimbra Starter include 15 GB di storage. Per aumentare la capacità è possibile passare all’offerta Zimbra Pro.
+>> Dalla scheda `Account email`{.action} della tua piattaforma, clicca sul pulsante `...`{.action} a destra dell’account da modificare e poi clicca su `Aggiorna`{.action}.
+>> Se avete un'offerta Zimbra Pro o Business, avete già a disposizione il massimo della vostra capacità di 50 GB. È necessario liberare spazio sul tuo account Zimbra eliminando elementi superflui o [archiviare le tue email](#archiveorswitch) sul tuo computer locale.
 
 ### 3- **Archivia** o **modifica offerta email** <a name="archiveorswitch"></a>
 
@@ -143,6 +158,7 @@ Quando hai configurato l'account email sul tuo client di posta in IMAP, **di def
 ![email](images/email-quota-step03-archive.png){.thumbnail}
 
 Se vuoi, liberare lo spazio di storage del tuo account email salvando le tue email direttamente sul tuo computer. Per farlo, sarà necessario utilizzare un client di posta installato sul tuo computer.
+
 Il client di posta convertirà le tue email in file, per poterle salvare sul tuo computer. ma è necessario configurare la funzione "archivio" del tuo client di posta. Le email saranno inserite nella cartella "locale" e non direttamente sul server del tuo account email.
 
 Di seguito trovi una lista non esaustiva delle guide di configurazione per i client di posta che utilizzano:
@@ -185,6 +201,14 @@ Di seguito trovi una lista non esaustiva delle guide di configurazione per i cli
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird_mac) (gratuito)<br>
 >>
+> **Zimbra Pro**
+>>
+>> Configurazione di un account Zimbra su **Windows**:<br><br>
+>> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_windows)<br>
+>> Configurazione di un account Zimbra su **macOS**:<br><br>
+>> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_macos)<br>
+>> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_macos)<br>
+>>
 
 Una volta installato il client di posta, segui le istruzioni qui sotto per preparare la cartella di archiviazione sul tuo client di posta.
 
@@ -203,7 +227,7 @@ Una volta installato il client di posta, segui le istruzioni qui sotto per prepa
 > **Thunderbird**
 >>
 >> Tramite thunderbird da Windows, macOS o Linux, potete spostare le vostre email in una cartella del lato sinistro. Per maggiori informazioni, consulta la documentazione di Mozilla:<br><br>
->> - [Creare o eliminare caselle di posta in Mail su Mac](https://support.mozilla.org/it/kb/archiviazione-messaggi}<br>
+>> - [Creare o eliminare caselle di posta in Mail su Mac](https://support.mozilla.org/it/kb/archiviazione-messaggi)<br>
 >>
 
 #### Cambia offerta per aumentare la capacità <a name="switchingoffer"></a>
@@ -225,6 +249,10 @@ Seleziona l'offerta corrente del tuo account email nel menu qui sotto:
 >> Nella scheda `Account email`{.action} della piattaforma Exchange, clicca sul pulsante `...`{.action}a destra dell'account da modificare e poi su `Aumenta la capacità a 300 GB`{.action}.<br><br>
 >> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>> L'offerta Zimbra Starter include 15 GB di storage. Per aumentare la capacità è possibile passare all’offerta Zimbra Pro.
+>> Dalla scheda `Account email`{.action} della piattaforma, clicca sul pulsante `...`{.action} a destra dell’account da modificare e poi clicca su `Aggiorna`{.action}.<br><br><br>
+>>![email](images/email-quota-more03.png){.thumbnail}<br>
 
 ## Per saperne di più
 

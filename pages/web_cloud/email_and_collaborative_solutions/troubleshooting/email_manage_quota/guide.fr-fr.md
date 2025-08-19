@@ -74,7 +74,7 @@ Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la part
 > **Zimbra**
 >>
 >> Cliquez sur `Zimbra Mail`{.action}. Positionnez-vous sur l'onglet `Compte e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Vous pouvez observer, dans la colonne `Quota`, la consommation en cours du stockage de votre adresse e-mail.<br><br>
->> ![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
+>>![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
 >>
 
 #### Depuis le webmail <a name="quotawebmail"></a>
@@ -95,7 +95,7 @@ Pour vous connecter au webmail, rendez-vous sur la page [Webmail](/links/web/ema
 > **Zimbra** : **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
 >> Lorsque vous êtes connecté au webmail Zimbra, le quota est visible dans la partie inférieure gauche, matérialisé par un camembert et le pourcentage consommé.<br><br>
->> ![email](images/email-quota-webmail03.png){.thumbnail}<br>
+>>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
 ### 2- **Optimiser** son compte e-mail <a name="optimise"></a>

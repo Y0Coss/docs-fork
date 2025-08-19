@@ -4,7 +4,6 @@ excerpt: "Dowiedz się, jak zarządzać przestrzenią dyskową konta e-mail i je
 updated: 2025-08-12
 ---
 
-
 ## Wprowadzenie
 
 Każde konto e-mail OVHcloud dysponuje dedykowaną przestrzenią dyskową. Zarządzanie przestrzenią dyskową pozwala uniknąć przeciążenia przestrzeni dyskowej, nazywanej również "overquota". Domyślnie wiadomości, które odbierasz i wysyłasz są przechowywane na serwerze Twojego konta e-mail. Dzięki programowi pocztowemu (Outlook, Mail macOS, Thunderbird, itp.) możesz również lokalnie przechowywać wiadomości e-mail na komputerze.
@@ -72,6 +71,11 @@ W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.acti
 >> Kliknij `Microsoft`{.action} / `Exchange`{.action}, następnie wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. W kolumnie `Rozmiar` możesz sprawdzić zużycie przestrzeni dyskowej Twojego konta e-mail.<br><br>
 >>![email](images/email-quota-quotacontrolpanel03.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>>
+>> Kliknij na `Zimbra Mail`{.action}. Przejdź do zakładki `Konto e-mail`{.action}. W oknie, które się wyświetla, wyświetlają się istniejące konta e-mail. W kolumnie `Quota` możesz sprawdzić bieżące zużycie przestrzeni dyskowej Twojego konta e-mail.<br><br>
+>> ![email](images/email-quota-quotacontrolPanel04.png){.thumbnail}<br>
+>>
 
 #### Z poziomu interfejsu Webmail <a name="quotawebmail"></a>
 
@@ -87,6 +91,11 @@ Aby zalogować się do interfejsu Webmail, przejdź do strony [Webmail](/links/w
 >>
 >> Po zalogowaniu się do interfejsu Webmail Roundcube limit jest widoczny w dolnej części lewej strony, potwierdzony wykresem oraz wykorzystany procent.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
+>>
+> **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
+>>
+>> Po zalogowaniu do Zimbra Webmail, limit jest widoczny w lewej dolnej części, zmaterializowany przez wykres kołowy i wykorzystany procent.<br><br>
+>>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
 ### 2- **Optymalizacja** konta e-mail <a name="optimise"></a>
@@ -130,6 +139,11 @@ Zwiększ rozmiar przestrzeni dyskowej Twojego konta e-mail, jeśli konto nie osi
 >>
 >> Jeśli Twoje konto Exchange wypełniło już 300 GB przestrzeni dyskowej w ofercie **Hosted** lub **Provider**, musisz zwolnić miejsce na koncie Exchange usuwając zbędne elementy lub [archiwizując wiadomości e-mail](#archiveorswitch) lokalnie. Dotyczy to również kont Exchange o pojemności 50 GB zainstalowanych w ofercie **Private**.
 >>
+> **Zimbra**
+>>
+>> Oferta Zimbra Starter zawiera 15 GB przestrzeni dyskowej. Jeśli chcesz zwiększyć pojemność, możesz przejść na ofertę Zimbra Pro.
+>> W zakładce `Konto e-mail`{.action} Twojej platformy kliknij przycisk`...`{.action} po prawej stronie konta, które chcesz zmienić, a następnie kliknij `Uaktualnij`{.action}.
+>> Jeśli posiadasz ofertę Zimbra Pro lub Business, dysponujesz już maksimum pojemności 50 GB. Musisz zwolnić miejsce na swoim koncie Zimbra usuwając niepotrzebne elementy lub [archiwizuj e-maile] (#archiveorswitch) lokalnie na swoim komputerze.
 
 ### 3- **Archiwum** lub **zmiana oferty e-mail** <a name="archiveorswitch"></a>
 
@@ -144,6 +158,7 @@ Kiedy skonfigurowałeś Twoje konto e-mail w programie pocztowym IMAP, **domyśl
 ![email](images/email-quota-step03-archive.png){.thumbnail}
 
 Jeśli chcesz, możesz zwolnić przestrzeń dyskową Twojego konta e-mail, zapisując e-maile bezpośrednio na Twoim komputerze. W tym celu konieczne będzie skorzystanie z programu pocztowego zainstalowanego na Twoim komputerze.
+
 Do zadań programu pocztowego należy konwersja e-maili na pliki, które będą mogły być przechowywane na Twoim komputerze. Konieczne jest jednak skonfigurowanie funkcji "archiwum" Twojego programu pocztowego. E-maile będą wówczas przechowywane w folderze "lokalnym", a nie bezpośrednio na serwerze Twojego konta e-mail.
 
 Poniżej znajduje się niewyczerpująca lista przewodników konfiguracyjnych dla klientów poczty elektronicznej używających:
@@ -155,7 +170,7 @@ Poniżej znajduje się niewyczerpująca lista przewodników konfiguracyjnych dla
 > [!tabs]
 > **MX Plan i Zimbra Starter**
 >>
->> Konfiguracja konta MX Plan na **Windows* :<br><br>
+>> Konfiguracja konta MX Plan na **Windows** :<br><br>
 >> - [Poczta na urządzeniu z systemem Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (zawarte w systemie Windows)<br>
 >> - [Outlook for MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows) (za darmo)<br><br>>
@@ -166,7 +181,7 @@ Poniżej znajduje się niewyczerpująca lista przewodników konfiguracyjnych dla
 >>
 > **E-mail Pro**
 >>
->> Konfiguracja konta E-mail Pro na **Windows* :<br><br>
+>> Konfiguracja konta E-mail Pro na **Windows** :<br><br>
 >> - [Poczta na urządzeniu z systemem Windows 10](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) (zawarte w systemie Windows)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_thunderbird) (za darmo)<br><br>>
@@ -177,7 +192,7 @@ Poniżej znajduje się niewyczerpująca lista przewodników konfiguracyjnych dla
 >>
 > **Exchange**
 >>
->> Konfiguracja konta Exchange na **Windows* :<br><br>
+>> Konfiguracja konta Exchange na **Windows** :<br><br>
 >> - [Poczta na urządzeniu z systemem Windows 10](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10) (zawarte w systemie Windows)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird) (za darmo)<br><br>>
@@ -185,6 +200,14 @@ Poniżej znajduje się niewyczerpująca lista przewodników konfiguracyjnych dla
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos) (zawarte w macOS)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird_mac) (za darmo)<br>
+>>
+> **Zimbra Pro**
+>>
+>> Konfiguracja konta Zimbra w systemie **Windows** :<br><br>
+>> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_windows)<br>
+>> Konfiguracja konta Zimbra w systemie **macOS** :<br><br>
+>> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_macos)<br>
+>> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_macos)<br>
 >>
 
 Po zainstalowaniu programu pocztowego postępuj zgodnie z instrukcjami podanymi poniżej, aby przygotować folder archiwum w programie pocztowym.
@@ -226,6 +249,10 @@ Z poniższego menu wybierz aktualną ofertę Twojego konta e-mail:
 >> Z karty `Konta e-mail`{.action} Twojej platformy Exchange kliknij przycisk <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie konta, które chcesz zmienić, a następnie kliknij `Zwiększ pojemność do 300 GB`{.action}.<br>>
 >> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>> L'offerta Zimbra Starter include 15 GB di storage. Per aumentare la capacità è possibile passare all’offerta Zimbra Pro.
+>> Dalla scheda `Account email`{.action} della piattaforma, clicca sul pulsante `...`{.action} a destra dell’account da modificare e poi clicca su `Aggiorna`{.action}.<br><br><br>
+>>![email](images/email-quota-more03.png){.thumbnail}<br>
 
 ## Sprawdź również
 

@@ -33,7 +33,7 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 >
 > Depending on the activation date of your MX Plan solution, or on a recent migration, the email technology associated with it may differ. This version is characterized by its webmail interface. To identify it:
 >
-> - In the `General information`{.action} tab, note the technology used under the **** comment in the `Subscription`{.action} or `Connection`{.action} box.
+> - In the `General information`{.action} tab, note the technology used under the **Webmail** comment in the `Subscription`{.action} or `Connection`{.action} box.
 >
 > ![mx plan](images/technology-email.png){.thumbnail .w-500}
 
@@ -71,6 +71,11 @@ In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} 
 >> Click `Microsoft`{.action} / `Exchange`{.action}, then choose the name of the platform concerned. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts. In the `Size` column, you can see your email accounts’s current storage consumption.<br><br>
 >>![email](images/email-quota-quotacontrolpanel03.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>>
+>> Click `Zimbra Mail`{.action}. Go to the `Email account`{.action} tab. The window that opens will display the existing email accounts. In the `Quota` column, you can see how much storage your email address is currently consuming.<br><br>
+>>![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
+>>
 
 #### From webmail <a name="quotawebmail"></a>
 
@@ -86,6 +91,11 @@ To log in to webmail, go to the page [Webmail](/links/web/email) and enter the l
 >>
 >> When you are logged in to Roundcube webmail, the quota is visible in the lower left-hand corner, displayed as a pie chart with the percentage used.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
+>>
+> **Zimbra**: **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
+>>
+>> When you are logged in to Zimbra webmail, the quota is visible on the lower left, represented by a pie chart and the percentage consumed.<br><br>
+>>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
 ### 2. **Optimise** your email account <a name="optimise"></a>
@@ -129,6 +139,11 @@ You can increase the storage capacity of your email account, if it has not reach
 >>
 >> If your Exchange account has already filled up its 300 GB of storage on a **Hosted** or **Provider** offer, you will need to free up space on your Exchange account by deleting obsolete items or [archive your emails](#archiveorswitch) on your computer locally. This also applies to 50 GB Exchange accounts that are included in a **Private** solution.
 >>
+> **Zimbra**
+>>
+>> The Zimbra Starter solution includes 15 GB of storage. If you would like to increase capacity, you can switch to the Zimbra Pro solution.
+>> In the `Email account`{.action} tab of your platform, click the `...`{.action} button to the right of the account you want to modify, then click `Upgrade`{.action}.
+>> If you have a Zimbra Pro or Business solution, you already have the maximum capacity of 50 GB. You will need to free up space on your Zimbra account by deleting unnecessary items, or [archive your emails](#archiveorswitch) on your computer locally.
 
 ### 3. **Archive** emails or **change your email solution** <a name="archiveorswitch"></a>
 
@@ -186,6 +201,14 @@ Below is a nonexhaustive list of configuration guides for email clients on compu
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_thunderbird_mac) (free)<br>
 >>
+> **Zimbra Pro**
+>>
+>> Configuring a Zimbra account on **Windows**:<br><br>
+>> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_windows)<br>
+>> Configuring a Zimbra account on **macOS**:<br><br>
+>> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_macos)<br>
+>> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_outlook_macos)<br>
+>>
 
 Once you have installed your email software, follow the instructions below to prepare the archive folder.
 
@@ -214,7 +237,7 @@ Select the current solution for your email account from the menu below:
 > [!tabs]
 > **MX Plan**
 >>
->> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a [10 GB **Email Pro** solution](/links/web/email-pro) or a 50 GB [**Hosted Exchange** offer](/links/web/emails-hosted-exchange). To do this, please order the solution that suits your needs, and follow our guide on [Migrating an MX Plan email account to Email Pro or Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel). 
+>> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a [10 GB **Email Pro** solution](/links/web/email-pro) or a 50 GB [**Hosted Exchange** offer](/links/web/emails-hosted-exchange). To do this, please order the solution that suits your needs, and follow our guide on [Migrating an MX Plan email account to Email Pro or Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 >>
 > **Email Pro**
 >>
@@ -226,6 +249,10 @@ Select the current solution for your email account from the menu below:
 >> In the `Email accounts`{.action} tab on your Exchange platform, click the `...`{.action} button to the right of the account you want to modify, then click `Increase capacity to 300 GB`{.action}.<br><br>
 >> ![email](images/email-quota-more02.png){.thumbnail}<br>
 >>
+> **Zimbra**
+>> The Zimbra Starter solution includes 15 GB of storage. If you would like to increase capacity, you can switch to the Zimbra Pro solution.
+>> In the `Email account`{.action} tab of your platform, click the `...`{.action} button to the right of the account you want to modify, then click `Upgrade`{.action}.<br><br>
+>>![email](images/email-quota-more03.png){.thumbnail}<br>
 
 ## Go further
 

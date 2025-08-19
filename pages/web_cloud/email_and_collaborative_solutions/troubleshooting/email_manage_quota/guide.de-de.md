@@ -168,7 +168,7 @@ Nachfolgend finden Sie eine nicht erschöpfende Liste der Konfigurationsanleitun
 - EWS Protokoll für **Exchange** mit macOS Outlook 
 
 > [!tabs]
-> **MX Plan et Zimbra Starter**
+> **MX Plan und Zimbra Starter**
 >>
 >> Konfiguration eines MX Plan Accounts auf **Windows**:<br><br>
 >> - [Windows 10 Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (bei Windows inklusive)<br>
