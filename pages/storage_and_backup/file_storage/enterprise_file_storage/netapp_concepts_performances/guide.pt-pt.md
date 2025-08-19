@@ -76,4 +76,4 @@ Encontre mais informações sobre [a documentação do FIO](https://fio.readthed
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
-Fale com a nossa comunidade de utilizadores no Discord: <https://discord.gg/jW2FgBJ72h>
+Fale com a nossa comunidade de utilizadores no Discord: <https://discord.gg/ovhcloud>
