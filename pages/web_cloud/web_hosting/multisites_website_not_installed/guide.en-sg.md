@@ -152,7 +152,7 @@ To do this, click on the tabs below to display each of the **4** steps in succes
 >> > [!primary]
 >> >
 >> > If the `DNS Zone`{.action} tab of your domain name appears as follows:<br><br>![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}<br>
->>>
+>> >
 >> > This means that your domain name is not managed from the OVHcloud Control Panel.<br> Determine its registrar and the DNS servers associated with it using our [WHOIS](/links/web/domains-whois) tool.<br> Find and modify the DNS zone concerned accordingly by following the dedicated section of the guide “[Hosting multiple websites on your website - adding an external domain name](/pages/web_cloud/web_hosting/multisites_configure_multisite)”.
 >>
 >> Go to step 4 to view the various possible scenarios and the actions to be taken.
