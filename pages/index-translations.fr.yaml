@@ -112,7 +112,7 @@ public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
 public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
 public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
-public-cloud-containers-orchestration-managed-kubernetes-k8s-backup-and-restore: Backup and Restore
+public-cloud-containers-orchestration-managed-kubernetes-k8s-backup-and-restore: Backup, Restore and Migrate
 public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
 public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
 public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
