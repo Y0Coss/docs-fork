@@ -1,7 +1,7 @@
 ---
 title: "How to move a database service from a single AZ region to a 3-AZ region"
 excerpt: "Learn how to move your OVHcloud Public Cloud Database from a single AZ to a 3-AZ region and ensure high availability"
-updated: 2025-08-08
+updated: 2025-08-19
 ---
 
 ## Objective
@@ -21,9 +21,9 @@ Migrating your database service to a 3-AZ deployment significantly enhances its 
 
 For more detailed information on the deployment modes and their technical specifications, please refer to our dedicated guide: [Comparison of Public Cloud Databases Deployment Modes - Understanding 3-AZ / 1-AZ](/pages/public_cloud/public_cloud_databases/databases_18_regions_comparison).
 
-Here is a list of currently support 1-AZ and 3-AZ regions for database services:
+Here is a list of currently supported 1-AZ and 3-AZ regions for database services:
 
-![databases - datacentres](images/databases_datacentre.png)
+![databases - datacentres](images/databases_datacentre.png){.thumbnail}
 
 ## Reversibility
 
@@ -35,50 +35,51 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> To move a database service from a 1-AZ to a 3-AZ region, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your database service then click the `Backups`{.action} tab.
+>> To move a database service from a 1-AZ to a 3-AZ region, log in to the [OVHcloud Control Panel](/links/manager) and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your database service then click the `Backups`{.action} tab.
 >>
->> ![databases - select engines instances and go to the backups section](images/databases_select_cluster.png)
+>> ![databases - select engines instances and go to the backups section](images/databases_select_cluster.png){.thumbnail}
 >>
 >> Choose the backup from which you wish to fork, click on the `...`{.action} button and click on the `Duplicate (fork)`{.action} button.
 >>
->> ![databases - click on the duplicate button](images/databases_fork_backup.png)
+>> ![databases - click on the duplicate button](images/databases_fork_backup.png){.thumbnail}
 >>
 >> The page that appears allows you to configure your service and choose the destination region.<br>
 >> Select the Restore point named `Backup`{.action}.
 >>
->> ![databases fork - select backup for the restore point part](images/databases_fork_restore_point.png)
+>> ![databases fork - select backup for the restore point part](images/databases_fork_restore_point.png){.thumbnail}
 >>
 >> Select a `3-AZ region`{.action}.
 >>
->> ![databases fork - select your 3-AZ region](images/databases_fork_region.png)
+>> ![databases fork - select your 3-AZ region](images/databases_fork_region.png){.thumbnail}
 >>
->> Select your `plan`{.action} of the service.
+>> Select a service `plan`{.action}.
 >>
->> ![databases fork - select your plan](images/databases_fork_plan.png)
+>> ![databases fork - select your plan](images/databases_fork_plan.png){.thumbnail}
 >>
 >> Select the `instance`{.action} that will host the service.
 >>
->> ![databases fork - select the instance](images/databases_fork_instance.png)
+>> ![databases fork - select the instance](images/databases_fork_instance.png){.thumbnail}
 >>
->> Select the `storage`{.action} of the service.
+>> Select the `storage`{.action} capacity of the service.
 >>
->> ![databases fork - select the storage](images/databases_fork_storage.png)
+>> ![databases fork - select the storage](images/databases_fork_storage.png){.thumbnail}
 >>
 >> If needed, you can edit the connectivity settings, then verify the IP addresses to whitelist (the list is pre-filled by default with the origin service's configuration).
 >>
->> ![databases fork - select optional fields](images/databases_fork_options.png)
+>> ![databases fork - select optional fields](images/databases_fork_options.png){.thumbnail}
 >>
 >> When you have completed your configuration, review your order then click on the `Order`{.action} button. 
 >>
->> ![databases fork - review](images/databases_fork_summary.png)
+>> ![databases fork - review](images/databases_fork_summary.png){.thumbnail}
 >>
 > Via the OVHcloud API
+>>
 >> > [!primary]
 >> >
 >> > To interact with your Public Cloud Databases services via the OVHcloud API, make sure you've mastered the basics first by consulting our guide: [Public Cloud Databases - Getting started with APIs](/pages/public_cloud/public_cloud_databases/databases_02_order_api).
 >> >
 >>
->> To find the backup ID of a service, use this following API call:
+>> To find the backup ID of a service, use the following API call:
 >>
 >> > [!api]
 >> >
@@ -140,15 +141,12 @@ The migration from a Single-AZ region to a Multi-AZ region is reversible — ser
 After your new 3-AZ database service has been successfully provisioned, it's crucial to validate its deployment and ensure your applications can connect to it.
 
 1. Test the connection to your new service:
-
-  1. Use a database client (e.g., psql for PostgreSQL, mysql for MySQL) or a simple script to verify that you can connect to the new 3-AZ service's endpoint using its credentials.
-  2. Confirm that your data has been successfully migrated and is accessible.
-
+    1. Use a database client (e.g., psql for PostgreSQL, mysql for MySQL) or a simple script to verify that you can connect to the new 3-AZ service's endpoint using its credentials.
+    2. Confirm that your data has been successfully migrated and is accessible.
 2. Configure your application to use the new service:
-
-  1. Update your application's configuration files or environment variables to point to the new 3-AZ database service's connection string (host, port, username, password).
-  2. Restart your application to apply the changes.
-  3. Thoroughly test your application's functionality to ensure it operates correctly with the new database endpoint.
+    1. Update your application's configuration files or environment variables to point to the new 3-AZ database service's connection string (host, port, username, password).
+    2. Restart your application to apply the changes.
+    3. Thoroughly test your application's functionality to ensure it operates correctly with the new database endpoint.
 
 ### Clean up
 
@@ -162,7 +160,7 @@ Follow these instructions to delete the old 1-AZ service:
 > Via the OVHcloud Control Panel
 >> Navigate to your list of database services, click on the `...`{.action} button on the service line and click on the `Delete`{.action} button to permanently delete the service.
 >>
->> ![databases - delete the 1-AZ service](images/databases_delete_1az.png)
+>> ![databases - delete the 1-AZ service](images/databases_delete_1az.png){.thumbnail}
 >>
 > Via the OVHcloud API
 >> To delete your service, use the following API call:
@@ -179,4 +177,4 @@ We would love to help answer questions and appreciate any feedback you may have.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
