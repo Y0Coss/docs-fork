@@ -36,16 +36,12 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | Synchronisation avec des repository git  | Synchronisation des données avec des repository git | Tous types de fichiers  | **Entrante** : import de données via configuration d’un repository git <br>**Sortante** : export de données via configuration d’un repository git  | [Configurer et utiliser git](/pages/web_cloud/web_hosting/git_integration_webhosting) |
 
 
-|Journalisation|Conservation et consultation des logs du site Web. Analyse et représentation graphique de ces logs avec l'application Urchin WebAnalytics.|Texte brut avec un format de logs Apache standard|**Migration entrante**: Non applicable - les logs de l'infrastructure précédente ne sont pas pertinents pour un autre.<br><br>**Migration sortante**: Téléchargez les fichiers de logs à partir de votre [esapce client OVHcloud](/links/manager)|**Migration entrante**: N/A<br><br>**Migration sortante**: [Exportation d'un site Web - récupération des logs](/pages/web_cloud/web_hosting/exporter-son-site-web#etape-3-recuperer-les-logs-de-votre-hebergement-ovhcloud)|
-|Planification des tâches |Exécution de tâches automatisées périodiques (cron)|N/A|**Migration entrante**: Les scripts ne sont pas importés tels quels. Récupérez les anciens scripts ou leur structure et réimplémentez-les sur l'hébergement OVHcloud via votre [espace client OVHcloud](/links/manager).<br><br>**Migration sortante**: Les scripts ne sont pas exportés tels quels. Récupérez la structure des scripts dans votre [espace client OVHcloud](/links/manager) et réimplémentez-les dans l'environnement cible.|**Migration entrante et sortante**: [Utilisation de tâches automatisées sur un hébergement Web](/pages/web_cloud/web_hosting/cron_tasks)|
-
 ### 3. Fonctionnalités spécifiques
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-
+| Monitoring | Dashboard de monitoring de : commandes FTP, requêtes http, le temps moyen de réponse, les connexions sortantes, l’utilisation du CPU, le dépassement du plafond de ressources | NA | **Entrante** : l’activation est automatique à la création du service, aucune action requise <br>**Sortante** : NA  | [Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics) |
+| Analyse de données | Outil d’analyse de données (OWSTAT) permettant de générer un suivi statistique sur un site web donné | HTTP | **Entrante** : l’activation est automatique à la création du service, aucune action requise <br>**Sortante** : pas d'export possible | [Consulter les statistiques et logs d'un site web](/pages/web_cloud/web_hosting/logs_and_statistics) |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrant** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortant** : commande et configuration un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ### Liste des architectures
