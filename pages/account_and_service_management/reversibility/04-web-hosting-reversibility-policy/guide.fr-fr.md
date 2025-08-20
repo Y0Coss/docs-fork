@@ -49,7 +49,9 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 ### Liste des architectures
 
-Tous les composants d'un produit Web OVHcloud sont accessibles via votre [espace client OVHcloud](/links/manager). Cela permet de visualiser et de gérer les serveurs Web front-end, les serveurs de fichiers (FTP), les bases de données, les noms de domaine, les e-mails, ... ainsi que les fonctions associées à ces composants.
+Ce produit est une plateforme managée mutualisée non personnalisable par le client et nécessitant une adaptation des applications à l’environnement d’hébergement.
+La base technique repose sur Linux Apache, MySQL/MariaDB et PHP. L’architecture permet une personnalisation partielle : gestion multi-sites, tâches planifiées et permet de bénéficier de services managés tels que sauvegardes automatisées, intégration réseau (IPv4/IPv6). Les ressources (CPU, RAM, stockage) sont évolutives selon l’offre choisie.
+
 
 ### Services Partenaires
 
@@ -60,8 +62,8 @@ OVHcloud dispose également d’un service dédié : [OVHcloud Professional Serv
 
 ### Coût et frais
 
-Aucune facturation supplémentaire n'est prévue à partir d'OVHcloud pour les fonctionnalités de migration répertoriées ici.
+La facturation est à l’année. Aucun frais de résiliation spécifique n’est appliqué : la suppression du service arrête la facturation à la date anniversaire. Il incombe au client d’exporter ses fichiers, bases et configurations avant suppression, car leur effacement est irréversible.
 
 ### Conservation des données après la résiliation du contrat
 
-Les données sont conservées 45 jours après la fin du service, puis supprimées définitivement.
+Après suppression du service ou résiliation du contrat, OVHcloud supprime définitivement toutes les données stockées (fichiers, bases de données, snapshots). Une période de rétention de 45 jours suivant la date d’échéance du service s’applique.
