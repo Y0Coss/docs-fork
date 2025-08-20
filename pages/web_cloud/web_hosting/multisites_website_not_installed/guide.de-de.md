@@ -40,7 +40,7 @@ Mit den folgenden Schritten können Sie in beiden Fällen den Fehler `Seite nich
 
 ### 1 - Überprüfen Sie die Deklaration Ihrer Domain oder Subdomain auf Ihrem Webhosting <a name="check-multisites"></a>
 
-Klicken Sie auf die Registerkarten unten, um die einzelnen **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -71,23 +71,23 @@ Klicken Sie auf die Registerkarten unten, um die einzelnen **4** Schritte anzuze
 >> |---|---|
 >> |Der Domainname oder die Subdomain Ihrer Website **erscheint** in der Tabelle „Multisite“.|Wenn Sie Ihre Domain oder Subdomain gerade im Bereich `Multisite`{.action} Ihres Webhostings hinzugefügt haben, warten Sie etwa **zwanzig Minuten** und laden Sie den Cache Ihres Webbrowsers neu. Wenn weiterhin die Meldung „Seite nicht installiert“ angezeigt wird, fahren Sie mit [Teil 2](#check-dns-domain) fort.|
 >> |Der Domainname oder die Subdomain Ihrer Website **wird nicht** in der Tabelle „Multisite“ angezeigt.|Fügen Sie Ihren Domainnamen oder Ihre Subdomain im Bereich `Multisite`{.action} hinzu, indem Sie den entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine Domain oder Subdomain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ folgen.|
->> |Der Domainname oder die Subdomain **wurde** ohne Aktion Ihrerseits aus der Tabelle „Multisite“ entfernt.|Ihre Domain oder die dazugehörige DNS Zone wird möglicherweise von einem anderen Konto aus verwaltet. Fügen Sie Ihren Domainnamen oder Ihre Subdomain im Bereich `Multisite`{.action} hinzu, indem Sie den entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ folgen.|
+>> |Der Domainname oder die Subdomain **wurde** ohne Aktion Ihrerseits aus der Tabelle „Multisite“ entfernt.|Ihre Domain oder die dazugehörige DNS-Zone wird möglicherweise von einem anderen Konto aus verwaltet. Fügen Sie Ihren Domainnamen oder Ihre Subdomain im Bereich `Multisite`{.action} hinzu, indem Sie den entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ folgen.|
 
 ### 2 - Überprüfen Sie den IP-Verweis in der aktiven DNS-Zone Ihrer Domain <a name="check-dns-domain"></a>
 
-In diesem Schritt überprüfen Sie, dass Ihre Domain bzw. Subdomain über die aktive DNS Zone auf die IP-Adresse Ihres Webhostings verweist.
+In diesem Schritt überprüfen Sie, dass Ihre Domain bzw. Subdomain über die aktive DNS-Zone auf die IP-Adresse Ihres Webhostings verweist.
 
 > [!primary]
 >
 > Weitere Informationen zum Begriff DNS finden Sie auf den folgenden Seiten:
 >
-> - [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit);
-> - [OVHcloud DNS-Zone für eine Domainnamen erstellen](/pages/web_cloud/domains/dns_zone_create);
-> - [DNS-Server eines OVHcloud Domainnamens ändern](/pages/web_cloud/domains/dns_server_edit).
+> - [Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
+> - [OVHcloud DNS-Zone für eine Domainnamen erstellen](/pages/web_cloud/domains/dns_zone_create)
+> - [DNS-Server eines OVHcloud Domainnamens ändern](/pages/web_cloud/domains/dns_server_edit)
 
 #### 2\.1 IP-Adresse Ihres OVHcloud Webhostings identifizieren
 
-Klicken Sie auf die Registerkarten unten, um die einzelnen **3** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -118,11 +118,11 @@ Die Ihrem Webhosting zugeordnete IP-Adresse finden Sie auch in unserer Anleitung
 
 > [!primary]
 >
-> Vor dem Fortsetzen des Vorgangs kann es bei einer Änderung der aktiven **DNS** Zone einer Domain zu einer Propagationsverzögerung von **4 bis 24 Stunden** kommen, um die Informationen im DNS-Netzwerk zu aktualisieren.
+> Vor dem Fortsetzen des Vorgangs kann es bei einer Änderung der aktiven DNS-Zone einer Domain zu einer Propagationsverzögerung von **4 bis 24 Stunden** kommen, um die Informationen im DNS-Netzwerk zu aktualisieren.
 >
-> Wenn Sie die mit Ihrer Domain verbundenen **DNS** Server direkt ändern, kann die Bearbeitungszeit bis zu **48 Stunden** betragen.
+> Wenn Sie die mit Ihrer Domain verbundenen DNS-Server direkt ändern, kann die Bearbeitungszeit bis zu **48 Stunden** betragen.
 
-Klicken Sie hierzu auf die Registerkarten unten, um die einzelnen **4** Schritte anzuzeigen.
+Klicken Sie hierzu auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -140,8 +140,8 @@ Klicken Sie hierzu auf die Registerkarten unten, um die einzelnen **4** Schritte
 >> > [!primary]
 >> >
 >> > Wenn Ihr Domainname nicht in der angezeigten Liste aufgeführt ist, wird seine DNS-Zone nicht über Ihr OVHcloud Kundencenter verwaltet.<br>
->> > Bestimmen Sie über unser Tool [WHOIS](/links/web/domains-whois) seinen „Registrar“ und die DNS-Server, mit denen er verbunden ist.<br>
->> > Suchen Sie die betreffende DNS Zone und ändern Sie sie entsprechend. Folgen Sie hierzu dem entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
+>> > Bestimmen Sie über unser Tool [WHOIS](/links/web/domains-whois) seinen Registrar und die DNS-Server, mit denen er verbunden ist.<br>
+>> > Suchen Sie die betreffende DNS-Zone und ändern Sie sie entsprechend. Folgen Sie hierzu dem entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
 >>
 > **Schritt 3**
 >>
@@ -153,7 +153,7 @@ Klicken Sie hierzu auf die Registerkarten unten, um die einzelnen **4** Schritte
 >> >
 >> > Wenn der Tab `DNS-Zone`{.action} Ihres Domainnamens wie folgt angezeigt wird:<br><br>![zone-without-domain-top-of-the-page](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}<br>
 >> >
->> > Dies bedeutet, dass Ihre Domain nicht über Ihr OVHcloud Kundencenter verwaltet wird.<br> Bestimmen Sie über unser Tool [WHOIS](/links/web/domains-whois) den „Registrar“ und die DNS-Server, mit denen sie verbunden ist.<br> Suchen Sie die betreffende DNS-Zone und ändern Sie sie entsprechend. Folgen Sie hierzu dem entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
+>> > Dies bedeutet, dass Ihre Domain nicht über Ihr OVHcloud Kundencenter verwaltet wird.<br> Bestimmen Sie über unser Tool [WHOIS](/links/web/domains-whois) den Registrar und die DNS-Server, mit denen sie verbunden ist.<br> Suchen Sie die betreffende DNS-Zone und ändern Sie sie entsprechend. Folgen Sie hierzu dem entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
 >>
 >> Fahren Sie mit Schritt 4 fort, um die verschiedenen Szenarien und zu ergreifenden Maßnahmen anzuzeigen.
 >>
@@ -161,7 +161,7 @@ Klicken Sie hierzu auf die Registerkarten unten, um die einzelnen **4** Schritte
 >>
 >> |Mögliche Szenarien|Auszuführende Aktion|
 >> |---|---|
->> |In der aktiven DNS-Zone verweist Ihr Domainname oder Ihre Subdomain auf die IP-Adresse Ihres Webhostings mit einem A-Eintrag (für eine IPv4-Adresse) oder AAAA-Eintrag (für eine IPv6-Adresse).<br><br>![DNS-Zone_IP2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}|Dies weist darauf hin, dass die Konfiguration Ihres Domainnamens korrekt ist.<br>Warten Sie, bis die DNS Propagation abgeschlossen ist Die Änderung wurde vor kurzem vorgenommen.<br><br>Starten Sie Ihre Geräte neu (PC, Smartphone, Box usw.), und leeren Sie den Cache Ihres Internetbrowsers. Es ist möglich, dass die alte Konfiguration Ihrer Domain noch im Cache gespeichert ist, was die Anzeige Ihres Updates verzögern kann.|
+>> |In der aktiven DNS-Zone verweist Ihr Domainname oder Ihre Subdomain auf die IP-Adresse Ihres Webhostings mit einem A-Eintrag (für eine IPv4-Adresse) oder AAAA-Eintrag (für eine IPv6-Adresse).<br><br>![DNS-Zone_IP2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}|Dies weist darauf hin, dass die Konfiguration Ihres Domainnamens korrekt ist.<br>Warten Sie, bis die DNS Propagation abgeschlossen ist. Die Änderung wurde vor kurzem vorgenommen.<br><br>Starten Sie Ihre Geräte neu (PC, Smartphone, Box), und leeren Sie den Cache Ihres Browsers. Es ist möglich, dass die alte Konfiguration Ihrer Domain noch im Cache gespeichert ist, was die Anzeige Ihres Updates verzögern kann.|
 >> |Die aktive DNS-Zone enthält keine A- oder AAAA-Einträge, die Ihre Domain oder Subdomain mit der IP-Adresse Ihres Webhostings verbinden.|Fügen Sie den neuen A- oder AAAA-Eintrag hinzu, oder korrigieren Sie den vorhandenen Eintrag, indem Sie [diese Anleitung](/pages/web_cloud/domains/dns_zone_edit) befolgen.|
 >> |Der vorhandene DNS-Eintrag vom Typ A oder AAAA in der DNS-Zone für Ihre Domain oder Subdomain verweist auf eine andere IP-Adresse als die Ihres Webhostings.|Fügen Sie den neuen DNS-Eintrag vom Typ A oder AAAA hinzu, oder korrigieren Sie den vorhandenen Eintrag, indem Sie [diese Anleitung](/pages/web_cloud/domains/dns_zone_edit) befolgen.|
 >> |Diese Warnung erscheint im Tab `DNS-Zone`{.action}:<br><br>![message-other-ovh-dns-servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Ändern Sie die DNS-Server Ihrer Domain entsprechend unserer Anleitung „[DNS-Server einer OVHcloud-Domain bearbeiten](/pages/web_cloud/domains/dns_server_edit).“|
