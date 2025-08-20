@@ -899,7 +899,6 @@
                 + [MongoDB - Understand the connection strings URI format](public_cloud/public_cloud_databases/mongodb_10_connection_strings)
                 + [MongoDB - Migrate From Essential or Business to Discovery with the CLI](public_cloud/public_cloud_databases/mongodb_11_howto_migrate_to_discovery)
                 + [MongoDB - Migrate to Production or Advanced](public_cloud/public_cloud_databases/mongodb_12_howto_migrate_to_production_or_advanced)
-                + [MongoDB - Transitioning to the new offerings & automated migration](public_cloud/public_cloud_databases/mongodb_16_automated_migration_new_offers)
             + [Advanced guides](public-cloud-databases-mongodb-advanced-guides)
                 + [MongoDB - BI Connector](public_cloud/public_cloud_databases/mongodb_25_bi_connector)
                 + [MongoDB - Configure an Analytics node](public_cloud/public_cloud_databases/mongodb_08_analytics)
