@@ -10,7 +10,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 Several plans for MongoDB existed (Essential, Business, Enterprise) and recent updates changed them to Discovery, Production and Advanced.
 This update means your cluster needs to be migrated from one of the deprecated plan to a new one.<br>
-Migration to Production and Advanced plans is automatic. If you want to migrate to Discovery from a deprecated plan, you will need to do it manually following the [dedicated guide](/pages/public_cloud/public_cloud_databases/mongodb_11_howto_migrate_to_discovery).
+Migration to Production and Advanced plans is automatic.
 
 **This guide explains how to automatically migrate from a deprecated Essential or Business plan to a Production or Advanced plan.**
 
@@ -45,11 +45,6 @@ Either click directly on the `Solution upgrade`{.action} menu item to proceed to
 ### Initiate the migration
 
 From the **Change solution** page you will be presented with your current plan and the new plan you can migrate to.
-
-> [!primary]
->
-> The automatic migration to the Discovery plan is disabled, please refer to the [dedicated migration guide](/pages/public_cloud/public_cloud_databases/mongodb_11_howto_migrate_to_discovery) to help you migrate to the Discovery plan.
->
 
 First select the plan that suits your needs. In the following example we will choose to migrate from a Business to a Production plan.
 
