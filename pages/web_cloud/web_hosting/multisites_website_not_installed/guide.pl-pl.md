@@ -38,7 +38,7 @@ Strona "**Strona nie została zainstalowana**" wyświetla się z dwóch powodów
 
 Poniższe kroki pozwolą Ci naprawić błąd `Strona nie została zainstalowana` w obu przypadkach.
 
-### Etap 1 - Sprawdź deklarację Twojej domeny lub subdomeny na hostingu <a name="check-multisites"></a>
+### 1 - Sprawdź deklarację Twojej domeny lub subdomeny na hostingu <a name="check-multisites"></a>
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
