@@ -19,7 +19,7 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 ## Prérequis
 
 - Disposer d'une offre MX Plan. Celle-ci est disponible via :
-    - ne offre d’[hébergement web](/links/web/hosting).
+    - Une offre d’[hébergement web](/links/web/hosting).
     - Un[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable).
     - Une offre MX Plan commandée séparément.
 - Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
@@ -241,6 +241,13 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 - **Serveur AMERIQUE/ASIE-PACIFIQUE (sortant)** : smtp.mail.ovh.ca.
 - **Port** : 465.
 - **Type de sécurité** : SSL/TLS.
+
+### Cas d'usage
+
+**Vous avez utilisé toutes les adresses comprises dans votre offre ?**
+
+- Consultez les questions de [notre FAQ e-mail](pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
+- Consultez l'ensemble de nos offres e-mail [Zimbra](/links/web/emails-zimbra) ou [Exchange](/links/web/emails) pour complétez votre offre MX Plan sur le même nom de domaine.
 
 ## Aller plus loin
 
