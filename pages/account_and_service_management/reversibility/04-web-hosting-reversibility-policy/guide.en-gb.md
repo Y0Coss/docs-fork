@@ -57,8 +57,7 @@ OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/p
 
 ### Cost and fees
 
-No additional billing is planned from OVHcloud for the migration features listed here.
+Billing is per year. No specific cancelation fee applies: deletion of the service will stop billing on the anniversary date. It is the customer’s responsibility to export their files, databases and configurations before deletion, as deletion is irreversible.
 
 ### Retention of data after contract termination
-
-The data is retained 45 days after the termination of the service and then deleted permanently.
+After deleting the service or contract termination, OVHcloud permanently deletes all stored data (files, databases, snapshots). A retention period of 45 days following the service’s expiry date applies.
