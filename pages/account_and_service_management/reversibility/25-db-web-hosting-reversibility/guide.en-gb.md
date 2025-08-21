@@ -5,7 +5,7 @@ updated: 2025-08-21
 
 ##Objective
 
-This document describes the reversibility policy for the Managed Database System for Web Hosting product covering the OVHcloud Web Hosting offer.
+This document describes the reversibility policy for the Managed Database System for Web Hosting product covering the OVHcloud Web Cloud Databases offer.
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
@@ -43,12 +43,8 @@ Features of the product line fall into three categories:
 | Anti-DDoS protection| Anti-DDoS is a set of tools and mechanisms designed to absorb denial of service attacks. It includes traffic analysis, "clean-up" via a specialized network, and mitigation using VAC technology developed by OVHcloud. | N/A | **Inbound**: The anti-DDoS system is part of our infrastructure and is enabled by default. No action is required <br> **Outbound**: Order and configure an anti-DDoS solution from the new provider | [Anti-DDoS OVHcloud](/links/security/anti-ddos) |
 
 ## List of architectures
-xxxx
 
-The product is divided into two service offers:
-
-* xxxx
-* xxx
+The product is based on VPS with Linux OS, DBMS engines and PostgreSQL modules using docker technology. The architecture allows partial customization: add modules, partial PostgreSQL server configuration, scheduled tasks, automated backups via API and network integration. Resources (CPU, RAM, NVMe SSD storage) are scalable depending on the webcloud database offer chosen.
 
 ##Partner services
 
