@@ -51,7 +51,9 @@ OVHcloud dispose également d’un service dédié : [OVHcloud Professional Serv
 
 ## Coûts et frais
 
+La facturation est selon l’offre choisie avec une durée d’engagement variable. Aucun frais de résiliation spécifique n’est appliqué : la suppression du service arrête la facturation immédiatement. Les crédits OVHcloud éventuellement associés ne sont pas transférables. Il incombe au client d’exporter ses fichiers, bases et configurations avant suppression, car leur effacement est irréversible.
 
 ## Conservation des données après résiliation du contrat
 
+Après suppression du service ou résiliation du contrat, OVHcloud supprime définitivement toutes les données stockées sur le VPS ou le serveur (fichiers, bases, snapshots). Dans le cas de l’utilisation du produit Managed Web Hosting avec ce produit, une période de rétention de 45 jours suivant la date d’échéance du service s’applique. 
 
