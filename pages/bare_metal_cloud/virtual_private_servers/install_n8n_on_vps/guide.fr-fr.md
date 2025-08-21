@@ -1,7 +1,7 @@
 ---
 title: "Installer N8N sur un VPS OVHcloud"
 excerpt: "Apprenez à héberger la plateforme d’automatisation N8N sur un VPS OVHcloud à l’aide de Docker et Traefik"
-updated: 2025-08-05
+updated: 2025-08-22
 ---
 
 ## Objectif
@@ -37,12 +37,12 @@ ssh <user>@IP_VPS
 
 Si vous avez choisi un **VPS OVHcloud avec l’image N8N préinstallée**, **vous n’avez pas besoin d’installer Docker ni Docker Compose** : ces outils sont déjà présents et configurés.
 
-Retrouvez tous les fichiers nécessaires (y compris `docker-compose.yml` et `.env`) dans le dossier `/root/n8n-traefik/` sur votre VPS.
+Retrouvez tous les fichiers nécessaires (y compris `docker-compose.yml` et `.env`) dans le dossier `/debian/n8n/` sur votre VPS.
 
 Modifiez le fichier `.env` situé dans ce dossier pour y renseigner les informations suivantes :
 
-- `DOMAIN_NAME` : votre nom de domaine (ex : `exemple.com`).
-- `SUBDOMAIN` : le sous-domaine utilisé pour accéder à N8N (ex : `n8n`).
+- `DOMAIN_NAME` : votre nom de domaine (ex : `vps.ovh.net`).
+- `SUBDOMAIN` : le sous-domaine utilisé pour accéder à N8N (ex : `vps-xxxxxxx`).
 - `EMAIL` : l’adresse e-mail utilisée pour générer les certificats SSL via Let’s Encrypt.
 
 Une fois le fichier `.env` mis à jour, exécutez la commande suivante depuis le dossier `/root/n8n-traefik/` :
