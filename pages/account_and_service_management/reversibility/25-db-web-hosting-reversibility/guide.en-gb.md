@@ -52,8 +52,13 @@ The OVHcloud partners concerned are listed in the [OVHcloud partners directory](
 
 OVHcloud also has a dedicated service: [OVHcloud Professional Services](/links/professional-services).
 
-##Cost and fees
+## Cost and fees
 
-##Data retention after contract termination 
+Billing depends on the offer chosen, with a variable subscription duration. No specific cancelation fees apply: deleting the service will stop the billing immediately. Any associated OVHcloud credits cannot be transferred. It is the customer’s responsibility to export their files, databases and configurations before deletion, as deletion is irreversible.
+
+## Data retention after contract termination 
+
+After deleting the service or contract termination, OVHcloud permanently deletes all data stored on the VPS or server (files, databases, snapshots). By combining Managed Web Hosting product with this product, a retention period of 45 days following the service’s expiry date applies.
+
 
 
