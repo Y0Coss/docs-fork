@@ -37,7 +37,7 @@ If your website displays a “Your request has been blocked” page, this means 
 
 The “Your request has been blocked” page may appear for a number of reasons (non-exhaustive list):
 
-- The request is made from an unupdated Internet browser (Firefox, Chrome, Safari, Edge, etc.).
+- The request is made from an unupdated web browser (Firefox, Chrome, Safari, Edge, etc.).
 - A very large number of requests, similar or not, are made in an extremely short time.
 - The request attempts to perform unauthorized actions on the shared infrastructure where your web hosting plan is located.
 
