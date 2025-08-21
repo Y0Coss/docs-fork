@@ -31,8 +31,9 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
+| Custom configuration | Changes to some settings via the user interface | NA | **Inbound**: rehabilitation and adjustement are required, manual import of some configurations and settings via API or the Control Panel <br>**Outbound**: rehabilitation of configurations in the target environment | [Create a database on your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database) |
+| Backups managed by OVHcloud | OVHcloud has a backup policy with a history of 30 backups. Ability to restore one of 30 backups at any time| NA | **Inbound** : Backup automation possible via CRON and the OVHcloud API <br>**Outbound** : Configure or adapt the backup policy in the target environment if possible | [Retrieving the backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export)<br><br>[CUsing automated tasks on a Web Hosting plan](/pages/web_cloud/web_hosting/cron_tasks) |
+| Standard PostgreSQL modules | Modules or extensions not present on the target by default | Modules, extensions | **Inbound**: Native postgre modules installed and enabled on request from the customer. Only Postgis does not come from the publisher and is installed and activatable <br>**Outbound**: check the availability of modules on the target, adaptable | [PostgreSQL - Available extensions](/pages/public_cloud/public_cloud_databases/postgresql_02_extensions) |
 
 
 ## 3. Specific features
