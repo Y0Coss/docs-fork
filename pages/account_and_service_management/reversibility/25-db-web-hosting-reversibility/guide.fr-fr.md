@@ -5,7 +5,7 @@ updated: 2025-08-21
 
 ## Objectif
 
-Ce document est la politique de réversibilité du produit Managed Database System for Web Hosting couvrant l’offre commerciale d’OVHcloud Hébergement Web.
+Ce document est la politique de réversibilité du produit Managed Database System for Web Hosting couvrant l’offre commerciale d’OVHcloud Web Cloud Databases.
 
 Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
@@ -41,10 +41,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 ## Liste des architectures
 
-blabla
-Le produit est décliné en deux offres de service : 
-- xxxxx
-- xxxxx
+Le produit repose sur des VPS avec OS Linux, des moteurs SGBD et modules PostgreSQL utilisant la technologie docker. L’architecture permet une personnalisation partielle : ajout de modules, configuration de serveur PostgreSQL partielle, tâches planifiées, sauvegardes automatisées via API et une intégration réseau. Les ressources (CPU, RAM, stockage SSD NVMe) sont évolutives selon l’offre webcloud database choisie.
 
 ## Services partenaires
 
