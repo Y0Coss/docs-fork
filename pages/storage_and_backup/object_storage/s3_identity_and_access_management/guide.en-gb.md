@@ -81,6 +81,23 @@ Select the access profile for this user and click `Confirm`{.action}.
 
 ### Advanced resource access management
 
+#### Overview
+By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, webite configuration, ...etc) are private in Object Storage. Only the resource owner, i.e the user account that creates it, has full control.
+
+Access to private resources can be granted via access policies.
+
+Access policies can be categorized broadly into 2 types :
+- user based: access policies attached to a specific user are called user policies. A user policy is evaluated using Object Storage IAM permissions and applies only to the specific user it is attached to.
+- resource based : bucket policies and ACLs are policies that are attached directly to specific resources
+
+Access policies attached to a specific user are called user policies. A user policy is evaluated using Object Storage IAM permissions and applies only to the specific user it is attached to.
+
+> [!primary]
+>
+> Bucket policies is a feature that is not yet available for Object Storage. This article is about user policies.
+>
+> 
+
 You can refine your permissions by importing a JSON configuration file. To do this, go to the `Object Storage Policy Users`{.action} tab.
 
 ![Object Storage users](images/highperf-identity-and-access-management-20220928084435242.png)
@@ -91,8 +108,25 @@ Click on the `...`{.action} at the end of your user's line, then `Import JSON fi
 >
 > If you want to change a user's rights, you may need to download the JSON configuration file in advance by selecting `Download JSON File`{.action}.
 >
+> 
 
-Some examples of JSON configuration files:
+
+#### Understanding the user policy evaluation process
+At the moment, user permissions are evaluated as follows:
+1. if exists, evaluate user policy<br>
+   1.1 check for an explicit deny: if there is an explicit deny, then deny permission, else, check for an explicit allow<br>
+   1.2 check for an explicit allow: if there is an explicit allow, then allow permission<br>
+   1.3 if there is no explicit deny nor explicit allow, then fallback to ACLs<br>
+2. fallback to ACLs
+
+> [!primary]
+>
+> This evaluation process will be subject to change with the upcoming implementation of bucket policies.
+>
+> 
+
+
+#### Some examples of JSON configuration files:
 
 **Read/write access to a bucket and its objects**
 
@@ -164,8 +198,35 @@ Some examples of JSON configuration files:
 }
 ```
 
+**Allow all operations to specific IPs by whitelisting authorized IPs**
 
-**Allow read access to objects only to specific IPs**
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Deny",
+    "Action": "s3:*",
+    "Resource": [
+      "arn:aws:s3:::companybucket",
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "NotIpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+} 
+```
+
+
+
+> [!primary]
+>
+> As a consequence of the current authorization process, **implicit** deny is **not** supported by OVHcloud Object Storage if the user is the bucket owner i.e since ACLs are evaluated by default and since the bucket owner has FULL_CONTROL ACL, if the user is the bucket owner and even if there is no explicit allow in the policy file, he will be authorized.
+> 
+
+The following policy to attempt to allow read access to objects only to specific IPs will **not** work under current conditions if attached to the bucket owner i.e even if the bucket owner makes his requests from IPs that are not in the specified range, he will be authorized.
 
 ```json
 {
@@ -189,28 +250,7 @@ Some examples of JSON configuration files:
 }
 ```
 
-**Allow all operations to specific IPs by whitelisting authorized IPs**
-
-```json
-{
-  "Statement": {
-    "Sid": "ExampleStatement01",
-    "Effect": "Deny",
-    "Action": "s3:*",
-    "Resource": [
-      "arn:aws:s3:::companybucket",
-      "arn:aws:s3:::companybucket/*"
-    ],
-    "Condition": {
-      "NotIpAddress": {
-        "aws:SourceIp": "10.0.0.5/16"
-      }
-    }
-  }
-} 
-```
-
-**Deny read access to objects to specific IPs by blacklisting unauthorized IPs**
+The following policy to attempt to deny read access to objects to specific IPs by blacklisting unauthorized IPs will **not** work under current conditions if attached to the bucket owner because there is no explicit deny and requests from the specified IPs will not match the allow, therefore, we fallback to the ACLs.
 
 ```json
 {
