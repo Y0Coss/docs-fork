@@ -21,8 +21,9 @@ Features of the product line fall into three categories:
 
 | **Function** | **Description** | **Available formats** | **Migration model** | **Available documentation** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
-| --- | --- | --- | **Inbound** :  <br> **Oubound** :   | []() |
+| Database package for a standard web hosting plan| Using standard open-source components | SQL, NoSQL | **Inbound**: copy of application files, import of databases via SQL dump, standard configuration <br>**Outbound**: export files/dumps, reusable on any compatible environment | [Creating a database on your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database) |
+| Export and import a database | Backup and restore databases via the API or the OVHcloud Control Panel | SQL, CSV | **Inbound**: Import an existing SQL dump <br>**Outbound**: Export an SQL dump, which can be imported on any MySQL/MariaDB/PostgreSQL server | [Importing a backup into a Web Hosting plan database](/pages/web_cloud/web_hosting/sql_importing_mysql_database) |
+| Users and permissions | User and rights management system stored in the database | NA | **Inbound**: import users and permissions via database dump <br>**Outbound**: export users and permissions via database dump | [Changing the password for a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_change_password) |
 
 
 
