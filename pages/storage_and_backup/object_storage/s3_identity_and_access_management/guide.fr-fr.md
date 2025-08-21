@@ -164,30 +164,6 @@ Quelques exemples de fichiers de configuration JSON :
 }
 ```
 
-**Autoriser l'accès en lecture sur les objets uniquement à des adresses IP specifiques**
-
-```json
-{
-  "Statement": {
-    "Sid": "ExampleStatement01",
-    "Effect": "Allow",
-    "Action": [
-      "s3:GetObject",
-      "s3:ListBucket",
-      "s3:ListBucketVersions"
-    ],
-    "Resource": [
-      "arn:aws:s3:::companybucket/*"
-    ],
-    "Condition": {
-      "IpAddress": {
-        "aws:SourceIp": "10.0.0.5/16"
-      }
-    }
-  }
-}
-```
-
 **Autoriser l’accès à toutes les opérations uniquement depuis certaines adresses IP en utilisant une liste blanche des adresses autorisées**
 
 ```json
@@ -207,30 +183,6 @@ Quelques exemples de fichiers de configuration JSON :
     }
   }
 } 
-```
-
-**Refuser l’accès en lecture aux objets depuis certaines adresses IP en utilisant une liste noire des adresses non autorisées.**
-
-```json
-{
-  "Statement": {
-    "Sid": "ExampleStatement01",
-    "Effect": "Allow",
-    "Action": [
-      "s3:GetObject",
-      "s3:ListBucket",
-      "s3:ListBucketVersions"
-    ],
-    "Resource": [
-      "arn:aws:s3:::companybucket/*"
-    ],
-    "Condition": {
-      "NotIpAddress": {
-        "aws:SourceIp": "10.0.0.5/16"
-      }
-    }
-  }
-}
 ```
 
 ### Liste des actions supportées
