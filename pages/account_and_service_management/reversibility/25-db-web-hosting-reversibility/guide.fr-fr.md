@@ -29,16 +29,14 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-
+| Configuration personnalisée | Modifications de certains paramètres via l’interface utilisateur | NA | **Entrante** : réadaptation nécessaire, import manuel de certains paramètres de configuration via API ou l’espace client   <br>**Sortante** : réadaptation des paramètres dans l’environnement cible  | [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) |
+| Sauvegardes managées par OVHcloud | OVHcloud dispose d’une politique d’une sauvegarde avec un  historique de 30 sauvegardes. Possibilité de restaurer l’une des 30 sauvegardes à tout moment| NA | **Entrante** : automatisation de la sauvegarde possible via CRON et l’API OVHcloud <br>**Sortante** : réadaptation de la politique de sauvegarde dans l’environnement cible si possible | [Récupérer la sauvegarde de la base de données d'un hébergement web](/pages/web_cloud/web_hosting/sql_database_export)<br><br>[Créer des tâches automatisées (CRON) sur votre hébergement web](/pages/web_cloud/web_hosting/cron_tasks) |
+| Modules PostgreSQL standards | Modules ou extensions non présents par défaut sur la cible | Modules, extensions | **Entrante** : Modules natifs postgre installés et activés sur demande du client. Seul Postgis ne provient pas de l’éditeur et est installé et activable <br>**Sortante** : vérification de la disponibilité des modules sur la cible, adaptation possible  | [PostgreSQL - Available extensions](/pages/public_cloud/public_cloud_databases/postgresql_02_extensions) |
 
 ### 3. Fonctionnalités spécifiques
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrant** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortant** : commande et configuration un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
