@@ -84,13 +84,10 @@ Select the access profile for this user and click `Confirm`{.action}.
 #### Overview
 By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, webite configuration, ...etc) are private in Object Storage. Only the resource owner, i.e the user account that creates it, has full control.
 
-Access to private resources can be granted via access policies.
-
-Access policies can be categorized broadly into 2 types :
+Access to private resources can be granted via access policies. Access policies can be categorized broadly into 2 types :
 - user based: access policies attached to a specific user are called user policies. A user policy is evaluated using Object Storage IAM permissions and applies only to the specific user it is attached to.
 - resource based : bucket policies and ACLs are policies that are attached directly to specific resources
 
-Access policies attached to a specific user are called user policies. A user policy is evaluated using Object Storage IAM permissions and applies only to the specific user it is attached to.
 
 > [!primary]
 >
@@ -113,7 +110,7 @@ Click on the `...`{.action} at the end of your user's line, then `Import JSON fi
 
 #### Understanding the user policy evaluation process
 At the moment, user permissions are evaluated as follows:
-1. if exists, evaluate user policy<br>
+1. if exists, evaluate user policy else fallback to ACLs<br>
    1.1 check for an explicit deny: if there is an explicit deny, then deny permission, else, check for an explicit allow<br>
    1.2 check for an explicit allow: if there is an explicit allow, then allow permission<br>
    1.3 if there is no explicit deny nor explicit allow, then fallback to ACLs<br>
