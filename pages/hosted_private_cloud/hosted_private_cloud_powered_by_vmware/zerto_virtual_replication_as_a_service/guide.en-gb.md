@@ -1,7 +1,7 @@
 ---
 title: Setting up Zerto Virtual Replication between two OVHcloud data centres
 excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms
-updated: 2025-08-19
+updated: 2025-08-21
 ---
 
 ## Objective
@@ -19,8 +19,7 @@ For instructions for cross platforms set up, please see our guide on [using Zert
 
 > [!primary]
 >
-> Since **v10.0u6**, a **Read Write (RW)** vCenter account is required to access and operate the Zerto interface.  
-> **Read Only (RO)** accounts can no longer use the interface, unlike the behavior observed in version 9.
+> A **Read Write (RW)** vCenter account is required to access and operate the Zerto interface.
 
 ### Zerto Virtual Replication Concepts
 
@@ -109,8 +108,8 @@ Once the activation has successfully completed, you will receive an email summar
 
 > [!warning]
 >
-> When activating Zerto, you may notice a VM named `Z-VRAH` in your inventory.  
-> This VM is automatically deployed by OVHcloud to secure communications between your sites.  
+> When activating Zerto, you may notice a VM named `Z-VRAH` in your inventory.
+> This VM is automatically deployed by OVHcloud to secure communications between your sites.
 > It is **essential for the service to work correctly** and **must not be modified or deleted**.
 
 ###  Zerto Replication Interface

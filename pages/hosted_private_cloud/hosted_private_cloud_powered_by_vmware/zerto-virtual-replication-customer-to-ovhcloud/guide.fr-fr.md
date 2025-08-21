@@ -1,7 +1,7 @@
 ---
 title: "Utiliser Zerto entre OVHcloud et une plateforme tierce"
 excerpt: 'Découvrez comment connecter votre Zerto OVHcloud à une autre plateforme.'
-updated: 2025-08-19
+updated: 2025-08-21
 ---
 
 ## Objectif :
@@ -20,7 +20,7 @@ Consultez notre guide « [Zerto entre deux datacenters OVHcloud](/pages/hosted_p
 - Le site client doit disposer d’une installation Zerto opérationnelle.
 - Les machines de réplication Zerto (VRA : Virtual Réplication Appliance) côté client et côté OVHcloud doivent pouvoir échanger entre elles sur les ports TCP 4007 et 4008
 - Les machines d’administration Zerto (ZVM : Zerto Virtual Manager) côté client et côté OVHcloud doivent pouvoir échanger entre elles sur les ports TCP 9071
-- À partir de la version **10.0u6**, un compte **Read Write (RW)** sur vCenter est nécessaire pour accéder et manipuler l’interface Zerto (les comptes **Read Only (RO)** ne sont plus suffisants).
+- Un compte **Read Write (RW)** sur vCenter est nécessaire pour accéder et manipuler l’interface Zerto.
 
 > [!primary]
 >
@@ -326,9 +326,9 @@ Vous pouvez vérifier que le nom de votre PCC OVHcloud est bien visible dans l�
 
 > [!warning]
 >
-> Lors de l’activation de Zerto, une VM nommée `Z-VRAH` peut apparaître dans votre inventaire.  
-> Cette machine est automatiquement déployée par OVHcloud pour établir le tunnel chiffré entre vos infrastructures.  
-> Elle est **indispensable au bon fonctionnement du service** et **ne doit pas être modifiée ou supprimée**.
+> Lors de l’activation de Zerto, une VM `Z-VRAH` peut apparaître dans votre inventaire.
+> Le déploiement n’est **pas systématique** : il dépend notamment de la volumétrie de données à traiter.
+> Si elle est présente, elle est essentielle au service et **ne doit pas être modifiée ni supprimée**.
 
 #### **Diagnostic** :
 

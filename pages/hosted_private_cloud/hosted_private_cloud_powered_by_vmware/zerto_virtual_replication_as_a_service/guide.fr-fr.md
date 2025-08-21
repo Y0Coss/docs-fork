@@ -1,7 +1,7 @@
 ---
 title: Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
-updated: 2025-08-19
+updated: 2025-08-21
 ---
 
 ## Objectif
@@ -19,8 +19,8 @@ Pour les autres cas de figure, consultez notre guide sur comment [utiliser Zerto
 
 > [!primary]
 >
-> Depuis la version **10.0u6**, un compte **Read Write (RW)** sur vCenter est nécessaire pour accéder et manipuler l’interface Zerto.  
-> Les comptes **Read Only (RO)** ne permettent plus d’utiliser l’interface, contrairement au comportement observé en version 9.
+> Un compte **Read Write (RW)** sur vCenter est nécessaire pour accéder et manipuler l’interface Zerto.
+
 
 ### Concepts Zerto Virtual Replication
 
@@ -113,9 +113,9 @@ Une fois l'activation effectuée, vous recevrez par e-mail une configuration de 
 
 > [!warning]
 >
-> Lors de l’activation de Zerto, une VM nommée `Z-VRAH` apparaît dans votre inventaire.  
-> Cette machine est automatiquement déployée par OVHcloud pour sécuriser les communications entre vos sites.  
-> Elle est **indispensable au bon fonctionnement du service** et **ne doit pas être modifiée ou supprimée**.
+> Lors de l’activation de Zerto, une VM nommée `Z-VRAH` peut apparaître dans votre inventaire.
+> Ce déploiement n’est **pas systématique** : il dépend notamment de la volumétrie de données à traiter.
+> Si elle est présente, cette VM est essentielle au service et **ne doit pas être modifiée ni supprimée**.
 
 #### Depuis l'API OVHcloud
 

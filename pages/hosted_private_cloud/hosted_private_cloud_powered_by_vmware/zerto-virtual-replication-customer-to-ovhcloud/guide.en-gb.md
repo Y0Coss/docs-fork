@@ -1,7 +1,7 @@
 ---
 title: Using Zerto between OVHcloud and a third-party platform
 excerpt: Learn how to set up Zerto between your OVHcloud Private Cloud and another platform
-updated: 2025-08-19
+updated: 2025-08-21
 ---
 
 ## Objective
@@ -20,7 +20,7 @@ Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/h
 - A Zerto platform installed on the on-premises platform
 - VRAs (Virtual Replication Appliances) on both sides that are able to connect to the counterpart on TCP ports 4007 and 4008
 - Zerto administration consoles or ZVMs (Zerto Virtual Managers) that are able to connect to the counterpart on TCP port 9071
-- As of **v10.0u6**, a **Read Write (RW)** vCenter account is required to access and operate the Zerto interface (**Read Only (RO)** accounts are no longer sufficient).
+- A **Read Write (RW)** vCenter account is required to access and operate the Zerto interface.
 
 > [!primary]
 >
@@ -309,9 +309,9 @@ At this point, your Zerto setup is functional and you can start to create your v
 
 > [!warning]
 >
-> When enabling Zerto, you may notice a VM named `Z-VRAH` in your inventory.  
-> This VM is automatically deployed by OVHcloud to set up the encrypted tunnel between your infrastructures.  
-> It is **essential for the service to work correctly** and **must not be modified or deleted**.
+> When enabling Zerto, a `Z-VRAH` VM may appear in your inventory.
+> This deployment is **not systematic**; it depends notably on the data volume to process.
+> If present, it is essential to the service and **must not be modified or deleted**.
 
 #### Troubleshooting
 
