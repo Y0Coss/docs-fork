@@ -81,6 +81,18 @@ Sélectionnez le profil d'accès pour cet utilisateur et cliquez sur `Confirmer`
 
 ### Gestion avancée des accès aux ressources
 
+#### Aperçu
+Par défaut, toutes les ressources (buckets, objets) et sous-ressources (configuration de cycle de vie, configuration de site web, etc.) sont privées dans Object Storage. Seul le propriétaire de la ressource, c'est-à-dire le compte utilisateur qui l'a créée, dispose d'un contrôle total.
+
+L'accès aux ressources privées peut être accordé via des politiques d'accès. Les politiques d'accès peuvent être classées en deux grandes catégories :
+- basées sur l'utilisateur : les politiques d'accès associées à un utilisateur spécifique sont appelées politiques utilisateur. Une politique utilisateur est évaluée à l'aide des autorisations IAM d'Object Storage et s'applique uniquement à l'utilisateur spécifique auquel elle est associée.
+- basées sur les ressources : les bucket policies et les ACLs sont des politiques directement associées à des ressources spécifiques.
+
+> [!primary]
+>
+> Les bucket policies ne sont pas encore disponibles sur Object Storage. Cet article traite des politiques utilisateur.
+>
+
 Vous pouvez cependant affiner les droits via l'import d'un fichier de configuration JSON. Pour cela, rendez-vous dans l'onglet `Utilisateurs de stratégies Object Storage `{.action}.
 
 ![Object Storage users](images/highperf-identity-and-access-management-20220928084435242.png)
@@ -92,7 +104,21 @@ Cliquez sur le bouton  `...`{.action} à droite de votre utilisateur puis sur `I
 > Si vous souhaitez modifier les droits d'un utilisateur, téléchargez éventuellement le fichier de configuration JSON au préalable en sélectionnant `Télécharger le fichier JSON`{.action}.
 >
 
-Quelques exemples de fichiers de configuration JSON :
+#### Comprendre le processus d'évaluation des politiques utilisateur
+Actuellement, les autorisations utilisateur sont évaluées comme suit :
+1. si elle existe, évaluer la politique utilisateur sinon se référer aux ACLs<br>
+   1.1 vérifier s'il existe un refus explicite : s'il existe un refus explicite, refuser l'autorisation, sinon, vérifier s'il existe une autorisation explicite<br>
+   1.2 vérifier s'il existe une autorisation explicite : s'il existe une autorisation explicite, accorder l'autorisation<br>
+   1.3 s'il n'existe ni refus explicite ni autorisation explicite, se référer aux ACL<br>
+2. Se référer aux ACLs
+
+> [!primary]
+>
+> Ce processus d'évaluation sera susceptible d'être modifié avec la mise en œuvre prochaine des bucket policies.
+>
+
+
+#### Quelques exemples de fichiers de configuration JSON :
 
 **Accès en lecture / écriture à un bucket et à ses objets**
 
@@ -184,6 +210,60 @@ Quelques exemples de fichiers de configuration JSON :
   }
 } 
 ```
+
+> [!primary]
+>
+> En raison du processus d'autorisation actuel, le refus **implicite** n'est **pas** pris en charge par OVHcloud Object Storage si l'utilisateur est le propriétaire du bucket, c'est-à-dire que, puisque les ACLs sont évaluées par défaut et que le propriétaire du bucket dispose d'une ACL FULL_CONTROL, si l'utilisateur est le propriétaire du bucket, il sera autorisé même s'il n'y a pas d'autorisation explicite dans le fichier policy.
+> 
+
+La politique suivante visant à autoriser l'accès en lecture aux objets uniquement à des adresses IP spécifiques ne fonctionnera **pas** dans les conditions actuelles si elle est associée au propriétaire du bucket, c'est-à-dire que même si le propriétaire du bucket effectue ses requêtes à partir d'adresses IP qui ne se trouvent pas dans la plage spécifiée, il sera autorisé.
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetObject",
+      "s3:ListBucket",
+      "s3:ListBucketVersions"
+    ],
+    "Resource": [
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "IpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+}
+```
+
+La politique suivante visant à refuser l'accès en lecture à des objets à des adresses IP spécifiques en mettant sur liste noire les adresses IP non autorisées ne fonctionnera **pas** dans les conditions actuelles si elle est associée au propriétaire du compartiment, car il n'y a pas de refus explicite et les requêtes provenant des adresses IP spécifiées ne correspondront pas à l'autorisation. Par conséquent, nous nous rabattons sur les ACLs.
+
+```json
+{
+  "Statement": {
+    "Sid": "ExampleStatement01",
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetObject",
+      "s3:ListBucket",
+      "s3:ListBucketVersions"
+    ],
+    "Resource": [
+      "arn:aws:s3:::companybucket/*"
+    ],
+    "Condition": {
+      "NotIpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }
+}
+```
+
 
 ### Liste des actions supportées
 
