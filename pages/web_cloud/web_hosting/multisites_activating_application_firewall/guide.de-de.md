@@ -1,7 +1,7 @@
 ---
 title: "Aktivieren der Web Application Firewall"
 excerpt: "Aktivieren der Web Application Firewall"
-updated: 2024-09-05
+updated: 2025-08-22
 ---
 
 ## Ziel 
