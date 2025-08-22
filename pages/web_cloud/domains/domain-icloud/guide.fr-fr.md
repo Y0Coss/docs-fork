@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser votre domaine OVHcloud avec iCloud Mail'
 excerpt: 'Découvrez comment configurer votre nom de domaine OVHcloud avec iCloud pour créer des adresses e-mail personnalisées'
-updated: 2025-08-21
+updated: 2025-08-25
 ---
 
 ## Objectif
@@ -38,6 +38,10 @@ Pour savoir comment ajouter, modifier ou supprimer chaque type d'enregistrement 
 - **CNAME** : pour les clefs DKIM (`sig1._domainkey...`, `sig2._domainkey...`).
 - **TXT** : pour le SPF (fusionnez si un enregistrement SPF existe déjà).
 - **TXT DMARC** : optionnel mais recommandé ([Étape 3](#step3)).
+
+> [!warning]
+>
+> Utilisez uniquement des guillemets droits " tels qu’ils apparaissent dans la documentation technique d’Apple (généralement en version anglaise). Les guillemets typographiques « » ou “ ” affichés dans certaines traductions ne doivent pas être utilisés dans la configuration DNS.
 
 ### Étape 3 : Ajouter un enregistrement DMARC (optionnel) <a name="step3"></a>
 
