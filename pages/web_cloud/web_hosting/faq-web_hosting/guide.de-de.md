@@ -593,8 +593,8 @@ Die Seite „Your IP has been banned“ kann aus verschiedenen Gründen angezeig
 
 In diesem Fall sind mehrere Aktionen erforderlich:
 
-- Rufen Sie die aufgerufene URL (zum Beispiel: `https://www.domain.tld`) sowie alle Informationen auf der Seite „Your IP has been banned“ (`IP address`, `Date` und `Request ID`) ab.
-- Übermitteln Sie die wiederhergestellten Elemente an den Support, indem Sie ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
+- Notieren Sie die aufgerufene URL (zum Beispiel: `https://www.domain.tld`) sowie alle Informationen auf der Seite „Your IP has been banned“ (`IP address`, `Date` und `Request ID`).
+- Übermitteln Sie diese Informationen an den Support, indem Sie ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
 
 Wenn Sie sich nicht sicher sind, welche Schritte Sie ausführen sollen, wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](/links/partner).
 
