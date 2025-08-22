@@ -12,9 +12,9 @@ This guide explains how to configure Access Control Lists (ACLs) via the OVHclou
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
-- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- a [Kafka cluster running](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster) on OVHcloud Public Cloud [accepting incoming connections](/pages/public_cloud/data_analytics/analytics/kafka_incoming_connections) with at least one [topic](/pages/public_cloud/data_analytics/analytics/kafka_create_topics)
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A [Kafka cluster running](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster) on OVHcloud Public Cloud [accepting incoming connections](/pages/public_cloud/data_analytics/analytics/kafka_incoming_connections) with at least one [topic](/pages/public_cloud/data_analytics/analytics/kafka_create_topics)
 
 ## Instructions
 

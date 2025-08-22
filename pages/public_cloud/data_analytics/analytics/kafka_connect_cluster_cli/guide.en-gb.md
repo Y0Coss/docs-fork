@@ -12,9 +12,9 @@ This guide explains how to connect to a Kafka cluster using the CLI.
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
-- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- a [Kafka cluster running](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster) on OVHcloud Public Cloud [accepting incoming connections](/pages/public_cloud/data_analytics/analytics/kafka_incoming_connections)
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A [Kafka cluster running](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster) on OVHcloud Public Cloud [accepting incoming connections](/pages/public_cloud/data_analytics/analytics/kafka_incoming_connections)
 
 ## Instructions
 
@@ -55,7 +55,7 @@ For this client installation, please follow the instructions available at: [Kafk
 
 Let's create a configuration file to simplify the CLI commands to act as Kafka Producer and Consumer:
 
-kafkacat.conf :
+kafkacat.conf:
 
 ```text
 bootstrap.servers=kafka-f411d2ae-f411d2ae.database.cloud.ovh.net:20186

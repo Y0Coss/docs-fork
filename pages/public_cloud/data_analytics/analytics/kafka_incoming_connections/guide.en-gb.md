@@ -12,9 +12,9 @@ This guide explains how to configure your Kafka cluster to accept incoming conne
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
-- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- a [Kafka cluster running](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster) on OVHcloud Public Cloud
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A [Kafka cluster running](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster) on OVHcloud Public Cloud
 
 ## Instructions
 
@@ -47,7 +47,7 @@ Passwords need to be reset from the `Users`{.action} table.
 > [!warning]
 > For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical to authorize the suitable IP addresses in order to successfully access your Kafka cluster.
 
-If you did not define the authorised IPs during the order you could do it in the `Configuration`{.action} tab. At least one IP address must be authorised here before you can connect to your database.
+If you did not define the authorised IPs during the order you can do it in the `Configuration`{.action} tab. At least one IP address must be authorised here before you can connect to your database.
 
 ![Authorised IP](images/kafka_authorized_ip.v2.png){.thumbnail}
 

@@ -10,23 +10,23 @@ Kafka on OVHcloud is a fully managed, distributed data-streaming platform availa
 
 ### Product page
 
-Discover how OVHcloud's Managed Apache Kafka® service lets you deploy and manage full Apache Kafka clusters within the Public Cloud complete with scalable topics and partitions, integrated tools like Schema Registry and high availability, plus support for Terraform, private networking, and competitive pay-as-you-go pricing at: [Kafka product page](https://www.ovhcloud.com/en/public-cloud/apache-kafka/)
+Discover how OVHcloud's Managed Apache Kafka® service lets you deploy and manage full Apache Kafka clusters within the Public Cloud complete with scalable topics and partitions, integrated tools like Schema Registry and high availability, plus support for Terraform, private networking, and competitive pay-as-you-go pricing: [Kafka product page](https://www.ovhcloud.com/en/public-cloud/apache-kafka/)
 
 ### Pricing
 
-Explore a comprehensive breakdown of OVHcloud’s Public Cloud pricing, where you’ll find detailed hourly and monthly rates across services like virtual instances, managed databases, streaming and analytics tools—including plans for Kafka at: [Kafka pricing](https://www.ovhcloud.com/en/public-cloud/prices/#7211)
+Explore a comprehensive breakdown of OVHcloud’s Public Cloud pricing, where you’ll find detailed hourly and monthly rates across services like virtual instances, managed databases, streaming and analytics tools—including plans for Kafka: [Kafka pricing](https://www.ovhcloud.com/en/public-cloud/prices/#7211)
 
 ### Capabilities
 
-Discover the technical capabilities and limitations of OVHcloud's managed Apache Kafka with detailed guidance on supported versions, resource limits, networking, logging, topics, users, and much more—on this support page: [Kafka capabilities and limitations](/pages/public_cloud/public_cloud_databases/kafka_01_capabilities)
+Discover the technical capabilities and limitations of OVHcloud's managed Apache Kafka with detailed guidance on supported versions, resource limits, networking, logging, topics, users, and much more on this support page: [Kafka capabilities and limitations](/pages/public_cloud/public_cloud_databases/kafka_01_capabilities)
 
 ### Create a cluster
 
-Explore step-by-step instructions on how to create a managed Kafka database cluster on OVHcloud Public Cloud via the Control Panel, datacentre selection, plan, instance configuration, storage sizing, and cluster setup options at: [Create a Kafka cluster](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster)
+Explore step-by-step instructions on how to create a managed Kafka database cluster on OVHcloud Public Cloud via the Control Panel, datacentre selection, plan, instance configuration, storage sizing, and cluster setup options: [Create a Kafka cluster](/pages/public_cloud/data_analytics/analytics/kafka_create_cluster)
 
 ### Configure cluster for incoming connections
 
-Explore practical guidance on how to configure your OVHcloud Public Cloud Kafka cluster to accept incoming connections covering access setup via the control panel or API and essential network settings at: [Configure Kafka cluster connections](/pages/public_cloud/data_analytics/analytics/kafka_incoming_connections)
+Explore practical guidance on how to configure your OVHcloud Public Cloud Kafka cluster to accept incoming connections covering access setup via the control panel or API and essential network settings: [Configure Kafka cluster connections](/pages/public_cloud/data_analytics/analytics/kafka_incoming_connections)
 
 ## Go further
 

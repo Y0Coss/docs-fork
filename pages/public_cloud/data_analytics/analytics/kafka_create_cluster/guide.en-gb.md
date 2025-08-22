@@ -12,8 +12,8 @@ This guide explains how to create a Kafka cluster via the OVHcloud Control Panel
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
-- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 
 ## Instructions
 
@@ -52,7 +52,7 @@ Choose the instance type for the nodes of your service, you will be able to chan
 
 #### Select the storage
 
-Storage could be scaled up to 3 time the base storage.
+Storage can be scaled up to 3 time the base storage.
 
 ![Choose storage](images/kafka_storage.v2.png){.thumbnail}
 
