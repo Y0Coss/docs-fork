@@ -1,6 +1,6 @@
 ---
-title: "Changing the IP addresses of OVHcloud DNS servers"
-excerpt: "Discover the list of new IP addresses for OVHcloud DNS servers"
+title: "List of IP addresses of OVHcloud DNS servers"
+excerpt: "Find out the updated IP addresses for OVHcloud DNS servers"
 updated: 2025-08-07
 ---
 
@@ -30,7 +30,7 @@ For more information, please read our guide on [Customizing a domain name’s DN
 >
 > If you have not made any manual changes to the DNS configuration (default setting), you will not be affected by this change.
 
-### Calendar
+### Schedule
 
 | Step                                | Estimated date           |
 |------------------------------|------------------------------|
@@ -48,7 +48,7 @@ For more information, please read our guide on [Customizing a domain name’s DN
 
 1. Determine if you are still using an old IP address in your DNS zone.
 2. Replace it with the new IP address (see the table below).
-3. [Update your GLUE records](/pages/web_cloud/domains/glue_registry) if you have configured one in your control panel.
+3. [Update your GLUE records](/pages/web_cloud/domains/glue_registry) if you have configured one in your OVHcloud Control Panel.
 
 ### IP address mapping table
 
