@@ -1,7 +1,7 @@
 ---
 title: "Partilhado: ativação da firewall"
 excerpt: "Partilhado: ativação da firewall"
-updated: 2024-09-05
+updated: 2025-08-22
 ---
 
 ## Objetivo
