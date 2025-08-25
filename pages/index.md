@@ -300,6 +300,7 @@
             + [How to migrate a website from a VPS to a Dedicated Server or a Public Cloud instance](bare_metal_cloud/virtual_private_servers/migrate-to-pci-or-dedicated-server)
             + [Automating the deployment of your website on your VPS via GitHub Actions](bare_metal_cloud/virtual_private_servers/deploy-website-github-actions)
             + [Automating the deployment of your website on your VPS via GitLab CI/CD](bare_metal_cloud/virtual_private_servers/deploy-website-gitlab-ci-cd)
+            + [How to install N8N on an OVHcloud VPS](bare_metal_cloud/virtual_private_servers/install_n8n_on_vps)
             + [How to create and import a Lovable website on an OVHcloud VPS](bare_metal_cloud/virtual_private_servers/import-lovable-website-on-vps)
             + [How to install an AI agent on an OVHcloud VPS](bare_metal_cloud/virtual_private_servers/install-ia-agent-on-vps)
     + [Managed Bare Metal](products/bare-metal-cloud-managed-bare-metal)
