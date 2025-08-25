@@ -1,23 +1,23 @@
 ---
 title: "Architectures de référence - Créer une Landing Zone avec OVHcloud Public Cloud"
-excerpt: "Guide pratique pour concevoir une Landing Zone sécurisée et évolutive sur OVHcloud Public Cloud, couvrant la mise en réseau, l'IAM, les sauvegardes, etc."
-updated: 2025-08-19
+excerpt: "Guide pratique pour concevoir une Landing Zone sécurisée et évolutive sur le Public Cloud OVHcloud, couvrant la mise en réseau, l'IAM, les sauvegardes, etc."
+updated: 2025-08-25
 ---
 
 ## Objectif
 
 Ce guide aide les utilisateurs du Public Cloud d'OVHcloud à concevoir et déployer une Landing Zone sécurisée et évolutive en présentant les composants clés et les meilleures pratiques.
 
-Il couvre la configuration réseau de base (vRack, sous-réseaux, passerelles, adresses IP flottantes), la gestion du trafic (load balancer) et les couches de sécurité (pare-feu, WAAP, Bastion).
+Il couvre la configuration réseau de base (vRack, sous-réseaux, passerelles, adresses Floating IP), la gestion du trafic (load balancer) et les couches de sécurité (pare-feu, WAAP, Bastion).
 
 Il comprend également des conseils sur le choix de l'infrastructure, l'IAM, les sauvegardes, le logging, la connectivité privée et le contrôle des coûts, offrant ainsi une base claire pour des environnements cloud prêts pour la production.
 
 ## Prérequis
 
-- Accès à [l'espace client OVHcloud](/links/manager).
-- [Configuration des variables d'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
-- Connaissance de [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), si vous avez l'intention de l'utiliser.
-- Compréhension de base des [concepts de réseau cloud](/links/public-cloud/network) (par exemple, sous-réseaux, gateways, adresses IP flottantes).
+- Être connecté à [l'espace client OVHcloud](/links/manager).
+- [Avoir configuré les variables d'environnement OpenStack](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
+- Être familier de [Terraform](/pages/public_cloud/public_cloud_cross_functional/how_to_use_terraform), si vous avez l'intention de l'utiliser.
+- Compréhension de base des [concepts de réseau cloud](/links/public-cloud/network) (par exemple, sous-réseaux, gateways, adresses Floating IP).
 
 ## En pratique
 
@@ -47,33 +47,33 @@ La création de sous-réseaux s'effectue depuis l'espace client OVHcloud, via l'
 
 ### 2. Configurer une Gateway
 
-Pour activer la communication sortante ou inter-zones pour votre sous-réseau privé, configurez une gateway réseau pour le cloud public. Elle agit comme un dispositif NAT pour permettre le trafic depuis votre sous-réseau privé vers Internet ou d'autres ressources publiques.
+Pour activer la communication sortante ou inter-zones pour votre sous-réseau privé, configurez une gateway réseau pour le Public Cloud. Elle agit comme un dispositif NAT pour permettre le trafic depuis votre sous-réseau privé vers Internet ou d'autres ressources publiques.
 
-- Requis pour le téléchargement de paquets, les appels API externes, etc.
+- Requise pour le téléchargement de paquets, les appels API externes, etc.
 - Vous pouvez acheminer le trafic via la gateway vers un pare-feu ou un WAAP si nécessaire.
 - Chaque gateway est régionale et ne connecte que les sous-réseaux de cette région.
 
 Suivez [ce guide](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) pour configurer une gateway.
 
-### 3. Attribuer des adresses IP flottantes
+### 3. Attribuer des adresses Floating IP
 
-Une adresse IP flottante est une adresse IP publique que vous pouvez associer à une ressource (généralement une instance ou un load balancer) au sein d'un réseau privé.
+Une adresse Floating IP est une adresse IP publique que vous pouvez associer à une ressource (généralement une instance ou un load balancer) au sein d'un réseau privé.
 
 Exemples d'utilisation :
 
 - Exposition d'une seule machine virtuelle pour l'accès SSH (par exemple, pour un bastion)
 - Applications publiques hébergées dans un sous-réseau privé
-- Basculement et migration entre zones
+- Failover et migration entre zones
 
-Utilisez les adresses IP flottantes pour exposer en toute sécurité certaines ressources privées (par exemple, des instances, des services) à l'Internet public. Suivez [ce guide](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance) pour associer une adresse IP flottante.
+Utilisez les adresses Floating IP pour exposer en toute sécurité certaines ressources privées (par exemple, des instances, des services) à l'Internet public. Suivez [ce guide](/pages/public_cloud/public_cloud_network_services/getting-started-03-attach-floating-ip-to-instance) pour associer une adresse Floating IP.
 
-### 4. Configurer un load balancer
+### 4. Configurer un Load Balancer
 
 Un Load Balancer OVHcloud vous permet de répartir le trafic entre plusieurs instances backend situées dans différentes zones de disponibilité.
 
 - Choisissez le mode de répartition de charge : HTTP(S), TCP ou passthrough.
 - Prend en charge les health checks, la terminaison SSL et les sessions persistantes.
-- Intégré aux adresses IP flottantes pour une exposition publique ou une utilisation privée.
+- Intégré aux adresses Floating IP pour une exposition publique ou une utilisation privée.
 
 Ceci est essentiel pour créer des applications hautement disponibles et répartir intelligemment la charge.
 
@@ -95,21 +95,21 @@ Pour protéger vos applications web et API, déployez un service de protection d
 
 - Protège contre les attaques DDoS, les injections SQL, les XSS et les 10 principales menaces OWASP
 - Offre une gestion des bots, un WAF, une gateway API et une limitation du débit
-- Peut être inséré de manière transparente entre votre load balancer et vos services backend
+- Peut être inséré de manière transparente entre votre Load Balancer et vos services backend
 
 Suivez [ce guide](/pages/public_cloud/public_cloud_network_services/tutorial-ubika_vrack) pour déployer une protection WAAP avec Ubika.
 
-### 7. Configure a Bastion Host
+### 7. Configurer un hôte Bastion
 
-A Bastion is a secure access point to manage instances located in private subnets. OVHcloud provides a hardened, audited open-source bastion tool for this purpose.
+Un Bastion est un point d’accès sécurisé pour gérer les instances situées dans des sous-réseaux privés. OVHcloud fournit à cet effet un outil bastion open-source renforcé et audité.
 
-Use it to:
+Utilisez-le pour :
 
-- Enforce secure, audited SSH access
-- Define fine-grained user permissions (LDAP, AD, IAM)
-- Monitor access logs and session replay
+- Appliquer un accès SSH sécurisé et audité
+- Définir des autorisations utilisateur affinées (LDAP, AD, IAM)
+- Monitorer les logs d'accès et la relecture de session
 
-See [documentation about Bastion](https://ovh.github.io/the-bastion/index.html) on our GitHub account.
+Voir [documentation sur Bastion](https://ovh.github.io/the-bastion/index.html) sur notre compte GitHub.
 
 ### 8. Activer la connectivité privée (OCC)
 
@@ -126,14 +126,14 @@ Consultez [cette documentation](/pages/network/ovhcloud_connect/occ-direct-contr
 Une fois le réseau et la sécurité mis en place, déployez vos services principaux :
 
 - Compute : instances Public Cloud (GP/CPU/GPU)
-- Containeurs : service Kubernetes géré
+- Containers : Managed Kubernetes Service
 - Stockage :
     - Block storage (via volumes)
-    - Object Storage (S3<sup>1</sup>-compatible)
+    - Object Storage (compatible S3<sup>1</sup>)
     - Public Cloud File Storage (NFSv4)
 - Databases: MongoDB, PostgreSQL, MySQL, Kafka managés
 
-Ces services peuvent être gérés à l'aide du panneau de contrôle, de l'interface CLI OpenStack ou de Terraform.
+Ces services peuvent être gérés à l'aide de l'espace client OVHcloud, de l'interface CLI OpenStack ou de Terraform.
 
 ### 10. Configurer la gestion des identités et des accès (IAM)
 
@@ -155,11 +155,11 @@ Assurez la continuité de vos activités en protégeant vos données et workload
 
 Définissez une stratégie de sauvegarde alignée sur vos objectifs RPO (Recovery Point Objective) et RTO (Recovery Time Objective).
 
-### 12. Centralisez la journalisation avec Logs Data Platform
+### 12. Centralisez les logs avec Logs Data Platform
 
 Logs Data Platform (LDP) vous permet de :
 
-- Agréguer les logs provenant des applications, des systèmes et des périphériques réseau
+- Agréger les logs provenant des applications, des systèmes et des périphériques réseau
 - Créer des tableaux de bord et des alertes (compatibles avec Kibana et Grafana)
 - Conserver les logs en fonction des exigences de conformité (RGPD, ISO 27001, etc.)
 
@@ -177,8 +177,8 @@ Utilisez les tags, les rôles IAM et les alertes pour associer les coûts aux é
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour mettre en œuvre nos solutions, contactez votre représentant commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander à nos experts des services professionnels de vous aider dans votre cas d'utilisation spécifique.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Rejoignez notre [communauté d'utilisateurs](/links/community) et visitez notre [canal Discord](https://discord.gg/ovhcloud).
 
-<sup>1</sup>: S3 est une marque déposée d'Amazon Technologies, Inc. Le service OVHcloud n'est pas sponsorisé, approuvé ou affilié de quelque manière que ce soit à Amazon Technologies, Inc.
+_<sup>1</sup>: S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit._
