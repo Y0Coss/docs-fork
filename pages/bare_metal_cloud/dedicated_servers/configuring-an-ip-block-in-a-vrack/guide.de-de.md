@@ -1,35 +1,54 @@
 ---
 title: 'IP-Block im vRack konfigurieren'
 excerpt: 'So konfigurieren Sie einen öffentlichen IP-Adressblock im vRack'
-updated: 2023-08-31
+updated: 2025-06-04
 ---
 
 ## Einleitung
 
-Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/vrack/){.external} auch möglich, mithilfe eines öffentlichen IP-Adressblocks den öffentlichen IP-Traffic über den vRack Port Ihres Servers zu routen.
+Neben Private IP Addressing ist es mit dem [vRack](/links/network/vrack) auch möglich, mithilfe eines öffentlichen IP-Adressblocks den öffentlichen IP-Traffic über den vRack Port Ihres Servers zu routen.
 
 **In dieser Anleitung erfahren Sie, wie Sie einen öffentlichen IP-Adressblock so konfigurieren, dass Sie ihn mit dem vRack verwenden können.**
+
+> [!primary]
+>
+> vRack unterstützt Routing für IPv4 und IPv6 Additional IP Blöcke. Details zur Konfiguration von IPv6 finden Sie in dieser Anleitung: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
+
+> [!primary]
+>
+> Dieser Artikel erklärt die Konfiguration von Additional IP über ein vRack Netzwerk. Weitere Informationen zur Konfiguration mit der primären IP (über die Schnittstelle des öffentlichen Netzwerks) finden Sie in den folgenden Anleitungen:
+>
+> - IPv4:
+>     - [Konfiguration von IP-Aliasing](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing)
+>     - [IP-Adresse als Alias auf einem VPS konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing)
+>
+> - IPv6:
+>     - [IPv6 auf einem Dedicated Server konfigurieren](/pages/bare_metal_cloud/dedicated_servers/network_ipv6)
+>     - [IPv6 auf einem VPS einrichten](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6)
+>     - [IPv6 auf einer Public Cloud Instanz konfigurieren](/pages/public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6)
+>
 
 ## Voraussetzungen
 
 - Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Account reserviert.
 - Sie haben den gewünschten privaten IP-Adressbereich vorbereitet.
 - Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](/links/bare-metal/bare-metal).
-- Sie haben einen [vRack](https://www.ovh.de/loesungen/vrack/){.external} Dienst aktiviert.
+- Sie haben einen [vRack](/links/network/vrack) Dienst aktiviert.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
-> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
 >
-> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+> Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 > [!primary]
 >
 > In der vorliegenden Anleitung verwenden wir als Beispiel den IP-Block 46.105.135.96/28 sowie `eth1` als sekundäres Netzwerk, das dem vRack zugewiesen ist.
 >
-> Ebenfalls nur als Beispiel: Die Netzwerkkonfigurationsdatei, auf die wir uns beziehen, befindet sich unter `/etc/network/interfaces`. Je nach verwendetem Betriebssystem kann sich die entsprechende Datei an anderer Stelle befinden. Auch der Inhalt der Datei kann unterschiedlich sein. Bei Schwierigkeiten können Sie gerne die offizielle Dokumentation Ihrer Distribution zu Rate ziehen.
+> Ebenfalls nur als Beispiel: Die Netzwerkkonfigurationsdatei, auf die wir uns beziehen, befindet sich unter `/etc/network/interfaces`. Je nach verwendetem Betriebssystem kann sich die entsprechende Datei an anderer Stelle befinden. Auch der Inhalt der Datei kann unterschiedlich sein. Für Details können Sie die offizielle Dokumentation Ihrer Distribution zu Rate ziehen.
 
 ### IP-Block zum vRack hinzufügen
 
@@ -137,10 +156,10 @@ Starten Sie jetzt den Server neu, um die Änderungen anzuwenden.
 
 ## Weiterführende Informationen
 
-[Mehrere dedizierte Server im vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
+[Mehrere dedizierte Server im vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server)
 
-[Mehrere VLANs im vRack erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack){.external}
+[Mehrere VLANs im vRack erstellen](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack)
 
-[vRack zwischen Public Cloud und Dedicated Server einrichten](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server){.external}
+[vRack zwischen Public Cloud und Dedicated Server einrichten](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

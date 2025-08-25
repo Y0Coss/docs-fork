@@ -47,7 +47,7 @@ Na twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych
 
 ## W praktyce
 
-Przejdź do Panelu [klienta OVHcloud](/links/manager){.external}. Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action}.
+Przejdź do Panelu [klienta OVHcloud](/links/manager). Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action}.
 
 Wybierz odpowiedni hosting, kliknij zakładkę `Więcej`{.action}, a następnie `Cron`{.action}.
 
@@ -141,7 +141,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejno poszczególne **4** etapy.
 |Czas trwania|Czas wykonywania zadania to 60 minut. Jeśli skrypt przekracza ten czas, zostanie automatycznie zatrzymany przez system.|
 |Zmienna|Możesz zdefiniować tylko zmienne w skrypcie. Dodanie ich do adresu URL wywołującego skrypt nie będzie działać (Przykład: www/jobs/cron.php?zmienna=value).|
 |Limit danych|Zadanie może generować tylko 5 MB danych (*stdin/stderr*). Na przykład, jeśli skrypt zapisuje dane w pliku .txt, wykonywanie automatycznie kończy się, gdy plik osiągnie 5 MB.|
-|Skrypty powodujące błędy|Jeśli skrypt jest uszkodzony, zostanie automatycznie wyłączony po 10 nieudanych próbach. Raport o błędach zostanie wysłany dopiero po 10 próbach zakończonych niepowodzeniem.</br>Popraw skrypt na podstawie otrzymanego raportu o błędzie, a następnie ponownie włącz "zadanie CRON" w panelu sterowania (kliknij opcję `...`{.action}, a następnie `Zmień`{.action}).|
+|Skrypty powodujące błędy|Jeśli skrypt jest uszkodzony, zostanie automatycznie wyłączony po 10 nieudanych próbach. Raport o błędach zostanie wysłany dopiero po 10 próbach zakończonych niepowodzeniem.<br>Popraw skrypt na podstawie otrzymanego raportu o błędzie, a następnie ponownie włącz "zadanie CRON" w panelu sterowania (kliknij opcję `...`{.action}, a następnie `Zmień`{.action}).|
 |Sprawozdania z realizacji|Raporty będą wysyłane na wybrany adres e-mail tylko raz dziennie (w godzinach nocnych).|
 
 ### Naprawa
@@ -156,7 +156,7 @@ Zawsze korzystaj z bezwzględnych ścieżek dostępu do plików skryptów. Stał
  
 #### Weryfikacja logów wykonawczych
 
-W \[logach] twojego hostingu WWW, które są dostępne w [Panelu klienta OVHcloud](/links/manager){.external}, zobaczysz kategorię logów zatytułowaną "CRON".
+W \[logach] twojego hostingu WWW, które są dostępne w [Panelu klienta OVHcloud](/links/manager), zobaczysz kategorię logów zatytułowaną "CRON".
 
 Więcej informacji znajdziesz w przewodniku ["Sprawdź statystyki i logi strony zainstalowanej na hostingu"](/pages/web_cloud/web_hosting/logs_and_statistics).
 

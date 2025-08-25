@@ -1,7 +1,7 @@
 ---
 title: "Utiliser OVHcloud Object Storage comme Backend Terraform pour stocker votre état (state) Terraform"
 excerpt: "Découvrez comment utiliser l’Object Storage d’OVHcloud comme Backend Terraform pour stocker votre état (state) Terraform"
-updated: 2025-05-14
+updated: 2025-06-04
 ---
 
 ## Objectif
@@ -18,36 +18,11 @@ Dans ce tutoriel, vous allez :
 
 - Être connecté votre [espace client OVHcloud](/links/manager)
 - Une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Installation de la CLI [Terraform](https://www.terraform.io/downloads){.external}
+- Installation de la CLI [Terraform](https://www.terraform.io/downloads)
 
 ## Avant de commencer
 
-> [!warning]
->
-> **Avertissement sur la compatibilité de la CLI et du SDK AWS** :
->
-> Amazon Web Services (AWS) a récemment effectué une modification qui renforce les checksum lors d'opérations via l'API S3. Ces nouveaux contrôles d’intégrité sont en cours d'intégration sur notre plateforme. Aussi, les headers suivants ne sont pas supportés :
->
-> - `x-amz-content-sha256 with value STREAMING-UNSIGNED-PAYLOAD-TRAILER`
-> - `x-amz-sdk-checksum-algorithm with value CRC32`
->
-> En attendant la mise à jour de notre service Object Storage, nous vous recommandons d'utiliser les versions maximales prises en charge de la CLI, du SDK et des autres outils AWS suivants :
->
-> - boto3 1.35.99
-> - legacy aws cli 1.36.40
-> - aws cli 2.22.35
-> - aws-sdk-go 1.72.3
-> - aws-sdk-java 2.29.52
-> - aws-sdk-js-v3 3.726.1
-> - aws-sdk-net 3.7.962.0
-> - aws-sdk-php 3.336.15
-> - aws-sdk-ruby 1.177.0
->
-> Pour en savoir plus, rendez vous [ici](https://docs.aws.amazon.com/fr_fr/sdkref/latest/guide/feature-dataintegrity.html){.external}.
->
-> Obtenez des informations sur la mise à jour chez OVHcloud sur [cette page](https://public-cloud.status-ovhcloud.com/incidents/491vx956zx6b).
-
-* Vous devez avoir installé Terraform CLI, version 0.12.x minimum, sur votre machine. Vous pouvez l'installer en suivant les instructions d'installation [détaillées](https://www.terraform.io/docs/cli/index.html){.external} ou avec l'outil [tfenv](https://github.com/tfutils/tfenv){.external}.
+- Vous devez avoir installé Terraform CLI, version 0.12.x minimum, sur votre machine. Vous pouvez l'installer en suivant les instructions d'installation [détaillées](https://www.terraform.io/docs/cli/index.html) ou avec l'outil [tfenv](https://github.com/tfutils/tfenv).
 
 ## Terraform
 
@@ -56,9 +31,9 @@ Dans ce tutoriel, vous allez :
 ![Terraform](images/terraform.png){.thumbnail}
 
 Cet outil dispose d’une interface de ligne de commande (CLI) puissante et très intuitive.
-Si vous souhaitez tirer parti de vos connaissances sur Terraform CLI, consultez [l'aide-mémoire](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf){.external}.
+Si vous souhaitez tirer parti de vos connaissances sur Terraform CLI, consultez [l'aide-mémoire](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf).
 
-Chez OVHcloud, nous avons créé un [provider Terraform](https://registry.terraform.io/providers/ovh/ovh/latest){.external} qui vous permet d'interagir et de gérer les ressources OVHcloud.
+Chez OVHcloud, nous avons créé un [provider Terraform](https://registry.terraform.io/providers/ovh/ovh/latest) qui vous permet d'interagir et de gérer les ressources OVHcloud.
 
 ### Terraform states et backend
 

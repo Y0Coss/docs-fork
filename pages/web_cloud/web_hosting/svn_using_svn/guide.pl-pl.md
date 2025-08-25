@@ -17,7 +17,7 @@ SVN, który jest skrótem od "subwersji", jest systemem zarządzania wersjami.
 > Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „[Sprawdź również](#go-further)”.
 > 
 
-## Wymagania
+## Wymagania początkowe
 
 - Posiadanie [hostingu](/links/web/hosting) pozwalającego na połączenie SSH (**od oferty Pro**)
 - Logowanie przez SSH do hostingu (zapoznaj się z naszym przewodnikiem [Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting)
@@ -104,14 +104,14 @@ svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 
 #### Windows z TortoiseSVN
 
-- Pobierz i zainstaluj [TortoiseSVN](https://tortoisesvn.net/downloads.html){.external}.
+- Pobierz i zainstaluj [TortoiseSVN](https://tortoisesvn.net/downloads.html).
 - Kliknij prawym przyciskiem myszy na klucz prywatny. W prawym dolnym rogu znajduje się ikona, a klucz ładuje się do agenta uwierzytelniającego.
 - Utwórz katalog, kliknij prawym przyciskiem myszy i wybierz "SVN Checkout". 
 - Wpisz `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` w polu "URL of repository" i kliknij `OK`:
 
 ![hosting](/pages/assets/screens/other/web-tools/tortoisesvn/checkout.png){.thumbnail}
 
-Dostępna jest bardzo dobra dokumentacja w języku angielskim dla Subversion: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
+Dostępna jest bardzo dobra dokumentacja w języku angielskim dla Subversion: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html)
 
 ### Szczególne przypadki
 

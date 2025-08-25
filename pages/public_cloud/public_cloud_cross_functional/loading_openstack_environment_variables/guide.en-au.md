@@ -36,7 +36,7 @@ An OpenRC file corresponds to a specific user and zone. You cannot manage multip
 * Load the file’s contents in the current environment. You will then be prompted to enter the Horizon user password.
 
 ```bash
-admin@vpsxxxxxx:~$ source openrc.sh
+admin@remote_host:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
@@ -73,6 +73,6 @@ set OS_PASSWORD="Your Horizon user password"
 
 ## Go further
 
-To learn how to use OpenStack: [OpenStack documentation](https://docs.openstack.org/){.external}
+To learn how to use OpenStack: [OpenStack documentation](https://docs.openstack.org/)
 
 Join our [community of users](/links/community).

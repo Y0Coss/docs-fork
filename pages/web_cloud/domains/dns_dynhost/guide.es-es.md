@@ -129,7 +129,7 @@ Repita esta operación para cada usuario DynHost que quiera crear.
 
 ### 2 - Crear un registro DNS dinámico (DynHost) <a name="step2"></a>
 
-En segundo lugar, debe crear el registro DNS que se actualizará automáticamente. Le recordamos que el registro DynHost no debe existir en la zona DNS de OVHcloud del dominio como registro A o AAAA. Para comprobarlo y, en su caso, eliminar dicho registro, consulte nuestra guía [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
+En segundo lugar, debe crear el registro DNS que se actualizará automáticamente. Le recordamos que el registro DynHost no debe existir en la zona DNS de OVHcloud del dominio como registro A o AAAA. Para comprobarlo y, en su caso, eliminar dicho registro, consulte nuestra guía [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Para crear el registro DynHost, haga clic en las fichas siguientes para ver cada una de las **5** etapas.
 
@@ -164,8 +164,8 @@ Para crear el registro DynHost, haga clic en las fichas siguientes para ver cada
 >>
 >> |Campo|Descripción|
 >> |---|---|
->> |Subdominio|Introduzca el subdominio al que pertenezca el registro DNS que deberá actualizarse dinámicamente. Este subdominio debe ser el mismo que haya indicado anteriormente al crear el usuario DynHost.</br></br>**Si desea implementar un DynHost directamente para su dominio, deje este formulario de entrada vacío**|
->> |IP de destino|Introduzca la dirección IP (IPv4 o IPv6) que vaya a utilizar el registro DNS. Es generalmente la dirección IP pública de su *box* Internet o de su servidor alojado.</br></br>Según el principio DynHost, esta se actualizará automáticamente más adelante.</br></br>Este formulario solo debe incluir una dirección IP.|
+>> |Subdominio|Introduzca el subdominio al que pertenezca el registro DNS que deberá actualizarse dinámicamente. Este subdominio debe ser el mismo que haya indicado anteriormente al crear el usuario DynHost.<br><br>**Si desea implementar un DynHost directamente para su dominio, deje este formulario de entrada vacío**|
+>> |IP de destino|Introduzca la dirección IP (IPv4 o IPv6) que vaya a utilizar el registro DNS. Es generalmente la dirección IP pública de su *box* Internet o de su servidor alojado.<br><br>Según el principio DynHost, esta se actualizará automáticamente más adelante.<br><br>Este formulario solo debe incluir una dirección IP.|
 >>
 >> > [!warning]
 >> >

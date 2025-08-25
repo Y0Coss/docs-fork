@@ -10,7 +10,7 @@ updated: 2022-11-30
 
 ## Objetivo
 
-Descubra os conceitos relacionados com o aprovisionamento, o acompanhamento e o teste de desempenho da solução [Enterprise File Storage](https://www.ovhcloud.com/pt/storage-solutions/enterprise-file-storage/).
+Descubra os conceitos relacionados com o aprovisionamento, o acompanhamento e o teste de desempenho da solução [Enterprise File Storage](/links/storage/enterprise-file-storage).
 
 ## Instruções
 
@@ -31,7 +31,7 @@ Esta informação é importante quando desenvolve a sua arquitetura de armazenam
 
 - **Exemplo n°2**: a sua infraestrutura requer **4500 IOPS** e um volume de dados de **1 TB**. Para isso, é necessário aprovisionar **2 TB** para obter os **4500 IOPS necessários**. Mais especificamente neste caso, beneficiará de **8000 IOPS** sobre a capacidade provisionada. Trata-se de aprovisionar o seu serviço de forma a assegurar o nível de desempenho desejado.
 
-- **Exemplo n°3**: a sua aplicação não requer performance particular, mas um volume de armazenamento superior a **60 TB**. Neste caso, é preferível orientar-se para o serviço de armazenamento [NAS-HA](https://www.ovhcloud.com/pt/storage-solutions/nas-ha/), mais económico e que permite atingir capacidades superiores a 58 TB por serviço.
+- **Exemplo n°3**: a sua aplicação não requer performance particular, mas um volume de armazenamento superior a **60 TB**. Neste caso, é preferível orientar-se para o serviço de armazenamento [NAS-HA](/links/storage/nas-ha), mais económico e que permite atingir capacidades superiores a 58 TB por serviço.
 
 ### volumes e qualidade de serviços (QoS)
 
@@ -70,10 +70,10 @@ A ferramenta [FIO](https://github.com/axboe/fio) permite-lhe testar vários cen�
 - O número de FIO workers.
 - O modelo de acesso (leitura/escrita/sequencial/aleatório), etc.
 
-Encontre mais informações sobre [a documentação do FIO](https://fio.readthedocs.io/en/latest/index.html){.external}.
+Encontre mais informações sobre [a documentação do FIO](https://fio.readthedocs.io/en/latest/index.html).
 
 ## Quer saber mais?
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
-Fale com a nossa comunidade de utilizadores no Discord: <https://discord.gg/jW2FgBJ72h>
+Fale com a nossa comunidade de utilizadores no Discord: <https://discord.gg/ovhcloud>

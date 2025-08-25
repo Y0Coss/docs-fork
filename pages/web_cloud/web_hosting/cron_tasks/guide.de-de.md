@@ -140,7 +140,7 @@ Klicken Sie jeweils auf die Tabs, um die **4** Schritte anzuzeigen.
 |Laufzeit|Die Ausführungsdauer eines Tasks beträgt 60 Minuten. Wenn ein Skript diese Ausführungsdauer überschreitet, wird es automatisch vom System angehalten.|
 |Variable|Sie können Variablen nur in einem Skript definieren. Sie zur URL hinzuzufügen, die das Skript anruft, funktioniert nicht (Beispiel: *www/jobs/cron.php?variable=value*).|
 |Datenlimit|Ein Task kann nur 5 MB an Daten generieren (*stdin/stderr*). Wenn beispielsweise ein Skript Daten in eine .txt-Datei schreibt, endet die Ausführung automatisch, sobald die Datei 5 MB erreicht.|
-|Fehlergenerierende Skripte|Wenn ein Skript fehlerhaft ist, wird es nach 10 fehlgeschlagenen Ausführungsversuchen automatisch deaktiviert. Der Fehlerbericht wird erst gesendet, wenn alle 10 Versuche fehlgeschlagen sind.</br>Korrigieren Sie Ihr Skript auf der Grundlage des erhaltenen Fehlerberichts und reaktivieren Sie dann den Task im Kundencenter (klicken Sie auf `...`{.action} und dann auf `Ändern`{.action}.)|
+|Fehlergenerierende Skripte|Wenn ein Skript fehlerhaft ist, wird es nach 10 fehlgeschlagenen Ausführungsversuchen automatisch deaktiviert. Der Fehlerbericht wird erst gesendet, wenn alle 10 Versuche fehlgeschlagen sind.<br>Korrigieren Sie Ihr Skript auf der Grundlage des erhaltenen Fehlerberichts und reaktivieren Sie dann den Task im Kundencenter (klicken Sie auf `...`{.action} und dann auf `Ändern`{.action}.)|
 |Ausführungsberichte|Die Berichte werden nur einmal täglich (während der Nachtstunden) an die ausgewählte E-Mail-Adresse versandt.|
 
 ### Fehlerdiagnose
@@ -151,7 +151,7 @@ Ein einfacher Test, um zu sehen, ob Ihr Skript einen Fehler verursacht, ist, es 
 
 #### Überprüfung der Nutzung absoluter Pfade
 
-Achten Sie immer darauf, absolute Zugriffspfade zu den Dateien Ihrer Skripte zu verwenden. Die Konstante "DIR" kann beispielsweise dazu dienen, den aktuellen Pfad in PHP-Skripten zu erhalten ([PHP-Dokumentation](https://www.php.net/manual/de/language.constants.predefined.php){.external}).
+Achten Sie immer darauf, absolute Zugriffspfade zu den Dateien Ihrer Skripte zu verwenden. Die Konstante "DIR" kann beispielsweise dazu dienen, den aktuellen Pfad in PHP-Skripten zu erhalten ([PHP-Dokumentation](https://www.php.net/manual/de/language.constants.predefined.php)).
  
 #### Überprüfung der Ausführungsprotokolle
 

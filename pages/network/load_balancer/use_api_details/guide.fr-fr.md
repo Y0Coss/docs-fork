@@ -16,7 +16,7 @@ Retrouvez ici la description des différents points d'entrées dans l'API pour l
 
 ### Gérer son service OVHcloud Load Balancer via l'API
 
-Tous les appels API se font dans la section */ipLoadbalancing* disponible ici : [https://api.ovh.com/console/#/ipLoadbalancing](https://api.ovh.com/console/#/ipLoadbalancing){.external}.
+Tous les appels API se font dans la section */ipLoadbalancing* disponible ici : [https://api.ovh.com/console/#/ipLoadbalancing](https://api.ovh.com/console/#/ipLoadbalancing).
 
 > [!warning]
 >
@@ -3072,7 +3072,7 @@ Accéder aux éléments relatifs au protocole UDP (frontend, ferme, etc.).
 > Pour plus d'informations sur la gestion des contacts OVHcloud, consultez le guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
 >
 
-### Vrack
+### vRack
 
 #### Description des réseaux privés attachés au load balancer
 

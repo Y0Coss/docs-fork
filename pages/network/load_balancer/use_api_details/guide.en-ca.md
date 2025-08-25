@@ -16,7 +16,7 @@ Description of the different input points in the API for the Load Balancer OVH.
 
 Details of the API functionality for the Load Balancer OVH
 
-- All API calls are made in the section */ipLoadbalancing* available here : [https://ca.api.ovh.com/console/#/ipLoadbalancing](https://ca.api.ovh.com/console/#/ipLoadbalancing){.external}.
+- All API calls are made in the section */ipLoadbalancing* available here : [https://ca.api.ovh.com/console/#/ipLoadbalancing](https://ca.api.ovh.com/console/#/ipLoadbalancing).
 
 > [!warning]
 >
@@ -3062,7 +3062,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >> The OVH NIC to be configured for the Admin contact of this service (String of characters)
 >
 
-### Vrack
+### vRack
 
 #### Description of the private networks attached to the load balancer
 

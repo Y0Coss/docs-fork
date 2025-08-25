@@ -173,20 +173,20 @@ W tym celu przygotowaliśmy przewodniki, z których dowiesz się, jak skonfiguro
 > **E-maile i Zimbra Mail**
 >>
 >> **Komputer z systemem Windows**
->> - [Outlook dla Windows](/pages/web_cloud/email_and_collaborative_solutions/mxplan/how_to_configure_outlook_2016).
->> - [Thunderbird for Windows](/pages/web_cloud/email_and_collaborative_solutions/mxplan/how_to_configure_thunderbird_windows).
->> - [Poczta elektroniczna systemu Windows](/pages/web_cloud/email_and_collaborative_solutions/mxplan/how_to_configure_windows_10).
+>> - [Outlook dla Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
+>> - [Thunderbird for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows).
+>> - [Poczta elektroniczna systemu Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10).
 >>
 >> **Komputer Apple Mac**
->> - [Outlook for macOS](/pages/web_cloud/email_and_collaborative_solutions/mxplan/how_to_configure_outlook_2016_mac).
->> - [Mail na macOS](/pages/web_cloud/email_and_collaborative_solutions/mxplan/how_to_configure_mail_macos).
->> - [Thunderbird dla macOS](/pages/web_cloud/email_and_collaborative_solutions/mxplan/how_to_configure_thunderbird_mac).
+>> - [Outlook for macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac).
+>> - [Mail na macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos).
+>> - [Thunderbird dla macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac).
 >>
 >> **iPhone lub iPad**
->> - [Mail na iPhone'a i iPada](/pages/web_cloud/email_and_collaborative_solutions/mxplan/how_to_configure_ios).
+>> - [Mail na iPhone'a i iPada](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios).
 >>
 >> **Smartphone lub tablet z systemem Android**
->> - [Gmail na Androida](/pages/web_cloud/email_and_collaborative_solutions/mxplan/how_to_configure_android).
+>> - [Gmail na Androida](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 >>
 > **E-maile Pro**
 >>
@@ -227,7 +227,7 @@ W tym celu przygotowaliśmy przewodniki, z których dowiesz się, jak skonfiguro
 
 Dzięki usłudze [webmail](/links/web/email) możesz uzyskać dostęp do poczty elektronicznej w dowolnym momencie i z każdego urządzenia z dostępem do Internetu. Po utworzeniu konta e-mail zaloguj się tutaj, aby uzyskać dostęp do poczty.
 
-**Wskazówki i porady**: Jeśli konfigurujesz konto e-mail w programie pocztowym, zalecamy użycie protokołu IMAP. Dzięki temu wiadomości e-mail będą przechowywane na serwerze i będzie można uzyskać do nich dostęp z dowolnego miejsca za pośrednictwem [webmail](/links/web/email). W tym celu skorzystaj z [naszej dokumentacji](/pages/web_cloud/email_and_collaborative_solutions/mxplan/email_generalities).
+**Wskazówki i porady**: Jeśli konfigurujesz konto e-mail w programie pocztowym, zalecamy użycie protokołu IMAP. Dzięki temu wiadomości e-mail będą przechowywane na serwerze i będzie można uzyskać do nich dostęp z dowolnego miejsca za pośrednictwem [webmail](/links/web/email). W tym celu skorzystaj z [naszej dokumentacji](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ///
 
@@ -235,7 +235,7 @@ Dzięki usłudze [webmail](/links/web/email) możesz uzyskać dostęp do poczty 
 
 Wszystkimi Twoimi adresami e-mail możesz zarządzać z poziomu [Panelu klienta OVHcloud](/links/manager). W tym celu zaloguj się i przejdź do danego produktu. Możesz zmienić hasło do Twoich adresów e-mail, sprawdzić wskaźnik wypełnienia, utworzyć nowe adresy lub usunąć istniejące.
 
-**Wskazówki i porady**: W ofertach e-mail MX Plan możesz powierzyć zarządzanie kontem e-mail innemu kontu OVHcloud, zachowując jednocześnie kontrolę nad kontem e-mail. W tym celu w [Panelu klienta OVHcloud](/links/manager) skonfiguruj nadanie uprawnień. Możesz skorzystać z [naszej dokumentacji](/pages/web_cloud/email_and_collaborative_solutions/mxplan/feature_delegation).
+**Wskazówki i porady**: W ofertach e-mail MX Plan możesz powierzyć zarządzanie kontem e-mail innemu kontu OVHcloud, zachowując jednocześnie kontrolę nad kontem e-mail. W tym celu w [Panelu klienta OVHcloud](/links/manager) skonfiguruj nadanie uprawnień. Możesz skorzystać z [naszej dokumentacji](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation).
 
 ///
 
@@ -265,7 +265,7 @@ Utworzenie adresu e-mail nie jest skomplikowane, ale należy przestrzegać pewny
 
 /// details | Jak odzyskać zapomniane hasło?
 
-Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** hasła. Zgodnie z opisem w sekcji „[Zmiana hasła do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mxplan/email_change_password)“ należy zresetować hasło, jeśli nie jest ono już znane.
+Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** hasła. Zgodnie z opisem w sekcji „[Zmiana hasła do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)“ należy zresetować hasło, jeśli nie jest ono już znane.
 
 > [!primary]
 >

@@ -1,7 +1,7 @@
 ---
 title: 'Déployer une instance GPU'
 excerpt: 'Découvrez comment déployer une instance GPU sous Linux ou Windows'
-updated: 2025-04-28
+updated: 2025-05-28
 ---
 
 ## Objectif
@@ -47,7 +47,7 @@ lspci | grep -i nvidia
 00:06.0 Audio device: NVIDIA Corporation Device 10f1 (rev a1)
 ```
 
-La carte graphique est présente mais n'est pas encore utilisable. Il faut maintenant installer les drivers NVIDIA. Vous trouverez la liste des paquets à l'adresse suivante : [Liste des paquets Linux disponibles](https://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+La carte graphique est présente mais n'est pas encore utilisable. Il faut maintenant installer les drivers NVIDIA. Vous trouverez la liste des paquets à l'adresse suivante : [Liste des paquets Linux disponibles](https://developer.download.nvidia.com/compute/cuda/repos/).
 
 Il suffit ensuite de taper les commandes suivantes :
 
@@ -57,6 +57,8 @@ sudo dpkg -i cuda-repo-XXXX-XXXXXX
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install cuda
+sudo apt-get install -y cuda-drivers
+sudo apt-get install linux-headers-$(uname -r)
 sudo reboot
 ```
 
@@ -147,7 +149,7 @@ Entrez l'adresse IPv4 de votre instance et `Administrator` en tant qu'utilisateu
 > Si vous rencontrez des problèmes avec cette procédure, vérifiez que les connexions distantes (RDP) sont autorisées sur votre machine en vérifiant les paramètres de votre système, les règles de pare-feu et les éventuelles restrictions réseau. 
 >
 
-Une fois connecté à votre instance, vous devrez installer le pilote NVIDIA depuis le [site officiel](https://www.nvidia.com/Download/index.aspx){.external}.
+Une fois connecté à votre instance, vous devrez installer le pilote NVIDIA depuis le [site officiel](https://www.nvidia.com/Download/index.aspx).
 
 Il rester à installer le pilote nécessaire, qui apparaîtra ensuite ici :
 

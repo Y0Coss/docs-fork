@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Premiers pas (EN)
 excerpt: Découvrez AI Endpoints, la plateforme d'OVHcloud dédiée aux développeurs pour accéder à des modèles d'IA de pointe via des API. Pas d'expertise IA requise.
-updated: 2025-05-21
+updated: 2025-06-19
 ---
 
 > [!primary]
@@ -48,6 +48,11 @@ Once you have filled in the required information, click the `Create`{.action} bu
 
 *Note that this access key can be [revoked](#revoke-your-api-access-key) at any time.*
 
+> [!primary]
+>
+> **Only project administrators can create keys.**
+> 
+
 **3\. Store the created API access key**
 
 Once created, the key will be displayed in the API keys table. You will see your new access key in this table, with its information (name, description, expiry date). 
@@ -84,7 +89,7 @@ Once you have selected the category of model you want to use, you will be presen
 
 For example, if you select the `Code LLM` category, you will see a list of available code assistant models.
 
-To access one of them, simply click the name of the model you want to use. Let's take the `CodeLlama-13b-Instruct-hf` code assistant as our example.
+To access one of them, simply click the name of the model you want to use. Let's take the `Qwen2.5-​Coder-​32B-​Instruct` code assistant as our example.
 
 This will take you to a dedicated page with several options for interacting with the chosen model, including the ability to view its specifications. Here is an overview of the available options:
 

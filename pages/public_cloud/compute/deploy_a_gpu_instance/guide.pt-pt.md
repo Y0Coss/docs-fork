@@ -1,7 +1,7 @@
 ---
 title: 'Criar uma instância GPU'
 excerpt: 'Saiba como criar uma instância GPU em Linux ou Windows'
-updated: 2025-04-28
+updated: 2025-05-28
 ---
 
 > [!primary]
@@ -51,7 +51,7 @@ lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-A placa gráfica está identificada, mas ainda não pode ser utilizada. Para o fazer, primeiro deve instalar o driver NVIDIA. Pode encontrar a lista dos pacotes no seguinte endereço: [Lista de pacotes Linux disponíveis](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+A placa gráfica está identificada, mas ainda não pode ser utilizada. Para o fazer, primeiro deve instalar o driver NVIDIA. Pode encontrar a lista dos pacotes no seguinte endereço: [Lista de pacotes Linux disponíveis](http://developer.download.nvidia.com/compute/cuda/repos/).
 
 Em seguida, deve executar os seguintes comandos:
 
@@ -61,6 +61,8 @@ sudo dpkg -i cuda-repo-XXXX-XXXXXX
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install cuda
+sudo apt-get install -y cuda-drivers
+sudo apt-get install linux-headers-$(uname -r)
 sudo reboot
 ```
 
@@ -143,7 +145,7 @@ Introduza o endereço IPv4 da instância e indique «Administrator» como utiliz
 > Se encontrar problemas, verifique se a sua máquina permite conexões remotas (RDP): para isso, consulte as configurações de sistema, as regras de firewall e eventuais restrições de rede.
 >
 
-Depois de a sua instância GPU ser iniciada, deve instalar o driver NVIDIA a partir do [website oficial](https://www.nvidia.com/Download/index.aspx){.external}.
+Depois de a sua instância GPU ser iniciada, deve instalar o driver NVIDIA a partir do [website oficial](https://www.nvidia.com/Download/index.aspx).
 
 Depois desse processo, basta instalar o driver necessário que será depois apresentado aqui:
 
@@ -159,6 +161,6 @@ Depois desse processo, basta instalar o driver necessário que será depois apre
 > Antes de qualquer atualização do driver NVIDIA, é fortemente recomendado que efetue uma snapshot da sua instância, o que lhe permitirá voltar atrás caso seja necessário.
 >
 
-## Vá mais longe
+## Quer saber mais?
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

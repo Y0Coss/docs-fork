@@ -49,7 +49,7 @@ Hier der Kontext des obigen Diagramms:
 
 - Sie haben eine OVHcloud [Private Exchange Plattform](/links/web/emails-private-exchange) oder [Trusted Exchange Plattform](/links/web/emails-trusted-exchange) abonniert.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie können sich in der [OVHcloud API-Konsole](https://api.ovh.com/) einloggen.
+- Sie können sich in der [OVHcloud API-Konsole](/links/api) einloggen.
 - Sie verfügen über die erforderlichen Konfigurationsparameter zum Einrichten des Send Connectors von Ihrem Dienstleister.
 
 ## In der praktischen Anwendung

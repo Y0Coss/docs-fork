@@ -11,7 +11,7 @@ updated: 2025-04-29
 
 Avec les [serveurs dédiés OVHcloud](/links/bare-metal/bare-metal), vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). Cela vous donne des possibilités de configuration assez vastes lors de l'installation du système d'exploitation. ESXi ne le permet pas à cause de ses spécificités car il s'agit d'un système propriétaire UNIX avec un installateur propriétaire. Par conséquent, OVHcloud est dépendant de l'éditeur pour l'installation de l'OS. Depuis ESXi 7.0, il est possible de choisir entre 4 schémas de partitionnement prédéfinis par l'éditeur.
 
-**Cet article a pour objectif de vous montrer comment choisir un schéma de partitionnement dans l'[espace client OVHcloud](/links/manager) ou l'[API OVHcloud](https://api.ovh.com/).**
+**Cet article a pour objectif de vous montrer comment choisir un schéma de partitionnement dans l'[espace client OVHcloud](/links/manager) ou l'[API OVHcloud](/links/api).**
 
 > [!primary]
 >
@@ -21,7 +21,7 @@ Avec les [serveurs dédiés OVHcloud](/links/bare-metal/bare-metal), vous pouvez
 ## Prérequis
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud, **prêt à être installé/réinstallé**.
-- Avoir accès à l'[espace client OVHcloud](/links/manager) et/ou à l'[API OVHcloud](https://api.ovh.com/).
+- Avoir accès à l'[espace client OVHcloud](/links/manager) et/ou à l'[API OVHcloud](/links/api).
 
 > [!alert]
 >
@@ -30,7 +30,7 @@ Avec les [serveurs dédiés OVHcloud](/links/bare-metal/bare-metal), vous pouvez
 
 ## En pratique
 
-ESXi 7.0 introduit une [option d'amorçage permettant de configurer la taille de la partition système ESXi](https://kb.vmware.com/s/article/81166). Cette fonctionnalité a été introduite par l'éditeur car l'augmentation de la taille de la partition système pouvait poser problème, en particulier sur les machines où les disques sont de petite taille. OVHcloud propose désormais cette fonctionnalité qui est disponible aussi bien depuis l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration) que via l'[API OVHcloud](https://api.ovh.com/).
+ESXi 7.0 introduit une [option d'amorçage permettant de configurer la taille de la partition système ESXi](https://kb.vmware.com/s/article/81166). Cette fonctionnalité a été introduite par l'éditeur car l'augmentation de la taille de la partition système pouvait poser problème, en particulier sur les machines où les disques sont de petite taille. OVHcloud propose désormais cette fonctionnalité qui est disponible aussi bien depuis l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration) que via l'[API OVHcloud](/links/api).
 
 Malgré le fait que votre serveur ait plusieurs disques, l'installation d'ESXi n'est possible que sur le premier disque de la grappe de disques sélectionnée pour l'installation (voir « [API OVHcloud et installation d'un OS - Grappes de disques](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#disk-group) » ), les autres disques pouvant être configurés par la suite par l'utilisateur pour être utilisés pour stocker les machines virtuelles (voir « [Configuration du stockage d'un serveur HGR-STOR-2](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore) » ).
 
@@ -53,7 +53,7 @@ Comme vous pouvez le constater, aucun datastore n'est créé sur le premier disq
 > [!primary]
 >
 > Le saviez-vous ?
-> Les solutions [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/) sont basées sur des installations ESXi avec le schéma de partitionnement `small`.
+> Les solutions [VMware on OVHcloud](/links/hosted-private-cloud/vmware) sont basées sur des installations ESXi avec le schéma de partitionnement `small`.
 >
 
 ### Comment sélectionner le schéma de partitionnement ?

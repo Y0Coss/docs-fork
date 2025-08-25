@@ -1,7 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
 excerpt: Znajdź najczęściej zadawane pytania dotyczące usług Public Cloud OVHcloud
-updated: 2024-10-11
+updated: 2025-06-17
 ---
 
 <style>
@@ -58,7 +58,7 @@ Tak, obrazy cloud dostarczane przez OVHcloud zawierają skrypty cloud-init, któ
 
 Tak i nie.
 
-Tak, ponieważ opcja jest aktywna (flag CPU VMX* jest widoczny na Twojej instancji). Możesz więc korzystać z każdego rozwiązania wirtualizacji w swojej instancji (KVM, QEMU, VirtualBox, Xen, HyperV, itp.).
+Tak, ponieważ opcja jest aktywna (*flag CPU VMX* jest widoczny na Twojej instancji). Możesz więc korzystać z każdego rozwiązania wirtualizacji w swojej instancji (KVM, QEMU, VirtualBox, Xen, HyperV, itp.).
 
 Nie, ponieważ po przeprowadzeniu migracji instancji na żywo (może to nastąpić w każdej chwili, w oparciu o cykl życia hypervisora), Twoje jądro Linux może nie działać (kernel panic).
 
@@ -86,9 +86,7 @@ Zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](/pages/publ
 
 /// details | Jak tworzyć użytkowników OpenStack i zarządzać nimi?
 
-Aby móc korzystać z interfejsów API Horizon lub OpenStack, należy utworzyć użytkownika OpenStack. Możesz utworzyć nieograniczoną liczbę.
-
-Zapoznaj się z przewodnikiem [Tworzenie i usuwanie użytkownika OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user).
+**[Opcjonalnie od września 2023]** Użytkownik [OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) może zostać utworzony do korzystania z interfejsów API Horizon lub OpenStack. Jest to opcjonalne, ponieważ wdrożyliśmy logowanie jednokrotne (SSO: *Single Sign-On*) między Panelem klienta OVHcloud a Horizon.
 
 ///
 

@@ -1,7 +1,7 @@
 ---
 title: 'Abilitazione e configurazione di Edge Network Firewall'
 excerpt: 'Come configurare Edge Network Firewall per i servizi'
-updated: 2025-04-28
+updated: 2025-06-04
 ---
 
 ## Obiettivo
@@ -9,6 +9,11 @@ updated: 2025-04-28
 Per proteggere i servizi clienti esposti agli indirizzi IP pubblici, OVHcloud offre un firewall stateless configurato e integrato nell’infrastruttura **Anti-DDoS**: Edge Network Firewall. Consente di limitare l’esposizione dei servizi agli attacchi DDoS, eliminando specifici flussi di rete provenienti dall’esterno della rete OVHcloud.
 
 **Questa guida ti mostra come configurare Edge Network Firewall per i tuoi servizi.**
+
+> [!warning]
+>
+> **Avviso**: la funzionalità "Scrubbing Center: modalità permanente" ha raggiunto la fine del ciclo di vita (EOL) e sarà disattivata definitivamente l'8 settembre 2025.
+>
 
 > [!primary]
 >
@@ -21,13 +26,13 @@ Per proteggere i servizi clienti esposti agli indirizzi IP pubblici, OVHcloud of
 
 ## Requisiti
 
-- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([server dedicato](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/it/vps/), [istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud), [Additional IP](/links/network/additional-ip), ecc.)
+- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([server dedicato](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [istanza Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), ecc.)
 - Accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
-> Questa funzionalità potrebbe non essere disponibile o essere limitata sui server della [**Linea di prodotti Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità potrebbe non essere disponibile o essere limitata sui server della [**Linea di prodotti Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, visitate la nostra [pagina di confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, visitate la nostra [pagina di confronto](/links/bare-metal/eco-compare).
 
 > [!warning]
 > Edge Firewall Network non supporta il protocollo QUIC.

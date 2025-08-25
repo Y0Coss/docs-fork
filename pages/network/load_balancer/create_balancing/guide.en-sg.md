@@ -12,7 +12,7 @@ The new OVH Load Balancer service offers a variety of load balancing methods for
 
 ## Requirements
 
-- You must be logged in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- You must be logged in to the [OVH Control Panel](/links/manager).
 - You need to have created a server farm.
 
 ## Instructions
@@ -21,7 +21,7 @@ The new OVH Load Balancer service offers a variety of load balancing methods for
 
 Load balancing is used in server farms. This setting defines the way that requests are distributed between the servers within the farm.
 
-To understand the basics of the OVH Load Balancer service, please refer to the [Load Balancer Introduction](/pages/network/load_balancer/use_presentation){.external}.
+To understand the basics of the OVH Load Balancer service, please refer to the [Load Balancer Introduction](/pages/network/load_balancer/use_presentation).
 
 |Algorithm|Features|
 |---|---|

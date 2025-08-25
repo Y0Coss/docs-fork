@@ -1,7 +1,7 @@
 ---
 title: Setting-up a Persistent Volume on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Volumes (PV), attach a Pod to a PVC, change PV reclaim policy and delete created objects'
-updated: 2024-08-14
+updated: 2025-06-05
 ---
 
 In this tutorial we are going to guide you through a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
@@ -34,7 +34,7 @@ PVC consume abstract storage resources (the PVs) as Pods consume node resources.
 
 ## So you want some persistent storage on your cluster
 
-Let's say you need some persistent storage on your cluster, some kind of network storage for OVHcloud Managed Kubernetes Service that currently means a storage based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}. In Kubernetes terms you will need two objects:  a `PersistentVolumeClaim` and its associated `PersistentVolume`.
+Let's say you need some persistent storage on your cluster, some kind of network storage for OVHcloud Managed Kubernetes Service that currently means a storage based on [Cinder](https://docs.openstack.org/cinder/latest/). In Kubernetes terms you will need two objects:  a `PersistentVolumeClaim` and its associated `PersistentVolume`.
 
 How do you get them? You simply need to create the PVC object in your cluster. Kubernetes will see your claim and, according to its available resources, allocate a PV corresponding to your claim.
 
@@ -178,11 +178,11 @@ Events:
 
 ## Storage Classes
 
-We currently support three [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes:
+We currently support the following [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes:s
 
 * `csi-cinder-high-speed-gen2` storage class is based on hardware that includes SSD disks with NVMe interfaces. The performance allocation is progressive and linear (30 IOPS allocated per GB and 0.5MB/s allocated per GB) with a maximum of 20k IOPS and 1GB/s per volume. The IOPS and bandwidth performance will increase as  scale up the storage space.
 * `csi-cinder-high-speed` performance is fixed. You will get up to 3,000 IOPS per volume, regardless of the volume size. 
-* `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). 
+* `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). (Not supported yet on [MKS Premium plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium#storage-classes)).
 
 All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device. They are distributed transparently, on three physical local replicas.
 
@@ -196,7 +196,7 @@ csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Imm
 csi-cinder-high-speed-gen2        cinder.csi.openstack.org   Delete          Immediate           true                   5h11m
 ```
 
-When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/){.external}.
+When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/).
 
 Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [Resizing Persistent Volumes](/pages/public_cloud/containers_orchestration/managed_kubernetes/resizing-persistent-volumes) tutorial. Kubernetes PVCs resizing only allows to expand volumes, not to decrease them.
 
@@ -220,7 +220,7 @@ There are 2 possible reclaim policies:
 
 * `Delete`: when the PVC is deleted, the PV and the associated storage in the external infrastructure (i.e. the Cinder storage in our case) are both deleted.
 
-For every [Storage Class](https://kubernetes.io/docs/concepts/storage/storage-classes/){.external} there is a  reclaim policy set by default, that can be changed for individual instances of PV.  On our Cinder based storage classes, **the reclaim policy by default is `Delete`**, as you can verify:
+For every [Storage Class](https://kubernetes.io/docs/concepts/storage/storage-classes/) there is a  reclaim policy set by default, that can be changed for individual instances of PV.  On our Cinder based storage classes, **the reclaim policy by default is `Delete`**, as you can verify:
 
 ```bash
 kubectl get pv
@@ -311,6 +311,6 @@ It will not be automatically deleted when a user deletes PVC `default/test-pvc`
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our community of users on <https://community.ovh.com/en/>.

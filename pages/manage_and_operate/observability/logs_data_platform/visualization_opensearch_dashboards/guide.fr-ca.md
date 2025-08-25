@@ -5,7 +5,7 @@ updated: 2022-06-13
 
 ## Objective
 
-This guide will help you unleash the full power of [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/index/){.external} and craft some beautiful Dashboards from your logs.
+This guide will help you unleash the full power of [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/index/) and craft some beautiful Dashboards from your logs.
 
 ## Requirements
 
@@ -24,7 +24,7 @@ After some training you will be able to do this kind of Dashboard:
 
 To access your logs from OpenSearch Dashboards, you will need to setup an OpenSearch Alias and link them to your Graylog streams, so here we go:
 
-1. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+1. Log in to the [OVHcloud Control Panel](/links/manager).
 2. In the Alias panel, click on the `Add an alias`{.action} button
 3. Choose a name and define a description for your alias
 4. Save the entry by clicking the `Save`{.action} button
@@ -54,11 +54,11 @@ In this configuration page, you can configure as the Index name, the full name o
 
 You can also explore any [OpenSearch index](/pages/manage_and_operate/observability/logs_data_platform/opensearch_index) you created on the platform. One OpenSearch Dashboards instance allows you to explore all the data you delivered on Logs Data Platform.
 
-To know what you can do with OpenSearch Dashboards, read the [OpenSearch Dashboards documentation](https://opensearch.org/docs/latest/dashboards/index/){.external}
+To know what you can do with OpenSearch Dashboards, read the [OpenSearch Dashboards documentation](https://opensearch.org/docs/latest/dashboards/index/)
 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - Documentation: [Guides](/products/observability-logs-data-platform)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms)
+- Create an account: [Try it!](/links/manage-operate/ldp)

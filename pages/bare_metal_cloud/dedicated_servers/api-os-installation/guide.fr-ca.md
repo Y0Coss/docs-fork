@@ -1,12 +1,12 @@
 ---
 title: "API OVHcloud et installation d'un OS"
 excerpt: "Découvrez comment l'API OVHcloud vous permet d'installer ou de réinstaller un OS sur votre serveur"
-updated: 2025-02-25
+updated: 2025-06-06
 ---
 
 ## Objectif
 
-Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](/links/bare-metal/bare-metal) à l'aide de l'[API OVHcloud](https://api.ovh.com/).
+Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](/links/bare-metal/bare-metal) à l'aide de l'[API OVHcloud](/links/api).
 
 ## Prérequis
 
@@ -184,7 +184,6 @@ Avec les paramètres suivants :
 |operatingSystem|Le nom de l'OS à installer|✅|
 |customizations|Personnalisation de la réinstallation OS|⚠️¹|
 |storage|Configuration du stockage de la réinstallation OS|❌|
-|properties|Propriétés arbitraires à passer au datasource config drive de cloud-init|❌|
 
 ¹ Spécifique au système d'exploitation, certaines personnalisations peuvent être requises dans certains cas.
 

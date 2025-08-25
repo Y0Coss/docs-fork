@@ -21,7 +21,7 @@ O **D**omain **N**ame **S**ystem **SEC**urity tensions (**DNSSEC**), permite pro
 > A opção DNSSEC está atualmente indisponível para os nomes de domínio registados na OVHcloud que tenham uma extensão em **.it**.
 >
 
-Para mais informações sobre o funcionamento do **DNSSEC**, consulte a nossa página "[Compreender o DNSSEC](/links/web/domains-dnssec){.external}".
+Para mais informações sobre o funcionamento do **DNSSEC**, consulte a nossa página "[Compreender o DNSSEC](/links/web/domains-dnssec)".
 
 Não hesite também em consultar os nossos manuais sobre [os servidores DNS da OVHcloud](/pages/web_cloud/domains/dns_server_general_information) e sobre a [edição de uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit) se deseja mais informações sobre estes assumptos.
 
@@ -29,7 +29,7 @@ Não hesite também em consultar os nossos manuais sobre [os servidores DNS da O
 
 - Dispor de um nome de domínio.
 - O domínio afetado deve dispor de uma extensão compatível com o DNSSEC.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
 
 ## Instruções
 
@@ -50,7 +50,7 @@ Para verificar se o domínio utiliza a configuração DNS da OVHcloud, clique na
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
->>>
+>>
 >> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
@@ -84,7 +84,7 @@ Para ativar (ou desativar) a solução **DNSSEC** para o seu domínio, clique na
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
->>>
+>>
 >> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}
@@ -117,7 +117,7 @@ Quando tiver concluído a obtenção destes 4 parâmetros, clique nas guias abai
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
 > **Etapa 2**
->>>
+>>
 >> Clique no menu `Nomes de domínios`{.action} e escolha o domínio em causa.
 >>
 >> ![Domain Names](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-names.png){.thumbnail}

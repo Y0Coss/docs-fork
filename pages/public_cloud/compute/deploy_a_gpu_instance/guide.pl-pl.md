@@ -1,7 +1,7 @@
 ---
 title: 'Uruchomienie instancji GPU'
 excerpt: 'Dowiedz się, jak uruchomić instancję GPU z systemem Linux lub Windows'
-updated: 2025-04-28
+updated: 2025-05-28
 ---
 
 > [!primary]
@@ -51,7 +51,7 @@ lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-Karta graficzna jest dostępna, ale jeszcze nie można jej użyć. Aby to było możliwe, najpierw trzeba zainstalować sterownik NVIDIA. Lista pakietów jest dostępna pod tym adresem: [Lista dostępnych pakietów do systemu Linux](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+Karta graficzna jest dostępna, ale jeszcze nie można jej użyć. Aby to było możliwe, najpierw trzeba zainstalować sterownik NVIDIA. Lista pakietów jest dostępna pod tym adresem: [Lista dostępnych pakietów do systemu Linux](http://developer.download.nvidia.com/compute/cuda/repos/).
 
 Wprowadź następujące polecenia:
 
@@ -61,6 +61,8 @@ sudo dpkg -i cuda-repo-XXXX-XXXXXX
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install cuda
+sudo apt-get install -y cuda-drivers
+sudo apt-get install linux-headers-$(uname -r)
 sudo reboot
 ```
 
@@ -144,7 +146,7 @@ Podaj adres IPv4 swojej instancji i nazwę użytkownika “Administrator”, a n
 > Jeśli wystąpią problemy z wykonaniem tej procedury, sprawdź, czy na urządzeniu są dozwolone połączenia zdalne (RDP). W tym celu przejrzyj ustawienia systemu, reguły zapory i ewentualne ograniczenia sieci.
 >
 
-Po uruchomieniu instancji GPU należy zainstalować sterownik NVIDIA z [oficjalnej strony internetowej](https://www.nvidia.com/Download/index.aspx){.external}.
+Po uruchomieniu instancji GPU należy zainstalować sterownik NVIDIA z [oficjalnej strony internetowej](https://www.nvidia.com/Download/index.aspx).
 
 Następnie wystarczy zainstalować wymagany sterownik, który będzie widoczny tutaj:
 

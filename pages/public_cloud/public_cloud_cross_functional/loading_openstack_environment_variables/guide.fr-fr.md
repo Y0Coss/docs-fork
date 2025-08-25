@@ -20,7 +20,7 @@ Charger les variables d'environnement OpenStack sur votre poste vous permettra d
 
 Afin de récupérer vos variables d'environnement, vous pouvez télécharger le fichier OpenRC de votre utilisateur OpenStack créé au préalable.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud en haut à gauche.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud en haut à gauche.
 <br> Dans le menu de gauche, sous la rubrique **Paramètres**, cliquez sur `Utilisateurs & Rôles`{.action}. Ensuite, cliquez sur les `...`{.action} à droite de votre utilisateur et sélectionnez `Télécharger le fichier RC d'OpenStack`{.action}.
 
 ![openstack-variables](images/download_rc_file.png){.thumbnail}
@@ -35,7 +35,7 @@ Un fichier OpenRC correspond à un utilisateur et aussi à une zone. Vous ne pou
 * Chargez le contenu du fichier dans l’environnement courant. Le mot de passe de l’utilisateur Horizon correspondant vous sera alors demandé.
 
 ```bash
-admin@vpsxxxxxx:~$ source openrc.sh
+admin@remote_host:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
@@ -72,6 +72,6 @@ set OS_PASSWORD="Mot de passe de l'utilisateur Horizon"
 
 ## Aller plus loin
 
-Pour apprendre à utiliser OpenStack : [Documentation OpenStack](https://docs.openstack.org/){.external}
+Pour apprendre à utiliser OpenStack : [Documentation OpenStack](https://docs.openstack.org/)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

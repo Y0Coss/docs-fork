@@ -1,7 +1,7 @@
 ---
 title: "Come creare un server Minecraft su un VPS o un server dedicato"
 excerpt: "Come installare il tuo server Minecraft"
-updated: 2021-06-29
+updated: 2025-06-06
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2021-06-29
 
 Minecraft è un videogioco da costruzione di successo globale. Per giocare in modalità multiplayer, il server deve essere ospitato su un server.
 
-È possibile noleggiare un server Minecraft precostruito o configurarlo su un [VPS](https://www.ovhcloud.com/it/vps/) o su un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) per permetterti di risparmiare e avere il controllo completo sull'istanza di gioco.
+È possibile noleggiare un server Minecraft precostruito o configurarlo su un [VPS](/links/bare-metal/vps) o su un [server dedicato](/links/bare-metal/bare-metal) per permetterti di risparmiare e avere il controllo completo sull'istanza di gioco.
 
 **Questa guida ti mostra come avviare un server Minecraft Java Edition su un VPS OVHcloud e testarne la connettività.**
 
@@ -24,7 +24,7 @@ Minecraft è un videogioco da costruzione di successo globale. Per giocare in mo
 
 ## Prerequisiti
 
-- Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) sul proprio account OVHcloud
+- Disporre di un [VPS](/links/bare-metal/vps) sul proprio account OVHcloud
 - Aver installato una distribuzione GNU/Linux sul server
 - Avere accesso amministratore (sudo) via SSH al server
 - Comprendere principalmente l'amministrazione GNU/Linux
@@ -32,7 +32,7 @@ Minecraft è un videogioco da costruzione di successo globale. Per giocare in mo
 ## Procedura
 
 > [!primary]
-> Questa guida si basa sulla versione "1.17" di Minecraft Java Edition e sulla versione "16.0.1" di OpenJDK.
+> Questa guida si basa sulla versione "1.21" di Minecraft Java Edition e sulla versione "24.0.1" di OpenJDK.
 >
 
 ### Step 1: preparare il server
@@ -46,29 +46,29 @@ Una volta installato il sistema operativo, accedi al tuo VPS in SSH come descrit
 Per prima cosa, aggiorna i pacchetti con le versioni più recenti:
 
 ```sh
-~$ sudo apt update
+$ sudo apt update
 ```
 
 ```sh
-~$ sudo apt full-upgrade
+$ sudo apt full-upgrade
 ```
 
 Per assicurarti che siano installati tutti i pacchetti necessari, utilizza questo comando:
 
 ```sh
-~$ sudo apt install screen nano wget git
+$ sudo apt install screen nano wget git
 ```
 
 Installa il pacchetto Java:
 
 ```sh
-~$ sudo apt install openjdk-16-jdk
+$ sudo apt install openjdk-24-jdk
 ```
 
 Per evitare di creare vulnerabilità nel tuo sistema, crea un utente chiamato "minecraft" che eseguirà le azioni del server:
 
 ```sh
-~$ sudo adduser minecraft —disabled-login —disabled-password
+$ sudo adduser minecraft --disabled-password
 ```
 
 Ti vengono richieste diverse informazioni è sufficiente premere il tasto `Entrata`{.action} per confermarli.
@@ -78,7 +78,7 @@ L'utente è stato creato. Ti ricordiamo che per questo utente non è stata speci
 Passa al nuovo utente:
 
 ```sh
-~$ sudo su - minecraft
+$ sudo su - minecraft
 ```
 
 > [!primary]
@@ -89,7 +89,7 @@ Passa al nuovo utente:
 Per completare la preparazione dell'installazione, crea una cartella di nome `server`.
 
 ```sh
-~$ mkdir ~/server & cd ~/server
+$ mkdir ~/server && cd ~/server
 ```
 
 ### Step 2: installa il tuo server Vanilla Minecraft
@@ -100,9 +100,9 @@ Per completare la preparazione dell'installazione, crea una cartella di nome `se
 >
 
 Per prima cosa, copia e incolla il link di download del software server.
-<br>Sul [sito ufficiale di Minecraft](https://minecraft.net/download/server){.external}, clicca con il tasto destro sul link di download e seleziona `Copia l'indirizzo del link`{.action}.
+<br>Sul [sito ufficiale di Minecraft](https://minecraft.net/download/server), clicca con il tasto destro sul link di download e seleziona `Copia l'indirizzo del link`{.action}.
 
-![Download del server](images/download_jar.png){.thumbnail}
+![Download del server](images/jar_file_download.png){.thumbnail}
 
 Nel tuo terminale da riga di comando, verifica di essere ancora nella cartella `server` e utilizza `wget` per scaricare il file.
 <br>Sostituisci il `link_di_telecaricamento` con l'URL reale che hai copiato in precedenza.
@@ -118,7 +118,7 @@ Prima di avviare il server, è necessario accettare la licenza del software (EUL
 ```
 
 A questo punto viene creato un file chiamato `eula.txt` nella root del tuo server, contenente la linea `eula=true`. Questo indica al software che accetta le condizioni di utilizzo di Minecraft.
-<br>Per maggiori informazioni, consulta il [sito ufficiale di Minecraft](https://www.minecraft.net/){.external}.
+<br>Per maggiori informazioni, consulta il [sito ufficiale di Minecraft](https://www.minecraft.net/).
 
 Il server è pronto per il lancio.
 
@@ -133,7 +133,7 @@ Per prima cosa, creeremo una nuova `shell` chiamata `minecraft1`:
 La finestra attiva del tuo terminale cambia automaticamente e trasferisci automaticamente su una nuova sessione `shell`. Se necessario, è possibile creare altre `shell` e visualizzarle via questo comando:
 
 ```sh
-screen -ls
+~/server$ screen -ls
 ```
 
 Per staccarti dalla `shell` (e mantenerla in corso di esecuzione), clicca su `Ctrl`{.action}, poi su `a`{.action} e poi su `d`{.action} sulla tastiera.
@@ -149,14 +149,31 @@ Premi anche `Ctrl`{.action}, poi `a`{.action}, poi `n`{.action} sulla tastiera.
 Nella shell `minecraft1` creata precedentemente, avvia il server Minecraft con il comando seguente. (Utilizza `ls` strumenti per verificare il nome del file nel caso in cui fosse diverso).
 
 ```sh
+~/server$ java -Xmx1024M -Xms1024M -jar server.jar nogui
+```
+
+- `Xmx1024M`: configura il server per l'avvio con 1024 MB o 1 GB di RAM. Questo limite può essere aumentato se si vuole che il server parta con più RAM.
+- `Xms1024M`: consente al server di utilizzare un massimo di 1024M di RAM. È possibile aumentare questo limite se si desidera che il server funzioni con più RAM, per ospitare più giocatori o se si ritiene che il server funzioni lentamente.
+- `jar`: Specifica il file jar del server da eseguire.
+- `nogui`: indica al server di non eseguire l'interfaccia grafica.
+
+Si può anche usare il comando seguente:
+
+```sh
 ~/server$ java -jar server.jar
+```
+
+Una volta che il server è attivo e funzionante, si ottiene il seguente risultato:
+
+```console
+[14:52:58] [Server thread/INFO]: Done (41.530s)! For help, type "help"
 ```
 
 Per arrestare il server, inserisci il comando `stop`.
 
 ### Step 3: connettersi al server
 
-L'istanza di server è attiva Per giocare a gioco, scarica il client Minecraft dal [sito web ufficiale](https://www.minecraft.net/){.external}.
+L'istanza di server è attiva Per giocare a gioco, scarica il client Minecraft dal [sito web ufficiale](https://www.minecraft.net/).
 
 Installa e avvia il client per il tuo sistema operativo e collegati.
 
@@ -172,7 +189,7 @@ Nessuna porta da inserire di default
 
 Il tuo server Vanilla Minecraft è installato sul tuo VPS.
 
-Questa guida è valida anche per un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/) o un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/). Con queste soluzioni, potrai usufruire anche di risorse fisiche garantite e stabili in qualsiasi momento della giornata, dato che l'hardware è dedicato.
+Questa guida è valida anche per un [server dedicato OVHcloud](/links/bare-metal/bare-metal) o un'istanza [Public Cloud](/links/public-cloud/public-cloud). Con queste soluzioni, potrai usufruire anche di risorse fisiche garantite e stabili in qualsiasi momento della giornata, dato che l'hardware è dedicato.
 
 ## Per saperne di più <a name="gofurther"></a>
 

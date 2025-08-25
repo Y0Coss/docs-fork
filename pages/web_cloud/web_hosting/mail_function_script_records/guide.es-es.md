@@ -12,7 +12,7 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 >
 > Esta guía se refiere principalmente a los mensajes de correo enviados desde scripts situados en su [alojamiento web de OVHcloud](/links/web/hosting) mediante la función "mail()" de PHP.
 >
-> Si quiere gestionar las direcciones de correo electrónico incluidas en su MX Plan o en su plan de [hosting de OVHcloud](/links/web/hosting){.external}, consulte nuestra documentación sobre los [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
+> Si quiere gestionar las direcciones de correo electrónico incluidas en su MX Plan o en su plan de [hosting de OVHcloud](/links/web/hosting), consulte nuestra documentación sobre los [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -24,12 +24,12 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting){.external}.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
+- Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting).
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](/links/manager){.external}. Una vez que se haya conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
+El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](/links/manager). Una vez que se haya conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 
@@ -203,7 +203,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 > Ponemos a su disposición la parte que viene a continuación para acompañarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](/links/partner). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
-Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()" de PHP, los alojamientos compartidos permiten enviar emails pasando por un script que utiliza el protocolo SMTP (Simple Mail Transfer Protocol). El tamaño total del mensaje de correo electrónico no podrá ser superior a **10 MB* (es decir, **7/8 MB sin encapsular**).
+Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()" de PHP, los alojamientos compartidos permiten enviar emails pasando por un script que utiliza el protocolo SMTP (Simple Mail Transfer Protocol). El tamaño total del mensaje de correo electrónico no podrá ser superior a **10 MB** (es decir, **7/8 MB sin encapsular**).
 
 > [!warning]
 > 

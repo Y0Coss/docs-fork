@@ -1,7 +1,7 @@
 ---
 title: 'Creare un’istanza GPU'
 excerpt: 'Scopri come creare un’istanza GPU con Linux o Windows'
-updated: 2025-04-28
+updated: 2025-05-28
 ---
 
 > [!primary]
@@ -51,7 +51,7 @@ lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-La scheda grafica è presente ma non ancora utilizzabile. A questo punto, è necessario installare i driver NVIDIA. La lista dei pacchetti è disponibile al seguente indirizzo: [Lista dei pacchetti Linux disponibili](https://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+La scheda grafica è presente ma non ancora utilizzabile. A questo punto, è necessario installare i driver NVIDIA. La lista dei pacchetti è disponibile al seguente indirizzo: [Lista dei pacchetti Linux disponibili](https://developer.download.nvidia.com/compute/cuda/repos/).
 
 Successivamente, inserisci i seguenti comandi:
 
@@ -61,6 +61,8 @@ sudo dpkg -i cuda-repo-XXXX-XXXXXX
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install cuda
+sudo apt-get install -y cuda-drivers
+sudo apt-get install linux-headers-$(uname -r)
 sudo reboot
 ```
 
@@ -143,7 +145,7 @@ Inserisci l’indirizzo IPv4 della tua istanza e seleziona l’utente “Amminis
 > In caso di difficoltà, verifica che il tuo dispositivo autorizzi la connessione RDP. Per farlo, controlla le impostazioni di sistema, le regole del firewall e le eventuali limitazioni della rete.
 >
 
-Una volta connesso all’istanza, è necessario installare il driver NVIDIA dal [sito ufficiale](https://www.nvidia.com/Download/index.aspx){.external}.
+Una volta connesso all’istanza, è necessario installare il driver NVIDIA dal [sito ufficiale](https://www.nvidia.com/Download/index.aspx).
 
 Non ti resta che installare il driver necessario, che successivamente comparirà qui:
 

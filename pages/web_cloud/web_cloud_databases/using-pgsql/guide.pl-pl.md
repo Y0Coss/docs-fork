@@ -8,7 +8,7 @@ Chcesz korzystać z PostgreSQL? Sprawdź, jak w prosty sposób tworzyć bazy dan
 
 ## Informacje ogolne
 
-### Wymagania
+### Wymagania początkowe
 
 - Posiadanie instancji Web Cloud Databases
 - Zapoznanie się z przewodnikiem na temat [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -33,7 +33,7 @@ Aby zalogować się do bazy danych, musisz dysponować:
 - Hasłem do bazy danych
 - Nazwą bazy danych.
 
-Wszystkie te informacje są dostępne w [Panelu klienta](https://www.ovh.com/manager/web/){.external}.
+Wszystkie te informacje są dostępne w [Panelu klienta](/links/manager).
 
 Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.ref}
 

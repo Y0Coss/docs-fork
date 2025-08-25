@@ -10,7 +10,7 @@ updated: 2025-04-28
 
 ## Objetivo
 
-A criação de um projeto é a primeira etapa na implantação de [instâncias Public Cloud](https://www.ovhcloud.com/pt/public-cloud/).
+A criação de um projeto é a primeira etapa na implantação de [instâncias Public Cloud](/links/public-cloud/public-cloud).
 
 **Este guia o levará através das etapas de criação do seu primeiro projeto Public Cloud.**
 
@@ -31,7 +31,7 @@ Após ter tomado conhecimento, valide os termos dos contratos selecionando a cas
 
 ![criação de projeto](images/project-creation.png){.thumbnail width="400"}
 
-Após a conclusão do processo de criação, o seu novo projeto Public Cloud será visível no canto superior esquerdo da secção "Public Cloud" {.action} da Área de Cliente OVHcloud:
+Após a conclusão do processo de criação, o seu novo projeto Public Cloud será visível no canto superior esquerdo da secção `Public Cloud`{.action} da Área de Cliente OVHcloud:
 
 ![novo projeto criado](images/pci-interface-2025.png){.thumbnail width="400"}
 

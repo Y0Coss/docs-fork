@@ -141,7 +141,7 @@ Clique nas guias abaixo para exibir sucessivamente cada um dos **4** etapas.
 |Duração|A duração de execução de uma tarefa é de 60 minutos. Se um script ultrapassar este tempo de execução, será automaticamente interrompido pelo sistema.|
 |Variáveis|Apenas pode definir variáveis num script. Adicioná-las ao URL que chama o script não funcionará (Exemplo: www/jobs/cron.php?variável=value).|
 |Limite de dados|Uma tarefa só pode gerar 5 MB de dados (*stdin/stderr*). Por exemplo, se um script escrever dados num ficheiro .txt, a execução será automaticamente interrompida quando o ficheiro atingir 5 MB.|
-|Scripts que produzem erros|Se um script falhar, ele será automaticamente desativado após 10 tentativas de execução com falha. O relatório de erro só será enviado quando as 10 tentativas tiverem falhado.</br>Corrija o script em função do relatório de erro recebido e reative a "tarefa CRON" no painel de configuração (clique em `...`{.action} e em `Alterar`{.action}).|
+|Scripts que produzem erros|Se um script falhar, ele será automaticamente desativado após 10 tentativas de execução com falha. O relatório de erro só será enviado quando as 10 tentativas tiverem falhado.<br>Corrija o script em função do relatório de erro recebido e reative a "tarefa CRON" no painel de configuração (clique em `...`{.action} e em `Alterar`{.action}).|
 |Relatórios de execução|Os relatórios só serão enviados para o endereço eletrónico selecionado uma vez por dia (durante as horas noturnas).|
 
 ### Reparação
@@ -152,11 +152,11 @@ Um teste simples para ver se o script vai produzir um erro é executá-lo num br
 
 #### Verificação da utilização dos caminhos absolutos
 
-Tenha o cuidado de utilizar caminhos de acesso absolutos aos ficheiros dos seus scripts. A constante "DIR", por exemplo, pode ajudar a receber o caminho corrente nos scripts PHP ([documentação PHP](https://www.php.net/manual/en/language.constants.predefined.php){.external}).
+Tenha o cuidado de utilizar caminhos de acesso absolutos aos ficheiros dos seus scripts. A constante "DIR", por exemplo, pode ajudar a receber o caminho corrente nos scripts PHP ([documentação PHP](https://www.php.net/manual/en/language.constants.predefined.php)).
  
 #### Verificação dos logs de execução
 
-No \[logs] do seu alojamento Web, acessível a partir da sua Área de [Cliente OVHcloud](/links/manager){.external}, poderá ver a categoria de log intitulada "CRON".
+No \[logs] do seu alojamento Web, acessível a partir da sua Área de [Cliente OVHcloud](/links/manager), poderá ver a categoria de log intitulada "CRON".
 
 Para mais informações, consulte o nosso guia ["Consultar as estatísticas e os logs do meu site alojado numa oferta partilhada"](/pages/web_cloud/web_hosting/logs_and_statistics).
 

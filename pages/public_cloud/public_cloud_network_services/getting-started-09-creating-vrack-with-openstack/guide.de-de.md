@@ -43,6 +43,8 @@ Bevor Sie beginnen, sollten Sie unbedingt diese Leitfäden lesen, um Ihre OpenSt
 > Da das vRack eine von OVHcloud verwaltete Infrastruktur ist, können Sie es nur über das OVHcloud Kundencenter und die OVHcloud APIv6 verwalten.
 >
 
+<a name="control-panel"></a>
+
 #### Über das OVHcloud Kundencenter
 
 > [!primary]
@@ -54,8 +56,6 @@ Wenn Sie ein älteres Projekt haben und kein vRack besitzen, müssen Sie eines b
 Loggen Sie sich in Ihrem OVHcloud Kundencenter ein und klicken Sie im linken Menü auf den Button `Dienst hinzufügen`{.action} (Warenkorbsymbol). Benutzen Sie den Filter oben auf der Seite oder scrollen Sie nach unten, um den Dienst `vRack`{.action} zu finden.
 
 ![vRack bestellen](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/orderingvrack25.png){.thumbnail}
-
-![vRack bestellen](images/ordering_vrack_2024.png){.thumbnail}
 
 Sie werden auf eine andere Seite weitergeleitet, um die Bestellung zu bestätigen. Dieser Vorgang dauert einige Minuten.
 

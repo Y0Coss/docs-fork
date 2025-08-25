@@ -16,7 +16,7 @@ Mithilfe des Horizon-Interface kann jedem Benutzer ein Passwort zugewiesen werde
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud Projekt](/pages/public_cloud/compute/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
+- Sie haben ein [Public Cloud Projekt](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -49,7 +49,7 @@ Sobald der OpenStack User erstellt ist, können Sie seine Zugangsdaten für den 
 
 ### Passwörter von OpenStack-Benutzern verwalten
 
-Nachdem Sie sich bei [OpenStack Horizon](https://horizon.cloud.ovh.net){.external} eingeloggt haben, können Sie ein OpenStack-Passwort erstellen:
+Nachdem Sie sich bei [OpenStack Horizon](https://horizon.cloud.ovh.net) eingeloggt haben, können Sie ein OpenStack-Passwort erstellen:
 
 ![Login Horizon](images/1_H_login_window.png){.thumbnail}
 

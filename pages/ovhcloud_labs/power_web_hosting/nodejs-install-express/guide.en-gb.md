@@ -6,7 +6,7 @@ updated: 2021-02-04
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to begin developing your project using [Express](https://expressjs.com/){.external}.
+You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to begin developing your project using [Express](https://expressjs.com/).
 
 This guide will explain how to deploy a simple *Hello World* server on Express.
 
@@ -15,7 +15,7 @@ This guide will explain how to deploy a simple *Hello World* server on Express.
 ## Requirements
 
 - a [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](/pages/ovhcloud_labs/power_web_hosting/getting-started) guide before going further.
 

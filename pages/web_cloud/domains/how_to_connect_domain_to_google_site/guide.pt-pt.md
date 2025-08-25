@@ -43,7 +43,7 @@ Quando utilizar um Google Site com um domínio OVHcloud, prepare primeiro o seu 
 
 ### 2. Configurar os registos DNS na sua conta OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}. Clique em `Nomes de domínio`{.action} e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 
@@ -95,7 +95,7 @@ Siga as etapas em ordem nas seguintes guias:
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www" (exemplo: `www.mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.<br>
->> - Se não tiver um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" CNAME`{.action}.
+>> - Se não tiver um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `CNAME`{.action}.
 >>
 >> Preencha o campo **Subdomínio** com o valor `www` e introduza `ghs.googlehosted.com.` no campo **Destino**. Uma vez que estes valores têm de ser alterados, verifique-os na página "[Valores dos registos CNAME](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU)" da documentação oficial.<br>
 >> Clique em `Seguinte`{.action} para validar o seu registo "CNAME".
