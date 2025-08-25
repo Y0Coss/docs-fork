@@ -204,7 +204,7 @@ volumes:
 
 #### Préparer le dossier des certificats SSL
 
-Traefik stocke les certificats générés par Let's Encrypt dans un fichier nommé acme.json. Ce fichier doit exister avant le lancement et avoir des permissions strictes.
+Traefik stocke les certificats générés par Let's Encrypt dans un fichier nommé `acme.json`. Ce fichier doit exister avant le lancement et avoir des permissions strictes.
 
 Créez le dossier :
 
@@ -245,7 +245,7 @@ Accédez à n8n dans un navigateur via l'URL `https://n8n.exemple.com/`. Remplac
 
 > [!tabs]
 > Premier accès
->>	Un formulaire de création de compte s'affiche. Complétez-le pour configurer le premier utilisateur administrateur de votre instance n8n.
+>> Un formulaire de création de compte s'affiche. Complétez-le pour configurer le premier utilisateur administrateur de votre instance n8n.
 >>
 >> ![Install n8n VPS](images/setup_n8n.png){.thumbnail}
 >> 
