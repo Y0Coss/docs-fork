@@ -1,7 +1,7 @@
 ---
 title: Kafka - Create publisher and consumer applications
 excerpt: Develop your first Python applications using Kafka
-updated: 2025-08-19
+updated: 2025-08-25
 ---
 
 ## Objective

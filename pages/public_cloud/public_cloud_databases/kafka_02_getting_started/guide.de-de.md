@@ -1,7 +1,7 @@
 ---
 title: Kafka - Getting started
 excerpt: Discover Kafka on OVHcloud Public Cloud
-updated: 2025-08-19
+updated: 2025-08-25
 ---
 
 Kafka on OVHcloud is a fully managed, distributed data-streaming platform available through OVHcloud’s Public Cloud. Built on the open-source strength of Apache Kafka, it’s crafted for event-driven applications, near-real-time data transfer, streaming analytics, and high-throughput pipelines. Your data is stored in organized topics and partitions, enabling OVHcloud to handle multiple simultaneous data flows with scalability and resilience. With intuitive management via the OVHcloud Control Panel (or API/Terraform), you can provision, configure, and deploy Kafka clusters in minutes, offloading infrastructure management and keeping focus squarely on your data-driven use cases.
@@ -10,11 +10,11 @@ Kafka on OVHcloud is a fully managed, distributed data-streaming platform availa
 
 ### Product page
 
-Discover how OVHcloud's Managed Apache Kafka® service lets you deploy and manage full Apache Kafka clusters within the Public Cloud complete with scalable topics and partitions, integrated tools like Schema Registry and high availability, plus support for Terraform, private networking, and competitive pay-as-you-go pricing: [Kafka product page](https://www.ovhcloud.com/en/public-cloud/apache-kafka/)
+Discover how OVHcloud's Managed Apache Kafka® service lets you deploy and manage full Apache Kafka clusters within the Public Cloud complete with scalable topics and partitions, integrated tools like Schema Registry and high availability, plus support for Terraform, private networking, and competitive pay-as-you-go pricing: [Kafka product page](/links/public-cloud/analytics-kafka)
 
 ### Pricing
 
-Explore a comprehensive breakdown of OVHcloud’s Public Cloud pricing, where you’ll find detailed hourly and monthly rates across services like virtual instances, managed databases, streaming and analytics tools—including plans for Kafka: [Kafka pricing](https://www.ovhcloud.com/en/public-cloud/prices/#7211)
+Explore a comprehensive breakdown of OVHcloud’s Public Cloud pricing, where you’ll find detailed hourly and monthly rates across services like virtual instances, managed databases, streaming and analytics tools—including plans for Kafka: [Kafka pricing](/links/public-cloud/prices-kafka)
 
 ### Capabilities
 

@@ -1,7 +1,7 @@
 ---
 title: Kafka - How to use Access Control Lists (ACLs)
 excerpt: Learn how to configure Access Control Lists (ACLs)
-updated: 2025-08-19
+updated: 2025-08-25
 ---
 
 ## Objective
