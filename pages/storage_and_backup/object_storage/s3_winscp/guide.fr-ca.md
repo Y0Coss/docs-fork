@@ -1,7 +1,7 @@
 ---
 title: "Object Storage - Utiliser Object Storage avec WinSCP"
 excerpt: Apprenez à configurer WinSCP pour gérer vos buckets et vos objets
-updated: 2023-10-16
+updated: 2025-08-25
 ---
 
 ## Objectif
