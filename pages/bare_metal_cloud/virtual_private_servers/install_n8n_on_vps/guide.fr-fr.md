@@ -1,16 +1,16 @@
 ---
-title: "Installer N8N sur un VPS OVHcloud"
-excerpt: "Apprenez à héberger la plateforme d’automatisation N8N sur un VPS OVHcloud à l’aide de Docker et Traefik"
-updated: 2025-08-22
+title: "Comment installer n8n sur un VPS OVHcloud"
+excerpt: "Découvrez comment héberger la plateforme d’automatisation n8n sur un VPS OVHcloud à l’aide de Docker et Traefik"
+updated: 2025-08-25
 ---
 
 ## Objectif
 
-Ce guide vous explique comment installer et exécuter [n8n](https://n8n.io), une plateforme open source d’automatisation de workflows, sur un VPS OVHcloud. L’installation s’appuie sur [Docker](https://www.docker.com/), avec le serveur [Traefik](https://doc.traefik.io/traefik/ ) pour gérer automatiquement les certificats SSL.
+Ce guide vous explique comment installer et exécuter [n8n](https://n8n.io), une plateforme open source d’automatisation de workflows, sur un VPS OVHcloud. L’installation s’appuie sur [Docker](https://www.docker.com/), avec le serveur [Traefik](https://doc.traefik.io/traefik/) pour gérer automatiquement les certificats SSL.
 
 ## Prérequis
 
-- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) fonctionnel (Debian 11 ou supérieur recommandé)
+- Disposer d'un [VPS](/links/bare-metal/vps) fonctionnel (Debian 11 ou supérieur recommandé)
 - Disposer d'un nom de domaine
 - Disposer d'un accès administrateur (sudo) via SSH à votre serveur
 
@@ -22,7 +22,7 @@ Ce guide vous explique comment installer et exécuter [n8n](https://n8n.io), une
 - [Vous utilisez une image OVHcloud préinstallée](#step2)
 - [Vous n'utilisez pas d'image OVHcloud préinstallée](#step3)
 - [Configuration DNS](#step4)
-- [Accéder à l’interface N8N](#step5)
+- [Accéder à l’interface n8n](#step5)
 - [Conclusion](#step6)
 
 ### Se connecter à votre VPS <a name="step1"></a>
@@ -35,14 +35,14 @@ ssh <user>@IP_VPS
 
 ### Vous utilisez une image OVHcloud préinstallée <a name="step2"></a>
 
-Si vous avez choisi un **VPS OVHcloud avec l’image N8N préinstallée**, **vous n’avez pas besoin d’installer Docker ni Docker Compose** : ces outils sont déjà présents et configurés.
+Si vous avez choisi un **VPS OVHcloud avec l’image n8n préinstallée**, **vous n’avez pas besoin d’installer Docker ni Docker Compose** : ces outils sont déjà présents et configurés.
 
 Retrouvez tous les fichiers nécessaires (y compris `docker-compose.yml` et `.env`) dans le dossier `/debian/n8n/` sur votre VPS.
 
 Modifiez le fichier `.env` situé dans ce dossier pour y renseigner les informations suivantes :
 
 - `DOMAIN_NAME` : votre nom de domaine (ex : `vps.ovh.net`).
-- `SUBDOMAIN` : le sous-domaine utilisé pour accéder à N8N (ex : `vps-xxxxxxx`).
+- `SUBDOMAIN` : le sous-domaine utilisé pour accéder à n8n (ex : `vps-xxxxxxx`).
 - `EMAIL` : l’adresse e-mail utilisée pour générer les certificats SSL via Let’s Encrypt.
 
 Une fois le fichier `.env` mis à jour, exécutez la commande suivante depuis le dossier `/root/n8n-traefik/` :
@@ -55,7 +55,7 @@ docker compose up -d
 
 #### Installer Docker et Docker Compose
 
-Pour déployer N8N via Docker sur un VPS OVHcloud, Docker et Docker Compose doivent être installés. Cette méthode est compatible avec la majorité des distributions proposées par OVHcloud (Debian 11, Debian 12, Ubuntu 22.04...).
+Pour déployer n8n via Docker sur un VPS OVHcloud, Docker et Docker Compose doivent être installés. Cette méthode est compatible avec la majorité des distributions proposées par OVHcloud (Debian 11, Debian 12, Ubuntu 22.04...).
 
 ##### Étape 1 - Mettez le système à jour
 
@@ -99,7 +99,7 @@ docker --version
 docker compose version
 ```
 
-#### Préparer la configuration Traefik + N8N
+#### Préparer la configuration Traefik + n8n
 
 Créez un dossier de projet où résidera la stack Docker :
 
@@ -107,11 +107,11 @@ Créez un dossier de projet où résidera la stack Docker :
 mkdir n8n-traefik && cd n8n-traefik
 ```
 
-#### Créer les fichiers de configuration.
+#### Créer les fichiers de configuration
 
 ##### Fichier .env
 
-Ce fichier vous permet de définir les variables réutilisées dans le fichier docker-compose.yml.
+Ce fichier vous permet de définir les variables réutilisées dans le fichier `docker-compose.yml`.
 
 Créez le fichier :
 
@@ -131,15 +131,14 @@ Remplacez `exemple.com` par votre véritable nom de domaine et `admin@exemple.co
 
 > [!warning]
 >
-> Si vous ne possédez pas encore de nom de domaine, commandez-en un sur notre [site web](https://www.ovhcloud.com/fr/domains/).
+> Si vous ne possédez pas encore de nom de domaine, commandez-en un sur notre [site web](/links/web/domains).
 
 ##### Fichier docker-compose.yml
 
-Ce fichier contient la définition des services N8N et Traefik. Il configure notamment :
+Ce fichier contient la définition des services n8n et Traefik. Il configure notamment :
 
 - Le reverse proxy et la gestion SSL avec Traefik.
-- L’authentification de base pour accéder à N8N.
-
+- L’authentification de base pour accéder à n8n.
 
 Créez le fichier :
 
@@ -201,7 +200,7 @@ volumes:
 
 > [!warning]
 >
-> Par défaut, l’utilisateur et le mot de passe sont définis sur admin / admin123. Cette méthode n’est pas activée dans toutes les versions de N8N. Si vous souhaitez l’utiliser malgré tout, pensez à modifier ces valeurs dans le fichier docker-compose.yml avant de lancer la stack, et utilisez un mot de passe fort.
+> Par défaut, l’utilisateur et le mot de passe sont définis sur admin / admin123. Cette méthode n’est pas activée dans toutes les versions de n8n. Si vous souhaitez l’utiliser malgré tout, pensez à modifier ces valeurs dans le fichier docker-compose.yml avant de lancer la stack, et utilisez un mot de passe fort.
 
 #### Préparer le dossier des certificats SSL
 
@@ -230,39 +229,39 @@ docker compose up -d
 
 ### Configuration DNS <a name="step4"></a>
 
-Assurez-vous que votre sous-domaine (ex : n8n.exemple.com) pointe bien vers l’adresse IP de votre VPS dans la zone DNS. Pour plus de détails, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external} ».
+Assurez-vous que votre sous-domaine (ex : n8n.exemple.com) pointe bien vers l’adresse IP de votre VPS dans la zone DNS. Pour plus de détails, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 > [!warning]
 >
-> Si vous ne possédez pas encore de nom de domaine, commandez-en un sur notre [site web](https://www.ovhcloud.com/fr/domains/).
+> Si vous ne possédez pas encore de nom de domaine, commandez-en un sur notre [site web](/links/web/domains).
 
-### Accéder à l’interface N8N <a name="step5"></a>
+### Accéder à l’interface n8n <a name="step5"></a>
 
-Accédez à N8N dans un navigateur via l'URL `https://n8n.exemple.com/`. Remplacez `n8n.exemple.com` par le domaine réel que vous avez défini.
+Accédez à n8n dans un navigateur via l'URL `https://n8n.exemple.com/`. Remplacez `n8n.exemple.com` par le domaine réel que vous avez défini.
 
 > [!warning]
 >
-> Depuis la version 1.0 de N8N, vous devez obligatoirement créer un compte administrateur lors du premier accès à votre instance auto-hébergée, même si vous avez déjà un compte sur [n8n.cloud](https://n8n.cloud). Les comptes sont **propres à chaque instance**. Un compte créé sur votre VPS ne peut pas être utilisé sur une autre instance, même avec la même adresse e-mail.
+> Depuis la version 1.0 de n8n, vous devez obligatoirement créer un compte administrateur lors du premier accès à votre instance auto-hébergée, même si vous avez déjà un compte sur [n8n.cloud](https://n8n.cloud). Les comptes sont **propres à chaque instance**. Un compte créé sur votre VPS ne peut pas être utilisé sur une autre instance, même avec la même adresse e-mail.
 
 > [!tabs]
 > Premier accès
->>	Un formulaire de création de compte s'affiche. Complétez-le pour configurer le premier utilisateur administrateur de votre instance N8N.
+>>	Un formulaire de création de compte s'affiche. Complétez-le pour configurer le premier utilisateur administrateur de votre instance n8n.
 >>
->> ![Install N8N VPS](images/setup_n8n.png){.thumbnail}
+>> ![Install n8n VPS](images/setup_n8n.png){.thumbnail}
 >> 
-> Compte N8N déjà créé
+> Compte n8n déjà créé
 >> Vous êtes redirigé vers l’écran de connexion. Utilisez les identifiants définis précédemment.
 >>
->> ![Install N8N VPS](images/login_n8n.png){.thumbnail}
+>> ![Install n8n VPS](images/login_n8n.png){.thumbnail}
 
 ### Conclusion <a name="step6"></a>
 
-Vous disposez désormais d’une instance N8N opérationnelle et sécurisée sur votre VPS OVHcloud, avec une gestion automatique des certificats SSL grâce à Traefik. Pour aller plus loin, consultez la [documentation officielle](https://docs.n8n.io/) de N8N pour créer vos premiers workflows.
+Vous disposez désormais d’une instance n8n opérationnelle et sécurisée sur votre VPS OVHcloud, avec une gestion automatique des certificats SSL grâce à Traefik. Pour aller plus loin, consultez la [documentation officielle](https://docs.n8n.io/) de n8n pour créer vos premiers workflows.
 
 ## Aller plus loin
 
-[Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}
+[Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/)
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner)
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
