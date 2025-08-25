@@ -1,7 +1,7 @@
 ---
 title: "SAP pre-installation wizard"
 excerpt: "This guide provides instructions for using the SAP pre-installation wizard from OVHcloud"
-updated: 2025-08-01
+updated: 2025-08-30
 ---
 
 ## Introduction
@@ -14,7 +14,7 @@ The SAP pre-installation wizard offered by OVHcloud simplifies the deployment of
 
 ## First Steps
 
-To access our SAP pre-installation wizard, go to the `SAP Features Hub`{.action} section of the `Hosted Private Cloud`{.action} menu, available from the [Manager](/links/manager) of your OVHcloud account.
+To access our SAP pre-installation wizard, go to the `SAP Features Hub`{.action} section of the `Hosted Private Cloud`{.action} menu, available from the [OVHcloud Control Panel](/links/manager).
 
 ![sap-features-hub](images/sap-features-hub.png){.thumbnail}
 
@@ -28,7 +28,7 @@ You have two options: start a blank wizard to manually enter all the necessary i
 
 **Requirements**
 
-- You must have a VMware service on OVHcloud<sup>1</sup> already deployed in your customer account.
+- You must have a VMware on OVHcloud service<sup>1</sup> already deployed in your customer account.
 - A Public Cloud project must be created in your OVHcloud account.
     - In this Public Cloud project, an Object Storage container must be created to store your SAP sources<sup>2</sup>.
 - A DHCP server must be configured in the network where you want to deploy your SAP system for the OVHcloud virtual machine<sup>3</sup> that will be deployed during the installation process.
@@ -41,13 +41,13 @@ In the case of an SAP S/4HANA Java installation, also download and deposit the D
 
 <sup>2</sup> *OVHcloud is not authorized to provide the required SAP sources for an installation. Therefore, we ask you to store your SAP sources in an OVHcloud Object Storage container. To do this, use the SAP Maintenance Planner tool to generate the list and download the set of SAP sources necessary for your desired installation. Don't forget to deposit the SAPCAR executable in your Object Storage container.*
 
-<sup>3</sup> *When deploying your SAP system, a dedicated virtual machine named "ovhcloud-sap-wizard" will be deployed in your VMware service on OVHcloud. This virtual machine is essential for orchestrating the entire installation process. It is equipped with 2 vCPUs, 1 GB of RAM, and 30 GB of storage. At the end of the installation process, whether successful or failed, this virtual machine will be automatically deleted.*
+<sup>3</sup> *When deploying your SAP system, a dedicated virtual machine named "ovhcloud-sap-wizard" will be deployed in your VMware on OVHcloud service. This virtual machine is essential for orchestrating the entire installation process. It is equipped with 2 vCPUs, 1 GB of RAM, and 30 GB of storage. At the end of the installation process, whether successful or failed, this virtual machine will be automatically deleted.*
 
 ## Step-by-Step
 
 ### Step 1
 
-In this first step, select the VMware service on OVHcloud that you want to use for your SAP installation. Choose the datacenter, as well as the cluster that will host your SAP virtual machines.
+In this first step, select the VMware on OVHcloud service that you want to use for your SAP installation. Choose the datacenter, as well as the cluster that will host your SAP virtual machines.
 
 ![sap-preinstallation-wizard-step-1](images/step-1.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Enter the information for configuring and sizing your virtual machines.
 
 We strongly recommend using the vSAN datastore for the virtual machine hosting the SAP HANA database, offering optimized performance. For SAP application servers, you have the option to use an NFS datastore (ssd-XXXXXX).
 
-It is also recommended to create and select your Thick storage policy for your SAP HANA virtual machine. You can find information related to this storage policy in our [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_hana_template_vmware/) in the "Configuring advanced settings" chapter, point 5.
+It is also recommended to create and select your Thick storage policy for your SAP HANA virtual machine. You can find information related to this storage policy in our [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_hana_template_vmware) in the "Configuring advanced settings" chapter, point 5.
 
 > [!warning]
 > It is not possible to apply a Thick storage policy on NFS datastores (ssd-XXXXXX). Therefore, if you select an NFS datastore for your SAP HANA machine, the Thin storage policy will be used.
@@ -104,11 +104,13 @@ Our wizard gives you the option to choose a different OVA/OVF virtual machine te
 
 Our wizard allows you to activate our features like our backup agent for SAP HANA or export SAP logs to our Logs Data Platform.
 
-**OVHcloud Backint Agent**  
-We invite you to review the prerequisites in our [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent/).
+**OVHcloud Backint Agent**
 
-**SAP logs on Logs Data Platform**  
-We invite you to review the chapters Logs Data Platform, Data stream, and collection tools in our [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup/).
+We invite you to review the prerequisites in our [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent).
+
+**SAP logs on Logs Data Platform**
+
+We invite you to review the chapters Logs Data Platform, Data stream, and collection tools in our [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup).
 
 ![sap-preinstallation-wizard-step-7](images/step-7.png){.thumbnail}
 
@@ -146,6 +148,7 @@ After validating the information, you will be redirected to the pre-installation
 > **An error message indicates that an internal error occurred during installation, and I cannot start a new installation because a previous task is still in progress.**
 >>
 >> If an internal error occurs and the task status has not been correctly updated, please delete the task in question via our API.
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/sap/{taskId}
@@ -155,9 +158,9 @@ After validating the information, you will be redirected to the pre-installation
 ## Frequently Asked Questions (FAQ)
 
 > [!faq]
-> **Can I use a VMware service on OVHcloud other than the SAP HANA on Private Cloud range?**
+> **Can I use a VMware on OVHcloud service other than the SAP HANA on Private Cloud range?**
 >>
->> Although our SAP pre-installation wizard is optimized for the SAP HANA on Private Cloud range, it is possible to use a VMware service on OVHcloud from another range. However, we strongly recommend the SAP HANA on Private Cloud range for a solution specifically designed and certified to host SAP systems with an SAP HANA database.
+>> Although our SAP pre-installation wizard is optimized for the SAP HANA on Private Cloud range, it is possible to use a VMware on OVHcloud service from another range. However, we strongly recommend the SAP HANA on Private Cloud range for a solution specifically designed and certified to host SAP systems with an SAP HANA database.
 >>
 > **Can I use my OVA/OVF virtual machine templates to deploy the SAP system?**
 >>
@@ -165,15 +168,14 @@ After validating the information, you will be redirected to the pre-installation
 >>
 > **Can I resume my installation if it failed?**
 >>
->> In the event of installation failure, you will not be able to resume the installation. You will need to delete the constructed SAP system and launch a new installation. If necessary, you can also contact OVHcloud support for assistance.
+>> In the event of an installation failure, you will not be able to resume the installation. You will need to delete the constructed SAP system and launch a new installation. If necessary, you can also contact [OVHcloud support](https://help.ovhcloud.com/csm?id=csm_get_help) for assistance.
 >>
 > **Can I add an SAP application server to an existing SAP system?**
 >>
 >> The OVHcloud SAP pre-installation wizard does not support adding additional components to an existing SAP system.
 
-## Going Further
+## Go Further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
-  
 
-Exchange with our [user community](/links/community).
+Join our [community of users](/links/community).
