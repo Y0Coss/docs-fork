@@ -1,7 +1,7 @@
 ---
 title: "Ridimensionare un’istanza Public Cloud con il CLI OpenStack"
 excerpt: Scopri come modificare le risorse dell’istanza per adattarle a un aumento dell’attività
-updated: 2023-09-26
+updated: 2025-08-25
 ---
 
 > [!primary]
