@@ -452,6 +452,7 @@
             + [Adding a new Tier-1 Gateway in NSX](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-10-add-new-tier1-gateway)
             + [Setting up an IPsec Tunnel with NSX](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec)
             + [NSX-T: retrieving logs](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-t_get_logs_by_api)
+            + [Reading and filtering NSX-T logs](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-13-filter-logs)
             + [NSX-T: configure BGP for interconnexion of PCC](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configure_bgp_between_pcc_inside_vRack)
             + [NSX - Configuring NSX StandAlone Edge with L2VPN](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_l2vpn_standalone_edge)
             + [NSX - FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-11-faq)
