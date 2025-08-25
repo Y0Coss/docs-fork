@@ -8,7 +8,7 @@ updated: 2025-07-24
 
 This guide helps OVHcloud Public Cloud users design and deploy a secure, scalable Landing Zone by outlining key components and best practices.
 
-It covers core networking setup (vRack, subnets, gateways, floating IPs), traffic management (load balancer), and security layers (firewall, WAAP, Bastion).
+It covers core networking setup (vRack, subnets, gateways, Floating IPs), traffic management (load balancer), and security layers (firewall, WAAP, Bastion).
 
 It also includes guidance on infrastructure choices, IAM, backups, logging, private connectivity, and cost-control, offering a clear foundation for production-ready cloud environments.
 
@@ -181,4 +181,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our [community of users](/links/community) and visit our [Discord channel](https://discord.gg/ovhcloud).
 
-<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+_<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc._
