@@ -1,7 +1,7 @@
 ---
 title: Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
-updated: 2025-08-21
+updated: 2025-08-25
 ---
 
 ## Objectif
@@ -275,7 +275,7 @@ Validez et passez à l'étape suivante en cliquant sur `NEXT`{.action}.
 
 ![Zerto Test Failover](images/zerto_OvhToOvh_test_02.png){.thumbnail}
 
-Nous sommes partis sur le choix 1, à savoir un test sur un VPG.
+Nous avons sélectionné le choix 1, à savoir un test sur un VPG.
 
 À cette étape on retrouve un résumé des actions liées au VPG :
 
@@ -397,7 +397,7 @@ Le cas échéant, les actions sont à faire via les icônes à droite du VPG.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_11.png){.thumbnail}
 
-Au moment de la validation du commit, vous pouvez automatiquement configurer le VPG en sens inverse (appelée **Reverse Protection**).
+Au moment de la validation du commit, vous pouvez automatiquement configurer le VPG en sens inverse (appelé **Reverse Protection**).
 
 Validez en cliquant sur `COMMIT`{.action}
 
@@ -407,11 +407,11 @@ Au niveau du VPG, vous pouvez noter que la direction (via la flèche) de réplic
 
 ### Préparer et effectuer un retour en arrière
 
-Suivant comment a été fait le **Failover**, l'éventuel retour sur le site principal (cela n'est pas une obligation) peut nécessiter plusieurs actions.
+En fonction de la configuration du **Failover**, l'éventuel retour sur le site principal (cela n'est pas une obligation) peut nécessiter plusieurs actions.
 
-Si vous avez basculé avec du **Reverse Protection**, le retour arrière consiste à faire un **Failover Live** (se reporter à la partie idoine pour les actions à faire).
+Si vous avez basculé avec le **Reverse Protection**, le retour arrière consiste à faire un **Failover Live** (se reporter à la partie idoine pour les actions à faire).
 
-Si vous avez basculé **sans** du **Reverse Protection**, le retour arrière consiste à créer un VPG **puis** faire un **Failover Live** (se reporter aux sections précédentes pour les actions à faire).
+Si vous avez basculé **sans** le **Reverse Protection**, le retour arrière consiste à créer un VPG **puis** faire un **Failover Live** (se reporter aux sections précédentes pour les actions à faire).
 
 ## Aller plus loin
 

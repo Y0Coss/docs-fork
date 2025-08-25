@@ -1,7 +1,7 @@
 ---
 title: Setting up Zerto Virtual Replication between two OVHcloud data centres
 excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms
-updated: 2025-08-21
+updated: 2025-08-25
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Utiliser Zerto entre OVHcloud et une plateforme tierce"
 excerpt: 'Découvrez comment connecter votre Zerto OVHcloud à une autre plateforme.'
-updated: 2025-08-21
+updated: 2025-08-25
 ---
 
 ## Objectif :
@@ -251,7 +251,7 @@ Cliquez sur `Add`{.action} pour créer une nouvelle règle.
 Cette règle comporte les paramètres suivants :
 
 - Action : « Pass » (Autoriser le flux)
-- Interface : « IPsec » (les flux entrant à autoriser proviennent du VPN)
+- Interface : « IPsec » (les flux entrants à autoriser proviennent du VPN)
 - Protocole : « TCP »
 
 Les sections Source et Destination sont de type « Single host or Network » et référencent respectivement les IPs de la ZVM OVHcloud vers la ZVM client.
