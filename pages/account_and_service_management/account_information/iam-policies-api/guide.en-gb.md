@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud API
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2025-08-18
+updated: 2025-08-27
 ---
 
 ## Objective
@@ -288,74 +288,6 @@ Check it via `GET /iam/policy`:
 ```
 
 The policies have been created successfully. Now, "***user1***" can **carry out reboots and create snapshots** on the VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***". "***user2***" can **execute any vps action except for the deletion of snapshots** on the VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
-
-#### Conditions
-
-It is possible to add conditions to policies. The policy will only be valid if the conditions are met.
-Conditions are added to an access policy in the following form:
-
-```json
-{
-  "operator": "AND",
-  "conditions": [
-    {
-        "operator": "MATCH",
-        "values": {
-            "resource.Tag(environment)": "prod",
-            "resource.Type": "dnsZone"
-      }
-    },
-    {
-      "operator": "NOT",
-      "conditions": [
-        {
-            "operator": "MATCH",
-            "values": {
-                "date(Europe/Paris).WeekDay.IN": "Saturday,Sunday"
-          }
-        }
-      ]
-    }
-  ]
-}
-```
-
-For example, a policy with this condition is valid if the targeted resources are of type **dnsZone** with the tag **"environment:prod"**, except on **Saturday and Sunday** in the Paris time zone.
-
-The operator field specifies how the conditions will be evaluated:
-
-- **AND**: All conditions must be validated
-- **NOT**: None of the conditions must be validated
-- **OR**: At least one condition must be validated
-- **MATCH**: Condition evaluation operator
-
-The available conditions are:
-
-|       Condition        |                         Operator                          | Data Type |            Description             |                   Example                   |
-| :--------------------: | :--------------------------------------------------------: | :--------: | :--------------------------------: | :-----------------------------------------: |
-|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |  YYYY-MM-DD  |  Filter on calendar days   | "date.Date(America/New_York)": "2024-12-25" |
-|  date(location).Hour   | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |     int      |       Filter on hours        |   "date(Europe/Paris).Hour.IN" : "7,8,9"    |
-| date(location).WeekDay | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |    string    | Filter on days of the week | "date(Europe/Berlin).WeekDay.AFTER": "monday" |
-| resource.Tag(tag_key)  |              EQ <br>STARTS_WITH <br>ENDS_WITH              |    string    |        Filter on tags         |      "resource.Tag(environment): "dev"      |
-|     resource.Name      |          EQ <br>IN <br>STARTS_WITH <br>ENDS_WITH           |    string    | Filter on resource names  |     "resource.Name.Start_with": "vps-"      |
-|     resource.Type      |          EQ <br>IN <br>STARTS_WITH <br>ENDS_WITH           |    string    |  Filter on resource types  |      "resource.Type.In": "dnsZone,vps"      |
-|       request.IP       |                   EQ <br>IN <br>IN_RANGE                   |    IP v4     |  Filter on client source IP  |    "request.IP.IN_RANGE": "10.23.0.0/16"    |
-
-Dates use time zones based on [IANA database names](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). If not specified, the date will be evaluated in UTC time zone.
-
-The available operators for condition types are:
-
-- **EQ**: The value must exactly match the specified value
-- **BEFORE** or **LT** (less than): The value must be strictly less than
-- **AFTER** or **GE** (greater or equal): The value must be equal to or greater than
-- **GT** (greater than): The value must be strictly greater than
-- **LE** (less or equal): The value must be equal to or less than
-- **IN**: The value must be included in the list
-- **START_WITH**: The value must start with the specified value
-- **END_WITH**: The value must end with the specified value
-- **IN_RANGE**: The value must be in the specified IP subnet
-
-If not specified, the default operator is **EQ**.
 
 #### Conditions
 

@@ -1,7 +1,7 @@
 ---
 title: Gestionar los contactos de los servicios
 excerpt: Cómo gestionar los distintos contactos de los servicios de OVHcloud
-updated: 2025-08-18
+updated: 2025-08-27
 ---
 
 ## Objetivo

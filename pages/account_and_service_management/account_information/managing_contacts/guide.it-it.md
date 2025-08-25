@@ -1,7 +1,7 @@
 ---
 title: 'Gestire i contatti dei servizi OVHcloud'
 excerpt: 'Come gestire i contatti dei tuoi servizi dallo Spazio Cliente OVHcloud'
-updated: 2025-08-18
+updated: 2025-08-27
 ---
 
 ## Obiettivo

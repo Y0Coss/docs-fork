@@ -1,7 +1,7 @@
 ---
 title: "Cómo utilizar las políticas de IAM con la API de OVHcloud (EN)"
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2025-08-18
+updated: 2025-08-27
 ---
 
 ## Objective

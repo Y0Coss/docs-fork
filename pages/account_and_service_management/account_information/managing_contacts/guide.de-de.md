@@ -1,7 +1,7 @@
 ---
 title: 'Die Kontakte Ihrer Dienste verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten'
-updated: 2025-08-18
+updated: 2025-08-27
 ---
 
 Die meisten OVHcloud Dienste werden mithilfe mehrerer Kontakte verwaltet. Jedem dieser Kontakte ist eine eigene Kundenkennung zugewiesen. 

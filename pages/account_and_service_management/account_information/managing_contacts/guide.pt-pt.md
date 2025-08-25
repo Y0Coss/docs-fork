@@ -1,7 +1,7 @@
 ---
 title: 'Como gerir os contactos (gestores) dos serviços OVHcloud'
 excerpt: 'Saiba como definir ou alterar os contactos (gestores) dos serviços OVHcloud'
-updated: 2025-08-18
+updated: 2025-08-27
 ---
 
 ## Objetivo
