@@ -1,7 +1,7 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
-updated: 2025-08-22
+updated: 2025-08-25
 ---
 <style>
 .ovh-api-main { background:#fff;}
@@ -194,8 +194,8 @@ Exécutez l'API OVHcloud pour convertir les datastores en global:
 
 > [!warning]
 >
-> Attention : la conversion d’un datastore en global peut entrer en conflit avec certaines fonctionnalités VMware, comme **Storage DRS**.
-> Pour plus d’informations, consultez la [documentation VMware](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-troubleshooting-6-5/troubleshooting-resource-management/troubleshooting-storage-drs/storage-drs-cannot-operate-on-a-datastore.html). 
+> **Attention** : la conversion d’un datastore en global peut entrer en conflit avec certaines fonctionnalités VMware, comme **Storage DRS**.
+> Pour plus d’informations, consultez la [documentation VMware](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/6-5/vsphere-troubleshooting-6-5/troubleshooting-resource-management/troubleshooting-storage-drs/storage-drs-cannot-operate-on-a-datastore.html).
 
 
 <a name="preparevdcovhcontext"></a>
