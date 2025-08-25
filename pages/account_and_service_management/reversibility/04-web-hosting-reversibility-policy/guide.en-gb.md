@@ -1,6 +1,6 @@
 ---
 title: Reversibility Policy for the Managed Web Hosting product
-updated: 2025-08-20
+updated: 2025-08-25
 ---
 
 ## Objective
