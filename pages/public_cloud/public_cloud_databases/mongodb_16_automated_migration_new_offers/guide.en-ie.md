@@ -53,8 +53,6 @@ This section describes the technical changes and their impacts on the service pr
 
 #### How to Anticipate the Migration
 
-Migration can be initiated now towards the new Production and Advanced plans by following [the migration guide](/pages/public_cloud/public_cloud_databases/mongodb_12_howto_migrate_to_production_or_advanced).
-
 If your workload is small enough to fit the Discovery plan, a migration to this plan can be considered by following [this guide](/pages/public_cloud/public_cloud_databases/mongodb_11_howto_migrate_to_discovery). 
 
 Otherwise, once the migration operation is scheduled, it will be automatically applied at the scheduled time but can also be launched manually before this date.
