@@ -1,6 +1,6 @@
 ---
 title: "Reversibility Policy for the Managed Database System for Web Hosting product"
-updated: 2025-08-21
+updated: 2025-08-25
 ---
 
 ## Objective
