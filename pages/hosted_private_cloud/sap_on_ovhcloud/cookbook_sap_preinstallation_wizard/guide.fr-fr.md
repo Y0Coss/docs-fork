@@ -1,7 +1,7 @@
 ---
 title: "Assistant de pré-installation SAP"
 excerpt: "Ce guide fournit des instructions pour utiliser l'assistant de pré-installation SAP d'OVHcloud"
-updated: 2025-08-30
+updated: 2025-09-03
 ---
 
 ## Introduction

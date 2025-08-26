@@ -1,7 +1,7 @@
 ---
 title: "SAP pre-installation wizard"
 excerpt: "This guide provides instructions for using the SAP pre-installation wizard from OVHcloud"
-updated: 2025-08-30
+updated: 2025-09-03
 ---
 
 ## Introduction
