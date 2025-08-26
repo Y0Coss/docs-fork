@@ -1,7 +1,7 @@
 ---
 title: "Assistant de pré-installation SAP"
 excerpt: "Ce guide fournit des instructions pour utiliser l'assistant de pré-installation SAP d'OVHcloud"
-updated: 2025-08-01
+updated: 2025-08-30
 ---
 
 ## Introduction
@@ -14,7 +14,7 @@ L'assistant de pré-installation SAP proposé par OVHcloud facilite le déploiem
 
 ## Premiers pas
 
-Pour accéder à notre assistant de pré-installation SAP, rendez-vous dans la section `SAP Features Hub`{.action} du menu `Hosted Private Cloud`{.action}, disponible depuis le [Manager](/links/manager) de votre compte OVHcloud.
+Pour accéder à notre assistant de pré-installation SAP, rendez-vous dans la section `SAP Features Hub`{.action} du menu `Hosted Private Cloud`{.action}, disponible depuis [l'espace client](/links/manager) de votre compte OVHcloud.
 
 ![sap-features-hub](images/sap-features-hub.png){.thumbnail}
 
@@ -28,7 +28,7 @@ Vous avez deux options : démarrer un assistant vierge pour saisir manuellement 
 
 **Prérequis**
 
-- Vous devez disposer d'un service VMware sur OVHcloud<sup>1</sup> déjà déployé dans votre compte client.
+- Vous devez disposer d'un service VMware on OVHcloud<sup>1</sup> déjà déployé dans votre compte client.
 - Un projet Public Cloud doit être créé dans votre compte OVHcloud.
     - Dans ce projet Public Cloud, un conteneur Object Storage doit être créé pour y stocker vos sources SAP<sup>2</sup>.
 - Un serveur DHCP doit être configuré dans le réseau où vous souhaitez déployer votre système SAP pour la machine virtuelle OVHcloud<sup>3</sup> qui sera déployée le temps du processus d'installation.
@@ -83,7 +83,7 @@ Renseignez les informations pour la configuration et le dimensionnement de vos m
 
 Nous recommandons vivement d'utiliser le datastore vSAN pour la machine virtuelle hébergeant la base de données SAP HANA, offrant des performances optimisées. Pour les serveurs d'application SAP, vous avez cependant la possibilité d'utiliser un datastore NFS (ssd-XXXXXX).
 
-Il est également recommandé de créer et de sélectionner votre politique de stockage Thick pour votre machine virtuelle SAP HANA. Vous pouvez retrouver les informations relatives à cette politique de stockage dans notre [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_hana_template_vmware/) au chapitre « Configuration des paramètres avancés », point 5.
+Il est également recommandé de créer et de sélectionner votre politique de stockage Thick pour votre machine virtuelle SAP HANA. Vous pouvez retrouver les informations relatives à cette politique de stockage dans notre [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_hana_template_vmware) au chapitre « Configuration des paramètres avancés », point 5.
 
 > [!warning]
 > Il n'est pas possible d'appliquer une politique de stockage Thick sur les datastores NFS (ssd-XXXXXX). Par conséquent, si vous sélectionnez un datastore NFS pour votre machine SAP HANA, la politique de stockage Thin sera utilisée.
@@ -105,11 +105,13 @@ De plus, si vous décidez de déployer vos machines virtuelles avec différents 
 
 Notre assistant vous permet d'activer nos fonctionnalités comme notre agent de sauvegarde pour SAP HANA ou encore d'export des logs SAP dans notre Logs Data Platform.
 
-**OVHcloud Backint Agent**  
-Nous vous invitons à prendre connaissance des prérequis dans notre [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent/).
+**OVHcloud Backint Agent** 
+
+Nous vous invitons à prendre connaissance des prérequis dans notre [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent).
 
 **SAP logs on Logs Data Platform**  
-Nous vous invitons à prendre connaissance des chapitres Logs Data Platform, Data stream et outils de collecte dans notre [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup/).
+
+Nous vous invitons à prendre connaissance des chapitres Logs Data Platform, Data stream et outils de collecte dans notre [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_logs_on_ovhcloud_logs_data_platform_solution_setup).
 
 ![sap-preinstallation-wizard-step-7](images/step-7.png){.thumbnail}
 
@@ -130,7 +132,7 @@ Suite à la validation des informations, vous serez redirigé vers la page de su
 > [!faq]
 > **Le message d'erreur indique que la configuration demandée dépasse les capacités de mon datacentre.**
 >>
->> Si vous avez récemment supprimé des machines virtuelles pour libérer de la capacité au sein de votre datacentre, il se peut que les information de capacité ne soient pas encore mises à jour. Veuillez patienter quelques minutes avant de réessayer. Si le problème persiste, n'hésitez pas à contacter le support OVHcloud pour obtenir de l'aide.
+>> Si vous avez récemment supprimé des machines virtuelles pour libérer de la capacité au sein de votre datacentre, il se peut que les informations de capacité ne soient pas encore mises à jour. Veuillez patienter quelques minutes avant de réessayer. Si le problème persiste, n'hésitez pas à contacter le support OVHcloud pour obtenir de l'aide.
 >>
 > **Le fichier JSON importé contient des erreurs de syntaxe.**
 >>
@@ -170,7 +172,7 @@ Suite à la validation des informations, vous serez redirigé vers la page de su
 >>
 > **Puis-je reprendre mon installation si celle-ci a échoué ?**
 >>
->> En cas d'échec de l'installation, vous ne pourrez pas reprendre l'installation. Il faudra supprimer le système SAP construit et lancer une nouvelle installation. Si nécessaire, vous pouvez également contacter le support OVHcloud pour obtenir de l'aide.
+>> En cas d'échec de l'installation, vous ne pourrez pas reprendre l'installation. Il faudra supprimer le système SAP construit et lancer une nouvelle installation. Si nécessaire, vous pouvez également contacter le [support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour obtenir de l'aide.
 >>
 > **Puis-je ajouter un serveur d'application SAP à un système SAP existant ?**
 >>
