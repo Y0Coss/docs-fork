@@ -1,7 +1,7 @@
 ---
 title: Move2Cloud - Migrating VMware Workloads to OVHcloud SecNumCloud with Veeam Replication
 excerpt: Learn how to migrate your on-prem VMware workloads to an OVHcloud Hosted Private Cloud SecNumCloud environment using Veeam Replication
-updated: 2025-04-18
+updated: 2025-08-27
 ---
 
 ## Objective
@@ -154,6 +154,29 @@ To protect your VMs long-term, configure backup jobs in Veeam that use **OVHclou
 Follow the steps in our [dedicated backup guide](/pages/storage_and_backup/object_storage/s3_veeam).
 
 \*: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+
+## Troubleshooting
+
+### Verify ESXi host accessibility
+
+If you experience issues accessing the Hosted Private Cloud infrastructure during your backups, test connectivity to each host in the cluster from your Veeam components (server, proxy).
+
+Example for host .50:
+
+**On Windows (PowerShell)**
+```powershell
+Test-NetConnection -ComputerName [PCC_Host_IP] -Port 950
+```
+
+**On Linux**
+```bash
+nc -vz [PCC_Host_IP] 950
+```
+
+>[!primary]
+> - If the hosts are not reachable, create an outbound rule on your Veeam components to allow the port range **950-999**.
+> - Depending on the number of hosts, you may also need to open ranges **1100-1255** and **1300-1551**.
+> - If the hosts are reachable but errors persist, please contact OVHcloud Support for further analysis.
 
 ## Go further
 
