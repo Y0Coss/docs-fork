@@ -31,7 +31,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
 | Sécurité réseau (ACL) | Contrôle d’accès par liste IP  | IPv4, JSON | **Entrante** : configuration des IP autorisées via l’interface web (espace client) ou les API <br>**Sortante** : export de la configuration et l’adapter à l‘architecture cible  | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
-| vRack | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | NA | **Entrante** : <br>**Sortante** :  | [Création de V(x)LAN Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
+| vRack | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | NA | **Entrante** : activation et configuration de la connexion réseau <br>**Sortante** : prendre note de l'architecture réseau et la reproduire-la avec des VLAN.  | [Création de V(x)LAN Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
 
 
 ### 3. Fonctionnalités spécifiques
