@@ -32,7 +32,7 @@ Pour activer votre nom de domaine dans iCloud, suivez les instructions de la pag
 
 Pour savoir comment ajouter, modifier ou supprimer chaque type d'enregistrement DNS (MX, CNAME, TXT, etc.), consultez notre guide [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
 
-À l’aide des enregistrements DNS fournis par Apple ([Étape 1](#step1)), créez ou mettez à jour les champs correspondants dans votre zone DNS OVHcloud :
+À l’aide des enregistrements DNS relevés précédemment ([Étape 1](#step1)), créez ou mettez à jour les champs correspondants dans votre zone DNS OVHcloud :
 
 - **MX** : pour la réception des e-mails.
 - **CNAME** : pour les clefs DKIM (`sig1._domainkey...`, `sig2._domainkey...`).
