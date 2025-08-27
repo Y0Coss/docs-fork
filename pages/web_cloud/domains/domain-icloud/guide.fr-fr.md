@@ -28,7 +28,7 @@ Pour activer votre nom de domaine dans iCloud, suivez les instructions de la pag
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 2. Rendez-vous dans la partie `Web Cloud`{.action}.
 3. Cliquez sur `Zones DNS`{.action}, puis choisissez le nom de domaine concerné. 
-4. Ajoutez ou modifiez les enregistrements suivants fournis par Apple :  
+4. Ajoutez ou modifiez les enregistrements suivants :  
 
 Pour savoir comment ajouter, modifier ou supprimer chaque type d'enregistrement DNS (MX, CNAME, TXT, etc.), consultez notre guide [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
 
