@@ -79,7 +79,7 @@ Si votre nom de domaine est associé à des serveurs DNS externes à OVHcloud (W
 
 #### DKIM incomplet
 
-- Apple fournit plusieurs clefs DKIM (`sig1`, `sig2`, etc.). Toutes doivent être ajoutées dans la zone DNS.  
+- Apple vous invite à enregistrer plusieurs clefs DKIM (`sig1`, `sig2`, etc.) dans votre zone DNS. 
 
 #### Délai de propagation
 
