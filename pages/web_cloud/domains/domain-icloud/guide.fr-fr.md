@@ -6,7 +6,7 @@ updated: 2025-08-25
 
 ## Objectif
 
-Ce guide vous explique comment utiliser un nom de domaine acheté chez OVHcloud avec le service iCloud Mail d’Apple. Vous pourrez ainsi créer des adresses e-mail personnalisées (`prenom@mondomaine.fr`), entièrement gérées et hébergées par Apple.
+Ce guide vous explique comment utiliser un nom de domaine enregistré chez OVHcloud avec le service iCloud Mail d’Apple. Vous pourrez ainsi créer des adresses e-mail personnalisées (`prenom@mondomaine.fr`), entièrement gérées et hébergées par Apple.
 
 ## Prérequis
 
