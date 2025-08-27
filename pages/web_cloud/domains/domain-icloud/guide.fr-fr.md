@@ -65,7 +65,7 @@ Une fois cette étape terminée, votre domaine personnalisé est pleinement acti
 
 #### Vérifier où est gérée la zone DNS
 
-Si votre domaine pointe vers des serveurs DNS externes (Wix, Squarespace, Cloudflare, etc. ), la configuration doit être effectuée **chez eux**, pas dans l’espace client OVHcloud.  
+Si votre nom de domaine est associé à des serveurs DNS externes à OVHcloud (Wix, Squarespace, Cloudflare, etc. ), la configuration doit être effectuée dans l'interface de gestion de ces serveurs DNS, hors de l’espace client OVHcloud.  
 
 #### CNAME déjà existant
 
