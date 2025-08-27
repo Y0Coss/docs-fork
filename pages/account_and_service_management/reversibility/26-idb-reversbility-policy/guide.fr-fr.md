@@ -1,11 +1,11 @@
 ---
-title: "Politique de réversibilité du produit xxxxxx"
-updated: 2025-06-27
+title: "Politique de réversibilité du produit Managed In-Memory Database"
+updated: 2025-08-27
 ---
 
 ## Objectif
 
-Ce document est la politique de réversibilité du produit xxxx couvrant l’offre commerciale d’OVHcloud xxxxxx.
+Ce document est la politique de réversibilité du produit In-Memory Database couvrant l’offre commerciale d’OVHcloud Valkey.
 
 Cette politique vise à mettre en œuvre les principes généraux de réversibilité et notre conformité avec le Code de conduite SWIPO IaaS pour les fournisseurs de cloud.
 
@@ -21,25 +21,24 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-
+| Stockage clé-valeur en mémoire | Stockage haute performance de paires clé-valeur entièrement en mémoire | JSON, RDB, AOF | **Entrante** : import des données via API, la CLI ou restauration de dump  <br>**Sortante** : export avec les commandes BGSAVE ou dump  | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) <br><br>[Valkey - Se connecter avec CLI (EN)](/pages/public_cloud/public_cloud_databases/redis_03_connect_cli) |
+| Haute disponibilité | Basculement automatique avec Valkey Sentinel ou en mode cluster | NA | **Entrante** : configuration des réplicas et du basculement  <br>**Sortante** : : prendre notre des configurations  et les reproduire dans l'infrastructure cible | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
+| Persistance | Sauvegarde des données sur disque via snapshots RDB ou journaux AOF (logs)  | RDB, AOF | **Entrante** : import des snapshots ou des journaux AOF via la CLI Redis ou Valkey et configuration des sauvegardes <br>**Sortante** : export des données via la commande dump (CLI)   | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
+| Scalabilité | Mode cluster pour répartir les clés entre plusieurs instances de bases de données (shards) | pas de format particulier exigé, ça dépend du choix du client | **Entrante** : import des clés de ‘ resharding’ pour s’adapter à la topologie du service OVHcloud via la CLI  <br>**Sortante** : export et réimport des clés dans l’infrastructure cible via la CLI | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
 
 ### 2. Implémentations OVHcloud
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
+| Sécurité réseau (ACL) | Contrôle d’accès par liste IP  | IPv4, JSON | **Entrante** : configuration des IP autorisées via l’interface web (espace client) ou les API <br>**Sortante** : export de la configuration et l’adapter à l‘architecture cible  | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
+| vRack | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | NA | **Entrante** : <br>**Sortante** :  | [Création de V(x)LAN Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
 
 
 ### 3. Fonctionnalités spécifiques
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-| --- | --- | --- | **Entrante** : <br>**Sortante** :  | --- |
-
+| Infrastructure as a code | Déploiement automatisé via modules Terraform spécifiques à OVHcloud | NA | **Entrante** : scripts à adapter pour d’autres fournisseurs <br>**Sortante** : réécriture nécessaire des configurations Terraform | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs) |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrant** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortant** : commande et configuration un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
