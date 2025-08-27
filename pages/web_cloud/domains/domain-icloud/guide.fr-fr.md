@@ -41,7 +41,7 @@ Pour savoir comment ajouter, modifier ou supprimer chaque type d'enregistrement 
 
 > [!warning]
 >
-> Utilisez uniquement des guillemets droits " tels qu’ils apparaissent dans la documentation technique d’Apple (généralement en version anglaise). Les guillemets typographiques « » ou “ ” affichés dans certaines traductions ne doivent pas être utilisés dans la configuration DNS.
+> Utilisez uniquement des guillemets droits `"` tels qu’ils apparaissent dans la documentation technique d’Apple (généralement en version anglaise). Les guillemets typographiques « » ou “ ” affichés dans certaines traductions ne doivent pas être utilisés dans la configuration DNS.
 
 ### Étape 3 : Ajouter un enregistrement DMARC (optionnel) <a name="step3"></a>
 
