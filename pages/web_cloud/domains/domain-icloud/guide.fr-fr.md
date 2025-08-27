@@ -63,7 +63,7 @@ Une fois cette étape terminée, votre domaine personnalisé est pleinement acti
 
 ### Dépannages courants
 
-#### Vérifier l’endroit où est gérée la zone DNS
+#### Vérifier où est gérée la zone DNS
 
 Si votre domaine pointe vers des serveurs DNS externes (Wix, Squarespace, Cloudflare, etc. ), la configuration doit être effectuée **chez eux**, pas dans l’espace client OVHcloud.  
 
