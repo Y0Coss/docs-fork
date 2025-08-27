@@ -60,3 +60,7 @@ La tarification est en mode Pay as you go et dépend de la capacité mémoire, d
 ## Conservation des données après résiliation du contrat
 
 Une fois le service résilié, toutes les données présentes dans les instances Valkey sont supprimées de manière irréversible. Il incombe au client de réaliser une sauvegarde complète avant résiliation.
+
+OVH ne garantit pas l'exploitation et la disponibilité des sauvegardes pour effectuer des restaurations des données des clients après la résiliation du service.
+
+Les sauvegardes des bases de données clients réalisées par OVHcloud sont conservées pour une durée allant de 2 jours à un mois après la résiliation du contrat.
