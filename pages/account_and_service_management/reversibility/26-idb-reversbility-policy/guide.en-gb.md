@@ -1,11 +1,11 @@
 ---
-title: "Reversibility Policy for the xxxxx product"
+title: "Reversibility Policy for the Managed In-Memory Database product"
 updated: 2025-08-27
 ---
 
 ##Objective
 
-This document describes the reversibility policy for the xxxx product covering the OVHcloud xxxx offer.
+This document describes the reversibility policy for the Managed In-Memory Database  product covering the OVHcloud Valkey offer.
 
 This policy aims to implement the general reversibility principles and our compliance with the SWIPO IAAS Code of Conduct for cloud providers.
 
