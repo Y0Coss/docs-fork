@@ -31,23 +31,19 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
 | Sécurité réseau (ACL) | Contrôle d’accès par liste IP  | IPv4, JSON | **Entrante** : configuration des IP autorisées via l’interface web (espace client) ou les API <br>**Sortante** : export de la configuration et l’adapter à l‘architecture cible  | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
-
+| vRack | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | NA | **Entrante** : activation et configuration de la connexion réseau <br>**Sortante** : prendre note de l'architecture réseau et la reproduire-la avec des VLAN.  | [Création de V(x)LAN Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
 
 
 ### 3. Fonctionnalités spécifiques
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| vRack | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | NA | **Entrante** : activation et configuration de la connexion réseau <br>**Sortante** : prendre note de l'architecture réseau et la reproduire-la avec des VLAN.  | [Création de V(x)LAN Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
 | Infrastructure as a code | Déploiement automatisé via modules Terraform spécifiques à OVHcloud | NA | **Entrante** : scripts à adapter pour d’autres fournisseurs <br>**Sortante** : réécriture nécessaire des configurations Terraform | [Terraform](https://registry.terraform.io/providers/ovh/ovh/latest/docs) |
 | Anti-DDoS | L’anti-DDoS est un ensemble d’outils et de mécanismes conçus pour absorber les attaques par déni de service. Il comprend l'analyse du trafic, le « nettoyage » via un réseau spécialisé et la mitigation grâce à la technologie VAC développée par OVHcloud. | N/A | **Entrant** : le système anti-DDoS fait partie de notre infrastructure et est activé par défaut. Aucune action n'est requise. <br> **Sortant** : commande et configuration un anti-DDoS chez le nouveau fournisseur. | [OVHcloud DDoS Protection](/links/security/antiddos) |
 
 ## Liste des architectures
 
-blabla
-Le produit est décliné en deux offres de service : 
-- xxxxx
-- xxxxx
+Le produit repose sur une architecture distribuée en mémoire, s’appuyant sur la technologie  Valkey Sentinel pour assurer la haute disponibilité. Elle prend en charge la réplication, la tolérance aux pannes et les basculements automatiques pour garantir la fiabilité du service.
 
 ## Services partenaires
 
@@ -57,7 +53,10 @@ OVHcloud dispose également d’un service dédié : [OVHcloud Professional Serv
 
 ## Coûts et frais
 
+Les fonctionnalités décrites dans les tableaux sont disponibles sans couts et frais sauf mentions contraires, et sont librement utilisables par le client.
+La tarification est en mode Pay as you go et dépend de la capacité mémoire, du type d’instance. Aucun frais de sortie supplémentaire n’est appliqué, mais il est essentiel d’exporter toutes les données avant résiliation, car elles seront supprimées définitivement.
+
 
 ## Conservation des données après résiliation du contrat
 
-
+Une fois le service résilié, toutes les données présentes dans les instances Valkey sont supprimées de manière irréversible. Il incombe au client de réaliser une sauvegarde complète avant résiliation.
