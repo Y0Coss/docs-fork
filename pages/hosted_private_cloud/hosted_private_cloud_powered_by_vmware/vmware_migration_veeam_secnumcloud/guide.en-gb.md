@@ -149,11 +149,11 @@ Learn more in the [Storage vMotion guide](/pages/hosted_private_cloud/hosted_pri
 
 ### Step 17: Create backup jobs
 
-To protect your VMs long-term, configure backup jobs in Veeam that use **OVHcloud Object Storage** (S3\*-compatible).
+To protect your VMs long-term, configure backup jobs in Veeam that use **OVHcloud Object Storage** (S3<sup>1</sup>-compatible).
 
 Follow the steps in our [dedicated backup guide](/pages/storage_and_backup/object_storage/s3_veeam).
 
-\*: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
 
 ## Troubleshooting
 
@@ -163,12 +163,14 @@ If you experience issues accessing the Hosted Private Cloud infrastructure durin
 
 Example for host .50:
 
-**On Windows (PowerShell)**
+**On Windows (PowerShell)**:
+
 ```powershell
 Test-NetConnection -ComputerName [PCC_Host_IP] -Port 950
 ```
 
-**On Linux**
+**On Linux**:
+
 ```bash
 nc -vz [PCC_Host_IP] 950
 ```
@@ -176,7 +178,7 @@ nc -vz [PCC_Host_IP] 950
 >[!primary]
 > - If the hosts are not reachable, create an outbound rule on your Veeam components to allow the port range **950-999**.
 > - Depending on the number of hosts, you may also need to open ranges **1100-1255** and **1300-1551**.
-> - If the hosts are reachable but errors persist, please contact OVHcloud Support for further analysis.
+> - If the hosts are reachable but errors persist, please contact [OVHcloud Support](https://help.ovhcloud.com/csm?id=csm_get_help) for further analysis.
 
 ## Go further
 
