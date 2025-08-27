@@ -21,7 +21,7 @@ Ce guide vous explique comment utiliser un nom de domaine enregistré chez OVHcl
 
 Pour activer votre nom de domaine dans iCloud, suivez les instructions de la page « Add a domain you own to iCloud Mail on iCloud.com » de la [documentation officielle Apple](https://support.apple.com/guide/icloud/add-a-domain-you-own-mma473945269/icloud). Concentrez-vous sur la section « Step 3: Update the records with your domain registrar » (Mettre à jour les enregistrements auprès de votre registraire de domaine), pour relever les enregistrements DNS à ajouter dans votre zone DNS OVHcloud.
 
-À l’issue de cette étape, Apple vous fournira une liste d’enregistrements DNS (MX, CNAME, TXT) à configurer dans votre zone DNS OVHcloud. Conservez-les pour l’étape suivante.
+À l’issue de cette étape, une liste d’enregistrements DNS (MX, CNAME, TXT) à configurer dans votre zone DNS OVHcloud vous sera communiquée par Apple. Conservez-les pour l’étape suivante.
 
 ### Étape 2 :  Configurer les enregistrements DNS dans votre espace client OVHcloud
 
