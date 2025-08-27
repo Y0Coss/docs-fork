@@ -7,6 +7,263 @@ updated: 2025-08-26
 
 ## Objectif
 
+Ce guide vous explique comment transférer une configuration n8n existante vers un VPS OVHcloud, ou depuis un VPS OVHcloud vers une autre instance. Vous pouvez choisir soit la méthode Export/import via les **commandes CLI de n8n**, soit la sauvegarde/restauration du dossier **`.n8n`**.
+
+## Prérequis
+
+- Disposer de deux [VPS](/links/bare-metal/vps) fonctionnels (OVHcloud ou autres)
+- Disposer d'un accès administrateur (sudo) via SSH à votre serveur
+
+## En pratique
+
+
+### Méthode 1 : Exporter et importer via la CLI n8n
+
+n8n fournit des commandes pour exporter et importer vos **workflows** et **credentials**.
+
+Selon votre installation, vous avez deux possibilités :
+
+- **n8n installé en mode CLI** (npm ou binaire) : tapez directement `n8n export:...` depuis votre VPS.
+- **n8n installé via Docker** (cas OVH avec l’image `n8nio/n8n`) : exécutez les commandes à l’intérieur du conteneur avec `docker exec`.
+
+#### Étape 1 - Connectez-vous au VPS source
+
+Ouvrez un terminal et connectez-vous en SSH à votre VPS où n8n est installé :
+
+```bash
+ssh <user>@<IP_VPS_SOURCE>
+```
+
+#### Étape 2 - Exportez les workflows
+
+##### Cas A - Installation en CLI natif
+
+Exécutez la commande suivante pour exporter tous les workflows dans un fichier :
+
+```bash
+n8n export:workflow --all --output=workflows.json
+```
+
+##### Cas B - Installation via Docker
+
+Identifiez le nom de votre conteneur n8n (par défaut `n8n`) :
+
+```bash
+docker ps
+```
+
+Exécutez la commande suivante pour générer le fichier à l’intérieur du conteneur :
+
+```bash
+docker exec -it n8n n8n export:workflow --all --output=/home/node/workflows.json
+```
+
+Vous devez voir un message similaire :
+
+![Import export n8n](images/workflow_successfully_exported.png){.thumbnail}
+
+Sortez le fichier du conteneur pour le placer dans le système de fichiers du VPS source :
+
+```bash
+docker cp n8n:/home/node/workflows.json /root/workflows.json
+```
+
+Vous devez voir un message similaire :
+
+![Import export n8n](images/workflow_successfully_copied.png){.thumbnail}
+
+#### Étape 3 - Exportez les credentials
+
+##### Cas A - Installation en CLI natif
+
+Exécutez la commande suivante pour exporter tous les credentials déchiffrés vers un fichier JSON :
+
+```bash
+n8n export:credentials --all --decrypted --output=credentials.json
+```
+
+##### Cas B - Installation via Docker
+
+Exécutez cette commande dans le conteneur n8n pour générer le fichier des credentials déchiffrés :
+
+```bash
+docker exec -it n8n n8n export:credentials --all --decrypted --output=/home/node/credentials.json
+```
+
+Vous devez voir un message similaire :
+
+![Import export n8n](images/credentials_successfully_exported.png){.thumbnail}
+
+> [!warning]
+>
+> Utilisez l’option `--decrypted` si vous migrez vers une autre instance pour éviter les erreurs de chiffrement. Manipulez ce fichier avec précaution car il contient des données sensibles.
+
+Copiez ce fichier vers le système de fichiers du VPS source :
+
+```bash
+docker cp n8n:/home/node/credentials.json /root/credentials.json
+```
+
+Vous devez voir un message similaire :
+
+![Import export n8n](images/credentials_successfully_copied.png){.thumbnail}
+
+#### Étape 4 - Transférez les fichiers exportés
+
+Copiez les fichiers générés (`workflows.json` et `credentials.json`) vers votre VPS cible :
+
+```bash
+scp workflows.json credentials.json <user>@<IP_VPS_CIBLE>:/root/
+```
+
+#### Étape 5 - Importez les workflows
+
+Connectez-vous en SSH à votre VPS cible :
+
+```bash
+ssh <user>@<IP_VPS_CIBLE>
+```
+
+##### Cas A - Installation en CLI natif
+
+```bash
+n8n import:workflow --input=workflows.json
+```
+
+##### Cas B - Installation via Docker
+
+```bash
+docker exec -it n8n n8n import:workflow --input=/home/node/workflows.json
+```
+
+#### Étape 6 - Importez les credentials
+
+##### Cas A - Installation en CLI natif
+
+```bash
+n8n import:credentials --input=credentials.json
+```
+
+##### Cas B - Installation via Docker
+
+```bash
+docker exec -it n8n n8n import:credentials --input=/home/node/credentials.json
+```
+
+> [!primary]
+>
+> Lors de l’import, si un ID de workflow ou credential existe déjà dans l’instance cible, il sera écrasé. Pour éviter les conflits, modifiez ou supprimez l’ID dans les fichiers JSON avant import.
+
+#### Méthode 2 : Sauvegarde et restauration du dossier `.n8n`
+
+Cette méthode permet de transférer l’intégralité de la configuration (workflows, credentials et paramètres) entre deux instances.
+
+#### Où se trouve le dossier `.n8n` ?
+
+- Installation CLI (npm ou binaire) : le dossier se trouve généralement dans le répertoire personnel de l’utilisateur qui exécute n8n, par exemple `/root/.n8n` ou `/home/<user>/.n8n`.
+- Installation Docker : le dossier se trouve dans le conteneur à l’emplacement `/home/node/.n8n`. Dans la plupart des configurations Docker Compose, il est monté en volume nommé `n8n_data` ou dans un dossier du VPS (ex. : `/root/n8n_data:/home/node/.n8n`).
+
+Vérifiez son emplacement avec :
+
+```bash
+docker exec -it n8n ls -lah /home/node/.n8n
+docker inspect n8n | grep -A 5 Mounts
+```
+
+#### Étape 1 - Sauvegardez le dossier `.n8n`
+
+##### Cas A - Installation en CLI natif
+
+Créez l’archive directement depuis le système hôte :
+
+```bash
+tar czvf n8n-backup.tar.gz /root/.n8n
+```
+
+##### Cas B - Installation via Docker
+
+Créez une archive du dossier `.n8n` :
+
+```bash
+docker exec n8n tar czvf - /home/node/.n8n > n8n-backup.tar.gz
+```
+
+#### Étape 2 - Transférez l’archive vers le VPS cible
+
+Envoyez le fichier vers votre VPS cible :
+
+```bash
+scp n8n-backup.tar.gz <user>@<IP_VPS_CIBLE>:/root/
+```
+
+Connectez-vous en SSH à votre VPS cible :
+
+```bash
+ssh <user>@<IP_VPS_CIBLE>
+```
+
+#### Étape 3 - Restaurez l’archive sur le VPS cible
+
+Sur votre VPS cible, restaurez l’archive dans le dossier .n8n du conteneur :
+
+```bash
+tar xzvf n8n-backup.tar.gz -C /home/node/.n8n
+```
+
+#### Étape 4 - Redémarrez n8n
+
+Relancez n8n :
+
+```bash
+docker start n8n
+```
+
+> [!warning]
+>
+> Cette méthode nécessite que la **clé de chiffrement (`encryptionKey`)** soit identique entre les deux instances. Vérifiez ou copiez ce paramètre depuis le fichier de configuration de votre instance source.
+
+### Points d'attention
+
+Après la migration, si le domaine ou le sous-domaine change (par exemple `n8n.mydomain.com` → `n8n.ovh.net`), mettez à jour :
+
+- La variable `N8N_HOST` dans votre fichier `docker-compose.yml`.
+- Votre zone DNS pour que le sous-domaine pointe vers l’adresse IP du nouveau VPS.
+
+Pour en savoir plus, consultez notre guide [Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+
+### Conclusion
+
+Vous disposez désormais de deux méthodes pour migrer vos workflows et credentials n8n vers un VPS OVHcloud (ou depuis OVHcloud vers un autre environnement) :
+
+- **Export/Import via CLI** : simple et sélectif.
+- **Sauvegarde `.n8n`** : complet, idéal pour une migration totale.
+
+Pour plus d’informations, référez-vous à la [documentation officielle n8n](https://docs.n8n.io/hosting/cli-commands/).
+
+## Aller plus loin
+
+[Comment installer n8n sur un VPS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/install_n8n_on_vps)
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+
+
+
+
+
+
+
+
+
+---
+
+title: "Migrer une configuration n8n entre deux VPS (OVHcloud ou autres)"
+excerpt: "Découvrez comment exporter et importer une configuration n8n complète (workflows et identifiants) d’un VPS externe vers un VPS OVHcloud, et inversement."
+updated: 2025-08-26
+-------------------
+
+## Objectif
+
 Ce guide vous explique comment transférer une configuration n8n existante vers un VPS OVHcloud, ou depuis un VPS OVHcloud vers une autre instance.
 Vous pouvez choisir entre deux méthodes :
 
@@ -19,13 +276,20 @@ Vous pouvez choisir entre deux méthodes :
 * Accès SSH administrateur aux deux serveurs.
 * Accès à l’interface n8n si vous souhaitez effectuer des exports manuels.
 
+---
+
 ## Méthode 1 : Exporter et importer via la CLI n8n
 
 n8n fournit des commandes pour exporter et importer vos **workflows** et **credentials**.
 
+Selon votre installation, vous avez deux possibilités :
+
+* **n8n installé en mode CLI** (npm ou binaire) : vous pouvez taper directement `n8n export:...` depuis votre VPS.
+* **n8n installé via Docker** (cas OVH avec l’image `n8nio/n8n`) : vous devez exécuter les commandes à l’intérieur du conteneur avec `docker exec`.
+
 ### Étape 1 - Connectez-vous au VPS source
 
-Ouvrez un terminal et connectez-vous en SSH à votre VPS où n8n est installé :
+Ouvrez un terminal et connectez-vous en SSH à votre VPS où n8n est installé :
 
 ```bash
 ssh <user>@<IP_VPS_SOURCE>
@@ -33,39 +297,57 @@ ssh <user>@<IP_VPS_SOURCE>
 
 ### Étape 2 - Exportez les workflows
 
-Exécutez la commande suivante sur votre VPS source pour exporter tous les workflows dans un fichier :
+#### Cas A - Installation en CLI natif
+
+Exécutez la commande suivante pour exporter tous les workflows dans un fichier :
 
 ```bash
 n8n export:workflow --all --output=workflows.json
 ```
 
-Pour exporter un workflow spécifique par ID :
+#### Cas B - Installation via Docker
+
+Identifiez le nom de votre conteneur n8n (par défaut `n8n`) :
 
 ```bash
-n8n export:workflow --id=<ID> --output=workflow.json
+docker ps
+```
+
+Puis exécutez :
+
+```bash
+docker exec -it n8n n8n export:workflow --all --output=/home/node/workflows.json
+```
+
+Copiez ensuite le fichier du conteneur vers votre VPS :
+
+```bash
+docker cp n8n:/home/node/workflows.json /root/workflows.json
 ```
 
 ### Étape 3 - Exportez les credentials
 
-Exécutez la commande suivante pour exporter tous les credentials dans un fichier :
+#### Cas A - Installation en CLI natif
 
 ```bash
-n8n export:credentials --all --output=credentials.json
+n8n export:credentials --all --decrypted --output=credentials.json
+```
+
+#### Cas B - Installation via Docker
+
+```bash
+docker exec -it n8n n8n export:credentials --all --decrypted --output=/home/node/credentials.json
+docker cp n8n:/home/node/credentials.json /root/credentials.json
 ```
 
 > \[!warning]
 >
-> Si vous migrez vers une autre instance, ajoutez l’option `--decrypted` pour exporter les credentials en clair :
->
-> ```bash
-> n8n export:credentials --all --decrypted --output=credentials.json
-> ```
->
+> Utilisez l’option `--decrypted` si vous migrez vers une autre instance pour éviter les erreurs de chiffrement.
 > ⚠️ Manipulez ce fichier avec précaution car il contient des données sensibles.
 
 ### Étape 4 - Transférez les fichiers exportés
 
-Copiez les fichiers générés (`workflows.json` et `credentials.json`) vers votre VPS cible :
+Copiez les fichiers générés (`workflows.json` et `credentials.json`) vers votre VPS cible :
 
 ```bash
 scp workflows.json credentials.json <user>@<IP_VPS_CIBLE>:/root/
@@ -73,36 +355,36 @@ scp workflows.json credentials.json <user>@<IP_VPS_CIBLE>:/root/
 
 ### Étape 5 - Importez les workflows
 
-Connectez-vous en SSH à votre VPS cible :
+Connectez-vous en SSH à votre VPS cible :
 
 ```bash
 ssh <user>@<IP_VPS_CIBLE>
 ```
 
-Exécutez la commande suivante pour importer les workflows :
+#### Cas A - Installation en CLI natif
 
 ```bash
 n8n import:workflow --input=workflows.json
 ```
 
-Pour importer plusieurs workflows depuis un dossier :
+#### Cas B - Installation via Docker
 
 ```bash
-n8n import:workflow --separate --input=backups/
+docker exec -it n8n n8n import:workflow --input=/home/node/workflows.json
 ```
 
 ### Étape 6 - Importez les credentials
 
-Importez vos credentials avec la commande suivante :
+#### Cas A - Installation en CLI natif
 
 ```bash
 n8n import:credentials --input=credentials.json
 ```
 
-Pour importer plusieurs fichiers depuis un dossier :
+#### Cas B - Installation via Docker
 
 ```bash
-n8n import:credentials --separate --input=backups/
+docker exec -it n8n n8n import:credentials --input=/home/node/credentials.json
 ```
 
 > \[!primary]
@@ -110,13 +392,15 @@ n8n import:credentials --separate --input=backups/
 > Lors de l’import, si un ID de workflow ou credential existe déjà dans l’instance cible, il sera écrasé.
 > Pour éviter les conflits, modifiez ou supprimez l’ID dans les fichiers JSON avant import.
 
+---
+
 ## Méthode 2 : Sauvegarde et restauration du dossier `.n8n`
 
 Cette méthode permet de transférer l’intégralité de la configuration (workflows, credentials et paramètres) entre deux instances.
 
 ### Étape 1 - Arrêtez n8n sur le VPS source
 
-Connectez-vous à votre VPS source et exécutez :
+Connectez-vous à votre VPS source et exécutez :
 
 ```bash
 docker stop n8n
@@ -124,7 +408,7 @@ docker stop n8n
 
 ### Étape 2 - Sauvegardez le dossier `.n8n`
 
-Créez une archive du dossier `.n8n` :
+Créez une archive du dossier `.n8n` :
 
 ```bash
 tar czvf n8n-backup.tar.gz /home/node/.n8n
@@ -132,7 +416,7 @@ tar czvf n8n-backup.tar.gz /home/node/.n8n
 
 ### Étape 3 - Transférez l’archive vers le VPS cible
 
-Envoyez le fichier vers votre VPS cible :
+Envoyez le fichier vers votre VPS cible :
 
 ```bash
 scp n8n-backup.tar.gz <user>@<IP_VPS_CIBLE>:/root/
@@ -140,7 +424,7 @@ scp n8n-backup.tar.gz <user>@<IP_VPS_CIBLE>:/root/
 
 ### Étape 4 - Restaurez l’archive sur le VPS cible
 
-Connectez-vous au VPS cible et exécutez :
+Connectez-vous au VPS cible et exécutez :
 
 ```bash
 tar xzvf n8n-backup.tar.gz -C /home/node/.n8n
@@ -148,7 +432,7 @@ tar xzvf n8n-backup.tar.gz -C /home/node/.n8n
 
 ### Étape 5 - Redémarrez n8n
 
-Toujours sur le VPS cible, relancez n8n :
+Toujours sur le VPS cible, relancez n8n :
 
 ```bash
 docker start n8n
@@ -159,9 +443,11 @@ docker start n8n
 > Cette méthode nécessite que la **clé de chiffrement (`encryptionKey`)** soit identique entre les deux instances.
 > Vérifiez ou copiez ce paramètre depuis le fichier de configuration de votre instance source.
 
+---
+
 ## DNS et SSL
 
-Après la migration, si le domaine ou le sous-domaine change (par exemple `n8n.mydomain.com` → `n8n.ovh.net`), mettez à jour :
+Après la migration, si le domaine ou le sous-domaine change (par exemple `n8n.mydomain.com` → `n8n.ovh.net`), mettez à jour :
 
 * La variable `N8N_HOST` dans votre fichier `docker-compose.yml`.
 * Votre zone DNS pour que le sous-domaine pointe vers l’adresse IP du nouveau VPS.
@@ -169,13 +455,21 @@ Après la migration, si le domaine ou le sous-domaine change (par exemple `n8n.m
 Pour en savoir plus, consultez notre guide :
 [Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
+---
+
 ## Conclusion
 
-Vous disposez désormais de deux méthodes pour migrer vos workflows et credentials n8n vers un VPS OVHcloud (ou depuis OVHcloud vers un autre environnement) :
+Vous disposez désormais de deux méthodes pour migrer vos workflows et credentials n8n vers un VPS OVHcloud (ou depuis OVHcloud vers un autre environnement) :
 
-* **Export/Import via CLI** : simple et sélectif.
-* **Sauvegarde `.n8n`** : complet, idéal pour une migration totale.
+* **Export/Import via CLI** : simple et sélectif (mode CLI ou Docker).
+* **Sauvegarde `.n8n`** : complet, idéal pour une migration totale.
 
 Pour plus d’informations, référez-vous à la [documentation officielle n8n](https://docs.n8n.io/hosting/cli-commands/).
 
+---
+
 ## Aller plus loin
+
+* [Installer n8n sur un VPS OVHcloud](/pages/web_cloud/vps/n8n_docker_traefik)
+* [Automatiser l’envoi de SMS avec n8n](/pages/web_cloud/vps/n8n_sms_api)
+* [Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
