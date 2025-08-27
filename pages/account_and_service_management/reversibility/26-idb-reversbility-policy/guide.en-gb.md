@@ -1,6 +1,6 @@
 ---
 title: "Reversibility Policy for the xxxxx product"
-updated: 2025-06-27
+updated: 2025-08-27
 ---
 
 ##Objective
