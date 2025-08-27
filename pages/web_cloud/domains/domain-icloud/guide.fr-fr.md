@@ -1,8 +1,15 @@
 ---
-title: 'Utiliser votre domaine OVHcloud avec iCloud Mail'
+title: 'Comment utiliser un domaine OVHcloud avec iCloud Mail'
 excerpt: 'Découvrez comment configurer votre nom de domaine OVHcloud avec iCloud pour créer des adresses e-mail personnalisées'
 updated: 2025-08-27
 ---
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+>
 
 ## Objectif
 
@@ -11,8 +18,8 @@ Ce guide vous explique comment utiliser un nom de domaine enregistré chez OVHcl
 ## Prérequis
 
 - Disposer d'un [nom de domaine](/links/web/domains) enregistré chez OVHcloud.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](/links/manager).
-- Être connecté à votre [espace client OVHcloud](/links/manager). 
 - Un identifiant Apple avec un abonnement **iCloud+**.
 
 ## En pratique
@@ -27,8 +34,8 @@ Pour activer votre nom de domaine dans iCloud, suivez les instructions de la pag
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 2. Rendez-vous dans la partie `Web Cloud`{.action}.
-3. Cliquez sur `Zones DNS`{.action}, puis choisissez le nom de domaine concerné. 
-4. Ajoutez ou modifiez les enregistrements suivants :  
+3. Cliquez sur `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
+4. Ajoutez ou modifiez les enregistrements ci-dessous.
 
 Pour savoir comment ajouter, modifier ou supprimer chaque type d'enregistrement DNS (MX, CNAME, TXT, etc.), consultez notre guide [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
 
@@ -37,15 +44,15 @@ Pour savoir comment ajouter, modifier ou supprimer chaque type d'enregistrement 
 - **MX** : pour la réception des e-mails.
 - **CNAME** : pour les clefs DKIM (`sig1._domainkey...`, `sig2._domainkey...`).
 - **TXT** : pour le SPF (fusionnez si un enregistrement SPF existe déjà).
-- **TXT DMARC** : optionnel mais recommandé ([Étape 3](#step3)).
+- **TXT DMARC** : facultatif mais recommandé ([Étape 3](#step3)).
 
 > [!warning]
 >
 > Utilisez uniquement des guillemets droits `"` tels qu’ils apparaissent dans la documentation technique d’Apple (généralement en version anglaise). Les guillemets typographiques « » ou “ ” affichés dans certaines traductions ne doivent pas être utilisés dans la configuration DNS.
 
-### Étape 3 : Ajouter un enregistrement DMARC (optionnel) <a name="step3"></a>
+### Étape 3 : Ajouter un enregistrement DMARC (facultatif) <a name="step3"></a>
 
-Pour améliorer la délivrabilité de vos e-mails et éviter que vos messages arrivent en spam, ajoutez un enregistrement **DMARC**.
+Pour améliorer la délivrabilité de vos e-mails et éviter que vos messages arrivent en SPAM, ajoutez un enregistrement **DMARC**.
 
 Pour savoir comment créer un enregistrement DMARC dans votre espace client OVHcloud, consultez notre guide [Améliorer la sécurité des e-mails via un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
@@ -65,17 +72,16 @@ Une fois cette étape terminée, votre domaine personnalisé est pleinement acti
 
 #### Vérifier où est gérée la zone DNS
 
-Si votre nom de domaine est associé à des serveurs DNS externes à OVHcloud (Wix, Squarespace, Cloudflare, etc. ), la configuration doit être effectuée dans l'interface de gestion de ces serveurs DNS, hors de l’espace client OVHcloud.  
+Si votre nom de domaine est associé à des serveurs DNS externes à OVHcloud (Wix, Squarespace, Cloudflare, etc. ), la configuration doit être effectuée dans l'interface de gestion de ces serveurs DNS, hors de l’espace client OVHcloud.
 
 #### CNAME déjà existant
 
-- Un enregistrement **CNAME** ne peut pas cohabiter avec un enregistrement **A, AAAA ou TXT** configuré sur le même domaine ou sous-domaine.  
-- Supprimez l’ancien enregistrement avant de créer le CNAME demandé par Apple.  
+- Un enregistrement **CNAME** ne peut pas cohabiter avec un enregistrement **A, AAAA ou TXT** configuré sur le même domaine ou sous-domaine.
+- Supprimez l’ancien enregistrement avant de créer le CNAME demandé par Apple.
 
 #### SPF en doublon
 
-- Il ne peut exister qu’**un seul enregistrement SPF** par nom de domaine. Si un enregistrement SPF OVHcloud existe déjà (ex. : `v=spf1 include:mx.ovh.com ~all`), fusionnez-le avec celui fourni par Apple (ex. :
-`v=spf1 include:mx.ovh.com include:icloud.com ~all`).
+- Il ne peut exister qu’**un seul enregistrement SPF** par nom de domaine. Si un enregistrement SPF OVHcloud existe déjà (ex : `v=spf1 include:mx.ovh.com ~all`), fusionnez-le avec celui fourni par Apple (ex : `v=spf1 include:mx.ovh.com include:icloud.com ~all`).
 
 #### DKIM incomplet
 
@@ -86,5 +92,9 @@ Si votre nom de domaine est associé à des serveurs DNS externes à OVHcloud (W
 - Les modifications DNS peuvent prendre plusieurs heures (jusqu’à 24h) avant d’être reconnues par Apple.
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
