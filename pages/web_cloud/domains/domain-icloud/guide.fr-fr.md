@@ -74,7 +74,7 @@ Si votre nom de domaine est associé à des serveurs DNS externes à OVHcloud (W
 
 #### SPF en doublon
 
-- Il ne peut exister qu’**un seul enregistrement SPF** par domaine. Si un SPF OVH existe déjà (ex. : `v=spf1 include:mx.ovh.com ~all`), fusionnez-le avec celui fourni par Apple (ex. :
+- Il ne peut exister qu’**un seul enregistrement SPF** par nom de domaine. Si un enregistrement SPF OVHcloud existe déjà (ex. : `v=spf1 include:mx.ovh.com ~all`), fusionnez-le avec celui fourni par Apple (ex. :
 `v=spf1 include:mx.ovh.com include:icloud.com ~all`).
 
 #### DKIM incomplet
