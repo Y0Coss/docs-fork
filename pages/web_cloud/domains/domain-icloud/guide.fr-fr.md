@@ -69,7 +69,7 @@ Si votre nom de domaine est associé à des serveurs DNS externes à OVHcloud (W
 
 #### CNAME déjà existant
 
-- Un enregistrement **CNAME** ne peut pas cohabiter avec un enregistrement **A, AAAA ou TXT** portant exactement le même nom.  
+- Un enregistrement **CNAME** ne peut pas cohabiter avec un enregistrement **A, AAAA ou TXT** configuré sur le même domaine ou sous-domaine.  
 - Supprimez l’ancien enregistrement avant de créer le CNAME demandé par Apple.  
 
 #### SPF en doublon
