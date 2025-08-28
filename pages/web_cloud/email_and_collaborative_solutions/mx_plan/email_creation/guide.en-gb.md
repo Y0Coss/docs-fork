@@ -18,8 +18,8 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 
 ## Requirements
 
-- an MX Plan solution. This is available via:
-    - A [web hosting](/links/web/hosting) offer.
+- An MX Plan solution. This is available via:
+    - A [Web Hosting](/links/web/hosting) offer.
     - A [100M free hosting](/links/web/domains-free-hosting) included with a domain name (activated beforehand).
     - An MX Plan solution ordered separately.
 - Access to the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section
@@ -47,11 +47,11 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 >
 > - In the `General information`{.action} tab, note the technology used under the **Webmail** comment in the `Subscription`{.action} box under `Webmail`{.action}.
 >
->![MX plan](images/technology-email.png){.thumbnail .w-400}
+> ![MX plan](images/technology-email.png){.thumbnail .w-400}
 
 ### OWA and Zimbra
 
-This section documents MX Plan offerings using webmail **OWA** and **Zimbra** technology.
+This section documents MX Plan offers using the **OWA** and **Zimbra** webmail technologies.
 
 #### Create an email account
 
@@ -102,13 +102,13 @@ Select the tab corresponding to the email technology of your MX Plan solution:
 > [!tabs]
 > **Zimbra**
 >>
->> When you are logged in to Zimbra webmail, you get the interface below. For more details on using Zimbra webmail, please refer to our guide on [Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) .
+>> When you are logged in to the Zimbra webmail, you get the interface below. For more details, please refer to our guide on [Using the Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 >>
 >>![Zimbra - interface](images/zimbra-01.png){.thumbnail .w-400}
 >>
 > **OWA**
 >>
->> When you log in to webmail for the first time, you are prompted to set the interface language and the time zone you are in. Your inbox will then appear. To find out how to use your email address via the Outlook Web App (OWA), please use our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) .
+>> When you log in to the webmail for the first time, you are prompted to set the interface language and the time zone you are in. Your inbox will then appear. To find out how to use your email address via the Outlook Web App (OWA), please use our guide on [Using an email address via the Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) .
 >>
 >>![email](images/mxplan-creation-new-step5.png){.thumbnail .w-400}
 
@@ -128,7 +128,7 @@ In the `Email accounts`{.action} tab, click the `...`{.action} button to the rig
 
 ### MX Plan Roundcube
 
-This section is dedicated to MX Plan solutions that use webmail technology **Roundcube**.
+This section is dedicated to MX Plan offers that use the **Roundcube** webmail technology.
 
 #### Create an email account
 
@@ -200,7 +200,7 @@ You will need to configure your email address on the device you want to use (e.g
 
 If you just need the information required to configure your email address, the settings to use are listed below:
 
-#### IMAP and POP Receive Settings <a name="imap-pop"></a>
+#### IMAP and POP (incoming) settings <a name="imap-pop"></a>
 
 When you choose your account type, we recommend using **IMAP** to receive emails. However, you can select **POP** as well.
 
@@ -229,7 +229,7 @@ Select the tab corresponding to your configuration type:
 >> - **Port**: 995.
 >> - **Security type**: SSL/TLS.
 
-#### SMTP Send Settings <a name="smtp"></a>
+#### SMTP (outgoing) settings <a name="smtp"></a>
 
 Below are the **SMTP** settings to use when sending emails:
 
@@ -246,16 +246,16 @@ Below are the **SMTP** settings to use when sending emails:
 
 **Have you used all of the email addresses included in your solution?**
 
-- See the questions in [our email FAQ](pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
-- See all of our email solutions [Zimbra](/links/web/emails-zimbra) or [Exchange](/links/web/emails) to complete your MX Plan solution on the same domain name.
+- Refer to [our email FAQ](pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
+- See all of our email solutions, [Zimbra](/links/web/emails-zimbra) or [Exchange](/links/web/emails) to complete your MX Plan solution on the same domain name.
 
 ## Go further <a name="go-further"></a>
 
-[Use Roundcube webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
+[Using your email account via the Roundcube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 
-[Use Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
+[How to use Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
-[Use Outlook Web App (OWA) webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+[Using the Outlook Web App with an email account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
