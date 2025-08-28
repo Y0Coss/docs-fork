@@ -140,7 +140,7 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 
 > [!primary]
 >
-> Starting with version 1.14 the plugin-for-csi is integrated in Velero. You can simply remove it from the install example if you install version 1.14 or newer. For upgrading an older version follow the upgrade notes: [Upgrade-to-1.14](https://velero.io/docs/v1.14/upgrade-to-1.14/).
+> Starting with version 1.14 the plugin-for-csi is integrated in Velero. You can simply remove it from the install example if you install version 1.14 or newer. For upgrading an older version follow the upgrade notes: [Upgrade-to-1.17](https://velero.io/docs/v1.17/upgrade-to-1.17/).
 > Please refer to those links to check Velero's plugins comptability: [velero-plugin-for-aws](https://github.com/vmware-tanzu/velero-plugin-for-aws?tab=readme-ov-file#compatibility) and [velero-plugin-for-csi](https://github.com/vmware-tanzu/velero-plugin-for-csi?tab=readme-ov-file#compatibility).
 
 Example for 1.13 and older:
@@ -162,7 +162,7 @@ Example for 1.14 and newer:
 velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.10.1 \
+  --plugins velero/velero-plugin-for-aws:v1.13.1 \
   --bucket <your bucket name> \
   --secret-file ~/.aws/credentials \
   --backup-location-config region=<s3_region>,s3ForcePathStyle="true",s3Url=https://s3.<s3_region>.io.cloud.ovh.net,checksumAlgorithm="" \
