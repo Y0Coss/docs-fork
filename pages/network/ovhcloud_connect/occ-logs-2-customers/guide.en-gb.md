@@ -20,32 +20,31 @@ If you would like to find out more about Logs Data Platform before reading this 
 
 - A Logs Data Platform (LDP) account with at least one active *Stream* configured. This guide will walk you through all the necessary steps: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
     - If you are not familiar with all the LDP *Stream* configuration possibilities, simply create a new one with the default options (indexing & websocket enabled, long-term storage disabled) for the purpose of this guide.
-- An up-and-running [OVHcloud Connect] service (/pages/network/ovhcloud_connect/occ-concepts-overview).
+- An up-and-running [OVHcloud Connect service](/pages/network/ovhcloud_connect/occ-concepts-overview).
 - Both the LDP account and the OVHcloud Connect account must belong to the same OVHcloud account.
 
-### Concepts & limits
-
+## Concepts & limits
 
 **What are the logs of an OVHcloud Connect?**
 
-### Log kinds :
+### Log kinds
 
 There are four different kinds of logs which can be forwarded:
-- **service** : Events related to the service's life cycle (suspended, delivered, etc).
+
+- **service** : Events related to the service's lifecycle (suspended, delivered, etc).
 - **service_configuration** : Events related to the service configuration, including adding or deleting DC/POP configurations.
 - **bgp** : Status of the BGP session.
-- **interface** : Events related to the fiber optic interface, including incoming and outgoing light.
+- **interface** : Events related to the optic fiber interface, including incoming and outgoing light.
 
-### Log contents : 
+### Log contents
 
 | Field name | Description | Type |
-|------------|-------------|---------| 
+|------------|-------------|---------|
 | kind | The kind of log forwarded | String |
 | message | An explicit description of the logged event | String |
 | neighbor | The remote address in the subnet established between the OVHcloud Connect service and the PoP | IP |
 | service_uuid | The UUID of the OVHcloud Connect service concerned by the event | String |
 | timestamp | The timestamp at which the event was logged | datetime (with millisecond resolution) e.g. 25/Mar/2024:14:07:19.536 |
- 
 
 ## Instructions
 
@@ -55,7 +54,12 @@ Note that the forwarding activation is free of charge, but you will be charged f
 
 You will have to define the targeted *Stream* of one of your LDP accounts to which you want your logs forwarded. The enablement of the forwarding will create a subscription for this stream id.
 
-You can retrieve the API specifications in the [OVH API Portal](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
+You can retrieve the API specifications in the [OVHcloud API Portal](/links/api):
+
+> [!api]
+>
+> @api {v1} /dbaas/logs POST /dbaas/logs/{serviceName}/output/graylog/stream
+>
 
 #### Step 1 - Retrieve your target Stream (and ID)
 
@@ -82,14 +86,31 @@ Use the following API call to create a subscription:
 > @api {v1} /ovhCloudConnect POST /ovhCloudConnect/{serviceName}/log/subscription
 >
 
-You will need to replace:
-
-- **serviceName**: this is the internal name of your OVHcloud Connect service, you can find it in the OVHcloud Connect management page in the OVHcloud Control Panel or using the [dedicated API](https://eu.api.ovh.com/console/?section=%2FovhCloudConnect&branch=v1#get-/ovhCloudConnect) call.
+> [!primary]
+> You will need to replace:
+>
+> - **serviceName**: this is the internal name of your OVHcloud Connect service, you can find it in the OVHcloud Connect management page in the OVHcloud Control Panel or using the following API call:
+>
+> > [!api]
+> >
+> > @api {v1} /ovhCloudConnect GET /ovhCloudConnect
+> >
+>
 
 The POST request has a payload that requires:
 
-- `kind`: the kind of log you want to forward, among "service", "service_configuration", "bgp" and "interface". You can find available kinds using the [dedicated API](https://eu.api.ovh.com/console/?section=%2FovhCloudConnect&branch=v1#get-/ovhCloudConnect/-serviceName-/log/kind) call.
-- `streamId`: the target data stream of your LDP account where you want your OVHcloud Connect logs to be forwarded to. 
+- `kind`: the kind of log you want to forward, among "service", "service_configuration", "bgp" and "interface".
+- `streamId`: the target data stream of your LDP account where you want your OVHcloud Connect logs to be forwarded to.
+
+> [!primary]
+> You can find the available kinds using the following API call:
+>
+> > [!api]
+> >
+> > @api {v1} /ovhCloudConnect GET  /ovhCloudConnect/{serviceName}/log/kind
+> >
+>
+
 
 ```shell
 POST /ovhCloudConnect/{serviceName}/log/subscription
@@ -108,7 +129,7 @@ You will get in response an `operationId`:
 }
 ```
 
-You can use the `operationId` to retrieve the `subscriptionId` for further management purposes using the following api call:
+You can use the `operationId` to retrieve the `subscriptionId` for further management purposes using the following API call:
 
 > [!api]
 >
@@ -153,7 +174,7 @@ Now that your logs are ingested and stored in your Logs Data Platform data strea
 - In the OVHcloud Control Panel, retrieve the LDP username (ex: logs-xxxx) and its password in your Logs Data Platform account home page. You can refer to the [Quick start guide for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 - Open the Graylog web-ui. You can retrieve the link in your account home page or using your Access point depending on your account region (for example: Gravelines region is https://gra1.logs.ovh.com/).
 - Log into Graylog using your Logs Data Platform Username and Password.
-- Search through your logs across the data stream of your Logs Data Platform account. You can refer to [Graylog writing search queries](https://go2docs.graylog.org/current/making_sense_of_your_log_data/writing_search_queries.html){.external} documentation for details on search syntax.
+- Search through your logs across the data stream of your Logs Data Platform account. You can refer to [Graylog writing search queries](https://go2docs.graylog.org/current/making_sense_of_your_log_data/writing_search_queries.html)documentation for details on search syntax.
 
 Refer to the following documentation: [Logs Data Platform - Visualizing, querying and exploiting your logs](/products/observability-logs-data-platform-visualizing-querying-exploiting) for more details about how to use your logs with Logs Data Platform, including how to:
 

@@ -2077,6 +2077,7 @@
                 + [Web Cloud Databases - How to manage logs](web_cloud/web_cloud_databases/retrieve-logs)
                 + [Managed Kubernetes Service Audit Logs Forwarding](public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform)
                 + [Pushing logs from OVHcloud KMS to Logs Data Platform](manage_and_operate/kms/kms-troubleshooting)
+                + [OVHcloud Connect Logs Forwarding](network/ovhcloud_connect/occ-logs-2-customers)
             + [IAM](observability-logs-data-platform-iam)
                 + [IAM for Logs Data Platform - Migration and Breaking Changes](manage_and_operate/observability/logs_data_platform/iam_migration_to_iam)
                 + [IAM for Logs Data Platform - Presentation and FAQ](manage_and_operate/observability/logs_data_platform/iam_presentation_faq)

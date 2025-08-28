@@ -6,20 +6,20 @@ updated: 2025-08-28
 
 ## Objectif
 
-L'objectif de ce guide est de vous montrer comment activer la redirection de logs de votre OVHcloud Connect vers Logs Data Platform (LDP), une plateforme qui vous aide à stocker, archiver, interroger et visualiser vos logs.
-Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au [Guide d'introduction de Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
+L'objectif de ce guide est de vous montrer comment activer la redirection de logs de votre service OVHcloud Connect vers Logs Data Platform (LDP), une plateforme qui vous aide à stocker, archiver, interroger et visualiser vos logs.
+Pour en savoir plus sur Logs Data Platform avant de lire ce guide, reportez-vous au [Guide d'introduction de Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 
 ## Glossaire
 
 - **Logs Data Platform :** une plateforme de gestion de logs entièrement gérée et sécurisée par OVHcloud. Pour plus d'informations, consultez la page de présentation de la solution [Logs Data Platform](/links/manage-operate/ldp).
 - **Data Stream:** une partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, de la visualisation ou de l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et c'est l'unité qui peut être utilisée pour définir un pipeline de logs (politique de rétention, archivage, streaming live, etc.), des droits d'accès et des politiques d'alertes.
 - **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans un *Data Stream* d’un compte LDP dans le même compte OVHcloud. Cette fonctionnalité doit être activée par le client et par service.
-- **Abonnement à la redirection de logs :** Lors de l'activation de la redirection de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *Abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
+- **Abonnement à la redirection de logs :** lors de l'activation de la redirection de logs pour un service OVHcloud donné vers un LDP *Data Stream* donné, un *Abonnement* est créé et attaché au *Data Stream* pour une gestion ultérieure par le client.
 
 ## Prérequis
 
-- Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-- Si vous ne connaissez pas toutes les possibilités de configuration d'un *Stream* LDP, il vous suffit d'en créer un nouveau avec les options par défaut (indexation & websocket activés, stockage longue durée désactivé) pour suivre ce guide.
+- Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous accompagnera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+    - Si vous ne connaissez pas toutes les possibilités de configuration d'un *Stream* LDP, il vous suffit d'en créer un nouveau avec les options par défaut (indexation & websocket activés, stockage longue durée désactivé) pour suivre ce guide.
 - Un service [OVHcloud Connect](/pages/network/ovhcloud_connect/occ-concepts-overview) opérationnel.
 - Le compte LDP et le compte OVHcloud Connect doivent appartenir au même compte OVHcloud.
 
@@ -30,15 +30,15 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 ### Types de logs:
 
 Il existe quatre types de logs qui peuvent être transférés :
+
 - **service** : Événements liés au cycle de vie du service (suspendu, livré, etc).
 - **service_configuration** : Événements liés à la configuration du service, y compris l'ajout ou la suppression de configurations DC/POP.
 - **bgp** : Statut de la session BGP.
 - **interface** : Événements liés à l'interface de fibre optique, y compris les signaux entrant et sortant.
 
-
 ### Contenu des logs : 
 
-| Field name | Description | Type |
+| Nom du champ | Description | Type |
 |------------|-------------|---------| 
 | kind | Le type de log transféré | String |
 | message | Une description explicite de l'événement enregistré | String |
@@ -46,8 +46,7 @@ Il existe quatre types de logs qui peuvent être transférés :
 | service_uuid | L'UUID du service OVHcloud Connect concerné par l'événement | String |
 | timestamp | L'horodatage auquel l'événement a été enregistré | datetime (with millisecond resolution) e.g. 08/Sep/2025:11:35:19.854 |
 
-
-## Instructions
+## En pratique
 
 Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez facturé pour l'utilisation du service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez cette [page](/links/manage-operate/ldp).
 
@@ -55,18 +54,23 @@ Prenez en compte que l'activation du *forwarding* est gratuite, mais vous serez 
 
 Vous devrez définir le *Stream* ciblé de l’un de vos comptes LDP vers lequel vous souhaitez transférer vos logs. L'activation du *forwarding* va créer un abonnement pour cet ID de flux.
 
-Vous pouvez récupérer les spécifications de l'API dans le portail [OVH API](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
+Vous pouvez récupérer les spécifications de l'API dans le portail [OVH API](/links/api) :
+
+> [!api]
+>
+> @api {v1} /dbaas/logs POST /dbaas/logs/{serviceName}/output/graylog/stream
+>
 
 #### Étape 1 - Récupérer le Stream (et l'ID) cible
 
-Lister les flux de données de votre compte Logs Data Platform (renseignez votre identifiant LDP sous la forme ldp-xx-xxxx dans le champ « serviceName ») :
+Listez les flux de données de votre compte Logs Data Platform (renseignez votre identifiant LDP sous la forme ldp-xx-xxxx dans le champ « serviceName ») :
 
 > [!api]
 >
 > @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream
 >
 
-Obtenir les détails d'un flux de données :
+Obtenez les détails d'un flux de données :
 
 > [!api]
 >
@@ -82,14 +86,30 @@ Utilisez l'appel API suivant pour créer un abonnement :
 > @api {v1} /ovhCloudConnect POST /ovhCloudConnect/{serviceName}/log/subscription
 >
 
-Vous devrez remplacer :
-
-- **serviceName** : il s'agit du nom interne de votre service OVHcloud Connect, que vous pouvez retrouver sur la page de gestion du OVHcloud Connect de votre espace client OVHcloud ou en utilisant [l'appel API dédié](https://eu.api.ovh.com/console/?section=%2FovhCloudConnect&branch=v1#get-/ovhCloudConnect).
+> [!primary]
+> Vous devrez remplacer :
+>
+> - **serviceName** : il s'agit du nom interne de votre service OVHcloud Connect, que vous pouvez retrouver sur la page de gestion du OVHcloud Connect de votre espace client OVHcloud ou en utilisant l'appel API suivant :
+>
+> > [!api]
+> >
+> > @api {v1} /ovhCloudConnect GET /ovhCloudConnect
+> >
+>
 
 La requête POST a une charge utile qui nécessite :
 
-- `kind` : le type de journal que vous voulez transférer, parmi "service", "service_configuration", "bgp" et "interface". Vous pouvez trouver les types disponibles en utilisant [l'appel API dédié](https://eu.api.ovh.com/console/?section=%2FovhCloudConnect&branch=v1#get-/ovhCloudConnect/-serviceName-/log/kind).
+- `kind` : le type de journal que vous voulez transférer, parmi "service", "service_configuration", "bgp" et "interface".
 - `streamId` : flux de données cible de votre compte LDP vers lequel vous souhaitez que vos logs du service OVHcloud Connect soient transférés.
+
+> [!primary]
+> Vous pouvez trouver les types (`kind`) disponibles en utilisant l'appel API suivant :
+>
+> > [!api]
+> >
+> > @api {v1} /ovhCloudConnect GET  /ovhCloudConnect/{serviceName}/log/kind
+> >
+>
 
 ```shell
 POST /ovhCloudConnect/{serviceName}/log/subscription
@@ -108,7 +128,7 @@ Vous obtiendrez en réponse un `operationId` :
 }
 ```
 
-Vous pouvez utiliser le `operationId` pour récupérer le `subscriptionId` à des fins de gestion ultérieure à l'aide de l'appel d'api suivant :
+Vous pouvez utiliser le `operationId` pour récupérer le `subscriptionId` à des fins de gestion ultérieure à l'aide de l'appel API suivant :
 
 > [!api]
 >
@@ -151,9 +171,9 @@ GET /ovhCloudConnect/{serviceName}/log/subscription/{subscriptionId}
 Maintenant que vos logs sont ingérés et stockés dans votre flux de données Logs Data Platform, vous pouvez interroger vos logs et créer des tableaux de bord pour avoir une représentation graphique de vos logs en utilisant l'interface web de Graylog.
 
 - Dans votre espace client, récupérez le nom d'utilisateur LDP (ex: logs-xxxx) et son mot de passe sur la page d'accueil de votre compte Logs Data Platform. Vous pouvez vous référer au [Guide de démarrage rapide pour Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-- Ouvrir l'interface utilisateur Graylog. Vous pouvez récupérer le lien sur la page d'accueil de votre compte ou en utilisant votre point d'accès en fonction de la région de votre compte (par exemple : la région de Gravelines est `https://gra1.logs.ovh.com/`).
+- Ouvrez l'interface utilisateur Graylog. Vous pouvez récupérer le lien sur la page d'accueil de votre compte ou en utilisant votre point d'accès en fonction de la région de votre compte (par exemple : la région de Gravelines est `https://gra1.logs.ovh.com/`).
 - Connectez-vous à Graylog en utilisant votre nom d'utilisateur et votre mot de passe Logs Data Platform.
-- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries (EN)](https://go2docs.graylog.org/current/making_sense_of_your_log_data/writing_search_queries.html){.external} pour plus de détails sur la syntaxe de recherche.
+- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la documentation [Graylog writing search queries (EN)](https://go2docs.graylog.org/current/making_sense_of_your_log_data/writing_search_queries.html) pour plus de détails sur la syntaxe de recherche.
 
 Reportez-vous à la documentation suivante : [Logs Data Platform - Visualizing, querying and exploiting your logs (EN)](/products/observability-logs-data-platform-visualizing-querying-exploiting) pour plus de détails sur l'utilisation de vos logs avec Logs Data Platform, y compris sur la façon de :
 
