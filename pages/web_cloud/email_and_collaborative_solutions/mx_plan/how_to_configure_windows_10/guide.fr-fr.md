@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan / Zimbra Starter : ajouter un compte e-mail sur Outlook nouvelle version / Courrier pour Windows'
 excerpt: "Apprenez à configurer votre adresse e-mail sur l'application Outlook ou Courrier pour Windows"
-updated: 2025-08-27
+updated: 2025-08-28
 ---
 
 <style>
@@ -32,7 +32,6 @@ Les adresses e-mail de l'offre MX Plan et [Zimbra](/links/web/emails-zimbra) Sta
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
 ## En pratique
-
 
 ### Ajouter le compte <a name="add-account"></a>
 
@@ -109,9 +108,9 @@ Renseignez à présent les informations demandées :
 - **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
 - **Nom du compte** : Précisez le nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Courrier.
 - **Envoyer vos messages en utilisant ce nom** : Renseignez le nom qui s'affichera dans le champ d'expéditeur lorsque des e-mails seront envoyés avec cette adresse.
- - **Serveur de courrier entrant IMAP** :<br>- **Nom d'hôte IMAP** : pour l'**EUROPE**, saisissez `imap.mail.ovh.net` ou `ssl0.ovh.net`. Pour l'**AMERIQUE/ASIE**, saisissez `imap.mail.ovh.ca`<br>- **Port** : 993<br>- **Type de sécurité** : SSL/TLS<br>- **Nom d'utilisateur IMAP** : votre adresse e-mail complète<br>- **Mot de passe IMAP** : celui de votre adresse e-mail
+ - **Serveur de courrier entrant IMAP** :  pour l'**EUROPE**, saisissez `imap.mail.ovh.net` ou `ssl0.ovh.net`. Pour l'**AMERIQUE/ASIE**, saisissez `imap.mail.ovh.ca`.
 - **Type de compte** : Nous vous conseillons une utilisation en **IMAP4**. Vous pouvez cependant sélectionner **POP** (stockage des e-mails en local sur votre application Mail) dans le menu déroulant.
-- **Serveur de courrier entrant SMTP** :<br>- **Nom d'hôte SMTP** : pour l'**EUROPE**, saisissez `smtp.mail.ovh.net` ou `ssl0.ovh.net` . Pour l'**AMERIQUE/ASIE**, saisissez `smtp.mail.ovh.ca`<br>- **Port** : 465<br>- **Type de sécurité** : SSL/TLS<br>- **Nom d'utilisateur SMTP** : votre adresse e-mail complète<br>- **Mot de passe SMTP** : celui de votre adresse e-mail
+- **Serveur de courrier entrant SMTP** : pour l'**EUROPE**, saisissez `smtp.mail.ovh.net` ou `ssl0.ovh.net` . Pour l'**AMERIQUE/ASIE**, saisissez `smtp.mail.ovh.ca`.
 
 Assurez-vous que les cases sont bien cochées pour les choix suivants :
 
@@ -208,5 +207,9 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 [Configurer son compte E-mail Pro sur l'application Courrier pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 
 [Configurer son compte Exchange sur l'application Courrier pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
+
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
