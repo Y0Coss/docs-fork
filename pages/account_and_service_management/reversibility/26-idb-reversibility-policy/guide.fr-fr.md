@@ -1,6 +1,6 @@
 ---
 title: "Politique de réversibilité du produit Managed In-Memory Database"
-updated: 2025-08-27
+updated: 2025-08-28
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ Cette politique vise à mettre en œuvre les principes généraux de réversibil
 Les fonctionnalités du produit sont réparties en trois catégories :
 
 1. Les **fonctionnalités principales** pour lesquelles nous garantissons la capacité de migration.
-2. Les **implémentation OVHcloud** qui nécessitent une adaptation à un nouvel environnement de migration.
+2. Les **implémentations OVHcloud** qui nécessitent une adaptation à un nouvel environnement de migration.
 3. Les **fonctionnalités spécifiques** qui ne peuvent pas être garanties pour la migration car elles sont liées à l'environnement OVHcloud ou impliquent des développements personnalisés.
 
 ### 1. Fonctionnalités principales
@@ -22,17 +22,16 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
 | Stockage clé-valeur en mémoire | Stockage haute performance de paires clé-valeur entièrement en mémoire | JSON, RDB, AOF | **Entrante** : import des données via API, la CLI ou restauration de dump  <br>**Sortante** : export avec les commandes BGSAVE ou dump  | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) <br><br>[Valkey - Se connecter avec CLI (EN)](/pages/public_cloud/public_cloud_databases/redis_03_connect_cli) |
-| Haute disponibilité | Basculement automatique avec Valkey Sentinel ou en mode cluster | NA | **Entrante** : configuration des réplicas et du basculement via la CLI  <br>**Sortante** : : prendre notre des configurations  et les reproduire dans l'infrastructure cible | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
-| Persistance | Sauvegarde des données sur disque via snapshots RDB ou journaux AOF (logs)  | RDB, AOF | **Entrante** : import des snapshots ou des journaux AOF via la CLI Redis ou Valkey et configuration des sauvegardes <br>**Sortante** : export des données via la commande dump (CLI)   | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
-| Scalabilité | Mode cluster pour répartir les clés entre plusieurs instances de bases de données (shards) | pas de format particulier exigé, ça dépend du choix du client | **Entrante** : import des clés de ‘ resharding’ pour s’adapter à la topologie du service via la CLI  <br>**Sortante** : export et réimport des clés dans l’infrastructure cible via la CLI | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
+| Haute disponibilité | Basculement automatique avec Valkey Sentinel ou en mode cluster | NA | **Entrante** : configuration des réplicas et du basculement via la CLI  <br>**Sortante** : : prendre note des configurations et les reproduire dans l'infrastructure cible | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
+| Persistance | Sauvegarde des données sur disque via snapshots RDB ou journaux AOF (logs) | RDB, AOF | **Entrante** : import des snapshots ou des journaux AOF via la CLI Redis ou Valkey et configuration des sauvegardes <br>**Sortante** : export des données via la commande dump (CLI) | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
+| Scalabilité | Mode cluster pour répartir les clés entre plusieurs instances de bases de données (shards) | Pas de format particulier exigé, ça dépend du choix du client | **Entrante** : import des clés de "resharding" pour s’adapter à la topologie du service via la CLI <br>**Sortante** : export et réimport des clés dans l’infrastructure cible via la CLI | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
 
 ### 2. Implémentations OVHcloud
 
 | **Fonction** | **Description** | **Formats disponibles** | **Modèle de migration** | **Documentation disponible** |
 | --- | --- | --- | --- | --- |
-| Sécurité réseau (ACL) | Contrôle d’accès par liste IP  | IPv4, JSON | **Entrante** : configuration des IP autorisées via l’interface web (espace client) ou les API <br>**Sortante** : export de la configuration et l’adapter à l‘architecture cible  | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
-| vRack | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | NA | **Entrante** : activation et configuration de la connexion réseau <br>**Sortante** : prendre note de l'architecture réseau et la reproduire-la avec des VLAN.  | [Création de V(x)LAN Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
-
+| Sécurité réseau (ACL) | Contrôle d’accès par liste IP  | IPv4, JSON | **Entrante** : configuration des IP autorisées via l’interface web (espace client) ou les API <br>**Sortante** : export de la configuration et l’adapter à l‘architecture cible | [Valkey - Capacités et limites (EN)](/pages/public_cloud/public_cloud_databases/redis_01_capabilities) |
+| vRack | Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud | NA | **Entrante** : activation et configuration de la connexion réseau <br>**Sortante** : prendre note de l'architecture réseau et la reproduire avec des VLANs. | [Création de V(x)LAN Public Cloud Databases](/pages/public_cloud/public_cloud_databases/databases_08_vrack) |
 
 ### 3. Fonctionnalités spécifiques
 
@@ -43,7 +42,7 @@ Les fonctionnalités du produit sont réparties en trois catégories :
 
 ## Liste des architectures
 
-Le produit repose sur une architecture distribuée en mémoire, s’appuyant sur la technologie  Valkey Sentinel pour assurer la haute disponibilité. Elle prend en charge la réplication, la tolérance aux pannes et les basculements automatiques pour garantir la fiabilité du service.
+Le produit repose sur une architecture distribuée en mémoire, s’appuyant sur la technologie Valkey Sentinel pour assurer la haute disponibilité. Elle prend en charge la réplication, la tolérance aux pannes et les basculements automatiques pour garantir la fiabilité du service.
 
 ## Services partenaires
 
@@ -53,9 +52,8 @@ OVHcloud dispose également d’un service dédié : [OVHcloud Professional Serv
 
 ## Coûts et frais
 
-Les fonctionnalités décrites dans les tableaux sont disponibles sans couts et frais sauf mentions contraires, et sont librement utilisables par le client.
-La tarification est en mode Pay as you go et dépend de la capacité mémoire, du type d’instance. Aucun frais de sortie supplémentaire n’est appliqué, mais il est essentiel d’exporter toutes les données avant résiliation, car elles seront supprimées définitivement.
-
+Les fonctionnalités décrites dans les tableaux sont disponibles sans coûts et frais sauf mentions contraires, et sont librement utilisables par le client.
+La tarification est en mode *Pay as you go* et dépend de la capacité mémoire, du type d’instance. Aucun frais de sortie supplémentaire n’est appliqué, mais il est essentiel d’exporter toutes les données avant résiliation, car elles seront supprimées définitivement.
 
 ## Conservation des données après résiliation du contrat
 
