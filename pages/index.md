@@ -1987,6 +1987,7 @@
             + [How to initiate a diagnostic for OVHcloud Connect from the OVHcloud Control Panel](network/ovhcloud_connect/occ-diagnostics)
         + [Technical resources](network-ovhcloud-connect-technical-resources)
             + [Technical capabilities and limitations](network/ovhcloud_connect/occ-limits)
+            + [OVHcloud Connect Logs Forwarding](network/ovhcloud_connect/occ-logs-2-customers)
         + [Configuration](network-ovhcloud-connect-configuration)
             + [Configuration of OVHcloud Connect using OVHcloud APIv6](network/ovhcloud_connect/occ-howto-api)
     + [Load Balancer](products/network-load-balancer)
