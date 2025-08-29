@@ -102,13 +102,13 @@ Seleccione la pestaña correspondiente a la tecnología de correo de su solució
 > [!tabs]
 > **Zimbra**
 >>
->> Cuando esté conectado al webmail Zimbra, verá la interfaz de abajo. Para más información sobre el uso del webmail Zimbra, consulte nuestra guía «[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
+>> Cuando esté conectado al webmail Zimbra, verá la interfaz de abajo. Para más información sobre el uso del webmail Zimbra, consulte nuestra guía "[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
 >>
 >> ![Zimbra - interface](images/zimbra-01.png){.thumbnail .w-400}
 >>
 > **OWA**
 >>
->> La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+>> La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)".
 >>
 >> ![Correo electrónico](images/mxplan-creation-new-step5.png){.thumbnail .w-400}
 
