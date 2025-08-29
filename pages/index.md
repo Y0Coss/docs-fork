@@ -879,6 +879,7 @@
             + [Reversibility Policy for the Managed Data Visualization product](account_and_service_management/reversibility/15-reversibility-obs-data-visualization)
             + [Reversibility Policy for the product Managed Search Engine Software Platform](account_and_service_management/reversibility/22-SDB-opensearch-reversibility)
             + [How to move a database service from a single AZ region to a 3-AZ region](public_cloud/public_cloud_databases/databases_19_migrate_from_1AZ_to_3AZ)
+            + [Migrate to OVHcloud Database as a Service (DBaaS)](public_cloud/public_cloud_databases/databases_20_move_to_cloud)
         + [MongoDB](products/public-cloud-databases-mongodb)
             + [Getting Started](public-cloud-databases-mongodb-getting-started)
                 + [MongoDB - Why MongoDB](public_cloud/public_cloud_databases/mongodb_17_why_mongodb)
