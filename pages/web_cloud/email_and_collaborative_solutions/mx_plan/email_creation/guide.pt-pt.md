@@ -45,7 +45,7 @@ Adquiriu um serviço de e-mail MX Plan. que lhe permite beneficiar de endereços
 >
 > Em função da data de ativação da sua oferta MX Plan ou de uma migração recente, a tecnologia de e-mail associada pode diferir. Esta versão é caracterizada pela interface do seu webmail. Para identificá-lo:
 >
-> - No separador "Informações gerais"{.action}, leia a tecnologia utilizada com a menção **Webmail** presente na caixa "Subscrição" {.action} em Webmail{.action}.
+> - No separador `Informações gerais`{.action}, leia a tecnologia utilizada com a menção **Webmail** presente na caixa `Subscrição`{.action} em `Webmail`{.action}.
 >
 > ![MX plan](images/technology-email.png){.thumbnail .w-400}
 
