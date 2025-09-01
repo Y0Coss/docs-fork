@@ -1,10 +1,21 @@
 ---
-title: 'MX Plan / Zimbra Starter : ajouter un compte e-mail sur Outlook nouvelle version / Courrier pour Windows'
-excerpt: "Apprenez à configurer votre adresse e-mail sur l'application Outlook ou Courrier pour Windows"
+title: 'MX Plan / Zimbra Starter : ajouter un compte e-mail sur le nouvel Outlook pour Windows'
+excerpt: "Apprenez à configurer votre adresse e-mail sur le nouvel Outlook pour Windowss"
 updated: 2025-08-28
 ---
 
 <style>
+details>summary {
+    color:rgb(255,165,0) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
 .w-400 {
   max-width:400px !important;
 }
@@ -14,7 +25,9 @@ updated: 2025-08-28
 
 Les adresses e-mail de l'offre MX Plan et [Zimbra](/links/web/emails-zimbra) Starter peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
 
-**Apprenez à configurer votre adresse e-mail MX Plan sur l'application Courrier pour Windows.**
+Le **Nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier** sur Windows. Pour plus d'information sur le sujet, je vous invite à consulter la page officielle de Microsoft « [Outlook pour Windows : l’avenir du courrier, du calendrier et des Personnes sur Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ». 
+
+**Apprenez à configurer votre adresse e-mail MX Plan sur le Nouvel Outlook pour Windows.**
 
 > [!warning]
 >
@@ -28,8 +41,20 @@ Les adresses e-mail de l'offre MX Plan et [Zimbra](/links/web/emails-zimbra) Sta
 - Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
     - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
     - [Zimbra](/links/web/emails-zimbra) Starter (uniquement).
-- Disposer de la [nouvelle version d'Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) ou [Courrier](https://support.microsoft.com/office/set-up-email-in-the-mail-app-7ff79e8b-439b-4b47-8ff9-3f9a33166c60) installée sur votre Windows.
+- Disposer de la [nouvelle version d'Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) installée sur votre Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+
+> [!warning]
+>
+> Cette documentation s’applique uniquement au **Nouvel Outlook** et non au [classique Outlook](https://support.microsoft.com/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur
+
+/// details | Informations relatives à la gestion et configuration des services OVHcloud
+
+OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+
+Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+
+///
 
 ## En pratique
 
@@ -78,54 +103,6 @@ Les adresses e-mail de l'offre MX Plan et [Zimbra](/links/web/emails-zimbra) Sta
 >> - Cliquez sur `Continuer`{.action} pour finaliser la configuration.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-03ca.png){.thumbnail .w-400}
-
-> [!warning]
->
-> Depuis Windows 10, si vous n'avez pas encore migré votre logiciel de messagerie « Courrier » vers la nouvel version Outlook, cliquez sur la mention **Configuration Courrier Windows** ci-dessous.
-
-<a name="add-account-mail"></a>
-
-/// details | Configuration Courrier Windows
-
-Une fois l'application Courrier lancée sur votre appareil, l'ajout d'un compte peut être effectué de deux manières différentes.
-
-- **Lors du premier démarrage de l'application** : une fenêtre vous invite à cliquer sur `Ajouter un compte`{.action}.
-
-- **Si un compte a déjà été paramétré** : cliquez sur `Comptes`{.action} dans la barre de menu à gauche de l'application, puis sur `Ajouter un compte`{.action} dans le menu qui apparaît à droite.
-
-![outlook](images/configuration-mail-windows-step1.png){.thumbnail .w-400}
-
-Dans la fenêtre qui s'affiche, cliquez sur `Configuration avancée`{.action}, puis choisissez `Courrier Internet`{.action} comme type de compte.
-
-Renseignez à présent les informations demandées :
-
-> [!warning]
->
-> Il est nécessaire de bien relever la valeur correspondante à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
-
-- **Adresse de courrier** : Renseignez l'adresse e-mail complète.
-- **Nom d'utilisateur** : Indiquez l'adresse e-mail complète.
-- **Mot de passe** : Renseignez le mot de passe de l'adresse e-mail.
-- **Nom du compte** : Précisez le nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Courrier.
-- **Envoyer vos messages en utilisant ce nom** : Renseignez le nom qui s'affichera dans le champ d'expéditeur lorsque des e-mails seront envoyés avec cette adresse.
- - **Serveur de courrier entrant IMAP** :  pour l'**EUROPE**, saisissez `imap.mail.ovh.net` ou `ssl0.ovh.net`. Pour l'**AMERIQUE/ASIE**, saisissez `imap.mail.ovh.ca`.
-- **Type de compte** : Nous vous conseillons une utilisation en **IMAP4**. Vous pouvez cependant sélectionner **POP** (stockage des e-mails en local sur votre application Mail) dans le menu déroulant.
-- **Serveur de courrier entrant SMTP** : pour l'**EUROPE**, saisissez `smtp.mail.ovh.net` ou `ssl0.ovh.net` . Pour l'**AMERIQUE/ASIE**, saisissez `smtp.mail.ovh.ca`.
-
-Assurez-vous que les cases sont bien cochées pour les choix suivants :
-
-- « Le serveur sortant requiert l'authentification » ;
-- « Utiliser le même nom d'utilisateur et mot de passe pour l'envoi du courrier » ;
-- « Exiger le protocole SSL pour le courrier entrant » ;
-- « Exiger le protocole SSL pour le courrier sortant ».
-
-Une fois les informations complétées, cliquez sur `Se connecter`{.action}. Si les informations renseignées sont correctes, la connexion au compte réussira.
-
-Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctement paramétré.
-
-![outlook](images/configuration-mail-windows-step2.png){.thumbnail .w-400}
-
-///
 
 ### Utiliser l'adresse e-mail <a name="use-account"></a>
 
@@ -202,11 +179,11 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 
 > [!primary]
 >
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Courrier sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/fr-fr/office/configurer-l-e-mail-dans-l-application-courrier-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Nouvel Outlook sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
-[Configurer son compte E-mail Pro sur l'application Courrier pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
+[Premiers pas avec l'offre MX Plan](pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
-[Configurer son compte Exchange sur l'application Courrier pour Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
+[Premiers pas avec l'offre Zimbra](pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
