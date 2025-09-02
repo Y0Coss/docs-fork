@@ -1,7 +1,7 @@
 ---
 title: Resize a Public Cloud instance using the OpenStack CLI
 excerpt: Find out how to scale up your instance resources to address an increased activity
-updated: 2023-09-22
+updated: 2025-08-25
 ---
 
 ## Objective

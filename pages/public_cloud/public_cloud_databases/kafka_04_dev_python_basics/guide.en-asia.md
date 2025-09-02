@@ -1,7 +1,7 @@
 ---
-title: "Kafka - Python 101"
-excerpt: "Code your first Python applications using Public Cloud Databases for Kafka"
-updated: 2025-08-04
+title: "Kafka - Create publisher and consumer applications"
+excerpt: "Develop your first Python applications using Kafka"
+updated: 2025-08-25
 ---
 
 ## Objective

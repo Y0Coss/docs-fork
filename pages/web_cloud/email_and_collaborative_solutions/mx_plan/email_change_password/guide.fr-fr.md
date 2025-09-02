@@ -15,7 +15,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](/links/web/email).
 - Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
     - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
     - [Exchange](/links/web/emails).
@@ -88,7 +88,7 @@ La modification de votre mot de passe via le webmail est disponible pour les off
 - Email Pro
 - Exchange
 - MX Plan Zimbra
-- Zimbra Starter et Pro
+- Zimbra Starter / Pro
 
 > [!warning]
 >

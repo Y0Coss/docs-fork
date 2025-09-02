@@ -1,7 +1,7 @@
 ---
 title: Cassandra - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-updated: 2025-07-31
+updated: 2025-08-25
 ---
 
 > [!warning]
@@ -30,7 +30,6 @@ The Public Cloud Databases offer is available in the following regions:
 - `GRA` (Gravelines, France)
 - `SBG` (Strasbourg, France)
 - `SGP` (Singapore, Singapore)
-- `EU-WEST-PAR` (Paris, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 

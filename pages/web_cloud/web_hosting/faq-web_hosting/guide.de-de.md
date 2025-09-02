@@ -564,15 +564,15 @@ Dieser Fehler kann auch auftreten, wenn eine HTTP-Anfrage auf Ihrer Website zu *
 
 Die Seite „Your request has been blocked“ kann aus verschiedenen Gründen angezeigt werden (nicht abschließende Liste):
 
-- Die Anfrage wird über einen nicht aktualisierten Internetbrowser (Firefox, Chrome, Safari, Edge etc.) durchgeführt.
+- Die Anfrage wird über einen nicht aktualisierten Browser (Firefox, Chrome, Safari, Edge etc.) durchgeführt.
 - Eine sehr große Zahl von Anfragen wird innerhalb einer äußerst kurzen Frist ausgeführt.
-- Die Anfrage versucht, nicht autorisierte Aktionen auf der Shared Hosting Infrastruktur durchzuführen, auf der sich Ihr Webhosting befindet.
+- Die Anfrage versucht, nicht autorisierte Aktionen auf der Hosting-Infrastruktur durchzuführen, auf der sich Ihr Webhosting befindet.
 
 In diesem Fall sind mehrere Aktionen erforderlich:
 
-- Stellen Sie sicher, dass Ihr Internetbrowser auf dem neuesten Stand ist.
-- Rufen Sie die aufgerufene URL (zum Beispiel: `https://www.domain.tld`) sowie alle Informationen auf der Seite „Your request has been blocked“ (`IP address`, `Date` und `Request ID`) ab.
-- Übermitteln Sie die wiederhergestellten Elemente an den Support, indem Sie ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
+- Stellen Sie sicher, dass Ihr Browser auf dem neuesten Stand ist.
+- Notieren Sie die aufgerufene URL (zum Beispiel: `https://www.domain.tld`) sowie alle Informationen auf der Seite „Your request has been blocked“ (`IP address`, `Date` und `Request ID`).
+- Übermitteln Sie diese Informationen an den Support, indem Sie ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
 
 Wenn Sie sich nicht sicher sind, welche Schritte Sie ausführen sollen, wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](/links/partner).
 
@@ -593,8 +593,8 @@ Die Seite „Your IP has been banned“ kann aus verschiedenen Gründen angezeig
 
 In diesem Fall sind mehrere Aktionen erforderlich:
 
-- Rufen Sie die aufgerufene URL (zum Beispiel: `https://www.domain.tld`) sowie alle Informationen auf der Seite „Your IP has been banned“ (`IP address`, `Date` und `Request ID`) ab.
-- Übermitteln Sie die wiederhergestellten Elemente an den Support, indem Sie ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
+- Notieren Sie die aufgerufene URL (zum Beispiel: `https://www.domain.tld`) sowie alle Informationen auf der Seite „Your IP has been banned“ (`IP address`, `Date` und `Request ID`).
+- Übermitteln Sie diese Informationen an den Support, indem Sie ein [Support-Ticket](https://help.ovhcloud.com/csm?id=csm_get_help) erstellen.
 
 Wenn Sie sich nicht sicher sind, welche Schritte Sie ausführen sollen, wenden Sie sich an Ihren Webmaster oder einen unserer [Partner](/links/partner).
 
