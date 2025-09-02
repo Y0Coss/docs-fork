@@ -42,7 +42,7 @@ Pour vous connecter et utiliser l'accès SSH de votre hébergement web, vous aur
 - l'adresse du serveur SSH de votre hébergement web ;
 - le port de connexion au serveur SSH de votre hébergement web.
 
-### 1 - S'assurer que l'accès SSH est actif pour l'utilisateur SSH choisi <a name="user-ssh-enablement"></a>
+### 1 - Assurz-vous que l'accès SSH est actif pour l'utilisateur SSH choisi <a name="user-ssh-enablement"></a>
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -69,19 +69,19 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Sur la nouvelle page, les informations liées à votre espace de stockage apparaissent.
 >>
->> Repérez dans le tableau la colonne `SSH` afin de vérifier que l'utilisateur SSH (présent dans la colonne `Login` du tableau) concerné dispose bien d'un accès SSH actif. La mention `Désactivé` apparaît si ce n'est pas le cas.
+>> Dans le tableau, repérez la colonne `SSH` afin de vérifier que l'utilisateur SSH (présent dans la colonne `Login` du tableau) concerné dispose bien d'un accès SSH actif. La mention `Désactivé` apparaît si ce n'est pas le cas.
 >>
 >> ![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
 >>
 >> Si l'accès SSH de l'utilisateur concerné est `Désactivé` dans le tableau, effectuez les opérations suivantes :
 >>
->> - 1: Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à l'utilisateur, puis sur `Modifier`{.action}.
->> - 2: Dans la fenêtre qui s'affiche, section `Protocoles de connexion`, sélectionnez le choix `FTP, SFTP et SSH`{.action}, puis cliquez sur `Suivant`{.action}.
->> - 3: Vérifiez le résumé de la modification demandée, puis cliquez sur `Valider`{.action}.
+>> - 1 : Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à l'utilisateur, puis sur `Modifier`{.action}.
+>> - 2 : Dans la fenêtre qui s'affiche, section `Protocoles de connexion`, sélectionnez le choix `FTP, SFTP et SSH`{.action}, puis cliquez sur `Suivant`{.action}.
+>> - 3 : Vérifiez le résumé de la modification demandée, puis cliquez sur `Valider`{.action}.
 >>
->> >Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](/links/web/hosting) bénéficie bien d'un accès SSH.
+>> > Si vous n'avez pas la possibilité de l'activer, assurez-vous que [votre offre d'hébergement web OVHcloud](/links/web/hosting) bénéficie bien d'un accès SSH.
 
-### 2 - Récupérer les informations nécessaires pour se connecter en SSH <a name="sshlogin"></a>
+### 2 - Récupérez les informations nécessaires pour vous connecter en SSH <a name="sshlogin"></a>
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -115,7 +115,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >> |**Utilisateur SSH actif**| Dans le tableau situé en bas de page, retrouvez-le dans la colonne `Login`.<br>Pour rappel, cet utilisateur doit [disposer d'un accès SSH actif](#user-ssh-enablement).|
 >> |**Mot de passe de l'utilisateur SSH**| Si vous avez oublié ce mot de passe, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à l'utilisateur concerné dans le tableau situé en bas de page, puis sur `Changer le mot de passe`{.action}.|
 
-### 3 - Se connecter en SSH à l'espace de stockage de votre hébergement web
+### 3 - Connectez-vous en SSH à l'espace de stockage de votre hébergement web
 
 Pour vous connecter en SSH, utilisez un terminal afin d’interagir directement avec votre espace de stockage via des lignes de commande. 
 
@@ -158,7 +158,7 @@ Une fois le logiciel (PuTTY par exemple) ouvert, renseignez les informations de 
 
 Une fois connecté, poursuivez vers la partie suivante.
 
-### 4 - Interagir en SSH avec son espace de stockage <a name="ssh-using"></a>
+### 4 - Interagissez en SSH avec votre espace de stockage <a name="ssh-using"></a>
 
 Pour interagir avec votre espace de stockage, vous devez utiliser des commandes. Celles-ci ont une signification directe tirée de l'anglais. Aidez-vous de la liste ci-dessous si nécessaire. Attention, **celle-ci n'est pas exhaustive**.
 
@@ -187,13 +187,12 @@ Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnem
 > [!primary]
 >
 > Il est également possible de copier des fichiers et/ou dossiers à l'aide du **S**ecure **C**opy **P**rotocol (**SCP**).
-> Ce protocol utilise le protocol SSH pour dupliquer du contenu de manière sécurité entre :
+> Ce protocole utilise le protocole SSH pour dupliquer du contenu de manière sécurisée entre :
 > 
-> - un ordinateur/appareil local vers un serveur distant
-> - un serveur distant et un ordinateur/appareil local
+> - un ordinateur/appareil local et un serveur distant
 > - deux serveurs distants
 >
-> Retrouvez plus d'information sur l'utilisation de la commande `scp` avec nos hébergements web OVHcloud dans notre guide « [Hébergement Web - Copier des fichiers avec la commande SCP](/pages/web_cloud/web_hosting/using-scp-command) »
+> Retrouvez plus d'information sur l'utilisation de la commande `scp` avec nos hébergements web OVHcloud dans notre guide « [Hébergement Web - Copier des fichiers avec la commande SCP](/pages/web_cloud/web_hosting/using-scp-command) ».
 
 ## Aller plus loin
 
