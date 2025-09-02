@@ -1,7 +1,7 @@
 ---
 title: CephFS distributed filesystem
 excerpt: 'Learn how to create, manage, and mount a CephFS file system on OVHcloud using the API.'
-updated: 2025-09-03
+updated: 2025-09-04
 ---
 
 ## Objective
@@ -51,6 +51,11 @@ By default, this request returns an empty list. To create your first file system
 img
 
 Your CephFS should be available within a few minutes. You can verify its status directly on your cluster by running:
+
+> [!primary]
+>
+> To access your Ceph cluster directly, please refer to [this guide](/pages/storage_and_backup/block_storage/cloud_disk_array/ceph_access_cluster)
+>
 
 ```bash
 sudo ceph --id [USERID] fs ls
