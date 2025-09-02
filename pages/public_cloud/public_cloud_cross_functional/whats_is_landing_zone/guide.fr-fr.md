@@ -1,12 +1,12 @@
 ---
 title: 'Comprendre les Landing Zones'
 excerpt: 'Landing Zones – Tout ce que vous devez savoir pour créer une infrastructure cloud sécurisée et évolutive'
-updated: 2025-08-26
+updated: 2025-09-02
 ---
 
 ## Objectifs
 
-Ce guide vous aidera à comprendre les concepts et l'utilisation des Landing Zones : comment elles fournissent les bases en matière de gouvernance, de sécurité, de mise en réseau et d'identité pour vos projets OVHcloud Public Cloud.
+Ce guide vous aidera à comprendre les concepts et l'utilisation des Landing Zones : comment elles fournissent les bases en matière de gouvernance, de sécurité, de mise en réseau et d'identité pour vos projets Public Cloud OVHcloud.
 
 ## Qu'est ce qu'une Landing Zone ?
 
@@ -24,7 +24,7 @@ Avantages d'une Landing Zone :
 
 Sans Landing Zone dédiée, les organisations peuvent être confrontées à des incohérences de configuration, des failles de sécurité et une gestion inefficace des ressources.
 
-Consultez la référence d’architecture de la Landing Zone Public Cloud dans [ce guide].(/pages/public_cloud/public_cloud_cross_functional/landing_zone_migration).
+Consultez la référence d’architecture de la Landing Zone Public Cloud dans [ce guide](/pages/public_cloud/public_cloud_cross_functional/landing_zone_migration).
 
 **Les cinq piliers d'OVHcloud :**
 
@@ -36,7 +36,7 @@ Sur la base de notre expérience en matière de projets et de discussions techni
 4. Contrôle de la facturation
 5. Observabilité
 
-1. **Gestion des identités et des accès (IAM)**
+**1\. Gestion des identités et des accès (IAM)**
 
 Une configuration IAM garantit que, dans la pratique, le « principe du moindre privilège » peut être mis en œuvre, en accordant aux utilisateurs et aux services uniquement l'accès nécessaire. 
 
@@ -47,7 +47,7 @@ Les principales caractéristiques de nos services IAM sont les suivantes :
 - **Gestion des privilèges :** gérez les utilisateurs, les groupes et les applications sur tous les services OVHcloud. Personnalisez les droits d'accès en fonction des rôles, des responsabilités ou des types de ressources pour un travail d'équipe sécurisé.
 - **Fédération d'identités (ADFS ou Okta) :** connectez votre annuaire d'entreprise (Azure AD, Google Workspace, etc.) ou toute solution d'authentification basée sur le cloud à OVHcloud afin de centraliser la gestion des comptes et de faciliter la connexion des utilisateurs.
 
-2. **Réseau**
+**2\. **Réseau**
 
 - Le **backbone OVHcloud**, conçu pour garantir des connexions sécurisées et isolées, relie tous nos datacentres. Il offre à vos applications une accessibilité mondiale, une disponibilité constante et une architecture tolérante aux pannes. De plus, l'anti-DDoS est inclus par défaut dans tous les services OVHcloud, sans frais supplémentaires. Vous bénéficiez ainsi d'une solution hautement performante pour une sécurité optimale.
 - Le **réseau privé vRack** vous permet de connecter des instances Public Cloud, Hosted Private Cloud, des serveurs Bare Metal et des Load Balancers.
@@ -56,17 +56,16 @@ Les principales caractéristiques de nos services IAM sont les suivantes :
 - **Bring Your Own IP (BYOIP) :** il s'agit d'un moyen simple de maintenir la connectivité publique de votre entreprise, en particulier lorsque vous migrez tout ou partie de vos services vers le cloud.
 - **Floating IP :** une solution pour maintenir la connectivité des services de votre entreprise, principalement lorsque vous migrez tout ou partie de vos services vers le cloud.
 
-3. **Sécurité et conformité**
+**3\. Sécurité et conformité**
 
 Les mécanismes de sécurité sont essentiels pour la protection des données, la surveillance des menaces et la conformité réglementaire.
 
-- **Conformité :** nos services cloud, qui ont obtenu de nombreuses certifications, offrent un environnement sécurisé qui répond aux exigences de nombreux référentiels. Grâce à nos discussions fréquentes avec l'Agence nationale de la sécurité des systèmes d'information (ANSSI), nous sommes en mesure de fournir à nos clients des outils et des fonctionnalités qui répondent aux normes les plus strictes. 
-Consultez la liste des certifications [ici.](https://www.ovhcloud.com/en/compliance/){.external}
+- **Conformité :** nos services cloud, qui ont obtenu de nombreuses certifications, offrent un environnement sécurisé qui répond aux exigences de nombreux référentiels. Grâce à nos discussions fréquentes avec l'Agence nationale de la sécurité des systèmes d'information (ANSSI), nous sommes en mesure de fournir à nos clients des outils et des fonctionnalités qui répondent aux normes les plus strictes. Consultez la liste des certifications [ici](/links/compliance).
 - **Sécurité :** en plus des différentes fonctionnalités de chiffrement et de redondance de nos produits, nous proposons une suite d'outils pour aider nos clients à respecter leurs politiques de sécurité.
 
 Un **pare-feu** (FW) est un service ou un dispositif de sécurité qui contrôle le **trafic réseau entrant et sortant** en fonction d'un ensemble de règles. Dans le cloud, son rôle est d'appliquer la **segmentation du réseau**, de restreindre l'accès aux ressources clés et de bloquer le trafic non autorisé entre les services.
 
-- Chez OVHcloud, les pare-feu peuvent être configurés au **niveau de l'instance** ou via les **règles d'accès au réseau privé vRack**.
+- Chez OVHcloud, les pare-feux peuvent être configurés au **niveau de l'instance** ou via les **règles d'accès au réseau privé vRack**.
 - Les cas d'utilisation courants incluent l'autorisation du SSH uniquement à partir d'adresses IP approuvées, le blocage de l'accès public aux bases de données ou l'isolation des environnements.
 
 Un **hôte bastion (serveur relais)** est un serveur surveillé et fortifié qui sert de **passerelle sécurisée** vers une infrastructure cloud privée (par exemple, des machines virtuelles dans un sous-réseau privé).
@@ -84,32 +83,28 @@ Elle comprend :
 - **Atténuation des bots**
 - **Sécurité des API** (limitation du débit, validation des jetons)
 
-OVHcloud protège contre les **attaques DDoS** grâce à ses outils anti-DDoS propriétaires, activement maintenus. Tous les clients peuvent utiliser ce logiciel gratuitement. Le tableau de bord Network Security fournit une vue d'ensemble des activités malveillantes détectées, ce qui montre son efficacité. Pour plus de détails, voir [ici.](https://help.ovhcloud.com/csm/en-network-security-dashboard?id=kb_article_view&sysparm_article=KB0060700)
+OVHcloud protège contre les **attaques DDoS** grâce à ses outils anti-DDoS propriétaires, activement maintenus. Tous les clients peuvent utiliser ce logiciel gratuitement. Le tableau de bord Network Security fournit une vue d'ensemble des activités malveillantes détectées, ce qui montre son efficacité. Pour plus de détails, voir [notre guide dédié](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard).
 
-[**OVHcloud Workflow Management**](https://www.ovhcloud.com/en/public-cloud/workflow-management/)
+[**OVHcloud Workflow Management**](/links/public-cloud/workflow-management) : En automatisant et en orchestrant vos opérations cloud, OVHcloud Workflow Management garantit un approvisionnement efficace des ressources, l'application des politiques et la conformité. Il simplifie les procédures complexes, améliorant ainsi l'agilité et le contrôle de vos infrastructures OVHcloud.
 
-En automatisant et en orchestrant vos opérations cloud, OVHcloud Workflow Management garantit un approvisionnement efficace des ressources, l'application des politiques et la conformité. Il simplifie les procédures complexes, améliorant ainsi l'agilité et le contrôle de vos infrastructures OVHcloud.
+[**Veeam Enterprise Plus**](/links/storage/veeam-enterprise) : Pour les environnements d'entreprise, Veeam Enterprise Plus offre des solutions avancées de sauvegarde, de reprise après sinistre et de gestion des données. Qu'elles soient physiques, virtuelles ou dans le cloud, vos charges de travail critiques sont protégées de manière fiable et peuvent être restaurées rapidement.
 
-[**Veeam Enterprise Plus**](https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/)
-
-Pour les environnements d'entreprise, Veeam Enterprise Plus offre des solutions avancées de sauvegarde, de reprise après sinistre et de gestion des données. Qu'elles soient physiques, virtuelles ou dans le cloud, vos charges de travail critiques sont protégées de manière fiable et peuvent être restaurées rapidement.
-
-4. **Contrôle de la facturation**
+**4\. Contrôle de la facturation**
 
 Le contrôle de la facturation est un pilier essentiel qui garantit la transparence et la prévisibilité des dépenses liées au cloud, ainsi que leur adéquation directe avec les besoins de l'entreprise. Grâce à l'isolation des coûts des projets, à l'application d'un balisage cohérent et à la mise en place de rapports et d'alertes automatisés, les entreprises peuvent garantir la transparence financière et le respect des politiques d'utilisation, tout en conservant leur agilité.
 
 Principales fonctionnalités du contrôle de la facturation :
 
-- **Isolation des coûts par projet :** répartissez la facturation par environnement à l'aide des projets OVHcloud Public Cloud (prod, dev, shared, etc.).
+- **Isolation des coûts par projet :** répartissez la facturation par environnement à l'aide des projets Public Cloud OVHcloud (prod, dev, shared, etc.).
 - **Stratégie de balisage :** appliquez des balises standardisées telles que l'environnement, le propriétaire et le centre de coûts à toutes les ressources pour une répartition précise des coûts.
 - **Alertes budgétaires :** définissez des seuils d'utilisation ou de dépenses pour recevoir des alertes lorsque vous êtes sur le point de dépasser les limites fixées.
 - **Rapports automatisés :** utilisez les API OVHcloud ou les exportations CSV pour créer des tableaux de bord et des rapports programmés à l'intention des parties prenantes.
 - **Politiques de gouvernance des coûts :** définissez des politiques pour restreindre les ressources non balisées, contrôler les types d'instances ou nettoyer automatiquement les environnements inutilisés.
 - **Estimation des coûts :** utilisez une plateforme FinOps ou consultez les équipes OVHcloud pour obtenir des estimations afin de prévoir les dépenses avant le provisionnement.
 
-5. Observabilité
+**5\. Observabilité**
 
-L'observabilité s'appuie sur des données telles que les journaux, les métriques et les traces pour fournir des informations sur l'état d'un système et l'évaluer. Grâce à l'observabilité, il est plus facile de comprendre, de suivre et de dépanner le comportement d'un système, en particulier dans les configurations cloud distribuées.
+L'observabilité s'appuie sur des données telles que les logs, les métriques et les traces pour fournir des informations sur l'état d'un système et l'évaluer. Grâce à l'observabilité, il est plus facile de comprendre, de suivre et de dépanner le comportement d'un système, en particulier dans les configurations cloud distribuées.
 
 OVHcloud divise l'observabilité en deux parties :
 
@@ -121,10 +116,10 @@ Pour offrir les fonctionnalités de la Logs Data Platform, OVHcloud intègre dif
 
 Le cycle de vie d'un log comprend 4 phases distinctes :
 
-- **Génération :** les applications, les systèmes et les services cloud génèrent des journaux, qui sont généralement stockés localement dans des fichiers.
-- **Ingestion :** les agents d'ingestion, ou entrées, reçoivent les journaux dans la plateforme de données de journaux. Ils vérifient la validité de la source et le formatage des journaux en fonction de [ces règles](https://help.ovhcloud.com/csm/fr-logs-data-platform-field-naming-conventions?id=kb_article_view&sysparm_article=KB0037656) et peuvent ajouter, mettre à jour ou supprimer des champs avant de transférer vos journaux vers le stockage.
-- **Stockage :** après leur ingestion, vos journaux sont stockés dans la plateforme de données de journaux. Les données peuvent être stockées de deux manières : sous forme de données indexées accessibles via des API et d'autres outils, ou sous forme de données archivées.
-- **Consommation :** il existe de nombreuses façons d'utiliser vos journaux. Les utilisateurs de la plateforme de données de journaux peuvent visualiser les journaux en temps réel, créer des tableaux de bord, créer et exécuter des requêtes détaillées à l'aide de l'interface utilisateur ou de l'API, et également configurer des alertes.
+- **Génération :** les applications, les systèmes et les services cloud génèrent des logs, qui sont généralement stockés localement dans des fichiers.
+- **Ingestion :** les agents d'ingestion, ou entrées, reçoivent les logs dans la Logs Data Platform. Ils vérifient la validité de la source et le formatage des logs en fonction de [ces règles](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention) et peuvent ajouter, mettre à jour ou supprimer des champs avant de transférer vos logs vers le stockage.
+- **Stockage :** après leur ingestion, vos logs sont stockés dans la Logs Data Platform. Les données peuvent être stockées de deux manières : sous forme de données indexées accessibles via des API et d'autres outils, ou sous forme de données archivées.
+- **Consommation :** il existe de nombreuses façons d'utiliser vos logs. Les utilisateurs de la Logs Data Platform peuvent visualiser les logs en temps réel, créer des tableaux de bord, créer et exécuter des requêtes détaillées à l'aide de l'interface utilisateur ou de l'API, et également configurer des alertes.
 
 ## OVHcloud Landing Zone: un guide simple étape par étape
 
@@ -139,59 +134,45 @@ Pour créer une Landing Zone qui fonctionne bien, il est important d'évaluer le
 ### En pratique
 
 1. Définissez votre stratégie cloud et vos environnements
-
-- Identifiez vos objectifs d'utilisation du cloud (hébergement web, traitement de données, Kubernetes).
-- Définissez les environnements clés (production, staging ou test).
-
+    - Identifiez vos objectifs d'utilisation du cloud (hébergement web, traitement de données, Kubernetes).
+    - Définissez les environnements clés (production, staging ou test).
 2. Configurez les projets OVHcloud
-
-- Créez des projets OVHcloud Public Cloud pour chaque environnement.
-- Avantages : IAM, quotas, accès et isolation.
-
-3. Planifier et déployer l'architecture réseau
-
-- Utiliser vRack pour interconnecter les ressources entre les projets ou les régions.
-- Créer des réseaux privés au sein de chaque projet.
-- Utiliser des groupes de sécurité et des règles de pare-feu pour contrôler le trafic.
-- Si nécessaire, mettre en œuvre un modèle en étoile à l'aide de vRack.
-
-4. Configurer le contrôle des identités et des accès
-
-- Attribuer des rôles par projet (administrateur, lecture seule, DevOps).
-- Appliquez l'authentification multifactorielle (MFA) pour les utilisateurs.
-- Intégrez l'authentification unique (SSO) via l'IAM d'OVHcloud ou un fournisseur externe.
-
+    - Créez des projets Public Cloud OVHcloud pour chaque environnement.
+    - Avantages : IAM, quotas, accès et isolation.
+3. Planifiez et déployez l'architecture réseau
+    - Utilisez vRack pour interconnecter les ressources entre les projets ou les régions.
+    - Créez des réseaux privés au sein de chaque projet.
+    - Utilisez des groupes de sécurité et des règles de pare-feu pour contrôler le trafic.
+    - Si nécessaire, mettez en œuvre un modèle en étoile à l'aide de vRack.
+4. Configurez le contrôle des identités et des accès
+    - Attribuez des rôles par projet (administrateur, lecture seule, DevOps).
+    - Appliquez l'authentification multifactorielle (MFA) pour les utilisateurs.
+    - Intégrez l'authentification unique (SSO) via l'IAM d'OVHcloud ou un fournisseur externe.
 5. Automatisez avec IaC (Terraform)
+    - Utilisez le fournisseur Terraform OVH pour gérer :
+        - Le provisionnement des projets
+        - Les réseaux et vRack
+        - Les instances de calcul
+        - Les rôles IAM
+        - Le DNS (via OVH DNS)
+        - Le Bastion Host pour l'accès SSH
+        - La surveillance et les alertes centralisées
+        - Le stockage d'objets partagé (pour les journaux ou les sauvegardes)
 
-- Utilisez le fournisseur Terraform OVH pour gérer :
-  - Le provisionnement des projets
-  - Les réseaux et vRack
-  - Les instances de calcul
-  - Les rôles IAM
-  - Le DNS (via OVH DNS)
-  - Le Bastion Host pour l'accès SSH
-  - La surveillance et les alertes centralisées
-  - Le stockage d'objets partagé (pour les journaux ou les sauvegardes)
+    **Remarque** : stockez le code de l'infrastructure dans un dépôt Git et utilisez GitHub Actions ou GitLab CI pour le CI/CD.
 
-Remarque : stockez le code de l'infrastructure dans un dépôt Git et utilisez GitHub Actions ou GitLab CI pour le CI/CD.
-
-6. Configurer la journalisation et la surveillance
-
-- Activer la journalisation centralisée à l'aide de :
-  - Logs Data Platform (LDP).
-  - Solutions open source (ELK ou Grafana Loki).
-
-7. Activer le suivi des coûts et la gouvernance
-
-- Utiliser la facturation par projet pour isoler les coûts liés au cloud public.
-- Configurez des alertes budgétaires manuellement ou via des outils de surveillance.
-
+6. Configurez la journalisation et la surveillance
+    - Activez la journalisation centralisée à l'aide de :
+        - Logs Data Platform (LDP).
+        - Solutions open source (ELK ou Grafana Loki).
+7. Activez le suivi des coûts et la gouvernance
+    - Utilisez la facturation par projet pour isoler les coûts liés au Public Cloud.
+    - Configurez des alertes budgétaires manuellement ou via des outils de surveillance.
 8. Appliquez des contrôles de sécurité et de conformité
-
-- Utilisez des groupes de sécurité pour la micro-segmentation.
-- Chiffrez les données au repos et en transit.
-- Utilisez le stockage d'objets avec des politiques d'accès sécurisées.
-- Intégrez l'analyse des vulnérabilités dans le CI/CD.
+    - Utilisez des groupes de sécurité pour la micro-segmentation.
+    - Chiffrez les données au repos et en transit.
+    - Utilisez l'Object Storage avec des politiques d'accès sécurisées.
+    - Intégrez l'analyse des vulnérabilités dans le CI/CD.
 
 Pour obtenir des conseils sur la création de votre Landing Zone dans OVHcloud, consultez notre [documentation](/pages/public_cloud/public_cloud_cross_functional/landing_zone_migration).
 
@@ -200,12 +181,12 @@ Intégrez plutôt la documentation et les mises à jour continues dans votre pro
 
 Actions recommandées :
 
-- **Documentez** l'architecture de votre Landing Zone, le modèle IAM, la conception du réseau et les politiques de sécurité dans une base de connaissances centralisée (par exemple, Confluence, dépôts Git).
+- **Documentez** l'architecture de votre Landing Zone, le modèle IAM, la conception du réseau et les politiques de sécurité dans une base de connaissances centralisée (ex : Atlassian Confluence, dépôts Git).
 - Créez des **runbooks** pour l'intégration de nouveaux projets ou équipes à l'aide de la Landing Zone.
-- Mettez en place un **cycle de révision** régulier (par exemple, trimestriel) pour évaluer :
+- Mettez en place un **cycle de révision** régulier (ex : trimestriel) pour évaluer :
     - La posture de sécurité (audit IAM, règles de pare-feu, journaux)
-- Les opportunités d'optimisation des coûts
-- Les nouvelles fonctionnalités ou améliorations apportées par OVHcloud
+    - Les opportunités d'optimisation des coûts
+    - Les nouvelles fonctionnalités ou améliorations apportées par OVHcloud
 - Intégrez les équipes DevOps, sécurité et finance dans un **groupe de gouvernance de la Landing Zone** afin de vous assurer que la plateforme répond à vos besoins.
 
 Considérez votre Landing Zone comme un produit : itérez, documentez et optimisez-la au fil du temps.

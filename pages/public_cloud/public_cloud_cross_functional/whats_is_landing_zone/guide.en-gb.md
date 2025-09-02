@@ -1,7 +1,7 @@
 ---
 title: 'Understanding Landing Zones'
 excerpt: 'Landing Zones – Everything you need to know to build a secure and scalable cloud foundation'
-updated: 2025-08-26
+updated: 2025-09-02
 ---
 
 ## Objective
@@ -36,7 +36,7 @@ Based on our project experience and detailed technical discussions with customer
 4.	Billing Control
 5.	Observability
 
-1. **Identity & Access Management (IAM)**
+**1\. Identity & Access Management (IAM)**
 
 An IAM setup ensures that, in practice, the ‘least privilege principle’ can be implemented, giving users and services only the necessary access. 
 
@@ -47,7 +47,7 @@ The main features of our IAM services are:
 - **Privilege management:** manage users, groups, and applications across all OVHcloud services. Customise access rights based on roles, responsibilities, or resource types for secure teamwork.
 - **Identity federation (ADFS or Okta):** connect your corporate active directory (Azure AD, Google Workspace, etc.) or any cloud-based authentication solution with OVHcloud to centralise account management for effortless user logins.
 
-2. **Networking**
+**2\. Networking**
 
 - The **OVHcloud Backbone**, built for secure and isolated connections, links all of our datacentres. This provides your applications with worldwide accessibility, constant uptime, and a fault-tolerant architecture. What’s more, anti-DDoS is included by default for all OVHcloud services, at no additional cost. This delivers a top-performing solution for optimal security.
 - The **vRack Private Network** lets you connect Public Cloud instances, Hosted Private Cloud, Bare Metal servers, and Load Balancers.
@@ -56,12 +56,11 @@ The main features of our IAM services are:
 - **Bring Your Own IP (BYOIP):** this is a simple way to maintain your company’s public connectivity, particularly when migrating all or part of your services to the cloud.
 - **Floating IP:** a solution to keep your company’s services connected, mainly when moving some or all of your services to the cloud
 
-3. **Security and compliance**
+**3\. Security and compliance**
 
 Security mechanisms are crucial for data protection, threat monitoring, and regulatory compliance. 
 
-- **Compliance:** our cloud services, with their numerous certifications, offer a secure environment that meets the requirements of many repositories. Through our frequent discussions with the French Cybersecurity Agency (ANSSI), we’re able to provide our customers with tools and features that meet the highest standards. 
-View the list of certifications [here.](https://www.ovhcloud.com/en/compliance/){.external}
+- **Compliance:** our cloud services, with their numerous certifications, offer a secure environment that meets the requirements of many repositories. Through our frequent discussions with the French Cybersecurity Agency (ANSSI), we’re able to provide our customers with tools and features that meet the highest standards. View the list of certifications [here](/links/compliance).
 - **Security:** in addition to the various encryption and redundancy features in our products, we offer a suite of tools to help customers adhere to their security policies.
 
 A **firewall** (FW) is a security service or appliance that controls **incoming and outgoing network traffic** based on a set of rules. In the cloud, its role is to enforce **network segmentation**, restrict access to key resources, and block unauthorised traffic between services.
@@ -84,17 +83,13 @@ It includes:
 - **Bot mitigation**
 - **API security** (rate limiting, token validation)
 
-OVHcloud protects against **DDoS attacks** with its proprietary, actively maintained anti-DDoS tools. All customers can use this software without charge. The Network Security dashboard provides an overview of the detected malicious activities, which shows how efficient it is. For more details, see [here.](https://help.ovhcloud.com/csm/en-network-security-dashboard?id=kb_article_view&sysparm_article=KB0060700)
+OVHcloud protects against **DDoS attacks** with its proprietary, actively maintained anti-DDoS tools. All customers can use this software without charge. The Network Security dashboard provides an overview of the detected malicious activities, which shows how efficient it is. For more details, see [here](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard).
 
-[**OVHcloud Workflow Management**](https://www.ovhcloud.com/en/public-cloud/workflow-management/)
+[**OVHcloud Workflow Management**](/links/public-cloud/workflow-management): By automating and orchestrating your cloud operations, OVHcloud Workflow Management ensures efficient resource provisioning, policy enforcement, and compliance. It makes intricate procedures simpler, improving agility and control across your OVHcloud infrastructures.
 
-By automating and orchestrating your cloud operations, OVHcloud Workflow Management ensures efficient resource provisioning, policy enforcement, and compliance. It makes intricate procedures simpler, improving agility and control across your OVHcloud infrastructures.
+[**Veeam Enterprise Plus**](/links/storage/veeam-enterprise): For enterprise environments, Veeam Enterprise Plus delivers advanced backup, disaster recovery, and data management solutions. Whether physical, virtual, or cloud, it safeguards your critical workloads with reliable protection and fast recovery.
 
-[**Veeam Enterprise Plus**](https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/)
-
-For enterprise environments, Veeam Enterprise Plus delivers advanced backup, disaster recovery, and data management solutions. Whether physical, virtual, or cloud, it safeguards your critical workloads with reliable protection and fast recovery.
-
-4. **Billing Control**
+**4\. Billing Control**
 
 Billing control is a key pillar that ensures cloud spending is transparent, predictable, and directly aligned with business needs. With project costs isolated, consistent tagging applied, and automated reporting and alerts in place, businesses can ensure financial transparency and compliance with usage policies, all while remaining agile.
 
@@ -107,7 +102,7 @@ Key features of Billing Control:
 - **Cost governance policies:** Define policies to restrict untagged resources, control instance types, or automatically clean up unused environments.
 - **Cost estimation:** Use a FinOps platform or consult OVHcloud teams for estimations to forecast expenses prior to provisioning.
 
-5. Observability
+**5\. Observability**
 
 Observability relies on outputs like logs, metrics, and traces to provide insight into and assess the health of a system. With observability, it’s easier to grasp, track, and troubleshoot system behaviour, especially in distributed cloud setups.
 
@@ -122,7 +117,7 @@ To deliver the features of the Logs Data Platform, OVHcloud integrates different
 A log’s lifecycle consists of 4 distinct phases:
 
 - **Generation:** applications, systems, and cloud services generate logs, which are usually stored locally in files.
-- **Ingestion:** Ingestion agents, or inputs, receive logs within the Logs Data Platform. They verify the source’s validity and the formatting of logs based on [these rules](https://help.ovhcloud.com/csm/fr-logs-data-platform-field-naming-conventions?id=kb_article_view&sysparm_article=KB0037656), and may add, update or remove fields before forwarding your logs to storage.
+- **Ingestion:** Ingestion agents, or inputs, receive logs within the Logs Data Platform. They verify the source’s validity and the formatting of logs based on [these rules](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention), and may add, update or remove fields before forwarding your logs to storage.
 - **Storage:** After ingestion, your logs are stored in the Logs Data Platform. Data can be stored in two ways: as indexed data accessible through APIs and other tools, or as archived data.
 - **Consumption:** there are many ways to utilise your logs. Users of the Logs Data Platform can visualise logs in real time, build dashboards, create and run detailed queries using the user interface or API, and also set up alerts.
 
@@ -139,59 +134,45 @@ To create a landing zone that works well, it’s important to assess the compone
 ### Instructions
 
 1. Define your cloud strategy and environments
-
-- Identify your cloud usage goals (web hosting, data processing, Kubernetes).
-- Define key environments (production, staging, or testing).
-
+    - Identify your cloud usage goals (web hosting, data processing, Kubernetes).
+    - Define key environments (production, staging, or testing).
 2. Set up OVHcloud projects
-
-- Create OVHcloud Public Cloud projects for each environment.
-- Benefits: IAM, quotas, access, and isolation.
-
+    - Create OVHcloud Public Cloud projects for each environment.
+    - Benefits: IAM, quotas, access, and isolation.
 3. Plan and deploy the network architecture
-
-- Use vRack to interconnect resources across projects or regions.
-- Create Private Networks within each project.
-- Use Security Groups and Firewall Rules to control traffic.
-- If needed, implement a hub-and-spoke model using vRack.
-
+    - Use vRack to interconnect resources across projects or regions.
+    - Create Private Networks within each project.
+    - Use Security Groups and Firewall Rules to control traffic.
+    - If needed, implement a hub-and-spoke model using vRack.
 4. Configure Identity & Access Control
-
-- Assign roles per project (Admin, Read-only, DevOps).
-- Enforce MFA for users.
-- Integrate with SSO (via OVHcloud’s IAM or external provider).
-
+    - Assign roles per project (Admin, Read-only, DevOps).
+    - Enforce MFA for users.
+    - Integrate with SSO (via OVHcloud IAM or external provider).
 5. Automate with IaC (Terraform)
+    - Use the Terraform OVH provider to manage:
+        - Project provisioning
+        - Networks and vRack
+        - Compute instances
+        - IAM roles
+        - DNS (via OVHcloud DNS)
+        - Bastion Host for SSH access
+        - Central monitoring and alerting
+        - Shared Object Storage (for logs or backups)
 
-- Use the Terraform OVH provider to manage:
-  - Project provisioning
-  - Networks and vRack
-  - Compute instances
-  - IAM roles
-  - DNS (via OVH DNS)
-  - Bastion Host for SSH access
-  - Central monitoring and alerting
-  - Shared Object Storage (for logs or backups)
-
-Note: Store infrastructure code in a Git repository and use GitHub Actions or GitLab CI for CI/CD.
+    **Note**: Store infrastructure code in a Git repository and use GitHub Actions or GitLab CI for CI/CD.
 
 6. Set up logging and monitoring
-
-- Enable centralised logging using:
-    - Logs Data Platform (LDP).
-    - Open-source solutions (ELK or Grafana Loki).
-
+    - Enable centralised logging using:
+        - Logs Data Platform (LDP).
+        - Open-source solutions (ELK or Grafana Loki).
 7. Enable cost tracking and governance
-
-- Use per-project billing to isolate costs for Public Cloud.
-- Set up budget alerts manually or via monitoring tools.
-
+    - Use per-project billing to isolate costs for Public Cloud.
+    - Set up budget alerts manually or via monitoring tools.
 8. Apply security and compliance controls
-
-- Use Security Groups for micro-segmentation.
-- Encrypt data at rest and in transit.
-- Use Object Storage with secure access policies.
-- Integrate vulnerability scanning into CI/CD.
+    - Use Security Groups for micro-segmentation.
+    - Encrypt data at rest and in transit.
+    - Use Object Storage with secure access policies.
+    - Integrate vulnerability scanning into CI/CD.
 
 For guidance on building your Landing Zone to OVHcloud, check our [building documentation](/pages/public_cloud/public_cloud_cross_functional/landing_zone_migration).
 
@@ -200,7 +181,7 @@ Rather, include documentation and ongoing upgrades within your operational proce
 
 Recommended actions:
 
-- **Document** your landing zone architecture, IAM model, network design, and security policies in a centralised knowledge base (e.g., Confluence, Git repositories).
+- **Document** your landing zone architecture, IAM model, network design, and security policies in a centralised knowledge base (e.g., Atlassian Confluence, Git repositories).
 - Create **runbooks** for onboarding new projects or teams using the Landing Zone.
 - Establish a regular **review cycle** (e.g., quarterly) to assess:
     - Security posture (IAM audit, firewall rules, logs)
