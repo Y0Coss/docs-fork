@@ -1,5 +1,5 @@
 ---
-title: "Migrate to OVHcloud Database as a Service (DBaaS)"
+title: "Public Cloud Databases - How to migrate to OVHcloud Database as a Service (DBaaS)"
 excerpt: "Learn how to move your databases to OVHcloud with dump & restore or live PostgreSQL migration."
 updated: 2025-08-30
 ---
