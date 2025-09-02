@@ -39,7 +39,7 @@ The first step is to list your existing CephFS instances. Here, `serviceName` co
 > @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/cephfs
 >
 
-img
+![api request 01](images/api_request_01.png)
 
 By default, this request returns an empty list. To create your first file system, you need to enable it:
 
@@ -48,7 +48,7 @@ By default, this request returns an empty list. To create your first file system
 > @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/cephfs/{fsName}/enable
 >
 
-img
+![api request 02](images/api_request_02.png)
 
 Your CephFS should be available within a few minutes. You can verify its status directly on your cluster by running:
 
@@ -115,12 +115,16 @@ When your file system is no longer needed, you can remove it in two steps:
 > @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/cephfs/{fsName}/disable
 >
 
+![api request 03](images/api_request_03.png)
+
 - **Purge file system data** – This permanently deletes all data, and can only be done on a disabled file system.
 
 > [!api]
 >
 > @api {v1} /dedicated/ceph DELETE /dedicated/ceph/{serviceName}/cephfs/{fsName}
 >
+
+![api request 04](images/api_request_04.png)
 
 ### CephFS access management
 
@@ -186,6 +190,8 @@ The FSID corresponds to the service name of your CDA. The monitor host IPs can b
 > @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}
 >
 
+![api request 05](images/api_request_05.png)
+
 4. Save and close the file.
 
 You will also need a second file containing the key for the user that connects to the cluster. Fetch the user key with the following API call:
@@ -194,6 +200,8 @@ You will also need a second file containing the key for the user that connects t
 >
 > @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/user/{userName}
 >
+
+![api request 06](images/api_request_06.png)
 
 Then, create a secret file for this user:
 
