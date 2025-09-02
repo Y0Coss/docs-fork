@@ -1,9 +1,8 @@
 ---
 title: "E-mail Pro - Configurer son compte E-mail Pro sur le nouvel Outlook pour Windows"
 excerpt: "Découvrez comment configurer votre adresse E-mail Pro sur le Nouvel Outlook pour Windows"
-updated: 2025-09-01
+updated: 2025-09-02
 ---
-
 
 <style>
 details>summary {
@@ -26,7 +25,7 @@ details[open]>summary::before {
 
 Les adresses e-mail de l'offre [E-mail Pro](/links/web/email-pro) peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
 
-Le **Nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier** sur Windows. Pour plus d'information sur le sujet, je vous invite à consulter la page officielle de Microsoft « [Outlook pour Windows : l’avenir du courrier, du calendrier et des Personnes sur Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ».
+Le **Nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier** sur Windows. Pour plus d'informations sur ce sujet, consultez la page officielle de Microsoft « [Outlook pour Windows : l’avenir du courrier, du calendrier et des Personnes sur Windows 11](https://support.microsoft.com/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ».
 
 **Découvrez comment configurer votre adresse E-mail Pro sur le Nouvel Outlook pour Windows.**
 
@@ -38,9 +37,9 @@ Le **Nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier
 
 > [!warning]
 >
-> Cette documentation s’applique uniquement au **Nouvel Outlook** et non au [classique Outlook](https://support.microsoft.com/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur
+> Cette documentation s’applique uniquement au **Nouvel Outlook** et non à « [Outlook classique](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur.
 
-/// details | Informations relatives à la gestion et configuration des services OVHcloud
+/// details | Informations relatives à la gestion et la configuration des services OVHcloud
 
 OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 
@@ -60,7 +59,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 > [!tabs]
 > **Etape 1**
->> - Ouvrez Outlook, dans la colonne de gauche, cliquez sur `Ajouter un compte`{.action} pour démarrer la configuration.
+>> - Ouvrez Outlook. Dans la colonne de gauche, cliquez sur `Ajouter un compte`{.action} pour démarrer la configuration.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-01.png){.thumbnail .w-400}
 >>
@@ -79,7 +78,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 >>    - **Serveur sortant SMTP**: pro?.mail.ovh.net
 >>    - **Port**: 587
 >>    - **Type de connexion sécurisée**: STARTTLS
->>    - **Mot de passe**: ne rien saisir, le mot de passe saisie précédemment sera utilisé.
+>>    - **Mot de passe**: ne rien saisir, le mot de passe saisi précédemment sera utilisé.
 >> - Cliquez sur `Continuer`{.action} pour finaliser la configuration.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-emp-03.png){.thumbnail .w-400}
@@ -88,7 +87,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis votre navigateur internet accessible sur l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis votre navigateur internet accessible sur l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
 ### Modifier les paramètres existants <a name="modify-settings"></a>
 
@@ -96,13 +95,13 @@ L'application Outlook ne permet pas de modifier les paramètres serveur de votre
 
 Si votre compte e-mail est déjà paramétré et que vous souhaitez le paramétrer à nouveau, vous devez alors le supprimer et le recréer :
 
-- Cliquez sur l'icöne de réglage « &#9965; » dans le bas de la colonne de gauche.
-- Dans la section « Vos comptes » cliquez sur `Gérer` à droite de l'adresse e-mail concernée.
+- Cliquez sur l'icône de réglage « &#9965; » dans le bas de la colonne de gauche.
+- Dans la section « Vos comptes », cliquez sur `Gérer`{.action} à droite de l'adresse e-mail concernée.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-400}
 
 - Descendez dans le bas de la page.
-- Cliquez sur `Remove`{.action} pour lancer la suppression.
+- Cliquez sur `Supprimer`{.action} pour lancer la suppression.
 - Déterminez si vous souhaitez supprimer seulement sur cet appareil ou sur les autres appareils utilisant Outlook.
 
 ![outlook](images/configuration-newoutlook-windows-emp-05.png){.thumbnail .w-400}

@@ -1,7 +1,7 @@
 ---
-title: 'MX Plan / Zimbra Starter : ajouter un compte e-mail sur le nouvel Outlook pour Windows'
+title: 'MX Plan / Zimbra Starter - Ajouter un compte e-mail sur le nouvel Outlook pour Windows'
 excerpt: "Apprenez à configurer votre adresse e-mail sur le nouvel Outlook pour Windowss"
-updated: 2025-08-28
+updated: 2025-09-02
 ---
 
 <style>
@@ -25,16 +25,9 @@ details[open]>summary::before {
 
 Les adresses e-mail de l'offre MX Plan et [Zimbra](/links/web/emails-zimbra) Starter peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
 
-Le **Nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier** sur Windows. Pour plus d'information sur le sujet, je vous invite à consulter la page officielle de Microsoft « [Outlook pour Windows : l’avenir du courrier, du calendrier et des Personnes sur Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ». 
+Le **Nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier** sur Windows. Pour plus d'informations sur ce sujet, consultez la page officielle de Microsoft « [Outlook pour Windows : l’avenir du courrier, du calendrier et des Personnes sur Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ». 
 
 **Apprenez à configurer votre adresse e-mail MX Plan sur le Nouvel Outlook pour Windows.**
-
-> [!warning]
->
-> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
-> 
 
 ## Prérequis
 
@@ -46,9 +39,9 @@ Le **Nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier
 
 > [!warning]
 >
-> Cette documentation s’applique uniquement au **Nouvel Outlook** et non au [classique Outlook](https://support.microsoft.com/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5) disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur
+> Cette documentation s’applique uniquement au **Nouvel Outlook** et non à « [Outlook classique](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur.
 
-/// details | Informations relatives à la gestion et configuration des services OVHcloud
+/// details | Informations relatives à la gestion et la configuration des services OVHcloud
 
 OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 
@@ -62,11 +55,11 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 > [!warning]
 >
-> Il est nécessaire de choisir l'onglet de l'étape 3 correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**) pour obtenir les bonnes valeures .
+> Il est nécessaire de choisir l'onglet de l'étape 3 correspondant à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**) pour obtenir les bonnes valeurs.
 
 > [!tabs]
 > **Etape 1**
->> - Ouvrez Outlook, dans la colonne de gauche, cliquez sur `Ajouter un compte`{.action} pour démarrer la configuration.
+>> - Ouvrez Outlook. Dans la colonne de gauche, cliquez sur `Ajouter un compte`{.action} pour démarrer la configuration.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-01.png){.thumbnail .w-400}
 >>
@@ -85,7 +78,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 >>    - **Serveur sortant SMTP**: smtp.mail.ovh.net **ou** ssl0.ovh.net.
 >>    - **Port**: 465
 >>    - **Type de connexion sécurisée**: SSL/TLS
->>    - **Mot de passe**: ne rien saisir, le mot de passe saisie précédement sera utilisé.
+>>    - **Mot de passe**: ne rien saisir, le mot de passe saisi précédement sera utilisé.
 >> - Cliquez sur `Continuer`{.action} pour finaliser la configuration.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-03.png){.thumbnail .w-400}
@@ -99,7 +92,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 >>    - **Serveur sortant SMTP**: smtp.mail.ovh.ca
 >>    - **Port**: 465
 >>    - **Type de connexion sécurisée**: SSL/TLS
->>    - **Mot de passe**: ne rien saisir, le mot de passe saisie précédement sera utilisé.
+>>    - **Mot de passe**: ne rien saisir, le mot de passe saisi précédement sera utilisé.
 >> - Cliquez sur `Continuer`{.action} pour finaliser la configuration.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-03ca.png){.thumbnail .w-400}
@@ -108,7 +101,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis votre navigateur internet accessible sur l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis votre navigateur internet accessible sur l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
 ### Modifier les paramètres existants <a name="modify-settings"></a>
 
@@ -117,19 +110,19 @@ L'application Outlook ne permet pas de modifier les paramètres serveur de votre
 Si votre compte e-mail est déjà paramétré et que vous souhaitez le paramétrer à nouveau, vous devez alors le supprimer et le recréer :
 
 - Cliquez sur l'icöne de réglage « &#9965; » dans le bas de la colonne de gauche.
-- Dans la section « Vos comptes » cliquez sur `Gérer` à droite de l'adresses e-mail concernée.
+- Dans la section « Vos comptes » cliquez sur `Gérer` {.action} à droite de l'adresse e-mail concernée.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-400}
 
 - Descendez dans le bas de la page.
-- Cliquez sur `Remove`{.action} pour lancer la suppression.
+- Cliquez sur `Supprimer`{.action} pour lancer la suppression.
 - Déterminez si vous souhaitez supprimer seulement sur cet appareil ou sur les autres appareils utilisant Outlook.
 
 ![outlook](images/configuration-newoutlook-windows-05.png){.thumbnail .w-400}
 
 > [!success]
 >
-> Une fois votre compte e-mail supprimé, suivez les instructions de la partie « [Ajouter le compte](#add-account) » sur cette documentation.
+> Une fois votre compte e-mail supprimé, suivez les instructions de la partie « [Ajouter le compte](#add-account) » de cette documentation.
 
 ### Paramètre généraux d'envoi et de réception <a name="settings-account"></a>
 
@@ -181,9 +174,9 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 >
 > Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Nouvel Outlook sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
-[Premiers pas avec l'offre MX Plan](pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Premiers pas avec l'offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
-[Premiers pas avec l'offre Zimbra](pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
+[Premiers pas avec l'offre Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
 Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
