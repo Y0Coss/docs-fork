@@ -18,9 +18,9 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
 
 ## Voraussetzungen
 
-- Sie verfügen über ein MX Plan Angebot. Diese ist verfügbar über:
-    - Ein [Webhosting](/links/web/hosting) Angebot.
-    - Ein [Gratis-Hosting 100M](/links/web/domains-free-hosting) inklusive mit einem Domainnamen (im Vorfeld aktiviert).
+- Sie verfügen über ein MX Plan Angebot. Dieses ist verfügbar über:
+    - Ein [Webhosting](/links/web/hosting).
+    - Ein aktiviertes [Kostenloses Hosting 100M](/links/web/domains-free-hosting), inklusive mit einem Domainnamen.
     - Ein separat bestelltes MX Plan Angebot.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), Bereich `Web Cloud`{.action}.
 
@@ -43,7 +43,7 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
 >
 > **E-Mail-Technologie Ihres MX Plan Angebots identifizieren.**
 >
-> Abhängig vom Aktivierungsdatum Ihres MX Plan Angebots oder einer kürzlich durchgeführten Migration kann die zugehörige E-Mail-Technologie variieren. Diese Version ist durch das Webmail-Interface gekennzeichnet. Um ihn zu identifizieren:
+> Abhängig vom Aktivierungsdatum Ihres MX Plan Angebots oder einer kürzlich durchgeführten Migration kann die zugehörige E-Mail-Technologie variieren. Diese Version ist durch das Webmail-Interface gekennzeichnet. Um es zu identifizieren:
 >
 > - Gehen Sie in den Tab `Allgemeine Informationen`{.action} und beachten Sie die Technologie unter **Webmail** in der Randleiste `Abonnement`{.action} unter `Webmail`{.action}.
 >
@@ -244,7 +244,7 @@ Für den Versand von E-Mails verwenden Sie die folgenden **SMTP** Einstellungen:
 
 ### Anwendungsbeispiele
 
-**Sie haben alle in Ihrem Angebot enthaltenen Adressen verwendet?**
+**Sie benötigen mehr E-Mail-Adressen?**
 
 - Fragen in [unseren E-Mail FAQ](pages/web_cloud/email_and_collaborative_solutions/mx_plan/email-faq).
 - Sehen Sie sich alle unsere E-Mail-Angebote [Zimbra](/links/web/emails-zimbra) oder [Exchange](/links/web/emails) an, um Ihr MX Plan Angebot für dieselbe Domain zu vervollständigen.
