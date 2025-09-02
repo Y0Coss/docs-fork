@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Transitioning to the new offerings & automated migration
 excerpt: Learn about the transition from MongoDB's current offerings to the new plans and understand the automated migration process to effectively plan your transition
-updated: 2024-07-09
+updated: 2025-09-02
 ---
 
 ## Objective
