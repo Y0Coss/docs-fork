@@ -902,7 +902,6 @@
                 + [MongoDB - Connect with PHP](public_cloud/public_cloud_databases/mongodb_04_connect_php)
                 + [MongoDB - Backups and Restores with the CLI](public_cloud/public_cloud_databases/mongodb_06_howto_backup_restore)
                 + [MongoDB - Understand the connection strings URI format](public_cloud/public_cloud_databases/mongodb_10_connection_strings)
-                + [MongoDB - Migrate to Production or Advanced](public_cloud/public_cloud_databases/mongodb_12_howto_migrate_to_production_or_advanced)
                 + [MongoDB - Transitioning to the new offerings & automated migration](public_cloud/public_cloud_databases/mongodb_16_automated_migration_new_offers)
             + [Advanced guides](public-cloud-databases-mongodb-advanced-guides)
                 + [MongoDB - BI Connector](public_cloud/public_cloud_databases/mongodb_25_bi_connector)
