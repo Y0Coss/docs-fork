@@ -181,7 +181,7 @@ Find below the parameters for the rule that we advise creating for SAP HANA:
 | Storage Type                      | VSAN                           |
 | Site disaster tolerance           | None - standard cluster        |
 | Failures to tolerate              | 1 failure - RAID-1 (Mirroring) |
-| Number of disk stripes per object | 6*                             |
+| Number of disk stripes per object | 2                              |
 | IOPS limit for object             | 0                              |
 | Object space reservation          | Thick provisioning             |
 | Flash read cache reservation      | 0%                             |
@@ -190,9 +190,6 @@ Find below the parameters for the rule that we advise creating for SAP HANA:
 | Encryption services               | No preference                  |
 | Space efficiency                  | Deduplication and compression  |
 | Storage tier                      | All flash                      |
-
-<sup>* For a SAP HANA on Private Cloud solution.</sup>  
-<sup>The value for this rule will depend on the number of capacity disks (vSAN Capacity) on your hosts.</sup>
 
 This VM Storage Policy must be applied to the disks that host the /hana/data (on Hard Disk 4) and /hana/log (on Hard Disk 5) volumes of your virtual machine.
 
