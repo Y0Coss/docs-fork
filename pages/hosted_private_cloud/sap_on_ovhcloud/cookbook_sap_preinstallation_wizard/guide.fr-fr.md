@@ -35,7 +35,7 @@ Vous avez deux options : démarrer un assistant vierge pour saisir manuellement 
 
 Il est important de noter que notre assistant de pré-installation SAP prend uniquement en charge les installations utilisant la base de données SAP HANA. Par conséquent, seules les sources SAPEXEDB pour SAP HANA sont prises en charge. Tous les autres fichiers SAPEXEDB doivent être supprimés de votre conteneur Object Storage s'ils ont été sélectionnés via le SAP Maintenance Planner.
 
-En cas d'installation SAP S/4HANA Java, téléchargez et déposez également dans votre conteneur Object Storage les fichiers DATA_UNITS (accessibles via Software Center > INSTALLATIONS & UPGRADES > By Alphabetical Index (A-Z) > S > SAP S/4HANA > \<VERSION\> > INSTALLATION AND UPGRADE > 5XXXXX.ZIP).
+En cas d'installation SAP S/4HANA Java, téléchargez et déposez également dans votre conteneur Object Storage les fichiers DATA_UNITS (accessibles via Software Center > INSTALLATIONS & UPGRADES > By Alphabetical Index (A-Z) > S > SAP S/4HANA > <VERSION> > INSTALLATION AND UPGRADE > 5XXXXX.ZIP).
 
 <sup>1</sup> *Si vous souhaitez déployer un système SAP de production, nous recommandons fortement d'utiliser notre gamme SAP HANA on Private Cloud. Cette solution est spécifiquement conçue et certifiée pour héberger des systèmes SAP avec une base de données SAP HANA.*
 
