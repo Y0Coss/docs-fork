@@ -953,7 +953,7 @@
                 + [Valkey - Advanced parameters references](public_cloud/public_cloud_databases/redis_09_advanced_parameters_references)
             + [Tutorials](public-cloud-databases-redis-tutorials)
                 + [Valkey - Tutorial - Boost your CMS (from the example of WordPress)](public_cloud/public_cloud_databases/redis_tuto_01_wordpress)
-        + [Valkey](products/public-cloud-databases-valkey)
+        + [Valkey Databases](products/public-cloud-databases-valkey)
             + [Guides](public-cloud-databases-valkey-guides)
                 + [Valkey - Capabilities and Limitations](public_cloud/public_cloud_databases/redis_01_capabilities)
                 + [Valkey - Configure your Valkey service to accept incoming connections](public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections)
