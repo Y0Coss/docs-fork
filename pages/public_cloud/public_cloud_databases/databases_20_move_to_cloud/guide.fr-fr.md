@@ -1,12 +1,12 @@
 ---
-title: "Public Cloud Databases - Comment passer vos bases de données à OVHcloud DBaaS"
-excerpt: "Découvrez comment transférer vos bases de données vers OVHcloud via un dump et restore ou une migration PostgreSQL en direct."
-updated: 2025-08-30
+title: "Public Cloud Databases - Comment migrer vos bases de données à OVHcloud DBaaS"
+excerpt: "Découvrez comment transférer vos bases de données vers OVHcloud via un dump et restore ou une migration PostgreSQL en direct"
+updated: 2025-09-03
 ---
 
 ## Objectifs
 
-Fournir des instructions étape par étape pour migrer vos bases de données vers le service Database as a Service (DBaaS) d’OVHcloud, en utilisant soit la méthode classique dump & restore, soit la réplication PostgreSQL en direct, selon vos contraintes de disponibilité et de performance.
+Ce guide vous fournit des instructions étape par étape pour migrer vos bases de données vers le service Database as a Service (DBaaS) d’OVHcloud, en utilisant soit la méthode classique dump & restore, soit la réplication PostgreSQL en direct, selon vos contraintes de disponibilité et de performance.
 
 ## Prérequis
 
@@ -17,7 +17,7 @@ Fournir des instructions étape par étape pour migrer vos bases de données ver
 
 ### Via la méthode classique dump & restore
 
-![schema migration](images/schema.png)
+![schema migration](images/schema.png){.thumbnail}
 
 Cette méthode nécessite l’arrêt de votre application. Veuillez noter qu’une période d’indisponibilité surviendra pendant la migration.
 
@@ -25,7 +25,7 @@ Cette méthode nécessite l’arrêt de votre application. Veuillez noter qu’u
 
 2. Déterminez le plan et le type d’instance appropriés en fonction des besoins de performance et de stockage de votre charge de travail.
 
-3. Créez une nouvelle instance de base de données en fonction de vos besoins réseau, en suivant ce guide
+3. Créez une nouvelle instance de base de données en fonction de vos besoins réseau, en suivant [ce guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel).
 
 4. Après la création de l’instance DBaaS, définissez les adresses IP à mettre sur liste blanche et réinitialisez le mot de passe des utilisateurs existants.
 
@@ -37,9 +37,9 @@ Cette méthode nécessite l’arrêt de votre application. Veuillez noter qu’u
 
 8. Supprimez l’ancienne instance de base de données une fois que vous avez confirmé qu’elle n’est plus utilisée.
 
-9. Contactez notre [Professional Services team](https://www.ovhcloud.com/en/professional-services/) pour obtenir de l’aide sur des configurations réseau complexes ou la mise en place de votre architecture.
+9. Contactez notre [Professional Services team](/links/professional-services) pour obtenir de l’aide sur des configurations réseau complexes ou la mise en place de votre architecture.
 
-### Via Live ou hot migration with PostgreSQL
+### Via une migration en live ou hot migration avec PostgreSQL
 
 Actuellement, la migration en live ou en hot migration est uniquement prise en charge pour les bases de données PostgreSQL d’OVHcloud. Cette méthode permet de s’abonner de manière asynchrone à une base de données externe existante et de créer une nouvelle instance qui en reproduit les données via la réplication logique.
 
@@ -48,9 +48,9 @@ Actuellement, la migration en live ou en hot migration est uniquement prise en c
 > Avant de lancer la réplication, assurez-vous que le schéma de la base de données existante a été créé dans la nouvelle instance.
 >
 
-Pour des instructions détaillées sur la configuration de la réplication logique, consultez le guide : [guide Aiven](https://aiven.io/docs/products/postgresql/howto/setup-logical-replication){.external}.
+Pour des instructions détaillées sur la configuration de la réplication logique, consultez ce [guide Aiven](https://aiven.io/docs/products/postgresql/howto/setup-logical-replication).
 
-Si votre configuration est complexe ou implique des besoins spécifiques, contactez notre équipe [Professional Services team](https://www.ovhcloud.com/en/professional-services/) pour obtenir de l’aide.
+Si votre configuration est complexe ou implique des besoins spécifiques, contactez notre équipe [Professional Services team](/links/professional-services) pour obtenir de l’aide.
 
 ## Nous attendons votre retour !
 

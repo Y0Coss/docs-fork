@@ -1,12 +1,12 @@
 ---
 title: "Public Cloud Databases - How to migrate to OVHcloud Database as a Service (DBaaS)"
 excerpt: "Learn how to move your databases to OVHcloud with dump & restore or live PostgreSQL migration."
-updated: 2025-08-30
+updated: 2025-09-03
 ---
 
 ## Objective
 
-Provide step-by-step instructions to migrate databases to OVHcloud Database as a Service (DBaaS), using either a basic dump & restore method or live PostgreSQL replication, depending on downtime and performance requirements.
+This guide provides step-by-step instructions to migrate databases to OVHcloud Database as a Service (DBaaS), using either a basic dump & restore method or live PostgreSQL replication, depending on downtime and performance requirements.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ Provide step-by-step instructions to migrate databases to OVHcloud Database as a
 
 ### Via basic dump and restore migration
 
-![schema migration](images/schema.png)
+![schema migration](images/schema.png){.thumbnail}
 
 This method requires shutting down your application. Please note that some downtime will occur during the migration.
 
@@ -25,7 +25,7 @@ This method requires shutting down your application. Please note that some downt
 
 2. Determine the appropriate plan and instance type based on workload performance and storage requirements.
 
-3. Create a new database instance based on your network requirements, follow [this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel).
+3. Create a new database instance based on your network requirements. Follow [this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel).
 
 4. Upon creation of the DBaaS instance, define the IP addresses to be whitelisted and reset the password for existing users.
 
@@ -37,7 +37,7 @@ This method requires shutting down your application. Please note that some downt
 
 8. Decommission the previous database instance once it is confirmed that it is no longer in use.
 
-9. Reach out to our [Professional Services team](https://www.ovhcloud.com/en/professional-services/) for assistance with complex network configurations or architecture setup.
+9. Reach out to our [Professional Services team](/links/professional-services*) for assistance with complex network configurations or architecture setup.
 
 ### Via Live or hot migration with PostgreSQL
 
@@ -48,9 +48,9 @@ Currently, live/hot migration is supported only for OVHcloud PostgreSQL database
 > Before initiating replication, ensure that the existing database schema has been created in the new instance.
 >
 
-For detailed instructions on setting up logical replication, refer to: [Aiven guide](https://aiven.io/docs/products/postgresql/howto/setup-logical-replication){.external}.
+For detailed instructions on setting up logical replication, refer to this [Aiven guide](https://aiven.io/docs/products/postgresql/howto/setup-logical-replication).
 
-If your setup involves complex configurations or specific requirements, contact our [Professional Services team](https://www.ovhcloud.com/en/professional-services/) for assistance.
+If your setup involves complex configurations or specific requirements, contact our [Professional Services team](/links/professional-services) for assistance.
 
 ## We want your feedback!
 
