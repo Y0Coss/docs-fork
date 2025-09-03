@@ -150,6 +150,9 @@ public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutoriels
 public-cloud-databases-redis: Valkey
 public-cloud-databases-redis-guides: Valkey - Guides
 public-cloud-databases-redis-tutorials: Valkey - Tutoriels
+public-cloud-databases-valkey: Valkey
+public-cloud-databases-valkey-guides: Valkey - Guides
+public-cloud-databases-valkey-tutorials: Valkey - Tutoriels
 public-cloud-data-analytics-grafana: Dashboards
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutoriels
