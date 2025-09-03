@@ -35,7 +35,7 @@ You have two options: start a blank wizard to manually enter all the necessary i
 
 It is essential to note that our SAP pre-installation wizard only supports installations using the SAP HANA database. Therefore, only SAPEXEDB sources for SAP HANA are supported. All other SAPEXEDB files must be removed from your Object Storage container if they were selected via the SAP Maintenance Planner.
 
-In the case of an SAP S/4HANA Java installation, also download and deposit the DATA_UNITS files (available via Software Center > INSTALLATIONS & UPGRADES > By Alphabetical Index (A-Z) > S > SAP S/4HANA > \<VERSION\> > INSTALLATION AND UPGRADE > 5XXXXX.ZIP) into your Object Storage container.
+In the case of an SAP S/4HANA Java installation, also download and deposit the DATA_UNITS files (available via Software Center > INSTALLATIONS & UPGRADES > By Alphabetical Index (A-Z) > S > SAP S/4HANA > <VERSION> > INSTALLATION AND UPGRADE > 5XXXXX.ZIP) into your Object Storage container.
 
 <sup>1</sup> *If you want to deploy a production SAP system, we strongly recommend using our SAP HANA on Private Cloud range. This solution is specifically designed and certified to host SAP systems with an SAP HANA database.*
 
