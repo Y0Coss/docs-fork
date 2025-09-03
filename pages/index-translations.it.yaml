@@ -147,9 +147,6 @@ public-cloud-databases-mysql-tutorials: MySQL - Tutorials
 public-cloud-databases-postgresql: PostgreSQL
 public-cloud-databases-postgresql-guides: PostgreSQL - Guides
 public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
-public-cloud-databases-redis: Valkey
-public-cloud-databases-redis-guides: Valkey - Guides
-public-cloud-databases-redis-tutorials: Valkey - Tutorials
 public-cloud-databases-valkey: Valkey
 public-cloud-databases-valkey-guides: Valkey - Guides
 public-cloud-databases-valkey-tutorials: Valkey - Tutorials
