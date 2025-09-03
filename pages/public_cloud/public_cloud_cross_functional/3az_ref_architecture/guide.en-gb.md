@@ -65,6 +65,57 @@ This section presents reference architectures for multi-AZ deployment, illustrat
 > When AZ-a is restored, the Control Plane gradually reintegrates the resources and instances concerned into the overall infrastructure. For zonal services (e.g. instances, High Speed Block), if data has been lost, recovery depends on the implementation of a backup strategy. In the absence of backup, some recent data may remain irrecoverable, except for services such as Block Storage Classic Multi-Zone or Object Storage, which have built-in resilience mechanisms.
 >
 
+/// details | **Multi-AZ resilience in the Public Cloud**
+
+![Multi-AZ resilience in the Public Cloud](images/3az-architecture-resilience.png){.thumbnail}
+
+This diagram illustrates a three-tier application (web frontend, application backend, and database) deployed across three availability zones (AZ), relying on regional Public Cloud services (Load Balancer, Managed Database, Floating IP, and Gateway) to ensure high availability and resilience, even in case of an incident impacting one AZ.
+
+1. The Gateway exposes the Load Balancer publicly using a Floating IP.
+2. The Load Balancer distributes network traffic across the Web instances.
+3. The Web Security Group:
+    - Accepts only ingress traffic from the Load Balancer’s private IPs on the Web port.
+    - Allows only egress traffic to the App Security Group on the App port.
+4. The App Security Group:
+    - Accepts only ingress traffic from the Web Security Group on the App port.
+    - Allows only egress traffic to the Managed Database’s private IP and port.
+5. The Managed Database uses an ACL that only permits connections from the private IPs of the App instances.
+
+**Normal Operation** (Left side):
+
+- The application is deployed across three AZs (a, b, and c).
+- All AZs are connected to the same Private Network.
+- Web tier: 3 web instances are distributed across the AZs (Web 1 on AZ-a, Web 2 on AZ-b, Web 3 on AZ-c).
+- App tier: 3 application instances are distributed across the AZs (App 1 on AZ-a, App 2 on AZ-b, App 3 on AZ-c).
+- Data tier: A regional Managed Database is available across all AZs.
+- A regional Load Balancer (with active/passive nodes managed by OVH) distributes traffic between the web instances.
+- Security Groups restrict traffic between tiers:
+  - Web Security Group allows only connections from the Load Balancer and towards the App tier.
+  - App Security Group allows only connections from the Web tier and towards the Managed Database.
+- Connectivity is ensured by a Floating IP and a Gateway. Both services also rely on an OVH-managed active/passive mechanism, so no additional deployment is required.
+
+**AZ-a Incident** (Right side):
+
+- AZ-a goes down, making Web 1 and App 1 unavailable.
+- The Gateway in AZ-a becomes inaccessible, but the passive Gateway in another AZ automatically takes over (resilience managed by OVH).
+- The Load Balancer remains available thanks to its active/passive architecture managed by OVH, and continues to distribute traffic across Web 2 and Web 3.
+- The Floating IP remains available thanks to its active/passive mechanism, and continues routing requests to healthy instances.
+- Application backend instances App 2 (AZ-b) and App 3 (AZ-c) continue to operate and handle requests.
+- The regional Managed Database remains fully available across AZs.
+- The application continues to serve users without interruption, though overall capacity is temporarily reduced.
+
+Thanks to the regional services (Load Balancer, Gateway, Floating IP, and Managed Database), the application remains resilient and available throughout the incident. Once AZ-a is restored, Web 1 and App 1 automatically reintegrate into the system, and the application returns to full high-availability mode.
+
+**Recovery**:
+
+- Once AZ‑a is restored, its Web 1 and App 1 instances restart and synchronize with the rest of the application. They become active again and resume handling application traffic.
+- Regional OVH network services (Gateway, Load Balancer, Floating IP) in AZ‑a are reactivated, but do not return to their original active state. They remain passive, as the AZ where they were previously active continues to hold that role. OVH manages the active/passive mechanism automatically to ensure resilience.
+- The Managed Database continues to accept connections from AZ‑a and synchronizes normally.
+- The Load Balancer gradually reintegrates Web 1 into the traffic distribution.
+- The application regains full high availability (HA) across all three AZs. However, the active/passive state of the network services may differ from the initial configuration: AZ‑a is active for application instances but passive for network services, while the AZ that was originally active for network services remains active.
+
+///
+
 /// details | **Deployment in 2-AZ with regional Block Storage** <a name="2az-with-regional-block-storage"></a>
 
 ![2-az with regional Block storage](images/2az-with-regional-storage.png){.thumbnail}
