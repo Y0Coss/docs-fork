@@ -1,8 +1,7 @@
 ---
-
 title: "Migrer une configuration n8n entre deux VPS (OVHcloud ou autres)"
 excerpt: "Découvrez comment exporter et importer une configuration n8n complète (workflows et identifiants) d’un VPS externe vers un VPS OVHcloud, et inversement."
-updated: 2025-08-29
+updated: 2025-09-04
 ---
 
 ## Objectif
@@ -42,6 +41,10 @@ ssh <user>@<IP_VPS_SOURCE>
 
 #### Étape 2 - Exportez les workflows
 
+> [!primary]
+> 
+> Les chemins indiqués (`/home/node/...`) correspondent à l’installation Docker par défaut de n8n. Si vous avez personnalisé les volumes ou les chemins dans votre configuration Docker Compose, adaptez-les en conséquence.
+
 ##### Cas A : Installation en CLI natif
 
 Exécutez la commande suivante pour exporter tous les workflows dans un fichier :
@@ -64,7 +67,7 @@ Exécutez la commande suivante pour générer le fichier à l’intérieur du co
 docker exec -it n8n n8n export:workflow --all --output=/home/node/workflows.json
 ```
 
-Exemple de sortie :
+Exemple de sortie (méthode Docker) :
 
 ![Import export n8n](images/workflow_successfully_exported.png){.thumbnail}
 
@@ -74,7 +77,7 @@ Sortez le fichier du conteneur pour le placer dans le système de fichiers du VP
 docker cp n8n:/home/node/workflows.json /root/workflows.json
 ```
 
-Exemple de sortie :
+Exemple de sortie (méthode Docker) :
 
 ![Import export n8n](images/workflow_successfully_copied.png){.thumbnail}
 
@@ -96,7 +99,7 @@ Exécutez cette commande dans le conteneur n8n pour générer le fichier des cre
 docker exec -it n8n n8n export:credentials --all --decrypted --output=/home/node/credentials.json
 ```
 
-Exemple de sortie :
+Exemple de sortie (méthode Docker) :
 
 ![Import export n8n](images/credentials_successfully_exported.png){.thumbnail}
 
@@ -110,7 +113,7 @@ Copiez ce fichier vers le système de fichiers du VPS source :
 docker cp n8n:/home/node/credentials.json /root/credentials.json
 ```
 
-Exemple de sortie :
+Exemple de sortie (méthode Docker) :
 
 ![Import export n8n](images/credentials_successfully_copied.png){.thumbnail}
 
@@ -121,6 +124,10 @@ Copiez les fichiers générés (`workflows.json` et `credentials.json`) vers vot
 ```bash
 scp workflows.json credentials.json <user>@<IP_VPS_CIBLE>:/root/
 ```
+
+> [!primary]
+>
+> Dans l’exemple, nous transférons les fichiers vers le répertoire `/root/` du VPS cible. Vous pouvez choisir un autre répertoire si besoin, en fonction de vos droits d’accès.
 
 #### Étape 5 - Importez les workflows
 
