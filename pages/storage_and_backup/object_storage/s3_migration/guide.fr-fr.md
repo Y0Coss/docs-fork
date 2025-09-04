@@ -42,7 +42,7 @@ Ce guide fournit des étapes détaillées pour vous aider à migrer d'un fournis
 
 ![Architecture](images/Move to cloud - Object Storage.png){.thumbnail}
 
-Voir le diagramme ci-dessus pour une illustration de l'architecture. Une machine virtuelle OVHcloud Public Cloud agit en tant que point d'entrée, sur laquelle Rclone (installé avec SSH et sudo activé) déplace les données vers OVHcloud Object Storage.
+Voir le diagramme ci-dessus pour une illustration de l'architecture. Une machine virtuelle OVHcloud agit en tant que point d'entrée, sur laquelle Rclone (installé avec SSH et sudo activé) déplace les données vers OVHcloud Object Storage.
  
 ## Considérations
 
