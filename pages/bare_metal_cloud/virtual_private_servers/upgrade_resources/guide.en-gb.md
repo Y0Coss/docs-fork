@@ -1,7 +1,7 @@
 ---
 title: "How to upgrade the resources of a VPS"
 excerpt: "Find out how to upgrade your RAM, vCPU, or storage in the OVHcloud Control Panel"
-updated: 2025-09-03
+updated: 2025-09-04
 ---
 
 <style> details>summary { color:rgb(33, 153, 232) !important; cursor: pointer; } details>summary::before { content:'\25B6'; padding-right:1ch; } details[open]>summary::before { content:'\25BC'; } </style>
@@ -21,12 +21,11 @@ Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cl
 
 > [!primary]
 >
-> The upgrade options available in your Control Panel depend on the range and model of your VPS. The screenshots below are for illustration purposes only.
-
-![Upgrade resources](images/vps_upgrade01.png){.thumbnail}
+> The upgrade options available in your Control Panel depend on the range and model of the selected VPS. The screenshots below are for the purpose of illustration and do not refer to a concrete VPS upgrade scenario.
 
 From here you can upgrade your vCores (`1`), memory (`2`), or storage (`3`).
 
+![Upgrade resources](images/vps_upgrade01.png){.thumbnail}
 
 ### 1. To add **vCores**
 
@@ -34,19 +33,19 @@ Under the **Home** tab in the **Your configuration** panel, click `Add vCores by
 
 Choose a new model and click `Next`{.action}.
 
-![VPS_GS_upgradeVPS02*.png](/hc/article_attachments/38303873816339)
+![Upgrade resources](images/vps_upgrade02.png){.thumbnail}
 
 Choose your memory and storage options and click `Next`{.action}.
 
-![VPS_GS_upgradeVPS03.png](/hc/article_attachments/38303879253523)
+![Upgrade resources](images/vps_upgrade03.png){.thumbnail}
 
 Accept (`☑`{.action}) the **Terms & conditions** and click `Next`{.action}.
 
-![VPS_GS_upgradeVPS04.png](/hc/article_attachments/38303873819539)
+![Upgrade resources](images/vps_upgrade04.png){.thumbnail}
 
 Review your changes and click `Order`{.action}.
 
-![VPS_GS_upgradeVPS05.png](/hc/article_attachments/38303873821331)
+![Upgrade resources](images/vps_upgrade05.png){.thumbnail}
 
 ### 2. To upgrade **Memory**
 
@@ -54,7 +53,7 @@ Under the **Home** tab in the **Your configuration** panel, click on the amount 
 
 In the pop‑up window, click `Confirm and pay`{.action} to finalize your order.
 
-![VPS_GS_upgradeVPS06*.png](/hc/article_attachments/38303873822611)
+![Upgrade resources](images/vps_upgrade06.png){.thumbnail}
 
 ### 3. To upgrade **Storage**
 
@@ -62,9 +61,9 @@ Under the **Home** tab in the **Your configuration** panel, click on the amount 
 
 In the pop‑up window, click `Confirm and pay`{.action} to finalize your order.
 
-![VPS_GS_upgradeVPS07*.png](/hc/article_attachments/38303873827091)
+![Upgrade resources](images/vps_upgrade07.png){.thumbnail}
 
-See our dedicated guide for the next steps: [How to repartition a VPS after a storage upgrade](/hc/en-us/articles/360013988659).
+See our dedicated guide for the next steps: [How to repartition a VPS after a storage upgrade](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition)
 
 ## FAQ
 
@@ -88,7 +87,7 @@ Yes. After upgrades you will still have access to your backups and snapshots.
 
 /// details | What happens to the software license on the old VPS? Can they be automatically moved over to the new VPS?
 
-If you have an active license, it will remain attached to the VPS. The pricing may change based on the license agreement or requirements with the provider.    
+If you have an active license, it will remain attached to the VPS. The pricing may change based on the license agreement or requirements with the provider.  
 If there are any changes to the license, they will be explained before upgrading the VPS.
 
 ///

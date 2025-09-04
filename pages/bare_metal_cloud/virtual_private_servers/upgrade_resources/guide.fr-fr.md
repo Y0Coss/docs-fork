@@ -1,69 +1,69 @@
 ---
 title: "Comment faire évoluer les ressources d'un VPS"
 excerpt: "Découvrez comment faire évoluer votre RAM, votre vCPU ou votre stockage depuis votre espace client"
-updated: 2025-09-03
+updated: 2025-09-04
 ---
 
 <style> details>summary { color:rgb(33, 153, 232) !important; cursor: pointer; } details>summary::before { content:'\25B6'; padding-right:1ch; } details[open]>summary::before { content:'\25BC'; } </style>
 
-**Découvrez comment ajouter des vCores, de la mémoire et du stockage à votre service VPS.** 
+**Découvrez comment ajouter des vCores, de la mémoire et du stockage à votre service VPS.**
 
-## Exigences
+## Prérequis
 
-- Un [Serveur Privé Virtuel](/links/bare-metal/vps) dans votre compte OVHcloud
-- Accès au [Panneau de contrôle OVHcloud](/links/manager)
+- Un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
-## Instructions
+## En pratique
 
-Nos services VPS offrent flexibilité, fiabilité et performance pour une variété de besoins d'hébergement. Vous pouvez procéder à la mise à niveau de votre RAM, vCPU ou stockage dans le [Panneau de contrôle OVHcloud](/links/manager).
+Nos services VPS offrent flexibilité, fiabilité et performance pour une variété de besoins d'hébergement. Vous pouvez procéder à la mise à niveau de votre RAM, vCPU ou stockage dans le [espace client OVHcloud](/links/manager).
 
-Connectez-vous au [Panneau de contrôle OVHcloud](/links/manager), accédez à la section `Cloud de serveurs dédiés`{.action} et sélectionnez votre serveur à partir de `Serveurs privés virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 > [!primary]
 >
-> Les options de mise à niveau disponibles dans votre panneau de contrôle dépendent de la gamme et du modèle de votre VPS. Les captures d'écran ci-dessous sont à titre d'illustration uniquement.
-
-
+> Les options de mise à niveau disponibles dans votre espace client dépendent de la gamme et du modèle du VPS sélectionné. Les captures d'écran ci-dessous sont fournies à titre d'illustration et ne font pas référence à un scénario concret de mise à niveau du VPS.
 
 À partir de là, vous pouvez mettre à niveau vos vCores (`1`), votre mémoire (`2`) ou votre stockage (`3`).
 
+![Mettre à niveau les ressources](images/vps_upgrade01.png){.thumbnail}
+
 ### 1. Pour ajouter des **vCores**
 
-Sous l'onglet **Accueil** dans le panneau **Votre configuration**, cliquez sur `Ajouter des vCores en mettant à niveau vers une gamme supérieure`.
+Sous l'onglet **Accueil** dans le panneau **Votre configuration**, cliquez sur `Ajouter des vCores en passant à la gamme supérieure`.
 
 Choisissez un nouveau modèle et cliquez sur `Suivant`{.action}.
 
-![VPS_GS_upgradeVPS02*.png](/hc/article_attachments/38303873816339)
+![Mettre à niveau les ressources](images/vps_upgrade02.png){.thumbnail}
 
 Choisissez vos options de mémoire et de stockage et cliquez sur `Suivant`{.action}.
 
-![VPS_GS_upgradeVPS03.png](/hc/article_attachments/38303879253523)
+![Mettre à niveau les ressources](images/vps_upgrade03.png){.thumbnail}
 
-Acceptez (`☑`{.action}) les **Conditions et termes** et cliquez sur `Suivant`{.action}.
+Acceptez (`☑`{.action}) les **termes des contrats** et cliquez sur `Suivant`{.action}.
 
-![VPS_GS_upgradeVPS04.png](/hc/article_attachments/38303873819539)
+![Mettre à niveau les ressources](images/vps_upgrade04.png){.thumbnail}
 
 Révisez vos modifications et cliquez sur `Commander`{.action}.
 
-![VPS_GS_upgradeVPS05.png](/hc/article_attachments/38303873821331)
+![Mettre à niveau les ressources](images/vps_upgrade05.png){.thumbnail}
 
 ### 2. Pour mettre à niveau la **Mémoire**
 
 Sous l'onglet **Accueil** dans le panneau **Votre configuration**, cliquez sur la quantité de mémoire que vous souhaitez. Les options disponibles dépendent de la gamme de VPS que vous avez actuellement.
 
-Dans la fenêtre contextuelle, cliquez sur `Confirmer et payer`{.action} pour finaliser votre commande.
+Dans la fenêtre contextuelle, cliquez sur `Valider et payer`{.action} pour finaliser votre commande.
 
-![VPS_GS_upgradeVPS06*.png](/hc/article_attachments/38303873822611)
+![Mettre à niveau les ressources](images/vps_upgrade06.png){.thumbnail}
 
 ### 3. Pour mettre à niveau le **Stockage**
 
 Sous l'onglet **Accueil** dans le panneau **Votre configuration**, cliquez sur la quantité de stockage que vous souhaitez. Les options disponibles dépendent de la gamme de VPS que vous avez actuellement.
 
-Dans la fenêtre contextuelle, cliquez sur `Confirmer et payer`{.action} pour finaliser votre commande.
+Dans la fenêtre contextuelle, cliquez sur `Valider et payer`{.action} pour finaliser votre commande.
 
-![VPS_GS_upgradeVPS07*.png](/hc/article_attachments/38303873827091)
+![Mettre à niveau les ressources](images/vps_upgrade07.png){.thumbnail}
 
-Consultez notre guide dédié pour les étapes suivantes : [Comment repartitionner un VPS après une mise à niveau de stockage](/hc/fr-fr/articles/360013988659).
+Consultez notre guide dédié pour les étapes suivantes : [Comment repartitionner un VPS après une mise à niveau de stockage](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition)
 
 ## FAQ
 
@@ -87,7 +87,7 @@ Oui. Après les mises à niveau, vous aurez toujours accès à vos sauvegardes e
 
 /// details | Que se passe-t-il pour la licence logicielle sur l'ancien VPS ? Puis-je la déplacer automatiquement vers le nouveau VPS ?
 
-Si vous avez une licence active, elle restera attachée au VPS. Le prix peut changer en fonction de l'accord de licence ou des exigences du fournisseur.    
+Si vous avez une licence active, elle restera attachée au VPS. Le prix peut changer en fonction de l'accord de licence ou des exigences du fournisseur.  
 Si des modifications sont apportées à la licence, elles seront expliquées avant la mise à niveau du VPS.
 
 ///
@@ -109,4 +109,4 @@ La mise à niveau sera effective immédiatement, en conservant toutes vos donné
 
 [FAQ VPS](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)
 
-Rejoignez notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre [communauté d'utilisateurs](/links/community).
