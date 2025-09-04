@@ -68,7 +68,7 @@ ssh <user>@<IP_VPS_SOURCE>
 >> docker exec -it n8n n8n export:workflow --all --output=/home/node/workflows.json
 >> ```
 >>
->> Exemple de sortie (méthode Docker) :
+>> Exemple de sortie :
 >>
 >> ![Import export n8n](images/workflow_successfully_exported.png){.thumbnail}
 >> 
@@ -78,7 +78,7 @@ ssh <user>@<IP_VPS_SOURCE>
 >> docker cp n8n:/home/node/workflows.json /root/workflows.json
 >> ```
 >> 
->> Exemple de sortie (méthode Docker) :
+>> Exemple de sortie :
 >>
 >> ![Import export n8n](images/workflow_successfully_copied.png){.thumbnail}
 >>
@@ -102,7 +102,7 @@ ssh <user>@<IP_VPS_SOURCE>
 >> docker exec -it n8n n8n export:credentials --all --decrypted --output=/home/node/credentials.json
 >> ```
 >>
->> Exemple de sortie (méthode Docker) :
+>> Exemple de sortie :
 >>
 >> ![Import export n8n](images/credentials_successfully_exported.png){.thumbnail}
 >>
@@ -116,7 +116,7 @@ ssh <user>@<IP_VPS_SOURCE>
 >> docker cp n8n:/home/node/credentials.json /root/credentials.json
 >> ```
 >>
->> Exemple de sortie (méthode Docker) :
+>> Exemple de sortie :
 >>
 >> ![Import export n8n](images/credentials_successfully_copied.png){.thumbnail}
 >>
