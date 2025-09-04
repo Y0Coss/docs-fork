@@ -1,7 +1,7 @@
 ---
 title:  Object Storage - How to migrate from an S3-compatible object storage provider to OVHcloud Object Storage
 excerpt: This guide provides details on how to migrate from an S3-compatible object storage provider to OVHcloud Object Storage using Rclone.
-updated: 2025-07-31
+updated: 2025-09-08
 ---
  
 ## Objective
@@ -74,7 +74,8 @@ After installing **Rclone** on your virtual machine, configure its connection to
 ```bash
 $ rclone config
 ```
-This command will open the configuration menu and will guide you step by step with the configuration. You can also create/modify the configuration file by yourself with the following command:
+This command will open the configuration menu and will guide you step by step with the configuration. The OVHcloud provider configuration is available and will guide you step by step. Follow the steps available [here](https://rclone.org/s3/#ovhcloud){.external}.
+You can also create/modify the configuration file by yourself with the following command:
 ```bash
 $ rclone config file
 ```
@@ -102,7 +103,6 @@ secret_access_key = OVH-SECRET-KEY
 endpoint = s3.<region>.io.cloud.ovh.net
 region = <region>
 ```
-
 
 > [!primary]
 >
@@ -152,7 +152,7 @@ In your preferred web browser, use port 5572 to reach your instance’s address:
 You’ll need to log in using your rclone credentials: `--rc-user` and `–rc-pass`.
 Once you’re logged in, you can track the `rclone copy` command’s progress: check job status, throughput, bandwidth, object count, and total data volume. From the GUI, you can also manage new remotes and new actions.
 
-#### MIgration status
+#### Migration status
 
 We recommend comparing the source and destination buckets after migration. Your source and OVHcloud destination buckets can be compared via command line or their respective control panels.
 
