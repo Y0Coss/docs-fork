@@ -41,8 +41,8 @@ Here is the model billing overview for AI Endpoints models:
 | Large Language Model (LLM) | Mistral Nemo Instruct 2407     | 0.14                | 0.14                | 0.13               | 0.13               | Per 1 million tokens |
 | Large Language Model (LLM) | Llama 3.1 8B Instruct     | 0.11                | 0.11                | 0.10               | 0.10               | Per 1 million tokens |
 | Large Language Model (LLM) | Mistral 7B Instruct v0.3 | 0.11                | 0.11                | 0.10               | 0.10               | Per 1 million tokens |
-| Reasoning LLM | Gpt Oss 120B     | 0.00                | 0.00                | 0.00               | 0.00               | Per 1 million tokens |
-| Reasoning LLM | Gpt Oss 20B     | 0.00                | 0.00                | 0.00               | 0.00               | Per 1 million tokens |
+| Reasoning LLM | Gpt Oss 120B     | 0.09                | 0.44                | 0.08               | 0.40               | Per 1 million tokens |
+| Reasoning LLM | Gpt Oss 20B     | 0.04                | 0.17                | 0.04               | 0.15               | Per 1 million tokens |
 | Reasoning LLM | Qwen 3 32B     | 0.09                | 0.25                | 0.08               | 0.23               | Per 1 million tokens |
 | Reasoning LLM | DeepSeek R1 Distill Llama 70B     | 0.74                | 0.74                | 0.67               | 0.67               | Per 1 million tokens |
 | Code LLM | Qwen 2.5 Coder 32B Instruct | 0.96                | 0.96                | 0.87               | 0.87               | Per 1 million tokens |
