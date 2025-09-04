@@ -36,7 +36,7 @@ Based on our project experience and detailed technical discussions with customer
 4.	Billing Control
 5.	Observability
 
-**1\. Identity & Access Management (IAM)**
+### 1. Identity & Access Management (IAM)
 
 An IAM setup ensures that, in practice, the ‘least privilege principle’ can be implemented, giving users and services only the necessary access. 
 
@@ -47,7 +47,7 @@ The main features of our IAM services are:
 - **Privilege management:** manage users, groups, and applications across all OVHcloud services. Customise access rights based on roles, responsibilities, or resource types for secure teamwork.
 - **Identity federation (ADFS or Okta):** connect your corporate active directory (Azure AD, Google Workspace, etc.) or any cloud-based authentication solution with OVHcloud to centralise account management for effortless user logins.
 
-**2\. Networking**
+### 2. Networking
 
 - The **OVHcloud Backbone**, built for secure and isolated connections, links all of our datacentres. This provides your applications with worldwide accessibility, constant uptime, and a fault-tolerant architecture. What’s more, anti-DDoS is included by default for all OVHcloud services, at no additional cost. This delivers a top-performing solution for optimal security.
 - The **vRack Private Network** lets you connect Public Cloud instances, Hosted Private Cloud, Bare Metal servers, and Load Balancers.
@@ -56,7 +56,7 @@ The main features of our IAM services are:
 - **Bring Your Own IP (BYOIP):** this is a simple way to maintain your company’s public connectivity, particularly when migrating all or part of your services to the cloud.
 - **Floating IP:** a solution to keep your company’s services connected, mainly when moving some or all of your services to the cloud
 
-**3\. Security and compliance**
+### 3. Security and compliance
 
 Security mechanisms are crucial for data protection, threat monitoring, and regulatory compliance. 
 
@@ -89,7 +89,7 @@ OVHcloud protects against **DDoS attacks** with its proprietary, actively mainta
 
 [**Veeam Enterprise Plus**](/links/storage/veeam-enterprise): For enterprise environments, Veeam Enterprise Plus delivers advanced backup, disaster recovery, and data management solutions. Whether physical, virtual, or cloud, it safeguards your critical workloads with reliable protection and fast recovery.
 
-**4\. Billing Control**
+### 4. Billing Control
 
 Billing control is a key pillar that ensures cloud spending is transparent, predictable, and directly aligned with business needs. With project costs isolated, consistent tagging applied, and automated reporting and alerts in place, businesses can ensure financial transparency and compliance with usage policies, all while remaining agile.
 
@@ -102,7 +102,7 @@ Key features of Billing Control:
 - **Cost governance policies:** Define policies to restrict untagged resources, control instance types, or automatically clean up unused environments.
 - **Cost estimation:** Use a FinOps platform or consult OVHcloud teams for estimations to forecast expenses prior to provisioning.
 
-**5\. Observability**
+### 5. Observability
 
 Observability relies on outputs like logs, metrics, and traces to provide insight into and assess the health of a system. With observability, it’s easier to grasp, track, and troubleshoot system behaviour, especially in distributed cloud setups.
 
@@ -121,7 +121,7 @@ A log’s lifecycle consists of 4 distinct phases:
 - **Storage:** After ingestion, your logs are stored in the Logs Data Platform. Data can be stored in two ways: as indexed data accessible through APIs and other tools, or as archived data.
 - **Consumption:** there are many ways to utilise your logs. Users of the Logs Data Platform can visualise logs in real time, build dashboards, create and run detailed queries using the user interface or API, and also set up alerts.
 
-## OVHcloud Landing Zone: a simple step-by-step guide
+## OVHcloud Landing Zone: a step-by-step guide
 
 To create a landing zone that works well, it’s important to assess the components needed to build it. The ideal landing zone should be flexible enough to suit various needs, enabling the automated, agile, and simple deployment of the target architecture.
 
@@ -179,7 +179,7 @@ For guidance on building your Landing Zone to OVHcloud, check our [building docu
 Avoid thinking of your landing zone as something you can just set up and then ignore. 
 Rather, include documentation and ongoing upgrades within your operational process.
 
-Recommended actions:
+**Recommended actions:**
 
 - **Document** your landing zone architecture, IAM model, network design, and security policies in a centralised knowledge base (e.g., Atlassian Confluence, Git repositories).
 - Create **runbooks** for onboarding new projects or teams using the Landing Zone.
