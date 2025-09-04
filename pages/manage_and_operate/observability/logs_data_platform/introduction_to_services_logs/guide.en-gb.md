@@ -61,7 +61,7 @@ Our ambition is to make all OVHcloud products compatible with OVHcloud Service L
 | Hosting & Collaboration - Web Cloud Databases | OVHcloud Control Panel & API | Beta | [Web Cloud Databases - How to manage logs](/pages/web_cloud/web_cloud_databases/retrieve-logs) |
 | Hosting & Collaboration - Microsoft Private Exchange | API only | Beta | - |
 | Hosting & Collaboration - Microsoft Trusted Exchange | API only | Beta | - |
-| Infrastructure solutions - OVHcloud Connect | API only | Beta | - |
+| Infrastructure solutions - OVHcloud Connect | OVHcloud Control Panel & API | Beta | [OVHcloud Connect Logs Forwarding](/pages/network/ovhcloud_connect/occ-logs-2-customers) |
 | Infrastructure solutions - OVHcloud Load Balancer | API only | Beta | [OVHcloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](/pages/network/load_balancer/use_api_logs_2_customers) |
 
 ## Instructions
