@@ -121,7 +121,7 @@ Diese Optionen beziehen sich auf zusätzliche VPS-Dienste für Backups und die W
 >>
 > Automatisches Backup
 >>
->> Ein tägliches Backup des Systems (ausgenommen zusätzliche Disks) wird automatisch erstellt und 24 Stunden lang aufbewahrt. Mit einem Upgrade auf die Option "**Automatisches Backup Premium**" stehen Ihnen die letzten 7 täglichen Backups Ihres VPS zum Mounten und Wiederherstellen zur Verfügung.  
+>> Ein tägliches Backup des Systems (ausgenommen zusätzliche Disks) wird automatisch erstellt und 24 Stunden lang aufbewahrt (nur gültig für Dienste, die seit dem 07.08.25 bestellt wurden). Mit einem Upgrade auf die Option "**Automatisches Backup Premium**" stehen Ihnen die letzten 7 täglichen Backups Ihres VPS zum Mounten und Wiederherstellen zur Verfügung.  
 Im Vergleich zu manuellen Snapshots erhöht diese Funktion die Datensicherheit, indem mehrere Wiederherstellungspunkte in regelmäßigen Abständen erstellt werden.
 >>
 
