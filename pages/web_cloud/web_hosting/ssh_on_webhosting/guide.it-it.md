@@ -1,8 +1,22 @@
 ---
 title: "Accedere in SSH a un hosting Web"
 excerpt: "Questa guida ti mostra come utilizzare il protocollo SSH per accedere al tuo hosting Web OVHcloud"
-updated: 2024-01-30
+updated: 2025-09-04
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Obiettivo
 

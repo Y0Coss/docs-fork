@@ -1,8 +1,22 @@
 ---
 title: "Accessing a web hosting plan via SSH"
 excerpt: "Find out how to connect and use SSH access on an OVHcloud web hosting plan"
-updated: 2024-01-30
+updated: 2025-09-04
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
