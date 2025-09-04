@@ -22,9 +22,9 @@ In some cases, communication spikes can trigger our Anti-DDoS Infrastructure, an
 
 ## Instructions
 
-To avoid having your network traffic blocked by the Anti-DDoS Infrastructure due to false positives, we strongly recommend to list your nodes IP addreesses, and report them to our support teams. This way, they will be able to create a custom Solana profile that will tune the protection to your infrastructure and allow uninterrupted functionality. You can use [this form](link_to_be_determined) to report your nodes list. 
+To avoid having your network traffic suspected or blocked by the Anti-DDoS Infrastructure (as a false positive detection), we strongly recommend to report your nodes IP addresses to our support teams. This way, a custom Solana profile will be created for better protection and uninterrupted functionality. Please use [this form](link_to_be_determined) to report the aforementioned IPs. 
 
-At the moment, there is no direct way for users to circumvent this issue without contacting OVHcloud support.
+Please note that in the future, you will be able to control Anti-DDoS behaviour directly through our Control Panel.
 
 If you are not sure about which elements you should send to our teams, you can refer to the following use cases.
 
