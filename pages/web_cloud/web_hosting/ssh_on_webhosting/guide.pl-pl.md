@@ -42,7 +42,7 @@ Aby zalogować się i korzystać z dostępu do Twojego hostingu przez SSH, będz
 - adres serwera SSH Twojego hostingu;
 - port do połączenia z serwerem SSH Twojego hostingu.
 
-### 1 - Upewnij się, że dostęp SSH jest aktywny dla wybranego użytkownika SSH <a name="user-ssh-enable"></a>
+### 1 - Upewnij się, że dostęp SSH jest aktywny dla wybranego użytkownika SSH <a name="user-ssh-enablement"></a>
 
 Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 
@@ -79,7 +79,7 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 >> - 2 : W oknie, które się wyświetli, wybierz `Protokoły logowania`, wybierz opcję `FTP, SFTP i SSH`{.action}, następnie kliknij `Dalej`{.action}.
 >> - 3 : Sprawdź podsumowanie żądanej zmiany, następnie kliknij `Zatwierdź`{.action}.
 >>
-> > > Jeśli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa WWW OVHcloud] (/links/web/hosting) posiada dostęp przez protokół SSH.
+>> > Jeśli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa WWW OVHcloud](/links/web/hosting) posiada dostęp przez protokół SSH.
 
 ### 2 - Pobierz informacje potrzebne do logowania przez SSH <a name="sshlogin"></a>
 
@@ -202,4 +202,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/links/community). 
+Dołącz do [grona naszych użytkowników](/links/community).
