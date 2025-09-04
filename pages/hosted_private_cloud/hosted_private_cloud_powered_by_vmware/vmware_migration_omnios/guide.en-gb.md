@@ -1,7 +1,7 @@
 ---
 title: Migrating OmniOS datastores
 excerpt: Identify your OmniOS datastores and migrate your virtual machines to supported storage using VMware Storage vMotion.
-updated: 2025-09-03
+updated: 2025-09-04
 ---
 
 ## Objective
