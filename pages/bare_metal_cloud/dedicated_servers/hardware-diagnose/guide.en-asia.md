@@ -78,19 +78,13 @@ fsck-fy
 For a read test, run the command below. Replace `sd(x)` with your own values.
 
 ```bash
-dd if=/dev/zero of=/dev/sd(x) bs=1M count=
+dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
 ```
 
 For a write test, run the command below. Replace `sd(x)` with your own values
 
 ```bash
 hdparm -t /dev/sd(x)
-```
-
-For a stress test, run the following command:
-
-```bash
-stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
 ```
 
 ## Go further

@@ -69,8 +69,22 @@ Pour en savoir plus sur la sortie de cette commande et son interprétation, cons
 
 Le test des partitions comprend un test d'accès au disque et une vérification du système de fichiers. Le test d'accès au disque vérifie si le système peut communiquer avec les disques durs de votre serveur. La vérification du système de fichiers utilise la commande `fsck -fy`.
 
+Pour vérifier le système de fichiers, exécutez la commande suivante :
+
 ```bash
-stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+fsck -fy
+```
+
+Pour un test de lecture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs.
+
+```bash
+dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
+```
+
+Pour un test d'écriture, exécutez la commande ci-dessous. Remplacez `sd(x)` par vos propres valeurs
+
+```bash
+hdparm -t /dev/sd(x)
 ```
 
 ## Aller plus loin
