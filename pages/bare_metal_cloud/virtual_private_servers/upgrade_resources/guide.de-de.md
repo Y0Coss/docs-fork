@@ -1,7 +1,7 @@
 ---
-title: Upgrade der Ressourcen eines VPS
-excerpt: Erfahren Sie hier, wie Sie RAM, vCPU und Speicherplatz im OVHcloud Kundencenter upgraden können
-updated: 2025-09-04
+title: "Upgrade der Ressourcen eines VPS"
+excerpt: "Erfahren Sie hier, wie Sie RAM, vCPU und Speicherplatz im OVHcloud Kundencenter upgraden können"
+updated: 2025-09-05
 ---
 
 **Diese Anleitung erklärt, wie Sie Ihrem VPS vCores, Speicherplatz und Arbeitsspeicher hinzufügen.** 
@@ -27,7 +27,7 @@ Von hier aus können Sie vCores (`1`), RAM (`2`) oder Speicherplatz (`3`) erhöh
 
 ### 1. So fügen Sie **vCores** hinzu
 
-Unter dem Tab **Start** im Panel **Ihre Konfiguration** klicken Sie auf `vCores hinzufügen und dazu zur nächsthöheren Serverreihe wechseln.`.
+Unter dem Tab **Start** im Panel **Ihre Konfiguration** klicken Sie auf `vCores hinzufügen und dazu zur nächsthöheren Serverreihe wechseln`.
 
 Wählen Sie ein neues Modell aus und klicken Sie auf `Weiter`{.action}.
 
@@ -105,6 +105,6 @@ Das Upgrade wird sofort wirksam und bewahrt alle Ihre Daten. Durch das Upgrade w
 
 ## Weiterführende Informationen
 
-[VPS-FAQ](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)
+[VPS FAQ](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)
 
 Treten Sie unserer [User Community](/links/community) bei.

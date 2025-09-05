@@ -1,7 +1,7 @@
 ---
 title: "How to upgrade the resources of a VPS"
 excerpt: "Find out how to upgrade your RAM, vCPU, or storage in the OVHcloud Control Panel"
-updated: 2025-09-04
+updated: 2025-09-05
 ---
 
 <style> details>summary { color:rgb(33, 153, 232) !important; cursor: pointer; } details>summary::before { content:'\25B6'; padding-right:1ch; } details[open]>summary::before { content:'\25BC'; } </style>
