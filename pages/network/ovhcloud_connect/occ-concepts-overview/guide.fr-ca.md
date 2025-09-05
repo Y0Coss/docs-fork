@@ -1,12 +1,12 @@
 ---
 title: Présentation des concepts
 excerpt: Présentation des concepts nécessaires à la compréhension de l’offre OVHcloud Connect
-updated: 2020-09-14
+updated: 2025-09-04
 ---
 
-## Qu'est-ce que OVHcloud Connect?
+## Qu'est-ce que OVHcloud Connect ?
 
-Il s'agit d'une connexion entre votre vRack et un réseau externe.
+OVHcloud Connect est une connexion privée et dédiée entre votre réseau sur site et votre vRack OVHcloud. Il est conçu pour étendre votre réseau et vous connecter de manière sécurisée à vos ressources cloud, en contournant l'internet public.
 
 ![OVHcloud Connect](images/VrackConnectDedicated.png){.thumbnail}
 
@@ -23,7 +23,7 @@ OVHcloud Connect est connecté à votre vRack avec tous les services compatibles
 
 ### Extension réseau
 
-OVHcloud Connect peut être connecté à votre réseau WAN ou à votre réseau de Datacentres, ce qui permet d'étendre le cloud ou même d'assouplir votre migration en conservant la topologie des VLAN ou les adresses IP.
+OVHcloud Connect peut être connecté à votre réseau WAN ou à votre réseau de Datacentres. permettant une extension transparente vers le cloud. Ceci facilite les stratégies de cloud hybride et les migrations en conservant la topologie de vos VLAN existants ou vos adresses IP.
 
 ### Haute disponibilité
 
@@ -62,6 +62,19 @@ La liaison virtuelle est un tunnel L2 pour OVHcloud Connect L2. Seul un PoP/Entr
 ### Layer 3 (L3)
 
 La liaison virtuelle est un réseau IP à maillage complet entre tout PoP/EntryPoint et tout DC/EndPoint de la même région.
+
+## Régions accessibles par fournisseur de service
+
+| Provider | Régions OVHcloud accessibles |
+| :--- | :--- |
+| **OVHcloud Connect Direct** | **Europe:** Lille, Paris, Frankfurt, Warsaw, Madrid, London. <br> **North America:** Montréal, Toronto, Washington (Ashburn), Seattle. <br> **APAC:** Mumbai, Singapore. |
+| **Equinix** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Toronto, Washington (Ashburn). <br> **APAC:** Singapore. |
+| **Megaport** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Washington (Ashburn). |
+| **Console Connect** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Montréal, Seattle, Toronto, Washington (Ashburn). <br> **APAC:** Singapore. |
+| **Digital Realty** | **Europe:** Paris, Madrid. <br> **North America:** Seattle. |
+| **InterCloud** | **Europe:** Paris. |
+| **Orange** | **Europe:** Paris. |
+| **RISQ** | **North America:** Montréal. |
 
 ## Aller plus loin
 
