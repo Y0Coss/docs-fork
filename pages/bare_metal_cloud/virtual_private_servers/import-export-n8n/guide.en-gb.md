@@ -33,7 +33,7 @@ Depending on your installation, you have two options:
 
 #### Step 1 - Log in to the source VPS
 
-Open a terminal and connect via SSH to your VPS, where n8n is installed:
+Open a terminal and connect via SSH to your VPS on which n8n is installed:
 
 ```bash
 ssh <user>@<IP_VPS_SOURCE>
@@ -131,7 +131,7 @@ scp workflows.json credentials.json <user>@<TARGET_VPS_IP>:/root/
 
 > [!primary]
 >
-> In the example, we transfer the files to the directory `/root/` of the target VPS. You can choose another directory if required, depending on your access rights.
+> In the example, we transfer the files to the  `/root/` directory of the target VPS. You can choose another directory if required, depending on your access rights.
 
 #### Step 5 - Import workflows
 
@@ -182,7 +182,7 @@ ssh <user>@<TARGET_VPS_IP>
 
 With this method, you can transfer the entire configuration (workflows, credentials and settings) between two instances.
 
-#### Where is the folder `.n8n` located?
+#### Where is the `.n8n` folder located?
 
 - CLI installation (npm or binary): The folder is usually in the home directory of the user running n8n, for example `/root/.n8n` or `/home/<user>/.n8n`.
 - Docker installation: The folder is located in the container at the location `/home/node/.n8n`. In most Docker Compose configurations, it is mounted in a volume named `n8n_data` or in a folder on the VPS (e.g. `/root/n8n_data:/home/node/.n8n`).
@@ -246,7 +246,7 @@ docker start n8n
 
 > [!warning]
 >
-> This method requires that the **encryption key (`encryptionKey`)** be identical between the two instances. Check or copy this setting from your source instance’s configuration file.
+> This method requires that the **encryption key (`encryptionKey`)** is identical between the two instances. Check or copy this setting from your source instance’s configuration file.
 
 ### Points to note <a name="importantNotes"></a>
 
@@ -255,7 +255,7 @@ After migration, if the domain or subdomain changes (e.g. `n8n.mydomain.com` →
 - The `N8N_HOST` variable in your `docker-compose.yml` file.
 - Your DNS zone so that the subdomain points to the IP address of the new VPS.
 
-To find out more, read our guide [Modifying an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+To find out more, read our guide [Modifying an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Conclusion <a name="conclusion"></a>
 
