@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Lista dos endereços IP por cluster"
 excerpt: "Saiba todos os endereços IP disponíveis nos nossos alojamentos web"
-updated: 2025-07-08
+updated: 2025-09-06
 ---
 
 ## Objetivo
@@ -27,7 +27,7 @@ Neste guia encontrará todos os endereços IP dos alojamentos web OVHcloud. Assi
 
 ## Instruções
 
-Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, clique nas janelas abaixo para visualizar cada uma das etapas **4**.
+Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 
 > [!tabs]
 > **Etapa 1**
@@ -44,17 +44,9 @@ Para conhecer o cluster de alojamento web no qual se encontra o seu serviço, cl
 >>
 > **Etapa 3**
 >>
->> Na página que se abrir, clique no separador `FTP - SSH`{.action}. 
+>> No quadro **Informações gerais** da página que se apresenta, recupere o número do cluster com a menção **Cluster** (3 algarismos compreendidos entre `0` e `9`).
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
->>
-> **Etapa 4**
->>
->> Na nova página, obtenha o número do cluster do alojamento web nesta página com a menção **Servidor FTP e SFTP** (3 algarismos entre `0` e `9`).
->>
->> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
->>
-
+>> ![Números do cluster e do filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
 ### Cluster 002
 
