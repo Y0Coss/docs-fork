@@ -70,14 +70,14 @@ The OVHcloud Points of Presence (PoPs) available through each of our cloud servi
 
 | Provider | OVHcloud Connect PoPs |
 | :--- | :--- |
-| **OVHcloud Connect Direct** | **Europe:** Lille, Paris, Frankfurt, Warsaw, Madrid, London. <br> **North America:** Montreal, Toronto, Washington (Ashburn), Seattle. <br> **APAC:** Mumbai, Singapore. |
-| **Equinix** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Toronto, Washington (Ashburn). <br> **APAC:** Singapore. |
-| **Megaport** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Washington (Ashburn). |
-| **Console Connect** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Montreal, Seattle, Toronto, Washington (Ashburn). <br> **APAC:** Singapore. |
-| **Digital Realty** | **Europe:** Paris, Madrid. <br> **North America:** Seattle. |
-| **InterCloud** | **Europe:** Paris. |
-| **Orange** | **Europe:** Paris. |
-| **RISQ** | **North America:** Montreal. |
+| **OVHcloud Connect Direct** | **Europe:** Lille (*ETIX - ETX2*), Paris (*Equinix - PA3, GlobalSwitch, Telehouse - TH2*), Frankfurt (*Equinix - FR5*), Warsaw (*Equinix - WA2*), Madrid (*Digital Realty - MAD2*), London (*Equinix - LD5, Telehouse - West*) <br> **North America:** Montreal (*Cologix - MTL3*), Toronto (*Equinix - TR1*), Washington (Ashburn) (*Equinix - DC10*), Seattle (*Westin Building - WBX*) <br> **APAC:** Mumbai (*Equinix - MB2*), Singapore (*Equinix - SG1*) |
+| **Console Connect** | **Europe:** Paris (*Equinix - PA3, Telehouse - TH2*), Frankfurt (*Equinix - FR5*), London (*Equinix - LD5*) <br> **North America:** Montreal (*Cologix - MTL3*), Seattle (*Westin Building - WBX*), Toronto (*Equinix - TR1*), Washington (Ashburn) (*Equinix - DC10*) <br> **APAC:** Singapore (*Equinix - SG1*) |
+| **Digital Realty** | **Europe:** Paris (*Telehouse - TH2*), Madrid (*Digital Realty - MAD2*) <br> **North America:** Seattle (*Westin Building - WBX*) |
+| **Equinix** | **Europe:** Paris (*Equinix - PA3*), Frankfurt (*Equinix - FR5*), London (*Equinix - LD5*) <br> **North America:** Toronto (*Equinix - TR1*), Washington (Ashburn) (*Equinix - DC10*) <br> **APAC:** Singapore (*Equinix - SG1*) |
+| **InterCloud** | **Europe:** Paris (*Equinix - PA3, GlobalSwitch, Telehouse - TH2*) |
+| **Megaport** | **Europe:** Paris (*Equinix - PA3*), Frankfurt (*Equinix - FR5*), London (*Equinix - LD5*) <br> **North America:** Washington (Ashburn) (*Equinix - DC10*) |
+| **Orange** | **Europe:** Paris (*Equinix - PA3, Telehouse - TH2*) |
+| **RISQ** | **North America:** Montreal (*Cologix - MTL3*) |
 
 ## Accessible Regions per PoP
 
