@@ -66,6 +66,8 @@ The virtual link is a full mesh IP network between any PoP/*EntryPoint* and any 
 
 ## Accessible PoPs per provider
 
+The OVHcloud Points of Presence (PoPs) available through each of our cloud service provider partners are outlined in the following list:
+
 | Provider | OVHcloud Connect PoPs |
 | :--- | :--- |
 | **OVHcloud Connect Direct** | **Europe:** Lille, Paris, Frankfurt, Warsaw, Madrid, London. <br> **North America:** Montreal, Toronto, Washington (Ashburn), Seattle. <br> **APAC:** Mumbai, Singapore. |
@@ -79,11 +81,13 @@ The virtual link is a full mesh IP network between any PoP/*EntryPoint* and any 
 
 ## Accessible Regions per PoP
 
+For a given PoP, OCC can be connected to specific regions. Here is the list of connectable regions depending on the selected PoP:
+
 | OVHcloud Connect PoPs | Accessible OVHcloud Regions |
 | :--- | :--- |
-| **Europe**<br>Paris: Equinix - PA3, GlobalSwitch, Telehouse - TH2<br>Frankfurt: Equinix - FR5<br>London: Equinix - LD5, Telehouse - West<br>Madrid: Digital Realty - MAD2<br>Warsaw: Equinix - WA2<br>Lille: ETIX - ETX2 | **Europe**<br>France (Strasbourg - `eu-west-sbg`), Gravelines (`eu-west-gra`), Roubaix (`eu-west-rbx`), Paris (`eu-west-par`), Limburg (`eu-west-lim`), Warsaw (`eu-central-waw`), Erith (`eu-west-eri`) |
-| **North America**<br>Montreal: Cologix - MTL3<br>Toronto: Equinix - TR1 | **North America**<br>Canada (Beauharnois - `ca-east-bhs`), Toronto (`ca-east-tor`) |
-| **Asia-Pacific**<br>Singapore: Equinix - SG1<br>Mumbai: Equinix - MB2 | **Asia-Pacific**<br>Singapore (`ap-southeast-sgp`), Mumbai (`ap-south-mum`) |
+| **Europe**<br>Paris: Equinix - PA3, GlobalSwitch, Telehouse - TH2<br>Frankfurt: Equinix - FR5<br>London: Equinix - LD5, Telehouse - West<br>Madrid: Digital Realty - MAD2<br>Warsaw: Equinix - WA2<br>Lille: ETIX - ETX2 | **Europe**<br>Strasbourg (`eu-west-sbg`),<br>Gravelines (`eu-west-gra`),<br>Roubaix (`eu-west-rbx`),<br>Paris (`eu-west-par`),<br>Limburg (`eu-west-lim`),<br>Warsaw (`eu-central-waw`),<br>Erith (`eu-west-eri`) |
+| **North America**<br>Montreal: Cologix - MTL3<br>Toronto: Equinix - TR1 | **North America**<br>Beauharnois (`ca-east-bhs`),<br>Toronto (`ca-east-tor`) |
+| **Asia-Pacific**<br>Singapore: Equinix - SG1<br>Mumbai: Equinix - MB2 | **Asia-Pacific**<br>Singapore (`ap-southeast-sgp`),<br>Mumbai (`ap-south-mum`) |
 
 ## Go further
 
