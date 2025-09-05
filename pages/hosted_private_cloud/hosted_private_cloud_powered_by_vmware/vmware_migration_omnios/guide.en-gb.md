@@ -42,6 +42,14 @@ This guide explains how to identify OmniOS datastores in your Hosted Private Clo
 > [!primary]
 > OmniOS datastores must be migrated to supported storage to ensure service continuity.
 
+5. Before starting a vMotion, make sure that you have a supported datastore available in your infrastructure.
+
+   - If you need to add a datastore, refer to the [Add a datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_storage/) guide.
+   
+   - If you need to remove an unused datastore, refer to the [Delete a datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/delete_datastore/) guide.
+
+In some cases, OVHcloud may already have provided you with a supported datastore. Check your configuration before moving on to the next step.
+
 ### Step 2 - Access vSphere through vScope
 
 1. From the PCC `General information`{.action} tab, scroll down to **Management interfaces**.
