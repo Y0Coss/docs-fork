@@ -1,7 +1,7 @@
 ---
 title: 'Diagnostiquer des dysfonctionnements matériels sur un serveur dédié'
 excerpt: 'Découvrez comment utiliser les outils de diagnostic pour identifier des dysfonctionnements matériels sur votre serveur'
-updated: 2024-05-06
+updated: 2025-09-05
 ---
 
 ## Objectif

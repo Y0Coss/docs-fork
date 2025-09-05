@@ -1,7 +1,7 @@
 ---
 title: "Diagnosticar avarias materiais num servidor dedicado"
 excerpt: "Saiba como utilizar as ferramentas de diagnóstico para identificar avarias materiais no seu servidor"
-updated: 2024-05-06
+updated: 2025-09-05
 ---
 
 > [!primary]

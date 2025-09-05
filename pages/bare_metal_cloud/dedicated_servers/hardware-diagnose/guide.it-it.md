@@ -1,7 +1,7 @@
 ---
 title: "Diagnosticare problemi hardware su un server dedicato"
 excerpt: "Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server"
-updated: 2024-05-06
+updated: 2025-09-05
 ---
 
 > [!primary]

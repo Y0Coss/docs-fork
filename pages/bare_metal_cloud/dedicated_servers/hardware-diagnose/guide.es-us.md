@@ -1,7 +1,7 @@
 ---
 title: "Diagnosticar fallos de hardware en un servidor dedicado"
 excerpt: "Cómo utilizar las herramientas de diagnóstico para identificar fallos de hardware en el servidor"
-updated: 2024-05-06
+updated: 2025-09-05
 ---
 
 > [!primary]

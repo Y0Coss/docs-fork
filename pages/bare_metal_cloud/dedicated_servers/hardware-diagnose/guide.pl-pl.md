@@ -1,7 +1,7 @@
 ---
 title: "Diagnostyka usterek sprzętowych serwera dedykowanego"
 excerpt: "Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfikacji usterek sprzętowych na Twoim serwerze"
-updated: 2024-05-06
+updated: 2025-09-05
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Hardwarefehler auf einem dedizierten Server im Rescue-Modus diagnostizieren"
 excerpt: "Erfahren Sie hier, wie Sie mithilfe von OVHcloud Rescue-Modus und Diagnose-Tools Hardwarefehler auf Ihrem Dedicated Server identifizieren"
-updated: 2024-05-06
+updated: 2025-09-05
 ---
 
 > [!primary]
