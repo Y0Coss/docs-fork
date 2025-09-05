@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - List of IP addresses by cluster"
 excerpt: "Find out the appropriate IP addresses to use with your OVHcloud Web Hosting plan"
-updated: 2025-07-08
+updated: 2025-09-06
 ---
 
 ## Objective
@@ -26,7 +26,7 @@ In this guide you can find all of the IP addresses for OVHcloud web hosting plan
 
 ## Instructions
 
-To find out on which web hosting cluster your service is located, click on the tabs below to view each of the **4** steps.
+To find out on which web hosting cluster your service is located, click on the tabs below to view each of the **3** steps.
 
 > [!tabs]
 > **Step 1**
@@ -43,16 +43,9 @@ To find out on which web hosting cluster your service is located, click on the t
 >>
 > **Step 3**
 >>
->> On the page that pops up, click on the `FTP - SSH`{.action} tab.
+>> In the **General information** box on the page that appears, retrieve the cluster number under the mention **Cluster** (3 digits between `0` and `9`).
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
->>
-> **Step 4**
->>
->> On the new page, retrieve the cluster number of the web hosting plan under **FTP and SFTP server** (3 digits between `0` and `9`).
->>
->> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
->>
+>> ![Cluster and Filer number](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
 ### Cluster 002
 
