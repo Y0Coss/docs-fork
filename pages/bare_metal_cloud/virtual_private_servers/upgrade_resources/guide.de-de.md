@@ -4,16 +4,20 @@ excerpt: "Erfahren Sie hier, wie Sie RAM, vCPU und Speicherplatz im OVHcloud Kun
 updated: 2025-09-05
 ---
 
+<style> details>summary { color:rgb(33, 153, 232) !important; cursor: pointer; } details>summary::before { content:'\25B6'; padding-right:1ch; } details[open]>summary::before { content:'\25BC'; } </style>
+
+Unsere VPS-Dienste bieten Flexibilität, Zuverlässigkeit und Leistung für verschiedene Hosting-Anforderungen. Sie können Upgrades Ihres Arbeitsspeichers, vCPU oder Speicherplatzes direkt im [OVHcloud Kundencenter](/links/manager) durchführen.
+
 **Diese Anleitung erklärt, wie Sie Ihrem VPS vCores, Speicherplatz und Arbeitsspeicher hinzufügen.** 
 
-## Anforderungen
+## Ziel
+
+## Voraussetzungen
 
 - Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kundencenter.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
-
-Unsere VPS-Dienste bieten Flexibilität, Zuverlässigkeit und Leistung für verschiedene Hosting-Anforderungen. Sie können Upgrades Ihres Arbeitsspeichers, vCPU oder Speicherplatzes direkt im [OVHcloud Kundencenter](/links/manager) durchführen.
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `Virtual Private Server`{.action} Ihren Server aus.
 
@@ -27,7 +31,7 @@ Von hier aus können Sie vCores (`1`), RAM (`2`) oder Speicherplatz (`3`) erhöh
 
 ### 1. So fügen Sie **vCores** hinzu
 
-Unter dem Tab **Start** im Panel **Ihre Konfiguration** klicken Sie auf `vCores hinzufügen und dazu zur nächsthöheren Serverreihe wechseln`.
+Unter dem Tab **Start** im Panel **Ihre Konfiguration** klicken Sie auf `vCores hinzufügen und dazu zur nächsthöheren Serverreihe wechseln`{.action}.
 
 Wählen Sie ein neues Modell aus und klicken Sie auf `Weiter`{.action}.
 

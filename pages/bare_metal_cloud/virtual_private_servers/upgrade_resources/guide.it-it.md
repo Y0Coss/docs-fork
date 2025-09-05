@@ -6,6 +6,10 @@ updated: 2025-09-05
 
 <style> details>summary { color:rgb(33, 153, 232) !important; cursor: pointer; } details>summary::before { content:'\25B6'; padding-right:1ch; } details[open]>summary::before { content:'\25BC'; } </style>
 
+## Obiettivo
+
+I nostri servizi VPS offrono flessibilità, affidabilità e performance per svariate esigenze di hosting. L’aggiornamento di RAM, vCPU o storage può essere effettuato dallo [Spazio Cliente OVHcloud](/links/manager).
+
 **Questa guida ti mostra come aggiungere vCore, memoria e storage al tuo servizio VPS.**
 
 ## Prerequisiti
@@ -14,8 +18,6 @@ updated: 2025-09-05
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
-
-I nostri servizi VPS offrono flessibilità, affidabilità e performance per svariate esigenze di hosting. L’aggiornamento di RAM, vCPU o storage può essere effettuato dallo [Spazio Cliente OVHcloud](/links/manager).
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il server nella sezione `Server privati virtuali`{.action}.
 
@@ -29,7 +31,7 @@ Da qui è possibile aggiornare la vCore (`1`), la memoria (`2`) o lo storage (`3
 
 ### 1. Per aggiungere **vCore**
 
-Nella scheda **Home** del pannello **La tua configurazione**, clicca su `Aggiungi vCore passando alla gamma superiore`.
+Nella scheda **Home** del pannello **La tua configurazione**, clicca su `Aggiungi vCore passando alla gamma superiore`{.action}.
 
 Seleziona un nuovo modello e clicca su `Avanti`{.action}.
 

@@ -6,6 +6,10 @@ updated: 2025-09-05
 
 <style> details>summary { color:rgb(33, 153, 232) !important; cursor: pointer; } details>summary::before { content:'\25B6'; padding-right:1ch; } details[open]>summary::before { content:'\25BC'; } </style>
 
+## Wprowadzenie
+
+Usługi VPS od OVHcloud gwarantują elastyczność, niezawodność i wydajność w przypadku różnorodnych potrzeb hostingowych. Możesz przeprowadzić aktualizację pamięci RAM, vCPU lub przestrzeni dyskowej w [Panelu klienta OVHcloud](/links/manager).
+
 **Dowiedz się, jak dodać vCores, pamięć i przestrzeń dyskową do usługi VPS.**
 
 ## Wymagania początkowe
@@ -14,8 +18,6 @@ updated: 2025-09-05
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
-
-Usługi VPS od OVHcloud gwarantują elastyczność, niezawodność i wydajność w przypadku różnorodnych potrzeb hostingowych. Możesz przeprowadzić aktualizację pamięci RAM, vCPU lub przestrzeni dyskowej w [Panelu klienta OVHcloud](/links/manager).
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
 
@@ -29,7 +31,7 @@ Następnie możesz uaktualnić swoje vCores (`1`), pamięć (`2`) lub przestrze�
 
 ### 1. Aby dodać **vCores**
 
-Na karcie **Strona główna** w panelu **Twoja konfiguracja** kliknij opcję `Dodaj vCores i zmień gamę na wyższą`.
+Na karcie **Strona główna** w panelu **Twoja konfiguracja** kliknij opcję `Dodaj vCores i zmień gamę na wyższą`{.action}.
 
 Wybierz nowy model i kliknij na `Dalej`{.action}.
 

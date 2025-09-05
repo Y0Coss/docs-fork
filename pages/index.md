@@ -260,6 +260,7 @@
             + [How to get started with SSH](bare_metal_cloud/dedicated_servers/ssh_introduction)
             + [How to create and use SSH keys](bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
             + [How to store public authentication keys in the OVHcloud Control Panel](bare_metal_cloud/dedicated_servers/import-keys-control-panel)
+            + [How to upgrade the resources of a VPS](bare_metal_cloud/virtual_private_servers/upgrade_resources)
             + [Repartitioning a VPS after an upgrade](bare_metal_cloud/virtual_private_servers/upsize_vps_partition)
             + [First steps with pre-installed applications](bare_metal_cloud/virtual_private_servers/apps_first_steps)
             + [How to use the KVM console to access a VPS](bare_metal_cloud/virtual_private_servers/using_kvm_for_vps)

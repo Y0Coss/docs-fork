@@ -6,6 +6,10 @@ updated: 2025-09-05
 
 <style> details>summary { color:rgb(33, 153, 232) !important; cursor: pointer; } details>summary::before { content:'\25B6'; padding-right:1ch; } details[open]>summary::before { content:'\25BC'; } </style>
 
+## Objective
+
+Our VPS services offer flexibility, reliability, and performance for a variety of hosting needs. You can proceed with upgrading your RAM, vCPU, or storage in the [OVHcloud Control Panel](/links/manager).
+
 **Learn how to add vCores, memory, and storage to your VPS service.** 
 
 ## Requirements
@@ -14,8 +18,6 @@ updated: 2025-09-05
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
-
-Our VPS services offer flexibility, reliability, and performance for a variety of hosting needs. You can proceed with upgrading your RAM, vCPU, or storage in the [OVHcloud Control Panel](/links/manager).
 
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual private servers`{.action}.
 
@@ -29,7 +31,7 @@ From here you can upgrade your vCores (`1`), memory (`2`), or storage (`3`).
 
 ### 1. To add **vCores**
 
-Under the **Home** tab in the **Your configuration** panel, click `Add vCores by upgrading to the higher range`.
+Under the **Home** tab in the **Your configuration** panel, click `Add vCores by upgrading to the higher range`{.action}.
 
 Choose a new model and click `Next`{.action}.
 

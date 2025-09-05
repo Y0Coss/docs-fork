@@ -6,6 +6,10 @@ updated: 2025-09-05
 
 <style> details>summary { color:rgb(33, 153, 232) !important; cursor: pointer; } details>summary::before { content:'\25B6'; padding-right:1ch; } details[open]>summary::before { content:'\25BC'; } </style>
 
+## Objetivo
+
+Os nossos serviços VPS oferecem flexibilidade, fiabilidade e desempenho para uma variedade de necessidades de alojamento. Pode atualizar a sua RAM, vCPU ou armazenamento na [Área de Cliente OVHcloud](/links/manager).
+
 **Saiba como adicionar vCores, memória e armazenamento ao serviço VPS.**
 
 ## Requisitos
@@ -14,8 +18,6 @@ updated: 2025-09-05
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
-
-Os nossos serviços VPS oferecem flexibilidade, fiabilidade e desempenho para uma variedade de necessidades de alojamento. Pode atualizar a sua RAM, vCPU ou armazenamento na [Área de Cliente OVHcloud](/links/manager).
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na parte `Servidor privado virtual`{.action}.
 
@@ -29,7 +31,7 @@ A partir daí, poderá atualizar os seus vCores (`1`), a sua memória (`2`) ou o
 
 ### 1. Para adicionar **vCores**
 
-No separador **Página inicial** no painel **A sua configuração**, clique em Adicionar vCores passando para a gama superior`.
+No separador **Página inicial** no painel **A sua configuração**, clique em `Adicionar vCores passando para a gama superior`{.action}.
 
 Escolha um novo modelo e clique em `Seguinte`{.action}.
 
