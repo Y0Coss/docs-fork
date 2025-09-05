@@ -64,9 +64,9 @@ The virtual link is a L2 tunnel for OVHcloud Connect L2. Only one PoP/*EntryPoin
 
 The virtual link is a full mesh IP network between any PoP/*EntryPoint* and any DC/*EndPoint* of the same region.
 
-## Accessible Regions per provider
+## Accessible PoPs per provider
 
-| Provider | Accessible OVHcloud Regions |
+| Provider | OVHcloud Connect PoPs |
 | :--- | :--- |
 | **OVHcloud Connect Direct** | **Europe:** Lille, Paris, Frankfurt, Warsaw, Madrid, London. <br> **North America:** Montreal, Toronto, Washington (Ashburn), Seattle. <br> **APAC:** Mumbai, Singapore. |
 | **Equinix** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Toronto, Washington (Ashburn). <br> **APAC:** Singapore. |
@@ -76,6 +76,14 @@ The virtual link is a full mesh IP network between any PoP/*EntryPoint* and any 
 | **InterCloud** | **Europe:** Paris. |
 | **Orange** | **Europe:** Paris. |
 | **RISQ** | **North America:** Montreal. |
+
+## Accessible Regions per PoP
+
+| OVHcloud Connect PoPs | Accessible OVHcloud Regions |
+| :--- | :--- |
+| **Europe**<br>Paris: Equinix - PA3, GlobalSwitch, Telehouse - TH2<br>Frankfurt: Equinix - FR5<br>London: Equinix - LD5, Telehouse - West<br>Madrid: Digital Realty - MAD2<br>Warsaw: Equinix - WA2<br>Lille: ETIX - ETX2 | **Europe**<br>France (Strasbourg - `eu-west-sbg`), Gravelines (`eu-west-gra`), Roubaix (`eu-west-rbx`), Paris (`eu-west-par`), Limburg (`eu-west-lim`), Warsaw (`eu-central-waw`), Erith (`eu-west-eri`), and the SecNumCloud regions (`eu-west-rbx-snc`, `eu-west-sbg-snc`, `eu-west-gra-snc`) |
+| **North America**<br>Montreal: Cologix - MTL3<br>Toronto: Equinix - TR1 | **North America**<br>Canada (Beauharnois - `ca-east-bhs`), Toronto (`ca-east-tor`), Vint Hill (`us-east-vin`), Hillsboro (`us-west-hil`) |
+| **Asia-Pacific**<br>Singapore: Equinix - SG1<br>Mumbai: Equinix - MB2 | **Asia-Pacific**<br>Singapore (`ap-southeast-sgp`), Mumbai (`ap-south-mum`) |
 
 ## Go further
 
