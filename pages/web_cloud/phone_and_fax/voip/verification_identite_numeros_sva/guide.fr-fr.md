@@ -268,10 +268,6 @@ Vos justificatifs d'identité pouvant expirer dans le temps, vous pourrez égale
 |Arrivé à expiration le XX/XX/XXXX|La date de fin de validité sera bientôt atteinte|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif à jour|
 |Expiré|La date de fin de validité du document est atteinte|Cliquez sur `...`{.action} à droite de ce document pour téléverser un nouveau justificatif à jour|
 
-## FAQ
-
-
-
 ## Aller plus loin
 
 [Les recommandations déontologiques applicables aux services à valeur ajoutée téléphoniques](https://www.ovh.com/fr/support/documents_legaux/conditions%20particulieres%20deontologie%20numeros%20SVA%20Fr.pdf).
