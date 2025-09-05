@@ -6,6 +6,10 @@ updated: 2025-09-04
 
 <style> details>summary { color:rgb(33, 153, 232) !important; cursor: pointer; } details>summary::before { content:'\25B6'; padding-right:1ch; } details[open]>summary::before { content:'\25BC'; } </style>
 
+## Objectif
+
+Nos services VPS offrent flexibilité, fiabilité et performance pour une variété de besoins d'hébergement. Vous pouvez procéder à la mise à niveau de votre RAM, vCPU ou stockage dans le [espace client OVHcloud](/links/manager).
+
 **Découvrez comment ajouter des vCores, de la mémoire et du stockage à votre service VPS.**
 
 ## Prérequis
@@ -15,9 +19,7 @@ updated: 2025-09-04
 
 ## En pratique
 
-Nos services VPS offrent flexibilité, fiabilité et performance pour une variété de besoins d'hébergement. Vous pouvez procéder à la mise à niveau de votre RAM, vCPU ou stockage dans le [espace client OVHcloud](/links/manager).
-
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs Privés Virtuels`{.action}.
 
 > [!primary]
 >
@@ -29,7 +31,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous da
 
 ### 1. Pour ajouter des **vCores**
 
-Sous l'onglet **Accueil** dans le panneau **Votre configuration**, cliquez sur `Ajouter des vCores en passant à la gamme supérieure`.
+Sous l'onglet **Accueil** dans le panneau **Votre configuration**, cliquez sur `Ajouter des vCores en passant à la gamme supérieure`{.action}.
 
 Choisissez un nouveau modèle et cliquez sur `Suivant`{.action}.
 
@@ -43,7 +45,7 @@ Acceptez (`☑`{.action}) les **termes des contrats** et cliquez sur `Suivant`{.
 
 ![Mettre à niveau les ressources](images/vps_upgrade04.png){.thumbnail}
 
-Révisez vos modifications et cliquez sur `Commander`{.action}.
+Vérifiez vos modifications et cliquez sur `Commander`{.action}.
 
 ![Mettre à niveau les ressources](images/vps_upgrade05.png){.thumbnail}
 
@@ -98,7 +100,7 @@ Dans certains cas, le débit peut changer, notamment lors du passage d'un VPS de
 
 ///
 
-/// details | Cette mise à niveau serait-elle immédiate, ou aurais-je le temps d'utiliser les deux en même temps (configurer, transférer des données, etc.) ?
+/// details | Cette mise à niveau sera-t-elle immédiate, ou aurai-je le temps d'utiliser les deux en même temps (configurer, transférer des données, etc.) ?
 
 La mise à niveau sera effective immédiatement, en conservant toutes vos données. La mise à niveau allouera plus de ressources à votre VPS existant.
 
