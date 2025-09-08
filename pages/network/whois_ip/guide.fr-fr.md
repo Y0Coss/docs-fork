@@ -21,7 +21,7 @@ Pour savoir qui gère ou fournit une adresse IP spécifique, vous devrez effectu
 
 Rendez-vous sur l'outil WHOIS officiel de l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) grâce au lien suivant: [lookup.icann.org](https://lookup.icann.org/en/lookup).
 
-Sur la page qui s'affiche, renseignez dans le champ de saisie l'adresse IPv4 (par exemple: 203.0.113.0) ou IPv6 (par exemple: 2001:db8:0:1b00:203:0:113:0) pour laquelle vous souhaitez connaître le fournisseur ou le gestionnaire.
+Sur la page qui s'affiche, renseignez dans le champ de saisie l'adresse IPv4 (par exemple : 203.0.113.0) ou IPv6 (par exemple : 2001:db8:0:1b00:203:0:113:0) pour laquelle vous souhaitez connaître le fournisseur ou le gestionnaire.
 
 ![ICANN Lookup tool](/pages/assets/screens/other/web-tools/icann/launch-research.png){.thumbnail}
 
