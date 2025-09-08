@@ -37,10 +37,10 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 To log in and use SSH access to your web hosting plan, you will need the following:
 
-- the active SSH user;
-- the password associated with this SSH user;
-- the SSH server address of your web hosting plan;
-- the connection port to your web hosting plan’s SSH server.
+- The active SSH user
+- The password associated with this SSH user
+- The SSH server address of your web hosting plan
+- The connection port to your web hosting plan’s SSH server
 
 ### 1 - Make sure that SSH access is enabled for the SSH user you have chosen <a name="user-ssh-enablement"></a>
 
@@ -75,8 +75,8 @@ Click on the tabs below to view each of the **4** steps in succession.
 >>
 >> If the SSH access of the user concerned is `Disabled` in the table, perform the following steps:
 >>
->> - 1 : Click the `...`{.action} button to the right of the user’s line, then `Edit`{.action}.
->> - 2 : In the window that pops up, in the `Connection protocols` section, select the `FTP, SFTP and SSH`{.action} choice, then click `Next`{.action}.
+>> - 1: Click the `...`{.action} button to the right of the user’s line, then `Edit`{.action}.
+>> - 2: In the window that pops up, in the `Connection protocols` section, select the `FTP, SFTP and SSH`{.action} choice, then click `Next`{.action}.
 >> - 3: Check the summary of the requested change, then click `Confirm`{.action}.
 >>
 >> > If you cannot enable it, please ensure that [your OVHcloud web hosting plan](/links/web/hosting) has SSH access.
@@ -149,10 +149,10 @@ After sending the command, you will be prompted to enter the SSH user password.
 
 Once you have opened the software (e.g. PuTTY), enter your SSH connection details. Since this procedure involves several steps, we cannot detail this in this documentation. Here is a reminder of the information you will need to enter:
 
-- **SSH server**: Enter the SSH server address retrieved in the [part 2](#sshlogin). Depending on the software you are using, the domain name may look like “Server Address” or “Hostname”.
+- **SSH server**: Enter the SSH server address retrieved in the [part 2](#sshlogin). Depending on which software you are using, the field may be labelled as "Server address" or "Host Name".
 - **Connection port**: Enter the SSH connection port retrieved in [part 2](#sshlogin).
-- **SSH login**: Enter the SSH user. Depending on the software you are using, the domain name may look like “ID”, “Login” or even “Username”.
-- **SSH user password**: Enter the password associated with the SSH login.<br><br> Depending on the software you are using, the name may also look like "Password".
+- **SSH login**: Enter the SSH user. Depending on the software application you use, this field may be labelled as "Login" or "Username".
+- **SSH user password**: Enter the password associated with the SSH login. Depending on which software you are using, the field should be labelled as "Password".
 
 ///
 
@@ -169,7 +169,7 @@ To interact with your storage space, you will need to use commands. These have a
 |cd `..`|Change directory|Enables you to change the working directory, one level up in the tree-view of your directories.|
 |cd|Change directory|If you do not specify an argument, you can move to the root of your storage space (home).|
 |ls|List|Lists the contents of your working directory. Add the attributes to modify the result of the command (like `ls -ulhG`).| 
-|chmod `droit` `arg`|Change mode|Change the rights of the file or directory mentioned as an `arg` argument.| 
+|chmod `right` `arg`|Change mode|Change the rights of the file or directory mentioned as an `arg` argument.| 
 |mkdir `arg`|Make directory|Enables you to create a directory with the argument name `arg`.| 
 |touch `arg`|Touch|Creates an empty file with the name mentioned in the `arg` argument, if a file with this name does not already exist.|
 |rm `arg`|Remove|Removes the file mentioned in the `arg` argument.| 
@@ -182,17 +182,17 @@ You can also launch a script using a specific PHP version. For example, for PHP 
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Depending on the PHP version you want to use, the runtime environment may need to be modified for compatibility reasons. Refer to our documentation “[Web Hosting - Environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)” to find out more.
+Depending on the PHP version you want to use, the runtime environment may need to be modified for compatibility reasons. Refer to our documentation "[Web Hosting - Environment, PHP version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)" to find out more.
 
 > [!primary]
 >
 > Files and/or folders can also be copied using the **S**ecure **C**opy **P**rotocol (**SCP**).
 > This protocol uses SSH protocol to securely duplicate content between:
 >
-> - a local computer/device and a remote server
-> - two remote servers
+> - A local computer/device and a remote server
+> - Two remote servers
 >
-> Find more information on using the `scp` command with our OVHcloud web hosting plans in our guide “[Web Hosting - Copy files using SCP command](/pages/web_cloud/web_hosting/using-scp-command)”.
+> Find more information on using the `scp` command with our OVHcloud web hosting plans in our guide "[Web Hosting - Copy files using SCP command](/pages/web_cloud/web_hosting/using-scp-command)".
 
 ## Go further
 
