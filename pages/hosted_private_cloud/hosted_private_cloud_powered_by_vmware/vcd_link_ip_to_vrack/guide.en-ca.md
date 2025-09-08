@@ -1,7 +1,7 @@
 ---
 title: "Public VCF as-a-Service - Linking a public IP block with vRack"
 excerpt: "Find out how to link the block of public IP addresses delivered with your Public VCF as-a-Service organization and its vRack"
-updated: 2025-08-11
+updated: 2025-09-08
 ---
 
 <style>
