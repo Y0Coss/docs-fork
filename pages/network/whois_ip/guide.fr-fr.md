@@ -27,7 +27,7 @@ Sur la page qui s'affiche, renseignez dans le champ de saisie l'adresse IPv4 (pa
 
 Une fois l'adresse IP renseignée, cliquez sur le bouton bleu `Lookup`{.action}.
 
-Suite à cela, des informations relatives à l'adresse IP apparaîssent.
+Suite à cela, des informations relatives à l'adresse IP apparaissent.
 
 > [!primary]
 >
