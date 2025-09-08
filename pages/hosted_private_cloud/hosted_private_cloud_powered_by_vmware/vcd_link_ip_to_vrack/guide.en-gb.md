@@ -47,8 +47,7 @@ This IP block is not directly linked to your vRack. You will need to link it man
 
 To make these addresses usable inside your Public VCF as-a-Service environment, you also need to declare the public gateway in VMware Cloud Director (VCD).
 
-Follow the guide [Public VCF as-a-Service - Declare the public IP gateway in VCD](https://help.ovhcloud.com/csm/fr-vmware-vcd-declare-public-gateway?id=kb_article_view&sysparm_article=KB0072017) to complete this step.
-
+Follow the guide [Public VCF as-a-Service - Declare the public IP gateway in VCD](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_declare_public_gateway/) to complete this step.
 
 ## Go further
 
