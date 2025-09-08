@@ -6,7 +6,9 @@ updated: 2025-09-08
 
 ## Objectif
 
-Vous souhaitez savoir si une adresse IP est gérée ou fournie par OVHcloud ? Votre nom de domaine pointe vers une adresse IP et vous souhaitez savoir si celle-ci est gérée ou fournie par OVHcloud ? Vous souhaitez retrouver l'endroit où est hébergé votre site web à partir d'une adresse IP ?
+- Vous souhaitez savoir si une adresse IP est gérée ou fournie par OVHcloud ? 
+- Votre nom de domaine pointe vers une adresse IP et vous souhaitez savoir si celle-ci est gérée ou fournie par OVHcloud ? 
+- Vous souhaitez retrouver le fournisseur qui héberge votre site web via son adresse IP ?
 
 Pour savoir qui gère ou fournit une adresse IP spécifique, vous devrez effectuer une requête WHOIS (abréviation de l'anglais « Who is ? ») sur celle-ci.
 
