@@ -152,7 +152,7 @@ Once you have opened the software (e.g. PuTTY), enter your SSH connection detail
 - **SSH server**: Enter the SSH server address retrieved in the [part 2](#sshlogin). Depending on which software you are using, the field may be labelled as "Server address" or "Host Name".
 - **Connection port**: Enter the SSH connection port retrieved in [part 2](#sshlogin).
 - **SSH login**: Enter the SSH user. Depending on the software application you use, this field may be labelled as "Login" or "Username".
-- **SSH user password**: Enter the password associated with the SSH login. Depending on which software you are using, the field should be labelled as "Password".
+- **SSH user password**: Enter the password associated with the SSH login.
 
 ///
 
