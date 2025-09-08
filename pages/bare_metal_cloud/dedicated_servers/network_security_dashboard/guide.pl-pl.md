@@ -1,17 +1,12 @@
 ---
 title: "Monitoring ataków DDoS za pomocą Network Security Dashboard"
 excerpt: "Dowiedz się, jak nawigować za pomocą pulpitu nawigacyjnego zabezpieczeń sieciowych"
-updated: 2025-06-04
+updated: 2025-09-08
 ---
 
 ## Wprowadzenie
 
 Z tego przewodnika dowiesz się, jak korzystać z Dashboardu zabezpieczeń sieci. Zawiera on przegląd środków zaradczych uruchamianych przez infrastrukturę ochrony Anty-DDoS w przypadku wykrycia złośliwej aktywności sieciowej. Dowiedz się, jakie dodatkowe zabezpieczenia należy wdrożyć, aby zapewnić ciągłość działania usług. Co więcej, na dashboardzie dostępne są wykresy ruchu pozwalające na lepszą wizualizację sytuacji podczas operacji centrum kontroli.
-
-> [!warning]
->
-> **Ostrzeżenie** : funkcja "Scrubbing Center: tryb stały" została osiągnięta jego koniec życia (EOL) i zostanie definitywnie wyłączony 8 września 2025.
->
 
 ## Wymagania początkowe
 
@@ -53,8 +48,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij `Network`{.ac
 Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Network **Firewall** i **GAME firewall** charakteryzują się dostępnością i statusami.
 
 - Stan **Filtrowanie** może być następujący:
-    - **Automatycznie** - Centrum czyszczenia jest w trybie **automatycznym**. Jest to tryb zalecany do użycia. W razie potrzeby przekierowuje ruch w celu głębszej analizy.
-    - **Stałe** - Centrum czyszczenia jest **trwale włączone**. Nie zalecamy włączania połączenia w sposób stały, o ile nie zostanie zanotowane fluktuacja czasu odpowiedzi spowodowane przekierowaniem ruchu w tę i z powrotem.
+    - **Automatycznie** - Centrum czyszczenia jest w trybie **automatycznym** i w razie potrzeby przekierowuje ruch w celu głębszej analizy.
     - **Wymuszone** - Oznacza to, że centrum oczyszczania jest **podejmowane działanie** teraz.
 
 - Kolumna **Firewall** wskazuje stan Edge Network Firewall, który może być:
