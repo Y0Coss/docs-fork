@@ -38,7 +38,7 @@ This guide provides detailed steps to help you migrate from a third-party S3-com
   
 ## Migration Process
 
-![Architecture](images/Move to cloud - Object Storage.png){.thumbnail}
+![Architecture](images/move-to-cloud-object-storage.png){.thumbnail}
 
 See the diagram above for an illustration of the architecture. An OVHcloud Public Cloud virtual machine acts as an entry point, on which Rclone (installed with SSH and sudo access enabled) moves data to OVHcloud Object Storage.
   
