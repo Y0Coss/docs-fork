@@ -12,7 +12,7 @@ updated: 2025-09-08
 
 Pour savoir qui gère ou fournit une adresse IP spécifique, vous devrez effectuer une requête WHOIS (abréviation de l'anglais « Who is ? ») sur celle-ci.
 
-**Découvrez comment savoir si une adresse IP est gérée, fournie et / ou associée à un service OVHcloud**
+**Découvrez comment savoir si une adresse IP est gérée, fournie et / ou associée à un service OVHcloud.**
 
 ## Prérequis
 
