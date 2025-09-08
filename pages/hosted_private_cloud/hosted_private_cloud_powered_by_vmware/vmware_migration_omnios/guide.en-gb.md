@@ -1,7 +1,7 @@
 ---
 title: Migrating OmniOS datastores
 excerpt: Identify your OmniOS datastores and migrate your virtual machines to supported storage using VMware Storage vMotion.
-updated: 2025-09-04
+updated: 2025-09-08
 ---
 
 ## Objective
@@ -23,32 +23,30 @@ This guide explains how to identify OmniOS datastores in your Hosted Private Clo
 
 2. Click on `Hosted Private Cloud`{.action} and select your PCC service.
 
-![Access Hosted Private Cloud](images/omnios-01.png){.thumbnail}
+    ![Access Hosted Private Cloud](images/omnios-01.png){.thumbnail}
 
 3. Go to the `Datacenters`{.action} tab.
 
-![Datacenters page](images/omnios-02.png){.thumbnail}
+    ![Datacenters page](images/omnios-02.png){.thumbnail}
 
 4. On the datacenter page, open the `Datastores`{.action} tab.
 
-![Datacenters page](images/omnios-03.png){.thumbnail}
+    ![Datacenters page](images/omnios-03.png){.thumbnail}
 
-- Datastores with the prefix **tete-xxxx** are **OmniOS** datastores.
+    - Datastores with the prefix **tete-xxxx** are **OmniOS** datastores.
+    - Datastores with the prefix **cluster-xxxx** are **FreeBSD** datastores.
 
-- Datastores with the prefix **cluster-xxxx** are **FreeBSD** datastores.
+    ![Datastore list with prefixes](images/omnios-04.png){.thumbnail}
 
-![Datastore list with prefixes](images/omnios-04.png){.thumbnail}
-
-> [!primary]
-> OmniOS datastores must be migrated to supported storage to ensure service continuity.
+    > [!primary]
+    > OmniOS datastores must be migrated to supported storage to ensure service continuity.
 
 5. Before starting a vMotion, make sure that you have a supported datastore available in your infrastructure.
 
-   - If you need to add a datastore, refer to the [Add a datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_storage/) guide.
-   
-   - If you need to remove an unused datastore, refer to the [Delete a datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/delete_datastore/) guide.
+    - If you need to add a datastore, refer to the [Add a datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_storage) guide.
+    - If you need to remove an unused datastore, refer to the [Delete a datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/delete_datastore) guide.
 
-In some cases, OVHcloud may already have provided you with a supported datastore. Check your configuration before moving on to the next step.
+    In some cases, OVHcloud may already have provided you with a supported datastore. Check your configuration before moving on to the next step.
 
 ### Step 2 - Access vSphere through vScope
 
@@ -56,35 +54,35 @@ In some cases, OVHcloud may already have provided you with a supported datastore
 
 2. Click on `vScope`{.action}.
 
-![General information tab with vScope](images/omnios-05.png){.thumbnail}
+    ![General information tab with vScope](images/omnios-05.png){.thumbnail}
 
-You are now connected to the vSphere interface and can perform a Storage vMotion.
+    You are now connected to the vSphere interface and can perform a Storage vMotion.
 
 ### Step 3 - Migrate a virtual machine with Storage vMotion
 
 1. In vSphere, right-click the virtual machine to migrate and select `Migrate...`{.action}.
 
-![Start migration](images/omnios-06.png){.thumbnail}
+    ![Start migration](images/omnios-06.png){.thumbnail}
 
 2. Choose **Change storage only**.
 
-![Select storage only](images/omnios-07.png){.thumbnail}
+    ![Select storage only](images/omnios-07.png){.thumbnail}
 
 3. Select a supported datastore as the destination.
 
-![Select datastore](images/omnios-08.png){.thumbnail}
+    ![Select datastore](images/omnios-08.png){.thumbnail}
 
- You can also use the `Advanced`{.action} option to migrate only one disk if the VM has multiple disks.
+    You can also use the `Advanced`{.action} option to migrate only one disk if the VM has multiple disks.
 
-![Advanced datastore selection](images/omnios-09.png){.thumbnail}
+    ![Advanced datastore selection](images/omnios-09.png){.thumbnail}
 
 4. Click `Finish`{.action} to start the migration.
 
-![Finalize migration](images/omnios-10.png){.thumbnail}
+    ![Finalize migration](images/omnios-10.png){.thumbnail}
 
-5. Monitor the migration progress in the **Recent Tasks** pane. Duration depends on VM size, IO activity, and available bandwidth.
+5. Monitor the migration progress in the **Recent Tasks** panel. Duration depends on VM size, IO activity, and available bandwidth.
 
-![Migration progress](images/omnios-11.png){.thumbnail}
+    ![Migration progress](images/omnios-11.png){.thumbnail}
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
 title: Migrer les datastores OmniOS
-excerpt: Identifiez vos datastores OmniOS et migrez vos machines virtuelles vers un stockage supporté à l'aide de VMware Storage vMotion.
-updated: 2025-09-04
+excerpt: "Identifiez vos datastores OmniOS et migrez vos machines virtuelles vers un stockage supporté à l'aide de VMware Storage vMotion"
+updated: 2025-09-08
 ---
 
 ## Objectif
@@ -15,39 +15,38 @@ Ce guide explique comment identifier les datastores OmniOS de votre Hosted Priva
 - Connaissances de base de VMware vSphere et de Storage vMotion
 - Datastores supportés disponibles comme cibles de migration
 
-## Instructions
+## En pratique
 
 ### Étape 1 - Identifier les datastores OmniOS
 
 1. Connectez-vous à [votre espace client OVHcloud](/links/manager).
+
 2. Cliquez sur `Hosted Private Cloud`{.action} et sélectionnez votre service PCC.
 
-![Accéder au Hosted Private Cloud](images/omnios-01.png){.thumbnail}
+    ![Accéder au Hosted Private Cloud](images/omnios-01.png){.thumbnail}
 
 3. Rendez-vous dans l'onglet `Datacenters`{.action}.
 
-![Page Datacenters](images/omnios-02.png){.thumbnail}
+    ![Page Datacenters](images/omnios-02.png){.thumbnail}
 
 4. Sur la page du datacenter, ouvrez l'onglet `Datastores`{.action}.
 
-![Onglet Datastores](images/omnios-03.png){.thumbnail}
+    ![Onglet Datastores](images/omnios-03.png){.thumbnail}
 
-- Les datastores avec le préfixe **tete-xxxx** sont des datastores **OmniOS**.
+    - Les datastores avec le préfixe **tete-xxxx** sont des datastores **OmniOS**.
+    - Les datastores avec le préfixe **cluster-xxxx** sont des datastores **FreeBSD**.
 
-- Les datastores avec le préfixe **cluster-xxxx** sont des datastores **FreeBSD**.
+    ![Liste des datastores avec préfixes](images/omnios-04.png){.thumbnail}
 
-![Liste des datastores avec préfixes](images/omnios-04.png){.thumbnail}
-
-> [!primary]
-> Les datastores OmniOS doivent être migrés vers un stockage supporté pour assurer la continuité du service.
+    > [!primary]
+    > Les datastores OmniOS doivent être migrés vers un stockage supporté pour assurer la continuité du service.
 
 5. Avant de lancer un vMotion, assurez-vous de disposer d’un datastore supporté dans votre parc.
 
-    - Si vous devez ajouter un datastore, consultez le guide [Ajouter un datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_storage/).
+    - Si vous devez ajouter un datastore, consultez le guide [Ajouter un datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_storage).
+    - Si vous souhaitez supprimer un datastore devenu inutile, consultez le guide [Supprimer un datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/delete_datastore).
 
-    - Si vous souhaitez supprimer un datastore devenu inutile, consultez le guide [Supprimer un datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/delete_datastore/).
-
-Dans certains cas, OVHcloud peut déjà avoir mis un datastore supporté à votre disposition. Vérifiez votre configuration avant de passer à l’étape suivante.
+    Dans certains cas, OVHcloud peut déjà avoir mis un datastore supporté à votre disposition. Vérifiez votre configuration avant de passer à l’étape suivante.
 
 ### Étape 2 - Accéder à vSphere via vScope
 
@@ -55,35 +54,35 @@ Dans certains cas, OVHcloud peut déjà avoir mis un datastore supporté à votr
 
 2. Cliquez sur `vScope`{.action}.
 
-![Onglet Informations générales avec vScope](images/omnios-05.png){.thumbnail}
+    ![Onglet Informations générales avec vScope](images/omnios-05.png){.thumbnail}
 
-Vous êtes maintenant connecté à l'interface vSphere et pouvez effectuer un Storage vMotion.
+    Vous êtes maintenant connecté à l'interface vSphere et pouvez effectuer un Storage vMotion.
 
 ### Étape 3 - Migrer une machine virtuelle avec Storage vMotion
 
 1. Dans vSphere, faites un clic droit sur la machine virtuelle à migrer et sélectionnez `Migrer...`{.action}.
 
-![Démarrer la migration](images/omnios-06.png){.thumbnail}
+    ![Démarrer la migration](images/omnios-06.png){.thumbnail}
 
 2. Choisissez **Modifier le stockage uniquement**.
 
-![Sélectionner le stockage uniquement](images/omnios-07.png){.thumbnail}
+    ![Sélectionner le stockage uniquement](images/omnios-07.png){.thumbnail}
 
 3. Sélectionnez un datastore supporté comme destination.
 
-![Sélectionner le datastore](images/omnios-08.png){.thumbnail}
+    ![Sélectionner le datastore](images/omnios-08.png){.thumbnail}
 
-Vous pouvez également utiliser l'option `Avancé`{.action} pour migrer un seul disque si la machine virtuelle en possède plusieurs.
+    Vous pouvez également utiliser l'option `Avancé`{.action} pour migrer un seul disque si la machine virtuelle en possède plusieurs.
 
-![Sélection avancée du datastore](images/omnios-09.png){.thumbnail}
+    ![Sélection avancée du datastore](images/omnios-09.png){.thumbnail}
 
 4. Cliquez sur `Terminer`{.action} pour commencer la migration.
 
-![Finaliser la migration](images/omnios-10.png){.thumbnail}
+    ![Finaliser la migration](images/omnios-10.png){.thumbnail}
 
 5. Surveillez la progression de la migration dans le volet **Tâches récentes**. La durée dépend de la taille de la machine virtuelle, de l'activité d'E/S et de la bande passante disponible.
 
-![Progression de la migration](images/omnios-11.png){.thumbnail}
+    ![Progression de la migration](images/omnios-11.png){.thumbnail}
 
 ## Aller plus loin
 
