@@ -37,14 +37,14 @@ Mit OVHcloud Webhosting Angeboten verfügen Sie über einen Speicherplatz für d
 
 Um sich zu verbinden und den SSH Zugang Ihres Webhostings zu verwenden benötigen Sie Folgendes:
 
-- den aktiven SSH-Benutzer;
-- das Passwort des SSH-Benutzers;
-- die SSH-Serveradresse Ihres Webhostings;
-- den Verbindungsport zum SSH-Server Ihres Webhostings.
+- Den aktiven SSH-Benutzer
+- Das Passwort des SSH-Benutzers
+- Die SSH-Serveradresse Ihres Webhostings
+- Den Verbindungsport zum SSH-Server Ihres Webhostings
 
 ### 1 - Stellen Sie sicher, dass der SSH-Zugang für den ausgewählten SSH-Benutzer aktiv ist <a name="user-ssh-enablement"></a>
 
-Klicken Sie auf die Registerkarten unten, um die einzelnen **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -73,7 +73,7 @@ Klicken Sie auf die Registerkarten unten, um die einzelnen **4** Schritte anzuze
 >>
 >> ![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
 >>
->> Wenn der SSH-Zugang des betreffenden Benutzers in der Tabelle `Deaktiviert` lautet, gehen Sie wie folgt vor:
+>> Wenn der SSH-Zugang des betreffenden Benutzers in der Tabelle `Deaktiviert` ist, gehen Sie wie folgt vor:
 >>
 >> - 1: Klicken Sie auf die Schaltfläche `...`{.action} rechts neben der Zeile für den Benutzer und dann auf `Ändern`{.action}.
 >> - 2: Wählen Sie im angezeigten Fenster im Abschnitt `Verbindungsprotokolle` die Option `FTP, SFTP und SSH`{.action} aus, und klicken Sie dann auf `Weiter`{.action}.
@@ -83,7 +83,7 @@ Klicken Sie auf die Registerkarten unten, um die einzelnen **4** Schritte anzuze
 
 ### 2 - Rufen Sie die notwendigen Informationen für die Verbindung per SSH ab <a name="sshlogin"></a>
 
-Klicken Sie auf die Registerkarten unten, um die einzelnen **4** Schritte anzuzeigen.
+Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
 
 > [!tabs]
 > **Schritt 1**
@@ -110,7 +110,7 @@ Klicken Sie auf die Registerkarten unten, um die einzelnen **4** Schritte anzuze
 >>
 >> |Element|Beschreibung|
 >> |---|---|
->> |**SSH-Serveradresse**| Suchen Sie nach `SSH-Server`. Es hat die Form `ssh.clusterXXX.hosting.ovh.net` (wobei jede der 3 `X` eine Zahl zwischen `0` und `9` ist).|
+>> |**SSH-Serveradresse**| Suchen Sie nach `SSH-Server`. Es hat die Form `ssh.clusterXXX.hosting.ovh.net` (wobei `X` eine Zahl zwischen `0` und `9` ist).|
 >> |**SSH-Server-Verbindungsport**| Geben Sie `SSH-Port` an. Standardmäßig lautet die Nummer des SSH-Ports `22`.|
 >> |**Aktiver SSH-Benutzer**| In der Tabelle unten auf der Seite finden Sie diesen in der Spalte `Login`.<br>Zur Erinnerung: Dieser Benutzer muss [über einen aktiven SSH-Zugriff verfügen](#user-ssh-enablement).|
 >> |**Passwort des SSH-Benutzers**| Wenn Sie dieses Passwort vergessen haben, klicken Sie auf den Button `...`{.action} rechts neben der Zeile für den betreffenden Benutzer in der Tabelle unten auf `Passwort ändern`{.action}.|
@@ -131,7 +131,7 @@ Es gibt nun zwei Möglichkeiten, um sich via SSH mit Ihrem Webhosting zu verbind
 
 > [!warning]
 >
-> Kein „Superuser“ (oder „Root“) via SSH auf unsere Shared Hosting Angebote.
+> Es gibt keinen „Superuser“ (oder „Root“) via SSH auf unseren Hosting Angeboten.
 
 Wenn das Terminal geöffnet ist, verwenden Sie folgenden Befehl und ersetzen Sie die Elemente `yourlogin`, `ssh.clusterXXX.hosting.ovh.net` und `22` durch die Elemente, die Ihren SSH-Zugangsdaten entsprechen.
 
@@ -145,14 +145,14 @@ Nachdem Sie den Befehl abgeschickt haben, werden Sie aufgefordert, das Passwort 
 
 ///
 
-/// details | Von Software
+/// details | Software
 
 Geben Sie nach dem Öffnen der Software (z.B. PuTTY) die SSH-Verbindungsinformationen ein. Diese Vorgehensweise ist abhängig von Ihrem Passwort und wir können sie in dieser Anleitung nicht im Detail beschreiben. Nachfolgend finden Sie eine Erinnerung an die Informationen, die Sie dort eingeben müssen:
 
-- **SSH-Server**: Geben Sie die abgerufene SSH-Serveradresse in [Part 2](#sshlogin) ein. Je nach verwendetem Programm kann die Bezeichnung wie folgt lauten: „Serveradresse“, „Hostname“ oder „Hostname“.
-- **Verbindungsport**: Geben Sie den wiederhergestellten SSH-Verbindungsport in [Part 2](#sshlogin) ein.
-- **SSH-Login**: Geben Sie den SSH-Benutzer ein. Je nach verwendetem Programm kann der Name wie „Benutzername“, „Kennung“, „Login“ oder auch „Username“ aussehen.
-- **Passwort des SSH-Benutzers**: Geben Sie das Passwort des SSH-Logins an.<br><br> Je nach verwendetem Programm kann dessen Bezeichnung auch „Password“ lauten.
+- **SSH-Server**: Geben Sie die [in Schritt 2](#sshlogin) erhaltene SSH-Serveradresse ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Serveradresse“, „Host“. „Hostname“ etc.
+- **Verbindungsport**: Geben Sie den [in Schritt 2](#sshlogin) erhaltenen Verbindungsport ein.
+- **SSH-Login**: Geben Sie den SSH-Benutzer ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Benutzername“, „Kennung“, „Login“, „Username“ etc.
+- **Passwort des SSH-Benutzers**: Geben Sie das Passwort des SSH-Benutzers ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen wie „Passwort“ oder „Kennwort“ möglich.
 
 ///
 
@@ -160,7 +160,7 @@ Nachdem Sie sich eingeloggt haben, können Sie zum nächsten Abschnitt übergehe
 
 ### 4 - Interagieren Sie via SSH mit Ihrem Speicherplatz <a name="ssh-using"></a>
 
-Um mit Ihrem Speicherplatz zu interagieren, müssen Sie Befehle verwenden. Diese haben eine direkte Bedeutung aus dem Englischen. Verwenden Sie bei Bedarf die unten stehende Liste. Bitte beachten Sie: **Diese Angaben sind nicht vollständig**.
+Um mit Ihrem Speicherplatz zu interagieren, müssen Sie Befehle verwenden. Diese haben eine direkte Bedeutung aus dem Englischen. Verwenden Sie bei Bedarf die unten stehende Liste. Beachten Sie: **Diese Angaben sind nicht vollständig**.
 
 |Befehl|Englische Bedeutung|Beschreibung| 
 |---|---|---|
@@ -176,13 +176,13 @@ Um mit Ihrem Speicherplatz zu interagieren, müssen Sie Befehle verwenden. Diese
 |rm -r `arg`|Remove|Löscht das als Argument `arg` benannte Verzeichnis inklusive aller Dateien und Unterordner (rekursiv).| 
 |mv `arg1` `arg2`|Move|Benennt ein als `arg1` eingegebenes Element um oder verschiebt dieses an einen neuen Speicherort (angegeben als `arg2`).| 
 
-Sie können ein Skript auch mit einer bestimmten PHP-Version ausführen. Verwenden Sie z. B. für die PHP-Version 7.1 den folgenden Befehl. Passen Sie seine Elemente an Ihre persönliche Situation an.
+Sie können ein Skript auch mit einer bestimmten PHP-Version ausführen. Verwenden Sie z. B. für die PHP-Version 7.1 den folgenden Befehl. Passen Sie seine Elemente an Ihre Situation an.
 
 ```sh
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Je nach der PHP-Version, die Sie verwenden möchten, muss die Ausführungsumgebung möglicherweise aus Kompatibilitätsgründen geändert werden. Weitere Informationen finden Sie in unserer Dokumentation „[Webhosting : umgebung, PHP-Version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)“.
+Je nach der PHP-Version, die Sie verwenden möchten, muss die Ausführungsumgebung möglicherweise aus Kompatibilitätsgründen geändert werden. Weitere Informationen finden Sie in unserer Dokumentation „[Webhosting: Umgebung, PHP-Version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)“.
 
 > [!primary]
 >
@@ -196,9 +196,9 @@ Je nach der PHP-Version, die Sie verwenden möchten, muss die Ausführungsumgebu
 
 ## Weiterführende Informationen
 
-[Webhosting : umgebung, PHP-Version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+[Webhosting: U mgebung, PHP-Version, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-Treten Sie unserer [User Community](/links/community) bei.Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
