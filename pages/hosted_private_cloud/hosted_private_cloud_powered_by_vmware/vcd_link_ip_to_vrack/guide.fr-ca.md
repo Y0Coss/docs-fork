@@ -1,7 +1,7 @@
 ---
 title: "Public VCF as-a-Service - Liaison d'un bloc IP public avec vRack"
 excerpt: "Découvrez comment lier le bloc d'adresses IP publiques livré avec votre organisation Public VCF as-a-Service et son vRack"
-updated: 2025-08-11
+updated: 2025-09-08
 ---
 
 <style>
@@ -43,8 +43,13 @@ Ce bloc IP n'est pas directement lié à votre vRack, vous devez effectuer cette
 
     ![add IP to vRack](images/vcd-link-ip-vrack-04.png){.thumbnail .w-640}
 
-## Aller plus loin
+6. Le bloc d’adresses IP publiques est désormais lié à votre vRack.
 
+    Pour rendre ces adresses utilisables dans votre environnement Public VCF as-a-Service, vous devez également déclarer la passerelle IP publique dans VMware Cloud Director (VCD).
+
+    Suivez le guide [Public VCF as-a-Service - Déclarer la passerelle IP publique dans VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_declare_public_gateway) pour finaliser cette étape.
+
+## Aller plus loin
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](/links/professional-services).
 
 Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud) dédié.
