@@ -27,7 +27,7 @@ This guide provides detailed steps to help you migrate from a third-party S3-com
     -	Your associated access and secret keys
     -   The associated region ID
 
--	An **OVHcloud virtual machine** with Rclone installed working ats the management workstation in our scenario. To get the best results, within your budget, we suggest at least the following specifications:
+-	An **OVHcloud virtual machine** with Rclone installed working as the management workstation in our scenario. To get the best results, within your budget, we suggest at least the following specifications:
     - b3-16: 4 v-cores and 16 GB of RAM
     - c3-16: 8 v-cores and 16 GB of RAM
 
@@ -74,7 +74,7 @@ After installing **Rclone** on your virtual machine, configure its connection to
 ```bash
 $ rclone config
 ```
-This command will open the configuration menu and will guide you step by step with the configuration. The OVHcloud provider configuration is available and will guide you step by step. Follow the steps available [here](https://rclone.org/s3/#ovhcloud){.external}.
+This command will open the configuration menu and will guide you step by step with the configuration. The official OVHcloud provider configuration is available and will guide you step by step. Follow the steps available [here](https://rclone.org/s3/#ovhcloud){.external}.
 You can also create/modify the configuration file by yourself with the following command:
 ```bash
 $ rclone config file
