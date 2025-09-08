@@ -33,7 +33,7 @@ Suite à cela, des informations relatives à l'adresse IP apparaîssent.
 >
 > Le contenu et la présentation des informations dans le résultat d'une requête WHOIS peuvent différer en fonction de l'adresse IP.
 
-Pour savoir si OVHcloud gère ou fourni l'adresse IP que vous avez renseignée dans le champ de saisie, recherchez parmi les informations indiquées des éléments relatifs à OVHcloud (par exemple: OVH-MNT; abuse@ovh.net; OVH SAS, 2 rue Kellermann, 59100 Roubaix, France; etc.)
+Pour savoir si OVHcloud gère ou fournit l'adresse IP que vous avez renseignée dans le champ de saisie, recherchez parmi les informations indiquées des éléments relatifs à OVHcloud (par exemple: OVH-MNT; OVH SAS, 2 rue Kellermann, 59100 Roubaix, France; etc.)
 
 Si tel est le cas, cela vous confirmera que l'adresse IP pour laquelle vous avez effectuée un WHOIS est bien gérée ou fournie par OVHcloud.
 
