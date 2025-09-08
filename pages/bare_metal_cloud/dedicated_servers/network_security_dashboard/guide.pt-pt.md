@@ -1,17 +1,12 @@
 ---
 title: "Monitorização dos ataques DDoS com o Network Security Dashboard"
 excerpt: "Saiba como navegar no Dashboard de Segurança da Rede"
-updated: 2025-06-04
+updated: 2025-09-08
 ---
 
 ## Objetivo
 
 Este guia explica o Dashboard de Segurança de Rede e fornece uma visão geral das medidas de combate desencadeadas pela nossa infraestrutura de proteção DDoS quando uma atividade de rede maliciosa é detetada. Pode encontrar detalhes sobre o desencadeado pelas proteções adicionais a implementar para manter os serviços atualizados e a funcionar. Além disso, o painel de controlo disponibiliza gráficos de tráfego para a limpeza dos períodos de atividade do centro, a fim de melhor visualizar a situação.
-
-> [!warning]
->
-> **Aviso** : a funcionalidade "Centro de Scrubbing: modo permanente" foi atingida o seu fim de vida útil (EOL) será definitivamente desativado em 8 de setembro de 2025.
->
 
 ## Requisitos
 
@@ -53,8 +48,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.actio
 As colunas correspondem ao estado de limpeza anti-DDoS (**Mitigação**), a Edge Network **Firewall** e a **GAME firewall** apresentam a disponibilidade e os estados.
 
 - O estado **Mitigação** pode ser:
-    - **Automático** - O centro de depuração está no modo **auto**. É o modo recomendado para utilizar e reencaminha o tráfego para uma análise mais aprofundada, quando necessário.
-    - **Permanente** - O centro de depuração está **ativado de forma permanente**. Não recomendamos que seja ativado permanentemente, a menos que seja observado um tremendo de latência devido ao reencaminhamento do tráfego para a frente e para trás.
+    - **Automático** - O centro de depuração está no modo **auto** e redireciona o tráfego para uma análise mais aprofundada, quando necessário.
     - **Forçado** - Indica que o centro de depuração está a decorrer **a efetuar uma ação** imediatamente.
 
 - A coluna **Firewall** indica o estado da Firewall Edge Network que pode ser:
