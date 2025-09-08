@@ -1,7 +1,7 @@
 ---
 title: AI Tools - Remote SSH Connection
-excerpt: Tutorial to configure Remote SSH Connection with AI Notebooks and AI Training
-updated: 2025-09-08
+excerpt: Learn how to configure a remote SSH connection with AI Notebooks and AI Training
+updated: 2025-09-09
 ---
 
 ## Objective
@@ -15,13 +15,15 @@ This tutorial covers the process of starting a job using a Visual Studio Code Re
 - An [AI user](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your computer
 
-## Installation
+## Instructions
+
+### Installation
 
 1. Install an [OpenSSH compatible SSH client](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client) if one is not already present.
 2. Install [Visual Studio Code](https://code.visualstudio.com/).
 3. Install the [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack).
 
-## Generate SSH Keypair
+### Generate an SSH Keypair
 
 If you don’t already have an SSH key, you will need to create one. To do so, open a Terminal / PowerShell, and run the key generation command:
 
@@ -30,22 +32,22 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 > [!primary]
-> - `-t ed25519` creates a modern, secure key (recommended).
 >
+> - `-t ed25519` creates a modern, secure key (recommended).
 > - `-C` lets you add a label (usually your email) to identify the key.
 
-This will create a private key (e.g., `id_ed25519`, to not share) and a public key (e.g., `id_ed25519.pub`) in your `~/.ssh/` directory.
+This will create a private key (e.g., `id_ed25519`, not to share) and a public key (e.g., `id_ed25519.pub`) in your `~/.ssh/` directory.
 
-## Specify SSH Key during AI Notebook or AI Training Job Creation
+### Specify the SSH Key during AI Notebook or AI Training Job Creation
 
-Here is how to add your SSH key to your AI Solution if you are using the UI [OVHcloud Control Panel](/links/manager) or the `ovhai` CLI:
+Here is how to add your SSH key to your AI Solution if you are using the [OVHcloud Control Panel](/links/manager) or the `ovhai` CLI:
 
 > [!tabs]
 > **Using the Control Panel (UI)**
 >>
 >> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 >>
->> Select your desired Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Notebooks`{.action} or `AI Training`{.action} section.
+>> Select your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Notebooks`{.action} or `AI Training`{.action} section.
 >>
 >> From there, click on the `+ Create a notebook`{.action} or `+ Launch a job`{.action} button to configure and create your AI Solution.
 >>
@@ -94,7 +96,7 @@ Once your job is created, regardless of the method chosen, you will be able to c
 > [!warning]
 > In order to work, the deployed image needs to contain the `bash` binary and a glibc-based Linux (Ubuntu / Debian).
 
-## Verify you can connect to the SSH host
+### Verify you can connect to the SSH host
 
 Before continuing, you can verify you can access your job by running the following command from a terminal / PowerShell window, replacing `<job-id>` with the ID of your job and `<region>` with your resource location (e.g., `gra`, `bhs`):
 
@@ -102,16 +104,16 @@ Before continuing, you can verify you can access your job by running the followi
 ssh <job-id>@<region>.ai.cloud.ovh.net
 ```
 
-If SSH key is well configured, you should see the following:
+If the SSH key is well configured, you should see the following:
 
 ```
 Welcome to OVHcloud!
 ovh@job-36ed1f18-626b-42f7-b15f-0ed844e65d20:~$
 ```
 
-## Configure VSCode Remote Connection
+### Configure VSCode Remote Connection
 
-On Visual Studio Code, click on the `Remote Explorer`{.action} icon.
+In Visual Studio Code, click on the `Remote Explorer`{.action} icon.
 
 ![image](images/vscode-1.png){.thumbnail}
 
@@ -136,11 +138,11 @@ Your resource should now appear in the SSH menu on the left. Connect to it by cl
 
 ![image](images/vscode-4.png){.thumbnail}
 
-If connection is well established, you should see this message in the bottom-left corner of VSCode:
+If the connection is well established, you should see this message in the bottom-left corner of VSCode:
 
 ![image](images/vscode-5.png){.thumbnail}
 
-## Develop and Run Your Code
+### Develop and Run Your Code
 
 Once connected, you can start developing and running your code in the default `/workspace` folder, by clicking on the `Open folder`{.action} blue button, and select `/workspace`.
 
