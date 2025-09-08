@@ -63,18 +63,21 @@ La liaison virtuelle est un tunnel L2 pour OVHcloud Connect L2. Seul un PoP/Entr
 
 La liaison virtuelle est un réseau IP à maillage complet entre tout PoP/EntryPoint et tout DC/EndPoint de la même région.
 
-## Régions accessibles par fournisseur de service
+## PoPs accessibles par fournisseur de service
 
-| Provider | Régions OVHcloud accessibles |
-| :--- | :--- |
-| **OVHcloud Connect Direct** | **Europe:** Lille, Paris, Frankfurt, Warsaw, Madrid, London. <br> **North America:** Montréal, Toronto, Washington (Ashburn), Seattle. <br> **APAC:** Mumbai, Singapore. |
-| **Equinix** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Toronto, Washington (Ashburn). <br> **APAC:** Singapore. |
-| **Megaport** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Washington (Ashburn). |
-| **Console Connect** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Montréal, Seattle, Toronto, Washington (Ashburn). <br> **APAC:** Singapore. |
-| **Digital Realty** | **Europe:** Paris, Madrid. <br> **North America:** Seattle. |
-| **InterCloud** | **Europe:** Paris. |
-| **Orange** | **Europe:** Paris. |
-| **RISQ** | **North America:** Montréal. |
+La liste disponible sur [ce lien de notre site web](https://www.ovhcloud.com/fr/network/ovhcloud-connect/#d%C3%A9couvrez_l'ensemble_de_nos_points_de_pr%C3%A9sence_(pop)_4cce6a22-5fcc-4bb2-9a78-6a45c03137fd) présente les PoPs d'OVHcloud accessibles via chacun de nos partenaires fournisseurs de services cloud.
+
+## Régions accessibles par PoP
+
+Lorsque vous établissez une connexion à OVHcloud Connect, votre trafic entre dans le réseau OVHcloud via un PoP spécifique. Chaque PoP est associé à une zone géographique, et les régions OVHcloud qui peuvent être atteintes depuis ce PoP sont limitées à la zone dans laquelle il se trouve. Selon le PoP que vous choisissez, seul un ensemble de régions prédéfini sera disponible pour l'interconnexion.
+
+Le tableau suivant répertorie les régions accessibles depuis chaque PoP :
+
+| Zone | PoPs OVHcloud Connect | Régions OVHcloud accessibles |
+| :--- | :--- | :--- |
+| **Europe** | &bull;Paris: Equinix - PA3, GlobalSwitch, Telehouse - TH2<br>&bull;Frankfurt: Equinix - FR5<br>&bull;London: Equinix - LD5, Telehouse - West<br>&bull;Madrid: Digital Realty - MAD2<br>&bull;Warsaw: Equinix - WA2<br>&bull;Lille: ETIX - ETX2 | &bull;Strasbourg (`eu-west-sbg`),<br>&bull;Gravelines (`eu-west-gra`),<br>&bull;Roubaix (`eu-west-rbx`),<br>&bull;Paris (`eu-west-par`),<br>&bull;Limburg (`eu-west-lim`),<br>&bull;Warsaw (`eu-central-waw`),<br>&bull;Erith (`eu-west-eri`) |
+| **North America** | &bull;Montreal: Cologix - MTL3<br>&bull;Toronto: Equinix - TR1 | &bull;Beauharnois (`ca-east-bhs`),<br>&bull;Toronto (`ca-east-tor`) |
+| **Asia-Pacific** | &bull;Singapore: Equinix - SG1<br>&bull;Mumbai: Equinix - MB2 | &bull;Singapore (`ap-southeast-sgp`),<br>&bull;Mumbai (`ap-south-mum`) |
 
 ## Aller plus loin
 

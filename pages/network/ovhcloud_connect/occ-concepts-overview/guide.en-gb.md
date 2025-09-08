@@ -34,7 +34,7 @@ Using BGP, you can interconnect your network through multiple Points-of-Presence
 
 ### PoP - EntryPoint
 
-Points of presence are facilities like Equinix, InterXion, Telehouse or Global Switch. The OVHcloud Connect service entry PoP is called *EntryPoint*.
+Points of Presence are facilities like Equinix, InterXion, Telehouse or Global Switch. The OVHcloud Connect service entry PoP is called *EntryPoint*.
 
 ### DC - EndPoint
 
@@ -66,28 +66,19 @@ The virtual link is a full mesh IP network between any PoP/*EntryPoint* and any 
 
 ## Accessible PoPs per provider
 
-The OVHcloud Points of Presence (PoPs) available through each of our cloud service provider partners are outlined in the following list:
-
-| Provider | OVHcloud Connect PoPs |
-| :--- | :--- |
-| **OVHcloud Connect Direct** | **Europe:** Lille (*ETIX - ETX2*), Paris (*Equinix - PA3, GlobalSwitch, Telehouse - TH2*), Frankfurt (*Equinix - FR5*), Warsaw (*Equinix - WA2*), Madrid (*Digital Realty - MAD2*), London (*Equinix - LD5, Telehouse - West*) <br> **North America:** Montreal (*Cologix - MTL3*), Toronto (*Equinix - TR1*), Washington (Ashburn) (*Equinix - DC10*), Seattle (*Westin Building - WBX*) <br> **APAC:** Mumbai (*Equinix - MB2*), Singapore (*Equinix - SG1*) |
-| **Console Connect** | **Europe:** Paris (*Equinix - PA3, Telehouse - TH2*), Frankfurt (*Equinix - FR5*), London (*Equinix - LD5*) <br> **North America:** Montreal (*Cologix - MTL3*), Seattle (*Westin Building - WBX*), Toronto (*Equinix - TR1*), Washington (Ashburn) (*Equinix - DC10*) <br> **APAC:** Singapore (*Equinix - SG1*) |
-| **Digital Realty** | **Europe:** Paris (*Telehouse - TH2*), Madrid (*Digital Realty - MAD2*) <br> **North America:** Seattle (*Westin Building - WBX*) |
-| **Equinix** | **Europe:** Paris (*Equinix - PA3*), Frankfurt (*Equinix - FR5*), London (*Equinix - LD5*) <br> **North America:** Toronto (*Equinix - TR1*), Washington (Ashburn) (*Equinix - DC10*) <br> **APAC:** Singapore (*Equinix - SG1*) |
-| **InterCloud** | **Europe:** Paris (*Equinix - PA3, GlobalSwitch, Telehouse - TH2*) |
-| **Megaport** | **Europe:** Paris (*Equinix - PA3*), Frankfurt (*Equinix - FR5*), London (*Equinix - LD5*) <br> **North America:** Washington (Ashburn) (*Equinix - DC10*) |
-| **Orange** | **Europe:** Paris (*Equinix - PA3, Telehouse - TH2*) |
-| **RISQ** | **North America:** Montreal (*Cologix - MTL3*) |
+The OVHcloud Points of Presence (PoPs) available through each of our cloud service provider partners are outlined in the list present at [this link on our website](https://www.ovhcloud.com/en/network/ovhcloud-connect/#d%C3%A9couvrez_l'ensemble_de_nos_points_de_pr%C3%A9sence_(pop)_4cce6a22-5fcc-4bb2-9a78-6a45c03137fd).
 
 ## Accessible Regions per PoP
 
-For a given PoP, OCC can be connected to specific regions. Here is the list of connectable regions depending on the selected PoP:
+When you establish a connection to OVHcloud Connect, your traffic enters the OVHcloud network through a specific PoP. Each PoP is associated with a geographic zone, and the OVHcloud regions that can be reached from that PoP are limited to the zone in which it is located. Depending on the PoP you select, only a defined set of regions will be available for interconnection.
 
-| OVHcloud Connect PoPs | Accessible OVHcloud Regions |
-| :--- | :--- |
-| **Europe**<br>Paris: Equinix - PA3, GlobalSwitch, Telehouse - TH2<br>Frankfurt: Equinix - FR5<br>London: Equinix - LD5, Telehouse - West<br>Madrid: Digital Realty - MAD2<br>Warsaw: Equinix - WA2<br>Lille: ETIX - ETX2 | **Europe**<br>Strasbourg (`eu-west-sbg`),<br>Gravelines (`eu-west-gra`),<br>Roubaix (`eu-west-rbx`),<br>Paris (`eu-west-par`),<br>Limburg (`eu-west-lim`),<br>Warsaw (`eu-central-waw`),<br>Erith (`eu-west-eri`) |
-| **North America**<br>Montreal: Cologix - MTL3<br>Toronto: Equinix - TR1 | **North America**<br>Beauharnois (`ca-east-bhs`),<br>Toronto (`ca-east-tor`) |
-| **Asia-Pacific**<br>Singapore: Equinix - SG1<br>Mumbai: Equinix - MB2 | **Asia-Pacific**<br>Singapore (`ap-southeast-sgp`),<br>Mumbai (`ap-south-mum`) |
+The following table lists regions that can be accessed from each PoP location:
+
+| Zone | OVHcloud Connect PoPs | Accessible OVHcloud Regions |
+| :--- | :--- | :--- |
+| **Europe** | &bull;Paris: Equinix - PA3, GlobalSwitch, Telehouse - TH2<br>&bull;Frankfurt: Equinix - FR5<br>&bull;London: Equinix - LD5, Telehouse - West<br>&bull;Madrid: Digital Realty - MAD2<br>&bull;Warsaw: Equinix - WA2<br>&bull;Lille: ETIX - ETX2 | &bull;Strasbourg (`eu-west-sbg`),<br>&bull;Gravelines (`eu-west-gra`),<br>&bull;Roubaix (`eu-west-rbx`),<br>&bull;Paris (`eu-west-par`),<br>&bull;Limburg (`eu-west-lim`),<br>&bull;Warsaw (`eu-central-waw`),<br>&bull;Erith (`eu-west-eri`) |
+| **North America** | &bull;Montreal: Cologix - MTL3<br>&bull;Toronto: Equinix - TR1 | &bull;Beauharnois (`ca-east-bhs`),<br>&bull;Toronto (`ca-east-tor`) |
+| **Asia-Pacific** | &bull;Singapore: Equinix - SG1<br>&bull;Mumbai: Equinix - MB2 | &bull;Singapore (`ap-southeast-sgp`),<br>&bull;Mumbai (`ap-south-mum`) |
 
 ## Go further
 
