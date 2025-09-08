@@ -1,7 +1,7 @@
 ---
 title: 'Lecture et filtrage des logs NSX-T'
 excerpt: 'Découvrez comment accéder aux journaux du pare-feu NSX-T et les filtrer afin de résoudre les problèmes de trafic bloqué sur votre Hosted Private Cloud.'
-updated: 2025-08-25
+updated: 2025-09-08
 ---
 
 ## Objectif
@@ -72,6 +72,43 @@ En fonction de votre outil :
 ```bash
 grep "DROP" nsx-logs.log | awk '{print $1, $3, $5, $7}'
 ```
+### Avancé : Améliorer la lisibilité dans Graylog
+
+Pour rendre les journaux de pare-feu NSX-T plus faciles à lire et plus proches de la simplicité du format NSX-V, vous pouvez configurer des extracteurs et des tableaux de bord dans Graylog :
+
+1. **Créer un flux d’entrée dédié**
+
+Configurez un flux Graylog pour capturer uniquement les journaux de pare-feu NSX-T (`facility=local6` et `comp="nsx-edge"`) afin de les isoler des autres messages système.
+
+2. **Normaliser les horodatages et les hôtes**
+
+Utilisez des extracteurs Graylog pour nettoyer le format brut des journaux syslog, en conservant uniquement l’horodatage de l’événement (par ex. : `2024-03-18T06:29:50.837Z`) et le nom d’hôte source (par ex. : `edge27-857b.rbx1a.pcc.ovh.net`).
+
+3. **Analyser l’action du pare-feu et l’ID de règle**
+
+Appliquez un extracteur Grok ou regex pour découper des entrées comme `INET TERM PASS 2025 OUT TCP` en champs structurés :
+
+    - `Action = PASS / DROP`
+    - `Rule ID = 2025`
+    - `Direction = OUT`
+    - `Protocol = TCP`
+
+4. **Extraire les champs source et destination** 
+
+Analysez les adresses IP et ports (par ex. : `10.216.242.234/61790 -> 10.216.240.19/3128`) en champs Graylog structurés :
+
+    - `src_ip`, `src_port`
+    - `dst_ip`, `dst_port`
+
+5. **Supprimer les métadonnées inutiles**
+
+Retirez les attributs verbeux tels que `[nsx@6876 comp="nsx-edge" ...]` qui n’apportent aucune valeur pour le dépannage. Cela permet d’alléger les journaux et de les rendre plus lisibles.
+
+6. **Créer une vue/console simplifiée des journaux**
+
+Créez un tableau de bord Graylog affichant uniquement les champs essentiels (Date, Action, Rule ID, Source, Destination, Protocol).
+
+    Cela reproduit la clarté des journaux NSX-V et accélère le dépannage.
 
 ## Aller plus loin
 
