@@ -77,7 +77,7 @@ Après avoir installé **Rclone** sur votre machine virtuelle, configurez sa con
 ```bash
 $ rclone config
 ```
-Cette commande ouvrira le menu de configuration et vous guidera étape par étape pour la configuration. La configuration du fournisseur OVHcloud est disponible et vous guidera étape par étape. Suivez les étapes disponibles [ici](https://rclone.org/s3/#ovhcloud){.external}. Vous pouvez également créer/modifier le fichier de configuration vous-même avec la commande suivante :
+Cette commande ouvrira le menu de configuration et vous guidera étape par étape pour la configuration. Le provider officiel OVHcloud est disponible et vous guidera étape par étape, pour le consulter c'est [ici](https://rclone.org/s3/#ovhcloud){.external}. Vous pouvez également créer/modifier le fichier de configuration vous-même avec la commande suivante :
 
 ```bash
 $ rclone config file
