@@ -33,10 +33,10 @@ Lors de la création d’une instance Public Cloud, vous pouvez choisir entre un
 ### Depuis l'espace client OVHcloud
 
 > [!warning]
-> La procédure suivante ne fonctionne pas pour les instances de troisième génération (exemple : B3-32). Pour être facturé mensuellement pour ce type d’instance, vous devez créer un [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/save_plans) pour ce modèle d’instance.
+> La procédure suivante ne fonctionne pas pour les instances de troisième génération (exemple : B3-32). Pour être facturé mensuellement pour ce type d’instance, vous devez créer un [Savings Plans](/pages/public_cloud/public_cloud_cross_functional/savings_plans) pour ce modèle d’instance.
 >
 
-Dans [votre espace client](/links/manaer), cliquez sur `Public cloud`{.action}, choisissez le projet Public cloud concerné puis cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
+Dans [votre espace client](/links/manager), cliquez sur `Public cloud`{.action}, choisissez le projet Public cloud concerné puis cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
 
 ![Modifier le mode de calcul des factures](images/switch_to_monthly_updated.png){.thumbnail}
 

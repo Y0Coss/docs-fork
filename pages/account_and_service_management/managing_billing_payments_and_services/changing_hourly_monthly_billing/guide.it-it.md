@@ -31,7 +31,7 @@ Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o m
 ### Dallo Spazio Cliente OVHcloud
 
 > [!warning]
-> La procedura seguente non funziona per le istanze di terza generazione (esempio: B3-32). Per essere fatturati mensilmente per questo tipo di istanza, è necessario creare un [Savings Plan](/pages/public_cloud/public_cloud_cross_functional/save_plans) per questo modello di istanza.
+> La procedura seguente non funziona per le istanze di terza generazione (esempio: B3-32). Per essere fatturati mensilmente per questo tipo di istanza, è necessario creare un [Savings Plans](/pages/public_cloud/public_cloud_cross_functional/savings_plans) per questo modello di istanza.
 >
 
 Nello [Spazio Cliente](/links/manager) seleziona l’istanza per la quale desideri modificare la modalità di fatturazione e clicca sui tre puntini a destra per aprire il relativo menu opzioni. A questo punto clicca sul pulsante `Passa al forfait mensile`{.action}:
