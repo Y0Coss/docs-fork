@@ -25,7 +25,7 @@ Sur la page qui s'affiche, renseignez dans le champ de saisie l'adresse IPv4 (pa
 
 ![ICANN Lookup tool](/pages/assets/screens/other/web-tools/icann/launch-research.png){.thumbnail}
 
-Une fois l'adresse IP renseignée, cliquez sur le bouton bleu `Lookup`.
+Une fois l'adresse IP renseignée, cliquez sur le bouton bleu `Lookup`{.action}.
 
 Suite à cela, des informations relatives à l'adresse IP apparaîssent.
 
