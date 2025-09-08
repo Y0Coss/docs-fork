@@ -1,7 +1,7 @@
 ---
-title: AI Training - Tutorial - Connect to VSCode via Remote
-excerpt: Tutorial to configure Remote Visual Studio with AI Training
-updated: 2025-09-05
+title: AI Tools - Remote SSH Connection
+excerpt: Tutorial to configure Remote SSH Connection with AI Notebooks and AI Training
+updated: 2025-09-08
 ---
 
 ## Objective
