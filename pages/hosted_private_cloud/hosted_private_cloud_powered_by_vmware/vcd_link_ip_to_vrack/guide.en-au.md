@@ -43,6 +43,12 @@ This IP block is not directly linked to your vRack. You will need to link it man
 
     ![add IP to vRack](images/vcd-link-ip-vrack-04.png){.thumbnail .w-640}
 
+6. The public IP block is now linked to your vRack.
+
+    To make these addresses usable inside your Public VCF as-a-Service environment, you also need to declare the public gateway in VMware Cloud Director (VCD).
+
+    Follow the guide [Public VCF as-a-Service - Declare the public IP gateway in VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_declare_public_gateway) to complete this step.
+
 ## Go further
 
 If you need training or technical assistance to implement our solutions, please contact your Technical Account Manager or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.

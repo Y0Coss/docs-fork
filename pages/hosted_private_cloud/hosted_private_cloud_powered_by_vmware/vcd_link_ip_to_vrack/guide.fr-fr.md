@@ -45,9 +45,9 @@ Ce bloc IP n'est pas directement lié à votre vRack, vous devez effectuer cette
 
 6. Le bloc d’adresses IP publiques est désormais lié à votre vRack.
 
-Pour rendre ces adresses utilisables dans votre environnement Public VCF as-a-Service, vous devez également déclarer la passerelle IP publique dans VMware Cloud Director (VCD).
+    Pour rendre ces adresses utilisables dans votre environnement Public VCF as-a-Service, vous devez également déclarer la passerelle IP publique dans VMware Cloud Director (VCD).
 
-Suivez le guide [Public VCF as-a-Service - Déclarer la passerelle IP publique dans VCD](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_declare_public_gateway/) pour finaliser cette étape.
+    Suivez le guide [Public VCF as-a-Service - Déclarer la passerelle IP publique dans VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_declare_public_gateway) pour finaliser cette étape.
 
 ## Aller plus loin
 
