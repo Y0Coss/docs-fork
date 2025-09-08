@@ -61,7 +61,7 @@ Clique nas guias abaixo para exibir sucessivamente cada uma das **4** etapas.
 >>
 > **Etapa 3**
 >>
->> Na página que se abrir, clique no separador `FTP - SSH`{.action}. 
+>> Na página que se abrir, clique no separador `FTP - SSH`{.action}.
 >>
 >> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
 >>
@@ -75,9 +75,9 @@ Clique nas guias abaixo para exibir sucessivamente cada uma das **4** etapas.
 >>
 >> Se o acesso SSH do utilizador em questão estiver `Desativado` na tabela, efetue as seguintes operações:
 >>
->> - 1 : Clique no botão `...`{.action} à direita da linha correspondente ao utilizador, e depois em `Alterar`{.action}.
->> - 2 : Na janela que se abrir, na secção `Protocolos de ligação`, selecione a escolha `FTP, SFTP e SSH`{.action} e, em seguida, clique em `Seguinte`{.action}.
->> - 3 : Verifique o resumo da modificação solicitada e clique em `Validar`{.action}.
+>> - 1: Clique no botão `...`{.action} à direita da linha correspondente ao utilizador, e depois em `Alterar`{.action}.
+>> - 2: Na janela que se abrir, na secção `Protocolos de ligação`, selecione a escolha `FTP, SFTP e SSH`{.action} e, em seguida, clique em `Seguinte`{.action}.
+>> - 3: Verifique o resumo da modificação solicitada e clique em `Validar`{.action}.
 >>
 >> > Se não conseguir proceder à ativação, certifique-se de que a [oferta de alojamento web da OVHcloud](/links/web/hosting) beneficia de um acesso SSH.
 
@@ -131,7 +131,7 @@ Existem duas possibilidades de acesso ao alojamento web através de SSH.
 
 > [!warning]
 >
-> Não existe acesso « super utilizador » (ou « root ») via SSH nas nossas ofertas de alojamento partilhado.
+> Não existe acesso "super utilizador" (ou "root") via SSH nas nossas ofertas de alojamento partilhado.
 
 Uma vez aberto o terminal, utilize o comando seguinte, substituindo os elementos `yourlogin`, `ssh.clusterXXX.hosting.ovh.net` e `22` pelos elementos que correspondem aos seus dados SSH.
 
@@ -149,10 +149,10 @@ Após o envio do comando, deverá introduzir a palavra-passe do utilizador SSH.
 
 Depois de o software (por exemplo, PuTTY) estar aberto, introduza as informações de ligação SSH. Como esta operação é inerente ao programa, não podemos descrever todos os casos neste guia. A seguir, apresentamos a informação que lhe será solicitada:
 
-- **Servidor SSH**: Indique o endereço do servidor SSH indicado na [parte 2](#sshlogin). Em função do programa utilizado, a denominação pode ser semelhante a: « Endereço do servidor », « Nome do host », ou ainda « Host Name ».
+- **Servidor SSH**: Indique o endereço do servidor SSH indicado na [parte 2](#sshlogin). Em função do programa utilizado, a denominação pode ser semelhante a: "Endereço do servidor", "Nome do host", ou ainda "Host Name".
 - **Porta de ligação**: Indique a porta de ligação SSH recuperada na [parte 2](#sshlogin).
-- **Login SSH**: Indique o utilizador SSH. Em função do programa utilizado, a denominação pode assemelhar-se « Nome de utilizador », « Identificador », « Login » ou ainda « » Username.
-- **Palavra-passe do utilizador SSH**: Indique a palavra-passe associada ao login SSH.<br><br><br> Dependendo do programa que estiver a utilizar, o nome de utilizador poderá também ser semelhante « Password ».
+- **Login SSH**: Indique o utilizador SSH. Em função do programa utilizado, a denominação pode assemelhar-se "Nome de utilizador", "Identificador", "Login" ou ainda "Username".
+- **Palavra-passe do utilizador SSH**: Indique a palavra-passe associada ao login SSH.<br><br> Dependendo do programa que estiver a utilizar, o nome de utilizador poderá também ser semelhante "Password".
 
 ///
 
@@ -182,24 +182,24 @@ Também pode lançar um script utilizando uma versão específica de PHP. Por ex
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Em função da versão de PHP que deseja utilizar, é possível que o ambiente de execução tenha de ser modificado por razões de compatibilidade. Consulte a documentação « [Alojamento web - Ambiente, versão PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting) » para obter mais informações.
+Em função da versão de PHP que deseja utilizar, é possível que o ambiente de execução tenha de ser modificado por razões de compatibilidade. Consulte a documentação "[Alojamento web - Ambiente, versão PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)" para obter mais informações.
 
 > [!primary]
 >
 > Também é possível copiar ficheiros e/ou pastas com o **S**ecure **C**opy **P**rotocol (**SCP**).
 > Este protocolo utiliza o protocolo SSH para duplicar conteúdo de forma segura entre:
 >
-> - Computador/Dispositivo Local e Servidor Remoto
+> - um computador/dispositivo local e um servidor remoto
 > - dois servidores remotos
 >
-> Encontre mais informações sobre a utilização do comando `scp` com os nossos alojamentos web OVHcloud no nosso guia « [Alojamento Web - Copiar ficheiros com o comando SCP](/pages/web_cloud/web_hosting/using-scp-command) ».
+> Encontre mais informações sobre a utilização do comando `scp` com os nossos alojamentos web OVHcloud no nosso guia "[Alojamento Web - Copiar ficheiros com o comando SCP](/pages/web_cloud/web_hosting/using-scp-command)".
 
 ## Quer saber mais?
 
 [Alojamento web - Ambiente, versão PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community). 
+Fale com a nossa [comunidade de utilizadores](/links/community).

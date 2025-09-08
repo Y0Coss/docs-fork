@@ -151,8 +151,8 @@ Una volta aperto il software (PuTTY ad esempio), inserisci le informazioni di co
 
 - **Server SSH**: Indica l’indirizzo del server SSH recuperato nella [parte 2](#sshlogin). In base al client utilizzato, potrebbe chiamarsi: "Indirizzo del server", "Hostname" o "Host Name".
 - **Porta di connessione**: inserisci la porta di connessione SSH recuperata nella [parte 2](#sshlogin).
-- **Login SSH**: Inserisci l’utente SSH. In base al client utilizzato, potrebbe chiamarsi "Nome utente", "Identificativo", "Login" oppure "Username".
-- **Password utente SSH**: Inserisci la password associata al login SSH.<br><br><br> A seconda del software utilizzato, il suo nome può anche assomigliare a "Password".
+- **Login SSH**: Inserisci l’utente SSH. In base al client utilizzato, potrebbe chiamarsi: "Nome utente", "Identificativo", "Login" oppure "Username".
+- **Password utente SSH**: Inserisci la password associata al login SSH.
 
 ///
 
@@ -198,7 +198,7 @@ In base alla versione di PHP che vuoi utilizzare, potrebbe essere necessario mod
 
 [Hosting Web - Ambiente, versione PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 

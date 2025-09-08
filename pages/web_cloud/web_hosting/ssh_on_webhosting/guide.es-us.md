@@ -110,9 +110,9 @@ Haga clic en las fichas siguientes para ver cada uno de los **4** pasos.
 >>
 >> |Elemento|Descripción|
 >> |---|---|
->> |**Dirección del servidor SSH**| Indique `Servidor SSH`. Se presenta en la forma `ssh.clusterXXX.hosting.ovh.net` (donde cada uno de los 3 `X` corresponde a un número comprendido entre `0` y `9`).|
->> |**Puerto de conexión al servidor SSH**| Consulte `Puerto SSH`. Por defecto, el número de puerto SSH es el `22`.|
->> |**Usuario SSH activo**| En la columna `Usuario` de la parte inferior de la página, consulte la tabla.<br>Le recordamos que este usuario debe [disponer de acceso SSH activo](#user-ssh-enablement).|
+>> |**Dirección del servidor SSH**| Encontrará la mención `Servidor SSH`. Se presenta en la forma `ssh.clusterXXX.hosting.ovh.net` (donde cada uno de los 3 `X` corresponde a un número comprendido entre `0` y `9`).|
+>> |**Puerto de conexión al servidor SSH**| Encontrará la mención `Puerto SSH`. Por defecto, el número de puerto SSH es el `22`.|
+>> |**Usuario SSH activo**| En la tabla de la parte inferior de la página, puede consultarlo en la columna `Usuario`.<br>Le recordamos que este usuario debe [disponer de acceso SSH activo](#user-ssh-enablement).|
 >> |**Contraseña del usuario SSH**| Si ha olvidado la contraseña, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al usuario y seleccione `Cambiar la contraseña`{.action}.|
 
 ### 3 - Conéctese por SSH al espacio de almacenamiento de su alojamiento web
@@ -151,7 +151,7 @@ Una vez abierto el programa (PuTTY, por ejemplo), introduzca los datos de conexi
 
 - **Servidor SSH**: indique la dirección del servidor SSH recuperada en la [parte 2](#sshlogin). Según el programa utilizado, la denominación puede ser similar a: «Dirección del servidor», «Nombre del host» o incluso «Host Name».
 - **Puerto de conexión**: Introduzca el puerto de conexión SSH recuperado en la [parte 2](#sshlogin).
-- **Usuario SSH**: Introduzca el usuario SSH. Según el programa utilizado, la denominación puede asemejarse a «Nombre de usuario», «Identificador», «Usuario» o incluso «Username».
+- **Usuario SSH**: Introduzca el usuario SSH. Según el programa utilizado, la denominación puede asemejarse a: «Nombre de usuario», «Identificador», «Usuario» o incluso «Username».
 - **Contraseña del usuario SSH**: Indique la contraseña asociada al usuario SSH.<br><br> Según el programa utilizado, su denominación puede parecerse a la de «Password».
 
 ///
@@ -160,7 +160,7 @@ Una vez que se haya conectado, vaya al siguiente apartado.
 
 ### 4 - Interactúe por SSH con su espacio de almacenamiento <a name="ssh-using"></a>
 
-Para interactuar con su espacio de almacenamiento, debe utilizar comandos. Estos tienen un significado directo del inglés. Si lo necesita, puede consultar la lista que aparece a continuación. Atención: **Esta no es exhaustiva**.
+Para interactuar con su espacio de almacenamiento, debe utilizar comandos. Estos tienen un significado directo del inglés. Si lo necesita, puede consultar la lista que aparece a continuación. Atención: **esta no es exhaustiva**.
 
 |Comando|Significado en inglés|Descripción| 
 |---|---|---|

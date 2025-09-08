@@ -26,7 +26,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW OVHcloud](/links/web/hosting) z dostępem przez protokół SSH.
+- Posiad(/linanie [hostingu WWW OVHcloud]ks/web/hosting) z dostępem przez protokół SSH.
 - Mieć dostęp do [panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 > [!warning]
@@ -75,9 +75,9 @@ Kliknij poniższe zakładki, aby wyświetlić kolejne **4** etapy.
 >>
 >> Jeśli dostęp przez SSH dla danego użytkownika to `Wyłączona` w tabeli, wykonaj następujące czynności:
 >>
->> - 1 : Kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego użytkownikowi, a następnie `Zmodyfikuj`{.action}.
->> - 2 : W oknie, które się wyświetli, wybierz `Protokoły logowania`, wybierz opcję `FTP, SFTP i SSH`{.action}, następnie kliknij `Dalej`{.action}.
->> - 3 : Sprawdź podsumowanie żądanej zmiany, następnie kliknij `Zatwierdź`{.action}.
+>> - 1: Kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego użytkownikowi, a następnie `Zmodyfikuj`{.action}.
+>> - 2: W oknie, które się wyświetli, wybierz `Protokoły logowania`, wybierz opcję `FTP, SFTP i SSH`{.action}, następnie kliknij `Dalej`{.action}.
+>> - 3: Sprawdź podsumowanie żądanej zmiany, następnie kliknij `Zatwierdź`{.action}.
 >>
 >> > Jeśli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa WWW OVHcloud](/links/web/hosting) posiada dostęp przez protokół SSH.
 
@@ -147,7 +147,7 @@ Po wysłaniu zamówienia zostaniesz poproszony o wprowadzenie hasła użytkownik
 
 /// details | Za pomocą programu
 
-Po otwarciu danego oprogramowania (np. PuTTY), wpisz dane do logowania SSH. Ponieważ operacja ta jest nieodłącznie związana z tym oprogramowaniem, nie możemy opisać jej szczegółowo w niniejszej dokumentacji. Przypomnienie informacji, które należy w nim wprowadzić:
+Po otwarciu danego oprogramowania (na przykład PuTTY), wpisz dane do logowania SSH. Ponieważ operacja ta jest nieodłącznie związana z tym oprogramowaniem, nie możemy opisać jej szczegółowo w niniejszej dokumentacji. Przypomnienie informacji, które należy w nim wprowadzić:
 
 - **Serwer SSH**: Podaj pobrany adres serwera SSH w [część 2](#sshlogin). W zależności od użytego oprogramowania, może być on nazwany "Adres serwera", "Nazwa hosta" albo "Host Name".
 - **Port połączenia**: Wpisz port połączenia SSH pobrany w [część 2](#sshlogin).
@@ -192,13 +192,13 @@ W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniow
 > - lokalny komputer/urządzenie i zdalny serwer
 > - dwa zdalne serwery
 >
-> Więcej informacji na temat korzystania z komendy `scp` z naszym hostingiem OVHcloud znajdziesz w naszym przewodniku "[Hosting WWW - Kopiowanie plików za pomocą polecenia SCP](/pages/web_cloud/web_hosting/using-scp-command) ".
+> Więcej informacji na temat korzystania z komendy `scp` z naszym hostingiem OVHcloud znajdziesz w naszym przewodniku "[Hosting WWW - Kopiowanie plików za pomocą polecenia SCP](/pages/web_cloud/web_hosting/using-scp-command)".
 
 ## Sprawdź również
 
 [Hosting WWW - Środowisko, wersja PHP, .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 

@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-Les offres d'hébergement web OVHcloud vous donnent accès à un espace de stockage permettant la mise en ligne des fichiers de vos sites internet ou de vos applications. L'accès à cet espace est possible via des identifiants FTP ou SSH.
+Les offres d'hébergement web OVHcloud vous donnent accès à un espace de stockage permettant la mise en ligne des fichiers de vos sites Internet ou de vos applications. L'accès à cet espace est possible via des identifiants FTP ou SSH.
 
 **Découvrez comment vous connecter et utiliser l'accès SSH de votre hébergement web OVHcloud.**
 
@@ -42,7 +42,7 @@ Pour vous connecter et utiliser l'accès SSH de votre hébergement web, vous aur
 - l'adresse du serveur SSH de votre hébergement web ;
 - le port de connexion au serveur SSH de votre hébergement web.
 
-### 1 - Assurz-vous que l'accès SSH est actif pour l'utilisateur SSH choisi <a name="user-ssh-enablement"></a>
+### 1 - Assurez-vous que l'accès SSH est actif pour l'utilisateur SSH choisi <a name="user-ssh-enablement"></a>
 
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
@@ -151,7 +151,7 @@ Une fois le logiciel (PuTTY par exemple) ouvert, renseignez les informations de 
 
 - **Serveur SSH**: Indiquez l'adresse de serveur SSH récupérée dans la [partie 2](#sshlogin). Selon le logiciel utilisé, la dénomination peut ressembler à : « Adresse de serveur », « Nom d'hôte », ou encore « Host Name ».
 - **Port de connexion**: Renseignez le port de connexion SSH récupéré dans la [partie 2](#sshlogin).
-- **Login SSH**: Renseignez l'utilisateur SSH. Selon le logiciel utilisé, la dénomination peut ressembler à « Nom d'utilisateur », « Identifiant », « Login » ou encore « Username ».
+- **Login SSH**: Renseignez l'utilisateur SSH. Selon le logiciel utilisé, la dénomination peut ressembler à : « Nom d'utilisateur », « Identifiant », « Login » ou encore « Username ».
 - **Mot de passe de l'utilisateur SSH**: Indiquez le mot de passe associé au login SSH.<br><br> Selon le logiciel utilisé, sa dénomination peut également ressembler à « Password ».
 
 ///
@@ -198,7 +198,7 @@ Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnem
 
 [Hébergement web : environnement, version PHP, « .ovhconfig »](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
