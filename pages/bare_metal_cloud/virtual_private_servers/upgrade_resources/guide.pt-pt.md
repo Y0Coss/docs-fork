@@ -87,9 +87,9 @@ Sim. Após as atualizações, terá sempre acesso aos seus backups e snapshots.
 
 ///
 
-/// detalhes O que acontece à licença de software no VPS antigo? Posso migrá-la automaticamente para o novo VPS?
+/// details | O que acontece à licença de software no VPS antigo? Posso migrá-la automaticamente para o novo VPS?
 
-Se possui uma licença ativa, esta ficará associada ao VPS. O preço pode mudar com base no contrato de licença ou nos requisitos do fornecedor.
+Se possui uma licença ativa, esta ficará associada ao VPS. O preço pode mudar com base no contrato de licença ou nos requisitos do fornecedor.  
 Se forem feitas alterações na licença, estas serão explicadas antes da atualização do VPS.
 
 ///
@@ -100,7 +100,7 @@ Em certos casos, o débito pode mudar, nomeadamente durante a passagem de um VPS
 
 ///
 
-/// detalhes Essa atualização será imediata ou terei tempo de usar as duas ao mesmo tempo (configurar, transferir dados, etc.)?
+/// details | Essa atualização será imediata ou terei tempo de usar as duas ao mesmo tempo (configurar, transferir dados, etc.)?
 
 A atualização ficará efetiva imediatamente, mantendo todos os seus dados. A atualização alocará mais recursos ao seu VPS existente.
 

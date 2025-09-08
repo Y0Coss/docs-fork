@@ -89,7 +89,7 @@ Sí. Tras las actualizaciones, seguirá teniendo acceso a sus copias de segurida
 
 /// details | ¿Qué ocurre con la licencia de software en el VPS antiguo? ¿Puedo moverla automáticamente al nuevo VPS?
 
-Si tiene una licencia activa, permanecerá asociada al VPS. El precio puede cambiar en función del acuerdo de licencia o los requisitos del proveedor.
+Si tiene una licencia activa, permanecerá asociada al VPS. El precio puede cambiar en función del acuerdo de licencia o los requisitos del proveedor.  
 Si se realizan cambios en la licencia, estos se explicarán antes de actualizar el VPS.
 
 ///

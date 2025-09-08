@@ -69,38 +69,38 @@ Consulta la nostra guida dedicata agli step seguenti: [Come ripartire un VPS dop
 
 ## FAQ
 
-/// dettagli | Manterrò lo stesso indirizzo IP?
+/// details | Manterrò lo stesso indirizzo IP?
 
 Sì, dopo l’aggiornamento del VPS manterrai lo stesso indirizzo IP.
 
 ///
 
-/// dettagli | I tuoi dati saranno conservati sul server?
+/// details | I tuoi dati saranno conservati sul server?
 
 Sì, dopo l'aggiornamento i dati saranno conservati. Quando si esegue l'aggiornamento del disco, potrebbe essere necessario estendere le partizioni.
 
 ///
 
-/// dettagli | Cosa succede al backup/snapshot? È possibile utilizzarlo sul nuovo VPS?
+/// details | Cosa succede al backup/snapshot? È possibile utilizzarlo sul nuovo VPS?
 
 Sì. Dopo gli aggiornamenti, avrai sempre accesso ai tuoi backup e Snapshot.
 
 ///
 
-/// dettagli | Cosa succede alla licenza software sul vecchio VPS? È possibile spostarla automaticamente sul nuovo VPS?
+/// details | Cosa succede alla licenza software sul vecchio VPS? È possibile spostarla automaticamente sul nuovo VPS?
 
-Se disponi di una licenza attiva, resterà associata al VPS. Il prezzo può variare in base al contratto di licenza o ai requisiti del fornitore.
+Se disponi di una licenza attiva, resterà associata al VPS. Il prezzo può variare in base al contratto di licenza o ai requisiti del fornitore.  
 Le eventuali modifiche apportate alla licenza verranno spiegate prima dell’aggiornamento del VPS.
 
 ///
 
-/// dettagli | La velocità cambia?
+/// details | La velocità cambia?
 
 In alcuni casi la velocità può cambiare, in particolare quando si passa da un VPS di livello inferiore a quello superiore.
 
 ///
 
-/// dettagli | L'aggiornamento sarebbe immediato o avrei tempo di utilizzare entrambi contemporaneamente (configurazione, trasferimento dei dati, ecc.)?
+/// details | L'aggiornamento sarebbe immediato o avrei tempo di utilizzare entrambi contemporaneamente (configurazione, trasferimento dei dati, ecc.)?
 
 L'aggiornamento sarà effettivo immediatamente, conservando tutti i dati. L’aggiornamento assegnerà più risorse al VPS esistente.
 

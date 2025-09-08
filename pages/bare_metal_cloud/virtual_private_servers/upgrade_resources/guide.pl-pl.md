@@ -89,7 +89,7 @@ Tak. Po uaktualnieniach nadal będziesz mieć dostęp do kopii zapasowych i snap
 
 /// details | Co się stanie z licencją na oprogramowanie na starym serwerze VPS? Czy mogę automatycznie przenieść ją na nowy VPS?
 
-Jeśli posiadasz aktywną licencję, pozostanie ona przypisana do serwera VPS. Cena może ulec zmianie w zależności od umowy licencyjnej lub wymagań dostawcy.
+Jeśli posiadasz aktywną licencję, pozostanie ona przypisana do serwera VPS. Cena może ulec zmianie w zależności od umowy licencyjnej lub wymagań dostawcy.  
 Jeśli w licencji zostaną wprowadzone zmiany, zostaną one wyjaśnione przed przeprowadzeniem aktualizacji serwera VPS.
 
 ///

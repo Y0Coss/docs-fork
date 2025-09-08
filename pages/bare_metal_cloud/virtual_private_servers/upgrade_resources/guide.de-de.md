@@ -6,11 +6,11 @@ updated: 2025-09-05
 
 <style> details>summary { color:rgb(33, 153, 232) !important; cursor: pointer; } details>summary::before { content:'\25B6'; padding-right:1ch; } details[open]>summary::before { content:'\25BC'; } </style>
 
+## Ziel
+
 Unsere VPS-Dienste bieten Flexibilität, Zuverlässigkeit und Leistung für verschiedene Hosting-Anforderungen. Sie können Upgrades Ihres Arbeitsspeichers, vCPU oder Speicherplatzes direkt im [OVHcloud Kundencenter](/links/manager) durchführen.
 
 **Diese Anleitung erklärt, wie Sie Ihrem VPS vCores, Speicherplatz und Arbeitsspeicher hinzufügen.** 
-
-## Ziel
 
 ## Voraussetzungen
 
