@@ -1,7 +1,7 @@
 ---
 title: "How can I find out if my IP address is managed by OVHcloud?"
 excerpt: "Find out how to determine if an IP address is managed, provided and/or associated with an OVHcloud service, via the ICANN website"
-updated: 2025-09-08
+updated: 2025-09-09
 ---
 
 ## Objective

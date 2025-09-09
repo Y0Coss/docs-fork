@@ -1,7 +1,7 @@
 ---
 title: "Comment savoir si mon adresse IP est gérée par OVHcloud ?"
 excerpt: "Découvrez comment déterminer si une adresse IP est gérée, fournie et / ou associée à un service OVHcloud via le site de l'ICANN"
-updated: 2025-09-08
+updated: 2025-09-09
 ---
 
 ## Objectif

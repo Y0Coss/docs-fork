@@ -1,7 +1,7 @@
 ---
 title: "Wie kann ich feststellen, ob meine IP-Adresse von OVHcloud verwaltet wird?"
 excerpt: "Erfahren Sie, wie Sie mit der ICANN-Website prüfen, ob eine IP-Adresse von OVHcloud bereitgestellt wird oder mit einem OVHcloud Dienst verbunden ist"
-updated: 2025-09-08
+updated: 2025-09-09
 ---
 
 ## Ziel
