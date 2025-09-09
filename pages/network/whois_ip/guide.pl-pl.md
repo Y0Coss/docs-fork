@@ -1,7 +1,7 @@
 ---
 title: "Jak sprawdzić, czy mój adres IP jest zarządzany przez OVHcloud?"
-excerpt: "Dowiedz się, jak ustalić, czy adres IP jest zarządzany, dostarczany i/lub przypisany do usługi OVHcloud, za pośrednictwem strony ICANN"
-updated: 2025-01-28
+excerpt: "Dowiedz się, jak ustalić, czy adres IP jest zarządzany, dostarczany i/lub przypisany do usługi OVHcloud za pośrednictwem strony ICANN"
+updated: 2025-09-08
 ---
 
 ## Wprowadzenie
@@ -35,16 +35,16 @@ Następnie pojawiają się informacje dotyczące adresu IP.
 >
 > Zawartość i prezentacja informacji w wyniku zapytania WHOIS mogą się różnić w zależności od adresu IP.
 
-Aby dowiedzieć się, czy OVHcloud zarządza adresem IP podanym przez Ciebie w polu wprowadzania danych, zapoznaj się z informacjami zawartymi we wskazanych przez Ciebie elementach odnoszących się do OVHcloud (na przykład: OVH-MNT; OVH SAS, 2 rue Kellermann, 59100 Roubaix, France; etc.)
+Aby dowiedzieć się, czy OVHcloud zarządza adresem IP podanym przez Ciebie w polu wprowadzania danych, zapoznaj się z informacjami zawartymi we wskazanych przez Ciebie elementach odnoszących się do OVHcloud (na przykład: OVH-MNT; OVH SAS, 2 rue Kellermann, 59100 Roubaix, France; itp.).
 
 Jeśli tak jest, potwierdza to, że adres IP, dla którego wpisałeś dane WHOIS jest dobrze zarządzany lub dostarczany przez OVHcloud.
 
 W razie potrzeby wyszukaj wśród wyświetlanych informacji elementy związane z "abonentem" (właścicielem adresu IP), aby odnaleźć menedżera lub dostawcę adresu IP.
 
 ## Sprawdź również
- 
+
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
- 
+
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
- 
+
 Dołącz do [grona naszych użytkowników](/links/community).

@@ -1,13 +1,13 @@
 ---
 title: "Comment savoir si mon adresse IP est gérée par OVHcloud ?"
-excerpt: "Découvrez comment déterminer si une adresse IP est gérée, fournie et / ou associée à un service OVHcloud, via le site de l'ICANN"
+excerpt: "Découvrez comment déterminer si une adresse IP est gérée, fournie et / ou associée à un service OVHcloud via le site de l'ICANN"
 updated: 2025-09-08
 ---
 
 ## Objectif
 
-- Vous souhaitez savoir si une adresse IP est gérée ou fournie par OVHcloud ? 
-- Votre nom de domaine pointe vers une adresse IP et vous souhaitez savoir si celle-ci est gérée ou fournie par OVHcloud ? 
+- Vous souhaitez savoir si une adresse IP est gérée ou fournie par OVHcloud ?
+- Votre nom de domaine pointe vers une adresse IP et vous souhaitez savoir si celle-ci est gérée ou fournie par OVHcloud ?
 - Vous souhaitez retrouver le fournisseur qui héberge votre site web via son adresse IP ?
 
 Pour savoir qui gère ou fournit une adresse IP spécifique, vous devrez effectuer une requête WHOIS (abréviation de l'anglais « Who is ? ») sur celle-ci.
@@ -35,11 +35,11 @@ Suite à cela, des informations relatives à l'adresse IP apparaissent.
 >
 > Le contenu et la présentation des informations dans le résultat d'une requête WHOIS peuvent différer en fonction de l'adresse IP.
 
-Pour savoir si OVHcloud gère ou fournit l'adresse IP que vous avez renseignée dans le champ de saisie, recherchez parmi les informations indiquées des éléments relatifs à OVHcloud (par exemple: OVH-MNT; OVH SAS, 2 rue Kellermann, 59100 Roubaix, France; etc.)
+Pour savoir si OVHcloud gère ou fournit l'adresse IP que vous avez renseignée dans le champ de saisie, recherchez parmi les informations indiquées des éléments relatifs à OVHcloud (par exemple: OVH-MNT; OVH SAS, 2 rue Kellermann, 59100 Roubaix, France; etc.).
 
-Si tel est le cas, cela vous confirmera que l'adresse IP pour laquelle vous avez effectuée un WHOIS est bien gérée ou fournie par OVHcloud.
+Si tel est le cas, cela vous confirmera que l'adresse IP pour laquelle vous avez effectué un WHOIS est bien gérée ou fournie par OVHcloud.
 
-Le cas échéant, recherchez parmi les informations affichées des éléments relatifs au "registrant" (titulaire de l'adresse IP) afin de retrouver le gestionnaire ou le fournisseur de votre adresse IP.
+Le cas échéant, recherchez parmi les informations affichées des éléments relatifs au "registrant" (titulaire de l'adresse IP) afin de retrouver le gestionnaire et le fournisseur de votre adresse IP.
 
 ## Aller plus loin
 

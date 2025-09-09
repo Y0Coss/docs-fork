@@ -1,6 +1,6 @@
 ---
 title: "Como saber se o meu endereço IP é gerido pela OVHcloud?"
-excerpt: "Saiba como determinar se um endereço IP é gerido, fornecido e/ou associado a um serviço OVHcloud, através do site do ICANN"
+excerpt: "Saiba como determinar se um endereço IP é gerido, fornecido e/ou associado a um serviço OVHcloud através do site do ICANN"
 updated: 2025-09-08
 ---
 
@@ -10,7 +10,7 @@ updated: 2025-09-08
 - O seu domínio aponta para um endereço IP e deseja saber se este é gerido ou fornecido pela OVHcloud?
 - Deseja encontrar o fornecedor que aloja o seu website através do seu endereço IP?
 
-Para saber quem gere ou fornece um endereço IP específico, deverá efetuar um pedido WHOIS (abreviação do inglês « Who is? ») no mesmo.
+Para saber quem gere ou fornece um endereço IP específico, deverá efetuar um pedido WHOIS (abreviação do inglês "Who is?") no mesmo.
 
 **Descubra como saber se um endereço IP é gerido, fornecido e/ou associado a um serviço OVHcloud.**
 
@@ -35,7 +35,7 @@ Isto fará com que sejam apresentadas informações de endereço IP.
 >
 > O conteúdo e a apresentação das informações no resultado de um pedido WHOIS podem diferir em função do endereço IP.
 
-Para saber se a OVHcloud gere ou fornece o endereço IP que indicou no campo de entrada, procure, entre as informações indicadas, elementos relativos à OVHcloud (por exemplo: OVH-MNT; OVH SAS, 2 rue Kellermann, 59100 Roubaix, France; etc.)
+Para saber se a OVHcloud gere ou fornece o endereço IP que indicou no campo de entrada, procure, entre as informações indicadas, elementos relativos à OVHcloud (por exemplo: OVH-MNT; OVH SAS, 2 rue Kellermann, 59100 Roubaix, France; etc.).
 
 Se for o caso, isso irá confirmar que o endereço IP para o qual efetuou um WHOIS é corretamente gerido ou fornecido pela OVHcloud.
 
@@ -43,8 +43,8 @@ Se necessário, procure nas informações apresentadas elementos relativos ao "r
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community). 
+Fale com a nossa [comunidade de utilizadores](/links/community).
