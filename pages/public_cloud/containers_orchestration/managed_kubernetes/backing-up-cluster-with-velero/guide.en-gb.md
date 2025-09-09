@@ -143,7 +143,7 @@ We strongly recommend that you use an [official release of Velero](https://githu
 
 Install Velero, including all prerequisites, into the cluster and start the deployment. This will create a namespace called `velero`, and place a deployment named `velero` in it.
 
-Example (for [velero v1.16.2](https://github.com/vmware-tanzu/velero/releases/tag/v1.16.2):
+Example for [velero v1.16.2](https://github.com/vmware-tanzu/velero/releases/tag/v1.16.2):
 
 ```bash
 velero install \
@@ -441,7 +441,7 @@ total 20K
 drwx------ 2 root root 16K Aug 27 15:51 lost+found
 ```
 
-Check that the webserver responds as expected
+Check that the webserver responds as expected:
 
 ```bash
 kubectl -n nginx-example port-forward svc/nginx-service 8080:80 > /dev/null&
@@ -492,7 +492,7 @@ Verify that the restore is correctly done:
 kubectl get all -n nginx-example
 ```
 
-Check that the webserver responds as expected
+Check that the webserver responds as expected:
 
 ```bash
 kubectl -n nginx-example port-forward svc/nginx-service 8080:80 > /dev/null&
