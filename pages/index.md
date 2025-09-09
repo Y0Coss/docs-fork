@@ -273,7 +273,7 @@
         + [Network and IP management](bare-metal-cloud-virtual-private-servers-network-and-ip-management)
             + [Configuring IPv6 on a VPS](bare_metal_cloud/virtual_private_servers/configure-ipv6)
             + [How to configure reverse DNS for your server (PTR record)](bare_metal_cloud/virtual_private_servers/configuring-reverse-dns)
-            + [Configuring IP aliasing](bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing)
+            + [How to configure IP aliasing](bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing)
             + [Configuring OVHcloud Secondary DNS on a VPS](bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps)
         + [Troubleshooting](bare-metal-cloud-virtual-private-servers-troubleshooting)
             + [Checking the file system on a VPS](bare_metal_cloud/virtual_private_servers/check-filesystem)
