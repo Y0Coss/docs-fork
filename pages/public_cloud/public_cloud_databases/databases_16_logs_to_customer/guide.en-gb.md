@@ -25,9 +25,15 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 #### Retrieve your LDP destination `streamId`:
 
-- In the OVHcloud Control Panel, go to your LDP page.
-- Go to the `Data stream` tab.
-- Choose your target stream and click on `Copy stream ID`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Identity, Security & Operations`{.action} section. In the left-hand menu, select `Logs Data Platform`{.action} then click on the relevant LDP instance.
+
+![LDP list page](images/ldp_page.png)
+
+Go to the `Data stream` tab.
+
+![LDP details page](images/ldp_page_details.png)
+
+Choose your target stream and click on `Copy stream ID`{.action}.
 
 #### Retrieve your LDP destination `serviceName`:
 
@@ -35,12 +41,24 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 #### Retrieve your `clusterId`:
 
-- In the OVHcloud Control Panel, go to your database.
-- You can see the field `Cluster ID`.
+Log in to the [OVHcloud Control Panel](/links/manager), open the `Public Cloud`{.action} section and select the Public Cloud project concerned. In the left-hand menu, click on `Databases`{.action}, then choose the database instance you want to manage.
+
+In the cluster details, you can find the `Service ID` field, which corresponds to the cluster ID.
+
+![LDP database details](images/ldp_database_details.png)
 
 ### Step 2 - Create your subscription
 
-Use the following API call:
+1. Start by retrieving the types of logs available for your database cluster with the following API call:
+
+> [!api]
+>
+> @api {v1} /cloud GET  /cloud/project/{serviceName}/database/{engine}/{clusterId}/log/kind
+>
+
+This will return the list of valid kind values you can use when subscribing to logs.
+
+2. Once you know the valid kind, use it to subscribe to a log stream with this API call:
 
 > [!api]
 >
@@ -49,9 +67,11 @@ Use the following API call:
 
 ```console
 body : {
-    streamId: <LDP destination stream ID>
+    kind: <log_type_from_previous_call>
+    streamId: <your_stream_id>
 }
 ```
+
 Then logs will start to be forwarded to your LDP stream.
 
 ### Find logs in Graylog
