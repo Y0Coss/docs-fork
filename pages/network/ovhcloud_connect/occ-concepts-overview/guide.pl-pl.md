@@ -1,7 +1,7 @@
 ---
 title: Concepts overview
 excerpt: 'Concepts overview - OVHcloud Connect'
-updated: 2025-09-04
+updated: 2025-09-09
 ---
 
 ## What is OVHcloud Connect?
@@ -34,7 +34,7 @@ Using BGP, you can interconnect your network through multiple Points-of-Presence
 
 ### PoP - EntryPoint
 
-Points of presence are facilities like Equinix, InterXion, Telehouse or Global Switch. The OVHcloud Connect service entry PoP is called *EntryPoint*.
+Points of Presence are facilities like Equinix, InterXion, Telehouse or Global Switch. The OVHcloud Connect service entry PoP is called *EntryPoint*.
 
 ### DC - EndPoint
 
@@ -64,18 +64,21 @@ The virtual link is a L2 tunnel for OVHcloud Connect L2. Only one PoP/*EntryPoin
 
 The virtual link is a full mesh IP network between any PoP/*EntryPoint* and any DC/*EndPoint* of the same region.
 
-## Accessible Regions per provider
+## Accessible PoPs per provider
 
-| Provider | Accessible OVHcloud Regions |
-| :--- | :--- |
-| **OVHcloud Connect Direct** | **Europe:** Lille, Paris, Frankfurt, Warsaw, Madrid, London. <br> **North America:** Montreal, Toronto, Washington (Ashburn), Seattle. <br> **APAC:** Mumbai, Singapore. |
-| **Equinix** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Toronto, Washington (Ashburn). <br> **APAC:** Singapore. |
-| **Megaport** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Washington (Ashburn). |
-| **Console Connect** | **Europe:** Paris, Frankfurt, London. <br> **North America:** Montreal, Seattle, Toronto, Washington (Ashburn). <br> **APAC:** Singapore. |
-| **Digital Realty** | **Europe:** Paris, Madrid. <br> **North America:** Seattle. |
-| **InterCloud** | **Europe:** Paris. |
-| **Orange** | **Europe:** Paris. |
-| **RISQ** | **North America:** Montreal. |
+The OVHcloud Points of Presence (PoPs) available through each of our cloud service provider partners are outlined in the list present at [this link on our website](/links/network/ovhcloud-connect).
+
+## Accessible Regions per PoP
+
+When you establish a connection to OVHcloud Connect, your traffic enters the OVHcloud network through a specific PoP. Each PoP is associated with a geographic zone, and the OVHcloud regions that can be reached from that PoP are limited to the zone in which it is located. Depending on the PoP you select, only a defined set of regions will be available for interconnection.
+
+The following table lists regions that can be accessed from each PoP location:
+
+| Zone | OVHcloud Connect PoPs | Accessible OVHcloud Regions |
+| :--- | :--- | :--- |
+| **Europe** | &bull;Paris: Equinix - PA3, GlobalSwitch, Telehouse - TH2<br>&bull;Frankfurt: Equinix - FR5<br>&bull;London: Equinix - LD5, Telehouse - West<br>&bull;Madrid: Digital Realty - MAD2<br>&bull;Warsaw: Equinix - WA2<br>&bull;Lille: ETIX - ETX2 | &bull;Strasbourg (`eu-west-sbg`),<br>&bull;Gravelines (`eu-west-gra`),<br>&bull;Roubaix (`eu-west-rbx`),<br>&bull;Paris (`eu-west-par`),<br>&bull;Limburg (`eu-west-lim`),<br>&bull;Warsaw (`eu-central-waw`),<br>&bull;Erith (`eu-west-eri`) |
+| **North America** | &bull;Montreal: Cologix - MTL3<br>&bull;Toronto: Equinix - TR1 | &bull;Beauharnois (`ca-east-bhs`),<br>&bull;Toronto (`ca-east-tor`) |
+| **Asia-Pacific** | &bull;Singapore: Equinix - SG1<br>&bull;Mumbai: Equinix - MB2 | &bull;Singapore (`ap-southeast-sgp`),<br>&bull;Mumbai (`ap-south-mum`) |
 
 ## Go further
 
