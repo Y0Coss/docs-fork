@@ -270,7 +270,7 @@
             + [Managing a legacy VPS](bare_metal_cloud/virtual_private_servers/vps_legacy_control_panel)
             + [End of Plesk and cPanel support for VPS - Ensure continuity of your services](bare_metal_cloud/virtual_private_servers/eos-cpanel-plesk)
         + [Backup options](bare-metal-cloud-virtual-private-servers-backups)
-            + [Using snapshots on a VPS](bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps)
+            + [How to use snapshots on a VPS](bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps)
             + [How to use automated backups on a VPS](bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
             + [How to configure an additional disk](bare_metal_cloud/virtual_private_servers/config_additional_disk)
             + [How to increase the size of an additional disk](bare_metal_cloud/virtual_private_servers/increase_additional_disk)
