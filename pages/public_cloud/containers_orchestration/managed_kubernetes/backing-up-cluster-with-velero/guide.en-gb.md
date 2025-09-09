@@ -1,7 +1,7 @@
 ---
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
-updated: 2025-09-04
+updated: 2025-09-09
 ---
 
 ## Objective
@@ -140,7 +140,7 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 
 > [!primary]
 >
-> Starting with version 1.14 the plugin-for-csi is integrated in Velero. You can simply remove it from the install example if you install version 1.14 or newer. For upgrading an older version follow the upgrade notes: [Upgrade-to-1.17](https://velero.io/docs/v1.17/upgrade-to-1.17/).
+> Starting with version 1.14 the plugin-for-csi is integrated in Velero. You can simply remove it from the install example if you install version 1.14 or newer. For upgrading an older version, follow the upgrade notes: [Upgrade-to-1.17](https://velero.io/docs/v1.17/upgrade-to-1.17/).
 >
 > Please refer to those links to check Velero's plugins comptability: [velero-plugin-for-aws](https://github.com/vmware-tanzu/velero-plugin-for-aws?tab=readme-ov-file#compatibility) and [velero-plugin-for-csi](https://github.com/vmware-tanzu/velero-plugin-for-csi?tab=readme-ov-file#compatibility).
 >

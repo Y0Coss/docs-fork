@@ -1,7 +1,7 @@
 ---
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
-updated: 2025-03-07
+updated: 2025-09-09
 ---
 
 ## Objective
@@ -141,7 +141,9 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 > [!primary]
 >
 > Starting with version 1.14 the plugin-for-csi is integrated in Velero. You can simply remove it from the install example if you install version 1.14 or newer. For upgrading an older version follow the upgrade notes: [Upgrade-to-1.17](https://velero.io/docs/v1.17/upgrade-to-1.17/).
+>
 > Please refer to those links to check Velero's plugins comptability: [velero-plugin-for-aws](https://github.com/vmware-tanzu/velero-plugin-for-aws?tab=readme-ov-file#compatibility) and [velero-plugin-for-csi](https://github.com/vmware-tanzu/velero-plugin-for-csi?tab=readme-ov-file#compatibility).
+>
 
 Example for 1.13 and older:
 
@@ -157,6 +159,11 @@ velero install \
 ```
 
 Example for 1.14 and newer:
+
+> [!primary]
+>
+> Starting with Velero 1.14, the CSI plugin is included by default. It is no longer necessary to add it explicitly in the velero install command. This simplifies the command, so only the cloud provider plugin (e.g., AWS) needs to be specified.
+>
 
 ```bash
 velero install \
@@ -296,8 +303,13 @@ kubectl get pod -n nginx-example
 
 Create a backup of the namespace:
 
+> [!primary]
+>
+> Since Velero 1.14, CSI VolumeSnapshots are used by default for Persistent Volumes. The `--snapshot-move-data` flag is no longer required for CSI-backed volumes and can be safely omitted. It is only needed for non-CSI volumes backed up with Restic.
+>
+
 ```bash
-velero backup create nginx-backup --include-namespaces nginx-example --snapshot-move-data
+velero backup create nginx-backup --include-namespaces nginx-example
 ```
 
 Verify that the backup is done:
@@ -342,7 +354,7 @@ NAME                                READY   STATUS    RESTARTS   AGE
 nginx-deployment-9d6cbcc65-5ss7j    1/1     Running   0          21s
 nginx-deployment-9d6cbcc65-dqvvn    1/1     Running   0          21s
 
-$ velero backup create nginx-backup --include-namespaces nginx-example --snapshot-move-data
+$ velero backup create nginx-backup --include-namespaces nginx-example
 
 Backup request "nginx-backup" submitted successfully.
 Run `velero backup describe nginx-backup` or `velero backup logs nginx-backup` for more details.
@@ -397,6 +409,13 @@ kubectl delete namespace nginx-example
 ```
 
 ### Verifying Velero is working with Persistent Volumes
+
+> [!primary]
+>
+> **Node Agents (Restic):** Node agents are mainly used for file-level backups or for Persistent Volumes that are **not managed by CSI**.
+> 
+> For Persistent Volumes managed via CSI (as with OVHcloud Managed Kubernetes), CSI VolumeSnapshots are the recommended method. In this case, there is **no need to deploy Node Agents**, as backups and restores are handled natively by the CSI snapshot mechanism.
+>
 
 To verify that Velero is working correctly with Volume Snapshots of Persistent Volumes, let's test with one example deployment:
 
@@ -550,8 +569,13 @@ xx.xx.xx.xx - - [17/Jun/2024:10:23:43 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/8
 
 Now we can ask velero to do the backup of the namespace:
 
+> [!primary]
+>
+> **Reminder:** `--snapshot-move-data` is not needed for CSI-backed volumes. It has been removed from the command below.
+>
+
 ```bash
-velero backup create nginx-backup-with-pv --include-namespaces nginx-example --wait --snapshot-move-data
+velero backup create nginx-backup-with-pv --include-namespaces nginx-example --wait
 ```
 
 Check the backup has finished successfully:
@@ -602,7 +626,7 @@ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.lo
 You should have a result like this:
 
 ```console
-$ velero backup create nginx-backup-with-pv --include-namespaces nginx-example --wait --snapshot-move-data
+$ velero backup create nginx-backup-with-pv --include-namespaces nginx-example --wait
 
 Backup request "nginx-backup-with-pv" submitted successfully.
 Waiting for backup to complete. You may safely press ctrl-c to stop waiting - your backup will continue in the background.
