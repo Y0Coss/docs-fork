@@ -1,8 +1,22 @@
 ---
 title: 'Configure access control using OVHcloud IAM on an OVHcloud Managed Private Registry'
 excerpt: 'Learn how to enable and manage OVHcloud IAM authentication to control access to your Managed Private Registry (MPR) using centralized identities and roles.'
-updated: 2025-07-21
+updated: 2025-09-10
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
@@ -34,21 +48,63 @@ By integrating IAM with your registry, you ensure consistent access control acro
 > When you enable OVHcloud IAM authentication on your Managed Private Registry:
 > 
 > - All existing Harbor users and robot accounts will be removed.
-> - Existing robot accounts will continue to function, but you will no longer be able to create or manage them directly in Harbor.
-> - From this point on, access is fully managed via OVHcloud IAM users and roles.
+> - Existing robot accounts remain functional.
+> - New robot accounts can still be created and managed, but only via OVHcloud IAM.
+> - From this point on, all access (users and robot accounts) is managed through OVHcloud IAM roles and policies.
 >
 
-Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, and select the relevant project. Then, in the left-hand menu under **Containers & Orchestration**, click on `Managed Private Registry`{.action}.
+> [!tabs]
+> Via the OVHcloud Control Panel
+>> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, and select the relevant project. Then, in the left-hand menu under **Containers & Orchestration**, click on `Managed Private Registry`{.action}.
+>>
+>> In the list of registries, click the `...`{.action} button for the relevant registry, then select:
+>>
+>> - `Activate authentication via OVHcloud IAM`{.action} to enable it.
+>>
+>> ![activate IAM](images/activate_iam.png){.thumbnail}
+>>
+>> - `Disable authentication via OVHcloud IAM`{.action} to disable it.
+>>
+>> ![disable IAM](images/disable_iam.png){.thumbnail}
+>>
+> Via the OVHcloud API
+>> /// details | Enable IAM authentication
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/containerRegistry/{registryID}/iam
+>> >
+>>
+>> ///
+>>
+>> /// details | Disable IAM authentication
+>>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/containerRegistry/{registryID}/iam
+>> >
+>>
+>> ///
+>>
+>> Replace:
+>>
+>> - `serviceName` with the ID of your Public Cloud project.
+>> - `registryID` with the ID of the Managed Private Registry.
+>>
+>> You can retrieve the `registryID` in two ways:
+>>
+>> - **Via API:**
+>> 
+>> > [!api]
+>> >
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/containerRegistry
+>> >
+>>
+>> - **Via the OVHcloud Control Panel:**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager), navigate to the `Public Cloud`{.action} section, and select the relevant project. Then, in the left-hand menu under **Containers & Orchestration**, click on `Managed Private Registry`{.action}.
+>>
 
-In the list of registries, click the `...`{.action} button on the relevant line, then choose:
-
-- `Activate authentication via OVHcloud IAM`{.action} to enable it.
-
-![activate IAM](images/activate_iam.png){.thumbnail}
-
-- `Disable authentication via OVHcloud IAM`{.action} to disable it.
-
-![diasable IAM](images/disable_iam.png){.thumbnail}
 
 ### Authentication using SSO with OVHcloud IAM users
 
@@ -82,13 +138,13 @@ OVHcloud IAM provides two predefined roles for managing access to your Managed P
 >
 > **Admin** role: Regardless of the user group defined in the Identities section, assigning the Admin role will grant full administrative privileges on the selected registry.
 > 
-> **Standard** role: Make sure users assigned to the Standard role do not belong to the Default group in the `Identities` section. This group has elevated rights by default (including admin-level access with limited capabilities, such as no user creation). To ensure clean separation of roles, we recommend:
+> **Standard** role: Be aware that users belonging to the Default group in the Identities section automatically inherit admin privileges on the registry. Assigning them the Standard role will not override these inherited rights. To ensure proper separation of roles, we recommend:
 > 
 > - Organizing users into clearly defined groups.
-> - After changing a user’s group and assigning the Standard role, fine-tune their permissions directly in Harbor for better control and consistency. See the different roles in Harbor [here.](https://goharbor.io/docs/1.10/administration/managing-users/user-permissions-by-role/){.external}
+> - After changing a user’s group and assigning the Standard role, fine-tune their permissions directly in Harbor for better control and consistency. See the different roles in Harbor [here](https://goharbor.io/docs/1.10/administration/managing-users/user-permissions-by-role/){.external}.
 >
 
-These roles are assigned through IAM policies. To create and configure a policy: pour configurer une policy, navigate to the `Identity, Security & Operations`{.action} sectiont. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click on `Create a policy`{.action} button.
+These roles are assigned through IAM policies. To create and configure a policy, navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click on `Create a policy`{.action} button.
 
 In the OVHcloud Control Panel, go to the `Identity, Security & Operations`{.action} section. In the left-hand menu, under `Identity and Access Management`, click on `Policies`{.action} and `Create a policy`{.action}.
 
