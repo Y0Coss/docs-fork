@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la gestion du compte OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur la gestion du compte OVHcloud
-updated: 2025-09-08
+updated: 2025-09-09
 ---
 
 <style>
@@ -103,7 +103,6 @@ Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut 
 
 ///
 
-
 /// details | Comment désactiver la double authentification (2FA) sur mon compte OVHcloud ?
 
 Si votre périphérique (téléphone mobile / smartphone / clé de sécurité) utilisé pour la double authentification est perdu, volé ou ne fonctionne plus, vous pouvez :
@@ -167,6 +166,14 @@ Pour mieux connaître les impacts du règlement général sur la protection des 
 
 ///
 
+/// details | Puis-je changer manuellement mon identifiant client ? J'aimerais d'autres lettres ou chiffres.
+
+L'identifiant client ne peut pas être modififé car il est lié aux informations fournies lors de la création de votre compte OVHcloud. Les deux premières lettres correspondent généralement aux initiales du nom de l'administrateur, tandis que les chiffres suivants sont générés aléatoirement.
+
+Sachez que vous avez néanmoins la possibilité de [créer un nouveau compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation). Cependant, vous devrez ensuitetransférer manuellement tous vos services vers le nouveau compte en suivant le [processus de changement de contacts](/pages/account_and_service_management/account_information/managing_contacts).
+
+///
+
 /// details | Comment supprimer mon compte OVHcloud ?
 
 La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
@@ -182,6 +189,18 @@ Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer vot
 2. Cliquez sur le bouton `Créer un ticket`{.action}.
 3. Sélectionnez le motif `Gérez votre compte client OVHcloud`{.action}.
 4. Précisez `Je veux fermer mon compte client OVHcloud`{.action} et suivez les étapes décrites.
+
+///
+
+### Gérer ses notifications et ses logs
+
+/// details | Est-ce que je peux recevoir toutes les notifications d’OVHcloud sur plusieurs adresses e-mail ?
+
+Malheureusement, il n'est pas possible d'envoyer des e-mails de communication à plusieurs adresses.
+
+Depuis votre [espace client OVHcloud](/links/manager), vous pouvez cependant configurer une adresse e-mail de secours qui ne sera pas utilisée pour les copies de toutes nos communications (renouvellements, suppressions de services, etc.).
+
+Cette adresse e-mail de secours est utile en cas de perte d'accès à votre adresse e-mail principale, car cela vous empêcherait de vous connecter à votre espace client OVHcloud.
 
 ///
 

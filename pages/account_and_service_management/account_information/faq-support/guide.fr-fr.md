@@ -1,7 +1,7 @@
 ---
 title: FAQ sur le support OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur le support OVHcloud
-updated: 2025-09-08
+updated: 2025-09-09
 ---
 
 <style>
@@ -59,7 +59,6 @@ Vous pouvez également vous abonner à l'une des pages « *status » pour recevo
 Par exemple, sur la page [Web Cloud Status](https://web-cloud.status-ovhcloud.com/), cliquez sur `Subscribe to updates`{.action}.
 
 ///
-
 
 ### Contacter le support
 
@@ -156,6 +155,10 @@ Cliquez sur [ce lien](https://help.ovhcloud.com/csm?id=csm_get_help) pour vous c
 Une fois identifié, vos tickets d'assistance les plus récents sont affichés. Cliquez sur l'icône de filtre au-dessus de la liste de vos tickets.
 
 Vous pouvez alors cliquer sur le bouton `Tout effacer`{.action} pour réinitialiser toutes les conditions de filtre et ainsi consulter d'anciens tickets fermés.
+
+> [!success]
+> Une fois toutes les conditions de filtres effacées, cliquez sur la colonne `Mis à jour`{.action} pour trier vos tickets par date de mise à jour.
+>
 
 ///
 
