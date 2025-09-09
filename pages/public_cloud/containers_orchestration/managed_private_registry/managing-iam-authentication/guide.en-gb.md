@@ -20,37 +20,40 @@ details[open]>summary::before {
 
 ## Objective
 
-OVHcloud Managed Private Registry (MPR) supports authentication through OVHcloud IAM, allowing you to manage access using centralized user identities and roles. This guide explains how to enable IAM authentication and control user access to your registry using OVHcloud IAM users and roles.
+OVHcloud Managed Private Registry (MPR) supports authentication through OVHcloud IAM, allowing you to manage access using centralized user identities and roles.
+
+This guide explains how to enable IAM authentication and control user access to your registry using OVHcloud IAM users and roles.
 
 ## Requirements
 
-- An OVHcloud Managed Private Registry (see the [creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) guide for more information)
-- An access to the Harbor UI to operate the private registry (see the [connecting to the UI](/pages/public_cloud/containers_orchestration/managed_private_registry/connecting-to-the-ui) guide for more information)
+- An OVHcloud Managed Private Registry (see the [creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) guide for more information).
+- An access to the Harbor UI to operate the private registry (see the [connecting to the UI](/pages/public_cloud/containers_orchestration/managed_private_registry/connecting-to-the-ui) guide for more information).
 
 ## Instructions
 
 ### Introduction to OVHcloud IAM
 
-OVHcloud IAM (Identity and Access Management) is a centralized system that lets you manage who can access your OVHcloud services and what they are allowed to do. It provides fine-grained access control through users, groups, and roles.
+OVHcloud IAM (Identity and Access Management) is a centralized system that lets you manage who can access your OVHcloud services and what they are allowed to do. It provides fine-grained access control through users, groups and roles.
 
 When used with Managed Private Registry (MPR), OVHcloud IAM replaces Harbor’s local user database. This enables you to:
 
-- Use SSO (Single Sign-On) with your OVHcloud credentials to access Harbor.
-- Assign predefined IAM roles (admin, standard) to control access levels.
-- Manage permissions at scale using IAM groups and projects.
+- use SSO (Single Sign-On) with your OVHcloud credentials to access Harbor.
+- assign predefined IAM roles (admin, standard) to control access levels.
+- manage permissions at scale using IAM groups and projects.
 
 By integrating IAM with your registry, you ensure consistent access control across your OVHcloud services — reducing manual management and improving security.
 
-### Activate/Disable authentication via OVHcloud IAM
+### Activate/disable authentication via OVHcloud IAM
 
 > [!warning]
 >
 > When you enable OVHcloud IAM authentication on your Managed Private Registry:
 > 
-> - All existing Harbor users will be removed.
-> - Existing robot accounts remain functional.
-> - New robot accounts can still be created and managed.
-> - From this point on, all users access are managed through OVHcloud IAM roles and policies.
+> - all existing Harbor users will be removed.
+> - existing robot accounts remain functional.
+> - new robot accounts can still be created and managed.
+> 
+> From this point on, all users access are managed through OVHcloud IAM roles and policies.
 >
 
 > [!tabs]
@@ -144,9 +147,7 @@ OVHcloud IAM provides two predefined roles for managing access to your Managed P
 > - After changing a user’s group and assigning the Standard role, fine-tune their permissions directly in Harbor for better control and consistency. See the different roles in Harbor [here](https://goharbor.io/docs/1.10/administration/managing-users/user-permissions-by-role/){.external}.
 >
 
-These roles are assigned through IAM policies. To create and configure a policy, navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click on `Create a policy`{.action} button.
-
-In the OVHcloud Control Panel, go to the `Identity, Security & Operations`{.action} section. In the left-hand menu, under `Identity and Access Management`, click on `Policies`{.action} and `Create a policy`{.action}.
+These roles are assigned through IAM policies. To create and configure a policy, log in to the [OVHcloud Control Panel](/links/manager) and navigate to the `Identity, Security & Operations`{.action} section. Then, in the left-hand menu under **Identity and Access management**, click on `Policies`{.action} and click the `Create a policy`{.action} button.
 
 ![Create policy](images/managing_iam.png){.thumbnail}
 
@@ -154,7 +155,10 @@ Define users and groups, name your policy, add the users you want to include and
 
 ![Create policy users](images/create_policy.png){.thumbnail width="700"}
 
-Set permissions for MPR, in the `Product types` section, select `Public Cloud Project/Managed Registry`. In `Resources`, choose the specific MPR instance to which the policy will apply.
+Set permissions for MPR: 
+
+- In the `Product types` section, select `Public Cloud Project/Managed Registry`.
+- In the `Resources` section, choose the specific MPR instance to which the policy will apply.
 
 ![Create policy product types](images/create_policy_product_types.png){.thumbnail}
 
