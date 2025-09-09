@@ -1,7 +1,7 @@
 ---
 title: Concepts overview
 excerpt: 'Concepts overview - OVHcloud Connect'
-updated: 2025-09-04
+updated: 2025-09-09
 ---
 
 ## What is OVHcloud Connect?
@@ -66,7 +66,7 @@ The virtual link is a full mesh IP network between any PoP/*EntryPoint* and any 
 
 ## Accessible PoPs per provider
 
-The OVHcloud Points of Presence (PoPs) available through each of our cloud service provider partners are outlined in the list present at [this link on our website](https://www.ovhcloud.com/en/network/ovhcloud-connect/#d%C3%A9couvrez_l'ensemble_de_nos_points_de_pr%C3%A9sence_(pop)_4cce6a22-5fcc-4bb2-9a78-6a45c03137fd).
+The OVHcloud Points of Presence (PoPs) available through each of our cloud service provider partners are outlined in the list present at [this link on our website](/links/network/ovhcloud-connect).
 
 ## Accessible Regions per PoP
 

@@ -1,7 +1,7 @@
 ---
 title: Présentation des concepts
 excerpt: Présentation des concepts nécessaires à la compréhension de l’offre OVHcloud Connect
-updated: 2025-09-04
+updated: 2025-09-09
 ---
 
 ## Qu'est-ce que OVHcloud Connect ?
@@ -65,7 +65,7 @@ La liaison virtuelle est un réseau IP à maillage complet entre tout PoP/EntryP
 
 ## PoPs accessibles par fournisseur de service
 
-La liste disponible sur [ce lien de notre site web](https://www.ovhcloud.com/fr/network/ovhcloud-connect/#d%C3%A9couvrez_l'ensemble_de_nos_points_de_pr%C3%A9sence_(pop)_4cce6a22-5fcc-4bb2-9a78-6a45c03137fd) présente les PoPs d'OVHcloud accessibles via chacun de nos partenaires fournisseurs de services cloud.
+La liste disponible sur [ce lien de notre site web](/links/network/ovhcloud-connect) présente les PoPs d'OVHcloud accessibles via chacun de nos partenaires fournisseurs de services cloud.
 
 ## Régions accessibles par PoP
 
