@@ -204,6 +204,26 @@ Cette adresse e-mail de secours est utile en cas de perte d'accès à votre adre
 
 ///
 
+/// details | J'ai reçu une notification de votre part dans une autre langue. Comment corriger cela ?
+
+Vous pouvez changer la langue de nos e-mails automatisés en suivant ces étapes :
+
+1. Connectez-vous à l'[espace client OVHcloud](/links/manager)
+1. Accédez ensuite au [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help)
+1. Cliquez sur `Se connecter au centre d'aide`{.action} et confirmez votre connexion.
+1. Cliquez sur le drapeau en haut à droite du Centre d'aide et sélectionnez le pays/la réfion correspondant à la langue que vous souhaitez.
+1. Cliquez sur `Se déconnecter au centre d'aide`{.action}.
+
+Par la suite, les prochaines notifications automatiques par e-mail seront envoyées dans la langue souhaitée.
+
+///
+
+/// details | Puis-je voir toutes les actions effectuées depuis l’espace client ? Y a-t-il des logs ?
+
+
+
+///
+
 ### Déléguer l'accès à ses services
 
 /// details | Comment changer les contacts ?
