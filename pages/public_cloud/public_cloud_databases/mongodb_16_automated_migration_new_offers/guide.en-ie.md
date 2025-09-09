@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Transitioning to the new offerings & automated migration
 excerpt: Learn about the transition from MongoDB's current offerings to the new plans and understand the automated migration process to effectively plan your transition
-updated: 2024-07-09
+updated: 2025-09-02
 ---
 
 ## Objective
@@ -50,14 +50,6 @@ This section describes the technical changes and their impacts on the service pr
     - **Second scenario:** The average price increases by a factor of 0.97.
 
 **Please note that the service can be terminated at any time without fees if these changes do not meet your needs.**
-
-#### How to Anticipate the Migration
-
-Migration can be initiated now towards the new Production and Advanced plans by following [the migration guide](/pages/public_cloud/public_cloud_databases/mongodb_12_howto_migrate_to_production_or_advanced).
-
-If your workload is small enough to fit the Discovery plan, a migration to this plan can be considered by following [this guide](/pages/public_cloud/public_cloud_databases/mongodb_11_howto_migrate_to_discovery). 
-
-Otherwise, once the migration operation is scheduled, it will be automatically applied at the scheduled time but can also be launched manually before this date.
 
 ## Go further
 

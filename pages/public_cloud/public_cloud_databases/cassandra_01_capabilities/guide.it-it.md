@@ -1,7 +1,7 @@
 ---
 title: Cassandra - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-updated: 2025-07-07
+updated: 2025-08-25
 ---
 
 > [!warning]
@@ -33,13 +33,12 @@ The Public Cloud Databases offer is available in the following regions:
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Entire database instances have to be in the same region. Multi-AZ is currently not supported.
+Entire database instances have to be in the same region.
 
 ### Cassandra versions
 
 The Public Cloud Databases offer supports the following Cassandra versions:
 
-- Cassandra 4.0 (soon depreciated)
 - Cassandra 4.1
 
 Cassandra recommends always installing and using the latest stable version.
@@ -49,24 +48,24 @@ Cassandra recommends always installing and using the latest stable version.
 Three plans are available:
 
 - *Essential*
-- *Business*
-- *Enterprise*
+- *Business/Production*
+- *Enterprise/Advanced*
 
 Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Read replicas  |
-| ------------ | -------------------------- | -------------  |
-| *Essential*  | 3                          | No             |
-| *Business*   | 3                          | Planned        |
-| *Enterprise* | 6                          | Planned        |
+| Plan                  | Number of nodes by default |
+| --------------------- | -------------------------- |
+| *Essential*           | 3                          |
+| *Business/Production* | 3                          |
+| *Enterprise/Advanced* | 6                          |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
 #### Nodes and replicas
 
 - **Essential**: The cluster is delivered with 3 nodes by default.
-- **Business**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
-- **Enterprise**: The cluster is delivered with 6 nodes by default. Adding read replicas is planned.
+- **Business/Production**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Enterprise/Advanced**: The cluster is delivered with 6 nodes by default. Adding read replicas is planned.
 
 #### License type
 

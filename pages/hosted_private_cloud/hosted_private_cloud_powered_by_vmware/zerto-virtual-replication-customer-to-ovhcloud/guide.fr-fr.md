@@ -1,7 +1,7 @@
 ---
 title: "Utiliser Zerto entre OVHcloud et une plateforme tierce"
 excerpt: 'Découvrez comment connecter votre Zerto OVHcloud à une autre plateforme.'
-updated: 2025-06-25
+updated: 2025-08-25
 ---
 
 ## Objectif :
@@ -18,8 +18,9 @@ Consultez notre guide « [Zerto entre deux datacenters OVHcloud](/pages/hosted_p
 
 - Le PCC de destination doit disposer d'au moins une adresse IP publique disponible pour le point de connexion VPN.
 - Le site client doit disposer d’une installation Zerto opérationnelle.
-- Les machines de réplication Zerto (VRA : Virtual Réplication Appliance) coté client et coté OVHCloud doivent pouvoir échanger entre elles sur les ports TCP 4007 et 4008
-- Les machines d’administration Zerto (ZVM : Zerto Virtual Manager) coté client et coté OVHCloud doivent pouvoir échanger entre elles sur les ports TCP 9071
+- Les machines de réplication Zerto (VRA : Virtual Réplication Appliance) côté client et côté OVHcloud doivent pouvoir échanger entre elles sur les ports TCP 4007 et 4008
+- Les machines d’administration Zerto (ZVM : Zerto Virtual Manager) côté client et côté OVHcloud doivent pouvoir échanger entre elles sur les ports TCP 9071
+- Un compte **Read Write (RW)** sur vCenter est nécessaire pour accéder et manipuler l’interface Zerto.
 
 > [!primary]
 >
@@ -65,7 +66,7 @@ Côté OVHcloud :
 
 ### Étape 1 : activer la fonction Zerto client vers OVHcloud
 
-L’activation se fait très simplement depuis l’espace client OVHcloud. Sélectionnez d'abord le datacenter associé au PCC, puis cliquez sur l'onglet `Plan de reprise d'activité(PRA)`{.action}.
+L’activation se fait très simplement depuis l’espace client OVHcloud. Sélectionnez d'abord le datacenter associé au PCC, puis cliquez sur l'onglet `Plan de reprise d'activité (PRA)`{.action}.
 
 ![zerto vpn](images/image-EN-2-nucp.png){.thumbnail}
 
@@ -79,7 +80,7 @@ Sélectionnez une adresse publique disponible dans la plage proposée.
 
 Saisissez ensuite la plage réseau souhaitée pour le déploiement de la ZVM.
 
-![zerto vpnzerto vpn](images/image-EN-5.png){.thumbnail}
+![zerto vpn](images/image-EN-5.png){.thumbnail}
 
 Cliquez ensuite sur `Installer`{.action}.
 
@@ -113,7 +114,7 @@ Dans le menu `VPN`{.action}, puis la rubrique `Tunnel setting`{.action}, cliquez
 
 Vous pouvez conserver les valeurs par défaut :
 
-- Methode de connection : Default
+- Méthode de connexion : Default
 - Protocole d’échange de clés : V2
 - Protocole Internet : IPv4
 - Interface : WAN
@@ -137,7 +138,7 @@ Les valeurs supportées des paramètres sont les suivantes :
 - Groupe de clés Diffie-Hellman : 14 (2048 bits)
 - Durée de vie : 28 800 secondes
 
-Les paramètres avancés peuvent conserver les valeurs par défaut. Cliquer sur `Save`{.action} puis sur `appliquer les changements`{.action}.
+Les paramètres avancés peuvent conserver les valeurs par défaut. Cliquez sur `Save`{.action} puis sur `Appliquer les changements`{.action}.
 
 La Phase 1 est maintenant disponible dans l’interface.
 
@@ -145,7 +146,7 @@ La Phase 1 est maintenant disponible dans l’interface.
 
 #### 3.2 Ajout d'une entrée Phase 2
 
-Cliquez sur le bouton `afficher les entrées Phase 2`{.action}.
+Cliquez sur le bouton `Afficher les entrées Phase 2`{.action}.
 
 ![zerto vpn](images/image-EN-14.png){.thumbnail}
 
@@ -163,15 +164,15 @@ Cliquez sur le bouton `+ `{.action}.
 
 Vérifiez que le mode est bien positionné sur « Tunnel IPv4 ».
 
-##### 3.2.2 Phase 2 : Réseau Local
+##### 3.2.2 Phase 2 : Réseau local
 
 ![zerto vpn](images/image-EN-18.png){.thumbnail}
 
-Le type de réseau local sélectionné doit être « Sous réseau Local »
+Le type de réseau local sélectionné doit être « Sous-réseau local »
 
 ##### 3.2.3 Phase 2 : Réseau distant
 
-A ce stade il faut saisir le plan d’adressage du réseau sur lequel se trouve la ZVM OVHcloud. 
+À ce stade il faut saisir le plan d’adressage du réseau sur lequel se trouve la ZVM OVHcloud. 
 
 Le réseau sera forcément en /23 (512 IPs).
 
@@ -241,7 +242,7 @@ Rendez-vous dans le menu `Firewall`{.action} , puis la section `Rules`{.action} 
 
 ![zerto vpn](images/image-EN-25.png){.thumbnail}
 
-Cliquez sur `Add`{.action} pour créer une nouvelle régle.
+Cliquez sur `Add`{.action} pour créer une nouvelle règle.
 
 ![zerto vpn](images/image-EN-26.png){.thumbnail}
 
@@ -250,7 +251,7 @@ Cliquez sur `Add`{.action} pour créer une nouvelle régle.
 Cette règle comporte les paramètres suivants :
 
 - Action : « Pass » (Autoriser le flux)
-- Interface : « IPsec » (les flux entrant à autoriser proviennent  du VPN)
+- Interface : « IPsec » (les flux entrants à autoriser proviennent du VPN)
 - Protocole : « TCP »
 
 Les sections Source et Destination sont de type « Single host or Network » et référencent respectivement les IPs de la ZVM OVHcloud vers la ZVM client.
@@ -263,27 +264,27 @@ Sauvegardez la règle et déployez-la.
 
 #### 4.2 Ouvertures pour les vRA
 
-Les ouvertures pour les vRA sont un peu plus complexes puisqu’il y a autant de vRA que d’ESXi, aussi bien côté client que côté OVHCloud. 
+Les ouvertures pour les vRA sont un peu plus complexes puisqu’il y a autant de vRA que d’ESXi, aussi bien côté client que côté OVHcloud. 
 
 Toutes doivent pouvoir se parler sur les ports TCP 4007 et 4008. 
 
 Pour simplifier ce type de situations, OPNSense offre les alias. Un alias est un groupe d’objets (IPs, réseaux, URLs etc…) qui peut être utilisé dans la définition des règles de firewall.
 
-Dans notre cas, nous aurons besoins de 3 alias :
+Dans notre cas, nous aurons besoin de 3 alias :
 
 - Un pour les IPs des vRAs côté client
 - Un pour les IPs des vRAs côté OVHcloud
 - Un pour les ports à autoriser
 
-L’IP des vRAs coté OVHcloud visible dans l’interface vSphere du Private Cloud de destination :
+L’IP des vRAs côté OVHcloud est visible dans l’interface vSphere du Private Cloud de destination :
 
 ![zerto vpn](images/image-EN-29.png){.thumbnail}
 
-Créez l’alias OVH_VRA pour les vRAs coté OVHcLoud :
+Créez l’alias OVH_VRA pour les vRAs côté OVHcLoud :
 
 ![zerto vpn](images/image-EN-30.png){.thumbnail}
 
-De manière similaire, il faut créer un alias pour les machines coté client :
+De manière similaire, il faut créer un alias pour les machines côté client :
 
 ![zerto vpn](images/image-EN-31.png){.thumbnail}
 
@@ -307,7 +308,7 @@ L’écran suivant s’affiche.
 
 ![zerto vpn](images/image-EN-35.png){.thumbnail}
 
-Choisissez l’option `Pair to a site with a licence`{.action} et saisissez l’adresse IP de la ZVM coté OVHcloud puis cliquez sur `Start`{.action}.
+Choisissez l’option `Pair to a site with a license`{.action} et saisissez l’adresse IP de la ZVM côté OVHcloud puis cliquez sur `Start`{.action}.
 
 Dans le tableau de bord, un message indique que l’appairage est en cours.
 
@@ -323,6 +324,12 @@ Vous pouvez vérifier que le nom de votre PCC OVHcloud est bien visible dans l�
 
 À ce stade, votre solution Zerto est opérationnelle et vous pouvez créer vos groupes de protection virtuels (VPG).
 
+> [!warning]
+>
+> Lors de l’activation de Zerto, une VM `Z-VRAH` peut apparaître dans votre inventaire.
+> Le déploiement n’est **pas systématique** : il dépend notamment de la volumétrie de données à traiter.
+> Si elle est présente, elle est essentielle au service et **ne doit pas être modifiée ni supprimée**.
+
 #### **Diagnostic** :
 
 En cas d’impossibilité d’établir un dialogue entre les ZVM (notamment en cas d’omission au niveau des règles de firewall) le message suivant s’affiche :
@@ -333,8 +340,12 @@ Puis vous êtes ramené à l’écran de connexion de la ZVM avec le message d�
 
 ![zerto vpn](images/image-EN-40.png){.thumbnail}
 
-La cause la plus probable est que la ZVM OVHCloud n'arrive pas à contacter la ZVM client sur le port TCP 9071. Il est nécessaire qu'elle puisse ouvrir la connexion.
+La cause la plus probable est que la ZVM OVHcloud n'arrive pas à contacter la ZVM client sur le port TCP 9071. Il est nécessaire qu'elle puisse ouvrir la connexion.
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou demandez une analyse personnalisée de votre projet à nos experts de l’équipe [Professional Services](/links/professional-services).
+
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le canal [Discord](https://discord.gg/ovhcloud) dédié.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

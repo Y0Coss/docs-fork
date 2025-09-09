@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Liste des adresses IP par cluster"
 excerpt: "Découvrez l'ensemble des adresses IP disponibles avec nos hébergements web"
-updated: 2025-07-08
+updated: 2025-09-06
 ---
 
 ## Objectif
@@ -22,38 +22,31 @@ Retrouvez dans ce guide toutes les adresses IP des hébergements web OVHcloud. C
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
-- Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Posséder une [offre d'hébergement web](/links/web/hosting).
 
 ## En pratique
 
-Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes :
 
 > [!tabs]
-> **Etape 1**
+> **Étape 1**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Etape 2**
+> **Étape 2**
 >>
 >> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Etape 3**
+> **Étape 3**
 >>
->> Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}. 
+>> Dans l'encadré **Informations générales** de la page qui s'affiche, récupérez le numéro du cluster sous la mention **Cluster** (3 chiffres compris entre `0` et `9`).
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
->> 
-> **Etape 4**
->>
->> Sur la nouvelle page, récupérez le numéro de cluster de l'hébergement Web sur cette page sous la mention **Serveur FTP et SFTP** (3 chiffres compris entre `0` et `9`).
->>
->> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
->>
+>> ![Numéros du cluster et du filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
 ### Cluster 002
 

@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Create your own voice assistant
 excerpt: Create a voice-enabled chatbot using ASR, LLM, and TTS endpoints in under 100 lines of code
-updated: 2025-04-28
+updated: 2025-07-31
 ---
 
 > [!primary]
@@ -57,7 +57,7 @@ Then, create a `requirements.txt` file with the following libraries:
 ```bash
 openai==1.68.2
 streamlit==1.36.0
-streamlit-mic-recorder==1.16.0
+streamlit-mic-recorder==0.0.8
 nvidia-riva-client==2.15.1
 python-dotenv==1.0.1
 ```
@@ -101,7 +101,7 @@ First, create the **Automatic Speech Recognition (ASR)** function in order to tr
 def asr_transcription(question):
 
     asr_service = riva.client.ASRService(
-                    riva.client.Auth(uri=os.environ.get('ASR_GRPC_ENDPOINT'), use_ssl=True, metadata_args=[["authorization", f"bearer {ai_endpoint_token}"]])
+                    riva.client.Auth(uri=os.environ.get('ASR_GRPC_ENDPOINT'), use_ssl=True, metadata_args=[["authorization", f"bearer {os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}"]])
                 )
     
     # set up config
@@ -142,7 +142,7 @@ Then, build the **Text To Speech (TTS)** function in order to transform the writ
 def tts_synthesis(response):
     
     tts_service = riva.client.SpeechSynthesisService(
-                    riva.client.Auth(uri=os.environ.get('TTS_GRPC_ENDPOINT'), use_ssl=True, metadata_args=[["authorization", f"bearer {ai_endpoint_token}"]])
+                    riva.client.Auth(uri=os.environ.get('TTS_GRPC_ENDPOINT'), use_ssl=True, metadata_args=[["authorization", f"bearer {os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN')}"]])
                 )
     
     # set up config
@@ -196,11 +196,11 @@ with st.container():
         user_question = asr_transcription(recording['bytes'])
         
         if prompt := user_question:
-            client = OpenAI(base_url=os.getenv("LLM_AI_ENDPOINT"), api_key=ai_endpoint_token)
+            client = OpenAI(base_url=os.getenv("LLM_AI_ENDPOINT"), api_key=os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN'))
             st.session_state.messages.append({"role": "user", "content": prompt, "avatar":"👤"})
             messages.chat_message("user", avatar="👤").write(prompt)
             response = client.chat.completions.create(
-                model="Mixtral-8x7B-Instruct-v0.", 
+                model="Mixtral-8x7B-Instruct-v0.1", 
                 messages=st.session_state.messages,
                 temperature=0,
                 max_tokens=1024,
@@ -212,13 +212,6 @@ with st.container():
             if msg is not None:
                 audio_samples, sample_rate_hz = tts_synthesis(msg)
                 placeholder.audio(audio_samples, sample_rate=sample_rate_hz, autoplay=True)
-```
-
-Then, you can launch it in the `main`:
-
-```python
-if __name__ == '__main__':
-    demo.launch(server_name="0.0.0.0", server_port=8000)
 ```
 
 ### Launch Streamlit web app locally

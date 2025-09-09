@@ -37,7 +37,7 @@ If your website displays a “Your request has been blocked” page, this means 
 
 The “Your request has been blocked” page may appear for a number of reasons (non-exhaustive list):
 
-- The request is made from an unupdated Internet browser (Firefox, Chrome, Safari, Edge, etc.).
+- The request is made from an unupdated web browser (Firefox, Chrome, Safari, Edge, etc.).
 - A very large number of requests, similar or not, are made in an extremely short time.
 - The request attempts to perform unauthorized actions on the shared infrastructure where your web hosting plan is located.
 
@@ -49,10 +49,10 @@ Go to your web browser settings and check if an update is available.
 
 Below are the procedures for updating the most popular web browsers (documentation provided by their publishers):
 
-- [Firefox](https://support.mozilla.org/en-US/kb/update-firefox-latest-release){.external}
-- [Chrome](https://support.google.com/chrome/answer/95414?hl=en-GB&co=GENIE.Platform%3DDesktop&oco=0){.external}
-- [Safari](https://support.apple.com/en-gb/102665){.external}
-- [Edge](https://support.microsoft.com/en-gb/topic/microsoft-edge-update-settings-af8aaca2-1b69-4870-94fe-18822dbb7ef1){.external}
+- [Firefox](https://support.mozilla.org/en-US/kb/update-firefox-latest-release)
+- [Chrome](https://support.google.com/chrome/answer/95414?hl=en-GB&co=GENIE.Platform%3DDesktop&oco=0)
+- [Safari](https://support.apple.com/en-gb/102665)
+- [Edge](https://support.microsoft.com/en-gb/topic/microsoft-edge-update-settings-af8aaca2-1b69-4870-94fe-18822dbb7ef1)
 
 If your Internet browser is not present in the list above, refer to your browser's online documentation or contact the publisher's support.
 

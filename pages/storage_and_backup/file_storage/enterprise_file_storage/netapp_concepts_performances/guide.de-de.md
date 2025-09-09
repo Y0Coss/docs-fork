@@ -70,10 +70,10 @@ Mit dem Tool [FIO](https://github.com/axboe/fio) können Sie verschiedene Szenar
 - Anzahl der FIO-Worker
 - Zugriffsmodell (Lesen/Schreiben/Sequenziell/Zufällig), etc.
 
-Weitere Informationen finden Sie in [FIO-Dokumentation](https://fio.readthedocs.io/en/latest/index.html){.external}.
+Weitere Informationen finden Sie in [FIO-Dokumentation](https://fio.readthedocs.io/en/latest/index.html).
 
 ## Weiterführende Informationen
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
-Treten Sie unserer Benutzergemeinschaft auf Discord bei: <https://discord.gg/jW2FgBJ72h>.
+Treten Sie unserer Benutzergemeinschaft auf Discord bei: <https://discord.gg/ovhcloud>.

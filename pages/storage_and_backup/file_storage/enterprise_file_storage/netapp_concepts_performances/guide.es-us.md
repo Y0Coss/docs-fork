@@ -70,10 +70,10 @@ La herramienta [FIO](https://github.com/axboe/fio) le permite probar varios esce
 - El número de FIO workers.
 - El modelo de acceso (lectura/escritura/secuencial/aleatoria), etc.
 
-Más información sobre [la documentación de FIO](https://fio.readthedocs.io/en/latest/index.html) {.external}.
+Más información sobre [la documentación de FIO](https://fio.readthedocs.io/en/latest/index.html) .
 
 ## Más información
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
-Interactúe con nuestra comunidad de usuarios en Discord : <https://discord.gg/jW2FgBJ72h>
+Interactúe con nuestra comunidad de usuarios en Discord : <https://discord.gg/ovhcloud>

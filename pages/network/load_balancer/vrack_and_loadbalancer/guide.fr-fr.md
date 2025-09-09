@@ -1,7 +1,7 @@
 ---
 title: "Configuration d'un vRack sur le load balancer"
 excerpt: Voici comment configurer le vRack sur un Load Balancer
-updated: 2022-04-04
+updated: 2025-09-02
 ---
 
 ## Objectif
@@ -16,7 +16,7 @@ Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons 
 
 - Posséder une offre [OVHcloud Load balancer](/links/network/load-balancer) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Être connecté à l'[API OVHcloud](/links/api){.external}.
+- Être connecté à l'[API OVHcloud](/links/api).
 - Posséder une ferme configurée
 - Posséder un frontend configuré
 
@@ -37,7 +37,7 @@ Le `serviceName` dans l'API ci-dessous est celui de votre vRack, par exemple : `
 
 > [!api]
 >
-> @api {v1} /vrack GET /vrack/{serviceName}/allowedServices
+> @api {v1} /vrack GET /vrack/{serviceName}/eligibleServices
 >
 
 Vous trouverez vos services Load Balancer à l'index : `ipLoadbalancing`.

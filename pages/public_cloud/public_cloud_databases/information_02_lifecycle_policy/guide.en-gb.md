@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Lifecycle policy
 excerpt: Lifecycle policy for Public Cloud Databases engines
-updated: 2025-05-05
+updated: 2025-07-31
 ---
 
 ## Objective
@@ -23,10 +23,10 @@ Continued use of outdated services means that they no longer offer our customers
 
 ### Service coverage
 
-This lifecycle policy is applicable to :
+This lifecycle policy is applicable to:
 
 - All Public Cloud Databases services;
-- Including all the service plans (Essential, Business, Enterprise, Production, Advanced);
+- Including all the service plans (Essential, Business/Production, Enterprise/Advanced);
 - And all proposed DBMS, such as MySQL, PostgreSQL, MongoDB, Valkey, ...
 - Whatever state; if they are **up and running** or in a **sleeping state** (powered off, waiting for payment).
 

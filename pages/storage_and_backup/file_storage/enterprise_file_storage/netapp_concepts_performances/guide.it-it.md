@@ -71,10 +71,10 @@ Il tool [FIO](https://github.com/axboe/fio) ti permette di testare diversi scena
 - Il numero di FIO workers.
 - Il modello di accesso (lettura/scrittura/sequenziale/casuale), ecc...
 
-Per maggiori informazioni, consulta la [documentazione di FIO](https://fio.readthedocs.io/en/latest/index.html){.external}.
+Per maggiori informazioni, consulta la [documentazione di FIO](https://fio.readthedocs.io/en/latest/index.html).
 
 ## Per saperne di più
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti su Discord: <https://discord.gg/jW2FgBJ72h>
+Contatta la nostra Community di utenti su Discord: <https://discord.gg/ovhcloud>

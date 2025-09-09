@@ -1,17 +1,13 @@
 ---
 title: "Monitorización de los ataques DDoS con el Network Security Dashboard"
 excerpt: "Aprenda a navegar por el panel de control de seguridad de red"
-updated: 2025-06-04
+updated: 2025-09-08
 ---
 
 ## Objetivo
 
 Esta guía explica el panel de control de seguridad de la red y proporciona una visión general de las medidas de respuesta activadas por nuestra infraestructura de protección DDoS cuando se detecta actividad de red malintencionada. Puede encontrar información detallada sobre las protecciones adicionales activadas que se deben implementar para mantener sus servicios activos y en funcionamiento. Además, hay gráficos de tráfico disponibles en el tablero de mandos para limpiar los periodos de actividad del centro a fin de visualizar mejor la situación.
 
-> [!warning]
->
-> **Advertencia**: La mitigación permanente está llegando a su fin de vida útil (EOL) y se desactivará permanentemente el 8 de septiembre de 2025.
->
 
 ## Requisitos
 
@@ -53,8 +49,7 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Ne
 Las columnas corresponden al estado de limpieza anti-DDoS (**Mitigación**), la disponibilidad de las funciones de Edge Network **Firewall** y **Firewall GAME** y sus estados.
 
 - El estado **Mitigación** puede ser:
-    - **Automático** - El centro de limpieza está en modo **automático**. Es el modo recomendado para usar, redirecciona el tráfico para un análisis más profundo cuando sea necesario.
-    - **Permanente** - El centro de limpieza está **habilitado de forma permanente**. No se recomienda habilitarlo permanentemente, a menos que se observe fluctuación de latencia debido a un redireccionamiento del tráfico hacia adelante y hacia atrás.
+    - **Automático** - El centro de limpieza está en modo **automático** y redirecciona el tráfico para un análisis más profundo cuando sea necesario.
     - **Forzado** - Esto indica que el centro de limpieza está **tomando medidas** en este momento.
 
 - La columna **Firewall** indica el estado del firewall de red perimetral que puede ser:

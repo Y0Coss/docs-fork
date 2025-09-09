@@ -70,10 +70,10 @@ Narzędzie [FIO](https://github.com/axboe/fio) pozwala na przetestowanie kilku s
 - Liczbę FIO workers.
 - Model dostępu (odczyt/zapis/sekwencyjny/losowy) itp.
 
-Więcej informacji znajduje się na stronie [dokumentacja FIO](https://fio.readthedocs.io/en/latest/index.html){.external}.
+Więcej informacji znajduje się na stronie [dokumentacja FIO](https://fio.readthedocs.io/en/latest/index.html).
 
 ## Sprawdź również
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
-Przyłącz się do społeczności naszych użytkowników na Discord: <https://discord.gg/jW2FgBJ72h>
+Przyłącz się do społeczności naszych użytkowników na Discord: <https://discord.gg/ovhcloud>
