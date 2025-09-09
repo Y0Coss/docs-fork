@@ -18,7 +18,7 @@ Un serveur privé virtuel (VPS) est un serveur dédié virtualisé qui vous offr
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
-> Toutes les fonctionnalités VPS mentionnées sur cette page ne sont pas disponibles dans les Local Zones d’OVHcloud.
+> Certaines fonctionnalités VPS mentionnées sur cette page ne sont pas disponibles dans les Local Zones OVHcloud.
 >
 > Veuillez visiter notre [page Web des Local Zones](/links/bare-metal/vps-lz) pour obtenir plus d'informations.
 
