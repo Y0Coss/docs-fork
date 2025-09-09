@@ -1,7 +1,7 @@
 ---
 title: "How to use snapshots on a VPS"
 excerpt: "Find out how to enable and use the Snapshot option in the OVHcloud Control Panel"
-updated: 2024-09-18
+updated: 2025-09-11
 ---
 
 ## Objective
@@ -18,7 +18,11 @@ Before applying backup options, we recommend to consult the [product pages and F
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An OVHcloud [VPS service](/links/bare-metal/vps) already set up
+- An active [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
+
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Instructions
 
@@ -187,6 +191,6 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Go further
 
-[Using automated backups on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
+[How to use automated backups on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
 
 Join our [community of users](/links/community).
