@@ -47,10 +47,10 @@ By integrating IAM with your registry, you ensure consistent access control acro
 >
 > When you enable OVHcloud IAM authentication on your Managed Private Registry:
 > 
-> - All existing Harbor users and robot accounts will be removed.
+> - All existing Harbor users will be removed.
 > - Existing robot accounts remain functional.
-> - New robot accounts can still be created and managed, but only via OVHcloud IAM.
-> - From this point on, all access (users and robot accounts) is managed through OVHcloud IAM roles and policies.
+> - New robot accounts can still be created and managed.
+> - From this point on, all users access are managed through OVHcloud IAM roles and policies.
 >
 
 > [!tabs]
