@@ -36,21 +36,11 @@ updated: 2025-09-02
 | Availability          | 99,5% SLO                                           | 99,99 SLA (at General Availability stage) |
 | etcd                  | Shared, up to 400MB                                 | Dedicated, up to 8GB                      |
 | Max cluster size      | Up to 100 nodes                                     | Up to 500 nodes                           |
-| Regional availability | Single-zone regions (3-AZ regions planned for 2025) | 3-AZ region for now                       |
+| Regional availability | Single-zone regions                                 | 3-AZ region for now                       |
 
 ## Limitations / Upcoming features
 
 In order to help you make the best use of our new Managed Kubernetes Service (MKS) Standard Plan, we have listed some limitations and guidelines related to specific features.
-
-This list is subject to change as new features will be introduced during the Beta period. The end of the Beta phase and General Availability are planned for the end of summer 2025.
-
-### Cluster upgrade
-
-Upgrading an existing cluster is not supported at the moment, we'll deliver this functionality once we support the next Kubernetes release (1.33).
-
-### Logs Data Platform integration
-
-Audit logs forwarding to the [Logs Data Platform](/pages/public_cloud/containers_orchestration/managed_kubernetes/forwarding-audit-logs-to-logs-data-platform) is not supported at the moment.
 
 ### ETCD Quota
 
@@ -66,12 +56,6 @@ Retrieve the gateway IP of your cluster's gateway in the [OVHcloud Control Panel
 ```bash
 openstack router show ROUTER_ID -c external_gateway_info
 ```
-
-### Anti-affinity
-
-This feature allows worker nodes to be deployed on different hypervisors (physical servers) within the same availability zone, guaranteeing better fault tolerance. It is currently supported on the MKS Standard Plan (region EU-WEST-PAR).
-
-We recommend using multiple Availability Zones (AZs) instead by using node pool to spread worker nodes between AZ.
 
 ### Ports
 
@@ -111,6 +95,10 @@ They allow to create **zone specific** volumes: a PVC provisioned on a zone `X` 
 The [classic multi-attach](/pages/public_cloud/compute/classic_block_multi_az_limitations#introduction) is not supported yet for MKS clusters on regions with multiple availability zones, since the currently available file systems (ext(2,3,4), xfs and btrfs) can be subject to data corruptions if volumes are attached to multiple instances.
 
 To create a volume on MKS Standard, use the same process as a [Free Managed Kubernetes cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume).
+
+### Reset kubeconfig
+
+At the moment, it is not possible to reset your kubeconfig file.
 
 ## Getting started
 
