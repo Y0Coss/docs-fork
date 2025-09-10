@@ -1,7 +1,7 @@
 ---
 title: MKS Standard Plan
 excerpt: 'Features and limitations of the MKS Standard Plan in Beta version'
-updated: 2025-09-02
+updated: 2025-09-10
 ---
 
 <style>
