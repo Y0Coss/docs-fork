@@ -38,7 +38,9 @@ Permite publicar ficheiros ou o seu website [ligando-se ao espaço de armazename
 
 ## Apresentação da interface <a name="interface"></a>
 
-![alojamento](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | Clique aqui para visualizar o conteúdo desta secção.
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - A parte superior **enquadrada** permite uma ligação rápida ao seu alojamento ao introduzir o seu nome de **host**, o nome de **utilizador**, a sua **password** associada e o número de **porta** utilizado.
 - **zona 1**: detalhes sobre o histórico de operações, ligação ao espaço FTP, transferência de ficheiros, erros, etc. Para saber mais, aceda à [documentação oficial do Filezilla](https://filezilla-project.org/).
@@ -48,7 +50,25 @@ Permite publicar ficheiros ou o seu website [ligando-se ao espaço de armazename
 - **zona 5**: lista dos diretórios/ficheiros distantes no diretório selecionado no seu alojamento.
 - **zona 6**: lista das operações de transferência em curso, pendentes ou em erro entre o seu computador e o seu alojamento.
 
+///
+
 ## Instruções
+
+### 1 - Obter as informações de ligação ao espaço de armazenamento do alojamento web <a name="part-1"></a>
+
+Efetue as seguintes ações:
+
+1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+2. Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+3. Na página que se abrir, clique no separador `FTP - SSH`{.action}.
+4. Na nova página, serão apresentadas as informações relativas ao seu espaço de armazenamento. Inclua os seguintes itens:
+    - O `Servidor FTP e SFTP` representado sob a seguinte forma: `ftp.clusterXXX.hosting.ovh.net` (em que cada um dos 3 `X` corresponde a um número compreendido entre `0` e `9`).
+    - Um dos utilizadores presentes na coluna `Login` da tabela situada na parte inferior da página. Também pode utilizar o `Login principal` se desejar.
+    - O número do `Port FTP` ou o número do `Port SFTP` em função do protocolo de ligação que pretende utilizar para se ligar ao seu espaço de armazenamento.
+
+> [!primary]
+>
+> Por razões de segurança, a palavra-passe de um utilizador não aparece na página do separador `FTP - SSH`{.action}. Se se esquecer da palavra-passe, consulte [este manual](/pages/web_cloud/web_hosting/ftp_change_password) para obter mais informações.
 
 ### Ligação com Filezilla em FTP
 

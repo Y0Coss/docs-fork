@@ -38,17 +38,37 @@ You can use it to put files or your website online by [connecting to your web ho
 
 ## Interface overview <a name="interface"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | Click here to see the contents of this section.
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - The top **connection bar** allows you to log in to your hosting plan quickly, by entering its **host** name, **user** name, associated **password** and **port** number.
 - **Section 1**: Displays details on the operation history, connection to the FTP space, file transfers, errors, etc. For more information, please refer to the official FileZilla [documentation](https://filezilla-project.org/).
-- **Section 2**: The directory tree of local files on your computer
-- **Section 3**: The directory tree of remote files when you are connected to your hosting
-- **Section 4**: The list of directories/files in the directory selected locally on your computer
-- **Section 5**: The list of remote directories/files in the selected directory on your hosting
-- **Section 6**: The list of pending transfer operations or transfers in error status between your computer and your hosting
+- **Section 2**: The directory tree of local files on your computer.
+- **Section 3**: The directory tree of remote files when you are connected to your hosting.
+- **Section 4**: The list of directories/files in the directory selected locally on your computer.
+- **Section 5**: The list of remote directories/files in the selected directory on your hosting.
+- **Section 6**: The list of pending transfer operations or transfers in error status between your computer and your hosting.
+
+///
 
 ## Instructions
+
+### 1 - Retrieve the login information for the web hosting plan storage space <a name="part-1"></a>
+
+Perform the following actions:
+
+1. Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click the `Hosting plans`{.action} menu, then select the web hosting plan concerned.
+3. On the page that pops up, click on the `FTP - SSH`{.action} tab.
+4. On the new page, information related to your storage space will appear. In it, you can retrieve the following elements:
+    - The `FTP and SFTP server` represented as follows: `ftp.clusterXXX.hosting.ovh.net` (where each of the 3 `X` corresponds to a number between `0` and `9`).
+    - One of the users listed in the `Login` column of the table at the bottom of the page. You can also use the `Main login` if you wish.
+    - The number of the `FTP port` or the number of the `SFTP port` depending on the connection protocol you will want to use to connect to your storage space.
+
+> [!primary]
+>
+> For security reasons, a user’s password does not appear on the page of the `FTP - SSH`{.action} tab. If you have forgotten it, please refer to [this guide](/pages/web_cloud/web_hosting/ftp_change_password) to modify it.
 
 ### Connecting via FTP in FileZilla 
 

@@ -38,7 +38,9 @@ Permette di mettere online file o siti Internet [accedendo allo spazio di storag
 
 ## Presentazione dell'interfaccia <a name="interface"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | Fare clic qui per visualizzare il contenuto di questa sezione.
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - La parte superiore **incorniciata** permette una connessione rapida al tuo hosting inserendo il nome dell'**hosting**, il nome dell'**utente**, la **password** associata e il numero di **porta** utilizzato.
 - **zona 1**: dettagli sullo storico delle operazioni, sulla connessione allo spazio FTP, sui trasferimenti di file, sugli errori, ecc. Per saperne di più, consulta la [documentazione ufficiale di Filezilla](https://filezilla-project.org/).
@@ -48,7 +50,25 @@ Permette di mettere online file o siti Internet [accedendo allo spazio di storag
 - **zona 5**: elenco delle directory/file remoti nella directory selezionata sul tuo hosting.
 - **zona 6**: lista delle operazioni di trasferimento in corso, in attesa o in errore tra il tuo computer e il tuo hosting.
 
+///
+
 ## Procedura
+
+### 1 - Recupera le informazioni di connessione allo spazio di storage dell’hosting Web <a name="part-1"></a>
+
+Eseguire le operazioni seguenti:
+
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
+2. Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
+3. Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}.
+4. Nella nuova pagina, visualizzi le informazioni relative allo spazio di storage. Recupera questi elementi:
+    - Il `Server FTP e SFTP` rappresentato nel formato seguente: `ftp.clusterXXX.hosting.ovh.net` (dove ciascuno dei 3 `X` corrisponde a una cifra compresa tra `0` e `9`).
+    - uno degli utenti presenti nella colonna `Login` della tabella situata a piè di pagina. In alternativa, è possibile utilizzare il `Login principale`.
+    - il numero della `Porta FTP` o il numero della `Porta SFTP` in base al protocollo di connessione che si desidera utilizzare per connettersi allo spazio di storage.
+
+> [!primary]
+>
+> Per motivi di sicurezza, la password di un utente non appare sulla pagina della scheda `FTP - SSH`{.action}. Se l’hai dimenticato, consulta [questa guida](/pages/web_cloud/web_hosting/ftp_change_password) per modificarlo.
 
 ### Connessione con Filezilla en FTP
 

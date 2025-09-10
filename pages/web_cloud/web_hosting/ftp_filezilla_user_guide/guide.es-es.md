@@ -38,7 +38,9 @@ Permite subir archivos o su sitio web [conectándose al espacio de almacenamient
 
 ## Presentación de la interfaz <a name="interface"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | Haga clic aquí para ver el contenido de esta sección.
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - La parte superior **del recuadro** permite una conexión rápida al alojamiento, introduciendo el nombre del **host**, el nombre de **usuario**, la **contraseña** asociada y el número de **puerto** utilizado.
 - **zona 1**: información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de Filezilla](https://filezilla-project.org/).
@@ -48,7 +50,25 @@ Permite subir archivos o su sitio web [conectándose al espacio de almacenamient
 - **zona 5**: lista de carpetas/archivos remotos en el directorio seleccionado en su alojamiento.
 - **zona 6**: lista de las operaciones de transferencia en curso, en espera o en error entre su ordenador y su alojamiento.
 
+///
+
 ## Procedimiento
+
+### 1 - Obtener la información de conexión al espacio de almacenamiento del alojamiento web <a name="part-1"></a>
+
+Realice las siguientes acciones:
+
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+2. Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+3. En la nueva página, haga clic en la pestaña `FTP - SSH`{.action}.
+4. En la nueva página, aparecerá la información relativa al espacio de almacenamiento. Descubra los siguientes elementos:
+    - El `Servidor FTP y SFTP` representado con el siguiente formato: `ftp.clusterXXX.hosting.ovh.net` (donde cada uno de los 3 `X` corresponde a un número comprendido entre `0` y `9`).
+    - Uno de los usuarios presentes en la columna `Usuario` de la tabla situada en la parte inferior de la página. Si lo desea, puede utilizar el `Usuario principal`.
+    - El número del `Puerto FTP` o el número del `Puerto SFTP` en función del protocolo de conexión que quiera utilizar para conectarse a su espacio de almacenamiento.
+
+> [!primary]
+>
+> Por motivos de seguridad, la contraseña de un usuario no aparece en la pestaña `FTP - SSH`{.action}. Si ha olvidado la contraseña, consulte [esta guía](/pages/web_cloud/web_hosting/ftp_change_password) para modificarla.
 
 ### Conexión con Filezilla por FTP
 

@@ -38,7 +38,9 @@ You can use it to put files or your website online by [connecting to your web ho
 
 ## Interface overview <a name="interface"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | 
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - The top **connection bar** allows you to log in to your hosting plan quickly, by entering its **host** name, **user** name, associated **password** and **port** number.
 - **Section 1**: Displays details on the operation history, connection to the FTP space, file transfers, errors, etc. For more information, please refer to the official FileZilla [documentation](https://filezilla-project.org/).

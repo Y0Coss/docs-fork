@@ -38,7 +38,9 @@ Permite publicar archivos o su sitio web [conectándose al espacio FTP](/pages/w
 
 ## Presentación de la interfaz <a name="interface"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | 
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - La parte superior **del recuadro** permite una conexión rápida al alojamiento, introduciendo el nombre del **host**, el nombre de **usuario**, la **contraseña** asociada y el número de **puerto** utilizado.
 - **zona 1**: información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de Filezilla](https://filezilla-project.org/).

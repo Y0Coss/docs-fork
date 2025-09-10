@@ -39,7 +39,9 @@ Sie können damit Dateien oder Ihre Website online stellen, indem Sie sich [mit 
 
 ## Interface Übersicht <a name="interface"></a>
 
-![Hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | Klicken Sie hier, um den Inhalt dieses Abschnitts anzuzeigen.
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - Die obere Leiste (`Quickconnect`{.action}) ermöglicht die schnelle Verbindung zu Ihrem Hosting, indem Sie den **Hostnamen**, den **Benutzernamen**, das zugehörige **Passwort** und die verwendete **Port-Nummer** eintragen.
 - **Bereich 1**: Details zur Transferhistorie, Verbindung zum FTP Bereich, Dateitransfers, Fehlern etc. Weitere Informationen finden Sie in der offiziellen [FileZilla Dokumentation](https://filezilla-project.org/).
@@ -49,7 +51,25 @@ Sie können damit Dateien oder Ihre Website online stellen, indem Sie sich [mit 
 - **Bereich 5**: Liste der Verzeichnisse/Dateien in dem auf Ihrem Hosting ausgewählten Verzeichnis.
 - **Bereich 6**: Liste der laufenden, ausstehenden oder fehlerhaften Transfervorgänge zwischen Ihrem Computer und Ihrem Hosting.
 
+///
+
 ## In der praktischen Anwendung
+
+### 1 - Login-Daten für den Speicherplatz des Webhostings abrufen <a name="part-1"></a>
+
+Führen Sie die folgenden Aktionen aus:
+
+1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+3. Klicken Sie auf den Tab `FTP - SSH`{.action}.
+4. Auf der neuen Seite werden die Informationen zu Ihrem Speicherplatz angezeigt. Rufen Sie die folgenden Elemente ab:
+    - Der `FTP- und SFTP-Server`, dargestellt als `ftp.clusterXXX.hosting.ovh.net` (wobei jeder der 3 `X` eine Zahl zwischen `0` und `9` ist).
+    - Einer der Benutzer in der Spalte `Login` der Tabelle unten auf der Seite. Sie können auch den `Primäres Login` verwenden, wenn Sie möchten.
+    - Die Nummer des `FTP-Port` oder die Nummer des `SFTP-Port`, je nachdem, welches Verbindungsprotokoll Sie für die Verbindung mit Ihrem Speicherplatz verwenden möchten.
+
+> [!primary]
+>
+> Aus Sicherheitsgründen wird das Passwort eines Benutzers nicht auf der Seite `FTP - SSH`{.action} angezeigt. Wenn Sie es vergessen haben, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/ftp_change_password), um es zu ändern.
 
 ### FTP-Verbindungen mit FileZilla
 

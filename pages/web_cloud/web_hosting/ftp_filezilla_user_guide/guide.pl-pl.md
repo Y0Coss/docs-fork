@@ -38,7 +38,9 @@ Umożliwia wgranie plików lub Twojej strony WWW do trybu online poprzez [zalogo
 
 ## Prezentacja interfejsu <a name="interface"></a>
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
+/// details | Kliknij tutaj, aby wyświetlić zawartość tej sekcji.
+
+![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - W górnej **ramce** możesz szybko połączyć się z hostingiem podając nazwę **hosta**, nazwę **użytkownika**, **hasło** oraz numer **portu**.
 - **strefa 1**: szczegółowe informacje na temat historii operacji, logowania do przestrzeni FTP, transferów plików, błędów itp. Więcej informacji znajdziesz w oficjalnej [dokumentacji Filezilla](https://filezilla-project.org/).
@@ -48,7 +50,25 @@ Umożliwia wgranie plików lub Twojej strony WWW do trybu online poprzez [zalogo
 - **strefa 5**: lista zdalnych katalogów/plików w wybranym katalogu na Twoim hostingu.
 - **strefa 6**: lista operacji transferu w trakcie, oczekujących lub z błędem między Twoim komputerem i hostingiem.
 
+///
+
 ## W praktyce
+
+### 1 - Pobieranie danych do logowania do przestrzeni dyskowej hostingu WWW <a name="part-1"></a>
+
+Wykonaj następujące czynności:
+
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+2. Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+3. Na stronie, która się wyświetli kliknij zakładkę `FTP - SSH`{.action}.
+4. Na nowej stronie wyświetlają się informacje dotyczące Twojej przestrzeni dyskowej. W mailu znajdziesz następujące elementy:
+    - `Serwer FTP i SFTP` przedstawiony w następującej formie: `ftp.clusterXXX.hosting.ovh.net` (gdzie każda z 3 `X` odpowiada cyfrze między `0` i `9`).
+    - Jeden z użytkowników w kolumnie `Login` tabeli na dole strony. Możesz również użyć `Login główny`, jeśli chcesz.
+    - Numer `Port FTP` lub numer `Port SFTP` w zależności od protokołu połączenia, którego będziesz chciał użyć do zalogowania się do przestrzeni dyskowej.
+
+> [!primary]
+>
+> Ze względów bezpieczeństwa hasło użytkownika nie pojawia się na stronie zakładki `FTP - SSH`{.action}. Jeśli nie pamiętasz hasła, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/ftp_change_password), aby wprowadzić zmiany.
 
 ### Połączenie z Filezilla przez FTP
 
