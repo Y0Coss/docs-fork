@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la gestion du compte OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur la gestion du compte OVHcloud
-updated: 2025-09-09
+updated: 2025-09-10
 ---
 
 <style>
@@ -48,7 +48,7 @@ Vous devez entrer votre numéro de téléphone au format international.
 
 Votre identifiant client, parfois également appelé « NIC-handle », est présent en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans tous les e-mails envoyés par OVHcloud (e-mail de confirmation de création du compte, e-mails de confirmation ou de renouvellement de commande, etc.).
 
-Si vous n’avez toujours pas retrouvé votre identifiant, vous avez la possibilité de cliquer sur le lien « Identifiant ou mot de passe oubliés » présent sur la page de [connexion au compte OVHcloud](/links/manager) et renseignez l’adresse e-mail associée à votre compte.
+Si vous n’avez toujours pas retrouvé votre identifiant, vous avez la possibilité de cliquer sur le lien « Identifiant ou mot de passe oubliés » présent sur la page de [connexion au compte OVHcloud](/links/manager). Renseignez alors l’adresse e-mail associée à votre compte.
 
 > [!success]
 > À tout moment, lorsque vous êtes connecté à votre espace client, vous pouvez retrouver votre identifiant en haut à droite, en cliquant sur votre nom.
@@ -100,6 +100,26 @@ Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adre
 Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi).
 
 Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
+
+/// details | Existe-t-il une limite au nombre de fois où je peux modifier le mot de passe de mon compte OVHcloud (via l'option « Identifiant ou mot de passe oublié ») ?
+
+OVHcloud n'impose pas de limite au nombre de changements de mot de passe, vous pouvez le modifier autant de fois que vous le souhaitez.
+
+Cependant, notre système envoie les e-mails à votre adresse e-mail de contact, de sorte que votre fournisseur de messagerie pourrait bloquer le courrier si vous demandez de nombreux changements de mot de passe en quelques minutes.
+
+///
+
+/// details | Je n'ai pas activé la double authentification sur mon compte mais on me demande quand même un code. Comment désactiver cela ?
+
+Même si la double authentification n'est pas activée sur votre compte, un code de vérification peut vous être demandé afin de valider votre identification. Cette mesure vise à protéger votre compte et vos données et il n'est pas possible de la désactiver.
+
+Le code de sécurité vous est envoyé par e-mail **sur l'adresse principale** que vous avez renseignée sur le compte.
+
+Si vous ne retrouvez pas ce code, pensez à vérifier les dossiers « spam » / « courrier indésirable » de votre adresse e-mail.
+
+> [!success]
+> - Activer la double authentification sur votre compte vous permet de choisir le périphérique à utiliser (téléphone, tablette, smartphone, clé U2F) pour recevoir un code d'authentification. Plus d'informations dans notre guide « [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) ».
+> - Vous pouvez également mettre en place une sécurité supplémentaire pour restreindre l'accès votre compte OVHcloud à une ou plusieurs adresses IP. Plus d'informations dans notre guide « [Restreindre l'accès par IP à votre espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-control-panel-ip-restriction) ».
 
 ///
 
@@ -174,6 +194,22 @@ Sachez que vous avez néanmoins la possibilité de [créer un nouveau compte OVH
 
 ///
 
+/// details | Est-ce que je peux chager la filiale de mon compte OVHcloud ?
+
+Si vous avez créé un compte OVHcloud dans une mauvaise filiale, vous pouvez créer un nouveau compte dans la bonne filiale avec les mêmes informations personnelles.
+
+Cependant, vous devez associer une adresse e-mail de contact différente, car il n'est pas possible d'avoir deux comptes OVHcloud différents avec la même adresse e-mail de contact.
+
+Vous trouverez des informations complémentaires sur la création d'un compte OVHcloud dans notre guide « [Créer un compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation) ».
+
+Une fois que vous avez créé votre nouveau compte OVHcloud dans la bonne filiale, vous pouvez suivre les instructions de [ce guide](/pages/account_and_service_management/account_information/managing_contacts) pour déplacer vos services d'un compte à un autre.
+
+Si vous possédez un compte OVHcloud dans notre infrastructure canadienne (c'est à dire dans un pays en dehors de l'Europe), vous ne pourrez pas déplacer de services entre les comptes. Dans ce cas, il sera nécessaire de commander de nouveaux services dans le nouveau compte et de migrer manuellement vos contenus, si nécessaire.
+
+Pour toute information complémentaire, contactez notre support en créant un [ticket d'assistance depuis votre centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+///
+
 /// details | Comment supprimer mon compte OVHcloud ?
 
 La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
@@ -220,13 +256,29 @@ Par la suite, les prochaines notifications automatiques par e-mail seront envoy�
 
 /// details | Puis-je voir toutes les actions effectuées depuis l’espace client ? Y a-t-il des logs ?
 
+Oui, vous pouvez accéder aux logs des actions réalisées sur votre compte.
 
+Pour cela, vous devez vous connecter à [l'API OVHcloud](/links/api) en vous aidant du guide de [premiers pas avec l'API OVHcloud](/pages/manage_and_operate/api/first-steps). Une fois connecté, vous pouvez utiliser l'appel API suivant pour récupérer l'ID du journal : 
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/logs/self
+>
+
+Vous obtiendrez ainsi la liste des identifiants de logs. Ensuite, vous pouvez utiliser l'appel API suivant pour récupérer les détails d'un journal spécifique : 
+
+> [!api]
+>
+> @api {v1} /me GET /me/api/logs/self/{logId}Todo
+>
+
+Remplacez `{logId}` par l'identifiant réel du log que vous souhaitez consulter. Cela vous permettra d'accéder au log et de visualiser les actions réalisées depuis l'espace client.
 
 ///
 
 ### Déléguer l'accès à ses services
 
-/// details | Comment changer les contacts ?
+/// details | Comment déléguer l'accès à mes servives à d'autres personnes ?
 
 Vous avez la possibilité de déléguer à d’autres comptes clients OVHcloud la gestion administrative, technique et facturation de vos services depuis votre espace client. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mes contacts`{.action}.
 
@@ -250,6 +302,11 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur vo
 
 ///
 
+/// details | Je souhaite déplacer l’ensemble de mes services vers un autre compte OVHcloud, comment puis-je le faire en une seule fois ?
+
+Pour transférer l’ensemble de vos services sur un autre compte OVHcloud, nous vous recommandans de [contacter directement notre support technique](https://help.ovhcloud.com/csm?id=csm_get_help). Nos équipes seront en mesure de vous guider tout au long du processus et de vous aider dans le transfert massif de vos services vers le nouveau compte.
+
+///
 
 ### Signaler une activité abusive/illicite ou un piratage
 

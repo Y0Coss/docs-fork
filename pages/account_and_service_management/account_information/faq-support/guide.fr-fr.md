@@ -1,7 +1,7 @@
 ---
 title: FAQ sur le support OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur le support OVHcloud
-updated: 2025-09-09
+updated: 2025-09-10
 ---
 
 <style>
@@ -26,6 +26,7 @@ Retrouvez ici les questions les plus fréquemment posées sur le support OVHclou
 ## FAQ
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/1JUqw38RWjU?si=T0VQ_erj0Qksc33O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ### Statut des services
 
@@ -207,6 +208,14 @@ Pour effectuer cette résiliation, veuillez contacter notre équipe de support e
 >     - Le service doit avoir été acheté en tant que client individuel.
 
 Contactez [notre équipe de support](https://help.ovhcloud.com/csm?id=csm_get_help) pour plus d'informations.
+
+///
+
+/// details | Avez-vous des tutoriels vidéo ?
+
+Nous ajoutons de plus en plus de tutoriels sur notre chaîne YouTube : <https://www.youtube.com/@OvhGroup>
+
+N'hésitez pas à utiliser le moteur de recherche sur cette page pour retrouver des vidéos sur un thème en particulier (par exemple : « créer un site web web »).
 
 ///
 
