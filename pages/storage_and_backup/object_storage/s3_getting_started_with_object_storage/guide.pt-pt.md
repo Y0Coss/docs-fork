@@ -73,7 +73,7 @@ user@host:~$ aws --version
 
 Click on the name of your bucket to view its details and content:
 
-![Bucket details](images/highperf-create-container-20220928091433895.png){.thumbnail}
+![Bucket details](images/object_storage_information_panel.png){.thumbnail}
 
 #### Configuration
 
@@ -178,7 +178,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 > Via the OVHcloud Control Panel
 >> Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
 >>
->> ![My Dashboard containers](images/01-object-storage-bucket-listing.png){.thumbnail}
+>> ![My Dashboard containers](images/object_storage_list.png){.thumbnail}
 
 #### Create a bucket
 
@@ -262,7 +262,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> Congratulations, your bucket is created:
 >>
->> ![Result](images/01-object-storage-bucket-listing.png)
+>> ![Result](images/object_storage_list.png)
 >>
 
 #### Uploading your files as objects in your bucket
@@ -316,15 +316,15 @@ As part of the object upload process to an Object Storage bucket, users can sele
 > Via the OVHcloud Control Panel
 >> Click on the `name of your container`{.action}:
 >>
->> ![Go in bucket](images/go-in-bucket.png){.thumbnail}
+>> ![Go in bucket](images/object_storage_list_selection.png){.thumbnail}
 >>
 >> Click on `Add objects`{.action}
 >>
->> ![Upload file](images/upload-file.png){.thumbnail}
+>> ![Upload file](images/object_storage_add_object.png){.thumbnail}
 >>
 >> You can add a prefix to your object name (the object name is the same as the file name). Select the storage class. Finally, select the file you are about to download and click on the `Import`{.action} button.
 >>
->> ![upload file window](images/upload-files-window.png)
+>> ![upload file window](images/object_storage_add_object_window.png)
 
 #### Downloading an object from a bucket
 
@@ -372,7 +372,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 > Via the OVHcloud Control Panel
 >> Click on the `...`{.action} button on the object line, then click `Download`{.action}.
 >>
->> ![Download file from bucket](images/download-file-from-bucket.png){.thumbnail}
+>> ![Download file from bucket](images/object_storage_items_download.png){.thumbnail}
 
 #### Synchronising buckets
 
@@ -469,7 +469,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> In the list of object storage containers, click on the `...`{.action} button on the containers line, then click `Delete`{.action}.
 >>
->> ![Delete bucket](images/delete-bucket.png){.thumbnail}
+>> ![Delete bucket](images/object_storage_list_delete.png){.thumbnail}
 >>
 >> Click on `Confirm`{.action}.
 >>
@@ -477,7 +477,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> Go to the relevant bucket and click on the `...`{.action} button on the object line, then click `Delete`{.action}.
 >>
->> ![Delete file](images/delete-file.png){.thumbnail}
+>> ![Delete file](images/object_storage_items_delete.png){.thumbnail}
 >>
 >> Click on `Confirm`{.action}.
 >>

@@ -73,7 +73,7 @@ user@host:~$ aws --version
 
 Cliquez sur le nom de votre bucket pour en afficher les détails et le contenu :
 
-![détails du bucket](images/highperf-create-container-20220928091433895.png){.thumbnail}
+![détails du bucket](images/object_storage_information_panel.png){.thumbnail}
 
 #### Configuration
 
@@ -178,7 +178,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 > Via l'espace client OVHcloud
 >> Cliquez sur `Object Storage`{.action} dans la barre de navigation, puis sur l'onglet `Mes conteneurs`{.action}.
 >>
->> ![My Dashboard containers](images/01-object-storage-bucket-listing.png){.thumbnail}
+>> ![My Dashboard containers](images/object_storage_list.png){.thumbnail}
 
 #### Créer un bucket
 
@@ -262,7 +262,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> Félicitations, votre bucket est créé :
 >>
->> ![Result](images/01-object-storage-bucket-listing.png)
+>> ![Result](images/object_storage_list.png)
 >>
 
 #### Télécharger vos fichiers en tant qu'objets dans votre bucket
@@ -310,15 +310,15 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 > Via l'espace client OVHcloud
 >> Cliquez sur le `nom de votre conteneur`{.action} :
 >>
->> ![Conteneur](images/go-in-bucket.png){.thumbnail}
+>> ![Conteneur](images/object_storage_list_selection.png){.thumbnail}
 >>
 >> Cliquez sur `Ajouter des objets`{.action} :
 >>
->> ![Ajout de fichiers](images/upload-file.png){.thumbnail}
+>> ![Ajout de fichiers](images/object_storage_add_object.png){.thumbnail}
 >>
 >> Vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez la classe de stockage. Enfin, sélectionnez le fichier que vous êtes sur le point de télécharger et cliquez sur le bouton `Importer`{.action}.
 >>
->> ![upload file window](images/upload-files-window.png)
+>> ![upload file window](images/object_storage_add_object_window.png)
 
 #### Téléchargement d'un objet à partir d'un bucket
 
@@ -366,7 +366,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 > Via l'espace client OVHcloud
 >> Cliquez sur le bouton `...`{.action} sur la ligne d'objet, puis sur `Télécharger`{.action}.
 >>
->> ![Télécharger un fichier depuis un bucket](images/download-file-from-bucket.png){.thumbnail}
+>> ![Télécharger un fichier depuis un bucket](images/object_storage_items_download.png){.thumbnail}
 
 #### Synchronisation des buckets
 
@@ -465,7 +465,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >>
 >> Dans la liste des conteneurs Object Storage, cliquez sur le bouton `...`{.action} sur la ligne des conteneurs, puis sur `Supprimer`{.action}.
 >>
->> ![Delete bucket](images/delete-bucket.png){.thumbnail}
+>> ![Delete bucket](images/object_storage_list_delete.png){.thumbnail}
 >>
 >> Cliquez sur `Confirmer`{.action}.
 >>
@@ -473,7 +473,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >>
 >> Allez dans le bucket concerné et cliquez sur le bouton `...`{.action} sur la ligne de l'objet, puis sur `Supprimer`{.action}.
 >>
->> ![Delete file](images/delete-file.png){.thumbnail}
+>> ![Delete file](images/object_storage_items_delete.png){.thumbnail}
 >>
 >> Cliquez sur `Confirmer`{.action}.
 >>
