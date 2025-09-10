@@ -165,9 +165,11 @@ Nel caso sotto riportato, l'errore è generato da un nome host non valido:
 
 Verifica la configurazione in relazione all'hostname indicato nello [Spazio Cliente OVHcloud](/links/manager).
 
-### Trasferimento dei file
+///
 
-Per effettuare il trasferimento dei tuoi file in FTP, selezionali e trascina le directory/file dalla finestra di sinistra *(computer)* alla finestra di destra *(hosting)* (**zone 4 e 5** descritte nella sezione di questo tutorial relativa [all'interfaccia](#interface) di Filezilla).
+### 3 - Trasferimento dei file
+
+Per effettuare il trasferimento dei tuoi file in (S)FTP, selezionali e trascina le directory/file dalla finestra di sinistra *(computer)* alla finestra di destra *(hosting)* (**zone 4 e 5** descritte nella sezione di questo tutorial relativa [all'interfaccia](#interface) di Filezilla).
 
 Seleziona la directory di destinazione nella finestra di destra.
 
@@ -175,9 +177,13 @@ Una volta effettuata questa operazione, i tuoi file si metteranno automaticament
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/drag-drop-en.png){.thumbnail}
 
-### Vista sulla coda di attesa
+### 4 - Altre funzionalità di FileZilla
 
-È disponibile una vista sulla coda di attesa (**zona 6** descritta nella sezione di questo tutorial relativa all'[interfaccia](#interface) di Filezilla).
+**Clicca sui titoli qui sotto per visualizzare i rispettivi contenuti.**
+
+/// details | Vista sulla coda di attesa
+
+È disponibile una vista sulla coda di attesa (**zona 6** descritta nella sezione di questo tutorial relativa all'[interfaccia](#interface) di FileZilla).
 
 In questa zona trovi:
 
@@ -187,27 +193,29 @@ In questa zona trovi:
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/waiting-list-view.png){.thumbnail}
 
-### Menu contestuale Server
+///
 
-Fai click con il tasto destro su uno dei file presenti nella **zona 5** (descritta nella sezione di questo tutorial relativa [all'interfaccia](#interface) di Filezilla).
+/// details | Menu contestuale Server
+
+Fai click con il tasto destro su uno dei file presenti nella **zona 5** (descritta nella sezione di questo tutorial relativa [all'interfaccia](#interface) di FileZilla).
 
 Appare un menu contestuale e ti vengono proposte diverse opzioni:
 
-- Scarica: scarica il file nella cartella locale aperta.
-- Aggiungere i file alla coda d'attesa: aggiungi il file alla coda di attesa, ti permette ad esempio di rinviare il download dei dati.
-- Mostra/Modifica: ti permette di visualizzare o modificare direttamente un file presente sul tuo hosting. ma è necessario disporre di un software in grado di leggere il file installato sulla tua postazione.
-- Crea una cartella: ti permette di creare una nuova cartella direttamente sull'hosting remoto.
-- Aggiorna: aggiorna la visualizzazione dei dati per visualizzare correttamente i diversi file presenti.
-- Elimina: permette di eliminare il file selezionato.
-- Rinomina: ti permette di rinominare il file selezionato.
-- Copia l'indirizzo(i) negli appunti: ti permette di copiare automaticamente il link diretto al file selezionato. Esempio di URL che può essere generato: `ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg`
-- Permessi di file: ti dà la possibilità di modificare i diritti dei file (Chmod)
+- Scarica: Scarica il file nella cartella locale aperta.
+- Aggiungere i file alla coda d'attesa: Aggiungi il file alla coda di attesa, ti permette ad esempio di rinviare il download dei dati.
+- Mostra/Modifica: Ti permette di visualizzare o modificare direttamente un file presente sul tuo hosting. ma è necessario disporre di un software in grado di leggere il file installato sulla tua postazione.
+- Crea una cartella: Ti permette di creare una nuova cartella direttamente sull'hosting remoto.
+- Aggiorna: Aggiorna la visualizzazione dei dati per visualizzare correttamente i diversi file presenti.
+- Elimina: Permette di eliminare il file selezionato.
+- Rinomina: Ti permette di rinominare il file selezionato.
+- Copia l'indirizzo(i) negli appunti: Ti permette di copiare automaticamente il link diretto al file selezionato. Esempio di URL che può essere generato: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/my_folder1/my_file.jpg`.
+- Permessi di file: Ti dà la possibilità di modificare i diritti dei file (Chmod).
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
 
-## Informazioni utili <a name="useful-information"></a>
+///
 
-### Diritti di accesso (Chmod) su file e cartelle
+/// details | Diritti di accesso (Chmod) su file e cartelle
 
 Clicca con il tasto destro su uno dei file presenti sul server e seleziona `Permessi di file...`{.action}.
 
@@ -236,7 +244,9 @@ Seleziona la casella "Sicurezza nelle sottocartelle".
 
 Ciò comporterà la modifica dei diritti del fascicolo in questione, nonché dei fascicoli e dei file che potrebbero essere presenti in quest'ultimo.
 
-### Riapertura del sito
+///
+
+/// details | Riapertura del sito
 
 > [!primary]
 >
@@ -280,7 +290,9 @@ SITE CHMOD 705 .
 > Se ancora non funziona, contatta il nostro supporto.
 > 
 
-### Trasferimento di file binari
+///
+
+/// details | Trasferimento di file binari
 
 Per i file di tipo binario, come ad esempio i file di tipo **CGI**, può essere interessante scegliere il modo in cui il trasferimento sarà effettuato.
 
@@ -288,23 +300,27 @@ Per modificare il tipo di trasferimento, seleziona `Trasferimento`{.action} nel 
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/transfert-binary-files.png){.thumbnail}
 
-### Confronto cartelle
+///
+
+/// details | Confronto cartelle
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
-L'opzione di confronto dei file mostra colori nelle **zone 4** e **5** (come mostrato nella sezione di questo tutorial relativa all'[interfaccia](#interface) di Filezilla). Questa opzione permette di evidenziare le differenze tra file e cartelle locali e quelle sul server. 
+L'opzione di confronto dei file mostra colori nelle **zone 4** e **5** (come mostrato nella sezione di questo tutorial relativa all'[interfaccia](#interface) di FileZilla). Questa opzione permette di evidenziare le differenze tra file e cartelle locali e quelle sul server. 
 
 Cliccando con il tasto destro sull'icona, puoi cambiare il metodo di confronto. Ti verrà chiesto di attivare o disattivare l'opzione, ma anche di:
 
-- confrontare la dimensione dei file
-- confrontare l'ora
+- confrontare la dimensione dei file.
+- confrontare l'ora.
 - nascondi i file identici.
 
 **Significato dei colori:**
 
-- Giallo: il file esiste solo da un lato.
-- Verde: il file è più recente del file non colorato dall'altro lato.
-- Rosso: le dimensioni dei file sono diverse.
+- Giallo: Il file esiste solo da un lato.
+- Verde: Il file è più recente del file non colorato dall'altro lato.
+- Rosso: Le dimensioni dei file sono diverse.
+
+///
 
 ## Per saperne di più <a name="go-further"></a>
 
@@ -312,7 +328,7 @@ Di seguito trovi il link alla nostra guida per [risolvere gli errori ricorrenti 
 
 Più in generale, consulta [le nostre guide relative agli hosting condivisi](/products/web-cloud-hosting).
 
-Consulta la [pagina ufficiale di Filezilla](https://filezilla-project.org/).
+Consulta la [pagina ufficiale di FileZilla](https://filezilla-project.org/).
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

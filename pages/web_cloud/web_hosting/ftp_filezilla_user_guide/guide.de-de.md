@@ -166,9 +166,11 @@ Im folgenden Fall wird der Fehler aufgrund eines falschen Hostnamens generiert:
 
 Überprüfen Sie diesen anhand des in Ihrem [OVHcloud Kundencenter](/links/manager) angezeigten Hostnamens.
 
-### Dateitransfer
+///
 
-Um Ihre Dateien per FTP zu übertragen, können Sie diese im linken Fenster (*Local site*) auswählen und Verzeichnisse/Dateien daraus ins rechte Fenster (*Remote site*) verschieben (**Bereich 4** und **5** wie im Abschnitt [Interface Übersicht](#interface) dieses Tutorials dargestellt).
+### 3 - Dateitransfer
+
+Um Ihre Dateien per (S)FTP zu übertragen, können Sie diese im linken Fenster (*Local site*) auswählen und Verzeichnisse/Dateien daraus ins rechte Fenster (*Remote site*) verschieben (**Bereich 4** und **5** wie im Abschnitt [Interface Übersicht](#interface) dieses Tutorials dargestellt).
 
 Achten Sie darauf, das Zielverzeichnis im rechten Fenster auszuwählen.
 
@@ -176,7 +178,11 @@ Sobald diese Aktion abgeschlossen ist, werden Ihre Dateien automatisch in die Wa
 
 ![Hosting](/pages/assets/screens/other/web-tools/filezilla/drag-drop-en.png){.thumbnail}
 
-### Warteschlange (Queue)
+### 4 - Weitere Funktionen von FileZilla
+
+**Klicken Sie auf die Überschriften unten, um deren Inhalt anzuzeigen.**
+
+/// details | Warteschlange (Queue)
 
 Sie finden die Warteschlange-Anzeige im Bereich **6**, wie im Abschnitt [Interface Übersicht](#interface) dieses Tutorials dargestellt.
 
@@ -188,7 +194,9 @@ Hier finden Sie:
 
 ![Hosting](/pages/assets/screens/other/web-tools/filezilla/waiting-list-view.png){.thumbnail}
 
-### Kontextmenü Server
+///
+
+/// details | Kontextmenü Server
 
 Klicken Sie mit der rechten Maustaste auf eine der Dateien in Bereich **5** (wie im Abschnitt [Interface Übersicht](#interface) dieses Tutorials dargestellt).
 
@@ -201,14 +209,14 @@ Es erscheint ein Kontextmenü mit mehreren Optionen:
 - **Refresh**: Aktualisiert die Anzeige, um eine aktuelle Ansicht der Dateien zu erhalten.
 - **Delete**: Erlaubt es, die ausgewählte Datei zu löschen.
 - **Rename**: Erlaubt es, die ausgewählte Datei umzubenennen.
-- **Copy URL(s) to clipboard**: Erlaubt es, den Direktlink zur Datei automatisch zu kopieren. Beispiel einer so generierten URL: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/VERZEICHNIS/dateiname.jpg`
+- **Copy URL(s) to clipboard**: Erlaubt es, den Direktlink zur Datei automatisch zu kopieren. Beispiel einer so generierten URL: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/VERZEICHNIS/dateiname.jpg`.
 - **File permissions...**: Erlaubt es, die Dateiberechtigungen zu bearbeiten (**chmod**).
 
 ![Hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
 
-## Nützliche Informationen <a name="useful-information"></a>
+///
 
-### Zugriffsrechte auf Dateien und Ordner (CHMOD)
+/// details | Zugriffsrechte auf Dateien und Ordner (CHMOD)
 
 Klicken Sie mit der rechten Maustaste auf eine der auf dem Server vorhandenen Dateien und wählen Sie `File permissions...`{.action}.
 
@@ -235,7 +243,9 @@ Geben Sie die Berechtigungen ein, die Sie zuweisen möchten. Der *chmod*-Wert wi
 
 Sie können die Option “Recurse into subdirectories” aktivieren, um nicht nur die Rechte des betreffenden Ordners, sondern auch die der Ordner und Dateien innerhalb dieses Ordners zu ändern.
 
-### Eine blockierte Website wieder freischalten
+///
+
+/// details | Eine blockierte Website wieder freischalten
 
 > [!primary]
 >
@@ -279,7 +289,9 @@ SEITE CHMOD 705 .
 > Wenn dies auch nicht funktioniert, kontaktieren Sie unseren Support.
 > 
 
-### Transfer von Binärdateien 
+///
+
+/// details | Transfer von Binärdateien 
 
 Bei binären Dateien, wie z.B. **CGI**-Dateien, kann es von Interesse sein, wie der Transfer ausgeführt wird.
 
@@ -287,7 +299,9 @@ Um den Transfertyp zu ändern, wählen Sie `Transfer`{.action} im Hauptmenü und
 
 ![Hosting](/pages/assets/screens/other/web-tools/filezilla/transfert-binary-files.png){.thumbnail}
 
-### Ordnervergleich
+///
+
+/// details | Ordnervergleich
 
 ![Hosting](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
@@ -304,6 +318,8 @@ Wenn Sie mit der rechten Maustaste auf das Icon klicken, können Sie den Verglei
 - Gelb: Die Datei existiert nur auf einer Seite.
 - Grün: Die Datei ist aktueller als die farblose Datei auf der anderen Seite.
 - Rot: Die Dateigrößen sind unterschiedlich.
+
+///
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

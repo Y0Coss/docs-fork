@@ -182,7 +182,7 @@ Aparecerá un menú contextual con varias opciones:
 - Actualizar: actualiza la visualización de los datos para mostrar correctamente los diferentes archivos.
 - Eliminar: le permite borrar el archivo seleccionado.
 - Renombrar: le permite renombrar el archivo seleccionado.
-- Copiar la(s) dirección(s) al portapapeles: permite copiar automáticamente el vínculo directo al archivo seleccionado. Ejemplo de URL que puede generarse: `ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg`
+- Copiar la(s) dirección(s) al portapapeles: permite copiar automáticamente el vínculo directo al archivo seleccionado. Ejemplo de URL que puede generarse: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/mondossier1/monfichier.jpg`
 - Permisos de archivo: le permite cambiar los permisos de los archivos (Chmod)
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}

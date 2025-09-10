@@ -165,9 +165,9 @@ En el siguiente caso, el error se genera con un nombre de host incorrecto:
 
 Compruebe que la contraseña del host se corresponde con el nombre del host que haya indicado en el [área de cliente de OVHcloud](/links/manager).
 
-### Transferencia de archivos
+### 3 - Transferencia de archivos
 
-Para transferir sus archivos por FTP, puede seleccionarlos y arrastrarlos y soltarlos desde la ventana izquierda *(ordenador)* a la derecha *(alojamiento)* (**áreas 4 y 5** descritas en la sección de este tutorial sobre [la interfaz](#interface) de Filezilla).
+Para transferir sus archivos por (S)FTP, puede seleccionarlos y arrastrarlos y soltarlos desde la ventana izquierda *(ordenador)* a la derecha *(alojamiento)* (**áreas 4 y 5** descritas en la sección de este tutorial sobre [la interfaz](#interface) de Filezilla).
 
 Seleccione el directorio de destino en la ventana derecha.
 
@@ -175,9 +175,13 @@ Una vez realizada esta acción, los archivos se pondrán automáticamente en esp
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/drag-drop-en.png){.thumbnail}
 
-### Vista de la cola de espera
+### 4 - Otras funcionalidades de FileZilla
 
-Hay disponible una vista de la cola (**zona 6** descrita en la sección de este tutorial sobre [la interfaz](#interface) de Filezilla).
+**Haga clic en los títulos de abajo para ver sus respectivos contenidos.**
+
+/// details | Vista de la cola de espera
+
+Hay disponible una vista de la cola (**zona 6** descrita en la sección de este tutorial sobre [la interfaz](#interface) de FileZilla).
 
 En esta zona se encuentran:
 
@@ -187,27 +191,29 @@ En esta zona se encuentran:
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/waiting-list-view.png){.thumbnail}
 
-### Menú contextual del servidor
+///
 
-Haga clic derecho en uno de los archivos del **área 5** (descrito en la sección de este tutorial sobre [la interfaz](#interface) de Filezilla).
+/// details | Menú contextual del servidor
+
+Haga clic derecho en uno de los archivos del **área 5** (descrito en la sección de este tutorial sobre [la interfaz](#interface) de FileZilla).
 
 Aparecerá un menú contextual con varias opciones:
 
-- Descargar: descarga el archivo en la carpeta local abierta.
-- Añadir los archivos a la cola de espera: añade el archivo a la cola de espera, que le permite, por ejemplo, retrasar la descarga de los datos.
-- Mostrar/Editar: permite ver o editar directamente un archivo del alojamiento. Sin embargo, es necesario tener un programa capaz de leer el archivo instalado en su equipo.
-- Crear una carpeta: permite crear una nueva carpeta directamente en el alojamiento remoto.
-- Actualizar: actualiza la visualización de los datos para mostrar correctamente los diferentes archivos.
-- Eliminar: le permite borrar el archivo seleccionado.
-- Renombrar: le permite renombrar el archivo seleccionado.
-- Copiar la(s) dirección(s) al portapapeles: permite copiar automáticamente el vínculo directo al archivo seleccionado. Ejemplo de URL que puede generarse: `ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg`
-- Permisos de archivo: le permite cambiar los permisos de los archivos (Chmod)
+- Descargar: Descarga el archivo en la carpeta local abierta.
+- Añadir los archivos a la cola de espera: Añade el archivo a la cola de espera, que le permite, por ejemplo, retrasar la descarga de los datos.
+- Mostrar/Editar: Permite ver o editar directamente un archivo del alojamiento. Sin embargo, es necesario tener un programa capaz de leer el archivo instalado en su equipo.
+- Crear una carpeta: Permite crear una nueva carpeta directamente en el alojamiento remoto.
+- Actualizar: Actualiza la visualización de los datos para mostrar correctamente los diferentes archivos.
+- Eliminar: Le permite borrar el archivo seleccionado.
+- Renombrar: Le permite renombrar el archivo seleccionado.
+- Copiar la(s) dirección(s) al portapapeles: Permite copiar automáticamente el vínculo directo al archivo seleccionado. Ejemplo de URL que puede generarse: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/mondossier1/monfichier.jpg`.
+- Permisos de archivo: Le permite cambiar los permisos de los archivos (Chmod).
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
 
-## Información útil <a name="useful-information"></a>
+///
 
-### Permisos de acceso (Chmod) a archivos y carpetas
+/// details | Permisos de acceso (Chmod) a archivos y carpetas
 
 Haga clic derecho en uno de los archivos del servidor y seleccione `Permisos de archivo...`{.action}.
 
@@ -236,7 +242,9 @@ Puede marcar la casilla "Seguridad en las subcarpetas".
 
 Esto modificará los permisos de la carpeta en cuestión, así como los archivos y carpetas que puedan estar presentes en ella.
 
-### Reapertura del sitio
+///
+
+/// details | Reapertura del sitio
 
 > [!primary]
 >
@@ -280,7 +288,9 @@ SITE CHMOD 705 .
 > Si todavía no funciona, contacte con el soporte.
 > 
 
-### Transferencia de archivos binarios
+///
+
+/// details | Transferencia de archivos binarios
 
 Para archivos binarios, como archivos de tipo **CGI**, puede ser interesante elegir cómo se realizará la transferencia.
 
@@ -288,11 +298,13 @@ Para cambiar el tipo de transferencia, seleccione `Transferencia`{.action} en el
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/transfert-binary-files.png){.thumbnail}
 
-### Comparación de directorios
+///
+
+/// details | Comparación de directorios
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
-La opción de comparación de archivos muestra colores en los **cuadros 4** y **5** (presentados en la sección de este tutorial sobre [la interfaz](#interface) de Filezilla). Esta opción permite destacar las diferencias entre los archivos y carpetas locales y los del servidor. 
+La opción de comparación de archivos muestra colores en los **cuadros 4** y **5** (presentados en la sección de este tutorial sobre [la interfaz](#interface) de FileZilla). Esta opción permite destacar las diferencias entre los archivos y carpetas locales y los del servidor. 
 
 Pulse con el botón derecho del ratón sobre el icono para cambiar el modo de comparación. A continuación, podrá activar o desactivar la opción, así como:
 
@@ -302,9 +314,11 @@ Pulse con el botón derecho del ratón sobre el icono para cambiar el modo de co
 
 **Significado de los colores:**
 
-- Amarillo: el archivo sólo existe en un lado.
-- Verde: el archivo es más reciente que el archivo sin color del otro lado.
-- Rojo: los tamaños de los archivos son diferentes.
+- Amarillo: El archivo sólo existe en un lado.
+- Verde: El archivo es más reciente que el archivo sin color del otro lado.
+- Rojo: Los tamaños de los archivos son diferentes.
+
+///
 
 ## Más información <a name="go-further"></a>
 
@@ -312,7 +326,7 @@ A continuación puede consultar nuestra guía para [solucionar los errores recur
 
 En términos más generales, consulte [todas nuestras guías relativas a los alojamientos compartidos](/products/web-cloud-hosting).
 
-No dude en consultar la [página oficial de Filezilla](https://filezilla-project.org/).
+No dude en consultar la [página oficial de FileZilla](https://filezilla-project.org/).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 

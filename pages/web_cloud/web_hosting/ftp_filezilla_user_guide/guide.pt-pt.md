@@ -165,9 +165,11 @@ No caso abaixo, o erro é gerado por um nome de host incorreto:
 
 Verifique este último em relação ao nome do host declarado na sua [Área de Cliente OVHcloud](/links/manager).
 
-### Transferência dos ficheiros
+///
 
-Para transferir os seus ficheiros através de FTP, pode selecioná-los e deslizar e descarregar ficheiros/ficheiros a partir da janela da esquerda *(computador)* para a janela da direita *(alojamento)* (**zonas 4 e 5**, descritas na secção deste tutorial relativa à [interface](#interface) do Filezilla).
+### 3 - Transferência dos ficheiros
+
+Para transferir os seus ficheiros através de (S)FTP, pode selecioná-los e deslizar e descarregar ficheiros/ficheiros a partir da janela da esquerda *(computador)* para a janela da direita *(alojamento)* (**zonas 4 e 5**, descritas na secção deste tutorial relativa à [interface](#interface) do Filezilla).
 
 Tenha o cuidado de selecionar corretamente o diretório alvo na janela da direita.
 
@@ -175,9 +177,13 @@ Uma vez realizada esta ação, os seus ficheiros serão colocados automaticament
 
 ![alojamento](/pages/assets/screens/other/web-tools/filezilla/drag-drop-en.png){.thumbnail}
 
-### Vista da fila de espera
+### 4 - Outras funcionalidades do FileZilla
 
-Está disponível uma vista na fila (**zona 6** descrita na secção deste tutorial relativa à [interface](#interface) de Filezilla).
+**Clique nos títulos abaixo para ver os respetivos conteúdos.**
+
+/// details | Vista da fila de espera
+
+Está disponível uma vista na fila (**zona 6** descrita na secção deste tutorial relativa à [interface](#interface) de FileZilla).
 
 Nesta zona, encontrará:
 
@@ -187,27 +193,29 @@ Nesta zona, encontrará:
 
 ![alojamento](/pages/assets/screens/other/web-tools/filezilla/waiting-list-view.png){.thumbnail}
 
-### Menu contextual Servidor
+///
 
-Clique com o botão direito do rato num dos ficheiros presentes na **zona 5** (descrita na secção deste tutorial relativa à [interface](#interface) de Filezilla).
+/// details | Menu contextual Servidor
+
+Clique com o botão direito do rato num dos ficheiros presentes na **zona 5** (descrita na secção deste tutorial relativa à [interface](#interface) de FileZilla).
 
 Surge um menu contextual e tem várias opções à sua disposição:
 
-- Descarregar: descarregar o ficheiro para a pasta local aberta.
-- Adicionar os ficheiros à fila de espera: adicione o ficheiro à fila de espera, permite-lhe, por exemplo, adiar o download dos dados.
-- Apresentar/Editar: permite-lhe apresentar ou editar diretamente um ficheiro presente no seu alojamento. No entanto, deve ter um software capaz de ler o ficheiro instalado no seu computador.
-- Criar uma pasta: permite-lhe criar uma nova pasta diretamente no alojamento remoto.
-- Atualizar: atualize a visualização dos dados de forma a apresentar corretamente os diferentes ficheiros presentes.
-- Eliminar: permite-lhe eliminar o ficheiro selecionado.
-- Renomear: permite-lhe alterar o nome do ficheiro selecionado.
-- Copiar o(s) endereço(s) na área de transferência: permite-lhe copiar automaticamente o link direto para o ficheiro selecionado. Exemplo de URL que pode ser gerado: `ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg`
-- Permissões de ficheiro: permite-lhe modificar as permissões dos ficheiros (Chmod)
+- Descarregar: Descarregar o ficheiro para a pasta local aberta.
+- Adicionar os ficheiros à fila de espera: Adicione o ficheiro à fila de espera, permite-lhe, por exemplo, adiar o download dos dados.
+- Apresentar/Editar: Permite-lhe apresentar ou editar diretamente um ficheiro presente no seu alojamento. No entanto, deve ter um software capaz de ler o ficheiro instalado no seu computador.
+- Criar uma pasta: Permite-lhe criar uma nova pasta diretamente no alojamento remoto.
+- Atualizar: Atualize a visualização dos dados de forma a apresentar corretamente os diferentes ficheiros presentes.
+- Eliminar: Permite-lhe eliminar o ficheiro selecionado.
+- Renomear: Permite-lhe alterar o nome do ficheiro selecionado.
+- Copiar o(s) endereço(s) na área de transferência: Permite-lhe copiar automaticamente o link direto para o ficheiro selecionado. Exemplo de URL que pode ser gerado: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/my_folder1/my_file.jpg`
+- Permissões de ficheiro: Permite-lhe modificar as permissões dos ficheiros (Chmod)
 
 ![alojamento](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
 
-## Informações úteis <a name="useful-information"></a>
+///
 
-### Direitos de acesso (Chmod) aos ficheiros e às pastas
+/// details | Direitos de acesso (Chmod) aos ficheiros e às pastas
 
 clique com o botão direito do rato num dos ficheiros presentes no servidor e selecione `Permissões de ficheiro...`{.action}.
 
@@ -236,7 +244,9 @@ Pode selecionar a opção "Cursão nas sub-pastas".
 
 Esta situação terá por efeito alterar os direitos do processo em questão, bem como dos processos e ficheiros que nele possam estar presentes.
 
-### Reabertura de site
+///
+
+/// details | Reabertura de site
 
 > [!primary]
 >
@@ -280,7 +290,9 @@ SITE CHMOD 705 .
 > Se ainda não funcionar, contacte o nosso suporte.
 > 
 
-### Transferência de ficheiros binários
+///
+
+/// details | Transferência de ficheiros binários
 
 Para os ficheiros binários, como por exemplo os ficheiros do tipo **CGI**, pode ser interessante escolher a forma como a transferência será realizada.
 
@@ -288,11 +300,13 @@ Para alterar o tipo de transferência, selecione `Transferência`{.action} no me
 
 ![alojamento](/pages/assets/screens/other/web-tools/filezilla/transfert-binary-files.png){.thumbnail}
 
-### Comparação de dossiers
+///
+
+/// details | Comparação de dossiers
 
 ![alojamento](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
-A opção de comparação de ficheiros apresenta cores nas **zonas 4** e **5** (apresentadas na secção deste tutorial relativa à [interface](#interface) de Filezilla). Esta opção permite salientar as diferenças entre os ficheiros e pastas locais e os do servidor. 
+A opção de comparação de ficheiros apresenta cores nas **zonas 4** e **5** (apresentadas na secção deste tutorial relativa à [interface](#interface) de FileZilla). Esta opção permite salientar as diferenças entre os ficheiros e pastas locais e os do servidor. 
 
 Ao clicar direito no ícone, pode alterar o método de comparação. Ser-lhe-á sugerido que ative ou desative a opção, mas também que:
 
@@ -302,9 +316,11 @@ Ao clicar direito no ícone, pode alterar o método de comparação. Ser-lhe-á 
 
 **Significado das cores:**
 
-- Amarela: o ficheiro existe apenas de um lado.
-- Verde: o ficheiro é mais recente que o ficheiro não colorido do outro lado.
-- Vermelho: os tamanhos dos ficheiros são diferentes.
+- Amarela: O ficheiro existe apenas de um lado.
+- Verde: O ficheiro é mais recente que o ficheiro não colorido do outro lado.
+- Vermelho: Os tamanhos dos ficheiros são diferentes.
+
+///
 
 ## Quer saber mais? <a name="go-further"></a>
 
@@ -312,7 +328,7 @@ A seguir, encontrará o link para o nosso manual para [corrigir erros recorrente
 
 De forma mais geral, consulte [o conjunto dos nossos guias relativos aos alojamentos partilhados](/products/web-cloud-hosting).
 
-Não hesite em consultar a [página oficial do Filezilla](https://filezilla-project.org/).
+Não hesite em consultar a [página oficial do FileZilla](https://filezilla-project.org/).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 

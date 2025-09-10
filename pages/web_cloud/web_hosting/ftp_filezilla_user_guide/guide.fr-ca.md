@@ -221,7 +221,7 @@ Un menu contextuel apparait, et plusieurs choix vous sont proposés :
 - Actualiser : Actualise l'affichage des données afin d'afficher correctement les différents fichiers présents.
 - Supprimer : Vous permet de supprimer le fichier sélectionné.
 - Renommer : Vous permet de renommer le fichier sélectionné.
-- Copier l'(es) adresse(s) dans le presse-papier : Vous permet de copier automatiquement le lien direct vers le fichier sélectionné. Exemple d'URL qui peut être générée : `ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg`.
+- Copier l'(es) adresse(s) dans le presse-papier : Vous permet de copier automatiquement le lien direct vers le fichier sélectionné. Exemple d'URL qui peut être générée : `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/mondossier1/monfichier.jpg`.
 - Permissions de fichier : Vous donne la possibilité de modifier les droits des fichiers (Chmod).
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
