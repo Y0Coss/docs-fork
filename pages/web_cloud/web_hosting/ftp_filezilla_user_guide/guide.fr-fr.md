@@ -106,7 +106,7 @@ Si l'accès SFTP de l'utilisateur concerné est `Désactivé` dans le tableau, e
 
 - Pour les offres Perso, cochez la case située à gauche de la mention `Désactivé` dans le tableau.
 
- - Pour les offres Pro et Performance :
+- Pour les offres Pro et Performance :
 
     - 1 : Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à l'utilisateur, puis sur `Modifier`{.action}.
     - 2 : Dans la fenêtre qui s'affiche, section `Protocoles de connexion`, sélectionnez le choix `FTP et SFTP`{.action}, puis cliquez sur `Suivant`{.action}.
@@ -170,7 +170,7 @@ Vérifiez vos identifiants afin de vous assurer qu'aucune erreur ne soit renseig
 
 ///
 
-/// details | Connectino timed out after 20 seconds of inactivity - Could not connect to server
+/// details | Connection timed out after 20 seconds of inactivity - Could not connect to server
 
 Dans le cas ci-dessous, l'erreur est générée par un nom d'hôte incorrect :
 

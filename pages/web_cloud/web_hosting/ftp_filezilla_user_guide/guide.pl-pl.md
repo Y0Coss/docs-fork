@@ -146,7 +146,11 @@ Po kliknięciu przycisku Szybki `Logowanie`{.action} otworzy się okno dialogowe
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
-### Błędy połączenia
+#### Błędy połączenia
+
+**Kliknij napotkany błąd, aby wyświetlić rozwiązanie.**
+
+/// details | Authentication failed - Could not connect to server 
 
 Wyświetlony poniżej komunikat wskazuje błąd w identyfikacji podczas logowania przez FTP lub SFTP do hostingu:
 
@@ -154,10 +158,11 @@ Wyświetlony poniżej komunikat wskazuje błąd w identyfikacji podczas logowani
 
 Ten rodzaj wiadomości jest generowany przez błąd w momencie połączenia Login/Hasło.
 
-Sprawdź dane do logowania, aby upewnić się, że nie został wyświetlony żaden błąd. Możesz zmienić hasło do FTP Twojego hostingu bezpośrednio w [Panelu klienta OVHcloud](/links/manager).
+Sprawdź dane dostępowe, aby upewnić się, że nie podano błędu. W razie potrzeby możesz [zmienić hasło dostępu FTP](/pages/web_cloud/web_hosting/ftp_change_password) bezpośrednio w panelu [Panel klienta OVHcloud](/links/manager).
 
-> [!success]
-> Zapoznaj się z przewodnikiem dotyczącym [zmiany hasła FTP](/pages/web_cloud/web_hosting/ftp_change_password) na hostingu.
+///
+
+/// details | Connection timed out after 20 seconds of inactivity - Could not connect to server
 
 W poniższym przypadku błąd jest generowany przez nieprawidłową nazwę hosta:
 

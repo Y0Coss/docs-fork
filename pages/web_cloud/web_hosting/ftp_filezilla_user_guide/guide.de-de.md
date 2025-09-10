@@ -71,83 +71,93 @@ Führen Sie die folgenden Aktionen aus:
 >
 > Aus Sicherheitsgründen wird das Passwort eines Benutzers nicht auf der Seite `FTP - SSH`{.action} angezeigt. Wenn Sie es vergessen haben, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/ftp_change_password), um es zu ändern.
 
-### FTP-Verbindungen mit FileZilla
+### 2 - Mit FileZilla auf den Speicherplatz Ihres Hostings zugreifen
 
-![Hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+Die Verbindung kann über zwei Dateiübertragungsprotokolle hergestellt werden:
 
-Tragen Sie die nötigen Details in die Schnellverbindungsleiste mithilfe der folgenden Tabelle ein:
+- **F**ile **T**ransfer **P**rotocol (**FTP**).
+- **S**ecure **F**ile **T**ransfer **P**rotocol (**SFTP**).
 
-|Anzugebender Wert|Beschreibung|
-|---|---|
-|Host|Serveradresse, die den Zugriff auf den Speicherplatz Ihres Hostings ermöglicht.<br><br> Bei Webhostings hat sie in der Regel folgende Form: `ftp.clusterXXX.hosting.ovh.net` (wobei `XXX` für die Cluster-Nummer Ihres Hostings steht).|
-|User|Diese Kennung erlaubt Ihnen den Zugriff auf den Speicherplatz Ihres Hostings.|
-|Password|Passwort des FTP-Benutzers.|
-|Port|Wird in der Regel automatisch durch die Software ergänzt. Wenn nicht, geben Sie ein:<br><br>\- Port `21` für eine FTP Verbindung.<br>\- Port `22` für eine SFTP-Verbindung (falls aktiviert). Weitere Informationen zu SFTP finden Sie [weiter unten in diesem Tutorial](#sftp).|
-
-Falls diese Informationen nicht vorliegen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action} und klicken Sie dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Die Informationen zu Ihrem Speicherplatz werden dort angezeigt.
-
-![Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-> [!warning]
+> [!primary]
 >
-> Einige OVHcloud Angebote verwenden Port 22 nicht für SFTP- und/oder SSH-Verbindungen. Im Zweifel verwenden Sie die Ports, die in Ihrem [OVHcloud Kundencenter](/links/manager) zu finden sind.
+> Wir empfehlen Ihnen, so weit wie möglich das **SFTP** Protokoll zu verwenden, um sich mit FileZilla mit Ihrem Speicherplatz zu verbinden.
 >
+> Das **SFTP** Protokoll verschlüsselt den Datenaustausch zwischen Ihrem Gerät und Ihrem Webhosting. Wenn jedoch bei der Verwendung Einschränkungen auftreten, wie z. B. Benutzersegmentierung oder Ordnersegmentierung, müssen Sie in diesem Fall das **FTP**-Protokoll verwenden.
 
-Wenn Sie alle Werte eingetragen haben wie im Bild zu sehen, klicken Sie auf `Quickconnect`{.action}.
+**Klicken Sie auf das gewünschte Verbindungsprotokoll, um die Erläuterungen anzuzeigen.**
 
-![Hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+/// details | Mit FileZilla per SFTP mit dem Speicherplatz Ihres Webhostings verbinden. <a name="sftp"></a>
 
-Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie über den Status im Bereich **2** informiert. So können Sie Ihre Verzeichnisse und Dateien auf Ihrem Hosting einsehen (Bereich **3**).
-
-### Verbindung mit SFTP in FileZilla <a name="sftp"></a>
-
-Das Protokoll **SFTP** (**S**ecure **F**ile **T**ransfer **P**rotocol) ist nahezu identisch mit **FTP**, verwendet aber (wie SSH) standardmäßig Port 22 statt Port 21. Wenn Sie ein Cloud Web Hosting-Angebot verwenden, verwenden Sie den Port, der in Ihrem [OVHcloud Kundencenter](/links/manager) angezeigt wird. Port 22 ist aus Sicherheitsgründen für Cloud Web Hostings deaktiviert und kann daher nicht für Verbindungen über SSH oder SFTP verwendet werden.
+**SFTP** verwendet wie SSH den Standard-Port 22 anstelle von Port 21. Wenn Sie ein Cloud Web Hosting Angebot verwenden, müssen Sie den Port verwenden, der in Ihrem [OVHcloud Kundencenter](/links/manager) angezeigt wird. Port 22 ist für Cloud Web Hostings per SSH und SFTP deaktiviert.
 
 > [!success]
 >
-> SFTP ist für alle Hosting-Dienste von OVHcloud kostenlos aktivierbar (außer bei den alten 60free/demo1g Angeboten).
-> 
+> SFTP ist für alle Hosting-Angebote von OVHcloud kostenlos aktiviert (mit Ausnahme der bisherigen Angebote 60free und demo1g).
+>
 
-#### Aktivierung von SFTP überprüfen
+**SFTP-Aktivierung überprüfen**
 
-Überprüfen Sie zuerst, dass SFTP für Ihren **FTP**-Login aktiviert ist.
+Gehen Sie hierzu in Ihrem [OVHcloud Kundencenter](/links/manager) zum Tab `FTP - SSH`{.action} zurück, wie im [ersten Teil](#part-1) dieser Anleitung beschrieben.
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action} und klicken Sie dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}.
+Suchen Sie in der Tabelle unten auf der Seite nach der Spalte `SFTP`, um sicherzustellen, dass der Benutzer (in der Spalte `Login` der Tabelle) über einen aktiven SFTP-Zugang verfügt. Ist dies nicht der Fall, erscheint der Hinweis `Deaktiviert`.
 
-Überprüfen Sie anschließend, ob **SFTP** in der Tabelle unten aktiv ist.
+Wenn der SFTP-Zugang des betreffenden Benutzers in der Tabelle `Deaktiviert` lautet, gehen Sie wie folgt vor:
 
-![SFTP Start Angebot aktivieren](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
+- Bei Basic Angeboten setzen Sie einen Haken links neben `Deaktiviert` in der Tabelle.
 
-Falls **SFTP** nicht aktiviert ist:
+- Für die Pro und Performance Angebote:
 
-- Klicken Sie auf den Button `...`{.action} rechts neben der Tabelle und dann auf `Bearbeiten`{.action}.
+    - 1: Klicken Sie auf den Button `...`{.action} rechts neben der Zeile für den Benutzer und dann auf `Ändern`{.action}.
+    - 2: Wählen Sie im angezeigten Fenster im Bereich `Verbindungsprotokolle` die Option `FTP und SFTP`{.action} aus und klicken Sie auf `Weiter`{.action}.
+    - 3: Überprüfen Sie die Zusammenfassung der angeforderten Änderung, und klicken Sie dann auf `Bestätigen`{.action}.
 
-![SFTP 1 Aktivierung](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-login.png){.thumbnail}
+**SFTP-Verbindung mit FileZilla**
 
-- Überprüfen Sie im neu angezeigten Fenster, ob eine der folgenden Optionen aktiviert ist:
-    - **FTP und SFTP**: Um SFTP zusätzlich zu FTP zu aktivieren.
-    - **FTP, SFTP und SSH**: Um FTP, SFTP und SSH zu aktivieren.
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
-![SFTP 2 Aktivierung](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-user-step-1-connexion-protocols.png){.thumbnail}
+Geben Sie in der Schnellverbindungsleiste die folgenden Informationen ein:
 
-- Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
+|Auszufüllende Informationen|Details|
+|---|---|
+|Host| Serveradresse für den Zugriff auf den Speicherplatz Ihres Webhostings.<br> Diese hat in der Regel folgende Form: `ftp.clusterXXX.hosting.ovh.net` (die `XXX` stellen die Nummer des Clusters dar, in dem sich Ihr Webhosting befindet).|
+|Benutzer|Kennung, die Sie für den Zugriff auf den Speicherplatz Ihres Hostings verwenden.|
+|Kennwort|Das Kennwort für den Benutzer.|
+|Port|Geben Sie die zuvor im [ersten Teil](#part-1) dieser Anleitung für eine SFTP-Verbindung ermittelte SFTP-Portnummer ein.|
 
-#### SFTP-Verbindung aufbauen
+Wenn Sie in der **1**-Box im Bild unten alles korrekt eingegeben haben, klicken Sie auf `Quickconnect`{.action}.
 
-![Hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+Es wird ein Dialogfeld geöffnet (siehe Abbildung unten), um die Verbindung mit dem Host zu bestätigen, mit dem Sie eine Verbindung herstellen möchten. Wenn Sie auf einem OVHcloud-Host angemeldet sind, können Sie das Kontrollkästchen *Diesem Host immer vertrauen, diesen Schlüssel zum Cache hinzufügen* aktivieren, damit die Software Sie in Zukunft nicht erneut auffordert.
 
-Geben Sie in der Verbindungsleiste folgende Werte ein, um die Verbindung zum Remote-Server (Ihrem Hosting) herzustellen:
+![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
-- Host: `ftp.clusterXXX.hosting.ovh.net` (Ersetzen Sie `XXX` durch die Nummer Ihres Hosting-Clusters.)
-- ID: Ihr FTP-Login
-- Password: Das dem FTP-Benutzer zugewiesene Passwort
-- Port: 22
+///
 
-Nachdem Sie auf den Button `Quickconnect`{.action} geklickt haben, öffnet sich eine Dialogbox (siehe unten stehende Abbildung), um die herzustellende Verbindung mit dem Host zu bestätigen. Wenn Sie sich auf einem OVHcloud Webhosting einloggen, können Sie die Option *Always trust this host, add this key to the cache*, um diese Bestätigung für nachfolgende Verbindungen zu deaktivieren.
+/// details | Mit FileZilla per FTP mit dem Speicherplatz Ihres Webhostings verbinden.
 
-![Hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
-### Verbindungsfehler
+Geben Sie in der Schnellverbindungsleiste die folgenden Informationen ein:
+
+|Auszufüllende Informationen|Details|
+|---|---|
+|Host| Serveradresse für den Zugriff auf den Speicherplatz Ihres Webhostings.<br> Diese hat in der Regel folgende Form: `ftp.clusterXXX.hosting.ovh.net` (die `XXX` stellen die Nummer des Clusters dar, in dem sich Ihr Webhosting befindet).|
+|Benutzer|Kennung, die Sie für den Zugriff auf den Speicherplatz Ihres Hostings verwenden.|
+|Kennwort|Das Kennwort für den Benutzer.|
+|Port|Es wird normalerweise automatisch durch die Software ausgefüllt. Andernfalls geben Sie den Port `21` für eine FTP-Verbindung ein.|
+
+Wenn Sie in der **1**-Box im Bild unten alles korrekt eingegeben haben, klicken Sie auf `Quickconnect`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+
+Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie über den Status in der Randleiste **2** auf dem obigen Bild informiert. Sie können so Ihre bereits auf Ihrem Hosting vorhandenen Verzeichnisse/Ordner und Dateien einsehen (Kasten **3**).
+
+///
+
+#### Verbindungsfehler
+
+**Klicken Sie auf den Fehler, um die Lösung anzuzeigen.**
+
+/// details | Authentication failed - Could not connect to server 
 
 Die unten abgebildete Nachricht zeigt einen Authentifizierungsfehler bei der Verbindung mit einem Webhosting per FTP oder SFTP an:
 
@@ -155,10 +165,11 @@ Die unten abgebildete Nachricht zeigt einen Authentifizierungsfehler bei der Ver
 
 Diese Nachricht entsteht durch einen Fehler beim eingegebenen Login/Passwort.
 
-Überprüfen Sie Ihre Zugangsdaten, um sicherzustellen, dass diese korrekt sind. Nötigenfalls können Sie das Passwort des FTP-Zugangs für Ihr Hosting direkt im [OVHcloud Kundencenter](/links/manager) ändern.
+Überprüfen Sie Ihre Zugangsdaten, um sicherzustellen, dass keine Fehler gemeldet werden. Gegebenenfalls können Sie [Passwort des FTP-Zugangs ändern](/pages/web_cloud/web_hosting/ftp_change_password) Ihres Webhostings direkt im [OVHcloud Kundencenter](/links/manager).
 
-> [!success]
-> Sie finden genauere Informationen dazu in der [Anleitung zur Änderung des FTP-Passworts](/pages/web_cloud/web_hosting/ftp_change_password).
+///
+
+/// details | Connection timed out after 20 seconds of inactivity - Could not connect to server
 
 Im folgenden Fall wird der Fehler aufgrund eines falschen Hostnamens generiert:
 

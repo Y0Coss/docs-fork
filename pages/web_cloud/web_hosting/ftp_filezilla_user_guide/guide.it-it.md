@@ -146,7 +146,11 @@ Dopo aver cliccato sul pulsante `Connessione rapida`{.action}, si apre una casel
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
-### Errori di connessione
+#### Errori di connessione
+
+**Fare clic sull'errore che si sta riscontrando per visualizzare la soluzione.**
+
+/// details | Authentication failed - Could not connect to server 
 
 Il messaggio visualizzato qui sotto indica un errore di identificazione durante la connessione in FTP o SFTP all'hosting condiviso:
 
@@ -154,10 +158,11 @@ Il messaggio visualizzato qui sotto indica un errore di identificazione durante 
 
 Questo tipo di messaggio è generato da un errore nella coppia Login/Password.
 
-Verifica le tue credenziali per assicurarti che non vengano inseriti errori. Se necessario, è possibile modificare la password di accesso FTP dell'hosting direttamente dallo [Spazio Cliente OVHcloud](/links/manager).
+Verifica le tue credenziali per assicurarti che non vengano inseriti errori. Se necessario, è possibile [modificare la password di accesso FTP](/pages/web_cloud/web_hosting/ftp_change_password) del proprio hosting Web direttamente dallo [Spazio Cliente OVHcloud](/links/manager).
 
-> [!success]
-> Per modificare la [password FTP](/pages/web_cloud/web_hosting/ftp_change_password) sulle offerte condivise, consulta questa guida.
+///
+
+/// details | Connection timed out after 20 seconds of inactivity - Could not connect to server
 
 Nel caso sotto riportato, l'errore è generato da un nome host non valido:
 

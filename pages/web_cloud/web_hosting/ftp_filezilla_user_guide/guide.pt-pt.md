@@ -148,16 +148,21 @@ Depois de clicar no botão `Ligação rápida`{.action}, irá abrir uma caixa de
 
 ### Erros de ligação
 
+**Clique no erro encontrado para apresentar a solução.**
+
+/// details | Authentication failed - Could not connect to server 
+
 A mensagem apresentada abaixo indica um erro de identificação aquando da ligação em FTP ou SFTP ao alojamento partilhado:
 
 ![alojamento](/pages/assets/screens/other/web-tools/filezilla/authentification-failed-could-not-connect-server.png){.thumbnail}
 
 Este tipo de mensagem é gerada por um erro no binário Login/Palavra-passe.
 
-Verifique os seus dados de acesso para garantir que não há erros. Se necessário, pode alterar a palavra-passe do acesso FTP do seu alojamento diretamente na [Área de Cliente OVHcloud](/links/manager).
+Verifique as suas credenciais para assegurar que não é introduzido nenhum erro. Se necessário, pode [alterar a palavra-passe do acesso FTP](/pages/web_cloud/web_hosting/ftp_change_password) do seu alojamento web diretamente na [Área de Cliente OVHcloud](/links/manager).
 
-> [!success]
-> Está disponível um guia sobre a [alteração da palavra-passe FTP](/pages/web_cloud/web_hosting/ftp_change_password) nas ofertas partilhadas.
+///
+
+/// details | Connection timed out after 20 seconds of inactivity - Could not connect to server
 
 No caso abaixo, o erro é gerado por um nome de host incorreto:
 
