@@ -1,25 +1,39 @@
 ---
-title: "Tutorial - Using FileZilla with your OVHcloud hosting"
-excerpt: "Find here a tutorial for using the FileZilla software on your web hosting"
-updated: 2025-06-10
+title: "Web Hosting - How to use FileZilla"
+excerpt: "Find out how to log in to your OVHcloud Web Hosting plan’s storage space, and manage the data stored on it, using FileZilla software"
+updated: 2025-09-09
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 > [!primary]
 > **FTP Explorer/Net2FTP tool deactivated**
 >
-> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [Filezilla](https://filezilla-project.org/download.php) or [Cyberduck](https://cyberduck.io/) software.
+> For web hosting plans, you can no longer log in to your FTP storage space via the FTP Explorer/Net2FTP online tool. To continue connecting to your web hosting plan via FTP, use the [FileZilla](https://filezilla-project.org/download.php) or [Cyberduck](https://cyberduck.io/) software.
 
 ## Objective
 
 FileZilla is free software available on several operating systems (Windows, macOS, etc.).
-You can use it to put files or your website online by [connecting to your web hosting plan’s FTP space](/pages/web_cloud/web_hosting/ftp_connection).
+You can use it to put files or your website online by [connecting to your web hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection).
 
-**Find out how to use the FileZilla software on your web hosting plan.**
+**Find out how to log in to your OVHcloud Web Hosting plan’s storage space, and manage the data stored on it, using FileZilla software.**
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
-- An [OVHcloud Web Hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager).
+- An [OVHcloud Web Hosting plan](/links/web/hosting).
 - You need to have installed the FileZilla client on your computer. It is available free of charge from the page [filezilla-project.org](https://filezilla-project.org/download.php).
 
 ## Interface overview <a name="interface"></a>

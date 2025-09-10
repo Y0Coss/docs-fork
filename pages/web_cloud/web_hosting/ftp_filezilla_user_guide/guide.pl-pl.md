@@ -1,26 +1,40 @@
 ---
-title: "Tutorial - Korzystanie z FileZilla na Twoim hostingu OVHcloud"
-excerpt: "Zapoznaj się z przewodnikiem dotyczącym korzystania z oprogramowania Filezilla na hostingu"
-updated: 2025-06-10
+title: "Hosting WWW - Jak używać programu FileZilla"
+excerpt: "Dowiedz się, jak zalogować się do przestrzeni dyskowej hostingu OVHcloud i zarządzać danymi w niej zawartymi za pomocą oprogramowania FileZilla"
+updated: 2025-09-09
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 > [!primary]
 > **Wyłączanie narzędzia FTP Explorer/Net2FTP**
 >
-> W przypadku hostingu WWW nie jest już możliwe zalogowanie się do przestrzeni FTP przy użyciu narzędzia online FTP Explorer/Net2FTP. Aby kontynuować łączenie się przez FTP z Twoim hostingiem, skorzystaj z oprogramowania [Filezilla](https://filezilla-project.org/download.php) lub [Cyberduck](https://cyberduck.io/).
+> W przypadku hostingu WWW nie jest już możliwe zalogowanie się do przestrzeni FTP przy użyciu narzędzia online FTP Explorer/Net2FTP. Aby kontynuować łączenie się przez FTP z Twoim hostingiem, skorzystaj z oprogramowania [FileZilla](https://filezilla-project.org/download.php) lub [Cyberduck](https://cyberduck.io/).
 
 ## Wprowadzenie 
 
 FileZilla to oprogramowanie dostępne bezpłatnie w wielu systemach operacyjnych (Windows, macOS, etc).
-Umożliwia on umieszczanie w Internecie plików lub Twojej strony WWW, [zalogując się do przestrzeni FTP](/pages/web_cloud/web_hosting/ftp_connection) Twojego hostingu.
+Umożliwia wgranie plików lub Twojej strony WWW do trybu online poprzez [zalogowanie się do przestrzeni dyskowej](/pages/web_cloud/web_hosting/ftp_connection) na Twoim hostingu.
 
-**Dowiedz się, jak korzystać z oprogramowania Filezilla na hostingu.**
+**Dowiedz się, jak zalogować się do przestrzeni dyskowej hostingu OVHcloud i zarządzać danymi w niej zawartymi za pomocą oprogramowania FileZilla.**
 
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Posiadanie [hostingu WWW](/links/web/hosting).
-- Instalacja programu Filezilla na Twoim komputerze Jest on dostępny bezpłatnie na stronie [filezilla-project.org](https://filezilla-project.org/download.php)
+- Instalacja programu FileZilla na Twoim komputerze Jest on dostępny bezpłatnie na stronie [filezilla-project.org](https://filezilla-project.org/download.php).
 
 ## Prezentacja interfejsu <a name="interface"></a>
 

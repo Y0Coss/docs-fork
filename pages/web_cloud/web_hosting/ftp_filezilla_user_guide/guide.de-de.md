@@ -1,27 +1,41 @@
 ---
-title: "Tutorial - FileZilla mit Ihrem OVHcloud Hosting nutzen"
-excerpt: "Verwendung der FileZilla Software mit Ihrem Webhosting"
-updated: 2025-06-10
+title: "Webhosting - Verwendung von FileZilla"
+excerpt: "In dieser Anleitung erfahren Sie, wie Sie sich mit dem Speicherplatz Ihres OVHcloud Webhostings verbinden und die darin enthaltenen Daten mithilfe der FileZilla Software verwalten"
+updated: 2025-09-09
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 > [!primary]
 > **FTP-Explorer/Net2FTP deaktivieren**
 >
-> Bei Webhostings ist es nicht mehr möglich, sich mit dem FTP-Speicherplatz über das Online-Tool FTP Explorer/Net2FTP zu verbinden. Um sich weiterhin per FTP mit Ihrem Webhosting zu verbinden, verwenden Sie die Programme [Filezilla](https://filezilla-project.org/download.php) oder [Cyberduck](https://cyberduck.io/).
+> Bei Webhostings ist es nicht mehr möglich, sich mit dem FTP-Speicherplatz über das Online-Tool FTP Explorer/Net2FTP zu verbinden. Um sich weiterhin per FTP mit Ihrem Webhosting zu verbinden, verwenden Sie die Programme [FileZilla](https://filezilla-project.org/download.php) oder [Cyberduck](https://cyberduck.io/).
 
 ## Ziel
 
 FileZilla ist ein FTP-Client, der für mehrere Betriebssystemen (Windows, macOS etc.) kostenlos zur Verfügung steht.
 
-Sie können damit Dateien bzw. Ihre Websiten online stellen, indem Sie sich im [FTP-Bereich Ihres Hostings einloggen](/pages/web_cloud/web_hosting/ftp_connection).
+Sie können damit Dateien oder Ihre Website online stellen, indem Sie sich [mit dem Speicherplatz verbinden](/pages/web_cloud/web_hosting/ftp_connection) Ihres Webhostings verbinden.
 
-**In dieser Anleitung erfahren Sie, wie Sie FileZilla mit Ihrem Webhosting verwenden.**
+**In dieser Anleitung erfahren Sie, wie Sie sich mit dem Speicherplatz Ihres OVHcloud Webhostings verbinden und die darin enthaltenen Daten mithilfe der FileZilla Software verwalten.**
 
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](/links/web/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben FileZilla auf Ihrem Gerät installiert. Das Programm ist kostenlos verfügbar auf der offiziellen Seite: [filezilla-project.org](https://FileZilla-project.org/download.php)
+- Sie haben FileZilla auf Ihrem Gerät installiert. Das Programm ist kostenlos verfügbar auf der offiziellen Seite: [filezilla-project.org](https://FileZilla-project.org/download.php).
 
 ## Interface Übersicht <a name="interface"></a>
 

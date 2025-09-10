@@ -1,26 +1,40 @@
 ---
-title: "Tutorial - Utilizar o FileZilla com o seu alojamento OVHcloud"
-excerpt: "Encontre aqui um tutorial para a utilização do software Filezilla no seu alojamento partilhado"
-updated: 2025-06-10
+title: "Alojamento web - Como utilizar o FileZilla"
+excerpt: "Saiba como aceder ao espaço de armazenamento do seu alojamento web OVHcloud e gerir os dados nele contidos graças ao software FileZilla"
+updated: 2025-09-09
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 > [!primary]
 > **Ferramenta FTP Explorer/Net2FTP desativada**
 >
-> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [Filezilla](https://filezilla-project.org/download.php) ou [Cyberduck](https://cyberduck.io/).
+> Para os alojamentos web, já não é possível ligar-se ao espaço de armazenamento FTP através da ferramenta online FTP Explorer/Net2FTP. Para continuar a ligar-se em FTP ao seu alojamento web, utilize os programas [FileZilla](https://filezilla-project.org/download.php) ou [Cyberduck](https://cyberduck.io/).
 
 ## Objetivo
 
 O FileZilla é um software disponível gratuitamente em vários sistemas operativos (Windows, macOS, etc.).
-Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento.
+Permite publicar ficheiros ou o seu website [ligando-se ao espaço de armazenamento](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web.
 
-**Saiba como utilizar o software Filezilla com o seu alojamento partilhado.**
+**Saiba como aceder ao espaço de armazenamento do seu alojamento web OVHcloud e gerir os dados nele contidos graças ao software FileZilla.**
 
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 - Ter um serviço de [alojamento Web da OVHcloud](/links/web/hosting).
-- Ter instalado o software Filezilla no seu computador. Este último está disponível gratuitamente a partir da página [filezilla-project.org](https://filezilla-project.org/download.php)
+- Ter instalado o software FileZilla no seu computador. Este último está disponível gratuitamente a partir da página [filezilla-project.org](https://filezilla-project.org/download.php).
 
 ## Apresentação da interface <a name="interface"></a>
 
