@@ -96,7 +96,7 @@ Połączenie może być realizowane przez dwa protokoły transferu plików:
 
 **Sprawdź aktywację protokołu SFTP**
 
-W tym celu wróć do zakładki `FTP-SSH`{.action} w [Panelu klienta OVHcloud](/links/manager), jak pokazano w [pierwszej części](##part-1) tego przewodnika.
+W tym celu wróć do zakładki `FTP-SSH`{.action} w [Panelu klienta OVHcloud](/links/manager), jak pokazano w [pierwszej części](#part-1) tego przewodnika.
 
 W tabeli na dole strony znajdź kolumnę `SFTP`, aby sprawdzić, czy dany użytkownik (w kolumnie `Login` tabeli) posiada aktywny dostęp SFTP. Jeśli tak nie jest, pojawi się informacja `Wyłączona`.
 
@@ -149,6 +149,32 @@ Kiedy wszystko zostanie poprawnie wpisane w ramce **1** na poniższym obrazku, k
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
 
 Jeśli logowanie się powiodło, zostaniesz powiadomiony o statusie w ramce **2** na powyższym obrazku. Dzięki temu możesz sprawdzić, które katalogi/foldery oraz pliki są już zainstalowane na Twoim hostingu (ramka **3**).
+
+///
+
+#### Błędy połączenia
+
+**Kliknij na zgłaszany błąd, aby wyświetlić rozwiązanie.**
+
+/// details | Authentication failed - Could not connect to server
+
+Poniższy komunikat wskazuje błąd identyfikacji, który wystąpił podczas połączenia z hostingiem współdzielonym przez FTP lub SFTP:
+
+![Hosting](/pages/assets/screens/other/web-tools/filezilla/authentication-failed-could-not-connect-server.png){.thumbnail}
+
+Ten rodzaj wiadomości jest generowany przez błąd w parze Login/Password.
+
+Sprawdź dane logowania, aby upewnić się, że nie wystąpiły błędy. [Zmiana hasła dostępu FTP](/pages/web_cloud/web_hosting/ftp_change_password) Twojego hostingu WWW bezpośrednio w [Panelu klienta OVHcloud](/links/manager).
+
+///
+
+/// details | Connection timed out after 20 seconds of inactivity - Could not connect to server
+
+W poniższym przypadku błąd jest generowany przez niepoprawną nazwę hosta:
+
+![Hosting](/pages/assets/screens/other/web-tools/filezilla/connection-timed-out-after-20s.png){.thumbnail}
+
+Upewnij się, czy jest ona powiązana z nazwą hosta zadeklarowaną w [Panelu klienta OVHcloud](/links/manager).
 
 ///
 
