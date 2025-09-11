@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Como utilizar o FileZilla"
 excerpt: "Saiba como aceder ao espaço de armazenamento do seu alojamento web OVHcloud e gerir os dados nele contidos graças ao software FileZilla"
-updated: 2025-09-09
+updated: 2025-09-11
 ---
 
 <style>
@@ -70,81 +70,87 @@ Efetue as seguintes ações:
 >
 > Por razões de segurança, a palavra-passe de um utilizador não aparece na página do separador `FTP - SSH`{.action}. Se se esquecer da palavra-passe, consulte [este manual](/pages/web_cloud/web_hosting/ftp_change_password) para obter mais informações.
 
-### Ligação com Filezilla em FTP
+### 2 - Ligue-se ao espaço de armazenamento do seu alojamento graças ao FileZilla
 
-![alojamento](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+Existem dois protocolos para a transferência de ficheiros para estabelecer ligação:
 
-A partir da barra de ligação rápida, complete as informações através da seguinte tabela:
+- **F**ile **T**ransfer **P**rotocol (**FTP**).
+- **S**ecure **F**ile **T**ransfer **P**rotocol (**SFTP**).
 
-|Informação solicitada|Detalhes|
-|---|---|
-|Host| Endereço do servidor que permite aceder ao espaço de armazenamento do seu alojamento.<br><br> Para os alojamentos partilhados, tem geralmente esta forma: `ftp.clusterXXX.hosting.ovh.net` (os `XXX` representam o número do cluster onde está o seu alojamento)|
-|Utilizador|Identificador que lhe permite aceder ao espaço de armazenamento do seu alojamento.|
-|Palavra-passe|Password associada ao utilizador.|
-|Porta|Geralmente, é automaticamente complementado pelo software. Caso contrário, introduza:<br><br>- a porta 21 para uma ligação FTP;<br>- a porta 22 para uma ligação SFTP (no caso de esta estar ativada). Encontre mais informações sobre o SFTP na secção [dedicada deste tutorial](#sftp).|
-
-Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links/manager) na secção `Web Cloud`{.action} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento:
-
-![alojamento](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-> [!warning]
+> [!primary]
 >
-> Algumas ofertas da OVHcloud não utilizam a porta 22 para as ligações em SFTP e/ou SSH. Utilize as portas que aparecem na sua [Área de Cliente OVHcloud](/links/manager)
+> Sempre que possível, recomendamos que privilegie a utilização do protocolo **SFTP** para se ligar ao seu espaço de armazenamento com FileZilla.
 >
+> O protocolo **SFTP** encripta o intercâmbio de dados entre o dispositivo e o alojamento web. No entanto, se encontrar restrições de utilização, nomeadamente na segmentação dos utilizadores ou das pastas, deverá nesse caso utilizar o protocolo **FTP**.
 
-Quando tudo estiver corretamente introduzido na caixa **1** da imagem abaixo, clique em `Ligação rápida`{.action}.
+**Clique no protocolo de ligação pretendido para visualizar as explicações.**
 
-![alojamento](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+/// details | Aceder via SFTP ao espaço de armazenamento do seu alojamento web graças ao FileZilla. <a name="sftp"></a>
 
-Se a ligação for bem-sucedida, será informado através do estado presente na caixa **2**. Assim, poderá consultar os seus diretórios/pastas e ficheiros já presentes no seu alojamento (caixa **3**).
-
-### Ligação com Filezilla em SFTP <a name="sftp"></a>
-
-O **SFTP** (para **S**ecure **F**ile **T**ransfer **P**rotocol) é um protocolo semelhante ao **FTP**. Como o SSH, utiliza a porta 22 predefinida em vez da porta 21. Se utiliza uma oferta de alojamento Cloud Web, deve utilizar a porta apresentada na [Área de Cliente OVHcloud](/links/manager). A porta 22 é desativada por segurança em SSH e SFTP para os alojamentos Cloud Web.
+O **SFTP** utiliza, tal como o SSH, a porta 22 predefinida em vez da porta 21. Se utiliza um serviço de alojamento Cloud Web, deve utilizar a porta que se apresenta na sua [Área de Cliente OVHcloud](/links/manager). A porta 22 é desativada por segurança em SSH e em SFTP para os alojamentos Cloud Web.
 
 > [!success]
 >
-> O SFTP pode ser ativado gratuitamente para todas as ofertas de alojamento da OVHcloud (exceto as antigas ofertas 60free/demo1g).
-> 
+> O SFTP pode ser ativado de forma gratuita para todas as ofertas de alojamento OVHcloud (exceto para as ofertas anteriores, 60free e demo1g).
+>
 
-#### Verificar a ativação de SFTP
+**Verificar a ativação do protocolo SFTP**
 
-Em primeiro lugar, verifique se o SFTP está ativado para o seu **Login FTP**.
+Para isso, volte ao separador FTP-SSH`{.action} do seu [Área de Cliente OVHcloud](/links/manager) tal como indicado na [primeira parte](#part-1) deste guia.
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}.
+Na tabela que se encontra na parte inferior da página, repare na coluna `SFTP` para verificar se o utilizador (presente na coluna `Nome de utilizador` da tabela) em questão dispõe de um acesso SFTP ativo. Se não for o caso, será apresentada a menção `Desativado`.
 
-De seguida, verifique se o **SFTP** está ativo na tabela.
+Se o acesso SFTP do utilizador em questão estiver `Desativado` na tabela, efetue as seguintes etapas:
 
-![Ativação SFTP oferta start](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
+- Para as ofertas Perso, selecione a opção situada à esquerda da menção `Desativado` na tabela.
 
-Se não estiver ativo:
+- Para as ofertas Pro e Performance:
 
-- Clique no botão `...`{.action} à direita da tabela e, a seguir, em `Editar`{.action}.
+    - 1 : Clique no botão `...`{.action} à direita da linha correspondente ao utilizador, depois em `Alterar`{.action}.
+    - 2: Na janela que se abrir, secção `Protocolos de ligação`, selecione a escolha `FTP e SFTP`{.action} e, em seguida, clique em `Seguinte`{.action}.
+    - 3: Verifique o resumo da modificação solicitada e depois clique em `Validar`{.action}.
 
-![Ativação SFTP 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-login.png){.thumbnail}
+**Ligar-se em SFTP com FileZilla**
 
-- Na nova janela, verifique se está ativada uma das 2 opções seguintes:
-    - **FTP e SFTP**: para ativar apenas o SFTP além do FTP.
-    - **FTP, SFTP e SSH**: para ativar o FTP, o SFTP e o SSH.
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
-![Ativação SFTP 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-user-step-1-connexion-protocols.png){.thumbnail}
+A partir da barra de ligação rápida, preencha as informações utilizando a tabela abaixo:
 
-- A seguir, clique em `Seguinte`{.action} e depois em `Validar`{.action}
+|Informações a introduzir|Detalhes|
+|---|---| 
+|Host| Endereço do servidor que permite aceder ao espaço de armazenamento do seu alojamento web.<br> Apresenta geralmente esta forma: `ftp.clusterXXX.hosting.ovh.net` (os `XXX` representam o número do cluster onde se encontra o seu alojamento web).|
+|Utilizador|ID que lhe permite aceder ao espaço de armazenamento do seu alojamento.|
+|Palavra-passe|Palavra-passe associada ao utilizador.|
+|Porta|Introduza o número da porta SFTP obtida anteriormente na [primeira parte](#part-1) deste manual para uma ligação SFTP.|
 
-#### Lançar a ligação SFTP
+Depois de tudo estar inserido corretamente no quadro **1** da imagem abaixo, clique em `Ligação rápida`{.action}.
 
-![alojamento](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+Ao fazer isso, uma caixa de diálogo é aberta (veja a imagem abaixo) para certificar a conexão ao host no qual você está prestes a se conectar. Ao estar ligado a um host OVHcloud, pode selecionar a opção *Confie sempre nesse host, adicione esta chave à cache* para que o software não volte a pedir-lhe.
 
-Na secção superior da Filezilla e para estabelecer a ligação ao servidor remoto (alojamento), insira os seguintes elementos:
+![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
-- Host: `ftp.clusterXXX.hosting.ovh.net` (não se esqueça de substituir os `X` pelos do seu cluster de alojamento)
-- Identificador: o seu login FTP
-- Password: a palavra-passe FTP associada ao login
-- Porta: 22
+///
 
-Depois de clicar no botão `Ligação rápida`{.action}, irá abrir uma caixa de diálogo (ver imagem abaixo) para certificar a ligação ao host ao qual se vai ligar. Uma vez ligado a um host OVHcloud, pode selecionar *Sempre confiar nesse host, adicionar esta chave à cache* para que o software não o peça novamente no futuro.
+/// details | Aceder via FTP ao espaço de armazenamento do seu alojamento web graças ao FileZilla.
 
-![alojamento](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+
+A partir da barra de ligação rápida, preencha as informações utilizando a tabela abaixo:
+
+|Informações a introduzir|Detalhes|
+|---|---| 
+|Host| Endereço do servidor que permite aceder ao espaço de armazenamento do seu alojamento web.<br> Apresenta geralmente esta forma: `ftp.clusterXXX.hosting.ovh.net` (os `XXX` representam o número do cluster onde se encontra o seu alojamento web).|
+|Utilizador|ID que lhe permite aceder ao espaço de armazenamento do seu alojamento.|
+|Palavra-passe|Palavra-passe associada ao utilizador.|
+|Porta|Normalmente, o serviço é preenchido de forma automática pelo software. Caso contrário, insira a porta `21` para uma ligação FTP.|
+
+Depois de tudo estar inserido corretamente no quadro **1** da imagem abaixo, clique em `Ligação rápida`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+
+Se a ligação foi efetuada com sucesso, será informado através do estado presente na caixa **2** da imagem acima. Pode assim ver os seus diretórios/pastas e ficheiros já presentes no seu alojamento (ver caixa **3**).
+
+///
 
 ### Erros de ligação
 

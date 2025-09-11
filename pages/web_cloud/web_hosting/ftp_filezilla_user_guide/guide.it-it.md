@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Come utilizzare FileZilla"
 excerpt: "Questa guida ti mostra come accedere allo spazio di storage dell’hosting Web OVHcloud e gestire i dati in esso contenuti grazie al software FileZilla"
-updated: 2025-09-09
+updated: 2025-09-11
 ---
 
 <style>
@@ -70,81 +70,87 @@ Eseguire le operazioni seguenti:
 >
 > Per motivi di sicurezza, la password di un utente non appare sulla pagina della scheda `FTP - SSH`{.action}. Se l’hai dimenticato, consulta [questa guida](/pages/web_cloud/web_hosting/ftp_change_password) per modificarlo.
 
-### Connessione con Filezilla en FTP
+### 2 - Accedere allo spazio di storage dell’hosting grazie a FileZilla
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+La connessione può essere effettuata tramite due protocolli di trasferimento file:
 
-Dalla barra di connessione rapida, completa le informazioni seguendo la tabella:
+- **F**ile **T**ransfer **P**rotocol (**FTP**).
+- **S**ecure **F**ile **T**ransfer **P**rotocol (**SFTP**).
 
-|Informazione|Descrizione|
-|---|---|
-|Host| Indirizzo del server che permette di accedere allo spazio di archiviazione del tuo hosting.<br><br> Per gli hosting condivisi, ha generalmente questa forma: `ftp.clusterXXX.hosting.ovh.net` (i `XXX` rappresentano il numero di cluster in cui si trova il tuo hosting)|
-|Utente|Identificativo che ti permette di accedere allo spazio di storage del tuo hosting.|
-|Password|Password associata all'utente.|
-|Porta|In genere viene completato automaticamente dal software. Altrimenti, inserisci:<br><br>- la porta "21" per una connessione FTP;<br>- la porta "22" per una connessione SFTP (se attiva). Per maggiori informazioni sul protocollo SFTP, consulta [la sezione dedicata di questo tutorial](#sftp).|
-
-Se non ne sei in possesso, accedi allo [Spazio Cliente OVHcloud](/links/manager), seleziona il tuo servizio nella sezione `Web Cloud`{.action} e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. A questo punto visualizzi le informazioni relative al tuo spazio di storage:
-
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
-
-> [!warning]
+> [!primary]
 >
-> Alcune offerte OVHcloud non utilizzano la porta 22 per le connessioni SFTP e/o SSH. Utilizza le porte che appaiono nello [Spazio Cliente OVHcloud](/links/manager)
+Se possibile, ti consigliamo di utilizzare il protocollo **SFTP** per accedere allo spazio di storage con FileZilla.
 >
+Il protocollo **SFTP** cripta lo scambio di dati tra il tuo dispositivo e il tuo hosting Web. In caso di difficoltà di utilizzo, ad esempio nella segmentazione di utenti o cartelle, sarà necessario utilizzare il protocollo **FTP**.
 
-Una volta che tutto è stato inserito correttamente nel riquadro **1** dell'immagine qui sotto, clicca su `Connessione rapida`{.action}.
+**Fare clic sul protocollo di connessione desiderato per visualizzare le spiegazioni.**
 
-![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+/// details | Accedere in SFTP allo spazio di storage di un hosting Web grazie a FileZilla. <a name="sftp"></a>
 
-Se la connessione è stata effettuata correttamente, ti informeremo tramite lo stato presente nel riquadro **2** dell'immagine qui sotto. In questo modo è possibile visualizzare le directory/cartelle e file già presenti sul tuo hosting (riquadro **3**).
-
-### Connessione con Filezilla in SFTP <a name="sftp"></a>
-
-Lo **SFTP** (per **S**ecure **F**ile **T**ransfer **P**rotocol) è un protocollo simile al **FTP**. Come SSH, utilizza la porta 22 predefinita invece della porta 21. Se utilizzi un piano di hosting Cloud Web, è necessario utilizzare la porta che appare nel tuo [Spazio Cliente OVHcloud](/links/manager). La porta 22 è disattivata in SSH e SFTP per gli hosting Cloud Web.
+Il **SFTP** utilizza, come l'SSH, la porta 22 di default al posto della porta 21. Se utilizzi un piano di hosting Cloud Web, è necessario utilizzare la porta visualizzata nello [Spazio Cliente OVHcloud](/links/manager). Per gli hosting Cloud Web, la porta 22 è stata disattivata in sicurezza in SSH e SFTP.
 
 > [!success]
 >
-> SFTP è attivabile gratuitamente per tutte le offerte di hosting OVHcloud (tranne le vecchie offerte 60free/demo1g).
-> 
+> SFTP è attivabile gratuitamente per tutte le offerte di hosting OVHcloud (eccetto le vecchie offerte 60free e demo1g).
+>
 
-#### Verifica l'attivazione di SFTP
+**Verifica l'attivazione del protocollo SFTP**
 
-Per prima cosa verifica che l'SFTP sia attivo per il tuo **Login FTP**.
+Per farlo, torna alla scheda `FTP-SSH`{.action} dello [Spazio Cliente OVHcloud](/links/manager) come indicato nella [prima parte](#part-1) di questa guida.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), seleziona il tuo servizio nella sezione `Web Cloud`{.action} e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}.
+Nella tabella a piè di pagina, individua la colonna `SFTP` e verifica che l’utente (presente nella colonna `Login` della tabella) interessato disponga di un accesso SFTP attivo. In caso contrario, comparirà la voce `Disattivato`.
 
-Verifica che il **protocollo SFTP** sia attivo nella tabella in basso.
+Se l’accesso SFTP dell’utente interessato è `Disattivato` nella tabella, effettuare le seguenti operazioni:
 
-![Attivazione SFTP offerta start](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
+- Per le offerte Personale, spunta la casella a sinistra della voce `Disattivato` nella tabella.
 
-Se non è attivo:
+- Per le offerte Pro e Performance:
 
-- Clicca sui tre puntini `...`{.action} in corrispondenza della tabella e seleziona `Modifica`{.action}.
+    - 1: Clicca sul pulsante `...`{.action} a destra della riga corrispondente all’utente e poi su `Modificare`{.action}.
+    - 2: Nella finestra che appare, sezione `Protocolli di connessione`, seleziona la scelta `FTP e SFTP`{.action}, poi clicca su `Continua`{.action}.
+    - 3: Verifica il riepilogo della modifica richiesta e clicca su `Conferma`{.action}.
 
-![Attivazione SFTP 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-login.png){.thumbnail}
-
-- Nella nuova finestra, verifica che sia attiva una delle 2 opzioni seguenti:
-    - **FTP e SFTP**: per attivare solo il protocollo SFTP oltre al protocollo FTP.
-    - **FTP, SFTP e SSH**: per attivare FTP, SFTP e SSH.
-
-![Attivazione SFTP 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-user-step-1-connexion-protocols.png){.thumbnail}
-
-- Clicca su `Seguente`{.action} e poi su `Conferma`{.action}
-
-#### Avvia la connessione SFTP
+**Connettersi in SFTP con FileZilla**
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
-Nella parte superiore di Filezilla e per stabilire la connessione al server remoto (hosting), inserisci questi elementi:
+Nella barra di connessione rapida, completa i campi con le informazioni richieste nella tabella seguente:
 
-- Host: `ftp.clusterXXX.hosting.ovh.net` (ricordati di sostituire gli `X` con quelli del tuo cluster di hosting)
-- Identificativo: il tuo login FTP
-- Password: la password FTP associata al login
-- Porta: 22
+|Informazioni da inserire|Dettagli|
+|---|---| 
+|Host| Indirizzo del server che consente di accedere allo spazio di storage dell’hosting Web.<br> Questa interfaccia è in genere il seguente: `ftp.clusterXXX.hosting.ovh.net` (gli `XXX` rappresentano il numero del cluster in cui si trova l’hosting Web).|
+|Utente|Identificativo che ti permette di accedere allo spazio di storage del tuo hosting.|
+|Password|Password associata all'utente.|
+|Porta|Inserisci il numero della porta SFTP recuperata precedentemente nella [prima parte](#part-1) di questa guida per una connessione SFTP.|
 
-Dopo aver cliccato sul pulsante `Connessione rapida`{.action}, si apre una casella di dialogo (vedi l'immagine qui sotto) per certificare la connessione all'host su cui ti stai per connetterti. Accedendo all'host OVHcloud, seleziona la casella *Sempre di fiducia nell'host, aggiungi la chiave alla cache* affinché il software non te la richieda più in futuro.
+Una volta inserito tutto correttamente nel riquadro **1** dell’immagine qui sotto, clicca su `Connessione rapida`{.action}.
+
+Si apre una finestra di dialogo (vedi l’immagine qui di seguito) per certificare la connessione all’host sul quale ti stai preparando a connetterti. Una volta effettuato l’accesso a un host OVHcloud, seleziona la casella *Considera sempre attendibile l’host e aggiungi la chiave alla cache*, in modo che il software non richieda più la stessa informazione a te.
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
+
+///
+
+/// details | Accedere in FTP allo spazio di storage di un hosting Web grazie a FileZilla.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
+
+Nella barra di connessione rapida, completa i campi con le informazioni richieste nella tabella seguente:
+
+|Informazioni da inserire|Dettagli|
+|---|---| 
+|Host| Indirizzo del server che consente di accedere allo spazio di storage dell’hosting Web.<br> Questa interfaccia è in genere il seguente: `ftp.clusterXXX.hosting.ovh.net` (gli `XXX` rappresentano il numero del cluster in cui si trova l’hosting Web).|
+|Utente|Identificativo che ti permette di accedere allo spazio di storage del tuo hosting.|
+|Password|Password associata all'utente.|
+|Porta|In genere viene completato automaticamente dal software. In caso contrario, inserisci la porta `21` per una connessione FTP.|
+
+Una volta inserito tutto correttamente nel riquadro **1** dell’immagine qui sotto, clicca su `Connessione rapida`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+
+Se la connessione è stata effettuata correttamente, ti verrà notificato tramite lo stato presente nel riquadro **2** dell'immagine qui sopra. In questo modo è possibile visualizzare le directory/cartelle e i file già presenti sul tuo hosting (riquadro **3**).
+
+///
 
 #### Errori di connessione
 
