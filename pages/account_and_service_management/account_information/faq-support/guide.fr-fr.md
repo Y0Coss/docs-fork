@@ -32,9 +32,9 @@ Retrouvez ici les questions les plus fréquemment posées sur le support OVHclou
 
 /// details | Je pense que mon service est en train de subir un incident. Où puis-je vérifier s’il y a un incident global ?
 
-Si vous identifiez une panne sur votre service et avez déjà confirmé qu'il est actif/renouvelé, consultez cette page pour vérifier les éventuels incidents en cours sur nos infrastructures : <https://www.status-ovhcloud.com/>
+Si vous identifiez une panne sur votre service et avez déjà confirmé qu'il est actif/renouvelé, consultez cette page pour vérifier les éventuels incidents en cours sur nos infrastructures : <https://www.status-ovhcloud.com/>.
 
-Cliquez alors sur l'infrastructure concernée (exemple : `Web Cloud`{.action} pour un hébergement web ou pour une ligne VoIP).
+Cliquez alors sur l'infrastructure concernée (par exemple : `Web Cloud`{.action} pour un hébergement web ou pour une ligne VoIP).
 
 - Les incidents en cours sont répertoriés dans la section *Current events* (événements actuels) en haut de la page.
 - Les incidents passés sont répertoriés dans la section *Past Incidents* en bas de la page.
@@ -43,7 +43,7 @@ Cliquez sur l'événement correspondant au service concerné pour obtenir plus d
 
 > [!success]
 >
-> Pour les plateformes d'hébergement web, vous pouvez consulter [ce guide](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer/) pour vérifier votre clusteret votre filer d'hébergement afin de vérifier s'il est concerné par un incident en cours ou passé.
+> Pour les plateformes d'hébergement web, vous pouvez consulter [ce guide](/pages/web_cloud/web_hosting/how_to_know_cluster_and_filer/) pour vérifier votre cluster et votre filer d'hébergement afin de vérifier s'il est concerné par un incident en cours ou passé.
 
 ///
 
@@ -55,7 +55,7 @@ Pour cela, rendez-vous sur la page <https://www.status-ovhcloud.com/> et ouvrez 
 
 Cliquez alors sur le bouton `Subscribe to this report`{.action}.
 
-Vous pouvez également vous abonner à l'une des pages « *status » pour recevoir des mises à jour générales sur les différents incidents.
+Vous pouvez également vous abonner à l'une des pages « status » pour recevoir des mises à jour générales sur les différents incidents.
 
 Par exemple, sur la page [Web Cloud Status](https://web-cloud.status-ovhcloud.com/), cliquez sur `Subscribe to updates`{.action}.
 
@@ -67,7 +67,7 @@ Par exemple, sur la page [Web Cloud Status](https://web-cloud.status-ovhcloud.co
 
 Cliquez sur [ce lien](https://help.ovhcloud.com/csm?id=csm_get_help) pour créer un ticket d'assistance depuis le centre d'aide OVHcloud. Connectez-vous alors avec vos identifiants OVHcloud.
 
-Une fois identifié, cliquez sur le bouton `Création de ticket`{.action}. Sélectionnez le motif de votre demande puis le produit et le service concernés. Précisez ensuite votre demande afin d'accéder à des suggestions personnalisées d'aide et de conseils. Si cela ne permet de répondre à votre besoin, cliquez sur `Suivant`{.action} pour compléter votre demande afin de créer un ticket d'assistance. Veillez à donner le maximum d'informations pour que nos équipes puissent vous aider au mieux.
+Une fois identifié, cliquez sur `Tickets`{.action} puis sur le bouton `Création de ticket`{.action}. Sélectionnez le motif de votre demande puis le produit et le service concernés. Précisez ensuite votre demande afin d'accéder à des suggestions personnalisées d'aide et de conseils. Si cela ne permet pas de répondre à votre besoin, cliquez sur `Suivant`{.action} pour compléter votre demande afin de créer un ticket d'assistance. Veillez à donner le maximum d'informations pour que nos équipes puissent vous aider au mieux.
 
 ///
 
@@ -83,9 +83,9 @@ Les causes possibles de cette problématique peuvent être les suivantes :
 
 Voici les solutions à essayer :
 
-- **Mot de passe** : vérifiez que vous avez saisi le mot de passe correct ou réinitialisez votre mot de passe en suivant [cette documentation](/pages/account_and_service_management/account_information/manage-ovh-password).
-- **Cookies** : assurez-vous d'autoriser les cookies sur votre navigateur.
-- **Pays de facturation** : vous pouvez essayer de vous connecter en utilisant l'une des deux passerelles appropriées en fonction de votre localisation et de votre pays de facturation :
+- **Mot de passe** : Vérifiez que vous avez saisi le mot de passe correct ou réinitialisez votre mot de passe en suivant [cette documentation](/pages/account_and_service_management/account_information/manage-ovh-password).
+- **Cookies** : Assurez-vous d'autoriser les cookies sur votre navigateur.
+- **Pays de facturation** : Vous pouvez essayer de vous connecter en utilisant l'une des deux passerelles appropriées en fonction de votre localisation et de votre pays de facturation :
     - [Union européenne (UE)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
     - [Canada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
 
@@ -106,9 +106,9 @@ Cela peut résoudre certains problèmes de connexion.
 
 /// details | Que dois-je faire si je n'arrive pas à joindre le support par téléphone ?
 
-Pour éviter d'attendre au téléphone, nous vous invitons à créer une demande de support depuis le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Cliquez sur le bouton `Création de ticket`{.action}.
+Pour éviter d'attendre au téléphone, nous vous invitons à créer une demande d'assistance depuis le [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Cliquez sur `Tickets`{.action} puis sur le bouton `Création de ticket`{.action}.
 
-Vous pouvez également consulter l'ensemble de notre documentation (FAQ, guides, outils de diagnostic…) dans le [Centre d'aide](https://help.ovhcloud.com/csm/fr-documentation?id=kb_home).
+Vous pouvez également consulter l'ensemble de notre documentation (FAQ, guides, outils de diagnostic, etc.) dans le [centre d'aide](https://help.ovhcloud.com/csm/fr-documentation?id=kb_home).
 
 ///
 
@@ -122,17 +122,17 @@ Ce nouveau formulaire a pour objectif de rendre le parcours de création de tick
 
 Vous pouvez transmettre des fichiers dans les formats suivants (taille max. : 1024 Mo) : bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
 
-Créez une demande d’assistance dans le [Centre d’aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) et joignez vos fichiers.
+Créez une demande d’assistance depuis le [centre d’aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) et joignez vos fichiers.
 
-Si vos fichiers dépassent la taille maximale autorisée ou si vous devez partager un format non pris en charge, vous pouvez répondre directement à la copie du ticket envoyée par e-mail **à l'adresse associée à votre identifiant client** et joindre les fichiers. Cela nous permettra d'examiner et de répondre à votre demande en toute sécurité.
+Si vos fichiers dépassent la taille maximale autorisée ou si vous devez partager un format non pris en charge, vous pouvez répondre directement à la copie du ticket envoyée par e-mail **à l'adresse associée à votre identifiant client** et joindre les fichiers. Cela nous permettra de les examiner et de répondre à votre demande en toute sécurité.
 
 ///
 
-/// details | Puis-je fournir dans un ticket des liens vers sites externes, comme Google Drive ?
+/// details | Puis-je fournir dans un ticket des liens vers des sites externes, comme Google Drive ?
 
 Nous ne pouvons pas accéder à des liens externes tels que Google Drive, car cela pourrait compromettre la sécurité et la confidentialité de vos informations.
 
-Si vous avez besoin de partager des fichiers, vous pouvez les ajouter directement dans votre ticket depuis le [Centre d’aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) dans les formats suivants (taille max. : 1024 Mo) : bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
+Si vous avez besoin de partager des fichiers, vous pouvez les ajouter directement dans votre ticket depuis le [centre d’aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) dans les formats suivants (taille max. : 1024 Mo) : bmp, cap, csv, eml, gif, jpeg, jpg, pcap, pdf, png, txt, xml, yaml, yml.
 
 ///
 
@@ -140,12 +140,12 @@ Si vous avez besoin de partager des fichiers, vous pouvez les ajouter directemen
 
 Si vous souhaitez nous envoyer une vidéo, sachez que seul le format gif est accepté et que la taille ne doit pas excéder 1024 Mo. Si votre vidéo est dans un autre format ou que sa taille est supérieure, vous pouvez opter pour l'une de ces deux méthodes :
 
-- Répondre par e-mail (depuis l'adresse e-mail associée au compte OVHcloud) au ticket d'assistance et ajouter la vidéo en pièce jointe à votre réponse
-- Téléverser la vidéo sur une plateforme telle que YouTube puis de partager le lien de la vidéo dans le ticket.
+- Répondre par e-mail (depuis l'adresse e-mail associée au compte OVHcloud) au ticket d'assistance et ajouter la vidéo en pièce jointe à votre réponse.
+- Téléverser la vidéo sur une plateforme telle que YouTube puis partager le lien de la vidéo dans le ticket.
 
 > [!warning]
 > **Attention !**
-> Si votre vidéo montre des informations sensibles de votre compte (exemples : identifiant client, mot(s) de passe, adresse(s) IP, identifiants de services, etc), ne téléversez pas la vidéo en public sur une plateforme telle que YouTube, vous exposeriez vos services à un potentiel piratage de données.
+> Si votre vidéo montre des informations sensibles de votre compte (par exemple : identifiant client, mot(s) de passe, adresse(s) IP, identifiant(s) de services, etc.), ne téléversez pas la vidéo en public sur une plateforme telle que YouTube, vous exposeriez vos services à un potentiel piratage de données.
 
 ///
 
@@ -193,11 +193,11 @@ Découvrez et comparez les différents niveaux de support disponibles [ici](/lin
 
 /// details | Je souhaite à nouveau bénéficier du niveau de support Standard, comment puis-je annuler mon niveau de support actuel ?
 
-Après la fin de la période contractuelle initiale de 12 mois, vous pouvez résilier votre plan de support Premium à tout moment, sans être lié par une durée contractuelle fixe.
+Après la fin de la période contractuelle initiale de 12 mois, vous pouvez résilier votre niveau de support Premium à tout moment, sans être lié par une durée contractuelle fixe.
 
 Dans ce cas, nous avons besoin d'une confirmation écrite pour traiter la résiliation.
 
-Pour effectuer cette résiliation, veuillez contacter notre équipe de support en créant un [ticket d'assistance via le Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+Pour effectuer cette résiliation, veuillez contacter notre équipe de support en créant un [ticket d'assistance via le centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 > [!warning]
 > **Important :**
@@ -213,7 +213,7 @@ Contactez [notre équipe de support](https://help.ovhcloud.com/csm?id=csm_get_he
 
 /// details | Avez-vous des tutoriels vidéo ?
 
-Nous ajoutons de plus en plus de tutoriels sur notre chaîne YouTube : <https://www.youtube.com/@OvhGroup>
+Nous ajoutons de plus en plus de tutoriels sur notre chaîne YouTube : <https://www.youtube.com/@OvhGroup>.
 
 N'hésitez pas à utiliser le moteur de recherche sur cette page pour retrouver des vidéos sur un thème en particulier (par exemple : « créer un site web web »).
 
@@ -223,9 +223,9 @@ N'hésitez pas à utiliser le moteur de recherche sur cette page pour retrouver 
 
 /// details | Que faire si mon compte OVHcloud a été piraté ?
 
-En cas d’usage frauduleux de votre compte OVHcloud (identité, moyen de paiement…), nous vous invitons à déposer une préplainte le plus rapidement possible auprès de la préfecture de Police. Pour ce faire, rendez-vous sur le site <https://www.pre-plainte-en-ligne.gouv.fr/> en précisant le motif : « Accès frauduleux à un espace client ».
+En cas d’usage frauduleux de votre compte OVHcloud (identité, moyen de paiement, etc.), nous vous invitons à déposer une plainte le plus rapidement possible auprès de la préfecture de Police ou de la gendarmerie.
 
-Par la suite, la préfecture de police vous contactera directement afin de fixer un rendez-vous et ainsi finaliser la procédure. Dès que la plainte sera en votre possession, vous devrez nous en envoyer une copie. Celle-ci permettra de lancer nos démarches internes.
+Dès que la plainte est en votre possession, vous devrez nous en envoyer une copie. Celle-ci permettra de lancer nos démarches internes.
 
 Contactez le support OVHcloud par téléphone :
 
@@ -269,7 +269,7 @@ Pour vous assurer que vos services ne sont pas sous le contrôle d'un tiers (par
 - [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](/pages/account_and_service_management/account_information/all_about_username)
 - [Modifier le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password)
 - [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
-- [Comment sécuriser votre site Web ?](/pages/web_cloud/web_hosting/secure_your_website)
+- [Comment sécuriser un site Web ?](/pages/web_cloud/web_hosting/secure_your_website)
 - [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 - [Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
 
@@ -282,9 +282,9 @@ Un membre de notre équipe vous répondra alors dès que possible.
 
 ///
 
-/// details | J’ai répondu au service abuse OVHcloud mais mon service est toujours bloqué. Que puis-je faire ?
+/// details | J’ai répondu au service Abuse OVHcloud mais mon service est toujours bloqué. Que puis-je faire ?
 
-Vous pouvez, depuis votre espace client OVHcloud, ouvrir une demande d’assistance auprès du [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) afin d’obtenir des informations complémentaires sur le traitement de votre ticket Abuse. Pour faciliter le traitement de votre demande, veillez à bien mentionner la référence de ce ticket Abuse dans votre demande d’assistance.
+Vous pouvez créer un ticket d'assistance depuis le [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) afin d’obtenir des informations complémentaires sur le traitement de votre ticket Abuse. Pour faciliter le traitement de votre demande, veillez à bien mentionner la référence de ce ticket Abuse dans votre demande d’assistance.
 
 ///
 
