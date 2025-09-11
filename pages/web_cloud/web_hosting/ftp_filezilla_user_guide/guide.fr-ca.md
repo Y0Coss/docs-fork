@@ -323,8 +323,8 @@ L'option de comparaison de fichiers affiche des couleurs dans les **zones 4** et
 
 En effectuant un clic-droit sur l'icône, vous pouvez changer le mode de comparaison. Il vous sera alors proposé d'activer ou de désactiver l'option, mais également de :
 
-- comparer la taille des fichiers;
-- comparer l'horodatage;
+- comparer la taille des fichiers ;
+- comparer l'horodatage ;
 - masquer les fichiers identiques.
 
 **Signification des couleurs** : 

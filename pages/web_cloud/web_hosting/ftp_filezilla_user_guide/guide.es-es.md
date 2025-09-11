@@ -319,8 +319,8 @@ La opción de comparación de archivos muestra colores en los **cuadros 4** y **
 
 Pulse con el botón derecho del ratón sobre el icono para cambiar el modo de comparación. A continuación, podrá activar o desactivar la opción, así como:
 
-- comparar el tamaño de los archivos;
-- comparar la fecha y hora;
+- comparar el tamaño de los archivos ;
+- comparar la fecha y hora ;
 - ocultar los archivos idénticos.
 
 **Significado de los colores:**

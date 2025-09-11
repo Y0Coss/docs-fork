@@ -315,8 +315,8 @@ A opção de comparação de ficheiros apresenta cores nas **zonas 4** e **5** (
 
 Ao clicar direito no ícone, pode alterar o método de comparação. Ser-lhe-á sugerido que ative ou desative a opção, mas também que:
 
-- comparar o tamanho dos ficheiros;
-- comparar o horário;
+- comparar o tamanho dos ficheiros ;
+- comparar o horário ;
 - ocultar os ficheiros idênticos.
 
 **Significado das cores:**
