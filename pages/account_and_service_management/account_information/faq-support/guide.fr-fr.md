@@ -67,7 +67,7 @@ Par exemple, sur la page [Web Cloud Status](https://web-cloud.status-ovhcloud.co
 
 Cliquez sur [ce lien](https://help.ovhcloud.com/csm?id=csm_get_help) pour créer un ticket d'assistance depuis le centre d'aide OVHcloud. Connectez-vous alors avec vos identifiants OVHcloud.
 
-Une fois identifié, cliquez sur `Tickets`{.action} puis sur le bouton `Création de ticket`{.action}. Sélectionnez le motif de votre demande puis le produit et le service concernés. Précisez ensuite votre demande afin d'accéder à des suggestions personnalisées d'aide et de conseils. Si cela ne permet pas de répondre à votre besoin, cliquez sur `Suivant`{.action} pour compléter votre demande afin de créer un ticket d'assistance. Veillez à donner le maximum d'informations pour que nos équipes puissent vous aider au mieux.
+Une fois identifié, cliquez sur `✉ Tickets`{.action} puis sur le bouton `Création de ticket`{.action}. Sélectionnez le motif de votre demande puis le produit et le service concernés. Précisez ensuite votre demande afin d'accéder à des suggestions personnalisées d'aide et de conseils. Si cela ne permet pas de répondre à votre besoin, cliquez sur `Suivant`{.action} pour compléter votre demande afin de créer un ticket d'assistance. Veillez à donner le maximum d'informations pour que nos équipes puissent vous aider au mieux.
 
 ///
 
@@ -106,7 +106,7 @@ Cela peut résoudre certains problèmes de connexion.
 
 /// details | Que dois-je faire si je n'arrive pas à joindre le support par téléphone ?
 
-Pour éviter d'attendre au téléphone, nous vous invitons à créer une demande d'assistance depuis le [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Cliquez sur `Tickets`{.action} puis sur le bouton `Création de ticket`{.action}.
+Pour éviter d'attendre au téléphone, nous vous invitons à créer une demande d'assistance depuis le [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Cliquez sur `✉ Tickets`{.action} puis sur le bouton `Création de ticket`{.action}.
 
 Vous pouvez également consulter l'ensemble de notre documentation (FAQ, guides, outils de diagnostic, etc.) dans le [centre d'aide](https://help.ovhcloud.com/csm/fr-documentation?id=kb_home).
 
