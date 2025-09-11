@@ -261,7 +261,7 @@ Esto modificará los permisos de la carpeta en cuestión, así como los archivos
 >
 > Independientemente de su acción, su alojamiento puede desactivarse debido a la detección de archivos maliciosos o no autorizados en su alojamiento por nuestros sistemas de seguridad.
 >
-> En ese caso, deberá [proteger sus soluciones](/pages/web_cloud/web_hosting/diagnostic_403_forbidden) corrigiendo los fallos de seguridad indicados en la notificación de bloqueo recibida por correo electrónico.
+> En ese caso, deberá [proteger sus soluciones](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) corrigiendo los fallos de seguridad indicados en la notificación de bloqueo recibida por correo electrónico.
 >
 
 A continuación, haga clic en `Servidor`{.action} y seleccione `Introducir un comando personalizado`{.action} (también puede llamarse `Introduzca un comando FTP`{.action}).

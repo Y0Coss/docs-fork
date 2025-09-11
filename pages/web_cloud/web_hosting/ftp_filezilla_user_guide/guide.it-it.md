@@ -263,7 +263,7 @@ Ciò comporterà la modifica dei diritti del fascicolo in questione, nonché dei
 >
 > Indipendentemente da un intervento da parte tua, il tuo hosting può essere disattivato in seguito al rilevamento di file malevoli o non autorizzati sul tuo hosting dai nostri sistemi di sicurezza.
 >
-> In questo caso, è necessario [proteggere le soluzioni](/pages/web_cloud/web_hosting/diagnostic_403_forbidden) correggendo le falle di sicurezza indicate nella notifica di blocco ricevuta via email.
+> In questo caso, è necessario [proteggere le soluzioni](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) correggendo le falle di sicurezza indicate nella notifica di blocco ricevuta via email.
 >
 
 Clicca su `Server`{.action} e seleziona `Inserisci un ordine personalizzato`{.action} (questa opzione può anche essere chiamata `Inserisci un ordine FTP`{.action}).

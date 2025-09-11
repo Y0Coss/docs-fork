@@ -261,7 +261,7 @@ You can select the “Recurse into subdirectories” option to not only change t
 >
 > Regardless of your actions, your hosting plan may be disabled if our security systems detect malicious files or files that are not authorised on your hosting plan.
 >
-> You must then [secure your services](/pages/web_cloud/web_hosting/diagnostic_403_forbidden) while correcting the security vulnerabilities mentioned in the block notification received via email.
+> You must then [secure your services](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) while correcting the security vulnerabilities mentioned in the block notification received via email.
 >
 
 Then click `Server`{.action} and select `Enter custom command`{.action}. (This option may also be called `Enter FTP command`{.action}).

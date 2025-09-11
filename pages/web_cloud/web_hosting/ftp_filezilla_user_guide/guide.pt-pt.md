@@ -263,7 +263,7 @@ Esta situação terá por efeito alterar os direitos do processo em questão, be
 >
 > Independentemente de uma ação da sua parte, o seu alojamento pode ser desativado após a deteção de ficheiros maliciosos ou não autorizados no seu alojamento pelos nossos sistemas de segurança.
 >
-> Deverá [proteger as suas soluções](/pages/web_cloud/web_hosting/diagnostic_403_forbidden) corrigindo as falhas de segurança evocadas na notificação de bloqueio recebida por e-mail.
+> Deverá [proteger as suas soluções](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) corrigindo as falhas de segurança evocadas na notificação de bloqueio recebida por e-mail.
 >
 
 A seguir, clique em `Servidor`{.action} e selecione `Introduza um comando personalizado`{.action} (esta opção pode também chamar-se `Introduza um comando FTP`{.action}).

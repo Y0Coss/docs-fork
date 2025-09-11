@@ -262,7 +262,7 @@ Sie können die Option “Recurse into subdirectories” aktivieren, um nicht nu
 >
 > Unabhängig von einer Aktion Ihrerseits kann Ihr Hosting automatisch deaktiviert werden, wenn unsere Sicherheitssysteme schädliche oder nicht autorisierte Dateien auf Ihrem Hosting erkennen.
 >
-> [Sichern Sie dann Ihre Dienste](/pages/web_cloud/web_hosting/diagnostic_403_forbidden) und korrigieren Sie dabei die Sicherheitslücken, die in der per E-Mail erhaltenen Blockierungsbenachrichtigung erwähnt werden.
+> [Sichern Sie dann Ihre Dienste](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) und korrigieren Sie dabei die Sicherheitslücken, die in der per E-Mail erhaltenen Blockierungsbenachrichtigung erwähnt werden.
 >
 
 Klicken Sie anschließend auf `Server`{.action} und wählen Sie `Enter custom command`{.action} (diese Option kann auch als `Enter FTP command`{.action} bezeichnet sein).

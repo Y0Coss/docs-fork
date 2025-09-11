@@ -265,7 +265,7 @@ Cela aura pour effet de modifier les droits du dossier en question, ainsi que de
 >
 > Indépendamment d'une action de votre part, votre hébergement peut être désactivé suite à la détection de fichiers malveillants ou non autorisés sur votre hébergement par nos systèmes de sécurité.
 >
-> Vous devez alors [sécuriser vos solutions](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#etape-2-securiser-vos-solutions) tout en corrigeant les failles de sécurité évoquées dans la notification de blocage reçue par e-mail.
+> Vous devez alors [sécuriser vos solutions](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) tout en corrigeant les failles de sécurité évoquées dans la notification de blocage reçue par e-mail.
 >
 
 Cliquez ensuite sur `Serveur`{.action} puis sélectionnez `Saisir une commande personnalisée`{.action} (cette option peut aussi s'appeler `Entrez une commande FTP`{.action}).
@@ -343,7 +343,7 @@ Plus généralement, retrouvez [l'ensemble de nos guides relatifs aux hébergeme
 
 N'hésitez pas à consulter la [page officielle de FileZilla](https://filezilla-project.org/).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

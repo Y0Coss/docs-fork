@@ -160,7 +160,7 @@ Jeśli logowanie się powiodło, zostaniesz powiadomiony o statusie w ramce **2*
 
 Poniższy komunikat wskazuje błąd identyfikacji, który wystąpił podczas połączenia z hostingiem współdzielonym przez FTP lub SFTP:
 
-![Hosting](/pages/assets/screens/other/web-tools/filezilla/authentication-failed-could-not-connect-server.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/authentification-failed-could-not-connect-server.png){.thumbnail}
 
 Ten rodzaj wiadomości jest generowany przez błąd w parze Login/Password.
 
@@ -263,7 +263,7 @@ W ten sposób prawa do akt sprawy oraz katalogi i pliki, które mogą być w nim
 >
 > Niezależnie od podjętych przez Ciebie działań, Twój hosting może zostać wyłączony po wykryciu przez nasze systemy bezpieczeństwa złośliwych lub nieautoryzowanych plików na Twoim hostingu.
 >
-> Następnie należy [zabezpieczyć Twoje rozwiązania](/pages/web_cloud/web_hosting/diagnostic_403_forbidden), usuwając luki bezpieczeństwa wskazane w powiadomieniu o blokadzie otrzymanym na e-mail.
+> Następnie należy [zabezpieczyć Twoje rozwiązania](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2), usuwając luki bezpieczeństwa wskazane w powiadomieniu o blokadzie otrzymanym na e-mail.
 >
 
 Następnie kliknij `Serwer`{.action}, a następnie wybierz `Wpisz spersonalizowane`{.action} polecenie (ta opcja może się również nazywać `Wprowadź polecenie FTP`{.action}).
