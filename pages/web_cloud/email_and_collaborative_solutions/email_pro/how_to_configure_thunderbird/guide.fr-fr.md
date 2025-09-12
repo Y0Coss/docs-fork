@@ -1,7 +1,7 @@
 ---
 title: 'E-mail Pro - Configurer son adresse e-mail sur Thunderbird pour Windows'
 excerpt: 'Découvrez comment configurer votre adresse E-mail Pro sur Thunderbird pour Windows'
-updated: 2025-09-03
+updated: 2025-09-12
 ---
 
 <style>
@@ -30,7 +30,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 ## Prérequis
 
 - Disposer d’une adresse [E-mail Pro](/links/web/email-pro).
-- Disposer du logiciel Thunderbird installé sur votre Windows.
+- Disposer du logiciel Thunderbird installé sur votre votre appareil sous Windows.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
 /// details | Informations relatives à la gestion et configuration des services OVHcloud
@@ -60,47 +60,71 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
     2. Cliquez sur `Nouveau Compte`{.action}.
     3. Cliquez sur `Adresse E-mail`{.action} .
 
-![thunderbird](images/configuration-thunderbird-windows-emp-01.png){.thumbnail .w-400}
+![thunderbird](images/configuration-thunderbird-win-01.png){.thumbnail .w-400}
 
-Dans la fenêtre qui s'affiche, saisissez les 3 informations suivantes:
-
-- Votre nom complet (Nom d'affichage)
-- Adresse E-mail 
-- Mot de passe.
-
-Cliquez sur `Configuration Manuelle`{.action} pour compléter les paramètres.
-
-![thunderbird](images/configuration-thunderbird-windows-emp-02.png){.thumbnail .w-400}
-
-Complétez les paramètres du serveur :
+Suivez les étapes de configuration en cliquant sur les onglets ci-dessous :
 
 > [!tabs]
-> **SERVEUR ENTRANT (IMAP)**
+> **Étape 1**
+>> Dans la fenêtre qui s'affiche, saisissez les 3 informations suivantes:
+>>
+>> - Votre nom complet (Nom d'affichage)
+>> - Adresse e-mail
+>>
+>> Cliquez sur `Continuer`{.action} pour compléter les paramètres.
+>>
+>> ![thunderbird](images/configuration-thunderbird-emp-02.png){.thumbnail .w-400}
+>>
+> **Étape 2**
+>>
+>> Lorsque Thunderbird détecte un nom de domaine OVHcloud, une configuration automatique relative à l'offre MX Plan est proposée. Cliquez sur `MODIFIER LA CONFIGURATION`{.action}.
+>>
+>> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-400}
+>>
+> **Étape 3**
+>> Paramètres du serveur de réception :<br>
 >> - **Protocole** IMAP
 >> - **Nom d'hôte** pro?.mail.ovh.net (remplacez bien «?» par le numéro de votre serveur)
 >> - **Port** 993
 >> - **Sécurité de la connexion** SSL/TLS
->> - **Authentification** Mot de passe normal
->> - **Identifiant** votre adresse e-mail complète
+>> - **Méthode d'authentification** Mot de passe normal
+>> - **Nom d'utilisateurs** votre adresse e-mail complète
 >>
-> **SERVEUR ENTRANT (POP)**
->> - **Protocole** POP3
+>> ![thunderbird](images/configuration-thunderbird-emp-04.png){.thumbnail .w-400}
+>>
+> **Étape 4**
+>> Paramètres du serveur d'envoi :<br>
+>> - **Protocole** SMTP 
 >> - **Nom d'hôte** pro?.mail.ovh.net (remplacez bien «?» par le numéro de votre serveur)
->> - **Port** 995
->> - **Sécurité de la connexion** SSL/TLS
->> - **Authentification** Mot de passe normal
->> - **Identifiant** votre adresse e-mail complète
+>> - **Port** 587
+>> - **Sécurité de la connexion** STARTTLS
+>> - **Méthode d'authentification** Mot de passe normal
+>> - **Nom d'utilisateurs** votre adresse e-mail complète
+>> 
+>> 1. Cliquez sur `Tester`{.action} pour vérifier les paramètres saisies.
+>> 2. Cliquez sur `Continuer`{.action} pour valider les paramètres.
+>>
+>> ![thunderbird](images/configuration-thunderbird-emp-05.png){.thumbnail .w-400}
+>>
+> **Étape 5**
+>> Saisir le mot de passe associé à l'adresse e-mail, puis cliquez sur `Continuer`{.action} pour finaliser la configuration.
+>>
+>> ![thunderbird](images/configuration-thunderbird-password-06.png){.thumbnail .w-400}
+>>
 
-**SERVEUR SORTANT** (SMTP)
-- **Nom d'hôte** pro?.mail.ovh.net (remplacez bien «?» par le numéro de votre serveur)
-- **Port** 587
-- **Sécurité de la connexion** STARTTLS
-- **Méthode d'authentification** Mot de passe normal
-- **Identifiant** votre adresse e-mail complète
-
-Cliquez sur `Terminé`{.action} pour finaliser la configuration.
-
-![thunderbird](images/configuration-thunderbird-windows-emp-03.png){.thumbnail .w-400}
+> [!primary]
+>
+> **Configuration POP**
+>
+> Si vous souhaitez une configuration POP pour votre adresse e-mail, remplacez les paramètres de **l'étape 4** par les suivants
+>
+> Paramètres du serveur de réception :<br>
+> - **Protocole** POP3
+> - **Nom d'hôte** pro?.mail.ovh.net (remplacez bien «?» par le numéro de votre serveur)
+> - **Port** 995
+> - **Sécurité de la connexion** SSL/TLS
+> - **Méthode d'authentification** Mot de passe normal
+> - **Nom d'utilisateurs** votre adresse e-mail complète
 
 ### Utiliser l'adresse e-mail
 
@@ -124,24 +148,24 @@ Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des
 Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
 1. Cliquez sur le menu « &#9776; » dans la barre horizontale supérieure.
-2. Cliquez sur `Paramètre du compte`{.action}.
+2. Cliquez sur `Paramètre des comptes`{.action}.
 
-![Thunderbird](images/configuration-thunderbird-windows-emp-04.png){.thumbnail}
+![Thunderbird](images/configuration-thunderbird-win-07.png){.thumbnail}
 
 - Pour modifier les paramètres liés à la **réception** de vos e-mails, cliquez sur `Paramètres serveur`{.action} dans la colonne de gauche sous votre adresse e-mail.
 
-![Thunderbird](images/configuration-thunderbird-windows-emp-05.png){.thumbnail}
+![thunderbird](images/configuration-thunderbird-emp-win-08.png){.thumbnail .w-400}
 
 - Pour modifier les paramètres liés à **l'envoi** de vos e-mails, cliquez sur `Serveur sortant (SMTP)`{.action} tout en bas de la colonne de gauche.
 - Cliquez sur l'adresse e-mail concernée dans la liste , puis cliquez sur `Modifier`{.action}.
 
-![Thunderbird](images/configuration-thunderbird-windows-emp-06.png){.thumbnail}
+![thunderbird](images/configuration-thunderbird-emp-win-09.png){.thumbnail .w-400}
 
 ## Aller plus loin
 
 > [!primary]
 >
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Nouvel Outlook sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Thunderbird, consultez [le centre d'aide de Mozilla](https://support.mozilla.org/products/thunderbird).
 
 [Premiers pas avec la solution E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
