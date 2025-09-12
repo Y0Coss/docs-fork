@@ -1,6 +1,6 @@
 ---
-title: "Gestion des tags sur les resources"
-excerpt: "Découvrez comment gérer et utiliser les tags sur vos ressources OVHcloud"
+title: "Managing tags on resources"
+excerpt: "Find out how to manage and use tags on your OVHcloud resources"
 updated: 2025-09-12
 ---
 
@@ -36,17 +36,17 @@ There are three types of tags:
 - Predefined tag: Created by OVHcloud, assigned to resources by you
 - System tag: Created and automatically assigned by OVHcloud to your resources (cannot be deleted)
 
-Unassigned predefined tags and system tags do not appear by default and must be displayed via the `Quick Filters` button.
+Unassigned predefined tags and system tags do not appear by default and must be displayed via the `Quick Filters`{.action} button.
 
 By clicking on the tag, you can access the tag details with the list of concerned resources.
 
 ![Tag Manager](images/tag-manager-02.png){.thumbnail}
 
-It is then possible to assign this tag to other resources via the `Assign Tag` button.
-The list of all resources in the account is then displayed, allowing multiple selections.
+It is then possible to assign this tag to other resources via the `Assign Tag`{.action} button. The list of all resources in the account is then displayed, allowing multiple selections.
+
 A filter field is present on the right to facilitate searching for resources.
 
-At the opposite, by selecting resources in the tag details, it is possible to remove the tag from them via the `Unassign Tag` button.
+On the contrary, by selecting resources in the tag etails, it is possible to remove the tag from them via the `Unassign Tag`{.action} button.
 
 #### Product dashboard
 
