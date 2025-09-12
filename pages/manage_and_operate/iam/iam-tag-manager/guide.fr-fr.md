@@ -1,5 +1,5 @@
 ---
-title: "Gestion des tags sur les resources"
+title: "Gestion des tags sur les ressources"
 excerpt: "Découvrez comment gérer et utiliser les tags sur vos ressources OVHcloud"
 updated: 2025-09-12
 ---
@@ -17,7 +17,7 @@ Dans ce guide vous apprenderez a affecter et gérer des tags sur vos produits OV
 ### Gérer les tags via l'espace client
 
 Il est possible de gérer les tags de vos produits OVHcloud soit a travers l'interface général de gestion de tag, soit à travers les interfaces dédiées dans les produits.
-Les tags sont des metadata sous forme de clé/valeurs ajouté aux ressources OVHcloud, pouvant être utilisé dans les politiques IAM ou la catégorisation des ressources
+Les tags sont des métadonnées sous forme de clé/valeur ajoutes aux ressources OVHcloud, qui peuvent être utilisés dans les politiques IAM ou la catégorisation des ressources.
 
 #### Tag Manager
 
@@ -36,29 +36,29 @@ Il existe 3 types de tags :
 - Tag prédéfini : Créé par OVHcloud, assigné aux ressources par vous
 - Tag system : Créé et assigné automatiquement par OVHcloud à vos ressources (ne peuvent pas être supprimés)
 
-Les tags prédéfinis non assignés et les tags systèmes ne s'affichent pas par défaut et doivent être affiché via le bouton `Filtre rapide`
+Les tags prédéfinis non assignés et les tags système ne n'apparaissent pas par défaut et doivent être affiché via le bouton `Filtre rapide`{.action}.
 
-En cliquant sur le tag, on accède aux détails du tag avec la liste des ressources concernées
+En cliquant sur le tag, on accède aux détails du tag avec la liste des ressources concernées.
 
 ![Tag Manager](images/tag-manager-02.png){.thumbnail}
 
-Il en ensuite possible d'assigner ce tag à d'autre ressources via le bouton `Assigner le tag`.
-La liste de l'ensemble de ressource du compte s'affiche ensuite sur laquelle il est possible de faire une sélection multiple.
+Il en ensuite possible d'assigner ce tag à d'autre ressources via le bouton `Assigner le tag`{.action}. La liste de l'ensemble de ressource du compte s'affiche ensuite sur laquelle il est possible de faire une sélection multiple.
+
 Un champ de filtre est présent a droite pour faciliter la recherche dans les ressources.
 
-A l'inverse en sélectionnant les ressources dans les détails du tag, il est possible de supprimer le tag de celles-ci via le bouton `Désassigner le tag`
+A l'inverse en sélectionnant les ressources dans les détails du tag, il est possible de supprimer le tag de celles-ci via le bouton `Désassigner le tag`{.action}.
 
-#### Dashboard produits
+#### Tableau de bord du produit
 
-Dans certains produits OVHcloud un menu a été ajouté pour gérer les tags directement depuis le dashboard de gestion de la ressource
+Dans certains produits OVHcloud, un menu a été ajouté pour gérer les tags directement depuis le tableau de bord de gestion des ressources.
 
 ![Tag Manager](images/baremetal-tag-01.png){.thumbnail}
 
-Le menu de gestion de tags permet d'ajouter ou retirer les tags sur la ressource
+Le menu de gestion de tags permet d'ajouter ou retirer les tags sur la ressource.
 
 ![Tag Manager](images/baremetal-tag-02.png){.thumbnail}
 
-Il est possible soit de sélectionné parmis la liste des tags prédéfinis, ou de saisir ses propres tags en tappant directement les clés et les valeurs dans les champs.
+Il est possible de sélectionner parmi la liste des tags prédéfinis ou d'entrer vos propres tags en saisissant directement les clés et les valeurs dans les champs.
 
 ### Gérer les tags via les API
 
@@ -80,7 +80,7 @@ Le tag doit être indiqué sous la forme :
 
 ### Utilisation dans les politiques IAM
 
-Les tags peuvent être utilisé comme conditions dans les politiques IAM grâce à la condition `resource.Tag(tag_key)`
+Les tags peuvent être utilisé comme conditions dans les politiques IAM grâce à la condition `resource.Tag(tag_key)`.
 
 Par exemple la politique suivante permet de donner les droits sur l'ensemble des VPS qui portent le tag `Environment:Production` :
 
