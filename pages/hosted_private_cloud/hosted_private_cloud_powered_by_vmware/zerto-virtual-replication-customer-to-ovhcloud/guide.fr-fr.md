@@ -306,16 +306,16 @@ Avant de lancer l’appairage, vous devez récupérer un **token de pairage**.
 
 Deux possibilités s’offrent à vous :
 
-- **Côté client** : via l’API OVHcloud avec la requête
+- Depuis [l'API OVHcloud](/links/console) avec la requête ci-dessous :
 
 > [!api]
-> 
-> @api {v1} POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zertoSingle/requestPairingToken 
-> 
+>
+> @api {v1} POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zertoSingle/requestPairingToken
+>
 
-- **Côté OVHcloud / support** : depuis l’atelier PCC, via le bouton `Send pairing token`{.action}.
+- Sur demande au support OVHcloud en ouvrant un ticket via le [centre d'aide](https://help.ovhcloud.com/csm?id=csm_cases_requests).
 
-Cette action déclenche l’envoi d’un e-mail au client, qui pourra alors récupérer le token et l’ajouter dans son Zerto Onsite afin de l’appairer au PCC.
+Suite au traitement de votre demande, vous recevrez un e-mail contenant le token de pairage et pourrez l'ajouter dans l'interface Zerto afin de l'appairer au PCC.
 
 Une fois la ZVM installée sur le site client, vous pouvez vous connecter à l’interface Zerto. 
 

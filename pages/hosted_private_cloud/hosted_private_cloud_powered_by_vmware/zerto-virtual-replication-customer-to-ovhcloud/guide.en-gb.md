@@ -291,18 +291,16 @@ Before starting the pairing process, you need to retrieve a **pairing token**.
 
 There are two possible ways to do this:
 
-- Before starting the pairing process, you need to retrieve a **pairing token**. You have two options:
-
-- **On the customer side**: via the OVHcloud API:
+- From [the OVHcloud API](/links/console) with the request below:
 
 > [!api]
-> 
-> @api {v1} POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zertoSingle/requestPairingToken 
-> 
+>
+> @api {v1} POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zertoSingle/requestPairingToken
+>
 
-- **On the OVHcloud side / with support**: from the PCC workshop, using the `Send pairing token`{.action} button.
+- On request to OVHcloud support by opening a ticket via the [Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests).
 
-This action triggers an email to be sent to the customer, allowing them to retrieve the token and add it to their Zerto Onsite in order to pair it with the PCC.
+Once your request has been processed, you will receive an email containing the pairing token, which you can add to the Zerto interface in order to pair it with the PCC.
 
 Then, log in to your on-premises ZVM. The following screen is displayed:
 
