@@ -66,7 +66,7 @@ L’outil [FIO](https://github.com/axboe/fio) vous permet de tester plusieurs sc
 - le nombre de FIO workers ;
 - le modèle d’accès (lecture/écriture/séquentiel/aléatoire), etc.
 
-Ci-dessous quelques exemples de commandes fio permettant de valider que le nombre d'IOPS maximum (4000) ou la bande passante maximale (64MB/s) peuvent être atteint pour un service EFS de 1TB:
+Retrouvez ci-dessous quelques exemples de commandes fio permettant de valider que le nombre d'IOPS maximum (4000) ou la bande passante maximale (64MB/s) peuvent être atteints pour un service EFS de 1TB :
 
 **Lecture aléatoire - IOPS max**
 ```
