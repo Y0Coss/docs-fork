@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 ## Obiettivo
 
-FileZilla è un software disponibile gratuitamente su diversi sistemi operativi (Windows, macOS, ecc...).
+FileZilla è un software disponibile gratuitamente su diversi sistemi operativi (Windows, macOS, ecc.).
 Permette di mettere online file o siti Internet [accedendo allo spazio di storage](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting Web.
 
 **Questa guida ti mostra come accedere allo spazio di storage dell’hosting Web OVHcloud e gestire i dati in esso contenuti grazie al software FileZilla.**
@@ -43,12 +43,12 @@ Permette di mettere online file o siti Internet [accedendo allo spazio di storag
 ![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - La parte superiore **incorniciata** permette una connessione rapida al tuo hosting inserendo il nome dell'**hosting**, il nome dell'**utente**, la **password** associata e il numero di **porta** utilizzato.
-- **zona 1**: dettagli sullo storico delle operazioni, sulla connessione allo spazio FTP, sui trasferimenti di file, sugli errori, ecc. Per saperne di più, consulta la [documentazione ufficiale di FileZilla](https://filezilla-project.org/).
-- **zona 2**: archivia directory/file locali sul tuo computer
-- **zona 3**: archivia directory/file remoti quando sei connesso al tuo hosting.
-- **zona 4**: elenco delle directory/file nella directory selezionata in locale sul tuo computer.
-- **zona 5**: elenco delle directory/file remoti nella directory selezionata sul tuo hosting.
-- **zona 6**: lista delle operazioni di trasferimento in corso, in attesa o in errore tra il tuo computer e il tuo hosting.
+- **zona 1**: Dettagli sullo storico delle operazioni, sulla connessione allo spazio FTP, sui trasferimenti di file, sugli errori, ecc. Per saperne di più, consulta la [documentazione ufficiale di FileZilla](https://filezilla-project.org/).
+- **zona 2**: Archivia directory/file locali sul tuo computer.
+- **zona 3**: Archivia directory/file remoti quando sei connesso al tuo hosting.
+- **zona 4**: Elenco delle directory/file nella directory selezionata in locale sul tuo computer.
+- **zona 5**: Elenco delle directory/file remoti nella directory selezionata sul tuo hosting.
+- **zona 6**: Lista delle operazioni di trasferimento in corso, in attesa o in errore tra il tuo computer e il tuo hosting.
 
 ///
 
@@ -63,8 +63,8 @@ Eseguire le operazioni seguenti:
 3. Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}.
 4. Nella nuova pagina, visualizzi le informazioni relative allo spazio di storage. Recupera questi elementi:
     - Il `Server FTP e SFTP` rappresentato nel formato seguente: `ftp.clusterXXX.hosting.ovh.net` (dove ciascuno dei 3 `X` corrisponde a una cifra compresa tra `0` e `9`).
-    - uno degli utenti presenti nella colonna `Login` della tabella situata a piè di pagina. In alternativa, è possibile utilizzare il `Login principale`.
-    - il numero della `Porta FTP` o il numero della `Porta SFTP` in base al protocollo di connessione che si desidera utilizzare per connettersi allo spazio di storage.
+    - Uno degli utenti presenti nella colonna `Login` della tabella situata a piè di pagina. In alternativa, è possibile utilizzare il `Login principale`.
+    - Il numero della `Porta FTP` o il numero della `Porta SFTP` in base al protocollo di connessione che si desidera utilizzare per connettersi allo spazio di storage.
 
 > [!primary]
 >
@@ -81,7 +81,7 @@ La connessione può essere effettuata tramite due protocolli di trasferimento fi
 >
 Se possibile, ti consigliamo di utilizzare il protocollo **SFTP** per accedere allo spazio di storage con FileZilla.
 >
-Il protocollo **SFTP** cripta lo scambio di dati tra il tuo dispositivo e il tuo hosting Web. In caso di difficoltà di utilizzo, ad esempio nella segmentazione di utenti o cartelle, sarà necessario utilizzare il protocollo **FTP**.
+> Il protocollo **SFTP** cripta lo scambio di dati tra il tuo dispositivo e il tuo hosting Web. In caso di difficoltà di utilizzo, ad esempio nella segmentazione di utenti o cartelle, sarà necessario utilizzare il protocollo **FTP**.
 
 **Fare clic sul protocollo di connessione desiderato per visualizzare le spiegazioni.**
 
@@ -124,6 +124,8 @@ Nella barra di connessione rapida, completa i campi con le informazioni richiest
 |Porta|Inserisci il numero della porta SFTP recuperata precedentemente nella [prima parte](#part-1) di questa guida per una connessione SFTP.|
 
 Una volta inserito tutto correttamente nel riquadro **1** dell’immagine qui sotto, clicca su `Connessione rapida`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
 
 Si apre una finestra di dialogo (vedi l’immagine qui di seguito) per certificare la connessione all’host sul quale ti stai preparando a connetterti. Una volta effettuato l’accesso a un host OVHcloud, seleziona la casella *Considera sempre attendibile l’host e aggiungi la chiave alla cache*, in modo che il software non richieda più la stessa informazione a te.
 
@@ -206,7 +208,7 @@ In questa zona trovi:
 
 ///
 
-/// details | Menu contestuale Server
+/// details | Menu contestuale del server
 
 Fai click con il tasto destro su uno dei file presenti nella **zona 5** (descritta nella sezione di questo tutorial relativa [all'interfaccia](#interface) di FileZilla).
 
@@ -341,8 +343,8 @@ Più in generale, consulta [le nostre guide relative agli hosting condivisi](/pr
 
 Consulta la [pagina ufficiale di FileZilla](https://filezilla-project.org/).
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

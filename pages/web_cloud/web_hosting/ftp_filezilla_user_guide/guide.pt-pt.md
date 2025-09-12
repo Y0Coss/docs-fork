@@ -125,6 +125,8 @@ A partir da barra de ligação rápida, preencha as informações utilizando a t
 
 Depois de tudo estar inserido corretamente no quadro **1** da imagem abaixo, clique em `Ligação rápida`{.action}.
 
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+
 Ao fazer isso, uma caixa de diálogo é aberta (veja a imagem abaixo) para certificar a conexão ao host no qual você está prestes a se conectar. Ao estar ligado a um host OVHcloud, pode selecionar a opção *Confie sempre nesse host, adicione esta chave à cache* para que o software não volte a pedir-lhe.
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}

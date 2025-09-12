@@ -178,6 +178,8 @@ En el siguiente caso, el error se genera con un nombre de host incorrecto:
 
 Compruebe que la contraseña del host se corresponde con el nombre del host que haya indicado en el [área de cliente de OVHcloud](/links/manager).
 
+///
+
 ### 3 - Transferencia de archivos
 
 Para transferir sus archivos por (S)FTP, puede seleccionarlos y arrastrarlos y soltarlos desde la ventana izquierda *(ordenador)* a la derecha *(alojamiento)* (**áreas 4 y 5** descritas en la sección de este tutorial sobre [la interfaz](#interface) de FileZilla).
@@ -219,7 +221,7 @@ Aparecerá un menú contextual con varias opciones:
 - Actualizar: Actualiza la visualización de los datos para mostrar correctamente los diferentes archivos.
 - Eliminar: Le permite borrar el archivo seleccionado.
 - Renombrar: Le permite renombrar el archivo seleccionado.
-- Copiar la(s) dirección(s) al portapapeles: Permite copiar automáticamente el vínculo directo al archivo seleccionado. Ejemplo de URL que puede generarse: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/micarpeta1/miarchivo1.jpg`.
+- Copiar la(s) dirección(s) al portapapeles: Permite copiar automáticamente el vínculo directo al archivo seleccionado. Ejemplo de URL que puede generarse: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/my_folder1/my_file.jpg`.
 - Permisos de archivo: Le permite cambiar los permisos de los archivos (Chmod).
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}

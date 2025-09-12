@@ -85,7 +85,7 @@ Połączenie może być realizowane przez dwa protokoły transferu plików:
 
 **Kliknij wybrany protokół logowania, aby wyświetlić wyjaśnienia.**
 
-// Szczegóły | Logowanie przez SFTP do przestrzeni dyskowej hostingu za pomocą FileZilla. <a name="sftp"></a>
+/// details | Logowanie przez SFTP do przestrzeni dyskowej hostingu za pomocą FileZilla. <a name="sftp"></a>
 
 **SFTP** używa domyślnego portu 22 zamiast portu 21, podobnie jak SSH. Jeśli korzystasz z hostingu Cloud Web, użyj portu, który wyświetla się w Twoim [Panelu klienta OVHcloud](/links/manager). Port 22 jest wyłączony przez bezpieczeństwo w protokole SSH i SFTP dla hostingu Cloud Web.
 
@@ -124,6 +124,8 @@ Na pasku szybkiego logowania uzupełnij informacje, korzystając z poniższej ta
 |Port|Wpisz numer uprzednio pobranego portu SFTP w [pierwszej części](#part-1) tego przewodnika dla połączenia SFTP.|
 
 Kiedy wszystko zostanie poprawnie wpisane w ramce **1** na poniższym obrazku, kliknij `Szybkie połączenie`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
 
 Otworzy się wówczas okno dialogowe (patrz obrazek poniżej), w którym potwierdzisz logowanie do hosta, z którym chcesz się połączyć. Po zalogowaniu się na hoście OVHcloud możesz zaznaczyć pole *Zawsze ufaj temu hostowi, dodać ten klucz do pamięci cache*, aby oprogramowanie nie pytało Cię ponownie w przyszłości.
 
