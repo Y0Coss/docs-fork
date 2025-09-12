@@ -107,7 +107,7 @@ Cela peut résoudre certains problèmes de connexion.
 
 Pour éviter d'attendre au téléphone, nous vous invitons à créer une demande d'assistance depuis le [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Cliquez sur `✉ Tickets`{.action} puis sur le bouton `Création de ticket`{.action}.
 
-Vous pouvez également consulter l'ensemble de notre documentation (FAQ, guides, outils de diagnostic, etc.) dans le [centre d'aide](https://help.ovhcloud.com/csm/fr-documentation?id=kb_home).
+Vous pouvez également consulter l'ensemble de notre documentation (FAQ, guides, outils de diagnostic, etc.) dans le [centre d'aide](/links/documentation).
 
 ///
 
@@ -233,7 +233,7 @@ Contactez le support OVHcloud par téléphone :
 
 Votre identifiant client sera alors bloqué et les services souscrits frauduleusement seront supprimés.
 
-Enfin, pour retrouver l’usage de votre compte client, nous pourrons vous demander de modifier votre adresse e-mail et/ou votre mot de passe via [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi). 
+Enfin, pour retrouver l’usage de votre compte client, nous pourrons vous demander de modifier votre adresse e-mail et/ou votre mot de passe via [cette procédure](/links/transversal/procedure-email-change).
 
 ///
 

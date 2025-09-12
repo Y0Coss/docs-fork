@@ -97,7 +97,7 @@ Retrouvez plus d'informations dans notre guide «[Modifier le mot de passe de vo
 
 Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de remplacer votre adresse e-mail principale par l'adresse e-mail de secours.
 
-Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi).
+Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](/links/transversal/procedure-email-change).
 
 Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
 
@@ -182,8 +182,8 @@ Vous aurez ainsi accès aux informations personnelles de votre compte. Faites d�
 
 Pour mieux connaître les impacts du règlement général sur la protection des données (RGPD) sur votre activité professionnelle ou vos informations personnelles, nous vous proposons de consulter ces ressources :
 
-- [OVHcloud et la protection des données à caractère personnel](https://www.ovhcloud.com/fr/personal-data-protection/) ;
-- [RGPD : les questions que vous vous posez](https://www.ovhcloud.com/fr/personal-data-protection/faq/?lsdDoc=faq.xml).
+- [OVHcloud et la protection des données à caractère personnel](/links/transversal/personal-data-protection) ;
+- [RGPD : les questions que vous vous posez](/links/transversal/personal-data-protection-faq).
 
 ///
 
@@ -287,7 +287,7 @@ La délégation de service devra être validée par e-mail à la fois par l’ad
 
 Avant toute modification, assurez-vous donc que toutes les adresses e-mail de contact sont valides, sans quoi la demande ne pourra aboutir.
 
-Si vous souhaitez récupérer un nom de domaine dont vous êtes le propriétaire enregistré auprès du registre (vous pouvez vérifier ces informations sur [notre outil Whois en ligne](/links/web/domains-whois)), mais que vous n’avez pas accès au compte client administrateur, nous vous invitons à suivre [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeContacts.cgi).
+Si vous souhaitez récupérer un nom de domaine dont vous êtes le propriétaire enregistré auprès du registre (vous pouvez vérifier ces informations sur [notre outil Whois en ligne](/links/web/domains-whois)), mais que vous n’avez pas accès au compte client administrateur, nous vous invitons à suivre [cette procédure](/links/transversal/procedure-contact-change).
 
 > [!success]
 > Un guide complet sur la gestion des contacts est disponible [ici](/pages/account_and_service_management/account_information/managing_contacts).
@@ -324,7 +324,7 @@ Contactez le support OVHcloud par téléphone :
 
 Votre identifiant client sera alors bloqué et les services souscrits frauduleusement seront supprimés.
 
-Enfin, pour retrouver l’usage de votre compte client, nous pourrons vous demander de modifier votre adresse e-mail et/ou votre mot de passe via [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi). 
+Enfin, pour retrouver l’usage de votre compte client, nous pourrons vous demander de modifier votre adresse e-mail et/ou votre mot de passe via [cette procédure](/links/transversal/procedure-email-change).
 
 ///
 
