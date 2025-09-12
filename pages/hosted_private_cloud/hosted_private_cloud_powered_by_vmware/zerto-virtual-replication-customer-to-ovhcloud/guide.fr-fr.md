@@ -302,8 +302,6 @@ Vous avez maintenant tous les éléments pour créer vos règles firewall qui au
 
 ### Étape 5 : appairage des ZVM
 
-Une fois la ZVM installée sur le site client, vous pouvez vous connecter à l’interface Zerto. 
-
 Avant de lancer l’appairage, vous devez récupérer un **token de pairage**.
 
 Deux possibilités s’offrent à vous :
@@ -318,6 +316,8 @@ Deux possibilités s’offrent à vous :
 - **Côté OVHcloud / support** : depuis l’atelier PCC, via le bouton `Send pairing token`{.action}.
 
 Cette action déclenche l’envoi d’un e-mail au client, qui pourra alors récupérer le token et l’ajouter dans son Zerto Onsite afin de l’appairer au PCC.
+
+Une fois la ZVM installée sur le site client, vous pouvez vous connecter à l’interface Zerto. 
 
 L’écran suivant s’affiche dans Zerto :
 
