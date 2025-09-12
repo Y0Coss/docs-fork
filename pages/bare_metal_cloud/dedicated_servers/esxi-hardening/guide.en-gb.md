@@ -1,7 +1,7 @@
 ---
 title: 'Manage and secure your ESXi dedicated server from the outset'
 excerpt: 'Discover the various ways you can effectively secure your ESXi dedicated server'
-updated: 2024-09-13
+updated: 2025-09-15
 ---
 
 ## Objective

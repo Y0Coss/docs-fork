@@ -1,5 +1,5 @@
 ---
-title: How to install VMware ESXi 8 on an dedicated server
+title: How to install VMware ESXi 8 on a dedicated server
 excerpt: Find out how to install and configure VMware ESXi 8 on a dedicated server using an OVHcloud provided image
 updated: 2025-09-15
 ---
@@ -17,7 +17,7 @@ OVHcloud installations of ESXi are therefore compliant with the configuration se
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) **ready to be installed/reinstalled** in your OVHcloud account that is compatible with [ESXi 8 hardware requirements](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/esxi-upgrade-8-0/upgrading-esxi-hosts-upgrade/esxi-requirements-upgrade/esxi-hardware-requirements-upgrade.html)
-- Access to the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and/or the [OVHcloud API](/links/api)
+- Access to the [OVHcloud Control Panel](/links/manager) and/or the [OVHcloud API](/links/api)
 
 > [!alert]
 >
@@ -26,7 +26,7 @@ OVHcloud installations of ESXi are therefore compliant with the configuration se
 
 ## Instructions
 
-ESXi 7.0 and later versions introduced a [boot option to configure the size of ESXi system partitions](https://kb.vmware.com/s/article/81166) because the increased size of the system partition could cause issues, especially on systems with small disks. OVHcloud includes this feature in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and the [OVHcloud API](/links/api).
+ESXi 7.0 and later versions introduced a [boot option to configure the size of ESXi system partitions](https://kb.vmware.com/s/article/81166) because the increased size of the system partition could cause issues, especially on systems with small disks. OVHcloud includes this feature in the [OVHcloud Control Panel](/links/manager) and the [OVHcloud API](/links/api).
 
 Even with multiple disks available on a server, the ESXi OS installation uses only the first disk of the targeted disk group (see [OVHcloud API and OS Installation - Disk Groups](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#disk-group)). Other disks may be configured afterwards to be used for virtual machines (see [How to add a datastore](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore)).
 
