@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Concepts de performances
 excerpt: "Découvrez les concepts liés au provisionnement, au suivi ainsi qu'au test des performances de la solution Enterprise File Storage"
-updated: 2022-11-30
+updated: 2025-09-12
 ---
 
 ## Objectif
