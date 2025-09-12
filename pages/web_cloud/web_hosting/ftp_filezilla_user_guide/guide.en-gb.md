@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to use FileZilla"
 excerpt: "Find out how to log in to your OVHcloud Web Hosting plan’s storage space, and manage the data stored on it, using FileZilla software"
-updated: 2025-09-11
+updated: 2025-09-12
 ---
 
 <style>
@@ -124,6 +124,8 @@ Using the quick connection bar, enter the information using the table below:
 |Port|Enter the SFTP port number you retrieved earlier in the [first part](#part-1) of this guide for an SFTP connection.|
 
 Once you have entered everything correctly in the **1** box in the image below, click `Quick Connect`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
 
 A dialog box will then open (see the image below) to certify the connection to the host you are about to connect to. By being logged in to an OVHcloud host, you can tick the *Always trust this host, add this key to the cache* box so that the software won't ask you again in the future.
 

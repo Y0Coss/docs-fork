@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Jak używać programu FileZilla"
 excerpt: "Dowiedz się, jak zalogować się do przestrzeni dyskowej hostingu OVHcloud i zarządzać danymi w niej zawartymi za pomocą oprogramowania FileZilla"
-updated: 2025-09-11
+updated: 2025-09-12
 ---
 
 <style>
@@ -26,6 +26,7 @@ details[open]>summary::before {
 ## Wprowadzenie 
 
 FileZilla to oprogramowanie dostępne bezpłatnie w wielu systemach operacyjnych (Windows, macOS, itp.).
+
 Umożliwia wgranie plików lub Twojej strony WWW do trybu online poprzez [zalogowanie się do przestrzeni dyskowej](/pages/web_cloud/web_hosting/ftp_connection) na Twoim hostingu.
 
 **Dowiedz się, jak zalogować się do przestrzeni dyskowej hostingu OVHcloud i zarządzać danymi w niej zawartymi za pomocą oprogramowania FileZilla.**

@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment utiliser FileZilla"
 excerpt: "Découvrez comment vous connecter à l'espace de stockage de votre hébergement web OVHcloud et gérer les données qu'il contient grâce au logiciel FileZilla"
-updated: 2025-09-11
+updated: 2025-09-12
 ---
 
 <style>
@@ -26,6 +26,7 @@ details[open]>summary::before {
 ## Objectif
 
 FileZilla est un logiciel disponible gratuitement sur plusieurs systèmes d'exploitations (Windows, macOS, etc).
+
 Il permet de mettre en ligne des fichiers ou votre site Internet en vous [connectant à l'espace de stockage](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web.
 
 **Découvrez comment vous connecter à l'espace de stockage de votre hébergement web OVHcloud et gérer les données qu'il contient grâce au logiciel FileZilla.**

@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web - Como utilizar o FileZilla"
 excerpt: "Saiba como aceder ao espaço de armazenamento do seu alojamento web OVHcloud e gerir os dados nele contidos graças ao software FileZilla"
-updated: 2025-09-11
+updated: 2025-09-12
 ---
 
 <style>
@@ -26,6 +26,7 @@ details[open]>summary::before {
 ## Objetivo
 
 O FileZilla é um software disponível gratuitamente em vários sistemas operativos (Windows, macOS, etc.).
+
 Permite publicar ficheiros ou o seu website [ligando-se ao espaço de armazenamento](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web.
 
 **Saiba como aceder ao espaço de armazenamento do seu alojamento web OVHcloud e gerir os dados nele contidos graças ao software FileZilla.**

@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Verwendung von FileZilla"
 excerpt: "Erfahren Sie, wie Sie sich mit dem Speicherplatz Ihres OVHcloud Webhostings verbinden und die darin enthaltenen Daten mithilfe der FileZilla Software verwalten"
-updated: 2025-09-11
+updated: 2025-09-12
 ---
 
 <style>
@@ -125,6 +125,8 @@ Geben Sie in der Schnellverbindungsleiste die folgenden Informationen ein:
 |Port|Geben Sie die zuvor im [ersten Teil](#part-1) dieser Anleitung für eine SFTP-Verbindung ermittelte SFTP-Portnummer ein.|
 
 Wenn Sie in der Box **1** im Bild unten alles korrekt eingegeben haben, klicken Sie auf `Quickconnect`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
 
 Es wird ein Dialogfeld geöffnet (siehe Abbildung unten), um die Verbindung mit dem Host zu bestätigen, mit dem Sie eine Verbindung herstellen möchten. Wenn Sie auf einem OVHcloud Host angemeldet sind, können Sie die Option *Diesem Host immer vertrauen, diesen Schlüssel zum Cache hinzufügen* anhaken, damit die Software Sie in Zukunft nicht erneut auffordert.
 
