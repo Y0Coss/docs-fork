@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Chiffrez vos objets côté serveur avec SSE-C ou SSE-OMK
 excerpt: Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C ou SSE-OMK
-updated: 2024-11-29
+updated: 2025-09-12
 ---
 
 <style>
@@ -255,13 +255,13 @@ Attention de ne pas inclure de headers de chiffrement spécifiques lors du tél�
 > Avec l'espace client OVHcloud
 >> Dans votre espace client OVHcloud, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Object Storage`{.action} dans le menu de gauche.
 >>
->> Sélectionnez ensuite le bucket Object Storage concerné, puis dans le panel d'informations, cliquez sur `Activer le chiffrement`{.action}.
+>> Sélectionnez ensuite le bucket Object Storage concerné, puis dans le menu d'informations, cliquez sur `Activer le chiffrement`{.action}.
 >>
->> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png)
+>> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png){.thumbnail}
 >>
 >> Cliquez sur le bouton `Activer`{.action}.
 >>
->> ![Object Storage enabling encryption window](images/object_storage_enabling_encryption.png.png)
+>> ![Object Storage enabling encryption window](images/object_storage_enabling_encryption.png){.thumbnail}
 >>
 
 > [!primary]
@@ -282,12 +282,12 @@ Après avoir configuré le chiffrement de votre bucket via `PutBucketEncryption`
 >>
 >> Cette commande vous permet de vérifier la configuration actuelle du chiffrement de votre bucket pour vous assurer que le chiffrement SSE-OMK est bien activé.
 >>
->> Dans cette commande, remplacez `votre-bucket` par le nom de votre bucket. Cette commande vous renvoie les détails de la configuration du chiffrement actuelle de votre bucket, vous confirmant l'utilisation de SSE-OMK pour le chiffrement des données au repos.
+>> Dans cette commande, remplacez `votre-bucket` par le nom de votre bucket. Cette commande vous renvoie les détails de la configuration de chiffrement actuelle de votre bucket, vous confirmant l'utilisation de SSE-OMK pour le chiffrement des données au repos.
 >>
 > Avec l'espace client OVHcloud
->> Accédez au panel d'informations du bucket concerné puis consultez la section `Sécurité et permissions `. Vous y trouverez l’option de chiffrement par défaut, qui indique si le chiffrement SSE-OMK est activé ou non.
+>> Accédez au menu d'informations du bucket concerné puis consultez la section `Sécurité et permissions `. Vous y trouverez l’option de chiffrement par défaut, qui indique si le chiffrement SSE-OMK est activé ou non.
 >>
->> ![Object Storage information panel encryption](images/object_storage_information_panel_encryption_enable.png)
+>> ![Object Storage information panel encryption](images/object_storage_information_panel_encryption_enable.png){.thumbnail}
 >>
 
 Cette étape supplémentaire garantit une transparence totale et vous permet de vous assurer que la sécurité de vos données est maintenue selon les normes les plus élevées, avec la simplicité et l'efficacité que propose le chiffrement SSE-OMK gérée par OVHcloud.

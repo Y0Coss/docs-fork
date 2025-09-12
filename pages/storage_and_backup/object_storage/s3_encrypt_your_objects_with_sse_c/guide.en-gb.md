@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Encrypt your server-side objects with SSE-C or SSE-OMK
 excerpt: This guide explains how to encrypt your server-side objects with SSE-C or SSE-OMK
-updated: 2024-11-29
+updated: 2025-09-12
 ---
 
 <style>
@@ -256,11 +256,11 @@ Be careful not to include specific encryption headers when downloading an encryp
 >>
 >> Next, select the Object Storage bucket you want to manage, and in the information panel, click on `Enable encryption`{.action}.
 >>
->> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png)
+>> ![Object Storage enabling encryption](images/object_storage_information_panel_encryption.png){.thumbnail}
 >>
 >> Click on the `Enable`{.action} button.
 >>
->> ![Object Storage enabling encryption window](images/object_storage_enabling_encryption.png)
+>> ![Object Storage enabling encryption window](images/object_storage_enabling_encryption.png){.thumbnail}
 >>
 
 > [!primary]
@@ -273,6 +273,7 @@ After configuring bucket encryption using `PutBucketEncryption` or through the O
 
 > [!tabs]
 > Via the AWS S3api
+>>
 >> ```bash
 >> aws s3api get-bucket-encryption --bucket your-bucket --endpoint-url https://s3.io.cloud.ovh.net
 >> ```
@@ -286,7 +287,7 @@ After configuring bucket encryption using `PutBucketEncryption` or through the O
 > Via the OVHcloud Control Panel
 >> Go to the information panel of the bucket concerned, then check the `Security and permissions` section. There you will find the `Encryption default` option, which indicates whether SSE-OMK encryption is enabled or not.
 >>
->> ![Object Storage information panel encryption](images/object_storage_information_panel_encryption_enable.png)
+>> ![Object Storage information panel encryption](images/object_storage_information_panel_encryption_enable.png){.thumbnail}
 >>
 
 This extra step ensures full transparency and helps ensure your data is kept safe to the highest standards, with the simplicity and efficiency offered by SSE-OMK encryption managed by OVHcloud.
