@@ -1,6 +1,6 @@
 ---
 title: "Webhosting - Verwendung von FileZilla"
-excerpt: "In dieser Anleitung erfahren Sie, wie Sie sich mit dem Speicherplatz Ihres OVHcloud Webhostings verbinden und die darin enthaltenen Daten mithilfe der FileZilla Software verwalten"
+excerpt: "Erfahren Sie, wie Sie sich mit dem Speicherplatz Ihres OVHcloud Webhostings verbinden und die darin enthaltenen Daten mithilfe der FileZilla Software verwalten"
 updated: 2025-09-11
 ---
 
@@ -19,7 +19,7 @@ details[open]>summary::before {
 </style>
 
 > [!primary]
-> **FTP-Explorer/Net2FTP deaktivieren**
+> **FTP-Explorer/Net2FTP**
 >
 > Bei Webhostings ist es nicht mehr möglich, sich mit dem FTP-Speicherplatz über das Online-Tool FTP Explorer/Net2FTP zu verbinden. Um sich weiterhin per FTP mit Ihrem Webhosting zu verbinden, verwenden Sie die Programme [FileZilla](https://filezilla-project.org/download.php) oder [Cyberduck](https://cyberduck.io/).
 
@@ -27,9 +27,9 @@ details[open]>summary::before {
 
 FileZilla ist ein FTP-Client, der für mehrere Betriebssystemen (Windows, macOS etc.) kostenlos zur Verfügung steht.
 
-Sie können damit Dateien oder Ihre Website online stellen, indem Sie sich [mit dem Speicherplatz verbinden](/pages/web_cloud/web_hosting/ftp_connection) Ihres Webhostings verbinden.
+Sie können damit Dateien oder Ihre Website online stellen, indem Sie sich [mit dem Speicherplatz Ihres Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection).
 
-**In dieser Anleitung erfahren Sie, wie Sie sich mit dem Speicherplatz Ihres OVHcloud Webhostings verbinden und die darin enthaltenen Daten mithilfe der FileZilla Software verwalten.**
+**Diese Anleitung erklärt, wie Sie sich mit dem Speicherplatz Ihres OVHcloud Webhostings verbinden und die darin enthaltenen Daten mithilfe der FileZilla Software verwalten.**
 
 ## Voraussetzungen
 
@@ -63,8 +63,8 @@ Führen Sie die folgenden Aktionen aus:
 2. Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 3. Klicken Sie auf den Tab `FTP - SSH`{.action}.
 4. Auf der neuen Seite werden die Informationen zu Ihrem Speicherplatz angezeigt. Rufen Sie die folgenden Elemente ab:
-    - Der `FTP- und SFTP-Server`, dargestellt als `ftp.clusterXXX.hosting.ovh.net` (wobei jeder der 3 `X` eine Zahl zwischen `0` und `9` ist).
-    - Einer der Benutzer in der Spalte `Login` der Tabelle unten auf der Seite. Sie können auch den `Primäres Login` verwenden, wenn Sie möchten.
+    - Der `FTP- und SFTP-Server`, als `ftp.clusterXXX.hosting.ovh.net` (wobei jedes `X` eine Zahl zwischen `0` und `9` ist).
+    - Einer der Benutzer in der Spalte `Login` der Tabelle unten auf der Seite. Sie können auch `Primäres Login` verwenden, wenn Sie möchten.
     - Die Nummer des `FTP-Port` oder die Nummer des `SFTP-Port`, je nachdem, welches Verbindungsprotokoll Sie für die Verbindung mit Ihrem Speicherplatz verwenden möchten.
 
 > [!primary]
@@ -80,9 +80,9 @@ Die Verbindung kann über zwei Dateiübertragungsprotokolle hergestellt werden:
 
 > [!primary]
 >
-> Wir empfehlen Ihnen, so weit wie möglich das **SFTP** Protokoll zu verwenden, um sich mit FileZilla mit Ihrem Speicherplatz zu verbinden.
+> Wir empfehlen, so weit wie möglich das **SFTP** Protokoll zu verwenden, um sich mit FileZilla mit Ihrem Speicherplatz zu verbinden.
 >
-> Das **SFTP** Protokoll verschlüsselt den Datenaustausch zwischen Ihrem Gerät und Ihrem Webhosting. Wenn jedoch bei der Verwendung Einschränkungen auftreten, wie z. B. Benutzersegmentierung oder Ordnersegmentierung, müssen Sie in diesem Fall das **FTP**-Protokoll verwenden.
+> Das **SFTP** Protokoll verschlüsselt den Datenaustausch zwischen Ihrem Gerät und Ihrem Webhosting. Wenn jedoch bei der Verwendung Einschränkungen auftreten, wie z.B. Benutzersegmentierung oder Ordnersegmentierung, müssen Sie das **FTP**-Protokoll verwenden.
 
 **Klicken Sie auf das gewünschte Verbindungsprotokoll, um die Erläuterungen anzuzeigen.**
 
@@ -92,7 +92,7 @@ Die Verbindung kann über zwei Dateiübertragungsprotokolle hergestellt werden:
 
 > [!success]
 >
-> SFTP ist für alle Hosting-Angebote von OVHcloud kostenlos aktiviert (mit Ausnahme der bisherigen Angebote 60free und demo1g).
+> SFTP ist für alle Hosting-Angebote von OVHcloud kostenlos verfügbar (mit Ausnahme der ausgelaufenen Angebote 60free und demo1g).
 >
 
 **SFTP-Aktivierung überprüfen**
@@ -124,9 +124,9 @@ Geben Sie in der Schnellverbindungsleiste die folgenden Informationen ein:
 |Kennwort|Das Kennwort für den Benutzer.|
 |Port|Geben Sie die zuvor im [ersten Teil](#part-1) dieser Anleitung für eine SFTP-Verbindung ermittelte SFTP-Portnummer ein.|
 
-Wenn Sie in der **1**-Box im Bild unten alles korrekt eingegeben haben, klicken Sie auf `Quickconnect`{.action}.
+Wenn Sie in der Box **1** im Bild unten alles korrekt eingegeben haben, klicken Sie auf `Quickconnect`{.action}.
 
-Es wird ein Dialogfeld geöffnet (siehe Abbildung unten), um die Verbindung mit dem Host zu bestätigen, mit dem Sie eine Verbindung herstellen möchten. Wenn Sie auf einem OVHcloud-Host angemeldet sind, können Sie das Kontrollkästchen *Diesem Host immer vertrauen, diesen Schlüssel zum Cache hinzufügen* aktivieren, damit die Software Sie in Zukunft nicht erneut auffordert.
+Es wird ein Dialogfeld geöffnet (siehe Abbildung unten), um die Verbindung mit dem Host zu bestätigen, mit dem Sie eine Verbindung herstellen möchten. Wenn Sie auf einem OVHcloud Host angemeldet sind, können Sie die Option *Diesem Host immer vertrauen, diesen Schlüssel zum Cache hinzufügen* anhaken, damit die Software Sie in Zukunft nicht erneut auffordert.
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
@@ -145,11 +145,11 @@ Geben Sie in der Schnellverbindungsleiste die folgenden Informationen ein:
 |Kennwort|Das Kennwort für den Benutzer.|
 |Port|Es wird normalerweise automatisch durch die Software ausgefüllt. Andernfalls geben Sie den Port `21` für eine FTP-Verbindung ein.|
 
-Wenn Sie in der **1**-Box im Bild unten alles korrekt eingegeben haben, klicken Sie auf `Quickconnect`{.action}.
+Wenn Sie in der Box **1** im Bild unten alles korrekt eingegeben haben, klicken Sie auf `Quickconnect`{.action}.
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
 
-Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie über den Status in der Randleiste **2** auf dem obigen Bild informiert. Sie können so Ihre bereits auf Ihrem Hosting vorhandenen Verzeichnisse/Ordner und Dateien einsehen (Kasten **3**).
+Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie über den Status in der Randleiste **2** auf dem obigen Bild informiert. Sie können so Ihre bereits auf Ihrem Hosting vorhandenen Ordner und Dateien einsehen (Bereich **3**).
 
 ///
 
@@ -191,7 +191,7 @@ Sobald diese Aktion abgeschlossen ist, werden Ihre Dateien automatisch in die Wa
 
 ### 4 - Weitere Funktionen von FileZilla
 
-**Klicken Sie auf die Überschriften unten, um deren Inhalt anzuzeigen.**
+**Klicken Sie auf die Abschnitte unten, um deren Inhalt anzuzeigen.**
 
 /// details | Warteschlange (Queue)
 
@@ -244,9 +244,9 @@ Im Allgemeinen ist es einfacher, *chmod*-Berechtigungen mit einem dreistelligen 
 
 Die erste der drei Ziffern, die *chmod*-Rechte definieren, entspricht den Rechten des Inhabers/Administrators, die zweite den Rechten für Gruppen (die selten genutzt werden und in der Regel auf 0 gesetzt sind) und die dritte den Besuchern Ihrer gehosteten Website.
 
-Wir empfehlen generell, die *chmod*-Rechte **705** für Ordner und die *chmod*-Rechte **604** für Dateien nicht zu überschreiten.
+Wir empfehlen generell, die *chmod*-Rechte **705** für Ordner und die *chmod*-Rechte **604** für Dateien nicht auszuweiten.
 
-Je höher die Zahl, desto größer die Berechtigungen.
+Je höher die Zahl, desto höher die Berechtigungen.
 
 ![Hosting](/pages/assets/screens/other/web-tools/filezilla/change-file-attributes.png){.thumbnail}
 
@@ -262,7 +262,7 @@ Sie können die Option “Recurse into subdirectories” aktivieren, um nicht nu
 >
 > Unabhängig von einer Aktion Ihrerseits kann Ihr Hosting automatisch deaktiviert werden, wenn unsere Sicherheitssysteme schädliche oder nicht autorisierte Dateien auf Ihrem Hosting erkennen.
 >
-> [Sichern Sie dann Ihre Dienste](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) und korrigieren Sie dabei die Sicherheitslücken, die in der per E-Mail erhaltenen Blockierungsbenachrichtigung erwähnt werden.
+> [Sichern Sie dann Ihre Dienste](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) und beheben Sie dabei die Sicherheitslücken, die in der per E-Mail erhaltenen Benachrichtigung erwähnt werden.
 >
 
 Klicken Sie anschließend auf `Server`{.action} und wählen Sie `Enter custom command`{.action} (diese Option kann auch als `Enter FTP command`{.action} bezeichnet sein).
@@ -293,8 +293,8 @@ SEITE CHMOD 705 .
 
 > [!warning]
 >
-> Überprüfen Sie die Webseiten-Anzeige nach maximal 3 Stunden.<br>
-> Unsere Roboter prüfen mindestens alle 3 Stunden auf Statusänderungen.<br>
+> Überprüfen Sie die Webseiten-Anzeige nach 3 Stunden.<br>
+> Unsere Roboter prüfen alle 3 Stunden auf Statusänderungen.<br>
 > Je nachdem, wann die oben genannte Änderung durchgeführt wird, kann die Wiederherstellung der Anzeige Ihrer Website daher mehr oder weniger schnell erfolgen.<br>
 > Wenn die 3-Stunden-Frist abgelaufen ist und Ihre Website noch nicht online ist, stellen Sie sicher, dass der eingegebene Befehl erfolgreich übernommen wurde, indem Sie die Operation wiederholen.<br>
 > Wenn dies auch nicht funktioniert, kontaktieren Sie unseren Support.
@@ -336,7 +336,7 @@ Wenn Sie mit der rechten Maustaste auf das Icon klicken, können Sie den Verglei
 
 Sie finden [hier unsere Anleitung zur Behebung von Fehlern bei der Verwendung eines FTP-Programms](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems).
 
-Im Allgemeinen finden Sie [hier alle unsere Hilfen zu Webhostings](/products/web-cloud-hosting).
+Sie finden [hier alle unsere Hilfen zu Webhostings](/products/web-cloud-hosting).
 
 Die offizielle Website von FileZilla finden Sie [hier](https://filezilla-project.org/).
 
