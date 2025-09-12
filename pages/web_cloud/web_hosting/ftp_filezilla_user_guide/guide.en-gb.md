@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 ## Objective
 
-FileZilla is free software available on several operating systems (Windows, macOS, etc.).
+FileZilla is free software available on several operating systems (Windows, macOS, etc.).  
 You can use it to put files or your website online by [connecting to your web hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection).
 
 **Find out how to log in to your OVHcloud Web Hosting plan’s storage space, and manage the data stored on it, using FileZilla software.**
@@ -91,18 +91,18 @@ The **SFTP** uses, like SSH, port 22 by default instead of port 21. If you are u
 
 > [!success]
 >
-> SFTP can be activated for free for all OVHcloud hosting plans (except the old 60free and demo1g plans).
+> SFTP can be activated for free for all OVHcloud hosting plans (except the legacy 60free and demo1g plans).
 >
 
 **Check SFTP protocol activation**
 
 To do this, go back to the `FTP - SSH`{.action} tab in your [OVHcloud Control Panel](/links/manager), as detailed in the [first part](#part-1) of this guide.
 
-In the table at the bottom of the page, locate the `SFTP` column to check that the user (in the `Login` column of the table) concerned has active SFTP access. If this is not the case, the words `Disabled` will appear.
+In the table at the bottom of the page, locate the `SFTP` column to check that the user (in the `Login` column of the table) concerned has active SFTP access. If this is not the case, `Disabled` will appear.
 
 If the SFTP access of the user concerned is `Disabled` in the table, perform the following steps:
 
-- For Personal offers, tick the box to the left of the mention `Disabled` in the table.
+- For Personal offers, tick the box to the left of `Disabled` in the table.
 
 - For Professional and Performance plans:
 
@@ -148,7 +148,7 @@ Once you have entered everything correctly in the **1** box in the image below, 
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
 
-If the connection is successful, you will be informed via the status in the **2** box in the image above. You can then see your directories/folders and files already on your hosting (box **3**).
+If the connection is successful, you will be informed via the status in the **2** box in the image above. You can then see your folders and files already on your hosting (box **3**).
 
 ///
 
@@ -259,9 +259,9 @@ You can select the “Recurse into subdirectories” option to not only change t
 
 > [!primary]
 >
-> Regardless of your actions, your hosting plan may be disabled if our security systems detect malicious files or files that are not authorised on your hosting plan.
+> Regardless of your actions, your hosting plan may be disabled if our security systems detect malicious files or files that are not authorized on your hosting plan.
 >
-> You must then [secure your services](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) while correcting the security vulnerabilities mentioned in the block notification received via email.
+> You must then [secure your services](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#step-2) while correcting the security vulnerabilities mentioned in the notification received via email.
 >
 
 Then click `Server`{.action} and select `Enter custom command`{.action}. (This option may also be called `Enter FTP command`{.action}).
@@ -292,7 +292,7 @@ SITE CHMOD 705 .
 
 > [!warning]
 >
-> Be sure to test the website display after a maximum waiting time of 3 hours.<br>
+> Be sure to test the website display after a waiting time of 3 hours.<br>
 > Our robots check status changes every 3 hours.<br>
 > Depending on when the above changes are made, your website may be restored more or less quickly.<br>
 > If the 3-hour time limit has passed and your website is still not online, verify that the command you have entered has been applied by retrying the operation.<br>
