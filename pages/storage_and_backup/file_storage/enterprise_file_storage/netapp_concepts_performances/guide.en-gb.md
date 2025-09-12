@@ -84,11 +84,11 @@ fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randread -bs=
 **Random write - Bandwidth max**
 ```
 fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randwrite -bs=64k -size=1G -time_based -runtime=60 -name=test4 -directory=/share-nfs
-``` 
+```
 **Sequential read - IOPS max**
 ```
 fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=read -bs=8k -size=1G -time_based -runtime=60 -name=test5 -directory=/share-nfs
-``` 
+```
 **Sequential write - IOPS max**
 ```
 fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=8k -size=1G -time_based -runtime=60 -name=test6 -directory=/share-nfs
@@ -96,7 +96,7 @@ fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=8k 
 **Sequential Read - Bandwidth max**
 ```
 fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=read -bs=64k -size=1G -time_based -runtime=60 -name=test7 -directory=/share-nfs
-``` 
+```
 **Sequential write - Bandwidth max**
 ```
 fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=64k -size=1G -time_based -runtime=60 -name=test8 -directory=/share-nfs
@@ -104,16 +104,11 @@ fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=64k
 
 For more information, see [the FIO documentation](https://fio.readthedocs.io/en/latest/index.html).
 
+**You can also use other open-source tools such as:**
 
-#### You can also use other open-source tools such as:
-
-> nfsiostat (https://man7.org/linux/man-pages/man8/nfsiostat.8.html)
-
-> NFStest (https://wiki.linux-nfs.org/wiki/index.php/NFStest)
-
-> nfstrace (https://github.com/epam/nfstrace)
-
-
+- [nfsiostat](https://man7.org/linux/man-pages/man8/nfsiostat.8.html)
+- [NFStest](https://wiki.linux-nfs.org/wiki/index.php/NFStest)
+- [nfstrace](https://github.com/epam/nfstrace)
 
 ## Go further
 

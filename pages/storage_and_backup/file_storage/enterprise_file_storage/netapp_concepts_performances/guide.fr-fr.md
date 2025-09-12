@@ -103,14 +103,11 @@ fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=64k
 
 Retrouvez plus d'informations sur [la documentation de FIO](https://fio.readthedocs.io/en/latest/index.html).
 
-#### Vous avez aussi la possibilité d'utiliser d'autres outils open-source comme :
+**Vous avez aussi la possibilité d'utiliser d'autres outils open-source comme :**
 
-> nfsiostat (https://man7.org/linux/man-pages/man8/nfsiostat.8.html)
-
-> NFStest (https://wiki.linux-nfs.org/wiki/index.php/NFStest)
-
-> nfstrace (https://github.com/epam/nfstrace)
-
+- [nfsiostat](https://man7.org/linux/man-pages/man8/nfsiostat.8.html)
+- [NFStest](https://wiki.linux-nfs.org/wiki/index.php/NFStest)
+- [nfstrace](https://github.com/epam/nfstrace)
 
 ## Aller plus loin
 

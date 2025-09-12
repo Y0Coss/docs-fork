@@ -4,76 +4,114 @@ excerpt: "Descubra los conceptos relacionados con el aprovisionamiento, el segui
 updated: 2022-11-30
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
+## Objective
 
-## Objetivo
+Learn about the concepts of provisioning, tracking, and performance testing for [Enterprise File Storage](/links/storage/enterprise-file-storage).
 
-Descubra los conceptos relacionados con el aprovisionamiento, el seguimiento y la prueba del rendimiento de la solución [Enterprise File Storage](/links/storage/enterprise-file-storage).
+## Instructions
 
-## Procedimiento
+### Performance monitoring
 
-### Seguimiento del rendimiento
+The concept of “service level” is an important element in the Enterprise File Storage solution. It defines the levels of performance that can be achieved for each provisioned service. File system performance is typically defined by several elements:
 
-El concepto de "nivel de servicio" es un elemento importante de la solución Enterprise File Storage. Establece los niveles de rendimiento alcanzables para cada servicio aprovisionado. El rendimiento de un sistema de archivos suele definirse por varios elementos: 
+- The flow
+- IOPS (number of input/output operations per second)
+- Block size
+- The sequential or random access model
 
-- Tasa de bits.
-- Las IOPS (o número de operaciones de entrada-salida por segundo).
-- El tamaño de bloque.
-- El modelo de acceso secuencial o aleatorio.
+To date, Enterprise File Storage provides and guarantees performance targets of **64 MB/s per TB and 4000 IOPS per TB**. As a result, the provisioned capacity of the services has a direct impact on the performance available for your service.
 
-A día de hoy, Enterprise File Storage proporciona y garantiza objetivos de rendimiento de **64 MB/s por TB y 4000 IOPS por TB**. La capacidad aprovisionada de los servicios tiene, por tanto, un impacto directo en el rendimiento disponible para su servicio.
+This information is important when you design your storage architecture. Let’s take three examples to illustrate it:
 
-Esta información es importante al diseñar la arquitectura de almacenamiento. Veamos tres ejemplos:
+- **Example 1**: Your application needs a theoretical bandwidth of about **430 MB/s**. To do this, you need to provision at least **7 TB** of storage. Indeed, a quick calculation (**430/64 = 6.72**) allows to estimate the minimum capacity needed to achieve this flow.
 
-- **Ejemplo n°1**: su aplicación necesita una tasa de transferencia teórica de aproximadamente **430 MB/s**. Para ello, debe aprovisionar al menos **7 TB** de almacenamiento. En efecto, un rápido cálculo (**430/64 = 6,72**) permite estimar la capacidad mínima necesaria para alcanzar este caudal.
+- **Example 2**: Your infrastructure requires **4500 IOPS** and a data volume of **1 TB**. To do this, you need to provision **2 TB** to get the **required 4500 IOPS**. Specifically, you will get **8000 IOPS** on provisioned capacity. This involves overprovisioning your service to ensure the level of performance you want.
 
-- **Ejemplo n°2**: su infraestructura necesita **4500 IOPS** y un volumen de datos de **1 TB**. Para ello, debe aprovisionar **2 TB** para obtener las **4500 IOPS necesarias**. Más específicamente en este caso, disfrutará de **8000 IOPS** sobre la capacidad aprovisionada. Por lo tanto, el objetivo es recargar el servicio para garantizar el nivel de rendimiento deseado.
+- **Example 3**: Your application does not require any particular performance but a storage volume of more than **60 TB**. In this case, it is best to switch to the more economical storage service [HA-NAS](/links/storage/nas-ha), which can reach capacities higher than 58 TB per service.
 
-- **Ejemplo n°3**: su aplicación no necesita un rendimiento en particular, pero un volumen de almacenamiento de más de **60 TB**. En ese caso, es preferible optar por el servicio de almacenamiento [NAS-HA](/links/storage/nas-ha), más económico y que permite alcanzar una capacidad superior a 58 TB por servicio.
+### Volumes and quality of services (QoS)
 
-### volúmenes y calidad de servicios (QoS)
+As a reminder, a volume is a partition of the service (also called a pool or a capacity pool). When you place an order, you provision capacity for your service. Once the service has been delivered, you will need to create your volumes, with a quota ranging from 100 GB to 29 TB per volume.
 
-Le recordamos que un volumen es una partición del servicio (también llamada "pool" o "pool de capacidad"). Durante el pedido, aprovecha una capacidad para su servicio. Una vez entregado el servicio, deberá crear sus volúmenes poniendo a su disposición un espacio de entre 100 GB y 29 TB por volumen. 
-
-A continuación ofrecemos la jerarquía de un servicio de almacenamiento Enterprise File Storage:
+Below is the hierarchy for an Enterprise File Storage service:
 
 ![Enterprise File Storage Perf 1](images/Netapp_Hierarchie_2.png){.thumbnail}
 
-Enterprise File Storage todavía no permite cambiar la QoS manualmente. La QoS se define en el nivel de servicio (pool).
+Enterprise File Storage does not yet allow manual modification of the QoS. QoS is defined at the service (pool) level.
 
-### Cómo optimizar el rendimiento de su sistema de archivos
+### How to maximise file system performance
 
-Para optimizar el rendimiento de su Enterprise File Storage, es importante tener en cuenta:
+In order to maximise the performance of your Enterprise File Storage, there are some important considerations:
 
-- Tenga en cuenta que la solución Enterprise File Storage se reserva en el mismo datacenter que sus cargas de trabajo. La latencia entre los datacenters puede ser elevada y afectar al rendimiento global de su aplicación.
-- Para una mayor fiabilidad y un ancho de banda máximo, favorezca a los servidores de última generación, ya que disponen de las nuevas interfaces de red.
-- Identifique el ancho de banda público disponible en los servidores de clientes para garantizar la compatibilidad con el rendimiento aprovisionado y así maximizar el rendimiento.
+- Remember to reserve your Enterprise File Storage in the same data centre as your workloads. Latency between data centres can be high and affect your application’s overall performance.
+- For better reliability and maximum bandwidth, favour the latest generation servers as they have the new network interfaces.
+- Identify the public bandwidth available on the client servers, to ensure compatibility with provisioned performance and maximise bandwidth.
 
-### Prueba de rendimiento
+### Performance testing
 
-Para realizar sus propias pruebas de rendimiento y familiarizarse con los niveles de servicio de Enterprise File Storage, le recomendamos que utilice herramientas como [FIO](https://github.com/axboe/fio), una popular herramienta de evaluación. Ofrece numerosas opciones configurables para simular la carga de trabajo deseada y proporciona estadísticas detalladas sobre el comportamiento del almacenamiento bajo carga. También está disponible de forma gratuita en una amplia gama de sistemas operativos.
+In order to perform your own performance testing and familiarise yourself with Enterprise File Storage service levels, we recommend using tools like [FIO](https://github.com/axboe/fio), a popular assessment tool. It provides many adjustable options to simulate the desired workload and provides detailed statistics on storage behaviour under load. It is also available free of charge on a wide range of operating systems.
 
-Es importante probar el rendimiento de su Enterprise File Storage en el mismo datacenter que sus cargas de trabajo. La latencia entre los datacenters es demasiado elevada durante el funcionamiento normal para que dicha evaluación sea pertinente.
+It is important to test the performance of your Enterprise File Storage in the same data centre as your workloads. Latency between data centres is too high during normal operation for such an assessment to be meaningful.
 
-Antes de iniciar el test, compruebe que el cliente utilizado para este benchmark tenga acceso a su servicio Enterprise File Storage y a un volumen de prueba. Si todavía no lo ha hecho, puede consultar la guía de [gestión desde el área de cliente de OVHcloud](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_control_panel).
+Before starting the test, verify that the client used for this benchmark has access to your Enterprise File Storage service and a test volume. If you have not done so yet, you can follow the [managment from OVHCloud Control Panel](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_control_panel) guide .
 
-#### Banco de pruebas
+#### Test Bench
 
-La herramienta [FIO](https://github.com/axboe/fio) le permite probar varios escenarios y modificar numerosos parámetros de prueba: 
+The [FIO](https://github.com/axboe/fio) tool allows you to test several scenarios and modify many test parameters:
 
-- El número de imágenes.
-- El tamaño de las imágenes.
-- El tamaño de bloque.
-- La duración del test.
-- El número de FIO workers.
-- El modelo de acceso (lectura/escritura/secuencial/aleatoria), etc.
+- The number of images
+- Image size
+- Block size
+- The duration of the test
+- The number of FIO workers
+- The access model (read/write/sequential/random), etc.
 
-Más información sobre [la documentación de FIO](https://fio.readthedocs.io/en/latest/index.html) .
 
-## Más información
+Below are some examples of fio commands to validate that the maximum number of IOPS (4000) or the maximum bandwidth (64MB/s) can be reached for a 1TB EFS service:
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+**Random read - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randread -bs=8k -size=1G -time_based -runtime=60 -name=test1 -directory=/share-nfs
+```
+**Random write - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randwrite -bs=8k -size=1G -time_based -runtime=60 -name=test2 -directory=/share-nfs
+```
+**Random read - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randread -bs=64k -size=1G -time_based -runtime=60 -name=test3 -directory=/share-nfs
+```
+**Random write - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=randwrite -bs=64k -size=1G -time_based -runtime=60 -name=test4 -directory=/share-nfs
+```
+**Sequential read - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=read -bs=8k -size=1G -time_based -runtime=60 -name=test5 -directory=/share-nfs
+```
+**Sequential write - IOPS max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=8k -size=1G -time_based -runtime=60 -name=test6 -directory=/share-nfs
+```
+**Sequential Read - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=read -bs=64k -size=1G -time_based -runtime=60 -name=test7 -directory=/share-nfs
+```
+**Sequential write - Bandwidth max**
+```
+fio -numjobs=1 -iodepth=128 -direct=1 -ioengine=libaio -sync=1 -rw=write -bs=64k -size=1G -time_based -runtime=60 -name=test8 -directory=/share-nfs
+```
 
-Interactúe con nuestra comunidad de usuarios en Discord : <https://discord.gg/ovhcloud>
+For more information, see [the FIO documentation](https://fio.readthedocs.io/en/latest/index.html).
+
+**You can also use other open-source tools such as:**
+
+- [nfsiostat](https://man7.org/linux/man-pages/man8/nfsiostat.8.html)
+- [NFStest](https://wiki.linux-nfs.org/wiki/index.php/NFStest)
+- [nfstrace](https://github.com/epam/nfstrace)
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of Discord users: <https://discord.gg/ovhcloud>
