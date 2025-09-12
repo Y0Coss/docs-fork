@@ -1,6 +1,6 @@
 ---
 title: 'Crear o restaurar un servidor virtual a partir de un snapshot'
-excerpt: 'Crear o restaurar un servidor virtual a partir de un snapshot'
+excerpt: 'Descubra cómo crear o restaurar la copia de seguridad de una instancia'
 updated: 2025-04-28
 ---
 

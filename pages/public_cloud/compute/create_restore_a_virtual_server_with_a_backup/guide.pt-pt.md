@@ -1,6 +1,6 @@
 ---
 title: 'Criar / Restaurar um servidor virtual a partir de um backup'
-excerpt: 'Criar / Restaurar um servidor virtual a partir de um backup'
+excerpt: 'Saiba como criar ou restaurar o backup de uma instância'
 updated: 2025-04-28
 ---
 
