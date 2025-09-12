@@ -1,7 +1,7 @@
 ---
 title: Using Zerto between OVHcloud and a third-party platform
 excerpt: Learn how to set up Zerto between your OVHcloud Private Cloud and another platform
-updated: 2025-08-25
+updated: 2025-09-12
 ---
 
 ## Objective
@@ -287,7 +287,24 @@ At this point, we have a functional and secure link between our on-premises plat
 
 ### Step 5: ZVM Pairing
 
-Log in to your on-premises ZVM. The following screen is displayed:
+Before starting the pairing process, you need to retrieve a **pairing token**.
+
+There are two possible ways to do this:
+
+- Before starting the pairing process, you need to retrieve a **pairing token**. You have two options:
+
+- **On the customer side**: via the OVHcloud API:
+
+> [!api]
+> 
+> @api {v1} POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zertoSingle/requestPairingToken 
+> 
+
+- **On the OVHcloud side / with support**: from the PCC workshop, using the `Send pairing token`{.action} button.
+
+This action triggers an email to be sent to the customer, allowing them to retrieve the token and add it to their Zerto Onsite in order to pair it with the PCC.
+
+Then, log in to your on-premises ZVM. The following screen is displayed:
 
 ![](images/image-EN-35.png){.thumbnail}
 

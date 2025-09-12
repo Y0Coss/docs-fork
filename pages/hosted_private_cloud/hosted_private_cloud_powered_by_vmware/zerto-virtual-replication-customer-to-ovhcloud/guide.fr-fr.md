@@ -1,7 +1,7 @@
 ---
 title: "Utiliser Zerto entre OVHcloud et une plateforme tierce"
 excerpt: 'Découvrez comment connecter votre Zerto OVHcloud à une autre plateforme.'
-updated: 2025-08-25
+updated: 2025-09-12
 ---
 
 ## Objectif :
@@ -302,9 +302,26 @@ Vous avez maintenant tous les éléments pour créer vos règles firewall qui au
 
 ### Étape 5 : appairage des ZVM
 
+### Étape 5 : appairage des ZVM
+
 Une fois la ZVM installée sur le site client, vous pouvez vous connecter à l’interface Zerto. 
 
-L’écran suivant s’affiche.
+Avant de lancer l’appairage, vous devez récupérer un **token de pairage**.
+
+Deux possibilités s’offrent à vous :
+
+- **Côté client** : via l’API OVHcloud avec la requête
+
+> [!api]
+> 
+> @api {v1} POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zertoSingle/requestPairingToken 
+> 
+
+- **Côté OVHcloud / support** : depuis l’atelier PCC, via le bouton `Send pairing token`{.action}.
+
+Cette action déclenche l’envoi d’un e-mail au client, qui pourra alors récupérer le token et l’ajouter dans son Zerto Onsite afin de l’appairer au PCC.
+
+L’écran suivant s’affiche dans Zerto :
 
 ![zerto vpn](images/image-EN-35.png){.thumbnail}
 
