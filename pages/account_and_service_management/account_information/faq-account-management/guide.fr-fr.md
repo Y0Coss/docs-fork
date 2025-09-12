@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la gestion du compte OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur la gestion du compte OVHcloud
-updated: 2025-09-10
+updated: 2025-09-12
 ---
 
 <style>
@@ -101,6 +101,8 @@ Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou 
 
 Si vous avez oublié votre identifiant client, vous pouvez le retrouver en haut à droite de votre dernière facture. Il ressemble à ceci : « aa00000-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans l’e-mail de confirmation de création du compte, ainsi que dans les e-mails de confirmation ou de renouvellement de commande.
 
+///
+
 /// details | Existe-t-il une limite au nombre de fois où je peux modifier le mot de passe de mon compte OVHcloud (via l'option « Identifiant ou mot de passe oublié ») ?
 
 OVHcloud n'impose pas de limite au nombre de changements de mot de passe, vous pouvez le modifier autant de fois que vous le souhaitez.
@@ -144,11 +146,10 @@ Pour visualiser ou modifier vos coordonnées, connectez-vous à votre [espace cl
 Cliquez alors sur `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
 
 > [!success]
-> **Vous voulez modifier l'adresse e-mail de votre compte OVHcloud ?**
+> **Vous souhaitez modifier l'adresse e-mail de votre compte OVHcloud ?**
 >
-> Une demande de confirmation sera d'abord envoyée à l'adresse e-mail actuellement renseignée dans votre espace client. Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) afin de remplacer votre adresse e-mail principale par l'adresse e-mail de secours.
-
-Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi).
+> Une demande de confirmation vous sera d'abord envoyée à l'adresse e-mail que vous avez actuellement renseignée dans votre espace client. Si vous ne parvenez plus à accéder à cette adresse e-mail, un délai de 24 heures est nécessaire. Passé ce délai, le changement sera automatiquement effectué.
+>
 
 ///
 
@@ -156,7 +157,7 @@ Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou 
 
 Vous pouvez retrouver les contrats de vos services OVHcloud directement dans votre [espace client](/links/manager). Une fois connecté, rendez-vous dans le menu `Mon compte`{.action} puis cliquez sur `Voir mes contrats`{.action}.
 
-Vous pouvez également consulter les contrats sur notre site, via [ce lien](/links/contracts).
+Vous pouvez également consulter les contrats sur notre site, via [ce lien](/links/terms-conditions-contracts).
 
 Cette page contient toutes les informations nécessaires concernant nos contrats, y compris les termes et conditions de nos services.
 
@@ -258,14 +259,14 @@ Par la suite, les prochaines notifications automatiques par e-mail seront envoy�
 
 Oui, vous pouvez accéder aux logs des actions réalisées sur votre compte.
 
-Pour cela, vous devez vous connecter aux [API OVHcloud](/links/api) en vous aidant du guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ». Une fois connecté, vous pouvez utiliser l'appel API suivant pour récupérer l'ID du journal :
+Pour cela, vous devez vous connecter aux [API OVHcloud](/links/api) en vous aidant du guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ». Une fois connecté, vous pouvez utiliser l'appel API suivant pour récupérer l'ID du log :
 
 > [!api]
 >
 > @api {v1} /me GET /me/api/logs/self
 >
 
-Vous obtiendrez ainsi la liste des identifiants de logs. Ensuite, vous pouvez utiliser l'appel API suivant pour récupérer les détails d'un journal spécifique : 
+Vous obtiendrez ainsi la liste des identifiants de logs. Ensuite, vous pouvez utiliser l'appel API suivant pour récupérer les détails d'un log spécifique : 
 
 > [!api]
 >
