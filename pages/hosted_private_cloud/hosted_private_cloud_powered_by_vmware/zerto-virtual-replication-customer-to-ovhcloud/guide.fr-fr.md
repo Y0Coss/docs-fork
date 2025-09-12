@@ -302,8 +302,6 @@ Vous avez maintenant tous les éléments pour créer vos règles firewall qui au
 
 ### Étape 5 : appairage des ZVM
 
-### Étape 5 : appairage des ZVM
-
 Une fois la ZVM installée sur le site client, vous pouvez vous connecter à l’interface Zerto. 
 
 Avant de lancer l’appairage, vous devez récupérer un **token de pairage**.
