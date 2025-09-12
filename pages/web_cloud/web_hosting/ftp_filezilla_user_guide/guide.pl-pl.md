@@ -43,7 +43,7 @@ Umożliwia wgranie plików lub Twojej strony WWW do trybu online poprzez [zalogo
 ![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - W górnej **ramce** możesz szybko połączyć się z hostingiem podając nazwę **hosta**, nazwę **użytkownika**, **hasło** oraz numer **portu**.
-- **strefa 1**: szczegółowe informacje na temat historii operacji, logowania do przestrzeni FTP, transferów plików, błędów itp. Więcej informacji znajdziesz w oficjalnej [dokumentacji Filezilla](https://filezilla-project.org/).
+- **strefa 1**: szczegółowe informacje na temat historii operacji, logowania do przestrzeni FTP, transferów plików, błędów itp. Więcej informacji znajdziesz w oficjalnej [dokumentacji FileZilla](https://filezilla-project.org/).
 - **strefa 2**: drzewo katalogów/plików lokalnych na komputerze.
 - **strefa 3**: drzewo zdalnych katalogów/plików po zalogowaniu się do hostingu.
 - **strefa 4**: lista katalogów/plików w katalogu wybranym lokalnie na Twoim komputerze.
@@ -194,7 +194,7 @@ Po przeprowadzeniu tej operacji Twoje pliki zostaną automatycznie uruchomione w
 
 /// details | Widok kolejki
 
-Dostępny jest widok kolejki (**strefa 6** opisana w sekcji niniejszego tutoriala [dotyczącej interfejsu](#interface) Filezilla).
+Dostępny jest widok kolejki (**strefa 6** opisana w sekcji niniejszego tutoriala [dotyczącej interfejsu](#interface) FileZilla).
 
 W tej strefie znajdziesz:
 

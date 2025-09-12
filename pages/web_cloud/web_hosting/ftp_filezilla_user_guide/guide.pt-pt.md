@@ -43,7 +43,7 @@ Permite publicar ficheiros ou o seu website [ligando-se ao espaço de armazename
 ![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - A parte superior **enquadrada** permite uma ligação rápida ao seu alojamento ao introduzir o seu nome de **host**, o nome de **utilizador**, a sua **password** associada e o número de **porta** utilizado.
-- **zona 1**: detalhes sobre o histórico de operações, ligação ao espaço FTP, transferência de ficheiros, erros, etc. Para saber mais, aceda à [documentação oficial do Filezilla](https://filezilla-project.org/).
+- **zona 1**: detalhes sobre o histórico de operações, ligação ao espaço FTP, transferência de ficheiros, erros, etc. Para saber mais, aceda à [documentação oficial do FileZilla](https://filezilla-project.org/).
 - **zona 2**: arborescência dos diretórios/ficheiros locais no seu computador.
 - **zona 3**: arborescência de diretórios/ficheiros distantes quando está ligado ao seu alojamento.
 - **zona 4**: lista dos diretórios/ficheiros no diretório selecionado localmente no seu computador.
@@ -180,7 +180,7 @@ Verifique este último em relação ao nome do host declarado na sua [Área de C
 
 ### 3 - Transferência dos ficheiros
 
-Para transferir os seus ficheiros através de (S)FTP, pode selecioná-los e deslizar e descarregar ficheiros/ficheiros a partir da janela da esquerda *(computador)* para a janela da direita *(alojamento)* (**zonas 4 e 5**, descritas na secção deste tutorial relativa à [interface](#interface) do Filezilla).
+Para transferir os seus ficheiros através de (S)FTP, pode selecioná-los e deslizar e descarregar ficheiros/ficheiros a partir da janela da esquerda *(computador)* para a janela da direita *(alojamento)* (**zonas 4 e 5**, descritas na secção deste tutorial relativa à [interface](#interface) do FileZilla).
 
 Tenha o cuidado de selecionar corretamente o diretório alvo na janela da direita.
 

@@ -26,7 +26,7 @@ details[open]>summary::before {
 ## Objectif
 
 FileZilla est un logiciel disponible gratuitement sur plusieurs systèmes d'exploitations (Windows, macOS, etc).
-Il permet de mettre en ligne des fichiers ou votre site internet en vous [connectant à l'espace de stockage](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web.
+Il permet de mettre en ligne des fichiers ou votre site Internet en vous [connectant à l'espace de stockage](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement web.
 
 **Découvrez comment vous connecter à l'espace de stockage de votre hébergement web OVHcloud et gérer les données qu'il contient grâce au logiciel FileZilla.**
 
@@ -127,6 +127,8 @@ Depuis la barre de connexion rapide, complétez les informations en vous aidant 
 
 Une fois que tout est correctement saisi dans l'encadré **1** de l'image ci-dessous, cliquez sur `Connexion rapide`{.action}.
 
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
+
 Une boîte de dialogue s'ouvre alors (voir l'image ci-dessous) afin de certifier la connexion à l'hôte sur lequel vous vous apprêtez à vous connecter. En étant connecté sur un hôte OVHcloud, vous pouvez cocher la case *Toujours faire confiance à cet hôte, ajouter cette clé au cache* afin que le logiciel ne vous le redemande plus à l'avenir.
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
@@ -208,7 +210,7 @@ Dans cete zone, vous retrouvez :
 
 ///
 
-/// details | Menu contextuel Serveur
+/// details | Menu contextuel du serveur
 
 Faites un clic-droit sur l'un des fichiers présents dans la **zone 5** (décrite dans la section de ce tutoriel relative à [l'interface](#interface) de FileZilla).
 

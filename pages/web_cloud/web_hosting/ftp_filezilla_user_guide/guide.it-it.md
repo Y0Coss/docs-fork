@@ -43,7 +43,7 @@ Permette di mettere online file o siti Internet [accedendo allo spazio di storag
 ![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - La parte superiore **incorniciata** permette una connessione rapida al tuo hosting inserendo il nome dell'**hosting**, il nome dell'**utente**, la **password** associata e il numero di **porta** utilizzato.
-- **zona 1**: dettagli sullo storico delle operazioni, sulla connessione allo spazio FTP, sui trasferimenti di file, sugli errori, ecc. Per saperne di più, consulta la [documentazione ufficiale di Filezilla](https://filezilla-project.org/).
+- **zona 1**: dettagli sullo storico delle operazioni, sulla connessione allo spazio FTP, sui trasferimenti di file, sugli errori, ecc. Per saperne di più, consulta la [documentazione ufficiale di FileZilla](https://filezilla-project.org/).
 - **zona 2**: archivia directory/file locali sul tuo computer
 - **zona 3**: archivia directory/file remoti quando sei connesso al tuo hosting.
 - **zona 4**: elenco delle directory/file nella directory selezionata in locale sul tuo computer.
@@ -180,7 +180,7 @@ Verifica la configurazione in relazione all'hostname indicato nello [Spazio Clie
 
 ### 3 - Trasferimento dei file
 
-Per effettuare il trasferimento dei tuoi file in (S)FTP, selezionali e trascina le directory/file dalla finestra di sinistra *(computer)* alla finestra di destra *(hosting)* (**zone 4 e 5** descritte nella sezione di questo tutorial relativa [all'interfaccia](#interface) di Filezilla).
+Per effettuare il trasferimento dei tuoi file in (S)FTP, selezionali e trascina le directory/file dalla finestra di sinistra *(computer)* alla finestra di destra *(hosting)* (**zone 4 e 5** descritte nella sezione di questo tutorial relativa [all'interfaccia](#interface) di FileZilla).
 
 Seleziona la directory di destinazione nella finestra di destra.
 

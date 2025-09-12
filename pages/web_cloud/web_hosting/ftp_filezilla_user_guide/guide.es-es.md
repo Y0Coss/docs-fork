@@ -26,7 +26,7 @@ details[open]>summary::before {
 ## Objetivo
 
 FileZilla es un programa gratuito disponible en varios sistemas operativos (Windows, macOS, etc.).
-Permite subir archivos o su sitio web [conectándose al espacio de almacenamiento](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web..
+Permite subir archivos o su sitio web [conectándose al espacio de almacenamiento](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web.
 
 **Descubra cómo conectarse al espacio de almacenamiento de un alojamiento web de OVHcloud y gestionar los datos alojados con el programa FileZilla.**
 
@@ -34,7 +34,7 @@ Permite subir archivos o su sitio web [conectándose al espacio de almacenamient
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Tener contratado un [plan de hosting](/links/web/hosting).
-- Haber instalado FileZilla en su ordenador. Está disponible de forma gratuita en la página [filezilla-project.org.](https://filezilla-project.org/download.php).
+- Haber instalado FileZilla en su ordenador. Está disponible de forma gratuita en la página [filezilla-project.org](https://filezilla-project.org/download.php).
 
 ## Presentación de la interfaz <a name="interface"></a>
 
@@ -43,12 +43,12 @@ Permite subir archivos o su sitio web [conectándose al espacio de almacenamient
 ![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - La parte superior **del recuadro** permite una conexión rápida al alojamiento, introduciendo el nombre del **host**, el nombre de **usuario**, la **contraseña** asociada y el número de **puerto** utilizado.
-- **zona 1**: información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de Filezilla](https://filezilla-project.org/).
-- **zona 2**: árbol de directorios/archivos locales en su ordenador.
-- **zona 3**: árbol de directorios/ archivos remotos cuando se conecta al alojamiento.
-- **zone 4**: lista de carpetas/archivos en el directorio seleccionado localmente en su ordenador.
-- **zona 5**: lista de carpetas/archivos remotos en el directorio seleccionado en su alojamiento.
-- **zona 6**: lista de las operaciones de transferencia en curso, en espera o en error entre su ordenador y su alojamiento.
+- **zona 1**: Información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de FileZilla](https://filezilla-project.org/).
+- **zona 2**: Árbol de directorios/archivos locales en su ordenador.
+- **zona 3**: Árbol de directorios/archivos remotos cuando se conecta al alojamiento.
+- **zone 4**: Lista de carpetas/archivos en el directorio seleccionado localmente en su ordenador.
+- **zona 5**: Lista de carpetas/archivos remotos en el directorio seleccionado en su alojamiento.
+- **zona 6**: Lista de las operaciones de transferencia en curso, en espera o en error entre su ordenador y su alojamiento.
 
 ///
 
@@ -102,7 +102,7 @@ En la tabla que aparece en la parte inferior de la página, localice la columna 
 
 Si el acceso SFTP del usuario correspondiente es `Desactivado`, lleve a cabo los siguientes pasos:
 
-- Para los productos Personal, marque la casilla situada a la izquierda de la mención `Desactivado` en la tabla.
+- Para los planes Personal, marque la casilla situada a la izquierda de la mención `Desactivado` en la tabla.
 
 - Para los planes Profesional y Performance:
 
@@ -124,6 +124,8 @@ Complete la información en la Barra de conexión rápida siguiendo la siguiente
 |Puerto|Introduzca el número del puerto SFTP recuperado anteriormente en la [primera parte](#part-1) de esta guía para una conexión SFTP.|
 
 Una vez que haya introducido todo correctamente en el cuadro **1** de la imagen de abajo, haga clic en `Conexión rápida`{.action}.
+
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
 
 Se abrirá un cuadro de diálogo (ver la imagen a continuación) para certificar la conexión con el host al que se va a conectar. Al estar conectado a un host de OVHcloud, puede marcar la casilla *Confiar siempre en ese host y añadir esta clave a la caché* para que el software no se lo pida de nuevo en el futuro.
 
@@ -178,7 +180,7 @@ Compruebe que la contraseña del host se corresponde con el nombre del host que 
 
 ### 3 - Transferencia de archivos
 
-Para transferir sus archivos por (S)FTP, puede seleccionarlos y arrastrarlos y soltarlos desde la ventana izquierda *(ordenador)* a la derecha *(alojamiento)* (**áreas 4 y 5** descritas en la sección de este tutorial sobre [la interfaz](#interface) de Filezilla).
+Para transferir sus archivos por (S)FTP, puede seleccionarlos y arrastrarlos y soltarlos desde la ventana izquierda *(ordenador)* a la derecha *(alojamiento)* (**áreas 4 y 5** descritas en la sección de este tutorial sobre [la interfaz](#interface) de FileZilla).
 
 Seleccione el directorio de destino en la ventana derecha.
 
@@ -217,7 +219,7 @@ Aparecerá un menú contextual con varias opciones:
 - Actualizar: Actualiza la visualización de los datos para mostrar correctamente los diferentes archivos.
 - Eliminar: Le permite borrar el archivo seleccionado.
 - Renombrar: Le permite renombrar el archivo seleccionado.
-- Copiar la(s) dirección(s) al portapapeles: Permite copiar automáticamente el vínculo directo al archivo seleccionado. Ejemplo de URL que puede generarse: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/mondossier1/monfichier.jpg`.
+- Copiar la(s) dirección(s) al portapapeles: Permite copiar automáticamente el vínculo directo al archivo seleccionado. Ejemplo de URL que puede generarse: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/micarpeta1/miarchivo1.jpg`.
 - Permisos de archivo: Le permite cambiar los permisos de los archivos (Chmod).
 
 ![hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
@@ -319,8 +321,8 @@ La opción de comparación de archivos muestra colores en los **cuadros 4** y **
 
 Pulse con el botón derecho del ratón sobre el icono para cambiar el modo de comparación. A continuación, podrá activar o desactivar la opción, así como:
 
-- comparar el tamaño de los archivos ;
-- comparar la fecha y hora ;
+- comparar el tamaño de los archivos;
+- comparar la fecha y hora;
 - ocultar los archivos idénticos.
 
 **Significado de los colores:**
@@ -333,7 +335,7 @@ Pulse con el botón derecho del ratón sobre el icono para cambiar el modo de co
 
 ## Más información <a name="go-further"></a>
 
-A continuación puede consultar nuestra guía para [solucionar los errores recurrentes en el uso de un programa FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems).
+A continuación puede consultar nuestra guía para [resolver los errores recurrentes durante el uso de un programa FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems).
 
 En términos más generales, consulte [todas nuestras guías relativas a los alojamientos compartidos](/products/web-cloud-hosting).
 
@@ -341,6 +343,6 @@ No dude en consultar la [página oficial de FileZilla](https://filezilla-project
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
