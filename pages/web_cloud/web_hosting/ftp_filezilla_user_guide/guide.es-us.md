@@ -46,7 +46,7 @@ Permite subir archivos o su sitio web [conectándose al espacio de almacenamient
 - La parte superior **del recuadro** permite una conexión rápida al alojamiento, introduciendo el nombre del **host**, el nombre de **usuario**, la **contraseña** asociada y el número de **puerto** utilizado.
 - **zona 1**: Información sobre el historial de operaciones, la conexión al espacio FTP, las transferencias de archivos, los errores, etc. Para más información, consulte la [documentación oficial de FileZilla](https://filezilla-project.org/).
 - **zona 2**: Árbol de directorios/archivos locales en su ordenador.
-- **zona 3**: Árbol de directorios/ archivos remotos cuando se conecta al alojamiento.
+- **zona 3**: Árbol de directorios/archivos remotos cuando se conecta al alojamiento.
 - **zone 4**: Lista de carpetas/archivos en el directorio seleccionado localmente en su ordenador.
 - **zona 5**: Lista de carpetas/archivos remotos en el directorio seleccionado en su alojamiento.
 - **zona 6**: Lista de las operaciones de transferencia en curso, en espera o en error entre su ordenador y su alojamiento.
@@ -324,8 +324,8 @@ La opción de comparación de archivos muestra colores en los **cuadros 4** y **
 
 Pulse con el botón derecho del ratón sobre el icono para cambiar el modo de comparación. A continuación, podrá activar o desactivar la opción, así como:
 
-- comparar el tamaño de los archivos ;
-- comparar la fecha y hora ;
+- comparar el tamaño de los archivos;
+- comparar la fecha y hora;
 - ocultar los archivos idénticos.
 
 **Significado de los colores:**
