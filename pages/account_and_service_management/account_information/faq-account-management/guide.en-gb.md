@@ -102,7 +102,7 @@ You can find more information in our guide [Changing your account password](/pag
 
 If you no longer have access to this address but have access to your alternate email address, create a [help ticket via the Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to replace your primary email address with the backup email address.
 
-If you do not have access to your email address, the OVHcloud Control Panel, or a backup email address, you will need to follow [this procedure](https://www.ovh.com/en-gb/cgi-bin/en/procedure/procedureChangeEmail.cgi).
+If you do not have access to your email address, the OVHcloud Control Panel, or a backup email address, you will need to follow [this procedure](/links/transversal/procedure-email-change).
 
 If you have forgotten your NIC handle, you can find it in the top right-hand corner of your last bill. It looks like this: "aa00000-ovh" (the first letters are usually the initials of the person who created the account). You will also find this ID in the email confirming that you have created your account, as well as in the emails of orders confirmation or renewal.
 
@@ -173,8 +173,8 @@ This page contains all necessary information about our contracts, including the 
 
 To find out more about the impact of the General Data Protection Regulation (GPDR) on your business activity or personal data, we suggest you read these resources:
 
-- [”OVHcloud and personal data protection”](https://www.ovhcloud.com/en-gb/personal-data-protection/);
-- [”GDPR – Your questions answered”](https://www.ovhcloud.com/en-gb/personal-data-protection/faq/?lsdDoc=faq.xml).
+- [OVHcloud and personal data protection](/links/transversal/personal-data-protection);
+- [GDPR – Your questions answered](/links/transversal/personal-data-protection-faq).
 
 ///
 
@@ -278,7 +278,7 @@ The service delegation must be validated via email both by the service administr
 
 Before you make any changes, please ensure that all contact email addresses are valid, otherwise the request will not be successful.
 
-If you would like to retrieve a domain name that you are the registered owner of from the registry (you can check this information using our own [whois tool](/links/web/domains-whois)), but you do not have access to the administrator customer account, please follow [this procedure](https://www.ovh.co.uk/cgi-bin/procedure/procedureChangeContacts.cgi)
+If you would like to retrieve a domain name that you are the registered owner of from the registry (you can check this information using our own [whois tool](/links/web/domains-whois)), but you do not have access to the administrator customer account, please follow [this procedure](/links/transversal/procedure-contact-change)
 
 > [!success]
 > A full contact management guide is available here: [/pages/account_and_service_management/account_information/managing_contacts#access-contact-management](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management)
@@ -314,7 +314,7 @@ Contact OVHcloud support by phone:
 
 Your NIC handle (Customer ID) will then be blocked. Services that were fraudulently ordered will be deleted and automatically refunded.
 
-Finally, in order to regain control of your customer account, we may ask you to change your email address and/or password via this link: [www.ovh.co.uk/cgi-bin/en/procedure/procedureChangeEmail.cgi](https://www.ovh.co.uk/cgi-bin/en/procedure/procedureChangeEmail.cgi)
+Finally, in order to regain control of your customer account, we may ask you to change your email address and/or password via [this link](/links/transversal/procedure-email-change).
 
 ///
 

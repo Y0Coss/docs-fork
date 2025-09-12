@@ -103,7 +103,7 @@ This may solve some login problems.
 
 To avoid waiting on the phone, please create a support request via the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help). Click on `✉ Tickets`{.action} then on the `Ticket creation`{.action} button.
 
-You can also refer to our documentation (FAQs, guides, diagnostic tools, etc.) in the [Help Centre](https://help.ovhcloud.com/csm/en-gb-documentation?id=kb_home).
+You can also refer to our documentation (FAQs, guides, diagnostic tools, etc.) in the [Help Centre](/links/documentation).
 
 ///
 
@@ -236,7 +236,7 @@ Contact OVHcloud support by phone:
 
 Your NIC handle (Customer ID) will then be blocked. Services that were fraudulently ordered will be deleted and automatically refunded.
 
-Finally, in order to regain control of your customer account, we may ask you to change your email address and/or password via this link: [www.ovh.co.uk/cgi-bin/en/procedure/procedureChangeEmail.cgi](https://www.ovh.co.uk/cgi-bin/en/procedure/procedureChangeEmail.cgi)
+Finally, in order to regain control of your customer account, we may ask you to change your email address and/or password via [this link](/links/transversal/procedure-email-change).
 
 ///
 
