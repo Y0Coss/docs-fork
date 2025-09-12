@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2025-07-10
+updated: 2025-09-12
 ---
 
 ## Introduction
@@ -386,7 +386,7 @@ $ aws s3 mb s3://my-destination-bucket
 
 > [!primary]
 >
-> Pour activer le versionning dans un bucket via l'espace client OVHcloud, veuillez vous référer à notre guide [Object Storage - Premiers pas avec la gestion de versions](/pages/storage_and_backup/object_storage/s3_versioning)
+> Pour activer le versioning dans un bucket via l'espace client OVHcloud, veuillez vous référer à notre guide [Object Storage - Premiers pas avec la gestion de versions](/pages/storage_and_backup/object_storage/s3_versioning)
 >
 
 ```bash
