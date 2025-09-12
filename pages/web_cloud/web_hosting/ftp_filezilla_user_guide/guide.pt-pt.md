@@ -43,12 +43,12 @@ Permite publicar ficheiros ou o seu website [ligando-se ao espaço de armazename
 ![FileZilla-interface](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - A parte superior **enquadrada** permite uma ligação rápida ao seu alojamento ao introduzir o seu nome de **host**, o nome de **utilizador**, a sua **password** associada e o número de **porta** utilizado.
-- **zona 1**: detalhes sobre o histórico de operações, ligação ao espaço FTP, transferência de ficheiros, erros, etc. Para saber mais, aceda à [documentação oficial do FileZilla](https://filezilla-project.org/).
-- **zona 2**: arborescência dos diretórios/ficheiros locais no seu computador.
-- **zona 3**: arborescência de diretórios/ficheiros distantes quando está ligado ao seu alojamento.
-- **zona 4**: lista dos diretórios/ficheiros no diretório selecionado localmente no seu computador.
-- **zona 5**: lista dos diretórios/ficheiros distantes no diretório selecionado no seu alojamento.
-- **zona 6**: lista das operações de transferência em curso, pendentes ou em erro entre o seu computador e o seu alojamento.
+- **zona 1**: Detalhes sobre o histórico de operações, ligação ao espaço FTP, transferência de ficheiros, erros, etc. Para saber mais, aceda à [documentação oficial do FileZilla](https://filezilla-project.org/).
+- **zona 2**: Arborescência dos diretórios/ficheiros locais no seu computador.
+- **zona 3**: Arborescência de diretórios/ficheiros distantes quando está ligado ao seu alojamento.
+- **zona 4**: Lista dos diretórios/ficheiros no diretório selecionado localmente no seu computador.
+- **zona 5**: Lista dos diretórios/ficheiros distantes no diretório selecionado no seu alojamento.
+- **zona 6**: Lista das operações de transferência em curso, pendentes ou em erro entre o seu computador e o seu alojamento.
 
 ///
 
@@ -208,7 +208,7 @@ Nesta zona, encontrará:
 
 ///
 
-/// details | Menu contextual Servidor
+/// details | Menu contextual do servidor
 
 Clique com o botão direito do rato num dos ficheiros presentes na **zona 5** (descrita na secção deste tutorial relativa à [interface](#interface) de FileZilla).
 
@@ -222,7 +222,7 @@ Surge um menu contextual e tem várias opções à sua disposição:
 - Eliminar: Permite-lhe eliminar o ficheiro selecionado.
 - Renomear: Permite-lhe alterar o nome do ficheiro selecionado.
 - Copiar o(s) endereço(s) na área de transferência: Permite-lhe copiar automaticamente o link direto para o ficheiro selecionado. Exemplo de URL que pode ser gerado: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/my_folder1/my_file.jpg`
-- Permissões de ficheiro: Permite-lhe modificar as permissões dos ficheiros (Chmod)
+- Permissões de ficheiro: Permite-lhe modificar as permissões dos ficheiros (Chmod).
 
 ![alojamento](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
 
@@ -259,7 +259,7 @@ Esta situação terá por efeito alterar os direitos do processo em questão, be
 
 ///
 
-/// details | Reabertura de site
+/// details | Reabertura de um website
 
 > [!primary]
 >
@@ -315,7 +315,7 @@ Para alterar o tipo de transferência, selecione `Transferência`{.action} no me
 
 ///
 
-/// details | Comparação de dossiers
+/// details | Comparação de pastas
 
 ![alojamento](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
@@ -323,8 +323,8 @@ A opção de comparação de ficheiros apresenta cores nas **zonas 4** e **5** (
 
 Ao clicar direito no ícone, pode alterar o método de comparação. Ser-lhe-á sugerido que ative ou desative a opção, mas também que:
 
-- comparar o tamanho dos ficheiros ;
-- comparar o horário ;
+- comparar o tamanho dos ficheiros;
+- comparar o horário;
 - ocultar os ficheiros idênticos.
 
 **Significado das cores:**
@@ -337,7 +337,7 @@ Ao clicar direito no ícone, pode alterar o método de comparação. Ser-lhe-á 
 
 ## Quer saber mais? <a name="go-further"></a>
 
-A seguir, encontrará o link para o nosso manual para [corrigir erros recorrentes durante a utilização de um programa FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems).
+A seguir, encontrará o link para o nosso manual para [resolver os erros recorrentes durante a utilização de um programa FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems).
 
 De forma mais geral, consulte [o conjunto dos nossos guias relativos aos alojamentos partilhados](/products/web-cloud-hosting).
 
@@ -347,4 +347,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).
