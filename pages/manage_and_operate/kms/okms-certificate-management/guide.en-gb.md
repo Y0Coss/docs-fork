@@ -1,7 +1,7 @@
 ---
 title: "Manage your OKMS access certificate"
 excerpt: "Manage your access certificate for your Data Security products"
-updated: 2025-07-24
+updated: 2025-09-15
 ---
 
 ## Objective

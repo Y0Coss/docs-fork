@@ -1,7 +1,7 @@
 ---
 title: "Générer un certificat d'accès OKMS"
 excerpt: "Gérez vos certificats d'accès pour vos produits de Data Security"
-updated: 2025-07-24
+updated: 2025-09-15
 ---
 
 ## Objectif
