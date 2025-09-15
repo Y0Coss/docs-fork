@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Introdução ao Object Storage (EN)
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2025-06-04
+updated: 2025-09-15
 ---
 
 <style>
@@ -225,27 +225,27 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> ![Select a region](images/object-storage-bucket-creation-step3.png){.thumbnail}
 >>
->> You must link a user to the bucket:
->>
->> ![Link to user](images/object-storage-bucket-creation-step4_1.png){.thumbnail}
->>
->> To do this, you can link an existing Object Storage user:
->>
->> ![Link to user](images/object-storage-bucket-creation-step4_2.png){.thumbnail}
->>
->> You can view the user credentials by clicking on `View credentials`{.action}:
->>
->> ![view credentials](images/object-storage-bucket-creation-step4_3.png){.thumbnail}
->>
->> Or you can create a new Object Storage user:
->>
->> ![Create an Object Storage user](images/object-storage-bucket-creation-step4_4.png){.thumbnail}
+>> > [!primary]
+>> >
+>> > If you selected the 3AZ deployment mode, an additional step will appear to configure offsite replication.
+>> >
+>> > ![enabling offsite replication](images/object-storage-creation-step-offsite-replication.png){.thumbnail}
+>> >
 >>
 >> At this stage, you can decide whether or not to enable **versioning**.
 >>
 >> Versioning allows you to keep multiple variants of an object in the same bucket. This feature helps **preserve, retrieve, and restore every version of every object stored in your buckets**, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, and you must explicitly enable it. Find more information about versioning on our [dedicated guide](/pages/storage_and_backup/object_storage/s3_versioning).
 >>
->> ![Enabling versioning](images/object-storage-bucket-creation-step5.png){.thumbnail}
+>> ![Enabling versioning](images/object-storage-bucket-creation-step4.png){.thumbnail}
+>>
+>> You must link a user to the bucket:
+>>
+>> ![Link to user](images/object-storage-bucket-creation-step5.png){.thumbnail}
+>>
+>> To do this, you can either:
+>>
+>> - Link an existing Object Storage user. To check the credentials, click on `View credentials`{.action}.
+>> - Or create a new Object Storage user.
 >>
 >> You can now decide whether or not you wish to **encrypt your data** using [SSE-OMK (server-side encryption with OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 >>
@@ -262,7 +262,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> Congratulations, your bucket is created:
 >>
->> ![Result](images/object_storage_list.png)
+>> ![Result](images/object_storage_list.png){.thumbnail}
 >>
 
 #### Uploading your files as objects in your bucket
@@ -324,7 +324,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> You can add a prefix to your object name (the object name is the same as the file name). Select the storage class. Finally, select the file you are about to download and click on the `Import`{.action} button.
 >>
->> ![upload file window](images/object_storage_add_object_window.png)
+>> ![upload file window](images/object_storage_add_object_window.png){.thumbnail}
 
 #### Downloading an object from a bucket
 

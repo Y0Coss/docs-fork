@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2025-06-04
+updated: 2025-09-15
 ---
 
 <style>
@@ -262,7 +262,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> Félicitations, votre bucket est créé :
 >>
->> ![Result](images/object_storage_list.png)
+>> ![Result](images/object_storage_list.png){.thumbnail}
 >>
 
 #### Télécharger vos fichiers en tant qu'objets dans votre bucket
@@ -318,7 +318,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >>
 >> Vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez la classe de stockage. Enfin, sélectionnez le fichier que vous êtes sur le point de télécharger et cliquez sur le bouton `Importer`{.action}.
 >>
->> ![upload file window](images/object_storage_add_object_window.png)
+>> ![upload file window](images/object_storage_add_object_window.png){.thumbnail}
 
 #### Téléchargement d'un objet à partir d'un bucket
 

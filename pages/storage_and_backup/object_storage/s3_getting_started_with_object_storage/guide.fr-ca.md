@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
 excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
-updated: 2025-06-04
+updated: 2025-09-15
 ---
 
 <style>
@@ -225,27 +225,27 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> ![Sélectionner une région](images/object-storage-bucket-creation-step3.png){.thumbnail}
 >>
->> Vous devez associer un utilisateur au bucket :
->>
->> ![Associer un utilisateur](images/object-storage-bucket-creation-step4_1.png){.thumbnail}
->>
->> Pour ce faire, vous pouvez lier un utilisateur Object Storage existant :
->>
->> ![Associer un utilisateur existant](images/object-storage-bucket-creation-step4_2.png){.thumbnail}
->>
->> Vous pouvez afficher les informations d'identification de l'utilisateur en cliquant sur `Voir les informations d'identification`{.action} :
->>
->> ![Informations d'identification](images/object-storage-bucket-creation-step4_3.png){.thumbnail}
->>
->> Vous pouvez également créer un nouvel utilisateur Object Storage :
->>
->> ![Créer un utilisateur Object Storage](images/object-storage-bucket-creation-step4_4.png){.thumbnail}
+>> > [!primary]
+>> >
+>> > Si vous avez choisi le mode de déploiement 3AZ, une étape supplémentaire apparaît pour configurer la réplication offsite.
+>> >
+>> > ![enabling offsite replication](images/object-storage-creation-step-offsite-replication.png){.thumbnail}
+>> >
 >>
 >> À ce stade, vous pouvez décider d'activer ou non la **gestion des versions**.
 >>
 >> La gestion des versions vous permet de conserver plusieurs variantes d'un objet dans le même bucket. Cette fonctionnalité permet de **préserver, récupérer et restaurer chaque version de chaque objet stocké dans vos buckets**, ce qui facilite la récupération en cas d'actions involontaires de l'utilisateur ou de défaillances de l'application. Par défaut, la gestion des versions est désactivée sur les buckets, et vous devez l'activer explicitement. Vous trouverez plus d'informations sur la gestion des versions dans notre [guide dédié](/pages/storage_and_backup/object_storage/s3_versioning).
 >>
->> ![Activation de la gestion des versions](images/object-storage-bucket-creation-step5.png){.thumbnail}
+>> ![Enabling versioning](images/object-storage-bucket-creation-step4.png){.thumbnail}
+>>
+>> Vous devez associer un utilisateur au bucket :
+>>
+>> ![Link to user](images/object-storage-bucket-creation-step5.png){.thumbnail}
+>>
+>> Pour cela, vous pouvez :
+>>
+>> - Associer un utilisateur Object Storage existant. Pour vérifier ses identifiants, cliquez sur `Voir les credentials`{.action}.
+>> - Ou créer un nouvel utilisateur Object Storage.
 >>
 >> Vous pouvez alors décider si vous souhaitez **chiffrer vos données** en utilisant [SSE-OMK (chiffrement côté serveur avec OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 >>
@@ -262,7 +262,7 @@ Pour gérer un bucket Object Storage, connectez-vous d'abord à votre [espace cl
 >>
 >> Félicitations, votre bucket est créé :
 >>
->> ![Result](images/object_storage_list.png)
+>> ![Result](images/object_storage_list.png){.thumbnail}
 >>
 
 #### Télécharger vos fichiers en tant qu'objets dans votre bucket
@@ -318,7 +318,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >>
 >> Vous pouvez ajouter un préfixe au nom de votre objet (le nom de l'objet est le même que le nom du fichier). Sélectionnez la classe de stockage. Enfin, sélectionnez le fichier que vous êtes sur le point de télécharger et cliquez sur le bouton `Importer`{.action}.
 >>
->> ![upload file window](images/object_storage_add_object_window.png)
+>> ![upload file window](images/object_storage_add_object_window.png){.thumbnail}
 
 #### Téléchargement d'un objet à partir d'un bucket
 

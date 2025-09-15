@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Getting started with Object Storage
 excerpt: This guide is designed to familiarise you with the management of your containers/objects
-updated: 2025-06-04
+updated: 2025-09-15
 ---
 
 <style>
@@ -262,7 +262,7 @@ To manage an Object Storage bucket, first log in to your [OVHcloud Control Panel
 >>
 >> Congratulations, your bucket is created:
 >>
->> ![Result](images/object_storage_list.png)
+>> ![Result](images/object_storage_list.png){.thumbnail}
 >>
 
 #### Uploading your files as objects in your bucket
@@ -324,7 +324,7 @@ As part of the object upload process to an Object Storage bucket, users can sele
 >>
 >> You can add a prefix to your object name (the object name is the same as the file name). Select the storage class. Finally, select the file you are about to download and click on the `Import`{.action} button.
 >>
->> ![upload file window](images/object_storage_add_object_window.png)
+>> ![upload file window](images/object_storage_add_object_window.png){.thumbnail}
 
 #### Downloading an object from a bucket
 
