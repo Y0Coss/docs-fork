@@ -76,9 +76,9 @@ Vous pouvez à présent suivre les guides ci-dessous pour créer et gérer vos v
 
 Pré-requis :
 
-> Votre client NFS et votre vRack Services doivent être dans le même sous-réseau (Le sous-réseau du vRack Services n'est pas routable), un sous-réseau de type CIDR : 24  (x.x.x.x/24 ou x.x.x.x/255.255.255.0) et dans le même VLAN.
+> Votre client NFS doit avoir une interface réseau configurée dans le même sous-réseau que votre vRack Services et doit être dans le même VLAN que celui-ci. Le sous-réseau du vRack Services n'est pas routable et nécessite un sous-réseau de type CIDR 24  (x.x.x.x/24 ou x.x.x.x/255.255.255.0).
 
-> Si ce n'est pas possible, vous pouvez utiliser une passerelle qui fera une translation d'adresse et de port vers ce celui-ci mais il faudra contacter le support OVHcloud, sinon vous ne pourrez pas monter vos partages NFS.
+> Si ce n'est pas possible, vous pouvez utiliser une passerelle qui fera une translation d'adresse et de port vers celui-ci mais il faudra contacter le support OVHcloud, sinon vous ne pourrez pas monter vos partages NFS.
 
 > Votre Service Endpoint est un sous-ensemble en CIDR 27, 28 ou 29 de votre sous-réseau.
 
@@ -87,11 +87,11 @@ Pré-requis :
 > Exemple : sous-réseau vRack Services 10.0.0.0/24 - Service Endpoint 10.0.0.16/29  - Votre service sera donc accessible à l'adresse IP 10.0.0.16 dans le sous-réseau 10.0.0.0/24.
 
 
-La commande **arping <IP_Endpoint>** ne doit retourner qu'une seule adresse adresse mac.
+La commande **arping <IP_Endpoint>** ne doit retourner qu'une seule adresse MAC.
 
 La commande **traceroute -T <IP_Endpoint> -p 2049** ne doit pas retourner d'erreur.
 
-La commande  **nmap -sV -T4 -p111,635,2049,4045,4046 <IP_Endpoint>** doit retourner des ports dans l'état  OPEN (indispensables pour le bon fonctionnement de NFSv3).
+La commande  **nmap -sV -T4 -p111,635,2049,4045,4046 <IP_Endpoint>** doit retourner des ports dans l'état  OPEN (indispensable pour le bon fonctionnement de NFSv3).
 
 
 ## Aller plus loin <a name="gofurther"></a>
