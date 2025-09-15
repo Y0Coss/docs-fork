@@ -80,7 +80,7 @@ Pré-requis :
 
 > Si ce n'est pas possible, vous pouvez utiliser une passerelle qui fera une translation d'adresse et de port vers celui-ci mais il faudra contacter le support OVHcloud, sinon vous ne pourrez pas monter vos partages NFS.
 
-> Votre Service Endpoint est un sous-ensemble en CIDR 27, 28 ou 29 de votre sous-réseau.
+> L'adresse IP de votre Service Endpoint est dans un sous-ensemble en CIDR 27, 28 ou 29 de votre sous-réseau vRack Services.
 
 > L'adresse IP de votre Service Endpoint doit être unique dans votre sous-réseau et doit être exclue de votre serveur DHCP si vous en utilisez un.
 
@@ -91,7 +91,7 @@ La commande **arping <IP_Endpoint>** ne doit retourner qu'une seule adresse MAC.
 
 La commande **traceroute -T <IP_Endpoint> -p 2049** ne doit pas retourner d'erreur.
 
-La commande  **nmap -sV -T4 -p111,635,2049,4045,4046 <IP_Endpoint>** doit retourner des ports dans l'état  OPEN (indispensable pour le bon fonctionnement de NFSv3).
+La commande  **nmap -sV -T4 -p111,635,2049,4045,4046 <IP_Endpoint>** doit retourner des ports dans l'état OPEN (indispensable pour le bon fonctionnement de NFSv3).
 
 
 ## Aller plus loin <a name="gofurther"></a>
