@@ -164,7 +164,7 @@ The NIC handle cannot be changed, as it is linked to the information you provide
 
 Please note that you can still [create a new OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation). However, you will then need to manually transfer all your services to the new account by following the [contact change process](/pages/account_and_service_management/account_information/managing_contacts).
 
-//
+///
 
 /// details | Can I change the subsidiary of my OVHcloud account?
 
@@ -210,7 +210,7 @@ However, in your [OVHcloud Control Panel](/links/manager), you can configure a b
 
 This backup email address is useful if you lose access to your primary email address, as this would prevent you from logging in to the OVHcloud Control Panel.
 
-//
+///
 
 /// details | I have received a notification from you in another language. How do I fix this?
 
