@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Private network configuration"
 excerpt: "Find out how to set up a private network for your Enterprise File Storage service from your OVHcloud Control Panel"
-updated: 2024-12-19
+updated: 2025-09-15
 ---
 
 ## Objective
@@ -67,6 +67,27 @@ After a few moments, your new Service Endpoint will be configured and available.
 ![Enable vRack Services](images/07-EFS.png){.thumbnail}
 
 You can now follow the guides below to create and manage your volumes, snapshots and ACLs.
+
+## Network connectivity testing to your Service Endpoint from an NFS client
+
+
+Prerequisites:
+
+> Your NFS client must have a network interface configured in the same subnet as your vRack Services (The vRack Services subnet is not routable), a CIDR-type subnet: 24 (x.x.x.x/24 or x.x.x.x/255.255.255.0) and in the same VLAN.
+
+> If this is not possible, you can use a gateway that will translate the address and port to this one but you will have to contact OVHcloud support, otherwise you will not be able to mount your NFS shares.
+
+> Your Service Endpoint is a subset of CIDR 27, 28 or 29 of your subnet.
+
+> The IP address of your Service Endpoint must be unique in your subnet and must be excluded from your DHCP server if you use one.
+
+> Example: vRack Services 10.0.0.0/24 subnet - Service Endpoint 10.0.0.16/29 - Your service will therefore be accessible at IP address 10.0.0.16 in subnet 10.0.0.0/24.
+
+**arping <IP_Endpoint>** command must return one MAC Address.
+
+**traceroute -T <IP_Endpoint> -p 2049** command must not return an error.
+
+**nmap -sV -T4 -p111,635,2049,4045,4046 <IP_Endpoint>** command must return ports in the OPEN state (essential for the proper functioning of NFSv3).
 
 ## Go further <a name="gofurther"></a>
 
