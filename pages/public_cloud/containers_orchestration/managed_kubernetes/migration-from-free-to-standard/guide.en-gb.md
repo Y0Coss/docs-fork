@@ -1,12 +1,12 @@
 ---
 title: MKS Free to Standard Migration Guide
-excerpt: Learn how to migrate your OVH MKS cluster from Free to Standard, understand plan differences, and follow best practices for a secure and smooth transition.
+excerpt: Learn how to migrate your OVHcloud MKS cluster from Free to Standard offer, understand plan differences, and follow best practices for a secure and smooth transition.
 updated: 2025-09-17
 ---
 
-## Objective
+## Objectives
 
-This guide outlines the process of migrating your OVH Managed Kubernetes Service (MKS) cluster from the Free plan to the Standard plan. It provides a step-by-step walkthrough to ensure a secure and efficient transition while minimizing downtime.
+This guide outlines the process of migrating your OVHcloud Managed Kubernetes Service (MKS) cluster from the Free plan to the Standard plan. It provides a step-by-step procedure to ensure a secure and efficient transition while minimizing downtime.
 
 We will cover the essential phases of migration, including:
 
@@ -19,18 +19,20 @@ This guide is designed to provide you with the knowledge and best practices need
 
 ## Requirements
 
-To successfully migrate your Kubernetes cluster to OVHcloud, ensure you have the following in place:
+To successfully update your Kubernetes cluster plan within OVHcloud, ensure you have the following prerequisites:
 
 - A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account.
 - **kubectl:** You'll need the kubectl command-line tool installed to interact with your Kubernetes clusters. Refer to the [official Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/) for installation instructions.
 
 ## Comparing Free and Standard MKS Plans
 
+While this guide focuses on your current plan, it can be helpful to understand the differences between the Free and Standard plans. The Standard plan offers additional features such as cross-AZ resilience, higher availability SLA, dedicated etcd, and larger maximum cluster size.
 
+For a complete overview, including a detailed comparison table between Free and Standard, please refer to our [MKS Standard Plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium#comparison-plan-array) guide. The table in that guide provides a clear side-by-side comparison of key features.
 
 ## Instructions
 
-1. **Install, Configure Backup Tool and back up yout cluster**
+1. **Install, Configure Backup Tool and back up your cluster**
 
 Before migrating your cluster, ensure that a backup solution is installed and configured. You can use Trilio, CloudCasa, or Velero depending on your preference.
 
@@ -57,8 +59,8 @@ Access the administration UI for your OVHcloud Managed Kubernetes clusters by cl
 3. **Pick a flavour and node pool for your new OVHcloud cluster**
 
     - **Size your worker nodes:** Carefully assess your existing architecture's CPU and RAM requirements and select OVHcloud node flavors that match these specifications.
-    - **Replicate network setup:** Ensure your new cluster's network configuration mirrors your original cluster (e.g., private nodes on a private subnet, dedicated outbound gateway).
-    - **Choose deployment mode:** Select a deployment mode (e.g., 1AZ or 3AZ) based on your fault tolerance needs and high availability requirements.
+    - **Replicate network setup:** Ensure your new cluster's network configuration mirrors your original cluster (e.g. private nodes on a private subnet, dedicated outbound gateway).
+    - **Choose deployment mode:** Select a deployment mode (e.g. 1AZ or 3AZ) based on your fault tolerance needs and high availability requirements.
 
 > [!primary]
 >
@@ -75,7 +77,7 @@ Choose the documentation corresponding to the tool you are using:
 > **Via Velero**
 >> 1. **Deploy Velero on the new cluster**
 >>
->> Install the Velero Helm chart on your newly created OVHcloud Kubernetes cluster by following [this guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero/#installing velero)
+>> Install the Velero Helm chart on your newly created OVHcloud Kubernetes cluster by following this [guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero/#installing velero).
 >>
 >> 2. **Configure access to your backups**
 >>
@@ -138,15 +140,15 @@ After restoring your workloads, check that the cluster is fully functional:
 
 Some workloads may require fine-tuning after the migration:
 
-- Re-create Load Balancers or reconfigure Ingress if public IPs have changed.
+- Re-create Load Balancers or reconfigure Ingresses if public IPs have changed.
 - Ensure CRDs, Secrets, and ConfigMaps are properly restored.
 
 7. **Clean Up Old Resources**
 
 Once you’ve validated that everything is running correctly in the Standard cluster:
 
-- Decommission the source cluster ( Free plan ) to avoid confusion or accidental use.
-- Remove any unused backup data if no longer needed.
+- You can repurpose the source cluster (Free plan) to host testing or staging environments.
+- Alternatively, decommission it if it is no longer needed.
 
 8. **Set up Saving Plans (if needed)**
 
@@ -161,20 +163,20 @@ Explore the option of [OVHcloud Saving Plans](/pages/public_cloud/public_cloud_c
 ## Tips and best practices
 
 - Operational Best Practices
-  - **Test restores regularly:** Don’t just configure backups—perform periodic test restores to validate recovery procedures.
+  - **Test restores regularly:** Don’t just configure backups and perform periodically restoration test to validate recovery procedures.
   - **Use staging environments:** Run your migration first on a non-production cluster to detect potential issues before moving production workloads.
   - **Check quotas and limits:** Make sure your Public Cloud project has sufficient quotas for nodes, storage, and load balancers.
 - Security & Compliance
   - **Revalidate RBAC policies:** Ensure that users and service accounts have only the permissions they need in the new cluster.
   - **Rotate secrets and credentials:** After migration, rotate API keys, tokens, and database passwords to reduce risks.
-  - **Audit compliance requirements:** Verify that the new setup still complies with your organization’s security or regulatory requirements (e.g., GDPR, ISO).
+  - **Audit compliance requirements:** Verify that the new setup still complies with your organization’s security or regulatory requirements (e.g. GDPR, ISO).
 - Performance & Cost
   - **Enable autoscaling:** Configure cluster autoscaler and HPA (Horizontal Pod Autoscaler) to optimize resource usage.
   - **Right-size your nodes:** Review workloads and adjust node pool flavors to balance performance and cost.
   - **Monitor storage usage:** Keep an eye on PVC consumption and adjust storage classes if necessary.
 - Reliability
   - **Use 3AZ mode for production:** Ensure high availability by running workloads in a 3AZ cluster.
-  - **Set up alerts:** Integrate with tools like Prometheus, Grafana ...
+  - **Set up alerts:** Integrate with tools like Prometheus, Grafana...
   - **Document rollback strategy:** Define how to roll back to the Free cluster or to a backup if issues arise during migration.
 
 ## Go further

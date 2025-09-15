@@ -1,6 +1,6 @@
 ---
 title: MKS Premium Plan
-excerpt: 'Features and limitations of the MKS Premium Plan in Beta version'
+excerpt: 'Features and limitations of the MKS Premium Plan'
 updated: 2025-06-05
 ---
 
@@ -28,7 +28,7 @@ updated: 2025-06-05
 > [!primary]
 > This document describes the features and "how-to" for the Managed Kubernetes Service Premium Plan currently in beta version. For additional details on the Managed Kubernetes Service Standard plan, refer to the [following documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits).
 
-## Standard vs Premium comparison
+## Standard vs Premium comparison <a name="comparison-plan-array"></a>
 
 | Plan                  | Standard                                            | Premium                                   |
 | --------------------- | --------------------------------------------------- | ----------------------------------------- |
