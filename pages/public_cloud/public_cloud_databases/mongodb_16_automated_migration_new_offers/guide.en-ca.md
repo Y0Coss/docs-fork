@@ -51,12 +51,6 @@ This section describes the technical changes and their impacts on the service pr
 
 **Please note that the service can be terminated at any time without fees if these changes do not meet your needs.**
 
-#### How to Anticipate the Migration
-
-Migration can be initiated now towards the new Production and Advanced plans by following [the migration guide](/pages/public_cloud/public_cloud_databases/mongodb_12_howto_migrate_to_production_or_advanced).
-
-Otherwise, once the migration operation is scheduled, it will be automatically applied at the scheduled time but can also be launched manually before this date.
-
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

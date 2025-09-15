@@ -1,6 +1,6 @@
 ---
 title: 'Crea/ripristina il tuo server virtuale da un backup'
-excerpt: 'Crea/ripristina il tuo server virtuale da un backup'
+excerpt: 'Scopri come creare o ripristinare il backup di un’istanza'
 updated: 2025-04-28
 ---
 

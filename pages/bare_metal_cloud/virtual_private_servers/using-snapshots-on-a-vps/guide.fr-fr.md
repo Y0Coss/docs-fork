@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le snapshot"
 excerpt: "Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud"
-updated: 2024-09-18
+updated: 2025-09-11
 ---
 
 ## Objectif
@@ -21,6 +21,10 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
 - Avoir accès à votre [espace client OVHcloud](/links/manager).
 - Un [VPS OVHcloud](/links/bare-metal/vps) déjà configuré.
+
+> [!warning]
+> Cette fonctionnalité est actuellement indisponible pour les serveurs privés virtuels dans les [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## En pratique
 

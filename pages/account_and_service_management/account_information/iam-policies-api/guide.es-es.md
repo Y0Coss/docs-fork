@@ -1,7 +1,7 @@
 ---
 title: "Cómo utilizar las políticas de IAM con la API de OVHcloud (EN)"
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2025-08-27
+updated: 2025-09-08
 ---
 
 ## Objective
@@ -333,7 +333,7 @@ The available conditions are:
 
 |       Condition        |                         Operator                          | Data Type |            Description             |                   Example                   |
 | :--------------------: | :--------------------------------------------------------: | :--------: | :--------------------------------: | :-----------------------------------------: |
-|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |  YYYY-MM-DD  |  Filter on calendar days   | "date.Date(America/New_York)": "2024-12-25" |
+|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |  YYYY-MM-DD  |  Filter on calendar days   | "date(America/New_York).Date": "2024-12-25" |
 |  date(location).Hour   | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |     int      |       Filter on hours        |   "date(Europe/Paris).Hour.IN" : "7,8,9"    |
 | date(location).WeekDay | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |    string    | Filter on days of the week | "date(Europe/Berlin).WeekDay.AFTER": "monday" |
 | resource.Tag(tag_key)  |              EQ <br>STARTS_WITH <br>ENDS_WITH              |    string    |        Filter on tags         |      "resource.Tag(environment): "dev"      |

@@ -1,7 +1,7 @@
 ---
 title: "Como utilizar os backups automatizados num VPS"
 excerpt: "Descubra como utilizar a opção Backup automatizado a partir da Área de Cliente OVHcloud para proteger os seus dados"
-updated: 2025-08-07
+updated: 2025-09-11
 ---
 
 ## Objetivo
@@ -19,6 +19,10 @@ A opção de Backup automatizado para VPS oferece uma forma prática de ter back
 - Ter acesso a [Área de Cliente OVHcloud](/links/manager).
 - Ter um [VPS OVHcloud](/links/bare-metal/vps) já configurado.
 - Ter acesso de administrador (sudo) por SSH ao VPS (opcional).
+
+> [!warning]
+> Esta funcionalidade está atualmente indisponível para os servidores privados virtuais nas [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Instruções
 

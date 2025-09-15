@@ -1,7 +1,7 @@
 ---
 title: "Come utilizzare i backup automatizzati su un VPS"
 excerpt: "Come utilizzare l’opzione di Backup automatico nello Spazio Cliente OVHcloud per proteggere i dati"
-updated: 2025-08-07
+updated: 2025-09-11
 ---
 
 ## Obiettivo
@@ -20,6 +20,10 @@ Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pa
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di un [VPS OVHcloud](/links/bare-metal/vps) già configurato.
 - Avere accesso in SSH al tuo VPS (facoltativo) in SSH.
+
+> [!warning]
+> Questa funzionalità non è attualmente disponibile per i server privati virtuali nelle [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Procedura
 

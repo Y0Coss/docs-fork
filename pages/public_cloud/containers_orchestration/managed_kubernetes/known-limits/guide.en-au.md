@@ -26,7 +26,7 @@ updated: 2025-04-30
 </style>
 
 > [!primary]
-> This documentation covers the limitations of the Managed Kubernetes Service Standard Plan. For additional details on the Managed Kubernetes Service Premium plan, refer to the [following documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium).
+> This documentation covers the limitations of the Managed Kubernetes Service Free Plan. For additional details on the Managed Kubernetes Service Standard plan, refer to the [following documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium).
 
 ## Nodes and pods
 
