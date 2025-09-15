@@ -73,17 +73,17 @@ You can now follow the guides below to create and manage your volumes, snapshots
 
 Prerequisites:
 
-> Your NFS client must have a network interface configured in the same subnet as your vRack Services (The vRack Services subnet is not routable), a CIDR-type subnet: 24 (x.x.x.x/24 or x.x.x.x/255.255.255.0) and in the same VLAN.
+> Your NFS client must have a network interface configured in the same subnet as your vRack Services and must be in the same VLAN as it. The vRack Services subnet is not routeable and requires a CIDR 24 subnet (x.x.x.x/24 or x.x.x.x/255.255.255.0).
 
-> If this is not possible, you can use a gateway that will translate the address and port to this one but you will have to contact OVHcloud support, otherwise you will not be able to mount your NFS shares.
+> If this is not possible, you can use a gateway that will translate the address and port to it but you will have to contact OVHcloud support, otherwise you will not be able to mount your NFS shares.
 
-> Your Service Endpoint is a subset of CIDR 27, 28 or 29 of your subnet.
+> The IP address of your Service Endpoint is in a subset of CIDR 27, 28 or 29 of your vRack Services subnet.
 
 > The IP address of your Service Endpoint must be unique in your subnet and must be excluded from your DHCP server if you use one.
 
 > Example: vRack Services 10.0.0.0/24 subnet - Service Endpoint 10.0.0.16/29 - Your service will therefore be accessible at IP address 10.0.0.16 in subnet 10.0.0.0/24.
 
-**arping <IP_Endpoint>** command must return one MAC Address.
+**arping <IP_Endpoint>** command must return only one MAC address.
 
 **traceroute -T <IP_Endpoint> -p 2049** command must not return an error.
 
