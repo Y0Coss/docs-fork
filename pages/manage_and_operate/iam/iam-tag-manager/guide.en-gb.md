@@ -17,24 +17,26 @@ In this guide, you will learn how to assign and manage tags on your OVHcloud pro
 ### Managing Tags via the Control Panel
 
 You can manage your OVHcloud product tags either through the general tag management interface or through dedicated interfaces within the products.
+
 Tags are metadata in the form of key-value pairs added to OVHcloud resources, which can be used in IAM policies or for resource categorization.
 
 #### Tag Manager
 
-The Tag Manager is the menu that allows you to manage your tags across all your OVHcloud products in a transverse manner.
-This menu is accessible in the `Identity, Security & Operations`{.action} menu under the `Identity and Access Management`{.action} section.
+**Tag Manager** is the interface that allows you to manage your tags across all your OVHcloud products in a transverse manner.
 
-The menu displays all the tags currently placed on your resources.
+To access it, go to the `Identity, Security & Operations`{.action} menu, then click `Tag Management`{.action} under the `Identity and Access Management` section.
+
+The page displays all the tags currently placed on your resources.
 
 ![Tag Manager](images/tag-manager-01.png){.thumbnail}
 
-For each tag, the dashboard lists the number of resources associated with this tag as well as the type of tag.
+For each tag, the dashboard shows the number of resources associated with this tag and the type of tag.
 
 There are three types of tags:
 
-- Custom tag: Created and managed by you.
-- Predefined tag: Created by OVHcloud, assigned to resources by you.
-- System tag: Created and automatically assigned by OVHcloud to your resources (cannot be deleted).
+- Custom: Created and managed by you.
+- Predefined: Created by OVHcloud, you are responsible for assigning this type of tag to your resources.
+- System: Created and automatically assigned by OVHcloud to your resources (cannot be deleted).
 
 Unassigned predefined tags and system tags do not appear by default and must be displayed via the `Quick filters`{.action} button.
 
@@ -42,7 +44,7 @@ By clicking on the tag, you can access the tag details with the list of concerne
 
 ![Tag Manager](images/tag-manager-02.png){.thumbnail}
 
-It is then possible to assign this tag to other resources via the `Assign tags`{.action} button. The list of all resources in the account is then displayed, allowing multiple selections.
+It is then possible to assign this tag to other resources via the `Assign tag`{.action} button. The list of all resources in the account is then displayed, allowing multiple selections.
 
 A filter field is present on the right to facilitate searching for resources.
 
@@ -50,15 +52,15 @@ On the contrary, by selecting resources in the tag details, it is possible to re
 
 #### Product dashboard
 
-In some OVHcloud products, a menu has been added to manage tags directly from the resource management dashboard.
+For some OVHcloud products, an interface has been added to manage tags directly from the resource management dashboard.
 
 ![Tag Manager](images/baremetal-tag-01.png){.thumbnail}
 
-The tag management menu allows you to add or remove tags from the resource.
+The tag management interface allows you to add or remove tags from the resource.
 
 ![Tag Manager](images/baremetal-tag-02.png){.thumbnail}
 
-It is possible to either select from the list of predefined tags or enter your own tags by typing the keys and values directly into the fields.
+It is possible to either select one or more tags from the list of predefined tags or enter your own tags by typing the keys and values directly into the fields.
 
 ### Managing Tags via API
 
