@@ -6,7 +6,7 @@ updated: 2025-09-04
 
 ## Objective
 
-"This guide provides detailed instructions on how to create, manage, and mount a CephFS file system for your OVHcloud services. It covers the full setup process using the OVHcloud API, ensuring you can efficiently integrate CephFS into your cloud environment.
+This guide provides detailed instructions on how to create, manage, and mount a CephFS file system for your OVHcloud services. It covers the full setup process using the OVHcloud API, ensuring you can efficiently integrate CephFS into your cloud environment.
 
 ## Requirements
 
