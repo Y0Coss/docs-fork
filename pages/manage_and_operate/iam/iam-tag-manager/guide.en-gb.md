@@ -1,5 +1,5 @@
 ---
-title: "Managing tags on resources"
+title: "How to manage tags on resources"
 excerpt: "Find out how to manage and use tags on your OVHcloud resources"
 updated: 2025-09-15
 ---
