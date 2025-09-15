@@ -2085,7 +2085,7 @@
         + [How to use IAM policies using the OVHcloud API](account_and_service_management/account_information/iam-policies-api)
         + [How to use IAM policies using the OVHcloud Control Panel](account_and_service_management/account_information/iam-policy-ui)
         + [List of permission groups managed by OVHcloud](account_and_service_management/account_information/iam-permission-groups)
-        + [How to manage tag on resources](manage_and_operate/iam/iam-tag-manager)
+        + [How to manage tags on resources](manage_and_operate/iam/iam-tag-manager)
         + [How to create an IAM policy to allow a user to log to the OVHcloud Control Panel](account_and_service_management/account_information/iam-control-panel-access)
         + [How to use IAM policies with vSphere](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/use_iam_with_vSphere)
         + [Authenticate on Openstack API with service account](manage_and_operate/iam/authenticate-api-openstack-with-service-account)
