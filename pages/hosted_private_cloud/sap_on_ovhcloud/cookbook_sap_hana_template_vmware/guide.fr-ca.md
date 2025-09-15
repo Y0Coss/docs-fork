@@ -64,9 +64,11 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage, vous 
 
 L'URL ci-dessous est un exemple, vous devez remplacer la valeur `pcc-xxx-xxx-xxx-xxx.ovh.xxx` par l'URL de votre service VMware on OVHcloud.
 
-```console
-https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf
-```
+| Version            | URL                                                                                                                                 |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| SLES4SAP-SLE15-SP5 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP6 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP6-Full-x86_64/sles4sap-sap-hana-SLE15-SP6-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP7 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP7-Full-x86_64/sles4sap-sap-hana-SLE15-SP7-Full-x86_64.ovf |
 
 ![deploy-from-template](images/step-2.png){.thumbnail}
 
@@ -183,7 +185,7 @@ Ci-dessous, les paramètres de la règle que nous conseillons de créer pour SAP
 | Type de stockage                           | VSAN                              |
 | Tolérance aux pannes du site               | Aucun - cluster standard          |
 | Pannes tolérées                            | 1 panne : RAID-1 (mise en miroir) |
-| Nombre de bandes de disque par objet       | 6*                                |
+| Nombre de bandes de disque par objet       | 2                                 |
 | Limite d'IOPS pour un objet                | 0                                 |
 | Réservation d'espace d'objet               | Provisionnement statique          |
 | Réservation de Flash Read Cache            | 0 %                               |
@@ -192,9 +194,6 @@ Ci-dessous, les paramètres de la règle que nous conseillons de créer pour SAP
 | Services de chiffrement                    | Aucune préférence                 |
 | Efficacité de l'utilisation de l'espace    | Déduplication et compression      |
 | Niveau de stockage                         | Intégralement Flash               |
-
-<sup>* Pour la solution SAP HANA on Private Cloud.</sup>  
-<sup>Cette valeur va dépendre du nombre de disques (vSAN Capacity) sur vos hosts.</sup>
 
 Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes
 /hana/data (Hard disk 4) et /hana/log (Hard disk 5) de votre machine virtuelle.
