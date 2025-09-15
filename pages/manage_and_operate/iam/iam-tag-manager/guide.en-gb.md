@@ -1,7 +1,7 @@
 ---
 title: "Managing tags on resources"
 excerpt: "Find out how to manage and use tags on your OVHcloud resources"
-updated: 2025-09-12
+updated: 2025-09-15
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ Tags are metadata in the form of key-value pairs added to OVHcloud resources, wh
 #### Tag Manager
 
 The Tag Manager is the menu that allows you to manage your tags across all your OVHcloud products in a transverse manner.
-This menu is accessible in the `Identity, Security & Operations`{.action} menu and the `Identity and Access Management`{.action} section.
+This menu is accessible in the `Identity, Security & Operations`{.action} menu under the `Identity and Access Management`{.action} section.
 
 The menu displays all the tags currently placed on your resources.
 
@@ -32,21 +32,21 @@ For each tag, the dashboard lists the number of resources associated with this t
 
 There are three types of tags:
 
-- Custom tag: Created and managed by you
-- Predefined tag: Created by OVHcloud, assigned to resources by you
-- System tag: Created and automatically assigned by OVHcloud to your resources (cannot be deleted)
+- Custom tag: Created and managed by you.
+- Predefined tag: Created by OVHcloud, assigned to resources by you.
+- System tag: Created and automatically assigned by OVHcloud to your resources (cannot be deleted).
 
-Unassigned predefined tags and system tags do not appear by default and must be displayed via the `Quick Filters`{.action} button.
+Unassigned predefined tags and system tags do not appear by default and must be displayed via the `Quick filters`{.action} button.
 
 By clicking on the tag, you can access the tag details with the list of concerned resources.
 
 ![Tag Manager](images/tag-manager-02.png){.thumbnail}
 
-It is then possible to assign this tag to other resources via the `Assign Tag`{.action} button. The list of all resources in the account is then displayed, allowing multiple selections.
+It is then possible to assign this tag to other resources via the `Assign tags`{.action} button. The list of all resources in the account is then displayed, allowing multiple selections.
 
 A filter field is present on the right to facilitate searching for resources.
 
-On the contrary, by selecting resources in the tag etails, it is possible to remove the tag from them via the `Unassign Tag`{.action} button.
+On the contrary, by selecting resources in the tag details, it is possible to remove the tag from them via the `Unassign Tag`{.action} button.
 
 #### Product dashboard
 
