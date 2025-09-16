@@ -184,7 +184,7 @@ Ci-dessous, les paramètres de la règle que nous conseillons de créer pour SAP
 |--------------------------------------------|-----------------------------------|
 | Type de stockage                           | VSAN                              |
 | Tolérance aux pannes du site               | Aucun - cluster standard          |
-| Pannes tolérées                            | 1 panne : RAID-1 (mise en miroir) |
+| Pannes tolérées                            | 1 panne : RAID-1 (mise en miroir)<sup>1</sup> |
 | Nombre de bandes de disque par objet       | 2                                 |
 | Limite d'IOPS pour un objet                | 0                                 |
 | Réservation d'espace d'objet               | Provisionnement statique          |
@@ -195,8 +195,9 @@ Ci-dessous, les paramètres de la règle que nous conseillons de créer pour SAP
 | Efficacité de l'utilisation de l'espace    | Aucune préférence                 |
 | Niveau de stockage                         | Intégralement Flash               |
 
-Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes
-/hana/data (Hard disk 4) et /hana/log (Hard disk 5) de votre machine virtuelle.
+<sup>1</sup> *Si votre cluster a plus de 3 hosts, il est plus avantageux de basculer sur un RAID-5.*
+
+Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes /hana/shared (Hard disk 3), /hana/data (Hard disk 4) et /hana/log (Hard disk 5) de votre machine virtuelle.
 
 6\. Vous pouvez à présent démarrer votre machine virtuelle.
 

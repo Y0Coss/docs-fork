@@ -182,7 +182,7 @@ Find below the parameters for the rule that we advise creating for SAP HANA:
 |-----------------------------------|--------------------------------|
 | Storage Type                      | VSAN                           |
 | Site disaster tolerance           | None - standard cluster        |
-| Failures to tolerate              | 1 failure - RAID-1 (Mirroring) |
+| Failures to tolerate              | 1 failure - RAID-1 (Mirroring)<sup>1</sup> |
 | Number of disk stripes per object | 2                              |
 | IOPS limit for object             | 0                              |
 | Object space reservation          | Thick provisioning             |
@@ -193,7 +193,9 @@ Find below the parameters for the rule that we advise creating for SAP HANA:
 | Space efficiency                  | No preference                  |
 | Storage tier                      | All flash                      |
 
-This VM Storage Policy must be applied to the disks that host the /hana/data (on Hard Disk 4) and /hana/log (on Hard Disk 5) volumes of your virtual machine.
+<sup>1</sup> *If your cluster has more than 3 hosts, it is more advantageous to switch to RAID-5.*
+
+This VM storage strategy should be applied to the disks hosting your virtual machine’s /hana/shared (Hard disk 3), /hana/data (Hard disk 4) and /hana/log (Hard disk 5) volumes.
 
 6\. You can now start your virtual machine.
 
