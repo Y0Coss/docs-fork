@@ -1,12 +1,12 @@
 ---
 title: "Manage your OKMS access certificate"
 excerpt: "Manage your access certificate for your Data Security products"
-updated: 2025-09-15
+updated: 2025-09-16
 ---
 
 ## Objective
 
-The purpose of this guide is to show you the steps you need to take to set up and manage OKMS access certificate of your Data Security products.
+The purpose of this guide is to show you the steps to follow to configure and manage the OKMS access certificate for your Data Security products.
 
 ## Requirements
 
@@ -18,36 +18,36 @@ The purpose of this guide is to show you the steps you need to take to set up an
 ### OKMS access certificate description
 
 To communicate with your OKMS domain, you will need to create an access certificate.
-Access certificate to an OKMS domain are used for the **Key Management Service (KMS)**
 
-This will be used for any interaction with the domain, either to create encryption keys or to carry out operations with them.
-An access certificate is only valid for the domain for which it was generated
+Access certificate to an OKMS domain are used for the **Key Management Service (KMS)**. This will be used for any interaction with the domain, either to create encryption keys or to carry out operations with them.
+An access certificate is only valid for the domain for which it was generated.
 
 ### Create an access certificate from the KMS
 
 #### From the Control Panel
 
 It's possible to create this certificate from the dedicated entry of the KMS.
-For that go the the [Control Panel](/links/manager) on the administration console on the `Identity, Security & Operations`{.action} section then `Key Management Service`{.action} and click on the `Generate an access certificate`{.action} button.
+For that, log into the [OVHcloud Control Panel](/links/manager) and access the administration console `Identity, Security & Operations`{.action}. Click on `Key Management Service`{.action}, then on `Generate an access certificate`{.action}.
 
 ![Create a certificate](images/create_certificat_01.png){.thumbnail}
 
 The first part of the form allows you to precise its validity duration, choose signature algorithm, and providing or not your Certificate Signing Request (CSR) in case you have your own private key.
 
-- Without providing a private key:
+##### **Without providing a private key:**
 
 If you do not provide a CSR, OVHcloud will generate the certificate and a private key as well.
 
 ![Create a certificate](images/create_certificat_02.png){.thumbnail}
 
-- With a CSR:
+##### **With a CSR:**
 
 If you own your own private key, it's possible to use it with a CSR.
 
 ![Create a certificate](images/create_certificat_03.png){.thumbnail}
 
-The second part of the form allow you to indicate the [OVHcloud identities](/pages/manage_and_operate/iam/identities-management) associated to this certificate used to calculate access rights via the [OVHcloud IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
-It's possible to add the `root` identity to the certificate so not to be constrained by the OVHcloud IAM.
+The second part of the form allows you to specify the [OVHcloud identities](/pages/manage_and_operate/iam/identities-management) associated with the certificate used to calculate access rights via the [OVHcloud IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
+
+It is possible to add the ‘root’ identity to the certificate so as not to be constrained by the OVHcloud IAM.
 
 ![Create a certificate](images/create_certificat_04.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Finally it's possible to download the public key of the certificate from the das
 
 You can generate this certificate by letting OVHcloud generate the private key, or by providing your Certificate Signing Request (CSR) in case you have your own private key.
 
-##### Without providing a private key
+##### **Without providing a private key**
 
 If you do not provide a CSR, OVHcloud will generate the access certificate along with a private key.
 
@@ -89,7 +89,7 @@ The following information is required:
 - **name**: the name of the certificate
 - **identityURNs**: list of OVHcloud identities in URN format that will be provided to the IAM for calculating access rights
 - **description**: certificate description (optional)
-- **certificateType** : certificate signature algorithm (ECDSA or RSA) - ECDSA by default (optional)
+- **certificateType**: certificate signature algorithm (ECDSA or RSA) - ECDSA by default (optional)
 - **validity**: certificate validity duration in days - 365 days by default (optional)
 
 **Example of certificate creation with root account:**
@@ -185,7 +185,7 @@ Copy the value of the **certificatePEM** field to a **client.cert** file.
 > The **certificatePEM** field needs to be edited so that all instances of `\n` are replaced by carriage returns.
 >
 
-##### With a CSR
+##### **With a CSR**
 
 If you have your own private key, it is possible to use it by providing a CSR.
 
@@ -206,7 +206,7 @@ The following information is required:
 
 > [!warning]
 >
-> The CSR needs to be in JSON format. The CSR file will need to be edited so that there are no carriage returns; rather, `\n` will have to be inserted where the line breaks were previously (see the example below). You can also use third-party tools available online to adjust content into the correct JSON format.
+> The CSR must be in JSON format. The CSR file must be edited so that there are no carriage returns; instead, `\n` will have to be inserted where the line breaks were previously (see the example below). You can also use third-party tools available online to adjust content into the correct JSON format.
 >
 
 **Example of certificate creation:**
@@ -274,5 +274,6 @@ Copy the value of the **certificatePEM** field to a **client.cert** file.
 
 ## Go further
 
-[Using the OVHcloud KMS with your data](/pages/manage_and_operate/kms/kms-usage)
+[Using the OVHcloud KMS with your data](/pages/manage_and_operate/kms/kms-usage).
+
 Join our [community of users](/links/community).
