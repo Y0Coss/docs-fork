@@ -244,13 +244,35 @@ details[open]>summary::before {
 
 /// details | Je ne parviens pas à activer une zone DNS pour mon nom de domaine, que faire ?
 
+Cette situation survient lorsqu'une zone DNS existe déjà pour votre nom de domaine chez OVHcloud.
 
+Suivez ces étapes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Zones DNS`{.action}, puis vérifiez si le nom de domaine concerné apparaît.
+
+Cas n°1: La zone DNS du nom de domaine apparaît dans la liste :
+
+Cela signifie que la zone DNS du nom de domaine existe déjà dans votre [espace client OVHcloud](/links/manager). Vous pourrez la gérer directement à cet endroit.
+
+Cas n°2: La zone DNS du nom de domaine n'apparaît pas dans la liste :
+
+Cela signifie que la zone DNS du nom de domaine est gérée par un autre identifiant client OVHcloud que le vôtre.
+
+Conformément à la **R**è**G**lementation sur la **P**rotection des **D**onnées (**RGPD**), l'identifiant client sur lequel se trouve la zone DNS restera confidentiel.
+
+Dans cette situation et si vous ne connaissez pas cet autre identifiant client, nous vous invitons à ouvrir [un ticket d'assistance depuis le Centre d'Aide](https://help.ovhcloud.com/csm?id=csm_get_help) pour récupérer la gestion de la zone DNS.
 
 ///
 
 /// details | Pourquoi je ne retrouve pas l'onglet "GLUE" dans mon espace client OVHcloud ?
 
+La fonctionnalité n'est pas disponible avec toutes les extensions de nom de domaine.
+Si l'onglet n'apparaît pas dans votre [espace client OVHcloud](/links/manager), c'est que l'option "GLUE" est indisponible pour votre nom de domaine.
 
+> [!success]
+>
+> Retrouvez tous les détails dans notre guide « [Personnaliser les sereurs DNS d'un nom de domaine (Glue records)](/pages/web_cloud/domains/glue_registry) ».
 
 ///
 
@@ -311,15 +333,48 @@ Une nouvelle page apparaît sur laquelle vous pourrez remplacer les serveurs DNS
 
 ///
 
-/// details | Dans mon espace client, j'ai un message d'erreur m'indiquant que j'utilise les mauvais serveurs DNS pour mon nom de domaine, que faire ?
+/// details | Dans mon espace client, j'ai un message d'erreur m'indiquant que je n'utilise pas les serveurs DNS d'OVHcloud pour mon nom de domaine, que faire ?
 
+Dans votre [espace client OVHcloud](/links/manager), ce message indique uniquement que la zone DNS créée pour votre nom de domaine n'est pas sa zone DNS active. 
 
+En d'autres termes, cela signifie que la configuration présente dans cette zone DNS n'est pas celle qui est actuellement appliquée à votre nom de domaine.
+
+Toutefois, vérifiez que les serveurs DNS mentionnés dans le message d'erreur correspondent bien aux serveurs DNS que vous souhaitez appliquer à votre nom de domaine. Vérifiez ensuite la configuration de la zone DNS déclarée sur ces mêmes serveurs DNS auprès de votre fournisseur DNS.
+
+Dans le cas contraire, vous pourrez préparer la configuration DNS de la zone DNS présente chez OVHcloud pour que celle-ci corresponde à vos besoins, puis l'activer pour votre nom de domaine.
+
+> [!success]
+>
+> Retrouvez plus de détails dans les guides suivants :
+>
+>  - « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+>  - « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
 
 ///
 
 /// details | Je ne parviens pas à modifier les serveurs DNS d'un nom de domaine depuis mon espace client OVHcloud, que faire ?
 
+Cela signifie que vous ne disposez que de la gestion de la zone DNS du nom de domaine mais pas celle du nom de domaine en lui-même.
 
+Pour le vérifier, suivez ces étapes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Noms de domaine`{.action}, puis vérifiez si le nom de domaine concerné apparaît.
+
+Cas n°1: Le nom de domaine n'apparaît pas dans la liste :
+
+Cela signifie que le nom de domaine n'est pas géré depuis votre [espace client OVHcloud](/links/manager). Effectuez une requête [WHOIS](/links/web/domains-whois) avec ce dernier pour connaître l'endroit où il est enregistré.
+
+Vous pourrez ensuite faire l'une des actions suivantes (si vous êtes le titulaire déclaré sur le whois du nom de domaine): 
+
+- Le nom de domaine est enregistré chez OVHcloud : Vous pourrez effectuer une [procédure de récupération des contacts](/links/web/) pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
+- Le nom de domaine n'est pas enregistré chez OVHcloud : Vous pourrez réaliser une opération de [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) vers OVHcloud pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
+
+Cas n°2: Le nom de domaine apparaît dans la liste :
+
+Cela signifie que vous ne disposez pas des droits suffisants pour gérer le nom de domaine depuis votre [espace client OVHcloud](/links/manager). Effectuez une requête [WHOIS](/links/web/domains-whois) pour vérifier que vous êtes bien déclaré en tant que titulaire du nom de domaine.
+
+Vous pourrez ensuite effectuer une [procédure de récupération des contacts](/links/web/) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager).
 
 ///
 
