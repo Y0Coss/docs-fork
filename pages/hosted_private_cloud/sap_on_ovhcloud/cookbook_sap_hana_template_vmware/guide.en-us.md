@@ -190,7 +190,7 @@ Find below the parameters for the rule that we advise creating for SAP HANA:
 | Disable object checksum           | No                             |
 | Force provisioning                | No                             |
 | Encryption services               | No preference                  |
-| Space efficiency                  | Deduplication and compression  |
+| Space efficiency                  | No preference                  |
 | Storage tier                      | All flash                      |
 
 This VM Storage Policy must be applied to the disks that host the /hana/data (on Hard Disk 4) and /hana/log (on Hard Disk 5) volumes of your virtual machine.

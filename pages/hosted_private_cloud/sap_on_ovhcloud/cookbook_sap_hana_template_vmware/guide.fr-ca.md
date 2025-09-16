@@ -192,7 +192,7 @@ Ci-dessous, les paramètres de la règle que nous conseillons de créer pour SAP
 | Désactiver le total de contrôle de l'objet | Non                               |
 | Forcer le provisionnement                  | Non                               |
 | Services de chiffrement                    | Aucune préférence                 |
-| Efficacité de l'utilisation de l'espace    | Déduplication et compression      |
+| Efficacité de l'utilisation de l'espace    | Aucune préférence                 |
 | Niveau de stockage                         | Intégralement Flash               |
 
 Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes
