@@ -1,7 +1,7 @@
 ---
 title: "Deploy a virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
 excerpt: "This guide provides instructions for deploying a SLES for SAP virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
-updated: 2024-09-06
+updated: 2025-09-16
 ---
 
 ## Objective
@@ -64,9 +64,11 @@ Once the SAP HANA sources have been uploaded to your Object Storage bucket, you 
 
 The below URL is an example, you must replace the value `pcc-xxx-xxx-xxx-xxx.ovh.xxx` with the URL of your VMware on OVHcloud service.
 
-```console
-https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf
-```
+| Version            | URL                                                                                                                                 |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| SLES4SAP-SLE15-SP5 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP6 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP6-Full-x86_64/sles4sap-sap-hana-SLE15-SP6-Full-x86_64.ovf |
+| SLES4SAP-SLE15-SP7 | https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP7-Full-x86_64/sles4sap-sap-hana-SLE15-SP7-Full-x86_64.ovf |
 
 ![deploy-from-template](images/step-2.png){.thumbnail}
 
@@ -181,7 +183,7 @@ Find below the parameters for the rule that we advise creating for SAP HANA:
 | Storage Type                      | VSAN                           |
 | Site disaster tolerance           | None - standard cluster        |
 | Failures to tolerate              | 1 failure - RAID-1 (Mirroring) |
-| Number of disk stripes per object | 6*                             |
+| Number of disk stripes per object | 2                              |
 | IOPS limit for object             | 0                              |
 | Object space reservation          | Thick provisioning             |
 | Flash read cache reservation      | 0%                             |
@@ -190,9 +192,6 @@ Find below the parameters for the rule that we advise creating for SAP HANA:
 | Encryption services               | No preference                  |
 | Space efficiency                  | Deduplication and compression  |
 | Storage tier                      | All flash                      |
-
-<sup>* For a SAP HANA on Private Cloud solution.</sup>  
-<sup>The value for this rule will depend on the number of capacity disks (vSAN Capacity) on your hosts.</sup>
 
 This VM Storage Policy must be applied to the disks that host the /hana/data (on Hard Disk 4) and /hana/log (on Hard Disk 5) volumes of your virtual machine.
 
