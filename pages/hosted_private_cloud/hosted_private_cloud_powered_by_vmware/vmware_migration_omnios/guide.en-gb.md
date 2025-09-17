@@ -70,7 +70,7 @@ This guide explains how to identify OmniOS datastores in your Hosted Private Clo
 > For best results:
 >
 > - Reduce I/O activity during migration (stop intensive workloads if possible).
-> - Plan the migration during off-peak or HNO (Heures Non Ouvrées).
+> - Plan the migration during off-peak or non-working hours.
 > - Always ensure you have at least two supported datastores in your infrastructure for resiliency.
 
 1. In vSphere, right-click the virtual machine to migrate and select `Migrate...`{.action}.
@@ -144,9 +144,9 @@ The migration schedule is as follows:
 
 - **September 2025**: Official communication sent to all customers.
 
-- **October 25 to November 25, 2025**: Period during which the customer can perform the migration autonomously.
+- **October to November 2025**: Period during which the customer can perform the migration autonomously.
 
-- **November 25 to December 25, 2025**: 40-day window for OVHcloud-led migration. A notification email is sent 3 to 4 days before the maintenance operation.
+- **November to December 2025**: 40-day window for OVHcloud-led migration. A notification email is sent 3 to 4 days before the maintenance operation.
 
 - **January 2026**: Start of billing for the new datastore.
 

@@ -144,9 +144,9 @@ Le calendrier de la migration est le suivant :
 
 - **Septembre 2025** : Envoi de la communication officielle à tous les clients.
 
-- **Du 25 octobre au 25 novembre 2025** : Période pendant laquelle le client peut effectuer la migration de manière autonome.
+- **Octobre à novembre 2025** : Période pendant laquelle le client peut effectuer la migration de manière autonome.
 
-- **Du 25 novembre au 25 décembre 2025** : Fenêtre de 40 jours de migration pilotée par OVHcloud. Un email de notification est envoyé 3 à 4 jours avant l’opération de maintenance.
+- **Novembre à décembre 2025** : Fenêtre de 40 jours de migration pilotée par OVHcloud. Un email de notification est envoyé 3 à 4 jours avant l’opération de maintenance.
 
 - **Janvier 2026** : Début de la facturation du nouveau datastore.
 
