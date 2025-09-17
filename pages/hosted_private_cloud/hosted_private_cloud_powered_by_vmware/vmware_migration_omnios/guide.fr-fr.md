@@ -67,6 +67,7 @@ Ce guide explique comment identifier les datastores OmniOS de votre Hosted Priva
 > L’exécution d’un Storage vMotion peut provoquer des perturbations temporaires de performance.
 > 
 > Pour de meilleurs résultats :
+>
 > - Réduisez l’activité d’E/S pendant la migration (arrêtez les charges intensives si possible).
 > - Planifiez la migration en heures non ouvrées (HNO).
 > - Maintenez toujours au moins deux datastores supportés dans votre infrastructure pour garantir la résilience.
