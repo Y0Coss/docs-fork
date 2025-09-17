@@ -68,6 +68,7 @@ This guide explains how to identify OmniOS datastores in your Hosted Private Clo
 > Performing a Storage vMotion may cause temporary performance disruptions.
 > 
 > For best results:
+>
 > - Reduce I/O activity during migration (stop intensive workloads if possible).
 > - Plan the migration during off-peak or HNO (Heures Non Ouvrées).
 > - Always ensure you have at least two supported datastores in your infrastructure for resiliency.
