@@ -141,6 +141,13 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >>
 >> Les types se terminant par -luks sont chiffrés (LUKS).
 >>
+>> > [!warning]
+>> >
+>> > La création d’un volume **-luks** génère automatiquement une clé dédiée dans Barbican.
+>> >
+>> > Ne modifiez ni ne supprimez cette clé si elle est associée à un de vos volumes. Toute suppression ou modification entraînera une perte définitive et irréversible de vos données.
+>> >
+>>
 >> Pour créer un volume block storage simple, vous avez besoin de 3 éléments :
 >>
 >> - Le nom du volume
@@ -267,6 +274,13 @@ La génération 2 des volumes High-Speed est optimisée pour les workloads les p
 >> - High-speed-gen2-luks
 >>
 >> Les types se terminant par -luks sont chiffrés (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > La création d’un volume **-luks** génère automatiquement une clé dédiée dans Barbican.
+>> >
+>> > Ne modifiez ni ne supprimez cette clé si elle est associée à un de vos volumes. Toute suppression ou modification entraînera une perte définitive et irréversible de vos données.
+>> >
 >>
 >> Listez les types de volumes disponibles dans la région :
 >>

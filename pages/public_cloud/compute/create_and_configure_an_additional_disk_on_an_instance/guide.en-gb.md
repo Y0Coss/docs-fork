@@ -141,6 +141,13 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >>
 >> The types ending in -luks are encrypted (LUKS).
 >>
+>> > [!warning]
+>> >
+>> > Creating a **-luks** volume automatically generates a dedicated key in Barbican.
+>> >
+>> > Do not modify or delete this key if it is linked to one of your block volumes. Doing so will make the data on that volume permanently unrecoverable.
+>> >
+>>
 >> To create a simple block storage volume, you need 3 elements:
 >>
 >> - The name of the volume
@@ -267,6 +274,13 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >> - High-speed-gen2-luks
 >>
 >> The types ending in -luks are encrypted (LUKS).
+>>
+>> > [!warning]
+>> >
+>> > Creating a **-luks** volume automatically generates a dedicated key in Barbican.
+>> >
+>> > Do not modify or delete this key if it is linked to one of your block volumes. Doing so will make the data on that volume permanently unrecoverable.
+>> >
 >>
 >> List the volume types available in the region:
 >>
