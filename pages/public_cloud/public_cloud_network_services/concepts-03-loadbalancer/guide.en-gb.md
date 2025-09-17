@@ -6,7 +6,7 @@ updated: 2024-03-29
 
 ## Objective
 
-The Public Cloud Load Balancer (based on Octavia OpenStack project) provides a lot of features and its configuration can be complex. The goal of this page is to explain the different configuration concepts that are powering the Load Balancer so that you have a high level understanding of all the features and the associated configuration items.
+The Public Cloud Load Balancer is built on the OpenStack Octavia project and offers a wide range of configuration options. The goal of this page is to explain the different configuration concepts that are powering the Load Balancer so that you have a high level understanding of all the features and the associated configuration items.
 
 ## Load Balancer Configuration concepts
 
@@ -22,7 +22,7 @@ The listener specifies a listening endpoint where the incoming traffic is receiv
 
 The following protocols are available for incoming traffic: `HTTP`, `HTTPS`, `TCP`, `UDP`, `SCTP`.
 
-A specific protocol is `PROMETHEUS`, it enables configuring a prometheus endpoint and does not handle traffic itself. Find more information about this configuration on [this page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
+A specific protocol is `PROMETHEUS`, it enables configuring a prometheus endpoint and does not handle traffic itself. This is used to export metrics to Prometheus for monitoring, but it is not used to route application traffic. Find more information about this configuration on [this page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
 
 ### Pool
 
@@ -82,6 +82,8 @@ When a request is received on a listener, the L7 policies are evaluated in the o
 
 ## Network considerations
 
+Depending on whether your applications are private only, or need to be accessible from the Internet, the Load Balancer will require a Gateway and a Floating IP.
+
 The requirements for the Public Cloud Load Balancer vary, depending on incoming traffic type (private or public) and member IP addresses (private or public). The following chapters show the 3 different types of architecture the Load Balancer can address. The table below also shows the prerequisites on the network / additional components related to each architecture.
 
 ### Private to Private Load Balancer
@@ -97,6 +99,11 @@ Incoming traffic originates from a private network and is routed to instances ac
 Incoming traffic from the Internet is directed to a Floating IP address associated with the Load Balancer. For this Floating IP to function properly, a Gateway is required: it ensures the routing between the public IP address (Floating IP) and the private IP address of the Load Balancer. The instances behind the Load Balancer are located on a private network and have no public IP, which ensures they remain completely private and isolated from the Internet.
 
 ### Public to Public Load Balancer
+
+> [!primary]
+>
+> This use case is less common, but can be used when your backends need to be directly accessible via the Internet (for example, for third-party services) while passing through a Load Balancer.
+>
 
 ![Public to Public Load balancer architecture](images/pub-to-pub.png){.thumbnail}
 

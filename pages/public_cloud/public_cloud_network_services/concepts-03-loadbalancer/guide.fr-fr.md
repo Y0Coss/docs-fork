@@ -6,7 +6,7 @@ updated: 2024-03-29
 
 ## Objectif
 
-Le Load Balancer du Public Cloud est basé sur le projet OpenStack Octavia et fournit beaucoup de capacités de configuration. Le but de cette page est d'expliciter les concepts de configuration pour que vous puissiez avoir une meilleure compréhension des capacités du Load Balancer.
+Le Load Balancer Public Cloud repose sur le projet OpenStack Octavia et offre de nombreuses possibilités de configuration. Le but de cette page est d'expliciter les concepts de configuration pour que vous puissiez avoir une meilleure compréhension des capacités du Load Balancer.
 
 ## Load Balancer Configuration concepts
 
@@ -22,7 +22,7 @@ Un Listener définit un point d'entrée pour le trafic qui sera traité par le L
 
 Les protocoles suivants sont disponibles pour le trafic entrant : `HTTP`, `HTTPS`, `TCP`, `UDP`, `SCTP`.
 
-Un protocole spécifique est `PROMETHEUS`, il permet de configurer un point de terminaison prometheus et ne gère pas le trafic lui-même. Retrouvez plus d'informations sur cette configuration sur [cette page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
+Un protocole spécifique est `PROMETHEUS`, il permet de configurer un point de terminaison prometheus et ne gère pas le trafic lui-même. Cela permet d’exporter des métriques vers Prometheus pour la supervision, mais n’est pas utilisé pour diriger du trafic applicatif. Retrouvez plus d'informations sur cette configuration sur [cette page](/pages/public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus).
 
 ### Pool
 
@@ -81,6 +81,8 @@ Lorsqu'une requête arrive sur un listener, les politiques sont évaluées dans 
 
 ## Considérations réseau
 
+Selon la manière dont vos applications sont exposées (uniquement dans un réseau privé, ou depuis Internet), le Load Balancer devra utiliser ou non une Gateway et une Floating IP
+
 La configuration requise pour le Load Balancer Public Cloud varie en fonction du type de trafic entrant (privé ou public) et des adresses IP des membres (privées ou publiques). Les chapitres suivants présentent les 3 différents types d'architectures auxquels le Load Balancer peut répondre. Le tableau ci-dessous présente également les prérequis sur le réseau / les composants supplémentaires liés à chaque architecture.
 
 ### Private to Private Load Balancer
@@ -93,15 +95,18 @@ Le trafic entrant provient d'un réseau privé et est routé vers des instances 
 
 ![Architecture du Load Balancer public-privé](images/pub-to-priv.png){.thumbnail}
 
-Le trafic entrant depuis Internet est dirigé vers une adresse Floating IP associée au Load Balancer.
-Pour que cette Floating IP fonctionne correctement, une Gateway est indispensable : elle assure le routage entre l’adresse IP publique (Floating IP) et l’adresse IP privée du Load Balancer. Les instances derrière le Load Balancer sont situées sur un réseau privé et n'ont pas d'IP publique, ce qui garantit qu'elles restent complètement privées et isolées d'Internet.
+Le trafic entrant depuis Internet est dirigé vers une adresse Floating IP associée au Load Balancer. Pour que cette Floating IP fonctionne correctement, une Gateway est indispensable : elle assure le routage entre l’adresse IP publique (Floating IP) et l’adresse IP privée du Load Balancer. Les instances derrière le Load Balancer sont situées sur un réseau privé et n'ont pas d'IP publique, ce qui garantit qu'elles restent complètement privées et isolées d'Internet.
 
 ### Public to Public Load Balancer
 
+> [!primary]
+>
+> Ce cas d’usage est moins fréquent, mais peut être utilisé lorsque vos backends ont besoin d’être accessibles directement par Internet (par exemple pour des services tiers) tout en passant par un Load Balancer.
+>
+
 ![Public to Public Load Balancer architecture](images/pub-to-pub.png){.thumbnail}
 
-Le trafic entrant depuis Internet est dirigé vers une adresse Floating IP associée au Load Balancer.
-Pour que cette Floating IP fonctionne correctement, une Gateway est indispensable : elle assure le routage entre l’adresse IP publique (Floating IP) et l’adresse IP privée du Load Balancer. Les instances vers lesquelles le Load Balancer route le trafic sont accessibles avec une IP publique. Le Load Balancer utilise donc l’adresse Floating IP avec une sortie pour atteindre ces instances.
+Le trafic entrant depuis Internet est dirigé vers une adresse Floating IP associée au Load Balancer. Pour que cette Floating IP fonctionne correctement, une Gateway est indispensable : elle assure le routage entre l’adresse IP publique (Floating IP) et l’adresse IP privée du Load Balancer. Les instances vers lesquelles le Load Balancer route le trafic sont accessibles avec une IP publique. Le Load Balancer utilise donc l’adresse Floating IP avec une sortie pour atteindre ces instances.
 
 ### Prérequis réseau <a name="network-prerequisites"></a>
 
