@@ -102,7 +102,7 @@ Incoming traffic from the Internet is directed to a Floating IP address associat
 
 > [!primary]
 >
-> This use case is less common, but can be used when your backends need to be directly accessible via the Internet (for example, for third-party services) while passing through a Load Balancer.
+> This setup is less common, but can be used when your backends must remain directly accessible from the Internet (for example for third-party integrations), while still benefiting from a Load Balancer in front
 >
 
 ![Public to Public Load balancer architecture](images/pub-to-pub.png){.thumbnail}
