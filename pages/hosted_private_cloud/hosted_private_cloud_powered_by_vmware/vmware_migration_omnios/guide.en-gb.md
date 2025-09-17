@@ -96,6 +96,9 @@ This guide explains how to identify OmniOS datastores in your Hosted Private Clo
 
     ![Migration progress](images/omnios-11.png){.thumbnail}
 
+> [!primary]
+> After migration, consolidate your workloads on supported datastores. Always keep at least two active datastores in your infrastructure to ensure service availability and redundancy.
+
 ### Step 4 - Migrate VM templates
 
 1. In vSphere, go to `VM template in folders`{.action} to display the templates stored on your datastore.

@@ -95,6 +95,10 @@ Ce guide explique comment identifier les datastores OmniOS de votre Hosted Priva
 
     ![Progression de la migration](images/omnios-11.png){.thumbnail}
 
+> [!primary]
+> Après la migration, consolidez vos charges de travail sur des datastores supportés.  
+> Maintenez toujours au moins deux datastores actifs dans votre infrastructure afin de garantir la disponibilité et la redondance du service.
+
 ### Étape 4 - Migrer les modèles de VM
 
 1. Dans vSphere, allez dans `Modèle de VM dans les dossiers`{.action} pour afficher les modèles stockés sur votre datastore.
