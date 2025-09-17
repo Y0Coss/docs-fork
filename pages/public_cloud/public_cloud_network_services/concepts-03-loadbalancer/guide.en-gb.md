@@ -94,13 +94,13 @@ Incoming traffic originates from a private network and is routed to instances ac
 
 ![Public to Private Load balancer architecture](images/pub-to-priv.png){.thumbnail}
 
-Incoming traffic originates from the Internet and reaches a Floating IP that is associated to the Load Balancer. The instances behind the Load Balancer are located on a private network and have no public IP, which ensures they remain completely private and isolated from the Internet.
+Incoming traffic from the Internet is directed to a Floating IP address associated with the Load Balancer. For this Floating IP to function properly, a Gateway is required: it ensures the routing between the public IP address (Floating IP) and the private IP address of the Load Balancer. The instances behind the Load Balancer are located on a private network and have no public IP, which ensures they remain completely private and isolated from the Internet.
 
 ### Public to Public Load Balancer
 
 ![Public to Public Load balancer architecture](images/pub-to-pub.png){.thumbnail}
 
-Incoming traffic originates from the Internet and reaches a Floating IP that is associated to the Load Balancer. The instances to which the Load Balancer routes traffic are accessible with a public IP. Hence, the Load Balancer uses the Floating IP with an egress to reach these instances.
+Incoming traffic from the Internet is directed to a Floating IP address associated with the Load Balancer. For this Floating IP to function properly, a Gateway is required: it ensures the routing between the public IP address (Floating IP) and the private IP address of the Load Balancer. The instances to which the Load Balancer routes traffic are accessible with a public IP. Hence, the Load Balancer uses the Floating IP with an egress to reach these instances.
 
 ### Network prerequisites <a name="network-prerequisites"></a>
 
@@ -110,7 +110,7 @@ Incoming traffic originates from the Internet and reaches a Floating IP that is 
 |Public to Private  | Required | Required | 5 ([src](/pages/public_cloud/public_cloud_network_services/known-limits)) | Required |
 |Public to Public  | Required | Required | 5 ([src](/pages/public_cloud/public_cloud_network_services/known-limits)) | Required |
 
-\*: according to the control interface you choose, either those components will be created for you (OVHcloud Control Panel) or you will have to specifically create them (OpenStack CLI, Terraform or GUI).
+\*: For the Floating IP to function properly, a Gateway is required: it ensures the routing between the public address (Floating IP) and the private address of the Load Balancer. The OVHcloud Control Panel automatically provisions both components. If you use tools based on the OpenStack API — such as the OpenStack CLI, Terraform, or the Horizon interface — you will need to create them manually.
 
 ## Operating and Provisioning status <a name="operating-provisioning-status"></a>
 
