@@ -212,19 +212,54 @@ details[open]>summary::before {
 
 /// details | Puis-je créer une zone DNS pour un sous-domaine ?
 
+Vous pouvez créer une zone DNS pour un sous-domaine.
 
+Pour créer la zone DNS en elle-même, suivez ces étapes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Zones DNS`{.action}, puis
 
 ///
 
 /// details | Comment rediriger tous les sous-domaines d'un même nom de domaine vers la même adresse IP ?
 
+Suivez ces étapes :
 
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
+3. Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action} puis sélectionnez le type d'enregistrement DNS de type `A`{.action} pour une IPv4 (par exemple : `203.0.113.0`) ou de type `AAAA`{.action} pour une IPv6 (par exemple : `2001:db8:1:1b00:203:0:113:0`).
+4. Dans la fenêtre qui s'ouvre et dans le champ de saisie intitulé `Sous-domaine`{.action}, écrivez la valeur `*`. L'astérisque `*` représentera l'ensemble des sous-domaines (par exemples : `www.domain.tld` ou encore `ovhcloud.domain.tld`) de votre nom de domaine. Complétez le champ `Cible`{.action} par l'adresse IP désirée. 
+5. Cliquez ensuite sur `Suivant`{.action}, puis sur `Valider`{.action}.
+
+> [!primary]
+>
+> La propagation de la modification d'une zone DNS peut prendre jusqu'à **24** heures pour être effective.
+
+> [!success]
+>
+> Retrouvez tous les détails dans notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ///
 
 /// details | Puis-je mettre en place un wildcard dans ma zone DNS ?
 
+Il est possible de mettre en place un wildcard dans une zone DNS OVHcloud.
 
+Pour cela, suivez ces étapes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
+3. Sur la droite ou en dessous du tableau, cliquez sur `Ajouter une entrée`{.action} puis sélectionnez le type d'enregistrement DNS pour lequel vous souhaitez mettre en place un wildcard.
+4. Dans la fenêtre qui s'ouvre et dans le champ de saisie intitulé `Sous-domaine`{.action}, écrivez la valeur `*`. L'astérisque `*` représentera l'ensemble des sous-domaines (par exemples : `www.domain.tld` ou encore `ovhcloud.domain.tld`) de votre nom de domaine. Complétez les autres champs par les valeurs désirées.
+5. cliquez ensuite sur `Suivant`{.action}, puis sur `Valider`{.action}.
+
+> [!primary]
+>
+> La propagation de la modification d'une zone DNS peut prendre jusqu'à **24** heures pour être effective.
+
+> [!success]
+>
+> Retrouvez tous les détails dans notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ///
 
@@ -232,13 +267,46 @@ details[open]>summary::before {
 
 /// details | J'ai supprimé accidentellement ma zone DNS et je souhaite la restaurer, que faire ?
 
+OVHcloud envoi un e-mail contenant une copie de la zone DNS au format texte une fois votre zone DNS supprimée, afin que vous puissiez restaurer la zone DNS ultérieurement si besoin.
 
+> [!success]
+>
+> Si vous n'avez pas reçu cet e-mail, vérifiez dans vos courriers indésirables ou suivez ces étapes :
+>
+> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite, puis sur `Mon Compte`{.action}.
+> 2. Sur la page qui s'affiche, cliquez sur l'onglet `Emails reçus`{.action}.
+> 3. Dans le tableau qui apparaît et parmi la liste des e-mails reçus, cliquez sur l'email concerné pour en afficher le contenu.
+
+Pour restaurer votre zone DNS, suivez ces étapes :
+
+1. Télécharger le fichier contenant la zone DNS depuis l'e-mail reçu sur l'adresse e-mail associée à votre compte client OVHcloud.
+2. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+3. Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+4. Sélectionnez l'onglet `Zone DNS`{.action} une fois positionné sur le nom de domaine concerné. **Si la zone DNS est inactive, activez-la depuis cet onglet.**
+5. Sur la droite ou en dessous du tableau, cliquez sur `Modifier en mode textuel`{.action}.
+6. Dans la fenêtre qui s'ouvre, remplacez tout le contenu qui s'afiche par la copie de la zone DNS supprimée. Cliquez ensuite sur `Suivant`{.action}, puis sur `Valider`{.action}.
+
+> [!primary]
+>
+> La propagation de la modification d'une zone DNS peut prendre jusqu'à **24** heures pour être effective.
+
+> [!success]
+>
+> Retrouvez plus de détails dans les guides suivants :
+>
+>  - « [Créer une zone DNS OVHcloud pour un nom de domaine](/pages/web_cloud/domains/dns_zone_create) ».
+>  - « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+>  - « [Gérer l’historique d'une zone DNS](/pages/web_cloud/domains/dns_zone_history) ».
 
 ///
 
 /// details | Comment annuler une demande de suppression de ma zone DNS ?
 
+Pour chaque demande de suppression d'un service, un e-mail demandant la confirmation de suppression est envoyée à l'adresse e-mail associé à votre compte client OVHcloud.
 
+Si vous n'avez pas cliqué sur le lien de confirmation présent dans cet e-mail, rassurez-vous, votre one DNS ne sera pas supprimée.
+
+Dans le cas contraire, la suppression est initiée et ne peut plus être annulée. L'opération de suppression peut prendre jusqu'à 3 jours avant que vous puissiez recréer une zone DNS OVHcloud pour votre nom de domaine.
 
 ///
 
@@ -288,7 +356,7 @@ Suivez ces étapes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 2. Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
-3. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
+3. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
 4. Pour modifier les serveurs DNS, cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
 
 Une nouvelle page apparaît sur laquelle vous pourrez modifier les serveurs DNS pour votre nom de domaine.
@@ -305,7 +373,7 @@ Suivez ces étapes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 2. Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
-3. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
+3. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
 4. Pour modifier les serveurs DNS, cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
 
 Une nouvelle page apparaît sur laquelle vous pourrez personnaliser les serveurs DNS pour votre nom de domaine.
@@ -322,7 +390,7 @@ Suivez ces étapes :
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
 2. Cliquez sur le menu `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
-3. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le domaine concerné.
+3. Sélectionnez l'onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
 4. Pour modifier les serveurs DNS, cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
 
 Une nouvelle page apparaît sur laquelle vous pourrez remplacer les serveurs DNS pour votre nom de domaine par ceux d'OVHcloud.
