@@ -97,7 +97,7 @@ Ce guide explique comment identifier les datastores OmniOS de votre Hosted Priva
     ![Progression de la migration](images/omnios-11.png){.thumbnail}
 
 > [!primary]
-> Après la migration, consolidez vos charges de travail sur des datastores supportés.  
+> Après la migration, consolidez vos charges de travail sur des datastores supportés.
 > Maintenez toujours au moins deux datastores actifs dans votre infrastructure afin de garantir la disponibilité et la redondance du service.
 
 ### Étape 4 - Migrer les modèles de VM
@@ -143,13 +143,9 @@ Ce guide explique comment identifier les datastores OmniOS de votre Hosted Priva
 Le calendrier de la migration est le suivant :
 
 - **Septembre 2025** : Envoi de la communication officielle à tous les clients.
-
 - **Octobre à novembre 2025** : Période pendant laquelle le client peut effectuer la migration de manière autonome.
-
-- **Novembre à décembre 2025** : Fenêtre de 40 jours de migration pilotée par OVHcloud. Un email de notification est envoyé 3 à 4 jours avant l’opération de maintenance.
-
+- **Novembre à décembre 2025** : Fenêtre de 40 jours de migration pilotée par OVHcloud. Un e-mail de notification est envoyé 3 à 4 jours avant l’opération de maintenance.
 - **Janvier 2026** : Début de la facturation du nouveau datastore.
-
 - **Février 2026** : Clôture du processus de migration.
 
 ## Aller plus loin

@@ -1,7 +1,7 @@
 ---
 title: Migrating OmniOS datastores
 excerpt: Identify your OmniOS datastores and migrate your virtual machines to supported storage using VMware Storage vMotion.
-updated: 2025-09-17
+updated: 2025-09-18
 ---
 
 ## Objective
@@ -111,7 +111,7 @@ This guide explains how to identify OmniOS datastores in your Hosted Private Clo
     ![Remove from Inventory](images/template-02.png){.thumbnail}
 
     > [!warning]
-    > The template is removed from the inventory but remains stored in the datastore.  
+    > The template is removed from the inventory but remains stored in the datastore.
     > You can retrieve it and move it to another datastore, or delete it if no longer needed.
 
 3. Go to the `Files`{.action} tab, select the template folder, and click `Move to`{.action}.
@@ -143,13 +143,9 @@ This guide explains how to identify OmniOS datastores in your Hosted Private Clo
 The migration schedule is as follows:
 
 - **September 2025**: Official communication sent to all customers.
-
 - **October to November 2025**: Period during which the customer can perform the migration autonomously.
-
 - **November to December 2025**: 40-day window for OVHcloud-led migration. A notification email is sent 3 to 4 days before the maintenance operation.
-
 - **January 2026**: Start of billing for the new datastore.
-
 - **February 2026**: Closure of the migration process.
 
 ## Go further
