@@ -1,7 +1,7 @@
 ---
 title: "3-AZ resilience: Mechanisms and reference architectures"
 excerpt: "Understand 3-AZ resilience mechanisms and explore OVHcloud reference architectures"
-updated: 2025-06-03
+updated: 2025-09-18
 ---
 
 <style>
