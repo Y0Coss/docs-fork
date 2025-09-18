@@ -1,7 +1,7 @@
 ---
 title: Concepts - Load Balancer
 excerpt: "Understand the configuration concepts that are powering the Public Cloud Load Balancer"
-updated: 2024-03-29
+updated: 2025-09-18
 ---
 
 ## Objective
@@ -12,9 +12,9 @@ The Public Cloud Load Balancer is built on the OpenStack Octavia project and off
 
 Here are 2 drawings of 2 configurations : a simple one that contains the minimum number of concepts to configure a Load Balancer and a more complex one that uses them all. The following chapters provide a definition of each concept used in those configurations.
 
-![simple LB concepts](images/LB_concepts_simple.svg)
+![simple LB concepts](images/LB_concepts_simple.svg){.thumbnail}
 
-![full LB concepts](images/LB_concepts_full.svg)
+![full LB concepts](images/LB_concepts_full.svg){.thumbnail}
 
 ### Listener
 
@@ -102,7 +102,7 @@ Incoming traffic from the Internet is directed to a Floating IP address associat
 
 > [!primary]
 >
-> This setup is less common, but can be used when your backends must remain directly accessible from the Internet (for example for third-party integrations), while still benefiting from a Load Balancer in front
+> This setup is less common, but can be used when your backends must remain directly accessible from the Internet (for example for third-party integrations), while still benefiting from a Load Balancer.
 >
 
 ![Public to Public Load balancer architecture](images/pub-to-pub.png){.thumbnail}
@@ -153,4 +153,4 @@ The wording is slightly different between OpenStack and OVHcloud: the following 
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

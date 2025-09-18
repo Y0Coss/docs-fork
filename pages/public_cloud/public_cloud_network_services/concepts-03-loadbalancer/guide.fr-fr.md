@@ -1,7 +1,7 @@
 ---
 title: Concepts - Load Balancer
 excerpt: "Comprendre les concepts de configuration du Load Balancer Public Cloud"
-updated: 2024-03-29
+updated: 2025-09-18
 ---
 
 ## Objectif
@@ -12,9 +12,9 @@ Le Load Balancer Public Cloud repose sur le projet OpenStack Octavia et offre de
 
 Les illustrations suivantes montrent 2 configurations : une minimale et une complète qui utilise toutes les fonctionnalités. Les chapitres suivants donne une définition de chacun des concepts présents dans ces illustrations.
 
-![simple LB concepts](images/LB_concepts_simple.svg)
+![simple LB concepts](images/LB_concepts_simple.svg){.thumbnail}
 
-![full LB concepts](images/LB_concepts_full.svg)
+![full LB concepts](images/LB_concepts_full.svg){.thumbnail}
 
 ### Listener
 
@@ -81,7 +81,7 @@ Lorsqu'une requête arrive sur un listener, les politiques sont évaluées dans 
 
 ## Considérations réseau
 
-Selon la manière dont vos applications sont exposées (uniquement dans un réseau privé, ou depuis Internet), le Load Balancer devra utiliser ou non une Gateway et une Floating IP
+Selon la manière dont vos applications sont exposées (uniquement dans un réseau privé, ou depuis Internet), le Load Balancer devra utiliser ou non une Gateway et une Floating IP.
 
 La configuration requise pour le Load Balancer Public Cloud varie en fonction du type de trafic entrant (privé ou public) et des adresses IP des membres (privées ou publiques). Les chapitres suivants présentent les 3 différents types d'architectures auxquels le Load Balancer peut répondre. Le tableau ci-dessous présente également les prérequis sur le réseau / les composants supplémentaires liés à chaque architecture.
 
