@@ -44,7 +44,7 @@ You can also edit the reverse path directly via the pen icon in the **Reverse DN
 >  - It cannot contain uppercase characters.
 >  - It must end with a `.`.
 >
-> Example: "domain.tld" in the reverse record would be **"domain.tld"**.
+> Example: "domain.tld" in the reverse record would be `domain.tld.`.
 >
 
 > [!primary]

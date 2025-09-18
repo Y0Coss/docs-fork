@@ -4,10 +4,6 @@ excerpt: Cómo implementar la resolución inversa DNS de su dirección IP desde 
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
-
 ## Objetivo
 
 El registro inverso (*rDNS*) es el complemento de la resolución DNS "*forward*" que permite resolver los nombres de dominio en direcciones IP. Con el registro DNS inverso, una dirección IP puede resolverse en el nombre de dominio (o nombre de host) al que está conectada. Esto significa que las consultas DNS de la dirección IP asociada devolverán este nombre de dominio.
@@ -48,7 +44,7 @@ También puede editar el registro inverso directamente a través del icono con f
 >  - el registro inverso no puede contener caracteres en mayúscula.
 >  - el registro inverso debe terminar en un `.`
 >
-> Por ejemplo: "MyDomain.ca" en el registro inverso sería **mydomain.ca.**
+> Por ejemplo: "domain.tld" en el registro inverso sería `domain.tld.`.
 >
 
 > [!primary]

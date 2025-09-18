@@ -4,10 +4,6 @@ excerpt: Descubra como configurar a resolução reverse DNS do seu endereço IP 
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 O Reverse DNS (*rDNS*) é o complemento da resolução DNS « *forward* » que permite resolver os nomes de domínio em endereços IP. Graças à reverse DNS, um endereço IP pode ser resolvido com um nome de domínio (ou nome de host) ao qual está associado. Isto significa que os pedidos DNS do endereço IP associado retornarão este domínio.
@@ -48,7 +44,7 @@ Pode igualmente editar a reverse diretamente a partir do ícone em forma de cane
 >  - a reverse não pode conter caracteres maiúsculos
 >  - a reverse deve terminar com um `.`
 >
-> Por exemplo: "MyDomain.ca" no registo reverse seria **mydomain.ca.**
+> Por exemplo: "domain.tld" no registo reverse seria `domain.tld.`.
 >
 
 > [!primary]

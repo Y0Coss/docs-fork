@@ -4,10 +4,6 @@ excerpt: Dowiedz się, jak skonfigurować rewers DNS dla adresu IP z poziomu Pan
 updated: 2025-04-28
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
-
 ## Wprowadzenie
 
 Rewers DNS (*rDNS*) jest uzupełnieniem rozpoznawania DNS "*forward*", który pozwala na rozpoznawanie nazw domen na adresy IP. Dzięki rewersowi DNS adres IP może zostać rozpoznany jako domena (lub nazwa hosta), z którą jest powiązany. Oznacza to, że zapytania DNS skojarzonego adresu IP zwrócą tę domenę.
@@ -48,7 +44,7 @@ Możesz również edytować rewers bezpośrednio za pomocą ikony pióra w kolum
 >  - rewers nie może zawierać wielkich liter
 >  - rewers musi się kończyć znakiem `.`
 >
-> Przykład: "MyDomain.ca" w polu rewers byłoby **mydomain.ca.**
+> Przykład: "domain.tld" w polu rewers byłoby `domain.tld.`.
 >
 
 > [!primary]

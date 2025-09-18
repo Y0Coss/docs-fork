@@ -44,7 +44,7 @@ Vous pouvez également éditer le reverse directement via l'icône en forme de p
 >  - le *reverse* ne peut pas contenir de caractères majuscules
 >  - le *reverse* doit se terminer par un `.`
 >
-> Exemple : « mydomain.ca » dans l'enregistrement *reverse* serait **mydomain.ca.**
+> Exemple : « domain.tld » dans l'enregistrement *reverse* serait `domain.tld.`.
 >
 
 > [!primary]
