@@ -79,7 +79,7 @@ Führen Sie den folgenden Befehl aus, um das Dateisystem zu überprüfen:
 fsck -fy
 ```
 
-Führen Sie den folgenden Befehl aus, um einen Wiedergabetest durchzuführen. Ersetzen Sie `sd(x)` durch eigene Werte.
+Führen Sie den folgenden Befehl aus, um einen *Read*-Test durchzuführen. Ersetzen Sie `sd(x)` durch eigene Werte.
 
 ```bash
 dd if=/dev/zero of=/dev/sd(x) bs=1M count=100
