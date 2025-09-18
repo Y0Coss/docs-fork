@@ -2164,6 +2164,7 @@
     + [Key Management Service (KMS)](manage-operate-kms)
         + [Getting started with OVHcloud Key Management Service (KMS)](manage_and_operate/kms/quick-start)
         + [Using the OVHcloud Key Management Service (KMS) with your data](manage_and_operate/kms/kms-usage)
+        + [Manage your OKMS access certificate](manage_and_operate/kms/okms-certificate-management)
         + [OVHcloud KMS Architecture overview](manage_and_operate/kms/architecture-overview)
         + [OVHcloud KMS - Responsibility model](manage_and_operate/kms/responsibility-model-kms)
         + [How to connect a compatible product using KMIP protocol with OVHcloud KMS](manage_and_operate/kms/kms-kmip)
