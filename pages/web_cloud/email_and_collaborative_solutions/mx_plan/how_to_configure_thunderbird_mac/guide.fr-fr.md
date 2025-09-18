@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configurer son adresse e-mail sur Thunderbird pour macOS'
 excerpt: 'Découvrez comment configurer votre adresse e-mail MX Plan sur Thunderbird pour macOS'
-updated: 2025-09-12
+updated: 2025-09-18
 ---
 
 <style>
@@ -31,17 +31,17 @@ Les comptes e-mail MX Plan peuvent être configurés sur différents logiciels d
 
 - Disposer d'une offre MX Plan. Celle-ci est disponible via :
     - Une offre d’[hébergement web](/links/web/hosting).
-    - Un[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable).
+    - Un [hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable).
     - Une offre MX Plan commandée séparément.
     - Disposer d’une adresse e-mail [Zimbra Starter](/links/web/zimbra).
-- Disposer du logiciel Thunderbird installé sur votre mac.
+- Disposer du logiciel Thunderbird installé sur votre Mac.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
 /// details | Informations relatives à la gestion et configuration des services OVHcloud
 
 OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 
-Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [partenaire spécialisé](https://marketplace.ovhcloud.com/c/support-collaboration) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 
 ///
 
@@ -51,9 +51,9 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 - **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche et vous invite à renseigner votre adresse e-mail.
 
-- **Si un compte a déjà été paramétré** :
+- **Si un compte est déjà paramétré sur l'application** :
 
-    1. Cliquez sur le menu « &#9776; » dans la barre horizontale supérieure.
+    1. Cliquez sur le menu `☰`{.action} dans la barre horizontale supérieure.
     2. Cliquez sur `Nouveau Compte`{.action}.
     3. Cliquez sur `Adresse E-mail`{.action}.
 
@@ -63,14 +63,15 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 >
 > Il est nécessaire de bien relever la valeur correspondante à votre localisation (**EUROPE** ou **AMERIQUE / ASIE-PACIFIQUE**).
 
-Suivez les étapes suivantes en cliquant sur les onglets ci-dessous :
+Suivez les étapes de configuration en cliquant successivement sur les **5** onglets ci-dessous :
 
 > [!tabs]
 > **Étape 1**
->> Dans la fenêtre qui s'affiche, saisissez les 3 informations suivantes:
 >>
->> - Votre nom complet (Nom d'affichage)
->> - Adresse E-mail
+>> Dans la fenêtre qui s'affiche, saisissez les 2 informations suivantes :
+>>
+>> - Votre nom complet (nom d'affichage).
+>> - L'adresse e-mail à paramétrer.
 >>
 >> Cliquez sur `Continuer`{.action} pour compléter les paramètres.
 >>
@@ -78,41 +79,47 @@ Suivez les étapes suivantes en cliquant sur les onglets ci-dessous :
 >>
 > **Étape 2**
 >>
->> Lorsque Thunderbird détecte un nom de domaine OVHcloud, une configuration automatique relative à l'offre MX Plan est proposée: 
->> - Cliquez  sur Cliquez sur `Continuer`{.action} si les informations sont correctes et passez à l'étape 5.
->> - Cliquez sur `MODIFIER LA CONFIGURATION`{.action} si vous souhaitez configurer manuellement.
+>> Lorsque Thunderbird détecte un nom de domaine OVHcloud, une configuration automatique relative à l'offre MX Plan est proposée :
+>>
+>> - Si les informations sont correctes, cliquez sur `Continuer`{.action} et passez à l'étape 5.
+>> - Sinon, cliquez sur `MODIFIER LA CONFIGURATION`{.action} pour effectuer une configuration manuelle.
 >>
 >> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-400}
 >>
 > **Étape 3**
->> Paramètres du serveur de réception :<br>
->> - **Protocole** IMAP
+>>
+>> Paramètres du serveur de réception :
+>>
+>> - **Protocole** : IMAP
 >> - **Nom d'hôte EUROPE (entrant)** : imap.mail.ovh.net **ou** ssl0.ovh.net
 >> - **Nom d'hôte AMERIQUE/ASIE-PACIFIQUE (entrant)** : imap.mail.ovh.ca
->> - **Port** 993
->> - **Sécurité de la connexion** SSL/TLS
->> - **Méthode d'authentification** Mot de passe normal
->> - **Nom d'utilisateurs** votre adresse e-mail complète
+>> - **Port** : 993
+>> - **Sécurité de la connexion** : SSL/TLS
+>> - **Méthode d'authentification** : Mot de passe normal
+>> - **Nom d'utilisateur** : Votre adresse e-mail complète
 >>
 >> ![thunderbird](images/configuration-thunderbird-mxplan-04.png){.thumbnail .w-400}
 >>
 > **Étape 4**
->> Paramètres du serveur d'envoi :<br>
->> - **Protocole** SMTP 
->> - **Nom d'hôte EUROPE (entrant)** : pop.mail.ovh.net **ou** ssl0.ovh.net
->> - **Nom d'hôte AMERIQUE/ASIE-PACIFIQUE (entrant)** : pop.mail.ovh.ca
->> - **Port** 587
->> - **Sécurité de la connexion** STARTTLS
->> - **Méthode d'authentification** Mot de passe normal
->> - **Nom d'utilisateurs** votre adresse e-mail complète
+>>
+>> Paramètres du serveur d'envoi :
+>>
+>> - **Protocole** : SMTP
+>> - **Serveur EUROPE (sortant)** : smtp.mail.ovh.net **ou** ssl0.ovh.net
+>> - **Serveur AMERIQUE/ASIE-PACIFIQUE (sortant)** : smtp.mail.ovh.ca
+>> - **Port** : 587
+>> - **Sécurité de la connexion** : STARTTLS
+>> - **Méthode d'authentification** : Mot de passe normal
+>> - **Nom d'utilisateur** : Votre adresse e-mail complète
 >> 
->> 1. Cliquez sur `Tester`{.action} pour vérifier les paramètres saisies.
->> 2. Cliquez sur `Continuer`{.action} pour valider les paramètres.
+>> 1. Cliquez sur `Tester`{.action} pour vérifier les paramètres saisis.
+>> 2. Cliquez sur `Continuer`{.action} pour valider ces paramètres.
 >>
 >> ![thunderbird](images/configuration-thunderbird-mxplan-05.png){.thumbnail .w-400}
 >>
 > **Étape 5**
->> Saisir le mot de passe associé à l'adresse e-mail, puis cliquez sur `Continuer`{.action} pour finaliser la configuration.
+>>
+>> Saisissez le mot de passe associé à l'adresse e-mail, puis cliquez sur `Continuer`{.action} pour finaliser la configuration.
 >>
 >> ![thunderbird](images/configuration-thunderbird-password-06.png){.thumbnail .w-400}
 >>
@@ -121,33 +128,34 @@ Suivez les étapes suivantes en cliquant sur les onglets ci-dessous :
 >
 > **Configuration POP**
 >
-> Si vous souhaitez une configuration POP pour votre adresse e-mail, remplacez les paramètres de **l'étape 4** par les suivants
+> Si vous souhaitez une configuration POP pour votre adresse e-mail, remplacez les paramètres de **l'étape 3** par les suivants :
 >
-> Paramètres du serveur de réception :<br>
-> - **Protocole** POP3
-> - **Serveur EUROPE (sortant)** : smtp.mail.ovh.net **ou** ssl0.ovh.net.
-> - **Serveur AMERIQUE/ASIE-PACIFIQUE (sortant)** : smtp.mail.ovh.ca.
+> Paramètres du serveur de réception :
+>
+> - **Protocole** : POP3
+> - **Nom d'hôte EUROPE (entrant)** : pop.mail.ovh.net **ou** ssl0.ovh.net
+> - **Nom d'hôte AMERIQUE/ASIE-PACIFIQUE (entrant)** : pop.mail.ovh.ca
 > - **Port** 995
-> - **Sécurité de la connexion** SSL/TLS
-> - **Méthode d'authentification** Mot de passe normal
-> - **Nom d'utilisateurs** votre adresse e-mail complète
+> - **Sécurité de la connexion** : SSL/TLS
+> - **Méthode d'authentification** : Mot de passe normal
+> - **Nom d'utilisateur** : Votre adresse e-mail complète
 
 ### Utiliser l'adresse e-mail
 
-Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
+Une fois votre adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des e-mails.
 
-OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis un navigateur Internet. Pour accéder au Webmail OVHcloud, cliquez sur [ce lien](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide « [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter) ».
 
 ### Modifier les paramètres existants
 
 Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
 
-1. Cliquez sur le menu « &#9776; » dans la barre horizontale supérieure.
-2. Cliquez sur `Paramètre des comptes`{.action}.
+1. Cliquez sur le menu `☰`{.action} dans la barre horizontale supérieure.
+2. Cliquez sur `Paramètres des comptes`{.action}.
 
 ![Thunderbird](images/configuration-thunderbird-mac-07.png){.thumbnail}
 
@@ -156,11 +164,11 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 ![thunderbird](images/configuration-thunderbird-mxplan-mac-08.png){.thumbnail .w-400}
 
 - Pour modifier les paramètres liés à **l'envoi** de vos e-mails, cliquez sur `Serveur sortant (SMTP)`{.action} tout en bas de la colonne de gauche.
-- Cliquez sur l'adresse e-mail concernée dans la liste , puis cliquez sur `Modifier`{.action}.
+- Cliquez sur l'adresse e-mail concernée dans la liste, puis cliquez sur `Modifier`{.action}.
 
 ![thunderbird](images/configuration-thunderbird-mxplan-mac-09.png){.thumbnail .w-400}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 > [!primary]
 >
