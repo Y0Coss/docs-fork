@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2025-09-15
+updated: 2025-09-18
 ---
 
 ## Objectif
@@ -67,7 +67,7 @@ Afin de limiter les risques de suppression accidentelle, il est nécessaire de d
 Afin de communiquer avec votre KMS, il est nécessaire de créer un certificat d'accès.
 Celui-ci sera utilisé pour toute interaction avec le KMS, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec celles-ci.
 
-Les étapes nécessaires pour créer votre certificat d'accès sont disponibles dans la [documentation associée](/pages/manage_and_operate/kms/okms-certificate-management)
+Les étapes nécessaires pour créer votre certificat d'accès sont disponibles dans la [documentation associée](/pages/manage_and_operate/kms/okms-certificate-management).
 
 ### Via les API
 
@@ -138,24 +138,24 @@ L'API attend les valeurs suivantes :
 Les tailles et opérations possibles en fonction du type de clé sont les suivantes :
 
 - **oct** :
-  - taille : 128, 192, 256
-  - opérations :
-    - encrypt, decrypt
-    - wrapKey, unwrapKey
+    - taille : 128, 192, 256
+    - opérations :
+        - encrypt, decrypt
+        - wrapKey, unwrapKey
 - **RSA** :
-  - taille : 2048, 3072, 4096
-  - opérations : sign, verify
+    - taille : 2048, 3072, 4096
+    - opérations : sign, verify
 - **EC** :
-  - taille : ne pas spécifier
-  - curve : P-256, P-384, P-521
-  - opérations : sign, verify
+    - taille : ne pas spécifier
+    - curve : P-256, P-384, P-521
+    - opérations : sign, verify
 
 #### Créer un certificat d'accès
 
 Afin de communiquer avec votre KMS, il est nécessaire de créer un certificat d'accès.
 Celui-ci sera utilisé pour toute interaction avec le KMS, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec celles-ci.
 
-Les étapes nécessaires pour créer votre certificat d'accès sont disponibles dans la [documentation associée](/pages/manage_and_operate/kms/okms-certificate-management)
+Les étapes nécessaires pour créer votre certificat d'accès sont disponibles dans la [documentation associée](/pages/manage_and_operate/kms/okms-certificate-management).
 
 ### Utiliser le KMS OVHcloud
 

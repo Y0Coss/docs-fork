@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2025-09-15
+updated: 2025-09-18
 ---
 
 ## Objective
@@ -66,7 +66,7 @@ To reduce the risks of an unwanted deletion, it is mandatory to disable a key be
 To communicate with your KMS, you will need to create an access certificate.
 This will be used for any interaction with the KMS, either to create encryption keys or to carry out operations with them.
 
-Necessary steps to create an access certificate are available on the [dedicated documentation](/pages/manage_and_operate/kms/okms-certificate-management)
+Necessary steps to create an access certificate are available on the [dedicated documentation](/pages/manage_and_operate/kms/okms-certificate-management).
 
 ### Via the API
 
@@ -154,7 +154,7 @@ Depending on the key type, the possible sizes and operations are:
 To communicate with your KMS, you will need to create an access certificate.
 This will be used for any interaction with the KMS, either to create encryption keys or to carry out operations with them.
 
-Necessary steps to create an access certificate are available on the [dedicated documentation](/pages/manage_and_operate/kms/okms-certificate-management)
+Necessary steps to create an access certificate are available on the [dedicated documentation](/pages/manage_and_operate/kms/okms-certificate-management).
 
 ### Use the OVHcloud KMS
 

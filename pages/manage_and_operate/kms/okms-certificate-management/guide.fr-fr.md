@@ -1,7 +1,7 @@
 ---
 title: "Générer un certificat d'accès OKMS"
 excerpt: "Gérez vos certificats d'accès pour vos produits de Data Security"
-updated: 2025-09-15
+updated: 2025-09-18
 ---
 
 ## Objectif
@@ -20,7 +20,7 @@ L'objectif de ce guide est de présenter les différentes étapes pour créer et
 Afin de communiquer avec votre domaine OKMS, il est nécessaire de créer un certificat d'accès.
 Les certificats d'accès à un domaine OKMS sont utilisés pour le produit **Key Management Service (KMS)**
 
-Celui-ci sera utilisé pour toute interaction avec le domaine, que ce soit pour créer des clés de chiffrement, effectuer des opérations avec celles-ci.
+Celui-ci sera utilisé pour toute interaction avec le domaine, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec celles-ci.
 Un certificat d'accès n'est valable que pour le domaine pour lequel il a été généré.
 
 ### Créer un certificat d'accès depuis le KMS
@@ -28,7 +28,7 @@ Un certificat d'accès n'est valable que pour le domaine pour lequel il a été 
 #### Depuis la console d'administration
 
 Il est possible de créer ce certificat depuis le menu dédié du KMS.
-Pour cela allez dans [l'espace client OVHcloud](/links/manager) en vous rendant dans le menu `Identité, Sécurité & Opérations`{.action} puis `Key Management Service`{.action} et cliquez sur le bouton `Générer un certificat d'accès`{.action}.
+Pour cela connectez-vous à [l'espace client OVHcloud](/links/manager), rendez-vous dans le menu `Identité, Sécurité & Opérations`{.action} puis `Key Management Service`{.action} et cliquez sur le bouton `Générer un certificat d'accès`{.action}.
 
 ![Créer un certificat](images/create_certificat_01.png){.thumbnail}
 
@@ -48,7 +48,7 @@ Si vous disposez de votre propre clé privée, il est possible de l'utiliser en 
 
 La deuxième partie du formulaire permet d'indiquer les [identités OVHcloud](/pages/manage_and_operate/iam/identities-management) associées au certificat permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
 
-Il est possible d'ajouter l'identitée `root` au certificat afin de ne pas être contraint par l'IAM OVHcloud.
+Il est possible d'ajouter l'identité `root` au certificat afin de ne pas être contraint par l'IAM OVHcloud.
 
 ![Créer un certificat](images/create_certificat_04.png){.thumbnail}
 
@@ -66,7 +66,7 @@ Il est ensuite nécessaire de télécharger la clé privée du certificat.
 
 ![Créer un certificat](images/create_certificat_05.png){.thumbnail}
 
-Enfin, il est possible de télécharger la clé publique du certificat depuis le dashboard.
+Enfin, il est possible de télécharger la clé publique du certificat depuis le tableau de bord.
 
 ![Créer un certificat](images/create_certificat_06.png){.thumbnail}
 
@@ -88,10 +88,10 @@ La génération de certificat se fait via l'API suivante :
 Il est nécessaire d'indiquer les informations suivantes :
 
 - **name** : le nom du certificat
-- **identityURNs** : liste des identités OVHcloud sous format d'URN qui seront fournies à l'IAM pour le calcul des droits d'accès
-- **description** : description du certificat (optionnel)
-- **certificateType** : Algorithme de signature du certificat (ECDSA ou RSA) - ECDSA par défaut (optionnel)
-- **validity** : durée de validité du certificat en jours - 365 jours par défaut (optionnel)
+- **identityURNs** : liste des identités OVHcloud sous un format URN qui seront fournies à l'IAM pour le calcul des droits d'accès
+- **description** : description du certificat (facultatif)
+- **certificateType** : Algorithme de signature du certificat (ECDSA ou RSA) - ECDSA par défaut (facultatif)
+- **validity** : durée de validité du certificat en jours - 365 jours par défaut (facultatif)
 
 **Exemple de création de certificat avec le compte root :**
 
@@ -200,9 +200,9 @@ La génération de certificat se fait via l'API suivante :
 Il est nécessaire d'indiquer les informations suivantes :
 
 - **name** : le nom du certificat
-- **identityURNs** : liste des identités OVHcloud sous format d'URN qui seront fournies à l'IAM pour le calcul des droits d'accès
-- **description** : description du certificat (optionnel)
-- **validity** : durée de validité du certificat en jours - 365 jours par défaut (optionnel)
+- **identityURNs** : liste des identités OVHcloud au format URN qui seront fournies à l'IAM pour le calcul des droits d'accès
+- **description** : description du certificat (facultatif)
+- **validity** : durée de validité du certificat en jours - 365 jours par défaut (facultatif)
 - **csr** : le contenu de la CSR
 
 > [!warning]

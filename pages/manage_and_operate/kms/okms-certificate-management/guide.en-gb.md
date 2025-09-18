@@ -1,7 +1,7 @@
 ---
 title: "Manage your OKMS access certificate"
 excerpt: "Manage your access certificate for your Data Security products"
-updated: 2025-09-16
+updated: 2025-09-18
 ---
 
 ## Objective
@@ -20,6 +20,7 @@ The purpose of this guide is to show you the steps to follow to configure and ma
 To communicate with your OKMS domain, you will need to create an access certificate.
 
 Access certificate to an OKMS domain are used for the **Key Management Service (KMS)**. This will be used for any interaction with the domain, either to create encryption keys or to carry out operations with them.
+
 An access certificate is only valid for the domain for which it was generated.
 
 ### Create an access certificate from the KMS
@@ -27,7 +28,7 @@ An access certificate is only valid for the domain for which it was generated.
 #### From the Control Panel
 
 It's possible to create this certificate from the dedicated entry of the KMS.
-For that, log into the [OVHcloud Control Panel](/links/manager) and access the administration console `Identity, Security & Operations`{.action}. Click on `Key Management Service`{.action}, then on `Generate an access certificate`{.action}.
+For that, log in to the [OVHcloud Control Panel](/links/manager) and access the administration console `Identity, Security & Operations`{.action}. Click on `Key Management Service`{.action}, then on `Generate an access certificate`{.action}.
 
 ![Create a certificate](images/create_certificat_01.png){.thumbnail}
 
@@ -47,7 +48,7 @@ If you own your own private key, it's possible to use it with a CSR.
 
 The second part of the form allows you to specify the [OVHcloud identities](/pages/manage_and_operate/iam/identities-management) associated with the certificate used to calculate access rights via the [OVHcloud IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 
-It is possible to add the ‘root’ identity to the certificate so as not to be constrained by the OVHcloud IAM.
+It is possible to add the `root` identity to the certificate so as not to be constrained by the OVHcloud IAM.
 
 ![Create a certificate](images/create_certificat_04.png){.thumbnail}
 
@@ -77,7 +78,7 @@ You can generate this certificate by letting OVHcloud generate the private key, 
 
 If you do not provide a CSR, OVHcloud will generate the access certificate along with a private key.
 
-You can generate a certificate via the following API:
+You can generate a certificate via the following API call:
 
 > [!api]
 >
@@ -189,7 +190,7 @@ Copy the value of the **certificatePEM** field to a **client.cert** file.
 
 If you have your own private key, it is possible to use it by providing a CSR.
 
-You can generate a certificate via the following API:
+You can generate a certificate via the following API call:
 
 > [!api]
 >
@@ -243,7 +244,7 @@ The API then returns the certificate creation status:
 }
 ```
 
-Copy the ID of the certificate and access its details via the API:
+Copy the ID of the certificate and access its details via the following API call:
 
 > [!api]
 >
