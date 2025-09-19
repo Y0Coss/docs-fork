@@ -86,7 +86,7 @@ In this example, I chose to create a container named *mst-dr-gra* in Gravelines,
 > 
 > Once you have created the container and the user, you will need to have several pieces of information that are important for continuation:
 >
-> - The name of your container: mst-dr-gra
+> - The name of your container: in our example, *mst-dr-gra*
 > - The URL of the container endpoint: [https://s3.gra.io.cloud.ovh.net/](https://s3.gra.io.cloud.ovh.net/)
 > - The **access key**
 > - The **secret key**
@@ -119,7 +119,7 @@ Add a NIC to your VM:
 
 Then reconfigure your gateway with the IP defined in the IPAM network creation.
 
-On my alpine vm:
+On my alpine VM:
 
 ![09 gateway setup](images/mst9.png){.thumbnail}
 

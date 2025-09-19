@@ -84,9 +84,9 @@ Dans cet exemple j'ai choisi de créer un container nommé *mst-dr-gra* à Grave
 
 > [!primary]
 >
-> Après avoir crée le container et l'utilisateur vous devez être en possession de plusieurs informations importantes pour la suite :
+> Après avoir créé le container et l'utilisateur, vous devez être en possession de plusieurs informations importantes pour la suite :
 >
-> - Le nom de votre container : mst-dr-gra
+> - Le nom de votre container : dans notre exemple, *mst-dr-gra*
 > - L'URL de l'endpoint du container : [https://s3.gra.io.cloud.ovh.net/](https://s3.gra.io.cloud.ovh.net/)
 > - L'**access key**
 > - La **secret key**
@@ -119,7 +119,7 @@ Ajoutez un NIC à votre VM :
 
 Reconfigurez ensuite votre gateway avec l'adresse IP définie dans la création du réseau IPAM.
 
-Sur ma vm alpine :
+Sur ma VM alpine :
 
 ![09 gateway setup](images/mst9.png){.thumbnail}
 
