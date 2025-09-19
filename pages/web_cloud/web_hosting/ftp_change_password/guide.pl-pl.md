@@ -1,7 +1,7 @@
 ---
 title: "Zmiana hasła do konta FTP"
 excerpt: "Dowiedz się, jak zmienić hasło dla użytkownika FTP utworzonego na Twoim hostingu"
-updated: 2024-02-29
+updated: 2025-09-19
 ---
 
 ## Wprowadzenie 
@@ -55,7 +55,7 @@ W zależności od pakietu [hostingowego OVHcloud](/links/web/hosting) zmiana has
 >
 > Nowe hasło powinno być zgodne z następującą **polityką haseł** :
 >
->- Minimum 8 znaki;
+>- Minimum 9 znaki;
 >- Maksymalnie 30 znaków;
 >- Przynajmniej jedna wielka litera;
 >- Przynajmniej jedna mała litera;
