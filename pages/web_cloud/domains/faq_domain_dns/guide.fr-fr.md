@@ -24,13 +24,41 @@ details[open]>summary::before {
 
 /// details | Comment puis-je souscrire à un nom de domaine chez OVHcloud ?
 
+Suivez ces étapes :
 
+1. Rendez-vous sur notre site web [OVHcloud](/links/website).
+2. Sur la page qui s'affiche et dans le champ prévu à cet effet, saisissez le nom de domaine que vous souhaitez réserver (par exemple : `domain.tld`), puis cliquez sur le bouton `Rechercher`{.action}.
+3. Sur la nouvelle page qui s'affiche, notre interface vous précisera si le nom de domaine choisi est disponible ou non à l'achat. S'il est déjà réservé avec la syntaxe que vous avez saisie, modifiez-le et relancez une nouvelle recherche de disponibilité.
+4. Une fois que vous avez trouvé un nom de domaine disponible, cliquez sur le bouton `Acheter`{.action}, puis sur le bouton `Poursuivre la commande`{.action} dans la colonne de droite.
+5. Sélectionnez les éventuelles options ou services que vous souhaitez souscrire en complément de votre nom de domaine, puis cliquez sur `Suivant`{.action} jusqu'à ce que le tunnel de commande vous invite à vous authentifier ou à créer un compte client OVHcloud.
+6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations de contact (propriétaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
+7. Sur la page `Récapitulatif de votre commande` et si nécessaire, vous pourrez modifier la configuration DNS qui s'appliquera à votre nom de domaine en cliquant sur le lien intitulé `Modifier la configuration`{.action}. Dès que vos modifications sont terminées, cliquez sur le bouton `Payer`{.action} pour accéder à la dernière étape de votre commande.
+
+Payez ensuite votre commande pour initier la réservation de votre nom de domaine et l'installation de vos services et options éventuellement souscrites en complément.
+
+Quelques instants plus tard, vous recevrez un e-mail de confirmation de votre commande.
+Vous pourrez ensuite administrer votre nom de domaine en vous connectant à votre [espace client OVHcloud](/links/manager).
 
 ///
 
 /// details | Comment puis-je acheter un nom de domaine sur le marché secondaire ?
 
+L'achat d'un nom de domaine sur le marché secondaire se passe de la même manière que la souscription d'un même nom de domaine.
 
+Suivez ces étapes :
+
+1. Rendez-vous sur notre site web [OVHcloud](/links/website).
+2. Sur la page qui s'affiche et dans le champ prévu à cet effet, saisissez le nom de domaine que vous souhaitez réserver (par exemple : `domain.tld`), puis cliquez sur le bouton `Rechercher`{.action}.
+3. Sur la nouvelle page qui s'affiche, notre interface vous précisera si le nom de domaine choisi est disponible ou non à l'achat. S'il est déjà réservé avec la syntaxe que vous avez saisie, modifiez-le et relancez une nouvelle recherche de disponibilité.
+4. Une fois que vous avez trouvé un nom de domaine disponible, cliquez sur le bouton `Acheter`{.action}, puis sur le bouton `Poursuivre la commande`{.action} dans la colonne de droite.
+5. Sélectionnez les éventuelles options ou services que vous souhaitez souscrire en complément de votre nom de domaine, puis cliquez sur `Suivant`{.action} jusqu'à ce que le tunnel de commande vous invite à vous authentifier ou à créer un compte client OVHcloud.
+6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations de contact (propriétaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
+7. Sur la page `Récapitulatif de votre commande` et si nécessaire, vous pourrez modifier la configuration DNS qui s'appliquera à votre nom de domaine en cliquant sur le lien intitulé `Modifier la configuration`{.action}. Dès que vos modifications sont terminées, cliquez sur le bouton `Payer`{.action} pour accéder à la dernière étape de votre commande.
+
+Payez ensuite votre commande pour initier la réservation de votre nom de domaine et l'installation de vos services et options éventuellement souscrites en complément.
+
+Quelques instants plus tard, vous recevrez un e-mail de confirmation de votre commande.
+Vous pourrez ensuite administrer votre nom de domaine en vous connectant à votre [espace client OVHcloud](/links/manager).
 
 ///
 
@@ -58,13 +86,27 @@ details[open]>summary::before {
 
 /// details | Comment puis-je corriger une faute de frappe dans mon nom de domaine ?
 
+Dès lors où un nom de domaine est souscrit, celui-ci est enregistré à partir des caractères que vous lui avez définis lors de sa commande. L'enregistrement s'effectue auprès du registre de l'extension de votre nom de domaine (par exemple : le registre des *.com*) et des frais de réservation s'appliquent côté bureau d'enregistrement (tel qu'OVHcloud).
 
+Un nom de domaine est une adresse unique sur Internet. (comme, par exemple, `ovhcloud.com`)
+Chaque changement dans ce nom, que ce soit un caractère ou une extension (.com, .fr,.net, etc.) en fait un nom de domaine complètement différent.
+
+Par conséquent, si vous avez fait une faute de frappe lors de votre commande, celle-ci ne pourra pas être modifiée ou corrigée. Vous devrez commander un nouveau nom de domaine indépendamment du précédent (sous réserve que le nouvel orthographe désiré ne soit pas déjà réservé par quelqu'un d'autre).
+
+Les noms de domaine sont considérés comme des produits personnalisés, car ils sont enregistrés spécifiquement pour un titulaire et bloqués pour les autres dès la commande. C’est pourquoi, une fois enregistrés, ils ne peuvent être remboursés.
 
 ///
 
 /// details | Comment modifier un nom de domaine déjà souscrit ?
 
+Dès lors où un nom de domaine est souscrit, celui-ci est enregistré à partir des caractères que vous lui avez définis lors de sa commande. L'enregistrement s'effectue auprès du registre de l'extension de votre nom de domaine (par exemple : le registre des *.com*) et des frais de réservation s'appliquent côté bureau d'enregistrement (tel qu'OVHcloud).
 
+Un nom de domaine est une adresse unique sur Internet. (comme, par exemple, `ovhcloud.com`)
+Chaque changement dans ce nom, que ce soit un caractère ou une extension (.com, .fr,.net, etc.) en fait un nom de domaine complètement différent.
+
+Par conséquent, si vous avez fait une erreur de saisie lors de votre commande, celle-ci ne pourra pas être modifiée ou corrigée. Vous devrez commander un nouveau nom de domaine indépendamment du précédent (sous réserve que le nouvel orthographe désiré ne soit pas déjà réservé par quelqu'un d'autre).
+
+Les noms de domaine sont considérés comme des produits personnalisés, car ils sont enregistrés spécifiquement pour un titulaire et bloqués pour les autres dès la commande. C’est pourquoi, une fois enregistrés, ils ne peuvent être remboursés.
 
 ///
 
@@ -82,7 +124,12 @@ details[open]>summary::before {
 
 /// details | Je n'ai pas reçu l'e-mail de validation des informations du titulaire associée à mon nom de domaine et celui-ci est suspendu, que faire ?
 
+Si vous n'avez pas reçu l'e-mail de validation du propriétaire de votre nom de domaine, assurez-vous de vérifier les points ci-dessous :
 
+1. L'adresse e-mail déclarée pour le titulaire du nom de domaine est valide et opérationnelle.
+2. L'e-mail de validation ne se trouve pas dans les courriers indésirables.
+
+Après avoir vérifié et confirmé les deux points ci-dessus, si vous ne parvenez toujours pas à récupérer l'e-mail de validation du titulaire, nous vous invitons à ouvrir [un ticket d'assistance depuis le Centre d'Aide](https://help.ovhcloud.com/csm?id=csm_get_help) pour demander le renvoi de cet e-mail.
 
 ///
 
