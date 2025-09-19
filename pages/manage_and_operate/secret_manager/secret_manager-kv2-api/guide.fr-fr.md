@@ -1,12 +1,12 @@
 ---
-title: "Utiliser le Secret Manager avec l'API REST"
-excerpt: "Accéder et gérer les secrets du Secret Manager avec l'API REST"
+title: "Utiliser le Secret Manager avec l'API Hashicorp Vault compatible"
+excerpt: "Accéder et gérer les secrets du Secret Manager avec l'API Hashicorp Vault compatible"
 updated: 2025-09-15
 ---
 
 ## Objectif
 
-L'objectif de ce guide est de présenter l'usage de l'API REST pour le Secret Manager.
+L'objectif de ce guide est de présenter l'usage de l'API Hashicorp Vault compatible pour le Secret Manager.
 
 ## Prérequis
 
@@ -22,16 +22,8 @@ Le Secret Manager est un produit vous permettant de stocker de manière sécuris
 Un secret est une collection de une ou plusieurs clés/valeurs regroupés au sein d'une version.
 Chaque modification d'un secret amène la création d'une nouvelle version de ce secret, permettant de remonter dans l'historique des modifications du secret.
 
-Les API REST sont un des deux jeux d'API offert par le Secret Manager avec les [API Hashicorp Vault KV2 compatible](/pages/manage_and_operate/secret_manager/secret_manager-kv2-api).
-Celles-ci sont conçues pour être similaires à l'ensemble des API OVHcloud ainsi que les API OKMS pour le Key Management Service.
-
-Les API REST peuvent être utiliser soit par les [API centralisée OVHcloud](/pages/manage_and_operate/api/apiv2), soit directement sur le domaine OKMS en région.
-La seule différence résidant dans le chemin d'API exact :
-
-- API centralisée OVHcloud : /v2/okms/resource/{okmsId}/secret/{path}
-- API régionalisée OKMS : /api/{okmsId}/v2/secret/{path}
-
-Cette documentation se concentrera sur les API du domaine OKMS en région.
+Les API Hashicorp Vault compatible sont un des deux jeux d'API offert par le Secret Manager avec les [API REST](/pages/manage_and_operate/secret_manager/secret_manager-rest-api).
+Celles-ci sont conçues pour être similaires aux API Hashicorp Vault afin d'assurer une compatibilité avec les applications déjà compatibles avec Hashicorp Vault.
 
 ### Communiquer avec le domaine OKMS
 
@@ -107,37 +99,23 @@ Vous pouvez maintenant utiliser l'interface utilisateur Swagger de manière inte
 
 Pour créer un secret il est possible d'utiliser l'API suivante :
 
-| **Méthode** |        **Chemin**        | **Description** |
-| :---------: | :----------------------: | :-------------: |
-|    POST     | /api/{okmsId}/v2/secret/ | Créer un secret |
+| **Méthode** |             **Chemin**              | **Description** |
+| :---------: | :---------------------------------: | :-------------: |
+|    POST     | /api/{okmsId}/v1/secret/data/{path} | Créer un secret |
 
+Le Path du secret devant être indiqué dans le chemin de l'API.
 L'API attend les valeurs suivantes :
 
-|        **Champ**         |                                       **Valeur**                                       |                                                **Description**                                                 |
-| :----------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
-|       cas_required       |                                         boléen                                         | Si activé, il est nécessaire de systématiquement préciser le numéro de version actuelle lors des modifications |
-|     custom_metadata      |                                          Json                                          |          Données complémentaires associées au secret. Ces données ne sont pas protégées par le secret          |
-| deactivate_version_after | [Duration String](https://developer.hashicorp.com/vault/docs/concepts/duration-format) |                               Durée après laquelle les versions sont désactivée                                |
-|       max_versions       |                                        Integer                                         |                                   Nombre de version maximale pour le secret                                    |
-|           path           |                                         String                                         |                                                Chemin du secret                                                |
-|         version          |                                          Json                                          |                         Contenu du secret. Il est possible d'avoir des JSON imbriqués                          |
+| **Champ** | **Valeur** |                        **Description**                        |
+| :-------: | :--------: | :-----------------------------------------------------------: |
+|   data    |    Json    | Contenu du secret. Il est possible d'avoir des JSON imbriqués |
+|    cas    |  Integer   |            (optionnel) Version actuelle du secret             |
 
 Par exemple
 
 ```json
 {
-  "metadata": {
-    "cas_required": true,
-    "custom_metadata": {
-      "project": "A",
-      "team": "X"
-    },
-    "deactivate_version_after": "10h30m10s",
-    "max_versions": 5
-  },
-  "path": "prod/database/MySQL",
-  "version": {
-    "data": {
+  "data": {
       "login": "admin",
       "password": "my_secret_password",
       "adress": {
@@ -147,8 +125,39 @@ Par exemple
         "30",
         "31"
       ]
-    }
+  },
+  "options": {
+      "cas": 0
   }
+}
+```
+
+Il est aussi possible d'ajouter des metadata au secret par l'API :
+
+| **Méthode** |               **Chemin**                |            **Description**             |
+| :---------: | :-------------------------------------: | :------------------------------------: |
+|    POST     | /api/{okmsId}/v1/secret/metadata/{path} | Mettre à jour les metadata d'un secret |
+
+L'API attend les valeurs suivantes :
+
+|        **Champ**         |                                       **Valeur**                                       |                                                **Description**                                                 |
+| :----------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
+|       cas_required       |                                         boléen                                         | Si activé, il est nécessaire de systématiquement préciser le numéro de version actuelle lors des modifications |
+|     custom_metadata      |                                          Json                                          |          Données complémentaires associées au secret. Ces données ne sont pas protégées par le secret          |
+| deactivate_version_after | [Duration String](https://developer.hashicorp.com/vault/docs/concepts/duration-format) |                               Durée après laquelle les versions sont désactivée                                |
+|       max_versions       |                                        Integer                                         |                                   Nombre de version maximale pour le secret                                    |
+
+Par exemple :
+
+```json
+{
+  "cas_required": true,
+  "custom_metadata": {
+    "project": "A",
+    "team": "X"
+  },
+  "deactivate_version_after": "10h30m10s",
+  "max_versions": 5
 }
 ```
 
@@ -156,11 +165,11 @@ Par exemple
 
 #### Mettre à jour les metadata et la configuration
 
-Une fois le secret créé, il est possible de mettre à jour les metadata du secret ou sa configuration.
+Une fois le secret créé, il est possible de mettre à jour les metadata du secret ainsi que sa configuration.
 
-| **Méthode** |           **Chemin**           |     **Description**     |
-| :---------: | :----------------------------: | :---------------------: |
-|     PUT     | /api/{okmsId}/v2/secret/{path} | Mettre à jour un secret |
+| **Méthode** |               **Chemin**                |            **Description**             |
+| :---------: | :-------------------------------------: | :------------------------------------: |
+|    PATCH    | /api/{okmsId}/v1/secret/metadata/{path} | Mettre à jour les metadata d'un secret |
 
 L'API attend les valeurs suivantes :
 
@@ -173,38 +182,52 @@ L'API attend les valeurs suivantes :
 
 Il est aussi possible de changer la configuration par défaut du domaine OKMS pour les valeurs **cas_required**, **deactivate_version_after** et **max_versions** par l'API :
 
-| **Méthode** |          **Chemin**           |                   **Description**                    |
-| :---------: | :---------------------------: | :--------------------------------------------------: |
-|     PUT     | /api/{okmsId}/v2/secretConfig | Configurer la configuration par défaut du domaine OKMS |
+| **Méthode** |           **Chemin**           |                   **Description**                    |
+| :---------: | :----------------------------: | :--------------------------------------------------: |
+|    POST     | /api/{okmsId}/v1/secret/config | Configurer la configuration par défaut du domaine OKMS |
 
 #### Créer une nouvelle version
 
 Il est aussi possible de modifier le contenu du secret, ce qui implique la création d'une nouvelle version pour ce secret.
 Les nouvelles versions peuvent être créés par l'API :
 
-| **Méthode** |               **Chemin**               |            **Description**             |
-| :---------: | :------------------------------------: | :------------------------------------: |
-|     PUT     |     /api/{okmsId}/v2/secret/{path}     |        Mettre à jour un secret         |
-|     PUT     | /api/{okmsId}/v2/secret/{path}/version | Créer une nouvelle version d'un secret |
-
-Que la modification des **data** du secret soit faite par l'API générale de mise à jour du secret ou l'API spécifique, une nouvelle version du secret est crée.
+| **Méthode** |             **Chemin**              |     **Description**     |
+| :---------: | :---------------------------------: | :---------------------: |
+|    PATCH    | /api/{okmsId}/v1/secret/data/{path} | Mettre à jour un secret |
 
 Un secret peut contenir autant de version que souhaité dans la limite maximum du paramètre **max_versions**
 Si le maximum de version est atteint, la plus ancienne version est automatiquement supprimée.
 
 #### Gérer les versions
 
-Il est possible de gérer les différentes versions du secret par l'API :
+Il est possible de gérer les différentes versions du secret par plusieurs API :
 
-| **Méthode** |                    **Chemin**                    |           **Description**            |
-| :---------: | :----------------------------------------------: | :----------------------------------: |
-|     PUT     | /api/{okmsId}/v2/secret/{path}/version/{version} | Mettre à jour la version d'un secret |
+| **Méthode** |              **Chemin**               |               **Description**               |
+| :---------: | :-----------------------------------: | :-----------------------------------------: |
+|    POST     | /api/{okmsId}/v1/secret/delete/{path} | Désactive les versions spécifiées du secret |
+|   DELETE    |  /api/{okmsId}/v1/secret/data/{path}  |   Désactive la dernière version du secret   |
 
-L'API attendant l'unique valeur :
+Les versions désactivés d'un secret sont encore présentes dans le Secret Manager mais leur contenu n'est plus accessible.
 
-| **Champ** |          **Valeur**           |                                                                                                                                                   **Description**                                                                                                                                                   |
-| :-------: | :---------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|   state   | active , deactivated, deleted | active : La valeur de cette version est accessible <br>deactivated : La valeur de cette version est encore présente dans le système mais n'est plus accessible tant que la version n'est pas réactivée <br>deleted : La valeur de cette version n'est plus présente dans le système et ne peut plus être restaurée. |
+Il est possible de réactiver une version par l'API :
+
+| **Méthode** |               **Chemin**                |               **Description**               |
+| :---------: | :-------------------------------------: | :-----------------------------------------: |
+|    POST     | /api/{okmsId}/v1/secret/undelete/{path} | Réactive les versions spécifiées du secret |
+
+Enfin il est possible de supprimer définitivement une version par l'API :
+
+| **Méthode** |               **Chemin**               |               **Description**               |
+| :---------: | :------------------------------------: | :-----------------------------------------: |
+|     PUT     | /api/{okmsId}/v1/secret/destroy/{path} | Supprime les versions spécifiées du secret |
+
+Il est aussi possible de supprimer définivement le secret en entier avec toutes ses versions :
+
+| **Méthode** |               **Chemin**               |               **Description**               |
+| :---------: | :------------------------------------: | :-----------------------------------------: |
+|     DELETE     | /api/{okmsId}/v1/secret/metadata/{path} | Supprime le secret et ses versions |
+
+Une version supprimée n'est plus présente dans le Secret Manager et ne peut plus être réactivée.
 
 ## Aller plus loin
 

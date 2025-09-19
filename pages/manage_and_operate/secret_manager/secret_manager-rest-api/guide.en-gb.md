@@ -111,7 +111,7 @@ To create a secret, you can use the following API:
 
 | **Method** |         **Path**         | **Description** |
 | :--------: | :----------------------: | :-------------: |
-|    POST    | /api/{okmsId}/v2/secret/ | Créer un secret |
+|    POST    | /api/{okmsId}/v2/secret/ | Create a Secret |
 
 The API expects the following values:
 
@@ -124,7 +124,7 @@ The API expects the following values:
 |           path           |                                         String                                         |                                             Secret path                                              |
 |         version          |                                          Json                                          |                          Secret content. It is possible to have nested JSON                          |
 
-For example
+For example :
 
 ```json
 {

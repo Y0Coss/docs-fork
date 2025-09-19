@@ -55,7 +55,7 @@ Puis indiquez le contenu du secret. Le secret doit contenir une liste de clés/v
 
 > [!primary]
 >
-> Il n'y a pas de limite dans le nombre de clé/valeur d'un secret, mais une limite d'au maximum x ko de données.
+> Il n'y a pas de limite dans le nombre de clé/valeur d'un secret, mais une limite d'au maximum 64 ko de données.
 
 Une fois le secret créé, celui-ci apparait dans la liste des secrets du Secret Manager.
 

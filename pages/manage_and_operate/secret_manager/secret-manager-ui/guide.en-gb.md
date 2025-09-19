@@ -54,7 +54,7 @@ Then indicate the content of the secret. The secret must contain a list of key-v
 
 > [!primary]
 >
-> There is no limit to the number of key-value pairs in a secret, but a maximum limit of x ko of data.
+> There is no limit to the number of key-value pairs in a secret, but a maximum limit of 64 ko of data.
 
 Once the secret is created, it appears in the list of secrets in the Secret Manager.
 
