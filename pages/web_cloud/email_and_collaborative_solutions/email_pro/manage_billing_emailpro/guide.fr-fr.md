@@ -63,7 +63,7 @@ Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bo
 
 ### Résilier la plateforme
 
-Après avoir supprimé les comptes e-mails, il est nécessaire de supprimer le ou les noms de domaine associés à votre plateforme E-mail Pro avant de la résilier. Pour cela, rendez-vous sur l'onglet `Domaines Associés`{.action}. Cliquer sur le bouton `...`{.action} sur la ligne du nom nom de domaine à supprimer, puis cliquez sur `supprimer ce domaine`{.action}.
+Après avoir supprimé les comptes e-mail, il est nécessaire de supprimer le ou les noms de domaine associés à votre plateforme E-mail Pro avant de la résilier. Pour cela, rendez-vous sur l'onglet `Domaines Associés`{.action}. Cliquez sur le bouton `...`{.action} sur la ligne du nom nom de domaine à supprimer, puis cliquez sur `Supprimer ce domaine`{.action}.
 
 ![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
