@@ -275,7 +275,7 @@ A geração 2 dos volumes High-Speed é otimizada para as cargas de trabalho mai
 >>
 >> Os tipos que terminam com -us são encriptados (LUKS).
 >>
->> [!warning]
+>> > [!warning]
 >> >
 >> > A criação de um volume **-luks** gera automaticamente uma chave dedicada.
 >> >
