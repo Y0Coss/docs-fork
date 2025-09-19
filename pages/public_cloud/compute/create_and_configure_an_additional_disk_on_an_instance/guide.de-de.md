@@ -146,7 +146,7 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >> >
 >> > Beim Erstellen eines **-luks** Datenträgers wird automatisch ein dedizierter Schlüssel erstellt.
 >> >
->> > Diesen Schlüssel nicht ändern oder löschen, wenn er mit einem Block Storage-Volume verknüpft ist. Auf diese Weise können die Daten auf diesem Volume und alle zugehörigen Snapshots dauerhaft nicht wiederhergestellt werden.
+>> > Dieser Schlüssel sollte nicht geändert oder gelöscht werden, wenn er mit einem Block Storage Volume verknüpft ist. Ansonsten können die Daten auf diesem Volume und alle zugehörigen Snapshots dauerhaft nicht wiederhergestellt werden.
 >> >
 >>
 >> Um ein einfaches Block Storage Volume zu erstellen, benötigen Sie 3 Elemente:
@@ -280,7 +280,7 @@ High Speed Volumes der zweiten Generation sind für die anspruchsvollsten Worklo
 >> >
 >> > Beim Erstellen eines **-luks** Datenträgers wird automatisch ein dedizierter Schlüssel erstellt.
 >> >
->> > Diesen Schlüssel nicht ändern oder löschen, wenn er mit einem Block Storage-Volume verknüpft ist. Auf diese Weise können die Daten auf diesem Volume und alle zugehörigen Snapshots dauerhaft nicht wiederhergestellt werden.
+>> > Dieser Schlüssel sollte nicht geändert oder gelöscht werden, wenn er mit einem Block Storage Volume verknüpft ist. Ansonsten können die Daten auf diesem Volume und alle zugehörigen Snapshots dauerhaft nicht wiederhergestellt werden.
 >> >
 >>
 >> In der Region verfügbare Volume-Typen auflisten:
