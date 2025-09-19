@@ -1,7 +1,7 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2025-06-04
+updated: 2025-09-08
 ---
 
 ## Objective
@@ -9,11 +9,6 @@ updated: 2025-06-04
 To protect customer services exposed on public IP addresses, OVHcloud offers a stateless firewall that is configured and integrated into the **Anti-DDoS infrastructure**: the Edge Network Firewall. It allows to limit service exposure to DDoS attacks, by dropping specified network flows coming from outside of the OVHcloud network.
 
 **This guide will show you how to configure the Edge Network Firewall for your services.**
-
-> [!warning]
->
-> **Warning**: Permanent Mitigation is reaching its End-Of-Life (EOL) and will be disabled permanently on September 8, 2025.
->
 
 > [!primary]
 >
@@ -165,29 +160,9 @@ For example, a packet for TCP port 80 will be intercepted by rule 2 and the rule
 
 ### Attack mitigation - scrubbing centre activity
 
-Our Anti-DDoS infrastructure (VAC) has two modes of operation: **automatic** and **permanent**. The mitigation process is done via the automated scrubbing centre. This is where our advanced technology takes a deep look at the packets and attempts to remove DDoS traffic while allowing legitimate traffic to pass through.
+Our Anti-DDoS infrastructure (VAC) operates automatically. The mitigation process is done via the automated scrubbing centre. This is where our advanced technology takes a deep look at the packets and attempts to remove DDoS traffic while allowing legitimate traffic to pass through.
 
-- **Automatic mitigation** is the default: All OVHcloud IPs are under automatic mitigation. Usually this is the best choice for your services. In case any malicious traffic is detected, the scrubbing centre activates. This state is indicated by the "Forced" status for a given IP address. At this time the Edge Network Firewall is also active. The situation comes back to normal when the attack is mitigated and no more suspicious activity is observed.
-
-- **Permanent mitigation** mode can be enabled or disabled via the OVHcloud Control Panel. With permanent mitigation, you permanently apply the first level of filtering so all traffic will always pass through the mitigation system before reaching the server. We do not recommend enabling this for longer periods of time unless you are experiencing latency jitter due to the scrubbing centre redirecting the traffic too frequently.
-
-Please note that compared to automatic mode, there is **no** increase in the level of protection when this mode is enabled.
-
-To enable it, follow these steps:
-
-- Open `Network`{.action} in the left-hand sidebar.
-- Open `Public IP Addresses`{.action}.
-
-| ![menu-ipv4](images/mitigation_menu.png) | 
-|:--:| 
-|  Next, click the `...`{.action} button to the right of the relevant IPv4. |
-
-
-| ![mitigation-option](images/mitigation_menu_step_2.png) | 
-|:--:| 
-|  Select `Mitigation: permanent mode`{.action}. |
-
-
+All OVHcloud IPs are under automatic mitigation. In case any malicious traffic is detected, the scrubbing centre activates. This state is indicated by the "Forced" status for a given IP address. At this time the Edge Network Firewall is also active. The situation comes back to normal when the attack is mitigated and no more suspicious activity is observed.
 
 > [!success]
 > **Tips**
@@ -201,11 +176,9 @@ To enable it, follow these steps:
 > Please note that our Anti-DDoS infrastructure cannot be disabled on a service. All OVHcloud products are delivered within the scope of protection and this cannot be changed.
 >
 
-
 ## Network Security Dashboard
 
 For detailed insight into detected attacks and the results of scrubbing centre activities, we encourage you to explore our [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard).
-
 
 ## Conclusion
 

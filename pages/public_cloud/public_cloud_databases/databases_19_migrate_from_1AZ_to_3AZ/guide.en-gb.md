@@ -167,7 +167,7 @@ Follow these instructions to delete the old 1-AZ service:
 >>
 >> > [!api]
 >> >
->> > @api {v1} /cloud DEL /cloud/project/{serviceName}/database/postgresql/{clusterId}
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/database/postgresql/{clusterId}
 >> >
 >>
 

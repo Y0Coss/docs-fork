@@ -1,7 +1,7 @@
 ---
 title: "Comment utiliser les politiques IAM via l’API OVHcloud"
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
-updated: 2025-07-17
+updated: 2025-09-08
 ---
 
 ## Objectif
@@ -335,7 +335,7 @@ Les conditions disponibles sont :
 
 |       Condition        |                         Opérateur                          | Type de donnée |            Description             |                    Exemple                    |
 | :--------------------: | :--------------------------------------------------------: | :------------: | :--------------------------------: | :-------------------------------------------: |
-|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |   YYYY-MM-DD   |  Filtre sur les jours calendaires  |  "date.Date(America/New_York)": "2024-12-25"  |
+|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |   YYYY-MM-DD   |  Filtre sur les jours calendaires  |  "date(America/New_York).Date": "2024-12-25"  |
 |  date(location).Hour   | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |      int       |       Filtre sur les heures        |    "date(Europe/Paris).Hour.IN" : "7,8,9"     |
 | date(location).WeekDay | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |     string     | Filtre sur les jours de la semaine | "date(Europe/Berlin).WeekDay.AFTER": "monday" |
 | resource.Tag(tag_key)  |              EQ <br>STARTS_WITH <br>ENDS_WITH              |     string     |        Filtre sur les tags         |       "resource.Tag(environment): "dev"       |
@@ -358,6 +358,16 @@ Les opérateurs disponibles pour les types de conditions sont :
 - **IN_RANGE** : La valeur doit être dans le subnet IP indiqué
 
 S'il n'est pas précisé, l'opérateur par défaut est **EQ**.
+
+#### Cas des politiques ciblant d'autres comptes clients OVHcloud
+
+Les politiques d'accès peuvent cibler d'autres comptes clients.
+Le compte destinataire de cette politique pourra gérer les droits ainsi reçus dans ses propres politiques d'accès, mais ne pourra jamais outrepasser les droits tels que défini dans la politique d'accès.
+
+Par exemple un compte **xx1111-ovh** donnant des droits `vps:apiovh:ips/*` au compte **xx2222-ovh**.
+Le compte **xx2222-ovh** pourra donner le droit `vps:apiovh:ips/delete` à ses propres utilisateurs, mais ne pourra jamais donner le droit `vps:apiovh:reboot`.
+
+L'accès au support restera réservé au compte propriétaire de la ressource.
 
 ### Identités
 

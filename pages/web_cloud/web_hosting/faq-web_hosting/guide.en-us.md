@@ -564,7 +564,7 @@ This error can also appear if an HTTP request ends in *timeout* on your website.
 
 The “Your request has been blocked” page may appear for a number of reasons (non-exhaustive list):
 
-- The request is made from an unupdated Internet browser (Firefox, Chrome, Safari, Edge, etc.).
+- The request is made from an unupdated web browser (Firefox, Chrome, Safari, Edge, etc.).
 - A very large number of requests, similar or not, are made in an extremely short time.
 - The request attempts to perform unauthorized actions on the shared infrastructure where your web hosting plan is located.
 
@@ -572,7 +572,7 @@ In this situation, several actions are required:
 
 - Check that your web browser is up to date.
 - Retrieve the URL called (for example: `https://www.domain.tld`) as well as all the information present on the page “Your request has been blocked” (`IP address`, `Date` and `Request ID`).
-- Send the recovered items to support by creating a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
+- Send this information to support by creating a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 If you are unsure about the changes you need to make, contact your webmaster or one of our [partners](/links/partner).
 
@@ -594,7 +594,7 @@ The “Your IP has been banned” page may appear for a number of reasons (non-e
 In this situation, several actions are required:
 
 - Retrieve the URL called (for example: `https://www.domain.tld`) as well as all the information present on the page “Your IP has been banned” (`IP address`, `Date` and `Request ID`).
-- Send the recovered items to support by creating a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
+- Send this information to support by creating a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 If you are unsure about the changes you need to make, contact your webmaster or one of our [partners](/links/partner).
 

@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja zapory systemowej"
 excerpt: "Hosting www: Aktywacja zapory systemowej"
-updated: 2024-09-05
+updated: 2025-08-22
 ---
 
 ## Wprowadzenie 

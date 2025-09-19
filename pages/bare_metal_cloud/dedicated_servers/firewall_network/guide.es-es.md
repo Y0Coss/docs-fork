@@ -1,7 +1,7 @@
 ---
 title: 'Activación y configuración del Edge Network Firewall'
 excerpt: 'Descubra cómo configurar el Edge Network Firewall para sus servicios'
-updated: 2025-06-04
+updated: 2025-09-08
 ---
 
 ## Objetivo
@@ -11,11 +11,6 @@ Para proteger los servicios dde sus clientes expuestos en direcciones IP públic
 Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el Network Firewall. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
 
 **Esta guía le mostrará cómo configurar el Edge Network Firewall para sus servicios.**
-
-> [!warning]
->
-> **Advertencia**: La mitigación permanente está llegando a su fin de vida útil (EOL) y se desactivará permanentemente el 8 de septiembre de 2025.
->
 
 > [!primary]
 >
@@ -169,27 +164,9 @@ Por ejemplo, la regla 2 interceptará un paquete para el puerto TCP 80 y no se a
 
 ### Mitigación de ataques: actividad del centro de limpieza
 
-Nuestra infraestructura anti-DDoS (VAC) dispone de dos modos de funcionamiento: **automático** y **permanente**. El proceso de mitigación se realiza a través del centro de limpieza automatizado. Aquí es donde nuestra tecnología avanzada analiza en profundidad los paquetes e intenta eliminar el tráfico DDoS, permitiendo al mismo tiempo el paso del tráfico legítimo.
+Nuestra infraestructura anti-DDoS (VAC) funciona automáticamente. El proceso de mitigación se realiza a través del centro de limpieza automatizado. Aquí es donde nuestra tecnología avanzada analiza en profundidad los paquetes e intenta eliminar el tráfico DDoS, permitiendo al mismo tiempo el paso del tráfico legítimo.
 
-- **Mitigación automática** es la opción por defecto: todas las IP de OVHcloud están sujetas a mitigación automática. Por lo general, esta es la mejor opción para sus servicios. En caso de que se detecte tráfico malicioso, se activa el centro de limpieza. Este estado se indica mediante el estado "Forzado" para una dirección IP determinada. En este momento, el Edge Network Firewall también está activo. La situación vuelve a la normalidad cuando se mitiga el ataque y no se observa ninguna actividad sospechosa.
-
-- **Mitigación permanente** puede activarse o desactivarse desde el área de cliente de OVHcloud. Con la mitigación permanente, usted aplica permanentemente el primer nivel de filtrado para que todo el tráfico pase siempre a través del sistema de mitigación antes de llegar al servidor. No se recomienda habilitar esta opción durante períodos de tiempo más largos, a menos que experimente fluctuaciones de latencia debido a que el centro de limpieza redirige el tráfico con demasiada frecuencia.
-
-Tenga en cuenta que, en comparación con el modo automático, el nivel de protección **no** aumenta cuando este modo está activado.
-
-Para activarla, siga estos pasos:
-
-- Haga clic en el menú `Bare Metal Cloud`{.action}.
-- Vaya a `Network`{.action} en la columna izquierda.
-- Acceda a la sección `IP`{.action}.
-
-| ![menu-ipv4](images/mitigation_menu.png) |
-|:--:|
-| A continuación, haga clic en el botón `...`{.action} situado a la derecha de la IPv4 correspondiente. |
-
-| ![mitigación-opción](images/mitigation_menu_step_2.png) |
-|:--:|
-| Seleccione `Mitigación: modo permanente`{.action}. |
+Todas las IP de OVHcloud están sujetas a mitigación automática. En caso de que se detecte tráfico malicioso, se activa el centro de limpieza. Este estado se indica mediante el estado "Forzado" para una dirección IP determinada. En este momento, el firewall de red perimetral también está activo. La situación vuelve a la normalidad cuando se mitiga el ataque y no se observa ninguna actividad sospechosa.
 
 > [!success]
 > **Sugerencias**
@@ -215,4 +192,4 @@ Después de leer este tutorial, debería ser capaz de configurar el Edge Network
 
 - [Protección de un servidor de juegos con el firewall de aplicaciones](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

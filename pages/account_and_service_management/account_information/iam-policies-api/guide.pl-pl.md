@@ -1,7 +1,7 @@
 ---
 title: "Jak korzystać z zasad IAM przy użyciu interfejsu API OVHcloud (EN)"
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2025-07-17
+updated: 2025-09-08
 ---
 
 ## Objective
@@ -333,7 +333,7 @@ The available conditions are:
 
 |       Condition        |                         Operator                          | Data Type |            Description             |                   Example                   |
 | :--------------------: | :--------------------------------------------------------: | :--------: | :--------------------------------: | :-----------------------------------------: |
-|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |  YYYY-MM-DD  |  Filter on calendar days   | "date.Date(America/New_York)": "2024-12-25" |
+|  date(location).Date   |               EQ <br>BEFORE <br>AFTER <br>IN               |  YYYY-MM-DD  |  Filter on calendar days   | "date(America/New_York).Date": "2024-12-25" |
 |  date(location).Hour   | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |     int      |       Filter on hours        |   "date(Europe/Paris).Hour.IN" : "7,8,9"    |
 | date(location).WeekDay | EQ <br>BEFORE <br>AFTER <br>GE <br>LE <br>GT <br>LT <br>IN |    string    | Filter on days of the week | "date(Europe/Berlin).WeekDay.AFTER": "monday" |
 | resource.Tag(tag_key)  |              EQ <br>STARTS_WITH <br>ENDS_WITH              |    string    |        Filter on tags         |      "resource.Tag(environment): "dev"      |
@@ -356,6 +356,16 @@ The available operators for condition types are:
 - **IN_RANGE**: The value must be in the specified IP subnet
 
 If not specified, the default operator is **EQ**.
+
+#### Policies targeting other OVHcloud customer accounts
+
+Access policies can target other OVHcloud customer accounts.  
+The targeted account of this policy will be able to manage the rights received that way on its own policies, but will never be able to override the rights set on the access policy.
+
+For example, an account **xx1111-ovh** gives rights on `vps:apiovh:ips/*` to account **xx2222-ovh**:  
+Account **xx2222-ovh** will be able to give the right `vps:apiovh:ips/delete` to its own users, but will never be able to grant the right `vps:apiovh:reboot`.
+
+Access to the support will still be reserved to the owner of the resource.
 
 ### Identities
 

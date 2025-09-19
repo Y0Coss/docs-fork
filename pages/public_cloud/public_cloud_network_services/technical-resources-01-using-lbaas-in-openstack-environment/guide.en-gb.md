@@ -327,4 +327,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Join our community of users on <https://community.ovh.com/en/>.
 
-Join our [Discord](https://discord.gg/PwPqWUpN8G) to discuss with the OVHcloud team and other users.
+Join our [Discord](https://discord.gg/ovhcloud) to discuss with the OVHcloud team and other users.

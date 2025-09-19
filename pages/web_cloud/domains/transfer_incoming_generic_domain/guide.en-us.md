@@ -10,7 +10,7 @@ updated: 2025-04-28
 
 Your domain name is currently managed by another **registrar** and you want to move it to OVHcloud? You can do this by following a transfer procedure.
 
-By transferring your domain name, you will its **registrar**. You can transfer your domain name to OVHcloud by creating an order. The transfer process usually takes between one and ten days.
+By transferring your domain name, you will change its **registrar**. You can transfer your domain name to OVHcloud by creating an order. The transfer process usually takes between one and ten days.
 
 **This guide explains how to transfer a generic domain name to OVHcloud.**
 

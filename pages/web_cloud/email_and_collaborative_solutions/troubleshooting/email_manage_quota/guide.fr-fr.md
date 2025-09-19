@@ -1,7 +1,7 @@
 ---
 title: "Gérer l'espace de stockage d'un compte e-mail"
 excerpt: "Découvrez comment gérer et optimiser l'espace de stockage d'une adresse e-mail "
-updated: 2025-08-12
+updated: 2025-08-19
 ---
 
 ## Objectif
@@ -12,12 +12,12 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 
 ## Prérequis
 
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Disposer d'une solution e-mail OVHcloud préalablement configurée, parmi les suivantes :
     - **MX Plan** proposée avec nos [offres d’hébergement web](/links/web/hosting) ou incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting).
     - [Exchange](/links/web/emails).
     - [Email Pro](/links/web/email-pro).
     - [Zimbra](/links/web/emails-zimbra).
-- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mails concernées.
 
 > [!primary]
@@ -35,7 +35,7 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 >
 > - Depuis l'onglet `Informations Générales`{.action}, relevez la technologie utilisée sous la mention **Webmail** présente dans l'encadré `Abonnement`{.action} sous `Webmail`{.action}.
 >
-> ![MX plan](images/technology-email.png){.thumbnail .w-500}
+> ![MX plan](images/technology-email.png){.thumbnail}
 
 ## En pratique <a name="instructions"></a>
 
@@ -74,7 +74,7 @@ Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la part
 > **Zimbra**
 >>
 >> Cliquez sur `Zimbra Mail`{.action}. Positionnez-vous sur l'onglet `Compte e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Vous pouvez observer, dans la colonne `Quota`, la consommation en cours du stockage de votre adresse e-mail.<br><br>
->> ![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
+>>![email](images/email-quota-quotacontrolpanel04.png){.thumbnail}<br>
 >>
 
 #### Depuis le webmail <a name="quotawebmail"></a>
@@ -89,13 +89,13 @@ Pour vous connecter au webmail, rendez-vous sur la page [Webmail](/links/web/ema
 >>
 > **Roundcube** : **MX Plan**
 >>
->> Lorsque vous êtes connecté au webmail Roundcube, le quota est visible dans la partie inférieure gauche, matérialisé par un camembert et le pourcentage consommé.<br><br>
+>> Lorsque vous êtes connecté au webmail Roundcube, le quota est visible dans la partie inférieure gauche, matérialisé par un diagramme circulaire et le pourcentage consommé.<br><br>
 >>![email](images/email-quota-webmail02.png){.thumbnail}<br>
 >>
 > **Zimbra** : **MX Plan** / **Zimbra Starter** / **Zimbra Pro**
 >>
->> Lorsque vous êtes connecté au webmail Zimbra, le quota est visible dans la partie inférieure gauche, matérialisé par un camembert et le pourcentage consommé.<br><br>
->> ![email](images/email-quota-webmail03.png){.thumbnail}<br>
+>> Lorsque vous êtes connecté au webmail Zimbra, cliquez sur la roue crantée `&#9881;` en haut à droite de votre interface, puis cliquez sur `Paramètres`{.action}. Dans l'onglet `Général`{.action}, le quota utilisé est visible sous la mention « Espace de rangement ».<br><br>
+>>![email](images/email-quota-webmail03.png){.thumbnail}<br>
 >>
 
 ### 2- **Optimiser** son compte e-mail <a name="optimise"></a>
@@ -157,7 +157,8 @@ Lorsque vous avez configuré votre adresse e-mail sur votre client de messagerie
 
 ![email](images/email-quota-step03-archive.png){.thumbnail}
 
-Si vous le souhaitez, il est possible de libérer l'espace de stockage de votre compte e-mail en stockant vos e-mails directement sur votre ordinateur. Pour cela il vous sera necessaire de faire appel à un logiciel de messagerie installé sur votre ordinateur. 
+Si vous le souhaitez, il est possible de libérer l'espace de stockage de votre compte e-mail en stockant vos e-mails directement sur votre ordinateur. Pour cela il vous sera necessaire de faire appel à un logiciel de messagerie installé sur votre ordinateur.
+
 En effet, le logiciel de messagerie aura pour rôle de convertir vos e-mails en fichiers, pour pouvoir les stocker sur votre ordinateur. Il est néanmoins nécessaire de paramétrer la fonction « archive » de votre logiciel de messagerie. Les e-mails seront alors dans un dossier « local » et non directement sur le serveur de votre compte e-mail.
 
 Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration pour les clients de messagerie utilisant:
@@ -236,7 +237,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 > [!tabs]
 > **MX Plan**
 >>
->> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Email Pro** de 10 Go](/links/web/email-pro), [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange) ou [**Zimbra** de 15 Go ou 50 Go](/links/web/emails-zimbra). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ». 
+>> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Email Pro** de 10 Go](/links/web/email-pro), [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange) ou [**Zimbra** de 15 Go ou 50 Go](/links/web/emails-zimbra). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ».
 >>
 > **Email Pro**
 >>

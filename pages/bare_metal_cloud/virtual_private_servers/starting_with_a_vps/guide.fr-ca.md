@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec un VPS
 excerpt: "Apprenez à gérer un VPS dans votre espace client et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
-updated: 2025-08-07
+updated: 2025-09-11
 ---
 
 ## Objectif
@@ -16,6 +16,11 @@ Un serveur privé virtuel (VPS) est un serveur dédié virtualisé qui vous offr
 
 - Disposer d'une offre [VPS](/links/bare-metal/vps) active dans votre espace client OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
+
+> [!warning]
+> Certaines fonctionnalités VPS mentionnées sur cette page ne sont pas disponibles dans les Local Zones OVHcloud.
+>
+> Veuillez visiter notre [page Web des Local Zones](/links/bare-metal/vps-lz) pour obtenir plus d'informations.
 
 ## En pratique
 
@@ -120,7 +125,7 @@ Ces options font référence à des services VPS supplémentaires pour les sauve
 >>
 > Backup automatisé
 >>
->> Une sauvegarde quotidienne du système (hors disques additionnels) est réalisée automatiquement et conservée durant 24 heures. En passant à l'option « **Sauvegarde automatique Premium** », vous disposerez des 7 dernières sauvegardes quotidiennes de votre VPS, que vous pourrez utiliser pour des montages et des restaurations.  
+>> Une sauvegarde quotidienne du système (hors disques additionnels) est réalisée automatiquement et conservée durant 24 heures (applicable uniquement aux services commandés à partir du 7 août 2025). En passant à l'option « **Sauvegarde automatique Premium** », vous disposerez des 7 dernières sauvegardes quotidiennes de votre VPS, que vous pourrez utiliser pour des montages et des restaurations.  
 >> Par rapport aux snapshots manuels, cette fonctionnalité augmente la sécurité des données en créant plusieurs points de restauration à intervalles réguliers.
 >>
 

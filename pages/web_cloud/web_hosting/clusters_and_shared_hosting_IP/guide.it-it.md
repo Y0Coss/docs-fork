@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web - Lista degli indirizzi IP per cluster"
 excerpt: "Questa guida ti mostra comme tutti gli indirizzi IP disponibili con i nostri hosting Web"
-updated: 2025-07-08
+updated: 2025-09-06
 ---
 
 ## Obiettivo
@@ -27,33 +27,26 @@ In questa guida sono elencati tutti gli indirizzi IP degli hosting Web OVHcloud.
 
 ## Procedura
 
-Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **3** passi.
 
 > [!tabs]
-> **Step 1**
+> **Passaggio 1**
 >>
 >> Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>
-> **Step 2**
+> **Passaggio 2**
 >>
 >> Clicca sul menu `Hosting`{.action} e seleziona l’hosting Web interessato.
 >>
 >> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
 >>
-> **Step 3**
+> **Passaggio 3**
 >>
->> Nella nuova pagina clicca sulla scheda `FTP - SSH`{.action}. 
+>> Nel riquadro **Informazioni generali** della pagina che appare, recupera il numero del cluster sotto la dicitura **Cluster** (3 cifre comprese tra `0` e `9`).
 >>
->> ![FTP-SSH](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ftp-ssh.png){.thumbnail}
->>
-> **Step 4**
->>
->> Nella nuova pagina, recupera il numero di cluster dell’hosting Web su questa pagina come **Server FTP e SFTP** (3 cifre comprese tra `0` e `9`).
->>
->> ![FTP-SSH find cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/find-cluster-ftp-ssh.png){.thumbnail}
->>
+>> ![Numeri del cluster e del filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-cluster-and-filer.png){.thumbnail}
 
 ### Cluster 002
 
