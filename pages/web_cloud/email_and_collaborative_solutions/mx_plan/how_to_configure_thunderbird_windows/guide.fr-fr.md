@@ -57,7 +57,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
     2. Cliquez sur `Nouveau Compte`{.action}.
     3. Cliquez sur `Adresse E-mail`{.action}.
 
-![thunderbird](images/configuration-thunderbird-win-01.png){.thumbnail .w-400}
+![thunderbird](images/configuration-thunderbird-win-01.png){.thumbnail .w-600}
 
 > [!warning]
 >
@@ -70,58 +70,58 @@ Suivez les étapes de configuration en cliquant successivement sur les **5** ong
 >>
 >> Dans la fenêtre qui s'affiche, saisissez les 2 informations suivantes :
 >>
->> - Votre nom complet (nom d'affichage).
->> - L'adresse e-mail à paramétrer.
+>>  - Votre nom complet (nom d'affichage).
+>>  - L'adresse e-mail à paramétrer.
 >>
 >> Cliquez sur `Continuer`{.action} pour compléter les paramètres.
 >>
->> ![thunderbird](images/configuration-thunderbird-mxplan-02.png){.thumbnail .w-400}
+>> ![thunderbird](images/configuration-thunderbird-mxplan-02.png){.thumbnail .w-600}
 >>
 > **Étape 2**
 >>
 >> Lorsque Thunderbird détecte un nom de domaine OVHcloud, une configuration automatique relative à l'offre MX Plan est proposée :
 >>
->> - Si les informations sont correctes, cliquez sur `Continuer`{.action} et passez à l'étape 5.
->> - Sinon, cliquez sur `MODIFIER LA CONFIGURATION`{.action} pour effectuer une configuration manuelle.
+>>  - Si les informations sont correctes, cliquez sur `Continuer`{.action} et passez à l'étape 5.
+>>  - Sinon, cliquez sur `MODIFIER LA CONFIGURATION`{.action} pour effectuer une configuration manuelle.
 >>
->> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-400}
+>> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-600}
 >>
 > **Étape 3**
 >>
 >> Paramètres du serveur de réception :
 >>
->> - **Protocole** : IMAP
->> - **Nom d'hôte EUROPE (entrant)** : imap.mail.ovh.net **ou** ssl0.ovh.net
->> - **Nom d'hôte AMERIQUE/ASIE-PACIFIQUE (entrant)** : imap.mail.ovh.ca
->> - **Port** : 993
->> - **Sécurité de la connexion** : SSL/TLS
->> - **Méthode d'authentification** : Mot de passe normal
->> - **Nom d'utilisateur** : Votre adresse e-mail complète
+>>  - **Protocole** : IMAP
+>>  - **Nom d'hôte EUROPE (entrant)** : imap.mail.ovh.net **ou** ssl0.ovh.net
+>>  - **Nom d'hôte AMERIQUE/ASIE-PACIFIQUE (entrant)** : imap.mail.ovh.ca
+>>  - **Port** : 993
+>>  - **Sécurité de la connexion** : SSL/TLS
+>>  - **Méthode d'authentification** : Mot de passe normal
+>>  - **Nom d'utilisateur** : Votre adresse e-mail complète
 >>
->> ![thunderbird](images/configuration-thunderbird-mxplan-04.png){.thumbnail .w-400}
+>> ![thunderbird](images/configuration-thunderbird-mxplan-04.png){.thumbnail .w-600}
 >>
 > **Étape 4**
 >>
 >> Paramètres du serveur d'envoi :
 >>
->> - **Protocole** : SMTP
->> - **Serveur EUROPE (sortant)** : smtp.mail.ovh.net **ou** ssl0.ovh.net
->> - **Serveur AMERIQUE/ASIE-PACIFIQUE (sortant)** : smtp.mail.ovh.ca
->> - **Port** : 587
->> - **Sécurité de la connexion** : STARTTLS
->> - **Méthode d'authentification** : Mot de passe normal
->> - **Nom d'utilisateur** : Votre adresse e-mail complète
+>>  - **Protocole** : SMTP
+>>  - **Serveur EUROPE (sortant)** : smtp.mail.ovh.net **ou** ssl0.ovh.net
+>>  - **Serveur AMERIQUE/ASIE-PACIFIQUE (sortant)** : smtp.mail.ovh.ca
+>>  - **Port** : 587
+>>  - **Sécurité de la connexion** : STARTTLS
+>>  - **Méthode d'authentification** : Mot de passe normal
+>>  - **Nom d'utilisateur** : Votre adresse e-mail complète
 >> 
->> 1. Cliquez sur `Tester`{.action} pour vérifier les paramètres saisis.
->> 2. Cliquez sur `Continuer`{.action} pour valider ces paramètres.
+>> 1\. Cliquez sur `Tester`{.action} pour vérifier les paramètres saisis.
+>> 2\. Cliquez sur `Continuer`{.action} pour valider ces paramètres.
 >>
->> ![thunderbird](images/configuration-thunderbird-mxplan-05.png){.thumbnail .w-400}
+>> ![thunderbird](images/configuration-thunderbird-mxplan-05.png){.thumbnail .w-600}
 >>
 > **Étape 5**
 >>
 >> Saisissez le mot de passe associé à l'adresse e-mail, puis cliquez sur `Continuer`{.action} pour finaliser la configuration.
 >>
->> ![thunderbird](images/configuration-thunderbird-password-06.png){.thumbnail .w-400}
+>> ![thunderbird](images/configuration-thunderbird-password-06.png){.thumbnail .w-600}
 >>
 
 > [!primary]
@@ -157,16 +157,16 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 1. Cliquez sur le menu `☰`{.action} dans la barre horizontale supérieure.
 2. Cliquez sur `Paramètres des comptes`{.action}.
 
-![Thunderbird](images/configuration-thunderbird-win-07.png){.thumbnail}
+![Thunderbird](images/configuration-thunderbird-win-07.png){.thumbnail .w-600}
 
 - Pour modifier les paramètres liés à la **réception** de vos e-mails, cliquez sur `Paramètres serveur`{.action} dans la colonne de gauche sous votre adresse e-mail.
 
-![thunderbird](images/configuration-thunderbird-mxplan-win-08.png){.thumbnail .w-400}
+![thunderbird](images/configuration-thunderbird-mxplan-win-08.png){.thumbnail .w-600}
 
 - Pour modifier les paramètres liés à **l'envoi** de vos e-mails, cliquez sur `Serveur sortant (SMTP)`{.action} tout en bas de la colonne de gauche.
 - Cliquez sur l'adresse e-mail concernée dans la liste, puis cliquez sur `Modifier`{.action}.
 
-![thunderbird](images/configuration-thunderbird-mxplan-win-09.png){.thumbnail .w-400}
+![thunderbird](images/configuration-thunderbird-mxplan-win-09.png){.thumbnail .w-600}
 
 ## Aller plus loin <a name="go-further"></a>
 
