@@ -143,9 +143,9 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >>
 >> > [!warning]
 >> >
->> > Creating a **-luks** volume automatically generates a dedicated key in Barbican.
+>> > Creating a **-luks** volume automatically generates a dedicated key.
 >> >
->> > Do not modify or delete this key if it is linked to one of your block volumes. Doing so will make the data on that volume permanently unrecoverable.
+>> > Do not modify or delete this key if it is linked to a block volume. Doing so will make the data on that volume and all its snapshots permanently unrecoverable.
 >> >
 >>
 >> To create a simple block storage volume, you need 3 elements:
@@ -277,9 +277,9 @@ Generation 2 High-Speed volumes are optimized for the most demanding workloads. 
 >>
 >> > [!warning]
 >> >
->> > Creating a **-luks** volume automatically generates a dedicated key in Barbican.
+>> > Creating a **-luks** volume automatically generates a dedicated key.
 >> >
->> > Do not modify or delete this key if it is linked to one of your block volumes. Doing so will make the data on that volume permanently unrecoverable.
+>> > Do not modify or delete this key if it is linked to a block volume. Doing so will make the data on that volume and all its snapshots permanently unrecoverable.
 >> >
 >>
 >> List the volume types available in the region:
