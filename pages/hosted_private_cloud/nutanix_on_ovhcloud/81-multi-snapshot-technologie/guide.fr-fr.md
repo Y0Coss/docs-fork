@@ -119,11 +119,11 @@ Ajoutez un NIC à votre VM :
 
 Reconfigurez ensuite votre gateway avec l'adresse IP définie dans la création du réseau IPAM.
 
-Sur ma VM alpine :
+Par exemple sur une VM Alpine :
 
 ![09 gateway setup](images/mst9.png){.thumbnail}
 
-J'ajoute :
+On ajoute :
 
 ```bash
 auto eth3
@@ -140,7 +140,7 @@ Redémarrage des services réseau :
 
 1. Connectez-vous à **Prism Central** en tant qu’**administrateur**.
 1. Rendez-vous dans **Admin Center → Marketplace**.
-1. Dans *Nutanix Apps*, cliquez sur `Get`{.action} pour *Multicloud Snapshot Technology*.
+1. Dans **Nutanix Apps***, cliquez sur `Get`{.action} pour **Multicloud Snapshot Technology**.
 
 ![11 get mst](images/mst11.png){.thumbnail}
 
@@ -179,30 +179,30 @@ Une fois MST déployé et connecté à votre bucket Object Storage, vous pouvez 
 
 1. Depuis **Prism Central**, accédez à **Protection Policies**, puis créez une politique de protection.
 
-![16 Create Protection policies](images/mst16.png){.thumbnail} 
+    ![16 Create Protection policies](images/mst16.png){.thumbnail} 
 
 2. Définissez le `policy name` et renseignez votre cluster dans le champ `primary location`.
-Dans le cadre `Recovery Location`, gardez Local AZ et sélectionnez le container (Bucket) précédemment configuré.
+    Dans le cadre `Recovery Location`, gardez Local AZ et sélectionnez le container (Bucket) précédemment configuré.
 
-![17 Create Protection policies](images/mst17.png){.thumbnail} 
+    ![17 Create Protection policies](images/mst17.png){.thumbnail} 
  
 3. Définissez une planification (Add Schedule) :
 
-- La fréquence de création de snapshots (par défaut toutes les heures).
-- Le nombre de Recovery Points à conserver localement.
-- Le nombre de Recovery Points à conserver sur le **container S3 OVHcloud**.
+    - La fréquence de création de snapshots (par défaut toutes les heures).
+    - Le nombre de Recovery Points à conserver localement.
+    - Le nombre de Recovery Points à conserver sur le **container S3 OVHcloud**.
 
-![18 Define Schedule](images/mst18.png){.thumbnail} 
+    ![18 Define Schedule](images/mst18.png){.thumbnail} 
 
 4. Protéger les VM :
 
-- Selectionnez les VM à protéger puis dans le menu `action` → `data protection`, cliquez sur `Protect`{.action}.
+    Selectionnez les VM à protéger puis dans le menu `action` → `data protection`, cliquez sur `Protect`{.action}.
 
-![19 Protect VMs](images/mst19.png){.thumbnail}
+    ![19 Protect VMs](images/mst19.png){.thumbnail}
 
-- Selectionnez ensuite la Protection Policy précédement crée :
+    Selectionnez ensuite la Protection Policy précédement crée :
 
-![20 Protect VMs PP](images/mst20.png){.thumbnail}
+    ![20 Protect VMs PP](images/mst20.png){.thumbnail}
 
 ### Restauration
 
