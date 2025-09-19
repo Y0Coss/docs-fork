@@ -1,7 +1,7 @@
 ---
 title: "Alterar a palavra-passe de um utilizador FTP"
 excerpt: "Descubra como alterar a palavra-passe de um utilizador FTP criado num alojamento web da OVHcloud"
-updated: 2024-02-29
+updated: 2025-09-19
 ---
 
 ## Objetivo
@@ -57,7 +57,7 @@ clique no botão `...`{.action} à direita do utilizador FTP em questão, depois
 >
 > A sua nova password deverá respeitar a **política das palavras-passe** seguinte :
 >
->- Mínimo de 8 caracteres;
+>- Mínimo de 9 caracteres;
 >- Máximo de 30 caracteres;
 >- Pelo menos uma letra maiúscula;
 >- Pelo menos uma letra minúscula;
