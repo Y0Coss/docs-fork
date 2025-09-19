@@ -1,7 +1,7 @@
 ---
 title: Concepts - Primary IP et Additional IP
 excerpt: Comprendre les différences entre les adresses IP Primary et Additional, et découvrir leurs cas d'utilisation.
-updated: 2025-09-12
+updated: 2025-09-19
 ---
 
 ## Objectif
@@ -13,6 +13,10 @@ Dans l'univers Bare Metal, vous pouvez utiliser les adresses Primary IP de vos s
 ## Adresses IP chez OVHcloud : Primary, Additional
 
 OVHcloud propose différents types d'adresses IP, chacune conçue pour des cas d'utilisation spécifiques et offrant différents niveaux de flexibilité et de fonctionnalité. Comprendre les distinctions entre Primary IP et Additional IP est crucial pour une gestion de réseau et un déploiement de services efficaces.
+
+Dans l’univers Public Cloud, nous proposons également des adresses IP flottantes (**Floating IP**) natives au cloud, avec un modèle de facturation à l’usage.  
+Vous trouverez plus d’informations sur les différences entre les Floating IP et les Additional IP dans [ce guide](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
+
 
 ## Adresses Primary IP
 
@@ -35,7 +39,7 @@ Les adresses Primary IP sont fondamentales pour les services OVHcloud, fournissa
 
 ## Additional IP Addresses
 
-Les adresses Additional IP offrent une flexibilité accrue et sont agnostiques à l'infrastructure, ce qui signifie qu'elles ne sont pas liées à un matériel ou une solution sous-jacente spécifique. Cela permet une réaffectation dynamique entre différents services au sein de la même région.
+Les adresses Additional IP offrent une flexibilité accrue et sont agnostiques à l'infrastructure, ce qui signifie qu'elles ne sont pas liées à un matériel ou une solution sous-jacente spécifique. Cela permet une réaffectation dynamique entre différents services au sein de la même région (à l’exception des régions eu-west-gra, eu-west-sbg et eu-west-rbx). Vous trouverez plus d’informations sur les limites des déplacement des Additional IP dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
 
 ### Caractéristiques :
 
@@ -65,10 +69,10 @@ Les adresses Additional IP peuvent être attachées aux services OVHcloud de deu
 
 ### Cas d'utilisation :
 
-- **Failover manuel et automatisé :** réaffectez rapidement des adresses IP aux services de sauvegarde en cas de défaillance des services principaux, manuellement ou automatiquement via les protocoles VRRP ou CARP ;
-- **Load Balancing :** configurez un Load Balancer OVHcloud et distribuez le trafic entre plusieurs serveurs ou clusters ;
-- **IP aliasing :** attribuez plusieurs adresses IP à la même interface réseau et hébergez plusieurs sites web ou services sur un seul serveur ;
-- **Migration de service :** migrez des services entre serveurs sans changer l'adresse IP publique ;
+- **Failover manuel et automatisé :** réaffectez rapidement des adresses IP aux services de sauvegarde en cas de défaillance des services principaux, manuellement ou automatiquement via les protocoles VRRP ou CARP ; <br>
+- **Load Balancing avec Additional IP:** Les Additional IP vous permettent d’isoler, de migrer et de faire évoluer vos services plus facilement, tout en vous offrant un contrôle plus précis sur la manière dont le Load Balancer distribue le trafic ; <br>
+- **IP aliasing :** attribuez plusieurs adresses IP à la même interface réseau et hébergez plusieurs sites web ou services sur un seul serveur ; <br>
+- **Migration de service :** migrez des services entre serveurs sans changer l'adresse IP publique ; <br>
 - **Géolocalisation IP :** présentez une adresse IP locale aux clients de différentes régions, afin d'améliorer la latence et l'expérience utilisateur.
 
 ### Guides associés :

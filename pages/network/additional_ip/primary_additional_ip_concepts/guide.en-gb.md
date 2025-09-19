@@ -1,7 +1,7 @@
 ---
 title: Concepts - Primary IP and Additional IP
 excerpt: Understand the differences between Primary IP and Additional IP addresses, and learn about their use cases
-updated: 2025-09-12
+updated: 2025-09-19
 ---
 
 ## Objective
@@ -13,6 +13,8 @@ In the Bare Metal universe, you can use the Primary IP addresses of your service
 ## IP Addresses in OVHcloud: Primary, Additional
 
 OVHcloud offers various types of IP addresses, each designed for specific use cases and offering different levels of flexibility and functionality. Understanding the distinctions between Primary IP and Additional IP is crucial for effective network management and service deployment.
+
+In the Public Cloud universe, we also offer Floating IP addresses that are cloud-native, with a pay-as-you-go billing model. You can find more information about the differences between Floating IP and Additional IP in [this guide](/pages/public_cloud/public_cloud_network_services/concepts-02-additional-ip-vs-floating-ip).
 
 ## Primary IP Addresses
 
@@ -35,7 +37,7 @@ Primary IP addresses are fundamental to OVHcloud services, providing immediate c
 
 ## Additional IP Addresses
 
-Additional IP addresses offer enhanced flexibility and are infrastructure-agnostic, meaning they are not tied to any specific underlying hardware or solution. This allows for dynamic reassignment between different services within the same region.
+Additional IP addresses offer enhanced flexibility and are infrastructure-agnostic, meaning they are not tied to any specific underlying hardware or solution. This allows for dynamic reassignment between different services within the same region (with an exception for the eu-west-gra, eu-west-sbg and eu-west-rbx regions). You can find more information about the Additional IP moving limitations in [this guide](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
 
 ### Characteristics:
 
@@ -65,10 +67,10 @@ Additional IP addresses can be attached to OVHcloud services in two primary ways
 
 ### Use Cases:
 
-**Manual and Automated Failover:** Quickly reassign IP addresses to backup services in case of main services failure, either manually or automatically VRRP or CARP;
-**Load Balancing:** Configure an OVHcloud Load Balancer, and distribute traffic among several servers or clusters;
-**IP aliasing:** Assign several IP addresses to the same network interface, and host multiple websites or services on a single server;
-**Service Migration:** Migrate services between servers without changing the public-facing IP address.
+**Manual and Automated Failover:** Quickly reassign IP addresses to backup services in case of main services failure, either manually or automatically VRRP or CARP; <br>
+**Load Balancing with Additional IP:** Additional IPs let you isolate, migrate, and scale services more easily, while giving you finer control over how the Load Balancer distributes traffic; <br>
+**IP aliasing:** Assign several IP addresses to the same network interface, and host multiple websites or services on a single server; <br>
+**Service Migration:** Migrate services between servers without changing the public-facing IP address. <br>
 **IP Geolocation:** Present a local IP address to customers in different regions, to improve latency and user experience.
 
 ### Related Guides:
