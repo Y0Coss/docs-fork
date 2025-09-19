@@ -13,7 +13,7 @@ The OVHcloud Command Line Interface (CLI) is a tool designed to interact with OV
 To install the OVHcloud CLI, you can use the following command:
 
 ```sh
-curl -fsSL https://github.com/ovh/ovhcloud-cli/blob/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/ovh/ovhcloud-cli/main/install.sh | sh
 ```
 
 Alternatively, you can download the latest release from the [GitHub repository](https://github.com/ovh/ovhcloud-cli):
@@ -33,9 +33,17 @@ OVHcloud CLI requires authentication to be able to make API calls. There are sev
 
 Check out the [authentication page](https://github.com/ovh/ovhcloud-cli/blob/main/doc/authentication.md) for further information about the configuration and the authentication means.
 
+* Interactive login:
+
+```sh
+# Log in and create API credentials (interactive)
+ovhcloud login
+```
+
 * Using a configuration file:
 
 Default settings can be set using a configuration file named `.ovh.conf` and located in your `${HOME}` directory.
+You can check the [following guide](/pages/manage_and_operate/api/api-getting-started-ovhcloud-api) to learn how to create API credentials.
 
 Example of configuration file:
 
@@ -44,8 +52,9 @@ Example of configuration file:
 endpoint = ovh-eu
 
 [ovh-eu]
-client_id     = <OAuth 2.0 client ID>
-client_secret = <OAuth 2.0 client secret>
+application_key    = <application key>
+application_secret = <application secret>
+consumer_key       = <consumer key>
 
 [ovh-cli]
 default_cloud_project = <public cloud project ID>
@@ -59,13 +68,6 @@ OVH_APPLICATION_KEY=xxx
 OVH_APPLICATION_SECRET=xxx
 OVH_CONSUMER_KEY=xxx
 OVH_CLOUD_PROJECT_SERVICE=<public cloud project ID> 
-```
-
-* Interactive login:
-
-```sh
-# Log in and create API credentials (interactive)
-ovhcloud login
 ```
 
 ## Example Commands
@@ -89,7 +91,7 @@ Here are some basic commands to get started:
     ovhcloud cloud instance create --cloud-project <PROJECT_ID> --name my-instance --flavor s1-2 --image Ubuntu_20.04
     ```
 
-> **Note:** The `--project-id` option is not necessary if you defined a `default_cloud_project` in your configuration file, or if the environment variable is defined.
+> **Note:** The `--project-id` option is not necessary if you defined a `default_cloud_project` in your configuration file, or if the `OVH_CLOUD_PROJECT_SERVICE` environment variable is defined.
 
 For further information about the available commands, you can check the [complete documentation](https://github.com/ovh/ovhcloud-cli/blob/main/doc/ovhcloud.md).
 
