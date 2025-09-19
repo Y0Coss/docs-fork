@@ -1,20 +1,20 @@
 ---
-title: Mise en place de Multicloud Snapshot Technology (MST)
-excerpt: 'Comment activer MST avec un container S3 OVHcloud' 
+title: "Mise en place de Multicloud Snapshot Technology (MST) sur une infrastructure Nutanix on OVHcloud"
+excerpt: 'Comment activer MST avec un container Object Storage OVHcloud'
 updated: 2025-09-19
 ---
 
 ## Objectif
 
-Découvrez comment déployer et configurer **Multicloud Snapshot Technology (MST)** sur une infrastructure Nutanix on OVHcloud avec OVHcloud object storage.
+Découvrez comment déployer et configurer **Multicloud Snapshot Technology (MST)** sur une infrastructure Nutanix on OVHcloud avec OVHcloud Object Storage.
 
 MST permet de **répliquer les snapshots** (UVM / Volume Groups) vers des stockages **compatibles S3** pour optimiser le TCO, améliorer la mobilité des données et simplifier la reprise après sinistre (DR) via un modèle **zero-compute**.
 
-## 1. Vue d'ensemble & avantages
+## Vue d'ensemble & avantages
 
 **Fonctionnalités principales :**
 
-- Réplication périodique de snapshots vers des buckets S3 (RPO typique : 1 heure via l’infrastructure Nutanix DR).
+- Réplication périodique de snapshots vers des buckets S3<sup>1</sup> (RPO typique : 1 heure via l’infrastructure Nutanix DR).
 - Modèle **Zero-Compute** : Il n'est pas nécessaire de maintenir des nœuds compute standby.
 - Stockage des snapshots récents sur le cluster principal ; offload des snapshots plus anciens vers stockage objet.
 - Restauration possible partout où tourne **Nutanix Cloud Platform (NCP)** : cloud, edge, on-prem.
@@ -26,7 +26,7 @@ MST permet de **répliquer les snapshots** (UVM / Volume Groups) vers des stocka
 - Mobilité : Récupération des workloads sur différents environnements NCP.
 - Simplicité d’administration via Prism.
 
-## 2. Prérequis
+## Prérequis
 
 ### Cluster Nutanix
 
@@ -56,7 +56,7 @@ MST permet de **répliquer les snapshots** (UVM / Volume Groups) vers des stocka
 - **75 points de restauration** par entité.
 - **300 To** de données actives supportées.
 
-## 3. Procédure de déploiement (pas à pas)
+## En pratique
 
 ### Préparer l’environnement
 
@@ -99,7 +99,7 @@ Connectez-vous à Prism Central, rendez-vous dans le centre d'administration, pu
 
 #### Activer le Network Controller
 
-Depuis `Infrastructure`, rendez-vous dans `Prism Central Settings`{.action}, cliquez sur `Network Controller`{.action} puis sur `Enable`{.action}.
+Depuis `Infrastructure`{.action}, rendez-vous dans `Prism Central Settings`{.action}, cliquez sur `Network Controller`{.action} puis sur `Enable`{.action}.
 
 ![06 Enable Network Controller](images/mst6.png){.thumbnail}
 
@@ -169,7 +169,7 @@ Lancez le déploiement.
 
 ![15 End of mst deployment](images/mst15.png){.thumbnail} 
 
-## 4. Disaster Recovery : utilisation et configuration
+## Disaster Recovery : utilisation et configuration
 
 Une fois MST déployé et connecté à votre bucket Object Storage, vous pouvez configurer la protection et la restauration de vos workloads.
 
@@ -182,6 +182,7 @@ Une fois MST déployé et connecté à votre bucket Object Storage, vous pouvez 
     ![16 Create Protection policies](images/mst16.png){.thumbnail} 
 
 2. Définissez le `policy name` et renseignez votre cluster dans le champ `primary location`.
+
     Dans le cadre `Recovery Location`, gardez Local AZ et sélectionnez le container (Bucket) précédemment configuré.
 
     ![17 Create Protection policies](images/mst17.png){.thumbnail} 
@@ -224,3 +225,5 @@ Une fois MST déployé et connecté à votre bucket Object Storage, vous pouvez 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+<sup>1</sup> : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

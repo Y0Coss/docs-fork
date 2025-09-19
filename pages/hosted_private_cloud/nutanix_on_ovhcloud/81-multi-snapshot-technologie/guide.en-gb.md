@@ -1,6 +1,6 @@
 ---
-title: Setting up Multicloud Snapshot Technology (MST)
-excerpt: 'How to activate MST with an OVHcloud S3 container'
+title: "Setting up Multicloud Snapshot Technology (MST) on a Nutanix on OVHcloud infrastructure"
+excerpt: 'Learn how to activate MST with an OVHcloud Object Storage container'
 updated: 2025-09-19
 ---
 
@@ -14,7 +14,7 @@ With MST, you can **replicate snapshots** (UVM/Volume Groups) to **S3-compatible
 
 **Main features:**
 
-- Periodic replication of snapshots to S3 buckets (typical RPO: 1 hour via the Nutanix DR. infrastructure).
+- Periodic replication of snapshots to S3<sup>1</sup> buckets (typical RPO: 1 hour via the Nutanix DR. infrastructure).
 - Model **Zero-Compute**: No need to maintain compute standby nodes.
 - Store recent snapshots on the main cluster; offload older snapshots to object storage.
 - Restore anywhere **Nutanix Cloud Platform (NCP)**: cloud, edge, on-prem.
@@ -99,7 +99,7 @@ Log in to Prism Central, go to the admin center, then click `Enable Marketplace`
 
 #### Enable Network Controller
 
-In `Infrastructure` go to `Prism Central Settings`{.action}, click `Network Controller`{.action} then `Enable`{.action}.
+In `Infrastructure`{.action} go to `Prism Central Settings`{.action}, click `Network Controller`{.action} then `Enable`{.action}.
 
 ![06 Enable Network Controller](images/mst6.png){.thumbnail}
 
@@ -182,6 +182,7 @@ Once you have deployed an MST and connected it to your Object Storage bucket, yo
     ![16 Create Protection policies](images/mst16.png){.thumbnail}
 
 2. Define the `policy name` and enter your cluster in the `primary location` field.
+
     In the `Recovery Location` box, keep Local AZ and select the container (Bucket) previously configured.
 
     ![17 Create Protection policies](images/mst17.png){.thumbnail}
@@ -192,7 +193,7 @@ Once you have deployed an MST and connected it to your Object Storage bucket, yo
     - The number of Recovery Points to keep locally.
     - The number of Recovery Points to keep on the **OVHcloud S3 container**.
 
-![18 Define Schedule](images/mst18.png){.thumbnail}
+    ![18 Define Schedule](images/mst18.png){.thumbnail}
 
 4. Protect VMs:
 
@@ -224,3 +225,5 @@ Once you have deployed an MST and connected it to your Object Storage bucket, yo
 If you require training or technical support to implement our solutions, please contact your sales representative or click [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
 Join our [community of users](/links/community).
+
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

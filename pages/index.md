@@ -582,6 +582,7 @@
             + [Asynchronous or NearSync replication through Prism Element](hosted_private_cloud/nutanix_on_ovhcloud/46-prism-element-replication)
             + [Advanced replication with Leap](hosted_private_cloud/nutanix_on_ovhcloud/47-nutanix-leap)
             + [Configuring Disaster Recovery with Metro](hosted_private_cloud/nutanix_on_ovhcloud/48-metro-availability)
+            + [Setting up Multicloud Snapshot Technology (MST) on a Nutanix on OVHcloud infrastructure](hosted_private_cloud/nutanix_on_ovhcloud/81-multi-snapshot-technologie)
         + [Responsibility sharing (RACI)](hosted-private-cloud-nutanix-on-ovhcloud-raci)
             + [Responsibility sharing - Nutanix on OVHcloud](hosted_private_cloud/nutanix_on_ovhcloud/60-responsibility-sharing)
     + [SAP on OVHcloud](products/hosted-private-cloud-sap-ovhcloud)
