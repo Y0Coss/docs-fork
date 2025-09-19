@@ -10,7 +10,7 @@ Find out how to deploy and configure **Multicloud Snapshot Technology (MST)** on
 
 With MST, you can **replicate snapshots** (UVM/Volume Groups) to **S3-compatible storage** to optimize TCO, improve data mobility, and simplify disaster recovery (DR.) using a **zero-compute** model.
 
-## 1. Overview & advantages
+## Overview & advantages
 
 **Main features:**
 
@@ -26,7 +26,7 @@ With MST, you can **replicate snapshots** (UVM/Volume Groups) to **S3-compatible
 - Mobility: Retrieve workloads on different NCP environments.
 - Manageability via Prism.
 
-## 2. Requirements
+## Requirements
 
 ### Nutanix Cluster
 
@@ -56,7 +56,7 @@ With MST, you can **replicate snapshots** (UVM/Volume Groups) to **S3-compatible
 - **75 Recovery Points** per entity.
 - **300 TB** of supported active data.
 
-## 3. Deployment procedure (step by step)
+## Instructions
 
 ### Prepare the environment
 
@@ -169,7 +169,7 @@ Launch the deployment.
 
 ![15 End of mst deployment](images/mst15.png){.thumbnail}
 
-## 4. Disaster Recovery: use and configuration
+## Disaster Recovery: use and configuration
 
 Once you have deployed an MST and connected it to your Object Storage bucket, you can configure how your workloads are protected and restored.
 
