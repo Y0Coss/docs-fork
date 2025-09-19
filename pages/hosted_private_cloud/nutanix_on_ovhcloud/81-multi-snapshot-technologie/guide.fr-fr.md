@@ -140,7 +140,7 @@ Redémarrage des services réseau :
 
 1. Connectez-vous à **Prism Central** en tant qu’**administrateur**.
 1. Rendez-vous dans **Admin Center → Marketplace**.
-1. Dans **Nutanix Apps***, cliquez sur `Get`{.action} pour **Multicloud Snapshot Technology**.
+1. Dans **Nutanix Apps**, cliquez sur `Get`{.action} pour **Multicloud Snapshot Technology**.
 
 ![11 get mst](images/mst11.png){.thumbnail}
 
