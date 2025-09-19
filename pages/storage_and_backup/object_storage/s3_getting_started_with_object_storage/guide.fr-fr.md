@@ -379,7 +379,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >> aws s3 sync s3://<bucket_name> s3://<bucket_name_2> # Synchroniser un bucket S3 avec un autre
 >> ```
 
-**Suppression d'objets et de buckets**
+#### Suppression d'objets et de buckets
 
 > [!primary]
 >
@@ -478,7 +478,7 @@ Lors du téléchargement des objets dans un bucket Object Storage, les utilisate
 >> Cliquez sur `Confirmer`{.action}.
 >>
 
-**Gérer les tags**
+#### Gérer les tags
 
 > [!tabs]
 > Via AWS CLI
