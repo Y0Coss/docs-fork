@@ -1,7 +1,7 @@
 ---
 title: 'E-mail Pro - Configurer son adresse e-mail sur Thunderbird pour Windows'
 excerpt: 'Découvrez comment configurer votre adresse E-mail Pro sur Thunderbird pour Windows'
-updated: 2025-09-18
+updated: 2025-09-19
 ---
 
 <style>
