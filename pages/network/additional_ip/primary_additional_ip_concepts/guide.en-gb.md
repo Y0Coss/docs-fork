@@ -37,7 +37,7 @@ Primary IP addresses are fundamental to OVHcloud services, providing immediate c
 
 ## Additional IP Addresses
 
-Additional IP addresses offer enhanced flexibility and are infrastructure-agnostic, meaning they are not tied to any specific underlying hardware or solution. This allows for dynamic reassignment between different services within the same region (with an exception for the eu-west-gra, eu-west-sbg and eu-west-rbx regions). You can find more information about the Additional IP moving limitations in [this guide](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
+Additional IP addresses offer enhanced flexibility and are infrastructure-agnostic, meaning they are not tied to any specific underlying hardware or solution. This allows for dynamic reassignment between different services within the same region (with an exception for the eu-west-gra, eu-west-sbg and eu-west-rbx regions). For more information about moving Additional IP, please check [this guide](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
 
 ### Characteristics:
 

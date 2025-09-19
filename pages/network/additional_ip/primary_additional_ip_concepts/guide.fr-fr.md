@@ -39,7 +39,7 @@ Les adresses Primary IP sont fondamentales pour les services OVHcloud, fournissa
 
 ## Additional IP Addresses
 
-Les adresses Additional IP offrent une flexibilité accrue et sont agnostiques à l'infrastructure, ce qui signifie qu'elles ne sont pas liées à un matériel ou une solution sous-jacente spécifique. Cela permet une réaffectation dynamique entre différents services au sein de la même région (à l’exception des régions eu-west-gra, eu-west-sbg et eu-west-rbx). Vous trouverez plus d’informations sur les limites des déplacement des Additional IP dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
+Les adresses Additional IP offrent une flexibilité accrue et sont agnostiques à l'infrastructure, ce qui signifie qu'elles ne sont pas liées à un matériel ou une solution sous-jacente spécifique. Cela permet une réaffectation dynamique entre différents services au sein de la même région (à l’exception des régions eu-west-gra, eu-west-sbg et eu-west-rbx). Pour obtenir plus d'information à propos du déplacement d'Additional IP, veuillez consulter [ce guide](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
 
 ### Caractéristiques :
 
