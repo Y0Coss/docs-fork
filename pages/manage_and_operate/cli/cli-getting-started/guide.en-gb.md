@@ -88,7 +88,7 @@ Here are some basic commands to get started:
     ```
 - **Create a new instance:**
     ```sh
-    ovhcloud cloud instance create --cloud-project <PROJECT_ID> --name my-instance --flavor s1-2 --image Ubuntu_20.04
+    ovhcloud cloud instance create BHS5 --cloud-project <PROJECT_ID> --name my-instance --flavor-selector --image-selector --network.public --ssh-key.name <SSH_KEY_NAME>
     ```
 
 > **Note:** The `--project-id` option is not necessary if you defined a `default_cloud_project` in your configuration file, or if the `OVH_CLOUD_PROJECT_SERVICE` environment variable is defined.
