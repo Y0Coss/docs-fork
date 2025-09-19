@@ -68,7 +68,7 @@ Additional IP addresses can be attached to OVHcloud services in two primary ways
 ### Use Cases:
 
 **Manual and Automated Failover:** Quickly reassign IP addresses to backup services in case of main services failure, either manually or automatically VRRP or CARP; <br>
-**Load Balancing with Additional IP:** Additional IPs let you isolate, migrate, and scale services more easily, while giving you finer control over how the Load Balancer distributes traffic; <br>
+**Load Balancing:** Attach an Additional IP to your OVHcloud Load Balancer, and seamlessly redirect traffic to a standby Load Balancer during maintenance of failover; <br>
 **IP aliasing:** Assign several IP addresses to the same network interface, and host multiple websites or services on a single server; <br>
 **Service Migration:** Migrate services between servers without changing the public-facing IP address. <br>
 **IP Geolocation:** Present a local IP address to customers in different regions, to improve latency and user experience.

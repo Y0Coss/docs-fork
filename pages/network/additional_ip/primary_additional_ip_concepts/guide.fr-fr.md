@@ -70,7 +70,7 @@ Les adresses Additional IP peuvent être attachées aux services OVHcloud de deu
 ### Cas d'utilisation :
 
 - **Failover manuel et automatisé :** réaffectez rapidement des adresses IP aux services de sauvegarde en cas de défaillance des services principaux, manuellement ou automatiquement via les protocoles VRRP ou CARP ; <br>
-- **Load Balancing avec Additional IP:** Les Additional IP vous permettent d’isoler, de migrer et de faire évoluer vos services plus facilement, tout en vous offrant un contrôle plus précis sur la manière dont le Load Balancer distribue le trafic ; <br>
+- **Load Balancing:** Attachez une Additional IP à votre Load Balancer OVHcloud, et redirigez le trafic de manière transparente vers un Load Balancer de secours lors d'opérations de maintenance ou de failover ; <br>
 - **IP aliasing :** attribuez plusieurs adresses IP à la même interface réseau et hébergez plusieurs sites web ou services sur un seul serveur ; <br>
 - **Migration de service :** migrez des services entre serveurs sans changer l'adresse IP publique ; <br>
 - **Géolocalisation IP :** présentez une adresse IP locale aux clients de différentes régions, afin d'améliorer la latence et l'expérience utilisateur.
