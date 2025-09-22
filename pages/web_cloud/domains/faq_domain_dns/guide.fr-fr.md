@@ -1,7 +1,7 @@
 ---
 title: "Noms de domaine & DNS - FAQ"
 excerpt: "Retrouvez les principales questions posées sur les noms de domaine, les serveurs et les zones DNS"
-updated: 2025-09-12
+updated: 2025-09-22
 ---
 
 <style>
@@ -31,13 +31,15 @@ Suivez ces étapes :
 3. Sur la nouvelle page qui s'affiche, notre interface vous précisera si le nom de domaine choisi est disponible ou non à l'achat. S'il est déjà réservé avec la syntaxe que vous avez saisie, modifiez-le et relancez une nouvelle recherche de disponibilité.
 4. Une fois que vous avez trouvé un nom de domaine disponible, cliquez sur le bouton `Acheter`{.action}, puis sur le bouton `Poursuivre la commande`{.action} dans la colonne de droite.
 5. Sélectionnez les éventuelles options ou services que vous souhaitez souscrire en complément de votre nom de domaine, puis cliquez sur `Suivant`{.action} jusqu'à ce que le tunnel de commande vous invite à vous authentifier ou à créer un compte client OVHcloud.
-6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations de contact (propriétaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
+6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations des contacts (propriétaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
 7. Sur la page `Récapitulatif de votre commande` et si nécessaire, vous pourrez modifier la configuration DNS qui s'appliquera à votre nom de domaine en cliquant sur le lien intitulé `Modifier la configuration`{.action}. Dès que vos modifications sont terminées, cliquez sur le bouton `Payer`{.action} pour accéder à la dernière étape de votre commande.
 
 Payez ensuite votre commande pour initier la réservation de votre nom de domaine et l'installation de vos services et options éventuellement souscrites en complément.
 
-Quelques instants plus tard, vous recevrez un e-mail de confirmation de votre commande.
+Quelques instants plus tard, vous recevrez un e-mail de confirmation pour votre commande.
 Vous pourrez ensuite administrer votre nom de domaine en vous connectant à votre [espace client OVHcloud](/links/manager).
+
+N'hésitez pas à créer [un ticket d'assistance depuis le Centre d'Aide](https://help.ovhcloud.com/csm?id=csm_get_help) si besoin.
 
 ///
 
@@ -52,13 +54,15 @@ Suivez ces étapes :
 3. Sur la nouvelle page qui s'affiche, notre interface vous précisera si le nom de domaine choisi est disponible ou non à l'achat. S'il est déjà réservé avec la syntaxe que vous avez saisie, modifiez-le et relancez une nouvelle recherche de disponibilité.
 4. Une fois que vous avez trouvé un nom de domaine disponible, cliquez sur le bouton `Acheter`{.action}, puis sur le bouton `Poursuivre la commande`{.action} dans la colonne de droite.
 5. Sélectionnez les éventuelles options ou services que vous souhaitez souscrire en complément de votre nom de domaine, puis cliquez sur `Suivant`{.action} jusqu'à ce que le tunnel de commande vous invite à vous authentifier ou à créer un compte client OVHcloud.
-6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations de contact (propriétaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
+6. Dès que vous êtes authentifié avec votre compte client OVHcloud, vous pourrez personnaliser les informations des contacts (propriétaire/titulaire, administrateur, technique) pour votre nom de domaine. Cliquez ensuite sur le bouton `Continuer`{.action} pour accéder au récapitulatif de votre commande.
 7. Sur la page `Récapitulatif de votre commande` et si nécessaire, vous pourrez modifier la configuration DNS qui s'appliquera à votre nom de domaine en cliquant sur le lien intitulé `Modifier la configuration`{.action}. Dès que vos modifications sont terminées, cliquez sur le bouton `Payer`{.action} pour accéder à la dernière étape de votre commande.
 
 Payez ensuite votre commande pour initier la réservation de votre nom de domaine et l'installation de vos services et options éventuellement souscrites en complément.
 
-Quelques instants plus tard, vous recevrez un e-mail de confirmation de votre commande.
+Quelques instants plus tard, vous recevrez un e-mail de confirmation pour votre commande.
 Vous pourrez ensuite administrer votre nom de domaine en vous connectant à votre [espace client OVHcloud](/links/manager).
+
+N'hésitez pas à créer [un ticket d'assistance depuis le Centre d'Aide](https://help.ovhcloud.com/csm?id=csm_get_help) si besoin.
 
 ///
 
@@ -66,19 +70,42 @@ Vous pourrez ensuite administrer votre nom de domaine en vous connectant à votr
 
 /// details | Comment savoir si mon nom de domaine est enregistré chez OVHcloud ?
 
+Pour cela, vous pouvez effectuer une requête [WHOIS](/links/web/domains-whois) pour savoir où est enregistré votre nom de domaine et pour vérifier que vous êtes bien déclaré en tant que titulaire du nom de domaine.
 
+Chaque bureau d'enregistrement (tel qu'OVHcloud) à la possibilité de choisir comment afficher les informations relatives à un nom de domaine dans le WHOIS.
+
+Une fois la requête WHOIS effectuée, rechercher dans le résultat au moins l'une des lignes suivantes :
+
+- Domain Name: ovhcloud.com
+- Registrar WHOIS Server: whois.ovh.com
+- Registrar URL: https://ovh.com
+- Registrar: OVH sas
+
+Si tel est le cas, c'est que votre nom de domaine est bien enregistré chez OVHcloud.
+
+Dans le cas contraire, votre nom de domaine est enregistré auprès d'un autre bureau d'enregistrement, recherchez alors les lignes relatives au `Registrar` pour identifier le bureau d'enregistrement où votre nom de domaine est enregistré.
 
 ///
 
 /// details | Comment connaître la date d'expiration d'un nom de domaine ?
 
+La solution la plus rapide est d'effectuer une requête [WHOIS](/links/web/domains-whois) sur le nom de domaine. Une fois la requête lancée, recherchez dans le résultat la ligne correspondant à la date d'expiration (par exemple : `Expiry Date: 2025-09-22T08:00:00Z`, `Registry Expiry Date: 2025-09-22T08:00:00Z`, etc.).
 
+Une autre solution, si votre nom de domaine est enregistré chez OVHcloud, est de suivre ces étapes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+2. Cliquez sur votre nom dans le coin supérieur droit puis choisissez `Mes offres & services`{.action}.
+3. Dans le tableau qui apparaît, recherchez la ligne correspondante à votre nom de domaine, puis repérez la date présente dans la colonne `Date d'effet`. Cette date correspond à la date d'expiration de votre nom de domaine.
 
 ///
 
-/// details | Comment changer la date d'expiration d'un nom de domaine ?
+/// details | Comment changer la date annuelle d'expiration d'un nom de domaine ?
 
+La date annuelle d'expiration d'un nom de domaine (par exemple : le 24 septembre) est pré-établie en fonction de la date d'enregistrement (création) du nom de domaine.
 
+Généralement, la date annuelle d'expiration d'un nom de domaine est la même que la date à laquelle vous avez enregistrée le nom de domaine.
+
+Par conséquent, il n'est pas possible de changer la date annuelle d'expiration d'un nom de domaine.
 
 ///
 
@@ -112,13 +139,53 @@ Les noms de domaine sont considérés comme des produits personnalisés, car ils
 
 /// details | Comment supprimer un nom de domaine ?
 
+Suivez ces étapes :
 
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+2. Cliquez sur votre nom dans le coin supérieur droit puis choisissez `Mes offres & services`{.action}.
+3. Dans le tableau qui apparaît, recherchez la ligne correspondante à votre nom de domaine, cliquez sur le bouton `...`{.action} à droite, puis sur `Résilier mon service`{.action}.
+4. Sur la page qui s'affiche, remplissez le questionnaire puis cliquez en bas sur le bouton `Valider`{.action}.
+
+Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compter de cette date, il sera supprimé **définitivement** dans un délai maximum de 60 jours. (Délai défini par l'ICANN pour qu'un nom de domaine soit totalement supprimé et de nouveau disponible à l'enregistrement pour un autre propriétaire/titulaire).
+
+> [!primary]
+>
+> Une fois la résiliation demandée, vous pouvez accélérer la suppression en créant [un ticket d'assistance depuis le Centre d'Aide](https://help.ovhcloud.com/csm?id=csm_get_help). Des documents justificatifs seront à fournir pour accélérer cette suppression.
+
+> [!success]
+>
+> Retrouvez tous les détails dans notre guide « [Comment résilier mes services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services) ».
 
 ///
 
 /// details | J'ai reçu un e-mail concernant la validation des informations du titulaire associée à mon nom de domaine, que faire ?
 
+Tout d'abord, si vous avez un doute sur la légitimité de l'e-mail reçu, consulter notre guide « [Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?](/pages/account_and_service_management/account_information/phishing_care) ».
 
+Conformément à une directive de l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) du 01/09/2014, es bureaux d'enregistrements (par exemple :OVHcloud) sont tenus de vérifier la validité des coordonnées des titulaires/prpriétaires de noms de domaine. OVHcloud envoie alors un e-mail au titulaires/prpriétaires du nom de domaine enregistré à l'adresse e-mail de contact déclarée chez OVHcloud.
+
+Vous recevrez cet e-mail lorsque vous effectuerez l'une des actions suivantes :
+
+- Enregistrement d'un nouveau nom de domaine.
+- Transférer d'un nom de domaine.
+- Modification des coordonnées associées à votre nom de domaine.
+
+Cet e-mail contient un lien de vérification permettant de vérifier rapidement vos coordonnées en tant que propriétaire/titulaire légal du nom de domaine.
+
+Attention : Cette vérification doit être faite dans un délai de 15 jours. Passé ce délai, le nom de domaine sera suspendu techniquement. Il restera contractuellement à vous mais il ne sera plus accessible sur Internet. Un message d'erreur s'affichera pour les visiteurs qui consultent votre site web.
+
+Vous pouvez recevoir les e-mails suivants durant les 15 premiers jours :
+
+- **Jour 0** : Immédiatement après avoir commandé le nom de domaine ou modifié ses coordonnées, vous (ou la personne enregistrée en tant que propriétaire/titulaire) du nom de domaine recevrez le premier e-mail avec un lien de vérification.
+- **Jour 4, 9 et 13 (e-mails de relance)**: Si vous n'avez pas encore vérifié le nom de domaine, vous recevrez à nouveau l'e-mail.
+- **Jour 14** : Si vous n'avez toujours pas vérifié le nom de domaine, l'e-mail est envoyé une nouvelle fois. De plus, un e-mail est également envoyé à l'adresse e-mail de l'administrateur/titulaire du nom de domaine pour l'informer que les coordonnées de ce dernier n'ont pas été confirmées.
+- **Jour 15** : Si le propriétaire/titulaire du nom de domaine n'a pas encore répondu, nous envoyons un e-mail l'administrateur du nom de domaine pour l'informer de la situation et de la désactivation du nom de domaine.
+
+Au-delà de ces 15 jours, le système envoie des e-mails supplémentaires (jusqu'à 9 e-mails) avant de supprimer votre nom de domaine. Cette suppression sera effectuée après 60 jours à compter du jour 0.
+
+> [!warning]
+>
+> En fonction de l'extension du nom de domaine (par exemple : *.com*, *.net*, etc.) certain délais mentionnés ci-dessus peuvent différer. Nous vous recommandons vivement de vérifier,  auprès du registre de l'extension de votre nom de domaine, le processus de vérification du contrôle des contacts.
 
 ///
 
@@ -209,7 +276,7 @@ Vous n'aurez donc pas d'autre choix que de patienter jusqu'à la fin du délai d
 
 /// details | Je ne retrouve pas mon nom de domaine dans mon espace client, que faire ?
 
-Tout d'abord, effectuez une requête [WHOIS](/links/web/domains-whois) où est enregistré votre nom de domaine et pour vérifier que vous êtes bien déclaré en tant que titulaire du nom de domaine.
+Tout d'abord, effectuez une requête [WHOIS](/links/web/domains-whois) pour savoir où est enregistré votre nom de domaine et pour vérifier que vous êtes bien déclaré en tant que titulaire du nom de domaine.
 
 Cas n°1.A - Votre nom de domaine est enregistré chez OVHcloud et vous êtes bien déclaré en tant que titulaire du nom de domaine :
 
