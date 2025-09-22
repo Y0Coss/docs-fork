@@ -1,6 +1,6 @@
 ---
 title: AI Tools - Suivre vos ressources cloud (EN)
-excerpt: Découvrez comment monitorer vos ressources AI Tools
+excerpt: Découvrez comment monitorer les ressources cloud utiliséees par vos AI Tools
 updated: 2025-09-22
 ---
 
