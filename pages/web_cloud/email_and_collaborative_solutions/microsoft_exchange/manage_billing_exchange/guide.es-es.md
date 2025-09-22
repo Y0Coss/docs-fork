@@ -24,6 +24,8 @@ Los servicios Hosted Exchange y Private Exchange permiten una gestión flexible 
 
 ### Hosted Exchange
 
+#### Contratar cuentas adicionales
+
 Acceda a la pestaña `Cuentas de correo`{.action}, haga clic en el botón `Acciones`{.action} en la parte superior derecha y, luego, en `Contratar cuentas`{.action}
 
 ![billing_exchange](images/billing-exchange-00.png){.thumbnail}
@@ -82,11 +84,11 @@ En la pestaña `Cuentas de correo`{.action}, haga clic en `...`{.action} a la de
 
 ### Dar de baja la plataforma
 
-Una vez que haya eliminado las cuentas de correo, deberá eliminar el dominio o dominios asociados a su plataforma Exchange antes de darla de baja. Para ello, abra la pestaña `Dominios asociados`{.action}. Haga clic en el botón `...`{.action} en la línea del nombre de dominio que desea eliminar y, a continuación, haga clic en `Eliminar este dominio`{.action}.
+Una vez que haya eliminado las cuentas de correo, deberá eliminar el dominio o dominios asociados a su plataforma Exchange antes de darla de baja. Para ello, abra la pestaña `Dominios asociados`{.action}. Haga clic en el botón `...`{.action} en la línea del nombre de dominio que desea eliminar y, a continuación, haga clic en `Eliminar el dominio`{.action}.
 
 ![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
 
-Desde la ventana de gestión de su plataforma Exchange, haga clic en el botón `Actions`{.action} en la parte superior derecha y luego en `Dar de baja`{.action}.
+Desde la ventana de gestión de su plataforma Exchange, haga clic en el botón `Acciones`{.action} en la parte superior derecha y luego en `Dar de baja`{.action}.
 
 ![billing_exchange](images/billing-exchange-08.png){.thumbnail}
 
@@ -96,7 +98,7 @@ Desde la ventana de gestión de su plataforma Exchange, haga clic en el botón `
 
 ## Más información <a name="go-further"></a>
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 

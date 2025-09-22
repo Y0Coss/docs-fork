@@ -84,11 +84,11 @@ W karcie `Konta e-mail`{.action} kliknij `...`{.action} z prawej strony danego k
 
 ## Rezygnacja z usługi
 
-Po usunięciu kont e-mail należy usunąć domenę lub domeny powiązane z Twoją platformą Exchange przed jej zakończeniem. W tym celu przejdź do zakładki `Przypisane domeny`{.action}. Kliknij przycisk `...`{.action} w linii nazwy domeny, którą chcesz usunąć, następnie kliknij `Usuń tę domenę`{.action}.
+Po usunięciu kont e-mail należy usunąć domenę lub domeny powiązane z Twoją platformą Exchange przed jej zakończeniem. W tym celu przejdź do zakładki `Przypisane domeny`{.action}. Kliknij przycisk `...`{.action} w linii nazwy domeny, którą chcesz usunąć, następnie kliknij `Usuń tą domenę`{.action}.
 
 ![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
 
-W oknie zarządzania Twoją platformą Exchange kliknij przycisk `Actions`{.action} w prawym górnym rogu, a następnie wybierz `Rezygnacja`{.action}.
+W oknie zarządzania Twoją platformą Exchange kliknij przycisk `Operacje`{.action} w prawym górnym rogu, a następnie wybierz `Zrezygnuj`{.action}.
 
 ![billing_exchange](images/billing-exchange-08.png){.thumbnail}
 
@@ -98,7 +98,7 @@ W oknie zarządzania Twoją platformą Exchange kliknij przycisk `Actions`{.acti
 
 ## Sprawdź również <a name="go-further"></a>
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 

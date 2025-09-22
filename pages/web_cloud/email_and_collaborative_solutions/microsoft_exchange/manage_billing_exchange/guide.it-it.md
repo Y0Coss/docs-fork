@@ -84,11 +84,11 @@ Dalla scheda `Account email`{.action}, clicca su `...`{.action} in corrispondenz
 
 ### Disattiva la piattaforma
 
-Dopo aver eliminato gli account email, è necessario eliminare il o i domini associati alla piattaforma Exchange prima di disattivarla. Per farlo, clicca sulla scheda `Domini associati`{.action}. Clicca sul pulsante `...`{.action} sulla riga del nome di dominio da eliminare e poi clicca su `Elimina questo dominio`{.action}.
+Dopo aver eliminato gli account email, è necessario eliminare il o i domini associati alla piattaforma Exchange prima di disattivarla. Per farlo, clicca sulla scheda `Domini associati`{.action}. Clicca sul pulsante `...`{.action} sulla riga del nome di dominio da eliminare e poi clicca su `Eliminare questo dominio`{.action}.
 
 ![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
 
-Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `Actions`{.action} in alto a destra e poi su `Disattiva`{.action}.
+Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Disattiva`{.action}.
 
 ![billing_exchange](images/billing-exchange-08.png){.thumbnail}
 
@@ -98,7 +98,7 @@ Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `A
 
 ## Per saperne di più <a name="go-further"></a>
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
