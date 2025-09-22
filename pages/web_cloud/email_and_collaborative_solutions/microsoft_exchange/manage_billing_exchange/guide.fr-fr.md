@@ -1,11 +1,7 @@
 ---
 title: 'Gérer la facturation de vos comptes Exchange'
 excerpt: 'Découvrez comment gérer la facturation de votre service Exchange'
-<<<<<<< HEAD
 updated: 2025-09-22
-=======
-updated: 2025-09-19
->>>>>>> 6970e62f0b3d69caca921c171cd75b4025f33dcc
 ---
 
 ## Objectif
