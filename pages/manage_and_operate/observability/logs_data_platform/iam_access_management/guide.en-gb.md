@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 ## Overview
 
-This guide provides instructions for configuring access rights on OVHcloud IAM to manage permissions for various components of Logs Data Platform. It will give you the best practices to handle the rights given to your users and will ensure that you can replicate the functionnality of roles and permissions with the more advanced system of policies. This guide will use features explained in the [IAM documentation](/pages/account_and_service_management/account_information/iam-policy-ui). It is therefore recommended to read it before reading this guide. 
+This guide provides instructions for configuring access rights on OVHcloud IAM to manage permissions for various components of Logs Data Platform. It will give you the best practices to handle the rights given to your users and will ensure that you can replicate the functionality of roles and permissions with the more advanced system of policies. This guide will use features explained in the [IAM documentation](/pages/account_and_service_management/account_information/iam-policy-ui). It is therefore recommended to read it before reading this guide. 
 
 ## Requirements
 
@@ -35,7 +35,7 @@ This guide provides instructions for configuring access rights on OVHcloud IAM t
 
 ## Policies and identities
 
-This guide leverages [local users](/pages/account_and_service_management/account_information/ovhcloud-users-management) to explain how you can share resources to another user. This choice has been done to illustrate through captures how it works inside the OVHcloud Control Panel. The policies created can be applied to any OVHcloud identities through the OVHcloud API. You can use these policies to share data with a local user, another OVHcloud user account or an OAuth client. You can refer to the specific [IAM Policies with API guide](/pages/account_and_service_management/account_information/iam-policies-api) to recreate all these policies with the API.
+This guide leverages [local users](/pages/account_and_service_management/account_information/ovhcloud-users-management) to explain how you can share resources with another user. The policies created can be applied to any OVHcloud identities through the OVHcloud API. You can use these policies to share data with a local user, another OVHcloud user account or an OAuth client. You can refer to the specific [IAM Policies with API guide](/pages/account_and_service_management/account_information/iam-policies-api) to recreate all these policies with the API.
 
 The identity will see a new service listed in their Logs Data Platform. This service contains the shared Logs Data Platform items. To ensure the recipient can see the shared items, we must share a view of the service with them.
 
@@ -73,7 +73,7 @@ Add the local user to your policy and select the **Logs Data Platform: service**
 
 ![Create policy service 1](images/create_policy_service_1.png){.thumbnail}
 
-The policy can then allow the service with read only access on the choosen service. Some mandatory actions need to be given for users to be able to see the Logs Data Platform control panel without error. The minimal set of actions are listed below: 
+The policy can then allow the service with read only access to the choosen service. Some mandatory actions need to be given for users to be able to see the Logs Data Platform control panel without error. The minimal set of actions is listed below: 
 
 ```yaml
 - ldp:apiovh:cluster/get
@@ -99,8 +99,8 @@ Once the policy is attached to the identity, the users will see the new service 
 
 ### Create a sub resources group
 
-All the items created by a Logs Data Platform (ie streams, dashboards etc) are materialized as sub-resources of the LDP service.
-One of the new feature available thanks to IAM is the ability to group sub-resources in a **Resource group**. A Resource group can be used to share related resources together and are a convenient way to groups items which are supposed to be used together. For example: a stream and its related dashboard, an alias and a OpenSearch Dashboard to explore it, an alias with all the streams attached to it. This feature is a good way to completely isolate sub-resources and make sure you don't have to handle them one by one over all your policies. 
+All the items created by a Logs Data Platform (i.e. streams, dashboards, etc.) are materialized as sub-resources of the LDP service.
+One of the new features available thanks to IAM is the ability to group sub-resources in a **Resource group**. A Resource group can be used to share related resources and is a convenient way to groups items that are supposed to be used together. For example: a stream and its related dashboard, an alias and a OpenSearch Dashboard to explore it, an alias with all the streams attached to it. This feature is a good way to completely isolate sub-resources and make sure you don't have to handle them one by one over all your policies. 
 
 To create a resource group, navigate to `IAM`{.action} > `Policies`{.action} > `Resource Groups`{.action}.
 
@@ -110,9 +110,9 @@ You need to select the product type (Dashboards, Streams, Alias, Index, OpenSear
 
 ### Create a policy for the sub resources
 
-This policy is the one you need to effectively replicate the [legacy roles permissions](/pages/manage_and_operate/observability/logs_data_platform/getting_started_roles_permission). You will attach OVHcloud APIs rights and backend (Graylog, OpenSearch) rights to allow identities to see the items in their shared service and interact with them in the corresponding Web UIs and APIs. Again navigate to `IAM`{.action} > `Policies`{.action} > `My Policies`{.action} to create a policy. 
+This policy is the one you need to effectively replicate the [legacy roles' permissions](/pages/manage_and_operate/observability/logs_data_platform/getting_started_roles_permission). You will attach OVHcloud APIs rights and backend (Graylog, OpenSearch) rights to allow identities to see the items in their shared service and interact with them in the corresponding Web UIs and APIs. Again, navigate to `IAM`{.action} > `Policies`{.action} > `My Policies`{.action} to create a policy. 
 
-Similarly to the previous policy, you need to add your local user and you need to select the product type of your ressource or sub-resource if you want to enable the actions selection panel for these specific sub-resources. 
+Similar to the previous policy, you need to add your local user, and you need to select the product type of your resource or sub-resource if you want to enable the actions selection panel for these specific sub-resources. 
 
 ![Create sub resource policy](images/policy_sub_product_types.png){.thumbnail}
 
@@ -193,13 +193,13 @@ Local users are useful for generating Personal Access Tokens (PATs). These token
 > @api {v1} /me POST /me/identity/user/{user}/token
 >
 
-Thanks to OVHcloud IAM, you can then delegates the creation rights of sub-resources (indices, aliases) to your local user and interact with the backend APIs directly with these Personal Access Tokens. 
+Thanks to OVHcloud IAM, you can then delegate the creation rights of sub-resources (indices, aliases) to your local user and interact with the backend APIs directly with these Personal Access Tokens. 
 
-The actions related to create items are part of the service actions. You will need to add them to a policy to allow a user to create items with their PAT.
+The actions related to creating items are part of the service actions. You will need to add them to a policy to allow a user to create items with their PAT.
 
 > [!primary]
 > You don't need to allow any OVHcloud APIs action to allow a local user to interact with the Logs Data Platform backends (OpenSearch, Graylog, OpenSearch Dashboards) APIs.
-> Local users allow you to generate tokens which can only interact with the backend similarly to legacy Logs Data Platform tokens. 
+> Local users allow you to generate tokens that can only interact with the backend similarly to legacy Logs Data Platform tokens. 
 
 For example, these two rights allow a local user to create indices/aliases directly on OpenSearch without having any other rights on the OVHcloud APIs. 
 
