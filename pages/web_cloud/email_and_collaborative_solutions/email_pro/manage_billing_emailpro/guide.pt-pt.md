@@ -1,7 +1,7 @@
 ---
 title: 'Gerir a faturação das contas E-mail Pro'
 excerpt: 'Saiba como gerir a faturação do serviço E-mail Pro.'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Objetivo
@@ -61,6 +61,10 @@ Aceda ao separador `Contas de e-mail`{.action} da sua plataforma, clique no bot�
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
 ### Cancelar a plataforma
+
+Depois de eliminar as contas de e-mail, é necessário eliminar o(s) domínio(s) associado(s) à sua plataforma E-mail Pro antes de a cancelar. Para isso, aceda ao separador `Domínios associados`{.action}. Clique no botão `...`{.action} na linha do nome de domínio a eliminar e, a seguir, clique em `Eliminar este domínio`{.action}.
+
+![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
 Na janela de gestão da plataforma E-mail Pro, clique no botão `Ações`{.action} no canto superior direito e, a seguir, em `Cancelar`{.action}. 
 

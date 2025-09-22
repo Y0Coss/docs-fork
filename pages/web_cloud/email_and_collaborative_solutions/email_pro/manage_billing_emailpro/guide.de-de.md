@@ -1,7 +1,7 @@
 ---
 title: 'Die Abrechnung Ihrer E-Mail Pro Accounts verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnung Ihrer E-Mail Pro Dienstleistung verwalten'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Ziel
@@ -61,6 +61,10 @@ Gehen Sie dazu zum Tab `E-Mail-Accounts`{.action} Ihres Dienstes, klicken Sie da
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
 ### Den Dienst kündigen
+
+Nachdem Sie die E-Mail-Accounts gelöscht haben, müssen Sie die Ihrer E-Mail Pro Plattform zugeordneten Domainnamen löschen, bevor Sie diese kündigen können. Gehen Sie hierzu auf den Tab `Assoziierte Domains`{.action}. Klicken Sie auf den Button `...`{.action} in der Zeile des Domainnamens, den Sie löschen möchten, und klicken Sie dann auf `Diese Domain löschen`{.action}.
+
+![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
 Gehen Sie dazu zum Tab `E-Mail-Accounts`{.action} Ihres Dienstes und klicken Sie oben rechts auf `Aktionen`{.action} und dann auf `Kündigen`{.action}. 
 

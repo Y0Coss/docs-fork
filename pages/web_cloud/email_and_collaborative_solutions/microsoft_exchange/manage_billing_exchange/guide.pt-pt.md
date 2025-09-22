@@ -1,7 +1,7 @@
 ---
 title: 'Gerir a faturação das contas Exchange'
 excerpt: 'Saiba como gerir a faturação do serviço Exchange.'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Objetivo
@@ -81,6 +81,20 @@ Clique no separador `Contas de e-mail`{.action} e, depois, no botão `Ações`{.
 No separador `Contas de e-mail`{.action}, clique em `...`{.action} à direita da conta em causa e, a seguir, clique em `Eliminar`{.action}. A conta será imediatamente retirada da plataforma, pelo que não haverá nenhum cancelamento a realizar.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
+
+### Rescindir a plataforma
+
+Depois de eliminar as contas de e-mail, é necessário eliminar o(s) domínio(s) associado(s) à sua plataforma Exchange antes de a rescindir. Para isso, aceda ao separador `Domínios associados`{.action}. Clique no botão `...`{.action} na linha do nome de domínio a eliminar e, a seguir, clique em `Eliminar este domínio`{.action}.
+
+![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
+
+Na janela de gestão da sua plataforma Exchange, clique no botão "Ações"{.action} em cima à direita e, a seguir, em "Rescindir{.action}".
+
+![billing_exchange](images/billing-exchange-08.png){.thumbnail}
+
+> [!primary]
+>
+> Esta ação implica a suspensão e a eliminação de todas as contas da plataforma Exchange na data de expiração.
 
 ## Quer saber mais? <a name="go-further"></a>
 

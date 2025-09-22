@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar la facturación de sus cuentas Email Pro'
 excerpt: 'Cómo gestionar la facturación de un servicio Email Pro'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 
@@ -62,6 +62,10 @@ Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma, haga clic en
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
 ### Dar de baja la plataforma
+
+Una vez que haya eliminado las cuentas de correo, deberá eliminar el dominio o dominios asociados a su plataforma Email Pro antes de darla de baja. Para ello, abra la pestaña `Dominios asociados`{.action}. Haga clic en el botón `...`{.action} en la línea del nombre de dominio que desea eliminar y, a continuación, haga clic en `Eliminar este dominio`{.action}.
+
+![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
 En la ventana de gestión de su plataforma Email Pro, haga clic en el botón `Acciones`{.action} en la parte superior derecha y seleccione `Dar de baja`{.action}. 
 

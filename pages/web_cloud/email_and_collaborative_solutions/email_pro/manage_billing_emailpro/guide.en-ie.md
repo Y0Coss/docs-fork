@@ -1,7 +1,7 @@
 ---
 title: 'Managing the billing for your Email Pro accounts'
 excerpt: 'Find out how to manage the billing for your Email Pro service'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Objective
@@ -61,6 +61,10 @@ Go to the `Email accounts`{.action} tab of your service, then click on the `...`
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
 ### Cancelling the service
+
+Once you have deleted your email accounts, you will need to delete the domain name(s) associated with your Email Pro platform before canceling it. To do this, go to the `Associated domains`{.action} tab. Click the `...`{.action} button on the line for the domain name you want to delete, then click `Delete this domain`{.action}.
+
+![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
 In the `Email accounts`{.action} tab of your service, click the `Actions`{.action} button in the top right-hand corner, then `Cancel`{.action}. 
 

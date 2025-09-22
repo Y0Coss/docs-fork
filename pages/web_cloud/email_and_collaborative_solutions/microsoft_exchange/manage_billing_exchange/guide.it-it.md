@@ -1,7 +1,7 @@
 ---
 title: 'Gestire la fatturazione di un account Exchange'
 excerpt: 'Come effettuare le diverse azioni relative alla fatturazione del tuo servizio Exchange'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Obiettivo
@@ -81,6 +81,20 @@ Clicca sulla scheda `Account email`{.action}, poi sul pulsante `Azioni`{.action}
 Dalla scheda `Account email`{.action}, clicca su `...`{.action} in corrispondenza dell’account interessato e poi clicca su `Elimina`{.action}.  L’account sarà rimosso dalla piattaforma immediatamente, quindi non sarà necessario disattivarlo.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
+
+### Disattiva la piattaforma
+
+Dopo aver eliminato gli account email, è necessario eliminare il o i domini associati alla piattaforma Exchange prima di disattivarla. Per farlo, clicca sulla scheda `Domini associati`{.action}. Clicca sul pulsante `...`{.action} sulla riga del nome di dominio da eliminare e poi clicca su `Elimina questo dominio`{.action}.
+
+![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
+
+Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `Actions`{.action} in alto a destra e poi su `Disattiva`{.action}.
+
+![billing_exchange](images/billing-exchange-08.png){.thumbnail}
+
+> [!primary]
+>
+> Questa azione comporta la sospensione e l'eliminazione di tutti gli account della piattaforma Exchange alla data di scadenza.
 
 ## Per saperne di più <a name="go-further"></a>
 

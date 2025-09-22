@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar la facturación de sus cuentas Exchange'
 excerpt: 'Cómo gestionar la facturación de un servicio Exchange'
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Objetivo
@@ -79,6 +79,20 @@ Acceda a la pestaña `Cuentas de correo`{.action}, haga clic en el botón `Accio
 En la pestaña `Cuentas de correo`{.action}, haga clic en `...`{.action} a la derecha de la cuenta correspondiente y luego en `Eliminar`{.action}. La cuenta se eliminará de la plataforma de inmediato, por lo que no será necesario darla de baja.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
+
+### Dar de baja la plataforma
+
+Una vez que haya eliminado las cuentas de correo, deberá eliminar el dominio o dominios asociados a su plataforma Exchange antes de darla de baja. Para ello, abra la pestaña `Dominios asociados`{.action}. Haga clic en el botón `...`{.action} en la línea del nombre de dominio que desea eliminar y, a continuación, haga clic en `Eliminar este dominio`{.action}.
+
+![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
+
+Desde la ventana de gestión de su plataforma Exchange, haga clic en el botón `Actions`{.action} en la parte superior derecha y luego en `Dar de baja`{.action}.
+
+![billing_exchange](images/billing-exchange-08.png){.thumbnail}
+
+> [!primary]
+>
+> Esta acción provocará la suspensión y la eliminación de todas las cuentas de la plataforma Exchange en su fecha de expiración.
 
 ## Más información <a name="go-further"></a>
 

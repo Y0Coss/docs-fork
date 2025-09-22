@@ -1,7 +1,7 @@
 ---
 title: Gestire la fatturazione dei tuoi account Email Pro
 excerpt: Come gestire la fatturazione del tuo servizio Email Pro
-updated: 2025-04-28
+updated: 2025-09-22
 ---
 
 ## Obiettivo
@@ -61,6 +61,10 @@ Clicca sulla scheda `Account email`{.action} della tua piattaforma e poi sul pul
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
 ### Rimuovi la piattaforma
+
+Dopo aver eliminato gli account email, è necessario eliminare il o i domini associati alla piattaforma Email Pro prima di disattivarla. Per farlo, clicca sulla scheda `Domini associati`{.action}. Clicca sul pulsante `...`{.action} sulla riga del nome di dominio da eliminare e poi clicca su `Elimina questo dominio`{.action}.
+
+![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
 Dalla finestra di gestione della piattaforma Email Pro, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Disattiva`{.action}. 
 
