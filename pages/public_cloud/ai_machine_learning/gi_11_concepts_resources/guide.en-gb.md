@@ -14,14 +14,14 @@ This guide will walk you through accessing and interpreting the various metrics 
 
 - An AI Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - An [AI user](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
-- Access to the [OVHcloud Control Panel](/links/manager) or [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your computer
+- Access to the [OVHcloud Control Panel](/links/manager) or [the OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your computer
 - A running **OVHcloud AI Tool** (AI Notebooks, AI Training, or AI Deploy)
 
 ## Instructions
 
 ### Monitoring Grafana Access
 
-The monitoring dashboard for **AI Tools** can be accessed via a dedicated URL, which is provided in the AI Tool details, accessible from the Control Panel (UI) or with the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). The monitoring URL is structured as follows: *https://monitoring.<REGION>.ai.cloud.ovh.net/d/gpu?var-job=<JOB-ID>*.
+The monitoring dashboard for **AI Tools** can be accessed via a dedicated URL, which is provided in the AI Tool details, accessible from the Control Panel (UI) or with the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). The monitoring URL is structured as follows: *`https://monitoring.<REGION>.ai.cloud.ovh.net/d/gpu?var-job=<JOB-ID>`*.
 
 To fetch your AI Tool monitoring URL, you can use either the CLI or the Control Panel UI:
 
@@ -32,7 +32,7 @@ To fetch your AI Tool monitoring URL, you can use either the CLI or the Control 
 >>
 >> Select your Public Cloud project, then go to the `AI & Machine Learning`{.action} category in the left menu and choose `AI Notebooks`{.action}, `AI Training`{.action} or `AI Deploy`{.action} section depending on the AI Tool you are using.
 >>
->> From there, you will access a table listing your instances, where you can find the one you need and its general information. To view your instance details, click either the instance name or the `...`{.action} button and then `Manage`{.action}. 
+>> From there, you will access a table listing your instances, where you can find the one you need and its general information. To view your instance details, click either the instance name or the `...`{.action} button and then `Manage`{.action}.
 >>
 >> ![image](images/00_access_tool_details.png){.thumbnail}
 >>
@@ -44,7 +44,7 @@ To fetch your AI Tool monitoring URL, you can use either the CLI or the Control 
 >>
 >> To follow this part, make sure you have installed the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) on your computer or on an instance.
 >>
->> If you have not already, log in to the `ovhai` CLI. Once logged in, you can list your existing notebooks, jobs, or apps by running one of the following commands, depending on the AI tool you are using:
+>> If you have not done it already, log in to the `ovhai` CLI. Once logged in, you can list your existing notebooks, jobs, or apps by running one of the following commands, depending on the AI tool you are using:
 >>
 >> ```bash
 >> ovhai notebook list
@@ -121,7 +121,6 @@ To fetch your AI Tool monitoring URL, you can use either the CLI or the Control 
 >> The AI Tool monitoring can be found in the **Monitoring Url** field, located at the bottom of the details section.
 
 ### Monitoring UI Details for AI Tools
-
 
 The monitoring dashboard for **AI Tools** provides detailed insights into the resource usage of your instances. The available panels vary depending on the service (AI Notebooks, AI Training, or AI Deploy).
 
