@@ -280,7 +280,7 @@ Tout d'abord, effectuez une requête [WHOIS](/links/web/domains-whois) pour savo
 
 Cas n°1.A - Votre nom de domaine est enregistré chez OVHcloud et vous êtes bien déclaré en tant que titulaire du nom de domaine :
 
-Effectuez une [procédure de récupération des contacts](/links/web/) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager). Ainsi, vous n'aurez plus besoin de contacter la personne qui gérait auparavant votre nom de domaine.
+Effectuez une [procédure de récupération des contacts](/links/transversal/procedure-change-contact) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager). Ainsi, vous n'aurez plus besoin de contacter la personne qui gérait auparavant votre nom de domaine.
 
 Cas n°1.B - Votre nom de domaine est enregistré chez OVHcloud et vous n'êtes pas déclaré en tant que titulaire du nom de domaine :
 
@@ -300,7 +300,7 @@ Tout d'abord, effectuez une requête [WHOIS](/links/web/domains-whois) pour vér
 
 Cas n°1 - Vous êtes bien déclaré en tant que titulaire du nom de domaine :
 
-Effectuez une [procédure de récupération des contacts](/links/web/) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager). Ainsi, vous n'aurez plus besoin de contacter la personne qui gérait auparavant votre nom de domaine.
+Effectuez une [procédure de récupération des contacts](/links/transversal/procedure-change-contact) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager). Ainsi, vous n'aurez plus besoin de contacter la personne qui gérait auparavant votre nom de domaine.
 
 Cas n°2 - Vous n'êtes pas déclaré en tant que titulaire du nom de domaine :
 
@@ -922,14 +922,14 @@ Cela signifie que le nom de domaine n'est pas géré depuis votre [espace client
 
 Vous pourrez ensuite faire l'une des actions suivantes (si vous êtes le titulaire déclaré sur le whois du nom de domaine): 
 
-- Le nom de domaine est enregistré chez OVHcloud : Vous pourrez effectuer une [procédure de récupération des contacts](/links/web/) pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
+- Le nom de domaine est enregistré chez OVHcloud : Vous pourrez effectuer une [procédure de récupération des contacts](/links/transversal/procedure-change-contact) pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
 - Le nom de domaine n'est pas enregistré chez OVHcloud : Vous pourrez réaliser une opération de [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) vers OVHcloud pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
 
 Cas n°2 - Le nom de domaine apparaît dans la liste :
 
 Cela signifie que vous ne disposez pas des droits suffisants pour gérer le nom de domaine depuis votre [espace client OVHcloud](/links/manager). Effectuez une requête [WHOIS](/links/web/domains-whois) pour vérifier que vous êtes bien déclaré en tant que titulaire du nom de domaine.
 
-Vous pourrez ensuite effectuer une [procédure de récupération des contacts](/links/web/) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager).
+Vous pourrez ensuite effectuer une [procédure de récupération des contacts](/links/transversal/procedure-change-contact) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager).
 
 ///
 
