@@ -1,7 +1,7 @@
 ---
 title: "How to migrate an n8n configuration between two VPS"
 excerpt: "Find out how to export and import a complete n8n configuration (workflows and credentials) from an external VPS to an OVHcloud VPS, and vice versa."
-updated: 2025-09-04
+updated: 2025-09-23
 ---
 
 ## Objective
@@ -15,9 +15,9 @@ This guide explains how to transfer an existing n8n configuration to an OVHcloud
 
 ## Instructions
 
-> [!primary]
+> [!success]
 > 
-> If you are starting from scratch, opt for a [n8n VPS preinstalled OVHcloud](https://www.ovhcloud.com/en-gb/vps/vps-n8n/) to get started quickly.
+> If you are starting from scratch, opt for an [OVHcloud preinstalled n8n VPS](/links/bare-metal/vps-n8n) to get started quickly.
 
 ### Summary
 

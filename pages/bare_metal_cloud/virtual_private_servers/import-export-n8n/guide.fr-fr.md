@@ -15,9 +15,9 @@ Ce guide vous explique comment transférer une configuration n8n existante vers 
 
 ## En pratique
 
-> [!primary]
+> [!success]
 > 
-> Si vous repartez de zéro, optez pour un [VPS n8n préinstallé OVHcloud](https://www.ovhcloud.com/fr/vps/vps-n8n/) pour démarrer rapidement.
+> Si vous devez commencer une nouvelle installation, optez pour un [VPS n8n OVHcloud préinstallé](/links/bare-metal/vps-n8n) pour démarrer rapidement.
 
 ### Sommaire
 
