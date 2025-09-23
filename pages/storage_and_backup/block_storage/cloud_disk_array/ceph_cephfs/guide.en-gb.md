@@ -156,72 +156,73 @@ Next, configure your client to connect to the CDA cluster by editing (or creatin
 
 1. Create the Ceph configuration directory:
 
-    ```bash
-    sudo mkdir -p /etc/ceph
-    ```
+```bash
+sudo mkdir -p /etc/ceph
+```
 
 2. Create and edit the ceph.conf file:
 
-    ```bash
-    sudo nano /etc/ceph/ceph.conf
-    ```
+```bash
+sudo nano /etc/ceph/ceph.conf
+```
 
 3. Add the `[global]` section with the public IP addresses of your monitors. You can find these IPs on the main page of your Cloud Disk Array in the OVHcloud Control Panel.
 
-    ```bash
-    [global]
-    #Specific fsid           
-    fsid = aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee
-    
-    #Force use secure protocol
-    ms_client_mode = secure
-    
-    #Force the messenger v2 protocol
-    ms_bind_msgr2 = true
-    
-    # Use the PUBLIC IPs provided for your Cloud Disk Array
-    mon_host =A.B.X.Y:6789,A.B.X.Y:6789,A.B.X.Y:6789
-    ```
+```bash
+[global]
 
-    The FSID corresponds to the service name of your CDA. The monitor host IPs can be retrieved using the following API call:
+#Specific fsid   
+fsid = aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee
 
-    > [!api]
-    >
-    > @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}
-    >
+#Force use secure protocol
+ms_client_mode = secure
 
-    ![api request 05](images/api_request_05.png){.thumbnail}
+#Force the messenger v2 protocol
+ms_bind_msgr2 = true
+
+# Use the PUBLIC IPs provided for your Cloud Disk Array
+mon_host =A.B.X.Y:6789,A.B.X.Y:6789,A.B.X.Y:6789
+```
+
+The FSID corresponds to the service name of your CDA. The monitor host IPs can be retrieved using the following API call:
+
+> [!api]
+>
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}
+>
+
+![api request 05](images/api_request_05.png){.thumbnail}
 
 4. Save and close the file.
 
-    You will also need a second file containing the key for the user that connects to the cluster. Fetch the user key with the following API call:
+You will also need a second file containing the key for the user that connects to the cluster. Fetch the user key with the following API call:
 
-    > [!api]
-    >
-    > @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/user/{userName}
-    >
+> [!api]
+>
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/user/{userName}
+>
 
-    ![api request 06](images/api_request_06.png){.thumbnail}
+![api request 06](images/api_request_06.png){.thumbnail}
 
 Then, create a secret file for this user:
 
 1. Create a file called /etc/ceph/[USERID].secret
 
-    ```bash
-    sudo nano /etc/ceph/[USERID].secret
-    ```
+```bash
+sudo nano /etc/ceph/[USERID].secret
+```
 
 2. Add the user key to the file in the correct format:
 
-    ```bash
-    YOUR_SECRET_KEY_FOR_USER
-    ```
+```bash
+YOUR_SECRET_KEY_FOR_USER
+```
 
 3. Set strict permissions on the secret file to ensure security:
 
-    ```bash
-    sudo chmod 600 /etc/ceph/[USERID].secret
-    ```
+```bash
+sudo chmod 600 /etc/ceph/[USERID].secret
+```
 
 Finally you can mount your filesystem:
 
