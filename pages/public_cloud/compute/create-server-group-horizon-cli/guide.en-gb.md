@@ -1,104 +1,109 @@
 ---
-title: 'Creating and using a server group in Horizon and CLI'
-excerpt: 'Find out how to create a server group and use it for Public Cloud instance'
-updated: 2025-09-16
+title: 'Creating and using a Server Group in Horizon and CLI'
+excerpt: 'Find out how to create a Server Group and use it for Public Cloud instance'
+updated: 2025-09-23
 ---
 
-This documentation explains how to use the server groups feature to control the scheduling of a group of servers (instances).
+## Objective
 
-**Using Server groups to provide a mechanism to group servers according to a certain policy**
+This documentation explains how to use the Server Groups feature to control the scheduling of a group instances.
+
+**Using Server Groups to provide a mechanism to group instances according to a certain policy.**
 
 ## Prerequisites
 
-In order to use server groups you must use the OpenStack Dashboard or the Openstack CLI. Make sure you have [enabled it](../../getting-started/enable-openstack-cli.md).
+In order to use Server Groups you must use the OpenStack Dashboard or the Openstack CLI. Make sure you have [enabled it](../../getting-started/enable-openstack-cli.md).
 
 ### Definition
 
-#### Policies
+#### **Policies**
 
-A server group can have one of four different policies: **affinity**, **soft-affinity**, **anti-affinity** or **soft-anti-affinity**.
+A Server Group can have one of four different policies: **Affinity**, **Soft Affinity**, **Anti Affinity** or **Soft Anti Affinity**.
 
 ##### **Affinity**
 
-A server group with the policy of `affinity` will make sure that all the servers in that group are **always** placed on the same physical compute node.
+A Server Group with the policy of `affinity` will make sure that all the instances in that group are **always** placed on the same physical compute node.
 
-##### **Soft-affinity**
+##### **Soft Affinity**
 
-A policy of `soft-affinity` will **try to** make sure that all the servers in that group are placed on the same physical compute node, but ultimately will allow it if otherwise not possible.
+A policy of `soft affinity` will **try to** make sure that all the instances in that group are placed on the same physical compute node, but ultimately will allow it if otherwise not possible.
 
-##### **Anti-affinity**
+##### **Anti Affinity**
 
-A server group with the policy of `anti-affinity` will make sure that the servers in that group are **never** placed on the same physical compute node.
+A Server Group with the policy of `anti affinity` will make sure that the instances in that group are **never** placed on the same physical compute node.
 
-##### **Soft anti-affinity**
+##### **Soft Anti Affinity**
 
-A policy of `soft-anti-affinity` will **try to** make sure that all the servers in that group are not placed on the same physical compute node, but ultimately will allow it if otherwise not possible.
+A policy of `soft anti affinity` will **try to** make sure that all the instances in that group are not placed on the same physical compute node, but ultimately will allow it if otherwise not possible.
 
-### Step 1: Creating server groups
+### Step 1: Creating Server Groups
 
 > [!tabs]
 >
 > **Openstack Dashboard**
->> >![Keystone](images/Create_Server_Groups_OpenStack_Dashboard.png){.thumbnail}
+>> >![Keystone](images/create_server_groups_openstack_dashboard.png){.thumbnail}
 >> >
 >> >* Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
 >> >* Select the appropriate region from the drop down menu at the top left.
->> >* On the Project tab, open the `Compute`{.action} tab and click the `Server Groups`{.action} category.
->> >* Click on `Create Server Group`{.action}.
->> >* In the popup window you will be taken to a form where you may setup your virtual machine. You can customize the Server Group with adding one from Available to Allocated to add the instance(s) to the server groups.
->> >* Click `Launch Instance`{.action}.
+>> >* On the Project tab, open the `Compute`{.action} tab and click on `Server Groups`{.action}.
+>> >* Next, cick on `+ Create Server Group`{.action}.
+>> >* In the popup window that appears, select a `Name` and `Policy` for your server group.
+>> >* Click on `Submit`{.action}.
 >>
 > **CLI**
->> To create a server group, use the following command:
+>> To create a Server Group, use the following command:
 >>
 >> ```bash
 >> openstack server group create \ --policy [affinity|soft-affinity|anti-affinity|soft-anti-affinity] \<server_group_name>
->>```
+>> ```
+>>
 
-### Step 2: Creating servers using server groups
+### Step 2: Creating an Instance using Server Groups
 
 > [!tabs]
+>
 > Openstack Dashboard
 >> >
->> > Horizon can create, read, update, and delete and also get a list of server groups for a tenant to allow specification of a group when booting a VM.  
+>> > Horizon can create, read, update, and delete and also get a list of Server Groups for a tenant to allow specification of a group when booting a VM.  
 >> >
 >> >* Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
 >> >* Select the appropriate region from the drop down menu at the top left.
->> >* On the Project tab, open the `Compute`{.action} tab and click the `Instances`{.action} category.
->> >* In the popup window that appears in the Server Group tab and select the Policy for the Server Group, and click on `Submit`{.action} to create the group.
->> > ![create_an_server_with_server_group_OpenStack_Dashboard](images/create_an_server_with_server_group_OpenStack_Dashboard.png){.thumbnail}>> >
->> >* Click on `Launch Instances`{.action}.
+>> >* On the Project tab, open the `Compute`{.action} tab and click on `Instances`{.action}.
+>> >* Click on `Launch Instance`{.action}.
+>> >* In the popup window, complete the necessary fields to create your instance. In the `Server Group` field, click on the drop-down arrow next to `Available` to display the list of available server groups. Select a server group and it will be moved to `Allocated`.
+>> > ![create server with server group OpenStack](images/create_a_server_with_server_group_openStack_dashboard.png){.thumbnail}
+>> >* Once done, click on `Launch Instance`{.action}.
 >> >
 > CLI
 >> >
->> > To apply a server group policy, you must specify the group when creating a server, as a *scheduling hint.*  
+>> > To apply a Server Group policy, you must specify the group when creating an instanfce, as a *scheduling hint.*  
 >> > To do that, use the `--hint` parameter in the following command
 >> >
 >> > ```bash
 >> > openstack server create --hint group=<server_group_id> [...] <server_name>
->> >```
+>> > ```
 
-If you subsequently launch more servers referencing the same server group, the scheduler concentrates or distributes them according to the server group's policy.
+If you subsequently launch more instances referencing the same Server Group, the scheduler concentrates or distributes them according to the Server Group's policy.
 
-### Modifiying a server group
+### Modifiying a Server Group
 
-![List_Server_Groups_OpenStack_Dashboard](images/List_Server_Groups_OpenStack_Dashboard.png){.thumbnail}
+![List Server Groups OpenStack](images/list_server_groups_openStack_dashboard.png){.thumbnail}
 
 > [!alert]
 >
-> Once created, a server group cannot be modified.  
+> Once created, a Server Group cannot be modified.  
 >
-> In addition, a server cannot move between server groups.  
+> In addition, an instance cannot move between Server Groups.  
 >
-> In both cases, this is because doing so would require potentially moving the server to satisfy the server group policy.
+> In both cases, this is because it would potentially require moving the instance to comply with the Server Group policy.
 
 ### Troubleshooting common issues
 
 > [!warning]
 >
-> If you keep creating servers within a server group with a policy of `anti-affinity`, you will eventually exceed the total amount of physical compute nodes in the region.  
+> If you keep creating instances within a Server Group with a policy of `anti affinity`, you will eventually exceed the total amount of physical compute nodes in the region.  
 >
-> The command will still succeed, but the server will subsequently fail to be scheduled to a compute node.  
+> The command will still succeed, but the instance will subsequently fail to be scheduled to a compute node.  
 
 Instead, it will assume the `ERROR` status with the following `fault` message: _No valid host was found. There are not enough hosts available.
 
@@ -114,17 +119,17 @@ $ openstack server show -c fault -c status <server_id>
 +--------+--------------------------------------------------+
 ```
 
-![Server_group_instances_error_OpenStack_Dashboard](images/Server_group_instances_error_OpenStack_Dashboard.png){.thumbnail}
+![Server group error OpenStack](images/server_group_instances_error_openstack_dashboard.png){.thumbnail}
 
-Another reason is that Openstack cannot schedule the server on a different physical compute node because there is already a server in the server group on every node.
+Another reason is that OpenStack cannot schedule the instance on a different physical compute node because there is already a server in the Server Group on every node.
 
-The same scheduling error and "fault" message will occur when using a server group with a policy of `affinity` as well, when you create more servers than a physical compute node can host.
+The same scheduling error and "fault" message will occur when using a Server Group with a policy of `affinity` as well, when you create more instances than a physical compute node can host.
 
-However when using a soft-affinity policy, such as `soft-affinity` or `soft-anti-affinity`, the scheduler is allowed to break the server group's policy if it is unable to uphold it.
+However when using a Soft Affinity policy, such as `soft affinity` or `soft anti affinity`, the scheduler is allowed to break the Server Group's policy if it is unable to uphold it.
 
-### Checking Server in a Server group
+### Checking an instance in a Server Group
 
-This means you may want to verify that your servers are on the same or on different physical compute nodes by looking at the _hostId_ value of your servers. We have deployed four instances two named `anti_affinity_server` with an `anti_affinity server group` and two named `affinity_server` with an `affinity server group`.
+This means you may want to verify that your instances are on the same or on different physical compute nodes by looking at their _hostId_ value. We have deployed four instances two named `anti_affinity_server` with an `anti affinity server group` and two named `affinity_server` with an `affinity server group`.
 
 ```bash
 openstack server list 
@@ -138,7 +143,7 @@ openstack server list
 +------------------------+--------+-----------+--------+
 ```
 
-You can confirm the scheduler was done following the policy of the server group with the following command:
+You can confirm the scheduler was done following the policy of the Server Group with the following command:
 
 ```bash
 openstack server show -c hostId xSERVER_IDx
@@ -173,14 +178,14 @@ openstack server show -c hostId anti_affinity_server-2
 +--------+----------------------------------------------------------+
 ```
 
-`hostId` is a unique identifier for each physical compute node. By comparing this value on your different servers you can be sure if your server group policy is being upheld or not.
+`hostId` is a unique identifier for each physical compute node. By comparing this value across your various instances, you can ensure that your Server Group policy is being followed or not.
 
 > [!primary]
 >
 > It's not possible to compare `hostId` between different projects because the values are unique for each project.
 >
 
-### Server group quota
+### Server Group quota
 
 > [!primary]
 >

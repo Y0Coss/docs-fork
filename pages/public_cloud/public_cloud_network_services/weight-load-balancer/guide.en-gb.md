@@ -1,18 +1,19 @@
 ---
-title: 'Using weight on a Load Balancer member'
+title: 'Using the weight feature on a Load Balancer member'
 excerpt: 'Learn how to adjust the weight of a Load Balancer member'
-updated: 2025-09-19
+updated: 2025-09-23
 ---
 
 ## Objective
 
 This guide explains how to use the weight feature to temporarily remove a Load Balancer member from receiving traffic for maintenance purposes.
 
-## Using weight
+## Using the weight feature
 
 Octavia supports setting the weight of members from 0 to 256.
 
 > [!info]
+>
 > The weight of a member determines the portion of requests or connections it services compared to the other members of the pool. A higher weight means it will receive more traffic.  
 > For example, a member with a weight of 10 receives five times as much traffic as a member with a weight of 2.
 
@@ -47,7 +48,7 @@ done
 
 You should see alternating responses from the two members:
 
-```htlm
+```html
 <html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
 <html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHCloud load balancer member #0 !</h1></body></html>
 ```
@@ -59,7 +60,7 @@ You should see alternating responses from the two members:
 > **OVHcloud API**
 >> Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps)).
 >> 
->> In case the project ID is unknown, the calls below allow you to retrieve it.
+>> In case the project ID is unknown, the API calls below allow you to retrieve it.
 >>
 >> > [!api]
 >> >
@@ -81,19 +82,19 @@ You should see alternating responses from the two members:
 >> >
 >> > Fill in the field with the previously obtained information:
 >> >
->> > **serviceName**: The Public Cloud project ID in the form of a 32-character string
+>> > **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >> >
->> > **regionName**: The name of your region
+>> > **regionName**: The name of your region.
 >> >
 >> > You can leave the “loadbalancerId” field blank in order to obtain all the pools created inthe region specified.
 >> > 
->> > You can update a pool member
+>> > You can update a pool member with the following API call:
 >> > 
 >> > [!api]
 >> >
 >> > @api {v1} /cloud PUT /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member/{memberId}
 >>
->> > Fill in the field with the previously obtained information:
+>> > Fill in the fields with the previously obtained information:
 >> >
 >> > **Member ID**: The Member ID in the form of a 32-character string.
 >> >
@@ -101,7 +102,7 @@ You should see alternating responses from the two members:
 >> >
 >> > **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >> >
->> > **regionName**: The name of your region
+>> > **regionName**: The name of your region.
 >>
 > **Horizon**
 >> Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
@@ -114,27 +115,28 @@ You should see alternating responses from the two members:
 >>
 >> ![public-cloud](images/create-a-volume-2.png){.thumbnail width="800"}
 >>
->> In the tab, click on `Pools`{.action} and then on the `pool`{.action} in which the member is .
+>> In the tab, click on `Pools`{.action} and then on the `pool`{.action} in which the member is.
 >>
 >> In the tab, click on `Members`{.action} and then on `Edit Member`{.action}.
 >>
->> You can edit the Weight then click on `Update`{.action}
+>> You can edit the `Weight`, then click on `Update`{.action}
 >>
 >> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard.png){.thumbnail}
 >> 
 > **CLI**
 >> To stop traffic from being routed to a specific member, set its weight to 0:
+>>
 >> ```bash
 >> $ openstack loadbalancer member set --weight 0 <pool> <member_0>
->>```
->>
+>> ```
 
 ### Step 3: Verify Member Status
 
 After setting the member’s weight to 0, its status will change from **ONLINE** to **DRAINING**.
 
-> [!primary] 
-> It is important to note that in the current system, the member will remain in the DRAINING state even after all traffic has been drained.
+> [!primary]
+>
+> It is important to note that in the current system, the member will remain in the **DRAINING** state even after all traffic has been drained.
 >
 
 This can be confusing because some users expect a final status of **DRAINED** once all traffic has been redirected. However, the system does not automatically transition to **DRAINED**.  
@@ -147,32 +149,35 @@ If having a final **DRAINED** status is critical for your operations, it is reco
 > [!tabs]
 >
 > **OVHcloud API**
->> You can update a pool member
-Member ID
-Pool ID
-Region name
-Service name
+>> You can update a pool member with the following API call:
+>>
+>> - Member ID
+>> - Pool ID
+>> - Region name
+>> - Service name
 >>
 >> PUT /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member/{memberId}>> 
 >> 
 > **Horizon**
+>>
 >> There are two ways to access the Horizon interface:
->> - To log in with OVHcloud Single Sign-On: Use the `Horizon`{.action} link in the left-hand menu under "Management Interfaces" after opening your `Public Cloud`{.action} project in the [OVHcloud Control Panel](/links/manager).
+>>
+>> - Log in with OVHcloud Single Sign-On: In the [OVHcloud Control Panel](/links/manager), click on `Horizon`{.action} in the left-hand menu under "Management Interfaces" after opening your `Public Cloud`{.action} project.
 >> - To log in with a specific OpenStack user: Open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) previously created, then click on `Connect`{.action}.
 >> 
 >> Select the appropriate region from the drop down menu at the top left.
 >>
->> In the left menu, click on the `Network`{.action} tab and select `Load Balancers`{.action}.
+>> In the left menu, click on  `Network`{.action} and select `Load Balancers`{.action}.
 >> 
 >> Choose the Load Balancer you want to configure and click on the `Health Monitors`{.action} tab.
 >>
 >> ![public-cloud](images/create-a-volume-2.png){.thumbnail width="800"}
 >>
->> In the tab, click on `Pools`{.action} and then click on the `pool`{.action} in which the member is .
+>> In the tab, click on `Pools`{.action} and then click on the `pool`{.action} in which the member is.
 >>
 >> In the tab, click on `Members`{.action} and then on `Edit Member`{.action}.
 >>
->> You can edit the Weight to 0 then click on `Update`{.action}
+>> You can edit the Weight to 0 then click on `Update`{.action}.
 >>
 >> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard.png){.thumbnail}
 >>
@@ -183,7 +188,7 @@ Service name
 >> $ openstack loadbalancer member list <pool_name>
 >> ```
 >>
->> You should see
+>> You should see:
 >>
 >> ```bash
 >> ---------------------------------------------------------------------------------------------------
@@ -215,7 +220,7 @@ Service name
 >>}
 >> ```
 >>
->> Replace `<POOL_ID>` with the ID of your Pool. For more details on the available options for this resource, refer to the [official documentation]>>>>(https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_monitor_v2) for the `openstack_lb_monitor_v2` resource on the Terraform Registry.
+>> Replace `<POOL_ID>` with the ID of your Pool. For more details on the available options for this resource, refer to the [official documentation](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_monitor_v2) for the `openstack_lb_monitor_v2` resource on the Terraform Registry.
 >>
 >> **Applying the Configuration**
 >>
@@ -231,7 +236,7 @@ Service name
 
 ### Step 4: Confirm Traffic is Directed to the Active Member
 
-The member which weight is 0 will have an	Operating Status Draining. Run the test script again.
+The member which weight is 0 will have an	Operating Status Draining. Run the test script again:
 
 ```bash
 #!/bin/sh
@@ -242,7 +247,7 @@ while true; do
 done
 ```
 
-You should now only see responses from `member_1`
+You should now only see responses from `member_1`:
 
 ```html
 <html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
@@ -250,18 +255,18 @@ You should now only see responses from `member_1`
 
 ### Step 5: Perform Maintenance
 
-Now that member_0 is no longer receiving traffic, you can safely perform maintenance or upgrade tasks.
+Now that `member_0` is no longer receiving traffic, you can safely perform maintenance or upgrade tasks.
 
 ### Step 6: Restore Traffic to the Member
 
-Once the maintenance is complete, set the weight of member_0 back to its original value (e.g., 1):
+Once the maintenance is complete, set the weight of `member_0` back to its original value (e.g., 1):
 
 > [!tabs]
-> **OVHcloud API**
+>
 > **OVHcloud API**
 >> Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps)).
 >> 
->> In case the project ID is unknown, the calls below allow you to retrieve it.
+>> In case the project ID is unknown, the API calls below allow you to retrieve it:
 >>
 >> > [!api]
 >> >
@@ -283,12 +288,13 @@ Once the maintenance is complete, set the weight of member_0 back to its origina
 >> >
 >> > Fill in the field with the previously obtained information:
 >> >
->> > **serviceName**: The Public Cloud project ID in the form of a 32-character string
+>> > **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >> >
->> > **regionName**: The name of your region
+>> > **regionName**: The name of your region.
+>>
 >> > You can leave the “loadbalancerId” field blank in order to obtain all the pools created inthe region specified.
 >> > 
->> > You can update a pool member
+>> > You can update a pool member:
 >> > 
 >> > [!api]
 >> >
@@ -296,13 +302,13 @@ Once the maintenance is complete, set the weight of member_0 back to its origina
 >> >
 >> > Fill in the field with the previously obtained information:
 >> >
->> > **Member ID**: The Member ID in the form of a 32-character string
+>> > **Member ID**: The Member ID in the form of a 32-character string.
 >> >
->> > **Pool ID**: The Pool ID in the form of a 32-character string
+>> > **Pool ID**: The Pool ID in the form of a 32-character string.
 >> >
->> > **serviceName**: The Public Cloud project ID in the form of a 32-character string
+>> > **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >> >
->> > **regionName**: The name of your region
+>> > **regionName**: The name of your region.
 >>
 > **Horizon**
 >>
@@ -316,7 +322,7 @@ Once the maintenance is complete, set the weight of member_0 back to its origina
 >>
 >> ![public-cloud](images/create-a-volume-2.png){.thumbnail width="800"}
 >>
->> In the tab, click on `Pools`{.action} and then on the `pool`{.action} in which the member is .
+>> In the tab, click on `Pools`{.action} and then on the `pool`{.action} in which the member is.
 >>
 >> In the tab, click on `Members`{.action} and then on `Edit Member`{.action}.
 >>
@@ -327,6 +333,7 @@ Once the maintenance is complete, set the weight of member_0 back to its origina
 > **CLI**
 >>
 >> To restore traffic from being routed to a specific member, set its weight to 1:
+>>
 >> ```bash
 >> $ openstack loadbalancer member set --weight 1 <pool> <member_0>
 >> ```
@@ -353,21 +360,21 @@ Once the maintenance is complete, set the weight of member_0 back to its origina
 >>
 >> Replace `<POOL_ID>` with the ID of your Pool. For more details on the available options for this resource, refer to the [official documentation](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_monitor_v2) for the `openstack_lb_monitor_v2` resource on the Terraform Registry.
 >>
->>**Applying the Configuration**
+>> **Applying the Configuration**
 >>
->>To apply your Terraform configuration:
+>> To apply your Terraform configuration:
 >>
->>- Run `terraform init` to initialize the Terraform working directory.
->>- Run `terraform apply` to apply the changes defined in your configuration.
+>> - Run `terraform init` to initialize the Terraform working directory.
+>> - Run `terraform apply` to apply the changes defined in your configuration.
 >>
->>**Verification**
+>> **Verification**
 >>
 >> After running `terraform apply`, Terraform will provide you with a >>summary of the resources created, modified, or deleted. This confirms the creation or update of your Health Monitor.
 >>
 
 ### Step 7: Verify that both members are now receiving traffic
 
-Reuse the script
+Re-use the script:
 
 ```bash
 #!/bin/sh
