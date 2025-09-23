@@ -1,7 +1,7 @@
 ---
 title: "Résilience 3-AZ : Mécanismes et architectures de référence"
 excerpt: "Comprenez les mécanismes de résilience 3-AZ et explorez les architectures de référence OVHcloud"
-updated: 2025-06-03
+updated: 2025-09-23
 ---
 
 <style>
@@ -65,19 +65,21 @@ Cette section présente des architectures de référence pour un déploiement mu
 > Lorsque AZ-a est rétabli, le Control Plane réintègre progressivement les ressources et les instances concernées dans l'infrastructure globale. Pour les services zonaux (ex. instances, High Speed Block), si des données ont été perdues, la récupération dépend de la mise en œuvre d'une stratégie de backup. En l'absence de backup, certaines données récentes peuvent rester irrécupérables, sauf pour les services tels que Block Storage Classic Multi-Zone ou Object Storage, qui disposent de mécanismes de résilience intégrés.
 >
 
-/// details | **Résilience multi-AZ dans le cloud public**
+/// details | **Résilience multi-AZ dans le Public Cloud**
 
 ![Multi-AZ resilience in the Public Cloud](images/3az-architecture-resilience.png){.thumbnail}
 
-Ce schéma illustre une application en trois couches (frontend Web, backend applicatif et base de données) déployée sur trois zones de disponibilité (AZ), et reposant sur des services régionaux du Public Cloud (Load Balancer, Base de données managée, Floating IP et Gateway) pour assurer haute disponibilité et résilience, même en cas d’incident affectant une AZ.
+Ce schéma illustre une application en trois couches (frontend web, backend applicatif et base de données) déployée sur trois zones de disponibilité (AZ), et reposant sur des services régionaux du Public Cloud (Load Balancer, Base de données managée, Floating IP et Gateway) pour assurer haute disponibilité et résilience, même en cas d’incident affectant une AZ.
 
 1. La Gateway expose publiquement le Load Balancer via une Floating IP.
-2. Le Load Balancer répartit le trafic réseau entre les instances Web.
-3. Le groupe de sécurité Web :
-    - N’accepte que le trafic entrant provenant des IP privées du Load Balancer sur le port Web.
+2. Le Load Balancer répartit le trafic réseau entre les instances web.
+3. Le groupe de sécurité web :
+
+    - Accepte uniquement le trafic entrant provenant des IP privées du Load Balancer sur le port web.
     - Autorise uniquement le trafic sortant vers le groupe de sécurité App sur le port App.
 4. Le groupe de sécurité App :
-    - N’accepte que le trafic entrant provenant du groupe de sécurité Web sur le port App.
+
+    - Accepte uniquement le trafic entrant provenant du groupe de sécurité web sur le port App.
     - Autorise uniquement le trafic sortant vers l’IP privée et le port de la base de données managée.
 5. La base de données managée utilise une ACL qui n’autorise que les connexions provenant des IP privées des instances App.
 
@@ -85,20 +87,20 @@ Ce schéma illustre une application en trois couches (frontend Web, backend appl
 
 - L’application est déployée sur trois AZ (a, b et c).
 - Toutes les AZ sont connectées au même réseau privé.
-- Couche Web : 3 instances Web sont réparties sur les AZ (Web 1 sur AZ-a, Web 2 sur AZ-b, Web 3 sur AZ-c).
+- Couche web : 3 instances web sont réparties sur les AZ (Web 1 sur AZ-a, Web 2 sur AZ-b, Web 3 sur AZ-c).
 - Couche App : 3 instances applicatives sont réparties sur les AZ (App 1 sur AZ-a, App 2 sur AZ-b, App 3 sur AZ-c).
 - Couche données : Une base de données managée régionale est disponible sur toutes les AZ.
-- Un Load Balancer régional (avec nœuds actifs/passifs gérés par OVH) répartit le trafic entre les instances Web.
+- Un Load Balancer régional (avec nœuds actifs/passifs gérés par OVHcloud) répartit le trafic entre les instances web.
 - Les groupes de sécurité restreignent le trafic entre les couches :
-  - Le groupe de sécurité Web n’autorise que les connexions provenant du Load Balancer et vers la couche App.
-  - Le groupe de sécurité App n’autorise que les connexions provenant de la couche Web et vers la base de données managée.
-- La connectivité est assurée par une Floating IP et une Gateway. Les deux services reposent sur un mécanisme actif/passif géré par OVH, aucune configuration supplémentaire n’est nécessaire.
+  - Le groupe de sécurité web n’autorise que les connexions provenant du Load Balancer et vers la couche App.
+  - Le groupe de sécurité App n’autorise que les connexions provenant de la couche web et vers la base de données managée.
+- La connectivité est assurée par une Floating IP et une Gateway. Les deux services reposent sur un mécanisme actif/passif géré par OVHcloud, aucune configuration supplémentaire n’est nécessaire.
 
 **Incident sur AZ‑a** (côté droit)
 
 - L’AZ‑a tombe, rendant Web 1 et App 1 indisponibles.
-- La Gateway dans AZ‑a devient inaccessible, mais la Gateway passive dans une autre AZ prend automatiquement le relais (résilience gérée par OVH).
-- Le Load Balancer reste disponible grâce à son architecture actif/passif gérée par OVH et continue de répartir le trafic entre Web 2 et Web 3.
+- La Gateway dans AZ‑a devient inaccessible, mais la Gateway passive dans une autre AZ prend automatiquement le relais (résilience gérée par OVHcloud).
+- Le Load Balancer reste disponible grâce à son architecture active/passive gérée par OVHcloud et continue de répartir le trafic entre Web 2 et Web 3.
 - La Floating IP reste disponible grâce à son mécanisme actif/passif et continue de router les requêtes vers les instances saines.
 - Les instances backend App 2 (AZ-b) et App 3 (AZ-c) continuent de fonctionner et de traiter les requêtes.
 - La base de données managée régionale reste pleinement disponible sur toutes les AZ.
@@ -109,7 +111,7 @@ Grâce aux services régionaux (Load Balancer, Gateway, Floating IP et base de d
 **Recovery**
 
 - Une fois l’AZ‑a restaurée, ses instances Web 1 et App 1 redémarrent et se synchronisent avec le reste de l’application. Elles redeviennent actives et reprennent le traitement du trafic applicatif.
-- Les services réseau régionaux OVH (Gateway, Load Balancer, Floating IP) dans AZ‑a sont réactivés, mais ne retrouvent pas leur état initial actif. Ils restent passifs, car l’AZ où ils étaient déjà actifs conserve ce rôle. OVH gère automatiquement le mécanisme actif/passif pour maintenir la résilience.
+- Les services réseau régionaux OVHcloud (Gateway, Load Balancer, Floating IP) dans AZ‑a sont réactivés, mais ne retrouvent pas leur état initial actif. Ils restent passifs, car l’AZ où ils étaient déjà actifs conserve ce rôle. OVHcloud gère automatiquement le mécanisme actif/passif pour maintenir la résilience.
 - La base de données managée continue d’accepter les connexions depuis AZ‑a et se synchronise normalement.
 - Le Load Balancer réintègre progressivement Web 1 dans la distribution du trafic.
 - L’application retrouve sa haute disponibilité (HA) complète sur les trois AZ. Toutefois, l’état actif/passif des services réseau peut différer de la configuration initiale : AZ‑a est active pour les instances applicatives mais passive pour les services réseau, tandis que l’AZ initialement active pour les services réseau conserve ce rôle.
