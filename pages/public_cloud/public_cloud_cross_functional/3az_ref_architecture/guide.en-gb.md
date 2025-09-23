@@ -1,7 +1,7 @@
 ---
 title: "3-AZ resilience: Mechanisms and reference architectures"
 excerpt: "Understand 3-AZ resilience mechanisms and explore OVHcloud reference architectures"
-updated: 2025-09-18
+updated: 2025-09-23
 ---
 
 <style>
@@ -18,7 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## Objectives
+## Objective
 
 This guide aims at educating and supporting customers on the principles of resilience in **3-AZ** and the associated reference architectures. It details how OVHcloud services are designed to operate in a multi-AZ environment, deployment best practices and mechanisms for ensuring high availability. A table of **3-AZ** service specifications is provided, along with examples of **2-AZ** architectures to help users structure their infrastructures in a resilient way.
 
@@ -64,6 +64,57 @@ This section presents reference architectures for multi-AZ deployment, illustrat
 > 
 > When AZ-a is restored, the Control Plane gradually reintegrates the resources and instances concerned into the overall infrastructure. For zonal services (e.g. instances, High Speed Block), if data has been lost, recovery depends on the implementation of a backup strategy. In the absence of backup, some recent data may remain irrecoverable, except for services such as Block Storage Classic Multi-Zone or Object Storage, which have built-in resilience mechanisms.
 >
+
+/// details | **Multi-AZ resilience in the Public Cloud**
+
+![Multi-AZ resilience in the Public Cloud](images/3az-architecture-resilience.png){.thumbnail}
+
+This diagram illustrates a three-tier application (web frontend, application backend, and database) deployed across three availability zones (AZ), relying on regional Public Cloud services (Load Balancer, managed database, Floating IP, and Gateway) to ensure high availability and resilience, even in case of an incident impacting one AZ.
+
+1. The Gateway exposes the Load Balancer publicly using a Floating IP.
+2. The Load Balancer distributes network traffic across the web instances.
+3. The web security group:
+    - Accepts only ingress traffic from the Load Balancer’s private IPs on the web port.
+    - Allows only egress traffic to the App security group on the App port.
+4. The App security group:
+    - Accepts only ingress traffic from the web security group on the App port.
+    - Allows only egress traffic to the managed database’s private IP and port.
+5. The managed database uses an ACL that only permits connections from the private IPs of the App instances.
+
+**Normal Operation** (Left side):
+
+- The application is deployed across three AZs (a, b, and c).
+- All AZs are connected to the same Private Network.
+- Web tier: 3 web instances are distributed across the AZs (Web 1 on AZ-a, Web 2 on AZ-b, Web 3 on AZ-c).
+- App tier: 3 application instances are distributed across the AZs (App 1 on AZ-a, App 2 on AZ-b, App 3 on AZ-c).
+- Data tier: A regional managed database is available across all AZs.
+- A regional Load Balancer (with active/passive nodes managed by OVHcloud) distributes traffic between the web instances.
+- Security groups restrict traffic between tiers:
+    - Web security group allows only connections from the Load Balancer and towards the App tier.
+    - App security group allows only connections from the web tier and towards the managed database.
+- Connectivity is ensured by a Floating IP and a Gateway. Both services also rely on an OVHcloud-managed active/passive mechanism, so no additional deployment is required.
+
+**AZ-a Incident** (Right side):
+
+- AZ-a goes down, making Web 1 and App 1 unavailable.
+- The Gateway in AZ-a becomes inaccessible, but the passive Gateway in another AZ automatically takes over (resilience managed by OVHcloud).
+- The Load Balancer remains available thanks to its active/passive architecture managed by OVHcloud, and continues to distribute traffic across Web 2 and Web 3.
+- The Floating IP remains available thanks to its active/passive mechanism, and continues routing requests to healthy instances.
+- Application backend instances App 2 (AZ-b) and App 3 (AZ-c) continue to operate and handle requests.
+- The regional managed database remains fully available across AZs.
+- The application continues to serve users without interruption, though overall capacity is temporarily reduced.
+
+Thanks to the regional services (Load Balancer, Gateway, Floating IP, and managed database), the application remains resilient and available throughout the incident. Once AZ-a is restored, Web 1 and App 1 automatically reintegrate into the system, and the application returns to full high-availability mode.
+
+**Recovery**:
+
+- Once AZ‑a is restored, its Web 1 and App 1 instances restart and synchronize with the rest of the application. They become active again and resume handling application traffic.
+- Regional OVHcloud network services (Gateway, Load Balancer, Floating IP) in AZ‑a are reactivated, but do not return to their original active state. They remain passive, as the AZ where they were previously active continues to hold that role. OVHcloud manages the active/passive mechanism automatically to ensure resilience.
+- The managed database continues to accept connections from AZ‑a and synchronizes normally.
+- The Load Balancer gradually reintegrates Web 1 into the traffic distribution.
+- The application regains full high availability (HA) across all three AZs. However, the active/passive state of the network services may differ from the initial configuration: AZ‑a is active for application instances but passive for network services, while the AZ that was originally active for network services remains active.
+
+///
 
 /// details | **Deployment in 2-AZ with regional Block Storage** <a name="2az-with-regional-block-storage"></a>
 
