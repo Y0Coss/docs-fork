@@ -1,7 +1,7 @@
 ---
 title: Managing firewall rules and port security on networks using OpenStack CLI
 excerpt: Find out how security groups work on Public Cloud
-updated: 2025-09-22
+updated: 2025-09-23
 ---
 
 ## Objective

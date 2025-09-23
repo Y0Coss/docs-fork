@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie regułami firewalla i port security w sieciach korzystających OpenStack CLI
 excerpt: Sprawdź działanie grup zabezpieczeń w usłudze Public Cloud
-updated: 2025-09-22
+updated: 2025-09-23
 ---
 
 > [!primary]

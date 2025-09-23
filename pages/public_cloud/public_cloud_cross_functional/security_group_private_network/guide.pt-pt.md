@@ -1,7 +1,7 @@
 ---
 title: Gestão das regras de firewall e port security nas redes que utilizam OpenStack CLI
 excerpt: Descubra o funcionamento dos grupos de segurança no Public Cloud
-updated: 2025-09-22
+updated: 2025-09-23
 ---
 
 > [!primary]
