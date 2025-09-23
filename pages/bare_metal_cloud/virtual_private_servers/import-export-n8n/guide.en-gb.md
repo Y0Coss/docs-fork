@@ -15,6 +15,10 @@ This guide explains how to transfer an existing n8n configuration to an OVHcloud
 
 ## Instructions
 
+> [!primary]
+> 
+> If you are starting from scratch, opt for a [n8n VPS preinstalled OVHcloud](https://www.ovhcloud.com/en-gb/vps/vps-n8n/) to get started quickly.
+
 ### Summary
 
 - [Method 1: Export and import via n8n CLI](#method1)
