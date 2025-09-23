@@ -67,7 +67,7 @@ At the end, you can use the API call to check that you have cleaned NSX-V:
 >
 >  Find more information on the OVHcloud API in our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
-Visit our page on [VMware on OVHcloud lifecycle policy](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/lifecycle_policy).
+Visit our page on [VMware on OVHcloud lifecycle policy](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/lifecycle_policy). 
 
 #### I only use VXLAN
 
