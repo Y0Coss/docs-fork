@@ -154,19 +154,19 @@ sudo apt install --no-install-recommends ceph-common
 
 Next, configure your client to connect to the CDA cluster by editing (or creating) the **/etc/ceph/ceph.conf** file.
 
-1. Create the Ceph configuration directory:
+1\. Create the Ceph configuration directory:
 
 ```bash
 sudo mkdir -p /etc/ceph
 ```
 
-2. Create and edit the ceph.conf file:
+2\. Create and edit the ceph.conf file:
 
 ```bash
 sudo nano /etc/ceph/ceph.conf
 ```
 
-3. Add the `[global]` section with the public IP addresses of your monitors. You can find these IPs on the main page of your Cloud Disk Array in the OVHcloud Control Panel.
+3\. Add the `[global]` section with the public IP addresses of your monitors. You can find these IPs on the main page of your Cloud Disk Array in the OVHcloud Control Panel.
 
 ```bash
 [global]
@@ -193,7 +193,7 @@ The FSID corresponds to the service name of your CDA. The monitor host IPs can b
 
 ![api request 05](images/api_request_05.png){.thumbnail}
 
-4. Save and close the file.
+4\. Save and close the file.
 
 You will also need a second file containing the key for the user that connects to the cluster. Fetch the user key with the following API call:
 
@@ -206,19 +206,19 @@ You will also need a second file containing the key for the user that connects t
 
 Then, create a secret file for this user:
 
-1. Create a file called /etc/ceph/[USERID].secret
+1\. Create a file called /etc/ceph/[USERID].secret
 
 ```bash
 sudo nano /etc/ceph/[USERID].secret
 ```
 
-2. Add the user key to the file in the correct format:
+2\. Add the user key to the file in the correct format:
 
 ```bash
 YOUR_SECRET_KEY_FOR_USER
 ```
 
-3. Set strict permissions on the secret file to ensure security:
+3\. Set strict permissions on the secret file to ensure security:
 
 ```bash
 sudo chmod 600 /etc/ceph/[USERID].secret
