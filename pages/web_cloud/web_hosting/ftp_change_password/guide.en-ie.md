@@ -1,7 +1,7 @@
 ---
 title: "Changing an FTP user password"
 excerpt: "Find out how to change the password for an FTP user created on your OVHcloud Web Hosting plan"
-updated: 2024-02-29
+updated: 2025-09-19
 ---
 
 ## Objective
@@ -55,7 +55,7 @@ Depending on which OVHcloud [Web Hosting plan](/links/web/hosting) you have, the
 >
 > Your new password must respect the following **password policy**:
 >
->- Minimum 8 characters
+>- Minimum 9 characters
 >- Maximum 30 characters
 >- At least one capital letter
 >- At least one lower-case letter

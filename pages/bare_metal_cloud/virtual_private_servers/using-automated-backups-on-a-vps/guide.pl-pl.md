@@ -1,7 +1,7 @@
 ---
 title: "Jak korzystać z automatycznych kopii zapasowych na serwerze VPS"
 excerpt: "Dowiedz się, jak korzystać z opcji zautomatyzowany backup zapasowych z poziomu Panelu klienta OVHcloud do zabezpieczania danych"
-updated: 2025-08-07
+updated: 2025-09-11
 ---
 
 ## Wprowadzenie
@@ -19,6 +19,10 @@ Opcja zautomatyzowany backup zapasowych dla serwerów VPS pozwala na udostępnie
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Serwer [Prywatne serwery wirtualne](/links/bare-metal/vps) z poziomu Twojego konta OVHcloud.
 - Dostęp administracyjny (uprawnienia użytkownika root) do prywatnego serwera wirtualnego za pośrednictwem protokołu SSH.
+
+> [!warning]
+> Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## W praktyce
 

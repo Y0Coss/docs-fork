@@ -1,7 +1,7 @@
 ---
 title: "Passwort eines FTP-Benutzers ändern"
 excerpt: "Erfahren Sie hier, wie Sie das Passwort eines auf Ihrem OVHcloud Webhosting erstellten FTP-Benutzers ändern"
-updated: 2024-02-29
+updated: 2025-09-19
 ---
 
 ## Ziel 
@@ -58,7 +58,7 @@ Klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden FTP-Benu
 >
 > Ihr neues Passwort muss folgenden **Richtlinien** entsprechen:
 >
->- Mindestens 8 Zeichen
+>- Mindestens 9 Zeichen
 >- Maximal 30 Zeichen
 >- Mindestens ein Großbuchstabe
 >- Mindestens ein Kleinbuchstabe

@@ -1,7 +1,7 @@
 ---
 title: "How to use automated backups on a VPS"
 excerpt: "Find out how to use the Automated backup option in the OVHcloud Control Panel to secure your data"
-updated: 2025-08-07
+updated: 2025-09-11
 ---
 
 ## Objective
@@ -17,8 +17,12 @@ The Automated backup option for VPS offers a convenient way to have complete sys
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager).
-- A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account.
+- An active [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 - Administrative access (sudo) via SSH to your VPS (optional).
+
+> [!warning]
+> This feature is currently unavailable for Virtual Private Servers in [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Instructions
 
@@ -293,6 +297,6 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Go further
 
-[Using snapshots on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps)
+[How to use snapshots on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-snapshots-on-a-vps)
 
 Join our [community of users](/links/community).

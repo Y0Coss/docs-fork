@@ -1,17 +1,12 @@
 ---
 title: Monitoring von DDoS-Angriffen mit dem Network Security Dashboard
 excerpt: Erfahren Sie hier, wie Sie das Network Security Dashboard im OVHcloud Kundencenter verwenden
-updated: 2025-06-04
+updated: 2025-09-08
 ---
 
 ## Ziel
 
 In dieser Anleitung wird das Network Security Dashboard erläutert. Außerdem erhalten Sie einen Überblick über Gegenmaßnahmen, die von unserer DDoS-Schutzinfrastruktur ausgelöst werden, wenn angreifende Netzwerkaktivitäten erkannt werden. Hier finden Sie Details zu den Auslösern zusätzlicher Schutzmaßnahmen, die eingerichtet werden müssen, um Ihre Dienste am Laufen zu halten. Darüber hinaus stehen im Dashboard Traffic-Diagramme für Aktivitätsperioden im Scrubbing Center zur Verfügung, um die Situation besser darzustellen.
-
-> [!warning]
->
-> **Achtung**: Die Funktion "Scrubbing-Center: permanenter Modus" erreicht End of Life (EOL) und wird am 8. September 2025 endgültig deaktiviert.
->
 
 ## Voraussetzungen 
 
@@ -53,8 +48,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie 
 Die Spalten entsprechen dem Status des Anti-DDoS-Scrubbing (**Mitigation**) sowie der Verfügbarkeit von Edge Network **Firewall** und **GAME Firewall** und deren Status.
 
 - Der Status der **Mitigation** kann sein:
-    - **Automatisch** - Das Scrubbing Center befindet sich im **Automatisch**-Modus. Der empfohlene Modus ist die Umleitung des Traffics für eine gründlichere Analyse bei Bedarf.
-    - **Permanent** - Das Scrubbing Center ist **permanent aktiviert**. Es wird nicht empfohlen, es dauerhaft zu aktivieren, es sei denn, zu starkes Latenzschwanken aufgrund von Umleitung des Datenverkehrs festgestellt.
+    - **Automatisch** - Das Scrubbing Center befindet sich im **Automatisch**-Modus und leitet den Datenverkehr bei Bedarf zur weiteren Analyse um.
     - **Erzwungen** - Dies weist darauf hin, dass das Scrubbing Center **gerade Maßnahmen anwendet**.
 
 - In der Spalte **Firewall** wird der Status der Edge Network Firewall angegeben:

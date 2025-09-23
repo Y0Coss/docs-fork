@@ -1,17 +1,12 @@
 ---
 title: "Monitoraggio degli attacchi DDoS con il Network Security Dashboard"
 excerpt: "Scopri come navigare attraverso il dashboard di sicurezza di rete"
-updated: 2025-06-04
+updated: 2025-09-08
 ---
 
 ## Obiettivo
 
 Questa guida ti mostra il Dashboard di Sicurezza di Rete e ti fornisce una panoramica delle contromisure attivate dalla nostra infrastruttura di protezione DDoS quando viene rilevata un'attività di rete malevola. Puoi trovare dettagli su quali protezioni aggiuntive sono state attivate per mantenere attivi i tuoi servizi. Inoltre, i grafici del traffico sono disponibili sulla dashboard per i periodi di attività dei centri di pulitura, in modo da visualizzare meglio la situazione.
-
-> [!warning]
->
-> **Avviso**: la funzionalità "Scrubbing Center: modalità permanente" ha raggiunto la fine del ciclo di vita (EOL) e sarà disattivata definitivamente l'8 settembre 2025.
->
 
 ## Prerequisiti
 
@@ -53,8 +48,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.acti
 Le colonne corrispondono allo stato di protezione anti-DDoS (**Mitigation**), allo stato di Edge Network **Firewall** e **GAME firewall*** e alla disponibilità delle funzionalità e ai relativi stati.
 
 - Lo stato **Mitigazione** può essere:
-    - **Automatico** - Il centro di pulitura è in modalità **Automatico**. Si tratta della modalità di utilizzo consigliata, che reindirizza il traffico per un’analisi più approfondita quando necessario.
-    - **Permanente** - Il centro di pulitura è **abilitato in modo permanente**. Non è consigliabile attivarlo in modo permanente, a meno che non venga rilevato un jitter della latenza dovuto al reindirizzamento del traffico avanti e indietro.
+    - **Automatico** - Il centro di pulitura è in modalità **Automatico** e reindirizza il traffico per un’analisi più approfondita quando necessario.
     - **Forzato** - Indica che il centro di pulitura è in fase di **azione**.
 
 - La colonna **Firewall** indica lo stato di Edge Network Firewall, che può essere:

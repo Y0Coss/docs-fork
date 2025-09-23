@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2025-07-10
+updated: 2025-09-12
 ---
 
 ## Introduction
@@ -360,9 +360,14 @@ Supposons que le bucket source, le bucket `region1-destination-bucket` et le buc
 > [!warning]
 > Le contrôle de version doit être activé dans le bucket source et le(s) bucket(s) de destination.
 
-### Utilisation de la CLI
+### En pratique
 
 #### Créer les buckets source et destinataire
+
+> [!primary]
+>
+> Pour créer un bucket via l'espace client OVHcloud, veuillez vous référer à notre guide [Object Storage - Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
+>
 
 Le bucket source est le bucket dont les objets sont automatiquement répliqués et le bucket destinataire est le bucket qui va contenir vos copies d'objet.
 
@@ -379,6 +384,11 @@ $ aws s3 mb s3://my-destination-bucket
 
 #### Activer le versioning dans le bucket de destination et la source
 
+> [!primary]
+>
+> Pour activer le versioning dans un bucket via l'espace client OVHcloud, veuillez vous référer à notre guide [Object Storage - Premiers pas avec la gestion de versions](/pages/storage_and_backup/object_storage/s3_versioning)
+>
+
 ```bash
 $ aws s3api put-bucket-versioning --bucket <bucket_name> --versioning-configuration Status=Enabled
 
@@ -393,93 +403,92 @@ $ aws s3api put-bucket-versioning --bucket my-destination-bucket --versioning-co
 
 #### Appliquer la configuration de réplication
 
-À l'aide de la CLI AWS, la configuration de réplication est appliquée au bucket source.
-
-```bash
-$ aws s3api put-bucket-replication --bucket <source> --replication-configuration file://<conf.json>
-```
-
-**_Exemple :_** : Répliquer tous les objets avec le préfixe « docs » ayant un tag « importance » avec la valeur « high » vers `my-destination-bucket` et répliquer les marqueurs de suppression, c'est-à-dire que les objets marqués comme supprimés dans la source seront marqués comme supprimés dans la destination.
-
-```bash
-{
-   "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
-   "Rules": [
-    {
-      "ID": "replication-rule-456",
-      "Status": "Enabled",
-      "Priority": 1,
-      "Filter": {
-        "And": {
-          "Prefix": "docs",
-          "Tags": [
-            {
-              "Key": "importance",
-              "Value": "high"
-            }
-          ]
-        }
-      },
-      "Destination": {
-        "Bucket": "arn:aws:s3:::my-destination-bucket"
-      },
-      "DeleteMarkerReplication": {
-        "Status": "Enabled"
-      }
-    }
-  ]
-
-}
-```
-
-### Utilisation de l'espace client OVHcloud
-
-#### Prérequis
-
-- Un bucket source et un bucket de destination.
-- Le versioning **doit** être activé sur le bucket source **et** le bucket de destination.
-
-#### Appliquer la configuration de réplication
-
-Trouvez votre bucket source dans la liste des buckets.
-
-Vous pouvez ouvrir le menu et cliquer sur `Gérer la réplication`{.action} :
-
-![replication_screenshot_1](images/source-bucket-menu-FR.png){.thumbnail}
-
-Ou vous pouvez cliquer directement sur votre bucket puis cliquer sur `Gérer la réplication`{.action} :
-
-![replication_screenshot_2](images/source-bucket-details-FR.png){.thumbnail}
-
-Sélectionnez `Ajouter une règle de réplication`{.action}.
-
-![replication_screenshot_3](images/replication-rules-FR.png){.thumbnail}
-
-Spécifiez un nom pour votre règle pour vous aider à l'identifier plus tard. Ce nom est requis et doit être unique au sein de votre bucket.
-
-![replication_screenshot_4](images/replication-rule-creation-FR.PNG){.thumbnail}
-
-Vous pouvez spécifier un préfixe et/ou des tags pour limiter le champ d'application des objets à répliquer.
-
-> [!warning]
-> Pour rappel, vous ne pouvez pas répliquer les marqueurs de suppression si vous utilisez des tags pour filtrer les objets.
-
-Sous **Destination**, sélectionnez un bucket de destination. Le bucket sélectionné doit avoir le versioning activé et si l'object lock a également été activé sur le bucket source, alors il doit aussi l'être sur le bucket de destination.
-
-- Par défaut, les objets seront répliqués en conservant leur classe de stockage d'origine. Cependant, vous pouvez choisir de les répliquer vers une autre classe de stockage.
-- S'il existe plusieurs règles avec le même bucket de destination, les objets seront répliqués en fonction de la règle ayant la priorité la plus élevée. Plus le nombre est élevé, plus la priorité est élevée.
-
-Sous **Status**, `Activé` est sélectionné par défaut. Une règle activée commence à fonctionner dès que vous l'enregistrez. Si vous souhaitez désactiver la règle lors de sa création et l'activer ultérieurement, sélectionnez `Désactivé`.
-
-Pour terminer, cliquez sur `Créer la règle`{.action}.
-
-![replication_screenshot_5](images/replication-rules-success-FR.png){.thumbnail}
+> [!tabs]
+> Via l'AWS S3api
+>> À l'aide de la CLI AWS, la configuration de réplication est appliquée au bucket source.
+>>
+>> ```bash
+>> $ aws s3api put-bucket-replication --bucket <source> --replication-configuration file://<conf.json>
+>> ```
+>>
+>> **_Exemple :_** : Répliquer tous les objets avec le préfixe « docs » ayant un tag « importance » avec la valeur « high » vers `my-destination-bucket` et répliquer les marqueurs de suppression, c'est-à-dire que les objets marqués comme supprimés dans la source seront marqués comme supprimés dans la destination.
+>>
+>> ```bash
+>> {
+>>    "Role": "arn:aws:iam::<your_project_id>:role/s3-replication",
+>>    "Rules": [
+>>     {
+>>       "ID": "replication-rule-456",
+>>       "Status": "Enabled",
+>>       "Priority": 1,
+>>       "Filter": {
+>>         "And": {
+>>           "Prefix": "docs",
+>>           "Tags": [
+>>             {
+>>               "Key": "importance",
+>>               "Value": "high"
+>>             }
+>>           ]
+>>         }
+>>       },
+>>       "Destination": {
+>>         "Bucket": "arn:aws:s3:::my-destination-bucket"
+>>       },
+>>       "DeleteMarkerReplication": {
+>>         "Status": "Enabled"
+>>       }
+>>     }
+>>   ]
+>>
+>> }
+>> ```
+>>
+> Via l'espace client OVHcloud
+>> > [!primary]
+>> >
+>> > Il vous faudra comme prérequis :
+>> >
+>> > - Un bucket source et un bucket de destination.
+>> > - Le versioning **doit** être activé sur le bucket source **et** le bucket de destination.
+>> >
+>>
+>> Rendez vous directement sur le panel d'informations du bucket concerné puis cliquer sur `Gérer la réplication`{.action} :
+>>
+>> ![replication_screenshot_2](images/object_storage_information_panel.png){.thumbnail}
+>>
+>> Sélectionnez `Ajouter une règle de réplication`{.action}.
+>>
+>> ![replication_screenshot_3](images/object_storage_replication_dashboard.png){.thumbnail}
+>>
+>> Spécifiez un nom pour votre règle pour vous aider à l'identifier plus tard. Ce nom est requis et doit être unique au sein de votre bucket.
+>>
+>> ![replication_screenshot_4](images/object_storage_replication_creation.png){.thumbnail}
+>>
+>> Vous pouvez spécifier un préfixe et/ou des tags pour limiter le champ d'application des objets à répliquer.
+>>
+>> > [!warning]
+>> >
+>> > Pour rappel, vous ne pouvez pas répliquer les marqueurs de suppression si vous utilisez des tags pour filtrer les objets.
+>> >
+>>
+>> Sous **Destination**, sélectionnez un bucket de destination. Le bucket sélectionné doit avoir le versioning activé et si l'object lock a également été activé sur le bucket source, alors il doit aussi l'être sur le bucket de destination.
+>>
+>> - Par défaut, les objets seront répliqués en conservant leur classe de stockage d'origine. Cependant, vous pouvez choisir de les répliquer vers une autre classe de stockage.
+>> - S'il existe plusieurs règles avec le même bucket de destination, les objets seront répliqués en fonction de la règle ayant la priorité la plus élevée. Plus le nombre est élevé, plus la priorité est élevée.
+>>
+>> Sous **Status**, `Activé` est sélectionné par défaut. Une règle activée commence à fonctionner dès que vous l'enregistrez. Si vous souhaitez désactiver la règle lors de sa création et l'activer ultérieurement, sélectionnez `Désactivé`.
+>>
+>> Pour terminer, cliquez sur `Créer la règle`{.action}.
+>>
+>> ![replication_screenshot_5](images/object_storage_replication_creation_success.png){.thumbnail}
+>>
 
 #### Supprimer une règle de réplication
 
 Dans la vue de gestion des règles de réplication, vous pouvez supprimer une règle à partir du menu.
 
-![replication_screenshot_6](images/replication-rules-delete-FR.png){.thumbnail}
+![replication_screenshot_6](images/object_storage_replication_dashboard_deletion.png){.thumbnail}
 
 ### Option Offsite Replication dans les régions 3-AZ
 
