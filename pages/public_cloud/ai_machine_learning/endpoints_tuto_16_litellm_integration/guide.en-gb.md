@@ -1,6 +1,6 @@
 ---
 title: AI Endpoints - Integration in Python with LiteLLM 
-excerpt: Learn how to use OVHCloud AI Endpoints in Python easily with LiteLLM!
+excerpt: Learn how to use OVHCloud AI Endpoints in Python easily with LiteLLM
 updated: 2025-09-22
 ---
 
@@ -9,13 +9,13 @@ updated: 2025-09-22
 > AI Endpoints is covered by the **[OVHcloud AI Endpoints Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/48743bf-AI_Endpoints-ALL-1.1.pdf)** and the **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
 
-🎉 **New Integration Available!** We're excited to announce a new integration for AI Endpoints with LiteLLM. It will significantly simplifying the use of our AI models in your Python applications, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
+🎉 **New Integration Available!** We're excited to announce a new integration for **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** with **[LiteLLM](https://litellm.ai)**. It will significantly simplifying the use of our AI models in your Python applications, and continues our commitment to integrating AI Endpoints into as many open-source tools as possible to simplify its usage.
 
 ## Objective
 
 OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** allows developers to easily add AI features to their day to day developments.
 
-In this guide, we will show how to use **[LiteLLM](https://litellm.ai)** to integrate OVHcloud  **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)**  directly into your Python applications.
+In this guide, we will show how to use **[LiteLLM](https://litellm.ai)** to integrate OVHcloud **[AI Endpoints](https://endpoints.ai.cloud.ovh.net/)** directly into your Python applications.
 
 With LiteLLM’s unified interface and OVHcloud’s scalable AI infrastructure, you can quickly experiment, switch between models, and streamline the development of your AI-powered applications.
 
@@ -404,8 +404,6 @@ In this article, we explored how to integrate OVHcloud AI Endpoints with LiteLLM
 You can find more informations about LiteLLM on their [official documentation](https://docs.litellm.ai). You can also navigate in the [AI Endpoints catalog](https://endpoints.ai.cloud.ovh.net/catalog) to explore the models that are available through LiteLLM.
 
 Browse the full [AI Endpoints documentation](/products/public-cloud-ai-and-machine-learning-ai-endpoints) to further understand the main concepts and get started.
-
-To discover how to build complete and powerful applications using AI Endpoints, explore our dedicated [AI Endpoints guides](/products/public-cloud-ai-and-machine-learning-ai-endpoints).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
