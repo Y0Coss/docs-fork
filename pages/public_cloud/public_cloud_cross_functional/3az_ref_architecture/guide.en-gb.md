@@ -74,11 +74,9 @@ This diagram illustrates a three-tier application (web frontend, application bac
 1. The Gateway exposes the Load Balancer publicly using a Floating IP.
 2. The Load Balancer distributes network traffic across the web instances.
 3. The web security group:
-
     - Accepts only ingress traffic from the Load Balancer’s private IPs on the web port.
     - Allows only egress traffic to the App security group on the App port.
 4. The App security group:
-
     - Accepts only ingress traffic from the web security group on the App port.
     - Allows only egress traffic to the managed database’s private IP and port.
 5. The managed database uses an ACL that only permits connections from the private IPs of the App instances.
@@ -92,8 +90,8 @@ This diagram illustrates a three-tier application (web frontend, application bac
 - Data tier: A regional managed database is available across all AZs.
 - A regional Load Balancer (with active/passive nodes managed by OVHcloud) distributes traffic between the web instances.
 - Security groups restrict traffic between tiers:
-  - Web security group allows only connections from the Load Balancer and towards the App tier.
-  - App security group allows only connections from the web tier and towards the managed database.
+    - Web security group allows only connections from the Load Balancer and towards the App tier.
+    - App security group allows only connections from the web tier and towards the managed database.
 - Connectivity is ensured by a Floating IP and a Gateway. Both services also rely on an OVHcloud-managed active/passive mechanism, so no additional deployment is required.
 
 **AZ-a Incident** (Right side):
