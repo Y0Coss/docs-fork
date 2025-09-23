@@ -6,7 +6,7 @@ updated: 2025-09-23
 
 ## Objectif
 
-Ce guide vous explique comment installer et exécuter [n8n](https://n8n.io), une plateforme open source d’automatisation de workflows, sur un VPS OVHcloud. [L’installation manuelle](#step3) s’appuie sur [Docker](https://www.docker.com/), avec le serveur [Traefik](https://doc.traefik.io/traefik/) pour gérer automatiquement les certificats SSL. Pour une [mise en route clé en main](#step2), optez pour un [VPS n8n préinstallé OVHcloud](https://www.ovhcloud.com/fr/vps/vps-n8n/).
+Ce guide vous explique comment installer et exécuter [n8n](https://n8n.io), une plateforme open source d’automatisation de workflows, sur un VPS OVHcloud. [L’installation manuelle](#step3) s’appuie sur [Docker](https://www.docker.com/), avec le serveur [Traefik](https://doc.traefik.io/traefik/) pour gérer automatiquement les certificats SSL. Pour une [mise en route clé en main](#step2), optez pour un [VPS n8n préinstallé OVHcloud](/links/bare-metal/vps-n8n).
 
 ## Prérequis
 

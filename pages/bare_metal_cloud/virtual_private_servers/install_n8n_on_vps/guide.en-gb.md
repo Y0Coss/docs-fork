@@ -6,7 +6,7 @@ updated: 2025-09-23
 
 ## Objective
 
-This guide explains how to install and run [n8n](https://n8n.io), an open-source platform for workflow automation, on an OVHcloud VPS. [Manual installation](#step3) relies on [Docker](https://www.docker.com/), with the server [Traefik](https://doc.traefik.io/traefik/) to automatically manage SSL certificates. For a [turn-key setup](#step2), opt for an [OVHcloud preinstalled n8n VPS](https://www.ovhcloud.com/en-gb/vps/vps-n8n/).
+This guide explains how to install and run [n8n](https://n8n.io), an open-source platform for workflow automation, on an OVHcloud VPS. [Manual installation](#step3) relies on [Docker](https://www.docker.com/), with the server [Traefik](https://doc.traefik.io/traefik/) to automatically manage SSL certificates. For a [turn-key setup](#step2), opt for an [OVHcloud preinstalled n8n VPS](/links/bare-metal/vps-n8n).
 
 ## Requirements
 
