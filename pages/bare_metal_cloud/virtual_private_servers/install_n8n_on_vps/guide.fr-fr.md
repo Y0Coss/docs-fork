@@ -128,7 +128,7 @@ nano .env
 
 Collez-y le contenu suivant :
 
-```console
+```ini
 DOMAIN_NAME=exemple.com
 SUBDOMAIN=n8n
 SSL_EMAIL=admin@exemple.com
