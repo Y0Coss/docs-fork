@@ -454,7 +454,6 @@
             + [Adding an IP block](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ajout_de_bloc_ip)
             + [Healthcare (HDS) or payment services (PCI DSS) compliance activation](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/activer_l_option_hds_hipaa_ou_pci_dss)
             + [Understanding vScope](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_vscope)
-            + [Using the vScope API](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how-to-use-vscope-api)
         + [VMware vSphere](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features)
             + [Using the vSphere SDK](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_installation_api)
             + [VMware DRS (Distributed Resource Scheduler)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new)
