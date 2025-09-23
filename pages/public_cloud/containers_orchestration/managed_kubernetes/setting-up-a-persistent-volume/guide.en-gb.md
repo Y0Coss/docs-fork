@@ -4,7 +4,7 @@ excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Vo
 updated: 2025-06-05
 ---
 
-In this tutorial we are going to guide you through a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
+This tutorial goes through the setup of a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on an OVHcloud Managed Kubernetes Service.
 
 You will create a `Persistent Volume Claim` (PVC), that will automatically create a `Persistent Volume` (PV) that will automatically create an associated Public Cloud __Block Storage__ volume.<br>
 Then you will create a `Pod` attached to the PVC.
@@ -83,9 +83,7 @@ ovh-managed-kubernetes-dmhe43-pvc-ac9493f5-e65f-41ee-a7fa-45d42fc37fe3   10Gi   
 
 ## Using the PVC
 
-Pods access storage by using the PVC as a volume. In the pod manifest you declare a volume and associate it to a PVC. The volume is then mounted to the host and into the pod.
-
-For our example, let's create a `test-pvc-pod.yaml` file: that deploys a simple Nginx server using our `test-pvc` PVC as external volume:
+This sample pod mounts the provisioned volume via its PVC:
 
 ```yaml
 apiVersion: v1
@@ -186,7 +184,14 @@ We currently support the following [Storage Classes](https://kubernetes.io/docs/
 
 All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device. They are distributed transparently, on three physical local replicas.
 
-High Speed performance is theoretically best for volumes up to 100GB. Above 100GB per volume, you will get enhanced performance with a High Speed Gen2 volume.
+`csi-cinder-high-speed` is recommended for volumes up to 100GB. Above 100GB per volume, enhanced performance is achieved with `csi-cinder-high-speed-gen2` volumes.
+
+>> > [!warning]
+>> >
+>> > Creating a **-luks** volume automatically generates a dedicated key.
+>> >
+>> > Do not modify or delete this key if it is linked to a Block Storage volume. Doing so would make the data on that volume and all its snapshots permanently unrecoverable.
+>> >
 
 ```console
 $ kubectl get sc
@@ -208,7 +213,12 @@ The way a PV can be mounted on a host depends on the capabilities of the resourc
 * `ReadOnlyMany`: the PV can be mounted read-only by many nodes
 * `ReadWriteMany`: the PV can be mounted as read-write by many nodes
 
-Our storage resource, Cinder, doesn't allow to mount a PV on several nodes at the same time, so you need to use the `ReadWriteOnce` access mode.
+The default MKS storage classes don't allow mounting a PV on several nodes: only the `ReadWriteOnce` access mode is supported at the moment.
+
+Additional `ReadWriteMany` storage classes can be configured to have this capability:
+
+* The [Enterprise Filesystem Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-efs) offers a managed shared filesystem consumed via NFS.
+* The [OVHcloud Cloud Disk Array](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-multi-attach-persistent-volumes-with-ovh-cloud-disk-array) offers a managed shared filesystem consumed via CephFS.
 
 ## Reclaim policies
 
