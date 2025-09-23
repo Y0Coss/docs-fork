@@ -1,7 +1,7 @@
 ---
 title: Installer WordPress sur une instance
 excerpt: Découvrez comment utiliser une instance Public Cloud pour héberger des sites WordPress
-updated: 2025-09-16
+updated: 2025-09-23
 ---
 
 ## Objectif

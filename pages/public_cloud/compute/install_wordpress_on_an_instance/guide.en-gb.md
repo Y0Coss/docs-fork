@@ -1,7 +1,7 @@
 ---
 title: Installing WordPress on an instance
 excerpt: Find out how to use a Public Cloud instance to host WordPress websites
-updated: 2025-09-16
+updated: 2025-09-23
 ---
 
 ## Objective
@@ -130,7 +130,7 @@ debian@instance:~$ sudo apt install ufw
 In the list of available UFW applications, the profiles corresponding to a web server are labeled “WWW” on a Debian instance and “Apache” on an Ubuntu instance. These profiles allow you to open the necessary ports for HTTP and HTTPS traffic in a simple and secure way.
 
 ```bash
-debian@instance:~$ sudo ufw app list | grep WWW
+debian@instance:~$ sudo ufw app list | grep WWW # or grep Apache
   WWW
   WWW Cache
   WWW Full
