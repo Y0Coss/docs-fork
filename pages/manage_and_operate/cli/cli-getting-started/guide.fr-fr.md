@@ -74,24 +74,32 @@ OVH_CLOUD_PROJECT_SERVICE=<ID du projet Public Cloud>
 
 Voici quelques commandes de base pour commencer :
 
-- **Lister vos projets cloud :**
+- **Lister vos projets cloud** :
+
     ```sh
     ovhcloud cloud project list
     ```
-- **Afficher les détails d’un projet spécifique :**
+
+- **Afficher les détails d’un projet spécifique** :
+
     ```sh
     ovhcloud cloud project get <PROJECT_ID>
     ```
-- **Lister les instances d’un projet :**
+
+- **Lister les instances d’un projet** :
+
     ```sh
     ovhcloud cloud instance list --cloud-project <PROJECT_ID>
     ```
-- **Créer une nouvelle instance :**
+
+- **Créer une nouvelle instance** :
+
     ```sh
     ovhcloud cloud instance create BHS5 --cloud-project <PROJECT_ID> --name my-instance --flavor-selector --image-selector --network.public --ssh-key.name <SSH_KEY_NAME>
     ```
 
 > [!primary]
+>
 > **Remarque** : L’option `--project-id` n’est pas nécessaire si vous avez défini l'entrée `default_cloud_project` dans votre fichier de configuration, ou si la variable d’environnement `OVH_CLOUD_PROJECT_SERVICE` est renseignée.
 
 Pour plus d’informations sur les commandes disponibles, consultez la [documentation complète](https://github.com/ovh/ovhcloud-cli/blob/main/doc/ovhcloud.md).
@@ -101,6 +109,7 @@ Pour plus d’informations sur les commandes disponibles, consultez la [document
 La plupart des produits proposent des commandes de base pour lister les services, récupérer et modifier leurs détails. Certains produits disposent déjà d’une couverture plus avancée, comme par exemple : Baremetal, Public Cloud (Instances, Managed Kubernetes, Rancher, Storage, Network), VPS et IAM.
 
 > [!primary]
+>
 > **Remarque** : Les actions actuellement disponibles dans la CLI correspondent à celles proposées par l’API principale OVHcloud. Les actions spécifiques à chaque produit, accessibles via leurs propres API, ne sont pas encore couvertes, mais seront progressivement ajoutées selon le produit.
 
 ## Ressources
