@@ -86,7 +86,7 @@ In the `Email accounts`{.action} tab, click `...`{.action} to the right of the a
 
 ### Cancel the platform
 
-Once you have deleted the email accounts, you will need to delete the domain name(s) associated with your Exchange platform before canceling it. To do this, go to the `Associated domains`{.action} tab. Click the `...`{.action} button on the line for the domain name you want to delete, then click `Delete this domain`{.action}.
+Once you have deleted the email accounts, you will need to delete the domain name(s) associated with your Exchange platform before cancelling it. To do this, go to the `Associated domains`{.action} tab. Click the `...`{.action} button on the line for the domain name you want to delete, then click `Delete this domain`{.action}.
 
 ![billing_exchange](images/billing-exchange-del-dom.png){.thumbnail}
 
