@@ -1,7 +1,7 @@
 ---
 title: How to recover server access if your user password is lost
 excerpt: Find out how to configure a new password for a user account on a GNU/Linux operating system with the OVHcloud rescue mode
-updated: 2024-02-19
+updated: 2025-09-24
 ---
 
 
@@ -66,19 +66,36 @@ chroot /mnt/
 
 ### Step 2: Reset the user password
 
-Note: On a GNU/Linux distribution, **a password prompt will not display your keyboard inputs**.
+> [!primary]
+>
+> On a GNU/Linux distribution, **a password prompt will not display your keyboard inputs**.
 
-Change the user password with the following command (replace `username` with the actual name of the user account):
+Before changing the user password, **check which account you are logged in to**:
 
 ```bash
-passwd username
+whoami
+```
+
+Output examples: `debian`, `ubuntu`, `user1`, etc.
+
+If you would like to change the password for the account displayed, change it with the following command:
+
+```bash
+passwd
 ```
 
 ```text
-New password: 
+New password:
 Retype new password:
-passwd: password updated successfully
+passwd: password updated
 ```
+
+If this is not the right account, log out and then log in again via SSH with the target user, and only then change their password.
+
+> [!warning]
+>
+> The `passwd` command without any arguments modifies the password of the account displayed by `whoami`.
+Always check the current user before running this command.
 
 Remember to use the regular boot mode of your server when restarting it in your [OVHcloud Control Panel](/links/manager).
 
