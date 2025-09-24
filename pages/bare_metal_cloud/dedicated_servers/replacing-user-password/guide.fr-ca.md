@@ -66,11 +66,7 @@ chroot /mnt/
 
 ### Étape 2 : réinitialiser le mot de passe de l'utilisateur
 
-> [!primary]
->
-> Sur une distribution GNU/Linux, **une invite de mot de passe n'affiche pas vos entrées clavier**.
-
-Avant de changer le mot de passe de l'utilisateur, **vérifiez sur quel compte vous êtes connecté** :
+Avant de changer le mot de passe de l'utilisateur, **vérifiez sur quel compte vous êtes connecté** grâce à la commande ci-dessous :
 
 ```bash
 whoami
@@ -78,11 +74,13 @@ whoami
 
 Exemples de sortie : `debian`, `ubuntu`, `user1`, etc.
 
-Si c’est bien le compte affiché que vous souhaitez modifier, changez le mot de passe avec la commande suivante :
+Si le compte affiché est bien celui de l'utilisateur concerné, utilisez la commande suivante pour modifier son mot de passe :
 
 ```bash
 passwd
 ```
+
+Renseignez le nouveau mot de passe :
 
 ```text
 New password: 
@@ -90,12 +88,16 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-Si ce n’est pas le bon compte, déconnectez-vous puis reconnectez-vous en SSH avec l’utilisateur cible, et seulement ensuite changez son mot de passe.
+> [!primary]
+>
+> Sur une distribution GNU/Linux, **une invite de mot de passe n'affiche pas vos entrées clavier**.
+
+Si ce n’est pas le bon compte, déconnectez-vous puis reconnectez-vous en SSH avec l’utilisateur cible, puis modifiez son mot de passe.
 
 > [!warning]
 >
 > La commande `passwd` sans argument modifie le mot de passe du compte affiché par `whoami`.
-Vérifiez toujours l’utilisateur courant avant d'exécuter cette commande.
+> Vérifiez toujours l’utilisateur courant avant d'exécuter cette commande.
 
 Pensez à utiliser le mode de démarrage **normal** de votre serveur lorsque vous le redémarrez depuis votre [espace client OVHcloud](/links/manager).
 

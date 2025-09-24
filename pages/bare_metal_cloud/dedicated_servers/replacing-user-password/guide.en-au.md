@@ -66,11 +66,7 @@ chroot /mnt/
 
 ### Step 2: Reset the user password
 
-> [!primary]
->
-> On a GNU/Linux distribution, **a password prompt will not display your keyboard inputs**.
-
-Before changing the user password, **check which account you are logged in to**:
+Before changing the user's password, **check which account you are logged in with** using the command below:
 
 ```bash
 whoami
@@ -78,11 +74,13 @@ whoami
 
 Output examples: `debian`, `ubuntu`, `user1`, etc.
 
-If you would like to change the password for the account displayed, change it with the following command:
+If the displayed account is the correct user account, use the following command to change his password:
 
 ```bash
 passwd
 ```
+
+Enter the new password:
 
 ```text
 New password:
@@ -90,12 +88,16 @@ Retype new password:
 passwd: password updated
 ```
 
-If this is not the right account, log out and then log in again via SSH with the target user, and only then change their password.
+> [!primary]
+>
+> On a GNU/Linux distribution, **a password prompt will not display your keyboard inputs**.
+
+If this is not the right account, log out and reconnect via SSH with the target user user, then change his password.
 
 > [!warning]
 >
 > The `passwd` command without any arguments modifies the password of the account displayed by `whoami`.
-Always check the current user before running this command.
+> Always check the current user before running this command.
 
 Remember to use the regular boot mode of your server when restarting it in your [OVHcloud Control Panel](/links/manager).
 
