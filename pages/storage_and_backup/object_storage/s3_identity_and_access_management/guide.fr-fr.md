@@ -197,7 +197,7 @@ Actuellement, les autorisations utilisateur sont évaluées comme suit :
 
 ```json
 {
-  "Statement": {
+  "Statement": [{
     "Sid": "ExampleStatement01",
     "Effect": "Deny",
     "Action": "s3:*",
@@ -210,7 +210,7 @@ Actuellement, les autorisations utilisateur sont évaluées comme suit :
         "aws:SourceIp": "10.0.0.5/16"
       }
     }
-  }
+  }]
 } 
 ```
 
@@ -223,7 +223,7 @@ La politique suivante visant à autoriser l'accès en lecture aux objets uniquem
 
 ```json
 {
-  "Statement": {
+  "Statement": [{
     "Sid": "ExampleStatement01",
     "Effect": "Allow",
     "Action": [
@@ -239,7 +239,7 @@ La politique suivante visant à autoriser l'accès en lecture aux objets uniquem
         "aws:SourceIp": "10.0.0.5/16"
       }
     }
-  }
+  }]
 }
 ```
 
@@ -247,7 +247,7 @@ La politique suivante visant à refuser l'accès en lecture à des objets à des
 
 ```json
 {
-  "Statement": {
+  "Statement": [{
     "Sid": "ExampleStatement01",
     "Effect": "Allow",
     "Action": [
@@ -263,7 +263,7 @@ La politique suivante visant à refuser l'accès en lecture à des objets à des
         "aws:SourceIp": "10.0.0.5/16"
       }
     }
-  }
+  }]
 }
 ```
 
