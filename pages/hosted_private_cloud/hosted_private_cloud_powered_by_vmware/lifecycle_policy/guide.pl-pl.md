@@ -1,7 +1,7 @@
 ---
 title: "Hosted Private Cloud VMware Lifecycle Policy"
 excerpt: "Lifecycle policy for VMware on OVHcloud"
-updated: 2025-09-23
+updated: 2025-09-24
 ---
 
 > [!warning]
@@ -101,7 +101,7 @@ This table presents a summary of the different phases of the lifecycle of the se
 |              SDDC2018 (Intel Broadwell)               |          2018        |  2018-11-30  |  2026-03-30   | 2027-07-31  |
 |             Essentials (Intel Broadwell)              |          2020        |  2026-02-28  |  2026-03-30   | 2027-07-31  |
 |               Premier (Intel Xeon Gold)               |          2020        |  2026-02-28  |  2027-03-31   | 2028-10-31  |
-|                Gen2 hardware (Intel Emerald Rapids)   |          2026        |  2026-05-31  |               |             |
+|           Gen2 hardware (Intel Emerald Rapids)        |          2026        |              |               |             |
 
 ## Integrated Software
 
