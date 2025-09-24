@@ -199,14 +199,14 @@ Actuellement, les autorisations utilisateur sont évaluées comme suit :
 {
   "Statement": [{
     "Sid": "ExampleStatement01",
-    "Effect": "Deny",
+    "Effect": "Allow",
     "Action": "s3:*",
     "Resource": [
       "arn:aws:s3:::companybucket",
       "arn:aws:s3:::companybucket/*"
     ],
     "Condition": {
-      "NotIpAddress": {
+      "IpAddress": {
         "aws:SourceIp": "10.0.0.5/16"
       }
     }
@@ -214,12 +214,13 @@ Actuellement, les autorisations utilisateur sont évaluées comme suit :
 } 
 ```
 
+
 > [!primary]
 >
 > En raison du processus d'autorisation actuel, le refus **implicite** n'est **pas** pris en charge par OVHcloud Object Storage si l'utilisateur est le propriétaire du bucket, c'est-à-dire que puisque les ACLs sont évaluées par défaut et que le propriétaire du bucket dispose d'une ACL FULL_CONTROL, si l'utilisateur est le propriétaire du bucket, il sera autorisé même s'il n'y a pas d'autorisation explicite dans le fichier policy.
 > 
 
-La politique suivante visant à autoriser l'accès en lecture aux objets uniquement à des adresses IP spécifiques ne fonctionnera **pas** dans les conditions actuelles si elle est associée au propriétaire du bucket, c'est-à-dire que même si le propriétaire du bucket effectue ses requêtes à partir d'adresses IP qui ne se trouvent pas dans la plage spécifiée, il sera autorisé.
+La politique suivante visant à autoriser l'accès en lecture aux objets uniquement à des adresses IP spécifiques ne fonctionnera **pas** dans les conditions actuelles si elle est associée au **propriétaire du bucket**, c'est-à-dire que même si le propriétaire du bucket effectue ses requêtes à partir d'adresses IP qui ne se trouvent **pas** dans la plage spécifiée, il sera **autorisé**.
 
 ```json
 {
@@ -243,7 +244,7 @@ La politique suivante visant à autoriser l'accès en lecture aux objets uniquem
 }
 ```
 
-La politique suivante visant à refuser l'accès en lecture à des objets à des adresses IP spécifiques en mettant sur liste noire les adresses IP non autorisées ne fonctionnera **pas** dans les conditions actuelles si elle est associée au propriétaire du bucket, car il n'y a pas de refus explicite et les requêtes provenant des adresses IP spécifiées ne correspondront pas à l'autorisation. Par conséquent, nous nous rabattons sur les ACLs.
+La politique suivante visant à refuser l'accès en lecture à des objets à des adresses IP spécifiques en mettant sur liste noire les adresses IP non autorisées ne fonctionnera **pas** dans les conditions actuelles si elle est associée au **propriétaire du bucket**, car il n'y a pas de refus explicite et les requêtes provenant des adresses IP spécifiées ne correspondront pas à l'autorisation. Par conséquent, nous nous rabattons sur les ACLs.
 
 ```json
 {
