@@ -16,8 +16,8 @@ details>summary::before {
 details[open]>summary::before {
     content:'\25BC';
 }
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 </style>
 

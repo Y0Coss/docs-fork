@@ -16,8 +16,8 @@ details>summary::before {
 details[open]>summary::before {
     content:'\25BC';
 }
-.w-400 {
-  max-width:400px !important;
+.w-600 {
+  max-width:600px !important;
 }
 </style>
 
@@ -61,13 +61,13 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 > **Etape 1**
 >> - Ouvrez Outlook. Dans la colonne de gauche, cliquez sur `Ajouter un compte`{.action} pour démarrer la configuration.
 >>
->> ![outlook](images/configuration-newoutlook-windows-01.png){.thumbnail .w-400}
+>> ![outlook](images/configuration-newoutlook-windows-01.png){.thumbnail .w-600}
 >>
 > **Etape 2**
 >> - Saisissez votre adresse e-mail puis cliquez sur `Continuer`{.action}.
 >> - Saisissez votre mot de passe et cliquez sur le bouton `Afficher plus`{.action}.
 >>
->> ![outlook](images/configuration-newoutlook-windows-02.png){.thumbnail .w-400}
+>> ![outlook](images/configuration-newoutlook-windows-02.png){.thumbnail .w-600}
 >>
 > **Etape 3 EUROPE**
 >> - Saisissez les paramêtres suivant:
@@ -81,7 +81,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 >>    - **Mot de passe**: ne rien saisir, le mot de passe saisi précédement sera utilisé.
 >> - Cliquez sur `Continuer`{.action} pour finaliser la configuration.
 >>
->> ![outlook](images/configuration-newoutlook-windows-03.png){.thumbnail .w-400}
+>> ![outlook](images/configuration-newoutlook-windows-03.png){.thumbnail .w-600}
 >>
 > **Etape 3 AMERIQUE / ASIE-PACIFIQUE**
 >> - Saisissez les paramêtres suivant:
@@ -95,7 +95,7 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 >>    - **Mot de passe**: ne rien saisir, le mot de passe saisi précédement sera utilisé.
 >> - Cliquez sur `Continuer`{.action} pour finaliser la configuration.
 >>
->> ![outlook](images/configuration-newoutlook-windows-03ca.png){.thumbnail .w-400}
+>> ![outlook](images/configuration-newoutlook-windows-03ca.png){.thumbnail .w-600}
 
 ### Utiliser l'adresse e-mail <a name="use-account"></a>
 
@@ -112,13 +112,13 @@ Si votre compte e-mail est déjà paramétré et que vous souhaitez le paramétr
 - Cliquez sur l'icöne de réglage « &#9965; » dans le bas de la colonne de gauche.
 - Dans la section « Vos comptes » cliquez sur `Gérer` {.action} à droite de l'adresse e-mail concernée.
 
-![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-400}
+![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-600}
 
 - Descendez dans le bas de la page.
 - Cliquez sur `Supprimer`{.action} pour lancer la suppression.
 - Déterminez si vous souhaitez supprimer seulement sur cet appareil ou sur les autres appareils utilisant Outlook.
 
-![outlook](images/configuration-newoutlook-windows-05.png){.thumbnail .w-400}
+![outlook](images/configuration-newoutlook-windows-05.png){.thumbnail .w-600}
 
 > [!success]
 >
