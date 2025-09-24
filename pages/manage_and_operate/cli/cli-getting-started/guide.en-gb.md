@@ -76,27 +76,27 @@ Here are some basic commands to get started:
 
 - **List your cloud projects**:
 
-    ```sh
-    ovhcloud cloud project list
-    ```
+```sh
+ovhcloud cloud project list
+```
 
 - **Show details of a specific project**:
 
-    ```sh
-    ovhcloud cloud project get <PROJECT_ID>
-    ```
+```sh
+ovhcloud cloud project get <PROJECT_ID>
+```
 
 - **List instances in a project**:
 
-    ```sh
-    ovhcloud cloud instance list --cloud-project <PROJECT_ID>
-    ```
+```sh
+ovhcloud cloud instance list --cloud-project <PROJECT_ID>
+```
 
 - **Create a new instance**:
 
-    ```sh
-    ovhcloud cloud instance create BHS5 --cloud-project <PROJECT_ID> --name my-instance --flavor-selector --image-selector --network.public --ssh-key.name <SSH_KEY_NAME>
-    ```
+```sh
+ovhcloud cloud instance create BHS5 --cloud-project <PROJECT_ID> --name my-instance --flavor-selector --image-selector --network.public --ssh-key.name <SSH_KEY_NAME>
+```
 
 > [!primary]
 >
