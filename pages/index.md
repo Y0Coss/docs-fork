@@ -309,7 +309,6 @@
     + [Managed Bare Metal](products/bare-metal-cloud-managed-bare-metal)
         + [OVHcloud services and options](bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options)
             + [Setting up a VPN for OVHcloud Zerto DRP](bare_metal_cloud/managed_bare_metal/zerto-virtual-replication-customer-to-ovhcloud)
-            + [Using the vScope API](bare_metal_cloud/managed_bare_metal/vscope-api)
             + [Restoring backups via the OVHcloud API](bare_metal_cloud/managed_bare_metal/veeam_managed_backup_restoration)
             + [Activating and using Veeam Managed Backup](bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service)
             + [Modifying the vCenter access policy](bare_metal_cloud/managed_bare_metal/vcenter-modify-access-policy)
