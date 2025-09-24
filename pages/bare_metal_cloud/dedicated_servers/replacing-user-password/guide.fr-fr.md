@@ -1,7 +1,7 @@
 ---
 title: "Comment récupérer l'accès au serveur en cas de perte du mot de passe de l'utilisateur"
 excerpt: "Découvrez comment configurer un nouveau mot de passe pour un compte utilisateur sur un système d'exploitation GNU/Linux avec le mode rescue OVHcloud"
-updated: 2024-02-19
+updated: 2025-09-24
 ---
 
 ## Objectif
@@ -66,12 +66,22 @@ chroot /mnt/
 
 ### Étape 2 : réinitialiser le mot de passe de l'utilisateur
 
-Remarque : sur une distribution GNU/Linux, **une invite de mot de passe n'affiche pas vos entrées clavier**.
+> [!primary]
+>
+> Sur une distribution GNU/Linux, **une invite de mot de passe n'affiche pas vos entrées clavier**.
 
-Changez le mot de passe de l'utilisateur avec la commande suivante (remplacez `username` par le nom réel du compte utilisateur) :
+Avant de changer le mot de passe de l'utilisateur, **vérifiez sur quel compte vous êtes connecté** :
 
 ```bash
-passwd username
+whoami
+```
+
+Exemples de sortie : `debian`, `ubuntu`, `user1`, etc.
+
+Si c’est bien le compte qui s'affiche que vous voulez modifier, changez le mot de passe avec la commande suivante :
+
+```bash
+passwd
 ```
 
 ```text
@@ -79,6 +89,13 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
+
+Si ce n’est pas le bon compte, déconnectez-vous puis reconnectez-vous en SSH avec l’utilisateur cible, et seulement ensuite changez son mot de passe.
+
+> [!warning]
+>
+> La commande `passwd` sans argument modifie le mot de passe du compte affiché par `whoami`.
+Vérifiez toujours l’utilisateur courant avant d'éxécuter cette commande.
 
 Pensez à utiliser le mode de démarrage **normal** de votre serveur lorsque vous le redémarrez depuis votre [espace client OVHcloud](/links/manager).
 
