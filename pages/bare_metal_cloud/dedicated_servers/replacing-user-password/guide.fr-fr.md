@@ -78,7 +78,7 @@ whoami
 
 Exemples de sortie : `debian`, `ubuntu`, `user1`, etc.
 
-Si c’est bien le compte qui s'affiche que vous voulez modifier, changez le mot de passe avec la commande suivante :
+Si c’est bien le compte affiché que vous souhaitez modifier, changez le mot de passe avec la commande suivante :
 
 ```bash
 passwd
@@ -95,7 +95,7 @@ Si ce n’est pas le bon compte, déconnectez-vous puis reconnectez-vous en SSH 
 > [!warning]
 >
 > La commande `passwd` sans argument modifie le mot de passe du compte affiché par `whoami`.
-Vérifiez toujours l’utilisateur courant avant d'éxécuter cette commande.
+Vérifiez toujours l’utilisateur courant avant d'exécuter cette commande.
 
 Pensez à utiliser le mode de démarrage **normal** de votre serveur lorsque vous le redémarrez depuis votre [espace client OVHcloud](/links/manager).
 
