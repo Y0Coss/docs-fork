@@ -93,7 +93,7 @@ If you subsequently launch more instances referencing the same Server Group, the
 >
 > Once created, a Server Group cannot be modified.  
 >
-> In addition, an instance cannot move between Server Groups.  
+> In addition, an instance cannot be moved between Server Groups.  
 >
 > In both cases, this is because it would potentially require moving the instance to comply with the Server Group policy.
 

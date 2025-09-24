@@ -1,7 +1,7 @@
 ---
 title: 'Using the weight feature on a Load Balancer member'
 excerpt: 'Learn how to adjust the weight of a Load Balancer member'
-updated: 2025-09-23
+updated: 2025-09-24
 ---
 
 ## Objective
@@ -86,7 +86,7 @@ You should see alternating responses from the two members:
 >> >
 >> > **regionName**: The name of your region.
 >> >
->> > You can leave the “loadbalancerId” field blank in order to obtain all the pools created inthe region specified.
+>> > You can leave the “loadbalancerId” field blank in order to obtain all the pools created in the region specified.
 >> > 
 >> > You can update a pool member with the following API call:
 >> > 
@@ -96,13 +96,13 @@ You should see alternating responses from the two members:
 >>
 >> > Fill in the fields with the previously obtained information:
 >> >
->> > **Member ID**: The Member ID in the form of a 32-character string.
->> >
->> > **Pool ID**: The Pool ID in the form of a 32-character string.
->> >
 >> > **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >> >
 >> > **regionName**: The name of your region.
+>> >
+>> > **poolId**: The Pool ID in the form of a 32-character string.
+>> >
+>> > **memberId**: The Member ID in the form of a 32-character string.
 >>
 > **Horizon**
 >> Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
@@ -111,18 +111,20 @@ You should see alternating responses from the two members:
 >>
 >> On the Project tab, open the `Network`{.action} tab and click the `Load Balancers`{.action} category.
 >>
->> Click on `your loadbalancer`{.action}.
->>
->> ![public-cloud](images/create-a-volume-2.png){.thumbnail width="800"}
+>> Click on the load balancer concerned.
 >>
 >> In the tab, click on `Pools`{.action} and then on the `pool`{.action} in which the member is.
 >>
+>> ![public-cloud](images/pool-tab.png){.thumbnail}
+>> 
 >> In the tab, click on `Members`{.action} and then on `Edit Member`{.action}.
->>
->> You can edit the `Weight`, then click on `Update`{.action}
 >>
 >> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard.png){.thumbnail}
 >> 
+>> You can edit the `Weight`, then click on `Update`{.action}.
+>>
+>> ![Update weight](images/update-weight.png){.thumbnail}
+>>
 > **CLI**
 >> To stop traffic from being routed to a specific member, set its weight to 0:
 >>
@@ -133,6 +135,8 @@ You should see alternating responses from the two members:
 ### Step 3: Verify Member Status
 
 After setting the member’s weight to 0, its status will change from **ONLINE** to **DRAINING**.
+
+![status](images/member-status-draining.png){.thumbnail}
 
 > [!primary]
 >
@@ -151,12 +155,9 @@ If having a final **DRAINED** status is critical for your operations, it is reco
 > **OVHcloud API**
 >> You can update a pool member with the following API call:
 >>
->> - Member ID
->> - Pool ID
->> - Region name
->> - Service name
->>
->> PUT /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member/{memberId}>> 
+>> PUT /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member/{memberId}
+>> 
+>> ![public-cloud](images/update-member-api.png){.thumbnail width="800"}
 >> 
 > **Horizon**
 >>
@@ -169,17 +170,13 @@ If having a final **DRAINED** status is critical for your operations, it is reco
 >>
 >> In the left menu, click on  `Network`{.action} and select `Load Balancers`{.action}.
 >> 
->> Choose the Load Balancer you want to configure and click on the `Health Monitors`{.action} tab.
+>> Choose the Load Balancer you want to configure and click on the `Members`{.action} tab. Next, click on `Edit Member`{.action}.
 >>
->> ![public-cloud](images/create-a-volume-2.png){.thumbnail width="800"}
->>
->> In the tab, click on `Pools`{.action} and then click on the `pool`{.action} in which the member is.
->>
->> In the tab, click on `Members`{.action} and then on `Edit Member`{.action}.
+>> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard-1.png){.thumbnail}
 >>
 >> You can edit the Weight to 0 then click on `Update`{.action}.
 >>
->> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard.png){.thumbnail}
+>> ![Update weight](images/update-weight.png){.thumbnail}
 >>
 > **CLI**
 >> You can check the member’s status using the following command:
@@ -236,7 +233,7 @@ If having a final **DRAINED** status is critical for your operations, it is reco
 
 ### Step 4: Confirm Traffic is Directed to the Active Member
 
-The member which weight is 0 will have an	Operating Status Draining. Run the test script again:
+The member whose weight is 0 will have an	Operating Status `Draining`. Run the test script again:
 
 ```bash
 #!/bin/sh
@@ -299,16 +296,20 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >> > [!api]
 >> >
 >> > @api {v1} /cloud PUT /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member/{memberId}
+>>
+>> ![public-cloud](images/update-member-api.png){.thumbnail width="800"}
+>>
 >> >
 >> > Fill in the field with the previously obtained information:
->> >
->> > **Member ID**: The Member ID in the form of a 32-character string.
->> >
->> > **Pool ID**: The Pool ID in the form of a 32-character string.
 >> >
 >> > **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >> >
 >> > **regionName**: The name of your region.
+>> >
+>> > **poolId**: The Pool ID in the form of a 32-character string.
+>> >
+>> > **memberId**: The Member ID in the form of a 32-character string.
+>> >
 >>
 > **Horizon**
 >>
@@ -318,17 +319,20 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >>
 >> On the Project tab, open the `Network`{.action} tab and click the `Load Balancers`{.action} category.
 >>
->> Click on `your loadbalancer`{.action}.
->>
->> ![public-cloud](images/create-a-volume-2.png){.thumbnail width="800"}
+>> Click on the load balancer concerned.
 >>
 >> In the tab, click on `Pools`{.action} and then on the `pool`{.action} in which the member is.
 >>
->> In the tab, click on `Members`{.action} and then on `Edit Member`{.action}.
+>> ![Update Member Openstack dashboard](images/pool-tab.png){.thumbnail}
+>>
+>> Click on the `Members`{.action} tab, and then on `Edit Member`{.action} next to the corresponding member.
+>>
+>> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard-1.png){.thumbnail}
 >>
 >> You can edit the Weight to 1 then click on `Update`{.action}
 >>
->> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard.png){.thumbnail}
+>> ![public-cloud](images/update-member-3-OpenStack_dashboard.png){.thumbnail width="800"}
+>>
 >>  
 > **CLI**
 >>
