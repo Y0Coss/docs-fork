@@ -100,7 +100,7 @@ Voici quelques commandes de base pour commencer :
 
 > [!primary]
 >
-> **Remarque** : L’option `--project-id` n’est pas nécessaire si vous avez défini l'entrée `default_cloud_project` dans votre fichier de configuration, ou si la variable d’environnement `OVH_CLOUD_PROJECT_SERVICE` est renseignée.
+> **Remarque** : L’option `--project-id` n’est pas nécessaire si vous avez défini l’entrée `default_cloud_project` dans votre fichier de configuration, ou si la variable d’environnement `OVH_CLOUD_PROJECT_SERVICE` est renseignée.
 
 Pour plus d’informations sur les commandes disponibles, consultez la [documentation complète](https://github.com/ovh/ovhcloud-cli/blob/main/doc/ovhcloud.md).
 
