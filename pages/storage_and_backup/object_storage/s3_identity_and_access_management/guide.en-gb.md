@@ -197,7 +197,7 @@ At the moment, user permissions are evaluated as follows:
 
 ```json
 {
-  "Statement": {
+  "Statement": [{
     "Sid": "ExampleStatement01",
     "Effect": "Deny",
     "Action": "s3:*",
@@ -210,7 +210,7 @@ At the moment, user permissions are evaluated as follows:
         "aws:SourceIp": "10.0.0.5/16"
       }
     }
-  }
+  }]
 } 
 ```
 
@@ -223,7 +223,7 @@ The following policy to attempt to allow read access to objects only to specific
 
 ```json
 {
-  "Statement": {
+  "Statement": [{
     "Sid": "ExampleStatement01",
     "Effect": "Allow",
     "Action": [
@@ -239,7 +239,7 @@ The following policy to attempt to allow read access to objects only to specific
         "aws:SourceIp": "10.0.0.5/16"
       }
     }
-  }
+  }]
 }
 ```
 
@@ -247,7 +247,7 @@ The following policy to attempt to deny read access to objects to specific IPs b
 
 ```json
 {
-  "Statement": {
+  "Statement": [{
     "Sid": "ExampleStatement01",
     "Effect": "Allow",
     "Action": [
@@ -263,7 +263,7 @@ The following policy to attempt to deny read access to objects to specific IPs b
         "aws:SourceIp": "10.0.0.5/16"
       }
     }
-  }
+  }]
 }
 ```
 
