@@ -215,6 +215,7 @@
             + [Configuring MegaRAID for RAID Level 0](bare_metal_cloud/dedicated_servers/megaraid_config)
             + [Configuring the storage on a HGR-STOR-2 server](bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
             + [Dedicated Servers - Upgrading your SSD Solidigm D7-P5520 firmware](bare_metal_cloud/dedicated_servers/solidigm_d7-p5520_fw_update)
+            + [Dedicated Servers - Upgrading your Micron 7500 PRO firmware](bare_metal_cloud/dedicated_servers/micron-7500-fw-upgrade)
             + [Advance Dedicated Servers - Upgrading your Samsung NVMe PM9A1 firmware](bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
             + [High Grade Dedicated Servers - Upgrading your SSD SAS Western Digital SS300 firmware](bare_metal_cloud/dedicated_servers/wd-sas-fw-upgrade)
             + [High Grade Dedicated Servers - Upgrading your SSD SAS Western Digital SS530 firmware](bare_metal_cloud/dedicated_servers/wdc-sas-ss530-fw-upgrade)
