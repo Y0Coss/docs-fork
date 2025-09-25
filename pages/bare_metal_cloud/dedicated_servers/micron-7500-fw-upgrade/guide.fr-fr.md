@@ -4,21 +4,6 @@ excerpt: Learn how to upgrade your Micron 7500 PRO firmware for Linux, ESXi and 
 updated: 2025-09-25
 ---
 
-<style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
-    cursor: pointer;
-}
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
-}
-details[open]>summary::before {
-    content:'\25BC';
-}
-</style>
-
-
 ## Objective
 
 Routine firmware updates play a pivotal role in upholding your drives, performance, stability, and security. Such updates often encompass critical bug fixes, enhanced compatibility, and advanced security features that are indispensable for preserving your data integrity and maintaining optimal operational efficiency.
