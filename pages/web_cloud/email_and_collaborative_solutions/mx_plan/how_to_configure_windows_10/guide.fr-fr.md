@@ -23,11 +23,11 @@ details[open]>summary::before {
 
 ## Objectif
 
-Les adresses e-mail de l'offre MX Plan et [Zimbra](/links/web/emails-zimbra) Starter peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
+Les adresses e-mail de l'offre **MX Plan** et [Zimbra Starter](/links/web/emails-zimbra) peuvent être configurées sur un logiciel de messagerie compatible. Cela vous permet d'envoyer et de recevoir vos messages depuis l'application de votre choix.
 
-Le **Nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier** sur Windows. Pour plus d'informations sur ce sujet, consultez la page officielle de Microsoft « [Outlook pour Windows : l’avenir du courrier, du calendrier et des Personnes sur Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ». 
+Le **nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier** sur Windows. Pour plus d'informations sur ce sujet, consultez la page officielle de Microsoft « [Outlook pour Windows : l’avenir du courrier, du calendrier et des Personnes sur Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ». 
 
-**Apprenez à configurer votre adresse e-mail MX Plan sur le Nouvel Outlook pour Windows.**
+**Apprenez à configurer votre adresse e-mail MX Plan sur le nouvel Outlook pour Windows.**
 
 ## Prérequis
 
@@ -39,7 +39,7 @@ Le **Nouvel Outlook** remplace depuis le 1 janvier 2025 l'application **Courrier
 
 > [!warning]
 >
-> Cette documentation s’applique uniquement au **Nouvel Outlook** et non à « [Outlook classique](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur.
+> Cette documentation s’applique uniquement au **nouvel Outlook** et non à « [Outlook classique](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponible dans la suite Microsoft 365 ou précédemment installé sur votre ordinateur.
 
 /// details | Informations relatives à la gestion et la configuration des services OVHcloud
 
@@ -72,34 +72,34 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 > **Etape 3 EUROPE**
 >> - Saisissez les paramêtres suivant:
 >>    - **Serveur d'entrée IMAP**: imap.mail.ovh.net **ou** ssl0.ovh.net.
->>    - **Port**: 993
->>    - **Type de connexion sécurisée**: SSL/TLS
->>    - **Nom d'utilisateur SMTP**: adresse e-mail que vous ajoutez.
+>>    - **Port**: 993.
+>>    - **Type de connexion sécurisée**: SSL/TLS.
+>>    - **Nom d'utilisateur SMTP**: Renseignez l'adresse e-mail **complète**.
 >>    - **Serveur sortant SMTP**: smtp.mail.ovh.net **ou** ssl0.ovh.net.
->>    - **Port**: 465
->>    - **Type de connexion sécurisée**: SSL/TLS
->>    - **Mot de passe**: ne rien saisir, le mot de passe saisi précédement sera utilisé.
+>>    - **Port**: 465.
+>>    - **Type de connexion sécurisée**: SSL/TLS.
+>>    - **Mot de passe**: Ne rien saisir, le mot de passe saisi précédement sera utilisé.
 >> - Cliquez sur `Continuer`{.action} pour finaliser la configuration.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-03.png){.thumbnail .w-600}
 >>
 > **Etape 3 AMERIQUE / ASIE-PACIFIQUE**
 >> - Saisissez les paramêtres suivant:
->>    - **Serveur d'entrée IMAP**: imap.mail.ovh.ca
->>    - **Port**: 993
->>    - **Type de connexion sécurisée**: SSL/TLS
->>    - **Nom d'utilisateur SMTP**: adresse e-mail que vous ajoutez.
->>    - **Serveur sortant SMTP**: smtp.mail.ovh.ca
->>    - **Port**: 465
->>    - **Type de connexion sécurisée**: SSL/TLS
->>    - **Mot de passe**: ne rien saisir, le mot de passe saisi précédement sera utilisé.
+>>    - **Serveur d'entrée IMAP**: imap.mail.ovh.ca.
+>>    - **Port**: 993.
+>>    - **Type de connexion sécurisée**: SSL/TLS.
+>>    - **Nom d'utilisateur SMTP**: Renseignez l'adresse e-mail **complète**.
+>>    - **Serveur sortant SMTP**: smtp.mail.ovh.ca.
+>>    - **Port**: 465.
+>>    - **Type de connexion sécurisée**: SSL/TLS.
+>>    - **Mot de passe**: Ne rien saisir, le mot de passe saisi précédement sera utilisé.
 >> - Cliquez sur `Continuer`{.action} pour finaliser la configuration.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-03ca.png){.thumbnail .w-600}
 
 ### Utiliser l'adresse e-mail <a name="use-account"></a>
 
-Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
+Une fois votre adresse e-mail configurée, vous pouvez commencer à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
 OVHcloud propose également une application web permettant d'accéder à votre adresse e-mail depuis votre navigateur internet accessible sur l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
@@ -172,7 +172,7 @@ Pour l'envoi des e-mails, retrouvez ci-dessous les paramètres **SMTP** à utili
 
 > [!primary]
 >
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Nouvel Outlook sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie nouvel Outlook sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
 [Premiers pas avec l'offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 

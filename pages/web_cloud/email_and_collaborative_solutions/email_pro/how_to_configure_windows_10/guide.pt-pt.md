@@ -1,6 +1,6 @@
 ---
 title: "E-Mail Pro - Configurar sua conta de E-Mail Pro no novo Outlook para Windows"
-excerpt: "Saiba como configurar sua conta de E-Mail Pro no novo Outlook para Windows."
+excerpt: "Saiba como configurar sua conta de E-Mail Pro no novo Outlook para Windows"
 updated: 2025-09-02
 ---
 
@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 Os endereços de e-mail da oferta [E-Mail Pro](/links/web/email-pro) podem ser configurados em um cliente de e-mail compatível. Isso permite enviar e receber mensagens do aplicativo de sua escolha.
 
-O **novo Outlook** substitui, a partir de 1º de janeiro de 2025, o aplicativo **E-mail** no Windows. Para mais informações, consulte a página oficial da Microsoft « [Outlook para Windows: o futuro do e-mail, calendário e contatos no Windows 11](https://support.microsoft.com/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ».
+O **novo Outlook** substitui, a partir de 1 de janeiro de 2025, o aplicativo **E-mail** no Windows. Para mais informações, consulte a página oficial da Microsoft "[Outlook para Windows: O Futuro do Correio, Calendário e Pessoas no Windows 11](https://support.microsoft.com/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
 
 **Saiba como configurar sua conta de E-Mail Pro no novo Outlook para Windows.**
 
@@ -37,13 +37,13 @@ O **novo Outlook** substitui, a partir de 1º de janeiro de 2025, o aplicativo *
 
 > [!warning]
 >
-> Esta documentação se aplica exclusivamente ao **novo Outlook** e não ao « [Outlook clássico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) », disponível no pacote Microsoft 365 ou instalado anteriormente no seu computador.
+> Esta documentação se aplica exclusivamente ao **novo Outlook** e não ao "[Outlook clássico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)", disponível no pacote Microsoft 365 ou instalado anteriormente no seu computador.
 
 /// details | Informações sobre o gerenciamento e configuração dos serviços da OVHcloud
 
 A OVHcloud fornece serviços que você é responsável por configurar, gerenciar e operar. Portanto, cabe a você garantir seu funcionamento adequado.
 
-Fornecemos este guia para ajudá-lo nas tarefas mais comuns. No entanto, recomendamos contatar um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou o fornecedor do serviço se encontrar dificuldades. Não estaremos aptos a fornecer assistência adicional. Mais informações na seção « Quer saber mais? » deste guia.
+Fornecemos este guia para ajudá-lo nas tarefas mais comuns. No entanto, recomendamos contatar um [parceiro especializado](https://marketplace.ovhcloud.com/c/support-collaboration) e/ou o fornecedor do serviço se encontrar dificuldades. Não estaremos aptos a fornecer assistência adicional. Mais informações na seção "[Quer saber mais?](#go-further)" deste guia.
 
 ///
 
@@ -53,9 +53,14 @@ Fornecemos este guia para ajudá-lo nas tarefas mais comuns. No entanto, recomen
 
 > [!warning]
 >
-> Em nosso exemplo, usamos o servidor: pro?.mail.ovh.net. Você deve substituir o «?» pelo número do servidor do seu serviço E-Mail Pro.
-> 
-> Encontre este número no seu [Kundencenter OVHcloud](/links/manager), na seção `Web Cloud`{.action} e depois `E-Mail Pro`{.action}. O nome do servidor está visível na seção **Conexão** da aba `Informações Gerais`{.action}.
+> Neste exemplo, utilizamos a menção servidor: pro?.mail.ovh.net. Deverá substituir o "?" pelo número que identifica o servidor do seu serviço E-mail Pro.
+>
+> 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
+> 1. Aceda à secção `Web Cloud`{.action}.
+> 1. Clique em `Email Pro`{.action}.
+> 1. Selecione a plataforma em causa.
+> 1. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.
+>
 
 > [!tabs]
 > **Etapa 1**
@@ -74,11 +79,11 @@ Fornecemos este guia para ajudá-lo nas tarefas mais comuns. No entanto, recomen
 >>    - **Servidor IMAP de entrada**: pro?.mail.ovh.net
 >>    - **Porta**: 993
 >>    - **Tipo de conexão segura**: SSL/TLS
->>    - **Nome de usuário SMTP**: o endereço de e-mail que está adicionando.
+>>    - **Nome de usuário SMTP**: O endereço de e-mail que está adicionando.
 >>    - **Servidor SMTP de saída**: pro?.mail.ovh.net
 >>    - **Porta**: 587
 >>    - **Tipo de conexão segura**: STARTTLS
->>    - **Senha**: não digite nada, a senha digitada anteriormente será usada.
+>>    - **Senha**: Não digite nada, a senha digitada anteriormente será usada.
 >> - Clique em `Continuar`{.action} para concluir a configuração.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-emp-03.png){.thumbnail .w-400}
@@ -87,16 +92,16 @@ Fornecemos este guia para ajudá-lo nas tarefas mais comuns. No entanto, recomen
 
 Assim que o endereço de e-mail estiver configurado, você pode usá-lo! Agora pode enviar e receber mensagens.
 
-A OVHcloud também oferece uma aplicação web para acessar seu endereço de e-mail pelo navegador, disponível no endereço [Webmail](/links/web/email). Você pode acessá-lo usando as credenciais do seu endereço de e-mail.
+A OVHcloud também disponibiliza uma aplicação web que pode usar para aceder ao seu e-mail diretamente a partir do browser. Para aceder ao Webmail OVHcloud, clique em [este link](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ### Modificar as configurações existentes <a name="modify-settings"></a>
 
 O aplicativo Outlook não permite modificar os parâmetros do servidor para sua conta de e-mail.
 
-Se sua conta de e-mail já estiver configurada e você desejar configurá-la novamente, precisará excluí-la e recriá-la:
+Se a sua conta de e-mail já estiver configurada e pretender alterar as suas configurações, deverá eliminá-la e recriá-la:
 
-- Clique no ícone de configurações « &#9965; » na parte inferior do menu lateral esquerdo.
-- Na seção « Suas contas », clique em `Gerenciar`{.action} à direita do endereço de e-mail em questão.
+- Clique no ícone de configurações `⛭`{.action} na parte inferior do menu lateral esquerdo.
+- Na seção "Suas contas", clique em `Gerenciar`{.action} à direita do endereço de e-mail em questão.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-400}
 
@@ -108,7 +113,7 @@ Se sua conta de e-mail já estiver configurada e você desejar configurá-la nov
 
 > [!success]
 >
-> Após excluir a conta de e-mail, siga as instruções na seção « [Adicionar a conta](#add-account) » desta documentação.
+> Após excluir a conta de e-mail, siga as instruções na seção "[Adicionar a conta](#add-account)" desta documentação.
 
 ### Configurações gerais de envio e recebimento <a name="settings-account"></a>
 
@@ -123,7 +128,7 @@ Selecione a guia correspondente ao tipo de configuração:
 >>
 >> - **Nome de usuário**: Digite o **endereço de e-mail completo**.
 >> - **Senha**: Digite a senha do endereço de e-mail.
->> - **Servidor de entrada**: pro?.mail.ovh.net (substitua «?» pelo número do seu servidor).
+>> - **Servidor de entrada**: pro?.mail.ovh.net (substitua "?" pelo número do seu servidor).
 >> - **Porta**: 993.
 >> - **Tipo de conexão segura**: SSL/TLS.
 >>
@@ -131,7 +136,7 @@ Selecione a guia correspondente ao tipo de configuração:
 >>
 >> - **Nome de usuário**: Digite o **endereço de e-mail completo**.
 >> - **Senha**: Digite a senha do endereço de e-mail.
->> - **Servidor de entrada**: pro?.mail.ovh.net (substitua «?» pelo número do seu servidor).
+>> - **Servidor de entrada**: pro?.mail.ovh.net (substitua "?" pelo número do seu servidor).
 >> - **Porta**: 995.
 >> - **Tipo de conexão segura**: SSL/TLS.
 
@@ -143,7 +148,7 @@ Para o envio de e-mails, utilize os seguintes parâmetros **SMTP**:
 
 - **Nome de usuário**: Digite o **endereço de e-mail completo**.
 - **Senha**: Digite a senha do endereço de e-mail.
-- **Servidor de saída**: pro?.mail.ovh.net (substitua «?» pelo número do seu servidor).
+- **Servidor de saída**: pro?.mail.ovh.net (substitua "?" pelo número do seu servidor).
 - **Porta**: 587.
 - **Tipo de conexão segura**: STARTTLS.
 
@@ -155,8 +160,8 @@ Para o envio de e-mails, utilize os seguintes parâmetros **SMTP**:
 
 [Primeiros passos com a solução E-Mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-Para serviços especializados (SEO, desenvolvimento, etc.), entre em contato com os [parceiros da OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 
-Se desejar obter assistência para usar e configurar suas soluções da OVHcloud, consulte nossas [ofertas de suporte](/links/support).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Junte-se à nossa [comunidade de usuários](/links/community).
+Fale com a nossa [comunidade de utilizadores](/links/community).

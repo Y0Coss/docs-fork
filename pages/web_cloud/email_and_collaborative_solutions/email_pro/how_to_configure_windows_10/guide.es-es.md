@@ -1,6 +1,6 @@
 ---
 title: "E-mail Pro - Configurar su cuenta de E-mail Pro en el nuevo Outlook para Windows"
-excerpt: "Descubra cómo configurar su dirección de E-mail Pro en el Nuevo Outlook para Windows"
+excerpt: "Descubra cómo configurar su dirección de E-mail Pro en el nuevo Outlook para Windows"
 updated: 2025-09-02
 ---
 
@@ -25,25 +25,25 @@ details[open]>summary::before {
 
 Las direcciones de correo electrónico de la oferta [E-mail Pro](/links/web/email-pro) se pueden configurar en un cliente de mensajería compatible. Esto le permite enviar y recibir mensajes desde la aplicación de su elección.
 
-El **Nuevo Outlook** reemplaza desde el 1 de enero de 2025 la aplicación **Correo** en Windows. Para obtener más información sobre este tema, consulte la página oficial de Microsoft: "[Outlook para Windows: El futuro del correo, calendario y Personas en Windows 11](https://support.microsoft.com/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
+El **nuevo Outlook** reemplaza desde el 1 de enero de 2025 la aplicación **Correo** en Windows. Para obtener más información sobre este tema, consulte la página oficial de Microsoft: "[Outlook para Windows: El futuro del correo, calendario y Personas en Windows 11](https://support.microsoft.com/office/outlook-pour-windows-l-avenir-du-courrier-du-calendrier-et-des-personnes-sur-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
 
-**Descubra cómo configurar su dirección de E-mail Pro en el Nuevo Outlook para Windows.**
+**Descubra cómo configurar su dirección de E-mail Pro en el nuevo Outlook para Windows.**
 
 ## Requisitos
 
 - Tener una dirección [E-mail Pro](/links/web/email-pro).
-- Tener el [Nuevo Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) para Windows.
+- Tener el [nuevo Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) para Windows.
 - Poseer las credenciales relacionadas con la dirección de correo electrónico que desea configurar.
 
 > [!warning]
 >
-> Esta documentación se aplica únicamente al **Nuevo Outlook** y no al "[Outlook Clásico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" disponible en la suite Microsoft 365 o instalado previamente en su computadora.
+> Esta documentación se aplica únicamente al **nuevo Outlook** y no al "[Outlook Clásico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" disponible en la suite Microsoft 365 o instalado previamente en su computadora.
 
 /// details | Información relacionada con la gestión y configuración de los servicios OVHcloud
 
 OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen en usted. Por lo tanto, es su responsabilidad asegurar su correcto funcionamiento.
 
-Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin embargo, le recomendamos contactar a un [socio especializado](https://marketplace.ovhcloud.com/c/support-collaboration) y/o al proveedor del servicio si encuentra dificultades. Tenga en cuenta que no podremos proporcionar asistencia. Para obtener más información, consulte la sección "Más información" de esta guía.
+Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin embargo, le recomendamos contactar a un [socio especializado](https://marketplace.ovhcloud.com/c/support-collaboration) y/o al proveedor del servicio si encuentra dificultades. Tenga en cuenta que no podremos proporcionar asistencia. Para obtener más información, consulte la sección "[Más información](#go-further)" de esta guía.
 
 ///
 
@@ -53,9 +53,14 @@ Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin e
 
 > [!warning]
 >
-> En nuestro ejemplo, usamos el nombre del servidor: pro?.mail.ovh.net. Debe reemplazar el "?" con el número correspondiente al servidor de su servicio E-mail Pro.
-> 
-> Encuentre este número en su [Panel de Control OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y luego `E-mail Pro`{.action}. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información General`{.action}.
+> En nuestro ejemplo, hemos utilizado la mención servidor: pro?.mail.ovh.net. Sustituya la "?" por la cifra que designa al servidor de su servicio Email Pro.
+>
+> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+> 1. Acceda al apartado `Web Cloud`{.action}.
+> 1. Haga clic en `Email Pro`{.action}.
+> 1. Seleccione la plataforma correspondiente.
+> 1. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+>
 
 > [!tabs]
 > **Etapa 1**
@@ -74,11 +79,11 @@ Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin e
 >>    - **Servidor de entrada IMAP**: pro?.mail.ovh.net
 >>    - **Puerto**: 993
 >>    - **Tipo de conexión segura**: SSL/TLS
->>    - **Nombre de usuario SMTP**: la dirección de correo electrónico que está agregando.
+>>    - **Nombre de usuario SMTP**: La dirección de correo electrónico que está agregando.
 >>    - **Servidor de salida SMTP**: pro?.mail.ovh.net
 >>    - **Puerto**: 587
 >>    - **Tipo de conexión segura**: STARTTLS
->>    - **Contraseña**: no introduzca nada; se utilizará la contraseña ingresada anteriormente.
+>>    - **Contraseña**: No introduzca nada; se utilizará la contraseña ingresada anteriormente.
 >> - Haga clic en `Continuar`{.action} para finalizar la configuración.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-emp-03.png){.thumbnail .w-400}
@@ -87,15 +92,15 @@ Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin e
 
 Una vez configurada la dirección de correo electrónico, ya puede usarla. Ahora puede enviar y recibir mensajes.
 
-OVHcloud también ofrece una aplicación web que le permite acceder a su dirección de correo electrónico desde su navegador mediante la dirección [Webmail](/links/web/email). Puede iniciar sesión utilizando las credenciales de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador. Para acceder al webmail de OVHcloud, haga clic en [este enlace](/links/web/email). Puede conectarse con las claves de su dirección de correo electrónico.
 
 ### Modificar los ajustes existentes <a name="modify-settings"></a>
 
 La aplicación Outlook no permite modificar los ajustes del servidor de su cuenta de correo electrónico.
 
-Si su cuenta de correo electrónico ya está configurada y desea volver a configurarla, deberá eliminarla y recrearla:
+Si su cuenta de correo ya está configurada y desea modificar sus parámetros, deberá eliminarla y volver a crearla:
 
-- Haga clic en el icono de ajustes "⋮" en la parte inferior del panel izquierdo.
+- Haga clic en el icono de ajustes `⛭`{.action} en la parte inferior del panel izquierdo.
 - En la sección "Tus cuentas", haga clic en `Gestionar`{.action} a la derecha de la dirección de correo electrónico correspondiente.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-400}
@@ -147,16 +152,16 @@ Para el envío de correos electrónicos, encuentre a continuación los parámetr
 - **Puerto**: 587.
 - **Tipo de seguridad**: STARTTLS.
 
-## Más información
+## Más información <a name="go-further"></a>
 
 > [!primary]
 >
-> Para obtener más información sobre la configuración de una dirección de correo electrónico desde el cliente de mensajería Nuevo Outlook en Windows, consulte [el centro de ayuda de Microsoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde el cliente de mensajería nuevo Outlook en Windows, consulte [el centro de ayuda de Microsoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
 [Primeros pasos con la solución E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
-Para servicios especializados (SEO, desarrollo, etc.), contacte con los [socios de OVHcloud](/links/partner).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
-Si desea recibir asistencia para usar y configurar sus soluciones OVHcloud, le recomendamos consultar nuestras diferentes [ofertas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Únase a nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra [comunidad de usuarios](/links/community).

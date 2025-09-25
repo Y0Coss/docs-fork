@@ -1,5 +1,5 @@
 ---
-title: 'Plan MX / Zimbra Starter - Agregar una cuenta de correo electrónico en el nuevo Outlook para Windows'
+title: 'MX Plan / Zimbra Starter - Agregar una cuenta de correo electrónico en el nuevo Outlook para Windows'
 excerpt: "Aprenda a configurar su dirección de correo electrónico en el nuevo Outlook para Windows."
 updated: 2025-09-02
 ---
@@ -23,11 +23,11 @@ details[open]>summary::before {
 
 ## Objetivo
 
-Las direcciones de correo electrónico de la oferta **Plan MX** y [Zimbra](/links/web/emails-zimbra) Starter pueden configurarse en un software de mensajería compatible. Esto le permite enviar y recibir mensajes desde la aplicación de su elección.
+Las direcciones de correo electrónico de la oferta **MX Plan** y [Zimbra Starter](/links/web/emails-zimbra) pueden configurarse en un software de mensajería compatible. Esto le permite enviar y recibir mensajes desde la aplicación de su elección.
 
-El **Nuevo Outlook** reemplaza desde el 1 de enero de 2025 a la aplicación **Correo** en Windows. Para más información sobre este tema, consulte la página oficial de Microsoft « [Outlook para Windows: el futuro del correo, calendario y personas en Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199) ». 
+El **nuevo Outlook** reemplaza desde el 1 de enero de 2025 a la aplicación **Correo** en Windows. Para más información sobre este tema, consulte la página oficial de Microsoft "[Outlook para Windows: El futuro del correo, el calendario y los Personas en Windows 11](https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)". 
 
-**Aprenda a configurar su dirección de correo electrónico Plan MX en el Nuevo Outlook para Windows.**
+**Aprenda a configurar su dirección de correo electrónico Plan MX en el nuevo Outlook para Windows.**
 
 ## Requisitos
 
@@ -39,13 +39,13 @@ El **Nuevo Outlook** reemplaza desde el 1 de enero de 2025 a la aplicación **Co
 
 > [!warning]
 >
-> Esta documentación se aplica únicamente al **Nuevo Outlook** y no a « [Outlook clásico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5) » disponible en la suite Microsoft 365 o previamente instalado en su computadora.
+> Esta documentación se aplica únicamente al **nuevo Outlook** y no a "[Outlook clásico](https://support.microsoft.com/office/installer-ou-r%C3%A9installer-outlook-classique-sur-un-pc-windows-5c94902b-31a5-4274-abb0-b07f4661edf5)" disponible en la suite Microsoft 365 o previamente instalado en su computadora.
 
 /// details | Información relacionada con la gestión y configuración de los servicios OVHcloud
 
 OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen en usted. Por lo tanto, es su responsabilidad asegurar su correcto funcionamiento.
 
-Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin embargo, le recomendamos contactar a un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) y/o contactar al editor del servicio si encuentra dificultades. De hecho, no podremos proporcionarle asistencia. Más información en la sección « Ir más allá » de esta guía.
+Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin embargo, le recomendamos contactar a un [partner especializado](https://marketplace.ovhcloud.com/c/support-collaboration) y/o contactar al editor del servicio si encuentra dificultades. De hecho, no podremos proporcionarle asistencia. Más información en la sección "[Más información](#go-further)" de esta guía.
 
 ///
 
@@ -72,45 +72,45 @@ Le proporcionamos esta guía para acompañarlo en las tareas más comunes. Sin e
 > **Etapa 3 EUROPA**
 >> - Introduzca los siguientes parámetros:
 >>    - **Servidor de entrada IMAP**: imap.mail.ovh.net **o** ssl0.ovh.net.
->>    - **Puerto**: 993
->>    - **Tipo de conexión segura**: SSL/TLS
->>    - **Nombre de usuario SMTP**: dirección de correo electrónico que está agregando.
+>>    - **Puerto**: 993.
+>>    - **Tipo de conexión segura**: SSL/TLS.
+>>    - **Nombre de usuario SMTP**: Introduzca la dirección de correo electrónico **completa**.
 >>    - **Servidor de salida SMTP**: smtp.mail.ovh.net **o** ssl0.ovh.net.
->>    - **Puerto**: 465
->>    - **Tipo de conexión segura**: SSL/TLS
->>    - **Contraseña**: no introduzca nada, se utilizará la contraseña ingresada anteriormente.
+>>    - **Puerto**: 465.
+>>    - **Tipo de conexión segura**: SSL/TLS.
+>>    - **Contraseña**: No introduzca nada, se utilizará la contraseña ingresada anteriormente.
 >> - Haga clic en `Continuar`{.action} para finalizar la configuración.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-03.png){.thumbnail .w-600}
 >>
 > **Etapa 3 AMÉRICA / ASIA-PACÍFICO**
 >> - Introduzca los siguientes parámetros:
->>    - **Servidor de entrada IMAP**: imap.mail.ovh.ca
->>    - **Puerto**: 993
->>    - **Tipo de conexión segura**: SSL/TLS
->>    - **Nombre de usuario SMTP**: dirección de correo electrónico que está agregando.
->>    - **Servidor de salida SMTP**: smtp.mail.ovh.ca
->>    - **Puerto**: 465
->>    - **Tipo de conexión segura**: SSL/TLS
->>    - **Contraseña**: no introduzca nada, se utilizará la contraseña ingresada anteriormente.
+>>    - **Servidor de entrada IMAP**: imap.mail.ovh.ca.
+>>    - **Puerto**: 993.
+>>    - **Tipo de conexión segura**: SSL/TLS.
+>>    - **Nombre de usuario SMTP**: Introduzca la dirección de correo electrónico **completa**.
+>>    - **Servidor de salida SMTP**: smtp.mail.ovh.ca.
+>>    - **Puerto**: 465.
+>>    - **Tipo de conexión segura**: SSL/TLS.
+>>    - **Contraseña**: No introduzca nada, se utilizará la contraseña ingresada anteriormente.
 >> - Haga clic en `Continuar`{.action} para finalizar la configuración.
 >>
 >> ![outlook](images/configuration-newoutlook-windows-03ca.png){.thumbnail .w-600}
 
 ### Utilizar la dirección de correo electrónico <a name="use-account"></a>
 
-Una vez configurada la dirección de correo electrónico, ya puede utilizarla. Ahora puede enviar y recibir mensajes.
+Una vez configurada la dirección de correo electrónico, ya puede usarla. Ahora puede enviar y recibir mensajes.
 
-OVHcloud también ofrece una aplicación web para acceder a su dirección de correo electrónico desde su navegador, accesible en la dirección [Webmail](/links/web/email). Puede conectarse utilizando las credenciales de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador. Para acceder al webmail de OVHcloud, haga clic en [este enlace](/links/web/email). Puede conectarse con las claves de su dirección de correo electrónico.
 
 ### Modificar los ajustes existentes <a name="modify-settings"></a>
 
 La aplicación Outlook no permite modificar los ajustes del servidor de su cuenta de correo electrónico.
 
-Si su cuenta de correo electrónico ya está configurada y desea volver a configurarla, deberá eliminarla y recrearla:
+Si su cuenta de correo ya está configurada y desea modificar sus parámetros, deberá eliminarla y volver a crearla:
 
-- Haga clic en el icono de ajustes « &#9965; » en la parte inferior del panel izquierdo.
-- En la sección « Sus cuentas » haga clic en `Gestionar` {.action} a la derecha de la dirección de correo electrónico correspondiente.
+- Haga clic en el icono de ajustes `⛭`{.action} en la parte inferior del panel izquierdo.
+- En la sección "Sus cuentas" haga clic en `Gestionar`{.action} a la derecha de la dirección de correo electrónico correspondiente.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-600}
 
@@ -122,7 +122,7 @@ Si su cuenta de correo electrónico ya está configurada y desea volver a config
 
 > [!success]
 >
-> Una vez que haya eliminado su cuenta de correo electrónico, siga las instrucciones de la sección « [Agregar la cuenta](#add-account) » de esta documentación.
+> Una vez que haya eliminado su cuenta de correo electrónico, siga las instrucciones de la sección "[Agregar la cuenta](#add-account)" de esta documentación.
 
 ### Ajustes generales de envío y recepción <a name="settings-account"></a>
 
@@ -168,18 +168,18 @@ Para el envío de correos electrónicos, a continuación encontrará los paráme
 - **Puerto**: 465.
 - **Tipo de seguridad**: SSL/TLS.
 
-## Ir más allá
+## Más información <a name="go-further"></a>
 
 > [!primary]
 >
-> Para obtener más información sobre la configuración de una dirección de correo electrónico desde el cliente de mensajería Nuevo Outlook en Windows, consulte [el centro de ayuda de Microsoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde el cliente de mensajería nuevo Outlook en Windows, consulte [el centro de ayuda de Microsoft](https://support.microsoft.com/office/start-using-new-outlook-for-windows-4395454d-cb2f-4c16-bb24-fa4bb36650ae).
 
 [Primeros pasos con la oferta Plan MX](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Primeros pasos con la oferta Zimbra](/pages/web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [socios de OVHcloud](/links/partner).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
-Si desea recibir asistencia para usar y configurar sus soluciones OVHcloud, le recomendamos consultar nuestras diferentes [ofertas de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Únase a nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra [comunidad de usuarios](/links/community).
