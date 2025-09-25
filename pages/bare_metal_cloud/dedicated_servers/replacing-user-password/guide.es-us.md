@@ -71,19 +71,38 @@ chroot /mnt/
 
 ### Paso 2: restablecer la contraseña del usuario
 
-Nota: en una distribución GNU/Linux, **una petición de contraseña no muestra las entradas de teclado**.
-
-Cambie la contraseña del usuario con el siguiente comando (sustituya `username` por el nombre real de la cuenta de usuario):
+Antes de cambiar la contraseña del usuario, **verifique en qué cuenta está conectado** mediante el siguiente comando:
 
 ```bash
-passwd username
+whoami
 ```
+
+Ejemplos de salida: `debian`, `ubuntu`, `user1`, etc.
+
+Si la cuenta mostrada es la correcta, utilice el siguiente comando para modificar su contraseña:
+
+```bash
+passwd
+```
+
+Introduzca la nueva contraseña:
 
 ```text
 New password: 
 Retype new password:
 passwd: password updated successfully
 ```
+
+> [!primary]
+>
+> En una distribución GNU/Linux, **una solicitud de contraseña no muestra las teclas que introduce**.
+
+Si no es la cuenta correcta, desconéctese y vuelva a conectarse por SSH con el usuario objetivo, y luego cambie su contraseña.
+
+> [!warning]
+>
+> El comando `passwd` sin argumentos modifica la contraseña de la cuenta mostrada por `whoami`.
+> Siempre verifique el usuario actual antes de ejecutar este comando.
 
 Recuerde utilizar el modo de arranque **normal** del servidor al reiniciarlo desde el [área de cliente de OVHcloud](/links/manager).
 

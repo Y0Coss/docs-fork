@@ -71,19 +71,38 @@ chroot /mnt/
 
 ### Schritt 2: Benutzer-Passwort zurücksetzen
 
-Hinweis: Bei einer GNU/Linux-Distribution **zeigt eine Passworteingabeaufforderung keine Tastatureingaben an**.
-
-Ändern Sie das Passwort des Benutzers mit folgendem Befehl (ersetzen Sie `username` durch den Namen des Benutzer-Accounts):
+Bevor Sie das Passwort des Benutzers ändern, **stellen Sie sicher, auf welchem Konto Sie angemeldet sind**, mithilfe des folgenden Befehls:
 
 ```bash
-passwd username
+whoami
 ```
+
+Beispiele für die Ausgabe: `debian`, `ubuntu`, `user1`, etc.
+
+Wenn das angezeigte Konto das richtige ist, verwenden Sie den folgenden Befehl, um das Passwort zu ändern:
+
+```bash
+passwd
+```
+
+Geben Sie das neue Passwort ein:
 
 ```text
 New password: 
 Retype new password:
 passwd: password updated successfully
 ```
+
+> [!primary]
+>
+> Auf einer GNU/Linux-Distribution **wird bei der Passwortabfrage keine Tastatureingabe angezeigt**.
+
+Falls es sich nicht um das richtige Konto handelt, melden Sie sich ab und verbinden Sie sich erneut per SSH mit dem Zielbenutzer, bevor Sie das Passwort ändern.
+
+> [!warning]
+>
+> Der Befehl `passwd` ohne Argument ändert das Passwort des Kontos, das durch `whoami` angezeigt wird.
+> Stellen Sie immer sicher, welcher aktuelle Benutzer vorliegt, bevor Sie diesen Befehl ausführen.
 
 Denken Sie daran, den regulären Startmodus zu verwenden, wenn Sie Ihren Server im [OVHcloud Kundencenter](/links/manager) neu starten.
 

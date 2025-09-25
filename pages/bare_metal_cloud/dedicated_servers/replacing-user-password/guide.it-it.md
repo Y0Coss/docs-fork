@@ -71,19 +71,38 @@ chroot /mnt/
 
 ### Step 2: reimposta la password dell'utente
 
-Nota: in una distribuzione GNU/Linux, **il prompt della password non visualizza le voci della tastiera**.
-
-Modifica la password dell’utente con questo comando (sostituisci `username` con il nome reale dell’account utente):
+Prima di modificare la password dell'utente, **verifica su quale account sei connesso** utilizzando il comando seguente:
 
 ```bash
-passwd username
+whoami
 ```
+
+Esempi di output: `debian`, `ubuntu`, `user1`, ecc.
+
+Se l'account visualizzato è corretto, utilizza il comando seguente per modificare la password:
+
+```bash
+passwd
+```
+
+Inserisci la nuova password:
 
 ```text
 New password: 
 Retype new password:
 passwd: password updated successfully
 ```
+
+> [!primary]
+>
+> Su una distribuzione GNU/Linux, **una richiesta di password non visualizza le tue tastiere**.
+
+Se non è l'account corretto, disconnettiti e riconnettiti tramite SSH con l'utente obiettivo, quindi modifica la sua password.
+
+> [!warning]
+>
+> Il comando `passwd` senza argomenti modifica la password dell'account visualizzato da `whoami`.
+> Verifica sempre l'utente corrente prima di eseguire questo comando.
 
 Utilizza la modalità di avvio **normal** del tuo server quando lo riavvii dallo [Spazio Cliente OVHcloud](/links/manager).
 

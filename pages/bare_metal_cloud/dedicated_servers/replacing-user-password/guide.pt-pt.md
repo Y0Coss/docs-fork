@@ -70,19 +70,38 @@ chroot /mnt/
 
 ### Etapa 2: reinicializar a palavra-passe do utilizador
 
-Nota: numa distribuição GNU/Linux, **uma linha de comandos de palavra-passe não apresenta as suas entradas de teclado**.
-
-Altere a palavra-passe do utilizador com o seguinte comando (substitua `username` pelo nome real da conta de utilizador):
+Antes de alterar a senha do usuário, **verifique em qual conta você está conectado** usando o seguinte comando:
 
 ```bash
-passwd username
+whoami
 ```
+
+Exemplos de saída: `debian`, `ubuntu`, `user1`, etc.
+
+Se a conta exibida estiver correta, use o seguinte comando para modificar sua senha:
+
+```bash
+passwd
+```
+
+Insira a nova senha:
 
 ```text
 New password: 
 Retype new password:
 passwd: password updated successfully
 ```
+
+> [!primary]
+>
+> Em uma distribuição GNU/Linux, **uma solicitação de senha não exibe as teclas digitadas**.
+
+Se não for a conta correta, desconecte-se e reconecte-se via SSH com o usuário alvo, em seguida altere sua senha.
+
+> [!warning]
+>
+> O comando `passwd` sem argumentos modifica a senha da conta exibida por `whoami`.
+> Sempre verifique o usuário atual antes de executar este comando.
 
 Lembre-se de utilizar o modo de arranque **normal** do seu servidor quando o reiniciar a partir da sua [Área de Cliente OVHcloud](/links/manager).
 

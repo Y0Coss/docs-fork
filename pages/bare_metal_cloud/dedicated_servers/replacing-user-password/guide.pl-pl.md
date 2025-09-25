@@ -71,19 +71,38 @@ chroot /mnt/
 
 ### Etap 2: resetowanie hasła użytkownika
 
-Uwaga: w dystrybucji GNU/Linux **wiersz hasła nie wyświetla wpisów klawiaturowych**.
-
-Zmień hasło użytkownika za pomocą następującego polecenia (zastąp `username` rzeczywistą nazwą konta użytkownika):
+Przed zmianą hasła użytkownika **sprawdź, na jakim koncie jesteś zalogowany**, używając poniższego polecenia:
 
 ```bash
-passwd username
+whoami
 ```
+
+Przykłady wyjścia: `debian`, `ubuntu`, `user1`, itp.
+
+Jeśli wyświetlony konto jest poprawne, użyj poniższego polecenia, aby zmienić hasło:
+
+```bash
+passwd
+```
+
+Wprowadź nowe hasło:
 
 ```text
 New password: 
 Retype new password:
 passwd: password updated successfully
 ```
+
+> [!primary]
+>
+> W przypadku dystrybucji GNU/Linux **prośba o hasło nie wyświetla wpisywanych znaków**.
+
+Jeśli to nie jest poprawne konto, wyloguj się i ponownie zaloguj się przez SSH z użytkownikiem docelowym, a następnie zmień jego hasło.
+
+> [!warning]
+>
+> Polecenie `passwd` bez argumentów zmienia hasło konta wyświetlanego przez `whoami`.
+> Zawsze sprawdzaj aktualnego użytkownika przed wykonaniem tego polecenia.
 
 Pamiętaj, aby podczas restartu serwera z poziomu [Panelu klienta OVHcloud](/links/manager) użyć trybu uruchamiania **normalnego** Twojego serwera.
 
