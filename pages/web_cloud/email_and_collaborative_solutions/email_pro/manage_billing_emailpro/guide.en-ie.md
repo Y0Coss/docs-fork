@@ -66,7 +66,7 @@ Once you have deleted your email accounts, you will need to delete the domain na
 
 ![billing_emailpro](images/billing-emailpro-del-dom.png){.thumbnail}
 
-In the `Email accounts`{.action} tab of your service, click the `Actions`{.action} button in the top right-hand corner, then `Cancel`{.action}. 
+In the `Email accounts`{.action} tab of your service, click the `Actions`{.action} button in the top right-hand corner, then `Cancel`{.action}.
 
 ![billing_emailpro](images/billing-emailpro-05.png){.thumbnail}
 

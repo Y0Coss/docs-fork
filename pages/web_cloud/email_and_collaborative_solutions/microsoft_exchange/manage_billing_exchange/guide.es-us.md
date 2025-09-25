@@ -96,8 +96,6 @@ Desde la ventana de gestión de su plataforma Exchange, haga clic en el botón `
 >
 > Esta acción provocará la suspensión y la eliminación de todas las cuentas de la plataforma Exchange en su fecha de expiración.
 
-![billing_exchange](images/billing-exchange-07.png){.thumbnail}
-
 ## Más información <a name="go-further"></a>
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).

@@ -26,7 +26,7 @@ Les services Hosted Exchange et Private Exchange disposent d'une gestion flexibl
 
 #### Commander des comptes supplémentaires
 
-Dirigez-vous dans l'onglet `Comptes e-mail`{.action} puis cliquez sur le bouton `Actions`{.action} en haut à gauche et enfin cliquez sur `Commander des comptes`{.action}
+Dirigez-vous dans l'onglet `Comptes e-mail`{.action} puis cliquez sur le bouton `Actions`{.action} en haut à gauche et enfin cliquez sur `Commander des comptes`{.action}.
 
 ![billing_exchange](images/billing-exchange-00.png){.thumbnail}
 
@@ -54,7 +54,7 @@ Dans l'exemple ci-dessous, voici les actions à mener pour passer un compte en r
 
 #### Supprimer des comptes
 
-Pour supprimer un compte de votre plateforme Hosted, il faut d'abord le résilier en passant la configuration de son renouvellement sur « **Expire au terme** ». Pour faire cela consultez l'étape [« modifier la périodicité de vos comptes »](#periodicity).
+Pour supprimer un compte de votre plateforme Hosted, il faut d'abord le résilier en passant la configuration de son renouvellement sur « **Expire au terme** ». Pour faire cela, consultez l'étape [« modifier la périodicité de vos comptes »](#periodicity).
 
 Après résiliation, le compte sera suspendu à sa date d'expiration. Si vous souhaitez supprimer l'adresse e-mail hébergée par le compte avant sa date d'expiration, réinitialisez celui-ci.
 
