@@ -12,7 +12,7 @@ updated: 2025-09-24
 
 /// details | Qu'est-ce qu'un VPS et à quoi sert-il ?
 
-Un serveur virtuel privé (VPS) est utilisé pour héberger des sites Web (e-commerce, contenu, médias visuels) et des applications logicielles (portails, extranets, solutions collaboratives, wikis, CRM). Contrairement à l'hébergement mutualisé, un VPS offre un environnement isolé, dédié au client. Nos solutions VPS combinent les performances et la fiabilité sans la charge de gestion du matériel. Vous pouvez également mettre à niveau votre configuration sans changer de serveur.
+Un serveur privé virtuel (VPS) est utilisé pour héberger des sites Web (e-commerce, contenu, médias visuels) et des applications logicielles (portails, extranets, solutions collaboratives, wikis, CRM). Contrairement à l'hébergement mutualisé, un VPS offre un environnement isolé, dédié au client. Nos solutions VPS combinent les performances et la fiabilité sans la charge de gestion du matériel. Vous pouvez également mettre à niveau votre configuration sans changer de serveur.
 
 ///
 
@@ -384,7 +384,7 @@ Connectez-vous à la [console d'API OVHcloud](/links/api) avec vos identifiants 
 - `ipBlock` : Entrez l'adresse IP qui aura accès, sous la forme `203.0.113.100/32`.
 - `nfs` : Définissez sur `true` si applicable.
 
-Cliquez sur le bouton `EXECUTER`{.action}.
+Cliquez sur le bouton `EXECUTE`{.action}.
 
 Pour vérifier que votre adresse IP est autorisée, utilisez l'appel suivant :
 
