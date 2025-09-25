@@ -1,18 +1,18 @@
 ---
 title: 'Creating and using a Server Group in Horizon and CLI'
-excerpt: 'Find out how to create a Server Group and use it for Public Cloud instance'
-updated: 2025-09-23
+excerpt: 'Find out how to create a Server Group and use it with a Public Cloud instance'
+updated: 2025-09-25
 ---
 
 ## Objective
 
-This documentation explains how to use the Server Groups feature to control the scheduling of a group instances.
+This documentation explains how to use the Server Groups feature to control the scheduling of a group of instances.
 
 **Using Server Groups to provide a mechanism to group instances according to a certain policy.**
 
 ## Prerequisites
 
-In order to use Server Groups you must use the OpenStack Dashboard or the Openstack CLI. Make sure you have [enabled it](../../getting-started/enable-openstack-cli.md).
+In order to use Server Groups, you must use the OpenStack Dashboard or the OpentSack CLI. Make sure you have [enabled it](../../getting-started/enable-openstack-cli.md).
 
 ### Definition
 
@@ -26,7 +26,7 @@ A Server Group with the policy of `affinity` will make sure that all the instanc
 
 ##### **Soft Affinity**
 
-A policy of `soft affinity` will **try to** make sure that all the instances in that group are placed on the same physical compute node, but ultimately will allow it if otherwise not possible.
+A Server Group with the policy of `soft affinity` will **try to** make sure that all the instances in that group are placed on the same physical compute node, but ultimately will allow it if otherwise not possible.
 
 ##### **Anti Affinity**
 
@@ -34,7 +34,7 @@ A Server Group with the policy of `anti affinity` will make sure that the instan
 
 ##### **Soft Anti Affinity**
 
-A policy of `soft anti affinity` will **try to** make sure that all the instances in that group are not placed on the same physical compute node, but ultimately will allow it if otherwise not possible.
+A Server Group with the policy of `soft anti affinity` will **try to** make sure that all the instances in that group are not placed on the same physical compute node, but ultimately will allow it if otherwise not possible.
 
 ### Step 1: Creating Server Groups
 
@@ -43,12 +43,12 @@ A policy of `soft anti affinity` will **try to** make sure that all the instance
 > **Openstack Dashboard**
 >> >![Keystone](images/create_server_groups_openstack_dashboard.png){.thumbnail}
 >> >
->> >* Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
->> >* Select the appropriate region from the drop down menu at the top left.
->> >* On the Project tab, open the `Compute`{.action} tab and click on `Server Groups`{.action}.
->> >* Next, cick on `+ Create Server Group`{.action}.
->> >* In the popup window that appears, select a `Name` and `Policy` for your server group.
->> >* Click on `Submit`{.action}.
+>> > * Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+>> > * Select the appropriate region from the drop down menu at the top left.
+>> > * Click on `Compute`{.action} in left tab, then on `Server Groups`{.action}.
+>> > * Next, cick on `+ Create Server Group`{.action}.
+>> > * In the popup window that appears, select a `Name` and `Policy` for your server group.
+>> > * Click on `Submit`{.action}.
 >>
 > **CLI**
 >> To create a Server Group, use the following command:
@@ -64,20 +64,20 @@ A policy of `soft anti affinity` will **try to** make sure that all the instance
 >
 > Openstack Dashboard
 >> >
->> > Horizon can create, read, update, and delete and also get a list of Server Groups for a tenant to allow specification of a group when booting a VM.  
+>> > Horizon can create, read, update, and delete, as well as obtain a list of Server Groups for a tenant to enable the specification of a group when starting a virtual machine.
 >> >
->> >* Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
->> >* Select the appropriate region from the drop down menu at the top left.
->> >* On the Project tab, open the `Compute`{.action} tab and click on `Instances`{.action}.
->> >* Click on `Launch Instance`{.action}.
->> >* In the popup window, complete the necessary fields to create your instance. In the `Server Group` field, click on the drop-down arrow next to `Available` to display the list of available server groups. Select a server group and it will be moved to `Allocated`.
+>> > * Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+>> > * Select the appropriate region from the drop down menu at the top left.
+>> > * Click on `Compute`{.action} in left tab, then on `Instances`{.action}.
+>> > * Click on `Launch Instance`{.action}.
+>> > * In the pop-up window, fill in the required fields to create your instance. In the `Server Group`{.action} field, click on the drop-down arrow next to `Available` to display the list of available Server Groups. Select a Server Group and it will be moved to `Allocated`.
 >> > ![create server with server group OpenStack](images/create_a_server_with_server_group_openStack_dashboard.png){.thumbnail}
->> >* Once done, click on `Launch Instance`{.action}.
+>> > * Once done, click on `Launch Instance`{.action}.
 >> >
 > CLI
 >> >
 >> > To apply a Server Group policy, you must specify the group when creating an instanfce, as a *scheduling hint.*  
->> > To do that, use the `--hint` parameter in the following command
+>> > To do that, use the `--hint` parameter in the following command:
 >> >
 >> > ```bash
 >> > openstack server create --hint group=<server_group_id> [...] <server_name>
@@ -95,7 +95,7 @@ If you subsequently launch more instances referencing the same Server Group, the
 >
 > In addition, an instance cannot be moved between Server Groups.  
 >
-> In both cases, this is because it would potentially require moving the instance to comply with the Server Group policy.
+> In both cases, this is because it would potentially require moving the instance to comply with the Server's Group policy.
 
 ### Troubleshooting common issues
 
@@ -129,7 +129,7 @@ However when using a Soft Affinity policy, such as `soft affinity` or `soft anti
 
 ### Checking an instance in a Server Group
 
-This means you may want to verify that your instances are on the same or on different physical compute nodes by looking at their _hostId_ value. We have deployed four instances two named `anti_affinity_server` with an `anti affinity server group` and two named `affinity_server` with an `affinity server group`.
+This means you may want to verify that your instances are on the same or on different physical compute nodes by looking at their _hostId_ value. We deployed four instances, two named `anti_affinity_server` with an `anti affinity` Server Group and two named `affinity_server` with an `affinity` Server Group.
 
 ```bash
 openstack server list 
@@ -149,7 +149,7 @@ You can confirm the scheduler was done following the policy of the Server Group 
 openstack server show -c hostId xSERVER_IDx
 ```
 
-With the 4 instances created, you will obtain the following output example:
+With the 4 instances created, we obtain the following output example:
 
 ```bash
 openstack server show -c hostId affinity_server-2
@@ -189,7 +189,7 @@ openstack server show -c hostId anti_affinity_server-2
 
 > [!primary]
 >
-> You have to use or specify --os-compute-api-version 2.50 or higher to see server-groups and server-group-members output for a given quota class.
+> You have to use or specify `--os-compute-api-version 2.50` or higher to see server-groups and server-group-members output for a given quota class.
 >
 
 Regarding quota, Server Groups and Server Groups Members are in the Compute Service Quotas.
