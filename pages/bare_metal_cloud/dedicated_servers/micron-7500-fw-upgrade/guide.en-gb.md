@@ -74,9 +74,10 @@ apt install nvme-cli          # Debian, Ubuntu, Mint, Proxmox, etc.
 
 #### Step 2 – Check if a firmware update is needed
 
+The command `nvme list` lists all NVMe devices on your server:
+
 ```bash
 nvme list | grep -E 'Node|MTFDKCC960TGP-1BK1DABYY|MTFDKCC1T9TGP-1BK1DABYY|MTFDKCC3T8TGP-1BK1DABYY|MTFDKCC7T6TGP-1BK1DABYY|MTFDKCC15T3TGP-1BK1DABYY'
- | grep -qE 'MTFDKCC960TGP-1BK1DABYY|MTFDKCC1T9TGP-1BK1DABYY|MTFDKCC3T8TGP-1BK1DABYY|MTFDKCC7T6TGP-1BK1DABYY|MTFDKCC15T3TGP-1BK1DABYY' && echo %" \
 ```
 
 > [!primary]
@@ -95,20 +96,21 @@ Node                  Generic               SN                   Model          
 
 #### Step 3 – Firmware update
 
-**Download the firmware binary**
+Download the firmware binary on your server:
 
 ```bash
 wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/7500_PRO/Micron_7500_E3MQ005_release.ubi
 ```
 
-**Flash each NVMe (replace `X` with the device node):**
+Execute the following command for each NVMe identified in step 2:  
+(Replace `X` with the device node.)
 
 ```bash
 nvme fw-download --fw Micron_7500_E3MQ005_release.ubi /dev/nvmeX
 nvme fw-commit /dev/nvmeX -s 2 -a 3
 ```
 
-##### NVMe firmware update example
+**NVMe firmware update example**
 
 ```text
 root@labo:/home/debian# nvme fw-download --fw Micron_7500_E3MQ005_release.ubi /dev/nvme0
@@ -126,13 +128,15 @@ Multiple Update Detected (MUD) Value: 0
 > [!primary]
 > Once the command line is launched, a confirmation is requested before starting the flash. Confirm with `Y`.
 
-#### Step 4 – Verify firmware version after reboot
+#### Step 4 – Verify firmware version after server reboot
+
+You can use the same command as in step 2:
 
 ```bash
 nvme list | grep -E 'Node|MTFDKCC960TGP-1BK1DABYY|MTFDKCC1T9TGP-1BK1DABYY|MTFDKCC3T8TGP-1BK1DABYY|MTFDKCC7T6TGP-1BK1DABYY|MTFDKCC15T3TGP-1BK1DABYY'
 ```
 
-##### Expected output
+Expected output:
 
 ```text
 Node                  Generic               SN                   Model                                    Namespace  Usage                      Format           FW Rev
@@ -153,6 +157,8 @@ Now your NVMe drives should have have the firmware version **E3MQ005**.
 
 #### Step 1 – List NVMe drives and check if a firmware update is needed
 
+The command  `esxcli nvme controller list` lists all NVMe devices on your server:
+
 ```bash
 esxcli nvme adapter list | grep -oE '^vmhba\S' \
   | xargs -I% sh -c "esxcli nvme device get -A % \
@@ -164,7 +170,15 @@ esxcli nvme adapter list | grep -oE '^vmhba\S' \
 > [!primary]
 >  We added a filter on this command to only display Micron 7500 PRO NVMe devices, because the firmware update only concerns these NVMe models and your server may have other disks connected to it.
 
+> [!primary]
+> If the column "Firmware Revision" for all your NVMe Micron 7500 PRO devices is already version E3MQ005, your firmware is up-to-date and you do not need to continue this process.
+> On the other hand, if at least one firmware is different from version E3MQ005, you must proceed with step 2.
+
 ##### Example result (2 drives to update)
+
+```bash
+[root@labo:~] esxcli nvme adapter list | grep -oE '^vmhba\S' | xargs -I% sh -c "esxcli nvme device get -A % | grep -qE 'MTFDKCC960TGP-1BK1DABYY|MTFDKCC1T9TGP-1BK1DABYY|MTFDKCC3T8TGP-1BK1DABYY|MTFDKCC7T6TG
+```
 
 ```text
 vmhba4:
@@ -177,7 +191,7 @@ vmhba5:
 
 #### Step 2 – Firmware update
 
-**Download the firmware binary:**
+Download the firmware binary on your server:
 
 ```bash
 wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/7500_PRO/Micron_7500_E3MQ005_release.ubi --no-check-certificate
@@ -186,7 +200,8 @@ wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/7500_PRO/Mi
 > [!primary]
 > By default, ESXi’s firewall blocks outbound HTTPS traffic. If the download fails, add a firewall rule to allow outbound HTTPS connections.
 
-**Flash each adapter (replace `X` with the adapter index):**
+Execute the following command for each NVMe identified in step 1:  
+(Replace `X` with the adapter index.)
 
 ```bash
 esxcli nvme device firmware download -A vmhbaX -f /[path-to-firmware]/Micron_7500_E3MQ005_release.ubi
@@ -195,7 +210,9 @@ esxcli nvme device firmware activate -a 3 -A vmhbaX -s 2
 
 ##### NVMe firmware update example
 
-```text
+In our previous example, both NVMe drives need a firmware update to the latest version ****. Here are example commands for how to update the 2 NVMe drives and their output:
+
+```bash
 [root@labo:~] esxcli nvme device firmware download -A vmhba6 -f /Micron_7500_E3MQ005_release.ubi
 Download firmware successfully.
 [root@labo:~] esxcli nvme device firmware activate -a 3 -A vmhba6 -s 2
@@ -206,19 +223,21 @@ Download firmware successfully.
 Commit firmware successfully.
 ```
 
-After flashing, **reboot the server**.
+At this point the firmware update is complete. Reboot the server to finish the process.
 
 #### Step 3 – Verify firmware version after reboot
+
+You can use the same nvme list command as in step 1:
 
 ```bash
 esxcli nvme adapter list | grep -oE '^vmhba\S' \
   | xargs -I% sh -c "esxcli nvme device get -A % \
-      | grep -qE 'MTFDKCC960TGP-1BK1DABYY|MTFDKCC1T9TGP-1BK1DABYY|MTFDKCC3T8TGP-1BK1DABYY|MTFDKCC7T6TGP-1BK1DABYY|MTFDKCC15T3TGP-1BK1DABYY' && echo %"
+      | grep -qE 'MTFDKCC960TGP-1BK1DABYY|MTFDKCC1T9TGP-1BK1DABYY|MTFDKCC3T8TGP-1BK1DABYY|MTFDKCC7T6TGP-1BK1DABYY|MTFDKCC15T3TGP-1BK1DABYY' && echo %" \
   | xargs -I% sh -c "echo %:; esxcli nvme device get -A % \
       | grep -E 'Model Number:|Firmware Revision:'"
 ```
 
-##### Expected output
+Expected output:
 
 ```text
 vmhba4:
@@ -258,10 +277,10 @@ msecli -L | sls "MTFDKCC960TGP-1BK1DABYY","MTFDKCC1T9TGP-1BK1DABYY","MTFDKCC3T8T
 ```
 
 > [!primary]
-> We added a filter on this command to only display the Micron 7500 PRO NVMe, because the firmware update only concerns these NVMe reference and your server may have other disks connected to it.
+> We added a filter on this command to only display the Micron 7500 PRO NVMe, because the firmware update only concerns these NVMe references and your server may have other disks connected to it.
 
 > [!primary]
-> If the column **FW‑Rev** for all your NVMe Micron 7500 PRO devices is already version **E3MQ005**, your firmware is up‑to‑date and you do not need to continue this process.  
+> If the line **FW‑Rev** for all your NVMe Micron 7500 PRO devices already displays version **E3MQ005**, your firmware is up‑to‑date and you do not need to continue this process.  
 > On the other hand, if at least one firmware is different from version **E3MQ005**, you must proceed with step 3.
 
 ##### Example result on a server with 2 NVMe drives to update
@@ -269,6 +288,8 @@ msecli -L | sls "MTFDKCC960TGP-1BK1DABYY","MTFDKCC1T9TGP-1BK1DABYY","MTFDKCC3T8T
 ```bash
 PS C:\Windows\system32> msecli -L | sls "MTFDKCC960TGP-1BK1DABYY","MTFDKCC1T9TGP-1BK1DABYY","MTFDKCC3T8TGP-1BK1DABYY","MTFDKCC7T6TGP-1BK1DABYY","MTFDKCC15T3TGP-1BK1DABYY" -Context 0,11
 ```
+
+Expected output:
 
 ```text
 > Model No             : MTFDKCC1T9TGP-1BK1DABYY
@@ -299,13 +320,13 @@ PS C:\Windows\system32> msecli -L | sls "MTFDKCC960TGP-1BK1DABYY","MTFDKCC1T9TGP
 
 #### Step 3 – Firmware update
 
-**Download the firmware binary on your server:**
+Download the firmware binary on your server:
 
 ```bash
 Invoke-WebRequest "https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/7500_PRO/Micron_7500_E3MQ005_release.ubi" -OutFile "Micron_7500_E3MQ005_release.ubi"
 ```
 
-**Execute the following command for each identified NVMe in step 2.**  
+Execute the following command for each identified NVMe in step 2. 
 (Replace `X` with the "OS Device" index listed in step 2.)
 
 ```bash
@@ -313,9 +334,11 @@ msecli -F -U Micron_7500_E3MQ005_release.ubi -n DriveX -S 2
 ```
 
 > [!primary]
-> Once the command line is launched, a confirmation is requested before starting the flash. Confirm with `Y`.
+> Once the command is launched, a confirmation is requested before starting the flash. Confirm with `Y`.
 
 ##### NVMe firmware update example
+
+In our previous example, both NVMe drives need a firmware update to the latest version **E3MQ005**. Here are example commands for how to update the 2 NVMe drives and their output:
 
 ```bash
 PS C:\Windows\system32> msecli -F -U Micron_7500_E3MQ005_release.ubi -n Drive0 -S 2
@@ -354,9 +377,9 @@ TIME_STAMP   : Tue Sep 23 02:29:10 2025
 Copyright (C) 2025 Micron Technology, Inc.
 ```
 
-At this point the firmware update is complete, please reboot your server.
+At this point the firmware update is complete. Reboot the server to finish the process.
 
-#### Step 4 – Check firmware version after server reboot
+#### Step 4 – Verify firmware version after server reboot
 
 You can use the same command as in step 2:
 
