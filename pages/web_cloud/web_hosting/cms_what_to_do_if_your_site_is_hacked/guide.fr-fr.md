@@ -1,7 +1,7 @@
 ---
 title: "Cas d'usage - Conseils suite au piratage de votre site Web"
 excerpt: 'Découvrez nos conseils pour réparer votre site Web piraté'
-updated: 2025-09-25
+updated: 2022-11-15
 ---
 
 ## Objectif
@@ -192,8 +192,6 @@ Votre site devrait réaparaître si ces actions ont été correctement effectué
 
 ### Etape 5 - Mettre à jour votre site
 
-#### Mettre à jour votre site web (CMS, extensions, thèmes)
-
 Mettez à jour votre site web au niveau de son code source, des paramètres de sécurité dont il dispose, des versions de langage qu'il utilise (notamment le PHP).
 
 Vérifiez les droits d'accès FTP « CHMOD » pour chacun de vos dossiers et fichiers hébergés dans votre espace de stockage.
@@ -206,28 +204,6 @@ Privilégiez l'utilisation de plugins/thèmes « officiels » et maintenez à jo
 Sécurisez vos formulaires de contact à minima à l'aide d'un système de type « Captcha », afin d'éviter que des robots malveillants n'émettent du SPAM par ce biais. Si la fonction « mail() » de PHP a également été bloquée sur votre hébergement, consultez [notre guide](/pages/web_cloud/web_hosting/mail_function_script_records) sur ce sujet pour résoudre ce blocage.
 
 Consultez également notre guide sur [comment sécuriser votre site Web](/pages/web_cloud/web_hosting/secure_your_website), afin de diminuer au maximum le risque qu'un nouveau piratage se produise.
-
-#### Lever le blocage des connexions sortantes (TCP OUT)
-
-> [!warning]
->
-> Ne procédez à cette étape **qu’après** avoir :
->
-> - supprimé les fichiers malveillants détectés.
-> - mis à jour votre CMS, ses extensions et thèmes.
-> - changé les mots de passe concernés (FTP/SSH, base de données, back-office, etc.).
->
-> Tant que le nettoyage n’est pas terminé, lever les mesures de sécurité risquerait une **recontamination immédiate**.
-
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans `Web Cloud`{.action} puis cliquez sur votre hébergement.
-2. Une **fenêtre d’alerte** s’affiche : `« Activité anormale sur votre hébergement »`. Si vous la fermez en cliquant sur `Plus tard`{.action}, une **bannière d’alerte** `« Activité anormale détectée »` apparaît en haut de la page. Cliquez sur **En savoir plus** pour rouvrir la fenêtre d'alerte.
-3. **Cochez** la case : `Je confirme avoir effectué toutes les actions nécessaires pour résoudre le problème`.
-4. Cliquez sur **Lever les mesures de sécurité**.
-5. Une **bannière de confirmation** s’affiche en haut de la page : `Votre hébergement est en cours d’analyse afin de lever les mesures de sécurité.` Suivez la progression en cliquant sur le lien `Voir les tâches en cours`{.action} ou directement depuis l’onglet `Tâches en cours`{.action}.
-
-> [!warning]
-> 
-> Assurez-vous que votre service est **éligible au déblocage automatique** (certains états ne permettent pas de lever immédiatement les mesures).
 
 ## Aller plus loin <a name="go-further"></a>
 
