@@ -76,9 +76,11 @@ apt install nvme-cli          # Debian, Ubuntu, Mint, Proxmox, etc.
 
 ```bash
 nvme list | grep -E 'Node|MTFDKCC960TGP-1BK1DABYY|MTFDKCC1T9TGP-1BK1DABYY|MTFDKCC3T8TGP-1BK1DABYY|MTFDKCC7T6TGP-1BK1DABYY|MTFDKCC15T3TGP-1BK1DABYY'
+ | grep -qE 'MTFDKCC960TGP-1BK1DABYY|MTFDKCC1T9TGP-1BK1DABYY|MTFDKCC3T8TGP-1BK1DABYY|MTFDKCC7T6TGP-1BK1DABYY|MTFDKCC15T3TGP-1BK1DABYY' && echo %" \
 ```
 
-*We added a filter on this command to only display Micron 7500 PRO NVMe devices, because the firmware update only concerns these NVMe models and your server may have other disks connected to it.*
+> [!primary]
+> We added a filter on this command to only display Micron 7500 PRO NVMe devices, because the firmware update only concerns these NVMe models and your server may have other disks connected to it.
 
 > [!primary]
 > If the column **FW Rev** for all your Micron 7500 PRO devices is already **E3MQ005**, your firmware is up‑to‑date and you do not need to continue. Otherwise, proceed with step 3.
@@ -154,7 +156,7 @@ Now your NVMe drives should have have the firmware version **E3MQ005**.
 ```bash
 esxcli nvme adapter list | grep -oE '^vmhba\S' \
   | xargs -I% sh -c "esxcli nvme device get -A % \
-      | grep -qE 'MTFDKCC960TGP-1BK1DABYY|MTFDKCC1T9TGP-1BK1DABYY|MTFDKCC3T8TGP-1BK1DABYY|MTFDKCC7T6TGP-1BK1DABYY|MTFDKCC15T3TGP-1BK1DABYY' && echo %"
+      | grep -qE 'MTFDKCC960TGP-1BK1DABYY|MTFDKCC1T9TGP-1BK1DABYY|MTFDKCC3T8TGP-1BK1DABYY|MTFDKCC7T6TGP-1BK1DABYY|MTFDKCC15T3TGP-1BK1DABYY' && echo %" \
   | xargs -I% sh -c "echo %:; esxcli nvme device get -A % \
       | grep -E 'Model Number:|Firmware Revision:'"
 ```
@@ -255,7 +257,8 @@ Open Windows PowerShell as Administrator, then run the following command to list
 msecli -L | sls "MTFDKCC960TGP-1BK1DABYY","MTFDKCC1T9TGP-1BK1DABYY","MTFDKCC3T8TGP-1BK1DABYY","MTFDKCC7T6TGP-1BK1DABYY","MTFDKCC15T3TGP-1BK1DABYY" -Context 0,11
 ```
 
-*We added a filter on this command to only display the Micron 7500 PRO NVMe, because the firmware update only concerns these NVMe reference and your server may have other disks connected to it.*
+> [!primary]
+> We added a filter on this command to only display the Micron 7500 PRO NVMe, because the firmware update only concerns these NVMe reference and your server may have other disks connected to it.
 
 > [!primary]
 > If the column **FW‑Rev** for all your NVMe Micron 7500 PRO devices is already version **E3MQ005**, your firmware is up‑to‑date and you do not need to continue this process.  
