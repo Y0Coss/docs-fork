@@ -32,6 +32,7 @@ Avant de commencer, consultez les guides suivants pour mieux comprendre Public V
 | VMs (par vApp) | 128 | 128 | 128 | Nombre maximal de VMs autorisées par vApp. |
 | VMs (par organisation) | 2000 | 4000 | 4000 | Nombre maximal de VMs par organisation. |
 | vApps (par organisation) | 10 000 | 10 000 | 10 000 | Nombre maximal de vApps par organisation. |
+| Segments (par organisation) | 40 | 40 | 40 | Nombre maximal de Segments par organisation. |
 
 > **Remarque** : Lorsqu’un snapshot inclut la mémoire de la machine virtuelle, l’utilisation du stockage peut rapidement augmenter.
 > Par exemple, si vous avez une VM avec 1 Go de RAM et un disque de 10 Go, et que vous créez un snapshot incluant la mémoire, l’espace de stockage utilisé sera le suivant :
