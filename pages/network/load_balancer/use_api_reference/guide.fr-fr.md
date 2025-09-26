@@ -4,7 +4,7 @@ excerpt: "Description rapide des différentes fonctions de l’API servant à g�
 updated: 2025-09-26
 ---
 
-Cette section décrit brièvement les principales fonctions de l'API pour l'OVH Load Balancer, sous /ipLoadbalancing.
+Cette section décrit brièvement les principales fonctions de l'API pour l'OVHcloud Load Balancer, sous /ipLoadbalancing.
 
 Pour une référence complète des fonctions de l'API du service OVHcloud Load Balancer, veuillez consulter [ce guide détaillé](/pages/network/load_balancer/use_api_details).
 

@@ -6,9 +6,9 @@ updated: 2025-09-26
 
 ## List of API functions
 
-This section briefly describes the main functions of the API for the OVH Load Balancer under /ipLoadbalancing.
+This section briefly describes the main functions of the API for the OVHcloud Load Balancer under /ipLoadbalancing.
 
-For a comprehensive reference to the API functions of the OVH Load Balancer service, please consult [this detailed guide](/pages/network/load_balancer/use_api_details).
+For a comprehensive reference to the API functions of the OVHcloud Load Balancer service, please consult [this detailed guide](/pages/network/load_balancer/use_api_details).
 
 > [!primary]
 >
