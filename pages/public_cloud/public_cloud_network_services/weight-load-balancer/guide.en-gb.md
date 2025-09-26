@@ -78,7 +78,7 @@ You should see alternating responses from the two members:
 >> >
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool
 >> >
->> This call retrieves the pool id. Fill in the field with the previously obtained information:
+>> This call retrieves the pool id. Fill in the fields with the previously obtained information:
 >> 
 >> **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >>
@@ -90,7 +90,7 @@ You should see alternating responses from the two members:
 >> >
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member
 >> >
->> This call retrieves the pool id. Fill in the field with the previously obtained information:
+>> This call retrieves the pool id. Fill in the fields with the previously obtained information:
 >>
 >> **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >>
@@ -114,7 +114,7 @@ You should see alternating responses from the two members:
 >>
 >> **memberId**: The Member ID in the form of a 32-character string.
 >>
->> **weight**: Set the weight to 0.
+>> **weight**: Set the weight to 0. Click on `Execute`{.action}.
 >>
 >> ![public-cloud](images/member-api-update.png){.thumbnail width="800"}
 >>
@@ -137,7 +137,7 @@ You should see alternating responses from the two members:
 >> 
 >> In the tab, click on `Members`{.action} and then on `Edit Member`{.action}.
 >>
->> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard.png){.thumbnail}
+>> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard-1.png){.thumbnail}
 >> 
 >> Edit the `Weight` to 0, then click on `Update`{.action}.
 >>
@@ -181,7 +181,7 @@ If having a final **DRAINED** status is critical for your operations, it is reco
 >>
 >> In the tab, click on `Pools`{.action} and then on the `pool`{.action} in which the member is.
 >> 
->> In the tab, click on `Members`{.action}:
+>> Click on the `Members`{.action} tab:
 >>
 >> ![Update weight](images/member-status-draining.png){.thumbnail}
 >>
@@ -286,7 +286,7 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >> >
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool
 >> >
->> This call retrieves the pool id. Fill in the field with the previously obtained information:
+>> This call retrieves the pool id. Fill in the fields with the previously obtained information:
 >> 
 >> **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >>
@@ -298,7 +298,7 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >> >
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member
 >> >
->> This call retrieves the pool id. Fill in the field with the previously obtained information:
+>> This call retrieves the pool id. Fill in the fields with the previously obtained information:
 >>
 >> **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >>
@@ -322,9 +322,9 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >>
 >> **memberId**: The Member ID in the form of a 32-character string.
 >>
->> **weight**: Set the weight to 1.
+>> **weight**: Set the weight to 1. Click on `Execute`{.action}.
 >>
->> ![public-cloud](images/member-api-update.png){.thumbnail width="800"}
+>> ![public-cloud](images/member-api-update-1.png){.thumbnail width="800"}
 >>
 > **Horizon**
 >>
@@ -342,7 +342,7 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >>
 >> Click on the `Members`{.action} tab, and then on `Edit Member`{.action} next to the corresponding member.
 >>
->> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard-1.png){.thumbnail}
+>> ![Update Member Openstack dashboard](images/update-member_openstack_dashboard.png){.thumbnail}
 >>
 >> You can edit the Weight to 1 then click on `Update`{.action}
 >>
