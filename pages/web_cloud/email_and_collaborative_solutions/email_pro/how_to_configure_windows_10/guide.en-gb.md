@@ -26,7 +26,7 @@ details[open]>summary::before {
 The email addresses from the [Email Pro](/links/web/email-pro) offer can be configured on a compatible email client. This allows you to send and receive messages from the application of your choice.
 
 The **New Outlook** has replaced the **Mail** application on Windows since January 1, 2025. For more information on this topic, please refer to Microsoft's official page:  
-[Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)".
+[Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)
 
 **Learn how to configure your Email Pro account on the New Outlook for Windows.**
 
@@ -34,7 +34,7 @@ The **New Outlook** has replaced the **Mail** application on Windows since Janua
 
 - An [Email Pro](/links/web/email-pro) account
 - The [New Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) for Windows
-- The credentials for the email account you wish to configure.
+- The credentials for the email account you wish to configure
 
 > [!warning]
 >
