@@ -1,7 +1,7 @@
 ---
 title: Présentation du service OVHcloud Load Balancer
 excerpt: Découvrez la solution OVHcloud Load Balancer pour distribuer et sécuriser votre trafic
-updated: 2025-09-19
+updated: 2025-09-26
 ---
 
 ## Objectif
