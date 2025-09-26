@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan / Zimbra Starter - Hinzufügen eines E-Mail-Kontos in der neuen Outlook-App für Windows'
 excerpt: "Erfahren Sie, wie Sie Ihre E-Mail-Adresse im neuen Outlook für Windows konfigurieren."
-updated: 2025-09-02
+updated: 2025-09-26
 ---
 
 <style>

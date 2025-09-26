@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan / Zimbra Starter - Ajouter un compte e-mail sur le nouvel Outlook pour Windows'
 excerpt: "Apprenez à configurer votre adresse e-mail sur le nouvel Outlook pour Windowss"
-updated: 2025-09-02
+updated: 2025-09-26
 ---
 
 <style>
