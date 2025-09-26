@@ -12,7 +12,13 @@ This documentation explains how to use the Server Groups feature to control the 
 
 ## Prerequisites
 
-In order to use Server Groups, you must use the OpenStack Dashboard or the OpentSack CLI. Make sure you have [enabled it](../../getting-started/enable-openstack-cli.md).
+- A [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project) in your OVHcloud account
+- [Access to the Horizon interface](/pages/public_cloud/public_cloud_cross_functional/introducing_horizon)
+
+To use the OpenStack CLI, make sure you consult the following guides:
+
+- [Prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) by installing python-swiftclient.
+- [Load the OpenStack environment variables](/pages/public_cloud/public_cloud_cross_functional/loading_openstack_environment_variables).
 
 ### Definition
 
@@ -39,7 +45,6 @@ A Server Group with the policy of `soft anti affinity` will **try to** make sure
 ### Step 1: Creating Server Groups
 
 > [!tabs]
->
 > **Openstack Dashboard**
 >> >![Keystone](images/create_server_groups_openstack_dashboard.png){.thumbnail}
 >> >
@@ -56,12 +61,10 @@ A Server Group with the policy of `soft anti affinity` will **try to** make sure
 >> ```bash
 >> openstack server group create \ --policy [affinity|soft-affinity|anti-affinity|soft-anti-affinity] \<server_group_name>
 >> ```
->>
 
-### Step 2: Creating an Instance using Server Groups
+### Step 2: Creating an Instance with a Server Group
 
 > [!tabs]
->
 > Openstack Dashboard
 >> >
 >> > Horizon can create, read, update, and delete, as well as obtain a list of Server Groups for a tenant to enable the specification of a group when starting a virtual machine.
@@ -76,7 +79,7 @@ A Server Group with the policy of `soft anti affinity` will **try to** make sure
 >> >
 > CLI
 >> >
->> > To apply a Server Group policy, you must specify the group when creating an instanfce, as a *scheduling hint.*  
+>> > To apply a Server Group policy, you must specify the group when creating an instance, as a *scheduling hint.*  
 >> > To do that, use the `--hint` parameter in the following command:
 >> >
 >> > ```bash
@@ -91,9 +94,9 @@ If you subsequently launch more instances referencing the same Server Group, the
 
 > [!alert]
 >
-> Once created, a Server Group cannot be modified.  
+> Once created, a Server Group cannot be modified.
 >
-> In addition, an instance cannot be moved between Server Groups.  
+> In addition, an instance cannot be moved between Server Groups.
 >
 > In both cases, this is because it would potentially require moving the instance to comply with the Server's Group policy.
 
@@ -183,14 +186,12 @@ openstack server show -c hostId anti_affinity_server-2
 > [!primary]
 >
 > It's not possible to compare `hostId` between different projects because the values are unique for each project.
->
 
 ### Server Group quota
 
 > [!primary]
 >
 > You have to use or specify `--os-compute-api-version 2.50` or higher to see server-groups and server-group-members output for a given quota class.
->
 
 Regarding quota, Server Groups and Server Groups Members are in the Compute Service Quotas.
 
