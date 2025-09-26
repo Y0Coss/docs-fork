@@ -16,14 +16,14 @@ Ce guide vous explique pourquoi une **activité anormale** peut être détectée
 ## En pratique
 
 > [!primary]
-> Selon la situation, votre site **n’a pas forcément été piraté**. Les mécanismes de protection peuvent se déclencher sur des comportements inhabituels **non malveillants** (mauvaise configuration, script tiers, extension défaillante, etc.).
+> Pour protéger votre site web et vos visiteurs, nous activons automatiquement des mesures de sécurité dès qu’une activité inhabituelle est détectée sur votre hébergement. Il ne s’agit pas toujours d’une attaque : la cause peut aussi être, par exemple, une mauvaise configuration de votre site web, un script tiers ou une extension défaillante.
 
 ### Pourquoi ce message s’affiche-t-il ?
 
 Nous avons détecté une activité inhabituelle pouvant nuire à votre service :
 
 - Cas 1 – **Malwares détectés** : présence probable de **fichiers malveillants**.
-- Cas 2 – **Volume inhabituel d’envois d’e-mails** depuis vos scripts.
+- Cas 2 – **Volume inhabituel d’envois d’e-mails via PHP** (scripts/applications).
 - Cas 3 – **Volume inhabituel de requêtes sortantes** (connexions vers l’extérieur).
 
 Par mesure de sécurité, certaines fonctionnalités sont temporairement bloquées :
@@ -34,7 +34,7 @@ Par mesure de sécurité, certaines fonctionnalités sont temporairement bloqué
 ### Quelles conséquences pour mon site web ?
 
 - Votre **site web reste en ligne** et accessible aux visiteurs.  
-- Les **envois d’e-mails** (formulaires, notifications, etc.) et/ou les **connexions sortantes** (API externes, webhooks, mises à jour via HTTP, etc.) peuvent être **temporairement désactivés**, selon le cas.
+- Les **envois d’e-mails via PHP** (formulaires, notifications, etc.) et/ou les **connexions sortantes** (API externes, webhooks, mises à jour via HTTP, etc.) peuvent être **temporairement désactivés**, selon le cas.
 
 ### Étapes à suivre pour résoudre le problème
 
@@ -44,11 +44,15 @@ Votre hébergement contient très probablement des fichiers malveillants. Pour c
 
 **Une fois le nettoyage terminé**, dirigez-vous vers la section « [lever les mesures de sécurité](#lift-security-measures) ».
 
-#### Cas 2 — Volume inhabituel d’envois d’e-mails
+#### Cas 2 — Volume inhabituel d’envois d’e-mails via PHP
 
-Votre site web a émis un nombre d’e-mails supérieur à la normale. Cela peut être **légitime** (campagne, module newsletter) ou **non désiré** (formulaire abusé, script mal configuré, extension compromise). Pour comprendre et résoudre ces anomalies, suivez notre guide « [Suivre et gérer les e-mails automatisés de son hébergement web](/pages/web_cloud/web_hosting/mail_function_script_records) ».
+Votre site web a émis un nombre d’e-mails via PHP supérieur à la normale. Cela peut être **légitime** (campagne, module newsletter) ou **non désiré** (formulaire abusé, script mal configuré, extension compromise). Pour comprendre et résoudre ces anomalies, suivez notre guide « [Suivre et gérer les e-mails automatisés de son hébergement web](/pages/web_cloud/web_hosting/mail_function_script_records) ».
 
 **Une fois la situation normalisée**, dirigez-vous vers la section « [lever les mesures de sécurité](#lift-security-measures) ».
+
+> [!primary]
+>
+> Cette mesure ne concerne **pas** l’envoi via votre boîte mail (webmail ou client de messagerie). Elle s’applique uniquement aux **e-mails envoyés depuis vos scripts** (fonction `mail()` PHP ou envoi SMTP déclenché par une application).
 
 #### Cas 3 — Volume inhabituel de requêtes sortantes (TCP OUT)
 
@@ -60,13 +64,7 @@ Votre site effectue de nombreuses connexions externes (API, mises à jour, appel
 
 > [!warning]
 >
-> Ne procédez à cette étape **qu’après** avoir :
->
-> - supprimé les fichiers malveillants détectés.
-> - mis à jour votre CMS, ses extensions et thèmes.
-> - changé les mots de passe concernés (FTP/SSH, base de données, back-office, etc.).
->
-> Tant que le nettoyage n’est pas terminé, lever les mesures de sécurité risquerait une **recontamination immédiate**.
+> N’effectuez cette étape **qu’après avoir appliqué les recommandations ci-dessus** (diagnostic, corrections/mises à jour, sécurisation). Si une activité anormale est à nouveau détectée lors d’un prochain scan, les **mesures de sécurité seront automatiquement réactivées**. Vous recevrez une nouvelle notification et les blocages resteront en place jusqu’à la **résolution définitive** du problème.
 
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans `Web Cloud`{.action} puis cliquez sur votre hébergement.
 2. Une **fenêtre d’alerte** s’affiche : `« Activité anormale sur votre hébergement »`. Si vous la fermez en cliquant sur `Plus tard`{.action}, une **bannière d’alerte** `« Activité anormale détectée »` apparaît en haut de la page. Cliquez sur **En savoir plus** pour rouvrir la fenêtre d’alerte.
