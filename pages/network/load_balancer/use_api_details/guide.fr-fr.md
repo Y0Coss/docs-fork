@@ -1,7 +1,7 @@
 ---
 title: Détails des fonctionnalités API
 excerpt: "Détails des fonctionnalités de l’API OVHcloud pour l’offre OVHcloud Load Balancer"
-updated: 2022-04-04
+updated: 2025-09-29
 ---
 
 ## Objectif
@@ -16,7 +16,7 @@ Ce guide fournit une description détaillée de toutes les fonctions de l'API po
 
 ### Gérer son service OVHcloud Load Balancer via l'API
 
-Toutes les fonctions d'API qui sont utilisées dans la section */ipLoadbalancing* sont disponibles sur [cette page](https://api.ovh.com/console/#/ipLoadbalancing).
+Toutes les fonctions d'API qui sont utilisées dans la section */ipLoadbalancing* sont disponibles sur [cette page](/links/console).
 
 > [!primary]
 >

@@ -14,7 +14,7 @@ For a comprehensive reference to the API functions of the OVHcloud Load Balancer
 >
 > The Frontends, Farms and Servers are specific to the protocol (HTTP, TCP or UDP) in which they are defined.
 > Compatibility between these components is only possible within the same protocol.
-> For example, an HTTP Frontend can only be paired with an HTTP Farm, and cannot be used with an UDP Farm.
+> For example, an HTTP Frontend can only be paired with an HTTP Farm, and cannot be used with a UDP Farm.
 > 
 
 > [!warning]

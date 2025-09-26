@@ -1,19 +1,19 @@
 ---
 title: Présentation du service OVHcloud Load Balancer
 excerpt: Découvrez la solution OVHcloud Load Balancer pour distribuer et sécuriser votre trafic
-updated: 2025-09-26
+updated: 2025-09-29
 ---
 
 ## Objectif
 
-Le **Load Balancer OVHcloud** est un service entièrement managé, conçu pour garantir la haute disponibilité, les performances et la scalabilité de vos applications. 
-Son rôle principal est de distribuer la charge de travail entre différents serveurs ou applications.  
+Le **Load Balancer OVHcloud** est un service entièrement managé, conçu pour garantir la haute disponibilité, les performances et la scalabilité de vos applications.
+Son rôle principal est de distribuer la charge de travail entre différents serveurs ou applications.
 Il vous suffit de configurer vos services derrière le Load Balancer — OVHcloud prend en charge la redondance, la sécurité et la distribution mondiale du trafic.
 
 ## Prérequis
 
-- Accès à l’[espace client OVHcloud](/links/manager)  
-- Au moins un service à équilibrer (Serveur Dédié, VPS, instance Public Cloud, etc.)  
+- Être connecté à l’[espace client OVHcloud](/links/manager)
+- Au moins un service à équilibrer (Serveur Dédié, VPS, instance Public Cloud, etc.)
 
 ## En pratique
 
@@ -27,12 +27,12 @@ Le Load Balancer s’appuie sur des **technologies open source de référence** 
 
 ### Fonctionnalités principales
 
-- **Protection anti-DDoS intégrée** pour tous les types de trafic  
-- **Réseau Anycast mondial** pour une latence optimisée et un basculement automatique  
-- **Support avancé HTTP/HTTPS** : redirections, en-têtes, ACLs, etc.  
-- **Compatibilité avec les IP supplémentaires et le vRack** : améliorez la disponibilité et les performances grâce au réseau avancé  
-- **Haute disponibilité** : instances redondantes isolées pour assurer la résilience  
-- **Scalabilité** : ajoutez ou retirez des serveurs et des fermes sans interruption de service  
+- **Protection anti-DDoS intégrée** pour tous les types de trafic
+- **Réseau Anycast mondial** pour une latence optimisée et un basculement automatique
+- **Support avancé HTTP/HTTPS** : redirections, en-têtes, ACLs, etc.
+- **Compatibilité avec les IP supplémentaires et le vRack** : améliorez la disponibilité et les performances grâce au réseau avancé
+- **Haute disponibilité** : instances redondantes isolées pour assurer la résilience
+- **Scalabilité** : ajoutez ou retirez des serveurs et des fermes sans interruption de service
 
 ### Vue d’ensemble de l’architecture
 
@@ -68,12 +68,12 @@ Mettez une ferme ou un serveur en mode maintenance sans impacter les utilisateur
 
 ### Intégration avec les services OVHcloud
 
-Combinez facilement le Load Balancer avec d’autres services OVHcloud :  
+Combinez facilement le Load Balancer avec d’autres services OVHcloud :
 
-- Instances Public Cloud  
-- VPS  
-- Serveurs Dédiés  
-- Réseau privé vRack  
+- Instances Public Cloud
+- VPS
+- Serveurs Dédiés
+- Réseau privé vRack
 
 ![Combiner vos services](images/mix_and_match.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Prenez en charge de multiples services via du trafic HTTP(S), TCP et UDP.
 ## Pour aller plus loin
 
 - [En apprendre plus sur la répartition de charge (Wikipedia)](https://fr.wikipedia.org/wiki/R%C3%A9partition_de_charge)  
-- [Site officiel HAProxy](http://www.haproxy.org/#desc)  
-- [Documentation Nginx](https://nginx.org/en/docs/)  
+- [Site officiel HAProxy](http://www.haproxy.org/#desc)
+- [Documentation Nginx](https://nginx.org/en/docs/)
 
 Rejoignez notre [communauté d’utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: Details of API functions
 excerpt: Details of API functionalities
-updated: 2022-04-04
+updated: 2025-09-29
 ---
 
 ## Objective
@@ -12,11 +12,11 @@ This guide provides a detailed description of all API functions for the OVHcloud
 
 - Consult the guide [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps) to familiarize yourself with the use of OVHcloud APIv6.
 
-## In Practice
+## Instructions
 
 ### Manage your OVHcloud Load Balancer service via the API
 
-All API calls that are made in the section */ipLoadbalancing* are available on [this page](https://api.ovh.com/console/#/ipLoadbalancing).
+All API calls that are made in the section */ipLoadbalancing* are available on [this page](/links/console).
 
 > [!primary]
 >
@@ -27,7 +27,7 @@ All API calls that are made in the section */ipLoadbalancing* are available on [
 >
 > The Frontends, Farms and Servers are specific to the protocol (HTTP, TCP or UDP) in which they are defined.
 > Compatibility between these components is only possible within the same protocol.
-> For example, an HTTP Frontend can only be paired with an HTTP Farm, and cannot be used with an UDP Farm.
+> For example, an HTTP Frontend can only be paired with an HTTP Farm, and cannot be used with a UDP Farm.
 > 
 
 ## Services and zones
