@@ -32,7 +32,7 @@ ESXi 7.0 and later versions introduced a [boot option to configure the size of E
 
 Even with multiple disks available on a server, the ESXi OS installation uses only the first disk of the targeted disk group (see [OVHcloud API and OS Installation - Disk Groups](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#disk-group)). Other disks may be configured afterwards to be used for virtual machines (see [How to add a datastore](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore)).
 
-There are 4 different predefined partitioning layouts:
+There are 4 predefined partitioning layouts:
 
 |Value|System size¹|Datastore³|
 |---|---|---|
