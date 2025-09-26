@@ -16,6 +16,12 @@ To install the OVHcloud CLI, you can use the following command:
 curl -fsSL https://raw.githubusercontent.com/ovh/ovhcloud-cli/main/install.sh | sh
 ```
 
+It is also possible to install OVHcloud CLI using Homebrew:
+
+```sh
+brew install ovh/tap/ovhcloud-cli
+```
+
 Alternatively, you can download the latest release from the [GitHub repository](https://github.com/ovh/ovhcloud-cli):
 
 1. Visit the [releases page](https://github.com/ovh/ovhcloud-cli/releases).
