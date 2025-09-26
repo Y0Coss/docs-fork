@@ -43,11 +43,15 @@ Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur
 
 ## En pratique
 
-> [!primary]
+> [!warning]
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro?.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 >
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager). Rendez-vous dans la rubrique `Web Cloud`{.action} puis cliquez sur `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+> 1. Rendez-vous dans la partie `Web Cloud`{.action}.
+> 1. Cliquez sur `Email Pro`{.action}.
+> 1. Sélectionnez la plateforme concernée.
+> 1. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 
 ### Ajouter le compte
 
@@ -105,7 +109,7 @@ Suivez les étapes de configuration en cliquant successivement sur les **5** ong
 >>  - **Méthode d'authentification** : Mot de passe normal
 >>  - **Nom d'utilisateur** : Votre adresse e-mail complète
 >> 
->> 1\. Cliquez sur `Tester`{.action} pour vérifier les paramètres saisis.
+>> 1\. Cliquez sur `Tester`{.action} pour vérifier les paramètres saisis.<br>
 >> 2\. Cliquez sur `Continuer`{.action} pour valider ces paramètres.
 >>
 >> ![thunderbird](images/configuration-thunderbird-emp-05.png){.thumbnail .w-600}
