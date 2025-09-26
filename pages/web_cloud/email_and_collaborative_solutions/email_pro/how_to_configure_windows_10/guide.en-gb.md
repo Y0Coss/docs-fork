@@ -42,11 +42,9 @@ The **New Outlook** has replaced the **Mail** application on Windows since Janua
 
 /// details | Information related to the management and configuration of OVHcloud services
 
-> [!warning]
-> This guide will show you how to use OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
->
-> If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) or discuss the issue with our [community](/links/community). OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
->
+This guide will show you how to use OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
+
+If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) or discuss the issue with our [community](/links/community). OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
 
 ///
 
