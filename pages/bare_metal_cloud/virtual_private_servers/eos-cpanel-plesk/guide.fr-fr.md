@@ -1,7 +1,7 @@
 ---
 title: "Fin du support Plesk et cPanel pour VPS - Assurer la continuité de vos services"
 excerpt: "Découvrez les dates de fin de support des systèmes d'exploitation de votre VPS OVHcloud affectant les licences Plesk et cPanel"
-updated: 2025-09-26
+updated: 2025-09-29
 ---
 
 ## Objectif
@@ -89,8 +89,8 @@ Si vous ne pouvez pas déployer un nouveau de VPS, certains outils permettent de
 >
 > Ces outils ne sont pas garantis à 100 % et nécessitent des sauvegardes complètes avant de procéder. Assurez-vous également que votre VPS dispose de ressources suffisantes (RAM, CPU, disque).
 
-### Bonne pratique de sécurité
- 
+### Bonnes pratiques de sécurité
+
 Indépendamment de Plesk/cPanel, il est essentiel de **maintenir le système d’exploitation de votre VPS** à jour afin de bénéficier des correctifs de sécurité, de la compatibilité logicielle et du support éditeur. Si votre distribution est en **fin de vie (EOL)**, planifiez une **mise à niveau** ou une **migration** vers une version encore supportée.
 
 Pour connaître les dates de fin de vie et de fin de support des images et des OS (VPS & Public Cloud), consultez notre guide « [Public Cloud & VPS - Cycle de vie et annonces de fin de vie/support des images et distributions](/pages/bare_metal_cloud/virtual_private_servers/image-life-cycle) ».
