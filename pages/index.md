@@ -2097,6 +2097,8 @@
         + [How to enable OVHcloud account logs forwarding](manage_and_operate/iam/iam-logs-forwarding)
     + [Terraform](manage-operate-terraform)
         + [Using Terraform with OVHcloud](manage_and_operate/terraform/terraform-at-ovhcloud)
+    + [CLI](manage-operate-cli)
+        + [Getting Started with OVHcloud CLI](manage_and_operate/cli/cli-getting-started)
     + [Observability](products/manage-operate-observability)
         + [Logs Data Platform](products/observability-logs-data-platform)
             + [Getting started](observability-logs-data-platform-getting-started)
