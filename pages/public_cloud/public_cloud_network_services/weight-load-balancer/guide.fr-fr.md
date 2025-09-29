@@ -409,7 +409,3 @@ Vous devriez voir des réponses alternées provenant des deux membres :
 ## Aller plus loin
 
 Rejoignez notre [communauté d'utilisateurs](/links/community).
-
-
-
-
