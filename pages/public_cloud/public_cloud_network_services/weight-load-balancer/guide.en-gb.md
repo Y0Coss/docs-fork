@@ -1,7 +1,7 @@
 ---
 title: 'Using the weight feature on a Load Balancer member'
 excerpt: 'Learn how to adjust the weight of a Load Balancer member'
-updated: 2025-09-26
+updated: 2025-09-29
 ---
 
 ## Objective
@@ -163,7 +163,7 @@ This can be confusing because some users expect a final status of **DRAINED** on
 - **DRAINING** simply means that the member is no longer receiving traffic, not that it is still actively draining traffic.
 - The **DRAINED** status is not yet supported in the current OpenStack API.
 
-If having a final **DRAINED** status is critical for your operations, it is recommended to submit a feature request to OVHcloud for this functionality in a future update.
+If having a final **DRAINED** status is critical for your operations, it is recommended to submit a feature request to OVHcloud for this functionality in a future update. However, this will only be possible once this feature is supported by OpenStack.
 
 > [!tabs]
 > **OVHcloud API**
@@ -211,13 +211,13 @@ If having a final **DRAINED** status is critical for your operations, it is reco
 >> resource "openstack_lb_monitor_v2" "monitor_1" {
 >>  pool_id     = "<POOL_ID>"
 >>  member {
->>  address       = "192.168.199.23"
+>>  address       = "10.0.0.158"
 >>  protocol_port = 8080
 >>  weight = 0
 >>  }
 >>  
 >>  member {
->>  address       = "192.168.199.24"
+>>  address       = "10.0.0.200"
 >>  protocol_port = 8080
 >>  weight = 1
 >>  }
