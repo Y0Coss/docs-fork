@@ -96,7 +96,7 @@ The Outlook application does not allow you to modify the server settings for you
 
 If your email account is already configured and you wish to reconfigure it, you will need to delete it and recreate it:
 
-- Click on the settings icon "⋮" at the bottom of the left column.
+- Click on the settings icon (&#9965;) at the bottom of the left column.
 - In the "Your accounts" section, click on `Manage`{.action} to the right of the relevant email account.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-400}
@@ -160,6 +160,6 @@ For sending emails, find the **SMTP** settings to use below:
 
 For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, we recommend consulting our various [support offers](/links/support).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).

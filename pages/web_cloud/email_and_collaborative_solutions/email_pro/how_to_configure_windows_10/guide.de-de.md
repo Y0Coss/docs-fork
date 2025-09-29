@@ -1,6 +1,6 @@
 ---
-title: "Email Pro - Konfigurieren Sie Ihres Email Pro Accounts im neuen Outlook für Windows"
-excerpt: "Erfahren Sie, wie Sie Ihre Email Pro-Adresse im neuen Outlook für Windows konfigurieren"
+title: "Email Pro - Konfigurieren Ihres Email Pro Accounts im neuen Outlook für Windows"
+excerpt: "Erfahren Sie, wie Sie Ihre Email Pro Adresse im neuen Outlook für Windows konfigurieren"
 updated: 2025-09-02
 ---
 
@@ -22,25 +22,25 @@ details[open]>summary::before {
 </style>
 
 ## Ziel
-
+ 
 Die E-Mail-Accounts des [Email Pro](/links/web/email-pro) Angebots können in einem kompatiblen E-Mail-Client konfiguriert werden. Dies ermöglicht es Ihnen, Nachrichten von der Anwendung Ihrer Wahl zu senden und zu empfangen.
 
 Das **neue Outlook** ersetzt die **Mail**-Anwendung in Windows seit dem 1. Januar 2025. Für weitere Informationen zu diesem Thema besuchen Sie die offizielle Microsoft-Seite:  
 [Outlook for Windows: The Future of Mail, Calendar, and People on Windows 11](https://support.microsoft.com/en-us/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199)
 
-**Diese Anleitung erklärt wie Sie Ihr Email Pro-Konto im neuen Outlook für Windows konfigurieren.**
+**Diese Anleitung erklärt, wie Sie Ihren Email Pro Account im neuen Outlook für Windows konfigurieren.**
 
 ## Voraussetzungen
 
 - Sie haben einen [Email Pro](/links/web/email-pro) E-Mail-Account.
-- Sie verwenden das neue [Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) für Windows
+- Sie verwenden das neue [Outlook](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) für Windows.
 - Sie haben Zugangsdaten für den zu konfigurierenden E-Mail-Account.
 
 > [!warning]
 >
-> Diese Dokumentation gilt ausschließlich für das **New Outlook** und nicht für [Outlook Classic](https://support.microsoft.com/en-us/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5), das in der Microsoft 365 Suite oder zuvor auf Ihrem Computer installiert ist.
+> Diese Dokumentation gilt ausschließlich für das **Neue Outlook** und nicht für [Outlook Classic](https://support.microsoft.com/en-us/office/install-or-reinstall-classic-outlook-on-a-windows-pc-5c94902b-31a5-4274-abb0-b07f4661edf5), das in der Microsoft 365 Suite auf Ihrem Computer installiert ist.
 
-/// details | Informationen zur Verwaltung und Konfiguration von  OVHcloud Diensten
+/// details | Informationen zur Verwaltung und Konfiguration von OVHcloud Diensten
 
 OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 
@@ -84,7 +84,7 @@ Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Wi
 >>
 >> ![outlook](images/configuration-newoutlook-windows-emp-03.png){.thumbnail .w-400}
 
-### E-Mail-Adresse nutzen <a name="use-account"></a>
+### E-Mail-Adresse verwenden <a name="use-account"></a>
 
 Sobald die E-Mail-Adresse konfiguriert ist, können Sie damit beginnen, sie zu nutzen! Sie können nun Nachrichten senden und empfangen.
 
@@ -94,9 +94,9 @@ OVHcloud stellt außerdem eine Webanwendung bereit, mit der Sie Ihren E-Mail-Acc
 
 Die Outlook Anwendung erlaubt nicht, die Servereinstellungen für Ihren E-Mail-Account zu ändern.
 
-Wenn Ihr E-Mail-Account bereits konfiguriert ist und Sie es neu konfigurieren möchten, müssen Sie es löschen und neu erstellen:
+Wenn Ihr E-Mail-Account bereits konfiguriert ist und Sie ihn erneut konfigurieren möchten, müssen Sie ihn zuerst löschen und dann neu erstellen:
 
-- Klicken Sie auf das Einstellungen-Symbol "⋮" am unteren Rand der linken Spalte.
+- Klicken Sie auf das Einstellungen-Symbol (&#9965;) am unteren Rand der linken Spalte.
 - Im Abschnitt "Ihre Konten" klicken Sie auf `Verwalten`{.action} rechts neben dem relevanten E-Mail-Account.
 
 ![outlook](images/configuration-newoutlook-windows-04.png){.thumbnail .w-400}
@@ -143,7 +143,7 @@ Für das Senden von E-Mails finden Sie unten die **SMTP**-Einstellungen:
 **SMTP-Konfiguration**
 
 - **Benutzername**: Geben Sie die **komplette** E-Mail-Adresse ein.
-- **Passwort**: Geben Sie das Passwort für das E-Mail-Account ein.
+- **Passwort**: Geben Sie das Passwort für den E-Mail-Account ein.
 - **Ausgangsserver**: pro?.mail.ovh.net (ersetzen Sie "?" durch Ihre Servernummer).
 - **Port**: 587.
 - **Sicherheitstyp**: STARTTLS.
