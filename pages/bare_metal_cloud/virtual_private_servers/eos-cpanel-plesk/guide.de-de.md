@@ -87,13 +87,13 @@ Wenn Sie keinen neuen VPS bereitstellen können, können Sie bestimmte Tools ver
 
 > [!primary]
 >
-> Für diese Tools wird keine Garantie übernommen und sollten nicht ohne vorherige vollständige genutzt werden. Stellen Sie außerdem sicher, dass Ihr VPS über ausreichende Ressourcen verfügt (RAM, CPU, Storage).
+> Für diese Tools wird keine Garantie übernommen und sie sollten nicht ohne vorheriges Erzeugen von Backups genutzt werden. Stellen Sie außerdem sicher, dass Ihr VPS über ausreichende Ressourcen verfügt (RAM, CPU, Storage).
 
-### Sicherheitsbest Practices
+### Best Practices Sicherheit
 
 Unabhängig von Plesk/cPanel ist es wichtig, das Betriebssystem Ihres VPS auf dem neuesten Stand zu halten, um Sicherheitsupdates, Softwarekompatibilität und Herstellersupport zu erhalten. Wenn Ihre Distribution **End-of-Life (EOL)** ist, planen Sie eine **Aktualisierung** oder eine **Migration** auf eine weiterhin unterstützte Version.
 
-Um die End-of-Life- und Support-Enddaten für Images und Betriebssysteme (VPS & Public Cloud) zu erfahren, konsultieren Sie unser Handbuch "[Public Cloud & VPS - Lebenszyklus und End-of-Life-/Support-Bekanntmachungen für Images und Distributionen](/pages/bare_metal_cloud/virtual_private_servers/image-life-cycle)".
+Um die Terminierung von End-of-Life und End-of-Support für Images und Betriebssysteme (VPS & Public Cloud) zu erfahren, konsultieren Sie: "[Public Cloud & VPS - Lebenszyklus und End-of-Life-/Support für Images und Distributionen](/pages/bare_metal_cloud/virtual_private_servers/image-life-cycle)".
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
