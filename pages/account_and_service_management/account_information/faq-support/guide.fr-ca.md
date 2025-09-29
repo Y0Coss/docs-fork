@@ -98,8 +98,8 @@ Si le problème persiste, n'hésitez pas à contacter notre équipe d'assistance
 >
 > - Union européenne (UE) : <https://www.ovh.com/auth/>
 > - Canada (CA) : <https://ca.ovh.com/auth/>
-
-Cela peut résoudre certains problèmes de connexion.
+>
+> Cela peut résoudre certains problèmes de connexion.
 
 ///
 
