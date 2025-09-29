@@ -1,7 +1,7 @@
 ---
 title: Getting Started with OVHcloud CLI
 excerpt: Find out about useful resources in order to use the official OVHcloud Command Line Interface (CLI)
-updated: 2025-09-24
+updated: 2025-09-29
 ---
 
 ## Objective

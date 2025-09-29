@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec la CLI OVHcloud
 excerpt: "Découvrez les ressources utiles pour utiliser l’interface en ligne de commande officielle OVHcloud"
-updated: 2025-09-24
+updated: 2025-09-29
 ---
 
 ## Objectif
