@@ -90,7 +90,7 @@ You should see alternating responses from the two members:
 >> >
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member
 >> >
->> This call retrieves the pool id. Fill in the fields with the previously obtained information:
+>> This call retrieves the member id. Fill in the fields with the previously obtained information:
 >>
 >> **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >>
@@ -167,7 +167,6 @@ If having a final **DRAINED** status is critical for your operations, it is reco
 
 > [!tabs]
 > **OVHcloud API**
->>
 >> Use the following API call:
 >>
 >> > [!api]
@@ -202,7 +201,6 @@ If having a final **DRAINED** status is critical for your operations, it is reco
 >> 118756ba-2cae-4141-b9c2-8b18b120c8dc member_0   ACTIVE               DRAINING           0
 >> ---------------------------------------------------------------------------------------------------
 >> ```
->>
 > **Terraform**
 >>
 >> Create a `.tf` file to manages a V2 members resource within OpenStack. For example:
@@ -292,13 +290,13 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >>
 >> **regionName**: The name of your region.
 >>
->> > You can leave the 'loadbalancerId' field blank in order to obtain all the pools created inthe region specified.
->> > 
+>> You can leave the 'loadbalancerId' field blank in order to obtain all the pools created inthe region specified.
+>>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET  /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member
 >> >
->> This call retrieves the pool id. Fill in the fields with the previously obtained information:
+>> This call retrieves the member id. Fill in the fields with the previously obtained information:
 >>
 >> **serviceName**: The Public Cloud project ID in the form of a 32-character string.
 >>
@@ -348,7 +346,6 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >>
 >> ![public-cloud](images/update-member-3-OpenStack_dashboard.png){.thumbnail width="800"}
 >>
->>  
 > **CLI**
 >>
 >> To restore traffic from being routed to a specific member, set its weight to 1:
@@ -364,19 +361,18 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >> resource "openstack_lb_monitor_v2" "monitor_1" {
 >>  pool_id     = "<POOL_ID>"
 >>  member {
->>  address       = "192.168.199.23"
+>>  address       = "10.0.0.158"
 >>  protocol_port = 8080
 >>  weight = 1
 >>  }
 >>  
 >>  member {
->>  address       = "192.168.199.24"
+>>  address       = "10.0.0.200"
 >>  protocol_port = 8080
 >>  weight = 1
 >>  }
 >>}
 >> ```
->>
 >> Replace `<POOL_ID>` with the ID of your Pool. For more details on the available options for this resource, refer to the [official documentation](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_monitor_v2) for the `openstack_lb_monitor_v2` resource on the Terraform Registry.
 >>
 >> **Applying the Configuration**

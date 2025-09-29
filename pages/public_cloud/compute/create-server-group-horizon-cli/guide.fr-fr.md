@@ -1,7 +1,7 @@
 ---
 title: 'Créer et utiliser un groupe de serveurs dans Horizon et CLI'
 excerpt: "Découvrez comment créer un groupe de serveurs et l'utiliser avec une instance Public Cloud"
-update: 2025-09-25
+update: 2025-09-29
 ---
 
 ## Objectif
