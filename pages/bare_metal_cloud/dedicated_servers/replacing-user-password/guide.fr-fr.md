@@ -1,7 +1,7 @@
 ---
 title: "Comment récupérer l'accès au serveur en cas de perte du mot de passe de l'utilisateur"
 excerpt: "Découvrez comment configurer un nouveau mot de passe pour un compte utilisateur sur un système d'exploitation GNU/Linux avec le mode rescue OVHcloud"
-updated: 2025-09-24
+updated: 2025-09-29
 ---
 
 ## Objectif
@@ -64,40 +64,28 @@ La commande exacte dépend du point de montage utilisé. Par exemple, si vous av
 chroot /mnt/
 ```
 
-### Étape 2 : réinitialiser le mot de passe de l'utilisateur
+### Étape 2 : identifier le(s) compte(s) utilisateur et réinitialiser le mot de passe
 
-Avant de changer le mot de passe de l'utilisateur, **vérifiez sur quel compte vous êtes connecté** grâce à la commande ci-dessous :
+Après avoir monté la partition et exécuté `chroot /mnt` (ou l'équivalent), vous disposez des privilèges **root** sur le système monté.
 
-```bash
-whoami
-```
-
-Exemples de sortie : `debian`, `ubuntu`, `user1`, etc.
-
-Si le compte affiché est bien celui de l'utilisateur concerné, utilisez la commande suivante pour modifier son mot de passe :
+Avant de modifier un mot de passe, **identifiez les comptes existants** :
 
 ```bash
-passwd
+cat /etc/passwd
 ```
 
-Renseignez le nouveau mot de passe :
+Pour changer le mot de passe d’un compte précis (ex. `user1`), spécifiez toujours le nom d’utilisateur :
 
-```text
-New password: 
-Retype new password:
-passwd: password updated successfully
+```bash
+passwd user1
+# New password:
+# Retype new password:
+# passwd: password updated successfully
 ```
-
-> [!primary]
->
-> Sur une distribution GNU/Linux, **une invite de mot de passe n'affiche pas vos entrées clavier**.
-
-Si ce n’est pas le bon compte, déconnectez-vous puis reconnectez-vous en SSH avec l’utilisateur cible, puis modifiez son mot de passe.
 
 > [!warning]
 >
-> La commande `passwd` sans argument modifie le mot de passe du compte affiché par `whoami`.
-> Vérifiez toujours l’utilisateur courant avant d'exécuter cette commande.
+> Évitez `passwd` sans argument : cette commande modifie le mot de passe du compte courant (souvent `root` après `chroot`). Indiquez systématiquement `passwd <utilisateur>`.
 
 Pensez à utiliser le mode de démarrage **normal** de votre serveur lorsque vous le redémarrez depuis votre [espace client OVHcloud](/links/manager).
 
