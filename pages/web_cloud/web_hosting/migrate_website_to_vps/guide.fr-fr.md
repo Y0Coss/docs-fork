@@ -1,7 +1,7 @@
 ---
 title: "Comment migrer un site web depuis un hébergement Web mutualisé vers un VPS"
 excerpt: "Découvrez comment migrer votre site web d'un hébergement mutualisé vers un VPS OVHcloud"
-updated: 2024-11-05
+updated: 2025-09-29
 ---
 
 ## Objectif
@@ -116,7 +116,39 @@ Suivez notre [guide sur l'utilisation de FileZilla](/pages/bare_metal_cloud/dedi
 
 Une fois connecté à votre VPS, l'arborescence des fichiers locaux apparaît à gauche de l'interface FileZilla, et celle de votre VPS à droite.
 
-Sélectionnez les fichiers de votre site web et la base de données que vous avez téléchargés lors de l'[étape 1.2](#step1.2). Faites-les glisser vers le répertoire web de votre VPS à droite de l'interface. Le répertoire web est l'endroit où les fichiers de votre site web seront stockés pour être accessibles sur Internet. Par défaut, il peut s'agir d'un dossier nommé `/var/www/html` ou d'un autre répertoire configuré pendant l'installation de votre serveur web lors de l'[étape 2.2](#step2.2). Assurez-vous de placer vos fichiers dans le dossier configuré comme racine web pour que votre site web fonctionne correctement.
+Le répertoire web est l’endroit où les fichiers de votre site web seront stockés pour être accessibles sur Internet. **Par défaut, il peut s’agir d’un dossier nommé `/var/www/html` ou d’un autre répertoire configuré pendant l’installation de votre serveur web lors de l’[étape 2.2](#step2.2)**. Assurez-vous de placer vos fichiers dans le dossier configuré comme **racine web** pour que votre site fonctionne correctement.
+
+> [!warning]
+>
+> Si vous êtes connecté en SFTP avec un utilisateur non-root (ex. `debian`), vous n’aurez pas la permission d’écrire directement dans `/var/www/html`.
+
+**Procédure simple : déposer dans `/home` puis déplacer avec `sudo`**
+
+1) **Dans FileZilla (SFTP)**
+
+   - Côté « Site distant » (panneau de droite), allez dans : `/home/debian/`
+   - Créez un dossier `site` (clic droit → Créer un répertoire), puis ouvrez-le : `/home/debian/site/`
+   - Sélectionnez les fichiers de votre site web et la base de données que vous avez téléchargés lors de l’[étape 1.2](#step1.2).
+   - **Glissez-déposez** tous les fichiers de votre site web dans `/home/debian/site/`
+
+2) **Ouvrir une session SSH sur le VPS**
+
+   - Lancez un terminal puis connectez-vous avec le même utilisateur :
+
+     ```bash
+     ssh debian@<IP_DU_VPS>
+     ```
+    
+3) **Déplacer les fichiers vers la racine web et régler les droits**
+   - Si votre racine web est `/var/www/html` (cas le plus courant Nginx/Apache) :
+     ```bash
+     sudo mkdir -p /var/www/html
+     sudo rsync -a /home/debian/site/ /var/www/html/
+     sudo chown -R www-data:www-data /var/www/html
+     sudo find /var/www/html -type d -exec chmod 755 {} \;
+     sudo find /var/www/html -type f -exec chmod 644 {} \;
+     ```
+   - **Si votre racine web est différente** (définie à l’[étape 2.2](#step2.2)), remplacez `/var/www/html` par **le chemin réellement configuré** (ex. `/srv/www/mon-site/current/public`).
 
 ### Étape 4 - Importer la base de données sur votre VPS (facultatif)
 
