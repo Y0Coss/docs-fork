@@ -28,7 +28,7 @@ Nous avons détecté une activité inhabituelle pouvant nuire à votre service :
 - Cas 2 – **Volume inhabituel d’envois d’e-mails via PHP** (scripts/applications).
 - Cas 3 – **Volume inhabituel de requêtes sortantes** (connexions vers l’extérieur).
 
-Par mesure de sécurité, certaines fonctionnalités sont temporairement bloquées :
+Par mesure de sécurité et en fonction de la situation, certaines fonctionnalités peuvent temporairement être bloquées :
 
 - **Accès au site web** (cas 1)
 - **Envoi d’e-mails via PHP** (cas 1 et cas 2).
