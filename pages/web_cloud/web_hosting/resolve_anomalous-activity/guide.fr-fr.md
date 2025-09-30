@@ -35,7 +35,7 @@ Par mesure de sécurité, certaines fonctionnalités sont temporairement bloqué
 
 ### Quelles conséquences pour mon site web ?
 
-- Votre **site web reste en ligne** et accessible aux visiteurs.  
+- En fonction de l'activité inhabituelle détectée, votre **site web peut ne plus être en ligne** et accessible aux visiteurs.
 - Les **envois d’e-mails via PHP** (formulaires, notifications, etc.) et/ou les **connexions sortantes** (API externes, webhooks, mises à jour via HTTP, etc.) peuvent être **temporairement désactivés**, selon le cas.
 
 ### Étapes à suivre pour résoudre le problème
