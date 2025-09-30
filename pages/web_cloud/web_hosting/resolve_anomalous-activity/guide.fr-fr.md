@@ -55,7 +55,7 @@ Votre site web a émis un nombre d’e-mails via PHP supérieur à la normale. C
 
 > [!primary]
 >
-> Cette mesure ne concerne **pas** l’envoi via votre boîte mail (webmail ou client de messagerie). Elle s’applique uniquement aux **e-mails envoyés depuis vos scripts** (fonction `mail()` PHP ou envoi SMTP déclenché par une application).
+> Cette mesure ne concerne **pas** l’envoi via votre boîte mail (webmail ou client de messagerie). Elle s’applique uniquement aux **e-mails envoyés depuis vos scripts** (fonction `mail()` PHP ou envoi SMTP déclenché par une application depuis votre hébergement web).
 
 #### Cas 3 — Volume inhabituel de requêtes sortantes (TCP OUT)
 
