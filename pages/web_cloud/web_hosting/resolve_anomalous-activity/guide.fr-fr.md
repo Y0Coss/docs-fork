@@ -69,7 +69,7 @@ Votre site web effectue de nombreuses connexions externes (API, mises à jour, a
 >
 > N’effectuez cette étape **qu’après avoir appliqué les recommandations ci-dessus** (diagnostic, corrections/mises à jour, sécurisation). Si une activité anormale est à nouveau détectée lors d’un prochain scan, les **mesures de sécurité seront automatiquement réactivées**. Vous recevrez une nouvelle notification et les blocages resteront en place jusqu’à la **résolution définitive** du problème.
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans `Web Cloud`{.action} puis cliquez sur votre hébergement.
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans `Web Cloud`{.action} puis cliquez sur votre hébergement web.
 2. Une **fenêtre d’alerte** s’affiche : `« Activité anormale sur votre hébergement »`. Si vous la fermez en cliquant sur `Plus tard`{.action}, une **bannière d’alerte** `« Activité anormale détectée »` apparaît en haut de la page. Cliquez sur **En savoir plus** pour rouvrir la fenêtre d’alerte.
 3. **Cochez** la case : `Je confirme avoir effectué toutes les actions nécessaires pour résoudre le problème`.
 4. Cliquez sur **Lever les mesures de sécurité**.
