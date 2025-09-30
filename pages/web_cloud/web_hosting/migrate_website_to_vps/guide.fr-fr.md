@@ -116,7 +116,7 @@ Suivez notre [guide sur l'utilisation de FileZilla](/pages/bare_metal_cloud/dedi
 
 Une fois connecté à votre VPS, l'arborescence des fichiers locaux apparaît à gauche de l'interface FileZilla, et celle de votre VPS à droite.
 
-Le répertoire web est l’endroit où les fichiers de votre site web seront stockés pour être accessibles sur Internet. **Par défaut, il peut s’agir d’un dossier nommé `/var/www/html` ou d’un autre répertoire configuré pendant l’installation de votre serveur web lors de l’[étape 2.2](#step2.2)**. Assurez-vous de placer vos fichiers dans le dossier configuré comme **racine web** pour que votre site fonctionne correctement.
+Le répertoire web (ou racine web) est l’endroit où les fichiers de votre site web seront stockés pour être accessibles sur Internet. **Par défaut, il peut s’agir d’un dossier nommé `/var/www/html` ou d’un autre répertoire configuré pendant l’installation de votre serveur web lors de l’[étape 2.2](#step2.2)**. Assurez-vous de placer vos fichiers dans le dossier configuré comme **racine web** pour que votre site fonctionne correctement.
 
 > [!warning]
 >
@@ -124,31 +124,57 @@ Le répertoire web est l’endroit où les fichiers de votre site web seront sto
 
 **Procédure simple : déposer dans `/home` puis déplacer avec `sudo`**
 
-1) **Dans FileZilla (SFTP)**
+##### Dans FileZilla (SFTP)
 
-   - Côté « Site distant » (panneau de droite), allez dans : `/home/debian/`
-   - Créez un dossier `site` (clic droit → Créer un répertoire), puis ouvrez-le : `/home/debian/site/`
-   - Sélectionnez les fichiers de votre site web et la base de données que vous avez téléchargés lors de l’[étape 1.2](#step1.2).
-   - **Glissez-déposez** tous les fichiers de votre site web dans `/home/debian/site/`
+- Côté « Site distant » (panneau de droite), allez dans : `/home/debian/`
+- Créez un dossier `site` (clic droit → Créer un répertoire), puis ouvrez-le : `/home/debian/site/`
+- Sélectionnez les fichiers de votre site web et la base de données que vous avez téléchargés lors de l’[étape 1.2](#step1.2).
+- **Glissez-déposez** tous les fichiers de votre site web dans `/home/debian/site/` (**Ne déposez pas vos dumps SQL dans ce dossier**. Gardez-les hors du webroot, ex. `/home/debian/backup.sql`.)
 
-2) **Ouvrir une session SSH sur le VPS**
+##### Sur votre VPS
 
-   - Lancez un terminal puis connectez-vous avec le même utilisateur :
+Lancez un terminal puis connectez-vous en SSH à votre VPS :
 
-     ```bash
-     ssh debian@<IP_DU_VPS>
-     ```
-    
-3) **Déplacer les fichiers vers la racine web et régler les droits**
-   - Si votre racine web est `/var/www/html` (cas le plus courant Nginx/Apache) :
-     ```bash
-     sudo mkdir -p /var/www/html
-     sudo rsync -a /home/debian/site/ /var/www/html/
-     sudo chown -R www-data:www-data /var/www/html
-     sudo find /var/www/html -type d -exec chmod 755 {} \;
-     sudo find /var/www/html -type f -exec chmod 644 {} \;
-     ```
-   - **Si votre racine web est différente** (définie à l’[étape 2.2](#step2.2)), remplacez `/var/www/html` par **le chemin réellement configuré** (ex. `/srv/www/mon-site/current/public`).
+```bash
+ssh <utilisateur>@<IP_VPS>
+```
+
+Exécutez les lignes de commandes suivantes :
+
+> [!warning]
+>
+> Dans cet exemple, la racine web est `/var/www/html`. Si votre racine web est différente (configurée à l’étape 2.2), remplacez `/var/www/html` par votre chemin réel.
+
+Crée la racine web si elle n’existe pas :
+
+```bash
+sudo mkdir -p /var/www/html
+```
+
+Copiez le contenu de `/home/debian/site/` vers la racine web en préservant l’arborescence et les métadonnées :
+
+```bash
+sudo rsync -a /home/debian/site/ /var/www/html/
+```
+
+Alternative si `rsync` n’est pas installé : 
+
+```bash
+sudo cp -a /home/debian/site/. /var/www/html/
+```
+
+Donnez la propriété des fichiers au service web (`www-data` pour Nginx/Apache sur Debian/Ubuntu) :
+
+```bash
+sudo chown -R www-data:www-data /var/www/html
+```
+
+Fixez les permissions des dossiers en `755` (navigable) et des fichiers en `644` (lisible) :
+
+```bash
+sudo find /var/www/html -type d -exec chmod 755 {} \;
+sudo find /var/www/html -type f -exec chmod 644 {} \;
+```
 
 ### Étape 4 - Importer la base de données sur votre VPS (facultatif)
 
