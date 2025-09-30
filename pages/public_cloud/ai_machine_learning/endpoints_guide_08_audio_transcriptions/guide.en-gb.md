@@ -67,7 +67,7 @@ The request body for the audio transcription endpoint is of type `multipart/form
 | **file**                     | Yes      | binary        | `mp3`, `mp4`, `aac`, `m4a`, `wav`, `flac`, `ogg`, `opus`, `webm`, `mpeg`, `mpga`                                    | -       | The **audio file object (not file name)** to transcribe.                                                                                                                                                      |
 | **chunking_strategy**        | No       | `string`/`server_vad object`/`null`   | -                                                                                     | null    | Strategy for dividing the audio into chunks. More details [here](#chunking-strategy).                                                                                                                                                     |
 | **diarize**                  | No       | `boolean`/`null`  | `true`/`false`                                                                            | false   | Enables speaker separation in the transcript. When set to true, the system separates the audio into segments based on speakers, by adding labels like "Speaker 1" and "Speaker 2", so you can see who said what in conversations such as interviews, meetings, or phone calls. More details [here](#diarize).                                                                                                                                           |
-| **language**                 | No       | `string`/`null`   | [ISO-639-1 format](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)                                                                      | -       | The language parameter specifies the language spoken in the input audio. Providing it can improve transcription accuracy and reduce latency (e.g. `en` for English, `fr` for French, `de` for German, `es` for Spanish, `zh` for Chinese, `ar` for Arabic ...). If not provided, the system will attempt automatic language detection, which may be slightly slower and less accurate in some cases.                                                                                                                                           |
+| **language**                 | No       | `string`/`null`   | [ISO-639-1 format](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)                                                                      | -       | The language parameter specifies the language spoken in the input audio. Providing it can improve transcription accuracy and reduce latency (e.g. `en` for English, `fr` for French, `de` for German, `es` for Spanish, `zh` for Chinese, `ar` for Arabic ...). If not provided, the system will attempt automatic language detection, which may be slightly slower and less accurate in some cases. [More details on language compatibility and performance](#language-compatibility-and-performances).                                                                                                                                           |
 | **model**                    | No       | `string`/`null`   | ID of the model to use                                                                | -       | Specifies the model to use for transcription. Useful when using our [unified endpoint](/pages/public_cloud/ai_machine_learning/endpoints_guide_07_virtual_models).                                                                                                                                                            |
 | **prompt**                   | No       | `string`/`null`   | -                                                                                     | -       | Text to guide the model's style, translate transcript to english or continue a previous audio segment. The language in which you write the prompt must match the audio's one. More details about prompt usage [here](#prompt).                                                                                         |
 | **response_format**          | No       | `enum`/`null`     | `json`, `text`, `srt`, `verbose_json`, `vtt`                                                | `verbose_json`    | Determines how the transcription data is returned. For detailed examples of each output type, visit the [Response Formats](#response-formats) section.                                                                                                                                                        |
@@ -568,13 +568,23 @@ to manually tweak VAD detection parameters. This lets you control the following 
 
 ## Endpoint Limitations
 
-### Compatibility and Performances
+### Language Compatibility and Performances
 
-Different languages have varying levels of compatibility and performance with the models. Refer to the model documentation for specific details on language support and performance metrics. Generally, models perform best with languages they are specifically trained on, and performance may vary for less common languages.
+Whisper models are compatible with a **wide range of languages**, supporting approximately 100 in total.
+
+However, transcription quality and speed depend on the **language of the input audio**. While Whisper v3 models are multilingual, their accuracy varies significantly by language:
+
+- Common languages such as English, French, Spanish, and German generally produce the best results.  
+- Less common or low-resource languages may yield lower accuracy or longer processing times.  
+- Regional accents, dialects, or code-switching (switching between multiple languages in the same recording) can reduce accuracy further.  
+
+Providing the `language` parameter explicitly (instead of relying on automatic detection) generally improves both accuracy and latency.  
+
+For a detailed performance breakdown by language, see [Whisper’s benchmark results](https://github.com/openai/whisper?tab=readme-ov-file#available-models-and-languages). This includes word error rates (WER) and character error rates (CER) across different datasets.  
 
 ### Prompt Length
 
-For Whisper-based models, the `prompt` parameter only considers the last 224 tokens (approximately the final 200 characters). If your prompt is longer, tokens preceding the last 224 will be **ignored**.
+For **Whisper-based models**, the `prompt` parameter only **considers the last 224 tokens** (approximately the final 200 characters). If your prompt is longer, tokens preceding the last 224 will be **ignored**.
 
 ### Parameters Support
 
