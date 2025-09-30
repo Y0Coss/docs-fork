@@ -14,8 +14,7 @@ Cette interface web rassemble toutes les informations essentielles sur vos resso
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
-
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](/links/hosted-private-cloud/vmware), afin de recevoir des identifiants de connexion.
 - Disposer d’un identifiant utilisateur actif (créé dans l’[espace client OVHcloud](/links/manager)).
 
 ## En pratique
@@ -45,6 +44,7 @@ Identifiez-vous avec votre **utilisateur** et votre **mot de passe**, les mêmes
 Vous êtes désormais connecté à **vScope**. Cette page centralise les informations clés de vos ressources.
 
 Par exemple, pour chaque hôte, vous visualisez immédiatement :
+
 - le nombre de cœurs et de VM
 - la charge CPU et RAM
 - le trafic réseau
@@ -87,7 +87,7 @@ Cette section fournit une vue détaillée de chaque machine virtuelle :
 - État des VMware Tools
 - Trafic réseau
 - Taille de la VM
-- Activation FT (Fault Tolerance)
+- Activation de FT (Fault Tolerance)
 - CPU Ready Time
 - Disk IO
 - Disk Latency
