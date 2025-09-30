@@ -46,14 +46,14 @@ A Server Group with the policy of `soft anti affinity` will **try to** make sure
 
 > [!tabs]
 > **Openstack Dashboard**
->> >![Keystone](images/create_server_groups_openstack_dashboard.png){.thumbnail}
->> >
->> > * Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
->> > * Select the appropriate region from the drop down menu at the top left.
->> > * Click on `Compute`{.action} in left tab, then on `Server Groups`{.action}.
->> > * Next, cick on `+ Create Server Group`{.action}.
->> > * In the popup window that appears, select a `Name` and `Policy` for your server group.
->> > * Click on `Submit`{.action}.
+>> ![Keystone](images/create_server_groups_openstack_dashboard.png){.thumbnail}
+>> 
+>> * Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+>> * Select the appropriate region from the drop down menu at the top left.
+>> * Click on `Compute`{.action} in left tab, then on `Server Groups`{.action}.
+>> * Next, cick on `+ Create Server Group`{.action}.
+>> * In the popup window that appears, select a `Name` and `Policy` for your server group.
+>> * Click on `Submit`{.action}.
 >>
 > **CLI**
 >> To create a Server Group, use the following command:
@@ -61,30 +61,32 @@ A Server Group with the policy of `soft anti affinity` will **try to** make sure
 >> ```bash
 >> openstack server group create \ --policy [affinity|soft-affinity|anti-affinity|soft-anti-affinity] \<server_group_name>
 >> ```
+>>
 
 ### Step 2: Creating an Instance with a Server Group
 
 > [!tabs]
 > Openstack Dashboard
->> >
->> > Horizon can create, read, update, and delete, as well as obtain a list of Server Groups for a tenant to enable the specification of a group when starting a virtual machine.
->> >
->> > * Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
->> > * Select the appropriate region from the drop down menu at the top left.
->> > * Click on `Compute`{.action} in left tab, then on `Instances`{.action}.
->> > * Click on `Launch Instance`{.action}.
->> > * In the pop-up window, fill in the required fields to create your instance. In the `Server Group`{.action} field, click on the drop-down arrow next to `Available` to display the list of available Server Groups. Select a Server Group and it will be moved to `Allocated`.
->> > ![create server with server group OpenStack](images/create_a_server_with_server_group_openStack_dashboard.png){.thumbnail}
->> > * Once done, click on `Launch Instance`{.action}.
->> >
+>>
+>> Horizon can create, read, update, and delete, as well as obtain a list of Server Groups for a tenant to enable the specification of a group when starting a virtual machine.
+>>
+>> * Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+>> * Select the appropriate region from the drop down menu at the top left.
+>> * Click on `Compute`{.action} in left tab, then on `Instances`{.action}.
+>> * Click on `Launch Instance`{.action}.
+>> * In the pop-up window, fill in the required fields to create your instance. In the `Server Group`{.action} field, click on the drop-down arrow next to `Available` to display the list of available Server Groups. Select a Server Group and it will be moved to `Allocated`.
+>> ![create server with server group OpenStack](images/create_a_server_with_server_group_openStack_dashboard.png){.thumbnail}
+>> * Once done, click on `Launch Instance`{.action}.
+>>
 > CLI
->> >
->> > To apply a Server Group policy, you must specify the group when creating an instance, as a *scheduling hint.*  
->> > To do that, use the `--hint` parameter in the following command:
->> >
->> > ```bash
->> > openstack server create --hint group=<server_group_id> [...] <server_name>
->> > ```
+>>
+>> To apply a Server Group policy, you must specify the group when creating an instance, as a *scheduling hint.*  
+>> To do that, use the `--hint` parameter in the following command:
+>>
+>> ```bash
+>> openstack server create --hint group=<server_group_id> [...] <server_name>
+>> ```
+>>
 
 If you subsequently launch more instances referencing the same Server Group, the scheduler concentrates or distributes them according to the Server Group's policy.
 

@@ -149,6 +149,7 @@ You should see alternating responses from the two members:
 >> ```bash
 >> $ openstack loadbalancer member set --weight 0 <pool> <member_0>
 >> ```
+>>
 
 ### Step 3: Verify Member Status
 
@@ -201,6 +202,7 @@ If having a final **DRAINED** status is critical for your operations, it is reco
 >> 118756ba-2cae-4141-b9c2-8b18b120c8dc member_0   ACTIVE               DRAINING           0
 >> ---------------------------------------------------------------------------------------------------
 >> ```
+>>
 > **Terraform**
 >>
 >> Create a `.tf` file to manages a V2 members resource within OpenStack. For example:
@@ -353,6 +355,7 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >> ```bash
 >> $ openstack loadbalancer member set --weight 1 <pool> <member_0>
 >> ```
+>>
 > **Terraform**
 >>
 >> Create a `.tf` file to manages a V2 members resource within OpenStack. For example:
@@ -373,6 +376,7 @@ Once the maintenance is complete, set the weight of `member_0` back to its origi
 >>  }
 >>}
 >> ```
+>>
 >> Replace `<POOL_ID>` with the ID of your Pool. For more details on the available options for this resource, refer to the [official documentation](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_monitor_v2) for the `openstack_lb_monitor_v2` resource on the Terraform Registry.
 >>
 >> **Applying the Configuration**

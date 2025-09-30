@@ -24,7 +24,7 @@ Pour utiliser le CLI OpenStack, assurez-vous de consulter les guides suivants :
 
 #### **Politiques**
 
-Un groupe de serveurs peut avoir l'une des quatre politiques suivantes : **y**, **Soft Affinity**, **Anti Affinity** ou **Soft Anti Affinity**.
+Un groupe de serveurs peut avoir l'une des quatre politiques suivantes : **Affinity**, **Soft Affinity**, **Anti Affinity** ou **Soft Anti Affinity**.
 
 ##### **Affinity**
 
@@ -46,14 +46,14 @@ Un groupe de serveurs avec la politique `soft anti affinity` **tentera** de s'as
 
 > [!tabs]
 > **Tableau de bord OpenStack**
->> >![Keystone](images/create_server_groups_openstack_dashboard.png){.thumbnail}
->> >
->> > * Connectez-vous à l'interface [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
->> > * Sélectionnez la région appropriée dans le menu déroulant en haut à gauche.
->> > * Cliquez sur `Compute`{.action} dans l'onglet de gauche, puis sur `Server Groups`{.action}.
->> > * Cliquez ensuite sur `+ Create Server Group`{.action}.
->> > * Dans la fenêtre qui s'affiche, sélectionnez un Nom (*Name*) et une Politique (*Policy*) pour votre groupe de serveurs.
->> > * Cliquez sur `Submit`{.action}.
+>> ![Keystone](images/create_server_groups_openstack_dashboard.png){.thumbnail}
+>>
+>> * Connectez-vous à l'interface [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+>> * Sélectionnez la région appropriée dans le menu déroulant en haut à gauche.
+>> * Cliquez sur `Compute`{.action} dans l'onglet de gauche, puis sur `Server Groups`{.action}.
+>> * Cliquez ensuite sur `+ Create Server Group`{.action}.
+>> * Dans la fenêtre qui s'affiche, sélectionnez un Nom (*Name*) et une Politique (*Policy*) pour votre groupe de serveurs.
+>> * Cliquez sur `Submit`{.action}.
 >>
 > **CLI**
 >> Pour créer un groupe de serveurs, utilisez la commande suivante :
@@ -61,30 +61,32 @@ Un groupe de serveurs avec la politique `soft anti affinity` **tentera** de s'as
 >> ``` bash
 >> openstack server group create \ --policy [affinity|soft-affinity|anti-affinity|soft-anti-affinity] \<server_group_name>
 >> ```
+>>
 
 ### Étape 2 : Création d'une instance avec un groupe de serveurs
 
 > [!tabs]
 > **Tableau de bord OpenStack**
->> >
->> > Horizon peut créer, lire, mettre à jour et supprimer, ainsi qu'obtenir une liste de groupes de serveurs pour un client afin d'activer la spécification d'un groupe lors du démarrage d'une machine virtuelle.
->> >
->> > * Connectez-vous à l'interface [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
->> > * Sélectionnez la région appropriée dans le menu déroulant en haut à gauche.
->> > * Cliquez sur `Compute`{.action} dans l'onglet de gauche, puis sur `Instances`{.action}.
->> > * Cliquez sur `Launch Instance`{.action}.
->> > * Dans la fenêtre qui apparaît, complétez les champs requis pour créer votre instance. Dans le champ `Server Group`{.action}, cliquez sur la flèche déroulante à côté de `Available` pour afficher la liste des groupes de serveurs disponibles. Sélectionnez un groupe de serveurs et il sera déplacé vers `Allocated`.
->> > ![create server with server group OpenStack](images/create_a_server_with_server_group_openStack_dashboard.png){.thumbnail}
->> > * Une fois terminé, cliquez sur `Launch Instance`{.action}.
->> >
+>>
+>> Horizon peut créer, lire, mettre à jour et supprimer, ainsi qu'obtenir une liste de groupes de serveurs pour un client afin d'activer la spécification d'un groupe lors du démarrage d'une machine virtuelle.
+>>
+>> * Connectez-vous à l'interface [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+>> * Sélectionnez la région appropriée dans le menu déroulant en haut à gauche.
+>> * Cliquez sur `Compute`{.action} dans l'onglet de gauche, puis sur `Instances`{.action}.
+>> * Cliquez sur `Launch Instance`{.action}.
+>> * Dans la fenêtre qui apparaît, complétez les champs requis pour créer votre instance. Dans le champ `Server Group`{.action}, cliquez sur la flèche déroulante à côté de `Available` pour afficher la liste des groupes de serveurs disponibles. Sélectionnez un groupe de serveurs et il sera déplacé vers `Allocated`.
+>> ![create server with server group OpenStack](images/create_a_server_with_server_group_openStack_dashboard.png){.thumbnail}
+>> * Une fois terminé, cliquez sur `Launch Instance`{.action}.
+>>
 > CLI
->> >
->> > Pour appliquer une politique de groupe de serveurs, vous devez spécifier le groupe lors de la création d'une instance, en tant que *conseil de planification.*
->> > Pour ce faire, utilisez le paramètre `--hint` dans la commande suivante :
->> >
->>> > ```bash
->> > openstack server create --hint group=<server_group_id> [...] <server_name>
->> > ```
+>>
+>> Pour appliquer une politique de groupe de serveurs, vous devez spécifier le groupe lors de la création d'une instance, en tant que *conseil de planification.*
+>> Pour ce faire, utilisez le paramètre `--hint` dans la commande suivante :
+>>
+>> ```bash
+>> openstack server create --hint group=<server_group_id> [...] <server_name>
+>> ```
+>>
 
 Si vous lancez ensuite d'autres instances faisant référence au même groupe de serveurs, le planificateur les concentre ou les répartit selon la politique du groupe de serveurs.
 
