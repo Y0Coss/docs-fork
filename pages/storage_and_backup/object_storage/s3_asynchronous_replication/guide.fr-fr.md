@@ -505,7 +505,7 @@ Cette fonctionnalité n'est disponible que pour les régions 3-AZ (pour en savoi
 
 Lors de la création d'un nouveau bucket/conteneur dans une région **3-AZ**, un message vous demande si vous souhaitez activer ou non l'option Offsite Replication. Si elle est activée et qu'elle repose sur la fonctionnalité de réplication asynchrone, le versioning sera automatiquement activé également.
 
-![OffsiteReplication](images/01-offsite-replication01.PNG){.thumbnail}
+![OffsiteReplication](images/enabling-offsite-replication.png){.thumbnail}
 
 #### Quelles sont les différences entre la fonctionnalité de réplication asynchrone et l'option Offsite Replication ?
 
