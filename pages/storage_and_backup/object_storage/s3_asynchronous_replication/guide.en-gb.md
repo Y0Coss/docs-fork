@@ -513,9 +513,9 @@ When creating a new bucket/container in a **3-AZ region**, you will be asked if 
 
 The Offsite Replication option offered in 3-AZ regions is based on the asynchronous replication feature. With this Offsite Replication option, OVHcloud automatically generates a replication rule configuration with pre-filled parameters, whereas the S3-compatible asynchronous replication functionality allows the user to take control of the entire function (configuration and deployment).
 
-#### Where will the replicated data be stored since the replication rule configuration is managed by OVHcloud?
+#### Where will the replicated data be stored, since the replication rule configuration is managed by OVHcloud?
 
-Replicated data is stored like any other data in a bucket that OVHcloud automatically creates for you. User can choose his destination region or let OVHcloud choosing the most suitable location automatically
+Replicated data is stored like all other data, in a bucket automatically created by OVHcloud. The user can choose the destination region or let OVHcloud automatically select the most suitable region.
 
 #### What if a replica bucket is deleted?
 
