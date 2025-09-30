@@ -50,8 +50,10 @@ updated: 2025-09-30
 > >
 > **Puis-je utiliser mes licences Windows Server existantes dans Public VCF as-a-Service ?** <a name="windowsLicenses"></a>
 > > Cela dépend du type de licence que vous possédez :
+> >
 > > - **Licences Software Subscription** : Oui, vous pouvez les utiliser dans OVHcloud Public VCF as-a-Service.
 > > - **Licences logicielles perpétuelles** : Non, elles ne peuvent pas être utilisées dans OVHcloud Public VCF as-a-Service.
+> >
 > > Si votre organisation dispose des deux types de licences, seules les licences par abonnement sont éligibles dans cette solution.
 
 ## Aller plus loin
