@@ -93,7 +93,7 @@ Jeśli nie możesz uruchomić nowego VPS, skorzystaj z narzędzi, dzięki który
 
 Niezależnie od Plesk/cPanel, ważne jest **utrzymanie systemu operacyjnego VPS na aktualnym poziomie**, aby skorzystać z poprawek bezpieczeństwa, kompatybilności oprogramowania i wsparcia producenta. Jeśli Twoja dystrybucja jest w **fazie końca wsparcia (EOL)**, zaplanuj **aktualizację** lub **migrację** na wersję nadal obsługiwana.
 
-Aby poznać daty końca życia i końca wsparcia dla obrazów i systemów operacyjnych (VPS & Public Cloud), skorzystaj z naszego przewodnika "[Public Cloud & VPS - Cykl życia i ogłoszenia o końcu wsparcia oraz życia dla obrazów i dystrybucji](/pages/bare_metal_cloud/virtual_private_servers/image-life-cycle)".
+Aby poznać daty końca życia i końca wsparcia dla obrazów i systemów operacyjnych (VPS & Public Cloud), skorzystaj z naszego przewodnika "[Public Cloud & VPS - Cykl życia i ogłoszenia o końcu wsparcia oraz życia dla obrazów i dystrybucji](/pages/public_cloud/compute/image-life-cycle)".
 
 ## Sprawdź również <a name="go-further"></a>
 

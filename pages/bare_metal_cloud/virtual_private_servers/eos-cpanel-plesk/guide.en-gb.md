@@ -93,7 +93,7 @@ If you cannot deploy a new VPS, you can use certain tools to **upgrade your oper
 
 Regardless of Plesk/cPanel, it is essential to **keep your VPS operating system up to date** to benefit from security patches, software compatibility, and vendor support. If your distribution is **end of life (EOL)**, plan an **upgrade** or **migration** to a still-supported version.
 
-To find out the end-of-life and end-of-support dates for images and operating systems (VPS & Public Cloud), refer to our guide [Public Cloud & VPS - Lifecycle and End-of-Life/Support Announcements for Images and Distributions](/pages/bare_metal_cloud/virtual_private_servers/image-life-cycle).
+To find out the end-of-life and end-of-support dates for images and operating systems (VPS & Public Cloud), refer to our guide [Public Cloud & VPS - Lifecycle and End-of-Life/Support Announcements for Images and Distributions](/pages/public_cloud/compute/image-life-cycle).
 
 ## Go further <a name="go-further"></a>
 
