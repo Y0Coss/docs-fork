@@ -6,9 +6,9 @@ updated: 2025-09-30
 
 ## Objectif
 
-OVHcloud vous met à disposition un outil de **supervision** et de **monitoring** de vos machines virtuelles et de votre infrastructure : **vScope**.  
+OVHcloud vous met à disposition un outil de **supervision** et de **monitoring** de vos machines virtuelles et de votre infrastructure : **vScope**.
 
-Cette interface web rassemble toutes les informations essentielles sur vos ressources.  
+Cette interface web rassemble toutes les informations essentielles sur vos ressources.
 
 **Ce guide explique comment lire et utiliser l'interface vScope.**
 
