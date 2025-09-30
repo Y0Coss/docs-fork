@@ -1368,8 +1368,6 @@
                 + [How to connect an OVHcloud domain name to a Webflow hosting plan](web_cloud/domains/how_to_connect_domain_to_webflow)
                 + [How to use an OVHcloud domain with iCloud Mail](web_cloud/domains/domain-icloud)
         + [DNS (Domain Name System)](products/web-cloud-domains-dns)
-            + [Getting started](web-cloud-domains-dns-getting-started)
-                + + [FAQ Domain names and DNS](web_cloud/domains/faq_domain_dns)
             + [DNS servers](web-cloud-domains-dns-dns-servers)
                 + [Everything you need to know about DNS servers](web_cloud/domains/dns_server_general_information)
                 + [Editing the DNS servers for an OVHcloud domain name](web_cloud/domains/dns_server_edit)
