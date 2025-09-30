@@ -8,6 +8,8 @@ updated: 2025-09-30
 
 Ce guide vous explique pourquoi une **activité anormale** peut être détectée sur votre hébergement, quelles en sont les **conséquences temporaires** (blocages de sécurité) et **comment rétablir** les fonctionnalités une fois le problème résolu.
 
+**Découvrez comment résoudre une activité inhabituelle sur votre hébergement OVHcloud**
+
 ## Prérequis
 
 - Disposer d’une offre d’[hébergement web OVHcloud](/links/web/hosting).
