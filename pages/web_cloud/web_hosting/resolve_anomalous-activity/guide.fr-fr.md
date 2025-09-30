@@ -30,6 +30,7 @@ Nous avons détecté une activité inhabituelle pouvant nuire à votre service :
 
 Par mesure de sécurité, certaines fonctionnalités sont temporairement bloquées :
 
+- **Accès au site web** (cas 1)
 - **Envoi d’e-mails via PHP** (cas 1 et cas 2).
 - **Requêtes sortantes (TCP OUT)** (cas 1 et cas 3).
 
