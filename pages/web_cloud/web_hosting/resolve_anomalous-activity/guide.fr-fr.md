@@ -59,7 +59,7 @@ Votre site web a émis un nombre d’e-mails via PHP supérieur à la normale. C
 
 #### Cas 3 — Volume inhabituel de requêtes sortantes (TCP OUT)
 
-Votre site effectue de nombreuses connexions externes (API, mises à jour, appels HTTP, etc.). Cela peut être révélateur d’un dysfonctionnement. Pour comprendre et résoudre ces anomalies, suivez notre guide « [Cas d'usage - Conseils suite au piratage de votre site Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked) ».
+Votre site web effectue de nombreuses connexions externes (API, mises à jour, appels HTTP, etc.). Cela peut être révélateur d’un dysfonctionnement. Pour comprendre et résoudre ces anomalies, suivez notre guide « [Cas d'usage - Conseils suite au piratage de votre site Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked) ».
 
 **Une fois le nettoyage terminé**, dirigez-vous vers la section « [lever les mesures de sécurité](#lift-security-measures) ».
 
