@@ -1,16 +1,16 @@
 ---
-title: "How to configure the Anti-DDos Infrastructure for Solana"
-excerpt: "Learn how to leverage the OVHcloud Anti-DDoS infrastructure to protect your Solana nodes without blocking their functionality"
-updated: 2025-09-01
+title: "How to configure the Anti-DDos Infrastructure for Blockchain"
+excerpt: "Learn how to leverage the OVHcloud Anti-DDoS infrastructure to protect your Blockchain nodes without harming their functionality"
+updated: 2025-09-30
 ---
 
 ## Objective
 
-This guide's objective is to help you better understand our anti-DDoS Infrastructure, and to provide instructions on how to configure effective protection without harming legitimate network traffic relative to the Blockchain.
+This guide's objective is to help you better understand the OVHcloud Anti-DDoS Infrastructure, and to provide instructions on how to configure effective protection without harming legitimate network traffic relative to the Blockchain.
 
 ## Requirements
 
-TBD
+- At least one Bare Metal [dedicated server](/links/bare-metal/bare-metal) from the Advance, Scale or High Grade ranges which respects the desired Blockchain's specific hardware requirements.
 
 ## Introduction to Blockchain
 
@@ -18,11 +18,11 @@ Blockchain is a decentralized, distributed digital ledger that records transacti
 
 This technology creates a tamper-proof and transparent record of information, such as financial transactions, making it secure and trustworthy.
 
-In some cases, communication spikes can trigger our Anti-DDoS Infrastructure, and lead to the detection of some traffic patterns as false positives. 
+In some cases, communication spikes can trigger Anti-DDoS Infrastructure, and lead to the detection of some traffic patterns as false positives. 
 
 ## Instructions
 
-To avoid having your network traffic suspected or blocked by the Anti-DDoS Infrastructure (as a false positive detection), we strongly recommend to report your nodes IP addresses to our support teams. This way, a custom Solana profile will be created for better protection and uninterrupted functionality. Please use [this form](link_to_be_determined) to report the aforementioned IPs. 
+To avoid having your network traffic suspected or blocked by the Anti-DDoS Infrastructure (as a false positive detection), we strongly recommend to report your nodes IP addresses to our support teams. This way, a custom Solana profile will be created for better protection and uninterrupted functionality. Please fill in a support request ticket listing your Blockchain nodes' IPv4 addresses. 
 
 Please note that in the future, you will be able to control Anti-DDoS behaviour directly through our Control Panel.
 
@@ -34,16 +34,21 @@ Solana is a high-performance blockchain platform known for its exceptional speed
 
 Solana's architecture also utilizes a combination of protocols like Tower BFT, Turbine, Gulf Stream and Sealevel to optimize block propagation, transaction processing, and smart contract execution, all contributing to its high speed and efficiency.
 
-Solana uses the following network protocols and ports:
+There are typically two types of nodes : 
+- **Validator nodes** (also called consensus nodes), which secure the Solana network by validating transactions and participating in consensus;
+- **RPC nodes**, which act as access points for users and applications, allowing them to submit transactions and query blockchain data via APIs *without* participating in consensus.
 
-| Protocol | Usage | Port |
-| :--- | :--- | :--- |
-| Gossip | Node discovery and cluster info sharing | TCP/UDP 8000-10000 (default 8001) |
-| Turbine | Network state dissemination and block/shred propagation | TCP/UDP 8000-10000 (default 8003) |
-| JSON-RPC over HTTP | Used by applications to query the blockchain and submit transactions | TCP 8899 |
-| JSON-RPC WebSockets API | Used by applications to query the blockchain and submit transactions | TCP 8900 |
-| QUIC | Ingest transactions from clients, improving network reliability and efficiency | UDP 8000-8002 (may vary) |
+Solana nodes use the following network protocols and ports:
 
+| Protocol | Usage | Port | Node Types |
+| :--- | :--- | :--- | :--- |
+| Gossip | Node discovery and cluster info sharing | TCP/UDP 8000-10000 (default 8001) | Validator / RPC |
+| JSON-RPC over HTTP | Used by applications to query the blockchain and submit transactions | TCP 8899 | RPC |
+| JSON-RPC WebSockets API | Used by applications to query the blockchain and submit transactions | TCP 8900 | RPC |
+| QUIC | Ingest transactions from clients, improving network reliability and efficiency | UDP 8000-8002 (may vary) | Validator / RPC |
+| Turbine | Network state dissemination and block/shred propagation | TCP/UDP 8000-10000 (default 8003) | Validator / RPC |
+
+You can find the hardware requirements for Solana Validator and RPC nodes in [the official Anza documentation](https://docs.anza.xyz/operations/requirements).
 
 ## Go further
 
