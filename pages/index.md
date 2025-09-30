@@ -805,6 +805,7 @@
             + [Test disk speed](public_cloud/compute/test_disk_speed)
             + [Transfer a volume backup from one datacentre to another](public_cloud/compute/transfer_volume_backup_from_one_datacentre_to_another)
             + [Change your Block Storage volume type](public_cloud/compute/switch_volume_type)
+            + [Migrating a Block Storage volume to an encrypted LUKS volume](public_cloud/compute/migrating-non-encrypted-to-encrypted-volume)
             + [Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](public_cloud/compute/classic_block_multi_az_limitations)
             + [Public Cloud Block Storage - Shared responsibilities](storage_and_backup/block_storage/responsibility-model-block-storage)
     + [Public Cloud Network Services](products/public-cloud-network)
