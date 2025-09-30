@@ -32,6 +32,15 @@ For a complete overview, including a detailed comparison table between Free and 
 
 ## Instructions
 
+> [!warning]
+>
+> At the moment, **Floating IPs cannot be attached to MKS nodes**.
+>
+> This feature will be available in the coming weeks.
+>
+> In the meantime, plan your migration accordingly and consider alternatives such as reconfiguring DNS records or using load balancer services.
+>
+
 1. **Install, Configure Backup Tool and back up your cluster**
 
 Before migrating your cluster, ensure that a backup solution is installed and configured. You can use Trilio, CloudCasa, or Velero depending on your preference.
@@ -121,10 +130,10 @@ Choose the documentation corresponding to the tool you are using:
 >> Monitor events and logs if some workloads do not start as expected.
 >>
 > **Via Trilio**
->> follow the step 4 in the **restoring** part of this [guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio/#restoring-mysql-qa-helm-release-backup).
+>> Follow the step 4 in the **restoring** part of this [guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio/#restoring-mysql-qa-helm-release-backup).
 >>
 > **Via CloudCasa**
->> follow the step 6 of this [guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa/#step6-----Run a restore operation).
+>> Follow the step 6 of this [guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa/#step6-----Run a restore operation).
 >>
 
 5. **Validate the Migration**
