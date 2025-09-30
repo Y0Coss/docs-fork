@@ -1,7 +1,7 @@
 ---
 title: 'Creating and using a Server Group in Horizon and CLI'
 excerpt: 'Find out how to create a Server Group and use it with a Public Cloud instance'
-updated: 2025-09-29
+updated: 2025-09-30
 ---
 
 ## Objective

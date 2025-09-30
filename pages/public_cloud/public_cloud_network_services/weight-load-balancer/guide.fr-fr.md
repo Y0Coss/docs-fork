@@ -1,7 +1,7 @@
 ---
 title : "Utiliser la fonctionnalité de poids sur un membre du Load Balancer"
 excerpt: "Découvrez comment ajuster le poids d'un membre du Load Balancer"
-updated: 2025-09-29
+updated: 2025-09-30
 ---
 
 ## Objectif
