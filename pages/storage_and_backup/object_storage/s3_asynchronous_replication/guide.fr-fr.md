@@ -511,6 +511,10 @@ Lors de la création d'un nouveau bucket/conteneur dans une région **3-AZ**, un
 
 L'option Offsite Replication proposée dans les régions 3-AZ repose sur la fonction de réplication asynchrone. Avec cette option Offsite Replication, OVHcloud se charge de générer automatiquement une configuration de règle de réplication avec des paramètres pré-remplis, là où la fonctionnalité de réplication asynchrone compatible S3 permet à l'utilisateur d'avoir la main sur l'ensemble de la fonction (configuration et déploiement).
 
+#### Où seront stockées les données répliquées puisque la configuration des règles de réplication est gérée par OVHcloud ?
+
+Les données répliquées sont stockées comme toutes les autres données, dans un bucket créé automatiquement par OVHcloud. Le système choisit l’emplacement le plus adapté : Strasbourg, Gravelines ou Roubaix—afin d’assurer une protection hors site efficace et fiable.
+
 #### Que se passe-t-il si le bucket de destination est supprimé ?
 
 Les objets du bucket source à répliquer auront un statut de réplication `FAILED` lorsque l'outil tentera de les répliquer, mais vous ne recevrez aucune erreur.
