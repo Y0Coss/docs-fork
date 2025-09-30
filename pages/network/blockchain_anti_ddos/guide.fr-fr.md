@@ -8,7 +8,7 @@ updated: 2025-09-30
 
 L'objectif de ce guide est de vous aider à mieux comprendre l'infrastructure Anti-DDoS d'OVHcloud et de vous fournir des instructions sur la façon de configurer une protection efficace sans nuire au trafic réseau relatif à la Blockchain.
 
-## Exigences
+## Prérequis
 
 - Au moins un [serveur dédié Bare Metal](/links/bare-metal/bare-metal) de la gamme Advance, Scale ou High Grade qui respecte les exigences matérielles spécifiques de la Blockchain souhaitée.
 
@@ -20,7 +20,7 @@ Cette technologie crée un registre inviolable et transparent des informations, 
 
 Dans certains cas, les pics de communication peuvent déclencher l'infrastructure Anti-DDoS et entraîner la détection de certains modèles de trafic comme des faux positifs.
 
-## Instructions
+## En pratique
 
 Pour éviter que votre trafic réseau ne soit suspecté ou bloqué par l'infrastructure Anti-DDoS (en tant que détection de faux positifs), nous vous recommandons fortement de signaler les adresses IP de vos nœuds à nos équipes de support. Cela permettra de créer un profil Solana personnalisé pour une meilleure protection et une fonctionnalité ininterrompue. Veuillez remplir un ticket de demande de support en listant les adresses IPv4 de vos nœuds Blockchain.
 
