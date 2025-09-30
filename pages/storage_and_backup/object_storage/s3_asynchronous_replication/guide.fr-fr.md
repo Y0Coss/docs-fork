@@ -513,7 +513,7 @@ L'option Offsite Replication proposée dans les régions 3-AZ repose sur la fonc
 
 #### Où seront stockées les données répliquées puisque la configuration des règles de réplication est gérée par OVHcloud ?
 
-Les données répliquées sont stockées comme toutes les autres données, dans un bucket créé automatiquement par OVHcloud. Le système choisit l’emplacement le plus adapté : Strasbourg, Gravelines ou Roubaix—afin d’assurer une protection hors site efficace et fiable.
+Les données répliquées sont stockées comme toutes les autres données, dans un bucket créé automatiquement par OVHcloud. L'utilisateur peut choisir la région de destination ou laisser OVHcloud sélectionner automatiquement la région la plus adaptée.
 
 #### Que se passe-t-il si le bucket de destination est supprimé ?
 

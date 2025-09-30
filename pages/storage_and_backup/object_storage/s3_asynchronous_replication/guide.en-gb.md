@@ -515,7 +515,7 @@ The Offsite Replication option offered in 3-AZ regions is based on the asynchron
 
 #### Where will the replicated data be stored since the replication rule configuration is managed by OVHcloud?
 
-Replicated data is stored like any other data in a bucket that OVHcloud automatically creates for you. The system selects the most suitable location — Strasbourg, Gravelines, or Roubaix — ensuring efficient and reliable offsite data protection.
+Replicated data is stored like any other data in a bucket that OVHcloud automatically creates for you. User can choose his destination region or let OVHcloud choosing the most suitable location automatically
 
 #### What if a replica bucket is deleted?
 
