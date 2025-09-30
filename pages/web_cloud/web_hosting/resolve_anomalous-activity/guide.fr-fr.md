@@ -18,7 +18,7 @@ Ce guide vous explique pourquoi une **activité anormale** peut être détectée
 ## En pratique
 
 > [!primary]
-> Pour protéger votre site web et vos visiteurs, nous activons automatiquement des mesures de sécurité dès qu’une activité inhabituelle est détectée sur votre hébergement. Il ne s’agit pas toujours d’une attaque : la cause peut aussi être, par exemple, une mauvaise configuration de votre site web, un script tiers ou une extension défaillante.
+> Pour protéger votre site web et vos visiteurs, nous activons automatiquement des mesures de sécurité dès qu’une activité inhabituelle est détectée sur votre hébergement web. Il ne s’agit pas toujours d’une attaque : la cause peut aussi être, par exemple, une mauvaise configuration de votre site web, un script tiers ou une extension défaillante.
 
 ### Pourquoi ce message s’affiche-t-il ?
 
