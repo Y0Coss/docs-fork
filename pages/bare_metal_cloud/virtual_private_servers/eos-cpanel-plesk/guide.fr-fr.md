@@ -93,7 +93,7 @@ Si vous ne pouvez pas déployer un nouveau de VPS, certains outils permettent de
 
 Indépendamment de Plesk/cPanel, il est essentiel de **maintenir le système d’exploitation de votre VPS** à jour afin de bénéficier des correctifs de sécurité, de la compatibilité logicielle et du support éditeur. Si votre distribution est en **fin de vie (EOL)**, planifiez une **mise à niveau** ou une **migration** vers une version encore supportée.
 
-Pour connaître les dates de fin de vie et de fin de support des images et des OS (VPS & Public Cloud), consultez notre guide « [Public Cloud & VPS - Cycle de vie et annonces de fin de vie/support des images et distributions](/pages/bare_metal_cloud/virtual_private_servers/image-life-cycle) ».
+Pour connaître les dates de fin de vie et de fin de support des images et des OS (VPS & Public Cloud), consultez notre guide « [Public Cloud & VPS - Cycle de vie et annonces de fin de vie/support des images et distributions](/pages/public_cloud/compute/image-life-cycle) ».
 
 ## Aller plus loin
 

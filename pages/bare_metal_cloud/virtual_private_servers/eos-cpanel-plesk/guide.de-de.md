@@ -93,7 +93,7 @@ Wenn Sie keinen neuen VPS bereitstellen können, können Sie bestimmte Tools ver
 
 Unabhängig von Plesk/cPanel ist es wichtig, das Betriebssystem Ihres VPS auf dem neuesten Stand zu halten, um Sicherheitsupdates, Softwarekompatibilität und Herstellersupport zu erhalten. Wenn Ihre Distribution **End-of-Life (EOL)** ist, planen Sie eine **Aktualisierung** oder eine **Migration** auf eine weiterhin unterstützte Version.
 
-Um die Terminierung von End-of-Life und End-of-Support für Images und Betriebssysteme (VPS & Public Cloud) zu erfahren, konsultieren Sie: "[Public Cloud & VPS - Lebenszyklus und End-of-Life-/Support für Images und Distributionen](/pages/bare_metal_cloud/virtual_private_servers/image-life-cycle)".
+Um die Terminierung von End-of-Life und End-of-Support für Images und Betriebssysteme (VPS & Public Cloud) zu erfahren, konsultieren Sie: "[Public Cloud & VPS - Lebenszyklus und End-of-Life-/Support für Images und Distributionen](/pages/public_cloud/compute/image-life-cycle)".
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

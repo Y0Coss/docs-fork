@@ -93,7 +93,7 @@ Se non riesci a creare un nuovo VPS, è possibile utilizzare alcuni strumenti pe
 
 Indipendentemente da Plesk/cPanel, è essenziale **mantenere aggiornato il sistema operativo del VPS** per beneficiare degli aggiornamenti di sicurezza, della compatibilità software e del supporto del produttore. Se la tua distribuzione è in **fine vita (EOL)**, pianifica un **aggiornamento** o una **migrazione** verso una versione ancora supportata.
 
-Per conoscere le date di fine vita e di fine supporto delle immagini e dei sistemi operativi (VPS & Public Cloud), consulta la nostra guida "[Public Cloud & VPS - Ciclo di vita e annunci di fine vita e supporto per immagini e distribuzioni](/pages/bare_metal_cloud/virtual_private_servers/image-life-cycle)".
+Per conoscere le date di fine vita e di fine supporto delle immagini e dei sistemi operativi (VPS & Public Cloud), consulta la nostra guida "[Public Cloud & VPS - Ciclo di vita e annunci di fine vita e supporto per immagini e distribuzioni](/pages/public_cloud/compute/image-life-cycle)".
 
 ## Per saperne di più <a name="go-further"></a>
 
