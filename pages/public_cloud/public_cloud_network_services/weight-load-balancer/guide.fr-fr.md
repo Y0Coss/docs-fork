@@ -1,7 +1,7 @@
 ---
 title : "Utiliser la fonctionnalité de poids sur un membre du Load Balancer"
 excerpt: "Découvrez comment ajuster le poids d'un membre du Load Balancer"
-updated: 2025-09-30
+updated: 2025-10-01
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Ce guide explique comment utiliser la fonctionnalité de poids pour supprimer te
 
 Octavia prend en charge la configuration du poids des membres de 0 à 256.
 
-> [!info]
+> [!primary]
 >
 > Le poids d'un membre détermine la portion des requêtes ou des connexions qu'il traite par rapport aux autres membres du pool. Un poids plus élevé signifie qu'il recevra plus de trafic.
 > Par exemple, un membre avec un poids de 10 reçoit cinq fois plus de trafic qu'un membre avec un poids de 2.
@@ -26,11 +26,11 @@ En définissant le poids sur 0, le membre est effectivement retiré du pool de t
 - Un [compte OVHcloud actif](/links/manager).
 - Un [projet Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 - Un [Load Balancer configuré avec plusieurs membres](/pages/network/load_balancer/create_http_https).
-- [CLI OpenStack installé et configuré](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- La [CLI OpenStack installée et configurée](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
 
-## Instructions
+## En pratique
 
-### Étape 1 : Créer un Load Balancer avec deux membres
+### Étape 1 - Créer un Load Balancer avec deux membres
 
 Utilisez le référentiel suivant pour créer un Load Balancer avec deux membres :
 
@@ -54,49 +54,48 @@ Les réponses des deux membres doivent être alternées :
 <html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHCloud load balancer member #0 !</h1></body></html>
 ```
 
-### Étape 2 : Définir le poids d'un membre sur 0
+### Étape 2 - Définir le poids d'un membre sur 0
 
 > [!tabs]
-> **API OVHcloud**
->> Connectez-vous à l’interface APIv6 d’OVHcloud selon le guide correspondant ([Premiers pas avec l’API OVHcloud](/pages/manage_and_operating/api/first-steps)).
+> API OVHcloud
+>> Connectez-vous à l’interface APIv6 d’OVHcloud en utilisant ce guide de [premiers pas avec l’API OVHcloud](/pages/manage_and_operating/api/first-steps).
 >>
 >> Si l'identifiant du projet est inconnu, les appels d'API ci-dessous permettent de le récupérer.
+>>
+>> Cet appel permet de récupérer la liste des projets:
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project
 >>
->> Cet appel permet de récupérer la liste des projets.
+>> Cet appel identifie le projet via le champ « description ».
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}
 >>
->> Cet appel identifie le projet via le champ « description ».
+>> L'appel ci-dessous permet de récupérer l'identifiant du pool. Complétez les champs avec les informations précédemment obtenues :
+>>
+>> - **serviceName** : ID du projet Public Cloud sous la forme d'une chaîne de 32 caractères.
+>> - **regionName** : nom de votre région.
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool
 >> >
->> Cet appel permet de récupérer l'identifiant du pool, complétez les champs avec les informations précédemment obtenues :
->>
->> **serviceName** : ID du projet Public Cloud sous la forme d'une chaîne de 32 caractères.
->>
->> **regionName** : nom de votre région.
 >>
 >> Vous pouvez laisser le champ « loadbalancerId » vide afin d'obtenir tous les pools créés dans la région spécifiée.
+>>
+>> L'appel ci-dessous permet de récupérer l'identifiant du membre (member), complétez les champs avec les informations précédemment obtenues :
+>>
+>> - **serviceName** : ID du projet Public Cloud sous la forme d'une chaîne de 32 caractères.
+>> - **regionName** : nom de votre région.
+>> - **poolId** : ID du pool sous la forme d'une chaîne de 32 caractères.
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member
 >> >
->> Cet appel permet de récupérer l'identifiant du membre (member), complétez les champs avec les informations précédemment obtenues :
->>
->> **serviceName** : ID du projet Public Cloud sous la forme d'une chaîne de 32 caractères.
->>
->> **regionName** : nom de votre région.
->>
->> **poolId** : ID du pool sous la forme d'une chaîne de 32 caractères.
 >>
 >> Vous pouvez mettre à jour un membre du pool avec l'appel API suivant :
 >>
@@ -106,24 +105,22 @@ Les réponses des deux membres doivent être alternées :
 >>
 >> Remplissez les champs avec les informations précédemment obtenues :
 >>
->> **serviceName** : ID du projet Public Cloud sous la forme d'une chaîne de 32 caractères.
->>
->> **regionName** : nom de votre région.
->>
->> **poolId** : ID du pool sous la forme d'une chaîne de 32 caractères.
->>
->> **memberId** : ID de membre sous forme de chaîne de 32 caractères.
->>
->> **weight** : Définissez le poids sur 0. Cliquez sur `Execute`{.action}.
+>> - **serviceName** : ID du projet Public Cloud sous la forme d'une chaîne de 32 caractères.
+>> - **regionName** : nom de votre région.
+>> - **poolId** : ID du pool sous la forme d'une chaîne de 32 caractères.
+>> - **memberId** : ID de membre sous forme de chaîne de 32 caractères.
+>> - **weight** : Définissez le poids sur 0.
+>> 
+>> Cliquez sur `Execute`{.action}.
 >>
 >> ![public-cloud](images/member-api-update.png){.thumbnail width="800"}
 >>
-> **Horizon**
+> Horizon
 >>
 >> Il existe deux façons d'accéder à l'interface Horizon :
 >>
->> - Pour vous connecter avec l'authentification unique OVHcloud : utilisez le lien `Horizon`{.action} dans le menu de gauche sous « Interfaces de gestion » après avoir ouvert votre projet `Public Cloud`{.action} dans l'[espace client OVHcloud](/links/manager).
->> - Pour vous connecter avec un utilisateur OpenStack spécifique : ouvrez la [page de connexion à Horizon](https://horizon.cloud.ovh.net/auth/login/) et entrez les [identifiants de l'utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) précédemment créées, puis cliquez sur `Se connecter`{.action}.
+>> - Pour vous connecter avec l'authentification unique OVHcloud (SSO) : utilisez le lien `Horizon`{.action} dans le menu de gauche sous « Interfaces de gestion » après avoir ouvert votre projet `Public Cloud`{.action} dans l'[espace client OVHcloud](/links/manager).
+>> - Pour vous connecter avec un utilisateur OpenStack spécifique : ouvrez la [page de connexion à Horizon](https://horizon.cloud.ovh.net/auth/login/) et entrez les [identifiants de l'utilisateur OpenStack](/pages/public_cloud/public_cloud_cross_functional/create_and_delete_a_user) précédemment créé, puis cliquez sur `Se connecter`{.action}.
 >>
 >> Sélectionnez la région appropriée dans le menu déroulant en haut à gauche.
 >>
@@ -131,19 +128,19 @@ Les réponses des deux membres doivent être alternées :
 >>
 >> Cliquez sur le load balancer concerné.
 >>
->> Dans l'onglet, cliquez sur `Pools`{.action} puis sur `pool`{.action} dans lequel se trouve le membre.
+>> Dans l'onglet, cliquez sur `Pools`{.action} puis sur le `pool`{.action} dans lequel se trouve le membre.
 >>
 >> ![public-cloud](images/pool-tab.png){.thumbnail}
 >>
->> Dans l'onglet, cliquez sur `Membres`{.action} puis sur `Edit Member`{.action}.
+>> Dans l'onglet, cliquez sur `Members`{.action} puis sur `Edit Member`{.action}.
 >>
 >> ![Mettre à jour le tableau de bord Openstack membre](images/update-member_openstack_dashboard-1.png){.thumbnail}
 >>
->> Modifiez le `Poids` (`Weight`) à 0, puis cliquer sur `Update`{.action}.
+>> Modifiez le poids (`Weight`) à 0, puis cliquer sur `Update`{.action}.
 >>
 >> ![Update weight](images/update-weight.png){.thumbnail}
 >>
-> **CLI**
+> CLI
 >> Pour empêcher le trafic d'être routé vers un membre spécifique, définissez son poids sur 0 :
 >>
 >> ```bash
@@ -151,7 +148,7 @@ Les réponses des deux membres doivent être alternées :
 >> ```
 >>
 
-### Étape 3 : Vérifier le statut du membre
+### Étape 3 - Vérifier le statut du membre
 
 Après avoir défini le poids du membre sur 0, son statut passe de **ONLINE** à **DRAINING**.
 
@@ -164,17 +161,17 @@ Cela peut être déroutant car certains utilisateurs s'attendent à un statut fi
 - **DRAINING** signifie simplement que le membre ne reçoit plus de trafic, et non pas qu'il draine toujours activement le trafic.
 - L'état **DRAINED** n'est pas encore pris en charge par l'API OpenStack actuelle.
 
-Si avoir un statut final **DRAINED** est critique pour vos opérations, il est recommandé de soumettre une demande de fonctionnalité à OVHcloud pour cette fonctionnalité lors d'une prochaine mise à jour. Cependant, cela ne sera possible qu'une fois cette fonctionnalité prise en charge par OpenStack.
+Si avoir un statut final **DRAINED** est critique pour vos opérations, il est recommandé de [soumettre une demande de fonctionnalité à OVHcloud](https://github.com/ovh/public-cloud-roadmap) pour cette fonctionnalité lors d'une prochaine mise à jour. Cependant, cela ne sera possible qu'une fois cette fonctionnalité prise en charge par OpenStack.
 
 > [!tabs]
-> **API OVHcloud**
+> API OVHcloud
 >> Utilisez l'appel API suivant :
 >>
 >> > [!api]
 >> >
 >> > @api {v1} /cloudPUT /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member/{memberId}
 >>
-> **Horizon**
+> Horizon
 >>
 >> Pour vérifier l'état du membre, cliquez sur `Network`{.action} dans l'onglet de gauche puis sur `Load Balancers`{.action}.
 >> 
@@ -182,11 +179,11 @@ Si avoir un statut final **DRAINED** est critique pour vos opérations, il est r
 >>
 >> Dans l'onglet, cliquez sur `Pools`{.action} puis sur le `pool`{.action} dans lequel se trouve le membre.
 >>
->> Cliquez sur l'onglet `Membres`{.action} :
+>> Cliquez sur l'onglet `Members`{.action} :
 >>
 >> ![Mettre à jour le poids](images/member-status-draining.png){.thumbnail}
 >>
-> **CLI**
+> CLI
 >> Vous pouvez vérifier l'état du membre à l'aide de la commande suivante :
 >>
 >> ```bash
@@ -204,7 +201,7 @@ Si avoir un statut final **DRAINED** est critique pour vos opérations, il est r
 >> ---------------------------------------------------------------------------------------------------
 >> ```
 >>
-> **Terraform**
+> Terraform
 >>
 >> Créez un fichier `.tf` pour gérer une ressource de membres V2 dans OpenStack. Par exemple :
 >>
@@ -222,25 +219,25 @@ Si avoir un statut final **DRAINED** est critique pour vos opérations, il est r
 >>  protocol_port = 8080
 >>  weight = 1
 >>  }
->>}
+>> }
 >> ```
 >>
 >> Remplacez `<POOL_ID>` par l'ID de votre Pool. Pour plus de détails sur les options disponibles pour cette ressource, référez-vous à la [documentation officielle](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_monitor_v2) pour la ressource `openstack_lb_monitor_v2` sur le registre Terraform.
 >>
 >> **Application de la configuration**
 >>
->> To apply your Terraform configuration:
->>
->> - Run `terraform init` to initialize the Terraform working directory.
->> - Run `terraform apply` to apply the changes defined in your configuration.
+>> Pour appliquer votre configuration Terraform :
+>> 
+>> - Exécutez `terraform init` pour initialiser le répertoire de travail Terraform.
+>> - Exécutez `terraform apply` pour appliquer les modifications définies dans votre configuration.
 >>
 >> **Vérification**
 >>
 >> Après avoir exécuté `terraform apply`, Terraform vous fournira un résumé des ressources créées, modifiées ou supprimées. Ceci confirme la création ou la mise à jour de votre moniteur d'intégrité.
 
-### Étape 4 : Confirmer que le trafic est dirigé vers le membre actif
+### Étape 4 - Confirmer que le trafic est dirigé vers le membre actif
 
-Le membre dont le poids est égal à 0 aura un État de fonctionnement (*Operating Status*) `Draining`. Exécutez à nouveau le script de test :
+Le membre dont le poids est égal à 0 aura un état de fonctionnement (*Operating Status*) `Draining`. Exécutez à nouveau le script de test :
 
 ```bash
 #!/bin/sh
@@ -257,57 +254,18 @@ Vous ne devriez maintenant voir que les réponses de `member_1` :
 <html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
 ```
 
-### Étape 5 : Effectuez la maintenance
+### Étape 5 - Effectuer la maintenance
 
 Maintenant que `member_0` ne reçoit plus de trafic, vous pouvez effectuer en toute sécurité des tâches de maintenance ou de mise à niveau.
 
-### Étape 6 : Restaurer le trafic vers le membre
+### Étape 6 - Restaurer le trafic vers le membre
 
 Une fois la maintenance terminée, réglez le poids de `member_0` sur sa valeur d'origine (par exemple, 1) :
 
 > [!tabs]
-> **API OVHcloud**
->> Connectez-vous à l’interface APIv6 d’OVHcloud selon le guide correspondant ([Premiers pas avec l’API OVHcloud](/pages/manage_and_operating/api/first-steps)).
+> API OVHcloud
 >>
->> Si l'identifiant du projet est inconnu, les appels d'API ci-dessous permettent de le récupérer.
->>
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project
->>
->> Cet appel permet de récupérer la liste des projets.
->>
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}
->>
->> Cet appel identifie le projet via le champ « description ».
->>
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool
->> >
->> Cet appel permet de récupérer l'identifiant du pool, complétez les champs avec les informations précédemment obtenues :
->>
->> **serviceName** : ID du projet Public Cloud sous la forme d'une chaîne de 32 caractères.
->>
->> **regionName** : nom de votre région.
->>
->> Vous pouvez laisser le champ « loadbalancerId » vide afin d'obtenir tous les pools créés dans la région spécifiée.
->> 
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member
->> >
->> Cet appel permet de récupérer l'identifiant du membre, complétez les champs avec les informations précédemment obtenues :
->>
->> **serviceName** : ID du projet Public Cloud sous la forme d'une chaîne de 32 caractères.
->>
->> **regionName** : nom de votre région.
->>
->> **poolId** : ID du pool sous la forme d'une chaîne de 32 caractères.
->>
->> Pour mettre à jour le poids, utilisez l'appel API suivant :
+>> Vous pouvez mettre à jour un membre du pool avec l'appel API suivant :
 >>
 >> > [!api]
 >> >
@@ -315,19 +273,17 @@ Une fois la maintenance terminée, réglez le poids de `member_0` sur sa valeur 
 >>
 >> Remplissez les champs avec les informations précédemment obtenues :
 >>
->> **serviceName** : ID du projet Public Cloud sous la forme d'une chaîne de 32 caractères.
+>> - **serviceName** : ID du projet Public Cloud sous la forme d'une chaîne de 32 caractères.
+>> - **regionName** : nom de votre région.
+>> - **poolId** : ID du pool sous la forme d'une chaîne de 32 caractères.
+>> - **memberId** : ID de membre sous forme de chaîne de 32 caractères.
+>> - **weight** : Définissez le poids sur 1. 
 >>
->> **regionName** : nom de votre région.
+>> Cliquez sur `Execute`{.action}.
 >>
->> **poolId** : ID du pool sous la forme d'une chaîne de 32 caractères.
+>> ![public-cloud](images/member-api-update.png){.thumbnail width="800"}
 >>
->> **memberId** : ID de membre sous forme de chaîne de 32 caractères.
->>
->> **weight** : Définissez le poids sur 1. Cliquez sur `Execute`{.action}.
->>
->> ![public-cloud](images/member-api-update-1.png){.thumbnail width="800"}
->>
-> **Horizon**
+> Horizon
 >>
 >> Connectez-vous à l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
 >>
@@ -349,7 +305,7 @@ Une fois la maintenance terminée, réglez le poids de `member_0` sur sa valeur 
 >>
 >> ![public-cloud](images/update-member-3-OpenStack_dashboard.png){.thumbnail width="800"}
 >>
-> **CLI**
+> CLI
 >>
 >> Pour restaurer le trafic routé vers un membre spécifique, définissez son poids sur 1 :
 >>
@@ -357,7 +313,7 @@ Une fois la maintenance terminée, réglez le poids de `member_0` sur sa valeur 
 >> $ openstack loadbalancer member set --weight 1 <pool> <member_0>
 >> ```
 >>
-> **Terraform**
+> Terraform
 >>
 >> Créez un fichier `.tf` pour gérer une ressource de membres V2 dans OpenStack. Par exemple :
 >>
@@ -375,7 +331,7 @@ Une fois la maintenance terminée, réglez le poids de `member_0` sur sa valeur 
 >>  protocol_port = 8080
 >>  weight = 1
 >>  }
->>}
+>> }
 >> ```
 >>
 >> Remplacez `<POOL_ID>` par l'ID de votre Pool. Pour plus de détails sur les options disponibles pour cette ressource, référez-vous à la [documentation officielle](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_monitor_v2) pour la ressource `openstack_lb_monitor_v2` sur le registre Terraform.
@@ -391,9 +347,9 @@ Une fois la maintenance terminée, réglez le poids de `member_0` sur sa valeur 
 >>
 >> Après avoir exécuté `terraform apply`, Terraform vous fournira un résumé des ressources créées, modifiées ou supprimées. Cela confirme la création ou la mise à jour de votre Health Monitor.
 
-### Étape 7 : Vérifier que les deux membres reçoivent bien le trafic
+### Étape 7 - Vérifier que les deux membres reçoivent bien le trafic
 
-Réutiliser le script :
+Réutilisez le script :
 
 ```bash
 #!/bin/sh
