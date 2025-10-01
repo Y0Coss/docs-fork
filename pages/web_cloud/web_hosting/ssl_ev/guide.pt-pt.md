@@ -134,7 +134,7 @@ Clique nos separadores abaixo para exibir sucessivamente cada um dos **6** passo
 >> ![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 >>
 >> Clique em `Continuer`{.action} depois de **todos os elementos** estarem corretamente inseridos.
-
+>>
 Continue a encomenda até ao pagamento para validar o pedido de criação do certificado SSL.
 
 > [!alert]
