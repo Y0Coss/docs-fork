@@ -10,7 +10,7 @@ L'objectif de ce guide est de vous aider à mieux comprendre l'infrastructure An
 
 ## Prérequis
 
-- Au moins un [serveur dédié Bare Metal](/links/bare-metal/bare-metal) de la gamme Advance, Scale ou High Grade qui respecte les exigences matérielles spécifiques de la Blockchain souhaitée.
+- Au moins un [serveur dédié Bare Metal](/links/bare-metal/bare-metal) qui respecte les exigences matérielles spécifiques de la Blockchain souhaitée.
 
 ## Introduction à la Blockchain
 
@@ -22,7 +22,11 @@ Dans certains cas, les pics de communication peuvent déclencher l'infrastructur
 
 ## En pratique
 
-Pour éviter que votre trafic réseau ne soit suspecté ou bloqué par l'infrastructure Anti-DDoS (en tant que détection de faux positifs), nous vous recommandons fortement de signaler les adresses IP de vos nœuds à nos équipes de support. Cela permettra de créer un profil Solana personnalisé pour une meilleure protection et une fonctionnalité ininterrompue. Veuillez remplir un ticket de demande de support en listant les adresses IPv4 de vos nœuds Blockchain.
+Pour éviter que votre trafic réseau ne soit suspecté ou bloqué par l'infrastructure Anti-DDoS (en tant que détection de faux positifs), nous vous recommandons fortement de signaler les adresses IP de vos nœuds à nos équipes de support. Cela permettra de créer un profil Solana personnalisé pour une meilleure protection et une fonctionnalité ininterrompue. 
+
+Pour commencer, veuillez remplir un [ticket de demande d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help) avec les options suivantes : Incident -> IP publique -> [x] Ce service n'est pas répertorié -> Créer une demande d'assistance -> `Suivant`{.action}.
+
+Ensuite, veuillez renseigner le champ `brève description` avec **"Blockchain XXXX Anti-DDoS tuning"** (où XXXX est le nom de la Blockchain spécifique), puis lister les adresses IPv4 de vos nœuds Blockchain, leurs ports, les types de serveurs qui hébergent les nœuds et la taille de votre cluster (le nombre approximatif de clients connectés) dans la description du problème.
 
 Veuillez noter que dans le futur, vous pourrez contrôler le comportement Anti-DDoS directement via notre panneau de contrôle.
 
