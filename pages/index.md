@@ -1213,6 +1213,7 @@
                 + [AI Endpoints - Structured Output](public_cloud/ai_machine_learning/endpoints_guide_05_structured_output)
                 + [AI Endpoints - Function Calling](public_cloud/ai_machine_learning/endpoints_guide_06_function_calling)
                 + [AI Endpoints - Virtual Models](public_cloud/ai_machine_learning/endpoints_guide_07_virtual_models)
+                + [AI Endpoints - Speech to Text](public_cloud/ai_machine_learning/endpoints_guide_08_audio_transcriptions)
             + [Tutorials](public-cloud-ai-and-machine-learning-ai-endpointstutorials)
                 + [AI Endpoints - Create your own audio summarizer](public_cloud/ai_machine_learning/endpoints_tuto_01_audio_summarizer)
                 + [AI Endpoints - Create your own voice assistant](public_cloud/ai_machine_learning/endpoints_tuto_02_voice_virtual_assistant)
