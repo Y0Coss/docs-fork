@@ -1,7 +1,7 @@
 ---
 title: "How to React to abnormal activity detected on your web hosting"
 excerpt: "Discover the steps to follow when abnormal activity is detected on your OVHcloud web hosting"
-updated: 2025-09-30
+updated: 2025-10-01
 ---
 
 ## Objective
