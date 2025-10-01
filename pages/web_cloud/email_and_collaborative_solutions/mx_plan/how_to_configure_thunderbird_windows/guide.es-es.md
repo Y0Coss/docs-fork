@@ -148,7 +148,7 @@ OVHcloud también ofrece una aplicación web para acceder a su dirección de cor
 
 ### Recuperar una copia de seguridad de su dirección de correo electrónico
 
-Si debe realizar una operación que podría provocar la pérdida de datos de su cuenta de correo, le recomendamos hacer una copia de seguridad previa de la cuenta de correo afectada. Para ello, consulte el apartado "**Exportar** " en la sección "**Thunderbird** " de nuestra guía "[Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter) ".
+Si debe realizar una operación que podría provocar la pérdida de datos de su cuenta de correo, le recomendamos hacer una copia de seguridad previa de la cuenta de correo afectada. Para ello, consulte el apartado "**Exportar** " en la sección "**Thunderbird** " de nuestra guía "[Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ".
 
 ### Modificar los ajustes existentes
 

@@ -148,7 +148,7 @@ OVHcloud oferuje również aplikację internetową umożliwiającą dostęp do a
 
 ### Przywracanie kopii zapasowej adresu e-mail
 
-Jeśli musisz wykonać operację, która może spowodować utratę danych konta e-mail, zalecamy wykonanie kopii zapasowej przed kontem e-mail. Aby to zrobić, skorzystaj z sekcji "**Eksportuj** " w części "**Thunderbird** " naszego przewodnika "[Ręczne migracja adresu e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter) ".
+Jeśli musisz wykonać operację, która może spowodować utratę danych konta e-mail, zalecamy wykonanie kopii zapasowej przed kontem e-mail. Aby to zrobić, skorzystaj z sekcji "**Eksportuj** " w części "**Thunderbird** " naszego przewodnika "[Ręczne migracja adresu e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ".
 
 ### Modyfikacja istniejących ustawień
 

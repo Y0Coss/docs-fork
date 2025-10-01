@@ -30,14 +30,14 @@ Konta E-mail Pro można skonfigurować w różnych kompatybilnych programach poc
 ## Wymagania początkowe
 
 - Posiadanie adresu [E-mail Pro](/links/web/email-pro).
-- Zainstalowanie programu Thunderbird na swoim Macu.
+- Zainstalowanie programu Thunderbird na swoim Mac.
 - Posiadanie danych logowania do adresu e-mail, który chcesz skonfigurować.
 
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
 Ten przewodnik pokazuje, jak korzystać z rozwiązań OVHcloud z zewnętrznymi narzędziami oraz jakie zmiany są wymagane w konkretnych sytuacjach. Możesz musieć dostosować instrukcje do swojej sytuacji.
 
-Jeśli napotkasz trudności w wykonaniu tych czynności, polecamy kontakt z [specjalistycznym dostawcą usług](/links/partner) i/lub dyskusję z naszą społecznością. OVHcloud nie może udzielać wsparcia technicznego w zakresie korzystania z narzędzi zewnętrznych. Więcej informacji znajdziesz w sekcji [Dowiedz się więcej](#gofurther) tego przewodnika.
+Jeśli napotkasz trudności w wykonaniu tych czynności, polecamy kontakt z [specjalistycznym dostawcą usług](/links/partner) i/lub dyskusję z naszą społecznością. OVHcloud nie może udzielać wsparcia technicznego w zakresie korzystania z narzędzi zewnętrznych. Więcej informacji znajdziesz w sekcji [Sprawdź równieżj](#gofurther) tego przewodnika.
 
 ///
 
@@ -51,7 +51,7 @@ Jeśli napotkasz trudności w wykonaniu tych czynności, polecamy kontakt z [spe
 > 1. Przejdź do sekcji `Web Cloud`{.action}.
 > 1. Kliknij `E-mail Pro`{.action}.
 > 1. Wybierz odpowiednią platformę.
-> 1. Nazwa serwera jest widoczna w sekcji **Połączenie** karty `Informacje ogólne`{.action}.
+> 1. Nazwa serwera jest widoczna w sekcji **Logowanie** karty `Informacje ogólne`{.action}.
 
 ### Dodanie konta
 
@@ -109,8 +109,8 @@ Postępuj zgodnie z krokami konfiguracji, klikając kolejno poniższe **5** kart
 >>  - **Metoda uwierzytelniania**: Normalne hasło
 >>  - **Nazwa użytkownika**: Pełny adres e-mail
 >> 
->> 1\. Kliknij `Testuj`{.action}, aby zweryfikować wprowadzone ustawienia.<br>
->> 2\. Kliknij `Dalej`{.action}, aby potwierdzić te ustawienia.
+>> 1. Kliknij `Testuj`{.action}, aby zweryfikować wprowadzone ustawienia.
+>> 2. Kliknij `Dalej`{.action}, aby potwierdzić te ustawienia.
 >>
 >> ![thunderbird](images/configuration-thunderbird-emp-05.png){.thumbnail .w-600}
 >>
@@ -144,7 +144,7 @@ OVHcloud oferuje również aplikację internetową umożliwiającą dostęp do a
 
 ### Tworzenie kopii zapasowej adresu e-mail
 
-Jeśli musisz wykonać operację, która może spowodować utratę danych konta e-mail, zalecamy utworzenie kopii zapasowej konta e-mail przed wykonaniem tej operacji. Aby to zrobić, skorzystaj z sekcji „**Eksport**” w części „**Thunderbird**” naszego przewodnika „[Ręczna migracja adresu e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter)”.
+Jeśli musisz wykonać operację, która może spowodować utratę danych konta e-mail, zalecamy utworzenie kopii zapasowej konta e-mail przed wykonaniem tej operacji. Aby to zrobić, skorzystaj z sekcji „**Eksport**” w części „**Thunderbird**” naszego przewodnika „[Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)”.
 
 ### Modyfikacja istniejących ustawień
 
@@ -170,7 +170,7 @@ Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do ustawi
 >
 > Aby uzyskać więcej informacji na temat konfiguracji adresu e-mail w kliencie poczty e-mail Thunderbird, odwiedź [centrum pomocy Mozilli](https://support.mozilla.org/products/thunderbird).
 
-[Pierwsze kroki z rozwiązaniami E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+[Konfiguracja konta E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

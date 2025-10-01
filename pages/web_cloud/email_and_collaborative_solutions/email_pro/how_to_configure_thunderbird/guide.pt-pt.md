@@ -37,7 +37,7 @@ As contas E-mail Pro podem ser configuradas em diferentes softwares de e-mail co
 
 Este guia mostra como utilizar soluções OVHcloud com ferramentas externas e as modificações necessárias em contextos específicos. Pode ser necessário adaptar as instruções de acordo com sua situação.
 
-Se você tiver dificuldades ao executar estas operações, recomendamos que entre em contato com um [fornecedor de serviços especializado](/links/partner) e/ou discuta com nossa comunidade. A OVHcloud não pode fornecer suporte técnico sobre o uso de ferramentas externas. Mais informações na seção [Ir mais longe](#gofurther) deste guia.
+Se você tiver dificuldades ao executar estas operações, recomendamos que entre em contato com um [fornecedor de serviços especializado](/links/partner) e/ou discuta com nossa comunidade. A OVHcloud não pode fornecer suporte técnico sobre o uso de ferramentas externas. Mais informações na seção [Quer saber mais?](#gofurther) deste guia.
 
 ///
 
@@ -51,7 +51,7 @@ Se você tiver dificuldades ao executar estas operações, recomendamos que entr
 > 1. Acesse a seção `Web Cloud`{.action}.
 > 1. Clique em `E-mail Pro`{.action}.
 > 1. Selecione a plataforma desejada.
-> 1. O nome do servidor está visível na seção **Conexão** da aba `Informações Gerais`{.action}.
+> 1. O nome do servidor está visível na seção **Ligação** da aba `Informações gerais`{.action}.
 
 ### Adicionar a conta
 
@@ -109,8 +109,8 @@ Siga as etapas de configuração clicando sucessivamente nas seguintes **5** aba
 >>  - **Método de autenticação**: Senha normal
 >>  - **Nome de usuário**: Seu endereço de e-mail completo
 >> 
->> 1\. Clique em `Testar`{.action} para verificar as configurações inseridas.<br>
->> 2\. Clique em `Avançar`{.action} para confirmar estas configurações.
+>> 1. Clique em `Testar`{.action} para verificar as configurações inseridas.
+>> 2. Clique em `Avançar`{.action} para confirmar estas configurações.
 >>
 >> ![thunderbird](images/configuration-thunderbird-emp-05.png){.thumbnail .w-600}
 >>
@@ -144,7 +144,7 @@ A OVHcloud também oferece uma aplicação web para acessar seu endereço de e-m
 
 ### Criar um backup de seu endereço de e-mail
 
-Se você precisar realizar uma operação que possa causar a perda de dados de sua conta de e-mail, recomendamos que crie um backup prévio da conta de e-mail afetada. Para isso, consulte a seção "**Exportar**" na parte "**Thunderbird**" de nosso guia "[Migração manual de seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter)".
+Se você precisar realizar uma operação que possa causar a perda de dados de sua conta de e-mail, recomendamos que crie um backup prévio da conta de e-mail afetada. Para isso, consulte a seção "**Exportar**" na parte "**Thunderbird**" de nosso guia "[Migrar manualmente o seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modificar as configurações existentes
 

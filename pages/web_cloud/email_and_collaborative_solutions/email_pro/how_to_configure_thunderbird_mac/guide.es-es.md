@@ -1,6 +1,6 @@
 ---
-title: 'E-mail Pro - Configurar su dirección de correo electrónico en Thunderbird para macOS'
-excerpt: 'Aprenda a configurar su dirección de correo electrónico E-mail Pro en Thunderbird para macOS'
+title: 'Email Pro - Configurar su dirección de correo electrónico en Thunderbird para macOS'
+excerpt: 'Descubra cómo configurar su dirección de correo electrónico Email Pro en Thunderbird para macOS'
 updated: 2025-09-19
 ---
 
@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 Las cuentas de Email Pro se pueden configurar en diferentes clientes de correo electrónico compatibles. Esto le permite utilizar su dirección de correo electrónico desde el dispositivo de su elección. Thunderbird es un cliente de correo electrónico libre y gratuito.
 
-**Aprenda a configurar su dirección de correo electrónico E-mail Pro en Thunderbird para macOS.**
+**Aprenda a configurar su dirección de correo electrónico Email Pro en Thunderbird para macOS.**
 
 ## Requisitos
 
@@ -37,7 +37,7 @@ Las cuentas de Email Pro se pueden configurar en diferentes clientes de correo e
 
 Esta guía le muestra cómo utilizar soluciones de OVHcloud con herramientas externas y los cambios que debe realizar en contextos específicos. Es posible que deba adaptar las instrucciones según su situación.
 
-Si tiene dificultades para realizar estas operaciones, le recomendamos que contacte a un [proveedor de servicios especializado](/links/partner) y/o que discuta con nuestra comunidad. OVHcloud no puede proporcionarle asistencia técnica sobre el uso de herramientas externas. Más información en la sección [Ir más allá](#go-further) de esta guía.
+Si tiene dificultades para realizar estas operaciones, le recomendamos que contacte a un [proveedor de servicios especializado](/links/partner) y/o que discuta con nuestra comunidad. OVHcloud no puede proporcionarle asistencia técnica sobre el uso de herramientas externas. Más información en la sección [Más información](#go-further) de esta guía.
 
 ///
 
@@ -47,7 +47,7 @@ Si tiene dificultades para realizar estas operaciones, le recomendamos que conta
 >
 > En nuestro ejemplo, utilizamos la mención del servidor: pro?.mail.ovh.net. Debe reemplazar el "?" con el número que designa el servidor de su servicio de Email Pro.
 >
-> 1. Inicie sesión en su [panel de control de OVHcloud](/links/manager).
+> 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
 > 1. Vaya a la sección `Web Cloud`{.action}.
 > 1. Haga clic en `Email Pro`{.action}.
 > 1. Seleccione la plataforma correspondiente.
@@ -109,7 +109,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en las **5** pesta�
 >>  - **Método de autenticación**: Contraseña normal
 >>  - **Nombre de usuario**: Su dirección de correo electrónico completa
 >> 
->> 1. Haga clic en `Probar`{.action} para verificar la configuración ingresada.<br>
+>> 1. Haga clic en `Probar`{.action} para verificar la configuración ingresada.
 >> 2. Haga clic en `Continuar`{.action} para validar esta configuración.
 >>
 >> ![thunderbird](images/configuration-thunderbird-emp-05.png){.thumbnail .w-600}
@@ -144,7 +144,7 @@ OVHcloud también ofrece una aplicación web que le permite acceder a su direcci
 
 ### Recuperar una copia de seguridad de su dirección de correo electrónico
 
-Si debe realizar una operación que pueda resultar en la pérdida de datos de su cuenta de correo electrónico, le recomendamos que cree una copia de seguridad de la cuenta de correo electrónico correspondiente antes de realizar la operación. Para hacer esto, consulte el párrafo "**Exportar**" en la parte "**Thunderbird**" de nuestra guía "[Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter)".
+Si debe realizar una operación que pueda resultar en la pérdida de datos de su cuenta de correo electrónico, le recomendamos que cree una copia de seguridad de la cuenta de correo electrónico correspondiente antes de realizar la operación. Para hacer esto, consulte el párrafo "**Exportar**" en la parte "**Thunderbird**" de nuestra guía "[Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modificar los parámetros existentes
 
@@ -169,9 +169,9 @@ Si su cuenta de correo electrónico ya está configurada y necesita acceder a lo
 
 > [!primary]
 >
-> Para obtener más información sobre la configuración de una dirección de correo electrónico en el cliente de correo electrónico Thunderbird, visite el [Centro de ayuda de Mozilla](https://support.mozilla.org/products/thunderbird).
+> Para obtener más información sobre la configuración de una dirección de correo electrónico en el cliente de correo electrónico Thunderbird, visite el [centro de ayuda de Mozilla](https://support.mozilla.org/products/thunderbird).
 
-[Primeros pasos con la solución de Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+[Primeros pasos con la solución Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 

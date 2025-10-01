@@ -146,7 +146,7 @@ OVHcloud offre anche un'applicazione web che ti permette di accedere al tuo indi
 
 ### Recuperare un backup del tuo indirizzo e-mail
 
-Se devi effettuare un'operazione che potrebbe causare la perdita dei dati del tuo account e-mail, ti consigliamo di effettuare un backup preventivo dell'account e-mail interessato. Per farlo, consulta il paragrafo "**Esportare**" nella sezione "**Thunderbird**" della nostra guida "[Migrare manualmente il tuo indirizzo e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter)".
+Se devi effettuare un'operazione che potrebbe causare la perdita dei dati del tuo account e-mail, ti consigliamo di effettuare un backup preventivo dell'account e-mail interessato. Per farlo, consulta il paragrafo "**Esportare**" nella sezione "**Thunderbird**" della nostra guida "[Migrare manualmente il tuo indirizzo e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modificare le impostazioni esistenti
 

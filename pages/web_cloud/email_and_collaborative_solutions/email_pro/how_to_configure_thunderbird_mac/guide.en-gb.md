@@ -144,7 +144,7 @@ OVHcloud also offers a web application that allows you to access your email addr
 
 ### Retrieve a Backup of Your Email Address
 
-If you need to perform an operation that may result in the loss of data from your email account, we recommend that you create a backup of the email account concerned beforehand. To do this, refer to the "**Export**" section in the "**Thunderbird**" part of our guide "[Manually migrate your email address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporter)".
+If you need to perform an operation that may result in the loss of data from your email account, we recommend that you create a backup of the email account concerned beforehand. To do this, refer to the "**Export**" section in the "**Thunderbird**" part of our guide "[Manually migrate your email address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modify Existing Settings
 
