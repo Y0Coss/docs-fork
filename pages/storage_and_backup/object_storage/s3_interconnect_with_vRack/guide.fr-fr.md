@@ -47,7 +47,7 @@ Pour ce faire, plusieurs moyens existent :
 
 #### Contexte
 
-Tout dabord petit rappel du processus actuel d'évaluations des autorisations utilisateur :
+Tout d'abord, voici un rappel du processus actuel d'évaluation des autorisations utilisateur :
 
 1. si elle existe, évaluer la politique utilisateur sinon se référer aux ACLs
     1. vérifier s'il existe un *Deny* explicite : s'il existe un *Deny* explicite, refuser l'autorisation, sinon, vérifier s'il existe un *Allow* explicite
