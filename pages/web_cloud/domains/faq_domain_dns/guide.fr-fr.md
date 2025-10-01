@@ -1,7 +1,7 @@
 ---
 title: "FAQ sur les noms de domaine & DNS"
 excerpt: "Retrouvez les principales questions posées sur les noms de domaine, les serveurs DNS et les zones DNS"
-updated: 2025-09-29
+updated: 2025-10-02
 ---
 
 <style>
@@ -146,7 +146,7 @@ Suivez ces étapes :
 3. Dans le tableau qui apparaît, recherchez la ligne correspondant à votre nom de domaine, cliquez sur le bouton `...`{.action} à droite, puis sur `Résilier mon service`{.action}.
 4. Sur la page qui s'affiche, remplissez le questionnaire puis cliquez en bas sur le bouton `Valider`{.action}.
 
-Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compter de cette date, il sera supprimé **définitivement** dans un délai maximum de 60 jours. Ce délai est défini par l'**ICANN** (**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers) afin qu'un nom de domaine soit totalement supprimé et de nouveau disponible à l'enregistrement pour un autre propriétaire/titulaire.
+Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compter de cette date, il sera supprimé **définitivement** dans un délai maximum de 60 jours. Ce délai est défini par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin qu'un nom de domaine soit totalement supprimé et de nouveau disponible à l'enregistrement pour un autre propriétaire/titulaire.
 
 > [!primary]
 >
