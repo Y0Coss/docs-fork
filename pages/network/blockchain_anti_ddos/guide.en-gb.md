@@ -24,7 +24,9 @@ In some cases, communication spikes can trigger Anti-DDoS Infrastructure, and le
 
 To avoid having your network traffic suspected or blocked by the Anti-DDoS Infrastructure (as a false positive detection), we strongly recommend to report your nodes IP addresses to our support teams. This way, a custom Solana profile will be created for better protection and uninterrupted functionality. 
 
-To get started, please fill in a [support request ticket](https://help.ovhcloud.com/csm?id=csm_get_help) with the following options : Incident -> Public IP -> [x] This service is not listed -> Create a support request -> `Next`{.action}. Then, fill in the short description with "Blockchain XXXX Anti-DDoS tuning" (where XXXX is the name of the specific Blockchain), then list your Blockchain nodes' IPv4 addresses, their ports, the types of servers that are hosting nodes, and the size of your cluster (the approximate number of clients connected) in the issue description. 
+To get started, please fill in a [support request ticket](https://help.ovhcloud.com/csm?id=csm_get_help) with the following options : Incident -> Public IP -> [x] This service is not listed -> Create a support request -> `Next`{.action}. 
+
+Then, fill in the short description with **"Blockchain XXXX Anti-DDoS tuning"** (where XXXX is the name of the specific Blockchain), then list your Blockchain nodes' IPv4 addresses, their ports, the types of servers that are hosting nodes, and the size of your cluster (the approximate number of clients connected) in the issue description. 
 
 Please note that in the future, you will be able to control Anti-DDoS behaviour directly through our Control Panel.
 
