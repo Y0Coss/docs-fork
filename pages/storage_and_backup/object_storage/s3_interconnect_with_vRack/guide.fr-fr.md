@@ -76,7 +76,7 @@ Dans notre scénario, nous allons autoriser toutes les opérations pour un ensem
   }]
 } 
 ```
-Pour appliquer cette nouvelle politique à votre utilisateur S3, veuillez suivre lles étapes définies dans le guide le guide « [Object Storage - Gestion des identités et des accès](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) », et ainsi finaliser l'interconnexion entre vos ressources Object Storage et celles présentes au sein de votre réseau privé.
+Pour appliquer cette nouvelle politique à votre utilisateur S3, veuillez suivre lles étapes définies dans le guide « [Object Storage - Gestion des identités et des accès](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) », et ainsi finaliser l'interconnexion entre vos ressources Object Storage et celles présentes au sein de votre réseau privé.
 
 ## Aller plus loin
 
