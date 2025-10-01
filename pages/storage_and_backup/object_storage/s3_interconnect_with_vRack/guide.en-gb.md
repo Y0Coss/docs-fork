@@ -39,9 +39,8 @@ Once the Gateway has been created and associated to a vRack Private Network, the
  - Using Object Storage Bucket Policies: The feature is not yet implemented but will be soon available. 
  - Using Object Storage User Policies where you can explicitely whitelist IP ranges that can work with Object Storage resources
 
-#### User Policies
+#### User Policies implementation
 
-#### Context
 First as a quick reminder, here is how today user permissions are evaluated:
 
 1. if exists, evaluate user policy, else fallback to ACLs
@@ -51,8 +50,6 @@ First as a quick reminder, here is how today user permissions are evaluated:
 2. fallback to ACLs
 
 This evaluation process will be subject to change with the upcoming implementation of bucket policies.
-
-#### Implementation
 
 In our scenario,  we will allow all operations to specific IPs by whitelisting them with the following policy statement:
 
