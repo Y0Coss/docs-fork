@@ -311,7 +311,7 @@ Haga clic en las fichas siguientes para ver cada uno de los **5** etapas:
 
 ### Desactivar un certificado SSL en un alojamiento web <a name="delete-ssl"></a>
 
- [!warning]
+> [!warning]
 >
 > **Antes de continuar**, asegúrese de que la eliminación del certificado SSL no desactivará el acceso a sus sitios web. En ese caso, los usuarios encontrarán un error de seguridad al intentar acceder a su sitio web en HTTPS.
 
