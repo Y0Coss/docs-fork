@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Speech to Text
 excerpt: Learn how to transcribe audio files with OVHcloud AI Endpoints
-updated: 2025-09-30
+updated: 2025-10-01
 ---
 
 > [!primary]
@@ -250,7 +250,6 @@ The `diarize` parameter enables speaker separation in the generated transcript. 
 This is useful for meetings, debates, or interviews where multiple people are speaking.
 
 > [!warning]
-> **Warning**: 
 > - This parameter is only available with the default `verbose_json` [response format](#response-formats). Using any other will raise an error.
 > - `diarize` is not supported when using the OpenAI client libraries. You must use a direct HTTP request with `requests`, `cURL`, or another HTTP client.
 
@@ -299,7 +298,7 @@ The `prompt` parameter lets you provide extra context to improve transcription. 
 - **Translate** generated speech to English.
 
 > [!warning]
-> **Warning**: The prompt **must be written in the same language** as the audio. For example, if your audio is in English, your prompt must also be in English.
+> The prompt **must be written in the same language** as the audio. For example, if your audio is in English, your prompt must also be in English.
 
 **Examples**
 
@@ -380,6 +379,7 @@ The `prompt` parameter lets you provide extra context to improve transcription. 
 >>     "prompt": "以下是普通話的句子。"
 >> }
 >> ```
+>
 
 #### Timestamp Granularities
 
@@ -431,7 +431,7 @@ The `timestamp_granularities` parameter controls the level of time markers inclu
 >> ```
 >>
 >> > [!warning]
->> > **Warning**: Generating `["word"]` timestamps incurs additional latency.
+>> > Generating `["word"]` timestamps incurs additional latency.
 >>
 > **Word and segment timestamps**
 >> 
@@ -461,7 +461,7 @@ The `timestamp_granularities` parameter controls the level of time markers inclu
 >> ```
 >>
 >> > [!warning]
->> > **Warning**: Generating `["word"]` timestamps can incur additional latency.
+>> > Generating `["word"]` timestamps can incur additional latency.
 >>
 
 #### Response Formats
@@ -545,8 +545,7 @@ By **default**, when unset, the audio is **processed as a single block**.
 
 When set to `auto`, the system first normalizes audio loudness and then uses voice activity detection (VAD) to automatically split the audio at natural pauses (silence).
 
-You can also provide a `server_vad` object 
-to manually tweak VAD detection parameters. This lets you control the following parameters:
+You can also provide a `server_vad` object to manually tweak VAD detection parameters. This lets you control the following parameters:
 
 - `prefix_padding_ms`: Amount of audio to include before the VAD detected speech (in milliseconds).
 - `silence_duration_ms`: Duration of silence to detect speech stop (in milliseconds). With shorter values the model will respond more quickly, but may jump in on short pauses from the user.
@@ -609,7 +608,9 @@ If your audio file exceeds these limits, you can split it into smaller chunks be
 
 Try to avoid splitting mid-sentence, as this can cause context to be lost and reduce transcription accuracy. Using compressed audio formats can also help reduce file size.
 
-**Example**: Splitting Audio with open-source Python PyDub library:
+**Example**
+
+Splitting Audio with open-source Python PyDub library:
 
 ```python
 from pydub import AudioSegment
@@ -631,7 +632,7 @@ Repeat this process to create multiple chunks, then transcribe each chunk indivi
 
 > [!warning]
 >
-> **Warning**: OVHcloud makes no guarantees about the usability or security of third-party software like PyDub.
+> OVHcloud makes no guarantees about the usability or security of third-party software like PyDub.
 
 ## Conclusion
 
