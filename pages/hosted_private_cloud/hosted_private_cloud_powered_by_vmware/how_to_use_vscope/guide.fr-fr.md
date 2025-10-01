@@ -1,7 +1,7 @@
 ---
 title: "Comprendre l'interface vScope"
 excerpt: "Découvrez comment utiliser l'interface vScope pour surveiller votre infrastructure"
-updated: 2025-09-30
+updated: 2025-10-01
 ---
 
 ## Objectif
@@ -22,17 +22,15 @@ Cette interface web rassemble toutes les informations essentielles sur vos resso
 
 ### Accéder à vScope
 
-1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+1. Dans l’[espace client OVHcloud](/links/manager), cliquez sur `Hosted Private Cloud`{.action}.
 
-2. Cliquez sur `Hosted Private Cloud`{.action}.
+2. Dans le menu de gauche, sélectionnez `Managed VMware vSphere`{.action}.
 
-3. Sélectionnez votre service puis cliquez sur l’icône `vScope`{.action}.
+3. Choisissez votre service PCC.
+
+4. Dans l’onglet `Informations générales`{.action}, descendez puis cliquez sur le lien `vScope`{.action}.
 
 ![vScope](images/gatewayPCC.png){.thumbnail}
-
-Un lien vers vScope est également disponible directement dans la page de votre service Hosted Private Cloud.
-
-![vScope](images/managerLink.png){.thumbnail}
 
 L’interface s’ouvre dans un nouvel onglet de votre navigateur.
 
