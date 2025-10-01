@@ -98,7 +98,7 @@ LLM_AI_ENDPOINT = os.environ.get('LLM_AI_ENDPOINT')
 OVH_AI_ENDPOINTS_ACCESS_TOKEN = os.environ.get('OVH_AI_ENDPOINTS_ACCESS_TOKEN')
 ```
 
- Next, Define the client that will be used to interact with the models:
+ Next, define the clients that will be used to interact with the models:
 
 ```python
 llm_client = OpenAI(
@@ -142,11 +142,9 @@ def asr_transcription(question, asr_client):
 
 🎉 Now that you have this function, you are ready to transcribe audio files.
 
-Now it’s time to implement the TTS to transform the LLM response into spoken words.
-
 ### Generate LLM response to input question
 
-Next, create a function that calls the LLM client to provide responses to questions:
+Now, create a function that calls the LLM client to provide responses to questions:
 
 ```python
 def llm_answer(input, llm_client):
@@ -166,6 +164,8 @@ def llm_answer(input, llm_client):
 - The conversation/messages are retrieved as parameters
 - A call is made to the chat completion LLM endpoint, using the `Mixtral8x7B` model.
 - Extracts the model’s response and returns the final message text.
+
+⏳ Almost there! All that remains is to implement the TTS to transform the LLM response into spoken words.
 
 ### Return the response using TTS
 
@@ -194,7 +194,7 @@ def tts_synthesis(response, tts_client):
 
 - The LLM response is retrieved
 - A call is made to the TTS AI endpoint named `nvr-tts-en-us`
-- The audio sample and the sample rate are returned to play the audio automatical
+- The audio sample and the sample rate are returned to play the audio automatically
 
 ⚡️ You're almost there! The final step is to build your web app, making your solution easy to use with just a few lines of code.
 
