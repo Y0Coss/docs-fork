@@ -14,10 +14,10 @@ This web interface gathers all the essential information about your resources.
 
 ## Requirements
 
-- Be an administrator contact of the [Hosted Private Cloud](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) infrastructure, in order to receive login credentials.
-- Have an active user ID (created in the [OVHcloud Control Panel](/links/manager)).
+- You must be an administrator contact of the [Hosted Private Cloud](/links/hosted-private-cloud/vmware) infrastructure, in order to receive login credentials.
+- An active user ID (created in the [OVHcloud Control Panel](/links/manager)).
 
-## Practice
+## Instructions
 
 ### Accessing vScope
 
@@ -35,16 +35,17 @@ The interface opens in a new tab in your browser.
 
 ![vScope](images/vScope12.png){.thumbnail}
 
-Log in with your **user** and **password**, the same credentials you use to connect to the vSphere client.
+Log in with your **user** and **password** - the same credentials you use to connect to the vSphere client.
 
 ![vScope](images/vScope11.png){.thumbnail}
 
 You are now connected to **vScope**. This page centralises the key information about your resources.
 
 For example, for each host, you can immediately view:
-- the number of cores and VMs
+
+- The number of cores and VMs
 - CPU and RAM usage
-- network traffic
+- Network traffic
 
 ![vScope](images/vScope.png){.thumbnail}
 
@@ -54,7 +55,7 @@ For example, for each host, you can immediately view:
 
 If your Hosted Private Cloud contains several datacenters, select the one you want to display from the drop-down menu.
 
-The **Last refresh** field corresponds to the last refresh of the web page (not of vScope). vScope data is automatically updated every 2 to 5 minutes.
+The **Last refresh** field corresponds to the last refresh of the web page, not of vScope data. vScope data is automatically updated every 2 to 5 minutes.
 
 ![vScope](images/vScope1.png){.thumbnail}
 
@@ -70,10 +71,10 @@ Use this view to anticipate extension needs or monitor load balancing.
 
 The **Hosts** menu details the characteristics of each host in your datacenter:
 
-- number of cores, vCPUs and VMs
+- Number of cores, vCPUs and VMs
 - CPU and RAM usage percentages
-- network connectivity
-- number of physical network cards (VMNic)
+- Network connectivity
+- Number of physical network cards (VMNic)
 
 ![vScope](images/vScope4.png){.thumbnail}
 
