@@ -52,7 +52,7 @@ OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 
 **Make sure to replace the token value (`OVH_AI_ENDPOINTS_ACCESS_TOKEN`) by yours.** If you do not have one yet, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 
-In this tutorial, we will be using the `Whisper-Large-V3` and `Mixtral-8x7b-Instruct-V01` models. Feel free to change it by models available on the [AI Endpoints catalog](https://catalog.endpoints.ai.ovh.net/).
+In this tutorial, we will be using the `Whisper-Large-V3` and `Mixtral-8x7b-Instruct-V01` models. Feel free to chosse alternative models available on the [AI Endpoints catalog](https://catalog.endpoints.ai.ovh.net/).
 
 Then, create a `requirements.txt` file with the following libraries:
 
@@ -136,9 +136,9 @@ def asr_transcription(question, asr_client):
 
 **In this function:**
 
-- The audio input is sent from microphone recording, as `question`
-- An API call is made to the ASR AI Endpoint named `whisper-large-v3`
-- The text from the transcript response is returned by the function
+- The audio input is sent from microphone recording, as `question`.
+- An API call is made to the ASR AI Endpoint named `whisper-large-v3`.
+- The text from the transcript response is returned by the function.
 
 🎉 Now that you have this function, you are ready to transcribe audio files.
 
@@ -161,9 +161,9 @@ def llm_answer(input, llm_client):
 
 **In this function:**
 
-- The conversation/messages are retrieved as parameters
+- The conversation/messages are retrieved as parameters.
 - A call is made to the chat completion LLM endpoint, using the `Mixtral8x7B` model.
-- Extracts the model’s response and returns the final message text.
+- The model's response is extracted and the final message text is returned.
 
 ⏳ Almost there! All that remains is to implement the TTS to transform the LLM response into spoken words.
 
@@ -192,9 +192,9 @@ def tts_synthesis(response, tts_client):
 
 **In this function:**
 
-- The LLM response is retrieved
-- A call is made to the TTS AI endpoint named `nvr-tts-en-us`
-- The audio sample and the sample rate are returned to play the audio automatically
+- The LLM response is retrieved.
+- A call is made to the TTS AI endpoint named `nvr-tts-en-us`.
+- The audio sample and the sample rate are returned to play the audio automatically.
 
 ⚡️ You're almost there! The final step is to build your web app, making your solution easy to use with just a few lines of code.
 
