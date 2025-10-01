@@ -54,7 +54,7 @@ This evaluation process will be subject to change with the upcoming implementati
 
 #### Implementation
 
-In our scenario,  we will allow all operations to specific IPs by whitelisting authorized IPs wit the following policy statement:
+In our scenario,  we will allow all operations to specific IPs by whitelisting them with the following policy statement:
 
 ```json
 {
