@@ -1,5 +1,5 @@
 ---
-title: 'MX Plan - Configurare l'indirizzo email su Thunderbird per Windows'
+title: "MX Plan - Configurare l'indirizzo email su Thunderbird per Windows"
 excerpt: 'Scopri come configurare il tuo indirizzo email MX Plan su Thunderbird per Windows'
 updated: 2025-09-19
 ---
@@ -30,8 +30,8 @@ Gli account email MX Plan possono essere configurati su diversi client di posta 
 ## Prerequisiti
 
 - Disporre di un'offerta MX Plan. Questa è disponibile tramite:
-    - Un'offerta di [ospitaggio web](/links/web/hosting).
-    - Un [ospitaggio gratuito 100M](/links/web/domains-free-hosting) incluso con un nome di dominio (precedentemente attivato).
+    - Un'offerta di [hosting Web](/links/web/hosting).
+    - Un [hosting gratuito 100M](/links/web/domains-free-hosting) incluso con un nome di dominio (precedentemente attivato).
     - Un'offerta MX Plan ordinata separatamente.
     - Disporre di un indirizzo email [Zimbra Starter](/links/web/zimbra).
 - Avere installato il software Thunderbird sul tuo dispositivo Windows.
@@ -41,7 +41,7 @@ Gli account email MX Plan possono essere configurati su diversi client di posta 
 
 Questo guida ti mostra come utilizzare le soluzioni OVHcloud con strumenti esterni e le modifiche necessarie in contesti specifici. Potrebbe essere necessario adattare le istruzioni in base alla tua situazione.
 
-Se riscontri difficoltà nell'esecuzione di queste operazioni, ti consigliamo di contattare un [fornitore di servizi specializzato](/links/partner) e/o di discuterne con la nostra comunità. OVHcloud non può fornire supporto tecnico sull'utilizzo di strumenti esterni. Per ulteriori informazioni, consulta la sezione [Vai oltre](#gofurther) di questa guida.
+Se riscontri difficoltà nell'esecuzione di queste operazioni, ti consigliamo di contattare un [fornitore di servizi specializzato](/links/partner) e/o di discuterne con la nostra comunità. OVHcloud non può fornire supporto tecnico sull'utilizzo di strumenti esterni. Per ulteriori informazioni, consulta la sezione [Per saperne di più](#gofurther) di questa guida.
 
 ///
 
@@ -66,7 +66,7 @@ Se riscontri difficoltà nell'esecuzione di queste operazioni, ti consigliamo di
 Segui le fasi di configurazione facendo clic successivamente sui **5** tab seguenti:
 
 > [!tabs]
-> **Passo 1**
+> **Passagio 1**
 >>
 >> Nella finestra che appare, inserisci le 2 seguenti informazioni:
 >>
@@ -77,16 +77,16 @@ Segui le fasi di configurazione facendo clic successivamente sui **5** tab segue
 >>
 >> ![thunderbird](images/configuration-thunderbird-mxplan-02.png){.thumbnail .w-600}
 >>
-> **Passo 2**
+> **Passagio 2**
 >>
 >> Quando Thunderbird rileva un nome di dominio OVHcloud, viene proposta una configurazione automatica relativa all'offerta MX Plan:
 >>
->>  - Se le informazioni sono corrette, fare clic su `Continua`{.action} e passare al passo 5.
+>>  - Se le informazioni sono corrette, fare clic su `Continua`{.action} e passare al passagio 5.
 >>  - Altrimenti, fare clic su `MODIFICA LA CONFIGURAZIONE`{.action} per effettuare una configurazione manuale.
 >>
 >> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-600}
 >>
-> **Passo 3**
+> **Passagio 3**
 >>
 >> Impostazioni del server di ricezione:
 >>
@@ -100,7 +100,7 @@ Segui le fasi di configurazione facendo clic successivamente sui **5** tab segue
 >>
 >> ![thunderbird](images/configuration-thunderbird-mxplan-04.png){.thumbnail .w-600}
 >>
-> **Passo 4**
+> **Passagio 4**
 >>
 >> Impostazioni del server di invio:
 >>
@@ -112,12 +112,12 @@ Segui le fasi di configurazione facendo clic successivamente sui **5** tab segue
 >>  - **Metodo di autenticazione**: Password normale
 >>  - **Nome utente**: Il tuo indirizzo email completo
 >> 
->> 1\. Fare clic su `Testa`{.action} per verificare i parametri inseriti.
->> 2\. Fare clic su `Continua`{.action} per validare questi parametri.
+>> 1. Fare clic su `Testa`{.action} per verificare i parametri inseriti.
+>> 2. Fare clic su `Continua`{.action} per validare questi parametri.
 >>
 >> ![thunderbird](images/configuration-thunderbird-mxplan-05.png){.thumbnail .w-600}
 >>
-> **Passo 5**
+> **Passagio 5**
 >>
 >> Inserisci la password associata all'indirizzo email, quindi fare clic su `Continua`{.action} per completare la configurazione.
 >>
@@ -128,7 +128,7 @@ Segui le fasi di configurazione facendo clic successivamente sui **5** tab segue
 >
 > **Configurazione POP**
 >
-> Se desideri una configurazione POP per il tuo indirizzo email, sostituisci i parametri del **passo 3** con i seguenti:
+> Se desideri una configurazione POP per il tuo indirizzo email, sostituisci i parametri del **passagio 3** con i seguenti:
 >
 > Impostazioni del server di ricezione:
 >
@@ -148,7 +148,7 @@ OVHcloud offre anche un'applicazione web per accedere al tuo indirizzo email da 
 
 ### Recuperare un backup del tuo indirizzo email
 
-Se devi effettuare un'operazione che potrebbe causare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preventivo dell'account email interessato. Per farlo, consulta il paragrafo "**Esporta** " nella sezione "**Thunderbird** " della nostra guida "[Migra manualmente il tuo indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ".
+Se devi effettuare un'operazione che potrebbe causare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preventivo dell'account email interessato. Per farlo, consulta il paragrafo "**Esporta**" nella sezione "**Thunderbird**" della nostra guida "[Migra manualmente il tuo indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modificare le impostazioni esistenti
 
@@ -174,7 +174,7 @@ Se il tuo account email è già configurato e devi accedere alle impostazioni de
 >
 > Per ulteriori informazioni sulla configurazione di un indirizzo email dal client di posta elettronica Thunderbird, consulta [il centro assistenza di Mozilla](https://support.mozilla.org/products/thunderbird).
 
-[Primi passi con l'offerta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 

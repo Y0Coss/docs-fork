@@ -37,7 +37,7 @@ As contas Exchange podem ser configuradas em diferentes softwares de e-mail comp
 
 Este guia mostra como usar soluções OVHcloud com ferramentas externas e as modificações necessárias em contextos específicos. Pode ser necessário adaptar as instruções de acordo com sua situação.
 
-Se você tiver dificuldades ao executar estas operações, recomendamos que entre em contato com um [provedor de serviços especializado](/links/partner) e/ou discuta com nossa comunidade. A OVHcloud não pode fornecer suporte técnico sobre o uso de ferramentas externas. Mais informações na seção [Saiba mais](#gofurther) deste guia.
+Se você tiver dificuldades ao executar estas operações, recomendamos que entre em contato com um [provedor de serviços especializado](/links/partner) e/ou discuta com nossa comunidade. A OVHcloud não pode fornecer suporte técnico sobre o uso de ferramentas externas. Mais informações na seção [Quer saber mais?](#gofurther) deste guia.
 
 ///
 
@@ -49,11 +49,11 @@ Se você tiver dificuldades ao executar estas operações, recomendamos que entr
 >
 > Para encontrar o nome do servidor:
 >
-> 1. Faça login no seu [espaço cliente OVHcloud](/links/manager).
+> 1. Faça login no seu [Área de Cliente OVHcloud](/links/manager).
 > 2. Acesse a seção `Web Cloud`{.action}.
 > 3. Na seção `MICROSOFT`, clique em `Exchange`{.action}.
 > 4. Selecione a plataforma desejada.
-> 5. O nome do servidor está visível no quadro **Conexão** da aba `Informações Gerais`{.action}.
+> 5. O nome do servidor está visível no quadro **Ligação** da aba `Informações gerais`{.action}.
 
 ### Adicionar a conta
 
@@ -70,7 +70,7 @@ Se você tiver dificuldades ao executar estas operações, recomendamos que entr
 Siga as etapas de configuração clicando sucessivamente nos **5** abas abaixo:
 
 > [!tabs]
-> **Passo 1**
+> **Etapa 1**
 >>
 >> Na janela que aparece, insira as seguintes informações:
 >>
@@ -81,13 +81,13 @@ Siga as etapas de configuração clicando sucessivamente nos **5** abas abaixo:
 >>
 >> ![thunderbird](images/configuration-thunderbird-exchange-02.png){.thumbnail .w-600}
 >>
-> **Passo 2**
+> **Etapa 2**
 >>
 >> Quando o Thunderbird detectar um domínio OVHcloud, uma configuração automática relativa à oferta MX Plan será proposta. Clique em `MODIFICAR A CONFIGURAÇÃO`{.action}.
 >>
 >> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-600}
 >>
-> **Passo 3**
+> **Etapa 3**
 >>
 >> Configurações do servidor de recepção:
 >>
@@ -100,7 +100,7 @@ Siga as etapas de configuração clicando sucessivamente nos **5** abas abaixo:
 >>
 >> ![thunderbird](images/configuration-thunderbird-exchange-04.png){.thumbnail .w-600}
 >>
-> **Passo 4**
+> **Etapa 4**
 >>
 >> Configurações do servidor de envio:
 >>
@@ -111,12 +111,12 @@ Siga as etapas de configuração clicando sucessivamente nos **5** abas abaixo:
 >>  - **Método de autenticação** : Senha normal
 >>  - **Nome de usuário** : Seu endereço de e-mail completo
 >> 
->> 1\. Clique em `Testar`{.action} para verificar as configurações inseridas.
->> 2\. Clique em `Continuar`{.action} para confirmar estas configurações.
+>> 1. Clique em `Testar`{.action} para verificar as configurações inseridas.
+>> 2. Clique em `Continuar`{.action} para confirmar estas configurações.
 >>
 >> ![thunderbird](images/configuration-thunderbird-exchange-05.png){.thumbnail .w-600}
 >>
-> **Passo 5**
+> **Etapa 5**
 >>
 >> Insira a senha associada ao endereço de e-mail, em seguida clique em `Continuar`{.action} para finalizar a configuração.
 >>
@@ -127,7 +127,7 @@ Siga as etapas de configuração clicando sucessivamente nos **5** abas abaixo:
 >
 > **Configuração POP**
 >
-> Se desejar uma configuração POP para seu endereço de e-mail, substitua as configurações do **passo 3** pelas seguintes:
+> Se desejar uma configuração POP para seu endereço de e-mail, substitua as configurações do **etapa 3** pelas seguintes:
 >
 > Configurações do servidor de recepção:
 >
@@ -174,7 +174,7 @@ Se sua conta de e-mail já estiver configurada e você precisar acessar as confi
 
 [Primeiros passos com o serviço Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-[Primeiros passos com o serviço Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
+[Primeiros passos com um servidor Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 

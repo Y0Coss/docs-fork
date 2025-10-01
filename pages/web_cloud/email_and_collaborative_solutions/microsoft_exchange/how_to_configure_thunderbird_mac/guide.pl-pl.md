@@ -30,14 +30,14 @@ Konta Exchange można skonfigurować w różnych kompatybilnych programach poczt
 ## Wymagania początkowe
 
 - Posiadanie adresu e-mail [Hosted Exchange](/links/web/emails-hosted-exchange) lub [Private Exchange](/links/web/emails-private-exchange).
-- Zainstalowanie oprogramowania Thunderbird na swoim Macu.
+- Zainstalowanie oprogramowania Thunderbird na swoim Mac.
 - Posiadanie danych logowania do adresu e-mail, który chcesz skonfigurować.
 
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
 Ten przewodnik pokazuje, jak korzystać z rozwiązań OVHcloud z zewnętrznymi narzędziami oraz jakie zmiany wprowadzić w konkretnych sytuacjach. Możesz musieć dostosować instrukcje do swojej sytuacji.
 
-Jeśli napotkasz trudności w wykonaniu tych czynności, zalecamy kontakt z [specjalistycznym dostawcą usług](/links/partner) i/lub dyskusję z naszą społecznością. OVHcloud nie może udzielać wsparcia technicznego w zakresie korzystania z narzędzi zewnętrznych. Więcej informacji znajdziesz w sekcji [Dowiedz się więcej](#gofurther) tego przewodnika.
+Jeśli napotkasz trudności w wykonaniu tych czynności, zalecamy kontakt z [specjalistycznym dostawcą usług](/links/partner) i/lub dyskusję z naszą społecznością. OVHcloud nie może udzielać wsparcia technicznego w zakresie korzystania z narzędzi zewnętrznych. Więcej informacji znajdziesz w sekcji [Sprawdź również](#gofurther) tego przewodnika.
 
 ///
 
@@ -49,11 +49,11 @@ Jeśli napotkasz trudności w wykonaniu tych czynności, zalecamy kontakt z [spe
 >
 > Aby znaleźć nazwę serwera:
 >
-> 1. Zaloguj się do swojego [konta OVHcloud](/links/manager).
+> 1. Zaloguj się do swojego [Panelu klienta](/links/manager).
 > 2. Przejdź do sekcji `Web Cloud`{.action}.
 > 3. W sekcji `MICROSOFT` kliknij `Exchange`{.action}.
 > 4. Wybierz odpowiednią platformę.
-> 5. Nazwa serwera jest widoczna w ramce **Połączenie** na karcie `Informacje ogólne`{.action}.
+> 5. Nazwa serwera jest widoczna w ramce **Logowanie** na karcie `Informacje ogólne`{.action}.
 
 ### Dodawanie konta
 
@@ -111,8 +111,8 @@ Postępuj zgodnie z krokami konfiguracji, klikając kolejno poniższe **5** kart
 >>  - **Metoda uwierzytelniania** : Normalne hasło
 >>  - **Nazwa użytkownika** : Pełny adres e-mail
 >> 
->> 1\. Kliknij `Testuj`{.action}, aby zweryfikować wprowadzone ustawienia.
->> 2\. Kliknij `Dalej`{.action}, aby potwierdzić te ustawienia.
+>> 1. Kliknij `Testuj`{.action}, aby zweryfikować wprowadzone ustawienia.
+>> 2. Kliknij `Dalej`{.action}, aby potwierdzić te ustawienia.
 >>
 >> ![thunderbird](images/configuration-thunderbird-exchange-05.png){.thumbnail .w-600}
 >>
@@ -146,7 +146,7 @@ OVHcloud oferuje również aplikację internetową, która umożliwia dostęp do
 
 ### Przywracanie kopii zapasowej adresu e-mail
 
-Jeśli musisz wykonać operację, która może prowadzić do utraty danych konta e-mail, zalecamy wykonanie kopii zapasowej konta e-mail przed wykonaniem tej operacji. Aby to zrobić, zapoznaj się z sekcją "**Eksport**" w części "**Thunderbird**" naszego przewodnika "[Ręczne migracje adresu e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+Jeśli musisz wykonać operację, która może prowadzić do utraty danych konta e-mail, zalecamy wykonanie kopii zapasowej konta e-mail przed wykonaniem tej operacji. Aby to zrobić, zapoznaj się z sekcją "**Eksport**" w części "**Thunderbird**" naszego przewodnika "[Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modyfikowanie istniejących ustawień
 
@@ -170,11 +170,11 @@ Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do ustawi
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat konfiguracji adresu e-mail w kliencie poczty e-mail Thunderbird, odwiedź [centrum pomocy Mozilli](https://support.mozilla.org/products/thunderbird).
+> Aby uzyskać więcej informacji na temat konfiguracji adresu e-mail w kliencie poczty e-mail Thunderbird, odwiedź [centrum pomocy Mozilla](https://support.mozilla.org/products/thunderbird).
 
 [Pierwsze kroki z usługą Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-[Pierwsze kroki z usługą Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
+[Exchange: Pierwsze kroki z serwerem Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

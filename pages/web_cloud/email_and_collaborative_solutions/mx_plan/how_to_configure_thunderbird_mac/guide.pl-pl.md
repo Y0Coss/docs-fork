@@ -30,18 +30,18 @@ Konta e-mail MX Plan można skonfigurować w różnych kompatybilnych klientach 
 ## Wymagania wstępne
 
 - Posiadanie oferty MX Plan. Jest ona dostępna poprzez:
-    - Ofertę [hostingu sieciowego](/links/web/hosting).
+    - Ofertę [hostingu WWW](/links/web/hosting).
     - [Darmowy hosting 100M](/links/web/domains-free-hosting) wraz z nazwą domeny (wcześniej aktywowaną).
     - Oddzielną ofertę MX Plan.
     - Posiadanie adresu e-mail [Zimbra Starter](/links/web/zimbra).
-- Zainstalowanie oprogramowania Thunderbird na swoim Macu.
+- Zainstalowanie oprogramowania Thunderbird na swoim Mac.
 - Posiadanie danych logowania do adresu e-mail, który chcesz skonfigurować.
 
 /// details | Informacje dotyczące zarządzania i konfiguracji usług OVHcloud
 
 Ten przewodnik pokazuje, jak korzystać z rozwiązań OVHcloud z zewnętrznymi narzędziami oraz jakie modyfikacje są wymagane w konkretnych kontekstach. Możesz musieć dostosować instrukcje zgodnie ze swoim sytuacją.
 
-Jeśli napotkasz trudności w wykonaniu tych czynności, zalecamy kontakt z [specjalistycznym dostawcą usług](/links/partner) i/lub dyskusję z naszą społecznością. OVHcloud nie może udzielać wsparcia technicznego w zakresie korzystania z narzędzi zewnętrznych. Więcej informacji w sekcji [Idź dalej](#gofurther) tego przewodnika.
+Jeśli napotkasz trudności w wykonaniu tych czynności, zalecamy kontakt z [specjalistycznym dostawcą usług](/links/partner) i/lub dyskusję z naszą społecznością. OVHcloud nie może udzielać wsparcia technicznego w zakresie korzystania z narzędzi zewnętrznych. Więcej informacji w sekcji [Sprawdź również](#gofurther) tego przewodnika.
 
 ///
 
@@ -112,8 +112,8 @@ Postępuj zgodnie z krokami konfiguracji, klikając kolejno na **5** poniższych
 >>  - **Metoda uwierzytelniania**: Normalne hasło
 >>  - **Nazwa użytkownika**: Pełny adres e-mail
 >> 
->> 1\. Kliknij `Testuj`{.action}, aby zweryfikować wprowadzone ustawienia.
->> 2\. Kliknij `Kontynuuj`{.action}, aby potwierdzić te ustawienia.
+>> 1. Kliknij `Testuj`{.action}, aby zweryfikować wprowadzone ustawienia.
+>> 2. Kliknij `Kontynuuj`{.action}, aby potwierdzić te ustawienia.
 >>
 >> ![thunderbird](images/configuration-thunderbird-mxplan-05.png){.thumbnail .w-600}
 >>
@@ -148,7 +148,7 @@ OVHcloud oferuje również aplikację internetową umożliwiającą dostęp do a
 
 ### Przywracanie kopii zapasowej adresu e-mail
 
-Jeśli musisz wykonać operację, która może spowodować utratę danych konta e-mail, zalecamy wykonanie kopii zapasowej przed kontem e-mail. Aby to zrobić, skorzystaj z sekcji "**Eksportuj** " w części "**Thunderbird** " naszego przewodnika "[Ręczne migracja adresu e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ".
+Jeśli musisz wykonać operację, która może spowodować utratę danych konta e-mail, zalecamy wykonanie kopii zapasowej przed kontem e-mail. Aby to zrobić, skorzystaj z sekcji "**Eksport**" w części "**Thunderbird**" naszego przewodnika "[Ręczna migracja Twojego konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modyfikacja istniejących ustawień
 
@@ -172,9 +172,9 @@ Jeśli konto e-mail jest już skonfigurowane i musisz uzyskać dostęp do ustawi
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat konfiguracji adresu e-mail w kliencie poczty Thunderbird, odwiedź [centrum pomocy Mozilli](https://support.mozilla.org/products/thunderbird).
+> Aby uzyskać więcej informacji na temat konfiguracji adresu e-mail w kliencie poczty Thunderbird, odwiedź [centrum pomocy Mozilla](https://support.mozilla.org/products/thunderbird).
 
-[Pierwsze kroki z ofertą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Pierwsze kroki z usługą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

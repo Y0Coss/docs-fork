@@ -1,6 +1,6 @@
 ---
 title: 'MX Plan - Configurar su dirección de correo electrónico en Thunderbird para Windows'
-excerpt: 'Aprenda a configurar su dirección de correo electrónico MX Plan en Thunderbird para Windows'
+excerpt: 'Descubra cómo configurar su dirección de correo electrónico MX Plan en Thunderbird para Windows'
 updated: 2025-09-19
 ---
 
@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 Las cuentas de correo electrónico MX Plan pueden configurarse en diferentes clientes de correo compatibles. Esto le permite utilizar su dirección de correo electrónico desde el dispositivo de su elección. Thunderbird es un cliente de correo electrónico libre y gratuito.
 
-**Aprenda a configurar su dirección de correo electrónico MX Plan en Thunderbird para Windows.**
+**Descubra cómo configurar su dirección de correo electrónico MX Plan en Thunderbird para Windows.**
 
 ## Requisitos
 
@@ -41,7 +41,7 @@ Las cuentas de correo electrónico MX Plan pueden configurarse en diferentes cli
 
 Este guía le muestra cómo utilizar soluciones OVHcloud con herramientas externas y las modificaciones necesarias en contextos específicos. Es posible que deba adaptar las instrucciones según su situación.
 
-Si tiene dificultades para realizar estas operaciones, le recomendamos contactar a un [proveedor de servicios especializado](/links/partner) y/o discutirlo con nuestra comunidad. OVHcloud no puede proporcionar soporte técnico sobre el uso de herramientas externas. Más información en la sección [Ir más lejos](#gofurther) de esta guía.
+Si tiene dificultades para realizar estas operaciones, le recomendamos contactar a un [proveedor de servicios especializado](/links/partner) y/o discutirlo con nuestra comunidad. OVHcloud no puede proporcionar soporte técnico sobre el uso de herramientas externas. Más información en la sección [Más información](#gofurther) de esta guía.
 
 ///
 
@@ -112,8 +112,8 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** pesta�
 >>  - **Método de autenticación**: Contraseña normal
 >>  - **Nombre de usuario**: Su dirección de correo electrónico completa
 >> 
->> 1\. Haga clic en `Probar`{.action} para verificar los parámetros introducidos.
->> 2\. Haga clic en `Continuar`{.action} para validar estos parámetros.
+>> 1. Haga clic en `Probar`{.action} para verificar los parámetros introducidos.
+>> 2. Haga clic en `Continuar`{.action} para validar estos parámetros.
 >>
 >> ![thunderbird](images/configuration-thunderbird-mxplan-05.png){.thumbnail .w-600}
 >>
@@ -148,7 +148,7 @@ OVHcloud también ofrece una aplicación web para acceder a su dirección de cor
 
 ### Recuperar una copia de seguridad de su dirección de correo electrónico
 
-Si debe realizar una operación que podría provocar la pérdida de datos de su cuenta de correo, le recomendamos hacer una copia de seguridad previa de la cuenta de correo afectada. Para ello, consulte el apartado "**Exportar** " en la sección "**Thunderbird** " de nuestra guía "[Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ".
+Si debe realizar una operación que podría provocar la pérdida de datos de su cuenta de correo, le recomendamos hacer una copia de seguridad previa de la cuenta de correo afectada. Para ello, consulte el apartado "**Exportar**" en la sección "**Thunderbird**" de nuestra guía "[Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modificar los ajustes existentes
 
@@ -174,7 +174,7 @@ Si su cuenta de correo ya está configurada y debe acceder a los ajustes de la c
 >
 > Para más información sobre la configuración de una dirección de correo electrónico desde el cliente de correo Thunderbird, consulte [el centro de ayuda de Mozilla](https://support.mozilla.org/products/thunderbird).
 
-[Primeros pasos con la oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 

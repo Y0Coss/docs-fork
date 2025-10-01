@@ -1,6 +1,6 @@
 ---
-title: 'Exchange - Configurar su dirección de correo electrónico en Thunderbird para macOS'
-excerpt: 'Descubra cómo configurar su dirección de correo electrónico Exchange en Thunderbird para macOS'
+title: 'Exchange - Configurar su dirección de correo electrónico en Thunderbird para Windows'
+excerpt: 'Descubra cómo configurar su dirección de correo electrónico Exchange en Thunderbird para Windows'
 updated: 2025-09-19
 ---
 
@@ -25,19 +25,19 @@ details[open]>summary::before {
 
 Las cuentas de Exchange pueden configurarse en diferentes clientes de correo compatibles. Esto le permite utilizar su dirección de correo electrónico desde el dispositivo de su elección. Thunderbird es un cliente de correo electrónico libre y gratuito.
 
-**Descubra cómo configurar su dirección de correo electrónico Exchange en Thunderbird para macOS.**
+**Descubra cómo configurar su dirección de correo electrónico Exchange en Thunderbird para Windows.**
 
 ## Requisitos
 
 - Tener una dirección de correo electrónico [Hosted Exchange](/links/web/emails-hosted-exchange) o [Private Exchange](/links/web/emails-private-exchange).
-- Tener instalado el software Thunderbird en su Mac.
+- Tener instalado el software Thunderbird en su dispositivo bajo Windows.
 - Poseer las credenciales relacionadas con la dirección de correo electrónico que desea configurar.
 
 /// details | Información relacionada con la gestión y configuración de los servicios OVHcloud
 
 OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad le corresponden a usted. Por lo tanto, es su responsabilidad garantizar su correcto funcionamiento.
 
-Le ofrecemos este guía para acompañarle en tareas cotidianas. Sin embargo, le recomendamos contactar a un [proveedor especializado](https://marketplace.ovhcloud.com/c/support-collaboration) y/o al editor del servicio si experimenta dificultades. En efecto, no podremos proporcionarle asistencia. Más información en la sección [Ir más lejos](#go-further) de este guía.
+Le ofrecemos este guía para acompañarle en tareas cotidianas. Sin embargo, le recomendamos contactar a un [proveedor especializado](/links/partner) y/o al editor del servicio si experimenta dificultades. En efecto, no podremos proporcionarle asistencia. Más información en la sección [Más información](#go-further) de este guía.
 
 ///
 
@@ -45,15 +45,15 @@ Le ofrecemos este guía para acompañarle en tareas cotidianas. Sin embargo, le 
 
 > [!primary]
 >
-> En nuestro ejemplo, utilizamos la referencia del servidor: ex?.mail.ovh.net. Deberá reemplazar el « ? » por el número que identifica su servidor de Exchange.
+> En nuestro ejemplo, utilizamos la referencia del servidor: ex?.mail.ovh.net. Deberá reemplazar el "?" por el número que identifica su servidor de Exchange.
 >
 > Para encontrar el nombre del servidor:
 >
-> 1. Inicie sesión en su [espacio cliente OVHcloud](/links/manager).
+> 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
 > 2. Vaya a la sección `Web Cloud`{.action}.
 > 3. En la sección `MICROSOFT`, haga clic en `Exchange`{.action}.
 > 4. Seleccione la plataforma correspondiente.
-> 5. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información General`{.action}.
+> 5. El nombre del servidor es visible en el marco **Conexión** de la pestaña `Información general`{.action}.
 
 ### Añadir la cuenta
 
@@ -65,7 +65,7 @@ Le ofrecemos este guía para acompañarle en tareas cotidianas. Sin embargo, le 
     2. Haga clic en `Nueva Cuenta`{.action}.
     3. Haga clic en `Dirección de correo electrónico`{.action}.
 
-![thunderbird](images/configuration-thunderbird-mac-01.png){.thumbnail .w-600}
+![thunderbird](images/configuration-thunderbird-win-01.png){.thumbnail .w-600}
 
 Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguientes pestañas:
 
@@ -92,7 +92,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 >> Configuración del servidor de recepción:
 >>
 >>  - **Protocolo**: IMAP
->>  - **Nombre de host**: ex?.mail.ovh.net (reemplace el « ? » por el número de su servidor)
+>>  - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
 >>  - **Puerto**: 993
 >>  - **Seguridad de la conexión**: SSL/TLS
 >>  - **Método de autenticación**: Contraseña normal
@@ -105,14 +105,14 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 >> Configuración del servidor de envío:
 >>
 >>  - **Protocolo**: SMTP 
->>  - **Nombre de host**: ex?.mail.ovh.net (reemplace el « ? » por el número de su servidor)
+>>  - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
 >>  - **Puerto**: 587
 >>  - **Seguridad de la conexión**: STARTTLS
 >>  - **Método de autenticación**: Contraseña normal
 >>  - **Nombre de usuario**: Su dirección de correo electrónico completa
 >> 
->> 1\. Haga clic en `Probar`{.action} para verificar los parámetros introducidos.
->> 2\. Haga clic en `Continuar`{.action} para validar estos parámetros.
+>> 1. Haga clic en `Probar`{.action} para verificar los parámetros introducidos.
+>> 2. Haga clic en `Continuar`{.action} para validar estos parámetros.
 >>
 >> ![thunderbird](images/configuration-thunderbird-exchange-05.png){.thumbnail .w-600}
 >>
@@ -132,7 +132,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguie
 > Configuración del servidor de recepción:
 >
 > - **Protocolo**: POP3
-> - **Nombre de host**: ex?.mail.ovh.net (reemplace el « ? » por el número de su servidor)
+> - **Nombre de host**: ex?.mail.ovh.net (reemplace el "?" por el número de su servidor)
 > - **Puerto**: 995
 > - **Seguridad de la conexión**: SSL/TLS
 > - **Método de autenticación**: Contraseña normal
@@ -146,7 +146,7 @@ OVHcloud también ofrece una aplicación web para acceder a su dirección de cor
 
 ### Recuperar una copia de seguridad de su dirección de correo electrónico
 
-Si debe realizar una operación que podría provocar la pérdida de datos de su cuenta de correo, le recomendamos hacer una copia de seguridad previa de la cuenta de correo afectada. Para ello, consulte el apartado « **Exportar** » en la sección « **Thunderbird** » de nuestra guía « [Migrar manualmente su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ».
+Si debe realizar una operación que podría provocar la pérdida de datos de su cuenta de correo, le recomendamos hacer una copia de seguridad previa de la cuenta de correo afectada. Para ello, consulte el apartado "**Exportar**" en la sección "**Thunderbird**" de nuestra guía "[Migrar manualmente una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modificar los ajustes existentes
 
@@ -155,16 +155,16 @@ Si su cuenta de correo ya está configurada y debe acceder a los ajustes de la c
 1. Haga clic en el menú `☰`{.action} en la barra horizontal superior.
 2. Haga clic en `Ajustes de cuentas`{.action}.
 
-![Thunderbird](images/configuration-thunderbird-mac-07.png){.thumbnail .w-600}
+![Thunderbird](images/configuration-thunderbird-win-07.png){.thumbnail .w-600}
 
 - Para modificar los ajustes relacionados con la **recepción** de sus correos, haga clic en `Ajustes del servidor`{.action} en la columna izquierda bajo su dirección de correo.
 
-![thunderbird](images/configuration-thunderbird-exchange-mac-08.png){.thumbnail .w-600}
+![thunderbird](images/configuration-thunderbird-exchange-win-08.png){.thumbnail .w-600}
 
 - Para modificar los ajustes relacionados con el **envío** de sus correos, haga clic en `Servidor saliente (SMTP)`{.action} al final de la columna izquierda.
 - Haga clic en la dirección de correo afectada en la lista, luego haga clic en `Modificar`{.action}.
 
-![thunderbird](images/configuration-thunderbird-exchange-mac-09.png){.thumbnail .w-600}
+![thunderbird](images/configuration-thunderbird-exchange-win-09.png){.thumbnail .w-600}
 
 ## Más información <a name="go-further"></a>
 
@@ -174,7 +174,7 @@ Si su cuenta de correo ya está configurada y debe acceder a los ajustes de la c
 
 [Primeros pasos con el servicio Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-[Primeros pasos con el servicio Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
+[Primeros pasos con el servidor Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 

@@ -47,7 +47,7 @@ Se você tiver dificuldades ao executar estas operações, recomendamos que entr
 >
 > No nosso exemplo, utilizamos a referência do servidor: pro?.mail.ovh.net. Você deverá substituir o "?" pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
-> 1. Conecte-se ao seu [OVHcloud Control Panel](/links/manager).
+> 1. Conecte-se ao seu [Área de Cliente OVHcloud](/links/manager).
 > 1. Acesse a seção `Web Cloud`{.action}.
 > 1. Clique em `E-mail Pro`{.action}.
 > 1. Selecione a plataforma desejada.
@@ -125,7 +125,7 @@ Siga as etapas de configuração clicando sucessivamente nas seguintes **5** aba
 >
 > **Configuração POP**
 >
-> Se desejar uma configuração POP para seu endereço de e-mail, substitua as configurações da **Etapa 3** pelas seguintes:
+> Se desejar uma configuração POP para seu endereço de e-mail, substitua as configurações da **etapa 3** pelas seguintes:
 >
 > Configurações do servidor de recepção:
 >

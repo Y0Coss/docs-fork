@@ -1,6 +1,6 @@
 ---
 title: 'MX Plan - Configurar seu endereço de e-mail no Thunderbird para Windows'
-excerpt: 'Aprenda a configurar seu endereço de e-mail MX Plan no Thunderbird para Windows'
+excerpt: 'Descubra como configurar seu endereço de e-mail MX Plan no Thunderbird para Windows'
 updated: 2025-09-19
 ---
 
@@ -25,13 +25,13 @@ details[open]>summary::before {
 
 As contas de e-mail MX Plan podem ser configuradas em diferentes clientes de e-mail compatíveis. Isso permite que você use seu endereço de e-mail a partir do dispositivo de sua escolha. O Thunderbird é um cliente de e-mail gratuito e de código aberto.
 
-**Aprenda a configurar seu endereço de e-mail MX Plan no Thunderbird para Windows.**
+**Descubra como configurar seu endereço de e-mail MX Plan no Thunderbird para Windows.**
 
 ## Requisitos
 
 - Ter uma oferta MX Plan. Esta está disponível por meio de:
-    - Uma oferta de [hospedagem web](/links/web/hosting).
-    - Uma [hospedagem gratuita 100M](/links/web/domains-free-hosting) incluída com um nome de domínio (ativado previamente).
+    - Uma oferta de [alojamento web](/links/web/hosting).
+    - Um [alojamento gratuito 100M](/links/web/domains-free-hosting) incluída com um nome de domínio (ativado previamente).
     - Uma oferta MX Plan encomendada separadamente.
     - Ter um endereço de e-mail [Zimbra Starter](/links/web/zimbra).
 - Ter o software Thunderbird instalado no seu dispositivo sob Windows.
@@ -41,7 +41,7 @@ As contas de e-mail MX Plan podem ser configuradas em diferentes clientes de e-m
 
 Este guia mostra como usar soluções OVHcloud com ferramentas externas e as modificações necessárias em contextos específicos. Pode ser necessário adaptar as instruções de acordo com sua situação.
 
-Se você tiver dificuldades para realizar estas operações, recomendamos que entre em contato com um [provedor de serviços especializado](/links/partner) e/ou discuta com nossa comunidade. A OVHcloud não pode fornecer suporte técnico sobre o uso de ferramentas externas. Mais informações na seção [Ir mais longe](#gofurther) deste guia.
+Se você tiver dificuldades para realizar estas operações, recomendamos que entre em contato com um [provedor de serviços especializado](/links/partner) e/ou discuta com nossa comunidade. A OVHcloud não pode fornecer suporte técnico sobre o uso de ferramentas externas. Mais informações na seção [Quer saber mais?](#gofurther) deste guia.
 
 ///
 
@@ -112,8 +112,8 @@ Siga as etapas de configuração clicando sucessivamente nos **5** abas abaixo:
 >>  - **Método de autenticação**: Senha normal
 >>  - **Nome de usuário**: Seu endereço de e-mail completo
 >> 
->> 1\. Clique em `Testar`{.action} para verificar os parâmetros inseridos.
->> 2\. Clique em `Continuar`{.action} para validar esses parâmetros.
+>> 1. Clique em `Testar`{.action} para verificar os parâmetros inseridos.
+>> 2. Clique em `Continuar`{.action} para validar esses parâmetros.
 >>
 >> ![thunderbird](images/configuration-thunderbird-mxplan-05.png){.thumbnail .w-600}
 >>
@@ -148,7 +148,7 @@ A OVHcloud também oferece uma aplicação web para acessar seu endereço de e-m
 
 ### Recuperar um backup de seu endereço de e-mail
 
-Se você precisar realizar uma operação que possa causar a perda de dados de sua conta de e-mail, recomendamos fazer um backup prévio da conta de e-mail afetada. Para isso, consulte o parágrafo "**Exportar**" na seção "**Thunderbird**" de nosso guia "[Migrar manualmente seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+Se você precisar realizar uma operação que possa causar a perda de dados de sua conta de e-mail, recomendamos fazer um backup prévio da conta de e-mail afetada. Para isso, consulte o parágrafo "**Exportar**" na seção "**Thunderbird**" de nosso guia "[Migrar manualmente o seu endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modificar as configurações existentes
 
@@ -174,7 +174,7 @@ Se sua conta de e-mail já estiver configurada e você precisar acessar as confi
 >
 > Para mais informações sobre a configuração de um endereço de e-mail a partir do cliente de e-mail Thunderbird, consulte [o centro de ajuda da Mozilla](https://support.mozilla.org/products/thunderbird).
 
-[Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Introdução à oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 

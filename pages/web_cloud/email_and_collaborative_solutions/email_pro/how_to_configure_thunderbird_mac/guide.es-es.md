@@ -125,7 +125,7 @@ Siga los pasos de configuración haciendo clic sucesivamente en las **5** pesta�
 >
 > **Configuración POP**
 >
-> Si desea una configuración POP para su dirección de correo electrónico, reemplace los parámetros de **Paso 3** con los siguientes:
+> Si desea una configuración POP para su dirección de correo electrónico, reemplace los parámetros de **paso 3** con los siguientes:
 >
 > Configuración del servidor de recepción:
 >

@@ -68,7 +68,7 @@ Se riscontri difficoltà nell'esecuzione di queste operazioni, ti consigliamo di
 Segui le fasi di configurazione cliccando successivamente sui seguenti **5** tab:
 
 > [!tabs]
-> **Passo 1**
+> **Passagio 1**
 >>
 >> Nella finestra visualizzata, inserisci le seguenti 2 informazioni:
 >>
@@ -79,13 +79,13 @@ Segui le fasi di configurazione cliccando successivamente sui seguenti **5** tab
 >>
 >> ![thunderbird](images/configuration-thunderbird-emp-02.png){.thumbnail .w-600}
 >>
-> **Passo 2**
+> **Passagio 2**
 >>
 >> Quando Thunderbird rileva un nome di dominio OVHcloud, viene proposta una configurazione automatica relativa all'offerta MX Plan. Clicca su `MODIFICA CONFIGURAZIONE`{.action}.
 >>
 >> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-600}
 >>
-> **Passo 3**
+> **Passagio 3**
 >>
 >> Impostazioni del server di ricezione:
 >>
@@ -98,7 +98,7 @@ Segui le fasi di configurazione cliccando successivamente sui seguenti **5** tab
 >>
 >> ![thunderbird](images/configuration-thunderbird-emp-04.png){.thumbnail .w-600}
 >>
-> **Passo 4**
+> **Passagio 4**
 >>
 >> Impostazioni del server di invio:
 >>
@@ -114,7 +114,7 @@ Segui le fasi di configurazione cliccando successivamente sui seguenti **5** tab
 >>
 >> ![thunderbird](images/configuration-thunderbird-emp-05.png){.thumbnail .w-600}
 >>
-> **Passo 5**
+> **Passagio 5**
 >>
 >> Inserisci la password associata all'indirizzo email e clicca su `Avanti`{.action} per completare la configurazione.
 >>
@@ -125,7 +125,7 @@ Segui le fasi di configurazione cliccando successivamente sui seguenti **5** tab
 >
 > **Configurazione POP**
 >
-> Se desideri una configurazione POP per il tuo indirizzo email, sostituisci le impostazioni del **Passo 3** con le seguenti:
+> Se desideri una configurazione POP per il tuo indirizzo email, sostituisci le impostazioni del **passagio 3** con le seguenti:
 >
 > Impostazioni del server di ricezione:
 >

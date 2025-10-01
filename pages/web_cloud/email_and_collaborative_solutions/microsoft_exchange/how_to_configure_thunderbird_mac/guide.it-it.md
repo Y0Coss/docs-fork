@@ -1,5 +1,5 @@
 ---
-title: 'Exchange - Configurare l'indirizzo e-mail su Thunderbird per macOS'
+title: "Exchange - Configurare l'indirizzo e-mail su Thunderbird per macOS"
 excerpt: 'Scopri come configurare il tuo indirizzo e-mail Exchange su Thunderbird per macOS'
 updated: 2025-09-19
 ---
@@ -37,7 +37,7 @@ I conti Exchange possono essere configurati su diversi software di posta elettro
 
 Questo manuale ti mostra come utilizzare le soluzioni OVHcloud con strumenti esterni e le modifiche da apportare in contesti specifici. Potrebbe essere necessario adattare le istruzioni in base alla tua situazione.
 
-Se riscontri difficoltà nell'esecuzione di queste operazioni, ti consigliamo di contattare un [fornitore di servizi specializzato](/links/partner) e/o di discuterne con la nostra comunità. OVHcloud non può fornire supporto tecnico sull'utilizzo di strumenti esterni. Per ulteriori informazioni, consulta la sezione [Vai oltre](#gofurther) di questa guida.
+Se riscontri difficoltà nell'esecuzione di queste operazioni, ti consigliamo di contattare un [fornitore di servizi specializzato](/links/partner) e/o di discuterne con la nostra comunità. OVHcloud non può fornire supporto tecnico sull'utilizzo di strumenti esterni. Per ulteriori informazioni, consulta la sezione [Per saperne di più](#gofurther) di questa guida.
 
 ///
 
@@ -53,7 +53,7 @@ Se riscontri difficoltà nell'esecuzione di queste operazioni, ti consigliamo di
 > 2. Vai alla sezione `Web Cloud`{.action}.
 > 3. Nella sezione `MICROSOFT`, clicca su `Exchange`{.action}.
 > 4. Seleziona la piattaforma desiderata.
-> 5. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni Generali`{.action}.
+> 5. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 
 ### Aggiungere il conto
 
@@ -70,7 +70,7 @@ Se riscontri difficoltà nell'esecuzione di queste operazioni, ti consigliamo di
 Segui le fasi di configurazione cliccando successivamente sui **5** tab sottostanti:
 
 > [!tabs]
-> **Passo 1**
+> **Passagio 1**
 >>
 >> Nella finestra che appare, inserisci le seguenti 2 informazioni:
 >>
@@ -81,13 +81,13 @@ Segui le fasi di configurazione cliccando successivamente sui **5** tab sottosta
 >>
 >> ![thunderbird](images/configuration-thunderbird-exchange-02.png){.thumbnail .w-600}
 >>
-> **Passo 2**
+> **Passagio 2**
 >>
 >> Quando Thunderbird rileva un dominio OVHcloud, viene proposta una configurazione automatica relativa all'offerta MX Plan. Clicca su `MODIFICA CONFIGURAZIONE`{.action}.
 >>
 >> ![thunderbird](images/configuration-thunderbird-ssl0-03.png){.thumbnail .w-600}
 >>
-> **Passo 3**
+> **Passagio 3**
 >>
 >> Impostazioni del server di ricezione:
 >>
@@ -100,7 +100,7 @@ Segui le fasi di configurazione cliccando successivamente sui **5** tab sottosta
 >>
 >> ![thunderbird](images/configuration-thunderbird-exchange-04.png){.thumbnail .w-600}
 >>
-> **Passo 4**
+> **Passagio 4**
 >>
 >> Impostazioni del server di invio:
 >>
@@ -111,12 +111,12 @@ Segui le fasi di configurazione cliccando successivamente sui **5** tab sottosta
 >>  - **Metodo di autenticazione** : Password normale
 >>  - **Nome utente** : Il tuo indirizzo e-mail completo
 >> 
->> 1\. Clicca su `Testa`{.action} per verificare le impostazioni inserite.
->> 2\. Clicca su `Continua`{.action} per confermare queste impostazioni.
+>> 1. Clicca su `Testa`{.action} per verificare le impostazioni inserite.
+>> 2. Clicca su `Continua`{.action} per confermare queste impostazioni.
 >>
 >> ![thunderbird](images/configuration-thunderbird-exchange-05.png){.thumbnail .w-600}
 >>
-> **Passo 5**
+> **Passagio 5**
 >>
 >> Inserisci la password associata all'indirizzo e-mail, quindi clicca su `Continua`{.action} per completare la configurazione.
 >>
@@ -127,7 +127,7 @@ Segui le fasi di configurazione cliccando successivamente sui **5** tab sottosta
 >
 > **Configurazione POP**
 >
-> Se desideri una configurazione POP per il tuo indirizzo e-mail, sostituisci le impostazioni del **passo 3** con le seguenti:
+> Se desideri una configurazione POP per il tuo indirizzo e-mail, sostituisci le impostazioni del **passagio 3** con le seguenti:
 >
 > Impostazioni del server di ricezione:
 >
@@ -146,7 +146,7 @@ OVHcloud offre anche un'applicazione web che ti permette di accedere al tuo indi
 
 ### Recuperare un backup del tuo indirizzo e-mail
 
-Se devi effettuare un'operazione che potrebbe causare la perdita dei dati del tuo account e-mail, ti consigliamo di effettuare un backup preventivo dell'account e-mail interessato. Per farlo, consulta il paragrafo "**Esportare**" nella sezione "**Thunderbird**" della nostra guida "[Migrare manualmente il tuo indirizzo e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+Se devi effettuare un'operazione che potrebbe causare la perdita dei dati del tuo account e-mail, ti consigliamo di effettuare un backup preventivo dell'account e-mail interessato. Per farlo, consulta il paragrafo "**Esportare**" nella sezione "**Thunderbird**" della nostra guida "[Migra manualmente il tuo indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modificare le impostazioni esistenti
 
@@ -172,9 +172,9 @@ Se il tuo account e-mail è già configurato e devi accedere alle impostazioni d
 >
 > Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dal client di posta elettronica Thunderbird, consulta [il centro di supporto di Mozilla](https://support.mozilla.org/products/thunderbird).
 
-[Primi passi con il servizio Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+[Iniziare a utilizzare Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-[Primi passi con il servizio Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
+[Iniziare a utilizzare Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
 
