@@ -23,6 +23,7 @@ Dans ce cas, vous pouvez vous connecter à votre serveur via le mode rescue d’
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!primary]
+>
 > Ce guide ne s'applique pas aux installations de **Windows** Server. Consultez nos guides « [Comment changer le mot de passe administrateur sur un serveur dédié Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) » et « [Comment changer le mot de passe administrateur sur un VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password) ».
 >
 
@@ -43,7 +44,7 @@ N'oubliez pas de consulter également nos guides de premiers pas :
 
 <a name="step1"></a>
 
-### Étape 1 : redémarrer le serveur en mode rescue
+### Étape 1 - Redémarrer le serveur en mode rescue
 
 Suivez les étapes de nos guides sur le mode rescue pour vous connecter à votre serveur et monter vos partitions :
 
@@ -64,40 +65,29 @@ La commande exacte dépend du point de montage utilisé. Par exemple, si vous av
 chroot /mnt/
 ```
 
-### Étape 2 : réinitialiser le mot de passe de l'utilisateur
+### Étape 2 - Identifier le(s) compte(s) utilisateur et réinitialiser le mot de passe
 
-Avant de changer le mot de passe de l'utilisateur, **vérifiez sur quel compte vous êtes connecté** grâce à la commande ci-dessous :
+Après avoir monté la partition et exécuté `chroot /mnt` (ou l'équivalent), vous disposez des privilèges **root** sur le système monté.
 
-```bash
-whoami
-```
-
-Exemples de sortie : `debian`, `ubuntu`, `user1`, etc.
-
-Si le compte affiché est bien celui de l'utilisateur concerné, utilisez la commande suivante pour modifier son mot de passe :
+Si besoin, avant de modifier un mot de passe, **identifiez les comptes existants** avec la commande suivante :
 
 ```bash
-passwd
+cat /etc/passwd
 ```
 
-Renseignez le nouveau mot de passe :
+Pour changer le mot de passe d’un compte précis (par exemple : **user1**), spécifiez toujours le nom d’utilisateur :
 
-```text
-New password: 
-Retype new password:
-passwd: password updated successfully
+```bash
+passwd user1
+# New password:
+# Retype new password:
+# passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> Sur une distribution GNU/Linux, **une invite de mot de passe n'affiche pas vos entrées clavier**.
-
-Si ce n’est pas le bon compte, déconnectez-vous puis reconnectez-vous en SSH avec l’utilisateur cible, puis modifiez son mot de passe.
-
-> [!warning]
->
-> La commande `passwd` sans argument modifie le mot de passe du compte affiché par `whoami`.
-> Vérifiez toujours l’utilisateur courant avant d'exécuter cette commande.
+> Évitez d'exécuter la commande `passwd` sans argument : cette commande modifie le mot de passe du compte courant (qui est souvent **root** après l'exécution d'un `chroot`).
+> Indiquez systématiquement `passwd <utilisateur>`.
 
 Pensez à utiliser le mode de démarrage **normal** de votre serveur lorsque vous le redémarrez depuis votre [espace client OVHcloud](/links/manager).
 

@@ -4,10 +4,6 @@ excerpt: "Saiba como configurar uma nova palavra-passe para uma conta de utiliza
 updated: 2024-02-19
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 Sem um outro modo de autenticação ou uma conta de utilizador, a perda da palavra-passe significa que não é possível iniciar sessão no servidor normalmente.
@@ -27,6 +23,7 @@ Neste caso, pode ligar-se ao seu servidor através do modo rescue da OVHcloud, q
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 > [!primary]
+>
 > Este manual não se aplica a instalações do **Windows** Server. Consulte os nossos manuais "[Como alterar a palavra-passe de administrador num servidor dedicado Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)" e "[Como alterar a palavra-passe de administrador num VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".
 >
 
@@ -47,7 +44,7 @@ Não se esqueça de consultar também os nossos guias de primeiros passos:
 
 <a name="step1"></a>
 
-### Etapa 1: reiniciar o servidor em modo rescue
+### Etapa 1 - Reiniciar o servidor em modo rescue
 
 Siga as etapas dos nossos manuais sobre o modo rescue para se ligar ao seu servidor e montar as suas partições:
 
@@ -68,40 +65,29 @@ O comando exato depende do ponto de montagem utilizado. Por exemplo, se tiver mo
 chroot /mnt/
 ```
 
-### Etapa 2: reinicializar a palavra-passe do utilizador
+### Etapa 2 - Identificar a(s) conta(s) de usuário e redefinir a senha
 
-Antes de alterar a senha do usuário, **verifique em qual conta você está conectado** usando o seguinte comando:
+Após montar a partição e executar `chroot /mnt` (ou o equivalente), você terá privilégios root no sistema montado.
 
-```bash
-whoami
-```
-
-Exemplos de saída: `debian`, `ubuntu`, `user1`, etc.
-
-Se a conta exibida estiver correta, use o seguinte comando para modificar sua senha:
+Se necessário, antes de alterar uma senha, **identifique as contas existentes** com o seguinte comando:
 
 ```bash
-passwd
+cat /etc/passwd
 ```
 
-Insira a nova senha:
+Para alterar a senha de uma conta específica (por exemplo: **user1**), sempre especifique o nome do usuário:
 
-```text
-New password: 
-Retype new password:
-passwd: password updated successfully
+```bash
+passwd user1
+# New password:
+# Retype new password:
+# passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> Em uma distribuição GNU/Linux, **uma solicitação de senha não exibe as teclas digitadas**.
-
-Se não for a conta correta, desconecte-se e reconecte-se via SSH com o usuário alvo, em seguida altere sua senha.
-
-> [!warning]
->
-> O comando `passwd` sem argumentos modifica a senha da conta exibida por `whoami`.
-> Sempre verifique o usuário atual antes de executar este comando.
+> Evite executar o comando `passwd` sem argumentos: este comando modifica a senha da conta atual (que é frequentemente **root** após a execução de `chroot`).
+> Sempre especifique `passwd <usuário>`.
 
 Lembre-se de utilizar o modo de arranque **normal** do seu servidor quando o reiniciar a partir da sua [Área de Cliente OVHcloud](/links/manager).
 

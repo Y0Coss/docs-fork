@@ -4,11 +4,6 @@ excerpt: "Dowiedz się, jak skonfigurować nowe hasło dla konta użytkownika w 
 updated: 2024-02-19
 ---
 
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji” na tej stronie.
->
-
 ## Wprowadzenie
 
 Bez alternatywnego uwierzytelniania lub innego konta użytkownika utrata hasła oznacza, że nie można się normalnie połączyć z serwerem.
@@ -28,6 +23,7 @@ W takim przypadku możesz zalogować się do Twojego serwera za pomocą trybu Re
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 > [!primary]
+>
 > Ten przewodnik nie dotyczy instalacji **Windows* Server. Zapoznaj się z naszymi przewodnikami "[Jak zmienić hasło administratora na serwerze dedykowanym Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)" i "[Jak zmienić hasło administratora na serwerze VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".
 >
 
@@ -48,7 +44,7 @@ Sprawdź również nasze przewodniki:
 
 <a name="step1"></a>
 
-### Etap 1: restart serwera w trybie rescue
+### Etap 1 - Restart serwera w trybie rescue
 
 Postępuj zgodnie z instrukcjami zawartymi w przewodnikach dotyczących trybu Rescue, aby połączyć się z serwerem i zamontować partycje:
 
@@ -69,47 +65,35 @@ Dokładne sterowanie zależy od użytego punktu montowania. Na przykład, jeśli
 chroot /mnt/
 ```
 
-### Etap 2: resetowanie hasła użytkownika
+### Etap 2 - Zidentyfikowanie kont użytkownika i zresetowanie hasła
 
-Przed zmianą hasła użytkownika **sprawdź, na jakim koncie jesteś zalogowany**, używając poniższego polecenia:
+Po zamontowaniu partycji i uruchomieniu `chroot /mnt` (lub odpowiednika), masz uprawnienia root do zamontowanego systemu.
 
-```bash
-whoami
-```
-
-Przykłady wyjścia: `debian`, `ubuntu`, `user1`, itp.
-
-Jeśli wyświetlony konto jest poprawne, użyj poniższego polecenia, aby zmienić hasło:
+Jeśli to konieczne, przed zmianą hasła **zidentyfikuj istniejące konta** za pomocą poniższego polecenia:
 
 ```bash
-passwd
+cat /etc/passwd
 ```
 
-Wprowadź nowe hasło:
+Aby zmienić hasło dla konkretnego konta (np. **user1**), zawsze podaj nazwę użytkownika:
 
-```text
-New password: 
-Retype new password:
-passwd: password updated successfully
+```bash
+passwd user1
+# New password:
+# Retype new password:
+# passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> W przypadku dystrybucji GNU/Linux **prośba o hasło nie wyświetla wpisywanych znaków**.
-
-Jeśli to nie jest poprawne konto, wyloguj się i ponownie zaloguj się przez SSH z użytkownikiem docelowym, a następnie zmień jego hasło.
-
-> [!warning]
->
-> Polecenie `passwd` bez argumentów zmienia hasło konta wyświetlanego przez `whoami`.
-> Zawsze sprawdzaj aktualnego użytkownika przed wykonaniem tego polecenia.
+> Unikaj uruchamiania polecenia `passwd` bez argumentów: to polecenie zmienia hasło dla konta bieżącego (które często jest **root** po uruchomieniu `chroot`).
+> Zawsze podawaj `passwd <użytkownik>`.
 
 Pamiętaj, aby podczas restartu serwera z poziomu [Panelu klienta OVHcloud](/links/manager) użyć trybu uruchamiania **normalnego** Twojego serwera.
 
 W razie potrzeby sprawdź przewodnik [Tryb ratunkowy](#step1).
 
 Teraz masz dostęp do serwera za pomocą nowego hasła.
-
 
 ## Sprawdź również
 

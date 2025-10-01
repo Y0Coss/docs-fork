@@ -4,11 +4,6 @@ excerpt: "Scopri come configurare una nuova password per un account utente su un
 updated: 2024-02-19
 ---
 
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 Senza un’altra modalità di autenticazione o un altro account utente, la perdita della password significa che non è più possibile connettersi al server in modo normale.
@@ -28,6 +23,7 @@ In questo caso, è possibile accedere al server tramite la modalità Rescue di O
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!primary]
+>
 > Questa guida non si applica alle installazioni di **Windows** Server. Consulta le nostre guide "[Come cambiare la password amministratore su un server dedicato Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)" e "[Come cambiare la password amministratore su un VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".
 >
 
@@ -48,7 +44,7 @@ Non dimenticare di consultare anche le nostre guide di primo passo:
 
 <a name="step1"></a>
 
-### Step 1: riavvia il server in modalità Rescue
+### Step 1 - Riavvia il server in modalità Rescue
 
 Segui gli step delle nostre guide in modalità Rescue per connetterti al tuo server e montare le tue partizioni:
 
@@ -69,47 +65,35 @@ Il comando esatto dipende dal punto di montaggio utilizzato. Ad esempio, se la p
 chroot /mnt/
 ```
 
-### Step 2: reimposta la password dell'utente
+### Passo 2 - Identificare l'account utente e reimpostare la password
 
-Prima di modificare la password dell'utente, **verifica su quale account sei connesso** utilizzando il comando seguente:
+Dopo aver montato la partizione ed eseguito `chroot /mnt` (o l'equivalente), disponi dei privilegi root sul sistema montato.
 
-```bash
-whoami
-```
-
-Esempi di output: `debian`, `ubuntu`, `user1`, ecc.
-
-Se l'account visualizzato è corretto, utilizza il comando seguente per modificare la password:
+Se necessario, prima di modificare una password, **identifica gli account esistenti** con il comando seguente:
 
 ```bash
-passwd
+cat /etc/passwd
 ```
 
-Inserisci la nuova password:
+Per modificare la password di un account specifico (ad esempio: **user1**), specifica sempre il nome utente:
 
-```text
-New password: 
-Retype new password:
-passwd: password updated successfully
+```bash
+passwd user1
+# New password:
+# Retype new password:
+# passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> Su una distribuzione GNU/Linux, **una richiesta di password non visualizza le tue tastiere**.
-
-Se non è l'account corretto, disconnettiti e riconnettiti tramite SSH con l'utente obiettivo, quindi modifica la sua password.
-
-> [!warning]
->
-> Il comando `passwd` senza argomenti modifica la password dell'account visualizzato da `whoami`.
-> Verifica sempre l'utente corrente prima di eseguire questo comando.
+> Evita di eseguire il comando `passwd` senza argomenti: questo comando modifica la password dell'account corrente (che è spesso **root** dopo l'esecuzione di `chroot`).
+> Specifica sempre `passwd <utente>`.
 
 Utilizza la modalità di avvio **normal** del tuo server quando lo riavvii dallo [Spazio Cliente OVHcloud](/links/manager).
 
 Se necessario, consulta la [guida del Rescue mode](#step1).
 
 A questo punto, sarà possibile accedere al server con la nuova password.
-
 
 ## Per saperne di più
 

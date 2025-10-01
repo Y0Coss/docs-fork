@@ -4,10 +4,6 @@ excerpt: "Cómo configurar una nueva contraseña para una cuenta de usuario en u
 updated: 2024-02-19
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
-
 ## Objetivo
 
 Sin otro modo de autenticación u otra cuenta de usuario, la pérdida de su contraseña significa que no podrá conectarse a su servidor de forma normal.
@@ -47,7 +43,7 @@ No olvide consultar también nuestras guías de primeros pasos:
 
 <a name="step1"></a>
 
-### Paso 1: reiniciar el servidor en modo de rescate
+### Paso 1 - Reiniciar el servidor en modo de rescate
 
 Siga los pasos de nuestras guías sobre el modo de rescate para conectarse a su servidor y montar sus particiones:
 
@@ -69,40 +65,29 @@ El comando exacto depende del punto de montaje utilizado. Por ejemplo, si ha mon
 chroot /mnt/
 ```
 
-### Paso 2: restablecer la contraseña del usuario
+### Paso 2 - Identificar la(s) cuenta(s) de usuario y restablecer la contraseña
 
-Antes de cambiar la contraseña del usuario, **verifique en qué cuenta está conectado** mediante el siguiente comando:
+Después de montar la partición y ejecutar `chroot /mnt` (o el equivalente), dispone de privilegios **root** en el sistema montado.
 
-```bash
-whoami
-```
-
-Ejemplos de salida: `debian`, `ubuntu`, `user1`, etc.
-
-Si la cuenta mostrada es la correcta, utilice el siguiente comando para modificar su contraseña:
+Si es necesario, antes de modificar una contraseña, **identifique las cuentas existentes** con el siguiente comando:
 
 ```bash
-passwd
+cat /etc/passwd
 ```
 
-Introduzca la nueva contraseña:
+Para cambiar la contraseña de una cuenta específica (por ejemplo: **user1**), siempre especifique el nombre de usuario:
 
-```text
-New password: 
-Retype new password:
-passwd: password updated successfully
+```bash
+passwd user1
+# New password:
+# Retype new password:
+# passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> En una distribución GNU/Linux, **una solicitud de contraseña no muestra las teclas que introduce**.
-
-Si no es la cuenta correcta, desconéctese y vuelva a conectarse por SSH con el usuario objetivo, y luego cambie su contraseña.
-
-> [!warning]
->
-> El comando `passwd` sin argumentos modifica la contraseña de la cuenta mostrada por `whoami`.
-> Siempre verifique el usuario actual antes de ejecutar este comando.
+> Evite ejecutar el comando `passwd` sin argumentos: este comando modifica la contraseña de la cuenta actual (que suele ser **root** después de ejecutar `chroot`).
+> Indiquez systématiquement `passwd <usuario>`.
 
 Recuerde utilizar el modo de arranque **normal** del servidor al reiniciarlo desde el [área de cliente de OVHcloud](/links/manager).
 
