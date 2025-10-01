@@ -17,7 +17,7 @@ This web interface gathers all the essential information about your resources.
 - You must be an administrator contact of the [Hosted Private Cloud](/links/hosted-private-cloud/vmware) infrastructure, in order to receive login credentials.
 - An active user ID (created in the [OVHcloud Control Panel](/links/manager)).
 
-## Practice
+## Instructions
 
 ### Accessing vScope
 
