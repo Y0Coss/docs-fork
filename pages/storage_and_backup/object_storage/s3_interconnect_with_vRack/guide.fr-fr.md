@@ -43,9 +43,8 @@ Pour ce faire, plusieurs moyens existent :
 - Utilisation des Bucket Policies Object Storage : cette fonctionnalité n'est pas encore implémentée, elle sera bientôt disponible.
 - Utilisation des User Policies où vous pouvez explicitement whitelister un ensemble d'adresses IP
   
-#### Politique utilisateur (User Policies)
+#### Implémentation de la politique utilisateur (User Policies)
 
-#### Contexte
 
 Tout d'abord, voici un rappel du processus actuel d'évaluation des autorisations utilisateur :
 
