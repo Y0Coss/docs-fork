@@ -25,7 +25,7 @@ An access certificate is only valid for the domain for which it was generated.
 
 > [!warning]
 >
-> Only the certificate creation with a CSR are covered by the PCI-DSS certification.
+> Only the certificate creation with a CSR is covered by the PCI-DSS certification.
 >
 
 ### Create an access certificate from the KMS

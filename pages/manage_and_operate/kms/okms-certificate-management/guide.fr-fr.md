@@ -25,7 +25,7 @@ Un certificat d'accès n'est valable que pour le domaine pour lequel il a été 
 
 > [!warning]
 >
-> Seule la génération de certificat avec un CSR est couvert par la certification PCI-DSS.
+> Seule la génération de certificat avec un CSR est couverte par la certification PCI-DSS.
 >
 
 ### Créer un certificat d'accès depuis le KMS
