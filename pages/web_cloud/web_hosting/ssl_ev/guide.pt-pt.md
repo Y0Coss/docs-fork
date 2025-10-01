@@ -135,7 +135,7 @@ Clique nos separadores abaixo para exibir sucessivamente cada um dos **6** passo
 >>
 >> Clique em `Continuer`{.action} depois de **todos os elementos** estarem corretamente inseridos.
 >>
-Continue a encomenda até ao pagamento para validar o pedido de criação do certificado SSL.
+>> Continue a encomenda até ao pagamento para validar o pedido de criação do certificado SSL.
 
 > [!alert]
 >
