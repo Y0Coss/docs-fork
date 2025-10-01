@@ -72,6 +72,9 @@ In our scenario,  we will allow all operations to specific IPs by whitelisting t
 } 
 ```
 
+To set this new policy to your S3 user, please follow the different steps shared in the  « [Object Storage - Identity and access management](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) » guide, and finalise the interconnection between your Object Storage resources and those within your vRack private network.
+
+
 ## Go further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
