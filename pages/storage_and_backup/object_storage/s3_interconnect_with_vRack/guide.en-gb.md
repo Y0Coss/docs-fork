@@ -37,21 +37,40 @@ In order to create and configure both a Public Cloud Gateway and a vRack Private
 Once the Gateway has been created and associated to a vRack Private Network, the next step is to whitelist a set of IPs from your Object Storage. To do so, there are multiple ways:
 
  - Using Object Storage Bucket Policies: The feature is not yet implemented but will be soon available. 
- - Using Object Storage User Policies where you can explicitely witelist IP ranges that can work with Object Storage resources
+ - Using Object Storage User Policies where you can explicitely whitelist IP ranges that can work with Object Storage resources
 
 #### User Policies
 
+#### Context
 First as a quick reminder, here is how today user permissions are evaluated:
 
-1. if exists, evaluate user policy else fallback to ACLs
- 1. check for an explicit deny: if there is an explicit deny, then deny permission, else, check for an explicit allow
-  2. check for an explicit allow: if there is an explicit allow, then allow permission
-    c. if there is no explicit deny nor explicit allow, then fallback to ACLs
-3. fallback to ACLs
+1. if exists, evaluate user policy, else fallback to ACLs
+   1. check for an explicit deny: if there is an explicit deny, then deny permission, else, check for an explicit allow
+   2.  check for an explicit allow: if there is an explicit allow, then allow permission
+   3.  if there is no explicit deny nor explicit allow, then fallback to ACLs
+2. fallback to ACLs
 
-In our scenario we 
+This evaluation process will be subject to change with the upcoming implementation of bucket policies.
 
-After this last step, you will be ready to use your Object Storage together with resources connected to a vRack Private Network.
+#### Implementation
+
+In our scenario,  we will allow all operations to specific IPs by whitelisting authorized IPs wit the following policy statement:
+
+```json
+{
+  "Statement": [{
+    "Sid": "ExampleStatement01",
+    "Effect": "Allow",
+    "Action": "s3:*",
+    "Resource": ["*"],
+    "Condition": {
+      "IpAddress": {
+        "aws:SourceIp": "10.0.0.5/16"
+      }
+    }
+  }]
+} 
+```
 
 ## Go further
 
