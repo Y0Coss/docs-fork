@@ -1,7 +1,7 @@
 ---
 title: "Générer un certificat d'accès OKMS"
 excerpt: "Gérez vos certificats d'accès pour vos produits de Data Security"
-updated: 2025-09-18
+updated: 2025-10-01
 ---
 
 ## Objectif
@@ -22,6 +22,11 @@ Les certificats d'accès à un domaine OKMS sont utilisés pour le produit **Key
 
 Celui-ci sera utilisé pour toute interaction avec le domaine, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec celles-ci.
 Un certificat d'accès n'est valable que pour le domaine pour lequel il a été généré.
+
+> [!warning]
+>
+> Seule la génération de certificat avec un CSR est couvert par la certification PCI-DSS.
+>
 
 ### Créer un certificat d'accès depuis le KMS
 

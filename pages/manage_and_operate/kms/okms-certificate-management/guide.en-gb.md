@@ -1,7 +1,7 @@
 ---
 title: "Manage your OKMS access certificate"
 excerpt: "Manage your access certificate for your Data Security products"
-updated: 2025-09-18
+updated: 2025-10-01
 ---
 
 ## Objective
@@ -22,6 +22,11 @@ To communicate with your OKMS domain, you will need to create an access certific
 Access certificate to an OKMS domain are used for the **Key Management Service (KMS)**. This will be used for any interaction with the domain, either to create encryption keys or to carry out operations with them.
 
 An access certificate is only valid for the domain for which it was generated.
+
+> [!warning]
+>
+> Only the certificate creation with a CSR are covered by the PCI-DSS certification.
+>
 
 ### Create an access certificate from the KMS
 
