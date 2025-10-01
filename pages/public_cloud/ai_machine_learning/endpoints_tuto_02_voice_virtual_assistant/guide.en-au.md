@@ -52,7 +52,7 @@ OVH_AI_ENDPOINTS_ACCESS_TOKEN=<ai-endpoints-api-token>
 
 **Make sure to replace the token value (`OVH_AI_ENDPOINTS_ACCESS_TOKEN`) by yours.** If you do not have one yet, follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cloud/ai_machine_learning/endpoints_guide_01_getting_started) guide.
 
-In this tutorial, we will be using the `Whisper-Large-V3` and `Mixtral-8x7b-Instruct-V01` models. Feel free to chosse alternative models available on the [AI Endpoints catalog](https://catalog.endpoints.ai.ovh.net/).
+In this tutorial, we will be using the `Whisper-Large-V3` and `Mixtral-8x7b-Instruct-V01` models. Feel free to choose alternative models available on the [AI Endpoints catalog](https://catalog.endpoints.ai.ovh.net/).
 
 Then, create a `requirements.txt` file with the following libraries:
 
