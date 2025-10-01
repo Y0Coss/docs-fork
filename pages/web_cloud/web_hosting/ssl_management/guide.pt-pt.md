@@ -238,13 +238,15 @@ Clique nos separadores abaixo para exibir sucessivamente cada um dos **6** passo
 >>
 > **Etapa 6**
 >>
-Selecione o **Certificado SSL Sectigo EV** uma vez chegado o túnel de encomenda e prossiga a encomenda.
+>> Selecione o **Certificado SSL Sectigo EV** uma vez chegado o túnel de encomenda e prossiga a encomenda.
 >>
 >> Insira com exatidão as informações solicitadas por **Sectigo** antes que lhe seja emitido o certificado SSL Sectigo EV. 
 >>
 >> ![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 >>
 >> Clique em `Continuer`{.action} depois de **todos os elementos** estarem corretamente inseridos.
+>>
+>> Continue a encomenda até ao pagamento para validar o pedido de criação do certificado SSL.
 
 > [!alert]
 >
