@@ -28,7 +28,7 @@ To successfully update your Kubernetes cluster plan within OVHcloud, ensure you 
 
 While this guide focuses on your current plan, it can be helpful to understand the differences between the Free and Standard plans. The Standard plan offers additional features such as cross-AZ resilience, higher availability SLA, dedicated etcd, and larger maximum cluster size.
 
-For a complete overview, including a detailed comparison table between Free and Standard, please refer to our [MKS Standard Plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium#comparison-plan-array) guide. The table in that guide provides a clear side-by-side comparison of key features.
+For a complete overview, including a detailed comparison table between Free and Standard, please refer to the `Free vs Standard comparison` part of our [MKS Standard Plan](/pages/public_cloud/containers_orchestration/managed_kubernetes/premium) guide. The table in that guide provides a clear side-by-side comparison of key features.
 
 ## Instructions
 
@@ -130,13 +130,13 @@ Choose the documentation corresponding to the tool you are using:
 >> Monitor events and logs if some workloads do not start as expected.
 >>
 > **Via Trilio**
->> Follow the step 4 in the **restoring** part of this [guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio/#restoring-mysql-qa-helm-release-backup).
+>> Follow the step 4 in the **Restoring mysql-qa Helm Release Backup** part of our [guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio).
 >>
 > **Via CloudCasa**
 >> Follow the step 6 of this [guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa/#step6-----Run a restore operation).
 >>
 
-5. **Validate the Migration**
+1. **Validate the Migration**
 
 After restoring your workloads, check that the cluster is fully functional:
 
