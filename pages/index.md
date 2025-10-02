@@ -254,7 +254,7 @@
     + [Virtual Private Servers](products/bare-metal-cloud-virtual-private-servers)
         + [Getting started](bare-metal-cloud-virtual-private-servers-getting-started)
             + [How to get started with a VPS](bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
-            + [FAQ](bare_metal_cloud/virtual_private_servers/vps-faq)
+            + [VPS FAQ](bare_metal_cloud/virtual_private_servers/vps-faq)
             + [How to configure user accounts and root access on a server](bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
             + [How to secure a VPS](bare_metal_cloud/virtual_private_servers/secure_your_vps)
             + [How to install an SSL certificate on a VPS](bare_metal_cloud/virtual_private_servers/install-ssl-certificate)
