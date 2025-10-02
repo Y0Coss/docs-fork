@@ -73,14 +73,14 @@ Vous trouverez aussi dans ce guide d'autres opérations utiles concernant les co
 
 Avant de commencer, munissez-vous des informations suivantes. Elles doivent être fournies par le prestataire délivrant le connecteur d'envoi.
 
-- l'adresse du serveur d'envoi (SMTP)
-- le port utilisé pour l'envoi (exemple: 587)
-- le nom d'utilisateur associé (exemple: une adresse e-mail) , **peut être optionnel selon votre connecteur d'envoi**.
-- le mot de passe associé au nom d'utilisateur , **peut être optionnel selon votre connecteur d'envoi**.
+- L'adresse du serveur d'envoi (SMTP)
+- Le port utilisé pour l'envoi (exemple: 587)
+- Le nom d'utilisateur associé (exemple: une adresse e-mail) , **peut être optionnel selon votre connecteur d'envoi**.
+- Le mot de passe associé au nom d'utilisateur , **peut être optionnel selon votre connecteur d'envoi**.
 
-Ensuite, connectez-vous aux API OVHcloud avec vos identifiants. N'hésitez pas à vous appuyer de notre guide [Premiers pas avec les API OVHcloud ](/pages/manage_and_operate/api/first-steps).
+Ensuite, connectez-vous aux API OVHcloud avec vos identifiants. N'hésitez pas à vous appuyer de notre guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
-Pour ajouter un connecteur d'envoi à votre plateforme Exchange, utiliser l'appel API suivant.
+Pour ajouter un connecteur d'envoi à votre plateforme Exchange, utilisez l'appel API suivant :
 
 > [!api]
 >
@@ -88,19 +88,19 @@ Pour ajouter un connecteur d'envoi à votre plateforme Exchange, utiliser l'appe
 
 Dans la section **PATH PARAMETERS**:
 
-- `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
-- `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 
-Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, complété les champs avec vos valeurs: 
+Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, complétez les champs avec vos valeurs : 
 
-- `displayName` : nom d'affichage de votre connecteur d'envoi.
-- `maxSendSize` : taille maximale, en MB, d'un e-mail lors d'un envoi (100MB maximum et par défaut si vous ne mettez rien).
-- `password` : mot de passe attaché à l'utilisateur du connecteur d'envoi.
-- `port` : port utilisé pour l'envoi.
-- `requireTLS` : utiliser le protocole de sécurité TLS à l'envoi.
-- `smartHost` : adresse du connecteur d'envoi (SMTP).
-- `smartHostAuthMechanism` : mécanisme d'authentification utilisé pour le connecteur d'envoi.
-- `user` : utilisateur associé au connecteur d'envoi.
+- `displayName` : Nom d'affichage de votre connecteur d'envoi.
+- `maxSendSize` : Taille maximale, en MB, d'un e-mail lors d'un envoi (100MB maximum et par défaut si vous ne mettez rien).
+- `password` : Mot de passe attaché à l'utilisateur du connecteur d'envoi.
+- `port` : Port utilisé pour l'envoi.
+- `requireTLS` : Utilisez le protocole de sécurité TLS à l'envoi.
+- `smartHost` : Adresse du connecteur d'envoi (SMTP).
+- `smartHostAuthMechanism` : Mécanisme d'authentification utilisé pour le connecteur d'envoi.
+- `user` : Utilisateur associé au connecteur d'envoi.
 
 > [!primary]
 >
@@ -120,7 +120,7 @@ Vous obtenez ce type de résultat :
 }
 ```
 
-Une fois le connecteur d'envoi créé, utilisez l'appel API suivant pour récupérer son ID (identifiant).
+Une fois le connecteur d'envoi créé, utilisez l'appel API suivant pour récupérer son ID (identifiant) :
 
 > [!api]
 >
@@ -128,8 +128,8 @@ Une fois le connecteur d'envoi créé, utilisez l'appel API suivant pour récup�
 
 Dans la section **PATH PARAMETERS**:
 
-- `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
-- `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 
 Cliquez sur `Execute`{.action} pour lancer l'appel API.
 
@@ -149,9 +149,9 @@ Vous pouvez retrouver le détail de votre connecteur d'envoi en utilisant cette 
 
 Dans la section **PATH PARAMETERS**:
 
-- `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
-- `id` : saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à l'étape précédente.
-- `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `id` : Saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à l'étape précédente.
+- `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 
 Cliquez sur `Execute`{.action} pour lancer l'appel API.
 
@@ -177,7 +177,7 @@ Vous obtenez ce type de résultat :
 
 Pour pouvoir envoyer des e-mails via un connecteur d'envoi, il faut l'associer à une ou plusieurs adresses e-mail.
 
-Utiliser l'appel API de paramétrage d'un compte Exchange afin d'ajouter l'ID de votre connecteur d'envoi sur une adresse e-mail :
+Utilisez l'appel API de paramétrage d'un compte Exchange afin d'ajouter l'ID de votre connecteur d'envoi sur une adresse e-mail :
 
 > [!api]
 >
@@ -185,14 +185,14 @@ Utiliser l'appel API de paramétrage d'un compte Exchange afin d'ajouter l'ID de
 
 Dans la section **PATH PARAMETERS**:
 
-- `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
-- `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
-- `primaryEmailAddress` : saisissez une des adresses e-mail de votre plateforme Exchange, sur laquelle vous souhaitez attacher le connecteur d'envoi.
+- `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `primaryEmailAddress` : Saisissez une des adresses e-mail de votre plateforme Exchange, sur laquelle vous souhaitez attacher le connecteur d'envoi.
 
-Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, Nous allons seulement nous intéresser à la ligne relative au connecteur d'envoi :
+Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, modifiez les valeurs des deux champs ci-dessous :
 
-- `sendConnectorId` : saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à [l'étape précédente](#idconnector).
-- Saisissez « true » à la place de « false » à la ligne `deleteVirus` pour ne pas obtenir d'erreur lors de l'exécution de l'appel API
+- `sendConnectorId` : Saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à [l'étape précédente](#idconnector).
+- `deleteVirus` : Saisissez « true » à la place de « false » pour ne pas obtenir d'erreur lors de l'exécution de l'appel API.
 
 Cliquez sur `Execute`{.action} pour lancer l'appel API.
 
@@ -272,14 +272,14 @@ Pour retirer un connecteur d'envoi attaché sur un compte de la plateforme Excha
 
 Dans la section **PATH PARAMETERS**:
 
-- `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
-- `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
-- `primaryEmailAddress` : saisissez une des adresses e-mail de votre plateforme Exchange, sur laquelle vous souhaitez attacher le connecteur d'envoi.
+- `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `primaryEmailAddress` : Saisissez une des adresses e-mail de votre plateforme Exchange, sur laquelle vous souhaitez attacher le connecteur d'envoi.
 
-Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, Nous allons seulement nous intéresser à la ligne relative au connecteur d'envoi :
+Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, modifiez les valeurs des deux champs ci-dessous :
 
-- `sendConnectorId` : saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à [l'étape précédente](#idconnector).
-- Saisissez « true » à la place de « false » à la ligne `deleteVirus` pour ne pas obtenir d'erreur lors de l'exécution de l'appel API
+- `sendConnectorId` : Saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à [l'étape précédente](#idconnector).
+- `deleteVirus` : Saisissez « true » à la place de « false » pour ne pas obtenir d'erreur lors de l'exécution de l'appel API.
 
 Cliquez sur `Execute`{.action} pour lancer l'appel API.
 
@@ -303,14 +303,14 @@ Pour cela, utilisez l'appel API suivant:
 
 Dans la section **PATH PARAMETERS**:
 
-- `domainName` : saisissez le nom de domaine qui bénéficiera du connecteur d'envoi.
-- `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
-- `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `domainName` : Saisissez le nom de domaine qui bénéficiera du connecteur d'envoi.
+- `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
+- `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 
-Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, complété les champs avec vos valeurs:
+Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, complétez les champs avec vos valeurs:
 
-- `sbrDefault ` : laissez vide.
-- `sendConnectorIdDefault` : saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à [cette étape](#idconnector).
+- `sbrDefault ` : Laissez la valeur par défaut.
+- `sendConnectorIdDefault` : Saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à [cette étape](#idconnector).
 
 Vous obtenez le résultat suivant :
 
