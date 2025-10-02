@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Speech to Text
 excerpt: Learn how to transcribe audio files with OVHcloud AI Endpoints
-updated: 2025-10-01
+updated: 2025-10-03
 ---
 
 > [!primary]
@@ -708,7 +708,7 @@ Repeat this process to create multiple chunks, then transcribe each chunk indivi
 
 > [!warning]
 >
-> OVHcloud makes no guarantees about the usability or security of third-party software like `pydub`.
+> OVHcloud makes no guarantees about the usability or security of third-party softwares like `pydub`.
 
 ## Conclusion
 
