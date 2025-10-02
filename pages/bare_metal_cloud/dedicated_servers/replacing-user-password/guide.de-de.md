@@ -1,7 +1,7 @@
 ---
 title: "Wiederherstellen des Serverzugriffs bei Passwortverlust"
 excerpt: "Erfahren Sie hier, wie Sie mit dem OVHcloud Rescue-Modus ein neues Passwort für einen Benutzer-Account auf einem GNU/Linux-Betriebssystem einrichten"
-updated: 2025-09-24
+updated: 2025-10-02
 ---
 
 ## Ziel
@@ -65,24 +65,48 @@ Der exakte Befehl hängt vom verwendeten Mountpunkt ab. Wenn Sie Ihre Partition 
 chroot /mnt/
 ```
 
-### Schritt 2 - Benutzerkonten identifizieren und das Passwort zurücksetzen
+### Schritt 2 - Identifizieren der Benutzerkonten und Zurücksetzen des Kennworts
 
 Nachdem Sie die Partition gemountet und `chroot /mnt` (oder den entsprechenden Befehl) ausgeführt haben, verfügen Sie über **root**-Berechtigungen auf dem System.
 
-Falls erforderlich, identifizieren Sie vor der Änderung eines Passworts **vorhandene Benutzerkonten** mit dem folgenden Befehl:
+Ermitteln Sie ggf. vorhandene Konten mithilfe des folgenden Befehls, bevor Sie ein Kennwort ändern:
 
 ```bash
 cat /etc/passwd
 ```
 
-Um das Passwort eines bestimmten Kontos zu ändern (z. B. **user1**), geben Sie diesen Befehl ein:
+Beispielausgabe (gekürzt):
+
+```console
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+.
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+.
+user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+```
+
+Suchen Sie Ihre(n) Benutzernamen in der Liste der Konten.
+
+Geben Sie folgenden Befehl ein, um das Kennwort für ein bestimmtes Konto zu ändern (z. B. **user1**):
 
 ```bash
 passwd user1
+```
+
+Geben Sie das neue Kennwort zweimal ein und bestätigen Sie:
+
+```console
 # New password:
 # Retype new password:
 # passwd: password updated successfully
 ```
+
+Bei einer GNU/Linux-Distribution zeigt **die Eingabeaufforderung für das Passwort Ihre Tastatureingabe nicht an**.
 
 > [!primary]
 >
@@ -93,7 +117,7 @@ Denken Sie daran, den regulären Startmodus zu verwenden, bevor Sie Ihren Server
 
 Folgen Sie bei Bedarf der passenden [Anleitung zum Rescue-Modus](#step1).
 
-Sie haben nun mit Ihrem neuen Passwort Zugriff auf den Server.
+Das geänderte Benutzerkonto hat nun Zugriff auf den Server mit dem neuen Kennwort.
 
 ## Weiterführende Informationen
 

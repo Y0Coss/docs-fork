@@ -1,7 +1,7 @@
 ---
 title: How to recover server access if your user password is lost
 excerpt: Find out how to configure a new password for a user account on a GNU/Linux operating system with the OVHcloud rescue mode
-updated: 2025-09-24
+updated: 2025-10-02
 ---
 
 ## Objective
@@ -75,25 +75,48 @@ If needed, before changing a password, **identify existing accounts** using the 
 cat /etc/passwd
 ```
 
-To change the password for a specific account (e.g., **user1**), always specify the username:
+Example output (shortened):
+
+```console
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+.
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+.
+user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+```
+
+Find your user name(s) in the list of accounts.  
+To change the password for a specific account (e.g. **user1**), enter this comand:
 
 ```bash
 passwd user1
+```
+
+Enter the new password twice and confirm:
+
+```console
 # New password:
 # Retype new password:
 # passwd: password updated successfully
 ```
 
+On a GNU/Linux distribution, **a password prompt does not display your keyboard input**.
+
 > [!primary]
 >
-> Avoid running the `passwd` command without arguments: This command modifies the password of the current account (which is often **root** after running `chroot`).
+> Avoid running the `passwd` command without arguments: This command modifies the password of the current account (which is **root** after executing `chroot`).  
 > Always specify `passwd <user>`.
 
 Remember to use the regular boot mode of your server when restarting it in your [OVHcloud Control Panel](/links/manager).
 
 Refer to the corresponding [rescue mode guide](#step1) if necessary.
 
-You have now access to the server with your new password.
+The modified user account has now access to the server with the new password.
 
 ## Go further
 

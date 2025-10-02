@@ -1,7 +1,7 @@
 ---
 title: "Comment récupérer l'accès au serveur en cas de perte du mot de passe de l'utilisateur"
 excerpt: "Découvrez comment configurer un nouveau mot de passe pour un compte utilisateur sur un système d'exploitation GNU/Linux avec le mode rescue OVHcloud"
-updated: 2025-09-24
+updated: 2025-10-02
 ---
 
 ## Objectif
@@ -75,14 +75,38 @@ Si besoin, avant de modifier un mot de passe, **identifiez les comptes existants
 cat /etc/passwd
 ```
 
-Pour changer le mot de passe d’un compte précis (par exemple : **user1**), spécifiez toujours le nom d’utilisateur :
+Exemple de résultat (raccourci) :
+
+```console
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+.
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+.
+user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+```
+
+Retrouvez le nom de l'utilisateur dans la liste des comptes.
+
+Pour changer le mot de passe d’un compte précis (par exemple : **user1**), utilisez cette commande :
 
 ```bash
 passwd user1
+```
+
+Renseignez deux fois le nouveau mot de passe :
+
+```console
 # New password:
 # Retype new password:
 # passwd: password updated successfully
 ```
+
+Sur une distribution GNU/Linux, **une invite de mot de passe n'affiche pas vos entrées clavier**.
 
 > [!primary]
 >
@@ -93,7 +117,7 @@ Pensez à utiliser le mode de démarrage **normal** de votre serveur lorsque vou
 
 Consultez le [guide du mode rescue](#step1) si nécessaire.
 
-Vous avez maintenant accès au serveur avec votre nouveau mot de passe.
+Le compte utilisateur modifié a désormais accès au serveur avec le nouveau mot de passe.
 
 ## Aller plus loin
 

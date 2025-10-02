@@ -1,7 +1,7 @@
 ---
 title: "Jak odzyskać dostęp do serwera w przypadku utraty hasła użytkownika"
 excerpt: "Dowiedz się, jak skonfigurować nowe hasło dla konta użytkownika w systemie operacyjnym GNU/Linux w trybie rescue OVHcloud"
-updated: 2024-02-19
+updated: 2025-10-02
 ---
 
 ## Wprowadzenie
@@ -65,24 +65,48 @@ Dokładne sterowanie zależy od użytego punktu montowania. Na przykład, jeśli
 chroot /mnt/
 ```
 
-### Etap 2 - Zidentyfikowanie kont użytkownika i zresetowanie hasła
+### Etap 2 - Identyfikacja konta użytkownika (kont użytkowników) i resetowanie hasła
 
-Po zamontowaniu partycji i uruchomieniu `chroot /mnt` (lub odpowiednika), masz uprawnienia root do zamontowanego systemu.
+Po zamontowaniu partycji i uruchomieniu `chroot /mnt` (lub odpowiednika), masz uprawnienia **root** w zainstalowanym systemie.
 
-Jeśli to konieczne, przed zmianą hasła **zidentyfikuj istniejące konta** za pomocą poniższego polecenia:
+Jeśli to konieczne, przed zmianą hasła **zidentyfikuj istniejące konta** za pomocą następującego polecenia:
 
 ```bash
 cat /etc/passwd
 ```
 
-Aby zmienić hasło dla konkretnego konta (np. **user1**), zawsze podaj nazwę użytkownika:
+Przykład wyniku (skrócony):
+
+```console
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+.
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+.
+user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+```
+
+Znajdź Twoją nazwę użytkownika (lub nazwy użytkowników) na liście kont.
+
+Aby zmienić hasło dla wybranego konta (na przykład: **user1**), wpisz poniższe polecenie:
 
 ```bash
 passwd user1
+```
+
+Dwukrotnie wpisz nowe hasło i potwierdź:
+
+```console
 # New password:
 # Retype new password:
 # passwd: password updated successfully
 ```
+
+W dystrybucji GNU/Linux **monit o hasło nie wyświetla danych wejściowych z klawiatury**.
 
 > [!primary]
 >
@@ -93,7 +117,7 @@ Pamiętaj, aby podczas restartu serwera z poziomu [Panelu klienta OVHcloud](/lin
 
 W razie potrzeby sprawdź przewodnik [Tryb ratunkowy](#step1).
 
-Teraz masz dostęp do serwera za pomocą nowego hasła.
+Zmodyfikowane konto użytkownika ma teraz dostęp do serwera z nowym hasłem.
 
 ## Sprawdź również
 

@@ -1,7 +1,7 @@
 ---
 title: "Como recuperar o acesso ao servidor em caso de perda da palavra-passe do utilizador"
 excerpt: "Saiba como configurar uma nova palavra-passe para uma conta de utilizador num sistema operativo GNU/Linux com o modo rescue OVHcloud"
-updated: 2024-02-19
+updated: 2025-10-02
 ---
 
 ## Objetivo
@@ -67,7 +67,7 @@ chroot /mnt/
 
 ### Etapa 2 - Identificar a(s) conta(s) de usuário e redefinir a senha
 
-Após montar a partição e executar `chroot /mnt` (ou o equivalente), você terá privilégios root no sistema montado.
+Depois de montar a partição e executar `chroot /mnt` (ou equivalente), dispõe dos privilégios **root** no sistema montado.
 
 Se necessário, antes de alterar uma senha, **identifique as contas existentes** com o seguinte comando:
 
@@ -75,14 +75,38 @@ Se necessário, antes de alterar uma senha, **identifique as contas existentes**
 cat /etc/passwd
 ```
 
-Para alterar a senha de uma conta específica (por exemplo: **user1**), sempre especifique o nome do usuário:
+Exemplo de resultado (atalho):
+
+```console
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+.
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+.
+user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+```
+
+Encontre o nome do utilizador na lista das contas.
+
+Para alterar a palavra-passe de uma conta específica (por exemplo: **user1**), utilize este comando:
 
 ```bash
 passwd user1
+```
+
+Introduza a nova palavra-passe duas vezes:
+
+```console
 # New password:
 # Retype new password:
 # passwd: password updated successfully
 ```
+
+Numa distribuição GNU/Linux, **uma indicação de palavra-passe não apresenta as suas entradas de teclado**.
 
 > [!primary]
 >
@@ -93,7 +117,7 @@ Lembre-se de utilizar o modo de arranque **normal** do seu servidor quando o rei
 
 Consulte [manual do modo rescue](#step1) se necessário.
 
-Agora já tem acesso ao servidor com a sua nova palavra-passe.
+A conta de utilizador modificada terá acesso ao servidor com a nova palavra-passe.
 
 ## Quer saber mais?
 

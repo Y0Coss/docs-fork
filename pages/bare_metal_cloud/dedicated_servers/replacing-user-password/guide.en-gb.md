@@ -1,7 +1,7 @@
 ---
 title: How to recover server access if your user password is lost
 excerpt: Find out how to configure a new password for a user account on a GNU/Linux operating system with the OVHcloud rescue mode
-updated: 2025-09-24
+updated: 2025-10-02
 ---
 
 ## Objective
@@ -105,6 +105,8 @@ Enter the new password twice and confirm:
 # passwd: password updated successfully
 ```
 
+On a GNU/Linux distribution, **a password prompt does not display your keyboard input**.
+
 > [!primary]
 >
 > Avoid running the `passwd` command without arguments: This command modifies the password of the current account (which is **root** after executing `chroot`).  
@@ -114,7 +116,7 @@ Remember to use the regular boot mode of your server when restarting it in your 
 
 Refer to the corresponding [rescue mode guide](#step1) if necessary.
 
-The modified user account has now access to the server via SSH with the new password.
+The modified user account has now access to the server with the new password.
 
 ## Go further
 

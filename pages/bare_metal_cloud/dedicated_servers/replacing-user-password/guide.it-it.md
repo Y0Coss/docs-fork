@@ -1,7 +1,7 @@
 ---
 title: "Come recuperare l'accesso al server in caso di perdita della password dell'utente"
 excerpt: "Scopri come configurare una nuova password per un account utente su un sistema operativo GNU/Linux in modalità Rescue OVHcloud"
-updated: 2024-02-19
+updated: 2025-10-02
 ---
 
 ## Obiettivo
@@ -65,24 +65,48 @@ Il comando esatto dipende dal punto di montaggio utilizzato. Ad esempio, se la p
 chroot /mnt/
 ```
 
-### Passo 2 - Identificare l'account utente e reimpostare la password
+### Step 2 - Identificare gli account utente e reimpostare la password
 
-Dopo aver montato la partizione ed eseguito `chroot /mnt` (o l'equivalente), disponi dei privilegi root sul sistema montato.
+Dopo aver montato la partizione ed eseguito `chroot /mnt` (o l’equivalente), disporrai dei privilegi **root** sul sistema montato.
 
-Se necessario, prima di modificare una password, **identifica gli account esistenti** con il comando seguente:
+Se necessario, prima di modificare una password, **identifica gli account esistenti** utilizzando questo comando:
 
 ```bash
 cat /etc/passwd
 ```
 
-Per modificare la password di un account specifico (ad esempio: **user1**), specifica sempre il nome utente:
+Esempio di risultato (collegamento):
+
+```console
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+.
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+.
+user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+```
+
+Il nome dell'utente è disponibile nell'elenco degli account.
+
+Per modificare la password di un account specifico (ad esempio: **user1**), utilizza questo comando:
 
 ```bash
 passwd user1
+```
+
+Inserisci due volte la nuova password:
+
+```console
 # New password:
 # Retype new password:
 # passwd: password updated successfully
 ```
+
+In una distribuzione GNU/Linux, **il prompt della password non visualizza le voci della tastiera**.
 
 > [!primary]
 >
@@ -93,7 +117,7 @@ Utilizza la modalità di avvio **normal** del tuo server quando lo riavvii dallo
 
 Se necessario, consulta la [guida del Rescue mode](#step1).
 
-A questo punto, sarà possibile accedere al server con la nuova password.
+L'account utente modificato ora ha accesso al server con la nuova password.
 
 ## Per saperne di più
 
