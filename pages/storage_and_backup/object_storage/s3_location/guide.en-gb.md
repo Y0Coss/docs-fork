@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints and Object Storage geoavailability
-updated: 2025-06-04
+updated: 2025-10-03
 ---
 
 <style>
@@ -155,7 +155,7 @@ The mapping for **WRITE(PUT)** operations on the **io** endpoint is the followin
     </tr>
     <tr>
         <td>STANDARD_IA</td>
-        <td rowspan=5>Standard Infrequent Access</sup></td>
+        <td rowspan=5>Standard Infrequent Access</td>
     </tr>
     <tr>
         <td>ONEZONE_IA</td>
