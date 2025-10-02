@@ -2,6 +2,7 @@
 title: "Utiliser le Secret Manager dans l'espace client"
 excerpt: "Découvrez comment utiliser le Secret Manager avec l'interface graphique"
 updated: 2025-09-15
+flag: hidden
 ---
 
 > [!primary]
