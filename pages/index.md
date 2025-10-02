@@ -1514,7 +1514,7 @@
             + [What should I do if the page “Your IP has been banned” appears?](web_cloud/web_hosting/diagnostic_ip_banned)
             + [What should I do if the page “Your request has been blocked” appears?](web_cloud/web_hosting/diagnostic_request_blocked)
             + [Monitoring and managing automated emails in your Web Hosting plan](web_cloud/web_hosting/mail_function_script_records)
-            + [How to deal with unusual activity on your web hosting plan](web_cloud/web_hosting/resolve-anomalous-activity)
+            + [How to react to abnormal activity detected on your web hosting](web_cloud/web_hosting/resolve-anomalous-activity)
         + [Automating tasks (cron)](web-cloud-hosting-automating-tasks-cron)
             + [Using automated tasks on a Web Hosting plan](web_cloud/web_hosting/cron_tasks)
         + [Redirection and authentication](web-cloud-hosting-redirection-and-authentication)
