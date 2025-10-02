@@ -619,3 +619,172 @@ This means either:
 - DNS propagation is not occurring correctly. In this case, from the `Change in text format`{.action} window opened in step **4**, click directly **without making any changes** on the `Next`{.action} button, then on `Confirm`{.action}. A new DNS propagation will then be initiated.
 
 ///
+
+/// details | How can I restore a DNS zone?
+
+Follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+3. On the right or below the table, click `View your DNS zone history`{.action}.
+4. In the table on the displayed page, identify the line corresponding to the DNS zone backup you want to restore, then click the icon in the `Restore`{.action} column. The current configuration of the DNS zone will be replaced by the selected backup.
+
+> [!primary]
+>
+> DNS zone modification propagation can take up to **24** hours.
+
+> [!success]
+>
+> Find all the details in our guide "[Managing the history of a DNS zone](/pages/web_cloud/domains/dns_zone_history)".
+
+///
+
+/// details | How can I retrieve a copy of my DNS zone?
+
+Follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+3. On the right or below the table, click `View your DNS zone history`{.action}.
+4. In the table on the displayed page, identify the line corresponding to the DNS zone backup you want to retrieve, then click the icon in the `Download`{.action} column. The DNS zone copy will be downloaded in *.txt* format.
+
+> [!success]
+>
+> Find all the details in our guide "[Managing the history of a DNS zone](/pages/web_cloud/domains/dns_zone_history)".
+
+///
+
+/// details | Can I create a DNS zone for a subdomain?
+
+You can create a DNS zone for a subdomain.
+
+To do this, follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click on the `DNS Zones`{.action} menu, then click the `Order`{.action} button in the top right corner of the displayed table.
+3. On the page that appears, enter the subdomain (e.g., *www.domain.tld*) for which you want to create an OVHcloud DNS zone. Wait a few moments while the tool checks the subdomain.
+4. Once the verification succeeds, choose whether to activate or not the minimal entries for the DNS zone you are about to create. This choice is not final, as you can always [edit the DNS zone records](/pages/web_cloud/domains/dns_zone_edit) later.
+5. Once your choice is made, proceed through the steps until the DNS zone is created.
+
+This DNS zone will be installed on 2 OVHcloud DNS servers. You must declare the names of these two servers in the active DNS zone of the domain name from which your subdomain originates (e.g., *www.domain.tld* is a subdomain of the domain name *domain.tld*).
+
+To retrieve the names of the 2 DNS servers, follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+3. In the top left corner of the displayed page, retrieve the 2 DNS server names listed under the `Name Servers` label. These have one of the following two formats:
+
+- `dnsXXX.ovh.net` and `nsXXX.ovh.net` **or** `dnsXXX.ovh.ca` and `nsXXX.ovh.ca` (where each `X` represents a digit between `0` and `9`).
+- `dns200.ovh.me` and `ns200.anycast.me`.
+
+Once you have the 2 DNS servers, declare them using two `NS` DNS records in the active DNS zone of the domain name from which your subdomain originates.
+
+**Case 1 - The active DNS zone of the domain name from which your subdomain originates is with OVHcloud:**
+
+Follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+3. On the right or below the table, click `Add an entry`{.action}, then select the `NS`{.action} DNS record type to declare a DNS server.
+4. In the window that opens, enter the subdomain in the `Sub-domain *`{.action} field (e.g., write **only** *www* if your domain name is *domain.tld* and your full subdomain is *www.domain.tld*). In the `Target *`{.action} field, enter **one** of the 2 DNS servers.
+5. Click `Next`{.action}, then `Validate`{.action}.
+
+Repeat the process for the second DNS server to declare.
+
+**Case 2 - The active DNS zone of the domain name from which your subdomain originates is not with OVHcloud:**
+
+You must declare the 2 DNS servers for your subdomain directly with your domain name's DNS provider (from which your subdomain originates).
+
+> [!primary]
+>
+> In both cases, DNS zone modification propagation can take up to **24** hours.
+
+> [!success]
+>
+> Find more details in the following guides:
+>
+> - [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)
+> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+
+///
+
+/// details | How can I redirect all subdomains of the same domain name to the same IP address?
+
+Follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+3. On the right or below the table, click `Add an entry`{.action}, then select the `A`{.action} DNS record type for an IPv4 (e.g., `203.0.113.0`) or the `AAAA`{.action} DNS record type for an IPv6 (e.g., `2001:db8:1:1b00:203:0:113:0`).
+4. In the window that opens and in the `Sub-domain *`{.action} field, enter the value `*`. The asterisk `*` will represent all subdomains (e.g., `www.domain.tld` or `ovhcloud.domain.tld`) of your domain name. Complete the `Target *`{.action} field with the desired IP address.
+5. Click `Next`{.action}, then `Confirm`{.action}.
+
+> [!primary]
+>
+> DNS zone modification propagation can take up to **24** hours.
+
+> [!success]
+>
+> Find all the details in our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)".
+
+///
+
+/// details | Can I set up a wildcard in my DNS zone?
+
+It is possible to set up a wildcard in an OVHcloud DNS zone.
+
+To do this, follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click the `DNS zones`{.action} menu, then choose the domain name concerned.
+3. On the right or below the table, click `Add an entry`{.action}, then select the DNS record type for which you want to set up a wildcard.
+4. In the window that opens and in the `Sub-domain *`{.action} field, enter the value `*`. The asterisk `*` will represent all subdomains (e.g., `www.domain.tld` or `ovhcloud.domain.tld`) of your domain name. Complete the other fields with the desired values.
+5. Click `Next`{.action}, then `Confirm`{.action}.
+
+> [!primary]
+>
+> DNS zone modification propagation can take up to **24** hours.
+
+> [!success]
+>
+> Find all the details in our guide "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)".
+
+///
+
+<br>
+
+/// details | I accidentally deleted my DNS zone and want to restore it, what should I do?
+
+OVHcloud sends an email containing a text copy of the DNS zone once your DNS zone is deleted, so you can restore it later if needed.  
+This email is sent to the email address associated with your OVHcloud customer account.
+
+> [!success]
+>
+> If you did not receive this email, check your spam folder or follow these steps:
+>
+> 1. Log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right corner, then on `Access my Account`{.action}.
+> 2. On the displayed page, click the `Emails received`{.action} tab.
+> 3. In the table that appears and among the list of received emails, click on the relevant email to view its content.
+
+To restore your DNS zone, follow these steps:
+
+1. Download the file containing the DNS zone from the received email.
+2. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+3. Click on the `Domain names`{.action} menu, then choose the domain name concerned.
+4. Select the `DNS Zone`{.action} tab once positioned on the domain name in question. **If the DNS zone is inactive, activate it from this tab.**
+5. On the right or below the table, click `Change in text format`{.action}.
+6. In the window that opens, replace all the displayed content with the copy of the deleted DNS zone. Click `Next`{.action}, then `Confirm`{.action}.
+
+> [!primary]
+>
+> DNS zone modification propagation can take up to **24** hours.
+
+> [!success]
+>
+> Find more details in the following guides:
+>
+> - [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)
+> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+> - [Managing the history of a DNS zone](/pages/web_cloud/domains/dns_zone_history)
+
+///
+
