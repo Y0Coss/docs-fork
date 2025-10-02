@@ -229,7 +229,7 @@ Navigate to the `Dashboard`{.action} tab and find the Clusters > Backups that yo
 
 ![Run now](images/step5.e.Run.Now.png){.thumbnail}
 
-### Step 6 – Run a restore operation for the dummy application <a name="step6-----Run a restore operation"></a>
+### Step 6 – Run a restore operation for the dummy application
 
 Let’s setup a disaster recovery scenario, by deleting our dummy application and the associated namespace:
 

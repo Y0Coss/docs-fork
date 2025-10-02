@@ -136,7 +136,7 @@ List your buckets:
 aws s3 ls
 ```
 
-### Installing Velero <a name="installing velero"></a>
+### Installing Velero
 
 We strongly recommend that you use an [official release of Velero](https://github.com/vmware-tanzu/velero/releases). The tarballs for each release contain the velero command-line client. Expand the tarball and add it to your PATH.
 

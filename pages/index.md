@@ -1041,6 +1041,7 @@
                 + [Backing-up an OVHcloud Managed Kubernetes cluster using Velero](public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero)
                 + [Backing-up Persistent Volumes using Stash](public_cloud/containers_orchestration/managed_kubernetes/backing-up-volumes-using-stash)
                 + [Migration Guide – Moving Your Kubernetes Cluster to OVHcloud](public_cloud/containers_orchestration/managed_kubernetes/migration-to-ovhcloud)
+                + [MKS Free to Standard Migration Guide](public_cloud/containers_orchestration/managed_kubernetes/migration-from-free-to-standard)
             + [Monitoring & Observability](public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring)
                 + [Monitoring apps with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service](public_cloud/containers_orchestration/managed_kubernetes/monitoring-apps-grafana-prometheus)
                 + [Collect metrics from PCI instances with Prometheus on an OVHcloud Managed Kubernetes Service](public_cloud/containers_orchestration/managed_kubernetes/monitoring-pci-instances-prometheus)

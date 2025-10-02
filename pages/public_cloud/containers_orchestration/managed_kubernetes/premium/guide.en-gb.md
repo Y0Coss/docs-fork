@@ -28,7 +28,7 @@ updated: 2025-09-10
 > [!primary]
 > This document describes the features and "how-to" for the Managed Kubernetes Service Standard Plan currently in beta version. For additional details on the Managed Kubernetes Service Free plan, refer to the [following documentation](/pages/public_cloud/containers_orchestration/managed_kubernetes/known-limits).
 
-## Free vs Standard comparison <a name="comparison-plan-array"></a>
+## Free vs Standard comparison
 
 | Plan                  | Free                                                | Standard                                   |
 | --------------------- | --------------------------------------------------- | ----------------------------------------- |
