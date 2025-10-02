@@ -15,7 +15,7 @@ updated: 2025-10-01
 
 **Speech to Text** is a powerful feature that enables the conversion of spoken language into written text.
 
-The Speech to Text endpoints on AI Endpoints allow you to easily integrate this technology into your applications, enabling you to transcribe audio files with high accuracy. Our endpoints support various audio formats and provide flexible configuration options to suit your specific use cases.
+The Speech to Text APIs on AI Endpoints allow you to easily integrate this technology into your applications, enabling you to transcribe audio files with high accuracy. Our endpoints support various [audio formats](#parameters-overview) and provide flexible configuration options to suit your specific use cases.
 
 ## Objective
 
@@ -48,7 +48,7 @@ The examples provided during this guide can be used with one of the following en
 >> A standard terminal, with [cURL](https://cURL.se/) installed on the system.
 >> 
 
-*These exmaples will be using the [Whisper-large-v3](https://endpoints.ai.cloud.ovh.net/models/whisper-large-v3) model.*
+*These examples will be using the [Whisper-large-v3](https://endpoints.ai.cloud.ovh.net/models/whisper-large-v3) model.*
 
 ## Authentication & Rate Limiting
 
@@ -66,7 +66,7 @@ The request body for the audio transcription endpoint is of type `multipart/form
 |--------------------------|----------|---------------|---------------------------------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **file**                     | Yes      | binary        | `mp3`, `mp4`, `aac`, `m4a`, `wav`, `flac`, `ogg`, `opus`, `webm`, `mpeg`, `mpga`                                    | -       | The **audio file object (not file name)** to transcribe.                                                                                                                                                      |
 | **chunking_strategy**        | No       | `string`/`server_vad object`/`null`   | -                                                                                     | null    | Strategy for dividing the audio into chunks. More details [here](#chunking-strategy).                                                                                                                                                     |
-| **diarize**                  | No       | `boolean`/`null`  | `true`/`false`                                                                            | false   | Enables speaker separation in the transcript. When set to true, the system separates the audio into segments based on speakers, by adding labels like "Speaker 1" and "Speaker 2", so you can see who said what in conversations such as interviews, meetings, or phone calls. More details [here](#diarize).                                                                                                                                           |
+| **diarize**                  | No       | `boolean`/`null`  | `true`/`false`                                                                            | false   | Enables speaker separation in the transcript. When set to true, the system separates the audio into segments based on speakers, by adding labels like "Speaker 1" and "Speaker 2", so you can see who said what in conversations such as interviews, meetings, or phone calls. More details [here](#diarization).                                                                                                                                           |
 | **language**                 | No       | `string`/`null`   | [ISO-639-1 format](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)                                                                      | -       | The language parameter specifies the language spoken in the input audio. Providing it can improve transcription accuracy and reduce latency (e.g. `en` for English, `fr` for French, `de` for German, `es` for Spanish, `zh` for Chinese, `ar` for Arabic ...). If not provided, the system will attempt automatic language detection, which may be slightly slower and less accurate in some cases. [More details on language compatibility and performance](#language-compatibility-and-performances).                                                                                                                                           |
 | **model**                    | No       | `string`/`null`   | ID of the model to use                                                                | -       | Specifies the model to use for transcription. Useful when using our [unified endpoint](/pages/public_cloud/ai_machine_learning/endpoints_guide_07_virtual_models).                                                                                                                                                            |
 | **prompt**                   | No       | `string`/`null`   | -                                                                                     | -       | Text to guide the model's style, translate transcript to english or continue a previous audio segment. The language in which you write the prompt must match the audio's one. More details about prompt usage [here](#prompt).                                                                                         |
@@ -314,7 +314,7 @@ The `prompt` parameter lets you provide extra context to improve transcription. 
 >> }
 >> ```
 >>
->> **Translating transcript into English**
+> **Translating transcript into English**
 >>
 >> To directly translate the transcription into English instead of keeping it in the source language, you can pass the special translation token `<|translate|>` in your prompt:
 >>
@@ -401,8 +401,39 @@ The `timestamp_granularities` parameter controls the level of time markers inclu
 >> ```json
 >> words=[],
 >> segments=[
->>    {'id': 1, 'seek': 0, 'start': 1.76, 'end': 4.58, 'text': ' France is the world's leading tourist destination', 'tokens': [50365, 1456, 1181, 650, 1459, 1030, 476, 8124, 515, 50609], 'temperature': 0.0, 'avg_logprob': -0.14139344, 'compression_ratio': 1.2769231, 'no_speech_prob': 0.007171631}, 
->>    {'id': 2, 'seek': 0, 'start': 9.44, 'end': 14.92, 'text': ' having received 100 million foreign visitors in 2023.', 'tokens': [50609, 4042, 25011, 3925, 650, 1459, 11, 1022, 517, 594, 2672, 14303, 11, 2064, 1001, 465, 1872, 312, 66, 517, 490, 609, 13, 51117], 'temperature': 0.0, 'avg_logprob': -0.14139344, 'compression_ratio': 1.2769231, 'no_speech_prob': 0.007171631}, 
+>>    {
+>>        'id': 1,
+>>        'seek': 0,
+>>        'start': 1.76,
+>>        'end': 4.58,
+>>        'text': ' France is the world's leading tourist destination',
+>>        'tokens': [
+>>            50365,
+>>            1456,
+>>            1181,
+>>            ...
+>>        ],
+>>        'temperature': 0.0, 'avg_logprob': -0.14139344,
+>>        'compression_ratio': 1.2769231,
+>>        'no_speech_prob': 0.007171631
+>>    },
+>>    {
+>>        'id': 2,
+>>        'seek': 0,
+>>        'start': 9.44,
+>>        'end': 14.92,
+>>        'text': 'having received 100 million foreign visitors in 2023.',
+>>        'tokens': [
+>>            50609,
+>>            4042,
+>>            25011,
+>>            ...
+>>        ],
+>>        'temperature': 0.0,
+>>        'avg_logprob': -0.14139344,
+>>        'compression_ratio': 1.2769231,
+>>        'no_speech_prob': 0.007171631
+>>        },
 >>    ...
 >> ]
 >> ```
@@ -454,8 +485,39 @@ The `timestamp_granularities` parameter controls the level of time markers inclu
 >>     ...
 >> ],
 >> segments=[
->>    {'id': 1, 'seek': 0, 'start': 1.76, 'end': 4.58, 'text': ' France is the world's leading tourist destination', 'tokens': [50365, 1456, 1181, 650, 1459, 1030, 476, 8124, 515, 50609], 'temperature': 0.0, 'avg_logprob': -0.14139344, 'compression_ratio': 1.2769231, 'no_speech_prob': 0.007171631}, 
->>    {'id': 2, 'seek': 0, 'start': 9.44, 'end': 14.92, 'text': ' having received 100 million foreign visitors in 2023.', 'tokens': [50609, 4042, 25011, 3925, 650, 1459, 11, 1022, 517, 594, 2672, 14303, 11, 2064, 1001, 465, 1872, 312, 66, 517, 490, 609, 13, 51117], 'temperature': 0.0, 'avg_logprob': -0.14139344, 'compression_ratio': 1.2769231, 'no_speech_prob': 0.007171631}, 
+>>    {
+>>        'id': 1,
+>>        'seek': 0,
+>>        'start': 1.76,
+>>        'end': 4.58,
+>>        'text': ' France is the world's leading tourist destination',
+>>        'tokens': [
+>>            50365,
+>>            1456,
+>>            1181,
+>>            ...
+>>        ],
+>>        'temperature': 0.0, 'avg_logprob': -0.14139344,
+>>        'compression_ratio': 1.2769231,
+>>        'no_speech_prob': 0.007171631
+>>    },
+>>    {
+>>        'id': 2,
+>>        'seek': 0,
+>>        'start': 9.44,
+>>        'end': 14.92,
+>>        'text': 'having received 100 million foreign visitors in 2023.',
+>>        'tokens': [
+>>            50609,
+>>            4042,
+>>            25011,
+>>            ...
+>>        ],
+>>        'temperature': 0.0,
+>>        'avg_logprob': -0.14139344,
+>>        'compression_ratio': 1.2769231,
+>>        'no_speech_prob': 0.007171631
+>>        },
 >>    ...
 >> ]
 >> ```
@@ -520,6 +582,7 @@ The `response_format` determines how the transcription data is returned. Availab
 >>     "duration": 5
 >>   }
 >> }
+>> ```
 >> 
 > **Text**
 >> 
@@ -530,11 +593,11 @@ The `response_format` determines how the transcription data is returned. Availab
 >>
 > **SRT**
 >> 
->> Not yet supported.
+>> **Not yet supported.**
 >>
 > **VTT**
 >> 
->> Not yet supported.
+>> **Not yet supported.**
 >> 
 
 #### Chunking Strategy
@@ -577,7 +640,7 @@ However, transcription quality and speed depend on the **language of the input a
 - Less common or low-resource languages may yield lower accuracy or longer processing times.  
 - Regional accents, dialects, or code-switching (switching between multiple languages in the same recording) can reduce accuracy further.  
 
-Providing the `language` parameter explicitly (instead of relying on automatic detection) generally improves both accuracy and latency.  
+Providing the `language` parameter explicitly (instead of relying on automatic detection) generally improves both accuracy and latency. Expected format is [ISO-639-1 format](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) (e.g. `en` for English, `fr` for French, `de` for German, `es` for Spanish, `zh` for Chinese, `ar` for Arabic ...).
 
 For a detailed performance breakdown by language, see [Whisper’s benchmark results](https://github.com/openai/whisper?tab=readme-ov-file#available-models-and-languages). This includes word error rates (WER) and character error rates (CER) across different datasets.  
 
@@ -610,29 +673,42 @@ Try to avoid splitting mid-sentence, as this can cause context to be lost and re
 
 **Example**
 
-Splitting Audio with open-source Python PyDub library:
+Splitting Audio with open-source Python `pydub` library:
 
 ```python
 from pydub import AudioSegment
+import math
+import os
 
 # Load the audio file
 audio = AudioSegment.from_mp3("long_interview.mp3")
 
-# Define chunk duration in milliseconds (e.g., 10 minutes)
-chunk_duration = 10 * 60 * 1000
+# Define chunk duration in milliseconds (e.g., 30 minutes)
+chunk_duration = 30 * 60 * 1000  # 30 minutes
 
-# Split first chunk
-first_chunk = audio[:chunk_duration]
+# Calculate how many chunks we need
+num_chunks = math.ceil(len(audio) / chunk_duration)
 
-# Export chunk
-first_chunk.export("long_interview_part1.mp3", format="mp3")
+# Ensure output folder exists
+output_dir = "chunks"
+os.makedirs(output_dir, exist_ok=True)
+
+# Loop through and export each chunk
+for i in range(num_chunks):
+    start_time = i * chunk_duration
+    end_time = min((i + 1) * chunk_duration, len(audio))
+    chunk = audio[start_time:end_time]
+
+    chunk_filename = os.path.join(output_dir, f"long_interview_part{i+1}.mp3")
+    chunk.export(chunk_filename, format="mp3")
+    print(f"Exported {chunk_filename}")
 ```
 
 Repeat this process to create multiple chunks, then transcribe each chunk individually.
 
 > [!warning]
 >
-> OVHcloud makes no guarantees about the usability or security of third-party software like PyDub.
+> OVHcloud makes no guarantees about the usability or security of third-party software like `pydub`.
 
 ## Conclusion
 
