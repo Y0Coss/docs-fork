@@ -24,7 +24,7 @@ In diesem Fall können Sie sich über den OVHcloud Rescue-Modus mit Ihrem Server
 
 > [!primary]
 >
-> Diese Anleitung gilt nicht für Installationen von **Windows** Server. Folgen Sie stattdessen unserer Anleitung zum [Ändern des Administratorpassworts auf einem Windows Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) oder [Ändern des Administrator-Passworts auf einem Windows VPS](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password).
+> Diese Anleitung gilt nicht für Installationen von **Windows** Server. Folgen Sie stattdessen unserer Anleitung zum [Ändern des Administrator-Passworts auf einem Windows Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) oder [Ändern des Administrator-Passworts auf einem Windows VPS](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password).
 >
 
 ## In der praktischen Anwendung
@@ -65,11 +65,11 @@ Der exakte Befehl hängt vom verwendeten Mountpunkt ab. Wenn Sie Ihre Partition 
 chroot /mnt/
 ```
 
-### Schritt 2 - Identifizieren der Benutzerkonten und Zurücksetzen des Kennworts
+### Schritt 2 - Identifizieren der Benutzer-Accounts und Zurücksetzen des Passworts
 
 Nachdem Sie die Partition gemountet und `chroot /mnt` (oder den entsprechenden Befehl) ausgeführt haben, verfügen Sie über **root**-Berechtigungen auf dem System.
 
-Ermitteln Sie ggf. vorhandene Konten mithilfe des folgenden Befehls, bevor Sie ein Kennwort ändern:
+Ermitteln Sie ggf. alle relevanten Benutzer-Accounts mithilfe des folgenden Befehls:
 
 ```bash
 cat /etc/passwd
@@ -90,9 +90,9 @@ sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
 ```
 
-Suchen Sie Ihre(n) Benutzernamen in der Liste der Konten.
+Finden Sie Ihre(n) zu bearbeitenden Benutzernamen in der Liste der Accounts.
 
-Geben Sie folgenden Befehl ein, um das Kennwort für ein bestimmtes Konto zu ändern (z. B. **user1**):
+Geben Sie folgenden Befehl ein, um das Kennwort für einen bestimmten Account zu ändern (z. B. **user1**):
 
 ```bash
 passwd user1
@@ -106,18 +106,18 @@ Geben Sie das neue Kennwort zweimal ein und bestätigen Sie:
 # passwd: password updated successfully
 ```
 
-Bei einer GNU/Linux-Distribution zeigt **die Eingabeaufforderung für das Passwort Ihre Tastatureingabe nicht an**.
+Bei einer GNU/Linux-Distribution zeigt **die Eingabeaufforderung für Passwörter Ihre Tastatureingabe nicht an**.
 
 > [!primary]
 >
 > Vermeiden Sie es, den Befehl `passwd` ohne Argumente auszuführen: Dieser Befehl ändert das Passwort des aktuellen Kontos (**root** nach der Ausführung von `chroot` ist).  
 > Verwenden Sie deshalb `passwd <Benutzer>`.
 
-Denken Sie daran, den regulären Startmodus zu verwenden, bevor Sie Ihren Server im [OVHcloud Kundencenter](/links/manager) neu starten.
+Denken Sie daran, den regulären Startmodus zu aktivieren, bevor Sie Ihren Server im [OVHcloud Kundencenter](/links/manager) neu starten.
 
 Folgen Sie bei Bedarf der passenden [Anleitung zum Rescue-Modus](#step1).
 
-Das geänderte Benutzerkonto hat nun Zugriff auf den Server mit dem neuen Kennwort.
+Der bearbeitete Benutzer-Account hat nun Zugriff auf den Server mit dem neuen Passwort.
 
 ## Weiterführende Informationen
 
