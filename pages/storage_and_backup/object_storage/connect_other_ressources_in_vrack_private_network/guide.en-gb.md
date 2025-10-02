@@ -1,7 +1,7 @@
 ---
 title: Object Storage - How to connect Object Storage buckets with other resources in a vRack
 excerpt: Find out how to use Object Storage together with resources in a Private Network
-updated: 2025-10-02
+updated: 2025-10-03
 ---
 
 ## Objective
@@ -27,7 +27,7 @@ This also allows you to interconnect Object Storage buckets with your resources 
 
 ### Creating a vRack Private Network and Public Cloud Gateway
 
-In order to create and configure both a Public Cloud Gateway and a vRack Private Network, please follow the instructions in our documentation: [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway). This guide page explains how to:
+In order to create and configure both a Public Cloud Gateway and a vRack Private Network, please follow the instructions in our documentation: [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway). This guide explains how to:
 
 - Select and create the appropriate Gateway both in terms of performance and geo-availability.
 - Attach an existing or newly created vRack Private Network to it.
@@ -36,8 +36,8 @@ In order to create and configure both a Public Cloud Gateway and a vRack Private
 
 Once the Gateway has been created and associated to a vRack Private Network, the next step is to whitelist a set of IPs from your Object Storage. To do so, there are multiple ways:
 
- - Using Object Storage Bucket Policies: The feature is not yet implemented but will be soon available. 
- - Using Object Storage User Policies where you can explicitely whitelist IP ranges that can work with Object Storage resources
+- Using Object Storage Bucket Policies: The feature is not yet implemented but will be available soon.
+- Using Object Storage User Policies where you can explicitly whitelist IP ranges that can work with Object Storage resources
 
 #### User Policies implementation
 
@@ -45,8 +45,8 @@ First as a quick reminder, here is how today user permissions are evaluated:
 
 1. if exists, evaluate user policy, else fallback to ACLs
    1. check for an explicit deny: if there is an explicit deny, then deny permission, else, check for an explicit allow
-   2.  check for an explicit allow: if there is an explicit allow, then allow permission
-   3.  if there is no explicit deny nor explicit allow, then fallback to ACLs
+   2. check for an explicit allow: if there is an explicit allow, then allow permission
+   3. if there is no explicit deny nor explicit allow, then fallback to ACLs
 2. fallback to ACLs
 
 This evaluation process will be subject to change with the upcoming implementation of bucket policies.
@@ -69,7 +69,7 @@ In our scenario,  we will allow all operations to specific IPs by whitelisting t
 } 
 ```
 
-To set this new policy to your S3 user, please follow the different steps shared in the  « [Object Storage - Identity and access management](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) » guide, and finalise the interconnection between your Object Storage resources and those within your vRack private network.
+To set this new policy to your S3 user, please follow the different steps shared in the [Object Storage - Identity and access management](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) guide, and finalise the interconnection between your Object Storage resources and those within your vRack private network.
 
 
 ## Go further

@@ -1,8 +1,7 @@
 ---
-title: "Object Storage - Comment connecter mon bucket Object Storage avec d'autres ressources dans un réseau privé vRack ?"
-excerpt: "Découvrez comment utiliser l'Object Storage avec des ressources dans un réseau privé."
+title: "Object Storage - Comment connecter mon bucket Object Storage avec d'autres ressources dans un réseau privé vRack"
+excerpt: "Découvrez comment utiliser l'Object Storage avec des ressources dans un réseau privé"
 updated: 2025-10-03
-flag: hidden
 ---
 
 ## Objectif
@@ -37,14 +36,13 @@ Afin de créer et de configurer à la fois une Gateway Public Cloud et un résea
 
 ### Whitelisting des IP
 
-Une fois la Gateway créée et associée à un réseau privé vRack, l'étape suivante consiste à mettre en place un whitelisting d'un ensemble d'adresses IP que souhaitez autorisées pour dialoguer avec vos ressources Object Storage. 
+Une fois la Gateway créée et associée à un réseau privé vRack, l'étape suivante consiste à mettre en place un whitelisting d'un ensemble d'adresses IP que vous souhaitez autoriser pour dialoguer avec vos ressources Object Storage. 
 Pour ce faire, plusieurs moyens existent :
 
 - Utilisation des Bucket Policies Object Storage : cette fonctionnalité n'est pas encore implémentée, elle sera bientôt disponible.
 - Utilisation des User Policies où vous pouvez explicitement whitelister un ensemble d'adresses IP
-  
-#### Implémentation de la politique utilisateur (User Policies)
 
+#### Implémentation de la politique utilisateur (User Policies)
 
 Tout d'abord, voici un rappel du processus actuel d'évaluation des autorisations utilisateur :
 
@@ -75,6 +73,7 @@ Dans notre scénario, nous allons autoriser toutes les opérations pour un ensem
   }]
 } 
 ```
+
 Pour appliquer cette nouvelle politique à votre utilisateur S3, veuillez suivre lles étapes définies dans le guide « [Object Storage - Gestion des identités et des accès](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) », et ainsi finaliser l'interconnexion entre vos ressources Object Storage et celles présentes au sein de votre réseau privé.
 
 ## Aller plus loin
