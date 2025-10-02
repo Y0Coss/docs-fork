@@ -1,7 +1,7 @@
 ---
 title: "Cómo reaccionar ante una actividad anormal detectada en su alojamiento web"
 excerpt: "Descubra los pasos a seguir cuando se detecta una actividad anormal en su alojamiento web OVHcloud"
-updated: 2025-10-01
+updated: 2025-10-02
 ---
 
 ## Objetivo

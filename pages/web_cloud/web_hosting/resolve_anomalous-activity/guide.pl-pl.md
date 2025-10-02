@@ -1,7 +1,7 @@
 ---
 title: "Jak reagować na wykrytą niezwykłą aktywność na Twoim hostingu webowym"
 excerpt: "Dowiedz się, jakie kroki należy podjąć, gdy wykryto niezwykłą aktywność na Twoim hostingu webowym OVHcloud"
-updated: 2025-10-01
+updated: 2025-10-02
 ---
 
 ## Wprowadzenie

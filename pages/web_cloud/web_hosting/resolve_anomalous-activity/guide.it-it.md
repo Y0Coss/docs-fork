@@ -1,7 +1,7 @@
 ---
 title: "Come reagire a un'attività anomala rilevata sul tuo hosting web"
 excerpt: "Scopri i passaggi da seguire quando viene rilevata un'attività anomala sul tuo hosting web OVHcloud"
-updated: 2025-10-01
+updated: 2025-10-02
 ---
 
 ## Obiettivo

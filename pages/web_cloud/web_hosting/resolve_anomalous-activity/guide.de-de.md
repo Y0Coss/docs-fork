@@ -1,7 +1,7 @@
 ---
 title: "Wie reagiere ich auf ungewöhnliche Aktivitäten auf meinem Webhosting?"
 excerpt: "Erfahren Sie, welche Schritte Sie unternehmen sollten, wenn auf Ihrem OVHcloud Webhosting verdächtige Aktivitäten erkannt werden"
-updated: 2025-10-01
+updated: 2025-10-02
 ---
 
 ## Ziel
