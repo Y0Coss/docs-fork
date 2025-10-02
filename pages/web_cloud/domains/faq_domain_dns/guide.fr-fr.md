@@ -525,6 +525,7 @@ Retrouvez ci-après le résultat d'une requête SOA pour le nom de domaine `doma
 
 domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2025091801 86400 3600 3600000 300   
 ```
+
 |Élement dans le résultat|Description|Correspondance dans l'exemple ci-dessus|
 |---|---|---|
 |**NS (Name Server)**|Serveur DNS principal déclaré pour le nom de domaine `domain.tld`.|`dns200.anycast.me.`|
