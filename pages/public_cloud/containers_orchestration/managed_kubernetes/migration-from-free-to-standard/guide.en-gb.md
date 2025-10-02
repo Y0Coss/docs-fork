@@ -41,7 +41,7 @@ For a complete overview, including a detailed comparison table between Free and 
 > In the meantime, plan your migration accordingly and consider alternatives such as reconfiguring DNS records or using load balancer services.
 >
 
-1. **Install, configure Backup Tool and back up your cluster**
+### 1. Install, configure Backup Tool and back up your cluster
 
 Before migrating your cluster, ensure that a backup solution is installed and configured. You can use Trilio, CloudCasa, or Velero depending on your preference.
 
@@ -57,7 +57,7 @@ Choose your backup tool:
 - For Trilio, follow our guide [here](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio).
 - For CloudCasa, follow our guide [here](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa).
 
-2. **Create your target Kubernetes cluster on OVHcloud**
+### 2. Create your target Kubernetes cluster on OVHcloud
 
 Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
@@ -65,18 +65,18 @@ Access the administration UI for your OVHcloud Managed Kubernetes clusters by cl
 
 ![Create a cluster](images/creating-a-cluster1.png){.thumbnail}
 
-3. **Pick a flavor and node pool for your new OVHcloud cluster**
+### 3. Pick a flavor and node pool for your new OVHcloud cluster
 
-    - **Size your worker nodes**: Carefully assess your existing architecture's CPU and RAM requirements and select OVHcloud node flavors that match these specifications.
-    - **Replicate network setup**: Ensure your new cluster's network configuration mirrors your original cluster (e.g. private nodes on a private subnet, dedicated outbound gateway).
-    - **Choose deployment mode**: Select a deployment mode (e.g. 1AZ or 3AZ) based on your fault tolerance needs and high availability requirements.
+- **Size your worker nodes**: Carefully assess your existing architecture's CPU and RAM requirements and select OVHcloud node flavors that match these specifications.
+- **Replicate network setup**: Ensure your new cluster's network configuration mirrors your original cluster (e.g. private nodes on a private subnet, dedicated outbound gateway).
+- **Choose deployment mode**: Select a deployment mode (e.g. 1AZ or 3AZ) based on your fault tolerance needs and high availability requirements.
 
 > [!primary]
 >
 > The Standard plan is currently available only in 3AZ regions (Paris). Make sure your migration targets a compatible region to avoid deployment issues.
 >
 
-4. **Restore your backups onto the new cluster**
+### 4. Restore your backups onto the new cluster
 
 Before migrating your workloads, you need to deploy your chosen backup tool on the new Standard cluster. This ensures that your backups are properly restored and that the migration process can proceed smoothly.
 
@@ -84,11 +84,11 @@ Choose the documentation corresponding to the tool you are using:
 
 > [!tabs]
 > **Via Velero**
->> 1. **Deploy Velero on the new cluster**
+>> 1\. **Deploy Velero on the new cluster**
 >>
 >> Install the Velero Helm chart on your newly created OVHcloud Kubernetes cluster by following the **Installing Velero** part of [this guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backing-up-cluster-with-velero/).
 >>
->> 2. **Configure access to your backups**
+>> 2\. **Configure access to your backups**
 >>
 >> Make sure Velero on the new cluster points to the same OVHcloud S3-compatible<sup>1</sup> Object Storage bucket that was used for your backups. This will automatically make your existing backup metadata visible to the new cluster.
 >>
@@ -100,7 +100,7 @@ Choose the documentation corresponding to the tool you are using:
 >>
 >> Replace <backupName> with the name of your backup.
 >>
->> 3. **Restore your backup**
+>> 3\. **Restore your backup**
 >>
 >> Use the Velero CLI to restore resources from a backup:
 >>
@@ -112,7 +112,7 @@ Choose the documentation corresponding to the tool you are using:
 >>
 >> You can add options such as --include-namespaces or --exclude-resources to fine-tune what is restored.
 >>
->> 4. **Validate the restore**
+>> 4\. **Validate the restore**
 >>
 >> Once the restore is complete, check that your workloads, services, and configurations are correctly running:
 >>
@@ -136,7 +136,7 @@ Choose the documentation corresponding to the tool you are using:
 >> Follow the **step 6 - Run a restore operation for the dummy application** of [this guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-and-restore-cluster-using-cloudcasa).
 >>
 
-5. **Validate the Migration**
+### 5. Validate the Migration
 
 After restoring your workloads, check that the cluster is fully functional:
 
@@ -145,25 +145,25 @@ After restoring your workloads, check that the cluster is fully functional:
 - Check logs and events for errors or misconfigurations.
 - Execute all your application's integration tests on the new target cluster.
 
-6. **Adjust Cluster Resources**
+### 6. Adjust Cluster Resources
 
 Some workloads may require fine-tuning after the migration:
 
 - Re-create Load Balancers or reconfigure Ingresses if public IPs have changed.
 - Ensure CRDs, Secrets, and ConfigMaps are properly restored.
 
-7. **Clean Up Old Resources**
+### 7. Clean Up Old Resources
 
 Once you’ve validated that everything is running correctly in the Standard cluster:
 
 - You can repurpose the source cluster (Free plan) to host testing or staging environments.
 - Alternatively, decommission it if it is no longer needed.
 
-8. **Set up Saving Plans (if needed)**
+### 8. Set up Saving Plans (if needed)
 
 Explore the option of [OVHcloud Saving Plans](/pages/public_cloud/public_cloud_cross_functional/savings_plans) to optimize your cloud costs. Learn more about the available Saving Plans to determine if they align with your financial strategy.
 
-9. **Post-Migration Best Practices**
+### 9. Post-Migration Best Practices
 
 - Set up monitoring and alerting to track the health of the new cluster.
 - Schedule regular backups with Velero, Trilio, or CloudCasa.
