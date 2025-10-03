@@ -1,7 +1,7 @@
 ---
 title: How to install VMware ESXi 8 on a dedicated server
 excerpt: Find out how to install and configure VMware ESXi 8 on a dedicated server using an OVHcloud provided image
-updated: 2025-09-15
+updated: 2025-10-03
 ---
 
 ## Objective
