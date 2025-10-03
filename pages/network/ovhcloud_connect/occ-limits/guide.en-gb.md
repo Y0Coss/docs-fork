@@ -1,7 +1,7 @@
 ---
 title: Technical capabilities and limitations
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Connect solution'
-updated: 2022-08-25
+updated: 2025-10-03
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ updated: 2022-08-25
 - Jumbo frame up to 9000 bytes
 - Autonegotiation not supported
 
-### Technical limitationss
+### Technical limitations
 
 #### Layer 2 mode
 

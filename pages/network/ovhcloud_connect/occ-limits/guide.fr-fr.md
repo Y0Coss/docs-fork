@@ -1,7 +1,7 @@
 ---
 title: Capacités et limites techniques
 excerpt: 'Découvrez les capacités et limites techniques de l offre OVHcloud Connect'
-updated: 2022-08-25
+updated: 2025-10-03
 ---
 
 ## Objectif
