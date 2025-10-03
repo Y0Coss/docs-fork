@@ -12,7 +12,7 @@ The objective of this guide is to present the use of the REST API for the Secret
 ## Requirements
 
 - An [OVHcloud customer account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Have [ordered an OKMS domain or created a first secret.](/pages/manage_and_operate/kms/quick-start).
+- Have [ordered an OKMS domain](/pages/manage_and_operate/kms/quick-start) or [created a first secret](/pages/manage_and_operate/kms/quick-start).
 
 ## Instructions
 
@@ -62,7 +62,7 @@ The next steps will guide you on how to authenticate.
 
 #### Importing your KMS credentials into the browser
 
-To access the authenticated Swagger UI, you need to load your KMS access certificate into the browser Certificate Manager.
+To access the authenticated Swagger UI, you need to load your [KMS access certificate](/pages/manage_and_operate/kms/okms-certificate-management) into the browser Certificate Manager.
 
 For that, it is required to convert it to PKCS#12 format. PKCS#12 is a binary format for storing a certificate chain and private key in a single, encrypted file. It is commonly used for importing and exporting certificates and private keys, especially in environments that require secure transport of these items, such as web servers and client applications.
 
@@ -125,7 +125,7 @@ The API expects the following values:
 |           path           |                                         String                                         |                                             Secret path                                              |
 |         version          |                                          Json                                          |                          Secret content. It is possible to have nested JSON                          |
 
-For example :
+For example:
 
 ```json
 {
@@ -143,7 +143,7 @@ For example :
     "data": {
       "login": "admin",
       "password": "my_secret_password",
-      "adress": {
+      "address": {
         "ip": "1.1.1.1"
       },
       "ports": [
@@ -207,7 +207,7 @@ The API expects the unique value:
 
 | **Field** |           **Value**           |                                                                                                                                       **Description**                                                                                                                                       |
 | :-------: | :---------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|   state   | active , deactivated, deleted | active : The value of this version is accessible <br>deactivated : The value of this version is still present in the system but is no longer accessible until the version is reactivated <br>deleted : The value of this version is no longer present in the system and cannot be restored. |
+|   state   | active , deactivated, deleted | active: The value of this version is accessible <br>deactivated: The value of this version is still present in the system but is no longer accessible until the version is reactivated <br>deleted: The value of this version is no longer present in the system and cannot be restored. |
 
 ## Go further
 

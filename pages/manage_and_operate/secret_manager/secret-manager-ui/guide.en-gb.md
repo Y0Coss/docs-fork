@@ -55,7 +55,7 @@ Then indicate the content of the secret. The secret must contain a list of key-v
 
 > [!primary]
 >
-> There is no limit to the number of key-value pairs in a secret, but a maximum limit of 64 ko of data.
+> There is no limit to the number of key-value pairs in a secret, however the total data size must not exceed 64KB.
 
 Once the secret is created, it appears in the list of secrets in the Secret Manager.
 
@@ -88,7 +88,7 @@ A side panel opens with the content of the most recent version of the secret.
 
 ![Secret Manager](images/Secret-content.png){.thumbnail}
 
-A selector allows you to navigate between different versions of the secret, as well as the status of the selected version.
+A selector allows you to navigate between different versions of the secret, and view the status of the selected version.
 If the version is disabled or deleted, no value is displayed.
 
 #### Managing Versions
@@ -98,7 +98,7 @@ Each modification of a secret creates a new version.
 
 ![Secret Manager](images/Secret-versions.png){.thumbnail}
 
-Versions can be either:
+Version can be either:
 
 - Active: The value of this version is accessible.
 - Disabled: The value of this version is still present in the system but is no longer accessible until the version is reactivated.
@@ -117,7 +117,7 @@ In the context of the Secret Manager beta, it is not yet possible to modify the 
 
 #### Multi-OKMS Domain Case
 
-In the case where two or more OKMS domains are already present in a region, an additional selection step appears when creating a secret.
+In the case where at least two OKMS domains are already present in a region, an additional selection step appears when creating a secret.
 
 ![Secret Manager](images/Secret-multi-domaine.png){.thumbnail}
 

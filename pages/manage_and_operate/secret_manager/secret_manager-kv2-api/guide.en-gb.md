@@ -12,7 +12,7 @@ The objective of this guide is to present the use of the Hashicorp Vault complia
 ## Requirements
 
 - An [OVHcloud customer account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Have [ordered an OKMS domain or created a first secret.](/pages/manage_and_operate/kms/quick-start).
+- Have [ordered an OKMS domain](/pages/manage_and_operate/kms/quick-start) or [created a first secret](/pages/manage_and_operate/kms/quick-start).
 
 ## Instructions
 
@@ -23,7 +23,7 @@ The Secret Manager is a product that allows you to securely store credentials, A
 A secret is a collection of one or more key-value pairs grouped within a version.
 Each modification of a secret creates a new version of that secret, allowing you to go back in the history of changes to the secret.
 
-The REST APIs are one of the two API sets offered by the Secret Manager, along with the [REST API](/pages/manage_and_operate/secret_manager/secret_manager-rest-api).
+The Hashicorp Vault compliant APIs are one of the two API sets offered by the Secret Manager, along with the [REST API](/pages/manage_and_operate/secret_manager/secret_manager-rest-api).
 They are designed to be similar to Hashicorp Vault APIs to ensure compatibility with applications already compatible with Hashicorp Vault.
 
 ### Contacting the KMS
@@ -54,7 +54,7 @@ The next steps will guide you on how to authenticate.
 
 #### Importing your KMS credentials into the browser
 
-To access the authenticated Swagger UI, you need to load your KMS access certificate into the browser Certificate Manager.
+To access the authenticated Swagger UI, you need to load your [KMS access certificate](/pages/manage_and_operate/kms/okms-certificate-management) into the browser Certificate Manager.
 
 For that, it is required to convert it to PKCS#12 format. PKCS#12 is a binary format for storing a certificate chain and private key in a single, encrypted file. It is commonly used for importing and exporting certificates and private keys, especially in environments that require secure transport of these items, such as web servers and client applications.
 
@@ -107,21 +107,22 @@ To create a secret, you can use the following API:
 |    POST     | /api/{okmsId}/v1/secret/data/{path} | Create a Secret |
 
 The secret path must be specified in the API path.
+
 The API expects the following values:
 
-| **Champ** | **Valeur** |                        **Description**                        |
+| **Field** | **Value** |                        **Description**                        |
 | :-------: | :--------: | :-----------------------------------------------------------: |
 |   data    |    Json    | Secret content. It is possible to have nested JSON |
 |    cas    |  Integer   |            (optional) Current version of the secret             |
 
-For example
+For example:
 
 ```json
 {
   "data": {
       "login": "admin",
       "password": "my_secret_password",
-      "adress": {
+      "address": {
         "ip": "1.1.1.1"
       },
       "ports": [
@@ -145,7 +146,7 @@ The API expects the following values:
 
 |        **Field**         |                                       **Value**                                        |                                           **Description**                                            |
 | :----------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
-|       cas_required       |                                         boléen                                         | If enabled, it is necessary to systematically specify the current version number when making changes |
+|       cas_required       |                                         boolean                                         | If enabled, it is necessary to systematically specify the current version number when making changes |
 |     custom_metadata      |                                          Json                                          |          Additional data associated with the secret. This data is not protected by the secret          |
 | deactivate_version_after | [Duration String](https://developer.hashicorp.com/vault/docs/concepts/duration-format) |                               Duration after which versions are deactivated                                 |
 |       max_versions       |                                        Integer                                         |                                   Maximum number of versions for the secret                                    |
@@ -176,9 +177,9 @@ Once the secret is created, it is possible to update the secret's metadata or co
 
 The API expects the following values:
 
-|        **Champ**         |                                       **Valeur**                                       |                                                **Description**                                                 |
+|        **Field**         |                                       **Value**                                       |                                                **Description**                                                 |
 | :----------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
-|       cas_required       |                                         boléen                                         | If enabled, it is necessary to systematically specify the current version number when making changes |
+|       cas_required       |                                         boolean                                         | If enabled, it is necessary to systematically specify the current version number when making changes |
 |     custom_metadata      |                                          Json                                          |          Additional data associated with the secret. This data is not protected by the secret          |
 | deactivate_version_after | [Duration String](https://developer.hashicorp.com/vault/docs/concepts/duration-format) |                               Duration after which versions are deactivated                                 |
 |       max_versions       |                                        Integer                                         |                                   Maximum number of versions for the secret                                    |
@@ -230,7 +231,8 @@ It's also possible to permanently delete the whole secret with all his versions:
 | :---------: | :------------------------------------: | :-----------------------------------------: |
 |     DELETE     | /api/{okmsId}/v1/secret/metadata/{path} | Deletes the secret and all his versions |
 
-A deleted version is no longer present in the Secret Manager and cannot be reactivated.
+> [!warning]
+> A deleted version is no longer present in the Secret Manager and cannot be reactivated.
 
 ## Go further
 
