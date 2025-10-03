@@ -1,25 +1,24 @@
 ---
-title: "Comment configurer l'infrastructure Anti-DDoS pour Blockchain"
-excerpt: "Apprenez à utiliser l'infrastructure Anti-DDoS d'OVHcloud pour protéger vos nœuds Blockchain sans nuire à leur fonctionnalité"
+title: "Comment configurer l'infrastructure Anti-DDoS pour Solana"
+excerpt: "Apprenez à utiliser l'infrastructure Anti-DDoS d'OVHcloud pour protéger vos nœuds Solana sans nuire à leur fonctionnalité"
 updated: 2025-09-30
 ---
 
 >[!primary]
 > À ce jour, les instructions et exemples de ce guide s'appliquent uniquement à la blockchain **Solana**.
-> Nous travaillons activement à l'extension de ce contenu à d'autres plateformes blockchain majeures dans de futures mises à jour. Nous vous invitons à consulter ce guide ultérieurement pour vous informer de l'élargissement de la compatibilité.
 >
 
 ## Objectif
 
-L'objectif de ce guide est de vous aider à mieux comprendre l'infrastructure Anti-DDoS d'OVHcloud et de vous fournir des instructions sur la façon de configurer une protection efficace sans nuire au trafic réseau relatif à la Blockchain.
+L'objectif de ce guide est de vous aider à mieux comprendre l'infrastructure Anti-DDoS d'OVHcloud et de vous fournir des instructions sur la façon de configurer une protection efficace sans nuire au trafic réseau relatif à la blockchain.
 
 ## Prérequis
 
-- Au moins un [serveur dédié Bare Metal](/links/bare-metal/bare-metal) qui respecte les exigences matérielles spécifiques de la Blockchain souhaitée.
+- Au moins un [serveur dédié Bare Metal](/links/bare-metal/bare-metal) qui respecte les exigences matérielles spécifiques de la blockchain souhaitée.
 
 ## Introduction à la Blockchain
 
-La Blockchain est un registre numérique décentralisé et distribué qui enregistre les transactions sur de nombreux ordinateurs, garantissant que les données ne peuvent pas être modifiées rétroactivement sans la modification de tous les blocs suivants et le consensus du réseau.
+La blockchain est un registre numérique décentralisé et distribué qui enregistre les transactions sur de nombreux ordinateurs, garantissant que les données ne peuvent pas être modifiées rétroactivement sans la modification de tous les blocs suivants et le consensus du réseau.
 
 Cette technologie crée un registre inviolable et transparent des informations, telles que les transactions financières, ce qui la rend sécurisée et fiable.
 
@@ -31,34 +30,30 @@ Pour éviter que votre trafic réseau ne soit suspecté ou bloqué par l'infrast
 
 Pour commencer, veuillez remplir un [ticket de demande d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help) avec les options suivantes : Incident -> IP publique -> [x] Ce service n'est pas répertorié -> Créer une demande d'assistance -> `Suivant`{.action}.
 
-Ensuite, veuillez renseigner le champ `brève description` avec **"Blockchain XXXX Anti-DDoS tuning"** (où XXXX est le nom de la Blockchain spécifique), puis lister les adresses IPv4 de vos nœuds Blockchain, leurs ports, les types de serveurs qui hébergent les nœuds et la taille de votre cluster (le nombre approximatif de clients connectés) dans la description du problème.
+Ensuite, veuillez renseigner le champ `brève description` avec **"Blockchain Solana Anti-DDoS tuning"**, puis lister les adresses IPv4 de vos nœuds Solana, leurs ports, les types de serveurs qui hébergent les nœuds et la taille de votre cluster (le nombre approximatif de clients connectés) dans la description du problème.
 
->[!primary]
-> Pour l'instant, seuls les tickets relatifs à Solana peuvent être traités par nos équipes de support.
->
-
-Veuillez noter que dans le futur, vous pourrez contrôler le comportement Anti-DDoS directement via notre panneau de contrôle.
+Veuillez noter que dans le futur, vous pourrez contrôler le comportement Anti-DDoS directement via notre panneau de configuration.
 
 Si vous n'êtes pas sûr des éléments que vous devez envoyer à nos équipes, vous pouvez vous référer aux cas d'utilisation suivants.
 
 ### Cas d'utilisation : Solana
 
-Solana est une plateforme de Blockchain à haute performance connue pour sa vitesse exceptionnelle et ses coûts de transaction faibles, ce qui en fait une alternative populaire pour les applications décentralisées. Elle atteint cela en utilisant une horloge cryptographique unique appelée Proof of History (PoH), qui horodatage les transactions pour permettre un traitement parallèle et une plus grande efficacité. Ce système est associé à un mécanisme de consensus Proof of Stake (PoS), où les validateurs sont choisis en fonction de leur SOL en jeu, garantissant que le réseau reste sécurisé et décentralisé.
+Solana est une plateforme de blockchain à haute performance connue pour sa vitesse exceptionnelle et ses coûts de transaction faibles, ce qui en fait une alternative populaire pour les applications décentralisées. Elle atteint cela en utilisant une horloge cryptographique unique appelée Proof of History (PoH), qui horodatage les transactions pour permettre un traitement parallèle et une plus grande efficacité. Ce système est associé à un mécanisme de consensus Proof of Stake (PoS), où les validateurs sont choisis en fonction de leur SOL en jeu, garantissant que le réseau reste sécurisé et décentralisé.
 
 L'architecture de Solana utilise également une combinaison de protocoles tels que Tower BFT, Turbine, Gulf Stream et Sealevel pour optimiser la propagation des blocs, le traitement des transactions et l'exécution des contrats intelligents, contribuant tous à sa vitesse et à son efficacité élevées.
 
 Il existe généralement deux types de nœuds :
 
 - **Nœuds validateurs** (également appelés nœuds de consensus), qui sécurisent le réseau Solana en validant les transactions et en participant au consensus ;
-- **Nœuds RPC**, qui agissent comme des points d'accès pour les utilisateurs et les applications, permettant de soumettre des transactions et d'interroger les données de la Blockchain via des API *sans* participer au consensus.
+- **Nœuds RPC**, qui agissent comme des points d'accès pour les utilisateurs et les applications, permettant de soumettre des transactions et d'interroger les données de la blockchain via des API *sans* participer au consensus.
 
 Les nœuds Solana utilisent les protocoles réseau et les ports suivants :
 
 | Protocole | Utilisation | Port | Types de nœuds |
 | :--- | :--- | :--- | :--- |
 | Gossip | Découverte de nœuds et partage d'informations de cluster | TCP/UDP 8000-10000 (par défaut 8001) | Validateur / RPC |
-| JSON-RPC sur HTTP | Utilisé par les applications pour interroger la Blockchain et soumettre des transactions | TCP 8899 | RPC |
-| API JSON-RPC WebSockets | Utilisé par les applications pour interroger la Blockchain et soumettre des transactions | TCP 8900 | RPC |
+| JSON-RPC sur HTTP | Utilisé par les applications pour interroger la blockchain et soumettre des transactions | TCP 8899 | RPC |
+| API JSON-RPC WebSockets | Utilisé par les applications pour interroger la blockchain et soumettre des transactions | TCP 8900 | RPC |
 | QUIC | Ingestion de transactions à partir de clients, améliorant la fiabilité et l'efficacité du réseau | UDP 8000-8002 (peut varier) | Validateur / RPC |
 | Turbine | Diffusion de l'état du réseau et propagation de blocs/shred | TCP/UDP 8000-10000 (par défaut 8003) | Validateur / RPC |
 

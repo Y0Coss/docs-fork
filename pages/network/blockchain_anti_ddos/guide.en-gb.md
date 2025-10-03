@@ -6,7 +6,6 @@ updated: 2025-09-30
 
 >[!primary]
 > This guide's instructions and examples are currently focused exclusively on the **Solana** blockchain. 
-> We are actively working to expand this content to include other major blockchain platforms in future updates. Please check back for expanded compatibility.
 >
 
 ## Objective
@@ -31,15 +30,11 @@ To avoid having your network traffic suspected or blocked by the Anti-DDoS Infra
 
 To get started, please fill in a [support request ticket](https://help.ovhcloud.com/csm?id=csm_get_help) with the following options : Incident -> Public IP -> [x] This service is not listed -> Create a support request -> `Next`{.action}. 
 
-Then, fill in the short description with **"Blockchain XXXX Anti-DDoS tuning"** (where XXXX is the name of the specific blockchain), then list your blockchain nodes' IPv4 addresses, their ports, the types of servers that are hosting nodes, and the size of your cluster (the approximate number of clients connected) in the issue description. 
-
->[!primary]
-> For now, only Solana related tickets can be processed by our support teams.
->
+Then, fill in the short description with **"Blockchain Solana Anti-DDoS tuning"**, then list your Solana nodes' IPv4 addresses, their ports, the types of servers that are hosting nodes, and the size of your cluster (the approximate number of clients connected) in the issue description. 
 
 Please note that in the future, you will be able to control Anti-DDoS behaviour directly through our Control Panel.
 
-If you are not sure about which elements you should send to our teams, you can refer to the following use cases.
+If you are not sure about which elements you should send to our teams, you can refer to the following use case.
 
 ### Use Case : Solana
 
