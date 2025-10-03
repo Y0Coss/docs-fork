@@ -91,7 +91,7 @@ user1:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
 ```
 
 Find your user name(s) in the list of accounts.  
-To change the password for a specific account (e.g. **user1**), enter this comand:
+To change the password for a specific account (e.g. **user1**), enter this command:
 
 ```bash
 passwd user1
