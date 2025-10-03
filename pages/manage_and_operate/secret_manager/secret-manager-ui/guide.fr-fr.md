@@ -99,7 +99,7 @@ Chaque modification d'un secret amène la création d'une nouvelle version.
 
 ![Secret Manager](images/Secret-versions.png){.thumbnail}
 
-Une version peuvent être soit :
+Une version peut être soit :
 
 - Active : La valeur de cette version est accessible.
 - Désactivée : La valeur de cette version est encore présente dans le système mais n'est plus accessible tant que la version n'est pas réactivée.

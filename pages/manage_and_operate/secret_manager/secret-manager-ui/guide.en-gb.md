@@ -98,7 +98,7 @@ Each modification of a secret creates a new version.
 
 ![Secret Manager](images/Secret-versions.png){.thumbnail}
 
-Version can be either:
+A version can be either:
 
 - Active: The value of this version is accessible.
 - Disabled: The value of this version is still present in the system but is no longer accessible until the version is reactivated.
