@@ -14,6 +14,7 @@ updated: 2022-08-25
 
 * 1000Base-LX/LH pour 1Gb
 * 10GBase-LR pour 10Gb
+* 100GBase-LR4 pour 100Gb
 * Jumbo Frame: jusqu'à 9000 bytes
 * Auto-négociation non supportée
 
@@ -22,6 +23,7 @@ updated: 2022-08-25
 #### Mode Layer 2
 
 * Le nombre d'adresses MAC coté client est limité à 512 par port
+* La bande passante maximale est de 10Gb par port
 
 #### Mode Layer-3
 
