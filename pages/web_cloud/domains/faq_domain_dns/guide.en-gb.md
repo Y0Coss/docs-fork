@@ -788,3 +788,172 @@ To restore your DNS zone, follow these steps:
 
 ///
 
+/// details | How to cancel a DNS zone deletion request?
+
+For each service deletion request, an email requesting confirmation of deletion is sent to the email address associated with your OVHcloud customer account.
+
+If you have not clicked on the confirmation link in this email, rest assured, your DNS zone will not be deleted.
+
+Otherwise, the deletion is initiated and cannot be canceled anymore. The deletion process may take up to 3 days before you can recreate an OVHcloud DNS zone for your domain name.
+
+///
+
+/// details | I cannot activate a DNS zone for my domain name, what should I do?
+
+This situation occurs when a DNS zone already exists for your domain name with OVHcloud.
+
+Follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click on the `DNS Zones`{.action} menu, then check if the concerned domain name appears.
+
+Case #1 - The concerned domain name appears in the list:
+
+This means the DNS zone for the domain name already exists in your [OVHcloud Control Panel](/links/manager). You can manage it directly from there.
+
+Case #2 - The concerned domain name does not appear in the list:
+
+This means the DNS zone for the domain name is managed by another OVHcloud customer account.
+
+In accordance with the **General Data Protection Regulation (GDPR)**, the customer account ID where the DNS zone is located will remain confidential.
+
+In this situation and if you do not know this other customer account ID, we recommend opening a support ticket from the [help center](https://help.ovhcloud.com/csm?id=csm_get_help) to regain management of the DNS zone.
+
+///
+
+/// details | Why can't I find the « GLUE » tab in my OVHcloud Control Panel?
+
+This feature is not available for all domain name extensions.
+If the tab does not appear in your [OVHcloud Control Panel](/links/manager), it means the « GLUE » option is unavailable for your domain name.
+
+> [!success]
+>
+> Find all details in our guide "[Customising a domain name’s DNS servers (Glue Records)](/pages/web_cloud/domains/glue_registry)".
+
+///
+
+## DNS Servers
+
+> [!primary]
+>
+> Modifying DNS servers is a sensitive operation and may cause interruptions in services associated with your domain name (web hosting, email, etc.). If in doubt, do not hesitate to contact a [specialized provider](/links/partner).
+
+/// details | How to modify my DNS servers?
+
+Follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click on the `Domain names`{.action} menu, then select the concerned domain name.
+3. Once positioned on the concerned domain name, select the `DNS Servers`{.action} tab.
+4. To modify the DNS servers, click the `Modify DNS Servers`{.action} button located to the right of the "DNS Servers" table. Depending on your screen resolution, the button may be located below the table.
+
+You will be able to modify the DNS servers for your domain name on the page that appears.
+
+> [!primary]
+>
+> The propagation of changes to the DNS servers declared for a domain name may take up to **48** hours.
+
+> [!success]
+>
+> Find all details in our guide "[How to modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)".
+
+///
+
+/// details | How to customize my DNS servers?
+
+Follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click on the `Domain names`{.action} menu, then select the concerned domain name.
+3. Once positioned on the concerned domain name, select the `DNS Servers`{.action} tab.
+4. To modify the DNS servers, click the `Modify DNS Servers`{.action} button located to the right of the "DNS Servers" table. Depending on your screen resolution, the button may be located below the table.
+
+You will be able to customize the DNS servers for your domain name on the page that appears.
+
+> [!primary]
+>
+> The propagation of changes to the DNS servers declared for a domain name may take up to **48** hours.
+
+> [!success]
+>
+> Find all details in our guide "[How to modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)".
+
+///
+
+/// details | How to replace my DNS servers with OVHcloud's?
+
+Follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click on the `Domain names`{.action} menu, then select the concerned domain name.
+3. Once positioned on the concerned domain name, select the `DNS Servers`{.action} tab.
+4. To modify the DNS servers, click the `Modify DNS Servers`{.action} button located to the right of the "DNS Servers" table. Depending on your screen resolution, the button may be located below the table.
+
+You will be able to replace the DNS servers for your domain name with OVHcloud's on the page that appears.
+
+> [!primary]
+>
+> The propagation of changes to the DNS servers declared for a domain name may take up to **48** hours.
+
+> [!success]
+>
+> Find all details in our guide "[How to modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)".
+
+///
+
+/// details | In my customer area, I have an error message indicating that I am not using OVHcloud's DNS servers for my domain name, what should I do?
+
+In your [OVHcloud Control Panel](/links/manager), this message simply indicates that the DNS zone created for your domain name is not its active DNS zone.
+
+In other words, this means that the configuration present in this DNS zone is not the one currently applied to your domain name.
+
+However, make sure that the DNS servers mentioned in the error message are indeed the ones you want to apply to your domain name. Then check the configuration of the DNS zone declared on these same DNS servers with your DNS provider.
+
+If you want to use OVHcloud's DNS servers for your domain name, you can prepare the DNS configuration of the DNS zone present at OVHcloud so that it matches your needs, and then activate it for your domain name.
+
+> [!success]
+>
+> Find more details in the following guides:
+>
+> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+> - [How to modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
+
+///
+
+/// details | I cannot modify the DNS servers of a domain name from my OVHcloud Control Panel, what should I do?
+
+This means that you only have management of the DNS zone of the domain name but not the domain name itself.
+
+To verify this, follow these steps:
+
+1. Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+2. Click on the `Domain names`{.action} menu, then check if the concerned domain name appears.
+
+Case #1 - The domain name does not appear in the list:
+
+This means that the domain name is not managed from your [OVHcloud Control Panel](/links/manager). Perform a [WHOIS](/links/web/domains-whois) request with it to find out where it is registered.
+
+You can then perform one of the following actions (if you are the registrant declared in the WHOIS of the domain name):
+
+- The domain name is registered with OVHcloud: You can perform a [contact recovery procedure](/links/transversal/procedure-change-contact) so that your domain name is managed in your [OVHcloud Control Panel](/links/manager).
+- The domain name is not registered with OVHcloud: You can perform an [incoming transfer](/pages/web_cloud/domains/transfer_incoming_generic_domain) to OVHcloud so that your domain name is managed in your [OVHcloud Control Panel](/links/manager).
+
+Case #2 - The domain name appears in the list:
+
+This means that you do not have sufficient rights to manage the domain name from your [OVHcloud Control Panel](/links/manager). Perform a [WHOIS](/links/web/domains-whois) request to verify that you are indeed declared as the owner of the domain name.
+
+You can then perform a [contact recovery procedure](/links/transversal/procedure-change-contact) so that your domain name is fully managed in your [OVHcloud Control Panel](/links/manager).
+
+///
+
+## Go further <a name="go-further"></a>
+
+[FAQ OVHcloud emails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+
+[Web Hosting FAQ](/pages/web_cloud/web_hosting/faq-web_hosting)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+
+Join our [community of users](/links/community).
