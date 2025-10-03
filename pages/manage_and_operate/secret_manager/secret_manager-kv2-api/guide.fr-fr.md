@@ -28,11 +28,11 @@ Elles sont conçues pour être similaires aux API Hashicorp Vault afin d'assurer
 
 ### Communiquer avec le domaine OKMS
 
-La communication avec le KMS pour les actions de chiffrement et de signature est disponible via l'API.
+La communication avec le domaine OKMS pour les actions de chiffrement et de signature est disponible via l'API.
 
 Le domaine OKMS étant régionalisé, l'accès à l'API se fait directement sur la région de celui-ci : `https://my-region.okms.ovh.net`.
 
-Par exemple, pour un KMS créé sur la région **eu-west-rbx** : <https://eu-west-rbx.okms.ovh.net>.
+Par exemple, pour un domaine OKMS créé sur la région **eu-west-rbx** : <https://eu-west-rbx.okms.ovh.net>.
 
 Il est possible de communiquer avec le domaine OKMS en utilisant :
 
@@ -42,7 +42,7 @@ Il est possible de communiquer avec le domaine OKMS en utilisant :
 
 ### Utilisation de l'API OKMS via l'interface utilisateur Swagger
 
-Il est possible d'accéder au Swagger correspondant à votre domaine OKMS en cliquant sur le lien présent dans [l'espace client OVHcloud](/links/manager) au niveau du dashboard de votre KMS.
+Il est possible d'accéder au Swagger correspondant à votre domaine OKMS en cliquant sur le lien présent dans [l'espace client OVHcloud](/links/manager) au niveau du dashboard de votre domaine OKMS.
 
 ![swagger](images/swagger.png){.thumbnail}
 
@@ -58,7 +58,7 @@ Pour accéder à l'interface utilisateur Swagger authentifiée, vous devez charg
 
 Pour cela, il faut le convertir au format PKCS#12. PKCS#12 est un format binaire permettant de stocker une chaîne de certificats et une clé privée dans un seul fichier chiffré. Il est couramment utilisé pour importer et exporter des certificats et des clés privées, en particulier dans les environnements qui nécessitent un transport sécurisé de ces éléments, tels que les serveurs web et les applications clientes.
 
-Pour convertir vos informations d'identification KMS (normalement nommés `ID_certificate.pem` et `ID_privatekey.pem`) en PKCS#12 avec la CLI openssl, utilisez la commande suivante :
+Pour convertir vos informations d'identification au domaine OKMS (normalement nommés `ID_certificate.pem` et `ID_privatekey.pem`) en PKCS#12 avec la CLI openssl, utilisez la commande suivante :
 
 ```bash
 openssl pkcs12 -export -in ID_certificate.pem  -inkey ID_privatekey.pem -out client.p12

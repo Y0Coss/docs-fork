@@ -12,7 +12,7 @@ The objective of this guide is to present the use of the Hashicorp Vault complia
 ## Requirements
 
 - An [OVHcloud customer account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Have [ordered an OKMS domain](/pages/manage_and_operate/kms/quick-start) or [created a first secret](/pages/manage_and_operate/kms/quick-start).
+- Have [ordered an OKMS domain](/pages/manage_and_operate/kms/quick-start) or [created a first secret](/pages/manage_and_operate/secret_manager/secret-manager-ui).
 
 ## Instructions
 
@@ -26,39 +26,39 @@ Each modification of a secret creates a new version of that secret, allowing you
 The Hashicorp Vault compliant APIs are one of the two API sets offered by the Secret Manager, along with the [REST API](/pages/manage_and_operate/secret_manager/secret_manager-rest-api).
 They are designed to be similar to Hashicorp Vault APIs to ensure compatibility with applications already compatible with Hashicorp Vault.
 
-### Contacting the KMS
+### Contacting the OKMS domain
 
-Communication with the KMS for encryption and signature actions is available via APIs.
+Communication with the OKMS domain for encryption and signature actions is available via APIs.
 
-Since the KMS is regionalized, you can access the API directly in its region: `https://my-region.ovh.com.net`.
+Since the OKMS domain is regionalized, you can access the API directly in its region: `https://my-region.ovh.com.net`.
 
-For example, for a KMS created in the **eu-west-rbx** region: <https://eu-west-rbx.okms.ovh.net>.
+For example, for a OKMS domain created in the **eu-west-rbx** region: <https://eu-west-rbx.okms.ovh.net>.
 
-It's possible to communicate with the KMS using:
+It's possible to communicate with the OKMS domain using:
 
 - The Swagger UI
 - The OMKS CLI: <https://github.com/ovh/okms-cli>
 - The Golang SDK: <https://pkg.go.dev/github.com/ovh/okms-sdk-go>
 
-### Using the KMS API via the Swagger UI
+### Using the OKMS domain API via the Swagger UI
 
-You can access the KMS Swagger UI by clicking on the link in the [OVHcloud Control Panel](/links/manager), in your KMS dashboard.
+You can access the OKMS domain Swagger UI by clicking on the link in the [OVHcloud Control Panel](/links/manager), in your OKMS domain dashboard.
 
 ![swagger](images/swagger.png){.thumbnail}
 
-You will land on the non-authenticated version of the Swagger UI, that is meant for API documentation purposes. If you want to use the Swagger UI to make requests on your own KMS, you will need to switch to the authenticated version, whose link is in the description section:
+You will land on the non-authenticated version of the Swagger UI, that is meant for API documentation purposes. If you want to use the Swagger UI to make requests on your own OKMS domain, you will need to switch to the authenticated version, whose link is in the description section:
 
 ![public-swagger-ui](images/public-swagger-ui.png){.thumbnail}
 
 The next steps will guide you on how to authenticate.
 
-#### Importing your KMS credentials into the browser
+#### Importing your OKMS domain credentials into the browser
 
-To access the authenticated Swagger UI, you need to load your [KMS access certificate](/pages/manage_and_operate/kms/okms-certificate-management) into the browser Certificate Manager.
+To access the authenticated Swagger UI, you need to load your [OKMS access certificate](/pages/manage_and_operate/kms/okms-certificate-management) into the browser Certificate Manager.
 
 For that, it is required to convert it to PKCS#12 format. PKCS#12 is a binary format for storing a certificate chain and private key in a single, encrypted file. It is commonly used for importing and exporting certificates and private keys, especially in environments that require secure transport of these items, such as web servers and client applications.
 
-To convert your KMS credentials (assuming you saved them into files named `ID_certificate.pem` and `ID_privatekey.pem`) to PKCS#12 with the openssl Command Line Interface, use the following command:
+To convert your OKMS domain credentials (assuming you saved them into files named `ID_certificate.pem` and `ID_privatekey.pem`) to PKCS#12 with the openssl Command Line Interface, use the following command:
 
 ```bash
 openssl pkcs12 -export -in ID_certificate.pem  -inkey ID_privatekey.pem -out client.p12
