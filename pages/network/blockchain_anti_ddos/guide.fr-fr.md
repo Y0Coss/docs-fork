@@ -4,6 +4,11 @@ excerpt: "Apprenez à utiliser l'infrastructure Anti-DDoS d'OVHcloud pour proté
 updated: 2025-09-30
 ---
 
+>[!primary]
+> À ce jour, les instructions et exemples de ce guide s'appliquent uniquement à la blockchain **Solana**.
+> Nous travaillons activement à l'extension de ce contenu à d'autres plateformes blockchain majeures dans de futures mises à jour. Nous vous invitons à consulter ce guide ultérieurement pour vous informer de l'élargissement de la compatibilité.
+>
+
 ## Objectif
 
 L'objectif de ce guide est de vous aider à mieux comprendre l'infrastructure Anti-DDoS d'OVHcloud et de vous fournir des instructions sur la façon de configurer une protection efficace sans nuire au trafic réseau relatif à la Blockchain.
@@ -27,6 +32,10 @@ Pour éviter que votre trafic réseau ne soit suspecté ou bloqué par l'infrast
 Pour commencer, veuillez remplir un [ticket de demande d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help) avec les options suivantes : Incident -> IP publique -> [x] Ce service n'est pas répertorié -> Créer une demande d'assistance -> `Suivant`{.action}.
 
 Ensuite, veuillez renseigner le champ `brève description` avec **"Blockchain XXXX Anti-DDoS tuning"** (où XXXX est le nom de la Blockchain spécifique), puis lister les adresses IPv4 de vos nœuds Blockchain, leurs ports, les types de serveurs qui hébergent les nœuds et la taille de votre cluster (le nombre approximatif de clients connectés) dans la description du problème.
+
+>[!primary]
+> Pour l'instant, seuls les tickets relatifs à Solana peuvent être traités par nos équipes de support.
+>
 
 Veuillez noter que dans le futur, vous pourrez contrôler le comportement Anti-DDoS directement via notre panneau de contrôle.
 

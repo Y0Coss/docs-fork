@@ -1,20 +1,25 @@
 ---
 title: "How to configure the Anti-DDos Infrastructure for Blockchain"
-excerpt: "Learn how to leverage the OVHcloud Anti-DDoS infrastructure to protect your Blockchain nodes without harming their functionality"
+excerpt: "Learn how to leverage the OVHcloud Anti-DDoS infrastructure to protect your blockchain nodes without harming their functionality"
 updated: 2025-09-30
 ---
 
+>[!primary]
+> This guide's instructions and examples are currently focused exclusively on the **Solana** blockchain. 
+> We are actively working to expand this content to include other major blockchain platforms in future updates. Please check back for expanded compatibility.
+>
+
 ## Objective
 
-This guide's objective is to help you better understand the OVHcloud Anti-DDoS Infrastructure, and to provide instructions on how to configure effective protection without harming legitimate network traffic relative to the Blockchain.
+This guide's objective is to help you better understand the OVHcloud Anti-DDoS Infrastructure, and to provide instructions on how to configure effective protection without harming legitimate network traffic relative to the blockchain.
 
 ## Requirements
 
-- At least one Bare Metal [dedicated server](/links/bare-metal/bare-metal) which respects the desired Blockchain's specific hardware requirements.
+- At least one Bare Metal [dedicated server](/links/bare-metal/bare-metal) which respects the desired blockchain's specific hardware requirements.
 
 ## Introduction to Blockchain
 
-Blockchain is a decentralized, distributed digital ledger that records transactions across many computers, ensuring that the data cannot be altered retroactively without the alteration of all subsequent blocks and the consensus of the network.
+A blockchain is a decentralized, distributed digital ledger that records transactions across many computers, ensuring that the data cannot be altered retroactively without the alteration of all subsequent blocks and the consensus of the network.
 
 This technology creates a tamper-proof and transparent record of information, such as financial transactions, making it secure and trustworthy.
 
@@ -26,7 +31,11 @@ To avoid having your network traffic suspected or blocked by the Anti-DDoS Infra
 
 To get started, please fill in a [support request ticket](https://help.ovhcloud.com/csm?id=csm_get_help) with the following options : Incident -> Public IP -> [x] This service is not listed -> Create a support request -> `Next`{.action}. 
 
-Then, fill in the short description with **"Blockchain XXXX Anti-DDoS tuning"** (where XXXX is the name of the specific Blockchain), then list your Blockchain nodes' IPv4 addresses, their ports, the types of servers that are hosting nodes, and the size of your cluster (the approximate number of clients connected) in the issue description. 
+Then, fill in the short description with **"Blockchain XXXX Anti-DDoS tuning"** (where XXXX is the name of the specific blockchain), then list your blockchain nodes' IPv4 addresses, their ports, the types of servers that are hosting nodes, and the size of your cluster (the approximate number of clients connected) in the issue description. 
+
+>[!primary]
+> For now, only Solana related tickets can be processed by our support teams.
+>
 
 Please note that in the future, you will be able to control Anti-DDoS behaviour directly through our Control Panel.
 
