@@ -25,7 +25,8 @@ This guide will show you how to install ESXi 8 on your dedicated servers, and se
 
 ## Instructions
 
-With OVHcloud dedicated servers, you can freely [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives customers a wide range of options when installing an operating system. ESXi is an exception because it is a UNIX-based, proprietary system with a proprietary installer.<br/>
+With OVHcloud dedicated servers, you can freely [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives customers a wide range of options when installing an operating system. ESXi is an exception because it is a UNIX-based, proprietary system with a proprietary installer.
+
 OVHcloud installations of ESXi are therefore compliant with the configuration set by the software publisher.
 
 ESXi 7.0 and later versions introduced a [boot option to configure the size of ESXi system partitions](https://kb.vmware.com/s/article/81166) because the increased size of the system partition could cause issues, especially on systems with small disks. OVHcloud includes this feature in the [OVHcloud Control Panel](/links/manager) and the [OVHcloud API](/links/api).

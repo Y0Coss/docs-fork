@@ -25,7 +25,8 @@ Ce guide a pour objectif de vous montrer comment installer ESXi 8 sur vos serveu
 
 ## En pratique
 
-Avec les serveurs dédiés OVHcloud, vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). Cela vous donne des possibilités de configuration assez vastes lors de l'installation du système d'exploitation. ESXi ne le permet pas à cause de ses spécificités, car il s'agit d'un système propriétaire UNIX avec un installateur propriétaire. <br>
+Avec les serveurs dédiés OVHcloud, vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh), ce qui offre une grande flexibilité lors de l’installation du système d’exploitation. En revanche, cela n’est pas possible avec ESXi, car il s’agit d’un système propriétaire basé sur UNIX et utilisant un installateur propriétaire.
+
 Par conséquent, les installations ESXi d'OVHcloud sont conformes à la configuration définie par l'éditeur du logiciel.
 
 ESXi 7.0 et les versions ultérieures ont introduit une [option d'amorçage permettant de configurer la taille des partitions système d'ESXi](https://kb.vmware.com/s/article/81166). Cette fonctionnalité a été introduite par l'éditeur car l'augmentation de la taille de la partition système pouvait poser problème, en particulier sur les machines avec de petits disques. OVHcloud a inclus cette fonctionnalité, qui est disponible aussi bien depuis l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration) que via l'[API OVHcloud](/links/api).
