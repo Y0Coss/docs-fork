@@ -1,12 +1,12 @@
 ---
-title: "Using the Secret Manager with the HashiCorp Vault compliant API"
-excerpt: "Access and manage Secret Manager secrets with the HashiCorp Vault compliant API"
+title: "Using the Secret Manager with the HashiCorp Vault KV2 compliant API"
+excerpt: "Access and manage Secret Manager secrets with the HashiCorp Vault KV2 compliant API"
 updated: 2025-10-15
 ---
 
 ## Objective
 
-The objective of this guide is to present the use of the HashiCorp Vault compliant API for the Secret Manager.
+The objective of this guide is to present the use of the HashiCorp Vault KV2 compliant API for the Secret Manager.
 
 ## Requirements
 
@@ -22,7 +22,7 @@ The Secret Manager is a product that allows you to securely store credentials, A
 A secret is a collection of one or more key-value pairs grouped within a version.
 Each modification of a secret creates a new version of that secret, allowing you to go back in the history of changes to the secret.
 
-The HashiCorp Vault compliant APIs are one of the two API sets offered by the Secret Manager, along with the [REST API](/pages/manage_and_operate/secret_manager/secret_manager-rest-api).
+The HashiCorp Vault KV2 compliant APIs are one of the two API sets offered by the Secret Manager, along with the [REST API](/pages/manage_and_operate/secret_manager/secret_manager-rest-api).
 They are designed to be similar to HashiCorp Vault APIs to ensure compatibility with applications already compatible with HashiCorp Vault.
 
 ### Contacting the OKMS domain
