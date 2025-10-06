@@ -147,7 +147,7 @@ The API expects the following values:
 | :----------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
 |       cas_required       |                                         boolean                                         | If enabled, it is necessary to systematically specify the current version number when making changes |
 |     custom_metadata      |                                          Json                                          |          Additional data associated with the secret. This data is not protected by the secret          |
-| deactivate_version_after | [Duration String](https://developer.HashiCorp.com/vault/docs/concepts/duration-format) |                               Duration after which versions are deactivated                                 |
+| deactivate_version_after | [Duration String](https://developer.hashicorp.com/vault/docs/concepts/duration-format) |                               Duration after which versions are deactivated                                 |
 |       max_versions       |                                        Integer                                         |                                   Maximum number of versions for the secret                                    |
 
 For example:
@@ -180,7 +180,7 @@ The API expects the following values:
 | :----------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
 |       cas_required       |                                         boolean                                         | If enabled, it is necessary to systematically specify the current version number when making changes |
 |     custom_metadata      |                                          Json                                          |          Additional data associated with the secret. This data is not protected by the secret          |
-| deactivate_version_after | [Duration String](https://developer.HashiCorp.com/vault/docs/concepts/duration-format) |                               Duration after which versions are deactivated                                 |
+| deactivate_version_after | [Duration String](https://developer.hashicorp.com/vault/docs/concepts/duration-format) |                               Duration after which versions are deactivated                                 |
 |       max_versions       |                                        Integer                                         |                                   Maximum number of versions for the secret                                    |
 
 It is also possible to change the default configuration of the OKMS domain for the values **cas_required**, **deactivate_version_after**, and **max_versions** using the API:
