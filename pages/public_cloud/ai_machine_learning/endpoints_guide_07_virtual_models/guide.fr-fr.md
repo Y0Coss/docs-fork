@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Modèles virtuels
 excerpt: "Découvrez comment utiliser les modèles virtuels d'AI Endpoints"
-updated: 2025-10-06
+updated: 2025-10-12
 ---
 
 > [!primary]
