@@ -1,7 +1,7 @@
 ---
 title: 'Ligne SIP - Configuration sur un softphone / téléphone personnel'
 excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur un softphone tel que Linphone ou Zoiper ou sur votre téléphone personnel'
-updated: 2025-09-08
+updated: 2025-10-06
 ---
 
 > [!success]
