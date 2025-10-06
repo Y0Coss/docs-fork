@@ -1,5 +1,5 @@
 ---
-title : "Utiliser la fonctionnalité de poids sur un membre du Load Balancer"
+title: "Utiliser la fonctionnalité de poids sur un membre du Load Balancer"
 excerpt: "Découvrez comment ajuster le poids d'un membre du Load Balancer"
 updated: 2025-10-01
 ---
@@ -169,7 +169,7 @@ Si avoir un statut final **DRAINED** est critique pour vos opérations, il est r
 >>
 >> > [!api]
 >> >
->> > @api {v1} /cloudPUT /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member/{memberId}
+>> > @api {v1} /cloud PUT /cloud/project/{serviceName}/region/{regionName}/loadbalancing/pool/{poolId}/member/{memberId}
 >>
 > Horizon
 >>
@@ -289,7 +289,7 @@ Une fois la maintenance terminée, réglez le poids de `member_0` sur sa valeur 
 >>
 >> Sélectionnez la région appropriée dans le menu déroulant en haut à gauche.
 >>
->> Dans l'onglet de gauche, cliquez sur `Network` {.action}, puis sur `Load Balancers`{.action}.
+>> Dans l'onglet de gauche, cliquez sur `Network`{.action}, puis sur `Load Balancers`{.action}.
 >>
 >> Cliquez sur le load balancer concerné.
 >>
