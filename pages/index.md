@@ -456,6 +456,7 @@
             + [Understanding vScope](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_vscope)
         + [VMware vSphere](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features)
             + [Using the vSphere SDK](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_installation_api)
+            + [Managing granular rights on vSphere objects](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manage_granular_rights_vsphere_objects)
             + [VMware DRS (Distributed Resource Scheduler)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new)
             + [VMware Storage vMotion](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_storage_vmotion)
             + [Enabling Virtual Machine Encryption with external KMS](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)

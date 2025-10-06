@@ -1,7 +1,7 @@
 ---
 title: "Managing granular rights on vSphere objects"
 excerpt: "Learn how to grant or remove user rights on specific objects in your Hosted Private Cloud vSphere inventory"
-updated: 2025-10-03
+updated: 2025-10-06
 ---
 
 ## Objective
