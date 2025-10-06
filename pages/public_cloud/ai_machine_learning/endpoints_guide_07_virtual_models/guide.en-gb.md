@@ -1,7 +1,7 @@
 ---
 title: AI Endpoints - Using Virtual Models
 excerpt: Learn how to use OVHcloud AI Endpoints Virtual Models
-updated: 2025-08-18
+updated: 2025-10-06
 ---
 
 > [!primary]
