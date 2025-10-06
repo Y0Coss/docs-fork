@@ -111,7 +111,7 @@ Une version supprimée par le paramètre **Nombre maximum de versions** n'appara
 ### Gestion du domaine OKMS
 
 Le domaine OKMS du Secret Manager est commun avec le domaine OKMS du Key Management Service.
-La création ou la suppression d'un domaine OKMS à donc des conséquences sur les deux produits.
+La création ou la suppression d'un domaine OKMS a donc des conséquences sur les deux produits.
 
 Dans le cadre de la version bêta du Secret Manager, il n'est pas encore possible de modifier la configuration du domaine OKMS via l'interface graphique.
 

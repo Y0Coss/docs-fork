@@ -1,12 +1,12 @@
 ---
-title: "Using the Secret Manager with the Hashicorp Vault compliant API"
-excerpt: "Access and manage Secret Manager secrets with the Hashicorp Vault compliant API"
+title: "Using the Secret Manager with the HashiCorp Vault compliant API"
+excerpt: "Access and manage Secret Manager secrets with the HashiCorp Vault compliant API"
 updated: 2025-10-15
 ---
 
 ## Objective
 
-The objective of this guide is to present the use of the Hashicorp Vault compliant API for the Secret Manager.
+The objective of this guide is to present the use of the HashiCorp Vault compliant API for the Secret Manager.
 
 ## Requirements
 
@@ -22,8 +22,8 @@ The Secret Manager is a product that allows you to securely store credentials, A
 A secret is a collection of one or more key-value pairs grouped within a version.
 Each modification of a secret creates a new version of that secret, allowing you to go back in the history of changes to the secret.
 
-The Hashicorp Vault compliant APIs are one of the two API sets offered by the Secret Manager, along with the [REST API](/pages/manage_and_operate/secret_manager/secret_manager-rest-api).
-They are designed to be similar to Hashicorp Vault APIs to ensure compatibility with applications already compatible with Hashicorp Vault.
+The HashiCorp Vault compliant APIs are one of the two API sets offered by the Secret Manager, along with the [REST API](/pages/manage_and_operate/secret_manager/secret_manager-rest-api).
+They are designed to be similar to HashiCorp Vault APIs to ensure compatibility with applications already compatible with HashiCorp Vault.
 
 ### Contacting the OKMS domain
 
@@ -105,7 +105,7 @@ To create a secret, you can use the following API:
 | :---------: | :---------------------------------: | :-------------: |
 |    POST     | /api/{okmsId}/v1/secret/data/{path} | Create a Secret |
 
-The secret path must be specified in the API path.
+The secret's path must be specified in the API path.
 
 The API expects the following values:
 
@@ -147,7 +147,7 @@ The API expects the following values:
 | :----------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
 |       cas_required       |                                         boolean                                         | If enabled, it is necessary to systematically specify the current version number when making changes |
 |     custom_metadata      |                                          Json                                          |          Additional data associated with the secret. This data is not protected by the secret          |
-| deactivate_version_after | [Duration String](https://developer.hashicorp.com/vault/docs/concepts/duration-format) |                               Duration after which versions are deactivated                                 |
+| deactivate_version_after | [Duration String](https://developer.HashiCorp.com/vault/docs/concepts/duration-format) |                               Duration after which versions are deactivated                                 |
 |       max_versions       |                                        Integer                                         |                                   Maximum number of versions for the secret                                    |
 
 For example:
@@ -180,7 +180,7 @@ The API expects the following values:
 | :----------------------: | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
 |       cas_required       |                                         boolean                                         | If enabled, it is necessary to systematically specify the current version number when making changes |
 |     custom_metadata      |                                          Json                                          |          Additional data associated with the secret. This data is not protected by the secret          |
-| deactivate_version_after | [Duration String](https://developer.hashicorp.com/vault/docs/concepts/duration-format) |                               Duration after which versions are deactivated                                 |
+| deactivate_version_after | [Duration String](https://developer.HashiCorp.com/vault/docs/concepts/duration-format) |                               Duration after which versions are deactivated                                 |
 |       max_versions       |                                        Integer                                         |                                   Maximum number of versions for the secret                                    |
 
 It is also possible to change the default configuration of the OKMS domain for the values **cas_required**, **deactivate_version_after**, and **max_versions** using the API:
