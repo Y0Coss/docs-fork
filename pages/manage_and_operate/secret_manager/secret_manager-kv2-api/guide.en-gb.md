@@ -1,7 +1,7 @@
 ---
 title: "Using the Secret Manager with the Hashicorp Vault compliant API"
 excerpt: "Access and manage Secret Manager secrets with the Hashicorp Vault compliant API"
-updated: 2025-09-15
+updated: 2025-10-06
 flag: hidden
 ---
 

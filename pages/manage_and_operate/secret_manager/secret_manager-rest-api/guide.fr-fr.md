@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le Secret Manager avec l'API REST"
 excerpt: "Accéder et gérer les secrets du Secret Manager avec l'API REST"
-updated: 2025-09-15
+updated: 2025-10-06
 flag: hidden
 ---
 
