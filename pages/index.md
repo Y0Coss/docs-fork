@@ -2170,7 +2170,7 @@
         + [OVHcloud KMS - Responsibility model](manage_and_operate/kms/responsibility-model-kms)
         + [How to connect a compatible product using KMIP protocol with OVHcloud KMS](manage_and_operate/kms/kms-kmip)
         + [Pushing logs from OVHcloud KMS to Logs Data Platform](manage_and_operate/kms/kms-troubleshooting)
-    + [Secret Manager](manage-operate-secret)
+    + [Secret Manager](manage-operate-secret-manager)
         + [Getting started with Secret Manager](manage_and_operate/secret_manager/secret-manager-ui)
         + [Use Secret Manager with REST API](manage_and_operate/secret_manager/secret-manager-rest-api)
         + [Use Secret Manager with Hashicorp Vault KV2 compliant API](manage_and_operate/secret_manager/secret-manager-kv2-api)

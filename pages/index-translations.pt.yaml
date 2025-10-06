@@ -358,6 +358,7 @@ manage-operate-terraform: Terraform
 manage-operate-cli: CLI
 manage-operate-observability: Observability
 manage-operate-kms: KMS
+manage-operate-secret-manager: Secret Manager
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Getting Started
 observability-logs-data-platform-iam: IAM
