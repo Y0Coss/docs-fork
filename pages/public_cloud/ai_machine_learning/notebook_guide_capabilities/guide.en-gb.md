@@ -111,7 +111,7 @@ Currently, we provide:
 - **NVIDIA L40s**
 - **Intel CPU vCores**
 
-Pricing are indicated [ here](https://www.ovhcloud.com/en-gb/public-cloud/prices/#ai-&-machine-learning).
+Pricing are indicated [here](https://www.ovhcloud.com/en-gb/public-cloud/prices/#ai-&-machine-learning).
 
 #### Available storage
 
