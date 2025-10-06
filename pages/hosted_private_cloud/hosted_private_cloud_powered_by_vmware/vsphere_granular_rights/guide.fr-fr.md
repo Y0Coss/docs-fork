@@ -14,55 +14,53 @@ En complément des droits globaux au niveau du datacentre, vous pouvez attribuer
 - Un accès à l’[API OVHcloud](/links/api)
 - Un utilisateur déjà créé dans votre service Hosted Private Cloud ([voir le guide de gestion des utilisateurs](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manage_users))
 
-## Instructions
+## En pratique
 
 ### Ajouter des droits sur un objet vSphere
 
 1. Appelez le point d’entrée API suivant :
 
-> [!api]
->
-> @api {v1} /order POST /dedicatedCloud/{serviceName}/user/{userId}/objectRight
+    > [!api]
+    >
+    > @api {v1} /order POST /dedicatedCloud/{serviceName}/user/{userId}/objectRight
 
 2. Renseignez le corps de la requête avec l’objet et l’utilisateur auxquels vous souhaitez accorder l’accès.
 
-Vous pouvez choisir de propager ou non le droit aux objets enfants, de la même manière que les droits natifs vSphere.
+    Vous pouvez choisir de propager ou non le droit aux objets enfants, de la même manière que les droits natifs vSphere.
 
-3. Validez la requête. Une tâche de type **addUserObjectRight** est créée et appliquée sur l’objet vSphere.
+3. Validez la requête. Une tâche de type `addUserObjectRight` est créée et appliquée sur l’objet vSphere.
 
-![Ajouter un droit sur un objet](images/add-object-right.png){.thumbnail}
+    ![Ajouter un droit sur un objet](images/add-object-right.png){.thumbnail}
 
 ### Supprimer des droits sur un objet vSphere
 
 1. Appelez le point d’entrée API suivant :
 
-> [!api]
->
-> @api {v1} /domain DELETE /dedicatedCloud/{serviceName}/user/{userId}/objectRight/{objectRightId}
+    > [!api]
+    >
+    > @api {v1} /domain DELETE /dedicatedCloud/{serviceName}/user/{userId}/objectRight/{objectRightId}
 
-2. Renseignez les champs avec l’**objectRightId** correspondant au droit que vous souhaitez retirer.
+2. Renseignez les champs avec l’`objectRightId` correspondant au droit que vous souhaitez retirer.
 
-3. Validez la requête. Une tâche de type **removeUserObjectRight** est créée et supprime le droit utilisateur sur l’objet vSphere.
+3. Validez la requête. Une tâche de type `removeUserObjectRight` est créée et supprime le droit utilisateur sur l’objet vSphere.
 
-![Supprimer un droit sur un objet](images/remove-object-right.png){.thumbnail}
+    ![Supprimer un droit sur un objet](images/remove-object-right.png){.thumbnail}
 
 ### Afficher les droits dans l’Espace Client OVHcloud
 
-1. Ouvrez l’[Espace Client OVHcloud](/links/manager).
-
-Cliquez sur `Hosted Private Cloud`{.action} dans la barre supérieure, puis sur `Managed VMware vSphere`{.action} dans le menu de gauche, et sélectionnez votre service PCC.
+1. Ouvrez l’[Espace Client OVHcloud](/links/manager). Cliquez sur `Hosted Private Cloud`{.action} dans la barre supérieure, puis sur `Managed VMware vSphere`{.action} dans le menu de gauche, et sélectionnez votre service PCC.
 
 2. Accédez à l’onglet `Utilisateurs`{.action}. Sur la ligne de l’utilisateur concerné, ouvrez le menu `…`{.action} et cliquez sur `Afficher/Modifier les droits pour chaque DC`{.action}.
 
-![Onglet utilisateurs et menu d’actions](images/users-actions-menu.png){.thumbnail}
+    ![Onglet utilisateurs et menu d’actions](images/users-actions-menu.png){.thumbnail}
 
 3. Sur la page **Gérer les droits administrateurs par datacentre**, repérez la ligne correspondant au datacentre. Cliquez sur le menu `…`{.action} (ou sur `Modifier les droits`{.action}) pour modifier les droits.
 
-![Gérer les droits par datacentre](images/rights-by-datacentre.png){.thumbnail}
+    ![Gérer les droits par datacentre](images/rights-by-datacentre.png){.thumbnail}
 
 4. Dans la fenêtre **Modification des droits**, configurez les droits souhaités puis validez.
 
-![Fenêtre de modification des droits](images/edit-rights-modal.png){.thumbnail}
+    ![Fenêtre de modification des droits](images/edit-rights-modal.png){.thumbnail}
 
 #### Référence des droits
 
@@ -75,7 +73,7 @@ Cliquez sur `Hosted Private Cloud`{.action} dans la barre supérieure, puis sur 
 | Lecture seule | Accès en lecture seule       |
 | Lecture/Écriture | Accès en lecture et écriture |
 
-**Accès au réseau VM Network** — droits de gestion sur la section réseau public (“VM Network” dans vSphere).
+**Accès au réseau VM Network** — droits de gestion sur la section réseau public (« VM Network » dans vSphere).
 
 | Droit       | Description                                                   |
 |--------------|---------------------------------------------------------------|

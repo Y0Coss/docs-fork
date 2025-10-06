@@ -20,50 +20,48 @@ In addition to global datacenter rights, you can assign granular rights to users
 
 1. Call the following API endpoint:
 
-> [!api]
->
-> @api {v1} /order POST /dedicatedCloud/{serviceName}/user/{userId}/objectRight
+    > [!api]
+    >
+    > @api {v1} /order POST /dedicatedCloud/{serviceName}/user/{userId}/objectRight
 
 2. Fill in the request body with the object and user you want to grant access to.
 
-You can choose whether or not to propagate the right to child objects, similar to vSphere native rights.
+    You can choose whether or not to propagate the right to child objects, similar to vSphere native rights.
 
-3. Confirm the request. A task of type addUserObjectRight is created and applied on the vSphere object.
+3. Confirm the request. A task of type `addUserObjectRight` is created and applied on the vSphere object.
 
-![Add object right](images/add-object-right.png){.thumbnail}
+    ![Add object right](images/add-object-right.png){.thumbnail}
 
 ### Remove rights from a vSphere object
 
 1. Call the following API endpoint:
 
-> [!api]
->
-> @api {v1} /domain DELETE /dedicatedCloud/{serviceName}/user/{userId}/objectRight/{objectRightId}
->
+    > [!api]
+    >
+    > @api {v1} /domain DELETE /dedicatedCloud/{serviceName}/user/{userId}/objectRight/{objectRightId}
+    >
 
-2. Fill in the fields with the objectRightId corresponding to the right you want to remove.
+2. Fill in the fields with the `objectRightId` corresponding to the right you want to remove.
 
-3. Confirm the request. A task of type removeUserObjectRight is created and removes the user right from the vSphere object.
+3. Confirm the request. A task of type `removeUserObjectRight` is created and removes the user right from the vSphere object.
 
-![Remove object right](images/remove-object-right.png){.thumbnail}
+    ![Remove object right](images/remove-object-right.png){.thumbnail}
 
 ### Viewing rights in the OVHcloud Control Panel
 
-1. Open the [OVHcloud Control Panel](/links/manager).
-
-   Click `Hosted Private Cloud`{.action} in the top bar, then `Managed VMware vSphere`{.action} in the left menu, and select your PCC service.
+1. Open the [OVHcloud Control Panel](/links/manager). Click `Hosted Private Cloud`{.action} in the top bar, then `Managed VMware vSphere`{.action} in the left menu, and select your PCC service.
 
 2. Go to the `Users`{.action} tab. On the desired user row, open the `…`{.action} menu and click `View/Edit the rights for each DC`{.action}.
 
-![Users tab and actions menu](images/users-actions-menu.png){.thumbnail}
+    ![Users tab and actions menu](images/users-actions-menu.png){.thumbnail}
 
 3. On the **Manage admin user rights by datacentre** page, locate the datacenter row. Click the `…`{.action} menu (or `Modify rights`{.action}) to edit the rights.
 
-![Manage rights by datacentre](images/rights-by-datacentre.png){.thumbnail}
+    ![Manage rights by datacentre](images/rights-by-datacentre.png){.thumbnail}
 
 4. In the **Editing rights** window, set the rights and confirm.
 
-![Editing rights modal](images/edit-rights-modal.png){.thumbnail}
+    ![Editing rights modal](images/edit-rights-modal.png){.thumbnail}
 
 #### Rights reference
 
