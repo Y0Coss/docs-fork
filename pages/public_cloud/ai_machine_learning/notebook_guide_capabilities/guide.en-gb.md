@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Notebooks
-updated: 2025-10-6
+updated: 2025-10-06
 ---
 
 > [!primary]
@@ -88,7 +88,7 @@ If you choose `CPU`:
 
 - Memory and local storage resources are not customizable but scaled linearly with each additional CPU.
 
-The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
+The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](/links/public-cloud/prices-ai), Control Panel and the `ovhai` CLI.
 
 ``` {.console}
 ovhai capabilities flavor list
@@ -111,7 +111,7 @@ Currently, we provide:
 - **NVIDIA L40s**
 - **Intel CPU vCores**
 
-Pricing are indicated [here](https://www.ovhcloud.com/en-gb/public-cloud/prices/#ai-&-machine-learning).
+Pricing is available [here](/links/public-cloud/prices-ai).
 
 #### Available storage
 
