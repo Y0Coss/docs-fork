@@ -1,8 +1,7 @@
 ---
 title: "Utiliser le Secret Manager dans l'espace client OVHcloud"
 excerpt: "Découvrez comment utiliser le Secret Manager avec l'interface graphique"
-updated: 2025-10-06
-flag: hidden
+updated: 2025-10-15
 ---
 
 > [!primary]
