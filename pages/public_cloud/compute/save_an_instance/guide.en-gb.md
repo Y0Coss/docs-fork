@@ -73,8 +73,6 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> Next, `activate`{.action} the option to add a remote backup, then specify the name of this backup, select its destination region and click `Confirm`{.action}.
 >>
->> ![public-cloud-instance-distant-backup2](images/createdistantbackup2.png){.thumbnail}
->>
 >> ///
 >>
 >> It is not possible to monitor backup progress in real time. However, in the `Instance Backup`{.action} section under **Compute** in the left-hand menu, the status `Backup in progress` will be displayed during the process.

@@ -73,8 +73,6 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> Ensuite, `activez`{.action} l’option permettant d’ajouter une sauvegarde distante, puis indiquez le nom de cette sauvegarde, sélectionnez sa région de destination et cliquez sur `Confirmer`{.action}.
 >>
->> ![public-cloud-instance-distant-backup2](images/createdistantbackup2.png){.thumbnail}
->>
 >> ///
 >>
 >> Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, dans la section `Instance Backup`{.action} sous la rubrique **Compute** dans le menu de gauche, le statut `Backup en cours` sera affiché pendant le processus.
