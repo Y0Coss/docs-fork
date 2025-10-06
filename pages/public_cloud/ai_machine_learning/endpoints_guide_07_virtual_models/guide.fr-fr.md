@@ -42,6 +42,11 @@ Follow the instructions in the [AI Endpoints - Getting Started](/pages/public_cl
 
 ## Model DSL
 
+> [!warning]
+>
+> La fonctionnalité de modèle virtuel permettant de changer dynamiquement de modèle, les caractéristiques du modèle (telles que le prix ou la taille du contexte) peuvent évoluer lorsqu'un modèle plus récent sera sélectionné pour traiter votre requête. Pour garantir le maintien de certaines caractéristiques, vous pouvez les verrouiller en utilisant les conditions de requête indiquées ci-dessous
+>
+
 When you request an LLM generation through our unified endpoint, you can provide in the OpenAI-compliant `model` field a model DSL query instead of a hardcoded model name.
 
 These queries are divided into three parts: tag, ranker, and condition:
@@ -54,10 +59,10 @@ Below are some example queries and the models they currently resolve to. Please 
 
 | Model Query | Current Target Model | Usage |
 |-----------|-----------|-----------|
-| code_chat@latest | Qwen3-32B | The most recently released model optimized for code chat tasks |
-| meta-llama@latest | Llama-3.1-8B-Instruct | The latest Meta-released LLaMA model |
-| mistral@latest?context_size > 100000 | Mistral-Small-3.2-24B-Instruct-2506 | The latest Mistral model with a context window greater than 100k tokens |
-| llama@biggest?input_cost<0.5 | Llama-3.1-8B-Instruct | The largest LLaMA model whose input token cost is under €0.50 per 1M tokens |
+| code_chat@latest | **Exemple:** Qwen3-32B | The most recently released model optimized for code chat tasks |
+| meta-llama@latest | **Exemple:** Llama-3.1-8B-Instruct | The latest Meta-released LLaMA model |
+| mistral@latest?context_size > 100000 | **Exemple:** Mistral-Small-3.2-24B-Instruct-2506 | The latest Mistral model with a context window greater than 100k tokens |
+| llama@biggest?input_cost<0.5 | **Exemple:** Llama-3.1-8B-Instruct | The largest LLaMA model whose input token cost is under €0.50 per 1M tokens |
 
 You can visit our [catalog](https://endpoints.ai.cloud.ovh.net/catalog) to learn more about the different model specifications.
 
