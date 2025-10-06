@@ -43,12 +43,11 @@ OVHcloud propose deux types de sauvegardes, avec des comportements différents s
 >> Pour créer une sauvegarde d'une instance à partir de l'espace client OVHcloud, suivez [cette section](/pages/public_cloud/compute/save_an_instance#createinstanceviamanager) de notre guide sur la création de la sauvegarde d'une instance.
 >>
 > Via la CLI Openstack
-<!-- >> Pour créer une sauvegarde d’une instance depuis la CLI OpenStack, suivez [cette section](/pages/public_cloud/compute/save_an_instance#createinstanceviaopenstack) de notre guide sur la création de la sauvegarde d'une instance. -->
-<!-- need PR sur le backup distant -->
+>> Pour créer une sauvegarde d’une instance depuis la CLI OpenStack, suivez [cette section](/pages/public_cloud/compute/save_an_instance#createinstanceviaopenstack) de notre guide sur la création de la sauvegarde d'une instance.
 >>
 > via Horizon
-<!-- >> Pour créer une sauvegarde d’une instance depuis Horizon, suivez [cette section](/pages/public_cloud/compute/save_an_instance#createinstanceviahorizon) de notre guide sur la création de la sauvegarde d'une instance. -->
-<!-- >> a faire dans la pr sur le backup distant -->
+>> Pour créer une sauvegarde d’une instance depuis Horizon, suivez [cette section](/pages/public_cloud/compute/save_an_instance#createinstanceviahorizon) de notre guide sur la création de la sauvegarde d'une instance.
+>>
 
 ### Étape 2. Migrer sa sauvegarde vers une autre région
 
