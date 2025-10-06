@@ -2171,8 +2171,8 @@
         + [How to connect a compatible product using KMIP protocol with OVHcloud KMS](manage_and_operate/kms/kms-kmip)
         + [Pushing logs from OVHcloud KMS to Logs Data Platform](manage_and_operate/kms/kms-troubleshooting)
         + [Getting started with Secret Manager](manage_and_operate/secret_manager/secret-manager-ui)
-        + [Use Secret Manager with REST API](manage_and_operate/secret_manager/secret-manager-rest-api)
-        + [Use Secret Manager with Hashicorp Vault KV2 compliant API](manage_and_operate/secret_manager/secret-manager-kv2-api)
+        + [Use Secret Manager with REST API](manage_and_operate/secret_manager/secret_manager-rest-api)
+        + [Use Secret Manager with Hashicorp Vault KV2 compliant API](manage_and_operate/secret_manager/secret_manager-kv2-api)
 + OVHcloud Labs
     + [Data Collector](products/ovhcloud-labs-data-collector)
         + [Getting started](ovhcloud-labs-data-collector-getting-started)
