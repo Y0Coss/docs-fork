@@ -17,7 +17,7 @@ Esta guía explica cómo restaurar un volumen a su último snapshot utilizando l
 ## Requisitos
 
 - Disponer de una solución OVHcloud Enterprise File Storage con un volumen
-- Estar conectado a la [API de OVHcloud](https://api.ovh.com/)
+- Estar conectado a la [API de OVHcloud](/links/api)
 
 ## Principios básicos
 
@@ -35,7 +35,7 @@ En esta guía, un volumen también recibe el nombre de "*share*" en la API de OV
 
 Solo es posible restaurar un volumen a su snapshot más reciente disponible. Sin embargo, si desea restaurar un volumen a partir de un snapshot anterior, deberá eliminar los snapshots hasta que el snapshot que vaya a utilizar para la restauración sea el más reciente.
 
-## En la práctica
+## Procedimiento
 
 ### Escenario 1: restaurar un volumen desde un snapshot de tipo `manual`
 
@@ -149,6 +149,6 @@ El volumen se restaurará en el snapshot seleccionado.
 
 ## Más información <a name="go-further"></a>
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

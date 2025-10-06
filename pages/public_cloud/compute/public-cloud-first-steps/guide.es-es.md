@@ -134,7 +134,7 @@ Antes de crear su instancia, le recomendamos que analice cómo se utilizará la 
 - Si por el momento no necesita configurar la instancia con una red privada, puede pasar al [paso 4](#create-instance). Puede crear una instancia expuesta a internet (ver el **Modo público** [a continuación](#networking-modes).)
 - Si la instancia debe estar conectada a una nueva red privada (OVHcloud [vRack](/links/network/vrack)), **cree su vRack** antes de continuar. Para más información, consulte la [guía sobre el vRack de Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
-<a name="networking-mode"></a>
+<a name="networking-modes"></a>
 
 /// details | Public Cloud Networking - Modos
 
@@ -425,7 +425,7 @@ Si su [par de llaves SSH está correctamente configurado](#create-ssh), puede co
 
 > [!primary]
 >
-> Si recibe mensajes de error relativos a sus **llaves SSH**, compruebe que su dispositivo local dispone de una llave SSH privada correctamente configurada utilizando la información de [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
+> Si recibe mensajes de error relativos a sus **llaves SSH**, compruebe que su dispositivo local dispone de una llave SSH privada correctamente configurada utilizando la información de [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
 > Si sigue teniendo problemas, puede reemplazar el par de claves con [esta guía](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Si ha creado una instancia sin llave SSH, a través de la [API de OVHcloud](/pages/manage_and_operate/api/first-steps) o de la [interfaz OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta guía](/pages/public_cloud/compute/replacing_lost_ssh_key).

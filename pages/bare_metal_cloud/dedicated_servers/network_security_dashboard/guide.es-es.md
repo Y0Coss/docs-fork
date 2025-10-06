@@ -1,20 +1,17 @@
 ---
 title: "Monitorización de los ataques DDoS con el Network Security Dashboard"
 excerpt: "Aprenda a navegar por el panel de control de seguridad de red"
-updated: 2025-04-28
+updated: 2025-09-08
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 ## Objetivo
 
 Esta guía explica el panel de control de seguridad de la red y proporciona una visión general de las medidas de respuesta activadas por nuestra infraestructura de protección DDoS cuando se detecta actividad de red malintencionada. Puede encontrar información detallada sobre las protecciones adicionales activadas que se deben implementar para mantener sus servicios activos y en funcionamiento. Además, hay gráficos de tráfico disponibles en el tablero de mandos para limpiar los periodos de actividad del centro a fin de visualizar mejor la situación.
 
+
 ## Requisitos
 
-- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/es-es/vps/), [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), [IP adicional](/links/network/additional-ip), etc.)
+- Un servicio de OVHcloud expuesto en una dirección IP pública dedicada ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [instancia de Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud), [Additional IP](/links/network/additional-ip), etc.)
 - Acceso al [área de cliente de OVHcloud](/links/manager)
 
 ## Instrucciones
@@ -52,8 +49,7 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Ne
 Las columnas corresponden al estado de limpieza anti-DDoS (**Mitigación**), la disponibilidad de las funciones de Edge Network **Firewall** y **Firewall GAME** y sus estados.
 
 - El estado **Mitigación** puede ser:
-    - **Automático** - El centro de limpieza está en modo **automático**. Es el modo recomendado para usar, redirecciona el tráfico para un análisis más profundo cuando sea necesario.
-    - **Permanente** - El centro de limpieza está **habilitado de forma permanente**. No se recomienda habilitarlo permanentemente, a menos que se observe fluctuación de latencia debido a un redireccionamiento del tráfico hacia adelante y hacia atrás.
+    - **Automático** - El centro de limpieza está en modo **automático** y redirecciona el tráfico para un análisis más profundo cuando sea necesario.
     - **Forzado** - Esto indica que el centro de limpieza está **tomando medidas** en este momento.
 
 - La columna **Firewall** indica el estado del firewall de red perimetral que puede ser:
@@ -74,7 +70,7 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager), haga clic en `Ne
 
 En la pestaña **registro del centro de limpieza**, puede recuperar toda la información sobre los ataques detectados en el pasado (o que están en curso).
 
-![red-line-attack](images/nsd_main_blur.png)
+![red-line-attack](images/nsd_main_blur.png){.thumbnail}
 
 En la tabla, están presentes las siguientes columnas: 
 
@@ -90,7 +86,7 @@ En la tabla, están presentes las siguientes columnas:
 
 En la pestaña **Gráfico de tráfico**, puede ver un gráfico que muestra el tráfico a su dirección IP (bps o pps).
 
-![red-line-attack](images/nsd_graph_tab_blur.png)
+![red-line-attack](images/nsd_graph_tab_blur.png){.thumbnail}
 
 Presenta tráfico malintencionado que se descartó (**en rojo**) y tráfico limpio entregado a su dirección IP (**en verde**). También se muestran estadísticas básicas de mitigación, por ejemplo: cuántos ataques se detectaron para una IP seleccionada, cuánto tráfico (o paquetes) se limpió durante los ataques o cuántas veces los centros de limpieza realizaron una acción para inspeccionar su tráfico (número de eventos) en un período de tiempo seleccionado.
 
@@ -170,4 +166,4 @@ En cualquier caso en el que sea necesario realizar ajustes en nuestro sistema an
 
 [Protección de un servidor GAME con el firewall de aplicaciones](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

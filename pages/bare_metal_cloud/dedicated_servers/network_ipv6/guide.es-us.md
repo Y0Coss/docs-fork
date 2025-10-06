@@ -1,12 +1,8 @@
 ---
 title: 'Configurar IPv6 en un servidor dedicado'
 excerpt: 'Descubra cómo configurar direcciones IPv6 en nuestra infraestructura'
-updated: 2024-07-15
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
@@ -15,10 +11,18 @@ Los servidores de las gamas High Grade, Scale y Advance (desde julio de 2024) se
 
 **Esta guía explica cómo configurar las direcciones IPv6 en su servidor siguiendo varios ejemplos.**
 
+> [!primary]
+>
+> Este artículo explica cómo configurar una dirección IP principal. En los servidores compatibles con el vRack, también puede configurar direcciones Additional IP en un vRack en lugar de en la interfaz pública del servidor. Consulte las instrucciones correspondientes en los siguientes artículos:
+>
+> - IPv4: [Configurar un bloque de IP en el vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
+> - IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
+
 > [!warning]
 > OVHcloud le ofrece una serie de servicios cuya configuración y gestión recaen sobre usted. Por lo tanto, es su responsabilidad asegurarse de que estos servicios funcionen correctamente.
 >
-> El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](/links/partner) y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
+> El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](/links/partner) y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección [«Más información»](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -60,7 +64,7 @@ El primer paso consiste en recuperar la pasarela (Gateway) IPv6 asignada al serv
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor en la sección `Servidores dedicados`{.action}.
 
-La pasarela IPv6 asignada a su servidor se muestra en la sección `Red` de la pestaña `Información general`{.action}. Una vez copiada, vaya al paso 2 «[Aplicar la configuración IPv6](#applyipv6)».
+La pasarela IPv6 asignada a su servidor se muestra en la sección `Red` de la pestaña `Información general`{.action}. Una vez copiado, continúe con la aplicación de configuración IPv6.
 
 ![configureipv6](images/ipv6_information.png){.thumbnail}
 
@@ -86,6 +90,10 @@ IPv6_GATEWAY: `2607:5300:60:62FF:00FF:00FF:00FF:00FF` también se puede escribir
 > Antes de editar un archivo de configuración, cree siempre una copia de seguridad del original para poder volver si surge algún problema. 
 > 
 
+> [!primary]
+> Algunos sistemas operativos requieren que se añadan por defecto rutas IPv6 estáticas al fichero de configuración original. Si este es el caso, simplemente añada su configuración para IPv6 como se indica en la guía, no modifique ninguna línea del fichero original.
+>
+
 ### Sistemas operativos Debian y basados en Debian (excepto Debian 12)
 
 > [!warning]
@@ -107,7 +115,7 @@ ssh user@serverIP
 
 #### 2. Crear una copia de seguridad
 
-El archivo de configuración de red del servidor se encuentra en `/etc/network/interfaces.d`. Antes de continuar, cree una copia de seguridad de su archivo utilizando el siguiente comando:
+El archivo de configuración de red del servidor se encuentra en `/etc/network/interfaces.d`. En nuestro ejemplo, se llama `50-cloud-init`. Antes de continuar, cree una copia de seguridad de su archivo utilizando el siguiente comando:
 
 ```sh
 sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
@@ -621,6 +629,6 @@ En cualquier caso, no dude en ponerse en contacto con [nuestro equipo de soporte
 - El nombre y el directorio del archivo de configuración de red;
 - El contenido de ese archivo. 
 
-## Más información
+## Más información <a name="go-further"></a>
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

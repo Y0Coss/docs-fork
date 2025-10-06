@@ -52,7 +52,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part
 ```
 
-Se o seu resultado se assemelha ao exemplo acima e a coluna `MOUNTPOINT` está vazia na linha correspondente, você pode passar para [a próxima etapa](#checkfs).
+Se o seu resultado se assemelha ao exemplo acima e a coluna `MOUNTPOINT` está vazia na linha correspondente, você pode passar para [a próxima etapa](#filesystemcheck).
 
 No entanto, se o seu resultado mostrar que existe um ponto de montagem para a partição VPS, esta deverá ser desmontada primeiro.
 
@@ -77,7 +77,7 @@ Neste exemplo de configuração, o comando seria:
 umount /dev/sdb1
 ```
 
-#### Verificar o sistema de ficheiros <a name="checkfs"></a>
+#### Verificar o sistema de ficheiros <a name="filesystemcheck"></a>
 
 Antes de continuar, é recomendável verificar o sistema de arquivos (`filesystem check`) para ver se há erros na partição. O comando é o seguinte:
 
@@ -278,4 +278,4 @@ Introduza o tamanho pretendido e clique em `OK`{.action}. O seu volume será ent
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/).

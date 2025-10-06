@@ -1,7 +1,7 @@
 ---
 title: 'Activer et configurer le Edge Network Firewall'
 excerpt: 'Découvrez comment configurer le Edge Network Firewall pour vos services'
-updated: 2025-04-28
+updated: 2025-09-08
 ---
 
 ## Objectif
@@ -21,13 +21,13 @@ Pour protéger les services des clients exposés sur les adresses IP publiques, 
 
 ## Prérequis
 
-- Un service OVHcloud exposé et utilisant une adresse IP publique dédiée ([Serveur Dédié](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/fr-ca/vps/),[instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
+- Un service OVHcloud exposé et utilisant une adresse IP publique dédiée ([Serveur Dédié](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps),[instance Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
 - Avoir accès à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
-> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
 >
-> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
+> Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 
 > [!warning]
 > Le Edge Firewall Network ne prend pas en charge le protocole QUIC.
@@ -156,26 +156,9 @@ Par exemple, un paquet pour le port TCP 80 sera intercepté par la règle 2 et l
 
 ### Mitigation des attaques - Activité du centre de nettoyage (Scrubbing Center)
 
-Notre infrastructure anti-DDoS (VAC) dispose de deux modes de fonctionnement : **automatique** et **permanent**. Le processus de mitigation est effectué via un centre de nettoyage (*Scrubbing Center*) automatisé. C’est là que notre technologie avancée examine en profondeur les paquets et tente de supprimer le trafic DDoS tout en permettant au trafic légitime de passer.
+Notre infrastructure anti-DDoS (VAC) fonctionne automatiquement. Le processus de mitigation s'effectue via un centre de nettoyage (**Scrubbing Center**) automatisé. C’est là que notre technologie avancée examine en profondeur les paquets et tente de supprimer le trafic DDoS tout en permettant au trafic légitime de passer.
 
-- **La mitigation automatique** est la valeur par défaut : toutes les adresses IP OVHcloud sont en mitigation automatique et il s'agit en général du meilleur choix pour vos services. Si un trafic malveillant est détecté, le Scrubbing Center est actif. Cet état est alors indiqué par un statut « Forcé » pour une adresse IP donnée. Le Edge Network Firewall est également actif. La situation revient à la normale lorsque l’attaque est mitigée et qu’aucune autre activité suspecte n’est observée.
-
-- **Le mode mitigation permanente** peut être activé ou désactivé depuis votre espace client. Avec la mitigation permanente, vous appliquez de manière permanente le premier niveau de filtrage afin que tout le trafic passe en permanence par le système de mitigation avant d’atteindre le serveur. Il est déconseillé d'activer cette option sur de plus longues périodes, à moins que vous ne subissiez de la gigue (variation de la latence), en raison du fait que le Scrubbing Center redirige le trafic trop fréquemment.
-À noter que, contrairement au mode automatique, il n’y a **pas** d’augmentation du niveau de protection lorsque ce mode est activé.
-
-Pour l'activer, procédez comme suit :
-
-- Cliquez sur `Network`{.action} dans le menu situé à gauche de l'écran.
-- Cliquez sur `Adresses IP Publiques`{.action}.
-
-| ![menu-ipv4](images/mitigation_menu.png) | 
-|:--:| 
-| Cliquez ensuite sur le bouton `...`{.action} à droite de l'IPv4 concernée |
-
-
-| ![mitigation-option](images/mitigation_menu_step_2.png) | 
-|:--:| 
-| Sélectionnez `Mitigation : mode permanent`{.action} |
+Toutes les adresses IP OVHcloud sont en mitigation automatique. Si un trafic malveillant est détecté, le **Scrubbing Center** s'active. Cet état est alors représenté par un statut « Forcé » pour une adresse IP donnée. Le Edge Network Firewall est également actif. La situation revient à la normale lorsque l’attaque est mitigée et qu’aucune autre activité suspecte n’est observée.
 
 > [!success]
 > **Astuces**

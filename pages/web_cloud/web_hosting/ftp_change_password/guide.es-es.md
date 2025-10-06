@@ -1,7 +1,7 @@
 ---
 title: "Cambiar la contraseña de un usuario FTP"
 excerpt: "Descubra cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud"
-updated: 2024-02-29
+updated: 2025-09-19
 ---
 
 ## Objetivo
@@ -55,7 +55,7 @@ Según el plan de [hosting de OVHcloud](/links/web/hosting), la modificación de
 >
 > La nueva contraseña debe respetar la **política de las siguientes contraseñas** :
 >
->- Mínimo 8 caracteres;
+>- Mínimo 9 caracteres;
 >- Máximo 30 caracteres;
 >- Al menos una letra mayúscula;
 >- Al menos una letra minúscula;

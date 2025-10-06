@@ -1,13 +1,8 @@
 ---
 title: 'Configurar um endereço de IP alias'
 excerpt: 'Saiba como adicionar endereços Additional IP à sua configuração VPS'
-updated: 2024-11-05
+updated: 2025-09-11
 ---
-
-> [!primary]
->
-> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](/links/network/additional-ip). Isto não afeta as suas funcionalidades.
->
 
 ## Objetivo
 
@@ -19,15 +14,19 @@ O alias de IP (*IP aliasing* em inglês) é uma configuração especial da rede 
 >
 > A OVHcloud oferece-lhe serviços que são da sua responsabilidade. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](/links/partner). Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”.
 >
 
 ## Requisitos
 
-- Ter uma oferta [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- Dispor de um [endereço Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)
+- Ter uma oferta [VPS](/links/bare-metal/vps) na sua conta OVHcloud
+- Dispor de um [endereço Additional IP](/links/bare-metal/ip)
 - Ter um acesso administrador (sudo) via SSH ou GUI no seu servidor
 - Ter conhecimentos básicos sobre as redes e a sua administração
+
+> [!warning]
+> Os endereços Additional IP atualmente indisponíveis para os servidores privados virtuais nas [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Instruções
 
@@ -46,7 +45,7 @@ No que diz respeito às diferentes versões de distribuições, tenha em conta q
 |NETWORK_INTERFACE|Nome da interface de rede|*eth0*, *ens3*|
 |ID|ID do alias IP, começando por *0* (em função do número de endereços IP suplementares a configurar)|*0*, *1*|
 
-### Debian 10/11
+### Debian 11
 
 #### Etapa 1: desativar a configuração automática da rede
 
@@ -212,7 +211,7 @@ sudo netplan apply
 
 Repita este procedimento para cada endereço Additional IP.
 
-### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 O ficheiro de configuração principal está situado na pasta `/etc/sysconfig/network-scripts/`. Neste exemplo, é chamado `ifcfg-eth0`. Antes de fazer qualquer alteração, verifique o nome real do arquivo nessa pasta.
 
@@ -396,7 +395,7 @@ Introduza `cmd` e clique em `OK`{.action} para abrir a aplicação de linha de c
 
 Para obter a configuração IP atual, insira o `ipconfig` na encomenda.
 
-```powershell
+```console
 C:\Users\Administrator>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
@@ -442,7 +441,7 @@ A ligação ao seu servidor será interrompida durante alguns segundos.
 
 Abra a linha de comandos (cmd) e introduza o `ipconfig`. A configuração deve agora incluir o novo endereço Additional IP.
 
-```powershell
+```console
 C:\Users\Administrator>ipconfig
 Windows IP Configuration
 Ethernet adapter Ethernet:
@@ -471,6 +470,6 @@ Para testar a ligação, basta enviar um ping ao seu endereço Additional IP a p
 
 [Ativar o modo rescue num VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Monitoring des attaques DDoS avec le Network Security Dashboard"
 excerpt: "Apprenez à naviguer dans le Network Security Dashboard"
-updated: 2025-04-28
+updated: 2025-09-08
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Ce guide a pour but de présenter le tableau de bord de sécurité réseau (*Net
 
 ## Prérequis
 
-- Un service OVHcloud exposé sur une adresse IP publique dédiée ([Serveur dédié](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/fr/vps/), [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
+- Un service OVHcloud exposé sur une adresse IP publique dédiée ([Serveur dédié](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Instance Public Cloud](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
@@ -48,8 +48,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `N
 Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scrubbing (**Mitigation**), du Edge Network **Firewall** et du **GAME firewall**.
 
 - L'état **Mitigation** peut être :
-    - **Automatique** - Le centre de nettoyage est en mode **automatique**. Il s'agit du mode recommandé, car il redirige le trafic pour une analyse plus approfondie lorsque cela est nécessaire.
-    - **Permanent**** - Le centre de nettoyage est **activé en permanence**. Il est déconseillé de l'activer de manière permanente, sauf en cas de gigue (*jitter*) de latence due à un réacheminement du trafic en va-et-vient.
+    - **Automatique** - Le centre de nettoyage est en mode **automatique**, et redirige le trafic pour une analyse plus approfondie lorsque cela est nécessaire.
     - **Forcé** - Ceci indique que le centre de nettoyage est **en train d'effectuer une action**.
 
 - La colonne **Firewall** indique l'état du Edge Firewall Network qui peut être :

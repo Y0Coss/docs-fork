@@ -22,7 +22,7 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
 
 ## Wymagania początkowe
 
-- Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na Twoim koncie OVHcloud.
+- Jeden [VPS](/links/bare-metal/vps) na Twoim koncie OVHcloud.
 - Dostęp administratora (sudo) do serwera przez SSH.
 
 ## W praktyce
@@ -262,7 +262,7 @@ sudo service fail2ban restart
 
 Fail2ban ma wiele ustawień i filtrów personalizacji oraz wstępnie zdefiniowanych opcji, np. jeśli chcesz dodać warstwę ochronną do serwera Nginx.
 
-W celu uzyskania dodatkowych informacji oraz uzyskania zaleceń dotyczących Fail2ban zapoznaj się [z oficjalną](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} dokumentacją tego narzędzia.
+W celu uzyskania dodatkowych informacji oraz uzyskania zaleceń dotyczących Fail2ban zapoznaj się [z oficjalną](https://www.fail2ban.org/wiki/index.php/Main_Page) dokumentacją tego narzędzia.
 
 ### Konfiguracja Network Firewall OVHcloud 
 
@@ -279,7 +279,7 @@ Zabezpieczenie danych jest jednym z kluczowych czynników, dlatego OVHcloud ofer
 - Opcja `Snapshot` umożliwia tworzenie zrzutu ręcznego.
 - Opcja automatycznej `kopii zapasowej` pozwala na zachowanie regularnych kopii zapasowych serwera VPS (z wyjątkiem dodatkowych dysków).
 
-Wszystkie informacje na temat rozwiązań kopii zapasowych dostępnych dla Twojej usługi znajdują się na [stronie produktu](https://www.ovhcloud.com/pl/vps/options/) i w odpowiednich [przewodnikach](/products/bare-metal-cloud-virtual-private-servers).
+Wszystkie informacje na temat rozwiązań kopii zapasowych dostępnych dla Twojej usługi znajdują się na [stronie produktu](/links/bare-metal/vps-options) i w odpowiednich [przewodnikach](/products/bare-metal-cloud-virtual-private-servers).
 
 ## Sprawdź również
 

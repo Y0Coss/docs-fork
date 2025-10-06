@@ -141,7 +141,7 @@ Clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** pa
 |Durata|La durata di esecuzione di un'operazione è di 60 minuti. Se uno script supera il tempo di esecuzione, viene automaticamente arrestato dal sistema.|
 |Variabile|Puoi definire solo delle variabili in uno script. Aggiungere all'URL che chiama lo script non funzionerà (esempio: www/jobs/cron.php?variabili=value).|
 |Limite di dati|Un task può generare solo 5 MB di dati (*stdin/stderr*). Ad esempio, se uno script scrive dati in un file .txt, l'esecuzione si interrompe automaticamente quando il file raggiunge 5 MB.|
-|Script che producono errori|Se uno script è difettoso, verrà automaticamente disattivato dopo 10 tentativi di esecuzione non andati a buon fine. La segnalazione degli errori verrà inviata solo quando tutti e 10 i tentativi avranno avuto esito negativo.</br>Correggi lo script in base alla segnalazione degli errori ricevuta e riattiva il "task CRON" nel pannello di controllo (clicca su `...`{.action} e poi su `Modifica`{.action}).|
+|Script che producono errori|Se uno script è difettoso, verrà automaticamente disattivato dopo 10 tentativi di esecuzione non andati a buon fine. La segnalazione degli errori verrà inviata solo quando tutti e 10 i tentativi avranno avuto esito negativo.<br>Correggi lo script in base alla segnalazione degli errori ricevuta e riattiva il "task CRON" nel pannello di controllo (clicca su `...`{.action} e poi su `Modifica`{.action}).|
 |Relazioni di attuazione|I rapporti saranno inviati all'indirizzo elettronico selezionato una volta al giorno (durante le ore notturne).|
 
 ### Intervento tecnico
@@ -152,11 +152,11 @@ Un semplice test per verificare se il tuo script produce un errore è eseguirlo 
 
 #### Verifica dell'utilizzo dei percorsi assoluti
 
-Ti consigliamo di utilizzare percorsi di accesso assoluti ai file dei tuoi script. La costante "DIR", ad esempio, può aiutare a ricevere il percorso corrente negli script PHP ([documentazione PHP](https://www.php.net/manual/en/language.constants.predefined.php){.external}).
+Ti consigliamo di utilizzare percorsi di accesso assoluti ai file dei tuoi script. La costante "DIR", ad esempio, può aiutare a ricevere il percorso corrente negli script PHP ([documentazione PHP](https://www.php.net/manual/en/language.constants.predefined.php)).
  
 #### Verifica dei log di esecuzione
 
-Nei log del tuo hosting Web, accessibili dal tuo [Spazio Cliente OVHcloud](/links/manager){.external}, visualizzerai la categoria di log intitolata "CRON".
+Nei log del tuo hosting Web, accessibili dal tuo [Spazio Cliente OVHcloud](/links/manager), visualizzerai la categoria di log intitolata "CRON".
 
 Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'offerta condivisa"](/pages/web_cloud/web_hosting/logs_and_statistics) per maggiori dettagli.
 

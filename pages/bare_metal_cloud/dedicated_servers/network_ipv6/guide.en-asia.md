@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-updated: 2024-07-15
+updated: 2025-06-04
 ---
 
 ## Objective
@@ -10,10 +10,18 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 
 **This guide explains how to configure IPv6 addresses on your server using various examples.**
 
+> [!primary]
+>
+> This article is about primary IP configuration. For servers that support vRack connectivity, you can also configure Additional IP addresses in a vRack rather than on the public interface of your server. You can find the matching instructions in these guides:
+>
+> - IPv4: [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack).
+> - IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
+>
+
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with [our community](/links/community) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
@@ -77,7 +85,9 @@ Please note that the leading "0's" can be removed in an IPv6 gateway. For exampl
 > Before modifying a configuration file, always create a backup of the original.
 >
 
-With some operating systems, the addition of static IPv6 routes in the original configuration file is necessary and is done by default. If that is the case, simply add your configuration for IPv6 as instructed in the guide, do not modify any lines in the original file.
+> [!primary]
+> With some operating systems, the addition of static IPv6 routes in the original configuration file is necessary and is done by default. If that is the case, simply add your configuration for IPv6 as instructed in the guide, do not modify any lines in the original file.
+> 
 
 ### Debian and Debian-based operating systems (excluding Debian 12)
 
@@ -528,7 +538,7 @@ Save your changes to the file and then restart the network with one of the follo
 sudo systemctl restart network
 ```
 
-**For AlmaLinux and Rocky Linux**
+**For Alma Linux and Rocky Linux**
 
 ```sh
 sudo systemctl restart NetworkManager

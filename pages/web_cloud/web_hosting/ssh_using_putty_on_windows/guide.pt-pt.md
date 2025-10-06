@@ -20,13 +20,13 @@ details[open]>summary::before {
 
 ## Objetivo
 
-O [PuTTY](https://putty.org/) é um software cliente SSH open source com uma interface gráfica do utilizador. Ele foi desenvolvido para o Windows, mas também está disponível para outros sistemas operativos e inclui recursos úteis, como gerenciamento de chaves SSH.
+O [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) é um software cliente SSH open source com uma interface gráfica do utilizador. Ele foi desenvolvido para o Windows, mas também está disponível para outros sistemas operativos e inclui recursos úteis, como gerenciamento de chaves SSH.
 
 **Este tutorial explica como utilizar o PuTTY para proteger as ligações ao seu serviço OVHcloud através do protocolo SSH.**
 
 ## Requisitos
 
-- [PuTTY](https://putty.org/) instalado no seu equipamento local
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) instalado no seu equipamento local
 - Conhecimentos de base do [protocolo SSH e da sua utilização](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
@@ -395,7 +395,7 @@ Abra a aplicação Pageant [no seu computador](#installation). Uma vez que a jan
 
 ![pageant](/pages/assets/screens/other/web-tools/putty/systray.png){.thumbnail}
 
-Esta ação irá abrir a **Lista de chaves do pagante**. Clique no botão "Add Key" {.action} e selecione o ficheiro de chave privada (`keyfile.ppk`) na pasta onde o guardou.
+Esta ação irá abrir a **Lista de chaves do pagante**. Clique no botão `Add Key`{.action} e selecione o ficheiro de chave privada (`keyfile.ppk`) na pasta onde o guardou.
 
 ![pageant](/pages/assets/screens/other/web-tools/putty/pageant1.png){.thumbnail}
 

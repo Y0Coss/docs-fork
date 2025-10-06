@@ -129,7 +129,7 @@ Ripeti questa operazione per ogni identificativo DynHost da aggiungere.
 
 ### 2 - Crea il record DNS dinamico (DynHost) <a name="step2"></a>
 
-A questo punto è necessario creare il record DNS che dovrà essere aggiornato dinamicamente. Ti ricordiamo che per eseguire questa operazione il record non deve essere già presente nella zona DNS OVHcloud del dominio come record A o AAAA. Per verificarlo ed eventualmente rimuoverlo, consulta la guida [Modificare una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
+A questo punto è necessario creare il record DNS che dovrà essere aggiornato dinamicamente. Ti ricordiamo che per eseguire questa operazione il record non deve essere già presente nella zona DNS OVHcloud del dominio come record A o AAAA. Per verificarlo ed eventualmente rimuoverlo, consulta la guida [Modificare una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Una volta che tutto è pronto per creare il record, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **5** passi.
 
@@ -164,8 +164,8 @@ Una volta che tutto è pronto per creare il record, clicca sulle schede qui sott
 >>
 >> |Campo|Descrizione|
 >> |---|---|
->> |Sottodominio|Inserisci il nome del sottodominio a cui è associato il record DNS da aggiornare dinamicamente. Questo sottodominio deve coincidere con quello inserito durante la creazione dell’utente DynHost.</br></br>**Se vuoi installare un DynHost direttamente per il tuo dominio, lascia vuoto questo modulo di inserimento**|
->> |IP di destinazione|Inserisci l'indirizzo IP (IPv4 o IPv6) che deve essere utilizzato dal record DNS. È generalmente l'indirizzo IP pubblico del tuo *box* Internet o del tuo server auto-ospitato.</br></br>In base al principio del DynHost, verrà aggiornato automaticamente in seguito.</br></br>In questo modulo deve essere inserito un solo indirizzo IP.|
+>> |Sottodominio|Inserisci il nome del sottodominio a cui è associato il record DNS da aggiornare dinamicamente. Questo sottodominio deve coincidere con quello inserito durante la creazione dell’utente DynHost.<br><br>**Se vuoi installare un DynHost direttamente per il tuo dominio, lascia vuoto questo modulo di inserimento**|
+>> |IP di destinazione|Inserisci l'indirizzo IP (IPv4 o IPv6) che deve essere utilizzato dal record DNS. È generalmente l'indirizzo IP pubblico del tuo *box* Internet o del tuo server auto-ospitato.<br><br>In base al principio del DynHost, verrà aggiornato automaticamente in seguito.<br><br>In questo modulo deve essere inserito un solo indirizzo IP.|
 >>
 >> > [!warning]
 >> >

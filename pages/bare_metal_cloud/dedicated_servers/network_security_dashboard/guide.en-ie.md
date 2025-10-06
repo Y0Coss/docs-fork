@@ -1,7 +1,7 @@
 ---
 title: "Monitoring DDoS attacks with the Network Security Dashboard"
 excerpt: "Learn how to navigate through the Network Security Dashboard"
-updated: 2025-04-28
+updated: 2025-09-08
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ This guide explains the Network Security Dashboard and provides an overview of c
 
 ## Requirements
 
-- An OVHcloud service exposed on a dedicated public IP address ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/en-ie/vps/), [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
+- An OVHcloud service exposed on a dedicated public IP address ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud instance](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/vmware), [Additional IP](/links/network/additional-ip), etc.)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
@@ -48,8 +48,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), open the `Network`{.acti
 The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the Edge Network **Firewall** and **GAME firewall** features availability and their statuses.
 
 - The **Mitigation** state can be:
-    - **Automatic** - The scrubbing centre is in **automatic** mode. It is the recommended mode to use, it reroutes traffic for deeper analysis when needed.
-    - **Permanent** - The scrubbing centre is **permanently enabled**. We do not recommend it to be enabled permanently, unless latency jitter is noted due to rerouting traffic back and forth.
+    - **Automatic** - The scrubbing centre is in **automatic** mode, and reroutes traffic for deeper analysis when needed.
     - **Forced** - This indicates the scrubbing centre is **taking action** right now.
 
 - The **Firewall** column indicates the state of the Edge Network Firewall which can be:

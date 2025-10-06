@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un routeur manuellement'
 excerpt: 'Découvrez comment configurer votre accès Internet OVHcloud sur votre propre routeur'
-updated: 2025-04-28
+updated: 2025-07-22
 ---
 
 ## Objectif
@@ -47,11 +47,12 @@ Le profil de votre accès est disponible sur l'espace client. Pour le retrouver,
 
 Par défaut, l'onglet affiché est `Mon accès`.
 
-Vous retrouverez, dans les `Caractéristiques`, les informations sur le profil du modem dans la section `Connexion`.
+Le type de l'accès est disponible dans le cadre `Informations générales`.
+Le profil du modem est disponible dans la section `Connexion` du cadre `Caractéristiques`.
 
-![modem profil dans espace client](images/profil-2023.png){.thumbnail}
+![profil du modem dans l'espace client](images/profil-2025.png){.thumbnail}
 
-### Profil Standard
+### Profil A
 
 Ce profil s'applique aux typologies d'accès suivantes :
 
@@ -59,6 +60,7 @@ Ce profil s'applique aux typologies d'accès suivantes :
 - Accès ADSL/VDSL (Cuivre) et FTTH (Fibre) en collecte SFR
 - Accès ADSL/VDSL (Cuivre) et FTTH (Fibre) en collecte AXIONE
 - Accès ADSL (Cuivre) en collecte ORANGE
+- Accès FTTO (Fibre) Bouygues
 
 Les paramètres à configurer sont :
 
@@ -76,13 +78,13 @@ Les paramètres à configurer sont :
     - **Service Category** : UBR without PCR
 - **Pour le VDSL** :
     - **Type** : VDSL over PTM
-- **Pour le FTTH** :
+- **Pour le FTTH et le FTTO** :
     - **Type** : Ethernet
 
-### Profil Orange
+### Profil B
 
 > [!primary]
-> La différence avec le profil Standard est l'activation du VLAN 835.
+> La différence avec le « profil A » est l'activation du VLAN 835.
 >
 
 Ce profil s'applique aux typologies d'accès suivantes :
@@ -102,15 +104,15 @@ Les paramètres à configurer sont :
 - **Pour le FTTH** :
     - **Type** : Ethernet
 
-### Profil Bouygues
+### Profil C
 
 > [!primary]
-> La différence avec le profil Standard est l'activation du VLAN 4001.
+> La différence avec le « profil A » est l'activation du VLAN 4001.
 >
 
 Ce profil s'applique aux typologies d'accès suivantes :
 
-- Accès FTTH (Fibre) en collecte Bouygues
+- Accès FTTH (Fibre) Bouygues
 
 Les paramètres à configurer sont :
 
@@ -121,6 +123,27 @@ Les paramètres à configurer sont :
 - **VLAN** : 4001 (802.1p : 0, 802.1q : 4001)
 - **IPv6** : IPv4/IPv6 DualStack, IPCPv6 activé
 - **Pour le FTTH** :
+    - **Type** : Ethernet
+
+### Profil D
+
+> [!primary]
+> La différence avec le « profil A » est l'activation du VLAN 4070.
+>
+
+Ce profil s'applique aux typologies d'accès suivantes :
+
+- Accès FTTE (Fibre) en collecte Celan
+
+Les paramètres à configurer sont :
+
+- **Mode de connexion** : PPPoE
+- **Nom d'utilisateur PPPoE** : le login reçu par e-mail (exemple : `FP_1111xxyy_1@byt.ovhcloud`)
+- **Mot de passe PPPoE** : le mot de passe reçu par e-mail
+- **MTU** : 1432 ou 1456 ou **1492** (recommandé)
+- **VLAN** : 4070 (802.1p : 0, 802.1q : 4070)
+- **IPv6** : IPv4/IPv6 DualStack, IPCPv6 activé
+- **Pour le FTTE** :
     - **Type** : Ethernet
 
 ## Aller plus loin

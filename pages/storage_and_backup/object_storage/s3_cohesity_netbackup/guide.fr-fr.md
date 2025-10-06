@@ -14,8 +14,8 @@ Il couvre notamment l’ajout d’un volume cloud, la configuration des paramèt
 
 Assurez-vous de disposer des éléments suivants :
 
-- Un Primary Server NetBackup installé et configuré. Voir la documentation suivante : « [Installing NetBackup primary server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020){.external} ».
-- Un serveur de médias avec option de déduplication installé sur Red Hat Enterprise ou SUSE Linux Enterprise Server. Voir la documentation suivante : « [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index){.external} ».
+- Un Primary Server NetBackup installé et configuré. Voir la documentation suivante : « [Installing NetBackup primary server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020) ».
+- Un serveur de médias avec option de déduplication installé sur Red Hat Enterprise ou SUSE Linux Enterprise Server. Voir la documentation suivante : « [Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index) ».
 - Un espace disque local disponible d’environ 1 To pour la gestion des métadonnées de déduplication.
 
 ## En pratique
@@ -31,7 +31,7 @@ Vous serez guidé tout au long de la procédure, depuis la sélection du Storage
 
 3. Accédez au menu `Storage`{.action}, au sous-menu `Disk storage`{.action} puis cliquez sur l'onglet `Storage Servers`{.action}.
 
-    ![storage menu](images/storage_menu.png){.thumbnail}
+    ![storage menu](images/storage_menu-b.png){.thumbnail}
 
 4. Ouvrez l’onglet `Disk Pools`{.action} et cliquez sur `Add`{.action} pour créer un nouveau Disk Pool.
 
@@ -95,7 +95,7 @@ Vous serez guidé tout au long de la procédure, depuis la sélection du Storage
 16. Modifiez vos politiques de sauvegarde en conséquence pour intégrer le stockage OVHcloud.
 
     ![storage lifecycle policy](images/storage_lifecycle_policy.png){.thumbnail}
-    ![create storage lifecycle policy](images/create_storage_lifecycle_policy.png){.thumbnail}
+    ![create storage lifecycle policy](images/new_operation_storage_lifecycle_policy.png){.thumbnail}
     ![create new policy](images/create_new_policy.png){.thumbnail}
     ![create new policy 2](images/create_new_policy2.png){.thumbnail}
 

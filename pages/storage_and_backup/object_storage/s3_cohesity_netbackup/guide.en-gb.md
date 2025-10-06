@@ -12,8 +12,8 @@ It covers the steps to add a cloud volume, configure optional WORM (Write Once R
 
 ## Requirements
 
-- A NetBackup Primary Server installed and configured. See the following documentation: "[Installing NetBackup Primary Server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020){.external}".
-- A Media Server with deduplication option installed on Red Hat Enterprise or SUSE Linux Enterprise Server. See the following documentation: "[Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index){.external}".
+- A NetBackup Primary Server installed and configured. See the following documentation: "[Installing NetBackup Primary Server](https://www.veritas.com/support/en_US/doc/27801100-157469020-0/v13834345-157469020)".
+- A Media Server with deduplication option installed on Red Hat Enterprise or SUSE Linux Enterprise Server. See the following documentation: "[Deduplication Guide](https://www.veritas.com/support/en_US/doc/25074086-168257404-0/index)".
 - Approximately 1 TB of local disk space available for deduplication metadata management.
 
 ## Instructions
@@ -30,7 +30,7 @@ You will be guided through the entire process, from selecting the Storage Server
 
 3. Access the `Storage`{.action} menu, the `Disk storage`{.action} submenu, then click the `Storage Servers`{.action} tab.
 
-    ![storage menu](images/storage_menu.png){.thumbnail}
+    ![storage menu](images/storage_menu-b.png){.thumbnail}
 
 4. Open the `Disk Pools`{.action} tab and click on `Add`{.action} to create a new Disk Pool.
 
@@ -94,7 +94,7 @@ You will be guided through the entire process, from selecting the Storage Server
 16. Modify your backup policies accordingly to integrate OVHcloud Object Storage.
 
     ![storage lifecycle policy](images/storage_lifecycle_policy.png){.thumbnail}
-    ![create storage lifecycle policy](images/create_storage_lifecycle_policy.png){.thumbnail}
+    ![create storage lifecycle policy](images/new_operation_storage_lifecycle_policy.png){.thumbnail}
     ![create new policy](images/create_new_policy.png){.thumbnail}
     ![create new policy 2](images/create_new_policy2.png){.thumbnail}
 

@@ -42,12 +42,12 @@ Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour autom
 
 ## Prérequis
 
-- Posséder une [offre d'hébergement web](/links/web/hosting){.external}.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Posséder une [offre d'hébergement web](/links/web/hosting).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
-Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager). Cliquez sur l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
 
 Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus`{.action} puis sur `Cron`{.action}.
 
@@ -141,7 +141,7 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 |Durée|La durée d'exécution d'une tâche est de 60 minutes. Si un script dépasse cette durée d'exécution, il sera automatiquement arrêté par le système.|
 |Variables|Vous ne pouvez définir que des variables dans un script. Les ajouter à l'URL appelant le script ne fonctionnera pas (Exemple : www/jobs/cron.php?variable=value).|
 |Limite de données|Une tâche ne peut générer que 5 Mo de données (*stdin/stderr*). Par exemple, si un script écrit des données dans un fichier .txt, l'exécution s'arrête automatiquement lorsque le fichier atteint 5 Mo.|
-|Scripts produisant des erreurs|Si un script est défectueux, il sera automatiquement désactivé après 10 tentatives d'exécution échouées. Le rapport d'erreur ne sera envoyé que lorsque les 10 tentatives auront échoué.</br>Corrigez votre script en fonction du rapport d'erreur reçu puis réactivez la « tâche CRON » dans le panneau de configuration (cliquez sur `...`{.action} puis sur `Modifier`{.action}).|
+|Scripts produisant des erreurs|Si un script est défectueux, il sera automatiquement désactivé après 10 tentatives d'exécution échouées. Le rapport d'erreur ne sera envoyé que lorsque les 10 tentatives auront échoué.<br>Corrigez votre script en fonction du rapport d'erreur reçu puis réactivez la « tâche CRON » dans le panneau de configuration (cliquez sur `...`{.action} puis sur `Modifier`{.action}).|
 |Rapports d'exécution|Les rapports ne seront envoyés à l'adresse électronique sélectionnée qu'une fois par jour (pendant les heures de nuit).|
 
 ### Dépannage
@@ -156,7 +156,7 @@ Veillez toujours à utiliser des chemins d'accès absolus aux fichiers de vos sc
  
 #### Vérification des logs d'éxecution
 
-Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](/links/manager){.external}, vous verrez la catégorie de log intitulée « CRON ».
+Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](/links/manager), vous verrez la catégorie de log intitulée « CRON ».
 
 Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](/pages/web_cloud/web_hosting/logs_and_statistics#logs) pour plus de détails.
 

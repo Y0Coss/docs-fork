@@ -19,7 +19,7 @@ Plesk is an easy-to-use hosting control panel. You can install and use it on OVH
 
 ## Requirements
 
-- [An instance created via the OVHcloud Control Panel](/pages/public_cloud/compute/create_a_public_cloud_project)
+- [An instance created via the OVHcloud Control Panel](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
 - [Administrative access to the instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)
 
 ## Instructions
@@ -67,13 +67,13 @@ To add your Plesk licence, take the key that was sent to you by your service pro
 
 > [!primary]
 >
-> We do not sell Plesk licences for our Public Cloud solutions. However, you can order one from the [Plesk](https://www.plesk.com/){.external} website.
+> We do not sell Plesk licences for our Public Cloud solutions. However, you can order one from the [Plesk](https://www.plesk.com/) website.
 >
 
 Want to change your licence, to replace a test key or change your solution, for example? From the Plesk interface, go to the section `Tools & Settings`{.action}. Then go to the **Plesk** section, and select `License information`{.action}.
 
 ## Go further
 
-[Official Plesk documentation](https://docs.plesk.com/en-US/obsidian/){.external}.
+[Official Plesk documentation](https://docs.plesk.com/en-US/obsidian/).
 
 Join our [community of users](/links/community).

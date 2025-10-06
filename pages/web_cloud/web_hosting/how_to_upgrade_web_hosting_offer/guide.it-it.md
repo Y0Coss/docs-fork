@@ -12,7 +12,7 @@ Il tuo [Spazio Cliente OVHcloud](/links/manager) permette di aumentare la capaci
 - più spazio di archiviazione FTP;
 - banche dati supplementari; 
 - di indirizzi email aggiuntivi;
-- funzionalità supplementari come le [mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partire da [l'offerta Pro](/links/web/hosting-professional-offer)) o il [servizio Web Cloud Databases](/links/web/databases){.external} (incluso nelle [offerte Performance](/links/web/hosting-performance-offer).
+- funzionalità supplementari come le [mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partire da [l'offerta Pro](/links/web/hosting-professional-offer)) o il [servizio Web Cloud Databases](/links/web/databases) (incluso nelle [offerte Performance](/links/web/hosting-performance-offer).
 
 **Questa guida ti mostra come far evolvere la tua soluzione di hosting OVHcloud senza interruzioni del servizio.**
 
@@ -155,15 +155,15 @@ Se l’opzione **Boost** è adatta alle tue esigenze, trovi qui sotto le istruzi
 
 > [!tabs]
 > **Attiva l'opzione Boost**
->>>
->>> Per attivare l’opzione Boost, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nel riquadro `Informazioni generali` della pagina che appare, clicca sul pulsante `...`{.action} a destra di `Boost` e poi su `Boost`{.action}.<br><br>
->>>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
->>>
+>>
+>> Per attivare l’opzione Boost, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nel riquadro `Informazioni generali` della pagina che appare, clicca sul pulsante `...`{.action} a destra di `Boost` e poi su `Boost`{.action}.<br><br>
+>>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
+>>
 > **Disattiva l'opzione Boost**
->>>
->>> Per disattivare l’opzione Boost, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Accedi alla scheda `Più` e clicca su `Boost`{.action}.<br>
->>> Visualizzi la tabella di utilizzo dell’opzione Boost e clicca su `Disattiva l’offerta Boost`{.action}.<br><br>
->>>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
+>>
+>> Per disattivare l’opzione Boost, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Accedi alla scheda `Più` e clicca su `Boost`{.action}.<br>
+>> Visualizzi la tabella di utilizzo dell’opzione Boost e clicca su `Disattiva l’offerta Boost`{.action}.<br><br>
+>>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
 
 #### La fatturazione in caso di modifica dell'offerta <a name="billing"></a>
 

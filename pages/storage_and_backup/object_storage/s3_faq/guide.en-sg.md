@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "Frequently Asked Questions on the Object Storage solution"
-updated: 2024-02-05
+updated: 2025-08-05
 ---
 
 ## General questions
@@ -10,7 +10,7 @@ updated: 2024-02-05
 
 Object Storage is a family of storage solutions offering high-performance, scalable and secure storage spaces.
 
-Object storage solutions allow static files (videos, images, web files, etc.) to be stored in an unlimited space via a public access point called the "endpoint", so that they can be used from an application or made accessible on the web. These storage spaces are accessed through a standard S3 **\*** compatible API interface for the Object Storage classes and Swift for the SWIFT Object Storage classes.
+Object storage solutions allow static files (videos, images, web files, etc.) to be stored in an unlimited space via a public access point called the "endpoint", so that they can be used from an application or made accessible on the web. These storage spaces are accessed through a standard S3<sup>1</sup> compatible API interface for the Object Storage classes and Swift for the SWIFT Object Storage classes.
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/8xXbL3Ftgwk?si=OaRx5koocA-OyRXC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -30,6 +30,7 @@ OVHcloud offers 3 S3 compatible storage classes:
 
 - **High Performance** for your latency and bandwidth intensive applications.
 - **Standard** for your high-volume storage for which you are looking for a better price/performance ratio, such as websites, image-sharing libraries or backups.
+- **Infrequent Access** for infrequently accessed data, also known as "cool" data storage, requiring fast data retrieval: long-term data storage, backups, disaster recovery.
 - **Cold Archive** for your archives.
 
 Find the description of the storage classes on [this page](/links/public-cloud/storage).
@@ -46,11 +47,8 @@ Object Storage classes offer a wide range of S3 compatible API support. All comp
 
 ### Which tools are compatible with Object Storage?
 
-Most of the tools on the market that are compatible with standard Amazon S3 protocol are compatible with OVHcloud Object Storage.
-
-### Can Object Storage work with my back-up management tools?
-
-Yes, Object Storage is largely compatible with S3 APIs and can be integrated with market tools such as [Veeam](/pages/storage_and_backup/object_storage/s3_veeam), [Owncloud](/pages/storage_and_backup/object_storage/s3_owncloud), [Nextcloud](/pages/storage_and_backup/object_storage/s3_nextcloud).
+Most of the tools on the market that are compatible with standard Amazon S3 protocol are compatible with OVHcloud Object Storage. 
+Visit the [Object Storage - Third-party applications compatibility guide](/pages/storage_and_backup/object_storage/s3_ecosystem) to browse a non-exhaustive list of compatible backup, data management, file sharing tools and software.
 
 ## Billing
 
@@ -99,7 +97,7 @@ The monthly storage cost will be: 37 376 000 * 0.00001917 + (73 728 000 - 37 376
 
 We designed Object Storage storage classes to be **compatible with S3** API, considered a benchmark in the object storage market. You can use Object Storage with most data management tools via endpoints defined by region.
 
-Get your S3 access keys and access the various storage classes via the command line using AWS-CLI, s3cmd or other commands.
+Get your S3 access keys and access the various storage classes via the command line using AWS-CLI, [`s3cmd`](https://s3tools.org/s3cmd) or other commands.
 
 The list of endpoints is available in the following guide: [Object Storage endpoints and geo-availability](/pages/storage_and_backup/object_storage/s3_location).
 
@@ -224,8 +222,8 @@ More generally, there are several methods that allow you to maximize your upload
 
 The High Performance class is adapted to AI or analytics use cases, it is built to bring performance through its design and the use of NVMe SSD disks. It is adapted to use cases that require high read/write speeds on high volumes of data. Performance tests are available on the Cloud Mercato website: 
 
-- [OVHcloud High performance Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovh-high-perf-object-storage-benchmark){.external}
-- [OVHcloud Standard Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovhcloud-standard-object-storage-benchmark){.external}
+- [OVHcloud High performance Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovh-high-perf-object-storage-benchmark)
+- [OVHcloud Standard Object Storage benchmark](https://projector.cloud-mercato.com/projects/ovhcloud-standard-object-storage-benchmark)
 
 ### What is the available bandwidth for upload and download?
 
@@ -235,55 +233,10 @@ The maximum bandwidth is 1 Gbps per connection.
 
 ### What is the Offsite Replication option in a 3-AZ deployment mode?
 
-With Object Storage in a 3-AZ region, we have introduced a new option called **Offsite Replication**, which automatically replicates your data to a remote site for greater resiliency with a one-click action in the OVHcloud Control Panel. This feature is only available for primary Object Storage in a 3-AZ region and is based on an OVHcloud auto-generated and managed replication rule configuration:
-
-- Data is replicated on a remote 1-AZ region. The system will automatically determine the most suitable location among Strasbourg, Gravelines, and Roubaix, ensuring efficient and reliable offsite data protection.
-- Objects stored in the replica bucket are billed differently. View pricing on [this page](/links/public-cloud/prices).
-- The replica bucket is exclusively dedicated to this action and users can only list objects and/or delete them if needed.
-
-#### What are the differences between the asynchronous replication feature and the Offsite Replication feature available in 3-AZ regions?
-
-The Offsite Replication option offered in 3-AZ regions is based on the asynchronous replication feature. With this Offsite Replication option, OVHcloud automatically generates a replication rule configuration with pre-filled parameters, whereas the S3-compatible asynchronous replication functionality allows the user to take control of the entire function (configuration and deployment).
-
-#### What if a replica bucket is deleted?
-
-The source objects that are to be replicated will have a replication status FAILED when Object Storage tries to replicate them but you will not get any errors.
-
-#### What about the initial replication rule?
-
-The intial rule will remain unchanged and active until you disable it.
-
-#### What if a source bucket with offsite replication enabled is deleted? And what about the initial replication rule?
-
-Your replica bucket still exists but no more objects are replicated to it from your original source bucket. The initial replication rule is set up on the source bucket and thus will also be deleted.
-
-#### Where will be stored the replicated data as the replication rule configuration is managed by OVHcloud?
-
-Your replicated data is stored as any other data and will be stored in a bucket automatically generated by OVHcloud in a region of our choosing. The system will automatically determine the most suitable location between Strasbourg, Gravelines, and Roubaix, ensuring efficient and reliable offsite data protection.
-
-#### Can I modify the replication rule configuration?
-
-We highly recommend that you do not modify the auto-generated replication rule configuration to ensure optimal operation. However, as it is a standard asyncronous replication rule configuration, you can decide to enrich/upgrade it for advanced protection. Please refer to [the asynchronous replication guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) for details about configuration.
-
-#### What is the name of the replica bucket?
-
-The destination bucket name follows the pattern `backup-{src-region}-{dst-region}-{timestamp_in_ms}-{src-bucket}`.
-
-#### How can I access my backed up data and which actions are possible with the replica bucket?
-
-You can list/head/delete objects on this replica bucket. However it is not possible to put/post objects on it. The replica bucket is exclusively dedicated to the Offiste Replication option. Last but not least, getting objects is possible but rate-limited. 
-In the event of a primary region unavailability/loss for your source bucket, the replica bucket will automatically switch to a read/write mode and becomes available for additional requests to get objects.
-
-#### Which users/credentials can be used to access the destination bucket?
-
-When you activate the Offsite Replication during the source bucket creation, the same user that you associated with your source bucket will be associated with the replica bucket.
-
-#### How will my backup data be billed?
-
-You can access the details of the Offiste Replication pricing on the global Object Storage [pricing page](/links/public-cloud/prices). It is billed according to the storage space used, with a granularity of 1 GiB. To ensure readability, the price is displayed per GiB/month, but the billing granularity is per GiB/hour.
+With Object Storage in a 3-AZ region, we have introduced a new option called **Offsite Replication**, which automatically replicates your data to a remote site for greater resiliency with a one-click action in the OVHcloud Control Panel. This feature is only available for primary Object Storage in a 3-AZ region and is based on an OVHcloud auto-generated and managed replication rule configuration. Read the "Offsite Replication option" section from [this guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) to get more details about this feature.
 
 ## Go further
 
 Join our [community of users](/links/community).
 
-**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+<sup>1</sup>: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

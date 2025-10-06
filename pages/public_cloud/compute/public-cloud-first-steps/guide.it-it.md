@@ -135,7 +135,7 @@ Prima di creare l’istanza, ti consigliamo di studiarne l’utilizzo in termini
 - Se al momento non hai bisogno di configurare l’istanza con una rete privata, puoi passare allo [step 4](#create-instance). È possibile creare un'istanza esposta alla rete Internet pubblica (vedere la **Modalità pubblica** [sotto](#networking-modes).)
 - Se l’istanza deve essere connessa a una nuova rete privata (OVHcloud [vRack](/links/network/vrack)), **crea la tua vRack** prima di continuare. Per maggiori dettagli consulta la [guida sulla vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
-<a name="networking-mode"></a>
+<a name="networking-modes"></a>
 
 /// details | Public Cloud Networking - Modalità
 
@@ -426,7 +426,7 @@ Se la tua [coppia di chiavi SSH è configurata correttamente](#create-ssh), puoi
 
 > [!primary]
 >
-> Se ricevi messaggi di errore relativi alle **chiavi SSH**, verifica che il tuo dispositivo locale disponga di una chiave SSH privata configurata correttamente utilizzando le informazioni di [questa guida](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
+> Se ricevi messaggi di errore relativi alle **chiavi SSH**, verifica che il tuo dispositivo locale disponga di una chiave SSH privata configurata correttamente utilizzando le informazioni di [questa guida](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).<br>
 > In caso di difficoltà, è possibile sostituire la coppia di chiavi utilizzando [questa guida](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Se hai creato un’istanza senza chiave SSH, tramite l’[API OVHcloud](/pages/manage_and_operate/api/first-steps) o l’[interfaccia OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), puoi aggiungere una chiave SSH alla tua istanza soltanto tramite il [modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) seguendo le istruzioni descritte in [questa guida](/pages/public_cloud/compute/replacing_lost_ssh_key).

@@ -46,7 +46,7 @@ A primeira etapa consiste em identificar a ou as tabelas volumosas presentes na 
 >
 > Todas as seguintes ações descritas neste tutorial serão realizadas a partir de **phpMyAdmin**.
 >
-> [phpMyAdmin](https://www.phpmyadmin.net/){.external} está disponível em todas as bases de dados partilhadas da OVHcloud.
+> [phpMyAdmin](https://www.phpmyadmin.net/) está disponível em todas as bases de dados partilhadas da OVHcloud.
 > Esta aplicação de gestão de base de dados facilita a realização das ações manuais que pode efetuar com a sua base de dados.
 >
 > Se a base de dados estiver presente numa solução [Web Cloud Databases](/links/web/databases), consulte o guia "[Web Cloud Databases - Ligar-se à base de dados](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)" e, em seguida, passe diretamente para a [etapa 1.2](#step1.2) deste guia.
@@ -126,10 +126,10 @@ Para os outros casos associados aos CMS, recomendamos que contacte diretamente o
 
 Encontre aqui as ligações para os sites oficiais dos CMS propostos em instalação "**Em apenas um clique**" pela OVHcloud:
 
-- [WordPress](https://wordpress.org/){.external}
-- [Joomla!](https://www.joomla.org){.external}
-- [PrestaShop](https://www.prestashop.com/){.external}
-- [Drupal](https://drupal.org){.external}
+- [WordPress](https://wordpress.org/)
+- [Joomla!](https://www.joomla.org)
+- [PrestaShop](https://www.prestashop.com/)
+- [Drupal](https://drupal.org)
 
 > [!primary]
 >
@@ -149,7 +149,7 @@ Deverá migrar a sua base de dados para uma base de dados mais volumosa.
 > Para aumentar o tamanho alocado à sua base de dados, deverá obrigatoriamente criar uma nova base de dados maior e copiar o conteúdo da antiga para a nova. De facto, não é possível aumentar diretamente o tamanho de uma base de dados associada a um alojamento web.
 >
 
-Consulte a nossa oferta de bases de dados [Web Cloud Databasess](https://www.ovh.pt/cloud/cloud-databases/) para escolher o seu novo serviço de base de dados. 
+Consulte a nossa oferta de bases de dados [Web Cloud Databasess](/links/web/databases) para escolher o seu novo serviço de base de dados. 
 
 Recomendamos esta oferta para bases de dados volumosas.
 

@@ -26,7 +26,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 
 ## Prérequis
 
-- Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
+- Avoir une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - CLI OpenStack. Consultez notre guide « [Comment préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) ».
 

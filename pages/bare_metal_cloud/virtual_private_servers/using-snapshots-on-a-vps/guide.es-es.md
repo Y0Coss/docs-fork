@@ -1,12 +1,8 @@
 ---
 title: "Uso de instantáneas Snapshots en un servidor virtual privado (VPS)"
 excerpt: "Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud"
-updated: 2024-09-18
+updated: 2025-09-11
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
@@ -16,13 +12,17 @@ Crear una instantánea (<i>snapshot</i>) es una forma simple y rápida de proteg
 
 > [!primary]
 >
-Antes de aplicar las opciones de copia de seguridad, le recomendamos que consulte las [preguntas frecuentes y demás páginas del producto](https://www.ovhcloud.com/es-es/vps/options/) para acceder a una comparativa de los precios y otras informaciones.
+Antes de aplicar las opciones de copia de seguridad, le recomendamos que consulte las [preguntas frecuentes y demás páginas del producto](/links/bare-metal/vps-options) para acceder a una comparativa de los precios y otras informaciones.
 >
 
 ## Requisitos
 
 - Tener acceso al [panel de control de OVHcloud](/links/manager).
-- Tener un [servicio de servidor virtual privado (VPS)](https://www.ovhcloud.com/es-es/vps/) de OVHcloud configurado.
+- Tener un [servicio de servidor virtual privado (VPS)](/links/bare-metal/vps) de OVHcloud configurado.
+
+> [!warning]
+> Esta funcionalidad no está disponible actualmente para los servidores virtuales en las [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## Procedimiento
 

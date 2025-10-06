@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2025-04-29
+updated: 2025-09-30
 ---
 
 ## Objective
@@ -34,8 +34,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 
 There are some technical limitations linked to the use of physical products such as dedicated servers. Here is a non-exhaustive list, to keep in mind during your deployment preparation:
 
-- Boot type: **uefi** or **legacy**
-- Partition type: **MBR** or **GPT**
+- Boot type: **UEFI** or **legacy** (depending on the boot type of your server)
 - Image format: **qcow2**
 - Only one partition in the qcow2 image
 
@@ -66,7 +65,7 @@ For more information and examples about Cloud-Init's ConfigDrive, please read th
 
 ### Deploy your image via the APIs <a name="viaapi"></a>
 
-Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
+Log in to the [API console](/links/api) and go to the `/dedicated/server`{.action} section.
 
 > [!api]
 >
@@ -85,9 +84,9 @@ The Bring Your Own Linux (BYOLinux) payload should be similar to the following:
   "operatingSystem": "byolinux_64",
   "customizations": {
     "hostname": "mon-tux",
-    "imageURL": "https://github.com/ashmonger/akution_test/releases/download/0.5-compress/deb11k6.qcow2",
+    "imageURL": "https://github.com/ashmonger/akution_test/releases/latest/download/deb11k6.qcow2",
     "efiBootloaderPath": "\\efi\\debian\\grubx64.efi",
-    "imageCheckSum": "367f26c915f39314dde155db3a2b0326803e06975d1f4be04256f8b591e38fd4062d36eb7d50e99da7a50b7f4cd69640e56a4ab93e8e0274e4e478e0f84b5d29",
+    "imageCheckSum": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "httpHeaders": {
       "Authorization": "Basic bG9naW46cGFzc3dvcmQ="
     },
@@ -96,6 +95,11 @@ The Bring Your Own Linux (BYOLinux) payload should be similar to the following:
   }
 }
 ```
+
+> [!warning]
+>
+> In the example above, the `imageCheckSum` value has been obfuscated because it changes regularly whenever the target image is rebuilt.
+>
 
 Even though the configDrive user data could be sent to the API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your data:
 

@@ -6,7 +6,7 @@ updated: 2025-04-08
 
 ## Wprowadzenie
 
-Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowanych.  Można go zainstalować i z niego korzystać na jednej z instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}.
+Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowanych.  Można go zainstalować i z niego korzystać na jednej z instancji [Public Cloud](/links/public-cloud/public-cloud).
 
 **Dowiedz się, jak wdrożyć Plesk na instancji Public Cloud.** 
 
@@ -19,7 +19,7 @@ Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowan
 
 ## Wymagania początkowe
 
-- [Utworzenie instancji w Panelu klienta OVHcloud](/pages/public_cloud/compute/create_a_public_cloud_project)
+- [Utworzenie instancji w Panelu klienta OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project)
 - [Dostęp administratora](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)
 
 ## W praktyce
@@ -67,7 +67,7 @@ Aby dodać licencję Plesk, użyj klucza, który otrzymałeś od Twojego dostawc
 
 > [!primary]
 >
-> Nie sprzedajemy licencji Plesk dla usługi Public Cloud. Możesz zamówić licencję bezpośrednio na stronie [Plesk](https://www.plesk.com/){.external}.
+> Nie sprzedajemy licencji Plesk dla usługi Public Cloud. Możesz zamówić licencję bezpośrednio na stronie [Plesk](https://www.plesk.com/).
 > 
 
 Jeśli chcesz zmienić licencję (wymiana klucza testowego, zmiana oferty), możesz to zrobić w interfejsie Plesk, przechodząc do części `Server Management` i wybierając `Tools & Settings`{.action}.  Następnie w części **Plesk** wybierz `License information`{.action}.
@@ -75,6 +75,6 @@ Jeśli chcesz zmienić licencję (wymiana klucza testowego, zmiana oferty), moż
 
 ## Sprawdź również
 
-[Oficjalna dokumentacja Plesk](https://docs.plesk.com/en-US/onyx/){.external}
+[Oficjalna dokumentacja Plesk](https://docs.plesk.com/en-US/onyx/)
 
 Przyłącz się do [społeczności użytkowników](/links/community).

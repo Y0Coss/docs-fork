@@ -1,7 +1,7 @@
 ---
 title: "Mit dem FTP-Speicherplatz eines Webhostings verbinden"
 excerpt: "Erfahren Sie hier, wie Sie sich im FTP-Speicherplatz Ihres OVHcloud Webhostings einloggen"
-updated: 2025-05-23
+updated: 2025-06-10
 ---
 
 ## Ziel 
@@ -18,6 +18,7 @@ Die OVHcloud Webhostings bieten Zugriff auf einen FTP-Speicherplatz, um die Date
 > [!primary]
 > Nur die Webhosting-Angebote **Pro** und **Performance** erlauben die Aktivierung mehrerer FTP-Benutzer und verfügen über SSH-Verbindungen.
 >
+> Bei Webhostings ist es nicht mehr möglich, sich mit dem FTP-Speicherplatz über das Online-Tool FTP Explorer/Net2FTP zu verbinden. Um sich weiterhin per FTP mit Ihrem Webhosting zu verbinden, verwenden Sie die Programme [Filezilla](https://filezilla-project.org/download.php) oder [Cyberduck](https://cyberduck.io/).
 
 ## In der praktischen Anwendung
 
@@ -37,7 +38,7 @@ Um sich mit Ihrem FTP-Speicherplatz zu verbinden, benötigen Sie folgende Inform
 > **Wenn Sie diese Daten bereits haben**, gehen Sie direkt zu Schritt 2: [Zugang zu Ihrem FTP-Speicherplatz](#ftp_storage_access).
 > 
 
-Wenn Sie die Verbindungsdaten nicht zur Hand haben, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie links im Menü auf den Bereich `Hosting-Pakete`{.action}. Wählen Sie das betreffende Webhosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}.
+Wenn Sie die Verbindungsdaten nicht zur Hand haben, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie links im Menü auf den Bereich `Hosting-Pakete`{.action}. Wählen Sie das betreffende Webhosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}.
 
 Die Informationen zu Ihrem Speicherplatz sowie eine Tabelle mit den auf Ihrem Webhosting erstellten FTP- und SSH-Benutzern werden angezeigt.
 
@@ -66,7 +67,7 @@ Nachstehend finden Sie eine Beschreibung der wesentlichen Informationen, die auf
 
 > [!primary]
 >
-> Je nach Ihrem [OVHcloud Webhosting-Angebot](/links/web/hosting){.external} werden einige der oben beschriebenen Informationen (insbesondere bezüglich SSH) möglicherweise nicht angezeigt.
+> Je nach Ihrem [OVHcloud Webhosting-Angebot](/links/web/hosting) werden einige der oben beschriebenen Informationen (insbesondere bezüglich SSH) möglicherweise nicht angezeigt.
 >
 
 Wenn Sie das Passwort eines FTP- oder SSH-Benutzers nicht mehr kennen, lesen Sie unsere Anleitung "[Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password)".
@@ -103,7 +104,7 @@ Wenn die Informationen korrekt sind, zeigt das von Ihnen verwendete Programm den
 
 #### 2. Via SSH-Zugriff verbinden <a name="ssh"></a>
 
-Für die Nutzung dieses Zugriffstyps sind fortgeschrittene Kenntnisse sowie ein [OVHcloud Webhosting](/links/web/hosting){.external} **Pro** oder **Performance** erforderlich.
+Für die Nutzung dieses Zugriffstyps sind fortgeschrittene Kenntnisse sowie ein [OVHcloud Webhosting](/links/web/hosting) **Pro** oder **Performance** erforderlich.
 
 Um sich via SSH zu verbinden, verwenden Sie ein Terminal, um direkt über die Kommandozeile mit Ihrem FTP-Speicherplatz zu kommunizieren. 
 

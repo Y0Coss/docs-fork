@@ -26,7 +26,7 @@ updated: 2021-02-04
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy [TypeScript](https://www.typescriptlang.org/){.external} code.
+You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy [TypeScript](https://www.typescriptlang.org/) code.
 
 This guide will explain how to do it.
 
@@ -35,7 +35,7 @@ This guide will explain how to do it.
 ## Requirements
 
 - A [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](/pages/ovhcloud_labs/power_web_hosting/getting-started) guide before going further.
 
@@ -49,7 +49,7 @@ You should include typescript as dev dependency module for your project:
 npm add --save-dev typescript
 ```
 
-Create a `tsconfig.json` (if you don't have one already) with the following content for example (see the [TypeScript doc](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html){.external} for more information):
+Create a `tsconfig.json` (if you don't have one already) with the following content for example (see the [TypeScript doc](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for more information):
 
 ```json
 {

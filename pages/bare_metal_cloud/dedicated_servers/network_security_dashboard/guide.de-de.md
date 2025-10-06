@@ -1,12 +1,8 @@
 ---
 title: Monitoring von DDoS-Angriffen mit dem Network Security Dashboard
 excerpt: Erfahren Sie hier, wie Sie das Network Security Dashboard im OVHcloud Kundencenter verwenden
-updated: 2025-04-28
+updated: 2025-09-08
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -14,7 +10,7 @@ In dieser Anleitung wird das Network Security Dashboard erläutert. Außerdem er
 
 ## Voraussetzungen 
 
-- Sie haben eine OVHcloud Dienstleistung abonniert, die über eine dedizierte öffentliche IP-Adresse erreichbar ist ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/de/vps/), [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/de/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.).
+- Sie haben eine OVHcloud Dienstleistung abonniert, die über eine dedizierte öffentliche IP-Adresse erreichbar ist ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](/links/bare-metal/vps), [Public Cloud Instanz](/links/public-cloud/public-cloud), [Hosted Private Cloud](/links/hosted-private-cloud/hosted-private-cloud), [Additional IP](/links/network/additional-ip), etc.).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -45,15 +41,14 @@ Während eines Angriffs wird eine aktive Abwehraktion durch ein Warnsymbol auf d
 
 ### Netzwerksicherheitsbenachrichtigungen
 
-![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}{.thumbnail}
+![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, klicken Sie auf `Network`{.action} in der linken Seitenleiste und dann auf `Öffentliche IP-Adressen`{.action}. Stellen Sie sicher, dass der `Erweiterte Modus` aktiviert ist, um den Status der Anti-DDoS-Infrastruktur und die Konfiguration ihrer Komponenten anzuzeigen.
 
 Die Spalten entsprechen dem Status des Anti-DDoS-Scrubbing (**Mitigation**) sowie der Verfügbarkeit von Edge Network **Firewall** und **GAME Firewall** und deren Status.
 
 - Der Status der **Mitigation** kann sein:
-    - **Automatisch** - Das Scrubbing Center befindet sich im **Automatisch**-Modus. Der empfohlene Modus ist die Umleitung des Traffics für eine gründlichere Analyse bei Bedarf.
-    - **Permanent** - Das Scrubbing Center ist **permanent aktiviert**. Es wird nicht empfohlen, es dauerhaft zu aktivieren, es sei denn, zu starkes Latenzschwanken aufgrund von Umleitung des Datenverkehrs festgestellt.
+    - **Automatisch** - Das Scrubbing Center befindet sich im **Automatisch**-Modus und leitet den Datenverkehr bei Bedarf zur weiteren Analyse um.
     - **Erzwungen** - Dies weist darauf hin, dass das Scrubbing Center **gerade Maßnahmen anwendet**.
 
 - In der Spalte **Firewall** wird der Status der Edge Network Firewall angegeben:
@@ -170,4 +165,4 @@ In allen Fällen, für die Anpassungen unseres DDoS-Schutzes erforderlich sein w
 
 [Game Server mit der Application Firewall schützen](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Treten Sie unserer User-Community bei: <https://community.ovh.com/de/>.
+Treten Sie unserer [User Community](/links/community) bei.

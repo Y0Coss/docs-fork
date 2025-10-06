@@ -1,12 +1,15 @@
 ---
 title: Como configurar um IP alias
 excerpt: Descubra como adicionar endereços Additional IP à configuração de rede
-updated: 2024-11-05
+updated: 2025-07-22
 ---
 
 > [!primary]
+> Este artigo diz respeito à configuração de endereços Additional IPv4 numa interface pública. Pode igualmente configurar endereços IPv6 nos seus servidores dedicados utilizando [este manual](/pages/bare_metal_cloud/dedicated_servers/network_ipv6).
 >
-> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](/links/network/additional-ip). Isto não afeta as suas funcionalidades.
+> Tenha em conta que os Additional IP podem igualmente ser configurados num vRack (rede privada), o que permite interligar uma vasta gama de serviços OVHcloud, oferecendo uma maior flexibilidade.
+>
+> Saiba como configurar o Additional IP num vRack com os nossos manuais para [IPv4](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) e [IPv6](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack).
 >
 
 ## Objetivo
@@ -19,19 +22,19 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 >
 > A OVHcloud oferece-lhe serviços pelos quais é responsável. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/diretory/). Mais informações na secção « Ir mais longe » deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades ou dúvidas relativamente à administração, à utilização ou à segurança de um servidor, deverá contactar um [fornecedor especializado](/links/partner). Mais informações na secção « Ir mais longe » deste guia.
 >
 
 ## Requisitos
 
-- Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external}.
-- Dispor de um ou vários endereços [Additional IP](/links/network/additional-ip){.external}.
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal).
+- Dispor de um ou vários endereços [Additional IP](/links/network/additional-ip).
 - Estar ligado ao servidor usando o protocolo SSH.
 
 > [!warning]
-> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](/links/bare-metal/eco-about).
 >
-> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+> Para mais informações, consulte o nosso [comparativo](/links/bare-metal/eco-compare).
 
 ## Instruções
 
@@ -330,7 +333,7 @@ sudo netplan apply
 ```
 
 > [!primary]
-> Quando utilizar o comando `netplan try`, é possível que o sistema envie uma mensagem de aviso tal como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be access by others`. Isso simplesmente significa que o arquivo não tem permissões restritivas. Isto não afeta a configuração do seu Additional IP. Para mais informações sobre as permissões dos ficheiros, consulte a [documentação oficial do ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+> Quando utilizar o comando `netplan try`, é possível que o sistema envie uma mensagem de aviso tal como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be access by others`. Isso simplesmente significa que o arquivo não tem permissões restritivas. Isto não afeta a configuração do seu Additional IP. Para mais informações sobre as permissões dos ficheiros, consulte a [documentação oficial do ubuntu](https://help.ubuntu.com/community/FilePermissions).
 >
 
 ### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
@@ -553,7 +556,7 @@ ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 
 Onde irá substituir "ADDITIONAL_IP" pelo verdadeiro Additional IP.
 
-De seguida,efetuar um ping a partir do seu Additional IP para o exterior. Se isso funcionar, provavelmente significa que há um erro de configuração que precisa ser corrigido. Se, pelo contrário, o endereço IP não funcionar, abra um ticket junto da equipa de assistência através do [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help){.external} com as seguintes informações:
+De seguida,efetuar um ping a partir do seu Additional IP para o exterior. Se isso funcionar, provavelmente significa que há um erro de configuração que precisa ser corrigido. Se, pelo contrário, o endereço IP não funcionar, abra um ticket junto da equipa de assistência através do [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) com as seguintes informações:
 
 - O nome e a versão do sistema operativo que utiliza no seu servidor.
 - Nome e diretório do ficheiro de configuração de rede.
@@ -563,4 +566,4 @@ De seguida,efetuar um ping a partir do seu Additional IP para o exterior. Se iss
 
 [Modo bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).

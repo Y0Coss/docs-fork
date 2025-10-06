@@ -1,7 +1,7 @@
 ---
 title: "Alojamentos web - FAQ"
 excerpt: "Encontre as principais questões colocadas sobre os alojamentos web da OVHcloud"
-updated: 2025-04-25
+updated: 2025-08-01
 ---
 
 <style>
@@ -455,7 +455,7 @@ Para corrigir isto, siga estes passos:
 >>
 > **Caso n°2**
 >>
->> Os `Alvos` (servidores DNS) das entradas do tipo `NS` declaradas na zona DNS do nome de domínio **não são idênticos** às que são obtidas no separador "Servidores DNS" {.action}. No entanto, os `Alvos` (servidores DNS) assumem uma das seguintes formas:
+>> Os `Alvos` (servidores DNS) das entradas do tipo `NS` declaradas na zona DNS do nome de domínio **não são idênticos** às que são obtidas no separador `Servidores DNS`{.action}. No entanto, os `Alvos` (servidores DNS) assumem uma das seguintes formas:
 >>
 >> - `nsXX.ovh.net` e `dnsXX.ovh.net` **ou** `nsXXX.ovh.net` e `dnsXXX.ovh.net` (em que cada `X` designa um algarismo compreendido entre **0** e **9**);
 >> - `nsXX.ovh.ca` e `dnsXX.ovh.ca` **ou** `nsXXX.ovh.ca` e `dnsXXX.ovh.ca` (em que cada `X` designa um algarismo compreendido entre **0** e **9**);
@@ -469,7 +469,7 @@ Para corrigir isto, siga estes passos:
 >> Neste caso, isto significa que o seu domínio não utiliza os servidores DNS corretos da OVHcloud para aplicar a configuração da zona DNS presente no separador `Zona DNS`{.action}.
 >>
 >> Para corrigir isto, siga estes passos:
->>>
+>>
 >> 1. Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
 >> 2. Clique no menu `Nomes de domínio`{.action} e escolha o domínio em causa.
 >> 3. Na página que se abrir, clique no separador `Servidores DNS`{.action}.
@@ -558,49 +558,49 @@ De facto, este erro também pode aparecer em caso de pedido HTTP que chegue ao *
 
 ///
 
-/// details | O que fazer se o meu website apresentar um erro "o seu pedido está bloqueado"?
+/// details | O que fazer se o meu website apresentar um erro "Your request has been blocked"?
 
 ![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
-Esta mensagem indica que o tipo de pedidos HTTP que está a tentar efetuar no seu website é proibido por um período de tempo limitado, normalmente por razões de segurança.
+A página "Your request has been blocked" pode ser apresentada por vários motivos (lista não exaustiva):
+
+- O pedido é efetuado a partir de um browser Internet (Firefox, Chrome, Safari, Edge, etc.) não atualizado.
+- Um grande número de pedidos, semelhantes ou não, são efetuados num prazo extremamente curto.
+- O pedido tenta executar ações não autorizadas na infraestrutura partilhada onde se encontra o seu alojamento web.
 
 Nesta situação, são necessárias várias ações:
 
-- Examine os [logs](/pages/web_cloud/web_hosting/logs_and_statistics) do seu website, a fim de determinar quais os pedidos que provocaram esse bloqueio.
-- Utilize um software antivírus ou antisspyware para se certificar de que os seus dispositivos (computadores, smartphones, etc.) não estão infetados por spyware ou malware.
-- Verifique o código-fonte do seu website (espaço de armazenamento FTP e base(s) de dados).
+- Verifique se o seu browser da Internet está atualizado.
+- Recupere o URL chamado (por exemplo: `https://www.domain.tld`), bem como todas as informações presentes na página "Your request has been blocked" (`IP address`, `Date` e `Request ID`).
+- Transmita os elementos recuperados ao suporte através da criação de um [ticket de assistência](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
 
 > [!success]
 >
-> Consulte também os nossos guias detalhados:
->
-> - [Alojamento web - Consultar as estatísticas e logs de um website](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Casos de uso - Conselhos após a pirataria do seu website](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+Consulte também o nosso guia detalhado: [O que acontece se a página "Your request has been blocked" aparecer?](/pages/web_cloud/web_hosting/diagnostic_request_blocked).
 
 ///
 
-/// details | O que devo fazer se o meu website apresentar um erro "o seu IP já foi banido"?
+/// details | O que devo fazer se o meu website apresentar um erro "Your IP has been banned"?
 
 ![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
-Esta mensagem indica que o endereço IP que utiliza para se ligar ao seu website está bloqueado por um tempo limitado, geralmente por razões de segurança.
+A página "Your IP has been banned" pode ser apresentada por vários motivos (lista não exaustiva):
+
+- Um grande número de pedidos, semelhantes ou não, são efetuados num prazo extremamente curto a partir do mesmo endereço IP.
+- As consultas efetuadas a partir do endereço IP em questão são suspeitas.
 
 Nesta situação, são necessárias várias ações:
 
-- Examine os [logs](/pages/web_cloud/web_hosting/logs_and_statistics) do seu website, a fim de determinar quais os pedidos que provocaram esse bloqueio.
-- Verifique se os dispositivos (computadores, smartphones, etc.) estão infetados por spyware ou malware, utilizando software antivírus ou antisspyware.
-- Verifique o código-fonte do seu website (espaço de armazenamento FTP e base(s) de dados).
+- Recupere o URL chamado (por exemplo: `https://www.domain.tld`), bem como todas as informações presentes na página "Your IP has been banned" (`IP address`, `Date` e `Request ID`).
+- Transmita os elementos recuperados ao suporte através da criação de um [ticket de assistência](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um dos nossos [parceiros](/links/partner).
 
 > [!success]
 >
-> Consulte também os nossos guias detalhados:
->
-> - [Alojamento web - Consultar as estatísticas e logs de um website](/pages/web_cloud/web_hosting/logs_and_statistics).
-> - [Casos de uso - Conselhos após a pirataria do seu website](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
+> Consulte também o nosso guia detalhado: [O que acontece se a página "Your IP has been banned" aparecer?](/pages/web_cloud/web_hosting/diagnostic_ip_banned).
 
 ///
 
@@ -608,7 +608,7 @@ Se tiver dúvidas sobre as ações a executar, contacte o seu Webmaster ou um do
 
 ![notação_idn](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
-Não tem nada a fazer nesta situação. Mesmo que o seu domínio seja apresentado em [notação internacionalizada (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name){.external} na sua Área de Cliente, funcionará e apresentará-se de forma perfeitamente normal noutro local. O endereço Web do seu site será apresentado conforme solicitado. Os seus endereços de e-mail aparecerão também conforme o seu desejo.
+Não tem nada a fazer nesta situação. Mesmo que o seu domínio seja apresentado em [notação internacionalizada (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name) na sua Área de Cliente, funcionará e apresentará-se de forma perfeitamente normal noutro local. O endereço Web do seu site será apresentado conforme solicitado. Os seus endereços de e-mail aparecerão também conforme o seu desejo.
 
 > [!alert]
 >

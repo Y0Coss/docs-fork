@@ -1,12 +1,8 @@
 ---
 title: "Korzystanie z migawek na prywatnym serwerze wirtualnym"
 excerpt: "Dowiedz się, jak włączyć opcję migawki w Panelu klienta OVHcloud i korzystać z niej"
-updated: 2024-09-18
+updated: 2025-09-11
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -16,13 +12,17 @@ Utworzenie migawki jest szybkim i prostym sposobem na zabezpieczenie działania 
 
 > [!primary]
 >
-Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron produktów oraz często zadawanych pytań (FAQ)](https://www.ovhcloud.com/pl/vps/options/) w celu porównania cen i uzyskania szczegółowych informacji.
+Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron produktów oraz często zadawanych pytań (FAQ)](/links/bare-metal/vps-options) w celu porównania cen i uzyskania szczegółowych informacji.
 >
 
 ## Wymagania początkowe
 
 - dostęp do [Panelu klienta OVHcloud](/links/manager)
-- skonfigurowana [usługa VPS](https://www.ovhcloud.com/pl/vps/) OVHcloud
+- skonfigurowana [usługa VPS](/links/bare-metal/vps) OVHcloud
+
+> [!warning]
+> Funkcja ta nie jest aktualnie dostępna dla prywatnych serwerów wirtualnych w [Local Zones](/links/bare-metal/vps-lz).
+>
 
 ## W praktyce
 

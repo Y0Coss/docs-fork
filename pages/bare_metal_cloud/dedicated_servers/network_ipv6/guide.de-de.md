@@ -1,12 +1,8 @@
 ---
 title: "IPv6 auf einem Dedicated Server konfigurieren"
 excerpt: "Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur konfigurieren"
-updated: 2024-07-15
+updated: 2025-06-04
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -14,10 +10,18 @@ Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol
 
 **Diese Anleitung erklärt anhand verschiedener Beispiele, wie Sie IPv6-Adressen auf Ihrem Server konfigurieren.**
 
+> [!primary]
+>
+> Dieser Artikel behandelt die primäre IP-Konfiguration. Für Server, die vRack Konnektivität unterstützen, können Sie Additional IP Adressen auch im vRack konfigurieren, statt der öffentlichen Schnittstelle Ihres Servers. Die entsprechenden Anweisungen finden Sie in diesen Anleitungen:
+>
+> - IPv4: [IP-Block im vRack konfigurieren](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
+> - IPv6: [Configuring an IPv6 block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)
+>
+
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](/links/partner) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](/links/community) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 ## Voraussetzungen
@@ -59,7 +63,7 @@ Der erste Schritt besteht darin, das Ihrem Server zugewiesene IPv6-Gateway abzur
 
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im Bereich `Dedicated Server`{.action} aus.
 
-Das Ihrem Server zugewiesene IPv6-Gateway wird im Bereich `Netzwerk` des Tab `Allgemeine Informationen`{.action} angezeigt. Nachdem Sie die Datei kopiert haben, fahren Sie mit Schritt 2 "[IPv6-Konfiguration anwenden](#applyipv6)" fort.
+Das Ihrem Server zugewiesene IPv6-Gateway wird im Bereich `Netzwerk` des Tab `Allgemeine Informationen`{.action} angezeigt. Nach dem Kopieren fahren Sie mit der Anwendung der IPv6-Konfiguration fort.
 
 ![configureIPv6](images/ipv6_information.png){.thumbnail}
 
@@ -85,6 +89,10 @@ IPv6_GATEWAY `2607:5300:60:62FF:00FF:00FF:00FF:00FF` kann auch als `2607:5300:60
 > Erstellen Sie vor der Änderung einer Konfigurationsdatei immer ein Backup des Originals, um es im Fehlerfall wiederherstellen zu können. 
 > 
 
+> [!primary]
+> Bei einigen Betriebssystemen ist das Hinzufügen von statischen IPv6-Routen in die ursprüngliche Konfigurationsdatei notwendig und wird standardmäßig durchgeführt. Wenn dies der Fall ist, fügen Sie einfach Ihre Konfiguration für IPv6 wie in der Anleitung beschrieben hinzu und ändern Sie keine Zeile in der Originaldatei.
+>
+
 ### Debian und Debian-basierte Betriebssysteme (außer Debian 12)
 
 Die folgende Beispielkonfiguration basiert auf Debian 11 (Bullseye).
@@ -108,7 +116,7 @@ ssh user@serverIP
 
 #### Schritt 2: Backup erstellen
 
-Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in `/etc/network/interfaces.d`. Erstellen Sie eine Sicherungskopie der Datei mit dem folgenden Befehl:
+Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in `/etc/network/interfaces.d`. In unserem Beispiel heißt sie `50-cloud-init`. Erstellen Sie eine Sicherungskopie der Datei mit dem folgenden Befehl:
 
 ```sh
 sudo cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak

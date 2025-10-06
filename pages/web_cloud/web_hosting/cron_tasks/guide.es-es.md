@@ -47,7 +47,7 @@ En su alojamiento web de OVHcloud, puede utilizar scripts para automatizar deter
 
 ## Procedimiento
 
-Acceda al [área de cliente de OVHcloud](/links/manager){.external}. Haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
+Acceda al [área de cliente de OVHcloud](/links/manager). Haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
 
 Seleccione el alojamiento correspondiente, abra la pestaña `Más`{.action} y haga clic en `Cron.`{.action}.
 
@@ -141,7 +141,7 @@ Haga clic en las fichas siguientes para ver cada una de las **4** etapas.
 |Duración|La duración de ejecución de una tarea es de 60 minutos. Si un script supera la duración de ejecución, el sistema lo detendrá automáticamente.|
 |Variables|Sólo puede definir variables en un script. Añadirlos a la URL que llama al script no funcionará (Ejemplo: www/jobs/cron.php?variable=value).|
 |Límite de datos|Una tarea solo puede generar 5 MB de datos (*stdin/stderr*). Por ejemplo, si un script escribe datos en un archivo .txt, la ejecución se detiene automáticamente cuando el archivo alcanza los 5 MB.|
-|Guiones que producen errores|Si un script tiene errores, se desactivará automáticamente después de 10 intentos fallidos de ejecución. El informe de error no se enviará hasta que los 10 intentos hayan fallado.</br>Corrija su script en función del informe de error recibido y vuelva a activar la "tarea CRON" en el panel de control (haga clic en `...`{.action} y luego en `Editar`{.action}).|
+|Guiones que producen errores|Si un script tiene errores, se desactivará automáticamente después de 10 intentos fallidos de ejecución. El informe de error no se enviará hasta que los 10 intentos hayan fallado.<br>Corrija su script en función del informe de error recibido y vuelva a activar la "tarea CRON" en el panel de control (haga clic en `...`{.action} y luego en `Editar`{.action}).|
 |Informes de ejecución|Los informes sólo se enviarán a la dirección de correo electrónico seleccionada una vez al día (durante las horas de la noche).|
 
 ### Reparación
@@ -152,7 +152,7 @@ Una prueba sencilla de si el script producirá un error es ejecutarlo en un nave
 
 #### Comprobación del uso de rutas absolutas
 
-Utilice siempre rutas de acceso absolutas a los archivos de sus scripts. La constante "DIR", por ejemplo, puede ayudar a obtener la ruta actual en los scripts PHP ([documentación PHP](https://www.php.net/manual/en/language.constants.predefined.php){.external}).
+Utilice siempre rutas de acceso absolutas a los archivos de sus scripts. La constante "DIR", por ejemplo, puede ayudar a obtener la ruta actual en los scripts PHP ([documentación PHP](https://www.php.net/manual/en/language.constants.predefined.php)).
  
 #### Verificación de los logs de ejecución
 

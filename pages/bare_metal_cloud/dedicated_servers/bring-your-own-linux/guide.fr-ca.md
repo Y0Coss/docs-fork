@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Découvrez comment déployer facilement vos propres images Linux sur des serveurs dédiés
-updated: 2025-04-29
+updated: 2025-09-30
 ---
 
 ## Objectif
@@ -34,8 +34,7 @@ En plus des prérequis et limitations mentionnés ci-dessous, vous devez vous as
 
 Certaines limites techniques sont liées à l’utilisation de produits physiques comme les serveurs dédiés. Voici une liste non exhaustive à garder à l'esprit lors de la préparation de votre déploiement :
 
-- Type de démarrage : **uefi** ou **legacy**
-- Type de partition : **MBR** ou **GPT**
+- Type de démarrage : **UEFI** ou **legacy** (en fonction du type de démarrage de votre serveur)
 - Format de l'image : **qcow2**
 - Une seule partition dans l'image qcow2
 
@@ -66,7 +65,7 @@ Pour plus d'informations et des exemples sur ConfigDrive de Cloud-Init, consulte
 
 ### Déploiement de votre image via les API <a name="viaapi"></a>
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}.
+Connectez-vous sur [https://api.ovh.com/](/links/api) puis rendez-vous dans la section `/dedicated/server`{.action}.
 
 > [!api]
 >
@@ -85,9 +84,9 @@ Le contenu de la requête API de Bring Your Own Linux (BYOLinux) doit être simi
   "operatingSystem": "byolinux_64",
   "customizations": {
     "hostname": "mon-tux",
-    "imageURL": "https://github.com/ashmonger/akution_test/releases/download/0.5-compress/deb11k6.qcow2",
+    "imageURL": "https://github.com/ashmonger/akution_test/releases/latest/download/deb11k6.qcow2",
     "efiBootloaderPath": "\\efi\\debian\\grubx64.efi",
-    "imageCheckSum": "367f26c915f39314dde155db3a2b0326803e06975d1f4be04256f8b591e38fd4062d36eb7d50e99da7a50b7f4cd69640e56a4ab93e8e0274e4e478e0f84b5d29",
+    "imageCheckSum": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "httpHeaders": {
       "Authorization": "Basic bG9naW46cGFzc3dvcmQ="
     },
@@ -96,6 +95,11 @@ Le contenu de la requête API de Bring Your Own Linux (BYOLinux) doit être simi
   }
 }
 ```
+
+> [!warning]
+>
+> Dans l'exemple ci-dessus, la valeur de `imageCheckSum` a été masquée, car elle change régulièrement à chaque reconstruction de l’image cible.
+>
 
 Même si le configDrive user data peut être envoyé à l'API en clair directement en échappant les bons caractères, il est recommandé d'envoyer à l'API le script encodé en base64 en utilisant par exemple la commande UNIX/Linux suivante :
 

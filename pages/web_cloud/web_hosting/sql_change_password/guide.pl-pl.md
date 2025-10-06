@@ -40,7 +40,7 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 
 - Posiadanie [hostingu WWW OVHcloud](/links/web/hosting)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Korzystanie z [bazy danych powiązanej z hostingiem](/links/web/hosting-options-startsql) lub z [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/).
+- Korzystanie z [bazy danych powiązanej z hostingiem](/links/web/hosting-options-startsql) lub z [Web Cloud Databases](/links/web/databases).
 - Posiadanie danych dostępowych FTP umożliwiających zalogowanie się do [przestrzeni dyskowej Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection).
 
 ## W praktyce
@@ -89,7 +89,7 @@ Następnie wróć do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Clo
 
 Jeśli w tej części Twojego Panelu klienta znalazłeś nazwę bazy znajdującej się w pliku konfiguracyjnym, przejdź do [Etap 3](#step3).
 
-W przeciwnym razie baza danych Twojej strony WWW jest powiązana z ofertą [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/).
+W przeciwnym razie baza danych Twojej strony WWW jest powiązana z ofertą [Web Cloud Databases](/links/web/databases).
 
 Należy więc powrócić do pliku konfiguracyjnego Twojej strony, aby zapisać *nazwę serwera* oraz *nazwę użytkownika* bazy danych:
 
@@ -100,7 +100,7 @@ Należy więc powrócić do pliku konfiguracyjnego Twojej strony, aby zapisać *
 
 Następnie w części `Bazy danych`{.action} w sekcji `Web Cloud`{.action}. 
 
-W zakładce `Informacje ogólne`{.action} podaj w ofercie [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) nazwę serwera Twojej bazy danych, która zawiera `Nazwa hosta`{.action}.
+W zakładce `Informacje ogólne`{.action} podaj w ofercie [Web Cloud Databases](/links/web/databases) nazwę serwera Twojej bazy danych, która zawiera `Nazwa hosta`{.action}.
 
 W tej części Panelu klienta przejdź do zakładki `Użytkownik i uprawnienia`{.action}, aby również znaleźć `Nazwę użytkownika`{.action} Twojej bazy danych.
 
