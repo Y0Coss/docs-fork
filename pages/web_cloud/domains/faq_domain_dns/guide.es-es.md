@@ -1,7 +1,7 @@
 ---
 title: "FAQ sobre los dominios y DNS"
 excerpt: "Encuentre las principales preguntas formuladas sobre los nombres de dominio, los servidores DNS y las zonas DNS"
-updated: 2025-10-02
+updated: 2025-10-06
 ---
 
 <style>

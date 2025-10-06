@@ -1,7 +1,7 @@
 ---
 title: "FAQ on domain names & DNS"
 excerpt: "Find the main questions asked on domain names, DNS servers and DNS zones"
-updated: 2025-10-02
+updated: 2025-10-06
 ---
 
 <style>
@@ -160,7 +160,7 @@ Your domain name will then be suspended on its expiration date. After this date,
 
 /// details | I received an email about validating the information associated with my domain name's registrant. What should I do?
 
-First, if you have doubts about the legitimacy of the received email, consult our guide « [Beware of scams – recognising fraudulent email and phishing](/pages/account_and_service_management/account_information/phishing_care) ».
+First, if you have doubts about the legitimacy of the received email, consult our guide "[Beware of scams – recognising fraudulent email and phishing](/pages/account_and_service_management/account_information/phishing_care)".
 
 According to a directive from the **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) dated 01/09/2014, domain name registrars (e.g., OVHcloud) are required to verify the validity of the contact details of domain name registrants/owners. OVHcloud then sends an email to the registrant/owner of the domain name registered at the contact email address declared with OVHcloud.
 
@@ -244,7 +244,7 @@ To do this, follow these steps:
 
 > [!success]
 >
-> Find all the details in our guide « [How to renew OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal) ».
+> Find all the details in our guide "[How to renew OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)".
 
 ///
 

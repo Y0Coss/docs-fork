@@ -1,7 +1,7 @@
 ---
 title: "FAQ dotyczący domen & DNS"
 excerpt: "Znajdź najważniejsze pytania dotyczące domen, serwerów DNS i stref DNS"
-updated: 2025-10-02
+updated: 2025-10-06
 ---
 
 <style>
