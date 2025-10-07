@@ -6,7 +6,9 @@ updated: 2025-10-07
 
 ## Objectif
 
-Pour participer au Startup Program d'OVHcloud, la signature du contrat est une étape indispensable. Une fois votre candidature acceptée, vous recevrez un email contenant un lien direct pour signer le contrat. Il est également possible de retrouver le contrat dans votre espace client OVHcloud. Ce guide vous explique comment accéder à ce contrat et le signer pour que vos crédits soient activés rapidement
+Pour participer au Startup Program d'OVHcloud, la signature du contrat est une étape indispensable. Une fois votre candidature acceptée, vous recevrez un email contenant un lien direct pour signer le contrat. Il est également possible de retrouver le contrat dans votre espace client OVHcloud.
+
+**Ce guide vous explique comment accéder à ce contrat et le signer pour que vos crédits soient activés rapidement**
 
 ## Prérequis
 

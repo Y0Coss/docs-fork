@@ -6,7 +6,9 @@ updated: 2025-10-07
 
 ## Objectif
 
-Le Startup Program d'OVHcloud offre de nombreux avantages pour soutenir les startups dans leur développement. Pour maximiser vos chances d'acceptation, voici les étapes à suivre pour préparer et finaliser votre inscription.
+Le Startup Program d'OVHcloud offre de nombreux avantages pour soutenir les startups dans leur développement. 
+
+**Pour maximiser vos chances d'acceptation, ce guide vous détaille les étapes à suivre pour préparer et finaliser votre inscription.**
 
 ## Prérequis
 

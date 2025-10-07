@@ -1,13 +1,14 @@
 ---
-title: 'How to optimise my application to the Startup Program?'
+title: 'How to optimise your application to the Startup Program'
 excerpt: ''
 updated: 2025-10-07
 ---
 
 ## Objective
 
-OVHcloud's Startup Program offers numerous benefits to support startups in their growth. To maximize your chances of acceptance, follow these steps to prepare and complete your application.
+OVHcloud's Startup Program offers numerous benefits to support startups in their growth. 
 
+**To maximize your chances of acceptance, follow these steps to prepare and complete your application.**
 
 ## Requirements
 

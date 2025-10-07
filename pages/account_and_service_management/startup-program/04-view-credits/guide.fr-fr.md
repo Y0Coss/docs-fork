@@ -6,13 +6,15 @@ updated: 2025-10-07
 
 ## Objectif
 
-En tant que membre du Startup Program d'OVHcloud, vous bénéficiez de crédits offerts pour soutenir la croissance de votre infrastructure. Ces crédits sont activés automatiquement dans les 48 heures ouvrées suivant la signature de votre contrat. Il est important de consulter régulièrement votre solde de crédits et leur historique d’utilisation pour mieux gérer vos ressources. Ce guide vous explique comment vérifier le montant de crédits attribués, restants, et comment accéder à l’historique de consommation dans votre espace client.
+En tant que membre du Startup Program d'OVHcloud, vous bénéficiez de crédits offerts pour soutenir la croissance de votre infrastructure. Ces crédits sont activés automatiquement dans les 48 heures ouvrées suivant la signature de votre contrat. Il est important de consulter régulièrement votre solde de crédits et leur historique d’utilisation pour mieux gérer vos ressources. 
+
+**Ce guide vous explique comment vérifier le montant de crédits attribués, restants, et comment accéder à l’historique de consommation dans votre espace client OVHcloud.**
 
 ## Prérequis
 
 - Votre candidature au Startup Program doit avoir été validée et votre contrat signé. Retrouvez plus d'informations dans nos guides :
     - [Comment optimiser votre candidature au Startup Program](pages/account_and_service_management/startup-program/01-optimise-application)
-    - [omment signer votre contrat du Startup Program](/pages/account_and_service_management/startup-program/02-sign-agreement)
+    - [Comment signer votre contrat du Startup Program](/pages/account_and_service_management/startup-program/02-sign-agreement)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## Points Clés
@@ -29,13 +31,13 @@ En tant que membre du Startup Program d'OVHcloud, vous bénéficiez de crédits 
 
 2. Depuis la page d’accueil, cliquez sur votre nom en haut à droite puis cliquez sur `Mes offres & services`{.action}.
 
-![produits et services](images/01-products-services.png){.thumbnail}
+    ![produits et services](images/01-products-services.png){.thumbnail}
 
 3. Dans le menu de gauche, cliquez sur `Mes moyens de paiement`{.action}.
 
 4. Une fois sur la page des moyens de paiement, sélectionnez l’onglet `Mes bons d'achat`{.action}. Ici, vous verrez le montant total de vos crédits attribués, la date d'expiration, les crédits restants, et l’historique de leur consommation.
 
-![bons d'achat](images/02-vouchers.png){.thumbnail}
+    ![bons d'achat](images/02-vouchers.png){.thumbnail}
 
 ## Conclusion
 
