@@ -57,7 +57,7 @@ The minimum number of replicas is **1** and the maximum is **10**.
 >>
 >> ```bash
 >> ovhai app run <registry-address>/<image-identifier>:<tag-name> \
->>     --replicas 2
+>>     --replicas 2 \
 >>     -- <optional-command>
 >> ```
 >>
@@ -127,18 +127,6 @@ For advanced scenarios, you can define **custom metrics** to drive autoscaling d
 | `--auto-custom-value-location` | Specifies where in the API response payload the metric value is located.  This value is format specific. See valueLocation from parameter list in [Trigger Specification documentation](https://keda.sh/docs/2.16/scalers/metrics-api/#trigger-specification) for details.            |
 | `--auto-custom-target-value`   | Target value for metric to scale on.                                          |
 | `--auto-custom-metric-format`  | Format of the metric to scale on (`JSON`, `XML`, `YAML`, `PROMETHEUS`). Default is `JSON`.          |
-
-> [!example]  
-> Scaling based on a custom metric from an internal endpoint:  
->  
-> ```bash
-> ovhai app run <registry-address>/<image-identifier>:<tag-name> \
->     --auto-custom-api-url http://<SELF>:6000/metrics \
->     --auto-custom-value-location foo.bar \
->     --auto-custom-target-value 42 \
->     --auto-custom-metric-format JSON
-> ```
-
 
 **Example**:
 
