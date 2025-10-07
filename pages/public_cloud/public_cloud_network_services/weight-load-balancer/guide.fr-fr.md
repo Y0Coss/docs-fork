@@ -26,7 +26,7 @@ En définissant le poids sur 0, le membre est effectivement retiré du pool de t
 - Un [compte OVHcloud actif](/links/manager).
 - Un [projet Public Cloud OVHcloud](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 - Un [Load Balancer configuré avec plusieurs membres](/pages/network/load_balancer/create_http_https).
-- La [CLI OpenStack installée et configurée](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- La [CLI OpenStack installée et configurée](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 
 ## En pratique
 
@@ -58,7 +58,7 @@ Les réponses des deux membres doivent être alternées :
 
 > [!tabs]
 > API OVHcloud
->> Connectez-vous à l’interface APIv6 d’OVHcloud en utilisant ce guide de [premiers pas avec l’API OVHcloud](/pages/manage_and_operating/api/first-steps).
+>> Connectez-vous à l’interface APIv6 d’OVHcloud en utilisant ce guide de [premiers pas avec l’API OVHcloud](/pages/manage_and_operate/api/first-steps).
 >>
 >> Si l'identifiant du projet est inconnu, les appels d'API ci-dessous permettent de le récupérer.
 >>

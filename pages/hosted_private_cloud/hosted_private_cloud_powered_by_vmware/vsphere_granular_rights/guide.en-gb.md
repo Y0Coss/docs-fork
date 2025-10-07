@@ -10,9 +10,9 @@ In addition to global datacenter rights, you can assign granular rights to users
 
 ## Prerequisites
 
-- A [Hosted Private Cloud service](/links/hosted-private-cloud) with vSphere version 6.5 or higher
+- A [Hosted Private Cloud service](/links/hosted-private-cloud/vmware) with vSphere version 6.5 or higher
 - Access to the [OVHcloud API](/links/api)
-- A user already created in your Hosted Private Cloud service ([see the user management guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manage_users))
+- A [user](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion) already created in your Hosted Private Cloud service
 
 ## Instructions
 

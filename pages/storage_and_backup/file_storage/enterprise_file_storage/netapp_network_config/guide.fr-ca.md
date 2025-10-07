@@ -76,7 +76,7 @@ Vous pouvez à présent suivre les guides ci-dessous pour créer et gérer vos v
 > **Prérequis :**
 >
 > - Votre client NFS doit avoir une interface réseau configurée dans le même sous-réseau que votre vRack Services et doit être dans le même VLAN que celui-ci. Le sous-réseau du vRack Services n'est pas routable et nécessite un sous-réseau de type CIDR 24  (x.x.x.x/24 ou x.x.x.x/255.255.255.0).
-> - Si ce n'est pas possible, vous pouvez utiliser une passerelle qui fera une translation d'adresse et de port vers celui-ci mais il vous faudra contacter le [support OVHcloud](/https://help.ovhcloud.com/csm?id=csm_get_help). Sans cela vous ne pourrez pas monter vos partages NFS.
+> - Si ce n'est pas possible, vous pouvez utiliser une passerelle qui fera une translation d'adresse et de port vers celui-ci mais il vous faudra contacter le [support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Sans cela vous ne pourrez pas monter vos partages NFS.
 > - L'adresse IP de votre Service Endpoint est dans un sous-ensemble en CIDR 27, 28 ou 29 de votre sous-réseau vRack Services.
 > - L'adresse IP de votre Service Endpoint doit être unique dans votre sous-réseau et doit être exclue de votre serveur DHCP si vous en utilisez un.
 > - Exemple : sous-réseau vRack Services 10.0.0.0/24 - Service Endpoint 10.0.0.16/29  - Votre service sera donc accessible à l'adresse IP 10.0.0.16 dans le sous-réseau 10.0.0.0/24.

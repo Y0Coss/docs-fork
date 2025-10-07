@@ -26,7 +26,7 @@ By setting the weight to 0, the member is effectively removed from the traffic p
 - An [active OVHcloud account](/links/manager).
 - An active [Public Cloud project](/pages/public_cloud/public_cloud_cross_functional/create_a_public_cloud_project).
 - A [Load Balancer set up with multiple members](/pages/network/load_balancer/create_http_https).
-- [OpenStack CLI installed and configured](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- [OpenStack CLI installed and configured](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
 
 ## Instructions
 
