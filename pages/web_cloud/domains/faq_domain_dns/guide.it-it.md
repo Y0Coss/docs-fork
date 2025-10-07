@@ -1,6 +1,6 @@
 ---
 title: "FAQ sui domini & DNS"
-excerpt: "Ritrova le principali domande su domini, server DNS e zone DNS"
+excerpt: "Ritrova le principali domande su nomi di dominio, server DNS e zone DNS"
 updated: 2025-10-06
 ---
 
@@ -20,133 +20,133 @@ details[open]>summary::before {
 
 **Clicca sulle domande qui sotto per visualizzare le spiegazioni.**
 
-## Sottoscrizione di un nome a dominio
+## Sottoscrizione di un nome di dominio
 
-/// details | Come posso sottoscrivere un nome a dominio su OVHcloud ?
+/// details | Come posso sottoscrivere un nome di dominio su OVHcloud ?
 
-Segui questi passaggi :
+Segui questi passaggi:
 
 1. Vai sul nostro sito web [OVHcloud](/links/website).
-2. Nella pagina che appare e nel campo dedicato, digita il nome a dominio che desideri riservare (ad esempio: `domain.tld`), quindi clicca sul pulsante `Cerca`{.action}.
-3. Nella nuova pagina che appare, il nostro sistema ti indicherà se il nome a dominio scelto è disponibile all'acquisto o meno. Se è già riservato con la sintassi che hai digitato, modificalo e rilancia una nuova ricerca di disponibilità.
-4. Una volta che hai trovato un nome a dominio disponibile, clicca sul pulsante `Acquista`{.action}, quindi sul pulsante `Procedi con l'ordine`{.action} nella colonna a destra.
-5. Seleziona eventuali opzioni o servizi a cui desideri sottoscrivere in aggiunta al tuo nome a dominio, quindi clicca su `Continua`{.action} fino a quando il tunnel d'ordine ti chiederà di autenticarti o di creare un account OVHcloud.
-6. Una volta autenticato con il tuo account OVHcloud, potrai personalizzare le informazioni dei contatti (proprietario/titolare, amministratore, tecnico) per il tuo nome a dominio. Clicca quindi sul pulsante `Continua`{.action} per accedere al riepilogo del tuo ordine.
-7. Nella pagina `Riepilogo del tuo ordine` e se necessario, potrai modificare la configurazione DNS che verrà applicata al tuo nome a dominio cliccando sul link intitolato `Modifica la configurazione`{.action}. Una volta completate le tue modifiche, clicca sul pulsante `Paga`{.action} per accedere all'ultima fase del tuo ordine.
+2. Nella pagina che appare e nel campo dedicato, digita il nome di dominio che desideri riservare (ad esempio: `domain.tld`), quindi clicca sul pulsante `Cerca`{.action}.
+3. Nella nuova pagina che appare, il nostro sistema ti indicherà se il nome di dominio scelto è disponibile all'acquisto o meno. Se è già riservato con la sintassi che hai digitato, modificalo e rilancia una nuova ricerca di disponibilità.
+4. Una volta che hai trovato un nome di dominio disponibile, clicca sul pulsante `Acquista`{.action}, quindi sul pulsante `Procedi con l'ordine`{.action} nella colonna a destra.
+5. Seleziona eventuali opzioni o servizi a cui desideri sottoscrivere in aggiunta al tuo nome di dominio, quindi clicca su `Continua`{.action} fino a quando il tunnel d'ordine ti chiederà di autenticarti o di creare un account OVHcloud.
+6. Una volta autenticato con il tuo account OVHcloud, potrai personalizzare le informazioni dei contatti (proprietario/titolare, amministratore, tecnico) per il tuo nome di dominio. Clicca quindi sul pulsante `Continua`{.action} per accedere al riepilogo del tuo ordine.
+7. Nella pagina `Riepilogo del tuo ordine` e se necessario, potrai modificare la configurazione DNS che verrà applicata al tuo nome di dominio cliccando sul link intitolato `Modifica la configurazione`{.action}. Una volta completate le tue modifiche, clicca sul pulsante `Paga`{.action} per accedere all'ultima fase del tuo ordine.
 
-Paga quindi il tuo ordine per iniziare la riservazione del tuo nome a dominio nonché l'installazione dei servizi e opzioni a cui hai sottoscritto in aggiunta.
+Paga quindi il tuo ordine per iniziare la riservazione del tuo nome di dominio nonché l'installazione dei servizi e opzioni a cui hai sottoscritto in aggiunta.
 
 Qualche istante più tardi riceverai un'e-mail di conferma per il tuo ordine.
-Potrai quindi amministrare il tuo nome a dominio collegandoti al tuo [Spazio Cliente OVHcloud](/links/manager).
+Potrai quindi amministrare il tuo nome di dominio collegandoti al tuo [Spazio Cliente OVHcloud](/links/manager).
 
 Non esitare a creare un ticket di assistenza dal [centro di aiuto](https://help.ovhcloud.com/csm?id=csm_get_help) se necessario.
 
 ///
 
-/// details | Come posso acquistare un nome a dominio sul mercato secondario ?
+/// details | Come posso acquistare un nome di dominio sul mercato secondario ?
 
-L'acquisto di un nome a dominio sul mercato secondario avviene nello stesso modo della sottoscrizione di un nome a dominio.
+L'acquisto di un nome di dominio sul mercato secondario avviene nello stesso modo della sottoscrizione di un nome di dominio.
 
-Segui questi passaggi :
+Segui questi passaggi:
 
 1. Vai sul nostro sito web [OVHcloud](/links/website).
-2. Nella pagina che appare e nel campo dedicato, digita il nome a dominio che desideri riservare (ad esempio: `domain.tld`), quindi clicca sul pulsante `Cerca`{.action}.
-3. Nella nuova pagina che appare, il nostro sistema ti indicherà se il nome a dominio scelto è disponibile all'acquisto o meno. Se è già riservato con la sintassi che hai digitato, modificalo e rilancia una nuova ricerca di disponibilità.
-4. Una volta che hai trovato un nome a dominio disponibile, clicca sul pulsante `Acquista`{.action}, quindi sul pulsante `Procedi con l'ordine`{.action} nella colonna a destra.
-5. Seleziona eventuali opzioni o servizi a cui desideri sottoscrivere in aggiunta al tuo nome a dominio, quindi clicca su `Continua`{.action} fino a quando il tunnel d'ordine ti chiederà di autenticarti o di creare un account OVHcloud.
-6. Una volta autenticato con il tuo account OVHcloud, potrai personalizzare le informazioni dei contatti (proprietario/titolare, amministratore, tecnico) per il tuo nome a dominio. Clicca quindi sul pulsante `Continua`{.action} per accedere al riepilogo del tuo ordine.
-7. Nella pagina `Riepilogo del tuo ordine` e se necessario, potrai modificare la configurazione DNS che verrà applicata al tuo nome a dominio cliccando sul link intitolato `Modifica la configurazione`{.action}. Una volta completate le tue modifiche, clicca sul pulsante `Paga`{.action} per accedere all'ultima fase del tuo ordine.
+2. Nella pagina che appare e nel campo dedicato, digita il nome di dominio che desideri riservare (ad esempio: `domain.tld`), quindi clicca sul pulsante `Cerca`{.action}.
+3. Nella nuova pagina che appare, il nostro sistema ti indicherà se il nome di dominio scelto è disponibile all'acquisto o meno. Se è già riservato con la sintassi che hai digitato, modificalo e rilancia una nuova ricerca di disponibilità.
+4. Una volta che hai trovato un nome di dominio disponibile, clicca sul pulsante `Acquista`{.action}, quindi sul pulsante `Procedi con l'ordine`{.action} nella colonna a destra.
+5. Seleziona eventuali opzioni o servizi a cui desideri sottoscrivere in aggiunta al tuo nome di dominio, quindi clicca su `Continua`{.action} fino a quando il tunnel d'ordine ti chiederà di autenticarti o di creare un account OVHcloud.
+6. Una volta autenticato con il tuo account OVHcloud, potrai personalizzare le informazioni dei contatti (proprietario/titolare, amministratore, tecnico) per il tuo nome di dominio. Clicca quindi sul pulsante `Continua`{.action} per accedere al riepilogo del tuo ordine.
+7. Nella pagina `Riepilogo del tuo ordine` e se necessario, potrai modificare la configurazione DNS che verrà applicata al tuo nome di dominio cliccando sul link intitolato `Modifica la configurazione`{.action}. Una volta completate le tue modifiche, clicca sul pulsante `Paga`{.action} per accedere all'ultima fase del tuo ordine.
 
-Paga quindi il tuo ordine per iniziare la riservazione del tuo nome a dominio nonché l'installazione dei servizi e opzioni a cui hai sottoscritto in aggiunta.
+Paga quindi il tuo ordine per iniziare la riservazione del tuo nome di dominio nonché l'installazione dei servizi e opzioni a cui hai sottoscritto in aggiunta.
 
 Qualche istante più tardi riceverai un'e-mail di conferma per il tuo ordine.
-Potrai quindi amministrare il tuo nome a dominio collegandoti al tuo [Spazio Cliente OVHcloud](/links/manager).
+Potrai quindi amministrare il tuo nome di dominio collegandoti al tuo [Spazio Cliente OVHcloud](/links/manager).
 
 Non esitare a creare un ticket di assistenza dal [centro di aiuto](https://help.ovhcloud.com/csm?id=csm_get_help) se necessario.
 
 ///
 
-## Gestione di un nome a dominio
+## Gestione di un nome di dominio
 
-/// details | Come posso sapere se il mio nome a dominio è registrato su OVHcloud ?
+/// details | Come posso sapere se il mio nome di dominio è registrato su OVHcloud ?
 
-Per farlo, puoi effettuare una richiesta [WHOIS](/links/web/domains-whois) per sapere dove è registrato il tuo nome a dominio e per verificare che sei effettivamente dichiarato come titolare del nome a dominio.
+Per farlo, puoi effettuare una richiesta [WHOIS](/links/web/domains-whois) per sapere dove è registrato il tuo nome di dominio e per verificare che sei effettivamente dichiarato come titolare del nome di dominio.
 
-Ogni ufficio di registrazione (come OVHcloud) ha la possibilità di scegliere come visualizzare le informazioni relative a un nome a dominio nel WHOIS.
+Ogni ufficio di registrazione (come OVHcloud) ha la possibilità di scegliere come visualizzare le informazioni relative a un nome di dominio nel WHOIS.
 
-Una volta effettuata la richiesta WHOIS, cerca nel risultato almeno una delle seguenti righe :
+Una volta effettuata la richiesta WHOIS, cerca nel risultato almeno una delle seguenti righe:
 
 - Domain Name: ovhcloud.com
 - Registrar WHOIS Server: whois.ovh.com
 - Registrar URL: https://ovh.com
 - Registrar: OVH sas
 
-Se osservi almeno una di queste righe nel risultato, il tuo nome a dominio è effettivamente registrato su OVHcloud.
+Se osservi almeno una di queste righe nel risultato, il tuo nome di dominio è effettivamente registrato su OVHcloud.
 
-Nel caso contrario, il tuo nome a dominio è registrato presso un altro ufficio di registrazione. Cerca quindi le righe relative al `Registrar` per identificare l'ufficio di registrazione dove il tuo nome a dominio è registrato.
+Nel caso contrario, il tuo nome di dominio è registrato presso un altro ufficio di registrazione. Cerca quindi le righe relative al `Registrar` per identificare l'ufficio di registrazione dove il tuo nome di dominio è registrato.
 
 ///
 
-/// details | Come posso conoscere la data di scadenza di un nome a dominio ?
+/// details | Come posso conoscere la data di scadenza di un nome di dominio ?
 
-La soluzione più rapida è effettuare una richiesta [WHOIS](/links/web/domains-whois) sul nome a dominio. Una volta effettuata la richiesta, cerca nel risultato la riga corrispondente alla data di scadenza (ad esempio: `Expiry Date: 2025-09-22T08:00:00Z`, `Registry Expiry Date: 2025-09-22T08:00:00Z`, ecc.).
+La soluzione più rapida è effettuare una richiesta [WHOIS](/links/web/domains-whois) sul nome di dominio. Una volta effettuata la richiesta, cerca nel risultato la riga corrispondente alla data di scadenza (ad esempio: `Expiry Date: 2025-09-22T08:00:00Z`, `Registry Expiry Date: 2025-09-22T08:00:00Z`, ecc.).
 
-Se il tuo nome a dominio è registrato su OVHcloud, puoi anche seguire questi passaggi :
+Se il tuo nome di dominio è registrato su OVHcloud, puoi anche seguire questi passaggi:
 
 1. Collegati al tuo [Spazio Cliente OVHcloud](/links/manager).
 2. Clicca sul tuo nome nell'angolo in alto a destra e scegli `Le mie offerte e servizi`{.action}.
-3. Nella tabella che appare, cerca la riga corrispondente al tuo nome a dominio, quindi individua la data presente nella colonna `Data di entrata in vigore`. Questa data corrisponde alla data di scadenza del tuo nome a dominio.
+3. Nella tabella che appare, cerca la riga corrispondente al tuo nome di dominio, quindi individua la data presente nella colonna `Data di entrata in vigore`. Questa data corrisponde alla data di scadenza del tuo nome di dominio.
 
 ///
 
-/// details | Come modificare la data annuale di scadenza di un nome a dominio ?
+/// details | Come modificare la data annuale di scadenza di un nome di dominio ?
 
-La data annuale di scadenza di un nome a dominio (ad esempio: il 24 settembre) è predefinita in base alla data di registrazione (creazione) del nome a dominio.
+La data annuale di scadenza di un nome di dominio (ad esempio: il 24 settembre) è predefinita in base alla data di registrazione (creazione) del nome di dominio.
 
-In genere, la data annuale di scadenza di un nome a dominio è la stessa della data in cui lo hai registrato.
+In genere, la data annuale di scadenza di un nome di dominio è la stessa della data in cui lo hai registrato.
 
-Pertanto, non è possibile modificare la data annuale di scadenza di un nome a dominio.
+Pertanto, non è possibile modificare la data annuale di scadenza di un nome di dominio.
 
 ///
 
 <br>
 
-/// details | Come posso correggere un errore di battitura nel mio nome a dominio ?
+/// details | Come posso correggere un errore di battitura nel mio nome di dominio ?
 
-Dopo che un nome a dominio è sottoscritto, esso viene registrato in base ai caratteri che gli hai definito al momento dell'ordine. La registrazione avviene presso il registro dell'estensione del tuo nome a dominio (ad esempio: il registro dei *.com*) e vengono applicati dei costi di prenotazione dal lato dell'ufficio di registrazione (come OVHcloud).
+Dopo che un nome di dominio è sottoscritto, esso viene registrato in base ai caratteri che gli hai definito al momento dell'ordine. La registrazione avviene presso il registro dell'estensione del tuo nome di dominio (ad esempio: il registro dei *.com*) e vengono applicati dei costi di prenotazione dal lato dell'ufficio di registrazione (come OVHcloud).
 
-Un nome a dominio è un indirizzo unico su Internet, ad esempio: `ovhcloud.com`.
-Ogni modifica in questo nome, che sia un carattere o un'estensione (.com, .fr, .net, ecc.), ne fa un nome a dominio completamente diverso.
+Un nome di dominio è un indirizzo unico su Internet, ad esempio: `ovhcloud.com`.
+Ogni modifica in questo nome, che sia un carattere o un'estensione (.com, .fr, .net, ecc.), ne fa un nome di dominio completamente diverso.
 
-Pertanto, se hai commesso un errore di battitura al momento dell'ordine, non potrà essere modificato o corretto. Dovrai ordinare un nuovo nome a dominio indipendentemente da quello precedente (a condizione che la nuova ortografia desiderata non sia già riservata da qualcun altro).
+Pertanto, se hai commesso un errore di battitura al momento dell'ordine, non potrà essere modificato o corretto. Dovrai ordinare un nuovo nome di dominio indipendentemente da quello precedente (a condizione che la nuova ortografia desiderata non sia già riservata da qualcun altro).
 
-I nomi a dominio vengono considerati prodotti personalizzati, poiché vengono registrati specificamente per un titolare e bloccati per gli altri già al momento dell'ordine. Per questo motivo, una volta registrati, non possono essere rimborsati.
-
-///
-
-/// details | Come modificare un nome a dominio già sottoscritto ?
-
-Dopo che un nome a dominio è sottoscritto, esso viene registrato in base ai caratteri che gli hai definito al momento dell'ordine. La registrazione avviene presso il registro dell'estensione del tuo nome a dominio (ad esempio: il registro dei *.com*) e vengono applicati dei costi di prenotazione dal lato dell'ufficio di registrazione (come OVHcloud).
-
-Un nome a dominio è un indirizzo unico su Internet, ad esempio: `ovhcloud.com`.
-Ogni modifica in questo nome, che sia un carattere o un'estensione (.com, .fr, .net, ecc.), ne fa un nome a dominio completamente diverso.
-
-Pertanto, se hai commesso un errore di battitura al momento dell'ordine, non potrà essere modificato o corretto. Dovrai ordinare un nuovo nome a dominio indipendentemente da quello precedente (a condizione che la nuova ortografia desiderata non sia già riservata da qualcun altro).
-
-I nomi a dominio vengono considerati prodotti personalizzati, poiché vengono registrati specificamente per un titolare e bloccati per gli altri già al momento dell'ordine. Per questo motivo, una volta registrati, non possono essere rimborsati.
+I nomi di dominio vengono considerati prodotti personalizzati, poiché vengono registrati specificamente per un titolare e bloccati per gli altri già al momento dell'ordine. Per questo motivo, una volta registrati, non possono essere rimborsati.
 
 ///
 
-/// details | Come eliminare un nome a dominio ?
+/// details | Come modificare un nome di dominio già sottoscritto ?
 
-Segui questi passaggi :
+Dopo che un nome di dominio è sottoscritto, esso viene registrato in base ai caratteri che gli hai definito al momento dell'ordine. La registrazione avviene presso il registro dell'estensione del tuo nome di dominio (ad esempio: il registro dei *.com*) e vengono applicati dei costi di prenotazione dal lato dell'ufficio di registrazione (come OVHcloud).
+
+Un nome di dominio è un indirizzo unico su Internet, ad esempio: `ovhcloud.com`.
+Ogni modifica in questo nome, che sia un carattere o un'estensione (.com, .fr, .net, ecc.), ne fa un nome di dominio completamente diverso.
+
+Pertanto, se hai commesso un errore di battitura al momento dell'ordine, non potrà essere modificato o corretto. Dovrai ordinare un nuovo nome di dominio indipendentemente da quello precedente (a condizione che la nuova ortografia desiderata non sia già riservata da qualcun altro).
+
+I nomi di dominio vengono considerati prodotti personalizzati, poiché vengono registrati specificamente per un titolare e bloccati per gli altri già al momento dell'ordine. Per questo motivo, una volta registrati, non possono essere rimborsati.
+
+///
+
+/// details | Come eliminare un nome di dominio ?
+
+Segui questi passaggi:
 
 1. Collegati al tuo [Spazio Cliente OVHcloud](/links/manager).
 2. Clicca sul tuo nome nell'angolo in alto a destra e scegli `Le mie offerte e servizi`{.action}.
-3. Nella tabella che appare, cerca la riga corrispondente al tuo nome a dominio, clicca sul pulsante `...`{.action} a destra, quindi su `Disattivare il servizio`{.action}.
+3. Nella tabella che appare, cerca la riga corrispondente al tuo nome di dominio, clicca sul pulsante `...`{.action} a destra, quindi su `Disattivare il servizio`{.action}.
 4. Nella pagina che appare, compila il questionario e clicca in basso sul pulsante `Conferma`{.action}.
 
-Il tuo nome a dominio verrà sospeso alla data di scadenza, quindi, a partire da questa data, verrà eliminato **definitivamente** entro un massimo di 60 giorni. Questo periodo è definito dall'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) affinché un nome a dominio venga completamente eliminato e nuovamente disponibile per la registrazione da parte di un altro proprietario/titolare.
+Il tuo nome di dominio verrà sospeso alla data di scadenza, quindi, a partire da questa data, verrà eliminato **definitivamente** entro un massimo di 60 giorni. Questo periodo è definito dall'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) affinché un nome di dominio venga completamente eliminato e nuovamente disponibile per la registrazione da parte di un altro proprietario/titolare.
 
 > [!primary]
 >
@@ -158,53 +158,53 @@ Il tuo nome a dominio verrà sospeso alla data di scadenza, quindi, a partire da
 
 ///
 
-/// details | Ho ricevuto un'e-mail relativa alla validazione delle informazioni del titolare associate al mio nome a dominio, cosa devo fare ?
+/// details | Ho ricevuto un'e-mail relativa alla validazione delle informazioni del titolare associate al mio nome di dominio, cosa devo fare ?
 
 Innanzitutto, se hai dubbi sulla legittimità dell'e-mail ricevuta, consulta la nostra guida "[Proteggersi dalle truffe: come riconoscere email fraudolente e di phishing](/pages/account_and_service_management/account_information/phishing_care)".
 
-Conformemente a una direttiva dell'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) del 01/09/2014, gli uffici di registrazione (ad esempio: OVHcloud) sono tenuti a verificare la validità delle coordinate dei titolari/proprietari dei nomi a dominio. OVHcloud invia quindi un'e-mail ai titolari/proprietari del nome a dominio registrato all'indirizzo e-mail di contatto dichiarato presso OVHcloud.
+Conformemente a una direttiva dell'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) del 01/09/2014, gli uffici di registrazione (ad esempio: OVHcloud) sono tenuti a verificare la validità delle coordinate dei titolari/proprietari dei nomi di dominio. OVHcloud invia quindi un'e-mail ai titolari/proprietari del nome di dominio registrato all'indirizzo e-mail di contatto dichiarato presso OVHcloud.
 
-Riceverai questa e-mail quando effettuerai una delle seguenti azioni :
+Riceverai questa e-mail quando effettuerai una delle seguenti azioni:
 
-- Registrazione di un nuovo nome a dominio.
-- Trasferimento di un nome a dominio.
-- Modifica delle coordinate associate al tuo nome a dominio.
+- Registrazione di un nuovo nome di dominio.
+- Trasferimento di un nome di dominio.
+- Modifica delle coordinate associate al tuo nome di dominio.
 
-Questa e-mail contiene un link che ti permette di verificare rapidamente le tue coordinate in qualità di proprietario/titolare legale del nome a dominio.
+Questa e-mail contiene un link che ti permette di verificare rapidamente le tue coordinate in qualità di proprietario/titolare legale del nome di dominio.
 
-Attenzione: Questa verifica deve essere effettuata entro 15 giorni. Al di là di questo periodo, il nome a dominio verrà sospeso tecnicamente. Rimarrà contrattualmente a tuo nome ma non sarà più accessibile su Internet. Un messaggio d'errore apparirà per i visitatori del tuo sito web.
+Attenzione: Questa verifica deve essere effettuata entro 15 giorni. Al di là di questo periodo, il nome di dominio verrà sospeso tecnicamente. Rimarrà contrattualmente a tuo nome ma non sarà più accessibile su Internet. Un messaggio d'errore apparirà per i visitatori del tuo sito web.
 
-Puoi ricevere le seguenti e-mail nei primi 15 giorni :
+Puoi ricevere le seguenti e-mail nei primi 15 giorni:
 
-- **Giorno 0** : Immediatamente dopo aver ordinato il nome a dominio o aver modificato le sue coordinate, tu (o la persona registrata come proprietario/titolare del nome a dominio) riceverai la prima e-mail con un link di verifica.
-- **Giorni 4, 9 e 13 (e-mail di richiamo)** : Se non hai ancora verificato il nome a dominio, riceverai nuovamente l'e-mail.
-- **Giorno 14** : Se non hai ancora verificato il nome a dominio, l'e-mail viene inviata nuovamente. Inoltre, un'e-mail viene anche inviata all'indirizzo e-mail dell'amministratore/titolare del nome a dominio per informarlo che le coordinate di quest'ultimo non sono state confermate.
-- **Giorno 15** : Se il proprietario/titolare del nome a dominio non ha ancora risposto, inviamo un'e-mail all'amministratore del nome a dominio per informarlo della situazione e della disattivazione del nome a dominio.
+- **Giorno 0**: Immediatamente dopo aver ordinato il nome di dominio o aver modificato le sue coordinate, tu (o la persona registrata come proprietario/titolare del nome di dominio) riceverai la prima e-mail con un link di verifica.
+- **Giorni 4, 9 e 13 (e-mail di richiamo)**: Se non hai ancora verificato il nome di dominio, riceverai nuovamente l'e-mail.
+- **Giorno 14**: Se non hai ancora verificato il nome di dominio, l'e-mail viene inviata nuovamente. Inoltre, un'e-mail viene anche inviata all'indirizzo e-mail dell'amministratore/titolare del nome di dominio per informarlo che le coordinate di quest'ultimo non sono state confermate.
+- **Giorno 15**: Se il proprietario/titolare del nome di dominio non ha ancora risposto, inviamo un'e-mail all'amministratore del nome di dominio per informarlo della situazione e della disattivazione del nome di dominio.
 
-Oltre questi 15 giorni, il sistema invia e-mail supplementari (fino a 9 e-mail) prima di eliminare il tuo nome a dominio. Questa eliminazione verrà effettuata dopo 60 giorni a partire dal giorno 0.
+Oltre questi 15 giorni, il sistema invia e-mail supplementari (fino a 9 e-mail) prima di eliminare il tuo nome di dominio. Questa eliminazione verrà effettuata dopo 60 giorni a partire dal giorno 0.
 
 > [!warning]
 >
-> A seconda dell'estensione del nome a dominio (ad esempio: *.com*, *.net*, ecc.) alcuni dei periodi menzionati sopra possono variare. Ti consigliamo vivamente di verificare, presso il registro dell'estensione del tuo nome a dominio, il processo di verifica del controllo dei contatti.
+> A seconda dell'estensione del nome di dominio (ad esempio: *.com*, *.net*, ecc.) alcuni dei periodi menzionati sopra possono variare. Ti consigliamo vivamente di verificare, presso il registro dell'estensione del tuo nome di dominio, il processo di verifica del controllo dei contatti.
 
 ///
 
-/// details | Non ho ricevuto l'e-mail di validazione delle informazioni del titolare associato al mio nome a dominio e questo è sospeso, cosa devo fare ?
+/// details | Non ho ricevuto l'e-mail di validazione delle informazioni del titolare associato al mio nome di dominio e questo è sospeso, cosa devo fare ?
 
-Se non hai ricevuto l'e-mail di validazione del proprietario del tuo nome a dominio, verifica i punti seguenti :
+Se non hai ricevuto l'e-mail di validazione del proprietario del tuo nome di dominio, verifica i punti seguenti:
 
-1. L'indirizzo e-mail dichiarato per il titolare del nome a dominio è valido e operativo.
+1. L'indirizzo e-mail dichiarato per il titolare del nome di dominio è valido e operativo.
 2. L'e-mail di validazione non si trova nella cartella di posta indesiderata.
 
 Dopo aver verificato e confermato i due punti sopra, se non riesci comunque a recuperare l'e-mail di validazione del titolare, ti invitiamo a creare un ticket di assistenza dal [centro di aiuto](https://help.ovhcloud.com/csm?id=csm_get_help) per richiedere il reinvio di questa e-mail.
 
 ///
 
-/// details | Cos'è un nome a dominio nel formato IDN ?
+/// details | Cos'è un nome di dominio nel formato IDN ?
 
-Inizialmente, i nomi a dominio potevano contenere solo caratteri **ASCII** specifici (tra cui le 26 lettere dell'alfabeto latino). Un **I**nternationalized **D**omain **N**ame (**IDN**) permette, tra l'altro, di utilizzare caratteri speciali o accentati, o addirittura altri alfabeti (come il *cyrillico*).
+Inizialmente, i nomi di dominio potevano contenere solo caratteri **ASCII** specifici (tra cui le 26 lettere dell'alfabeto latino). Un **I**nternationalized **D**omain **N**ame (**IDN**) permette, tra l'altro, di utilizzare caratteri speciali o accentati, o addirittura altri alfabeti (come il *cyrillico*).
 
-Presso OVHcloud, è perfettamente possibile ordinare degli IDN e utilizzarli come un nome a dominio autonomo con i nostri altri servizi offerti (ospedalità web, zona DNS, ecc.<sup>1</sup>).
+Presso OVHcloud, è perfettamente possibile ordinare degli IDN e utilizzarli come un nome di dominio autonomo con i nostri altri servizi offerti (ospedalità web, zona DNS, ecc.<sup>1</sup>).
 
 Una volta sottoscritti, gli IDN appaiono nel tuo [Spazio Cliente OVHcloud](/links/manager) nel formato **xn--**.
 
@@ -212,35 +212,35 @@ Anche se il tuo dominio appare in [notazione internazionalizzata (IDN)](https://
 
 > [!alert]
 >
-> <sup>1</sup> : Non è consigliabile utilizzare un indirizzo e-mail con un nome a dominio IDN da un client di posta (Outlook, Mail di macOS, ecc.). Infatti, alcuni client di posta non interpretano ancora i nomi a dominio con caratteri accentuati, il che blocca la trasmissione delle e-mail. Quando un mittente ti invia un'e-mail, riceve quindi un messaggio automatico che indica che il tuo indirizzo e-mail non esiste.
+> <sup>1</sup>: Non è consigliabile utilizzare un indirizzo e-mail con un nome di dominio IDN da un client di posta (Outlook, Mail di macOS, ecc.). Infatti, alcuni client di posta non interpretano ancora i nomi di dominio con caratteri accentuati, il che blocca la trasmissione delle e-mail. Quando un mittente ti invia un'e-mail, riceve quindi un messaggio automatico che indica che il tuo indirizzo e-mail non esiste.
 >
-> **Si consiglia di riservare, in aggiunta al tuo nome a dominio con caratteri accentuati, lo stesso nome a dominio senza questi accenti, per evitare qualsiasi incompatibilità a livello degli scambi di e-mail.**
+> **Si consiglia di riservare, in aggiunta al tuo nome di dominio con caratteri accentuati, lo stesso nome di dominio senza questi accenti, per evitare qualsiasi incompatibilità a livello degli scambi di e-mail.**
 
 ///
 
-/// details | Come correggere un nome a dominio nel formato IDN ?
+/// details | Come correggere un nome di dominio nel formato IDN ?
 
-Come i nomi a dominio "classici", non appena un nome a dominio o un IDN è sottoscritto, esso viene registrato in base ai caratteri che gli hai definiti al momento dell'ordine.
+Come i nomi di dominio "classici", non appena un nome di dominio o un IDN è sottoscritto, esso viene registrato in base ai caratteri che gli hai definiti al momento dell'ordine.
 
-Pertanto, se hai commesso un errore di battitura al momento dell'ordine, non potrà essere corretto. Dovrai ordinare un nuovo nome a dominio indipendentemente da quello precedente (a condizione che la nuova ortografia desiderata non sia già riservata da qualcun altro).
+Pertanto, se hai commesso un errore di battitura al momento dell'ordine, non potrà essere corretto. Dovrai ordinare un nuovo nome di dominio indipendentemente da quello precedente (a condizione che la nuova ortografia desiderata non sia già riservata da qualcun altro).
 
 ///
 
-/// details | Come rinnovare un solo nome a dominio presente in un pacchetto Alldom ?
+/// details | Come rinnovare un solo nome di dominio presente in un pacchetto Alldom ?
 
-Per farlo, devi essere almeno dichiarato come [contatto "Fatturazione"](/pages/account_and_service_management/account_information/managing_contacts) del nome a dominio interessato. Dovrai quindi modificare la modalità di rinnovo del nome a dominio per passarlo in **rinnovo automatico**.
+Per farlo, devi essere almeno dichiarato come [contatto "Fatturazione"](/pages/account_and_service_management/account_information/managing_contacts) del nome di dominio interessato. Dovrai quindi modificare la modalità di rinnovo del nome di dominio per passarlo in **rinnovo automatico**.
 
-Per farlo, segui questi passaggi :
+Per farlo, segui questi passaggi:
 
 1. Collegati al tuo [Spazio Cliente OVHcloud](/links/manager).
 2. Clicca sul tuo nome nell'angolo in alto a destra e scegli `Le mie offerte e servizi`{.action}.
-3. Nella tabella che appare e a destra del nome a dominio interessato, clicca sul pulsante `...`{.action} nella colonna `Azioni`, quindi su `Configura il rinnovo`{.action}. Potrai quindi configurare il rinnovo di questo nome a dominio in **rinnovo automatico**.
+3. Nella tabella che appare e a destra del nome di dominio interessato, clicca sul pulsante `...`{.action} nella colonna `Azioni`, quindi su `Configura il rinnovo`{.action}. Potrai quindi configurare il rinnovo di questo nome di dominio in **rinnovo automatico**.
 
 > [!primary]
 >
-> Se disponi di un'offerta di ospedalità web vecchia che include un nome a dominio gratuito e se modifichi questa offerta di ospedalità, in alcuni casi ciò può annullare la gratuità del nome a dominio.
+> Se disponi di un'offerta di ospedalità web vecchia che include un nome di dominio gratuito e se modifichi questa offerta di ospedalità, in alcuni casi ciò può annullare la gratuità del nome di dominio.
 >
-> In caso di dubbio, ti invitiamo a creare un ticket di assistenza dal [centro di aiuto](https://help.ovhcloud.com/csm?id=csm_get_help) specificando il nome a dominio e l'ospedalità web interessati.
+> In caso di dubbio, ti invitiamo a creare un ticket di assistenza dal [centro di aiuto](https://help.ovhcloud.com/csm?id=csm_get_help) specificando il nome di dominio e l'ospedalità web interessati.
 
 > [!success]
 >
@@ -248,63 +248,63 @@ Per farlo, segui questi passaggi :
 
 ///
 
-## Trasferimento di un nome a dominio
+## Trasferimento di un nome di dominio
 
-/// details | Il mio nome a dominio è trasferibile dopo un cambio di proprietario ?
+/// details | Il mio nome di dominio è trasferibile dopo un cambio di proprietario ?
 
-L'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) ha stabilito misure di sicurezza per prevenire trasferimenti o cambi di proprietari non autorizzati o abusivi dei nomi a dominio.
+L'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) ha stabilito misure di sicurezza per prevenire trasferimenti o cambi di proprietari non autorizzati o abusivi dei nomi di dominio.
 
-L'ICANN ha definito in particolare un periodo incompressibile di **60** giorni tra ogni operazione che può verificarsi su un nome a dominio (creazione, cambio di proprietario, trasferimento).
-
-Le regole definite dall'ICANN devono essere rispettate obbligatoriamente dagli uffici di registrazione (come OVHcloud).
-
-Non avrai quindi altra scelta che attendere fino alla fine del periodo di 60 giorni per poter trasferire il tuo nome a dominio dopo averne cambiato il proprietario.
-
-///
-
-/// details | Il mio nome a dominio è bloccato per il trasferimento per 60 giorni, cosa devo fare ?
-
-L'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) ha stabilito misure di sicurezza per prevenire trasferimenti o cambi di proprietari non autorizzati o abusivi dei nomi a dominio.
-
-L'ICANN ha definito in particolare un periodo incompressibile di **60** giorni tra ogni operazione che può verificarsi su un nome a dominio (creazione, cambio di proprietario, trasferimento).
+L'ICANN ha definito in particolare un periodo incompressibile di **60** giorni tra ogni operazione che può verificarsi su un nome di dominio (creazione, cambio di proprietario, trasferimento).
 
 Le regole definite dall'ICANN devono essere rispettate obbligatoriamente dagli uffici di registrazione (come OVHcloud).
 
-Non avrai quindi altra scelta che attendere fino alla fine del periodo di 60 giorni per effettuare una nuova operazione (cambio di proprietario o trasferimento) sul tuo nome a dominio.
+Non avrai quindi altra scelta che attendere fino alla fine del periodo di 60 giorni per poter trasferire il tuo nome di dominio dopo averne cambiato il proprietario.
 
 ///
 
-/// details | Non trovo il mio nome a dominio nel mio spazio client, cosa devo fare ?
+/// details | Il mio nome di dominio è bloccato per il trasferimento per 60 giorni, cosa devo fare ?
 
-Innanzitutto, effettua una richiesta [WHOIS](/links/web/domains-whois) per sapere dove è registrato il tuo nome a dominio e per verificare che sei effettivamente dichiarato come titolare del nome a dominio.
+L'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) ha stabilito misure di sicurezza per prevenire trasferimenti o cambi di proprietari non autorizzati o abusivi dei nomi di dominio.
 
-Caso n. 1.A - Il tuo nome a dominio è registrato presso OVHcloud e sei effettivamente dichiarato come titolare del nome a dominio :
+L'ICANN ha definito in particolare un periodo incompressibile di **60** giorni tra ogni operazione che può verificarsi su un nome di dominio (creazione, cambio di proprietario, trasferimento).
 
-Effettua una [procedura di recupero dei contatti](/links/transversal/procedure-contact-change) per far sì che il tuo nome a dominio venga completamente gestito nel tuo [Spazio Cliente OVHcloud](/links/manager). In questo modo, non avrai più bisogno di contattare la persona che gestiva in precedenza il tuo nome a dominio.
+Le regole definite dall'ICANN devono essere rispettate obbligatoriamente dagli uffici di registrazione (come OVHcloud).
 
-Caso n. 1.B - Il tuo nome a dominio è registrato presso OVHcloud e non sei dichiarato come titolare del nome a dominio :
+Non avrai quindi altra scelta che attendere fino alla fine del periodo di 60 giorni per effettuare una nuova operazione (cambio di proprietario o trasferimento) sul tuo nome di dominio.
 
-Conformemente alla **R**è**G**lementation sur la **P**rotection des **D**onnées (**RGPD**), OVHcloud non potrà fornire informazioni relative alla persona o all'organizzazione che gestisce il nome a dominio presso OVHcloud.
+///
+
+/// details | Non trovo il mio nome di dominio nel mio spazio client, cosa devo fare ?
+
+Innanzitutto, effettua una richiesta [WHOIS](/links/web/domains-whois) per sapere dove è registrato il tuo nome di dominio e per verificare che sei effettivamente dichiarato come titolare del nome di dominio.
+
+Caso n. 1.A - Il tuo nome di dominio è registrato presso OVHcloud e sei effettivamente dichiarato come titolare del nome di dominio:
+
+Effettua una [procedura di recupero dei contatti](/links/transversal/procedure-contact-change) per far sì che il tuo nome di dominio venga completamente gestito nel tuo [Spazio Cliente OVHcloud](/links/manager). In questo modo, non avrai più bisogno di contattare la persona che gestiva in precedenza il tuo nome di dominio.
+
+Caso n. 1.B - Il tuo nome di dominio è registrato presso OVHcloud e non sei dichiarato come titolare del nome di dominio:
+
+Conformemente al **R**egolamento **G**enerale sulla **P**rotezione dei **D**ati (**RGPD**), OVHcloud non potrà fornire informazioni relative alla persona o all'organizzazione che gestisce il nome di dominio presso OVHcloud.
 
 Tuttavia, puoi provare a contattare la persona o l'organizzazione che lo gestisce seguendo le istruzioni di [questo modulo](/links/web/contact-domain-owner).
 
-Caso n. 2 - Il tuo nome a dominio non è registrato presso OVHcloud :
+Caso n. 2 - Il tuo nome di dominio non è registrato presso OVHcloud:
 
-Contatta direttamente l'ufficio di registrazione (indicato nelle righe che iniziano con il termine `Registrar`) del tuo nome a dominio per proseguire le tue ricerche. Infatti, se il nome a dominio non è registrato presso OVHcloud, non saremo in grado di aiutarti su questo argomento.
+Contatta direttamente l'ufficio di registrazione (indicato nelle righe che iniziano con il termine `Registrar`) del tuo nome di dominio per proseguire le tue ricerche. Infatti, se il nome di dominio non è registrato presso OVHcloud, non saremo in grado di aiutarti su questo argomento.
 
 ///
 
-/// details | Non riesco a contattare la persona che gestisce il mio nome a dominio, cosa devo fare ?
+/// details | Non riesco a contattare la persona che gestisce il mio nome di dominio, cosa devo fare ?
 
-Innanzitutto, effettua una richiesta [WHOIS](/links/web/domains-whois) per verificare che sei effettivamente dichiarato come titolare del nome a dominio.
+Innanzitutto, effettua una richiesta [WHOIS](/links/web/domains-whois) per verificare che sei effettivamente dichiarato come titolare del nome di dominio.
 
-Caso n. 1 - Sei effettivamente dichiarato come titolare del nome a dominio :
+Caso n. 1 - Sei effettivamente dichiarato come titolare del nome di dominio:
 
-Effettua una [procedura di recupero dei contatti](/links/transversal/procedure-contact-change) per far sì che il tuo nome a dominio venga interamente gestito nel tuo [Spazio Cliente OVHcloud](/links/manager). In questo modo, non avrai più bisogno di contattare la persona che gestiva in precedenza il tuo nome di dominio.
+Effettua una [procedura di recupero dei contatti](/links/transversal/procedure-contact-change) per far sì che il tuo nome di dominio venga interamente gestito nel tuo [Spazio Cliente OVHcloud](/links/manager). In questo modo, non avrai più bisogno di contattare la persona che gestiva in precedenza il tuo nome di dominio.
 
 Caso n. 2 - Non sei dichiarato come titolare del nome di dominio:
 
-Conformemente alla **R**e**G**olamentazione sulla **P**rotezione dei **D**ati (**RGPD**), OVHcloud non potrà fornire informazioni relative alla persona o all'organizzazione che gestisce il nome di dominio su OVHcloud.
+Conformemente al **R**egolamento **G**enerale sulla **P**rotezione dei **D**ati (**RGPD**), OVHcloud non potrà fornire informazioni relative alla persona o all'organizzazione che gestisce il nome di dominio su OVHcloud.
 
 Tuttavia, puoi provare a contattare la persona o l'organizzazione che lo gestisce seguendo le istruzioni di [questo modulo](/links/web/contact-domain-owner).
 
@@ -357,23 +357,23 @@ I record DNS vengono utilizzati, ad esempio, per:
 
 Esistono molti tipi di record DNS. Ogni tipo ha uno scopo specifico nella risoluzione DNS. Su OVHcloud, vengono distinti in tre parti:
 
-- **Campi di puntamento** : `A`, `AAAA`, `NS`, `CNAME` e `DNAME`.
-- **Campi estesi** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` e `TLSA`.
-- **Campi e-mail** : `MX`, `SPF`, `DKIM` e `DMARC`.
+- **Campi di puntamento**: `A`, `AAAA`, `NS`, `CNAME` e `DNAME`.
+- **Campi estesi**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` e `TLSA`.
+- **Campi e-mail**: `MX`, `SPF`, `DKIM` e `DMARC`.
 
 > [!success]
 >
 > Trova ulteriori dettagli nei seguenti guide:
 >
-> - Informazioni generali :
+> - Informazioni generali:
 >     - [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
-> - Record DNS di puntamento :
+> - Record DNS di puntamento:
 >     - [Aggiungere un record DNS di tipo A per un dominio](/pages/web_cloud/domains/dns_zone_a_record_creation)
 >     - [Aggiungere un record DNS di tipo AAAA per un dominio](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
 >     - [Aggiungere un record DNS di tipo CNAME per un dominio](/pages/web_cloud/domains/dns_zone_cname_record_creation)
-> - Record DNS estesi :
+> - Record DNS estesi:
 >     - [Aggiungere un record DNS di tipo TXT per un dominio](/pages/web_cloud/domains/dns_zone_txt_record_creation)
-> - Record DNS e-mail :
+> - Record DNS e-mail:
 >     - [Configurare un record MX per la gestione delle email](/pages/web_cloud/domains/dns_zone_mx)
 >     - [Migliora la sicurezza delle email con un record SPF](/pages/web_cloud/domains/dns_zone_spf)
 >     - [Migliora la sicurezza delle email con un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
@@ -393,9 +393,9 @@ A questo punto, visualizzerai l'intera lista dei record DNS che puoi aggiungere 
 
 Grazie a questo assistant di configurazione, potrai aggiungere i seguenti tipi di record DNS:
 
-- **Campi di puntamento** : `A`, `AAAA`, `NS`, `CNAME` e `DNAME`.
-- **Campi estesi** : `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` e `TLSA`.
-- **Campi e-mail** : `MX`, `SPF`, `DKIM` e `DMARC`.
+- **Campi di puntamento**: `A`, `AAAA`, `NS`, `CNAME` e `DNAME`.
+- **Campi estesi**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` e `TLSA`.
+- **Campi e-mail**: `MX`, `SPF`, `DKIM` e `DMARC`.
 
 > [!primary]
 >
@@ -407,15 +407,15 @@ Grazie a questo assistant di configurazione, potrai aggiungere i seguenti tipi d
 >
 > Trova ulteriori dettagli nei seguenti guide:
 >
-> - Informazioni generali :
+> - Informazioni generali:
 >     - [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
-> - Record DNS di puntamento :
+> - Record DNS di puntamento:
 >     - [Aggiungere un record DNS di tipo A per un dominio](/pages/web_cloud/domains/dns_zone_a_record_creation)
 >     - [Aggiungere un record DNS di tipo AAAA per un dominio](/pages/web_cloud/domains/dns_zone_aaaa_record_creation)
 >     - [Aggiungere un record DNS di tipo CNAME per un dominio](/pages/web_cloud/domains/dns_zone_cname_record_creation)
-> - Record DNS estesi :
+> - Record DNS estesi:
 >     - [Aggiungere un record DNS di tipo TXT per un dominio](/pages/web_cloud/domains/dns_zone_txt_record_creation)
-> - Record DNS e-mail :
+> - Record DNS e-mail:
 >     - [Configurare un record MX per la gestione delle email](/pages/web_cloud/domains/dns_zone_mx)
 >     - [Migliora la sicurezza delle email con un record SPF](/pages/web_cloud/domains/dns_zone_spf)
 >     - [Migliora la sicurezza delle email con un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
@@ -460,7 +460,7 @@ In caso di errore, ti invitiamo a aprire un ticket di assistenza dal [centro di 
 
 /// details | Qual è la differenza tra un record DNS di tipo A (IPv4) e AAAA (IPv6)?
 
-La rete Internet ha iniziato a funzionare fin dagli anni '90 seguendo la norma IPv4. Questa norma permette di fornire un indirizzo IP X.X.X.X (dove ogni « X » è un numero compreso tra 0 e 255) a ciascuna delle macchine collegate alla rete Internet (server, computer, smartphone, tablet, ecc.). Tuttavia, questa norma limita a circa 4 miliardi il numero di dispositivi connessi alla rete Internet.
+La rete Internet ha iniziato a funzionare fin dagli anni '90 seguendo la norma IPv4. Questa norma permette di fornire un indirizzo IP X.X.X.X (dove ogni "X" è un numero compreso tra 0 e 255) a ciascuna delle macchine collegate alla rete Internet (server, computer, smartphone, tablet, ecc.). Tuttavia, questa norma limita a circa 4 miliardi il numero di dispositivi connessi alla rete Internet.
 
 A causa di ciò, il protocollo IPv6 è stato introdotto per permettere di collegare alla rete Internet fino a 340 sextillioni di dispositivi.
 
@@ -470,12 +470,12 @@ I record DNS di tipo A e AAAA sono due tipi di record di risorse utilizzati per 
 
 Le loro principali differenze risiedono nel tipo di indirizzo IP che utilizzano:
 
-- **Record A** (chiamato anche « record host ») : Associa un nome di dominio a un indirizzo IPv4 (ad esempio, 213.0.113.0). Gli indirizzi IPv4 sono indirizzi a 32 bit, generalmente scritti in notazione decimale puntata.
-- **Record AAAA** (chiamato anche « quadruplo record A ») : Associa un nome di dominio a un indirizzo IPv6 (ad esempio, 2001:db8:1:1b00:213:0:113:0). Gli indirizzi IPv6 sono indirizzi a 128 bit, generalmente scritti in notazione esadecimale.
+- **Record A** (chiamato anche "record host"): Associa un nome di dominio a un indirizzo IPv4 (ad esempio, 213.0.113.0). Gli indirizzi IPv4 sono indirizzi a 32 bit, generalmente scritti in notazione decimale puntata.
+- **Record AAAA** (chiamato anche "quadruplo record A"): Associa un nome di dominio a un indirizzo IPv6 (ad esempio, 2001:db8:1:1b00:213:0:113:0). Gli indirizzi IPv6 sono indirizzi a 128 bit, generalmente scritti in notazione esadecimale.
 
 In altre parole, i record A vengono utilizzati per gli indirizzi IPv4, mentre i record AAAA vengono utilizzati per gli indirizzi IPv6. Entrambi i tipi di record vengono utilizzati per indirizzare il traffico verso un indirizzo IP specifico, ma vengono utilizzati per diverse versioni del protocollo Internet.
 
-Da notare che un dominio può avere sia record A che AAAA, il che gli permette di essere accessibile sui reti IPv4 e IPv6. Questo è ciò che si chiama « doppio stack », una pratica comune per i siti web e i servizi che desiderano essere accessibili agli utenti su reti IPv4 e IPv6.
+Da notare che un dominio può avere sia record A che AAAA, il che gli permette di essere accessibile sui reti IPv4 e IPv6. Questo è ciò che si chiama "doppio stack", una pratica comune per i siti web e i servizi che desiderano essere accessibili agli utenti su reti IPv4 e IPv6.
 
 > [!success]
 >
@@ -528,13 +528,13 @@ domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2
 
 |Elemento nel risultato|Descrizione|Corrispondenza nell'esempio sopra|
 |---|---|---|
-|**NS (Name Server)**|Server DNS principale dichiarato per il nome di dominio `domain.tld`.|`dns200.anycast.me.`|
-|**Email address**|Indirizzo e-mail del responsabile della zona DNS.|`tech.ovh.net.` (il punto tra i termini `tech` e `ovh` deve essere sostituito da un `@`)|
-|**Serial number**|Numero di serie unico che incrementa ad ogni modifica della zona DNS.<br>È generalmente composto dalla data di aggiornamento nel formato `YYYYMMDD` seguito dal numero di aggiornamenti effettuati nella giornata.|`2025091801` : Qui 2 aggiornamenti (`00` per 1, `01` per 2, ecc.) sono stati fatti il 18/09/2025.|
-|**Refresh time**|Intervallo (in secondi) tra ogni aggiornamento dei server DNS secondari (componenti della rete DNS) con il server DNS principale.|`86400` (24 ore)|
-|**Retry time**|Intervallo (in secondi) tra ogni tentativo di aggiornamento dei parametri dei server DNS secondari (componenti della rete DNS) con il server DNS principale se quest'ultimo non risponde o è non disponibile.|`3600` (1 ora)|
-|**Expire time**|Intervallo (in secondi) dopo il quale i server DNS secondari (componenti della rete DNS) smettono di rispondere alle richieste DNS se il server DNS principale non si aggiorna con loro.|`3600000` (1000 ore, 41,67 giorni)|
-|**Minimum TTL**|Durata di vita minima (in secondi) durante la quale gli record DNS della zona DNS vengono memorizzati in cache sui server DNS secondari (componenti della rete DNS).|`300` (5 minuti)|
+|**NS (Name Server)**|Server DNS principale dichiarato per il nome di dominio `domain.tld`.|`dns200.anycast.me`.|
+|**Email address**|Indirizzo e-mail del responsabile della zona DNS.|`tech.ovh.net` (il punto tra i termini `tech` e `ovh` deve essere sostituito da un `@`.)|
+|**Serial number**|Numero di serie unico che incrementa ad ogni modifica della zona DNS.<br>È generalmente composto dalla data di aggiornamento nel formato `YYYYMMDD` seguito dal numero di aggiornamenti effettuati nella giornata.|`2025091801`: Qui 2 aggiornamenti (`00` per 1, `01` per 2, ecc.) sono stati fatti il 18/09/2025.|
+|**Refresh time**|Intervallo (in secondi) tra ogni aggiornamento dei server DNS secondari (componenti della rete DNS) con il server DNS principale.|`86400` (24 ore).|
+|**Retry time**|Intervallo (in secondi) tra ogni tentativo di aggiornamento dei parametri dei server DNS secondari (componenti della rete DNS) con il server DNS principale se quest'ultimo non risponde o è non disponibile.|`3600` (1 ora).|
+|**Expire time**|Intervallo (in secondi) dopo il quale i server DNS secondari (componenti della rete DNS) smettono di rispondere alle richieste DNS se il server DNS principale non si aggiorna con loro.|`3600000` (1000 ore, 41,67 giorni).|
+|**Minimum TTL**|Durata di vita minima (in secondi) durante la quale gli record DNS della zona DNS vengono memorizzati in cache sui server DNS secondari (componenti della rete DNS).|`300` (5 minuti).|
 
 ///
 
@@ -544,13 +544,13 @@ domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2
 
 Ecco diverse soluzioni per verificare la configurazione di una zona DNS:
 
-- **Uno strumento di verifica online** : Molti strumenti online permettono di verificare la configurazione della tua zona DNS. Trovali direttamente utilizzando un browser Internet (Chrome, Edge, Firefox, Safari, ecc.) digitando le parole chiave appropriate (ad esempio: « verificare la propagazione DNS ») in un motore di ricerca.
+- **Uno strumento di verifica online**: Molti strumenti online permettono di verificare la configurazione della tua zona DNS. Trovali direttamente utilizzando un browser Internet (Chrome, Edge, Firefox, Safari, ecc.) digitando le parole chiave appropriate (ad esempio: "verificare la propagazione DNS") in un motore di ricerca.
 
-- **Il comando "dig"** : Se hai accesso a un *terminale* da un sistema operativo Linux o macOS, puoi utilizzare il comando `dig` per verificare la configurazione della tua zona DNS sulla rete DNS.
+- **Il comando "dig"**: Se hai accesso a un *terminale* da un sistema operativo Linux o macOS, puoi utilizzare il comando `dig` per verificare la configurazione della tua zona DNS sulla rete DNS.
 
-- **Il comando "nslookup"** : Il comando `nslookup` è disponibile su quasi tutti i sistemi operativi e permette anch'esso di verificare la configurazione della tua zona DNS.
+- **Il comando "nslookup"**: Il comando `nslookup` è disponibile su quasi tutti i sistemi operativi e permette anch'esso di verificare la configurazione della tua zona DNS.
 
-- **Dallo spazio client OVHcloud** : Per farlo, segui questi passaggi (se la zona DNS attiva del tuo nome di dominio è gestita da OVHcloud) :
+- **Dallo spazio client OVHcloud**: Per farlo, segui questi passaggi (se la zona DNS attiva del tuo nome di dominio è gestita da OVHcloud):
     1. Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
     2. Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
     3. Nella tabella della pagina che appare, visualizzerai l'intera lista degli record DNS dichiarati per il tuo nome di dominio.
@@ -565,7 +565,7 @@ Ecco diverse soluzioni per verificare la configurazione di una zona DNS:
 
 > [!primary]
 >
-> Prima di procedere, sappi che :
+> Prima di procedere, sappi che:
 >
 > - La propagazione di una modifica effettuata in una zona DNS può richiedere fino a **24** ore.
 > - La propagazione di una modifica dei server DNS per un nome di dominio può richiedere fino a **48** ore.
@@ -594,17 +594,17 @@ domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2
 
 In questo risultato, recupera il **numero di serie** (nella nostra esempio: `2025091801`).
 
-Ha la forma seguente `YYYYMMDDRR` dove :
+Ha la forma seguente `YYYYMMDDRR` dove:
 
-- `YYYYMMDD` : Rappresenta la data (l'anno, il mese e il giorno) dell'ultima modifica DNS propagata per il nome di dominio.
-- `RR` : Rappresenta il numero di modifiche effettuate nella data indicata. Ad esempio, se una sola modifica è stata effettuata in un giorno, avrà il valore `00`. Se 2 modifiche sono state effettuate nello stesso giorno, avrà il valore `01` e così via.
+- `YYYYMMDD`: Rappresenta la data (l'anno, il mese e il giorno) dell'ultima modifica DNS propagata per il nome di dominio.
+- `RR`: Rappresenta il numero di modifiche effettuate nella data indicata. Ad esempio, se una sola modifica è stata effettuata in un giorno, avrà il valore `00`. Se 2 modifiche sono state effettuate nello stesso giorno, avrà il valore `01` e così via.
 
 Una volta recuperato il numero di serie, segui questi passaggi:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 2. Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
 3. A destra o sotto la tabella, clicca su `Utilizza l'editor di testo`{.action}.
-4. Nella finestra che si apre, individua la seconda riga, che, per riprendere il nostro esempio, sarebbe equivalente a questa: `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
+4. Nella finestra che si apre, individua la seconda riga, che, per riprendere il nostro esempio, sarebbe equivalente a questa: `@ IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
 5. Confronta il numero di serie recuperato tramite il terminale con quello che appare nel tuo spazio client OVHcloud.
 
 Caso n. 1 - I due numeri di serie corrispondono:
@@ -613,7 +613,7 @@ Questo significa che la propagazione DNS si svolge correttamente. Non hai nient'
 
 Caso n. 2 - I due numeri di serie sono diversi:
 
-Questo significa che :
+Questo significa che:
 
 - La propagazione DNS delle tue modifiche non è ancora completamente terminata (sei ancora nei tempi standard di propagazione DNS). In questo caso, attendi che la propagazione DNS sia completamente terminata (**24** ore per una modifica della zona DNS e **48** ore per una modifica dei server DNS), quindi ripeti l'operazione.
 - La propagazione DNS non si svolge correttamente. In questo caso, dalla finestra `Utilizza l'editor di testo`{.action} che si è aperta al passo **4**, clicca direttamente **senza effettuare modifiche** sul pulsante `Continua`{.action}, quindi su `Conferma`{.action}. Una nuova propagazione DNS verrà quindi avviata.
@@ -805,7 +805,7 @@ Questa situazione si verifica quando esiste già una zona DNS per il tuo nome di
 Segui questi passaggi:
 
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
-2. Clicca sul menu `Zones DNS`{.action}, quindi verifica se il nome di dominio desiderato appare.
+2. Clicca sul menu `Zone DNS`{.action}, quindi verifica se il nome di dominio desiderato appare.
 
 Cas n. 1 - Il nome di dominio desiderato appare nell'elenco:
 
@@ -815,16 +815,16 @@ Cas n. 2 - Il nome di dominio desiderato non appare nell'elenco:
 
 Questo significa che la zona DNS del nome di dominio è gestita da un altro identificativo client OVHcloud.
 
-Conformemente alla **R**egolamentazione sulla **P**rotezione dei **D**ati (**RGPD**), l'identificativo client su cui si trova la zona DNS rimarrà riservato.
+Conformemente al **R**egolamento **G**enerale sulla **P**rotezione dei **D**ati (**RGPD**), l'identificativo client su cui si trova la zona DNS rimarrà riservato.
 
 In questa situazione e se non conosci questo altro identificativo client, ti invitiamo a aprire un ticket di assistenza dal [centro di aiuto](https://help.ovhcloud.com/csm?id=csm_get_help) per recuperare la gestione della zona DNS.
 
 ///
 
-/// details | Perché non trovo l'etichetta « GLUE » nel mio spazio client OVHcloud?
+/// details | Perché non trovo l'etichetta "GLUE" nel mio spazio client OVHcloud?
 
 La funzionalità non è disponibile con tutte le estensioni dei nomi di dominio.
-Se l'etichetta non appare nel tuo [Spazio Cliente OVHcloud](/links/manager), significa che l'opzione « GLUE » non è disponibile per il tuo nome di dominio.
+Se l'etichetta non appare nel tuo [Spazio Cliente OVHcloud](/links/manager), significa che l'opzione "GLUE" non è disponibile per il tuo nome di dominio.
 
 > [!success]
 >
@@ -951,9 +951,9 @@ Potrai quindi effettuare una [procedura di recupero dei contatti](/links/transve
 [FAQ email OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 [FAQ Hosting web](/pages/web_cloud/web_hosting/faq-web_hosting)
- 
+
 Per prestazioni specializzate (referenziamento, sviluppo, ecc.), contatta i [partner OVHcloud](/links/partner).
- 
+
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
- 
+
 Contatta la nostra [Community di utenti](/links/community).

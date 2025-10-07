@@ -284,7 +284,7 @@ Wykonaj [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-
 
 Przypadek n°1.B - Twoja nazwa domeny jest zarejestrowana w OVHcloud, ale nie jesteś zadeklarowany jako jej właściciel :
 
-Zgodnie z **R**e**G**ulaminem o **P**rotekcji **D**anych (**RGPD**), OVHcloud nie będzie mógł dostarczyć informacji dotyczących osoby lub organizacji zarządzającej nazwą domeny w OVHcloud.
+Zgodnie z **R**ozporządzeniem **O**gólnym o Ochronie **D**anych **O**sobowych (**RODO**), OVHcloud nie będzie mógł dostarczyć informacji dotyczących osoby lub organizacji zarządzającej nazwą domeny w OVHcloud.
 
 Możesz jednak spróbować skontaktować się z osobą lub organizacją zarządzającą, postępując zgodnie z instrukcjami [tego formularza](/links/web/contact-domain-owner).
 
@@ -304,7 +304,7 @@ Wykonaj [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-
 
 Przypadek n°2 - Nie jesteś zadeklarowany jako właściciel nazwy domeny :
 
-Zgodnie z **R**e**G**ulaminem o **P**rotekcji **D**anych (**RGPD**), OVHcloud nie będzie mógł dostarczyć informacji dotyczących osoby lub organizacji zarządzającej nazwą domeny w OVHcloud.
+Zgodnie z **R**ozporządzeniem **O**gólnym o Ochronie **D**anych **O**sobowych (**RODO**), OVHcloud nie będzie mógł dostarczyć informacji dotyczących osoby lub organizacji zarządzającej nazwą domeny w OVHcloud.
 
 Możesz jednak spróbować skontaktować się z osobą lub organizacją zarządzającą, postępując zgodnie z instrukcjami [tego formularza](/links/web/contact-domain-owner).
 
@@ -815,7 +815,7 @@ Przypadek n°2 - Nazwa domeny, która Cię interesuje, nie się pojawia w liści
 
 Oznacza to, że strefa DNS dla nazwy domeny jest zarządzana przez inny identyfikator klienta OVHcloud niż Twój.
 
-Zgodnie z **R**e**G**ulaminem o **P**rotekcji **D**anych (**RGPD**), identyfikator klienta, na którym znajduje się strefa DNS, pozostanie poufny.
+Zgodnie z **R**ozporządzeniem **O**gólnym o Ochronie **D**anych **O**sobowych (**RODO**), identyfikator klienta, na którym znajduje się strefa DNS, pozostanie poufny.
 
 W tej sytuacji i jeśli nie znasz tego innego identyfikatora klienta, prosimy, abyś otworzył zgłoszenie wsparcia z [centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help), aby odzyskać zarządzanie strefą DNS.
 

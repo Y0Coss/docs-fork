@@ -284,7 +284,7 @@ Realice una [procedimiento de recuperación de contactos](/links/transversal/pro
 
 **Caso n°1.B** - Su nombre de dominio está registrado en OVHcloud pero no está declarado como titular:
 
-Conforme a la **R**eglamento **G**eneral de **P**rotección de **D**atos (**RGPD**), OVHcloud no podrá proporcionar información sobre la persona o organización que gestiona el nombre de dominio en OVHcloud.
+Conforme al **R**eglamento **G**eneral de **P**rotección de **D**atos (**RGPD**), OVHcloud no podrá proporcionar información sobre la persona o organización que gestiona el nombre de dominio en OVHcloud.
 
 Sin embargo, puede intentar contactar a la persona o organización que lo gestiona siguiendo las instrucciones de [este formulario](/links/web/contact-domain-owner).
 
@@ -304,7 +304,7 @@ Realice una [procedimiento de recuperación de contactos](/links/transversal/pro
 
 **Caso n°2** - No está declarado como titular del nombre de dominio:
 
-Conforme a la **R**eglamento **G**eneral de **P**rotección de **D**atos (**RGPD**), OVHcloud no podrá proporcionar información sobre la persona o organización que gestiona el nombre de dominio en OVHcloud.
+Conforme al **R**eglamento **G**eneral de **P**rotección de **D**atos (**RGPD**), OVHcloud no podrá proporcionar información sobre la persona o organización que gestiona el nombre de dominio en OVHcloud.
 
 Sin embargo, puede intentar contactar a la persona o organización que lo gestiona siguiendo las instrucciones de [este formulario](/links/web/contact-domain-owner).
 
@@ -529,7 +529,7 @@ domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2
 |Elemento en el resultado|Descripción|Correspondencia en el ejemplo anterior|
 |---|---|---|
 |**NS (Name Server)**|Servidor DNS principal declarado para el nombre de dominio `domain.tld`.|`dns200.anycast.me`.|
-|**Email address**|Dirección de correo electrónico del responsable de la zona DNS.|`tech.ovh.net.` (el punto entre los términos `tech` y `ovh` debe reemplazarse por un `@`).|
+|**Email address**|Dirección de correo electrónico del responsable de la zona DNS.|`tech.ovh.net` (el punto entre los términos `tech` y `ovh` debe reemplazarse por un `@`).|
 |**Serial number**|Número de serie único que se incrementa cada vez que se modifica la zona DNS.<br>Generalmente está compuesto por la fecha de actualización en formato `YYYYMMDD` seguido del número de actualizaciones realizadas ese día.|`2025091801`: Aquí se realizaron 2 actualizaciones (`00` para 1, `01` para 2, etc.) el 18/09/2025.|
 |**Refresh time**|Intervalo (en segundos) entre cada actualización de los servidores DNS secundarios (componentes de la red DNS) con el servidor DNS principal.|`86400` (24 horas).|
 |**Retry time**|Intervalo (en segundos) entre cada intento de actualización de los parámetros de los servidores DNS secundarios (componentes de la red DNS) con el servidor DNS principal si este no responde o está fuera de servicio.|`3600` (1 hora).|
@@ -815,7 +815,7 @@ Esto significa que la zona DNS del nombre de dominio ya existe en su [área de c
 
 Esto significa que la zona DNS del nombre de dominio está gestionada por otro identificador de cliente de OVHcloud que no es el suyo.
 
-Conforme a la **R**eglamento **G**eneral de **P**rotección de **D**atos (**RGPD**), el identificador de cliente en el que se encuentra la zona DNS permanecerá confidencial. 
+Conforme al **R**eglamento **G**eneral de **P**rotección de **D**atos (**RGPD**), el identificador de cliente en el que se encuentra la zona DNS permanecerá confidencial. 
 
 En esta situación y si no conoce este otro identificador de cliente, le invitamos a abrir una solicitud de asistencia desde el [centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) para recuperar la gestión de la zona DNS.
 

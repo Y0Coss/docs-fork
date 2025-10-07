@@ -284,7 +284,7 @@ Realize uma [procedimento de recuperação de contatos](/links/transversal/proce
 
 Caso n°1.B - Seu nome de domínio está registrado na OVHcloud e você não está declarado como titular do nome de domínio :
 
-Conforme a **G**eneral **D**ata **P**rotection **R**egulation (**GDPR**), a OVHcloud não poderá fornecer informações relativas à pessoa ou à organização que gerencia o nome de domínio na OVHcloud.
+De acordo com o **R**egulamento **G**eral sobre a **P**roteção de **D**ados (**RGPD**), a OVHcloud não poderá fornecer informações relativas à pessoa ou à organização que gerencia o nome de domínio na OVHcloud.
 
 No entanto, você pode tentar contatar a pessoa ou organização que o gerencia seguindo as instruções de [este formulário](/links/web/contact-domain-owner).
 
@@ -304,7 +304,7 @@ Realize uma [procedimento de recuperação de contatos](/links/transversal/proce
 
 Caso n°2 - Você não está declarado como titular do nome de domínio :
 
-Conforme a **G**eneral **D**ata **P**rotection **R**egulation (**GDPR**), a OVHcloud não poderá fornecer informações relativas à pessoa ou à organização que gerencia o nome de domínio na OVHcloud.
+De acordo com o **R**egulamento **G**eral sobre a **P**roteção de **D**ados (**RGPD**), a OVHcloud não poderá fornecer informações relativas à pessoa ou à organização que gerencia o nome de domínio na OVHcloud.
 
 No entanto, você pode tentar contatar a pessoa ou organização que o gerencia seguindo as instruções de [este formulário](/links/web/contact-domain-owner).
 
@@ -815,7 +815,7 @@ Caso n°2 - O nome de domínio em causa não aparece na lista :
 
 Isto significa que a zona DNS do nome de domínio é gerida por outro identificador de cliente OVHcloud.
 
-Conforme a **G**eneral **D**ata **P**rotection **R**egulation (**GDPR**), o identificador de cliente onde se encontra a zona DNS permanecerá confidencial.
+De acordo com o **R**egulamento **G**eral sobre a **P**roteção de **D**ados (**RGPD**), o identificador de cliente onde se encontra a zona DNS permanecerá confidencial.
 
 Nesta situação e se não conhecer este outro identificador de cliente, convidamo-lo a abrir um ticket de assistência a partir do [centro de ajuda](https://help.ovhcloud.com/csm?id=csm_get_help) para recuperar a gestão da zona DNS.
 
