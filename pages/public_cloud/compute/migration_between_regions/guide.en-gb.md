@@ -42,11 +42,14 @@ OVHcloud offers two types of backup, with different behaviors depending on the t
 > Via the OVHcloud Control Panel
 >> To create an instance backup from the OVHcloud client space, follow [this section](/pages/public_cloud/compute/save_an_instance#createinstanceviamanager) of our guide to creating an instance backup.
 >>
+> Via the OVHcloud API
+>> To create an instance backup from the OVHcloud API, follow [this section](/pages/public_cloud/compute/save_an_instance#createinstanceviaapi) of our guide to creating an instance backup.
+>>
 > Via the Openstack CLI
->> Pour créer une sauvegarde d’une instance depuis la CLI OpenStack, suivez [cette section](/pages/public_cloud/compute/save_an_instance#createinstanceviaopenstack) de notre guide sur la création de la sauvegarde d'une instance.
+>> To create an instance backup from the OpenStack CLI, follow [this section](/pages/public_cloud/compute/save_an_instance#createinstanceviaopenstack) of our guide to creating an instance backup.
 >>
 > via Horizon
->> Pour créer une sauvegarde d’une instance depuis Horizon, suivez [cette section](/pages/public_cloud/compute/save_an_instance#createinstanceviahorizon) de notre guide sur la création de la sauvegarde d'une instance.
+>> To create an instance backup from the Horizon, follow [this section](/pages/public_cloud/compute/save_an_instance#createinstanceviahorizon) of our guide to creating an instance backup.
 >>
 
 ### Étape 2. Migrating your backup to another region
@@ -66,6 +69,9 @@ OVHcloud offers two types of backup, with different behaviors depending on the t
 > [!tabs]
 > Via the OVHcloud Control Panel
 >> To create an instance from an existing backup, please follow [this section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviamanager) from our guide : Using instance backups to create or restore an instance.
+>>
+> Via the OVHcloud API
+>>  To create an instance from an existing backup, please follow [this section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviaapi) from our guide : Using instance backups to create or restore an instance.
 >>
 > Via the Openstack CLI
 >> To create an instance from an existing backup via the Openstack CLI, follow [this section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup/#createinstanceviaopenstack) from our guide: Using instance backups to create or restore an instance.

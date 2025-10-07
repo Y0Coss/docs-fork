@@ -90,34 +90,103 @@ You can make use of these instance backups for two basic purposes:
 >>
 >> ![public-cloud-instance-backup-horizon-5](images/restorebackuphorizon5.png){.thumbnail}
 >>
+> Via the OVHcloud API <a name="createinstanceviaapi"></a>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance
+>> >
+>>
+>> Parameters:
+>>
+>> > **serviceName** *
+>> >
+>> >> The OVHcloud project ID.
+>>
+>> > **regionName** *
+>> >
+>> >> The region name where the instance will be located
+>>
+>> Example of the request body:
+>>
+>> ```json
+>> {
+>>   "billingPeriod": "hourly",
+>>   "bootFrom": {
+>>     "imageId": "5cb8ea68-****-****-****-820be8346***"
+>>   },
+>>   "flavor": {
+>>     "id": "e81b46f8-****-****-****-cad655e65***"
+>>   },
+>>   "name": "newInstance",
+>>   "network": {
+>>     "public": true
+>>   },
+>>   "sshKey": {
+>>     "name": "MySSHKey"
+>>   }
+>> }
+>> ```
+>>
 
 ### Restoring an instance from a backup
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Instances`{.action} in the left-hand sidebar.
-
-![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
-
-Click on the `...`{.action} button in the row of the relevant instance, then select `Edit`{.action}.
-
-This opens the page for editing an instance where you can change:
-
-- the instance's name
-- the instance's image
-- the instance's model
-- the instance's billing mode (from `hourly` to `monthly` only)
-
-Make your changes if necessary and switch to the `Backups`{.action} tab of the **Image** section.
-
-![public-cloud-instance-backup](images/restorebackup05.png){.thumbnail}
-
-Select from the list of available backups. Click on `Modify image`{.action} if you are certain that you want to overwrite the current image with the backup. 
-
-The instance will have the status `Re-installation` until the process is completed. It might be necessary to refresh the page in the browser in order to see the current status.
-
-> [!warning]
->
-> As stated in the warning message, any data added after the backup creation will be lost.
->
+> [!tabs]
+> Via the OVHcloud Control Panel
+>> Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Click on `Instances`{.action} in the left-hand sidebar.
+>>
+>> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
+>>
+>> Click on the `...`{.action} button in the row of the relevant instance, then select `Edit`{.action}.
+>>
+>> This opens the page for editing an instance where you can change:
+>>
+>> - the instance's name
+>> - the instance's image
+>> - the instance's model
+>> - the instance's billing mode (from `hourly` to `monthly` only)
+>>
+>> Make your changes if necessary and switch to the `Backups`{.action} tab of the **Image** section.
+>>
+>> ![public-cloud-instance-backup](images/restorebackup05.png){.thumbnail}
+>>
+>> Select from the list of available backups. Click on `Modify image`{.action} if you are certain that you want to overwrite the current image with the backup. 
+>>
+>> The instance will have the status `Re-installation` until the process is completed. It might be necessary to refresh the page in the browser in order to see the current status.
+>>
+>> > [!warning]
+>> >
+>> > As stated in the warning message, any data added after the backup creation will be lost.
+>> >
+>>
+> Via the OVHcloud API
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/reinstall
+>> >
+>>
+>> Parameters:
+>>
+>> > **serviceName** *
+>> >
+>> >> The OVHcloud project ID.
+>>
+>> > **regionName** *
+>> >
+>> >> The region name where the source instance is located.
+>>
+>> > **instanceId** *
+>> >
+>> >> The unique instance ID.
+>>
+>> Example of the request body:
+>>
+>> ```json
+>> {
+>>   "imageId": "5cb8ea68-****-****-****-820be8346***",
+>>   "imageRegionName": "GRA11"
+>> }
+>> ```
+>>
 
 ## Go further
 

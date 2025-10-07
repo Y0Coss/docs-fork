@@ -90,34 +90,103 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 >>
 >> ![public-cloud-instance-backup-horizon-5](images/restorebackuphorizon5.png){.thumbnail}
 >>
+> Via l'API OVHcloud <a name="createinstanceviaapi"></a>
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance
+>> >
+>>
+>> Paramètres:
+>>
+>> > **serviceName** *
+>> >
+>> >> L’ID du projet OVHcloud.
+>>
+>> > **regionName** *
+>> >
+>> >> Le nom de la région où l’instance sera créée.
+>>
+>> Exemple de corps de requête :
+>>
+>> ```json
+>> {
+>>   "billingPeriod": "hourly",
+>>   "bootFrom": {
+>>     "imageId": "5cb8ea68-****-****-****-820be8346***"
+>>   },
+>>   "flavor": {
+>>     "id": "e81b46f8-****-****-****-cad655e65***"
+>>   },
+>>   "name": "newInstance",
+>>   "network": {
+>>     "public": true
+>>   },
+>>   "sshKey": {
+>>     "name": "MySSHKey"
+>>   }
+>> }
+>> ```
+>>
 
 ### Restaurer une instance à partir d’une sauvegarde
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Public Cloud`{.action}. Sélectionnez le projet Public Cloud concerné puis cliquez sur `Instances`{.action} sous la section **Compute**.
-
-![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
-
-Cliquez sur le bouton `...`{.action} à droite de l'instance que vous souhaitez restaurer et cliquez sur `Editer`{.action}.
-
-La page d'édition d'instance s'affichera alors. Vous pourrez y modifier :
-
-- Le nom de l'instance.
-- L'image de l'instance.
-- Le modèle de l'instance.
-- La facturation de l'instance (uniquement depuis le modèle « Horaire » vers le modèle « Mensuel »).
-
-Effectuez les modifications nécessaires puis sélectionnez l'onglet `Backups`{.action} dans la partie « Image ».
-
-![public-cloud-instance-backup](images/restorebackup05.png){.thumbnail}
-
-Sélectionnez une sauvegarde dans la liste des sauvegardes disponibles. Cliquez sur `Modifier l'image`{.action} si vous êtes certain de vouloir remplacer l'image actuelle par la sauvegarde.
-
-L'instance aura le statut `Réinstallation` jusqu'à ce que le processus soit terminé. Il peut être nécessaire d'actualiser la page dans le navigateur pour voir l'état actuel.
-
-> [!warning]
->
-> Comme indiqué dans l'encadré jaune qui vous est alors précisé, aucune donnée ajoutée après la création de cette sauvegarde ne pourra être récupérée.
->
+> [!tabs]
+> Via l'espace client OVHcloud
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez `Public Cloud`{.action}. Sélectionnez le projet Public Cloud concerné puis cliquez sur `Instances`{.action} sous la section **Compute**.
+>>
+>> ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
+>>
+>> Cliquez sur le bouton `...`{.action} à droite de l'instance que vous souhaitez restaurer et cliquez sur `Editer`{.action}.
+>>
+>> La page d'édition d'instance s'affichera alors. Vous pourrez y modifier :
+>>
+>> - Le nom de l'instance.
+>> - L'image de l'instance.
+>> - Le modèle de l'instance.
+>> - La facturation de l'instance (uniquement depuis le modèle « Horaire » vers le modèle « Mensuel »).
+>>
+>> Effectuez les modifications nécessaires puis sélectionnez l'onglet `Backups`{.action} dans la partie « Image ».
+>>
+>> ![public-cloud-instance-backup](images/restorebackup05.png){.thumbnail}
+>>
+>> Sélectionnez une sauvegarde dans la liste des sauvegardes disponibles. Cliquez sur `Modifier l'image`{.action} si vous êtes certain de vouloir remplacer l'image actuelle par la sauvegarde.
+>>
+>> L'instance aura le statut `Réinstallation` jusqu'à ce que le processus soit terminé. Il peut être nécessaire d'actualiser la page dans le navigateur pour voir l'état actuel.
+>>
+>> > [!warning]
+>> >
+>> > Comme indiqué dans l'encadré jaune qui vous est alors précisé, aucune donnée ajoutée après la création de cette sauvegarde ne pourra être récupérée.
+>> >
+>>
+> Via l'API OVHcloud
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/reinstall
+>> >
+>>
+>> Paramètres:
+>>
+>> > **serviceName** *
+>> >
+>> >> L’ID du projet OVHcloud.
+>>
+>> > **regionName** *
+>> >
+>> >> Le nom de la région où se trouve l’instance source.
+>>
+>> > **instanceId** *
+>> >
+>> >> L’ID unique de l’instance.
+>>
+>> Exemple de corps de requête :
+>>
+>> ```json
+>> {
+>>   "imageId": "5cb8ea68-****-****-****-820be8346***",
+>>   "imageRegionName": "GRA11"
+>> }
+>> ```
+>>
 
 ## Aller plus loin
 

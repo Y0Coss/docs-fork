@@ -42,6 +42,9 @@ OVHcloud propose deux types de sauvegardes, avec des comportements différents s
 > Via l'espace client OVHcloud
 >> Pour créer une sauvegarde d'une instance à partir de l'espace client OVHcloud, suivez [cette section](/pages/public_cloud/compute/save_an_instance#createinstanceviamanager) de notre guide sur la création de la sauvegarde d'une instance.
 >>
+> Via l'API OVHcloud
+>> Pour créer une sauvegarde d’une instance depuis l'API OVHcloud, suivez [cette section](/pages/public_cloud/compute/save_an_instance#createinstanceviaapi) de notre guide sur la création de la sauvegarde d'une instance.
+>>
 > Via la CLI Openstack
 >> Pour créer une sauvegarde d’une instance depuis la CLI OpenStack, suivez [cette section](/pages/public_cloud/compute/save_an_instance#createinstanceviaopenstack) de notre guide sur la création de la sauvegarde d'une instance.
 >>
@@ -66,6 +69,9 @@ OVHcloud propose deux types de sauvegardes, avec des comportements différents s
 > [!tabs]
 > Via l'espace client OVHcloud
 >> Pour créer une instance à partir d'un backup existant, veuillez suivre [cette section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup#createinstanceviamanager) de notre guide : Créer / restaurer un serveur virtuel a partir d’une sauvegarde.
+>>
+> Via l'API OVHcloud
+>> Pour créer une instance à partir d'un backup existant via l'API OVHcloud, suivez [cette section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup/#createinstanceviaapi) de notre guide : Créer / restaurer un serveur virtuel a partir d’une sauvegarde.
 >>
 > Via la CLI Openstack
 >> Pour créer une instance à partir d'un backup existant via la CLI Openstack, suivez [cette section](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup/#createinstanceviaopenstack) de notre guide : Créer / restaurer un serveur virtuel a partir d’une sauvegarde.
