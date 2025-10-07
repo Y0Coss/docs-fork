@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Caractéristiques, capacités et limites (EN)
 excerpt: "Découvrez les principales caractéristiques, capacités et limites des AI Notebooks"
-updated: 2025-10-06
+updated: 2025-10-07
 ---
 
 > [!primary]
@@ -132,7 +132,9 @@ When attaching data volumes to your AI Notebooks, you can use storage from Publi
 >
 > Ensure that the Object Storage bucket is **located in the same region** as your AI Notebook.
 >
-> Please note that there is a **10 TB maximum limit for attached storage per Public Cloud Project**. You can verify your current quota using the `ovhai me` CLI command. This quota applies to the total size of all volumes attached to your Public Cloud Project.
+> Your Public Cloud Project can store unlimited data in Object Storage buckets. However, when you mount an Object Storage bucket as a volume, there is a **usage limit of 10 TB per Public Cloud Project**. This limit applies to the total storage consumed by all volumes attached simultaneously across your AI Notebooks, AI Training jobs, and AI Deploy apps.
+>
+> When the same volume is used across multiple resources, **enabling caching** allows shared access to the volume data, preventing multiple copies from consuming additional storage quota. Without caching, each instance will maintain a separate copy of the volume data, increasing the total storage usage linearly.
 >
 
 #### Maximum execution time
