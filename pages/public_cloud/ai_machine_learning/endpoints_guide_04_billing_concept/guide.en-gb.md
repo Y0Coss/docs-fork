@@ -31,7 +31,7 @@ By following this model lifecycle process, OVHcloud ensures that customers are w
 
 ## Billing principles
 
-For detailed information on models, quantization, pricing units, and prices, please visit the `AI Endpoints`{.action} section of the `AI and Machine Learning` drop-down menu, on the [OVHcloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/#ai-&-machine-learning).
+For detailed information on models, quantization, pricing units, and prices, please visit the `AI Endpoints`{.action} section of the `AI and Machine Learning` drop-down menu, on the [OVHcloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/#ai-&-machine-learning):
 
 ![ai-endpoints-pricing-overview](images/pricing-overview.png)
 
