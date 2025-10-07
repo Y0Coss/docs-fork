@@ -23,7 +23,7 @@ details[open]>summary::before {
 
 ## Ziel
 
-MX Plan E-Mail-Konten können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden. Thunderbird ist ein freie E-Mail-Software.
+MX Plan E-Mail-Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Ihre E-Mail-Adressen verwenden. Thunderbird ist ein freie E-Mail-Software.
 
 **Diese Anleitung erklärt, wie Sie Ihre MX Plan E-Mail-Adresse in Thunderbird für macOS konfigurieren.**
 
@@ -52,7 +52,7 @@ Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 
 - **Beim ersten Start der Anwendung**: Ein Konfigurationsassistent wird angezeigt und bittet Sie, Ihre E-Mail-Adresse einzugeben.
 
-- **Wenn bereits ein Konto in der Anwendung eingerichtet ist**:
+- **Wenn bereits ein Account in der Anwendung eingerichtet ist**:
 
     1. Klicken Sie auf das Menü `☰`{.action} in der oberen horizontalen Leiste.
     2. Klicken Sie auf `Neues Konto`{.action}.
