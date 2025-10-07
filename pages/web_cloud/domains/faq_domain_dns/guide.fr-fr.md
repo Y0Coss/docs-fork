@@ -144,7 +144,7 @@ Suivez ces étapes :
 1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
 2. Cliquez sur votre nom dans le coin supérieur droit puis choisissez `Mes offres & services`{.action}.
 3. Dans le tableau qui apparaît, recherchez la ligne correspondant à votre nom de domaine, cliquez sur le bouton `...`{.action} à droite, puis sur `Résilier mon service`{.action}.
-4. Sur la page qui s'affiche, remplissez le questionnaire puis cliquez en bas sur le bouton `Valider`{.action}.
+4. Sur la page qui s'affiche, sélectionnez le mode de résiliation (immédiatement ou à la date d'expiration du service) puis cliquez en bas sur le bouton `Oui, résilier`{.action}.
 
 Votre nom de domaine sera alors suspendu à la date d'expiration, puis, à compter de cette date, il sera supprimé **définitivement** dans un délai maximum de 60 jours. Ce délai est défini par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin qu'un nom de domaine soit totalement supprimé et de nouveau disponible à l'enregistrement pour un autre propriétaire/titulaire.
 

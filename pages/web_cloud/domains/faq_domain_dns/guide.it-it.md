@@ -22,7 +22,7 @@ details[open]>summary::before {
 
 ## Sottoscrizione di un nome di dominio
 
-/// details | Come posso sottoscrivere un nome di dominio su OVHcloud ?
+/// details | Come posso sottoscrivere un nome di dominio su OVHcloud?
 
 Segui questi passaggi:
 
@@ -43,7 +43,7 @@ Non esitare a creare un ticket di assistenza dal [centro di aiuto](https://help.
 
 ///
 
-/// details | Come posso acquistare un nome di dominio sul mercato secondario ?
+/// details | Come posso acquistare un nome di dominio sul mercato secondario?
 
 L'acquisto di un nome di dominio sul mercato secondario avviene nello stesso modo della sottoscrizione di un nome di dominio.
 
@@ -68,7 +68,7 @@ Non esitare a creare un ticket di assistenza dal [centro di aiuto](https://help.
 
 ## Gestione di un nome di dominio
 
-/// details | Come posso sapere se il mio nome di dominio è registrato su OVHcloud ?
+/// details | Come posso sapere se il mio nome di dominio è registrato su OVHcloud?
 
 Per farlo, puoi effettuare una richiesta [WHOIS](/links/web/domains-whois) per sapere dove è registrato il tuo nome di dominio e per verificare che sei effettivamente dichiarato come titolare del nome di dominio.
 
@@ -87,7 +87,7 @@ Nel caso contrario, il tuo nome di dominio è registrato presso un altro ufficio
 
 ///
 
-/// details | Come posso conoscere la data di scadenza di un nome di dominio ?
+/// details | Come posso conoscere la data di scadenza di un nome di dominio?
 
 La soluzione più rapida è effettuare una richiesta [WHOIS](/links/web/domains-whois) sul nome di dominio. Una volta effettuata la richiesta, cerca nel risultato la riga corrispondente alla data di scadenza (ad esempio: `Expiry Date: 2025-09-22T08:00:00Z`, `Registry Expiry Date: 2025-09-22T08:00:00Z`, ecc.).
 
@@ -99,7 +99,7 @@ Se il tuo nome di dominio è registrato su OVHcloud, puoi anche seguire questi p
 
 ///
 
-/// details | Come modificare la data annuale di scadenza di un nome di dominio ?
+/// details | Come modificare la data annuale di scadenza di un nome di dominio?
 
 La data annuale di scadenza di un nome di dominio (ad esempio: il 24 settembre) è predefinita in base alla data di registrazione (creazione) del nome di dominio.
 
@@ -111,7 +111,7 @@ Pertanto, non è possibile modificare la data annuale di scadenza di un nome di 
 
 <br>
 
-/// details | Come posso correggere un errore di battitura nel mio nome di dominio ?
+/// details | Come posso correggere un errore di battitura nel mio nome di dominio?
 
 Dopo che un nome di dominio è sottoscritto, esso viene registrato in base ai caratteri che gli hai definito al momento dell'ordine. La registrazione avviene presso il registro dell'estensione del tuo nome di dominio (ad esempio: il registro dei *.com*) e vengono applicati dei costi di prenotazione dal lato dell'ufficio di registrazione (come OVHcloud).
 
@@ -124,7 +124,7 @@ I nomi di dominio vengono considerati prodotti personalizzati, poiché vengono r
 
 ///
 
-/// details | Come modificare un nome di dominio già sottoscritto ?
+/// details | Come modificare un nome di dominio già sottoscritto?
 
 Dopo che un nome di dominio è sottoscritto, esso viene registrato in base ai caratteri che gli hai definito al momento dell'ordine. La registrazione avviene presso il registro dell'estensione del tuo nome di dominio (ad esempio: il registro dei *.com*) e vengono applicati dei costi di prenotazione dal lato dell'ufficio di registrazione (come OVHcloud).
 
@@ -137,14 +137,14 @@ I nomi di dominio vengono considerati prodotti personalizzati, poiché vengono r
 
 ///
 
-/// details | Come eliminare un nome di dominio ?
+/// details | Come eliminare un nome di dominio?
 
 Segui questi passaggi:
 
 1. Collegati al tuo [Spazio Cliente OVHcloud](/links/manager).
 2. Clicca sul tuo nome nell'angolo in alto a destra e scegli `Le mie offerte e servizi`{.action}.
 3. Nella tabella che appare, cerca la riga corrispondente al tuo nome di dominio, clicca sul pulsante `...`{.action} a destra, quindi su `Disattivare il servizio`{.action}.
-4. Nella pagina che appare, compila il questionario e clicca in basso sul pulsante `Conferma`{.action}.
+4. Sulla pagina visualizzata, seleziona la modalità di annullamento (immediatamente o alla data di scadenza del servizio) e clicca in basso sul pulsante `Sì, disattiva`{.action}.
 
 Il tuo nome di dominio verrà sospeso alla data di scadenza, quindi, a partire da questa data, verrà eliminato **definitivamente** entro un massimo di 60 giorni. Questo periodo è definito dall'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) affinché un nome di dominio venga completamente eliminato e nuovamente disponibile per la registrazione da parte di un altro proprietario/titolare.
 
@@ -158,7 +158,7 @@ Il tuo nome di dominio verrà sospeso alla data di scadenza, quindi, a partire d
 
 ///
 
-/// details | Ho ricevuto un'e-mail relativa alla validazione delle informazioni del titolare associate al mio nome di dominio, cosa devo fare ?
+/// details | Ho ricevuto un'e-mail relativa alla validazione delle informazioni del titolare associate al mio nome di dominio, cosa devo fare?
 
 Innanzitutto, se hai dubbi sulla legittimità dell'e-mail ricevuta, consulta la nostra guida "[Proteggersi dalle truffe: come riconoscere email fraudolente e di phishing](/pages/account_and_service_management/account_information/phishing_care)".
 
@@ -189,7 +189,7 @@ Oltre questi 15 giorni, il sistema invia e-mail supplementari (fino a 9 e-mail) 
 
 ///
 
-/// details | Non ho ricevuto l'e-mail di validazione delle informazioni del titolare associato al mio nome di dominio e questo è sospeso, cosa devo fare ?
+/// details | Non ho ricevuto l'e-mail di validazione delle informazioni del titolare associato al mio nome di dominio e questo è sospeso, cosa devo fare?
 
 Se non hai ricevuto l'e-mail di validazione del proprietario del tuo nome di dominio, verifica i punti seguenti:
 
@@ -200,7 +200,7 @@ Dopo aver verificato e confermato i due punti sopra, se non riesci comunque a re
 
 ///
 
-/// details | Cos'è un nome di dominio nel formato IDN ?
+/// details | Cos'è un nome di dominio nel formato IDN?
 
 Inizialmente, i nomi di dominio potevano contenere solo caratteri **ASCII** specifici (tra cui le 26 lettere dell'alfabeto latino). Un **I**nternationalized **D**omain **N**ame (**IDN**) permette, tra l'altro, di utilizzare caratteri speciali o accentati, o addirittura altri alfabeti (come il *cyrillico*).
 
@@ -218,7 +218,7 @@ Anche se il tuo dominio appare in [notazione internazionalizzata (IDN)](https://
 
 ///
 
-/// details | Come correggere un nome di dominio nel formato IDN ?
+/// details | Come correggere un nome di dominio nel formato IDN?
 
 Come i nomi di dominio "classici", non appena un nome di dominio o un IDN è sottoscritto, esso viene registrato in base ai caratteri che gli hai definiti al momento dell'ordine.
 
@@ -226,7 +226,7 @@ Pertanto, se hai commesso un errore di battitura al momento dell'ordine, non pot
 
 ///
 
-/// details | Come rinnovare un solo nome di dominio presente in un pacchetto Alldom ?
+/// details | Come rinnovare un solo nome di dominio presente in un pacchetto Alldom?
 
 Per farlo, devi essere almeno dichiarato come [contatto "Fatturazione"](/pages/account_and_service_management/account_information/managing_contacts) del nome di dominio interessato. Dovrai quindi modificare la modalità di rinnovo del nome di dominio per passarlo in **rinnovo automatico**.
 
@@ -250,7 +250,7 @@ Per farlo, segui questi passaggi:
 
 ## Trasferimento di un nome di dominio
 
-/// details | Il mio nome di dominio è trasferibile dopo un cambio di proprietario ?
+/// details | Il mio nome di dominio è trasferibile dopo un cambio di proprietario?
 
 L'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) ha stabilito misure di sicurezza per prevenire trasferimenti o cambi di proprietari non autorizzati o abusivi dei nomi di dominio.
 
@@ -262,7 +262,7 @@ Non avrai quindi altra scelta che attendere fino alla fine del periodo di 60 gio
 
 ///
 
-/// details | Il mio nome di dominio è bloccato per il trasferimento per 60 giorni, cosa devo fare ?
+/// details | Il mio nome di dominio è bloccato per il trasferimento per 60 giorni, cosa devo fare?
 
 L'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) ha stabilito misure di sicurezza per prevenire trasferimenti o cambi di proprietari non autorizzati o abusivi dei nomi di dominio.
 
@@ -274,7 +274,7 @@ Non avrai quindi altra scelta che attendere fino alla fine del periodo di 60 gio
 
 ///
 
-/// details | Non trovo il mio nome di dominio nel mio spazio client, cosa devo fare ?
+/// details | Non trovo il mio nome di dominio nel mio spazio client, cosa devo fare?
 
 Innanzitutto, effettua una richiesta [WHOIS](/links/web/domains-whois) per sapere dove è registrato il tuo nome di dominio e per verificare che sei effettivamente dichiarato come titolare del nome di dominio.
 
@@ -294,7 +294,7 @@ Contatta direttamente l'ufficio di registrazione (indicato nelle righe che inizi
 
 ///
 
-/// details | Non riesco a contattare la persona che gestisce il mio nome di dominio, cosa devo fare ?
+/// details | Non riesco a contattare la persona che gestisce il mio nome di dominio, cosa devo fare?
 
 Innanzitutto, effettua una richiesta [WHOIS](/links/web/domains-whois) per verificare che sei effettivamente dichiarato come titolare del nome di dominio.
 

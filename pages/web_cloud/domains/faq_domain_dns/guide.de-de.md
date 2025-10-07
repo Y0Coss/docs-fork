@@ -144,7 +144,7 @@ Folgen Sie diesen Schritten:
 1. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager).
 2. Klicken Sie auf Ihren Namen in der oberen rechten Ecke und wählen Sie `Meine Angebote und Dienste`{.action}.
 3. Im angezeigten Tabelle suchen Sie die Zeile, die Ihrem Domainnamen entspricht, klicken Sie auf die Schaltfläche `...`{.action} rechts und dann auf `Meinen Dienst kündigen`{.action}.
-4. Auf der angezeigten Seite füllen Sie das Formular aus und klicken Sie unten auf die Schaltfläche `Bestätigen`{.action}.
+4. Auf der angezeigten Seite wählen Sie den Stornierungsmodus (sofort oder zum Ablaufdatum des Dienstes) und klicken Sie unten auf die Schaltfläche `Ja, kündigen`{.action}.
 
 Ihr Domainname wird dann an seinem Ablaufdatum ausgesetzt und danach innerhalb von maximal 60 Tagen **endgültig** gelöscht. Dieser Zeitraum ist durch die **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) festgelegt, damit ein Domainname vollständig gelöscht und erneut für einen anderen Inhaber verfügbar ist.
 

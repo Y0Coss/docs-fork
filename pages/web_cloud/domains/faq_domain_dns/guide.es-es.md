@@ -144,7 +144,7 @@ Siga estos pasos:
 1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
 2. Haga clic en su nombre en la esquina superior derecha y elija `Mis soluciones y servicios`{.action}.
 3. En la tabla que aparece, busque la línea correspondiente a su nombre de dominio, haga clic en el botón `...`{.action} a la derecha y luego en `Dar de baja mi servicio`{.action}.
-4. En la página que se muestra, complete el cuestionario y haga clic en el botón `Aceptar`{.action} en la parte inferior.
+4. En la página que aparece, seleccione el modo de cancelación (inmediatamente o en la fecha de vencimiento del servicio) y haga clic en el botón `Sí, dar de baja`{.action} de abajo.
 
 Su nombre de dominio se suspenderá en la fecha de vencimiento y, a partir de esa fecha, se eliminará **definitivamente** dentro de un plazo máximo de 60 días. Este plazo está definido por la **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) para garantizar que un nombre de dominio se elimine por completo y esté nuevamente disponible para su registro por otro propietario/titular.
 

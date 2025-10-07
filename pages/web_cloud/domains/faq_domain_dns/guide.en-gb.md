@@ -144,7 +144,7 @@ Follow these steps:
 1. Log in to your [OVHcloud Cotrol Panel](/links/manager).
 2. Click on your name in the top right corner and select `My offers and services`{.action}.
 3. In the table that appears, locate the line corresponding to your domain name, click the `...`{.action} button on the right, then select `Cancel my subscription`{.action}.
-4. On the page that appears, complete the questionnaire and click the `Confirm`{.action} button at the bottom.
+4. On the page that appears, select the cancellation mode (immediately or at the service's expiration date) and click the `Yes, cancel`{.action} button at the bottom.
 
 Your domain name will then be suspended on its expiration date. After this date, it will be permanently deleted within a maximum of 60 days. This delay is defined by the **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) to ensure the domain name is fully deleted and becomes available for registration by another owner/registrant.
 
