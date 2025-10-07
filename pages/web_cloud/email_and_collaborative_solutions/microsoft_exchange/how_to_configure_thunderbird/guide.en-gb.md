@@ -1,6 +1,6 @@
 ---
-title: 'Exchange - Configure your email address on Thunderbird for Windows'
-excerpt: 'Learn how to configure your Exchange email address on Thunderbird for Windows'
+title: 'Exchange - Configure your email account on Thunderbird for Windows'
+excerpt: 'Find out how to configure your Exchange email address on Thunderbird for Windows'
 updated: 2025-09-19
 ---
 
@@ -25,19 +25,20 @@ details[open]>summary::before {
 
 Exchange accounts can be configured on various compatible email clients. This allows you to use your email address from your preferred device. Thunderbird is a free and open-source email client.
 
-**Learn how to configure your Exchange email address on Thunderbird for Windows.**
+**This guide explains how to configure your Exchange email address on Thunderbird for Windows.**
 
 ## Requirements
 
-- Have a [Hosted Exchange](/links/web/emails-hosted-exchange) or [Private Exchange](/links/web/emails-private-exchange) email address.
-- Have the Thunderbird software installed on your Windows device.
-- Possess the credentials for the email address you wish to configure.
+- A [Hosted Exchange](/links/web/emails-hosted-exchange) or [Private Exchange](/links/web/emails-private-exchange) email account
+- The Thunderbird software installed on your Windows device
+- The credentials for the email account you want to configure
 
-/// details | Information related to the management and configuration of OVHcloud services
 
-OVHcloud provides services where the configuration, management, and responsibility lie with you. You are therefore responsible for ensuring their proper operation.
+/// details | Information regarding the administration and configuratiion of OVHcloud services
 
-We provide this guide to assist you with common tasks. However, we recommend contacting a [specialized partner](https://marketplace.ovhcloud.com/c/support-collaboration) and/or the service provider directly if you encounter difficulties. We will not be able to provide support in this case. More information is available in the [Go further](#go-further) section of this guide.
+This guide will show you how to use OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
+
+If you experience any difficulties carrying out these operations, we recommend that you contact a specialist service provider or discuss the issue with our [community](/links/community). OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
 
 ///
 
@@ -45,7 +46,7 @@ We provide this guide to assist you with common tasks. However, we recommend con
 
 > [!primary]
 >
-> In our example, we use the server reference: ex?.mail.ovh.net. You must replace the "?" with the number corresponding to your Exchange service's server.
+> In our example, we use the server reference: ex?.mail.ovh.net. The "?" must be replaced with the number corresponding to your Exchange service's server.
 >
 > To find the server name:
 >
@@ -118,14 +119,14 @@ Follow the configuration steps by clicking successively on the **5** tabs below:
 >>
 > **Step 5**
 >>
->> Enter the password associated with the email address, then click on `Continue`{.action} to finalize the configuration.
+>> Enter the password associated with the email account, then click on `Continue`{.action} to finalize the configuration.
 >>
 >> ![thunderbird](images/configuration-thunderbird-password-06.png){.thumbnail .w-600}
 >>
 
 > [!primary]
 >
-> **POP Configuration**
+> **POP configuration**
 >
 > If you want a POP configuration for your email address, replace the settings in **Step 3** with the following:
 >
@@ -144,9 +145,9 @@ Once your email address is configured, you can start using it! You can now send 
 
 OVHcloud also offers a web application to access your email address from a browser. To access the OVHcloud Webmail, click on [this link](/links/web/email). You can log in using the credentials of your email address.
 
-### Recover a backup of your email address
+### Retrieve a backup of your email account
 
-If you need to perform an operation that could result in the loss of your email account data, we recommend making a backup of the affected email account beforehand. To do this, refer to the "Export" section in the "Thunderbird" part of our guide "[Manually Migrate Your Email Address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+If you need to perform an operation that could result in the loss of your email account data, we recommend making a backup of the affected email account beforehand. To do this, refer to the "**Export**" section in the "**Thunderbird**" part of our guide "[Manually Migrate Your Email Address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modify existing settings
 
@@ -172,9 +173,9 @@ If your email account is already configured and you need to access the account s
 >
 > For more information on configuring an email address from the Thunderbird email client, consult [Mozilla's help center](https://support.mozilla.org/products/thunderbird).
 
-[Getting started with the Hosted Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+[Getting started with Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-[Getting started with the Private Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
+[Getting started with Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
