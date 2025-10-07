@@ -10,9 +10,9 @@ En complément des droits globaux au niveau du datacentre, vous pouvez attribuer
 
 ## Prérequis
 
-- Un [service Hosted Private Cloud](/links/hosted-private-cloud) avec une version de vSphere 6.5 ou supérieure
+- Un [service Hosted Private Cloud](/links/hosted-private-cloud/vmware) avec une version de vSphere 6.5 ou supérieure
 - Un accès à l’[API OVHcloud](/links/api)
-- Un utilisateur déjà créé dans votre service Hosted Private Cloud ([voir le guide de gestion des utilisateurs](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manage_users))
+- Un [utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion) déjà créé dans votre service Hosted Private Cloud
 
 ## En pratique
 
