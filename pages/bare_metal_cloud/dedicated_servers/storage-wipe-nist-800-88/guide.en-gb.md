@@ -46,7 +46,9 @@ This overwrites existing partitions and user-accessible data (*Clear*).
 if you require a more thorough deletion of data:
 
 1\. Boot your server into **Rescue Mode** from the Control Panel. You can find out how to access Rescue Mode in [this guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+
 2\. Connect to the server via SSH, or using the Remote KVM feature.
+
 3\. Identify your disks with the following command:
 
 ```bash
