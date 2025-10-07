@@ -1,7 +1,7 @@
 ---
 title: Configurer un connecteur d'envoi sur votre plateforme Private ou Trusted Exchange
 excerpt: Découvrez comment ajouter un connecteur d'envoi SMTP sur votre plateforme Exchange OVHcloud
-updated: 2025-10-01
+updated: 2025-10-07
 ---
 
 <style>
@@ -91,7 +91,7 @@ Dans la section **PATH PARAMETERS**:
 - `exchangeService` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 - `organizationName` : Saisissez le nom de votre plateforme Exchange se présentant sous la forme « private-zz111111-1 » ou « dedicated-zz111111-1 ».
 
-Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, complétez les champs avec vos valeurs : 
+Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, complétez les champs avec vos valeurs :
 
 - `displayName` : Nom d'affichage de votre connecteur d'envoi.
 - `maxSendSize` : Taille maximale, en MB, d'un e-mail lors d'un envoi (100MB maximum et par défaut si vous ne mettez rien).
@@ -312,6 +312,8 @@ Depuis l'onglet **EXAMPLE** dans la section **REQUEST BODY**, complétez les cha
 - `sbrDefault ` : Laissez la valeur par défaut.
 - `sendConnectorIdDefault` : Saisissez l'ID de votre connecteur d'envoi, obtenu sous forme de numéro à [cette étape](#idconnector).
 
+Cliquez sur `Execute`{.action} pour lancer l'appel API.
+
 Vous obtenez le résultat suivant :
 
 ``` console
@@ -331,7 +333,6 @@ Vous obtenez le résultat suivant :
 > [!api]
 >
 > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
-
 
 - Supprimer un connecteur d'envoi existant:
 
