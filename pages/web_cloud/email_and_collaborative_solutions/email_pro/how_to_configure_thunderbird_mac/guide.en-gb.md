@@ -33,7 +33,7 @@ Email Pro accounts can be configured on different compatible email clients. This
 - The Thunderbird software installed on your Mac device
 - The credentials for the email account you want to configure
 
-/// details | Information regarding the administration and configuratiion of OVHcloud services
+/// details | Information regarding the administration and configuration of OVHcloud services
 
 This guide will show you how to use OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 
