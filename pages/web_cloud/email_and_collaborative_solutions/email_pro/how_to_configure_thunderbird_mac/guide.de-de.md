@@ -38,7 +38,7 @@ E-Mail Pro Accounts können auf verschiedenen kompatiblen E-Mail-Programmen eing
 In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.  
 Wir empfehlen, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, oder Ihre Fragen in der OVHcloud Community zu stellen. OVHcloud kann keine technische Unterstützung für die Nutzung externer Tools anbieten.
 
-Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 
 ///
 
