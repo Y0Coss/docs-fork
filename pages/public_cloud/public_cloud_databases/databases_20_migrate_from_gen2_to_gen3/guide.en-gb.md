@@ -20,6 +20,13 @@ Upgrading your database service from Gen 2 to Gen 3 brings significant improveme
 
 ## Instructions
 
+OVHcloud Public Cloud Databases exist in several generations that reflect the evolution of their underlying infrastructure.
+
+- Gen 2 flavors are named DB2-X for MongoDB and DB1-X for other database engines. They are based on Compute Instance General Purpose B2 and Discovery D2 families.
+- Gen 3 flavors follow the same naming convention as Compute Instance General Purpose B3 (b3-X), on which they are built.
+
+Gen 3 provides improved performance, scalability, and reliability compared to Gen 2.
+
 ### Migrate a database service from Gen 2 to Gen 3
 
 > [!tabs]
