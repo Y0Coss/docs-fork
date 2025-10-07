@@ -1,18 +1,16 @@
 ---
-title: Amélioration de la résilience réseau sur les serveurs Baremetal
-excerpt: Découvrez la nouvelle architecture d’agrégation réseau visant à renforcer la résilience des interfaces publiques et privées de vos serveurs Baremetal OVHcloud.
+title: Amélioration de la résilience réseau sur les serveurs Bare metal
+excerpt: Découvrez comment renforcer la résilience des interfaces publiques et privées sur vos serveurs Bare Metal OVHcloud avec la nouvelle architecture d'agrégation réseau
 updated: 2025-09-19
 ---
 
->[!primary]
+> [!primary]
 > Ce document concerne un déploiement prévu le **31 octobre 2025**, qui changera la manière dont fonctionne l'aggrégation de liens (LACP) au sein des infrastructures OVHcloud.
 > Les clients OVHcloud concernés par ces changements recevront également une communication par mail.
->
 
 ## Objectif
 
-Ce guide présente la nouvelle architecture d’agrégation réseau mise en place sur les serveurs Baremetal OVHcloud.  
-Cette évolution a pour but de renforcer la tolérance aux pannes et d’améliorer la continuité de service pour vos environnements critiques.  
+Ce guide présente la nouvelle architecture d’agrégation réseau mise en place sur les serveurs Bare metal OVHcloud. Cette évolution a pour but de renforcer la tolérance aux pannes et d’améliorer la continuité de service pour vos environnements critiques.  
 
 ## Prérequis
 
@@ -23,10 +21,10 @@ Cette évolution a pour but de renforcer la tolérance aux pannes et d’amélio
 
 ### Ce qui change
 
-Jusqu’à présent, l’agrégation (LACP) des interfaces réseau était réalisée sur des ports appartenant à la **même carte réseau (NIC)**.  
-Cette configuration assurait déjà une redondance en cas de défaillance d’un switch ToR, mais ne couvrait pas le risque de panne d’une carte réseau.  
+Jusqu’à présent, l’agrégation (LACP) des interfaces réseau était réalisée sur des ports appartenant à la **même carte réseau (NIC)**. Cette configuration assurait déjà une redondance en cas de défaillance d’un switch ToR, mais ne couvrait pas le risque de panne d’une carte réseau.  
 
-Désormais :  
+Désormais :
+
 - Les agrégations logiques seront réparties sur **deux cartes réseau distinctes** (sans modification physique du câblage).  
 - Les agrégations existantes ne sont pas modifiées. 
 
@@ -36,22 +34,22 @@ Si vous n’utilisez pas l’agrégation de liens LACP sur votre serveur, **aucu
 
 ### Comment effectuer le changement sur vos serveurs
 
-Lors d’une reconfiguration des agrégations, la nouvelle règle sera appliquée automatiquement. 
-Pour activer la nouvelle règle, vous pouvez également effectuer un passage en mode **OLA**, puis un retour en mode par défaut.
-Une fois la nouvelle règle activée, il ne sera plus possible de revenir à l’ancienne configuration.  
-Les serveurs livrés après la date de déploiement bénéficieront directement de cette nouvelle règle.
+Lors d’une reconfiguration des agrégations, la nouvelle règle sera appliquée automatiquement. Pour activer la nouvelle règle, vous pouvez également effectuer un passage en mode **OLA**, puis un retour en mode par défaut.
 
-**Attention :** Afin que les modifications soient effectives, vous devez **reconfigurer les adresses MAC déclarées** dans votre système d’exploitation.  
+Une fois la nouvelle règle activée, il ne sera plus possible de revenir à l’ancienne configuration. Les serveurs livrés après la date de déploiement bénéficieront directement de cette nouvelle règle.
 
-**En cas de configuration incorrecte dans l’OS, la résilience pourrait ne pas être effective.**
+> [!warning]
+> Afin que les modifications soient effectives, vous devez **reconfigurer les adresses MAC déclarées** dans votre système d’exploitation.  
+>
+> En cas de configuration incorrecte dans l’OS, la résilience pourrait ne pas être effective.
 
 ### Bénéfices
 
-Sous réserve d’une configuration correcte côté OS, cette évolution permet :  
+Sous réserve d’une configuration correcte côté OS, cette évolution permet :
+
 - **Disponibilité renforcée** : meilleure tolérance aux pannes matérielles (cartes réseau, switches, connectique).  
 - **Connectivité ininterrompue** : vos services restent accessibles même en cas de défaillance d’une carte réseau.  
 - **Évolution transparente** : aucune modification requise pour les agrégations existantes, hors cas spécifiques mentionnés ci-dessus.  
-
 
 ## Aller plus loin
 
