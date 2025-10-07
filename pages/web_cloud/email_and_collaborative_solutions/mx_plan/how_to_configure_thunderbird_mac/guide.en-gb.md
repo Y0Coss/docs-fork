@@ -174,7 +174,7 @@ If your email account is already configured and you need to access the account s
 >
 > For more information on configuring an email address from the Thunderbird email client, consult [Mozilla's help center](https://support.mozilla.org/products/thunderbird).
 
-[Getting started with the MX Plan offer](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Getting started with MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
