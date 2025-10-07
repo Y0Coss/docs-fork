@@ -280,7 +280,7 @@ Primeiramente, realize uma consulta [WHOIS](/links/web/domains-whois) para saber
 
 Caso n°1.A - Seu nome de domínio está registrado na OVHcloud e você está declarado como titular do nome de domínio :
 
-Realize uma [procedimento de recuperação de contatos](/links/transversal/procedure-change-contact) para que seu nome de domínio seja totalmente gerenciado no seu [Área de Cliente OVHcloud](/links/manager). Assim, você não precisará mais contatar a pessoa que gerenciava anteriormente seu nome de domínio.
+Realize uma [procedimento de recuperação de contatos](/links/transversal/procedure-contact-change) para que seu nome de domínio seja totalmente gerenciado no seu [Área de Cliente OVHcloud](/links/manager). Assim, você não precisará mais contatar a pessoa que gerenciava anteriormente seu nome de domínio.
 
 Caso n°1.B - Seu nome de domínio está registrado na OVHcloud e você não está declarado como titular do nome de domínio :
 
@@ -300,7 +300,7 @@ Primeiramente, realize uma consulta [WHOIS](/links/web/domains-whois) para verif
 
 Caso n°1 - Você está declarado como titular do nome de domínio :
 
-Realize uma [procedimento de recuperação de contatos](/links/transversal/procedure-change-contact) para que seu nome de domínio seja totalmente gerenciado no seu [Área de Cliente OVHcloud](/links/manager). Assim, você não precisará mais contatar a pessoa que gerenciava anteriormente seu nome de domínio.
+Realize uma [procedimento de recuperação de contatos](/links/transversal/procedure-contact-change) para que seu nome de domínio seja totalmente gerenciado no seu [Área de Cliente OVHcloud](/links/manager). Assim, você não precisará mais contatar a pessoa que gerenciava anteriormente seu nome de domínio.
 
 Caso n°2 - Você não está declarado como titular do nome de domínio :
 
@@ -935,14 +935,14 @@ Isto significa que o nome de domínio não é gerido a partir da sua [Área de C
 
 Poderá depois efetuar uma das seguintes ações (se for o titular declarado no WHOIS do nome de domínio): 
 
-- O nome de domínio está registado na OVHcloud : Poderá efetuar uma [procedimento de recuperação dos contactos](/links/transversal/procedure-change-contact) para que o seu nome de domínio seja gerido na sua [Área de Cliente OVHcloud](/links/manager).
+- O nome de domínio está registado na OVHcloud : Poderá efetuar uma [procedimento de recuperação dos contactos](/links/transversal/procedure-contact-change) para que o seu nome de domínio seja gerido na sua [Área de Cliente OVHcloud](/links/manager).
 - O nome de domínio não está registado na OVHcloud : Poderá realizar uma operação de [transferência entrante](/pages/web_cloud/domains/transfer_incoming_generic_domain) para a OVHcloud para que o seu nome de domínio seja gerido na sua [Área de Cliente OVHcloud](/links/manager).
 
 Caso n°2 - O nome de domínio aparece na lista :
 
 Isto significa que não dispõe dos direitos suficientes para gerir o nome de domínio a partir da sua [Área de Cliente OVHcloud](/links/manager). Efetue uma requisição [WHOIS](/links/web/domains-whois) para verificar se está bem declarado como titular do nome de domínio.
 
-Poderá depois efetuar uma [procedimento de recuperação dos contactos](/links/transversal/procedure-change-contact) para que o seu nome de domínio seja totalmente gerido na sua [Área de Cliente OVHcloud](/links/manager).
+Poderá depois efetuar uma [procedimento de recuperação dos contactos](/links/transversal/procedure-contact-change) para que o seu nome de domínio seja totalmente gerido na sua [Área de Cliente OVHcloud](/links/manager).
 
 ///
 

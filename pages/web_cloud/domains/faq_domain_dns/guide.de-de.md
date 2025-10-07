@@ -280,7 +280,7 @@ Zunächst führen Sie eine [WHOIS](/links/web/domains-whois)-Abfrage durch, um z
 
 **Fall 1.A** – Ihr Domainname ist bei OVHcloud registriert und Sie sind als Inhaber angegeben:
 
-Führen Sie eine [Kontaktwiederherstellung](/links/transversal/procedure-change-contact) durch, damit Ihr Domainname vollständig in Ihrem [OVHcloud Kundencenter](/links/manager) verwaltet wird. Auf diese Weise müssen Sie die Person, die Ihren Domainnamen zuvor verwaltete, nicht mehr kontaktieren.
+Führen Sie eine [Kontaktwiederherstellung](/links/transversal/procedure-contact-change) durch, damit Ihr Domainname vollständig in Ihrem [OVHcloud Kundencenter](/links/manager) verwaltet wird. Auf diese Weise müssen Sie die Person, die Ihren Domainnamen zuvor verwaltete, nicht mehr kontaktieren.
 
 **Fall 1.B** – Ihr Domainname ist bei OVHcloud registriert, Sie sind jedoch nicht als Inhaber angegeben:
 
@@ -300,7 +300,7 @@ Zunächst führen Sie eine [WHOIS](/links/web/domains-whois)-Abfrage durch, um z
 
 **Fall 1** – Sie sind als Inhaber des Domainnamens angegeben:
 
-Führen Sie eine [Kontaktwiederherstellung](/links/transversal/procedure-change-contact) durch, damit Ihr Domainname vollständig in Ihrem [OVHcloud Kundencenter](/links/manager) verwaltet wird. Auf diese Weise müssen Sie die Person, die Ihren Domainnamen zuvor verwaltete, nicht mehr kontaktieren.
+Führen Sie eine [Kontaktwiederherstellung](/links/transversal/procedure-contact-change) durch, damit Ihr Domainname vollständig in Ihrem [OVHcloud Kundencenter](/links/manager) verwaltet wird. Auf diese Weise müssen Sie die Person, die Ihren Domainnamen zuvor verwaltete, nicht mehr kontaktieren.
 
 **Fall 2** – Sie sind nicht als Inhaber des Domainnamens angegeben:
 
@@ -935,14 +935,14 @@ Das bedeutet, dass der Domainname nicht über Ihr [OVHcloud Kundencenter](/links
 
 Sie können anschließend eine der folgenden Aktionen durchführen (sofern Sie der im WHOIS als Inhaber deklarierte Nutzer sind):
 
-- Der Domainname ist bei OVHcloud registriert: Sie können eine [Prozedur zur Wiederherstellung der Kontakte](/links/transversal/procedure-change-contact) durchführen, damit Ihr Domainname über Ihr [OVHcloud Kundencenter](/links/manager) verwaltet wird.
+- Der Domainname ist bei OVHcloud registriert: Sie können eine [Prozedur zur Wiederherstellung der Kontakte](/links/transversal/procedure-contact-change) durchführen, damit Ihr Domainname über Ihr [OVHcloud Kundencenter](/links/manager) verwaltet wird.
 - Der Domainname ist nicht bei OVHcloud registriert: Sie können eine [Eingangsübertragung](/pages/web_cloud/domains/transfer_incoming_generic_domain) durchführen, damit Ihr Domainname über Ihr [OVHcloud Kundencenter](/links/manager) verwaltet wird.
 
 Fall 2 - Der Domainname wird in der Liste angezeigt:
 
 Das bedeutet, dass Sie nicht über ausreichende Rechte verfügen, um den Domainnamen über Ihr [OVHcloud Kundencenter](/links/manager) zu verwalten. Führen Sie eine [WHOIS](/links/web/domains-whois)-Abfrage durch, um zu überprüfen, ob Sie als Inhaber des Domainnamens deklariert sind.
 
-Sie können anschließend eine [Prozedur zur Wiederherstellung der Kontakte](/links/transversal/procedure-change-contact) durchführen, damit Ihr Domainname vollständig über Ihr [OVHcloud Kundencenter](/links/manager) verwaltet wird.
+Sie können anschließend eine [Prozedur zur Wiederherstellung der Kontakte](/links/transversal/procedure-contact-change) durchführen, damit Ihr Domainname vollständig über Ihr [OVHcloud Kundencenter](/links/manager) verwaltet wird.
 
 ///
 

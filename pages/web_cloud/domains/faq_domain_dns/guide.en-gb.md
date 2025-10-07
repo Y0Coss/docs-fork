@@ -280,7 +280,7 @@ First, perform a [WHOIS](/links/web/domains-whois) query to find out where your 
 
 **Case 1.A - Your domain name is registered with OVHcloud and you are declared as the owner:**
 
-Perform a [contact recovery procedure](/links/transversal/procedure-change-contact) to have your domain name fully managed in your [OVHcloud Control Panel](/links/manager). This way, you will no longer need to contact the person who previously managed your domain name.
+Perform a [contact recovery procedure](/links/transversal/procedure-contact-change) to have your domain name fully managed in your [OVHcloud Control Panel](/links/manager). This way, you will no longer need to contact the person who previously managed your domain name.
 
 **Case 1.B - Your domain name is registered with OVHcloud and you are not declared as the owner:**
 
@@ -300,7 +300,7 @@ First, perform a [WHOIS](/links/web/domains-whois) query to verify that you are 
 
 **Case 1 - You are declared as the owner of the domain name:**
 
-Perform a [contact recovery procedure](/links/transversal/procedure-change-contact) to have your domain name fully managed in your [OVHcloud Control Panel](/links/manager). This way, you will no longer need to contact the person who previously managed your domain name.
+Perform a [contact recovery procedure](/links/transversal/procedure-contact-change) to have your domain name fully managed in your [OVHcloud Control Panel](/links/manager). This way, you will no longer need to contact the person who previously managed your domain name.
 
 **Case 2 - You are not declared as the owner of the domain name:**
 
@@ -935,14 +935,14 @@ This means that the domain name is not managed from your [OVHcloud Control Panel
 
 You can then perform one of the following actions (if you are the registrant declared in the WHOIS of the domain name):
 
-- The domain name is registered with OVHcloud: You can perform a [contact recovery procedure](/links/transversal/procedure-change-contact) so that your domain name is managed in your [OVHcloud Control Panel](/links/manager).
+- The domain name is registered with OVHcloud: You can perform a [contact recovery procedure](/links/transversal/procedure-contact-change) so that your domain name is managed in your [OVHcloud Control Panel](/links/manager).
 - The domain name is not registered with OVHcloud: You can perform an [incoming transfer](/pages/web_cloud/domains/transfer_incoming_generic_domain) to OVHcloud so that your domain name is managed in your [OVHcloud Control Panel](/links/manager).
 
 Case #2 - The domain name appears in the list:
 
 This means that you do not have sufficient rights to manage the domain name from your [OVHcloud Control Panel](/links/manager). Perform a [WHOIS](/links/web/domains-whois) request to verify that you are indeed declared as the owner of the domain name.
 
-You can then perform a [contact recovery procedure](/links/transversal/procedure-change-contact) so that your domain name is fully managed in your [OVHcloud Control Panel](/links/manager).
+You can then perform a [contact recovery procedure](/links/transversal/procedure-contact-change) so that your domain name is fully managed in your [OVHcloud Control Panel](/links/manager).
 
 ///
 

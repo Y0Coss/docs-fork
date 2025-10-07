@@ -280,7 +280,7 @@ Tout d'abord, effectuez une requête [WHOIS](/links/web/domains-whois) pour savo
 
 Cas n°1.A - Votre nom de domaine est enregistré chez OVHcloud et vous êtes bien déclaré en tant que titulaire du nom de domaine :
 
-Effectuez une [procédure de récupération des contacts](/links/transversal/procedure-change-contact) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager). Ainsi, vous n'aurez plus besoin de contacter la personne qui gérait auparavant votre nom de domaine.
+Effectuez une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager). Ainsi, vous n'aurez plus besoin de contacter la personne qui gérait auparavant votre nom de domaine.
 
 Cas n°1.B - Votre nom de domaine est enregistré chez OVHcloud et vous n'êtes pas déclaré en tant que titulaire du nom de domaine :
 
@@ -300,7 +300,7 @@ Tout d'abord, effectuez une requête [WHOIS](/links/web/domains-whois) pour vér
 
 Cas n°1 - Vous êtes bien déclaré en tant que titulaire du nom de domaine :
 
-Effectuez une [procédure de récupération des contacts](/links/transversal/procedure-change-contact) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager). Ainsi, vous n'aurez plus besoin de contacter la personne qui gérait auparavant votre nom de domaine.
+Effectuez une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager). Ainsi, vous n'aurez plus besoin de contacter la personne qui gérait auparavant votre nom de domaine.
 
 Cas n°2 - Vous n'êtes pas déclaré en tant que titulaire du nom de domaine :
 
@@ -528,13 +528,13 @@ domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2
 
 |Élement dans le résultat|Description|Correspondance dans l'exemple ci-dessus|
 |---|---|---|
-|**NS (Name Server)**|Serveur DNS principal déclaré pour le nom de domaine `domain.tld`.|`dns200.anycast.me.`|
-|**Email address**|Adresse e-mail du responsable de la zone DNS.|`tech.ovh.net.` (le point entre les termes `tech` et `ovh` doit être remplacé par un `@`)|
+|**NS (Name Server)**|Serveur DNS principal déclaré pour le nom de domaine `domain.tld`.|`dns200.anycast.me`.|
+|**Email address**|Adresse e-mail du responsable de la zone DNS.|`tech.ovh.net.` (le point entre les termes `tech` et `ovh` doit être remplacé par un `@`).|
 |**Serial number**|Numéro de série unique qui s'incrémente à chaque modification de la zone DNS.<br>Il est généralement composé de la date de mise à jour au format `YYYYMMDD` suivi du nombre de mises à jour réalisé dans la journée.|`2025091801` : Ici 2 mises à jour (`00` pour 1, `01` pour 2, etc.) ont été faites le 18/09/2025.|
-|**Refresh time**|Intervalle (en secondes) entre chaque actualisation des serveurs DNS secondaires (composant le réseau DNS) avec le serveur DNS principal.|`86400` (24 heures)|
-|**Retry time**|Intervalle (en secondes) entre chaque tentative de réactualisation des paramètres des serveurs DNS secondaires (composant le réseau DNS) avec le serveur DNS principal si celui-ci ne répond pas ou est indisponible.|`3600` (1 heure)|
-|**Expire time**|Délai (en secondes) après lequel les serveurs DNS secondaires (composant le réseau DNS) cessent de répondre aux requêtes DNS si le serveur DNS principal ne s'actualise plus avec eux.|`3600000` (1000 heures, 41,67 jours)|
-|**Minimum TTL**|Durée de vie minimale (en secondes) durant laquelle les enregistrements DNS de la zone DNS sont mis en cache sur les serveurs DNS secondaires (composant le réseau DNS).|`300` (5 minutes)|
+|**Refresh time**|Intervalle (en secondes) entre chaque actualisation des serveurs DNS secondaires (composant le réseau DNS) avec le serveur DNS principal.|`86400` (24 heures).|
+|**Retry time**|Intervalle (en secondes) entre chaque tentative de réactualisation des paramètres des serveurs DNS secondaires (composant le réseau DNS) avec le serveur DNS principal si celui-ci ne répond pas ou est indisponible.|`3600` (1 heure).|
+|**Expire time**|Délai (en secondes) après lequel les serveurs DNS secondaires (composant le réseau DNS) cessent de répondre aux requêtes DNS si le serveur DNS principal ne s'actualise plus avec eux.|`3600000` (1000 heures, 41,67 jours).|
+|**Minimum TTL**|Durée de vie minimale (en secondes) durant laquelle les enregistrements DNS de la zone DNS sont mis en cache sur les serveurs DNS secondaires (composant le réseau DNS).|`300` (5 minutes).|
 
 ///
 
@@ -550,7 +550,7 @@ Voici différentes solutions pour vérifier la configuration d'une zone DNS :
 
 - **La commande « nslookup »** : La commande `nslookup` est disponible sur la plupart des systèmes d'exploitation et permet également de vérifier la configuration de votre zone DNS.
 
-- **Depuis votre espace client OVHcloud** : Pour cela, suivez ces étapes (si la zone DNS active de votre nom de domaine est gérée chez OVHcloud) : 
+- **Depuis votre espace client OVHcloud** : Pour cela, suivez ces étapes (si la zone DNS active de votre nom de domaine est gérée chez OVHcloud) :
     1. Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
     2. Cliquez sur le menu `Zones DNS`{.action}, puis choisissez le nom de domaine concerné.
     3. Dans le tableau de la page qui s'affiche, vous visualiserez l'ensemble des enregistrements DNS déclarés pour votre nom de domaine.
@@ -935,14 +935,14 @@ Cela signifie que le nom de domaine n'est pas géré depuis votre [espace client
 
 Vous pourrez ensuite faire l'une des actions suivantes (si vous êtes le titulaire déclaré sur le WHOIS du nom de domaine): 
 
-- Le nom de domaine est enregistré chez OVHcloud : Vous pourrez effectuer une [procédure de récupération des contacts](/links/transversal/procedure-change-contact) pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
+- Le nom de domaine est enregistré chez OVHcloud : Vous pourrez effectuer une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
 - Le nom de domaine n'est pas enregistré chez OVHcloud : Vous pourrez réaliser une opération de [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) vers OVHcloud pour que votre nom de domaine soit géré dans votre [espace client OVHcloud](/links/manager).
 
 Cas n°2 - Le nom de domaine apparaît dans la liste :
 
 Cela signifie que vous ne disposez pas des droits suffisants pour gérer le nom de domaine depuis votre [espace client OVHcloud](/links/manager). Effectuez une requête [WHOIS](/links/web/domains-whois) pour vérifier que vous êtes bien déclaré en tant que titulaire du nom de domaine.
 
-Vous pourrez ensuite effectuer une [procédure de récupération des contacts](/links/transversal/procedure-change-contact) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager).
+Vous pourrez ensuite effectuer une [procédure de récupération des contacts](/links/transversal/procedure-contact-change) pour que votre nom de domaine soit entièrement géré dans votre [espace client OVHcloud](/links/manager).
 
 ///
 

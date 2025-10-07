@@ -141,7 +141,7 @@ Los nombres de dominio se consideran productos personalizados, ya que se registr
 
 Siga estos pasos:
 
-1. Inicie sesión en su [OVHcloud Control Panel](/links/manager).
+1. Inicie sesión en su [área de cliente de OVHcloud](/links/manager).
 2. Haga clic en su nombre en la esquina superior derecha y elija `Mis soluciones y servicios`{.action}.
 3. En la tabla que aparece, busque la línea correspondiente a su nombre de dominio, haga clic en el botón `...`{.action} a la derecha y luego en `Dar de baja mi servicio`{.action}.
 4. En la página que se muestra, complete el cuestionario y haga clic en el botón `Aceptar`{.action} en la parte inferior.
@@ -212,7 +212,7 @@ Aunque su dominio se muestre en [notación internacionalizada (IDN)](https://es.
 
 > [!alert]
 >
-> <sup>1</sup> : No se recomienda utilizar una dirección de correo electrónico con un nombre de dominio IDN desde un cliente de correo (Outlook, Mail de macOS, etc.). De hecho, algunos clientes de correo aún no interpretan los nombres de dominio con caracteres acentuados, lo que bloquea la transmisión de los correos electrónicos. Cuando un remitente le envía un correo electrónico, recibe un mensaje automático indicando que su dirección de correo electrónico no existe.
+> <sup>1</sup>: No se recomienda utilizar una dirección de correo electrónico con un nombre de dominio IDN desde un cliente de correo (Outlook, Mail de macOS, etc.). De hecho, algunos clientes de correo aún no interpretan los nombres de dominio con caracteres acentuados, lo que bloquea la transmisión de los correos electrónicos. Cuando un remitente le envía un correo electrónico, recibe un mensaje automático indicando que su dirección de correo electrónico no existe.
 >
 > **Se recomienda encarecidamente reservar, además de su nombre de dominio con caracteres acentuados, el mismo nombre de dominio sin estos acentos, para evitar cualquier incompatibilidad en los intercambios de correos electrónicos.**
 
@@ -280,7 +280,7 @@ En primer lugar, realice una consulta [WHOIS](/links/web/domains-whois) para sab
 
 **Caso n°1.A** - Su nombre de dominio está registrado en OVHcloud y está declarado como titular:
 
-Realice una [procedimiento de recuperación de contactos](/links/transversal/procedure-change-contact) para que su nombre de dominio sea gestionado completamente en su [área de cliente de OVHcloud](/links/manager). De esta manera, ya no tendrá que contactar a la persona que gestionaba anteriormente su nombre de dominio.
+Realice una [procedimiento de recuperación de contactos](/links/transversal/procedure-contact-change) para que su nombre de dominio sea gestionado completamente en su [área de cliente de OVHcloud](/links/manager). De esta manera, ya no tendrá que contactar a la persona que gestionaba anteriormente su nombre de dominio.
 
 **Caso n°1.B** - Su nombre de dominio está registrado en OVHcloud pero no está declarado como titular:
 
@@ -300,7 +300,7 @@ En primer lugar, realice una consulta [WHOIS](/links/web/domains-whois) para ver
 
 **Caso n°1** - Está declarado como titular del nombre de dominio:
 
-Realice una [procedimiento de recuperación de contactos](/links/transversal/procedure-change-contact) para que su nombre de dominio sea gestionado completamente en su [área de cliente de OVHcloud](/links/manager). De esta manera, ya no tendrá que contactar a la persona que gestionaba anteriormente su nombre de dominio.
+Realice una [procedimiento de recuperación de contactos](/links/transversal/procedure-contact-change) para que su nombre de dominio sea gestionado completamente en su [área de cliente de OVHcloud](/links/manager). De esta manera, ya no tendrá que contactar a la persona que gestionaba anteriormente su nombre de dominio.
 
 **Caso n°2** - No está declarado como titular del nombre de dominio:
 
@@ -439,7 +439,7 @@ Para ello, siga estos pasos:
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
 3. Seleccione la pestaña `Servidores DNS`{.action} una vez posicionado en el nombre de dominio deseado.
-4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla «servidores DNS». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
+4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla « servidores DNS ». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
 
 Podrá modificar los servidores DNS para su nombre de dominio en la página que aparece.
 
@@ -528,13 +528,13 @@ domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2
 
 |Elemento en el resultado|Descripción|Correspondencia en el ejemplo anterior|
 |---|---|---|
-|**NS (Name Server)**|Servidor DNS principal declarado para el nombre de dominio `domain.tld`.|`dns200.anycast.me.`|
-|**Email address**|Dirección de correo electrónico del responsable de la zona DNS.|`tech.ovh.net.` (el punto entre los términos `tech` y `ovh` debe reemplazarse por un `@`)|
-|**Serial number**|Número de serie único que se incrementa cada vez que se modifica la zona DNS.<br>Generalmente está compuesto por la fecha de actualización en formato `YYYYMMDD` seguido del número de actualizaciones realizadas ese día.|`2025091801` : Aquí se realizaron 2 actualizaciones (`00` para 1, `01` para 2, etc.) el 18/09/2025.|
-|**Refresh time**|Intervalo (en segundos) entre cada actualización de los servidores DNS secundarios (componentes de la red DNS) con el servidor DNS principal.|`86400` (24 horas)|
-|**Retry time**|Intervalo (en segundos) entre cada intento de actualización de los parámetros de los servidores DNS secundarios (componentes de la red DNS) con el servidor DNS principal si este no responde o está fuera de servicio.|`3600` (1 hora)|
-|**Expire time**|Plazo (en segundos) después del cual los servidores DNS secundarios (componentes de la red DNS) dejan de responder a las consultas DNS si el servidor DNS principal no se actualiza con ellos.|`3600000` (1000 horas, 41,67 días)|
-|**Minimum TTL**|Duración de vida mínima (en segundos) durante la cual los registros DNS de la zona DNS se almacenan en caché en los servidores DNS secundarios (componentes de la red DNS).|`300` (5 minutos)|
+|**NS (Name Server)**|Servidor DNS principal declarado para el nombre de dominio `domain.tld`.|`dns200.anycast.me`.|
+|**Email address**|Dirección de correo electrónico del responsable de la zona DNS.|`tech.ovh.net.` (el punto entre los términos `tech` y `ovh` debe reemplazarse por un `@`).|
+|**Serial number**|Número de serie único que se incrementa cada vez que se modifica la zona DNS.<br>Generalmente está compuesto por la fecha de actualización en formato `YYYYMMDD` seguido del número de actualizaciones realizadas ese día.|`2025091801`: Aquí se realizaron 2 actualizaciones (`00` para 1, `01` para 2, etc.) el 18/09/2025.|
+|**Refresh time**|Intervalo (en segundos) entre cada actualización de los servidores DNS secundarios (componentes de la red DNS) con el servidor DNS principal.|`86400` (24 horas).|
+|**Retry time**|Intervalo (en segundos) entre cada intento de actualización de los parámetros de los servidores DNS secundarios (componentes de la red DNS) con el servidor DNS principal si este no responde o está fuera de servicio.|`3600` (1 hora).|
+|**Expire time**|Plazo (en segundos) después del cual los servidores DNS secundarios (componentes de la red DNS) dejan de responder a las consultas DNS si el servidor DNS principal no se actualiza con ellos.|`3600000` (1000 horas, 41,67 días).|
+|**Minimum TTL**|Duración de vida mínima (en segundos) durante la cual los registros DNS de la zona DNS se almacenan en caché en los servidores DNS secundarios (componentes de la red DNS).|`300` (5 minutos).|
 
 ///
 
@@ -604,7 +604,7 @@ Una vez recuperado el número de serie, siga estos pasos:
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 3. A la derecha o debajo de la tabla, haga clic en `Editar en modo de texto`{.action}.
-4. En la ventana que se abre, identifique la segunda línea, que, siguiendo nuestro ejemplo, sería equivalente a esta: `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
+4. En la ventana que se abre, identifique la segunda línea, que, siguiendo nuestro ejemplo, sería equivalente a esta: `@ IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
 5. Compare el número de serie recuperado a través del terminal con el que se muestra en su área de cliente de OVHcloud.
 
 **Caso n°1** - Los dos números de serie coinciden:
@@ -815,7 +815,7 @@ Esto significa que la zona DNS del nombre de dominio ya existe en su [área de c
 
 Esto significa que la zona DNS del nombre de dominio está gestionada por otro identificador de cliente de OVHcloud que no es el suyo.
 
-Conforme a la **R**eglamento **G**eneral de **P**rotección de **D**atos (**RGPD**), el identificador de cliente en el que se encuentra la zona DNS permanecerá confidencial.
+Conforme a la **R**eglamento **G**eneral de **P**rotección de **D**atos (**RGPD**), el identificador de cliente en el que se encuentra la zona DNS permanecerá confidencial. 
 
 En esta situación y si no conoce este otro identificador de cliente, le invitamos a abrir una solicitud de asistencia desde el [centro de ayuda](https://help.ovhcloud.com/csm?id=csm_get_help) para recuperar la gestión de la zona DNS.
 
@@ -845,7 +845,7 @@ Siga estos pasos:
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
 3. Seleccione la pestaña `Servidores DNS`{.action} una vez posicionado en el nombre de dominio correspondiente.
-4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla «servidores DNS». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
+4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla « servidores DNS ». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
 
 Podrá modificar los servidores DNS para su nombre de dominio en la página que aparece.
 
@@ -866,7 +866,7 @@ Siga estos pasos:
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
 3. Seleccione la pestaña `Servidores DNS`{.action} una vez posicionado en el nombre de dominio correspondiente.
-4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla «servidores DNS». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
+4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla « servidores DNS ». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
 
 Podrá personalizar los servidores DNS para su nombre de dominio en la página que aparece.
 
@@ -887,7 +887,7 @@ Siga estos pasos:
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Dominios`{.action} y seleccione el dominio correspondiente.
 3. Seleccione la pestaña `Servidores DNS`{.action} una vez posicionado en el nombre de dominio correspondiente.
-4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla «servidores DNS». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
+4. Para modificar los servidores DNS, haga clic en el botón `Cambiar los servidores DNS`{.action} situado a la derecha de la tabla « servidores DNS ». Dependiendo de la resolución de su pantalla, el botón puede estar debajo de la tabla.
 
 Podrá reemplazar los servidores DNS para su nombre de dominio por los de OVHcloud en la página que aparece.
 
@@ -935,14 +935,14 @@ Esto significa que el nombre de dominio no está gestionado desde su [área de c
 
 Podrá realizar una de las siguientes acciones (si es el titular declarado en el WHOIS del nombre de dominio):
 
-- El nombre de dominio está registrado en OVHcloud: Podrá realizar una [procedimiento de recuperación de contactos](/links/transversal/procedure-change-contact) para que su nombre de dominio sea gestionado en su [área de cliente de OVHcloud](/links/manager).
+- El nombre de dominio está registrado en OVHcloud: Podrá realizar una [procedimiento de recuperación de contactos](/links/transversal/procedure-contact-change) para que su nombre de dominio sea gestionado en su [área de cliente de OVHcloud](/links/manager).
 - El nombre de dominio no está registrado en OVHcloud: Podrá realizar una operación de [transferencia entrante](/pages/web_cloud/domains/transfer_incoming_generic_domain) hacia OVHcloud para que su nombre de dominio sea gestionado en su [área de cliente de OVHcloud](/links/manager).
 
 **Caso n°2** - El nombre de dominio aparece en la lista:
 
 Esto significa que no dispone de los derechos suficientes para gestionar el nombre de dominio desde su [área de cliente de OVHcloud](/links/manager). Realice una consulta [WHOIS](/links/web/domains-whois) para verificar que está declarado como titular del nombre de dominio.
 
-Podrá realizar una [procedimiento de recuperación de contactos](/links/transversal/procedure-change-contact) para que su nombre de dominio sea gestionado completamente en su [área de cliente de OVHcloud](/links/manager).
+Podrá realizar una [procedimiento de recuperación de contactos](/links/transversal/procedure-contact-change) para que su nombre de dominio sea gestionado completamente en su [área de cliente de OVHcloud](/links/manager).
 
 ///
 
@@ -951,9 +951,9 @@ Podrá realizar una [procedimiento de recuperación de contactos](/links/transve
 [FAQ soluciones de correo electrónico de OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 [FAQ Web Hosting](/pages/web_cloud/web_hosting/faq-web_hosting)
- 
+
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
- 
+
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
- 
+
 Interactúe con nuestra [comunidad de usuarios](/links/community).

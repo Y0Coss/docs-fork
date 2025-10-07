@@ -280,7 +280,7 @@ Najpierw wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby sprawdzić, gd
 
 Przypadek n°1.A - Twoja nazwa domeny jest zarejestrowana w OVHcloud i jesteś zadeklarowany jako jej właściciel :
 
-Wykonaj [procedurę odzyskania kontaktów](/links/transversal/procedure-change-contact), aby Twoja nazwa domeny była całkowicie zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager). Dzięki temu nie będziesz już musiał kontaktować się z osobą, która wcześniej zarządzała Twoją nazwą domeny.
+Wykonaj [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-change), aby Twoja nazwa domeny była całkowicie zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager). Dzięki temu nie będziesz już musiał kontaktować się z osobą, która wcześniej zarządzała Twoją nazwą domeny.
 
 Przypadek n°1.B - Twoja nazwa domeny jest zarejestrowana w OVHcloud, ale nie jesteś zadeklarowany jako jej właściciel :
 
@@ -300,7 +300,7 @@ Najpierw wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby upewnić się,
 
 Przypadek n°1 - Jesteś zadeklarowany jako właściciel nazwy domeny :
 
-Wykonaj [procedurę odzyskania kontaktów](/links/transversal/procedure-change-contact), aby Twoja nazwa domeny była całkowicie zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager). Dzięki temu nie będziesz już musiał kontaktować się z osobą, która wcześniej zarządzała Twoją nazwą domeny.
+Wykonaj [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-change), aby Twoja nazwa domeny była całkowicie zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager). Dzięki temu nie będziesz już musiał kontaktować się z osobą, która wcześniej zarządzała Twoją nazwą domeny.
 
 Przypadek n°2 - Nie jesteś zadeklarowany jako właściciel nazwy domeny :
 
@@ -935,14 +935,14 @@ Oznacza to, że domena nie jest zarządzana z Twojego [Panelu klienta OVHcloud](
 
 Następnie możesz wykonać jedną z poniższych czynności (jeśli jesteś właścicielem domeny zgodnie z WHOIS):
 
-- Domena jest zarejestrowana u OVHcloud: Możesz przeprowadzić [procedurę odzyskania kontaktów](/links/transversal/procedure-change-contact), aby Twoja domena była zarządzana w Twoim [panelu klienta OVHcloud](/links/manager).
+- Domena jest zarejestrowana u OVHcloud: Możesz przeprowadzić [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-change), aby Twoja domena była zarządzana w Twoim [panelu klienta OVHcloud](/links/manager).
 - Domena nie jest zarejestrowana u OVHcloud: Możesz przeprowadzić [przesunięcie domeny](/pages/web_cloud/domains/transfer_incoming_generic_domain) do OVHcloud, aby Twoja domena była zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager).
 
 Przypadek nr 2 - Domena pojawia się na liście:
 
 Oznacza to, że nie masz wystarczających uprawnień do zarządzania domeną z Twojego [Panelu klienta OVHcloud](/links/manager). Wykonaj zapytanie [WHOIS](/links/web/domains-whois), aby sprawdzić, czy jesteś faktycznie właścicielem domeny.
 
-Następnie możesz przeprowadzić [procedurę odzyskania kontaktów](/links/transversal/procedure-change-contact), aby Twoja domena była całkowicie zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager).
+Następnie możesz przeprowadzić [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-change), aby Twoja domena była całkowicie zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager).
 
 ///
 
