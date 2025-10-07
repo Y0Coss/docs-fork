@@ -38,7 +38,7 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.  
 Wir empfehlen, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, oder Ihre Fragen in der OVHcloud Community zu stellen. OVHcloud kann keine technische Unterstützung für die Nutzung externer Tools anbieten.
 
-Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 
 ///
 
@@ -145,7 +145,7 @@ OVHcloud bietet außerdem eine Webanwendung an, mit der Sie Ihre E-Mail-Adresse 
 
 ### Sicherung Ihres E-Mail-Accounts erstellen
 
-Wenn Sie eine Aktion durchführen müssen, die zu Datenverlusten Ihres E-Mail-Accounts führen könnte, empfehlen wir Ihnen, vorher eine Sicherung des betroffenen E-Mail-Accounts durchzuführen. Dazu konsultieren Sie den Abschnitt "**Exportieren**" im Bereich "**Thunderbird**" unserer Anleitung "[Manuelle Migration Ihrer E-Mail-Adresse](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+Wenn Sie eine Aktion durchführen müssen, die zu Datenverlusten Ihres E-Mail-Accounts führen könnte, empfehlen wir Ihnen, vorher eine Sicherung durchzuführen. Dazu konsultieren Sie den Abschnitt "**Exportieren**" im Bereich "**Thunderbird**" unserer Anleitung "[Manuelle Migration Ihrer E-Mail-Adresse](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Vorhandene Einstellungen ändern
 
