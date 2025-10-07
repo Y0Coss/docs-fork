@@ -18,7 +18,7 @@ At OVHcloud, we believe in the importance of staying connected with our communit
 
 ## Steps to Follow
 
-1. **Visit Our Website**: Go to the OVHcloud Startup Program website.
+1. **Visit Our Website**: Go to the [OVHcloud Startup Program website](links/transversal/startup-program).
 2. **Fill Out the Form**: Complete the form with your information. Make sure to provide a valid email address to receive the newsletter.
 3. **Enjoy the Benefits**: Once subscribed, you can expect to receive our newsletter each month, filled with useful information and exclusive offers.
 

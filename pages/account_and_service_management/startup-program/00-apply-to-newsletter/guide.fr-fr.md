@@ -1,5 +1,5 @@
 ---
-title: 'Startup Program - Comment souscrire à notre newsletter ?'
+title: 'Comment souscrire à notre newsletter Startup Program'
 excerpt: ''
 updated: 2025-10-07
 ---
@@ -18,7 +18,7 @@ Chez OVHcloud, nous croyons en l'importance de rester connecté avec notre commu
 
 ## Étapes à Suivre
 
-1. **Visitez notre site web** : Rendez-vous sur le site web du programme Startup d'OVHcloud.
+1. **Visitez notre site web** : Rendez-vous sur le [site web du Startup Program d'OVHcloud](/links/transversal/startup-program).
 2. **Remplissez le Formulaire** : Complétez le formulaire avec vos informations. Assurez-vous de fournir une adresse email valide pour recevoir la newsletter.
 3. **Profitez des Avantages** : Une fois inscrit, attendez-vous à recevoir notre newsletter chaque mois, remplie d'informations utiles et d'offres exclusives.
 

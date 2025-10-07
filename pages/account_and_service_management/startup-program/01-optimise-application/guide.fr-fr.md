@@ -1,5 +1,5 @@
 ---
-title: 'Comment optimiser ma candidature au Startup Program?'
+title: 'Comment optimiser votre candidature au Startup Program'
 excerpt: ''
 updated: 2025-10-07
 ---
