@@ -83,6 +83,43 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
+> Via the OVHcloud API
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/snapshot
+>> >
+>>
+>> Parameters:
+>>
+>> > **serviceName** *
+>> >
+>> >> The OVHcloud project ID.
+>>
+>> > **regionName** *
+>> >
+>> >> The region name where the source instance is located.
+>>
+>> > **instanceId** *
+>> >
+>> >> The unique instance ID.
+>>
+>> > **snapshotName** *
+>> >
+>> >> The name of the snapshot (local backup) to create.
+>>
+>> > **distantRegionName (optionnel)** *
+>> >
+>> >> The remote region name where the distant backup will be stored.
+>>
+>> > **distantSnapshotName (optionnel)** *
+>> >
+>> >> The name of the distant backup to create in the remote region.
+>>
+>> > [!primary]
+>> >
+>> > Only create a distant backup if the parameters related to the remote region (**distantRegionName** and **distantSnapshotName**) are provided.
+>> >
+>>
 > Via Openstack
 >> ```bash
 >> $ openstack server list

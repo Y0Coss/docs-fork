@@ -83,6 +83,43 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
+> Via the OVHcloud API
+>> > [!api]
+>> >
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/snapshot
+>> >
+>>
+>> Parameters:
+>>
+>> > **serviceName** *
+>> >
+>> >> Identifiant du projet OVHcloud.
+>>
+>> > **regionName** *
+>> >
+>> >> Nom de la région où se situe l’instance source.
+>>
+>> > **instanceId** *
+>> >
+>> >> Identifiant unique de l’instance concernée.
+>>
+>> > **snapshotName** *
+>> >
+>> >> Nom du snapshot (sauvegarde locale) à créer.
+>>
+>> > **distantRegionName (optionnel)** *
+>> >
+>> >> Nom de la région distante où le backup sera stocké.
+>>
+>> > **distantSnapshotName (optionnel)** *
+>> >
+>> >> Nom du backup distant à créer dans la région distante.
+>>
+>> > [!primary]
+>> >
+>> > Ne créez un backup distant que si les paramètres relatifs à la région distante (**distantRegionName** et **distantSnapshotName**) sont renseignés.
+>> >
+>>
 > Via Openstack
 >> ```bash
 >> $ openstack server list
