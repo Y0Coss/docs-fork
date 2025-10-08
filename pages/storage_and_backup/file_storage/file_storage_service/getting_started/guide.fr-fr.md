@@ -1,7 +1,7 @@
 ---
-title: File Storage Service - Premiers pas (Alpha)
-excerpt: Découvrez comment configurer et gérer le service File Storage d’OVHcloud avec votre projet OpenStack. Ce guide couvre l’installation de la CLI, la création de partages, l’accès des clients et le montage sur vos machines virtuelles.
-updated: 2025-13-08
+title: "File Storage Service - Premiers pas (Alpha)"
+excerpt: "Découvrez comment configurer et gérer le service File Storage d’OVHcloud avec votre projet OpenStack. Ce guide couvre l’installation de la CLI, la création de partages, l’accès des clients et le montage sur vos machines virtuelles."
+updated: 2025-10-08
 ---
 
 ## Objectif
@@ -17,8 +17,8 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 
 ## Prérequis
 
-- Votre projet est autorisé pour Manila Alpha (inscrivez-vous [ici](https://labs.ovhcloud.com/en/file-storage/){.external})
-- Vous disposez déjà d’un [réseau privé](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) dans votre projet
+- Votre projet est autorisé pour Manila Alpha (inscrivez-vous [ici](https://labs.ovhcloud.com/en/file-storage/))
+- Vous disposez déjà d’un [réseau privé](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) dans votre projet Public Cloud
 - Une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 - Un [environnement CLI OpenStack prêt à l’emploi](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
 
@@ -29,9 +29,10 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 > Actuellement, le service File Storage ne peut être consulté et géré que via la CLI OpenStack avec le plugin Manila. D’autres interfaces seront disponibles à l’avenir.
 >
 
-
 > [!tabs]
-> via la CLI OpenStack avec le plugin Manila
+> Via la CLI OpenStack avec le plugin Manila
+>> **1\. Installer le plugin CLI Manila**
+>>
 >> Si les commandes Manila ne sont pas encore disponibles, installez le plugin :
 >>
 >> ```bash
@@ -51,7 +52,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> - share network create
 >> - share access create
 >>
->> 2. Vérifier les types de partages disponibles
+>> **2\. Vérifier les types de partages disponibles**
 >>
 >> Listez les types de partages disponibles dans votre région :
 >>
@@ -74,7 +75,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> > Remarque : Pour le type generic_0, vous devez obligatoirement choisir un share network, sinon le partage ne pourra pas être créé.
 >> >
 >>
->> 3. Créer un Share Network
+>> **3\. Créer un Share Network**
 >>
 >> Identifiez votre réseau privé et votre sous-réseau :
 >>
@@ -107,7 +108,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >>
 >> > [!primary]
 >> >
->> > Remarque : Remplacez <my-share-network-name> par le nom que vous souhaitez donner à votre share network.
+>> > Remarque : Remplacez `<my-share-network-name>` par le nom que vous souhaitez donner à votre share network.
 >> >
 >>
 >> Vérifiez le share network :
@@ -116,7 +117,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> openstack share network list --os-region-name <REGION_NAME>
 >> ```
 >>
->> 4. Créer un partage NFS
+>> **4\. Créer un partage NFS**
 >>
 >> Créez un partage NFS de 150 Go :
 >>
@@ -140,7 +141,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> openstack share list --os-region-name <REGION_NAME>
 >> ```
 >>
->> 5. Autoriser une VM cliente
+>> **5\. Autoriser une VM cliente**
 >>
 >> Assurez-vous que votre VM cliente se trouve dans le même réseau privé que le partage.
 >>
@@ -171,7 +172,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> openstack share access list --os-region-name <REGION_NAME> <my-first-share-name>
 >> ```
 >>
->> 6. Récupérer le chemin d’export
+>> **6\. Récupérer le chemin d’export**
 >>
 >> Obtenez l’emplacement d’export NFS :
 >>
@@ -190,7 +191,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> > Remarque : Ce chemin d’export est utilisé pour monter le partage sur votre VM cliente.
 >> >
 >>
->> 7. Monter le partage sur votre VM cliente
+>> **7\. Monter le partage sur votre VM cliente**
 >>
 >> Connectez-vous à votre VM et installez les utilitaires NFS :
 >>
@@ -216,7 +217,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> > Remarque : Remplacez le chemin d’export par celui récupéré pour votre partage.
 >> >
 >>
->> 8. Vérifier la capacité et l’utilisation
+>> **8\. Vérifier la capacité et l’utilisation**
 >>
 >> Affichez l’espace disponible sur le partage monté :
 >>
@@ -237,7 +238,7 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> > Remarque : Cela vous permet de suivre la capacité de stockage et l’utilisation de votre partage NFS.
 >> >
 >>
->> 9. Gérer le cycle de vie du partage
+>> **9\. Gérer le cycle de vie du partage**
 >>
 >> Redimensionner le partage :
 >>
@@ -267,11 +268,11 @@ Il est accessible via OpenStack CLI, API, Manila CSI et Terraform.
 >> > Remarque : Assurez-vous qu’aucun partage actif n’utilise le réseau avant de le supprimer.
 >> >
 >>
->> 10. Dépannage
+>> **10\. Dépannage**
 >>
 >> | Symptôme	                 | Cause	                                        | Solution                                                                                   |
 >> | --------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------ |
->> | `Unknown command ['share']` |	CLI Manila non installée                        | Installez-la avec `sudo apt install python3-manilaclient`                                  |
+>> | `Unknown command ['share']` | CLI Manila non installée                         | Installez-la avec `sudo apt install python3-manilaclient`                                  |
 >> | `Share network must be set` | Utilisation d’un type de partage DHSS=True       | Fournissez `--share-network`                                                               |
 >> | Cannot mount NFS            | IP non autorisée ou réseau incorrect             | Assurez-vous que la VM est sur le même sous-réseau privé et que la règle d’accès est créée |
 >> | `403 Forbidden`             | Projet non autorisé pour Manila                  | Assurez-vous d’être inscrit à l’Alpha                                                      |

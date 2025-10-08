@@ -1,10 +1,10 @@
 ---
 title: File Storage Service - Getting started (Alpha)
-excerpt: Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs.
-updated: 2025-13-08
+excerpt: "Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs."
+updated: 2025-10-08
 ---
 
-## Objective 
+## Objective
 
 OVHcloud provides a File Storage Service powered by OpenStack Manila. This service offers managed NFS shares on private networks, supporting ReadWriteMany (RWX) access across multiple instances or Kubernetes pods.
 
@@ -17,7 +17,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 
 ## Requirements
 
-- Your project is authorized for Manila Alpha (register [here](https://labs.ovhcloud.com/en/file-storage/){.external})
+- Your project is authorized for Manila Alpha (register [here](https://labs.ovhcloud.com/en/file-storage/))
 - You already have a [private network](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) available in your project.
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - An [OpenStack CLI ready environment](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api)
@@ -30,8 +30,8 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >
 
 > [!tabs]
-> via OpenStack CLI with the Manila plugin
->> 1. Install the Manila CLI Plugin
+> Via the OpenStack CLI with the Manila plugin
+>> **1\. Install the Manila CLI Plugin**
 >>
 >> If the Manila commands are not yet available, install the plugin:
 >>
@@ -52,7 +52,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> - share network create
 >> - share access create
 >>
->> 2. Check Available Share Types
+>> **2\. Check Available Share Types**
 >>
 >> List the share types available in your region:
 >>
@@ -75,7 +75,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> > Note: For the generic_0 type, you must always select a share network, otherwise the share cannot be created.
 >> >
 >>
->> 3. Create a Share Network
+>> **3\. Create a Share Network**
 >>
 >> Identify your private network and subnet:
 >>
@@ -108,7 +108,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 >> > [!primary]
 >> >
->> > Note: Replace <my-share-network-name> with your chosen name for the share network.
+>> > Note: Replace `<my-share-network-name>` with your chosen name for the share network.
 >> >
 >>
 >> Verify the share network:
@@ -117,7 +117,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> openstack share network list --os-region-name <REGION_NAME>
 >> ```
 >>
->> 4. Create an NFS Share
+>> **4\. Create an NFS Share**
 >>
 >> Create a 150 GB NFS share:
 >>
@@ -141,7 +141,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> openstack share list --os-region-name <REGION_NAME>
 >> ```
 >>
->> 5. Authorize a Client VM
+>> **5\. Authorize a Client VM**
 >>
 >> Ensure your client VM is in the same private network as the share.
 >>
@@ -172,7 +172,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> openstack share access list --os-region-name <REGION_NAME> <my-first-share-name>
 >> ```
 >>
->> 6. Retrieve the Export Path
+>> **6\. Retrieve the Export Path**
 >>
 >> Get the NFS export location:
 >>
@@ -191,7 +191,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> > Note: This export path is used to mount the share on your client VM.
 >> >
 >>
->> 7. Mount the Share on Your Client VM
+>> **7\. Mount the Share on Your Client VM**
 >>
 >> Connect to your VM and install NFS utilities:
 >>
@@ -217,7 +217,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> > Note: Replace the export path with the one retrieved for your share.
 >> >
 >>
->> 8. Check capacity and usage
+>> **8\. Check capacity and usage**
 >>
 >> Display available space on the mounted share:
 >>
@@ -238,7 +238,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> > Note: This lets you monitor the storage capacity and usage of your NFS share.
 >> >
 >>
->> 9. Manage the share lifecycle
+>> **9\. Manage the share lifecycle**
 >>
 >> Resize the share:
 >>
@@ -268,11 +268,11 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> > Note: Ensure no active shares are using the network before deleting it.
 >> >
 >>
->> 10. Troubleshooting
+>> **10\. Troubleshooting**
 >>
 >> | Symptom	                  | Cause	                           | Solution                                                           |
 >> | --------------------------- | ---------------------------------- | ------------------------------------------------------------------ |
->> | `Unknown command ['share']` |	Manila CLI not installed           | Install it with `sudo apt install python3-manilaclient`            |
+>> | `Unknown command ['share']` | Manila CLI not installed           | Install it with `sudo apt install python3-manilaclient`            |
 >> | `Share network must be set` | Using a DHSS=True share type       | Provide `--share-network`                                          |
 >> | Cannot mount NFS            | IP not authorized or wrong network | Ensure VM is in the same private subnet and access rule is created |
 >> | `403 Forbidden`             | Project not whitelisted for Manila | Ensure you are registered to Alpha                                 |
