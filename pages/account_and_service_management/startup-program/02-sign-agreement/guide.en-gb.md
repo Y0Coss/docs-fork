@@ -1,7 +1,7 @@
 ---
-title: 'How to sign your Startup Program contract'
+title: "How to sign your Startup Program contract"
 excerpt: ''
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 ## Objective

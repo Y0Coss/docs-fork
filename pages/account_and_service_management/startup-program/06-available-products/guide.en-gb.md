@@ -1,7 +1,7 @@
 ---
-title: 'Which products are available to use with Startup Program credits?'
+title: "Which products are available to use with Startup Program credits?"
 excerpt: ''
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 ## Objective
@@ -78,14 +78,14 @@ Here is a summary of eligible solutions:
 |---|---|
 | **Standard** | Free |
 | **Premium** | ✅ |
-| **Business** | ✅ (For Scale level only)|
+| **Business** | ✅ (For Scale level only) |
 | **Enterprise** | ❌ |
 
 ### What to do if you order non-eligible solutions?
 
 If non-eligible solutions are ordered by mistake, follow this procedure:
 
-- **Instance transfer**: f you ordered non-eligible GPU instances, we will contact you to stop and recreate them on another client account not in the Startup Program.
+- **Instance transfer**: If you ordered non-eligible GPU instances, we will contact you to stop and recreate them on another client account not in the Startup Program.
   - Consult [our guide](/pages/public_cloud/compute/change_project_contacts) to transfer your instances to another customer account.
 - **If you choose not to stop the instances**: If you choose not to stop the non-eligible instances, OVHcloud may terminate your participation in the Startup Program.
 

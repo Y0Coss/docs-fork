@@ -1,7 +1,7 @@
 ---
 title: "How to check your Startup Program credits"
 excerpt: ''
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 ## Objective

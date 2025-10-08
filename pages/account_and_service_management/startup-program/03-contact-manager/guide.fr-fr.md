@@ -1,7 +1,7 @@
 ---
-title: 'Comment contacter un responsable du Startup Program et/ou demander une consultation technique'
+title: "Comment contacter un responsable du Startup Program et/ou demander une consultation technique"
 excerpt: ''
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 ## Objectif

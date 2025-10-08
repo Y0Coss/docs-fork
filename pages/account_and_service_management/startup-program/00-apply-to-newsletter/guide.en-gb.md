@@ -1,7 +1,7 @@
 ---
-title: 'Startup Program - How to apply to our newsletter?'
+title: "Startup Program - How to apply to our newsletter?"
 excerpt: ''
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 ## Introduction

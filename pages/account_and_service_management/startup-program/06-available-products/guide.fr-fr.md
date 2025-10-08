@@ -1,7 +1,7 @@
 ---
-title: 'Quels produits sont disponibles avec les crédits du Startup Program ?'
+title: "Quels produits sont disponibles avec les crédits du Startup Program ?"
 excerpt: ''
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 ## Objectif
@@ -78,7 +78,7 @@ Voici un résumé des solutions éligibles :
 |---|---|
 | **Standard** | Free |
 | **Premium** | ✅ |
-| **Business** | ✅ (For Scale level only)|
+| **Business** | ✅ (For Scale level only) |
 | **Enterprise** | ❌ |
 
 ### Que faire en cas d’erreur de commande de GPU non-éligibles ?

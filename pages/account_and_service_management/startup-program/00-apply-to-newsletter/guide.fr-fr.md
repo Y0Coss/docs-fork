@@ -1,7 +1,7 @@
 ---
-title: 'Comment souscrire à notre newsletter Startup Program'
+title: "Comment souscrire à notre newsletter Startup Program"
 excerpt: ''
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 ## Introduction

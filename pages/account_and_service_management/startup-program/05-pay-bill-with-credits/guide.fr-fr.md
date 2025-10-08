@@ -1,7 +1,7 @@
 ---
 title: "Comment payer une facture avec mes crédits du Startup Program"
 excerpt: ''
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 ## Objectif
