@@ -28,7 +28,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 
 - Avoir une instance [Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- CLI OpenStack. Consultez notre guide « [Comment préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) ».
+- CLI OpenStack. Consultez notre guide « [Comment préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api) ». (optionnel)
 
 ## En pratique
 
@@ -61,10 +61,10 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> Renseignez un nom pour la sauvegarde. Prenez connaissance des informations tarifaires et cliquez sur `Confirmer`{.action}.
 >>
->> ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
+>> ![public-cloud-instance-backup](images/createbackup2bis.png){.thumbnail}
 >>
 >> ///
->>
+<!-- >>
 >> /// details | Sauvegarde distante
 >>
 >> Renseignez un nom pour la sauvegarde locale dans le champ `Saisissez le nom de votre backup :`.
@@ -73,7 +73,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> Ensuite, `activez`{.action} l’option permettant d’ajouter une sauvegarde distante, puis indiquez le nom de cette sauvegarde, sélectionnez sa région de destination et cliquez sur `Confirmer`{.action}.
 >>
->> ///
+>> /// -->
 >>
 >> Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, dans la section `Instance Backup`{.action} sous la rubrique **Compute** dans le menu de gauche, le statut `Backup en cours` sera affiché pendant le processus.
 >>

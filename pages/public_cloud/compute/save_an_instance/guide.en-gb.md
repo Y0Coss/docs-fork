@@ -28,7 +28,7 @@ You can create a single backup of an instance or configure a schedule in order t
 
 - A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
-- OpenStack CLI. Use [our guide to know how to prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api).
+- OpenStack CLI. Use [our guide to know how to prepare the environment to use the OpenStack API](/pages/public_cloud/public_cloud_cross_functional/prepare_the_environment_for_using_the_openstack_api). (optional)
 
 ## Instructions
 
@@ -61,10 +61,10 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> Enter a name for the backup. Review the pricing information and click `Confirm`{.action}.
 >>
->> ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
+>> ![public-cloud-instance-backup](images/createbackup2bis.png){.thumbnail}
 >>
 >> ///
->>
+<!-- >>
 >> /// details | Distant backup
 >>
 >> Enter a name for the local backup in the `Enter the name of your backup :` field.
@@ -73,7 +73,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> Next, `activate`{.action} the option to add a remote backup, then specify the name of this backup, select its destination region and click `Confirm`{.action}.
 >>
->> ///
+>> /// -->
 >>
 >> It is not possible to monitor backup progress in real time. However, in the `Instance Backup`{.action} section under **Compute** in the left-hand menu, the status `Backup in progress` will be displayed during the process.
 >>
