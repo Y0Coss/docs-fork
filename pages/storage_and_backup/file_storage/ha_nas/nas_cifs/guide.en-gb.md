@@ -10,7 +10,7 @@ Configure and mount an OVHcloud HA-NAS storage space using CIFS protocol.
 
 ## Requirements
 
-- a [Dedicated Server](/links/bare-metal/bare-metal) **or** a [VPS](/links/bare-metal/vps) **or** a [Public Cloud Instance](/links/public-cloud/public-cloud) with a Windows distribution
+- a [Dedicated Server](/links/bare-metal/bare-metal) **or** a [VPS](/links/bare-metal/vps) **or** a [Public Cloud Instance](/links/public-cloud/public-cloud)
 - a [HA-NAS solution](/links/storage/nas-ha)
 
 ### Settings for Windows
