@@ -199,6 +199,7 @@ public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: Ope
 public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
 public-cloud-storage-block-storage: Block Storage
 public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
+public-cloud-storage-file-storage: File Storage
 public-cloud-integrations: Integrations
 public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
