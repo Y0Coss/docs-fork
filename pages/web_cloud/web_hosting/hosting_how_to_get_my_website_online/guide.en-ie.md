@@ -1,7 +1,7 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2025-05-23
+updated: 2025-10-08
 ---
 
 ## Objective
@@ -102,9 +102,11 @@ If you are migrating an existing website, you can recover your existing database
 
 If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](/links/web/hosting), a [Web Cloud Databases](/links/web/databases)) you will need your username and password, the name of the database and the address of the server. You can now proceed to the next step.
 
-If you want to create a new database with OVHcloud, log in to your [OVHcloud Control Panel](/links/manager), then click on `Hosting plans`{.action}. Select the name of the hosting plan concerned and click on the `Database`{.action} tab.
+If you want to create a new database with OVHcloud, log in to the [OVHcloud Control Panel](/links/manager), then click on `Hosting plans`{.action}. Select the name of the Hosting plan concerned, and click on the `Databases`{.action} tab.
 
-Now click the `Create a database`{.action} button, or, if this button is not shown, click on `Actions`{.action}, then on `Create a database`{.action}. Follow the instructions shown.
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+
+Now click the `Create a database`{.action} button, or if this button is not visible, click on `Actions`{.action} and then `Create a database`{.action}. Now follow the information shown.
 
 ![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
