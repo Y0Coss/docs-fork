@@ -809,6 +809,8 @@
             + [Change your Block Storage volume type](public_cloud/compute/switch_volume_type)
             + [Proper Usage and Limitations of Classic Multi-Attach Block Storage in 3AZ Regions](public_cloud/compute/classic_block_multi_az_limitations)
             + [Public Cloud Block Storage - Shared responsibilities](storage_and_backup/block_storage/responsibility-model-block-storage)
+        + [File Storage](products/public-cloud-storage-file-storage)
+            + [File Storage Service - Getting started (Alpha)](storage_and_backup/file_storage/file_storage_service/getting_started)
     + [Public Cloud Network Services](products/public-cloud-network)
         + [Concepts](public-cloud-network-concepts)
             + [Concepts - Public Cloud Networking](public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts)
