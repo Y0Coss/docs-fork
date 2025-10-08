@@ -114,6 +114,8 @@ Using this strategy, it is possible to choose:
 
 ## Advanced: Custom Metrics for Autoscaling
 
+**Custom metrics are recommended for workloads such as GPU based inference where CPU and RAM usage provide an incomplete picture of the system’s performance or request load.**
+
 For advanced scenarios, you can define **custom metrics** to drive autoscaling decisions. This requires an API endpoint to fetch metrics from.
 
 ### Required Parameter
