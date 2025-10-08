@@ -327,7 +327,7 @@ Si desea vender su nombre de dominio, puede agregarlo a estas plataformas. Una v
 
 > [!primary]
 >
-> La modificación de una zona DNS es una operación sensible y puede provocar interrupciones en los servicios asociados a su nombre de dominio (alojamiento web, correo electrónico, etc.). En caso de duda, no dude en contactar a un [proveedor especializado](/links/partner)
+> La modificación de una zona DNS es una operación sensible y puede provocar interrupciones en los servicios asociados a su nombre de dominio (alojamiento web, correo electrónico, etc.). En caso de duda, no dude en contactar a un [proveedor especializado](/links/partner).
 
 /// details | ¿Qué es una zona DNS?
 
@@ -604,7 +604,7 @@ Una vez recuperado el número de serie, siga estos pasos:
 1. Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
 2. Haga clic en el menú `Zonas DNS`{.action} y seleccione el dominio correspondiente.
 3. A la derecha o debajo de la tabla, haga clic en `Editar en modo de texto`{.action}.
-4. En la ventana que se abre, identifique la segunda línea, que, siguiendo nuestro ejemplo, sería equivalente a esta: `@ IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
+4. En la ventana que se abre, identifique la segunda línea, que, siguiendo nuestro ejemplo, sería equivalente a esta: `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
 5. Compare el número de serie recuperado a través del terminal con el que se muestra en su área de cliente de OVHcloud.
 
 **Caso n°1** - Los dos números de serie coinciden:

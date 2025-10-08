@@ -327,7 +327,7 @@ Si vous souhaitez vendre votre nom de domaine, vous pouvez l'ajouter à ces plat
 
 > [!primary]
 >
-> La modification d'une zone DNS est une manipulation sensible et peut engendrer une interruption des services associés à votre nom de domaine (hébergement web, e-mail, etc.). En cas de doute, n'hésitez pas à contacter un [prestataire spécialisé](/links/partner)
+> La modification d'une zone DNS est une manipulation sensible et peut engendrer une interruption des services associés à votre nom de domaine (hébergement web, e-mail, etc.). En cas de doute, n'hésitez pas à contacter un [prestataire spécialisé](/links/partner).
 
 /// details | Qu'est-ce qu'une zone DNS ?
 

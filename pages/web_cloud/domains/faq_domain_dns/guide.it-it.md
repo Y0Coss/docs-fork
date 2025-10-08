@@ -327,7 +327,7 @@ Se desideri vendere il tuo nome di dominio, puoi aggiungerlo a queste piattaform
 
 > [!primary]
 >
-> La modifica di una zona DNS è un'operazione delicata e può causare interruzioni nei servizi associati al tuo nome di dominio (ospedamento web, e-mail, ecc.). In caso di dubbi, non esitare a contattare un [fornitore specializzato](/links/partner)
+> La modifica di una zona DNS è un'operazione delicata e può causare interruzioni nei servizi associati al tuo nome di dominio (ospedamento web, e-mail, ecc.). In caso di dubbi, non esitare a contattare un [fornitore specializzato](/links/partner).
 
 /// details | Cos'è una zona DNS?
 
@@ -529,7 +529,7 @@ domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2
 |Elemento nel risultato|Descrizione|Corrispondenza nell'esempio sopra|
 |---|---|---|
 |**NS (Name Server)**|Server DNS principale dichiarato per il nome di dominio `domain.tld`.|`dns200.anycast.me`.|
-|**Email address**|Indirizzo e-mail del responsabile della zona DNS.|`tech.ovh.net` (il punto tra i termini `tech` e `ovh` deve essere sostituito da un `@`.)|
+|**Email address**|Indirizzo e-mail del responsabile della zona DNS.|`tech.ovh.net` (il punto tra i termini `tech` e `ovh` deve essere sostituito da un `@`).|
 |**Serial number**|Numero di serie unico che incrementa ad ogni modifica della zona DNS.<br>È generalmente composto dalla data di aggiornamento nel formato `YYYYMMDD` seguito dal numero di aggiornamenti effettuati nella giornata.|`2025091801`: Qui 2 aggiornamenti (`00` per 1, `01` per 2, ecc.) sono stati fatti il 18/09/2025.|
 |**Refresh time**|Intervallo (in secondi) tra ogni aggiornamento dei server DNS secondari (componenti della rete DNS) con il server DNS principale.|`86400` (24 ore).|
 |**Retry time**|Intervallo (in secondi) tra ogni tentativo di aggiornamento dei parametri dei server DNS secondari (componenti della rete DNS) con il server DNS principale se quest'ultimo non risponde o è non disponibile.|`3600` (1 ora).|
@@ -604,7 +604,7 @@ Una volta recuperato il numero di serie, segui questi passaggi:
 1. Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}.
 2. Clicca sul menu `Zone DNS`{.action} e seleziona il dominio interessato.
 3. A destra o sotto la tabella, clicca su `Utilizza l'editor di testo`{.action}.
-4. Nella finestra che si apre, individua la seconda riga, che, per riprendere il nostro esempio, sarebbe equivalente a questa: `@ IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
+4. Nella finestra che si apre, individua la seconda riga, che, per riprendere il nostro esempio, sarebbe equivalente a questa: `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
 5. Confronta il numero di serie recuperato tramite il terminale con quello che appare nel tuo spazio client OVHcloud.
 
 Caso n. 1 - I due numeri di serie corrispondono:

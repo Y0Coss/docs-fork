@@ -327,7 +327,7 @@ Jeśli chcesz sprzedać swoją nazwę domeny, możesz ją dodać do tych platfor
 
 > [!primary]
 >
-> Modyfikacja strefy DNS to czynność wrażliwa i może spowodować przerwę w działaniu usług związanych z Twoją nazwą domeny (hosting webowy, poczta itp.). W przypadku wątpliwości, nie wahaj się skontaktować z [specjalistycznym dostawcą](/links/partner)
+> Modyfikacja strefy DNS to czynność wrażliwa i może spowodować przerwę w działaniu usług związanych z Twoją nazwą domeny (hosting webowy, poczta itp.). W przypadku wątpliwości, nie wahaj się skontaktować z [specjalistycznym dostawcą](/links/partner).
 
 /// details | Co to jest strefa DNS?
 
@@ -460,7 +460,7 @@ W przypadku wystąpienia błędu, prosimy, abyś otworzył zgłoszenie wsparcia 
 
 /// details | Jaka jest różnica między rekordem DNS typu A (IPv4) a AAAA (IPv6)?
 
-Sieć Internet działa od początku lat 90. zgodnie z normą IPv4. Ta norma umożliwia przypisanie adresu IP X.X.X.X (gdzie każdy „X” to liczba od 0 do 255) każdej maszynie podłączonej do sieci Internet (serwerom, komputerom, smartfonom, tabletom itp.). Jednak ta norma ogranicza liczbę urządzeń podłączonych do sieci Internet do około 4 miliardów.
+Sieć Internet działa od początku lat 90. zgodnie z normą IPv4. Ta norma umożliwia przypisanie adresu IP X.X.X.X (gdzie każdy "X" to liczba od 0 do 255) każdej maszynie podłączonej do sieci Internet (serwerom, komputerom, smartfonom, tabletom itp.). Jednak ta norma ogranicza liczbę urządzeń podłączonych do sieci Internet do około 4 miliardów.
 
 W związku z tym wprowadzono protokół IPv6, który umożliwia podłączenie do sieci Internet aż 340 sekstylionów urządzeń.
 
@@ -470,12 +470,12 @@ Rekordy DNS typu A i AAAA to dwa typy rekordów zasobów używane do przypisywan
 
 Ich główne różnice polegają na typie adresu IP, który wykorzystują:
 
-- **Rekord A** (nazywany również „rekordem hosta”): Przypisuje nazwę domeny do adresu IPv4 (np. 213.0.113.0). Adresy IPv4 to adresy 32-bitowe, zazwyczaj zapisywane w notacji dziesiętnej z kropkami.
-- **Rekord AAAA** (nazywany również „czterokrotnym rekordem A”): Przypisuje nazwę domeny do adresu IPv6 (np. 2001:db8:1:1b00:213:0:113:0). Adresy IPv6 to adresy 128-bitowe, zazwyczaj zapisywane w notacji heksadecymalnej.
+- **Rekord A** (nazywany również "rekordem hosta"): Przypisuje nazwę domeny do adresu IPv4 (np. 213.0.113.0). Adresy IPv4 to adresy 32-bitowe, zazwyczaj zapisywane w notacji dziesiętnej z kropkami.
+- **Rekord AAAA** (nazywany również "czterokrotnym rekordem A"): Przypisuje nazwę domeny do adresu IPv6 (np. 2001:db8:1:1b00:213:0:113:0). Adresy IPv6 to adresy 128-bitowe, zazwyczaj zapisywane w notacji heksadecymalnej.
 
 Innymi słowy, rekordy A są używane dla adresów IPv4, a rekordy AAAA dla adresów IPv6. Oba typy rekordów służą do kierowania ruchu do konkretnego adresu IP, ale są używane do różnych wersji protokołu Internet.
 
-Warto zauważyć, że domena może mieć zarówno rekordy A, jak i AAAA, co umożliwia jej dostępność na sieciach IPv4 i IPv6. Tę praktykę nazywa się „podwójnym stosowaniem”, a jest powszechnie stosowana w przypadku stron internetowych i usług, które chcą być dostępne dla użytkowników na sieciach IPv4 i IPv6.
+Warto zauważyć, że domena może mieć zarówno rekordy A, jak i AAAA, co umożliwia jej dostępność na sieciach IPv4 i IPv6. Tę praktykę nazywa się "podwójnym stosowaniem", a jest powszechnie stosowana w przypadku stron internetowych i usług, które chcą być dostępne dla użytkowników na sieciach IPv4 i IPv6.
 
 > [!success]
 >
@@ -528,13 +528,13 @@ domain.tld.           3600    IN      SOA     dns200.anycast.me. tech.ovh.net. 2
 
 |Element w wyniku|Opis|Odpowiednik w powyższym przykładzie|
 |---|---|---|
-|**NS (Name Server)**|Główny serwer DNS zadeklarowany dla nazwy domeny `domain.tld`.|`dns200.anycast.me.`|
-|**Email address**|Adres e-mail osoby odpowiedzialnej za strefę DNS.|`tech.ovh.net.` (kropka między słowami `tech` i `ovh` powinna zostać zastąpiona znakiem `@`)|
+|**NS (Name Server)**|Główny serwer DNS zadeklarowany dla nazwy domeny `domain.tld`.|`dns200.anycast.me`.|
+|**Email address**|Adres e-mail osoby odpowiedzialnej za strefę DNS.|`tech.ovh.net` (kropka między słowami `tech` i `ovh` powinna zostać zastąpiona znakiem `@`).|
 |**Serial number**|Unikalny numer seryjny, który zwiększa się o 1 przy każdej modyfikacji strefy DNS.<br>Zwykle składa się z daty aktualizacji w formacie `YYYYMMDD` i liczby aktualizacji dokonanych tego dnia.|`2025091801`: W tym przypadku 2 aktualizacje (`00` dla 1, `01` dla 2 itd.) zostały wykonane 18/09/2025.|
-|**Refresh time**|Interwał (w sekundach) między każdą aktualizacją serwerów DNS wtórnych (składających się na sieć DNS) z serwerem DNS głównym.|`86400` (24 godziny)|
-|**Retry time**|Interwał (w sekundach) między każdą próbą ponownego odświeżenia ustawień serwerów DNS wtórnych (składających się na sieć DNS) z serwerem DNS głównym, jeśli ten nie odpowiada lub jest niedostępny.|`3600` (1 godzina)|
-|**Expire time**|Czas (w sekundach), po którym serwery DNS wtórne (składające się na sieć DNS) przestają odpowiadać na zapytania DNS, jeśli serwer DNS główny nie aktualizuje się z nimi.|`3600000` (1000 godzin, 41,67 dni)|
-|**Minimum TTL**|Minimalny czas życia (w sekundach), przez który rekordy DNS strefy DNS są buforowane na serwerach DNS wtórnych (składających się na sieć DNS).|`300` (5 minut)|
+|**Refresh time**|Interwał (w sekundach) między każdą aktualizacją serwerów DNS wtórnych (składających się na sieć DNS) z serwerem DNS głównym.|`86400` (24 godziny).|
+|**Retry time**|Interwał (w sekundach) między każdą próbą ponownego odświeżenia ustawień serwerów DNS wtórnych (składających się na sieć DNS) z serwerem DNS głównym, jeśli ten nie odpowiada lub jest niedostępny.|`3600` (1 godzina).|
+|**Expire time**|Czas (w sekundach), po którym serwery DNS wtórne (składające się na sieć DNS) przestają odpowiadać na zapytania DNS, jeśli serwer DNS główny nie aktualizuje się z nimi.|`3600000` (1000 godzin, 41,67 dni).|
+|**Minimum TTL**|Minimalny czas życia (w sekundach), przez który rekordy DNS strefy DNS są buforowane na serwerach DNS wtórnych (składających się na sieć DNS).|`300` (5 minut).|
 
 ///
 
@@ -605,7 +605,7 @@ Po pobraniu numeru seryjnego, postępuj zgodnie z poniższymi krokami:
 2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
 3. Na prawej stronie lub poniżej tabeli kliknij `Modyfikacja w trybie tekstowym`{.action}.
 4. W oknie, które się otworzy, znajdź drugi wiersz, który w naszym przykładzie będzie wyglądał tak: `@	IN SOA dns200.anycast.me. tech.ovh.net. (2025091801 86400 3600 3600000 60)`.
-5. Porównaj numer seryjny pobrany z terminala z tym, który wyświetla się w Twoim [Panelu klienta OVHcloud](/links/manager).
+5. Porównaj numer seryjny pobrany z terminala z tym, który wyświetla się w Twoim Panelu klienta OVHcloud.
 
 Przypadek n°1 - Dwa numery seryjne są identyczne:
 
@@ -714,7 +714,7 @@ Postępuj zgodnie z poniższymi krokami:
 
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Strefy DNS`{.action}, następnie wybierz odpowiednią domenę.
-3. Na prawej stronie lub poniżej tabeli kliknij `Dodaj wpis`{.action}, a następnie wybierz typ wpisu DNS typu `A`{.action} dla IPv4 (np. `203.0.113.0`) lub typu `AAAA`{.action} dla IPv6 (np. `2001:db8:1:1b00:203:0:113:0`).
+3. Na prawej stronie lub poniżej tabeli kliknij `Dodaj rekord`{.action}, a następnie wybierz typ wpisu DNS typu `A`{.action} dla IPv4 (np. `203.0.113.0`) lub typu `AAAA`{.action} dla IPv6 (np. `2001:db8:1:1b00:203:0:113:0`).
 4. W oknie, które się otworzy i w polu wprowadzania oznaczonym `Subdomena *`{.action}, wprowadź wartość `*`. Gwiazdka `*` będzie reprezentować wszystkie poddomeny (np. `www.domain.tld` lub `ovhcloud.domain.tld`) Twojej nazwy domeny. Uzupełnij pole `Adres decelowy *`{.action} o żądaną adres IP.
 5. Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -866,7 +866,7 @@ Wykonaj poniższe kroki:
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
 3. Po wybraniu domeny kliknij kartę `Serwery DNS`{.action}.
-4. Aby zmienić serwery DNS, kliknij przycisk `Zmień serwery DNS`{.action} po prawej stronie tabeli „serveurs DNS”. W zależności od rozdzielczości ekranu, przycisk może znajdować się pod tabelą.
+4. Aby zmienić serwery DNS, kliknij przycisk `Zmień serwery DNS`{.action} po prawej stronie tabeli "serwery DNS". W zależności od rozdzielczości ekranu, przycisk może znajdować się pod tabelą.
 
 Możesz spersonalizować serwery DNS dla swojej domeny na stronie, która się pojawia.
 
@@ -887,7 +887,7 @@ Wykonaj poniższe kroki:
 1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), a następnie przejdź do sekcji `Web Cloud`{.action}.
 2. Kliknij menu `Domeny`{.action}, następnie wybierz odpowiednią domenę.
 3. Po wybraniu domeny kliknij kartę `Serwery DNS`{.action}.
-4. Aby zmienić serwery DNS, kliknij przycisk `Zmień serwery DNS`{.action} po prawej stronie tabeli „serveurs DNS”. W zależności od rozdzielczości ekranu, przycisk może znajdować się pod tabelą.
+4. Aby zmienić serwery DNS, kliknij przycisk `Zmień serwery DNS`{.action} po prawej stronie tabeli "serwery DNS". W zależności od rozdzielczości ekranu, przycisk może znajdować się pod tabelą.
 
 Możesz zastąpić swoje serwery DNS serwerami OVHcloud na stronie, która się pojawia.
 
@@ -901,7 +901,7 @@ Możesz zastąpić swoje serwery DNS serwerami OVHcloud na stronie, która się 
 
 ///
 
-/// details | W moim panelu klienta pojawił się komunikat błędu informujący, że nie korzystam z serwerów DNS OVHcloud dla mojej domeny, co mam zrobić?
+/// details | W moim Panelu klienta pojawił się komunikat błędu informujący, że nie korzystam z serwerów DNS OVHcloud dla mojej domeny, co mam zrobić?
 
 W [Panelu klienta OVHcloud](/links/manager) ten komunikat oznacza jedynie, że strefa DNS utworzona dla Twojej domeny nie jest strefą aktywną.
 
@@ -920,7 +920,7 @@ Jeśli chcesz korzystać z serwerów DNS OVHcloud dla swojej domeny, możesz prz
 
 ///
 
-/// details | Nie mogę zmienić serwerów DNS dla domeny z mojego panelu klienta OVHcloud, co mam zrobić?
+/// details | Nie mogę zmienić serwerów DNS dla domeny z mojego Panelu klienta OVHcloud, co mam zrobić?
 
 Oznacza to, że masz tylko uprawnienia do zarządzania strefą DNS dla tej domeny, ale nie samą domeną.
 
@@ -935,7 +935,7 @@ Oznacza to, że domena nie jest zarządzana z Twojego [Panelu klienta OVHcloud](
 
 Następnie możesz wykonać jedną z poniższych czynności (jeśli jesteś właścicielem domeny zgodnie z WHOIS):
 
-- Domena jest zarejestrowana u OVHcloud: Możesz przeprowadzić [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-change), aby Twoja domena była zarządzana w Twoim [panelu klienta OVHcloud](/links/manager).
+- Domena jest zarejestrowana u OVHcloud: Możesz przeprowadzić [procedurę odzyskania kontaktów](/links/transversal/procedure-contact-change), aby Twoja domena była zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager).
 - Domena nie jest zarejestrowana u OVHcloud: Możesz przeprowadzić [przesunięcie domeny](/pages/web_cloud/domains/transfer_incoming_generic_domain) do OVHcloud, aby Twoja domena była zarządzana w Twoim [Panelu klienta OVHcloud](/links/manager).
 
 Przypadek nr 2 - Domena pojawia się na liście:
@@ -951,9 +951,9 @@ Następnie możesz przeprowadzić [procedurę odzyskania kontaktów](/links/tran
 [FAQ e-mail OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 [FAQ Web Hosting](/pages/web_cloud/web_hosting/faq-web_hosting)
- 
+
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, itp.) skontaktuj się z [partnerami OVHcloud](/links/partner).
- 
+
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
- 
+
 Dołącz do [grona naszych użytkowników](/links/community).
