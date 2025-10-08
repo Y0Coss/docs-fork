@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Cómo mejorar su solución"
 excerpt: "Descubra cómo modificar la fórmula de suscripción de un plan de hosting de OVHcloud"
-updated: 2024-10-30
+updated: 2025-10-08
 ---
 
 ## Objetivo
@@ -62,9 +62,41 @@ Asegúrese de que el nuevo plan tiene suficientes [bases de datos](/links/web/ho
 
 En caso contrario, elimine las bases de datos no utilizadas y, si es necesario, reduzca la cantidad de datos que contienen. Esta cantidad no debe superar el tamaño máximo de las bases de datos del nuevo producto. Si necesita ayuda para realizar las operaciones necesarias, puede ponerse en contacto con los [partners de OVHcloud](/links/partner).
 
-Después de eliminar los datos de sus bases de datos, vuelva a calcular la cuota utilizada. Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la nueva página, abra la pestaña `Bases de datos`{.action} y haga clic en el botón `...`{.action} situado al final de la línea correspondiente a la base de datos y seleccione Volver a `Recalcular el espacio utilizado`{.action}.
+Después de eliminar los datos de sus bases de datos, vuelva a calcular la cuota utilizada. Para ello, haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
 
-![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Haga clic en el menú `Alojamientos`{.action} y seleccione el alojamiento web correspondiente.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>>
+> **Etapa 4**
+>>
+>> En la nueva página, aparecerá una tabla con las bases de datos creadas. A la derecha de la base de datos correspondiente, haga clic en el botón `...`{.action} y, seguidamente, en `Recalcular el espacio utilizado `{.action}.
+>>
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>>
+> **Etapa 5**
+>>
+>> En la nueva ventana, haga clic directamente en el botón `Aceptar`{.action}.
+>>
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Una vez iniciada, la operación puede tardar varios minutos. Al finalizar, el estado "READ ONLY" de la base de datos desaparece.
+>> La base de datos vuelve a estar totalmente operativa.
 
 > [!primary]
 >

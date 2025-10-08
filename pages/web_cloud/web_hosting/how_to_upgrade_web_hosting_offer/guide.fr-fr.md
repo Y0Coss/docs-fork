@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Comment faire évoluer son offre"
 excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'hébergement web OVHcloud"
-updated: 2024-10-30
+updated: 2025-10-08
 ---
 
 ## Objectif
@@ -62,9 +62,41 @@ Assurez-vous que la nouvelle offre comporte assez de [bases de données](/links/
 
 Dans le cas contraire, supprimez les bases de données inutilisées et réduisez, si nécessaire, la quantité de données qu'elles contiennent. Cette quantité ne devra pas dépasser la taille maximale des bases de données de la nouvelle offre. Pour toute demande d'assistance sur les manipulations à effectuer, contactez les [partenaires OVHcloud](/links/partner).
 
-Suite à la suppression de données sur vos bases, recalculez le quota utilisé. Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergement web`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, rendez-vous sur l'onglet `Bases de données`{.action} puis cliquez sur le bouton `...`{.action} à droite de la base de données concernée puis sur `Recalculer le quota`{.action}.
+Suite à la suppression de données sur vos bases, recalculez le quota utilisé. Pour cela, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
 
-![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etape 2**
+>>
+>> Cliquez sur le menu `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> 
+> **Etape 4**
+>>
+>> Sur la nouvelle page, un tableau contenant vos bases de données créées apparaît. A droite de la base de données concernée, cliquez sur le bouton `...`{.action}, puis sur `Recalculer le quota`{.action}. 
+>>
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>> 
+> **Etape 5**
+>>
+>> Dans la fenêtre qui s'affiche, cliquez directement sur le bouton `Valider`{.action}.
+>>
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Une fois lancée, l'opération peut prendre plusieurs minutes. Lorsqu'elle se termine, le statut « READ ONLY » de votre base de données disparaît.
+>> Votre base de données est alors de nouveau pleinement opérationnelle.
 
 > [!primary]
 >

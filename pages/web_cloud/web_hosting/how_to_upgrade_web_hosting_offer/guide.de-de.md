@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Wie kann ich mein Angebot wechseln"
 excerpt: "Erfahren Sie hier, wie Sie das Abonnement Ihres OVHcloud Webhosting-Dienstes ändern können"
-updated: 2024-10-30
+updated: 2025-10-08
 ---
 
 ## Ziel 
@@ -62,9 +62,43 @@ Stellen Sie sicher, dass das neue Angebot genügend [Datenbanken](/links/web/hos
 
 Löschen Sie andernfalls nicht verwendete Datenbanken, und reduzieren Sie ggf. die Datenmenge in diesen Datenbanken. Diese Menge darf die maximale Datenbankgröße des neuen Angebots nicht überschreiten. Wenn Sie weitere Unterstützung bei den durchzuführenden Aktionen benötigen, wenden Sie sich an die [OVHcloud Partner](/links/partner).
 
-Nach der Löschung der Daten Ihrer Datenbanken müssen Sie das verwendete Quota neu berechnen. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Gehen Sie auf der angezeigten Seite in den Tab `Datenbanken`{.action} und klicken Sie dann auf den Button `...`{.action} rechts neben der betreffenden Datenbank und dann auf `Quota neu berechnen`{.action}.
+Nach der Löschung der Daten Ihrer Datenbanken müssen Sie das verwendete Quota neu berechnen.
 
-![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Datenbanken`{.action}.
+>>
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Auf der neuen Seite wird eine Tabelle mit den erstellten Datenbanken angezeigt. Rechts neben der betreffenden Datenbank klicken Sie auf den Button `...`{.action} und dann auf `Quota neu berechnen`{.action}.
+>>
+>> ![Recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Klicken Sie im angezeigten Fenster direkt auf den Button `Bestätigen`{.action}.
+>>
+>> ![Recalculate quota of a database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Der Vorgang kann einige Minuten dauern, nachdem er gestartet wurde. Wenn die Installation abgeschlossen ist, verschwindet der Status "READ ONLY" Ihrer Datenbank.  
+>> Ihre Datenbank ist nun wieder voll funktionsfähig.
 
 > [!primary]
 >
