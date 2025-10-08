@@ -83,7 +83,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
-> Via the OVHcloud API
+> Via the OVHcloud API <a name="createinstanceviaapi"></a>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/snapshot

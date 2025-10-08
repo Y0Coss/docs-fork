@@ -83,7 +83,7 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 >>
 >> ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 >>
-> Via the OVHcloud API
+> Via the OVHcloud API <a name="createinstanceviaapi"></a>
 >> > [!api]
 >> >
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/snapshot
