@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Configure your MongoDB instance to accept incoming connections
 excerpt: Find out how to configure your MongoDB instance to accept incoming connections
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 ## Objective
@@ -34,7 +34,7 @@ In our example, we will create a new user called `foo` with the role `userAdmin`
 
 ![User Creation](images/mongodb_02_manage_control_panel-add_user.png){.thumbnail}
 
-After a few seconds the user is ready with the "Enabled" status, you could then reset and note its password.
+After a few seconds the user is ready with the "Enabled" status, you can then reset and note its password.
 
 ![User ready](images/mongodb_02_manage_control_panel-reset_password.png){.thumbnail}
 

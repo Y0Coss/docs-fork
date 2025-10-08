@@ -65,9 +65,6 @@ Psycopg is the most popular PostgreSQL database adapter for the Python programmi
 
 In your Python environment, let's try a connection.
 
-pid = connection.get_backend_pid()
-cursor.execute(f'SELECT * FROM pg_stat_ssl WHERE pid = {pid}')
-
 ```python
 import psycopg2
 
