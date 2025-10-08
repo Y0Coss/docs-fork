@@ -26,7 +26,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 
 > [!primary]
 >
-> Currently, the File Storage Service can only be accessed and managed via the Manila CLI. Other interfaces will be supported in the future.
+> Currently, the File Storage Service can only be accessed and managed via OpenStack CLI with the Manila plugin. Other interfaces will be supported in the future.
 >
 
 > [!tabs]
@@ -135,7 +135,7 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> > Note: Replace <my-first-share-name> with the name you want to assign to your share.
 >> >
 >>
->> Monitor the share status until it becomes available:
+>> Monitor the share status until it becomes `available`:
 >>
 >> ```bash
 >> openstack share list --os-region-name <REGION_NAME>
@@ -280,7 +280,5 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >>
 
 ## Go further
-
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
