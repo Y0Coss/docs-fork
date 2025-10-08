@@ -138,19 +138,19 @@ Vous pouvez maintenant accéder à votre partition montée dans le dossier spéc
 
 Assurez-vous que l'utilisateur Windows qui est utilisé pour accéder à votre NAS-HA dispose de droits suffisants.
 
-En effet, le couple UID/GID doit être configuré à 0 (droit unix root).
+En effet, le couple UID/GID doit être configuré à 0 (droit root UNIX).
 
-Si ce n'est pas le cas, vous aurez des erreurs d'accès à votre NAS-HA car, lorsque NFS est autorisé sur une machine Windows, un utilisateur UNIX est créé avec l'UID et le GID par défaut à -2 (ou 4294967294).
+Si ce n'est pas le cas, vous obtiendrez des erreurs d'accès à votre NAS-HA, car lorsque NFS est autorisé sur une machine Windows, un utilisateur UNIX est créé avec l'UID et le GID par défaut à -2 (ou 4294967294).
 
-Comme solution de contournement, l'UID et le GID peuvent être forcés à 0 sur la machine Windows qui accède à votre NAS-HA.
+Comme solution de contournement, l'UID et le GID peuvent être forcés à 0 sur la machine Windows qui accède à votre NAS-HA :
 
-- Démarrez l'éditeur de registre sur la machine cliente.
-- Localisez `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
-- Créez deux valeurs DWORD, à savoir AnonymousUid et AnonymousGid.
-- Définissez ces valeurs sur l'UID et le GID à 0.
-- Redémarrez le service NFS sur la machine cliente.
+1. Démarrez l'éditeur de registre sur la machine cliente.
+1. Localisez `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Créez deux valeurs DWORD, à savoir **AnonymousUid** et **AnonymousGid**.
+1. Définissez ces valeurs sur l'UID et le GID à 0.
+1. Redémarrez le service NFS sur la machine cliente.
 
-Toutes les options de montage sont disponibles sur le site de Microsoft : https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/mount
+Toutes les options de montage sont disponibles sur le [site de Microsoft](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/mount).
 
 ### Proxmox
 

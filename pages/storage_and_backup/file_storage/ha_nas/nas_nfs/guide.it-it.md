@@ -1,7 +1,7 @@
 ---
 title: "Installazione di un NAS-HA tramite condivisione NFS"
 excerpt: "Come connettersi al tuo NAS-HA utilizzando una condivisione NFS"
-updated: 2024-11-08
+updated: 2025-10-08
 ---
 
 ## Obiettivo 
@@ -132,6 +132,24 @@ root@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_na
 ```
 
 Adesso puoi accedere alla tua partizione montata nella cartella specificata.
+
+### Microsoft Windows - Particolari
+
+Assicurarsi che l'utente Windows utilizzato per accedere al proprio NAS-HA abbia i diritti sufficienti.
+
+La coppia UID/GID deve essere configurata su 0 (diritti root UNIX).
+
+Altrimenti, si otterranno errori di accesso al proprio NAS-HA, poiché quando NFS è abilitato su una macchina Windows, viene creato un utente UNIX con UID e GID predefiniti -2 (o 4294967294).
+
+Come soluzione alternativa, UID e GID possono essere forzati a 0 sulla macchina Windows che accede al proprio NAS-HA:
+
+1. Avviare l'editor del registro sulla macchina client.
+1. Localizzare `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Creare due valori DWORD: **AnonymousUid** e **AnonymousGid**.
+1. Impostare questi valori su UID e GID 0.
+1. Riavviare il servizio NFS sulla macchina client.
+
+Tutte le opzioni di montaggio sono disponibili sul [sito di Microsoft](https://learn.microsoft.com/it-it/windows-server/administration/windows-commands/mount).
 
 ### Proxmox
 

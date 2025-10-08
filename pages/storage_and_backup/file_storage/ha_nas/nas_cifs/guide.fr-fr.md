@@ -1,7 +1,7 @@
 ---
-title: Monter un NAS-HA via partage CIFS
+title: Monter un NAS-HA via un partage CIFS
 excerpt: Decouvrez comment monter un NAS-HA via le protocole CIFS
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 ## Objectif
@@ -12,6 +12,8 @@ Configurez et montez votre espace de stockage NAS-HA OVHcloud via le protocole C
 
 - Un [serveur dédié](/links/bare-metal/bare-metal) **ou** un [VPS](/links/bare-metal/vps) **ou** une [instance Public Cloud](/links/public-cloud/public-cloud).
 - Une offre [NAS-HA](/links/storage/nas-ha).
+
+## En pratique
 
 ### Configuration pour Windows
 
@@ -39,7 +41,7 @@ net use z: \\10.16.101.8\zpool-000206_NOM_PARTITION_1
 > L'utilisateur SMB/CIFS est `nobody`, toute modification de droits effectuée par cet utilisateur peut générer des conflits avec des droits NFS existants.
 > 
 
-Le message d'erreur suivant peut s'afficher :  
+Le message d'erreur suivant peut s'afficher :
 
 ```console
 System error 1272 has occurred.
@@ -47,12 +49,16 @@ System error 1272 has occurred.
 You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
 ```
 
-Ce problème peut être résolu en modifiant le Registre Windows : ouvrez l'utilitaire Windows *regedit* et recherchez l'entrée `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Définissez la valeur de `AllowInsecureGuestAuth` sur « 1 ». Retrouvez plus d'informations sur ce sujet sur les [pages de support Microsoft](https://learn.microsoft.com/fr-fr/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3?tabs=group-policy).
+> [!primary]
+>
+> Ce problème peut être résolu en modifiant le Registre Windows : ouvrez l'utilitaire Windows *regedit* et recherchez l'entrée `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
+> Définissez la valeur de `AllowInsecureGuestAuth` sur « 1 ».<br>
+> Retrouvez plus d'informations sur ce sujet sur les [pages de support Microsoft](https://learn.microsoft.com/fr-fr/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3?tabs=group-policy).
 
 
 ### Configuration pour Linux
 
-Ouvrez une connexion SSH à votre serveur et tapez la commande suivante :
+Connectez-vous via SSH à votre serveur et tapez la commande suivante :
 
 ```sh
 mount -t cifs -o uid=root,gid=100,dir_mode=0700,username=root,password= //IP_SERVEUR_CIFS/CHEMIN_CIFS /mnt/FolderMount
@@ -70,7 +76,7 @@ mount -t cifs -o uid=root,gid=100,dir_mode=0700,username=root,password= //IP_SER
 > mount: /mnt/FolderMount: mount(2) system call failed: No route to host.
 >        dmesg(1) may have more information after failed mount system call.
 > ```
-
+>
 
 ## Aller plus loin
 

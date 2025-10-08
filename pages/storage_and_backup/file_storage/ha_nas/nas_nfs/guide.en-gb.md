@@ -137,23 +137,19 @@ You can now access your mounted partition at the specified folder.
 
 Make sure that the Windows user who is used to access your NAS-HA has sufficient rights.
 
-Indeed, the UID/GID pair must be configured to 0 (right unix root).
+Indeed, the UID/GID pair must be configured to 0 (right UNIX root).
 
 If this is not the case, you will have access errors to your NAS-HA because, when NFS is authorised on a Windows machine, a UNIX user is created with the default UID and GID at -2 (or 4294967294).
 
-As a workaround, the UID and GID can be forced to 0 on the Windows machine that accesses your NAS-HA.
+As a workaround, the UID and GID can be forced to 0 on the Windows machine that accesses your NAS-HA:
 
-- Start the registry editor on the client machine.
+1. Start the registry editor on the client machine.
+1. Locate `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Create two DWORD values, namely **AnonymousUid** and **AnonymousGid**.
+1. Set these values on the UID and the GID to 0.
+1. Restart the NFS service on the client machine.
 
-- Locate `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
-
-- Create two DWORD values, namely AnonymousUid and AnonymousGid.
-
-- Set these values on the UID and the GID to 0.
-
-- Restart the NFS service on the client machine.
-
-All mounting options are available on the Microsoft website: https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/mount
+All mounting options are available on the [Microsoft website](https://learn.microsoft.com/en-gb/windows-server/administration/windows-commands/mount).
 
 ### Proxmox
 
