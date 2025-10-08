@@ -1,12 +1,12 @@
 ---
-title: Mount your HA-NAS on Windows Server via CIFS
-excerpt: This guide shows you how to mount your HA-NAS on Windows Server via CIFS.
+title: Mount your HA-NAS via CIFS share
+excerpt: This guide shows you how to mount your HA-NAS using CIFS protocol.
 updated: 2025-10-07
 ---
 
 ## Objective
 
-Configure and mount an OVHcloud HA-NAS storage space on your Windows Server using CIFS.
+Configure and mount an OVHcloud HA-NAS storage space using CIFS protocol.
 
 ## Requirements
 
