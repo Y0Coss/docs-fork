@@ -1,7 +1,7 @@
 ---
 title: "Co zrobić, jeśli moja strona jest niedostępna?"
 excerpt: "Zdiagnozuj przyczyny niedostępności Twojej strony WWW"
-updated: 2022-08-02
+updated: 2025-10-08
 ---
 
 ## Wprowadzenie 
@@ -32,7 +32,7 @@ W przypadku niedostępności Twojej strony WWW może pojawić się kilka zwrotó
 
 ## W praktyce
 
-### Etap 1: sprawdź ważność Twojej domeny
+### 1: sprawdź ważność Twojej domeny
 
 > [!warning]
 >
@@ -52,7 +52,7 @@ Odnów Twoją domenę, jeśli to konieczne, za pomocą przycisku `...`{.action}.
 
 Po odnowieniu domeny Twoja strona będzie dostępna w ciągu 48 godzin.
 
-### Etap 2: sprawdź serwery DNS
+### 2: sprawdź serwery DNS
 
 Aby sprawdzić poprawność Twoich [serwerów DNS](/pages/web_cloud/domains/dns_server_edit), w [Panelu klienta OVHcloud](/links/manager) kliknij `Domeny`{.action}, a następnie domenę na Twojej stronie.
 
@@ -107,17 +107,34 @@ Następnie kliknij `Zresetuj strefę DNS`{.action} i wybierz `Nie, ale chcę zre
 
 Twoja strona będzie dostępna w ciągu maksymalnie 24 godzin.
 
-### Etap 3: sprawdź strefę DNS <a name="step3"></a>
+### 3: sprawdź strefę DNS <a name="step3"></a>
 
 Na tym etapie odnajdziesz adres IP Twojego hostingu, po czym dodaj go do Twojej `Strefa DNS`{.action}.
 
 Jeśli Twoja strona nie jest hostowana w infrastrukturze OVHcloud lub jest zarządzana przez innego dostawcę, skontaktuj się z odpowiednią pomocą techniczną.
 
-Jeśli Twoja strona jest zainstalowana w jednej z naszych [ofert Web Cloud](/links/web/hosting), kliknij zakładkę `Hosting`{.action}, a następnie wybierz odpowiednią ofertę.
+Jeśli Twoja strona jest zainstalowana w jednej z naszych [ofert Web Cloud](/links/web/hosting), kliknij poniższe zakładki, aby wyświetlić kolejne **3** kroki.
 
-W zakładce `Informacje ogólne`{.action} skopiuj adres IPV4 i/lub IPV6 Twojej domeny.
-
-![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> W ramce **Informacje ogólne** znajdziesz oznaczenia **IPv4** i **IPv6**.
+>>
+>> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+>>
+>> W zakładce `Informacje ogólne`{.action} skopiuj adres IPV4 i/lub IPV6 Twojej domeny.
 
 Następnie przenieś domenę do [strefy DNS](/pages/web_cloud/domains/dns_zone_edit), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
 

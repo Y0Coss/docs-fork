@@ -1,7 +1,7 @@
 ---
 title: "O que fazer se o meu site está inacessível?"
 excerpt: "Diagnóstico das causas da inacessibilidade do seu site"
-updated: 2022-08-02
+updated: 2025-10-08
 ---
 
 ## Objetivo
@@ -32,7 +32,7 @@ Vários feedbacks de erro podem aparecer no seu navegador em caso de inacessibil
 
 ## Instruções
 
-### Etapa 1: verificar a validade do seu domínio
+### 1: verificar a validade do seu domínio
 
 > [!warning]
 >
@@ -52,7 +52,7 @@ Renove o domínio se necessário através do botão `...`{.action} à direita do
 
 Uma vez terminada a renovação da sua oferta, o seu website estará disponível num prazo máximo de 48 horas.
 
-### Etapa 2: verificar os servidores DNS
+### 2: verificar os servidores DNS
 
 Para verificar a validade dos seus [servidores DNS](/pages/web_cloud/domains/dns_server_edit), na [Área de Cliente OVHcloud](/links/manager) clique em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
 
@@ -107,17 +107,34 @@ De seguida, clique em `Reiniciar zona DNS`{.action} e selecione `Não, mas desej
 
 O seu website estará disponível num prazo máximo de 24 horas.
 
-### Etapa 3: verificar a zona DNS <a name="step3"></a>
+### 3: verificar a zona DNS <a name="step3"></a>
 
 Nesta etapa, vai encontrar o endereço IP do seu alojamento e adicioná-lo à sua `Zona DNS`{.action}.
 
 Se o seu site não está alojado na infraestrutura da OVHcloud ou é gerido por outro fornecedor, contacte o serviço de suporte em causa.
 
-Se o seu site está alojado numa das nossas [ofertas Web Cloud](/links/web/hosting), clique no separador `Alojamentos`{.action} à esquerda do seu ecrã e, a seguir, na oferta em causa.
+Se o seu site está alojado numa das nossas [ofertas Web Cloud](/links/web/hosting), clique nas janelas abaixo para visualizar cada uma das etapas **3**.
 
-No separador `Informações gerais`{.action}, copie o endereço IPV4 e/ou IPV6 do seu domínio.
-
-![find-ipv4-and-ipv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+> [!tabs]
+> **Etapa 1**
+>>
+>> Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}.
+>>
+>> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etapa 2**
+>>
+>> Clique no menu `Alojamentos`{.action} e escolha o alojamento web em causa.
+>>
+>> ![Web Hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/hosting-plans.png){.thumbnail}
+>>
+> **Etapa 3**
+>>
+>> No marco **Informações gerais**, encontrará as referências **IPv4** e **IPv6**.
+>>
+>>  ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
+>>
+>> No separador `Informações gerais`{.action}, copie o endereço IPV4 e/ou IPV6 do seu domínio.
 
 De seguida, aceda à [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) do seu domínio alterando ou criando uma ou mais entradas de tipo `A`.
 
