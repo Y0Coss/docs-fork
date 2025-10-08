@@ -1,12 +1,12 @@
 ---
-title: Monter un NAS-HA sur Windows Server via CIFS
-excerpt: Decouvrez comment monter un NAS-HA sur Windows Server via CIFS
+title: Monter un NAS-HA via partage CIFS
+excerpt: Decouvrez comment monter un NAS-HA via le protocole CIFS
 updated: 2025-10-07
 ---
 
 ## Objectif
 
-Configurez et montez votre espace de stockage NAS-HA OVHcloud sur Windows Server via CIFS.
+Configurez et montez votre espace de stockage NAS-HA OVHcloud via le protocole CIFS.
 
 ## Prérequis
 
