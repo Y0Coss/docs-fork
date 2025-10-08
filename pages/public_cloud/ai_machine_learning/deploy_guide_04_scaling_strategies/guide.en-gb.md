@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Scaling strategies
 excerpt: Understand the scaling strategies (static scaling vs autoscaling) of AI Deploy and learn how to use them
-updated: 2025-10-07
+updated: 2025-10-08
 ---
 
 > [!primary]
@@ -36,9 +36,9 @@ The minimum number of replicas is **1** and the maximum is **10**.
 >
 > For **High Availability**, it is strongly recommended to deploy a **minimum of 2 replicas**.
 
-### When to Choose Static Scaling
+### When to choose Static Scaling?
 
-- You have **predictable, consistent workload**.
+- You have **predictable, consistent workloads**.
 - You prefer **fixed, predictable costs** with no unexpected resource usage spikes.
 - Your use case requires **minimal latency**, as replicas are always active.
 
@@ -53,7 +53,7 @@ The minimum number of replicas is **1** and the maximum is **10**.
 >>
 > **Using ovhai CLI**
 >>
->> Use the `ovhai app run` command with the `--replicas` parameter to set the number of replicas at deployment:  
+>> Use the `ovhai app run` command with the `--replicas` parameter to set the number of replicas at deployment:
 >>
 >> ```bash
 >> ovhai app run <registry-address>/<image-identifier>:<tag-name> \
@@ -72,19 +72,19 @@ Autoscaling dynamically adjusts the number of application replicas based on **re
 
 Using this strategy, it is possible to choose: 
 
-| Parameter                  | Description                                                                 |
-|---------------------------|-----------------------------------------------------------------------------|
-| **Minimum Replicas**       | Lowest number of running replicas.                                          |
-| **Maximum Replicas**       | Upper bound for replica count (define based on usage expectations).         |
-| **Monitored Metric**       | The metric to be monitored. Choose between `CPU` or `RAM` for triggering autoscaling actions.                   |
-| **Trigger Threshold (%)**          | Average usage percentage used to trigger scaling up or down. Range: 1–100%. |
+| Parameter                  | Description                                                                                   |
+|----------------------------|-----------------------------------------------------------------------------------------------|
+| **Minimum Replicas**       | Lowest number of running replicas.                                                            |
+| **Maximum Replicas**       | Upper bound for replica count (define based on usage expectations).                           |
+| **Monitored Metric**       | The metric to be monitored. Choose between `CPU` or `RAM` for triggering autoscaling actions. |
+| **Trigger Threshold (%)**  | Average usage percentage used to trigger scaling up or down. Range: 1–100%.                   |
 
-> [!primary]  
+> [!primary]
 >
 > Autoscaling adjusts by calculating the **average resource usage** across all replicas. If the average exceeds the threshold, new replicas are spun up; if it falls below, replicas are removed.
 >
 
-### When to Choose Autoscaling
+### When to Choose Autoscaling?
 
 - Your app has **irregular or fluctuating** inference/load patterns.
 - You want to **scale cost-effectively** with actual usage.
@@ -97,7 +97,7 @@ Using this strategy, it is possible to choose:
 >>
 >> When creating your application, you will have the opportunity to choose your **scaling strategy**. By default, the strategy is set to **static scaling**. Toggle the button to switch to **Autoscaling** Then, configure minimum/maximum replicas, metric, and threshold.
 >>
->> ![Set autoscaling on AI Deploy via UI](images/set-autoscaling.png){.thumbnail}  
+>> ![Set autoscaling on AI Deploy via UI](images/set-autoscaling.png){.thumbnail}
 >> 
 > **Using ovhai CLI**
 >>
@@ -110,7 +110,7 @@ Using this strategy, it is possible to choose:
 >>     --auto-resource-type CPU \
 >>     --auto-resource-usage-threshold 75
 >> ```
->>    
+>>
 
 ## Advanced: Custom Metrics for Autoscaling
 
@@ -120,13 +120,13 @@ For advanced scenarios, you can define **custom metrics** to drive autoscaling d
 
 ### Required Parameter
 
-- `--auto-custom-api-url`: URL of the API operation to call to get the metric value. Specific `<SELF>` placeholder can be given whenever metrics API is served by the deployed app itself.
+- `--auto-custom-api-url`: URL of the API operation to call to get the metric value. A specific `<SELF>` placeholder can be given whenever metrics API is served by the deployed app itself.
 
 ### Optional Parameters
 
 | Parameter                        | Description                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------|
-| `--auto-custom-value-location` | Specifies where in the API response payload the metric value is located.  This value is format specific. See valueLocation from parameter list in [Trigger Specification documentation](https://keda.sh/docs/2.16/scalers/metrics-api/#trigger-specification) for details.            |
+| `--auto-custom-value-location` | Specifies where the metric value is located in the API response payload. This value is format-specific. See the valueLocation from the parameters list in the [Trigger Specification documentation](https://keda.sh/docs/2.16/scalers/metrics-api/#trigger-specification) for details. |
 | `--auto-custom-target-value`   | Target value for metric to scale on.                                          |
 | `--auto-custom-metric-format`  | Format of the metric to scale on (`JSON`, `XML`, `YAML`, `PROMETHEUS`). Default is `JSON`.          |
 
@@ -191,7 +191,7 @@ In this example, the app will be scaled up when the average RAM usage across all
 
 > [!primary]
 >
-> Total deployment price for **autoscaling apps** are calculated based on the **minimum number of replicas**, **but** cost can **increase** during scaling.
+> The total deployment price for **autoscaling apps** is calculated based on the **minimum number of replicas**, **but** costs can **increase** during scaling.
 
 ## Conclusion
 
