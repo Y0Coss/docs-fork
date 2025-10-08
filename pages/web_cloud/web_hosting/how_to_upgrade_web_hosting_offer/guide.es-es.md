@@ -81,7 +81,7 @@ Después de eliminar los datos de sus bases de datos, vuelva a calcular la cuota
 >>
 >> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>

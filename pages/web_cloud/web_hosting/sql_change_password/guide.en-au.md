@@ -177,7 +177,7 @@ Save this change.
 >>
 >> On the page that pops up, click on the `Databases`{.action} tab.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Step 4**
 >>

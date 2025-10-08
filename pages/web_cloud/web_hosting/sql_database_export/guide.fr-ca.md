@@ -65,7 +65,7 @@ Pour accéder à l'outil de sauvegarde d'OVHcloud, cliquez sur les onglets ci-de
 >>
 >> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >> 
 > **Etape 4**
 >>

@@ -81,7 +81,7 @@ Após a eliminação dos dados das suas bases de dados, recalcule o limite utili
 >>
 >> Na página que se abrir, clique no separador `Bases de dados`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>

@@ -104,7 +104,7 @@ If you already have a database and wish to use it (from an [OVHcloud Web Hosting
 
 If you want to create a new database with OVHcloud, log in to the [OVHcloud Control Panel](/links/manager), then click on `Hosting plans`{.action}. Select the name of the Hosting plan concerned, and click on the `Databases`{.action} tab.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Now click the `Create a database`{.action} button, or if this button is not visible, click on `Actions`{.action} and then `Create a database`{.action}. Now follow the information shown.
 

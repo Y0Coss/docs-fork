@@ -65,7 +65,7 @@ Para acceder a la herramienta de backup de OVHcloud, haga clic en las fichas sig
 >>
 >> En la nueva página, haga clic en la pestaña `Bases de datos`{.action}.
 >>
->> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> ![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 >>
 > **Etapa 4**
 >>

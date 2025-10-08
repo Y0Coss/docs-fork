@@ -22,7 +22,7 @@ Uma base de dados (BDD) é utilizada para armazenar elementos dinâmicos (dados 
 
 Aceda à [Área de Cliente OVHcloud](/links/manager) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha o alojamento que pretende criar e clique no separador `Bases de dados`{.action}.
 
-![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 A tabela desta secção contém todas as bases de dados criadas com o seu alojamento web.
 
