@@ -1,5 +1,5 @@
 ---
-title: "How to pay a bill with my Startup Program credits"
+title: "How to pay a bill with your Startup Program credits"
 excerpt: ''
 updated: 2025-10-08
 ---
