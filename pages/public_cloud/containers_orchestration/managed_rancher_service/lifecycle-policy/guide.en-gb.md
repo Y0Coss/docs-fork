@@ -64,7 +64,8 @@ Depending on the version of Rancher, the OVHcloud Managed Kubernetes Service (MK
 - **Rancher 2.11.x** -> MKS 1.30 to 1.32
 
 #### Support
-In addition to the OVHcloud Affiliated Companies listed in the OVHcloud Specific conditions for Public Cloud, SUSE Software Solutions Ireland Ltd, the publisher of the Rancher software, as well as its subsidiaries listed bellow, may, in exceptional cases and with the Client’s explicit consent, access certain Client data as part of the support provided to OVHcloud in the context of the Service.
+
+In addition to the OVHcloud Affiliated Companies listed in the OVHcloud Specific conditions for Public Cloud, SUSE Software Solutions Ireland Ltd, the publisher of the Rancher software, as well as its subsidiaries listed below, may, in exceptional cases and with the Client’s explicit consent, access certain Client data as part of the support provided to OVHcloud in the context of the Service.
 
 | SUSE Affiliate | Location |
 |-----------------|-----------------------|
@@ -81,7 +82,6 @@ In addition to the OVHcloud Affiliated Companies listed in the OVHcloud Specific
 | SUSE Software Solutions India Private Ltd      | India           |
 | SUSE Software Solutions UK Ltd          | UK           |
 | SUSE Software Solutions New Zealand Branch      | New-Zealand           |
-
 
 ## Go Further
 
