@@ -1,7 +1,7 @@
 ---
 title: "Comment supprimer une zone DNS OVHcloud"
 excerpt: "Découvrez comment supprimer une zone DNS pour votre nom de domaine via votre espace client OVHcloud"
-updated: 2025-04-28
+updated: 2025-10-06
 ---
 
 ## Objectif
@@ -53,6 +53,8 @@ Vous pouvez, par exemple, être amené à supprimer une zone DNS pour votre nom 
 
 ### 1 - Initier la suppression d'une zone DNS OVHcloud
 
+**Méthode 1** :
+
 Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
@@ -74,6 +76,10 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> ![delete the DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone.png){.thumbnail}
 >>
+>> > [!primary]
+>> >
+>> > Si le bouton `Supprimer la zone DNS`{.action} n'apparaît pas sur votre écran, suivez la **méthode 2** décrite ci-après dans ce guide.
+>>
 > **Etape 4**
 >>
 >> Dans la fenêtre qui s'ouvre, prenez connaissance des messages indiqués.
@@ -82,7 +88,37 @@ Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4*
 >>
 >> Cliquez sur le bouton `Valider`{.action} pour terminer la première phase de suppression de la zone DNS.
 
-### 2 - Confirmer la suppression d'une zone DNS OVHcloud
+**Méthode 2** :
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur votre nom en haut à droite puis sur `Mes offres & services`{.action}.
+>>
+>> ![Mes offres & services](/pages/assets/screens/control_panel/product-selection/right-menu/my-solutions-and-services.png){.thumbnail}
+>>
+> **Etape 2**
+>>
+>> Dans le tableau présent sur la page qui s'affiche, cliquez sur le bouton `...`{.action} à droite de la zone DNS à résilier, puis sur `Résilier mon service`{.action}.
+>>
+>> ![résilier](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-fr.png){.thumbnail}
+>>
+> **Etape 3**
+>>
+>> Sur la nouvelle page qui apparaît, précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+>>
+>> ![cancel the service](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/cancel-my-service.png){.thumbnail}
+>>
+> **Etape 4**
+>>
+>> Avec cette méthode, la résiliation de votre service aura lieu à la **date d'effet** indiquée dans le tableau « Gestion de mes offres et services ». Si vous ne voyez pas le statut « Résiliation programmée » apparaître, rafraîchissez la page.
+>>
+>> La seconde partie de ce guide intitulée **Confirmer la suppression d'une zone DNS OVHcloud** ne concerne que la **méthode 1**. Avec la méthode 2, seules ces 4 étapes sont à réaliser pour supprimer votre zone DNS. 
+
+
+### 2 - Confirmer la suppression d'une zone DNS OVHcloud (ne concerne que la méthode 1)
 
 Suite à l'étape précédente, un e-mail pour confirmer la suppression de la zone DNS est envoyé à l'adresse e-mail du contact « [Administrateur](/pages/account_and_service_management/account_information/managing_contacts) » de la zone DNS OVHcloud.
 
