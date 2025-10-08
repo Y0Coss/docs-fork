@@ -10,7 +10,7 @@ Configurez et montez votre espace de stockage NAS-HA OVHcloud via le protocole C
 
 ## Prérequis
 
-- Un [serveur dédié](/links/bare-metal/bare-metal) **ou** un [VPS](/links/bare-metal/vps) **ou** une [instance Public Cloud](/links/public-cloud/public-cloud) avec une distribution Windows.
+- Un [serveur dédié](/links/bare-metal/bare-metal) **ou** un [VPS](/links/bare-metal/vps) **ou** une [instance Public Cloud](/links/public-cloud/public-cloud).
 - Une offre [NAS-HA](/links/storage/nas-ha).
 
 ### Configuration pour Windows
