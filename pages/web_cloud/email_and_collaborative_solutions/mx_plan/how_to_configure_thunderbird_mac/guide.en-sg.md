@@ -29,11 +29,7 @@ MX Plan email accounts can be configured on different compatible email clients. 
 
 ## Requirements
 
-- You are using an MX Plan email account. This applies to the following services:
-    - [Web hosting](/links/web/hosting) (included in all offers)
-    - [Free 100M hosting](/links/web/domains-free-hosting) (included with a domain name subscription)
-    - A separately ordered MX Plan service
-    - A [Zimbra Starter email account](/links/web/zimbra)
+- You are using an MX Plan email account. This applies to the [Web hosting](/links/web/hosting) plan (included in all offers).
 - You have the Thunderbird software installed on your Mac device.
 - You have the credentials for the email account you want to configure.
 

@@ -65,7 +65,7 @@ Le ofrecemos este guía para acompañarle en tareas cotidianas. Sin embargo, le 
     2. Haga clic en `Nueva Cuenta`{.action}.
     3. Haga clic en `Dirección de correo electrónico`{.action}.
 
-![thunderbird](images/configuration-thunderbird-win-01.png){.thumbnail .w-600}
+![thunderbird](images/configuration-thunderbird-mac-01.png){.thumbnail .w-600}
 
 Siga los pasos de configuración haciendo clic sucesivamente en los **5** siguientes pestañas:
 
@@ -155,16 +155,16 @@ Si su cuenta de correo ya está configurada y debe acceder a los ajustes de la c
 1. Haga clic en el menú `☰`{.action} en la barra horizontal superior.
 2. Haga clic en `Ajustes de cuentas`{.action}.
 
-![Thunderbird](images/configuration-thunderbird-win-07.png){.thumbnail .w-600}
+![Thunderbird](images/configuration-thunderbird-mac-07.png){.thumbnail .w-600}
 
 - Para modificar los ajustes relacionados con la **recepción** de sus correos, haga clic en `Ajustes del servidor`{.action} en la columna izquierda bajo su dirección de correo.
 
-![thunderbird](images/configuration-thunderbird-exchange-win-08.png){.thumbnail .w-600}
+![thunderbird](images/configuration-thunderbird-exchange-mac-08.png){.thumbnail .w-600}
 
 - Para modificar los ajustes relacionados con el **envío** de sus correos, haga clic en `Servidor saliente (SMTP)`{.action} al final de la columna izquierda.
 - Haga clic en la dirección de correo afectada en la lista, luego haga clic en `Modificar`{.action}.
 
-![thunderbird](images/configuration-thunderbird-exchange-win-09.png){.thumbnail .w-600}
+![thunderbird](images/configuration-thunderbird-exchange-mac-09.png){.thumbnail .w-600}
 
 ## Más información <a name="go-further"></a>
 
