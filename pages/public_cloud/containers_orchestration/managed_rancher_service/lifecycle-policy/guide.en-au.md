@@ -1,7 +1,7 @@
 ---
 title: 'Managed Rancher Service supported versions and lifecycle policy'
 excerpt: 'A complete guide including lifecycle policy, release calendar, and supported versions for OVHcloud Managed Rancher Service'
-updated: 2025-08-15
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -69,9 +69,9 @@ In addition to the OVHcloud Affiliated Companies listed in the OVHcloud Specific
 
 | SUSE Affiliate | Location |
 |-----------------|-----------------------|
-| USE Software Solutions Germany GmbH      | 2025-03-31            |
+| SUSE Software Solutions Germany GmbH      | Germany            |
 | SUSE Linux s.r.o.	SUSE LINUX | Czech Republic           |
-| USE Software Solutions France Sarl          | France           |
+| SUSE Software Solutions France Sarl          | France           |
 | SUSE Software Solutions Ireland   | Ireland            |
 | SUSE Software Solutions Japan          | Japan           |
 | SUSE (Bulgaria)          | Bulgaria           |
