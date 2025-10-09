@@ -17,7 +17,7 @@ Der Zugriff auf die Logs und Statistiken Ihrer Website ist in Ihrem Webhosting-A
 
 ## In der praktischen Anwendung
 
-So greifen Sie auf die verschiedenen statistischen Daten und Logs Ihres Webhostings, klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen.
+Um die verschiedenen statistischen Daten und Logs Ihres Webhostings einzusehen, folgen Sie diesen Schritten. Klicken Sie auf die Tabs, um die **4** Schritte anzuzeigen:
 
 > [!tabs]
 > **Schritt 1**
