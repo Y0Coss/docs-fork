@@ -1,7 +1,7 @@
 ---
 title: Configurer un connecteur d'envoi sur votre plateforme Private ou Trusted Exchange
 excerpt: Découvrez comment ajouter un connecteur d'envoi SMTP sur votre plateforme Exchange OVHcloud
-updated: 2025-10-07
+updated: 2025-10-09
 ---
 
 <style>

@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja łącznika wysyłania na platformie Private lub Trusted Exchange
 excerpt: Dowiedz się, jak dodać łącznik do wysyłki SMTP do platformy Exchange OVHcloud
-updated: 2025-10-07
+updated: 2025-10-09
 ---
 
 <style>

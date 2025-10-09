@@ -1,7 +1,7 @@
 ---
 title: Configurar um conector de envio na sua plataforma Private ou Trusted Exchange
 excerpt: Saiba como adicionar um conector de envio SMTP à sua plataforma Exchange OVHcloud
-updated: 2025-10-07
+updated: 2025-10-09
 ---
 
 <style>
