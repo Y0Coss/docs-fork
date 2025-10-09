@@ -1,7 +1,7 @@
 ---
-title: Improving Network Resilience on Bare metal servers
-excerpt: Discover how to reinforce the resilience of public and private interfaces on your OVHcloud Bare metal servers with the new network aggregation architecture
-updated: 2025-10-07
+title: Improving Network Resilience on Bare Metal servers
+excerpt: Discover how to reinforce the resilience of public and private interfaces on your OVHcloud Bare Metal servers with the new network aggregation architecture
+updated: 2025-10-10
 ---
 
 > [!primary]
@@ -11,7 +11,7 @@ updated: 2025-10-07
 
 ## Objective
 
-This guide presents the new network aggregation architecture implemented on OVHcloud Bare metal servers. This evolution aims to strengthen fault tolerance and improve service continuity for your critical environments.
+This guide presents the new network aggregation architecture implemented on OVHcloud Bare Metal servers. This evolution aims to strengthen fault tolerance and improve service continuity for your critical environments.
 
 ## Requirements
 
