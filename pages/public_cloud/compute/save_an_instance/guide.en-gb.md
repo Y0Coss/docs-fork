@@ -1,6 +1,6 @@
 ---
 title: Backing up an instance
-excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel or via Openstack
+excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel or via OpenStack
 updated: 2025-04-28
 ---
 
@@ -107,11 +107,11 @@ You can create a single backup of an instance or configure a schedule in order t
 >> >
 >> >> The name of the snapshot (local backup) to create.
 >>
->> > **distantRegionName (optionnel)** *
+>> > **distantRegionName (optional)** *
 >> >
 >> >> The remote region name where the distant backup will be stored.
 >>
->> > **distantSnapshotName (optionnel)** *
+>> > **distantSnapshotName (optional)** *
 >> >
 >> >> The name of the distant backup to create in the remote region.
 >>
@@ -120,7 +120,7 @@ You can create a single backup of an instance or configure a schedule in order t
 >> > Only create a distant backup if the parameters related to the remote region (**distantRegionName** and **distantSnapshotName**) are provided.
 >> >
 >>
-> Via Openstack
+> Via OpenStack
 >> ```bash
 >> $ openstack server list
 >>
