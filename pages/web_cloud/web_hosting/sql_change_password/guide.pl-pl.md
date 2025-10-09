@@ -22,10 +22,10 @@ Jeśli chcesz zmienić hasło do bazy danych, wykonaj **wszystkie operacje** opi
 
 Zmiana hasła do bazy danych składa się z czterech częściach:
 
-- [1: zidentyfikować plik konfiguracyjny Twojej strony](#step1);
-- [2: zidentyfikować bazę danych Twojej strony](#step2);
-- [3: zmienić hasło do bazy danych Twojej strony WWW w pliku konfiguracyjnym](#step3);
-- [4: zmienić hasło do bazy danych na serwerze baz danych](#step4).
+- [1: Zidentyfikować plik konfiguracyjny Twojej strony](#step1);
+- [2: Zidentyfikować bazę danych Twojej strony](#step2);
+- [3: Zmienić hasło do bazy danych Twojej strony WWW w pliku konfiguracyjnym](#step3);
+- [4: Zmienić hasło do bazy danych na serwerze baz danych](#step4).
 
 **Dowiedz się, jak zmienić hasło do bazy danych w bezpieczny sposób.**
 
@@ -45,7 +45,7 @@ Zmiana hasła do bazy danych składa się z czterech częściach:
 
 ## W praktyce
 
-### 1: zidentyfikować plik konfiguracyjny Twojej strony <a name="step1"></a>
+### 1: Zidentyfikować plik konfiguracyjny Twojej strony <a name="step1"></a>
 
 W [Panelu klienta OVHcloud](/links/manager) kliknij pozycję `Web Cloud`{.action}, a następnie wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę `Katalog główny` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
 
@@ -67,7 +67,7 @@ Wyszukaj i otwórz plik konfiguracyjny Twojej strony:
 - W przypadku strony DRUPAL kliknij folder **"sites"**, a następnie **"default"**. Plik konfiguracyjny to **"settings.php"**;
 - W przypadku strony PRESTASHOP kliknij folder **"app"**, a następnie **"config"**. Plik konfiguracyjny to **"parameters.php"**.
 
-### 2: zidentyfikować bazę danych twojej strony <a name="step2"></a>
+### 2: Zidentyfikować bazę danych twojej strony <a name="step2"></a>
 
 Możliwe są dwa przypadki:
 
@@ -104,7 +104,7 @@ W zakładce `Informacje ogólne`{.action} podaj w ofercie [Web Cloud Databases](
 
 W tej części Panelu klienta przejdź do zakładki `Użytkownik i uprawnienia`{.action}, aby również znaleźć `Nazwę użytkownika`{.action} Twojej bazy danych.
 
-### 3: zmiana hasła do bazy danych Twojej strony WWW w pliku konfiguracyjnym <a name="step3"></a>
+### 3: Zmiana hasła do bazy danych Twojej strony WWW w pliku konfiguracyjnym <a name="step3"></a>
 
 > [!primary]
 >

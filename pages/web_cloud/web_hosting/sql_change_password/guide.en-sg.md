@@ -20,13 +20,12 @@ Until this change is made **in both locations**, your site will display a "[data
 
 For this reason, if you would like to change your database password, you will need to carry out  **all of the operations** listed in this guide. If you have any doubts about how to proceed, contact your webmaster or contact a [specialised service provider](/links/partner).
 
-There are four parts to changing your website’s database password:
+Changing your website’s database password involves four parts:
 
-- [1: identify your website configuration file](#step1)
-- [2: identify your website database](#step2)
-- [3: change the password for your website database in its configuration file](#step3)
-- [4: change the password for your website database on the database server](#step4)
-
+- [1: Identify your website configuration file](#step1)
+- [2: Identify your website database](#step2)
+- [3: Change the password for your website database in its configuration file](#step3)
+- [4: Change the password for your website database on the database server](#step4)
 **This guide explains how to change a database password securely.**
 
 > [!warning]
@@ -163,7 +162,7 @@ Save this change.
 > [!tabs]
 > **Step 1**
 >>
->> Log in to the [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
+>> Log in to your [OVHcloud Control Panel](/links/manager), then go to the `Web Cloud`{.action} section.
 >>
 >> ![Web Cloud](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
 >>

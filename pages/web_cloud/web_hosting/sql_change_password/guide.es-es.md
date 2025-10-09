@@ -22,10 +22,10 @@ Si desea cambiar la contraseña de la base de datos, deberá realizar todas **la
 
 La modificación de la contraseña de la base de datos del sitio web se realiza en cuatro partes:
 
-- [1. identificar el archivo de configuración del sitio web](#step1);
-- [2. identificar la base de datos del sitio web](#step2);
-- [3. cambiar la contraseña de la base de datos del sitio web en el archivo de configuración](#step3);
-- [4. cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos](#step4).
+- [1. Identificar el archivo de configuración del sitio web](#step1);
+- [2. Identificar la base de datos del sitio web](#step2);
+- [3. Cambiar la contraseña de la base de datos del sitio web en el archivo de configuración](#step3);
+- [4. Cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos](#step4).
 
 **Esta guía explica cómo cambiar la contraseña de una base de datos de forma segura.**
 
@@ -45,7 +45,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 ## Procedimiento
 
-### 1: identificar el archivo de configuración del sitio web <a name="step1"></a>
+### 1: Identificar el archivo de configuración del sitio web <a name="step1"></a>
 
 En el [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action} y, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
 
@@ -67,7 +67,7 @@ Busque y abra el archivo de configuración de su sitio web:
 - Para un sitio web DRUPAL, haga clic en el directorio **"sites"** y luego en **"default"**. El archivo de configuración es **"settings.php"**;
 - Para un sitio web PRESTASHOP, haga clic en el directorio **"app"** y luego en **"config"**. El archivo de configuración es **"parameters.php"**.
 
-### 2: identificar la base de datos del sitio web <a name="step2"></a>
+### 2: Identificar la base de datos del sitio web <a name="step2"></a>
 
 Existen dos posibilidades:
 
@@ -191,7 +191,7 @@ De nuevo, existen dos posibles situaciones:
 
 #### Caso n° 1: la base de datos de su sitio web forma parte de su plan de hosting <a name="case1"></a>
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las pestañas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**

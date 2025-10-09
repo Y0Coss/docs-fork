@@ -22,10 +22,10 @@ Si desea cambiar la contraseña de la base de datos, deberá realizar todas **la
 
 La modificación de la contraseña de la base de datos del sitio web se realiza en cuatro partes:
 
-- [1. identificar el archivo de configuración del sitio web](#step1);
-- [2. identificar la base de datos del sitio web](#step2);
-- [3. cambiar la contraseña de la base de datos del sitio web en el archivo de configuración](#step3);
-- [4. cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos](#step4).
+- [1. Identificar el archivo de configuración del sitio web](#step1);
+- [2. Identificar la base de datos del sitio web](#step2);
+- [3. Cambiar la contraseña de la base de datos del sitio web en el archivo de configuración](#step3);
+- [4. Cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos](#step4).
 
 **Esta guía explica cómo cambiar la contraseña de una base de datos de forma segura.**
 
@@ -45,7 +45,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 ## Procedimiento
 
-### 1: identificar el archivo de configuración del sitio web <a name="step1"></a>
+### 1: Identificar el archivo de configuración del sitio web <a name="step1"></a>
 
 En el [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action} y, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
 
@@ -67,7 +67,7 @@ Busque y abra el archivo de configuración de su sitio web:
 - Para un sitio web DRUPAL, haga clic en el directorio **"sites"** y luego en **"default"**. El archivo de configuración es **"settings.php"**;
 - Para un sitio web PRESTASHOP, haga clic en el directorio **"app"** y luego en **"config"**. El archivo de configuración es **"parameters.php"**.
 
-### 2: identificar la base de datos del sitio web <a name="step2"></a>
+### 2: Identificar la base de datos del sitio web <a name="step2"></a>
 
 En el archivo de configuración indicado en el [Etapa 1](#step1), empiece por anotar el nombre de la base de datos:
 
@@ -82,7 +82,7 @@ Vuelva al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cl
 - Haga clic en la pestaña `Bases de datos`{.action} **a la derecha** de su pantalla.
 - Busque el nombre de la base de datos encontrada anteriormente en la columna `Nombre de la base` de datos.
 
-### 3: cambiar la contraseña de la base de datos del sitio web en el archivo de configuración <a name="step3"></a>
+### 3: Cambiar la contraseña de la base de datos del sitio web en el archivo de configuración <a name="step3"></a>
 
 > [!primary]
 >
@@ -154,14 +154,14 @@ $databases['default']['default'] = array (
 
 Guarde el cambio.
 
-### 4: cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos <a name="step4"></a>
+### 4: Cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos <a name="step4"></a>
 
 > [!primary]
 >
 > Esta operación tardará unos minutos en aplicarse. Abra la pestaña `Tareas en curso`{.action} y compruebe su estado.
 >
 
-Haga clic en las fichas siguientes para ver cada uno de los **5** etapas.
+Haga clic en las pestañas siguientes para ver cada una de las **5** etapas.
 
 > [!tabs]
 > **Etapa 1**

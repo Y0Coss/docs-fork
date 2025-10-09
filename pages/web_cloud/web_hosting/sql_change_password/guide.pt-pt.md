@@ -22,10 +22,10 @@ Assim, para alterar a palavra-passe da base de dados, é imperativo que realize 
 
 A alteração da palavra-passe da base de dados do seu site faz-se em quatro partes:
 
-- [1: identificar o ficheiro de configuração do seu site](#step1);
-- [2: identificar a base de dados do seu site](#step2);
-- [3: alterar a palavra-passe da base de dados do seu site no seu ficheiro de configuração](#step3);
-- [4: alterar a palavra-passe da base de dados do seu site para o servidor de bases de dados](#step4).
+- [1: Identificar o ficheiro de configuração do seu site](#step1);
+- [2: Identificar a base de dados do seu site](#step2);
+- [3: Alterar a palavra-passe da base de dados do seu site no seu ficheiro de configuração](#step3);
+- [4: Alterar a palavra-passe da base de dados do seu site para o servidor de bases de dados](#step4).
 
 **Descubra como alterar a palavra-passe de uma base de dados de forma segura.**
 
@@ -45,7 +45,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro par
 
 ## Instruções
 
-### 1: identificar o ficheiro de configuração do seu site <a name="step1"></a>
+### 1: Identificar o ficheiro de configuração do seu site <a name="step1"></a>
 
 Na sua [Área de Cliente OVHcloud](/links/manager), clique em `Web Cloud`{.action} e em `Alojamentos`{.action} e, por fim, no alojamento em causa. De seguida, aceda ao separador `Multisite`{.action}. Identifique o nome da `Pasta raiz` do seu site (o diretório no qual se encontram os seus ficheiros e pastas).
 
@@ -67,7 +67,7 @@ Procure e abra o ficheiro de configuração do seu site:
 - Para um site DRUPAL, clique na pasta **"sites"** e **"default"**. O ficheiro de configuração é **"settings.php"**;
 - Para um website PRESTASHOP, clique na pasta **"app"** e **"config"**. O ficheiro de configuração é **"parameters.php"**.
 
-### 2: identificar a base de dados do seu site <a name="step2"></a>
+### 2: Identificar a base de dados do seu site <a name="step2"></a>
 
 Existem dois casos possíveis:
 
@@ -104,7 +104,7 @@ No separador `Informações gerais`{.action}, identifique, nas suas ofertas [Web
 
 Ainda nesta parte da sua Área de Cliente, aceda ao separador `Utilizador e permissões`{.action}, para que possa também consultar o `Nome de utilizador`{.action} da sua base de dados.
 
-### 3: alterar a palavra-passe da base de dados do seu site no seu ficheiro de configuração <a name="step3"></a>
+### 3: Alterar a palavra-passe da base de dados do seu site no seu ficheiro de configuração <a name="step3"></a>
 
 > [!primary]
 >
@@ -176,7 +176,7 @@ $databases['default']['default'] = array (
 
 Guarde esta modificação.
 
-### 4: alterar a palavra-passe da base de dados do seu site para o servidor de bases de dados <a name="step4"></a>
+### 4: Alterar a palavra-passe da base de dados do seu site para o servidor de bases de dados <a name="step4"></a>
 
 > [!primary]
 >
@@ -220,7 +220,7 @@ Clique nas janelas abaixo para visualizar cada uma das etapas **5**.
 >>
 > **Etapa 5**
 >>
->> Na nova janela, introduza a nova palavra-passe da base de dados (definida no [Parte 3](#step3)), confirme que está correta e clique no botão `Validar`{.action}.
+>> Na nova janela, introduza a nova palavra-passe da base de dados (definida no [parte 3](#step3)), confirme que está correta e clique no botão `Validar`{.action}.
 >>
 >> ![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 

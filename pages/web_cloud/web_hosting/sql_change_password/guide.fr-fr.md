@@ -20,7 +20,7 @@ Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, vo
 
 Il est donc impératif, si vous souhaitez changer le mot de passe de votre base de données, que vous réalisiez **l'ensemble des opérations** indiquées dans ce guide. En cas de doutes sur les manipulations à réaliser, contactez votre webmaster ou faites appel à un [prestataire spécialisé](/links/partner).
 
-La modification du mot de passe de la base de données de votre site se fait en quatre parties :
+La modification du mot de passe de la base de données de votre site nécessite quatre actions :
 
 - [1 : identifier le fichier de configuration de votre site](#step1);
 - [2 : identifier la base de données de votre site](#step2);
