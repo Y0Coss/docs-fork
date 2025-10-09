@@ -1,7 +1,7 @@
 ---
 title: Configure a send connector on your Private or Trusted Exchange platform
 excerpt: Find out how to add an SMTP send connector to your OVHcloud Exchange platform
-updated: 2025-10-07
+updated: 2025-10-09
 ---
 
 <style>
