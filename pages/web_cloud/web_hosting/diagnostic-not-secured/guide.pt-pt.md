@@ -1,7 +1,7 @@
 ---
 title: "O que fazer em caso de erro « Sua conexão não é particular »?"
 excerpt: "Reagir em caso de mensagem de erro relacionado com a segurança do seu site"
-updated: 2025-10-08
+updated: 2025-10-09
 ---
 
 ## Objetivo <a name="objective"></a>
@@ -37,7 +37,7 @@ Para resolver esta anomalia, deverá:
 1. determinar o alojamento ao qual está ligado o seu nome de domínio, para que possa intervir no bom servidor;
 2. criar, ativar ou renovar um [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) para o seu nome de domínio no alojamento em causa.
 
-### 1: verificar o alojamento associado ao seu domínio
+### 1: Verificar o alojamento associado ao seu domínio
 
 #### Verificar o endereço IP do alojamento
 
@@ -87,7 +87,7 @@ Nota do destino do tipo `A` para o seu domínio:
 |No separador `Zona DNS`{.action}, uma mensagem indica que o seu domínio utiliza outros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit) e estes não aparecem na forma « ns **?** .ovh.net » ou « dns **?** .ovh.net »:<br><br>![warning_external_dn_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}|Contacte o seu webmaster ou os [parceiros OVHcloud](/links/partner) a este respeito.|
 |`Noms de domínio`{.action} do seu [Área de Cliente OVHcloud](/links/manager).<br><br>Ou o separador `Zona DNS`{.action} do seu domínio aparece da seguinte forma:<br><br>![zonedns_ndd_non_sur_lec2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|Isto significa que o seu domínio não é gerido a partir do seu [Área de Cliente OVHcloud](/links/manager).<br><br>Verifique que o domínio não é gerido a partir de uma das suas outras [contas OVHcloud](/links/manager), se tiver criado vários.<br><br>Pode igualmente determinar o seu escritório de's registo e os servidores DNS aos quais está ligado através da nossa ferramenta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Se necessário, contacte o seu webmaster ou os [parceiros OVHcloud](/links/partner).|
 
-### 2: verificar o certificado SSL do alojamento <a name="step2"></a>
+### 2: Verificar o certificado SSL do alojamento <a name="step2"></a>
 
 No separador `Informações gerais`{.action} do seu alojamento OVHcloud, verifique a parte `Certificado SSL`:
 

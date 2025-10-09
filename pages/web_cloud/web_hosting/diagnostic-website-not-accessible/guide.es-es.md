@@ -1,7 +1,7 @@
 ---
 title: "¿Qué hacer si mi sitio web no está accesible?"
 excerpt: "Diagnóstico de las causas de la inaccesibilidad de su sitio web"
-updated: 2025-10-08
+updated: 2025-10-09
 ---
 
 ## Objetivo
@@ -32,7 +32,7 @@ En caso de que su sitio web no sea accesible, pueden aparecer varios errores en 
 
 ## Procedimiento
 
-### 1: comprobar la validez de su dominio
+### 1: Comprobar la validez de su dominio
 
 > [!warning]
 >
@@ -52,11 +52,11 @@ Renueve su dominio si es necesario a través del botón `...`{.action} a la dere
 
 Una vez completada la renovación del plan, su sitio web estará disponible en un plazo máximo de 48 horas.
 
-### 2: comprobar los servidores DNS
+### 2: Comprobar los servidores DNS
 
 Para comprobar la validez de sus [servidores DNS](/pages/web_cloud/domains/dns_server_edit), haga clic en [área de cliente de OVHcloud](/links/manager) y seleccione el dominio del `Dominios`{.action}.
 
-#### Situación 1: no hay anomalías en los servidores DNS
+#### Situación 1: No hay anomalías en los servidores DNS
 
 Compruebe los servidores indicados en la pestaña `Servidores DNS`{.action}:
 
@@ -66,7 +66,7 @@ Si son idénticos a los objetivos de las entradas de tipo `NS` en la `Zona DNS`{
 
 ![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
-#### Situación 2: aparecerá un aviso por encima de la zona DNS
+#### Situación 2: Aparecerá un aviso por encima de la zona DNS
 
 Una advertencia en la pestaña `Zona DNS`{.action} indica que los servidores DNS utilizados por su dominio no son los indicados en su zona. Existen dos posibles situaciones:
 
@@ -89,7 +89,7 @@ Su sitio web estará disponible en un plazo máximo de 48 horas.
 > Es posible que los servidores DNS utilizados por el dominio sean funcionales y que el problema de acceso al sitio web esté relacionado con un registro que no se encuentra o que no está en la [zona DNS](/pages/web_cloud/domains/dns_zone_general_information). Cualquier modificación de los servidores DNS en esta situación puede hacer que sus direcciones de correo u otras aplicaciones en línea no estén disponibles.
 >
 
-#### Situación 3: no aparece ningún registro de tipo NS en la zona DNS
+#### Situación 3: No aparece ningún registro de tipo NS en la zona DNS
 
 La `Zona DNS`{.action} de su dominio no contiene ningún registro de tipo `NS`:
 
@@ -107,13 +107,13 @@ A continuación, haga clic en `Restaurar mi zona DNS`{.action} y seleccione `No,
 
 Su sitio web estará disponible en un plazo máximo de 24 horas.
 
-### 3: comprobar la zona DNS <a name="step3"></a>
+### 3: Comprobar la zona DNS <a name="step3"></a>
 
 En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a su `Zona DNS`{.action}.
 
 Si su sitio web no está alojado en la infraestructura de OVHcloud o si está gestionado por otro proveedor, contacte con el servicio de soporte correspondiente.
 
-Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](/links/web/hosting), haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
+Si su sitio web está alojado en uno de nuestros [planes de hosting](/links/web/hosting), haga clic en las fichas siguientes para ver cada uno de los **3** etapas.
 
 > [!tabs]
 > **Etapa 1**
@@ -134,7 +134,7 @@ Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](/link
 >>
 >> ![IPv4-IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >>
->> En la pestaña `Información general`{.action}, copie la dirección IPV4 y/o IPV6 de su dominio.
+>> Copie la dirección IPV4 y/o IPV6 de su dominio.
 
 A continuación, cópiela en la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) de su dominio modificando o creando uno o más registros de tipo `A`.
 

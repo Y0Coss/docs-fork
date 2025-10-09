@@ -1,7 +1,7 @@
 ---
 title: "Que faire si mon site est inaccessible ?"
 excerpt: "Diagnostiquez les causes de l'inaccessibilité de votre site"
-updated: 2025-10-08
+updated: 2025-10-09
 ---
 
 ## Objectif
@@ -32,7 +32,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 
 ## En pratique
 
-### 1 : vérifier la validité de votre nom de domaine
+### 1 : Vérifier la validité de votre nom de domaine
 
 > [!warning]
 >
@@ -52,11 +52,11 @@ Renouvelez votre domaine si nécessaire via le bouton `...`{.action} à droite d
 
 Suite à ce renouvellement, votre site sera accessible sous 48 heures maximum.
 
-### 2 : vérifier les serveurs DNS
+### 2 : Vérifier les serveurs DNS
 
 Pour vérifier la validité de vos [serveurs DNS](/pages/web_cloud/domains/dns_server_edit), dans votre [espace client OVHcloud](/links/manager) cliquez sur `Noms de domaine`{.action}, puis sur le domaine de votre site.
 
-#### Scénario 1 : aucune anomalie sur les serveurs DNS
+#### Scénario 1 : Aucune anomalie sur les serveurs DNS
 
 Vérifiez les serveurs indiqués dans l'onglet `Serveurs DNS`{.action} :
 
@@ -66,7 +66,7 @@ S'ils sont identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.a
 
 ![srv-dns-ok](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-ns.png){.thumbnail}
 
-#### Scénario 2 : un avertissement apparaît au-dessus de la zone DNS
+#### Scénario 2 : Un avertissement apparaît au-dessus de la zone DNS
 
 Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS utilisés par votre domaine ne sont pas ceux indiqués dans votre zone. Deux scénarios sont ici possibles :
 
@@ -89,7 +89,7 @@ Votre site sera de nouveau accessible sous 48 heures maximum.
 > Il est en effet possible que les serveurs DNS utilisés par votre nom de domaine soient fonctionnels et que le problème d'accès à votre site soit lié à une entrée manquante ou erronée dans la [zone DNS](/pages/web_cloud/domains/dns_zone_general_information). Toute modification des serveurs DNS dans cette situation peut rendre vos adresses e-mails ou d'autres applications en ligne indisponibles.
 >
 
-#### Scénario 3 : aucune entrée de type NS n'apparaît dans la zone DNS
+#### Scénario 3 : Aucune entrée de type NS n'apparaît dans la zone DNS
 
 La `Zone DNS`{.action} de votre domaine ne contient pas d'entrée de type `NS` :
 
@@ -107,13 +107,13 @@ Cliquez ensuite sur `Réinitialiser ma zone DNS`{.action}, puis sélectionnez `N
 
 Votre site sera de nouveau accessible sous 24 heures maximum.
 
-### 3 : vérifier la zone DNS <a name="etape3"></a>
+### 3 : Vérifier la zone DNS <a name="etape3"></a>
 
 Dans cette étape, vous allez retrouver l'adresse IP de votre hébergement, puis l'ajouter à votre `Zone DNS`{.action}.
 
 Si votre site est hébergé en dehors de l'infrastructure OVHcloud ou géré par une tierce personne, contactez l'hébergeur ou le prestataire concerné.
 
-Si votre site est hébergé sur l'une de nos [offres Web Cloud](/links/web/hosting), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+Si votre site est hébergé sur l'une de nos [offres d'hébergement web](/links/web/hosting), cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
 
 > [!tabs]
 > **Étape 1**
