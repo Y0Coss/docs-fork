@@ -1,7 +1,7 @@
 ---
 title: "Esporta il tuo sito Web"
 excerpt: "Come esportare un sito Web OVHcloud"
-updated: 2022-02-03
+updated: 2025-10-09
 ---
 
 ## Obiettivo
@@ -65,7 +65,11 @@ Se utilizzi un database **Web Cloud Databases** per il tuo sito Web, consulta la
 
 Per conservare lo storico dei log del tuo sito, è disponibile un accesso a questi ultimi con il tuo hosting.
 
-Clicca su `Hosting`{.action} e seleziona il tuo servizio. Clicca sulla scheda `Statistiche e log`{.action}. Clicca sul link sotto la voce `Visualizza i log`{.action}:
+Clicca su `Hosting`{.action} e seleziona il tuo servizio. Clicca sulla scheda `Statistiche e log`{.action}.
+
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+
+Clicca sul link sotto la voce `Visualizza i log`{.action}:
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 

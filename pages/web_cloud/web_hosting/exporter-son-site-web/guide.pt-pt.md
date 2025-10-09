@@ -1,7 +1,7 @@
 ---
 title: "Exportar o seu website"
 excerpt: "Descubra como exportar o seu website OVHcloud"
-updated: 2022-02-03
+updated: 2025-10-09
 ---
 
 ## Objetivo
@@ -65,7 +65,11 @@ Se utiliza uma base de dados **Web Cloud Databases** para o seu website, consult
 
 Se deseja guardar o histórico dos logs do seu website, pode aceder aos logs no seu alojamento.
 
-Depois, clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique no separador `Estatísticas e logs`{.action}. A seguir, clique na ligação sob a menção `Ver logs`{.action}:
+Depois, clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique no separador `Estatísticas e logs`{.action}.
+
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+
+A seguir, clique na ligação sob a menção `Ver logs`{.action}:
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 

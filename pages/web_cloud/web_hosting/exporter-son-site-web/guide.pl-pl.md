@@ -1,7 +1,7 @@
 ---
 title: "Eksportowanie witryny internetowej"
 excerpt: "Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud"
-updated: 2022-02-03
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie 
@@ -65,7 +65,11 @@ Jeśli korzystasz z **serwera Web Cloud Databases** w Twojej witrynie, zapoznaj 
 
 Jeśli chcesz pobrać historię logów Twojej witryny, możesz to zrobić z poziomu planu hostingu WWW.
 
-Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij zakładkę `Statystyki i logi`{.action}. Następnie kliknij link pod napisem `Zobacz logi`{.action}:
+Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij zakładkę `Statystyki i logi`{.action}.
+
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+
+Następnie kliknij link pod napisem `Zobacz logi`{.action}:
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 

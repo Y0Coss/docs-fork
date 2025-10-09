@@ -1,7 +1,7 @@
 ---
 title: "Exporter son site web"
 excerpt: "Découvrez comment exporter votre site web OVHcloud"
-updated: 2022-02-03
+updated: 2025-10-09
 ---
 
 ## Objectif
@@ -62,7 +62,11 @@ Pour récupérer une sauvegarde de votre base de données, consultez notre guide
 
 Si vous souhaitez conserver l'historique des logs de votre site, un accès à ces derniers est disponible avec votre hébergement.
 
-Cliquez sur `Hébergements`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Statistiques et logs`{.action}. Cliquez ensuite sur le lien sous la mention `Voir les logs`{.action} :
+Cliquez sur `Hébergements`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Statistiques et logs`{.action}.
+
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+
+Cliquez ensuite sur le lien sous la mention `Voir les logs`{.action} :
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 
