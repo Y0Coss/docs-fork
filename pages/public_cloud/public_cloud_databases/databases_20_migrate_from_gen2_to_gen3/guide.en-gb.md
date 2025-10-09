@@ -1,7 +1,7 @@
 ---
 title: "How to migrate a database service from Gen 2 to Gen 3"
 excerpt: "Learn how to upgrade your OVHcloud Public Cloud Database from Gen 2 to Gen 3 and take advantage of improved performance and features"
-updated: 2025-10-07
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -16,7 +16,7 @@ OVHcloud Public Cloud Databases offer different generations to meet varying need
 
 ## Why migrate to Gen 3?
 
-Upgrading your database service from Gen 2 to Gen 3 brings significant improvements in performance, scalability, and reliability. Gen 3 databases are designed with enhanced architectures and optimized resource management, allowing your critical applications to run more efficiently and with better fault tolerance.
+Upgrading your database service from Gen 2 to Gen 3 brings significant improvements in performance, scalability, and reliability. Gen 3 databases are designed with enhanced architectures and optimised resource management, allowing your critical applications to run more efficiently and with better fault tolerance.
 
 ## Instructions
 
@@ -35,7 +35,7 @@ Gen 3 provides improved performance, scalability, and reliability compared to Ge
 >>
 >> ![databases - select engines instances and go to the backups section](images/databases_select_cluster.png){.thumbnail}
 >>
->> Choose the backup from which you wish to fork, click on the `...`{.action} button and click on the `Duplicate (fork)`{.action} button.
+>> Choose the backup from which you wish to fork, click the `...`{.action} button then the `Duplicate (fork)`{.action} button.
 >>
 >> ![databases - click on the duplicate button](images/databases_fork_backup.png){.thumbnail}
 >>
@@ -44,15 +44,15 @@ Gen 3 provides improved performance, scalability, and reliability compared to Ge
 >>
 >> ![databases fork - select backup for the restore point part](images/databases_fork_restore_point.png){.thumbnail}
 >>
->> Select a region{.action}.
+>> Select a region.
 >>
 >> ![databases fork - select your region](images/databases_fork_region.png){.thumbnail}
 >>
->> Select a service `plan`{.action}.
+>> Select a service plan.
 >>
 >> ![databases fork - select your plan](images/databases_fork_plan.png){.thumbnail}
 >>
->> Select the `instance`{.action} that will host the service.
+>> Select the instance that will host the service.
 >>
 >> > [!primary]
 >> >
@@ -67,7 +67,7 @@ Gen 3 provides improved performance, scalability, and reliability compared to Ge
 >>
 >> ![databases fork - select the instance](images/databases_fork_instance.png){.thumbnail}
 >>
->> Select the `storage`{.action} capacity of the service.
+>> Select the storage capacity of the service.
 >>
 >> ![databases fork - select the storage](images/databases_fork_storage.png){.thumbnail}
 >>
@@ -165,7 +165,7 @@ Follow these instructions to delete the old 1-AZ service:
 
 > [!tabs]
 > Via the OVHcloud Control Panel
->> Navigate to your list of database services, click on the `...`{.action} button on the service line and click on the `Delete`{.action} button to permanently delete the service.
+>> Navigate to your list of database services, click the `...`{.action} button on the service line then click the `Delete`{.action} button to permanently delete the service.
 >>
 >> ![databases - delete the gen 2 service](images/databases_delete_1az.png){.thumbnail}
 >>
