@@ -150,7 +150,7 @@ Als Workaround können die UID und GID auf dem Windows-Rechner, der auf Ihr NAS-
 1. Weisen Sie jedem dieser Einträge den Wert „0“ zu.
 1. Starten Sie den NFS-Dienst auf dem Client-Computer neu, um die Änderungen zu übernehmen.
 
-Alle Einhängeoptionen sind auf der [Microsoft-Website](https://learn.microsoft.com/de-de/windows-server/administration/windows-commands/mount) verfügbar.
+Alle Mount-Optionen sind auf der [Microsoft-Website](https://learn.microsoft.com/de-de/windows-server/administration/windows-commands/mount) verfügbar.
 
 ### Proxmox
 
