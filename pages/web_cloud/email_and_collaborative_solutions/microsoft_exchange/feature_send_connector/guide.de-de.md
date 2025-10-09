@@ -86,27 +86,27 @@ Verwenden Sie den folgenden API-Aufruf, um Ihrer Exchange Plattform einen Send C
 >
 > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
-In de sectie **PATH PARAMETERS**:
+Im Bereich **PATH PARAMETERS**:
 
 - `exchangeService`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 
-Op het tabblad **EXAMPLE** in het gedeelte **REQUEST BODY** kunt u de velden invullen met uw waarden:
+Im Tab **EXAMPLE** im Bereich **REQUEST BODY**, geben Sie Ihre Werte in die Felder ein:
 
 - `displayName`: Anzeigename des Send Connectors.
 - `maxSendSize`: Maximale Größe einer E-Mail beim Versand in MB (maximal 100 MB und der Standard wenn Sie nichts eingeben).
 - `password`: Kennwort, das an den Benutzer des Send Connectors angefügt ist.
 - `port`: Der zum Senden verwendete Port.
-- `requireTLS`: TLS-Sicherheitsprotokoll beim Senden verwenden
+- `requireTLS`: TLS-Sicherheitsprotokoll beim Senden verwenden.
 - `smartHost`: Adresse des Send Connectors (SMTP).
 - `smartHostAuthMechanism`: Der für den Send Connector verwendete Authentifizierungsmechanismus.
 - `user`: Der Benutzer, der dem Send Connector zugeordnet ist.
 
 > [!primary]
 >
-> De knop `Only required fields` onder het invoervak geeft alleen de verplichte velden weer.
+> Die Option `Only required fields` ermöglicht es, nur die notwendigen Parameter anzuzeigen.
 
-Klik op `Execute`{.action} om de API-call te starten.
+Klicken Sie auf `Execute`{.action} um den API-Aufruf zu starten.
 
 Diese Art von Ergebnis wird angezeigt:
 
@@ -126,12 +126,12 @@ Nachdem der Send Connector erstellt wurde, rufen Sie die ID des Send Connectors 
 >
 > @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
-In de sectie **PATH PARAMETERS**:
+Im Bereich **PATH PARAMETERS**:
 
 - `exchangeService`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 
-Klik op `Execute`{.action} om de API-call te starten.
+Klicken Sie auf `Execute`{.action} um den API-Aufruf zu starten.
 
 Diese Art von Ergebnis wird angezeigt:
 
@@ -147,13 +147,13 @@ Sie finden die Details Ihres Send Connectors über diesen Aufruf: <a name="idcon
 >
 > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
-In de sectie **PATH PARAMETERS**:
+Im Bereich **PATH PARAMETERS**:
 
 - `exchangeService`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `id`: Geben Sie die ID Ihres Send Connectors ein, die Sie im vorherigen Schritt erhalten haben.
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 
-Klik op `Execute`{.action} om de API-call te starten.
+Klicken Sie auf `Execute`{.action} um den API-Aufruf zu starten.
 
 Diese Art von Ergebnis wird angezeigt:
 
@@ -183,18 +183,18 @@ Verwenden Sie den API-Aufruf zur Einrichtung eines Exchange Accounts, um die ID 
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
-In de sectie **PATH PARAMETERS**:
+Im Bereich **PATH PARAMETERS**:
 
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `primaryEmailAddress`: Geben Sie eine der E-Mail-Adressen Ihrer Exchange Plattform ein, an die Sie den Send Connector anhängen möchten.
 - `exchangeService`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 
-Op het tabblad **EXAMPLE** in het gedeelte **REQUEST BODY** kunt u de waarden voor de twee onderstaande velden wijzigen:
+Im Tab **EXAMPLE** im Bereich **REQUEST BODY**, editieren Sie die Werte in diesen beiden Feldern:
 
 - `sendConnectorId`: Geben Sie „0“ ein, um die Sendeserver-ID der Exchange Plattform festzulegen.
 - `deleteVirus`: Geben Sie "true" statt "false" ein, um bei der Ausführung des API-Aufrufs keine Fehler zu erhalten.
 
-Klik op `Execute`{.action} om de API-call te starten.
+Klicken Sie auf `Execute`{.action} um den API-Aufruf zu starten.
 
 Sie erhalten folgendes Ergebnis:
 
@@ -270,18 +270,18 @@ Um einen Send Connector zu entfernen, verwenden Sie den API-Aufruf zum Einrichte
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
-In de sectie **PATH PARAMETERS**:
+Im Bereich **PATH PARAMETERS**:
 
 - `exchangeService`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `primaryEmailAddress`: Geben Sie eine der E-Mail-Adressen Ihrer Exchange Plattform ein, von der Sie den Send Connector trennen möchten.
 
-Ändern Sie auf der Registerkarte **EXAMPLE** im Abschnitt **REQUEST BODY** die Werte in den beiden folgenden Feldern:
+Im Tab **EXAMPLE** im Bereich **REQUEST BODY**, editieren Sie die Werte in diesen beiden Feldern:
 
 - `sendConnectorId`: Geben Sie „0“ ein, um die Sendeserver-ID der Exchange Plattform festzulegen.
 - `deleteVirus`: Geben Sie "true" statt "false" ein, um bei der Ausführung des API-Aufrufs keine Fehler zu erhalten.
 
-Klik op `Execute`{.action} om de API-call te starten.
+Klicken Sie auf `Execute`{.action} um den API-Aufruf zu starten.
 
 Sie erhalten folgendes Ergebnis:
 
@@ -301,18 +301,18 @@ Verwenden Sie hierzu folgenden API-Aufruf:
 >
 > @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
 
-In de sectie **PATH PARAMETERS**:
+Im Bereich **PATH PARAMETERS**:
 
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `exchangeService`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `domainName`: Geben Sie den Domainnamen ein, der den Send Connector nutzen soll.
 
-Füllen Sie auf dem Tab **EXAMPLE** im Abschnitt **REQUEST BODY** die Felder mit Ihren Werten aus:
+Im Tab **EXAMPLE** im Bereich **REQUEST BODY**, editieren Sie die Werte in diesen beiden Feldern:
 
 - `sbrDefault `: Lassen Sie das Feld leer.
 - `sendConnectorIdDefault`: Geben Sie die ID des Send Connectors ein, die in [diesem Schritt](#idconnector) ermittelt wurde.
 
-Klik op `Execute`{.action} om de API-call te starten.
+Klicken Sie auf `Execute`{.action} um den API-Aufruf zu starten.
 
 Sie erhalten folgendes Ergebnis:
 
