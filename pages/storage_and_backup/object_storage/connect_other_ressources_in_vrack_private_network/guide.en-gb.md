@@ -1,7 +1,7 @@
 ---
 title: Object Storage - How to connect Object Storage buckets with other resources in a vRack
 excerpt: Find out how to use Object Storage together with resources in a Private Network
-updated: 2025-10-03
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -49,7 +49,9 @@ First as a quick reminder, here is how today user permissions are evaluated:
    3. if there is no explicit deny nor explicit allow, then fallback to ACLs
 2. fallback to ACLs
 
-This evaluation process will be subject to change with the upcoming implementation of bucket policies. As a consequence of the current authorization process, **implicit deny** is **not** supported by OVHcloud Object Storage if the user is the bucket owner i.e since ACLs are evaluated by default and since **the bucket owner has FULL_CONTROL ACL**, if the user is the bucket owner and even if there is no explicit allow in the policy file, he will be authorized. 
+This evaluation process will be subject to change with the upcoming implementation of bucket policies.
+
+Due to the current authorization process, OVHcloud Object Storage does **not** support **implicit deny** when the user is the bucket owner. As a result, the bucket owner's default FULL_CONTROL ACL takes precedence, allowing access even if no explicit permission is defined in the policy file.
 
 As a consequence, we recommend creating new users (not the bucket owner itself) to set this policy and avoid mismatch or confusion. Last but not least, the policy needs to be associated to each user accessing the resources.
 
