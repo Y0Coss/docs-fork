@@ -51,8 +51,8 @@ You can't access this shared folder because your organization's security policie
 
 > [!primary]
 >
-> Um diesen Fehler zu beheben, muss die Windows-Registrierungsdatenbank geändert werden. Öffnen Sie dazu den Registrierungseditor (regedit) und navigieren Sie zum Schlüssel `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters navigieren`.<br>
-> Setzen Sie den Wert des Parameters `AllowInsecureGuestAuth` auf "1".<br>
+> Dieser Fehler sollte durch Bearbeiten der Windows Registry behebbar sein: Öffnen Sie das Windows Dienstprogramm *regedit*, und suchen Sie nach dem Eintrag `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.  
+> Setzen Sie den Wert des Parameters `AllowInsecureGuestAuth` auf "1".  
 > Weitere Informationen zu diesem Thema finden Sie auf den [Microsoft Supportseiten](https://learn.microsoft.com/de-de/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ### Einstellungen für Linux
