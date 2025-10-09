@@ -1,7 +1,7 @@
 ---
 title: Mounten Sie Ihr HA-NAS über eine CIFS-Freigabe
 excerpt: In dieser Anleitung erfahren Sie, wie Sie Ihr HA-NAS über das CIFS-Protokoll mounten können.
-updated: 2025-10-08
+updated: 2025-10-09
 ---
 
 ## Ziel

@@ -1,7 +1,7 @@
 ---
 title: Mount your HA-NAS via a CIFS share
 excerpt: This guide shows you how to mount your HA-NAS using CIFS protocol
-updated: 2025-10-08
+updated: 2025-10-09
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: "Installazione di un NAS-HA tramite condivisione NFS"
 excerpt: "Come connettersi al tuo NAS-HA utilizzando una condivisione NFS"
-updated: 2025-10-08
+updated: 2025-10-09
 ---
 
 ## Obiettivo 

@@ -1,7 +1,7 @@
 ---
 title: Podłącz HA-NAS za pomocą udziału CIFS
 excerpt: W tym przewodniku opisano sposób montowania HA-NAS przy użyciu protokołu CIFS.
-updated: 2025-10-08
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie
