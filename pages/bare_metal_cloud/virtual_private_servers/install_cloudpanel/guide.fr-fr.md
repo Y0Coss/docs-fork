@@ -94,7 +94,7 @@ sudo dnf -y install firewalld
 sudo systemctl enable --now firewalld
 ```
 
-3. Ouvrez les ports nécessaires (exemples : SSH, panneau ISPmanager, HTTP/HTTPS) :
+3. Ouvrez les ports nécessaires (exemples : SSH, panneau CloudPanel, HTTP/HTTPS) :
 
 ```bash
 sudo firewall-cmd --add-service=ssh --permanent
