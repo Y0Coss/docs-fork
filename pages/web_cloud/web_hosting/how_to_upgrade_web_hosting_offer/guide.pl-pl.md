@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW - Jak zmienić ofertę"
 excerpt: "Dowiedz się, jak zmienić formułę abonamentu na hosting OVHcloud"
-updated: 2025-10-08
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie

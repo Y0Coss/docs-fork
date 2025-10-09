@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting - How to change your solution"
 excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
-updated: 2025-10-08
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -61,7 +61,7 @@ Make sure there are enough [databases](/links/web/hosting-options-startsql) in t
 
 Otherwise, delete unused databases and reduce the amount of data in them, if necessary. This quantity must not exceed the maximum database size for the new solution. If you need assistance with how to proceed, please contact [OVHcloud partners](/links/partner).
 
-Once you have deleted data from your databarrrrrses, recalculate the quota used. To do this, click on the tabs below to view each of the **5** steps.
+Once you have deleted data from your databases, recalculate the quota used. To do this, click on the tabs below to view each of the **5** steps.
 
 > [!tabs]
 > **Step 1**
