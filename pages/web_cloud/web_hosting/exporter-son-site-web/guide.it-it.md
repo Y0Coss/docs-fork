@@ -17,7 +17,7 @@ Questa guida ti mostra come esportare tutti gli elementi del tuo sito Web in for
 
 ## Procedura
 
-### Step 1: recupero dei file del tuo spazio di storage FTP
+### Step 1: Recupero dei file del tuo spazio di storage FTP
 
 #### 1.1 Accedere allo spazio di storage.
 
@@ -36,9 +36,9 @@ Visualizzi le informazioni associate allo spazio di storage. le informazioni di 
 
 Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio di storage può essere effettuato in due modi diversi:
 
-- **utilizzare un software compatibile con il protocollo FTP o SFTP**: dovrai installare sul tuo computer un software compatibile, come [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Se hai bisogno di aiuto per utilizzarlo, contatta il produttore del software installato:
+- **Utilizzare un software compatibile con il protocollo FTP o SFTP**: dovrai installare sul tuo computer un software compatibile, come [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Se hai bisogno di aiuto per utilizzarlo, contatta il produttore del software installato:
 
-- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage.  Per utilizzare questo tipo di accesso sono necessarie conoscenze avanzate e un'[offerta di hosting Web OVHcloud](/links/web/hosting) specifica. Per maggiori informazioni, consulta la guida ["Utilizzare l'accesso SSH di un hosting Web"](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
+- **Accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage.  Per utilizzare questo tipo di accesso sono necessarie conoscenze avanzate e un'[offerta di hosting Web OVHcloud](/links/web/hosting) specifica. Per maggiori informazioni, consulta la guida ["Utilizzare l'accesso SSH di un hosting Web"](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
 #### 1.2 Scarica i file dal tuo spazio di storage.
 
@@ -48,7 +48,7 @@ Per verificare la cartella in cui il tuo sito è ospitato clicca sulla scheda `M
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-### Step 2: recuperare il backup del tuo database (facoltativo)
+### Step 2: Recuperare il backup del tuo database (facoltativo)
 
 > [!primary]
 >
@@ -61,7 +61,7 @@ Per recuperare un backup del tuo database, consulta la nostra guida:
 Se utilizzi un database **Web Cloud Databases** per il tuo sito Web, consulta la sezione dedicata al backup della nostra guida:
 [Salvare ed esportare un database sul tuo server di database](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).
 
-### Step 3: recuperare i log del tuo hosting OVHcloud
+### Step 3: Recuperare i log del tuo hosting OVHcloud
 
 Per conservare lo storico dei log del tuo sito, è disponibile un accesso a questi ultimi con il tuo hosting.
 

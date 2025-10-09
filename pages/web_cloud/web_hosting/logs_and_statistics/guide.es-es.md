@@ -42,10 +42,10 @@ Para acceder a los diferentes datos estadísticos y logs de su alojamiento web, 
 >>
 >> Se abrirá una pantalla que consta de 4 secciones:
 >>
->> - [Estadísticas de visitas](#website-stats): presenta numerosas estadísticas relativas a su alojamiento web.
->> - [Logs del sitio web](#website-logs): muestra los logs en bruto de su alojamiento web.
->> - [Estadísticas de la infraestructura](#infra-stats): presenta estadísticas gráficas (peticiones HTTP y SQL, comandos FTP, uso de CPU, conexiones salientes, etc.)
->> - [Administración de los usuarios](#admin-user): muestra los usuarios autorizados a acceder a las estadísticas
+>> - [Estadísticas de visitas](#website-stats): Presenta numerosas estadísticas relativas a su alojamiento web.
+>> - [Logs del sitio web](#website-logs): Muestra los logs en bruto de su alojamiento web.
+>> - [Estadísticas de la infraestructura](#infra-stats): Presenta estadísticas gráficas (peticiones HTTP y SQL, comandos FTP, uso de CPU, conexiones salientes, etc.).
+>> - [Administración de los usuarios](#admin-user): Muestra los usuarios autorizados a acceder a las estadísticas.
 >>
 >> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 

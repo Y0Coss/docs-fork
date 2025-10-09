@@ -42,10 +42,10 @@ Para aceder aos diferentes dados estatísticos e logs do seu alojamento web, cli
 >>
 >> O ecrã que vai aparecer é composto por 4 secções:
 >>
->> - [Estatísticas das visitas](#website-stats): apresenta numerosas estatísticas relativas ao seu alojamento web.
->> - [Logs do website](#website-logs): apresenta os logs brutos do seu alojamento web.
->> - [Estatísticas da infraestrutura](#infra-stats): apresenta estatísticas gráficas (pedidos HTTP e SQL, comandos FTP, utilização de CPU, ligações de saída, etc.)
->> - [Administração dos utilizadores](#admin-user): mostra os utilizadores autorizados a aceder às estatísticas
+>> - [Estatísticas das visitas](#website-stats): Apresenta numerosas estatísticas relativas ao seu alojamento web.
+>> - [Logs do website](#website-logs): Apresenta os logs brutos do seu alojamento web.
+>> - [Estatísticas da infraestrutura](#infra-stats): Apresenta estatísticas gráficas (pedidos HTTP e SQL, comandos FTP, utilização de CPU, ligações de saída, etc.).
+>> - [Administração dos utilizadores](#admin-user): Mostra os utilizadores autorizados a aceder às estatísticas.
 >>
 >> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 

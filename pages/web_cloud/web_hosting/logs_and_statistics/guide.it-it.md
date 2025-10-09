@@ -17,7 +17,7 @@ L’accesso ai log e alle statistiche del sito Web è incluso nella soluzione di
 
 ## Procedura
 
-Per accedere ai diversi dati statistici e log dell’hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
+Per accedere ai diversi dati statistici e ai log dell’hosting Web, clicca sulle schede qui sotto per visualizzare in sequenza ciascuno dei **4** passi.
 
 > [!tabs]
 > **Passaggio 1**
@@ -42,10 +42,10 @@ Per accedere ai diversi dati statistici e log dell’hosting Web, clicca sulle s
 >>
 >> La schermata visualizzata è composta da 4 sezioni:
 >>
->> - [Statistiche delle visite](#website-stats): presenta numerose statistiche relative al tuo hosting Web.
->> - [Log del sito web](#website-logs): visualizza i log grezzi del tuo hosting web.
->> - [Statistiche dell'infrastruttura](#infra-stats): presenta statistiche grafiche (richieste HTTP e SQL, comandi FTP, utilizzo CPU, connessioni in uscita, ecc.)
->> - [Gestione degli utenti](#admin-user): visualizza gli utenti autorizzati ad accedere alle statistiche
+>> - [Statistiche delle visite](#website-stats): Presenta numerose statistiche relative al tuo hosting Web.
+>> - [Log del sito web](#website-logs): Visualizza i log grezzi del tuo hosting web.
+>> - [Statistiche dell'infrastruttura](#infra-stats): Presenta statistiche grafiche (richieste HTTP e SQL, comandi FTP, utilizzo CPU, connessioni in uscita, ecc.).
+>> - [Gestione degli utenti](#admin-user): Visualizza gli utenti autorizzati ad accedere alle statistiche.
 >>
 >> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 

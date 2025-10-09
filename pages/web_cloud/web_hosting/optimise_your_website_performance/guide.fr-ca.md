@@ -23,7 +23,7 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 
 ## En pratique
 
-### 1 : Définir la portée du problème
+### 1 - Définir la portée du problème
 
 #### Les questions auxquelles vous devez répondre :
 
@@ -53,7 +53,7 @@ Nous fournissons des recommandations sur les solutions offertes par l’héberge
 
 Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](/links/web/hosting-best-web).
 
-### 2 : Vérification de la version PHP
+### 2 - Vérification de la version PHP
 
 Utiliser la dernière version de PHP compatible avec votre site peut avoir une influence considérable sur son rendement.
 Pour vérifier si votre site web est compatible avec la dernière version PHP, veuillez vous référer à [la documentation officielle de PHP](https://php.net/eol.php).
@@ -77,7 +77,7 @@ Pour basculer vers l’utilisation de PHP-FPM en version _stable_ ou pour en sav
 
 Le fichier _.ovhconfig_ fonctionne à la racine de l’hébergement ou dans un sous-répertoire de niveau 1 (ex. : _/www/_) mais pas dans des répertoires de niveau 2 ou supérieurs (ex. : _/www/test/_ , _/www/test/test2/_)
 
-### 3 : Vérification du contenu média (images, vidéos...)
+### 3 - Vérification du contenu média (images, vidéos...)
 
 Lorsqu’on accède à un site web, tout le contenu doit pouvoir être téléchargé par le navigateur.
 
@@ -89,7 +89,7 @@ C’est à vous de choisir ceux qui répondent à vos besoins spécifiques.
 
 Pour plus d’information à ce sujet, veuillez vous référer à l’étape 5 ci-dessous.
 
-### 4 : Optimisation de vos scripts
+### 4 - Optimisation de vos scripts
 
 Établissez une corrélation entre les graphiques d’utilisation des ressources de votre hébergement (voir ci-dessous pour plus d’information) pour déterminer l’origine des retards et consultez les fichiers journaux en vous référant aux dates de ces pointes d’utilisation.
 
@@ -152,7 +152,7 @@ Les deux catégories suivantes sont visibles seulement si vous utilisez actuelle
 
 - **Requêtes SQL**: Affiche le nombre de requêtes.
 
-### 5 : Vérification des requêtes sur le réseau
+### 5 - Vérification des requêtes sur le réseau
 
 La [Surveillance réseau](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor) constitue un outil d’analyse utile qui est intégré au navigateur Mozilla Firefox et qui permet d’analyser en détail le temps de chargement d’une page web. 
 
@@ -171,7 +171,7 @@ Ainsi, vous améliorez le temps de réponse pour les visiteurs dans le monde ent
 
 Découvrez notre [solution CDN](/links/web/hosting-options-cdn){.external}. 
 
-### 6 : Contrôle du système de gestion du contenu (CMS) et des plugins utilisés
+### 6 - Contrôle du système de gestion du contenu (CMS) et des plugins utilisés
 
 > [!primary]
 > Cette étape est facultative si vous n’utilisez pas de CMS.
@@ -182,7 +182,7 @@ Pour vous assurer que votre forfait d’hébergement est adaptée aux besoins de
 
 - **Désactivation des plugins non utilisés :** Il serait judicieux de désactiver, voire de supprimer, les plugins non utilisés pour améliorer le rendement de votre site web. Ceci évitera de télécharger des éléments inutiles.
 
-### 7 : Optimisation de votre base de données
+### 7 - Optimisation de votre base de données
 
 > [!primary]
 > Cette étape est facultative si vous n’utilisez pas de base de données.

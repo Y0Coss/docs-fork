@@ -20,7 +20,7 @@ Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetow
 
 ## W praktyce
 
-### 1: zdefiniowanie zakresu
+### 1 - Zdefiniowanie zakresu
 
 #### Pytania, które należy sobie zadać:
 
@@ -50,7 +50,7 @@ Na [stronie produktu](/links/web/hosting) przestawiamy oferty hostingu WWW zalec
 
 Więcej informacji na temat wyboru właściwego planu znajdziesz na [tej stronie](/links/web/hosting-best-web).
 
-### 2: sprawdzenie wersji PHP
+### 2 - Sprawdzenie wersji PHP
 
 Na wydajność witryny internetowej znacząco może wpłynąć korzystanie ze zgodnej z nią, najnowszej wersji języka PHP.
 Aby sprawdzić, czy witryna jest kompatybilna z najnowszą wersją PHP, zapoznaj się z [oficjalną dokumentacją języka PHP](https://php.net/eol.php).
@@ -74,7 +74,7 @@ Aby zmienić wersję PHP-FPM na _stabilną_ lub uzyskać szczegółowe informacj
 
 Plik _.ovhconfig_ działa w katalogu głównym hostingu albo w podkatalogu poziomu 1 (na przykład: _/www/_), ale nie w katalogach poziomu drugiego lub wyższego (na przykład: _/www/test/_, _/www/test/test2/_).
 
-### 3: sprawdzenie treści multimedialnej
+### 3 - Sprawdzenie treści multimedialnej
 
 Podczas korzystania z witryny internetowej cała jej treść musi zostać pobrana przez przeglądarkę.
 
@@ -86,7 +86,7 @@ Można więc wybrać sposób, który najlepiej zaspokoi konkretne potrzeby.
 
 Więcej informacji na ten temat zawiera poniższy krok 5.
 
-### 4: optymalizacja skryptów
+### 4 - Optymalizacja skryptów
 
 Aby znaleźć źródło opóźnień, przejrzyj wykresy wykorzystania zasobów hostingu (więcej informacji poniżej). Następnie sprawdź w logach wpisy z okresów, w których wystąpiło szczytowe wykorzystanie.
 
@@ -150,7 +150,7 @@ Aby je wyświetlić, wybierz nazwę bazy danych i okres.
 
 - **Żądania SQL**: wyświetla liczbę żądań.
 
-### 5: sprawdzenie żądań sieciowych
+### 5 - Sprawdzenie żądań sieciowych
 
 Użytecznym narzędziem do analizy jest [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor). Narzędzie jest zintegrowane z przeglądarką Mozilla Firefox i umożliwia szczegółowe analizowane czasu ładowania strony internetowej.
 
@@ -169,7 +169,7 @@ Efektem będzie skrócenie czasów odpowiedzi dla wszystkich odwiedzających na 
 
 Poznaj [nasze rozwiązanie CDN](/links/network/cdn-infrastructure).
 
-### 6: sprawdzenie używanego System zarządzania treścią (CMS) i wtyczek
+### 6 - Sprawdzenie używanego System zarządzania treścią (CMS) i wtyczek
 
 _Ten krok jest opcjonalny, jeśli nie korzystasz z systemu CMS._
 
@@ -179,7 +179,7 @@ Aby mieć pewność, że korzystasz z oferty hostingu dopasowanej do potrzeb Two
 
 - **Dezaktywacja nieużywanych wtyczek:** Aby poprawić wydajność witryny internetowej, warto zdezaktywować lub nawet usunąć nieużywane wtyczki. Dzięki temu nie będą pobierane niepotrzebne elementy.
 
-### 7: optymalizacja bazy danych
+### 7 - Optymalizacja bazy danych
 
 _Ten krok jest opcjonalny, jeśli nie korzystasz z bazy danych._
 Dostęp do bazy danych umożliwia narzędzie PHPMyAdmin. Instrukcja korzystania z narzędzia PHPMyAdmin wykracza poza zakres tego przewodnika, więc to zagadnienie nie zostanie rozwinięte.

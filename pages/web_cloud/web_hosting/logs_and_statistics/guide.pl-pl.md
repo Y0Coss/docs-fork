@@ -42,10 +42,10 @@ Aby uzyskać dostęp do różnych danych statystycznych i logów Twojego hosting
 >>
 >> Ekran, który się wyświetla składa się z 4 sekcji:
 >>
->> - [Statystyki odwiedzin na stronie](#website-stats): przedstawia liczne statystyki dotyczące Twojego hostingu.
->> - [Logi strony WWW](#website-logs): Wyświetla logi hostingu www.
->> - [Statystyki dotyczące infrastruktury](#infra-stats): przedstawia statystyki graficzne (zapytania HTTP i SQL, polecenia FTP, wykorzystanie CPU, połączenia wychodzące, itp.)
->> - [Zarządzanie użytkownikami](#admin-user): Wyświetla użytkowników z uprawnieniami dostępu do statystyk
+>> - [Statystyki odwiedzin na stronie](#website-stats): Przedstawia liczne statystyki dotyczące Twojego hostingu.
+>> - [Logi strony WWW](#website-logs): Wyświetla logi hostingu WWW.
+>> - [Statystyki dotyczące infrastruktury](#infra-stats): Przedstawia statystyki graficzne (zapytania HTTP i SQL, polecenia FTP, wykorzystanie CPU, połączenia wychodzące, itp.).
+>> - [Zarządzanie użytkownikami](#admin-user): Wyświetla użytkowników z uprawnieniami dostępu do statystyk.
 >>
 >> ![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
