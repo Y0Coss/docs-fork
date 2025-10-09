@@ -1,7 +1,7 @@
 ---
 title: "Exporter son site web"
 excerpt: "Découvrez comment exporter votre site web OVHcloud"
-updated: 2022-02-03
+updated: 2025-10-09
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ Ce guide vous présente les étapes pour exporter l’ensemble des éléments de
 
 ## En pratique
 
-### Étape 1 : récupération des fichiers de votre espace de stockage FTP
+### Étape 1 : Récupération des fichiers de votre espace de stockage FTP
 
 #### 1.1 Se connecter à l'espace de stockage.
 
@@ -36,9 +36,9 @@ Les informations liées à votre espace de stockage apparaissent alors. Vous dev
 
 Une fois tous les éléments en votre possession, la récupération de vos fichiers sur l'espace de stockage peut s'effectuer de deux manières différentes :
 
-- **utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
+- **Utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
 
-- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une [offre d'hébergement web OVHcloud](/links/web/hosting) spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
+- **Utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une [offre d'hébergement web OVHcloud](/links/web/hosting) spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
 #### 1.2 Télécharger les fichiers depuis votre espace de stockage.
 
@@ -48,7 +48,7 @@ Pour vérifier le dossier dans lequel votre site internet est stocké, positionn
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-### Étape 2 : récupérer la sauvegarde de votre base de données (facultative)
+### Étape 2 : Récupérer la sauvegarde de votre base de données (facultative)
 
 > [!primary]
 >
@@ -58,11 +58,15 @@ Pour vérifier le dossier dans lequel votre site internet est stocké, positionn
 Pour récupérer une sauvegarde de votre base de données, consultez notre guide :
 [« Récupérer la sauvegarde de la base de données d’un hébergement web »](/pages/web_cloud/web_hosting/sql_database_export).
 
-### Étape 3 : récupérer les logs de votre hébergement OVHcloud
+### Étape 3 : Récupérer les logs de votre hébergement OVHcloud
 
 Si vous souhaitez conserver l'historique des logs de votre site, un accès à ces derniers est disponible avec votre hébergement.
 
-Cliquez sur `Hébergements`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Statistiques et logs`{.action}. Cliquez ensuite sur le lien sous la mention `Voir les logs`{.action} :
+Cliquez sur `Hébergements`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Statistiques et logs`{.action}.
+
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+
+Cliquez ensuite sur le lien sous la mention `Voir les logs`{.action} :
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 

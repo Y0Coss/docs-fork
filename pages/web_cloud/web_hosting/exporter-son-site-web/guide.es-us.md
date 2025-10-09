@@ -1,7 +1,7 @@
 ---
 title: "Exportar un sitio web"
 excerpt: "Cómo exportar un sitio web de OVHcloud"
-updated: 2022-02-03
+updated: 2025-10-09
 ---
 
 ## Objetivo
@@ -17,7 +17,7 @@ Esta guía explica los pasos que debe seguir para exportar todos los elementos d
 
 ## Procedimiento
 
-### 1. recuperación de los archivos de su espacio de almacenamiento FTP
+### 1. Recuperación de los archivos de su espacio de almacenamiento FTP
 
 #### 1.1 Conectarse al espacio de almacenamiento.
 
@@ -48,7 +48,7 @@ Para consultar la carpeta en la que está almacenado el sitio web, abra la pesta
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-### 2. recuperar la copia de seguridad de la base de datos (opcional)
+### 2. Recuperar la copia de seguridad de la base de datos (opcional)
 
 > [!primary]
 >
@@ -58,11 +58,15 @@ Para consultar la carpeta en la que está almacenado el sitio web, abra la pesta
 Para obtener una copia de seguridad de la base de datos, consulte nuestra guía:
 [Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_database_export).
 
-### 3. obtener los logs de su alojamiento de OVHcloud
+### 3. Obtener los logs de su alojamiento de OVHcloud
 
 Si desea conservar el historial de los logs de su sitio web, puede acceder a ellos desde el alojamiento.
 
-Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Haga clic en la pestaña `Estadísticas y logs`{.action}. Haga clic en el enlace que aparece `Ver los logs`{.action}.
+Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Haga clic en la pestaña `Estadísticas y logs`{.action}.
+
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+
+Haga clic en el enlace que aparece `Ver los logs`{.action}.
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 

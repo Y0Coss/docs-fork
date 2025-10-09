@@ -1,7 +1,7 @@
 ---
 title: "Eksportowanie witryny internetowej"
 excerpt: "Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud"
-updated: 2022-02-03
+updated: 2025-10-09
 ---
 
 ## Wprowadzenie 
@@ -17,7 +17,7 @@ Niniejszy przewodnik przedstawia etapy procedury eksportu wszystkich elementów 
 
 ## W praktyce
 
-### Etap 1: pobranie plików z Twojej przestrzeni dyskowej FTP
+### Etap 1: Pobranie plików z Twojej przestrzeni dyskowej FTP
 
 #### 1.1 Zaloguj się do przestrzeni dyskowej.
 
@@ -36,9 +36,9 @@ Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki n
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pliki z przestrzeni dyskowej na dwa sposoby:
 
-- **program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
+- **Program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
 
-- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. Do tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz [posiadanie hostingu OVHcloud](/links/web/hosting). Aby uzyskać więcej informacji, zapoznaj się z naszą instrukcją [„Korzystanie z dostępu SSH do hostingu WWW”](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
+- **Dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. Do tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz [posiadanie hostingu OVHcloud](/links/web/hosting). Aby uzyskać więcej informacji, zapoznaj się z naszą instrukcją [„Korzystanie z dostępu SSH do hostingu WWW”](/pages/web_cloud/web_hosting/ssh_on_webhosting). 
 
 #### 1.2 Pobranie plików z przestrzeni dyskowej.
 
@@ -48,7 +48,7 @@ Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, prze
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-### Etap 2: utworzenie i pobranie kopii bazy danych (opcjonalnie)
+### Etap 2: Utworzenie i pobranie kopii bazy danych (opcjonalnie)
 
 > [!primary]
 >
@@ -61,11 +61,15 @@ Z naszego przewodnika dowiesz się, jak utworzyć i pobrać kopię zapasową baz
 Jeśli korzystasz z **serwera Web Cloud Databases** w Twojej witrynie, zapoznaj się z sekcją poświęconą kopii zapasowej w naszym przewodniku:
 [Tworzenie i eksportowanie bazy danych na serwerze baz danych](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).
 
-### Etap 3: pobranie logów z hostingu OVHcloud
+### Etap 3: Pobranie logów z hostingu OVHcloud
 
 Jeśli chcesz pobrać historię logów Twojej witryny, możesz to zrobić z poziomu planu hostingu WWW.
 
-Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij zakładkę `Statystyki i logi`{.action}. Następnie kliknij link pod napisem `Zobacz logi`{.action}:
+Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij zakładkę `Statystyki i logi`{.action}.
+
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+
+Następnie kliknij link pod napisem `Sprawdź logi`{.action}:
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 

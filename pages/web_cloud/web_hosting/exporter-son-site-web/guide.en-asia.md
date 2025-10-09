@@ -1,7 +1,7 @@
 ---
 title: "Exporting a website"
 excerpt: "Find out how to export an OVHcloud website"
-updated: 2022-02-03
+updated: 2025-10-09
 ---
 
 ## Objective
@@ -62,7 +62,11 @@ To retrieve a backup of your database, please read our guide on
 
 If you would like to download your website’s logs, you can do so via your web hosting plan.
 
-Click on `Hosting plans`{.action}, then click on the solution concerned. Click the `Statistics and logs`{.action} tab. Then click on the link under `View logs`{.action}:
+Click on `Hosting plans`{.action}, then click on the solution concerned. Click the `Statistics and logs`{.action} tab.
+
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+
+Then click on the link under `View logs`{.action}:
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 

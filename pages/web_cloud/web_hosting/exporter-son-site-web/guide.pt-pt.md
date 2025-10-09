@@ -1,7 +1,7 @@
 ---
 title: "Exportar o seu website"
 excerpt: "Descubra como exportar o seu website OVHcloud"
-updated: 2022-02-03
+updated: 2025-10-09
 ---
 
 ## Objetivo
@@ -17,7 +17,7 @@ Este guia mostra-lhe as etapas para exportar todos os elementos do seu website p
 
 ## Instruções
 
-### Etapa 1: recuperação dos ficheiros do seu espaço de armazenamento FTP
+### Etapa 1: Recuperação dos ficheiros do seu espaço de armazenamento FTP
 
 #### 1.1 Aceder ao espaço de armazenamento
 
@@ -48,7 +48,7 @@ Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
-### Etapa 2: recuperar o backup da sua base de dados (opcional) 
+### Etapa 2: Recuperar o backup da sua base de dados (opcional) 
 
 > [!primary]
 >
@@ -61,11 +61,15 @@ Para recuperar um backup da sua base de dados, consulte o nosso guia:
 Se utiliza uma base de dados **Web Cloud Databases** para o seu website, consulte a secção dedicada ao backup no nosso guia:
 [Backup e exportação de uma base de dados no servidor de bases de dados](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).
 
-### Etapa 3: recuperar os logs do seu alojamento OVHcloud
+### Etapa 3: Recuperar os logs do seu alojamento OVHcloud
 
 Se deseja guardar o histórico dos logs do seu website, pode aceder aos logs no seu alojamento.
 
-Depois, clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique no separador `Estatísticas e logs`{.action}. A seguir, clique na ligação sob a menção `Ver logs`{.action}:
+Clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique no separador `Estatísticas e logs`{.action}.
+
+![statistics-and-logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs.png){.thumbnail}
+
+A seguir, clique na ligação sob a menção `Consultar os logs`{.action}:
 
 ![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 
