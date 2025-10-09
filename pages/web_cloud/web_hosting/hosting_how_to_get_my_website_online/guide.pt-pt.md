@@ -1,7 +1,7 @@
 ---
 title: "Publicar um site num alojamento web"
 excerpt: "Saiba como publicar um site no seu alojamento web da OVHcloud"
-updated: 2025-05-23
+updated: 2025-10-08
 ---
 
 ## Sumário
@@ -111,6 +111,8 @@ Se estiver a migrar um site já existente, obtenha a base de dados junto do anti
 Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVHcloud](/links/web/hosting) ou [Web Cloud Databases](/links/web/databases)), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
 
 Se pretende criar uma nova base de dados na OVHcloud, aceda à [Área de Cliente OVHcloud](/links/manager) e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e clique no separador `Base de dados`{.action}.
+
+![Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases.png){.thumbnail}
 
 Clique em `Criar uma base de dados`{.action} ou, se este botão não aparecer, em `Ações`{.action} e `Criar uma base de dados`{.action}. Siga as indicações que surgirem.
 

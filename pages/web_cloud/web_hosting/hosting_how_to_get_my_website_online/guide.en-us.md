@@ -1,7 +1,7 @@
 ---
 title: "Publishing a website on your Web Hosting plan"
 excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
-updated: 2025-05-23
+updated: 2025-10-08
 ---
 
 ## Objective
@@ -64,7 +64,7 @@ To log in to your storage space, you will need the following:
 - the server address
 - the server connection port
 
-These elements were sent to you in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
+These elements were sent to you in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then click on `Hosting plans`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
 
 ![websitesetup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
@@ -109,7 +109,7 @@ If you are migrating an existing website, you can recover your existing database
 
 If you already have a database and wish to use it (from an [OVHcloud web hosting plan](/links/web/hosting), you will need your username and password, the name of the database and the address of the server. You can now go on to the next step.
 
-If you want to create a new database with OVHcloud, log in to the [OVHcloud Control Panel](/links/manager), then click on `Hosting`{.action}. Select the name of the hosting plan concerned, and click on the `Database`{.action} tab.
+If you want to create a new database with OVHcloud, log in to the [OVHcloud Control Panel](/links/manager), then click on `Hosting plans`{.action}. Select the name of the hosting plan concerned, and click on the `Databases`{.action} tab.
 
 Now click the `Create a database`{.action} button, or if this button is not visible, click on `Actions`{.action} and then `Create a database`{.action}. Now follow the information shown.
 

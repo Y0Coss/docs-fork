@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Cómo mejorar su solución"
 excerpt: "Descubra cómo modificar la fórmula de suscripción de un plan de hosting de OVHcloud"
-updated: 2024-10-30
+updated: 2025-10-09
 ---
 
 ## Objetivo
