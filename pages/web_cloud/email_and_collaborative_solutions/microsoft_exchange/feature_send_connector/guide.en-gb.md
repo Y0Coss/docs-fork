@@ -273,7 +273,7 @@ To remove a send connector attached to an account from the Exchange platform, us
 In the section **PATH PARAMETERS**:
 
 - `exchangeService`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
-- `organizationName` : Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
+- `organizationName`: Enter the name of your Exchange platform, which is in the form of "private-zz11111-1" or "dedicated-zz111111-1".
 - `primaryEmailAddress`: Enter one of the email addresses of your Exchange platform, to which you want to attach the send connector.
 
 In the **EXAMPLE** tab in the **REQUEST BODY** section, modify the values in the two fields below:
