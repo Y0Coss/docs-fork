@@ -25,7 +25,7 @@ Es können verschiedene Fehlermeldungen auftreten, wenn Ihre Website nicht errei
 
 ## Voraussetzungen
 
-- Sie haben die Berechtigung zur Verwaltung der [DNS Server](/pages/web_cloud/domains/dns_server_general_information) und der [DNS Zone](/pages/web_cloud/domains/dns_zone_general_information) Ihrer Domain
+- Sie haben die Berechtigung zur Verwaltung der [DNS-Server](/pages/web_cloud/domains/dns_server_general_information) und der [DNS-Zone](/pages/web_cloud/domains/dns_zone_general_information) Ihrer Domain.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -64,9 +64,9 @@ Um die IP-Adresse Ihres [OVHcloud Webhostings](/links/web/hosting) herauszufinde
 >>
 >> Notieren Sie die IPv4- und/oder IPv6-Adresse und folgen Sie der Anleitung weiter.
 
-#### IP-Adresse in der DNS Zone überprüfen
+#### IP-Adresse in der DNS-Zone überprüfen
 
-Überprüfen Sie nun, ob die in der [DNS Zone](/pages/web_cloud/domains/dns_zone_edit) hinterlegte IP-Adresse der Adresse Ihres [Webhostings](/links/web/hosting) entspricht.
+Überprüfen Sie nun, ob die in der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) hinterlegte IP-Adresse der Adresse Ihres [Webhostings](/links/web/hosting) entspricht.
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 
