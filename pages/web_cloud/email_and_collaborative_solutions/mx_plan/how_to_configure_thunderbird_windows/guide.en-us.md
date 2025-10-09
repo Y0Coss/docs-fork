@@ -1,6 +1,6 @@
 ---
-title: 'MX Plan - Setting up your email address on Thunderbird for Windows'
-excerpt: 'Learn how to set up your MX Plan email address on Thunderbird for Windows'
+title: 'MX Plan - Setting up your email account on Thunderbird for Windows'
+excerpt: 'Find out how to set up your MX Plan email address on Thunderbird for Windows'
 updated: 2025-09-19
 ---
 
@@ -25,23 +25,23 @@ details[open]>summary::before {
 
 MX Plan email accounts can be configured on compatible email clients. This allows you to use your email address from your preferred device. Thunderbird is a free and open-source email client.
 
-**Learn how to set up your MX Plan email address on Thunderbird for Windows.**
+**This guide explains how to set up your MX Plan email address on Thunderbird for Windows.**
 
 ## Requirements
 
-- Have an MX Plan offer. This is available via:
-    - A [web hosting](/links/web/hosting) offer.
-    - A [free 100M hosting](/links/web/domains-free-hosting) included with a domain name (previously activated).
-    - A separately ordered MX Plan offer.
-    - Have a [Zimbra Starter](/links/web/zimbra) email address.
-- Have the Thunderbird software installed on your Windows device.
-- Possess the credentials for the email address you wish to configure.
+- You are using an MX Plan email account. This applies to the following services:
+	- [Web hosting](/links/web/hosting) (included in all offers)
+	- [Free 100M hosting](/links/web/domains-free-hosting) (included with a domain name subscription)
+	- A separately ordered MX Plan service
+	- A [Zimbra Starter email account](/links/web/zimbra)
+- You have the Thunderbird software installed on your Windows device.
+- You have the credentials for the email account you want to configure.
 
-/// details | Information related to the management and configuration of OVHcloud services
+/// details | Information regarding the administration and configuration of OVHcloud services
 
-This guide demonstrates how to use OVHcloud solutions with external tools and the modifications required in specific contexts. You may need to adapt the instructions based on your situation.
+This guide will show you how to use OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 
-If you encounter difficulties performing these operations, we recommend contacting a [specialized service provider](/links/partner) and/or discussing it with our community. OVHcloud cannot provide technical support for the use of external tools. More information is available in the [Go further](#gofurther) section of this guide.
+If you experience any difficulties carrying out these operations, we recommend that you contact a specialist service provider or discuss the issue with our [community](/links/community). OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
 
 ///
 
@@ -119,14 +119,14 @@ Follow the configuration steps by clicking successively on the **5** tabs below:
 >>
 > **Step 5**
 >>
->> Enter the password associated with the email address, then click on `Continue`{.action} to finalize the configuration.
+>> Enter the password associated with the email account, then click on `Continue`{.action} to finalize the configuration.
 >>
 >> ![thunderbird](images/configuration-thunderbird-password-06.png){.thumbnail .w-600}
 >>
 
 > [!primary]
 >
-> **POP Configuration**
+> **POP configuration**
 >
 > If you want a POP configuration for your email address, replace the settings in **Step 3** with the following:
 >
@@ -144,11 +144,11 @@ Follow the configuration steps by clicking successively on the **5** tabs below:
 
 Once your email address is configured, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application to access your email address from an internet browser. To access the OVHcloud Webmail, click on [this link](/links/web/email). You can log in using the credentials of your email address.
+OVHcloud also offers a web application to access your email account from a browser. To access the OVHcloud Webmail, click on [this link](/links/web/email). You can log in using your email account credentials.
 
-### Retrieve a backup of your email address
+### Retrieve a backup of your email account
 
-If you need to perform an operation that could result in the loss of your email account data, we recommend making a backup beforehand. To do this, refer to the "Export" section in the "Thunderbird" part of our guide "[Manually Migrate Your Email Address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
+If you need to perform an operation that could result in the loss of your email account data, we recommend making a backup beforehand. To do this, refer to the "**Export**" section in the "**Thunderbird**" part of our guide "[Manually Migrate Your Email Address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Modify existing settings
 
@@ -174,7 +174,7 @@ If your email account is already configured and you need to access the account s
 >
 > For more information on configuring an email address from the Thunderbird email client, consult [Mozilla's help center](https://support.mozilla.org/products/thunderbird).
 
-[Getting started with the MX Plan offer](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Getting started with MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

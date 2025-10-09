@@ -1,5 +1,5 @@
 ---
-title: 'E-mail Pro - Configure Your Email Address in Thunderbird for Windows'
+title: 'E-mail Pro - Configure your email account in Thunderbird for Windows'
 excerpt: 'Find out how to configure your Email Pro address in Thunderbird for Windows'
 updated: 2025-09-19
 ---
@@ -25,19 +25,19 @@ details[open]>summary::before {
 
 Email Pro accounts can be configured on different compatible email clients. This allows you to use your email address from the device of your choice. Thunderbird is a free and open-source email client.
 
-**Find out how to configure your Email Pro address in Thunderbird for Windows.**
+**This guide explains how to configure your Email Pro address in Thunderbird for Windows.**
 
 ## Requirements
 
-- You must have an [Email Pro](/links/web/email-pro) address.
-- You must have the Thunderbird software installed on your Windows device.
-- You must have the credentials for the email address you want to configure.
+- An [Email Pro](/links/web/email-pro) account
+- The Thunderbird software installed on your Windows device
+- The credentials for the email account you want to configure
 
-/// details | Information about managing and configuring OVHcloud services
+/// details | Information regarding the administration and configuration of OVHcloud services
 
-This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
+This guide will show you how to use OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 
-If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+If you experience any difficulties carrying out these operations, we recommend that you contact a specialist service provider or discuss the issue with our [community](/links/community). OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
 
 ///
 
@@ -45,7 +45,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 
 > [!warning]
 >
-> In our example, we use the server mention: pro?.mail.ovh.net. You will need to replace the "?" with the number designating the server of your Email Pro service.
+> In our examples, we will use as the server name: pro?.mail.ovh.net. You will need to replace the "?" with the number designating the server of your Email Pro service.
 >
 > 1. Log in to your [OVHcloud Control Panel](/links/manager).
 > 1. Go to the `Web Cloud`{.action} section.
@@ -53,7 +53,7 @@ If you experience any difficulties carrying out these operations, we recommend t
 > 1. Select the platform concerned.
 > 1. The server name is visible in the **Connection** section of the `General Information`{.action} tab.
 
-### Add the Account
+### Add the account
 
 - **When starting the application for the first time**: A configuration wizard will appear and prompt you to enter your email address.
 
@@ -116,14 +116,14 @@ Follow the configuration steps by clicking successively on the **5** tabs:
 >>
 > **Step 5**
 >>
->> Enter the password associated with the email address, then click on `Continue`{.action} to finalize the configuration.
+>> Enter the password associated with the email account, then click on `Continue`{.action} to finalize the configuration.
 >>
 >> ![thunderbird](images/configuration-thunderbird-password-06.png){.thumbnail .w-600}
 >>
 
 > [!primary]
 >
-> **POP Configuration**
+> **POP configuration**
 >
 > If you want a POP configuration for your email address, replace the settings of **Step 3** with the following:
 >
@@ -136,17 +136,17 @@ Follow the configuration steps by clicking successively on the **5** tabs:
 > - **Authentication method**: Normal password
 > - **Username**: Your full email address
 
-### Use the Email Address
+### Use your email address
 
 Once your email address is configured, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that allows you to access your email address from a web browser. To access the OVHcloud Webmail, click on [this link](/links/web/email). You can log in using the credentials for your email address.
+OVHcloud also offers a web application that allows you to access your email account from a web browser. To access the OVHcloud Webmail, click on [this link](/links/web/email). You can log in using your email account credentials.
 
-### Retrieve a Backup of Your Email Address
+### Retrieve a backup of your email account
 
 If you need to perform an operation that may result in the loss of data from your email account, we recommend that you create a backup of the email account concerned beforehand. To do this, refer to the "**Export**" section in the "**Thunderbird**" part of our guide "[Manually migrate your email address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
-### Modify Existing Settings
+### Modify existing settings
 
 If your email account is already configured and you need to access the account settings to modify them:
 
