@@ -136,19 +136,19 @@ Sie können nun über den angegebenen Ordner auf Ihre gemountete Partition zugre
 
 ### Microsoft Windows - Besonderheiten
 
-Stellen Sie sicher, dass der Windows-Benutzer, der für den Zugriff auf Ihr HA-NAS verwendet wird, ausreichende Rechte hat.
+Stellen Sie sicher, dass der Windows-Benutzer, der auf Ihr NAS-HA zugreifen muss, über die erforderlichen Rechte verfügt.
 
-Der UID/GID-Paar muss auf 0 konfiguriert werden (UNIX-Rechte root).
+Das UID/GID-Paar muss auf „0” (UNIX-Root-Rechte) gesetzt sein.
 
-Andernfalls erhalten Sie Zugriffsfehler auf Ihr HA-NAS, da bei aktiviertem NFS auf einem Windows-System ein UNIX-Benutzer mit der Standard-UID und GID -2 (oder 4294967294) erstellt wird.
+Ist dies nicht der Fall, können beim Zugriff auf das NAS-HA Fehler auftreten. Der Grund dafür ist, dass bei Aktivierung des NFS-Protokolls auf einem Windows-Rechner automatisch ein UNIX-Benutzer mit einer Standard-UID und -GID von „-2” (oder 4294967294) erstellt wird, wodurch der Zugriff eingeschränkt wird.
 
-Als Lösung können UID und GID auf 0 gesetzt werden, um den Zugriff auf Ihr HA-NAS zu ermöglichen:
+Als Workaround können die UID und GID auf dem Windows-Rechner, der auf Ihr NAS-HA zugreift, auf „0“ gesetzt werden:
 
-1. Starten Sie den Registrierungseditor auf dem Client-System.
-1. Navigieren Sie zu `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
-1. Erstellen Sie zwei DWORD-Werte: **AnonymousUid** und **AnonymousGid**.
-1. Setzen Sie diese Werte auf 0 für UID und GID.
-1. Starten Sie den NFS-Dienst auf dem Client-System neu.
+1. Öffnen Sie den Registrierungseditor (regedit) auf dem Client-Rechner.
+1. Navigieren Sie zu folgendem Schlüssel: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Erstellen Sie die folgenden zwei DWORD-Einträge: **AnonymousUid** und **AnonymousGid**.
+1. Weisen Sie jedem dieser Einträge den Wert „0“ zu.
+1. Starten Sie den NFS-Dienst auf dem Client-Computer neu, um die Änderungen zu übernehmen.
 
 Alle Einhängeoptionen sind auf der [Microsoft-Website](https://learn.microsoft.com/de-de/windows-server/administration/windows-commands/mount) verfügbar.
 

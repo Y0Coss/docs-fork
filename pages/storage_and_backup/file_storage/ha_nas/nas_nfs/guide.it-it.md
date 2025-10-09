@@ -135,19 +135,19 @@ Adesso puoi accedere alla tua partizione montata nella cartella specificata.
 
 ### Microsoft Windows - Particolari
 
-Assicurarsi che l'utente Windows utilizzato per accedere al proprio NAS-HA abbia i diritti sufficienti.
+Assicurarsi che l'utente Windows che deve accedere al NAS-HA disponga dei diritti necessari.
 
-La coppia UID/GID deve essere configurata su 0 (diritti root UNIX).
+La coppia UID/GID deve essere configurata su "0" (diritti root UNIX).
 
-Altrimenti, si otterranno errori di accesso al proprio NAS-HA, poiché quando NFS è abilitato su una macchina Windows, viene creato un utente UNIX con UID e GID predefiniti -2 (o 4294967294).
+In caso contrario, potrebbero verificarsi errori di accesso al NAS-HA. Infatti, quando il protocollo NFS è attivato su un computer Windows, viene automaticamente creato un utente UNIX con UID e GID predefiniti impostati su "-2" (o 4294967294), il che limita l'accesso.
 
-Come soluzione alternativa, UID e GID possono essere forzati a 0 sulla macchina Windows che accede al proprio NAS-HA:
+Come soluzione alternativa, è possibile forzare l'UID e il GID su "0" sul computer Windows che accede al NAS-HA:
 
-1. Avviare l'editor del registro sulla macchina client.
-1. Localizzare `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
-1. Creare due valori DWORD: **AnonymousUid** e **AnonymousGid**.
-1. Impostare questi valori su UID e GID 0.
-1. Riavviare il servizio NFS sulla macchina client.
+1. Aprire l'editor del Registro di sistema (regedit) sul computer client.
+1. Accedere alla seguente chiave: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Creare le due voci di tipo DWORD seguenti: **AnonymousUid** e **AnonymousGid**.
+1. Assegnare il valore "0" a ciascuna di queste voci.
+1. Riavviare il servizio NFS sul computer client per applicare le modifiche.
 
 Tutte le opzioni di montaggio sono disponibili sul [sito di Microsoft](https://learn.microsoft.com/it-it/windows-server/administration/windows-commands/mount).
 

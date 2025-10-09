@@ -1,12 +1,12 @@
 ---
 title: Monter un NAS-HA via un partage CIFS
-excerpt: Decouvrez comment monter un NAS-HA via le protocole CIFS
+excerpt: Configurer et monter un NAS-HA via le protocole CIFS
 updated: 2025-10-08
 ---
 
 ## Objectif
 
-Configurez et montez votre espace de stockage NAS-HA OVHcloud via le protocole CIFS.
+**Découvrez comment configurer et monter votre espace de stockage NAS-HA OVHcloud via le protocole CIFS.**
 
 ## Prérequis
 
@@ -51,9 +51,9 @@ You can't access this shared folder because your organization's security policie
 
 > [!primary]
 >
-> Ce problème peut être résolu en modifiant le Registre Windows : ouvrez l'utilitaire Windows *regedit* et recherchez l'entrée `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
-> Définissez la valeur de `AllowInsecureGuestAuth` sur « 1 ».<br>
-> Retrouvez plus d'informations sur ce sujet sur les [pages de support Microsoft](https://learn.microsoft.com/fr-fr/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3?tabs=group-policy).
+> Pour corriger cette erreur, il convient de modifier le registre Windows. Pour cela, ouvrez l’éditeur de registre (regedit), puis accédez à la clé `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
+> Attribuez ensuite la valeur « 1 » au paramètre `AllowInsecureGuestAuth`.<br>
+> Retrouvez plus d'informations sur ce sujet sur les [pages d'assistance de Microsoft](https://learn.microsoft.com/fr-fr/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3?tabs=group-policy).
 
 
 ### Configuration pour Linux
@@ -66,7 +66,7 @@ mount -t cifs -o uid=root,gid=100,dir_mode=0700,username=root,password= //IP_SER
 
 > [!warning]
 >
-> Afin de monter des partages par nom d'hôte (par opposition aux adresses IP), l'utilitaire `mount.cifs` est requis. Il fait généralement partie du paquet `cifs-utils`.
+> Pour monter des partages par nom d'hôte (par opposition aux adresses IP), l'utilitaire `mount.cifs` est requis. Il fait généralement partie du paquet `cifs-utils`.
 >
 > `mount.cifs` est un wrapper qui résout les noms d'hôte et ajoute le paramètre `ip=` aux paramètres de montage transmis au noyau.
 >

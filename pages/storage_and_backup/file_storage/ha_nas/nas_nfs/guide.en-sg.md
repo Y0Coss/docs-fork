@@ -135,19 +135,19 @@ You can now access your mounted partition at the specified folder.
 
 ### Microsoft Windows - specificity
 
-Make sure that the Windows user who is used to access your NAS-HA has sufficient rights.
+Ensure that the Windows user who needs to access your NAS-HA has the necessary rights.
 
-Indeed, the UID/GID pair must be configured to 0 (right UNIX root).
+The UID/GID pair must be set to "0" (UNIX root rights).
 
-If this is not the case, you will have access errors to your NAS-HA because, when NFS is authorised on a Windows machine, a UNIX user is created with the default UID and GID at -2 (or 4294967294).
+If this is not the case, errors may occur when accessing the NAS-HA. This is because when the NFS protocol is enabled on a Windows machine, a UNIX user is automatically created with a default UID and GID set to "-2" (or 4294967294), which restricts access.
 
-As a workaround, the UID and GID can be forced to 0 on the Windows machine that accesses your NAS-HA:
+As a workaround, the UID and GID can be forced to "0" on the Windows machine accessing your NAS-HA:
 
-1. Start the registry editor on the client machine.
-1. Locate `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
-1. Create two DWORD values, namely **AnonymousUid** and **AnonymousGid**.
-1. Set these values on the UID and the GID to 0.
-1. Restart the NFS service on the client machine.
+1. Open the Registry Editor (regedit) on the client machine.
+1. Navigate to the following key: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Create the following two DWORD entries: **AnonymousUid** and **AnonymousGid**.
+1. Assign the value "0" to each of these entries.
+1. Restart the NFS service on the client machine to apply the changes.
 
 All mounting options are available on the [Microsoft website](https://learn.microsoft.com/en-sg/windows-server/administration/windows-commands/mount).
 

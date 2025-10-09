@@ -135,19 +135,19 @@ Ahora puede acceder a la partición montada en la carpeta especificada.
 
 ### Microsoft Windows - Particularidades
 
-Asegúrese de que el usuario de Windows utilizado para acceder a su NAS-HA tenga permisos suficientes.
+Asegúrese de que el usuario de Windows que debe acceder a su NAS-HA dispone de los derechos necesarios.
 
-El par UID/GID debe configurarse en 0 (permisos root UNIX).
+El par UID/GID debe estar configurado en "0" (derecho root UNIX).
 
-De lo contrario, obtendrá errores de acceso a su NAS-HA, ya que cuando se habilita NFS en una máquina Windows, se crea un usuario UNIX con UID y GID predeterminados -2 (o 4294967294).
+Si no es así, pueden producirse errores de acceso al NAS-HA. De hecho, cuando el protocolo NFS está activado en un equipo Windows, se crea automáticamente un usuario UNIX con un UID y un GID predeterminados establecidos en "-2" (o 4294967294), lo que restringe el acceso.
 
-Como solución alternativa, puede forzar UID y GID a 0 en la máquina Windows que accede a su NAS-HA:
+Como solución alternativa, el UID y el GID se pueden forzar a "0" en el equipo Windows que accede a su NAS-HA:
 
-1. Inicie el editor del registro en la máquina cliente.
-1. Localice `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
-1. Cree dos valores DWORD: **AnonymousUid** y **AnonymousGid**.
-1. Establezca estos valores en UID y GID 0.
-1. Reinicie el servicio NFS en la máquina cliente.
+1. Abra el editor del registro (regedit) en el equipo cliente.
+1. Vaya a la siguiente clave: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Cree las dos entradas de tipo DWORD siguientes: **AnonymousUid** y **AnonymousGid**.
+1. Asigne el valor "0" a cada una de estas entradas.
+1. Reinicie el servicio NFS en el equipo cliente para aplicar los cambios.
 
 Todas las opciones de montaje están disponibles en el [sitio de Microsoft](https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/mount).
 

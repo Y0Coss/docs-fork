@@ -1,12 +1,12 @@
 ---
 title: Podłącz HA-NAS za pomocą udziału CIFS
-excerpt: Ten przewodnik pokazuje, jak podłączyć HA-NAS za pomocą protokołu CIFS
+excerpt: W tym przewodniku opisano sposób montowania HA-NAS przy użyciu protokołu CIFS.
 updated: 2025-10-08
 ---
 
 ## Wprowadzenie
 
-Skonfiguruj i zamontuj przestrzeń dyskową OVHcloud HA-NAS przy użyciu protokołu CIFS.
+**Dowiedz się, jak skonfigurować i zamontować przestrzeń dyskową OVHcloud HA-NAS przy użyciu protokołu CIFS.**
 
 ## Wymagania początkowe
 
@@ -51,9 +51,9 @@ You can't access this shared folder because your organization's security policie
 
 > [!primary]
 >
-> Ten problem można rozwiązać, modyfikując rejestr systemu Windows: otwórz narzędzie systemu Windows *regedit* i wyszukaj wpis `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
-> Ustaw dla parametru `AllowInsecureGuestAuth` wartość "1".<br>
-> Więcej informacji na ten temat można znaleźć na [stronach pomocy technicznej firmy Microsoft](https://learn.microsoft.com/pl-pl/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
+> Aby skorygować ten błąd, należy zmodyfikować rejestr systemu Windows. W tym celu należy otworzyć Edytor rejestru (regedit), a następnie przejść do klucza `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`.<br>
+> Ustaw wartość parametru `AllowInsecureGuestAuth` na "1".<br>
+> Znajdź więcej informacji na ten temat na [stronach pomocy Microsoft](https://learn.microsoft.com/pl-pl/windows-server/storage/file-server/enable-insecure-guest-logons-smb2-and-smb3).
 
 ### Ustawienia dla systemu Linux
 

@@ -136,19 +136,19 @@ Vous pouvez maintenant accéder à votre partition montée dans le dossier spéc
 
 ### Microsoft Windows - Particularités
 
-Assurez-vous que l'utilisateur Windows qui est utilisé pour accéder à votre NAS-HA dispose de droits suffisants.
+Assurez-vous que l'utilisateur Windows qui doit accéder à votre NAS-HA dispose de droits nécessaires.
 
-En effet, le couple UID/GID doit être configuré à 0 (droit root UNIX).
+Le couple UID/GID doit être configuré sur « 0 » (droit root UNIX).
 
-Si ce n'est pas le cas, vous obtiendrez des erreurs d'accès à votre NAS-HA, car lorsque NFS est autorisé sur une machine Windows, un utilisateur UNIX est créé avec l'UID et le GID par défaut à -2 (ou 4294967294).
+Si ce n'est pas le cas, des erreurs d’accès au NAS-HA peuvent survenir. En effet, lorsque le protocole NFS est activé sur une machine Windows, un utilisateur UNIX est automatiquement créé avec un UID et un GID par défaut définis sur « -2 » (ou 4294967294), ce qui restreint les accès.
 
-Comme solution de contournement, l'UID et le GID peuvent être forcés à 0 sur la machine Windows qui accède à votre NAS-HA :
+Comme solution de contournement, l'UID et le GID peuvent être forcés à « 0 » sur la machine Windows qui accède à votre NAS-HA :
 
-1. Démarrez l'éditeur de registre sur la machine cliente.
-1. Localisez `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
-1. Créez deux valeurs DWORD, à savoir **AnonymousUid** et **AnonymousGid**.
-1. Définissez ces valeurs sur l'UID et le GID à 0.
-1. Redémarrez le service NFS sur la machine cliente.
+1. Ouvrez l'éditeur de registre (regedit) sur la machine cliente.
+1. Accédez à la clé suivante : `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default`.
+1. Créez les deux entrées de type DWORD suivantes : **AnonymousUid** et **AnonymousGid**.
+1. Attibuez la valeur « 0 » à chacune de ces entrées.
+1. Redémarrez le service NFS sur la machine cliente pour appliquer les modifications.
 
 Toutes les options de montage sont disponibles sur le [site de Microsoft](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/mount).
 
