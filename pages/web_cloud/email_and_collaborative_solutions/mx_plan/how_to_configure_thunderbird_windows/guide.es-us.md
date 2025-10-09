@@ -29,11 +29,7 @@ Las cuentas de correo electrónico MX Plan pueden configurarse en diferentes cli
 
 ## Requisitos
 
-- Tener una oferta MX Plan. Esta está disponible a través de:
-    - Una oferta de [alojamiento web](/links/web/hosting).
-    - Un [alojamiento gratuito 100M](/links/web/domains-free-hosting) incluido con un nombre de dominio (previamente activado).
-    - Una oferta MX Plan pedida por separado.
-    - Tener una dirección de correo electrónico [Zimbra Starter](/links/web/zimbra).
+- Tener una oferta MX Plan. Esta está disponible a través de una oferta de [alojamiento web](/links/web/hosting).
 - Tener instalado el software Thunderbird en su dispositivo bajo Windows.
 - Poseer las credenciales relacionadas con la dirección de correo electrónico que desea configurar.
 

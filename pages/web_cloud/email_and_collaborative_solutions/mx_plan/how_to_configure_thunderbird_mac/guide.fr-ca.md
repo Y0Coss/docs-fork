@@ -29,11 +29,7 @@ Les comptes e-mail MX Plan peuvent être configurés sur différents logiciels d
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via :
-    - Une offre d’[hébergement web](/links/web/hosting).
-    - Un [hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine (activé au préalable).
-    - Une offre MX Plan commandée séparément.
-    - Disposer d’une adresse e-mail [Zimbra Starter](/links/web/zimbra).
+- Disposer d'une offre MX Plan. Celle-ci est disponible via une offre d’[hébergement web](/links/web/hosting).
 - Disposer du logiciel Thunderbird installé sur votre Mac.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
