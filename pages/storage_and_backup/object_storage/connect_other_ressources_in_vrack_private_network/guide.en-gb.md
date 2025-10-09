@@ -49,7 +49,9 @@ First as a quick reminder, here is how today user permissions are evaluated:
    3. if there is no explicit deny nor explicit allow, then fallback to ACLs
 2. fallback to ACLs
 
-This evaluation process will be subject to change with the upcoming implementation of bucket policies.
+This evaluation process will be subject to change with the upcoming implementation of bucket policies. As a consequence of the current authorization process, **implicit deny** is **not** supported by OVHcloud Object Storage if the user is the bucket owner i.e since ACLs are evaluated by default and since **the bucket owner has FULL_CONTROL ACL**, if the user is the bucket owner and even if there is no explicit allow in the policy file, he will be authorized. 
+
+As a consequence, we recommend creating new users (not the bucket owner itself) to set this policy and avoid mismatch or confusion. Last but not least, the policy needs to be associated to each user accessing the resources.
 
 In our scenario,  we will allow all operations to specific IPs by whitelisting them with the following policy statement:
 
