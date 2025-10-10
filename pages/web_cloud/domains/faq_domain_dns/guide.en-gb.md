@@ -1,7 +1,7 @@
 ---
 title: "Domain names & DNS FAQ"
 excerpt: "Find the answers to the most frequently asked questions on domain names, DNS servers and DNS zones"
-updated: 2025-10-06
+updated: 2025-10-10
 ---
 
 <style>
