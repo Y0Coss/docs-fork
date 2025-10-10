@@ -393,7 +393,7 @@ An dieser Stelle sehen Sie alle DNS-Einträge, die Sie über den OVHcloud Konfig
 
 Mit diesem Assistenten können Sie folgende DNS-Eintrag-Typen hinzufügen:
 
-- **Zeitstempel-Einträge**: `A`, `AAAA`, `NS`, `CNAME` und `DNAME`.
+- **Verweiseinträge**: `A`, `AAAA`, `NS`, `CNAME` und `DNAME`.
 - **Erweiterte Einträge**: `CAA`, `TXT`, `NAPTR`, `SRV`, `LOC`, `SSHFP` und `TLSA`.
 - **E-Mail-Einträge**: `MX`, `SPF`, `DKIM` und `DMARC`.
 
