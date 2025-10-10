@@ -1,6 +1,6 @@
 ---
-title: "FAQ on domain names & DNS"
-excerpt: "Find the main questions asked on domain names, DNS servers and DNS zones"
+title: "Domain names & DNS FAQ"
+excerpt: "Find the answers to the most frequently asked questions on domain names, DNS servers and DNS zones"
 updated: 2025-10-06
 ---
 
@@ -26,7 +26,7 @@ details[open]>summary::before {
 
 Follow these steps:
 
-1. Go to our website [OVHcloud](/links/website).
+1. Go to the [OVHcloud website](/links/website).
 2. On the displayed page and in the designated field, enter the domain name you wish to reserve (e.g., `domain.tld`), then click the `Search`{.action} button.
 3. On the new page that appears, our interface will indicate whether the chosen domain name is available for purchase. If it is already reserved with the syntax you entered, modify it and initiate a new availability search.
 4. Once you find an available domain name, click the `Buy`{.action} button, then click the `Continue Order`{.action} button in the right column.
@@ -49,7 +49,7 @@ Purchasing a domain name on the secondary market follows the same process as sub
 
 Follow these steps:
 
-1. Go to our website [OVHcloud](/links/website).
+1. Go to the [OVHcloud website](/links/website).
 2. On the displayed page and in the designated field, enter the domain name you wish to reserve (e.g., `domain.tld`), then click the `Search`{.action} button.
 3. On the new page that appears, our interface will indicate whether the chosen domain name is available for purchase. If it is already reserved with the syntax you entered, modify it and initiate a new availability search.
 4. Once you find an available domain name, click the `Buy`{.action} button, then click the `Continue Order`{.action} button in the right column.
@@ -141,7 +141,7 @@ Domain names are considered custom products because they are registered specific
 
 Follow these steps:
 
-1. Log in to your [OVHcloud Cotrol Panel](/links/manager).
+1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. Click on your name in the top right corner and select `My offers and services`{.action}.
 3. In the table that appears, locate the line corresponding to your domain name, click the `...`{.action} button on the right, then select `Cancel my subscription`{.action}.
 4. On the page that appears, select the cancellation mode (immediately or at the service's expiration date) and click the `Yes, cancel`{.action} button at the bottom.
@@ -185,7 +185,7 @@ Beyond these 15 days, the system sends additional emails (up to 9 emails) before
 
 > [!warning]
 >
-> Depending on the domain name extension (e.g., *.com*, *.net*, etc.), some of the deadlines mentioned above may vary. We strongly recommend verifying the verification process for contact control with the registry of your domain name's extension.
+> Depending on the domain name extension (e.g., *.com*, *.net*, etc.), some of the deadlines mentioned above may vary. We strongly recommend completing the verification process for contact control with the registry of your domain name's extension.
 
 ///
 
@@ -196,7 +196,7 @@ If you did not receive the validation email for your domain name's owner, check 
 1. The email address declared for the domain name owner is valid and operational.
 2. The validation email is not in your spam/junk folder.
 
-After verifying and confirming the two points above, if you still cannot retrieve the owner validation email, we recommend opening a support ticket from the [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to request the email to be resent.
+After confirming the two points above, if you still cannot retrieve the owner validation email, we recommend opening a support ticket from the [Help Center](https://help.ovhcloud.com/csm?id=csm_get_help) to request the email to be resent.
 
 ///
 
@@ -206,7 +206,7 @@ Initially, domain names could only contain specific **ASCII** characters (such a
 
 With OVHcloud, it is entirely possible to order IDNs and use them as regular domain names with our other services (web hosting, DNS zones, etc.<sup>1</sup>).
 
-Once subscribed, IDNs appear in your [OVHcloud Cotrol Panel](/links/manager) in the **xn--** format.
+Once subscribed, IDNs appear in your [OVHcloud Control Panel](/links/manager) in the **xn--** format.
 
 Even though your domain is displayed in [internationalized notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name) in your [OVHcloud Cotrol Panel](/links/manager), it will function and display normally elsewhere. Your website address will appear as requested. Your email addresses will also display as intended to your contacts.
 
@@ -316,8 +316,8 @@ Currently, OVHcloud does not directly support the sale of already registered dom
 
 However, if you wish to put your domain name up for sale on a secondary market, contact one of our partners:
 
-- [Afternic](https://www.afternic.com).
-- [Sedo](https://sedo.com).
+- [Afternic](https://www.afternic.com)
+- [Sedo](https://sedo.com)
 
 If you wish to sell your domain name, you can add it to these platforms. Once added, the authorized providers will offer your domain name at the price you set on one of the platforms above.
 
@@ -475,7 +475,7 @@ Their main differences lie in the type of IP address they use:
 
 In other words, A records are used for IPv4 addresses, while AAAA records are used for IPv6 addresses. Both types of records are used to direct traffic to a specific IP address, but they are used for different versions of the Internet protocol.
 
-Note that a domain can have both A and AAAA records, allowing it to be accessible on both IPv4 and IPv6 networks. This is known as "dual stack," a common practice for websites and services aiming to be accessible to users on both IPv4 and IPv6 networks.
+Note that a domain can have both A and AAAA records, allowing it to be accessible on both IPv4 and IPv6 networks. This is known as "dual stack", a common practice for websites and services aiming to be accessible to users on both IPv4 and IPv6 networks.
 
 > [!success]
 >
@@ -792,9 +792,9 @@ To restore your DNS zone, follow these steps:
 
 For each service deletion request, an email requesting confirmation of deletion is sent to the email address associated with your OVHcloud customer account.
 
-If you have not clicked on the confirmation link in this email, rest assured, your DNS zone will not be deleted.
+If you have not clicked on the confirmation link in this email, your DNS zone will not be deleted.
 
-Otherwise, the deletion is initiated and cannot be canceled anymore. The deletion process may take up to 3 days before you can recreate an OVHcloud DNS zone for your domain name.
+Otherwise, the deletion is initiated and cannot be cancelled anymore. The deletion process may take up to 3 days before you can recreate an OVHcloud DNS zone for your domain name.
 
 ///
 
@@ -821,10 +821,10 @@ In this situation and if you do not know this other customer account ID, we reco
 
 ///
 
-/// details | Why can't I find the « GLUE » tab in my OVHcloud Control Panel?
+/// details | Why can't I find the GLUE tab in my OVHcloud Control Panel?
 
 This feature is not available for all domain name extensions.
-If the tab does not appear in your [OVHcloud Control Panel](/links/manager), it means the « GLUE » option is unavailable for your domain name.
+If the tab does not appear in your [OVHcloud Control Panel](/links/manager), it means the GLUE option is unavailable for your domain name.
 
 > [!success]
 >
@@ -880,7 +880,7 @@ You will be able to customize the DNS servers for your domain name on the page t
 
 ///
 
-/// details | How to replace my DNS servers with OVHcloud's?
+/// details | How to replace my DNS servers with those provided by OVHcloud?
 
 Follow these steps:
 
@@ -901,7 +901,7 @@ You will be able to replace the DNS servers for your domain name with OVHcloud's
 
 ///
 
-/// details | In my customer area, I have an error message indicating that I am not using OVHcloud's DNS servers for my domain name, what should I do?
+/// details | In my Control Panel, I have an error message indicating that I am not using OVHcloud's DNS servers for my domain name, what should I do?
 
 In your [OVHcloud Control Panel](/links/manager), this message simply indicates that the DNS zone created for your domain name is not its active DNS zone.
 
@@ -915,7 +915,7 @@ If you want to use OVHcloud's DNS servers for your domain name, you can prepare 
 >
 > Find more details in the following guides:
 >
-> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
+> - [How to edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 > - [How to modify the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
 
 ///
@@ -948,7 +948,7 @@ You can then perform a [contact recovery procedure](/links/transversal/procedure
 
 ## Go further <a name="go-further"></a>
 
-[FAQ OVHcloud emails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+[OVHcloud emails FAQ ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 
 [Web Hosting FAQ](/pages/web_cloud/web_hosting/faq-web_hosting)
 
