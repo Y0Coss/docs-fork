@@ -708,14 +708,14 @@ Sie müssen die beiden DNS-Server für Ihren Subdomainname direkt beim DNS-Anbie
 
 ///
 
-/// details | Wie kann ich alle Subdomainnames eines Domainnamens auf dieselbe IP-Adresse weiterleiten?
+/// details | Wie kann ich alle Subdomainnamen eines Domainnamens auf dieselbe IP-Adresse weiterleiten?
 
 Folgen Sie diesen Schritten:
 
 1. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 2. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 3. Rechts oder unterhalb der Tabelle klicken Sie auf `Eintrag hinzufügen`{.action}, dann wählen Sie den Eintragstyp `A`{.action} für IPv4 (z. B. `203.0.113.0`) oder `AAAA`{.action} für IPv6 (z. B. `2001:db8:1:1b00:203:0:113:0`).
-4. In dem sich öffnenden Fenster füllen Sie im Feld `Subdomain *`{.action} den Wert `*` aus. Das Asteriskzeichen `*` steht für alle Subdomainnames (z. B. `www.domain.tld` oder `ovhcloud.domain.tld`) Ihres Domainnamens. Füllen Sie das Feld `Ziel *`{.action} mit der gewünschten IP-Adresse aus.
+4. In dem sich öffnenden Fenster füllen Sie im Feld `Subdomain *`{.action} den Wert `*` aus. Das Asteriskzeichen `*` steht für alle Subdomainnamen (z. B. `www.domain.tld` oder `ovhcloud.domain.tld`) Ihres Domainnamens. Füllen Sie das Feld `Ziel *`{.action} mit der gewünschten IP-Adresse aus.
 5. Klicken Sie auf `Weiter`{.action}, dann auf `Bestätigen`{.action}.
 
 > [!primary]
@@ -737,7 +737,7 @@ Dazu folgen Sie diesen Schritten:
 1. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
 2. Klicken Sie auf das Menü `DNS-Zone`{.action} und wählen Sie den Domainnamen aus.
 3. Rechts oder unterhalb der Tabelle klicken Sie auf `Eintrag hinzufügen`{.action}, dann wählen Sie den Eintragstyp aus, für den Sie einen Wildcard einrichten möchten.
-4. In dem sich öffnenden Fenster füllen Sie im Feld `Subdomain *`{.action} den Wert `*` aus. Das Asteriskzeichen `*` steht für alle Subdomainnames (z. B. `www.domain.tld` oder `ovhcloud.domain.tld`) Ihres Domainnamens. Füllen Sie die anderen Felder mit den gewünschten Werten aus.
+4. In dem sich öffnenden Fenster füllen Sie im Feld `Subdomain *`{.action} den Wert `*` aus. Das Asteriskzeichen `*` steht für alle Subdomainnamen (z. B. `www.domain.tld` oder `ovhcloud.domain.tld`) Ihres Domainnamens. Füllen Sie die anderen Felder mit den gewünschten Werten aus.
 5. Klicken Sie auf `Weiter`{.action}, dann auf `Bestätigen`{.action}.
 
 > [!primary]
