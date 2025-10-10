@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer l'infrastructure Anti-DDoS pour Solana"
 excerpt: "Apprenez à utiliser l'infrastructure Anti-DDoS d'OVHcloud pour protéger vos nœuds Solana sans nuire à leur fonctionnalité"
-updated: 2025-09-30
+updated: 2025-10-10
 ---
 
 >[!primary]
