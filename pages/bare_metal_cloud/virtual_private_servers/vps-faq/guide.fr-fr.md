@@ -311,7 +311,7 @@ Si l'adresse IP de destination est compatible avec votre licence (`true`), vous 
 ///
 
 
-## Questions concernant la sécurité et la sauvegarde
+## Questions sur la sécurité et la sauvegarde
 
 /// details | Comment sécuriser mon VPS ?
 
