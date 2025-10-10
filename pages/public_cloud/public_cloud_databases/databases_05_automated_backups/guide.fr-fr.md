@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Sauvegardes automatiques (EN)
 excerpt: Discover the automated backup methods for each engine
-updated: 2025-10-09
+updated: 2025-02-19
 ---
 
 ## Objective
@@ -52,7 +52,6 @@ Public Cloud Databases provide a default configuration for remote backups based 
 | SGP (Singapore, Singapore)  | BHS (Beauharnois, Canada)        |
 | UK (London, United Kingdom) | GRA (Gravelines, France)         |
 | WAW (Warsaw, Poland)        | GRA (Gravelines, France)         |
-| RBX (Roubaix, France)       | GRA (Gravelines, France)         |
 
 ### Custom settings
 
