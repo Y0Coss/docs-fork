@@ -4,7 +4,7 @@ excerpt: "Learn how to leverage the OVHcloud Anti-DDoS infrastructure to protect
 updated: 2025-10-10
 ---
 
->[!primary]
+> [!primary]
 > This guide's instructions and examples are currently focused exclusively on the **Solana** blockchain. 
 >
 
@@ -14,7 +14,7 @@ This guide's objective is to help you better understand the OVHcloud Anti-DDoS I
 
 ## Requirements
 
-- At least one Bare Metal [dedicated server](/links/bare-metal/bare-metal) which respects the desired blockchain's specific hardware requirements.
+- At least one [dedicated server](/links/bare-metal/bare-metal) which respects the desired blockchain's specific hardware requirements.
 
 ## Introduction to Blockchain
 
@@ -22,29 +22,30 @@ A blockchain is a decentralized, distributed digital ledger that records transac
 
 This technology creates a tamper-proof and transparent record of information, such as financial transactions, making it secure and trustworthy.
 
-In some cases, communication spikes can trigger Anti-DDoS Infrastructure, and lead to the detection of some traffic patterns as false positives. 
+In some cases, communication spikes can trigger the Anti-DDoS Infrastructure and lead to the detection of some traffic patterns as false positives. 
 
 ## Instructions
 
-To avoid having your network traffic suspected or blocked by the Anti-DDoS Infrastructure (as a false positive detection), we strongly recommend to report your nodes IP addresses to our support teams. This way, a custom Solana profile will be created for better protection and uninterrupted functionality. 
+To avoid having your network traffic suspected or blocked by the Anti-DDoS Infrastructure (as a false positive detection), we strongly recommend that you provide the IP addresses of your nodes to our support teams. This will enable us to create a customised Solana profile for better protection and uninterrupted operation.
 
-To get started, please fill in a [support request ticket](https://help.ovhcloud.com/csm?id=csm_get_help) with the following options : Incident -> Public IP -> [x] This service is not listed -> Create a support request -> `Next`{.action}. 
+To get started, create a [support request ticket](https://help.ovhcloud.com/csm?id=csm_get_help) with the following options: Incident -> Public IP -> [x] This service is not listed -> Create a support request -> `Next`{.action}. 
 
-Then, fill in the short description with **"Blockchain Solana Anti-DDoS tuning"**, then list your Solana nodes' IPv4 addresses, their ports, the types of servers that are hosting nodes, and the size of your cluster (the approximate number of clients connected) in the issue description. 
+Fill in the short description with **"Blockchain Solana Anti-DDoS tuning"**, then list your Solana nodes' IPv4 addresses, their ports, the types of servers that host the nodes, and the size of your cluster (the approximate number of clients connected) in the issue description. 
 
 Please note that in the future, you will be able to control Anti-DDoS behaviour directly through our Control Panel.
 
 If you are not sure about which elements you should send to our teams, you can refer to the following use case.
 
-### Use Case : Solana
+### Use Cas : Solana
 
-Solana is a high-performance blockchain platform known for its exceptional speed and low transaction costs, making it a popular alternative for decentralized applications. It achieves this by using a unique cryptographic clock called Proof of History (PoH), which timestamps transactions to enable parallel processing and greater efficiency. This system is paired with a Proof of Stake (PoS) consensus mechanism, where validators are chosen based on their staked SOL, ensuring the network remains secure and decentralized. 
+Solana is a high-performance blockchain platform known for its exceptional speed and low transaction costs, making it a popular alternative for decentralized applications. It achieves this by using a unique cryptographic clock called Proof of History (PoH), which timestamps transactions to enable parallel processing and greater efficiency. This system is paired with a Proof of Stake (PoS) consensus mechanism, in which validators are chosen based on their SOL stake, thus ensuring the security and decentralisation of the network.
 
 Solana's architecture also utilizes a combination of protocols like Tower BFT, Turbine, Gulf Stream and Sealevel to optimize block propagation, transaction processing, and smart contract execution, all contributing to its high speed and efficiency.
 
-There are typically two types of nodes : 
-- **Validator nodes** (also called consensus nodes), which secure the Solana network by validating transactions and participating in consensus;
-- **RPC nodes**, which act as access points for users and applications, allowing them to submit transactions and query blockchain data via APIs *without* participating in consensus.
+There are typically two types of nodes:
+
+- **Validator nodes**: (also called consensus nodes), which secure the Solana network by validating transactions and participating in consensus.
+- **RPC nodes**: which act as access points for users and applications, allowing them to submit transactions and query blockchain data via APIs *without* participating in consensus.
 
 Solana nodes use the following network protocols and ports:
 
