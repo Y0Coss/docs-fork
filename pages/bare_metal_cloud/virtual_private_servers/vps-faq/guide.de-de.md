@@ -8,7 +8,7 @@ updated: 2025-10-02
 /* ---FAQ only--- */
 details {
     margin: 0.5rem 0;
-    border: 1px solid #050505ff;
+    border: 1px solid #ffffffff;
     border-radius: 4px;
     background: #ffffffff;
 }
@@ -181,7 +181,7 @@ Wenn die Resilienz gegenüber DDoS-Angriffen für Ihr Projekt von entscheidender
 
 ///
 
-### Fragen zur VPS-Administration
+## Fragen zur VPS-Administration
 
 /// details | Wie verbinde ich mich mit meinem VPS?
 
