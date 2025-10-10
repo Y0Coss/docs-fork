@@ -18,9 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## Preguntas frecuentes sobre VPS
-
-### Preguntas generales sobre las ofertas de VPS
+## Preguntas generales sobre las ofertas de VPS
 
 /// details | ¿Qué es un VPS y para qué se utiliza?
 
@@ -96,7 +94,6 @@ No, nuestras soluciones de VPS no incluyen un nombre de dominio ni un servicio d
 
 ///
 
-
 /// details | ¿Cómo elijo entre un VPS y un plan de alojamiento web?
 
 - Plan de alojamiento web: ideal para necesidades básicas de alojamiento con una configuración preestablecida.
@@ -121,6 +118,19 @@ Alojar servicios web en un VPS le permite instalar su software preferido, person
 Un VPS elimina la necesidad de gestionar hardware físico como el almacenamiento, la RAM y el CPU, lo que lo hace adecuado para la mayoría de las aplicaciones web. A medida que su negocio crece, puede actualizar su VPS o migrar a un servidor dedicado o a una solución de Public Cloud para una infraestructura más flexible y potente.
 
 ///
+
+/// details | ¿Qué ancho de banda se asigna a mi VPS? ¿Está garantizado?
+
+El ancho de banda que aparece en nuestra [página web de VPS](/links/bare-metal/vps) está garantizado. Es la cantidad mínima asignada a su servicio.
+
+///
+
+/// details | ¿Qué SLA se aplica a mi VPS?
+
+Un VPS de OVHcloud incluye un SLA del 99,9%.
+
+///
+</br> </br>
 
 /// details | ¿Cuáles son las características únicas de un VPS de Zona Local?
 
@@ -150,17 +160,6 @@ Si la resiliencia frente a ataques DDoS es un factor crítico para su proyecto, 
 
 ///
 
-/// details | ¿Qué ancho de banda se asigna a mi VPS? ¿Está garantizado?
-
-El ancho de banda que aparece en nuestra [página web de VPS](/links/bare-metal/vps) está garantizado. Es la cantidad mínima asignada a su servicio.
-
-///
-
-/// details | ¿Qué SLA se aplica a mi VPS?
-
-Un VPS de OVHcloud incluye un SLA del 99,9%.
-
-///
 
 ### Preguntas relacionadas con la administración de VPS
 
@@ -170,13 +169,6 @@ Puede iniciar sesión en su VPS de forma remota, utilizando las credenciales pro
 El método de conexión depende de los sistemas operativos que se utilicen.
 
 Todos los detalles se detallan en nuestra guía sobre [cómo empezar con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
-
-///
-
-/// details | ¿Cómo puedo asegurar mi VPS?
-
-De forma predeterminada, el VPS se entrega con solo el sistema operativo seleccionado instalado. El administrador del VPS es responsable de aplicar una configuración de seguridad adecuada una vez que se entrega el VPS.  
-Para ello, consulte nuestra guía sobre [cómo asegurar un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ///
 
@@ -316,6 +308,16 @@ Si la dirección IP de destino es compatible con tu licencia (`true`), puedes ut
 
 ///
 
+
+## Preguntas sobre seguridad y backup
+
+/// details | ¿Cómo puedo asegurar mi VPS?
+
+De forma predeterminada, el VPS se entrega con solo el sistema operativo seleccionado instalado. El administrador del VPS es responsable de aplicar una configuración de seguridad adecuada una vez que se entrega el VPS.  
+Para ello, consulte nuestra guía sobre [cómo asegurar un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+
+///
+
 /// details | ¿Cómo puedo descargar mis archivos o una copia de seguridad del VPS?
 
 Hay varias opciones disponibles, por ejemplo:
@@ -378,6 +380,7 @@ Para verificar que tu dirección IP está autorizada, utiliza la siguiente llama
 >
 
 ///
+</br> </br>
 
 /// details | ¿Está mi VPS protegido contra ataques externos?
 

@@ -18,9 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## FAQ VPS
-
-### Ogólne pytania dotyczące oferty VPS
+## Ogólne pytania dotyczące oferty VPS
 
 /// details | Co to jest VPS i do czego służy?
 
@@ -121,6 +119,19 @@ VPS eliminuje konieczność zarządzania sprzętem fizycznym, takim jak pamięć
 
 ///
 
+/// details | Jaka przepustowość jest przydzielona do mojego VPS? Czy jest ona gwarantowana?
+
+Przepustowość wymieniona na naszej [stronie internetowej VPS](/links/bare-metal/vps) jest gwarantowana. Jest to minimalna ilość przydzielona do Twojej usługi.
+
+///
+
+/// details | Który SLA jest stosowany do mojego VPS?
+
+VPS od OVHcloud obejmuje SLA na poziomie 99,9%.
+
+///
+</br> </br>
+
 /// details | Jakie są unikalne cechy VPS z Local Zone?
 
 Z VPS z Local Zone możesz znacznie zmniejszyć czas dostępu do swoich stron i aplikacji, ponieważ dane są hostowane bliżej Twoich użytkowników. Tworzy to lepsze doświadczenie użytkownika, zmniejszając opóźnienie, kiedy aplikacje wymagają minimalnego czasu odpowiedzi. Po prostu wybierz jedną z naszych lokalizacji na całym świecie podczas składania zamówienia.
@@ -149,17 +160,6 @@ Jeśli odporność na ataki DDoS jest kluczowym czynnikiem dla Twojego projektu,
 
 ///
 
-/// details | Jaka przepustowość jest przydzielona do mojego VPS? Czy jest ona gwarantowana?
-
-Przepustowość wymieniona na naszej [stronie internetowej VPS](/links/bare-metal/vps) jest gwarantowana. Jest to minimalna ilość przydzielona do Twojej usługi.
-
-///
-
-/// details | Który SLA jest stosowany do mojego VPS?
-
-VPS od OVHcloud obejmuje SLA na poziomie 99,9%.
-
-///
 
 ### Pytania dotyczące administrowania serwerem VPS
 
@@ -169,13 +169,6 @@ Możesz zalogować się zdalnie do Twojego serwera VPS, korzystając z danych pr
 Metoda połączenia zależy od używanych systemów operacyjnych.
 
 Szczegóły znajdziesz w przewodniku [Jak rozpocząć pracę z VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
-
-///
-
-/// details | Jak zabezpieczyć serwer VPS?
-
-Domyślnie VPS jest dostarczany z zainstalowanym tylko wybranym systemem operacyjnym. Po dostarczeniu serwera VPS administrator serwera VPS wprowadził odpowiednią konfigurację zabezpieczeń.  
-W tym celu zapoznaj się z przewodnikiem [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ///
 
@@ -314,6 +307,16 @@ Jeśli IP docelowe jest kompatybilne z Twoją licencją ('true`), możesz przeni
 
 ///
 
+
+## Pytania dotyczące bezpieczeństwa i kopii zapasowych
+
+/// details | Jak zabezpieczyć serwer VPS?
+
+Domyślnie VPS jest dostarczany z zainstalowanym tylko wybranym systemem operacyjnym. Po dostarczeniu serwera VPS administrator serwera VPS wprowadził odpowiednią konfigurację zabezpieczeń.  
+W tym celu zapoznaj się z przewodnikiem [Zabezpieczenie serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+
+///
+
 /// details | Jak mogę pobrać pliki lub kopię danych z serwera VPS?
 
 Istnieje kilka możliwości, na przykład:
@@ -376,6 +379,7 @@ Aby sprawdzić, czy adres IP jest dozwolony, użyj następującego wywołania:
 >
 
 ///
+</br> </br>
 
 /// details | Czy mój VPS jest chroniony przed zewnętrznymi atakami?
 
