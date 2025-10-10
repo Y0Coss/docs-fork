@@ -1,6 +1,6 @@
 ---
 title: "How to contact a Startup Program manager and/or request a technical consultation"
-excerpt: ''
+excerpt: 'Contact an OVHcloud Startup Program manager for advice, technical consultation or information about the program'
 updated: 2025-10-08
 ---
 
@@ -12,9 +12,9 @@ All these elements are covered in detail during your onboarding session at the s
 
 ## Key points
 
-- **General questions about the Startup Program:** Our Startup Program Managers are available to answer any questions about the OVHcloud Startup Program and its support offerings.  
-- **Technical support:** As a member of the OVHcloud Startup Program, you receive technical support hours for your server infrastructure. These sessions are designed to help you evaluate whether your infrastructure meets your needs and, if not, to evolve it with the assistance of our technical experts.  
-- **Technical incident:** For any questions related to an order or ongoing incident affecting one of your services, we recommend [contacting our sales and technical support teams directly](https://help.ovhcloud.com/csm?id=csm_get_help) before reaching out to our Startup Program team.
+- **General questions about the Startup Program**: Our Startup Program Managers are available to answer any questions about the OVHcloud Startup Program and its support offerings.
+- **Technical support**: As a member of the OVHcloud Startup Program, you receive technical support hours for your server infrastructure. These sessions are designed to help you evaluate whether your infrastructure meets your needs and, if not, to evolve it with the assistance of our technical experts.
+- **Technical incident**: For any questions related to an order or ongoing incident affecting one of your services, we recommend [contacting our sales and technical support teams directly](https://help.ovhcloud.com/csm?id=csm_get_help) before reaching out to our Startup Program team.
 
 ## Instructions
 

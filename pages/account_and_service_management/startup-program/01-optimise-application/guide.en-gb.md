@@ -1,6 +1,6 @@
 ---
 title: "How to optimise your application to the Startup Program"
-excerpt: ''
+excerpt: 'Find out how to optimise your application to the OVHcloud Startup Program to maximise your chances of acceptance'
 updated: 2025-10-08
 ---
 
@@ -12,8 +12,8 @@ OVHcloud's Startup Program offers numerous benefits to support startups in their
 
 ## Requirements
 
-- An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Access to the [OVHcloud Control Panel](/links/manager)
+- An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -44,12 +44,12 @@ To allow us to effectively review your application, complete the form with accur
 
 - Company name
 - Website
-- Social media (Twitter, LinkedIn)
+- Social media (LinkedIn, X)
 - Description of your project and business model
 - Server infrastructure needs
 - Stage of development of your project
 
-**Precision and completeness:** Any missing or incorrect information could result in your application being rejected or delays if updates are required.
+**Precision and completeness**: Any missing or incorrect information could result in your application being rejected or delays if updates are required.
 
 ### Processing time
 

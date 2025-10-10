@@ -1,6 +1,6 @@
 ---
 title: "How to sign your Startup Program contract"
-excerpt: ''
+excerpt: 'Find out how to sign your OVHcloud Startup Program contract to activate your credits quickly'
 updated: 2025-10-08
 ---
 
@@ -12,14 +12,14 @@ To participate in the OVHcloud Startup Program, signing the contract is an essen
 
 ## Requirements
 
-- Your Startup Program application must have been validated. Find more information in our guide [How to optimize your Startup Program application](pages/account_and_service_management/startup-program/01-optimise-application)
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Your Startup Program application must have been validated. Find more information in our guide "[How to optimize your Startup Program application](/pages/account_and_service_management/startup-program/01-optimise-application)".
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
 ### Signing the contract via email
 
-Check your inbox: after your Startup Program application is accepted, an email will be sent to the address linked to your OVHcloud account. This email contains a direct link to sign the contract. Click on the link and follow the instructions to complete the signature.
+Check your inbox: After your Startup Program application is accepted, an email will be sent to the address linked to your OVHcloud account. This email contains a direct link to sign the contract. Click on the link and follow the instructions to complete the signature.
 
 ### Signing the contract via the OVHcloud Control Panel
 

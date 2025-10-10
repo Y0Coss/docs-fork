@@ -1,6 +1,6 @@
 ---
 title: "How to check your Startup Program credits"
-excerpt: ''
+excerpt: 'Check your OVHcloud Startup Program credits to manage your resources and track your balance and usage history'
 updated: 2025-10-08
 ---
 
@@ -15,9 +15,9 @@ As a member of the OVHcloud Startup Program, you receive free credits to support
 - Your Startup Program application must have been validated, and your contract signed. Find more information in our guides:
     - [How to optimise your application to the Startup Program](pages/account_and_service_management/startup-program/01-optimise-application)
     - [How to sign your Startup Program contrac](/pages/account_and_service_management/startup-program/02-sign-agreement)
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](/links/manager).
 
-## Key Points
+## Key points
 
 - **Credit activation**: Credits are automatically activated within 48 business hours after signing the Startup Program contract.
 - **Validity period**: Credits are valid for 12 months from the contract’s signature date and are automatically removed at the end of this period.

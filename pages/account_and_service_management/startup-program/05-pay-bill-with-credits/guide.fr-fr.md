@@ -1,6 +1,6 @@
 ---
 title: "Comment payer une facture avec mes crédits du Startup Program"
-excerpt: ''
+excerpt: "Découvrez comment payer vos factures avec vos crédits du Startup Program d'OVHcloud pour optimiser vos dépenses d'infrastructure"
 updated: 2025-10-08
 ---
 
@@ -13,10 +13,10 @@ En tant que membre du Startup Program d'OVHcloud, vous disposez de crédits pour
 ## Prérequis
 
 - Votre candidature au Startup Program doit avoir été validée et votre contrat signé. Retrouvez plus d'informations dans nos guides :
-    - [Comment optimiser votre candidature au Startup Program](pages/account_and_service_management/startup-program/01-optimise-application)
+    - [Comment optimiser votre candidature au Startup Program](/pages/account_and_service_management/startup-program/01-optimise-application)
     - [Comment signer votre contrat du Startup Program](/pages/account_and_service_management/startup-program/02-sign-agreement)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
-- Connaître le [solde de vos crédits Startup Program](/pages/account_and_service_management/startup-program/04-view-credits)
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Connaître le [solde de vos crédits du Startup Program](/pages/account_and_service_management/startup-program/04-view-credits).
 
 ## Points clés
 
@@ -37,12 +37,12 @@ Selon le type de service que vous souhaitez commander, voici comment utiliser vo
 
 #### Pour les services Public Cloud éligibles
 
-1. Passez votre commande normalement : sélectionnez les services Public Cloud dont vous avez besoin et passez la commande.
-2. Crédits appliqués automatiquement : lors de la prochaine facturation de ces services, vos crédits Startup Program seront automatiquement utilisés pour couvrir les coûts.
+1. Passez votre commande normalement : Sélectionnez les services Public Cloud dont vous avez besoin et passez la commande.
+2. Crédits appliqués automatiquement : Lors de la prochaine facturation de ces services, vos crédits du Startup Program seront automatiquement utilisés pour couvrir les coûts.
 
 #### Pour les autres produits éligibles
 
-1. Passez votre commande : sélectionnez les services éligibles que vous souhaitez acheter.
+1. Passez votre commande : Sélectionnez les services éligibles que vous souhaitez acheter.
 1. Sélectionnez le mode de paiement :
     1. À la fin de la commande, lorsqu’il vous sera demandé de choisir un moyen de paiement, allez dans la section `Voucher`{.action}.
     1. Sélectionnez le voucher `STARTUP_PROGRAM` en cliquant sur `Appliquer`{.action}.
@@ -56,4 +56,4 @@ Selon le type de service que vous souhaitez commander, voici comment utiliser vo
 
 ## Conclusion
 
-Utiliser vos crédits Startup Program d'OVHcloud pour payer vos factures est simple, que ce soit pour le renouvellement de services ou pour de nouvelles commandes. Les services éligibles au renouvellement sont automatiquement couverts par vos crédits, tandis que pour les nouvelles commandes, vous devez sélectionner les crédits au moment du paiement. En suivant ces étapes, vous pouvez optimiser l'utilisation de vos crédits et réduire vos coûts d'infrastructure sans effort supplémentaire.
+Utiliser vos crédits du Startup Program d'OVHcloud pour payer vos factures est simple, que ce soit pour le renouvellement de services ou pour de nouvelles commandes. Les services éligibles au renouvellement sont automatiquement couverts par vos crédits, tandis que pour les nouvelles commandes, vous devez sélectionner les crédits au moment du paiement. En suivant ces étapes, vous pouvez optimiser l'utilisation de vos crédits et réduire vos coûts d'infrastructure sans effort supplémentaire.

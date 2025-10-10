@@ -1,6 +1,6 @@
 ---
 title: "Comment optimiser votre candidature au Startup Program"
-excerpt: ''
+excerpt: "Découvrez comment optimiser votre candidature au Startup Program d'OVHcloud pour maximiser vos chances d'acceptation"
 updated: 2025-10-08
 ---
 
@@ -12,8 +12,8 @@ Le Startup Program d'OVHcloud offre de nombreux avantages pour soutenir les star
 
 ## Prérequis
 
-- Avoir créé [votre compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Avoir créé [votre compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -39,16 +39,16 @@ Consultez ce guide pour plus d'informations : [Gérer mes moyens de paiement](/p
 
 Pour nous permettre d'étudier efficacement votre candidature, complétez le formulaire d'inscription avec précision et détail.
 
-**Informations essentielles à renseigner :**
+**Informations essentielles à renseigner** :
 
 - Nom de votre société
 - Site web
-- Réseaux sociaux (Twitter, LinkedIn)
+- Réseaux sociaux (LinkedIn, X)
 - Description de votre projet et de votre modèle économique
 - Besoins en infrastructure serveur
-- Étape de développement de votre projet
+- État d'avancement de votre projet
 
-**Précision et complétude :** toute information manquante ou incorrecte pourrait entraîner le rejet de votre inscription ou des délais supplémentaires en cas de demande de mise à jour.
+**Précision et complétude** : Toute information manquante ou incorrecte pourrait entraîner le rejet de votre inscription ou des délais supplémentaires en cas de demande de mise à jour.
 
 ### Délai de traitement
 

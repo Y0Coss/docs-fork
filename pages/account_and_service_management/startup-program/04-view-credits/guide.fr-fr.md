@@ -1,6 +1,6 @@
 ---
-title: "Comment consulter vos crédits Startup Program"
-excerpt: ''
+title: "Comment consulter vos crédits du Startup Program"
+excerpt: "Consultez vos crédits du Startup Program d'OVHcloud pour gérer vos ressources et suivre votre solde et historique de consommation"
 updated: 2025-10-08
 ---
 
@@ -13,14 +13,14 @@ En tant que membre du Startup Program d'OVHcloud, vous bénéficiez de crédits 
 ## Prérequis
 
 - Votre candidature au Startup Program doit avoir été validée et votre contrat signé. Retrouvez plus d'informations dans nos guides :
-    - [Comment optimiser votre candidature au Startup Program](pages/account_and_service_management/startup-program/01-optimise-application)
+    - [Comment optimiser votre candidature au Startup Program](/pages/account_and_service_management/startup-program/01-optimise-application)
     - [Comment signer votre contrat du Startup Program](/pages/account_and_service_management/startup-program/02-sign-agreement)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
-## Points Clés
+## Points clés
 
 - **Activation des crédits** : Les crédits sont activés automatiquement dans les 48 heures ouvrées après la signature du contrat du Startup Program.
-- **Durée de calidité** : Les crédits sont valables pendant 12 mois à compter de la signature du contrat, et sont automatiquement supprimés à la fin de cette période.
+- **Durée de validité** : Les crédits sont valables pendant 12 mois à compter de la signature du contrat, et sont automatiquement supprimés à la fin de cette période.
 - **Moyen de paiement valide** : Un moyen de paiement valide doit être lié à votre compte pour garantir la continuité des services après expiration des crédits ou pour les services non éligibles avec les crédits.
 - **Facturation après expiration** : Après suppression des crédits, les services seront facturés via le moyen de paiement par défaut attaché à votre compte.
 

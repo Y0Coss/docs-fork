@@ -1,6 +1,6 @@
 ---
 title: "Which products are available to use with Startup Program credits?"
-excerpt: ''
+excerpt: 'Find out which OVHcloud solutions are eligible for Startup Program credits to support your start-up'
 updated: 2025-10-08
 ---
 
@@ -13,7 +13,7 @@ As part of OVHcloud's Startup Program, the credits provided help startups build,
 ## Key Points
 
 - **Eligible solutions**: Startup Program credits are primarily intended for server infrastructure solutions, such as Public Cloud and Private Cloud.
-- **Eligible GPU solutions**: Some Public Cloud solutions using GPUs are eligible (AI & Machine Learning solutions as well as GPU v100/v100s and RTX 5000 instances).
+- **Eligible GPU solutions**: Some Public Cloud solutions using GPUs are eligible, including AI & Machine Learning solutions as well as GPU v100/v100s and RTX 5000 instances.
 - **Non-eligible solutions**: Web and Telecom solutions, along with certain specific infrastructure solutions, are not covered by the credits.
 - **Non-eligible GPU solutions**: Some Public Cloud instances using GPUs (A100, H100, H200, L4, L40S) are not covered by the credits.
 - **Order error management**: If non-eligible solutions are ordered by mistake, they must be stopped or transferred to another customer account not part of the Startup Program.
@@ -24,7 +24,7 @@ As part of OVHcloud's Startup Program, the credits provided help startups build,
 
 To find out which solution are eligible for your Startup Program credits, it is important to consult the eligible solutions table provided by OVHcloud. Credits are primarily intended for server infrastructure solutions such as:
 
-- **Public Cloud**: A cloud ecosystem of standard solutions to accelerate your business.
+- **Public Cloud**: A Cloud ecosystem of standard solutions to accelerate your business.
 - **Private Cloud**: Leverage VMware virtualization on dedicated, managed infrastructures to save time and gain agility with OVHcloud’s Managed VMware vSphere solutions.
 
 Here is a summary of eligible solutions:
