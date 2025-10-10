@@ -30,7 +30,7 @@ Folgen Sie diesen Schritten:
 2. Auf der angezeigten Seite und im dafür vorgesehenen Feld geben Sie den Domainnamen ein, den Sie reservieren möchten (z. B. `domain.tld`), und klicken Sie auf die Schaltfläche `Suchen`{.action}.
 3. Auf der neuen Seite wird Ihnen unser Interface mitteilen, ob der ausgewählte Domainname zum Kauf verfügbar ist oder nicht. Wenn er bereits mit der eingegebenen Syntax reserviert ist, ändern Sie ihn und starten Sie eine neue Verfügbarkeitsabfrage.
 4. Sobald Sie einen verfügbaren Domainnamen gefunden haben, klicken Sie auf die Schaltfläche `Kaufen`{.action}, und dann auf die Schaltfläche `Mit der Bestellung fortfahren`{.action} in der rechten Spalte.
-5. Wählen Sie gegebenenfalls zusätzliche Optionen oder Dienste aus und klicken Sie auf `Weiter`{.action}, bis Sie in den Bestellprozess eingeloggt werden oder ein OVHcloud Kunden-Account erstellen.
+5. Wählen Sie gegebenenfalls zusätzliche Optionen oder Dienste aus und klicken Sie auf `Weiter`{.action}, bis Sie zur Login-Seite gelangen oder einen OVHcloud Kunden-Account erstellen.
 6. Sobald Sie sich mit Ihrem OVHcloud Kunden-Account angemeldet haben, können Sie die Kontaktinformationen (Inhaber, Administrator, Technik) für Ihren Domainnamen anpassen. Klicken Sie anschließend auf die Schaltfläche `Weiter`{.action}, um zum Bestellzusammenfassung zu gelangen.
 7. Auf der Seite `Zusammenfassung Ihrer Bestellung` und falls erforderlich, können Sie die DNS-Konfiguration ändern, die auf Ihren Domainnamen angewendet wird, indem Sie auf den Link `Konfiguration ändern`{.action} klicken. Sobald Ihre Änderungen abgeschlossen sind, klicken Sie auf die Schaltfläche `Bezahlen`{.action}, um zur letzten Bestellphase zu gelangen.
 
