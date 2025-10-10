@@ -18,9 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## FAQ sur les VPS
-
-### Questions générales sur les offres VPS
+## Questions générales sur les offres VPS
 
 /// details | Qu'est-ce qu'un VPS et à quoi sert-il ?
 
@@ -121,6 +119,19 @@ Le VPS élimine la nécessité de gérer le matériel physique, comme le stockag
 
 ///
 
+/// details | Quelle bande passante est allouée à mon VPS ? Est-elle garantie ?
+
+La bande passante indiquée sur notre [page web VPS](/links/bare-metal/vps) est garantie. Il s’agit de la valeur minimale allouée à votre service.
+
+///
+
+/// details | Quel SLA est appliqué à mon VPS ?
+
+Un VPS OVHcloud inclut un SLA de 99,9 %.
+
+///
+  
+
 /// details | Quelles sont les spécificités d’un VPS Local Zone ?
 
 Grâce au VPS Local Zone, vous réduisez significativement les temps d’accès à vos sites et applications, car vos données sont hébergées au plus près de vos utilisateurs. L’utilisateur bénéficie ainsi d’une meilleure expérience, car la latence est réduite pour chaque application nécessitent un temps de réponse minimal. Il vous suffit de sélectionner l'une de nos implantations mondiales lors de votre commande. 
@@ -149,17 +160,6 @@ Si la résilience face aux attaques DDoS est un facteur critique pour votre proj
 
 ///
 
-/// details | Quelle bande passante est allouée à mon VPS ? Est-elle garantie ?
-
-La bande passante indiquée sur notre [page web VPS](/links/bare-metal/vps) est garantie. Il s’agit de la valeur minimale allouée à votre service.
-
-///
-
-/// details | Quel SLA est appliqué à mon VPS ?
-
-Un VPS OVHcloud inclut un SLA de 99,9 %.
-
-///
 
 ### Questions relatives à l’administration du VPS
 
@@ -170,14 +170,6 @@ Vous pouvez vous connecter à votre VPS à distance grâce aux identifiants four
 La méthode de connexion dépend des systèmes d'exploitation utilisés.
 
 Tous les détails sont présentés dans notre guide « [Premiers pas avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) ».
-
-///
-
-/// details | Comment sécuriser mon VPS ?
-
-Par défaut, seul le système d’exploitation sélectionné est installé sur le VPS. L’administrateur du VPS est responsable de l’application d’une configuration de sécurité appropriée une fois le VPS livré.
-
-Pour cela, aidez-vous de notre guide « [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) ».
 
 ///
 
@@ -318,6 +310,17 @@ Si l'adresse IP de destination est compatible avec votre licence (`true`), vous 
 
 ///
 
+
+## Questions concernant la sécurité et la sauvegarde
+
+/// details | Comment sécuriser mon VPS ?
+
+Par défaut, seul le système d’exploitation sélectionné est installé sur le VPS. L’administrateur du VPS est responsable de l’application d’une configuration de sécurité appropriée une fois le VPS livré.
+
+Pour cela, aidez-vous de notre guide « [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) ».
+
+///
+
 /// details | Comment puis-je télécharger mes fichiers ou une sauvegarde du VPS ?
 
 Plusieurs possibilités s'offrent à vous, par exemple :
@@ -380,6 +383,7 @@ Pour vérifier que votre adresse IP est autorisée, utilisez l'appel suivant :
 >
 
 ///
+  
 
 /// details | Mon VPS est-il protégé contre les attaques externes ?
 

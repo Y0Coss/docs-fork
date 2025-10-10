@@ -6,7 +6,7 @@ updated: 2025-10-02
 
 <style>
 details>summary {
-	color:rgb(33, 153, 232) !important;
+	color: #2199e8ff !important;
 	cursor: pointer;
 }
 details>summary::before {
@@ -18,9 +18,7 @@ details[open]>summary::before {
 }
 </style>
 
-## VPS FAQ
-
-### General questions about VPS offers
+## General questions about VPS offers
 
 /// details | What is a VPS, and what is it used for?
 
@@ -121,6 +119,19 @@ A VPS eliminates the need to manage physical hardware such as storage, RAM, and 
 
 ///
 
+/// details | What bandwidth is allocated to my VPS? Is it guaranteed?
+
+The bandwidth listed on our [VPS web page](/links/bare-metal/vps) is guaranteed. It is the minimum amount allocated to your service.
+
+///
+
+/// details | Which SLA is applied to my VPS?
+
+An OVHcloud VPS includes a 99.9% SLA.
+
+///
+  
+
 /// details | What are the unique features of a Local Zone VPS?
 
 With a Local Zone VPS, you can significantly reduce access times to your sites and applications, because your data is hosted closer to your users. This creates a better user experience by reducing latency whenever applications require a minimized response time. Simply select one of our worldwide locations when placing an order. 
@@ -149,19 +160,8 @@ If resilience against DDoS attacks is a critical factor for your project, we rec
 
 ///
 
-/// details | What bandwidth is allocated to my VPS? Is it guaranteed?
 
-The bandwidth listed on our [VPS web page](/links/bare-metal/vps) is guaranteed. It is the minimum amount allocated to your service.
-
-///
-
-/// details | Which SLA is applied to my VPS?
-
-An OVHcloud VPS includes a 99.9% SLA.
-
-///
-
-### Questions related to VPS administration
+## Questions related to VPS administration
 
 /// details | How do I connect to my VPS?
 
@@ -169,13 +169,6 @@ You can log in to your VPS remotely, using the credentials provided by email aft
 The connection method depends on which operating systems are in use.
 
 All the details are set out in our guide on [how to get started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
-
-///
-
-/// details | How do I secure my VPS?
-
-By default, the VPS is provided with only the selected operating system installed. The VPS administrator is responsible for applying an appropriate security configuration once the VPS is delivered.  
-To do this, please refer to our guide on [how to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ///
 
@@ -216,7 +209,6 @@ A VPS cannot be customized or modified at the hardware level.
 Select a [VPS model](/links/bare-metal/vps) in the order process that meets you minimum requirements, then you can upgrade it as required.  
 
 ///
-
 
 /// details | My VPS is too slow, can I move my VPS to another host?
 
@@ -315,6 +307,16 @@ If the destination IP is compatible with your license (`true`), you can use the 
 
 ///
 
+
+## Questions regarding security and backup
+
+/// details | How do I secure my VPS?
+
+By default, the VPS is provided with only the selected operating system installed. The VPS administrator is responsible for applying an appropriate security configuration once the VPS is delivered.  
+To do this, please refer to our guide on [how to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+
+///
+
 /// details | How can I download my files or a backup of the VPS?
 
 There are several options available, for example:
@@ -377,6 +379,7 @@ To verify that your IP address is authorized, use the following call:
 >
 
 ///
+  
 
 /// details | Is my VPS protected from external attacks?
 

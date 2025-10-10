@@ -5,22 +5,38 @@ updated: 2025-10-02
 ---
 
 <style>
-details>summary {
-	color:rgb(33, 153, 232) !important;
-	cursor: pointer;
+/* ---FAQ only--- */
+details {
+    margin: 0.5rem 0;
+    border: 1px solid #050505ff;
+    border-radius: 4px;
+    background: #ffffffff;
 }
-details>summary::before {
-	content:'\25B6';
-	padding-right:1ch;
+details > summary {
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+    color: #268fd4ff;
+    cursor: pointer;
+    list-style: none;
 }
-details[open]>summary::before {
-	content:'\25BC';
+details > summary::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 0.5ch;
+    transition: transform 0.2s;
+}
+details[open] > summary::before {
+    content: '\25BC';
+}
+details.faq[open] > summary {
+    background: #ffffffff;
+}
+details > div {
+    padding: 0.75rem 1rem;
 }
 </style>
 
-## VPS FAQ
-
-### Allgemeine Fragen zu VPS-Angeboten
+## Allgemeine Fragen zu VPS-Angeboten
 
 /// details | Was ist ein VPS und wofür wird er verwendet?
 
@@ -124,6 +140,19 @@ Ein VPS beseitigt die Notwendigkeit, physische Hardware wie Speicher, RAM und CP
 
 ///
 
+/// details | Welche Bandbreite ist meinem VPS zugeordnet? Ist sie garantiert?
+
+Die Bandbreite, die auf unserer [VPS-Webseite](/links/bare-metal/vps) aufgelistet ist, ist garantiert. Es handelt sich um den minimalen Wert, der Ihrem Dienst zugeordnet wird.
+
+///
+
+/// details | Welche SLA gilt für meinen VPS?
+
+Ein OVHcloud VPS beinhaltet eine SLA von 99,9 %.
+
+///
+  
+
 /// details | Welche einzigartigen Merkmale hat ein Local Zone VPS?
 
 Mit einem Local Zone VPS können Sie die Zugriffszeiten auf Ihre Webseiten und Anwendungen erheblich reduzieren, da Ihre Daten näher an Ihren Benutzern gehostet werden. Dies verbessert die Benutzererfahrung, indem die Latenz reduziert wird, sobald Anwendungen eine minimierte Antwortzeit erfordern. Wählen Sie einfach einen unserer weltweiten Standorte im Bestellvorgang.
@@ -152,18 +181,6 @@ Wenn die Resilienz gegenüber DDoS-Angriffen für Ihr Projekt von entscheidender
 
 ///
 
-/// details | Welche Bandbreite ist meinem VPS zugeordnet? Ist sie garantiert?
-
-Die Bandbreite, die auf unserer [VPS-Webseite](/links/bare-metal/vps) aufgelistet ist, ist garantiert. Es handelt sich um den minimalen Wert, der Ihrem Dienst zugeordnet wird.
-
-///
-
-/// details | Welche SLA gilt für meinen VPS?
-
-Ein OVHcloud VPS beinhaltet eine SLA von 99,9 %.
-
-///
-
 ### Fragen zur VPS-Administration
 
 /// details | Wie verbinde ich mich mit meinem VPS?
@@ -172,13 +189,6 @@ Sie können sich mithilfe der per E-Mail bereitgestellten Anmeldeinformationen n
 Die Verbindungsart hängt davon ab, welche Betriebssysteme verwendet werden.
 
 Alle Details finden Sie in unserer Anleitung zu [den ersten Schritten mit einem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
-
-///
-
-/// details | Wie sichere ich meinen VPS?
-
-Standardmäßig wird der VPS nur mit dem ausgewählten Betriebssystem ausgeliefert. Der VPS-Administrator ist für die Anwendung einer geeigneten Sicherheitskonfiguration nach der Auslieferung des VPS verantwortlich.  
-Beachten Sie auch unserere Anleitung zur [Absicherung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 
 ///
 
@@ -317,6 +327,15 @@ Wenn die Ziel-IP mit Ihrer Lizenz kompatibel ist (`true`), können Sie den entsp
 
 ///
 
+## Fragen zu Sicherheit und Backup
+
+/// details | Wie sichere ich meinen VPS?
+
+Standardmäßig wird der VPS nur mit dem ausgewählten Betriebssystem ausgeliefert. Der VPS-Administrator ist für die Anwendung einer geeigneten Sicherheitskonfiguration nach der Auslieferung des VPS verantwortlich.  
+Beachten Sie auch unserere Anleitung zur [Absicherung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+
+///
+
 /// details | Wie kann ich meine Dateien oder ein Backup des VPS herunterladen?
 
 Es gibt mehrere Optionen, z. B.:
@@ -379,6 +398,7 @@ Um zu überprüfen, ob Ihre IP-Adresse autorisiert ist, verwenden Sie den folgen
 >
 
 ///
+  
 
 /// details | Ist mein VPS vor externen Angriffen geschützt?
 
