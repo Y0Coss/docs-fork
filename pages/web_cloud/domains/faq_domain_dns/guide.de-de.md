@@ -113,7 +113,7 @@ Daher ist es nicht möglich, das jährliche Ablaufdatum eines Domainnamens zu ä
 
 /// details | Wie kann ich einen Tippfehler in meinem Domainnamen korrigieren?
 
-Sobald ein Domainname bestellt wurde, wird er anhand der von Ihnen bei der Bestellung definierten Zeichen registriert. Die Registrierung erfolgt beim Registrar der Erweiterung Ihres Domainnamens (z. B. das Registrar für *.com*) und es gelten Gebühren für die Reservierung auf der Seite des Registrars (z. B. OVHcloud).
+Sobald ein Domainname bestellt wurde, wird er anhand der von Ihnen bei der Bestellung definierten Zeichen registriert. Die Registrierung erfolgt bei der Registry der Erweiterung Ihres Domainnamens (z. B. das Registrar für *.com*) und es gelten Gebühren für die Reservierung auf der Seite des Registrars (z. B. OVHcloud).
 
 Ein Domainname ist eine eindeutige Adresse im Internet, z. B. `ovhcloud.com`.  
 Jede Änderung in diesem Namen, sei es ein einzelnes Zeichen oder eine Erweiterung (.com, .fr, .net etc.), macht ihn zu einem völlig anderen Domainnamen.
@@ -126,7 +126,7 @@ Domainnamen gelten als personalisierte Produkte, da sie spezifisch für einen In
 
 /// details | Wie kann ich einen bereits bestellten Domainnamen ändern?
 
-Sobald ein Domainname bestellt wurde, wird er anhand der von Ihnen bei der Bestellung definierten Zeichen registriert. Die Registrierung erfolgt beim Registrar der Erweiterung Ihres Domainnamens (z. B. das Registrar für *.com*) und es gelten Gebühren für die Reservierung auf der Seite des Registrars (z. B. OVHcloud).
+Sobald ein Domainname bestellt wurde, wird er anhand der von Ihnen bei der Bestellung definierten Zeichen registriert. Die Registrierung erfolgt bei der Registry der Erweiterung Ihres Domainnamens (z. B. das Registrar für *.com*) und es gelten Gebühren für die Reservierung auf der Seite des Registrars (z. B. OVHcloud).
 
 Ein Domainname ist eine eindeutige Adresse im Internet, z. B. `ovhcloud.com`.  
 Jede Änderung in diesem Namen, sei es ein einzelnes Zeichen oder eine Erweiterung (.com, .fr, .net etc.), macht ihn zu einem völlig anderen Domainnamen.
@@ -185,7 +185,7 @@ Nach diesen 15 Tagen sendet das System zusätzliche E-Mails (bis zu 9 E-Mails), 
 
 > [!warning]
 >
-> Abhängig von der Erweiterung des Domainnamens (z. B. *.com*, *.net*, etc.) können einige der oben genannten Fristen variieren. Wir empfehlen Ihnen, sich beim Registrar der Erweiterung Ihres Domainnamens über den Verifikationsprozess der Kontaktdaten zu informieren.
+> Abhängig von der Erweiterung des Domainnamens (z. B. *.com*, *.net*, etc.) können einige der oben genannten Fristen variieren. Wir empfehlen Ihnen, sich bei der Registry der Erweiterung Ihres Domainnamens über den Verifikationsprozess der Kontaktdaten zu informieren.
 
 ///
 
