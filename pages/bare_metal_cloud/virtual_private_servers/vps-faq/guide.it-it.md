@@ -130,7 +130,7 @@ La larghezza di banda indicata nella nostra [pagina web dei VPS](/links/bare-met
 Un VPS OVHcloud include un SLA del 99,9%.
 
 ///
-  
+</br> </br>
 
 /// details | Quali sono le caratteristiche uniche di un VPS Local Zone?
 
@@ -378,7 +378,7 @@ Per verificare che il tuo indirizzo IP sia autorizzato, utilizza la seguente chi
 >
 
 ///
-  
+</br> </br>
 
 /// details | Il mio VPS è protetto dagli attacchi esterni?
 

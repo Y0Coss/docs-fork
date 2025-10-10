@@ -130,7 +130,7 @@ La bande passante indiquée sur notre [page web VPS](/links/bare-metal/vps) est 
 Un VPS OVHcloud inclut un SLA de 99,9 %.
 
 ///
-  
+</br> </br>
 
 /// details | Quelles sont les spécificités d’un VPS Local Zone ?
 
@@ -383,7 +383,7 @@ Pour vérifier que votre adresse IP est autorisée, utilisez l'appel suivant :
 >
 
 ///
-  
+</br> </br>
 
 /// details | Mon VPS est-il protégé contre les attaques externes ?
 

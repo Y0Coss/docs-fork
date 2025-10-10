@@ -151,7 +151,7 @@ Die Bandbreite, die auf unserer [VPS-Webseite](/links/bare-metal/vps) aufgeliste
 Ein OVHcloud VPS beinhaltet eine SLA von 99,9 %.
 
 ///
-  
+</br> </br>
 
 /// details | Welche einzigartigen Merkmale hat ein Local Zone VPS?
 
@@ -398,7 +398,7 @@ Um zu überprüfen, ob Ihre IP-Adresse autorisiert ist, verwenden Sie den folgen
 >
 
 ///
-  
+</br> </br>
 
 /// details | Ist mein VPS vor externen Angriffen geschützt?
 

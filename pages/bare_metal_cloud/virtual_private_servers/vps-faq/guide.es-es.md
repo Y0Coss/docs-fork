@@ -130,7 +130,7 @@ El ancho de banda que aparece en nuestra [página web de VPS](/links/bare-metal/
 Un VPS de OVHcloud incluye un SLA del 99,9%.
 
 ///
-  
+</br> </br>
 
 /// details | ¿Cuáles son las características únicas de un VPS de Zona Local?
 
@@ -380,7 +380,7 @@ Para verificar que tu dirección IP está autorizada, utiliza la siguiente llama
 >
 
 ///
-  
+</br> </br>
 
 /// details | ¿Está mi VPS protegido contra ataques externos?
 
