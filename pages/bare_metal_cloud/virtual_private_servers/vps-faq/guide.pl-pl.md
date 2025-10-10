@@ -161,7 +161,7 @@ Jeśli odporność na ataki DDoS jest kluczowym czynnikiem dla Twojego projektu,
 ///
 
 
-### Pytania dotyczące administrowania serwerem VPS
+## Pytania dotyczące administrowania serwerem VPS
 
 /// details | Jak się zalogować do mojego VPS?
 
