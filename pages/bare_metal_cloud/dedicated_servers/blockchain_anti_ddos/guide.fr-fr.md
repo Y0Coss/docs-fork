@@ -4,8 +4,8 @@ excerpt: "Apprenez à utiliser l'infrastructure Anti-DDoS d'OVHcloud pour proté
 updated: 2025-10-10
 ---
 
->[!primary]
-> À ce jour, les instructions et exemples de ce guide s'appliquent uniquement à la blockchain **Solana**.
+> [!primary]
+> Les instructions et exemples fournis dans ce guide s'appliquent actuellement exclusivement à la blockchain **Solana**.
 >
 
 ## Objectif
@@ -14,7 +14,7 @@ L'objectif de ce guide est de vous aider à mieux comprendre l'infrastructure An
 
 ## Prérequis
 
-- Au moins un [serveur dédié Bare Metal](/links/bare-metal/bare-metal) qui respecte les exigences matérielles spécifiques de la blockchain souhaitée.
+- Au moins un [serveur dédié ](/links/bare-metal/bare-metal) qui respecte les exigences matérielles spécifiques de la blockchain souhaitée.
 
 ## Introduction à la Blockchain
 
@@ -28,23 +28,23 @@ Dans certains cas, les pics de communication peuvent déclencher l'infrastructur
 
 Pour éviter que votre trafic réseau ne soit suspecté ou bloqué par l'infrastructure Anti-DDoS (en tant que détection de faux positifs), nous vous recommandons fortement de signaler les adresses IP de vos nœuds à nos équipes de support. Cela permettra de créer un profil Solana personnalisé pour une meilleure protection et une fonctionnalité ininterrompue. 
 
-Pour commencer, veuillez remplir un [ticket de demande d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help) avec les options suivantes : Incident -> IP publique -> [x] Ce service n'est pas répertorié -> Créer une demande d'assistance -> `Suivant`{.action}.
+Pour commencer, veuillez créer un [ticket de demande d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help) avec les options suivantes : Incident -> IP publique -> [x] Ce service n'est pas répertorié -> Créer une demande d'assistance -> `Suivant`{.action}.
 
 Ensuite, veuillez renseigner le champ `brève description` avec **"Blockchain Solana Anti-DDoS tuning"**, puis lister les adresses IPv4 de vos nœuds Solana, leurs ports, les types de serveurs qui hébergent les nœuds et la taille de votre cluster (le nombre approximatif de clients connectés) dans la description du problème.
 
-Veuillez noter que dans le futur, vous pourrez contrôler le comportement Anti-DDoS directement via notre panneau de configuration.
+Veuillez noter qu'à l'avenir, vous pourrez contrôler le comportement Anti-DDoS directement via notre espace client.
 
 Si vous n'êtes pas sûr des éléments que vous devez envoyer à nos équipes, vous pouvez vous référer aux cas d'utilisation suivants.
 
 ### Cas d'utilisation : Solana
 
-Solana est une plateforme de blockchain à haute performance connue pour sa vitesse exceptionnelle et ses coûts de transaction faibles, ce qui en fait une alternative populaire pour les applications décentralisées. Elle atteint cela en utilisant une horloge cryptographique unique appelée Proof of History (PoH), qui horodatage les transactions pour permettre un traitement parallèle et une plus grande efficacité. Ce système est associé à un mécanisme de consensus Proof of Stake (PoS), où les validateurs sont choisis en fonction de leur SOL en jeu, garantissant que le réseau reste sécurisé et décentralisé.
+Solana est une plateforme de blockchain à haute performance connue pour sa vitesse exceptionnelle et ses coûts de transaction faibles, ce qui en fait une alternative populaire pour les applications décentralisées. Elle atteint cela en utilisant une horloge cryptographique unique appelée *Proof of History (PoH*), qui horodate les transactions afin de permettre un traitement parallèle et une plus grande efficacité. Ce système est associé à un mécanisme de consensus *Proof of Stake (PoS)*, où les validateurs sont choisis en fonction de leur SOL en jeu, garantissant que le réseau reste sécurisé et décentralisé.
 
 L'architecture de Solana utilise également une combinaison de protocoles tels que Tower BFT, Turbine, Gulf Stream et Sealevel pour optimiser la propagation des blocs, le traitement des transactions et l'exécution des contrats intelligents, contribuant tous à sa vitesse et à son efficacité élevées.
 
 Il existe généralement deux types de nœuds :
 
-- **Nœuds validateurs** (également appelés nœuds de consensus), qui sécurisent le réseau Solana en validant les transactions et en participant au consensus ;
+- **Nœuds validateurs**: (également appelés nœuds de consensus), qui sécurisent le réseau Solana en validant les transactions et en participant au consensus ;
 - **Nœuds RPC**, qui agissent comme des points d'accès pour les utilisateurs et les applications, permettant de soumettre des transactions et d'interroger les données de la blockchain via des API *sans* participer au consensus.
 
 Les nœuds Solana utilisent les protocoles réseau et les ports suivants :
