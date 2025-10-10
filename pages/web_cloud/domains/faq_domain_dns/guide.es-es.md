@@ -931,7 +931,7 @@ Para verificarlo, siga estos pasos:
 
 **Caso n°1** - El nombre de dominio no aparece en la lista:
 
-Esto significa que el nombre de dominio no está gestionado desde su [área de cliente de OVHcloud](/links/manager). Realice una consulta [WHOIS](/links/web/domains-wohis) con este último para conocer dónde está registrado.
+Esto significa que el nombre de dominio no está gestionado desde su [área de cliente de OVHcloud](/links/manager). Realice una consulta [WHOIS](/links/web/domains-whois) con este último para conocer dónde está registrado.
 
 Podrá realizar una de las siguientes acciones (si es el titular declarado en el WHOIS del nombre de dominio):
 

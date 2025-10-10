@@ -160,7 +160,7 @@ Se la resilienza agli attacchi DDoS è un fattore critico per il tuo progetto, t
 
 ///
 
-### Domande relative all'amministrazione del VPS
+## Domande relative all'amministrazione del VPS
 
 /// details | Come posso accedere al mio VPS?
 
