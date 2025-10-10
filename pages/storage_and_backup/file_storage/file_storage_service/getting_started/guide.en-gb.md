@@ -1,7 +1,7 @@
 ---
 title: File Storage Service - Getting started (Alpha)
 excerpt: "Learn how to set up and manage OVHcloud’s File Storage Service with your OpenStack project. This guide covers CLI setup, share creation, client access, and mounting on your VMs."
-updated: 2025-10-08
+updated: 2025-10-10
 ---
 
 ## Objective
@@ -277,6 +277,20 @@ It can be accessed via OpenStack CLI, API, Manila CSI, and Terraform.
 >> | Cannot mount NFS            | IP not authorized or wrong network | Ensure VM is in the same private subnet and access rule is created |
 >> | `403 Forbidden`             | Project not whitelisted for Manila | Ensure you are registered to Alpha                                 |
 >> | Share stuck in creating     | Invalid network ID or subnet       | Check `NETWORK_ID` and `SUBNET_ID`                                 |
+>>
+> Via Manila CSI in K8s environment (coming soon)
+>>
+>> > [!primary]
+>> >
+>> > The configuration via Manila CSI in K8s environment will soon be detailed here.
+>> >
+>>
+> Via Terraform (coming soon)
+>>
+>> > [!primary]
+>> >
+>> > The configuration via Terraform will soon be detailed here.
+>> >
 >>
 
 ## Go further
