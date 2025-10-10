@@ -161,7 +161,7 @@ Si la résilience face aux attaques DDoS est un facteur critique pour votre proj
 ///
 
 
-### Questions relatives à l’administration du VPS
+## Questions relatives à l’administration du VPS
 
 /// details | Comment me connecter à mon VPS ?
 
