@@ -19,7 +19,7 @@ curl -fsSL https://raw.githubusercontent.com/ovh/ovhcloud-cli/main/install.sh | 
 It is also possible to install OVHcloud CLI using Homebrew:
 
 ```sh
-brew install ovh/tap/ovhcloud-cli
+brew install --cask ovh/tap/ovhcloud-cli
 ```
 
 Alternatively, you can download the latest release from the [GitHub repository](https://github.com/ovh/ovhcloud-cli):
