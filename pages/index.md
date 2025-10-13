@@ -725,7 +725,7 @@
                 + [Object Storage - Shared Responsibility RACI](storage_and_backup/object_storage/s3_object_storage_responsibility_model)
                 + [Object Storage - FAQ](storage_and_backup/object_storage/s3_faq)
                 + [Object Storage - Local Zones specifications](storage_and_backup/object_storage/s3_local_zones_limitations)
-                + [Object Storage - How to migrate from an S3-compatible object storage provider to OVHcloud Object Storage](storage_and_backup/object_storage/s3_migration)                
+                + [Object Storage - How to migrate from an S3-compatible object storage provider to OVHcloud Object Storage](storage_and_backup/object_storage/s3_migration)
             + [General guides to start](public-cloud-storage-object-storage-general-guides-to-start)
                 + [Object Storage - Getting started with Object Storage](storage_and_backup/object_storage/s3_getting_started_with_object_storage)
                 + [Object Storage - Identity and access management](storage_and_backup/object_storage/s3_identity_and_access_management)
