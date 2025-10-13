@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer l'infrastructure Anti-DDoS pour Solana"
 excerpt: "Apprenez à utiliser l'infrastructure Anti-DDoS d'OVHcloud pour protéger vos nœuds Solana sans nuire à leur fonctionnalité"
-updated: 2025-10-10
+updated: 2025-10-13
 ---
 
 > [!primary]
@@ -26,11 +26,11 @@ Dans certains cas, les pics de communication peuvent déclencher l'infrastructur
 
 ## En pratique
 
-Pour éviter que votre trafic réseau ne soit suspecté ou bloqué par l'infrastructure Anti-DDoS (en tant que détection de faux positifs), nous vous recommandons fortement de signaler les adresses IP de vos nœuds à nos équipes de support. Cela permettra de créer un profil Solana personnalisé pour une meilleure protection et une fonctionnalité ininterrompue. 
+Pour éviter que votre trafic réseau ne soit suspecté ou bloqué par l'infrastructure Anti-DDoS (en tant que détection de faux positifs), nous vous recommandons fortement de signaler les adresses IP de vos nœuds à nos équipes de support. Cela permettra de créer un profil Solana personnalisé pour une meilleure protection et une fonctionnalité ininterrompue.
 
 Pour commencer, veuillez créer un [ticket de demande d'assistance](https://help.ovhcloud.com/csm?id=csm_get_help) avec les options suivantes : Incident -> IP publique -> [x] Ce service n'est pas répertorié -> Créer une demande d'assistance -> `Suivant`{.action}.
 
-Ensuite, veuillez renseigner le champ `brève description` avec **"Blockchain Solana Anti-DDoS tuning"**, puis lister les adresses IPv4 de vos nœuds Solana, leurs ports, les types de serveurs qui hébergent les nœuds et la taille de votre cluster (le nombre approximatif de clients connectés) dans la description du problème.
+Renseignez ensuite le champ `brève description` avec **"Blockchain Solana Anti-DDoS tuning"**, puis listez les adresses IPv4 de vos nœuds Solana, leurs ports, les types de serveurs qui hébergent les nœuds et la taille de votre cluster (le nombre approximatif de clients connectés) dans la description du problème.
 
 Veuillez noter qu'à l'avenir, vous pourrez contrôler le comportement Anti-DDoS directement via notre espace client.
 
@@ -44,8 +44,8 @@ L'architecture de Solana utilise également une combinaison de protocoles tels q
 
 Il existe généralement deux types de nœuds :
 
-- **Nœuds validateurs**: (également appelés nœuds de consensus), qui sécurisent le réseau Solana en validant les transactions et en participant au consensus ;
-- **Nœuds RPC**, qui agissent comme des points d'accès pour les utilisateurs et les applications, permettant de soumettre des transactions et d'interroger les données de la blockchain via des API *sans* participer au consensus.
+- Les **Nœuds validateurs** (également appelés nœuds de consensus) qui sécurisent le réseau Solana en validant les transactions et en participant au consensus.
+- Les **Nœuds RPC** qui agissent comme des points d'accès pour les utilisateurs et les applications, permettant de soumettre des transactions et d'interroger les données de la blockchain via des API *sans* participer au consensus.
 
 Les nœuds Solana utilisent les protocoles réseau et les ports suivants :
 

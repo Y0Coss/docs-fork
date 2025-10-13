@@ -1,11 +1,11 @@
 ---
 title: "How to configure the Anti-DDos Infrastructure for Solana"
 excerpt: "Learn how to leverage the OVHcloud Anti-DDoS infrastructure to protect your Solana nodes without harming their functionality"
-updated: 2025-10-10
+updated: 2025-10-13
 ---
 
 > [!primary]
-> This guide's instructions and examples are currently focused exclusively on the **Solana** blockchain. 
+> This guide's instructions and examples are currently focused exclusively on the **Solana** blockchain.
 >
 
 ## Objective
@@ -22,15 +22,15 @@ A blockchain is a decentralized, distributed digital ledger that records transac
 
 This technology creates a tamper-proof and transparent record of information, such as financial transactions, making it secure and trustworthy.
 
-In some cases, communication spikes can trigger the Anti-DDoS Infrastructure and lead to the detection of some traffic patterns as false positives. 
+In some cases, communication spikes can trigger the Anti-DDoS Infrastructure and lead to the detection of some traffic patterns as false positives.
 
 ## Instructions
 
 To avoid having your network traffic suspected or blocked by the Anti-DDoS Infrastructure (as a false positive detection), we strongly recommend that you provide the IP addresses of your nodes to our support teams. This will enable us to create a customised Solana profile for better protection and uninterrupted operation.
 
-To get started, create a [support request ticket](https://help.ovhcloud.com/csm?id=csm_get_help) with the following options: Incident -> Public IP -> [x] This service is not listed -> Create a support request -> `Next`{.action}. 
+To get started, create a [support request ticket](https://help.ovhcloud.com/csm?id=csm_get_help) with the following options: Incident -> Public IP -> [x] This service is not listed -> Create a support request -> `Next`{.action}.
 
-Fill in the short description with **"Blockchain Solana Anti-DDoS tuning"**, then list your Solana nodes' IPv4 addresses, their ports, the types of servers that host the nodes, and the size of your cluster (the approximate number of clients connected) in the issue description. 
+Fill in the short description with **"Blockchain Solana Anti-DDoS tuning"**, then list your Solana nodes' IPv4 addresses, their ports, the types of servers that host the nodes, and the size of your cluster (the approximate number of clients connected) in the issue description.
 
 Please note that in the future, you will be able to control Anti-DDoS behaviour directly through our Control Panel.
 
