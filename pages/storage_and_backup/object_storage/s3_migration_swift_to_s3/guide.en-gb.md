@@ -99,7 +99,7 @@ You can then test your two connections using the `rclone config` command by as b
 $ rclone config
 ```
 
-## Step 3.3 - Running Rclone
+## Step 3 - Running Rclone
 
 Depending on your strategy you can use two different commands to start the migration. Either you use the `rclone sync` command to start the migration of one or all buckets. As detailed in the documentation, the `rclone sync`command will make source and destination identical. Be careful then when using it.
 
@@ -118,7 +118,7 @@ $ rclone copy ovhcloud-swift:source-container-name/ ovhcloud-s3:destination-buck
 
 `--progress` shows progress during transfer.
 
-#### Migration status
+## Migration status
 
 We recommend comparing the source and destination buckets after migration. Your source and OVHcloud destination buckets can be compared via command line or directly from the [OVHcloud Control Panel](/links/manager)
 
